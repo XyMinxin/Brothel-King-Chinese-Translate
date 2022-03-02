@@ -3203,7 +3203,7 @@ init -2 python:
             description = "{b}" + str_int(total_value) + "/" + str(maxrange) + "{/b}" + bonus_text + ". " + gstats_dict[self.name]
 
             if self.name in gstat_job_skill.keys():
-                return description % (self.parent.get_max_cust_served(gstat_job_skill[self.name]), plural(self.parent.get_max_cust_served(gstat_job_skill[self.name])))
+                return description % (self.parent.get_max_cust_served(gstat_job_skill[self.name]))
 
             return description
 

@@ -1326,7 +1326,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     button:
                         background None
                         action NullAction()
-                        tooltip "She has {b}" + str_int(girl.energy) + "{/b} energy remaining. Her maximum energy is {b}" + str_int(girl_max) + "{/b} (increase constitution for higher energy)."
+                        tooltip "她还有{b}" + str_int(girl.energy) + "{/b}点耐力. 她的最大耐力为{b}" + str_int(girl_max) + "{/b} (增加体质可以提高耐力上限)."
                         keyboard_focus False
                         yfill False
                         ysize 30

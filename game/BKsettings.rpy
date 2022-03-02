@@ -43,19 +43,19 @@ init -4 python:
     ## Edit this dictionary to change the stat names that are displayed (change the right-hand text)
 
     stat_name_dict = {
-                        "Beauty" : "Beauty",
-                        "Body" : "Body",
-                        "Charm" : "Charm",
-                        "Refinement" : "Refinement",
-                        "Sensitivity" : "Sensitivity",
-                        "Libido" : "Libido",
-                        "Constitution" : "Constitution",
-                        "Obedience" : "Obedience",
-                        "Service" : "Service",
-                        "Sex" : "Sex",
-                        "Anal" : "Anal",
-                        "Fetish" : "Fetish",
-                        "Energy" : "Energy",
+                        "Beauty" : "美貌",
+                        "Body" : "身材",
+                        "Charm" : "魅力",
+                        "Refinement" : "优雅",
+                        "Sensitivity" : "敏感",
+                        "Libido" : "性欲",
+                        "Constitution" : "体格",
+                        "Obedience" : "服从",
+                        "Service" : "性服侍",
+                        "Sex" : "性交",
+                        "Anal" : "肛交",
+                        "Fetish" : "皮绳愉虐",
+                        "Energy" : "耐力",
                     }
 
 #### BALANCE / CHEATS ####
