@@ -913,14 +913,14 @@ init -4 python:
 
 
     ## STAT DESCRIPTION ##
-    ## 统   计  描   述 ##
+    ##     统计描述     ##
 
     gstats_dict = {
-                    "Beauty" : "{b}美貌：{/b}她看上去真漂亮。影响按摩师的工作和性交效果. {p}目前作为按摩师的能力: {b}%s{/b}.",
-                    "Body" : "{b}身材：{/b}她的身材多么匀称，多么结实。影响工作效果，如舞蹈和肛交行为. {p}目前作为舞者的能力: {b}%s{/b}.",
-                    "Charm" : "{b}魅力：{/b}她有多少个性和风度。影响服务员和性服侍的工作效果. {p}目前作为服务员的能力: {b}%s{/b}.",
-                    "Refinement" : "{b}优雅：{/b}她是多么的聪明博学，举止文雅。影响艺伎和皮绳愉虐性行为效果. {p}目前作为艺妓的能力: {b}%s{/b}.",
-                    "Libido" : "{b}性欲：{/b}她是多么渴望性啊。影响性交效果，并增加她能与之发生性关系的顾客数量. {p}目前作为妓女的能力: {b}%s{/b}.",
+                    "Beauty" : "{b}美貌：{/b}她看上去真漂亮。影响按摩师的工作和性交效果. {p}目前作为按摩师的能力: {b}%s{/b}",
+                    "Body" : "{b}身材：{/b}她的身材多么匀称，多么结实。影响工作效果，如舞蹈和肛交行为. {p}目前作为舞者的能力: {b}%s{/b}",
+                    "Charm" : "{b}魅力：{/b}她有多少个性和风度。影响服务员和性服侍的工作效果. {p}目前作为服务员的能力: {b}%s{/b}",
+                    "Refinement" : "{b}优雅：{/b}她是多么的聪明博学，举止文雅。影响艺伎和皮绳愉虐性行为效果. {p}目前作为艺妓的能力: {b}%s{/b}",
+                    "Libido" : "{b}性欲：{/b}她是多么渴望性啊。影响性交效果，并增加她能与之发生性关系的顾客数量. {p}目前作为妓女的能力: {b}%s{/b}",
                     "Sensitivity" : "{b}敏感：{/b}她对自己的身体和伴侣是多么的敏感。影响性服侍效果，提高顾客满意度.",
                     "Constitution" : "{b}体格：{/b}她有多大的耐力。影响肛交效果和提高她的最大精力.",
                     "Obedience" : "{b}服从：{/b}她多么能接受命令和奴役。影响皮绳愉虐性行为效果，降低她拒绝工作的机会.",
@@ -1098,20 +1098,20 @@ init -4 python:
 
 init python:
     gpersonalities = {
-                        "pervert" : Personality(name="pervert", attributes=("very extravert", "very lewd"), description="Wild and 'no limit' kind of girl. Curious about all sorts of sexual acts, the more perverted the better. Doesn't care for romance."),
-                        "rebel" : Personality(name="rebel", attributes=("very extravert", "very dom"), often_stories = ["slave_story5"], description="Always fighting and contradicting others, fiercely independent. Must do things of her own free will."),
-                        "cold" : Personality(name="cold", attributes=("very materialist", "very introvert"), description="Cold and detached, she doesn't show her feelings easily. She seems strangely unconcerned about what goes on around her, and uninterested in the fate of others."),
-                        "nerd" : Personality(name="nerd", attributes=("very introvert", "very idealist"), often_stories = ["slave_story8"], description="Quiet and bookish. Rather light-headed. Curious. Doesn't like physical effort."),
-                        "masochist" : Personality(name="masochist", attributes=("very introvert", "very sub"), description="The lower the better. She likes to be at the bottom and secretly enjoys being mistreated. Gifts and loving gestures annoy her, she doesn't deserve them."),
-                        "bimbo" : Personality(name="bimbo", attributes=("very materialist", "very lewd"), description="Vain, attention-craved, cares about status and wealth. Loves presents and compliments. She has no qualms about using her body to get those things, too."),
-                        "meek" : Personality(name="meek", attributes=("very modest", "very sub"), often_stories = ["slave_story4"], rarely_stories = ["slave_story5","slave_story8"], description="Shy, easily swayed, will cry rather than resist. Doesn't like conflict."),
+                        "pervert" : Personality(name="pervert", attributes=("very extravert", "very lewd"), description="野性和开放的女孩. 对各种色色的事情都很好奇，越变态越好. 不关心浪漫的事."),
+                        "rebel" : Personality(name="rebel", attributes=("very extravert", "very dom"), often_stories = ["slave_story5"], description="总是与他人争吵和矛盾，有强烈的独立性. 必须按照她自己的意愿做事情."),
+                        "cold" : Personality(name="cold", attributes=("very materialist", "very introvert"), description="冷漠和疏离，她不轻易表露自己的感情. 她似乎对周围发生的事情很不关心，对别人的命运也不感兴趣."),
+                        "nerd" : Personality(name="nerd", attributes=("very introvert", "very idealist"), often_stories = ["slave_story8"], description="沉默寡言，喜欢读书. Rather light-headed. 好奇心. 不喜欢体力劳动."),
+                        "masochist" : Personality(name="masochist", attributes=("very introvert", "very sub"), description="越卑微越好. 她喜欢呆在底层，并暗自享受被虐待的感觉. 礼物和关爱会让她恼火，她觉得自己不配拥有这些东西."),
+                        "bimbo" : Personality(name="bimbo", attributes=("very materialist", "very lewd"), description="虚荣心强，渴望得到关注，关心地位和财富. 喜欢礼物和赞美. 她愿意出卖身体来获得这些东西."),
+                        "meek" : Personality(name="meek", attributes=("very modest", "very sub"), often_stories = ["slave_story4"], rarely_stories = ["slave_story5","slave_story8"], description="害羞，容易动摇，会哭泣而不是反抗. 不喜欢发生冲突."),
 #                         "heartless" : Personality(name="heartless", attributes=("very materialist", "very dom"), description="Cold, calculating, domineering and selfish. Will always try to benefit at the expense of others."),
-                        "sweet" : Personality(name="sweet", attributes=("very idealist", "very extravert"), description="Lovely and sunny personality. Always positive. Rather romantic. Doesn't like negativity."),
+                        "sweet" : Personality(name="sweet", attributes=("very idealist", "very extravert"), description="可爱和阳光的个性. 始终积极向上的. 颇为浪漫. 不喜欢消极情绪."),
 
-                        "superficial" : Personality(name="superficial", attributes=("very extravert", "very materialist"), description="Ever the socialite, cares about being seen, preferably in the most outstanding outfit and expensive jewelry. Some call her needy and craving for attention, but she knows they're just jealous of her new shoes..."),
-                        "holy" : Personality(name="holy", attributes=("very extravert", "very modest"), never_stories = ["slave_story7","slave_story8"], description="A firebrand promoter of religion and morality, she prays every night for the salvation of her soul and tries to convert others to her beliefs. With little success so far, but she won't give up."),
-                        "helper" : Personality(name="helper", attributes=("very extravert", "very sub"), description="Always ready to help her friends, places herself after others. Can be a bit nosy sometimes."),
-                        "creep" : Personality(name="creep", attributes=("very introvert", "very lewd"), description="Shy and awkward around people, she is obsessed about all sorts of dirty topics that she researches in her own time. Get complaints for stalking, a lot."),
+                        "superficial" : Personality(name="superficial", attributes=("very extravert", "very materialist"), description="永远是社会名流，在意自己是否被人注意到，最好是穿着最出色的衣服和昂贵的珠宝. 有人说她渴望得到关注，但她知道他们只是嫉妒她的新鞋..."),
+                        "holy" : Personality(name="holy", attributes=("very extravert", "very modest"), never_stories = ["slave_story7","slave_story8"], description="她是宗教和道德的倡导者，每晚都为自己的灵魂得救而祈祷，并试图让别人皈依她的信仰. 到目前为止没有什么成效，但她不会放弃."),
+                        "helper" : Personality(name="helper", attributes=("very extravert", "very sub"), description="她总是为朋友着想，并且经常把别人事情放在第一位. 有时会有点多管闲事."),
+                        "creep" : Personality(name="creep", attributes=("very introvert", "very lewd"), description="她在人前显得害羞而笨拙，对各种色色的话题都很着迷，她总在私下时间里进行研究. 因跟踪而被经常投诉."),
                         "repressed" : Personality(name="repressed", attributes=("very introvert", "very modest"), description="Raised in a very strict environment, she lives in fear of her own impulses and tries her hardest to suppress them."),
                         "schemer" : Personality(name="schemer", attributes=("very introvert", "very dom"), description="Likes nothing more than to scheme and make grand plans, ready to assert her dominance over all living beings... Some day. In the meantime, if she has to suck a dick... So be it."),
                         "prude" : Personality(name="prude", attributes=("very materialist", "very modest"), rarely_stories = ["slave_story7","slave_story8"], description="Affects to be a good, Arios-fearing girl at all times. Frowns on frivolity and amoral behavior. Some think she has dirty thoughts in secret, but if so, she hides them well."),
@@ -1136,16 +1136,16 @@ init python:
 
 
     gpersonalities_comment = {
-                            "very extravert pos" : ("She's friendly.", "She's always ready to help.", "She's fun.", "She's lively."),
-                            "very introvert pos" : ("She's nice.", "She's quiet.", "She doesn't gossip.", "She's soft-spoken."),
-                            "very idealist pos" : ("She follows her dreams.", "She's smart.", "She knows a lot about everything.", "She's very clever."),
-                            "very materialist pos" : ("She's down-to-earth", "She likes the finer things in life.", "She's ambitious.", "She has great taste."),
-                            "very lewd pos" : ("She's open-minded.", "She's curious", "She knows how to party.", "She's a real party-girl."),
-                            "very modest pos" : ("She's rational.", "She keeps her head cool.", "She's stable.", "She's pure."),
-                            "very dom pos" : ("She's so confident.", "She's driven.", "She's very independent.", "She's fearless."),
-                            "very sub pos" : ("She's humble.", "She's quiet.", "She's loyal.", "She's obedient."),
+                            "very extravert pos" : ("她很友善.", "她总是随时准备提供帮助.", "她很有趣.", "她很有活力."),
+                            "very introvert pos" : ("她人很好.", "她很文静.", "她不爱说话.", "她说话很温柔."),
+                            "very idealist pos" : ("她追随自己的梦想.", "她非常聪明.", "她对一切都很了解.", "她很机灵."),
+                            "very materialist pos" : ("她很朴实", "她喜欢生活中美好的事物.", "她很有野心.", "她很有品味."),
+                            "very lewd pos" : ("她思想开放.", "她很好奇", "她知道如何聚会.", "她是个真正的派对女孩."),
+                            "very modest pos" : ("她很理性.", "她保持头脑清醒.", "她很稳重.", "她是纯洁的."),
+                            "very dom pos" : ("她是如此自信.", "She's driven.", "她是非常独立的人.", "她无所畏惧."),
+                            "very sub pos" : ("她很卑微.", "她很沉默.", "她很忠诚.", "她很顺从."),
 
-                            "very extravert neg" : ("She's self-absorbed.", "She's loud.", "She's self-centered.", "She won't shut up."),
+                            "very extravert neg" : ("她很自以为是.", "她很吵闹.", "她是以自我为中心的人.", "她不愿闭嘴."),
                             "very introvert neg" : ("She's no fun.", "She's aloof.", "She's unfriendly.", "She's a bore."),
                             "very idealist neg" : ("She's nerdy.", "She's a snowflake.", "She's a snob.", "She's a nerd."),
                             "very materialist neg" : ("She's a nasty bitch.", "She's so superficial.", "She's selfish.", "She's a cold-hearted bitch."),
@@ -1176,23 +1176,23 @@ init python:
 
 
                                 # Punishable events
-                                "ran away" : GirlRecentEvent(type="ran away", action="Running away", base_description="She ran away, but you brought her back.", encourage=False),
-                                "disobey" : GirlRecentEvent(type="disobey", action="Disobeying you", base_description="She {color=[c_crimson]}refused to work as a %s{/color}.", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="Performing badly while working", base_description="She performed {color=[c_crimson]}%sly{/color} while working (%s).", encourage=False),
-                                "quest bad result" : GirlRecentEvent(type="quest bad result", action="Performing badly on a quest", base_description="%s", encourage=False),
-                                "class bad result" : GirlRecentEvent(type="class bad result", action="Not paying attention in school", base_description="%s", encourage=False),
-                                "refused" : GirlRecentEvent(type="refused", action="Refusing training", base_description="She {color=[c_crimson]}refused to train (%s){/color}.", encourage=False),
-                                "argued" : GirlRecentEvent(type="argued", action="Arguing with a rival", base_description="", encourage=False), # Not implemented
+                                "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了.", encourage=False),
+                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以%s形式工作{/color}.", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}%s{/color}(%s).", encourage=False),
+                                "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
+                                "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
+                                "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练(%s){/color}.", encourage=False),
+                                "argued" : GirlRecentEvent(type="argued", action="与对手争执", base_description="", encourage=False), # Not implemented
 
                                 # Passive events (cannot be punished or rewarded=)
-                                "acquired" : GirlRecentEvent(type="acquired", base_description="You have acquired %s.", encourage=False, discipline=False),
-                                "MC met" : GirlRecentEvent(type="MC met", base_description="You have met %s.", encourage=False, discipline=False),
-                                "MC friend" : GirlRecentEvent(type="MC friend", base_description="You and %s have become friends.", encourage=False, discipline=False),
-                                "MC flower" : GirlRecentEvent(type="MC flower", base_description="You may now give %s flowers.", encourage=False, discipline=False),
-                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="%s is now your girlfriend.", encourage=False, discipline=False),
-                                "MC lover" : GirlRecentEvent(type="MC friend", base_description="%s is now your lover.", encourage=False, discipline=False),
-                                "MC job" : GirlRecentEvent(type="MC job", base_description="You can now offer %s a job.", encourage=False, discipline=False),
-                                "kidnapped" : GirlRecentEvent(type="kidnapped", base_description="She has been kidnapped by %s.", encourage=False, discipline=False),
+                                "acquired" : GirlRecentEvent(type="acquired", base_description="你已经获得了%s.", encourage=False, discipline=False),
+                                "MC met" : GirlRecentEvent(type="MC met", base_description="你见过%s了.", encourage=False, discipline=False),
+                                "MC friend" : GirlRecentEvent(type="MC friend", base_description="你和%s已经成为朋友.", encourage=False, discipline=False),
+                                "MC flower" : GirlRecentEvent(type="MC flower", base_description="你现在可以给%s献花了.", encourage=False, discipline=False),
+                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="s现在是你女朋友.", encourage=False, discipline=False),
+                                "MC lover" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的爱人.", encourage=False, discipline=False),
+                                "MC job" : GirlRecentEvent(type="MC job", base_description="现在你可以给%s提供一份工作.", encourage=False, discipline=False),
+                                "kidnapped" : GirlRecentEvent(type="kidnapped", base_description="她被%s绑架了.", encourage=False, discipline=False),
                                 }
 
     event_sounds = {
@@ -1234,16 +1234,16 @@ init python:
                             }
 
     experienced_description = {
-                               "very experienced" : "Extensive",
-                               "experienced" : "Advanced",
-                               "average" : "Some",
-                               "inexperienced" : "Basic",
-                               "very inexperienced" : "None",
-                               "very experienced ttip" : "{size=-1}{color=[c_orange]}A sex slave for years, she has known several masters and received extensive sexual training.{/color}",
-                               "experienced ttip" : "{size=-1}{color=[c_green]}She has been a sex slave for many months now, and has received various forms of training.{/color}",
-                               "average ttip" : "{size=-1}{color=[c_yellow]}She has been a sex slave for a few months already, and has received some sexual training.{/color}",
-                               "inexperienced ttip" : "{color=[c_lightred]}She became a sex slave only recently, and still has a lot to learn.{/color}",
-                               "very inexperienced ttip" : "{color=[c_red]}Fresh off the slave caravan, she has never been trained for sex. Who knows how she will react?{/color}",
+                               "very experienced" : "特级",
+                               "experienced" : "高级",
+                               "average" : "中级",
+                               "inexperienced" : "基础",
+                               "very inexperienced" : "无",
+                               "very experienced ttip" : "{size=-1}{color=[c_orange]}作为一名性奴，她认识几个主人并接受了广泛的性训练.{/color}",
+                               "experienced ttip" : "{size=-1}{color=[c_green]}她做了好几个月的性奴，接受过各种形式的训练.{/color}",
+                               "average ttip" : "{size=-1}{color=[c_yellow]}她已经做了几个月的性奴，并接受了一些性训练。.{/color}",
+                               "inexperienced ttip" : "{color=[c_lightred]}她最近才成为性奴，还有很多东西要学.{/color}",
+                               "very inexperienced ttip" : "{color=[c_red]}刚从奴隶商队出来，她从未受过性训练。谁知道她会有什么反应?{/color}",
                               }
 
     experienced_modifiers = {
@@ -1270,20 +1270,20 @@ init python:
                             "very inexperienced" : 5,}
 
     long_act_description = {
-                        "naked" : "being naked",
-                        "service" : "giving service",
-                        "sex" : "having sex",
-                        "anal" : "anal sex",
-                        "fetish" : "kinky sex",
-                        "bisexual" : "sex with a woman",
-                        "group" : "group sex",
-                        "action naked" : "Nudity",
-                        "action service" : "Service",
-                        "action sex" : "Sex",
-                        "action anal" : "Anal sex",
-                        "action fetish" : "Fetish",
-                        "action bisexual" : "Lesbian sex",
-                        "action group" : "Group sex"
+                        "naked" : "展现裸体",
+                        "service" : "性服侍",
+                        "sex" : "性交",
+                        "anal" : "肛交",
+                        "fetish" : "皮绳愉虐",
+                        "bisexual" : "百合",
+                        "group" : "群交",
+                        "action naked" : "裸露",
+                        "action service" : "性服侍",
+                        "action sex" : "性交",
+                        "action anal" : "肛交",
+                        "action fetish" : "皮绳愉虐",
+                        "action bisexual" : "百合",
+                        "action group" : "群交"
                         }
 
     # This filters choices for the training menu (OR clause)
@@ -1315,71 +1315,71 @@ init python:
 
     interact_dict = {
                     "chat" : ["GENERAL TOPICS", "PERSONAL TOPICS", "STORY"],
-                    "GENERAL TOPICS" : [GirlInteractionTopic("chat", "chat", "Life as a slave", "slave_chat_slave_life"),
-                                        GirlInteractionTopic("chat", "chat", "Life in the brothel", "slave_chat_brothel", condition="has_worked"),
-                                        GirlInteractionTopic("chat", "chat", "Getting along with customers", "slave_chat_customers", condition="has_worked"),
-                                        GirlInteractionTopic("chat", "chat", "Getting along with other girls", "slave_chat_other_girls", condition="other_girls"),
+                    "GENERAL TOPICS" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
+                                        GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
+                                        GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
+                                        GirlInteractionTopic("chat", "chat", "与其他女孩相处", "slave_chat_other_girls", condition="other_girls"),
                                         ],
                     "PERSONAL TOPICS" : [
-                                        GirlInteractionTopic("chat", "chat", "Her well-being", "slave_chat_well_being"),
-                                        GirlInteractionTopic("chat", "chat", "Her feelings about you", "slave_chat_feelings"),
-                                        GirlInteractionTopic("chat", "chat", "Her tastes", "slave_chat_tastes"),
-                                        GirlInteractionTopic("chat", "chat", "Her origins", "slave_chat_origins"),
+                                        GirlInteractionTopic("chat", "chat", "她的生活怎样", "slave_chat_well_being"),
+                                        GirlInteractionTopic("chat", "chat", "她对你的感觉", "slave_chat_feelings"),
+                                        GirlInteractionTopic("chat", "chat", "她的口味　　", "slave_chat_tastes"),
+                                        GirlInteractionTopic("chat", "chat", "她的身世　　", "slave_chat_origins"),
                                     ],
-                    "STORY" : [GirlInteractionTopic("chat", "story", "Hear her story again", "slave_chat_story", AP_cost=0, condition = "story")],
+                    "STORY" : [GirlInteractionTopic("chat", "story", "再次聆听她的故事", "slave_chat_story", AP_cost=0, condition = "story")],
 
                     "train" : ["SKILL TRAINING", "SEXUAL TRAINING", "SPECIAL TRAINING"],
-                    "SKILL TRAINING" : [GirlInteractionTopic("train", "train", "Obedience training", "slave_train_obedience", act="obedience"),
-                                        GirlInteractionTopic("train", "train", "Constitution training", "slave_train_constitution", act="constitution")],
+                    "SKILL TRAINING" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
+                                        GirlInteractionTopic("train", "train", "体格训练", "slave_train_constitution", act="constitution")],
                     "SEXUAL TRAINING" : [
-                                        GirlInteractionTopic("train", "train", "Nude", "slave_train_sex_acts", act="naked", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Service", "slave_train_sex_acts", act="service", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Sex", "slave_train_sex_acts", act="sex", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Anal", "slave_train_sex_acts", act="anal", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Fetish", "slave_train_sex_acts", act="fetish", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Bisexual", "slave_train_sex_acts", act="bisexual", advanced=True),
-                                        GirlInteractionTopic("train", "train", "Group", "slave_train_sex_acts", act="group", advanced=True),
+                                        GirlInteractionTopic("train", "train", "露出　　", "slave_train_sex_acts", act="naked", advanced=True),
+                                        GirlInteractionTopic("train", "train", "性服侍　", "slave_train_sex_acts", act="service", advanced=True),
+                                        GirlInteractionTopic("train", "train", "性交　　", "slave_train_sex_acts", act="sex", advanced=True),
+                                        GirlInteractionTopic("train", "train", "肛交　　", "slave_train_sex_acts", act="anal", advanced=True),
+                                        GirlInteractionTopic("train", "train", "皮绳愉虐", "slave_train_sex_acts", act="fetish", advanced=True),
+                                        GirlInteractionTopic("train", "train", "百合　　", "slave_train_sex_acts", act="bisexual", advanced=True),
+                                        GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
-                    "SPECIAL TRAINING" : [GirlInteractionTopic("train", "train", "Remove negative fixation", "slave_remove_fixation", condition="neg_fix")],
+                    "SPECIAL TRAINING" : [GirlInteractionTopic("train", "train", "消除消极的固着", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["MAGIC SKILL TRAINING", "MAGIC SEXUAL TRAINING", "CHOOSE METHOD"],
-                    "CHOOSE METHOD" : [GirlInteractionTopic("magic", None, "Current method", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
+                    "CHOOSE METHOD" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
                     "MAGIC SKILL TRAINING" : [
-                                                GirlInteractionTopic("magic", "train", "Obedience training", "slave_magic", act="obedience", gold_cost=20),
-                                                GirlInteractionTopic("magic", "train", "Sensitivity training", "slave_magic", act="sensitivity", gold_cost=20),
-                                                GirlInteractionTopic("magic", "train", "Libido training", "slave_magic", act="libido", gold_cost=20),
+                                                GirlInteractionTopic("magic", "train", "服从训练", "slave_magic", act="obedience", gold_cost=20),
+                                                GirlInteractionTopic("magic", "train", "敏感培训", "slave_magic", act="sensitivity", gold_cost=20),
+                                                GirlInteractionTopic("magic", "train", "性欲训练", "slave_magic", act="libido", gold_cost=20),
                                                 ],
                     "MAGIC SEXUAL TRAINING" : [
-                                                GirlInteractionTopic("magic", "train", "Nude", "slave_magic", act="naked", advanced=True, gold_cost=20),
-                                                GirlInteractionTopic("magic", "train", "Service", "slave_magic", act="service", advanced=True, gold_cost=40),
-                                                GirlInteractionTopic("magic", "train", "Sex", "slave_magic", act="sex", advanced=True, gold_cost=50),
-                                                GirlInteractionTopic("magic", "train", "Anal", "slave_magic", act="anal", advanced=True, gold_cost=60),
-                                                GirlInteractionTopic("magic", "train", "Fetish", "slave_magic", act="fetish", advanced=True, gold_cost=70),
-                                                GirlInteractionTopic("magic", "train", "Bisexual", "slave_magic", act="bisexual", advanced=True, gold_cost=80),
-                                                GirlInteractionTopic("magic", "train", "Group", "slave_magic", act="group", advanced=True, gold_cost=100),
+                                                GirlInteractionTopic("magic", "train", "露出　　", "slave_magic", act="naked", advanced=True, gold_cost=20),
+                                                GirlInteractionTopic("magic", "train", "性服侍　", "slave_magic", act="service", advanced=True, gold_cost=40),
+                                                GirlInteractionTopic("magic", "train", "性交　　", "slave_magic", act="sex", advanced=True, gold_cost=50),
+                                                GirlInteractionTopic("magic", "train", "肛交　　", "slave_magic", act="anal", advanced=True, gold_cost=60),
+                                                GirlInteractionTopic("magic", "train", "皮绳愉虐", "slave_magic", act="fetish", advanced=True, gold_cost=70),
+                                                GirlInteractionTopic("magic", "train", "百合　　", "slave_magic", act="bisexual", advanced=True, gold_cost=80),
+                                                GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
                     "react" : ["ENCOURAGE", "DISCIPLINE"],
                     "ENCOURAGE" : [
-                                    GirlInteractionTopic("react", "reward", "Praise her", "slave_reward_praise"),
-                                    GirlInteractionTopic("react", "reward", "Give her gold", "slave_reward_gold"),
-                                    GirlInteractionTopic("react", "reward", "Give her a gift", "slave_reward_gift"),
-                                    GirlInteractionTopic("react", "reward", "Pet her", "slave_reward_pet"),
-                                    GirlInteractionTopic("react", "reward", "Give her a day off", "slave_reward_day"),
-                                    GirlInteractionTopic("react", "reward", "Have sex with her", "slave_reward_sex"),
+                                    GirlInteractionTopic("react", "reward", "称赞她　　", "slave_reward_praise"),
+                                    GirlInteractionTopic("react", "reward", "奖励她金币", "slave_reward_gold"),
+                                    GirlInteractionTopic("react", "reward", "送给她礼物", "slave_reward_gift"),
+                                    GirlInteractionTopic("react", "reward", "爱抚她　　", "slave_reward_pet"),
+                                    GirlInteractionTopic("react", "reward", "给她一天假", "slave_reward_day"),
+                                    GirlInteractionTopic("react", "reward", "与她做爱　", "slave_reward_sex"),
                                     ],
                     "DISCIPLINE" : [
-                                    GirlInteractionTopic("react", "discipline", "Scold her", "slave_punish_scold"),
-                                    GirlInteractionTopic("react", "discipline", "Remove upkeep", "slave_punish_upkeep"),
-                                    GirlInteractionTopic("react", "discipline", "Force her to go naked", "slave_punish_naked"),
-                                    GirlInteractionTopic("react", "discipline", "Beat her", "slave_punish_beat"),
-                                    GirlInteractionTopic("react", "discipline", "Rape her", "slave_punish_rape"),
-                                    GirlInteractionTopic("react", "discipline", "Send her to the farm", "slave_punish_farm", condition="farm"),
+                                    GirlInteractionTopic("react", "discipline", "辱骂她　　", "slave_punish_scold"),
+                                    GirlInteractionTopic("react", "discipline", "剥夺她工资", "slave_punish_upkeep"),
+                                    GirlInteractionTopic("react", "discipline", "强迫她裸体", "slave_punish_naked"),
+                                    GirlInteractionTopic("react", "discipline", "殴打她　　", "slave_punish_beat"),
+                                    GirlInteractionTopic("react", "discipline", "强奸她　　", "slave_punish_rape"),
+                                    GirlInteractionTopic("react", "discipline", "送她去农场", "slave_punish_farm", condition="farm"),
                                     ],
                     "misc" : ["CLOTHING", "MASTER BEDROOM", "DEBUG"],
                     "CLOTHING" : [
-                                    GirlInteractionTopic("misc", None, "Tell her to go naked", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
-                                    GirlInteractionTopic("misc", None, "Tell her to get dressed", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
+                                    GirlInteractionTopic("misc", None, "让她脱光衣服", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
+                                    GirlInteractionTopic("misc", None, "让她穿上衣服", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
                                     ],
                     "MASTER BEDROOM" : [
                                         GirlInteractionTopic("misc", None, "Send her to your bedroom", "slave_master_bedroom_add", AP_cost=0, condition = "master_bedroom_add"),
