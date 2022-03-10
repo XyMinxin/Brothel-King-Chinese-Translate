@@ -39,9 +39,11 @@ init -4 python:
     max_item_shown = 30
 
 #### TRANSLATION OPTIONS ####
+#### 翻译 ####
 
     ## Edit this dictionary to change the stat names that are displayed (change the right-hand text)
 
+    ## 统计名词翻译 ##
     stat_name_dict = {
                         "Beauty" : "美貌",
                         "Body" : "身材",
@@ -57,6 +59,110 @@ init -4 python:
                         "Fetish" : "皮绳愉虐",
                         "Energy" : "耐力",
                     }
+
+    ## 职业名称翻译 ##
+    girl_job_name = {
+                    "Waitress" : "服务员",
+                    "waitress" : "服务员",
+                    "Dancer" : "舞娘",
+                    "dancer" : "舞娘",
+                    "Masseuse" : "按摩师",
+                    "masseuse" : "按摩师",
+                    "Geisha" : "艺伎",
+                    "geisha" : "艺伎",
+                    "Whore" : "妓女",
+                    "whore" : "妓女",
+                    None : "（bug:girl_job_name）没有值",
+                    }
+
+    girl_act_name = {
+                    "Sex" : "性交",
+                    "sex" : "性交",
+                    "Service" : "性服侍",
+                    "service" : "性服侍",
+                    "Fetish" : "皮绳愉虐",
+                    "fetish" : "皮绳愉虐",
+                    "Bisexual" : "百合",
+                    "bisexual" : "百合",
+                    "Group" : "群交",
+                    "group" : "群交",
+                    "Naked" : "露出",
+                    "naked" : "露出",
+                    None : "（bug:girl_cat_name）没有值",
+                    }
+
+    farm_mode_name = {
+                      "refused" : "拒绝",
+                      "resisted" : "抵制",
+                      "accepted" : "接受",
+                      "Soft" : "温和",
+                      "Hard" : "努力",
+                      "Hardest" : "强硬",
+                      "Libido" : "照看仆役",
+                      "Sensitivity" : "服侍Gizel",
+                      "Obedience" : "打扫农场",
+                      "Constitution" : "锻炼身体",
+                      "Rest" : "休息",
+                      "Conservative" : "保守",
+                      "Intensive" : "高强度",
+                      "No rest" : "无休息",
+                      "Reluctant" : "差强人意",
+                      "Indifferent" : "淡然处之",
+                      "Interested" : "兴趣盎然",
+                      "Fascinated" : "神魂颠倒",
+                      "None" : "无",
+                      "Auto" :"自动",
+                      "Anal" : "肛交",
+                      "Sex" : "性交",
+                      "Service" : "性服侍",
+                      "Fetish" : "皮绳愉虐",
+                      "Bisexual" : "百合",
+                      "Group" : "群交",
+                      "Naked" : "露出",
+                      "种马棚" : "马厮",
+                      "兽栏" : "兽栏",
+                      "怪物巢穴" : "怪兽巢穴",
+                      "车间" : "车间",
+                      "No training" : "未安排训练",
+                      "Stallion" : "种马",
+                      "Beast" : "野兽",
+                      "Monster" : "怪物",
+                      "Machine" :"机器",
+
+                      "soft" : "温和",
+                      "hard" : "努力",
+                      "hardest" : "强硬",
+                      "libido" : "照看仆役",
+                      "sensitivity" : "服侍Gizel",
+                      "obedience" : "打扫农场",
+                      "constitution" : "锻炼身体",
+                      "rest" : "休息",
+                      "conservative" : "保守",
+                      "intensive" : "高强度",
+                      "no rest" : "无休息",
+                      "reluctant" : "差强人意",
+                      "indifferent" : "淡然处之",
+                      "interested" : "兴趣盎然",
+                      "fascinated" : "神魂颠倒",
+                      "none" : "无",
+                      "auto" :"自动",
+                      "anal" : "肛交",
+                      "sex" : "性交",
+                      "service" : "性服侍",
+                      "fetish" : "皮绳愉虐",
+                      "bisexual" : "百合",
+                      "group" : "群交",
+                      "naked" : "露出",
+                      "stables" : "马厮",
+                      "pig stall" : "兽栏",
+                      "monster den" : "怪兽巢穴",
+                      "workshop" : "车间",
+                      "no training" : "未安排训练",
+                      "stallion" : "种马",
+                      "beast" : "野兽",
+                      "monster" : "怪物",
+                      "machine" :"机器",
+                      }
 
 #### BALANCE / CHEATS ####
 
