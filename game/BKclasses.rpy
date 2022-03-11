@@ -3748,7 +3748,7 @@ init -2 python:
                 if target.endswith("preference"):
                     text1 += "允许您增加客人的" + target + "到 +" + str(50*value) + "%."
                 else:
-                    text1 += "允许'" + pop_cnname[target] + "'访问你的青楼."
+                    text1 += "允许'" + target + "'访问你的青楼."
 
                 return text1
 
@@ -3912,7 +3912,7 @@ init -2 python:
             target = "性服侍技能收益" if target == "service gains" else target
             target = "皮绳愉虐技能收益" if target == "fetish gains" else target
             target = "经验收益" if target == "xp gains" else target
-            target = "最大精力" if target == "max energy" else target
+            target = "最大耐力" if target == "max energy" else target
             target = "收入" if target == "income" else target
             ###替换 strength,charisma,spirit,speed,"Charm","Beauty","Body","Body","Sensitivity","Libido","Constitution","Obedience","Service","Sex","Anal","Fetish"
             target = "魅力收益" if target == "charm gains" else target
@@ -3989,13 +3989,13 @@ init -2 python:
             target = "作为训练时所需服从" if target == "train obedience target" else target
             #target = "作为工作时所需服从" if target == "work obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
-            target = "精力消耗" if target == "tiredness" else target
+            target = "耐力消耗" if target == "tiredness" else target
             target = "满足保养费时的效用" if target == "positive upkeep modifier" else target
             target = "怪物经验" if target == "monster xp" else target
             target = "野兽经验" if target == "beast xp" else target
             target = "机器经验" if target == "machine xp" else target
             target = "种马经验" if target == "stallion xp" else target
-            target = "精力恢复" if target == "energy" else target
+            target = "耐力恢复" if target == "energy" else target
             target = "经验" if target == "xp" else target
             target = "技能点" if target == "skill points" else target
             target = "玩家声望" if target == "prestige" else target
@@ -4008,7 +4008,7 @@ init -2 python:
             target = "所有常规技能" if target == "all main skills" else target
             target = "多给保养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
             target = "少给保养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
-            target = "只工作半天时精力回复量" if target == "half-shift resting bonus" else target
+            target = "只工作半天时耐力回复量" if target == "half-shift resting bonus" else target
             target = "接客时客人因难以满足的扣分" if target == "customer penalties" else target
             target = "裸体进行常规工作时获得的小费" if target == "naked bonus" else target
             target = "接受工作或训练的可能性" if target == "obedience tests" else target
@@ -4846,7 +4846,7 @@ init -2 python:
 
             description += stat_increase_dict["xp_dark"] % xp
             description += stat_increase_dict["rep"] % rep
-            description += stat_increase_dict["stat_neg"] % ("精力", round_int(energy))
+            description += stat_increase_dict["stat_neg"] % ("耐力", round_int(energy))
 
             if girl.ready_to_level():
                 girl.level_up()
@@ -6426,7 +6426,7 @@ init -2 python:
                             s="恐惧"
                         text1 = "{b}" + s + "{/b}"
                     else:
-                        text1 = "{b}" + stat_cnname[s] + "技能" + "{/b}"
+                        text1 = "{b}" + s + "技能" + "{/b}"
 
                     if c >= 5:
                         renpy.say("", girl.name + "的" + text1 + "增加了很多。")

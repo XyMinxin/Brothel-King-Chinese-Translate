@@ -1220,9 +1220,9 @@ init -3 python:
 
     def article(noun):
         if noun[0].lower() in ("a", "i", "e", "o"):
-            return "an " + noun
+            return "" + noun
         else:
-            return "a " + noun
+            return "" + noun
 
     def season_text(d): # Where d is a dictionary containing text for all 4 seasons
         return d[calendar.get_season()]
