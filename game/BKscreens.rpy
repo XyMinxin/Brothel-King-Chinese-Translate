@@ -2542,7 +2542,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(75, 75), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text archetype[:3] + "\n" + archetype[4:] size 12 selected_bold True color c_darkgrey selected_color c_black
+                        text archetype_cnname[archetype] size 12 selected_bold True color c_darkgrey selected_color c_black
 
 #        background girl.archetypes[selected_archetype].get_pic().get(800, 640)
         button background None xalign 0.5 yalign 0.5 xsize 800 yfill True ypadding 0 right_padding 0 right_margin 0 action NullAction():
@@ -2599,7 +2599,6 @@ screen perks(girl):
                         yfill True
 
                         if selected_perk:
-
                             text selected_perk.name size 18 bold True yalign 0.0
 
                             frame xpadding 0 xmargin 0 ypadding 0 ymargin 0 background None xsize int(0.25*config.screen_width) xfill True xalign 0.5 yalign 0.5:
@@ -2617,7 +2616,7 @@ screen perks(girl):
 
                         else:
                             vbox spacing 10:
-                                text selected_archetype size 18 bold True yalign 0.0
+                                text archetype_cnname[selected_archetype] size 18 bold True yalign 0.0
                                 text archetype_description[selected_archetype] size 16 yalign 0.0
                                 text ""
 
