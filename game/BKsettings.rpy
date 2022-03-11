@@ -258,22 +258,6 @@ init -4 python:
                             "fascinated" : "陶醉",
                             }
 
-
-    room_dict_name = {
-                    "Basic room" : "基本房间",
-                    "+Basic room+" : "+基本房间+",
-                    "*Basic room*" : "*基本房间*",
-                    "Standard room" : "标准房间",
-                    "+Standard room+" : "+标准房间+",
-                    "*Standard room*" : "*标准房间*",
-                    "Elegant room" : "优雅房间",
-                    "+Elegant room+" : "+优雅房间+",
-                    "*Elegant room*" : "*优雅房间*",
-                    "Noble suite" : "贵族套房",
-                    "+Royal suite+" : "+皇家套房+",
-                    "*Imperial suite*" : "*帝国套房*",
-                    }
-
     ## 互动界面 ##
     interact_dict_name = {
                         "Chat" : "交谈",
@@ -600,30 +584,30 @@ init -4 python:
 
     room_pics = {
                 # Common rooms
-                "tavern" : "tavern.webp",
-                "strip club" : "strip club.webp",
-                "onsen" : "onsen.webp",
-                "okiya" : "okiya.webp",
+                "酒馆" : "tavern.webp",
+                "俱乐部" : "strip club.webp",
+                "温泉" : "onsen.webp",
+                "置屋" : "okiya.webp",
                 # Bedrooms
-                "Basic room" : "basic room1.webp",
-                "+Basic room+" : "basic room2.webp",
-                "*Basic room*" : "basic room3.webp",
-                "Standard room" : "standard room1.webp",
-                "+Standard room+" : "standard room2.webp",
-                "*Standard room*" : "standard room3.webp",
-                "Elegant room" : "rich room1.webp",
-                "+Elegant room+" : "rich room2.webp",
-                "*Elegant room*" : "rich room3.webp",
-                "Noble suite" : "noble room1.webp",
-                "+Royal suite+" : "noble room2.webp",
-                "*Imperial suite*" : "noble room3.webp",
+                "基本房间" : "basic room1.webp",
+                "+基本房间+" : "basic room2.webp",
+                "*基本房间*" : "basic room3.webp",
+                "标准房间" : "standard room1.webp",
+                "+标准房间+" : "standard room2.webp",
+                "*标准房间*" : "standard room3.webp",
+                "高级房间" : "rich room1.webp",
+                "+高级房间+" : "rich room2.webp",
+                "*高级房间*" : "rich room3.webp",
+                "贵族套房" : "noble room1.webp",
+                "+皇家套房+" : "noble room2.webp",
+                "*御庭套房*" : "noble room3.webp",
                 # Master bedroom
-                "Single room" : "master/master0.webp",
-                "Double room" : "master/master1.jpg",
-                "Small suite" : "master/master2.webp",
-                "Luxury suite" : "master/master3.webp",
-                "Royal suite" : "master/master4.jpg",
-                "Royal harem" : "master/master5.webp",
+                "单人房间" : "master/master0.webp",
+                "双人房间" : "master/master1.jpg",
+                "小型套间" : "master/master2.webp",
+                "豪华套间" : "master/master3.webp",
+                "皇家套间" : "master/master4.jpg",
+                "王室后宫" : "master/master5.webp",
                 }
 
     night_pics = ["night.webp",]

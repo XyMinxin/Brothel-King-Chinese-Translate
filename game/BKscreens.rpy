@@ -3688,14 +3688,14 @@ screen brothel():
 
                     has vbox spacing 6
 
-                    text "{b}卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
+                    text "{b}女孩卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
 
                     frame background c_ui_dark:
 
                         has vbox spacing 6
 
                         if brothel.bedrooms < brothel.get_maxbedrooms():
-                            $ text1 = "为你的青楼增加一间新的卧室需要" + str(brothel.get_room_price()) +  "金币. 青楼最多只能有 " + str(brothel.get_maxbedrooms()) +  "间卧室."
+                            $ text1 = "为你的青楼增加一间新的卧室需要" + str(brothel.get_room_price()) +  "金币. 青楼最多只能有 " + str(brothel.get_maxbedrooms()) +  " 间卧室."
                         elif district.rank < 5:
                             $ text1 = "在你搬到另一家青楼之前，你不能再增加任何卧室."
                         else:
@@ -3804,7 +3804,7 @@ screen brothel():
                 has vbox
                 spacing 6
 
-                text "{b}公用卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
+                text "{b}一般房间{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
 
                 frame:
                     background c_ui_dark

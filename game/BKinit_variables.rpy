@@ -479,34 +479,34 @@ init python:
     # ROOMS #
 
     room_dict = {
-                1 : Room("Basic room", 1),
-                2 : Room("+Basic room+", 2),
-                3 : Room("*Basic room*", 3),
-                4 : Room("Standard room", 4),
-                5 : Room("+Standard room+", 5),
-                6 : Room("*Standard room*", 6),
-                7 : Room("Elegant room", 7),
-                8 : Room("+Elegant room+", 8),
-                9 : Room("*Elegant room*", 9),
-                10 : Room("Noble suite", 10),
-                11 : Room("+Royal suite+", 11),
-                12 : Room("*Imperial suite*", 12)
+                1 : Room("基本房间", 1),
+                2 : Room("+基本房间+", 2),
+                3 : Room("*基本房间*", 3),
+                4 : Room("标准房间", 4),
+                5 : Room("+标准房间+", 5),
+                6 : Room("*标准房间*", 6),
+                7 : Room("高级房间", 7),
+                8 : Room("+高级房间+", 8),
+                9 : Room("*高级房间*", 9),
+                10 : Room("贵族套房", 10),
+                11 : Room("+皇家套房+", 11),
+                12 : Room("*御庭套房*", 12)
                 }
 
     common_room_dict = {
-                        "tavern" : Room("tavern", 0, "special", job = "waitress"),
-                        "club" : Room("strip club", 0, "special", job = "dancer"),
-                        "onsen" : Room("onsen", 0, "special", job = "masseuse"),
-                        "okiya" : Room("okiya", 0, "special", job = "geisha"),
+                        "tavern" : Room("酒馆", 0, "special", job = "waitress"),
+                        "club" : Room("俱乐部", 0, "special", job = "dancer"),
+                        "onsen" : Room("温泉", 0, "special", job = "masseuse"),
+                        "okiya" : Room("置屋", 0, "special", job = "geisha"),
                         }
 
     master_bedrooms = {
-                        0 : Room("Single room", level=0, type="master", cost=0),
-                        1 : Room("Double room", level=1, type="master", cost=750),
-                        2 : Room("Small suite", level=2, type="master", cost=2500),
-                        3 : Room("Luxury suite", level=3, type="master", cost=7500),
-                        4 : Room("Royal suite", level=4, type="master", cost=25000),
-                        5 : Room("Royal harem", level=5, type="master", cost=75000),
+                        0 : Room("单人房间", level=0, type="master", cost=0),
+                        1 : Room("双人房间", level=1, type="master", cost=750),
+                        2 : Room("小型套间", level=2, type="master", cost=2500),
+                        3 : Room("豪华套间", level=3, type="master", cost=7500),
+                        4 : Room("皇家套间", level=4, type="master", cost=25000),
+                        5 : Room("王室后宫", level=5, type="master", cost=75000),
                         }
 
 
