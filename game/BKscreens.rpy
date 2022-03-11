@@ -156,7 +156,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", 35, 35) yalign 0.5
 
-                text "No guild fee is due." xalign 0.0 yalign 0.5 size 14 color c_emerald
+                text "无需缴纳公会费用." xalign 0.0 yalign 0.5 size 14 color c_emerald
 
 
 screen tax_tab(fade=False):
@@ -185,7 +185,7 @@ screen tax_tab(fade=False):
                 $ due_date = "in %s days" % (8-calendar.day)
 
             vbox:
-                text "Guild Fee" bold True size 14
+                text "公会费用" bold True size 14
                 text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size 14 color c_red
 
 
@@ -208,7 +208,7 @@ screen overlay(current_screen = None, kwargs = None):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip ("The current date.\n" + moons[calendar.month].short_description)
+            tooltip ("{size=-1}当前日期{/size}\n" + moons[calendar.month].short_description)
 
 #             if calendar.moon:
 #             else:
@@ -217,9 +217,26 @@ screen overlay(current_screen = None, kwargs = None):
             hbox:
                 spacing 10
 
-                text "Year: [calendar.year]" size 18
-                text "Month: [calendar.month]" size 18
-                text ("Day: [calendar.day] (" + calendar.get_weekday()[:3] + ")") size 18
+                if calendar.get_weekday()=="Monday":
+                    $text7="星期一"
+                elif calendar.get_weekday()=="Tuesday":
+                    $text7="星期二"
+                elif calendar.get_weekday()=="Wednesday":
+                    $text7="星期三"
+                elif calendar.get_weekday()=="Thursday":
+                    $text7="星期四"
+                elif calendar.get_weekday()=="Friday":
+                    $text7="星期五"
+                elif calendar.get_weekday()=="Saturday":
+                    $text7="星期六"
+                elif calendar.get_weekday()=="Sunday":
+                    $text7="星期天"
+                else:
+                    $text7=calendar.get_weekday()
+
+                text "[calendar.year]年" size 16
+                text "[calendar.month]月" size 16
+                text ("[calendar.day]日(" + text7 + ")") size 16
 
 
         hbox:
@@ -229,11 +246,11 @@ screen overlay(current_screen = None, kwargs = None):
 
             button background None xalign 0.0 yalign 0.5 action NullAction():
                 if game.chapter > 1:
-                    tooltip "Your available gold. Other resources:"
+                    tooltip "{size=-1}你可用金币. 其他资源:{/size}"
                     hovered (Show("resource_tab", x=0.625, y=0.025), Show("tax_tooltip", transition=Dissolve(0.15)))
                     unhovered (Hide("resource_tab"), Hide("tax_tooltip", transition=Dissolve(0.15)))
                 else:
-                    tooltip "Your available gold."
+                    tooltip "你可用金币..."
 
                 hbox:
 
@@ -244,7 +261,7 @@ screen overlay(current_screen = None, kwargs = None):
                     text '{:,}'.format(round_int(MC.gold)).replace(',', ' ') xalign 0.0 yalign 0.5 size 18
 
 
-            button background None xalign 0.0 yalign 0.5 tooltip "AP: Your remaining actions for today." action NullAction():
+            button background None xalign 0.0 yalign 0.5 tooltip "行动力: 今天剩余行动力." action NullAction():
 
                 has hbox
 
@@ -254,7 +271,7 @@ screen overlay(current_screen = None, kwargs = None):
 
                 text str(round_int(MC.interactions)) xalign 0.0 yalign 0.5 size 18
 
-            button background None xalign 0.0 yalign 0.5 tooltip "MP: Your current mana." action NullAction():
+            button background None xalign 0.0 yalign 0.5 tooltip "魔法值: 今天剩余魔法值." action NullAction():
 
                 has hbox
 
@@ -266,7 +283,7 @@ screen overlay(current_screen = None, kwargs = None):
 
         frame background None xsize 200
 
-        textbutton "?" tooltip "Learn more about the current screen.":
+        textbutton "?" tooltip "了解更多关于当前屏幕的信息.":
 
             xalign 1.0
             yalign 0.5
@@ -319,9 +336,9 @@ screen girl_tab(girls, context="girls"):
         if game.has_active_mod("Headhunter Mod"):
             if game.headhunter_button_enabled:
                 key "shift_H" action Jump("headhunter_main")
-            $ textHH = "{u}H{/u}eadhunter" #
+            $ textHH = "{u}H{/u}猎头公司" #
 
-            $ textHH2 = "Order slaves with specific characteristics for increased cost."
+            $ textHH2 = "订购具有特定特征的奴隶，以增加成本."
 
             if game.headhunter_button_enabled:
                 textbutton textHH:
@@ -411,7 +428,7 @@ screen girl_tab(girls, context="girls"):
                 frame xsize 38 ysize 20 xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                     textbutton selected_view_mode text_italic True text_color c_darkbrown text_size 14 xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize 38 ysize 20 idle_background None:
                         action SetVariable("selected_view_mode", _next)
-                        tooltip "Click to change view mode"
+                        tooltip "单击以更改视图模式"
 
         frame:
 
@@ -459,7 +476,7 @@ screen girl_tab(girls, context="girls"):
                     for girl in girls:
                         use girl_button(girl, bsize, status_list=girl_status_dict[girl], context=context)
             else:
-                text "{i}  No girl available  {/i}" size 18 color c_brown
+                text "{i}  没有女孩  {/i}" size 18 color c_brown
 
 
 screen girl_pick_badge(girl):
@@ -472,7 +489,7 @@ screen girl_pick_badge(girl):
     frame xalign 0.5 yalign 0.5 xpadding 20 ypadding 20:
         has vbox
 
-        text "Choose a badge for [girl.fullname]" color c_darkorange
+        text "为[girl.fullname]选择一个徽章" color c_darkorange
 
         text ""
 
@@ -486,10 +503,10 @@ screen girl_pick_badge(girl):
                 button xsize 80 ysize 80:
                     if i == 0:
                         action (SetField(girl, "badge", None), Return())
-                        tooltip "No badge"
+                        tooltip "没有徽章"
                     else:
                         action (SetField(girl, "badge", badge_pics[i]), Return())
-                        tooltip "Pick this badge"
+                        tooltip "挑选这个徽章"
                     add ProportionalScale(badge_pics[i], 60, 60) xalign 0.5 yalign 0.5
 
 
@@ -498,14 +515,14 @@ screen badge_button(girl, _size, t_size=20, active=True): # Where badge is a fil
 
     if not badge:
         if active:
-            textbutton "+" xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 text_size t_size tooltip "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience.":
+            textbutton "+" xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 text_size t_size tooltip "为这个女孩添加自定义徽章. 定制徽章不做任何事情，它们是为了你自己的方便.":
                 action Return(("badge", girl))
                 text_color c_white
                 text_drop_shadow (1, 1)
 
     else:
         $ badge_name = badge.rsplit(".", 1)[0]
-        button xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 tooltip "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl." % badge_name:
+        button xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 tooltip "目前的徽章: {b}%s{/b}.\n点击改变该女孩的自定义徽章." % badge_name:
             if active:
                 action Return(("badge", girl))
             add ProportionalScale(badge, _size, _size)
@@ -517,27 +534,31 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
 
     if context == "girls":
         if girl.job:
-            $ text1 = girl.job.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is a level " + str(girl.level) + " " + girl.job.capitalize() + "."
+            if girl.job:
+                $ text1 = chinese_name[girl.job.capitalize()]
+                $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name[girl.job.capitalize()] + "."
+                if girl.job in all_jobs and girl.work_whore:
+                    $ text1 += "\n{color=[c_red]}妓女{/color}"
+                    $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name[girl.job.capitalize()] + "并兼职妓女."
         else:
-            $ text1 = "No job"
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is resting."
+            $ text1 = "无工作"
+            $ but_ttip = "{b}" + girl.fullname + "{/b}正在休息."
         $ text_col = job_color[girl.job]
 
     elif context == "farm":
         if farm.programs[girl].target != "no training":
             $ text1 = farm.programs[girl].target.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is training (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场训练(" + text1 + ")."
             $ text_col = c_orange
         else:
             $ text1 = farm.programs[girl].holding.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is being held (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场待机(" + text1 + ")."
             $ text_col = c_white
 
     elif context == "slavemarket":
         $ text1 = experienced_description[girl.sexual_experience]
-        $ text2 = str(girl.get_price("buy")) + " gold"
-        $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + ". Click for details."
+        $ text2 = "{b}"+str(girl.get_price("buy")) + "{/b}{size=-4}金币{/size}"
+        $ but_ttip = "购买{b}" + girl.fullname + "{/b}需要" + text2 + "."
         $ text_col = experienced_color[girl.sexual_experience]
 
     if bsize == "x40":
@@ -566,7 +587,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 20, 18, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "She has " + str_int(girl.energy) + " energy left out of " + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip "她还有" + str_int(girl.energy) + "点耐力，其当前耐力上限是" + str(int(girl.get_stat_minmax("energy")[1])) + "."
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -585,10 +606,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size 11  drop_shadow (1, 1)
+                    text "阶级" size 11  drop_shadow (1, 1)
                     text rank_name[girl.rank] size 14 bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size 11  drop_shadow (1, 1)
+                    text "等级" size 11  drop_shadow (1, 1)
                     text str(girl.level) size 14 bold True drop_shadow (1, 1)
 
             frame:
@@ -641,7 +662,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 25, 20, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 0.5:
-                    tooltip "She has " + str_int(girl.energy) + " energy left out of " + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -660,10 +681,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size 12  drop_shadow (1, 1)
+                    text "阶级" size 12  drop_shadow (1, 1)
                     text rank_name[girl.rank] size 16 bold True  drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size 12  drop_shadow (1, 1)
+                    text "等级" size 12  drop_shadow (1, 1)
                     text str(girl.level) size 16 bold True  drop_shadow (1, 1)
 
             frame:
@@ -716,7 +737,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 30, 24, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "She has " + str_int(girl.energy) + " energy left out of " + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -744,10 +765,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 yalign 0.25
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size 11
+                    text "阶级" size 11
                     text rank_name[girl.rank] size 14 bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size 11
+                    text "等级" size 11
                     text str(girl.level) size 14 bold True drop_shadow (1, 1)
 
             frame:
@@ -801,7 +822,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 40, 32, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "She has " + str_int(girl.energy) + " energy left out of " + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -823,10 +844,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 yalign 0.1
 
                 hbox spacing 6:
-                    text "Rank" size 14
+                    text "阶级" size 14
                     text rank_name[girl.rank] bold True drop_shadow (1, 1)
                 hbox spacing 6:
-                    text "Level" size 14
+                    text "等级" size 14
                     text str(girl.level) bold True drop_shadow (1, 1)
 
             frame:
@@ -964,30 +985,30 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     text "" size 18
 
                     hbox xalign 0.5 box_wrap True:
-                        textbutton "Change program" text_size 16 action Return(("change program", girl)) tooltip "Change " + girl.name + "'s current training program."
+                        textbutton "改变设定" text_size 16 action Return(("change program", girl)) tooltip "更改" + girl.name + "当前的训练设定."
                         if farm.programs[girl].target != "no training":
-                            textbutton "Change mode" text_size 16 action Return(("change mode", girl)) hovered tt.Action("Change " + girl.name + "'s current training mode.")
+                            textbutton "改变模式" text_size 16 action Return(("change mode", girl)) hovered tt.Action("Change " + girl.name + "当前的训练模式.")
 
                     text "" size 18
 
                     if farm.programs[girl].target != "no training":
                         hbox:
-                            textbutton "Training mode:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("Decide if Gizel will force girls to train against their will.")
-                            text farm.programs[girl].mode.capitalize() size 14 bold True
+                            textbutton "训练模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定Gizel是否会强迫女孩们违心地训练.")
+                            text chinese_name[farm.programs[girl].mode.capitalize()] size 14 bold True
 
                         hbox:
-                            textbutton "Training facility:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("Define which facility to use for her training (if any).")
-                            text farm.programs[girl].installation_name.capitalize() size 14 bold True
+                            textbutton "训练设施:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有).")
+                            text chinese_name[farm.programs[girl].installation_name.capitalize()] size 14 bold True
 
                     else:
                         hbox:
-                            textbutton "Holding mode:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("Decide what the girl will do when not in training (work or rest).")
-                            text farm.programs[girl].holding.capitalize() size 14 bold True
+                            textbutton "待机模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么.")
+                            text chinese_name[farm.programs[girl].holding.capitalize()] size 14 bold True
 
                     hbox:
                         if farm.programs[girl].duration >= 0:
-                            textbutton "Duration:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("The duration of her stay.")
-                            text str(farm.programs[girl].duration) + " days" size 14 bold True
+                            textbutton "持续时间:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的逗留期限.")
+                            text str(farm.programs[girl].duration) + "天" size 14 bold True
 
                     text "" size 18
 
@@ -998,17 +1019,17 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                             $ reaction = girl.will_do_farm_act(farm.programs[girl].target)
 
                             if reaction == "accepted":
-                                $ text1 = event_color["good"] % "Gizel thinks she will accept this training without causing trouble."
+                                $ text1 = event_color["good"] % "Gize认为她接受这个训练不会有任何问题."
                             elif reaction == "resisted":
-                                $ text1 = event_color["a little bad"] % "Gizel thinks she will be reluctant to train this act and will take a little convincing (hard mode needed)."
+                                $ text1 = event_color["a little bad"] % "Gizel认为她不愿意训练这种行为，需要一点说服力(需要强硬模式)."
                             elif reaction == "refused":
-                                $ text1 = event_color["a little bad"] % "Gizel thinks she will refuse this act unless she is beaten into submission (hardest mode needed)."
+                                $ text1 = event_color["a little bad"] % "Gizel认为她会拒绝这种行为，除非她屈服(需要强硬模式)."
 
                         else:
-                            $ text1 = "Gizel isn't sure how " + girl.name + " will react to this training."
+                            $ text1 = "Gizel不确定" + girl.name + "会对这次训练有什么反应."
 
                     else:
-                        $ text1 = "[girl.name] will never resist this."
+                        $ text1 = "[girl.name]永远不会抗拒这一点."
 
                     text text1 size 14 italic True xalign 0.5
 
@@ -1019,12 +1040,12 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if context == "girls":
                         key "d" action Return("sched")
-                        button background None xmargin 10 ymargin 10 xpadding 0 action Return("sched") tooltip "Open " + girl.fullname + "'s schedule (shortcut: {u}d{/u})":
+                        button background None xmargin 10 ymargin 10 xpadding 0 action Return("sched") tooltip "打开" + girl.fullname + "的排班表(快捷键: {u}d{/u})":
                             add "UI/calendar.webp" zoom 0.5 idle_alpha 0.66 hover_alpha 1.0
 
                     if MC.get_effect("special", "notebook"):
                         key "n" action Show("notebook")
-                        button background None xmargin 10 xpadding 0 action Show("notebook") tooltip "Open " + girl.fullname + "'s entry in your magical notebook (shortcut: {u}n{/u})":
+                        button background None xmargin 10 xpadding 0 action Show("notebook") tooltip "在你的笔记本中打开" + girl.fullname + "的相关内容(快捷键: {u}n{/u})":
                             add "items/misc/magic notebook.webp" zoom 0.5 idle_alpha 0.66 hover_alpha 1.0
 
                 vbox xalign 1.0:
@@ -1043,7 +1064,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                 if context == "slavemarket" or persistent.show_girlpack_rating=="Everywhere":
                     $ rating, ttip = get_girlpack_rating(girl)
 
-                    textbutton "Girl rating (" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size 18 yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
+                    textbutton "女孩图片包评级(" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size 18 yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
 
 
 screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket, farm, free, postings, contracts, capture
@@ -1089,11 +1110,11 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     if context == "girls":
 
                         action (SetVariable("selected_girl", girl), Return("change_name"))
-                        hovered tt.Action("Click to change her name")
+                        hovered tt.Action("单击此处更改她的名字")
 
                     elif context == "farm":
                         action Return(("change_name", girl))
-                        hovered tt.Action("Click to change her name")
+                        hovered tt.Action("单击此处更改她的名字")
 
                     xmargin 0
                     ymargin 0
@@ -1125,17 +1146,17 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         $ defense = girl.get_defense()
 
                         if defense <= 0:
-                                $ ttip = "{b}Helpless"
+                            $ ttip = "{b}无助"
                         elif defense <= 3:
-                            $ ttip = "{b}Mostly harmless"
+                            $ ttip = "{b}羸弱"
                         elif defense <= 6:
-                            $ ttip = "{b}Competent"
+                            $ ttip = "{b}胜任"
                         elif defense <= 9:
-                            $ ttip = "{b}Dangerous"
+                            $ ttip = "{b}强力"
                         else:
-                            $ ttip = "{b}Deadly"
+                            $ ttip = "{b}致命"
 
-                        $ ttip += "{/b}\nHow well she can defend herself. Raise this by giving her a weapon."
+                        $ ttip += "{/b}\n她的自卫能力有多强. 通过给她一件武器来提高这一点."
 
                         button:
 
@@ -1188,7 +1209,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                     #Rank
 
-                    $ rank_text = "Rank " + rank_name[girl.rank]
+                    $ rank_text = "阶级" + rank_name[girl.rank]
 
     #                $ rank_ttip = "Reputation: " + str(round_int(girl.rep)) + "/" + str(girl.get_rep_cap())
 
@@ -1203,7 +1224,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                     #Level
 
-                    $ level_text = "Level "+ str(girl.level)
+                    $ level_text = "等级"+ str(girl.level)
     #                $ level_ttip = "Xp: " + str(round_int(girl.xp)) + "/" + str(girl.get_xp_cap())
     #                $ level_ttip += "       Max level: {b}" + str(girl.rank * 5) + "{/b}"
     #                $ level_ttip += "\nLeveling allows your girl to choose perks and increase stats."
@@ -1223,7 +1244,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             $ jp_show = True
                         else:
                             $ jp_show = False
-                        $ jp_text = "Away"
+                        $ jp_text = "离开"
 
                     elif girl.hurt > 0:
                         if girl.job in all_jobs:
@@ -1231,7 +1252,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             $ jp_show = True
                         else:
                             $ jp_show = False
-                        $ jp_text = "Hurt"
+                        $ jp_text = "受伤"
 
                     elif girl.workdays[calendar.get_weekday()] == 0:
                         if girl.job in all_jobs:
@@ -1239,10 +1260,10 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             $ jp_show = True
                         else:
                             $ jp_show = False
-                        $ jp_text = "Resting"
+                        $ jp_text = "休息中"
 
                     elif girl.resting or not girl.job:
-                        $ jp_text = "Resting"
+                        $ jp_text = "休息中"
                         $ jp_show = False
 
                     elif girl.job in all_jobs:
@@ -1253,11 +1274,11 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         $ jp_show = False
                         if farm.programs[girl].target == "no training":
                             if farm.programs[girl].holding == "rest":
-                                $ jp_text = "Resting"
+                                $ jp_text = "休息中"
                             else:
-                                $ jp_text = "Holding"
+                                $ jp_text = "待机中"
                         else:
-                            $ jp_text = "Training"
+                            $ jp_text = "训练中"
 
                     else: # Whore
                         $ job = None
@@ -1285,10 +1306,9 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             if context != "capture":
                 text ""
-                text ""
 
 
-            text "Main skills" size 18
+            text "主要技能" size 18
 
             vbox:
                 spacing 0
@@ -1364,7 +1384,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         button:
                             background None
                             action NullAction()
-                            tooltip "You need to become her friend to see her level for this skill."
+                            tooltip "你需要成为她的朋友，才能看到她这个技能的等级."
                             keyboard_focus False
                             ysize 30
 
@@ -1384,7 +1404,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                 # text "" size 6
 
             hbox spacing 14:
-                text "Sex skills" size 18 yalign 0.0
+                text "性爱技能" size 18 yalign 0.0
 
                 for act in ("group", "bisexual"):
 
@@ -1405,15 +1425,15 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                     if not girls_firstvisit:
                                         action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
 
-                                    hovered (tt.Action("This will activate {b}" + act + " acts{/b} for this girl. At least one regular sex act muct be active as well."), Show("sex_details", girl=girl))
+                                    hovered (tt.Action("这将激活这个女孩的{b}" + girl_cat_name[act] + "{/b}行为. 至少还有一项常规性行为需要被激活."), Show("sex_details", girl=girl))
                                     unhovered Hide("sex_details")
-                                text act.capitalize(): #preference_color[pref] % stat.name:
+                                text girl_cat_name[act.capitalize()]: #preference_color[pref] % stat.name:
                                     size 12
 
 
             if context == "slavemarket":
-                $ ttip = experienced_description[girl.sexual_experience + " ttip"] + " Prior training may make a girl more suitable for sex acts."
-                textbutton "Prior training received:   {color=" + experienced_color[girl.sexual_experience] + "}" + experienced_description[girl.sexual_experience] + "{/color}" ymargin 3 ypadding 0 text_color c_white text_size 14 background None action NullAction() hovered tt.Action(ttip)
+                $ ttip = experienced_description[girl.sexual_experience + " ttip"] + "之前接受的培训可使女孩更适合该行为."
+                textbutton "之前接受的培训:   {color=" + experienced_color[girl.sexual_experience] + "}" + experienced_description[girl.sexual_experience] + "{/color}" ymargin 3 ypadding 0 text_color c_white text_size 12 background None action NullAction() hovered tt.Action(ttip)
 
 
             vbox:
@@ -1460,7 +1480,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                     $ result, reason = girl.will_do_sex_act(stat.name.lower())
 
                                     if result:
-                                        $ ttip = "This will activate {b}" + stat_name_dict[stat.name] + "{/b} for this girl."
+                                        $ ttip = "这将会为这个激活{b}" + stat_name_dict[stat.name] + "{/b}."
                                     else:
                                         $ ttip = reason
 
@@ -1487,7 +1507,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         button:
                             background None
                             action NullAction()
-                            tooltip "You need to become her lover to see her level for this skill."
+                            tooltip "你需要成为她的爱人，才能看到她的这种技能水平."
                             keyboard_focus False
                             ysize 30
 
@@ -1505,7 +1525,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
 
             ## TRAITS LIST ##
-            textbutton "Traits" text_color c_white text_size 18 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+            textbutton "特质" text_color c_white text_size 18 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                 action NullAction()
                 if context != "free" or girl.MC_relationship_level >= 3:
                     hovered Show("trait_details", girl=girl)
@@ -1554,15 +1574,15 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         yalign 0.5
                         text_size 14
                         action NullAction()
-                        tooltip "You need to become her boyfriend to see her traits."
+                        tooltip "你需要成为她的男朋友才能看到她的特质."
                         keyboard_focus False
 
             if context == "girls":
                 text "" size 3
-                text "Upkeep" size 18
+                text "抚养费用" size 18
 
                 if girl.locked_upkeep:
-                    text "Her upkeep is currently withdrawn." size 14 italic True
+                    text "她的抚养费目前已被收回." size 14 italic True
 
                 else:
                     key "A" action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", "click.wav"))
@@ -1579,7 +1599,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xsize 0.45
                             ypos -0.4
                             keyboard_focus False
-                            hovered tt.Action("You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy.")
+                            hovered tt.Action("你必须每天支付抚养费. 更高端的女孩将需要更高的费用. 保持高昂的费用可以让你的女孩开心.")
 
                         textbutton "-":
                             text_size 14
@@ -1588,7 +1608,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xpadding 0
                             if girl.upkeep > minrange:
                                 action (SetField(girl, "upkeep", girl.upkeep-1), Function(girl.update_upkeep_ratio), Play("sound", "click.wav"))
-                            hovered tt.Action("Decrease her upkeep.")
+                            hovered tt.Action("减少她的抚养费.")
 
                         textbutton "+":
                             text_size 14
@@ -1597,12 +1617,12 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xpadding 0
                             if girl.upkeep < maxrange:
                                 action (SetField(girl, "upkeep", girl.upkeep+1), Function(girl.update_upkeep_ratio), Play("sound", "click.wav"))
-                            hovered tt.Action("Increase her upkeep.")
+                            hovered tt.Action("增加她的抚养费.")
 
                         if girl.auto_upkeep:
-                            $ text1 = "Auto upkeep setting is {b}{color=[c_green]}on{/color}{/b} {i}(shortcut: {u}Shift+a{/u}){/i}"
+                            $ text1 = "自动抚养设置为: {b}{color=[c_green]}开启{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
                         else:
-                            $ text1 = "Auto upkeep setting is {b}{color=[c_red]}off{/color}{/b} {i}(shortcut: {u}Shift+a{/u}){/i}"
+                            $ text1 = "自动抚养设置为: {b}{color=[c_red]}关闭{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
 
                         textbutton "A":
                             if girl.auto_upkeep:
@@ -1613,9 +1633,9 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xsize 25
                             xpadding 0
                             action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", "click.wav"))
-                            tooltip "{size=+2}" + text1 + "\nWhen this is turned on, current upkeep balance will 'lock', and upkeep will rise and fall automatically.{/size=+2}"
+                            tooltip "{size=+2}" + text1 + "\n开启自动后，抚养费用将会自动调节.{/size=+2}"
 
-                        text " " + str(round_int(girl.upkeep)) + " gold":
+                        text " " + str(round_int(girl.upkeep)) + "金币":
                             size 14
                             if girl.get_upkeep_modifier() < 0:
                                 color c_red
@@ -1628,14 +1648,14 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             elif context == "farm":
                 text "" size 3
-                text "Upkeep" size 18
+                text "抚养费用" size 18
 
                 hbox:
                     spacing 2
 
                     text "" size 14
 
-                    text str(girl.get_med_upkeep() // 4) + " gold (fixed)" size 14
+                    text str(girl.get_med_upkeep() // 4) + "金币(固定)" size 14
 
 
 screen assign_job(girl):
@@ -1665,9 +1685,9 @@ screen assign_job(girl):
             button xsize 110 ysize 60 background None xpadding 2 ypadding 2:
 #                 selected girl.job == "rest" # What was this?
                 action Return("rest")
-                tooltip "Tell " + girl.fullname + " to get some rest."
+                tooltip "安排" + girl.fullname + "去休息."
                 add "tb rest" alpha 0.6 hover_alpha 1.0 selected_hover_alpha 1.0 selected_idle_alpha 1.0 xalign 0.5 yalign 0.5
-                text "Rest" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
+                text "休息" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                 text "1" size 12 xalign 0.05 yalign 0.95 drop_shadow (1, 1)
 
             for j in all_jobs + ["whore"]:
@@ -1675,7 +1695,7 @@ screen assign_job(girl):
                     if brothel.has_room(job_room_dict[j]):
 #                         selected girl.job == j # What was this?
                         action Return(j)
-                        tooltip "Ask " + girl.fullname + " to work as a " + j
+                        tooltip "安排" + girl.fullname + "作为" + chinese_name[j] + "工作"
                         add "tb " + j idle_alpha 0.66 #selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
                         text j.capitalize() selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                         if j == "whore":
@@ -1685,28 +1705,28 @@ screen assign_job(girl):
                         text text1 size 12 xalign 0.05 yalign 0.95 drop_shadow (1, 1)
 
                     else:
-                        text j.capitalize() + "\n(unavailable)" selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
+                        text j.capitalize() + "\n(不可用)" selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
 
 
             if farm.active:
                 button xsize 110 ysize 60 background None xpadding 2 ypadding 2 xpos 0:
 #                     selected girl.job=="farm" # What was this?
                     action Return("farm")
-                    tooltip "Send " + girl.fullname + " to the farm."
+                    tooltip "把" + girl.fullname + "送去农场."
                     add "tb farm" idle_alpha 0.66 selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
-                    text "Farm" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
+                    text "农场" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                     text "7" size 12 xalign 0.05 yalign 0.95 drop_shadow (1, 1)
             else:
                 text ""
 
             if brothel.master_bedroom.level >= 1:
-                $ text1 = "Auto-train "
+                $ text1 = "自动训练 "
                 if girl in brothel.master_bedroom.girls:
-                    $ ttip = "Remove " + girl.fullname + " from your bedroom."
-                    $ text1 += "(ON)"
+                    $ ttip = "让" + girl.fullname + "离开你的房间."
+                    $ text1 += "(开)"
                 else:
-                    $ ttip = "Add " + girl.fullname + " to your bedroom."
-                    $ text1 += "(OFF)"
+                    $ ttip = "让" + girl.fullname + "去到你的房间."
+                    $ text1 += "(关)"
 
                 button xsize 110 ysize 60 background None xpadding 2 ypadding 2 xpos 0:
                     action Return("master bedroom")
@@ -1808,7 +1828,7 @@ screen girl_stats_light(girl, x=0.5, y=0.9):
                             if it.slot == selected_item.slot:
                                 $ change -= round_int(girl.get_effect("boost", it.type.name.lower()) * (it.get_effect("change", "defense") + (1 - it.get_effect("boost", "defense"))*girl.get_stat("defense")))
 
-                text "Defense" size 13 color c_brown:
+                text "个人防御" size 13 color c_brown:
                     if change:
                         bold True
                 text str_int(girl.get_defense()) size 14 color c_brown xalign 1.0:
@@ -1875,13 +1895,13 @@ screen button_overlay(girl, context="girls"):
 
             xfill True
 
-            $ text1 = str(girl.get_price('buy')) + " gold"
+            $ text1 = str(girl.get_price('buy')) + "金币"
 
             text text1 xalign 0.0
 
             key "y" action Return(girl)
 
-            textbutton "Bu{u}y{/u}" xalign 1.0 action Return(girl) tooltip "Click to buy " + girl.fullname + " for " + text1
+            textbutton "购买" xalign 1.0 action Return(girl) tooltip "点击为" + girl.fullname + "购买" + text1
 
     elif context == "girls":
 
@@ -1915,46 +1935,46 @@ screen button_overlay(girl, context="girls"):
 
 
             if girl.away:
-                $ text1 = "Away"
-                $ ttip = "She is away on a class or assignment for %s more day%s." % (girl.return_date - calendar.time, plural(girl.return_date - calendar.time))
+                $ text1 = "离开"
+                $ ttip = "她因上课或任务而离开了%s天." % (girl.return_date - calendar.time)
 
             elif girl.hurt > 0:
-                $ text1 = "Hurt"
+                $ text1 = "受伤"
                 if girl.hurt <= 1:
-                    $ ttip = "This girl is hurt and will need to rest for 1 more day until she is ready to do anything."
+                    $ ttip = "这个女孩受伤了，需要休息1天，直到她准备好做任何事情."
                 else:
-                    $ ttip = "This girl is hurt and will need to rest for " + str(round_int(girl.hurt)) + " more days until she is ready to do anything."
+                    $ ttip = "这个女孩受伤了，需要休息" + str(round_int(girl.hurt)) + "天，直到她准备好做任何事情."
 
             elif girl.exhausted:
-                $ text1 = "Tired"
-                $ ttip = "This girl needs to be fully rested until she can work again."
+                $ text1 = "疲倦"
+                $ ttip = "这个女孩需要充分休息，直到她能再次工作."
 
             elif girl.resting and girl.job:
-                $ text1 = "Resting"
-                $ ttip = "This girl has been set to rest today according with her schedule."
+                $ text1 = "休息中"
+                $ ttip = "这个女孩按日程表今天休息."
 
             elif not girl.job:
-                $ text1 = "No {u}j{/u}ob"
-                $ ttip = "No job assigned. This girl has been set to rest until further instructions."
+                $ text1 = "无工作"
+                $ ttip = "未分配工作. 这名女孩已被安排休息，等待进一步的指示."
 
             elif girl.work_whore:
-                $ text1 = girl.job.capitalize()[:4] + "./Wh."
-                $ ttip = "Working and whoring. Change this girl's job or let her rest."
+                $ text1 = chinese_name[girl.job.capitalize()][:4] + "./Wh."
+                $ ttip = "工作和嫖娼. 改变这个女孩的工作或者让她休息."
 
             else:
-                $ text1 = girl.job.capitalize()
-                $ ttip = "Change this girl's job or let her rest."
+                $ text1 = chinese_name[girl.job.capitalize()]
+                $ ttip = "改变这个女孩的工作或让她休息."
 
-            textbutton text1 text_size 14 action (SetVariable("selected_girl", girl), Return("assign")) tooltip ttip + " ({i}shortcut: {u}j{/u}{/i})"
+            textbutton text1 text_size 14 action (SetVariable("selected_girl", girl), Return("assign")) tooltip ttip + " ({i}快捷键: {u}j{/u}{/i})"
 
             $ sched = girl.workdays[calendar.get_weekday()]
 
             if sched == 0:
-                $ text1 = "Resting"
+                $ text1 = "休息日"
             elif sched == 50:
-                $ text1 = "Half-Shift"
+                $ text1 = "半班制"
             elif sched == 100:
-                $ text1 = "Full shift"
+                $ text1 = "全班制"
 
 #            textbutton "Schedule" text_size 14 hovered tt.Action("Click to set up this girl's schedule."):
 
@@ -1969,9 +1989,9 @@ screen button_overlay(girl, context="girls"):
                 xpadding 0
                 ypadding 0
 
-                textbutton "{u}I{/u}nteract":
+                textbutton "互动":
                     text_size 14
-                    hovered tt.Action("Interact with your girl. Costs actions.")
+                    hovered tt.Action("与你的女孩互动. 需要消耗行动力.")
 
                     if MC.interactions > 0 and not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("interact"))
@@ -1982,45 +2002,45 @@ screen button_overlay(girl, context="girls"):
                     action NullAction()
 
                 if MC.interactions <= 0:
-                    tooltip "You cannot take any more actions today."
+                    tooltip "你今天不能再采取任何行动."
 
                 elif girl.away:
-                    tooltip "You cannot interact with %s as she is away." % girl.name
+                    tooltip "由于她不在，你无法与%s互动." % girl.name
 
-            textbutton "I{u}t{/u}ems":
+            textbutton "物品":
                 text_size 14
 
                 if not (girls_firstvisit or girl.away):
 
                     action (SetVariable("selected_girl", girl), Return("equip"))
 
-                    tooltip "Change this girl's equipment."
+                    tooltip "改变这个女孩的装备."
 
                 else:
-                    tooltip "[girl.fullname] is away on a class or assignment."
+                    tooltip "[girl.fullname]正在外出上课或执行任务."
 
             if girl.free:
-                textbutton "Dismiss":
+                textbutton "解散":
                     text_size 14
                     if not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("dismiss"))
-                    tooltip "Release this girl from your custody. ({i}shortcut: {u}Delete{/u}{/i})"
+                    tooltip "把这个女孩从你的监护中释放出来. ({i}快捷键: {u}Delete{/u}{/i})"
 
             else:
-                textbutton "Sell":
+                textbutton "出售":
                     text_size 14
                     if not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("sell"))
-                    tooltip "Sell this girl for %s gold (original cost: %s gold). ({i}shortcut: {u}Delete{/u}{/i})" % (str(girl.get_price("sell")), girl.original_price)
+                    tooltip "将这个女孩以%s金币出售 (原始成本: %s金币). ({i}快捷键: {u}Delete{/u}{/i})" % (str(girl.get_price("sell")), girl.original_price)
 
 
             if girl.upgrade_points >= 1 or girl.perk_points:
                 key "u" action (SetVariable("selected_girl", girl), Return("level_or_perks"))
                 key "k" action (SetVariable("selected_girl", girl), Return("perks"))
-                textbutton "Level {u}u{/u}p" text_size 14:
+                textbutton "升级" text_size 14:
                     action (SetVariable("selected_girl", girl), Return("level_or_perks"))
                     alternate (SetVariable("selected_girl", girl), Return("perks"))
-                    tooltip ("You have " + str (girl.perk_points) + " perk points to spend.\nRight-click to access perks.")
+                    tooltip ("你有" + str (girl.perk_points) + "可供消费的特质点数.\n右键点击进入查看特质.")
                     hovered Show("perk_details", girl=girl)
                     unhovered Hide("perk_details")
 
@@ -2028,11 +2048,11 @@ screen button_overlay(girl, context="girls"):
                 if not girls_firstvisit:
                     key "k" action (SetVariable("selected_girl", girl), Return("perks"))
 
-                textbutton "Per{u}k{/u}s":
+                textbutton "特质":
                     text_size 14
                     if not girls_firstvisit:
                         action (SetVariable("selected_girl", girl), Return("perks"))
-                    tooltip "Check her current perks"
+                    tooltip "查看她目前的特技和特质"
                     hovered Show("perk_details", girl=girl)
                     unhovered Hide("perk_details")
 
@@ -2040,17 +2060,17 @@ screen button_overlay(girl, context="girls"):
 
             if girl.ready_to_rank():
                 key "r" action (SetVariable("selected_girl", girl), Return("rank"))
-                textbutton "{u}R{/u}ank up" text_size 14 action (SetVariable("selected_girl", girl), Return("rank"))
+                textbutton "升阶" text_size 14 action (SetVariable("selected_girl", girl), Return("rank"))
 
             if not girls_firstvisit:
                 key "a" action (SetVariable("selected_girl", girl), Return("stats"))
 
-                textbutton "St{u}a{/u}ts":
+                textbutton "统计数据":
                     text_size 14
                     action (SetVariable("selected_girl", girl), Return("stats"))
 
             if debug_mode:
-                textbutton "Pics" action (SetVariable("selected_girl", girl), Return("debug_pics")) text_size 14 tooltip "Test girl pack with the game's picture generation."
+                textbutton "图片" action (SetVariable("selected_girl", girl), Return("debug_pics")) text_size 14 tooltip "用游戏的图片生成测试女孩包."
 
     elif context == "free":
 
@@ -2068,17 +2088,17 @@ screen button_overlay(girl, context="girls"):
             xfill True
 
             if girl.MC_relationship_level <= 1:
-                $ text1 = event_color["a little bad"] % "Acquaintance"
+                $ text1 = event_color["a little bad"] % "认识的人"
             elif girl.MC_relationship_level == 1:
-                $ text1 = event_color["average"] % "Friend"
+                $ text1 = event_color["average"] % "朋友"
             elif girl.MC_relationship_level == 2:
-                $ text1 = event_color["a little good"] % "Love interest"
+                $ text1 = event_color["a little good"] % "恋爱中的人"
             elif girl.MC_relationship_level == 3:
-                $ text1 = event_color["good"] % "Girlfriend"
+                $ text1 = event_color["good"] % "女朋友"
             elif girl.MC_relationship_level >= 4:
-                $ text1 = event_color["special"] % "Lover"
+                $ text1 = event_color["special"] % "恋人"
 
-            text "Current relationship: " + text1 xalign 0.0 size 14
+            text "当前关系: " + text1 xalign 0.0 size 14
 
     elif context == "farm":
 
@@ -2108,26 +2128,26 @@ screen button_overlay(girl, context="girls"):
             else:
                 key "K_DELETE" action Return(("sell", girl))
 
-            textbutton "I{u}t{/u}ems":
+            textbutton "物品":
                 text_size 14
                 if not girls_firstvisit:
                     action Return(("equip", girl))
 
-                hovered tt.Action("Change this girl's equipment.")
+                hovered tt.Action("改变这个女孩的装备.")
 
-            textbutton "Le{u}a{/u}ve farm" text_size 14 action Return(("take out", girl)) hovered tt.Action("Send " + girl.name + " back to the brothel.")
+            textbutton "离开农场" text_size 14 action Return(("take out", girl)) hovered tt.Action("Send " + girl.name + " back to the brothel.")
 
             if girl.free:
-                textbutton "Dismiss":
+                textbutton "解散":
                     text_size 14
                     action Return(("dismiss", girl))
-                    tooltip "Release this girl from your custody. ({i}shortcut: {u}Delete{/u}{/i})"
+                    tooltip "把这个女孩从你的监护中释放出来. ({i}快捷键: {u}Delete{/u}{/i})"
             else:
-                textbutton "Sell":
+                textbutton "出售":
                     text_size 14
                     if not girls_firstvisit:
                         action Return(("sell", girl))
-                    tooltip "Sell this girl for %s gold (original cost: %s gold). ({i}shortcut: {u}Delete{/u}{/i})" % (str(girl.get_price("sell")), girl.original_price)
+                    tooltip "将这个女孩以%s金币出售 (原始成本: %s金币). ({i}快捷键: {u}Delete{/u}{/i})" % (str(girl.get_price("sell")), girl.original_price)
 
 screen mybar(labl = "Level 25", hov = None, unhov = None, val = 0, _max = 100, col = c_green, col2 = c_ui_light, x = 100, y = 6, txt_size = 14):
 
@@ -2186,7 +2206,7 @@ screen rank_level_details(girl):
             spacing 10
 
             vbox:
-                text "RANK" size 12
+                text "阶级" size 12
 
                 $ text1 = rank_name[girl.rank]
 
@@ -2196,26 +2216,26 @@ screen rank_level_details(girl):
                 text text1 color c_softpurple
 
             vbox:
-                text "LEVEL" size 12
+                text "等级" size 12
                 text str(girl.level) + " {size=12} / " + str(girl.rank * 5) + "{/size}" color c_lightgreen
 
             vbox:
-                text "REPUTATION" size 12
+                text "人气" size 12
                 text str(int(girl.rep)) + " {size=12}/ " + str(girl.get_rep_cap()) + "{/size}" color c_softpurple
 
             vbox:
-                text "EXPERIENCE" size 12
+                text "经验" size 12
                 text str(int(girl.xp)) + " {size=12}/ " + str(girl.get_xp_cap()) + "{/size}" color c_lightgreen
 
 
 
         grid 3 10:
 
-            text "SKILLS" size 12
+            text "技能" size 16
 
-            text "" size 12
+            text "星级" size 16
 
-            text "JP" size 12
+            text "职业经验" size 16
 
             spacing 10
 
@@ -2278,7 +2298,7 @@ screen schedule(glist):
                 xfill True
                 xalign 0.0
                 yalign 1.0
-                text "Girl Schedule" color c_darkorange xalign 0.5 yalign 0.0 text_align 1.0 size 20
+                text "女孩的排班表" color c_darkorange xalign 0.5 yalign 0.0 text_align 1.0 size 20
 
             for day in weekdays:
 
@@ -2310,7 +2330,7 @@ screen schedule(glist):
                         xalign 1.0
                         yalign 0.5
 
-                        button xsize 95 style "girlbutton" xpadding 6 ypadding 3 action (SetVariable("selected_girl", girl), Return()) tooltip "Click here to check " + girl.fullname + "'s profile.":
+                        button xsize 95 style "girlbutton" xpadding 6 ypadding 3 action (SetVariable("selected_girl", girl), Return()) tooltip "单击此处查看" + girl.fullname + "的个人资料.":
                             has vbox
 
                             xalign 1.0
@@ -2323,22 +2343,22 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = girl.job.capitalize()
+                                $ text1 = chinese_name[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
-                                $ text1 = "No job"
+                                $ text1 = "没有工作"
                                 $ col = c_white
                             text text1 size 12 text_align 1.0 color col xalign 1.0
 
                             if girl.exhausted:
-                                $ text1 = event_color["a little bad"] % "Exhausted"
+                                $ text1 = event_color["a little bad"] % "筋疲力尽"
                             elif girl.hurt:
-                                $ text1 = event_color["bad"] % ("Hurt (" + str(round_int(girl.hurt)) + " days)")
+                                $ text1 = event_color["bad"] % ("受伤(" + str(round_int(girl.hurt)) + "天)")
                             else:
                                 $ en_max = girl.get_stat_minmax("energy")[1]
 
                                 if girl.energy < en_max / 5:
-                                    $ text1 = "{color=[c_red]}" + str(round_int(girl.energy)) + "{/color}/" + str(round_int(en_max))
+                                    $ text1 = "耐力：{color=[c_red]}" + str(round_int(girl.energy)) + "{/color}/" + str(round_int(en_max))
                                 else:
                                     $ text1 = str(round_int(girl.energy)) + "/" + str(round_int(en_max))
 
@@ -2361,31 +2381,31 @@ screen schedule(glist):
                     for day in weekdays:
 
                         if girl.workdays[day] == 100:
-                            $ t = "Full shift"
-                            $ ttip = "She will work to the maximum of her abilities."
+                            $ t = "全班制"
+                            $ ttip = "她将尽其所能地工作."
                             $ col1 = c_orange
 
                         elif girl.workdays[day] == 50:
-                            $ t = "Half shift"
-                            $ ttip = "She will receive half the usual number of clients, saving some energy."
+                            $ t = "半班制"
+                            $ ttip = "她将接待平时一半的顾客，节省一些耐力."
                             $ col1 = c_prune
                         elif girl.workdays[day] == 0:
-                            $ t = "Rest"
-                            $ ttip = "She will rest and recover some energy."
+                            $ t = "休息日"
+                            $ ttip = "她会休息以便恢复一些耐力."
                             $ col1 = c_emerald
 
                         textbutton t text_size 14 xsize 90 ysize 40 yalign 0.5 hovered tt.Action(ttip) idle_background col1 hover_background c_darkbrown + "CC":
                             if girl.block_schedule != day:
                                 action Function(girl.cycle_workday, day) # renpy.curried_invoke_in_new_context(girl.cycle_workday, day)
                             else:
-                                action Function(renpy.notify, "\nYou cannot change her schedule as you gave her a day off.")
+                                action Function(renpy.notify, "\n你不能改变她的排班表，因为你给她放了一天假.")
 
                         # Disabled: alternate renpy.curried_invoke_in_new_context(girl.cycle_workday, day, True)
         text ""
 
         hbox spacing 10 xalign 1.0:
             if brothel.get_effect("special", "autorest"):
-                textbutton "Autorest options" xalign 1.0 action Show("autorest")
+                textbutton "自动休息设置" xalign 1.0 action Show("autorest")
             textbutton "Ok" action (Return())
 
 screen autorest():
@@ -2396,16 +2416,16 @@ screen autorest():
     frame xalign 0.5 yalign 0.5 xpadding 10 ypadding 10:
         has vbox spacing 6
 
-        text "Autorest options" color c_brown xalign 0.5
+        text "自动休息设置" color c_brown xalign 0.5
         text ""
         add "items/furniture/scanner.webp" xalign 0.5
         text ""
-        text "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it" italic True size 14 color c_brown xsize 360
+        text "这使你的女孩在耐力过低时自动休息.\n左键点击可增加阈值\n右键点击可将其降低" italic True size 14 color c_brown xsize 360
         text "" size 18
         if autorest_limit == 0:
-            $ text1 = "Autorest OFF"
+            $ text1 = "自动休息 已关闭"
         else:
-            $ text1 = "Autorest ON - Limit: " + str(autorest_limit) + " energy"
+            $ text1 = "自动休息 已开启 - 下限: " + str(autorest_limit) + "耐力"
 
         textbutton text1 action Function(change_autorest, "+") alternate Function(change_autorest, "-") xalign 0.5 xsize 360 ysize 40 text_size 18
         text "" size 18
@@ -2437,14 +2457,14 @@ screen level(girl):
         spacing 3
         xalign 0.5
 
-        $ text1 = girl.name + " is ready to level up."
+        $ text1 = girl.name + "准备好升级了."
 
         text text1 color c_orange xalign 0.5
 
         hbox:
             spacing 6
             xalign 0.5
-            text "Available points:" size 14 color c_orange
+            text "可用点数:" size 14 color c_orange
             text str(round_int(girl.upgrade_points)) size 14 color c_orange
 
         text ""
@@ -2508,7 +2528,7 @@ screen perks(girl):
 
         has vbox spacing 10
 
-        text girl.fullname + "的技能" color c_orange xalign 0.5
+        text girl.fullname + "的特质树" color c_orange xalign 0.5
 
         hbox:
             for archetype in archetype_list:
@@ -2552,7 +2572,7 @@ screen perks(girl):
                                     background c_ui_unlocked
                                     add perk.get_pic().get(100, 100) xalign 0.5 yalign 0.5
                                     action NullAction()
-                                    hovered (tt.Action("This perk has already been unlocked."), SetScreenVariable("selected_perk", perk))
+                                    hovered (tt.Action("这个特质已经解锁了."), SetScreenVariable("selected_perk", perk))
                                     unhovered SetScreenVariable("selected_perk", None)
 
                                 elif girl.can_acquire_perk(perk, context="perk_screen")[0]:
@@ -2560,7 +2580,7 @@ screen perks(girl):
                                     hover_background c_ui_sensitive
                                     add perk.get_pic().get(100, 100) xalign 0.5 yalign 0.5 alpha 0.6 hover_alpha 1.0
                                     action Return(("add", perk))
-                                    hovered (tt.Action("Acquire " + perk.name + " for 1 perk point."), SetScreenVariable("selected_perk", perk))
+                                    hovered (tt.Action("Acquire " + perk.name + "获得1点特质点."), SetScreenVariable("selected_perk", perk))
                                     unhovered SetScreenVariable("selected_perk", None)
                                 else:
                                     background c_ui_insensitive + "AA"
@@ -2588,9 +2608,9 @@ screen perks(girl):
                                 has vbox spacing 6
 
                                 if selected_perk.min_rank:
-                                    text "等级 " + rank_name[selected_perk.min_rank] + " 技能" size 14 italic True yalign 0.0
+                                    text "阶级 " + rank_name[selected_perk.min_rank] + " perk" size 14 italic True yalign 0.0
                                 else:
-                                    text "等级 C 技能" size 14 italic True yalign 0.0
+                                    text "阶级 C perk" size 14 italic True yalign 0.0
 
                                 text selected_perk.get_description() size 14 yalign 0.0
 
@@ -2601,15 +2621,15 @@ screen perks(girl):
                                 text ""
 
                                 if not girl.archetypes[selected_archetype].unlocked:
-                                    textbutton "解锁\n{size=-6}(花费2个技能点){/size}" xalign 0.5 xpadding 6 ypadding 6:
+                                    textbutton "解锁\n{size=-6}(花费2个特质点){/size}" xalign 0.5 xpadding 6 ypadding 6:
                                         if perk_points >= 2:
                                             action Return(("unlock", selected_archetype))
 
                         vbox xalign 0.5 yalign 1.0:
-                            text "技能点数: " + str(perk_points) color c_orange size 18 yalign 1.0 yfill True
+                            text "特质点数: " + str(perk_points) color c_orange size 18 yalign 1.0 yfill True
                             hbox:
                                 textbutton "取消" xalign 0.2 action Return(("cancel", ""))
-                                textbutton "确认" xalign 0.8:
+                                textbutton "确定" xalign 0.8:
                                     if new_perks:
                                         action Return(("commit", ""))
 
@@ -2639,7 +2659,7 @@ screen trait_details(girl):
 
             spacing 3
 
-            text girl.name + "'s traits" xalign 0.5 color c_orange
+            text girl.name + "的特质列表" xalign 0.5 color c_orange
 
             text "" size 6
 
@@ -2659,7 +2679,7 @@ screen trait_details(girl):
 
             if girl.perks:
 
-                text girl.name + "'s perks" xalign 0.5 color c_orange
+                text girl.name + "的特质树" xalign 0.5 color c_orange
 
                 text "" size 6
 
@@ -2684,7 +2704,7 @@ screen perk_details(girl):
 
             has vbox spacing 3
 
-            text girl.name + "'s active perks" xalign 0.5 color c_orange
+            text girl.name + "已激活的特质树" xalign 0.5 color c_orange
 
             text "" size 6
 
@@ -2753,13 +2773,13 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                 xfill True
                 yfill False
 
-                textbutton "Yesterday" action SetScreenVariable("days", 1) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
+                textbutton "昨天" action SetScreenVariable("days", 1) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
 
-                textbutton "Last 7 days" action SetScreenVariable("days", 7) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
+                textbutton "最近7天" action SetScreenVariable("days", 7) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
 
-                textbutton "Last 28 days" action SetScreenVariable("days", 28) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
+                textbutton "最近28天" action SetScreenVariable("days", 28) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
 
-                textbutton "All time" action SetScreenVariable("days", 0) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
+                textbutton "所有时间" action SetScreenVariable("days", 0) xsize 200 background c_brown + "AA" text_color c_white selected_idle_background c_orange + "AA" selected_hover_background c_orange + "AA" hover_background c_orange + "55"
 
 
         frame:
@@ -2785,7 +2805,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                         spacing 150
 
                         vbox:
-                            text "General" size average color c_prune
+                            text "综述" size average color c_prune
 
                             text "" size average
 
@@ -2794,7 +2814,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                                 transpose True
                                 spacing 3
 
-                                text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
+                                text "{b}天数{/b}" color c_darkgrey size small xalign 0.5
 
                                 if days == 0:
                                     text str(log_dict["age"]) size average color c_prune xalign 0.5
@@ -2805,7 +2825,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                                 else:
                                     text str(days) size average color c_prune xalign 0.5
 
-                                text "{b}Gold{/b}" color c_darkgold size small xalign 0.5
+                                text "{b}金币{/b}" color c_darkgold size small xalign 0.5
 
                                 $ j_gold = log_dict["total_gold"][days]
                                 $ q_gold = log_dict["quest_gold"][days]
@@ -2819,27 +2839,27 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                                 else:
                                     $ col1 = c_white
 
-                                $ ttip = "{b}Profit: {color=[c_white]}" + str_int(net) + "{/color}{/b}"
-                                $ ttip += "\nJobs: {color=[c_green]}" + str_int(j_gold) + "{/color}"
-                                $ ttip += "     Quests: {color=[c_green]}" + str_int(q_gold) + "{/color}"
-                                $ ttip += "\nUpkeep: {color=[c_red]}-" + str_int(upk) + "{/color}"
+                                $ ttip = "{b}获利: {color=[c_white]}" + str_int(net) + "{/color}{/b}"
+                                $ ttip += "\n工作: {color=[c_green]}" + str_int(j_gold) + "{/color}"
+                                $ ttip += "     任务: {color=[c_green]}" + str_int(q_gold) + "{/color}"
+                                $ ttip += "\n抚养费: {color=[c_red]}-" + str_int(upk) + "{/color}"
 
                                 textbutton str_int(j_gold + q_gold) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_prune xalign 0.5 action NullAction() tooltip ttip
 
-                                text "{b}XP{/b}" color c_emerald size small xalign 0.5
+                                text "{b}经验{/b}" color c_emerald size small xalign 0.5
 
                                 text str_int(log_dict["total_xp"][days]) size average color c_prune xalign 0.5
 
-                                text "{b}JP{/b}" color c_orange size small xalign 0.5
+                                text "{b}职业经验{/b}" color c_orange size small xalign 0.5
 
                                 text str_int(log_dict["total_jp"][days]) size average color c_prune xalign 0.5
 
-                                text "{b}Reputation{/b}" color c_purple size small xalign 0.5
+                                text "{b}声望{/b}" color c_purple size small xalign 0.5
 
                                 text str_int(log_dict["total_rep"][days]) size average color c_prune xalign 0.5
 
                         vbox:
-                            text "Activity" size average color c_prune
+                            text "活跃" size average color c_prune
 
                             hbox:
 
@@ -2851,19 +2871,19 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "" size small
 
-                                    text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
+                                    text "{b}天数{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}Worked{/b}" color c_orange size small xalign 0.5
+                                    text "{b}已工作{/b}" color c_orange size small xalign 0.5
 
-                                    $ ttip = "Waitress: " + str_int(log_dict["waitress_days"][days]) + "              Dancer: " + str_int(log_dict["waitress_days"][days]) + "\nMasseuse: " + str_int(log_dict["masseuse_days"][days]) + "            Geisha: " + str_int(log_dict["geisha_days"][days]) + "\nWhore: " + str_int(log_dict["whore_days"][days]) + "                 Work/whore : " + str_int(log_dict["work_whore_days"][days])
+                                    $ ttip = "服务员: " + str_int(log_dict["waitress_days"][days]) + "              舞娘: " + str_int(log_dict["waitress_days"][days]) + "\n按摩师: " + str_int(log_dict["masseuse_days"][days]) + "            艺伎: " + str_int(log_dict["geisha_days"][days]) + "\n妓女: " + str_int(log_dict["whore_days"][days]) + "                 工作/卖淫 : " + str_int(log_dict["work_whore_days"][days])
 
                                     textbutton str_int(log_dict["work_days"][days]) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_brown xalign 0.5 action NullAction() hovered tt.Action(ttip)
 
-                                    text "{b}Rested{/b}" color c_green size small xalign 0.5
+                                    text "{b}休息{/b}" color c_green size small xalign 0.5
 
                                     text str_int(log_dict["rest_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Away{/b}" color c_blue size small xalign 0.5
+                                    text "{b}离开{/b}" color c_blue size small xalign 0.5
 
                                     text str_int(log_dict["away_days"][days] + log_dict["farm_days"][days]) size average color c_brown xalign 0.5
 
@@ -2873,13 +2893,13 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "" size small
 
-                                    text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
+                                    text "{b}天数{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}On strike{/b}" color c_red size small xalign 0.5
+                                    text "{b}罢工{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["strike_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Hurt/Sick{/b}" color c_red size small xalign 0.5
+                                    text "{b}受伤{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["hurt_days"][days] + log_dict["sick_days"][days]) size average color c_brown xalign 0.5
 
@@ -2891,7 +2911,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
     #            vbox:
 
-                    text "Jobs" size average color c_prune
+                    text "工作" size average color c_prune
 
 #                    text "" size average
 
@@ -2901,17 +2921,17 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         text "" size small
 
-                        text "{b}Customers{/b}" color c_darkgrey size small xalign 0.5
+                        text "{b}顾客{/b}" color c_darkgrey size small xalign 0.5
 
-                        text "{b}Gold{/b}" color c_darkgold size small xalign 0.5
+                        text "{b}金币{/b}" color c_darkgold size small xalign 0.5
 
-                        text "{b}XP{/b}" color c_emerald size small xalign 0.5
+                        text "{b}经验{/b}" color c_emerald size small xalign 0.5
 
-                        text "{b}JP{/b}" color c_orange size small xalign 0.5
+                        text "{b}职业经验{/b}" color c_orange size small xalign 0.5
 
-                        text "{b}Reputation{/b}" color c_purple size small xalign 0.5
+                        text "{b}声望{/b}" color c_purple size small xalign 0.5
 
-                        text "{b}Av. score{/b}" color c_crimson size small xalign 0.5
+                        text "{b}平均分值{/b}" color c_crimson size small xalign 0.5
 
                         for job in all_jobs:
 
@@ -2945,7 +2965,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                             textbutton str(perf) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color col1 xalign 0.5 action NullAction() hovered tt.Action(ttip)
 
 
-                        text "{b}Whore{/b}" color c_firered size small xalign 0.5
+                        text "{b}妓女{/b}" color c_firered size small xalign 0.5
 
                         text str(round_int(log_dict["whore_cust"][days])) size average color c_brown xalign 0.5
 
@@ -2977,7 +2997,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                     text "" size average
 
-                    text "Sex Acts" size average color c_prune
+                    text "性行为" size average color c_prune
 
 #                    text "" size average
 
@@ -2987,17 +3007,17 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         text "" size small
 
-                        text "{b}Customers{/b}" color c_darkgrey size small xalign 0.5
+                        text "{b}顾客{/b}" color c_darkgrey size small xalign 0.5
 
-                        text "{b}Gold{/b}" color c_darkgold size small xalign 0.5
+                        text "{b}金币{/b}" color c_darkgold size small xalign 0.5
 
-                        text "{b}Xp{/b}" color c_emerald size small xalign 0.5
+                        text "{b}经验{/b}" color c_emerald size small xalign 0.5
 
-                        text "{b}JP{/b}" color c_orange size small xalign 0.5
+                        text "{b}职业经验{/b}" color c_orange size small xalign 0.5
 
-                        text "{b}Reputation{/b}" color c_purple size small xalign 0.5
+                        text "{b}声望{/b}" color c_purple size small xalign 0.5
 
-                        text "{b}Av. score{/b}" color c_crimson size small xalign 0.5
+                        text "{b}平均分值{/b}" color c_crimson size small xalign 0.5
 
                         for act in all_sex_acts:
 
@@ -3053,7 +3073,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
             ysize 400
             yfill True
 
-            text "No license\nrequired" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
+            text "没有执照\n要求" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["slum"], context) id "b1"
 
@@ -3078,7 +3098,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50) xalign 0.5
 
-                text license_dict[1][0] + "\nrequired" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
+                text license_dict[1][0] + "\n要求" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["warehouse"], context) id "b2"
             use district_button(district_dict["docks"], context) id "b3"
@@ -3104,7 +3124,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50)
 
-                text license_dict[2][0] + " required" xalign 0.5 yalign 0.0 xsize 160 size 16 text_align 0.5 color c_darkgrey
+                text license_dict[2][0] + "要求" xalign 0.5 yalign 0.0 xsize 160 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["gardens"], context)  id "b4"
             use district_button(district_dict["cathedra"], context)  id "b5"
@@ -3129,7 +3149,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50)
 
-                text license_dict[3][0] + " required" xalign 0.5 yalign 0.0 xsize 150 size 16 text_align 0.5 color c_darkgrey
+                text license_dict[3][0] + "要求" xalign 0.5 yalign 0.0 xsize 150 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["hold"], context)  id "b6"
 
@@ -3237,9 +3257,9 @@ screen visit_district():
                     action Return([location, "go"])
 
                     if location.secret:
-                        tooltip "You have not discovered this location yet."
+                        tooltip "你还没有发现这个地点."
                     else:
-                        tooltip "{b}" + location.name + "{/b}. Press " + str(location_dict[selected_district.name].index(location) + 1) + " to visit this location."
+                        tooltip "{b}" + location.name + "{/b}. 按下" + str(location_dict[selected_district.name].index(location) + 1) + "参观该地点."
 
                     vbox:
 
@@ -3281,11 +3301,11 @@ screen visit_district():
 
                                         if location.menu_costs_AP and MC.interactions < 1:
                                             action NullAction()
-                                            tooltip location.menu[0] + ". You cannot collect as you are out of AP."
+                                            tooltip location.menu[0] + ". 你不能进行采集，因为你没有AP."
                                         else:
                                             action Return([location, "special"])
                                             if location.menu_costs_AP:
-                                                tooltip location.menu[0] + ". Costs 1 {image=img_AP}."
+                                                tooltip location.menu[0] + ". 费用1{image=img_AP}."
                                             else:
                                                 tooltip location.menu[0] + "."
 
@@ -3315,9 +3335,9 @@ screen visit_location():
     key "K_LEFT" action (SetVariable('selected_location', _previous), Jump("visit_location"))
     key "K_RIGHT" action (SetVariable('selected_location', _next), Jump("visit_location"))
 
-    textbutton "<" xalign 0.05 ysize 120 yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "Visit the previous location in this district (you can use arrow keys)."
+    textbutton "<" xalign 0.05 ysize 120 yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "访问该地区上一个的位置（您可以使用箭头键）."
 
-    textbutton ">" xalign 0.95 ysize 120 yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "Visit the next location in this district (you can use arrow keys)."
+    textbutton ">" xalign 0.95 ysize 120 yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "访问该地区下一个的位置（您可以使用箭头键）."
 
     frame:
         background None # loc.get_pic(config.screen_width, int(config.screen_height*0.8))
@@ -3350,9 +3370,9 @@ screen visit_location():
 
                     action Return(girl)
                     if girl.MC_interact:
-                        tooltip "Talk to " + girl.fullname + "."
+                        tooltip "与" + girl.fullname + "交谈."
                     else:
-                        tooltip "Talk to this unknown girl."
+                        tooltip "跟未知女孩搭讪."
 
                     vbox:
 
@@ -3384,7 +3404,7 @@ screen visit_location():
 
                                 $ rating, ttip = get_girlpack_rating(girl)
 
-                                textbutton "Girl rating (" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size 18 yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
+                                textbutton "女孩图片包评级(" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size 18 yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
 
         text ""
         text ""
@@ -3393,14 +3413,14 @@ screen visit_location():
             spacing 25
             xalign 0.5
 
-            textbutton "Take a look around":
+            textbutton "环顾四周":
                 text_size 18
                 xsize 240
                 ysize 50
 
                 if MC.interactions > 0:
                     action Return("visit")
-                    tooltip "Explore this location."
+                    tooltip "浏览此位置."
 
             if selected_location.action:
                 textbutton selected_location.menu[0] text_size 18 xsize 240 ysize 50:
@@ -3409,11 +3429,11 @@ screen visit_location():
                         action Return("special")
 
             if story_flags["ninja hunt"] and story_flags["ninja hunt"] != calendar.time and not story_flags["ninja hunt hide " + selected_location.name] and selected_district.rank <= 2:
-                textbutton "Hunt ninjas" text_size 18 xsize 240 ysize 50:
+                textbutton "狩猎忍者" text_size 18 xsize 240 ysize 50:
 
                     if MC.interactions > 0:
                         action Return("hunt")
-                    tooltip "Hunt for ninjas dwelling in this location."
+                    tooltip "猎杀居住在这个地方的忍者."
 
     use overlay("visit_location")
     use close((Hide("visit_location"), Jump("visit_district")))
@@ -3444,7 +3464,7 @@ screen brothel():
     vbox xalign 0.9 yalign 0.1 xsize 0.25:
         if district.rank > 1:
             if story_flags["found wagon"]:
-                $ text1 = "Carpenter's {u}W{/u}agon{size=-2}"
+                $ text1 = "木匠马车{size=-2}"
 
                 if brothel.current_building:
                     if len(brothel.current_building.name) > 15:
@@ -3469,7 +3489,7 @@ screen brothel():
             textbutton text1 ypadding 5 xfill True action Return("furniture") text_size 18
 
 #             if story_flags["found wagon"] and story_flags["met carpenter"]:
-        textbutton "Customer {u}o{/u}ptions" ypadding 5 xfill True action Return("open options") text_size 18
+        textbutton "顾客选项" ypadding 5 xfill True action Return("open options") text_size 18
 
     frame:
         background None
@@ -3490,21 +3510,21 @@ screen brothel():
                 $ bro_upk = round_int(sum(g.upkeep*g.get_effect("boost", "total upkeep") for g in MC.girls))
                 $ farm_upk = round_int(sum(g.upkeep*g.get_effect("boost", "total upkeep")//2 for g in farm.girls))
 
-                $ text1 = "You must pay {b}" + '{:,}'.format(bro_cost) + "{/b} gold for your brothel services. You must also pay {b}" + '{:,}'.format(bro_upk) + "{/b} gold for your girls upkeep"
+                $ text1 = "你必须为青楼维护服务支付{b}" + '{:,}'.format(bro_cost) + "{/b}金币. 你还必须付{b}" + '{:,}'.format(bro_upk) + "{/b}金币作为你的女孩们的抚养费"
 
                 if farm.active and farm.girls:
-                    $ text1 += " and {b}" + '{:,}'.format(farm_upk) + "{/b} gold for the girls in the farm"
-                $ text1 += " (not accounting for special effects)."
+                    $ text1 += " 以及{b}" + '{:,}'.format(farm_upk) + "{/b}金币给农场里的女孩"
+                $ text1 += " (不考虑特殊效果)."
 
-                textbutton "Daily cost: " + '{:,}'.format(bro_cost + bro_upk + farm_upk) + " gold" text_size 18 text_xalign 0.0 xalign 0.0 background c_ui_dark xsize 300 ysize 36 action NullAction() tooltip text1
-                textbutton brothel.name xalign 0.5 ypadding 5 action Return("change name") hovered tt.Action("Click to change your brothel's name") #background "#00002277"
+                textbutton "日常开销: " + '{:,}'.format(bro_cost + bro_upk + farm_upk) + "金币" text_size 18 text_xalign 0.0 xalign 0.0 background c_ui_dark xsize 300 ysize 36 action NullAction() tooltip text1
+                textbutton brothel.name xalign 0.5 ypadding 5 action Return("change name") hovered tt.Action("单击此处可更改青楼的名称") #background "#00002277"
 
             hbox:
                 xalign 0.5
                 xfill True
 
                 vbox spacing 10 xalign 0.0:
-                    text "{b}Trainer{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                    text "{b}培训师{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                     frame:
                         xsize 360
@@ -3523,14 +3543,14 @@ screen brothel():
                                 vbox:
 
                                     button xsize 156 background None xmargin 0 xpadding 0 action NullAction():
-                                        hovered tt.Action("Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!")
+                                        hovered tt.Action("培训师帮助你的女孩学习新技能. 通过与Zan居民的交流发现新的培训师!")
                                         add MC.current_trainer.trainer_portrait zoom 1.0 xalign 0.5 yalign 0.5
 
 
                                     if len(MC.trainers) == 1:
-                                        $ text1 = "No other trainer available"
+                                        $ text1 = "没有其他培训师可用"
                                     else:
-                                        $ text1 = "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+                                        $ text1 = "培训师帮助你的女孩学习新技能. 通过与Zan居民的交流发现新的培训师!"
 
                                     button xmargin 0 xpadding 0 xsize 156 background None action NullAction() hovered tt.Action(text1):
 
@@ -3551,12 +3571,12 @@ screen brothel():
                             else:
                                 textbutton "?" xsize 100 ysize 150
 
-                                text "{i}Recruit a trainer to help your girls.{/i}" size 14
+                                text "{i}招募一名培训师来帮助你的女孩.{/i}" size 14
 
 
 
                 vbox spacing 10 xalign 1.0:
-                    text "{b}Helpers{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                    text "{b}运维{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                     frame:
                         xsize 580
@@ -3568,36 +3588,36 @@ screen brothel():
 
                         fixed yfill False ysize 120:
 
-                            $ ttip = "Your brothel's current reputation is {b}" + str(brothel.rep) + "{/b}."
+                            $ ttip = "你的青楼现在的名声是{b}" + str(brothel.rep) + "{/b}."
 
-                            textbutton "Advertising" ypos 0.1 text_color c_white ypadding 4 text_size 18 background None action NullAction() hovered tt.Action(ttip) text_align 0.0
+                            textbutton "广告" ypos 0.1 text_color c_white ypadding 4 text_size 18 background None action NullAction() hovered tt.Action(ttip) text_align 0.0
 
                             bar:
                                 xsize 200
                                 xpos 0.25
                                 ypos 0.1
                                 value FieldValue(brothel, "advertising", brothel.max_help, action=Function(brothel.update_customer_count))
-                                hovered tt.Action("Pay hot chicks with revealing clothing to hang around your brothel, and tell would-be patrons about your establishment.")
+                                hovered tt.Action("付钱让穿着暴露的辣妹在你的青楼内外闲逛，用以告诉潜在的顾客宣传你的青楼.")
 
                             $ adv_bonus = brothel.get_effect("change", "advertising")
                             if adv_bonus != 0:
-                                $ text1 = " ({color=[c_green]}+" + str(adv_bonus) + "{/color} from girls)"
+                                $ text1 = " ({color=[c_green]}+" + str(adv_bonus) + "{/color}名来自女孩们)"
                             else:
                                 $ text1 = ""
                             $ text2 = brothel.get_adv_cost()
 
-                            textbutton "[brothel.advertising] babes" + text1 background None text_size 14 xpos 0.6 ypos 0.1 ypadding 6
+                            textbutton "[brothel.advertising]名辣妹" + text1 background None text_size 14 xpos 0.6 ypos 0.1 ypadding 6
 
-                            $ ttip = "Your brothel's current threat level is " + brothel.estimate_threat_level() + "."
+                            $ ttip = "你的青楼目前的威胁等级是" + brothel.estimate_threat_level() + "."
 
-                            textbutton "Security" text_color c_white ypos 0.4 ymargin 0 ypadding 4 text_align 0.0  background None text_size 18 action NullAction() hovered tt.Action(ttip)
+                            textbutton "安全" text_color c_white ypos 0.4 ymargin 0 ypadding 4 text_align 0.0  background None text_size 18 action NullAction() hovered tt.Action(ttip)
 
                             bar:
                                 xsize 200
                                 xpos 0.25
                                 ypos 0.4
                                 value FieldValue(brothel, "security", brothel.max_help)
-                                hovered tt.Action("Pay some sellswords to keep unruly patrons and competitors at bay.")
+                                hovered tt.Action("雇佣佣兵(保安)来阻止不守规矩的顾客和竞争对手.")
 
                             $ sec_bonus = brothel.get_effect("change", "security")
                             if sec_bonus != 0:
@@ -3606,47 +3626,47 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_sec_cost()
 
-                            textbutton "[brothel.security] goons" + text1 background None text_size 14 xpos 0.6 ypos 0.4 ypadding 6
+                            textbutton "[brothel.security]名保安" + text1 background None text_size 14 xpos 0.6 ypos 0.4 ypadding 6
 
 
 
-                            $ ttip = "Your brothel's current dirt level is {b}" + str(round_int(brothel.dirt)) + "{/b}."
+                            $ ttip = "你的青楼目前的肮脏程度是{b}" + str(round_int(brothel.dirt)) + "{/b}."
 
-                            textbutton "Maintenance" text_color c_white ypos 0.7 ymargin 0 ypadding 4 text_align 0.0 text_size 18 background None action NullAction() hovered tt.Action(ttip)
+                            textbutton "维护" text_color c_white ypos 0.7 ymargin 0 ypadding 4 text_align 0.0 text_size 18 background None action NullAction() hovered tt.Action(ttip)
 
                             bar:
                                 xsize 200
                                 xpos 0.25
                                 ypos 0.7
                                 value FieldValue(brothel, "maintenance", brothel.max_help)
-                                hovered tt.Action("Pay a maintenance team to clean up your brothel. And boy, does it get messy in there...")
+                                hovered tt.Action("雇一个临时保洁队伍来清理你的青楼. 天哪，里面会不会很乱...")
 
                             $ maint_bonus= brothel.get_effect("change", "maintenance")
                             if maint_bonus != 0:
-                                $ text1 = " ({color=[c_green]}+" + str(maint_bonus) + "{/color} from girls)"
+                                $ text1 = " ({color=[c_green]}+" + str(maint_bonus) + "{/color}名来自女孩们)"
                             else:
                                 $ text1 = ""
                             $ text2 = brothel.get_maintenance_cost()
 
-                            textbutton "[brothel.maintenance] cleaners" + text1 background None text_size 14 xpos 0.6 ypos 0.7 ypadding 6
+                            textbutton "[brothel.maintenance]名保洁" + text1 background None text_size 14 xpos 0.6 ypos 0.7 ypadding 6
 
                         hbox xfill True spacing 10:
 
                             vbox spacing 6 xsize 180:
-                                text "Estimated customers" size 14
+                                text "预计顾客" size 14
                                 textbutton str(brothel.customer_count) + "{image=img_cust}" style "inv_no_padding" action NullAction() tooltip brothel.count_customers_description()
 
                             vbox spacing 6 xsize 150:
-                                text "Threat level" size 14
-                                textbutton brothel.estimate_threat_level() style "inv_no_padding" action NullAction() tooltip "Your brothel's current threat level is " + brothel.estimate_threat_level() + ". Brothel threat is affected by brothel security and your Strength skill."
+                                text "威胁等级" size 14
+                                textbutton brothel.estimate_threat_level() style "inv_no_padding" action NullAction() tooltip "你的青楼目前威胁等级是 " + brothel.estimate_threat_level() + ". 青楼的威胁会受到青楼守卫和你的力量技能的影响."
 
                             vbox spacing 6 xsize 200:
                                 hbox spacing 10:
-                                    text "Dirt level" size 14
-                                    textbutton "Clean up" xmargin 10 ymargin 0 ypadding 6 text_size 14:
+                                    text "污垢等级" size 14
+                                    textbutton "立刻清理" xmargin 10 ymargin 0 ypadding 6 text_size 14:
                                         if brothel.get_clean_up_cost() > 0:
                                             action Return(("clean up", ""))
-                                        tooltip "Buy some cleaning material for " + str(brothel.get_clean_up_cost()) + " gold and have Sill and the servants scrub your brothel clean."
+                                        tooltip "花费" + str(brothel.get_clean_up_cost()) + "金币购买一些清洁材料，然后让西里尔和仆人把青楼打扫干净."
                                 textbutton str(round_int(brothel.dirt)) + " {size=-4}(-" + str_int(brothel.get_maintenance()) + ")" style "inv_no_padding" action NullAction() tooltip maintenance_desc[brothel.get_cleanliness()] yoffset -12
 
 
@@ -3668,18 +3688,18 @@ screen brothel():
 
                     has vbox spacing 6
 
-                    text "{b}Bedrooms{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
+                    text "{b}卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
 
                     frame background c_ui_dark:
 
                         has vbox spacing 6
 
                         if brothel.bedrooms < brothel.get_maxbedrooms():
-                            $ text1 = "Add a new bedroom to your brothel for " + str(brothel.get_room_price()) +  " gold. This brothel can only have a maximum of " + str(brothel.get_maxbedrooms()) +  " bedrooms."
+                            $ text1 = "为你的青楼增加一间新的卧室需要" + str(brothel.get_room_price()) +  "金币. 青楼最多只能有 " + str(brothel.get_maxbedrooms()) +  "间卧室."
                         elif district.rank < 5:
-                            $ text1 = "You cannot add any more bedrooms until you move to another brothel."
+                            $ text1 = "在你搬到另一家青楼之前，你不能再增加任何卧室."
                         else:
-                            $ text1 = "You have reached the maximum number of bedrooms."
+                            $ text1 = "你已经达到了卧室数量的上限."
 
                         button background None xpadding 3 action NullAction():
                             tooltip text1
@@ -3710,8 +3730,8 @@ screen brothel():
 
 
                     if brothel.bedroom_type.level < brothel.maxupgrade:
-                        $ ttip = "Upgrade all your bedrooms for " + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + " gold. Upgraded bedrooms are more comfortable for girls and customers alike."
-                        textbutton "Upgrade":
+                        $ ttip = "改良你所有的卧室需要" + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + "金币. 升级后的卧室对女孩和顾客来说都更加舒适."
+                        textbutton "升级卧室":
                             xalign 0.5
                             text_size 18
                             action renpy.curried_invoke_in_new_context(brothel.upgrade_bedrooms)
@@ -3728,7 +3748,7 @@ screen brothel():
 
                     has vbox spacing 6
 
-                    text "{b}Master Room{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
+                    text "{b}主人卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
 
                     frame background c_ui_dark:
 
@@ -3759,7 +3779,7 @@ screen brothel():
                                                 for girl in brothel.master_bedroom.girls:
                                                     button background c_white yalign 0.5 xmargin 2 ymargin 0 xpadding 1 ypadding 1:
                                                         action NullAction()
-                                                        tooltip girl.fullname + " is currently assigned to the master bedroom."
+                                                        tooltip girl.fullname + "目前被分配到主卧室."
                                                         add girl.portrait.get(20, 20) alpha 1.0
 
 
@@ -3784,7 +3804,7 @@ screen brothel():
                 has vbox
                 spacing 6
 
-                text "{b}Common Rooms{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
+                text "{b}公用卧室{/b}" size 18 xalign 0.0 drop_shadow (2, 2)
 
                 frame:
                     background c_ui_dark
@@ -3843,25 +3863,25 @@ screen furniture():
 
         has vbox spacing 10
 
-        text "Carpenter's Wagon" bold True xalign 0 yalign 0
+        text "木匠马车" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize 120:
             add "side carpenter" zoom 0.8 yalign 0.5
 
             if not brothel.current_building:
-                $ text1 = "Oh, hi. Got a new job for me?"
+                $ text1 = "喔，嗨. 为我找了一份新工作?"
             else:
-                $ text1 = "I'm still working on that " + brothel.current_building.name + ". You should come back later."
+                $ text1 = "我还在努力制作" + brothel.current_building.name + ". 你应该晚点再来."
 
             text text1 xsize 0.4 yalign 0.5 size 18 justify True italic True
 
             vbox xsize 0.4 yfill True xalign 1.0:
-                text "Available resources" drop_shadow (2, 2) size 18
+                text "可用资源" drop_shadow (2, 2) size 18
                 frame xfill True yfill True background c_ui_brown xpadding 0 ypadding 0:
                     use resource_tab(y=0.0, sz=24)
 
             vbox xsize 0.6 yfill True xalign 1.0:
-                text "Building Queue" drop_shadow (2, 2) size 18
+                text "建筑队列" drop_shadow (2, 2) size 18
                 frame xfill True yfill True background c_ui_brown:
                     if brothel.current_building:
                         $ dur = brothel.current_building.duration - (calendar.time - brothel.started_building)
@@ -3871,9 +3891,9 @@ screen furniture():
                             add brothel.current_building.pic.get(50, 50) xalign 0.5 yalign 0.5
                             text str(dur) + "d" xalign 1.0 yalign 0.0 size 18
                     else:
-                        text "No building in progress." italic True size 14
+                        text "没有正在进行的建筑." italic True size 14
 
-        text brothel.name + "'s Decoration and Furniture" drop_shadow (2, 2) size 18
+        text brothel.name + "的装饰和家具" drop_shadow (2, 2) size 18
 
         if brothel.furniture:
             frame xfill True background c_ui_brown:
@@ -3882,7 +3902,7 @@ screen furniture():
                     button background c_ui_brown action NullAction() tooltip furn.description xsize 52 ysize 44 xpadding 0 ypadding 0:
                         add furn.pic.get(48, 40) xalign 0.5 yalign 0.5
 
-        text "Build templates" drop_shadow (2, 2) size 18
+        text "建筑模版" drop_shadow (2, 2) size 18
 
         frame background c_ui_dark:
             viewport:
@@ -3903,9 +3923,9 @@ screen furniture():
                             hbox spacing 6 box_wrap True:
                                 for furn in builds:
                                     if furn.duration < 2:
-                                        $ text2 = furn.description + " (" + str(furn.duration) + " day to complete)."
+                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)."
                                     else:
-                                        $ text2 = furn.description + " (" + str(furn.duration) + " days to complete)."
+                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)."
                                     button xsize 110 ysize 90 xpadding 2 ypadding 2:
                                         action Return(furn)
                                         tooltip text2
@@ -3914,7 +3934,7 @@ screen furniture():
                                             action Return(furn)
                                             tooltip text2
                                             use resource_tab(furn.cost, sp=1)
-                                        text str(furn.duration) + "d" xalign 0.95 yalign 0.05 size 18
+                                        text str(furn.duration) + "天" xalign 0.95 yalign 0.05 size 18
 #                        else:
 #                            text "You have built every available " + type +"." size 14 italic True
                     text "" size 8
@@ -3941,11 +3961,11 @@ screen brothel_options():
 
         if story_flags["found wagon"] and story_flags["met carpenter"]:
             vbox xsize 320:
-                text "{b}Customer populations{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                text "{b}顾客数量{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                 frame xpadding 10 ypadding 10 xfill True yfill True:
                     has vbox spacing 6
-                    text "Choose customer populations to attract to your brothel (build decoration to attract more)" size 14 italic True color c_brown
+                    text "选择吸引哪些顾客到你的青楼(建造装饰以吸引更多顾客)" size 14 italic True color c_brown
 
                     vbox xfill True spacing 4:
                         for pop in all_populations:
@@ -3954,10 +3974,10 @@ screen brothel_options():
                                     action NullAction()
                                     if brothel.get_effect("allow", pop.name):
                                         add pop.get_pic(40, 40)
-                                        tooltip pop.description
+                                        tooltip (""+pop.description)
                                     else:
                                         add im.MatrixColor(pop.get_pic(40, 40), im.matrix.desaturate())
-                                        tooltip "You must build new decoration at the Carpenter's Wagon to attract this population."
+                                        tooltip "{size=-1}必须在木匠马车上建造新的装饰物来吸引这些顾客."
 
                                 if brothel.get_effect("allow", pop.name):
                                     vbox spacing 0:
@@ -3965,28 +3985,28 @@ screen brothel_options():
                                         hbox spacing 6 xalign 0.0:
                                             bar xsize 100 yalign 0.0 value FieldValue(pop, "weight", 5, action=Function(brothel.update_customer_count))
                                             text attract_pop_dict[pop.weight] color c_brown size 14 yalign 1.0
-                                        textbutton "Average budget: %s gold" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size 14 action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (pop.name, ent_budget, wh_budget)
+                                        textbutton "平均预算: %s金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size 14 action NullAction() tooltip "这是%s的平均{b}最大预算{/b}. (用于娱乐的%s金币，用于嫖娼的%s金币)" % (pop.name, ent_budget, wh_budget)
             vbox xsize 320:
-                text "{b}Customer preferences{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                text "{b}顾客偏好{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                 frame xfill True xpadding 10 ypadding 10:
                     has vbox spacing 6
-                    text "Influence customer preferences for entertainment and sexual acts (build furnishing to get bigger boosts)" size 14 italic True color c_brown
+                    text "影响顾客对娱乐和性行为的偏好(建造家具以获得更大的提升)" size 14 italic True color c_brown
 
                     vbox spacing 12:
                         for target in (all_jobs, all_sex_acts):
                             vbox ysize 0.5 spacing 6:
                                 for pref in target:
                                     hbox spacing 6:
-                                        textbutton pref.capitalize() xsize 120 ypadding 5 text_size 18 yalign 0.5:
+                                        textbutton chinese_name[pref.capitalize()] xsize 120 ypadding 5 text_size 18 yalign 0.5:
                                             action NullAction()
 
                                             if brothel.get_effect("allow", pref + " preference"):
-                                                tooltip "Use this setting to change your customers' preference for " + pref + " up to +" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
+                                                tooltip "修改此设置可更改顾客对选择'" + chinese_name[pref] + "'服务的优先权提升" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
                                             else:
                                                 background "#CCB8A0"
                                                 text_color c_white
-                                                tooltip "You must build new furnishing at the Carpenter's Wagon to change " + pref + " preference."
+                                                tooltip "你必须在木匠的马车上做相应的装饰或家具才能修改顾客选择'" + chinese_name[pref] + "'服务的优先权."
 
                                         if brothel.get_effect("allow", pref + " preference"):
 
@@ -3998,17 +4018,17 @@ screen brothel_options():
                                                 text "" size 14 yalign 0.5
 
                 text "" size 22
-                text "{b}Matching preferences{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                text "{b}匹配偏好{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                 frame ysize 150 xpadding 10 ypadding 10 xfill True:
                     has vbox spacing 6
 
-                    text "Choose how incoming customers will be matched with your girls." size 14 italic True color c_brown
+                    text "选择如何将顾客与你的女孩进行匹配." size 14 italic True color c_brown
 
                     if game.matching_priority == "rank":
-                        $ text1 = "When possible, customers will be matched with girls of the same rank."
+                        $ text1 = "在可能的情况下，顾客将被匹配到相同等级的女孩."
                     elif game.matching_priority == "act":
-                        $ text1 = "When possible, customers will be matched with girls that allow their preferred job or sex act."
+                        $ text1 = "在可能的情况下，顾客将被匹配到允许其首选工作或性行为的女孩."
 
                     textbutton "By %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
@@ -4018,17 +4038,17 @@ screen brothel_options():
         vbox xsize 320:
 
             if [f for f in brothel.furniture if f.can_deactivate]:
-                text "{b}Special options{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                text "{b}特殊选项{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                 frame ysize 200 xpadding 10 ypadding 10 xfill True:
                     has vbox spacing 6
 
-                    text "Activate or deactivate special brothel furniture." size 14 italic True color c_brown
+                    text "激活或停用特殊青楼家具." size 14 italic True color c_brown
 
                     hbox box_wrap True:
                         for furn in [f for f in brothel.furniture if f.can_deactivate]:
 
-                            button xsize 56 ysize 56 action Function(furn.toggle) tooltip "Click here to activate or deactivate %s.\n%s ({b}%s{/b})" % (furn.name, get_description("", furn.effects), {True: "active", False: "inactive"}[furn.active]):
+                            button xsize 56 ysize 56 action Function(furn.toggle) tooltip "点击这里激活或停用%s.\n%s ({b}%s{/b})" % (furn.name, get_description("", furn.effects), {True: "active", False: "inactive"}[furn.active]):
 
                                 add furn.pic.get(50, 50) xalign 0.5 yalign 0.5
 
@@ -4039,25 +4059,25 @@ screen brothel_options():
 
             if brothel.get_effect("special", "advanced advertising"):
                 text "" size 22
-                text "{b}Advanced settings{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+                text "{b}高级设置{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
                 frame ysize 200 xpadding 10 ypadding 10 xfill True:
                     has vbox spacing 6
 
-                    text "In addition to improving your brothel reputation, advertising girls will increase customer attraction and customer budget based on advertising power (create new outfits to increase advertising power)." size 14 italic True color c_brown
+                    text "除了提高你的青楼声誉，广告女孩将增加客户的吸引力和客户预算，基于广告的力量 (创立新的服装以增加广告力量)." size 14 italic True color c_brown
 
                     hbox spacing 3:
                         vbox xsize 100:
                             text "Customers" size 14 bold True color c_brown yalign 1.0
                             text percentage_description(brothel.get_adv_setting("attraction")) + " to customer attraction" size 14 color c_brown
-                        bar xsize 100 xpos 0 yalign 0.0 value FieldValue(brothel, "advertising_setting", range=4, offset=-2, action=Function(brothel.update_customer_count)) tooltip "Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend)."
+                        bar xsize 100 xpos 0 yalign 0.0 value FieldValue(brothel, "advertising_setting", range=4, offset=-2, action=Function(brothel.update_customer_count)) tooltip "使用此设置来调整客户吸引力（有多少客户会来青楼）和客户预算（每个客户能够花费的最大金币量）之间的倾向."
                         vbox xsize 100:
                             text "Budget" size 14 bold True color c_brown yalign 1.0
                             #text str(brothel.advertising_setting)
                             text percentage_description(brothel.get_adv_setting("budget") / brothel.max_help) + " to customer budget" size 14 color c_brown
 
             text "" size 22
-            text "{b}Forecast{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+            text "{b}预测{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
             frame xfill True xpadding 10 ypadding 10:
                 has vbox spacing 12
                 text brothel.count_customers_description() color c_prune size 14
@@ -4082,7 +4102,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
     default girl_customers = defaultdict(list)
     default job_customers = defaultdict(int)
     default cust_act = defaultdict(str)
-    default load_txt = " (matching...)"
+    default load_txt = " (匹配中...)"
 
     if match_list:
         $ tick = min(1.5 / len(match_list), 0.2) # Takes maximum 1.5 seconds to display all customer matches
@@ -4102,9 +4122,9 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
         has vbox spacing 10
 
         if context == "job":
-            $ text1 = "Entertainment Phase"
+            $ text1 = "娱乐阶段"
         else:
-            $ text1 = "Whoring Phase"
+            $ text1 = "嫖娼阶段"
 
         text text1 + load_txt xalign 0.0 xanchor 0.0 bold True drop_shadow (2, 2) #color c_prune
 
@@ -4113,7 +4133,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
             add brothel.get_pic(100, 100)
 
             vbox spacing 6:
-                text "Idle customers (%s {image=img_cust})" % (str(len(idle_customers)) + "/" + str(len(customers))) size 18 color c_brown
+                text "闲置顾客: (%s {image=img_cust})" % (str(len(idle_customers)) + "/" + str(len(customers))) size 18 color c_brown
 
                 if customers:
                     vpgrid rows 4 spacing 3 ymaximum 160:
@@ -4122,7 +4142,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                         scrollbars "horizontal"
 
                         if not idle_customers:
-                            text "All customers have been assigned." size 12 italic True yalign 0.5 color c_brown
+                            text "所有顾客都已被分配." size 12 italic True yalign 0.5 color c_brown
                         else:
                             for cust in idle_customers:
                                 button yalign 0.5 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None action NullAction() tooltip cust.get_description("idle"):
@@ -4133,7 +4153,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         add cust.get_pic(25, 25)
 
                 else:
-                    text "No customers." size 12 italic True yalign 0.5 color c_brown
+                    text "没有顾客." size 12 italic True yalign 0.5 color c_brown
 
 
 
@@ -4162,7 +4182,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         vbox spacing 3:
                                             for girl in [g for g in girls if g.job == job]:
                                                 hbox ysize 25 yalign 0.5:
-                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + girl.job.capitalize() + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
+                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + chinese_name[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
                                                         add girl.portrait.get(25, 25) xalign 0.5 yalign 0.5
 
                                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True:
@@ -4175,21 +4195,21 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                                                 else:
                                                                     add cust.get_pic(22, 22)
                                                         if not girl_customers[girl]:
-                                                            text "No customers." size 12 italic True yalign 0.5
+                                                            text "没有顾客." size 12 italic True yalign 0.5
 
             elif context == "whore":
                 frame xfill True yfill False:
                     has vbox spacing 3
                     $ room = brothel.bedroom_type
 
-                    text "Bedrooms" + " (%s {image=img_cust})" % str(job_customers["whore"]) size 18 color c_brown
+                    text "卧室" + " (%s {image=img_cust})" % str(job_customers["whore"]) size 18 color c_brown
                     hbox spacing 20:
                         add room.get_pic(100, 100)
 
                         vbox spacing 3 box_wrap True:
                             for girl in girls:
                                 hbox ysize 25 yalign 0.5:
-                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + girl.job.capitalize() + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
+                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + chinese_name[girl.job.capitalize()] + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
                                         add girl.portrait.get(25, 25) yalign 0.5
 
                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True xmaximum 220:
@@ -4202,7 +4222,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                                 else:
                                                     add cust.get_pic(22, 22)
                                         if not girl_customers[girl]:
-                                            text "No customers." size 12 italic True yalign 0.5
+                                            text "没有顾客." size 12 italic True yalign 0.5
 
     if match_list and len(match_list) > n:
         timer 0.05 repeat True action SetScreenVariable("t", t + 0.05)
@@ -4248,7 +4268,7 @@ screen customer_satisfaction(customers, old_rep, rep_chg):
 
         has vbox spacing 10
 
-        $ text1 = "Brothel reputation: %s" % displayed_rep
+        $ text1 = "青楼名声: %s" % displayed_rep
 
         if len(displayed_customers) == len(customers):
             $ text1 += " (%s)" % plus_text(total_change)
@@ -4260,9 +4280,9 @@ screen customer_satisfaction(customers, old_rep, rep_chg):
         text text1 xalign 0.0 bold True drop_shadow (2, 2)
 
         hbox spacing 10:
-            text "Customer" bold True color c_brown size 14
-            text "Satisfaction" bold True color c_brown size 14
-            text "Rep. change" bold True color c_brown size 14
+            text "顾客" bold True color c_brown size 14
+            text "满意度" bold True color c_brown size 14
+            text "代表变化" bold True color c_brown size 14
             # text "Comment" bold True color c_brown size 14
 
         viewport:
@@ -4294,7 +4314,7 @@ screen customer_satisfaction(customers, old_rep, rep_chg):
                                     left_bar Frame(im.Twocolor("UI/cryslider_full.webp", col, col), 12, 0)
                                     right_bar Frame(im.Twocolor("UI/cryslider_empty.webp", col, col), 12, 0)
 
-                            text "{color=[c_white]}I{/color}" size 20 xpos 3 + (cust.rank-1)*95/8 ypos 1.16 yanchor 1.0
+                            text "" size 20 xpos 3 + (cust.rank-1)*95/8 ypos 1.16 yanchor 1.0
 
                         textbutton plus_text(chg) xsize 100 xalign 0.5 yalign 0.65 text_size 14 text_color c_brown text_bold True
 
@@ -4323,8 +4343,8 @@ screen home():
         if game.headhunter_girl:
             $ game.headhunter_button_enabled = 0
             if game.headhunter_time <= 0:
-                $ textHH = "Headhunter"
-                $ textHH2 = "The headhunter is back with your prize!"
+                $ textHH = "猎头公司"
+                $ textHH2 = "猎头公司带着你的奖品回来了!"
 
                 if not game.interacting_with_headhunter:
                     textbutton textHH:
@@ -4336,8 +4356,8 @@ screen home():
                         hovered tt.Action(textHH2)
 
             else:
-                $ textHH = "Headhunter: [game.headhunter_time] days"
-                $ textHH2 = "The headhunter will be back in [headhunter_time] days."
+                $ textHH = "猎头公司: [game.headhunter_time]天"
+                $ textHH2 = "猎头公司将于[headhunter_time]天回来."
 
                 textbutton textHH:
                     xalign 0.5
@@ -4354,10 +4374,10 @@ screen home():
 
     button background None action (Hide("brothel_report"), ToggleVariable("always_show_brothel_report")) xalign 0.0 xmargin 25 ypos 0.1 :
         if not always_show_brothel_report:
-            hovered (Show("brothel_report"), tt.Action("Click to keep the brothel report showing at all times."))
+            hovered (Show("brothel_report"), tt.Action("点击显示青楼报告."))
             unhovered Hide("brothel_report")
         else:
-            hovered (tt.Action("Click to hide the brothel report."))
+            hovered (tt.Action("点击隐藏青楼报告."))
 
         hbox xalign 0.0 spacing 10:
             frame xalign 0.0 xsize 25 ysize 25:
@@ -4367,7 +4387,7 @@ screen home():
                     text "✓" size 14 xalign 0.5 yalign 0.5
                 else:
                     text " " size 14 xalign 0.5
-            text "Show brothel report" size 14 xalign 0.0 yalign 0.5
+            text "显示青楼报告" size 14 xalign 0.0 yalign 0.5
 
 
 screen brothel_report():
@@ -4387,16 +4407,16 @@ screen brothel_report():
         hbox spacing 10:
             if brothel.get_cleanliness() in ("disgusting", "fire"):
                 add "side sill sad" zoom 0.5
-                text "Master!!! " + brothel.name + " is very dirty... Please do something!" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
+                text "主人!!! " + brothel.name + "现在非常脏... 请做一些事情!" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
             elif calendar.time == 1:
                 add "side sill happy" zoom 0.5
-                text "Welcome to your new brothel, Master! I'm sure you will be a great manager!" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
+                text "欢迎来到你的新青楼，主人! 我相信你会成为一个伟大的管理者!" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
             elif logs[calendar.time-1].net >= 0:
                 add "side sill happy" zoom 0.5
-                text "{color=[c_lightblue]}Did you know? {/color}" + daily_tip yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
+                text "{color=[c_lightblue]}你知道吗? {/color}" + daily_tip yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
             else:
                 add "side sill sad" zoom 0.5
-                text "Master!!! " + brothel.name + " is losing money... What's going on?" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
+                text "主人!!! " + brothel.name + "现在亏钱了... 发生了什么事了?" yalign 0.5 size 18 justify True italic True xmaximum 0.8 color c_brown
 
 
         hbox spacing 20 xfill True yfill False:
@@ -4406,22 +4426,22 @@ screen brothel_report():
                 xfill True
                 yfill False
 
-                text "Yesterday" color c_prune
+                text "昨日" color c_prune
 
                 text "" size 14
 
                 if calendar.time > 1:
                     text logs[calendar.time-1].get_day_report() size 14 color c_brown
 
-                    textbutton "Show last night's log" xsize 250 ypadding 5 text_size 14 xalign 0.5:
+                    textbutton "显示昨晚的日志" xsize 250 ypadding 5 text_size 14 xalign 0.5:
                         if always_show_brothel_report:
                             action (Show("previous_night_log", log=logs[calendar.time-1]))
-                    textbutton "Show satisfaction report" xsize 250 ypadding 5 text_size 14 xalign 0.5:
+                    textbutton "显示满意度报告" xsize 250 ypadding 5 text_size 14 xalign 0.5:
                         if always_show_brothel_report:
                             action Call("latest_customer_satisfaction")
 
                 else:
-                    text "Nothing to report" size 14 italic True color c_brown
+                    text "没有什么可报告的" size 14 italic True color c_brown
 
             viewport:
                 mousewheel True
@@ -4434,7 +4454,7 @@ screen brothel_report():
                 xfill True
                 yfill False
 
-                text "Today" color c_prune
+                text "今天" color c_prune
 
                 text "" size 14
 
@@ -4658,7 +4678,7 @@ screen show_event(event_pic, x = None, y = None, proportional = True, bg = c_ui_
                 frame background c_ui_dark:
                     has vbox
                     text "Attempt: " + str(game.last_pic["attempts"]) size 14
-                    text "Search tags: " + and_text(game.last_pic["tags"]) size 14
+                    text "搜索标签: " + and_text(game.last_pic["tags"]) size 14
                     text "AND tags: " + and_text(game.last_pic["and_tags"]) size 14
                     text "AND NOT tags: " + and_text(game.last_pic["not_tags"]) size 14
 
@@ -4694,7 +4714,7 @@ screen show_sex_event(event_pic, bg = c_ui_dark): # event_pic MUST be an object
                 frame background c_ui_dark:
                     has vbox
                     text "Attempt: " + str(game.last_pic["attempts"]) size 14
-                    text "Search tags: " + and_text(game.last_pic["tags"]) size 14
+                    text "搜索标签: " + and_text(game.last_pic["tags"]) size 14
                     text "AND tags: " + and_text(game.last_pic["and_tags"]) size 14
                     text "AND NOT tags: " + and_text(game.last_pic["not_tags"]) size 14
 
@@ -4763,7 +4783,7 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
                         frame background c_ui_dark:
                             has vbox
                             text "Attempt: " + str(game.last_pic["attempts"]) size 14
-                            text "Search tags: " + and_text(game.last_pic["tags"]) size 14
+                            text "搜索标签: " + and_text(game.last_pic["tags"]) size 14
                             text "AND tags: " + and_text(game.last_pic["and_tags"]) size 14
                             text "AND NOT tags: " + and_text(game.last_pic["not_tags"]) size 14
 
@@ -4792,10 +4812,10 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
                 if has_log:
 
                     if show_log:
-                        $ text1 = "Hide log"
+                        $ text1 = "隐藏日志"
 
                     else:
-                        $ text1 = "Show log"
+                        $ text1 = "显示日志"
 
                     textbutton text1:
                         xalign 0.5
@@ -4805,7 +4825,7 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
 
                     text ""
 
-                text "Results"
+                text "绩效"
 
                 text changes size 18
 
@@ -4848,7 +4868,7 @@ screen shortcuts():
 
 screen close(act, name = "back"):
 
-    textbutton name:
+    textbutton chinese_name[name]:
 
         background None
 
@@ -4904,7 +4924,7 @@ screen restock_button(merc, upgrade=False):
         else:
             $ restock_cost = shop_restock_cost["shop"][game.chapter]
 
-        textbutton "Restock inventory" text_size 18 tooltip "Restock this shop's inventory for %s gold (available once a day)." % restock_cost:
+        textbutton "重置库存" text_size 18 tooltip "以%s金币的价格为这家商店补充存货 (每天一次)." % restock_cost:
             if merc.last_restock != calendar.time and MC.has_gold(restock_cost):
                 action Return((True, "restock"))
             else:
@@ -4913,9 +4933,9 @@ screen restock_button(merc, upgrade=False):
         if upgrade == True and merc.can_upgrade():
             $ chapter, cost, upgrade = shop_upgrades[merc.upgrade_level + 1]
 
-            $ ttip = "Upgrade this shop's inventory (+%s %s item%s) for %s %s." % (str(upgrade[1]), upgrade[0], plural(upgrade[1]), str(cost[1]), cost[0])
+            $ ttip = "升级这个商店的库存（+%s的%s项目）为%s %s." % (str(upgrade[1]), upgrade[0], str(cost[1]), cost[0])
 
-            textbutton "Upgrade shop" text_size 18 tooltip ttip:
+            textbutton "升级商店" text_size 18 tooltip ttip:
                 if MC.has_resource(*cost):
                     action Return((True, "upgrade_shop"))
                 else:
@@ -5016,7 +5036,7 @@ screen item_tab(left, right, context):
                             spacing 2
 
                             if left == MC:
-                                text "You" color c_brown
+                                text "你" color c_brown
                             else:
                                 text selected_girl.name color c_darkred
 
@@ -5025,14 +5045,14 @@ screen item_tab(left, right, context):
                                 hbox xsize 180 xfill True:
 
                                     if MC.active_inv_filter:
-                                        text "No items available (filters are on)." size 14
+                                        text "没有可供选择的物品 (筛选开启)." size 14
 
                                     else:
-                                        text "No items available." size 14
+                                        text "没有可供选择的物品." size 14
 
                             for it in it_list1:
                                 if it == "more_button":
-                                    textbutton "Show more items" xsize 170 text_size 14 text_italic True action SetScreenVariable("left_length", left_length + max_item_shown)
+                                    textbutton "显示更多物品" xsize 170 text_size 14 text_italic True action SetScreenVariable("left_length", left_length + max_item_shown)
 
                                 else:
                                     $ ttip = it.description
@@ -5058,12 +5078,12 @@ screen item_tab(left, right, context):
                                                     $ text1 += " (" + str(it.charges) + ")"
 
                                                 if it.equipped:
-                                                    $ text1 += "\n{i}Equipped{/i}"
+                                                    $ text1 += "\n{i}已装备{/i}"
 
 
                                                 if act == "sell":
                                                     if it.type.sellable:
-                                                        $ text1 += "\n" + str(it.get_price("sell")) + " gold"
+                                                        $ text1 += "\n" + str(it.get_price("sell")) + "金币"
 
                                                 text text1 size 14
 
@@ -5132,10 +5152,10 @@ screen item_tab(left, right, context):
                             spacing 2
 
                             if context in ("shop", "city_merchant", "minion_merchant"):
-                                text "Merchant" color c_brown
+                                text "商家" color c_brown
 
                             elif right == MC:
-                                text "Your items" color c_brown
+                                text "你的物品" color c_brown
 
                             else:
                                 text right.name color c_darkred
@@ -5144,13 +5164,13 @@ screen item_tab(left, right, context):
                             if it_list2 == []:
                                 hbox xsize 180 xfill True:
                                     if MC.active_inv_filter:
-                                        text "No items available (filters are on)." size 14 color c_brown
+                                        text "没有可供选择的物品 (筛选开启)." size 14 color c_brown
                                     else:
-                                        text "No items available." size 14 color c_brown
+                                        text "没有可供选择的物品." size 14 color c_brown
 
                             for it in it_list2:
                                 if it == "more_button":
-                                    textbutton "Show more items" xsize 170 text_size 14 text_italic True action SetScreenVariable("right_length", right_length + max_item_shown)
+                                    textbutton "显示更多物品" xsize 170 text_size 14 text_italic True action SetScreenVariable("right_length", right_length + max_item_shown)
 
                                 elif not it.equipped:
 
@@ -5178,14 +5198,14 @@ screen item_tab(left, right, context):
                                                         $ text1 += " (" + str(it.charges) + ")"
 
                                                     if it.equipped:
-                                                        $ text1 += "\n{i}Equipped{/i}"
+                                                        $ text1 += "\n{i}已装备{/i}"
 
                                                 elif isinstance(it, Minion):
-                                                    $ text1 +=  "\nLevel " + str(it.level)
+                                                    $ text1 +=  "\n等级" + str(it.level)
 
                                                 if act == "buy":
 
-                                                    $ text1 += "\n" + str(it.get_price("buy")) + " gold"
+                                                    $ text1 += "\n" + str(it.get_price("buy")) + "金币"
 
                                                 text text1 size 14
 
@@ -5247,9 +5267,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + it.type.name + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + chinese_name[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + it.target.capitalize() + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + chinese_name[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -5259,11 +5279,11 @@ screen item_profile(it, act):
 
             if act == "buy":
 
-                text str(it.get_price("buy")) + " gold" xalign 0.5
+                text str(it.get_price("buy")) + "金币" xalign 0.5
 
                 text ""
 
-                textbutton "Buy" action Return((it, "buy")) xalign 0.5
+                textbutton "买" action Return((it, "buy")) xalign 0.5
 
             if act == "bargain":
 
@@ -5272,13 +5292,13 @@ screen item_profile(it, act):
                 text ""
 
                 hbox spacing 10 xalign 0.5:
-                    textbutton "Buy" action Return("buy") xalign 0.5
-                    textbutton "Skip" action Return("leave") xalign 0.5
+                    textbutton "买" action Return("buy") xalign 0.5
+                    textbutton "跳过" action Return("leave") xalign 0.5
 
             if act == "sell":
 
                 if it.type.sellable:
-                    text str(it.get_price("sell")) + " gold" xalign 0.5
+                    text str(it.get_price("sell")) + "金币" xalign 0.5
                 else:
                     text "Unsellable" italic True xalign 0.5
 
@@ -5286,7 +5306,7 @@ screen item_profile(it, act):
 
                 hbox spacing 10 xalign 0.5:
 
-                    textbutton "Sell" xalign 0.5:
+                    textbutton "出售" xalign 0.5:
                         if it.type.sellable:
                             action Return((it, "sell"))
 
@@ -5294,28 +5314,28 @@ screen item_profile(it, act):
 
                         if not it.equipped:
 
-                            textbutton "Equip" action Return((it, "equip")) xalign 0.5
+                            textbutton "装备" action Return((it, "equip")) xalign 0.5
 
                         else:
 
-                            textbutton "Unequip" action Return((it, "unequip")) xalign 0.5
+                            textbutton "卸下" action Return((it, "unequip")) xalign 0.5
 
 
             if act == "take":
 
                 hbox spacing 10 xalign 0.5:
 
-                    textbutton "Take" action Return((it, "take")) xalign 0.5
+                    textbutton "取回" action Return((it, "take")) xalign 0.5
 
                     if it.can_wear("girl"):
                         if not it.equipped:
-                            textbutton "Equip" action Return((it, "g_equip")) xalign 0.5
+                            textbutton "装备" action Return((it, "g_equip")) xalign 0.5
 
                         else:
-                            textbutton "Unequip" action Return((it, "g_unequip")) xalign 0.5
+                            textbutton "卸下" action Return((it, "g_unequip")) xalign 0.5
 
                     if it.can_use("girl"):
-                        textbutton "Use" action Return((it, "g_use")) xalign 0.5
+                        textbutton "使用" action Return((it, "g_use")) xalign 0.5
 
 
 
@@ -5324,23 +5344,23 @@ screen item_profile(it, act):
                 hbox spacing 10 xalign 0.5:
 
                     if it.usage == "give":
-                        textbutton "Gift" action Return((it, "gift")) xalign 0.5
+                        textbutton "礼物" action Return((it, "gift")) xalign 0.5
 
                     else:
-                        textbutton "Give" action Return((it, "give")) xalign 0.5
+                        textbutton "给与" action Return((it, "give")) xalign 0.5
 
                     if it.can_wear("MC"):
 
                         if not it.equipped:
-                            textbutton "Equip" action Return((it, "equip")) xalign 0.5
+                            textbutton "装备" action Return((it, "equip")) xalign 0.5
                         else:
-                            textbutton "Unequip" action Return((it, "unequip")) xalign 0.5
+                            textbutton "卸下" action Return((it, "unequip")) xalign 0.5
 
                     elif it.can_wear("girl"):
-                        textbutton "Equip her" action Return((it, "give_equip")) xalign 0.5
+                        textbutton "让她装备" action Return((it, "give_equip")) xalign 0.5
 
                     if it.can_use("girl"):
-                        textbutton "Use on her" action Return((it, "give_use")) xalign 0.5
+                        textbutton "让她使用" action Return((it, "give_use")) xalign 0.5
 
             if act == "use":
 
@@ -5350,15 +5370,15 @@ screen item_profile(it, act):
 
                         if not it.equipped:
 
-                            textbutton "Equip" action Return((it, "equip")) xalign 0.5
+                            textbutton "装备" action Return((it, "equip")) xalign 0.5
 
                         else:
 
-                            textbutton "Unequip" action Return((it, "unequip")) xalign 0.5
+                            textbutton "卸下" action Return((it, "unequip")) xalign 0.5
 
                     elif it.can_use("MC"):
 
-                        textbutton "Use" action Return((it, "use")) xalign 0.5
+                        textbutton "使用" action Return((it, "use")) xalign 0.5
 
 
 screen inventory(char, act):
@@ -5381,7 +5401,7 @@ screen inventory(char, act):
                         $ eq = it
 
                 vbox:
-                    text slot.capitalize() size 14 xalign 0.5
+                    text chinese_name[slot.capitalize()] size 14 xalign 0.5
 
                     button xsize 60 ysize 60 xfill True yfill True xalign 0.5:
 
@@ -5395,9 +5415,9 @@ screen inventory(char, act):
                             hovered tt.Action(eq.description)
 
                         else:
-                            text "Empty" size 12 italic True xalign 0.5 yalign 0.5
+                            text "空" size 12 italic True xalign 0.5 yalign 0.5
                             action NullAction()
-                            hovered tt.Action("No item is equipped to this slot.")
+                            hovered tt.Action("此插槽没有装备任何物品.")
 
 
 
@@ -5418,13 +5438,13 @@ screen inventory_filter(filters=inventory_filters["base"]):
                             add "filter_" + filter
                         else:
                             add "filter_" + filter + "_unselect"
-                        hovered tt.Action("Show " + filter + " items.")
+                        hovered tt.Action("显示" + filter + "物品.")
                     else:
                         if filter == MC.active_inv_filter:
                             add "filter_all"
                         else:
                             add "filter_all_unselect"
-                        hovered tt.Action("Show all items.")
+                        hovered tt.Action("显示所有物品.")
 
 screen sorting_tab(context, sort_target=None, sorters=[]): # Sorters are defined in BKinit_variables.rpy
     hbox xalign 0.5:
@@ -5437,7 +5457,7 @@ screen sorting_tab(context, sort_target=None, sorters=[]): # Sorters are defined
                         action (Function(sort_target.sort, key=operator.attrgetter(sorter[1])), SetDict(game.sorting_dict, context, sorter[1]))
                     else:
                         action (Function(sort_target.sort, key=operator.attrgetter(sorter[1]), reverse=True), SetDict(game.sorting_dict, context, sorter[1] + " reverse"))
-                    tooltip "Click to sort by " + sorter[2] +"."
+                    tooltip "点击左键按" + sorter[2] +"排序."
 
 
 
@@ -5495,35 +5515,35 @@ screen girl_select(girl_list, orange = False, no_sched=False):
                                     if badge:
                                         add ProportionalScale(badge, 40, 40) xalign 0.9 yalign 0.1
 
-                        $ text1 = selected_girl.fullname + "\nRank " + rank_name[selected_girl.rank] + " - Level " + str(selected_girl.level)
+                        $ text1 = selected_girl.fullname + "\n品阶 " + rank_name[selected_girl.rank] + " - 等级 " + str(selected_girl.level)
 
                         if not no_sched:
                             if selected_girl.job:
                                 $ text1 += "\n" + selected_girl.job.capitalize()
                                 if selected_girl.job in all_jobs and selected_girl.work_whore:
-                                    $ text1 += "/Whore"
+                                    $ text1 += "/妓女"
                                 $ sched = selected_girl.workdays[calendar.get_weekday()]
 
                             else:
-                                $ text1 += "\nNo job"
+                                $ text1 += "\n没有工作"
                                 $ sched = 0
 
 
                             if selected_girl.away:
-                                $ text1 += " (away)"
+                                $ text1 += " (离开)"
                             elif selected_girl.hurt > 0:
-                                $ text1 += " (hurt)"
+                                $ text1 += " (受伤)"
                             elif selected_girl.exhausted > 0:
-                                $ text1 += " (tired)"
+                                $ text1 += " (疲劳)"
                             elif selected_girl.resting or sched == 0:
-                                $ text1 += " (resting)"
+                                $ text1 += " (休息)"
                             elif sched == 50:
-                                $ text1 += " (half-shift)"
+                                $ text1 += " (半班制)"
 
                         text text1 size 14 xalign 0.0 yalign 0.5 color c_brown
 
                 else:
-                    text "{i}No girls are available for this task{/i}" size 14 xalign 0.5 yalign 0.5
+                    text "{i}没有女孩能胜任这项任务{/i}" size 14 xalign 0.5 yalign 0.5
 
             textbutton ">" ysize 120 yalign 0.5:
                 if girl_list:
@@ -5540,14 +5560,14 @@ screen quick_start():
 
     vbox xalign 0.5 yalign 0.5 xsize int(0.95*config.screen_width):
         hbox xfill True:
-            textbutton "Character" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "MC") hovered SetScreenVariable("panel", "MC") tooltip "Create your Main Character."
+            textbutton "角色创建" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "MC") hovered SetScreenVariable("panel", "MC") tooltip "创建你的主要角色."
 
-            textbutton "Difficulty" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "diff") hovered SetScreenVariable("panel", "diff") tooltip "Change difficulty settings."
+            textbutton "难度选择" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "diff") hovered SetScreenVariable("panel", "diff") tooltip "改变难度设置."
 
-            textbutton "Girls" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "mix") hovered SetScreenVariable("panel", "mix") tooltip "Choose your girl mixes."
+            textbutton "女孩选择" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "mix") hovered SetScreenVariable("panel", "mix") tooltip "选择你的女孩组合."
 
             if persistent.new_game_plus or debug:
-                textbutton "Extras" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "extras") hovered SetScreenVariable("panel", "extras") tooltip "Access NewGame+ settings."
+                textbutton "额外设置" xsize 160 ysize 48 text_size 24 text_selected_bold True action SelectedIf(panel == "extras") hovered SetScreenVariable("panel", "extras") tooltip "进入NewGame+设置."
 
             button background None xsize 320 ysize 52 xalign 1.0:
                 if GetTooltip():
@@ -5561,7 +5581,7 @@ screen quick_start():
             if panel == "MC":
 
                 hbox spacing 30 xalign 0.5:
-                    label "Name: "
+                    label "名字: "
                     input value FieldInputValue(MC, "name") length 20 color c_steel bold True
 #                     text "Name: " color c_brown yalign 0.5
 #                     textbutton "[MC.name]" ysize 40 text_color c_white text_bold True action Call("MC_change_name")
@@ -5570,7 +5590,7 @@ screen quick_start():
                     frame: # background c_orange:
                         has vbox
 
-                        text "Class" xalign 0.5 size 18 bold True color c_prune
+                        text "职业" xalign 0.5 size 18 bold True color c_prune
 
                         hbox spacing 10:
                             for cl in ["Warrior", "Wizard", "Trader"]:
@@ -5588,7 +5608,7 @@ screen quick_start():
                     frame: # background c_purple:
                         has vbox
 
-                        text "Religion" xalign 0.5 size 18 bold True color c_emerald
+                        text "信仰" xalign 0.5 size 18 bold True color c_emerald
 
                         hbox spacing 10:
                             for god in ["Arios", "Shalia", None]:
@@ -5608,7 +5628,7 @@ screen quick_start():
                             for stat in all_MC_stats:
                                 button background None action NullAction() tooltip MC_stat_description[stat]:
                                     vbox xsize 100:
-                                        text MC_stat_color[stat] % stat.capitalize() size 18 xalign 1.0
+                                        text MC_stat_color[stat] % start_dict_name[stat.capitalize()] size 18 xalign 1.0 bold True
                                         text MC_stat_color[stat] % int(MC.get_stat(stat, raw=True)) size 24 xanchor 1.0 xalign 1.0
 
                 # hbox spacing 20 xalign 0.5:
@@ -5618,7 +5638,7 @@ screen quick_start():
                     textbutton "<" ysize 120 yalign 0.5:
 
                         action Function(MC.change_pic, "previous")
-                        tooltip "Change your Main Character's picture."
+                        tooltip "更改你的主角图片."
 
 
                     frame:
@@ -5631,7 +5651,7 @@ screen quick_start():
                     textbutton ">" ysize 120 yalign 0.5:
 
                         action Function(MC.change_pic, "next")
-                        tooltip "Change your Main Character's picture."
+                        tooltip "更改你的主角图片."
 
             elif panel == "diff":
                 hbox spacing 60:
@@ -5660,9 +5680,9 @@ screen quick_start():
                 $ available_mixes = update_available_mixes()
 
                 vbox spacing 20 xalign 0.05:
-                    textbutton "Active Girl mixes: %s" % and_text(persistent.game_mixes) xpadding 0 xmargin 0 background None text_color c_darkorange action NullAction() tooltip "{b}Warning{/b}: Your choice of active girl mixes cannot be changed after starting a game, although you can still add or remove girl packs from mixes."
+                    textbutton "活跃的女孩组合: %s" % and_text(persistent.game_mixes) xpadding 0 xmargin 0 background None text_color c_darkorange action NullAction() tooltip "{b}警告{/b}: 在开始游戏后，你选择的活动女孩组合不能改变，尽管你仍然可以在组合中添加或删除女孩包."
 
-                    text "Click on a girl mix to add or remove it from this game." size 14 italic True color c_brown
+                    text "点击一个女孩的组合，在这个游戏中添加或删除它." size 14 italic True color c_brown
 
                     hbox spacing 30 xfill True xalign 0.05:
                         frame ysize 0.8:
@@ -5677,14 +5697,14 @@ screen quick_start():
                                             background c_orange
                                             text_color c_white
                                             action RemoveFromSet(persistent.game_mixes, mix)
-                                            tooltip "Click to remove mix: {b}%s{/b} from this game's active mixes." % mix.capitalize()
+                                            tooltip "单击以删除组合: 禁用{b}%s{/b}在本次游戏的组合." % mix.capitalize()
                                         else:
                                             background c_ui_insensitive
                                             text_color c_darkgrey
                                             action AddToSet(persistent.game_mixes, mix)
-                                            tooltip "Click to add mix: {b}%s{/b} to this game's active mixes." % mix.capitalize()
+                                            tooltip "单击以添加组合: 激活{b}%s{/b}在本次游戏的组合." % mix.capitalize()
 
-                            textbutton "Edit girl mixes" xsize 220 ysize 36 xalign 0.5 yalign 1.0 action Return("edit mix") tooltip "Click here to edit your girl mixes."
+                            textbutton "编辑女孩组合" xsize 220 ysize 36 xalign 0.5 yalign 1.0 action Return("edit mix") tooltip "点击这里编辑你的女孩组合."
 
                         $ selected_girlpacks = get_selected_girlpacks(persistent.game_mixes)
 
@@ -5699,14 +5719,14 @@ screen quick_start():
                 $ unlocking_extras()
 
                 vbox spacing 20:
-                    text "Note: Choosing any of these options will disable achievements for this game." size 14 italic True color c_brown
+                    text "注意事项: 选择这些选项中的任何一个都将禁用本游戏的成就." size 14 italic True color c_brown
 
                     hbox:
-                        label "Starting gold: "
+                        label "初始金币: "
                         input value FieldInputValue(game, "starting_gold") length 9 allow "0123456789" color c_darkgold bold True
 
                     hbox spacing 10:
-                        text "Starting chapter: Chapter %s" % starting_chapter color c_brown
+                        text "起始章节: 章节 %s" % starting_chapter color c_brown
 
                         hbox:
                             textbutton "-":
@@ -5719,44 +5739,44 @@ screen quick_start():
                     if starting_chapter > 1:
                         $ next_path = get_next(["good", "neutral", "evil"], c1_path, loop=True)
 
-                        textbutton "Chapter 1 ending: %s" % c1_path.capitalize() action SetVariable("c1_path", next_path)
+                        textbutton "第一章结束: %s" % c1_path.capitalize() action SetVariable("c1_path", next_path)
 
                     vbox:
                         style_group "extras"
-                        textbutton "Farm: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["farm"]] action (ToggleDict(extras_dict, "farm"))
+                        textbutton "农场: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["farm"]] action (ToggleDict(extras_dict, "farm"))
 
-                        textbutton "Carpenter: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["carpenter"]] action (ToggleDict(extras_dict, "carpenter"))
+                        textbutton "木匠: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["carpenter"]] action (ToggleDict(extras_dict, "carpenter"))
 
-                        textbutton "Locations: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["locations"]] action (ToggleDict(extras_dict, "locations"))
+                        textbutton "场所: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["locations"]] action (ToggleDict(extras_dict, "locations"))
 
-                        textbutton "Shops: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["shops"] > 0]:
+                        textbutton "商店: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["shops"] > 0]:
                             if extras_dict["shops"]:
                                 action (SetDict(extras_dict, "shops", False))
                             else:
                                 action (SetDict(extras_dict, "shops", 7))
 
-                        textbutton "Resources: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["resources"] > 0]:
+                        textbutton "资源: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["resources"] > 0]:
                             if extras_dict["resources"]:
                                 action (SetDict(extras_dict, "resources", False))
                             else:
                                 action (SetDict(extras_dict, "resources", 7))
 
-                        textbutton "Trainers: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["trainers"]] action (ToggleDict(extras_dict, "trainers"))
+                        textbutton "培训师: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["trainers"]] action (ToggleDict(extras_dict, "trainers"))
 
                         text "" size 12
 
-                        textbutton "Reset extras" action (SetVariable("extras_dict", {"farm" : False, "carpenter" : False, "locations" : False, "shops" : False, "trainers" : False, "resources" : False}), SetField(game, "starting_gold", str(starting_gold)))
+                        textbutton "重置额外的内容" action (SetVariable("extras_dict", {"farm" : False, "carpenter" : False, "locations" : False, "shops" : False, "trainers" : False, "resources" : False}), SetField(game, "starting_gold", str(starting_gold)))
 
         frame xfill True xsize int(0.95*config.screen_width) ysize int(0.1*config.screen_height):
             hbox xfill True:
                 vbox spacing 10 xalign 0.5 yalign 0.5:
-                    text "{b}%s, %s{/b} ({b}%s{/b}) - {b}%s{/b} difficulty" % (MC.name, MC.playerclass, str(MC.god), game.diff.capitalize()) color c_prune size 18
+                    text "{b}%s, %s{/b} ({b}%s{/b}) - {b}难度: %s{/b}" % (MC.name, start_dict_name[MC.playerclass], start_dict_name[str(MC.god)], start_dict_name[game.diff.capitalize()]) color c_prune size 18
                     if game.achievements:
-                        text "Achievements will be enabled for this game." italic True color c_emerald size 18
+                        text "本次游戏将启用成就." italic True color c_emerald size 18
                     else:
-                        text "Achievements will be disabled for this game." italic True color c_red size 18
+                        text "本次游戏将禁用成就." italic True color c_red size 18
 
-                textbutton "CONFIRM" xalign 1.0 yfill True action Return(True) tooltip "Start a new game with these settings."
+                textbutton "确认" xalign 1.0 yfill True action Return(True) tooltip "用这些设置开始一个新的游戏."
 
 ## MAIN CHARACTER SCREEN
 
@@ -5780,8 +5800,8 @@ screen main_character():
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox
-            textbutton MC.name background None text_color c_steel action Return("change_name") hovered tt.Action("Click here to change your character's name")
-            textbutton ("Level " + str(MC.level) + " " + MC.playerclass) background None text_size 18 text_color c_darkgrey action NullAction() tooltip "You need " + str(int(MC_xp_to_levelup[MC.level])) + " prestige to level up."
+            textbutton MC.name background None text_color c_steel action Return("change_name") hovered tt.Action("点击这里更改你的角色名称")
+            textbutton ("等级" + str(MC.level) + " " + MC.playerclass) background None text_size 18 text_color c_darkgrey action NullAction() tooltip "你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级."
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox spacing 6
@@ -5819,21 +5839,21 @@ screen main_character():
                     action NullAction()
                     hovered tt.Action(text1)
 
-                    $ text1 = "You earn prestige everytime you or your girls have sex, or when one of your girl earns a new level."
+                    $ text1 = "每当你或你的女孩发生性关系时，或当你的一个女孩获得一个新的级别时，你都会获得威望."
 
                     if MC.level == 25:
-                        $ text1 += "\nYou have reached the maximum level."
+                        $ text1 += "\n你已经达到了最高等级."
                     else:
-                        $ text1 += "\nYou need " + str(int(MC_xp_to_levelup[MC.level])) + " prestige to level up."
+                        $ text1 += "\n你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级."
 
-                    text (str(int(MC.prestige)) + " prestige") size 14 color c_brown
+                    text (str(int(MC.prestige)) + "威望点") size 14 color c_brown
 
                 button:
                     background None
                     action NullAction()
-                    hovered tt.Action("You get 1 skill point for every new level.")
+                    hovered tt.Action("每升级你会得到1个技能点.")
 
-                    text str(MC.skill_points) + " skill points" size 14 color c_brown
+                    text str(MC.skill_points) + "技能点" size 14 color c_brown
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox
@@ -5852,20 +5872,20 @@ screen main_character():
 
             text "" size 10
 
-            textbutton "{b}Current goal{/b}\n{i}{size=-2}" + game.get_first_goal() xalign 0.1 yalign 0.5 xsize 180 text_size 14 text_color c_brown background None:
+            textbutton "{b}当前目标{/b}\n{i}{size=-2}" + game.get_first_goal() xalign 0.1 yalign 0.5 xsize 180 text_size 14 text_color c_brown background None:
                 action NullAction()
                 hovered Show("goal_ttip", transition=Dissolve(0.15))
                 unhovered Hide("goal_ttip", transition=Dissolve(0.15))
 
             text "" size 8
 
-            textbutton "Spellboo{u}k{/u}" xalign 0.5 action (Show("spellbook"), Function(renpy.block_rollback)) tooltip "See all available spells and active talents"
+            textbutton "魔法书" xalign 0.5 action (Show("spellbook"), Function(renpy.block_rollback)) tooltip "查看所有可用的法术和有效的天赋"
 
 
     textbutton "<" xpos 0.2 ysize 120 yalign 0.5:
 
         action Return("previous_pic")
-        hovered tt.Action("Change your character's picture.")
+        hovered tt.Action("改变你的角色图片.")
 
 
     frame:
@@ -5878,14 +5898,14 @@ screen main_character():
     textbutton ">" xpos 0.76 ysize 120 yalign 0.5:
 
         action Return("next_pic")
-        hovered tt.Action("Change your character's picture.")
+        hovered tt.Action("改变你的角色图片.")
 
 #     use item_tab(left = None, right = MC, context = "MC")
 
 screen active_spells():
 
     hbox:
-        text "Active:" size 14 color c_brown yalign 0.5
+        text "已激活:" size 14 color c_brown yalign 0.5
         for spell in MC.active_spells:
             button xpadding 0 ypadding 0 xsize 40 ysize 40 action NullAction() hovered tt.Action("{b}" + spell.name + "{/b}: " + get_description("", spell.effects)):
                 add spell.pic.get(30, 30) xalign 0.5 yalign 0.5
@@ -5899,7 +5919,7 @@ screen spellbook():
 
 #    use dark_filter
 
-    textbutton MC.name + "'s Spellbook" yalign 0.1 xalign 0.5
+    textbutton MC.name + "的魔法书" yalign 0.1 xalign 0.5
 
     fixed xalign 0.5 yalign 0.5:
         fit_first True
@@ -5912,7 +5932,7 @@ screen spellbook():
 
         if MC.known_spells:
             frame xalign 0.5 yalign 0.95:
-                text "Right-click on a spell to set-up auto-cast" size 14 color c_brown
+                text "右键点击法术以设置自动施法" size 14 color c_brown
 
 
 
@@ -5937,15 +5957,15 @@ screen spellbook():
 
                                 if s in MC.active_spells and s.auto:
                                     $ col = c_darkpurple
-                                    $ extra = "(Auto-cast: " + s.auto.capitalize() + ")\n(Active)"
+                                    $ extra = "(自动施法: " + s.auto.capitalize() + ")\n(已激活)"
 
                                 elif s.auto:
                                     $ col = c_firered
-                                    $ extra = "(Auto-cast: " + s.auto.capitalize() + ")"
+                                    $ extra = "(自动施法: " + s.auto.capitalize() + ")"
 
                                 elif s in MC.active_spells:
                                     $ col = c_steel
-                                    $ extra = "(Active)"
+                                    $ extra = "(已激活)"
 
                                 else:
                                     $ col = False
@@ -5987,7 +6007,7 @@ screen spellbook():
 
                                                 if s.duration == "turn":
 
-                                                    text "/night" size 14
+                                                    text "/n晚上" size 14
 
                                             if extra:
                                                 text extra size 14
@@ -6001,7 +6021,7 @@ screen spellbook():
                                 $ i += 1
 
         else:
-            textbutton "{i}You do not know any spells yet. You must increase your level.{/i}" xalign 0.5 yalign 0.5 xsize 250 text_size 18
+            textbutton "{i}你还不知道任何法术. 你必须提高你的等级.{/i}" xalign 0.5 yalign 0.5 xsize 250 text_size 18
 
     if MC.active_spells:
         frame xalign 0.5 yalign 0.9 xsize 0.85 xpadding 20:
@@ -6078,27 +6098,27 @@ screen postings(qlist):
 
                             text "" size 18
 
-                            text "Duration" size 18 color c_prune
+                            text "持续" size 18 color c_prune
 
-                            text str(selected_quest.duration) + " days" size 14 color c_brown
+                            text str(selected_quest.duration) + "天" size 14 color c_brown
 
                             text "" size 18
 
                             if selected_quest.type == "class":
 
-                                text "Cost" size 18 color c_prune
+                                text "费用" size 18 color c_prune
 
-                                text str(selected_quest.gold) + " gold" size 14 color c_brown
-
-                                text "" size 18
-
-                                text "Enrolled" size 18 color c_prune
-
-                                text str(len(selected_quest.enrolled)) + "/" + str(selected_quest.capacity) + " girls" size 14 color c_brown
+                                text str(selected_quest.gold) + "金币" size 14 color c_brown
 
                                 text "" size 18
 
-                                text "Gains" size 18 color c_prune
+                                text "报名" size 18 color c_prune
+
+                                text str(len(selected_quest.enrolled)) + "/" + str(selected_quest.capacity) + "位女孩" size 14 color c_brown
+
+                                text "" size 18
+
+                                text "获得" size 18 color c_prune
 
                                 for stat, _min, _max in selected_quest.bonuses:
 
@@ -6113,19 +6133,19 @@ screen postings(qlist):
 
                                     text stat + " " + t size 14 color c_brown
 
-                                textbutton "\nMax skill: " + str(selected_quest.stat_cap) text_size 14 text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
-                                    tooltip "Classes may cause a girl's skills to exceed their level cap."
+                                textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size 14 text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
+                                    tooltip "课程可能导致女孩的技能超过等级上限."
 
 
                             elif selected_quest.type == "quest":
 
-                                text "Reward" size 18 color c_prune
+                                text "报酬" size 18 color c_prune
 
-                                text str(selected_quest.gold) + " gold" size 14 color c_brown
+                                text str(selected_quest.gold) + "金币" size 14 color c_brown
 
                                 text "" size 18
 
-                                text "Requirements" size 18 color c_prune
+                                text "要求" size 18 color c_prune
 
                                 for stat, val in selected_quest.requirements:
 
@@ -6133,18 +6153,18 @@ screen postings(qlist):
 
                                 text "" size 18
 
-                                text "Desirable" size 18 color c_prune
+                                text "令人满意" size 18 color c_prune
 
                                 text selected_quest.pos_traits[0].name + ", " + selected_quest.pos_traits[1].name size 14 color c_emerald
 
                                 text "" size 18
 
-                                text "Undesirable" size 18 color c_prune
+                                text "不受欢迎" size 18 color c_prune
 
                                 text selected_quest.neg_trait.name size 14 color c_crimson
 
                 else:
-                    text "No task is currently available." italic True color c_brown size 18
+                    text "目前没有任何任务可用." italic True color c_brown size 18
 
             fixed xalign 0.5:
                 fit_first True
@@ -6165,7 +6185,7 @@ screen postings(qlist):
                             $ act = None
 
                         button xalign 0.9 xanchor 1.0 yalign 0.15 background None:
-                            textbutton "Commit" xalign 0.68 yalign 0.825 text_size 18 action act tooltip ttip
+                            textbutton "提交" xalign 0.68 yalign 0.825 text_size 18 action act tooltip ttip
 
                             action NullAction()
                             tooltip ttip
@@ -6191,8 +6211,8 @@ screen postings(qlist):
 
                 hbox:
 
-                    textbutton "Quests" text_size 14 xsize 80 xfill True idle_background c_lightbrown hover_background c_darkbrown + "CC" selected_idle_background c_darkbrown action (Return("quests"), SelectedIf(qlist == quest_board.quests))
-                    textbutton "Classes" text_size 14 xsize 80 xfill True idle_background c_lightbrown hover_background c_darkbrown + "CC" selected_idle_background c_darkbrown action (Return("classes"), SelectedIf(qlist == quest_board.classes))
+                    textbutton "任务" text_size 14 xsize 80 xfill True idle_background c_lightbrown hover_background c_darkbrown + "CC" selected_idle_background c_darkbrown action (Return("quests"), SelectedIf(qlist == quest_board.quests))
+                    textbutton "课程" text_size 14 xsize 80 xfill True idle_background c_lightbrown hover_background c_darkbrown + "CC" selected_idle_background c_darkbrown action (Return("classes"), SelectedIf(qlist == quest_board.classes))
 
 
                 if qlist:
@@ -6213,13 +6233,13 @@ screen postings(qlist):
 
                                 if quest.type == "quest":
 
-                                    $ ttip = "This task requires " + and_text([stat for stat, v in quest.requirements]) + ".\n"
-                                    $ ttip += str(quest.count_eligible_girls()) + " girls can complete this task."
+                                    $ ttip = "这个任务需要" + and_text([stat_name_dict[stat] for stat, v in quest.requirements]) + ".\n"
+                                    $ ttip += str(quest.count_eligible_girls()) + "女孩可以完成这项任务."
 
                                 elif quest.type == "class":
 
-                                    $ ttip = "This class may improve " + and_text([stat for stat, _min, _max in quest.bonuses]) + ".\n"
-                                    $ ttip += str(len(quest.enrolled)) + "/" + str(quest.capacity) + " are enrolled in this class."
+                                    $ ttip = "专门课程可能会提高" + and_text([stat_name_dict[stat] for stat, _min, _max in quest.bonuses]) + ".\n"
+                                    $ ttip += str(len(quest.enrolled)) + "/" + str(quest.capacity) + "是这门课程的学生."
 
                                 button:
                                     xsize 160
@@ -6244,14 +6264,14 @@ screen postings(qlist):
                                             else:
                                                 $ text1 = ""
                                             text text1 + quest.name  size 13
-                                            text str(quest.gold) + " gold" size 13
+                                            text str(quest.gold) + "金币" size 13
 
                 if calendar.active_contract:
                     text ""
                     text ""
                     button xfill True xpadding 6 ypadding 6 action Return("active_contract"): # hovered Show("contract_tab", contract=calendar.active_contract, x=450, active=True, transition=Dissolve(0.15)) unhovered Hide("contract_tab", transition=Dissolve(0.15)) tooltip "Show active contract (%s day%s left)." % (28-calendar.day, plural(28-calendar.day)):
                         vbox xfill True:
-                            text "Active contract" size 14 color c_darkbrown xalign 0.5
+                            text "有效合同" size 14 color c_darkbrown xalign 0.5
                             add ProportionalScale("UI/" + license_dict[1][1], 50, 50) xalign 0.5
 
 
@@ -6292,10 +6312,10 @@ screen personality_screen():
         if selected_girl:
 
             hbox xalign 0.5 xfill True:
-                textbutton "Pers. " text_size 18 hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
-                textbutton "Tastes" text_size 18 hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
-                textbutton "Sex. " text_size 18 hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
-                textbutton "Events" text_size 18 hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
+                textbutton "个性. " text_size 18 hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
+                textbutton "品味" text_size 18 hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
+                textbutton "性趣. " text_size 18 hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
+                textbutton "事件" text_size 18 hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
 
             hbox spacing 20:
 
@@ -6362,13 +6382,13 @@ screen farm_tab():
 
             has vbox xalign 0.5
 
-            text "Gizel's Farm" bold True xalign 0
+            text "Gizel的农场" bold True xalign 0
 
             if farm.girls:
-                $ text1 = "Ah, [MC.name]! Came to check on my pets?"
+                $ text1 = "啊哈, [MC.name]! 来看看我的宠物?"
                 $ pic = "side gizel"
             else:
-                $ text1 = "My minions are bored... When are you going to send them some new playmates?"
+                $ text1 = "我的仆从最近很无聊... 你打算什么时候给他们送些新玩伴?"
                 $ pic = "side gizel upset"
 
             button xfill True xmargin 3 ymargin 3 xpadding 6 ypadding 6 action Return(("help", None)) hovered tt.Action("Ask Gizel for help about the farm.") background c_ui_dark:
@@ -6380,7 +6400,7 @@ screen farm_tab():
 
                 vbox:
 
-                    text "{b}Girl pens{/b}" size 18 xalign 0.0 ypos 0.3 drop_shadow (2, 2)
+                    text "{b}农场畜棚{/b}" size 18 xalign 0.0 ypos 0.3 drop_shadow (2, 2)
 
                     text "" size 6
 
@@ -6388,16 +6408,16 @@ screen farm_tab():
 
                         has vbox spacing 6
 
-                        $ ttip = "The farm can host one girl per pen."
+                        $ ttip = "这个农场每个畜棚可以放置一个女孩."
 
                         if farm.pens < farm.get_pen_limit():
-                            $ ttip += "\nClick here to add a new pen for " + str(farm.get_pen_cost()) + " gold."
+                            $ ttip += "\n点击这里添加一个新的畜棚花费" + str(farm.get_pen_cost()) + "金币."
                         elif brothel.rank == 5:
-                            $ ttip += "You cannot build any more pens."
+                            $ ttip += "你不能再建造任何畜棚."
                         else:
-                            $ ttip += "Upgrade your brothel to be able to add more pens."
+                            $ ttip += "升级你的青楼将可以添加更多的畜棚."
 
-                        $ ttip += "\n(Currently available pens: " + str(farm.pens - len(farm.girls)) + ")"
+                        $ ttip += "\n(目前可用的畜棚: " + str(farm.pens - len(farm.girls)) + ")"
 
                         button:
                             xpadding 6
@@ -6413,12 +6433,12 @@ screen farm_tab():
                                 text str(farm.pens) + "{size=-8}/" + str(farm.get_pen_limit()) xalign 0.9 yalign 0.1
 
                 vbox:
-                    text "{b}Farm status{/b}" size 18 ypos 0.3 drop_shadow (2, 2)
+                    text "{b}农场状况{/b}" size 18 ypos 0.3 drop_shadow (2, 2)
                     text "" size 6
                     frame background c_ui_dark xfill True:
                         has vbox
                         if farm.get_hurt_minions():
-                            text "Hurt minions: " size 14
+                            text "受伤奴仆: " size 14
                             hbox box_wrap True:
                                 for mn in farm.get_hurt_minions():
                                     button background None xalign 0.5 xpadding 0 xmargin 0 ypadding 0 ymargin 0 action NullAction() hovered tt.Action(mn.get_description()):
@@ -6429,7 +6449,7 @@ screen farm_tab():
                                             text "{color=[c_red]}✙{/color}" size 14
 
                         else:
-                            text "Nothing to report." size 14
+                            text "没有什么可报告的." size 14
                 # vbox:
                 #     text "{b}Farm rules{/b}" size 18 ypos 0.3 drop_shadow (2, 2)
                 #     text "" size 6
@@ -6453,8 +6473,8 @@ screen farm_tab():
             text ""
 
             hbox spacing 25:
-                text "{b}Facilities & Minions{/b}" size 18 yalign 0.5 drop_shadow (2, 2)
-                textbutton "{u}U{/u}se item" text_size 18 action Return(("items", None)) hovered tt.Action("Use an item on your minions.") yalign 0.5
+                text "{b}设施与奴仆{/b}" size 18 yalign 0.5 drop_shadow (2, 2)
+                textbutton "使用物品" text_size 18 action Return(("items", None)) hovered tt.Action("对你的奴仆使用一个物品.") yalign 0.5
 
             text "" size 6
 
@@ -6477,15 +6497,15 @@ screen farm_tab():
                             if inst.can_upgrade():
                                 action Return(("upgrade", inst))
                                 if inst.rank > 0:
-                                    hovered tt.Action("Click here to upgrade the " + inst.name + " capacity for " + str(inst.get_price()) + " gold.")
+                                    hovered tt.Action("点击这里升级" + inst.name + "的能力需要" + str(inst.get_price()) + "金币.")
                                 else:
-                                    hovered tt.Action("Click here to build the " + inst.name +  " for " + str(inst.get_price()) + " gold.")
+                                    hovered tt.Action("点击这里建造" + inst.name +  "需要" + str(inst.get_price()) + "金币.")
                             else:
                                 action NullAction()
                                 if inst.rank < 5:
-                                    hovered tt.Action("You cannot improve the " + inst.name + " until you get a higher brothel license.")
+                                    hovered tt.Action("你无法改善" + inst.name + "直到你获得更高的青楼执照.")
                                 else:
-                                    hovered tt.Action("You cannot improve the " + inst.name + " further.")
+                                    hovered tt.Action("你无法进一步改善" + inst.name + "的状况.")
 
                             vbox:
                                 spacing 3
@@ -6549,7 +6569,7 @@ screen mood_details(girl):
 
         spacing 6
 
-        text girl.name + "'s mood" color c_orange xalign 0.5
+        text girl.name + "的心情" color c_orange xalign 0.5
 
         text "" size 6
 
@@ -6640,19 +6660,19 @@ screen sex_details(girl):
 
         spacing 6
 
-        text girl.name + "'s sexual preferences" xalign 0.5 color c_orange
+        text girl.name + "的性偏好" xalign 0.5 color c_orange
 
         text "" size 6
 
         grid 4 8 spacing 6:
 
-            text "Act" size 14 bold True
-            text "Preference" size 14 bold True
-            text "Will train" size 14 bold True xalign 0.5
-            text "Will work" size 14 bold True xalign 0.5
+            text "行为" size 14 bold True
+            text "嗜好" size 14 bold True
+            text "训练意向" size 14 bold True xalign 0.5
+            text "工作意向" size 14 bold True xalign 0.5
 
             for act in extended_sex_acts:
-                text act.capitalize() size 14 bold True
+                text chinese_name[act.capitalize()] size 14 bold True
 
                 if debug_mode:
                     $ text1 = " (" + str(round_int(girl.preferences[act])) + ")"
@@ -6660,9 +6680,9 @@ screen sex_details(girl):
                     $ text1 = ""
 
                 if girl.personality_unlock[act]:
-                    text preference_color[girl.get_preference(act)] % girl.get_preference(act).capitalize() + text1 size 14
+                    text preference_color[girl.get_preference(act)] % girl_preference_name[girl.get_preference(act).capitalize()] + text1 size 14
                 else:
-                    text "Unknown" + text1 size 14 italic True
+                    text "未知" + text1 size 14 italic True
 
                 if girl.personality_unlock[act]:
 
@@ -6722,7 +6742,7 @@ screen sex_details(girl):
 
 ## CHALLENGE SCREENS ##
 
-screen challenge_menu(header="What do you do?", challenges=[], cancel=False):
+screen challenge_menu(header="你要怎么做?", challenges=[], cancel=False):
     # challenges is a list of arrays (caption, challenge_type, base_diff) where caption is the text displayed on the button.
     # challenge_type must be an existing type in MC.challenges. base_diff is the lowest possible difficulty to achieve success.
     # cancel must be an array (caption, return_value) if the challenge can be avoided.
@@ -6744,7 +6764,7 @@ screen challenge_menu(header="What do you do?", challenges=[], cancel=False):
             for title, challenge_type, diff in challenges:
                 $ chal = MC.challenges[challenge_type]
                 $ diff = chal.adjust_diff(diff)
-                $ ttip = "{b}" + chal.name + " challenge{/b}: This challenges your {b}" + chal.stat.capitalize() + "{/b} (" + str_int(MC.get_stat(chal.stat)) + ")" + ". Estimated difficulty: {b}" + chal.estimate_diff(diff=diff) + "{/b}."
+                $ ttip = "{b}" + chal.name + " 挑战{/b}: 这是对你{b}" + chal.stat.capitalize() + "{/b} (" + str_int(MC.get_stat(chal.stat)) + ")" + ". 估计难度: {b}" + chal.estimate_diff(diff=diff) + "{/b}."
 
                 button background None action(Return(challenge_type)):
                     vbox:
@@ -6782,7 +6802,7 @@ screen challenge(name, diff, raw=False, bonus=0, opponent_bonus=0):
         has vbox
 
         frame xalign 0.5 xfill True background "#22222288":
-            text "Player challenge: " + chal.name xalign 0.5
+            text "玩家的挑战: " + chal.name xalign 0.5
 
         text ""
 
@@ -6791,21 +6811,21 @@ screen challenge(name, diff, raw=False, bonus=0, opponent_bonus=0):
             frame background "#22222288" xfill True xsize 250 ysize 160 xpadding 10 ypadding 10:
 
                 vbox:
-                    text "Player " + chal.stat.capitalize() + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size 18
-                    text "Active bonus: " + str_int(bonus + MC.get_stat(chal.stat, raw) - MC.get_stat(chal.stat, raw=True) + MC.get_effect("change", name + " challenges")) size 18
+                    text "玩家" + chal.stat.capitalize() + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size 18
+                    text "有效加成: " + str_int(bonus + MC.get_stat(chal.stat, raw) - MC.get_stat(chal.stat, raw=True) + MC.get_effect("change", name + " challenges")) size 18
                     text ""
 
                     if phase >= 1:
-                        text "Roll: " + "{image=" + "img_dice" + str(chal.d) + "}" size 18
+                        text "摇骰: " + "{image=" + "img_dice" + str(chal.d) + "}" size 18
                         text ""
 
                         if phase >= 2:
-                            text "Final Result: " + str(round_int(chal.score)) size 18
+                            text "最终结果: " + str(round_int(chal.score)) size 18
 
                     elif chal.opposed:
-                        textbutton "Roll" action (SetScreenVariable("phase", 1), Play("sound", s_dice))
+                        textbutton "摇骰" action (SetScreenVariable("phase", 1), Play("sound", s_dice))
                     else:
-                        textbutton "Roll" action (SetScreenVariable("phase", 2), Play("sound", s_dice))
+                        textbutton "摇骰" action (SetScreenVariable("phase", 2), Play("sound", s_dice))
 
 
 
@@ -6813,18 +6833,18 @@ screen challenge(name, diff, raw=False, bonus=0, opponent_bonus=0):
                 has vbox
 
                 if chal.opposed:
-                    text "Opponent " + chal.stat.capitalize() + ": " + str_int(diff + opponent_bonus) size 18
+                    text "对手 " + chal.stat.capitalize() + ": " + str_int(diff + opponent_bonus) size 18
                     text "" size 18
                     text ""
 
                     if phase >= 2:
-                        text "Roll: " + "{image=" + "img_dice" + str_int(chal.d_op) + "}" size 18
+                        text "摇骰: " + "{image=" + "img_dice" + str_int(chal.d_op) + "}" size 18
                         text ""
-                        text "Final Result: " + str_int(chal.score_op) size 18
+                        text "最终结果: " + str_int(chal.score_op) size 18
                     elif phase == 1:
-                        textbutton "Roll" action (SetScreenVariable("phase", 2), Play("sound", s_dice))
+                        textbutton "摇骰" action (SetScreenVariable("phase", 2), Play("sound", s_dice))
                 else:
-                    text "Difficulty: " + str_int(diff) size 18
+                    text "难度: " + str_int(diff) size 18
 
         if phase >= 2:
             text ""
@@ -6943,12 +6963,12 @@ screen resource_exchange():
 
         frame xsize 250 yanchor 1.0 ypos 0.2:
             has vbox
-            text "Weekly trade information" size 14 italic True color c_brown
+            text "每周贸易信息" size 14 italic True color c_brown
             hbox spacing 3 box_wrap True:
                 for r in calendar.scarce:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip "There is a shortage of " + r.capitalize() + " this week. Value is going up.":
+                        button background None action NullAction() tooltip "本周" + r.capitalize() + "缺货. 价值正在上升.":
                             has hbox spacing 3
                             add resource.pic.get(20, 20) yalign 0.5
                             text "▲" size 16 color c_emerald yalign 0.5
@@ -6956,7 +6976,7 @@ screen resource_exchange():
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip r.capitalize() + " is plentiful this week. Value is going down.":
+                        button background None action NullAction() tooltip "本周" + r.capitalize() + "泛滥成灾. 价值正在下降.":
                             has hbox spacing 3
                             add resource.pic.get(20, 20) yalign 0.5
                             text "▼" size 16 color c_red yalign 0.5
@@ -6970,14 +6990,14 @@ screen resource_exchange():
 
 #            text(str(t))
 
-            text "Your resources" size 14 italic True color c_brown
+            text "你的资源" size 14 italic True color c_brown
 
             button xfill True ysize 60 action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "Use your gold to buy resources":
                 selected_background c_emerald
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", 40, 40) yalign 0.5
                 hbox spacing 6 xfill True yalign 0.5:
-                    text "Gold" size 18
+                    text "金币" size 18
                     text '{:,}'.format(round_int(MC.gold)) xalign 1.0 size 16
 
 
@@ -6998,7 +7018,7 @@ screen resource_exchange():
                                 elif r in calendar.scarce:
                                     text "▲" size 14 yalign 0.5
                             hbox spacing 6 xfill True:
-                                text "In storage: " size 14 yalign 1.0
+                                text "库存: " size 14 yalign 1.0
                                 text str(MC.resources[resource.name]) xalign 1.0 size 16
 
         # Right frame
@@ -7008,12 +7028,12 @@ screen resource_exchange():
             frame xsize 250 xalign 1.0 ypos 0.2:
                 has vbox
 
-                text "Market resources" size 14 italic True color c_brown
+                text "市场资源" size 14 italic True color c_brown
 
                 button xfill True ysize 60:
                     if "gold" != source:
                         action (SetScreenVariable("target", "gold"), SetScreenVariable("target_name", "gold"), SetScreenVariable("target_nb", 0), SelectedIf("gold"==target))
-                        tooltip "Sell your " + source_name + " for gold"
+                        tooltip "卖掉你的" + source_name + "换取金币"
                         selected_background c_emerald
 
                     hbox xfill True yfill True spacing 10:
@@ -7024,9 +7044,9 @@ screen resource_exchange():
                                 hbox spacing 6:
                                     $ rate = get_exchange_rate(source, "gold")
                                     if rate < 1:
-                                        $ text2 = "Get 1 for " + str(round_up(1/rate))
+                                        $ text2 = "" + str(round_up(1/rate)) + "换1"
                                     else:
-                                        $ text2 = "Get " + str(round_up(rate)) + " for 1"
+                                        $ text2 = "1换" + str(round_up(rate)) + ""
 
                                     text text2 size 14
                                     add source.pic.get(16, 16)
@@ -7039,7 +7059,7 @@ screen resource_exchange():
                         button xfill True ysize 60:
                             if resource != source:
                                 action (SetScreenVariable("target", resource), SetScreenVariable("target_name", resource.name), SetScreenVariable("target_nb", 0), SelectedIf(resource==target))
-                                tooltip "Trade " + r +" in exchange for your " + source_name
+                                tooltip "用" + r +"换取你的" + source_name
                                 selected_background c_emerald
                             hbox xfill True yfill True spacing 10:
                                 add resource.pic.get(40, 40) yalign 0.5
@@ -7054,9 +7074,9 @@ screen resource_exchange():
                                         hbox spacing 6:
                                             $ rate = get_exchange_rate(source, resource)
                                             if rate < 1:
-                                                $ text2 = "Get 1 for " + str(round_up(1/rate))
+                                                $ text2 = "" + str(round_up(1/rate)) + "换1"
                                             else:
-                                                $ text2 = "Get " + str(round_up(rate)) + " for 1"
+                                                $ text2 = "1换" + str(round_up(rate)) + ""
 
                                             text text2 size 14
                                             if source == "gold":
@@ -7121,17 +7141,17 @@ screen resource_exchange():
                         action (SetScreenVariable("source_nb", source_nb-1), SetScreenVariable("target_nb", round_up((source_nb-1)*rate)))
 
                 if source == "gold":
-                    $ text1 = "Buy"
+                    $ text1 = "买"
                 else:
-                    $ text1 = "Trade"
+                    $ text1 = "交换"
 
                 textbutton text1 xalign 0.5 xsize 0.8 ysize 65:
                     if source == "gold" and MC.gold >= source_nb:
                         action Return(("gold", target_name, source_nb, target_nb))
-                        tooltip "Buy " + str(target_nb) + " " + target_name + " for " + str(source_nb) + " " + target_name
+                        tooltip "买" + str(target_nb) + "份" + target_name + "得到" + str(source_nb) + " " + target_name
                     elif MC.resources[source_name] >= source_nb:
                         action Return((source_name, target_name, source_nb, target_nb))
-                        tooltip "Trade " + str(source_nb) + " " + source_name + " for " + str(target_nb) + " " + target_name
+                        tooltip "交换" + str(source_nb) + "份" + source_name + "得到" + str(target_nb) + " " + target_name
 
                 textbutton "+" xsize 65 ysize 65 text_size 32 xalign 1.0:
                     if rate < 1:
@@ -7151,8 +7171,8 @@ screen invisible_button():
 
     zorder 99
 
-    key "K_UP" action Function(renpy.notify, "Your precious keyboard can't save you now!")
-    key "K_DOWN" action Function(renpy.notify, "Your precious keyboard can't save you now!")
+    key "K_UP" action Function(renpy.notify, "你宝贵的键盘现在救不了你!")
+    key "K_DOWN" action Function(renpy.notify, "你宝贵的键盘现在救不了你!")
 
     vbox:
         style "menu"
@@ -7192,7 +7212,7 @@ screen mods():
 
         xfill True
 
-        text "Mod Setup" color c_brown
+        text "Mod安装" color c_brown
 
         hbox:
             viewport xsize 200:
@@ -7237,9 +7257,9 @@ screen mods():
                         add selected_mod.pic.get(320, 320)
                     text ""
                     if selected_mod.active:
-                        text "Active Mod" bold True italic True color c_emerald
+                        text "已激活的Mod" bold True italic True color c_emerald
                     else:
-                        text "Inactive Mod" italic True color c_darkgrey
+                        text "未激活的Mod" italic True color c_darkgrey
 
                     text ""
                     text selected_mod.description size 14 color c_brown
@@ -7248,9 +7268,9 @@ screen mods():
 
                     hbox:
                         if selected_mod.active:
-                            textbutton "Deactivate Mod" action renpy.curried_invoke_in_new_context(selected_mod.deactivate)
+                            textbutton "解除激活Mod" action renpy.curried_invoke_in_new_context(selected_mod.deactivate)
                         else:
-                            textbutton "Activate Mod" action renpy.curried_invoke_in_new_context(selected_mod.activate)
+                            textbutton "激活Mod" action renpy.curried_invoke_in_new_context(selected_mod.activate)
 
                         # textbutton "Reset Mod" action renpy.curried_invoke_in_new_context(reset_mod, selected_mod)
 
@@ -7281,7 +7301,7 @@ screen free_girl_interact(girl):
 
         has vbox spacing 3
 
-        text "City girl interactions" size 18 bold True
+        text "城市女孩互动" size 18 bold True
 
         text "" size 14
 
@@ -7289,7 +7309,7 @@ screen free_girl_interact(girl):
             $ choices = ["chat", "give", "flirt", "fun"]
 
             for cap in choices:
-                textbutton cap.capitalize() action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 14 xpadding 6 ypadding 6 text_selected_bold True xsize 60
+                textbutton interact_dict_name[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
 
         for cat in free_interact_dict[menu_choice]:
 
@@ -7370,9 +7390,9 @@ screen girl_interact(girl, free=False):
         xalign 1.0
         ypos 0.1
 
-        has vbox spacing 3
+        has vbox spacing 2
 
-        text "Girl interactions" size 18 bold True
+        text "女孩互动" size 18 bold True
 #        text "Every interaction costs 1 AP" size 14 italic True
         text "" size 14
 
@@ -7385,7 +7405,7 @@ screen girl_interact(girl, free=False):
                 $ choices = ["chat", "train", "magic", "react", "misc"]
 
             for cap in choices:
-                textbutton cap.capitalize() action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 14 xpadding 6 ypadding 6 text_selected_bold True xsize 60
+                textbutton interact_dict_name[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
 
         for cat in interact_dict[menu_choice]:
 
@@ -7402,29 +7422,29 @@ screen girl_interact(girl, free=False):
 
                             textbutton topic.caption + get_act_weakness_symbol(girl, topic.act) background None text_size 13 text_color c_white xsize 100 text_xalign 0.0 action NullAction():
                                 if girl.personality_unlock[topic.act]:
-                                    tooltip "You know that [girl.name] has " + girl.get_reaction_to_act(topic.act) + " for " + topic.act + " acts."
+                                    tooltip "你知道[girl.name]有" + girl.get_reaction_to_act(topic.act) + "的" + topic.act + "行为."
                                 else:
-                                    tooltip "You do not know [girl.name]'s reaction to " + topic.act + " acts."
+                                    tooltip "你不知道[girl.name]对" + topic.act + "有什么反应."
 
                             if topic.type == "train":
-                                textbutton "Talk" background None text_size 13:
+                                textbutton "谈话" background None text_size 13:
                                     if topic.is_available(girl, "lecture", free)[0]:
                                         text_hover_underline True
                                         action Return([topic, "lecture"])
-                                        tooltip "Lecture [girl.name] about the virtues of " + topic.act + " acts (soft).\nCosts " + str(normal_cost) + "{image=img_AP}."
+                                        tooltip "给[girl.name]讲讲" + topic.act + "有多美好.\n费用" + str(normal_cost) + "{image=img_AP}."
                                     else:
                                         text_color c_grey
                                         action NullAction()
                                         tooltip topic.is_available(girl, "lecture", free)[1]
 
-                            textbutton "Train" background None text_size 13:
+                            textbutton "训练" background None text_size 13:
                                 if topic.is_available(girl, "train", free)[0]:
                                     text_hover_underline True
                                     action Return([topic, "train"])
                                     if topic.gold_cost:
-                                        tooltip "Train [girl.name] for " + topic.act + " acts.\nCosts " + str(normal_cost) + "{image=img_AP} and " + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                        tooltip "对[girl.name]的" + topic.act + "进行训练.\n费用" + str(normal_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
                                     else:
-                                        tooltip "Train [girl.name] for " + topic.act + " acts.\nCosts " + str(normal_cost) + "{image=img_AP}."
+                                        tooltip "对[girl.name]的" + topic.act + "进行训练.\n费用 " + str(normal_cost) + "{image=img_AP}."
                                 else:
                                     text_color c_grey
                                     action NullAction()
@@ -7433,18 +7453,18 @@ screen girl_interact(girl, free=False):
                             $ pos_reaction, neg_reaction = girl.test_weakness(topic.act)
 
                             if not (pos_reaction or neg_reaction):
-                                $ ttip = event_color["a little bad"] % "Advanced training is available, but she isn't particularly sensitive to this sex act."
+                                $ ttip = event_color["a little bad"] % "可以进行高级培训，但她对这种性行为并不特别敏感."
                             else:
-                                $ ttip = "You can use advanced training to find out more about her fixations and use them for faster training."
+                                $ ttip = "你可以使用高级训练来找出更多关于她的定点，并利用它们进行更快的训练."
 
                             textbutton "Advanced" background None text_size 13:
                                 if topic.is_available(girl, "advanced", free)[0]:
                                     text_hover_underline True
                                     action Return([topic, "advanced"])
                                     if topic.gold_cost:
-                                        tooltip ttip + "\nCosts " + str(adv_cost) + "{image=img_AP} and " + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                        tooltip ttip + "\n费用 " + str(adv_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
                                     else:
-                                        tooltip ttip + "\nCosts " + str(adv_cost) + "{image=img_AP}."
+                                        tooltip ttip + "\n费用 " + str(adv_cost) + "{image=img_AP}."
                                 else:
                                     text_color c_grey
                                     action NullAction()
@@ -7474,7 +7494,7 @@ screen girl_interact(girl, free=False):
 
         if menu_choice == "misc" and girl.init_dict["background story/interact_prompt"]:
             text ""
-            text "OTHER" size 14
+            text "其他" size 14
 
             python:
                 custom_caption = girl.init_dict["background story/interact_prompt"][0]
@@ -7524,11 +7544,11 @@ screen h_content():
             style_group "pref"
             has vbox xfill True
 
-            label _("Content settings")
+            label _("内容设置")
 
             # Objectionable content
 
-            text "\nActivate or deactivate objectionable content (won't affect story scenes)" color c_brown italic True size 16
+            text "\n激活或停用令人反感的内容(不会影响故事场景)" color c_brown italic True size 16
 
             if "beast" in persistent.forbidden_tags:
                 $ text1 = "OFF"
@@ -7565,66 +7585,66 @@ screen h_content():
 
             text ""
 
-            label _("Picture settings")
+            label _("图片设置")
 
             # Missing Picture algorithm
 
-            text "\nChoose the behavior of stock (default) pictures and girl pack pictures" color c_brown italic True size 16
+            text "\n(默认)图片库和女孩图片包的选项" color c_brown italic True size 16
 
             if persistent.use_stock_pictures["missing"]:
-                $ text1 = "When a picture is missing:\nUse stock pictures"
+                $ text1 = "找不到可用图片时: 使用默认图片库"
             else:
-                $ text1 = "When a picture is missing:\nUse another picture from the girl pack"
+                $ text1 = "找不到可用图片时: 随机一位女孩图片包"
 
             if persistent.use_stock_pictures["low"]:
-                $ text2 = "When the picture count is low:\nMix stock and girl pack pictures"
+                $ text2 = "当图片数量太少时: 混合使用图库和女孩图片包"
             else:
-                $ text2 = "When the picture count is low:\nOnly use girl pack pictures"
+                $ text2 = "当图片数量太少时: 只使用该女孩图片包"
 
             textbutton text1 text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleDict(persistent.use_stock_pictures, "missing")
             textbutton text2 text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleDict(persistent.use_stock_pictures, "low")
 
             # Advanced Picture algorithm
 
-            text "\nChoose the behavior of advanced training pictures" color c_brown italic True size 16
+            text "\n高级培训图片的选项" color c_brown italic True size 16
             if persistent.fix_pic_balance == fix_pic_balance_variety:
-                textbutton "Advanced training pictures: Better variety" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "fix_pic_balance", fix_pic_balance_accuracy)
+                textbutton "高级培训图片: 种类更丰富" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "fix_pic_balance", fix_pic_balance_accuracy)
             else:
-                textbutton "Advanced training pictures: Better accuracy" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "fix_pic_balance", fix_pic_balance_variety)
+                textbutton "高级培训图片: 更好的精确度" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "fix_pic_balance", fix_pic_balance_variety)
 
             # Group/Bis Picture algorithm
 
-            text "\nChoose the behavior of group and bisexual pictures" color c_brown italic True size 16
-            textbutton {True: "Group sex: Mix group pictures with regular pictures", False: "Group sex: Only use group sex pictures"}[persistent.mix_group_pictures] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "mix_group_pictures")
-            textbutton {True: "Bisexual sex: Mix bisexual pictures with regular pictures", False: "Bisexual sex: Only use bisexual pictures"}[persistent.mix_bis_pictures] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "mix_bis_pictures")
+            text "\n群体和百合图片的行为选项" color c_brown italic True size 16
+            textbutton {True: "群交: 将群交图片与普通图片混合", False: "群交: 只使用群交图片"}[persistent.mix_group_pictures] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "mix_group_pictures")
+            textbutton {True: "百合: 将百合图片与普通图片混合", False: "百合: 只使用百合图片"}[persistent.mix_bis_pictures] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "mix_bis_pictures")
 
             # Naked girls' settings
 
 
-            text "\nChoose the behavior of slavemarket girls' pictures" color c_brown italic True size 16
-            textbutton {True: "Allow naked pictures in the slavemarket", False: "No naked pictures in the market"}[persistent.naked_girls_in_slavemarket] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "naked_girls_in_slavemarket")
+            text "\n奴隶市场女孩图片的行为选项" color c_brown italic True size 16
+            textbutton {True: "允许奴隶市场上的裸体图片", False: "不允许奴隶市场上的裸体图片"}[persistent.naked_girls_in_slavemarket] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "naked_girls_in_slavemarket")
 
-            text "\nChoose the behavior of free girls' pictures" color c_brown italic True size 16
-            textbutton {True: "Allow naked pictures in the city (naturist trait)", False: "No naked pictures in the city"}[persistent.naked_girls_in_town] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "naked_girls_in_town")
+            text "\n自由女孩图片的行为选项" color c_brown italic True size 16
+            textbutton {True: "允许在城市中出现裸体图片(自然人特质)", False: "不允许在城市中出现裸体图片"}[persistent.naked_girls_in_town] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "naked_girls_in_town")
 
             text ""
 
-            label _("UI settings")
+            label _("UI设置")
 
             # Pack ratings
 
-            text "\nDisplay pack rating on girl profiles" color c_brown italic True size 16
+            text "\n在奴隶市场或城市中显示女孩图片包等级" color c_brown italic True size 16
 
             if persistent.show_girlpack_rating:
                 $ text1 = persistent.show_girlpack_rating
             else:
                 $ text1 = "OFF"
 
-            textbutton "Show Girl Pack Rating: [text1]" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "show_girlpack_rating", get_next([None, "In slavemarket", "In market and city", "Everywhere"], persistent.show_girlpack_rating, loop=True))
+            textbutton "显示女孩图片包等级: [text1]" text_size 18 xalign 0.0 xsize 0.8 xfill True action SetField(persistent, "show_girlpack_rating", get_next([None, "In slavemarket", "In market and city", "Everywhere"], persistent.show_girlpack_rating, loop=True))
 
             # Show/Hide girl status
 
-            text "\nDisplay girl status icons" color c_brown italic True size 16
+            text "\n显示女孩状态图标" color c_brown italic True size 16
 
             default current_status = ""
 
@@ -7646,19 +7666,19 @@ screen h_content():
 
             # Badge settings
 
-            text "\nYour preferences for setting girl badges" color c_brown italic True size 16
-            textbutton {True: "Badges can be modified directly on girls' portraits", False: "Badges can only be modified on a girl's profile"}[persistent.badges_on_portraits] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "badges_on_portraits")
+            text "\n女孩徽章选项" color c_brown italic True size 16
+            textbutton {True: "徽章可以直接在女孩的立绘上修改", False: "徽章只能在女孩的个人资料中修改"}[persistent.badges_on_portraits] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "badges_on_portraits")
 
             # Night events settings
 
-            text "\nShow/Skip night events" color c_brown italic True size 16
+            text "\n显示/跳过晚上活动消息" color c_brown italic True size 16
 
             for ev_type in ["Normal", "Matchmaking", "Customer", "Level/Job/Rank up", "Health/Security", "Satisfaction report", "Farm", "Rest"]:
 
-                $ text1 = ev_type
+                $ text1 = settings_name[ev_type]
 
                 if ev_type != "Satisfaction report":
-                    $ text1 += " events"
+                    $ text1 += "事件"
 
                 if persistent.skipped_events[ev_type]:
                    $ text1 += ": OFF"
@@ -7669,17 +7689,17 @@ screen h_content():
 
             text ""
 
-            label _("Misc")
+            label _("杂项")
 
             # Naming options for clones
 
-            text "\nChoose naming options for non-original girls" color c_brown italic True size 16
+            text "\n为非原创的女孩选择命名方案" color c_brown italic True size 16
 
             $ switch_caption = {True: "YES", False: "NO"}
 
-            textbutton "Keep First Name: %s" % switch_caption[persistent.keep_firstname] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_firstname")
-            textbutton "Keep Last Name: %s" % switch_caption[persistent.keep_lastname] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_lastname")
-            textbutton "Use .ini cloning name settings (when available): %s" % switch_caption[persistent.gp_name_customization] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "gp_name_customization")
+            textbutton "保留名字: %s" % switch_caption[persistent.keep_firstname] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_firstname")
+            textbutton "保留姓氏: %s" % switch_caption[persistent.keep_lastname] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_lastname")
+            textbutton "使用.ini名称设定(有条件时): %s" % switch_caption[persistent.gp_name_customization] text_size 18 xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "gp_name_customization")
 
             # End of menu
 
@@ -7803,7 +7823,7 @@ label girlpack_menu:
         "Girl pack mix":
 
             menu:
-                "Would you like to see girl ratings (this may take some time if you have many girl packs)?"
+                "你想看看女孩的评分吗 (如果你有许多女孩的包，这可能需要一些时间)?"
 
                 "Yes":
                     call screen girl_mix(True) nopredict
@@ -7836,7 +7856,7 @@ screen girl_mix(show_rating=False):
     frame xfill True yfill True:
         has vbox
 
-        text "Girl Mix" bold True drop_shadow (1, 1) font "maturasc.TTF" xpos 6
+        text "女生组合" bold True drop_shadow (1, 1) font "maturasc.TTF" xpos 6
 
         hbox box_wrap True:
             for mix_name in sorted(persistent.girl_mix):
@@ -7844,7 +7864,7 @@ screen girl_mix(show_rating=False):
             textbutton "+" action renpy.curried_invoke_in_new_context(add_mix) text_size 18
 
         text "" size 12
-        text "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'" size 14 color c_brown xpos 6
+        text "点击一个女孩的个人资料，以添加或删除这个女孩的组合.\n你可以通过点击'+'来创建一个新的组合" size 14 color c_brown xpos 6
 
         text "" size 12
 
@@ -7882,18 +7902,18 @@ screen girl_mix(show_rating=False):
                                 text get_name(gp, full=True) drop_shadow (1, 1) font "maturasc.TTF" size 18
                                 text "by " + creator_dict[gp] drop_shadow (1, 1) size 14 italic True
                                 if show_rating:
-                                    text "{size=14}Rating: {/size}" + rating size 18 drop_shadow (1, 1) # drop_shadow_color c_white
+                                    text "{size=14}评价: {/size}" + rating size 18 drop_shadow (1, 1) # drop_shadow_color c_white
                     if show_rating:
                         text rtg_text size 14 yalign 0.5 color c_darkbrown
         text "" size 14
 
         hbox:
-            textbutton "Delete mix" text_size 18:
+            textbutton "删除组合" text_size 18:
                 if persistent.active_mix != "default":
                     action renpy.curried_invoke_in_new_context(delete_mix, persistent.active_mix)
-            textbutton "Add all" action Function(add_all_to_mix, persistent.active_mix) text_size 18
-            textbutton "Remove all" action Function(remove_all_from_mix, persistent.active_mix) text_size 18
-            textbutton "Back" action Return() text_size 18
+            textbutton "添加全部" action Function(add_all_to_mix, persistent.active_mix) text_size 18
+            textbutton "删除全部" action Function(remove_all_from_mix, persistent.active_mix) text_size 18
+            textbutton "返回" action Return() text_size 18
 
 
 ## ACHIEVEMENT SCREENS ##
@@ -7947,19 +7967,19 @@ screen achievements(main=False):
 
                         if selected_achievement.level < selected_achievement.level_nb:
                             vbox yalign 0.5:
-                                text "Next unlock:" italic True size 20
+                                text "下个解锁:" italic True size 20
                                 text selected_achievement.get_description(_next=True) xalign 0.0 size 20 font "vivaldii.TTF" color c_brown
 
             hbox xalign 1.0 yalign 0.0:
 
                 if not confirm_reset:
-                    textbutton "Reset achievements" text_size 14 ysize 36 xalign 0.2 yalign 1.0:
+                    textbutton "重置成就" text_size 14 ysize 36 xalign 0.2 yalign 1.0:
                         action SetScreenVariable("confirm_reset", True)
                 else:
-                    textbutton "Reset achievements (%s)" % (event_color["bad"] % "CONFIRM") text_size 14 ysize 36 xalign 0.0 yalign 0.0:
+                    textbutton "重置成就 (%s)" % (event_color["bad"] % "CONFIRM") text_size 14 ysize 36 xalign 0.0 yalign 0.0:
                         action (Function(reset_achievements), SetScreenVariable("confirm_reset", False))
 
-                textbutton "Back"  ysize 36:
+                textbutton "返回"  ysize 36:
                     if main:
                         action ShowMenu("galleries")
                     else:
@@ -7995,7 +8015,7 @@ screen contracts(contracts, free=False):
     frame xalign 0.5 yalign 0.5:
         has vbox
 
-        text "Choose a contract" xalign 0.5 yalign 0.5 color c_brown
+        text "选择合同" xalign 0.5 yalign 0.5 color c_brown
 
         text "" size 14
 
@@ -8010,7 +8030,7 @@ screen contracts(contracts, free=False):
 
         text "" size 14
 
-        textbutton "Skip" action Return("back") xalign 0.5 yalign 0.5
+        textbutton "跳过" action Return("back") xalign 0.5 yalign 0.5
 
 screen contract_tab(contract, x=320, active=False):
 
@@ -8029,7 +8049,7 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "The " + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
+                text "" + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
                 text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
 
             vbox spacing 3:
@@ -8040,7 +8060,7 @@ screen contract_tab(contract, x=320, active=False):
             # text "" size 14
 
             vbox spacing 6:
-                text "Tasks" size 16 bold True color c_prune
+                text "任务" size 16 bold True color c_prune
 
                 for tsk in contract.tasks:
                     vbox spacing 3 xpos 0.02:
@@ -8049,12 +8069,12 @@ screen contract_tab(contract, x=320, active=False):
                             text req size 13 color c_brown
 
             vbox spacing 3:
-                text "Bonus requirement" size 16 bold True color c_prune
+                text "报酬要求" size 16 bold True color c_prune
                 text contract.get_special_description() size 13 color c_brown
 
             hbox:
-                text "Reward: " size 16 bold True color c_prune
-                text "%s gold" % str(contract.get_value()) size 16 bold True color c_darkgold
+                text "报酬: " size 16 bold True color c_prune
+                text "%s金币" % str(contract.get_value()) size 16 bold True color c_darkgold
 
 
 screen pick_girl(girls, nb, contract=None):
@@ -8065,7 +8085,7 @@ screen pick_girl(girls, nb, contract=None):
             if contract:
                 use contract_tab(contract, x=400)
             use girl_select(girls, True)
-            textbutton "Send" action Return(selected_girl) xalign 0.85 ypos -0.25
+            textbutton "派出" action Return(selected_girl) xalign 0.85 ypos -0.25
 
 
 screen contract_result(contract, x=450):
@@ -8078,7 +8098,7 @@ screen contract_result(contract, x=450):
         has vbox spacing 12
 
         vbox spacing 3:
-            text "The " + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
+            text "" + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
             text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
 
         vbox spacing 3:
@@ -8089,7 +8109,7 @@ screen contract_result(contract, x=450):
         # text "" size 14
 
         vbox spacing 9:
-            text "Tasks" size 16 bold True color c_prune
+            text "任务" size 16 bold True color c_prune
 
             for tsk in contract.tasks:
                 hbox:
@@ -8099,22 +8119,22 @@ screen contract_result(contract, x=450):
                             text req size 13 color c_brown xpos 0.02
                     if t >= contract.tasks.index(tsk) + 1:
                         if tsk.result:
-                            text str_int(tsk.value) + " gold" color c_darkgold yalign 0.5 size 13 at contract_result_transform
+                            text str_int(tsk.value) + "金币" color c_darkgold yalign 0.5 size 13 at contract_result_transform
                         else:
-                            text "{color=[c_red]}{i}Failed{/i}{/color}" yalign 0.5 size 13 at contract_result_transform
+                            text "{color=[c_red]}{i}失败{/i}{/color}" yalign 0.5 size 13 at contract_result_transform
 
         hbox:
             vbox xsize 320 spacing 3:
-                text "Bonus requirement" size 16 bold True color c_prune
+                text "报酬要求" size 16 bold True color c_prune
                 text contract.get_special_description() size 13 color c_brown
             if t >= len(contract.tasks) + 1:
                 if contract.special_bonus != 1.0:
-                    text str(contract.get_special_value()) + " gold" color c_darkgold yalign 0.5 size 13 at contract_result_transform
+                    text str(contract.get_special_value()) + "金币" color c_darkgold yalign 0.5 size 13 at contract_result_transform
                 else:
-                    text "{i}Missing{/i}" color c_lightred yalign 0.5 size 13 at contract_result_transform
+                    text "{i}失踪{/i}" color c_lightred yalign 0.5 size 13 at contract_result_transform
 
         vbox spacing 6:
-            text "Score" size 16 bold True color c_prune
+            text "分数" size 16 bold True color c_prune
             hbox:
                 text ""
                 for i in [tsk for tsk in contract.tasks if tsk.result]:
@@ -8124,9 +8144,9 @@ screen contract_result(contract, x=450):
                     text "{image=img_star}" at contract_result_transform
 
         hbox:
-            text "Reward: " size 16 bold True color c_prune
+            text "报酬: " size 16 bold True color c_prune
 
-            text "%s gold" % min(displayed_gold, earned_gold) size 16 bold True:
+            text "%s金币" % min(displayed_gold, earned_gold) size 16 bold True:
                 if earned_gold > 0:
                     color c_darkgold
                 else:
@@ -8161,14 +8181,14 @@ screen auction_brothel(name, price):
         spacing 20
 
         add brothel.get_pic(320, 320) xalign 0.5
-        text "Sold %s for {b}%s{/b} {image=img_gold}" % (name, '{:,}'.format(price)) color c_emerald size 16 xalign 0.5 yalign 0.5
+        text "出售%s给{b}%s{/b} {image=img_gold}" % (name, '{:,}'.format(price)) color c_emerald size 16 xalign 0.5 yalign 0.5
 
 
 screen goal_ttip():
 
     frame xalign 0.5 yalign 0.5 xsize 0.5 xpadding 20 ypadding 20 background c_ui_brown:
         has vbox
-        text "{image=tb goal} Your Goals" size 28 color c_darkbrown bold True
+        text "{image=tb goal} 你的目标" size 28 color c_darkbrown bold True
         text ""
 
         for cat, goal_desc in game.get_goals():

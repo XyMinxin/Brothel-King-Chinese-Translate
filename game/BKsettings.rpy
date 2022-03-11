@@ -39,9 +39,11 @@ init -4 python:
     max_item_shown = 30
 
 #### TRANSLATION OPTIONS ####
+#### 翻译 ####
 
     ## Edit this dictionary to change the stat names that are displayed (change the right-hand text)
 
+    ## 统计名词翻译 ##
     stat_name_dict = {
                         "Beauty" : "美貌",
                         "Body" : "身材",
@@ -56,6 +58,262 @@ init -4 python:
                         "Anal" : "肛交",
                         "Fetish" : "皮绳愉虐",
                         "Energy" : "耐力",
+                    }
+
+    ## 中文翻译 ##
+    chinese_name = {
+                    ## 职业名称 ##
+                    "Waitress" : "服务员",
+                    "waitress" : "服务员",
+                    "Dancer" : "舞娘",
+                    "dancer" : "舞娘",
+                    "Masseuse" : "按摩师",
+                    "masseuse" : "按摩师",
+                    "Geisha" : "艺伎",
+                    "geisha" : "艺伎",
+                    "Whore" : "妓女",
+                    "whore" : "妓女",
+
+                    ## 性行为 ##
+                    "Service" : "性服侍",
+                    "service" : "性服侍",
+                    "Sex" : "性交",
+                    "sex" : "性交",
+                    "Anal" : "肛交",
+                    "anal" : "肛交",
+                    "Fetish" : "皮绳愉虐",
+                    "fetish" : "皮绳愉虐",
+                    "Naked" : "露出",
+                    "naked" : "露出",
+                    "Group" : "群交",
+                    "group" : "群交",
+                    "Bisexual" : "百合",
+                    "bisexual" : "百合",
+
+                    ## 装备栏位 ##
+                    "Hands" : "手持",
+                    "hands" : "手持",
+                    "Accessory" : "配饰",
+                    "accessory" : "配饰",
+                    "Misc" : "杂项",
+                    "misc" : "杂项",
+                    "Body" : "身体",
+                    "body" : "身体",
+                    "Finger" : "手",
+                    "finger" : "手",
+                    "Neck" : "颈部",
+                    "neck" : "颈部",
+
+                    ## 农场相关 ##
+                    "Refused" : "拒绝",
+                    "refused" : "拒绝",
+                    "Resisted" : "抵制",
+                    "resisted" : "抵制",
+                    "Accepted" : "接受",
+                    "accepted" : "接受",
+                    "Soft" : "温和",
+                    "soft" : "温和",
+                    "Hard" : "努力",
+                    "hard" : "努力",
+                    "Hardest" : "强硬",
+                    "hardest" : "强硬",
+                    "Libido" : "照看仆役",
+                    "libido" : "照看仆役",
+                    "Sensitivity" : "服侍Gizel",
+                    "sensitivity" : "服侍Gizel",
+                    "Obedience" : "打扫农场",
+                    "obedience" : "打扫农场",
+                    "Constitution" : "锻炼身体",
+                    "constitution" : "锻炼身体",
+                    "Rest" : "休息",
+                    "rest" : "休息",
+                    "Conservative" : "保守",
+                    "conservative" : "保守",
+                    "Intensive" : "高强度",
+                    "intensive" : "高强度",
+                    "No rest" : "无休息",
+                    "no rest" : "无休息",
+                    "Reluctant" : "差强人意",
+                    "reluctant" : "差强人意",
+                    "Indifferent" : "淡然处之",
+                    "indifferent" : "淡然处之",
+                    "Interested" : "兴趣盎然",
+                    "interested" : "兴趣盎然",
+                    "Fascinated" : "神魂颠倒",
+                    "fascinated" : "神魂颠倒",
+                    "None" : "无",
+                    "none" : "无",
+                    "Auto" :"自动",
+                    "auto" :"自动",
+                    "种马棚" : "马厮",
+                    "stables" : "马厮",
+                    "兽栏" : "兽栏",
+                    "pig stall" : "兽栏",
+                    "怪物巢穴" : "怪兽巢穴",
+                    "monster den" : "怪兽巢穴",
+                    "车间" : "车间",
+                    "workshop" : "车间",
+                    "No training" : "未安排训练",
+                    "no training" : "未安排训练",
+
+                    ## 农场奴仆 ##
+                    "Stallion" : "种马",
+                    "stallion" : "种马",
+                    "Beast" : "野兽",
+                    "beast" : "野兽",
+                    "Monster" : "怪物",
+                    "monster" : "怪物",
+                    "Machine" :"机器",
+                    "machine" :"机器",
+
+                    ## ##
+                    "MC" : "玩家",
+                    "Girl" : "女孩",
+                    "girl" : "女孩",
+                    "Minion" : "农场仆从",
+                    "minion" : "农场仆从",
+                    "Gift" : "礼物",
+                    "gift" : "礼物",
+
+                    ## 选项 ##
+                    "Back" : "返回",
+                    "back" : "返回",
+                    "Hide" : "隐藏",
+                    "hide" : "隐藏",
+                    "Close" : "关闭",
+                    "close" : "关闭",
+                    "Next" : "下一个",
+                    "next" : "下一个",
+
+                    None : "（bug:chinese_name）没有值",
+                    }
+
+    ## 按钮名字 ##
+    button_name_dict = {
+                        "Chat" : "交谈",
+                        "chat" : "交谈",
+                        "Train" : "训练",
+                        "train" : "训练",
+                        "Magic" : "魔术",
+                        "magic" : "魔术",
+                        "React" : "行动",
+                        "react" : "行动",
+                        "Misc" : "杂项",
+                        "misc" : "杂项",
+                        }
+
+    ## 初始创建界面 ##
+    start_dict_name = {
+                        ## 职业 ##
+                        "Warrior" : "战士",
+                        "Wizard" : "法师",
+                        "Trader" : "奸商",
+
+                        ## 信仰 ##
+                        "Arios" : "阿里奥斯",
+                        "Shalia" : "莎莉娅",
+
+                        ## 玩家属性 ##
+                        "Strength" : "力量",
+                        "Spirit" : "法力",
+                        "Charisma" : "魅力",
+                        "Speed" : "耐力",
+
+                        ## 难度 ##
+                        "Very easy" : "非常容易",
+                        "very easy" : "非常容易",
+                        "Easy" : "容易",
+                        "easy" : "容易",
+                        "Normal" : "正常",
+                        "normal" : "正常",
+                        "Hard" : "困难",
+                        "hard" : "困难",
+                        "Insane" : "疯狂",
+                        "lnsane" : "疯狂",
+                        "Custom" : "定制",
+                        "custom" : "定制",
+
+                        None : "（bug:start_dict_name）没有值",
+                        }
+
+    ## 女孩偏好 ##
+    girl_preference_name = {
+                            "Refuses" : "抵制",
+                            "refuses" : "抵制",
+                            "Very reluctant" : "非常不情愿",
+                            "very reluctant" : "非常不情愿",
+                            "Reluctant" : "不情愿",
+                            "reluctant" : "不情愿",
+                            "A little reluctant" : "有点不情愿",
+                            "a little reluctant" : "有点不情愿",
+                            "Indifferent" : "不在意",
+                            "indifferent" : "不在意",
+                            "A little interested" : "有点感兴趣",
+                            "a little interested" : "有点感兴趣",
+                            "Interested" : "感兴趣",
+                            "interested" : "感兴趣",
+                            "Very interested" : "非常感兴趣",
+                            "very interested" : "非常感兴趣",
+                            "Fascinated" : "陶醉",
+                            "fascinated" : "陶醉",
+                            }
+
+
+    room_dict_name = {
+                    "Basic room" : "基本房间",
+                    "+Basic room+" : "+基本房间+",
+                    "*Basic room*" : "*基本房间*",
+                    "Standard room" : "标准房间",
+                    "+Standard room+" : "+标准房间+",
+                    "*Standard room*" : "*标准房间*",
+                    "Elegant room" : "优雅房间",
+                    "+Elegant room+" : "+优雅房间+",
+                    "*Elegant room*" : "*优雅房间*",
+                    "Noble suite" : "贵族套房",
+                    "+Royal suite+" : "+皇家套房+",
+                    "*Imperial suite*" : "*帝国套房*",
+                    }
+
+    ## 互动界面 ##
+    interact_dict_name = {
+                        "Chat" : "交谈",
+                        "chat" : "交谈",
+                        "Train" : "训练",
+                        "train" : "训练",
+                        "Magic" : "魔术",
+                        "magic" : "魔术",
+                        "React" : "行动",
+                        "react" : "行动",
+                        "Misc" : "杂项",
+                        "misc" : "杂项",
+                        "Fun" : "乐趣",
+                        "fun" : "乐趣",
+                        "Flirt" : "调戏",
+                        "flirt" : "调戏",
+                        "Give" : "给予",
+                        "give" : "给予",
+                        "DEBUG" : "DEBUG",
+                        }
+
+    ## 设置 ##
+    settings_name = {
+                    ## 一般选项 ##
+                    "Back" : "返回",
+                    "back" : "返回",
+                    "Hide" : "隐藏",
+                    "hide" : "隐藏",
+                    "Close" : "关闭",
+                    "close" : "关闭",
+
+                    ## 夜间活动设置 ##
+                    "Normal" : "一般",
+                    "Matchmaking" : "婚介",
+                    "Customer" : "顾客",
+                    "Level/Job/Rank up" : "等级/职业/品阶提升",
+                    "Health/Security" : "健康/安全",
+                    "Satisfaction report" : "满意报告",
+                    "Farm" : "农场",
+                    "Rest" : "休息",
                     }
 
 #### BALANCE / CHEATS ####
