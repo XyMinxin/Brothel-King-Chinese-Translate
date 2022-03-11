@@ -2508,7 +2508,7 @@ screen perks(girl):
 
         has vbox spacing 10
 
-        text girl.fullname + "'s perks" color c_orange xalign 0.5
+        text girl.fullname + "的技能" color c_orange xalign 0.5
 
         hbox:
             for archetype in archetype_list:
@@ -2522,7 +2522,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(75, 75), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text archetype[:3] + "\n" + archetype[4:] size 12 selected_bold True color c_darkgrey selected_color c_black
+                        text archetype_cnname[archetype] size 12 selected_bold True color c_darkgrey selected_color c_black
 
 #        background girl.archetypes[selected_archetype].get_pic().get(800, 640)
         button background None xalign 0.5 yalign 0.5 xsize 800 yfill True ypadding 0 right_padding 0 right_margin 0 action NullAction():
@@ -2579,7 +2579,6 @@ screen perks(girl):
                         yfill True
 
                         if selected_perk:
-
                             text selected_perk.name size 18 bold True yalign 0.0
 
                             frame xpadding 0 xmargin 0 ypadding 0 ymargin 0 background None xsize int(0.25*config.screen_width) xfill True xalign 0.5 yalign 0.5:
@@ -2589,28 +2588,28 @@ screen perks(girl):
                                 has vbox spacing 6
 
                                 if selected_perk.min_rank:
-                                    text "Rank " + rank_name[selected_perk.min_rank] + " perk" size 14 italic True yalign 0.0
+                                    text "等级 " + rank_name[selected_perk.min_rank] + " 技能" size 14 italic True yalign 0.0
                                 else:
-                                    text "Rank C perk" size 14 italic True yalign 0.0
+                                    text "等级 C 技能" size 14 italic True yalign 0.0
 
                                 text selected_perk.get_description() size 14 yalign 0.0
 
                         else:
                             vbox spacing 10:
-                                text selected_archetype size 18 bold True yalign 0.0
+                                text archetype_cnname[selected_archetype] size 18 bold True yalign 0.0
                                 text archetype_description[selected_archetype] size 16 yalign 0.0
                                 text ""
 
                                 if not girl.archetypes[selected_archetype].unlocked:
-                                    textbutton "Unlock\n{size=-6}(costs 2 perk points){/size}" xalign 0.5 xpadding 6 ypadding 6:
+                                    textbutton "解锁\n{size=-6}(花费2个技能点){/size}" xalign 0.5 xpadding 6 ypadding 6:
                                         if perk_points >= 2:
                                             action Return(("unlock", selected_archetype))
 
                         vbox xalign 0.5 yalign 1.0:
-                            text "Perk points: " + str(perk_points) color c_orange size 18 yalign 1.0 yfill True
+                            text "技能点数: " + str(perk_points) color c_orange size 18 yalign 1.0 yfill True
                             hbox:
-                                textbutton "Cancel" xalign 0.2 action Return(("cancel", ""))
-                                textbutton "Confirm" xalign 0.8:
+                                textbutton "取消" xalign 0.2 action Return(("cancel", ""))
+                                textbutton "确认" xalign 0.8:
                                     if new_perks:
                                         action Return(("commit", ""))
 
