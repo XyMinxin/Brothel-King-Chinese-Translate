@@ -1384,7 +1384,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         button:
                             background None
                             action NullAction()
-                            tooltip "You need to become her friend to see her level for this skill."
+                            tooltip "你需要成为她的朋友，才能看到她这个技能的等级."
                             keyboard_focus False
                             ysize 30
 

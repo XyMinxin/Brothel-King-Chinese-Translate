@@ -286,6 +286,13 @@ init -4 python:
                         "react" : "行动",
                         "Misc" : "杂项",
                         "misc" : "杂项",
+                        "Fun" : "乐趣",
+                        "fun" : "乐趣",
+                        "Flirt" : "调戏",
+                        "flirt" : "调戏",
+                        "Give" : "给予",
+                        "give" : "给予",
+                        "DEBUG" : "DEBUG",
                         }
 
     ## 设置 ##
