@@ -3821,9 +3821,6 @@ init -2 python:
             elif self.type == "increase satisfaction":
                 text1 += str(round_int(value)) + "客户满意度限"
 
-            if self.scope and not target.startswith(self.scope): # The second part handles the 'brothel rep' special case, although renaming brothel reputation to something different to avoid confusion with girl reputation would be a good long-term fix
-                text1 += self.scope + ""
-
             if self.scope:
                 #text1 += self.scope + ""
                 #text1 += self.scope + " "
