@@ -3821,9 +3821,6 @@ init -2 python:
             elif self.type == "increase satisfaction":
                 text1 += str(round_int(value)) + "客户满意度限"
 
-            if self.scope and not target.startswith(self.scope): # The second part handles the 'brothel rep' special case, although renaming brothel reputation to something different to avoid confusion with girl reputation would be a good long-term fix
-                text1 += self.scope + ""
-
             if self.scope:
                 #text1 += self.scope + ""
                 #text1 += self.scope + " "
@@ -6891,9 +6888,9 @@ init -2 python:
 
         """A new Moon appears every month. They have an effect on gameplay."""
 
-        def __init__(self, name, effects=None, description="", sound=None):
+        def __init__(self, name, pic, effects=None, description="", sound=None):
             self.name = name.capitalize() + "月"
-            self.pic = Picture(name + ".webp", "backgrounds/moons/" + name + ".webp")
+            self.pic = Picture(pic + ".webp", "backgrounds/moons/" + pic + ".webp")
             if effects == None: effects = []
             self.effects = effects
             self.short_description = get_description(self.name, self.effects, separator=": ")
