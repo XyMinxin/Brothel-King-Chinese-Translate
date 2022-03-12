@@ -212,6 +212,7 @@ init -4 python:
                         ## 信仰 ##
                         "Arios" : "阿里奥斯",
                         "Shalia" : "莎莉娅",
+                        "None" : "无神论",
 
                         ## 玩家属性 ##
                         "Strength" : "力量",
