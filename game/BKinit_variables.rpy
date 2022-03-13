@@ -2510,7 +2510,7 @@ init -4 python:
 #                      "accessory_5" : "Enchanted ",
 
                       "scroll_0" : "D级 ",
-                      "scroll_1" : "C型 ",
+                      "scroll_1" : "C级 ",
                       "scroll_2" : "B级 ",
                       "scroll_3" : "A级 ",
                       "scroll_4" : "S级 ",
