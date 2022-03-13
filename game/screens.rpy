@@ -595,6 +595,14 @@ screen preferences():
                         action Play("sound", config.sample_sound)
                         style "soundtest_button"
 
+            frame:
+                style_group "pref"
+                has vbox
+
+                label _("Language")
+                textbutton _("English") action Language(None)
+                textbutton _("Chinese") action Language("chinese")
+
             if config.has_voice:
                 frame:
                     style_group "pref"

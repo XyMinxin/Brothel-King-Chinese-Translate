@@ -61,7 +61,7 @@ init -4 python:
                     }
 
     ## 中文翻译 ##
-    chinese_name = {
+    chinese_name_dict_dict = {
                     ## 职业名称 ##
                     "Waitress" : "服务员",
                     "waitress" : "服务员",
@@ -185,7 +185,7 @@ init -4 python:
                     "Next" : "下一个",
                     "next" : "下一个",
 
-                    None : "（bug:chinese_name）没有值",
+                    None : "（bug:chinese_name_dict）没有值",
                     }
 
     ## 按钮名字 ##
@@ -203,7 +203,7 @@ init -4 python:
                         }
 
     ## 初始创建界面 ##
-    start_dict_name = {
+    start_name_dict = {
                         ## 职业 ##
                         "Warrior" : "战士",
                         "Wizard" : "法师",
@@ -233,12 +233,10 @@ init -4 python:
                         "lnsane" : "疯狂",
                         "Custom" : "定制",
                         "custom" : "定制",
-
-                        None : "（bug:start_dict_name）没有值",
                         }
 
     ## 女孩偏好 ##
-    girl_preference_name = {
+    preference_name_dict = {
                             "Refuses" : "抵制",
                             "refuses" : "抵制",
                             "Very reluctant" : "非常不情愿",
@@ -259,8 +257,21 @@ init -4 python:
                             "fascinated" : "陶醉",
                             }
 
+    ## 特质树名称 ##
+    archetype_name_dict = {
+                          "The Maid" : "女仆",
+                          "The Player" : "优伶",
+                          "The Model" : "模特",
+                          "The Courtesan" : "花魁",
+                          "The Escort" : "伴游",
+                          "The Fox" : "狐娘",
+                          "The Slut" : "荡妇",
+                          "The Bride" : "新娘"
+                          }
+
+
     ## 互动界面 ##
-    interact_dict_name = {
+    interact_name_dict = {
                         "Chat" : "交谈",
                         "chat" : "交谈",
                         "Train" : "训练",
@@ -280,8 +291,8 @@ init -4 python:
                         "DEBUG" : "DEBUG",
                         }
 
-    ## 设置 ##
-    settings_name = {
+    ## 设置名称 ##
+    settings_name_dict = {
                     ## 一般选项 ##
                     "Back" : "返回",
                     "back" : "返回",

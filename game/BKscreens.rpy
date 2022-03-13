@@ -535,11 +535,11 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     if context == "girls":
         if girl.job:
             if girl.job:
-                $ text1 = chinese_name[girl.job.capitalize()]
-                $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name[girl.job.capitalize()] + "."
+                $ text1 = chinese_name_dict[girl.job.capitalize()]
+                $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name_dict[girl.job.capitalize()] + "."
                 if girl.job in all_jobs and girl.work_whore:
                     $ text1 += "\n{color=[c_red]}妓女{/color}"
-                    $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name[girl.job.capitalize()] + "并兼职妓女."
+                    $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name_dict[girl.job.capitalize()] + "并兼职妓女."
         else:
             $ text1 = "无工作"
             $ but_ttip = "{b}" + girl.fullname + "{/b}正在休息."
@@ -994,16 +994,16 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     if farm.programs[girl].target != "no training":
                         hbox:
                             textbutton "训练模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定Gizel是否会强迫女孩们违心地训练.")
-                            text chinese_name[farm.programs[girl].mode.capitalize()] size 14 bold True
+                            text chinese_name_dict[farm.programs[girl].mode.capitalize()] size 14 bold True
 
                         hbox:
                             textbutton "训练设施:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有).")
-                            text chinese_name[farm.programs[girl].installation_name.capitalize()] size 14 bold True
+                            text chinese_name_dict[farm.programs[girl].installation_name.capitalize()] size 14 bold True
 
                     else:
                         hbox:
                             textbutton "待机模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么.")
-                            text chinese_name[farm.programs[girl].holding.capitalize()] size 14 bold True
+                            text chinese_name_dict[farm.programs[girl].holding.capitalize()] size 14 bold True
 
                     hbox:
                         if farm.programs[girl].duration >= 0:
@@ -1695,7 +1695,7 @@ screen assign_job(girl):
                     if brothel.has_room(job_room_dict[j]):
 #                         selected girl.job == j # What was this?
                         action Return(j)
-                        tooltip "安排" + girl.fullname + "作为" + chinese_name[j] + "工作"
+                        tooltip "安排" + girl.fullname + "作为" + chinese_name_dict[j] + "工作"
                         add "tb " + j idle_alpha 0.66 #selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
                         text j.capitalize() selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                         if j == "whore":
@@ -1958,11 +1958,11 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = "未分配工作. 这名女孩已被安排休息，等待进一步的指示."
 
             elif girl.work_whore:
-                $ text1 = chinese_name[girl.job.capitalize()][:4] + "./Wh."
+                $ text1 = chinese_name_dict[girl.job.capitalize()][:4] + "./Wh."
                 $ ttip = "工作和嫖娼. 改变这个女孩的工作或者让她休息."
 
             else:
-                $ text1 = chinese_name[girl.job.capitalize()]
+                $ text1 = chinese_name_dict[girl.job.capitalize()]
                 $ ttip = "改变这个女孩的工作或让她休息."
 
             textbutton text1 text_size 14 action (SetVariable("selected_girl", girl), Return("assign")) tooltip ttip + " ({i}快捷键: {u}j{/u}{/i})"
@@ -2343,7 +2343,7 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = chinese_name[girl.job.capitalize()]
+                                $ text1 = chinese_name_dict[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
                                 $ text1 = "没有工作"
@@ -2542,7 +2542,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(75, 75), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text archetype_cnname[archetype] size 12 selected_bold True color c_darkgrey selected_color c_black
+                        text archetype_name_dict[archetype] size 12 selected_bold True color c_darkgrey selected_color c_black
 
 #        background girl.archetypes[selected_archetype].get_pic().get(800, 640)
         button background None xalign 0.5 yalign 0.5 xsize 800 yfill True ypadding 0 right_padding 0 right_margin 0 action NullAction():
@@ -2616,7 +2616,7 @@ screen perks(girl):
 
                         else:
                             vbox spacing 10:
-                                text archetype_cnname[selected_archetype] size 18 bold True yalign 0.0
+                                text archetype_name_dict[selected_archetype] size 18 bold True yalign 0.0
                                 text archetype_description[selected_archetype] size 16 yalign 0.0
                                 text ""
 
@@ -3998,15 +3998,15 @@ screen brothel_options():
                             vbox ysize 0.5 spacing 6:
                                 for pref in target:
                                     hbox spacing 6:
-                                        textbutton chinese_name[pref.capitalize()] xsize 120 ypadding 5 text_size 18 yalign 0.5:
+                                        textbutton chinese_name_dict[pref.capitalize()] xsize 120 ypadding 5 text_size 18 yalign 0.5:
                                             action NullAction()
 
                                             if brothel.get_effect("allow", pref + " preference"):
-                                                tooltip "修改此设置可更改顾客对选择'" + chinese_name[pref] + "'服务的优先权提升" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
+                                                tooltip "修改此设置可更改顾客对选择'" + chinese_name_dict[pref] + "'服务的优先权提升" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
                                             else:
                                                 background "#CCB8A0"
                                                 text_color c_white
-                                                tooltip "你必须在木匠的马车上做相应的装饰或家具才能修改顾客选择'" + chinese_name[pref] + "'服务的优先权."
+                                                tooltip "你必须在木匠的马车上做相应的装饰或家具才能修改顾客选择'" + chinese_name_dict[pref] + "'服务的优先权."
 
                                         if brothel.get_effect("allow", pref + " preference"):
 
@@ -4182,7 +4182,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         vbox spacing 3:
                                             for girl in [g for g in girls if g.job == job]:
                                                 hbox ysize 25 yalign 0.5:
-                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + chinese_name[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
+                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + chinese_name_dict[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
                                                         add girl.portrait.get(25, 25) xalign 0.5 yalign 0.5
 
                                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True:
@@ -4209,7 +4209,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                         vbox spacing 3 box_wrap True:
                             for girl in girls:
                                 hbox ysize 25 yalign 0.5:
-                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + chinese_name[girl.job.capitalize()] + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
+                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + chinese_name_dict[girl.job.capitalize()] + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
                                         add girl.portrait.get(25, 25) yalign 0.5
 
                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True xmaximum 220:
@@ -4868,7 +4868,7 @@ screen shortcuts():
 
 screen close(act, name = "back"):
 
-    textbutton chinese_name[name]:
+    textbutton chinese_name_dict[name]:
 
         background None
 
@@ -5267,9 +5267,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + chinese_name[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + chinese_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + chinese_name[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + chinese_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -5401,7 +5401,7 @@ screen inventory(char, act):
                         $ eq = it
 
                 vbox:
-                    text chinese_name[slot.capitalize()] size 14 xalign 0.5
+                    text chinese_name_dict[slot.capitalize()] size 14 xalign 0.5
 
                     button xsize 60 ysize 60 xfill True yfill True xalign 0.5:
 
@@ -5628,7 +5628,7 @@ screen quick_start():
                             for stat in all_MC_stats:
                                 button background None action NullAction() tooltip MC_stat_description[stat]:
                                     vbox xsize 100:
-                                        text MC_stat_color[stat] % start_dict_name[stat.capitalize()] size 18 xalign 1.0 bold True
+                                        text MC_stat_color[stat] % start_name_dict[stat.capitalize()] size 18 xalign 1.0 bold True
                                         text MC_stat_color[stat] % int(MC.get_stat(stat, raw=True)) size 24 xanchor 1.0 xalign 1.0
 
                 # hbox spacing 20 xalign 0.5:
@@ -5770,7 +5770,7 @@ screen quick_start():
         frame xfill True xsize int(0.95*config.screen_width) ysize int(0.1*config.screen_height):
             hbox xfill True:
                 vbox spacing 10 xalign 0.5 yalign 0.5:
-                    text "{b}%s, %s{/b} ({b}%s{/b}) - {b}难度: %s{/b}" % (MC.name, start_dict_name[MC.playerclass], start_dict_name[str(MC.god)], start_dict_name[game.diff.capitalize()]) color c_prune size 18
+                    text "{b}%s, %s{/b} ({b}%s{/b}) - {b}难度: %s{/b}" % (MC.name, start_name_dict[MC.playerclass], start_name_dict[str(MC.god)], start_name_dict[game.diff.capitalize()]) color c_prune size 18
                     if game.achievements:
                         text "本次游戏将启用成就." italic True color c_emerald size 18
                     else:
@@ -5846,14 +5846,14 @@ screen main_character():
                     else:
                         $ text1 += "\n你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级."
 
-                    text (str(int(MC.prestige)) + "威望点") size 14 color c_brown
+                    text (str(int(MC.prestige)) + " 威望点") size 14 color c_brown
 
                 button:
                     background None
                     action NullAction()
                     hovered tt.Action("每升级你会得到1个技能点.")
 
-                    text str(MC.skill_points) + "技能点" size 14 color c_brown
+                    text str(MC.skill_points) + " 技能点" size 14 color c_brown
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox
@@ -6672,7 +6672,7 @@ screen sex_details(girl):
             text "工作意向" size 14 bold True xalign 0.5
 
             for act in extended_sex_acts:
-                text chinese_name[act.capitalize()] size 14 bold True
+                text chinese_name_dict[act.capitalize()] size 14 bold True
 
                 if debug_mode:
                     $ text1 = " (" + str(round_int(girl.preferences[act])) + ")"
@@ -6680,7 +6680,7 @@ screen sex_details(girl):
                     $ text1 = ""
 
                 if girl.personality_unlock[act]:
-                    text preference_color[girl.get_preference(act)] % girl_preference_name[girl.get_preference(act).capitalize()] + text1 size 14
+                    text preference_color[girl.get_preference(act)] % preference_name_dict[girl.get_preference(act).capitalize()] + text1 size 14
                 else:
                     text "未知" + text1 size 14 italic True
 
@@ -7309,7 +7309,7 @@ screen free_girl_interact(girl):
             $ choices = ["chat", "give", "flirt", "fun"]
 
             for cap in choices:
-                textbutton interact_dict_name[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
+                textbutton interact_name_dict[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
 
         for cat in free_interact_dict[menu_choice]:
 
@@ -7405,7 +7405,7 @@ screen girl_interact(girl, free=False):
                 $ choices = ["chat", "train", "magic", "react", "misc"]
 
             for cap in choices:
-                textbutton interact_dict_name[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
+                textbutton interact_name_dict[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size 16 xpadding 6 ypadding 6 text_selected_bold True xsize 60
 
         for cat in interact_dict[menu_choice]:
 
@@ -7675,7 +7675,7 @@ screen h_content():
 
             for ev_type in ["Normal", "Matchmaking", "Customer", "Level/Job/Rank up", "Health/Security", "Satisfaction report", "Farm", "Rest"]:
 
-                $ text1 = settings_name[ev_type]
+                $ text1 = settings_name_dict[ev_type]
 
                 if ev_type != "Satisfaction report":
                     $ text1 += "事件"
