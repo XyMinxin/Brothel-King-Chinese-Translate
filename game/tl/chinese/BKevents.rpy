@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-03-01 21:22
+# TODO: Translation updated at 2022-03-01 21:22
 
 # game/BKevents.rpy:105
 translate chinese before_main_menu_d6726edf:
@@ -16,7 +16,7 @@ translate chinese before_main_menu_fafcaa21:
 translate chinese new_moon_172e44d3:
 
     # "New moon" "{i}The [calendar.moon.name] is out.{/i} [calendar.moon.description]"
-    "New moon" "{i}The [calendar.moon.name] is out.{/i} [calendar.moon.description]"
+    "新月" "{i}[calendar.moon.name]过时了。{/i} [calendar.moon.description]"
 
 # game/BKevents.rpy:305
 translate chinese sill_checks_5f55122b:
@@ -58,7 +58,7 @@ translate chinese rank_message_c0db008a:
 translate chinese rank_message_dc9d8fdb:
 
     # sill "Would you like to learn about girl ranks and reputation?" nointeract
-    sill "Would you like to learn about girl ranks and reputation?" nointeract
+    sill "你想了解女孩的等级和声誉吗?"
 
 # game/BKevents.rpy:556
 translate chinese rank_message_baed337f:
@@ -94,19 +94,19 @@ translate chinese advance_to_chapter_1ef7a1d7_1:
 translate chinese run_away_d1b4784e:
 
     # sill sad "Master! [girl.fullname] has escaped!!!"
-    sill sad "Master! [girl.fullname] has escaped!!!"
+    sill sad "主人![girl.fullname]逃走了! ! !"
 
 # game/BKevents.rpy:780
 translate chinese run_away_47f409f7:
 
     # sill "What will you do?" nointeract
-    sill "What will you do?" nointeract
+    sill "你会怎么做?"
 
 # game/BKevents.rpy:799
 translate chinese run_away_6741bf48:
 
     # sill sad "It will be done."
-    sill sad "It will be done."
+    sill sad "一定会成功的。"
 
 # game/BKevents.rpy:812
 translate chinese run_away_6741bf48_1:
@@ -124,13 +124,13 @@ translate chinese run_away_6741bf48_2:
 translate chinese run_away_39ee0da0:
 
     # you "I will look for her myself."
-    you "I will look for her myself."
+    you "我自己去找她。"
 
 # game/BKevents.rpy:836
 translate chinese run_away_5894837b:
 
     # "She might reappear in a few days, somewhere in the city. You should look around."
-    "She might reappear in a few days, somewhere in the city. You should look around."
+    "过几天她可能会在城里的某个地方再出现。你应该四处看看。"
 
 # game/BKevents.rpy:846
 translate chinese run_away_39ee0da0_1:
@@ -148,97 +148,97 @@ translate chinese run_away_5894837b_1:
 translate chinese run_away_7bf33617:
 
     # you "I guess she didn't really belong here. Let her go."
-    you "I guess she didn't really belong here. Let her go."
+    you "我猜她不属于这里。让她走了。"
 
 # game/BKevents.rpy:878
 translate chinese found_runaway_girl_18334eca:
 
     # "The sisters have brought you [girl.fullname] back."
-    "The sisters have brought you [girl.fullname] back."
+    "姐妹们帮你把[girl.fullname]带来了。"
 
 # game/BKevents.rpy:880
 translate chinese found_runaway_girl_c1da3d17:
 
     # girl.char "..."
-    girl.char "..."
+    girl.char "…"
 
 # game/BKevents.rpy:882
 translate chinese found_runaway_girl_c4a9f1f9:
 
     # "[girl.name] looks absent-minded. She hasn't been hurt, but has a strange bruise on her neck."
-    "[girl.name] looks absent-minded. She hasn't been hurt, but has a strange bruise on her neck."
+    "[girl.name]看起来心不在焉。她没有受伤，只是脖子上有一块奇怪的瘀伤。"
 
 # game/BKevents.rpy:887
 translate chinese found_runaway_girl_dec4d47f:
 
     # "The slavers have brought you [girl.fullname] back."
-    "The slavers have brought you [girl.fullname] back."
+    "奴隶贩子帮你把[girl.fullname]带来了。"
 
 # game/BKevents.rpy:889
 translate chinese found_runaway_girl_cbb5edaa:
 
     # girl.char "I don't want to go back... *sob*"
-    girl.char "I don't want to go back... *sob*"
+    girl.char "我不想回去……*抽泣*"
 
 # game/BKevents.rpy:891
 translate chinese found_runaway_girl_70f3d55d:
 
     # "The solemn guild henchmen ignore her plea and deliver her to you. She has been roughed up a little, but she'll be fine."
-    "The solemn guild henchmen ignore her plea and deliver her to you. She has been roughed up a little, but she'll be fine."
+    "庄严的公会追随者无视她的请求，把她交给你。她受到了一点虐待，但她会好起来的。"
 
 # game/BKevents.rpy:897
 translate chinese found_runaway_girl_938bac40:
 
     # "The city guard have brought you [girl.fullname] back, kicking and screaming."
-    "The city guard have brought you [girl.fullname] back, kicking and screaming."
+    "城管帮你把[girl.fullname]带来了，又踢又叫。"
 
 # game/BKevents.rpy:899
 translate chinese found_runaway_girl_dbca4bcc:
 
     # girl.char "Let me go you brutes! Aw, I hate you all..."
-    girl.char "Let me go you brutes! Aw, I hate you all..."
+    girl.char "放开我，你们这些畜生!我恨你们所有人…"
 
 # game/BKevents.rpy:901
 translate chinese found_runaway_girl_3889dcce:
 
     # "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
-    "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
+    "警卫们笑着把她推倒在青楼前的地上。她半裸着，身上散发着精液的味道。似乎他们在把她带回来之前强奸了她多次。"
 
 # game/BKevents.rpy:909
 translate chinese found_runaway_girl_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "Master! There's a problem. We don't have room for her in the brothel..."
+    sill sad "主人!有一个问题。我们在青楼里没有地方放她…"
 
 # game/BKevents.rpy:936
 translate chinese found_runaway_girl_no_room_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
-    "{b}[girl.fullname]{/b} has been sent to the farm."
+    "{b}[girl.fullname]{/b}已被发送到农场。"
 
 # game/BKevents.rpy:953
 translate chinese found_runaway_girl_no_room_decd7840:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "She couldn't go back to being a [girl.job], so she was set to rest."
+    "她不能再做[xxx1]了。那么就安排她休息。"
 
 # game/BKevents.rpy:958
 translate chinese found_runaway_girl_no_room_907e67a3:
 
     # "{b}[girl.fullname]{/b} is back."
-    "{b}[girl.fullname]{/b} is back."
+    "{b}[girl.fullname]{/b}回来了。"
 
 # game/BKevents.rpy:969
 translate chinese found_runaway_girl_come_back_a10e0ff9:
 
     # "The [hunters] are back with [girl.fullname] in chains. She looks exhausted."
-    "The [hunters] are back with [girl.fullname] in chains. She looks exhausted."
+    "[hunters]带着[girl.fullname]回来了，身上带着链条。她看起来疲惫不堪。"
 
 # game/BKevents.rpy:971
 translate chinese found_runaway_girl_come_back_3816ee7d:
 
     # you "We'll take it from here."
-    you "We'll take it from here."
+    you "我们从这里开始。"
 
 # game/BKevents.rpy:975
 translate chinese found_runaway_girl_come_back_2ec9063b:
@@ -268,25 +268,25 @@ translate chinese found_runaway_girl_come_back_907e67a3:
 translate chinese found_escaped_girl_679c7ad8:
 
     # "On your way to the [girl.location], you see [girl.name], sitting in the dirt and trembling in her torn clothes. It seems she hasn't eaten in days."
-    "On your way to the [girl.location], you see [girl.name], sitting in the dirt and trembling in her torn clothes. It seems she hasn't eaten in days."
+    "在你去那个[girl.location]的路上，你看[girl.name]，坐在泥土里，穿着破衣服发抖。她好像几天没吃东西了。"
 
 # game/BKevents.rpy:1037
 translate chinese found_escaped_girl_0b29fd61:
 
     # "She hasn't seen you yet."
-    "She hasn't seen you yet."
+    "她还没见到你呢。"
 
 # game/BKevents.rpy:1040
 translate chinese found_escaped_girl_2400c9b6:
 
     # you "Oh, but I haven't got enough room in the brothel to take her back."
-    you "Oh, but I haven't got enough room in the brothel to take her back."
+    you "哦，但是我在青楼里没有足够的空间把她带回去。"
 
 # game/BKevents.rpy:1046
 translate chinese found_escaped_girl_275fba30:
 
     # you "Well, I'll try and catch her another day."
-    you "Well, I'll try and catch her another day."
+    you "好吧，我改天再去找她。"
 
 # game/BKevents.rpy:1050
 translate chinese found_escaped_girl_43e99c61:
@@ -298,31 +298,31 @@ translate chinese found_escaped_girl_43e99c61:
 translate chinese found_escaped_girl_4dc83d43:
 
     # you "Forget it. I was never too fond of her anyway."
-    you "Forget it. I was never too fond of her anyway."
+    you "算了吧。反正我从来就不太喜欢她。"
 
 # game/BKevents.rpy:1069
 translate chinese found_escaped_girl_ab62619c:
 
     # you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
-    you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
+    you "[girl.name]…是我。听着，我知道青楼的生活很艰难，但你应该回来。我们想念你。"
 
 # game/BKevents.rpy:1073
 translate chinese found_escaped_girl_2f2948b5:
 
     # "Sobbing, she runs into your arms."
-    "Sobbing, she runs into your arms."
+    "她哭着跑进你的怀里。"
 
 # game/BKevents.rpy:1075
 translate chinese found_escaped_girl_1641c2cc:
 
     # girl.char "I'm so sorry, Master... I'm sorry..."
-    girl.char "I'm so sorry, Master... I'm sorry..."
+    girl.char "对不起，主人……我很抱歉……"
 
 # game/BKevents.rpy:1077
 translate chinese found_escaped_girl_22820a44:
 
     # "She cries on your shoulder for a while. Taking her by the hand, you take her back to the brothel."
-    "She cries on your shoulder for a while. Taking her by the hand, you take her back to the brothel."
+    "她在你肩膀上哭了一会儿。牵着她的手，带她回青楼。"
 
 # game/BKevents.rpy:1089
 translate chinese found_escaped_girl_decd7840:
@@ -340,37 +340,37 @@ translate chinese found_escaped_girl_907e67a3:
 translate chinese found_escaped_girl_2c71ca88:
 
     # "Startled by your approach, she jumps to her feet and runs into an alley."
-    "Startled by your approach, she jumps to her feet and runs into an alley."
+    "她被你的走近吓了一跳，跳起来跑进一条小巷。"
 
 # game/BKevents.rpy:1101
 translate chinese found_escaped_girl_46342aa5:
 
     # "You try calling after her, but it's too late. She's already gone."
-    "You try calling after her, but it's too late. She's already gone."
+    "你试着跟在她后面打电话，但是太晚了。她已经走了。"
 
 # game/BKevents.rpy:1111
 translate chinese found_escaped_girl_263fe356:
 
     # you "There you are! Look at you... You're a wreck. At this rate, you will starve before the end of the week. You better come back, or else..."
-    you "There you are! Look at you... You're a wreck. At this rate, you will starve before the end of the week. You better come back, or else..."
+    you "你就在那里!看看你…你是一个残骸。照这样下去，你不到周末就会饿死的。你最好回来，否则……"
 
 # game/BKevents.rpy:1115
 translate chinese found_escaped_girl_58deffc0:
 
     # "She breaks down in tears."
-    "She breaks down in tears."
+    "她泪流满面。"
 
 # game/BKevents.rpy:1117
 translate chinese found_escaped_girl_f9343fae:
 
     # girl.char "Stop... Enough, please... I've learned my lesson. I'll follow you."
-    girl.char "Stop... Enough, please... I've learned my lesson. I'll follow you."
+    girl.char "停止……够了,请……我已经吸取了教训。我将跟随你。"
 
 # game/BKevents.rpy:1119
 translate chinese found_escaped_girl_fda387bd:
 
     # "Yanking her to her feet, you push her forward and bring her back to the brothel."
-    "Yanking her to her feet, you push her forward and bring her back to the brothel."
+    "把她拉起来，你把她往前推，把她带回青楼。"
 
 # game/BKevents.rpy:1131
 translate chinese found_escaped_girl_decd7840_1:
@@ -388,49 +388,49 @@ translate chinese found_escaped_girl_907e67a3_1:
 translate chinese found_escaped_girl_7572c8b2:
 
     # "She gives you a defiant look and hisses at you."
-    "She gives you a defiant look and hisses at you."
+    "她挑衅地看了你一眼，然后对你发出嘘声。"
 
 # game/BKevents.rpy:1143
 translate chinese found_escaped_girl_ab39660c:
 
     # girl.char "Never!"
-    girl.char "Never!"
+    girl.char "从来没有!"
 
 # game/BKevents.rpy:1145
 translate chinese found_escaped_girl_727a51a3:
 
     # "With desperate strength, she leaps to her feet and darts away."
-    "With desperate strength, she leaps to her feet and darts away."
+    "她以绝望的力量一跃而起，飞快地跑开了。"
 
 # game/BKevents.rpy:1147
 translate chinese found_escaped_girl_15c88621:
 
     # "You swear and curse after her as she disappears into a crowd."
-    "You swear and curse after her as she disappears into a crowd."
+    "当她消失在人群中时，你在她身后咒骂。"
 
 # game/BKevents.rpy:1159
 translate chinese found_escaped_girl_1a764ed5:
 
     # "Not saying anything, you approach her from behind, and grab her firmly by her hair."
-    "Not saying anything, you approach her from behind, and grab her firmly by her hair."
+    "你什么也没说，从后面走近她，紧紧抓住她的头发。"
 
 # game/BKevents.rpy:1161
 translate chinese found_escaped_girl_9cf1dd3a:
 
     # you "You're going to come with me, you bitch!"
-    you "You're going to come with me, you bitch!"
+    you "你跟我来，你这婊子!"
 
 # game/BKevents.rpy:1165
 translate chinese found_escaped_girl_6ed6ad11:
 
     # "She gasps in surprise as you yank her to the side like a ragdoll and slap her senseless."
-    "She gasps in surprise as you yank her to the side like a ragdoll and slap her senseless."
+    "当你像个布娃娃一样把她拽到一边，扇她一巴掌，她惊讶地倒抽了一口冷气。"
 
 # game/BKevents.rpy:1167
 translate chinese found_escaped_girl_c2c2d06e:
 
     # "Loading her on your shoulder, you bring her kicking and screaming back to the brothel."
-    "Loading her on your shoulder, you bring her kicking and screaming back to the brothel."
+    "你把她扛在肩上，带她又踢又叫地回到青楼。"
 
 # game/BKevents.rpy:1180
 translate chinese found_escaped_girl_decd7840_2:
@@ -460,55 +460,55 @@ translate chinese found_escaped_girl_61bb64d5:
 translate chinese found_escaped_girl_280adbfa:
 
     # you "Damn you, you bitch!"
-    you "Damn you, you bitch!"
+    you "该死的，你这个婊子!"
 
 # game/BKevents.rpy:1202
 translate chinese found_escaped_girl_71a0f655:
 
     # you "Well, she's on her own now. It was her choice..."
-    you "Well, she's on her own now. It was her choice..."
+    you "她现在一个人了。这是她的选择……"
 
 # game/BKevents.rpy:1206
 translate chinese found_escaped_girl_b60410ba:
 
     # you "I haven't got time to deal with this now."
-    you "I haven't got time to deal with this now."
+    you "我现在没有时间处理这件事。"
 
 # game/BKevents.rpy:1218
 translate chinese take_leave_429d1af9:
 
     # "[girl.fullname] is leaving. She will be back in [day_nb] day[plu]."
-    "[girl.fullname] is leaving. She will be back in [day_nb] day[plu]."
+    "[girl.fullname]是离开。她过[day_nb]天[plu]就会回来。"
 
 # game/BKevents.rpy:1231
 translate chinese return_from_leave_ff4b6ced:
 
     # sill happy "Master! [girl.fullname] has returned from her leave."
-    sill happy "Master! [girl.fullname] has returned from her leave."
+    sill happy "主人![girl.fullname]她休假回来了。"
 
 # game/BKevents.rpy:1280
 translate chinese too_tired_1ac9f1a6:
 
     # "[girl.fullname] has come to see you."
-    "[girl.fullname] has come to see you."
+    "[girl.fullname]来找你。"
 
 # game/BKevents.rpy:1285
 translate chinese too_tired_6c3f8ef4:
 
     # girl.char "Oh, Master [MC.name]... I'm so tired, I don't think I can work tomorrow... Would you give me a little break? ♥"
-    girl.char "Oh, Master [MC.name]... I'm so tired, I don't think I can work tomorrow... Would you give me a little break? ♥"
+    girl.char "哦,主人[MC.name]…我太累了，我想我明天不能工作了。你能让我休息一下吗?♥"
 
 # game/BKevents.rpy:1288
 translate chinese too_tired_9811ebef:
 
     # girl.char "Master, I... Forgive me for saying this, but... I don't think I can work tomorrow, I feel very tired..."
-    girl.char "Master, I... Forgive me for saying this, but... I don't think I can work tomorrow, I feel very tired..."
+    girl.char "主人,我……原谅我这么说，但是…我想我明天不能工作了，我觉得很累……"
 
 # game/BKevents.rpy:1291
 translate chinese too_tired_d6900435:
 
     # girl.char "Master [MC.name]. I'm too tired to work tomorrow, I can't go on like this... Please give me some rest."
-    girl.char "Master [MC.name]. I'm too tired to work tomorrow, I can't go on like this... Please give me some rest."
+    girl.char "主人[MC.name]。我明天太累了，不能再这样下去了。请让我休息一下。"
 
 # game/BKevents.rpy:1294
 translate chinese too_tired_11fdb519:
@@ -520,67 +520,67 @@ translate chinese too_tired_11fdb519:
 translate chinese too_tired_17fc5c72:
 
     # you "Fine, take the day off if you need it.[text1]"
-    you "Fine, take the day off if you need it.[text1]"
+    you "好吧，如果你需要的话就请一天假。[text1]"
 
 # game/BKevents.rpy:1308
 translate chinese too_tired_104aa028:
 
     # you "No way. You've got a job to do, so do it."
-    you "No way. You've got a job to do, so do it."
+    you "不可能。你有工作要做，那就去做吧。"
 
 # game/BKevents.rpy:1309
 translate chinese too_tired_fbf00f5d:
 
     # girl.char "Aw..."
-    girl.char "Aw..."
+    girl.char "啊…"
 
 # game/BKevents.rpy:1345
 translate chinese show_relationship_change_32a81615:
 
     # girl1.char "Hey, [girl2.name]! Let's work together, it will be more fun!"
-    girl1.char "Hey, [girl2.name]! Let's work together, it will be more fun!"
+    girl1.char "嘿,[girl2.name] !让我们一起工作，这会更有趣!"
 
 # game/BKevents.rpy:1347
 translate chinese show_relationship_change_5948375f:
 
     # girl1.char "Oh, [girl2.name]... *blush* Can you show me how you do this?"
-    girl1.char "Oh, [girl2.name]... *blush* Can you show me how you do this?"
+    girl1.char "哦,[girl2.name]…你能教我怎么做吗?"
 
 # game/BKevents.rpy:1352
 translate chinese show_relationship_change_885c5bd6:
 
     # girl2.char "Sure!"
-    girl2.char "Sure!"
+    girl2.char "当然!"
 
 # game/BKevents.rpy:1354
 translate chinese show_relationship_change_da354323:
 
     # "[girl1.name] and [girl2.name] are now friends."
-    "[girl1.name] and [girl2.name] are now friends."
+    "[girl1.name]和[girl2.name]现在是朋友了。"
 
 # game/BKevents.rpy:1367
 translate chinese show_relationship_change_87cc5c26:
 
     # girl1.char "Hey, [text1]! Why don't you get out of my way?"
-    girl1.char "Hey, [text1]! Why don't you get out of my way?"
+    girl1.char "嘿,[text1] !你为什么不让开?"
 
 # game/BKevents.rpy:1369
 translate chinese show_relationship_change_dbe1bb79:
 
     # girl1.char "Oh, it's you, [text1]... I was just leaving, anyway."
-    girl1.char "Oh, it's you, [text1]... I was just leaving, anyway."
+    girl1.char "哦，是你，[text1]……反正我正要离开。"
 
 # game/BKevents.rpy:1375
 translate chinese show_relationship_change_77e4ef71:
 
     # girl2.char "Who do you think you are, you stuck-up bitch?"
-    girl2.char "Who do you think you are, you stuck-up bitch?"
+    girl2.char "你以为你是谁，你这个自以为是的婊子?"
 
 # game/BKevents.rpy:1377
 translate chinese show_relationship_change_2bb474cf:
 
     # girl2.char "That's just fine. I want nothing to do with you..."
-    girl2.char "That's just fine. I want nothing to do with you..."
+    girl2.char "这是很好。我不想和你有任何关系…"
 
 # game/BKevents.rpy:1379
 translate chinese show_relationship_change_03233420:
@@ -592,49 +592,49 @@ translate chinese show_relationship_change_03233420:
 translate chinese show_relationship_change_7c40bb8e:
 
     # girl1.char "Oh, hi, [girl2.name]..."
-    girl1.char "Oh, hi, [girl2.name]..."
+    girl1.char "哦,嗨,[girl2.name]…"
 
 # game/BKevents.rpy:1390
 translate chinese show_relationship_change_976646a0:
 
     # girl2.char "Hi."
-    girl2.char "Hi."
+    girl2.char "嗨。"
 
 # game/BKevents.rpy:1392
 translate chinese show_relationship_change_2fb8297b:
 
     # "[girl1.name] and [girl2.name] are no longer [old_status]s."
-    "[girl1.name] and [girl2.name] are no longer [old_status]s."
+    "[girl1.name]和[girl2.name]不再是[old_status]s。"
 
 # game/BKevents.rpy:1415
 translate chinese random_relationship_event_28599ae2:
 
     # girl1.char "[girl2.name], you're so cool!"
-    girl1.char "[girl2.name], you're so cool!"
+    girl1.char "[girl2.name]，你真酷!"
 
 # game/BKevents.rpy:1417
 translate chinese random_relationship_event_28b4cb60:
 
     # girl2.char "Thanks!"
-    girl2.char "Thanks!"
+    girl2.char "谢谢!"
 
 # game/BKevents.rpy:1434
 translate chinese random_relationship_event_9a4a6105:
 
     # girl1.char "[text1]... Master hasn't got around to sell you yet?"
-    girl1.char "[text1]... Master hasn't got around to sell you yet?"
+    girl1.char "[text1]…主人还没抽出时间来卖你吗?"
 
 # game/BKevents.rpy:1436
 translate chinese random_relationship_event_f28fad59:
 
     # girl2.char "Grrr..."
-    girl2.char "Grrr..."
+    girl2.char "叽阿…"
 
 # game/BKevents.rpy:1459
 translate chinese auto_train_61474d4d:
 
     # "[girl.fullname] is away and cannot be trained."
-    "[girl.fullname] is away and cannot be trained."
+    "[girl.fullname]已离开，无法训练。"
 
 # game/BKevents.rpy:1463
 translate chinese auto_train_b8f31028:
@@ -652,7 +652,7 @@ translate chinese auto_train_c0226b1a:
 translate chinese auto_train_74827601:
 
     # "[girl.fullname] is waiting for you in the bedroom for tonight's training."
-    "[girl.fullname] is waiting for you in the bedroom for tonight's training."
+    "[girl.fullname]。正在卧室里等你，准备今晚的训练。"
 
 # game/BKevents.rpy:1485
 translate chinese auto_train_menu_b8f31028:
@@ -664,13 +664,13 @@ translate chinese auto_train_menu_b8f31028:
 translate chinese auto_train_menu_d58255d5:
 
     # you "Go back to your bedroom now. I am done with you."
-    you "Go back to your bedroom now. I am done with you."
+    you "现在回你的卧室去。我受够你了。"
 
 # game/BKevents.rpy:1498
 translate chinese auto_train_menu_2f0ec43a:
 
     # "[girl.fullname] has left the master bedroom."
-    "[girl.fullname] has left the master bedroom."
+    "[girl.fullname]已离开主卧。"
 
 # game/BKevents.rpy:1531
 translate chinese test_resources_0ae9bcd0:
@@ -682,103 +682,103 @@ translate chinese test_resources_0ae9bcd0:
 translate chinese test_resources_4d846f38:
 
     # "End"
-    "End"
+    "结束"
 
 # game/BKevents.rpy:1545
 translate chinese furniture_built_1cf70525:
 
     # carpenter "Hey, boss! I've just finished work on the [furn.name]. I hope you like it."
-    carpenter "Hey, boss! I've just finished work on the [furn.name]. I hope you like it."
+    carpenter "嘿,老板!我刚完成[xxxx23]的装修工作。希望你喜欢。"
 
 # game/BKevents.rpy:1606
 translate chinese collect_wood_c314ab88:
 
     # "You cannot collect wood more than once per day."
-    "You cannot collect wood more than once per day."
+    "你每天收集木材的次数不能超过一次。"
 
 # game/BKevents.rpy:1660
 translate chinese collect_leather_da3a27a5:
 
     # "You cannot trade leather more than once per day."
-    "You cannot trade leather more than once per day."
+    "你每天交易皮革的次数不能超过一次。"
 
 # game/BKevents.rpy:1714
 translate chinese collect_dye_6ce4d5eb:
 
     # "You cannot brew dye more than once per day."
-    "You cannot brew dye more than once per day."
+    "你每天不能酿造染料超过一次。"
 
 # game/BKevents.rpy:1768
 translate chinese collect_marble_77cd23bb:
 
     # "You cannot mine marble more than once per day."
-    "You cannot mine marble more than once per day."
+    "你每天开采大理石不能超过一次。"
 
 # game/BKevents.rpy:1822
 translate chinese collect_ore_2cf8bbf6:
 
     # "You cannot negotiate ore more than once per day."
-    "You cannot negotiate ore more than once per day."
+    "你不可能每天谈判超过一次。"
 
 # game/BKevents.rpy:1876
 translate chinese collect_silk_c7b642f8:
 
     # "You cannot weave silk more than once per day."
-    "You cannot weave silk more than once per day."
+    "你一天织丝不能超过一次。"
 
 # game/BKevents.rpy:1881
 translate chinese collect_diamond_566a380e:
 
     # "You cannot look for diamonds more than once per day."
-    "You cannot look for diamonds more than once per day."
+    "你每天只能找一次钻石。"
 
 # game/BKevents.rpy:1888
 translate chinese break_extractor_45e93d2f:
 
     # "Your [resource] extractor has broken down."
-    "Your [resource] extractor has broken down."
+    "你的[resource]提取器坏了。"
 
 # game/BKevents.rpy:1926
 translate chinese visit_exchange_3d87bc36:
 
     # bast "Welcome to the resource exchange. How may I help you?"
-    bast "Welcome to the resource exchange. How may I help you?"
+    bast "欢迎来到资源交流。我能为您做些什么?"
 
 # game/BKevents.rpy:1933
 translate chinese visit_exchange_12df1e2b:
 
     # you "Hey Bast, do you want to have some fun?"
-    you "Hey Bast, do you want to have some fun?"
+    you "嘿，巴斯特，你想找点乐子吗?"
 
 # game/BKevents.rpy:1935
 translate chinese visit_exchange_a589c4ee:
 
     # "Bast looks around to make sure no one can hear you. She lowers her voice."
-    "Bast looks around to make sure no one can hear you. She lowers her voice."
+    "巴斯特环顾四周，确保没人能听到你。她放低了声音。"
 
 # game/BKevents.rpy:1937
 translate chinese visit_exchange_be3775b3:
 
     # bast "You mean... Like the last time?"
-    bast "You mean... Like the last time?"
+    bast "你的意思是……就像上次一样?"
 
 # game/BKevents.rpy:1939
 translate chinese visit_exchange_b8499140:
 
     # you "Yes... I'm horny as hell..."
-    you "Yes... I'm horny as hell..."
+    you "是的。。。我好色得要命……"
 
 # game/BKevents.rpy:1942
 translate chinese visit_exchange_b7fe4468:
 
     # bast "You... You can't be serious... We only just did it!"
-    bast "You... You can't be serious... We only just did it!"
+    bast "你……你不是认真的吧…我们只是做了!"
 
 # game/BKevents.rpy:1944
 translate chinese visit_exchange_46c1dc5a:
 
     # you "Aw... Okay."
-    you "Aw... Okay."
+    you "啊…好吧。"
 
 # game/BKevents.rpy:1947
 translate chinese visit_exchange_c054fc44:
@@ -790,7 +790,7 @@ translate chinese visit_exchange_c054fc44:
 translate chinese visit_exchange_93545409:
 
     # bast "Oh, [MC.name]... *blush*"
-    bast "Oh, [MC.name]... *blush*"
+    bast "哦,[MC.name]…*脸红*"
 
 # game/BKevents.rpy:1951
 translate chinese visit_exchange_075e4666:
@@ -802,13 +802,13 @@ translate chinese visit_exchange_075e4666:
 translate chinese visit_exchange_26689f83:
 
     # bast "You do not have [source_nb] [source] to buy this."
-    bast "You do not have [source_nb] [source] to buy this."
+    bast "您没有[source_nb]个[resource_cnname[source]]来购买这个。"
 
 # game/BKevents.rpy:2012
 translate chinese wood_intro_49655f52:
 
     # "Breathing in the fresh ocean breeze, and trying to ignore the smell of rotting fish, you take a walk around the shipyard."
-    "Breathing in the fresh ocean breeze, and trying to ignore the smell of rotting fish, you take a walk around the shipyard."
+    "呼吸着清新的海风，试着不去理会腐烂鱼的味道，你在造船厂周围散步。"
 
 # game/BKevents.rpy:2014
 translate chinese wood_intro_6c927173:
@@ -832,31 +832,31 @@ translate chinese wood_intro_c64fea32:
 translate chinese wood_intro_1caccc6f:
 
     # "You spend some time watching the workers as they go. It seems easy enough, although it takes some strength to rip away the rusty nails that hold the planks together."
-    "You spend some time watching the workers as they go. It seems easy enough, although it takes some strength to rip away the rusty nails that hold the planks together."
+    "你花一些时间观察工人们的行动。这似乎很容易，尽管需要一些力气才能把支撑木板的生锈钉子扯下来。"
 
 # game/BKevents.rpy:2022
 translate chinese wood_intro_69c98287:
 
     # you "I think I've got the hang of it."
-    you "I think I've got the hang of it."
+    you "我想我已经掌握了窍门。"
 
 # game/BKevents.rpy:2026
 translate chinese wood_intro_5a611303:
 
     # "You may now collect {b}wood{/b} from the shipyard. Yield will depend on your {b}Strength{/b}."
-    "You may now collect {b}wood{/b} from the shipyard. Yield will depend on your {b}Strength{/b}."
+    "你现在可以从船厂收集木材了。屈服将取决于你的力量。"
 
 # game/BKevents.rpy:2036
 translate chinese dye_intro_8931657f:
 
     # "As you take a walk down the beach, you notice it's more than just a place for swimmers."
-    "As you take a walk down the beach, you notice it's more than just a place for swimmers."
+    "当你沿着海滩散步时，你会注意到这不仅仅是一个游泳的地方。"
 
 # game/BKevents.rpy:2038
 translate chinese dye_intro_b84750e5:
 
     # "Some industry also takes place alongside the leisure."
-    "Some industry also takes place alongside the leisure."
+    "一些工业也在休闲的同时发生。"
 
 # game/BKevents.rpy:2040
 translate chinese dye_intro_d198c8f0:
@@ -880,73 +880,73 @@ translate chinese dye_intro_c8c173bd:
 translate chinese dye_intro_635181cc:
 
     # "You have learnt how to brew {b}dye{/b} from washed up material at the beach. Yield will depend on your {b}Spirit{/b}."
-    "You have learnt how to brew {b}dye{/b} from washed up material at the beach. Yield will depend on your {b}Spirit{/b}."
+    "你已经学会了如何用海滩上洗过的材料酿造染料。屈服将取决于你的精神。"
 
 # game/BKevents.rpy:2058
 translate chinese leather_intro_7468bc18:
 
     # "The stables are teeming with animals and people on any given day. Today, it's extra-crowded, given that a large party of foreign officials has just arrived in the city."
-    "The stables are teeming with animals and people on any given day. Today, it's extra-crowded, given that a large party of foreign officials has just arrived in the city."
+    "马厩里每天都挤满了动物和人。今天，考虑到一大群外国官员刚刚抵达这座城市，这里格外拥挤。"
 
 # game/BKevents.rpy:2060
 translate chinese leather_intro_1b04bb48:
 
     # you "Hey! Watch out!"
-    you "Hey! Watch out!"
+    you "嘿!小心!"
 
 # game/BKevents.rpy:2062
 translate chinese leather_intro_0919d05e:
 
     # "A careless noble and his steed nearly crushed you. You decide it's best to slip inside one of the buildings to let the crowd pass."
-    "A careless noble and his steed nearly crushed you. You decide it's best to slip inside one of the buildings to let the crowd pass."
+    "一个粗心的贵族和他的马差点把你压死。你决定最好溜进一座建筑物里，让人群通过。"
 
 # game/BKevents.rpy:2064
 translate chinese leather_intro_e71e585b:
 
     # you "Well, this is technically trespassing, but no one will mind if I just wait here a minute..."
-    you "Well, this is technically trespassing, but no one will mind if I just wait here a minute..."
+    you "严格来说这是非法侵入，但没人会介意我在这里等一分钟…"
 
 # game/BKevents.rpy:2066
 translate chinese leather_intro_e545b3d6:
 
     # "A herd of cattle is already parked inside. The stink is almost unbearable, and you start looking for another way out."
-    "A herd of cattle is already parked inside. The stink is almost unbearable, and you start looking for another way out."
+    "一群牛已经停在里面了。臭味几乎让人无法忍受，于是你开始寻找另一条出路。"
 
 # game/BKevents.rpy:2068
 translate chinese leather_intro_36b53701:
 
     # you "There's light that way... Maybe there's a store out front..."
-    you "There's light that way... Maybe there's a store out front..."
+    you "那边有光…也许前面有家商店……"
 
 # game/BKevents.rpy:2070
 translate chinese leather_intro_8f9cf66f:
 
     # man "Arios be praised, you've come! You sure took your sweet time!" with vpunch
-    man "Arios be praised, you've come! You sure took your sweet time!" with vpunch
+    man "赞美你们，你们来了!你玩得真开心!"
 
 # game/BKevents.rpy:2072
 translate chinese leather_intro_70317dea:
 
     # "You are startled to hear someone call you, and turn around to see a diminutive old man with oversized spectacles, only to be whacked by his cane right on the shoulder."
-    "You are startled to hear someone call you, and turn around to see a diminutive old man with oversized spectacles, only to be whacked by his cane right on the shoulder."
+    "你听到有人叫你，吓了一跳，转过身来，看见一个戴着超大眼镜的小个子老头，却被他的手杖重重地打在了肩上。"
 
 # game/BKevents.rpy:2078
 translate chinese leather_intro_9329eee9:
 
     # you "Ouch! Watch it, old man..."
-    you "Ouch! Watch it, old man..."
+    you "哎哟!小心点，老头子……"
 
 # game/BKevents.rpy:2080
 translate chinese leather_intro_0fb774c6:
 
     # man "Don't you dare!"
-    man "Don't you dare!"
+    man "你敢!"
 
 # game/BKevents.rpy:2086
 translate chinese leather_intro_afc65f67:
 
     # you "Aw!"
-    you "Aw!"
+    you "哦!"
 
 # game/BKevents.rpy:2088
 translate chinese leather_intro_59c44fd7:
@@ -958,13 +958,13 @@ translate chinese leather_intro_59c44fd7:
 translate chinese leather_intro_c49c6806:
 
     # man "Four hours I've been waiting! Four hours since I sent to the guild for help! While you were idling, no one was here to tend to the shop!"
-    man "Four hours I've been waiting! Four hours since I sent to the guild for help! While you were idling, no one was here to tend to the shop!"
+    man "我已经等了四个小时了!四个小时前我就向公会求助了!当你闲着的时候，没有人在这里照料商店!"
 
 # game/BKevents.rpy:2092
 translate chinese leather_intro_0024038c:
 
     # man "Stupid, unreliable guild officers... I told them there would be double payment today..."
-    man "Stupid, unreliable guild officers... I told them there would be double payment today..."
+    man "愚蠢、不可靠的公会官员……我告诉他们今天会双倍付款…"
 
 # game/BKevents.rpy:2094
 translate chinese leather_intro_cb38bbe3:
@@ -976,37 +976,37 @@ translate chinese leather_intro_cb38bbe3:
 translate chinese leather_intro_b0858f46:
 
     # man "Say, are you the same boy they usually send? You look tall for a 12-year old..."
-    man "Say, are you the same boy they usually send? You look tall for a 12-year old..."
+    man "喂，你是他们经常派来的那个男孩吗?对于一个12岁的孩子来说，你看起来很高……"
 
 # game/BKevents.rpy:2098
 translate chinese leather_intro_2cfe6b3e:
 
     # you "Look, pal, I... Wait, did you say 'double payment'?"
-    you "Look, pal, I... Wait, did you say 'double payment'?"
+    you "朋友,我…等等，你是说“双倍付款”吗?"
 
 # game/BKevents.rpy:2100
 translate chinese leather_intro_66036300:
 
     # man "Yeah, if you finally haul your ass to work! The shop is that way!"
-    man "Yeah, if you finally haul your ass to work! The shop is that way!"
+    man "是啊，如果你终于拖着屁股去上班的话!商店就在那边!"
 
 # game/BKevents.rpy:2102
 translate chinese leather_intro_0c35abb4:
 
     # man "Man the store, dammit, I have to tend to the animals!"
-    man "Man the store, dammit, I have to tend to the animals!"
+    man "伙计，伙计，该死的，我得照顾这些动物!"
 
 # game/BKevents.rpy:2104
 translate chinese leather_intro_e479ae15:
 
     # "The strange man shoves you out towards the store, before limping towards the animals who are waiting for food and drink."
-    "The strange man shoves you out towards the store, before limping towards the animals who are waiting for food and drink."
+    "陌生人把你推到商店门口，然后一瘸一拐地走向那些正在等吃的、喝的动物。"
 
 # game/BKevents.rpy:2106
 translate chinese leather_intro_8050e427:
 
     # you "What have I got myself into..."
-    you "What have I got myself into..."
+    you "我把自己弄成什么样子了……"
 
 # game/BKevents.rpy:2110
 translate chinese leather_intro_55b755fb:
@@ -1018,61 +1018,61 @@ translate chinese leather_intro_55b755fb:
 translate chinese leather_intro_8cd31e14:
 
     # you "Not all at once, not all at once... You sir, what did you say you wanted again?"
-    you "Not all at once, not all at once... You sir, what did you say you wanted again?"
+    you "不是一下子，不是一下子……你，先生，你再说一遍你想要什么?"
 
 # game/BKevents.rpy:2118
 translate chinese leather_intro_41eb158a:
 
     # you "Phew... It's finally finished..."
-    you "Phew... It's finally finished..."
+    you "唷……终于完成了…"
 
 # game/BKevents.rpy:2120
 translate chinese leather_intro_477856ae:
 
     # "The old man is in charge of keeping animals safe for travellers who are set for a short stay in the city. Herding cattle around in the narrow streets of Zan is far from ideal."
-    "The old man is in charge of keeping animals safe for travellers who are set for a short stay in the city. Herding cattle around in the narrow streets of Zan is far from ideal."
+    "这位老人负责保护动物的安全，以便那些准备在城市里短暂停留的旅客安全。在赞狭窄的街道上放牛远非理想。"
 
 # game/BKevents.rpy:2122
 translate chinese leather_intro_16eb8294:
 
     # "The store job is pretty easy, as you only need to match the right owner with the right animals and update the logbook, but managing impatient customers requires some wit."
-    "The store job is pretty easy, as you only need to match the right owner with the right animals and update the logbook, but managing impatient customers requires some wit."
+    "商店的工作非常简单，因为您只需要将正确的所有者与正确的动物匹配起来，并更新日志，但是管理不耐烦的客户需要一些机智。"
 
 # game/BKevents.rpy:2124
 translate chinese leather_intro_a26ec81c:
 
     # man "There you are, kiddo! I hope nothing is amiss in the logbook, or I'll whip your teenage ass!"
-    man "There you are, kiddo! I hope nothing is amiss in the logbook, or I'll whip your teenage ass!"
+    man "你来了，孩子!我希望日志中没有任何错误，否则我会打你的屁股!"
 
 # game/BKevents.rpy:2126
 translate chinese leather_intro_fb9251e1:
 
     # man "Well... Everything looks in order."
-    man "Well... Everything looks in order."
+    man "嗯…一切看起来都很正常。"
 
 # game/BKevents.rpy:2128
 translate chinese leather_intro_45d98aaa:
 
     # you "(Can you even read anything in there?)"
-    you "(Can you even read anything in there?)"
+    you "(你能读懂里面的东西吗?)"
 
 # game/BKevents.rpy:2130
 translate chinese leather_intro_363cf000:
 
     # you "Now, about that payment you promised..."
-    you "Now, about that payment you promised..."
+    you "关于你答应的那笔钱"
 
 # game/BKevents.rpy:2132
 translate chinese leather_intro_d1ba6a4b:
 
     # man "Ah, yes, the leather skins..."
-    man "Ah, yes, the leather skins..."
+    man "啊，是的，皮革皮……"
 
 # game/BKevents.rpy:2134
 translate chinese leather_intro_b9d66f2b:
 
     # you "What??? The payment is in leather?"
-    you "What??? The payment is in leather?"
+    you "什么? ? ?付款是用皮革的吗?"
 
 # game/BKevents.rpy:2136
 translate chinese leather_intro_1551e79e:
@@ -1084,19 +1084,19 @@ translate chinese leather_intro_1551e79e:
 translate chinese leather_intro_017aa3b4:
 
     # you "O-Of course..."
-    you "O-Of course..."
+    you "当然……"
 
 # game/BKevents.rpy:2140
 translate chinese leather_intro_026086dc:
 
     # man "Well, I'm withholding your payment for today. That will teach you to show up late."
-    man "Well, I'm withholding your payment for today. That will teach you to show up late."
+    man "我今天不给你付款了。这将教会你迟到。"
 
 # game/BKevents.rpy:2142
 translate chinese leather_intro_980152ab:
 
     # you "Whaaat!!! That's unfair!" with vpunch
-    you "Whaaat!!! That's unfair!" with vpunch
+    you "Whaaat ! ! !这是不公平的!"
 
 # game/BKevents.rpy:2144
 translate chinese leather_intro_b4f21a82:
@@ -1108,25 +1108,25 @@ translate chinese leather_intro_b4f21a82:
 translate chinese leather_intro_dae0ec55:
 
     # you "..."
-    you "..."
+    you "…"
 
 # game/BKevents.rpy:2148
 translate chinese leather_intro_19076eb6:
 
     # man "If you show up again to help with the shop, I'll pay you properly."
-    man "If you show up again to help with the shop, I'll pay you properly."
+    man "如果你再来帮我打理商店，我会给你适当的报酬。"
 
 # game/BKevents.rpy:2153
 translate chinese leather_intro_563e60f5:
 
     # "You can now earn {b}leather{/b} from helping at the stables. Yield will depend on your {b}Charisma{/b}."
-    "You can now earn {b}leather{/b} from helping at the stables. Yield will depend on your {b}Charisma{/b}."
+    "你现在可以通过在马厩帮忙挣到{b}皮革{/b}。产量将取决于你的个人{b}魅力{/b}。"
 
 # game/BKevents.rpy:2164
 translate chinese marble_intro_ae1d66b1:
 
     # "The old ruins belonged to the non-human empire that first settled Zan's current location, Cimeria."
-    "The old ruins belonged to the non-human empire that first settled Zan's current location, Cimeria."
+    "这座古老的废墟属于非人类帝国，是赞现在所在的塞米里亚第一个定居下来的地方。"
 
 # game/BKevents.rpy:2166
 translate chinese marble_intro_8cf674d5:
@@ -1138,67 +1138,67 @@ translate chinese marble_intro_8cf674d5:
 translate chinese marble_intro_07d37705:
 
     # "It's very easy to get lost in the maze of ruined structures, each very similar yet slightly different from the next."
-    "It's very easy to get lost in the maze of ruined structures, each very similar yet slightly different from the next."
+    "在废墟的迷宫中很容易迷路，每一个都非常相似，但又略有不同。"
 
 # game/BKevents.rpy:2170
 translate chinese marble_intro_0bef17f5:
 
     # "Some people even claim the place changes over time, structures appearing and disappearing out of thin air... Those people are mad, of course."
-    "Some people even claim the place changes over time, structures appearing and disappearing out of thin air... Those people are mad, of course."
+    "有些人甚至声称，随着时间的推移，这个地方会发生变化，建筑物会凭空出现或消失……当然，那些人是疯了。"
 
 # game/BKevents.rpy:2172
 translate chinese marble_intro_71ee01d6:
 
     # "One thing's for sure, though, the old ruins are a prime source for building materials."
-    "One thing's for sure, though, the old ruins are a prime source for building materials."
+    "不过有一件事是肯定的，古老的废墟是建筑材料的主要来源。"
 
 # game/BKevents.rpy:2174
 translate chinese marble_intro_63c7aec4:
 
     # "Zan is always in need of new buildings, and the old ruins are so expansive that it never seems to run out of materials, no matter how many walls people dismantle."
-    "Zan is always in need of new buildings, and the old ruins are so expansive that it never seems to run out of materials, no matter how many walls people dismantle."
+    "赞总是需要新的建筑，而旧的废墟是如此的广阔，无论人们拆除多少面墙，它似乎永远不会耗尽材料。"
 
 # game/BKevents.rpy:2176
 translate chinese marble_intro_53b15031:
 
     # "The old palaces are especially reknowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
-    "The old palaces are especially reknowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
+    "这些古老的宫殿因其西米亚大理石而闻名，这是一种赞的精英们特别喜爱的奇特的石头。"
 
 # game/BKevents.rpy:2178
 translate chinese marble_intro_34df0699:
 
     # "The only problem is, the ancient Cimerians knew how to build flawless architecture that stands the test of time, and Cimerian marble is extremely tough."
-    "The only problem is, the ancient Cimerians knew how to build flawless architecture that stands the test of time, and Cimerian marble is extremely tough."
+    "唯一的问题是，古代的西米安人知道如何建造经得起时间考验的完美建筑，而西米安大理石是极其坚硬的。"
 
 # game/BKevents.rpy:2180
 translate chinese marble_intro_cc2c9bd5:
 
     # "You watch a dozen men trying and failing to extract a block of marble from a weak-looking structure."
-    "You watch a dozen men trying and failing to extract a block of marble from a weak-looking structure."
+    "你看到十几个人试图从一个看起来很弱的建筑物中取出一块大理石，但没有成功。"
 
 # game/BKevents.rpy:2182
 translate chinese marble_intro_c929cac4:
 
     # "Only the strongest men can break their walls and extract that stone. Perhaps that's why the city still hasn't run out of Cimerian marble."
-    "Only the strongest men can break their walls and extract that stone. Perhaps that's why the city still hasn't run out of Cimerian marble."
+    "只有最强壮的人才能打破他们的墙，取出那块石头。也许这就是为什么这座城市还没有用完西姆大理石的原因。"
 
 # game/BKevents.rpy:2184
 translate chinese marble_intro_70aac154:
 
     # "Not to mention there's a curse... Nah, forget about that."
-    "Not to mention there's a curse... Nah, forget about that."
+    "更不用说有诅咒了…算了吧。"
 
 # game/BKevents.rpy:2186
 translate chinese marble_intro_7db28017:
 
     # you "Anyway. Those guys are doing it all wrong. I bet I could recover some of those marble slabs if I did this..."
-    you "Anyway. Those guys are doing it all wrong. I bet I could recover some of those marble slabs if I did this..."
+    you "无论如何。那些人都做错了。我敢打赌，如果我这么做的话，我能找回一些大理石……"
 
 # game/BKevents.rpy:2190
 translate chinese marble_intro_b02f412c:
 
     # "You have discovered how to extract {b}marble{/b} from the old ruins. Yield will depend on your {b}Strength{/b}."
-    "You have discovered how to extract {b}marble{/b} from the old ruins. Yield will depend on your {b}Strength{/b}."
+    "你已经发现了如何从古老的废墟中提取{b}大理石{/b}。产量将取决于你的{b}力量{/b}。"
 
 # game/BKevents.rpy:2201
 translate chinese silk_intro_6a983f1a:
@@ -1210,13 +1210,13 @@ translate chinese silk_intro_6a983f1a:
 translate chinese silk_intro_19d11233:
 
     # "The trees are buzzing with magic energy and undulating strangely, connected to each other by complex networks of vines."
-    "The trees are buzzing with magic energy and undulating strangely, connected to each other by complex networks of vines."
+    "树木嗡嗡作响，散发着神奇的能量，奇怪地起伏着，错综复杂的藤蔓把它们连在一起。"
 
 # game/BKevents.rpy:2205
 translate chinese silk_intro_a0427549:
 
     # "Creeping along those vines is a unique animal Zan is known all around Xeros for: the Zanic silkworm."
-    "Creeping along those vines is a unique animal Zan is known all around Xeros for: the Zanic silkworm."
+    "沿着这些藤蔓爬行是一种独特的动物赞恩是众所周知的所有克塞罗斯:Zanic蚕。"
 
 # game/BKevents.rpy:2207
 translate chinese silk_intro_33b67048:
@@ -1234,19 +1234,19 @@ translate chinese silk_intro_e2bf4d4b:
 translate chinese silk_intro_91289a63:
 
     # "That is because the silkworm's primary function makes them very valuable: patient enchanters can extract fine silk from the worm's body, using a process that takes a bit of magic skill, and is also pretty gross."
-    "That is because the silkworm's primary function makes them very valuable: patient enchanters can extract fine silk from the worm's body, using a process that takes a bit of magic skill, and is also pretty gross."
+    "这是因为蚕的主要功能使它们非常有价值:耐心的魔法师可以从蚕的身体里提取精细的丝，这个过程需要一点魔法技巧，而且相当恶心。"
 
 # game/BKevents.rpy:2213
 translate chinese silk_intro_95203447:
 
     # you "Well, I could do that, I guess... The spell is not that difficult... But that elbow move is tricky. And do I really have to use my teeth for that?"
-    you "Well, I could do that, I guess... The spell is not that difficult... But that elbow move is tricky. And do I really have to use my teeth for that?"
+    you "嗯，我想我能做到……咒语没那么难…但是肘部的移动很棘手。我真的要用我的牙齿吗?"
 
 # game/BKevents.rpy:2217
 translate chinese silk_intro_096b7f43:
 
     # "You have figured out how to weave {b}silk{/b} from the hanging gardens. Yield will depend on your {b}Spirit{/b}."
-    "You have figured out how to weave {b}silk{/b} from the hanging gardens. Yield will depend on your {b}Spirit{/b}."
+    "你已经想出了如何从空中花园织成丝绸。屈服将取决于你的精神。"
 
 # game/BKevents.rpy:2227
 translate chinese ore_intro_ebd6f897:
@@ -1258,43 +1258,43 @@ translate chinese ore_intro_ebd6f897:
 translate chinese ore_intro_4b745e39:
 
     # "It is bustling with activity, traders of all kinds and origins negotiating all kinds of deals, large amounts of money changing hands at a dizzying speed."
-    "It is bustling with activity, traders of all kinds and origins negotiating all kinds of deals, large amounts of money changing hands at a dizzying speed."
+    "这里熙熙攘攘，各种各样的商人，各种各样的起源，各种各样的交易，大量的钱以令人眼花缭乱的速度易手。"
 
 # game/BKevents.rpy:2231
 translate chinese ore_intro_536562de:
 
     # "The guild quarter is also where the mining activities are concentrated in Zan, as the guilds handle claims and stakes for the miners."
-    "The guild quarter is also where the mining activities are concentrated in Zan, as the guilds handle claims and stakes for the miners."
+    "公会区也是赞矿活动集中的地方，因为公会为矿工处理索赔和赌注。"
 
 # game/BKevents.rpy:2233
 translate chinese ore_intro_5049007a:
 
     # "It is technically forbidden for miners to mine outside of their official claimed territory, but claim-jumping is still extremely common."
-    "It is technically forbidden for miners to mine outside of their official claimed territory, but claim-jumping is still extremely common."
+    "从技术上讲，禁止矿工在其官方宣称的领土之外开采，但跳楼索赔仍然非常普遍。"
 
 # game/BKevents.rpy:2235
 translate chinese ore_intro_2aa99504:
 
     # "As you walk by one of the large mines, you hear someone whisper to you."
-    "As you walk by one of the large mines, you hear someone whisper to you."
+    "当你经过一个大矿坑时，你听到有人对你耳语。"
 
 # game/BKevents.rpy:2237
 translate chinese ore_intro_47ac83a7:
 
     # man "Psst, Mister!"
-    man "Psst, Mister!"
+    man "嘘,先生!"
 
 # game/BKevents.rpy:2239
 translate chinese ore_intro_efea331f:
 
     # "Turning around, you notice a scrawny miner, taking a break near the protective fence that surrounds the ore mine."
-    "Turning around, you notice a scrawny miner, taking a break near the protective fence that surrounds the ore mine."
+    "转过身来，你注意到一个骨瘦如柴的矿工，正在矿坑周围的防护栏旁休息。"
 
 # game/BKevents.rpy:2241
 translate chinese ore_intro_7af088ad:
 
     # "Miner" "Sir, d'you have a minute? You're not a guildsman, right? No tattoos..."
-    "Miner" "Sir, d'you have a minute? You're not a guildsman, right? No tattoos..."
+    "矿工" "先生，你有时间吗?你不是行会会员，对吧?没有纹身…"
 
 # game/BKevents.rpy:2243
 translate chinese ore_intro_b9e5b416:
@@ -1306,97 +1306,97 @@ translate chinese ore_intro_b9e5b416:
 translate chinese ore_intro_5c317860:
 
     # you "No, I'm not."
-    you "No, I'm not."
+    you "不,我不是。"
 
 # game/BKevents.rpy:2247
 translate chinese ore_intro_c27793fe:
 
     # "You eye him suspiciously."
-    "You eye him suspiciously."
+    "你怀疑地看着他。"
 
 # game/BKevents.rpy:2249
 translate chinese ore_intro_54f45253:
 
     # you "Why? Are you in trouble with the guild?"
-    you "Why? Are you in trouble with the guild?"
+    you "为什么?你在公会里遇到麻烦了吗?"
 
 # game/BKevents.rpy:2251
 translate chinese ore_intro_0a68ea71:
 
     # "He spits."
-    "He spits."
+    "他吐了。"
 
 # game/BKevents.rpy:2253
 translate chinese ore_intro_4f551cd3:
 
     # "Miner" "Shalia take 'em all! We work our asses off in the mine day and night, but at the end those bloody bureaucrats take a 70 percent cut just doin' nuthin'."
-    "Miner" "Shalia take 'em all! We work our asses off in the mine day and night, but at the end those bloody bureaucrats take a 70 percent cut just doin' nuthin'."
+    "矿工" "莎莉娅把他们都带走!我们夜以继日地在矿井里拼命干活，但到最后，那些该死的官僚们只拿了70\%的提成。"
 
 # game/BKevents.rpy:2255
 translate chinese ore_intro_1fb53abf:
 
     # you "That sucks. Can't you refuse their terms?"
-    you "That sucks. Can't you refuse their terms?"
+    you "这糟透了。你不能拒绝他们的条件吗?"
 
 # game/BKevents.rpy:2257
 translate chinese ore_intro_53bac5bc:
 
     # "Miner" "I wish... Some of the boys threatened to go on strike, so they had thugs beat 'em up and kick 'em out, only to replace 'em the next day."
-    "Miner" "I wish... Some of the boys threatened to go on strike, so they had thugs beat 'em up and kick 'em out, only to replace 'em the next day."
+    "矿工" "我希望……有些男孩威胁说要罢工，所以他们让暴徒把他们打了一顿，然后把他们踢出去，结果第二天又把他们换下。"
 
 # game/BKevents.rpy:2259
 translate chinese ore_intro_eb899c56:
 
     # "Miner" "They say the next one to complain will go to the salt mines... Like a damn orc!"
-    "Miner" "They say the next one to complain will go to the salt mines... Like a damn orc!"
+    "矿工" "他们说下一个抱怨的人会去盐矿……像个该死的兽人!"
 
 # game/BKevents.rpy:2261
 translate chinese ore_intro_fbe03d0b:
 
     # you "Well, seems like you've got no choice then..."
-    you "Well, seems like you've got no choice then..."
+    you "看来你别无选择了"
 
 # game/BKevents.rpy:2263
 translate chinese ore_intro_5c4b9380:
 
     # "Miner" "Yeah, we're stuck here, we can't even go anywhere 'til we finish our weekly shift. It's like a fuckin' prison camp!"
-    "Miner" "Yeah, we're stuck here, we can't even go anywhere 'til we finish our weekly shift. It's like a fuckin' prison camp!"
+    "矿工" "是啊，我们被困在这里了，我们甚至不能去任何地方，直到我们完成每周的轮班。就像个该死的集中营!"
 
 # game/BKevents.rpy:2265
 translate chinese ore_intro_93b85989:
 
     # "Miner" "But me and the boys, we got an idea. See, a guy like you is free to come and go. We could make you a deal..."
-    "Miner" "But me and the boys, we got an idea. See, a guy like you is free to come and go. We could make you a deal..."
+    "矿工" "但我和孩子们有个主意。你看，像你这样的人来去自由。我们可以做个交易…"
 
 # game/BKevents.rpy:2267
 translate chinese ore_intro_97c99c6a:
 
     # "He gives you a cunning look."
-    "He gives you a cunning look."
+    "他狡猾地看了你一眼。"
 
 # game/BKevents.rpy:2269
 translate chinese ore_intro_c3694090:
 
     # you "Where are you going with this?"
-    you "Where are you going with this?"
+    you "你要去哪里?"
 
 # game/BKevents.rpy:2271
 translate chinese ore_intro_1e57b69d:
 
     # "Miner" "The guards here, they're extra lazy. They don't bother to check the perimeter outside of the main gate, ever."
-    "Miner" "The guards here, they're extra lazy. They don't bother to check the perimeter outside of the main gate, ever."
+    "矿工" "这里的警卫特别懒。他们从来没有检查过大门外面的周长。"
 
 # game/BKevents.rpy:2273
 translate chinese ore_intro_c96f2868:
 
     # "Miner" "I could smuggle small amounts of ore through that hole in the fence, see? They'd be none the wiser."
-    "Miner" "I could smuggle small amounts of ore through that hole in the fence, see? They'd be none the wiser."
+    "矿工" "我可以从栅栏上的洞里走私少量的矿石，明白吗?他们不会知道的。"
 
 # game/BKevents.rpy:2275
 translate chinese ore_intro_83327430:
 
     # you "And give it to me? For what?"
-    you "And give it to me? For what?"
+    you "把它给我?为了什么?"
 
 # game/BKevents.rpy:2277
 translate chinese ore_intro_9eb7970c:
@@ -1408,43 +1408,43 @@ translate chinese ore_intro_9eb7970c:
 translate chinese ore_intro_5617ed9b:
 
     # you "So I find some buyers and sell them your ore. What's in it for me? Do I get a share of the gold?"
-    you "So I find some buyers and sell them your ore. What's in it for me? Do I get a share of the gold?"
+    you "所以我找到一些买家，把你们的矿石卖给他们。这对我有什么好处?我能分得一份金币吗?"
 
 # game/BKevents.rpy:2282
 translate chinese ore_intro_e3eb1f6e:
 
     # "Miner" "Nah, that wouldn't do. We need all the cash we can get up here. Booze and whores ain't cheap, ya know? And we need plenty of both to keep goin'."
-    "Miner" "Nah, that wouldn't do. We need all the cash we can get up here. Booze and whores ain't cheap, ya know? And we need plenty of both to keep goin'."
+    "矿工" "不，那不行。我们需要所有能弄到的现金。酒和妓女可不便宜，你知道吗?我们需要两者兼备才能继续前进。"
 
 # game/BKevents.rpy:2284
 translate chinese ore_intro_6706c383:
 
     # "Miner" "But listen. When you come back and give us our due, I'll give you some of the extra ore lying around for free. You can keep it or sell it, as you wish."
-    "Miner" "But listen. When you come back and give us our due, I'll give you some of the extra ore lying around for free. You can keep it or sell it, as you wish."
+    "矿工" "但听。等你们回来把应得的钱还给我们时，我就把闲置的多余的矿石免费送给你们。你可以留着它，也可以卖掉它，随你的便。"
 
 # game/BKevents.rpy:2286
 translate chinese ore_intro_96821c89:
 
     # you "I see... And how do you know I won't just sell your ore and steal your money?"
-    you "I see... And how do you know I won't just sell your ore and steal your money?"
+    you "明白了。。。你怎么知道我不会卖掉你的矿石然后偷走你的钱?"
 
 # game/BKevents.rpy:2288
 translate chinese ore_intro_289165cb:
 
     # "He chuckles."
-    "He chuckles."
+    "他笑着说。"
 
 # game/BKevents.rpy:2290
 translate chinese ore_intro_ff8431ea:
 
     # "Miner" "We've thought about that, of course... That's why I'm only ever going to give you small amounts of ore to sell, anyway."
-    "Miner" "We've thought about that, of course... That's why I'm only ever going to give you small amounts of ore to sell, anyway."
+    "矿工" "我们已经考虑过了，当然……这就是为什么我只会给你少量的矿石来卖。"
 
 # game/BKevents.rpy:2292
 translate chinese ore_intro_6930cd31:
 
     # "Miner" "If you burn us, the deal is off, and you'd better never come back. Plus you might find yourself shanked in the back unexpectedly on a dark night..."
-    "Miner" "If you burn us, the deal is off, and you'd better never come back. Plus you might find yourself shanked in the back unexpectedly on a dark night..."
+    "矿工" "如果你烧了我们，交易就泡汤了，你最好别再回来了。此外，你可能会发现自己在一个黑暗的夜晚意外地被锁在后面……"
 
 # game/BKevents.rpy:2294
 translate chinese ore_intro_0a782f4d:
@@ -1456,25 +1456,25 @@ translate chinese ore_intro_0a782f4d:
 translate chinese ore_intro_97d12466:
 
     # "He spits in his hand and holds it out for you to shake it. You look at his dirty paw with some disgust."
-    "He spits in his hand and holds it out for you to shake it. You look at his dirty paw with some disgust."
+    "他嘴里吐着唾沫，伸出手来让你握。你厌恶地看着他那肮脏的爪子。"
 
 # game/BKevents.rpy:2298
 translate chinese ore_intro_6f2f4fc4:
 
     # you "I'll give it some thinking."
-    you "I'll give it some thinking."
+    you "我要仔细考虑一下。"
 
 # game/BKevents.rpy:2300
 translate chinese ore_intro_e19eeae9:
 
     # "He smirks."
-    "He smirks."
+    "他笑了起来。"
 
 # game/BKevents.rpy:2302
 translate chinese ore_intro_d12a6e55:
 
     # "Miner" "Suit yerself, brother. Make up your mind quickly, though, before I offer the deal to someone else."
-    "Miner" "Suit yerself, brother. Make up your mind quickly, though, before I offer the deal to someone else."
+    "矿工" "适合自己,兄弟。不过，在我把这笔交易卖给别人之前，你得赶快做出决定。"
 
 # game/BKevents.rpy:2306
 translate chinese ore_intro_6e3d37b3:
@@ -1486,13 +1486,13 @@ translate chinese ore_intro_6e3d37b3:
 translate chinese diamond_intro_d80ef30c:
 
     # "As you enjoy the sight of Zan's mighty waterfalls, you hear an eery noise that makes your hair stand."
-    "As you enjoy the sight of Zan's mighty waterfalls, you hear an eery noise that makes your hair stand."
+    "当你欣赏赞壮观的瀑布时，你会听到一种让你毛骨悚然的声音。"
 
 # game/BKevents.rpy:2321
 translate chinese diamond_intro_f4da045c:
 
     # you "S-Spooky... Are there ghosts here?"
-    you "S-Spooky... Are there ghosts here?"
+    you "S-Spooky……这里有鬼吗?"
 
 # game/BKevents.rpy:2323
 translate chinese diamond_intro_caf34ba3:
@@ -1504,55 +1504,55 @@ translate chinese diamond_intro_caf34ba3:
 translate chinese diamond_intro_8ef6fd14:
 
     # "Old man" "Look alive, kid! This ain't no supernatural sound."
-    "Old man" "Look alive, kid! This ain't no supernatural sound."
+    "老人" "快点,孩子!这不是什么超自然的声音。"
 
 # game/BKevents.rpy:2327
 translate chinese diamond_intro_662a5aa3:
 
     # you "It-It's not?"
-    you "It-It's not?"
+    you "它不是吗?"
 
 # game/BKevents.rpy:2329
 translate chinese diamond_intro_30d0c355:
 
     # "Old man" "Hells no. It's just the wind running through the caves behind the waterfall."
-    "Old man" "Hells no. It's just the wind running through the caves behind the waterfall."
+    "老人" "没有。只是风穿过瀑布后面的洞穴。"
 
 # game/BKevents.rpy:2331
 translate chinese diamond_intro_f4dc0fa7:
 
     # you "Caves, you say?"
-    you "Caves, you say?"
+    you "洞穴,你说什么?"
 
 # game/BKevents.rpy:2333
 translate chinese diamond_intro_4d26ea10:
 
     # "Old man" "Oh, yes! There's a huge network of caves that starts there and runs through the whole mountain range. Some say it's many times bigger than Zan, and Zan is the largest city in the world!"
-    "Old man" "Oh, yes! There's a huge network of caves that starts there and runs through the whole mountain range. Some say it's many times bigger than Zan, and Zan is the largest city in the world!"
+    "老人" "哦,是的!有一个巨大的洞穴网络，从那里开始，贯穿整个山脉。有人说它比赞大很多倍，赞是世界上最大的城市!"
 
 # game/BKevents.rpy:2335
 translate chinese diamond_intro_990f348e:
 
     # you "Wow... Is it... Safe?"
-    you "Wow... Is it... Safe?"
+    you "哇……它是……安全吗?"
 
 # game/BKevents.rpy:2337
 translate chinese diamond_intro_88bd6c62:
 
     # "The old man chuckles."
-    "The old man chuckles."
+    "老人咯咯地笑了。"
 
 # game/BKevents.rpy:2339
 translate chinese diamond_intro_7b8238a2:
 
     # "Old man" "Well, people get lost in there more often than not, and die alone in the darkness... Or not alone... But don't listen to those silly stories about the undead!"
-    "Old man" "Well, people get lost in there more often than not, and die alone in the darkness... Or not alone... But don't listen to those silly stories about the undead!"
+    "老人" "嗯，人们经常在那里迷路，孤独地死在黑暗中……或者不是一个人…但是不要听那些关于不死族的愚蠢故事!"
 
 # game/BKevents.rpy:2341
 translate chinese diamond_intro_69e34b9b:
 
     # you "Un... Undead?"
-    you "Un... Undead?"
+    you "不…不死吗?"
 
 # game/BKevents.rpy:2343
 translate chinese diamond_intro_76e695f8:
@@ -1564,79 +1564,79 @@ translate chinese diamond_intro_76e695f8:
 translate chinese diamond_intro_d8940c87:
 
     # you "GIANT BLOOD-SUCKING BATS?"
-    you "GIANT BLOOD-SUCKING BATS?"
+    you "巨大的吸血蝙蝠?"
 
 # game/BKevents.rpy:2347
 translate chinese diamond_intro_41d744c3:
 
     # "Old man" "Oh, yes! Some are big as a pony!"
-    "Old man" "Oh, yes! Some are big as a pony!"
+    "老人" "哦,是的!有些像小马那么大!"
 
 # game/BKevents.rpy:2349
 translate chinese diamond_intro_b520bee4:
 
     # you "Why would anyone ever go there!!!"
-    you "Why would anyone ever go there!!!"
+    you "为什么会有人去那里!!"
 
 # game/BKevents.rpy:2351
 translate chinese diamond_intro_fef2b347:
 
     # "Old man" "Why, for the diamonds of course."
-    "Old man" "Why, for the diamonds of course."
+    "老人" "当然是为了钻石。"
 
 # game/BKevents.rpy:2353
 translate chinese diamond_intro_0d0d38e8:
 
     # you "Diamonds?"
-    you "Diamonds?"
+    you "钻石?"
 
 # game/BKevents.rpy:2355
 translate chinese diamond_intro_a7efe856:
 
     # "Old man" "Yes... There are places in the caves where you can just pick them right up from the mud. Many adventurers try their luck there."
-    "Old man" "Yes... There are places in the caves where you can just pick them right up from the mud. Many adventurers try their luck there."
+    "老人" "是的。。。洞穴里有些地方你可以直接从泥里把它们捡起来。许多冒险家在那里碰运气。"
 
 # game/BKevents.rpy:2357
 translate chinese diamond_intro_724ebeec:
 
     # you "How come the King or the nobles haven't got their hands on these diamonds first?"
-    you "How come the King or the nobles haven't got their hands on these diamonds first?"
+    you "为什么国王或贵族没有先得到这些钻石呢?"
 
 # game/BKevents.rpy:2359
 translate chinese diamond_intro_2e3e416b:
 
     # "Old man" "Oh, believe you me, they've tried! *chuckle* But it's no use sending an army in there, most passageways are only broad enough for a single man... And there are pockets with so little air to breathe, the large parties would just suffocate."
-    "Old man" "Oh, believe you me, they've tried! *chuckle* But it's no use sending an army in there, most passageways are only broad enough for a single man... And there are pockets with so little air to breathe, the large parties would just suffocate."
+    "老人" "相信我，他们已经试过了!“咯咯地笑”，但派军队进去也没用，大多数通道只够一个人通过……而且这里的空气太少，大型派对会窒息而死。"
 
 # game/BKevents.rpy:2361
 translate chinese diamond_intro_28437bc6:
 
     # "Old man" "So they are content to just buy their diamonds from careless adventurers like the rest of us sensible folks do."
-    "Old man" "So they are content to just buy their diamonds from careless adventurers like the rest of us sensible folks do."
+    "老人" "所以他们满足于从粗心的冒险家那里购买钻石，就像我们这些明智的人一样。"
 
 # game/BKevents.rpy:2363
 translate chinese diamond_intro_9cca1607:
 
     # "Old man" "Not that I'd have the means to buy any, mind you... Say, young one, care to spare a denar?"
-    "Old man" "Not that I'd have the means to buy any, mind you... Say, young one, care to spare a denar?"
+    "老人" "提醒你，我可没钱买……喂，小伙子，你愿意给我一个银币吗?"
 
 # game/BKevents.rpy:2365
 translate chinese diamond_intro_9b9a5b26:
 
     # you "*sigh*, here you go... Thanks for the information, though."
-    you "*sigh*, here you go... Thanks for the information, though."
+    you "*叹气*，给你……不过，还是要谢谢你提供的信息。"
 
 # game/BKevents.rpy:2372
 translate chinese diamond_intro_eac14305:
 
     # "You paid the old man 50 gold. You have discovered that you can sometimes find {b}diamonds{/b} in the caves behind the waterfall."
-    "You paid the old man 50 gold. You have discovered that you can sometimes find {b}diamonds{/b} in the caves behind the waterfall."
+    "你付给那位老人50金币。你发现你有时能在瀑布后面的洞穴里找到钻石。"
 
 # game/BKevents.rpy:2425
 translate chinese test_challenges_d320cc6e:
 
     # "You ran away."
-    "You ran away."
+    "你跑掉了。"
 
 # game/BKevents.rpy:2438
 translate chinese shop_restock_intro_0417c7d0:
@@ -1750,25 +1750,25 @@ translate chinese shop_restock_intro_b50cf8fd:
 translate chinese visit_thieves_guild_75fd26da:
 
     # renza "Oh, hi, [MC.name]. Come to check on my merchandise?"
-    renza "Oh, hi, [MC.name]. Come to check on my merchandise?"
+    renza "哦,你好,[MC.name]。来检查我的商品吗?"
 
 # game/BKevents.rpy:2511
 translate chinese visit_thieves_guild_2b2883c7:
 
     # "You swallow hard as you take a good look at her juicy body."
-    "You swallow hard as you take a good look at her juicy body."
+    "当你仔细看她多汁的身体时，你用力吞咽。"
 
 # game/BKevents.rpy:2517
 translate chinese thieves_guild_menu_cf938780:
 
     # renza "Hey, it's rude to stare!" nointeract
-    renza "Hey, it's rude to stare!" nointeract
+    renza "嘿，盯着看是不礼貌的!" nointeract
 
 # game/BKevents.rpy:2525
 translate chinese thieves_guild_menu_6c4c57a0:
 
     # renza "I give you access to some of our merchandise. It's stuff that, err, fell off the back of a cart, so to speak."
-    renza "I give you access to some of our merchandise. It's stuff that, err, fell off the back of a cart, so to speak."
+    renza "我让你有权使用我们的一些商品。这些东西，呃，可以说是从车后座上掉下来的。"
 
 # game/BKevents.rpy:2527
 translate chinese thieves_guild_menu_94a21cda:
@@ -1780,67 +1780,67 @@ translate chinese thieves_guild_menu_94a21cda:
 translate chinese thieves_guild_menu_70db56a6:
 
     # renza "But you must understand and accept my rules"
-    renza "But you must understand and accept my rules"
+    renza "但你必须理解并接受我的规则"
 
 # game/BKevents.rpy:2532
 translate chinese thieves_guild_menu_2879f742:
 
     # renza "You are never to tell anyone about me, or the location of this place. You mustn't brag about your connection to us, or otherwise reveal it to anyone. The penalty for betrayal is... a dagger to the neck. Are we clear?"
-    renza "You are never to tell anyone about me, or the location of this place. You mustn't brag about your connection to us, or otherwise reveal it to anyone. The penalty for betrayal is... a dagger to the neck. Are we clear?"
+    renza "你永远不能告诉任何人关于我的事，或者这个地方的位置。你不能吹嘘你和我们的关系，否则就把它泄露给任何人。背叛的惩罚是……脖子上的匕首。我们清楚吗?"
 
 # game/BKevents.rpy:2535
 translate chinese thieves_guild_menu_15d6b866:
 
     # you "Yes."
-    you "Yes."
+    you "是的。"
 
 # game/BKevents.rpy:2537
 translate chinese thieves_guild_menu_5e6ec244:
 
     # renza "Brilliant! Oh, and as long as we're dealing, you buy what's here at face value, and there is no refund. I don't wanna hear any complaints, ok?"
-    renza "Brilliant! Oh, and as long as we're dealing, you buy what's here at face value, and there is no refund. I don't wanna hear any complaints, ok?"
+    renza "辉煌!只要我们还在交易，你就按面值买，不退钱。我不想听到任何抱怨，好吗?"
 
 # game/BKevents.rpy:2540
 translate chinese thieves_guild_menu_b84dc7d7:
 
     # you "Fine."
-    you "Fine."
+    you "很好。"
 
 # game/BKevents.rpy:2542
 translate chinese thieves_guild_menu_b1330478:
 
     # renza "Looking forward to doing business with you."
-    renza "Looking forward to doing business with you."
+    renza "期待与您做生意。"
 
 # game/BKevents.rpy:2544
 translate chinese thieves_guild_menu_56716cb5:
 
     # renza "Oh, and don't forget... I am doing you a favour. I will expect it repaid some day."
-    renza "Oh, and don't forget... I am doing you a favour. I will expect it repaid some day."
+    renza "哦，别忘了……我在帮你的忙。我希望有一天它能得到偿还。"
 
 # game/BKevents.rpy:2546
 translate chinese thieves_guild_menu_846e86e7:
 
     # "You're not sure what she means by that."
-    "You're not sure what she means by that."
+    "你不知道她那是什么意思。"
 
 # game/BKevents.rpy:2582
 translate chinese thieves_guild_loop_925b5292:
 
     # "As soon as you take the item from Renza's hands, however, you realize it's in very poor condition."
-    "As soon as you take the item from Renza's hands, however, you realize it's in very poor condition."
+    "然而，当你从伦萨手中接过这件物品时，你意识到它的状况非常糟糕。"
 
 # game/BKevents.rpy:2584
 translate chinese thieves_guild_loop_611a0c38:
 
     # you "Renza, what's this..."
-    you "Renza, what's this..."
+    you "Renza,这是什么……"
 
 # game/BKevents.rpy:2586
 translate chinese thieves_guild_loop_d7f7fa6b:
 
     # renza "No refunds! You know that."
-    renza "No refunds! You know that."
+    renza "不退款!你知道的。"
 
 # game/BKevents.rpy:2593
 translate chinese thieves_guild_loop_60d2662d:
@@ -1852,103 +1852,103 @@ translate chinese thieves_guild_loop_60d2662d:
 translate chinese thieves_guild_loop_1bdcf451:
 
     # renza "A pleasure doing business with you."
-    renza "A pleasure doing business with you."
+    renza "很高兴和你做生意。"
 
 # game/BKevents.rpy:2608
 translate chinese thieves_guild_loop_e4eda9c5:
 
     # you "Damn, I don't have the money right now..."
-    you "Damn, I don't have the money right now..."
+    you "该死，我现在没有钱……"
 
 # game/BKevents.rpy:2609
 translate chinese thieves_guild_loop_3676e4ee:
 
     # renza "Buddy, don't waste my time."
-    renza "Buddy, don't waste my time."
+    renza "老兄，别浪费我的时间。"
 
 # game/BKevents.rpy:2617
 translate chinese thieves_guild_loop_c092462a:
 
     # renza "Well, that's too bad then. See ya!"
-    renza "Well, that's too bad then. See ya!"
+    renza "那太糟了。再见!"
 
 # game/BKevents.rpy:2624
 translate chinese thieves_guild_loop_cc7a6c99:
 
     # renza "I have no extra items to sell this week. Why don't you come back next week? Items fall off merchant wagons all the time!"
-    renza "I have no extra items to sell this week. Why don't you come back next week? Items fall off merchant wagons all the time!"
+    renza "这个星期我没有多余的东西卖了。你为什么不下周再来?商品总是从商用车上掉下来!"
 
 # game/BKevents.rpy:2639
 translate chinese visit_watchtower_549e1840:
 
     # captain "Hi, [MC.name]! Have you come here for business, or... pleasure?"
-    captain "Hi, [MC.name]! Have you come here for business, or... pleasure?"
+    captain "嗨,[MC.name] !你是来这里办公的，还是……快乐吗?"
 
 # game/BKevents.rpy:2641
 translate chinese visit_watchtower_2c24f82c:
 
     # "Her gorgeous tits are bouncing in an hypnotic way as she says that."
-    "Her gorgeous tits are bouncing in an hypnotic way as she says that."
+    "当她说这话的时候，她美丽的乳房在催眠般的跳动着。"
 
 # game/BKevents.rpy:2643
 translate chinese visit_watchtower_83095176:
 
     # "You try and snap out of it."
-    "You try and snap out of it."
+    "你试着振作起来。"
 
 # game/BKevents.rpy:2649
 translate chinese watchtower_menu_4435a990:
 
     # captain "So what will it be?" nointeract
-    captain "So what will it be?" nointeract
+    captain "那是什么呢?" nointeract
 
 # game/BKevents.rpy:2657
 translate chinese watchtower_menu_e177234b:
 
     # captain "Why, pleasant company, of course! *wink*"
-    captain "Why, pleasant company, of course! *wink*"
+    captain "当然是愉快的伙伴啦!*眨眼*"
 
 # game/BKevents.rpy:2659
 translate chinese watchtower_menu_496e133f:
 
     # captain "This is my vault, where I store all the goodies I confiscate from the unruly peons in the slums."
-    captain "This is my vault, where I store all the goodies I confiscate from the unruly peons in the slums."
+    captain "这是我的储藏室，我把从贫民窟里那些不守规矩的人那里没收来的所有好东西都存放在这里。"
 
 # game/BKevents.rpy:2661
 translate chinese watchtower_menu_00d5992e:
 
     # captain "I get to keep the gold and the shiny bits, but every once in a while, some unusual item is confiscated that I don't have a use for. In that case, I'll offer it to you for a good price."
-    captain "I get to keep the gold and the shiny bits, but every once in a while, some unusual item is confiscated that I don't have a use for. In that case, I'll offer it to you for a good price."
+    captain "我可以留着那些金币和闪闪发光的东西，但每隔一段时间，就会有一些不寻常的东西被没收，而这些东西我根本用不着。那样的话，我就出个好价钱卖给你。"
 
 # game/BKevents.rpy:2664
 translate chinese watchtower_menu_16588167:
 
     # captain "My conditions are final, take it or leave it. You'll have to buy the stuff on offer at face value."
-    captain "My conditions are final, take it or leave it. You'll have to buy the stuff on offer at face value."
+    captain "我的条件是最后决定，你要不要随你。你必须按我提供的价格购买这些商品。"
 
 # game/BKevents.rpy:2666
 translate chinese watchtower_menu_89980ca0:
 
     # captain "Also, I can get you one item per week, no more. I can't have you coming and going into my vault all day."
-    captain "Also, I can get you one item per week, no more. I can't have you coming and going into my vault all day."
+    captain "此外，我可以每周给你一个物品，不能更多。我不能让你整天在我的保险库里进进出出。"
 
 # game/BKevents.rpy:2707
 translate chinese watchtower_loop_4d8d1215:
 
     # "As soon as you take the item from the vault to examine it closer, however, you realize it's in very poor condition."
-    "As soon as you take the item from the vault to examine it closer, however, you realize it's in very poor condition."
+    "然而，当你从保险库里取出物品仔细检查时，你会发现它的状况非常糟糕。"
 
 # game/BKevents.rpy:2709
 translate chinese watchtower_loop_8a8b91e0:
 
     # you "Farah, what's this..."
-    you "Farah, what's this..."
+    you "法拉,这是什么……"
 
 # game/BKevents.rpy:2711
 translate chinese watchtower_loop_13051140:
 
     # captain "Hey, you break it, you own it. You know the rules"
-    captain "Hey, you break it, you own it. You know the rules"
+    captain "嘿，是你打破它的，这是你的。你知道规则的"
 
 # game/BKevents.rpy:2718
 translate chinese watchtower_loop_60d2662d:
@@ -1960,25 +1960,25 @@ translate chinese watchtower_loop_60d2662d:
 translate chinese watchtower_loop_bd9a46e9:
 
     # "The captain purrs as she counts your gold."
-    "The captain purrs as she counts your gold."
+    "队长一边咕噜咕噜地数着你的金币。"
 
 # game/BKevents.rpy:2730
 translate chinese watchtower_loop_8ad6a5c4:
 
     # captain "Thank for your purchase..."
-    captain "Thank for your purchase..."
+    captain "感谢您的购买……"
 
 # game/BKevents.rpy:2734
 translate chinese watchtower_loop_86306bf7:
 
     # "She is giving you a strange look."
-    "She is giving you a strange look."
+    "她用一种奇怪的眼神看着你。"
 
 # game/BKevents.rpy:2736
 translate chinese watchtower_loop_86c4f09d:
 
     # captain "[MC.name], I think I can show you a fun way to use this..."
-    captain "[MC.name], I think I can show you a fun way to use this..."
+    captain "[MC.name]，我想我可以告诉你一个有趣的用法……"
 
 # game/BKevents.rpy:2738
 translate chinese watchtower_loop_26cef28f:
@@ -1990,43 +1990,43 @@ translate chinese watchtower_loop_26cef28f:
 translate chinese watchtower_loop_86402db0:
 
     # captain "Why don't you follow me into my chamber?"
-    captain "Why don't you follow me into my chamber?"
+    captain "你为什么不跟着我进我的房间?"
 
 # game/BKevents.rpy:2753
 translate chinese watchtower_loop_03f2b1a5:
 
     # captain "Mmh... Let me relieve you of these useless clothes."
-    captain "Mmh... Let me relieve you of these useless clothes."
+    captain "嗯……让我给你脱下这些没用的衣服。"
 
 # game/BKevents.rpy:2762
 translate chinese watchtower_loop_a0c8efcd:
 
     # captain "That's it [MC.name]... Yes, go deeper..."
-    captain "That's it [MC.name]... Yes, go deeper..."
+    captain "就这样.. [MC.name]...是的, 更深些..."
 
 # game/BKevents.rpy:2764
 translate chinese watchtower_loop_94ba5a5f:
 
     # captain "Oh... I'm... I'm cummmiiiing!!!"
-    captain "Oh... I'm... I'm cummmiiiing!!!"
+    captain "哦……来了…我要去了! ! !"
 
 # game/BKevents.rpy:2773
 translate chinese watchtower_loop_59c9a20e:
 
     # captain "Oh, [MC.name] look at the mess you've made... All sticky and gross..."
-    captain "Oh, [MC.name] look at the mess you've made... All sticky and gross..."
+    captain "噢，[MC.name]看看你弄得一团糟……又黏又恶心……"
 
 # game/BKevents.rpy:2775
 translate chinese watchtower_loop_21f01e6c:
 
     # captain "I'll have to ask my maid to lick it all out..."
-    captain "I'll have to ask my maid to lick it all out..."
+    captain "我得让我的女仆把它舔干净……"
 
 # game/BKevents.rpy:2782
 translate chinese watchtower_loop_cfed8eaa:
 
     # you "Sorry Farah, I gotta go."
-    you "Sorry Farah, I gotta go."
+    you "对不起，法拉，我得走了。"
 
 # game/BKevents.rpy:2784
 translate chinese watchtower_loop_4748c761:
@@ -2038,7 +2038,7 @@ translate chinese watchtower_loop_4748c761:
 translate chinese watchtower_loop_2e0b23cb:
 
     # captain "Thank you for your purchase. Now, scram."
-    captain "Thank you for your purchase. Now, scram."
+    captain "谢谢您的购买。现在，滚。"
 
 # game/BKevents.rpy:2794
 translate chinese watchtower_loop_e4eda9c5:
@@ -2050,13 +2050,13 @@ translate chinese watchtower_loop_e4eda9c5:
 translate chinese watchtower_loop_52fb644d:
 
     # captain "What? No money? Get out!!!"
-    captain "What? No money? Get out!!!"
+    captain "什么?没有钱吗?滚出去! ! !"
 
 # game/BKevents.rpy:2803
 translate chinese watchtower_loop_3ff613d4:
 
     # captain "Well, stop wasting my time, then. Bye now."
-    captain "Well, stop wasting my time, then. Bye now."
+    captain "好吧，那就别浪费我的时间了。现在再见。"
 
 # game/BKevents.rpy:2810
 translate chinese watchtower_loop_432ecb53:
@@ -2068,7 +2068,7 @@ translate chinese watchtower_loop_432ecb53:
 translate chinese visit_gina_f525d03b:
 
     # gina "Oh, [MC.name]. Have you found anything good for me?"
-    gina "Oh, [MC.name]. Have you found anything good for me?"
+    gina "哦,[MC.name]。你找到适合我的东西了吗?"
 
 # game/BKevents.rpy:2847
 translate chinese visit_gina_2dd36086:
@@ -2080,19 +2080,19 @@ translate chinese visit_gina_2dd36086:
 translate chinese visit_gina_5da993fb:
 
     # gina "Ooh, let me have a look! I hope it's good!"
-    gina "Ooh, let me have a look! I hope it's good!"
+    gina "哦，让我看看!我希望它是好的!"
 
 # game/BKevents.rpy:2853
 translate chinese visit_gina_52f29610:
 
     # gina "All right, this is what I'll pay for what you have."
-    gina "All right, this is what I'll pay for what you have."
+    gina "好吧，这是我给你的钱。"
 
 # game/BKevents.rpy:2872
 translate chinese visit_gina_6d1b2fc1:
 
     # gina "I'll give you [it.price] gold for the [it.name]. Is that fair?"
-    gina "I'll give you [it.price] gold for the [it.name]. Is that fair?"
+    gina "我给你[it.price]枚金币换[it.name]。这公平吗?"
 
 # game/BKevents.rpy:2875
 translate chinese visit_gina_11fdb519:
@@ -2104,163 +2104,163 @@ translate chinese visit_gina_11fdb519:
 translate chinese visit_gina_a3fe0428:
 
     # gina "There you go."
-    gina "There you go."
+    gina "那就这样吧。"
 
 # game/BKevents.rpy:2886
 translate chinese visit_gina_0b720346:
 
     # gina "For me, really, for free? I... I don't know what to say... *blush*"
-    gina "For me, really, for free? I... I don't know what to say... *blush*"
+    gina "对我来说，真的，免费吗?我。。。我不知道该说什么…*脸红*"
 
 # game/BKevents.rpy:2892
 translate chinese visit_gina_7e1e4906:
 
     # gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
-    gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
+    gina "这是一个令人惊奇的人工制品…你一定花了很多钱才买到它……你真让我高兴。*脸红*"
 
 # game/BKevents.rpy:2895
 translate chinese visit_gina_099cc97d:
 
     # you "No thanks."
-    you "No thanks."
+    you "不,谢谢。"
 
 # game/BKevents.rpy:2901
 translate chinese visit_gina_48af9894:
 
     # gina "Great! I can get started on some research right now. Who knows, I might even find something that would be useful to you... Then I can sell it back to you for a premium!"
-    gina "Great! I can get started on some research right now. Who knows, I might even find something that would be useful to you... Then I can sell it back to you for a premium!"
+    gina "太棒了!我现在可以开始做一些研究了。谁知道呢，我甚至可能找到对你有用的东西……然后我可以把它卖回给你溢价!"
 
 # game/BKevents.rpy:2902
 translate chinese visit_gina_1c4486bb:
 
     # you "Uh... Yay?"
-    you "Uh... Yay?"
+    you "嗯…耶?"
 
 # game/BKevents.rpy:2906
 translate chinese visit_gina_12f092f2:
 
     # gina "This will help with my research."
-    gina "This will help with my research."
+    gina "这将有助于我的研究。"
 
 # game/BKevents.rpy:2909
 translate chinese visit_gina_8901e3c5:
 
     # gina "I knew it! This fragment..."
-    gina "I knew it! This fragment..."
+    gina "我就知道!这个片段……"
 
 # game/BKevents.rpy:2910
 translate chinese visit_gina_19892b97:
 
     # you "What is it?"
-    you "What is it?"
+    you "它是什么?"
 
 # game/BKevents.rpy:2911
 translate chinese visit_gina_591b6b55:
 
     # gina "It's..."
-    gina "It's..."
+    gina "这是……"
 
 # game/BKevents.rpy:2912
 translate chinese visit_gina_ae7781c2:
 
     # gina "It's fucking useless!!!" with vpunch
-    gina "It's fucking useless!!!" with vpunch
+    gina "这是他妈的没用! ! !" with vpunch
 
 # game/BKevents.rpy:2913
 translate chinese visit_gina_cdd9076e:
 
     # you "Uh?"
-    you "Uh?"
+    you "呃?"
 
 # game/BKevents.rpy:2914
 translate chinese visit_gina_15278a82:
 
     # gina "For flying! Useless! It's just a piece of some stupid machine..."
-    gina "For flying! Useless! It's just a piece of some stupid machine..."
+    gina "飞行!没用的!它只是一个愚蠢的机器……"
 
 # game/BKevents.rpy:2915
 translate chinese visit_gina_ab187a62:
 
     # you "What machine?"
-    you "What machine?"
+    you "什么机器?"
 
 # game/BKevents.rpy:2916
 translate chinese visit_gina_56f881b3:
 
     # gina "The runes say something like... 'Resource extractor'. Whatever that means. That's just antique junk."
-    gina "The runes say something like... 'Resource extractor'. Whatever that means. That's just antique junk."
+    gina "符文是这样说的……“资源器”。不管这意味着什么。那只是古董垃圾。"
 
 # game/BKevents.rpy:2917
 translate chinese visit_gina_a1fd486a:
 
     # you "Let me have a look."
-    you "Let me have a look."
+    you "让我看看。"
 
 # game/BKevents.rpy:2918
 translate chinese visit_gina_07c9de7e:
 
     # gina "It's in my inventory, you can buy it from me if you want. But I spent a lot of time researching this, so don't think I'll just give it away."
-    gina "It's in my inventory, you can buy it from me if you want. But I spent a lot of time researching this, so don't think I'll just give it away."
+    gina "它在我的存货中，如果你想买，可以从我这里买。但是我花了很多时间研究这个，所以不要以为我会把它泄露出去。"
 
 # game/BKevents.rpy:2919
 translate chinese visit_gina_a8a078ef:
 
     # you "I thought you said it was junk..."
-    you "I thought you said it was junk..."
+    you "我以为你说那是垃圾…"
 
 # game/BKevents.rpy:2920
 translate chinese visit_gina_59eb4142:
 
     # gina "{i}Antique{/i} junk!" with vpunch
-    gina "{i}Antique{/i} junk!" with vpunch
+    gina "{i}古董{/i}垃圾!" with vpunch
 
 # game/BKevents.rpy:2926
 translate chinese visit_gina_26e257b0:
 
     # gina "Wait a minute... I'm pretty sure I've seen a similar symbol somewhere..."
-    gina "Wait a minute... I'm pretty sure I've seen a similar symbol somewhere..."
+    gina "等一下…我很确定我在什么地方见过类似的符号……"
 
 # game/BKevents.rpy:2927
 translate chinese visit_gina_8c451c6f:
 
     # "Gina frantically rummages through her research papers."
-    "Gina frantically rummages through her research papers."
+    "吉娜疯狂地翻看她的研究论文。"
 
 # game/BKevents.rpy:2928
 translate chinese visit_gina_dceecf99:
 
     # gina "Here!" with vpunch
-    gina "Here!" with vpunch
+    gina "这里!" with vpunch
 
 # game/BKevents.rpy:2929
 translate chinese visit_gina_109696d9:
 
     # "She brandishes a strange schematics, glittering with strange runes and symbols."
-    "She brandishes a strange schematics, glittering with strange runes and symbols."
+    "她挥舞着一个奇怪的图表，闪烁着奇怪的符文和符号。"
 
 # game/BKevents.rpy:2930
 translate chinese visit_gina_aeddf3e8:
 
     # you "Is this... Cimerian script? You understand it, right?"
-    you "Is this... Cimerian script? You understand it, right?"
+    you "这是……基梅里脚本?你懂的，对吧?"
 
 # game/BKevents.rpy:2931
 translate chinese visit_gina_305b8c0d:
 
     # gina "Of course I do! Unfortunately, this one is completely indecipherable. It was written by a Cimerian doctor."
-    gina "Of course I do! Unfortunately, this one is completely indecipherable. It was written by a Cimerian doctor."
+    gina "我当然喜欢!不幸的是，这个是完全无法解释的。它是由一位基梅里医生写的。"
 
 # game/BKevents.rpy:2932
 translate chinese visit_gina_d753d5f3:
 
     # you "Oh. I see."
-    you "Oh. I see."
+    you "哦。我明白了。"
 
 # game/BKevents.rpy:2933
 translate chinese visit_gina_a7ac65de:
 
     # gina "Judging from this symbol, it seems to be a medical station of sorts."
-    gina "Judging from this symbol, it seems to be a medical station of sorts."
+    gina "从这个符号来看，它似乎是某种医疗站。"
 
 # game/BKevents.rpy:2934
 translate chinese visit_gina_de237c46:
@@ -2272,343 +2272,343 @@ translate chinese visit_gina_de237c46:
 translate chinese visit_gina_50c5ba5e:
 
     # you "And I suppose you're not giving it away for free?"
-    you "And I suppose you're not giving it away for free?"
+    you "我想你不会免费送人吧?"
 
 # game/BKevents.rpy:2936
 translate chinese visit_gina_566e3c9c:
 
     # gina "What do you think! Ground-breaking research is a costly endeavor, you know!"
-    gina "What do you think! Ground-breaking research is a costly endeavor, you know!"
+    gina "你觉得怎么样?你知道，突破性的研究是一项耗资巨大的工作!"
 
 # game/BKevents.rpy:2937
 translate chinese visit_gina_eff6b083:
 
     # you "Speaking of 'ground-breaking', any more plans to fly off a cliff and crash down in the mud?"
-    you "Speaking of 'ground-breaking', any more plans to fly off a cliff and crash down in the mud?"
+    you "说到“破土动工”，还有人打算从悬崖上飞下去，然后一头扎进泥里吗?"
 
 # game/BKevents.rpy:2938
 translate chinese visit_gina_4d45df1c:
 
     # gina "Why you... Grrr... *angry*"
-    gina "Why you... Grrr... *angry*"
+    gina "你为什么…叽阿…*愤怒*"
 
 # game/BKevents.rpy:2943
 translate chinese visit_gina_168315b4:
 
     # gina "Wait, what do we have here? I think I know where this goes..."
-    gina "Wait, what do we have here? I think I know where this goes..."
+    gina "等等，这是什么?我想我知道这是怎么回事…"
 
 # game/BKevents.rpy:2944
 translate chinese visit_gina_22b6fa21:
 
     # you "Oh yeah? A new device?"
-    you "Oh yeah? A new device?"
+    you "哦,是吗?新设备?"
 
 # game/BKevents.rpy:2945
 translate chinese visit_gina_770035fd:
 
     # gina "I wish... But it's just one of those stupid extraction machines..."
-    gina "I wish... But it's just one of those stupid extraction machines..."
+    gina "我希望……但它只是那些愚蠢的萃取机之一…"
 
 # game/BKevents.rpy:2946
 translate chinese visit_gina_d8a3d101:
 
     # gina "Except this one looks a lot more powerful. It uses two mana batteries..."
-    gina "Except this one looks a lot more powerful. It uses two mana batteries..."
+    gina "除了这个看起来更强大。它使用两个魔法电池…"
 
 # game/BKevents.rpy:2947
 translate chinese visit_gina_52a49200:
 
     # you "What does it do?"
-    you "What does it do?"
+    you "它是做什么的?"
 
 # game/BKevents.rpy:2949
 translate chinese visit_gina_4f83d26c:
 
     # gina "*sigh* I don't know, and I don't care! This isn't getting us any closer to trans-continental flight!"
-    gina "*sigh* I don't know, and I don't care! This isn't getting us any closer to trans-continental flight!"
+    gina "我不知道，我不在乎!这并没有让我们更接近跨大陆飞行!"
 
 # game/BKevents.rpy:2950
 translate chinese visit_gina_c645fe42:
 
     # you "Trans-continental? How about you stick to gliding from a junk pile to another first?"
-    you "Trans-continental? How about you stick to gliding from a junk pile to another first?"
+    you "横跨大陆了吗?你能不能坚持先从一堆垃圾中滑到另一堆?"
 
 # game/BKevents.rpy:2951
 translate chinese visit_gina_4c90193f:
 
     # gina "Don't mock my scientific ambitions!!!" with vpunch
-    gina "Don't mock my scientific ambitions!!!" with vpunch
+    gina "不要嘲笑我的科学野心!!"
 
 # game/BKevents.rpy:2952
 translate chinese visit_gina_43ae7c5d:
 
     # gina "Anyway. The device is in my inventory if you want to have a look. It's got lots of expensive parts, so expect to cough up a lot of gold for it."
-    gina "Anyway. The device is in my inventory if you want to have a look. It's got lots of expensive parts, so expect to cough up a lot of gold for it."
+    gina "无论如何。如果你想看的话，那台设备在我的存货中。它有很多昂贵的部件，所以预计会花很多钱买它。"
 
 # game/BKevents.rpy:2958
 translate chinese visit_gina_1ba56a67:
 
     # gina "Is this all?"
-    gina "Is this all?"
+    gina "这是所有的吗?"
 
 # game/BKevents.rpy:2960
 translate chinese visit_gina_a56eb94c:
 
     # you "Yeah, that's all for now."
-    you "Yeah, that's all for now."
+    you "是的，就这些。"
 
 # game/BKevents.rpy:2979
 translate chinese visit_goldie_50d707f9:
 
     # goldie "Oh, [MC.name]! It's so nice to see you. How may I help you?" nointeract
-    goldie "Oh, [MC.name]! It's so nice to see you. How may I help you?" nointeract
+    goldie "哦,[MC.name]!很高兴见到你。我能为您做些什么?"
 
 # game/BKevents.rpy:2990
 translate chinese goldie_chat_menu_c89a264e:
 
     # you "How's business?"
-    you "How's business?"
+    you "业务怎么样?"
 
 # game/BKevents.rpy:2992
 translate chinese goldie_chat_menu_330333ae:
 
     # goldie "Oh, business is good, thank you! Ever since you managed to lift that terrible curse, things have been looking up."
-    goldie "Oh, business is good, thank you! Ever since you managed to lift that terrible curse, things have been looking up."
+    goldie "哦，生意很好，谢谢你!自从你解除了那个可怕的诅咒，一切都好起来了。"
 
 # game/BKevents.rpy:2994
 translate chinese goldie_chat_menu_f0c6872c:
 
     # goldie "The animals are no longer afraid of the farm, and are no longer sick or afraid to reproduce."
-    goldie "The animals are no longer afraid of the farm, and are no longer sick or afraid to reproduce."
+    goldie "动物们不再害怕农场，也不再生病或害怕繁殖。"
 
 # game/BKevents.rpy:2996
 translate chinese goldie_chat_menu_e3196363:
 
     # goldie "They seem to be perpetually in heat, in fact. I have never seen them behave in such a way before..."
-    goldie "They seem to be perpetually in heat, in fact. I have never seen them behave in such a way before..."
+    goldie "事实上，它们似乎永远处于高温状态。我以前从未见过他们这样做……"
 
 # game/BKevents.rpy:2998
 translate chinese goldie_chat_menu_ec8d58ff:
 
     # goldie "But I can't complain, because the ranch is flourishing! Soon I'll be able to hire more help, too."
-    goldie "But I can't complain, because the ranch is flourishing! Soon I'll be able to hire more help, too."
+    goldie "但我不能抱怨，因为牧场很繁荣!不久我也能雇到更多的帮手。"
 
 # game/BKevents.rpy:3005
 translate chinese goldie_chat_menu_fb9d6224:
 
     # "You do not have any actions left for today."
-    "You do not have any actions left for today."
+    "你今天没有任何行动了。"
 
 # game/BKevents.rpy:3008
 translate chinese goldie_chat_menu_eda8ff50:
 
     # you "Hey, Goldie. Got a minute?"
-    you "Hey, Goldie. Got a minute?"
+    you "嘿,高迪。有一分钟吗?"
 
 # game/BKevents.rpy:3010
 translate chinese goldie_chat_menu_ff936488:
 
     # goldie "Oh, [MC.name]... What can you possibly have in mind?"
-    goldie "Oh, [MC.name]... What can you possibly have in mind?"
+    goldie "哦,[MC.name]…你有什么想法?"
 
 # game/BKevents.rpy:3017
 translate chinese goldie_chat_menu_1999010b:
 
     # goldie "With pleasure..."
-    goldie "With pleasure..."
+    goldie "与快乐…"
 
 # game/BKevents.rpy:3022
 translate chinese goldie_chat_menu_487b54e2:
 
     # goldie "Oh, you naughty boy..."
-    goldie "Oh, you naughty boy..."
+    goldie "噢，你这个淘气的孩子……"
 
 # game/BKevents.rpy:3029
 translate chinese goldie_chat_menu_a4734fe0:
 
     # goldie "Sorry, [MC.name], I'm spent... We can have some fun another day."
-    goldie "Sorry, [MC.name], I'm spent... We can have some fun another day."
+    goldie "对不起，[MC.name]，我已经……我们可以再找一天玩。"
 
 # game/BKevents.rpy:3033
 translate chinese goldie_chat_menu_285937c1:
 
     # goldie "I thought you'd never ask..."
-    goldie "I thought you'd never ask..."
+    goldie "我以为你永远不会问…"
 
 # game/BKevents.rpy:3063
 translate chinese add_vitals_scanner_2f2e428d:
 
     # carpenter "Oh, heya boss."
-    carpenter "Oh, heya boss."
+    carpenter "哦,你好老板。"
 
 # game/BKevents.rpy:3065
 translate chinese add_vitals_scanner_cb812d72:
 
     # you "Hi, Iulia. I was wondering if you might take a look at this for me."
-    you "Hi, Iulia. I was wondering if you might take a look at this for me."
+    you "嗨,朱莉娅。我想请你帮我看一下这个。"
 
 # game/BKevents.rpy:3067
 translate chinese add_vitals_scanner_c7e2ef30:
 
     # "You hand Iulia the mysterious blueprint."
-    "You hand Iulia the mysterious blueprint."
+    "你把神秘的蓝图交给尤利亚。"
 
 # game/BKevents.rpy:3069
 translate chinese add_vitals_scanner_ed47c3c3:
 
     # carpenter "What's this? I ain't ever seen anythin' like it."
-    carpenter "What's this? I ain't ever seen anythin' like it."
+    carpenter "这是什么?我从来没见过像这样的东西。"
 
 # game/BKevents.rpy:3071
 translate chinese add_vitals_scanner_166a5cdc:
 
     # you "I got it from Gina, the mad scientist from the junkyard. It's from an ancient civilization, or some such nonsense. What I want to know is if it's valuable..."
-    you "I got it from Gina, the mad scientist from the junkyard. It's from an ancient civilization, or some such nonsense. What I want to know is if it's valuable..."
+    you "我从吉娜那儿学来的，她是垃圾场的疯狂科学家。它来自古代文明，或者类似的废话。我想知道它是否有价值……"
 
 # game/BKevents.rpy:3073
 translate chinese add_vitals_scanner_27c27605:
 
     # carpenter "Well, only one way to find out. This would take quite a few resources..."
-    carpenter "Well, only one way to find out. This would take quite a few resources..."
+    carpenter "只有一个办法可以知道。这将需要相当多的资源……"
 
 # game/BKevents.rpy:3075
 translate chinese add_vitals_scanner_8bd0cffc:
 
     # you "But you could build it?"
-    you "But you could build it?"
+    you "但你能造出来吗?"
 
 # game/BKevents.rpy:3077
 translate chinese add_vitals_scanner_52cc5d23:
 
     # carpenter "Well... I guess I could give it a try. I think I understand the structure. And this layered seal around the hatch... Could be tricky, but I've seen it done before."
-    carpenter "Well... I guess I could give it a try. I think I understand the structure. And this layered seal around the hatch... Could be tricky, but I've seen it done before."
+    carpenter "嗯…我想我可以试一试。我想我理解这个结构。这层密封围绕着舱口…可能有点棘手，但我以前见过。"
 
 # game/BKevents.rpy:3079
 translate chinese add_vitals_scanner_0111ff70:
 
     # you "Perfect."
-    you "Perfect."
+    you "完美的。"
 
 # game/BKevents.rpy:3081
 translate chinese add_vitals_scanner_5cd685a2:
 
     # carpenter "There's a catch, though."
-    carpenter "There's a catch, though."
+    carpenter "不过，这里有一个陷阱。"
 
 # game/BKevents.rpy:3083
 translate chinese add_vitals_scanner_5d06f92b:
 
     # you "Hm?"
-    you "Hm?"
+    you "嗯?"
 
 # game/BKevents.rpy:3085
 translate chinese add_vitals_scanner_6e029b7e:
 
     # carpenter "See this glowing thingy right in the center of the design? Seems like an energy source."
-    carpenter "See this glowing thingy right in the center of the design? Seems like an energy source."
+    carpenter "看到设计中心这个发光的东西了吗?似乎是一种能源。"
 
 # game/BKevents.rpy:3087
 translate chinese add_vitals_scanner_1a1826d1:
 
     # you "And?"
-    you "And?"
+    you "然后呢?"
 
 # game/BKevents.rpy:3089
 translate chinese add_vitals_scanner_4971cad2:
 
     # carpenter "You'd have to procure it somehow. Perhaps your 'scientist' girlfriend could find one for you."
-    carpenter "You'd have to procure it somehow. Perhaps your 'scientist' girlfriend could find one for you."
+    carpenter "你得设法弄到它。也许你的“科学家”女友可以帮你找一个。"
 
 # game/BKevents.rpy:3091
 translate chinese add_vitals_scanner_324aa524:
 
     # "There is a hint of annoyance in her voice. Where is that coming from?"
-    "There is a hint of annoyance in her voice. Where is that coming from?"
+    "她的声音中有一丝烦恼。这是怎么回事?"
 
 # game/BKevents.rpy:3093
 translate chinese add_vitals_scanner_9681a814:
 
     # you "I'll make sure to ask her. But first, let's build this."
-    you "I'll make sure to ask her. But first, let's build this."
+    you "我一定问问她。但首先，让我们构建这个。"
 
 # game/BKevents.rpy:3095
 translate chinese add_vitals_scanner_f2446966:
 
     # carpenter "Sure thing, just order it when you're ready."
-    carpenter "Sure thing, just order it when you're ready."
+    carpenter "没问题，你准备好了就点吧。"
 
 # game/BKevents.rpy:3102
 translate chinese add_vitals_scanner_1777feac:
 
     # "You gave Iulia the ancient blueprint. You can now build a {b}Strange machine{/b} from the wagon menu."
-    "You gave Iulia the ancient blueprint. You can now build a {b}Strange machine{/b} from the wagon menu."
+    "你给了尤利亚古老的蓝图。您现在可以从马车菜单中构建一个{b}奇怪的机器{/b}。"
 
 # game/BKevents.rpy:3116
 translate chinese vital_scanners_built_f8914a45:
 
     # carpenter "HA!"
-    carpenter "HA!"
+    carpenter "哈!"
 
 # game/BKevents.rpy:3122
 translate chinese vital_scanners_built_a001fe14:
 
     # carpenter "Looky here, boss! I done built your strange machine."
-    carpenter "Looky here, boss! I done built your strange machine."
+    carpenter "看这里,老板!我造了你的怪机器。"
 
 # game/BKevents.rpy:3124
 translate chinese vital_scanners_built_809a0742:
 
     # "The machine looks very similar to the picture you saw on the ancient blueprint. However, it stands lifeless, its many knobs and quadrants unresponsive."
-    "The machine looks very similar to the picture you saw on the ancient blueprint. However, it stands lifeless, its many knobs and quadrants unresponsive."
+    "这台机器看起来很像你在古代蓝图上看到的那幅画。然而，它没有生命，它的许多旋钮和象限没有反应。"
 
 # game/BKevents.rpy:3126
 translate chinese vital_scanners_built_a077ed5d:
 
     # carpenter "It needs an energy source."
-    carpenter "It needs an energy source."
+    carpenter "它需要能源。"
 
 # game/BKevents.rpy:3128
 translate chinese vital_scanners_built_671a587d:
 
     # gina "Of course it does! As luck would have it, I've got one right here."
-    gina "Of course it does! As luck would have it, I've got one right here."
+    gina "当然有!幸运的是，我这里有一个。"
 
 # game/BKevents.rpy:3133
 translate chinese vital_scanners_built_7880e8db:
 
     # you "Gina?"
-    you "Gina?"
+    you "吉娜吗?"
 
 # game/BKevents.rpy:3135
 translate chinese vital_scanners_built_23c7cdc8:
 
     # gina "Yeah, I've heard you were working on the Cimerian scanner, so I got curious."
-    gina "Yeah, I've heard you were working on the Cimerian scanner, so I got curious."
+    gina "是的，我听说你在研究基梅里扫描仪，所以我很好奇。"
 
 # game/BKevents.rpy:3137
 translate chinese vital_scanners_built_2652efdc:
 
     # carpenter "So she's the nerdy girlfriend you were talking about... She looks the part, I reckon."
-    carpenter "So she's the nerdy girlfriend you were talking about... She looks the part, I reckon."
+    carpenter "她就是你说的那个书呆子女友…我想她看上去很像那个角色。"
 
 # game/BKevents.rpy:3141
 translate chinese vital_scanners_built_42cb5390:
 
     # gina "Who's that, [MC.name]? From her vulgar clothing, I would assume one of your whores, but what's with the hammer?"
-    gina "Who's that, [MC.name]? From her vulgar clothing, I would assume one of your whores, but what's with the hammer?"
+    gina "那是谁,[MC.name] ?从她粗俗的衣着来看，我猜她是你的妓女之一，但那把锤子是干什么的?"
 
 # game/BKevents.rpy:3143
 translate chinese vital_scanners_built_dd3102bd:
 
     # carpenter "Whaa!?!" with vpunch
-    carpenter "Whaa!?!" with vpunch
+    carpenter "哈哈! ? !" with vpunch
 
 # game/BKevents.rpy:3149
 translate chinese vital_scanners_built_54c7c3fc:
 
     # carpenter attack "You bitch! The hammer's gonna crush your whiny little..."
-    carpenter attack "You bitch! The hammer's gonna crush your whiny little..."
+    carpenter attack "你婊子!锤子会把你这个爱发牢骚的小…"
 
 # game/BKevents.rpy:3151
 translate chinese vital_scanners_built_30269837:
@@ -2620,97 +2620,97 @@ translate chinese vital_scanners_built_30269837:
 translate chinese vital_scanners_built_1c89d086:
 
     # carpenter "Grrr..."
-    carpenter "Grrr..."
+    carpenter "叽阿…"
 
 # game/BKevents.rpy:3157
 translate chinese vital_scanners_built_2e1abb33:
 
     # you "Gina, have you got something for us?"
-    you "Gina, have you got something for us?"
+    you "吉娜，你有东西要给我们吗?"
 
 # game/BKevents.rpy:3159
 translate chinese vital_scanners_built_eb52def1:
 
     # gina "Well, uh, I brought this energy core. Let's give it a try."
-    gina "Well, uh, I brought this energy core. Let's give it a try."
+    gina "我带来了能量核心。让我们试一试。"
 
 # game/BKevents.rpy:3163
 translate chinese vital_scanners_built_0d3016c8:
 
     # "Gina opens up a small hatch and plugs the energy core inside the strange contraption. The machine lights up, and starts humming like a beehive."
-    "Gina opens up a small hatch and plugs the energy core inside the strange contraption. The machine lights up, and starts humming like a beehive."
+    "吉娜打开一个小舱口，把能量核心塞进这个奇怪的装置里。机器亮了起来，开始嗡嗡作响，像蜂窝一样。"
 
 # game/BKevents.rpy:3168
 translate chinese vital_scanners_built_ba487c05:
 
     # you "It's working! Thank you. That's nice of..."
-    you "It's working! Thank you. That's nice of..."
+    you "这是工作!谢谢你！那很好啊……"
 
 # game/BKevents.rpy:3170
 translate chinese vital_scanners_built_79e623d4:
 
     # gina "It doesn't come for free, of course!"
-    gina "It doesn't come for free, of course!"
+    gina "当然，这不是免费的!"
 
 # game/BKevents.rpy:3172
 translate chinese vital_scanners_built_737150bd:
 
     # you "Duh."
-    you "Duh."
+    you "咄。"
 
 # game/BKevents.rpy:3174
 translate chinese vital_scanners_built_980891a5:
 
     # gina "I am here to enlist your help. For science."
-    gina "I am here to enlist your help. For science."
+    gina "我是来寻求你的帮助的。为科学。"
 
 # game/BKevents.rpy:3176
 translate chinese vital_scanners_built_767fb0c2:
 
     # you "Err... My help?"
-    you "Err... My help?"
+    you "呃……我的帮助?"
 
 # game/BKevents.rpy:3178
 translate chinese vital_scanners_built_d4f6d808:
 
     # gina "Well, not exactly. I want to test this machine on your girls. It seems to be tuned for female organs..."
-    gina "Well, not exactly. I want to test this machine on your girls. It seems to be tuned for female organs..."
+    gina "嗯,不完全是。我想在你们的女孩身上测试一下这台机器。它似乎是为女性器官而调整的……"
 
 # game/BKevents.rpy:3180
 translate chinese vital_scanners_built_6f9f661e:
 
     # you "Organs? Wait a minute... What is this machine for? Is it dangerous?!?"
-    you "Organs? Wait a minute... What is this machine for? Is it dangerous?!?"
+    you "器官?等一下…这台机器是干什么用的?这是危险的吗? ! ?"
 
 # game/BKevents.rpy:3182
 translate chinese vital_scanners_built_007c2691:
 
     # gina "Of course not, dummy! It's some sort of medical apparatus. It measures vital signs."
-    gina "Of course not, dummy! It's some sort of medical apparatus. It measures vital signs."
+    gina "当然不是，笨蛋!这是某种医疗器械。它测量生命体征。"
 
 # game/BKevents.rpy:3184
 translate chinese vital_scanners_built_b135fe75:
 
     # gina "But it needs to be calibrated. That's why we need some, err, volunteers..."
-    gina "But it needs to be calibrated. That's why we need some, err, volunteers..."
+    gina "但它需要进行校准。这就是为什么我们需要一些志愿者…"
 
 # game/BKevents.rpy:3186
 translate chinese vital_scanners_built_a66b2b62:
 
     # you "All right then. Why don't you do it? You're female."
-    you "All right then. Why don't you do it? You're female."
+    you "那好吧。你为什么不做呢?你是女性。"
 
 # game/BKevents.rpy:3188
 translate chinese vital_scanners_built_52a7ee5d:
 
     # gina "No way! It's too dan... I mean, I'll be too busy calibrating it!"
-    gina "No way! It's too dan... I mean, I'll be too busy calibrating it!"
+    gina "没门!太丹……我是说，我要忙着校准它!"
 
 # game/BKevents.rpy:3190
 translate chinese vital_scanners_built_f1996997:
 
     # gina "You, hammer-waving maniac. Get in here."
-    gina "You, hammer-waving maniac. Get in here."
+    gina "你,hammer-waving疯子。在这里。"
 
 # game/BKevents.rpy:3192
 translate chinese vital_scanners_built_782b956d:
@@ -2722,19 +2722,19 @@ translate chinese vital_scanners_built_782b956d:
 translate chinese vital_scanners_built_bcf61c7a:
 
     # gina "My, such impertinence... Why do you put up with this fool?"
-    gina "My, such impertinence... Why do you put up with this fool?"
+    gina "等我的无礼……你为什么要忍受这个傻瓜?"
 
 # game/BKevents.rpy:3199
 translate chinese vital_scanners_built_9e8bd5f6:
 
     # you "*sigh*"
-    you "*sigh*"
+    you "*叹息*"
 
 # game/BKevents.rpy:3201
 translate chinese vital_scanners_built_a647b18c:
 
     # you "Anyway. Sill, gather the girls here."
-    you "Anyway. Sill, gather the girls here."
+    you "无论如何。西里尔，把姑娘们召集到这里来。"
 
 # game/BKevents.rpy:3208
 translate chinese vital_scanners_built_cbb024e8:
@@ -2764,91 +2764,91 @@ translate chinese vital_scanners_built_f4ed1567:
 translate chinese vital_scanners_built_f5a80865:
 
     # gina "You, step forward and get in there."
-    gina "You, step forward and get in there."
+    gina "你，向前走，进去。"
 
 # game/BKevents.rpy:3222
 translate chinese vital_scanners_built_38e81da2:
 
     # girl1.char "R-Really? Master, should I go in?"
-    girl1.char "R-Really? Master, should I go in?"
+    girl1.char "真的吗?主人，我该进去吗?"
 
 # game/BKevents.rpy:3224
 translate chinese vital_scanners_built_1a04d7f4:
 
     # you "Well, sure, it's, uh, safe..."
-    you "Well, sure, it's, uh, safe..."
+    you "当然了，很安全…"
 
 # game/BKevents.rpy:3226
 translate chinese vital_scanners_built_c6dcb5ec:
 
     # you "I mean it is, right, Gina?"
-    you "I mean it is, right, Gina?"
+    you "我是说，对吧，吉娜?"
 
 # game/BKevents.rpy:3228
 translate chinese vital_scanners_built_89ce0322:
 
     # gina "Of course, of course! Now get in there, and..."
-    gina "Of course, of course! Now get in there, and..."
+    gina "当然，当然!现在进去，然后…"
 
 # game/BKevents.rpy:3238
 translate chinese vital_scanners_built_a270f55e:
 
     # girl1.char "EEEEK!!!"
-    girl1.char "EEEEK!!!"
+    girl1.char "EEEEK ! ! !"
 
 # game/BKevents.rpy:3240
 translate chinese vital_scanners_built_ae177b8f:
 
     # "A big burst of energy runs through the machine, sending an electric shock through [girl1.name]'s body. She is hurt."
-    "A big burst of energy runs through the machine, sending an electric shock through [girl1.name]'s body. She is hurt."
+    "一股能量的大爆发穿过了机器，给[girl1.name]的身体发了一道电流。她收到伤害了。"
 
 # game/BKevents.rpy:3244
 translate chinese vital_scanners_built_8b910841:
 
     # gina "Oopsie."
-    gina "Oopsie."
+    gina "哎呀。"
 
 # game/BKevents.rpy:3246
 translate chinese vital_scanners_built_25e0ed49:
 
     # you "What the hell was that!"
-    you "What the hell was that!"
+    you "那是什么鬼东西!"
 
 # game/BKevents.rpy:3248
 translate chinese vital_scanners_built_b7c1694d:
 
     # gina "I'm pretty sure I shouldn't have pressed that button. Or was it this knob?"
-    gina "I'm pretty sure I shouldn't have pressed that button. Or was it this knob?"
+    gina "我很确定我不应该按那个按钮。还是这个旋钮?"
 
 # game/BKevents.rpy:3250
 translate chinese vital_scanners_built_29f57b9f:
 
     # you "[girl1.name] was hurt by your hellish contraption!"
-    you "[girl1.name] was hurt by your hellish contraption!"
+    you "[girl1.name]被你那该死的玩意儿弄伤了!"
 
 # game/BKevents.rpy:3252
 translate chinese vital_scanners_built_d5140424:
 
     # gina "Come on, it's just a minor setback in the grand scheme of things. Send in the next one."
-    gina "Come on, it's just a minor setback in the grand scheme of things. Send in the next one."
+    gina "拜托，这只是大计划中的一个小挫折。把下一个送来。"
 
 # game/BKevents.rpy:3254
 translate chinese vital_scanners_built_169fcac3:
 
     # you "Why... No!"
-    you "Why... No!"
+    you "为什么…不!"
 
 # game/BKevents.rpy:3256
 translate chinese vital_scanners_built_793dc1df:
 
     # gina "It's fine this time, really. I got this."
-    gina "It's fine this time, really. I got this."
+    gina "这次真的很好。我得到这个。"
 
 # game/BKevents.rpy:3258
 translate chinese vital_scanners_built_7fed2353:
 
     # you "I said no!"
-    you "I said no!"
+    you "我说不!"
 
 # game/BKevents.rpy:3260
 translate chinese vital_scanners_built_00554214:
@@ -2860,157 +2860,157 @@ translate chinese vital_scanners_built_00554214:
 translate chinese vital_scanners_built_83d282fe:
 
     # you "I... No..."
-    you "I... No..."
+    you "我。。。不…"
 
 # game/BKevents.rpy:3264
 translate chinese vital_scanners_built_2f1d9083:
 
     # gina "So, show some balls, and send someone else into harm's way."
-    gina "So, show some balls, and send someone else into harm's way."
+    gina "所以，拿出一些球来，把别人送到危险的地方去。"
 
 # game/BKevents.rpy:3266
 translate chinese vital_scanners_built_9c06d946:
 
     # gina "Neeeext!"
-    gina "Neeeext!"
+    gina "下一个!"
 
 # game/BKevents.rpy:3268
 translate chinese vital_scanners_built_ae17cfa9:
 
     # girl2.char "Wait, I'm scared, I..."
-    girl2.char "Wait, I'm scared, I..."
+    girl2.char "等等，我很害怕，我…"
 
 # game/BKevents.rpy:3270
 translate chinese vital_scanners_built_04d274a7:
 
     # gina "In you go!"
-    gina "In you go!"
+    gina "在你去!"
 
 # game/BKevents.rpy:3272
 translate chinese vital_scanners_built_df21f542:
 
     # "Gina shoves [girl2.name] inside the machine, slamming the hatch shut. She fiddles with knobs, before pulling a big lever."
-    "Gina shoves [girl2.name] inside the machine, slamming the hatch shut. She fiddles with knobs, before pulling a big lever."
+    "吉娜把[girl2.name]塞进机器，砰的一声关上了舱门。她拨弄旋钮，然后拉动一根大杠杆。"
 
 # game/BKevents.rpy:3274
 translate chinese vital_scanners_built_a4b4fb5d:
 
     # gina "And..."
-    gina "And..."
+    gina "和…"
 
 # game/BKevents.rpy:3279
 translate chinese vital_scanners_built_bea085f7:
 
     # girl2.char "*cough* *cough*"
-    girl2.char "*cough* *cough*"
+    girl2.char "* * *咳嗽咳嗽*"
 
 # game/BKevents.rpy:3281
 translate chinese vital_scanners_built_885c67f3:
 
     # gina "I... That wasn't supposed to happen."
-    gina "I... That wasn't supposed to happen."
+    gina "我。。。这是不应该发生的。"
 
 # game/BKevents.rpy:3285
 translate chinese vital_scanners_built_9a6514c5:
 
     # "[girl2.name] steps out of the machine, before crumbling on the floor, winded. She has become exhausted."
-    "[girl2.name] steps out of the machine, before crumbling on the floor, winded. She has become exhausted."
+    "[girl2.name]从机器里走出来，气喘吁吁地倒在地板上。她累坏了。"
 
 # game/BKevents.rpy:3289
 translate chinese vital_scanners_built_6bf0e19f:
 
     # gina "Interesting... This seems to measure her vitality level... There was a feedback effect, though..."
-    gina "Interesting... This seems to measure her vitality level... There was a feedback effect, though..."
+    gina "有趣的…这似乎是在衡量她的活力水平……虽然有反馈效应……"
 
 # game/BKevents.rpy:3291
 translate chinese vital_scanners_built_587ab956:
 
     # you "What the fuck, Gina!"
-    you "What the fuck, Gina!"
+    you "管他呢，吉娜!"
 
 # game/BKevents.rpy:3293
 translate chinese vital_scanners_built_55833c87:
 
     # gina "We're almost there, [MC.name]! Just a few more tests, and..."
-    gina "We're almost there, [MC.name]! Just a few more tests, and..."
+    gina "我们快到了，[MC.name]!再做几个测试，然后…"
 
 # game/BKevents.rpy:3295
 translate chinese vital_scanners_built_48a2c215:
 
     # you "Damn..."
-    you "Damn..."
+    you "该死的……"
 
 # game/BKevents.rpy:3299
 translate chinese vital_scanners_built_33c49722:
 
     # "Gina tries her machine on all your girls, completely messing up their energy levels."
-    "Gina tries her machine on all your girls, completely messing up their energy levels."
+    "吉娜在你所有的女孩身上试用她的机器，完全打乱了她们的精力水平。"
 
 # game/BKevents.rpy:3305
 translate chinese vital_scanners_built_02be0362:
 
     # gina "Tadaa!!!" with vpunch
-    gina "Tadaa!!!" with vpunch
+    gina "Tadaa ! ! !" with vpunch
 
 # game/BKevents.rpy:3307
 translate chinese vital_scanners_built_3a2e5674:
 
     # gina "It's working! The machine is calibrated!"
-    gina "It's working! The machine is calibrated!"
+    gina "这是工作!机器校准了!"
 
 # game/BKevents.rpy:3309
 translate chinese vital_scanners_built_4f3125c0:
 
     # "Your girls lie scattered around the machine in various states of undress, passed out or panting."
-    "Your girls lie scattered around the machine in various states of undress, passed out or panting."
+    "你的女孩们用各种状态分散地躺在机器周围，像脱光衣服，昏倒或喘气。"
 
 # game/BKevents.rpy:3311
 translate chinese vital_scanners_built_9359f4f9:
 
     # you "You... I really hope this is worth it!"
-    you "You... I really hope this is worth it!"
+    you "你……我真的希望这是值得的!"
 
 # game/BKevents.rpy:3313
 translate chinese vital_scanners_built_e5efad61:
 
     # gina "Oh, ye of little faith! Let me show you."
-    gina "Oh, ye of little faith! Let me show you."
+    gina "呵，你们这小信念的人!让我给你看看。"
 
 # game/BKevents.rpy:3317
 translate chinese vital_scanners_built_6a946f33:
 
     # gina "This knob lets you set up a value... And this part activates the scanner..."
-    gina "This knob lets you set up a value... And this part activates the scanner..."
+    gina "这个旋钮可以让你设置一个值…这部分激活了扫描仪…"
 
 # game/BKevents.rpy:3319
 translate chinese vital_scanners_built_4ef682b2:
 
     # gina "With this, you can automatically check your girls' energy level every night. If you set this right, there is no longer a risk they will work until exhaustion if they are too tired."
-    gina "With this, you can automatically check your girls' energy level every night. If you set this right, there is no longer a risk they will work until exhaustion if they are too tired."
+    gina "有了这个，你可以每天晚上自动检查你女孩的能量水平。如果你把这个设置正确，如果他们太累了，就不再有工作到精疲力竭的风险。"
 
 # game/BKevents.rpy:3321
 translate chinese vital_scanners_built_5f2f7421:
 
     # "You can now use the {b}autorest{/b} option from the {b}schedule screen{/b}."
-    "You can now use the {b}autorest{/b} option from the {b}schedule screen{/b}."
+    "现在可以从{b}计划屏幕{/b}中使用{b}自动休息{/b}选项。"
 
 # game/BKevents.rpy:3359
 translate chinese send_to_farm_990bf4a6:
 
     # "You have promised [girl.name] not to send her to the farm. You cannot send her again today."
-    "You have promised [girl.name] not to send her to the farm. You cannot send her again today."
+    "你答应过[girl.name]不送她去农场。你今天不能再送她了。"
 
 # game/BKevents.rpy:3367
 translate chinese send_to_farm_6182717d:
 
     # "There are no free pens in the farm right now."
-    "There are no free pens in the farm right now."
+    "现在农场里没有免费的钢笔。"
 
 # game/BKevents.rpy:3371
 translate chinese send_to_farm_928b37a4:
 
     # gizel "Would you like to add a new pen to the farm for [price] gold?"
-    gizel "Would you like to add a new pen to the farm for [price] gold?"
+    gizel "你愿意为农场增加一支新围栏以换取[price]枚金币吗?"
 
 # game/BKevents.rpy:3376
 translate chinese send_to_farm_a42c33ca:
@@ -3034,13 +3034,13 @@ translate chinese send_to_farm_7c2e174a:
 translate chinese send_to_farm_eb772d0c:
 
     # gizel "Would you like to swap [girl.fullname] with another girl currently in the farm?" nointeract
-    gizel "Would you like to swap [girl.fullname] with another girl currently in the farm?" nointeract
+    gizel "你愿意交换一下[girl.fullname]和另一个在农场女孩吗?" nointeract
 
 # game/BKevents.rpy:3408
 translate chinese send_to_farm_4ea7c761:
 
     # "Gizel has come to take [girl.fullname] into her custody."
-    "Gizel has come to take [girl.fullname] into her custody."
+    "吉泽尔来照顾[girl.fullname]了。"
 
 # game/BKevents.rpy:3419
 translate chinese send_to_farm_menu_3ae7d2f9:
@@ -3094,7 +3094,7 @@ translate chinese send_to_farm_menu_11fdb519_3:
 translate chinese send_to_farm_menu_077579d6:
 
     # gizel "There might not be enough free minions to take care of her training. I might assign her to a different facility when that happens."
-    gizel "There might not be enough free minions to take care of her training. I might assign her to a different facility when that happens."
+    gizel "可能没有足够的自由仆从来照顾她的训练。如果那样的话，我可能会把她安排到别的地方去。"
 
 # game/BKevents.rpy:3518
 translate chinese send_to_farm_menu_3956365d:
@@ -3124,37 +3124,37 @@ translate chinese send_to_farm_menu_9b06d234:
 translate chinese send_to_farm_menu_09b7fafb:
 
     # "[girl.name] breaks down and cries."
-    "[girl.name] breaks down and cries."
+    "[girl.name]崩溃了，哭了。"
 
 # game/BKevents.rpy:3567
 translate chinese send_to_farm_menu_fff596d2:
 
     # you "I'm the one in charge here. Get yourself ready. Gizel will pick you up shortly."
-    you "I'm the one in charge here. Get yourself ready. Gizel will pick you up shortly."
+    you "我是这里的负责人。让自己准备好了。Gizel很快就会来接你。"
 
 # game/BKevents.rpy:3571
 translate chinese send_to_farm_menu_a2f3ccdd:
 
     # girl.char "No, Master, noooo!!!"
-    girl.char "No, Master, noooo!!!"
+    girl.char "不,主人,不! ! !"
 
 # game/BKevents.rpy:3577
 translate chinese send_to_farm_menu_aa223f2f:
 
     # "[girl.fullname] now fears you more."
-    "[girl.fullname] now fears you more."
+    "[girl.fullname]现在更害怕你了。"
 
 # game/BKevents.rpy:3582
 translate chinese send_to_farm_menu_3576de54:
 
     # you "Aw, come on, wipe your tears... I won't make you go... This time."
-    you "Aw, come on, wipe your tears... I won't make you go... This time."
+    you "噢，来吧，擦干你的眼泪……我不会让你走的…这一次。"
 
 # game/BKevents.rpy:3586
 translate chinese send_to_farm_menu_8cf0b120:
 
     # girl.char "Oh, Master! Thank you, thank you!"
-    girl.char "Oh, Master! Thank you, thank you!"
+    girl.char "哦,主人!谢谢，谢谢!"
 
 # game/BKevents.rpy:3594
 translate chinese send_to_farm_menu_96d85d37:
@@ -3214,7 +3214,7 @@ translate chinese send_to_farm_menu_8f79dfba:
 translate chinese send_to_farm_menu_55240a5f:
 
     # "[girl.fullname] has been taken away to the farm."
-    "[girl.fullname] has been taken away to the farm."
+    "[girl.fullname]已经被带到农场去了。"
 
 # game/BKevents.rpy:3926
 translate chinese farm_max_skill_ec9b24d8:
@@ -3484,55 +3484,55 @@ translate chinese farm_change_training_mode_777372fe:
 translate chinese farm_take_out_60e465a4:
 
     # gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for another [prog.duration] days, remember?"
-    gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for another [prog.duration] days, remember?"
+    gizel smirk "你不能带[girl.fullname]离开农场。她必须为另一个项目而受到纪律处分[prog.duration]天,记得吗?"
 
 # game/BKevents.rpy:4173
 translate chinese farm_take_out_64cc7863:
 
     # gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for 1 more day, remember?"
-    gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for 1 more day, remember?"
+    gizel smirk "你不能带[girl.fullname]离开农场。她还得再守一天纪律，记得吗?"
 
 # game/BKevents.rpy:4176
 translate chinese farm_take_out_7f5e4217:
 
     # gizel normal "And just where do you think you can put that wench? Your brothel is full."
-    gizel normal "And just where do you think you can put that wench? Your brothel is full."
+    gizel normal "你觉得你能把那个婊子放在哪里?你的青楼已经满了。"
 
 # game/BKevents.rpy:4301
 translate chinese exit_farm_3424b2db:
 
     # gizel normal "I was going to return [girl.fullname] to you, but I see that you have no room for her."
-    gizel normal "I was going to return [girl.fullname] to you, but I see that you have no room for her."
+    gizel normal "我要把[girl.fullname]还给你，但我看到你没有地方给她。"
 
 # game/BKevents.rpy:4303
 translate chinese exit_farm_223d04a9:
 
     # gizel smirk "Never mind, I'll keep her as my plaything for a bit longer! Come get her at the farm when you want her back."
-    gizel smirk "Never mind, I'll keep her as my plaything for a bit longer! Come get her at the farm when you want her back."
+    gizel smirk "没关系，我要把她当我的玩物再养一会儿!你要她回来的时候就到农场来接她。"
 
 # game/BKevents.rpy:4309
 translate chinese exit_farm_ec20b341:
 
     # gizel normal "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?"
-    gizel normal "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?"
+    gizel normal "[MC.name]![girl.fullname]在农场工作一段时间了。你要我把她带回来吗?"
 
 # game/BKevents.rpy:4312
 translate chinese exit_farm_77245fb1:
 
     # gizel "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?" nointeract
-    gizel "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?" nointeract
+    gizel "[MC.name]! [girl.fullname]在农场工作一段时间了。你要我把她带回来吗?" nointeract
 
 # game/BKevents.rpy:4319
 translate chinese exit_farm_5811b00a:
 
     # "[girl.fullname] is back to work at the brothel as a [girl.job]."
-    "[girl.fullname] is back to work at the brothel as a [girl.job]."
+    "[girl.fullname]回到青楼，工作安排是[xxx1]。"
 
 # game/BKevents.rpy:4321
 translate chinese exit_farm_fdbfd284:
 
     # "[girl.fullname] is back at the brothel and is resting."
-    "[girl.fullname] is back at the brothel and is resting."
+    "[girl.fullname]回到青楼，正在休息。"
 
 # game/BKevents.rpy:4327
 translate chinese exit_farm_79c7b6ac:
@@ -3550,13 +3550,13 @@ translate chinese exit_farm_3b88e6f6:
 translate chinese exit_farm_5ac095b6:
 
     # gizel "[MC.name], I can't train [girl.fullname] for [prog.target] acts, she won't train anymore. Perhaps if you allowed me to go {i}really{/i} hard on her..."
-    gizel "[MC.name], I can't train [girl.fullname] for [prog.target] acts, she won't train anymore. Perhaps if you allowed me to go {i}really{/i} hard on her..."
+    gizel "[MC.name]，我不能给[girl.fullname]训练[prog.target]行为，她不会再训练了。也许如果你允许我对她很{i}严厉{/i}……"
 
 # game/BKevents.rpy:4351
 translate chinese exit_farm_34067ce9:
 
     # gizel "Would you like to have her back?" nointeract
-    gizel "Would you like to have her back?" nointeract
+    gizel "你想要她回来吗?" nointeract
 
 # game/BKevents.rpy:4358
 translate chinese exit_farm_5811b00a_1:
@@ -3580,7 +3580,7 @@ translate chinese exit_farm_79c7b6ac_1:
 translate chinese exit_farm_6124d3eb:
 
     # gizel smirk "Finally, you see reason! I'll do that."
-    gizel smirk "Finally, you see reason! I'll do that."
+    gizel smirk "终于，你明白原因了!我将这样做。"
 
 # game/BKevents.rpy:4375
 translate chinese exit_farm_fb272a3e:
@@ -3640,97 +3640,97 @@ translate chinese advertising_intro_3f7fe0d3:
 translate chinese zodiac_intro_498425b4:
 
     # sill happy "Master!"
-    sill happy "Master!"
+    sill happy "主人!"
 
 # game/BKevents.rpy:4441
 translate chinese zodiac_intro_0080067d:
 
     # sill "Wait! Master [MC.name]!"
-    sill "Wait! Master [MC.name]!"
+    sill "等等!主人[MC.name]!"
 
 # game/BKevents.rpy:4443
 translate chinese zodiac_intro_777d2b41:
 
     # you "Oh, Sill... What is it this time?"
-    you "Oh, Sill... What is it this time?"
+    you "哦,西里尔…这次是什么事?"
 
 # game/BKevents.rpy:4445
 translate chinese zodiac_intro_9cd87925:
 
     # sill sad "Err, I'm sorry to bother you, Master... It's just..."
-    sill sad "Err, I'm sorry to bother you, Master... It's just..."
+    sill sad "呃，很抱歉打扰你，主人……它只是…"
 
 # game/BKevents.rpy:4447
 translate chinese zodiac_intro_412a353f:
 
     # you "Spit it out."
-    you "Spit it out."
+    you "吐出来。"
 
 # game/BKevents.rpy:4449
 translate chinese zodiac_intro_568873a4:
 
     # sill "I read this thing in the Hooker Gazette, and..."
-    sill "I read this thing in the Hooker Gazette, and..."
+    sill "我在《胡克公报》上读到这件事，然后……"
 
 # game/BKevents.rpy:4451
 translate chinese zodiac_intro_5f13322b:
 
     # sill happy "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?"
-    sill happy "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?"
+    sill happy "是关于传说中的黄道十二宫八圣的!你想让我告诉你吗?"
 
 # game/BKevents.rpy:4454
 translate chinese zodiac_intro_6e711f16:
 
     # sill "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?" nointeract
-    sill "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?" nointeract
+    sill "是关于传说中的黄道十二宫八圣的!你想让我告诉你吗?"
 
 # game/BKevents.rpy:4457
 translate chinese zodiac_intro_116cc7b1:
 
     # you "Fine... Go on."
-    you "Fine... Go on."
+    you "好……继续。"
 
 # game/BKevents.rpy:4459
 translate chinese zodiac_intro_e39ed1ad:
 
     # sill "Oh, wonderful! Listen to this..."
-    sill "Oh, wonderful! Listen to this..."
+    sill "哦,太棒了!听这个……"
 
 # game/BKevents.rpy:4468
 translate chinese zodiac_intro_eaf14262:
 
     # sill "I think [leveled.fullname] is a little more experienced now. Maybe she's ready to learn a new zodiac sign, expand her cosmic mindset, open her chakras, you know?"
-    sill "I think [leveled.fullname] is a little more experienced now. Maybe she's ready to learn a new zodiac sign, expand her cosmic mindset, open her chakras, you know?"
+    sill "我认为[leveled.fullname]现在更有经验了。也许她已经准备好学习一个新的星座，扩展她的宇宙思维，打开她的脉轮，你知道吗?"
 
 # game/BKevents.rpy:4470
 translate chinese zodiac_intro_957f88d3:
 
     # you "Sill... You sound weird..."
-    you "Sill... You sound weird..."
+    you "西里尔……你听起来奇怪……"
 
 # game/BKevents.rpy:4472
 translate chinese zodiac_intro_0a33cf01:
 
     # you "Tell me the truth. Are you on spice?"
-    you "Tell me the truth. Are you on spice?"
+    you "跟我说实话。你在吃香料吗?"
 
 # game/BKevents.rpy:4476
 translate chinese zodiac_intro_b68cfa14:
 
     # sill sad "What? No!!!" with vpunch
-    sill sad "What? No!!!" with vpunch
+    sill sad "什么?不! ! !"
 
 # game/BKevents.rpy:4479
 translate chinese zodiac_intro_aadaaba6:
 
     # you "Yeah, but no thanks."
-    you "Yeah, but no thanks."
+    you "是啊，不过不用了，谢谢。"
 
 # game/BKevents.rpy:4481
 translate chinese zodiac_intro_4bcc9051:
 
     # sill sad "Oh. I see..."
-    sill sad "Oh. I see..."
+    sill sad "哦。我明白了…"
 
 # game/BKevents.rpy:4501
 translate chinese add_billboard_887da878:

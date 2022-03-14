@@ -1,10 +1,10 @@
-﻿# TODO: Translation updated at 2022-03-01 21:22
+# TODO: Translation updated at 2022-03-01 21:22
 
 # game/BKstart.rpy:220
 translate chinese init_game_38728340:
 
     # centered "Loading...{nw}"
-    centered "Loading...{nw}"
+    centered "加载...{nw}"
 
 translate chinese strings:
 

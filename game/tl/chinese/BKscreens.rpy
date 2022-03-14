@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-03-01 21:22
+# TODO: Translation updated at 2022-03-01 21:22
 
 # game/BKscreens.rpy:8190
 translate chinese packstates_menu_da3bbd8f:
