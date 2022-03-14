@@ -7420,7 +7420,7 @@ translate chinese c1_interrogation_report_9067274b:
 translate chinese c1_interrogation_report_50ead870:
 
     # you "The captain has corrupted several officers and large swathes of the Guard..."
-    you "The captain has corrupted several officers and large swathes of the Guard..."
+    you "上尉腐化了几名军官和大批卫兵。"
 
 # game/BKchapter1.rpy:4122
 translate chinese c1_interrogation_report_53f3c873:
@@ -7492,7 +7492,7 @@ translate chinese c1_interrogation_report_00fc9578:
 translate chinese c1_interrogation_report_aa106743:
 
     # renza "So the city guard has a powerful protector... And he's not going to let us take over without a reaction."
-    renza "So the city guard has a powerful protector... And he's not going to let us take over without a reaction."
+    renza "所以城市守卫有一个强大的保护者…他不会让我们毫无反应地接手。"
 
 # game/BKchapter1.rpy:4148
 translate chinese c1_interrogation_report_c1207511:
@@ -7522,7 +7522,7 @@ translate chinese c1_interrogation_report_ddb8095f:
 translate chinese c1_interrogation_report_36e81f97:
 
     # "She crashes her fist into the table, sending papers and spice flying in all directions." with vpunch
-    "She crashes her fist into the table, sending papers and spice flying in all directions." with vpunch
+    "她用拳头猛击桌子，纸和香料四下乱飞。" with vpunch
 
 # game/BKchapter1.rpy:4160
 translate chinese c1_interrogation_report_e8830b5b:
@@ -7810,7 +7810,7 @@ translate chinese c1_interrogation_report_33a5cd39:
 translate chinese c1_interrogation_report_dd724a10:
 
     # you "Shalia? Goddess of darkness and deceit? I know her, of course."
-    you "Shalia? Goddess of darkness and deceit? I know her, of course."
+    you "莎莉娅吗?黑暗与欺骗之神?我当然认识她。"
 
 # game/BKchapter1.rpy:4269
 translate chinese c1_interrogation_report_9dd00cbe:
@@ -7912,13 +7912,13 @@ translate chinese c1_interrogation_report_cd2ade6d:
 translate chinese c1_interrogation_report_c8521fbc:
 
     # renza "The night mistress is not fully human, you see... She's an avatar of Shalia, abducted as a babe and forged in the fires of the seven hells... To return as a night mistress."
-    renza "The night mistress is not fully human, you see... She's an avatar of Shalia, abducted as a babe and forged in the fires of the seven hells... To return as a night mistress."
+    renza "午夜情人不完全是人，你看……她是莎莉娅的化身，还在襁褓中就被绑架，然后在七层地狱之火中锻造。才变成了午夜情人。"
 
 # game/BKchapter1.rpy:4308
 translate chinese c1_interrogation_report_8c524f42:
 
     # lieutenant "The night mistress is a bloodthirsty demon, preying on the souls of the Shalia cult's enemies and the unfaithful... She is also notoriously fickle, capable of dessicating a man for the smallest of slights, just by glancing at him."
-    lieutenant "The night mistress is a bloodthirsty demon, preying on the souls of the Shalia cult's enemies and the unfaithful... She is also notoriously fickle, capable of dessicating a man for the smallest of slights, just by glancing at him."
+    lieutenant "晚上的午夜情人是一个嗜血的恶魔，以教会的敌人和不忠者的灵魂为食……她也是出了名的善变，她能让一个男人变得干枯，哪怕只是看他一眼，哪怕是一点点的轻蔑。"
 
 # game/BKchapter1.rpy:4311
 translate chinese c1_interrogation_report_af5f652f:
@@ -8200,7 +8200,7 @@ translate chinese c1_satella_intro_dae0ec55:
 translate chinese c1_satella_intro_d3ee89d6:
 
     # satella "AAAAAAAAAAAAARRRRRRRRRRRRRRRRRRRRRHHHHHHHHHHHHH!!!!"
-    satella "AAAAAAAAAAAAARRRRRRRRRRRRRRRRRRRRRHHHHHHHHHHHHH ! ! ! !"
+    satella "啊啊啊啊啊啊啊啊啊啊啊! ! ! !"
 
 # game/BKchapter1.rpy:4467
 translate chinese c1_satella_intro_a50f4564:
@@ -8338,7 +8338,7 @@ translate chinese c1_satella_intro_5b8c7bf3:
 translate chinese c1_satella_intro_b0fc4d6e:
 
     # "Satella runs to the back of the hall, and starts rummaging through a large chest."
-    "Satella runs to the back of the hall, and starts rummaging through a large chest."
+    "萨特拉跑到大厅的后面，开始在一个大箱子里翻找。"
 
 # game/BKchapter1.rpy:4532
 translate chinese c1_satella_intro_d14829ac:
@@ -8398,7 +8398,7 @@ translate chinese c1_satella_intro_185b3160_1:
 translate chinese c1_satella_intro_b7cc9d89:
 
     # renza "I'll admit it, she's a little strange for a half-goddess."
-    renza "I'll admit it, she's a little strange for a half-goddess."
+    renza "我承认，作为半神，她确实有点奇怪。"
 
 # game/BKchapter1.rpy:4558
 translate chinese c1_satella_intro_e4fbe828:
@@ -8428,7 +8428,7 @@ translate chinese c1_satella_intro_8b717c38:
 translate chinese c1_satella_intro_c43c4727:
 
     # "She pinches your cheeks and pulls them apart until it hurts." with vpunch
-    "She pinches your cheeks and pulls them apart until it hurts." with vpunch
+    "她捏你的脸颊，把它们分开，直到你喊疼为止。" with vpunch
 
 # game/BKchapter1.rpy:4570
 translate chinese c1_satella_intro_c022adb0:
@@ -8470,7 +8470,7 @@ translate chinese c1_satella_intro_e33c52af:
 translate chinese c1_satella_intro_3feecd2c:
 
     # you "Mmh..."
-    you "Mmh..."
+    you "嗯……"
 
 # game/BKchapter1.rpy:4585
 translate chinese c1_satella_intro_1212bdbb:
@@ -8752,7 +8752,7 @@ translate chinese c1_satella_intro_10000677:
 translate chinese c1_satella_intro_92c9eb82:
 
     # you "What???" with vpunch
-    you "What???" with vpunch
+    you "什么? ? ?" with vpunch
 
 # game/BKchapter1.rpy:4688
 translate chinese c1_satella_intro_c8d5d5c2:
@@ -8770,7 +8770,7 @@ translate chinese c1_satella_intro_f8551443:
 translate chinese c1_captain_meeting_88e47283:
 
     # "Early in the morning, you head towards the Guard watchtower, grumbling about the wicked ways of women."
-    "Early in the morning, you head towards the Guard watchtower, grumbling about the wicked ways of women."
+    "清晨，你走向守卫瞭望塔，抱怨女人的邪恶行径。"
 
 # game/BKchapter1.rpy:4715
 translate chinese c1_captain_meeting_b74a8837:
@@ -8794,7 +8794,7 @@ translate chinese c1_captain_meeting_34501a15:
 translate chinese c1_captain_meeting_cf23aca5:
 
     # you "I worked my ass off... Well, the girls' asses off, to get that money."
-    you "I worked my ass off... Well, the girls' asses off, to get that money."
+    you "我已经绞尽脑汁了……好吧，是姑娘们的乳汁，来想办法拿那笔钱。"
 
 # game/BKchapter1.rpy:4730
 translate chinese c1_captain_meeting_6e302808:
@@ -8818,7 +8818,7 @@ translate chinese c1_captain_meeting_418974d1:
 translate chinese c1_captain_meeting_bad583ab:
 
     # you "The city guard is a menace, not just to myself but to all the slums' citizens."
-    you "The city guard is a menace, not just to myself but to all the slums' citizens."
+    you "城市警卫是一个威胁，不仅对我，也对所有贫民窟的市民。"
 
 # game/BKchapter1.rpy:4746
 translate chinese c1_captain_meeting_11620197:
@@ -9010,13 +9010,13 @@ translate chinese c1_captain_meeting_53ac4806:
 translate chinese c1_captain_meeting_fbcc6c62:
 
     # "Doing so, you can't help but notice that her womanly shapes are nicely complemented by her beautiful face. She has large, clear eyes. What a babe!"
-    "Doing so, you can't help but notice that her womanly shapes are nicely complemented by her beautiful face. She has large, clear eyes. What a babe!"
+    "这样一来，你就会不由自主地注意到，她的女性身材与她美丽的脸蛋相得益彰。她有一双明亮的大眼睛。宝贝!"
 
 # game/BKchapter1.rpy:4857
 translate chinese c1_captain_meeting_8040c233:
 
     # you "*gulp*"
-    you "*gulp*"
+    you "*吞咽*"
 
 # game/BKchapter1.rpy:4859
 translate chinese c1_captain_meeting_07831a3e:
@@ -9028,7 +9028,7 @@ translate chinese c1_captain_meeting_07831a3e:
 translate chinese c1_captain_meeting_f4f12212:
 
     # captain "Yes, I know why you're here. I got a letter from my subordinate."
-    captain "Yes, I know why you're here. I got a letter from my subordinate."
+    captain "是的，我知道你为什么来这里。我收到一封寄给我的下属的信。"
 
 # game/BKchapter1.rpy:4865
 translate chinese c1_captain_meeting_58919726:
@@ -9040,13 +9040,13 @@ translate chinese c1_captain_meeting_58919726:
 translate chinese c1_captain_meeting_fb8f1867:
 
     # captain "What you're asking for can be done... But it will be costly."
-    captain "你所要求的可以做到…但这将是昂贵的。"
+    captain "你要求的我能做到…但是会有点贵。"
 
 # game/BKchapter1.rpy:4869
 translate chinese c1_captain_meeting_9ccfcafb:
 
     # captain "You see, taking someone out inside the city is more complicated than getting rid of some riffraff in the slums."
-    captain "You see, taking someone out inside the city is more complicated than getting rid of some riffraff in the slums."
+    captain "你看，把一个人带到城市里，要比摆脱贫民窟里的一群乌七八糟的东西复杂得多。"
 
 # game/BKchapter1.rpy:4871
 translate chinese c1_captain_meeting_2ba00675:
@@ -9112,7 +9112,7 @@ translate chinese c1_captain_meeting_b27f9008:
 translate chinese c1_captain_meeting_5e5b2cc0:
 
     # "She takes a skeptical look at your attire and demeanor."
-    "She takes a skeptical look at your attire and demeanor."
+    "她对你的衣着和举止表示怀疑。"
 
 # game/BKchapter1.rpy:4896
 translate chinese c1_captain_meeting_8ebe52de:
@@ -9154,7 +9154,7 @@ translate chinese c1_captain_meeting_dae0ec55:
 translate chinese c1_captain_meeting_d83ba17e:
 
     # "She frowns."
-    "She frowns."
+    "她紧锁眉头。"
 
 # game/BKchapter1.rpy:4910
 translate chinese c1_captain_meeting_c2343252:
@@ -9214,7 +9214,7 @@ translate chinese c1_captain_meeting_802d067e:
 translate chinese c1_captain_meeting_bdc354c1_1:
 
     # captain "What?"
-    captain "What?"
+    captain "什么?"
 
 # game/BKchapter1.rpy:4932
 translate chinese c1_captain_meeting_14d8fd73:
@@ -9250,13 +9250,13 @@ translate chinese c1_captain_meeting_bfbb68c2:
 translate chinese c1_captain_meeting_906a2155:
 
     # you "Of course."
-    you "Of course."
+    you "当然可以。"
 
 # game/BKchapter1.rpy:4944
 translate chinese c1_captain_meeting_b295548d:
 
     # "You take out the forged documents that Renza made and hand them to the captain."
-    "You take out the forged documents that Renza made and hand them to the captain."
+    "你拿出伦萨伪造的文件亲手交给队长。"
 
 # game/BKchapter1.rpy:4946
 translate chinese c1_captain_meeting_eb54a04b_1:
@@ -9364,7 +9364,7 @@ translate chinese c1_captain_meeting_231a57fd:
 translate chinese c1_captain_meeting_56aea05b:
 
     # captain "This is the vault, where I keep the fruits of the city guard's labor."
-    captain "This is the vault, where I keep the fruits of the city guard's labor."
+    captain "这是地窖，我在这里存放城市守卫的劳动果实。"
 
 # game/BKchapter1.rpy:4998
 translate chinese c1_captain_meeting_451fc5e7:
@@ -9382,7 +9382,7 @@ translate chinese c1_captain_meeting_fa02a33d:
 translate chinese c1_captain_meeting_96c9a4e6:
 
     # captain "The guards relieve them of their gold and send it all to me! ME!"
-    captain "The guards relieve them of their gold and send it all to me! ME!"
+    captain "卫兵们，把他们的金子都拿出来交给我！快！"
 
 # game/BKchapter1.rpy:5006
 translate chinese c1_captain_meeting_1c537d6e:
@@ -9406,13 +9406,13 @@ translate chinese c1_captain_meeting_ea424b3e:
 translate chinese c1_captain_meeting_65adf6a7:
 
     # captain "And not just the gold! Look around you! I get the gems, the jewels, the family heirlooms, everything!"
-    captain "And not just the gold! Look around you! I get the gems, the jewels, the family heirlooms, everything!"
+    captain "然后不仅仅是金币!看看你的周围!我得到了珠宝，珠宝，传家宝，一切!"
 
 # game/BKchapter1.rpy:5014
 translate chinese c1_captain_meeting_63fcb22a:
 
     # captain "And believe me, even the poorest beggar has something of value... You just have to beat him hard enough until he coughs it up. And if he doesn't... Well, no one will miss him, anyway."
-    captain "And believe me, even the poorest beggar has something of value... You just have to beat him hard enough until he coughs it up. And if he doesn't... Well, no one will miss him, anyway."
+    captain "相信我，即使是最穷的乞丐也有价值……只不过你必须狠狠地打他一顿，直到他交出钱来。如果他不…那也好，反正没人会想念他的。"
 
 # game/BKchapter1.rpy:5019
 translate chinese c1_captain_meeting_51e6eb5f:
@@ -9448,13 +9448,13 @@ translate chinese c1_captain_meeting_d4ee6b5b:
 translate chinese c1_captain_meeting_e93cdcc3:
 
     # "She flaunts her assets right in front of your nose. You swallow hard and try to stay on topic."
-    "She flaunts her assets right in front of your nose. You swallow hard and try to stay on topic."
+    "她就在你鼻子后面炫耀她的资产。你努力咽下口水，尽量集中注意力。"
 
 # game/BKchapter1.rpy:5031
 translate chinese c1_captain_meeting_e6bfbc31:
 
     # captain "Every day, I take a bath in a pool of the finest slave milk. I get five massages a day, by the best practitioners in the city. My hair is getting done every morning by my personal stylist. I also get a daily magic facial at the enchanted spa, and manicure at the fairy grove..."
-    captain "Every day, I take a bath in a pool of the finest slave milk. I get five massages a day, by the best practitioners in the city. My hair is getting done every morning by my personal stylist. I also get a daily magic facial at the enchanted spa, and manicure at the fairy grove..."
+    captain "每天，我都会在一池最好的奴隶乳汁里洗澡。我每天做五次按摩，都是城里最好的按摩师做的。我的头发每天早上都是我的私人发型师做的。我每天还会在魔法水疗中心做一次神奇的面部护理，在童话树林里保养指甲……"
 
 # game/BKchapter1.rpy:5035
 translate chinese c1_captain_meeting_82a071b5:
@@ -9472,7 +9472,7 @@ translate chinese c1_captain_meeting_fc055125:
 translate chinese c1_captain_meeting_ae79b2f2:
 
     # captain "I love SHOES!!!" with vpunch
-    captain "I love SHOES!!!" with vpunch
+    captain "我爱鞋子!!" with vpunch
 
 # game/BKchapter1.rpy:5042
 translate chinese c1_captain_meeting_31fe1d97:
@@ -9556,7 +9556,7 @@ translate chinese c1_captain_meeting_277a6f2f:
 translate chinese c1_captain_meeting_6441c0ac:
 
     # captain "I will be able to let the gold run through my well-manicured hands for relaxation... Mmmmh..."
-    captain "I will be able to let the gold run through my well-manicured hands for relaxation... Mmmmh..."
+    captain "我将能用金币划过我精心保养的手来放松……嗯……"
 
 # game/BKchapter1.rpy:5086
 translate chinese c1_captain_meeting_829992d5:
@@ -9598,7 +9598,7 @@ translate chinese c1_captain_meeting_ceef165b:
 translate chinese c1_captain_meeting_9a9f6739:
 
     # captain "Ah, Master [MC.name], and here I thought we were such good friends! But fine, we'll do it your way, if we must."
-    captain "啊，大师[MC.name]，我还以为我们是这么好的朋友呢!但好吧，如果必须的话，我们就照你说的做。"
+    captain "啊，大师[MC.name]，我还以为我们是这么好的朋友呢!不过。。好吧，如果必须的话，我们就照你说的做。"
 
 # game/BKchapter1.rpy:5104
 translate chinese c1_captain_meeting_00a3cc5c:
@@ -9952,7 +9952,7 @@ translate chinese c1_trial_c9411119:
 translate chinese c1_trial_219f5989:
 
     # you "I'm really sorry, Roz. I have no idea where your friend is. But I'm sure, err, she's fine."
-    you "I'm really sorry, Roz. I have no idea where your friend is. But I'm sure, err, she's fine."
+    you "我真的很抱歉，罗兹。我不知道你的朋友在哪。但我确定她没事。"
 
 # game/BKchapter1.rpy:5274
 translate chinese c1_trial_247f4fbc:
@@ -10054,7 +10054,7 @@ translate chinese c1_trial_dad6b94a:
 translate chinese c1_trial_902351ce:
 
     # maya "On the way out, we captured my jailer... That lecherous bastard. *angry*"
-    maya "On the way out, we captured my jailer... That lecherous bastard. *angry*"
+    maya "在出去的路上，我们抓住了我的狱卒…那个好色的混蛋。*愤怒*"
 
 # game/BKchapter1.rpy:5316
 translate chinese c1_trial_1c6d8979:
@@ -10096,7 +10096,7 @@ translate chinese c1_trial_77de7452:
 translate chinese c1_trial_dfb6745d:
 
     # you "You're dreaming. The slums are the way they are because that's how the world works. It's not the thieves' fault if money trumps all."
-    you "You're dreaming. The slums are the way they are because that's how the world works. It's not the thieves' fault if money trumps all."
+    you "你在做梦。贫民窟就是这样，因为世界就是这样运转的。如果金钱胜过一切，那也不是小偷的错。"
 
 # game/BKchapter1.rpy:5340
 translate chinese c1_trial_4891eb98:
@@ -10120,7 +10120,7 @@ translate chinese c1_trial_6057b576:
 translate chinese c1_trial_3ac178b9:
 
     # maya "Please, listen. When the time comes, expose the lieutenant as a thief spy. Don't let her take over the Guard."
-    maya "Please, listen. When the time comes, expose the lieutenant as a thief spy. Don't let her take over the Guard."
+    maya "听我说。当时机成熟时，揭露中尉是一个小偷间谍。别让她接管警卫工作。"
 
 # game/BKchapter1.rpy:5351
 translate chinese c1_trial_1fcb7c4c:
@@ -10174,7 +10174,7 @@ translate chinese c1_trial_f97652f0:
 translate chinese c1_trial_1f99f307:
 
     # roz "Listen, buster. I know the part you played in Maya's kidnapping. She may have forgiven you, but I haven't!" with vpunch
-    roz "Listen, buster. I know the part you played in Maya's kidnapping. She may have forgiven you, but I haven't!" with vpunch
+    roz "听着,伙计。我知道你在玛雅绑架案中扮演的角色她也许原谅了你，但我还没有！" with vpunch
 
 # game/BKchapter1.rpy:5373
 translate chinese c1_trial_9b41b833:
@@ -10240,7 +10240,7 @@ translate chinese c1_trial_7e983f8f:
 translate chinese c1_trial_735875ee:
 
     # "Talking into a bullhorn, the judge addresses the massive crowd who gathered to witness the King's justice delivered."
-    "Talking into a bullhorn, the judge addresses the massive crowd who gathered to witness the King's justice delivered."
+    "法官对着扩音器讲话，向聚集在一起见证国王的正义得到伸张的人群致辞。"
 
 # game/BKchapter1.rpy:5410
 translate chinese c1_trial_dcc2b901:
@@ -10258,7 +10258,7 @@ translate chinese c1_trial_b512b0db:
 translate chinese c1_trial_914c7aed:
 
     # judge "Those who stand before you have been rightly condemned after a vigilant and fair inquiry by our esteemed city guard, and stand to be executed for the vileness of their crimes."
-    judge "Those who stand before you have been rightly condemned after a vigilant and fair inquiry by our esteemed city guard, and stand to be executed for the vileness of their crimes."
+    judge "那些站在你们面前的人，经过我们尊敬的城市警卫队的公正调查，受到了正当的判决，他将因其罪行的卑劣而被处决。"
 
 # game/BKchapter1.rpy:5418
 translate chinese c1_trial_4f59ca5f:
@@ -10294,13 +10294,13 @@ translate chinese c1_trial_57b409f2:
 translate chinese c1_trial_6a03bb6b:
 
     # "The crowd roars with hurrahs and applause, chanting religious slogans of the church of Arios against necromancers and witches."
-    "The crowd roars with hurrahs and applause, chanting religious slogans of the church of Arios against necromancers and witches."
+    "人群爆发出欢呼和掌声，高呼着阿里奥斯教会反对亡灵巫师和女巫的宗教口号。"
 
 # game/BKchapter1.rpy:5438
 translate chinese c1_trial_442d1dc8:
 
     # "The judge basks in the adoration of the crowd. After a long pause, he proceeds with his speech."
-    "The judge basks in the adoration of the crowd. After a long pause, he proceeds with his speech."
+    "法官沉浸在群众的崇拜之中。长时间的停顿之后，他继续他的演讲。"
 
 # game/BKchapter1.rpy:5440
 translate chinese c1_trial_e98dc237:
@@ -10420,7 +10420,7 @@ translate chinese c1_trial_13878789:
 translate chinese c1_trial_ee2a4b81:
 
     # "She lowers her voice, and leans against you. Her ample breasts are bouncing, right under your nose."
-    "She lowers her voice, and leans against you. Her ample breasts are bouncing, right under your nose."
+    "她放低声音，靠在你身上。她丰满的乳房非常丰满，就在你的鼻子底下。"
 
 # game/BKchapter1.rpy:5497
 translate chinese c1_trial_1386dc68:
@@ -10468,7 +10468,7 @@ translate chinese c1_trial_d26d5c43:
 translate chinese c1_trial_4b06914c:
 
     # you "Join you?"
-    you "Join you?"
+    you "加入你们吗?"
 
 # game/BKchapter1.rpy:5520
 translate chinese c1_trial_9da7d0e4:
@@ -10492,7 +10492,7 @@ translate chinese c1_trial_00cb6fcc:
 translate chinese c1_trial_3feecd2c:
 
     # you "Mmh..."
-    you "Mmh..."
+    you "嗯……"
 
 # game/BKchapter1.rpy:5530
 translate chinese c1_trial_97fd9232:
@@ -10666,7 +10666,7 @@ translate chinese c1_trial_c9f08a1e:
 translate chinese c1_trial_0fb6812b:
 
     # captain "And be on the lookout for this 'Renza'! Raid her precious guild, and do not give her a second of rest. You hear me?"
-    captain "And be on the lookout for this 'Renza'! Raid her precious guild, and do not give her a second of rest. You hear me?"
+    captain "小心这个“伦萨”!突袭她珍贵的公会，不给她片刻的休息。你听到我吗?"
 
 # game/BKchapter1.rpy:5620
 translate chinese c1_trial_81de5ddc:
@@ -10732,7 +10732,7 @@ translate chinese c1_trial_a0d6289f:
 translate chinese c1_trial_46fdd2f6:
 
     # "She holds the dagger to the captain's gut."
-    "She holds the dagger to the captain's gut."
+    "她把匕首插在队长的肚子上。"
 
 # game/BKchapter1.rpy:5658
 translate chinese c1_trial_d5c2757f:
@@ -10798,7 +10798,7 @@ translate chinese c1_trial_3b026edf:
 translate chinese c1_trial_5cd17928:
 
     # "Turning to face the crowd, you address the people in a loud, clear voice, trying to hide your nervousness."
-    "Turning to face the crowd, you address the people in a loud, clear voice, trying to hide your nervousness."
+    "你转身面对人群，用响亮、清晰的声音向人们讲话，试图掩饰你的紧张。"
 
 # game/BKchapter1.rpy:5688
 translate chinese c1_trial_7862cba7:
@@ -10882,7 +10882,7 @@ translate chinese c1_trial_ae9b1966:
 translate chinese c1_trial_1459b6e6:
 
     # "The crowd roars with anger and indignation as the recording keeps playing."
-    "The crowd roars with anger and indignation as the recording keeps playing."
+    "录音继续播放，人群充斥着愤怒的声音。"
 
 # game/BKchapter1.rpy:5725
 translate chinese c1_trial_9f5c3796:
@@ -10894,7 +10894,7 @@ translate chinese c1_trial_9f5c3796:
 translate chinese c1_trial_0fbd770a:
 
     # captain_voice "...Oh, but I have expensive tastes... Shoes! I love SHOES!!!"
-    captain_voice "...Oh, but I have expensive tastes... Shoes! I love SHOES!!!"
+    captain_voice "…哦，但是我有很贵的品味……鞋子，我爱鞋子!"
 
 # game/BKchapter1.rpy:5729
 translate chinese c1_trial_0bea4600:
@@ -10906,7 +10906,7 @@ translate chinese c1_trial_0bea4600:
 translate chinese c1_trial_cff26d95:
 
     # captain_voice "Hahaha!!! That is a clever observation. But I have a deal... I have a powerful patron, someone high up inside the palace."
-    captain_voice "Hahaha!!! That is a clever observation. But I have a deal... I have a powerful patron, someone high up inside the palace."
+    captain_voice "哈哈哈！！！眼光不错。不过我有个协议。。。我有一位强有力的赞助人，在宫殿的高层。"
 
 # game/BKchapter1.rpy:5737
 translate chinese c1_trial_5662cec9:
@@ -10918,7 +10918,7 @@ translate chinese c1_trial_5662cec9:
 translate chinese c1_trial_de547df5:
 
     # "The judge rips the crystal from your hands, and grabs the bullhorn back."
-    "The judge rips the crystal from your hands, and grabs the bullhorn back."
+    "法官从你手中夺过水晶，然后拿回扩音器。"
 
 # game/BKchapter1.rpy:5743
 translate chinese c1_trial_09331380:
@@ -10990,7 +10990,7 @@ translate chinese c1_trial_76f071eb:
 translate chinese c1_trial_45c5976b:
 
     # "The judge looks embarrassed. He doesn't want the trouble, but a quick look back at the rabid crowd convinces him that he has no choice."
-    "The judge looks embarrassed. He doesn't want the trouble, but a quick look back at the rabid crowd convinces him that he has no choice."
+    "法官看起来很尴尬。他不想惹麻烦，但很快回头看看这群暴跳如雷的人，他确信自己别无选择。"
 
 # game/BKchapter1.rpy:5797
 translate chinese c1_trial_4d89e338:
@@ -11104,19 +11104,19 @@ translate chinese c1_trial_67eb9d2e:
 translate chinese c1_trial_8c091f78:
 
     # judge "Your... Your Highness?"
-    judge "Your... Your Highness?"
+    judge "你的殿下？"
 
 # game/BKchapter1.rpy:5875
 translate chinese c1_trial_24e61997:
 
     # kuro "As the first daughter of our beloved King, I order you to arrest this woman, and make an example of her. She is to be discharged immediately, as well as all of her accomplices in the city guard."
-    kuro "As the first daughter of our beloved King, I order you to arrest this woman, and make an example of her. She is to be discharged immediately, as well as all of her accomplices in the city guard."
+    kuro "作为我们敬爱的国王的大女儿，我命令你们逮捕这个女人，以她为案例。她和她在市警卫队的所有同伙都一起被立即流放。"
 
 # game/BKchapter1.rpy:5877
 translate chinese c1_trial_55302e9d:
 
     # judge "Y... Yes."
-    judge "Y……是的。"
+    judge "是……是。"
 
 # game/BKchapter1.rpy:5879
 translate chinese c1_trial_8286cc1a:
@@ -11134,13 +11134,13 @@ translate chinese c1_trial_fa0fd70f:
 translate chinese c1_trial_d728d641:
 
     # you "Your Highness... I am humbled..."
-    you "殿下……我谦卑…"
+    you "殿下......我感觉有点惭愧......"
 
 # game/BKchapter1.rpy:5885
 translate chinese c1_trial_cab3289b:
 
     # judge "Let it be known that Captain Farah is hereby discharged, by order of the royal court. If no one objects, I therefore declare our faithful lieutenant Lydie the new captain of the city guard."
-    judge "Let it be known that Captain Farah is hereby discharged, by order of the royal court. If no one objects, I therefore declare our faithful lieutenant Lydie the new captain of the city guard."
+    judge "请告知，根据皇家法院的命令，法拉队长已被解雇了。如果没有人反对，我宣布我们忠诚的莱迪中尉为市警卫队的新队长。"
 
 # game/BKchapter1.rpy:5890
 translate chinese c1_trial_24c6a6d6:
@@ -11176,7 +11176,7 @@ translate chinese c1_trial_b2cbdd65:
 translate chinese c1_trial_ac89493c:
 
     # you "Well..." nointeract
-    you "Well..." nointeract
+    you "好吧…" nointeract
 
 # game/BKchapter1.rpy:5911
 translate chinese c1_trial_86360b99:
@@ -11200,7 +11200,7 @@ translate chinese c1_trial_c8303e24:
 translate chinese c1_trial_b5cb8b37:
 
     # you "Your Highness, you shouldn't trust the lieutenant of the Guard either."
-    you "Your Highness, you shouldn't trust the lieutenant of the Guard either."
+    you "殿下，你也不应该相信卫兵中尉。"
 
 # game/BKchapter1.rpy:5921
 translate chinese c1_trial_caea9cbf:
@@ -11242,7 +11242,7 @@ translate chinese c1_trial_07c8d91e:
 translate chinese c1_trial_e1b4c4e2:
 
     # maya "I am Sergeant Maya, your Highness. I served your father in the Holy Lands, before returning as a veteran to serve in the city guard. I was at Kravni's Peak."
-    maya "I am Sergeant Maya, your Highness. I served your father in the Holy Lands, before returning as a veteran to serve in the city guard. I was at Kravni's Peak."
+    maya "我是玛雅警官，殿下。我曾在圣地事奉你父亲，后来以老兵的身份回到城中侍奉他。我曾经在克拉夫尼的顶峰之上。"
 
 # game/BKchapter1.rpy:5945
 translate chinese c1_trial_9fbc9288:
@@ -11254,7 +11254,7 @@ translate chinese c1_trial_9fbc9288:
 translate chinese c1_trial_c486ae6a:
 
     # maya "I have witnessed first-hand the treachery of both the Guard captain and lieutenant. In fact, she had me kidnapped by her friends in the guild. I don't know what cruel fate would have befell me if I didn't manage to escape in time."
-    maya "I have witnessed first-hand the treachery of both the Guard captain and lieutenant. In fact, she had me kidnapped by her friends in the guild. I don't know what cruel fate would have befell me if I didn't manage to escape in time."
+    maya "我亲眼目睹了警卫队长和中尉的背信弃义。事实上，她让她公会里的朋友绑架了我。我不知道如果我没有及时逃脱，我的命运将会是怎样的残酷。"
 
 # game/BKchapter1.rpy:5950
 translate chinese c1_trial_0d9e6191:
@@ -11290,7 +11290,7 @@ translate chinese c1_trial_4f64533c:
 translate chinese c1_trial_e0f10ac0:
 
     # kuro "You! Veteran fighter! What did you say your rank in the Guard was?"
-    kuro "You! Veteran fighter! What did you say your rank in the Guard was?"
+    kuro "你!老兵!你刚才说你以前在警卫的军衔是多少?"
 
 # game/BKchapter1.rpy:5964
 translate chinese c1_trial_fa2e3046:
@@ -11512,7 +11512,7 @@ translate chinese c1_ending_maya_d98e12b5:
 translate chinese c1_ending_maya_126c483f:
 
     # maya "Well, we fired all the officers and disciplined the men that were involved in the captain's schemes... Many of them had run away of their own, anyway."
-    maya "Well, we fired all the officers and disciplined the men that were involved in the captain's schemes... Many of them had run away of their own, anyway."
+    maya "嗯，我们解雇了所有的军官，并对参与队长计划的人进行了纪律处分。不管怎么说，他们中的许多人已经自己逃走了。"
 
 # game/BKchapter1.rpy:6141
 translate chinese c1_ending_maya_406281c5:
@@ -11560,7 +11560,7 @@ translate chinese c1_ending_maya_79c91bdd:
 translate chinese c1_ending_maya_a577ad0e:
 
     # you "What?"
-    you "What?"
+    you "什么?"
 
 # game/BKchapter1.rpy:6160
 translate chinese c1_ending_maya_a72d44a6:
@@ -11752,7 +11752,7 @@ translate chinese c1_ending_maya_10f11ea2:
 translate chinese c1_ending_maya_cbc7bbca:
 
     # maya "Humph..."
-    maya "Humph..."
+    maya "哼……"
 
 # game/BKchapter1.rpy:6278
 translate chinese c1_ending_maya_2efdf79c:
@@ -11806,7 +11806,7 @@ translate chinese c1_ending_maya_bf9c8578:
 translate chinese c1_ending_maya_0c449ec7:
 
     # maya "No, he didn't have to... I've been conducting my own inquiry into the thieves guild for a long time, and I have a whole file on its infamous leader: Renza the Black."
-    maya "No, he didn't have to... I've been conducting my own inquiry into the thieves guild for a long time, and I have a whole file on its infamous leader: Renza the Black."
+    maya "不，他没必要…长期以来，我一直在对盗贼行会进行自己的调查，我有一份关于这个行会臭名昭著的头目——黑人伦萨的完整档案。"
 
 # game/BKchapter1.rpy:6301
 translate chinese c1_ending_maya_057a50c5:
@@ -11872,7 +11872,7 @@ translate chinese c1_ending_maya_3c1ad4b2:
 translate chinese c1_ending_maya_b56016e2:
 
     # renza "But without me and my guild, you wouldn't be sitting where you are right now... At this very moment, you would be shining Farah's new pair of boots or something..."
-    renza "But without me and my guild, you wouldn't be sitting where you are right now... At this very moment, you would be shining Farah's new pair of boots or something..."
+    renza "但如果没有我和我的公会，你就不会坐在现在的位置上……这个时候，你可能正在擦亮法拉的新靴子什么的……"
 
 # game/BKchapter1.rpy:6325
 translate chinese c1_ending_maya_bc7cc93d:
@@ -11902,7 +11902,7 @@ translate chinese c1_ending_maya_ae577672:
 translate chinese c1_ending_maya_b05f94be:
 
     # "Maya's face reddens. She hates to have her honor questioned. You can tell Renza is playing on her weakness."
-    "Maya's face reddens. She hates to have her honor questioned. You can tell Renza is playing on her weakness."
+    "玛雅的脸变红。她讨厌别人质疑她的荣誉。你可以看出伦萨在利用她的弱点。"
 
 # game/BKchapter1.rpy:6336
 translate chinese c1_ending_maya_f070531c:
@@ -11932,7 +11932,7 @@ translate chinese c1_ending_maya_748acf57:
 translate chinese c1_ending_maya_ed12f364:
 
     # you "S... Sure."
-    you "S... Sure."
+    you "好的。。。"
 
 # game/BKchapter1.rpy:6348
 translate chinese c1_ending_maya_0ae9bcd0:
@@ -12034,7 +12034,7 @@ translate chinese c1_ending_maya_c9ce2f7c:
 translate chinese c1_ending_maya_92c9eb82:
 
     # you "What???" with vpunch
-    you "What???" with vpunch
+    you "什么? ? ?" with vpunch
 
 # game/BKchapter1.rpy:6384
 translate chinese c1_ending_maya_310b7511:
@@ -12214,19 +12214,19 @@ translate chinese c1_ending_maya_cd61cc23:
 translate chinese c1_ending_maya_b48aacce:
 
     # you "Sorry Renza. I'll sleep better knowing you're behind bars."
-    you "对不起伦萨。知道你在监狱里我会睡得更好。"
+    you "抱歉，伦扎。如果你在监狱里，我会睡得更香。"
 
 # game/BKchapter1.rpy:6485
 translate chinese c1_ending_maya_40f6d3ba:
 
     # renza "What! Fuck you, you bastard! I'll get you!" with vpunch
-    renza "什么!去你妈的，你这个混蛋!我给你拿!" with vpunch
+    renza "什么去你的，混蛋！我会抓住你的！" with vpunch
 
 # game/BKchapter1.rpy:6491
 translate chinese c1_ending_maya_e70d5953:
 
     # maya "Come on, Renza, I thought you wanted a friendly talk..."
-    maya "Come on, Renza, I thought you wanted a friendly talk..."
+    maya "得了吧，伦萨，我觉得你需要和我好好谈谈…"
 
 # game/BKchapter1.rpy:6495
 translate chinese c1_ending_maya_479d74ea:
@@ -12286,13 +12286,13 @@ translate chinese c1_ending_lieutenant_655ef585:
 translate chinese c1_ending_lieutenant_cc263b82:
 
     # you "Thanks."
-    you "Thanks."
+    you "谢谢。"
 
 # game/BKchapter1.rpy:6555
 translate chinese c1_ending_lieutenant_0215bf20:
 
     # lieutenant "Yes?"
-    lieutenant "Yes?"
+    lieutenant "你是?"
 
 # game/BKchapter1.rpy:6561
 translate chinese c1_ending_lieutenant_8f27130c:
@@ -12334,7 +12334,7 @@ translate chinese c1_ending_lieutenant_c2b91463:
 translate chinese c1_ending_lieutenant_5f471bfe:
 
     # "She hands you a crystal glass. You notice that the bottle is nearly empty already. Looks like she got a head start."
-    "She hands you a crystal glass. You notice that the bottle is nearly empty already. Looks like she got a head start."
+    "她递给你一个水晶玻璃杯。你注意到瓶子几乎已经空了。看来她领先一步了。"
 
 # game/BKchapter1.rpy:6575
 translate chinese c1_ending_lieutenant_74ed7fe8:
@@ -12358,7 +12358,7 @@ translate chinese c1_ending_lieutenant_d039fac3:
 translate chinese c1_ending_lieutenant_baf59439:
 
     # you "Don't you have a lot on your mind though? Running the Guard is not going to be easy..."
-    you "Don't you have a lot on your mind though? Running the Guard is not going to be easy..."
+    you "你不是有很多心事吗?管理警卫并不容易…"
 
 # game/BKchapter1.rpy:6584
 translate chinese c1_ending_lieutenant_99c19a82:
@@ -12394,7 +12394,7 @@ translate chinese c1_ending_lieutenant_94603930:
 translate chinese c1_ending_lieutenant_bed466cc:
 
     # lieutenant "Don't you know? Those districts are outside the Guard's jurisdiction. The blue bloods prefer to keep the commoners at arm's length."
-    lieutenant "Don't you know? Those districts are outside the Guard's jurisdiction. The blue bloods prefer to keep the commoners at arm's length."
+    lieutenant "难道你不知道吗?那些地区不在警卫的管辖范围之内。贵族们喜欢与平民保持一定的距离。"
 
 # game/BKchapter1.rpy:6597
 translate chinese c1_ending_lieutenant_b74f9123:
@@ -12550,7 +12550,7 @@ translate chinese c1_ending_captain_cf6aaf7d:
 translate chinese c1_ending_captain_10fd2ea1:
 
     # guard "What do you think you're doing in the Guard camp so late?"
-    guard "What do you think you're doing in the Guard camp so late?"
+    guard "这么晚了你还在警卫营地里干什么?"
 
 # game/BKchapter1.rpy:6708
 translate chinese c1_ending_captain_8b9e7a44:
@@ -12598,7 +12598,7 @@ translate chinese c1_ending_captain_b6dd8224:
 translate chinese c1_ending_captain_4d09692f:
 
     # guard "Yes Sir."
-    guard "是的,先生。"
+    guard "是，先生。"
 
 # game/BKchapter1.rpy:6728
 translate chinese c1_ending_captain_e5c9c4ac:
@@ -12616,7 +12616,7 @@ translate chinese c1_ending_captain_5233a746:
 translate chinese c1_ending_captain_4d09692f_1:
 
     # guard "Yes Sir."
-    guard "Yes Sir."
+    guard "是，先生。"
 
 # game/BKchapter1.rpy:6741
 translate chinese c1_ending_captain_a8ad7751:
@@ -12742,7 +12742,7 @@ translate chinese c1_ending_captain_0fbe41a2:
 translate chinese c1_ending_captain_fefcfac2:
 
     # "You have received [game.goals[0].value] gold."
-    "You have received [game.goals[0].value] gold."
+    "您收到[game.goals[0].value]枚金币"
 
 # game/BKchapter1.rpy:6803
 translate chinese c1_ending_captain_5ecf0b3b:
@@ -12904,7 +12904,7 @@ translate chinese c1_ending_captain_9e1aaded:
 translate chinese c1_ending_captain_8040c233:
 
     # you "*gulp*"
-    you "*gulp*"
+    you "*吞咽*"
 
 # game/BKchapter1.rpy:6862
 translate chinese c1_ending_captain_8255569a:
@@ -12970,7 +12970,7 @@ translate chinese c1_ending_captain_e9d96f74:
 translate chinese c1_ending_captain_f25103da:
 
     # "Your entire body feels burning hot. You feel extremely light-headed, but also bursting with wild energy."
-    "Your entire body feels burning hot. You feel extremely light-headed, but also bursting with wild energy."
+    "你感觉整个身体都在发烫。你觉得头晕目眩，但也迸发出狂野的能量。"
 
 # game/BKchapter1.rpy:6891
 translate chinese c1_ending_captain_066a4691:
@@ -12988,7 +12988,7 @@ translate chinese c1_ending_captain_dda05271:
 translate chinese c1_ending_captain_d5f90cad:
 
     # captain "The wine is spiked with a powerful aphrodisiac used for breaking slave minds in the Blood Islands... I had some too, just for the fun of it."
-    captain "The wine is spiked with a powerful aphrodisiac used for breaking slave minds in the Blood Islands... I had some too, just for the fun of it."
+    captain "这款酒里添加了一种强力壮阳药，这种药在血岛上被用来打破奴隶的思想……我也喝了一些，只是为了好玩。"
 
 # game/BKchapter1.rpy:6899
 translate chinese c1_ending_captain_8bbbb3ab:
@@ -13018,7 +13018,7 @@ translate chinese c1_ending_captain_22c93014:
 translate chinese c1_ending_captain_3a9747ee:
 
     # captain "Oh, my... This spice is known to make any cock larger, but you must naturally be quite well-endowed to become this huge..."
-    captain "Oh, my... This spice is known to make any cock larger, but you must naturally be quite well-endowed to become this huge..."
+    captain "哦，我的妈呀。。。这种香料能让任何阳具变大，不过你肯定是原来的底子不错，才能变成这么大的鸡巴。。。"
 
 # game/BKchapter1.rpy:6917
 translate chinese c1_ending_captain_21f4746d:
@@ -13090,7 +13090,7 @@ translate chinese c1_ending_captain_84d6e827:
 translate chinese c1_ending_captain_23696dbe:
 
     # "Her enormous boobs jiggle as she raises her hips, placing the tip of your cock against her wet hole."
-    "Her enormous boobs jiggle as she raises her hips, placing the tip of your cock against her wet hole."
+    "当她抬起臀部时，她巨大的胸部抖动着，把你的龟头顶在她的蜜壶口上。"
 
 # game/BKchapter1.rpy:6945
 translate chinese c1_ending_captain_dea7ad0c:
@@ -13102,7 +13102,7 @@ translate chinese c1_ending_captain_dea7ad0c:
 translate chinese c1_ending_captain_ed63234d:
 
     # "Lowering her hips, she engulfs your throbbing cock deep into her moist pussy. Her tight vagina spreads little by little to accommodate your abnormally large cock."
-    "Lowering her hips, she engulfs your throbbing cock deep into her moist pussy. Her tight vagina spreads little by little to accommodate your abnormally large cock."
+    "她压下胯部，把你竖起的鸡巴深深地吸进她湿漉漉的阴部。她那紧绷的阴道一点一点地张开来容纳你那异常巨大的阴茎。"
 
 # game/BKchapter1.rpy:6952
 translate chinese c1_ending_captain_e0ea07ce:
@@ -13138,7 +13138,7 @@ translate chinese c1_ending_captain_ed5a12bf:
 translate chinese c1_ending_captain_63994c7d:
 
     # "A strong orgasm washes over her as you pound her cervix with all you've got."
-    "A strong orgasm washes over her as you pound her cervix with all you've got."
+    "当你用尽全身力气冲击她的子宫口时，一股强大的高潮在她身上涌动。"
 
 # game/BKchapter1.rpy:6968
 translate chinese c1_ending_captain_6ae276c9:
@@ -13186,13 +13186,13 @@ translate chinese c1_ending_captain_676e3dc6:
 translate chinese c1_ending_captain_9b7e15e9:
 
     # you "Ohhh!!!" with vpunch
-    you "呵呵! ! !" with vpunch
+    you "欧! ! !" with vpunch
 
 # game/BKchapter1.rpy:6994
 translate chinese c1_ending_captain_8e1a9e54:
 
     # captain "Yessss!!!" with doubleflash
-    captain "Yessss!!!" with doubleflash
+    captain "爽!!!" with doubleflash
 
 # game/BKchapter1.rpy:6996
 translate chinese c1_ending_captain_2988cb25:
@@ -13240,7 +13240,7 @@ translate chinese c1_ending_captain_43f18ef5:
 translate chinese c1_ending_captain_5554260e:
 
     # "She climaxes again as you shoot more cum on her boobs and belly. Looks like the rumors about the captain being a nymphomaniac aren't exaggerated after all..."
-    "She climaxes again as you shoot more cum on her boobs and belly. Looks like the rumors about the captain being a nymphomaniac aren't exaggerated after all..."
+    "你朝她的巨大的乳房和柔软的肚子上射了很多滚烫的精液，她再次达到高潮。看起来关于队长是个色情狂的谣言并没有夸张……"
 
 # game/BKchapter1.rpy:7026
 translate chinese c1_ending_captain_e9abd193:
@@ -13252,7 +13252,7 @@ translate chinese c1_ending_captain_e9abd193:
 translate chinese c1_ending_captain_0b6b6d0a_1:
 
     # you "*sweat*"
-    you "*sweat*"
+    you "*流汗*"
 
 # game/BKchapter1.rpy:7036
 translate chinese c1_ending_captain_af5ad1aa:
@@ -13486,7 +13486,7 @@ translate chinese c1_judge_fate_822e317e:
 translate chinese c1_judge_fate_689cc3de:
 
     # "The streets are dark and deserted. The judge is pacing back and forth, waiting for someone."
-    "The streets are dark and deserted. The judge is pacing back and forth, waiting for someone."
+    "街道又黑又荒凉。法官在来回踱步，好像在等什么人。"
 
 # game/BKchapter1.rpy:7239
 translate chinese c1_judge_fate_3fcf4a36:
@@ -13522,7 +13522,7 @@ translate chinese c1_judge_fate_894d20cf:
 translate chinese c1_judge_fate_f32b84b0:
 
     # judge "Humph. It's just a cat."
-    judge "Humph. It's just a cat."
+    judge "嗨。只是一只猫而已。"
 
 # game/BKchapter1.rpy:7259
 translate chinese c1_judge_fate_b88f9e02:
@@ -13600,7 +13600,7 @@ translate chinese c1_judge_fate_81244157:
 translate chinese c1_judge_fate_d9a0c411:
 
     # judge "This is not funny! I am a high judge of the royal court! Leave now, or I shall call the Guard on you..."
-    judge "This is not funny! I am a high judge of the royal court! Leave now, or I shall call the Guard on you..."
+    judge "这一点都不好笑!我是王室的高级法官!现在就给我滚，否则我叫警卫来……"
 
 # game/BKchapter1.rpy:7301
 translate chinese c1_judge_fate_069470b8:
@@ -13678,195 +13678,195 @@ translate chinese strings:
 
     # game/BKchapter1.rpy:104
     old "Who are you?"
-    new "Who are you?"
+    new "你是谁?"
 
     # game/BKchapter1.rpy:104
     old "Get out."
-    new "Get out."
+    new "出去。"
 
     # game/BKchapter1.rpy:104
     old "Yo mamma!"
-    new "Yo mamma!"
+    new "喂妈妈!"
 
     # game/BKchapter1.rpy:104
     old "SKIP (debug)"
-    new "SKIP (debug)"
+    new "跳过(调试)"
 
     # game/BKchapter1.rpy:177
     old "Piss off"
-    new "Piss off"
+    new "滚开"
 
     # game/BKchapter1.rpy:177
     old "I'll kick your ass"
-    new "I'll kick your ass"
+    new "小心我揍你"
 
     # game/BKchapter1.rpy:177
     old "Yo mamma"
-    new "Yo mamma"
+    new "喂妈妈!"
 
     # game/BKchapter1.rpy:249
     old "Sill's not for sale"
-    new "Sill's not for sale"
+    new "西里尔是非卖品"
 
     # game/BKchapter1.rpy:249
     old "I'm not selling to you"
-    new "I'm not selling to you"
+    new "我不会卖给你的"
 
     # game/BKchapter1.rpy:249
     old "How about 5000 gold"
-    new "How about 5000 gold"
+    new "5000枚金币怎么"
 
     # game/BKchapter1.rpy:1179
     old "Sure"
-    new "Sure"
+    new "行"
 
     # game/BKchapter1.rpy:1179
     old "Not interested"
-    new "Not interested"
+    new "没兴趣"
 
     # game/BKchapter1.rpy:1332
     old "What do you do?"
-    new "What do you do?"
+    new "你是做什么的？"
 
     # game/BKchapter1.rpy:1332
     old "Let him pass"
-    new "Let him pass"
+    new "让他过去"
 
     # game/BKchapter1.rpy:1332
     old "Bar his way"
-    new "Bar his way"
+    new "拦住他"
 
     # game/BKchapter1.rpy:1383
     old "I wanted to do the right thing (Truth)"
-    new "I wanted to do the right thing (Truth)"
+    new "我想做正确的事(说真话)"
 
     # game/BKchapter1.rpy:1383
     old "I wanted to do the right thing (Lie)"
-    new "I wanted to do the right thing (Lie)"
+    new "我想做正确的事(说谎)"
 
     # game/BKchapter1.rpy:1498
     old "Follow the screams"
-    new "Follow the screams"
+    new "跟随尖叫声"
 
     # game/BKchapter1.rpy:1498
     old "Ignore them"
-    new "Ignore them"
+    new "无视他们"
 
     # game/BKchapter1.rpy:1759
     old "No thanks"
-    new "No thanks"
+    new "不,谢谢"
 
     # game/BKchapter1.rpy:1759
     old "Hell yeah"
-    new "Hell yeah"
+    new "当然"
 
     # game/BKchapter1.rpy:2218
     old "Kick his ass"
-    new "Kick his ass"
+    new "踢他的屁股"
 
     # game/BKchapter1.rpy:2218
     old "Neutralize him with magic"
-    new "Neutralize him with magic"
+    new "用魔法制服他"
 
     # game/BKchapter1.rpy:2218
     old "Negotiate"
-    new "Negotiate"
+    new "谈判"
 
     # game/BKchapter1.rpy:2447
     old "Force it open"
-    new "Force it open"
+    new "强行打开"
 
     # game/BKchapter1.rpy:2447
     old "Sneak your way in"
-    new "Sneak your way in"
+    new "偷偷溜进来"
 
     # game/BKchapter1.rpy:2734
     old "I know Maya, she's clean"
-    new "I know Maya, she's clean"
+    new "我知道玛雅,她是清白的"
 
     # game/BKchapter1.rpy:2734
     old "Uh, nothing"
-    new "Uh, nothing"
+    new "哦,没有什么"
 
     # game/BKchapter1.rpy:2786
     old "What will you do first?"
-    new "What will you do first?"
+    new "你会先做什么?"
 
     # game/BKchapter1.rpy:2786
     old "Visit Maya"
-    new "Visit Maya"
+    new "访问玛雅"
 
     # game/BKchapter1.rpy:2786
     old "Interrogate Maya"
-    new "Interrogate Maya"
+    new "审问玛雅"
 
     # game/BKchapter1.rpy:2786
     old "Interrogate Kashiv"
-    new "Interrogate Kashiv"
+    new "审问卡西瓦"
 
     # game/BKchapter1.rpy:2869
     old "Tell the truth"
-    new "Tell the truth"
+    new "说真话"
 
     # game/BKchapter1.rpy:2869
     old "Stay vague"
-    new "Stay vague"
+    new "保持神秘"
 
     # game/BKchapter1.rpy:2969
     old "Of course not"
-    new "Of course not"
+    new "当然不"
 
     # game/BKchapter1.rpy:2969
     old "Rape you? Mmmh..."
-    new "Rape you? Mmmh..."
+    new "强奸你？嗯。。。"
 
     # game/BKchapter1.rpy:3041
     old "Leave her alone"
-    new "Leave her alone"
+    new "把她单独留下"
 
     # game/BKchapter1.rpy:3041
     old "Rape her anyway"
-    new "Rape her anyway"
+    new "直接强奸她"
 
     # game/BKchapter1.rpy:3300
     old "I'm [MC.name]"
-    new "I'm [MC.name]"
+    new "我是[MC.name]"
 
     # game/BKchapter1.rpy:3300
     old "You don't need to know"
-    new "You don't need to know"
+    new "你不需要知道"
 
     # game/BKchapter1.rpy:3300
     old "Your worst nightmare"
-    new "Your worst nightmare"
+    new "你的梦魇"
 
     # game/BKchapter1.rpy:3392
     old "What will you do to get the truth out of her?"
-    new "What will you do to get the truth out of her?"
+    new "你会从她的口中得到的真相吗?"
 
     # game/BKchapter1.rpy:3392
     old "Use your wits"
-    new "Use your wits"
+    new "用你的智慧"
 
     # game/BKchapter1.rpy:3392
     old "Beat her up"
-    new "Beat her up"
+    new "打她"
 
     # game/BKchapter1.rpy:3392
     old "Hypnotize her with a spell"
-    new "Hypnotize her with a spell"
+    new "催眠她一段时间"
 
     # game/BKchapter1.rpy:3392
     old "Rape her"
-    new "Rape her"
+    new "强奸她"
 
     # game/BKchapter1.rpy:4721
     old "You had your own reasons."
-    new "You had your own reasons."
+    new "你有你自己的原因。"
 
     # game/BKchapter1.rpy:4721
     old "I want my money"
-    new "I want my money"
+    new "我想要我的钱"
 
     # game/BKchapter1.rpy:4721
     old "I want revenge"
@@ -13874,65 +13874,65 @@ translate chinese strings:
 
     # game/BKchapter1.rpy:4721
     old "I want justice"
-    new "I want justice"
+    new "我想要复仇"
 
     # game/BKchapter1.rpy:4721
     old "I'm firebatshit crazy"
-    new "I'm firebatshit crazy"
+    new "我真是他妈疯了"
 
     # game/BKchapter1.rpy:5171
     old "...to do anything for you, Renza"
-    new "...to do anything for you, Renza"
+    new "...为你做任何事情,伦萨"
 
     # game/BKchapter1.rpy:5171
     old "...to do the right thing"
-    new "...to do the right thing"
+    new "...做正确的事"
 
     # game/BKchapter1.rpy:5171
     old "...to get my money back"
-    new "...to get my money back"
+    new "...拿回我的钱"
 
     # game/BKchapter1.rpy:5171
     old "...to kick some ass"
-    new "...to kick some ass"
+    new "...揍他"
 
     # game/BKchapter1.rpy:5171
     old "...to lie and manipulate people"
-    new "...to lie and manipulate people"
+    new "...说谎然后操纵人们"
 
     # game/BKchapter1.rpy:5326
     old "You're right"
-    new "You're right"
+    new "你是对的"
 
     # game/BKchapter1.rpy:5326
     old "You're wrong"
-    new "You're wrong"
+    new "你错了"
 
     # game/BKchapter1.rpy:5326
     old "I don't care"
-    new "I don't care"
+    new "我不在乎"
 
     # game/BKchapter1.rpy:5528
     old "All right"
-    new "All right"
+    new "好吧"
 
     # game/BKchapter1.rpy:5528
     old "Not gonna happen"
-    new "Not gonna happen"
+    new "不可能发生的"
 
     # game/BKchapter1.rpy:5904
     old "Tell the truth about the lieutenant"
-    new "Tell the truth about the lieutenant"
+    new "告诉关于中尉的真相"
 
     # game/BKchapter1.rpy:5904
     old "Nothing"
-    new "Nothing"
+    new "没有什么"
 
     # game/BKchapter1.rpy:6394
     old "Help her"
-    new "Help her"
+    new "帮助她"
 
     # game/BKchapter1.rpy:6394
     old "Don't help her"
-    new "Don't help her"
+    new "D不帮助她"
 
