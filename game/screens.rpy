@@ -600,8 +600,8 @@ screen preferences():
                 has vbox
 
                 label _("Language")
-                textbutton _("English") action Language(None)
-                textbutton _("Chinese") action Language("chinese")
+                textbutton _("English") text_font "DejaVuSans.ttf" action Language(None)
+                textbutton _("Chinese") text_font "DejaVuSans.ttf" action Language("chinese")       
 
             if config.has_voice:
                 frame:
