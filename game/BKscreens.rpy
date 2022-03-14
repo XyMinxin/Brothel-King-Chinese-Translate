@@ -7555,7 +7555,7 @@ screen h_content():
             else:
                 $ text1 = "ON"
 
-            textbutton _("Bestiality: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
+            textbutton _("兽交: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
                 if "beast" in persistent.forbidden_tags:
                     action RemoveFromSet(persistent.forbidden_tags, "beast")
                 else:
@@ -7566,7 +7566,7 @@ screen h_content():
             else:
                 $ text1 = "ON"
 
-            textbutton _("Monsters/Tentacles: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
+            textbutton _("怪物/触手: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
                 if "monster" in persistent.forbidden_tags:
                     action RemoveFromSet(persistent.forbidden_tags, "monster")
                 else:
@@ -7577,7 +7577,7 @@ screen h_content():
             else:
                 $ text1 = "ON"
 
-            textbutton _("Machines: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
+            textbutton _("机器: " + text1) text_size 18 xalign 0.0 xsize 0.8 xfill True:
                 if "machine" in persistent.forbidden_tags:
                     action RemoveFromSet(persistent.forbidden_tags, "machine")
                 else:
@@ -7662,7 +7662,7 @@ screen h_content():
                                     add im.MatrixColor(ProportionalScale("UI/status/" + status[1], 30, 30), im.matrix.desaturate())
 
                 if current_status:
-                    text "%s\n(%s)" % (current_status.capitalize(), {True : "active", False : "inactive"}[persistent.show_girl_status[current_status]]) bold True size 14 color c_prune yalign 0.5
+                    text "%s\n(%s)" % (settings_name_dict[current_status.capitalize()], {True : "开启", False : "关闭"}[persistent.show_girl_status[current_status]]) bold True size 14 color c_prune yalign 0.5
 
             # Badge settings
 

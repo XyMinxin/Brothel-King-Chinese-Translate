@@ -61,7 +61,7 @@ init -4 python:
                     }
 
     ## 中文翻译 ##
-    chinese_name_dict_dict = {
+    chinese_name_dict = {
                     ## 职业名称 ##
                     "Waitress" : "服务员",
                     "waitress" : "服务员",
@@ -300,6 +300,19 @@ init -4 python:
                     "hide" : "隐藏",
                     "Close" : "关闭",
                     "close" : "关闭",
+
+                    ## 状态名称 ##
+                    "Away" : "离开",
+                    "Farm" : "农场",
+                    "Rest" : "休息",
+                    "Scheduled" : "计划",
+                    "Half-shift" : "半班制",
+                    "Master bedroom" : "主人卧室",
+                    "Work&whore" : "工作&妓女",
+                    "Naked" : "裸体",
+                    "Negative fixation" : "负面特质",
+                    "Not naked" : "非裸体",
+                    "Not work&whore" : "没有工作",
 
                     ## 夜间活动设置 ##
                     "Normal" : "一般",
