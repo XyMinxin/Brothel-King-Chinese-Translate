@@ -190,7 +190,7 @@ translate chinese sill_spank_daa03f08:
 translate chinese sill_spank_e4e7a0e4:
 
     # you "Silence, whore! You will only talk when addressed."
-    you "安静,婊子!我叫到你你才能说话。
+    you "安静,婊子!我叫到你你才能说话。"
 
 # game/BKintro.rpy:242
 translate chinese sill_spank_00bb4f90:
