@@ -994,16 +994,16 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     if farm.programs[girl].target != "no training":
                         hbox:
                             textbutton "训练模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定Gizel是否会强迫女孩们违心地训练.")
-                            text chinese_name_dict[farm.programs[girl].mode.capitalize()] size 14 bold True
+                            text farm_name_dict[farm.programs[girl].mode.capitalize()] size 14 bold True
 
                         hbox:
                             textbutton "训练设施:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有).")
-                            text chinese_name_dict[farm.programs[girl].installation_name.capitalize()] size 14 bold True
+                            text farm_name_dict[farm.programs[girl].installation_name.capitalize()] size 14 bold True
 
                     else:
                         hbox:
                             textbutton "待机模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么.")
-                            text chinese_name_dict[farm.programs[girl].holding.capitalize()] size 14 bold True
+                            text farm_name_dict[farm.programs[girl].holding.capitalize()] size 14 bold True
 
                     hbox:
                         if farm.programs[girl].duration >= 0:
@@ -2261,7 +2261,7 @@ screen rank_level_details(girl):
                 for i in range(girl.job_level[job]):
                     $ star_text += "{image=img_star}"
 
-                text star_text yalign 0.5
+                text star_name_dict[star_text] yalign 0.5
 
                 text str(round_int(girl.jp[job])) + " {size=12}/ " + str(girl.get_jp_cap(job)) + "{/size}" yalign 0.5 color c_orange
 
@@ -4868,7 +4868,7 @@ screen shortcuts():
 
 screen close(act, name = "back"):
 
-    textbutton chinese_name_dict[name]:
+    textbutton button_name_dict[name]:
 
         background None
 
@@ -5267,9 +5267,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + chinese_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + farm_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + chinese_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + farm_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -6391,7 +6391,7 @@ screen farm_tab():
                 $ text1 = "我的仆从最近很无聊... 你打算什么时候给他们送些新玩伴?"
                 $ pic = "side gizel upset"
 
-            button xfill True xmargin 3 ymargin 3 xpadding 6 ypadding 6 action Return(("help", None)) hovered tt.Action("Ask Gizel for help about the farm.") background c_ui_dark:
+            button xfill True xmargin 3 ymargin 3 xpadding 6 ypadding 6 action Return(("help", None)) hovered tt.Action("向Gizel寻求帮助，了解农场的情况.") background c_ui_dark:
                 has hbox spacing 10
                 add pic zoom 0.6 yalign 0.5 idle_alpha 0.8 hover_alpha 1.0
                 text text1 yalign 0.5 size 18 justify True italic True xmaximum 0.8
@@ -6497,15 +6497,15 @@ screen farm_tab():
                             if inst.can_upgrade():
                                 action Return(("upgrade", inst))
                                 if inst.rank > 0:
-                                    hovered tt.Action("点击这里升级" + inst.name + "的能力需要" + str(inst.get_price()) + "金币.")
+                                    hovered tt.Action("点击这里升级" + farm_name_dict[inst.name] + "的能力需要" + str(inst.get_price()) + "金币.")
                                 else:
-                                    hovered tt.Action("点击这里建造" + inst.name +  "需要" + str(inst.get_price()) + "金币.")
+                                    hovered tt.Action("点击这里建造" + farm_name_dict[inst.name] +  "需要" + str(inst.get_price()) + "金币.")
                             else:
                                 action NullAction()
                                 if inst.rank < 5:
-                                    hovered tt.Action("你无法改善" + inst.name + "直到你获得更高的青楼执照.")
+                                    hovered tt.Action("你无法升级" + farm_name_dict[inst.name] + "直到你获得更高的青楼执照.")
                                 else:
-                                    hovered tt.Action("你无法进一步改善" + inst.name + "的状况.")
+                                    hovered tt.Action("你无法进一步升级" + farm_name_dict[inst.name] + "了.")
 
                             vbox:
                                 spacing 3
@@ -6517,7 +6517,7 @@ screen farm_tab():
                                     text str(inst.rank) + "{size=-8}/" + str(district.rank) xalign 0.9 yalign 0.1
 
                                 if inst.rank > 0:
-                                    text inst.name.capitalize() size 14 xcenter 0.5
+                                    text farm_name_dict[inst.name.capitalize()] size 14 xcenter 0.5
                                 else:
                                     text "???" size 14 xcenter 0.5
 
@@ -6532,7 +6532,7 @@ screen farm_tab():
                     vbox xsize 130 xfill True:
 
                         if len(farm.get_minions(type)) > 0:
-                            text str(len(farm.get_minions(type))) + " " + type.capitalize() + plural(len(farm.get_minions(type))) size 14 bold True xalign 0.5
+                            text str(len(farm.get_minions(type))) + " " + farm_name_dict[type.capitalize()] size 14 bold True xalign 0.5
 
                         text "" size 6
 

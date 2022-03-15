@@ -44,20 +44,20 @@ init -2 python:
 
         def add_minion(self, mn):
             if mn.type != self.minion_type:
-                return False, "You cannot add a " + mn.type + " to the " + self.name + " (wrong minion type)."
+                return False, "你不能添加一个" + mn.type + " 到 " + self.name + " (错误的仆从类型)."
             elif self.has_room():
                 self.minions.append(mn)
                 renpy.play(s_moo, "sound")
 #                renpy.say ("", "Adding to " + self.name)
-                return True, mn.name + ", a level " + str(mn.level) + " " + mn.type + ", has joined the farm's " + self.name + "."
+                return True, mn.name + ", 一个等级" + str(mn.level) + "的" + mn.type + ", 已加入农场的" + self.name + "."
             elif self.can_upgrade():
                 if self.rank > 0:
-                    renpy.say("", "The " + self.name + " is currently full.")
+                    renpy.say("", farm_name_dict[self.name] + "目前已满.")
                 else:
-                    renpy.say("", "You must build the " + self.name + " first.")
-                if renpy.call_screen("yes_no", "Do you want to upgrade " + self.name + " to rank " + str(self.rank+1) + " for " + str(self.get_price()) + " gold?"):
+                    renpy.say("", "你必须先建立" + farm_name_dict[self.name] + ".")
+                if renpy.call_screen("yes_no", "你想要花费" + str(self.get_price()) + "金币升级" + farm_name_dict[self.name] + "到" + str(self.rank+1) + "阶吗?"):
                     if MC.gold < self.get_price() + mn.get_price("buy"):
-                        return False, "You do not have enough money to both upgrade the " + self.name + " and buy the minion."
+                        return False, "你没有足够的钱来升级" + farm_name_dict[self.name] + "和购买仆从."
                     MC.gold -= self.get_price()
                     self.rank += 1
                     self.minions.append(mn)
