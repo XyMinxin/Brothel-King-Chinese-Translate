@@ -192,7 +192,9 @@ init -4 python:
                         "hide" : "隐藏",
                         "Close" : "关闭",
                         "close" : "关闭",
-    
+                        "Next" : "下一个",
+                        "next" : "下一个",
+
                         "Chat" : "交谈",
                         "chat" : "交谈",
                         "Train" : "训练",

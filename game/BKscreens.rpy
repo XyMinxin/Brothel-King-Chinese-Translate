@@ -925,10 +925,10 @@ screen girl_fast_actions(girl, notebook=True, love_fear=True, schedule=True, cus
                     if brothel.get_effect("allow", pop.name):
                         if girl.refused_populations[pop.name]:
                             $ X_text = "{b}X{/b}"
-                            $ ttip = "Click to allow " + pop.description
+                            $ ttip = "单击允许" + pop.description
                         else:
                             $ X_text = ""
-                            $ ttip = "Click to block " + pop.description
+                            $ ttip = "单击阻止" + pop.description
                         button xsize 25 ysize 25 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None yalign 0.5:
                             action (ToggleDict(girl.refused_populations, pop.name), girl.customer_populations_safety_check(pop.name))
                             tooltip ttip
@@ -987,7 +987,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     hbox xalign 0.5 box_wrap True:
                         textbutton "改变设定" text_size 16 action Return(("change program", girl)) tooltip "更改" + girl.name + "当前的训练设定."
                         if farm.programs[girl].target != "no training":
-                            textbutton "改变模式" text_size 16 action Return(("change mode", girl)) hovered tt.Action("Change " + girl.name + "当前的训练模式.")
+                            textbutton "改变模式" text_size 16 action Return(("change mode", girl)) hovered tt.Action("更改" + girl.name + "当前的训练模式.")
 
                     text "" size 18
 
@@ -2241,7 +2241,7 @@ screen rank_level_details(girl):
 
             for job in all_jobs:
 
-                text job.capitalize() yalign 0.5
+                text chinese_name_dict[job.capitalize()] yalign 0.5
                 $ star_text = ""
                 for i in range(girl.job_level[job]):
                     $ star_text += "{image=img_star}"
@@ -2256,12 +2256,12 @@ screen rank_level_details(girl):
 
             for job in ("service", "sex", "anal", "fetish"):
 
-                text job.capitalize() yalign 0.5
+                text chinese_name_dict[job.capitalize()] yalign 0.5
                 $ star_text = ""
                 for i in range(girl.job_level[job]):
                     $ star_text += "{image=img_star}"
 
-                text star_name_dict[star_text] yalign 0.5
+                text star_text yalign 0.5
 
                 text str(round_int(girl.jp[job])) + " {size=12}/ " + str(girl.get_jp_cap(job)) + "{/size}" yalign 0.5 color c_orange
 
