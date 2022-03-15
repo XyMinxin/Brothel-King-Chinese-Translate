@@ -190,7 +190,7 @@ translate chinese sill_spank_daa03f08:
 translate chinese sill_spank_e4e7a0e4:
 
     # you "Silence, whore! You will only talk when addressed."
-    you "Silence, whore! You will only talk when addressed."
+    you "安静,婊子!我叫到你你才能说话。
 
 # game/BKintro.rpy:242
 translate chinese sill_spank_00bb4f90:
@@ -244,7 +244,7 @@ translate chinese resume_intro_daf95156:
 translate chinese resume_intro_b98dd8c2:
 
     # "Zan is well protected from outside dangers by a series of moats, walls and garrisons."
-    "Zan is well protected from outside dangers by a series of moats, walls and garrisons."
+    "赞城有一系列护城河、城墙和要塞，能很好地抵御外界的危险。"
 
 # game/BKintro.rpy:287
 translate chinese resume_intro_c88e3e01:
@@ -334,7 +334,7 @@ translate chinese resume_intro_2fd78af9:
 translate chinese resume_intro_0cdfd5f0:
 
     # "You have grown tired of the constant fighting and senseless bloodshed. This is not your calling anymore."
-    "You have grown tired of the constant fighting and senseless bloodshed. This is not your calling anymore."
+    "你已经厌倦了无休止的战斗和无谓的流血。这不再是你的使命了。"
 
 # game/BKintro.rpy:329
 translate chinese resume_intro_bc90bf67:
@@ -376,7 +376,7 @@ translate chinese resume_intro_02b79417:
 translate chinese resume_intro_213dfe50:
 
     # "The hundred warring Princes in Westmarch are always in need of a wizard for counsel, enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of life and death are woven into the fabric of magic itself, and a potent spellcaster can easily wield both."
-    "The hundred warring Princes in Westmarch are always in need of a wizard for counsel, enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of life and death are woven into the fabric of magic itself, and a potent spellcaster can easily wield both."
+    "西部战场上的百位王子总是需要一个巫师来咨询，附魔和治疗。有时，为了更多的秘密任务……因为生与死的力量被编织在魔法本身的结构中，一个强大的施法者可以很容易地同时使用这两种力量。"
 
 # game/BKintro.rpy:360
 translate chinese resume_intro_6da822d1:
@@ -400,7 +400,7 @@ translate chinese resume_intro_8c49142b:
 translate chinese resume_intro_e67ddf32:
 
     # "Not forgetting to pay a last visit to the Princess on your way out, of course..."
-    "Not forgetting to pay a last visit to the Princess on your way out, of course..."
+    "当然，在你离开的时候，别忘了去看公主的最后一面……"
 
 # game/BKintro.rpy:366
 translate chinese resume_intro_30c09359:
@@ -430,7 +430,7 @@ translate chinese resume_intro_3de00e30:
 translate chinese resume_intro_55327b02:
 
     # guard "I'll keep my eye on you, wizard, so don't step out of line. Otherwise it'll be my pleasure to escort you out of the city... or to the pit."
-    guard "I'll keep my eye on you, wizard, so don't step out of line. Otherwise it'll be my pleasure to escort you out of the city... or to the pit."
+    guard "我会盯着你的，巫师，所以别出格。否则，我很乐意护送你出城……或者去矿坑。"
 
 # game/BKintro.rpy:387
 translate chinese resume_intro_4126abbe:
@@ -454,7 +454,7 @@ translate chinese resume_intro_fdaf4f4d:
 translate chinese resume_intro_509ca17e:
 
     # "You went to the furthest corners of Xeros and back, and even sailed the Blood Sea. But your latest trip was nearly your last."
-    "You went to the furthest corners of Xeros and back, and even sailed the Blood Sea. But your latest trip was nearly your last."
+    "你去了克塞罗斯最远的角落，然后又回来了，甚至还驾着血海航行。但你最近的一次旅行差点要了你的性命。"
 
 # game/BKintro.rpy:398
 translate chinese resume_intro_58c304ed:
@@ -466,7 +466,7 @@ translate chinese resume_intro_58c304ed:
 translate chinese resume_intro_d0a005e0:
 
     # "Your aim was to negotiate with native tribes for the rarest spices and magical ingredients, to exchange for cheap trinkets."
-    "Your aim was to negotiate with native tribes for the rarest spices and magical ingredients, to exchange for cheap trinkets."
+    "你的目标是与当地部落谈判，通过交易一些廉价的饰品来获得最稀有的香料和神奇的原料。"
 
 # game/BKintro.rpy:402
 translate chinese resume_intro_7539a6ae:
@@ -484,7 +484,7 @@ translate chinese resume_intro_543e9649:
 translate chinese resume_intro_40919227:
 
     # "You and Sill barely made it out with your lives, losing all of your stock while escaping."
-    "You and Sill barely made it out with your lives, losing all of your stock while escaping."
+    "你和西里尔在逃跑的过程中失去了所有的积蓄，勉强活了下来。"
 
 # game/BKintro.rpy:409
 translate chinese resume_intro_7b27127e:
@@ -508,7 +508,7 @@ translate chinese resume_intro_dde54fb6:
 translate chinese resume_intro2_b7df2a5a:
 
     # guard "One more thing. Which god do you worship, [MC.playerclass]?"
-    guard "One more thing. Which god do you worship, [MC.playerclass]?"
+    guard "还有一件事. 你的信仰是什么，[MC.playerclass]?"
 
 # game/BKintro.rpy:428
 translate chinese resume_intro2_4bf8fadb:
@@ -544,7 +544,7 @@ translate chinese resume_intro2_32b8a21b:
 translate chinese resume_intro2_81fcfecc:
 
     # "Please take a moment to review your choices now. You won't be able to change them after this point."
-    "Please take a moment to review your choices now. You won't be able to change them after this point."
+    "现在请花点时间回顾一下你的选择。在这之后，你将无法更改它们。"
 
 # game/BKintro.rpy:455
 translate chinese resume_intro2_3075dc9d:
@@ -586,7 +586,7 @@ translate chinese resume_intro2_4f426239:
 translate chinese resume_intro2_0568131e:
 
     # you "Sill, hurry up! We have to find an inn."
-    you "Sill, hurry up! We have to find an inn."
+    you "西里尔,快点!我们得找个客栈。"
 
 # game/BKintro.rpy:484
 translate chinese resume_intro2_e40f6f18:
@@ -598,7 +598,7 @@ translate chinese resume_intro2_e40f6f18:
 translate chinese resume_intro2_f0c16af5:
 
     # "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly crumbling under its weight."
-    "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly crumbling under its weight."
+    "西里尔帮你拿着所有的设备和行李。她从来都不强壮，所以她几乎被它的重量压垮了。"
 
 # game/BKintro.rpy:489
 translate chinese resume_intro2_5de258a0:
@@ -700,7 +700,7 @@ translate chinese resume_intro2_9a03745f:
 translate chinese resume_intro2_ee6ec26a_1:
 
     # kuro "Please, my good lord, please help me! These men are here to kill me!"
-    kuro "Please, my good lord, please help me! These men are here to kill me!"
+    kuro "求求你，我的贵人，求求你帮帮我!这些人是来杀我的!"
 
 # game/BKintro.rpy:565
 translate chinese resume_intro2_e2d41a8f:
@@ -820,7 +820,7 @@ translate chinese resume_intro2_07e4fe09:
 translate chinese resume_intro2_06bb64be:
 
     # thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know what the boss said... No witnesses."
-    thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know what the boss said... No witnesses."
+    thug1 "他们在偷听！你个白痴!干他妈的，他们已经听到我们讲的话了，你知道老板说了什么吗——不能有目击者！"
 
 # game/BKintro.rpy:624
 translate chinese resume_intro2_c64729da:
@@ -862,7 +862,7 @@ translate chinese resume_intro3_be6b0d0b:
 translate chinese resume_intro3_9e8680b8:
 
     # thug1 "All right, then... You just dug your own grave, you nosy bastard!"
-    thug1 "好了,然后……你只是在自掘坟墓，你这个爱管闲事的混蛋!"
+    thug1 "好了,然后……你给我去死吧，你这个爱管闲事的混蛋!"
 
 # game/BKintro.rpy:645
 translate chinese resume_intro3_a0a7cf74:
@@ -904,7 +904,7 @@ translate chinese resume_intro3_490b47c3:
 translate chinese resume_intro3_f2eac70c:
 
     # thug2 "You..."
-    thug2 "You..."
+    thug2 "你……"
 
 # game/BKintro.rpy:665
 translate chinese resume_intro3_9e399200:
@@ -952,7 +952,7 @@ translate chinese resume_intro3_65a36caa:
 translate chinese resume_intro3_c034af85:
 
     # "The bandit coughs bubbles of blood as life drains out of his eyes."
-    "The bandit coughs bubbles of blood as life drains out of his eyes."
+    "当生命从他的眼睛里流逝的时候，那家伙的嘴里嗽出大口大口的血。"
 
 # game/BKintro.rpy:702
 translate chinese resume_intro3_a2fbc6f3:
@@ -1414,7 +1414,7 @@ translate chinese resume_intro3_6451c416:
 translate chinese resume_intro3_beea074f:
 
     # gio "Haha, it is true to some extent, my friend."
-    gio "哈哈，在某种程度上是真的，我的朋友。"
+    gio "哈哈，在某种意义上是对的，我的朋友。"
 
 # game/BKintro.rpy:972
 translate chinese resume_intro3_ab2d04c8:
@@ -1492,7 +1492,7 @@ translate chinese resume_intro3_b96e91b1:
 translate chinese resume_intro3_b96e91b1_1:
 
     # gio "*roll eyes*"
-    gio "*roll eyes*"
+    gio "*转眼珠*"
 
 # game/BKintro.rpy:1005
 translate chinese resume_intro3_12063099:
@@ -1612,7 +1612,7 @@ translate chinese resume_intro3_0d04a0b8:
 translate chinese resume_intro3_f7e5ca54:
 
     # gio "The brothel masters cater to the needs of Zan's privileged citizens, bringing them refined and perverse pleasures from out of this world."
-    gio "The brothel masters cater to the needs of Zan's privileged citizens, bringing them refined and perverse pleasures from out of this world."
+    gio "青楼的主人迎合了赞城特权公民的需求，给他们同时带来了来自这个世界的高雅和堕落的快乐。"
 
 # game/BKintro.rpy:1141
 translate chinese resume_intro3_8296e1b4:
@@ -1630,7 +1630,7 @@ translate chinese resume_intro3_9227eb67:
 translate chinese resume_intro3_8364ebd7:
 
     # gio "This gives them {b}true{/b} power. They know every one of their customers' dirty secrets..."
-    gio "This gives them {b}true{/b} power. They know every one of their customers' dirty secrets..."
+    gio "这给了他们{b}真正{/b}的力量。他们知道每一个顾客的肮脏秘密……"
 
 # game/BKintro.rpy:1155
 translate chinese resume_intro3_bb8ccd72:
@@ -2188,7 +2188,7 @@ translate chinese resume_intro4_71eb0bcc:
 translate chinese resume_intro4_2ca291d1:
 
     # "He squeezes her butt and whispers in her ear."
-    "He squeezes her butt and whispers in her ear."
+    "他捏着她的屁股，在她耳边低语。"
 
 # game/BKintro.rpy:1478
 translate chinese resume_intro4_26710218:
@@ -2284,7 +2284,7 @@ translate chinese resume_intro4_5168dba1:
 translate chinese resume_intro4_aba47eef:
 
     # maid blush "Hmmm... It's already hard, my lord... Were you waiting for this?"
-    maid blush "Hmmm... It's already hard, my lord... Were you waiting for this?"
+    maid blush "嗯…这已经很难了，大人……你在哪里等这个?"
 
 # game/BKintro.rpy:1534
 translate chinese resume_intro4_1aba24d5:
@@ -2308,7 +2308,7 @@ translate chinese resume_intro4_50f1cc6d:
 translate chinese resume_intro4_63a92497:
 
     # "You come all over her face and hair. She engulfs your shaft in her mouth as you keep cumming, trying to make sure to drink some of it."
-    "You come all over her face and hair. She engulfs your shaft in her mouth as you keep cumming, trying to make sure to drink some of it."
+    "你射在了她的脸上和头发上。当你继续射精的时候，她含着你的鸡巴，来试图喝下一些。"
 
 # game/BKintro.rpy:1549
 translate chinese resume_intro4_37ae563d:
@@ -2398,7 +2398,7 @@ translate chinese resume_intro4_60ef8449:
 translate chinese resume_intro4_3f03e062:
 
     # maid "My lord! My pussy... is yours... Fuck... Fuck it harder!"
-    maid "我的主人!我的猫咪…被你……操得...啊哈.... 再用些力!"
+    maid "我的主人!我的逼…被你……操得...啊哈.... 再用些力!"
 
 # game/BKintro.rpy:1603
 translate chinese resume_intro4_8a08933c:
@@ -2488,19 +2488,19 @@ translate chinese maid_fuck_16759eaf:
 translate chinese maid_fuck_2151bd44:
 
     # sill naked "Ahaaaaaahh!!!"
-    sill naked "Ahaaaaaahh ! ! !"
+    sill naked "啊啊啊啊啊 ! ! !"
 
 # game/BKintro.rpy:1670
 translate chinese maid_fuck_185ca774:
 
     # gio "Aaaaaaaarhhhh!"
-    gio "Aaaaaaaarhhhh !"
+    gio "啊啊啊啊啊啊啊啊 !"
 
 # game/BKintro.rpy:1676
 translate chinese maid_fuck_17115a84:
 
     # sill "AAAAAAHHHHH!!!"
-    sill "AAAAAAHHHHH ! ! !"
+    sill "啊啊啊啊啊啊啊啊啊啊 ! ! !"
 
 # game/BKintro.rpy:1678
 translate chinese maid_fuck_24353786:
@@ -2530,7 +2530,7 @@ translate chinese maid_fuck_c01bfd51:
 translate chinese maid_fuck_2063f889:
 
     # sill "But... But..."
-    sill "But... But..."
+    sill "但是…但是…"
 
 # game/BKintro.rpy:1688
 translate chinese maid_fuck_c99a2233:
@@ -2662,7 +2662,7 @@ translate chinese day1_77de77bf:
 translate chinese day1_0071d336:
 
     # gio "Oh, don't thank me! This is what I got from selling your horses and carriage this morning. You won't be needing them anyway..."
-    gio "Oh, don't thank me! This is what I got from selling your horses and carriage this morning. You won't be needing them anyway..."
+    gio "噢，别谢我!这是我今天早上卖掉你的马和马车得到的。反正你也不需要……"
 
 # game/BKintro.rpy:1787
 translate chinese day1_4d9200a0:
@@ -2722,7 +2722,7 @@ translate chinese slavemarket_first_time_a48092dd:
 translate chinese slavemarket_first_time_0d668adf:
 
     # you "No, Sill is my personal slave and I don't want to share her with all of Zan."
-    you "No, Sill is my personal slave and I don't want to share her with all of Zan."
+    you "不，西里尔是我的私人奴隶，我不想和其他的人分享她。"
 
 # game/BKintro.rpy:1835
 translate chinese slavemarket_first_time_b1d6f72a:
@@ -2740,7 +2740,7 @@ translate chinese slavemarket_first_time_cdaff9da:
 translate chinese slavemarket_first_time_8f42f826:
 
     # you "No, Sill will help with other tasks. I need someone to handle the reception, the accounting, the laundry, the groceries, the cooking, the cleaning..."
-    you "No, Sill will help with other tasks. I need someone to handle the reception, the accounting, the laundry, the groceries, the cooking, the cleaning..."
+    you "不，西里尔会帮助完成其他任务。我需要一个人来处理接待、会计、洗衣、杂货、做饭、打扫……"
 
 # game/BKintro.rpy:1841
 translate chinese slavemarket_first_time_f5cfa24a:
@@ -2824,13 +2824,13 @@ translate chinese slavemarket_first_time_2d33f590:
 translate chinese slavemarket_first_time_a48092dd_1:
 
     # you "Hmmm..."
-    you "Hmmm..."
+    you "嗯…"
 
 # game/BKintro.rpy:1872
 translate chinese slavemarket_first_time_b8af6747:
 
     # you "Anyway, stop babbling old man."
-    you "Anyway, stop babbling old man."
+    you "不管怎样，别唠叨了，老头。"
 
 # game/BKintro.rpy:1873
 translate chinese slavemarket_first_time_3cd3aee4:
@@ -2950,7 +2950,7 @@ translate chinese districts_first_time_2d0d4bb0:
 translate chinese districts_first_time_68f90f87:
 
     # gio "But like everyone in Zan, they need sex, and what little money they get, they spend on girls and spice."
-    gio "But like everyone in Zan, they need sex, and what little money they get, they spend on girls and spice."
+    gio "但就像在赞城的每个人一样，他们需要性，他们仅有的一点点钱，他们花在女孩和香料上。"
 
 # game/BKintro.rpy:1964
 translate chinese districts_first_time_be06483b:
@@ -2992,13 +2992,13 @@ translate chinese districts_first_time_d598cb46:
 translate chinese districts_first_time_slums_4276900c:
 
     # "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
-    "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
+    "贫民窟位于赞城的郊区，在城墙之外。这里是扎尼族贫民窟的家园：新移民、难民、乞丐、香料瘾君子。。。据传这里也有盗贼行会的藏身处和女神莎莉亚的神庙。"
 
 # game/BKintro.rpy:2006
 translate chinese districts_first_time_slums_1054b62c:
 
     # "This is a poor place to start a business, but Gio didn't leave you much of a choice."
-    "This is a poor place to start a business, but Gio didn't leave you much of a choice."
+    "这是一个不适合创业的地方，但吉欧没有给你留下多少选择。"
 
 # game/BKintro.rpy:2015
 translate chinese brothel_first_time_dd9d0132:
@@ -3106,19 +3106,19 @@ translate chinese brothel_first_time_b1358fe4:
 translate chinese brothel_first_time_943b4c54:
 
     # gio "Those common rooms serve as a front for the business, just in case the Guard becomes too nosy."
-    gio "Those common rooms serve as a front for the business, just in case the Guard becomes too nosy."
+    gio "那些普通房间是公司的门面，防止警卫队来多管闲事。"
 
 # game/BKintro.rpy:2063
 translate chinese brothel_first_time_505459bd:
 
     # gio "New girls will start working in the common rooms, until they are comfortable enough taking guests to the bedrooms."
-    gio "New girls will start working in the common rooms, until they are comfortable enough taking guests to the bedrooms."
+    gio "新来的女孩们一开始会在普通房间里工作，直到她们舒舒服服地把客人带到里面的卧室里。"
 
 # game/BKintro.rpy:2066
 translate chinese brothel_first_time_262a6213:
 
     # gio "Currently, all the common rooms are in disrepair."
-    gio "目前，所有的公共休息室都年久失修。"
+    gio "目前，所有的普通房间都年久失修。"
 
 # game/BKintro.rpy:2068
 translate chinese brothel_first_time_7d9f8ca5:
@@ -3190,7 +3190,7 @@ translate chinese brothel_first_time_933948e2:
 translate chinese brothel_first_time_7a99c792:
 
     # gio "With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
-    gio "With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
+    gio "随着时间的推移，他们将开始穿着性感的制服，为顾客提供各种各样的‘娱乐’。"
 
 # game/BKintro.rpy:2106
 translate chinese brothel_first_time_3a4e7fc5:
@@ -3238,7 +3238,7 @@ translate chinese brothel_first_time_b17ae063:
 translate chinese brothel_first_time_9c8cc9ab:
 
     # gio "Geishas should be {b}refined{/b}, elegant and witty. Not that the riffraff around here knows anything about class, mind you... But that's the job description."
-    gio "Geishas should be {b}refined{/b}, elegant and witty. Not that the riffraff around here knows anything about class, mind you... But that's the job description."
+    gio "艺妓应该是{b}优雅{/b}、机智的。提醒你，这附近的地痞流氓根本不懂什么是欣赏……但这就是工作内容。"
 
 # game/BKintro.rpy:2130
 translate chinese brothel_first_time_9a5db8f2:
@@ -3310,7 +3310,7 @@ translate chinese main_first_time_83c87f60:
 translate chinese main_first_time_8247c529:
 
     # sill "Gio's old place was just called 'Cunts Galore'. Just goes to show his complete lack of class."
-    sill "Gio's old place was just called 'Cunts Galore'. Just goes to show his complete lack of class."
+    sill "吉欧原来住的地方叫“风流娘儿们”。只是为了显示他完全没有品味。"
 
 # game/BKintro.rpy:2210
 translate chinese main_first_time_b3b655ba:
@@ -3364,129 +3364,129 @@ translate chinese strings:
 
     # game/BKintro.rpy:136
     old "I'm kind of fond of the girl."
-    new "I'm kind of fond of the girl."
+    new "我有点喜欢这个女孩。"
 
     # game/BKintro.rpy:136
     old "She's an investment."
-    new "She's an investment."
+    new "她是一种投资。"
 
     # game/BKintro.rpy:136
     old "Beats me. She's a waste of space."
-    new "Beats me. She's a waste of space."
+    new "我不知道。她是在浪费空间。"
 
     # game/BKintro.rpy:159
     old "The first night I trained her"
-    new "The first night I trained her"
+    new "我训练她的第一个晚上"
 
     # game/BKintro.rpy:159
     old "The time we did it in public"
-    new "The time we did it in public"
+    new "我们在公共场合做的时候"
 
     # game/BKintro.rpy:159
     old "I spanked her silly"
-    new "I spanked her silly"
+    new "我因为她的愚蠢打她屁股"
 
     # game/BKintro.rpy:310
     old "A warrior"
-    new "A warrior"
+    new "一个战士"
 
     # game/BKintro.rpy:310
     old "A wizard"
-    new "A wizard"
+    new "一个法师"
 
     # game/BKintro.rpy:310
     old "A rogue trader"
-    new "A rogue trader"
+    new "一个流氓交易员"
 
     # game/BKintro.rpy:427
     old "I am a servant of Arios, god of Light and Strength"
-    new "I am a servant of Arios, god of Light and Strength"
+    new "我是阿里奥斯的仆人，光明和力量之神"
 
     # game/BKintro.rpy:427
     old "I worship Shalia, goddess of Shadows and Cunning"
-    new "I worship Shalia, goddess of Shadows and Cunning"
+    new "我崇拜莎莉娅，黑暗与智慧的女神"
 
     # game/BKintro.rpy:427
     old "I serve none but myself"
-    new "I serve none but myself"
+    new "我只为自己服务"
 
     # game/BKintro.rpy:502
     old "Run to her rescue"
-    new "Run to her rescue"
+    new "跑去救她"
 
     # game/BKintro.rpy:502
     old "Taunt her attackers"
-    new "Taunt her attackers"
+    new "嘲笑她的攻击者"
 
     # game/BKintro.rpy:502
     old "Ignore her plea"
-    new "Ignore her plea"
+    new "忽略她的请求"
 
     # game/BKintro.rpy:995
     old "Who?"
-    new "Who?"
+    new "谁?"
 
     # game/BKintro.rpy:995
     old "The illuminati guild?"
-    new "The illuminati guild?"
+    new "光明公会?"
 
     # game/BKintro.rpy:995
     old "Kaizer Sauze?"
-    new "Kaizer Sauze?"
+    new "凯泽·索兹?"
 
     # game/BKintro.rpy:995
     old "Yo mamma?"
-    new "Yo mamma?"
+    new "你妈妈?"
 
     # game/BKintro.rpy:1191
     old "Well..."
-    new "Well..."
+    new "嗯…"
 
     # game/BKintro.rpy:1191
     old "Of course!"
-    new "Of course!"
+    new "当然!"
 
     # game/BKintro.rpy:1191
     old "Sure!"
-    new "Sure!"
+    new "肯定啊!"
 
     # game/BKintro.rpy:1191
     old "Fuck yeah!"
-    new "Fuck yeah!"
+    new "他妈的必须啊！"
 
     # game/BKintro.rpy:1239
     old "Stop it already!"
-    new "Stop it already!"
+    new "阻止它了!"
 
     # game/BKintro.rpy:1239
     old "Maybe another time, Gio..."
-    new "Maybe another time, Gio..."
+    new "也许另一个时间,吉欧……"
 
     # game/BKintro.rpy:1239
     old "Sure, why not?"
-    new "Sure, why not?"
+    new "当然,为什么不呢?"
 
     # game/BKintro.rpy:1517
     old "Fuck her where she stands"
-    new "Fuck her where she stands"
+    new "站着操她"
 
     # game/BKintro.rpy:1885
     old "What will you use as a front for your business?"
-    new "What will you use as a front for your business?"
+    new "你会用什么作为你的招牌？"
 
     # game/BKintro.rpy:1885
     old "A tavern"
-    new "A tavern"
+    new "酒馆"
 
     # game/BKintro.rpy:1885
     old "A strip club"
-    new "A strip club"
+    new "脱衣舞俱乐部"
 
     # game/BKintro.rpy:1885
     old "A bath house"
-    new "A bath house"
+    new "浴室"
 
     # game/BKintro.rpy:1885
     old "An okiya (geisha house)"
-    new "An okiya (geisha house)"
+    new "艺妓屋"
 
