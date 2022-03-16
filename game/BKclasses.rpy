@@ -2914,7 +2914,7 @@ init -2 python:
             msg += "- 舞　娘: " + event_color["good"] % str(self.check("dancer_days")) + "\n"
             msg += "- 按摩师: " + event_color["good"] % str(self.check("masseuse_days")) + "\n"
             msg += "- 艺　伎: " + event_color["good"] % str(self.check("geisha_days")) + "\n"
-            msg += "- 妓　女: " + event_color["good"] % str(self.check("whore_days")) + "\n{/size}\n"
+            msg += "- 妓　女: " + event_color["good"] % str(self.check("whore_days")) + "\n{/size}"
 
             if self.check("rest_days") > 1:
                 msg += str(self.check("rest_days")) + "位女孩在青楼里休息. "
@@ -2929,7 +2929,7 @@ init -2 python:
             if self.check("exhausted"):
                 msg += event_color["bad"] % (str(self.check("exhausted")) + "位女孩工作到筋疲力尽. ")
 
-            msg += "\n\n"
+            msg += "\n"
 
             if farm.active:
                 msg += str(self.check("farm_days") + self.check("farm_rest_days")) + "位女孩待在农场. "
@@ -2944,7 +2944,7 @@ init -2 python:
                     msg += event_color["bad"] % (str(self.check("farm_hurt")) + "位女孩反抗时受伤.")
 
                 if self.check("minion_hurt"):
-                    msg += event_color["bad"] % (str(self.check("minion_hurt")) + "位农场仆从在战斗中受伤.")
+                    msg += event_color["bad"] % (str(self.check("minion_hurt")) + "位农场奴仆在战斗中受伤.")
 
                 msg += "\n{size=-2}" + "- 训　练: " + event_color["good"] % str(self.check("farm_training_days")) + "\n"
                 msg += "- 待　机: " + event_color["good"] % str(self.check("farm_holding_days")) + "\n{/size}\n"
@@ -4824,7 +4824,7 @@ init -2 python:
             energy, status = girl.change_energy(self.energy)
 
             if status == "exhausted":
-                " She is {color=[c_red]}exhausted{/color} and will need to rest until she recovers."
+                " 她已经{color=[c_red]}筋疲力尽{/color}，需要休息，直到她恢复."
 
             description += "\n"
 
@@ -4872,16 +4872,16 @@ init -8 python:
         def get_description(self):
 
             if self.type == "gold":
-                return "需要获得" + str(int(self.value)) + "金币"
+                return "需要获得 " + str(int(self.value)) + " 金币"
 
             elif self.type == "ranked":
-                return "需要有" + str(self.target) + "位女孩品阶达到 " + rank_name[self.value]
+                return "需要有 " + str(self.target) + " 位女孩品阶达到 " + rank_name[self.value]
 
             elif self.type == "reputation":
-                return "需要达到" + str(self.value) + "点青楼名声"
+                return "需要达到 " + str(self.value) + " 点青楼名声"
 
             elif self.type == "prestige":
-                return "需要获得" + str(self.value) + "点声望"
+                return "需要获得 " + str(self.value) + " 点声望"
 
             elif self.type == "story":
                 return self.value # value for story events must be text
@@ -5245,14 +5245,14 @@ init -2 python:
         def is_available(self, girl, mode=None, free=False): # The option will display inactive if False. Returns a tuple with bool and a tooltip description.
 
             if girl.away:
-                return False, "%s is away. You cannot interact with her." % girl.fullname
+                return False, "%s不在身边. 你无法与她互动." % girl.fullname
 
             if self.group == "train":
                 if girl.exhausted:
-                    return False, "You cannot train %s, because she is exhausted." % girl.fullname
+                    return False, "你不能训练%s, 她已经筋疲力尽." % girl.fullname
 
                 elif girl.hurt > 0:
-                    return False, "You cannot train %s, because she is hurt." % girl.fullname
+                    return False, "你不能训练%s, 因为她受伤了." % girl.fullname
 
             if mode: # 'mode' is either 'lecture' (Talk), 'train' or advanced.
                 if mode == "lecture":
@@ -5270,7 +5270,7 @@ init -2 python:
                                     text1 += " or "
                                 text1 += cond + " (" + pref + ")"
                             else:
-                                return False, "You cannot train " + self.act + " yet. Requirements: " + text1
+                                return False, "你还不能训练" + girl_related_dict[self.act] + ". 要求: " + text1
 
                     elif self.type == "magic":
                         if magic_training_test_dict[self.act]:
@@ -5281,11 +5281,11 @@ init -2 python:
                                     text1 += " or "
                                 text1 += cond + " (" + pref + ")"
                             else:
-                                return False, "You cannot train " + self.act + " yet. Requirements: " + text1
+                                return False, "你还不能训练" + girl_related_dict[self.act] + " yet. Requirements: " + text1
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "You do not have enough interactions left for advanced training."
+                            return False, "你没有足够的互动留给高级培训."
 
                         if not girl.personality_unlock[self.act]:
 
@@ -5295,24 +5295,24 @@ init -2 python:
                         #         return True, "no reaction"
                         #
                         # else:
-                            return False, "You need to train a girl at least once before you can access advanced training."
+                            return False, "你需要至少训练一个女孩一次，才能进入高级训练."
 
                 elif mode == "master_bedroom_add":
                     if not brothel.master_bedroom.can_have_girl():
-                        return False, "The master bedroom is already full."
+                        return False, "主卧室已经满了."
 
             if MC.interactions < 1 and self.AP_cost > 0 and not free:
-                return False, "You have no interactions left for today."
+                return False, "你今天已经不能互动了."
             elif MC.interactions < self.AP_cost and not free:
-                return False, "You do not have enough interactions left for this."
+                return False, "你没有足够的互动时间来做这件事."
             elif self.get_gold_cost() and MC.gold < self.get_gold_cost():
-                return False, "You do not have enough money to pay for this training (" + str(self.get_gold_cost()) + "{image=img_gold})."
+                return False, "你没有足够的钱来支付这个训练的费用 (" + str(self.get_gold_cost()) + "{image=img_gold})."
             elif self.group == "train" and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot train a girl more than once per day."
+                return False, "你每天只能训练一个女孩一次."
             elif self.group in ("reward", "discipline") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot reward or discipline a girl more than once per day."
+                return False, "你每天只能奖励或惩罚一个女孩一次."
             elif self.group in ("gold", "gift", "sex_reward", "rape", "offer") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot do that more than once per day."
+                return False, "你每天只能做一次."
 
 #            elif self.label == "slave_reward_gold" and girl.MC_interact_counters["gold"] >= 1:
 #                return False, "You cannot give her gold more than once per day."

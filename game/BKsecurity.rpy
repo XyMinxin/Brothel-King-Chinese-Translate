@@ -3,7 +3,7 @@
 
 label security(working_girls, ev_type=None): # Happens when the threat level overcomes the event threshhold. ev_type may be provided for debugging.
 
-    $ renpy.notify("\nSecurity event")
+    $ renpy.notify("\n安全事件")
     $ game.track("security events", 1)
 
     #### HOW IT WORKS ####
@@ -40,7 +40,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
     if ev_type == "raid": # A raiding party blitzes the brothel, trying to kidnap one of your girls. 2-4 girls are targeted, you can only defend one yourself.
 
         python:
-            attackers = rand_choice(("marauding ogres", "gooey monsters", "rogue mercenaries"))
+            attackers = rand_choice(("四处劫掠的巨魔", "粘糊糊的怪物", "流浪佣兵"))
             if attackers == "gooey monsters" and is_censored("monster"):
                 attackers = "rogue mercenaries"
 
@@ -77,10 +77,10 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         security "Some of the attackers have sneaked out the back of [brothel.name] while the security guards were distracted! You rush back to the brothel to help.\n{color=[c_red]}[girl_nb] of your girls are under attack, but you can only help one!{/color}"
 
         python:
-            menu_list = [["Choose a girl to defend", None]]
+            menu_list = [["选择一个女孩来保护", None]]
 
             for girl in target_girls:
-                menu_list.append([girl.fullname.capitalize() + ", Level " + str(girl.level) + ", Defense " + str_int(girl.get_defense()), girl])
+                menu_list.append([girl.fullname.capitalize() + ", 等级 " + str(girl.level) + ", 防御 " + str_int(girl.get_defense()), girl])
 
         $ girl = menu(menu_list)
 
@@ -99,33 +99,33 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         play sound s_scream_loud
         girl.char "EEEEK!!! Master, help me!" with vpunch
 
-        if attackers == "marauding ogres":
+        if attackers == "四处劫掠的巨魔":
             $ strength = 8
             $ magic = 5
-            $ hit = "the handle of his giant axe"
+            $ hit = "手中的那把巨斧"
             show ogre at totheleft as enemy with dissolve
 
-        elif attackers == "gooey monsters":
+        elif attackers == "粘糊糊的怪物":
             $ strength = 4
             $ magic = 7
-            $ hit = "a whipping tentacle"
+            $ hit = "一条抖动的触手"
             show sewer_monster as enemy at truecenter with dissolve
 
-        elif attackers == "rogue mercenaries":
+        elif attackers == "流浪佣兵":
             $ strength = 6
             $ magic = 6
-            $ hit = "the flat of his sword"
+            $ hit = "手中的长剑"
             show masked_thug at totheleft as enemy with dissolve
 
         "You reach [girl.fullname] just in time to confront her attacker."
 
-        if attackers == "marauding ogres":
+        if attackers == "四处劫掠的巨魔":
             show ogre at left as enemy with move
 
-        elif attackers == "gooey monsters":
+        elif attackers == "粘糊糊的怪物":
             show sewer_monster as enemy at centerleft with move
 
-        elif attackers == "rogue mercenaries":
+        elif attackers == "流浪佣兵":
             show masked_thug at left as enemy with move
 
         # Pick challenge
@@ -172,7 +172,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 play sound s_lightning
                 with flash
 
-                if attackers == "rogue mercenaries":
+                if attackers == "流浪佣兵":
                     show thug2 burnt as enemy with move:
                         xalign 0.4
                         time 0.5
@@ -194,7 +194,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ target_girls.remove(girl)
             $ defended_girls.append(girl)
 
-            $ text1 = "While you were fighting, the other attackers rampaged through your brothel. "
+            $ text1 = "当你在战斗的时候，其他袭击者在你的青楼里横冲直撞. "
 
         else:
             if girl.test_shield():
@@ -251,7 +251,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             $ lost_gold = int(MC.gold * 0.15)
             $ MC.gold -= lost_gold
-            $ text1 = "While you were passed out, the [attackers] ransacked your brothel, {color=[c_red]}taking off with [lost_gold] gold.{/color} "
+            $ text1 = "当你昏倒的时候, [attackers]洗劫了你的青楼, {color=[c_red]}抢走了 [lost_gold] 金币.{/color} "
 
         python:
 
@@ -280,15 +280,15 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 text1 += defended_girls[0].fullname + " defended herself. {color=[c_red]}"
 
             if len(hurt_girls) > 1:
-                text1 += and_text([g.fullname for g in defended_girls]) + " were hurt.\n"
-                log.add_report("{color=[c_red]}Security alert! " + and_text([g.fullname for g in defended_girls]) + " were hurt.{/color}")
+                text1 += and_text([g.fullname for g in defended_girls]) + "受伤了.\n"
+                log.add_report("{color=[c_red]}安全警报! " + and_text([g.fullname for g in defended_girls]) + "受伤了.{/color}")
             elif len(hurt_girls) > 0:
-                text1 += hurt_girls[0].fullname + " was hurt.\n"
-                log.add_report("{color=[c_red]}Security alert! " + hurt_girls[0].fullname + " was hurt.{/color}")
+                text1 += hurt_girls[0].fullname + "受伤了.\n"
+                log.add_report("{color=[c_red]}安全警报! " + hurt_girls[0].fullname + "受伤了.{/color}")
 
             if kidnapped_girls:
-                text1 += "{b}" + kidnapped_girls[0].fullname + " was kidnapped!{/b}"
-                log.add_report("{color=[c_red]}Security alert! {b}" + kidnapped_girls[0].fullname + " was kidnapped!{/b}{/color}")
+                text1 += "{b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}"
+                log.add_report("{color=[c_red]}安全警报! {b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}{/color}")
 
         hide screen show_event
         scene black
@@ -334,9 +334,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             loot = enemies * 150 + war_machines * 600
 
             if enemy_general.has_trait("Warrior"):
-                enemy_g = "mercenary captain"
+                enemy_g = "佣兵队长"
             elif enemy_general.has_trait("Caster"):
-                enemy_g = "freelance sorceress"
+                enemy_g = "自由女巫"
 
             general_defeats = 0
             fatigue = -1
@@ -345,7 +345,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             enemy_factor = 1.0
 
 
-        $ log.add_report("{color=[c_red]}Security alert! " + str(enemies) +  " mercenaries led by a " + enemy_g + " besieged the brothel.{/color}")
+        $ log.add_report("{color=[c_red]}安全警报! " + str(enemies) +  "名佣兵在一名" + enemy_g + "的带领下包围了青楼.{/color}")
 
         show expression bg_bro at top
 
@@ -389,7 +389,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             "Lead from behind (use Charisma to improve your troops' morale)":
                 $ renpy.block_rollback()
                 play sound s_sheath
-                $ MC.rand_say(["ev: Men, get ready!!! We will slaughter them where they stand!", "gd: Brothers and sisters! We didn't choose to start this fight, but we will surely end it!", "ne: Men, fight them smart, fight them hard! Be the first one on your block to get a confirmed kill!"])
+                $ MC.rand_say(["ev: 伙计们，准备好！！！！我们将在他们站立的地方屠杀他们！", "gd: 兄弟姐妹们! 我们没有选择挑起这场战争，但我们一定会结束它!", "ne: 伙计们，跟他们好好怼，努力战斗! 成为你所在街区第一个被公认的杀人王!"])
                 $ r = "rally"
 
                 call challenge(r, game.chapter) from _call_challenge_36
@@ -483,7 +483,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             with vpunch
 
-            $ renpy.say(security_breach, rand_choice(["Shrapnel bursts among your troops, wounding [damage] of them.", "Fire rains down on your troops, wounding [damage].", "Cannonballs mow down [damage] of your security guards.", "A huge stone crashes among your troops, wounding [damage]."]))
+            $ renpy.say(security_breach, rand_choice(["有一枚榴弹你的队伍中爆炸，炸伤了 [damage] 个人.", "火雨向你的队伍倾盆而下，造成 [damage] 人受伤.", "炮弹炸死了 [damage] 个保安.", "一块巨大的石头砸到了你的队伍中，造成 [damage] 人受伤."]))
 
         # Enemy charge
 
@@ -697,7 +697,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ MC.gold += loot
             $ ("You let the surviving guards loot the battlefield, getting your share of " + event_color["good"] % "[loot] gold" + ".")
 
-            $ log.add_report("{color=[c_green]}Battle results: " + str_int(loot) + " gold recovered.{/color}")
+            $ log.add_report("{color=[c_green]}战果: 获得 " + str_int(loot) + " 金币.{/color}")
 
             if general_defeats > 0:
                 $ it = get_rand_item("rare")
@@ -707,7 +707,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "Your men found something [enemy_general.fullname], the enemy general left behind. You have received [item_name]."
                 $ MC.items.append(it)
 
-                $ log.add_report("{color=[c_green]}Battle results: " + it.name + " recovered.{/color}")
+                $ log.add_report("{color=[c_green]}战果: 获得" + it.name + ".{/color}")
 
         else:
             # Round 2 is inside the brothel
@@ -722,7 +722,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ random.shuffle(fighting_girls)
             $ girl_def_bonus = 0
 
-            $ security("{b}Battle Phase 4{/b}\nThe enemy's [enemies] remaining soldiers are at your gates! You are suffering from " + event_color["bad"] % "{b}battle fatigue{/b}" + ", temporarily reducing all your skills by [fatigue]. What do you do?")
+            $ security("{b}战役第四阶段{/b}\n剩下 [enemies] 个敌人在你的门前! 你正遭受" + event_color["bad"] % "{b}战斗疲劳{/b}" + "的折磨, [fatigue]能暂时降低你的所有技能. What do you do?")
 
             menu:
                 extend ""
@@ -758,7 +758,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)":
                     $ renpy.block_rollback()
                     play sound s_roar
-                    $ MC.rand_say(("Brace yourself! The enemy is coming, you know what to do!", "ev: All right, bitches, prepare to defend your miserable lives! You'd better not disappoint me!", "gd: All right everyone, remember your training, and don't take any unnecessary risks!", "ne: Babes, this is it. I'm counting on you!"))
+                    $ MC.rand_say(("振作起来! 敌人就要来了，你知道该怎么办!", "ev: 好了，婊子们，准备好保卫你们悲惨的生活! 最好不要让我失望!", "gd: 好了，各位，记住你们的训练，不要冒任何不必要的风险!", "ne: 宝贝们，就这样了. 我就指望你了!"))
                     $ r = "rally"
 
                     call challenge(r, game.chapter, bonus=fatigue) from _call_challenge_42
@@ -767,13 +767,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                     if result:
                         $ d = dice(6)
                         if d == 6:
-                            $ narrator("You look at your girls and cannot believe what you see. They are awaiting the enemy as one, supporting each other, with a fearsome glint in their eye. They are ready, and will fight the enemy with all they have. " + event_color["good"] % "+3 to all girls defense.")
+                            $ narrator("你看着女孩们难以置信. 她们正团结一致地面对敌人，互相支援，眼中闪烁着可怕的光芒. 她们已经准备好了，将竭尽所能地与敌人作战. " + event_color["good"] % "所有女孩+3个人防御.")
                             $ girl_def_bonus += 3
                         elif d > 1:
-                            $ narrator("Your speech steels your girls's resolve. They will be fighting harder against the enemy. " + event_color["good"] % "+2 to all girls defense.")
+                            $ narrator("你的演讲坚定了女孩们的决心. 她们将更加努力地与敌人奋斗. " + event_color["good"] % "所有女孩+2个人防御.")
                             $ girl_def_bonus += 2
                         else:
-                            $ narrator("You give your last orders, helping a girl don a leather vest, commenting on another girl's footing. They are servants, not fighters, but this will have to do. " + event_color["good"] % "+1 to all girls defense.")
+                            $ narrator("你下达了最后的命令，帮其中一个女孩整了整皮背心，还提醒了一下另一个女孩的站位. 她们是仆人，不是战士，但必须这样做. " + event_color["good"] % "所有女孩+1个人防御.")
 
 
                 "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
@@ -974,9 +974,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 if enemies:
                     $ dirt = int(brothel.change_dirt(100*enemies))
                     if hurt_girls:
-                        $ security_breach("[enemies] enemies overwhelmed your girls. " + event_color["bad"] % and_text(hurt_girls) + " were hurt" + ". The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + ".")
+                        $ security_breach("[enemies] 个敌人打败了你的女孩们. " + event_color["bad"] % and_text(hurt_girls) + "受伤了" + ". 袭击者在离开前放了把火，导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + ".")
                     else:
-                        $ security_breach("Your girls opposed no resistance to the enemy. The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + ".")
+                        $ security_breach("你的女孩们未作抵抗. 袭击者在离开前放了把火, 导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + ".")
 
                     python:
                         burnt_furniture = rand_choice(brothel.furniture, dice(3)+1)
@@ -985,23 +985,23 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             if furn.rank > 0:
                                 brothel.destroy_furniture(furn)
 
-                    $ log.add_report("{color=[c_red]}Security alert! +" + str_int(dirt) + " dirt, " + and_text(hurt_girls) + " hurt.{/color}")
+                    $ log.add_report("{color=[c_red]}安全警报! +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
 
                 else:
                     if hurt_girls:
                         $ dirt = int(brothel.change_dirt(200))
-                        $ security_breach("[enemies] enemies attacked your girls. " + event_color["bad"] % and_text(hurt_girls) + " were hurt" + " before the attackers retreated. The fighting caused some damage to your brothel (" + event_color["bad"] % "+[dirt] dirt" + ")")
-                        $ log.add_report("{color=[c_red]}Battle results: +" + str_int(dirt) + " dirt, " + and_text(hurt_girls) + " hurt.{/color}")
+                        $ security_breach("[enemies] 个敌人攻击你的女孩们. " + event_color["bad"] % and_text(hurt_girls) + "在攻击者撤退之前受伤了" + ". 战斗给你的青楼造成了一些损失 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
+                        $ log.add_report("{color=[c_red]}战果: +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
 
                     else:
                         $ dirt = int(brothel.change_dirt(100))
-                        $ security("Your girls defended themselves tooth and nail and drove the [enemies] enemies away. They tried to set fire to your brothel as they were leaving, causing minimal damage (" + event_color["bad"] % "+[dirt] dirt" + ")")
-                        $ log.add_report("{color=[c_red]}Battle results: No girls hurt. +" + str_int(dirt) + " dirt.{/color}")
+                        $ security("你的女孩们竭尽全力保护自己，赶走了 [enemies] 个敌人. 他们试图在离开的时候放火烧你的妓院，造成了一点点伤害 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
+                        $ log.add_report("{color=[c_red]}战果: 没有女孩受伤. +" + str_int(dirt) + " 污垢.{/color}")
 
                     $ MC.gold += loot
-                    $ narrator("You and your girls tend to the wounded. After cleaning up the battlefield, you recover" + event_color["good"] % " [loot] gold" + " as loot.")
+                    $ narrator("你和女孩们照料着伤员. 在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品.")
 
-                    $ log.add_report("{color=[c_green]}Battle results: " + str_int(loot) + " gold recovered.{/color}")
+                    $ log.add_report("{color=[c_green]}战果: " + str_int(loot) + " 金币.{/color}")
 
                     if general_defeats > 0:
                         $ it = get_rand_item("rare")
@@ -1012,21 +1012,21 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
                         call receive_item(it) from _call_receive_item_15
 
-                        $ log.add_report("{color=[c_green]}Battle results: " + it.name + " recovered.{/color}")
+                        $ log.add_report("{color=[c_green]}战果: 获得" + it.name + ".{/color}")
 
             else:
                 play sound s_gold
                 $ MC.gold += loot
-                $ narrator("You and your girls tend to the wounded. After cleaning up the battlefield, you recover" + event_color["good"] % " [loot] gold" + " as loot.")
+                $ narrator("你和女孩们照料着伤员. 在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品.")
 
-                $ log.add_report("{color=[c_green]}Battle results: Enemy general captured!{/color}")
+                $ log.add_report("{color=[c_green]}战果: 敌方将领被俘!{/color}")
 
                 play sound s_success
 
                 "You have captured the enemy general, [enemy_general.fullname]!"
 
                 $ unlock_achievement("general captured")
-                $ log.add_report("{color=[c_green]}Security alert! " + str_int(loot) + " gold recovered.{/color}")
+                $ log.add_report("{color=[c_green]}安全警报! " + str_int(loot) + " 金币.{/color}")
 
                 play sound s_surprise
 

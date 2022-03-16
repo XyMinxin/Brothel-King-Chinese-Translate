@@ -60,128 +60,150 @@ init -4 python:
                         "Energy" : "耐力",
                     }
 
-    ## 中文翻译 ##
-    chinese_name_dict = {
-                    ## 职业名称 ##
-                    "Waitress" : "服务员",
-                    "waitress" : "服务员",
-                    "Dancer" : "舞娘",
-                    "dancer" : "舞娘",
-                    "Masseuse" : "按摩师",
-                    "masseuse" : "按摩师",
-                    "Geisha" : "艺伎",
-                    "geisha" : "艺伎",
-                    "Whore" : "妓女",
-                    "whore" : "妓女",
+    ## 女孩相关 ##
+    girl_related_dict = {
+                        ## 职业名称 ##
+                        "Waitress" : "服务员",
+                        "waitress" : "服务员",
+                        "Dancer" : "舞娘",
+                        "dancer" : "舞娘",
+                        "Masseuse" : "按摩师",
+                        "masseuse" : "按摩师",
+                        "Geisha" : "艺伎",
+                        "geisha" : "艺伎",
+                        "Whore" : "妓女",
+                        "whore" : "妓女",
 
-                    ## 性行为 ##
-                    "Service" : "性服侍",
-                    "service" : "性服侍",
-                    "Sex" : "性交",
-                    "sex" : "性交",
-                    "Anal" : "肛交",
-                    "anal" : "肛交",
-                    "Fetish" : "皮绳愉虐",
-                    "fetish" : "皮绳愉虐",
-                    "Naked" : "露出",
-                    "naked" : "露出",
-                    "Group" : "群交",
-                    "group" : "群交",
-                    "Bisexual" : "百合",
-                    "bisexual" : "百合",
+                        ## 性行为 ##
+                        "Service" : "性服侍",
+                        "service" : "性服侍",
+                        "Sex" : "性交",
+                        "sex" : "性交",
+                        "Anal" : "肛交",
+                        "anal" : "肛交",
+                        "Fetish" : "皮绳愉虐",
+                        "fetish" : "皮绳愉虐",
+                        "Naked" : "露出",
+                        "naked" : "露出",
+                        "Group" : "群交",
+                        "group" : "群交",
+                        "Bisexual" : "百合",
+                        "bisexual" : "百合",
 
-                    ## 装备栏位 ##
-                    "Hands" : "手持",
-                    "hands" : "手持",
-                    "Accessory" : "配饰",
-                    "accessory" : "配饰",
-                    "Misc" : "杂项",
-                    "misc" : "杂项",
-                    "Body" : "身体",
-                    "body" : "身体",
-                    "Finger" : "手",
-                    "finger" : "手",
-                    "Neck" : "颈部",
-                    "neck" : "颈部",
-
-                    ## ##
-                    "MC" : "玩家",
-                    "Girl" : "女孩",
-                    "girl" : "女孩",
-                    "Minion" : "农场仆从",
-                    "minion" : "农场仆从",
-                    "Gift" : "礼物",
-                    "gift" : "礼物",
-
-                    None : "（bug:chinese_name_dict）没有值",
-                    }
+                        ## 偏好 ##
+                        "Refuses" : "抵制",
+                        "refuses" : "抵制",
+                        "Very reluctant" : "非常不情愿",
+                        "very reluctant" : "非常不情愿",
+                        "Reluctant" : "不情愿",
+                        "reluctant" : "不情愿",
+                        "A little reluctant" : "有点不情愿",
+                        "a little reluctant" : "有点不情愿",
+                        "Indifferent" : "不在意",
+                        "indifferent" : "不在意",
+                        "A little interested" : "有点感兴趣",
+                        "a little interested" : "有点感兴趣",
+                        "Interested" : "感兴趣",
+                        "interested" : "感兴趣",
+                        "Very interested" : "非常感兴趣",
+                        "very interested" : "非常感兴趣",
+                        "Fascinated" : "陶醉",
+                        "fascinated" : "陶醉",
+                        }
 
     ## 农场相关 ##
-    farm_name_dict = {
-                     "Refused" : "拒绝",
-                     "refused" : "拒绝",
-                     "Resisted" : "抵制",
-                     "resisted" : "抵制",
-                     "Accepted" : "接受",
-                     "accepted" : "接受",
-                     "Soft" : "温和",
-                     "soft" : "温和",
-                     "Hard" : "努力",
-                     "hard" : "努力",
-                     "Hardest" : "强硬",
-                     "hardest" : "强硬",
-                     "Libido" : "照看仆役",
-                     "libido" : "照看仆役",
-                     "Sensitivity" : "服侍Gizel",
-                     "sensitivity" : "服侍Gizel",
-                     "Obedience" : "打扫农场",
-                     "obedience" : "打扫农场",
-                     "Constitution" : "锻炼身体",
-                     "constitution" : "锻炼身体",
-                     "Rest" : "休息",
-                     "rest" : "休息",
-                     "Conservative" : "保守",
-                     "conservative" : "保守",
-                     "Intensive" : "高强度",
-                     "intensive" : "高强度",
-                     "No rest" : "无休息",
-                     "no rest" : "无休息",
-                     "Reluctant" : "差强人意",
-                     "reluctant" : "差强人意",
-                     "Indifferent" : "淡然处之",
-                     "indifferent" : "淡然处之",
-                     "Interested" : "兴趣盎然",
-                     "interested" : "兴趣盎然",
-                     "Fascinated" : "神魂颠倒",
-                     "fascinated" : "神魂颠倒",
-                     "None" : "无",
-                     "none" : "无",
-                     "Auto" :"自动",
-                     "auto" :"自动",
-                     "No training" : "未安排训练",
-                     "no training" : "未安排训练",
-                     "Farm minion" : "农场仆从",
+    farm_related_dict = {
+                        ## 性行为 ##
+                        "Service" : "性服侍",
+                        "service" : "性服侍",
+                        "Sex" : "性交",
+                        "sex" : "性交",
+                        "Anal" : "肛交",
+                        "anal" : "肛交",
+                        "Fetish" : "皮绳愉虐",
+                        "fetish" : "皮绳愉虐",
+                        "Naked" : "露出",
+                        "naked" : "露出",
+                        "Group" : "群交",
+                        "group" : "群交",
+                        "Bisexual" : "百合",
+                        "bisexual" : "百合",
 
-                     ## 农场奴仆 ##
-                     "Stallion" : "种马",
-                     "stallion" : "种马",
-                     "Beast" : "野兽",
-                     "beast" : "野兽",
-                     "Monster" : "怪物",
-                     "monster" : "怪物",
-                     "Machine" :"机器",
-                     "machine" :"机器",
+                        ## 农场奴仆 ##
+                        "Stallion" : "种马",
+                        "stallion" : "种马",
+                        "Beast" : "野兽",
+                        "beast" : "野兽",
+                        "Monster" : "怪物",
+                        "monster" : "怪物",
+                        "Machine" :"机器",
+                        "machine" :"机器",
 
-                     ## 设施名称 ##
-                     "Stables" : "马厮",
-                     "stables" : "马厮",
-                     "Pig stall" : "兽栏",
-                     "pig stall" : "兽栏",
-                     "Monster den" : "怪兽巢穴",
-                     "monster den" : "怪兽巢穴",
-                     "Workshop" : "车间",
-                     "workshop" : "车间",
-                     }
+                        ## 设施名称 ##
+                        "Stables" : "马厮",
+                        "stables" : "马厮",
+                        "Pig stall" : "兽栏",
+                        "pig stall" : "兽栏",
+                        "Monster den" : "怪兽巢穴",
+                        "monster den" : "怪兽巢穴",
+                        "Workshop" : "车间",
+                        "workshop" : "车间",
+
+                        ## 反应 ##
+                        "Refused" : "拒绝",
+                        "refused" : "拒绝",
+                        "Resisted" : "抵制",
+                        "resisted" : "抵制",
+                        "Accepted" : "接受",
+                        "accepted" : "接受",
+
+                        ## 训练态度 ##
+                        "Soft" : "温和",
+                        "soft" : "温和",
+                        "Hard" : "努力",
+                        "hard" : "努力",
+                        "Hardest" : "强硬",
+                        "hardest" : "强硬",
+
+                        ## 训练内容 ##
+                        "Libido" : "照看仆役",
+                        "libido" : "照看仆役",
+                        "Sensitivity" : "服侍Gizel",
+                        "sensitivity" : "服侍Gizel",
+                        "Obedience" : "打扫农场",
+                        "obedience" : "打扫农场",
+                        "Constitution" : "锻炼身体",
+                        "constitution" : "锻炼身体",
+                        "Rest" : "休息",
+                        "rest" : "休息",
+
+                        ## 作息规则 ##
+                        "Conservative" : "保守",
+                        "conservative" : "保守",
+                        "Intensive" : "高强度",
+                        "intensive" : "高强度",
+                        "No rest" : "无休息",
+                        "no rest" : "无休息",
+
+                        ## 行为反应 ##
+                        "Reluctant" : "差强人意",
+                        "reluctant" : "差强人意",
+                        "Indifferent" : "淡然处之",
+                        "indifferent" : "淡然处之",
+                        "Interested" : "兴趣盎然",
+                        "interested" : "兴趣盎然",
+                        "Fascinated" : "神魂颠倒",
+                        "fascinated" : "神魂颠倒",
+
+                        ## 杂项 ##
+                        "None" : "无",
+                        "none" : "无",
+                        "Auto" :"自动",
+                        "auto" :"自动",
+                        "No training" : "未安排训练",
+                        "no training" : "未安排训练",
+                        "Farm minion" : "农场奴仆",
+                        }
 
     ## 按钮名字 ##
     button_name_dict = {
@@ -240,28 +262,6 @@ init -4 python:
                         "custom" : "定制",
                         }
 
-    ## 女孩偏好 ##
-    preference_name_dict = {
-                            "Refuses" : "抵制",
-                            "refuses" : "抵制",
-                            "Very reluctant" : "非常不情愿",
-                            "very reluctant" : "非常不情愿",
-                            "Reluctant" : "不情愿",
-                            "reluctant" : "不情愿",
-                            "A little reluctant" : "有点不情愿",
-                            "a little reluctant" : "有点不情愿",
-                            "Indifferent" : "不在意",
-                            "indifferent" : "不在意",
-                            "A little interested" : "有点感兴趣",
-                            "a little interested" : "有点感兴趣",
-                            "Interested" : "感兴趣",
-                            "interested" : "感兴趣",
-                            "Very interested" : "非常感兴趣",
-                            "very interested" : "非常感兴趣",
-                            "Fascinated" : "陶醉",
-                            "fascinated" : "陶醉",
-                            }
-
     ## 特质树名称 ##
     archetype_name_dict = {
                           "The Maid" : "女仆",
@@ -273,7 +273,6 @@ init -4 python:
                           "The Slut" : "荡妇",
                           "The Bride" : "新娘"
                           }
-
 
     ## 互动界面 ##
     interact_name_dict = {
@@ -298,29 +297,52 @@ init -4 python:
 
     ## 设置名称 ##
     settings_name_dict = {
-                    ## 状态名称 ##
-                    "Away" : "离开",
-                    "Farm" : "农场",
-                    "Rest" : "休息",
-                    "Scheduled" : "计划",
-                    "Half-shift" : "半班制",
-                    "Master bedroom" : "主人卧室",
-                    "Work&whore" : "工作&妓女",
-                    "Naked" : "裸体",
-                    "Negative fixation" : "负面特质",
-                    "Not naked" : "非裸体",
-                    "Not work&whore" : "没有工作",
+                         ## 日期
+                         "Monday" : "星期一",
+                         "Tuesday" : "星期二",
+                         "Wednesday" : "星期三",
+                         "Thursday" : "星期四",
+                         "Friday" : "星期五",
+                         "Saturday" : "星期六",
+                         "Sunday" : "星期天",
 
-                    ## 夜间活动设置 ##
-                    "Normal" : "一般",
-                    "Matchmaking" : "婚介",
-                    "Customer" : "顾客",
-                    "Level/Job/Rank up" : "等级/职业/品阶提升",
-                    "Health/Security" : "健康/安全",
-                    "Satisfaction report" : "满意报告",
-                    "Farm" : "农场",
-                    "Rest" : "休息",
-                    }
+                         ## 装备栏位 ##
+                         "Hands" : "手持",
+                         "hands" : "手持",
+                         "Accessory" : "配饰",
+                         "accessory" : "配饰",
+                         "Misc" : "杂项",
+                         "misc" : "杂项",
+                         "Body" : "身体",
+                         "body" : "身体",
+                         "Finger" : "手",
+                         "finger" : "手",
+                         "Neck" : "颈部",
+                         "neck" : "颈部",
+
+                         ## 状态名称 ##
+                         "Away" : "离开",
+                         "Farm" : "农场",
+                         "Rest" : "休息",
+                         "Scheduled" : "计划",
+                         "Half-shift" : "半班制",
+                         "Master bedroom" : "主人卧室",
+                         "Work&whore" : "工作&妓女",
+                         "Naked" : "裸体",
+                         "Negative fixation" : "负面特质",
+                         "Not naked" : "非裸体",
+                         "Not work&whore" : "没有工作",
+
+                         ## 夜间活动设置 ##
+                         "Normal" : "一般",
+                         "Matchmaking" : "婚介",
+                         "Customer" : "顾客",
+                         "Level/Job/Rank up" : "等级/职业/品阶提升",
+                         "Health/Security" : "健康/安全",
+                         "Satisfaction report" : "满意报告",
+                         "Farm" : "农场",
+                         "Rest" : "休息",
+                         }
 
 #### BALANCE / CHEATS ####
 

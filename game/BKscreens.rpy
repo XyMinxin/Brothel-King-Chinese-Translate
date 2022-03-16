@@ -217,26 +217,9 @@ screen overlay(current_screen = None, kwargs = None):
             hbox:
                 spacing 10
 
-                if calendar.get_weekday()=="Monday":
-                    $text7="星期一"
-                elif calendar.get_weekday()=="Tuesday":
-                    $text7="星期二"
-                elif calendar.get_weekday()=="Wednesday":
-                    $text7="星期三"
-                elif calendar.get_weekday()=="Thursday":
-                    $text7="星期四"
-                elif calendar.get_weekday()=="Friday":
-                    $text7="星期五"
-                elif calendar.get_weekday()=="Saturday":
-                    $text7="星期六"
-                elif calendar.get_weekday()=="Sunday":
-                    $text7="星期天"
-                else:
-                    $text7=calendar.get_weekday()
-
                 text "[calendar.year]年" size 16
                 text "[calendar.month]月" size 16
-                text ("[calendar.day]日(" + text7 + ")") size 16
+                text ("[calendar.day]日(" + settings_name_dict[calendar.get_weekday()][:3] + ")") size 16
 
 
         hbox:
@@ -336,7 +319,7 @@ screen girl_tab(girls, context="girls"):
         if game.has_active_mod("Headhunter Mod"):
             if game.headhunter_button_enabled:
                 key "shift_H" action Jump("headhunter_main")
-            $ textHH = "{u}H{/u}猎头公司" #
+            $ textHH = "猎头公司" #
 
             $ textHH2 = "订购具有特定特征的奴隶，以增加成本."
 
@@ -535,11 +518,11 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     if context == "girls":
         if girl.job:
             if girl.job:
-                $ text1 = chinese_name_dict[girl.job.capitalize()]
-                $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name_dict[girl.job.capitalize()] + "."
+                $ text1 = girl_related_dict[girl.job.capitalize()]
+                $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + girl_related_dict[girl.job.capitalize()] + "."
                 if girl.job in all_jobs and girl.work_whore:
                     $ text1 += "\n{color=[c_red]}妓女{/color}"
-                    $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + chinese_name_dict[girl.job.capitalize()] + "并兼职妓女."
+                    $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + girl_related_dict[girl.job.capitalize()] + "并兼职妓女."
         else:
             $ text1 = "无工作"
             $ but_ttip = "{b}" + girl.fullname + "{/b}正在休息."
@@ -994,16 +977,16 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     if farm.programs[girl].target != "no training":
                         hbox:
                             textbutton "训练模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定Gizel是否会强迫女孩们违心地训练.")
-                            text farm_name_dict[farm.programs[girl].mode.capitalize()] size 14 bold True
+                            text farm_related_dict[farm.programs[girl].mode.capitalize()] size 14 bold True
 
                         hbox:
                             textbutton "训练设施:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有).")
-                            text farm_name_dict[farm.programs[girl].installation_name.capitalize()] size 14 bold True
+                            text farm_related_dict[farm.programs[girl].installation_name.capitalize()] size 14 bold True
 
                     else:
                         hbox:
                             textbutton "待机模式:" xsize 0.7 xfill True text_xalign 0 text_size 14 background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么.")
-                            text farm_name_dict[farm.programs[girl].holding.capitalize()] size 14 bold True
+                            text farm_related_dict[farm.programs[girl].holding.capitalize()] size 14 bold True
 
                     hbox:
                         if farm.programs[girl].duration >= 0:
@@ -1695,7 +1678,7 @@ screen assign_job(girl):
                     if brothel.has_room(job_room_dict[j]):
 #                         selected girl.job == j # What was this?
                         action Return(j)
-                        tooltip "安排" + girl.fullname + "作为" + chinese_name_dict[j] + "工作"
+                        tooltip "安排" + girl.fullname + "作为" + girl_related_dict[j] + "工作"
                         add "tb " + j idle_alpha 0.66 #selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
                         text j.capitalize() selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                         if j == "whore":
@@ -1958,11 +1941,11 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = "未分配工作. 这名女孩已被安排休息，等待进一步的指示."
 
             elif girl.work_whore:
-                $ text1 = chinese_name_dict[girl.job.capitalize()][:4] + "./Wh."
+                $ text1 = girl_related_dict[girl.job.capitalize()][:4] + "./Wh."
                 $ ttip = "工作和嫖娼. 改变这个女孩的工作或者让她休息."
 
             else:
-                $ text1 = chinese_name_dict[girl.job.capitalize()]
+                $ text1 = girl_related_dict[girl.job.capitalize()]
                 $ ttip = "改变这个女孩的工作或让她休息."
 
             textbutton text1 text_size 14 action (SetVariable("selected_girl", girl), Return("assign")) tooltip ttip + " ({i}快捷键: {u}j{/u}{/i})"
@@ -2241,7 +2224,7 @@ screen rank_level_details(girl):
 
             for job in all_jobs:
 
-                text chinese_name_dict[job.capitalize()] yalign 0.5
+                text girl_related_dict[job.capitalize()] yalign 0.5
                 $ star_text = ""
                 for i in range(girl.job_level[job]):
                     $ star_text += "{image=img_star}"
@@ -2256,7 +2239,7 @@ screen rank_level_details(girl):
 
             for job in ("service", "sex", "anal", "fetish"):
 
-                text chinese_name_dict[job.capitalize()] yalign 0.5
+                text girl_related_dict[job.capitalize()] yalign 0.5
                 $ star_text = ""
                 for i in range(girl.job_level[job]):
                     $ star_text += "{image=img_star}"
@@ -2343,7 +2326,7 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = chinese_name_dict[girl.job.capitalize()]
+                                $ text1 = girl_related_dict[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
                                 $ text1 = "没有工作"
@@ -3998,15 +3981,15 @@ screen brothel_options():
                             vbox ysize 0.5 spacing 6:
                                 for pref in target:
                                     hbox spacing 6:
-                                        textbutton chinese_name_dict[pref.capitalize()] xsize 120 ypadding 5 text_size 18 yalign 0.5:
+                                        textbutton girl_related_dict[pref.capitalize()] xsize 120 ypadding 5 text_size 18 yalign 0.5:
                                             action NullAction()
 
                                             if brothel.get_effect("allow", pref + " preference"):
-                                                tooltip "修改此设置可更改顾客对选择'" + chinese_name_dict[pref] + "'服务的优先权提升" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
+                                                tooltip "修改此设置可更改顾客对选择'" + girl_related_dict[pref] + "'服务的优先权提升" + str(50*brothel.get_effect("allow", pref + " preference")) + "%."
                                             else:
                                                 background "#CCB8A0"
                                                 text_color c_white
-                                                tooltip "你必须在木匠的马车上做相应的装饰或家具才能修改顾客选择'" + chinese_name_dict[pref] + "'服务的优先权."
+                                                tooltip "你必须在木匠的马车上做相应的装饰或家具才能修改顾客选择'" + girl_related_dict[pref] + "'服务的优先权."
 
                                         if brothel.get_effect("allow", pref + " preference"):
 
@@ -4182,7 +4165,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         vbox spacing 3:
                                             for girl in [g for g in girls if g.job == job]:
                                                 hbox ysize 25 yalign 0.5:
-                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + chinese_name_dict[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
+                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + girl_related_dict[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
                                                         add girl.portrait.get(25, 25) xalign 0.5 yalign 0.5
 
                                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True:
@@ -4209,7 +4192,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                         vbox spacing 3 box_wrap True:
                             for girl in girls:
                                 hbox ysize 25 yalign 0.5:
-                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + chinese_name_dict[girl.job.capitalize()] + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
+                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip "{b}" + girl.fullname + ": " + girl_related_dict[girl.job.capitalize()] + " (interactions: %s/%s).{/b}" % (str(girl.get_max_interactions()-girl.interactions), str(girl.get_max_interactions())):
                                         add girl.portrait.get(25, 25) yalign 0.5
 
                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True xmaximum 220:
@@ -4428,7 +4411,7 @@ screen brothel_report():
 
                 text "昨日" color c_prune
 
-                text "" size 14
+                # text "" size 14
 
                 if calendar.time > 1:
                     text logs[calendar.time-1].get_day_report() size 14 color c_brown
@@ -5267,9 +5250,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + farm_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + farm_related_dict[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + farm_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + farm_related_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -5401,7 +5384,7 @@ screen inventory(char, act):
                         $ eq = it
 
                 vbox:
-                    text chinese_name_dict[slot.capitalize()] size 14 xalign 0.5
+                    text settings_name_dict[slot.capitalize()] size 14 xalign 0.5
 
                     button xsize 60 ysize 60 xfill True yfill True xalign 0.5:
 
@@ -6388,7 +6371,7 @@ screen farm_tab():
                 $ text1 = "啊哈, [MC.name]! 来看看我的宠物?"
                 $ pic = "side gizel"
             else:
-                $ text1 = "我的仆从最近很无聊... 你打算什么时候给他们送些新玩伴?"
+                $ text1 = "我的奴仆最近很无聊... 你打算什么时候给他们送些新玩伴?"
                 $ pic = "side gizel upset"
 
             button xfill True xmargin 3 ymargin 3 xpadding 6 ypadding 6 action Return(("help", None)) hovered tt.Action("向Gizel寻求帮助，了解农场的情况.") background c_ui_dark:
@@ -6497,15 +6480,15 @@ screen farm_tab():
                             if inst.can_upgrade():
                                 action Return(("upgrade", inst))
                                 if inst.rank > 0:
-                                    hovered tt.Action("点击这里升级" + farm_name_dict[inst.name] + "的能力需要" + str(inst.get_price()) + "金币.")
+                                    hovered tt.Action("点击这里升级" + farm_related_dict[inst.name] + "的能力需要" + str(inst.get_price()) + "金币.")
                                 else:
-                                    hovered tt.Action("点击这里建造" + farm_name_dict[inst.name] +  "需要" + str(inst.get_price()) + "金币.")
+                                    hovered tt.Action("点击这里建造" + farm_related_dict[inst.name] +  "需要" + str(inst.get_price()) + "金币.")
                             else:
                                 action NullAction()
                                 if inst.rank < 5:
-                                    hovered tt.Action("你无法升级" + farm_name_dict[inst.name] + "直到你获得更高的青楼执照.")
+                                    hovered tt.Action("你无法升级" + farm_related_dict[inst.name] + "直到你获得更高的青楼执照.")
                                 else:
-                                    hovered tt.Action("你无法进一步升级" + farm_name_dict[inst.name] + "了.")
+                                    hovered tt.Action("你无法进一步升级" + farm_related_dict[inst.name] + "了.")
 
                             vbox:
                                 spacing 3
@@ -6517,7 +6500,7 @@ screen farm_tab():
                                     text str(inst.rank) + "{size=-8}/" + str(district.rank) xalign 0.9 yalign 0.1
 
                                 if inst.rank > 0:
-                                    text farm_name_dict[inst.name.capitalize()] size 14 xcenter 0.5
+                                    text farm_related_dict[inst.name.capitalize()] size 14 xcenter 0.5
                                 else:
                                     text "???" size 14 xcenter 0.5
 
@@ -6532,7 +6515,7 @@ screen farm_tab():
                     vbox xsize 130 xfill True:
 
                         if len(farm.get_minions(type)) > 0:
-                            text str(len(farm.get_minions(type))) + " " + farm_name_dict[type.capitalize()] size 14 bold True xalign 0.5
+                            text str(len(farm.get_minions(type))) + " " + farm_related_dict[type.capitalize()] size 14 bold True xalign 0.5
 
                         text "" size 6
 
@@ -6672,7 +6655,7 @@ screen sex_details(girl):
             text "工作意向" size 14 bold True xalign 0.5
 
             for act in extended_sex_acts:
-                text chinese_name_dict[act.capitalize()] size 14 bold True
+                text girl_related_dict[act.capitalize()] size 14 bold True
 
                 if debug_mode:
                     $ text1 = " (" + str(round_int(girl.preferences[act])) + ")"
@@ -6680,7 +6663,7 @@ screen sex_details(girl):
                     $ text1 = ""
 
                 if girl.personality_unlock[act]:
-                    text preference_color[girl.get_preference(act)] % preference_name_dict[girl.get_preference(act).capitalize()] + text1 size 14
+                    text preference_color[girl.get_preference(act)] % girl_related_dict[girl.get_preference(act).capitalize()] + text1 size 14
                 else:
                     text "未知" + text1 size 14 italic True
 

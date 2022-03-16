@@ -589,7 +589,7 @@ init -4 python:
                  "machine" : []
                  }
 
-    farm_holding_dict = {"libido" : "照看仆役\n{size=-24}     (+性欲){/size}",
+    farm_holding_dict = {"libido" : "照看奴仆\n{size=-24}     (+性欲){/size}",
                             "sensitivity" : "服侍Gizel\n{size=-24}     (+敏感){/size}",
                             "obedience" : "Cleaning up the farm (Ob)",
                             "constitution" : "Working outside (Con)",
@@ -653,9 +653,9 @@ init -4 python:
                         "holding obedience" : "Gizel派%s去打扫农场，告诉她要擦洗谷仓的每一个角落，清洗地板上的污渍. %s按照她的要求做了，而不是去面对魔法鞭笞的威胁.",
                         "holding constitution" : "Gizel命令%s在马道上绕着农行跑了一圈，每当她发现%s减速时，就狠狠地用鞭子抽她.",
                         "holding sensitivity" : "Gizel用%s作为她的私人仆人来追求她变态的幻想，强迫她舔身体，用各种各样的玩具玩弄那些饥饿的洞洞. 这很困难，但%s还是学到了新东西.",
-                        "holding libido" : "Gizel要求%s照顾仆役：喂养它们，清洁它们，帮助它们“释放压力”. %s在她工作的过程中，她了解到很多关于仆役们独特的体征特点.",
+                        "holding libido" : "Gizel要求%s照顾奴仆：喂养它们，清洁它们，帮助它们“释放压力”. %s在她工作的过程中，她了解到很多关于奴仆们独特的体征特点.",
                         "holding obedience good": "作为一个额外的挑战，Gizel让%s在她持续工作的时候穿上紧缚身体的绳子.  {color=[c_green]}粗糙的绳子以一种既不舒服又奇怪的方式摩擦着她的身体.{/color}",
-                        "holding obedience bad": " {color=[c_lightred]}%s厌恶Gizel的仆役留下的所有污秽和体液.{/color}",
+                        "holding obedience bad": " {color=[c_lightred]}%s厌恶Gizel的奴仆留下的所有污秽和体液.{/color}",
                         "holding constitution good": " Gizel认为在室外不穿衣服会让%s更加狂野，于是她让她光着身子跟动物一起跑. {color=[c_green]}在户外和动物一起裸体让她觉得自己的身心更愉悦.{/color}",
                         "holding constitution bad": " {color=[c_lightred]}当%s以创纪录的速度跑完一圈时，她轻蔑地看了Gizel一眼.{/color}",
                         "holding sensitivity good": " %s用熟练的舌头舔着Gizel勃起的阴蒂，给了她美妙的高潮. {color=[c_green]}她现在更熟悉如何取悦女人.{/color}",
@@ -2543,10 +2543,10 @@ init -4 python:
     ## PRICES ##
 
     special_quest_description = {
-                                 "Cheap" : "这个课程很便宜. 立即注册并享受更优惠的价格!",
-                                 "Masterclass" : "这个班是由一位大师教的. 数据将比正常情况下增长更快.",
-                                 "High reward" : "这种任务的回报比以往更多.",
-                                 "Notorious" : "这个任务完成后会带来额外的声望."
+                                 "有折扣" : "这个课程很便宜. 立即注册并享受更优惠的价格!",
+                                 "大师班" : "这个班是由一位大师教的. 数据将比正常情况下增长更快.",
+                                 "高报酬" : "这种任务的回报比以往更多.",
+                                 "臭名昭著" : "这个任务完成后会带来额外的声望."
                                  }
 
     quest_base_gold = { # This the gold value per stat point of requirement and per day
