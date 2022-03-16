@@ -205,6 +205,21 @@ init -4 python:
                         "Farm minion" : "农场奴仆",
                         }
 
+    ## 结算界面 ##
+    result_name_dict = {
+                       ## 最终结果 ##
+                       "very bad" :"非常糟糕",
+                       "bad" : "糟糕",
+                       "average" : "一般",
+                       "good" : "不错",
+                       "very good" : "非常好",
+                       "perfect" : "完美",
+
+                       ## 杂项 ##
+                       "XP" : "经验",
+                       }
+
+
     ## 按钮名字 ##
     button_name_dict = {
                         ## 一般选项 ##

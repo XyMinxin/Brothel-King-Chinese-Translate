@@ -5324,11 +5324,11 @@ init -2 python:
 #                return False, "You cannot rape her more than once per day."
 
             elif self.group == "offer" and len(MC.girls) >= brothel.bedrooms:
-                return False, "You don't have room in your brothel for another girl."
+                return False, "你的青楼里没有空间容纳另一个女孩."
             elif self.group and girl.MC_interact_counters[self.group] >= 3:
-                return False, "You cannot " + self.group + " more than 3 times a day with a girl."
+                return False, "你不能和一个女孩每天互动3次以上的" + self.group + "."
             elif self.label == "slave_master_bedroom_add" and not brothel.master_bedroom.can_have_girl():
-                return False, "The master bedroom is already full."
+                return False, "主人卧室已经满了."
             return True, ""
 
 
@@ -5371,7 +5371,7 @@ init -2 python:
             girl = self.girl
 
             if debug_mode:
-                renpy.call_screen("OK_screen", girl.fullname + "-Interaction resolving", "Group: [inter.topic.group]\nType: [inter.type]\nAction: [inter.topic.caption]\nReason: [inter.reason]\nResponse: [inter.response]\nAct: [inter.act]\nResult: [inter.result]\nMC Reaction: [inter.MC_reaction]")
+                renpy.call_screen("OK_screen", girl.fullname + "- 互动决定", "群组: [inter.topic.group]\n类型: [inter.type]\n行动: [inter.topic.caption]\n原因: [inter.reason]\n回应: [inter.response]\n行动: [inter.act]\n结果: [inter.result]\n玩家行动: [inter.MC_reaction]")
             else:
                 renpy.block_rollback()
 
