@@ -280,15 +280,15 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 text1 += defended_girls[0].fullname + " defended herself. {color=[c_red]}"
 
             if len(hurt_girls) > 1:
-                text1 += and_text([g.fullname for g in defended_girls]) + "受伤了.\n"
-                log.add_report("{color=[c_red]}安全警报! " + and_text([g.fullname for g in defended_girls]) + "受伤了.{/color}")
+                text1 += and_text([g.fullname for g in defended_girls]) + "受伤了。\n"
+                log.add_report("{color=[c_red]}安全警报！ " + and_text([g.fullname for g in defended_girls]) + "受伤了。{/color}")
             elif len(hurt_girls) > 0:
-                text1 += hurt_girls[0].fullname + "受伤了.\n"
-                log.add_report("{color=[c_red]}安全警报! " + hurt_girls[0].fullname + "受伤了.{/color}")
+                text1 += hurt_girls[0].fullname + "受伤了。\n"
+                log.add_report("{color=[c_red]}安全警报！ " + hurt_girls[0].fullname + "受伤了。{/color}")
 
             if kidnapped_girls:
                 text1 += "{b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}"
-                log.add_report("{color=[c_red]}安全警报! {b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}{/color}")
+                log.add_report("{color=[c_red]}安全警报！ {b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}{/color}")
 
         hide screen show_event
         scene black
@@ -345,7 +345,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             enemy_factor = 1.0
 
 
-        $ log.add_report("{color=[c_red]}安全警报! " + str(enemies) +  "名佣兵在一名" + enemy_g + "的带领下包围了青楼.{/color}")
+        $ log.add_report("{color=[c_red]}安全警报！ " + str(enemies) +  "名佣兵在一名" + enemy_g + "的带领下包围了青楼.{/color}")
 
         show expression bg_bro at top
 
@@ -985,7 +985,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             if furn.rank > 0:
                                 brothel.destroy_furniture(furn)
 
-                    $ log.add_report("{color=[c_red]}安全警报! +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
+                    $ log.add_report("{color=[c_red]}安全警报！ +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
 
                 else:
                     if hurt_girls:
@@ -1026,7 +1026,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "You have captured the enemy general, [enemy_general.fullname]!"
 
                 $ unlock_achievement("general captured")
-                $ log.add_report("{color=[c_green]}安全警报! " + str_int(loot) + " 金币.{/color}")
+                $ log.add_report("{color=[c_green]}安全警报！ " + str_int(loot) + " 金币.{/color}")
 
                 play sound s_surprise
 
@@ -1169,34 +1169,34 @@ init -3 python:
                 sec_pic = "events/" + rand_choice(security_pics["thief defense"])
                 sec_sound = s_surprise
                 bonus_gold = brothel.get_sec_cost()/2
-                sec_text = ("{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\n"
-                             "They're in such good spirits that they accept to work for half the usual amount ({b}" + str_int(bonus_gold) + " gold{/b}).")
+                sec_text = ("{color=[c_green]}你的卫兵当场抓住了一个小偷!{/color} 他们整晚都在惩罚她.\n"
+                             "他们的心情很好，愿意以平常一半的工资工作({b}" + str_int(bonus_gold) + " 金币{/b}).")
 
-                log.add_report("{color=[c_green]}Security alert! No gold lost. " + str(bonus_gold) + " gold recovered.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没有损失金币. 获得 " + str(bonus_gold) + " 金币.{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["thief defense"])
                 sec_sound = s_surprise
                 MC.change_prestige(district.rank)
-                sec_text = ("{color=[c_green]}As you were patrolling, you caught a thief red-handed!{/color} She begged you to release her, "
-                                "so you came to an arrangement.\nYou let her go after a night of 'fun' in your basement. You have earned {b}prestige{/b}.")
+                sec_text = ("{color=[c_green]}当你在巡逻时，你当场抓住了一个小偷!{/color} 她求你放了她, "
+                                "所以你们达成了协议.\n你让她在地下室'玩'了一晚后离开. 你赢得了{b}声望{/b}.")
 
                 log.add_report("{color=[c_green]}Security alert! No gold lost. Prestige earned.{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["thief"])
-                sec_text = "{color=[c_lightgreen]}A " + rand_choice(["bold", "sneaky", "dirty", "notorious", "skilled"]) + " thief showed up, but your guards drove her away!{/color} You didn't lose any money."
+                sec_text = "{color=[c_lightgreen]}一名" + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷出现了，但你的保安把她赶走了!{/color}你没有损失金钱."
 
-                log.add_report("{color=[c_green]}Security alert! No gold lost.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 小偷造访，没有丢钱.{/color}")
 
             else:
                 sec_char = security_breach
                 sec_pic = "events/" + rand_choice(security_pics["thief"])
                 sec_sound = s_evil_laugh
                 lost_gold = round_int(MC.gold // 20)
-                sec_text = ("{color=[c_red]}A " + rand_choice(["bold", "sneaky", "dirty", "notorious", "skilled"]) + " thief managed to infiltrate your brothel and make away with {b}" + str_int(lost_gold) + "{/b} gold!{/color}")
+                sec_text = ("{color=[c_red]}A " + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷潜入了你的青楼并偷走了 {b}" + str_int(lost_gold) + "{/b} 金币!{/color}")
 
-                log.add_report("{color=[c_red]}Security alert! " + str(lost_gold) + " gold lost.{/color}")
+                log.add_report("{color=[c_red]}安全警报！ 小偷造访，损失 " + str(lost_gold) + " 金币.{/color}")
 
             brothel.threat = 0
 
@@ -1209,39 +1209,39 @@ init -3 python:
                 sec_sound = s_clash
                 for girl in working_girls:
                     girl.change_fear(-1)
-                sec_text = "{color=[c_green]}One of your guard slew a night beast they found lurking in a dark corner.{/color}\nYour girls are relieved."
+                sec_text = "{color=[c_green]}你的一个守卫杀死了一只潜伏在黑暗角落里的怪物.{/color}\n你的女孩们放心了."
 
-                log.add_report("{color=[c_green]}Security alert! No was one hurt. Fear lowered.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没有人受伤. 恐惧降低.{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["sword defense"])
                 sec_sound = s_clash
                 for girl in working_girls:
                     girl.change_love(1)
-                sec_text = ("{color=[c_green]}A monster leapt at your girls from a dark corner!{/color} Your quick combat reflexes saved you. "
-                                "The beast now lies lifeless at your feet. Your girls are impressed.")
+                sec_text = ("{color=[c_green]}一个怪物从黑暗的角落里向你的女孩们扑来!{/color} 你快速的战斗反应救了你. "
+                                "怪物毫无生气地躺在你的脚下. 女孩们印象深刻.")
 
-                log.add_report("{color=[c_green]}Security alert! No one was hurt. Love raised.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没人受伤. 爱情提高.{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["monster defense"])
-                sec_text = "{color=[c_lightgreen]}" + rand_choice(["A vile", "An ugly", "A dirty", "A filthy", " A scary", "A disgusting"]) + " monster crawled in from the shadows, but your guards drove it away!{/color} Fortunately, no one got hurt."
+                sec_text = "{color=[c_lightgreen]}" + rand_choice(["一个卑鄙的", "一个丑陋的", "一个肮脏的", "一个猥亵的", "一个惊慌的", "一个恶心的"]) + "怪物从阴影中爬了进来，但你的卫兵把它赶走了!{/color} 幸运的是，没有人受伤."
 
-                log.add_report("{color=[c_green]}Security alert! No one was hurt.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没人受伤.{/color}")
 
             else:
                 girl = rand_choice([g for g in MC.girls])
 
                 sec_char = security_breach
-                sec_text = "{color=[c_red]}" + rand_choice(["A vile", "An ugly", "A dirty", "A filthy", " A scary", "A disgusting"]) + " night creature crawled in from " + rand_choice(["the shadows", "a window", "the sewers", "the roof"])
+                sec_text = "{color=[c_red]}" + rand_choice(["一个卑鄙的", "一个丑陋的", "一个肮脏的", "一个猥亵的", "一个惊慌的", "一个恶心的"]) + "怪物从" + rand_choice(["阴影里", "一扇窗户", "下水道", "屋顶"]) + "爬了进来"
 
                 if girl.test_shield():
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_spell
                     sec_with = vpunch
-                    sec_text += " and attacked " + girl.fullname + "{/color}, but {color=[c_lightgreen]}a {b}magic shield{/b} protected her from harm{/color} and the beast ran away."
+                    sec_text += "并攻击了" + girl.fullname + "{/color}, 但是{color=[c_lightgreen]}一个{b}魔法盾{/b}保护了她免受伤害{/color}，最后怪物跑开了."
 
-                    log.add_report("{color=[c_green]}Security alert! Shield protected " + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！ 魔法盾保护了" + girl.fullname + ".{/color}")
 
                 elif girl.get_defense() >= game.chapter:
                     sec_pic = girl.get_pic("fight", naked_filter=True, soft=True, strict=True)
@@ -1252,9 +1252,9 @@ init -3 python:
                         if not sec_pic:
                             sec_pic = "events/" + rand_choice(security_pics["default girl fight"])
 
-                    sec_text += " and attacked " + girl.fullname + "{/color}, but\n" + event_color["good"] % rand_choice(["she kicked the critter's scaly ass and sent it packing.", "she was ready to defend herself and butchered it.", "her combat training paid off.", "she had a weapon ready and scared it off.", "she wounded it badly and it ran off."])
+                    sec_text += "并攻击了" + girl.fullname + "{/color}, 只是\n" + event_color["good"] % rand_choice(["她一脚踢到那只浑身鳞片家伙的屁股，把它打发走了.", "她早就做好了自卫准备，最后她把它宰了.", "她的战斗训练得到了回报.", "她拿出早已准备好的武器，把它吓跑了.", "她把它伤得很重，它最终还是跑掉了."])
 
-                    log.add_report("{color=[c_green]}Security alert! "+ girl.fullname + " defended herself.{/color}")
+                    log.add_report("{color=[c_green]}安全警报！ "+ girl.fullname + " 保护了她自己.{/color}")
 
                 else:
                     if is_censored("monster"):
@@ -1265,16 +1265,16 @@ init -3 python:
                         sec_pic = "events/" + rand_choice(security_pics["monster rape"])
                     sec_sound = s_roar
                     sec_with = vpunch
-                    sec_text += " and raped " + girl.fullname + ". {/color}\nYou manage to drive it away, but the girl is in shock."
+                    sec_text += " and raped " + girl.fullname + ". {/color}\n你设法把它赶走了，但女孩们吓坏了."
 
                     girl.change_fear(10)
                     girl.get_hurt(dice(3)+2)
 
                     if girl.hurt > 0:
-                        girl.track_event("hurt", arg="an evil night monster.")
-                        log.add_report("{color=[c_red]}Security alert! " + girl.fullname + " was hurt.{/color}")
+                        girl.track_event("hurt", arg="邪恶的怪物.")
+                        log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "受伤了。{/color}")
                     else:
-                        log.add_report("{color=[c_red]}Security alert! " + girl.fullname + " was raped.{/color}")
+                        log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "被强暴了.{/color}")
 
             brothel.threat = 0
 
@@ -1285,7 +1285,7 @@ init -3 python:
 
             _min, _max = alert_limits2[game.chapter]
 
-            sec_text = "A " + rand_choice(["shady", "sneaky", "skilled", "deadly", "mysterious", "rogue", "vicious"]) + " ninja made an attempt on " + girl.fullname + "'s life! "
+            sec_text = "一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命! "
 
             renpy.play(s_sheath, "sound")
             renpy.pause(0.5)
@@ -1293,9 +1293,9 @@ init -3 python:
             if guard_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["assassin defense"])
                 sec_sound = s_clash
-                sec_text += event_color["good"] % "Fortunately, your security was on hand, and forced the scoundrel to run away. "
+                sec_text += event_color["good"] % "幸运的是，你的保安在身边，迫使这个家伙逃跑了. "
 
-                log.add_report("{color=[c_green]}Security alert! No was one hurt.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没有人受伤.{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 if MC.playerclass == "Warrior":
@@ -1308,10 +1308,10 @@ init -3 python:
                     sec_pic = "events/" + rand_choice(security_pics["dragon defense"])
                     sec_sound = s_roar
 
-                sec_text = ("A " + rand_choice(["shady", "sneaky", "skilled", "deadly", "mysterious", "rogue", "vicious"]) + " ninja made an attempt on " + girl.fullname + "'s life! "
-                           + event_color["good"] % rand_choice(MC.filter_say(["wa: Fortunately, you were right next to her and parried the attack, unsheathing your sword right on time with cobra-like reflexes.", "wi: Fortunately, you blocked the attack at the last second with a magical barrier.", "tr: Fortunately, your pet dragon Drogon smelled the bastard and swooped right at him roaring before he had a chance to attack."])) + " The assassin ran away.")
+                sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命! "
+                           + event_color["good"] % rand_choice(MC.filter_say(["wa: 幸运的是，你就在她身边，及时带她躲过了袭击，用眼镜蛇一样的反应及时拔出你的剑.", "wi: 幸运的是，你在最后一秒用魔法盾挡住了攻击.", "tr: 幸运的是，你的宠物龙卓耿嗅到了这个混蛋的味道，在他有机会攻击之前，它咆哮着冲向他."])) + " 刺客逃走了.")
 
-                log.add_report("{color=[c_green]}Security alert! No was one hurt.{/color}")
+                log.add_report("{color=[c_green]}安全警报！ 没有人受伤.{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["assassin"])
@@ -1320,10 +1320,10 @@ init -3 python:
 
                 lost_gold = (99 + dice(101)) * game.chapter
 
-                sec_text += (event_color["a little good"] % "Fortunately, your security was on hand. " + "A guard threw himself into harm's way and took the hit.\n"
-                            + rand_choice(["You gave the brave soul " + str(lost_gold) + " gold for his trouble.", "You gave the poor sod's family " + str(lost_gold) + " gold and thanks for his loyal services.", "You paid " + str(lost_gold) + " gold for the courageous man's medical expenses."]))
+                sec_text += (event_color["a little good"] % "幸运的是，你的保安就在身边. " + "一名保安不顾安危全力保护了她.\n"
+                            + rand_choice(["你奖励了这名勇敢的保安 " + str(lost_gold) + " 金币.", "你为他的家庭支付一笔抚恤金 " + str(lost_gold) + " 金币来感谢他的忠诚服务.", "你为这名勇敢的保安支付了 " + str(lost_gold) + " 金币的治疗费用."]))
 
-                log.add_report("{color=[c_red]}Security alert! " + str(lost_gold) + " gold lost.{/color}")
+                log.add_report("{color=[c_red]}安全警报！ 损失了 " + str(lost_gold) + " 金币.{/color}")
 
             else:
                 sec_char = security_breach
@@ -1332,17 +1332,17 @@ init -3 python:
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_spell
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\nFortunately, she was protected by a {b}magic shield{/b} and escaped harm."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她受到了{b}魔法盾{/b}的保护而避免了伤害."
 
-                    log.add_report("{color=[c_green]}Security alert! Shield protected " + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！ 魔法盾保护了" + girl.fullname + ".{/color}")
 
                 elif girl.get_effect("special", "immune"):
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_fizzle
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\nFortunately, she is {b}immune{/b} to physical damage and escaped harm."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她对物理伤害有{b}免疫{/b}，没有受到伤害."
 
-                    log.add_report("{color=[c_green]}Security alert! Immunity protected " + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！ 免疫保护了" + girl.fullname + ".{/color}")
 
                 elif girl.get_defense() >= district.rank*2:
                     sec_pic = girl.get_pic("fight", naked_filter=True, soft=True, strict=True)
@@ -1353,9 +1353,9 @@ init -3 python:
 
                     sec_sound = s_clash
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\nYour girl used her weapons to defend herself and escaped unscathed by a thread."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n你的女孩用她的武器保护了自己，毫发无损地逃脱了."
 
-                    log.add_report("{color=[c_green]}Security alert! " + girl.fullname + " defended herself.{/color}")
+                    log.add_report("{color=[c_green]}安全警报！ " + girl.fullname + "保护了她自己.{/color}")
 
                 else:
                     sec_pic = girl.get_pic("hurt", not_tags=["rest"], naked_filter=True, soft=True, strict=True)
@@ -1366,8 +1366,8 @@ init -3 python:
                     sec_sound = s_woman_scream
                     sec_with = vpunch
 
-                    sec_text = event_color["bad"] % sec_text + "\n" + rand_choice(["She was only grazed by the assassin dagger, but she immediately lost consciousness.", "She was hit in the arm, she's bleeding and looks feverish.", "Her thigh got slashed and she is in pain.", "She caught a dart in her chest, you worry it might be poisoned."])
-                    sec_text += "\nYou bring the unconscious girl inside and take a look at the damage. It doesn't look life threatening, but some green substance is seeping from the wound. "
+                    sec_text = event_color["bad"] % sec_text + "\n" + rand_choice(["她只被刺客的匕首擦伤，但很快就失去了知觉.", "她的胳膊被击中了，一直流血，看起来还有点发烧.", "她的大腿被割伤了，非常疼.", "她在胸前中一支飞镖，你担心她可能会中毒."])
+                    sec_text += "\n你把那个失去知觉的女孩带到里面，检查了一下受伤的地方. 看起来没有生命危险，只是伤口渗出了一些绿色物质. "
 
                     ev_list.append(Event(pic = sec_pic, sound = sec_sound, with_st = sec_with, text = sec_text, changes = "", type ="Health/Security"))
 
@@ -1378,17 +1378,17 @@ init -3 python:
                     sec_sound = None
                     sec_with = fade
 
-                    eff, msg = rand_choice([("Beauty", "When she wakes up, her face is covered with ugly pimples. They should go away with the right ointment, but it will take a long time.\n" + event_color["bad"] % "She is hurt for %s days, and her beauty has decreased by %s permanently."),
-                                        ("Body", "You notice something disturbing. Her boobs and ass seem noticeably smaller. Such a cruel poison! Curse the bastards!\n" + event_color["bad"] % "She is hurt for %s days, and her body has decreased by %s permanently."),
-                                        ("Charm", "When she comes to her senses, she seems aloof and behaves strangely, altogether not like herself.\n" + event_color["bad"] % "She is hurt for %s days, and her charm has decreased by %s permanently."),
-                                        ("Refinement", "When she finally wakes up, she starts giggling and looks at you as if she didn't understand the situation she's in. It seems her mind wandered and she is acting all childish.\n" + event_color["bad"] % "She is hurt for %s days, and her refinement has decreased by %s permanently."),
-                                        ("Libido", "When she wakes up, she shivers and cowers from you. 'I'm s-s-so cold...', she says.\n" + event_color["bad"] % "She is hurt for %s days, and her libido has decreased by %s permanently."),
-                                        ("Constitution", "After struggling between life and death for a few hours, her fever eventually recesses, and it looks like she will survive. She is still very weak, however.\n" + event_color["bad"] % "She is hurt for %s days, and her constitution has decreased by %s permanently."),
-                                        ("Obedience", "When she comes through, she seems wild, almost feral. She nearly bites you when you come near. You hope the effect will recess with time.\n" + event_color["bad"] % "She is hurt for %s days, and her obedience has decreased by %s permanently."),
-                                        ("Sensistivity", "When she opens her eyes, she whispers faintly 'Master, I... I can't feel my limbs...'. She fights against paralysis all night, and without Sill's advanced alchemist skills, she would have become crippled. When she is finally able to get up, she still feels numb." + event_color["bad"] % "She is hurt for %s days, and her sensitivity has decreased by %s permanently."),
-                                        ("libido+", "When she wakes up, she looks feverish, with a strange look in her eye. 'Master... Come over here...', she whispers. As you approach her bed, she grabs your dick and starts fondling it. 'Master's dick... Aaah...', she moans.\n" + event_color["bad"] % "She is hurt for %s days" + ", but " + event_color["good"] % "her libido has increased by %s permanently." + " You wonder if you should thank the mysterious love ninja."),
-                                        ("personality", "When she finally gets up, she looks like a different person. 'W-Who are you?'. It seems like she hit her head or something.\n" + event_color["average"] % "She is hurt for %s days, and her {b}personality{/b} has changed. Her {b}love{/b} and {b}fear{/b} have been reset."),
-                                        ("naked", "After a while, she opens her eyes and slowly comes to her senses. Suddenly, she shrieks, and throws the linen sheet to the side. 'No! It burns my skin!', she yells. It seems she has developed a phobia for cloth of any kind.\n" + event_color["bad"] % "She is hurt for %s days" + ", and " + event_color["good"] % "%s." + " You guess it could really be worse."),
+                    eff, msg = rand_choice([("Beauty", "当她醒来时，她的脸上布满了难看的丘疹。他们应该用正确的药膏，但这要花很长时间才能恢复。\n" + event_color["bad"] % "她受伤需要休息%s天，她的美貌永久性地减少了%s。"),
+                                        ("Body", "你注意到一些令人不安的事情。她的胸部和屁股看起来明显变小了。如此残忍的毒药!诅咒那些混蛋!\n" + event_color["bad"] % "她受伤需要休息%s天，她的身材永久性地减少了%s。"),
+                                        ("Charm", "当她恢复知觉时，她似乎很冷淡，举止怪异，完全不像她自己。\n" + event_color["bad"] % "她受伤需要休息%s天，她的优雅永久性地减少了%s。"),
+                                        ("Refinement", "当她最终醒来时，她开始咯咯地笑着看着你，好像她不明白自己的处境。她好像神志不清，表现得很幼稚。\n" + event_color["bad"] % "她受伤需要休息%s天，她的性欲永久性地减少了%s。"),
+                                        ("Libido", "当她醒来的时候，她在你身边瑟瑟发抖，口中说着：“我……好……好冷……\n" + event_color["bad"] % "她受伤需要休息%s天，她的性欲永久性地减少了%s。"),
+                                        ("Constitution", "在生死之间斗争了几个小时后，她的高烧最终消退，看来她会活下来。但是她仍然很虚弱。\n" + event_color["bad"] % "她受伤需要休息%s天，她的体格永久性地减少了%s。"),
+                                        ("Obedience", "当她醒来的时候，她看起来很野性，几乎像一只野生动物。当你走近她时，差点被她咬到，你希望她的情况会随着时间的推移逐渐减弱。\n" + event_color["bad"] % "她受伤需要休息%s天，她的服从永久性地减少了%s。"),
+                                        ("Sensistivity", "当她睁开眼睛时，她轻声说:“主人，我……我的感觉不到我的四肢……”。 她整晚都在与瘫痪作斗争，如果没有希尔的高级炼金术，她可能会变成残废。当她终于能站起来的时候，她仍然感觉麻木。" + event_color["bad"] % "她受伤需要休息%s天，她的敏感永久性地减少了%s。"),
+                                        ("libido+", "当她醒来时，她看起来有点发烧，眼睛里有一种奇怪的神情。“主人……过来……”她低声说。当你靠近她的床时，她抓住你的肉棒，开始爱抚它。“主人的肉棒……Aaah……”她呻吟道。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，神奇的是" + event_color["good"] % "她的性欲反而永久性地增长了%s。" + " 你在想你是不是应该感谢一下那位神秘的爱之忍者。"),
+                                        ("personality", "当她终于起床时，她看起来完全变了个人。“你是谁？”。她好像撞到了头什么的。\n" + event_color["average"] % "她受伤需要休息%s天，她的{b}品味{/b}发生了改变。她的{b}喜好{/b}和{b}憎恶{/b}已经重置。"),
+                                        ("naked", "过了一会儿，她睁开眼睛，慢慢地恢复了知觉。 突然，她尖叫了一声，把床单扔到了一边。 “不!它灼伤了我的皮肤!”,她喊道。看来她对任何布料都有恐惧症。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，而且" + event_color["good"] % "%s。" + "你估计情况有可能会更糟。"),
                                         ])
 
                     girl.get_hurt(3+dice(6))
@@ -1417,16 +1417,16 @@ init -3 python:
 
                     elif eff == "naked":
                         if girl.get_effect("special", "naked"):
-                            sec_text += msg % (str_int(girl.hurt), "must remain naked at all times")
+                            sec_text += msg % (str_int(girl.hurt), "必须一直赤身裸体")
                         else:
-                            sec_text += msg % (str_int(girl.hurt), "she has received the 'Naked' perk")
+                            sec_text += msg % (str_int(girl.hurt), "她获得了“裸体主义”特质")
                             girl.naked = True
                             girl.acquire_perk(naked_perk, forced=True)
 
                         if girl.preferences["naked"] < 200:
                             girl.preferences["naked"] = 200
 
-                    log.add_report("{color=[c_red]}Security alert! " + girl.fullname + " was hurt.{/color}")
+                    log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "受伤了。{/color}")
 
             brothel.alert_level = 1
             brothel.threat = 0
@@ -1439,32 +1439,32 @@ init -3 python:
             sec_sound = s_crowd_riot
             sec_with = vpunch
 
-            sec_text = ("A brawl erupted in the " + rand_choice(brothel.get_common_rooms()).name + " after "
-                        + rand_choice(["a customer spilled his boiling-hot grog on another man's crotch.",
-                                       "two customers starting fighting over the same girl.",
-                                       "a famous girls band from Borgo came to do a concert.",
-                                       "a hated politician came in with his cronies.",
-                                       "someone yelled 'free beer'.",
-                                       "spiced-up junkies started thrashing the place.",
-                                       "someone made one 'yo mamma' joke too-many.",
-                                       "a female customer flashed her boobs.",
-                                       "two rivals recognized each other.",
-                                       "rival gangs met each other inside.",
-                                       "someone attempted to sing a love song.",
-                                       "a chick with a yellow jumper and a katana challenged the crowd to a fight.",
-                                       "an old man came in with no pants and an attitude.",
-                                       "Arios-worshippers were served salt against their religion.",
-                                       "someone's beard caught fire.",
-                                       "a drunk nobleman started throwing gold coins into the air.",
-                                       "a rogue ship captain shot first.",
-                                       "someone brought a herd of goats in and they started rampaging through the brothel.",
-                                       "interdimensional aliens from another galaxy ripped the fabric of spacetime, as well as a girl's panties.",
+            sec_text = ("" + rand_choice(brothel.get_common_rooms()).name + "里爆发了一场争吵，原因是 "
+                        + rand_choice(["一名客人把滚烫的烈酒洒在另一个人的裆部。",
+                                       "两个顾客开始争夺同一个女孩。",
+                                       "一个来自博尔格的著名女子乐队组合来开音乐会。",
+                                       "一名遭人憎恨的政客带着他的亲信进来了。",
+                                       "有人大喊着“免费啤酒！”。",
+                                       "吸毒成瘾的人开始在这个地方乱窜。",
+                                       "有人开了太多的“yo mamma”玩笑。",
+                                       "一位女顾客露出了胸部。",
+                                       "两名商业竞争中相互认出了对方。",
+                                       "敌对帮派在里面相遇。",
+                                       "有人想唱一首情歌。",
+                                       "一名身穿黄色套头衫手持武士刀的家伙向人群发起挑战。",
+                                       "一名没穿裤子，面容肃穆的老人走了进来。",
+                                       "阿里奥斯崇拜者在讨论盐是不是有违宗教信仰。",
+                                       "有人的胡子着火了。",
+                                       "一名醉醺醺的贵族开始往空中扔金币。",
+                                       "一名流氓船长对空开了一枪。",
+                                       "有人带了一群山羊进来，它们开始在青楼里横冲直撞。",
+                                       "来自另一个星系的星际异形撕裂了时空结构，也撕裂了一个女孩的内裤。",
                                       ]))
 
             if guard_defense >= _max:
-                sec_text += event_color["good"] % "\nFortunately, your guards were ready, and they threw the troublemakers out before they had a chance to do any serious damage."
+                sec_text += event_color["good"] % "\n幸运的是，你的保安们已经做好了万全准备，他们在捣蛋鬼有机会造成严重损失之前就把他们赶了出去。"
 
-                log.add_report("{color=[c_green]}Security alert! Riot prevented.{/color}")
+                log.add_report("{color=[c_green]}安全警报！暴乱被制止。{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 if MC.playerclass == "Warrior":
@@ -1474,21 +1474,21 @@ init -3 python:
                 elif MC.playerclass == "Trader":
                     sec_sound = s_crowd_cheer
 
-                sec_text += event_color["good"] % rand_choice(MC.filter_say(["wa: \nFortunately, you were around and promptly beat some sense into the worst offenders. The others quickly went quiet.",
-                                                                            "wi: \nIn order to quell the riot, you cast a spell and turned the worst troublemakers into chicken. After that, the rest went back to their business. The charm should wear off in a few hours, and the cursed customers should be no worse off for their trouble, unless they ended up in the kitchen before then, of course.",
-                                                                            "tr: \nKnowing how to work the crowd, you offered everyone a free drink, and you and your guards beat up the few remaining troublemakers."]))
+                sec_text += event_color["good"] % rand_choice(MC.filter_say(["wa: \n幸运的是，你就在附近，很快就用拳头让暴乱者清醒了。其他人很快就安静下来。",
+                                                                            "wi: \n为了平息暴乱，你施展了魔法，把最出头的捣乱者变成了胆小鬼。在那之后，其余的人又回到了他们自己的位置。魅力在几个小时内就会消失，而被施法的客人也不会因为他们的麻烦而更糟，当然，除非他们在那之前去过厨房。",
+                                                                            "tr: \n你知道如何摆平这种事，先是给每个人提供了一杯免费饮料，接着你和你的保安痛打了剩下的几个捣乱分子。"]))
 
-                log.add_report("{color=[c_green]}Security alert! Riot prevented.{/color}")
+                log.add_report("{color=[c_green]}安全警报！暴乱被制止。{/color}")
 
             elif guard_defense + MC_defense >= _min:
 
                 dirt = brothel.change_dirt(25 * game.chapter)
                 rep = brothel.change_rep(-10 * game.chapter)
 
-                sec_text += ("\nChaos and confusion ensued as your guards joined the fray. Thankfully, after an hour of fighting and with great difficulty, they managed to protect your girls and quell the riot.\n"
-                             + event_color["a little bad"] % ("Unfortunately, the brothel is now littered with trash (+" + str_int(dirt) + " dirt) and has lost " + str_int(rep) + " reputation."))
+                sec_text += ("\n当你的保安们开始加入战斗时，混乱随之而来。谢天谢地，在经过一个小时艰苦乱战之后，他们设法保护了你的女孩们，平息了暴乱。\n"
+                             + event_color["a little bad"] % ("很遗憾, 青楼现在到处都是垃圾 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声."))
 
-                log.add_report("{color=[c_red]}Security alert! +" + str_int(dirt) + " dirt, -" + str(rep) + " reputation.{/color}")
+                log.add_report("{color=[c_red]}安全警报！ +" + str_int(dirt) + " 污垢, -" + str(rep) + " 青楼名声.{/color}")
 
             else:
                 dirt = brothel.change_dirt(50 * game.chapter)
@@ -1502,11 +1502,11 @@ init -3 python:
                     girl.fear += 10
 
                 sec_char = security_breach
-                sec_text += (" The rioting customers overwhelmed your security guards and started looting your brothel's supplies and assaulting your girls.\n"
-                             + event_color["bad"] % (and_text([g.fullname for g in hurt_girls]) + " were hurt.\n")
-                             + event_color["bad"] % ("The brothel is just one big mess (+" + str_int(dirt) + " dirt) and has lost " + str_int(rep) + " reputation."))
+                sec_text += (" 暴动的客人压制了你的保安，开始抢劫你青楼，攻击你的女孩。\n"
+                             + event_color["bad"] % (and_text([g.fullname for g in hurt_girls]) + "受伤了。\n")
+                             + event_color["bad"] % ("青楼乱得像一团乱麻 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声."))
 
-                log.add_report("{color=[c_red]}Security alert! +" + str_int(dirt) + " dirt, -" + str_int(rep) + " reputation, " + and_text([g.fullname for g in hurt_girls]) + " were hurt.{/color}")
+                log.add_report("{color=[c_red]}安全警报！+" + str_int(dirt) + " 污垢，-" + str_int(rep) + " 名声，" + and_text([g.fullname for g in hurt_girls]) + "受伤了。{/color}")
 
             brothel.alert_level = 1
             brothel.threat = 0
@@ -1520,7 +1520,7 @@ init -3 python:
             game.track("security event", -1)
             sec_sound = s_chimes
             sec_pic = "backgrounds/castle night.webp"
-            sec_text = "It is a quiet, cloudless night out there. You feel as if your troubles are lifting.\nThe threat to [brothel.name] has decreased."
+            sec_text = "外面是一个宁静无云的夜晚。你觉得你的麻烦好像在减少。\n针对[brothel.name]的威胁降低了。"
 
             if brothel.alert_level == 1:
                 brothel.threat -= 10
@@ -1535,40 +1535,40 @@ init -3 python:
             game.track("security event", -1)
             sec_sound = s_mystery
             sec_pic = "events/" + rand_choice(security_pics["alert"])
-            sec_text = rand_choice(["You hear disturbing whispers among the customers, ", "There are rumors of ill-intent towards you and your brothel, ", "Your guards have brought some rather disturbing reports, ", "You can feel electricity in the night's air, ", "Even as the customers pour in, the neighbourhood is eerily quiet, "])
+            sec_text = rand_choice(["你听到顾客间令人不安的窃窃私语，", "有谣言说你和你的青楼居心不良，", "你的保安带来了一些令人不安的消息，", "你能感觉到夜晚空气中的紧张情绪，", "即使顾客蜂拥而至，附近也异常安静，"])
 
-            sec_text += rand_choice(MC.filter_say(["wa: and your sword arm is twitchy. ", "wi: and you can read bad omens in the night skies. ", "tr: and you can't help but feel like you are being crossed. ", "ar: and no amount of praying to Arios seems to put your mind at ease. ", "sh: and you wonder if Shalia might favor your enemies this time. ", "ng: and you smell the stench of death in the night. "]))
+            sec_text += rand_choice(MC.filter_say(["wa: 你平时握剑的手在轻轻抽搐。", "wi: 你可以在夜空中看到不好的预兆。", "tr: 你情不自禁地觉得自己被欺骗了。", "ar: 对阿里奥斯再多的祈祷也不能让你安心。", "sh: 你想知道莎莉娅这次会不会偏袒你的敌人。", "ng: 你闻到了死亡的恶臭。"]))
             sec_text += rand_choice(["Something is afoot.", "Someone is plotting against you.", "Danger is coming.", "Dark forces are at work, unseen..."])
 
             brothel.alert_level += 1
 
-            log.add_report("{color=[c_red]}Security alert! Brothel alert level increased.{/color}")
+            log.add_report("{color=[c_red]}安全警报！青楼的威胁级别提高。{/color}")
 
         elif ev_type == "escalate":
             game.track("security event", -1)
             sec_char = security_breach
 
-            sec_text += "As you come out of the brothel to " + rand_choice(["breathe some fresh air", "check the perimeter", "take a leak", "watch the storm", "watch the night skies"]) + ", you notice something odd.\n"
+            sec_text += "当你从青楼出来" + rand_choice(["呼吸新鲜空气", "检查周边", "嘘嘘", "看到风暴正袭来", "仰望夜空"]) + "的时候，你注意到一些奇怪的东西。\n"
 
             if brothel.alert_level == 1:
                 sec_pic = "events/" + rand_choice(security_pics["hood"])
                 sec_sound = s_wolf
-                sec_text += ("A hooded silhouette is standing in the distance, watching your brothel, unmoving. " + rand_choice(["You hail it, but it ", "You start approaching it, but it ", "You try to get a better look at it, but it notices you and "])
-                             + "disappears into the night.")
+                sec_text += ("一个蒙面的身影站在远处，看着你的青楼，一动不动。" + rand_choice(["你喊了它一声，它就转身", "你开始接近它，但是它马上就", "你试图看得更清楚，但它注意到你并转身"])
+                             + "消失在黑夜里。")
                 brothel.threat += 5
 
             else:
                 sec_pic = "events/" + rand_choice(security_pics["dark street"])
                 sec_sound = s_wolf
-                sec_text += ("An inert body is lying on the pavement. You flip it around, and recognize one of your guards, " + rand_choice(["a dagger stuck inside his neck.", "a shuriken protruding from his forehead.", "a knife lodged between his shoulders.", "his face grinning in a mortal rictus caused by an unknown poison", "his body charred by a nasty spell", "his face blue from suffocating with a grocery bag placed over his head", "his head split open with a candlestick, in the library."])
-                             + "The poor henchman is stone-cold dead. You will have him replaced by tomorrow, of course, but you wonder what evil is afoot.")
+                sec_text += ("一具冰冷的尸体倒在墙边边. 你把它翻过来，认出他是你的一位保安，" + rand_choice(["一把匕首插在他的脖子上。", "一个手里剑从他的前额冒出头来。", "一把刀夹在他的肩膀之间。", "他的脸在一个未知的毒药引起的致命效果之下咧着嘴笑。", "他的身体被恶毒的咒语烧焦了", "他头上套着一个购物袋，脸因窒息而发青。", "他的头被图书馆里的烛台给开瓢了。"])
+                             + "那个可怜的保安冻死了。当然，明天你就会找人替换他，但你不知道邪恶到底酝酿着什么。")
                 brothel.threat += 10
 
-            sec_text += "This is a bad sign of things to come. " + event_color["bad"] % "The {b}threat{/b} to [brothel.name] has escalated."
+            sec_text += "这是个不祥之兆。" + event_color["bad"] % "[brothel.name]的{b}威胁{/b}等级已经提高了。"
 
             brothel.alert_level += 1
 
-            log.add_report("{color=[c_red]}Security alert! Brothel alert level and threat increased.{/color}")
+            log.add_report("{color=[c_red]}安全警报！青楼的威胁级别提高。{/color}")
 
         if lost_gold:
             MC.gold -= lost_gold
@@ -1601,7 +1601,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
         try:
             k = girl.kidnapper
         except:
-            girl.kidnapper = "rogue mercenaries"
+            girl.kidnapper = "流浪佣兵"
 
     play music m_tavern fadein 3.0
 
@@ -1648,7 +1648,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
                 man "Well... You know where to find me."
 
             "Forget it ([girl.fullname] will be lost forever)":
-                $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
+                $ MC.rand_say(["gd: 我很伤心，我永远失去了" + girl.name + "，我真希望她没事。", "ne: " + girl.fullname + "？已经过去了，我希望她，额，没事……", "ev: 她太弱了，活该被抓。也许她会解脱自己的，这已经不是我的事了。"])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
 
@@ -1678,7 +1678,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
                 man "Well... You know where to find me."
 
             "Forget it ([girl.fullname] will be lost forever)":
-                $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
+                $ MC.rand_say(["gd: 我很伤心，我永远失去了" + girl.name + "，我真希望她没事。", "ne: " + girl.fullname + "？已经过去了，我希望她，额，没事……", "ev: 她太弱了，活该被抓。也许她会解脱自己的，这已经不是我的事了。"])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
 
@@ -1780,7 +1780,7 @@ label kidnap_rescue(girl):
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Force the door open", "force", selected_district.rank + 6), ("Unlock with magic", "detect", selected_district.rank+6)], cancel=("Come back later", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("用力推开门", "force", selected_district.rank + 6), ("用魔法开锁", "detect", selected_district.rank+6)], cancel=("稍后再来", False))
     hide screen tool
 
     $ renpy.block_rollback()
