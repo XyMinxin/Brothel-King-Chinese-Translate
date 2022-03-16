@@ -251,7 +251,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             $ lost_gold = int(MC.gold * 0.15)
             $ MC.gold -= lost_gold
-            $ text1 = "当你昏倒的时候, [attackers]洗劫了你的青楼, {color=[c_red]}抢走了 [lost_gold] 金币.{/color} "
+            $ text1 = "当你昏倒的时候, [attackers]洗劫了你的青楼, {color=[c_red]}抢走了 [lost_gold] 金币。{/color} "
 
         python:
 
@@ -281,14 +281,14 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             if len(hurt_girls) > 1:
                 text1 += and_text([g.fullname for g in defended_girls]) + "受伤了。\n"
-                log.add_report("{color=[c_red]}安全警报！ " + and_text([g.fullname for g in defended_girls]) + "受伤了。{/color}")
+                log.add_report("{color=[c_red]}安全警报！" + and_text([g.fullname for g in defended_girls]) + "受伤了。{/color}")
             elif len(hurt_girls) > 0:
                 text1 += hurt_girls[0].fullname + "受伤了。\n"
-                log.add_report("{color=[c_red]}安全警报！ " + hurt_girls[0].fullname + "受伤了。{/color}")
+                log.add_report("{color=[c_red]}安全警报！" + hurt_girls[0].fullname + "受伤了。{/color}")
 
             if kidnapped_girls:
-                text1 += "{b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}"
-                log.add_report("{color=[c_red]}安全警报！ {b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}{/color}")
+                text1 += "{b}" + kidnapped_girls[0].fullname + "被绑架了！{/b}"
+                log.add_report("{color=[c_red]}安全警报！{b}" + kidnapped_girls[0].fullname + "被绑架了！{/b}{/color}")
 
         hide screen show_event
         scene black
@@ -345,7 +345,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             enemy_factor = 1.0
 
 
-        $ log.add_report("{color=[c_red]}安全警报！ " + str(enemies) +  "名佣兵在一名" + enemy_g + "的带领下包围了青楼.{/color}")
+        $ log.add_report("{color=[c_red]}安全警报！" + str(enemies) +  "名佣兵在一名" + enemy_g + "的带领下包围了青楼。{/color}")
 
         show expression bg_bro at top
 
@@ -483,7 +483,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             with vpunch
 
-            $ renpy.say(security_breach, rand_choice(["有一枚榴弹你的队伍中爆炸，炸伤了 [damage] 个人.", "火雨向你的队伍倾盆而下，造成 [damage] 人受伤.", "炮弹炸死了 [damage] 个保安.", "一块巨大的石头砸到了你的队伍中，造成 [damage] 人受伤."]))
+            $ renpy.say(security_breach, rand_choice(["有一枚榴弹你的队伍中爆炸，炸伤了 [damage] 个人。", "火雨向你的队伍倾盆而下，造成 [damage] 人受伤。", "炮弹炸死了 [damage] 个保安。", "一块巨大的石头砸到了你的队伍中，造成 [damage] 人受伤。"]))
 
         # Enemy charge
 
@@ -697,7 +697,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ MC.gold += loot
             $ ("You let the surviving guards loot the battlefield, getting your share of " + event_color["good"] % "[loot] gold" + ".")
 
-            $ log.add_report("{color=[c_green]}战果: 获得 " + str_int(loot) + " 金币.{/color}")
+            $ log.add_report("{color=[c_green]}战果：获得 " + str_int(loot) + " 金币。{/color}")
 
             if general_defeats > 0:
                 $ it = get_rand_item("rare")
@@ -707,7 +707,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "Your men found something [enemy_general.fullname], the enemy general left behind. You have received [item_name]."
                 $ MC.items.append(it)
 
-                $ log.add_report("{color=[c_green]}战果: 获得" + it.name + ".{/color}")
+                $ log.add_report("{color=[c_green]}战果：获得" + it.name + "。{/color}")
 
         else:
             # Round 2 is inside the brothel
@@ -722,7 +722,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ random.shuffle(fighting_girls)
             $ girl_def_bonus = 0
 
-            $ security("{b}战役第四阶段{/b}\n剩下 [enemies] 个敌人在你的门前! 你正遭受" + event_color["bad"] % "{b}战斗疲劳{/b}" + "的折磨, [fatigue]能暂时降低你的所有技能. What do you do?")
+            $ security("{b}战役第四阶段{/b}\n剩下 [enemies] 个敌人在你的门前！你正遭受" + event_color["bad"] % "{b}战斗疲劳{/b}" + "的折磨，[fatigue]能暂时降低你的所有技能。你该怎么做？")
 
             menu:
                 extend ""
@@ -758,7 +758,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)":
                     $ renpy.block_rollback()
                     play sound s_roar
-                    $ MC.rand_say(("振作起来! 敌人就要来了，你知道该怎么办!", "ev: 好了，婊子们，准备好保卫你们悲惨的生活! 最好不要让我失望!", "gd: 好了，各位，记住你们的训练，不要冒任何不必要的风险!", "ne: 宝贝们，就这样了. 我就指望你了!"))
+                    $ MC.rand_say(("振作起来！敌人就要来了，你知道该怎么办！", "ev: 好了，婊子们，准备好保卫你们悲惨的生活！最好不要让我失望！", "gd: 好了，各位，记住你们的训练，不要冒任何不必要的风险！", "ne: 宝贝们，就这样了。我就指望你了！"))
                     $ r = "rally"
 
                     call challenge(r, game.chapter, bonus=fatigue) from _call_challenge_42
@@ -767,13 +767,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                     if result:
                         $ d = dice(6)
                         if d == 6:
-                            $ narrator("你看着女孩们难以置信. 她们正团结一致地面对敌人，互相支援，眼中闪烁着可怕的光芒. 她们已经准备好了，将竭尽所能地与敌人作战. " + event_color["good"] % "所有女孩+3个人防御.")
+                            $ narrator("你看着女孩们难以置信。她们正团结一致地面对敌人，互相支援，眼中闪烁着可怕的光芒。她们已经准备好了，将竭尽所能地与敌人作战。" + event_color["good"] % "所有女孩+3个人防御。")
                             $ girl_def_bonus += 3
                         elif d > 1:
-                            $ narrator("你的演讲坚定了女孩们的决心. 她们将更加努力地与敌人奋斗. " + event_color["good"] % "所有女孩+2个人防御.")
+                            $ narrator("你的演讲坚定了女孩们的决心。她们将更加努力地与敌人奋斗。" + event_color["good"] % "所有女孩+2个人防御。")
                             $ girl_def_bonus += 2
                         else:
-                            $ narrator("你下达了最后的命令，帮其中一个女孩整了整皮背心，还提醒了一下另一个女孩的站位. 她们是仆人，不是战士，但必须这样做. " + event_color["good"] % "所有女孩+1个人防御.")
+                            $ narrator("你下达了最后的命令，帮其中一个女孩整了整皮背心，还提醒了一下另一个女孩的站位。她们是仆人，不是战士，但必须这样做。" + event_color["good"] % "所有女孩+1个人防御。")
 
 
                 "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
@@ -974,9 +974,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 if enemies:
                     $ dirt = int(brothel.change_dirt(100*enemies))
                     if hurt_girls:
-                        $ security_breach("[enemies] 个敌人打败了你的女孩们. " + event_color["bad"] % and_text(hurt_girls) + "受伤了" + ". 袭击者在离开前放了把火，导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + ".")
+                        $ security_breach("[enemies] 个敌人打败了你的女孩们。" + event_color["bad"] % and_text(hurt_girls) + "受伤了" + "。袭击者在离开前放了把火，导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + "。")
                     else:
-                        $ security_breach("你的女孩们未作抵抗. 袭击者在离开前放了把火, 导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + ".")
+                        $ security_breach("你的女孩们未作抵抗。袭击者在离开前放了把火, 导致青楼" + event_color["bad"] % "严重损坏 (+[dirt] 污垢)" + "。")
 
                     python:
                         burnt_furniture = rand_choice(brothel.furniture, dice(3)+1)
@@ -985,23 +985,23 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             if furn.rank > 0:
                                 brothel.destroy_furniture(furn)
 
-                    $ log.add_report("{color=[c_red]}安全警报！ +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
+                    $ log.add_report("{color=[c_red]}安全警报！+" + str_int(dirt) + " 污垢，" + and_text(hurt_girls) + " 受伤。{/color}")
 
                 else:
                     if hurt_girls:
                         $ dirt = int(brothel.change_dirt(200))
-                        $ security_breach("[enemies] 个敌人攻击你的女孩们. " + event_color["bad"] % and_text(hurt_girls) + "在攻击者撤退之前受伤了" + ". 战斗给你的青楼造成了一些损失 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
-                        $ log.add_report("{color=[c_red]}战果: +" + str_int(dirt) + " 污垢, " + and_text(hurt_girls) + " 受伤.{/color}")
+                        $ security_breach("[enemies] 个敌人攻击你的女孩们. " + event_color["bad"] % and_text(hurt_girls) + "在攻击者撤退之前受伤了" + "。战斗给你的青楼造成了一些损失 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
+                        $ log.add_report("{color=[c_red]}战果：+" + str_int(dirt) + " 污垢，" + and_text(hurt_girls) + " 受伤。{/color}")
 
                     else:
                         $ dirt = int(brothel.change_dirt(100))
                         $ security("你的女孩们竭尽全力保护自己，赶走了 [enemies] 个敌人. 他们试图在离开的时候放火烧你的妓院，造成了一点点伤害 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
-                        $ log.add_report("{color=[c_red]}战果: 没有女孩受伤. +" + str_int(dirt) + " 污垢.{/color}")
+                        $ log.add_report("{color=[c_red]}战果：没有女孩受伤。+" + str_int(dirt) + " 污垢。{/color}")
 
                     $ MC.gold += loot
-                    $ narrator("你和女孩们照料着伤员. 在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品.")
+                    $ narrator("你和女孩们照料着伤员。在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品。")
 
-                    $ log.add_report("{color=[c_green]}战果: " + str_int(loot) + " 金币.{/color}")
+                    $ log.add_report("{color=[c_green]}战果：" + str_int(loot) + " 金币。{/color}")
 
                     if general_defeats > 0:
                         $ it = get_rand_item("rare")
@@ -1012,21 +1012,21 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
                         call receive_item(it) from _call_receive_item_15
 
-                        $ log.add_report("{color=[c_green]}战果: 获得" + it.name + ".{/color}")
+                        $ log.add_report("{color=[c_green]}战果：获得" + it.name + "。{/color}")
 
             else:
                 play sound s_gold
                 $ MC.gold += loot
-                $ narrator("你和女孩们照料着伤员. 在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品.")
+                $ narrator("你和女孩们照料着伤员。在清理完战场后，你得到" + event_color["good"] % " [loot] 金币" + "作为战利品。")
 
-                $ log.add_report("{color=[c_green]}战果: 敌方将领被俘!{/color}")
+                $ log.add_report("{color=[c_green]}战果：敌方将领被俘！{/color}")
 
                 play sound s_success
 
                 "You have captured the enemy general, [enemy_general.fullname]!"
 
                 $ unlock_achievement("general captured")
-                $ log.add_report("{color=[c_green]}安全警报！ " + str_int(loot) + " 金币.{/color}")
+                $ log.add_report("{color=[c_green]}安全警报！" + str_int(loot) + " 金币。{/color}")
 
                 play sound s_surprise
 
@@ -1169,34 +1169,34 @@ init -3 python:
                 sec_pic = "events/" + rand_choice(security_pics["thief defense"])
                 sec_sound = s_surprise
                 bonus_gold = brothel.get_sec_cost()/2
-                sec_text = ("{color=[c_green]}你的卫兵当场抓住了一个小偷!{/color} 他们整晚都在惩罚她.\n"
-                             "他们的心情很好，愿意以平常一半的工资工作({b}" + str_int(bonus_gold) + " 金币{/b}).")
+                sec_text = ("{color=[c_green]}你的卫兵当场抓住了一个小偷！{/color} 他们整晚都在惩罚她。\n"
+                             "他们的心情很好，愿意以平常一半的工资工作({b}" + str_int(bonus_gold) + " 金币{/b})。")
 
-                log.add_report("{color=[c_green]}安全警报！ 没有损失金币. 获得 " + str(bonus_gold) + " 金币.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没有损失金币。获得 " + str(bonus_gold) + " 金币。{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["thief defense"])
                 sec_sound = s_surprise
                 MC.change_prestige(district.rank)
-                sec_text = ("{color=[c_green]}当你在巡逻时，你当场抓住了一个小偷!{/color} 她求你放了她, "
-                                "所以你们达成了协议.\n你让她在地下室'玩'了一晚后离开. 你赢得了{b}声望{/b}.")
+                sec_text = ("{color=[c_green]}当你在巡逻时，你当场抓住了一个小偷！{/color} 她求你放了她, "
+                                "所以你们达成了协议。\n你让她在地下室“玩”了一晚后离开。你赢得了{b}声望{/b}。")
 
-                log.add_report("{color=[c_green]}Security alert! No gold lost. Prestige earned.{/color}")
+                log.add_report("{color=[c_green]}安全警报！小偷造访，没有丢钱。赢得的声望。{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["thief"])
-                sec_text = "{color=[c_lightgreen]}一名" + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷出现了，但你的保安把她赶走了!{/color}你没有损失金钱."
+                sec_text = "{color=[c_lightgreen]}一名" + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷出现了，但你的保安把她赶走了！{/color}你没有损失金钱。"
 
-                log.add_report("{color=[c_green]}安全警报！ 小偷造访，没有丢钱.{/color}")
+                log.add_report("{color=[c_green]}安全警报！小偷造访，没有丢钱。{/color}")
 
             else:
                 sec_char = security_breach
                 sec_pic = "events/" + rand_choice(security_pics["thief"])
                 sec_sound = s_evil_laugh
                 lost_gold = round_int(MC.gold // 20)
-                sec_text = ("{color=[c_red]}A " + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷潜入了你的青楼并偷走了 {b}" + str_int(lost_gold) + "{/b} 金币!{/color}")
+                sec_text = ("{color=[c_red]}一名" + rand_choice(["大胆的", "鬼鬼祟祟的", "卑鄙的", "臭名昭著的", "娴熟的"]) + "小偷潜入了你的青楼并偷走了 {b}" + str_int(lost_gold) + "{/b} 金币！{/color}")
 
-                log.add_report("{color=[c_red]}安全警报！ 小偷造访，损失 " + str(lost_gold) + " 金币.{/color}")
+                log.add_report("{color=[c_red]}安全警报！小偷造访，损失 " + str(lost_gold) + " 金币。{/color}")
 
             brothel.threat = 0
 
@@ -1209,9 +1209,9 @@ init -3 python:
                 sec_sound = s_clash
                 for girl in working_girls:
                     girl.change_fear(-1)
-                sec_text = "{color=[c_green]}你的一个守卫杀死了一只潜伏在黑暗角落里的怪物.{/color}\n你的女孩们放心了."
+                sec_text = "{color=[c_green]}你的一个守卫杀死了一只潜伏在黑暗角落里的怪物。{/color}\n你的女孩们放心了。"
 
-                log.add_report("{color=[c_green]}安全警报！ 没有人受伤. 恐惧降低.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没有人受伤。恐惧降低。{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["sword defense"])
@@ -1219,15 +1219,15 @@ init -3 python:
                 for girl in working_girls:
                     girl.change_love(1)
                 sec_text = ("{color=[c_green]}一个怪物从黑暗的角落里向你的女孩们扑来!{/color} 你快速的战斗反应救了你. "
-                                "怪物毫无生气地躺在你的脚下. 女孩们印象深刻.")
+                                "怪物毫无生气地躺在你的脚下。女孩们印象深刻。")
 
-                log.add_report("{color=[c_green]}安全警报！ 没人受伤. 爱情提高.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没人受伤。爱情提高。{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["monster defense"])
-                sec_text = "{color=[c_lightgreen]}" + rand_choice(["一个卑鄙的", "一个丑陋的", "一个肮脏的", "一个猥亵的", "一个惊慌的", "一个恶心的"]) + "怪物从阴影中爬了进来，但你的卫兵把它赶走了!{/color} 幸运的是，没有人受伤."
+                sec_text = "{color=[c_lightgreen]}" + rand_choice(["一个卑鄙的", "一个丑陋的", "一个肮脏的", "一个猥亵的", "一个惊慌的", "一个恶心的"]) + "怪物从阴影中爬了进来，但你的卫兵把它赶走了！{/color} 幸运的是，没有人受伤。"
 
-                log.add_report("{color=[c_green]}安全警报！ 没人受伤.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没人受伤。{/color}")
 
             else:
                 girl = rand_choice([g for g in MC.girls])
@@ -1239,9 +1239,9 @@ init -3 python:
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_spell
                     sec_with = vpunch
-                    sec_text += "并攻击了" + girl.fullname + "{/color}, 但是{color=[c_lightgreen]}一个{b}魔法盾{/b}保护了她免受伤害{/color}，最后怪物跑开了."
+                    sec_text += "并攻击了" + girl.fullname + "{/color}，但是{color=[c_lightgreen]}一个{b}魔法盾{/b}保护了她免受伤害{/color}，最后怪物跑开了。"
 
-                    log.add_report("{color=[c_green]}安全警报！ 魔法盾保护了" + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！魔法盾保护了" + girl.fullname + "。{/color}")
 
                 elif girl.get_defense() >= game.chapter:
                     sec_pic = girl.get_pic("fight", naked_filter=True, soft=True, strict=True)
@@ -1252,9 +1252,9 @@ init -3 python:
                         if not sec_pic:
                             sec_pic = "events/" + rand_choice(security_pics["default girl fight"])
 
-                    sec_text += "并攻击了" + girl.fullname + "{/color}, 只是\n" + event_color["good"] % rand_choice(["她一脚踢到那只浑身鳞片家伙的屁股，把它打发走了.", "她早就做好了自卫准备，最后她把它宰了.", "她的战斗训练得到了回报.", "她拿出早已准备好的武器，把它吓跑了.", "她把它伤得很重，它最终还是跑掉了."])
+                    sec_text += "并攻击了" + girl.fullname + "{/color}，只是\n" + event_color["good"] % rand_choice(["她一脚踢到那只浑身鳞片家伙的屁股，把它打发走了。", "她早就做好了自卫准备，最后她把它宰了。", "她的战斗训练得到了回报。", "她拿出早已准备好的武器，把它吓跑了。", "她把它伤得很重，它最终还是跑掉了。"])
 
-                    log.add_report("{color=[c_green]}安全警报！ "+ girl.fullname + " 保护了她自己.{/color}")
+                    log.add_report("{color=[c_green]}安全警报！"+ girl.fullname + " 保护了她自己。{/color}")
 
                 else:
                     if is_censored("monster"):
@@ -1265,16 +1265,16 @@ init -3 python:
                         sec_pic = "events/" + rand_choice(security_pics["monster rape"])
                     sec_sound = s_roar
                     sec_with = vpunch
-                    sec_text += " and raped " + girl.fullname + ". {/color}\n你设法把它赶走了，但女孩们吓坏了."
+                    sec_text += "并且强奸了" + girl.fullname + ". {/color}\n你设法把它赶走了，但女孩们吓坏了。"
 
                     girl.change_fear(10)
                     girl.get_hurt(dice(3)+2)
 
                     if girl.hurt > 0:
                         girl.track_event("hurt", arg="邪恶的怪物.")
-                        log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "受伤了。{/color}")
+                        log.add_report("{color=[c_red]}安全警报！" + girl.fullname + "受伤了。{/color}")
                     else:
-                        log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "被强暴了.{/color}")
+                        log.add_report("{color=[c_red]}安全警报！" + girl.fullname + "被强暴了。{/color}")
 
             brothel.threat = 0
 
@@ -1295,7 +1295,7 @@ init -3 python:
                 sec_sound = s_clash
                 sec_text += event_color["good"] % "幸运的是，你的保安在身边，迫使这个家伙逃跑了. "
 
-                log.add_report("{color=[c_green]}安全警报！ 没有人受伤.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
 
             elif guard_defense + MC_defense >= _max:
                 if MC.playerclass == "Warrior":
@@ -1309,9 +1309,9 @@ init -3 python:
                     sec_sound = s_roar
 
                 sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命! "
-                           + event_color["good"] % rand_choice(MC.filter_say(["wa: 幸运的是，你就在她身边，及时带她躲过了袭击，用眼镜蛇一样的反应及时拔出你的剑.", "wi: 幸运的是，你在最后一秒用魔法盾挡住了攻击.", "tr: 幸运的是，你的宠物龙卓耿嗅到了这个混蛋的味道，在他有机会攻击之前，它咆哮着冲向他."])) + " 刺客逃走了.")
+                           + event_color["good"] % rand_choice(MC.filter_say(["wa: 幸运的是，你就在她身边，及时带她躲过了袭击，用眼镜蛇一样的反应及时拔出你的剑。", "wi: 幸运的是，你在最后一秒用魔法盾挡住了攻击。", "tr: 幸运的是，你的宠物龙卓耿嗅到了这个混蛋的味道，在他有机会攻击之前，它咆哮着冲向他。"])) + " 刺客逃走了。")
 
-                log.add_report("{color=[c_green]}安全警报！ 没有人受伤.{/color}")
+                log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
 
             elif guard_defense + MC_defense >= _min:
                 sec_pic = "events/" + rand_choice(security_pics["assassin"])
@@ -1320,10 +1320,10 @@ init -3 python:
 
                 lost_gold = (99 + dice(101)) * game.chapter
 
-                sec_text += (event_color["a little good"] % "幸运的是，你的保安就在身边. " + "一名保安不顾安危全力保护了她.\n"
-                            + rand_choice(["你奖励了这名勇敢的保安 " + str(lost_gold) + " 金币.", "你为他的家庭支付一笔抚恤金 " + str(lost_gold) + " 金币来感谢他的忠诚服务.", "你为这名勇敢的保安支付了 " + str(lost_gold) + " 金币的治疗费用."]))
+                sec_text += (event_color["a little good"] % "幸运的是，你的保安就在身边. " + "一名保安不顾安危全力保护了她。\n"
+                            + rand_choice(["你奖励了这名勇敢的保安 " + str(lost_gold) + " 金币。", "你为他的家庭支付一笔抚恤金 " + str(lost_gold) + " 金币来感谢他的忠诚服务。", "你为这名勇敢的保安支付了 " + str(lost_gold) + " 金币的治疗费用。"]))
 
-                log.add_report("{color=[c_red]}安全警报！ 损失了 " + str(lost_gold) + " 金币.{/color}")
+                log.add_report("{color=[c_red]}安全警报！损失了 " + str(lost_gold) + " 金币。{/color}")
 
             else:
                 sec_char = security_breach
@@ -1332,17 +1332,17 @@ init -3 python:
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_spell
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她受到了{b}魔法盾{/b}的保护而避免了伤害."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她受到了{b}魔法盾{/b}的保护而避免了伤害。"
 
-                    log.add_report("{color=[c_green]}安全警报！ 魔法盾保护了" + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！魔法盾保护了" + girl.fullname + "。{/color}")
 
                 elif girl.get_effect("special", "immune"):
                     sec_pic = "events/" + rand_choice(security_pics["girl shield"])
                     sec_sound = s_fizzle
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她对物理伤害有{b}免疫{/b}，没有受到伤害."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n幸运的是，她对物理伤害有{b}免疫{/b}，没有受到伤害。"
 
-                    log.add_report("{color=[c_green]}安全警报！ 免疫保护了" + girl.fullname + ".{/color}")
+                    log.add_report("{color=[c_green]}安全警报！免疫保护了" + girl.fullname + "。{/color}")
 
                 elif girl.get_defense() >= district.rank*2:
                     sec_pic = girl.get_pic("fight", naked_filter=True, soft=True, strict=True)
@@ -1353,9 +1353,9 @@ init -3 python:
 
                     sec_sound = s_clash
                     sec_with = vpunch
-                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n你的女孩用她的武器保护了自己，毫发无损地逃脱了."
+                    sec_text = event_color["bad"] % sec_text + event_color["a little good"] % "\n你的女孩用她的武器保护了自己，毫发无损地逃脱了。"
 
-                    log.add_report("{color=[c_green]}安全警报！ " + girl.fullname + "保护了她自己.{/color}")
+                    log.add_report("{color=[c_green]}安全警报！" + girl.fullname + "保护了她自己。{/color}")
 
                 else:
                     sec_pic = girl.get_pic("hurt", not_tags=["rest"], naked_filter=True, soft=True, strict=True)
@@ -1366,7 +1366,7 @@ init -3 python:
                     sec_sound = s_woman_scream
                     sec_with = vpunch
 
-                    sec_text = event_color["bad"] % sec_text + "\n" + rand_choice(["她只被刺客的匕首擦伤，但很快就失去了知觉.", "她的胳膊被击中了，一直流血，看起来还有点发烧.", "她的大腿被割伤了，非常疼.", "她在胸前中一支飞镖，你担心她可能会中毒."])
+                    sec_text = event_color["bad"] % sec_text + "\n" + rand_choice(["她只被刺客的匕首擦伤，但很快就失去了知觉。", "她的胳膊被击中了，一直流血，看起来还有点发烧。", "她的大腿被割伤了，非常疼。", "她在胸前中一支飞镖，你担心她可能会中毒。"])
                     sec_text += "\n你把那个失去知觉的女孩带到里面，检查了一下受伤的地方. 看起来没有生命危险，只是伤口渗出了一些绿色物质. "
 
                     ev_list.append(Event(pic = sec_pic, sound = sec_sound, with_st = sec_with, text = sec_text, changes = "", type ="Health/Security"))
@@ -1426,7 +1426,7 @@ init -3 python:
                         if girl.preferences["naked"] < 200:
                             girl.preferences["naked"] = 200
 
-                    log.add_report("{color=[c_red]}安全警报！ " + girl.fullname + "受伤了。{/color}")
+                    log.add_report("{color=[c_red]}安全警报！" + girl.fullname + "受伤了。{/color}")
 
             brothel.alert_level = 1
             brothel.threat = 0
@@ -1486,9 +1486,9 @@ init -3 python:
                 rep = brothel.change_rep(-10 * game.chapter)
 
                 sec_text += ("\n当你的保安们开始加入战斗时，混乱随之而来。谢天谢地，在经过一个小时艰苦乱战之后，他们设法保护了你的女孩们，平息了暴乱。\n"
-                             + event_color["a little bad"] % ("很遗憾, 青楼现在到处都是垃圾 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声."))
+                             + event_color["a little bad"] % ("很遗憾, 青楼现在到处都是垃圾 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声。"))
 
-                log.add_report("{color=[c_red]}安全警报！ +" + str_int(dirt) + " 污垢, -" + str(rep) + " 青楼名声.{/color}")
+                log.add_report("{color=[c_red]}安全警报！+" + str_int(dirt) + " 污垢，-" + str(rep) + " 青楼名声。{/color}")
 
             else:
                 dirt = brothel.change_dirt(50 * game.chapter)
@@ -1504,7 +1504,7 @@ init -3 python:
                 sec_char = security_breach
                 sec_text += (" 暴动的客人压制了你的保安，开始抢劫你青楼，攻击你的女孩。\n"
                              + event_color["bad"] % (and_text([g.fullname for g in hurt_girls]) + "受伤了。\n")
-                             + event_color["bad"] % ("青楼乱得像一团乱麻 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声."))
+                             + event_color["bad"] % ("青楼乱得像一团乱麻 (+" + str_int(dirt) + " 污垢) 并且还损失了 " + str_int(rep) + " 名声。"))
 
                 log.add_report("{color=[c_red]}安全警报！+" + str_int(dirt) + " 污垢，-" + str_int(rep) + " 名声，" + and_text([g.fullname for g in hurt_girls]) + "受伤了。{/color}")
 
@@ -1538,7 +1538,7 @@ init -3 python:
             sec_text = rand_choice(["你听到顾客间令人不安的窃窃私语，", "有谣言说你和你的青楼居心不良，", "你的保安带来了一些令人不安的消息，", "你能感觉到夜晚空气中的紧张情绪，", "即使顾客蜂拥而至，附近也异常安静，"])
 
             sec_text += rand_choice(MC.filter_say(["wa: 你平时握剑的手在轻轻抽搐。", "wi: 你可以在夜空中看到不好的预兆。", "tr: 你情不自禁地觉得自己被欺骗了。", "ar: 对阿里奥斯再多的祈祷也不能让你安心。", "sh: 你想知道莎莉娅这次会不会偏袒你的敌人。", "ng: 你闻到了死亡的恶臭。"]))
-            sec_text += rand_choice(["Something is afoot.", "Someone is plotting against you.", "Danger is coming.", "Dark forces are at work, unseen..."])
+            sec_text += rand_choice(["某些事情正在酝酿之中。", "有人在密谋对你不利。", "危险来了。", "看不见黑暗力量在起作用……"])
 
             brothel.alert_level += 1
 
