@@ -1986,7 +1986,7 @@ init -2 python:
         def get_hurt(self, x):
 
             if self.get_effect("special", "immune"):
-                renpy.notify("\n%s is immune to getting hurt." % self.name)
+                renpy.notify("\n%s对受伤免疫。" % self.name)
                 return
 
             self.hurt += round(x * self.get_effect("boost", "hurt") + self.get_effect("change", "hurt") - self.get_effect("resist", "hurt"))

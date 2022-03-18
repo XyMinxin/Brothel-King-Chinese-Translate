@@ -4165,7 +4165,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         vbox spacing 3:
                                             for girl in [g for g in girls if g.job == job]:
                                                 hbox ysize 25 yalign 0.5:
-                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + girl_related_dict[girl.job.capitalize()] + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
+                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize 45 yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + girl_related_dict[girl.job.capitalize()] + " (能力: %s/%s){/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
                                                         add girl.portrait.get(25, 25) xalign 0.5 yalign 0.5
 
                                                     frame ysize 25 ymargin 0 ypadding 1 background c_ui_brown xfill True:

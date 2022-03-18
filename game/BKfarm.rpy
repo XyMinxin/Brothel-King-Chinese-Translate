@@ -903,9 +903,9 @@ init -2 python:
 
                 if stat not in ("mood", "fear", "love"):
                     if changes[stat] > 0:
-                        text_changes += stat_increase_dict["stat"] % (stat.capitalize(), str(round_int(changes[stat])))
+                        text_changes += stat_increase_dict["stat"] % (girl_related_dict[stat.capitalize()], str(round_int(changes[stat])))
                     elif changes[stat] < 0:
-                        text_changes += stat_increase_dict["stat_neg"] % (stat.capitalize(), str(round_int(changes[stat])))
+                        text_changes += stat_increase_dict["stat_neg"] % (girl_related_dict[stat.capitalize()], str(round_int(changes[stat])))
 
             return text_changes
 

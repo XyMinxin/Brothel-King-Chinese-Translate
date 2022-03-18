@@ -877,10 +877,10 @@ init -3 python:
 
             else:
                 if nb > 0:
-                    text_changes += stat_increase_dict["stat"] % (stat.capitalize(), str(round_int(nb)))
+                    text_changes += stat_increase_dict["stat"] % (stat_name_dict[stat.capitalize()], str(round_int(nb)))
 
                 else:
-                    text_changes += stat_increase_dict["stat_neg"] % (stat.capitalize(), str(round_int(nb)))
+                    text_changes += stat_increase_dict["stat_neg"] % (stat_name_dict[stat.capitalize()], str(round_int(nb)))
 
         return text_changes
 
@@ -2039,7 +2039,7 @@ init -3 python:
 
         # Compose right text (changes)
 
-        text_changes = "难度:\n" + cust_diff_description(cust_diff)
+        text_changes = "难度: " + cust_diff_description(cust_diff)
         text_changes += "\n\n掷骰: " + "{image=" + "img_dice" + str(d) + "}"
         if "reroll" in specials:
             text_changes += " (Reroll)"
@@ -3555,7 +3555,7 @@ init -3 python:
         elif cust_nb_dict["special"]:
             cust_text += " (+" + str_int(cust_nb_dict["special"]) + " 来自特殊效果)"
 
-        cust_text += ". "
+        cust_text += ""
 
         log.add_report(event_color["good"] % cust_text)
         log.cust = cust_nb
@@ -3571,7 +3571,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + "来到青楼. 他希望得到一个" + girl_related_dict[c.wants_entertainment] + "并且喜欢" + girl_related_dict[c.wants_sex_act] + "的女孩。")
+            log.add_report(c.name + "来到青楼。他希望得到一个" + girl_related_dict[c.wants_entertainment] + "并且喜欢" + girl_related_dict[c.wants_sex_act] + "的女孩。")
 
         return cust_list, cust_text
 
