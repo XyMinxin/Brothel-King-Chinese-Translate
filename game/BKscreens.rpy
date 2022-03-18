@@ -6295,9 +6295,9 @@ screen personality_screen():
         if selected_girl:
 
             hbox xalign 0.5 xfill True:
-                textbutton "个性. " text_size 18 hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
+                textbutton "个性" text_size 18 hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
                 textbutton "品味" text_size 18 hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
-                textbutton "性趣. " text_size 18 hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
+                textbutton "性趣" text_size 18 hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
                 textbutton "事件" text_size 18 hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
 
             hbox spacing 20:

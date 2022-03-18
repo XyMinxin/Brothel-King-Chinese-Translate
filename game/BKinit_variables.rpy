@@ -1458,13 +1458,13 @@ init python:
 
     fix_description = {
                        "public acts description" : "在公共场合做",
-                       "public acts action" : "在公开场合做",
+                       "public acts action" : "进行公开play",
                        "public acts intro" : "你把青楼里的所有人都叫来：女孩、帮手、路人...... 你告诉%s，她必须在公开场合做.",
                        "public acts pos_reaction" : "她脸红了，你可以看到她的乳头在她的上衣下微微颤动. 一想到要在公共场合做，她就兴奋不已.",
                        "public acts neg_reaction" : "她愤愤不平，抱怨说被人们看着时，她什么也做不了. 你无视了她的抱怨.",
 
                        "cosplay description" : "穿上性感暴露的cosplay服装",
-                       "cosplay action" : "穿着性感的cosplay服装",
+                       "cosplay action" : "穿着cosplay服装",
                        "cosplay intro" : "你让%s选择她穿的cosplay服装.",
                        "cosplay pos_reaction" : "她咬着嘴唇，看起来很俏皮. 她选择了一件开档露乳，看起来超淫荡的制服.",
                        "cosplay neg_reaction" : "她选择了一套相当保守和乏味的制服. 她不喜欢不得不穿上它.",
@@ -1482,25 +1482,25 @@ init python:
                        "vibrators neg_reaction" : "她用跳蛋时很敏感，极其不舒服，一直在抱怨那感觉怪怪的.",
 
                        "dirty sex description" : "肮脏的性爱",
-                       "dirty sex action" : "直接在地上",
+                       "dirty sex action" : "就地性交",
                        "dirty sex intro" : "你告诉%s让她直接躺在烂泥里，准备接受你的'惩罚'.",
                        "dirty sex pos_reaction" : "她似乎很高兴直接躺在地上，像个下流的婊子.",
                        "dirty sex neg_reaction" : "她讨厌身上沾上灰尘，一直抱怨这样做不健康.",
 
-                       "penis worship description" : "崇拜阴茎，尤其是大屌",
-                       "penis worship action" : "让她揉搓你的阴茎",
+                       "penis worship description" : "崇拜肉棒，尤其是大屌",
+                       "penis worship action" : "服侍肉棒",
                        "penis worship intro" : "你告诉%s她必须在你的阴茎上擦油并给予适当的尊重. .",
                        "penis worship pos_reaction" : "她仔细看了看你那硕大的、跳动的阴茎，似乎很高兴、很兴奋，因为她马上就能和它一起玩. 她轻轻的在上面吻了一下.",
                        "penis worship neg_reaction" : "她把目光从你勃起的大屌上移开，仍然不习惯于直接面对一个男人的阴茎.",
 
                        "bondage description" : "捆绑游戏",
-                       "bondage action" : "绳缚",
+                       "bondage action" : "麻绳束缚",
                        "bondage intro" : "使用粗劣的麻绳加上你作为奴隶主的专业的束缚知识，你将%s绑成一个极度羞耻和尴尬的姿势.",
                        "bondage pos_reaction" : "当你把她捆起来时，她高兴地呻吟着，尤其喜欢那种麻绳摩擦皮肤的感觉.",
                        "bondage neg_reaction" : "当你把她捆起来时，她又哭又闹，看上去非常不舒服.",
 
                        "oil description" : "让身上涂上油",
-                       "oil action" : "涂油",
+                       "oil action" : "精油按摩",
                        "oil intro" : "你给了%s一瓶精油，坚持要她涂满全身.",
                        "oil pos_reaction" : "她在身体的每一个角落都涂上了油，供你取乐，在你的注视下，俏皮地按摩着她晶莹的皮肤.",
                        "oil neg_reaction" : "她对滑溜溜、油乎乎的东西感到不舒服，抱怨说它很臭，感觉很反感.",
@@ -1554,7 +1554,7 @@ init python:
                        "enemas neg_reaction" : "当你把清水灌满她的肚子时，她因羞愧和恐惧而哭泣不止. 她恳求你停下来.",
 
                        "beads description" : "使用肛门拉珠.",
-                       "beads action" : "用肛门拉珠",
+                       "beads action" : "使用肛门拉珠",
                        "beads intro" : "你给%s一条好像巨大珠子串成的项链，并告诉她该怎么用.",
                        "beads pos_reaction" : "她把珠子一个接一个地塞进她的屁眼里，你在看的时候她一直在呻吟，显然很享受.",
                        "beads neg_reaction" : "当她痛苦地往屁股里塞进一两颗珠子的时候，她皱起眉头并轻声抽泣着. 她告诉你她讨厌这样.",
@@ -1566,7 +1566,7 @@ init python:
                        "masturbation neg_reaction" : "她假装在自慰，但其实什么也没做. 她一点也不喜欢这样.",
 
                        "fingering description" : "把手指插进她体内.",
-                       "fingering action" : "用手指插",
+                       "fingering action" : "手指插入",
                        "fingering intro" : "你告诉%s你会把手指放进她体内.",
                        "fingering pos_reaction" : "当你的手指滑入的时候，她的阴道迎合着你的动作，一根，两根，然后三根手指都轻松地放到了里面. 当你加快抽插速度，淫水满覆你的手指时，她高兴地大声呻吟着.",
                        "fingering neg_reaction" : "当你很艰难地把一根手指插进去的时候，她的阴道剧烈收缩似乎想把你的手指挤出去. 眼泪从她脸上流下来：她一点也不喜欢这样.",
@@ -1668,7 +1668,7 @@ init python:
                        "rimming neg_reaction" : "她讨厌这种行为，只是怯懦地舔着你的屁眼. 有点痒痒的，但感觉一点也不好.",
 
                        "fondling her boobs description" : "被抚摸",
-                       "fondling her boobs action" : "抚摸她的胸部",
+                       "fondling her boobs action" : "抚摸胸部",
                        "fondling her boobs intro" : "你抚摸%s的胸部，玩弄她的乳头.",
                        "fondling her boobs pos_reaction" : "她喜欢你捏她的奶子，当你揉搓她勃起的乳头时会发出性感的呻吟.",
                        "fondling her boobs neg_reaction" : "她不喜欢在那里被碰触，紧张的情绪使训练变得不那么愉快.",

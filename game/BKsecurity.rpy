@@ -80,7 +80,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             menu_list = [["选择一个女孩来保护", None]]
 
             for girl in target_girls:
-                menu_list.append([girl.fullname.capitalize() + ", 等级 " + str(girl.level) + ", 防御 " + str_int(girl.get_defense()), girl])
+                menu_list.append([girl.fullname.capitalize() + "，等级 " + str(girl.level) + "，防御 " + str_int(girl.get_defense()), girl])
 
         $ girl = menu(menu_list)
 
@@ -389,7 +389,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             "Lead from behind (use Charisma to improve your troops' morale)":
                 $ renpy.block_rollback()
                 play sound s_sheath
-                $ MC.rand_say(["ev: 伙计们，准备好！！！！我们将在他们站立的地方屠杀他们！", "gd: 兄弟姐妹们! 我们没有选择挑起这场战争，但我们一定会结束它!", "ne: 伙计们，跟他们好好怼，努力战斗! 成为你所在街区第一个被公认的杀人王!"])
+                $ MC.rand_say(["ev: 伙计们，准备好！！！！我们将在他们站立的地方屠杀他们！", "gd: 兄弟姐妹们！ 我们没有选择挑起这场战争，但我们一定会结束它！", "ne: 伙计们，跟他们好好怼，努力战斗！ 成为你所在街区第一个被公认的杀人王！"])
                 $ r = "rally"
 
                 call challenge(r, game.chapter) from _call_challenge_36
@@ -1218,7 +1218,7 @@ init -3 python:
                 sec_sound = s_clash
                 for girl in working_girls:
                     girl.change_love(1)
-                sec_text = ("{color=[c_green]}一个怪物从黑暗的角落里向你的女孩们扑来!{/color} 你快速的战斗反应救了你. "
+                sec_text = ("{color=[c_green]}一个怪物从黑暗的角落里向你的女孩们扑来！{/color} 你快速的战斗反应救了你. "
                                 "怪物毫无生气地躺在你的脚下。女孩们印象深刻。")
 
                 log.add_report("{color=[c_green]}安全警报！没人受伤。爱情提高。{/color}")
@@ -1265,7 +1265,7 @@ init -3 python:
                         sec_pic = "events/" + rand_choice(security_pics["monster rape"])
                     sec_sound = s_roar
                     sec_with = vpunch
-                    sec_text += "并且强奸了" + girl.fullname + ". {/color}\n你设法把它赶走了，但女孩们吓坏了。"
+                    sec_text += "并且强奸了" + girl.fullname + "。 {/color}\n你设法把它赶走了，但女孩们吓坏了。"
 
                     girl.change_fear(10)
                     girl.get_hurt(dice(3)+2)
@@ -1285,7 +1285,7 @@ init -3 python:
 
             _min, _max = alert_limits2[game.chapter]
 
-            sec_text = "一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命! "
+            sec_text = "一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命！"
 
             renpy.play(s_sheath, "sound")
             renpy.pause(0.5)
@@ -1293,7 +1293,7 @@ init -3 python:
             if guard_defense >= _max:
                 sec_pic = "events/" + rand_choice(security_pics["assassin defense"])
                 sec_sound = s_clash
-                sec_text += event_color["good"] % "幸运的是，你的保安在身边，迫使这个家伙逃跑了. "
+                sec_text += event_color["good"] % "幸运的是，你的保安在身边，迫使这个家伙逃跑了。"
 
                 log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
 
@@ -1308,7 +1308,7 @@ init -3 python:
                     sec_pic = "events/" + rand_choice(security_pics["dragon defense"])
                     sec_sound = s_roar
 
-                sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命! "
+                sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命！"
                            + event_color["good"] % rand_choice(MC.filter_say(["wa: 幸运的是，你就在她身边，及时带她躲过了袭击，用眼镜蛇一样的反应及时拔出你的剑。", "wi: 幸运的是，你在最后一秒用魔法盾挡住了攻击。", "tr: 幸运的是，你的宠物龙卓耿嗅到了这个混蛋的味道，在他有机会攻击之前，它咆哮着冲向他。"])) + " 刺客逃走了。")
 
                 log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
@@ -1379,7 +1379,7 @@ init -3 python:
                     sec_with = fade
 
                     eff, msg = rand_choice([("Beauty", "当她醒来时，她的脸上布满了难看的丘疹。他们应该用正确的药膏，但这要花很长时间才能恢复。\n" + event_color["bad"] % "她受伤需要休息%s天，她的美貌永久性地减少了%s。"),
-                                        ("Body", "你注意到一些令人不安的事情。她的胸部和屁股看起来明显变小了。如此残忍的毒药!诅咒那些混蛋!\n" + event_color["bad"] % "她受伤需要休息%s天，她的身材永久性地减少了%s。"),
+                                        ("Body", "你注意到一些令人不安的事情。她的胸部和屁股看起来明显变小了。如此残忍的毒药！诅咒那些混蛋！\n" + event_color["bad"] % "她受伤需要休息%s天，她的身材永久性地减少了%s。"),
                                         ("Charm", "当她恢复知觉时，她似乎很冷淡，举止怪异，完全不像她自己。\n" + event_color["bad"] % "她受伤需要休息%s天，她的优雅永久性地减少了%s。"),
                                         ("Refinement", "当她最终醒来时，她开始咯咯地笑着看着你，好像她不明白自己的处境。她好像神志不清，表现得很幼稚。\n" + event_color["bad"] % "她受伤需要休息%s天，她的性欲永久性地减少了%s。"),
                                         ("Libido", "当她醒来的时候，她在你身边瑟瑟发抖，口中说着：“我……好……好冷……\n" + event_color["bad"] % "她受伤需要休息%s天，她的性欲永久性地减少了%s。"),
@@ -1388,7 +1388,7 @@ init -3 python:
                                         ("Sensistivity", "当她睁开眼睛时，她轻声说:“主人，我……我的感觉不到我的四肢……”。 她整晚都在与瘫痪作斗争，如果没有希尔的高级炼金术，她可能会变成残废。当她终于能站起来的时候，她仍然感觉麻木。" + event_color["bad"] % "她受伤需要休息%s天，她的敏感永久性地减少了%s。"),
                                         ("libido+", "当她醒来时，她看起来有点发烧，眼睛里有一种奇怪的神情。“主人……过来……”她低声说。当你靠近她的床时，她抓住你的肉棒，开始爱抚它。“主人的肉棒……Aaah……”她呻吟道。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，神奇的是" + event_color["good"] % "她的性欲反而永久性地增长了%s。" + " 你在想你是不是应该感谢一下那位神秘的爱之忍者。"),
                                         ("personality", "当她终于起床时，她看起来完全变了个人。“你是谁？”。她好像撞到了头什么的。\n" + event_color["average"] % "她受伤需要休息%s天，她的{b}品味{/b}发生了改变。她的{b}喜好{/b}和{b}憎恶{/b}已经重置。"),
-                                        ("naked", "过了一会儿，她睁开眼睛，慢慢地恢复了知觉。 突然，她尖叫了一声，把床单扔到了一边。 “不!它灼伤了我的皮肤!”,她喊道。看来她对任何布料都有恐惧症。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，而且" + event_color["good"] % "%s。" + "你估计情况有可能会更糟。"),
+                                        ("naked", "过了一会儿，她睁开眼睛，慢慢地恢复了知觉。 突然，她尖叫了一声，把床单扔到了一边。 “不！它灼伤了我的皮肤！”,她喊道。看来她对任何布料都有恐惧症。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，而且" + event_color["good"] % "%s。" + "你估计情况有可能会更糟。"),
                                         ])
 
                     girl.get_hurt(3+dice(6))
