@@ -3571,7 +3571,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + " 来到青楼. 他希望得到一个" + c.wants_entertainment + "的女孩并且喜欢" + c.wants_sex_act + "。")
+            log.add_report(c.name + "来到青楼. 他希望得到一个" + girl_related_dict[c.wants_entertainment] + "并且喜欢" + girl_related_dict[c.wants_sex_act] + "的女孩。")
 
         return cust_list, cust_text
 
