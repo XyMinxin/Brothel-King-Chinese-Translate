@@ -314,9 +314,6 @@ init -4 python:
                        "good" : "不错",
                        "very good" : "非常好",
                        "perfect" : "完美",
-
-                       ## 杂项 ##
-                       "XP" : "经验",
                        }
 
     ## 按钮名字 ##
@@ -456,6 +453,30 @@ init -4 python:
                          "Satisfaction report" : "满意报告",
                          "Farm" : "农场",
                          "Rest" : "休息",
+
+                         ## 商店物品种类 ##
+                         "MC" : "玩家",
+                         "Mc" : "玩家",
+                         "Girl" : "女孩",
+                         "girl" : "女孩",
+                         "Minion" : "奴仆",
+                         "minion" : "奴仆",
+                         "Gift" : "礼物",
+                         "gift" : "礼物",
+                         "Decoration" : "饰品",
+                         "decoration" : "饰品",
+                         "Furnishing" : "家具",
+                         "furnishing" : "家具",
+                         "Utility" : "公用设施",
+                         "utility" : "公用设施",
+                         "Windows" : "窗户",
+                         "windows" : "窗户",
+                         "Comfort" : "慰藉用品",
+                         "comfort" : "慰藉用品",
+                         "Altars" : "祭坛",
+                         "altars" : "祭坛",
+                         "Gizmos" : "小玩意",
+                         "gizmos" : "小玩意",
                          }
 
 #### BALANCE / CHEATS ####

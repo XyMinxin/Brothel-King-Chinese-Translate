@@ -228,6 +228,7 @@ screen main_menu():
         if nsfw:
             add "bg title" yalign 0.5
 
+            text "青楼之王" size 128 xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
             text "Brothel King" size 64 xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
 
         text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size 12
@@ -601,7 +602,7 @@ screen preferences():
 
                 label _("Language")
                 textbutton _("English") text_font "DejaVuSans.ttf" action Language(None)
-                textbutton _("Chinese") text_font "DejaVuSans.ttf" action Language("chinese")       
+                textbutton _("Chinese") text_font "DejaVuSans.ttf" action Language("chinese")
 
             if config.has_voice:
                 frame:

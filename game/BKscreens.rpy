@@ -1275,7 +1275,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         $ jp_show = True
 
                     if jp_show:
-                        $ jp_text = job.capitalize() + " " + str(girl.job_level[job]) + " {image=img_star}"
+                        $ jp_text = girl_related_dict[job.capitalize()] + " " + str(girl.job_level[job]) + " {image=img_star}"
 
                         $ jp_val = girl.jp[job]
                         $ jp_max = girl.get_jp_cap(job)
@@ -1680,7 +1680,7 @@ screen assign_job(girl):
                         action Return(j)
                         tooltip "安排" + girl.fullname + "作为" + girl_related_dict[j] + "工作"
                         add "tb " + j idle_alpha 0.66 #selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
-                        text j.capitalize() selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
+                        text girl_related_dict[j.capitalize()] selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
                         if j == "whore":
                             $ text1 = "6"
                         else:
@@ -1688,7 +1688,7 @@ screen assign_job(girl):
                         text text1 size 12 xalign 0.05 yalign 0.95 drop_shadow (1, 1)
 
                     else:
-                        text j.capitalize() + "\n(不可用)" selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
+                        text girl_related_dict[j.capitalize()] + "\n(不可用)" selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size 14
 
 
             if farm.active:
@@ -2591,9 +2591,9 @@ screen perks(girl):
                                 has vbox spacing 6
 
                                 if selected_perk.min_rank:
-                                    text "阶级 " + rank_name[selected_perk.min_rank] + " perk" size 14 italic True yalign 0.0
+                                    text "阶级 " + rank_name[selected_perk.min_rank] + " " size 14 italic True yalign 0.0
                                 else:
-                                    text "阶级 C perk" size 14 italic True yalign 0.0
+                                    text "阶级 C " size 14 italic True yalign 0.0
 
                                 text selected_perk.get_description() size 14 yalign 0.0
 
@@ -2918,7 +2918,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         for job in all_jobs:
 
-                            text "{b}" + job.capitalize() + "{/b}" color c_firered size small xalign 0.5
+                            text "{b}" + girl_related_dict[job.capitalize()] + "{/b}" color c_firered size small xalign 0.5
 
                             text str_int(log_dict[job + "_cust"][days]) size average color c_brown xalign 0.5
 
@@ -3004,7 +3004,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         for act in all_sex_acts:
 
-                            text "{b}" + act.capitalize() + "{/b}" color c_firered size small xalign 0.5
+                            text "{b}" + girl_related_dict[act.capitalize()] + "{/b}" color c_firered size small xalign 0.5
 
                             text str_int(log_dict[act + "_cust"][days]) size average color c_brown xalign 0.5
 
@@ -5250,9 +5250,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + farm_related_dict[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + settings_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + farm_related_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + settings_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -5502,7 +5502,7 @@ screen girl_select(girl_list, orange = False, no_sched=False):
 
                         if not no_sched:
                             if selected_girl.job:
-                                $ text1 += "\n" + selected_girl.job.capitalize()
+                                $ text1 += "\n" + girl_related_dict[selected_girl.job.capitalize()]
                                 if selected_girl.job in all_jobs and selected_girl.work_whore:
                                     $ text1 += "/妓女"
                                 $ sched = selected_girl.workdays[calendar.get_weekday()]
@@ -6114,7 +6114,7 @@ screen postings(qlist):
                                     else:
                                         $ t = "+"
 
-                                    text stat + " " + t size 14 color c_brown
+                                    text girl_related_dict[stat] + " " + t size 14 color c_brown
 
                                 textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size 14 text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
                                     tooltip "课程可能导致女孩的技能超过等级上限."

@@ -2396,10 +2396,10 @@ init -3 python:
             girl.add_log(act + "_rep", rep_gains[girl])
 
             if result in ("very bad", "bad"):
-                girl.track_event("bad result", arg=(result, act))
+                girl.track_event("bad result", arg=(result_name_dict[result], girl_related_dict[act]))
 
             elif result in ("good", "very good", "perfect"):
-                girl.track_event("good result", arg=(result, act))
+                girl.track_event("good result", arg=(result_name_dict[result], girl_related_dict[act]))
 
 
         return events

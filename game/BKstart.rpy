@@ -339,7 +339,7 @@ label init_game():
 
         # NPC OBJECTS / TRAINERS #
 
-        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}Another cum stain? *sigh* Give me that.{/i}'\n\n{b}The Caretaker{/b}\nGrants free upkeep to a random girl every night.", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
+        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑? *叹气* 带我去吧.{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的抚养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
         NPC_sad_sill = NPC(name = "Sad Sill", trainer_portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
         NPC_gio = NPC()
         NPC_kosmo = NPC()
@@ -453,36 +453,36 @@ label init_game():
         # LOCATIONS # Locations should have been in a dictionary from the start, but it's messy. Sorry.
 
         spice_market = Location("Spice market", pic = "Spice market.jpg")
-        sewers = Location("Sewers", pic = "Sewers.webp", menu = ("Visit the monster catcher", "visit_willow"), menu_costs_AP=False) # Monster merchant
-        farmland = Location("Farm", pic = "farmland.jpg", menu = ("Visit the rancher", "visit_goldie"), menu_costs_AP=False) # Beast merchant
-        watchtower = Location("Watchtower", pic = "Watchtower.jpg", menu = ("Browse the Captain's vault", "visit_watchtower"))
-        junkyard = Location("Junkyard", pic = "Junkyard.webp", menu = ("Visit the scientist", "visit_gina"), menu_costs_AP=False) # Machine merchant
-        thieves_guild = Location("Thieves guild", pic = "Thieves guild.jpg", secret = True, menu = ("Browse the guild warehouse", "visit_thieves_guild"))
+        sewers = Location("Sewers", pic = "Sewers.webp", menu = ("访问怪物捕手", "visit_willow"), menu_costs_AP=False) # Monster merchant
+        farmland = Location("Farm", pic = "farmland.jpg", menu = ("访问牧场主人", "visit_goldie"), menu_costs_AP=False) # Beast merchant
+        watchtower = Location("Watchtower", pic = "Watchtower.jpg", menu = ("访问队长的地下室", "visit_watchtower"))
+        junkyard = Location("Junkyard", pic = "Junkyard.webp", menu = ("访问科学家", "visit_gina"), menu_costs_AP=False) # Machine merchant
+        thieves_guild = Location("Thieves guild", pic = "Thieves guild.jpg", secret = True, menu = ("访问公会仓库", "visit_thieves_guild"))
 
-        harbor = Location("Harbor", pic = "Harbor.jpg", menu = ("Visit the headmaster", "visit_stella"), menu_costs_AP=False) # Stallion merchant
-        shipyard = Location("Shipyard", pic = "Shipyard.jpg", menu = ("Collect wood", "collect_wood")) # Wood extraction
+        harbor = Location("Harbor", pic = "Harbor.jpg", menu = ("访问种马贩子", "visit_stella"), menu_costs_AP=False) # Stallion merchant
+        shipyard = Location("Shipyard", pic = "Shipyard.jpg", menu = ("收集木材", "collect_wood")) # Wood extraction
         taverns = Location("Taverns", pic = "Taverns.jpg")
-        seafront = Location("Seafront", pic = "Seafront.jpg", menu = ("Visit Papa Freak", "visit_papa"), menu_costs_AP=False)
-        beach = Location("Beach", pic = "Beach.jpg", menu = ("Brew dye", "collect_dye")) # Dye
-        exotic_emporium = Location("Exotic emporium", pic = "Exotic emporium.jpg", menu = ("Visit gift shop", "visit_giftgirl"), menu_costs_AP=False) # Gift girl, gifts
+        seafront = Location("Seafront", pic = "Seafront.jpg", menu = ("访问Papa Freak", "visit_papa"), menu_costs_AP=False)
+        beach = Location("Beach", pic = "Beach.jpg", menu = ("酿造染料", "collect_dye")) # Dye
+        exotic_emporium = Location("Exotic emporium", pic = "Exotic emporium.jpg", menu = ("访问礼品店", "visit_giftgirl"), menu_costs_AP=False) # Gift girl, gifts
 
-        stables = Location("Stables", pic = "Stables.jpg", menu = ("Get leather", "collect_leather")) # Leather
-        plaza = Location("Plaza", pic = "Plaza.jpg", menu = ("Contact Homura", "c3_contact_homura"), menu_costs_AP=False) # Homura, story
-        market = Location("Market", pic = "Market.jpg", menu = ("Visit the exchange", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
-        gallows = Location("Gallows", pic = "Gallows.jpg", menu = ("Visit Papa Freak", "visit_papa"), menu_costs_AP=False)
-        prison = Location("Prison", pic = "Prison.jpg", menu = ("Visit G's bazaar", "visit_gurigura"), menu_costs_AP=False) # Gurigura, toys
-        arena = Location("Arena", pic = "Arena.jpg", menu = ("Visit weapon shop", "visit_ramias"), menu_costs_AP=False) # Ramias, weapons
+        stables = Location("Stables", pic = "Stables.jpg", menu = ("获取皮革", "collect_leather")) # Leather
+        plaza = Location("Plaza", pic = "Plaza.jpg", menu = ("联系Homura", "c3_contact_homura"), menu_costs_AP=False) # Homura, story
+        market = Location("Market", pic = "Market.jpg", menu = ("访问交换所", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
+        gallows = Location("Gallows", pic = "Gallows.jpg", menu = ("访问Papa Freak", "visit_papa"), menu_costs_AP=False)
+        prison = Location("Prison", pic = "Prison.jpg", menu = ("访问G的集市", "visit_gurigura"), menu_costs_AP=False) # Gurigura, toys
+        arena = Location("Arena", pic = "Arena.jpg", menu = ("访问武器店", "visit_ramias"), menu_costs_AP=False) # Ramias, weapons
 
-        botanical_garden = Location("Botanical garden", pic = "Botanical garden.jpg", menu = ("Visit flower stall", "visit_riche"), menu_costs_AP=False) # Riche, flowers
-        hanging_gardens = Location("Hanging gardens", pic = "Hanging gardens.jpg", menu = ("Weave silk", "collect_silk")) # Silk
-        library = Location("Library", pic = "Library.jpg", menu = ("Visit trinket shop", "visit_katryn"), menu_costs_AP=False) # Katryn, trinkets
-        guild_quarter = Location("Guild quarter", pic = "Guild quarter.jpg", menu = ("Smuggle ore", "collect_ore")) # Ore
+        botanical_garden = Location("Botanical garden", pic = "Botanical garden.jpg", menu = ("访问花摊", "visit_riche"), menu_costs_AP=False) # Riche, flowers
+        hanging_gardens = Location("Hanging gardens", pic = "Hanging gardens.jpg", menu = ("织造丝绸", "collect_silk")) # Silk
+        library = Location("Library", pic = "Library.jpg", menu = ("访问饰品店", "visit_katryn"), menu_costs_AP=False) # Katryn, trinkets
+        guild_quarter = Location("Guild quarter", pic = "Guild quarter.jpg", menu = ("走私矿石", "collect_ore")) # Ore
         magic_guild = Location("Magic guild", pic = "Magic guild.jpg")
         magic_forest = Location("Magic forest", pic = "Magic forest.jpg")
 
-        pilgrim_road = Location("Pilgrim road", pic = "Pilgrim road.jpg", menu = ("Visit tailor shop", "visit_twins"), menu_costs_AP=False) # Twins, dresses
-        banking_quarter = Location("Banking quarter", pic = "Banking quarter.jpg", menu = ("Visit Bank", "visit_bank"), action=True, menu_costs_AP=False)
-        old_ruins = Location("Old ruins", pic = "Ruins.webp", menu = ("Extract marble", "collect_marble")) # Marble
+        pilgrim_road = Location("Pilgrim road", pic = "Pilgrim road.jpg", menu = ("访问裁缝店", "visit_twins"), menu_costs_AP=False) # Twins, dresses
+        banking_quarter = Location("Banking quarter", pic = "Banking quarter.jpg", menu = ("访问银行", "visit_bank"), action=True, menu_costs_AP=False)
+        old_ruins = Location("Old ruins", pic = "Ruins.webp", menu = ("开采大理石", "collect_marble")) # Marble
         lake = Location("Lakefront", pic = "Lake.jpg")
         training_ground = Location("Training ground", pic = "Training ground.jpg")
         cathedra = Location("Cathedra", pic = "Cathedra.jpg")
@@ -492,7 +492,7 @@ label init_game():
         hall = Location("Hall", pic = "Hall.jpg")
         courtyard = Location("Courtyard", pic = "Courtyard.jpg")
         temple = Location("Temple", pic = "Temple.webp")
-        falls = Location("Waterfalls", pic = "Falls.webp", menu = ("Look for diamonds", "collect_diamond")) # Diamonds
+        falls = Location("Waterfalls", pic = "Falls.webp", menu = ("寻找钻石", "collect_diamond")) # Diamonds
 
         location_dict = {# Districts
                         "The Slums" : [spice_market, sewers, farmland, watchtower, junkyard, thieves_guild],

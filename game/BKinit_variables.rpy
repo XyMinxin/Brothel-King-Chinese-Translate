@@ -591,8 +591,8 @@ init -4 python:
 
     farm_holding_dict = {"libido" : "照看奴仆\n{size=-24}     (+性欲){/size}",
                             "sensitivity" : "服侍Gizel\n{size=-24}     (+敏感){/size}",
-                            "obedience" : "Cleaning up the farm (Ob)",
-                            "constitution" : "Working outside (Con)",
+                            "obedience" : "清理农场 (Ob)",
+                            "constitution" : "外出工作 (Con)",
                             "rest": "真的在休息",
                             }
 

@@ -1257,19 +1257,19 @@ label job_up(obj): # This event describes the results of job ups
 
 #        mylevel = girl.job_level[job]
 
-        text1 = girl.fullname + " is now " + article(rank_name[job + str(mylevel)])
+        text1 = girl.fullname + "现在是" + article(rank_name[job + str(mylevel)])
 
         primary, secondary, boost1, boost2 = job_up_dict[job]
 
-        text2 = "\n" + primary.capitalize() + " {color=[c_emerald]}+" + str(job_up_change[mylevel][0]) + "{/color}"
-        text2 += "\n" + secondary.capitalize() + " {color=[c_emerald]}+" + str(job_up_change[mylevel][1]) + "{/color}"
+        text2 = "\n" + girl_related_dict[primary.capitalize()] + " {color=[c_emerald]}+" + str(job_up_change[mylevel][0]) + "{/color}"
+        text2 += "\n" + girl_related_dict[secondary.capitalize()] + " {color=[c_emerald]}+" + str(job_up_change[mylevel][1]) + "{/color}"
 
         if job_up_change[mylevel][2] != 0:
 
-            text2 += "\n" + boost1.capitalize() + " {color=[c_emerald]}+" + str(job_up_change[mylevel][2]) + "{/color}"
-            text2 += "\n" + boost2.capitalize() + " {color=[c_emerald]}+" + str(job_up_change[mylevel][2]) + "{/color}"
+            text2 += "\n" + girl_related_dict[boost1.capitalize()] + " {color=[c_emerald]}+" + str(job_up_change[mylevel][2]) + "{/color}"
+            text2 += "\n" + girl_related_dict[boost2.capitalize()] + " {color=[c_emerald]}+" + str(job_up_change[mylevel][2]) + "{/color}"
 
-        text2 += "\n\n Skill level +1 {image=img_star}"
+        text2 += "\n\n能力水平 +1 {image=img_star}"
 
     call screen OK_screen(text1, text2, pic = girl.portrait)
 

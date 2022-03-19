@@ -1578,7 +1578,7 @@ label girls_loop():
         elif result == "debug_pics":
             $ girl = selected_girl
 
-            call screen debug_pics(girl)
+            call screen debug_pics(girl) nopredict
 
         elif result == True: # Clicking anywhere on the dark filter screen
             hide screen notebook with Dissolve(0.1)

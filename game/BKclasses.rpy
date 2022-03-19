@@ -3984,10 +3984,10 @@ init -2 python:
             target = "个人防御" if target == "defense" else target
             target = "作为妓女时接客人数" if target == "whore customer capacity" else target
             target = "作为训练时所需服从" if target == "train obedience target" else target
-            #target = "作为工作时所需服从" if target == "work obedience target" else target
+            target = "作为工作时所需服从" if target == "job obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
             target = "耐力消耗" if target == "tiredness" else target
-            target = "满足保养费时的效用" if target == "positive upkeep modifier" else target
+            target = "满足抚养费时的效用" if target == "positive upkeep modifier" else target
             target = "怪物经验" if target == "monster xp" else target
             target = "野兽经验" if target == "beast xp" else target
             target = "机器经验" if target == "machine xp" else target
@@ -4003,8 +4003,8 @@ init -2 python:
             target = "所有性行为技能" if target == "all sex skills" else target
             target = "性行为激活要求" if target == "sex act requirements" else target
             target = "所有常规技能" if target == "all main skills" else target
-            target = "多给保养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
-            target = "少给保养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
+            target = "多给抚养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
+            target = "少给抚养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
             target = "只工作半天时耐力回复量" if target == "half-shift resting bonus" else target
             target = "接客时客人因难以满足的扣分" if target == "customer penalties" else target
             target = "裸体进行常规工作时获得的小费" if target == "naked bonus" else target
@@ -4022,7 +4022,7 @@ init -2 python:
 
             target = "恐惧收益" if target == "fear gains" else target
 
-            target = "总保养费用" if target == "total upkeep" else target
+            target = "总抚养费用" if target == "total upkeep" else target
             target = "配饰增幅" if target == "accessory" else target
             target = "项链增幅" if target == "necklace" else target
             target = "戒指增幅" if target == "ring" else target
@@ -4034,11 +4034,18 @@ init -2 python:
             target = "受伤损失" if target == "hurt" else target
             target = "受伤损失" if target == "hurt" else target
 
-            target = "保养费" if target == "upkeep" else target
+            target = "抚养费" if target == "upkeep" else target
             target = "受伤损失" if target == "hurt" else target
             target = "人气收益" if target == "reputation gains" else target
             target = "舞娘职业经验收益" if target == "dancer jp gains" else target
             target = "舞娘职业经验收益" if target == "dancer jp gains" else target
+
+            target = "名声" if target == "brothel reputation" else target
+            target = "小费总额" if target == "total tip" else target
+            target = "百合概率" if target == "bisexual chance" else target
+            target = "群交概率" if target == "group chance" else target
+            target = "作为工作时服从的预算" if target == "job obedience budget" else target
+            target = "作为妓女时客户的预算" if target == "whore customer budget" else target
 
             text1 += target
 
@@ -4759,7 +4766,7 @@ init -2 python:
 
                 boost *= girl.get_effect("boost", "class results") * game.get_diff_setting("rewards")
 
-                changes = [(stat, round_int(girl.change_stat(stat, renpy.random.randint(_min, _max)*boost, custom_cap = self.stat_cap))) for stat, _min, _max in self.bonuses]
+                changes = [(girl_related_dict[stat], round_int(girl.change_stat(stat, renpy.random.randint(_min, _max)*boost, custom_cap = self.stat_cap))) for stat, _min, _max in self.bonuses]
 
             elif self.type == "quest":
 

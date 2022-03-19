@@ -824,9 +824,9 @@ init -2 python:
                 else:
                     descript += girl.fullname + "今天就在农场休息"
 
-                log.add_report(descript + "，" + farm_holding_dict[self.holding].lower() + "。")
+                log.add_report(descript + "，" + farm_holding_dict[self.holding].lower() + "")
 
-                descript += ".\n" + farm_description["holding " + self.holding] % (girl.name, girl.name)
+                descript += "\n" + farm_description["holding " + self.holding] % (girl.name, girl.name)
                 act, decreased = farm_holding_stats[self.holding]
 
                 if dice(250) > girl.get_stat(self.holding, raw=True):
