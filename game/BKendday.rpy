@@ -901,7 +901,7 @@ label end_day:
         if not nsfw:
             pic = rand_choice(night_pics)
 
-        ev = Event(Picture(pic, "events/" + pic), text = gold_text, changes = "\n{size=+12}" + str(calendar.year) + "年" + str(calendar.month) + "月" + str(calendar.day) + "日\n" + settings_name_dict[calendar.get_weekday()], sound = s_cash, type ="UI")
+        ev = Event(Picture(pic, "events/" + pic), text = gold_text, changes = "\n{size=+12}" + str(calendar.year) + "年" + str(calendar.month) + "月" + str(calendar.day) + "日\n" + setting_name_dict[calendar.get_weekday()], sound = s_cash, type ="UI")
 
 
 #### SHOW NIGHT RECAP ####

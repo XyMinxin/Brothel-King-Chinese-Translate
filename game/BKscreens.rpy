@@ -219,7 +219,7 @@ screen overlay(current_screen = None, kwargs = None):
 
                 text "[calendar.year]年" size 16
                 text "[calendar.month]月" size 16
-                text ("[calendar.day]日(" + settings_name_dict[calendar.get_weekday()][:3] + ")") size 16
+                text ("[calendar.day]日(" + setting_name_dict[calendar.get_weekday()][:3] + ")") size 16
 
 
         hbox:
@@ -1529,7 +1529,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                             $ ttip = trait.get_description(context)
 
-                            textbutton trait.name:
+                            textbutton trait_name_dict[trait.name]:
 
                                 background None
                                 xalign 0.0
@@ -2649,7 +2649,7 @@ screen trait_details(girl):
             for trait in girl.traits:
                 hbox:
                     frame background None ypadding 0 xsize 150 xfill True xalign 0.0 yalign 0.0:
-                        text trait.name xmaximum 150 yalign 0.0 size 14 bold True:
+                        text trait_name_dict[trait.name] xmaximum 150 yalign 0.0 size 14 bold True:
                             if trait in gold_traits:
                                 color c_orange
                             elif trait in pos_traits:
@@ -3056,7 +3056,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
             ysize 400
             yfill True
 
-            text "没有执照\n要求" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
+            text "要求\n没有执照" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["slum"], context) id "b1"
 
@@ -3081,7 +3081,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50) xalign 0.5
 
-                text license_dict[1][0] + "\n要求" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
+                text "要求\n皮条客执照" xalign 0.5 yalign 0.0 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["warehouse"], context) id "b2"
             use district_button(district_dict["docks"], context) id "b3"
@@ -3107,7 +3107,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50)
 
-                text license_dict[2][0] + "要求" xalign 0.5 yalign 0.0 xsize 160 size 16 text_align 0.5 color c_darkgrey
+                text "要求\n妓女贩执照" xalign 0.5 yalign 0.0 xsize 160 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["gardens"], context)  id "b4"
             use district_button(district_dict["cathedra"], context)  id "b5"
@@ -3132,7 +3132,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can
 
                     add ProportionalScale("UI/" + license_dict[0][1], 50, 50)
 
-                text license_dict[3][0] + "要求" xalign 0.5 yalign 0.0 xsize 150 size 16 text_align 0.5 color c_darkgrey
+                text "要求\n青楼主执照" xalign 0.5 yalign 0.0 xsize 150 size 16 text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["hold"], context)  id "b6"
 
@@ -3158,7 +3158,7 @@ screen district_button(dis, context):
 
             spacing 10
 
-            text dis.name size 14 xalign 0.5
+            text location_name_dict[dis.name] size 14 xalign 0.5
 
             fixed:
                 fit_first True
@@ -3219,7 +3219,7 @@ screen visit_district():
         xalign 0.5
         yalign 0.5
 
-        text selected_district.name xalign 0.5
+        text location_name_dict[selected_district.name] xalign 0.5
 
         text ""
         text ""
@@ -3240,9 +3240,9 @@ screen visit_district():
                     action Return([location, "go"])
 
                     if location.secret:
-                        tooltip "你还没有发现这个地点."
+                        tooltip "你还没有发现这个地点。"
                     else:
-                        tooltip "{b}" + location.name + "{/b}. 按下" + str(location_dict[selected_district.name].index(location) + 1) + "参观该地点."
+                        tooltip "{b}" + location_name_dict[location.name] + "{/b} 按下" + str(location_dict[selected_district.name].index(location) + 1) + "参观该地点。"
 
                     vbox:
 
@@ -3257,7 +3257,7 @@ screen visit_district():
                         else:
 
 
-                            text location.name size 14 xalign 0.5
+                            text location_name_dict[location.name] size 14 xalign 0.5
 
                             fixed:
                                 fit_first True
@@ -3284,13 +3284,13 @@ screen visit_district():
 
                                         if location.menu_costs_AP and MC.interactions < 1:
                                             action NullAction()
-                                            tooltip location.menu[0] + ". 你不能进行采集，因为你没有AP."
+                                            tooltip location.menu[0] + " 你不能进行采集，因为你没有行动点数。"
                                         else:
                                             action Return([location, "special"])
                                             if location.menu_costs_AP:
-                                                tooltip location.menu[0] + ". 费用1{image=img_AP}."
+                                                tooltip location.menu[0] + " 费用1{image=img_AP}"
                                             else:
-                                                tooltip location.menu[0] + "."
+                                                tooltip location.menu[0] + ""
 
                                 text str(location_dict[selected_district.name].index(location) + 1) size 14  xalign 0.05 yalign 0.95
 
@@ -3333,7 +3333,7 @@ screen visit_location():
         yalign 0.7
 #        yfill True
 
-        text selected_location.name xalign 0.5
+        text location_name_dict[selected_location.name] xalign 0.5
 
         text ""
         text ""
@@ -5250,9 +5250,9 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + settings_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + setting_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
             else:
-                text "{color=[col]}" + settings_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + setting_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
             text ""
 
@@ -5384,7 +5384,7 @@ screen inventory(char, act):
                         $ eq = it
 
                 vbox:
-                    text settings_name_dict[slot.capitalize()] size 14 xalign 0.5
+                    text setting_name_dict[slot.capitalize()] size 14 xalign 0.5
 
                     button xsize 60 ysize 60 xfill True yfill True xalign 0.5:
 
@@ -6138,13 +6138,13 @@ screen postings(qlist):
 
                                 text "令人满意" size 18 color c_prune
 
-                                text selected_quest.pos_traits[0].name + ", " + selected_quest.pos_traits[1].name size 14 color c_emerald
+                                text trait_name_dict[selected_quest.pos_traits[0].name] + ", " + trait_name_dict[selected_quest.pos_traits[1].name] size 14 color c_emerald
 
                                 text "" size 18
 
                                 text "不受欢迎" size 18 color c_prune
 
-                                text selected_quest.neg_trait.name size 14 color c_crimson
+                                text trait_name_dict[selected_quest.neg_trait.name] size 14 color c_crimson
 
                 else:
                     text "目前没有任何任务可用." italic True color c_brown size 18
@@ -6995,7 +6995,7 @@ screen resource_exchange():
                         add resource.pic.get(40, 40) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text resource.name.capitalize() size 18
+                                text resource_name_dict[resource.name.capitalize()] size 18
                                 if r in calendar.discounted:
                                     text "▼" size 14 yalign 0.5
                                 elif r in calendar.scarce:
@@ -7048,7 +7048,7 @@ screen resource_exchange():
                                 add resource.pic.get(40, 40) yalign 0.5
                                 vbox xfill True spacing 6 yalign 0.5:
                                     hbox spacing 3:
-                                        text resource.name.capitalize() size 18
+                                        text resource_name_dict[resource.name.capitalize()] size 18
                                         if r in calendar.discounted:
                                             text "▼" size 14 yalign 0.5
                                         elif r in calendar.scarce:
@@ -7645,7 +7645,7 @@ screen h_content():
                                     add im.MatrixColor(ProportionalScale("UI/status/" + status[1], 30, 30), im.matrix.desaturate())
 
                 if current_status:
-                    text "%s\n(%s)" % (settings_name_dict[current_status.capitalize()], {True : "开启", False : "关闭"}[persistent.show_girl_status[current_status]]) bold True size 14 color c_prune yalign 0.5
+                    text "%s\n(%s)" % (setting_name_dict[current_status.capitalize()], {True : "开启", False : "关闭"}[persistent.show_girl_status[current_status]]) bold True size 14 color c_prune yalign 0.5
 
             # Badge settings
 
@@ -7658,7 +7658,7 @@ screen h_content():
 
             for ev_type in ["Normal", "Matchmaking", "Customer", "Level/Job/Rank up", "Health/Security", "Satisfaction report", "Farm", "Rest"]:
 
-                $ text1 = settings_name_dict[ev_type]
+                $ text1 = setting_name_dict[ev_type]
 
                 if ev_type != "Satisfaction report":
                     $ text1 += "事件"

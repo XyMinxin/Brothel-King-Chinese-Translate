@@ -39,10 +39,10 @@ label init_traits():
                         Trait("Driven", verb="be", eff1=Effect("boost", "max energy", 0.2), eff2=Effect("boost", "energy", 0.1), archetype="The Player"),
                         Trait("Country girl", verb="be a", eff1=Effect("special", "all farm weaknesses"), eff2=Effect("boost", "farm preference increase", 0.5), archetype="The Maid"),
                         Trait("Noble", verb="be a", eff1=Effect("boost", "prestige", 2), archetype="The Courtesan"),
-                        Trait("Naturist", verb="be a", eff1=Effect("special", "naked", 1), archetype="The Model", base_description = "She has no shame showing her naked body to perfect strangers."),
+                        Trait("Naturist", verb="be a", eff1=Effect("special", "naked", 1), archetype="The Model", base_description = "她毫无羞耻地将自己的裸体展示给完全陌生的人。"),
                         Trait("Vicious", verb="be", effects=[Effect("change", "service", 5), Effect("change", "sex", 5), Effect("change", "anal", 5), Effect("change", "fetish", 5)], archetype="The Escort")
                         ]
-        
+
         gold_trait_dict = {}
 
         for trait in gold_traits:
@@ -88,7 +88,7 @@ label init_traits():
                       Trait("Loyal", verb = "be", eff1 = Effect("boost", "love gains", 0.1), archetype="The Bride"),
                       Trait("Brave", verb = "be", eff1 = Effect("boost", "fear", -0.1), archetype="The Escort"),
                       Trait("Strong", verb = "be", eff1 = Effect("change", "defense", 2), archetype="The Player"),
-                      Trait("Lucky", verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = "She's up all night..."),
+                      Trait("Lucky", verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = "她彻夜未眠..."),
 
                       Trait("Deft", verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.1), eff2 = Effect("boost", "masseuse jp gains", 0.1), archetype="The Maid"),
                       Trait("Nimble", verb = "be", eff1 = Effect("boost", "dancer jp gains", 0.1), eff2 = Effect("boost", "geisha jp gains", 0.1), archetype="The Player"),
@@ -105,7 +105,7 @@ label init_traits():
                       Trait("Sensual", verb = "be", eff1 = Effect("boost", "service jp gains", 0.1), eff2 = Effect("boost", "sex jp gains", 0.1), eff3 = Effect("personality", "pervert"), archetype="The Escort"),
                       Trait("Kinky", verb = "be", eff1 = Effect("boost", "anal jp gains", 0.1), eff2 = Effect("boost", "fetish jp gains", 0.1), eff3 = Effect("personality", "masochist"), archetype="The Player"),
                       Trait("Pervert", verb = "be a", eff1 = Effect("change", "sex act requirements", -10), eff2 = Effect("personality", "pervert"), archetype="The Slut"),
-                      Trait("Thief", verb = "be a", eff1 = Effect("special", "pickpocket", 1), archetype="The Fox", base_description = "She may steal a little amount from the customers while seducing them. Reputation may suffer."),
+                      Trait("Thief", verb = "be a", eff1 = Effect("special", "pickpocket", 1), archetype="The Fox", base_description = "她可能在引诱客户时从客户那里偷点钱。声誉可能会受到影响。"),
                       ]
 
         ## NEGATIVE TRAITS ##
@@ -138,7 +138,7 @@ label init_traits():
                       Trait("Distrustful", verb = "be", eff1 = Effect("boost", "love gains", -0.25), opposite = "Loyal"),
                       Trait("Fearful", verb = "be", eff1 = Effect("boost", "fear", 0.25), opposite = "Brave"),
                       Trait("Vulnerable", verb = "be", eff1 = Effect("change", "defense", -2), opposite = ["Strong", "Warrior"]),
-                      Trait("Unlucky", verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = "She shouldn't have broken that magic mirror... Increased chance of critical failure when working.", opposite = "Lucky"),
+                      Trait("Unlucky", verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = "她不应该打破那面魔镜...工作时危急失败的机会增加。", opposite = "Lucky"),
 
                       Trait("All thumbs", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("increase satisfaction", "waitress", -1), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy']),
                       Trait("Awkward", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("increase satisfaction", "dancer", -1), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful']),
@@ -165,26 +165,26 @@ label init_traits():
 
         godless_trait = trait_dict["Godless"] = Trait("Godless", verb = "be", eff1 = Effect("boost", "reputation gains", -0.2))
 
-        housebroken_trait = trait_dict["Housebroken"] = Trait("Housebroken", verb="be", effects = [Effect("change", "job obedience target", -10), Effect("change", "whore obedience target", -10)], base_description = "She lost her virginity in a brothel with a customer. This is all she knows.")
+        housebroken_trait = trait_dict["Housebroken"] = Trait("Housebroken", verb="be", effects = [Effect("change", "job obedience target", -10), Effect("change", "whore obedience target", -10)], base_description = "她在一家青楼里被一位客人夺去了贞操。她只记得这些了。")
 
-        t_pet_trait = trait_dict["Teacher's pet"] = Trait("Teacher's pet", verb="be a", effects = [Effect("change", "train obedience target", -20), Effect("boost", "love", 0.2)], base_description = "Her first time was with you. You're special to her.")
+        t_pet_trait = trait_dict["Teacher's pet"] = Trait("Teacher's pet", verb="be a", effects = [Effect("change", "train obedience target", -20), Effect("boost", "love", 0.2)], base_description = "她的第一次献给了你。你对于她来说是特别的。")
 
-        trauma_trait = trait_dict["Trauma"] = Trait("Trauma", verb="have a", effects = [Effect("change", "obedience", 15), Effect("change", "libido", -15), Effect("boost", "fear", 0.2)], base_description = "She lost her virginity against her will, and has to live with the trauma.")
+        trauma_trait = trait_dict["Trauma"] = Trait("Trauma", verb="have a", effects = [Effect("change", "obedience", 15), Effect("change", "libido", -15), Effect("boost", "fear", 0.2)], base_description = "她在违背自己意愿的情况下失去了处女之身，不得不忍受创伤生活。")
 
-        farmgirl_trait = trait_dict["Farmgirl"] = Trait("Farmgirl", verb="be a", effects = [Effect("change", "obedience", 10), Effect("boost", "farm preference increase", 0.25)], base_description = "She has lost her virginity in the farm like a filthy animal.")
-        
-        
+        farmgirl_trait = trait_dict["Farmgirl"] = Trait("Farmgirl", verb="be a", effects = [Effect("change", "obedience", 10), Effect("boost", "farm preference increase", 0.25)], base_description = "她在农场里像肮脏的动物一样失去了她的贞操。")
+
+
         ## STORY GIRLS TRAITS ##
-        
-        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "Burns with fiery energy.")
+
+        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "燃烧着炽热的能量。")
         trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she does - and some customers love that.")
-        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "She is a ghost, and cannot be hurt by any normal means.")
-        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "It doesn't matter what she does, she'll train harder than anyone else.")
-        
-        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
+        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "她是一个幽灵，不能用任何正常的手段来伤害她。")
+        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "她做什么都无所谓，她会比别人更努力地训练。")
+
+        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。对其他所有人都是致命的。")
+        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。对其他所有人都是致命的。")
+        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。对其他所有人都是致命的。")
+        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。对其他所有人都是致命的。")
 
     return
 

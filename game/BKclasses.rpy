@@ -627,7 +627,7 @@ init -2 python:
             if message:
                 renpy.call("resource_gained", resource, number)
             else:
-                renpy.notify("+" + str(number) + " " + resource)
+                renpy.notify("+" + str(number) + " " + resource_name_dict[resource])
 
         def collect_resource(self, resource): # Where resource is the resource name
 
@@ -2876,7 +2876,7 @@ init -2 python:
             self.upkeep = 0
             self.costs = 0
             self.net = 0
-            self.report = "{color=[c_white]}" + settings_name_dict[calendar.get_weekday()] + "，" + str(calendar.year) + "年" + str(calendar.month) + "月" + str(calendar.day) + "日{/color}\n"
+            self.report = "{color=[c_white]}" + setting_name_dict[calendar.get_weekday()] + "，" + str(calendar.year) + "年" + str(calendar.month) + "月" + str(calendar.day) + "日{/color}\n"
             self.events = []
             self.changes = ""
             self.track_dict = defaultdict(int)
@@ -6886,7 +6886,7 @@ init -2 python:
                 self.activate()
 
         def describe_cost(self):
-            dlist = [(str(amount) + " " + resource) for resource, amount in self.cost]
+            dlist = [(str(amount) + " " + resource_name_dict[resource]) for resource, amount in self.cost]
 
             return and_text(dlist)
 

@@ -300,73 +300,73 @@ label init_game():
 
         # DEFAULT NAMES #
 
-        sill_name = "Sill"
-        kuro_name = "Princess"
-        maid_name = "Minako"
+        sill_name = "西里尔"
+        kuro_name = "公主"
+        maid_name = "美奈子"
         gio_fucked_sill = ""
-        kosmo_name = "Strange man"
-        sergeant_name = "Woman"
-        captain_name = "Captain Farah"
-        lieutenant_name = "Lieutenant"
-        maya_name = "Woman"
+        kosmo_name = "奇怪的人"
+        sergeant_name = "女人"
+        captain_name = "法拉上尉"
+        lieutenant_name = "中尉"
+        maya_name = "女人"
         maya_love = 0
-        renza_name = "Woman"
-        satella_name = "Girl"
-        shalia_name = "Voice"
-        mask_name = "Shadow"
-        gizel_name = "Elf girl"
-        stella_name = "Woman slaver"
-        goldie_name = "Woman"
-        willow_name = "Strange girl"
-        gina_name = "Girl"
-        carpenter_name = "Woman"
-        bast_name = "Market girl"
-        banker_name = "Mysterious woman"
-        riche_name = "Sweet girl"
-        ramias_name = "Tough girl"
-        gurigura_name = "Wild girl"
-        katryn_name = "Nerdy girl"
-        today_name = "Happy tailor"
-        yesterday_name = "Quiet tailor"
-        jobgirl_name = "Freelancer"
-        kenshin_name = "Female knight"
-        homura_name = "Noble lady"
-        suzume_name = "Blue-haired girl"
-        taxgirl_name = "Elegant woman"
-        narika_name = "Petite Kunoichi"
-        mizuki_name = "Elegant Kunoichi"
-        haruka_name = "Athletic Kunoichi"
+        renza_name = "女人"
+        satella_name = "女孩"
+        shalia_name = "声音"
+        mask_name = "阴影"
+        gizel_name = "精灵女孩"
+        stella_name = "女奴"
+        goldie_name = "戈尔迪"
+        willow_name = "奇怪的女孩"
+        gina_name = "女孩"
+        carpenter_name = "女人"
+        bast_name = "商店女孩"
+        banker_name = "神秘女郎"
+        riche_name = "甜美女孩"
+        ramias_name = "女强人"
+        gurigura_name = "野性女孩"
+        katryn_name = "书呆子女孩"
+        today_name = "快乐的裁缝"
+        yesterday_name = "安静的裁缝"
+        jobgirl_name = "自由职业者"
+        kenshin_name = "女骑士"
+        homura_name = "高贵的女士"
+        suzume_name = "蓝发女孩"
+        taxgirl_name = "优雅的女士"
+        narika_name = "娇小的忍者"
+        mizuki_name = "优雅的忍者"
+        haruka_name = "强壮的忍者"
 
         # NPC OBJECTS / TRAINERS #
 
-        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑? *叹气* 带我去吧.{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的抚养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
+        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑？ *叹气* 带我去吧。{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的抚养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
         NPC_sad_sill = NPC(name = "Sad Sill", trainer_portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
         NPC_gio = NPC()
         NPC_kosmo = NPC()
         NPC_sergeant = NPC()
         NPC_roz = NPC(name = "Roz", char = roz)
-        NPC_maya = NPC(name = "Maya", trainer_portrait = "side maya", trainer_description = "'{i}I'd better check the perimeter. Again.{/i}'\n\n{b}Ever vigilant{/b}\nBrothel threat builds up 33% slower.", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
-        NPC_renza = NPC(name = "Renza", trainer_portrait = "side renza", trainer_description = "'{i}This purse seems heavy. Let me relieve you...{/i}'\n\n{b}Sleight of hand{/b}\nAll girls can pick pockets. Girls with the {i}Thief{/i} trait never get caught.", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
-        NPC_satella = NPC(name = "Satella", trainer_portrait = "side satella", trainer_description = "'{i}Isn't it fun to play in the shadows? Fufufu...{/i}'\n\n{b}Dark priestess{/b}\nFear increases faster.", effects = Effect("boost", "fear gains", 1, scope = "world"))
-        NPC_captain = NPC(name = "Farah", trainer_portrait = "side captain", trainer_description = "'{i}If you wanna get on top, you must be ready to do anything. ANYTHING!{/i}'\n\n{b}Immoral{/b}\nGirls will grow used to anal and fetish acts faster.", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
-        NPC_lieutenant = NPC(name = "Lydie", trainer_portrait = "side lieutenant", trainer_description = "'{i}Do you want me to make an example of you? I didn't think so.{/i}'\n\n{b}Harsh discipline{/b}\nGirls are less likely to refuse to work.", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
+        NPC_maya = NPC(name = "Maya", trainer_portrait = "side maya", trainer_description = "'{i}我最好检查一下周边的情况。再来。{/i}'\n\n{b}永远警惕{/b}\n对青楼的危险增长速度减慢33%。", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
+        NPC_renza = NPC(name = "Renza", trainer_portrait = "side renza", trainer_description = "'{i}他的钱包似乎很重。让我来帮你...{/i}'\n\n{b}巧妙手法{/b}\n所有女孩都会扒口袋。有{i}机灵{/i}特质的女孩永远不会被抓。", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
+        NPC_satella = NPC(name = "Satella", trainer_portrait = "side satella", trainer_description = "'{i}在阴暗处玩耍不是很有趣吗？库呼呼...{/i}'\n\n{b}暗黑祭司{/b}\n恐惧增加得更快。", effects = Effect("boost", "fear gains", 1, scope = "world"))
+        NPC_captain = NPC(name = "Farah", trainer_portrait = "side captain", trainer_description = "'{i}如果你想上位，你必须准备好做任何事情。任何事情!{/i}'\n\n{b}伤风败俗{/b}\n女孩会更快地习惯肛门和变态行为。", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
+        NPC_lieutenant = NPC(name = "Lydie", trainer_portrait = "side lieutenant", trainer_description = "'{i}你想让我给你做个榜样吗？我不这么认为。{/i}'\n\n{b}严苛纪律{/b}\n女孩不太可能拒绝工作。", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
         NPC_gizel = NPC(name = "Gizel", defense = 3, trainer_portrait = "side gizel", trainer_description = "", effects = None)
         NPC_banker = NPC(name = "Banker", trainer_portrait = "side banker")
         NPC_riche = NPC(name = "Riche", char=riche, trainer_portrait = "side riche", item_types=["Flower"])
-        NPC_ramias = NPC(name = "Ramias", char=ramias, trainer_portrait = "side ramias", item_types=["Weapon"], trainer_description = "'{i}Stick 'em with the pointy end!{/i}'\n\n{b}Martial training{/b}\nAll girls receive +2 to their personal defense.", effects = Effect("change", "defense", 2, scope = "brothel"))
+        NPC_ramias = NPC(name = "Ramias", char=ramias, trainer_portrait = "side ramias", item_types=["Weapon"], trainer_description = "'{i}用尖尖的那头扎向他们！{/i}'\n\n{b}武术训练{/b}\n所有女孩都得到了 +2 的个人防御。", effects = Effect("change", "defense", 2, scope = "brothel"))
         NPC_gurigura = NPC(name = "Gurigura", char=gurigura, trainer_portrait = "side gurigura", item_types=["Toy", "Food", "Supplies"])
         NPC_katryn = NPC(name = "Katryn", char=katryn, trainer_portrait = "side katryn", item_types=["Ring", "Necklace"])
         NPC_giftgirl = NPC(name = "Gift Shop Girl", char=giftgirl, trainer_portrait = "side giftgirl", item_types=["Gift", "Misc"])
         NPC_twins = NPC(name = "Today", char=today, trainer_portrait = "side today", item_types=["Dress", "Accessory"])
-        NPC_stella = NPC(name="Stella", char=stella, trainer_portrait = "side stella", minion_type="stallion", trainer_description = "'{i}Your weak training techniques are no match for the Blood Islands.{/i}'\n\n{b}Intensive Farming{/b}\nIncreases the efficiency of all Farm sexual training.", effects = Effect("boost", "farm sexual training", 0.5, scope = "farm"))
-        NPC_goldie = NPC(name="Goldie", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}I read it in a book... *blush*{/i}'\n\n{b}Technique{/b}\nGirls will grow used to service and sex acts faster.", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
+        NPC_stella = NPC(name="Stella", char=stella, trainer_portrait = "side stella", minion_type="stallion", trainer_description = "'{i}你薄弱的训练技术无法与血岛相比。{/i}'\n\n{b}精耕细作{/b}\n提高了所有农场性训练的效率。", effects = Effect("boost", "farm sexual training", 0.5, scope = "farm"))
+        NPC_goldie = NPC(name="Goldie", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}我在一本书上读到过... *脸红*{/i}'\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
         NPC_willow = NPC(name="Willow", char=willow, minion_type="monster")
         NPC_gina = NPC(name="Gina", char=gina, minion_type="machine")
-        NPC_bast = NPC(name="Bast", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}Gold is only one of the many resources that can be traded in Zan.{/i}'\n\n{b}Resourceful{/b}\nPart of your brothel's income is converted to random resources.", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
+        NPC_bast = NPC(name="Bast", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}金币只是可以在Zan交易的众多资源中的一种。{/i}'\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
         NPC_jobgirl = NPC(name="Scarlet", char=jobgirl)
         NPC_kuro = NPC(name="Kurohime", char=kuro)
         NPC_homura = NPC(name="Homura", char=homura)
-        NPC_taxgirl = NPC(name="Taxgirl", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "'{i}Just expense the lobster and champagne... And give me some more.{/i}'\n\n{b}Tax Deductible{/b}\nShields part of your income against taxes every night.", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
+        NPC_taxgirl = NPC(name="Taxgirl", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "'{i}只需支出龙虾和香槟酒......再给我一些。{/i}'\n\n{b}偷税漏税{/b}\n每晚为你的部分收入提供免税保护。", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
 
         # Chapter 2 Kunoichi
         NPC_narika = NPC(name="Narika", char=narika)
@@ -429,24 +429,24 @@ label init_game():
 
         # POPULATIONS #
 
-        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, base_description="An extremely unrefined and undemanding class of customers. After all, beggars can't be choosers.")
-        thug = Population("thugs", "thug.webp", diff = 20, range = 10, rank=1, weight=3, effects=[Effect("boost", "crazy", 1)], base_description="Thug life comes with its share of bros and hoes. You're the bro that gets the hoes.")
-        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, base_description="Workers of the world, unite! Or, you know, get a girl for the night.")
+        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, base_description="这是一群极其粗俗、要求不高的顾客。毕竟，乞丐不能挑肥拣瘦。")
+        thug = Population("thugs", "thug.webp", diff = 20, range = 10, rank=1, weight=3, effects=[Effect("boost", "crazy", 1)], base_description="暴徒生活伴随着它的兄弟和妓女。你是那个得到妓女的兄弟。")
+        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, base_description="世界上的工人们，团结起来! 或者，你知道的，找一个女孩过夜。")
 
-        sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="Sailors are famously randy when they come ashore. After a long voyage, seamen need some release.")
-        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="Common lives, common jobs, common wives... Seeing a commoner trying to escape all of this in a brothel is... common.")
+        sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="水手们上岸后是出了名的好色。经过长时间的航行，海员们需要放松一下。")
+        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="平民在每个方面都是令人沮丧的平凡。平凡的生活，平凡的工作，平凡的妻子...看到一个平民试图在妓院里逃避这一切，是......常见的。")
 
-        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1)], base_description="Craftsmen work with their hands, and when their hands get restless, they like to lay them on a pretty girl. Craftsmen are crafty.")
+        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1)], base_description="工匠们用他们的双手工作，当他们的手不安分时，他们喜欢把它们放在一个漂亮女孩身上。工匠们都很狡猾。")
 
-        bourgeois = Population("bourgeois", "bourgeois.webp", 90, range = 30, rank=3, effects=[Effect("change", "geisha preference", 15), Effect("change", "sex preference", 15)], base_description="When did 'down with the bourgeoisie' become 'get down with the bourgeoisie'? You sold out, man.")
-        guildmember = Population("guild members", "guild member.webp", 110, range = 30, rank=3, effects=[Effect("change", "masseuse preference", 15), Effect("change", "fetish preference", 15)], base_description="Guild members are like craftsmen, but craftier.")
+        bourgeois = Population("bourgeois", "bourgeois.webp", 90, range = 30, rank=3, effects=[Effect("change", "geisha preference", 15), Effect("change", "sex preference", 15)], base_description="什么时候“打倒资产阶级”变成了“达到资产阶级”？你出卖了自己，伙计。")
+        guildmember = Population("guild members", "guild member.webp", 110, range = 30, rank=3, effects=[Effect("change", "masseuse preference", 15), Effect("change", "fetish preference", 15)], base_description="公会成员就像工匠，但更狡猾。")
 
-        patrician = Population("patricians", "patrician.webp", 110, range = 40, rank=3, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -1)], base_description="Father figures to the community, ready to meet young girls with daddy issues.")
+        patrician = Population("patricians", "patrician.webp", 110, range = 40, rank=3, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -1)], base_description="神父在社区中扮演着重要角色, 随时准备好与有恋父情节的年轻女孩见面。")
 
-        aristocrat = Population("aristocrats", "aristocrat.webp", 135, range = 40, rank=4, effects=[Effect("boost", "crazy", 1.5), Effect("change", "satisfaction", -1)], base_description="Above the law. Entitled AF. Filthy rich. What's not to like?")
-        noble = Population("nobles", "noble.webp", 160, range = 40, rank=4, effects=[Effect("change", "satisfaction", -2)], base_description="Nobles are easily bored. Living a life of privilege isn't all fun and games, it's also yawns.")
+        aristocrat = Population("aristocrats", "aristocrat.webp", 135, range = 40, rank=4, effects=[Effect("boost", "crazy", 1.5), Effect("change", "satisfaction", -1)], base_description="凌驾于法律之上。名符其实的富人。富得流油。有什么不喜欢的呢？")
+        noble = Population("nobles", "noble.webp", 160, range = 40, rank=4, effects=[Effect("change", "satisfaction", -2)], base_description="贵族们很容易感到无聊。享有特权的生活并不全是乐趣和游戏，他们也会无聊。")
 
-        royal = Population("royals", "royal.webp", 200, range = 50, rank=5, effects=[Effect("change", "satisfaction", -3)], base_description="People say royals are jaded, undeserving narcissistic parasites. No one gives them credit for how generous they are with their subjects' money. Sad.")
+        royal = Population("royals", "royal.webp", 200, range = 50, rank=5, effects=[Effect("change", "satisfaction", -3)], base_description="人们说，皇室成员都是颓废的、不配自恋的寄生虫。没有人因为他们对臣民的钱财如此慷慨而信任他们。悲哀。")
 
         all_populations = [beggar, thug, laborer, sailor, commoner, craftsman, bourgeois, guildmember, patrician, aristocrat, noble, royal]
 
@@ -576,15 +576,15 @@ label init_game():
 
         # DISTRICT LIST #
 
-        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."),
-                 "docks" : District("The Docks", 2, 2, 40, ((laborer, 10), (sailor, 40), (commoner, 30), (craftsman, 20)), room = ["tavern"], pic = "districts/docks.jpg", description = "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."),
-                 "warehouse" : District("The Warehouse", 2, 2, 40, ((laborer, 10), (sailor, 20), (commoner, 40), (craftsman, 30)), ["club"], pic = "districts/warehouse.jpg", description = "The warehouse is the industrial part of Zan, where all kinds of craftsmen and day laborer come to look for work. Its streets are buzzing with trade and activities during the day, but dodgy at night."),
-                 "gardens" : District("The Magic Gardens", 4, 3, 100, ((commoner, 5), (craftsman, 15), (bourgeois, 30), (guildmember, 30), (patrician, 20)), ["onsen"], pic = "districts/gardens.jpg", description = "The gardens are where the magic-wielding locals gather to soak up mana after a long night of dangerous experiments. It is said some of those experiments occasionally escape..."),
-                 "cathedra" : District("The Cathedra", 4, 3, 100, ((commoner, 5), (craftsman, 10), (bourgeois, 20), (guildmember, 35), (patrician, 30)), ["okiya"], pic = "districts/cathedra.jpg", description = "The Cathedra is the holy center of the Arios order. Pilgrims, knights and priests rub elbows during prayers and rituals, while savvy merchants and bankers make a killing providing them with expensive service."),
-                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware.")
+        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "贫民窟位于Zan城墙外的郊区，。这里是诸多乌合之众的家园：移民、难民、贫民、香料瘾君子......据传闻，这里也是盗贼公会的藏身之处，他们崇拜影子女神莎莉娅。"),
+                 "docks" : District("The Docks", 2, 2, 40, ((laborer, 10), (sailor, 40), (commoner, 30), (craftsman, 20)), room = ["tavern"], pic = "districts/docks.jpg", description = "码头是粗暴的水手和躲避险恶的大海的狡猾海盗的家园。周围徘徊的全是海员，难怪港口附近会有廉价妓女和充满异国情调的商场。"),
+                 "warehouse" : District("The Warehouse", 2, 2, 40, ((laborer, 10), (sailor, 20), (commoner, 40), (craftsman, 30)), ["club"], pic = "districts/warehouse.jpg", description = "仓库是Zan的工业区，各种工匠和短工都来这里找工作。白天的街道上充斥着各种交易和商业活动，但晚上异常凶险。"),
+                 "gardens" : District("The Magic Gardens", 4, 3, 100, ((commoner, 5), (craftsman, 15), (bourgeois, 30), (guildmember, 30), (patrician, 20)), ["onsen"], pic = "districts/gardens.jpg", description = "当地的法师们聚集在这里吸取法力，并进行着一个个漫长而危险的实验。据说某些实验偶尔也会失败..."),
+                 "cathedra" : District("The Cathedra", 4, 3, 100, ((commoner, 5), (craftsman, 10), (bourgeois, 20), (guildmember, 35), (patrician, 30)), ["okiya"], pic = "districts/cathedra.jpg", description = "大教堂是阿里奥斯教团的圣地中心。朝圣者、骑士和牧师在祈祷和仪式中磨拳擦掌，而精明的商人和银行家则为他们提供昂贵的服务，赚取利润。"),
+                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "这里是Zan的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
                 }
 
-        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware.")
+        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "这里是Zan的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
 
         all_districts = [district_dict[d] for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]]
         # for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]:
