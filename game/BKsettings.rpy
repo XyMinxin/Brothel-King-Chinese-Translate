@@ -827,11 +827,6 @@ init -4 python:
                           "Clockwork billboard" : "钟表广告牌",
                           }
 
-    ## 物品名称 ##
-    item_name_dict = {
-                     "" : "",
-                     }
-
 #### BALANCE / CHEATS ####
 
     debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)

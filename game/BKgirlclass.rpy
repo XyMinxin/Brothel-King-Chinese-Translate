@@ -1341,7 +1341,7 @@ init -2 python:
 
         def use_item(self, item):
             if debug_mode:
-                renpy.notify("Using " + item.name)
+                renpy.notify("使用 " + item.name)
 
             used = False
             r = ""
@@ -3486,7 +3486,7 @@ init -2 python:
                             self.acquire_perk(orgy_perk, forced=True)
 
             if debug_mode:
-                renpy.notify("\n" + act + " preference +" + str(nb))
+                renpy.notify("\n" + girl_related_dict[act] + " 偏好 +" + str(nb))
 
             return nb
 

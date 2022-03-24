@@ -2201,7 +2201,7 @@ init -2 python:
             des = "你的顾客的平均{b}娱乐的预算{/b}估计约为{b}%s金币{/b}。" % int(self.customer_budget_dict["ent budget"])
 
             if self.customer_budget_dict["ent budget"] != base_ent_budget:
-                des += " ("
+                des += "\n("
                 if self.customer_budget_dict["ent advertising"]:
                     des += event_color["good"] % ("+%s 来自广告吸引" % int(self.customer_budget_dict["ent advertising"]))
                     if self.customer_budget_dict["ent acts"]:
@@ -2220,7 +2220,7 @@ init -2 python:
             des += "\n你的顾客的平均{b}嫖娼的预算{/b}估计约为{b}%s金币{/b}。" % int(self.customer_budget_dict["wh budget"])
 
             if self.customer_budget_dict["wh budget"] != base_wh_budget:
-                des += " ("
+                des += "\n("
                 if self.customer_budget_dict["wh advertising"]:
                     des += event_color["good"] % ("+%s 来自广告吸引" % int(self.customer_budget_dict["wh advertising"]))
                     if self.customer_budget_dict["wh acts"]:
@@ -2250,7 +2250,7 @@ init -2 python:
                 des = "{b}%s 位顾客{/b}预计今晚会来青楼" % self.customer_count
 
             if self.customer_count != base_cust_nb:
-                des += " ("
+                des += "\n("
 
                 if self.customer_count_dict["advertising"]:
                     if short:
@@ -3826,7 +3826,7 @@ init -2 python:
                 #text1 += self.scope + " "
                 scopexxx =""
                 if self.scope=="brothel":
-                    scopexxx ="全青楼"
+                    scopexxx ="全青楼的"
                 elif self.scope=="city":
                     scopexxx ="在城市中"
                 else:
@@ -3987,7 +3987,7 @@ init -2 python:
             target = "作为工作时所需服从" if target == "job obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
             target = "耐力消耗" if target == "tiredness" else target
-            target = "满足抚养费时的效用" if target == "positive upkeep modifier" else target
+            target = "满足保养费时的效用" if target == "positive upkeep modifier" else target
             target = "怪物经验" if target == "monster xp" else target
             target = "野兽经验" if target == "beast xp" else target
             target = "机器经验" if target == "machine xp" else target
@@ -4003,8 +4003,8 @@ init -2 python:
             target = "所有性行为技能" if target == "all sex skills" else target
             target = "性行为激活要求" if target == "sex act requirements" else target
             target = "所有常规技能" if target == "all main skills" else target
-            target = "多给抚养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
-            target = "少给抚养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
+            target = "多给保养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
+            target = "少给保养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
             target = "只工作半天时耐力回复量" if target == "half-shift resting bonus" else target
             target = "接客时客人因难以满足的扣分" if target == "customer penalties" else target
             target = "裸体进行常规工作时获得的小费" if target == "naked bonus" else target
@@ -4022,7 +4022,7 @@ init -2 python:
 
             target = "恐惧收益" if target == "fear gains" else target
 
-            target = "总抚养费用" if target == "total upkeep" else target
+            target = "总保养费用" if target == "total upkeep" else target
             target = "配饰增幅" if target == "accessory" else target
             target = "项链增幅" if target == "necklace" else target
             target = "戒指增幅" if target == "ring" else target
@@ -4034,7 +4034,7 @@ init -2 python:
             target = "受伤损失" if target == "hurt" else target
             target = "受伤损失" if target == "hurt" else target
 
-            target = "抚养费" if target == "upkeep" else target
+            target = "保养费" if target == "upkeep" else target
             target = "受伤损失" if target == "hurt" else target
             target = "人气收益" if target == "reputation gains" else target
             target = "舞娘职业经验收益" if target == "dancer jp gains" else target

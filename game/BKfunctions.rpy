@@ -1210,7 +1210,7 @@ init -3 python:
             return "No list"
 
 
-    def plural(nb, ending = "s", singular=""):
+    def plural(nb, ending = "", singular=""):
 
         if nb == 1:
             return singular
@@ -2005,7 +2005,7 @@ init -3 python:
 
         for spe in specials:
             try:
-                text_descript += event_color["good"] % perform_job_dict[spe] % plural(len(customers))
+                text_descript += event_color["good"] % perform_job_dict[spe]
             except:
                 text_descript += event_color["good"] % perform_job_dict[spe]
 
@@ -2029,11 +2029,11 @@ init -3 python:
         # Budget cap description
 
         if total_budget == 0:
-            text_descript += " {color=[c_green]}%s客户将%s预算全部花在了%s上.{/color}" % (plural(len(customers)), cust_pronoun2, girl_pronoun)
+            text_descript += " {color=[c_green]}客户将%s预算全部花在了%s上。{/color}" % (cust_pronoun2, girl_pronoun)
             for cust in customers:
                 unlock_achievement("broke " + cust.pop.name)
         elif total_budget < 0: # with ignore_budget
-            text_descript += " {color=[c_gold]}%s客户在%s上超过了%s预算 (+%s 金币).{/color}" % (plural(len(customers)), girl_pronoun, cust_pronoun2, str_int(-total_budget))
+            text_descript += " {color=[c_gold]}客户在%s上超过了%s预算 (+%s 金币)。{/color}" % (girl_pronoun, cust_pronoun2, str_int(-total_budget))
             for cust in customers:
                 unlock_achievement("broke " + cust.pop.name)
 

@@ -3480,13 +3480,12 @@ translate chinese strings:
 
     # game/BKintro.rpy:1885
     old "A strip club"
-    new "脱衣舞俱乐部"
+    new "俱乐部"
 
     # game/BKintro.rpy:1885
     old "A bath house"
-    new "浴室"
+    new "温泉"
 
     # game/BKintro.rpy:1885
     old "An okiya (geisha house)"
-    new "艺妓屋"
-
+    new "置屋"

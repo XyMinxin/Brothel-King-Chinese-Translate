@@ -339,7 +339,7 @@ label init_game():
 
         # NPC OBJECTS / TRAINERS #
 
-        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑？ *叹气* 带我去吧。{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的抚养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
+        NPC_sill = NPC(name = "Sill", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑？ *叹气* 带我去吧。{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的保养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
         NPC_sad_sill = NPC(name = "Sad Sill", trainer_portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
         NPC_gio = NPC()
         NPC_kosmo = NPC()

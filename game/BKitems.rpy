@@ -131,8 +131,8 @@ label init_items():
                     Item(name = '女仆头带', target = 'girl', type = IT_Accessory, pic = 'Maid hat.webp', rank = 1, rarity = 4, price = 2500, effects = (Effect('change', 'fetish results', 1), ), ),
                     Item(name = '魔法笔记本', target = 'MC', type = IT_Passive, pic = 'Magic notebook.webp', template = False, rank = 1, rarity = "S", price = 0, effects = (Effect('special', 'notebook', 1), ), description = "这个方便的笔记本将储存你所知道的关于你的女孩的所有信息。它神奇地记录了你所有的想法。等等，不要想{i}那个{/i}......太晚了。", hidden_effect = True),
                     Item(name = '愈合粉', target = 'minion', type = IT_Misc, pic = 'healing powder.webp', template = False, rank = 1, rarity = "M", charges = 1, price = 100, effects = (Effect('special', 'heal minion', 1), ), description = "这种来自东方的神秘粉末可以治愈奴仆的伤口或修复神奇的工艺品。副作用可能包括头晕、好色、全身长出触角等。"),
-                    Item(name = 'Cimerian 废料', target = 'misc', type = IT_Misc, pic = 'Cimerian scrap.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 250, effects = (), description = "一件神秘的古代科技的垃圾。"),
-                    Item(name = 'Cimerian 文物', target = 'misc', type = IT_Misc, pic = 'Cimerian artefact.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 4, charges = 1, price = 1000, effects = (), description = "一件神秘的古代机械。也是...垃圾..."),
+                    Item(name = 'Cimerian废料', target = 'misc', type = IT_Misc, pic = 'Cimerian scrap.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 250, effects = (), description = "一件神秘的古代科技的垃圾。"),
+                    Item(name = 'Cimerian文物', target = 'misc', type = IT_Misc, pic = 'Cimerian artefact.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 4, charges = 1, price = 1000, effects = (), description = "一件神秘的古代机械。也是...垃圾..."),
                     Item(name = "避雷针", target = 'MC', type = IT_Story, pic = "lightning rod.webp", template=False, rank=2, max_rank = 5, rarity=3, price = 1000, effects = (), description = "防止闪电伤害你。在适当的情况下，它可以救你的命，尽管在青楼工作时被闪电击中的机会很低。梅毒棒可能更有用。"),
 
                     Item(name = '白色鲜花', target = 'girl', type = IT_Flower, pic = 'White flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'white', 1), ), description = "鲜花常被用作表达爱意的礼物。", hidden_effect = True),
@@ -157,8 +157,8 @@ label init_items():
 
         bast_letter = Item("Bast的情书", "MC", type=IT_Story, pic="Scroll of etiquette.webp", template = False, rank = 1, rarity = "S", price = 0, effects = [], description = "Bast写给她以前的姘头的情书。包含有罪的信息。", hidden_effect = True)
 
-        extractor_items = {"extractor1" : Item(name="萃取器 Mk I", target="MC", type=IT_Story, pic="extractor1.webp", template = False, rarity = "S", price = 5000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获木材、染料或皮革。在产地部署。"),
-                           "extractor2" : Item(name="萃取器 Mk II", target="MC", type=IT_Story, pic="extractor2.webp", template = False, rarity = "S", price = 25000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获大理石、丝绸或矿石。在产地部署。"),
+        extractor_items = {"extractor1" : Item(name="萃取器MkⅠ", target="MC", type=IT_Story, pic="extractor1.webp", template = False, rarity = "S", price = 5000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获木材、染料或皮革。在产地部署。"),
+                           "extractor2" : Item(name="萃取器MkⅡ", target="MC", type=IT_Story, pic="extractor2.webp", template = False, rarity = "S", price = 25000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获大理石、丝绸或矿石。在产地部署。"),
                             }
 
         magic_notebook = Item(name = '魔法笔记本', target = 'MC', type = IT_Passive, pic = 'Magic notebook.webp', template = False, rank = 1, rarity = "S", price = 0, effects = (Effect('special', 'notebook', 1), ), description = "这个方便的笔记本将储存你所知道的关于你的女孩的所有信息。它能神奇地写下你所有的想法。等等，不要想{i}那个{/i}......太晚了。", hidden_effect = True)
@@ -175,7 +175,7 @@ label init_items():
 
         narika_hair = Item(name = "Narika的一绺头发", target = 'MC', type = IT_Story, pic = 'hair.webp', template = False, rank = 1, rarity = "S", price = 0, description = "一绺粉红色的头发，属于国术神童Narika Shihoudou。", hidden_effect = True)
 
-        blue_ribbon = Item(name = "Homura的缎带", target = 'MC', type = IT_Story, pic = 'blue ribbon.webp', template = False, rank = 1, rarity = "S", price = 0, pic_dir="necklace", description = "Henso女士给你的一条丝带。把它系在城市{b}广场{/b}的一个柱子上，让她知道你想见她。", hidden_effect = True)
+        blue_ribbon = Item(name = "Homura的丝带", target = 'MC', type = IT_Story, pic = 'blue ribbon.webp', template = False, rank = 1, rarity = "S", price = 0, pic_dir="necklace", description = "Henso女士给你的一条丝带。把它系在城市{b}广场{/b}的一个柱子上，让她知道你想见她。", hidden_effect = True)
 
         # TEMPLATE ITEMS #
 

@@ -869,12 +869,12 @@ label city_impress:
         ev_girl1 "You can have it. This will be a nice souvenir..."
 
         if game.chapter >= 3 and dice(6) >= 5:
-            $ MC.items.append(search_items("Cimerian artefact")[0])
+            $ MC.items.append(search_items("Cimerian文物")[0])
             play sound s_vibro
             "You have received a rare {b}Cimerian artefact{/b}."
 
         else:
-            $ MC.items.append(search_items("Cimerian scrap")[0])
+            $ MC.items.append(search_items("Cimerian废料")[0])
             play sound s_vibro
             "You have received a piece of {b}Cimerian scrap{/b}."
 

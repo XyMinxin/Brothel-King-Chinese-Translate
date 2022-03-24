@@ -348,9 +348,9 @@ label visit_location():
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("Cimerian artefact")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
+                            call receive_item(search_items("Cimerian文物")[0], msg="你收到了一个罕见的 %s.", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("Cimerian scrap")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("Cimerian废料")[0], msg="你收到一个 %s.", use_article=False) from _call_receive_item_1
 
                     else:
                         $ MC.gain_resource(number=dice(3), random=True)

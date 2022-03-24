@@ -1888,7 +1888,7 @@ label break_extractor(resource):
     "Your [resource] extractor has broken down."
     $ resource_dict[resource].deactivate_extractor()
 
-    call receive_item(item_dict["Cimerian scrap"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
+    call receive_item(item_dict["Cimerian废料"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
 
     return
 
@@ -2856,10 +2856,10 @@ label visit_gina():
                     ev_list = []
 
                     for it in MC.get_items(name="Cimerian"):
-                        if it.name == "Cimerian scrap":
+                        if it.name == "Cimerian废料":
                             it.price = 350
                             rv = 1
-                        elif it.name == "Cimerian artefact":
+                        elif it.name == "Cimerian文物":
                             it.price = 1500
                             rv = 5
 
@@ -2888,7 +2888,7 @@ label visit_gina():
                             $ NPC_gina.love += rv
                             $ MC.items.remove(it)
 
-                            if it.name == "Cimerian artefact":
+                            if it.name == "Cimerian文物":
                                 gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
 
                         "Refuse":

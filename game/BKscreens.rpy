@@ -1562,10 +1562,10 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             if context == "girls":
                 text "" size 3
-                text "抚养费用" size 18
+                text "保养费用" size 18
 
                 if girl.locked_upkeep:
-                    text "她的抚养费目前已被收回." size 14 italic True
+                    text "她的保养费目前已被收回." size 14 italic True
 
                 else:
                     key "A" action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", "click.wav"))
@@ -1582,7 +1582,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xsize 0.45
                             ypos -0.4
                             keyboard_focus False
-                            hovered tt.Action("你必须每天支付抚养费. 更高端的女孩将需要更高的费用. 保持高昂的费用可以让你的女孩开心.")
+                            hovered tt.Action("你必须每天支付保养费. 更高端的女孩将需要更高的费用. 保持高昂的费用可以让你的女孩开心.")
 
                         textbutton "-":
                             text_size 14
@@ -1591,7 +1591,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xpadding 0
                             if girl.upkeep > minrange:
                                 action (SetField(girl, "upkeep", girl.upkeep-1), Function(girl.update_upkeep_ratio), Play("sound", "click.wav"))
-                            hovered tt.Action("减少她的抚养费.")
+                            hovered tt.Action("减少她的保养费.")
 
                         textbutton "+":
                             text_size 14
@@ -1600,12 +1600,12 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xpadding 0
                             if girl.upkeep < maxrange:
                                 action (SetField(girl, "upkeep", girl.upkeep+1), Function(girl.update_upkeep_ratio), Play("sound", "click.wav"))
-                            hovered tt.Action("增加她的抚养费.")
+                            hovered tt.Action("增加她的保养费.")
 
                         if girl.auto_upkeep:
-                            $ text1 = "自动抚养设置为: {b}{color=[c_green]}开启{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
+                            $ text1 = "自动保养设置为: {b}{color=[c_green]}开启{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
                         else:
-                            $ text1 = "自动抚养设置为: {b}{color=[c_red]}关闭{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
+                            $ text1 = "自动保养设置为: {b}{color=[c_red]}关闭{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
 
                         textbutton "A":
                             if girl.auto_upkeep:
@@ -1616,7 +1616,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             xsize 25
                             xpadding 0
                             action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", "click.wav"))
-                            tooltip "{size=+2}" + text1 + "\n开启自动后，抚养费用将会自动调节.{/size=+2}"
+                            tooltip "{size=+2}" + text1 + "\n开启自动后，保养费用将会自动调节.{/size=+2}"
 
                         text " " + str(round_int(girl.upkeep)) + "金币":
                             size 14
@@ -1631,7 +1631,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             elif context == "farm":
                 text "" size 3
-                text "抚养费用" size 18
+                text "保养费用" size 18
 
                 hbox:
                     spacing 2
@@ -2825,7 +2825,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
                                 $ ttip = "{b}获利: {color=[c_white]}" + str_int(net) + "{/color}{/b}"
                                 $ ttip += "\n工作: {color=[c_green]}" + str_int(j_gold) + "{/color}"
                                 $ ttip += "     任务: {color=[c_green]}" + str_int(q_gold) + "{/color}"
-                                $ ttip += "\n抚养费: {color=[c_red]}-" + str_int(upk) + "{/color}"
+                                $ ttip += "\n保养费: {color=[c_red]}-" + str_int(upk) + "{/color}"
 
                                 textbutton str_int(j_gold + q_gold) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_prune xalign 0.5 action NullAction() tooltip ttip
 
@@ -3493,7 +3493,7 @@ screen brothel():
                 $ bro_upk = round_int(sum(g.upkeep*g.get_effect("boost", "total upkeep") for g in MC.girls))
                 $ farm_upk = round_int(sum(g.upkeep*g.get_effect("boost", "total upkeep")//2 for g in farm.girls))
 
-                $ text1 = "你必须为青楼维护服务支付{b}" + '{:,}'.format(bro_cost) + "{/b}金币. 你还必须付{b}" + '{:,}'.format(bro_upk) + "{/b}金币作为你的女孩们的抚养费"
+                $ text1 = "你必须为青楼维护服务支付{b}" + '{:,}'.format(bro_cost) + "{/b}金币. 你还必须付{b}" + '{:,}'.format(bro_upk) + "{/b}金币作为你的女孩们的保养费"
 
                 if farm.active and farm.girls:
                     $ text1 += " 以及{b}" + '{:,}'.format(farm_upk) + "{/b}金币给农场里的女孩"
@@ -4013,7 +4013,7 @@ screen brothel_options():
                     elif game.matching_priority == "act":
                         $ text1 = "在可能的情况下，顾客将被匹配到允许其首选工作或性行为的女孩."
 
-                    textbutton "By %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
+                    textbutton "通过 %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="阶级", false_value="工作")
 
                     text text1 size 14 color c_prune
 
@@ -4060,7 +4060,7 @@ screen brothel_options():
                             text percentage_description(brothel.get_adv_setting("budget") / brothel.max_help) + " to customer budget" size 14 color c_brown
 
             text "" size 22
-            text "{b}预测{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
+            text "{b}来访预测{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
             frame xfill True xpadding 10 ypadding 10:
                 has vbox spacing 12
                 text brothel.count_customers_description() color c_prune size 14

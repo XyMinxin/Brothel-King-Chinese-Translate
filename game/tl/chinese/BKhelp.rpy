@@ -22,7 +22,7 @@ translate chinese help_1148c578:
 translate chinese help_798c3657:
 
     # "Food effects reset."
-    "Food effects reset."
+    "重置食物效果。"
 
 # game/BKhelp.rpy:66
 translate chinese mod_menu_9d15c261:
@@ -34,13 +34,13 @@ translate chinese mod_menu_9d15c261:
 translate chinese mod_menu_7bc228f6:
 
     # "The number of times a girl pack picture is drawn in-game will now be tracked and visible in the gallery."
-    "The number of times a girl pack picture is drawn in-game will now be tracked and visible in the gallery."
+    "在游戏中出现的女孩包图片的次数现在将被记录在画廊中。"
 
 # game/BKhelp.rpy:123
 translate chinese mod_menu_b244640b:
 
     # "Girl pack pictures will no longer be counted."
-    "Girl pack pictures will no longer be counted."
+    "女孩包的图片将不再被计算在内。"
 
 # game/BKhelp.rpy:139
 translate chinese help_main_6b7b0671:
@@ -160,7 +160,7 @@ translate chinese help_MC_ac7724cb:
 translate chinese help_MC_0437b977:
 
     # you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
-    you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
+    you "我可不想让我的手变脏。因为我刚做完昂贵的美甲。"
 
 # game/BKhelp.rpy:200
 translate chinese help_MC_f335efcb:
@@ -214,7 +214,7 @@ translate chinese help_MC_d2444d4a:
 translate chinese help_MC_e1179f3e:
 
     # sill "{b}Speed{/b} affects how many actions are available to you every day."
-    sill "{b}Speed{/b} affects how many actions are available to you every day."
+    sill "{b}速度{/b}影响到你每天有多少行动次数。"
 
 # game/BKhelp.rpy:218
 translate chinese help_MC_6154eff7:
@@ -238,7 +238,7 @@ translate chinese help_MC_fda9a393:
 translate chinese help_MC_6816548b:
 
     # sill "{b}Prestige{/b} reflects your character's renown in Zan. Earning prestige allows you to level up and get skill points."
-    sill "{b}声望{/b}反映了你的角色在赞的声望。赢得声望可以让你升级并获得技能点。"
+    sill "{b}声望{/b}反映了你的角色在Zan的声望。赢得声望可以让你升级并获得技能点。"
 
 # game/BKhelp.rpy:233
 translate chinese help_MC_2e21e849:
@@ -328,7 +328,7 @@ translate chinese help_girls_fc6cac84:
 translate chinese help_girls_0a07f586:
 
     # sill "{b}The Girls' rooms{/b}. This is where you can check your girls' information, interact with them, choose their job and schedule, and more." nointeract
-    sill "{b}The Girls' rooms{/b}. This is where you can check your girls' information, interact with them, choose their job and schedule, and more." nointeract
+    sill "{b}女孩们的房间{/b} 在这里，你可以查看你的女孩的信息，与她们互动，选择她们的工作和时间表，以及更多。" nointeract
 
 # game/BKhelp.rpy:286
 translate chinese help_girls_7a317d3c:
@@ -418,19 +418,19 @@ translate chinese help_girls_aa00ccab:
 translate chinese help_girls_ce881a8c:
 
     # sill happy "Your girl's {b}Mood{/b} can be seen as a circle on top of your girl's profile. Its color indicates how happy or discontent your girl is."
-    sill happy "Your girl's {b}Mood{/b} can be seen as a circle on top of your girl's profile. Its color indicates how happy or discontent your girl is."
+    sill happy "你女孩的{b}心情{/b}可以在你女孩的个人资料上面看到一个圆圈。它的颜色表明你的女孩有多高兴或多不满。"
 
 # game/BKhelp.rpy:354
 translate chinese help_girls_55756123:
 
     # sill "Keep your girl happy so that she doesn't rebel and progresses faster! Happiness comes from many factors, such as resting time, accommodation, security, and how much love and respect your girl has for you."
-    sill "Keep your girl happy so that she doesn't rebel and progresses faster! Happiness comes from many factors, such as resting time, accommodation, security, and how much love and respect your girl has for you."
+    sill "让你的女孩保持快乐，这样她就不会反叛，并且进步得更快! 幸福来自于许多因素，如休息时间、住宿、安全，以及你的女孩对你的爱和尊重程度。"
 
 # game/BKhelp.rpy:357
 translate chinese help_girls_b61c19a1:
 
     # sill "However, you can also keep a girl sufficiently scared so that she won't refuse work or run away from you. Fear can be a powerful tool."
-    sill "However, you can also keep a girl sufficiently scared so that she won't refuse work or run away from you. Fear can be a powerful tool."
+    sill "然而，你也可以让一个女孩保持足够的恐惧，这样她就不会拒绝工作或逃离你。恐惧可以是一个强大的工具。"
 
 # game/BKhelp.rpy:359
 translate chinese help_girls_e8a949cb:
@@ -442,7 +442,7 @@ translate chinese help_girls_e8a949cb:
 translate chinese help_girls_ed4d6ad7:
 
     # sill "Let me tell you about {b}Love{/b} and {b}Fear{/b}."
-    sill "Let me tell you about {b}Love{/b} and {b}Fear{/b}."
+    sill "让我告诉你{b}爱{/b}和{b}恐惧{/b}的说明。"
 
 # game/BKhelp.rpy:363
 translate chinese help_girls_cde91123:
@@ -454,7 +454,7 @@ translate chinese help_girls_cde91123:
 translate chinese help_girls_e2ea8320:
 
     # sill "But be careful... Some girls will take advantage of your leniency if you are too nice... Not me, of course!!!"
-    sill "But be careful... Some girls will take advantage of your leniency if you are too nice... Not me, of course!!!"
+    sill "但是要小心... 如果你太好，有些女孩会利用你的宽大处理... 当然，不是我！！！"
 
 # game/BKhelp.rpy:367
 translate chinese help_girls_ed5462ef:
@@ -466,7 +466,7 @@ translate chinese help_girls_ed5462ef:
 translate chinese help_girls_49418e04:
 
     # sill "Unlike Mood, Love and Fear change slowly. Keep it in mind before you decide how to treat your girls."
-    sill "Unlike Mood, Love and Fear change slowly. Keep it in mind before you decide how to treat your girls."
+    sill "与情绪不同，爱和恐惧的变化是缓慢的。在你决定如何对待你的女孩之前，请牢记这一点。"
 
 # game/BKhelp.rpy:378
 translate chinese help_girls_02e1052c:
@@ -496,7 +496,7 @@ translate chinese help_girls_fba3a29a:
 translate chinese help_girls_62b8f040:
 
     # sill "Also, every level, you will receive {b}perk points{/b}. Perk points allow you to unlock some useful perks in a girl's {b}zodiac{/b} trees."
-    sill "Also, every level, you will receive {b}perk points{/b}. Perk points allow you to unlock some useful perks in a girl's {b}zodiac{/b} trees."
+    sill "另外，每升一级，你将获得{b}特质点数{/b}。特质点数允许你在女孩的{b}星座{/b}树上解锁一些有用的福利。"
 
 # game/BKhelp.rpy:395
 translate chinese help_girls_2cbb8e75:
@@ -526,7 +526,7 @@ translate chinese help_girls_938349fe:
 translate chinese help_girls_e4e73ca0_1:
 
     # "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
-    "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
+    "你可以使用快捷键按姓名、工作、级别或等级对你的女孩进行排序（在排序方法上点击右键可以向后排序）。"
 
 # game/BKhelp.rpy:420
 translate chinese help_girls_1ba0aa5a:
@@ -562,13 +562,13 @@ translate chinese help_girls_7fe79f90:
 translate chinese help_girls_ea270c35:
 
     # sill "The {b}interact{/b} button allows you to visit your girl and talk to her. You might find it useful to know your girls better, and maybe try to influence their behavior."
-    sill "The {b}interact{/b} button allows you to visit your girl and talk to her. You might find it useful to know your girls better, and maybe try to influence their behavior."
+    sill "{b}互动{/b}按钮允许你访问你的女孩并与她交谈。你可能会发现这对更好地了解你的女孩很有用，也许可以尝试影响她们的行为。"
 
 # game/BKhelp.rpy:441
 translate chinese help_girls_ae6acd8e:
 
     # sill "Use the {b}equip{/b} button to have a girl take, give, use or equip items. Some effects are permanent: think carefully before you use an item!"
-    sill "使用{b}装备{/b}按钮让女孩取、送、用或装备物品。有些效果是永久性的:在使用物品之前要仔细考虑!"
+    sill "使用{b}装备{/b}按钮让女孩卸下、赠送、使用或装备物品。有些效果是永久性的:在使用物品之前要仔细考虑!"
 
 # game/BKhelp.rpy:445
 translate chinese help_girls_8489c85b:
@@ -676,7 +676,7 @@ translate chinese help_whores_c4a5057c:
 translate chinese skills_introduction_02e1052c:
 
     # sill "What are you interested in?" nointeract
-    sill "What are you interested in?" nointeract
+    sill "你对什么感兴趣？" nointeract
 
 # game/BKhelp.rpy:525
 translate chinese skills_introduction_02a5be0a:
@@ -742,103 +742,103 @@ translate chinese skills_introduction_510ae8f6:
 translate chinese bis_introduction_ca0dddba:
 
     # sill happy "Master! It seems you have trained your first bisexual girl."
-    sill happy "Master! It seems you have trained your first bisexual girl."
+    sill happy "主人! 看来你已经训练了你的第一个百合女孩。"
 
 # game/BKhelp.rpy:564
 translate chinese bis_introduction_958ca6ab:
 
     # sill "Would you like to learn more about how {b}bisexual{/b} whores work?" nointeract
-    sill "Would you like to learn more about how {b}bisexual{/b} whores work?" nointeract
+    sill "你想了解更多关于{b}百合{/b}妓女如何工作吗？" nointeract
 
 # game/BKhelp.rpy:566
 translate chinese bis_introduction_ff9ff0da:
 
     # sill "Bisexual girls are able to have a threesome with a customer. For that, you will need {b}at least two bisexual whores{/b} active at the same time."
-    sill "Bisexual girls are able to have a threesome with a customer. For that, you will need {b}at least two bisexual whores{/b} active at the same time."
+    sill "百合女孩能够与顾客进行3P。为此，你需要{b}至少有两个百合妓女{/b}同时活动。"
 
 # game/BKhelp.rpy:570
 translate chinese bis_introduction_9ba21507:
 
     # sill "During a threesome, the lucky customer will be extra happy and pay {b}[bonus] of the usual tip{/b}."
-    sill "During a threesome, the lucky customer will be extra happy and pay {b}[bonus] of the usual tip{/b}."
+    sill "在3P期间，幸运的顾客会特别高兴，并支付{b}通常小费的[bonus]{/b}。"
 
 # game/BKhelp.rpy:572
 translate chinese bis_introduction_d680755a:
 
     # sill "Each girl will use an {b}interaction{/b}. But your girls will also share the, ahem, load, so their {b}energy{/b} expenditure will be halved."
-    sill "Each girl will use an {b}interaction{/b}. But your girls will also share the, ahem, load, so their {b}energy{/b} expenditure will be halved."
+    sill "每个女孩将使用一个{b}互动{/b}。但你的女孩也将分担，嗯，负荷，所以她们的{b}耐力{/b}支出将减半。"
 
 # game/BKhelp.rpy:574
 translate chinese bis_introduction_4724d70a:
 
     # sill "Bisexual girls are useful if you want to get the {b}maximum value{/b} out of a few customers!"
-    sill "Bisexual girls are useful if you want to get the {b}maximum value{/b} out of a few customers!"
+    sill "如果你想从几个客户那里获得{b}最大的价值{/b}，那么百合女孩是很有用的!"
 
 # game/BKhelp.rpy:576
 translate chinese bis_introduction_807ea81c:
 
     # you "I see. Thanks!"
-    you "I see. Thanks!"
+    you "我明白了。谢谢！"
 
 # game/BKhelp.rpy:579
 translate chinese bis_introduction_6e4cab89:
 
     # sill "All right."
-    sill "All right."
+    sill "好的。"
 
 # game/BKhelp.rpy:586
 translate chinese group_introduction_b67fee2c:
 
     # sill happy "Master! It seems you have trained your first group girl."
-    sill happy "Master! It seems you have trained your first group girl."
+    sill happy "主人！看来你已经训练了你的第一个群交女孩。"
 
 # game/BKhelp.rpy:589
 translate chinese group_introduction_54670519:
 
     # sill "Would you like to learn more about how {b}group{/b} works for whores?" nointeract
-    sill "Would you like to learn more about how {b}group{/b} works for whores?" nointeract
+    sill "你想了解更多关于{b}群交{/b}对妓女的作用吗？" nointeract
 
 # game/BKhelp.rpy:591
 translate chinese group_introduction_b9132224:
 
     # sill "Group girls are able to have orgies with several customers. For that, you will need {b}at least two willing customers{/b} that want the same sex act."
-    sill "Group girls are able to have orgies with several customers. For that, you will need {b}at least two willing customers{/b} that want the same sex act."
+    sill "群交女孩能够与几个顾客进行狂欢。为此，你需要{b}至少有两个愿意的顾客{/b}，希望有相同的性行为。"
 
 # game/BKhelp.rpy:595
 translate chinese group_introduction_b6488f89:
 
     # sill "During an orgy, customers will have fun but are not ready to pay your girl as much. Each customer will pay {b}[bonus] of the usual tip{/b}."
-    sill "During an orgy, customers will have fun but are not ready to pay your girl as much. Each customer will pay {b}[bonus] of the usual tip{/b}."
+    sill "在狂欢期间，顾客会玩得很开心，但不准备付给你的女孩那么多。每个顾客将支付{b}通常小费的[bonus]{/b}。"
 
 # game/BKhelp.rpy:597
 translate chinese group_introduction_2f427d86:
 
     # sill "Of course, because a girl can service several customers with only one {b}interaction{/b}, it's still a good deal for you."
-    sill "Of course, because a girl can service several customers with only one {b}interaction{/b}, it's still a good deal for you."
+    sill "当然，因为一个女孩只需要一个{b}互动{/b}就可以为几个顾客服务，所以对你来说还是很划算的。"
 
 # game/BKhelp.rpy:599
 translate chinese group_introduction_f87a6bc3:
 
     # sill "You have to watch the energy level of your group girls, though. They will spend double or triple the {b}energy{/b} depending on how many customers there are."
-    sill "You have to watch the energy level of your group girls, though. They will spend double or triple the {b}energy{/b} depending on how many customers there are."
+    sill "不过，你必须注意你的群交女孩的耐力水平。她们会花费两倍或三倍的{b}耐力{/b}，这取决于有多少顾客。"
 
 # game/BKhelp.rpy:601
 translate chinese group_introduction_da9455b8:
 
     # sill "Group girls are useful if you want to serve the {b}maximum number of customers{/b}!"
-    sill "Group girls are useful if you want to serve the {b}maximum number of customers{/b}!"
+    sill "如果你想为{b}最大数量的客户提供服务{/b}，那么群交女孩就很有用!"
 
 # game/BKhelp.rpy:603
 translate chinese group_introduction_fb6e86b3:
 
     # you "I'll keep that in mind. Thanks!"
-    you "I'll keep that in mind. Thanks!"
+    you "我会记住这一点。谢谢!"
 
 # game/BKhelp.rpy:606
 translate chinese group_introduction_7062e2e4:
 
     # sill "Okay. Call me if you need anything..."
-    sill "Okay. Call me if you need anything..."
+    sill "好的。如果你需要什么就呼叫我......"
 
 # game/BKhelp.rpy:612
 translate chinese jobs_introduction_71a28bb0:
@@ -856,7 +856,7 @@ translate chinese jobs_introduction_3226f923:
 translate chinese jobs_introduction_4436f236:
 
     # sill "The {b}tavern{/b} will allow you to train your girl as a {b}waitress{/b}. With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
-    sill "The {b}tavern{/b} will allow you to train your girl as a {b}waitress{/b}. With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
+    sill "{b}酒馆{/b}将允许你把你的女孩训练成一个{b}服务员{/b}。随着时间的推移，她们将开始穿上性感的制服，为顾客提供各种‘娱乐’。"
 
 # game/BKhelp.rpy:624
 translate chinese jobs_introduction_602834d7:
@@ -868,7 +868,7 @@ translate chinese jobs_introduction_602834d7:
 translate chinese jobs_introduction_7f010990:
 
     # sill "The {b}strip club{/b} will allow you to train her as a {b}dancer{/b}. With time, they will remove more and more clothing, and take the customers to a room for a 'private dance'."
-    sill "脱衣舞俱乐部将允许你训练她成为一名舞蹈演员。随着时间的推移，他们会脱掉越来越多的衣服，把顾客带到一个房间里进行“私人舞会”。"
+    sill "{b}俱乐部{/b}将允许你训练她成为一名舞蹈演员。随着时间的推移，他们会脱掉越来越多的衣服，把顾客带到一个房间里进行“私人舞会”。"
 
 # game/BKhelp.rpy:632
 translate chinese jobs_introduction_f0f985d0:
@@ -880,7 +880,7 @@ translate chinese jobs_introduction_f0f985d0:
 translate chinese jobs_introduction_284e0e40:
 
     # sill "The {b}onsen{/b} will allow you to train her as a {b}masseuse{/b}. With time, they will provide more erotic massages to the customers, and eventually give them 'full service'"
-    sill "{b}桑拿浴室{/b}将允许您培训她成为一名{b}按摩师{/b}。随着时间的推移，他们将为顾客提供更多的色情按摩，并最终为他们提供“全面服务”"
+    sill "{b}温泉{/b}将允许您培训她成为一名{b}按摩师{/b}。随着时间的推移，他们将为顾客提供更多的色情按摩，并最终为他们提供“全面服务”"
 
 # game/BKhelp.rpy:640
 translate chinese jobs_introduction_80db185e:
@@ -892,7 +892,7 @@ translate chinese jobs_introduction_80db185e:
 translate chinese jobs_introduction_26ccde83:
 
     # sill "The {b}okiya{/b} will allow you to train her as a {b}geisha{/b}. With time, they'll learn a thousand ways to please their customers, and how to take care of their more 'special' requests."
-    sill "宫中将允许你把她训练成艺伎。随着时间的推移，他们将学会一千种取悦客户的方法，以及如何满足他们更“特殊”的要求。"
+    sill "{b}置屋{/b}将允许你把她训练成艺伎。随着时间的推移，他们将学会一千种取悦客户的方法，以及如何满足他们更“特殊”的要求。"
 
 # game/BKhelp.rpy:648
 translate chinese jobs_introduction_5374094c:
@@ -922,13 +922,13 @@ translate chinese jobs_introduction_cb224f7c:
 translate chinese jobs_introduction_f4b64573:
 
     # sill "{b}Sex{/b} means vaginal intercourse, of course. A high {b}sex{/b} skill and {b}libido{/b} gives the best results. {b}Beauty{/b} and the {b}service{/b} skill also boost sex."
-    sill "当然，性交是指阴道性交。高性别技能和性欲能带来最好的效果。{b}美貌{/b}和{b}服务{/b}技能也促进性。"
+    sill "当然，{b}性交{/b}是指阴道性交。高性别技能和性欲能带来最好的效果。{b}美貌{/b}和{b}服务{/b}技能也促进性。"
 
 # game/BKhelp.rpy:663
 translate chinese jobs_introduction_ef2e62a3:
 
     # sill "{b}Anal{/b} means anal sex. A high {b}anal{/b} skill together with a good {b}constitution{/b} is a must. A good {b}body{/b} and the {b}sex{/b} skill also help."
-    sill "肛交是指肛交。必须有高水平的肛门技能和良好的体格。良好的身体素质和性别技能也有帮助。"
+    sill "{b}肛门{/b}意味着肛交。高超的{b}肛门{/b}技术加上良好的{b}体格{/b}是必须的。良好的{b}身材{/b}和{b}性交{/b}技能也有帮助。"
 
 # game/BKhelp.rpy:665
 translate chinese jobs_introduction_f7b43498:
@@ -940,7 +940,7 @@ translate chinese jobs_introduction_f7b43498:
 translate chinese jobs_introduction_efdea71a:
 
     # sill "Later, you can also train your girls to accept {b}bisexual{/b} or {b}group{/b} sex."
-    sill "Later, you can also train your girls to accept {b}bisexual{/b} or {b}group{/b} sex."
+    sill "后面，你也可以训练你的女孩接受{b}百合{/b}或{b}群交{/b}。"
 
 # game/BKhelp.rpy:682
 translate chinese help_brothel_fc6cac84:
@@ -964,7 +964,7 @@ translate chinese help_brothel_54755cbb:
 translate chinese help_brothel_e919f168:
 
     # sill "You can hover over the {b}Advertising{/b}, {b}Security{/b} and {b}Maintenance{/b} labels to learn more about your brothel's current state."
-    sill "You can hover over the {b}Advertising{/b}, {b}Security{/b} and {b}Maintenance{/b} labels to learn more about your brothel's current state."
+    sill "你可以悬停在{b}广告{/b}、{b}安全{/b}和{b}维护{/b}标签上，了解更多关于你的青楼的当前状态。"
 
 # game/BKhelp.rpy:696
 translate chinese help_brothel_678986c0:
@@ -1012,25 +1012,25 @@ translate chinese help_brothel_a54ec990:
 translate chinese help_brothel_83b488c6:
 
     # sill "{b}Advertising girls{/b} increase your brothel reputation, which in turn will bring in more customers every night."
-    sill "{b}Advertising girls{/b} increase your brothel reputation, which in turn will bring in more customers every night."
+    sill "{b}广告女孩{/b}增加你的青楼声誉，每天晚上会带来更多的顾客。"
 
 # game/BKhelp.rpy:718
 translate chinese help_brothel_d834ccda:
 
     # sill "In addition, advertising can give a temporary boost to how many customers will come ({b}customer attraction{/b}), and increase {b}customer budget{/b}, allowing you to make the most of a customer's visit. You need advertising to get people to visit your brothel, at least at the beginning!"
-    sill "In addition, advertising can give a temporary boost to how many customers will come ({b}customer attraction{/b}), and increase {b}customer budget{/b}, allowing you to make the most of a customer's visit. You need advertising to get people to visit your brothel, at least at the beginning!"
+    sill "此外，广告可以暂时提升有多少顾客会来（{b}顾客的吸引力{/b}），并增加{b}顾客的预算{/b}，使你能够充分利用顾客的访问。你需要广告来让人们参观你的青楼，至少在开始的时候是这样！你需要广告。"
 
 # game/BKhelp.rpy:723
 translate chinese help_brothel_3c23b7ef:
 
     # sill "Would you like to know more about advertising?" nointeract
-    sill "Would you like to know more about advertising?" nointeract
+    sill "你想知道更多关于广告的信息吗？" nointeract
 
 # game/BKhelp.rpy:730
 translate chinese help_brothel_0cfa0c52:
 
     # sill "{b}Goons{/b} improve your brothel security by beating the unpleasantness out of rowdy customers. Trouble is sure to show up at your door some day, make sure to have a few of them handy!"
-    sill "{b}Goons{/b} improve your brothel security by beating the unpleasantness out of rowdy customers. Trouble is sure to show up at your door some day, make sure to have a few of them handy!"
+    sill "{b}保安{/b}通过殴打吵闹的顾客来改善你的青楼安全。有一天，麻烦肯定会出现在你的门口，请确保有几个这样的人在身边！"
 
 # game/BKhelp.rpy:734
 translate chinese help_brothel_c09afa4d:
@@ -1042,7 +1042,7 @@ translate chinese help_brothel_c09afa4d:
 translate chinese help_brothel_9d160085:
 
     # sill "{b}Cleaners{/b} are maids that take care of the maintenance of your brothel. Low maintenance may cause your girls to fall sick and turn away customers."
-    sill "{b}Cleaners{/b} are maids that take care of the maintenance of your brothel. Low maintenance may cause your girls to fall sick and turn away customers."
+    sill "{b}清洁工{/b}是负责维护你的青楼的女佣。维护不力可能会导致你的女孩生病并拒绝顾客。"
 
 # game/BKhelp.rpy:743
 translate chinese help_brothel_fce3bf44:
@@ -1060,163 +1060,163 @@ translate chinese help_brothel_92c4b3db:
 translate chinese help_brothel_6843404d:
 
     # sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls. Only one trainer can be active at all times."
-    sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls. Only one trainer can be active at all times."
+    sill "{b}培训师{/b}可以帮助你更有效地经营青楼! 你可能会在Zan中遇到一些有趣的人，这将能够帮助管理你的女孩。任何时候都只能有一个培训师在活动。"
 
 # game/BKhelp.rpy:752
 translate chinese help_brothel_74043be9:
 
     # sill "There is no right or wrong trainer, it all depends on your management style."
-    sill "There is no right or wrong trainer, it all depends on your management style."
+    sill "培训师没有对错之分，这完全取决于你的管理风格。"
 
 # game/BKhelp.rpy:762
 translate chinese help_advertising_53898c4f:
 
     # sill "{b}Advertising{/b} helps grow the renown of your brothel and draws more and wealthier {b}customers{/b} to your brothel."
-    sill "{b}Advertising{/b} helps grow the renown of your brothel and draws more and wealthier {b}customers{/b} to your brothel."
+    sill "{b}广告{/b}有助于提高你的青楼的知名度，吸引更多、更富有的{b}顾客{/b}到你的青楼。"
 
 # game/BKhelp.rpy:764
 translate chinese help_advertising_714a1312:
 
     # sill "Advertising has three different effects: it boosts {b}brothel reputation{/b}, {b}customer attraction{/b} and {b}customer budgets{/b}."
-    sill "Advertising has three different effects: it boosts {b}brothel reputation{/b}, {b}customer attraction{/b} and {b}customer budgets{/b}."
+    sill "广告有三种不同的效果：提高{b}青楼的声誉{/b}，{b}顾客的吸引力{/b}和{b}顾客的预算{/b}。"
 
 # game/BKhelp.rpy:766
 translate chinese help_advertising_133d9e77:
 
     # sill "Each of these effects is strengthened by {b}advertising power{/b}."
-    sill "Each of these effects is strengthened by {b}advertising power{/b}."
+    sill "每种效果都会因{b}广告力量{/b}而得到加强。"
 
 # game/BKhelp.rpy:774
 translate chinese help_advertising_menu_b463b8ec:
 
     # sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
-    sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
+    sill "有些{b}顾客{/b}每天晚上都会来你的青楼。无论怎样，至少会有一个人出现，但你的{b}青楼声誉{/b}和{b}顾客的吸引力{/b}可以使其增加许多倍。"
 
 # game/BKhelp.rpy:776
 translate chinese help_advertising_menu_c046054f:
 
     # sill "There are different {b}customer populations{/b} in Zan, each with a different level of difficulty and rewards, as well as some special effect."
-    sill "There are different {b}customer populations{/b} in Zan, each with a different level of difficulty and rewards, as well as some special effect."
+    sill "在Zan有不同的{b}客户群体{/b}，每个客户群体都有不同的难度和奖励，还有一些特殊的效果。"
 
 # game/BKhelp.rpy:778
 translate chinese help_advertising_menu_f889f1f4:
 
     # sill "You will mostly serve only {b}beggars{/b} at first, though. But as your brothel increases in rank and you reach higher districts, more customer populations will become available."
-    sill "You will mostly serve only {b}beggars{/b} at first, though. But as your brothel increases in rank and you reach higher districts, more customer populations will become available."
+    sill "虽然一开始你大多只为{b}乞丐{/b}服务。但随着你的青楼等级的提高和你达到更高的地区，将解锁更多的顾客人群。"
 
 # game/BKhelp.rpy:780
 translate chinese help_advertising_menu_c9b423ad:
 
     # sill "When that happens, you can choose which populations to attract in the {b}customer options{/b} tab. Not only that, but you can choose to allow or restrict customer populations on a girl by girl basis if you need to."
-    sill "When that happens, you can choose which populations to attract in the {b}customer options{/b} tab. Not only that, but you can choose to allow or restrict customer populations on a girl by girl basis if you need to."
+    sill "当这种情况发生时，你可以在{b}顾客选项{/b}标签中选择吸引哪些人群。不仅如此，如果需要的话，你还可以选择在逐个女孩的基础上允许或限制客户群体。"
 
 # game/BKhelp.rpy:782
 translate chinese help_advertising_menu_e9a0c292:
 
     # sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
-    sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
+    sill "较难的客户也有较高的{b}客户预算{/b}。在你的青楼发展过程中，请记住这一点，以便从中赚取最多的钱。"
 
 # game/BKhelp.rpy:786
 translate chinese help_advertising_menu_463efcf4:
 
     # sill "{b}Brothel reputation{/b} receives a boost from advertising every night. It is also affected negatively or positively by your {b}customers' satisfaction{/b}."
-    sill "{b}Brothel reputation{/b} receives a boost from advertising every night. It is also affected negatively or positively by your {b}customers' satisfaction{/b}."
+    sill "{b}青楼的声誉{/b}每天晚上都会从广告中得到提升。它也会受到你的{b}顾客满意度{/b}的消极或积极影响。"
 
 # game/BKhelp.rpy:788
 translate chinese help_advertising_menu_39ad60d5:
 
     # sill "{b}Brothel reputation{/b} is nice because it draws customers to your brothel for free, unlike advertising. It does {b}decay{/b} over time, though, especially in higher districts."
-    sill "{b}Brothel reputation{/b} is nice because it draws customers to your brothel for free, unlike advertising. It does {b}decay{/b} over time, though, especially in higher districts."
+    sill "{b}青楼声誉{/b}很好，因为它能免费为你的青楼吸引顾客，不像广告那样。不过，随着时间的推移，它也会{b}衰落{/b}，尤其是在较高的地区。"
 
 # game/BKhelp.rpy:790
 translate chinese help_advertising_menu_c166846a:
 
     # sill "Of course, it will cost more brothel reputation to attract higher rank customers than the usual riff-raff. If you need more customers than your current reputation allows, blocking some higher rank populations from coming in {b}customer options{/b} could be a way to do it."
-    sill "Of course, it will cost more brothel reputation to attract higher rank customers than the usual riff-raff. If you need more customers than your current reputation allows, blocking some higher rank populations from coming in {b}customer options{/b} could be a way to do it."
+    sill "当然，要吸引更高等级的顾客而不是一般的暴发户，需要更多的青楼声誉。如果你需要更多的顾客，而不是你目前的声誉所允许的，那么阻止一些更高等级的人口进来{b}顾客选择{/b}可能是一个办法。"
 
 # game/BKhelp.rpy:792
 translate chinese help_advertising_menu_fe19d71f:
 
     # sill "And a word of warning: {b}Unhappy customers{/b} may really drag your reputation down, especially at higher ranks. It is best to focus on drawing only as many customers as you can serve to the brothel to avoid grumbling."
-    sill "And a word of warning: {b}Unhappy customers{/b} may really drag your reputation down, especially at higher ranks. It is best to focus on drawing only as many customers as you can serve to the brothel to avoid grumbling."
+    sill "还有一句警告的话。{b}不高兴的顾客{/b}可能真的会拖累你的声誉，尤其是在更高的级别。最好的办法是集中精力，只为青楼吸引尽可能多的顾客，以避免怨声载道。"
 
 # game/BKhelp.rpy:796
 translate chinese help_advertising_menu_60dc3fd0:
 
     # sill "{b}Customer attraction{/b} is a temporary boost your advertising girls will bring to the total number of customers that come to the brothel."
-    sill "{b}Customer attraction{/b} is a temporary boost your advertising girls will bring to the total number of customers that come to the brothel."
+    sill "{b}顾客吸引力{/b}是指你的广告女孩会给来到青楼的顾客总数带来暂时的提升。"
 
 # game/BKhelp.rpy:798
 translate chinese help_advertising_menu_39508306:
 
     # sill "If you lower advertising, though, you will lose those extra customers. This is the main difference between {b}brothel reputation{/b} and {b}customer attraction{/b}."
-    sill "If you lower advertising, though, you will lose those extra customers. This is the main difference between {b}brothel reputation{/b} and {b}customer attraction{/b}."
+    sill "不过，如果你降低广告，你将失去这些额外的客户。这就是{b}青楼声誉{/b}和{b}顾客吸引力{/b}之间的主要区别。"
 
 # game/BKhelp.rpy:800
 translate chinese help_advertising_menu_15a8ef4b:
 
     # sill "Ultimately, if you want many customers to come, it is good to keep advertising high."
-    sill "Ultimately, if you want many customers to come, it is good to keep advertising high."
+    sill "归根结底，如果你想让很多客户来，保持高额的广告是很好的。"
 
 # game/BKhelp.rpy:802
 translate chinese help_advertising_menu_2f8db18d:
 
     # sill "One day, you may even be able to unlock a way to increase {b}customer attraction{/b}, at the expense of {b}customer budgets{/b}."
-    sill "One day, you may even be able to unlock a way to increase {b}customer attraction{/b}, at the expense of {b}customer budgets{/b}."
+    sill "有一天，你甚至可以解开一个增加{b}客户吸引力{/b}的方法，而牺牲{b}客户预算{/b}。"
 
 # game/BKhelp.rpy:805
 translate chinese help_advertising_menu_3a3136fa:
 
     # sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
-    sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
+    sill "每个顾客都有一个{b}最大的预算{/b}，他准备花在你的青楼的活动上。"
 
 # game/BKhelp.rpy:807
 translate chinese help_advertising_menu_cbb3a1de:
 
     # sill "Customers have a separate budget for {b}entertainment{/b}, such as hanging by the tavern or club, and {b}whoring{/b}. Their budget for whoring is higher, naturally. But if you want to get the most value out of a customer, entertaining him first is a good idea."
-    sill "Customers have a separate budget for {b}entertainment{/b}, such as hanging by the tavern or club, and {b}whoring{/b}. Their budget for whoring is higher, naturally. But if you want to get the most value out of a customer, entertaining him first is a good idea."
+    sill "顾客有单独的预算用于{b}娱乐{/b}，如在酒馆或俱乐部旁闲逛，以及{b}嫖娼{/b}。他们用于嫖娼的预算自然更高。但如果你想从顾客身上获得最大的价值，先招待他是个好主意。"
 
 # game/BKhelp.rpy:810
 translate chinese help_advertising_menu_e75811ac:
 
     # sill "Advertising increases {b}customer budgets{/b}. In rare cases, it is also possible to convince customers to go over their allowance. Some girl perks help with that."
-    sill "Advertising increases {b}customer budgets{/b}. In rare cases, it is also possible to convince customers to go over their allowance. Some girl perks help with that."
+    sill "广告增加了{b}客户的预算{/b}。在极少数情况下，也有可能说服客户超过他们的津贴。一些女孩的津贴对此有帮助。"
 
 # game/BKhelp.rpy:812
 translate chinese help_advertising_menu_9ee4e8dd:
 
     # sill "Of course, this is only their {b}maximum{/b} allowance. If your girls perform badly, they will pay a lot less regardless of their budget."
-    sill "Of course, this is only their {b}maximum{/b} allowance. If your girls perform badly, they will pay a lot less regardless of their budget."
+    sill "当然，这只是他们{b}最大{/b}的金额。如果你的女孩表现不好，不管他们的预算如何，他们都会少付很多钱。"
 
 # game/BKhelp.rpy:814
 translate chinese help_advertising_menu_6001b4b3:
 
     # sill "Ultimately, if you want customers to spend a lot, it is good to keep advertising high."
-    sill "Ultimately, if you want customers to spend a lot, it is good to keep advertising high."
+    sill "归根结底，如果你想让客户花很多钱，那么保持高额的广告是很好的。"
 
 # game/BKhelp.rpy:816
 translate chinese help_advertising_menu_bb561c66:
 
     # sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
-    sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
+    sill "有一天，你甚至可以解开一个增加{b}客户预算{/b}的方法，而牺牲{b}客户吸引力{/b}。"
 
 # game/BKhelp.rpy:820
 translate chinese help_advertising_menu_82913fb0:
 
     # sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
-    sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
+    sill "{b}广告力量{/b}受到你的广告女孩当前{b}服装{/b}的影响。"
 
 # game/BKhelp.rpy:822
 translate chinese help_advertising_menu_df2089fa:
 
     # sill "There may be a way to unlock new outfits in the future."
-    sill "There may be a way to unlock new outfits in the future."
+    sill "未来可能会有一种方法来解锁新的服装。"
 
 # game/BKhelp.rpy:826
 translate chinese help_advertising_menu_0c9bddb4:
 
     # you "I'm good now, thanks."
-    you "I'm good now, thanks."
+    you "我现在没事了，谢谢。"
 
 # game/BKhelp.rpy:835
 translate chinese help_wagon_bdaee514:
@@ -1276,19 +1276,19 @@ translate chinese help_customers_5ee181c4:
 translate chinese help_customers_78e58e25:
 
     # carpenter "Customers come from one of the many populations in Zan, from the rabble to the high 'n' mighty. Check out their characteristics by hovering over their portrait: some might surprise you."
-    carpenter "顾客来自赞族众多人口中的一个，从下层社会到上层社会。把鼠标悬停在他们的肖像上方，看看他们的特征:有些可能会让你大吃一惊。"
+    carpenter "顾客来自Zan众多人口中的一个，从下层社会到上层社会。把鼠标悬停在他们的肖像上方，看看他们的特征:有些可能会让你大吃一惊。"
 
 # game/BKhelp.rpy:860
 translate chinese help_customers_8cb7b3c2:
 
     # carpenter "They also have different budgets and whatnot. Your pink-haired girlfriend tried to explain all this to me once, it made my head hurt."
-    carpenter "They also have different budgets and whatnot. Your pink-haired girlfriend tried to explain all this to me once, it made my head hurt."
+    carpenter "他们也有不同的预算和其他东西。你的粉红色头发的女朋友曾经试图向我解释这一切，这让我头疼。"
 
 # game/BKhelp.rpy:862
 translate chinese help_customers_d4095bcf:
 
     # carpenter "There are more subtle ways customers differ, though. Some just like different things for entertainment, in and out of the sack."
-    carpenter "There are more subtle ways customers differ, though. Some just like different things for entertainment, in and out of the sack."
+    carpenter "不过，客户之间还有更微妙的不同方式。有些人只是喜欢不同的娱乐方式，在麻袋里和在麻袋外。"
 
 # game/BKhelp.rpy:864
 translate chinese help_customers_1aa53b4a:
@@ -1318,7 +1318,7 @@ translate chinese help_districts_4ac14c86:
 translate chinese help_districts_ec26eb9d:
 
     # sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
-    sill "赞有六个区，从城墙外的贫民窟到城市权力的中心:国王的控制。"
+    sill "Zan有六个区，从城墙外的贫民窟到城市权力的中心:国王的控制。"
 
 # game/BKhelp.rpy:882
 translate chinese help_districts_f9b2c1b2:
@@ -1354,7 +1354,7 @@ translate chinese help_districts_ad1d2b41:
 translate chinese help_visit_district_a2722007:
 
     # sill happy "From here, you can see the various locations available in {b}[district.name]{/b}. Click on their picture to visit them."
-    sill happy "从这里，您可以看到{b}[district.name]{/b}中的各种位置。点击他们的照片来访问他们。"
+    sill happy "从这里，您可以看到{b}[district.name]{/b}中的各种位置。点击他们的图片来访问他们。"
 
 # game/BKhelp.rpy:912
 translate chinese help_visit_location_fc6cac84:
@@ -1378,7 +1378,7 @@ translate chinese help_visit_location_c777e57b:
 translate chinese help_visit_location_6a49d4d9:
 
     # sill "There are many girls idling about in Zan. You know, in this economy..."
-    sill "在赞有许多女孩子在闲荡。你知道，在这种经济状况下……"
+    sill "在Zan有许多女孩子在闲荡。你知道，在这种经济状况下……"
 
 # game/BKhelp.rpy:924
 translate chinese help_visit_location_75de1963:
@@ -1420,7 +1420,7 @@ translate chinese help_slavemarket_e9b64117:
 translate chinese help_slavemarket_e130cc8e:
 
     # sill happy "At the slavemarket, you can {b}buy{/b} new girls to work for you. Watch out for their stats and traits before you decide, however."
-    sill happy "At the slavemarket, you can {b}buy{/b} new girls to work for you. Watch out for their stats and traits before you decide, however."
+    sill happy "在奴隶市场，你可以{b}购买{/b}新的女孩为你工作。不过，在你决定之前，要注意她们的状态和特质。"
 
 # game/BKhelp.rpy:948
 translate chinese help_slavemarket_8d90cc80:
@@ -1516,7 +1516,7 @@ translate chinese help_postings_9be38b31:
 translate chinese help_postings_6e866826:
 
     # sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
-    sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
+    sill "{b}课程{/b}可以提高你的女孩的{b}技能{/b}，也可以稍微提高她们的{b}声誉{/b}和{b}经验{/b}。."
 
 # game/BKhelp.rpy:1011
 translate chinese help_postings_a640924b:
@@ -1558,7 +1558,7 @@ translate chinese help_postings_e90378a9:
 translate chinese help_how_to_win_1ba0aa5a:
 
     # sill "What do you want to know about?" nointeract
-    sill "What do you want to know about?" nointeract
+    sill "你想知道什么？" nointeract
 
 # game/BKhelp.rpy:1040
 translate chinese help_how_to_win_387a3310:
@@ -1570,7 +1570,7 @@ translate chinese help_how_to_win_387a3310:
 translate chinese help_how_to_win_71836edd:
 
     # "In addition, you may have to complete elements of the story to advance. Please hover on the bottom right message in the home screen to know your current goals."
-    "In addition, you may have to complete elements of the story to advance. Please hover on the bottom right message in the home screen to know your current goals."
+    "此外，你可能要完成故事中的元素才能前进。请将鼠标悬停在主屏幕的右下方信息上，以了解你当前的目标。"
 
 # game/BKhelp.rpy:1061
 translate chinese help_about_game_54f1f4da:
@@ -1648,7 +1648,7 @@ translate chinese help_night_events_bb01cc54:
 translate chinese help_night_events_c09afa4d:
 
     # sill "Would you like to know more about security?" nointeract
-    sill "Would you like to know more about security?" nointeract
+    sill "你想知道更多关于安全的信息吗？" nointeract
 
 # game/BKhelp.rpy:1165
 translate chinese help_night_events_a9c6adda:
@@ -1660,7 +1660,7 @@ translate chinese help_night_events_a9c6adda:
 translate chinese help_night_events_a112b296_1:
 
     # sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home. You will still have to pay for upkeep and maintenance."
-    sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home. You will still have to pay for upkeep and maintenance."
+    sill "如果某天晚上没有女孩在青楼工作，青楼将关闭。保安和广告宝贝们将回家。你仍然需要支付维护和保养费用。"
 
 # game/BKhelp.rpy:1174
 translate chinese help_night_events_ab834815:
@@ -1750,7 +1750,7 @@ translate chinese help_rank_introduction_3372946f:
 translate chinese help_rank_introduction_388fa8cc:
 
     # sill "In Zan, regular citizens are only allowed to own common sex slaves. Owning sex slaves of a higher rank requires a suitable brothel license. As you unlock better licenses, you will be able to upgrade your girls' rank further."
-    sill "In Zan, regular citizens are only allowed to own common sex slaves. Owning sex slaves of a higher rank requires a suitable brothel license. As you unlock better licenses, you will be able to upgrade your girls' rank further."
+    sill "在Zan，普通公民只被允许拥有普通的性奴隶。拥有更高等级的性奴隶需要有合适的青楼执照。随着你解锁更好的许可证，你将能够进一步提升你的女孩的等级。"
 
 # game/BKhelp.rpy:1231
 translate chinese help_rank_introduction_6896bafd:
@@ -1954,7 +1954,7 @@ translate chinese help_farm_menu_3d1d6e8c:
 translate chinese help_farm_menu_1ac0e76c:
 
     # gizel "Beasts are simply animals, but I have fun messing around with their natural instincts with magic. They're not just pigs too: their structure is so basic I can morph them into different animals when the need arises."
-    gizel "Beasts are simply animals, but I have fun messing around with their natural instincts with magic. They're not just pigs too: their structure is so basic I can morph them into different animals when the need arises."
+    gizel "野兽只是简单的动物，但我用魔法搞乱它们的自然本能，很有乐趣。它们也不仅仅是猪：它们的结构非常基本，我可以在需要的时候把它们变形为不同的动物。"
 
 # game/BKhelp.rpy:1331
 translate chinese help_farm_menu_3ca9315d:
@@ -1978,7 +1978,7 @@ translate chinese help_farm_menu_dd27cb3d:
 translate chinese help_farm_menu_0e44a238:
 
     # gizel "Monsters come in many shapes and forms, but they are all hungry for juicy nipples and wet holes... I wouldn't have them any other way!"
-    gizel "Monsters come in many shapes and forms, but they are all hungry for juicy nipples and wet holes... I wouldn't have them any other way!"
+    gizel "怪兽有许多形状和形式，但它们都渴望多汁的乳头和湿润的洞......我不会让他们有任何其他的方式!"
 
 # game/BKhelp.rpy:1341
 translate chinese help_farm_menu_a4916498:
@@ -2044,7 +2044,7 @@ translate chinese help_farm_menu_28a79ba4:
 translate chinese help_farm_menu_22d27be2:
 
     # gizel "Finally, you should note that for {b}group sex training{/b}, I'll need more than one minion of the same type. But that's obvious, right?"
-    gizel "最后，您应该注意到，对于{b}团体性训练{/b}，我需要不止一个相同类型的奴才。但这是显而易见的，对吧?"
+    gizel "最后，您应该注意到，对于{b}群交训练{/b}，我需要不止一个相同类型的奴才。但这是显而易见的，对吧?"
 
 # game/BKhelp.rpy:1369
 translate chinese help_farm_menu_3a1896f9:
@@ -2110,7 +2110,7 @@ translate chinese help_farm_rules_training_a954f985:
 translate chinese help_farm_rules_training_4b67d45b:
 
     # gizel normal "The second option is to go '{b}hard{/b}' on them. When being trained hard, I'll ignore most of the girls' complaints and threaten the dumb slaves into submission. I'll push them hard, but I won't go all out on them just yet, introducing them to harder sex acts gradually."
-    gizel normal "The second option is to go '{b}hard{/b}' on them. When being trained hard, I'll ignore most of the girls' complaints and threaten the dumb slaves into submission. I'll push them hard, but I won't go all out on them just yet, introducing them to harder sex acts gradually."
+    gizel normal "第二个选择是对她们进行'{b}强硬{/b}'。在接受强硬训练时，我会无视大多数女孩的抱怨，并威胁这些哑巴奴隶服从。我会用力推她们，但我还不会对她们全力以赴，逐步向她们介绍更难的性行为。"
 
 # game/BKhelp.rpy:1421
 translate chinese help_farm_rules_training_317fd8ec:
@@ -2134,7 +2134,7 @@ translate chinese help_farm_rules_training_e688a828:
 translate chinese help_farm_rules_training_3e7fc5d7:
 
     # gizel upset "But let's be careful, because some hard-headed sluts might try to fight back... Make sure you disarm the bitches before sending them here, or we'll be in trouble."
-    gizel upset "But let's be careful, because some hard-headed sluts might try to fight back... Make sure you disarm the bitches before sending them here, or we'll be in trouble."
+    gizel upset "但我们要小心，因为一些顽固的荡妇可能会试图反击...... 在把这些婊子送到这里之前，请确保解除她们的武装，否则我们就有麻烦了。"
 
 # game/BKhelp.rpy:1433
 translate chinese help_farm_rules_resting_0ca98645:
@@ -2158,7 +2158,7 @@ translate chinese help_farm_rules_resting_d7764556:
 translate chinese help_farm_rules_resting_9e02141f:
 
     # gizel "I'll set them to rest automatically before they become exhausted. Of course, I could always misjudge and injure a slave or two if I'm not paying attention, but who CARES!"
-    gizel "I'll set them to rest automatically before they become exhausted. Of course, I could always misjudge and injure a slave or two if I'm not paying attention, but who CARES!"
+    gizel "我会在他们筋疲力尽之前将他们设定为自动休息。当然，如果我不注意，我可能总是判断失误，伤到一两个奴隶，但谁在乎呢！？"
 
 # game/BKhelp.rpy:1457
 translate chinese help_farm_rules_holding_10d01bcf:
@@ -2194,13 +2194,13 @@ translate chinese help_farm_rules_holding_e7b5dc08:
 translate chinese help_zodiac_da122e3e:
 
     # sill happy "I read a fascinating story... Astrology is very popular in Zan, and {b}Zodiac saints{/b} play a foremost role at every level of society."
-    sill happy "我读了一个有趣的故事……占星术在赞非常流行，{b}十二宫圣人{/b}在社会的各个阶层都扮演着重要的角色。"
+    sill happy "我读了一个有趣的故事……占星术在Zan非常流行，{b}十二宫圣人{/b}在社会的各个阶层都扮演着重要的角色。"
 
 # game/BKhelp.rpy:1474
 translate chinese help_zodiac_f945b6dd:
 
     # sill "Different classes of people have different belief systems. They have hundreds of popular spirits and other minor deities to choose from..."
-    sill "Different classes of people have different belief systems. They have hundreds of popular spirits and other minor deities to choose from..."
+    sill "不同阶层的人有不同的信仰体系。他们有数百个流行的神灵和其他小神灵可供选择..."
 
 # game/BKhelp.rpy:1476
 translate chinese help_zodiac_31388708:
@@ -2218,7 +2218,7 @@ translate chinese help_zodiac_f10dd37b:
 translate chinese help_zodiac_ebd70b3d:
 
     # sill "For instance, the women of Zan follow {b}the Eight{/b} for good fortune, especially slaves and whores. The Eight are saintly women-like figures that appear in the heavens when the conditions are right."
-    sill "例如，赞的妇女遵循八种财富，特别是奴隶和妓女。这八个人都是圣洁的女性形象，在合适的条件下会出现在天空中。"
+    sill "例如，Zan的妇女遵循八种财富，特别是奴隶和妓女。这八个人都是圣洁的女性形象，在合适的条件下会出现在天空中。"
 
 # game/BKhelp.rpy:1482
 translate chinese help_zodiac_d2faaa6a:
@@ -2266,7 +2266,7 @@ translate chinese help_zodiac_71de0118:
 translate chinese help_zodiac_8c4857ab:
 
     # "Every level, a girl receives {b}one or two perk points{/b}. Perk points can be used to unlock a new zodiac sign, or learn a new perk."
-    "Every level, a girl receives {b}one or two perk points{/b}. Perk points can be used to unlock a new zodiac sign, or learn a new perk."
+    "每一级，女孩就会得到{b}一个或两个特质点{/b}。福利点可以用来解锁一个新的星座，或学习一个新的特质。"
 
 # game/BKhelp.rpy:1498
 translate chinese help_zodiac_05a4a2d6:
@@ -2284,25 +2284,25 @@ translate chinese cheat_menu_a355d470:
 translate chinese cheat_menu_22b4f2e2:
 
     # sill "WARNING! These cheats are for testing purposes, and may easily break your game! Only call this menu from the Home screen." nointeract
-    sill "WARNING! These cheats are for testing purposes, and may easily break your game! Only call this menu from the Home screen." nointeract
+    sill "警告! 这些作弊器是出于测试目的，可能很容易破坏你的游戏 只能在主屏幕上调用这个菜单。" nointeract
 
 # game/BKhelp.rpy:1876
 translate chinese cheat_menu_43260813:
 
     # "This allows you to check if some girl pics have no usable tags (excluding the 'unused' tag)."
-    "这允许你检查一些女孩的照片是否没有可用的标签(不包括“未使用”标签)。"
+    "这允许你检查一些女孩的图片是否没有可用的标签(不包括“未使用”标签)。"
 
 # game/BKhelp.rpy:2131
 translate chinese check_missing_pictures_5e0ae11a:
 
     # "Step 1: Checking profile and portrait pictures"
-    "第一步:检查个人资料和肖像照片"
+    "第一步:检查个人资料和肖像图片"
 
 # game/BKhelp.rpy:2147
 translate chinese check_missing_pictures_4bf6234b:
 
     # "Step2: Checking job/sex pictures"
-    "第二步:查看工作/性爱照片"
+    "第二步:查看工作/性爱图片"
 
 # game/BKhelp.rpy:2165
 translate chinese check_missing_pictures_4f1baf65:
@@ -2314,13 +2314,13 @@ translate chinese check_missing_pictures_4f1baf65:
 translate chinese check_missing_pictures_c9cd67c9:
 
     # "Step4: Checking group and bisexual sex pictures"
-    "第四步:查看群交和百合照片"
+    "第四步:查看群交和百合图片"
 
 # game/BKhelp.rpy:2198
 translate chinese check_missing_pictures_51aadab5:
 
     # "Step1: Checking farm pictures"
-    "步骤一:查看农场照片"
+    "步骤一:查看农场图片"
 
 # game/BKhelp.rpy:2215
 translate chinese check_missing_pictures_e5aeea0e:
@@ -2368,669 +2368,668 @@ translate chinese strings:
 
     # game/BKhelp.rpy:10
     old "Help with the current screen"
-    new "Help with the current screen"
+    new "对当前界面的帮助"
 
     # game/BKhelp.rpy:10
     old "Tell me about night events"
-    new "Tell me about night events"
+    new "告诉我关于夜间活动"
 
     # game/BKhelp.rpy:10
     old "How to win"
-    new "How to win"
+    new "如何获胜"
 
     # game/BKhelp.rpy:10
     old "Replay last achievements"
-    new "Replay last achievements"
+    new "重放最后的成就"
 
     # game/BKhelp.rpy:10
     old "Reset food effects"
-    new "Reset food effects"
+    new "重置食物影响"
 
     # game/BKhelp.rpy:10
     old "Cheat menu - Main Screen only"
-    new "Cheat menu - Main Screen only"
+    new "作弊菜单 - 仅限主界面"
 
     # game/BKhelp.rpy:10
     old "Activate cheats (disable achievements)"
-    new "Activate cheats (disable achievements)"
+    new "激活作弊器 (禁用成就)"
 
     # game/BKhelp.rpy:10
     old "Repair girl/MC pictures"
-    new "Repair girl/MC pictures"
+    new "修复 女孩/玩家 图片"
 
     # game/BKhelp.rpy:10
     old "Activate picture count in gallery (girl packs)"
-    new "Activate picture count in gallery (girl packs)"
+    new "激活图库中的图片计数 (女孩包)"
 
     # game/BKhelp.rpy:10
     old "Deactivate picture count in gallery"
-    new "Deactivate picture count in gallery"
+    new "停用图库中的图片计数"
 
     # game/BKhelp.rpy:10
     old "More about this game"
-    new "More about this game"
+    new "关于此游戏的更多信息"
 
     # game/BKhelp.rpy:111
     old "Would you like to reset all existing counters to zero?"
-    new "Would you like to reset all existing counters to zero?"
+    new "你想把所有现有的计数器重置为零吗？"
 
     # game/BKhelp.rpy:174
     old "Can I rename my character?"
-    new "Can I rename my character?"
+    new "我可以重新命名我的角色吗？"
 
     # game/BKhelp.rpy:174
     old "Tell me about my character and skills"
-    new "Tell me about my character and skills"
+    new "告诉我关于我的性格和技能"
 
     # game/BKhelp.rpy:174
     old "How can I change my portrait?"
-    new "How can I change my portrait?"
+    new "我如何改变我的头像？"
 
     # game/BKhelp.rpy:174
     old "Tell me about prestige and skill points"
-    new "Tell me about prestige and skill points"
+    new "告诉我关于声望和技能点"
 
     # game/BKhelp.rpy:174
     old "Tell me how to use items"
-    new "Tell me how to use items"
+    new "告诉我如何使用物品"
 
     # game/BKhelp.rpy:174
     old "Tell me how to learn and use spells"
-    new "Tell me how to learn and use spells"
+    new "告诉我如何学习和使用法术"
 
     # game/BKhelp.rpy:280
     old "Can I change a girl's name?"
-    new "Can I change a girl's name?"
+    new "我可以更改女孩的名字吗？"
 
     # game/BKhelp.rpy:280
     old "Tell me about defense, mood, love and fear"
-    new "Tell me about defense, mood, love and fear"
+    new "告诉我关于防御、情绪、爱和恐惧的问题"
 
     # game/BKhelp.rpy:280
     old "Tell me about ranks, levels and job skills"
-    new "Tell me about ranks, levels and job skills"
+    new "告诉我关于等级、级别和工作技能的情况"
 
     # game/BKhelp.rpy:280
     old "Tell me about the available actions"
-    new "Tell me about the available actions"
+    new "告诉我现在可采取的行动"
 
     # game/BKhelp.rpy:280
     old "Tell me about girl skills and traits"
-    new "Tell me about girl skills and traits"
+    new "告诉我关于女孩的技能和特质"
 
     # game/BKhelp.rpy:280
     old "Tell me more about jobs"
-    new "Tell me more about jobs"
+    new "告诉我更多关于工作的信息"
 
     # game/BKhelp.rpy:280
     old "How can I train a girl to become a whore?"
-    new "How can I train a girl to become a whore?"
+    new "我怎样才能把女孩训练成妓女呢？"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Sill'"
-    new "Rename her 'Sill'"
+    new "给她重命名为‘西里尔’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Rose'"
-    new "Rename her 'Rose'"
+    new "给她重命名为‘玫瑰’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Lolita'"
-    new "Rename her 'Lolita'"
+    new "给她重命名为‘洛丽塔’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Pinky'"
-    new "Rename her 'Pinky'"
+    new "给她重命名为‘小指头’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Peggy'"
-    new "Rename her 'Peggy'"
+    new "给她重命名为‘佩吉’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Bitch'"
-    new "Rename her 'Bitch'"
+    new "给她重命名为‘婊子’"
 
     # game/BKhelp.rpy:297
     old "Don't rename her"
-    new "Don't rename her"
+    new "不能给她重命名"
 
     # game/BKhelp.rpy:376
     old "Rank and reputation"
-    new "Rank and reputation"
+    new "阶级和声誉"
 
     # game/BKhelp.rpy:376
     old "Leveling and experience"
-    new "Leveling and experience"
+    new "等级和经验"
 
     # game/BKhelp.rpy:376
     old "Zodiac signs and perks"
-    new "Zodiac signs and perks"
+    new "星座和奖励"
 
     # game/BKhelp.rpy:376
     old "Job skill and job points"
-    new "Job skill and job points"
+    new "工作技能和工作分数"
 
     # game/BKhelp.rpy:419
     old "Changing a girl's job"
-    new "Changing a girl's job"
+    new "改变一个女孩的工作"
 
     # game/BKhelp.rpy:419
     old "Changing a girl's schedule"
-    new "Changing a girl's schedule"
+    new "改变一个女孩的排班表"
 
     # game/BKhelp.rpy:419
     old "Interacting with a girl"
-    new "Interacting with a girl"
+    new "与一个女孩互动"
 
     # game/BKhelp.rpy:419
     old "Equipping and using items"
-    new "Equipping and using items"
+    new "装备和使用物品"
 
     # game/BKhelp.rpy:419
     old "Selling a girl"
-    new "Selling a girl"
+    new "卖掉一个女孩"
 
     # game/BKhelp.rpy:419
     old "Perks, leveling and ranking up"
-    new "Perks, leveling and ranking up"
+    new "特质、等级和排名提升"
 
     # game/BKhelp.rpy:419
     old "Tracking a girl's performance"
-    new "Tracking a girl's performance"
+    new "追踪一个女孩的表现"
 
     # game/BKhelp.rpy:520
     old "Tell me about skills"
-    new "Tell me about skills"
+    new "告诉我有关技能的说明"
 
     # game/BKhelp.rpy:520
     old "Tell me about traits"
-    new "Tell me about traits"
+    new "告诉我关于特质的说明"
 
     # game/BKhelp.rpy:520
     old "Tell me about upkeep"
-    new "Tell me about upkeep"
+    new "告诉我关于保养的说明"
 
     # game/BKhelp.rpy:563
     old "Yes, fill me in"
-    new "Yes, fill me in"
+    new "是的，请告诉我"
 
     # game/BKhelp.rpy:615
     old "Waitress"
-    new "Waitress"
+    new "服务员"
 
     # game/BKhelp.rpy:615
     old "Dancer"
-    new "Dancer"
+    new "舞娘"
 
     # game/BKhelp.rpy:615
     old "Masseuse"
-    new "Masseuse"
+    new "按摩师"
 
     # game/BKhelp.rpy:615
     old "Geisha"
-    new "Geisha"
+    new "艺妓"
 
     # game/BKhelp.rpy:615
     old "Whore"
-    new "Whore"
+    new "妓女"
 
     # game/BKhelp.rpy:684
     old "How can I check my brothel's information?"
-    new "How can I check my brothel's information?"
+    new "如何查询我的青楼的信息？"
 
     # game/BKhelp.rpy:684
     old "Tell me more about rooms"
-    new "Tell me more about rooms"
+    new "告诉我更多关于房间的说明"
 
     # game/BKhelp.rpy:684
     old "Tell me more about freelancers"
-    new "Tell me more about freelancers"
+    new "告诉我更多关于自由职业者的说明"
 
     # game/BKhelp.rpy:684
     old "Tell me about trainers"
-    new "Tell me about trainers"
+    new "告诉我关于培训师的说明"
 
     # game/BKhelp.rpy:684
     old "Tell me about the Carpenter's Wagon and Customer options"
-    new "Tell me about the Carpenter's Wagon and Customer options"
+    new "告诉我关于木匠车和客户选项的说明"
 
     # game/BKhelp.rpy:769
     old "Tell me about..."
-    new "Tell me about..."
+    new "告诉我关于..."
 
     # game/BKhelp.rpy:769
     old "Customers"
-    new "Customers"
+    new "客户"
 
     # game/BKhelp.rpy:769
     old "Brothel reputation"
-    new "Brothel reputation"
+    new "青楼的名声"
 
     # game/BKhelp.rpy:769
     old "Customer attraction"
-    new "Customer attraction"
+    new "吸引的顾客"
 
     # game/BKhelp.rpy:769
     old "Customer budgets"
-    new "Customer budgets"
+    new "顾客的预算"
 
     # game/BKhelp.rpy:769
     old "Advertising power"
-    new "Advertising power"
+    new "广告的力量"
 
     # game/BKhelp.rpy:874
     old "Tell me about districts"
-    new "Tell me about districts"
+    new "告诉我有关地区的说明"
 
     # game/BKhelp.rpy:874
     old "Tell me about unlocking new districts"
-    new "Tell me about unlocking new districts"
+    new "告诉我关于解锁新地区的说明"
 
     # game/BKhelp.rpy:914
     old "Tell me about meeting girls"
-    new "Tell me about meeting girls"
+    new "告诉我关于会面女孩的说明"
 
     # game/BKhelp.rpy:914
     old "Tell me about looking around"
-    new "Tell me about looking around"
+    new "告诉我关于环顾四周的说明"
 
     # game/BKhelp.rpy:946
     old "Tell me about sexual experience"
-    new "Tell me about sexual experience"
+    new "告诉我关于性经验的说明"
 
     # game/BKhelp.rpy:946
     old "No, I'm good"
-    new "No, I'm good"
+    new "不，我很好"
 
     # game/BKhelp.rpy:1003
     old "Tell me about classes"
-    new "Tell me about classes"
+    new "告诉我关于课程的说明"
 
     # game/BKhelp.rpy:1003
     old "Tell me about quests"
-    new "Tell me about quests"
+    new "告诉我关于任务的说明"
 
     # game/BKhelp.rpy:1034
     old "How to win the game"
-    new "How to win the game"
+    new "如何在游戏里获胜"
 
     # game/BKhelp.rpy:1034
     old "My current goal"
-    new "My current goal"
+    new "我现在的目标"
 
     # game/BKhelp.rpy:1059
     old "DISCLAIMER"
-    new "DISCLAIMER"
+    new "免责声明"
 
     # game/BKhelp.rpy:1059
     old "What is this game?"
-    new "What is this game?"
+    new "这是个什么游戏？"
 
     # game/BKhelp.rpy:1059
     old "How can I help?"
-    new "How can I help?"
+    new "我怎样才能提供帮助？"
 
     # game/BKhelp.rpy:1059
     old "Special thanks"
-    new "Special thanks"
+    new "特别感谢"
 
     # game/BKhelp.rpy:1059
     old "I have a bug to report/gameplay suggestion"
-    new "I have a bug to report/gameplay suggestion"
+    new "我有游戏 错误/建议 要报告"
 
     # game/BKhelp.rpy:1132
     old "Tell me about brothel reputation and customers"
-    new "Tell me about brothel reputation and customers"
+    new "告诉我关于青楼的名声和顾客的说明"
 
     # game/BKhelp.rpy:1132
     old "Tell me about advertising, security and maintenance"
-    new "Tell me about advertising, security and maintenance"
+    new "告诉我关于广告、安全和维护的说明"
 
     # game/BKhelp.rpy:1132
     old "Tell me about girl performances"
-    new "Tell me about girl performances"
+    new "告诉我关于女孩表现的说明"
 
     # game/BKhelp.rpy:1196
     old "You've just had your first security event. Would you like to learn more about security events?"
-    new "You've just had your first security event. Would you like to learn more about security events?"
+    new "你刚刚经历了你的第一个安全事件。你想了解更多关于安全事件的信息吗？"
 
     # game/BKhelp.rpy:1277
     old "Tell me about the farm"
-    new "Tell me about the farm"
+    new "告诉我关于农场的说明"
 
     # game/BKhelp.rpy:1277
     old "Tell me about pens and facilities"
-    new "Tell me about pens and facilities"
+    new "告诉我关于围栏和设施的说明"
 
     # game/BKhelp.rpy:1277
     old "Tell me about minions and facilities"
-    new "Tell me about minions and facilities"
+    new "告诉我关于爪牙和设施的说明"
 
     # game/BKhelp.rpy:1277
     old "Tell me about girl training and rules"
-    new "Tell me about girl training and rules"
+    new "告诉我关于女孩训练和规则的说明"
 
     # game/BKhelp.rpy:1277
     old "Go back"
-    new "Go back"
+    new "返回"
 
     # game/BKhelp.rpy:1509
     old "Test event"
-    new "Test event"
+    new "测试事件"
 
     # game/BKhelp.rpy:1509
     old "Cheat modifier"
-    new "Cheat modifier"
+    new "作弊修改器"
 
     # game/BKhelp.rpy:1509
     old "Gold"
-    new "Gold"
+    new "金币"
 
     # game/BKhelp.rpy:1509
     old "Main character"
-    new "Main character"
+    new "玩家"
 
     # game/BKhelp.rpy:1509
     old "Girls"
-    new "Girls"
+    new "女孩"
 
     # game/BKhelp.rpy:1509
     old "Free girls"
-    new "Free girls"
+    new "自由女孩"
 
     # game/BKhelp.rpy:1509
     old "Items"
-    new "Items"
+    new "物品"
 
     # game/BKhelp.rpy:1509
     old "Tags"
-    new "Tags"
+    new "标签"
 
     # game/BKhelp.rpy:1509
     old "Others"
-    new "Others"
+    new "其他"
 
     # game/BKhelp.rpy:1606
     old "The cheat modifier is a float number affecting stat gains, xp, jp, reputation and gold earned by your girls. Use it to adjust the difficulty level (e.g.: a modifier of 1.5 gives your girl a 50%% increase); a modifier of 0.75 decreases gains by 25%%)"
-    new "The cheat modifier is a float number affecting stat gains, xp, jp, reputation and gold earned by your girls. Use it to adjust the difficulty level (e.g.: a modifier of 1.5 gives your girl a 50%% increase); a modifier of 0.75 decreases gains by 25%%)"
+    new "作弊修改器是一个浮动的数字，影响你的女孩们的属性收益、xp、jp、声誉和金币收入。用它来调整难度等级 (例如：一个1.5的修改器使你的女孩增加了50%。); 修改器为0.75时，收益减少25%。)"
 
     # game/BKhelp.rpy:1606
     old "Set global cheat modifier"
-    new "Set global cheat modifier"
+    new "设置全局作弊修改器"
 
     # game/BKhelp.rpy:1606
     old "Set modifiers separately"
-    new "Set modifiers separately"
+    new "分别设置修改器"
 
     # game/BKhelp.rpy:1627
     old "Get 1,000 gold"
-    new "Get 1,000 gold"
+    new "获得1,000金币"
 
     # game/BKhelp.rpy:1627
     old "Get 10,000 gold"
-    new "Get 10,000 gold"
+    new "获得10,000金币"
 
     # game/BKhelp.rpy:1627
     old "Get 100,000 gold"
-    new "Get 100,000 gold"
+    new "获得100,000金币"
 
     # game/BKhelp.rpy:1627
     old "Custom amount"
-    new "Custom amount"
+    new "自定义金额"
 
     # game/BKhelp.rpy:1647
     old "Level MC"
-    new "Level MC"
+    new "玩家等级"
 
     # game/BKhelp.rpy:1647
     old "Reset interactions"
-    new "Reset interactions"
+    new "重置互动"
 
     # game/BKhelp.rpy:1647
     old "Check MC effects"
-    new "Check MC effects"
+    new "检查玩家效果"
 
     # game/BKhelp.rpy:1676
     old "Get naked"
-    new "Get naked"
+    new "脱光衣服"
 
     # game/BKhelp.rpy:1676
     old "Give girls perk points"
-    new "Give girls perk points"
+    new "给与特质点"
 
     # game/BKhelp.rpy:1676
     old "Give girls upgrade points"
-    new "Give girls upgrade points"
+    new "给与升级点"
 
     # game/BKhelp.rpy:1676
     old "Rank girls up"
-    new "Rank girls up"
+    new "提升品阶"
 
     # game/BKhelp.rpy:1676
     old "Level girls up"
-    new "Level girls up"
+    new "提升等级"
 
     # game/BKhelp.rpy:1676
     old "Job skill up"
-    new "Job skill up"
+    new "职业技能提升"
 
     # game/BKhelp.rpy:1676
     old "Raise libido and obedience"
-    new "Raise libido and obedience"
+    new "提高性欲和服从"
 
     # game/BKhelp.rpy:1676
     old "Raise sexual preferences"
-    new "Raise sexual preferences"
+    new "提高性偏好"
 
     # game/BKhelp.rpy:1676
     old "Set all girls to rest"
-    new "Set all girls to rest"
+    new "让所有女孩都得到休息"
 
     # game/BKhelp.rpy:1676
     old "Sell all girls"
-    new "Sell all girls"
+    new "出售所有女孩"
 
     # game/BKhelp.rpy:1676
     old "Give all girls a random job"
-    new "Give all girls a random job"
+    new "给所有女孩一份随机工作"
 
     # game/BKhelp.rpy:1676
     old "Fully rest girls"
-    new "Fully rest girls"
+    new "完全休息的女孩"
 
     # game/BKhelp.rpy:1676
     old "Reset girl interactions"
-    new "Reset girl interactions"
+    new "重置女孩互动"
 
     # game/BKhelp.rpy:1676
     old "Change love"
-    new "Change love"
+    new "修改爱情"
 
     # game/BKhelp.rpy:1676
     old "Change fear"
-    new "Change fear"
+    new "修改恐惧"
 
     # game/BKhelp.rpy:1676
     old "Force girl to run away"
-    new "Force girl to run away"
+    new "强迫女孩逃跑"
 
     # game/BKhelp.rpy:1788
     old "Get new free girls"
-    new "Get new free girls"
+    new "获得新的自由女孩"
 
     # game/BKhelp.rpy:1788
     old "Update free girls"
-    new "Update free girls"
+    new "更新自由女孩"
 
     # game/BKhelp.rpy:1788
     old "Cycle free girls"
-    new "Cycle free girls"
+    new "转换自由女孩位置"
 
     # game/BKhelp.rpy:1788
     old "List free girls"
-    new "List free girls"
+    new "列出自由女孩"
 
     # game/BKhelp.rpy:1821
     old "Refresh shops"
-    new "Refresh shops"
+    new "刷新商店"
 
     # game/BKhelp.rpy:1821
     old "Get all items"
-    new "Get all items"
+    new "获取所有物品"
 
     # game/BKhelp.rpy:1821
     old "Get item"
-    new "Get item"
+    new "获得物品"
 
     # game/BKhelp.rpy:1821
     old "Clear items"
-    new "Clear items"
+    new "清空物品"
 
     # game/BKhelp.rpy:1821
     old "Build all furniture"
-    new "Build all furniture"
+    new "建造所有的家具"
 
     # game/BKhelp.rpy:1863
     old "Check girls for missing pictures (main)"
-    new "Check girls for missing pictures (main)"
+    new "检查女孩的图片是否缺失 (主要)"
 
     # game/BKhelp.rpy:1863
     old "Check girls for missing pictures (optional)"
-    new "Check girls for missing pictures (optional)"
+    new "检查女孩的图片是否缺失 (可选)"
 
     # game/BKhelp.rpy:1863
     old "Check untagged girl pics"
-    new "Check untagged girl pics"
+    new "检查无标记的女孩图片"
 
     # game/BKhelp.rpy:1863
     old "Check tags for duplicates"
-    new "Check tags for duplicates"
+    new "检查标签是否重复"
 
     # game/BKhelp.rpy:1894
     old "Test brothel events"
-    new "Test brothel events"
+    new "测试青楼事件"
 
     # game/BKhelp.rpy:1894
     old "Change brothel reputation"
-    new "Change brothel reputation"
+    new "修改青楼名声"
 
     # game/BKhelp.rpy:1894
     old "Refresh slave market"
-    new "Refresh slave market"
+    new "刷新奴隶市场"
 
     # game/BKhelp.rpy:1894
     old "Refresh postings"
-    new "Refresh postings"
+    new "刷新外派"
 
     # game/BKhelp.rpy:1894
     old "Toggle secret locations"
-    new "Toggle secret locations"
+    new "直达秘密地点"
 
     # game/BKhelp.rpy:1894
     old "Skip time"
-    new "Skip time"
+    new "跳过时间"
 
     # game/BKhelp.rpy:1894
     old "Advance to chapter"
-    new "Advance to chapter"
+    new "推进章节"
 
     # game/BKhelp.rpy:1894
     old "Change goal"
-    new "Change goal"
+    new "改变目标"
 
     # game/BKhelp.rpy:1894
     old "Check goals"
-    new "Check goals"
+    new "检查目标"
 
     # game/BKhelp.rpy:1894
     old "List available story events"
-    new "List available story events"
+    new "列出可用事件列表"
 
     # game/BKhelp.rpy:1894
     old "Check active brothel effects"
-    new "Check active brothel effects"
+    new "检查已激活的青楼效果"
 
     # game/BKhelp.rpy:1894
     old "Add minion"
-    new "Add minion"
+    new "添加奴仆"
 
     # game/BKhelp.rpy:1894
     old "Get resources"
-    new "Get resources"
+    new "获取资源"
 
     # game/BKhelp.rpy:1894
     old "Wound minions"
-    new "Wound minions"
+    new "受伤的奴仆"
 
     # game/BKhelp.rpy:1939
     old "What type of goal are you going to achieve?"
-    new "What type of goal are you going to achieve?"
+    new "你打算实现哪种类型的目标？"
 
     # game/BKhelp.rpy:1939
     old "Raise gold"
-    new "Raise gold"
+    new "筹集资金"
 
     # game/BKhelp.rpy:1939
     old "Rank up your girls"
-    new "Rank up your girls"
+    new "给你的女孩升阶"
 
     # game/BKhelp.rpy:1939
     old "Raise brothel reputation"
-    new "Raise brothel reputation"
+    new "提高青楼的名声"
 
     # game/BKhelp.rpy:1939
     old "Raise player prestige"
-    new "Raise player prestige"
+    new "提高玩家的声望"
 
     # game/BKhelp.rpy:2052
     old "Stables"
-    new "Stables"
+    new "马厩"
 
     # game/BKhelp.rpy:2052
     old "Pig stall"
-    new "Pig stall"
+    new "畜栏"
 
     # game/BKhelp.rpy:2052
     old "Monster den"
-    new "Monster den"
+    new "怪物巢穴"
 
     # game/BKhelp.rpy:2052
     old "Workshop"
-    new "Workshop"
+    new "车间"
 
     # game/BKhelp.rpy:2119
     old "Choose an option"
-    new "Choose an option"
+    new "选择一个选项"
 
     # game/BKhelp.rpy:2119
     old "Check all girl packs"
-    new "Check all girl packs"
+    new "检查所有的女孩包"
 
     # game/BKhelp.rpy:2119
     old "Check a specific girl pack"
-    new "Check a specific girl pack"
+    new "检查一个特定的女孩包"
 
     # game/BKhelp.rpy:2377
     old "Testing perks: [perk_text]"
-    new "Testing perks: [perk_text]"
+    new "测试奖励: [perk_text]"
 
     # game/BKhelp.rpy:2377
     old "Girls: [girl_nb]"
-    new "Girls: [girl_nb]"
+    new "女孩: [girl_nb]"
 
     # game/BKhelp.rpy:2377
     old "Duration: [duration] months"
-    new "Duration: [duration] months"
+    new "持续时间: [duration] 月"
 
     # game/BKhelp.rpy:2377
     old "Job: [jobs]"
-    new "Job: [jobs]"
+    new "工作: [jobs]"
 
     # game/BKhelp.rpy:2377
     old "Show events: [show_ev]"
-    new "Show events: [show_ev]"
+    new "显示事件: [show_ev]"
 
     # game/BKhelp.rpy:2377
     old "GO"
     new "GO"
-

@@ -833,10 +833,10 @@ label end_day:
             log.upkeep += girl.get_med_upkeep() * girl.get_effect("boost", "total upkeep") // 4
             girl.add_log("upkeep", girl.get_med_upkeep() * girl.get_effect("boost", "total upkeep") // 4)
 
-        gold_text = "你支付了 " + '{:,}'.format(round_int(log.upkeep)) + " 金币作为女孩的抚养费用"
+        gold_text = "你支付了 " + '{:,}'.format(round_int(log.upkeep)) + " 金币作为女孩的保养费用"
 
         if free_girl:
-            gold_text += " (免抚养费: " + free_girl.name + ")"
+            gold_text += " (免保养费: " + free_girl.name + ")"
 
         if working_girls:
             log.costs = brothel.get_adv_cost() + brothel.get_sec_cost() + brothel.get_maintenance_cost()
