@@ -1274,6 +1274,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                         $ jp_show = True
 
+
                     if jp_show:
                         $ jp_text = girl_related_dict[job.capitalize()] + " " + str(girl.job_level[job]) + " {image=img_star}"
 
@@ -1286,12 +1287,14 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     else:
                         use mybar(labl = jp_text, val = 0, _max = 0, col = None, col2 = None, x = 100)
 
+                    text "" size 2
 
             if context != "capture":
                 text ""
 
+            text "" size 2
 
-            text "主要技能" size 18
+            text "主要技能" size 20 yalign 0.0 font "bk.ttf"
 
             vbox:
                 spacing 0
@@ -1387,12 +1390,12 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                 # text "" size 6
 
             hbox spacing 14:
-                text "性爱技能" size 18 yalign 0.0
+                text "性爱技能" size 20 yalign 0.0 font "bk.ttf"
 
                 for act in ("group", "bisexual"):
 
                     if girl.does[act]:
-                        $ text1 = "{b}✓{/b}"
+                        $ text1 = "{b}{font=[gui.fuhao]}✓{/font}{/b}"
                     else:
                         $ text1 = ""
 
@@ -1456,7 +1459,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 if context == "girls":
 
                                     if girl.does[stat.name.lower()]:
-                                        $ text1 = "✓"
+                                        $ text1 = "{font=[gui.fuhao]}✓{/font}"
                                     else:
                                         $ text1 = ""
 
@@ -1508,7 +1511,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
 
             ## TRAITS LIST ##
-            textbutton "特质" text_color c_white text_size 18 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+            textbutton "特质列表" text_font "bk.ttf" text_color c_white text_size 20 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                 action NullAction()
                 if context != "free" or girl.MC_relationship_level >= 3:
                     hovered Show("trait_details", girl=girl)
@@ -1561,8 +1564,8 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         keyboard_focus False
 
             if context == "girls":
-                text "" size 3
-                text "保养费用" size 18
+                text "" size 2
+                text "保养费用" size 20 yalign 0.0 font "bk.ttf"
 
                 if girl.locked_upkeep:
                     text "她的保养费目前已被收回." size 14 italic True
@@ -1630,8 +1633,8 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 color c_emerald
 
             elif context == "farm":
-                text "" size 3
-                text "保养费用" size 18
+                text "" size 2
+                text "保养费用" size 20 yalign 0.0 font "bk.ttf"
 
                 hbox:
                     spacing 2
@@ -2525,7 +2528,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(75, 75), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text archetype_name_dict[archetype] size 12 selected_bold True color c_darkgrey selected_color c_black
+                        text archetype_name_dict[archetype] size 28 selected_outlines [ (2, "#fff", 0, 0) ] color c_darkgrey selected_color c_black font "bk.ttf"
 
 #        background girl.archetypes[selected_archetype].get_pic().get(800, 640)
         button background None xalign 0.5 yalign 0.5 xsize 800 yfill True ypadding 0 right_padding 0 right_margin 0 action NullAction():
@@ -2599,7 +2602,7 @@ screen perks(girl):
 
                         else:
                             vbox spacing 10:
-                                text archetype_name_dict[selected_archetype] size 18 bold True yalign 0.0
+                                text archetype_name_dict[selected_archetype] size 48 bold True yalign 0.0 font "bk.ttf"
                                 text archetype_description[selected_archetype] size 16 yalign 0.0
                                 text ""
 
@@ -3499,7 +3502,7 @@ screen brothel():
                     $ text1 += " 以及{b}" + '{:,}'.format(farm_upk) + "{/b}金币给农场里的女孩"
                 $ text1 += " (不考虑特殊效果)."
 
-                textbutton "日常开销: " + '{:,}'.format(bro_cost + bro_upk + farm_upk) + "金币" text_size 18 text_xalign 0.0 xalign 0.0 background c_ui_dark xsize 300 ysize 36 action NullAction() tooltip text1
+                textbutton "日常开销: {font=[gui.fuhao]}" + '{:,}'.format(bro_cost + bro_upk + farm_upk) + "{/font}金币" text_size 18 text_xalign 0.0 xalign 0.0 background c_ui_dark xsize 300 ysize 36 action NullAction() tooltip text1
                 textbutton brothel.name xalign 0.5 ypadding 5 action Return("change name") hovered tt.Action("单击此处可更改青楼的名称") #background "#00002277"
 
             hbox:
@@ -3870,7 +3873,7 @@ screen furniture():
                         $ dur = brothel.current_building.duration - (calendar.time - brothel.started_building)
                         button xfill False yfill False xalign 0.5 yalign 0.5 background None:
                             action NullAction()
-                            tooltip (brothel.current_building.description + "\n" + str(dur) + " day(s) to complete.")
+                            tooltip (brothel.current_building.description + "\n还有 " + str(dur) + " 天完成。")
                             add brothel.current_building.pic.get(50, 50) xalign 0.5 yalign 0.5
                             text str(dur) + "d" xalign 1.0 yalign 0.0 size 18
                     else:
@@ -3901,14 +3904,14 @@ screen furniture():
                     $ builds = [f for f in all_furniture if f.type == type and f.can_build()]
 
                     if builds:
-                        text "{b}" + type.capitalize() + "{/b} - {i}" + description size 14
+                        text "{b}" + setting_name_dict[type.capitalize()] + "{/b} - {i}" + description size 14
                         frame xfill True background c_ui_brown:
                             hbox spacing 6 box_wrap True:
                                 for furn in builds:
                                     if furn.duration < 2:
-                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)."
+                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)"
                                     else:
-                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)."
+                                        $ text2 = furn.description + " (" + str(furn.duration) + "天完成)"
                                     button xsize 110 ysize 90 xpadding 2 ypadding 2:
                                         action Return(furn)
                                         tooltip text2
@@ -3968,7 +3971,7 @@ screen brothel_options():
                                         hbox spacing 6 xalign 0.0:
                                             bar xsize 100 yalign 0.0 value FieldValue(pop, "weight", 5, action=Function(brothel.update_customer_count))
                                             text attract_pop_dict[pop.weight] color c_brown size 14 yalign 1.0
-                                        textbutton "平均预算: %s金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size 14 action NullAction() tooltip "这是%s的平均{b}最大预算{/b}. (用于娱乐的%s金币，用于嫖娼的%s金币)" % (pop.name, ent_budget, wh_budget)
+                                        textbutton "平均预算: %s金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size 14 action NullAction() tooltip "这是%s的平均{b}最大预算{/b}. (用于娱乐的%s金币，用于嫖娼的%s金币)" % (setting_name_dict[pop.name], ent_budget, wh_budget)
             vbox xsize 320:
                 text "{b}顾客偏好{/b}" size 18 yalign 0.0 drop_shadow (2, 2)
 
@@ -4013,7 +4016,7 @@ screen brothel_options():
                     elif game.matching_priority == "act":
                         $ text1 = "在可能的情况下，顾客将被匹配到允许其首选工作或性行为的女孩."
 
-                    textbutton "通过 %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="阶级", false_value="工作")
+                    textbutton "通过匹配%s" % setting_name_dict[game.matching_priority] action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
                     text text1 size 14 color c_prune
 
@@ -4031,7 +4034,7 @@ screen brothel_options():
                     hbox box_wrap True:
                         for furn in [f for f in brothel.furniture if f.can_deactivate]:
 
-                            button xsize 56 ysize 56 action Function(furn.toggle) tooltip "点击这里激活或停用%s.\n%s ({b}%s{/b})" % (furn.name, get_description("", furn.effects), {True: "active", False: "inactive"}[furn.active]):
+                            button xsize 56 ysize 56 action Function(furn.toggle) tooltip "点击这里激活或停用%s.\n%s ({b}%s{/b})" % (furniture_name_dict[furn.name], get_description("", furn.effects), {True: "激活", False: "停用"}[furn.active]):
 
                                 add furn.pic.get(50, 50) xalign 0.5 yalign 0.5
 
@@ -4367,7 +4370,7 @@ screen home():
                 style "gui_button"
 
                 if always_show_brothel_report:
-                    text "✓" size 14 xalign 0.5 yalign 0.5
+                    text "{font=[gui.fuhao]}✓{/font}" size 14 xalign 0.5 yalign 0.5
                 else:
                     text " " size 14 xalign 0.5
             text "显示青楼报告" size 14 xalign 0.0 yalign 0.5
@@ -5498,7 +5501,7 @@ screen girl_select(girl_list, orange = False, no_sched=False):
                                     if badge:
                                         add ProportionalScale(badge, 40, 40) xalign 0.9 yalign 0.1
 
-                        $ text1 = selected_girl.fullname + "\n品阶 " + rank_name[selected_girl.rank] + " - 等级 " + str(selected_girl.level)
+                        $ text1 = selected_girl.fullname + "\n阶级 " + rank_name[selected_girl.rank] + " - 等级 " + str(selected_girl.level)
 
                         if not no_sched:
                             if selected_girl.job:
@@ -6857,12 +6860,12 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         text ""
         text ""
 
-        text message size 40 font "SFBurlingtonScript.TTF" color c_black
+        text message size 20 font "bk.TTF" color c_black
 
         text ""
         text ""
 
-        text signature size 44 font "SFBurlingtonScript.TTF" xalign 1.0 color c_black
+        text signature size 24 font "bk.TTF" xalign 1.0 color c_black
 
 
 #### RESOURCES ####
@@ -7284,9 +7287,9 @@ screen free_girl_interact(girl):
 
         has vbox spacing 3
 
-        text "城市女孩互动" size 18 bold True
+        text "城市女孩互动" size 28 font "bk.ttf"
 
-        text "" size 14
+        text "" size 4
 
         hbox box_wrap True:
             $ choices = ["chat", "give", "flirt", "fun"]
@@ -7375,9 +7378,9 @@ screen girl_interact(girl, free=False):
 
         has vbox spacing 2
 
-        text "女孩互动" size 18 bold True
+        text "女孩互动" size 28 font "bk.ttf"
 #        text "Every interaction costs 1 AP" size 14 italic True
-        text "" size 14
+        text "" size 4
 
         hbox box_wrap True:
             if free:
@@ -7440,7 +7443,7 @@ screen girl_interact(girl, free=False):
                             else:
                                 $ ttip = "你可以使用高级训练来找出更多关于她的定点，并利用它们进行更快的训练."
 
-                            textbutton "Advanced" background None text_size 13:
+                            textbutton "高级训练" background None text_size 13:
                                 if topic.is_available(girl, "advanced", free)[0]:
                                     text_hover_underline True
                                     action Return([topic, "advanced"])

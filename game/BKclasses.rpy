@@ -1532,7 +1532,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + self.name.capitalize() + "{/b} (接待难度: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + setting_name_dict[self.name.capitalize()] + "{/b} (接待难度: " + self.get_difficulty() + "): " + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -3741,14 +3741,25 @@ init -2 python:
                 target = "所有技能上限值" if target == "all skill max" else target
                 text1 += "改变" + target + "到" + str(value)
                 if self.scope:
-                    text1 += "(%s)" % self.scope
+                    text1 += "(%s)" % setting_name_dict[self.scope]
                 return text1
 
             if self.type == "allow":
                 if target.endswith("preference"):
-                    text1 += "允许您增加客人的" + target + "到 +" + str(50*value) + "%。"
+                    target = "服务员偏爱" if target == "waitress preference" else target
+                    target = "舞娘偏爱" if target == "dancer preference" else target
+                    target = "按摩师偏爱" if target == "masseuse preference" else target
+                    target = "艺妓偏爱" if target == "geisha preference" else target
+                    target = "性服侍偏爱" if target == "service preference" else target
+                    target = "性交偏爱" if target == "sex preference" else target
+                    target = "肛交偏爱" if target == "anal preference" else target
+                    target = "皮绳愉虐偏爱" if target == "fetish preference" else target
+                    target = "群交偏爱" if target == "group preference" else target
+                    target = "百合偏爱" if target == "bisexual preference" else target
+                    target = "所有性行为偏爱" if target == "all sex acts preference" else target
+                    text1 += "允许您增加客人的" + target + "到 +" + str(50*value) + "%"
                 else:
-                    text1 += "允许'" + target + "'访问你的青楼。"
+                    text1 += "允许'" + setting_name_dict[target] + "'访问你的青楼"
 
                 return text1
 
@@ -3824,13 +3835,13 @@ init -2 python:
             if self.scope:
                 #text1 += self.scope + ""
                 #text1 += self.scope + " "
-                scopexxx =""
-                if self.scope=="brothel":
-                    scopexxx ="全青楼的"
-                elif self.scope=="city":
-                    scopexxx ="在城市中"
+                scopexxx = ""
+                if self.scope== "brothel":
+                    scopexxx = "全青楼的"
+                elif self.scope == "city":
+                    scopexxx = "在城市中"
                 else:
-                    scopexxx =self.scope
+                    scopexxx = self.scope
                 text1 += scopexxx + ""
             if target in ("rep", "reputation"):
                 target="人气"
@@ -3923,6 +3934,7 @@ init -2 python:
             target = "所有技能收益" if target == "all skill gains" else target
             target = "所有职业经验收益" if target == "all jp gains" else target
 
+            target = "露出偏爱增加" if target == "naked preference increase" else target
             target = "肛交偏爱增加" if target == "anal preference increase" else target
             target = "性交偏爱增加" if target == "sex preference increase" else target
             target = "性服侍偏爱增加" if target == "service preference increase" else target
@@ -3987,6 +3999,7 @@ init -2 python:
             target = "作为工作时所需服从" if target == "job obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
             target = "耐力消耗" if target == "tiredness" else target
+            target = "耐力消耗" if target == "energy use" else target
             target = "满足保养费时的效用" if target == "positive upkeep modifier" else target
             target = "怪物经验" if target == "monster xp" else target
             target = "野兽经验" if target == "beast xp" else target
@@ -4026,13 +4039,6 @@ init -2 python:
             target = "配饰增幅" if target == "accessory" else target
             target = "项链增幅" if target == "necklace" else target
             target = "戒指增幅" if target == "ring" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
-            target = "受伤损失" if target == "hurt" else target
 
             target = "保养费" if target == "upkeep" else target
             target = "受伤损失" if target == "hurt" else target
@@ -4046,6 +4052,24 @@ init -2 python:
             target = "群交概率" if target == "group chance" else target
             target = "作为工作时服从的预算" if target == "job obedience budget" else target
             target = "作为妓女时客户的预算" if target == "whore customer budget" else target
+            target = "客户活动 " if target == "customer events" else target
+            target = "疯狂" if target == "crazy" else target
+            target = "服务员偏爱" if target == "waitress preference" else target
+            target = "舞娘偏爱" if target == "dancer preference" else target
+            target = "按摩师偏爱" if target == "masseuse preference" else target
+            target = "艺妓偏爱" if target == "geisha preference" else target
+            target = "性服侍偏爱" if target == "service preference" else target
+            target = "性交偏爱" if target == "sex preference" else target
+            target = "肛交偏爱" if target == "anal preference" else target
+            target = "皮绳愉虐偏爱" if target == "fetish preference" else target
+            target = "群交偏爱" if target == "group preference" else target
+            target = "百合偏爱" if target == "bisexual preference" else target
+            target = "所有性行为偏爱" if target == "all sex acts preference" else target
+            target = "满意度" if target == "satisfaction" else target
+            target = "" if target == "" else target
+            target = "" if target == "" else target
+            target = "" if target == "" else target
+            target = "" if target == "" else target
 
             text1 += target
 
@@ -4088,7 +4112,7 @@ init -2 python:
                     elif self.scales_with in ("rep", "reputation"):
                         scalesxxx="随个人名声递增"
                     elif self.scales_with == "rank":
-                        scalesxxx="随品阶递增"
+                        scalesxxx="随阶级递增"
                     elif self.scales_with == "equipped": # Counts every piece of equipment
                         scalesxxx="随装备数递增"
                     elif self.scales_with == "district":
@@ -4882,7 +4906,7 @@ init -8 python:
                 return "需要获得 " + str(int(self.value)) + " 金币"
 
             elif self.type == "ranked":
-                return "需要有 " + str(self.target) + " 位女孩品阶达到 " + rank_name[self.value]
+                return "需要有 " + str(self.target) + " 位女孩阶级达到 " + rank_name[self.value]
 
             elif self.type == "reputation":
                 return "需要达到 " + str(self.value) + " 点青楼名声"
@@ -6805,7 +6829,7 @@ init -2 python:
             self.duration = duration
             if effects == None: effects = []
             self.effects = effects
-            self.description = "{b}" + self.name + "{/b}" + ": " + get_description(base_description, effects)
+            self.description = "{b}" + furniture_name_dict[self.name] + "{/b}" + ": " + get_description(base_description, effects)
             self.upgrade = upgrade
             self.built = False
             self.can_deactivate = can_deactivate
@@ -6845,9 +6869,9 @@ init -2 python:
                     brothel.furniture.remove(furniture_dict[self.upgrade])
                 brothel.deactivate_furniture(furniture_dict[self.upgrade])
                 if message:
-                    renpy.call_screen("OK_screen", title = "家具升级", message = self.upgrade + "已经升级到" + self.name + "了.\n\n" + self.description, pic = self.pic, pic_size = "large")
+                    renpy.call_screen("OK_screen", title = "家具升级", message = self.upgrade + "已经升级到" + self.name + "了。\n\n" + self.description, pic = self.pic, pic_size = "large")
             elif message:
-                renpy.call_screen("OK_screen", title = "家具制造", message = "一个新的" + self.name + "已经建成了.\n\n" + self.description, pic = self.pic, pic_size = "large")
+                renpy.call_screen("OK_screen", title = "家具制造", message = "一个新的" + self.name + "已经建成了。\n\n" + self.description, pic = self.pic, pic_size = "large")
             self.activate()
             test_achievement("furniture")
 

@@ -850,7 +850,7 @@ init -3 python:
                 text1 += ", " + d
 
         if len(text1) > 0 and text1[-1] not in (".", "!", "?"): #! Makes sure punctuation is added last.
-            text1 += "."
+            text1 += ""
 
         return text1
 

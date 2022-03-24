@@ -448,7 +448,7 @@ init -4 python:
                          "Normal" : "一般",
                          "Matchmaking" : "婚介",
                          "Customer" : "顾客",
-                         "Level/Job/Rank up" : "等级/职业/品阶提升",
+                         "Level/Job/Rank up" : "等级/职业/阶级提升",
                          "Health/Security" : "健康/安全",
                          "Satisfaction report" : "满意报告",
                          "Farm" : "农场",
@@ -477,6 +477,38 @@ init -4 python:
                          "altars" : "祭坛",
                          "Gizmos" : "小玩意",
                          "gizmos" : "小玩意",
+
+                         ## 客户群体 ##
+                         "Beggars" : "乞丐类" ,
+                         "beggars" : "乞丐类" ,
+                         "Thugs" : "暴徒类",
+                         "thugs" : "暴徒类",
+                         "Laborers" : "劳工类",
+                         "laborers" : "劳工类",
+                         "Sailors" : "水手类",
+                         "sailors" : "水手类",
+                         "Commoners" : "平民类",
+                         "commoners" : "平民类",
+                         "Craftsmen": "工匠类",
+                         "craftsmen": "工匠类",
+                         "Bourgeois" : "中产阶级",
+                         "bourgeois" : "中产阶级",
+                         "Guild members" : "公会阶级",
+                         "guild members" : "公会阶级",
+                         "Patricians" : "骑士阶级",
+                         "patricians" : "骑士阶级",
+                         "Aristocrats" : "男爵阶级",
+                         "aristocrats" : "男爵阶级",
+                         "Nobles" : "伯爵阶级",
+                         "nobles" : "伯爵阶级",
+                         "Royals" : "国王阶级",
+                         "royals" : "国王阶级",
+
+                         ## 杂项 ##
+                         "brothel" : "青楼",
+                         "farm" : "农场",
+                         "rank" : "阶级",
+                         "act" : "工作",
                          }
 
     ## 访问城市界面 ##
@@ -826,6 +858,8 @@ init -4 python:
                           "Strange machine" : "古怪的机器",
                           "Clockwork billboard" : "钟表广告牌",
                           }
+
+    ## 客户群体 ##
 
 #### BALANCE / CHEATS ####
 

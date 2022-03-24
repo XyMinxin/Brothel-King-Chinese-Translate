@@ -2863,7 +2863,7 @@ init -2 python:
             elif value < perk.value:
                 message += str(perk.value) + "必须先解锁才能获得更多额外特质。\n"
             elif self.rank < perk.min_rank:
-                message += self.name + "的品阶必须达到" + rank_name[perk.min_rank] + "才能获得这项特质。\n"
+                message += self.name + "的阶级必须达到" + rank_name[perk.min_rank] + "才能获得这项特质。\n"
             elif points < 1:
                 message = self.name + "没有足够的点数。"
             else:

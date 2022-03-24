@@ -760,7 +760,7 @@ translate chinese bis_introduction_ff9ff0da:
 translate chinese bis_introduction_9ba21507:
 
     # sill "During a threesome, the lucky customer will be extra happy and pay {b}[bonus] of the usual tip{/b}."
-    sill "在3P期间，幸运的顾客会特别高兴，并支付{b}通常小费的[bonus]{/b}。"
+    sill "在3P期间，幸运的顾客会特别高兴，并支付{b}[bonus]小费{/b}。"
 
 # game/BKhelp.rpy:572
 translate chinese bis_introduction_d680755a:
@@ -808,7 +808,7 @@ translate chinese group_introduction_b9132224:
 translate chinese group_introduction_b6488f89:
 
     # sill "During an orgy, customers will have fun but are not ready to pay your girl as much. Each customer will pay {b}[bonus] of the usual tip{/b}."
-    sill "在狂欢期间，顾客会玩得很开心，但不准备付给你的女孩那么多。每个顾客将支付{b}通常小费的[bonus]{/b}。"
+    sill "在狂欢期间，顾客会玩得很开心，但不准备付给你的女孩那么多。每个顾客将支付{b}[bonus]小费{/b}。"
 
 # game/BKhelp.rpy:597
 translate chinese group_introduction_2f427d86:
@@ -1516,7 +1516,7 @@ translate chinese help_postings_9be38b31:
 translate chinese help_postings_6e866826:
 
     # sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
-    sill "{b}课程{/b}可以提高你的女孩的{b}技能{/b}，也可以稍微提高她们的{b}声誉{/b}和{b}经验{/b}。."
+    sill "{b}课程{/b}可以提高你的女孩的{b}技能{/b}，也可以稍微提高她们的{b}声誉{/b}和{b}经验{/b}。"
 
 # game/BKhelp.rpy:1011
 translate chinese help_postings_a640924b:
@@ -2804,7 +2804,7 @@ translate chinese strings:
 
     # game/BKhelp.rpy:1676
     old "Rank girls up"
-    new "提升品阶"
+    new "提升阶级"
 
     # game/BKhelp.rpy:1676
     old "Level girls up"

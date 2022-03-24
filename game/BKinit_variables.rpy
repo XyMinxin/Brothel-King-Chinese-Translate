@@ -338,14 +338,14 @@ init -3 python:
                     "有些人在城里到处卖稀奇古怪的东西，甚至是怪物或动物.  我不知道你需要它们做什么. ",
                     "房中术(性技能)不能通过升级来提高.  唯一的途径就是用实战经验来提升它们. ",
                     "课程有助于更快地提高女孩的低级技能. ",
-                    "每个女孩都有自己的声望，与你的青楼声望不同.  声望是一个女孩晋升品阶的关键. ",
+                    "每个女孩都有自己的声望，与你的青楼声望不同.  声望是一个女孩晋升阶级的关键. ",
                     "提高女孩声望的最好方法是让她在外派任务中取得成功. ",
-                    "性奴隶获得来自奴隶工会的品阶评级.  品阶决定很多东西，包括最高等级和最高技能. ",
-                    "在品阶最低时，女孩的技能限制在50.  每增加一级，技能上限提高50点. ",
+                    "性奴隶获得来自奴隶工会的阶级评级.  阶级决定很多东西，包括最高等级和最高技能. ",
+                    "在阶级最低时，女孩的技能限制在50.  每增加一级，技能上限提高50点. ",
                     "当一个女孩升级时，她会根据她当前的等级获得技能点.  而且，她每升两级就会获得额外奖励. ",
                     "每升5级，就会有一个女孩获得额外的奖励点. ",
                     "无论如何，一位女孩的等级不可能超过25级. ",
-                    "我听说过在奴隶公会里关于一个神秘品阶的谣言，它的评价甚至高于'S'. ",
+                    "我听说过在奴隶公会里关于一个神秘阶级的谣言，它的评价甚至高于'S'. ",
                     "求你了，主人，千万不要让你的账户变成负数!我听说有些人会在你欠债的时候用一些见不得人的交易来引诱你，但那只会给你带来更多的麻烦. ",
                     "永远不要相信精灵.  别跟我说我没警告过你. ",
                     "在更高级别的职位上，融入新的女孩获得工作上的认可可能会很困难. 确保使用课程、物品、装扮和其他奖励来帮助新来的女孩迅速获得成功. ",
@@ -425,7 +425,7 @@ init -3 python:
                     "price" : ["价值", "price", "价值"],
                     "type" : ["类型", "filter", "物品类型"],
                     "level" : ["等级", "level", "女孩的等级"],
-                    "rank" : ["品阶", "rank", "奴隶的品阶"],
+                    "rank" : ["阶级", "rank", "奴隶的阶级"],
                     "job" : ["工作", "job_sort_value", "女孩的工作"],
                     "experience" : ["历练", "training_value", "性训练水平"],
                     }
@@ -785,7 +785,7 @@ init -4 python:
                     "M bourgeois" : ("操盘手", "簿记员", "草药医生", "店主", "客栈老板", "教士", "乡绅"),
                     "M guild members" : ("公会成员", "发明家", "魔术师", "奴隶贩子", "香料商人", "守卫队长"),
                     "M patricians" : ("航海家", "地主", "银行家", "市政府官员", "骑士", "主教"),
-                    "M aristocrats" : ("贵族", "勋爵", "绅士", "宫廷巫师", "廷臣", "城主", "公会会长"),
+                    "M aristocrats" : ("贵族", "男爵", "绅士", "宫廷巫师", "廷臣", "城主", "公会会长"),
                     "M nobles" : ("权贵", "伯爵", "名门家主", "骑士长", "大亨", "准伯爵", "子爵", "枢机主教"),
                     "M royals" : ("侯爵", "亲王", "总督", "公爵", "大主教", "苏丹"),
 
@@ -814,7 +814,7 @@ init -4 python:
                           5 : 1000,
                           }
 
-    attract_pop_dict = {0 : "      ", 1 : "A few ", 2: "Some  ", 3 : "Many  ", 4 : "A lot ", 5 : "Loads "}
+    attract_pop_dict = {0 : "", 1 : "些许", 2: "一些", 3 : "许多", 4 : "很多", 5 : "负载"}
 
     # Encounters are tuples with label (used with prefix "city_") and probability. Tuples can be used with multiple labels
 
@@ -1158,7 +1158,7 @@ init python:
 
                                 # Rewardable events
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color}).", discipline=False),
-                                "rank up" : GirlRecentEvent(type="rank up", action="获得新的品阶", base_description="她已经到了{color=[c_emerald]}品阶%s{/color}.", discipline=False),
+                                "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}.", discipline=False),
                                 "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}%s{/color}技能.", discipline=False),
                                 "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}(%s).", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
@@ -1313,24 +1313,24 @@ init python:
     # The dictionary uses nested lists to retain choices order
 
     interact_dict = {
-                    "chat" : ["{b}一般话题{/b}", "{b}私人话题{/b}", "{b}故事{/b}"],
-                    "{b}一般话题{/b}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
+                    "chat" : ["{font=[gui.yishu]}{size=18}一般话题{/font}", "{font=[gui.yishu]}{size=18}私人话题{/font}", "{font=[gui.yishu]}{size=18}女孩故事{/font}"],
+                    "{font=[gui.yishu]}{size=18}一般话题{/font}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
                                         GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与其他女孩相处", "slave_chat_other_girls", condition="other_girls"),
                                         ],
-                    "{b}私人话题{/b}" : [
+                    "{font=[gui.yishu]}{size=18}私人话题{/font}" : [
                                         GirlInteractionTopic("chat", "chat", "她的生活怎样", "slave_chat_well_being"),
                                         GirlInteractionTopic("chat", "chat", "她对你的感觉", "slave_chat_feelings"),
                                         GirlInteractionTopic("chat", "chat", "她的口味　　", "slave_chat_tastes"),
                                         GirlInteractionTopic("chat", "chat", "她的身世　　", "slave_chat_origins"),
                                     ],
-                    "{b}故事{/b}" : [GirlInteractionTopic("chat", "story", "再次聆听她的故事", "slave_chat_story", AP_cost=0, condition = "story")],
+                    "{font=[gui.yishu]}{size=18}女孩故事{/font}" : [GirlInteractionTopic("chat", "story", "再次聆听她的故事", "slave_chat_story", AP_cost=0, condition = "story")],
 
-                    "train" : ["{b}技能训练{/b}", "{b}性爱训练{/b}", "{b}特别训练{/b}"],
-                    "{b}技能训练{/b}" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
+                    "train" : ["{font=[gui.yishu]}{size=18}技能训练{/font}", "{font=[gui.yishu]}{size=18}性爱训练{/font}", "{font=[gui.yishu]}{size=18}特别训练{/font}"],
+                    "{font=[gui.yishu]}{size=18}技能训练{/font}" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
                                         GirlInteractionTopic("train", "train", "体格训练", "slave_train_constitution", act="constitution")],
-                    "{b}性爱训练{/b}" : [
+                    "{font=[gui.yishu]}{size=18}性爱训练{/font}" : [
                                         GirlInteractionTopic("train", "train", "露出　　", "slave_train_sex_acts", act="naked", advanced=True),
                                         GirlInteractionTopic("train", "train", "性服侍　", "slave_train_sex_acts", act="service", advanced=True),
                                         GirlInteractionTopic("train", "train", "性交　　", "slave_train_sex_acts", act="sex", advanced=True),
@@ -1339,16 +1339,16 @@ init python:
                                         GirlInteractionTopic("train", "train", "百合　　", "slave_train_sex_acts", act="bisexual", advanced=True),
                                         GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
-                    "{b}特别训练{/b}" : [GirlInteractionTopic("train", "train", "消除消极的固着", "slave_remove_fixation", condition="neg_fix")],
+                    "{font=[gui.yishu]}{size=18}特别训练{/font}" : [GirlInteractionTopic("train", "train", "消除消极的固着", "slave_remove_fixation", condition="neg_fix")],
 
-                    "magic" : ["{b}魔法技能训练{/b}", "{b}魔法性爱训练{/b}", "{b}选择方法{/b}"],
-                    "{b}选择方法{/b}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
-                    "{b}魔法技能训练{/b}" : [
+                    "magic" : ["{font=[gui.yishu]}{size=18}魔法技能训练{/font}", "{font=[gui.yishu]}{size=18}魔法性爱训练{/font}", "{font=[gui.yishu]}{size=18}选择方法{/font}"],
+                    "{font=[gui.yishu]}{size=18}选择方法{/font}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
+                    "{font=[gui.yishu]}{size=18}魔法技能训练{/font}" : [
                                                 GirlInteractionTopic("magic", "train", "服从训练", "slave_magic", act="obedience", gold_cost=20),
                                                 GirlInteractionTopic("magic", "train", "敏感培训", "slave_magic", act="sensitivity", gold_cost=20),
                                                 GirlInteractionTopic("magic", "train", "性欲训练", "slave_magic", act="libido", gold_cost=20),
                                                 ],
-                    "{b}魔法性爱训练{/b}" : [
+                    "{font=[gui.yishu]}{size=18}魔法性爱训练{/font}" : [
                                                 GirlInteractionTopic("magic", "train", "露出　　", "slave_magic", act="naked", advanced=True, gold_cost=20),
                                                 GirlInteractionTopic("magic", "train", "性服侍　", "slave_magic", act="service", advanced=True, gold_cost=40),
                                                 GirlInteractionTopic("magic", "train", "性交　　", "slave_magic", act="sex", advanced=True, gold_cost=50),
@@ -1358,8 +1358,8 @@ init python:
                                                 GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
-                    "react" : ["{b}鼓励{/b}", "{b}惩罚{/b}"],
-                    "{b}鼓励{/b}" : [
+                    "react" : ["{font=[gui.yishu]}{size=18}鼓励{/font}", "{font=[gui.yishu]}{size=18}惩罚{/font}"],
+                    "{font=[gui.yishu]}{size=18}鼓励{/font}" : [
                                     GirlInteractionTopic("react", "reward", "称赞她　　", "slave_reward_praise"),
                                     GirlInteractionTopic("react", "reward", "奖励她金币", "slave_reward_gold"),
                                     GirlInteractionTopic("react", "reward", "送给她礼物", "slave_reward_gift"),
@@ -1367,7 +1367,7 @@ init python:
                                     GirlInteractionTopic("react", "reward", "给她一天假", "slave_reward_day"),
                                     GirlInteractionTopic("react", "reward", "与她做爱　", "slave_reward_sex"),
                                     ],
-                    "{b}惩罚{/b}" : [
+                    "{font=[gui.yishu]}{size=18}惩罚{/font}" : [
                                     GirlInteractionTopic("react", "discipline", "辱骂她　　", "slave_punish_scold"),
                                     GirlInteractionTopic("react", "discipline", "剥夺她工资", "slave_punish_upkeep"),
                                     GirlInteractionTopic("react", "discipline", "强迫她裸体", "slave_punish_naked"),
@@ -1375,12 +1375,12 @@ init python:
                                     GirlInteractionTopic("react", "discipline", "强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送她去农场", "slave_punish_farm", condition="farm"),
                                     ],
-                    "misc" : ["{b}服装{/b}", "{b}主人卧室{/b}", "{b}DEBUG{/b}"],
-                    "{b}服装{/b}" : [
+                    "misc" : ["{font=[gui.yishu]}{size=18}服装{/font}", "{font=[gui.yishu]}{size=18}主人卧室{/font}", "{b}DEBUG{/b}"],
+                    "{font=[gui.yishu]}{size=18}服装{/font}" : [
                                     GirlInteractionTopic("misc", None, "让她脱光衣服", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
                                     GirlInteractionTopic("misc", None, "让她穿上衣服", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
                                     ],
-                    "{b}主人卧室{/b}" : [
+                    "{font=[gui.yishu]}{size=18}主人卧室{/font}" : [
                                         GirlInteractionTopic("misc", None, "把她送到你的卧室", "slave_master_bedroom_add", AP_cost=0, condition = "master_bedroom_add"),
                                         GirlInteractionTopic("misc", None, "让她离开你的卧室", "slave_master_bedroom_remove", AP_cost=0, condition = "master_bedroom_remove")
                                         ],
@@ -1392,48 +1392,48 @@ init python:
 
 
     free_interact_dict = {
-                            "chat" : ["{b}一般话题{/b}", "{b}私人话题{/b}", "{b}DEBUG{/b}"],
-                            "{b}一般话题{/b}" : [GirlInteractionTopic("chat", "chat", "闲聊", "free_chat_small_talk"),
+                            "chat" : ["{font=[gui.yishu]}{size=18}一般话题{/font}", "{font=[gui.yishu]}{size=18}私人话题{/font}", "{b}DEBUG{/b}"],
+                            "{font=[gui.yishu]}{size=18}一般话题{/font}" : [GirlInteractionTopic("chat", "chat", "闲聊", "free_chat_small_talk"),
                                                 GirlInteractionTopic("chat", "chat", "八卦", "free_chat_gossip"),
                                                 GirlInteractionTopic("chat", "chat", "生命", "free_chat_life"),# love_test=5),
                                                 GirlInteractionTopic("chat", "chat", "爱好", "free_chat_love"),# love_test=5),
                                                 ],
-                            "{b}私人话题{/b}" : [
+                            "{font=[gui.yishu]}{size=18}私人话题{/font}" : [
                                                 GirlInteractionTopic("chat", "chat", "她的身世　　", "free_chat_origins", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她的爱好　　", "free_chat_hobbies", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她不喜欢什么", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "fun" : ["{b}笑话{/b}", "{b}接触{/b}", "{b}PLAY{/b}"],
-                            "{b}笑话{/b}" : [
+                            "fun" : ["{font=[gui.yishu]}{size=18}笑话{/font}", "{font=[gui.yishu]}{size=18}接触{/font}", "{font=[gui.yishu]}{size=18}PLAY{/font}"],
+                            "{font=[gui.yishu]}{size=18}笑话{/font}" : [
                                         GirlInteractionTopic("fun", "joke", "无关紧要", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "成人", "free_joke_adult", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "黑暗", "free_joke_dark", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "刻薄", "free_joke_mean", love_test=15),
                                         ],
-                            "{b}接触{/b}" : [
+                            "{font=[gui.yishu]}{size=18}接触{/font}" : [
                                         GirlInteractionTopic("fun", "touch", "握住她的手　", "free_touch_hand", love_test=40),
                                         GirlInteractionTopic("fun", "touch", "亲吻她　　　", "free_touch_kiss", relationship_level=2),
                                         GirlInteractionTopic("fun", "touch", "拍打她的屁股", "free_touch_ass", love_test=55, relationship_level=3),
                                         GirlInteractionTopic("fun", "touch", "抚摸她的胸部", "free_touch_breasts", love_test=60, relationship_level=3),
                                         GirlInteractionTopic("fun", "touch", "触摸她的私处", "free_touch_pussy", love_test=65, relationship_level=3),
                                         ],
-                            "{b}PLAY{/b}" : [
+                            "{font=[gui.yishu]}{size=18}PLAY{/font}" : [
                                         GirlInteractionTopic("fun", "play", "让她脱光衣服", "free_play", act="naked", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求她性服侍", "free_play", act="service", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求她来做爱", "free_play", act="sex", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求进行肛交", "free_play", act="anal", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求她来SM　", "free_play", act="fetish", relationship_level=4),
                                         ],
-                            "flirt" : ["{b}赞美{/b}", "{b}关于性的话题{/b}"],
+                            "flirt" : ["{font=[gui.yishu]}{size=18}赞美{/font}", "{font=[gui.yishu]}{size=18}关于性的话题{/font}"],
 
-                            "{b}赞美{/b}" : [
+                            "{font=[gui.yishu]}{size=18}赞美{/font}" : [
                                         GirlInteractionTopic("flirt", "compliment", "赞扬她的美貌", "free_flirt_beauty", relationship_level=1),
                                         GirlInteractionTopic("flirt", "compliment", "赞美她的身材", "free_flirt_body", relationship_level=1),
                                         GirlInteractionTopic("flirt", "compliment", "赞美她的心灵", "free_flirt_mind", relationship_level=1),
                                         GirlInteractionTopic("flirt", "compliment", "赞美她的精神", "free_flirt_spirit", relationship_level=1),
                                         ],
-                            "{b}关于性的话题{/b}" : [
+                            "{font=[gui.yishu]}{size=18}关于性的话题{/font}" : [
                                                 GirlInteractionTopic("flirt", "chat about sex", "她的性经验", "free_flirt_sex_experience", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "她的性趣　", "free_flirt_sex_tastes", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "露出　　　", "free_flirt_sex_act", act="naked", love_test=55),
@@ -1444,12 +1444,12 @@ init python:
                                                 GirlInteractionTopic("flirt", "chat about sex", "百合　　　", "free_flirt_sex_act", act="bisexual", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "群交　　　", "free_flirt_sex_act", act="group", love_test=55),
                                                 ],
-                            "give" : ["{b}给予{/b}", "{b}提议{/b}"],
-                            "{b}给予{/b}" : [
+                            "give" : ["{font=[gui.yishu]}{size=18}给予{/font}", "{font=[gui.yishu]}{size=18}提议{/font}"],
+                            "{font=[gui.yishu]}{size=18}给予{/font}" : [
                                         GirlInteractionTopic("give", "gift", "送她礼物", "free_give_gift", love_test=20),
                                         GirlInteractionTopic("give", "gold", "给她金币", "free_give_gold", love_test=20),
                                         ],
-                            "{b}提议{/b}" : [GirlInteractionTopic("give", "offer", "为她提供工作", "free_offer_job", love_test=90, relationship_level=5),],
+                            "{font=[gui.yishu]}{size=18}提议{/font}" : [GirlInteractionTopic("give", "offer", "为她提供工作", "free_offer_job", love_test=90, relationship_level=5),],
                             "{b}DEBUG{/b}" : [GirlInteractionTopic("give", None, "Change love", "interaction_cheat_love", AP_cost=0, condition="debug_mode"),
                                         GirlInteractionTopic("give", None, "Reset girl interactions", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
                                         GirlInteractionTopic("give", None, "Reset MC interactions", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
@@ -2411,7 +2411,7 @@ init -4 python:
                         "rep" : "\n人气 {color=[c_softpurple]}+%s{/color}",
                         "rep_neg" : "\n人气 {color=[c_red]}%s{/color}",
                         "job_up" : "\n{color=[c_orange]}工作技能等级提升{/color}",
-                        "rank" : "\n{color=[c_softpurple]}品阶可提升{/color}"
+                        "rank" : "\n{color=[c_softpurple]}阶级可提升{/color}"
                         }
 
     # Contrast colors are for lighter backgrounds
@@ -2433,7 +2433,7 @@ init -4 python:
     log_event_dict = {
                         "level" : "{color=[c_orange]}%s达到了一个新等级.{/color}",
                         "job_up" : "{color=[c_orange]}%s增加了她的 %s 技能.{/color}",
-                        "rank" : "{color=[c_orange]}%s已经准备好提升品阶.{/color}"
+                        "rank" : "{color=[c_orange]}%s已经准备好提升阶级.{/color}"
                         }
 
     attraction_dict = {
