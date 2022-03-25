@@ -3587,7 +3587,7 @@ screen brothel():
 
                             $ adv_bonus = brothel.get_effect("change", "advertising")
                             if adv_bonus != 0:
-                                $ text1 = " ({color=[c_green]}+" + str(adv_bonus) + "{/color}名来自女孩们)"
+                                $ text1 = " ({color=[c_green]}+" + str(adv_bonus) + "{/color} 来自女孩们)"
                             else:
                                 $ text1 = ""
                             $ text2 = brothel.get_adv_cost()
@@ -3607,7 +3607,7 @@ screen brothel():
 
                             $ sec_bonus = brothel.get_effect("change", "security")
                             if sec_bonus != 0:
-                                $ text1 = " ({color=[c_green]}+" + str(sec_bonus) + "{/color} from girls)"
+                                $ text1 = " ({color=[c_green]}+" + str(sec_bonus) + "{/color} 来自女孩们)"
                             else:
                                 $ text1 = ""
                             $ text2 = brothel.get_sec_cost()

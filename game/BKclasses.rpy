@@ -4050,7 +4050,7 @@ init -2 python:
             target = "小费总额" if target == "total tip" else target
             target = "百合概率" if target == "bisexual chance" else target
             target = "群交概率" if target == "group chance" else target
-            target = "作为工作时服从的预算" if target == "job obedience budget" else target
+            target = "作为工作时客户的预算" if target == "job customer budget" else target
             target = "作为妓女时客户的预算" if target == "whore customer budget" else target
             target = "客户活动 " if target == "customer events" else target
             target = "疯狂" if target == "crazy" else target
@@ -4066,7 +4066,6 @@ init -2 python:
             target = "百合偏爱" if target == "bisexual preference" else target
             target = "所有性行为偏爱" if target == "all sex acts preference" else target
             target = "满意度" if target == "satisfaction" else target
-            target = "" if target == "" else target
             target = "" if target == "" else target
             target = "" if target == "" else target
             target = "" if target == "" else target
