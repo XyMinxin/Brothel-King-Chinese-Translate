@@ -4,235 +4,235 @@
 translate chinese security_488f4983:
 
     # security "{color=[c_red]}[brothel.name] is being raided by [attackers]!{/color}\nYou rush outside with the defenders."
-    security "{color=[c_red]}[brothel.name]正在被[attackers]!{/color}突袭\n你和守卫一起冲出去。"
+    security "{color=[c_red]}[brothel.name] 正在被 [attackers]袭击！{/color}\n你和保安人员一起冲了出去。"
 
 # game/BKsecurity.rpy:68
 translate chinese security_56178303:
 
     # security "Your first assault breaks their line and they quickly scatter. That's when you hear a scream."
-    security "你的第一次进攻打破了他们的防线，他们很快就散开了。这时你听到一声尖叫。"
+    security "你的第一次进攻就打破了他们的阵型，他们很快就被驱散了。这时你听到了一声尖叫。"
 
 # game/BKsecurity.rpy:71
 translate chinese security_e458fe67:
 
     # ev_girl1 "EEEEK!" with vpunch
-    ev_girl1 "EEEEK !" with vpunch
+    ev_girl1 "啊！" with vpunch
 
 # game/BKsecurity.rpy:77
 translate chinese security_af6afeb1:
 
     # security "Some of the attackers have sneaked out the back of [brothel.name] while the security guards were distracted! You rush back to the brothel to help.\n{color=[c_red]}[girl_nb] of your girls are under attack, but you can only help one!{/color}"
-    security "一些袭击者趁保安人员分散注意力的时候从[brothel.name]后面溜了出来。你冲回青楼帮忙。\n{color=[c_red]}[girl_nb]个女孩受到攻击，但你只能帮助一个!{/color}"
+    security "原来趁保安们一不留神，几名袭击者从[brothel.name]的后面溜了进去！你连忙冲回去帮忙。\n{color=[c_red]}[girl_nb]你的女孩们正在受到攻击，但你第一时间却只能帮助其中一个！{/ color}"
 
 # game/BKsecurity.rpy:100
 translate chinese security_80691383:
 
     # girl.char "EEEEK!!! Master, help me!" with vpunch
-    girl.char "EEEEK!!! Master, help me!" with vpunch
+    girl.char "啊！！！主人，救救我！" with vpunch
 
 # game/BKsecurity.rpy:120
 translate chinese security_bba71714:
 
     # "You reach [girl.fullname] just in time to confront her attacker."
-    "你到达[girl.fullname]正好赶上她的攻击者。"
+    "你迅速赶到了[girl.fullname]的身前。"
 
 # game/BKsecurity.rpy:153
 translate chinese security_29f7943f:
 
     # "With righteous fury, you cut down your opponent before he has a chance to react.\n{color=[c_green]}[girl.name] is safe.{/color}"
-    "带着正义的愤怒，你在对手有机会反击之前就把他打倒了。\n{color=[c_green]}[girl.name]安全了。{/color}"
+    "你气坏了，对手还没反应过来就被你一个猛击解决掉了。\n{color=[c_green]}[girl.name]安全了。{/color}"
 
 # game/BKsecurity.rpy:160
 translate chinese security_3a5817a1:
 
     # "Your opponent strikes the air out of you with a mighty blow from [hit]. You are sent flying backwards. Your head hits something hard."
-    "你的对手用[hit]强力一击差点把你打得吐血。你被击退。你的头撞到什么东西了。"
+    "你的对手用[hit]强力一击击破了你招架的姿势。你被击飞出去，脑袋不知撞到了什么上。"
 
 # game/BKsecurity.rpy:182
 translate chinese security_f2d17201:
 
     # "The assailant is pulverized by a mighty bolt of lightning from your staff. {color=[c_green]}[girl.name] is safe.{/color}"
-    "攻击者被你杖上的闪电击碎。{color=[c_green]}[girl.name]安全了。{/color}"
+    "攻击者被你法杖上发出的强大闪电击碎。\n{color=[c_green]}[girl.name] 安全了。{/color}"
 
 # game/BKsecurity.rpy:187
 translate chinese security_9f42b6fb:
 
     # "As you try to cast a spell, you realize too late your opponent is protected by a magic ward. He hits you hard with [hit], sending you crumbling on the floor."
-    "当你正试图施法时，你意识到你的对手被魔法护盾保护着。它用[hit]狠狠地给了你一下，把你打到在地。"
+    "当你马上念完咒语时才发现对方身上的魔法护盾，不过为时已晚。他无视了你的法术，用[hit]向你打了过来，你被打倒在地上。"
 
 # game/BKsecurity.rpy:208
 translate chinese security_873ed07b:
 
     # "[girl.fullname] is left alone, but her magic shield blinded her attacker and protected her from harm."
-    "[girl.fullname]被单独留下，但她的魔法盾蒙蔽了她的攻击者，保护她免受伤害。"
+    "[girl.fullname]被单独留下，但她的魔法盾阻挡了她的攻击者，保护她免受伤害。"
 
 # game/BKsecurity.rpy:228
 translate chinese security_67702c78:
 
     # "[girl.fullname] is left to fend alone for herself, but she is far from defenseless. Attacking from behind while your opponent is busy pummeling you, she stabs him in the back repeatedly, and he runs away squealing."
-    "[girl.fullname]被留下独自照料自己，但她远非毫无防备。当你的对手正忙着打你的时候，她从后面攻击，她在他的背后反复刺他，他尖叫着跑开了。"
+    "[girl.fullname]被留下独自照料自己，但她并没有坐以待毙。当你的对手忙着攻击你的时候，她绕到了敌人的背后朝着敌人刺去！敌人因为疼痛尖叫了起来，扭头逃跑。"
 
 # game/BKsecurity.rpy:248
 translate chinese security_11843d26:
 
     # "[girl.fullname] is left to fend alone for herself. She tries to grab a stick for defense, but her opponent swipes it away effortlessly."
-    "[girl.fullname] is left to fend alone for herself. She tries to grab a stick for defense, but her opponent swipes it away effortlessly."
+    "[girl.fullname]只能自己保护自己了，她试图用一根扫帚进行防御，但对手一挥手就打飞了她的武器。"
 
 # game/BKsecurity.rpy:250
 translate chinese security_f884565c:
 
     # girl.char "Nooo!!!" with vpunch
-    girl.char "不! ! !" with vpunch
+    girl.char "不！！！" with vpunch
 
 # game/BKsecurity.rpy:352
 translate chinese security_5b9e38f3:
 
     # "You're standing on the doorstep of your brothel, ready to greet customers. Long minutes pass... But still, no one comes. You have a bad feeling about this."
-    "你站在青楼门口，准备迎接顾客。长时间的分钟过去……但是仍然没有人来。你对此有一种不好的感觉。"
+    "你站在青楼门口，准备迎接顾客。时间的一分一秒的过去……但是，没有一个人到来。你心底渐渐地升起一种不祥的预感。"
 
 # game/BKsecurity.rpy:356
 translate chinese security_4b056c75:
 
     # sill sad "Master! Look!"
-    sill sad "主人!看!"
+    sill sad "主人！你看！"
 
 # game/BKsecurity.rpy:362
 translate chinese security_9941483a:
 
     # "First a couple silhouettes emerge on the horizon, then three, then four, and suddenly a large force of soldiers and monsters is massing in the streets facing your brothel."
-    "先是几个人影出现在地平线上，然后是三个，然后是四个，突然一大群士兵和怪物聚集在你青楼对面的街道上。"
+    "先是两个人影出现在远方的地平线上，然后是三个、四个，几乎是一瞬间，一大群士兵和怪物便聚集在你青楼对面的街道上。"
 
 # game/BKsecurity.rpy:364
 translate chinese security_40d05f1c:
 
     # "A security guard comes running towards you as if firehounds from the seven hells were on his heels."
-    "一名保安向你跑来，就好像七层地狱的猎狗紧追不舍。"
+    "一名守卫连滚带爬地朝你跑过来，就好像在被恶鬼追赶。"
 
 # game/BKsecurity.rpy:366
 translate chinese security_6a73366b:
 
     # guard "Boss! I counted [enemies] of them. And they also have [war_machines] war machines! They are led by [enemy_general.fullname], a renowned [enemy_g]."
-    guard "老板!我把他们[enemies]。他们也有[war_machines]战争机器!他们由将军率领。一个著名的[enemy_g]。"
+    guard "老板！我们要跟[enemies]名敌人开战么？ 他们有[war_machines]台战争器械！领导他们的可是[enemy_general.fullname]！他可是出名的[enemy_g]！"
 
 # game/BKsecurity.rpy:368
 translate chinese security_d7897846:
 
     # you "Damn it, mercenaries! They're besieging us! Quick, get the girls inside, gather everyone, and get in battle formation!"
-    you "该死的,雇佣兵!他们围攻我们!快，把姑娘们带进去，集合所有人，排成战斗队形!"
+    you "该死，是雇佣兵！他们要围攻我们！快，让女孩们躲进去，集合所有人，排成战斗队形！"
 
 # game/BKsecurity.rpy:371
 translate chinese security_9296ec4b:
 
     # security "{b}Battle Phase 1{/b}\nYou must defend the Brothel! What do you do?" nointeract
-    security "{b}你必须保卫青楼!{/b}\n你是做什么的?" nointeract
+    security "{b}战斗阶段1{/b}\n你必须保卫你的财产！你要怎么做？" nointeract
 
 # game/BKsecurity.rpy:376
 translate chinese security_f144d3fa:
 
     # you "To battle!!!" with vpunch
-    you "战斗! ! !" with vpunch
+    you "准备战斗！！！" with vpunch
 
 # game/BKsecurity.rpy:384
 translate chinese security_3ec535f6:
 
     # you "C'm'on baby, light my fire!"
-    you "来吧，宝贝，点燃我的激情!"
+    you "来吧，小伙子们，让他们见识下我们的怒火！"
 
 # game/BKsecurity.rpy:386
 translate chinese security_cdc6eb7a:
 
     # you "Let's see how well those machines burn!"
-    you "让我们看看这些机器烧得有多好!"
+    you "让我们看看这些大家伙机器是不是能比那些烂木头更耐烧！"
 
 # game/BKsecurity.rpy:402
 translate chinese security_2266e5fc:
 
     # "Your speech galvanizes your troops and they raise their swords as one in defiance. Their morale is {b}very high{/b}."
-    "你的演讲激励了你的军队，他们举起了剑以示反抗。他们的士气{b}高昂{/b}。"
+    "你的演讲激励了你的队伍，他们举起了他们的剑，一起怒吼！他们的士气{b}非常高{/b}。"
 
 # game/BKsecurity.rpy:405
 translate chinese security_fe6499fb:
 
     # "Your troops are energized by your speech. Their morale is {b}high{/b}."
-    "你的演讲使你的部队充满活力。他们士气{b}很高{/b}。"
+    "你的演讲激励了你的队伍，他们的士气{b}很高{/b}。"
 
 # game/BKsecurity.rpy:408
 translate chinese security_30d80a11:
 
     # "Your speech helps a little, but you can see your troops are nervous in the face of battle. Morale improved slightly."
-    "你的演讲有一点帮助，但你可以看到你的部队在面对战斗时很紧张。士气略有改善。"
+    "你的演讲起了点效果，但你发现他们在面对这种战斗时依然很紧张。士气略有改善。"
 
 # game/BKsecurity.rpy:415
 translate chinese security_f19c5383:
 
     # you "Leave their general to me... I will end this!" with vpunch
-    you "把他们的将军留给我……我要结束这一切!" with vpunch
+    you "把他们的将军交给我…我会结束这一切!" with vpunch
 
 # game/BKsecurity.rpy:421
 translate chinese security_df5fe76e:
 
     # you "Leave the magic user to me... I will deal with her!" with vpunch
-    you "把这个神奇的用户留给我吧……我会对付她的!" with vpunch
+    you "把那个法师留给我……我来对付她!" with vpunch
 
 # game/BKsecurity.rpy:427
 translate chinese security_771685c0:
 
     # "Rushing up the stairs, you run for the brothel battlements."
-    "你冲上楼梯，奔向青楼城垛。"
+    "你冲上楼梯，奔向青楼楼顶的城垛。"
 
 # game/BKsecurity.rpy:429
 translate chinese security_157c264f:
 
     # you "To say they called me crazy when I insisted the brothel needed battlements! Ha!"
-    you "当我坚持认为青楼需要城垛时，他们说我疯了!哈!"
+    you "当我坚持要给青楼建城垛的时候，他们说我疯了！哼！"
 
 # game/BKsecurity.rpy:431
 translate chinese security_61bb90fa:
 
     # "Reaching atop the battlements, you get a field view of the battle. The siege engines are getting ready to fire at your troops. You lift your staff into the air and ready a spell."
-    "登上城垛，你可以看到战场的全景。攻城车正准备向你的部队开火。你把魔杖举到空中，准备念咒语。"
+    "登上城垛，你可以看到战场的全景。攻城车正准备向你的队伍开火。你把魔杖举到空中，准备施法。"
 
 # game/BKsecurity.rpy:435
 translate chinese security_d8ac240c:
 
     # you "Burn, burn, yes ya gonna burn!"
-    you "燃烧，燃烧，是的，你会燃烧!"
+    you "火焰，更大的火焰，对，都给我烧起来！"
 
 # game/BKsecurity.rpy:437
 translate chinese security_10fa092a:
 
     # you "You think you're safe uphill? Ha! PYROBLAST!" with vpunch
-    you "你觉得上山安全吗?哈!PYROBLAST !" with vpunch
+    you "蠢蛋，他们觉得那里就安全了吗？哈！火焰爆炸！！！" with vpunch
 
 # game/BKsecurity.rpy:447
 translate chinese security_733ed97b:
 
     # security_breach "Your fireball hits the ground near the war machines and sets fire to the grass. However, some of the mercenaries stand ready with water buckets and they quickly extinguish the fire."
-    security_breach "Your fireball hits the ground near the war machines and sets fire to the grass. However, some of the mercenaries stand ready with water buckets and they quickly extinguish the fire."
+    security_breach "你的火球击中了那些战争机器旁的地面，点燃了附近的街道。然而，那些雇佣兵早就准备好了水桶，他们迅速地扑灭了火势。"
 
 # game/BKsecurity.rpy:449
 translate chinese security_f0beac49:
 
     # you "Damn!"
-    you "该死的!"
+    you "该死！"
 
 # game/BKsecurity.rpy:451
 translate chinese security_c112ec25:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}战斗阶段2{/b}\n战争机器准备射击。"
+    security_breach "{b}战斗阶段2{/b}\n战争机器准备开火了。"
 
 # game/BKsecurity.rpy:464
 translate chinese security_52ddb799:
 
     # security "Your fireball hits right into the midst of the war machines, sending [destroyed] of them up in flames."
-    security "你的火球正好击中了战争机器的中央，用[destroyed]把它们烧成一片火海。"
+    security "你的火球正好在那些战争机器中间炸裂开来，[destroyed]部机器燃烧起来连成一片火海。"
 
 # game/BKsecurity.rpy:467
 translate chinese security_311bad63:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe remaining war machines get ready to fire."
-    security_breach "{b}战斗阶段2{/b}\n其余的战争机器准备开火。"
+    security_breach "{b}战斗阶段2{/b}\n剩余的战争机器准备开火。"
 
 # game/BKsecurity.rpy:469
 translate chinese security_5363af40:
@@ -244,217 +244,217 @@ translate chinese security_5363af40:
 translate chinese security_c112ec25_1:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
+    security_breach "{b}战斗阶段2{/b}\n战争机器准备开火。"
 
 # game/BKsecurity.rpy:491
 translate chinese security_447932b3:
 
     # security_breach "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
-    security_breach "{b}战斗阶段3{/b}\n你的[allies]仍然有守卫在面对[enemies]。他们有优势，而且他们知道这一点。"
+    security_breach "{b}战斗阶段3{/b}\n[enemies]名敌人正面对着你的[allies]名守卫。他们有优势，他们明白这一点。"
 
 # game/BKsecurity.rpy:495
 translate chinese security_5fc315f2:
 
     # enemy_general.char "CHAAAARGE!!!"
-    enemy_general.char "CHAAAARGE ! ! !"
+    enemy_general.char "冲锋！！！"
 
 # game/BKsecurity.rpy:498
 translate chinese security_cee97817:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. You have the advantage, and their lines seem to falter."
-    security "{b}战斗阶段3{/b}\n你的[allies]仍然面临着[enemies]。你占了优势，他们的台词似乎在犹豫。"
+    security "{b}战斗阶段3{/b}\n[enemies]名敌人正面对着你的[allies]名守卫。你有优势，他们的人数已经无法覆盖整个锋线了。"
 
 # game/BKsecurity.rpy:502
 translate chinese security_410ac7d0:
 
     # you "CHAAAARGE!!!"
-    you "CHAAAARGE ! ! !"
+    you "冲锋！！！"
 
 # game/BKsecurity.rpy:504
 translate chinese security_c12de197:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. Your forces are evenly matched."
-    security "{b}战斗阶段3{/b}\n你的[allies]仍然面临着[enemies]。你的部队势均力敌。"
+    security "{b}战斗阶段3{/b}\n[enemies]名敌人正面对着你的[allies]名守卫，你们看上去势均力敌。"
 
 # game/BKsecurity.rpy:507
 translate chinese security_0ee3ac03:
 
     # guard "CHAAAARGE!!!"
-    guard "CHAAAARGE ! ! !"
+    guard "冲锋！！！"
 
 # game/BKsecurity.rpy:517
 translate chinese security_512177f8:
 
     # "The first lines of battle crash together. Ignoring the fighting around you, you force your way towards the enemy general."
-    "战斗的第一道防线互相碰撞。你不顾周围的战斗，强行向敌军将领逼近。"
+    "两条阵线激烈地碰撞在一起！你无视周围的战斗，向敌人的头领冲去。"
 
 # game/BKsecurity.rpy:528
 translate chinese security_b6ff1c89:
 
     # "She appears before you, and you yell a challenge."
-    "她出现在你面前，你大声挑战。"
+    "她出现在你面前，你大喊着向她发起挑战。"
 
 # game/BKsecurity.rpy:530
 translate chinese security_dada2aba:
 
     # you "You! [enemy_general.name]! Prepare to be defeated!"
-    you "你![enemy_general.name]!准备被打败吧!"
+    you "来吧！[enemy_general.name]！准备跪下来舔我的鞋底吧！"
 
 # game/BKsecurity.rpy:534
 translate chinese security_e36b1a5f:
 
     # enemy_general.char "Ha! Fancy yourself a fighter, pimp boy?"
-    enemy_general.char "哈!你以为自己是个斗士吗，皮条客?"
+    enemy_general.char "哈！皮条客什么时候也能当斗士了？"
 
 # game/BKsecurity.rpy:539
 translate chinese security_fcfef7de:
 
     # "The mercenary draws out her weapon and rises to meet you."
-    "雇佣兵拔出武器，起身来迎接你。"
+    "对方拔出武器，向你冲来。"
 
 # game/BKsecurity.rpy:546
 translate chinese security_a7e30abb:
 
     # "You first hit bashes her shield hard, splitting it. She defends against your furious onslaught, parrying with her sword, but it is clear she is outmatched."
-    "你第一次猛击她的盾牌，把它砸裂。她防卫你的猛烈攻击，用她的剑挡开，但很明显她被打败了。"
+    "你挥动武器砸开她的盾牌。她连忙用剑格挡你猛烈的攻击，但很可惜她比不过你的力气。"
 
 # game/BKsecurity.rpy:548
 translate chinese security_775bf7e7:
 
     # enemy_general.char "Men! Help me!"
-    enemy_general.char "男人!帮帮我!"
+    enemy_general.char "来人！帮我一把！"
 
 # game/BKsecurity.rpy:555
 translate chinese security_923be87f:
 
     # "Two of her bodyguards leap to her defense, but before long, they lay inert at your feet. The [enemy_g] took advantage of the distraction to run away."
-    "她的两个保镖跳起来保护她，但不久，他们就一动不动地躺在你的脚下。[enemy_g]利用这个机会逃跑了。"
+    "她的两个帮手冲过来想要保护她，但没几下，他们就一动不动地躺在了你的脚下。而[enemy_g]却趁着这个机会跑掉了。"
 
 # game/BKsecurity.rpy:566
 translate chinese security_d3fc0c30:
 
     # "She answers your attacks blow for blow, and you feel she is no small time fighter. Little by little, you lose ground."
-    "她对你的攻击以牙还牙，你觉得她是个不小的斗士。一点一点地，你失去了阵地。"
+    "你们相互劈砍，渐渐地你发现对方的技艺相当出色，你有些撑不住了。"
 
 # game/BKsecurity.rpy:568
 translate chinese security_1430511d:
 
     # you "Damn, she's strong. Men! To me!"
-    you "该死,她很坚强。男人!对我来说！"
+    you "该死！来人！帮我一把！"
 
 # game/BKsecurity.rpy:575
 translate chinese security_6cb0d445:
 
     # "Two of your guards intervene, but she quickly disposes of them. Before you have a chance to attack her again, you are engulfed into the fray of battle."
-    "你的两个保镖介入了，但她很快就把他们处理掉了。在你有机会再次攻击她之前，你被卷入了战斗的混战。"
+    "你的两个守卫挥剑架住她的武器，但她很快便料理了他们。但决斗却无法持续下去了，你们俩都被卷进了身边混战当中。"
 
 # game/BKsecurity.rpy:580
 translate chinese security_cc0b9b6b:
 
     # "The sorceress begins an incantation. You must stop her, fast!"
-    "女巫开始念咒语。你必须阻止她，快!"
+    "女巫开始诵念咒语。你必须阻止她，快！"
 
 # game/BKsecurity.rpy:587
 translate chinese security_84c1c8b2:
 
     # "You easily dispel her magic barrier, and raise your weapon to hit her. She barely has time to raise her staff in defense, and you break it in two."
-    "You easily dispel her magic barrier, and raise your weapon to hit her. She barely has time to raise her staff in defense, and you break it in two."
+    "你轻松地击溃了她的魔法护盾，她的护卫想要阻止你，却被你砍翻在地。"
 
 # game/BKsecurity.rpy:589
 translate chinese security_c4910e23:
 
     # enemy_general.char "Demons! Familiar! Help me!"
-    enemy_general.char "恶魔!熟悉!帮帮我!"
+    enemy_general.char "恶魔！法米利尔！救我！"
 
 # game/BKsecurity.rpy:596
 translate chinese security_d3b597d8:
 
     # "A couple of strange, impish creatures leap to her defense, but you fry them with a firebolt. When the smoke dissipates, the [enemy_g] has retreated out of your reach."
-    "一对奇怪的，顽皮的动物跳到她的防御，但你用火弩箭炸他们。当烟雾消散时，[enemy_g]已经撤退到你够不到的地方。"
+    "两只奇怪的生物跳起来保护她，你向它们发射了左臂上的火弩箭。当烟雾消散时，他们已经退到了十几米以外的地方。"
 
 # game/BKsecurity.rpy:605
 translate chinese security_5bc9732b:
 
     # "A bolt of lightning hits at your feet, sending you flying backwards. When you come back to your senses, the sorceress is looming over you, muttering a spell, ready to deal the killing blow."
-    "一道闪电击中了你的脚，使你向后飞去。当你恢复知觉时，女巫正逼近你，低声念着咒语，准备给你致命一击。"
+    "一道闪电击中了你的护甲，你被着巨大的力量掀翻在地。等你回过神来，发现那个法师正在瞄准你，喃喃低语，准备给你致命一击。"
 
 # game/BKsecurity.rpy:607
 translate chinese security_9b6f07b2:
 
     # you "Men! Attack her! Quick! *frantic*"
-    you "男人!攻击她!快!*疯狂*"
+    you "来人！阻止她！快！*狂叫*"
 
 # game/BKsecurity.rpy:609
 translate chinese security_3f5ed950:
 
     # "A couple of your guards run at her, but she blows them to smithereens with her spell. Using the distraction, you crawl back behind your line of battle before she has a chance to ready an attack again."
-    "A couple of your guards run at her, but she blows them to smithereens with her spell. Using the distraction, you crawl back behind your line of battle before she has a chance to ready an attack again."
+    "几个英勇的守卫向她冲去，却被接下来的魔法炸成了碎片！不过他们也救下了你的性命，你趁机回到了己方的战线。"
 
 # game/BKsecurity.rpy:615
 translate chinese security_25471562:
 
     # "The first lines of battle crash together. You stand at the forefront, slashing at enemies left and right."
-    "战斗的第一道防线互相碰撞。你站在最前线，向左右两边的敌人乱砍乱伐。"
+    "两条阵线激烈地碰撞在一起！你冲在最前列，奋力砍杀着敌人。"
 
 # game/BKsecurity.rpy:625
 translate chinese security_13f7a93e:
 
     # security_breach "In spite of your fighting skills, you are not achieving much, and soon you find yourself surrounded by five enemies. As you try to defend yourself, one of them slams your leg with a warhammer and you fall down flat in the mud. He gets ready for the killing blow, but your men counter-charge and one brings you inside the brothel to safety."
-    security_breach "尽管你有战斗技能，但你并没有取得多大成就，很快你就发现自己被五个敌人包围了。当你试图保护自己的时候，他们中的一个用战锤猛击你的腿，你摔倒在泥里。他准备好了致命的一击，但你的人反击，一个带你进入青楼的安全。"
+    security_breach "尽管你有战斗技能，但在混战中依然很难取得什么战果，很快你就发现自己被五个敌人包围了。你拼尽全力去格挡，却还是被其中一个战士用战锤扫到了腿，你摔倒在泥里。他正准备补上致命一击，却被你的人缠住了，他们将你护送回青楼。"
 
 # game/BKsecurity.rpy:634
 translate chinese security_5b35f27f:
 
     # security "You deal mighty blows to the enemies, grievously wounding one of their champions and routing [score] of his followers."
-    security "You deal mighty blows to the enemies, grievously wounding one of their champions and routing [score] of his followers."
+    security "你给敌人带来了巨大的伤亡，你重伤了他们的一名头目，还击溃了他的[score]名属下。"
 
 # game/BKsecurity.rpy:648
 translate chinese security_e7a4ab93:
 
     # security "[enemy_damage] of your allies and [allies_damage] of your enemies have fallen. There are [enemies] enemies remaining against your [allies] standing guards."
-    security "[enemy_damage] of your allies and [allies_damage] of your enemies have fallen. There are [enemies] enemies remaining against your [allies] standing guards."
+    security "你的[enemy_damage]名守卫倒下了，同时也有[allies_damage]名敌人无法再继续战斗。但仍有[enemies]名敌人在跟你的[allies]名守卫厮杀。"
 
 # game/BKsecurity.rpy:653
 translate chinese security_42110203:
 
     # security_breach "The enemies have brought [d] reinforcements! There are now [enemies] enemies against your [allies] guards."
-    security_breach "The enemies have brought [d] reinforcements! There are now [enemies] enemies against your [allies] guards."
+    security_breach "敌人又增加了[d]名援军！现在你的[allies]名守卫要面对[enemies]名敌人了！"
 
 # game/BKsecurity.rpy:658
 translate chinese security_2c034aaf:
 
     # extend "\nThey have the advantage, and they know it. Their morale improves."
-    extend "\n他们有优势，而且他们知道这一点。他们的士气得到改善。"
+    extend "\n他们有优势，他们自己也知道这一点。他们的士气开始慢慢回升。"
 
 # game/BKsecurity.rpy:660
 translate chinese security_d08f389b:
 
     # enemy_general.char "All right, men! Finish the job!"
-    enemy_general.char "好吧,男人!完成这项工作!"
+    enemy_general.char "好了，兄弟们！让我们了结他们吧！"
 
 # game/BKsecurity.rpy:663
 translate chinese security_f1244f78:
 
     # extend "\nYou have the advantage, and it seems they hesitate to attack again."
-    extend "\n你占了上风，看来他们不愿再进攻了。"
+    extend "\n很明显，你占了上风，敌人似乎不愿再进攻了。"
 
 # game/BKsecurity.rpy:665
 translate chinese security_4fa4ab29:
 
     # you "Let's end this."
-    you "让我们结束这个。"
+    you "让我们来结束这一切吧。"
 
 # game/BKsecurity.rpy:667
 translate chinese security_f958ded8:
 
     # extend "\nYour forces are evenly matched."
-    extend "\n你们的力量势均力敌。"
+    extend "\n战斗又回到了势均力敌的态势。"
 
 # game/BKsecurity.rpy:668
 translate chinese security_1f4fb028:
 
     # guard "For honor, glory, and a fair and regulated competitive environment for all lawful pleasure businesses!"
-    guard "为了荣誉，荣誉，和一个公平和规范的竞争环境，为所有合法的娱乐业务!"
+    guard "为了荣誉，为了骄傲，为了公平、规范的竞争环境，为了那些让人快乐的生意！"
 
 # game/BKsecurity.rpy:682
 translate chinese security_f6e1a64b:
@@ -466,25 +466,25 @@ translate chinese security_f6e1a64b:
 translate chinese security_f26eb1af:
 
     # security "[enemy_damage] of your men fall, while [enemy_damage] foes are defeated. They are now [enemies] enemies left and [allies] standing guards."
-    security "[enemy_damage] of your men fall, while [enemy_damage] foes are defeated. They are now [enemies] enemies left and [allies] standing guards."
+    security "你的[enemy_damage]名守卫倒下了,同时也有[allies_damage]名敌人被击败。现在只剩下[enemies]名敌人和[allies]名守卫了。"
 
 # game/BKsecurity.rpy:688
 translate chinese security_d5f88296:
 
     # security "[enemy_damage] of your allies and [allies_damage] of your enemies have fallen. All the enemies are wounded or routed. You {b}win{/b} this battle."
-    security "你的[allies_damage]个盟友和[enemy_damage]个敌人都倒下了。其他的敌人都受伤或被击溃。你{b}赢{/b}得了这场战斗。"
+    security "你的[allies_damage]名守卫和[enemy_damage]名敌人都倒下了。现在所有的敌人都被溃败了。你终于{b}赢得{/b}了这场战斗。"
 
 # game/BKsecurity.rpy:691
 translate chinese security_8b6e18d7:
 
     # security_breach "The enemy has wiped out your security guards. You take refuge inside the brothel with your girls and try to organize what little defenses you have."
-    security_breach "敌人已经消灭了你的保安。你和你的女孩躲在青楼里，试图组织你仅有的一点点防御。"
+    security_breach "你的守卫被敌人击溃了。你和你的女孩们躲在青楼里，试图组织起哪怕一点点的防御。"
 
 # game/BKsecurity.rpy:707
 translate chinese security_58cc8c97:
 
     # "Your men found something [enemy_general.fullname], the enemy general left behind. You have received [item_name]."
-    "你的人找到了[enemy_general.fullname]。敌人的将军留下了。您已经收到[item_name]。"
+    "你的人找到了[enemy_general.fullname]，看来敌人的首领没来得及逃走。您得到了[item_name]。"
 
 # game/BKsecurity.rpy:728
 translate chinese security_11fdb519:
@@ -496,13 +496,13 @@ translate chinese security_11fdb519:
 translate chinese security_fd39755e:
 
     # you "Bring it on!"
-    you "把它!"
+    you "来吧！"
 
 # game/BKsecurity.rpy:739
 translate chinese security_4e89346a:
 
     # you "Every one, get inside the pentagram!"
-    you "每个人，进入五角星!"
+    you "所有人，进入五芒星!"
 
 # game/BKsecurity.rpy:747
 translate chinese security_25ceac08:
@@ -1060,281 +1060,280 @@ translate chinese kidnap_rescue_56eb5a18:
 translate chinese kidnap_rescue_84d8f40d:
 
     # "Using a lockpicking spell, you silently open the door, placing yourself behind your opponent."
-    "使用开锁咒，你静静地打开门，把自己放在对手身后。"
+    "你默默地施展了开锁术，门无声地被打开了。你悄悄地来到了敌人的身后。"
 
 # game/BKsecurity.rpy:1844
 translate chinese kidnap_rescue_608c23f3:
 
     # you "Booh."
-    you "Booh。"
+    you "嘘……"
 
 # game/BKsecurity.rpy:1847
 translate chinese kidnap_rescue_e0fc9b8b:
 
     # "Ogre" "Uh?"
-    "食人魔" "Uh?"
+    "食人魔" "呃？"
 
 # game/BKsecurity.rpy:1854
 translate chinese kidnap_rescue_13a83ec7:
 
     # "You strike the ogre with a bolt of lightning, briefly seeing the outline of his skeleton as he is fried dead. You girl escapes just in time, her hair standing on end from static electricity."
-    "You strike the ogre with a bolt of lightning, briefly seeing the outline of his skeleton as he is fried dead. You girl escapes just in time, her hair standing on end from static electricity."
+    "你用一道闪电击中食人魔，在那一瞬间你甚至能看到他的骨架轮廓。你的女孩及时逃脱了，而她的头发因静电竖了起来。"
 
 # game/BKsecurity.rpy:1857
 translate chinese kidnap_rescue_d949bfa6:
 
     # "Monster" "Rrrh!!!"
-    "怪物" "Rrrh!!!"
+    "怪物" "吼！！"
 
 # game/BKsecurity.rpy:1864
 translate chinese kidnap_rescue_c43cbf0e:
 
     # "You cast a fireball at what you guess is the creature's head, roasting it good. The monster falls lifeless in the dust."
-    "你朝你猜的那个怪物的头扔了一个火球，烤得很好。怪物倒在尘土中死了。"
+    "你朝着怪物那看上去像是脑袋的部份施展了一个火球术，在灼热的魔法力下，那东西肉眼可见地焦化了，怪物扑通一声侧倒在地上。"
 
 # game/BKsecurity.rpy:1867
 translate chinese kidnap_rescue_88142c53:
 
     # man "*whistle* Uh?"
-    man "* *呢喃哦?"
+    man "*吹哨*嗯？"
 
 # game/BKsecurity.rpy:1874
 translate chinese kidnap_rescue_ee6958e7:
 
     # "You casually strike down the guard with a lightning spell, turning him into an arty lamppost for a few seconds. He falls to ashes as you deliver [girl.name] from her bonds."
-    "你漫不经心地用闪电咒击倒了守卫，把他变成了一根艺术灯柱，持续了几秒钟。当你把[girl.name]从她的束缚中解救出来时，他化为灰烬。"
+    "你随手用闪电法术击倒了那个警卫，把他变成了一盏璀璨夺目的灯柱。当你把[girl.name]从她解救出来时，他也化为了一滩灰烬。"
 
 # game/BKsecurity.rpy:1879
 translate chinese kidnap_rescue_0d84744f:
 
     # "Your spell fizzles, and you fiddle with the lock desperate to find another way to open the door."
-    "你的咒语嘶嘶作响，你拨弄着锁，不顾一切地想找到另一条开门的路。"
+    "你的法术失效了，你摆弄着锁，急切地想找到另一种打开门的方法。"
 
 # game/BKsecurity.rpy:1883
 translate chinese kidnap_rescue_3a714312:
 
     # "You have been discovered! A large ogre roars as he spots you. You run for your life as [girl.fullname] is being dragged away."
-    "你被发现了!一个巨大的食人魔发现你时会吼叫。你逃走了，因为[girl.fullname]被拖走了。"
+    "你被发现了！一个巨大的食人魔冲你咆哮着把[girl.fullname]被拖走了。你只好逃走了。"
 
 # game/BKsecurity.rpy:1887
 translate chinese kidnap_rescue_67179ae3:
 
     # "The monster has sensed your presence! You hear [girl.fullname]'s screams as she is being taken away."
-    "怪物已经感觉到你的存在!你听到[girl.fullname]被带走时的尖叫声。"
+    "怪物感觉到你的存在！你听到[girl.fullname]被拖走时的尖叫声。"
 
 # game/BKsecurity.rpy:1892
 translate chinese kidnap_rescue_72a4c715:
 
     # man "Intruder! Get him!" with vpunch
-    man "入侵者!得到他!" with vpunch
+    man "入侵者！抓住他！" with vpunch
 
 # game/BKsecurity.rpy:1894
 translate chinese kidnap_rescue_a1062ed2:
 
     # "You have been found! You run away from the guard patrol. Gods know where they'll be taking [girl.fullname] now."
-    "你找到了!你从巡逻警卫那里逃跑了。天知道他们现在要带[girl.fullname]去哪里。"
+    "你被发现了！你急忙巡逻队那里逃了出来。天知道现在[girl.fullname]被他们去了哪里。"
 
 # game/BKsecurity.rpy:1899
 translate chinese kidnap_rescue_37d3058f:
 
     # "You will come back when you are ready. Sorry, [girl.name]..."
-    "你准备好了就回来。对不起,[girl.name]…"
+    "你应该准备好再来的，只能再委屈一段时间[girl.name]了……"
 
 # game/BKsecurity.rpy:1909
 translate chinese kidnap_rescue_6d81a86f:
 
     # girl.char "Master [MC.name]! It's you!!!"
-    girl.char "主人[MC.name]!是你! ! !"
+    girl.char "[MC.name]主人！你终于来了！！"
 
 # game/BKsecurity.rpy:1911
 translate chinese kidnap_rescue_cc0732b4:
 
     # "She sobs in your arms."
-    "她在你怀里哭泣。"
+    "她扑在你怀里啜泣。"
 
 # game/BKsecurity.rpy:1913
 translate chinese kidnap_rescue_b276b909:
 
     # girl.char "Oh, Master... Thank you, thank you..."
-    girl.char "哦,主…谢谢，谢谢……"
+    girl.char "呜，主人……谢谢！谢谢你……"
 
 # game/BKsecurity.rpy:1918
 translate chinese kidnap_rescue_b381e675:
 
     # "[girl.name] is overjoyed that her trial is over. She is very grateful to you."
-    "[girl.name]的审判结束了，她欣喜若狂。她非常感激你。"
+    "[girl.name]被你解救出来了，她非常感激你。"
 
 # game/BKsecurity.rpy:1922
 translate chinese kidnap_rescue_7682a280:
 
     # "[girl.name] has been raped repeatedly by her captors and is no longer a virgin."
-    "[girl.name]多次被抓她的人强奸，不再是处女。"
+    "[girl.name]被绑架者多次奸淫，她失去了自己的贞操。"
 
 # game/BKsecurity.rpy:1929
 translate chinese kidnap_rescue_866a79ae:
 
     # "{b}[girl.name] is back to [brothel.name].{/b}"
-    "{b}[girl.name]返回到[brothel.name].{/b}"
+    "{b}[girl.name]回到了[brothel.name]。{/b}"
 
 # game/BKsecurity.rpy:1957
 translate chinese kidnap_rescue_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
-    "{b}[girl.fullname]{/b}已被发送到农场。"
+    "{b}[girl.fullname]{/b}已被送至农场。"
 
 # game/BKsecurity.rpy:1963
 translate chinese kidnap_rescue_c3e4feb2:
 
     # you "I shall free you now. You have been through a lot."
-    you "我现在就释放你。你经历了很多。"
+    you "我决定给你自由，你已经经历了太多了。"
 
 # game/BKsecurity.rpy:1965
 translate chinese kidnap_rescue_e0fd2bd0:
 
     # girl.char "Really? Oh, Master!!!"
-    girl.char "真的吗?哦,主人! ! !"
+    girl.char "真的？哦，主人！！！"
 
 # game/BKsecurity.rpy:1967
 translate chinese kidnap_rescue_e964c4d3:
 
     # "{b}[girl.name] has been freed.{/b}"
-    "{b}[girl.name]已被释放。{/b}"
+    "{b}[girl.name]自由了。{/b}"
 
 # game/BKsecurity.rpy:1975
 translate chinese kidnap_rescue_6afa5430:
 
     # "{b}[girl.fullname] has been abducted to a different location.{/b}"
-    "{b}[girl.fullname]已被绑架到另一地点。{/b}"
+    "{b}[girl.fullname]被绑架者转移到了另一个地方。{/b}"
 
 # game/BKsecurity.rpy:1984
 translate chinese girl_come_back_94285fc8:
 
     # "There is now room for [girl.fullname] in your brothel.\n{b}[girl.name] is back to [brothel.name].{/b}"
-    "现在有[girl.fullname]的地方了。\n{b}[girl.name]回到了[brothel.name].{/b}"
+    "现在你的青楼里有[girl.fullname]的房间了。\n{b}[girl.name]回到了[brothel.name]。{/b}"
 
 # game/BKsecurity.rpy:2013
 translate chinese girl_come_back_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
-    "{b}[girl.fullname]{/b} has been sent to the farm."
+    "{b}[girl.fullname]{/b}已被送到农场。"
 
 # game/BKsecurity.rpy:2019
 translate chinese girl_come_back_c3e4feb2:
 
     # you "I shall free you now. You have been through a lot."
-    you "I shall free you now. You have been through a lot."
+    you "我决定给你自由，你已经经历了太多了。"
 
 # game/BKsecurity.rpy:2021
 translate chinese girl_come_back_e0fd2bd0:
 
     # girl.char "Really? Oh, Master!!!"
-    girl.char "Really? Oh, Master!!!"
+    girl.char "真的？哦，主人！！！"
 
 # game/BKsecurity.rpy:2023
 translate chinese girl_come_back_e964c4d3:
 
     # "{b}[girl.name] has been freed.{/b}"
-    "{b}[girl.name] has been freed.{/b}"
+    "{b}[girl.name]自由了。{/b}"
 
 translate chinese strings:
 
     # game/BKsecurity.rpy:370
     old "Charge into the fray (use Strength to fight the enemy)"
-    new "Charge into the fray (use Strength to fight the enemy)"
+    new "加入战斗(使用力量与敌人战斗)"
 
     # game/BKsecurity.rpy:370
     old "Destroy their war machines (use Spirit to cast a spell on them)"
-    new "Destroy their war machines (use Spirit to cast a spell on them)"
+    new "摧毁他们的战争机器(使用精神对他们施放法术)"
 
     # game/BKsecurity.rpy:370
     old "Lead from behind (use Charisma to improve your troops' morale)"
-    new "Lead from behind (use Charisma to improve your troops' morale)"
+    new "在后面指挥(使用魅力提高部队士气)"
 
     # game/BKsecurity.rpy:370
     old "Challenge their leader (use Strength to attack the [enemy_g])"
-    new "Challenge their leader (use Strength to attack the [enemy_g])"
+    new "挑战他们的首领(使用力量攻击[enemy_g])"
 
     # game/BKsecurity.rpy:370
     old "Challenge their leader (use Spirit to attack the [enemy_g])"
-    new "Challenge their leader (use Spirit to attack the [enemy_g])"
+    new "挑战他们的首领(使用精神攻击[enemy_g])"
 
     # game/BKsecurity.rpy:727
     old "Defend your girls (use Strength to fight the enemy)"
-    new "Defend your girls (use Strength to fight the enemy)"
+    new "保护你的女孩们(使用力量与敌人战斗)"
 
     # game/BKsecurity.rpy:727
     old "Protect your girls (use Spirit to shield some of your girls)"
-    new "Protect your girls (use Spirit to shield some of your girls)"
+    new "保护你的女孩们(使用精神来保护一些女孩)"
 
     # game/BKsecurity.rpy:727
     old "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
-    new "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
+    new "鼓励你的女孩们去战斗(使用魅力提高她们战斗能力)"
 
     # game/BKsecurity.rpy:727
     old "Intercept their leader (use Strength to attack the [enemy_g])"
-    new "Intercept their leader (use Strength to attack the [enemy_g])"
+    new "袭击他们的首领(使用力量攻击[enemy_g])"
 
     # game/BKsecurity.rpy:727
     old "Intercept their leader (use Spirit to attack the [enemy_g])"
-    new "Intercept their leader (use Spirit to attack the [enemy_g])"
+    new "袭击他们的首领(使用精神力攻击[enemy_g])"
 
     # game/BKsecurity.rpy:1047
     old "What do you want to do with her?"
-    new "What do you want to do with her?"
+    new "你准备怎么处理她？"
 
     # game/BKsecurity.rpy:1047
     old "Keep her as a slave"
-    new "Keep her as a slave"
+    new "把她当作奴隶"
 
     # game/BKsecurity.rpy:1047
     old "Sell her as a slave for [price] gold"
-    new "Sell her as a slave for [price] gold"
+    new "把她作为奴隶卖掉，以换取[price]金币"
 
     # game/BKsecurity.rpy:1047
     old "Sell her as sacrifice fodder for the blood islands for [evil_price] gold"
-    new "Sell her as sacrifice fodder for the blood islands for [evil_price] gold"
+    new "把她作为祭品卖给血岛，以换取[evil_price]金币"
 
     # game/BKsecurity.rpy:1047
     old "Make her swear an oath never to cross you again and let her go"
-    new "Make her swear an oath never to cross you again and let her go"
+    new "让她发誓不再与你作对，然后放她走"
 
     # game/BKsecurity.rpy:1635
     old "All right (pay [price] gold)"
-    new "All right (pay [price] gold)"
+    new "好吧(支付[price]金币)"
 
     # game/BKsecurity.rpy:1635
     old "Maybe later (come back later)"
-    new "Maybe later (come back later)"
+    new "也许以后会有（以后再来）"
 
     # game/BKsecurity.rpy:1635
     old "Forget it ([girl.fullname] will be lost forever)"
-    new "Forget it ([girl.fullname] will be lost forever)"
+    new "忘掉她吧([girl.fullname]将永远失去了)"
 
     # game/BKsecurity.rpy:1711
     old "Do you want to try and rescue [girl.fullname] now?"
-    new "Do you want to try and rescue [girl.fullname] now?"
+    new "你准备现在就去解救[girl.fullname]么？"
 
     # game/BKsecurity.rpy:1933
     old "You do not have enough room to welcome [girl.fullname] back to the brothel."
-    new "You do not have enough room to welcome [girl.fullname] back to the brothel."
+    new "你没有空余的房间来让[girl.fullname]回到你的青楼"
 
     # game/BKsecurity.rpy:1933
     old "Let her stay in an inn until tomorrow for 50 gold"
-    new "Let her stay in an inn until tomorrow for 50 gold"
+    new "花费50金币让她在客栈里住上一天"
 
     # game/BKsecurity.rpy:1933
     old "Let her stay in an inn for a week for 250 gold"
-    new "Let her stay in an inn for a week for 250 gold"
+    new "花费250金币让她在客栈里住上一周"
 
     # game/BKsecurity.rpy:1933
     old "Sell her for [price] gold"
-    new "Sell her for [price] gold"
+    new "卖掉她以换取[price]金币"
 
     # game/BKsecurity.rpy:1933
     old "Free her"
-    new "Free her"
+    new "给她自由"
 
     # game/BKsecurity.rpy:1989
     old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
-    new "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
-
+    new "[girl.fullname]将于今天返回，你没有空余的房间分配给她"

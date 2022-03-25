@@ -9430,377 +9430,376 @@ translate chinese strings:
 
     # game/BKinteractions.rpy:19
     old "I will be kind"
-    new "I will be kind"
+    new "我会善良的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will be fair"
-    new "I will be fair"
+    new "我会公平的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will do as I please"
-    new "I will do as I please"
+    new "我将做我想做的"
 
     # game/BKinteractions.rpy:19
     old "How dare you!"
-    new "How dare you!"
+    new "你怎么敢！"
 
     # game/BKinteractions.rpy:155
     old "Reassure her"
-    new "Reassure her"
+    new "安慰她"
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked at all times"
-    new "Tell her to remain naked at all times"
+    new "告诉她仍然要一直保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked for the rest of the day"
-    new "Tell her to remain naked for the rest of the day"
+    new "告诉她仍然要在剩下的一天里保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Do nothing"
-    new "Do nothing"
+    new "什么都不做"
 
     # game/BKinteractions.rpy:268
     old "She's crying uncontrollably, she seems very upset. What do you do?"
-    new "She's crying uncontrollably, she seems very upset. What do you do?"
+    new "她哭得控制不住，看起来很伤心。你是做什么的？"
 
     # game/BKinteractions.rpy:268
     old "Ignore her and proceed"
-    new "Ignore her and proceed"
+    new "不理她,继续"
 
     # game/BKinteractions.rpy:483
     old "I see"
-    new "I see"
+    new "我明白了"
 
     # game/BKinteractions.rpy:483
     old "You're doing well"
-    new "You're doing well"
+    new "你做的很好"
 
     # game/BKinteractions.rpy:483
     old "Stop bitching"
-    new "Stop bitching"
+    new "停止唠叨"
 
     # game/BKinteractions.rpy:531
     old "I appreciate your efforts"
-    new "I appreciate your efforts"
+    new "我很欣赏你的努力"
 
     # game/BKinteractions.rpy:531
     old "Know your place!"
-    new "Know your place!"
+    new "知道你的地方！"
 
     # game/BKinteractions.rpy:577
     old "You're a big help"
-    new "You're a big help"
+    new "你是一个很大的帮助"
 
     # game/BKinteractions.rpy:577
     old "Just shut up"
-    new "Just shut up"
+    new "闭嘴"
 
     # game/BKinteractions.rpy:659
     old "I see."
-    new "I see."
+    new "我明白了。"
 
     # game/BKinteractions.rpy:659
     old "Keep making friends"
-    new "Keep making friends"
+    new "继续交朋友"
 
     # game/BKinteractions.rpy:659
     old "[inter.other_girl.name] is great"
-    new "[inter.other_girl.name] is great"
+    new "[inter.other_girl.name]是伟大的"
 
     # game/BKinteractions.rpy:659
     old "[inter.other_girl.name] is stupid"
-    new "[inter.other_girl.name] is stupid"
+    new "[inter.other_girl.name]是愚蠢的"
 
     # game/BKinteractions.rpy:659
     old "Stop being friendly with [inter.other_girl.name]"
-    new "Stop being friendly with [inter.other_girl.name]"
+    new "停止友好的对待[inter.other_girl.name]"
 
     # game/BKinteractions.rpy:659
     old "Stop fighting with [inter.other_girl.name]"
-    new "Stop fighting with [inter.other_girl.name]"
+    new "与[inter.other_girl.name]停止斗争"
 
     # game/BKinteractions.rpy:770
     old "Good to hear"
-    new "Good to hear"
+    new "很高兴听到"
 
     # game/BKinteractions.rpy:770
     old "Sorry to hear that"
-    new "Sorry to hear that"
+    new "对不起听到这个消息"
 
     # game/BKinteractions.rpy:770
     old "Keep working hard, or else..."
-    new "Keep working hard, or else..."
+    new "继续努力,否则……"
 
     # game/BKinteractions.rpy:770
     old "Get used to it"
-    new "Get used to it"
+    new "要去适应它"
 
     # game/BKinteractions.rpy:864
     old "Thank you, I appreciate that"
-    new "Thank you, I appreciate that"
+    new "谢谢你,我很欣赏这一点"
 
     # game/BKinteractions.rpy:1216
     old "Do it anyway"
-    new "Do it anyway"
+    new "不管怎样做"
 
     # game/BKinteractions.rpy:1330
     old "Train her gently"
-    new "Train her gently"
+    new "温柔训练她"
 
     # game/BKinteractions.rpy:1330
     old "Train her normally"
-    new "Train her normally"
+    new "通常训练她"
 
     # game/BKinteractions.rpy:1330
     old "Train her anyway"
-    new "Train her anyway"
+    new "随意训练她"
 
     # game/BKinteractions.rpy:1330
     old "Rough her up"
-    new "Rough her up"
+    new "粗暴对待她"
 
     # game/BKinteractions.rpy:1531
     old "Compliment her"
-    new "Compliment her"
+    new "赞美她"
 
     # game/BKinteractions.rpy:1531
     old "Admonish her"
-    new "Admonish her"
+    new "告诫她"
 
     # game/BKinteractions.rpy:2212
     old "Hypnosis is more efficient when exploiting your girl's existing emotions. Which technique will you use to train [girl.name]?"
-    new "Hypnosis is more efficient when exploiting your girl's existing emotions. Which technique will you use to train [girl.name]?"
+    new "在利用女孩现有的情绪时，催眠效率更高。你将用什么方法来训练[girl.name]？"
 
     # game/BKinteractions.rpy:2212
     old "Use positive emotions"
-    new "Use positive emotions"
+    new "用积极情绪"
 
     # game/BKinteractions.rpy:2212
     old "Use negative emotions"
-    new "Use negative emotions"
+    new "使用负面情绪"
 
     # game/BKinteractions.rpy:2212
     old "Balanced training"
-    new "Balanced training"
+    new "平衡训练"
 
     # game/BKinteractions.rpy:2411
     old "How much gold do you want to give her?"
-    new "How much gold do you want to give her?"
+    new "你想给她多少枚金币？"
 
     # game/BKinteractions.rpy:2411
     old "[low] gold"
-    new "[low] gold"
+    new "[low]枚金币"
 
     # game/BKinteractions.rpy:2411
     old "[med] gold"
-    new "[med] gold"
+    new "[med]枚金币"
 
     # game/BKinteractions.rpy:2411
     old "[high] gold"
-    new "[high] gold"
+    new "[high]枚金币"
 
     # game/BKinteractions.rpy:2956
     old "How long do you want her to remain in the farm?"
-    new "How long do you want her to remain in the farm?"
+    new "你想让她留在农场吗?"
 
     # game/BKinteractions.rpy:2956
     old "1 day"
-    new "1 day"
+    new "1 天"
 
     # game/BKinteractions.rpy:2956
     old "3 days"
-    new "3 days"
+    new "3 天"
 
     # game/BKinteractions.rpy:2956
     old "7 days"
-    new "7 days"
+    new "7 天"
 
     # game/BKinteractions.rpy:3024
     old "You know that [girl.name] has [reaction] for [act] acts. Do you want to try to use it against her?"
-    new "You know that [girl.name] has [reaction] for [act] acts. Do you want to try to use it against her?"
+    new "你知道[girl.name]对[act]行为有[reaction]。你想尝试使用对她吗？"
 
     # game/BKinteractions.rpy:3343
     old "Change mood"
-    new "Change mood"
+    new "改变心情"
 
     # game/BKinteractions.rpy:3613
     old "How do you react?"
-    new "How do you react?"
+    new "你会怎么反应？"
 
     # game/BKinteractions.rpy:3613
     old "It's okay"
-    new "It's okay"
+    new "没关系"
 
     # game/BKinteractions.rpy:3613
     old "She must give it back"
-    new "She must give it back"
+    new "她必须归还"
 
     # game/BKinteractions.rpy:3922
     old "Take your time"
-    new "Take your time"
+    new "别着急"
 
     # game/BKinteractions.rpy:3922
     old "Hurry up"
-    new "Hurry up"
+    new "快点"
 
     # game/BKinteractions.rpy:4224
     old "Of course"
-    new "Of course"
+    new "当然"
 
     # game/BKinteractions.rpy:4224
     old "In a way"
-    new "In a way"
+    new "在某种程度上"
 
     # game/BKinteractions.rpy:4224
     old "Hell no"
-    new "Hell no"
+    new "一定不行"
 
     # game/BKinteractions.rpy:4449
     old "Is that so?"
-    new "Is that so?"
+    new "是这样吗？"
 
     # game/BKinteractions.rpy:4449
     old "Are you fucking kidding me?"
-    new "Are you fucking kidding me?"
+    new "你他妈的在跟我开玩笑吗？"
 
     # game/BKinteractions.rpy:4799
     old "Defend Sill"
-    new "Defend Sill"
+    new "保护西里尔"
 
     # game/BKinteractions.rpy:4799
     old "Let her vent"
-    new "Let her vent"
+    new "让她发泄"
 
     # game/BKinteractions.rpy:4799
     old "Yell at her"
-    new "Yell at her"
+    new "对她大喊大叫"
 
     # game/BKinteractions.rpy:5137
     old "I'm sorry it's come to this"
-    new "I'm sorry it's come to this"
+    new "我很抱歉事情发展到这个地步"
 
     # game/BKinteractions.rpy:5137
     old "Life is tough"
-    new "Life is tough"
+    new "生活是艰苦的"
 
     # game/BKinteractions.rpy:5137
     old "Stop whining"
-    new "Stop whining"
+    new "停止抱怨"
 
     # game/BKinteractions.rpy:5544
     old "Change can hurt people"
-    new "Change can hurt people"
+    new "变化会伤害人们"
 
     # game/BKinteractions.rpy:5544
     old "Change can bring opportunities"
-    new "Change can bring opportunities"
+    new "改变可以带来机会"
 
     # game/BKinteractions.rpy:5544
     old "Chaos is fun"
-    new "Chaos is fun"
+    new "混乱是有趣的"
 
     # game/BKinteractions.rpy:5921
     old "You think about what she said. Perhaps there is something you could do to help her?"
-    new "You think about what she said. Perhaps there is something you could do to help her?"
+    new "也许你可以帮助她吗?"
 
     # game/BKinteractions.rpy:5921
     old "Tell her you will perform an exorcism ritual (2 days)"
-    new "Tell her you will perform an exorcism ritual (2 days)"
+    new "告诉她你将执行一个驱魔仪式(2天)"
 
     # game/BKinteractions.rpy:5921
     old "Tell her that she has to learn to live with it (replace her negative trait with the 'clumsy' trait)"
-    new "Tell her that she has to learn to live with it (replace her negative trait with the 'clumsy' trait)"
+    new "告诉她,她必须学会忍受它(取代她的负面特质与‘笨拙’特征)"
 
     # game/BKinteractions.rpy:5921
     old "Summon a slimy tentacle to her room for the night (1 day)"
-    new "Summon a slimy tentacle to her room for the night (1 day)"
+    new "召唤一个泥泞的触须来她的房间过夜(1天)"
 
     # game/BKinteractions.rpy:5921
     old "Pay the magic guild to summon a tentacle monster to her room for the night (1000 gold, 1 day)"
-    new "Pay the magic guild to summon a tentacle monster to her room for the night (1000 gold, 1 day)"
+    new "支付魔术师协会召唤触手怪她的房间过夜(1000枚,1天)"
 
     # game/BKinteractions.rpy:5921
     old "Let her gather some ingredients and set up an altar (3 days)"
-    new "Let her gather some ingredients and set up an altar (3 days)"
+    new "让她收集一些配料和建立一个祭坛(3天)"
 
     # game/BKinteractions.rpy:5921
     old "Pay for the ingredients and let her set up an altar (1 day, 650 gold)"
-    new "Pay for the ingredients and let her set up an altar (1 day, 650 gold)"
+    new "支付的成分,让她建立一个祭坛(1天,650枚)"
 
     # game/BKinteractions.rpy:5921
     old "Let her speak her mind freely (replace her negative trait with the 'godless' trait)"
-    new "Let her speak her mind freely (replace her negative trait with the 'godless' trait)"
+    new "让她说出她的想法自由(取代她的负面特质‘无神论者’特征)"
 
     # game/BKinteractions.rpy:5921
     old "Buy her a new pet (800 gold)"
-    new "Buy her a new pet (800 gold)"
+    new "给她买一个新的宠物(800枚)"
 
     # game/BKinteractions.rpy:5921
     old "Hire some lawyers to take [girl.name]'s case to court (1250 gold upfront, unknown gains)"
-    new "Hire some lawyers to take [girl.name]'s case to court (1250 gold upfront, unknown gains)"
+    new "聘请一些律师将[girl.name]的案子告上法庭(预付1250枚,收益未知)"
 
     # game/BKinteractions.rpy:5921
     old "Send some thugs to set fire to her old estate (900 gold)"
-    new "Send some thugs to set fire to her old estate (900 gold)"
+    new "发送一些暴徒点燃她的旧庄园(900枚)"
 
     # game/BKinteractions.rpy:5921
     old "Conjure up a firestorm inside the estate's wood reserve"
-    new "Conjure up a firestorm inside the estate's wood reserve"
+    new "召唤出风暴在房地产的木材储备"
 
     # game/BKinteractions.rpy:5921
     old "Let her go pray for the unfortunate soul (1 day, 500 gold donation)"
-    new "Let her go pray for the unfortunate soul (1 day, 500 gold donation)"
+    new "让她去为不幸的灵魂祈祷(1天,500枚捐赠)"
 
     # game/BKinteractions.rpy:5921
     old "Offer to increase her allowance (replace her negative trait with the 'expensive' trait)"
-    new "Offer to increase her allowance (replace her negative trait with the 'expensive' trait)"
+    new "提供增加她的津贴(取代她的负面特征与‘昂贵’特征)"
 
     # game/BKinteractions.rpy:5921
     old "Buy her the dress of her dreams ([dress.price] gold)"
-    new "Buy her the dress of her dreams ([dress.price] gold)"
+    new "给她买她梦寐以求的衣服。([dress.price]枚)"
 
     # game/BKinteractions.rpy:5921
     old "Let her go bury her loved ones (2 days, 1000 gold)"
-    new "Let her go bury her loved ones (2 days, 1000 gold)"
+    new "让她去埋葬她的亲人(2天,1000枚)"
 
     # game/BKinteractions.rpy:5921
     old "Organize a public event (1500 gold upfront, unknown gains)"
-    new "Organize a public event (1500 gold upfront, unknown gains)"
+    new "组织公共活动(预付1500枚,收益未知)"
 
     # game/BKinteractions.rpy:5921
     old "Kidnap a horse?!? (750 gold)"
-    new "Kidnap a horse?!? (750 gold)"
+    new "绑架一个马?!?(750枚)"
 
     # game/BKinteractions.rpy:5921
     old "Offer to repay her debt (900 gold)"
-    new "Offer to repay her debt (900 gold)"
+    new "帮她偿还债务(900枚)"
 
     # game/BKinteractions.rpy:5921
     old "Give her some time off to visit her family (3 days)"
-    new "Give her some time off to visit her family (3 days)"
+    new "给她一些时间去拜访她的家人(3天)"
 
     # game/BKinteractions.rpy:5921
     old "Send some goons off to trash the bastard (500 gold)"
-    new "Send some goons off to trash the bastard (500 gold)"
+    new "发送一些暴徒去垃圾混蛋(500枚)"
 
     # game/BKinteractions.rpy:5921
     old "Hire the thieves guild to rob the bastard blind (750 gold upfront, unknown gains)"
-    new "Hire the thieves guild to rob the bastard blind (750 gold upfront, unknown gains)"
+    new "雇佣盗贼公会去抢混蛋盲(预付750枚,收益未知)"
 
     # game/BKinteractions.rpy:5921
     old "Send some crooked guards to rob the bastard blind (750 gold upfront, unknown gains)"
-    new "Send some crooked guards to rob the bastard blind (750 gold upfront, unknown gains)"
+    new "发送的守卫去抢一些混蛋盲(预付750枚,收益未知)"
 
     # game/BKinteractions.rpy:5921
     old "Punish her like the bad girl she is"
-    new "Punish her like the bad girl she is"
+    new "像惩罚坏女孩一样惩罚她"
 
     # game/BKinteractions.rpy:5921
     old "Not now"
-    new "Not now"
+    new "不是现在"
 
     # game/BKinteractions.rpy:5921
     old "Don't bother me with this anymore"
-    new "Don't bother me with this anymore"
-
+    new "别再拿这个来烦我了"

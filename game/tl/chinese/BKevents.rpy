@@ -7702,517 +7702,509 @@ translate chinese strings:
 
     # game/BKevents.rpy:150
     old "{b}{color=[c_red]}WARNING{/color}{/b}: This saved game was created with another version of the game ([game.version]). You are running version [config.version]. Using older saved games with a new version of BK might cause unexpected crashes or game-breaking bugs. Are you sure you want to continue?"
-    new "{b}{color=[c_red]}WARNING{/color}{/b}: This saved game was created with another version of the game ([game.version]). You are running version [config.version]. Using older saved games with a new version of BK might cause unexpected crashes or game-breaking bugs. Are you sure you want to continue?"
+    new "{b}{color=[c_red]}警告{/color}{/b}: 这个保存的游戏是用另一个版本的游戏（[game.version]）创建的。你正在运行[config.version]版本。在新版本的BK中使用旧的保存游戏可能会导致意外的崩溃或破坏游戏的错误。你确定你要继续吗？"
 
     # game/BKevents.rpy:150
     old "Yes, and deactivate future warnings for this game/this version"
-    new "Yes, and deactivate future warnings for this game/this version"
+    new "是的，并且不再出现这个游戏/这个版本的警告。"
 
     # game/BKevents.rpy:150
     old "Yes, but warn me again"
-    new "Yes, but warn me again"
+    new "是的，但要再次提醒我"
 
     # game/BKevents.rpy:306
     old "Continue"
-    new "Continue"
+    new "继续"
 
     # game/BKevents.rpy:306
     old "Change your brothel settings"
-    new "Change your brothel settings"
+    new "改变你青楼的设置"
 
     # game/BKevents.rpy:778
     old "Hire bounty hunters"
-    new "Hire bounty hunters"
+    new "雇佣赏金猎人"
 
     # game/BKevents.rpy:778
     old "Look for her yourself"
-    new "Look for her yourself"
+    new "我自己去找她"
 
     # game/BKevents.rpy:784
     old "Choose which bounty hunters to send on her trail."
-    new "Choose which bounty hunters to send on her trail."
+    new "选择赏金猎人来搜寻她的踪迹。"
 
     # game/BKevents.rpy:784
     old "The sisterhood of the night ([cost1] gold)"
-    new "The sisterhood of the night ([cost1] gold)"
+    new "夜晚的姐妹([cost1]枚金币)"
 
     # game/BKevents.rpy:784
     old "The slavers guild ([cost2] gold)"
-    new "The slavers guild ([cost2] gold)"
+    new "奴隶公会([cost2]枚金币)"
 
     # game/BKevents.rpy:784
     old "The city guard ([cost3] gold)"
-    new "The city guard ([cost3] gold)"
+    new "城卫队([cost3]枚金币)"
 
     # game/BKevents.rpy:784
     old "Change your mind and look for her yourself"
-    new "Change your mind and look for her yourself"
+    new "改变你的想法,寻找她自己"
 
     # game/BKevents.rpy:913
     old "Ask them to come back tomorrow"
-    new "Ask them to come back tomorrow"
+    new "让他们明天回来"
 
     # game/BKevents.rpy:913
     old "Ask them to come back in a week"
-    new "Ask them to come back in a week"
+    new "让他们一周之后再来"
 
     # game/BKevents.rpy:913
     old "Sell her"
-    new "Sell her"
+    new "出售她"
 
     # game/BKevents.rpy:913
     old "Send her to the farm"
-    new "Send her to the farm"
+    new "送她去农场"
 
     # game/BKevents.rpy:1042
     old "Come back later"
-    new "Come back later"
+    new "晚一点回来"
 
     # game/BKevents.rpy:1042
     old "Forget about her"
-    new "Forget about her"
+    new "忘记她"
 
     # game/BKevents.rpy:1061
     old "Persuade her to come back."
-    new "Persuade her to come back."
+    new "劝她回来。"
 
     # game/BKevents.rpy:1061
     old "Threaten her."
-    new "Threaten her."
+    new "威胁她。"
 
     # game/BKevents.rpy:1061
     old "Force her to come back."
-    new "Force her to come back."
+    new "强迫她回来。"
 
     # game/BKevents.rpy:1061
     old "Forget her"
-    new "Forget her"
+    new "忘记她"
 
     # game/BKevents.rpy:1061
     old "Leave her for now"
-    new "Leave her for now"
-
-    # game/BKevents.rpy:1293
-    old "Give her the day off"
-    new "Give her the day off"
-
-    # game/BKevents.rpy:1480
-    old "[girl.fullname] is waiting for you in the bedroom for tonight's training."
-    new "[girl.fullname] is waiting for you in the bedroom for tonight's training."
+    new "暂时离开她"
 
     # game/BKevents.rpy:1480
     old "Train her"
-    new "Train her"
+    new "训练她"
 
     # game/BKevents.rpy:1480
     old "Don't train her"
-    new "Don't train her"
+    new "不训练她"
 
     # game/BKevents.rpy:1480
     old "Remove her from your room"
-    new "Remove her from your room"
+    new "让她离开你的房间"
 
     # game/BKevents.rpy:1560
     old "Do you want to set up a resource extractor in this location (cannot be undone)?"
-    new "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    new "你想在这个地方设置一个资源提取器吗（不能撤销）？"
 
     # game/BKevents.rpy:1560
     old "Yes, set up a resource extractor Mk I in this location"
-    new "Yes, set up a resource extractor Mk I in this location"
+    new "是的，在这个地方设置一个资源提取器Mk I"
 
     # game/BKevents.rpy:1560
     old "No, collect resources instead"
-    new "No, collect resources instead"
+    new "不，收集资源"
 
     # game/BKevents.rpy:1576
     old "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-    new "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
+    new "你在这个地方有一个激活的资源提取器。你是否要{b}关闭{/b}？"
 
     # game/BKevents.rpy:1576
     old "Turn it OFF"
-    new "Turn it OFF"
+    new "关闭它"
 
     # game/BKevents.rpy:1576
     old "Just collect resources"
-    new "Just collect resources"
+    new "收集资源"
 
     # game/BKevents.rpy:1591
     old "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-    new "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
+    new "你在这个地方有一个关闭的资源提取器。你想把它{b}激活{/b}吗？"
 
     # game/BKevents.rpy:1591
     old "Turn it ON"
-    new "Turn it ON"
+    new "开启它"
 
     # game/BKevents.rpy:1722
     old "Yes, set up a resource extractor Mk II in this location"
-    new "Yes, set up a resource extractor Mk II in this location"
+    new "是的，在这个地方设置一个资源提取器Mk II"
 
     # game/BKevents.rpy:1929
     old "Exchange resources"
-    new "Exchange resources"
+    new "交流资源"
 
     # game/BKevents.rpy:1929
     old "Fool around"
-    new "Fool around"
+    new "闲逛"
 
     # game/BKevents.rpy:2515
     old "Show me what you have"
-    new "Show me what you have"
+    new "让我看看你有什么"
 
     # game/BKevents.rpy:2515
     old "What is it that you sell, again?"
-    new "What is it that you sell, again?"
+    new "再问一次你卖什么东西？"
 
     # game/BKevents.rpy:2647
     old "What can I get from you here, again?"
-    new "What can I get from you here, again?"
+    new "再问一次我能从你这里买到什么?"
 
     # game/BKevents.rpy:2742
     old "Another time"
-    new "Another time"
+    new "改天"
 
     # game/BKevents.rpy:2839
     old "What would you like to do?"
-    new "What would you like to do?"
+    new "你想做什么?"
 
     # game/BKevents.rpy:2839
     old "Buy something"
-    new "Buy something"
+    new "买东西"
 
     # game/BKevents.rpy:2839
     old "Show her what you found"
-    new "Show her what you found"
+    new "告诉她你发现什么"
 
     # game/BKevents.rpy:2874
     old "Give her as a present"
-    new "Give her as a present"
+    new "给她作为礼物"
 
     # game/BKevents.rpy:2978
     old "Chat"
-    new "Chat"
+    new "交谈"
 
     # game/BKevents.rpy:2988
     old "How are things?"
-    new "How are things?"
+    new "近况如何?"
 
     # game/BKevents.rpy:2988
     old "Can I come in?"
-    new "Can I come in?"
+    new "我能进来吗?"
 
     # game/BKevents.rpy:3013
     old "What do you want to do? (costs 1 AP)"
-    new "What do you want to do? (costs 1 AP)"
+    new "你想让我做什么？(消耗1精力)"
 
     # game/BKevents.rpy:3013
     old "Strip for me"
-    new "Strip for me"
+    new "为我脱去衣服"
 
     # game/BKevents.rpy:3013
     old "Give me a titjob"
-    new "Give me a titjob"
+    new "给我来一次乳交"
 
     # game/BKevents.rpy:3013
     old "Let's have sex"
-    new "Let's have sex"
+    new "让我们来做爱"
 
     # game/BKevents.rpy:3420
     old "Soft training"
-    new "Soft training"
+    new "温和训练"
 
     # game/BKevents.rpy:3420
     old "Sexual training"
-    new "Sexual training"
+    new "性训练"
 
     # game/BKevents.rpy:3426
     old "Libido training"
-    new "Libido training"
+    new "性欲训练"
 
     # game/BKevents.rpy:3426
     old "Obedience training"
-    new "Obedience training"
+    new "服从训练"
 
     # game/BKevents.rpy:3426
     old "Constitution training"
-    new "Constitution training"
+    new "体格训练"
 
     # game/BKevents.rpy:3426
     old "Sensitivity training"
-    new "Sensitivity training"
+    new "敏感培训"
 
     # game/BKevents.rpy:3426
     old "Stay in her cell (rest)"
-    new "Stay in her cell (rest)"
+    new "留在她的牢房里 (休息时间)"
 
     # game/BKevents.rpy:3443
     old "Naked training"
-    new "Naked training"
+    new "露出训练"
 
     # game/BKevents.rpy:3443
     old "Service training"
-    new "Service training"
+    new "性服侍训练"
 
     # game/BKevents.rpy:3443
     old "Sex training"
-    new "Sex training"
+    new "性交训练"
 
     # game/BKevents.rpy:3443
     old "Anal training"
-    new "Anal training"
+    new "肛交训练"
 
     # game/BKevents.rpy:3443
     old "Fetish training"
-    new "Fetish training"
+    new "皮绳愉虐训练"
 
     # game/BKevents.rpy:3443
     old "Bisexual training"
-    new "Bisexual training"
+    new "百合训练"
 
     # game/BKevents.rpy:3443
     old "Group training"
-    new "Group training"
+    new "群交训练"
 
     # game/BKevents.rpy:3443
     old "Everything (auto-train) - Indifferent"
-    new "Everything (auto-train) - Indifferent"
+    new "一切 (自动训练) - 淡然处之"
 
     # game/BKevents.rpy:3443
     old "Everything (auto-train) - Interested"
-    new "Everything (auto-train) - Interested"
+    new "一切 (自动训练) - 兴趣盎然"
 
     # game/BKevents.rpy:3443
     old "Everything (auto-train) - Fascinated"
-    new "Everything (auto-train) - Fascinated"
+    new "一切 (自动训练) - 神魂颠倒"
 
     # game/BKevents.rpy:3487
     old "The Stables (minions: [free_s])"
-    new "The Stables (minions: [free_s])"
+    new "马厩 (仆从: [free_s])"
 
     # game/BKevents.rpy:3487
     old "The Pig Stall (minions: [free_ps])"
-    new "The Pig Stall (minions: [free_ps])"
+    new "兽栏 (仆从: [free_ps])"
 
     # game/BKevents.rpy:3487
     old "The Monster Den (minions: [free_md])"
-    new "The Monster Den (minions: [free_md])"
+    new "怪物巢穴 (仆从: [free_md])"
 
     # game/BKevents.rpy:3487
     old "The Workshop (minions: [free_w])"
-    new "The Workshop (minions: [free_w])"
+    new "车间 (仆从: [free_w])"
 
     # game/BKevents.rpy:3487
     old "Anywhere (auto)"
-    new "Anywhere (auto)"
+    new "任何地方 (自动)"
 
     # game/BKevents.rpy:3563
     old "Spare her"
-    new "Spare her"
+    new "饶恕她"
 
     # game/BKevents.rpy:3609
     old "[girl.fullname] is resisting. What do you do?"
-    new "[girl.fullname] is resisting. What do you do?"
+    new "[girl.fullname]反应抵制。你准备怎么做？"
 
     # game/BKevents.rpy:3609
     old "Let her go with a warning"
-    new "Let her go with a warning"
+    new "警告后放她走"
 
     # game/BKevents.rpy:3930
     old "Change it"
-    new "Change it"
+    new "更改"
 
     # game/BKevents.rpy:3930
     old "Keep training [skill]"
-    new "Keep training [skill]"
+    new "保持训练 [skill]"
 
     # game/BKevents.rpy:3954
     old "Keep training [act]"
-    new "Keep training [act]"
+    new "保持训练 [act]"
 
     # game/BKevents.rpy:3990
     old "Yes, do that"
-    new "Yes, do that"
+    new "是的，继续做吧"
 
     # game/BKevents.rpy:3990
     old "No, spare her"
-    new "No, spare her"
+    new "不了，放过她"
 
     # game/BKevents.rpy:4065
     old "Change her training"
-    new "Change her training"
+    new "更改她的训练"
 
     # game/BKevents.rpy:4065
     old "Soften her training"
-    new "Soften her training"
+    new "温和化她的训练"
 
     # game/BKevents.rpy:4065
     old "Train her hard, but within reason"
-    new "Train her hard, but within reason"
+    new "严格训练她，但要在合理范围内"
 
     # game/BKevents.rpy:4065
     old "Train her even harder"
-    new "Train her even harder"
+    new "更加努力地训练她"
 
     # game/BKevents.rpy:4065
     old "Keep her current training level ([prog.mode])"
-    new "Keep her current training level ([prog.mode])"
+    new "保持她目前的训练水平 ([prog.mode])"
 
     # game/BKevents.rpy:4130
     old "Change current training mode ([prog.mode])"
-    new "Change current training mode ([prog.mode])"
+    new "更改当前的训练模式 ([prog.mode])"
 
     # game/BKevents.rpy:4130
     old "Use her weakness for [girl.weakness]s ([not_avoid])"
-    new "Use her weakness for [girl.weakness]s ([not_avoid])"
+    new "利用她的弱点为 [girl.weakness] ([not_avoid])"
 
     # game/BKevents.rpy:4132
     old "Soft"
-    new "Soft"
+    new "温和"
 
     # game/BKevents.rpy:4132
     old "Hard"
-    new "Hard"
+    new "努力"
 
     # game/BKevents.rpy:4132
     old "Hardest"
-    new "Hardest"
+    new "强硬"
 
     # game/BKevents.rpy:4146
     old "Use it"
-    new "Use it"
+    new "使用"
 
     # game/BKevents.rpy:4311
     old "No, you keep her"
-    new "No, you keep her"
+    new "不，你就让她保持这样"
 
     # game/BKevents.rpy:4350
     old "No, keep her"
-    new "No, keep her"
+    new "不，保持她这样"
 
     # game/BKevents.rpy:4350
     old "No, keep her and change her training to 'hard'"
-    new "No, keep her and change her training to 'hard'"
+    new "不，保留她并将她的训练改为“努力”"
 
     # game/BKevents.rpy:4350
     old "No, keep her and change her training to 'hardest'"
-    new "No, keep her and change her training to 'hardest'"
+    new "不，保留她并将她的训练改为“强硬”"
 
     # game/BKevents.rpy:4392
     old "Okay, sure"
-    new "Okay, sure"
+    new "好的，当然"
 
     # game/BKevents.rpy:4392
     old "Nah, I'm fine"
-    new "Nah, I'm fine"
+    new "不，我很好"
 
     # game/BKevents.rpy:4453
     old "Go on"
-    new "Go on"
+    new "继续"
 
     # game/BKevents.rpy:4617
     old "I need to check some things first"
-    new "I need to check some things first"
+    new "我需要先检查一些事情"
 
     # game/BKevents.rpy:4617
     old "None of my girls has the skills for this."
-    new "None of my girls has the skills for this."
+    new "我的女孩们都没有这方面的技能。"
 
     # game/BKevents.rpy:4630
     old "Let me think about it."
-    new "Let me think about it."
+    new "让我想一想。"
 
     # game/BKevents.rpy:4630
     old "No, just come back next month."
-    new "No, just come back next month."
+    new "不，下个月再来吧。"
 
     # game/BKevents.rpy:4739
     old "Yeah, please come back later"
-    new "Yeah, please come back later"
+    new "是的，请以后再来"
 
     # game/BKevents.rpy:4739
     old "No, I'll skip on contracts this month"
-    new "No, I'll skip on contracts this month"
+    new "不，这个月我不谈合同了"
 
     # game/BKevents.rpy:6006
     old "Choose what you want [girl.fullname] to do:"
-    new "Choose what you want [girl.fullname] to do:"
+    new "选择你想让[girl.fullname]做什么:"
 
     # game/BKevents.rpy:6006
     old "Oral sex"
-    new "Oral sex"
+    new "口交"
 
     # game/BKevents.rpy:6006
     old "Regular sex"
-    new "Regular sex"
+    new "常规性行为"
 
     # game/BKevents.rpy:6006
     old "Butt sex"
-    new "Butt sex"
+    new "肛交"
 
     # game/BKevents.rpy:6006
     old "Kinky sex"
-    new "Kinky sex"
+    new "淫荡的性爱"
 
     # game/BKevents.rpy:6006
     old "Threesome"
-    new "Threesome"
+    new "3P"
 
     # game/BKevents.rpy:6006
     old "Group sex"
-    new "Group sex"
+    new "群交"
 
     # game/BKevents.rpy:6165
     old "My valuable assistant"
-    new "My valuable assistant"
+    new "我的宝贵助手"
 
     # game/BKevents.rpy:6165
     old "My personal slave"
-    new "My personal slave"
+    new "我的私人奴隶"
 
     # game/BKevents.rpy:6165
     old "One of my cum dumps"
-    new "One of my cum dumps"
+    new "我的性欲处理器"
 
     # game/BKevents.rpy:6227
     old "Yes, explain yourself"
-    new "Yes, explain yourself"
+    new "是的，请说明一下你自己"
 
     # game/BKevents.rpy:6227
     old "No, I get it"
-    new "No, I get it"
+    new "不，我知道了"
 
     # game/BKevents.rpy:6244
     old "A necessary evil"
-    new "A necessary evil"
+    new "一个必要的邪恶"
 
     # game/BKevents.rpy:6244
     old "An unacceptable powergrab"
-    new "An unacceptable powergrab"
+    new "令人无法接受的权力掠夺"
 
     # game/BKevents.rpy:6244
     old "Not the fucking point"
-    new "Not the fucking point"
+    new "他妈的，这不是重点"
 
     # game/BKevents.rpy:6320
     old "How much do I have to pay"
-    new "How much do I have to pay"
+    new "我必须支付多少钱"
 
     # game/BKevents.rpy:6320
     old "When do I have to pay"
-    new "When do I have to pay"
+    new "我什么时候需要支付"
 
     # game/BKevents.rpy:6320
     old "What if I refuse"
-    new "What if I refuse"
+    new "如果我拒绝呢？"
 
     # game/BKevents.rpy:6320
     old "What happens if I can't pay"
-    new "What happens if I can't pay"
+    new "如果我无法支付，会发生什么"
 
     # game/BKevents.rpy:6320
     old "Fine, I'll pay"
-    new "Fine, I'll pay"
+    new "好吧，我会付钱的"
 
     # game/BKevents.rpy:6833
     old "Not today"
-    new "Not today"
+    new "今天不行"
 

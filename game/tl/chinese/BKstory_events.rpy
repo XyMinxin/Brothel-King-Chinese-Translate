@@ -36106,251 +36106,251 @@ translate chinese strings:
 
     # game/BKstory_events.rpy:131
     old "Choose your present"
-    new "Choose your present"
+    new "选择你的礼物"
 
     # game/BKstory_events.rpy:411
     old "Maybe I do"
-    new "Maybe I do"
+    new "也许我做的"
 
     # game/BKstory_events.rpy:411
     old "You're mistaken"
-    new "You're mistaken"
+    new "你是错误的"
 
     # game/BKstory_events.rpy:537
     old "How did you become a thief?"
-    new "How did you become a thief?"
+    new "你是怎么成为一个小偷吗？"
 
     # game/BKstory_events.rpy:537
     old "How did you become the guild leader?"
-    new "How did you become the guild leader?"
+    new "你是怎么成为公会领袖？"
 
     # game/BKstory_events.rpy:537
     old "What happened to you?"
-    new "What happened to you?"
+    new "你怎么了？"
 
     # game/BKstory_events.rpy:537
     old "Who was your mother?"
-    new "Who was your mother?"
+    new "你的母亲是谁？"
 
     # game/BKstory_events.rpy:537
     old "What about your father?"
-    new "What about your father?"
+    new "你的父亲怎么样？"
 
     # game/BKstory_events.rpy:537
     old "Can I ask about your tattoo?"
-    new "Can I ask about your tattoo?"
+    new "我能问关于你的纹身吗？"
 
     # game/BKstory_events.rpy:818
     old "You think to yourself."
-    new "You think to yourself."
+    new "你想自己。"
 
     # game/BKstory_events.rpy:818
     old "My friends should be treated well"
-    new "My friends should be treated well"
+    new "我的朋友应该善待"
 
     # game/BKstory_events.rpy:818
     old "It's good for business"
-    new "It's good for business"
+    new "它是对生意有利"
 
     # game/BKstory_events.rpy:818
     old "I'm only doing this because I want to peep"
-    new "I'm only doing this because I want to peep"
+    new "我这样做是因为我想偷看"
 
     # game/BKstory_events.rpy:848
     old "Peep on Renza"
-    new "Peep on Renza"
+    new "偷看伦萨"
 
     # game/BKstory_events.rpy:848
     old "Don't peep"
-    new "Don't peep"
+    new "不要偷看"
 
     # game/BKstory_events.rpy:863
     old "No, don't peep"
-    new "No, don't peep"
+    new "不，不要偷看"
 
     # game/BKstory_events.rpy:880
     old "Definitely don't peep"
-    new "Definitely don't peep"
+    new "绝对不要偷看"
 
     # game/BKstory_events.rpy:1141
     old "You have people counting on you"
-    new "You have people counting on you"
+    new "你有人指望你"
 
     # game/BKstory_events.rpy:1141
     old "You can honor her memory"
-    new "You can honor her memory"
+    new "你能尊重她的记忆"
 
     # game/BKstory_events.rpy:1141
     old "You have to let it go"
-    new "You have to let it go"
+    new "你必须让它去吧"
 
     # game/BKstory_events.rpy:1141
     old "You could set yourself free"
-    new "You could set yourself free"
+    new "你可以释放你自己"
 
     # game/BKstory_events.rpy:1141
     old "You could stop whining"
-    new "You could stop whining"
+    new "你可以停止抱怨"
 
     # game/BKstory_events.rpy:1237
     old "To make a name for myself"
-    new "To make a name for myself"
+    new "为自己扬名"
 
     # game/BKstory_events.rpy:1237
     old "To become rich and live in luxury"
-    new "To become rich and live in luxury"
+    new "变得富有，生活奢侈"
 
     # game/BKstory_events.rpy:1237
     old "To get absolute power"
-    new "To get absolute power"
+    new "得到绝对的权力"
 
     # game/BKstory_events.rpy:1237
     old "To do right by my friends"
-    new "To do right by my friends"
+    new "善待我的朋友"
 
     # game/BKstory_events.rpy:1237
     old "To crush my enemies"
-    new "To crush my enemies"
+    new "压碎我的敌人"
 
     # game/BKstory_events.rpy:1237
     old "To fuck as many girls as possible"
-    new "To fuck as many girls as possible"
+    new "干尽可能多的女孩"
 
     # game/BKstory_events.rpy:1237
     old "There is no goal to life"
-    new "There is no goal to life"
+    new "没有目标的生活"
 
     # game/BKstory_events.rpy:1602
     old "How do you feel about elves?"
-    new "How do you feel about elves?"
+    new "你对精灵有什么看法？"
 
     # game/BKstory_events.rpy:1602
     old "I bear them no grudge"
-    new "I bear them no grudge"
+    new "我没有怨恨"
 
     # game/BKstory_events.rpy:1602
     old "I hate them"
-    new "I hate them"
+    new "我讨厌他们"
 
     # game/BKstory_events.rpy:1602
     old "I don't really know"
-    new "I don't really know"
+    new "我真的不知道"
 
     # game/BKstory_events.rpy:1731
     old "Warn the elf girl"
-    new "Warn the elf girl"
+    new "警告那个精灵女孩"
 
     # game/BKstory_events.rpy:1731
     old "Wait and see"
-    new "Wait and see"
+    new "观望"
 
     # game/BKstory_events.rpy:1746
     old "Denounce the elf's hiding place"
-    new "Denounce the elf's hiding place"
+    new "告发精灵的藏身之处"
 
     # game/BKstory_events.rpy:2040
     old "Defend yourself"
-    new "Defend yourself"
+    new "为自己辩护"
 
     # game/BKstory_events.rpy:2040
     old "Defend the girl"
-    new "Defend the girl"
+    new "保护女孩"
 
     # game/BKstory_events.rpy:2040
     old "Keep watching"
-    new "Keep watching"
+    new "继续关注"
 
     # game/BKstory_events.rpy:2104
     old "Fight them head-on"
-    new "Fight them head-on"
+    new "正面对抗他们"
 
     # game/BKstory_events.rpy:2104
     old "Use magic"
-    new "Use magic"
+    new "使用魔法"
 
     # game/BKstory_events.rpy:2810
     old "You don't want to fight me"
-    new "You don't want to fight me"
+    new "你不想打我"
 
     # game/BKstory_events.rpy:2810
     old "I can be useful to you"
-    new "I can be useful to you"
+    new "我能对你有用"
 
     # game/BKstory_events.rpy:2910
     old "Can I ask you a few questions?"
-    new "Can I ask you a few questions?"
+    new "我可以问你几个问题吗？"
 
     # game/BKstory_events.rpy:2910
     old "Fine"
-    new "Fine"
+    new "好"
 
     # game/BKstory_events.rpy:2919
     old "What did you do to those men?"
-    new "What did you do to those men?"
+    new "你对那些人做了什么？"
 
     # game/BKstory_events.rpy:3244
     old "Why is your brother leaving?"
-    new "Why is your brother leaving?"
+    new "为什么你哥哥离开？"
 
     # game/BKstory_events.rpy:3244
     old "Can't you hire help?"
-    new "Can't you hire help?"
+    new "你不能雇人帮忙吗？"
 
     # game/BKstory_events.rpy:3244
     old "Why are your animals dying?"
-    new "Why are your animals dying?"
+    new "你的动物为什么会死？"
 
     # game/BKstory_events.rpy:3244
     old "A curse?"
-    new "A curse?"
+    new "一种诅咒？"
 
     # game/BKstory_events.rpy:3244
     old "What about this 'farm'?"
-    new "What about this 'farm'?"
+    new "这个‘农场’呢？"
 
     # game/BKstory_events.rpy:3244
     old "What if I helped you?"
-    new "What if I helped you?"
+    new "如果我帮你呢？"
 
     # game/BKstory_events.rpy:3490
     old "Attack him with your weapon"
-    new "Attack him with your weapon"
+    new "用你的武器攻击他"
 
     # game/BKstory_events.rpy:3490
     old "Attack him with a spell"
-    new "Attack him with a spell"
+    new "用法术攻击他"
 
     # game/BKstory_events.rpy:4294
     old "Save her"
-    new "Save her"
+    new "救她"
 
     # game/BKstory_events.rpy:4294
     old "Stay out of this"
-    new "Stay out of this"
+    new "远离这"
 
     # game/BKstory_events.rpy:5396
     old "Get a handjob"
-    new "Get a handjob"
+    new "得到一个手淫"
 
     # game/BKstory_events.rpy:5396
     old "Have sex"
-    new "Have sex"
+    new "做爱"
 
     # game/BKstory_events.rpy:5396
     old "Escape"
-    new "Escape"
+    new "逃避"
 
     # game/BKstory_events.rpy:5947
     old "Infiltrate the club"
-    new "Infiltrate the club"
+    new "潜入俱乐部"
 
     # game/BKstory_events.rpy:5947
     old "Ignore it"
-    new "Ignore it"
+    new "无视它"
 
     # game/BKstory_events.rpy:6013
     old "Stumble towards..."
-    new "Stumble towards..."
+    new "蹒跚走向..."
 
     # game/BKstory_events.rpy:6013
     old "General Ka"
@@ -36366,111 +36366,111 @@ translate chinese strings:
 
     # game/BKstory_events.rpy:6512
     old "Sure (50 gold)"
-    new "Sure (50 gold)"
+    new "确定(50枚金币)"
 
     # game/BKstory_events.rpy:6512
     old "Only if you pay for it"
-    new "Only if you pay for it"
+    new "只要你付钱"
 
     # game/BKstory_events.rpy:6512
     old "Absolutely not"
-    new "Absolutely not"
+    new "绝对不是"
 
     # game/BKstory_events.rpy:6720
     old "The monster seems poised to attack you. It's time to defend yourself."
-    new "The monster seems poised to attack you. It's time to defend yourself."
+    new "怪物似乎随时准备攻击你。是时候保护自己了。"
 
     # game/BKstory_events.rpy:6720
     old "Fight the monster"
-    new "Fight the monster"
+    new "与怪物战斗"
 
     # game/BKstory_events.rpy:6720
     old "Run"
-    new "Run"
+    new "跑"
 
     # game/BKstory_events.rpy:7034
     old "Follow the traces"
-    new "Follow the traces"
+    new "跟随踪迹"
 
     # game/BKstory_events.rpy:7185
     old "Rush to help"
-    new "Rush to help"
+    new "跑去帮忙"
 
     # game/BKstory_events.rpy:7185
     old "Watch on"
-    new "Watch on"
+    new "关注"
 
     # game/BKstory_events.rpy:7445
     old "Skip event? (monster)"
-    new "Skip event? (monster)"
+    new "跳过事件？(怪物)"
 
     # game/BKstory_events.rpy:8256
     old "Greet her"
-    new "Greet her"
+    new "迎接她"
 
     # game/BKstory_events.rpy:8256
     old "No time"
-    new "No time"
+    new "没有时间"
 
     # game/BKstory_events.rpy:8856
     old "No need"
-    new "No need"
+    new "没有必要"
 
     # game/BKstory_events.rpy:8922
     old "Skip event? (bestiality)"
-    new "Skip event? (bestiality)"
+    new "跳过事件？(兽交)"
 
     # game/BKstory_events.rpy:9036
     old "I'm sorry, my lady, we haven't been introduced"
-    new "I'm sorry, my lady, we haven't been introduced"
+    new "我很抱歉，我的女士，我们还没有介绍"
 
     # game/BKstory_events.rpy:9036
     old "Don't mind me. I was just taking a nap."
-    new "Don't mind me. I was just taking a nap."
+    new "别介意我。 我只是小睡一会儿。"
 
     # game/BKstory_events.rpy:9036
     old "Hey, babe. Care to join me for a roll in the hay?"
-    new "Hey, babe. Care to join me for a roll in the hay?"
+    new "嘿，宝贝。要不要在干草中跟我一起来？"
 
     # game/BKstory_events.rpy:9067
     old "You must be mistaken..."
-    new "You must be mistaken..."
+    new "你一定是错误的…"
 
     # game/BKstory_events.rpy:9067
     old "I'm not a pet! Are you blind?"
-    new "I'm not a pet! Are you blind?"
+    new "我不是宠物！你瞎了吗？"
 
     # game/BKstory_events.rpy:9067
     old "Who are you calling a pet, wench?"
-    new "Who are you calling a pet, wench?"
+    new "你说谁是宠物，丫头？"
 
     # game/BKstory_events.rpy:9133
     old "Oh, sorry!"
-    new "Oh, sorry!"
+    new "哦,对不起！"
 
     # game/BKstory_events.rpy:9133
     old "I didn't mean it..."
-    new "I didn't mean it..."
+    new "我不是故意的……"
 
     # game/BKstory_events.rpy:9133
     old "RIBBIT!"
-    new "RIBBIT!"
+    new "呱呱！"
 
     # game/BKstory_events.rpy:9444
     old "Agree with her"
-    new "Agree with her"
+    new "同意她的"
 
     # game/BKstory_events.rpy:9444
     old "Disagree with her"
-    new "Disagree with her"
+    new "不同意她"
 
     # game/BKstory_events.rpy:9444
     old "Push her down the hole"
-    new "Push her down the hole"
+    new "把她推下洞"
 
     # game/BKstory_events.rpy:9741
     old "Leave her"
-    new "Leave her"
+    new "离开她"
 
     # game/BKstory_events.rpy:10005
     old "Skip event? (machine)"
@@ -36478,197 +36478,196 @@ translate chinese strings:
 
     # game/BKstory_events.rpy:11301
     old "Let's play"
-    new "Let's play"
+    new "让我们玩"
 
     # game/BKstory_events.rpy:11301
     old "What happens if I win?"
-    new "What happens if I win?"
+    new "如果我赢了会发生什么？"
 
     # game/BKstory_events.rpy:11301
     old "What happens if I lose?"
-    new "What happens if I lose?"
+    new "如果我输了会发生什么？"
 
     # game/BKstory_events.rpy:11341
     old "Is the total above..."
-    new "Is the total above..."
+    new "总数是否在...以上"
 
     # game/BKstory_events.rpy:11341
     old "Is the total below..."
-    new "Is the total below..."
+    new "总数是否在...以下"
 
     # game/BKstory_events.rpy:11341
     old "Did you roll a..."
-    new "Did you roll a..."
+    new "你是不是掷了一个..."
 
     # game/BKstory_events.rpy:11341
     old "Did you roll twice the same number?"
-    new "Did you roll twice the same number?"
+    new "你掷了两次相同的数吗?"
 
     # game/BKstory_events.rpy:11341
     old "Is the total an odd number?"
-    new "Is the total an odd number?"
+    new "总数是奇数吗?"
 
     # game/BKstory_events.rpy:11341
     old "Is the total an even number?"
-    new "Is the total an even number?"
+    new "总数是偶数吗?"
 
     # game/BKstory_events.rpy:11541
     old "Paper!"
-    new "Paper!"
+    new "布!"
 
     # game/BKstory_events.rpy:11541
     old "Scissor!"
-    new "Scissor!"
+    new "剪刀!"
 
     # game/BKstory_events.rpy:11541
     old "Rock!"
-    new "Rock!"
+    new "石头!"
 
     # game/BKstory_events.rpy:11672
     old "Use the lightning rod"
-    new "Use the lightning rod"
+    new "使用避雷针"
 
     # game/BKstory_events.rpy:11672
     old "Use a counterspell"
-    new "Use a counterspell"
+    new "使用反击咒语"
 
     # game/BKstory_events.rpy:12532
     old "Satella was born from a dragon?"
-    new "Satella was born from a dragon?"
+    new "萨特拉出生于龙？"
 
     # game/BKstory_events.rpy:12532
     old "Wait, did you fuck a dragon?"
-    new "Wait, did you fuck a dragon?"
+    new "等等，你上过龙吗?"
 
     # game/BKstory_events.rpy:14447
     old "Yes. Repay [MC.loan.amount] gold right now and settle your account"
-    new "Yes. Repay [MC.loan.amount] gold right now and settle your account"
+    new "是的。立即偿还[MC.loan.amount]枚金币并结算您的账户"
 
     # game/BKstory_events.rpy:14447
     old "No. Keep your loan and keep paying interest"
-    new "No. Keep your loan and keep paying interest"
+    new "不是。保持你的贷款和支付利息"
 
     # game/BKstory_events.rpy:14447
     old "No. I'd rather get laid"
-    new "No. I'd rather get laid"
+    new "不是。我宁愿得到了"
 
     # game/BKstory_events.rpy:14732
     old "What's a TJB card?"
-    new "What's a TJB card?"
+    new "TJB卡是什么?"
 
     # game/BKstory_events.rpy:14732
     old "Nice!"
-    new "Nice!"
+    new "漂亮!"
 
     # game/BKstory_events.rpy:15864
     old "What is this place?"
-    new "What is this place?"
+    new "这是什么地方?"
 
     # game/BKstory_events.rpy:15864
     old "Can I trade here?"
-    new "Can I trade here?"
+    new "我可以在这里交易吗?"
 
     # game/BKstory_events.rpy:16019
     old "Tell me more"
-    new "Tell me more"
+    new "告诉我更多"
 
     # game/BKstory_events.rpy:16019
     old "I do"
-    new "I do"
+    new "我做"
 
     # game/BKstory_events.rpy:16019
     old "No, I just want to trade"
-    new "No, I just want to trade"
+    new "不,我只是想交易"
 
     # game/BKstory_events.rpy:16150
     old "Ask a personal question"
-    new "Ask a personal question"
+    new "问一个私人的问题"
 
     # game/BKstory_events.rpy:16150
     old "Ask for a rebate"
-    new "Ask for a rebate"
+    new "要求退税"
 
     # game/BKstory_events.rpy:16222
     old "Ask for a kiss"
-    new "Ask for a kiss"
+    new "索要一个吻"
 
     # game/BKstory_events.rpy:16222
     old "Ask for a story"
-    new "Ask for a story"
+    new "要求一个故事"
 
     # game/BKstory_events.rpy:16222
     old "Ask for free stuff"
-    new "Ask for free stuff"
+    new "要求免费的东西"
 
     # game/BKstory_events.rpy:16304
     old "Ask her on a date"
-    new "Ask her on a date"
+    new "问她约会"
 
     # game/BKstory_events.rpy:16304
     old "Ask to touch her boobs"
-    new "Ask to touch her boobs"
+    new "要求抚摸她的乳房"
 
     # game/BKstory_events.rpy:16304
     old "Ask for advanced resources"
-    new "Ask for advanced resources"
+    new "要求高级资源"
 
     # game/BKstory_events.rpy:16551
     old "Accept the offer (1000 gold)"
-    new "Accept the offer (1000 gold)"
+    new "接受报价(1000枚金币)"
 
     # game/BKstory_events.rpy:16551
     old "Refuse the offer"
-    new "Refuse the offer"
+    new "拒绝提供"
 
     # game/BKstory_events.rpy:16551
     old "Kill him"
-    new "Kill him"
+    new "杀了他"
 
     # game/BKstory_events.rpy:16708
     old "I want 1000 gold"
-    new "I want 1000 gold"
+    new "我想要1000枚金币"
 
     # game/BKstory_events.rpy:16708
     old "I want 2000 gold"
-    new "I want 2000 gold"
+    new "我想要2000枚金币"
 
     # game/BKstory_events.rpy:16708
     old "I want something else..."
-    new "I want something else..."
+    new "我想要其他的东西……"
 
     # game/BKstory_events.rpy:16867
     old "He's alive (truth)"
-    new "He's alive (truth)"
+    new "他还活着(真理)"
 
     # game/BKstory_events.rpy:16867
     old "He's alive (lie)"
-    new "He's alive (lie)"
+    new "他还活着(谎言)"
 
     # game/BKstory_events.rpy:16867
     old "He's dead (truth)"
-    new "He's dead (truth)"
+    new "他死了(真理)"
 
     # game/BKstory_events.rpy:16867
     old "He's dead (lie)"
-    new "He's dead (lie)"
+    new "他死了(谎言)"
 
     # game/BKstory_events.rpy:16867
     old "I don't know (half-lie)"
-    new "I don't know (half-lie)"
+    new "我不知道(一半谎言)"
 
     # game/BKstory_events.rpy:17013
     old "You bet!"
-    new "You bet!"
+    new "你说的没错！"
 
     # game/BKstory_events.rpy:17896
     old "You're nice"
-    new "You're nice"
+    new "你真漂亮"
 
     # game/BKstory_events.rpy:17896
     old "You're stupid"
-    new "You're stupid"
+    new "你真愚蠢"
 
     # game/BKstory_events.rpy:17896
     old "You're hot"
-    new "You're hot"
-
+    new "你真性感"

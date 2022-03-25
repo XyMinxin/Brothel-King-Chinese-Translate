@@ -56,73 +56,72 @@ translate chinese strings:
 
     # game/BKscreens.rpy:7528
     old "Content settings"
-    new "Content settings"
+    new "内容设置"
 
     # game/BKscreens.rpy:7569
     old "Picture settings"
-    new "Picture settings"
+    new "图片设置"
 
     # game/BKscreens.rpy:7613
     old "UI settings"
-    new "UI settings"
+    new "UI设置"
 
     # game/BKscreens.rpy:7673
     old "Misc"
-    new "Misc"
+    new "杂项"
 
     # game/BKscreens.rpy:7803
     old "Girl pack mix"
-    new "Girl pack mix"
+    new "人物包组合"
 
     # game/BKscreens.rpy:7803
     old "Update packstates"
-    new "Update packstates"
+    new "更新包状态"
 
     # game/BKscreens.rpy:7806
     old "Would you like to see girl ratings (this may take some time if you have many girl packs)?"
-    new "Would you like to see girl ratings (this may take some time if you have many girl packs)?"
+    new "你喜欢看女孩评分吗(如果你有很多人物包，这可能需要一些时间)？"
 
     # game/BKscreens.rpy:8186
     old "Welcome to the packstate feature (courtesy of {color=[c_magenta]}{b}Chris12{/b}{/color})"
-    new "Welcome to the packstate feature (courtesy of {color=[c_magenta]}{b}Chris12{/b}{/color})"
+    new "欢迎使用包装状态特性(该功能由{color=[c_magenta]}{b}Chris12{/b}{/color}提供)"
 
     # game/BKscreens.rpy:8186
     old "Introduction to Packstates"
-    new "Introduction to Packstates"
+    new "包状态简介"
 
     # game/BKscreens.rpy:8186
     old "Unrecognized Images: [preferences.packstate_unrecognized]"
-    new "Unrecognized Images: [preferences.packstate_unrecognized]"
+    new "未识别的图片:[preferences.packstate_unrecognized]"
 
     # game/BKscreens.rpy:8186
     old "Simulation"
-    new "Simulation"
+    new "模拟"
 
     # game/BKscreens.rpy:8186
     old "Apply packstate"
-    new "Apply packstate"
+    new "应用包状态"
 
     # game/BKscreens.rpy:8201
     old "Hide: Rename and don't show unrecognized images.\nRename: Rename unrecognized images, but show them.\nIgnore: Don't rename unrecognized images. Will also show them.\n Removes any _UNRECOGNIZED tags again.\n(Renaming means adding _UNRECOGNIZED as tag to the filename)"
-    new "Hide: Rename and don't show unrecognized images.\nRename: Rename unrecognized images, but show them.\nIgnore: Don't rename unrecognized images. Will also show them.\n Removes any _UNRECOGNIZED tags again.\n(Renaming means adding _UNRECOGNIZED as tag to the filename)"
+    new "隐藏:重命名，不显示无法识别的图像。\n 重命名:重命名无法识别的图像，但显示它们。\n 忽略:不要重命名无法识别的图像。也会展示给他们看。\n 再次删除任何未识别的标记。\n (重命名意味着在文件名中添加_UNRECOGNIZED as标签)"
 
     # game/BKscreens.rpy:8201
     old "Hide"
-    new "Hide"
+    new "隐藏"
 
     # game/BKscreens.rpy:8201
     old "Rename"
-    new "Rename"
+    new "重命名"
 
     # game/BKscreens.rpy:8201
     old "Ignore"
-    new "Ignore"
+    new "忽略"
 
     # game/BKscreens.rpy:8201
     old "Back (don't change setting)"
-    new "Back (don't change setting)"
+    new "返回(不改变设置)"
 
     # game/BKscreens.rpy:8221
     old "It is recommended that you backup your girls folder and run a simulation beforehand. There is no Undo operation!{fast}{nw}"
-    new "It is recommended that you backup your girls folder and run a simulation beforehand. There is no Undo operation!{fast}{nw}"
-
+    new "建议你先备份您的人物文件夹并试运行模拟。无法撤销操作！{fast}{nw}"

@@ -874,9 +874,8 @@ translate chinese strings:
 
     # game/kite_jobgirl 1_riddle.rpy:88
     old "My slave Sill"
-    new "My slave Sill"
+    new "我的奴隶西里尔"
 
     # game/kite_jobgirl 1_riddle.rpy:88
     old "I wish I had one"
-    new "I wish I had one"
-
+    new "真希望我有一个"

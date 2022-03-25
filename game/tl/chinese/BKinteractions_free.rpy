@@ -634,61 +634,60 @@ translate chinese strings:
 
     # game/BKinteractions_free.rpy:59
     old "Greetings"
-    new "Greetings"
+    new "你好，打扰一下（友好）"
 
     # game/BKinteractions_free.rpy:59
     old "Hi there"
-    new "Hi there"
+    new "嗨，你好（随意）"
 
     # game/BKinteractions_free.rpy:59
     old "Hey, sexy"
-    new "Hey, sexy"
+    new "嘿！美女（调戏）"
 
     # game/BKinteractions_free.rpy:584
     old "What do you tell her?"
-    new "What do you tell her?"
+    new "你打算跟她聊点什么?"
 
     # game/BKinteractions_free.rpy:584
     old "I'm waiting for the right person"
-    new "I'm waiting for the right person"
+    new "我正在等待合适的人"
 
     # game/BKinteractions_free.rpy:584
     old "I haven't been with many girls"
-    new "I haven't been with many girls"
+    new "我没怎么和女孩交往过"
 
     # game/BKinteractions_free.rpy:584
     old "I've been around"
-    new "I've been around"
+    new "我谈过的应该不算少吧"
 
     # game/BKinteractions_free.rpy:584
     old "I'm a sex god"
-    new "I'm a sex god"
+    new "我是性爱之神"
 
     # game/BKinteractions_free.rpy:584
     old "I'm a brothel owner, so..."
-    new "I'm a brothel owner, so..."
+    new "我是青楼老板，所以..."
 
     # game/BKinteractions_free.rpy:849
     old "[tip_range[0]] gold"
-    new "[tip_range[0]] gold"
+    new "[tip_range[0]]枚金币"
 
     # game/BKinteractions_free.rpy:849
     old "[tip_range[1]] gold"
-    new "[tip_range[1]] gold"
+    new "[tip_range[1]]枚金币"
 
     # game/BKinteractions_free.rpy:849
     old "[tip_range[2]] gold"
-    new "[tip_range[2]] gold"
+    new "[tip_range[2]]枚金币"
 
     # game/BKinteractions_free.rpy:849
     old "[tip_range[3]] gold"
-    new "[tip_range[3]] gold"
+    new "[tip_range[3]]枚金币"
 
     # game/BKinteractions_free.rpy:1034
     old "Tell a half lie"
-    new "Tell a half lie"
+    new "半真半假"
 
     # game/BKinteractions_free.rpy:1034
     old "Outright lying"
-    new "Outright lying"
-
+    new "瞎掰"

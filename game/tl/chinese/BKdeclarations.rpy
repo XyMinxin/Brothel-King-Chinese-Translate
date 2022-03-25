@@ -4,21 +4,20 @@ translate chinese strings:
 
     # game/BKdeclarations.rpy:1440
     old "Image [index] of [count] locked."
-    new "Image [index] of [count] locked."
+    new "图片[index]/[count]锁定。"
 
     # game/BKdeclarations.rpy:1479
     old "prev"
-    new "prev"
+    new "上一页"
 
     # game/BKdeclarations.rpy:1480
     old "next"
-    new "next"
+    new "下一页"
 
     # game/BKdeclarations.rpy:1481
     old "slideshow"
-    new "slideshow"
+    new "幻灯片"
 
     # game/BKdeclarations.rpy:1482
     old "return"
-    new "return"
-
+    new "返回"

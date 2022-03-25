@@ -2032,25 +2032,24 @@ translate chinese strings:
 
     # game/kite_jobgirl 2_beach.rpy:406
     old "Why, yes, I'd like to fuck her"
-    new "Why, yes, I'd like to fuck her"
+    new "为什么不想？我当然想上她！"
 
     # game/kite_jobgirl 2_beach.rpy:406
     old "Who, me? Nope!"
-    new "Who, me? Nope!"
+    new "谁,我？不！"
 
     # game/kite_jobgirl 2_beach.rpy:457
     old "Pull out your cock"
-    new "Pull out your cock"
+    new "掏出你的小兄弟"
 
     # game/kite_jobgirl 2_beach.rpy:457
     old "Don't indulge her"
-    new "Don't indulge her"
+    new "制止她"
 
     # game/kite_jobgirl 2_beach.rpy:595
     old "Cum inside"
-    new "Cum inside"
+    new "内射"
 
     # game/kite_jobgirl 2_beach.rpy:595
     old "Pull out"
-    new "Pull out"
-
+    new "外射"

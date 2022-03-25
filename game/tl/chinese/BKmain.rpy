@@ -580,49 +580,48 @@ translate chinese strings:
 
     # game/BKmain.rpy:148
     old "Add a new room to your brothel ([price1] gold)"
-    new "Add a new room to your brothel ([price1] gold)"
+    new "给你的青楼添加一个新房间([price1]枚金币)"
 
     # game/BKmain.rpy:148
     old "Add a new pen to your farm ([price2] gold)"
-    new "Add a new pen to your farm ([price2] gold)"
+    new "给你的农场添加一个新围栏([price2]枚金币)"
 
     # game/BKmain.rpy:581
     old "Do you want to invert her first and last name?"
-    new "Do you want to invert her first and last name?"
+    new "你想颠倒她的姓名吗？"
 
     # game/BKmain.rpy:1016
     old "Rest"
-    new "Rest"
+    new "休息"
 
     # game/BKmain.rpy:1016
     old "Work as a waitress"
-    new "Work as a waitress"
+    new "作为一个服务员"
 
     # game/BKmain.rpy:1016
     old "Work as a dancer"
-    new "Work as a dancer"
+    new "作为一个舞者"
 
     # game/BKmain.rpy:1016
     old "Work as a masseuse"
-    new "Work as a masseuse"
+    new "作为一个按摩师"
 
     # game/BKmain.rpy:1016
     old "Work as a geisha"
-    new "Work as a geisha"
+    new "作为一个艺妓"
 
     # game/BKmain.rpy:1016
     old "Work as a whore"
-    new "Work as a whore"
+    new "作为一个妓女"
 
     # game/BKmain.rpy:1055
     old "Don't ask me again"
-    new "Don't ask me again"
+    new "别再问我了"
 
     # game/BKmain.rpy:1199
     old "Don't tell me again"
-    new "Don't tell me again"
+    new "别再告诉我"
 
     # game/BKmain.rpy:1253
     old "Ask [girl.name] to work and whore at the same time?"
-    new "Ask [girl.name] to work and whore at the same time?"
-
+    new "问[girl.name]在同时工作和作妓女吗？"
