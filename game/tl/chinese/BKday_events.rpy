@@ -1528,7 +1528,7 @@ translate chinese random_night_girl_event_c2f387fd:
 translate chinese random_night_girl_event_5d2fcec5:
 
     # you "Stand right here. On your knees. You will use your [text1] to service the customers. Give them a proper greeting!"
-    you "站在这里。在你的膝盖上。您将使用您的[text1]来服务客户。给他们一个适当的问候!"
+    you "就在这里，跪在地上。你要用你的[text1]来为顾客服务。给他们一个适当的问候!"
 
 # game/BKday_events.rpy:1076
 translate chinese random_night_girl_event_d565895d:
@@ -2632,7 +2632,7 @@ translate chinese random_night_girl_event_344b377e:
 translate chinese random_night_girl_event_a35ddd92:
 
     # "She gives you [text1] look."
-    "她看了你[text1]一眼。"
+    "她看着你，眼神里[text1]。"
 
 # game/BKday_events.rpy:1837
 translate chinese random_night_girl_event_491bae8c:
@@ -12313,4 +12313,3 @@ translate chinese strings:
     # game/BKday_events.rpy:7355
     old "Nope"
     new "不"
-

@@ -2233,7 +2233,7 @@ init -3 python:
                 else: # Other sex acts
 
                     if d == 1: # Obedience
-                        text1 = "{size=18}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" +  + "."
+                        text1 = "{size=18}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" + girl_related_dict[s_des[s_act]] + "."
 
                         r = girl.get_stat("obedience") - dice(250)
 
@@ -2261,7 +2261,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=18}一位客户整晚都在和" + girl.name + "调情。他试图让她" + girl_related_dict[s_des[s_act]] + "."
+                        text1 = "{size=18}一位客户整晚都在和" + girl.name + "调情。他试图让她" + s_des[s_act] + "."
 
                         r = girl.get_stat("libido") - dice(250)
 

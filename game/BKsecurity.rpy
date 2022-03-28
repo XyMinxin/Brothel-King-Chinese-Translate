@@ -275,9 +275,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
 
             if len(defended_girls) > 1:
-                text1 += and_text([g.fullname for g in defended_girls]) + " defended themselves. {color=[c_red]}"
+                text1 += and_text([g.fullname for g in defended_girls]) + "保护了自己. {color=[c_red]}"
             elif len(defended_girls) > 0:
-                text1 += defended_girls[0].fullname + " defended herself. {color=[c_red]}"
+                text1 += defended_girls[0].fullname + "保护了她自己. {color=[c_red]}"
 
             if len(hurt_girls) > 1:
                 text1 += and_text([g.fullname for g in defended_girls]) + "受伤了。\n"
@@ -995,7 +995,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
                     else:
                         $ dirt = int(brothel.change_dirt(100))
-                        $ security("你的女孩们竭尽全力保护自己，赶走了 [enemies] 个敌人. 他们试图在离开的时候放火烧你的妓院，造成了一点点伤害 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
+                        $ security("你的女孩们竭尽全力保护自己，赶走了 [enemies] 个敌人. 他们试图在离开的时候放火烧你的青楼，造成了一点点伤害 (" + event_color["bad"] % "+[dirt] 污垢" + ")")
                         $ log.add_report("{color=[c_red]}战果：没有女孩受伤。+" + str_int(dirt) + " 污垢。{/color}")
 
                     $ MC.gold += loot

@@ -120,7 +120,7 @@ label end_day:
                 ## Autorest check
 
                 if girl.energy < autorest_limit:
-                    log.add_report("{color=[c_red]}" + girl.fullname + "耐力过低，将被设置为自动休息{/color}")
+                    log.add_report("{color=[c_red]}" + girl.fullname + "精力过低，将被设置为自动休息{/color}")
                     resting_girls.append(girl)
                     girl.add_log("rest_days")
 

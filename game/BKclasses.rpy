@@ -1783,7 +1783,7 @@ init -2 python:
                 return self.name + "%s进来青楼。%s希望得到一个{b}%s{/b}和喜欢{b}%s{/b}的人的招待。%s更喜欢%s的女孩。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment], girl_related_dict[self.wants_sex_act], pronoun, self.fetish.lower())
 
             elif act in all_jobs:
-                desc += self.name + "%s进来青楼。\n%s希望得到一个{b}%s{/b}的娱乐。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment])
+                desc += self.name + "%s进来青楼。\n%s希望得到一个{b}%s{/b}提供娱乐。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment])
                 if self.wants_entertainment != act:
                     desc += "，但最终还是选择了一个{b}%s{/b}" % girl_related_dict[act]
                 return desc
@@ -3204,7 +3204,7 @@ init -2 python:
             elif bonus < 0:
                 bonus_text = " {color=[c_red]}(" + str(bonus) + "){/color}"
 
-            description = "{b}" + str_int(total_value) + "/" + str(maxrange) + "{/b}" + bonus_text + "。" + gstats_dict[self.name]
+            description = "{b}" + str_int(total_value) + "/" + str(maxrange) + "{/b}" + bonus_text + "　" + gstats_dict[self.name]
 
             if self.name in gstat_job_skill.keys():
                 return description % (self.parent.get_max_cust_served(gstat_job_skill[self.name]))
@@ -3669,7 +3669,7 @@ init -2 python:
                     text1 = "她还是个处女。"
 
                 elif target == "advertising power":
-                    text1 = "增加你的广告女孩的力量 (对妓院的声誉、顾客的吸引和顾客的预算给予更高的提升)"
+                    text1 = "增加你的广告女孩的力量 (对青楼的声誉、顾客的吸引和顾客的预算给予更高的提升)"
 
                 elif target == "heal minion":
                     text1 = "治疗一个受伤的奴仆。"
@@ -3920,7 +3920,7 @@ init -2 python:
             target = "性服侍技能收益" if target == "service gains" else target
             target = "皮绳愉虐技能收益" if target == "fetish gains" else target
             target = "经验收益" if target == "xp gains" else target
-            target = "最大耐力" if target == "max energy" else target
+            target = "最大精力" if target == "max energy" else target
             target = "收入" if target == "income" else target
             ###替换 strength,charisma,spirit,speed,"Charm","Beauty","Body","Body","Sensitivity","Libido","Constitution","Obedience","Service","Sex","Anal","Fetish"
             target = "魅力收益" if target == "charm gains" else target
@@ -3998,14 +3998,14 @@ init -2 python:
             target = "作为训练时所需服从" if target == "train obedience target" else target
             target = "作为工作时所需服从" if target == "job obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
-            target = "耐力消耗" if target == "tiredness" else target
-            target = "耐力消耗" if target == "energy use" else target
+            target = "精力消耗" if target == "tiredness" else target
+            target = "精力消耗" if target == "energy use" else target
             target = "满足保养费时的效用" if target == "positive upkeep modifier" else target
             target = "怪物经验" if target == "monster xp" else target
             target = "野兽经验" if target == "beast xp" else target
             target = "机器经验" if target == "machine xp" else target
             target = "种马经验" if target == "stallion xp" else target
-            target = "耐力恢复" if target == "energy" else target
+            target = "精力恢复" if target == "energy" else target
             target = "经验" if target == "xp" else target
             target = "技能点" if target == "skill points" else target
             target = "玩家声望" if target == "prestige" else target
@@ -4018,7 +4018,7 @@ init -2 python:
             target = "所有常规技能" if target == "all main skills" else target
             target = "多给保养费的情绪增益影响" if target == "positive upkeep mood modifier" else target
             target = "少给保养费的情绪减益影响" if target == "negative upkeep mood modifier" else target
-            target = "只工作半天时耐力回复量" if target == "half-shift resting bonus" else target
+            target = "只工作半天时精力回复量" if target == "half-shift resting bonus" else target
             target = "接客时客人因难以满足的扣分" if target == "customer penalties" else target
             target = "裸体进行常规工作时获得的小费" if target == "naked bonus" else target
             target = "接受工作或训练的可能性" if target == "obedience tests" else target
@@ -4873,7 +4873,7 @@ init -2 python:
 
             description += stat_increase_dict["xp_dark"] % xp
             description += stat_increase_dict["rep"] % rep
-            description += stat_increase_dict["stat_neg"] % ("耐力", round_int(energy))
+            description += stat_increase_dict["stat_neg"] % ("精力", round_int(energy))
 
             if girl.ready_to_level():
                 girl.level_up()
@@ -5297,8 +5297,8 @@ init -2 python:
                                 if compare_preference(girl, cond, pref):
                                     break
                                 if text1:
-                                    text1 += " or "
-                                text1 += cond + " (" + pref + ")"
+                                    text1 += " 或者 "
+                                text1 += girl_related_dict[cond] + " (" + girl_related_dict[pref] + ")"
                             else:
                                 return False, "你还不能训练" + girl_related_dict[self.act] + "。要求: " + text1
 
@@ -5308,8 +5308,8 @@ init -2 python:
                                 if compare_preference(girl, cond, pref):
                                     break
                                 if text1:
-                                    text1 += " or "
-                                text1 += cond + " (" + pref + ")"
+                                    text1 += " 或者 "
+                                text1 += girl_related_dict[cond] + " (" + girl_related_dict[pref] + ")"
                             else:
                                 return False, "你还不能训练" + girl_related_dict[self.act] + "。要求: " + text1
 
@@ -7276,7 +7276,7 @@ init -2 python:
                 return "{b}奖励{/b}: " + target.name
 
             elif spe == "fix":
-                return "{b}正面的固定性{/b}: " + and_text([f.name.capitalize() for f in target], "或")
+                return "{b}正面癖好{/b}: " + and_text([f.name.capitalize() for f in target], "或")
 
             elif spe == "farm":
                 return "{b}弱点{/b}: " + target.capitalize()

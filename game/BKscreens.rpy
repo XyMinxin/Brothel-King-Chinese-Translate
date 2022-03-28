@@ -530,11 +530,11 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
 
     elif context == "farm":
         if farm.programs[girl].target != "no training":
-            $ text1 = farm.programs[girl].target.capitalize()
+            $ text1 = farm_related_dict[farm.programs[girl].target.capitalize()]
             $ but_ttip = "{b}" + girl.fullname + "{/b}在农场训练(" + text1 + ")."
             $ text_col = c_orange
         else:
-            $ text1 = farm.programs[girl].holding.capitalize()
+            $ text1 = farm_related_dict[farm.programs[girl].holding.capitalize()]
             $ but_ttip = "{b}" + girl.fullname + "{/b}在农场待机(" + text1 + ")."
             $ text_col = c_white
 
@@ -570,7 +570,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 20, 18, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "她还有" + str_int(girl.energy) + "点耐力，其当前耐力上限是" + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip "她还有" + str_int(girl.energy) + "点精力，其当前精力上限是" + str(int(girl.get_stat_minmax("energy")[1])) + "."
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -645,7 +645,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 25, 20, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 0.5:
-                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
+                    tooltip "精力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -720,7 +720,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 30, 24, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
+                    tooltip "精力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -805,7 +805,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         use badge_button(girl, 40, 32, active=persistent.badges_on_portraits)
 
                 button style "inv_no_padding" action SetVariable("selected_girl", girl) xalign 1.0 yalign 1.0:
-                    tooltip "耐力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
+                    tooltip "精力：{b}" + str_int(girl.energy) + "{/b}/" + str(int(girl.get_stat_minmax("energy")[1]))
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1332,7 +1332,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     button:
                         background None
                         action NullAction()
-                        tooltip "她还有{b}" + str_int(girl.energy) + "{/b}点耐力. 她的最大耐力为{b}" + str_int(girl_max) + "{/b} (增加体格可以提高耐力上限)."
+                        tooltip "她还有{b}" + str_int(girl.energy) + "{/b}点精力。\n她的最大精力为{b}" + str_int(girl_max) + "{/b} (增加体格可以提高精力上限)"
                         keyboard_focus False
                         yfill False
                         ysize 30
@@ -1370,7 +1370,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         button:
                             background None
                             action NullAction()
-                            tooltip "你需要成为她的朋友，才能看到她这个技能的等级."
+                            tooltip "你需要成为她的朋友，才能看到她这个技能的等级。"
                             keyboard_focus False
                             ysize 30
 
@@ -2344,7 +2344,7 @@ screen schedule(glist):
                                 $ en_max = girl.get_stat_minmax("energy")[1]
 
                                 if girl.energy < en_max / 5:
-                                    $ text1 = "耐力：{color=[c_red]}" + str(round_int(girl.energy)) + "{/color}/" + str(round_int(en_max))
+                                    $ text1 = "精力：{color=[c_red]}" + str(round_int(girl.energy)) + "{/color}/" + str(round_int(en_max))
                                 else:
                                     $ text1 = str(round_int(girl.energy)) + "/" + str(round_int(en_max))
 
@@ -2373,11 +2373,11 @@ screen schedule(glist):
 
                         elif girl.workdays[day] == 50:
                             $ t = "半班制"
-                            $ ttip = "她将接待平时一半的顾客，节省一些耐力."
+                            $ ttip = "她将接待平时一半的顾客，节省一些精力."
                             $ col1 = c_prune
                         elif girl.workdays[day] == 0:
                             $ t = "休息日"
-                            $ ttip = "她会休息以便恢复一些耐力."
+                            $ ttip = "她会休息以便恢复一些精力."
                             $ col1 = c_emerald
 
                         textbutton t text_size 14 xsize 90 ysize 40 yalign 0.5 hovered tt.Action(ttip) idle_background col1 hover_background c_darkbrown + "CC":
@@ -2406,12 +2406,12 @@ screen autorest():
         text ""
         add "items/furniture/scanner.webp" xalign 0.5
         text ""
-        text "这使你的女孩在耐力过低时自动休息.\n左键点击可增加阈值\n右键点击可将其降低" italic True size 14 color c_brown xsize 360
+        text "这使你的女孩在精力过低时自动休息.\n左键点击可增加阈值\n右键点击可将其降低" italic True size 14 color c_brown xsize 360
         text "" size 18
         if autorest_limit == 0:
             $ text1 = "自动休息 已关闭"
         else:
-            $ text1 = "自动休息 已开启 - 下限: " + str(autorest_limit) + "耐力"
+            $ text1 = "自动休息 已开启 - 下限: " + str(autorest_limit) + "精力"
 
         textbutton text1 action Function(change_autorest, "+") alternate Function(change_autorest, "-") xalign 0.5 xsize 360 ysize 40 text_size 18
         text "" size 18
@@ -3652,7 +3652,7 @@ screen brothel():
                                     textbutton "立刻清理" xmargin 10 ymargin 0 ypadding 6 text_size 14:
                                         if brothel.get_clean_up_cost() > 0:
                                             action Return(("clean up", ""))
-                                        tooltip "花费" + str(brothel.get_clean_up_cost()) + "金币购买一些清洁材料，然后让西里尔和仆人把青楼打扫干净."
+                                        tooltip "花费" + str(brothel.get_clean_up_cost()) + "金币购买一些清洁材料，然后让希露和仆人把青楼打扫干净."
                                 textbutton str(round_int(brothel.dirt)) + " {size=-4}(-" + str_int(brothel.get_maintenance()) + ")" style "inv_no_padding" action NullAction() tooltip maintenance_desc[brothel.get_cleanliness()] yoffset -12
 
 
@@ -5424,7 +5424,7 @@ screen inventory_filter(filters=inventory_filters["base"]):
                             add "filter_" + filter
                         else:
                             add "filter_" + filter + "_unselect"
-                        hovered tt.Action("显示" + filter + "物品.")
+                        hovered tt.Action("显示" + setting_name_dict[filter] + "物品.")
                     else:
                         if filter == MC.active_inv_filter:
                             add "filter_all"
@@ -5729,25 +5729,25 @@ screen quick_start():
 
                     vbox:
                         style_group "extras"
-                        textbutton "农场: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["farm"]] action (ToggleDict(extras_dict, "farm"))
+                        textbutton "农场: %s" % {True: "解锁", False: "锁定"}[extras_dict["farm"]] action (ToggleDict(extras_dict, "farm"))
 
-                        textbutton "木匠: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["carpenter"]] action (ToggleDict(extras_dict, "carpenter"))
+                        textbutton "木匠: %s" % {True: "解锁", False: "锁定"}[extras_dict["carpenter"]] action (ToggleDict(extras_dict, "carpenter"))
 
-                        textbutton "场所: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["locations"]] action (ToggleDict(extras_dict, "locations"))
+                        textbutton "场所: %s" % {True: "解锁", False: "锁定"}[extras_dict["locations"]] action (ToggleDict(extras_dict, "locations"))
 
-                        textbutton "商店: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["shops"] > 0]:
+                        textbutton "商店: %s" % {True: "解锁", False: "锁定"}[extras_dict["shops"] > 0]:
                             if extras_dict["shops"]:
                                 action (SetDict(extras_dict, "shops", False))
                             else:
                                 action (SetDict(extras_dict, "shops", 7))
 
-                        textbutton "资源: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["resources"] > 0]:
+                        textbutton "资源: %s" % {True: "解锁", False: "锁定"}[extras_dict["resources"] > 0]:
                             if extras_dict["resources"]:
                                 action (SetDict(extras_dict, "resources", False))
                             else:
                                 action (SetDict(extras_dict, "resources", 7))
 
-                        textbutton "培训师: %s" % {True: "Unlocked", False: "Locked"}[extras_dict["trainers"]] action (ToggleDict(extras_dict, "trainers"))
+                        textbutton "培训师: %s" % {True: "解锁", False: "锁定"}[extras_dict["trainers"]] action (ToggleDict(extras_dict, "trainers"))
 
                         text "" size 12
 
@@ -5787,7 +5787,7 @@ screen main_character():
         frame xpadding 3 ypadding 10 xfill True:
             has vbox
             textbutton MC.name background None text_color c_steel action Return("change_name") hovered tt.Action("点击这里更改你的角色名称")
-            textbutton ("等级" + str(MC.level) + " " + MC.playerclass) background None text_size 18 text_color c_darkgrey action NullAction() tooltip "你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级."
+            textbutton ("等级" + str(MC.level) + " " + start_name_dict[MC.playerclass]) background None text_size 18 text_color c_darkgrey action NullAction() tooltip "你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级."
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox spacing 6
@@ -5810,7 +5810,7 @@ screen main_character():
                     action NullAction()
                     hovered tt.Action(MC_stat_description[stat])
 
-                    text MC_stat_color[stat] % stat.capitalize() size 18
+                    text MC_stat_color[stat] % start_name_dict[stat.capitalize()] size 18
 
                     text "{color=[col2]}" + str(int(MC.get_stat(stat))) + "{/color}" size 18 xanchor 1.0 xalign 0.8
 
@@ -7408,16 +7408,16 @@ screen girl_interact(girl, free=False):
 
                             textbutton topic.caption + get_act_weakness_symbol(girl, topic.act) background None text_size 13 text_color c_white xsize 100 text_xalign 0.0 action NullAction():
                                 if girl.personality_unlock[topic.act]:
-                                    tooltip "你知道[girl.name]有" + girl.get_reaction_to_act(topic.act) + "的" + topic.act + "行为."
+                                    tooltip "你知道[girl.name]对" + girl_related_dict[topic.act] + girl_related_dict[girl.get_reaction_to_act(topic.act)] + "。"
                                 else:
-                                    tooltip "你不知道[girl.name]对" + topic.act + "有什么反应."
+                                    tooltip "你不知道[girl.name]对" + girl_related_dict[topic.act] + "有什么反应。"
 
                             if topic.type == "train":
                                 textbutton "谈话" background None text_size 13:
                                     if topic.is_available(girl, "lecture", free)[0]:
                                         text_hover_underline True
                                         action Return([topic, "lecture"])
-                                        tooltip "给[girl.name]讲讲" + topic.act + "有多美好.\n费用" + str(normal_cost) + "{image=img_AP}."
+                                        tooltip "给[girl.name]讲讲" + girl_related_dict[topic.act] + "有多美好.\n需要" + str(normal_cost) + "{image=img_AP}."
                                     else:
                                         text_color c_grey
                                         action NullAction()
@@ -7428,9 +7428,9 @@ screen girl_interact(girl, free=False):
                                     text_hover_underline True
                                     action Return([topic, "train"])
                                     if topic.gold_cost:
-                                        tooltip "对[girl.name]的" + topic.act + "进行训练.\n费用" + str(normal_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                        tooltip "对[girl.name]的" + girl_related_dict[topic.act] + "进行训练.\n需要" + str(normal_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
                                     else:
-                                        tooltip "对[girl.name]的" + topic.act + "进行训练.\n费用 " + str(normal_cost) + "{image=img_AP}."
+                                        tooltip "对[girl.name]的" + girl_related_dict[topic.act] + "进行训练.\n需要 " + str(normal_cost) + "{image=img_AP}."
                                 else:
                                     text_color c_grey
                                     action NullAction()
@@ -7448,9 +7448,9 @@ screen girl_interact(girl, free=False):
                                     text_hover_underline True
                                     action Return([topic, "advanced"])
                                     if topic.gold_cost:
-                                        tooltip ttip + "\n费用 " + str(adv_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                        tooltip ttip + "\n需要 " + str(adv_cost) + "{image=img_AP} 和 " + str(topic.get_gold_cost()) + "{image=img_gold}."
                                     else:
-                                        tooltip ttip + "\n费用 " + str(adv_cost) + "{image=img_AP}."
+                                        tooltip ttip + "\n需要 " + str(adv_cost) + "{image=img_AP}."
                                 else:
                                     text_color c_grey
                                     action NullAction()
@@ -7721,74 +7721,74 @@ screen debug_pics(girl):
 
             if mode == "soft":
 
-                textbutton "Portrait" text_size 18 action SetScreenVariable("pic", girl.get_pic("portrait", "profile", not_tags=["naked"]))
-                textbutton "Portrait Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("portrait", "profile", and_tags=["naked"]))
-                textbutton "Profile" text_size 18 action SetScreenVariable("pic", girl.get_pic("profile", "portrait", not_tags=["naked"]))
-                textbutton "Profile Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("profile", "portrait", and_tags=["naked"]))
+                textbutton "头像" text_size 18 action SetScreenVariable("pic", girl.get_pic("portrait", "profile", not_tags=["naked"]))
+                textbutton "头像(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic("portrait", "profile", and_tags=["naked"]))
+                textbutton "立绘" text_size 18 action SetScreenVariable("pic", girl.get_pic("profile", "portrait", not_tags=["naked"]))
+                textbutton "立绘(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic("profile", "portrait", and_tags=["naked"]))
 
-                textbutton "Rest" text_size 18 action SetScreenVariable("pic", girl.get_pic("rest", "profile", not_tags=["naked"], soft=True))
-                textbutton "Rest Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("rest", "profile", and_tags=["naked"], soft=True))
-                textbutton "Waitress" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["waitress_tags"], perform_job_dict["waitress_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
-                textbutton "Waitress Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["waitress_tags"], perform_job_dict["waitress_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
-                textbutton "Dancer" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["dancer_tags"], perform_job_dict["dancer_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
-                textbutton "Dancer Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["dancer_tags"], perform_job_dict["dancer_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
-                textbutton "Masseuse" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["masseuse_tags"], perform_job_dict["masseuse_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
-                textbutton "Masseuse Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["masseuse_tags"], perform_job_dict["masseuse_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
-                textbutton "Geisha" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["geisha_tags"], perform_job_dict["geisha_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
-                textbutton "Geisha Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["geisha_tags"], perform_job_dict["geisha_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
+                textbutton "休息" text_size 18 action SetScreenVariable("pic", girl.get_pic("rest", "profile", not_tags=["naked"], soft=True))
+                textbutton "休息(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic("rest", "profile", and_tags=["naked"], soft=True))
+                textbutton "服务员" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["waitress_tags"], perform_job_dict["waitress_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
+                textbutton "服务员(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["waitress_tags"], perform_job_dict["waitress_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
+                textbutton "舞娘" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["dancer_tags"], perform_job_dict["dancer_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
+                textbutton "舞娘(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["dancer_tags"], perform_job_dict["dancer_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
+                textbutton "按摩师" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["masseuse_tags"], perform_job_dict["masseuse_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
+                textbutton "按摩师(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["masseuse_tags"], perform_job_dict["masseuse_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
+                textbutton "艺妓" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["geisha_tags"], perform_job_dict["geisha_tags2"], not_tags=["naked", "monster", "beast"], soft=True))
+                textbutton "艺妓(裸)" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["geisha_tags"], perform_job_dict["geisha_tags2"], and_tags=["naked"], not_tags=["monster", "beast"], soft=True))
 
                 for k, tags in farm_holding_tags.items():
                     textbutton k.capitalize() text_size 18 action SetScreenVariable("pic", girl.get_pic(farm_holding_tags[k], soft=True))
 
             elif mode == "hard":
 
-                textbutton "Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("naked", "rest", "profile", not_tags=["monster", "beast", "machine", "group", "bisexual"]))
-                textbutton "Service" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["service_tags"], "naked", "rest", "profile", not_tags=["monster", "beast", "machine", "group", "bisexual"]))
-                textbutton "Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["sex_tags"], not_tags=["monster", "beast", "machine", "group", "bisexual"]))
-                textbutton "Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["anal_tags"], not_tags=["monster", "beast", "machine", "group", "bisexual"]))
-                textbutton "Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["fetish_tags"], not_tags=["monster", "beast", "group", "bisexual"]))
-                textbutton "Bisexual Service" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["service_tags"], and_tags= ["service"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
-                textbutton "Bisexual Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["sex_tags"], and_tags= ["sex"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
-                textbutton "Bisexual Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["anal_tags"], and_tags= ["anal"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
-                textbutton "Bisexual Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["fetish_tags"], and_tags= ["fetish"], not_tags=["monster", "beast", "group"], and_priority=False))
-                textbutton "Group Service" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["service_tags"], and_tags= ["service"], not_tags=["monster", "beast", "machine"], and_priority=False))
-                textbutton "Group Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["sex_tags"], and_tags= ["sex"], not_tags=["monster", "beast", "machine"], and_priority=False))
-                textbutton "Group Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["anal_tags"], and_tags= ["anal"], not_tags=["monster", "beast", "machine"], and_priority=False))
-                textbutton "Group Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["fetish_tags"], and_tags= ["fetish"], not_tags=["monster", "beast"], and_priority=False))
+                textbutton "露出" text_size 18 action SetScreenVariable("pic", girl.get_pic("naked", "rest", "profile", not_tags=["monster", "beast", "machine", "group", "bisexual"]))
+                textbutton "性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["service_tags"], "naked", "rest", "profile", not_tags=["monster", "beast", "machine", "group", "bisexual"]))
+                textbutton "性交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["sex_tags"], not_tags=["monster", "beast", "machine", "group", "bisexual"]))
+                textbutton "肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["anal_tags"], not_tags=["monster", "beast", "machine", "group", "bisexual"]))
+                textbutton "皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["fetish_tags"], not_tags=["monster", "beast", "group", "bisexual"]))
+                textbutton "百合 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["service_tags"], and_tags= ["service"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
+                textbutton "百合 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["sex_tags"], and_tags= ["sex"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
+                textbutton "百合 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["anal_tags"], and_tags= ["anal"], not_tags=["monster", "beast", "machine", "group"], and_priority=False))
+                textbutton "百合 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["bisexual_tags"], perform_job_dict["fetish_tags"], and_tags= ["fetish"], not_tags=["monster", "beast", "group"], and_priority=False))
+                textbutton "群交 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["service_tags"], and_tags= ["service"], not_tags=["monster", "beast", "machine"], and_priority=False))
+                textbutton "群交 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["sex_tags"], and_tags= ["sex"], not_tags=["monster", "beast", "machine"], and_priority=False))
+                textbutton "群交 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["anal_tags"], and_tags= ["anal"], not_tags=["monster", "beast", "machine"], and_priority=False))
+                textbutton "群交 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic(perform_job_dict["group_tags"], perform_job_dict["fetish_tags"], and_tags= ["fetish"], not_tags=["monster", "beast"], and_priority=False))
 
             elif mode == "farm":
 
-                textbutton "Stallion Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("naked", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
-                textbutton "Stallion Service" text_size 18 action SetScreenVariable("pic", girl.get_pic("service", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
-                textbutton "Stallion Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic("sex", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
-                textbutton "Stallion Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic("anal", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
-                textbutton "Stallion Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic("fetish", and_tags = ["big"], not_tags=["monster", "beast"]))
-                textbutton "Stallion Bisexual" text_size 18 action SetScreenVariable("pic", girl.get_pic("bisexual", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
-                textbutton "Stallion Group" text_size 18 action SetScreenVariable("pic", girl.get_pic("group", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 露出" text_size 18 action SetScreenVariable("pic", girl.get_pic("naked", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic("service", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic("sex", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic("anal", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic("fetish", and_tags = ["big"], not_tags=["monster", "beast"]))
+                textbutton "种马 百合" text_size 18 action SetScreenVariable("pic", girl.get_pic("bisexual", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
+                textbutton "种马 群交" text_size 18 action SetScreenVariable("pic", girl.get_pic("group", and_tags = ["big"], not_tags=["monster", "beast", "machine"]))
 
-                textbutton "Beast Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["naked"]))
-                textbutton "Beast Service" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["service"]))
-                textbutton "Beast Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["sex"]))
-                textbutton "Beast Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["anal"]))
-                textbutton "Beast Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["fetish"]))
-                textbutton "Beast Bisexual" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["bisexual"]))
-                textbutton "Beast Group" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["group"]))
+                textbutton "野兽 露出" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["naked"]))
+                textbutton "野兽 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["service"]))
+                textbutton "野兽 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["sex"]))
+                textbutton "野兽 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["anal"]))
+                textbutton "野兽 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["fetish"]))
+                textbutton "野兽 百合" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["bisexual"]))
+                textbutton "野兽 群交" text_size 18 action SetScreenVariable("pic", girl.get_pic("beast", and_tags = ["group"]))
 
-                textbutton "Monster Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["naked"]))
-                textbutton "Monster Service" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["service"]))
-                textbutton "Monster Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["sex"]))
-                textbutton "Monster Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["anal"]))
-                textbutton "Monster Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["fetish"]))
-                textbutton "Monster Bisexual" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["bisexual"]))
-                textbutton "Monster Group" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["group"]))
+                textbutton "怪物 露出" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["naked"]))
+                textbutton "怪物 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["service"]))
+                textbutton "怪物 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["sex"]))
+                textbutton "怪物 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["anal"]))
+                textbutton "怪物 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["fetish"]))
+                textbutton "怪物 百合" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["bisexual"]))
+                textbutton "怪物 群交" text_size 18 action SetScreenVariable("pic", girl.get_pic("monster", and_tags = ["group"]))
 
-                textbutton "Machine Naked" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["naked"]))
-                textbutton "Machine Service" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["service"]))
-                textbutton "Machine Sex" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["sex"]))
-                textbutton "Machine Anal" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["anal"]))
-                textbutton "Machine Fetish" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["fetish"]))
-                textbutton "Machine Bisexual" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["bisexual"]))
-                textbutton "Machine Group" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["group"]))
+                textbutton "机器 露出" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["naked"]))
+                textbutton "机器 性服侍" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["service"]))
+                textbutton "机器 性交" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["sex"]))
+                textbutton "机器 肛交" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["anal"]))
+                textbutton "机器 皮绳愉虐" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["fetish"]))
+                textbutton "机器 百合" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["bisexual"]))
+                textbutton "机器 群交" text_size 18 action SetScreenVariable("pic", girl.get_pic(["machine", "toy"], and_tags = ["group"]))
 
             elif mode == "fix":
                 for fix in fix_dict.values():
@@ -7809,7 +7809,7 @@ label girlpack_menu:
         "Girl pack mix":
 
             menu:
-                "你想看看女孩的评分吗 (如果你有许多女孩的包，这可能需要一些时间)?"
+                "Would you like to see girl ratings (this may take some time if you have many girl packs)?"
 
                 "Yes":
                     call screen girl_mix(True) nopredict
@@ -7924,7 +7924,7 @@ screen achievement_notification(achievement_list, replay=False):
 
                 vbox yalign 0.5:
                     text achv.get_title(force_level=level) xalign 0.0 size 20 bold True color c_prune # font "vivaldii.TTF"
-                    text achv.get_description(force_level=level) xalign 0.0 size 20 font "vivaldii.TTF" color c_brown
+                    text achv.get_description(force_level=level) xalign 0.0 size 20  color c_brown # font "vivaldii.TTF"
     timer 6.5 action Hide("achievement_notification")
 
 screen achievements(main=False):
@@ -7949,12 +7949,12 @@ screen achievements(main=False):
 
                         vbox xsize 500 yalign 0.5:
                             text selected_achievement.get_title() xalign 0.0 size 20 bold True color c_prune
-                            text selected_achievement.get_description() xalign 0.0 size 20 font "vivaldii.TTF" color c_brown
+                            text selected_achievement.get_description() xalign 0.0 size 20 color c_brown # font "vivaldii.TTF"
 
                         if selected_achievement.level < selected_achievement.level_nb:
                             vbox yalign 0.5:
                                 text "下个解锁:" italic True size 20
-                                text selected_achievement.get_description(_next=True) xalign 0.0 size 20 font "vivaldii.TTF" color c_brown
+                                text selected_achievement.get_description(_next=True) xalign 0.0 size 20 color c_brown # font "vivaldii.TTF"
 
             hbox xalign 1.0 yalign 0.0:
 
@@ -8010,7 +8010,7 @@ screen contracts(contracts, free=False):
                 vbox:
                     # if not free:
                     frame xalign 0.5 xfill False yfill False:
-                        text "Fee: %s gold." % str(con.base_value) size 14 color c_brown bold True
+                        text "费用: %s 金币" % str(con.base_value) size 14 color c_brown bold True
                     button action Return(con) xpadding 6 ypadding 6:
                         use contract_tab(con)
 
@@ -8242,6 +8242,6 @@ label packstates_menu :
 # This adds a 'Chat' button to certain trainers in the brothel screen when harem mode is activated
 
 screen harem_button():
-    textbutton "Chat" xsize 75 xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("Talk to " + MC.current_trainer.name + ".")
+    textbutton "交谈" xsize 75 xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("与" + MC.current_trainer.name + "交谈。")
 
 #### END OF BK SCREENS FILE ####

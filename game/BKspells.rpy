@@ -79,7 +79,7 @@ label init_spells():
                             Spell('执杖大师', 'strength.jpg', level=14, effects=[Effect("gain", "strength", 1)], description="如果所有这些都失败了，你仍然可以用它敲碎他们的头骨。"),
                             Spell('回春', 'hand.webp', type="mist", level=16, cost=9, effects=[Effect("gain", "energy", 5, scope="brothel", scales_with="spirit")], duration="turn", description="这舒缓的薄雾让你的女儿们得到了舒缓，除了桃色的香味这么点算不上副作用的情况。"),
                             Spell('疯狂', 'spirit.webp', level=18, effects=[Effect("gain", "spirit", 1)], description="完全的疯狂和毁灭性的力量，他们总是很好的组合。"),
-                            Spell('魔尘', 'fairy.webp', type="form", level=20, cost=9, effects=[Effect("special", "fairy form", 1)], duration="turn", description="Y你扮演着神秘、空灵的仙人。依靠你的精神而不是你的魅力。"),
+                            Spell('魔尘', 'fairy.webp', type="form", level=20, cost=9, effects=[Effect("special", "fairy form", 1)], duration="turn", description="你扮演着神秘、空灵的仙人。依靠你的精神而不是你的魅力。"),
                             Spell('龙魂', 'dragon.webp', type="form", level=20, cost=9, effects=[Effect("special", "dragon form", 1)], duration="turn", description="你呈现出一种可怕的龙形。用你的精神代替你的力量。"),
                             Spell('极乐世界', 'ghost.webp', type="enchant", level=22, cost=10, effects=[Effect("increase satisfaction", "all jobs", 1, scope="brothel"), Effect("increase satisfaction", "all sex acts", 1, scope="brothel")], duration="turn", description="那是一种魔法……不是你童话里说的那种魔法."),
                             Spell('极速', 'speed.jpg', level=22, effects=[Effect("gain", "speed", 1)], description="我裤子里有魔法. 我是说，它们能让我跑得更快。"),

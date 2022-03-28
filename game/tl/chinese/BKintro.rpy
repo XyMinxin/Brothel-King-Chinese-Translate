@@ -16,7 +16,7 @@ translate chinese intro_f925164c:
 translate chinese intro_0ba2a2d5:
 
     # you "Sill?"
-    you "西里尔?"
+    you "希露?"
 
 # game/BKintro.rpy:70
 translate chinese intro_940d07b2:
@@ -76,7 +76,7 @@ translate chinese intro_0ae9bcd0:
 translate chinese intro_878e77af:
 
     # "Sill was your first slave."
-    "西里尔是你的第一个奴隶。"
+    "希露是你的第一个奴隶。"
 
 # game/BKintro.rpy:122
 translate chinese intro_060f737b:
@@ -94,7 +94,7 @@ translate chinese intro_9bb93857:
 translate chinese intro_540be635:
 
     # "You sold all of your slaves in a hurry before starting your journey, but somehow you couldn't let go of Sill."
-    "你在出发前匆忙地卖掉了所有的奴隶，但不知怎的，你就是舍不得放开西里尔。"
+    "你在出发前匆忙地卖掉了所有的奴隶，但不知怎的，你就是舍不得放开希露。"
 
 # game/BKintro.rpy:137
 translate chinese intro_982a6218:
@@ -268,7 +268,7 @@ translate chinese resume_intro_90cd0a74:
 translate chinese resume_intro_c143bd20:
 
     # "A guard is staring at you, frowning. He barely glanced at Sill."
-    "一个卫兵皱着眉头盯着你。他几乎没有看西里尔一眼。"
+    "一个卫兵皱着眉头盯着你。他几乎没有看希露一眼。"
 
 # game/BKintro.rpy:298
 translate chinese resume_intro_076bb3ac:
@@ -394,7 +394,7 @@ translate chinese resume_intro_a7664ff3:
 translate chinese resume_intro_8c49142b:
 
     # "You got word of this madness a few hours before he planned to have you arrested and burnt at the stake. You escaped swiftly with Sill and what little valuables you could carry."
-    "你是在他计划逮捕你并把你绑在火刑柱上烧死的几个小时前听到这个疯狂的消息的。你带着西里尔和你所能携带的少量贵重物品迅速逃走了。"
+    "你是在他计划逮捕你并把你绑在火刑柱上烧死的几个小时前听到这个疯狂的消息的。你带着希露和你所能携带的少量贵重物品迅速逃走了。"
 
 # game/BKintro.rpy:365
 translate chinese resume_intro_e67ddf32:
@@ -484,7 +484,7 @@ translate chinese resume_intro_543e9649:
 translate chinese resume_intro_40919227:
 
     # "You and Sill barely made it out with your lives, losing all of your stock while escaping."
-    "你和西里尔在逃跑的过程中失去了所有的积蓄，勉强活了下来。"
+    "你和希露在逃跑的过程中失去了所有的积蓄，勉强活了下来。"
 
 # game/BKintro.rpy:409
 translate chinese resume_intro_7b27127e:
@@ -568,7 +568,7 @@ translate chinese resume_intro2_def9a5b2:
 translate chinese resume_intro2_5508145a:
 
     # "With Sill following you, you step forward decisively, into the dark streets of Zan."
-    "西里尔跟着你，你果断地向前走，走进了赞的黑暗街道。"
+    "希露跟着你，你果断地向前走，走进了赞的黑暗街道。"
 
 # game/BKintro.rpy:472
 translate chinese resume_intro2_becd0c06:
@@ -586,7 +586,7 @@ translate chinese resume_intro2_4f426239:
 translate chinese resume_intro2_0568131e:
 
     # you "Sill, hurry up! We have to find an inn."
-    you "西里尔,快点!我们得找个客栈。"
+    you "希露,快点!我们得找个客栈。"
 
 # game/BKintro.rpy:484
 translate chinese resume_intro2_e40f6f18:
@@ -598,7 +598,7 @@ translate chinese resume_intro2_e40f6f18:
 translate chinese resume_intro2_f0c16af5:
 
     # "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly crumbling under its weight."
-    "西里尔帮你拿着所有的设备和行李。她从来都不强壮，所以她几乎被它的重量压垮了。"
+    "希露帮你拿着所有的设备和行李。她从来都不强壮，所以她几乎被它的重量压垮了。"
 
 # game/BKintro.rpy:489
 translate chinese resume_intro2_5de258a0:
@@ -766,7 +766,7 @@ translate chinese resume_intro2_22f082a2:
 translate chinese resume_intro2_4e4ccc22:
 
     # you "This is none of my concern... Sill, let's go."
-    you "这不关我的事。西里尔,我们走吧。"
+    you "这不关我的事。希露,我们走吧。"
 
 # game/BKintro.rpy:597
 translate chinese resume_intro2_d1859b15:
@@ -784,7 +784,7 @@ translate chinese resume_intro2_205d0e30:
 translate chinese resume_intro2_4b2b913c:
 
     # you "Shut up, Sill, and move it. We're leaving this place."
-    you "闭嘴，西里尔，闪开，我们赶紧走。"
+    you "闭嘴，希露，闪开，我们赶紧走。"
 
 # game/BKintro.rpy:603
 translate chinese resume_intro2_0bb92939:
@@ -868,19 +868,19 @@ translate chinese resume_intro3_9e8680b8:
 translate chinese resume_intro3_a0a7cf74:
 
     # you "Sill, fetch my swords."
-    you "西里尔，把我的剑拿来。"
+    you "希露，把我的剑拿来。"
 
 # game/BKintro.rpy:648
 translate chinese resume_intro3_9c5ff660:
 
     # you "Sill, hand me the staff."
-    you "西里尔，把手杖递给我。"
+    you "希露，把手杖递给我。"
 
 # game/BKintro.rpy:651
 translate chinese resume_intro3_246de6a5:
 
     # you "Sill, you know what to do."
-    you "西里尔，你知道该怎么做。"
+    you "希露，你知道该怎么做。"
 
 # game/BKintro.rpy:653
 translate chinese resume_intro3_55110f61:
@@ -1138,7 +1138,7 @@ translate chinese resume_intro3_ea211000:
 translate chinese resume_intro3_37d7d16a:
 
     # "Without a word, the lady bows politely, and bolts past you and Sill, disappearing into the night."
-    "这位女士一言不发，彬彬有礼地鞠了一躬，从你和西里尔身边疾驰而过，消失在夜色中。"
+    "这位女士一言不发，彬彬有礼地鞠了一躬，从你和希露身边疾驰而过，消失在夜色中。"
 
 # game/BKintro.rpy:839
 translate chinese resume_intro3_f257587b:
@@ -1744,7 +1744,7 @@ translate chinese resume_intro4_41bd9cc6:
 translate chinese resume_intro4_08b0bc52:
 
     # "He gets up and moves closer to Sill."
-    "他站起来，走近西里尔。"
+    "他站起来，走近希露。"
 
 # game/BKintro.rpy:1228
 translate chinese resume_intro4_b874a3e5:
@@ -1762,7 +1762,7 @@ translate chinese resume_intro4_59904d12:
 translate chinese resume_intro4_ef5e5c01:
 
     # "He starts fondling Sill's ass over her kimono."
-    "他开始在她的和服里抚摸西里尔的屁股。"
+    "他开始在她的和服里抚摸希露的屁股。"
 
 # game/BKintro.rpy:1237
 translate chinese resume_intro4_61116746:
@@ -1876,7 +1876,7 @@ translate chinese resume_intro4_ea23c534:
 translate chinese resume_intro4_4f8527a7:
 
     # you "Sill, don't overdo it."
-    you "西里尔, 人生地不熟，别乱来。"
+    you "希露, 人生地不熟，别乱来。"
 
 # game/BKintro.rpy:1293
 translate chinese resume_intro4_68ff5205:
@@ -1996,7 +1996,7 @@ translate chinese resume_intro4_969bde33:
 translate chinese resume_intro4_ac2df4c1:
 
     # you "Sill won't be any good after such a long time on the road. She's dirty..."
-    you "在路上走了这么长时间，西里尔不会有什么好处的。她又脏…"
+    you "在路上走了这么长时间，希露不会有什么好处的。她又脏…"
 
 # game/BKintro.rpy:1379
 translate chinese resume_intro4_29f4245a:
@@ -2104,7 +2104,7 @@ translate chinese resume_intro4_0bce19d5:
 translate chinese resume_intro4_e5fa45e6:
 
     # you "You need to learn to respect my wishes, Sill. You are my slave, and I'm the one calling the shots."
-    you "你得学会尊重我的意愿，西里尔。你是我的奴隶，我说了算。"
+    you "你得学会尊重我的意愿，希露。你是我的奴隶，我说了算。"
 
 # game/BKintro.rpy:1427
 translate chinese resume_intro4_24353786_1:
@@ -2140,7 +2140,7 @@ translate chinese resume_intro4_1825586e:
 translate chinese resume_intro4_cb98bbfa:
 
     # you "Come on Sill... I'm trying to sleep here... Let them have their fun."
-    you "来吧西里尔……我想睡在这里…让他们玩得开心。"
+    you "来吧希露……我想睡在这里…让他们玩得开心。"
 
 # game/BKintro.rpy:1447
 translate chinese resume_intro4_d636b6d0:
@@ -2248,7 +2248,7 @@ translate chinese resume_intro4_2063f889:
 translate chinese resume_intro4_70b1f19a:
 
     # you "You heard the man, Sill, go with him. And make sure to give him a great time."
-    you "你听见了，西里尔，跟他走。一定要让他玩得开心。"
+    you "你听见了，希露，跟他走。一定要让他玩得开心。"
 
 # game/BKintro.rpy:1500
 translate chinese resume_intro4_4aee7003:
@@ -2698,7 +2698,7 @@ translate chinese slavemarket_first_time_024e8571:
 translate chinese slavemarket_first_time_b6a1fc61:
 
     # gio "Oh, by the way. Will you be using Sill as a whore?"
-    gio "哦，对了。你会用西里尔当妓女吗?"
+    gio "哦，对了。你会用希露当妓女吗?"
 
 # game/BKintro.rpy:1826
 translate chinese slavemarket_first_time_bfd49cfe:
@@ -2722,7 +2722,7 @@ translate chinese slavemarket_first_time_a48092dd:
 translate chinese slavemarket_first_time_0d668adf:
 
     # you "No, Sill is my personal slave and I don't want to share her with all of Zan."
-    you "不，西里尔是我的私人奴隶，我不想和其他的人分享她。"
+    you "不，希露是我的私人奴隶，我不想和其他的人分享她。"
 
 # game/BKintro.rpy:1835
 translate chinese slavemarket_first_time_b1d6f72a:
@@ -2740,13 +2740,13 @@ translate chinese slavemarket_first_time_cdaff9da:
 translate chinese slavemarket_first_time_8f42f826:
 
     # you "No, Sill will help with other tasks. I need someone to handle the reception, the accounting, the laundry, the groceries, the cooking, the cleaning..."
-    you "不，西里尔会帮助完成其他任务。我需要一个人来处理接待、会计、洗衣、杂货、做饭、打扫……"
+    you "不，希露会帮助完成其他任务。我需要一个人来处理接待、会计、洗衣、杂货、做饭、打扫……"
 
 # game/BKintro.rpy:1841
 translate chinese slavemarket_first_time_f5cfa24a:
 
     # "The list goes on and on and Sill looks aghast."
-    "长长的名单不胜枚举，西里尔看起来很吃惊。"
+    "长长的名单不胜枚举，希露看起来很吃惊。"
 
 # game/BKintro.rpy:1845
 translate chinese slavemarket_first_time_bdd56139:
@@ -3334,7 +3334,7 @@ translate chinese main_first_time_f80f4ef0:
 translate chinese main_first_time_5ff492db:
 
     # you "Shut up, Sill. I call the shots here."
-    you "闭嘴,西里尔。这里我说了算。"
+    you "闭嘴,希露。这里我说了算。"
 
 # game/BKintro.rpy:2222
 translate chinese main_first_time_f3dce340:

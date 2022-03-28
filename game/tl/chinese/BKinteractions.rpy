@@ -604,7 +604,7 @@ translate chinese slave_train_sex_acts_4f7088ff:
 translate chinese slave_train_sex_acts_f697fa38:
 
     # "You call Sill over to [girl.name]'s room."
-    "你把西里尔叫到[girl.name]房间去。"
+    "你把希露叫到[girl.name]房间去。"
 
 # game/BKinteractions.rpy:1180
 translate chinese slave_train_sex_acts_1ea015b7:
@@ -682,7 +682,7 @@ translate chinese slave_remove_fixation_8a1b364c:
 translate chinese slave_remove_fixation_44008d8e:
 
     # "[girl.fullname] isn't comfortable enough with any of the required sex acts to try to remove this fixation."
-    "[girl.fullname]对任何试图消除这种固着的必要的性行为都感到不舒服。"
+    "[girl.fullname]对任何试图消除这种癖好的必要的性行为都感到不舒服。"
 
 # game/BKinteractions.rpy:1318
 translate chinese slave_remove_fixation_70c73ec2:
@@ -946,7 +946,7 @@ translate chinese slave_train_87afe0e2:
 translate chinese slave_train_4177c3d9:
 
     # "[text1]she strips down with Sill's help, and the two start fondling each other."
-    "[text1]在西里尔的帮助下，她脱下了衣服，两人开始互相爱抚。"
+    "[text1]在希露的帮助下，她脱下了衣服，两人开始互相爱抚。"
 
 # game/BKinteractions.rpy:1666
 translate chinese slave_train_d526b941:
@@ -1360,19 +1360,19 @@ translate chinese slave_do_49333d8a:
 translate chinese slave_do_2cef280f:
 
     # "[girl.name] and Sill get on top of each other."
-    "[girl.name]和西里尔会压在一起。"
+    "[girl.name]和希露会压在一起。"
 
 # game/BKinteractions.rpy:2083
 translate chinese slave_do_2e211311:
 
     # "She's obviously disgusted by Sill. She won't even touch her."
-    "她显然对西里尔很反感。她甚至不碰她。"
+    "她显然对希露很反感。她甚至不碰她。"
 
 # game/BKinteractions.rpy:2087
 translate chinese slave_do_ec1c841b:
 
     # "Sill gives her a soft kiss and gets up. You tell her to leave."
-    "西里尔给了她一个温柔的吻，然后站了起来。你叫她离开。"
+    "希露给了她一个温柔的吻，然后站了起来。你叫她离开。"
 
 # game/BKinteractions.rpy:2090
 translate chinese slave_do_ac5c5a68:
@@ -1384,7 +1384,7 @@ translate chinese slave_do_ac5c5a68:
 translate chinese slave_do_4e5075c2:
 
     # "[girl.name] kisses Sill a little bit more passionately this time. She's slowly forgetting that she is with a girl."
-    "[girl.name]这次吻西里尔的感情要热烈一些。她慢慢地才忘记她和一个女孩在一起。"
+    "[girl.name]这次吻希露的感情要热烈一些。她慢慢地才忘记她和一个女孩在一起。"
 
 # game/BKinteractions.rpy:2096
 translate chinese slave_do_df73bb42:
@@ -1402,19 +1402,19 @@ translate chinese slave_do_67cba39d:
 translate chinese slave_do_22e9c1a4:
 
     # "[girl.name] doesn't differentiate between men and women now. She fucks Sill enthusiastically, bringing her off several times."
-    "[girl.name]现在已经不分男女了。她热情地操着西里尔，好几次把她干掉了。"
+    "[girl.name]现在已经不分男女了。她热情地操着希露，好几次把她干掉了。"
 
 # game/BKinteractions.rpy:2105
 translate chinese slave_do_417ce18a:
 
     # "She loves [text1]. Sill and [girl.name] shake with a mutual orgasm while doing a 69."
-    "她喜欢[text1]。西里尔和[girl.name]在做69动作的时候，伴随着共同的高潮摇摆。"
+    "她喜欢[text1]。希露和[girl.name]在做69动作的时候，伴随着共同的高潮摇摆。"
 
 # game/BKinteractions.rpy:2108
 translate chinese slave_do_5d77f3a8:
 
     # "She loves fucking women and is completely bisexual now. [girl.name] and Sill know each other's body perfectly now, and bring each other off numerous times."
-    "她爱他妈的女人，现在完全是双性恋。[girl.name]现在我和西里尔完全了解对方的身体，并且会多次把对方带离。"
+    "她爱他妈的女人，现在完全是双性恋。[girl.name]现在我和希露完全了解对方的身体，并且会多次把对方带离。"
 
 # game/BKinteractions.rpy:2121
 translate chinese slave_do_923a62f2:
@@ -2710,7 +2710,7 @@ translate chinese slave_story2_2a3609ce:
 translate chinese slave_story2_062d4094:
 
     # girl.char "Oh, Sill is calling me. I'll tell you the rest of the story later..."
-    girl.char "哦，西尔在给我打电话。我稍后再告诉你剩下的故事……"
+    girl.char "哦，希露在给我打电话。我稍后再告诉你剩下的故事……"
 
 # game/BKinteractions.rpy:3683
 translate chinese slave_story2_f57f7c1a:
@@ -5170,7 +5170,7 @@ translate chinese slave_story6_d813ee49:
 translate chinese slave_story6_95d5e5df:
 
     # girl.char "Sill's cooking is getting worse and worse! This is the third day in a row we get peas... I hate peas!"
-    girl.char "西尔的厨艺越来越差了!这是我们连续第三天吃豌豆了…我讨厌豌豆!"
+    girl.char "希露的厨艺越来越差了!这是我们连续第三天吃豌豆了…我讨厌豌豆!"
 
 # game/BKinteractions.rpy:4805
 translate chinese slave_story6_6bb21ad6:
@@ -9574,7 +9574,7 @@ translate chinese strings:
 
     # game/BKinteractions.rpy:2212
     old "Use positive emotions"
-    new "用积极情绪"
+    new "使用正面情绪"
 
     # game/BKinteractions.rpy:2212
     old "Use negative emotions"
@@ -9666,7 +9666,7 @@ translate chinese strings:
 
     # game/BKinteractions.rpy:4799
     old "Defend Sill"
-    new "保护西里尔"
+    new "保护希露"
 
     # game/BKinteractions.rpy:4799
     old "Let her vent"

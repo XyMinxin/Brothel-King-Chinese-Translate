@@ -28,7 +28,7 @@ translate chinese hmas_42193563:
 translate chinese hmas_86e349bb:
 
     # "Looking around you, you find nothing out of place in your room. Sill is sleeping naked on her cot at the foot of your bed, exhausted after the vicious pounding you gave her last night."
-    "环顾四周，你发现房间里没有什么不合适的地方。西里尔裸睡在你床脚的小床上，昨晚你狠狠地打了她一顿，把她累坏了。"
+    "环顾四周，你发现房间里没有什么不合适的地方。希露裸睡在你床脚的小床上，昨晚你狠狠地打了她一顿，把她累坏了。"
 
 # game/BKstory_events.rpy:41
 translate chinese hmas_7ee4c2a8:
@@ -1570,7 +1570,7 @@ translate chinese renza_onsen1_399fa45e:
 translate chinese renza_onsen1_5e9a6e4c:
 
     # you "Make way! Sill!"
-    you "让路!西里尔!"
+    you "让路!希露!"
 
 # game/BKstory_events.rpy:806
 translate chinese renza_onsen1_3048e4bc:
@@ -1582,7 +1582,7 @@ translate chinese renza_onsen1_3048e4bc:
 translate chinese renza_onsen1_1809c5c0:
 
     # you "We have a VIP! Sill, wipe this place clean, will you!"
-    you "我们有贵宾!西里尔，把这地方擦干净，好吗?"
+    you "我们有贵宾!希露，把这地方擦干净，好吗?"
 
 # game/BKstory_events.rpy:812
 translate chinese renza_onsen1_2f5d5d2e:
@@ -1774,13 +1774,13 @@ translate chinese renza_onsen2_367a9f6f:
 translate chinese renza_onsen2_6f4ce082:
 
     # "You see Sill entering the onsen space, looking for you. Leaving your hideout, you rush towards her, trying to prevent her from exposing you."
-    "你看到西里尔进入温泉空间，在找你。离开你的藏身之处，你冲向她，试图阻止她暴露你。"
+    "你看到希露进入温泉空间，在找你。离开你的藏身之处，你冲向她，试图阻止她暴露你。"
 
 # game/BKstory_events.rpy:930
 translate chinese renza_onsen2_1fa44bc7:
 
     # you "*whispering* Damn you, Sill!!! Now is not the right time..."
-    you "该死的，西里尔!!现在不是时候……"
+    you "该死的，希露!!现在不是时候……"
 
 # game/BKstory_events.rpy:932
 translate chinese renza_onsen2_11ec9631:
@@ -1906,7 +1906,7 @@ translate chinese renza_onsen2_8dc44876:
 translate chinese renza_onsen2_d855f634:
 
     # "After Renza leaves, you realize watching her gave you a raging hard on. You decide to take it out on Sill, as she's sort of the cause of your current predicament."
-    "伦萨离开后，你意识到看着她让你怒火中烧。你决定把气撒在西里尔上，因为她是你目前困境的原因之一。"
+    "伦萨离开后，你意识到看着她让你怒火中烧。你决定把气撒在希露上，因为她是你目前困境的原因之一。"
 
 # game/BKstory_events.rpy:994
 translate chinese renza_onsen2_173ca295:
@@ -1942,7 +1942,7 @@ translate chinese renza_onsen3_d0295bc7:
 translate chinese renza_onsen3_9c6f629f:
 
     # you "Night, Sill..."
-    you "晚上,西里尔……"
+    you "晚上,希露……"
 
 # game/BKstory_events.rpy:1024
 translate chinese renza_onsen3_8dcc9a09:
@@ -12922,7 +12922,7 @@ translate chinese farm_meet_willow_270e43a6:
 translate chinese farm_meet_willow_0067819a:
 
     # you "What are you rambling about again, Sill?"
-    you "你又在胡说些什么，西里尔?"
+    you "你又在胡说些什么，希露?"
 
 # game/BKstory_events.rpy:6488
 translate chinese farm_meet_willow_288b16e5:
@@ -12964,7 +12964,7 @@ translate chinese farm_meet_willow_f51e5c86:
 translate chinese farm_meet_willow_e64eea20:
 
     # "Sill lifts a silver armlet from the display, putting it on her wrist."
-    "西尔从显示器上拿起一个银色的手镯，戴在手腕上。"
+    "希露从显示器上拿起一个银色的手镯，戴在手腕上。"
 
 # game/BKstory_events.rpy:6502
 translate chinese farm_meet_willow_85f4b3f5:
@@ -12982,7 +12982,7 @@ translate chinese farm_meet_willow_30b21490:
 translate chinese farm_meet_willow_197147f7:
 
     # you "Sill..."
-    you "西里尔……"
+    you "希露……"
 
 # game/BKstory_events.rpy:6508
 translate chinese farm_meet_willow_79d5355d:
@@ -12994,7 +12994,7 @@ translate chinese farm_meet_willow_79d5355d:
 translate chinese farm_meet_willow_b83f42af:
 
     # "Sill is looking at you with shiny puppy eyes. She's good at this."
-    "西里尔用闪亮的小狗眼睛看着你。她很擅长这个。"
+    "希露用闪亮的小狗眼睛看着你。她很擅长这个。"
 
 # game/BKstory_events.rpy:6513
 translate chinese farm_meet_willow_7d581078:
@@ -13054,7 +13054,7 @@ translate chinese farm_meet_willow_6ebfa877:
 translate chinese farm_meet_willow_f1f280aa:
 
     # you "Sill, stop whining. We've got stuff to do. Put this armlet back where it was and let's go."
-    you "西里尔,停止抱怨。我们有事情要做。把胳膊放回原处，我们走吧。"
+    you "希露,停止抱怨。我们有事情要做。把胳膊放回原处，我们走吧。"
 
 # game/BKstory_events.rpy:6557
 translate chinese farm_meet_willow_fd7750dd:
@@ -13114,13 +13114,13 @@ translate chinese farm_meet_willow_e45d1017:
 translate chinese farm_meet_willow_ebf4a6e4:
 
     # "Sill runs to the grate, looking down into the darkness. The armlet is nowhere to be seen."
-    "西尔跑到炉边，低头望着黑暗。臂环不见了。"
+    "希露跑到炉边，低头望着黑暗。臂环不见了。"
 
 # game/BKstory_events.rpy:6585
 translate chinese farm_meet_willow_88dc6615:
 
     # you "Sill, you clumsy fool!" with vpunch
-    you "西里尔，你这个笨手笨脚的傻瓜!"
+    you "希露，你这个笨手笨脚的傻瓜!"
 
 # game/BKstory_events.rpy:6587
 translate chinese farm_meet_willow_69569314:
@@ -13150,7 +13150,7 @@ translate chinese farm_meet_willow_ddc1bf40:
 translate chinese farm_meet_willow_d84f020f:
 
     # "Sill starts crying like a fountain, her wailing so loud people from the other end of the street turn to look at you two disapprovingly."
-    "西尔开始像喷泉一样哭了起来，她的哭声那么大，街的另一头的人转过身来不以为然地看着你们两个。"
+    "希露开始像喷泉一样哭了起来，她的哭声那么大，街的另一头的人转过身来不以为然地看着你们两个。"
 
 # game/BKstory_events.rpy:6597
 translate chinese farm_meet_willow_d49fd0d4:
@@ -13168,7 +13168,7 @@ translate chinese farm_meet_willow_0f1bc83b:
 translate chinese farm_meet_willow_280bd112:
 
     # you "Come on, Sill, it's not the end of the world..."
-    you "得了吧，西尔，这又不是世界末日……"
+    you "得了吧，希露，这又不是世界末日……"
 
 # game/BKstory_events.rpy:6603
 translate chinese farm_meet_willow_308cebc1:
@@ -13210,7 +13210,7 @@ translate chinese farm_meet_willow_fca060a0:
 translate chinese farm_meet_willow_e6d8a5cc:
 
     # "Sill instantly interrupts her wailing and looks at you with gigantic, mirror-like puppy eyes."
-    "西尔立刻打断了她的哭泣，用一双巨大的、像镜子一样的小狗般的眼睛看着你。"
+    "希露立刻打断了她的哭泣，用一双巨大的、像镜子一样的小狗般的眼睛看着你。"
 
 # game/BKstory_events.rpy:6619
 translate chinese farm_meet_willow_7dee4261:
@@ -13246,7 +13246,7 @@ translate chinese farm_meet_willow_fb04f229:
 translate chinese farm_meet_willow_fad1893c:
 
     # "Looking defeated, Sill moves to place the armlet back on the stall."
-    "看起来很沮丧，西里尔把扶手放回了架子上。"
+    "看起来很沮丧，希露把扶手放回了架子上。"
 
 # game/BKstory_events.rpy:6635
 translate chinese farm_meet_willow_71fb8e8e:
@@ -14968,7 +14968,7 @@ translate chinese willow_recovery_13788dfa:
 translate chinese willow_recovery_cbc3344f:
 
     # willow "Finally! I thought you were a goner... Sill would have gone berserk on me!"
-    willow "终于!我以为你已经死了…西尔会对我大发雷霆的!"
+    willow "终于!我以为你已经死了…希露会对我大发雷霆的!"
 
 # game/BKstory_events.rpy:7640
 translate chinese willow_recovery_dae0ec55:
@@ -15064,7 +15064,7 @@ translate chinese willow_recovery_73170c90:
 translate chinese willow_recovery_15b9790a:
 
     # "Sill rushes to your side, shoving Willow out of the way."
-    "西里尔冲到你身边，把薇洛推开。"
+    "希露冲到你身边，把薇洛推开。"
 
 # game/BKstory_events.rpy:7683
 translate chinese willow_recovery_23514900:
@@ -15358,7 +15358,7 @@ translate chinese willow_recovery_89cc50df:
 translate chinese willow_recovery_a09a3d32:
 
     # willow "Sill cleaned my clothes. They've never been so fresh! That girl's a miracle."
-    willow "西里尔洗了我的衣服。它们从来没有这么新鲜过!那个女孩是个奇迹。"
+    willow "希露洗了我的衣服。它们从来没有这么新鲜过!那个女孩是个奇迹。"
 
 # game/BKstory_events.rpy:7800
 translate chinese willow_recovery_546c3d43:
@@ -15742,7 +15742,7 @@ translate chinese willow_recovery_e7b5b18c:
 translate chinese willow_recovery_eb3e8771:
 
     # willow "Well, I'm sure Sill will be all up to it. Siiiill!"
-    willow "好吧，我相信西里尔会做得很好的。西里尔!"
+    willow "好吧，我相信希露会做得很好的。希露!"
 
 # game/BKstory_events.rpy:7967
 translate chinese willow_recovery_021ed7c5:
@@ -15796,7 +15796,7 @@ translate chinese willow_recovery_54a4fcd0:
 translate chinese willow_recovery_97a6c70e:
 
     # "As you exit the bath, Sill is giving you murderous looks. Doing your best to avoid her, you head straight to your bedroom and fall asleep like a stone."
-    "当你从浴缸里出来时，西尔正恶狠狠地瞪着你。尽量避开她，你径直走进卧室，像石头一样睡着了。"
+    "当你从浴缸里出来时，希露正恶狠狠地瞪着你。尽量避开她，你径直走进卧室，像石头一样睡着了。"
 
 # game/BKstory_events.rpy:7999
 translate chinese willow_recovery_301d315f:
@@ -15898,7 +15898,7 @@ translate chinese willow_recovery_03ac3aec:
 translate chinese willow_recovery_be189eff:
 
     # willow "Sill should be finished shortly with my clothes, and I'll be on my way."
-    willow "西里尔很快就会把我的衣服做好，我马上就去。"
+    willow "希露很快就会把我的衣服做好，我马上就去。"
 
 # game/BKstory_events.rpy:8037
 translate chinese willow_recovery_dae0ec55_4:
@@ -15970,7 +15970,7 @@ translate chinese willow_relative_83c25ec8:
 translate chinese willow_relative_2d0ff963:
 
     # you "Sill? What is it?"
-    you "西里尔吗?它是什么?"
+    you "希露吗?它是什么?"
 
 # game/BKstory_events.rpy:8077
 translate chinese willow_relative_b461ac84:
@@ -16426,7 +16426,7 @@ translate chinese willow_relative_returns_4afb0937:
 translate chinese willow_relative_returns_202246dd:
 
     # "Sill made sure to give her a private pool to keep the lusty customers at bay."
-    "西里尔确保给她一个私人游泳池，把精力充沛的顾客拒之门外。"
+    "希露确保给她一个私人游泳池，把精力充沛的顾客拒之门外。"
 
 # game/BKstory_events.rpy:8257
 translate chinese willow_relative_returns_9492a44a:
@@ -20728,7 +20728,7 @@ translate chinese farm_first_stallion_754436c8:
 translate chinese bitches_be_crazy_5f10a43d:
 
     # "This morning, you asked Sill to fetch your old Valyrian dictionary."
-    "今天早上，你让西尔去取你那本瓦雷利亚旧词典。"
+    "今天早上，你让希露去取你那本瓦雷利亚旧词典。"
 
 # game/BKstory_events.rpy:10410
 translate chinese bitches_be_crazy_0985b6df:
@@ -26122,7 +26122,7 @@ translate chinese kosmo_returns_6341eea6:
 translate chinese kosmo_returns_6574f739:
 
     # "You and Sill move back inside. From time to time, you peer through the window to see what Kosmo is up to."
-    "你和西里尔回到里面去。你不时地透过窗户往外看，看看科斯莫在做什么。"
+    "你和希露回到里面去。你不时地透过窗户往外看，看看科斯莫在做什么。"
 
 # game/BKstory_events.rpy:13454
 translate chinese kosmo_returns_f9679e8c:
@@ -26596,7 +26596,7 @@ translate chinese kosmo_returns2_01f7c1d8:
 translate chinese kosmo_returns2_f091339a:
 
     # kosmo "We'll test it on her first, but when the time comes, I will use it on your slave Sill!"
-    kosmo "我们先在她身上试验一下，等时机成熟，我会把它用在你的奴隶西里尔上!"
+    kosmo "我们先在她身上试验一下，等时机成熟，我会把它用在你的奴隶希露上!"
 
 # game/BKstory_events.rpy:13664
 translate chinese kosmo_returns2_864a5a2f_1:
@@ -27412,7 +27412,7 @@ translate chinese no_money_7752476f:
 translate chinese no_money_53798aeb:
 
     # "As you wander around, looking for breakfast, you run into Sill. She looks completely panicked."
-    "当你四处寻找早餐时，你碰到了西里尔。她看起来很惊慌。"
+    "当你四处寻找早餐时，你碰到了希露。她看起来很惊慌。"
 
 # game/BKstory_events.rpy:14048
 translate chinese no_money_872fcdd3:
@@ -27550,7 +27550,7 @@ translate chinese no_money_4b7d7722:
 translate chinese no_money_04872e33:
 
     # "Sill runs away scared to cower in her room. Waiting for an explanation for this interruption, you stand your ground and point an accusing finger."
-    "西里尔吓得躲在房间里不敢出来。你站在原地，手指着对方，等待对方对你的打断做出解释。"
+    "希露吓得躲在房间里不敢出来。你站在原地，手指着对方，等待对方对你的打断做出解释。"
 
 # game/BKstory_events.rpy:14106
 translate chinese no_money_97eec849:
@@ -29368,7 +29368,7 @@ translate chinese game_over_bb54c8eb:
 translate chinese game_over_b1860e8b:
 
     # "Even Sill was taken from you. There was nothing you could do to prevent the slaver's guild from carrying her away."
-    "连西里尔都被夺走了。你无法阻止奴隶工会把她带走。"
+    "连希露都被夺走了。你无法阻止奴隶工会把她带走。"
 
 # game/BKstory_events.rpy:15031
 translate chinese game_over_27e9abfa:
@@ -30112,7 +30112,7 @@ translate chinese wagon_40a5e6b2:
 translate chinese wagon_first_visit_b4dfbd94:
 
     # "Today, you take Sill out to explore your new backyard."
-    "今天，你带着西里尔去探索你的新后院。"
+    "今天，你带着希露去探索你的新后院。"
 
 # game/BKstory_events.rpy:15466
 translate chinese wagon_first_visit_1b52e632:
@@ -30124,7 +30124,7 @@ translate chinese wagon_first_visit_1b52e632:
 translate chinese wagon_first_visit_3a271a1b:
 
     # you "Uh? Look, Sill, there's something over there!"
-    you "呃?看，西尔，那边有东西!"
+    you "呃?看，希露，那边有东西!"
 
 # game/BKstory_events.rpy:15470
 translate chinese wagon_first_visit_529ef170:
@@ -30346,7 +30346,7 @@ translate chinese wagon_first_visit_5101eb47:
 translate chinese wagon_first_visit_856b43b2:
 
     # you "Shut up, Sill! Let me think... I'm on the verge of having an idea..."
-    you "闭嘴,西里尔!让我想想……我马上就要有个主意了……"
+    you "闭嘴,希露!让我想想……我马上就要有个主意了……"
 
 # game/BKstory_events.rpy:15574
 translate chinese wagon_first_visit_ceb7ed61:

@@ -2398,7 +2398,7 @@ translate chinese city_thief_e8a36dec:
 translate chinese city_thief_cee55968:
 
     # "You manage to keep up for a while, but you can feel your stamina running out."
-    "你设法保持了一段时间，但你可以感觉到你的耐力耗尽了。"
+    "你设法保持了一段时间，但你可以感觉到你的精力耗尽了。"
 
 # game/BKcity_events.rpy:1942
 translate chinese city_thief_48a2c215:
@@ -2626,7 +2626,7 @@ translate chinese city_wrestle_f7ba7de8:
 translate chinese city_wrestle_9002ecf7:
 
     # "However, you can feel your stamina slowly draining out. Your arm starts to shake. Your opponent is grinning now."
-    "然而，你可以感觉到你的耐力慢慢耗尽。你的手臂开始颤抖。你的对手现在笑了。"
+    "然而，你可以感觉到你的精力慢慢耗尽。你的手臂开始颤抖。你的对手现在笑了。"
 
 # game/BKcity_events.rpy:2126
 translate chinese city_wrestle_d95d8254:
@@ -3796,7 +3796,7 @@ translate chinese city_secret_7c244c01:
 translate chinese city_secret_ecda54b4:
 
     # "You retrieve the item. It could be useful, after Sill gives it a good washing."
-    "你接过物品。这可能是有用的，之后让西里尔给它好好洗。"
+    "你接过物品。这可能是有用的，之后让希露给它好好洗。"
 
 # game/BKcity_events.rpy:3050
 translate chinese city_secret_6a0019cd_1:
@@ -6646,7 +6646,7 @@ translate chinese slave_beach_event_85bafe9e:
 translate chinese slave_beach_event_19af7a9d:
 
     # passerby "That brothel guy wasn't joking... I've never had so much fun!"
-    passerby "那个妓院的家伙真不是在开玩笑……我从来没有这么爽过！"
+    passerby "那个青楼的家伙真不是在开玩笑……我从来没有这么爽过！"
 
 # game/BKcity_events.rpy:5495
 translate chinese slave_beach_event_b3717b26:
@@ -6748,7 +6748,7 @@ translate chinese slave_beach_event_5d996cc8:
 translate chinese slave_beach_event_dc0306da:
 
     # "Let down, the men scatter and grumble something about false advertising... Your brothel has lost reputation."
-    "真是令人失望，男人们散开了，抱怨虚假广告。。。你的妓院名誉扫地了。"
+    "真是令人失望，男人们散开了，抱怨虚假广告。。。你的青楼名誉扫地了。"
 
 # game/BKcity_events.rpy:5619
 translate chinese slave_beach_event_2666d939:
@@ -6921,4 +6921,3 @@ translate chinese strings:
     # game/BKcity_events.rpy:5600
     old "Give up"
     new "放弃"
-

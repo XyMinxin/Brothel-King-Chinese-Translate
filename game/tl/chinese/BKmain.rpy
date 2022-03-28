@@ -154,7 +154,7 @@ translate chinese farm_loop_46f371fe:
 translate chinese farm_loop_ff2eb741:
 
     # "[mn.name] (level [mn.level] [mn.type]) has been healed."
-    "[mn.name] (等级 [mn.level] [xxx3])已被治愈。"
+    "[mn.name] (等级[mn.level] [xxx3])已被治愈。"
 
 # game/BKmain.rpy:531
 translate chinese farm_loop_ce1b337e:

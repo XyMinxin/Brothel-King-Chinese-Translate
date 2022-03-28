@@ -22244,7 +22244,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:4764
     old "Never mind"
-    new "Never mind"
+    new "算了"
 
     # game/BKchapter2.rpy:5574
     old "Flatter her"
@@ -22521,4 +22521,3 @@ translate chinese strings:
     # game/BKchapter2.rpy:10666
     old "Cum in her mouth"
     new "Cum in her mouth"
-

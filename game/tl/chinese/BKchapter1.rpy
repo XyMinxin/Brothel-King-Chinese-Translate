@@ -334,7 +334,7 @@ translate chinese c1_meet_kosmo_74d375b2:
 translate chinese c1_meet_kosmo_f88e9a5c:
 
     # you "Sill! Wake Drogon, will you?"
-    you "西里尔!叫醒卓耿，好吗?"
+    you "希露!叫醒卓耿，好吗?"
 
 # game/BKchapter1.rpy:203
 translate chinese c1_meet_kosmo_f2fd650a:
@@ -412,7 +412,7 @@ translate chinese c1_meet_kosmo_1a563e07:
 translate chinese c1_meet_kosmo_e9a9a234:
 
     # you "Hey! She's Sill. Back off."
-    you "嘿!她是西里尔。后退。"
+    you "嘿!她是希露。后退。"
 
 # game/BKchapter1.rpy:245
 translate chinese c1_meet_kosmo_7dae0e55:
@@ -430,7 +430,7 @@ translate chinese c1_meet_kosmo_4c4f104a:
 translate chinese c1_meet_kosmo_7d73232a:
 
     # you "Sill is mine, and I'm not ever selling her."
-    you "西里尔是我的，我永远不会卖掉她。"
+    you "希露是我的，我永远不会卖掉她。"
 
 # game/BKchapter1.rpy:256
 translate chinese c1_meet_kosmo_c92999d8:
@@ -586,7 +586,7 @@ translate chinese c1_meet_kosmo_41ecb0a8:
 translate chinese c1_ambush_4ccc267c:
 
     # "Sill was done with her work, so she decided to accompany you for a morning walk."
-    "西里尔的工作做完了，所以她决定陪你晨走。"
+    "希露的工作做完了，所以她决定陪你晨走。"
 
 # game/BKchapter1.rpy:339
 translate chinese c1_ambush_2e654fa0:
@@ -670,7 +670,7 @@ translate chinese c1_ambush_143056f7:
 translate chinese c1_ambush_2a20b021:
 
     # you "Sill, get behind me! It's an ambush!" with vpunch
-    you "西里尔，到我后面来!那一定是你中了圈套。"
+    you "希露，到我后面来!那一定是你中了圈套。"
 
 # game/BKchapter1.rpy:441
 translate chinese c1_ambush_c7ebd843:
@@ -724,7 +724,7 @@ translate chinese c1_ambush_e2972483:
 translate chinese c1_ambush_3fbcc058:
 
     # "You keep a protective amulet for emergencies. Clenching it, you cast a magic barrier around you and Sill."
-    "你有一个护身符以备不时之需。握紧它，你在你周围和西里尔上投下一道魔法屏障。"
+    "你有一个护身符以备不时之需。握紧它，你在你周围和希露上投下一道魔法屏障。"
 
 # game/BKchapter1.rpy:484
 translate chinese c1_ambush_dccbc664:
@@ -760,7 +760,7 @@ translate chinese c1_ambush_1cc2c0cd:
 translate chinese c1_ambush_ce9e16a0:
 
     # you "Sill! Where is Drogon!"
-    you "西里尔!卓耿在哪!"
+    you "希露!卓耿在哪!"
 
 # game/BKchapter1.rpy:501
 translate chinese c1_ambush_8033251a:
@@ -790,7 +790,7 @@ translate chinese c1_ambush_8f951435:
 translate chinese c1_ambush_439eebb0:
 
     # "Desperate, you climb from crate to crate, almost reaching the top. Sill is following you the best she can."
-    "绝望中，你从一个板条箱爬到另一个板条箱，几乎爬到了顶部。西里尔在尽她所能地跟踪你。"
+    "绝望中，你从一个板条箱爬到另一个板条箱，几乎爬到了顶部。希露在尽她所能地跟踪你。"
 
 # game/BKchapter1.rpy:511
 translate chinese c1_ambush_a5f7b8d1:
@@ -802,13 +802,13 @@ translate chinese c1_ambush_a5f7b8d1:
 translate chinese c1_ambush_e6ceb7b1:
 
     # "However, as Sill reaches the last crate, you hear an ill-fated sound."
-    "然而，当西里尔到达最后一个板条箱，你听到一个不幸的声音。"
+    "然而，当希露到达最后一个板条箱，你听到一个不幸的声音。"
 
 # game/BKchapter1.rpy:517
 translate chinese c1_ambush_b379d3b7:
 
     # "The crates give in, crumbling from under her. Sill falls back down into the street." with vpunch
-    "箱子垮了，从她身下摔了下来。西里尔掉回到街上。"
+    "箱子垮了，从她身下摔了下来。希露掉回到街上。"
 
 # game/BKchapter1.rpy:521
 translate chinese c1_ambush_509710ea:
@@ -826,7 +826,7 @@ translate chinese c1_ambush_c234d17d:
 translate chinese c1_ambush_97f2b94b:
 
     # "Sill gets back up, but she has her back to the wall as the attackers close in and surround her. You watch helplessly from your precarious hideout."
-    "西里尔站了起来，但是当攻击者靠近并包围她时，她已经背靠着墙了。你无助地从你岌岌可危的藏身之处看着。"
+    "希露站了起来，但是当攻击者靠近并包围她时，她已经背靠着墙了。你无助地从你岌岌可危的藏身之处看着。"
 
 # game/BKchapter1.rpy:529
 translate chinese c1_ambush_b6e6c22b:
@@ -1078,7 +1078,7 @@ translate chinese c1_ambush_3c41d93c:
 translate chinese c1_ambush_cabcba11:
 
     # "You and Sill make it back safely to the brothel. You give instructions to tighten security."
-    "你和西里尔会安全回到青楼的。你指示要加强安全措施。"
+    "你和希露会安全回到青楼的。你指示要加强安全措施。"
 
 # game/BKchapter1.rpy:676
 translate chinese c1_reached_goal_d623bd65:
@@ -13706,7 +13706,7 @@ translate chinese strings:
 
     # game/BKchapter1.rpy:249
     old "Sill's not for sale"
-    new "西里尔是非卖品"
+    new "希露是非卖品"
 
     # game/BKchapter1.rpy:249
     old "I'm not selling to you"

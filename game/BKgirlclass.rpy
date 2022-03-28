@@ -1596,7 +1596,7 @@ init -2 python:
                     status_list.append(["rest.webp", self.fullname + "今天{b}休息{/b}。"])
 
             elif self.energy < autorest_limit:
-                status_list.append(["autorest.webp", self.fullname + "的耐力很低。她今天将被自动送去{b}休息{/b}。"])
+                status_list.append(["autorest.webp", self.fullname + "的精力很低。她今天将被自动送去{b}休息{/b}。"])
 
             elif self.works_today() == 50 and persistent.show_girl_status["half-shift"]:
                 status_list.append(["half.webp", self.fullname + "今天的工作是{b}半班制{/b}。"])
@@ -1969,7 +1969,7 @@ init -2 python:
             r, case = self.change_energy(-chg)
 
             text1 = ""
-            text2 = "\n耐力{color=[c_red]} " + str(round_int(r)) + "{/color}"
+            text2 = "\n精力{color=[c_red]} " + str(round_int(r)) + "{/color}"
 
             if case == "exhausted":
                 text1 += "\n{color=[c_red]}" + self.name + "累得不能继续工作了。{/color}"
@@ -2104,7 +2104,7 @@ init -2 python:
 
             r, case = self.change_energy(x)
 
-            resting_changes += "耐力{color=[c_green]} +" + str_int(r) + "{/color}"
+            resting_changes += "精力{color=[c_green]} +" + str_int(r) + "{/color}"
 
             if case == "recovered":
                 if context == "farm":

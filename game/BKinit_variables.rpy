@@ -589,11 +589,11 @@ init -4 python:
                  "machine" : []
                  }
 
-    farm_holding_dict = {"libido" : "照看奴仆\n{size=-24}     (+性欲){/size}",
-                            "sensitivity" : "服侍Gizel\n{size=-24}     (+敏感){/size}",
-                            "obedience" : "清理农场 (Ob)",
-                            "constitution" : "外出工作 (Con)",
-                            "rest": "真的在休息",
+    farm_holding_dict = {"libido" : "照看奴仆{size=-6}(+性欲){/size}",
+                            "sensitivity" : "服侍Gizel{size=-6}(+敏感){/size}",
+                            "obedience" : "打扫农场{size=-6}(+服从){/size}",
+                            "constitution" : "外出工作{size=-6}(+体格){/size}",
+                            "rest": "休息",
                             }
 
     farm_description = {"stallion intro" : "%s在马厩和一匹悬挂得很好的种马过夜.",
@@ -915,18 +915,18 @@ init -4 python:
     ##     统计描述     ##
 
     gstats_dict = {
-                    "Beauty" : "{b}美貌：{/b}她看上去真漂亮. 影响按摩师的工作和性交效果. {p}目前作为按摩师的能力: {b}%s{/b}",
-                    "Body" : "{b}身材：{/b}她的身材多么匀称，多么结实. 影响工作效果，如舞蹈和肛交行为. {p}目前作为舞者的能力: {b}%s{/b}",
-                    "Charm" : "{b}魅力：{/b}她有多少个性和风度. 影响服务员和性服侍的工作效果. {p}目前作为服务员的能力: {b}%s{/b}",
-                    "Refinement" : "{b}优雅：{/b}她是多么的聪明博学，举止文雅. 影响艺伎和皮绳愉虐性行为效果. {p}目前作为艺妓的能力: {b}%s{/b}",
-                    "Libido" : "{b}性欲：{/b}她是多么渴望性啊. 影响性交效果，并增加她能与之发生性关系的顾客数量. {p}目前作为妓女的能力: {b}%s{/b}",
-                    "Sensitivity" : "{b}敏感：{/b}她对自己的身体和伴侣是多么的敏感. 影响性服侍效果，提高顾客满意度.",
-                    "Constitution" : "{b}体格：{/b}她有多大的耐力. 影响肛交效果和提高她的最大精力.",
-                    "Obedience" : "{b}服从：{/b}她多么能接受命令和奴役. 影响皮绳愉虐性行为效果，降低她拒绝工作的机会.",
-                    "Service" : "{b}性服侍：{/b}她做手交、口交和其他性服侍行为有多好.",
-                    "Sex" : "{b}性交：{/b}她有多擅长性交行为.",
-                    "Anal" : "{b}肛交：{/b}她有多擅长肛交行为.",
-                    "Fetish" : "{b}皮绳愉虐：{/b}她对BDSM(绳缚与调教\支配与臣服\施虐与受虐)和其他不寻常的性行为有多在行."
+                    "Beauty" : "{b}美貌：{/b}她看上去真漂亮。影响按摩师的工作和性交效果。{p}目前作为按摩师的能力: {b}%s{/b}",
+                    "Body" : "{b}身材：{/b}她的身材多么匀称，多么结实。影响工作效果，如舞蹈和肛交行为。{p}目前作为舞者的能力: {b}%s{/b}",
+                    "Charm" : "{b}魅力：{/b}她有多少个性和风度。影响服务员和性服侍的工作效果。{p}目前作为服务员的能力: {b}%s{/b}",
+                    "Refinement" : "{b}优雅：{/b}她是多么的聪明博学，举止文雅。影响艺伎和皮绳愉虐性行为效果。{p}目前作为艺妓的能力: {b}%s{/b}",
+                    "Libido" : "{b}性欲：{/b}她是多么渴望性啊。影响性交效果，并增加她能与之发生性关系的顾客数量。{p}目前作为妓女的能力: {b}%s{/b}",
+                    "Sensitivity" : "{b}敏感：{/b}她对自己的身体和伴侣是多么的敏感。影响性服侍效果，提高顾客满意度。",
+                    "Constitution" : "{b}体格：{/b}她有多大的精力。影响肛交效果和提高她的最大精力。",
+                    "Obedience" : "{b}服从：{/b}她多么能接受命令和奴役. 影响皮绳愉虐性行为效果，降低她拒绝工作的机会。",
+                    "Service" : "{b}性服侍：{/b}她做手交、口交和其他性服侍行为有多好。",
+                    "Sex" : "{b}性交：{/b}她有多擅长性交行为。",
+                    "Anal" : "{b}肛交：{/b}她有多擅长肛交行为。",
+                    "Fetish" : "{b}皮绳愉虐：{/b}她对BDSM(绳缚与调教\支配与臣服\施虐与受虐)和其他不寻常的性行为有多在行。"
                     }
 
     gstats_descript = {
@@ -1339,7 +1339,7 @@ init python:
                                         GirlInteractionTopic("train", "train", "百合　　", "slave_train_sex_acts", act="bisexual", advanced=True),
                                         GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
-                    "{font=[gui.yishu]}{size=18}特别训练{/font}" : [GirlInteractionTopic("train", "train", "消除消极的固着", "slave_remove_fixation", condition="neg_fix")],
+                    "{font=[gui.yishu]}{size=18}特别训练{/font}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["{font=[gui.yishu]}{size=18}魔法技能训练{/font}", "{font=[gui.yishu]}{size=18}魔法性爱训练{/font}", "{font=[gui.yishu]}{size=18}选择方法{/font}"],
                     "{font=[gui.yishu]}{size=18}选择方法{/font}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
@@ -1375,7 +1375,7 @@ init python:
                                     GirlInteractionTopic("react", "discipline", "强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送她去农场", "slave_punish_farm", condition="farm"),
                                     ],
-                    "misc" : ["{font=[gui.yishu]}{size=18}服装{/font}", "{font=[gui.yishu]}{size=18}主人卧室{/font}", "{b}DEBUG{/b}"],
+                    "misc" : ["{font=[gui.yishu]}{size=18}服装{/font}", "{font=[gui.yishu]}{size=18}主人卧室{/font}", "{font=[gui.yishu]}{size=18}DEBUG{/font}"],
                     "{font=[gui.yishu]}{size=18}服装{/font}" : [
                                     GirlInteractionTopic("misc", None, "让她脱光衣服", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
                                     GirlInteractionTopic("misc", None, "让她穿上衣服", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
@@ -1384,15 +1384,15 @@ init python:
                                         GirlInteractionTopic("misc", None, "把她送到你的卧室", "slave_master_bedroom_add", AP_cost=0, condition = "master_bedroom_add"),
                                         GirlInteractionTopic("misc", None, "让她离开你的卧室", "slave_master_bedroom_remove", AP_cost=0, condition = "master_bedroom_remove")
                                         ],
-                    "{b}DEBUG{/b}" : [GirlInteractionTopic("misc", None, "Cheat", "interaction_cheat_menu", AP_cost=0, condition="debug_mode"),
-                        GirlInteractionTopic("misc", None, "Reset girl interactions", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
-                        GirlInteractionTopic("misc", None, "Reset MC interactions", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
+                    "{font=[gui.yishu]}{size=18}DEBUG{/font}" : [GirlInteractionTopic("misc", None, "作弊", "interaction_cheat_menu", AP_cost=0, condition="debug_mode"),
+                        GirlInteractionTopic("misc", None, "重置女孩的互动", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
+                        GirlInteractionTopic("misc", None, "重置玩家的互动", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
                         ],
                     }
 
 
     free_interact_dict = {
-                            "chat" : ["{font=[gui.yishu]}{size=18}一般话题{/font}", "{font=[gui.yishu]}{size=18}私人话题{/font}", "{b}DEBUG{/b}"],
+                            "chat" : ["{font=[gui.yishu]}{size=18}一般话题{/font}", "{font=[gui.yishu]}{size=18}私人话题{/font}", "{font=[gui.yishu]}{size=18}DEBUG{/font}"],
                             "{font=[gui.yishu]}{size=18}一般话题{/font}" : [GirlInteractionTopic("chat", "chat", "闲聊", "free_chat_small_talk"),
                                                 GirlInteractionTopic("chat", "chat", "八卦", "free_chat_gossip"),
                                                 GirlInteractionTopic("chat", "chat", "生命", "free_chat_life"),# love_test=5),
@@ -1450,9 +1450,9 @@ init python:
                                         GirlInteractionTopic("give", "gold", "给她金币", "free_give_gold", love_test=20),
                                         ],
                             "{font=[gui.yishu]}{size=18}提议{/font}" : [GirlInteractionTopic("give", "offer", "为她提供工作", "free_offer_job", love_test=90, relationship_level=5),],
-                            "{b}DEBUG{/b}" : [GirlInteractionTopic("give", None, "Change love", "interaction_cheat_love", AP_cost=0, condition="debug_mode"),
-                                        GirlInteractionTopic("give", None, "Reset girl interactions", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
-                                        GirlInteractionTopic("give", None, "Reset MC interactions", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
+                            "{font=[gui.yishu]}{size=18}DEBUG{/font}" : [GirlInteractionTopic("give", None, "修改爱情", "interaction_cheat_love", AP_cost=0, condition="debug_mode"),
+                                        GirlInteractionTopic("give", None, "重置女孩的互动", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
+                                        GirlInteractionTopic("give", None, "重置玩家的互动", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
                                         ],
                     }
 
@@ -2122,7 +2122,7 @@ init -4 python:
                     "beauty" : ("%s，你今天真漂亮...", "%s, 你太可爱了...", "%s, 我发誓你有最可爱的脸.", "当你微笑时，你的脸就会亮起来, %s."),
                     "body" : ("哇，你的身材真火辣.", "宝贝，你的屁股太棒了...", "我喜欢你的大咪咪，亲爱的，不穿胸罩看起来棒极了.", "看那漂亮的屁股...", "哇，你太棒了，真想用手去感受一下...!"),
                     "mind" : ("你是个聪明的女孩，我喜欢你这一点.", "美丽心灵……你不是样样都有了吗?", "你似乎知道很多…你一定要多了解我一些!", "我喜欢我们之间的对话，总是很有启发性的"),
-                    "spirit" : ("你总是精神抖擞，充满活力;这非常好.", "算是个...个性的人. 我不喜欢沉闷的家伙.", "Y你总是对一切充满激情. 我喜欢这个!")
+                    "spirit" : ("你总是精神抖擞，充满活力;这非常好.", "算是个...个性的人. 我不喜欢沉闷的家伙.", "你总是对一切充满激情. 我喜欢这个!")
                     }
 
 
@@ -2131,7 +2131,7 @@ init -4 python:
 
     slave_stories = ["slave_story1", "slave_story2", "slave_story3", "slave_story4", "slave_story5", "slave_story6", "slave_story7", "slave_story8"]
 
-    origins = ["Zan", "与圣地的交界处", "血岛", "卡尔凯尔城", "西进公国", "霍科马沙漠", "博尔格港", "歌利亚废墟", "阿里克山脉"]
+    origins = ["Zan", "the border with the Holy Lands", "the Blood Islands", "Karkyr", "Westmarch", "the desert of Hokoma", "Borgo, the port city", "the Goliath desolations", "the Arik mountains"]
 
 #     origin_description = {
 #                           "Zan" : "I know the old streets of Zan like the back of my hand... I used to walk to the market with my %s, wondering what the strange houses with the red lanterns were... Now I know... *blush*",
@@ -2454,7 +2454,7 @@ init -4 python:
                     "dusty" : "你的青楼" + event_color["average contrast"] % "{b}尘土飞扬{/b}" + ".",
                     "dirty" : "你的青楼" + event_color["a little bad"] % "{b}乌七八糟{/b}" + ".",
                     "disgusting" : "警告！你的青楼" + event_color["bad"] % "{b}不堪入目{/b}" + "!",
-                    "fire" : event_color["very bad"] % "警告！！！你的妓院有着火的危险！"
+                    "fire" : event_color["very bad"] % "警告！！！你的青楼有着火的危险！"
                     }
 
     gold_threat_amount = {1 : 500, 2 : 1000, 3 : 2500, 4 : 10000, 5: 25000} # Gain 1 threat for every slice of X gold depending on DISTRICT RANK up to gold max

@@ -69,8 +69,11 @@ init -4 python:
                         "anal" : "肛交",
                         "Fetish" : "皮绳愉虐",
                         "fetish" : "皮绳愉虐",
-                        "Energy" : "耐力",
-                        "energy" : "耐力",
+                        "Energy" : "精力",
+                        "energy" : "精力",
+
+                        "Brothel reputation" : "青楼声誉",
+                        "brothel reputation" : "青楼声誉",
                     }
 
     ## 女孩相关 ##
@@ -100,8 +103,8 @@ init -4 python:
                         "anal" : "肛交",
                         "Fetish" : "皮绳愉虐",
                         "fetish" : "皮绳愉虐",
-                        "Energy" : "耐力",
-                        "energy" : "耐力",
+                        "Energy" : "精力",
+                        "energy" : "精力",
 
                         ## 职业名称 ##
                         "Waitress" : "服务员",
@@ -150,6 +153,12 @@ init -4 python:
                         "very interested" : "非常感兴趣",
                         "Fascinated" : "陶醉",
                         "fascinated" : "陶醉",
+
+                        ## 反应 ##
+                        "ambivalent feelings" : "感到矛盾",
+                        "a weakness" : "是她的弱点",
+                        "a disgust" : "感到厌恶",
+                        "no particular reaction" : "没什么特别的反应",
 
                         ## 癖好 ##
                         "stripping" : "脱光衣服",
@@ -272,8 +281,8 @@ init -4 python:
                         "sensitivity" : "服侍Gizel",
                         "Obedience" : "打扫农场",
                         "obedience" : "打扫农场",
-                        "Constitution" : "锻炼身体",
-                        "constitution" : "锻炼身体",
+                        "Constitution" : "外出工作",
+                        "constitution" : "外出工作",
                         "Rest" : "休息",
                         "rest" : "休息",
 
@@ -354,9 +363,13 @@ init -4 python:
 
                         ## 玩家属性 ##
                         "Strength" : "力量",
+                        "strength" : "力量",
                         "Spirit" : "法力",
+                        "spirit" : "法力",
                         "Charisma" : "魅力",
-                        "Speed" : "耐力",
+                        "charisma" : "魅力",
+                        "Speed" : "精力",
+                        "speed" : "精力",
 
                         ## 难度 ##
                         "Very easy" : "非常容易",
@@ -440,7 +453,7 @@ init -4 python:
                          "Master bedroom" : "主人卧室",
                          "Work&whore" : "工作&妓女",
                          "Naked" : "裸体",
-                         "Negative fixation" : "负面特质",
+                         "Negative fixation" : "不良癖好",
                          "Not naked" : "非裸体",
                          "Not work&whore" : "没有工作",
 
@@ -477,6 +490,18 @@ init -4 python:
                          "altars" : "祭坛",
                          "Gizmos" : "小玩意",
                          "gizmos" : "小玩意",
+
+                         ## 排序名称 ##
+                         "Weapon" : "武器",
+                         "weapon" : "武器",
+                         "Closing" : "防具",
+                         "closing" : "防具",
+                         "Trinket" : "饰品",
+                         "trinket" : "饰品",
+                         "Consumalbe" : "消耗品",
+                         "consumalbe" : "消耗品",
+                         "Misc" : "杂项",
+                         "misc" : "杂项",
 
                          ## 客户群体 ##
                          "Beggars" : "乞丐类" ,
@@ -859,10 +884,9 @@ init -4 python:
                           "Clockwork billboard" : "钟表广告牌",
                           }
 
-    ## 客户群体 ##
-
 #### BALANCE / CHEATS ####
 
+    ## 调试模式 ##
     debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play

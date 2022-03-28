@@ -364,7 +364,7 @@ translate chinese help_girls_df66ced2:
 translate chinese help_girls_3cae61af:
 
     # you "Go back to Sill."
-    you "改回‘西里尔’。"
+    you "改回‘希露’。"
 
 # game/BKhelp.rpy:303
 translate chinese help_girls_c5dcb8e1:
@@ -766,7 +766,7 @@ translate chinese bis_introduction_9ba21507:
 translate chinese bis_introduction_d680755a:
 
     # sill "Each girl will use an {b}interaction{/b}. But your girls will also share the, ahem, load, so their {b}energy{/b} expenditure will be halved."
-    sill "每个女孩将使用一个{b}互动{/b}。但你的女孩也将分担，嗯，负荷，所以她们的{b}耐力{/b}支出将减半。"
+    sill "每个女孩将使用一个{b}互动{/b}。但你的女孩也将分担，嗯，负荷，所以她们的{b}精力{/b}支出将减半。"
 
 # game/BKhelp.rpy:574
 translate chinese bis_introduction_4724d70a:
@@ -820,7 +820,7 @@ translate chinese group_introduction_2f427d86:
 translate chinese group_introduction_f87a6bc3:
 
     # sill "You have to watch the energy level of your group girls, though. They will spend double or triple the {b}energy{/b} depending on how many customers there are."
-    sill "不过，你必须注意你的群交女孩的耐力水平。她们会花费两倍或三倍的{b}耐力{/b}，这取决于有多少顾客。"
+    sill "不过，你必须注意你的群交女孩的精力水平。她们会花费两倍或三倍的{b}精力{/b}，这取决于有多少顾客。"
 
 # game/BKhelp.rpy:601
 translate chinese group_introduction_da9455b8:
@@ -2140,7 +2140,7 @@ translate chinese help_farm_rules_training_3e7fc5d7:
 translate chinese help_farm_rules_resting_0ca98645:
 
     # gizel normal "I've never understood this concept of {b}rest{/b} myself, being blessed with endless libido and stamina."
-    gizel normal "我从来没有理解过{b}休息{/b}这个概念，拥有无尽的性欲和耐力。"
+    gizel normal "我从来没有理解过{b}休息{/b}这个概念，拥有无尽的性欲和精力。"
 
 # game/BKhelp.rpy:1435
 translate chinese help_farm_rules_resting_b54917fd:
@@ -2468,7 +2468,7 @@ translate chinese strings:
 
     # game/BKhelp.rpy:297
     old "Rename her 'Sill'"
-    new "给她重命名为‘西里尔’"
+    new "给她重命名为‘希露’"
 
     # game/BKhelp.rpy:297
     old "Rename her 'Rose'"

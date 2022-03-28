@@ -286,7 +286,7 @@ translate chinese security_0ee3ac03:
 translate chinese security_512177f8:
 
     # "The first lines of battle crash together. Ignoring the fighting around you, you force your way towards the enemy general."
-    "两条阵线激烈地碰撞在一起！你无视周围的战斗，向敌人的头领冲去。"
+    "双方阵线激烈地碰撞在一起！你无视周围的战斗，向敌人的头领冲去。"
 
 # game/BKsecurity.rpy:528
 translate chinese security_b6ff1c89:
@@ -394,7 +394,7 @@ translate chinese security_3f5ed950:
 translate chinese security_25471562:
 
     # "The first lines of battle crash together. You stand at the forefront, slashing at enemies left and right."
-    "两条阵线激烈地碰撞在一起！你冲在最前列，奋力砍杀着敌人。"
+    "双方阵线激烈地碰撞在一起！你冲在最前列，奋力砍杀着敌人。"
 
 # game/BKsecurity.rpy:625
 translate chinese security_13f7a93e:
@@ -754,7 +754,7 @@ translate chinese security_f98ae4df:
 translate chinese security_0d372f79:
 
     # you "Sill, take her away and have her branded."
-    you "西尔，把她带走，打上烙印。"
+    you "希露，把她带走，打上烙印。"
 
 # game/BKsecurity.rpy:1062
 translate chinese security_4dd4e0ff:
@@ -784,7 +784,7 @@ translate chinese security_ef0515a5:
 translate chinese security_16619f94:
 
     # you "Oh, but I am. Sill, take her to the blood slavers' galley. I never want to hear from that bitch again."
-    you "哦，但我是。西尔，带她去血贩子的厨房。我再也不想听到那个婊子的消息了。"
+    you "哦，但我是。希露，带她去血贩子的厨房。我再也不想听到那个婊子的消息了。"
 
 # game/BKsecurity.rpy:1086
 translate chinese security_07b66ad2:

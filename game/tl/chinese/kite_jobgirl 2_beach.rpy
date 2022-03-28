@@ -22,7 +22,7 @@ translate chinese jobgirl_beach_1_668ea459:
 translate chinese jobgirl_beach_1_9eebc757:
 
     # you "Sill! Come over here!"
-    you "西里尔!过来这里!"
+    you "希露!过来这里!"
 
 # game/kite_jobgirl 2_beach.rpy:41
 translate chinese jobgirl_beach_1_008557ff:
@@ -148,7 +148,7 @@ translate chinese jobgirl_beach_1_58ccc8f3:
 translate chinese jobgirl_beach_2_c8a0fc9a:
 
     # "You head for the location indicated by Sill. You don't know what to expect once there, but you start fantasizing about the redhead adventurer. You still have in mind how things went when she asked for your help with that stupid riddle."
-    "你朝西里尔指示的地方走去。你不知道在那里会发生什么，但你开始幻想红头发的冒险家。你还记得她向你求助解那个愚蠢的谜语时的情形吗?"
+    "你朝希露指示的地方走去。你不知道在那里会发生什么，但你开始幻想红头发的冒险家。你还记得她向你求助解那个愚蠢的谜语时的情形吗?"
 
 # game/kite_jobgirl 2_beach.rpy:126
 translate chinese jobgirl_beach_2_09323470:
@@ -172,7 +172,7 @@ translate chinese jobgirl_beach_2_b8a37839:
 translate chinese jobgirl_beach_2_b1993080:
 
     # "You think about her the whole time, until you arrive at the beach. You have to concentrate, otherwise you will not find the spot Sill showed you."
-    "你一直想着她，直到你到达海滩。你必须集中注意力，否则你将找不到西里尔展示给你的斑点。"
+    "你一直想着她，直到你到达海滩。你必须集中注意力，否则你将找不到希露展示给你的斑点。"
 
 # game/kite_jobgirl 2_beach.rpy:134
 translate chinese jobgirl_beach_2_715bc24e:
@@ -670,7 +670,7 @@ translate chinese jobgirl_beach_4_eb1caf89:
 translate chinese jobgirl_beach_4_76676073:
 
     # "You leave your instructions for the day with Sill, then head to the beach. You worked hard lately, so you feel you need and deserve a day off."
-    "你把当天的指示留给西里尔，然后去海滩。你最近工作很努力，所以你觉得你需要休息一天。"
+    "你把当天的指示留给希露，然后去海滩。你最近工作很努力，所以你觉得你需要休息一天。"
 
 # game/kite_jobgirl 2_beach.rpy:373
 translate chinese jobgirl_beach_4_cdf7da87:

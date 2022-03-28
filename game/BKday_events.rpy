@@ -68,7 +68,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Demean her":
-                        $ MC.rand_say(("ev: What are you doing, you dumb bitch? Your body is for fucking, not games! Save your energy for tonight.", "Humph. I hope you will put the same energy into serving customers.", "Hey! If you get up early, you should fix my breakfast, instead of doing some useless exercise!", "ev: Humph. Muscles on a whore are like tits on a man: useless.", "Enjoying yourself, are you? Shouldn't you be doing something useful with your time?"))
+                        $ MC.rand_say(("ev: 你在干什么，你这个愚蠢的婊子？你的身体是用来做爱的，不是用来玩游戏的！别在这浪费你精力！", "哼。我希望你能把同样的精力放在为客户服务上。", "嘿！如果你起得早，你应该给我准备早餐，而不是做这些无意义的运动。", "ev: 哼。妓女身上的肌肉就像男人身上的奶子：毫无用处。", "玩得开心吗？你不应该用这些时间做一些更有用的事情吗？"))
 
                         if girl.is_("dom"):
                             girl.char "You bastard..."
@@ -134,7 +134,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Reject her":
-                        $ MC.rand_say(("ev: Out of my way, you dirty slave! I have no time to waste with a cum dump like you.", "If I needed you, I would give you a straight order. I don't want you to ask idle questions!", "Don't you know a slave is not supposed to address her betters? I'll send for you when, and if, I need your service."))
+                        $ MC.rand_say(("ev: 别挡着我的路，你这个肮脏的奴隶! 我没有时间和你这样的精液垃圾浪费。", "如果我需要你，我会直接命令你。我不希望你问一些无聊的问题！", "难道你不知道奴隶不能直呼她的主人名字吗？如果我需要你服务，我会派人去找你。"))
 
                         if girl.is_("sub"):
                             girl.char "I... I understand. I'm sorry..."
@@ -504,7 +504,7 @@ label random_morning_events():
 
 
                     "Kick her out":
-                        $ MC.rand_say(["ev: How DARE you barge into my room!!! Get the fuck out, or I'll rip your fucking head off!!!", "Are you out of your mind? Get out of my room, right now!", "Do you think this place is a fucking hotel? Get lost.", "I ain't got time for this. Go masturbate, or something."])
+                        $ MC.rand_say(["ev: 你胆敢擅自闯进我的房间！！？滚出去，否则我把你头给拧下来！！！", "你疯了吗？滚出我的房间，马上！", "你他妈的以为这里是酒店吗？滚出去。", "我没有时间做这个。去自慰吧或者别的什么。"])
 
                         "You get up and grab [girl.name] by the shoulder, bluntly shoving her out of the door."
 
@@ -978,9 +978,9 @@ label random_night_girl_event(girl, room):
                 "[girl.fullname] has become less obedient."
                 return
 
-        $ MC.rand_say(("gd: What's going on, [girl.name]? Are you all right?", "ne: Ah, [girl.name]. It's about time you came back.", "ev: Hey, [girl.name], you stupid bitch! What the fuck do you think you're doing?"))
+        $ MC.rand_say(("gd: 发生什么事了[girl.name]？你还好吗？", "ne: 啊，[girl.name]。你是时候回来了。", "ev: 嘿，[girl.name]，你这个愚蠢的婊子！你他妈以为你在干什么？"))
 
-        $ excuse = rand_choice(("I was visiting a friend", "I had to buy some supplies", "I went for a walk, and got lost", "I was fetching something for Sill", "I was feeling unwell and went for some fresh air", "I was taking a break, and lost track of time"))
+        $ excuse = rand_choice(("我去拜访了一个朋友", "我去购买了一些用品", "我去散步结果迷路了", "我在给希露拿东西", "我感觉有点不舒服，想出去呼吸一下新鲜空气", "我休息的时候忘了时间。"))
 
         girl.char "M-Master, you... I'm sorry I'm late, [excuse], and..."
 
@@ -1002,7 +1002,7 @@ label random_night_girl_event(girl, room):
                 $ changed_stats = [("obedience", -1*dice(3))]
 
             "Scold her":
-                $ MC.rand_say(("gd: Come on, [girl.name], you know everyone is busy preparing for the opening. You should do your part.", "ne: Look, I don't care what you do, but you must be ready to work on time. From now on, you will come back on time.", "ev: Excuses, always excuses! Do I look like I give a fuck? Get your ass to work right now, or it'll cost you!"))
+                $ MC.rand_say(("gd: 过来，[girl.name]，你看大家都在忙着准备晚上的工作。你也应该做好你的本分工作。", "ne: 听着，我不在乎你在做什么，但你必须按时准备好工作。从现在开始，你要按时回来。", "ev: 借口，总是借口！我看起来像是在乎的人吗？现在马上给我滚去工作，否则后果自负！"))
                 if girl.is_("dom"):
                     girl.char "B-But, Master... Really, it's not my fault! Aw..."
                 else:
@@ -1015,7 +1015,7 @@ label random_night_girl_event(girl, room):
 
 
             "Punish her":
-                $ MC.rand_say(("gd: I don't like to do this, but you must be punished. We have rules that you must follow.", "ne: All right, you know the drill. You broke the rules, now get ready to be punished.", "ev: What a stuck-up little  bitch. You dare talk back to me? Let us discuss your punishment."))
+                $ MC.rand_say(("gd: 虽然我不喜欢这样做，但你必须受到惩罚。我们有规则，你必须遵守。", "ne: 好了，你知道该怎么做了吧。你违反了规则，现在准备接受惩罚吧。", "ev: 真是个自命不凡的小婊子。还敢跟我顶嘴？让我们讨论一下对你的惩罚。"))
                 if girl.is_("very dom"):
                     girl.char "Get away from me! You have no right..."
                     $ girl.change_love(-3)
@@ -1067,11 +1067,11 @@ label random_night_girl_event(girl, room):
                         $ selected_fix = fix_dict[fix]
 
                         if fix == "handjobs":
-                            $ text1 = "mouth and hands"
+                            $ text1 = "双手"
                         elif fix == "oral":
-                            $ text1 = "blabberring mouth"
+                            $ text1 = "嘴巴"
                         elif fix == "titjobs":
-                            $ text1 = "tits and mouth"
+                            $ text1 = "奶子"
 
                         you "Stand right here. On your knees. You will use your [text1] to service the customers. Give them a proper greeting!"
 
@@ -1531,7 +1531,7 @@ label random_night_girl_event(girl, room):
             "Join the crowd":
                 "You find a seat in the front row, next to a group of rowdy customers."
 
-                $ cust = rand_choice(["man", "woman", "group of customers"])
+                $ cust = rand_choice(["男人", "女人", "一桌人"])
 
                 "One [cust] in particular stands out among the crowd."
 
@@ -1625,12 +1625,12 @@ label random_night_girl_event(girl, room):
                                 "She looks tense and defensive as you and the horny [cust] join her on stage."
 
                         else:
-                            if cust == "man":
-                                $ text1 = "him"
-                            elif cust == "woman":
-                                $ text1 = "her"
+                            if cust == "男人":
+                                $ text1 = "他"
+                            elif cust == "女人":
+                                $ text1 = "她"
                             else:
-                                $ text1 = "them"
+                                $ text1 = "他们"
 
 
                             "She knows better than to discuss your orders in public. She extends her hand to the [cust] to help [text1] get on stage."
@@ -1817,22 +1817,22 @@ label random_night_girl_event(girl, room):
 
                                 if l > f:
                                     if l > 75:
-                                        $ text1 = "an adoring"
+                                        $ text1 = "充满崇拜"
                                     elif l > 50:
-                                        $ text1 = "a loving"
+                                        $ text1 = "充满爱意"
                                     elif l > 25:
-                                        $ text1 = "a curious"
+                                        $ text1 = "充满古怪"
                                     else:
-                                        $ text1 = "an inquisitive"
+                                        $ text1 = "充满好奇"
                                 else:
                                     if f > 75:
-                                        $ text1 = "a terrified"
+                                        $ text1 = "充满恐惧"
                                     elif f > 50:
-                                        $ text1 = "a frightened"
+                                        $ text1 = "充满惊恐"
                                     elif f > 25:
-                                        $ text1 = "a worried"
+                                        $ text1 = "充满不安"
                                     else:
-                                        $ text1 = "a puzzled"
+                                        $ text1 = "充满困惑"
 
 
                                 "She gives you [text1] look."
@@ -2411,9 +2411,9 @@ label random_night_girl_event(girl, room):
         "Those are not the usual riff-raff: they style themselves as gentlemen, looking for refinement and the more elevated pleasures to be found in your whorehouse, such as that of good company."
 
         if girl.naked:
-            $ text1 = "naked as the day she was born"
+            $ text1 = "像她出生那天一样赤身裸体"
         else:
-            $ text1 = "in her plain slave clothes"
+            $ text1 = "穿着朴素的奴隶服"
 
         "Speaking of which, you realize none of the geishas are ready to greet the customer yet. You only see [girl.fullname], walking across the tatami floor [text1]."
 
@@ -2471,7 +2471,7 @@ label random_night_girl_event(girl, room):
                         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                         with fade
 
-                        $ MC.rand_say(("gd: That's it. You look great now. I'm sure the customers will love you.", "ne: Well, you look good enough. Now, go and make the customers happy.", "ev: Hmmpf. Not bad, you look almost like the real thing. Now, go and make an impression on those gullible fools."))
+                        $ MC.rand_say(("gd: 就这样吧。你现在看起来很棒。我相信顾客会喜欢你的。", "ne: 好吧，你看起来很不错。去吧，取悦顾客让他们满意吧。", "ev: 嗯哼。不错，你看起来几乎像真的一样。去吧，给那些容易受骗的傻瓜长点记性。"))
 
                         girl.char "Thanks..."
 
@@ -3136,20 +3136,20 @@ label night_girl_perform():
 
         if attitude > 100:
             "She massages your cock expertly, rubbing it against her face while looking you straight in the eye. She seems to love this."
-            $ text1 = "with delight"
-            $ text2 = "lapping it all up"
+            $ text1 = "满心欢喜地"
+            $ text2 = "舔舐干净"
             $ changed_stats = [("service", dice(3)), ("obedience", 2+dice(3))]
             $ girl.change_love(3)
         elif attitude > 0:
             "She does her job well, jerking you off with an exaggerated look of rapture on her face, waiting for you to cum."
-            $ text1 = "absentmindedly"
-            $ text2 = "wiping her hands on her chest"
+            $ text1 = "漫不经心地"
+            $ text2 = "胸口擦拭双手"
             $ changed_stats = [("service", dice(3)), ("obedience", dice(3))]
             $ girl.change_love(2)
         else:
             "She does her job mechanically, clearly not enjoying herself. It seems she cannot wait for you to finish."
-            $ text1 = "with disgust"
-            $ text2 = "wiping her hands on a piece of cloth"
+            $ text1 = "厌恶地"
+            $ text2 = "用布擦拭双手"
             $ changed_stats = [("service", 1), ("obedience", 1)]
 
 
@@ -3178,17 +3178,17 @@ label night_girl_perform():
 
         if attitude > 100:
             "She takes it all in stride, opening her mouth wide and covering your cock with her saliva as you go. She seems to enjoy this."
-            $ text1 = "She makes sure to gulp it all down"
+            $ text1 = "她确保把它全部吞下去"
             $ changed_stats = [("service", dice(3)), ("fetish", 2+dice(3))]
             $ girl.change_love(3)
         elif attitude > 0:
             "She lets you have your way, soldiering on as you fuck her throat hard."
-            $ text1 = "Cum drips out of her mouth as she lies there panting, trying to catch her breath"
+            $ text1 = "她躺在那里气喘吁吁地试着呼吸时，精液从她的嘴边滴落下来"
             $ changed_stats = [("service", dice(3)), ("fetish", dice(3))]
             $ girl.change_love(2)
         else:
             "She sobs and gags as you rape her throat, hating it."
-            $ text1 = "She spits it all out, nearly puking as the smell and taste makes her nauseous"
+            $ text1 = "她吐了出来，其气味和味道让她感到恶心反胃"
             $ changed_stats = [("service", -1*dice(3)), ("fetish", -1*dice(3))]
             $ girl.change_love(-2)
 
@@ -5509,13 +5509,13 @@ label night_girl_perform():
 
         if fix == "cowgirl":
             with vpunch
-            $ text1 = "from underneath her"
+            $ text1 = "从她身下"
         elif fix == "piledriver":
             with vpunch
-            $ text1 = "from atop her"
+            $ text1 = "从她身上"
         elif fix == "spooning":
             with vpunch
-            $ text1 = "from behind"
+            $ text1 = "从她背后"
 
 
         girl.char "HAAAA!!!"

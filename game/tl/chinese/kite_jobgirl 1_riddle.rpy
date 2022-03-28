@@ -178,7 +178,7 @@ translate chinese jobgirl_0_2330ce08:
 translate chinese jobgirl_0_0da82351:
 
     # you "There is one, my first slave, Sill; I don't let anyone put their hands on her, she's mine only!"
-    you "有一个，我的第一个奴隶，西里尔;我不让任何人碰她，她只是我的!"
+    you "有一个，我的第一个奴隶，希露;我不让任何人碰她，她只是我的!"
 
 # game/kite_jobgirl 1_riddle.rpy:93
 translate chinese jobgirl_0_1432a25b:
@@ -874,7 +874,7 @@ translate chinese strings:
 
     # game/kite_jobgirl 1_riddle.rpy:88
     old "My slave Sill"
-    new "我的奴隶西里尔"
+    new "我的奴隶希露"
 
     # game/kite_jobgirl 1_riddle.rpy:88
     old "I wish I had one"

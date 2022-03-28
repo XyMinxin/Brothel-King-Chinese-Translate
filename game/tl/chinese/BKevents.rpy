@@ -2734,7 +2734,7 @@ translate chinese vital_scanners_built_9e8bd5f6:
 translate chinese vital_scanners_built_a647b18c:
 
     # you "Anyway. Sill, gather the girls here."
-    you "无论如何。西里尔，把姑娘们召集到这里来。"
+    you "无论如何。希露，把姑娘们召集到这里来。"
 
 # game/BKevents.rpy:3208
 translate chinese vital_scanners_built_cbb024e8:
@@ -3652,7 +3652,7 @@ translate chinese zodiac_intro_0080067d:
 translate chinese zodiac_intro_777d2b41:
 
     # you "Oh, Sill... What is it this time?"
-    you "哦,西里尔…这次是什么事?"
+    you "哦,希露…这次是什么事?"
 
 # game/BKevents.rpy:4445
 translate chinese zodiac_intro_9cd87925:
@@ -3706,7 +3706,7 @@ translate chinese zodiac_intro_eaf14262:
 translate chinese zodiac_intro_957f88d3:
 
     # you "Sill... You sound weird..."
-    you "西里尔……你听起来奇怪……"
+    you "希露……你听起来奇怪……"
 
 # game/BKevents.rpy:4472
 translate chinese zodiac_intro_0a33cf01:
