@@ -16,7 +16,7 @@ init python:
 
                         Achievement("新的商户: 戈尔迪", "你已经解锁了牧场，戈尔迪在这里出售野兽和相关物品。", pic="portrait.webp", pic_path="NPC/Goldie/", target="merchant goldie"),
                         Achievement("新的商户: 斯特拉", "斯特拉出售种马和相关物品，如果你敢接近她。", pic="portrait.webp", pic_path="NPC/Stella/", target="merchant stella"),
-                        Achievement("新的商户: Willow", "Willows出售她为生计而捕获的怪物，以及相关物品。", pic="portrait.webp", pic_path="NPC/Willow/", target="merchant willow"),
+                        Achievement("新的商户: 薇洛丝", "薇洛丝出售她为生计而捕获的怪物，以及相关物品。", pic="portrait.webp", pic_path="NPC/Willow/", target="merchant willow"),
                         Achievement("新的商户: 吉娜", "科学家吉娜销售机械小玩意，并研究飞行。", pic="portrait.webp", pic_path="NPC/Gina/", target="merchant gina"),
                         Achievement("新的商户: 里奇", "里奇出售她在植物园里采摘的鲜花。", pic="portrait.webp", pic_path="NPC/Riche/", target="merchant riche"),
                         Achievement("新的商户: 卡特林", "卡特林卖小饰品，脾气很暴躁。", pic="portrait.webp", pic_path="NPC/Katryn/", target="merchant katryn"),

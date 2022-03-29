@@ -66,7 +66,7 @@ label slavemarket:
     if game.has_active_mod("Headhunter Mod"):
         if not slavemarket_firstvisit and slavemarket_firstvisit3:
             $ slavemarket_firstvisit3 = False
-            if renpy.call_screen("yes_no", "Go and see what all this hoopla about contracts is about?"):
+            if renpy.call_screen("yes_no", "去看看这些关于合同的计划是怎么回事？"):
                 jump headhunter_main
 ############ Jman - Headhunter Mod End ########
 
@@ -99,7 +99,7 @@ label slavemarket_loop:
                     gio "Hmm, that hunter lass might be onto something. The cheap low-rank slaves they sell to newcomers like you aren't particularly obedient."
                     gio "And it's hard to make a proper slut out of one of these tarts. So your brothel might be lacking whores..."
                     gio "... unless you go take up that pirate gal's offer. That little tease flashed us!"
-                    if renpy.call_screen("yes_no", "Skip buying a slave and come back later to try out the headhunting discount?"):
+                    if renpy.call_screen("yes_no", "跳过购买奴隶，以后再来试试猎头的折扣？"):
                         call hide_everything() from _call_hide_everything_49
                         $ game.headhunter_button_enabled = 1
                         $ slavemarket_firstvisit = False
@@ -130,7 +130,7 @@ label slavemarket_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy [girl.fullname] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你真的想用 [price] 金币购买[girl.fullname]吗？")
 
                 else:
                     you "Shoot, I don't have enough gold..."
@@ -348,9 +348,9 @@ label visit_location():
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("Cimerian文物")[0], msg="你收到了一个罕见的 %s.", use_article=False) from _call_receive_item
+                            call receive_item(search_items("Cimerian文物")[0], msg="你收到了一个罕见的 %s 。", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("Cimerian废料")[0], msg="你收到一个 %s.", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("Cimerian废料")[0], msg="你收到一个 %s 。", use_article=False) from _call_receive_item_1
 
                     else:
                         $ MC.gain_resource(number=dice(3), random=True)
@@ -444,7 +444,7 @@ label brothel_loop():
                     if pop.weight > 0:
                         break
                 else:
-                    if not renpy.call_screen("yes_no", "Warning! All customer populations have been set to zero. If that happens, only {b}beggars{/b} will come tonight. Are you sure you want to proceed?"):
+                    if not renpy.call_screen("yes_no", "警告！所有客户的人口都被设置为零。如果发生这种情况，今晚只有{b}乞丐{/b}会来。你确定你要继续吗？"):
                         renpy.jump("brothel_loop")
 
             hide screen brothel_options
@@ -504,23 +504,23 @@ label farm_loop():
         gizel upset "[MC.name]! One of your good-for-nothing sluts has hurt my babies! If you don't act quickly, I'm going to have to retire it."
 
         python:
-            menu_list = [(str(len(hurt)) + " minion" + plural(len(hurt)) + " are hurt. What do you want to do?", None)]
+            menu_list = [(str(len(hurt)) + " 个奴仆都受伤了。你打算怎么办？", None)]
 
-            if MC.get_items(target="minion", name="Healing powder"):
+            if MC.get_items(target="minion", name="愈合粉"):
                 for mn in hurt:
-                    menu_list.append(("Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn)))
+                    menu_list.append(("对[mn.name] (等级 " + str(mn.level) + " 的 " + farm_related_dict[mn.type] + ") 使用愈合粉", ("heal", mn)))
 
             for mn in hurt:
-                menu_list.append(("Retire [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("retire", mn)))
+                menu_list.append(("除名 [mn.name] (等级 " + str(mn.level) + " 的 " + farm_related_dict[mn.type] + ")", ("retire", mn)))
 
-            menu_list.append(("Ignore it for now", ("ignore", None)))
+            menu_list.append(("暂时不考虑这个问题", ("ignore", None)))
 
         $ res, mn = menu(menu_list)
 
         if res == "heal":
             gizel normal "Fine, let's use this to get the poor bastard back on its feet. Or tentacles. Whatever."
 
-            $ MC.use_item(MC.get_items(target="minion", name="Healing powder")[0])
+            $ MC.use_item(MC.get_items(target="minion", name="愈合粉")[0])
             $ mn.heal()
 
             play sound s_spell
@@ -574,9 +574,9 @@ label farm_loop():
 
         elif res == "change_name":
             $ girl = obj
-            $ girl.name = renpy.input("Do you want to change her first name?", default = girl.name)
+            $ girl.name = renpy.input("你想改变她的名字吗？", default = girl.name)
             $ girl.char.name = girl.name
-            $ girl.lastname = renpy.input("Do you want to change her last name?", default = girl.lastname)
+            $ girl.lastname = renpy.input("你想改变她的姓氏吗？", default = girl.lastname)
 
             menu:
                 "Do you want to invert her first and last name?"
@@ -609,13 +609,13 @@ label farm_loop():
                 show screen dark_filter
 
                 python:
-                    menu_list = [("Which item do you wish to use?", None)]
+                    menu_list = [("你希望使用哪项物品？", None)]
 
                     # Healing powder
 
-                    if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
+                    if MC.get_items(target="minion", name="愈合粉") and farm.get_hurt_minions():
                         for mn in farm.get_hurt_minions():
-                            menu_list.append(["Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn, MC.get_items(target="minion", name="Healing powder")[0])])
+                            menu_list.append(["对[mn.name] (等级 " + str(mn.level) + " 的 " + farm_related_dict[mn.type] + ") 使用愈合粉", ("heal", mn, MC.get_items(target="minion", name="愈合粉")[0])])
 
                     # XP items
 
@@ -623,27 +623,27 @@ label farm_loop():
                         minions = farm.get_minions("stallion")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="stallion xp"):
                             xp_bonus = it.get_effect("gain", "stallion xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per stallion", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 种马经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="beast xp") and farm.get_minions("beast"):
                         minions = farm.get_minions("beast")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="beast xp"):
                             xp_bonus = it.get_effect("gain", "beast xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per beast", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 野兽经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="monster xp") and farm.get_minions("monster"):
                         minions = farm.get_minions("monster")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="monster xp"):
                             xp_bonus = it.get_effect("gain", "monster xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per monster", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 怪物经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="machine xp") and farm.get_minions("machine"):
                         minions = farm.get_minions("machine")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="machine xp"):
                             xp_bonus = it.get_effect("gain", "machine xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per machine", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 机器经验", ("gain xp", minions, it, xp_bonus)])
 
-                    menu_list.append(["Forget it", ("back")])
+                    menu_list.append(["算了", ("back")])
 
                 $ res = menu(menu_list)
 
@@ -667,7 +667,7 @@ label farm_loop():
 
                     play sound s_spell
 
-                    $ renpy.say("", "Your " + minions[0].type + plural(len(minions)) + " earned XP.")
+                    $ renpy.say("", "你的 " + farm_related_dict[minions[0].type] + " 获得经验。")
 
                     $ MC.use_item(it)
 
@@ -681,7 +681,7 @@ label farm_loop():
 
                     while levelup:
                         $ mn = levelup.pop()
-                        $ renpy.say(gizel, mn.name + " is now a level " + str(mn.level) + " " + mn.type + ".")
+                        $ renpy.say(gizel, mn.name + " 现在是等级 " + str(mn.level) + " 的 " + farm_related_dict[mn.type] + "。")
 
                 hide screen dark_filter
 
@@ -811,13 +811,13 @@ label farm_loop():
 
             if not MC.can_sell(slavemarket, girl):
                 gizel upset "You can't sell that girl again! The slavemarket won't allow it!"
-                if renpy.call_screen("yes_no", "The slavemarket will not buy her back. Do you want to dismiss [girl.fullname] for no money?"):
+                if renpy.call_screen("yes_no", "奴隶市场不会花钱购买她。你真的想不收取一分钱就出售[girl.fullname]吗？"):
                     $ farm.girls.remove(girl)
 
             else:
                 $ price = girl.get_price("sell")
 
-                $ result = renpy.call_screen("yes_no", "Do you really want to sell [girl.fullname] for [price] gold?")
+                $ result = renpy.call_screen("yes_no", "你真的想以 [price] 金币出售[girl.fullname]吗？")
 
                 if result == True:
                     python:
@@ -841,7 +841,7 @@ label farm_loop():
 
             $ girl = obj
 
-            if renpy.call_screen("yes_no", "Do you really want to dismiss [girl.fullname]? She will recover her freedom and leave the city for good."):
+            if renpy.call_screen("yes_no", "你真的不想要[girl.fullname]了吗？她将恢复自由，永远离开这个城市。"):
 
                 python:
                     if girl.items: # Unequip all items before dismiss
@@ -849,7 +849,7 @@ label farm_loop():
                             if it.equipped:
                                 girl.unequip(it)
                             MC.take(girl, it)
-                            renpy.notify("\n" + girl.name + " has lost " + it.name)
+                            renpy.notify("\n" + girl.name + " 失去了 " + it.name)
                             renpy.pause(0.5)
 
                     farm.girls.remove(girl)
@@ -948,7 +948,7 @@ label main_wait_for_input:
 
         if result:
             if result == "advance":
-                if renpy.call_screen("yes_no", "Do you really want to advance to the next chapter?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.\nIt will cost you {b}" + str(blist[game.chapter+1].cost) + " gold{/b}."):
+                if renpy.call_screen("yes_no", "你真的想推进到下一章吗？\n\n{size=-2}这将重置你所有的房间改造，但你将保留你的家具和装饰品。\n这将花费 {b}" + str(blist[game.chapter+1].cost) + " 金币{/b}。"):
                     call advance_to_chapter(game.chapter+1) from _call_advance_to_chapter_1
                     jump brothel
 
@@ -1127,9 +1127,9 @@ label girls_loop():
 
             $ girl = selected_girl
 
-            $ girl.name = renpy.input("Do you want to change her first name?", default = girl.name)
+            $ girl.name = renpy.input("你想改变她的名字吗？", default = girl.name)
             $ girl.char.name = girl.name
-            $ girl.lastname = renpy.input("Do you want to change her last name?", default = girl.lastname)
+            $ girl.lastname = renpy.input("你想改变她的姓氏吗？", default = girl.lastname)
 
             menu:
                 "Do you want to invert her first and last name?"
@@ -1151,11 +1151,11 @@ label girls_loop():
 
             if girl.away or girl.hurt > 0 or girl.exhausted:
                 if girl.away:
-                    $ renpy.notify("\n%s is away and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("\n%s正在外出，暂时不能分配新的工作。" % girl.name)
                 elif girl.hurt > 0:
-                    $ renpy.notify("\n%s is hurt and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("\n%s受伤了，暂时不能被分配新的工作。" % girl.name)
                 elif girl.exhausted:
-                    $ renpy.notify("\n%s is exhausted and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("\n%s筋疲力尽，暂时不能分配新的工作。" % girl.name)
                 jump girls_loop
 
             $ exit = False
@@ -1383,13 +1383,13 @@ label girls_loop():
 
             if not MC.can_sell(slavemarket, girl):
                 slavegirl1 "You already sold us this girl once. You can't change your mind all the time. We're busy, you know."
-                if renpy.call_screen("yes_no", "The slavemarket will not buy her back. Do you want to dismiss [girl.fullname] for no money?"):
+                if renpy.call_screen("yes_no", "奴隶市场不会花钱购买她。你真的想不收取一分钱就出售[girl.fullname]吗？"):
                     $ MC.girls.remove(girl)
 
             else:
                 $ price = girl.get_price("sell")
 
-                $ result = renpy.call_screen("yes_no", "Do you really want to sell [girl.fullname] for [price] gold?")
+                $ result = renpy.call_screen("yes_no", "你真的想以 [price] 金币出售[girl.fullname]吗？")
 
                 if result == True:
 
@@ -1414,7 +1414,7 @@ label girls_loop():
 
             $ girl = selected_girl
 
-            if renpy.call_screen("yes_no", "Do you really want to dismiss [girl.fullname]? She will recover her freedom and leave the city for good."):
+            if renpy.call_screen("yes_no", "你真的不想要[girl.fullname]了吗？她将恢复自由，永远离开这个城市。"):
 
                 python:
                     if girl.items: # Unequip all items before dismiss
@@ -1422,7 +1422,7 @@ label girls_loop():
                             if it.equipped:
                                 girl.unequip(it)
                             MC.take(girl, it)
-                            renpy.notify("\n" + girl.name + " has lost " + it.name)
+                            renpy.notify("\n" + girl.name + " 失去了 " + it.name)
                             renpy.pause(0.5)
 
                     MC.girls.remove(girl)
@@ -1542,7 +1542,7 @@ label girls_loop():
 
             if MC.has_gold(cost):
 
-                $ result = renpy.call_screen("yes_no", "Do you really want to rank up [girl.fullname] for [cost] gold?")
+                $ result = renpy.call_screen("yes_no", "你想花费 [cost] 金币为[girl.fullname]提升阶级吗？")
 
                 if result == True:
                     $ girl.rank_up()
@@ -1607,7 +1607,7 @@ label perks(): # girl is passed by the previous label (girls)
         $ result, obj = ui.interact() # bj is an archetype or perk
 
         if result == "unlock":
-            if renpy.call_screen("yes_no", "Are you sure you want to unlock {b}" + obj + "{/b} zodiac for 2 perk points?"):
+            if renpy.call_screen("yes_no", "你确定要花费2点特质点解锁{b}" + archetype_name_dict[obj] + "{/b}特质分支？"):
 
                 play sound s_spell
                 $ girl.unlock_archetype(obj)
@@ -1622,7 +1622,7 @@ label perks(): # girl is passed by the previous label (girls)
 
         elif result == "commit":
             if new_perks:
-                if renpy.call_screen("yes_no", "Are you sure you want to buy {b}" + str(len(new_perks)) + " new perk" + plural(len(new_perks)) + "{/b}?"):
+                if renpy.call_screen("yes_no", "你确定要解锁 {b}" + str(len(new_perks)) + " 个新的特质吗{/b}?"):
                     play sound event_sounds["perk " + str(new_perks[-1].level)]
 
                     python:
@@ -1741,7 +1741,7 @@ label shop_loop:
 
         if not MC.can_sell(shop, it):
             shopgirl "You already sold this to me once! I'm sorry, but I'm not a pawn shop. You keep it now."
-            if renpy.call_screen("yes_no", "The merchant will not buy this back. Do you want to get rid of [it.name] for no money?"):
+            if renpy.call_screen("yes_no", "商家不会花钱买回。你想不收取一分钱就去掉[it.name]吗？"):
                 $ MC.items.remove(it)
                 hide screen item_profile
 
@@ -1768,7 +1768,7 @@ label shop_loop:
 
     elif act == "restock":
         if it:
-            if renpy.call_screen("yes_no", "Are you sure you want to restock the shop for %s gold?" % str(shop_restock_cost["shop"][game.chapter])):
+            if renpy.call_screen("yes_no", "你确定要用 %s 金币来刷新商店吗？" % str(shop_restock_cost["shop"][game.chapter])):
                 $ MC.gold -= shop_restock_cost["shop"][game.chapter]
                 play sound s_gold
                 $ shop.restock()
@@ -1783,7 +1783,7 @@ label shop_loop:
         if it:
             $ chapter, cost, upgrade = shop_upgrades[shop.upgrade_level + 1]
 
-            if renpy.call_screen("yes_no", "Are you sure you want to upgrade this shop for %s %s?" % (str(cost[1]), cost[0])):
+            if renpy.call_screen("yes_no", "你确定要为商店升级%s %s吗？" % (str(cost[1]), cost[0])):
                 $ shop.upgrade_shop(cost, upgrade)
 
                 $ renpy.say(shopgirl, shopgirl_comment[cost[0]])
@@ -1874,7 +1874,7 @@ label visit_merchant_loop():
                     elif merc in minion_merchants:
                         $ restock_cost = shop_restock_cost["minion merchants"][game.chapter]
 
-                    if renpy.call_screen("yes_no", "Are you sure you want to restock this store for %s gold?" % restock_cost):
+                    if renpy.call_screen("yes_no", "你确定要用 %s 金币刷新商店吗？" % restock_cost):
                         $ MC.gold -= restock_cost
                         play sound s_gold
                         $ merc.restock()
@@ -1888,7 +1888,7 @@ label visit_merchant_loop():
             elif act == "sell":
                 if not MC.can_sell(merc, it):
                     merc.char "You already sold this to me once! I'm sorry, but I'm not a pawn shop. You keep it now."
-                    if renpy.call_screen("yes_no", "The merchant will not buy this back. Do you want to get rid of [it.name] for no money?"):
+                    if renpy.call_screen("yes_no", "商家不会花钱买回。你想不收取一分钱就去掉[it.name]吗？"):
                         $ MC.items.remove(it)
                         hide screen item_profile
 
@@ -2018,7 +2018,7 @@ label main_character:
 
         if result == "change_name":
 
-            $ MC.name = renpy.input("Do you want to change your name?", default = MC.name, length = 20)
+            $ MC.name = renpy.input("你想改变自己的名字吗？", default = MC.name, length = 20)
 
             $ renpy.block_rollback()
 
@@ -2185,9 +2185,9 @@ label postings:
 
         elif result == "commit":
             if selected_quest.type == "class":
-                $ t = "Are you sure you want to register " + selected_girl.name + " for this class? It will cost you " + str(selected_quest.gold) + " gold. She will be away for " + str(selected_quest.duration) + " days."
+                $ t = "你确定要派" + selected_girl.name + "学习这个课程吗？将花费你 " + str(selected_quest.gold) + " 金币并且离开 " + str(selected_quest.duration) + " 天。"
             else:
-                $ t = "Are you sure you want to send " + selected_girl.name + " on this assignment? She will be away for " + str(selected_quest.duration) + " days."
+                $ t = "你确定要派" + selected_girl.name + "执行这项任务吗？她将离开 " + str(selected_quest.duration) + " 天。"
 
             $ r = renpy.call_screen("yes_no", t)
 
