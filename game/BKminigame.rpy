@@ -213,16 +213,16 @@ label ninja_game(ninja): # Where ninja is an NPC object
     call run_ninja_game(njgame) from _call_run_ninja_game
 
     if njgame.special:
-        $ centered(event_color["bad"] % "\n\n{b}INTERCEPT FAILED...{/b}")
+        $ centered(event_color["bad"] % "\n\n{b}拦截失败...{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept
     elif _return == "guest":
-        $ centered(event_color["good"] % "\n\n{b}SPECIAL ENCOUNTER!{/b}")
+        $ centered(event_color["good"] % "\n\n{b}特殊遭遇！{/b}")
         call expression ("ninja_" + guest) from _call_expression_7
     elif _return == "ninja":
-        $ centered(event_color["good"] % "\n\n{b}INTERCEPT!{/b}")
+        $ centered(event_color["good"] % "\n\n{b}成功拦截！{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept_1
     else:
-        $ centered(event_color["bad"] % "\n\n{b}SHE GOT AWAY!{/b}")
+        $ centered(event_color["bad"] % "\n\n{b}她逃走了！{/b}")
 
     hide screen score
 
@@ -259,9 +259,9 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
     $ stage_name = str(ninja.flags["hunt stage"] + 1)
 
     if njgame.special:
-        $ stage_name += "*LOCKED*"
+        $ stage_name += "*锁定*"
 
-    $ centered(event_color["special"] % "\n\n{b}Ninja hunt started\nROUND " + stage_name + "{/b}")
+    $ centered(event_color["special"] % "\n\n{b}忍者狩猎开始\n回合 " + stage_name + "{/b}")
 
     if MC.has_item("makibishi"):
         if not njgame.special:

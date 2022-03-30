@@ -993,7 +993,7 @@ label renza_onsen2:
 
     sill "Ah, Master! Aaaaah!!!"
 
-    $ MC.rand_say(("gd: I'm not stopping until you come! This is your punishment!", "ne: This is for your Master's good! You better please me!", "ev: You stupid bitch slave! I'll teach you some manners!"))
+    $ MC.rand_say(("gd: 你不来，我是不会罢休的！这是对你的惩罚！", "ne: 这是为你的主人好！你最好让我满意！", "ev: 你这个愚蠢的婊子奴隶！我会教你如何礼貌待人！"))
 
     play sound s_orgasm_young
 
@@ -3574,7 +3574,7 @@ label farm_exorcism_attempt():
 
     you "I promise, ok?"
 
-    $ MC.rand_say(("gd: I'll come back to save you.", "ev: I {i}{b}want{/b}{/i} that farm even more, now.", "ne: A deal is a deal. I'll help."))
+    $ MC.rand_say(("gd: 我会回来救你的。", "ev: 我{i}{b}想要{/b}{/i}那个农场，现在更想要了。", "ne: 交易就是交易。我来帮忙。"))
 
     goldie "Really?"
 
@@ -5434,7 +5434,7 @@ label stella_invitation():
 
     "Strange glyphs are written on the envelope. There is no recognizable name or address."
 
-    $ MC.rand_say(("gd: I really shouldn't pry, but if I don't open it, I won't be able to bring it to its rightful recipient.", "ev: Great! Hopefully, I can use this to blackmail somebody.", "ne: Well, if someone is going to open this and make away with the content, it might as well be me..."))
+    $ MC.rand_say(("gd: 我真的不应该窥探，但如果我不打开它，我就不能把它带给它的合法收件人。", "ev: 很好！希望我可以用这个来勒索某人。", "ne: 好吧，如果有人要打开这个并带走内容，那也可能是我......"))
 
     "Slicing the envelope open with your dagger, you are somewhat disappointed to find only a small piece of paper tucked inside, alongside a small charm amulet. It's the cheap kind you can find for a denar a dozen on Pilgrim Road."
 
@@ -5442,7 +5442,7 @@ label stella_invitation():
 
     play sound s_dress
 
-    call screen letter(header = "Burn after reading", message = "The merchandise is brought to the guild quarter on the first Tuesday of every month. Look for a private club called 'Mania', and show them the amulet.\n\nDon't expect any more intel from me, this is getting too dangerous. My cover is nearly blown, I'm out.",
+    call screen letter(header = "阅后即焚", message = "每个月的第一个星期二，商品会被带到公会区。寻找一个名为“狂热”的私人俱乐部，并向他们展示护身符。\n\n别指望我再提供什么情报了，这太危险了。我的身份几乎暴露了，我不干了。",
                           signature = "DT")
 
     you "How mysterious... Merchandise? A private club? A cheesy charm? Who wrote this..."
@@ -6668,7 +6668,7 @@ label farm_meet_willow():
 
     show bg inner_sewers at top with Pixellate(2.0, 5)
 
-    $ MC.rand_say(("ev: It's all Sill's damn fault!", "ne: Serves me right for trying to help.", "gd: Sill can be so clumsy sometimes..."))
+    $ MC.rand_say(("ev: 这都是那该死的希露的错！", "ne: 我想帮助别人，这是我的权利。", "gd: 希露有时会很笨拙......"))
 
     "After you came down into the sewers, you couldn't find the armlet close by after all."
 
@@ -7166,7 +7166,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
         play sound s_dodge
         hide willow with easeoutleft
 
-        $ MC.rand_say(["Again? Really?", "Oh no, not again...", "Again! What kind of monster hunter {i}are{/i} you?!?"])
+        $ MC.rand_say(["又来了？真的？", "哦，不，又来了...", "又来！你到底是什么样的怪物猎人？！？"])
 
     "Effortlessly, the monster lifts Willow in the air, with her head upside down and her skirt overturned. You catch a good view of her panties."
 
@@ -10544,8 +10544,8 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nIt's been a while since you last visited me. I'm disappointed. After all, you and I are best friends, aren't we?\nDon't {b}disappoint{/b} me. That makes me angry.\nWhen I'm angry, I break things. And people.\nPlease visit me soon, I have, uh, something urgent to tell you.\n\nCome! It will be fun!",
-                          signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}♥")
+        call screen letter(header = "{font=[gui.yishu]}紧急邀约{/font}", message = "亲爱的" + MC.name + "，\n\n你已经有一段时间没来看我了。我很难过，明明我们是最好的朋友的说。\n不要让我{b}失望{/b}。不然我生气了。\n惹我生气的后果可是很严重的，我会控制不住乱砸东西东西或者...人。\n所以请尽快来看我，我有...呃...有重要的事情要告诉你。\n\n来吧！会很有趣的!",
+                          signature = "夜色中的情人 萨特拉{font=[gui.fuhao]}{size=28}{i} ♥ {/i}{/font}")
 
         you "Oh... Satella is summoning me to Shalia's temple... It must be important."
 
@@ -10574,8 +10574,8 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nI have to see you urgently. In fact, you should have been here yesterday.\nWhere WERE you yesterday???\nDon't be a bad friend. Bad friends die young.\nCome visit me.",
-                          signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}♥")
+        call screen letter(header = "{font=[gui.yishu]}紧急邀约{/font}", message = "亲爱的" + MC.name + ",\n\n我有急事要见你。事实上，你昨天就应该来的。\n昨天你在哪里？？？\n要珍惜我们的友谊。坏朋友死得快哟。\n来看我吧。",
+                          signature = "夜色中的情人 萨特拉{font=[gui.fuhao]}{size=28}{i} ♥ {/i}{/font}")
 
         you "I've got a bad feeling about this."
 
@@ -11200,7 +11200,7 @@ label satella_game(game_type="the guessing game"):
 
         if r <= 4:
 
-            $ renpy.say("", rand_choice(("Reaching in the dark, you grab a handful of hair. It's awfully thick and coarse.", "Reaching in the dark, your hand meets a viscous, moist surface. It feels like frog-skin. An awfully large frog.", "Reaching in the dark, you grab something that feels like a large horn. Or is that a tooth?")))
+            $ renpy.say("", rand_choice(("在黑暗中伸手，你抓起一把头发。它非常厚实和粗大。", "在黑暗中伸手，你的手遇到了一个粘稠、湿润的表面。感觉就像青蛙的皮肤。一只非常大的青蛙。", "在黑暗中伸手，你抓住了一个感觉像大角的东西。或者是一颗牙齿？")))
 
             you "Sat... Satella?"
 
@@ -11342,18 +11342,18 @@ label satella_game(game_type="the guessing game"):
                         extend "\n{i}[answers]{/i}"
 
                         "Is the total above...":
-                            $ r = renpy.input("Is the number above...", default="7")
+                            $ r = renpy.input("Is the total above...", default="7")
 
                             python:
                                 try:
                                     r = int(r)
 
                                     if r < 2 or r > 12:
-                                        renpy.say("", "Please choose a number between 2 and 12.")
+                                        renpy.say("", "请在2到12之间选择一个数字。")
                                         renpy.jump('satella_game_guess_loop')
 
                                 except:
-                                    renpy.say("", "Please choose a number between 2 and 12.")
+                                    renpy.say("", "请在2到12之间选择一个数字。")
                                     renpy.jump("satella_game_guess_loop")
 
                             if d1+d2 > r:
@@ -11375,11 +11375,11 @@ label satella_game(game_type="the guessing game"):
                                     r = int(r)
 
                                     if r < 2 or r > 12:
-                                        renpy.say("", "Please choose a number between 2 and 12.")
+                                        renpy.say("", "请在2到12之间选择一个数字。")
                                         renpy.jump("satella_game_guess_loop")
 
                                 except:
-                                    renpy.say("", "Please choose a number between 2 and 12.")
+                                    renpy.say("", "请在2到12之间选择一个数字。")
                                     renpy.jump("satella_game_guess_loop")
 
                             if d1+d2 < r:
@@ -11449,11 +11449,11 @@ label satella_game(game_type="the guessing game"):
                         r = int(r)
 
                         if r < 2 or r > 12:
-                            renpy.say("", "Please choose a number between 2 and 12.")
+                            renpy.say("", "请在2到12之间选择一个数字。")
                             r = 0
 
                     except:
-                        renpy.say("", "Please choose a number between 2 and 12.")
+                        renpy.say("", "请在2到12之间选择一个数字。")
                         r = 0
 
             if r == (d1 + d2):
@@ -15359,7 +15359,7 @@ label meet_carpenter():
 
     carpenter "He made me saw planks all day, and for what? It turns out he's making caskets for the prison guard. For the hangings!"
 
-    $ MC.say(["gd: That's terrible.", "ne: Well, that's unfortunate, but a job is a job, isn't it?", "ev: So what. What's your problem with that?"])
+    $ MC.say(["gd: 太可怕了。", "ne: 嗯，这很不幸，但工作就是工作，不是吗？", "ev: 那又怎样。你还有什么问题吗？"])
 
     carpenter "I won't be part of this! It's bad enough that the guard is harassing everyone and that justice is in the hands of corrupt puppets..."
 
@@ -16643,8 +16643,8 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "Love letter", message = "Dear Bill,\n\nI haven't slept or eaten since you've left me. I am so alone in this world.\nYou've left me with so many questions. Did you ever love me?\nI will be punished for what you did, but it's punishment I will gladly accept, because I love you. All I want is for you to give me a sign. I'll betray the Order if I have to. I'll steal for you if I must.\n\nDon't leave me, my love. I will do anything.",
-                          signature = "Yours forever, Bastia {font=[style.default.font]}{size=-18}")
+    call screen letter(header = "情书", message = "亲爱的比尔，\n\n自从你离开我之后，我就没有好好睡过觉也没有好好吃过东西。我感觉我在这个世界上是如此孤独。\n你给我留下了这么多问题。你曾经爱过我吗？\n我将为你的行为受到惩罚，但这是我乐意接受的惩罚，因为我爱你。我所想要的是你给我一个信号。如果有必要，我可以背叛教团。如果必须的话，我可以为你偷东西。\n\n不要离开我，我的爱人。我愿意做任何事。",
+                          signature = "永远属于你的，巴斯蒂亚 {font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
 

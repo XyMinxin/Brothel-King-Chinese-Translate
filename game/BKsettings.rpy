@@ -494,12 +494,12 @@ init -4 python:
                          ## 排序名称 ##
                          "Weapon" : "武器",
                          "weapon" : "武器",
-                         "Closing" : "防具",
-                         "closing" : "防具",
+                         "Clothing" : "防具",
+                         "clothing" : "防具",
                          "Trinket" : "饰品",
                          "trinket" : "饰品",
-                         "Consumalbe" : "消耗品",
-                         "consumalbe" : "消耗品",
+                         "Consumable" : "消耗品",
+                         "consumable" : "消耗品",
                          "Misc" : "杂项",
                          "misc" : "杂项",
 

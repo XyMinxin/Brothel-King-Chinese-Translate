@@ -1294,7 +1294,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             text "" size 2
 
-            text "主要技能" size 20 yalign 0.0 font "bk.ttf"
+            text "主要技能" size 20 yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             vbox:
                 spacing 0
@@ -1390,7 +1390,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                 # text "" size 6
 
             hbox spacing 14:
-                text "性爱技能" size 20 yalign 0.0 font "bk.ttf"
+                text "性爱技能" size 20 yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 for act in ("group", "bisexual"):
 
@@ -1511,7 +1511,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
 
             ## TRAITS LIST ##
-            textbutton "特质列表" text_font "bk.ttf" text_color c_white text_size 20 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+            textbutton "特质列表" text_font "bk.ttf" text_outlines [ (1, "#000", 1, 0) ] text_color c_white text_size 20 background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                 action NullAction()
                 if context != "free" or girl.MC_relationship_level >= 3:
                     hovered Show("trait_details", girl=girl)
@@ -1565,7 +1565,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             if context == "girls":
                 text "" size 2
-                text "保养费用" size 20 yalign 0.0 font "bk.ttf"
+                text "保养费用" size 20 yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 if girl.locked_upkeep:
                     text "她的保养费目前已被收回." size 14 italic True
@@ -1634,7 +1634,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
             elif context == "farm":
                 text "" size 2
-                text "保养费用" size 20 yalign 0.0 font "bk.ttf"
+                text "保养费用" size 20 yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 hbox:
                     spacing 2
@@ -2514,7 +2514,7 @@ screen perks(girl):
 
         has vbox spacing 10
 
-        text girl.fullname + "的特质树" color c_orange xalign 0.5
+        text girl.fullname + "的特质树" size 28 color c_orange xalign 0.5 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         hbox:
             for archetype in archetype_list:
@@ -2528,7 +2528,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(75, 75), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text archetype_name_dict[archetype] size 28 selected_outlines [ (2, "#fff", 0, 0) ] color c_darkgrey selected_color c_black font "bk.ttf"
+                        text archetype_name_dict[archetype] size 24 xalign 0.5 font "bk.ttf" selected_outlines [ (2, "#fff", 0, 0) ] color c_darkgrey selected_color c_black
 
 #        background girl.archetypes[selected_archetype].get_pic().get(800, 640)
         button background None xalign 0.5 yalign 0.5 xsize 800 yfill True ypadding 0 right_padding 0 right_margin 0 action NullAction():
@@ -2585,7 +2585,7 @@ screen perks(girl):
                         yfill True
 
                         if selected_perk:
-                            text selected_perk.name size 18 bold True yalign 0.0
+                            text selected_perk.name size 28 yalign 0.0 font "bk.ttf" outlines [ (2, "#000", 2, 0) ]
 
                             frame xpadding 0 xmargin 0 ypadding 0 ymargin 0 background None xsize int(0.25*config.screen_width) xfill True xalign 0.5 yalign 0.5:
                                 add selected_perk.get_pic().get(220, 220)
@@ -2602,9 +2602,9 @@ screen perks(girl):
 
                         else:
                             vbox spacing 10:
-                                text archetype_name_dict[selected_archetype] size 48 bold True yalign 0.0 font "bk.ttf"
+                                text archetype_name_dict[selected_archetype] size 38 yalign 0.0 font "bk.ttf" color c_white outlines [ (2, "#000", 2, 0) ] # bold True
                                 text archetype_description[selected_archetype] size 16 yalign 0.0
-                                text ""
+                                # text ""
 
                                 if not girl.archetypes[selected_archetype].unlocked:
                                     textbutton "解锁\n{size=-6}(花费2个特质点){/size}" xalign 0.5 xpadding 6 ypadding 6:
@@ -2645,7 +2645,7 @@ screen trait_details(girl):
 
             spacing 3
 
-            text girl.name + "的特质列表" xalign 0.5 color c_orange
+            text girl.name + "的特质列表" size 28 xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             text "" size 6
 
@@ -2665,7 +2665,7 @@ screen trait_details(girl):
 
             if girl.perks:
 
-                text girl.name + "的特质树" xalign 0.5 color c_orange
+                text girl.name + "的特质树" size 28 xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 text "" size 6
 
@@ -2690,7 +2690,7 @@ screen perk_details(girl):
 
             has vbox spacing 3
 
-            text girl.name + "已激活的特质树" xalign 0.5 color c_orange
+            text girl.name + "已激活的特质树" xalign 0.5 color c_orange size 28 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             text "" size 6
 
@@ -6646,7 +6646,7 @@ screen sex_details(girl):
 
         spacing 6
 
-        text girl.name + "的性偏好" xalign 0.5 color c_orange
+        text girl.name + "的性偏好" xalign 0.5 color c_orange  size 28 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         text "" size 6
 
@@ -6860,12 +6860,12 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         text ""
         text ""
 
-        text message size 20 font "bk.TTF" color c_black
+        text message size 20 font "bk.ttf" color c_black
 
         text ""
         text ""
 
-        text signature size 24 font "bk.TTF" xalign 1.0 color c_black
+        text signature size 24 font "bk.ttf" xalign 1.0 color c_black
 
 
 #### RESOURCES ####
@@ -7287,7 +7287,7 @@ screen free_girl_interact(girl):
 
         has vbox spacing 3
 
-        text "城市女孩互动" size 28 font "bk.ttf"
+        text "城市女孩互动" size 28 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         text "" size 4
 
@@ -7378,7 +7378,7 @@ screen girl_interact(girl, free=False):
 
         has vbox spacing 2
 
-        text "女孩互动" size 28 font "bk.ttf"
+        text "女孩互动" size 28 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 #        text "Every interaction costs 1 AP" size 14 italic True
         text "" size 4
 
