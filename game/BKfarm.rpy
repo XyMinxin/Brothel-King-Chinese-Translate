@@ -138,9 +138,9 @@ init -2 python:
 
             if self.girls:
                 if len(self.minions) <= 1:
-                    text1 = farm_description[self.minion_type + " intro"] % and_text([g.name for g in self.girls])
+                    text1 = farm_description[self.minion_type + " 介绍"] % and_text([g.name for g in self.girls])
                 else:
-                    text1 = farm_description[self.minion_type + " intro plural"] % (and_text([g.name for g in self.girls]), str(len(self.minions)))
+                    text1 = farm_description[self.minion_type + " 介绍"] % (and_text([g.name for g in self.girls]), str(len(self.minions)))
 
                 log.add_report(text1)
 
@@ -509,9 +509,9 @@ init -2 python:
                 descript += " "
 
                 if self.act == "group":
-                    descript += farm_description[self.act + " intro"] % (girl.fullname, str(len(self.minions)) + " " + rand_choice(minion_adjectives[min_type]) + " " + min_type)
+                    descript += farm_description[self.act + " 介绍"] % (girl.fullname, str(len(self.minions)) + " " + rand_choice(minion_adjectives[min_type]) + " " + min_type)
                 else:
-                    descript += farm_description[self.act + " intro"] % (girl.fullname, article(rand_choice(minion_adjectives[min_type])) + " " + min_type)
+                    descript += farm_description[self.act + " 介绍"] % (girl.fullname, article(rand_choice(minion_adjectives[min_type])) + " " + min_type)
 
                 ## Calculates roll modifier
 
@@ -700,7 +700,7 @@ init -2 python:
 
                 # Breaking text
 
-                text_changes += "\n\n" + self.act.capitalize() + ": "
+                text_changes += "\n\n" + girl_related_dict[self.act.capitalize()] + ": "
 
                 if brk > 0:
                     text_changes += "{color=[c_green]}"
@@ -845,7 +845,7 @@ init -2 python:
                     brk, new_pref = girl.raise_preference(act, status_change=True)
                     pic = girl.get_pic(act, not_tags=all_sex_acts+["group"])
                     descript += farm_description["holding " + self.holding + " good"] % girl.name
-                    text_changes += "\n\n" + act.capitalize() + ": "
+                    text_changes += "\n\n" + girl_related_dict[act.capitalize()] + ": "
 
                     if brk > 0:
                         text_changes += "{color=[c_green]}"

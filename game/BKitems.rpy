@@ -157,8 +157,8 @@ label init_items():
 
         bast_letter = Item("Bast的情书", "MC", type=IT_Story, pic="Scroll of etiquette.webp", template = False, rank = 1, rarity = "S", price = 0, effects = [], description = "Bast写给她以前的姘头的情书。包含有罪的信息。", hidden_effect = True)
 
-        extractor_items = {"extractor1" : Item(name="萃取器MkⅠ", target="MC", type=IT_Story, pic="extractor1.webp", template = False, rarity = "S", price = 5000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获木材、染料或皮革。在产地部署。"),
-                           "extractor2" : Item(name="萃取器MkⅡ", target="MC", type=IT_Story, pic="extractor2.webp", template = False, rarity = "S", price = 25000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获大理石、丝绸或矿石。在产地部署。"),
+        extractor_items = {"extractor1" : Item(name="萃取器MkI", target="MC", type=IT_Story, pic="extractor1.webp", template = False, rarity = "S", price = 5000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获木材、染料或皮革。在产地部署。"),
+                           "extractor2" : Item(name="萃取器MkII", target="MC", type=IT_Story, pic="extractor2.webp", template = False, rarity = "S", price = 25000, effects=[], description = "这个奇怪的蒸汽机可以让你自动收获大理石、丝绸或矿石。在产地部署。"),
                             }
 
         magic_notebook = Item(name = '魔法笔记本', target = 'MC', type = IT_Passive, pic = 'Magic notebook.webp', template = False, rank = 1, rarity = "S", price = 0, effects = (Effect('special', 'notebook', 1), ), description = "这个方便的笔记本将储存你所知道的关于你的女孩的所有信息。它能神奇地写下你所有的想法。等等，不要想{i}那个{/i}......太晚了。", hidden_effect = True)

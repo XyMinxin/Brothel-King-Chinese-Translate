@@ -287,7 +287,7 @@ label help_girls():
 
             sill "Just click on her {b}name{/b}, and choose a new one"
 
-            if sill_name == "Sill":
+            if sill_name == "希露":
                 sill sad "You can't rename me, though. I like my name!"
 
             you "Wait a minute. Didn't you say it was my privilege to rename you, as your owner?"
@@ -295,8 +295,8 @@ label help_girls():
             sill sad "B-But..."
 
             menu:
-                "Rename her 'Sill'" if sill_name != "Sill":
-                    $ sill_name = "Sill"
+                "Rename her 'Sill'" if sill_name != "希露":
+                    $ sill_name = "希露"
 
                     you "Go back to Sill."
 
@@ -1062,51 +1062,51 @@ label help_about_game:
 
         "DISCLAIMER":
 
-            $ text1 = """I do not own any of the images, music and sound effects used in this game. I wish I could credit the rightful authors for all of this,
-but most of it had been sitting on my hard drive for a long long time.\nIf you are the author of any of this material and you feel that this game is infringing on your rights in any way, please contact me on the [URL] forum and I'll drop it from the game.\n\n
-Please contact me at [URL] for feedback, criticism, bug reports, etc."""
+            $ text1 = """我不拥有本游戏中使用的任何图像、音乐和声音效果。我希望我可以把这些东西归功于合法的作者。
+但其中大部分已经在我的硬盘上放了很久了。\n如果你是这些材料的作者，而你觉得这个游戏以任何方式侵犯了你的权利，请在[URL]论坛上联系我，我会把它从游戏中删除。\n\n
+请在[URL]与我联系，以获得反馈、批评、错误报告等。"""
 
-            call screen OK_screen("DISCLAIMER", text1)
+            call screen OK_screen("免责声明", text1)
 
 
         "What is this game?":
 
-            $ text1 = """As a fan of the original Sim Brothel and some of the games it inspired, as well as games like Slave Maker, I have wanted for a long time to 'make it my own', and try my hand at coding.
+            $ text1 = """作为最初的《Sim Brothel》和它所激发的一些游戏的粉丝，以及像《Slave Maker》这样的游戏的粉丝，我很久以来一直想'做我自己的'，并尝试我的编码工作。
 
-I first encountered Ren'py when I made a small mod for the excellent Ashford Academy game, and since then I've been interested in the possibilities offered by Ren'py to a non-coder like myself. This is why I embarked on this project a couple of years ago, tinkering with Ren'py and Python until I could get it to a passably playable state.
+我第一次遇到Ren'py是为优秀的《Ashford Academy》游戏做了一个小MOD，从那时起，我就对Ren'py为像我这样的非编码者提供的可能性感兴趣。这就是为什么我在几年前开始了这个项目，对Ren'py和Python进行修补，直到我可以让它达到一个可玩的状态。
 
-I have now decided to release it to the world, to see if I can get some people interested in playing it and giving some feedback.
+我现在决定向全世界发布它，看看是否能让一些人有兴趣玩它并给予一些反馈。
 """
 
-            $ text2 = """My philosophy for this game was simple: make it the game I wanted to play. It had to have some story and flavor, a user-friendly UI, and quality art. I also wanted to reduce micro-management to an acceptable level. For this reason I took the liberty of withdrawing some traditional Sim Brothel features that I personally found annoying, such as juggling girls between many brothels.
+            $ text2 = """我对这个游戏的理念很简单：让它成为我想玩的游戏。它必须有一些故事和味道，一个用户友好的用户界面，以及高质量的艺术。我还想把微观管理减少到一个可接受的水平。出于这个原因，我擅自撤销了一些我个人认为很烦人的传统模拟妓院的功能，例如在许多妓院之间玩弄女孩。
 
-This game is not an open-ended project. I am just one guy and my goal is to deliver a finished game in a realistic time frame, complete with a full story and balanced mechanics. After that, lack of time and focus means that I won't be able to keep adding new features, but I'll gladly hand this over to the community.
+这个游戏不是一个开放式的项目。我只是一个人，我的目标是在一个现实的时间框架内提供一个完成的游戏，完成一个完整的故事和平衡的机制。在此之后，缺乏时间和注意力意味着我将无法继续增加新的功能，但我很乐意将此交给社区。
 """
 
-            $ text3 = """By the way, anyone feel free to tinker with the code and mod anything you like about this game, although a serious word of warning is in order: I am no programmer, I used this project as an opportunity to teach myself some coding with ren'py and python. Therefore, the game is poorly written, with A LOT of redundant and badly written code.
-If I could I'd start it all over and clean up everything, but I'm afraid I lack the time and energy to do it for the time being. So if you do have a look under the hood, then good luck, and, uh, sorry...
+            $ text3 = """顺便说一下，任何人都可以自由地修改代码，修改任何你喜欢的关于这个游戏的东西，虽然有一个严肃的警告。我不是程序员，我把这个项目作为一个机会来教自己使用ren'py和python进行编码。因此，这个游戏写得很差，有很多多余的和糟糕的代码。
+如果我可以的话，我会重新开始并清理一切，但恐怕我暂时没有时间和精力去做。所以，如果你真的看了下引擎盖，那么祝你好运，还有，呃，对不起......
 
-Please contact me at [URL] for feedback, criticism, bug reports, etc.
+请通过[URL]与我联系，以获得反馈、批评、错误报告等。
 """
 
-            call screen OK_screen("What is this game? (1/3)", text1)
-            call screen OK_screen("What is this game? (2/3)", text2)
-            call screen OK_screen("What is this game? (3/3)", text3)
+            call screen OK_screen("这是个什么游戏？ (1/3)", text1)
+            call screen OK_screen("这是个什么游戏？ (2/3)", text2)
+            call screen OK_screen("这是个什么游戏？ (3/3)", text3)
 
 
         "How can I help?":
 
-            $ text1 = """Play the game! By now I've spent so much time working on this game that I have genuinely zero idea if it's any good. If you spot a bug, a typo (I am not a native speaker), have some ideas to improve gameplay, game balance or fun, please speak up, this will help me enormously.
+            $ text1 = """玩这个游戏! 到现在为止，我已经花了很多时间在这个游戏上，所以我真的不知道它是否好。如果你发现了一个错误，一个错别字（我不是母语者），有一些改善游戏性、游戏平衡或乐趣的想法，请说出来，这将对我有很大帮助。
 
-Although I won't rework all game mechanics from scratch, I am expecting to make a lot of adjustments to make the game more balanced and fun, so all your suggestions will be read and welcome.
+虽然我不会从头开始重新设计所有的游戏机制，但我希望能做出很多调整，使游戏更加平衡和有趣，所以我们会阅读并欢迎你的所有建议。
 
-If you're an experienced programmer and want to look under the hood or tinker with the game, by all means, do it! (Keep in mind that I don't really know how to code, however, so expect to be horrified by what you see.)
+如果你是一个有经验的程序员，并想看看引擎盖下的东西或修补游戏，通过各种方式，做吧！（请记住，我不需要你的帮助。(请记住，我并不真正知道如何编码，所以希望你看到的东西会让你感到害怕。)
 
-Finally, if you have some art to recommend such as good hentai series or music that fit the flavor of the game, by all means, do so.
+最后，如果你有一些艺术作品可以推荐，比如好的hentai系列或符合游戏风味的音乐，通过各种方式，请这样做。
 
-Contact me at [URL] for feedback, criticism, bug reports, etc."""
+如有反馈意见、批评、错误报告等，请与我联系：[URL]。"""
 
-            call screen OK_screen("How can I help?", text1)
+            call screen OK_screen("我怎样才能提供帮助？", text1)
 
         "Special thanks":
             "Thanks to all the people on the [URL] forum for their support and all the good ideas, girl packs and mods they contributed."
@@ -1811,7 +1811,7 @@ label cheat_menu():
                         l = []
                         for g in game.free_girls:
                             l.append(g.fullname + " (id: " + str(g.id) + ")")
-                        renpy.say("", "Free girls: " + and_text(l))
+                        renpy.say("", "自由女孩: " + and_text(l))
 
                 "Back":
                     jump cheat_menu
@@ -1887,7 +1887,7 @@ label cheat_menu():
                         for tag in tag_dict.keys():
                             for tag2 in tag_dict.keys():
                                 if tag in tag2 and tag != tag2:
-                                    renpy.say("", "Warning: " + tag + " is in " + tag2 + ".")
+                                    renpy.say("", "警告: " + tag + " is in " + tag2 + ".")
 
         "Others":
 
@@ -1971,9 +1971,9 @@ label cheat_menu():
                         for g in game.goals:
 
                             if g.reached():
-                                text1 += "TRUE "
+                                text1 += "开启 "
                             else:
-                                text1 += "FALSE "
+                                text1 += "关闭 "
                     $ renpy.say("", text1)
 
 #                 "Reset girlpack ratings":
@@ -2139,9 +2139,9 @@ label check_missing_pictures(type):
 
             for tag in ["profile", "portrait"]:
                 if missing[tag]:
-                    renpy.say("", and_text(missing[tag]) + ": missing a {b}" + tag + "{/b} picture.")
+                    renpy.say("", and_text(missing[tag]) + ": 缺少 {b}" + tag + "{/b} 图片。")
                 elif len(template_girls) > 1:
-                    renpy.say("", "No girls are missing a " + tag + " picture.")
+                    renpy.say("", "没有女孩缺少 " + tag + " 图片。")
 
 
         "Step2: Checking job/sex pictures"
@@ -2157,9 +2157,9 @@ label check_missing_pictures(type):
 
             for tag in ["rest", "waitress", "dancer", "masseuse", "geisha", "service", "sex", "anal", "fetish"]:
                 if missing[tag]:
-                    renpy.say("", and_text(missing[tag]) + ": missing a regular {b}" + tag + "{/b} picture.")
+                    renpy.say("", and_text(missing[tag]) + ": 缺少常规 {b}" + tag + "{/b} 图片。")
                 elif len(template_girls) > 1:
-                    renpy.say("", "No girls are missing a " + tag + " picture.")
+                    renpy.say("", "没有女孩缺少 " + tag + " 图片。")
 
 
         "Step3: Checking naked pictures"
@@ -2173,9 +2173,9 @@ label check_missing_pictures(type):
 
             for tag in normal_tags:
                 if missing[tag]:
-                    renpy.say("", and_text(missing[tag]) + ": missing a {b}naked " + tag + "{/b} picture.")
+                    renpy.say("", and_text(missing[tag]) + ": 缺少{b}裸体 " + tag + "{/b} 图片。")
                 elif len(template_girls) > 1:
-                    renpy.say("", "No girls are missing a naked " + tag + " picture.")
+                    renpy.say("", "没有女孩缺少裸体 " + tag + " 图片。")
 
         "Step4: Checking group and bisexual sex pictures"
 
@@ -2189,9 +2189,9 @@ label check_missing_pictures(type):
             for tag in ["group", "bisexual"]:
                 for act in all_sex_acts:
                     if missing[(tag, act)]:
-                        renpy.say("", and_text(missing[tag]) + ": missing a {b}" + tag + " " + act + "{/b} picture.")
+                        renpy.say("", and_text(missing[tag]) + ": 缺少 {b}" + tag + " " + act + "{/b} 图片。")
                     elif len(template_girls) > 1:
-                        renpy.say("", "No girls are missing a " + tag + " " + act + " picture.")
+                        renpy.say("", "没有女孩缺少 " + tag + " " + act + " 图片。")
 
     elif type == "optional":
 
@@ -2208,9 +2208,9 @@ label check_missing_pictures(type):
             for tag in ["big", "beast", "monster", "toy"]:
                 for act in extended_sex_acts:
                     if missing[(tag, act)]:
-                        renpy.say("", and_text(missing[(tag, act)]) + ": missing a {b}" + tag + " " + act + "{/b} picture.")
+                        renpy.say("", and_text(missing[(tag, act)]) + ": 缺少 {b}" + tag + " " + act + "{/b} 图片。")
                     elif len(template_girls) > 1:
-                        renpy.say("", "No girls are missing a " + tag + " " + act + " picture.")
+                        renpy.say("", "没有女孩缺少 " + tag + " " + act + " 图片。")
 
         "Step2: Checking optional fixation pictures"
 
@@ -2225,9 +2225,9 @@ label check_missing_pictures(type):
                 for fix in fix_dict.values():
                     for act in fix.acts:
                         if missing[(fix, act)]:
-                            renpy.say("", and_text(missing[(fix, act)]) + ": missing a {b}" + act + " " + fix.name + "{/b} picture.")
+                            renpy.say("", and_text(missing[(fix, act)]) + ": 缺少 {b}" + act + " " + fix.name + "{/b} 图片")
                         elif len(template_girls) > 1:
-                            renpy.say("", "No girls are missing a " + act + " " + fix.name + " picture.")
+                            renpy.say("", "没有女孩缺少 " + act + " " + fix.name + " 图片。")
 
     "End of picture check."
 
@@ -2486,7 +2486,7 @@ label test_perks_launch:
                             else:
                                 c = Customer(endless_district)
                             cust_list.append(c)
-                            log.add_report(c.name + " came to the brothel. He wants to be attended to by a " + c.wants_entertainment + " and likes " + c.wants_sex_act + ".")
+                            log.add_report(c.name + "来到了妓院。他希望得到" + c.wants_entertainment + "的服务，并喜欢" + c.wants_sex_act + "。")
 
                         if girl.job in all_jobs:
                             event_list += perform(girl.job, (girl,), cust_list)

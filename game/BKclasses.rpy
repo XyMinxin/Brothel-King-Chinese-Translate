@@ -1691,13 +1691,13 @@ init -2 python:
             # Get random comment
 
             if self.base_rating == 0:
-                comment = rand_choice(["我来这里是为了什么。", "我根本就没有参加。", "多么可耻的事情. 我在这里浪费了很多时间。", "没有人听我的. 浪费时间..。"])
+                comment = rand_choice(["我来这里是为了什么。", "我根本就没有参加。", "多么可耻的事情。我在这里浪费了很多时间。", "没有人给我服务。简直是浪费时间..."])
 
                 if chg < 0:
                     comment = event_color["bad"] % comment
 
             elif self.base_rating == 8:
-                comment = event_color["special"] % rand_choice(["我度过了一生中最美好的时光。", "一切都是那么完美。", "有史以来最棒的夜晚! 我已经筋疲力尽了。", "这地方太神奇了. 五星级！"])
+                comment = event_color["special"] % rand_choice(["我度过了一生中最美好的时光。", "一切都是那么完美。", "有史以来最棒的夜晚! 我已经筋疲力尽了。", "这地方太神奇了。五星级！"])
 
             else:
                 pos_comments = []
@@ -1709,7 +1709,7 @@ init -2 python:
                     pos_comments += ["我得到一些娱乐。", "我在等待中得到了乐趣。", "一个女孩为我表演。"]
                     neg_comments.append("演艺人员可以做得更好一些。")
                 else:
-                    neg_comments += ["没有什么娱乐活动。", "我在等待时感到很无聊。", "没有娱乐. 烦人..。"]
+                    neg_comments += ["没有什么娱乐活动。", "我在等待时感到很无聊。", "没有娱乐。烦人..."]
 
                 if self.service_dict["laid"] >= 2:
                     pos_comments.append("性爱真的很赞。")
@@ -1717,7 +1717,7 @@ init -2 python:
                     pos_comments += ["我有了新欢。", "一个妓女照顾了我。", "我有%s。" % self.got_sex_act]
                     neg_comments.append("性服务可以做得更好一些。")
                 else:
-                    neg_comments += ["没有妓女! 这是什么样的青楼？", "我找不到一个妓女. 太令人沮丧了。", "不能上床，该死！", "妓女们在哪里？人呢？"]
+                    neg_comments += ["居然没有妓女！这是个屁的青楼？", "我找不到一个妓女。太令人沮丧了。", "不能上床，该死！", "妓女们在哪里？人呢？"]
 
                 if self.service_dict["both"] > 1:
                     pos_comments.append("我同时得到了性和娱乐。")
@@ -1780,24 +1780,24 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle":
-                return self.name + "%s进来青楼。%s希望得到一个{b}%s{/b}和喜欢{b}%s{/b}的人的招待。%s更喜欢%s的女孩。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment], girl_related_dict[self.wants_sex_act], pronoun, self.fetish.lower())
+                return self.name + "%s进来青楼。%s希望得到{b}%s{/b}和喜欢{b}%s{/b}的人的招待。%s更喜欢%s的女孩。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment], girl_related_dict[self.wants_sex_act], pronoun, self.fetish.lower())
 
             elif act in all_jobs:
-                desc += self.name + "%s进来青楼。\n%s希望得到一个{b}%s{/b}提供娱乐。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment])
+                desc += self.name + "%s进来青楼。\n%s希望得到{b}%s{/b}提供娱乐。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment])
                 if self.wants_entertainment != act:
-                    desc += "，但最终还是选择了一个{b}%s{/b}" % girl_related_dict[act]
+                    desc += "，但最终还是选择了{b}%s{/b}" % girl_related_dict[act]
                 return desc
 
             elif act in all_sex_acts:
                 desc += self.name + "来的是{b}%s{/b}" % girl_related_dict[self.wants_sex_act]
                 if self.wants_sex_act != act:
-                    desc += ", 但却选择了{b}%s{/b}" % girl_related_dict[act]
+                    desc += "，但却选择了{b}%s{/b}" % girl_related_dict[act]
                 if self.group:
-                    desc += (". %s加入了一个叫{color=" + c_purple + "}{b}%s的队伍{/b}{/color}") % (pronoun, self.group)
+                    desc += ("。%s加入了一个叫{color=" + c_purple + "}{b}%s的队伍{/b}{/color}") % (pronoun, self.group)
                 return desc + "。" + crz_text
 
             elif act == "end":
-                desc += self.name + "希望能得到一个{b}%s{/b}女孩的招待，" % girl_related_dict[self.wants_entertainment]
+                desc += self.name + "希望能得到{b}%s{/b}女孩的招待，" % girl_related_dict[self.wants_entertainment]
                 if self.got_entertainment:
                     desc += "最终得到{b}%s{/b}。" % girl_related_dict[self.got_entertainment]
                 else:
@@ -1854,13 +1854,13 @@ init -2 python:
                     girl_score += 250
 
                     if trait_dict[self.fetish].verb == "be":
-                        reason = ":cust:来寻找一个" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
+                        reason = ":cust:来寻找" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
                     elif trait_dict[self.fetish].verb == "be a":
-                        reason = ":cust:来寻找一个" + self.fetish + "。:Pron::verb:欣喜遇见了:girl:。"
+                        reason = ":cust:来寻找" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
                     elif trait_dict[self.fetish].verb == "have":
-                        reason = ":cust:来寻找一个有" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
+                        reason = ":cust:来寻找有" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
                     elif trait_dict[self.fetish].verb == "have a":
-                        reason = ":cust:来寻找一个有" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
+                        reason = ":cust:来寻找有" + self.fetish + "的女孩。:Pron::verb:欣喜遇见了:girl:。"
 
                 # 2. The customer looks for a particular stat
 
@@ -2427,7 +2427,7 @@ init -2 python:
 #                 if extra:
 #                     msg += " (including " + str_int(extra) + " from girl or brothel effects)"
 
-                msg += ".\n安全报告: 你青楼当前的危险等级是 " + self.estimate_threat_level(contrast=True) + ""
+                msg += "\n安全报告: 你青楼当前的危险等级是 " + self.estimate_threat_level(contrast=True) + ""
 
                 msg += "\n维修报告: " + maintenance_desc[self.get_cleanliness()]
 

@@ -186,7 +186,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "Mysterious letter", message = "Know, O prince, that between the years when the oceans drank Atlantis \n and the gleaming cities, and the years of the rise of the Sons of Xeros \n hither came the one who shall stand on fours under the rising sun \n the one who shall stand on two under the zenith light \n the one who shall stand on three under the many stars... \n Thou shalt name the one to succeed.")
+    call screen letter(header = "神秘信件", message = "王子啊，你要知道，在那几年之间亚特兰蒂斯沉没\n和金碧辉煌的城市。谢罗斯之子崛起的岁月\n在太阳升起时站在四边\n在众多星星下站在三边... \n 汝应命名为继任者。")
 
     play sound s_dress
 
@@ -216,7 +216,7 @@ label jobgirl_1():
 
     you "Ok, let's see then..."
 
-    $ answer = renpy.display_menu([("Give the answer for free", 1),("Ask for gold", 2),("Make fun of her... just a bit", 3)])
+    $ answer = renpy.display_menu([("免费提供答案", 1),("索要金币", 2),("取笑她...只是有点", 3)])
 
     $ renpy.block_rollback()
 
@@ -372,7 +372,7 @@ label jobgirl_1():
 
     "You look at her beautiful blue eyes, down to her pink lips and white skinned neck, until you stare at her cleavage. Can't avoid to look at her breasts since the feeling of them pushing on your chest is raising your heartbeat."
 
-    $ hug_action = renpy.display_menu([("What do you want to do now?", None), ("Be romantic", 1),("Comment on her cleavage", 2),("Wait for her reaction", 3)])
+    $ hug_action = renpy.display_menu([("你现在想怎么做？", None), ("浪漫一点", 1),("评论她的乳沟", 2),("等待她的反应", 3)])
 
     if hug_action == 1:
 

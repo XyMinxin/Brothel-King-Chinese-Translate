@@ -1411,9 +1411,9 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                     if not girls_firstvisit:
                                         action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
 
-                                    hovered (tt.Action("这将激活这个女孩的{b}" + girl_cat_name[act] + "{/b}行为. 至少还有一项常规性行为需要被激活."), Show("sex_details", girl=girl))
+                                    hovered (tt.Action("这将激活这个女孩的{b}" + girl_related_dict[act] + "{/b}行为. 至少还有一项常规性行为需要被激活."), Show("sex_details", girl=girl))
                                     unhovered Hide("sex_details")
-                                text girl_cat_name[act.capitalize()]: #preference_color[pref] % stat.name:
+                                text girl_related_dict[act.capitalize()]: #preference_color[pref] % stat.name:
                                     size 12
 
 
@@ -7799,7 +7799,7 @@ screen debug_pics(girl):
                         if act != "bisexual":
                             $ not_tags.append("bisexual")
 
-                        textbutton fix.name.capitalize() + " " + act.capitalize() text_size 14 action SetScreenVariable("pic", girl.get_fix_pic(act, fix, not_tags=not_tags))
+                        textbutton fix.name.capitalize() + " " + girl_related_dict[act.capitalize()] text_size 14 action SetScreenVariable("pic", girl.get_fix_pic(act, fix, not_tags=not_tags))
 
 
 #### GIRL MIXES ####

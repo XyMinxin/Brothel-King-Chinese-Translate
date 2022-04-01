@@ -306,7 +306,7 @@ label end_day:
 
         elif cleanliness == "dirty":
             turned_away = dice(3, district.rank)
-            maint_text = "\n你的青楼越来越脏了。Sill甚至还看见了一只老鼠"
+            maint_text = "\n你的青楼越来越脏了。希露甚至还看见了一只老鼠"
 
         elif cleanliness == "disgusting":
             turned_away = dice(6, district.rank)

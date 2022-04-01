@@ -3433,9 +3433,9 @@ init -2 python:
 
                 if act not in ("naked", "service"): # All sex acts other than service influence naked preference a little
                     change2 = self.change_preference("naked", 0.25*change)
-                    renpy.notify("突发事件 " + act + " (" + str(type) + ")，数值: " + str(change) + "\n露出突发事件 (" + str(type) + ")，数值: " + str(round_int(0.25*change)))
+                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值: " + str(change) + "\n露出突发事件 (" + str(type) + ")，数值: " + str(round_int(0.25*change)))
                 elif debug_mode:
-                    renpy.notify("突发事件 " + act + " (" + str(type) + ")，数值: " + str(change))
+                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值: " + str(change))
 
             else:
                 change = 0

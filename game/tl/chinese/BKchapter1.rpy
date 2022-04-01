@@ -11140,7 +11140,7 @@ translate chinese c1_trial_d728d641:
 translate chinese c1_trial_cab3289b:
 
     # judge "Let it be known that Captain Farah is hereby discharged, by order of the royal court. If no one objects, I therefore declare our faithful lieutenant Lydie the new captain of the city guard."
-    judge "请告知，根据皇家法院的命令，法拉队长已被解雇了。如果没有人反对，我宣布我们忠诚的莱迪中尉为市警卫队的新队长。"
+    judge "请告知，根据皇家法院的命令，法拉队长已被解雇了。如果没有人反对，我宣布我们忠诚的莉迪中尉为市警卫队的新队长。"
 
 # game/BKchapter1.rpy:5890
 translate chinese c1_trial_24c6a6d6:

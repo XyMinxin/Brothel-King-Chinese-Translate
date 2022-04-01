@@ -40,7 +40,7 @@ label city_rape:
 
     # Challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight it", "fight", selected_district.rank), ("Banish it", "control", selected_district.rank)], cancel=("Run away", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("攻击它", "fight", selected_district.rank), ("驱逐它", "control", selected_district.rank)], cancel=("逃跑", False))
 
     if chal == "fight":
         $ renpy.block_rollback()
@@ -457,7 +457,7 @@ label city_impress:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Show off", "stamina", 4), ("Flirt with the girls", "charm", 4)], cancel=("Ignore them", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("炫耀", "stamina", 4), ("与女孩调情", "charm", 4)], cancel=("无视他们", False))
     hide screen tool
 
     if chal == "stamina":
@@ -925,7 +925,7 @@ label city_slave:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Talk to her", "rally", 4), ("Hypnotize her", "control", 3)], cancel=("Not my concern", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("与她交谈", "rally", 4), ("催眠她", "control", 3)], cancel=("与我无关", False))
     hide screen tool
 
     if chal == "rally":
@@ -1565,7 +1565,7 @@ label city_gamble:
 
             # Pick challenge
             $ tt = show_tt("top_right")
-            $ chal = renpy.call_screen("challenge_menu", challenges=[("Call her out", "bluff", selected_district.rank + 2), ("Cheat", "cast", selected_district.rank+3)], cancel=("Cut your losses", False))
+            $ chal = renpy.call_screen("challenge_menu", challenges=[("继续", "bluff", selected_district.rank + 2), ("作弊", "cast", selected_district.rank+3)], cancel=("止损", False))
             hide screen tool
 
             if chal == "bluff":
@@ -1904,7 +1904,7 @@ label city_thief:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Run after the thief", "stamina", selected_district.rank + 3), ("Ensnare the thief", "cast", selected_district.rank + 3)], cancel=("Ignore her", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("追捕小偷", "stamina", selected_district.rank + 3), ("诱捕小偷", "cast", selected_district.rank + 3)], cancel=("不理她", False))
     hide screen tool
 
     if chal == "stamina":
@@ -2075,7 +2075,7 @@ label city_wrestle:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Face him", "force", selected_district.rank + 3), ("Use your wits", "bluff", selected_district.rank+2)], cancel=("Ignore him", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("面对他", "force", selected_district.rank + 3), ("运用你的智慧", "bluff", selected_district.rank+2)], cancel=("不理他", False))
     hide screen tool
 
     if chal == "force":
@@ -2326,7 +2326,7 @@ label city_cat:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Look for her cat", "charm", selected_district.rank + 3), ("Track it with a spell", "detect", selected_district.rank+3)], cancel=("Leave her alone", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("寻找她的猫", "charm", selected_district.rank + 3), ("用法术追踪它", "detect", selected_district.rank+3)], cancel=("留下她独自一人", False))
     hide screen tool
 
     if chal == "charm":
@@ -2862,7 +2862,7 @@ label city_secret:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Force the door open", "force", selected_district.rank + 3), ("Reveal with magic", "detect", selected_district.rank+3)], cancel=("Walk away", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("用蛮力打开", "force", selected_district.rank + 3), ("用魔法打开", "detect", selected_district.rank+3)], cancel=("离开", False))
     hide screen tool
 
 
@@ -3135,7 +3135,7 @@ label city_gypsy:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fix the wagon", "force", selected_district.rank + 3), ("Bring some customers", "rally", selected_district.rank+3)], cancel=("Decline to help", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("修复马车", "force", selected_district.rank + 3), ("带来一些客户", "rally", selected_district.rank+3)], cancel=("拒绝帮助", False))
     hide screen tool
 
     if chal == "force":
@@ -3504,7 +3504,7 @@ label city_rob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Defend yourself", "fight", girl_def), ("Charm her", "charm", girl_def)], cancel=("Give her some gold", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("保护自己", "fight", girl_def), ("魅惑她", "charm", girl_def)], cancel=("给她金币", False))
     hide screen tool
 
     if chal == "fight":
@@ -3927,7 +3927,7 @@ label city_ambush:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight back", "fight", ambush_attack), ("Cast a spell", "cast", ambush_attack+1)], cancel=("Run for your life", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("反击", "fight", ambush_attack), ("施展法术", "cast", ambush_attack+1)], cancel=("逃跑", False))
     hide screen tool
 
     if chal == "fight":
@@ -4291,7 +4291,7 @@ label city_mob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Cast a control spell", "control", mob_power), ("Make a speech", "rally", mob_power)], cancel=("Divert attention with gold", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("施加控制法术", "control", mob_power), ("发表演讲", "rally", mob_power)], cancel=("用金币转移注意力", False))
     hide screen tool
 
     if chal == "control":
@@ -4545,34 +4545,34 @@ label city_none:
 
     $ loc = selected_location.name.lower()
 
-    $ choices = ["You take a stroll through the %s. Nothing meaningful happens.", "After a pleasant walk around the %s, you decide it's time to head home.",
-                 "The %s is peaceful today. You have a pleasant walk.", "You spend time browsing the wares of some passing merchants near the %s. In the end, you don't find anything you like.",
-                 "You have a nice time sitting on a bench near the %s, watching people come and go and whistling at pretty girls. None pays you any attention, however.",
-                 "Walking around the %s, you see nothing special. A waste of time."]
+    $ choices = ["你在%s漫步。没有什么有意思的事情发生。", "在%s愉快地走了一圈后，你决定是时候回家了。",
+                 "今天的%s很平静。你散步很愉快。", "你花了些许时间，浏览了%s附近路过的商人兜售的商品。但是你没有找到喜欢的东西。",
+                 "你坐在%s附近的长椅上，看着人们来来往往，对着漂亮的女孩吹口哨，度过了一段美好的时光。然而没有什么人注意到你。",
+                 "在%s附近散步，你没有看到什么特别的东西。浪费时间。"]
 
     if MC.get_alignment() == "good":
 
-        $ choices.append("You walk among the good people of the %s. Everyone looks friendly on such a beautiful day.")
+        $ choices.append("你走在%s的人群中间。在这样一个美好的日子里，每个人看起来都很友好。")
 
     elif MC.get_alignment() == "neutral":
 
-        $ choices.append("Watching people come and go through the %s, you wonder how you could profit from their endeavors.")
+        $ choices.append("看着%s人来人往，你想知道如何能从他们的努力中获利。")
 
     elif MC.get_alignment() == "evil":
 
-        $ choices.append("The people of the %s are a wretched and vicious bunch, just like anywhere else. Elbowing your way through this crowd of losers, you despise them all.")
+        $ choices.append("%s是一群可悲的、恶毒的人，就像其他地方一样。你挤过这群失败者，你鄙视他们所有人。")
 
     if MC.god == "Shalia":
 
-        $ choices.append("In the nooks and shadows of the %s, you see discreet but unmistakable signs of Shalia worship. You nod approvingly.")
+        $ choices.append("在%s的角落和阴影中，你看到了谨慎但明确无误的崇拜莎莉娅的迹象。你赞许地点点头。")
 
     elif MC.god == "Arios":
 
-        $ choices.append("Looking at a group of pilgrims crossing the %s, you see some flamboyant, outspoken worshippers of Arios, wearing their faith on their sleeves. Others are more humble, and follow the idols in silent prayer. You wonder which ones are the true faithful.")
+        $ choices.append("看着一群游荡在%s的朝圣者，你看到一些张扬的、直言不讳的阿里奥斯崇拜者，把他们的信仰放在袖子上。其他人则比较谦逊，在默默的祈祷中跟随偶像。你想知道哪些人是真正的信徒。")
 
     else:
 
-        $ choices.append("All sorts of religious nuts are travelling through the %s with feverish eyes, claiming to do the bidding of one god or another. 'Spice of the people', you tell yourself, shaking your head in disbelief.")
+        $ choices.append("各种各样的宗教狂人正带着狂热的目光穿过%s，声称要听从某个神的命令。你告诉自己，“人民的香料”，你不相信地摇着头。")
 
     $ text1 = rand_choice(choices) % loc
 
@@ -4587,7 +4587,7 @@ label city_gossip(gossip=None):
 
     $ loc = selected_location.name.lower()
 
-    $ text1 = rand_choice(("some juicy gossip", "a disturbing rumor", "a curious story", "an interesting tale", "a word of warning"),)
+    $ text1 = rand_choice(("一些有趣的八卦", "一个令人不安的谣言", "一个奇怪的故事", "一个有趣的传言", "一句告诫"),)
 
     $ actor = article(selected_district.get_rand_pop().get_rand_name())
 
@@ -4615,7 +4615,7 @@ label city_luck():
     "You have received %(gain)d gold."
 
     if dice(6) == 6:
-        $ npc = rand_choice(["Man", "Woman", "Young man", "Young woman", "Old man", "Old woman"])
+        $ npc = rand_choice(["男人", "女人", "男生", "女生", "老爷爷", "老婆婆"])
         npc "Oh no... Where is it? It must be around here..."
 
         "Someone seems to be looking for their lost belongings."
@@ -4784,9 +4784,9 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                 if fix:
                     if girl.personality_unlock[fix] and girl.check_fix(fix) == "pos":
-                        $ narrator("You remember [girl.name] likes %s, and decide to exploit her weakness." % fix_description[fix + " description"][:-1])
+                        $ narrator("你记得[girl.name]喜欢%s，并决定利用她的弱点。" % fix_description[fix + " description"][:-1])
                     elif girl.personality_unlock[fix] and girl.check_fix(fix) == "neg":
-                        $ narrator("You remember [girl.name] dislikes %s, but you decide to go for it anyway." % fix_description[fix + " description"][:-1])
+                        $ narrator("你清楚[girl.name]不喜欢%s，但你还是决定去做。" % fix_description[fix + " description"][:-1])
 
                     if fix == "groping her ass":
                         "Pretending you're still massaging her, you bring your hands closer and closer to her buttocks. She says nothing, although you can feel some tension build up."
@@ -5599,14 +5599,14 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                 menu:
                     "Force her":
-                        $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
-                            "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with this this time."))
+                        $ MC.rand_say(("我是你的主人。你将会服从我。", "你要按我说的去做！因为这就是板上钉钉的！！！",
+                            "ev: 闭嘴，婊子。我制定的规则！", "gd: 我的耐心已经到了极限。这次你别想逃过去。"))
 
                         call fight_attempt(girl, act, 2) from _call_fight_attempt_21
 
                     "Give up":
-                        $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
-                                        "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
+                        $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你现在欠我的。",
+                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你......但也请你不要考验我的耐心。"))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)
