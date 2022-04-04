@@ -138,7 +138,7 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
                     delete_mix(mix)
 
     if config.version.endswith("R"): # 'R' at the end of the version number means it's the release version
-        call screen OK_screen("Warning", "你运行的是{b}未打补丁{/b}的'妓院之王'版本。\n\n由于游戏仍处于alpha阶段，因此安装最新的补丁非常重要，以避免出现bug。\n\n请不要在HentHighSchool/BK论坛上报告任何错误，除非你已经安装了最新的补丁。")
+        call screen OK_screen("Warning", "你运行的是{b}未打补丁{/b}的'青楼之王'版本。\n\n由于游戏仍处于alpha阶段，因此安装最新的补丁非常重要，以避免出现bug。\n\n请不要在HentHighSchool/BK论坛上报告任何错误，除非你已经安装了最新的补丁。")
 
     return
 
@@ -619,7 +619,7 @@ label advance_to_chapter(chapter, silent=False, free=False):
 
             $ chosen_district = None
 
-            $ sill("你现在可以搬到更大的妓院了 (最大 "+ str(blist[chapter].get_maxbedrooms()) + " 房间).\n选择一个地区建立你的新妓院。", interact = False)
+            $ sill("你现在可以搬到更大的青楼了 (最大 "+ str(blist[chapter].get_maxbedrooms()) + " 房间).\n选择一个地区建立你的新青楼。", interact = False)
 
             $ chosen_district = ui.interact()
 
@@ -638,7 +638,7 @@ label advance_to_chapter(chapter, silent=False, free=False):
                     else:
                         $ free_room_text = ""
 
-                    if renpy.call_screen("yes_no", "你真的想把你的妓院搬到{b}[chosen_district.name]{/b}吗？\n\n{size=-2}这将重置你所有的房间升级，但你将保留你的家具和装饰品。" + free_room_text):
+                    if renpy.call_screen("yes_no", "你真的想把你的青楼搬到{b}[chosen_district.name]{/b}吗？\n\n{size=-2}这将重置你所有的房间升级，但你将保留你的家具和装饰品。" + free_room_text):
                         $ change_district(chosen_district, free)
                         $ renpy.block_rollback()
 
@@ -4175,7 +4175,7 @@ label farm_take_out(girl, check_room=True):
         elif check_room and len(MC.girls) >= brothel.bedrooms:
             gizel normal "And just where do you think you can put that wench? Your brothel is full."
 
-        elif renpy.call_screen("yes_no", "你想把[girl.fullname]送回妓院吗？"):
+        elif renpy.call_screen("yes_no", "你想把[girl.fullname]送回青楼吗？"):
             hide screen girl_stats
             hide screen girl_profile
             hide screen button_overlay

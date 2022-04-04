@@ -1983,7 +1983,7 @@ label farm_meet_gizel2():
 
     gizel surprise "Uh???"
 
-    $ gizel_name = "Gizel"
+    $ gizel_name = "吉泽尔"
 
     gizel shy "Gizel is my name, sir, but I am no witch... I'm just a teenage beggar, come to Zan to make a few denars..."
 
@@ -2814,9 +2814,9 @@ label gizel_attack():
 
             you "My name is [MC.name]. I'm a lot tougher than those clowns out there. You don't want to start a fight you can't win."
 
-            $ MC.rand_say(("wr: Before I was a brothel owner, I was a soldier in the war. I killed more elven mages than I can count.",
-                           "wz: I'm not just a brothel owner, I'm also a powerful mage, top of my class in Karkyr. You won't have the upper hand in this fight.",
-                           "tr: I'm not just a lowlife pimp, okay? I've got a pet dragon. That's right. And he's like, twenty feet tall."))
+            $ MC.rand_say(("wr: 在我成为青楼老板之前，我是一名战士。我杀过的精灵法师多得数不清。",
+                           "wz: 我不仅仅是一个青楼老板，我还是一个强大的法师，在卡尔基尔是顶尖的。在这场战斗中你不会占上风。",
+                           "tr: 我不只是一个低级的皮条客，好吗？我有一条宠物龙。这就对了。而且他好像有20英尺高。"))
 
             if NPC_gizel.raped:
                 if reaction == "fight":
@@ -3202,7 +3202,7 @@ label farm_meet_goldie():
 
     man "Goldie..."
 
-    $ goldie_name = "Goldie"
+    $ goldie_name = "戈尔迪"
 
     man "You're always so brave. I wish I was, too..."
 
@@ -3404,9 +3404,9 @@ label farm_meet_goldie_menu():
 
             goldie "Anyway, how do you expect to solve the mystery of this place?"
 
-            $ MC.rand_say(("wr: There's nothing that can't be solved with a few inches of steel in the gut, I always say. Let me take care of it.",
-                           "wz: I took a class in 'curse and debuff management' at Karkyr University, back in the day... I know my way around these things.",
-                           "tr: I talk my way around tricky situations all day... If there's something in that farm, perhaps I can cut a deal with it?"))
+            $ MC.rand_say(("wr: 我总是说，没有什么事情是不能用几英寸的钢筋在肠子里解决的。让我来处理吧。",
+                           "wz: 我在卡尔基尔大学上过一门'诅咒和消弱管理'的课，那时候...我知道了如何处理这些事情。",
+                           "tr: 我整天都在为棘手的情况说话...... 如果那个农场里有什么东西，也许我可以和它达成协议？"))
 
             goldie "I hope you're right..."
 
@@ -4526,7 +4526,7 @@ label farm_meet_gina():
 
     gina "Deal! My name is Gina. Come by here anytime, and I'll fix some of those machines for you. So you can, uh, enjoy yourself."
 
-    $ gina_name = "Gina"
+    $ gina_name = "吉娜"
 
     you "I'm [MC.name]. And, uh, it's not for me, it's for a friend..."
 
@@ -4951,7 +4951,7 @@ label farm_meet_stella():
 
     stella "My name is Stella. Come visit me any time if you want to buy stallions. I'll have new arrivals every week."
 
-    $ stella_name = "Stella"
+    $ stella_name = "斯特拉"
 
     scene black with fade
 
@@ -6914,7 +6914,7 @@ label farm_meet_willow():
 
     willow "Come here, sweety. Willow loves you... Willow is going to find you a good home."
 
-    $ willow_name = "Willow"
+    $ willow_name = "薇洛"
 
     play sound s_fizzle
 
@@ -7200,7 +7200,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
 
             # Pick challenge
             $ tt = show_tt("top_right")
-            $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight the monster", "fight", 5), ("Blast it with a spell", "cast", 7)])
+            $ chal = renpy.call_screen("challenge_menu", challenges=[("攻击怪物", "fight", 5), ("法术轰击", "cast", 7)])
             hide screen tool
 
             if chal == "fight":
@@ -11359,12 +11359,12 @@ label satella_game(game_type="the guessing game"):
                             if d1+d2 > r:
                                 satella "Yes!"
 
-                                $ answers += "\nThe total is above " + str(r) + ". "
+                                $ answers += "\n总数高于 " + str(r) + "。"
 
                             else:
                                 satella "No..."
 
-                                $ answers += "\nThe total is below " + str(r+1) + ". "
+                                $ answers += "\n总数低于 " + str(r+1) + "。"
 
 
                         "Is the total below...":
@@ -11385,54 +11385,54 @@ label satella_game(game_type="the guessing game"):
                             if d1+d2 < r:
                                 satella "Yes!"
 
-                                $ answers += "\nThe total is below " + str(r) + ". "
+                                $ answers += "\n总数低于 " + str(r) + "。"
 
                             else:
                                 satella "No..."
 
-                                $ answers += "\nThe total is above " + str(r-1) + ". "
+                                $ answers += "\n总数高于  " + str(r-1) + "。"
 
                         "Did you roll a...":
-                            $ r = menu([("Did you roll a...", None), ("One", 1), ("Two", 2), ("Three", 3), ("Four", 4), ("Five", 5), ("Six", 6)])
+                            $ r = menu([("Did you roll a...", None), ("1", 1), ("2", 2), ("3", 3), ("4", 4), ("5", 5), ("6", 6)])
 
                             if d1 == r or d2 == r:
                                 satella "Yes!"
 
-                                $ answers += "\nSatella rolled a " + str(r) + ". "
+                                $ answers += "\n萨特拉Roll到了 " + str(r) + "。"
 
                             else:
                                 satella "Nope. Try again."
 
-                                $ answers += "\nSatella didn't roll a " + str(r) + ". "
+                                $ answers += "\n萨特拉没有Roll到 " + str(r) + "。"
 
                         "Did you roll twice the same number?":
 
                             if d1 == d2:
                                 satella "I did! Aw, you're good!"
-                                $ answers += "\nSatella rolled twice the same number. "
+                                $ answers += "\n萨特拉Roll了两次相同的数字。"
                             else:
                                 satella "Haha, no!"
-                                $ answers += "\nSatella rolled different numbers. "
+                                $ answers += "\n萨特拉Roll了不同的数字。"
 
                         "Is the total an odd number?":
 
                             if (d1+d2) % 2 != 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
-                                $ answers += "\nSatella rolled an odd number. "
+                                $ answers += "\n萨特拉Roll了一个奇数。"
 
                             else:
                                 satella "Wrong... ♥"
-                                $ answers += "\nSatella rolled an even number. "
+                                $ answers += "\n萨特拉Roll了一个偶数。"
 
                         "Is the total an even number?":
 
                             if (d1+d2) % 2 == 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
-                                $ answers += "\nSatella rolled an even number. "
+                                $ answers += "\n萨特拉Roll了一个偶数。"
 
                             else:
                                 satella "Wrong... Bwahahahaha ♥"
-                                $ answers += "\nSatella rolled an odd number. "
+                                $ answers += "\n萨特拉Roll了一个奇数。"
 
                     $ tries += 1
 
@@ -11442,7 +11442,7 @@ label satella_game(game_type="the guessing game"):
 
             while r == 0:
 
-                $ r = renpy.input("Guess the total of Satella's dice{i}" + answers + "{/i}")
+                $ r = renpy.input("猜猜萨特拉的骰子总数{i}" + answers + "{/i}")
 
                 python:
                     try:
@@ -11629,8 +11629,8 @@ label satella_game(game_type="the guessing game"):
                     satella happy "Well, that was fun. Make sure to come back next time... This time I'll win!"
 
             else:
-                $ you(r.capitalize() + "!")
-                $ satella(her_choice.capitalize() + "!")
+                $ you(r.capitalize() + "！")
+                $ satella(her_choice.capitalize() + "！")
 
                 satella "I WON!!! WOOHOO!!!"
 
@@ -12297,7 +12297,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     show shalia5 with dissolve
 
-    $ shalia_name = "Strange woman"
+    $ shalia_name = "奇怪的女人"
 
     shalia "Welcome, my child."
 
@@ -12325,7 +12325,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     you "Shalia!" with vpunch
 
-    $ shalia_name = "Shalia"
+    $ shalia_name = "莎莉娅"
 
     "She is the Goddess herself. You are awestruck. You try to bow or take a knee, only to fail embarrassingly, as you are just a disembodied spirit floating in space."
 
@@ -14121,7 +14121,7 @@ label no_money():
 
         you "*gulp*"
 
-        $ banker_name = "Banker"
+        $ banker_name = "银行家"
 
         banker "Let me cut to the chase. I hear you are in a dire financial situation right now."
 
@@ -14333,12 +14333,12 @@ label banker_repaid_first():
     if MC.gold >= NPC_banker.flags["first loan"] :
         you "Yes... *sigh*"
 
-        $ you("Here, your " + str(NPC_banker.flags["first loan"]) + " gold, back in full.")
+        $ you("这里，你的 " + str(NPC_banker.flags["first loan"]) + " 金币，全额返还。")
 
         play sound s_gold
         $ MC.gold -= NPC_banker.flags["first loan"]
 
-        $ narrator("You have repaid " + str(NPC_banker.flags["first loan"]) + " gold.")
+        $ narrator("你已经偿还了 " + str(NPC_banker.flags["first loan"]) + " 金币。")
 
         $ NPC_banker.flags["first loan"] = False
 
@@ -14401,7 +14401,7 @@ label visit_bank():
     if not story_flags["bank visited"]:
 
         $ story_flags["bank visited"] = True
-        $ banker_name = "Banker"
+        $ banker_name = "银行家"
 
 
         banker "Welcome to TJB. As a partner, I am delighted to welcome you to the finest banking establishment in the city."
@@ -14477,20 +14477,20 @@ label visit_bank():
 
     else:
         python:
-            menu_options = [("Do you want to take a personal loan?", None),]
+            menu_options = [("你想申请个人贷款吗？", None),]
             loans = [Loan(250, 0.4, 10), Loan(500, 0.4, 10), Loan(1000, 0.4, 14), Loan(2500, 0.4, 14), Loan(5000, 0.4, 20), Loan(10000, 0.4, 20), Loan(25000, 0.4, 25),]
 
             for l in loans:
                 if game.chapter - 4 <= loans.index(l) <= game.chapter - 1:
-                    menu_options.append(("Borrow " + str(l.amount) + " gold for " + str(l.duration) + " days (total cost: " + str(l.total_cost) + ")", l))
+                    menu_options.append(("贷款 " + str(l.amount) + " 金币在 " + str(l.duration) + " 天内还清 (总成本: " + str(l.total_cost) + ")", l))
 
             if NPC_banker.love >= 25:
-                menu_options.append(("TJB Special", "special"))
+                menu_options.append(("TJB专项", "special"))
 
             if NPC_banker.flags["sex"]:
-                menu_options.append(("I want sex", "sex"))
+                menu_options.append(("我想要色色", "sex"))
 
-            menu_options.append(("No thanks", "back"))
+            menu_options.append(("不需要，谢谢", "back"))
 
         $ r = menu(menu_options)
 
@@ -14581,7 +14581,7 @@ label visit_bank():
 
             banker "So, what do you say?"
 
-            if renpy.call_screen("yes_no", "Do you want to take the ultimate loan, the 'TJB special'? All your money will be taken away, and you must make 100 000 gold back in 7 days, or lose everything."):
+            if renpy.call_screen("yes_no", "你想接受终极贷款，'TJB专项'吗？你所有的钱都会被拿走，你必须在7天内赚回10万金币，否则将失去一切。"):
                 you "I'm in. And I will be {i}in{/i}, if you catch my drift."
 
                 "The banker throws her arms around you with excitement."
@@ -14610,7 +14610,7 @@ label visit_bank():
 
 
         else:
-            if renpy.call_screen("yes_no", "Are you sure you want to take a loan for " + str(r.amount) + " gold? (daily cost: " + str(r.daily_cost) + " gold)"):
+            if renpy.call_screen("yes_no", "你确定要贷款 "+ str(r.mount) + " 金币吗？(日息: " + str(r.daily_cost) + " 金币)"):
                 $ MC.take_loan(r)
                 play sound s_gold
 
@@ -14760,7 +14760,7 @@ label loan_repaid():
         call banker_special1 from _call_banker_special1
 
     else:
-        $ renpy.say(banker, "That makes it " + str_int(NPC_banker.love // 5) + " points. Only " + str_int(5 - NPC_banker.love // 5) + " more to go!")
+        $ renpy.say(banker, "现在它有 " + str_int(NPC_banker.love // 5) + " 分。只需要 " + str_int(5 - NPC_banker.love // 5) + " 分了！")
 
     hide banker with dissolve
 
@@ -15318,7 +15318,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
+    $ text1 = season_text({"winter" : "为了躲避冬天的寒风", "spring" : "为了回归春天的轻松心情", "summer" : "为了躲避夏天的炎热", "fall" : "，为了躲避乌鸦不详的叫声"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 
@@ -15373,7 +15373,7 @@ label meet_carpenter():
 
     carpenter "I'm Iulia, by the way... Who are ya?"
 
-    $ carpenter_name = "Iulia"
+    $ carpenter_name = "尤利亚"
 
     "She eyes you a bit suspiciously."
 
@@ -15871,7 +15871,7 @@ label resource_exchange_menu():
 
             you "I'll... I'll just call you Bast."
 
-            $ bast_name = "Bast"
+            $ bast_name = "贝斯特"
 
             bast "Sure, whatever."
 
@@ -15968,7 +15968,7 @@ label resource_exchange_menu():
             you "I see..."
 
             if MC.has_resource("wood", 5) and MC.has_resource("leather", 5) and MC.has_resource("dye", 5):
-                if renpy.call_screen("yes_no", "Do you want to get a basic builder license for 5 wood, 5 leather and 5 dye?"):
+                if renpy.call_screen("yes_no", "你想要以5个木材、5个皮革和5个染料换取建筑师执照吗？"):
                     $ MC.resources["wood"] -= 5
                     $ MC.resources["leather"] -= 5
                     $ MC.resources["dye"] -= 5
@@ -15990,7 +15990,7 @@ label resource_exchange_menu():
             hide bast with dissolve
             scene black with fade
 
-            $ bast_name = "Bast"
+            $ bast_name = "贝斯特"
 
             return
 
@@ -16033,7 +16033,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你想要以5个大理石、5个丝绸和5个矿石换取高级建造师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16056,7 +16056,7 @@ label new_builder_license():
                 bast "Yep. But diamond traders make the most money. Consider this an investment."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你想要以2颗钻石换取建筑大师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16076,7 +16076,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你想要以5个大理石、5个丝绸和5个矿石换取高级建造师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16093,7 +16093,7 @@ label new_builder_license():
                 bast "It will cost you 2 diamonds. I don't wanna know how you get them..."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你想要以2颗钻石的建筑大师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -17564,7 +17564,7 @@ label meet_gurigura():
 
     gurigura "Here's a free sample! Enjoy!"
 
-    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg="Gurigura gives you a random %s from the open box.", use_article=False) from _call_receive_item_9
+    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg="古里古拉从箱子里给你一个随机的%s。", use_article=False) from _call_receive_item_9
 
     you "(She's not going to make much money if she gives everything away for free...)"
 
@@ -17760,7 +17760,7 @@ label meet_ramias():
 
     ramias "You can even have one of these crappy weapons for free... I don't want you to tell everyone you meet that I ripped you off. *shrug*"
 
-    call receive_item(get_rand_item(item_type=IT_Weapon), "Ramias hands you a rusty %s.", use_article=False) from _call_receive_item_10
+    call receive_item(get_rand_item(item_type=IT_Weapon), "拉米亚斯递给你一个生锈的%s。", use_article=False) from _call_receive_item_10
 
     $ arena.action = True
 
@@ -17971,7 +17971,7 @@ label meet_riche():
 
     riche "Here, have one of these. I gathered more than enough, thanks to you."
 
-    call receive_item(get_rand_item(quality="F"), "Riche gave you a free %s.", use_article=False) from _call_receive_item_11
+    call receive_item(get_rand_item(quality="F"), "里奇给你一个免费的%s。", use_article=False) from _call_receive_item_11
 
     scene black with fade
 
@@ -18094,7 +18094,7 @@ label meet_katryn():
 
     katryn "Here, it's a little melted on both ends, but you can keep it as a reminder of the glorious future that awaits."
 
-    call receive_item(get_rand_item(item_type=IT_Necklace), "Katryn gave you a slightly burnt %s.", use_article=False) from _call_receive_item_12
+    call receive_item(get_rand_item(item_type=IT_Necklace), "卡特林给了你一个略微烧毁的%s。", use_article=False) from _call_receive_item_12
 
     you "Why did you set up your operation in the Great Library, of all places?"
 
@@ -18159,7 +18159,7 @@ label meet_giftgirl():
 
     giftgirl "Here, keep this. It's on the house. My gift to a new customer!"
 
-    call receive_item(get_rand_item(item_type=IT_Gift), "The woman gave you a free %s.", use_article=False) from _call_receive_item_13
+    call receive_item(get_rand_item(item_type=IT_Gift), "那位女士给了你一个免费的%s。", use_article=False) from _call_receive_item_13
 
     $ exotic_emporium.action = True
 
@@ -18212,7 +18212,7 @@ label meet_twins():
 
     today "As a matter of fact, take this sample dress. It's on us. I'm sure you'll be impressed with the quality."
 
-    call receive_item(get_rand_item(item_type=IT_Dress), "The twins let you have a sample %s.", use_article=False) from _call_receive_item_14
+    call receive_item(get_rand_item(item_type=IT_Dress), "这对双胞胎给你一个%s样本。", use_article=False) from _call_receive_item_14
 
     today "But most people on Pilgrim Road only care about looking good for religious ceremonies, so I'm afraid they don't sell..."
 
@@ -18228,8 +18228,8 @@ label meet_twins():
 
     today "I'm Today! Pleased to meet you. My sister here is Yesterday."
 
-    $ today_name = "Today"
-    $ yesterday_name = "Yesterday"
+    $ today_name = "今天"
+    $ yesterday_name = "昨日"
 
     yesterday "Hi."
 

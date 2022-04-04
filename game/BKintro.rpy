@@ -490,7 +490,7 @@ label resume_intro2:
 
     play sound "woman scream.mp3"
 
-    $ kuro_name = "Woman"
+    $ kuro_name = "女人"
 
     kuro "Aaaaaaah!" with vpunch
 
@@ -792,7 +792,7 @@ label resume_intro3:
 
 
 
-    $ kuro_name = "Noblewoman"
+    $ kuro_name = "贵族女士"
 
 
 
@@ -855,7 +855,7 @@ label resume_intro3:
 
     stop sound
 
-    $ maid_name = "Woman voice"
+    $ maid_name = "女人的声音"
 
     "..."
 
@@ -873,7 +873,7 @@ label resume_intro3:
 
     show maid normal at center with dissolve
 
-    $ maid_name = "Maid"
+    $ maid_name = "女仆"
 
     maid "Welcome, my lord."
     maid "I will take you to master Gio."
@@ -890,7 +890,7 @@ label resume_intro3:
 
     gio "Ah, very well, Minako. You may leave us."
 
-    $ maid_name = "Minako"
+    $ maid_name = "美奈子"
 
     maid "Yes master."
 
@@ -913,7 +913,7 @@ label resume_intro3:
     gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at
          night, anyway."
 
-    $ kuro_name = "Princess"
+    $ kuro_name = "公主"
 
     you "The Princess?"
 
