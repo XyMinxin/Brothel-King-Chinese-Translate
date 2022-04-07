@@ -862,7 +862,7 @@ translate chinese slave_train_obedience_764b847f:
 translate chinese slave_train_obedience_af9de7d2:
 
     # you "Mmmh. I'll give her a break this time."
-    you "Mmmh。这次我饶了她。"
+    you "哼。这次我饶了她。"
 
 # game/BKinteractions.rpy:1556
 translate chinese slave_train_constitution_424ba973:

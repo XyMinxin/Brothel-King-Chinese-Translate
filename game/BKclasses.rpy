@@ -6442,7 +6442,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text2 += "\n" + s.capitalize() + ": " + shown
+                    text2 += "\n" + setting_name_dict[s.capitalize()] + ": " + shown
 
                     if s in ("mood", "love", "fear"):
                         if s=="mood":

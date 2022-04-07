@@ -12910,7 +12910,7 @@ translate chinese farm_meet_willow_786a1a7e:
 translate chinese farm_meet_willow_a73c682a:
 
     # sill "It's almost as if we were... Mmmh."
-    sill "就好像我们…Mmmh。"
+    sill "就好像我们…嗯。"
 
 # game/BKstory_events.rpy:6484
 translate chinese farm_meet_willow_270e43a6:
