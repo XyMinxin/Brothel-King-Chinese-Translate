@@ -346,7 +346,7 @@ translate chinese found_escaped_girl_2c71ca88:
 translate chinese found_escaped_girl_46342aa5:
 
     # "You try calling after her, but it's too late. She's already gone."
-    "你试着跟在她后面打电话，但是太晚了。她已经走了。"
+    "你试着跟在她后面呼喊，但是太晚了。她已经走了。"
 
 # game/BKevents.rpy:1111
 translate chinese found_escaped_girl_263fe356:
@@ -8207,4 +8207,3 @@ translate chinese strings:
     # game/BKevents.rpy:6833
     old "Not today"
     new "今天不行"
-

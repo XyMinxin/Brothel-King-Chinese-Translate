@@ -7396,7 +7396,7 @@ translate chinese night_girl_perform_0ff6bfdf:
 translate chinese night_girl_perform_a1b4af7d:
 
     # "[girl.name] crawls out of sight, covering herself as best she can. You have to call security to put the situation under control."
-    "[girl.name]爬出了视线，尽她所能遮住自己。你必须打电话给安全部门来控制局势。"
+    "[girl.name]爬出了视线，尽她所能遮住自己。你必须呼叫安全部门来控制局势。"
 
 # game/BKday_events.rpy:4809
 translate chinese night_girl_perform_0fa50646:

@@ -838,7 +838,7 @@ translate chinese group_introduction_fb6e86b3:
 translate chinese group_introduction_7062e2e4:
 
     # sill "Okay. Call me if you need anything..."
-    sill "好的。如果你需要什么就呼叫我......"
+    sill "好的。如果你需要什么就联系我......"
 
 # game/BKhelp.rpy:612
 translate chinese jobs_introduction_71a28bb0:

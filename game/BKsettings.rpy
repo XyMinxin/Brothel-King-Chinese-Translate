@@ -218,6 +218,8 @@ init -4 python:
                         "multiple orgasms" : "多重高潮",
                         "denied orgasm" : "禁止高潮",
                         "squirting" : "潮吹",
+
+                        None : "(girl_related_dict)没有值"
                         }
 
     ## 农场相关 ##

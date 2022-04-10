@@ -2196,7 +2196,7 @@ init -3 python:
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += "\n{color=[c_red]}她告诉客户在打电话给保安之前把衣服穿上。{/color}\n客户很不高兴就离开了。"
+                            text1 += "\n{color=[c_red]}她告诉客户在呼叫保安之前把衣服穿上。{/color}\n客户很不高兴就离开了。"
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
@@ -2310,7 +2310,7 @@ init -3 python:
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += "\n{color=[c_red]}她冷冷地告诉客户，威胁要打电话给保安。{/color}\n他很不高兴，怨声载道地离开了。"
+                            text1 += "\n{color=[c_red]}她冷冷地告诉客户，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。"
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 

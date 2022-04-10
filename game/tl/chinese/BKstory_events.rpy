@@ -8938,7 +8938,7 @@ translate chinese gina_research_048bb10a:
 translate chinese gina_research_bf910604:
 
     # you "Uh, hi. Why did you call me..."
-    you "哦,嗨。你为什么打电话给我…"
+    you "哦，嗨。你为什么叫我……"
 
 # game/BKstory_events.rpy:4580
 translate chinese gina_research_00a780d7:
@@ -9862,7 +9862,7 @@ translate chinese stella_reward1_a8bcac5b:
 translate chinese stella_reward1_39a8f8f8:
 
     # stella "I know. This is why I'm calling you back here."
-    stella "我知道。这就是我打电话给你的原因。"
+    stella "我知道。这就是我叫你的原因。"
 
 # game/BKstory_events.rpy:4987
 translate chinese stella_reward1_1f477a07:
@@ -17704,7 +17704,7 @@ translate chinese farm_first_visit_d97c8450:
 translate chinese farm_first_visit_80cb830c:
 
     # gizel "All right then. Call me if you need me."
-    gizel "那好吧。如果你需要我，给我打电话。"
+    gizel "那好吧。如果你需要我记得联系我。"
 
 # game/BKstory_events.rpy:8864
 translate chinese farm_first_visit_c95f1d7f:

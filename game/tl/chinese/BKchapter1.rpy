@@ -4024,7 +4024,7 @@ translate chinese c1_thieves_guild_found_bc50d29f:
 translate chinese c1_thieves_guild_found_5f424013:
 
     # renza "Call me Renza. Oh, and don't forget... I am doing you a favour. I will expect it repaid some day."
-    renza "伦萨打电话给我。哦，别忘了……我在帮你的忙。我希望有一天它能得到偿还。"
+    renza "伦萨叫我。哦，别忘了……我在帮你的忙。我希望有一天它能得到偿还。"
 
 # game/BKchapter1.rpy:2403
 translate chinese c1_thieves_guild_found_846e86e7:
@@ -12052,7 +12052,7 @@ translate chinese c1_ending_maya_10b654a9:
 translate chinese c1_ending_maya_344837c8:
 
     # renza "If you help me now, I'll call us even. I'll even let you visit the thieves guild, for old times sake, in spite of all that happened. Clean slate. Think about it."
-    renza "如果你现在帮我，我甚至会打电话给我们。我甚至会让你去参观盗贼行会，看在过去的份上，不管发生了什么事。干净的石板。想想。"
+    renza "如果你现在帮我，我就算我们扯平了。我甚至会让你去参观盗贼行会，看在过去的份上，不管发生了什么事。干净的石板。你自己想想。"
 
 # game/BKchapter1.rpy:6392
 translate chinese c1_ending_maya_dae0ec55:
@@ -13935,4 +13935,3 @@ translate chinese strings:
     # game/BKchapter1.rpy:6394
     old "Don't help her"
     new "D不帮助她"
-

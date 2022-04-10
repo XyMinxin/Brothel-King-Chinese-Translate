@@ -2710,7 +2710,7 @@ translate chinese slave_story2_2a3609ce:
 translate chinese slave_story2_062d4094:
 
     # girl.char "Oh, Sill is calling me. I'll tell you the rest of the story later..."
-    girl.char "哦，希露在给我打电话。我稍后再告诉你剩下的故事……"
+    girl.char "哦，希露在叫我。我之后再告诉你剩下的故事……"
 
 # game/BKinteractions.rpy:3683
 translate chinese slave_story2_f57f7c1a:
