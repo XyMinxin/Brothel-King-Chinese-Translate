@@ -2233,14 +2233,14 @@ init -3 python:
                 else: # Other sex acts
 
                     if d == 1: # Obedience
-                        text1 = "{size=18}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" + girl_related_dict[s_des[s_act]] + "."
+                        text1 = "{size=18}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" + s_des[s_act] + "。"
 
                         r = girl.get_stat("obedience") - dice(250)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += "\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用" + girl_related_dict[s_des[s_act]] + "来代替.{/color}"
+                                text1 += "\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用" + s_des[s_act] + "来代替。{/color}"
                             else:
                                 text1 += "\n{color=[c_green]}她顺从地接受了客户的要求。{/color}"
                             extra_changes.append(("obedience", girl.change_stat("obedience", dice(3))))
@@ -2261,14 +2261,14 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=18}一位客户整晚都在和" + girl.name + "调情。他试图让她" + s_des[s_act] + "."
+                        text1 = "{size=18}一位客户整晚都在和" + girl.name + "调情。他试图让她" + s_des[s_act] + "。"
 
                         r = girl.get_stat("libido") - dice(250)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += "\n{color=[c_green]}为了保护她的童贞，她淫荡地同意" + girl_related_dict[s_des[s_act]] + "来代替.{/color}"
+                                text1 += "\n{color=[c_green]}为了保护她的童贞，她淫荡地同意" + s_des[s_act] + "来代替.{/color}"
                             else:
                                 text1 += "\n{color=[c_green]}她觉得自己欲火中烧，而且喜欢这个客户，所以她同意了。{/color}"
                             extra_changes.append(("libido", girl.change_stat("libido", dice(3))))
@@ -2288,14 +2288,14 @@ init -3 python:
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=18}一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意" + girl_related_dict[s_des[s_act]] + "来帮助他忘记悲伤。"
+                        text1 = "{size=18}一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意" + s_des[s_act] + "来帮助他忘记悲伤。"
 
                         r = girl.get_stat("sensitivity") - dice(250)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += "\n{color=[c_green]}她想帮助他，并提出" + girl_related_dict[s_des[s_act]] + "代替他，以保留她的贞操。{/color}"
+                                text1 += "\n{color=[c_green]}她想帮助他，并提出" + s_des[s_act] + "代替他，以保留她的贞操。{/color}"
                             else:
                                 text1 += "\n{color=[c_green]}她被他的故事感动了，决定不能拒绝他。{/color}"
                             extra_changes.append(("sensitivity", girl.change_stat("sensitivity", dice(3))))
