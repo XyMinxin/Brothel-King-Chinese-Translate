@@ -238,7 +238,7 @@ translate chinese help_MC_fda9a393:
 translate chinese help_MC_6816548b:
 
     # sill "{b}Prestige{/b} reflects your character's renown in Zan. Earning prestige allows you to level up and get skill points."
-    sill "{b}声望{/b}反映了你的角色在Zan的声望。赢得声望可以让你升级并获得技能点。"
+    sill "{b}声望{/b}反映了你的角色在瓒城的声望。赢得声望可以让你升级并获得技能点。"
 
 # game/BKhelp.rpy:233
 translate chinese help_MC_2e21e849:
@@ -1060,7 +1060,7 @@ translate chinese help_brothel_92c4b3db:
 translate chinese help_brothel_6843404d:
 
     # sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls. Only one trainer can be active at all times."
-    sill "{b}培训师{/b}可以帮助你更有效地经营青楼! 你可能会在Zan中遇到一些有趣的人，这将能够帮助管理你的女孩。任何时候都只能有一个培训师在活动。"
+    sill "{b}培训师{/b}可以帮助你更有效地经营青楼! 你可能会在瓒城中遇到一些有趣的人，这将能够帮助管理你的女孩。任何时候都只能有一个培训师在活动。"
 
 # game/BKhelp.rpy:752
 translate chinese help_brothel_74043be9:
@@ -1096,7 +1096,7 @@ translate chinese help_advertising_menu_b463b8ec:
 translate chinese help_advertising_menu_c046054f:
 
     # sill "There are different {b}customer populations{/b} in Zan, each with a different level of difficulty and rewards, as well as some special effect."
-    sill "在Zan有不同的{b}客户群体{/b}，每个客户群体都有不同的难度和奖励，还有一些特殊的效果。"
+    sill "在瓒城有不同的{b}客户群体{/b}，每个客户群体都有不同的难度和奖励，还有一些特殊的效果。"
 
 # game/BKhelp.rpy:778
 translate chinese help_advertising_menu_f889f1f4:
@@ -1276,7 +1276,7 @@ translate chinese help_customers_5ee181c4:
 translate chinese help_customers_78e58e25:
 
     # carpenter "Customers come from one of the many populations in Zan, from the rabble to the high 'n' mighty. Check out their characteristics by hovering over their portrait: some might surprise you."
-    carpenter "顾客来自Zan众多人口中的一个，从下层社会到上层社会。把鼠标悬停在他们的肖像上方，看看他们的特征:有些可能会让你大吃一惊。"
+    carpenter "顾客来自瓒城众多人口中的一个，从下层社会到上层社会。把鼠标悬停在他们的肖像上方，看看他们的特征:有些可能会让你大吃一惊。"
 
 # game/BKhelp.rpy:860
 translate chinese help_customers_8cb7b3c2:
@@ -1318,7 +1318,7 @@ translate chinese help_districts_4ac14c86:
 translate chinese help_districts_ec26eb9d:
 
     # sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
-    sill "Zan有六个区，从城墙外的贫民窟到城市权力的中心:国王的控制。"
+    sill "瓒城有六个区，从城墙外的贫民窟到城市权力的中心:国王的控制。"
 
 # game/BKhelp.rpy:882
 translate chinese help_districts_f9b2c1b2:
@@ -1378,7 +1378,7 @@ translate chinese help_visit_location_c777e57b:
 translate chinese help_visit_location_6a49d4d9:
 
     # sill "There are many girls idling about in Zan. You know, in this economy..."
-    sill "在Zan有许多女孩子在闲荡。你知道，在这种经济状况下……"
+    sill "在瓒城有许多女孩子在闲荡。你知道，在这种经济状况下……"
 
 # game/BKhelp.rpy:924
 translate chinese help_visit_location_75de1963:
@@ -1750,7 +1750,7 @@ translate chinese help_rank_introduction_3372946f:
 translate chinese help_rank_introduction_388fa8cc:
 
     # sill "In Zan, regular citizens are only allowed to own common sex slaves. Owning sex slaves of a higher rank requires a suitable brothel license. As you unlock better licenses, you will be able to upgrade your girls' rank further."
-    sill "在Zan，普通公民只被允许拥有普通的性奴隶。拥有更高等级的性奴隶需要有合适的青楼执照。随着你解锁更好的许可证，你将能够进一步提升你的女孩的等级。"
+    sill "在瓒城，普通公民只被允许拥有普通的性奴隶。拥有更高等级的性奴隶需要有合适的青楼执照。随着你解锁更好的许可证，你将能够进一步提升你的女孩的等级。"
 
 # game/BKhelp.rpy:1231
 translate chinese help_rank_introduction_6896bafd:
@@ -2194,7 +2194,7 @@ translate chinese help_farm_rules_holding_e7b5dc08:
 translate chinese help_zodiac_da122e3e:
 
     # sill happy "I read a fascinating story... Astrology is very popular in Zan, and {b}Zodiac saints{/b} play a foremost role at every level of society."
-    sill happy "我读了一个有趣的故事……占星术在Zan非常流行，{b}十二宫圣人{/b}在社会的各个阶层都扮演着重要的角色。"
+    sill happy "我读了一个有趣的故事……占星术在瓒城非常流行，{b}十二宫圣人{/b}在社会的各个阶层都扮演着重要的角色。"
 
 # game/BKhelp.rpy:1474
 translate chinese help_zodiac_f945b6dd:
@@ -2218,7 +2218,7 @@ translate chinese help_zodiac_f10dd37b:
 translate chinese help_zodiac_ebd70b3d:
 
     # sill "For instance, the women of Zan follow {b}the Eight{/b} for good fortune, especially slaves and whores. The Eight are saintly women-like figures that appear in the heavens when the conditions are right."
-    sill "例如，Zan的妇女遵循八种财富，特别是奴隶和妓女。这八个人都是圣洁的女性形象，在合适的条件下会出现在天空中。"
+    sill "例如，瓒城的妇女遵循八种财富，特别是奴隶和妓女。这八个人都是圣洁的女性形象，在合适的条件下会出现在天空中。"
 
 # game/BKhelp.rpy:1482
 translate chinese help_zodiac_d2faaa6a:

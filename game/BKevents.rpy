@@ -950,6 +950,7 @@ label found_runaway_girl(obj):
             $ MC.girls.append(girl)
 
             if not brothel.can_have(girl.job):
+                $ xxx1 = girl_related_dict[girl.job]
                 "She couldn't go back to being a [girl.job], so she was set to rest."
                 $ girl.set_job(None)
 
@@ -1542,6 +1543,7 @@ label furniture_built(furn):
         call vital_scanners_built() from _call_vital_scanners_built
 
     else:
+        $ xxxx23 = furniture_name_dict[furn.name]
         carpenter "Hey, boss! I've just finished work on the [furn.name]. I hope you like it."
 
     $ furn.build()
@@ -4316,6 +4318,7 @@ label exit_farm(girl, reason):
                 $ farm.remove_girl(girl)
 
                 if girl.job:
+                    $ xxx1 = girl_related_dict[girl.job]
                     "[girl.fullname] is back to work at the brothel as a [girl.job]."
                 else:
                     "[girl.fullname] is back at the brothel and is resting."

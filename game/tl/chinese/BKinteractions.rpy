@@ -970,13 +970,13 @@ translate chinese slave_advanced_training_e589ac84_1:
 translate chinese slave_advanced_training_cfcd6460:
 
     # "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
-    "你发现了[girl.fullname]的一个特殊嗜好:{b}[xxx4]{/b}。你可以用它来加速她的训练。"
+    "你发现了[girl.fullname]的一个特殊嗜好: {b}[xxx4]{/b}。你可以用它来加速她的训练。"
 
 # game/BKinteractions.rpy:1800
 translate chinese slave_advanced_training_cdeeb7c3:
 
     # "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
-    "因为[girl.name]喜欢[b][xxx4][/b]，所以她进步得更快。"
+    "因为[girl.name]喜欢[b][xxx4][/b]，所以她进步得更快了。"
 
 # game/BKinteractions.rpy:1806
 translate chinese slave_advanced_training_e589ac84_2:
@@ -988,7 +988,7 @@ translate chinese slave_advanced_training_e589ac84_2:
 translate chinese slave_advanced_training_47722ac0:
 
     # "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
-    "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
+    "你发现了[girl.fullname]的一个恐惧事物: {b}[xxx4]{/b}。也许你可以好好利用这些信息。"
 
 # game/BKinteractions.rpy:1823
 translate chinese slave_advanced_training_9e16c264:

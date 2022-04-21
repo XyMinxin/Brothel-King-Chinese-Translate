@@ -106,8 +106,8 @@ label init_moons():
                  8 : Moon("农", pic="harvest", effects=[Effect("boost", "farm preference increase", 1, scope="farm"), Effect("boost", "all sex acts preference increase", -0.5, scope="brothel")], description="现在是时候收获你的庄稼，照料你的牛，找到一个伙伴，并狠狠抽她一顿", sound = s_moo),
                  9 : Moon("银", pic="silver", effects=[Effect("change", "mana", 1, scope="brothel", scales_with="spirit")], description="银色的月亮正处于魔法能量的顶峰。有经验的施法者会在这个月小心翼翼地施展他们最强大的法术和召唤。", sound = s_spell),
                  10 : Moon("水", pic="wet", effects=[Effect("change", "whore obedience target", -15, scope="brothel"), Effect("change", "train obedience target", -15, scope="brothel"), Effect("boost", "whore customer budget", 0.1, scope="brothel"), Effect("boost", "customer events", 1, scope="brothel"), Effect("boost", "dirt", 0.25)], description="水精灵在这个月赋予月亮一种超现实的特质。据说这能使每个人都放松一些。", sound = s_mmh),
-                 11 : Moon("皎", pic="hallow", effects=[Effect("boost", "threat", 0.3, scope="brothel"), Effect("boost", "crazy", 2, scope="brothel"), Effect("change", "customer defense", 2, scope="brothel")], description="这个异教徒赞美的皎月是一年中怪兽和精灵繁盛的时节。此外，也是Zan的孩子玩“小把戏还是乳头”节目的好日子。", sound = s_maniacal_laugh),
-                 12 : Moon("暗", pic="dark", effects=[Effect("boost", "love gains", -0.5, scope="world"), Effect("boost", "fear gains", 1, scope="world")], description="在黑暗的月光下，一切都显得更加可怕。这这是最黑暗的冬天，只有一个Zan当地人专门为破除这个季节应运而生的节日，叫H-mas。", sound = s_mystery),
+                 11 : Moon("皎", pic="hallow", effects=[Effect("boost", "threat", 0.3, scope="brothel"), Effect("boost", "crazy", 2, scope="brothel"), Effect("change", "customer defense", 2, scope="brothel")], description="这个异教徒赞美的皎月是一年中怪兽和精灵繁盛的时节。此外，也是瓒城的孩子玩“小把戏还是乳头”节目的好日子。", sound = s_maniacal_laugh),
+                 12 : Moon("暗", pic="dark", effects=[Effect("boost", "love gains", -0.5, scope="world"), Effect("boost", "fear gains", 1, scope="world")], description="在黑暗的月光下，一切都显得更加可怕。这这是最黑暗的冬天，只有一个瓒城当地人专门为破除这个季节应运而生的节日，叫H-mas。", sound = s_mystery),
                 }
     return
 

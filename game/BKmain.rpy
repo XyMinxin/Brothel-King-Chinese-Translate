@@ -516,7 +516,7 @@ label farm_loop():
             menu_list.append(("暂时不考虑这个问题", ("ignore", None)))
 
         $ res, mn = menu(menu_list)
-
+        $ xxx3 = farm_related_dict[mn.type]
         if res == "heal":
             gizel normal "Fine, let's use this to get the poor bastard back on its feet. Or tentacles. Whatever."
 
@@ -653,7 +653,7 @@ label farm_loop():
                 elif res[0] == "heal":
 
                     $ r, mn, it = res
-
+                    $ xxx3 = farm_related_dict[mn.type]
                     $ MC.use_item(it)
                     $ mn.heal()
 
@@ -1279,7 +1279,7 @@ label girls_loop():
                             "No":
                                 $ girl.work_whore = False
 
-
+                    $ xxx3 = girl_related_dict[girl.job]
                     if girl.hurt > 0 and girl.job:
                         sill sad "Master, [girl.name] is still too weak and needs more rest. She will resume work as a {b}[girl.job]{/b} when she recovers."
 

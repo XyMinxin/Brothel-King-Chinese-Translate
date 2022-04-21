@@ -274,7 +274,7 @@ screen right_menu_city():
     textbutton "访问城市":
 
         action Return("districts")
-        tooltip "访问Zan."
+        tooltip "访问瓒城."
 
 
 ################

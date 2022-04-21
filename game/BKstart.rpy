@@ -362,7 +362,7 @@ label init_game():
         NPC_goldie = NPC(name="戈尔迪", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}我在一本书上读到过... *脸红*{/i}'\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
         NPC_willow = NPC(name="Willow", char=willow, minion_type="monster")
         NPC_gina = NPC(name="Gina", char=gina, minion_type="machine")
-        NPC_bast = NPC(name="贝斯特", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}金币只是可以在Zan交易的众多资源中的一种。{/i}'\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
+        NPC_bast = NPC(name="贝斯特", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}金币只是可以在瓒城交易的众多资源中的一种。{/i}'\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
         NPC_jobgirl = NPC(name="Scarlet", char=jobgirl)
         NPC_kuro = NPC(name="Kurohime", char=kuro)
         NPC_homura = NPC(name="Homura", char=homura)
@@ -576,15 +576,15 @@ label init_game():
 
         # DISTRICT LIST #
 
-        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "贫民窟位于Zan城墙外的郊区，。这里是诸多乌合之众的家园：移民、难民、贫民、香料瘾君子......据传闻，这里也是盗贼公会的藏身之处，他们崇拜影子女神莎莉娅。"),
+        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "贫民窟位于瓒城城墙外的郊区，。这里是诸多乌合之众的家园：移民、难民、贫民、香料瘾君子......据传闻，这里也是盗贼公会的藏身之处，他们崇拜影子女神莎莉娅。"),
                  "docks" : District("The Docks", 2, 2, 40, ((laborer, 10), (sailor, 40), (commoner, 30), (craftsman, 20)), room = ["tavern"], pic = "districts/docks.jpg", description = "码头是粗暴的水手和躲避险恶的大海的狡猾海盗的家园。周围徘徊的全是海员，难怪港口附近会有廉价妓女和充满异国情调的商场。"),
-                 "warehouse" : District("The Warehouse", 2, 2, 40, ((laborer, 10), (sailor, 20), (commoner, 40), (craftsman, 30)), ["club"], pic = "districts/warehouse.jpg", description = "仓库是Zan的工业区，各种工匠和短工都来这里找工作。白天的街道上充斥着各种交易和商业活动，但晚上异常凶险。"),
+                 "warehouse" : District("The Warehouse", 2, 2, 40, ((laborer, 10), (sailor, 20), (commoner, 40), (craftsman, 30)), ["club"], pic = "districts/warehouse.jpg", description = "仓库是瓒城的工业区，各种工匠和短工都来这里找工作。白天的街道上充斥着各种交易和商业活动，但晚上异常凶险。"),
                  "gardens" : District("The Magic Gardens", 4, 3, 100, ((commoner, 5), (craftsman, 15), (bourgeois, 30), (guildmember, 30), (patrician, 20)), ["onsen"], pic = "districts/gardens.jpg", description = "当地的法师们聚集在这里吸取法力，并进行着一个个漫长而危险的实验。据说某些实验偶尔也会失败..."),
                  "cathedra" : District("The Cathedra", 4, 3, 100, ((commoner, 5), (craftsman, 10), (bourgeois, 20), (guildmember, 35), (patrician, 30)), ["okiya"], pic = "districts/cathedra.jpg", description = "大教堂是阿里奥斯教团的圣地中心。朝圣者、骑士和牧师在祈祷和仪式中磨拳擦掌，而精明的商人和银行家则为他们提供昂贵的服务，赚取利润。"),
-                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "这里是Zan的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
+                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
                 }
 
-        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "这里是Zan的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
+        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
 
         all_districts = [district_dict[d] for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]]
         # for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]:

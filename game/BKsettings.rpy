@@ -219,7 +219,14 @@ init -4 python:
                         "denied orgasm" : "禁止高潮",
                         "squirting" : "潮吹",
 
-                        None : "(girl_related_dict)没有值"
+                        ## 杂项 ##
+                        "Color" : "颜色",
+                        "color" : "颜色",
+                        "Food" : "食物",
+                        "food" : "食物",
+                        "Drink" : "饮料",
+                        "drink" : "饮料",
+                        None : "(girl_related_dict)没有值",
                         }
 
     ## 农场相关 ##

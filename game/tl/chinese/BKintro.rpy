@@ -358,7 +358,7 @@ translate chinese resume_intro_6520075a:
 translate chinese resume_intro_38823c50:
 
     # you "I am a court mage from the Westmarch Principalities."
-    you "我是来自韦斯特马奇诸侯国的宫廷法师。"
+    you "我是来自威斯特马奇诸侯国的宫廷法师。"
 
 # game/BKintro.rpy:351
 translate chinese resume_intro_474b9df7:
@@ -532,7 +532,7 @@ translate chinese resume_intro2_f126af47:
 translate chinese resume_intro2_4708be52:
 
     # guard "I knew you had that sneaky look about you... There are many shrines dedicated to the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
-    guard "我就知道你那鬼鬼祟祟的样子……在Zan有很多供奉黑暗女神的神殿，但我不会告诉你它们在哪里。正派的人不应该干涉被诅咒的家伙。"
+    guard "我就知道你那鬼鬼祟祟的样子……在瓒城有很多供奉黑暗女神的神殿，但我不会告诉你它们在哪里。正派的人不应该干涉被诅咒的家伙。"
 
 # game/BKintro.rpy:448
 translate chinese resume_intro2_32b8a21b:

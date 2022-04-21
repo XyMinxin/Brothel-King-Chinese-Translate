@@ -3529,14 +3529,14 @@ screen brothel():
                                 vbox:
 
                                     button xsize 156 background None xmargin 0 xpadding 0 action NullAction():
-                                        hovered tt.Action("培训师帮助你的女孩学习新技能. 通过与Zan居民的交流发现新的培训师!")
+                                        hovered tt.Action("培训师帮助你的女孩学习新技能. 通过与瓒城居民的交流发现新的培训师!")
                                         add MC.current_trainer.trainer_portrait zoom 1.0 xalign 0.5 yalign 0.5
 
 
                                     if len(MC.trainers) == 1:
                                         $ text1 = "没有其他培训师可用"
                                     else:
-                                        $ text1 = "培训师帮助你的女孩学习新技能. 通过与Zan居民的交流发现新的培训师!"
+                                        $ text1 = "培训师帮助你的女孩学习新技能. 通过与瓒城居民的交流发现新的培训师!"
 
                                     button xmargin 0 xpadding 0 xsize 156 background None action NullAction() hovered tt.Action(text1):
 

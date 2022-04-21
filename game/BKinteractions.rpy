@@ -938,6 +938,11 @@ label slave_chat_tastes(girl):
 
             $ thing, best = girl.talk_tastes("likes")
 
+            if thing in girl_related_dict:
+                $ thing_cn = girl_related_dict[thing]
+            else:
+                $ thing_cn = thing
+
             call dialogue(girl, "slave chat tastes likes") from _call_dialogue_150
 
             $ girl.personality_unlock["fav_" + thing] = True
@@ -946,6 +951,11 @@ label slave_chat_tastes(girl):
 
             $ thing, worst = girl.talk_tastes("dislikes")
 
+            if thing in girl_related_dict:
+                $ thing_cn = girl_related_dict[thing]
+            else:
+                $ thing_cn = thing
+                
             call dialogue(girl, "slave chat tastes dislikes") from _call_dialogue_151
 
             $ girl.personality_unlock["dis_" + thing] = True
@@ -958,12 +968,14 @@ label slave_chat_tastes(girl):
                 if item_type not in girl.personality_unlock["loves"]:
                     $ girl.personality_unlock["loves"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = thing
                 call dialogue(girl, "slave chat tastes loves +") from _call_dialogue_152
 
             elif verb == "likes":
                 if item_type not in girl.personality_unlock["likes"]:
                     $ girl.personality_unlock["likes"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = thing
                 call dialogue(girl, "slave chat tastes loves -") from _call_dialogue_153
 
             elif verb == "indifferent":
@@ -977,6 +989,7 @@ label slave_chat_tastes(girl):
                 if item_type not in girl.personality_unlock["hates"]:
                     $ girl.personality_unlock["hates"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = thing
                 call dialogue(girl, "slave chat tastes hates") from _call_dialogue_155
 
             elif verb == "indifferent":
@@ -1021,6 +1034,11 @@ label slave_chat_tastes(girl):
 
             if not girl.personality_unlock[fix.name]:
 
+                if fix.name in girl_related_dict:
+                    $xxx3 = girl_related_dict[fix.name]
+                else:
+                    $xxx3 = fix.name
+
                 "You have discovered [girl.name]'s fixation with [fix.name]."
 
                 $ girl.personality_unlock[fix.name] = True
@@ -1036,6 +1054,11 @@ label slave_chat_tastes(girl):
                 "She tells you that she really hates [fix_desc] It creeps her out."
 
                 if not girl.personality_unlock[fix.name]:
+
+                    if fix.name in girl_related_dict:
+                        $xxx3 = girl_related_dict[fix.name]
+                    else:
+                        $xxx3 = fix.name
 
                     "You have discovered [girl.name]'s disgust for [fix.name]."
 
@@ -1793,10 +1816,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, 50)
 
             if not girl.personality_unlock[fix.name]:
+                $ xxx4 = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("pos fixations")
             else:
+                $ xxx4 = girl_related_dict[fix.name]
                 "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
 
         elif fix.name in [f.name for f in girl.neg_fixations]:
@@ -1816,10 +1841,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, -75)
 
             if not girl.personality_unlock[fix.name]:
+                $ xxx4 = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("neg fixations")
             else:
+                $ xxx4 = girl_related_dict[fix.name]
                 "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
 
         else:
