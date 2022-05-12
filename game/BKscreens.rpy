@@ -5253,7 +5253,7 @@ screen item_profile(it, act):
             text "" size 8
 
             if isinstance(type, ItemType):
-                text "{color=[col]}" + setting_name_dict[it.type.name] + "{/color}" xalign 0.5 size 18
+                text "{color=[col]}" + it.type.name + "{/color}" xalign 0.5 size 18
             else:
                 text "{color=[col]}" + setting_name_dict[it.target.capitalize()] + "{/color}" xalign 0.5 size 18
 
@@ -6853,7 +6853,7 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         xsize 0.75
 
         hbox xfill True:
-            text header xalign 0.0 size 32 font "MATURASC.TTF" color c_black
+            text header xalign 0.0 size 32 font "1.TTF" color c_black
             fixed fit_first True xalign 1.0 yalign 0.5:
                 use close(act=Return(True), name = "close")
 

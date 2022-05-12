@@ -958,7 +958,7 @@ translate chinese slave_train_d526b941:
 translate chinese slave_advanced_training_e589ac84:
 
     # "[text1]"
-    "(text1)"
+    "[text1]"
 
 # game/BKinteractions.rpy:1783
 translate chinese slave_advanced_training_e589ac84_1:
@@ -976,7 +976,7 @@ translate chinese slave_advanced_training_cfcd6460:
 translate chinese slave_advanced_training_cdeeb7c3:
 
     # "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
-    "因为[girl.name]喜欢[b][xxx4][/b]，所以她进步得更快了。"
+    "因为[girl.name]喜欢{b}[xxx4]{/b}，所以她进步得更快了。"
 
 # game/BKinteractions.rpy:1806
 translate chinese slave_advanced_training_e589ac84_2:
@@ -994,7 +994,7 @@ translate chinese slave_advanced_training_47722ac0:
 translate chinese slave_advanced_training_9e16c264:
 
     # "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
-    "因为[girl.name]讨厌[b][xxx4][/b]，所以她的进度变慢了。"
+    "因为[girl.name]讨厌{b}[xxx4]{/b}，所以她的进度变慢了。"
 
 # game/BKinteractions.rpy:1834
 translate chinese slave_advanced_training_f0742fc4:

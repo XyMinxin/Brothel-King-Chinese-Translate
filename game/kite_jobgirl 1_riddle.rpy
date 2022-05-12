@@ -186,7 +186,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "神秘信件", message = "王子啊，你要知道，在那几年之间亚特兰蒂斯沉没\n和金碧辉煌的城市。谢罗斯之子崛起的岁月\n在太阳升起时站在四边\n在众多星星下站在三边... \n 汝应命名为继任者。")
+    call screen letter(header = "{font=[gui.yishu]}神秘信件{/font}", message = "　　王子啊，你要知道\n在那几年之间亚特兰蒂斯沉没和金碧辉煌的城市\n谢罗斯之子崛起的岁月，在太阳升起时站在四边，在众多星星下站在三边...\n汝应命名为继任者")
 
     play sound s_dress
 

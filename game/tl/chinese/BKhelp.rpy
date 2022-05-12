@@ -934,7 +934,7 @@ translate chinese jobs_introduction_ef2e62a3:
 translate chinese jobs_introduction_f7b43498:
 
     # sill "{b}Fetish{/b} includes BDSM, spanking, fisting, and all the weirder sexual practices. A girl needs a good {b}fetish{/b} and {b}obedience{/b} skill to succeed. {b}Refinement{/b} and {b}anal{/b} skill also factor in fetish acts."
-    sill "[b]性癖[/b]包括BDSM、打屁股、拳打脚踢和所有奇怪的性行为。一个女孩需要良好的恋物癖和顺从才能成功。{b}优雅{/b}和{b}肛门{/b}技能也在恋物行为中起作用。"
+    sill "{b}性癖{/b}包括BDSM、打屁股、拳打脚踢和所有奇怪的性行为。一个女孩需要良好的恋物癖和顺从才能成功。{b}优雅{/b}和{b}肛门{/b}技能也在恋物行为中起作用。"
 
 # game/BKhelp.rpy:668
 translate chinese jobs_introduction_efdea71a:

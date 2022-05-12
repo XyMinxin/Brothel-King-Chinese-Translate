@@ -955,7 +955,7 @@ label slave_chat_tastes(girl):
                 $ thing_cn = girl_related_dict[thing]
             else:
                 $ thing_cn = thing
-                
+
             call dialogue(girl, "slave chat tastes dislikes") from _call_dialogue_151
 
             $ girl.personality_unlock["dis_" + thing] = True
@@ -1298,9 +1298,9 @@ label slave_remove_fixation(girl):
             menu_list = [] #[("Choose a fixation to work on", None)]
             for fix in neg_fix:
                 if fix.name in girl.locked_fix:
-                    menu_list.append(("{color=[c_lightgrey]}" + fix.name.capitalize() + " (locked){/color}", fix))
+                    menu_list.append(("{color=[c_lightgrey]}" + girl_related_dict[fix.name.capitalize()] + " (locked){/color}", fix))
                 else:
-                    menu_list.append((fix.name.capitalize(), fix))
+                    menu_list.append((girl_related_dict[fix.name.capitalize()], fix))
 
             menu_list.append(("Go back", "back"))
             renpy.say(you, "Today, I want you to overcome your disgust for...", interact=False)

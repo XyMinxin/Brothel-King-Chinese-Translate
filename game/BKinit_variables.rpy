@@ -1188,7 +1188,7 @@ init python:
                                 "MC met" : GirlRecentEvent(type="MC met", base_description="你见过%s了.", encourage=False, discipline=False),
                                 "MC friend" : GirlRecentEvent(type="MC friend", base_description="你和%s已经成为朋友.", encourage=False, discipline=False),
                                 "MC flower" : GirlRecentEvent(type="MC flower", base_description="你现在可以给%s献花了.", encourage=False, discipline=False),
-                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="s现在是你女朋友.", encourage=False, discipline=False),
+                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="%s现在是你女朋友.", encourage=False, discipline=False),
                                 "MC lover" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的爱人.", encourage=False, discipline=False),
                                 "MC job" : GirlRecentEvent(type="MC job", base_description="现在你可以给%s提供一份工作.", encourage=False, discipline=False),
                                 "kidnapped" : GirlRecentEvent(type="kidnapped", base_description="她被%s绑架了.", encourage=False, discipline=False),

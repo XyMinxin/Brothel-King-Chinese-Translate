@@ -5442,7 +5442,7 @@ label stella_invitation():
 
     play sound s_dress
 
-    call screen letter(header = "阅后即焚", message = "每个月的第一个星期二，商品会被带到公会区。寻找一个名为“狂热”的私人俱乐部，并向他们展示护身符。\n\n别指望我再提供什么情报了，这太危险了。我的身份几乎暴露了，我不干了。",
+    call screen letter(header = "{font=[gui.yishu]}阅后即焚{/font}", message = "每个月的第一个星期二，商品会被带到公会区。寻找一个名为“狂热”的私人俱乐部，并向他们展示护身符。\n\n别指望我再提供什么情报了，这太危险了。我的身份几乎暴露了，我不干了。",
                           signature = "DT")
 
     you "How mysterious... Merchandise? A private club? A cheesy charm? Who wrote this..."
@@ -16643,7 +16643,7 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "情书", message = "亲爱的比尔，\n\n自从你离开我之后，我就没有好好睡过觉也没有好好吃过东西。我感觉我在这个世界上是如此孤独。\n你给我留下了这么多问题。你曾经爱过我吗？\n我将为你的行为受到惩罚，但这是我乐意接受的惩罚，因为我爱你。我所想要的是你给我一个信号。如果有必要，我可以背叛教团。如果必须的话，我可以为你偷东西。\n\n不要离开我，我的爱人。我愿意做任何事。",
+    call screen letter(header = "{font=[gui.yishu]}情书{/font}", message = "亲爱的比尔，\n\n自从你离开我之后，我就没有好好睡过觉也没有好好吃过东西。我感觉我在这个世界上是如此孤独。\n你给我留下了这么多问题。你曾经爱过我吗？\n我将为你的行为受到惩罚，但这是我乐意接受的惩罚，因为我爱你。我所想要的是你给我一个信号。如果有必要，我可以背叛教团。如果必须的话，我可以为你偷东西。\n\n不要离开我，我的爱人。我愿意做任何事。",
                           signature = "永远属于你的，巴斯蒂亚 {font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
