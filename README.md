@@ -18,6 +18,10 @@
 
 注意游戏本体是没有人物包的，需要另外下载
 
+[游戏论坛的链接](https://henthighschool.net/brothel-king/)
+
+[基础人物包链接](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file)
+
 [国外人物包链接](https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808)
 
 ## 如果不是中文的或者报错了
@@ -29,6 +33,8 @@
 可能翻译版本有问题。
 
 目前翻译的游戏版本是：0.2 alpha （2022/2/28）
+
+虽然游戏版本可能会比原版慢很多，但只要原版最新补丁不修改图片格式等等的，用汉化补丁覆盖上去一般都没问题
 
 tips1：如果游戏中出现□□□无法显示，那么可能game文件夹下的字体文件可能有问题。
 
@@ -50,5 +56,7 @@ tips4：如果你觉得哪句翻译的不对，或者感觉怪怪的，建议留
 - [x] 商店物品
 - [x] 任务界面
 - [ ] 游戏剧情（第二章剧情还没翻译）
+
+**现在基本就我汉化，平时也有私事，汉化进度极慢请理解**
 
 **本汉化基0.15版本的汉化版进行修改、添加以及润色文本**
