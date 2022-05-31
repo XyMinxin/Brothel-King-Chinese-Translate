@@ -3551,7 +3551,13 @@ screen brothel():
                                                 action Function(MC.cycle_trainers)
 
                                 vbox:
-                                    text "{b}" + MC.current_trainer.name + "{/b}" size 18 xalign 0.5
+                                    
+                                    if MC.current_trainer.name in trainer_name_dict2:
+                                        $ trainercnname = trainer_name_dict2[MC.current_trainer.name]
+                                    else:
+                                        $ trainercnname = MC.current_trainer.name
+
+                                    text "{b}" + trainercnname + "{/b}" size 18 xalign 0.5
                                     text "\n" + MC.current_trainer.trainer_description size 14 justify True
 
                             else:

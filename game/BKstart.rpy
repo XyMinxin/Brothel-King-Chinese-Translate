@@ -388,7 +388,10 @@ label init_game():
             MC.trainers.append(NPC_satella)
             MC.trainers.append(NPC_bast)
             MC.trainers.append(NPC_stella)
-#            MC.trainers.append(NPC_sad_sill)
+            # MC.trainers.append(NPC_ramias)
+            # MC.trainers.append(NPC_goldie)
+            # MC.trainers.append(NPC_taxgirl)
+            # MC.trainers.append(NPC_sad_sill)
 
 
     #### BROTHELS ####

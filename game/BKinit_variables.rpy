@@ -718,13 +718,13 @@ init -4 python:
     merchant_dict = {"Stella" : "stallion", "Goldie" : "beast", "Willow" : "monster", "Gina" : "machine"}
 
     merchant_greetings = {
-                          "Stella greeting" : "呦, 看谁来了. 我希望你不要浪费我的时间.",
-                          "Stella bought something" : "好吧，把金子给我，它就是你的了. 现在你可以走了，除非你还准备要买别的东西.{w=2.0}{nw}",
-                          "Stella no money" : "你钱不够吧，伙计，离开这里.",
+                          "Stella greeting" : "呦！看谁来了。我希望你不要浪费我的时间。",
+                          "Stella bought something" : "赶紧的，把金币给我，现在它就是你的了。你可以走了，除非你还准备要买别的东西。{w=2.0}{nw}",
+                          "Stella no money" : "你钱不够吧，伙计，没钱赶紧离开这里。",
 
-                          "Goldie greeting" : "我该如何帮助你",
-                          "Goldie bought something" : "谢你！请小心轻放.{w=2.0}{nw}",
-                          "Goldie no money" : "对不起，你现在好像没有钱.",
+                          "Goldie greeting" : "有什么我可以帮到你的吗？",
+                          "Goldie bought something" : "谢谢！小心轻放。{w=2.0}{nw}",
+                          "Goldie no money" : "抱歉，你好像没有钱了。",
 
                           "Willow greeting" : "嘿，如果它不是我的友好邻居!你会惊奇地看到我刚刚抓到的东西.",
                           "Willow bought something" : "成交，就这样…你会玩得很开心的!{w=2.0}{nw}",

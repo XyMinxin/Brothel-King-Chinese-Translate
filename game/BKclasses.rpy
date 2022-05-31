@@ -1385,7 +1385,13 @@ init -2 python:
         def unlock_trainer(self):
             if self not in MC.trainers:
                 MC.trainers.append(self)
-                unlock_achievement("trainer " + self.name.lower())
+
+                if self.name.lower() in trainer_name_dict :
+                    trainercnname = trainer_name_dict[self.name.lower()]
+                else:
+                    trainercnname = self.name.lower()
+
+                unlock_achievement("trainer " + trainercnname)
 
         def can_upgrade(self):
             if self.upgrade_level + 1 in shop_upgrades.keys():

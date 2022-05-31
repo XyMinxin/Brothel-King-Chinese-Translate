@@ -982,6 +982,28 @@ init -4 python:
                           "Clockwork billboard" : "钟表广告牌",
                           }
 
+    ## 培训师名称 ##
+    trainer_name_dict = {
+                        "玛雅" : "maya",
+                        "伦萨" : "renza",
+                        "萨特拉" : "satella",
+                        "法拉" : "farah",
+                        "莉迪" : "lydie",
+                        "斯特拉" : "stella",
+                        "贝斯特" : "bast",
+                        "戈尔迪" : "goldie",
+                        "公会女郎" : "taxgirl",
+                        None : "(trainer_name_dict)没有值",
+                        }
+
+    ## 培训师名称2 ##
+    trainer_name_dict2 = {
+                        "Ramias" : "拉米阿斯",
+                        "Stella" : "斯特拉",
+                        "Goldie" : "戈尔迪",
+                        None : "(trainer_name_dict2)没有值",
+                        }
+
 #### BALANCE / CHEATS ####
 
     ## 调试模式 ##

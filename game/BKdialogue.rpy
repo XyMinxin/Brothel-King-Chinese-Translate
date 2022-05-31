@@ -2180,7 +2180,7 @@ init -1 python:
 
 ## START MEEK DIALOGUE 03.February.2022
 
-    add_dialogue("free_greetings_polite", ("meek", "very sub", "pervert"), ("D-do I know you? My name is [girl.fullname]."), love=2)
+    add_dialogue("free_greetings_polite", ("meek", "very sub", "pervert"), ("我认识你吗？我的名字是[girl.fullname]。"), love=2)
     add_dialogue("free_greetings_casual", ("meek", "generic", "very idealist", "very sub", "prude"), ("Oh, hi. I'm [girl.fullname]. Nice to meet you."), love=2)
     add_dialogue("free_greetings_rude", ("meek", "very sub", "nerd"), ("W-what? Don't scare me like that. I'm [girl.fullname]."), love=-1)
 
