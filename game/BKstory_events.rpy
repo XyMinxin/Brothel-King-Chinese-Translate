@@ -17760,7 +17760,7 @@ label meet_ramias():
 
     ramias "You can even have one of these crappy weapons for free... I don't want you to tell everyone you meet that I ripped you off. *shrug*"
 
-    call receive_item(get_rand_item(item_type=IT_Weapon), "拉米亚斯递给你一个生锈的%s。", use_article=False) from _call_receive_item_10
+    call receive_item(get_rand_item(item_type=IT_Weapon), "拉米阿斯递给你一个生锈的%s。", use_article=False) from _call_receive_item_10
 
     $ arena.action = True
 
