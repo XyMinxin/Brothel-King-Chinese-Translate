@@ -22,7 +22,7 @@
 
 [游戏论坛的链接](https://henthighschool.net/brothel-king/)
 
-[基础人物包下载](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file)
+[国外基础人物包](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file)
 
 [国外人物包表格](https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808)
 
