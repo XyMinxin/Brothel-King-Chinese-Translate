@@ -71,10 +71,10 @@ tips3：如果出现漏翻什么的，反馈给我哪里出现漏翻，具体做
 
 断断续续翻了那么久还是有那么多，实在是没动力翻下去了，等之后还想玩了再考虑继续翻剩下的吧。
 
-问题反馈或者意见的话用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)或者[Q群678260008](https://jq.qq.com/?_wv=1027&k=K3woXpog)
+问题反馈或者意见的话用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issu)
 
-虽然群里也没什么人
-​
+虽然群里也没什么
+
 **游戏汉化基于0.15版本的汉化版进行修改、添加以及润色文本**
 
 **未经允许禁止转售或转载，贴吧私信里都看到好几个被骗的了**
