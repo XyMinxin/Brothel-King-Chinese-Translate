@@ -14,7 +14,7 @@
 
 ②安装补丁：[下载补丁覆盖进本体](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
 
-③安装汉化：[下载汉化覆盖进本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.1/BK-v0.2alpha-Chinese.zip)
+③安装汉化：[下载汉化覆盖进本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.2/BK-v0.2alpha-Chinese.zip)
 
 这样进游戏就是中文的啦~
 
@@ -22,7 +22,7 @@
 
 [游戏论坛的链接](https://henthighschool.net/brothel-king/)
 
-[基础人物包下载](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file)
+[国外基础人物包](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file)
 
 [国外人物包表格](https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808)
 
@@ -30,15 +30,19 @@
 
 # 标签工具v2.8.14 / Tagging Tool v2.8.14
 
-①下载工具：[工具本体原贴](https://henthighschool.net/brothel-king/picturenamer/)
+①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
-②安装补丁
+②安装补丁: [下载补丁覆盖进本体](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
 
-③安装汉化：[下载汉化覆盖进本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.1/TaggingTool-v2.8.14-Chinese.zip)
+③安装汉化：[下载汉化覆盖进本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.2/TaggingTool-v2.8.14-Chinese.zip)
 
 这样工具就是中文的啦~
 
+[工具原贴的链接](https://henthighschool.net/brothel-king/picturenamer/)
+
 <img src="https://i.ibb.co/f1nrw0F/image.png" alt="image" border="0">
+
+# 其余问题
 
 ## 如果不是中文的或者报错了
 
@@ -69,12 +73,12 @@ tips3：如果出现漏翻什么的，反馈给我哪里出现漏翻，具体做
 
 ## 最后一些话
 
-断断续续翻了那么久还是有那么多，实在是没动力翻下去了，等之后还想玩了再考虑继续翻剩下的吧。
+断断续续翻了那么久还是有那么多，实在是没动力翻下去了，等之后还玩再考虑继续翻剩下的吧。
 
-问题反馈或者意见的话用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)或者[Q群678260008](https://jq.qq.com/?_wv=1027&k=K3woXpog)
+我在想等下次回来汉化完并且更新到0.2正式版后，他论坛里面的那些mod有点想玩，说不定会把一些mod也给汉化了吧（画饼.jpg）
 
-虽然群里也没什么人
-​
+问题反馈或者意见的话用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issu)
+
 **游戏汉化基于0.15版本的汉化版进行修改、添加以及润色文本**
 
 **未经允许禁止转售或转载，贴吧私信里都看到好几个被骗的了**
