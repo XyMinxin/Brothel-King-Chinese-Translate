@@ -2932,13 +2932,13 @@ init -3 python:
             if girl:
                 if girl.personality_unlock[act]:
                     if act in girl.pos_acts and act in girl.neg_acts:
-                        text1 = text1 + " ({font=[gui.fuhao]}☯{/font})"
+                        text1 = text1 + "({font=[gui.fuhao]}☯{/font})"
                     elif act in girl.pos_acts:
-                        text1 = text1 + " ({font=[gui.fuhao]}❤{/font})"
+                        text1 = text1 + "({font=[gui.fuhao]}❤{/font})"
                     elif act in girl.neg_acts:
-                        text1 = text1 + " ({font=[gui.fuhao]}⚡{/font})"
+                        text1 = text1 + "({font=[gui.fuhao]}⚡{/font})"
                 else:
-                    text1 = text1 + " (?)"
+                    text1 = text1 + "(?)"
 
             if condition_met:
                 menu_list.append((text1, act))
@@ -2965,11 +2965,11 @@ init -3 python:
             if girl:
                 if girl.personality_unlock[fix.name]:
                     if fix.name in pos_fix:
-                        text1 = text1 + " ({font=[gui.fuhao]}❤{/font})"
+                        text1 = text1 + "({font=[gui.fuhao]}❤{/font})"
                     elif fix.name in neg_fix:
-                        text1 = text1 + " ({font=[gui.fuhao]}⚡{/font})"
+                        text1 = text1 + "({font=[gui.fuhao]}⚡{/font})"
                 else:
-                    text1 = text1 + " (?)"
+                    text1 = text1 + "(?)"
 
             menu_list.append((text1, fix))
 
@@ -3038,21 +3038,21 @@ init -3 python:
             if act in girl.pos_acts and act in girl.neg_acts:
                 return "({font=[gui.fuhao]}☯{/font})"
             elif act in girl.pos_acts:
-                return " ({font=[gui.fuhao]}❤{/font})"
+                return "({font=[gui.fuhao]}❤{/font})"
             elif act in girl.neg_acts:
-                return " ({font=[gui.fuhao]}⚡{/font})"
+                return "({font=[gui.fuhao]}⚡{/font})"
             else:
                 return " "
         else:
-            return " (?)"
+            return "(?)"
 
     def get_fix_weakness_symbol(girl, fix_name):
 
         if girl.personality_unlock[fix_name]:
             if fix_name in [fix.name for fix in girl.pos_fixations]:
-                return " ({font=[gui.fuhao]}❤{/font})"
+                return "({font=[gui.fuhao]}❤{/font})"
             elif fix_name in [fix.name for fix in girl.neg_fixations]:
-                return " ({font=[gui.fuhao]}⚡{/font})"
+                return "({font=[gui.fuhao]}⚡{/font})"
             else:
                 return " "
         else:

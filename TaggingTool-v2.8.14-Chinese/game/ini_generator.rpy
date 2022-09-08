@@ -505,14 +505,17 @@ label generate_ini():
             $ ini_background += "\n\n"
 
             $ ini_background += "## 自定义起源 - 你可以提供一个自定义的起源，或者只是\"随机(random)\"。(如果使用自定义起源, 请确保在下面包含起源描述)\n\n"
-            menu:
-                "{b}起源{/b} - 你是否愿意写一句对话，给这个女孩定制一个起源故事吗？"
-                "是":
-                    $ ini_background += "origin = \"" + str(renpy.input("{b}起源名称{/b} - 说明她被抚养的地点。", default="")) + "\" ; 起源名称 - 说明她被抚养的地点\n"
-                    $ ini_background += "origin_description = \"" + str(renpy.input("{b}起源描述{/b} - 为你的女孩写下一段对话，在对话中她谈到了她的出生地。", default="")) + "\" ; 起源描述 - 必须用女孩第一人称描写。为你的女孩写下一段对话，在对话中她谈到了她的出生地\n"
+            # menu:
+            #     "{b}起源{/b} - 你是否愿意写一句对话，给这个女孩定制一个起源故事吗？"
+            #     "是":
+            #         $ ini_background += "origin = \"" + str(renpy.input("{b}起源名称{/b} - 说明她被抚养的地点。", default="")) + "\" ; 起源名称 - 说明她被抚养的地点\n"
+            #         $ ini_background += "origin_description = \"" + str(renpy.input("{b}起源描述{/b} - 为你的女孩写下一段对话，在对话中她谈到了她的出生地。", default="")) + "\" ; 起源描述 - 必须用女孩第一人称描写。为你的女孩写下一段对话，在对话中她谈到了她的出生地\n"
+            #
+            #     "否，让游戏为她生成一个起源故事":
+            #         $ ini_background += "origin = \"random\"\n## origin_description = None\n"
 
-                "否，让游戏为她生成一个起源故事":
-                    $ ini_background += "origin = \"random\"\n## origin_description = None\n"
+            $ ini_background += "origin = \"random\" ; 起源名称 - 说明她被抚养的地点\n"
+            $ ini_background += "origin_description = \"None\" ; 起源描述 - 必须用女孩第一人称描写。为你的女孩写下一段对话，在对话中她谈到了她的出生地\n"
 
             $ ini_background += "## 如果提供，在随机化之后创建一个具有此模板的女孩时，调用此函数。\n## 它必须以'girl'作为参数。它必须不中断游戏流程。(只限于python，没有ren'py调用或跳转)\n## 在_events.rpy或另一个自定义的.rpy文件的init块中写入该函数。\n"
             $ ini_background += "## init_function = None ; 提供一个自定义的函数名称，在女孩创建后被调用。(在引号之间)\n\n"

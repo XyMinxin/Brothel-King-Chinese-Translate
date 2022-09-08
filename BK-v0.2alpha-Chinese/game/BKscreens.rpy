@@ -524,7 +524,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                     $ text1 += "\n{color=[c_red]}妓女{/color}"
                     $ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + girl_related_dict[girl.job.capitalize()] + "并兼职妓女."
         else:
-            $ text1 = "无工作"
+            $ text1 = "休息"
             $ but_ttip = "{b}" + girl.fullname + "{/b}正在休息."
         $ text_col = job_color[girl.job]
 
@@ -735,7 +735,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
             else:
                 $ text3 = girl.name[0] + ". " + girl.lastname
 
-            text text3 size 16 drop_shadow (1, 1) font "maturasc.TTF" xalign 0.05
+            text text3 size 16 drop_shadow (1, 1) font "DejaVuSans.TTF" xalign 0.05
 
             text text1 bold True size 14 color text_col drop_shadow (1, 1):
                 xalign 0.05
@@ -815,7 +815,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         xsize 12
                         ysize 85
 
-            text girl.fullname drop_shadow (1, 1) font "maturasc.TTF"
+            text girl.fullname drop_shadow (1, 1) font "DejaVuSans.TTF"
 
             text text1 bold True size 15 color text_col drop_shadow (1, 1):
                 xpos 125
@@ -1940,7 +1940,7 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = "这个女孩按日程表今天休息."
 
             elif not girl.job:
-                $ text1 = "无工作"
+                $ text1 = "休息"
                 $ ttip = "未分配工作. 这名女孩已被安排休息，等待进一步的指示."
 
             elif girl.work_whore:
@@ -2051,7 +2051,7 @@ screen button_overlay(girl, context="girls"):
             if not girls_firstvisit:
                 key "a" action (SetVariable("selected_girl", girl), Return("stats"))
 
-                textbutton "统计数据":
+                textbutton "统计":
                     text_size 14
                     action (SetVariable("selected_girl", girl), Return("stats"))
 
@@ -3551,7 +3551,7 @@ screen brothel():
                                                 action Function(MC.cycle_trainers)
 
                                 vbox:
-                                    
+
                                     if MC.current_trainer.name in trainer_name_dict2:
                                         $ trainercnname = trainer_name_dict2[MC.current_trainer.name]
                                     else:
@@ -7848,7 +7848,7 @@ screen girl_mix(show_rating=False):
     frame xfill True yfill True:
         has vbox
 
-        text "女生组合" bold True drop_shadow (1, 1) font "maturasc.TTF" xpos 6
+        text "女生组合" bold True drop_shadow (1, 1) font "DejaVuSans.TTF" xpos 6
 
         hbox box_wrap True:
             for mix_name in sorted(persistent.girl_mix):
@@ -7891,7 +7891,7 @@ screen girl_mix(show_rating=False):
                                 # else:
                                 #     text "" color c_crimson size 56 xalign 0.5 yalign 0.5
                             vbox xsize 360 yalign 0.5:
-                                text get_name(gp, full=True) drop_shadow (1, 1) font "maturasc.TTF" size 18
+                                text get_name(gp, full=True) drop_shadow (1, 1) font "DejaVuSans.TTF" size 18
                                 text "by " + creator_dict[gp] drop_shadow (1, 1) size 14 italic True
                                 if show_rating:
                                     text "{size=14}评价: {/size}" + rating size 18 drop_shadow (1, 1) # drop_shadow_color c_white
@@ -8041,8 +8041,8 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "" + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
-                text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
+                text "" + contract.location.name drop_shadow (1, 1) font "DejaVuSans.TTF" color c_brown
+                text contract.title drop_shadow (1, 1) font "DejaVuSans.TTF" color c_prune
 
             vbox spacing 3:
                 add contract.location.get_pic(200, 140) insensitive_alpha 0.33 idle_alpha 0.66 hover_alpha 1.0
@@ -8090,8 +8090,8 @@ screen contract_result(contract, x=450):
         has vbox spacing 12
 
         vbox spacing 3:
-            text "" + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
-            text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
+            text "" + contract.location.name drop_shadow (1, 1) font "DejaVuSans.TTF" color c_brown
+            text contract.title drop_shadow (1, 1) font "DejaVuSans.TTF" color c_prune
 
         vbox spacing 3:
             add contract.location.get_pic(200, 140) insensitive_alpha 0.33 idle_alpha 0.66 hover_alpha 1.0
