@@ -32,7 +32,7 @@
 
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
-②安装补丁: [下载补丁覆盖进本体](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
+②安装补丁：[下载补丁覆盖进本体](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
 
 ③安装汉化：[下载汉化覆盖进本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.2/TaggingTool-v2.8.14-Chinese.zip)
 
