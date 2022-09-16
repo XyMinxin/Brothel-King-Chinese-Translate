@@ -4,7 +4,7 @@
 translate chinese sewer_girl_returns_006c950d:
 
     # "As you get on with your morning routine, the brothel receives an unexpected visitor."
-    "当你继续早上的例行公事时，妓院接待了一位不速之客。"
+    "当你继续早上的例行公事时，青楼接待了一位不速之客。"
 
 # game/BKchapter2.rpy:26
 translate chinese sewer_girl_returns_fb83d71b:
@@ -387,7 +387,7 @@ translate chinese sewer_girl_returns_menu_43371141:
 # game/BKchapter2.rpy:240
 translate chinese sewer_girl_returns_menu_e4e3d41e:
 
-    # you "Don't worry. Sill will wash your clothes."
+    # you "Don't worry. 希露will wash your clothes."
     you "不用担心。窗台会洗你的衣服。"
 
 # game/BKchapter2.rpy:242
@@ -448,7 +448,7 @@ translate chinese sewer_girl_returns_menu_852b01f9:
 translate chinese sewer_girl_returns_menu_617e6ef6:
 
     # sewer_woman "Sorry, I really have to go. After what happened last time, I swore never to walk the streets of Zan alone at night again."
-    sewer_woman "对不起，我真的得走了。经过上次的事情，我发誓再也不会在晚上一个人走在赞街上。"
+    sewer_woman "对不起，我真的得走了。经过上次的事情，我发誓再也不会在晚上一个人走在瓒城的街道上。"
 
 # game/BKchapter2.rpy:277
 translate chinese sewer_girl_returns_menu_a792b112:
@@ -484,7 +484,7 @@ translate chinese sewer_girl_returns_menu_a3a66a5a:
 translate chinese c2_intro_0df2cb5f:
 
     # "It's a bright new day, and you are filled with optimism as you give one last look to the empty shell of your old brothel."
-    "这是新的一天，当你最后一次看一眼旧妓院的空壳时，你充满了乐观。"
+    "这是新的一天，当你最后一次看一眼旧青楼的空壳时，你充满了乐观。"
 
 # game/BKchapter2.rpy:318
 translate chinese c2_intro_d402a041:
@@ -508,7 +508,7 @@ translate chinese c2_intro_04e32dac:
 translate chinese c2_intro_679013b9:
 
     # kosmo "So you finally admitted your worthlessness as a brothel owner, eh?"
-    kosmo "所以你终于承认你作为妓院老板一文不值了，嗯？"
+    kosmo "所以你终于承认你作为青楼老板一文不值了，嗯？"
 
 # game/BKchapter2.rpy:332
 translate chinese c2_intro_74ec9a53:
@@ -544,7 +544,7 @@ translate chinese c2_intro_755a4a88:
 translate chinese c2_intro_8a0035a5:
 
     # you "We won't be missing that place! Especially the smell... Right, Sill?"
-    you "我们不会错过那个地方的！尤其是气味……对吧，希尔？"
+    you "我们不会错过那个地方的！尤其是气味……对吧，希露？"
 
 # game/BKchapter2.rpy:366
 translate chinese c2_intro_9e248dde:
@@ -568,13 +568,13 @@ translate chinese c2_intro_50a60b11:
 translate chinese c2_intro_fedbb43c:
 
     # "Sill can barely stand under the weight of a giant backpack filled with clothes, tools, silverware, carpets, supplies, and your personal collection of lead weights (only you think that's cool). The bag threatens to crush her with every step."
-    "Sill 几乎无法承受一个装满衣服、工具、银器、地毯、用品和您个人收藏的铅锤（只有您认为这很酷）的巨大背包的重量。袋子每走一步都有压垮她的危险。"
+    "希露几乎无法承受一个装满衣服、工具、银器、地毯、用品和您个人收藏的铅锤（只有您认为这很酷）的巨大背包的重量。袋子每走一步都有压垮她的危险。"
 
 # game/BKchapter2.rpy:376
 translate chinese c2_intro_361902c5:
 
     # you "Ah, Sill, it's just like you to always complain. Can't you just enjoy a stroll?"
-    you "啊，西尔，就像你总是抱怨一样。不能随便逛逛吗？"
+    you "啊，希露，就像你总是抱怨一样。不能随便逛逛吗？"
 
 # game/BKchapter2.rpy:378
 translate chinese c2_intro_6111f1b3:
@@ -586,13 +586,13 @@ translate chinese c2_intro_6111f1b3:
 translate chinese c2_intro_7e3c797f:
 
     # you "Let's see this place old man Gio found us. It better be an upgrade..."
-    you "让我们看看Gio老人找到我们的这个地方。最好是升级..."
+    you "让我们看看Gio老先生给我们找到的这个地方。它最好是升级版..."
 
 # game/BKchapter2.rpy:386
 translate chinese c2_intro_1be66adb:
 
     # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district.name]."
-    "不让 Sill 的抱怨破坏你的心情，你满意地看着你离开贫民窟，进入 Zan 热门街区的繁华街道，踏入 [district.name]。"
+    "不让希露的抱怨破坏你的心情，你满意地看着你离开贫民窟进入了瓒城的繁华街道，踏入 [district.name]。"
 
 # game/BKchapter2.rpy:389
 translate chinese c2_intro_b63ec5de:
@@ -610,13 +610,13 @@ translate chinese c2_intro_3cdf850e:
 translate chinese c2_intro_61ccd6d1:
 
     # you "Just the kind of place where a brothel will blend right in... I'm sure it will be a great location for [brothel.name]."
-    you "只是妓院将融入其中的那种地方……我相信这将是 [brothel.name] 的好地方。"
+    you "只是青楼将融入其中的那种地方……我相信这将是 [brothel.name] 的好地方。"
 
 # game/BKchapter2.rpy:396
 translate chinese c2_intro_2c601bfe:
 
     # "Workers, merchants and craftsmen mingle in the busiest neighbourhood of the city. Zan's main market is just a few streets away, the noise of a thousand people bartering echoing in your ears."
-    "工人、商人和工匠在城市最繁忙的街区混在一起。Zan的主要市场就在几条街之外，千人交易的声音在你耳边回荡。"
+    "工人、商人和工匠在城市最繁忙的街区混在一起。瓒城的主要市场就在几条街之外，千人交易的声音在你耳边回荡。"
 
 # game/BKchapter2.rpy:398
 translate chinese c2_intro_f0bb559e:
@@ -634,7 +634,7 @@ translate chinese c2_intro_556c5d97:
 translate chinese c2_intro_019fcc81:
 
     # you "Look, Sill, I think this is the street Gio mentioned."
-    you "看，Sill，我想这就是 Gio 提到的那条街。"
+    you "看，希露，我想这就是 Gio 提到的那条街。"
 
 # game/BKchapter2.rpy:408
 translate chinese c2_intro_c642564b:
@@ -658,7 +658,7 @@ translate chinese c2_intro_6dd50508:
 translate chinese c2_intro_ed7adc54:
 
     # "Sill is crawling on all fours now, she cannot even gather the strength to look up."
-    "西尔现在四肢着地爬行，她连抬头看的力气都没有。"
+    "希露现在四肢着地爬行，她连抬头看的力气都没有。"
 
 # game/BKchapter2.rpy:416
 translate chinese c2_intro_68c19088:
@@ -670,13 +670,13 @@ translate chinese c2_intro_68c19088:
 translate chinese c2_intro_ff93180b:
 
     # sill "That's not, *pant*... A moot... *pant*. And the correct word is 'moat', anyway... *pant*"
-    sill "那不是，*喘气*...没有实际意义... *喘气*。无论如何，正确的词是“护城河”... *pant*"
+    sill "那不是，*喘气*...没有实际意义... *喘气*。无论如何，正确的词是“护城河”... *喘气*"
 
 # game/BKchapter2.rpy:420
 translate chinese c2_intro_4beb38f9:
 
     # sill "I think it's... *pant*, a public urinal. Old houses have them, *pant*... sometimes."
-    sill "我认为它是... *pant*，一个公共小便池。老房子有它们，*喘气*...有时。"
+    sill "我认为它是... *喘气*，一个公共小便池。老房子有它们，*喘气*...有时。"
 
 # game/BKchapter2.rpy:422
 translate chinese c2_intro_3f3bb5b1:
@@ -706,7 +706,7 @@ translate chinese c2_intro_04e7ba3c:
 translate chinese c2_intro_89bfcd70:
 
     # sill "Aaw... Master... I'm going to die..."
-    sill "啊……师父……我要死了……"
+    sill "啊……主人……我要死了……"
 
 # game/BKchapter2.rpy:432
 translate chinese c2_intro_8cc30898:
@@ -718,7 +718,7 @@ translate chinese c2_intro_8cc30898:
 translate chinese c2_intro_25f86d6a:
 
     # "Shoving Sill and her bags inside, you decide to enjoy a little break from all your hard work and step outside to take a look at your new neighbourhood."
-    "把西尔和她的包推到里面，你决定从所有的辛勤工作中休息一下，然后走到外面看看你的新社区。"
+    "把希露和她的包推到里面，你决定从所有的辛勤工作中休息一下，然后走到外面看看你的新社区。"
 
 # game/BKchapter2.rpy:440
 translate chinese c2_intro_5700888f:
@@ -952,13 +952,13 @@ translate chinese c2_intro_89684ffe:
 translate chinese c2_intro_f72f6c51:
 
     # ramias "I think she means this place is a brothel."
-    ramias "我想她的意思是这个地方是妓院。"
+    ramias "我想她的意思是这个地方是青楼。"
 
 # game/BKchapter2.rpy:618
 translate chinese c2_intro_99bea593:
 
     # riche "A brothel? You don't mean..."
-    riche "妓院？你不是说..."
+    riche "青楼？你不是说..."
 
 # game/BKchapter2.rpy:620
 translate chinese c2_intro_25e3ae8e:
@@ -970,7 +970,7 @@ translate chinese c2_intro_25e3ae8e:
 translate chinese c2_intro_cbf322b0:
 
     # ramias "Yes, a brothel, a place where people come to meet and f..."
-    ramias "是的，妓院，人们来此相聚的地方……"
+    ramias "是的，青楼，人们来此相聚的地方……"
 
 # game/BKchapter2.rpy:634
 translate chinese c2_intro_31bcae19:
@@ -982,13 +982,13 @@ translate chinese c2_intro_31bcae19:
 translate chinese c2_intro_5a9a2780:
 
     # katryn "We know what a brothel is..."
-    katryn "我们知道妓院是什么..."
+    katryn "我们知道青楼是什么..."
 
 # game/BKchapter2.rpy:638
 translate chinese c2_intro_191eccf4:
 
     # gurigura "I don't! What's a brothel, Katryn?"
-    gurigura "我不！什么是妓院，卡特琳？"
+    gurigura "我不！什么是青楼，卡特琳？"
 
 # game/BKchapter2.rpy:640
 translate chinese c2_intro_fe38cc2e:
@@ -1438,7 +1438,7 @@ translate chinese c2_princess_letter_c7a71e36:
 translate chinese c2_princess_letter_84ce1d1f:
 
     # you "Gio!!! What on earth are you doing here, assaulting my... Sill?!?"
-    you "吉奥！！！你到底要在这里做什么，袭击我的……希尔？！？"
+    you "吉奥！！！你到底要在这里做什么，袭击我的……希露？！？"
 
 # game/BKchapter2.rpy:931
 translate chinese c2_princess_letter_43c9b722:
@@ -1492,7 +1492,7 @@ translate chinese c2_princess_letter_91107c5c:
 translate chinese c2_princess_letter_8de79d4e:
 
     # you "It's no one's fault that Gio is stupid and that Sill is clumsy."
-    you "Gio 愚蠢，Sill 笨拙，这不是任何人的错。"
+    you "Gio 愚蠢，希露笨拙，这不是任何人的错。"
 
 # game/BKchapter2.rpy:955
 translate chinese c2_princess_letter_19709593:
@@ -1552,7 +1552,7 @@ translate chinese c2_princess_letter_806b5c2b:
 translate chinese c2_princess_letter_f3e9cd2a:
 
     # gio "A full-fledged brothel owner with a bona fide licence and an attitude."
-    gio "拥有真正执照和态度的成熟妓院老板。"
+    gio "拥有真正执照和态度的成熟青楼老板。"
 
 # game/BKchapter2.rpy:975
 translate chinese c2_princess_letter_c9bb15ac:
@@ -1642,7 +1642,7 @@ translate chinese c2_princess_letter_e01b7117:
 translate chinese c2_princess_letter_242af99a:
 
     # you "Fine... I've been too lenient with Sill recently."
-    you "好吧……我最近对西尔太宽容了。"
+    you "好吧……我最近对希露太宽容了。"
 
 # game/BKchapter2.rpy:1014
 translate chinese c2_princess_letter_69188bc3:
@@ -1678,7 +1678,7 @@ translate chinese c2_princess_letter_74a75889:
 translate chinese c2_princess_letter_3ce13387:
 
     # you "Nah, Sill is my private pet. But you can have another girl on the house. Happy?"
-    you "不，Sill 是我的私人宠物。但是你可以让另一个女孩在家里。快乐的？"
+    you "不，希露是我的私人宠物。但是你可以让另一个女孩在家里。快乐的？"
 
 # game/BKchapter2.rpy:1042
 translate chinese c2_princess_letter_e7d35fb8:
@@ -1690,7 +1690,7 @@ translate chinese c2_princess_letter_e7d35fb8:
 translate chinese c2_princess_letter_6f6fbeae:
 
     # you "[girl.name]! Come over here."
-    you "[女孩的名字]！过来这里。"
+    you "[girl.name]！过来这里。"
 
 # game/BKchapter2.rpy:1049
 translate chinese c2_princess_letter_a5702761:
@@ -1756,13 +1756,13 @@ translate chinese c2_princess_letter_665a969c:
 translate chinese c2_princess_letter_dfc296cb:
 
     # "He seems to have forgotten all about Sill."
-    "他似乎已经忘记了希尔的一切。"
+    "他似乎已经忘记了希露的一切。"
 
 # game/BKchapter2.rpy:1081
 translate chinese c2_princess_letter_1ad4bc9e:
 
     # you "[girl.name]! [girl2.name]! Come here, darlings."
-    you "[女孩的名字]！[girl2.name]！来吧，亲爱的。"
+    you "[girl.name]！[girl2.name]！来吧，亲爱的。"
 
 # game/BKchapter2.rpy:1083
 translate chinese c2_princess_letter_9b50768e:
@@ -2188,7 +2188,7 @@ translate chinese c2_princess_letter_f6ba9b9e:
 translate chinese c2_princess_letter_123f646a:
 
     # you "A meeting with the Princess of Zan, uh? When did I become so fancy..."
-    you "和赞公主会面，嗯？我什么时候变得这么花哨了……"
+    you "在瓒城和公主会面，嗯？我什么时候变得这么花哨了……"
 
 # game/BKchapter2.rpy:1309
 translate chinese c2_princess_visit1_ad8f354c:
@@ -2230,7 +2230,7 @@ translate chinese c2_princess_visit1_7cb68c88:
 translate chinese c2_princess_visit1_12616042:
 
     # "Gio explains Zan to you as you move deeper inside the city."
-    "Gio 在您深入城市时向您解释 Zan。"
+    "Gio 在您深入城市时向您解释瓒城。"
 
 # game/BKchapter2.rpy:1328
 translate chinese c2_princess_visit1_75d2332b:
@@ -2254,7 +2254,7 @@ translate chinese c2_princess_visit1_b2d7ac9c:
 translate chinese c2_princess_visit1_05725832:
 
     # gio "Behold... The hanging gardens of Zan, famous all over Xeros. They're tended to by the magic guild."
-    gio "看哪... Zan 的空中花园，闻名于 Xeros。他们由魔法公会照料。"
+    gio "看哪... 瓒城的空中花园，闻名于 Xeros。他们由魔法公会照料。"
 
 # game/BKchapter2.rpy:1338
 translate chinese c2_princess_visit1_f1eac234:
@@ -2452,7 +2452,7 @@ translate chinese c2_princess_visit1_d14ddfc1:
 translate chinese c2_princess_visit1_c6fe0e04:
 
     # knight "The palace foundations date back to Cimeria, the non-human civilization that settled the location where Zan now stands. It is said the center of their city lay right here on the highest hill."
-    knight "宫殿的基础可以追溯到 Cimeria，这是一个非人类文明，在 Zan 现在所在的位置定居。据说他们城市的中心就在最高的山上。"
+    knight "宫殿的基础可以追溯到 Cimeria，这是一个非人类文明，在瓒城现在所在的位置定居。据说他们城市的中心就在最高的山上。"
 
 # game/BKchapter2.rpy:1419
 translate chinese c2_princess_visit1_8118f08b:
@@ -2488,7 +2488,7 @@ translate chinese c2_princess_visit1_0c02699d:
 translate chinese c2_princess_visit1_2fb5f8c0:
 
     # "The knight leads you towards the right aisle, which has the most breathtaking view of the city, hanging right on top of the cliff overlooking Zan."
-    "骑士带你走向右边的过道，那里有城市最令人叹为观止的景色，悬挂在俯瞰赞的悬崖顶上。"
+    "骑士带你走向右边的过道，那里有城市最令人叹为观止的景色，悬挂在俯瞰瓒城的悬崖顶上。"
 
 # game/BKchapter2.rpy:1433
 translate chinese c2_princess_visit1_d9869771:
@@ -2560,7 +2560,7 @@ translate chinese c2_princess_visit2_836bb405:
 translate chinese c2_princess_visit2_96a3725c:
 
     # "???" "*clear throat* Sir?"
-    "???” “*清嗓子*先生？"
+    "???" "*清嗓子*先生？"
 
 # game/BKchapter2.rpy:1479
 translate chinese c2_princess_visit2_3bc0cda7:
@@ -2578,7 +2578,7 @@ translate chinese c2_princess_visit2_0ced6656:
 translate chinese c2_princess_visit2_a9b92345:
 
     # "Carriage driver" "Hi there. I've been instructed to take you to the palace."
-    "马车司机” “你好。我奉命带你去皇宫。"
+    "马车司机" "你好。我奉命带你去皇宫。"
 
 # game/BKchapter2.rpy:1487
 translate chinese c2_princess_visit2_51fc080e:
@@ -2602,13 +2602,13 @@ translate chinese c2_princess_visit2_7ed82811:
 translate chinese c2_princess_visit2_869181dd:
 
     # "Female voice" "Ahem... Sir?"
-    "女声” “咳咳……先生？"
+    "女人的声音" "咳咳……先生？"
 
 # game/BKchapter2.rpy:1499
 translate chinese c2_princess_visit2_4042094e:
 
     # "Female voice" "Would you mind... letting go of my thigh?"
-    "女声” “你介意……放开我的大腿吗？"
+    "女人的声音" "你介意……放开我的大腿吗？"
 
 # game/BKchapter2.rpy:1501
 translate chinese c2_princess_visit2_25242c53:
@@ -2680,7 +2680,7 @@ translate chinese c2_princess_visit2_917e96eb:
 translate chinese c2_princess_visit2_7d4eaa39:
 
     # you "No... I've only been in Zan for a few weeks..."
-    you "不……我才来赞几个星期……"
+    you "不……我才来瓒城几个星期……"
 
 # game/BKchapter2.rpy:1534
 translate chinese c2_princess_visit2_a86c1ef0:
@@ -2842,7 +2842,7 @@ translate chinese c2_princess_visit2_d9c238ed:
 translate chinese c2_princess_visit2_f5bbcf8a:
 
     # "Woman's voice" "Do come in."
-    "女人的声音” “进来吧。"
+    "女人的声音" "进来吧。"
 
 # game/BKchapter2.rpy:1622
 translate chinese c2_princess_visit2_f5f82de5:
@@ -2896,7 +2896,7 @@ translate chinese c2_princess_visit2_11fdb519:
 translate chinese c2_princess_visit2_fda93cc0:
 
     # you "Well, I own a brothel in town. It wasn't exactly my plan when I got here, but one thing led to another..."
-    you "嗯，我在城里开了一家妓院。当我来到这里时，这并不完全是我的计划，但一件事导致了另一件事......"
+    you "嗯，我在城里开了一家青楼。当我来到这里时，这并不完全是我的计划，但一件事导致了另一件事......"
 
 # game/BKchapter2.rpy:1644
 translate chinese c2_princess_visit2_d4be2628:
@@ -3052,7 +3052,7 @@ translate chinese kurohime_conversation_menu_58959e3a:
 translate chinese kurohime_conversation_menu_e97d92da:
 
     # you "Well... Zan is by far the largest city in the land..."
-    you "嗯... Zan 是迄今为止这片土地上最大的城市..."
+    you "嗯... 瓒城是迄今为止这片土地上最大的城市..."
 
 # game/BKchapter2.rpy:1712
 translate chinese kurohime_conversation_menu_59fa51c4:
@@ -3148,7 +3148,7 @@ translate chinese kurohime_conversation_menu_149d302c:
 translate chinese kurohime_conversation_menu_962b9ab3:
 
     # you "Actually, I do come from a minor noble family. It's a long way from Zan's court, though. I'm sure you wouldn't have heard of it."
-    you "事实上，我确实来自一个小贵族家庭。不过，离Zan的法庭还有很长的路要走。我敢肯定你不会听说过。"
+    you "事实上，我确实来自一个小贵族家庭。不过，离瓒城的法庭还有很长的路要走。我敢肯定你不会听说过。"
 
 # game/BKchapter2.rpy:1755
 translate chinese kurohime_conversation_menu_8c43a7f1:
@@ -3196,7 +3196,7 @@ translate chinese kurohime_conversation_menu_f7c9f149:
 translate chinese kurohime_conversation_menu_4cb0e0fc:
 
     # kuro "Princess, housewife or slave, it's all the same in Zan. A woman cannot live her life freely."
-    kuro "公主，主妇，奴婢，在瓒都一样。女人不能自由地过她的生活。"
+    kuro "公主，主妇，奴婢，在瓒城都一样。女人不能自由地过她的生活。"
 
 # game/BKchapter2.rpy:1778
 translate chinese kurohime_conversation_menu_5471309d:
@@ -3418,7 +3418,7 @@ translate chinese kurohime_conversation_menu_29915477:
 translate chinese kurohime_conversation_menu_e7f38c19:
 
     # kuro "Many people think that Zan is ripe for the taking... The only thing I can do is fight back, at my modest level."
-    kuro "很多人认为Zan已经成熟了……我唯一能做的就是反击，以我的谦虚水平。"
+    kuro "很多人认为瓒城已经成熟了……我唯一能做的就是反击，以我的谦虚水平。"
 
 # game/BKchapter2.rpy:1872
 translate chinese kurohime_conversation_menu_51d4dc60:
@@ -3496,7 +3496,7 @@ translate chinese kurohime_conversation_menu_0298c048:
 translate chinese kurohime_conversation_menu_edd4b850:
 
     # you "Well... Zan is my home now. I need to learn."
-    you "嗯... Zan 现在是我的家。我需要学习。"
+    you "嗯... 瓒城现在是我的家。我需要学习。"
 
 # game/BKchapter2.rpy:1905
 translate chinese kurohime_conversation_menu_beafff1f:
@@ -3526,7 +3526,7 @@ translate chinese kurohime_conversation_menu_9826bcb6:
 translate chinese kurohime_conversation_menu_57422b38:
 
     # kuro "Some petty noble even told me he would have a ceremony with the whores from his brothels wearing the same outfit as me! He thought it was a compliment! I should have got him lashed on the spot..."
-    kuro "一个小贵族还跟我说，他要和他的妓院里的妓女和我穿着一样的衣服举行仪式！他认为这是一种恭维！我应该让他当场鞭笞..."
+    kuro "一个小贵族还跟我说，他要和他的青楼里的妓女和我穿着一样的衣服举行仪式！他认为这是一种恭维！我应该让他当场鞭笞..."
 
 # game/BKchapter2.rpy:1915
 translate chinese kurohime_conversation_menu_9555bd8d:
@@ -3688,7 +3688,7 @@ translate chinese kurohime_conversation_menu_8c6041ad:
 translate chinese kurohime_conversation_menu_11059dfd:
 
     # you "Well, I was told Zan was a seedy place..."
-    you "好吧，有人告诉我赞是个肮脏的地方……"
+    you "好吧，有人告诉我瓒城是个肮脏的地方……"
 
 # game/BKchapter2.rpy:1979
 translate chinese kurohime_conversation_menu_7ee8df19:
@@ -4012,7 +4012,7 @@ translate chinese kurohime_conversation_menu_7cafcab0:
 translate chinese kurohime_conversation_menu_1afc9fd4:
 
     # "???" "GOTCHA!!!"
-    "？？？” “明白了！！！"
+    "？？？" "明白了！！！"
 
 # game/BKchapter2.rpy:2184
 translate chinese kurohime_conversation_menu_510d78f4:
@@ -4534,7 +4534,7 @@ translate chinese c2_gio_meeting_23631d99:
 translate chinese c2_gio_meeting_7001681c:
 
     # you "Well, uh... She wanted to settle a land dispute that arose from, uh... The brothel's relocation..."
-    you "嗯，呃……她想解决一个由……呃……妓院搬迁引起的土地纠纷……"
+    you "嗯，呃……她想解决一个由……呃……青楼搬迁引起的土地纠纷……"
 
 # game/BKchapter2.rpy:2549
 translate chinese c2_gio_meeting_6f80f0bc:
@@ -4666,13 +4666,13 @@ translate chinese c2_gio_meeting_b5a5332c:
 translate chinese c2_gio_meeting_ab8b6b04:
 
     # you "Are there some here, in Zan?"
-    you "这里有吗，在赞？"
+    you "这里有吗，在瓒城？"
 
 # game/BKchapter2.rpy:2595
 translate chinese c2_gio_meeting_6638aa56:
 
     # gio "The Kunoichi are usually scattered across Xeros on various assignments. To my knowledge, only a handful are active in Zan. But as they stick to the shadows, tales of their deeds rarely surface."
-    gio "Kunoichi 通常分散在 Xeros 的各种任务中。据我所知，只有少数人活跃在Zan。但由于他们坚持在阴影中，他们事迹的故事很少浮出水面。"
+    gio "Kunoichi 通常分散在 Xeros 的各种任务中。据我所知，只有少数人活跃在瓒城。但由于他们坚持在阴影中，他们事迹的故事很少浮出水面。"
 
 # game/BKchapter2.rpy:2597
 translate chinese c2_gio_meeting_7983df68:
@@ -4900,7 +4900,7 @@ translate chinese c2_gio_meeting_c271a3c1:
 translate chinese c2_gio_meeting_d738db33:
 
     # "Paperboy" "Read the Zanic Magic Tribune! A JUDGE HAS BEEN GRUESOMELY MURDERED!!!"
-    "Paperboy” “阅读 Zanic 魔法论坛！一名法官被残忍杀害！！！"
+    "Paperboy" "阅读 Zanic 魔法论坛！一名法官被残忍杀害！！！"
 
 # game/BKchapter2.rpy:2673
 translate chinese c2_gio_meeting_7000be84:
@@ -4912,13 +4912,13 @@ translate chinese c2_gio_meeting_7000be84:
 translate chinese c2_gio_meeting_69eac85b:
 
     # "Paperboy" "EVERYONE IS GETTING MURDERED LEFT AND RIGHT!" with vpunch
-    "报童”“每个人都被左右谋杀！" with vpunch
+    "报童" "每个人都被左右谋杀！" with vpunch
 
 # game/BKchapter2.rpy:2677
 translate chinese c2_gio_meeting_528ad6ac:
 
     # "Paperboy" "MURDER MURDER MUUURRRRDEEER!!!" with vpunch
-    "报童”“谋杀 MUUURRRRDEEER ！！！" with vpunch
+    "报童" "谋杀 MUUURRRRDEEER ！！！" with vpunch
 
 # game/BKchapter2.rpy:2679
 translate chinese c2_gio_meeting_19709593:
@@ -4942,7 +4942,7 @@ translate chinese c2_gio_meeting_602afcd7:
 translate chinese c2_gio_meeting_f98085bb:
 
     # "(Some weird boy in the background)" "Redrum, redrum..."
-    "（背景中有一个奇怪的男孩）” “Redrum，redrum..."
+    "（背景中有一个奇怪的男孩）" "Redrum，redrum..."
 
 # game/BKchapter2.rpy:2688
 translate chinese c2_gio_meeting_ee9d309c:
@@ -5002,7 +5002,7 @@ translate chinese c2_gio_meeting_91d7fa04:
 translate chinese c2_gio_meeting_d6829f62:
 
     # you "What the hell, why would the Kunoichi want to murder me..."
-    you "到底是什么，为什么国一要杀我……"
+    you "到底是什么，为什么忍者要杀我……"
 
 # game/BKchapter2.rpy:2712
 translate chinese c2_gio_meeting_4cc82402:
@@ -5020,7 +5020,7 @@ translate chinese c2_suzume_invitation_6f12cd3c:
 translate chinese c2_suzume_invitation_9c3ac752:
 
     # you "Aaah! Such a nice, fresh [season] morning!"
-    you "啊啊！如此美好、清新的[季节]早晨！"
+    you "啊啊！如此美好、清新的[season]早晨！"
 
 # game/BKchapter2.rpy:2737
 translate chinese c2_suzume_invitation_8054ccf1:
@@ -5260,7 +5260,7 @@ translate chinese c2_suzume_forest1_8cef6b99:
 translate chinese c2_suzume_forest1_e151026e:
 
     # "Female voice" "Mister..."
-    "女声”“先生……"
+    "女人的声音" "先生……"
 
 # game/BKchapter2.rpy:2852
 translate chinese c2_suzume_forest1_1ec47f6f:
@@ -5272,7 +5272,7 @@ translate chinese c2_suzume_forest1_1ec47f6f:
 translate chinese c2_suzume_forest1_aee550c2:
 
     # "Female voice" "Come, dear mister... Don't be afraid..."
-    "女声” “来吧，亲爱的先生……不要害怕……"
+    "女人的声音" "来吧，亲爱的先生……不要害怕……"
 
 # game/BKchapter2.rpy:2860
 translate chinese c2_suzume_forest1_394e1f07:
@@ -5302,7 +5302,7 @@ translate chinese c2_suzume_forest1_d821f50d:
 translate chinese c2_suzume_forest1_599d3dec:
 
     # "Female voice" "KU KU KU KU... *odd giggle*"
-    "女声”“KU KU KU KU... *奇怪的傻笑*"
+    "女人的声音" "库 库 库... *奇怪的傻笑*"
 
 # game/BKchapter2.rpy:2878
 translate chinese c2_suzume_forest1_423f5389:
@@ -5320,7 +5320,7 @@ translate chinese c2_suzume_forest1_60126f45:
 translate chinese c2_suzume_forest1_0378e217:
 
     # suzume "Mister! HI!!! Ku ku ku..."
-    suzume "先生！你好！！！咕咕咕..."
+    suzume "先生！你好！！！库 库 库..."
 
 # game/BKchapter2.rpy:2886
 translate chinese c2_suzume_forest1_3f576657:
@@ -5350,7 +5350,7 @@ translate chinese c2_suzume_forest1_6ea26345:
 translate chinese c2_suzume_forest1_c4186be0:
 
     # suzume "Sure, Mister, I was expecting you. Ku ku ku..."
-    suzume "当然，先生，我在等你。咕咕咕..."
+    suzume "当然，先生，我在等你。库 库 库..."
 
 # game/BKchapter2.rpy:2898
 translate chinese c2_suzume_forest1_a0eec57b:
@@ -5362,13 +5362,13 @@ translate chinese c2_suzume_forest1_a0eec57b:
 translate chinese c2_suzume_forest1_d6252f3c:
 
     # suzume "Your name? Uh... So... Ku ku ku..."
-    suzume "你的名字？呃……所以……呜呜呜……"
+    suzume "你的名字？呃……所以……库 库 库……"
 
 # game/BKchapter2.rpy:2902
 translate chinese c2_suzume_forest1_bd0970cb:
 
     # suzume "There's a perfectly reasonable explanation for it, you see... Ku..."
-    suzume "有一个完全合理的解释，你看... Ku..."
+    suzume "有一个完全合理的解释，你看... 库..."
 
 # game/BKchapter2.rpy:2904
 translate chinese c2_suzume_forest1_4c44cffc:
@@ -5572,7 +5572,7 @@ translate chinese c2_suzume_forest1_dc82ab46:
 translate chinese c2_suzume_forest1_b6584ea8:
 
     # "Wind" "WOOSH..."
-    "风”“呜……"
+    "风" "呜……"
 
 # game/BKchapter2.rpy:3005
 translate chinese c2_suzume_forest1_45a93732:
@@ -5614,7 +5614,7 @@ translate chinese c2_suzume_forest1_c6ea39ad:
 translate chinese c2_suzume_forest1_959e493b:
 
     # suzume "It feels nice and warm now... Thank you, Mister... Ku ku ku ♥"
-    suzume "现在感觉很好很温暖......谢谢你，先生...... Ku ku ku ♥"
+    suzume "现在感觉很好很温暖......谢谢你，先生...... 库 库 库 ♥"
 
 # game/BKchapter2.rpy:3026
 translate chinese c2_suzume_forest1_9abccfc6:
@@ -5721,7 +5721,7 @@ translate chinese c2_suzume_forest1_d343057d:
 # game/BKchapter2.rpy:3076
 translate chinese c2_suzume_forest1_3a4ddfed:
 
-    # suzume "Ku ku ku ku ku..."
+    # suzume "库 库 库 库 ku..."
     suzume "库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库库"
 
 # game/BKchapter2.rpy:3078
@@ -5944,13 +5944,13 @@ translate chinese c2_suzume_report1_a4bba622:
 translate chinese c2_suzume_report1_285b8e9c:
 
     # "Male voice" "It's cold out here... Where the hell is the damn girl?"
-    "男声” “这里好冷……那个该死的女孩到底在哪里？"
+    "男人的声音" "这里好冷……那个该死的女孩到底在哪里？"
 
 # game/BKchapter2.rpy:3194
 translate chinese c2_suzume_report1_77faeb2f:
 
     # "Male voice" "Gyaaah!" with vpunch
-    "男声”“啊啊啊！" with vpunch
+    "男人的声音" "啊啊啊！" with vpunch
 
 # game/BKchapter2.rpy:3196
 translate chinese c2_suzume_report1_35d16279:
@@ -5962,7 +5962,7 @@ translate chinese c2_suzume_report1_35d16279:
 translate chinese c2_suzume_report1_f5419113:
 
     # "Male voice" "D-d-don't creep up on me like that!"
-    "男声” “Dd-不要这样爬到我身上！"
+    "男人的声音" "Dd-不要这样爬到我身上！"
 
 # game/BKchapter2.rpy:3200
 translate chinese c2_suzume_report1_94159993:
@@ -5974,7 +5974,7 @@ translate chinese c2_suzume_report1_94159993:
 translate chinese c2_suzume_report1_088c6bb7:
 
     # "Male voice" "Humph. Anyway, what's your report? Is the deed done?"
-    "男声” “哼。无论如何，你的报告是什么？契约完成了吗？"
+    "男人的声音" "哼。无论如何，你的报告是什么？契约完成了吗？"
 
 # game/BKchapter2.rpy:3204
 translate chinese c2_suzume_report1_2bf39f6c:
@@ -5986,7 +5986,7 @@ translate chinese c2_suzume_report1_2bf39f6c:
 translate chinese c2_suzume_report1_bb2b04e9:
 
     # "Male voice" "WHAT? Do you know how much I pay you?" with vpunch
-    "男声” “什么？你知道我付你多少钱吗？" with vpunch
+    "男人的声音" "什么？你知道我付你多少钱吗？" with vpunch
 
 # game/BKchapter2.rpy:3208
 translate chinese c2_suzume_report1_6dc59fb5:
@@ -5998,7 +5998,7 @@ translate chinese c2_suzume_report1_6dc59fb5:
 translate chinese c2_suzume_report1_46873018:
 
     # "Male voice" "I want results. RESULTS, you hear! If I wanted incompetence, I'd have sent my own men!"
-    "男声” “我要结果。结果，你听到了！如果我想要无能，我会派我自己的人来！"
+    "男人的声音" "我要结果。结果，你听到了！如果我想要无能，我会派我自己的人来！"
 
 # game/BKchapter2.rpy:3212
 translate chinese c2_suzume_report1_66bdc409:
@@ -6010,7 +6010,7 @@ translate chinese c2_suzume_report1_66bdc409:
 translate chinese c2_suzume_report1_7044a7a8:
 
     # "Male voice" "Make sure you take care of this by next week. Now, go. Dismissed, shoo!"
-    "男声” “确保你下周之前处理好这件事。现在，走吧。被解雇了，嘘！"
+    "男人的声音" "确保你下周之前处理好这件事。现在，走吧。被解雇了，嘘！"
 
 # game/BKchapter2.rpy:3216
 translate chinese c2_suzume_report1_6dc59fb5_1:
@@ -6022,7 +6022,7 @@ translate chinese c2_suzume_report1_6dc59fb5_1:
 translate chinese c2_suzume_report1_f480a8c0:
 
     # "Male voice" "(She'd better do what she's told... I need to get rid of this bastard [MC.name]...)"
-    "男声”“（她最好按照她说的做……我要摆脱这个混蛋[MC.name]……）"
+    "男人的声音" "（她最好按照她说的做……我要摆脱这个混蛋[MC.name]……）"
 
 # game/BKchapter2.rpy:3234
 translate chinese c2_suzume_arena_8912d18b:
@@ -6046,7 +6046,7 @@ translate chinese c2_suzume_arena_6bc41c11:
 translate chinese c2_suzume_arena_ed670703:
 
     # "Female voice" "HEY, YOU!!!" with vpunch
-    "女声”“喂，你！！！" with vpunch
+    "女人的声音" "喂，你！！！" with vpunch
 
 # game/BKchapter2.rpy:3246
 translate chinese c2_suzume_arena_cdd9076e:
@@ -6064,7 +6064,7 @@ translate chinese c2_suzume_arena_c6284f05:
 translate chinese c2_suzume_arena_0fedb2c6:
 
     # "Voice" "YOU! I CHALLENGE YOU!!! FACE ME!!!" with vpunch
-    "声音”“你！我挑战你！！！面对我！！！" with vpunch
+    "一个声音" "你！我挑战你！！！面对我！！！" with vpunch
 
 # game/BKchapter2.rpy:3257
 translate chinese c2_suzume_arena_74b741b8:
@@ -6160,7 +6160,7 @@ translate chinese c2_suzume_forest2_93b67ce1:
 translate chinese c2_suzume_forest2_71bbdb17:
 
     # "Female voice" "KU KU KU KU KU... You came..."
-    "女声”“咕咕咕咕……你来了……"
+    "女人的声音" "库 库 库……你来了……"
 
 # game/BKchapter2.rpy:3317
 translate chinese c2_suzume_forest2_110a267f:
@@ -6310,7 +6310,7 @@ translate chinese c2_suzume_forest2_b0cfeaaa:
 translate chinese c2_suzume_forest2_a1e7a45f:
 
     # suzume "KU KU KU... Let's get serious, now!"
-    suzume "KU KU KU... 让我们认真起来，现在！"
+    suzume "库 库 库... 让我们认真起来，现在！"
 
 # game/BKchapter2.rpy:3397
 translate chinese c2_suzume_forest2_5971dc15:
@@ -6502,7 +6502,7 @@ translate chinese c2_suzume_forest2_00ffc3d6:
 translate chinese c2_suzume_forest2_6e5fcfc9:
 
     # you "Oh well. Now that you mention it, running a brothel did increase my stamina. I mean, I've always been a horny bastard, but..."
-    you "那好吧。既然你提到了，开妓院确实增加了我的耐力。我的意思是，我一直是一个好色的混蛋，但是..."
+    you "那好吧。既然你提到了，开青楼确实增加了我的耐力。我的意思是，我一直是一个好色的混蛋，但是..."
 
 # game/BKchapter2.rpy:3508
 translate chinese c2_suzume_forest2_66bdc409_1:
@@ -6550,7 +6550,7 @@ translate chinese c2_suzume_forest2_a5572d14:
 translate chinese c2_suzume_forest2_0a2d2618:
 
     # "Stumbling back to the brothel, you find yourself very light-headed."
-    "跌跌撞撞地回到妓院，你发现自己头晕目眩。"
+    "跌跌撞撞地回到青楼，你发现自己头晕目眩。"
 
 # game/BKchapter2.rpy:3526
 translate chinese c2_suzume_forest2_e6b5a705:
@@ -6580,7 +6580,7 @@ translate chinese c2_suzume_report2_3844625d:
 translate chinese c2_suzume_report2_6439667a:
 
     # "Male voice" "YOU WHAT?!?" with vpunch
-    "男声” “你什么？！？" with vpunch
+    "男人的声音" "你什么？！？" with vpunch
 
 # game/BKchapter2.rpy:3552
 translate chinese c2_suzume_report2_b9736cb9:
@@ -6598,7 +6598,7 @@ translate chinese c2_suzume_report2_78a637da:
 translate chinese c2_suzume_report2_cd877359:
 
     # "Male voice" "You did! You failed me twice!"
-    "男声” “你做到了！你让我失望了两次！"
+    "男人的声音" "你做到了！你让我失望了两次！"
 
 # game/BKchapter2.rpy:3558
 translate chinese c2_suzume_report2_c3cebe13:
@@ -6610,7 +6610,7 @@ translate chinese c2_suzume_report2_c3cebe13:
 translate chinese c2_suzume_report2_4b1531ca:
 
     # "Male voice" "Too high? How high?"
-    "男声” “太高了？多高？"
+    "男人的声音" "太高了？多高？"
 
 # game/BKchapter2.rpy:3562
 translate chinese c2_suzume_report2_9dbce8eb:
@@ -6628,7 +6628,7 @@ translate chinese c2_suzume_report2_e0964a5e:
 translate chinese c2_suzume_report2_de952b5c:
 
     # "Male voice" "Over NINE THOUSAND??? AAAARGH!!!" with vpunch
-    "男声”“超过九万？？？啊啊啊！！！" with vpunch
+    "男人的声音" "超过九万？？？啊啊啊！！！" with vpunch
 
 # game/BKchapter2.rpy:3570
 translate chinese c2_suzume_report2_bfe793f4:
@@ -6640,7 +6640,7 @@ translate chinese c2_suzume_report2_bfe793f4:
 translate chinese c2_suzume_report2_d50839f3:
 
     # "Male voice" "Come to think of it... Over 9,000 what? I didn't know there was a scale for sexual stamina."
-    "男声” “想想……九千多什么？我不知道性耐力有一个量表。"
+    "男人的声音" "想想……九千多什么？我不知道性耐力有一个量表。"
 
 # game/BKchapter2.rpy:3574
 translate chinese c2_suzume_report2_7b9ae4c1:
@@ -6658,7 +6658,7 @@ translate chinese c2_suzume_report2_4db82fa6:
 translate chinese c2_suzume_report2_eec9f710:
 
     # "Male voice" "Whoah, isn't that a little extreme? I hired you to render him impotent..."
-    "男声” “哇哦，是不是有点太极端了？我雇你让他无能为力..."
+    "男人的声音" "哇哦，是不是有点太极端了？我雇你让他无能为力..."
 
 # game/BKchapter2.rpy:3580
 translate chinese c2_suzume_report2_820dc493:
@@ -6670,19 +6670,19 @@ translate chinese c2_suzume_report2_820dc493:
 translate chinese c2_suzume_report2_c9909255:
 
     # "Male voice" "*gulp*"
-    "男声”“*咕嘟咕嘟*"
+    "男人的声音" "*咕嘟咕嘟*"
 
 # game/BKchapter2.rpy:3584
 translate chinese c2_suzume_report2_856cdc8d:
 
     # "Male voice" "Alright, if that's what it takes... But you will do this for half-pay!"
-    "男声” “好吧，如果是这样的话……但是你会半薪的！"
+    "男人的声音" "好吧，如果是这样的话……但是你会半薪的！"
 
 # game/BKchapter2.rpy:3586
 translate chinese c2_suzume_report2_baac9cca:
 
     # "Male voice" "I've had enough of your failures!" with vpunch
-    "男声” “你的失败我受够了！" with vpunch
+    "男人的声音" "你的失败我受够了！" with vpunch
 
 # game/BKchapter2.rpy:3588
 translate chinese c2_suzume_report2_66bdc409:
@@ -6700,7 +6700,7 @@ translate chinese c2_suzume_report2_fe571a1a:
 translate chinese c2_suzume_report2_07d7ff4c:
 
     # "Male voice" "For... free?"
-    "男声” “为了……免费？"
+    "男人的声音" "为了……免费？"
 
 # game/BKchapter2.rpy:3594
 translate chinese c2_suzume_report2_ff71a901:
@@ -6712,13 +6712,13 @@ translate chinese c2_suzume_report2_ff71a901:
 translate chinese c2_suzume_report2_0280dd02:
 
     # "Male voice" "Well... Very well, then, fufufu..."
-    "男声” “嗯……很好，那么，呼呼呼……"
+    "男人的声音" "嗯……很好，那么，呼呼呼……"
 
 # game/BKchapter2.rpy:3598
 translate chinese c2_suzume_report2_2a8fc0d7:
 
     # "Male voice" "Make him bleed! Cut his dick off!" with vpunch
-    "男声” “让他流血！砍掉他的鸡巴！" with vpunch
+    "男人的声音" "让他流血！砍掉他的鸡巴！" with vpunch
 
 # game/BKchapter2.rpy:3600
 translate chinese c2_suzume_report2_2131f9b8:
@@ -6736,13 +6736,13 @@ translate chinese c2_suzume_report2_b20f720d:
 translate chinese c2_suzume_report2_efa995c8:
 
     # "Male voice" "Just make sure to stop the bleeding afterwards, cauterize it or something... I enjoy making fun of cripples, I mean, don't we all, but I don't want to be an accessory to murder."
-    "男声” “事后一定要止血，烧灼什么的……我喜欢取笑瘸子，我是说，不是吗，但我不想成为谋杀的从犯。"
+    "男人的声音" "事后一定要止血，烧灼什么的……我喜欢取笑瘸子，我是说，不是吗，但我不想成为谋杀的从犯。"
 
 # game/BKchapter2.rpy:3617
 translate chinese c2_suzume_invitation2_ab3e9651:
 
     # "As you walk back towards your brothel for the night, a big gust of wind engulfs the street."
-    "当你回到你的妓院过夜时，一阵大风席卷了街道。"
+    "当你回到你的青楼过夜时，一阵大风席卷了街道。"
 
 # game/BKchapter2.rpy:3619
 translate chinese c2_suzume_invitation2_cf9a0ad7:
@@ -6838,7 +6838,7 @@ translate chinese c2_suzume_brothel_525733e9:
 translate chinese c2_suzume_brothel_0f06550d:
 
     # "Receptionist" "Ahem, Sir, the taverns are further down the docks. Go back to the street, then take a right..."
-    "接待员” “咳咳，先生，小酒馆在码头的下方。回到街上，然后右转..."
+    "接待员" "咳咳，先生，小酒馆在码头的下方。回到街上，然后右转..."
 
 # game/BKchapter2.rpy:3671
 translate chinese c2_suzume_brothel_3a20fc69:
@@ -6856,7 +6856,7 @@ translate chinese c2_suzume_brothel_c48a3616:
 translate chinese c2_suzume_brothel_afedee2e:
 
     # "Receptionist" "Indeed it is, we are the most upscale, and shall I say, {i}expensive{/i} entertainment this side of the inner gates. And I don't think you..."
-    "接待员” “的确，我们是最高档的，我应该说，内门这边的娱乐{i}昂贵{/i}。而且我不认为你..."
+    "接待员" "的确，我们是最高档的，我应该说，内门这边的娱乐{i}昂贵{/i}。而且我不认为你..."
 
 # game/BKchapter2.rpy:3677
 translate chinese c2_suzume_brothel_f7faca34:
@@ -6874,7 +6874,7 @@ translate chinese c2_suzume_brothel_9d28e98c:
 translate chinese c2_suzume_brothel_5c2eff1e:
 
     # "Receptionist" "We don't just give vouchers to..."
-    "接待员” “我们不只是给..."
+    "接待员" "我们不只是给..."
 
 # game/BKchapter2.rpy:3683
 translate chinese c2_suzume_brothel_b4002846:
@@ -6886,7 +6886,7 @@ translate chinese c2_suzume_brothel_b4002846:
 translate chinese c2_suzume_brothel_18e841a6:
 
     # "Receptionist" "Well, it is the Manager's seal..."
-    "接待员” “嗯，是经理的印章……"
+    "接待员" "嗯，是经理的印章……"
 
 # game/BKchapter2.rpy:3687
 translate chinese c2_suzume_brothel_85fb8084:
@@ -6898,7 +6898,7 @@ translate chinese c2_suzume_brothel_85fb8084:
 translate chinese c2_suzume_brothel_9000c76e:
 
     # "Receptionist" "As our esteemed guest, you are most welcome to our humble establishment. We will do our utmost to make this the best night of your life."
-    "接待员” “作为我们尊贵的客人，非常欢迎您来到我们简陋的酒店。我们将尽最大努力使这成为您一生中最美好的夜晚。"
+    "接待员" "作为我们尊贵的客人，非常欢迎您来到我们简陋的酒店。我们将尽最大努力使这成为您一生中最美好的夜晚。"
 
 # game/BKchapter2.rpy:3691
 translate chinese c2_suzume_brothel_913649f3:
@@ -6910,7 +6910,7 @@ translate chinese c2_suzume_brothel_913649f3:
 translate chinese c2_suzume_brothel_fd9fcd69:
 
     # "Receptionist" "Your invitation gives you access to the Deluxe bedroom on the top floor. There are no other rooms on this floor, so you will be able to go about your business discreetly."
-    "接待员” “您的邀请让您可以进入顶层的豪华卧室。此楼层没有其他房间，因此您可以谨慎地开展业务。"
+    "接待员" "您的邀请让您可以进入顶层的豪华卧室。此楼层没有其他房间，因此您可以谨慎地开展业务。"
 
 # game/BKchapter2.rpy:3695
 translate chinese c2_suzume_brothel_49f01a5c:
@@ -6928,7 +6928,7 @@ translate chinese c2_suzume_brothel_d825505d:
 translate chinese c2_suzume_brothel_1a65c0d2:
 
     # "Receptionist" "Nothing. Follow me, Sir."
-    "接待员” “没什么。跟我来，先生。"
+    "接待员" "没什么。跟我来，先生。"
 
 # game/BKchapter2.rpy:3703
 translate chinese c2_suzume_brothel_e77aa6b0:
@@ -6958,7 +6958,7 @@ translate chinese c2_suzume_brothel_cd4a9604:
 translate chinese c2_suzume_brothel_e706addb:
 
     # "Receptionist" "Your companion shall join you shortly. Please make yourself comfortable."
-    "接待员” “您的同伴很快就会来。请让自己舒服。"
+    "接待员" "您的同伴很快就会来。请让自己舒服。"
 
 # game/BKchapter2.rpy:3713
 translate chinese c2_suzume_brothel_fbd6bef8:
@@ -7534,7 +7534,7 @@ translate chinese c2_suzume_brothel_9557c8a9:
 translate chinese c2_suzume_brothel_d9e3fdd6:
 
     # suzume "I know of at least three others working in Zan, not counting myself. One or several of them could be in league with your masked whatever, but not me."
-    suzume "我知道至少还有另外三个在赞工作的人，不算我自己。他们中的一个或几个可能与你蒙面的任何东西联盟，但不是我。"
+    suzume "我知道至少还有另外三个在瓒城工作的人，不算我自己。他们中的一个或几个可能与你蒙面的任何东西联盟，但不是我。"
 
 # game/BKchapter2.rpy:3949
 translate chinese c2_suzume_brothel_d27a7e8f:
@@ -7738,7 +7738,7 @@ translate chinese c2_homura_city_meet_990e46ce:
 translate chinese c2_homura_city_meet_4f8f501e:
 
     # you "Well, at least you seem to be able to travel within Zan. What brings you to the lower city?"
-    you "好吧，至少你似乎能够在 Zan 中旅行。是什么让你来到下城？"
+    you "好吧，至少你似乎能够在瓒城中旅行。是什么让你来到下城？"
 
 # game/BKchapter2.rpy:4063
 translate chinese c2_homura_city_meet_89daf939:
@@ -7876,7 +7876,7 @@ translate chinese c2_homura_city_meet_1a8f1eaf:
 translate chinese c2_homura_city_meet_8d5ccb5e:
 
     # "Sill enters the room with a teapot. She looks at Lady Homura sideways."
-    "西尔拿着茶壶走进房间。她侧头看着焰夫人。"
+    "希露拿着茶壶走进房间。她侧头看着焰夫人。"
 
 # game/BKchapter2.rpy:4114
 translate chinese c2_homura_city_meet_41ab53ad:
@@ -7888,13 +7888,13 @@ translate chinese c2_homura_city_meet_41ab53ad:
 translate chinese c2_homura_city_meet_9685d2f8:
 
     # "Sill overheard and is frowning, but she keeps quiet."
-    "西尔无意中听到，皱着眉头，但她保持沉默。"
+    "希露无意中听到，皱着眉头，但她保持沉默。"
 
 # game/BKchapter2.rpy:4118
 translate chinese c2_homura_city_meet_cb470a28:
 
     # you "Her? Oh, no, no... She's just my slave Sill."
-    you "她？哦，不，不……她只是我的奴隶希尔。"
+    you "她？哦，不，不……她只是我的奴隶希露。"
 
 # game/BKchapter2.rpy:4120
 translate chinese c2_homura_city_meet_34235812:
@@ -7924,7 +7924,7 @@ translate chinese c2_homura_city_meet_1be48322:
 translate chinese c2_homura_city_meet_5ebe3573:
 
     # you "Well, I pride myself in keeping everything neat and tidy. I mean, Sill does, but I am the one barking orders at her, so I think the merits are really mine."
-    you "好吧，我以保持一切整洁而自豪。我的意思是，Sill 确实如此，但我是对她发号施令的人，所以我认为这些优点确实是我的。"
+    you "好吧，我以保持一切整洁而自豪。我的意思是，希露确实如此，但我是对她发号施令的人，所以我认为这些优点确实是我的。"
 
 # game/BKchapter2.rpy:4130
 translate chinese c2_homura_city_meet_6afa030a:
@@ -7966,7 +7966,7 @@ translate chinese c2_homura_city_meet_b5d4b199:
 translate chinese c2_homura_city_meet_4e202827:
 
     # "She blushes even more. Sill grumbles something and excuses herself."
-    "她脸红得更厉害了。西尔抱怨着什么，并为自己辩解。"
+    "她脸红得更厉害了。希露抱怨着什么，并为自己辩解。"
 
 # game/BKchapter2.rpy:4144
 translate chinese c2_homura_city_meet_38662fb2:
@@ -8020,7 +8020,7 @@ translate chinese c2_homura_city_meet_60680c29:
 translate chinese c2_homura_okiya1_74845832:
 
     # "As the sun starts to set and the first red lamps are lit in the street, you take some time to inspect your brothel."
-    "当太阳开始落山，街上第一盏红灯亮起时，你需要一些时间来检查你的妓院。"
+    "当太阳开始落山，街上第一盏红灯亮起时，你需要一些时间来检查你的青楼。"
 
 # game/BKchapter2.rpy:4178
 translate chinese c2_homura_okiya1_c479423b:
@@ -8032,7 +8032,7 @@ translate chinese c2_homura_okiya1_c479423b:
 translate chinese c2_homura_okiya1_ef11c035:
 
     # "Woman" "Ahem. Mister [MC.name]?"
-    "女人” “咳咳。[MC.name] 先生？"
+    "女人" "咳咳。[MC.name] 先生？"
 
 # game/BKchapter2.rpy:4182
 translate chinese c2_homura_okiya1_b9f03b8c:
@@ -8440,19 +8440,19 @@ translate chinese c2_homura_okiya1_9387b596:
 translate chinese c2_homura_okiya1_04b7caa7:
 
     # "After Homura takes her leave, Sill comes to you unexpectedly. She looks concerned."
-    "小焰离开后，希尔出人意料地来找你。她看起来很担心。"
+    "小焰离开后，希露出人意料地来找你。她看起来很担心。"
 
 # game/BKchapter2.rpy:4365
 translate chinese c2_homura_okiya1_9ed5643c:
 
     # sill sad "Master, I noticed you invited that little lady from the other day..."
-    sill sad "师父，我注意到你前几天邀请了那个小姑娘……"
+    sill sad "主人，我注意到你前几天邀请了那个小姑娘……"
 
 # game/BKchapter2.rpy:4367
 translate chinese c2_homura_okiya1_ed7e472b:
 
     # "Sill and Homura are about the same height."
-    "西尔和小焰的身高差不多。"
+    "希露和小焰的身高差不多。"
 
 # game/BKchapter2.rpy:4369
 translate chinese c2_homura_okiya1_d928c566:
@@ -8464,7 +8464,7 @@ translate chinese c2_homura_okiya1_d928c566:
 translate chinese c2_homura_okiya1_be32f657:
 
     # "Sill bites her lip, then blurts out."
-    "西尔咬着嘴唇，然后脱口而出。"
+    "希露咬着嘴唇，然后脱口而出。"
 
 # game/BKchapter2.rpy:4373
 translate chinese c2_homura_okiya1_4d6e0664:
@@ -8500,7 +8500,7 @@ translate chinese c2_homura_okiya1_43c73b84:
 translate chinese c2_homura_okiya1_6d137fcc:
 
     # "You pat Sill on the head."
-    "你拍了拍希尔的头。"
+    "你拍了拍希露的头。"
 
 # game/BKchapter2.rpy:4390
 translate chinese c2_homura_okiya1_20846929:
@@ -8512,7 +8512,7 @@ translate chinese c2_homura_okiya1_20846929:
 translate chinese c2_homura_okiya1_f3183629:
 
     # sill happy "Oh, Master..."
-    sill happy "哦，师父..."
+    sill happy "哦，主人..."
 
 # game/BKchapter2.rpy:4394
 translate chinese c2_homura_okiya1_2af80abd:
@@ -8572,7 +8572,7 @@ translate chinese c2_homura_okiya1_6ef6141a:
 translate chinese c2_homura_okiya1_9dc89113:
 
     # sill "I'm sorry, Master..."
-    sill "对不起，师父..."
+    sill "对不起，主人..."
 
 # game/BKchapter2.rpy:4425
 translate chinese c2_homura_okiya1_6b1723d0:
@@ -8590,13 +8590,13 @@ translate chinese c2_homura_okiya1_8d2f85bf:
 translate chinese c2_homura_okiya1_aea11224:
 
     # sill "B-But... It's cold outside! It's [seas]!"
-    sill "B、但是……外面很冷！是[海]！"
+    sill "B、但是……外面很冷！是[seas]！"
 
 # game/BKchapter2.rpy:4439
 translate chinese c2_homura_okiya1_36722146:
 
     # sill "B-But... Even though it's [seas], it's..."
-    sill "B、但是……虽然是[海]，但是……"
+    sill "B、但是……虽然是[seas]，但是……"
 
 # game/BKchapter2.rpy:4441
 translate chinese c2_homura_okiya1_35de36e0:
@@ -8626,7 +8626,7 @@ translate chinese c2_homura_okiya1_da052cca:
 translate chinese c2_homura_okiya1_f9b7dc01:
 
     # "Sill grows pale, and her eyes well up."
-    "西尔变得苍白，她的眼睛很好。"
+    "希露变得苍白，她的眼睛很好。"
 
 # game/BKchapter2.rpy:4452
 translate chinese c2_homura_okiya1_e2b4ea5c:
@@ -8698,7 +8698,7 @@ translate chinese c2_suzume_morning_visit_22130489:
 translate chinese c2_suzume_morning_visit_50dddf1e:
 
     # suzume "Thanks to you, I'm a disgraced Kunoichi now. And a lot of people are going to be cross with me. *pout*"
-    suzume "多亏了你，我现在是个丢脸的国一。很多人都会对我生气。*噘*"
+    suzume "多亏了你，我现在是个丢脸的忍者。很多人都会对我生气。*噘*"
 
 # game/BKchapter2.rpy:4506
 translate chinese c2_suzume_morning_visit_2e252553:
@@ -9196,7 +9196,7 @@ translate chinese c2_suzume_morning_visit_menu_28a0096e:
 translate chinese c2_suzume_morning_visit_menu_fb143add:
 
     # suzume bend "Until I met you! This is the single most interesting thing that happened since I became a Kunoichi."
-    suzume bend "直到遇见你！这是我成为国一后发生的最有趣的事情。"
+    suzume bend "直到遇见你！这是我成为忍者后发生的最有趣的事情。"
 
 # game/BKchapter2.rpy:4684
 translate chinese c2_suzume_morning_visit_menu_5f312bc1:
@@ -9310,7 +9310,7 @@ translate chinese c2_suzume_morning_visit_menu_dae0ec55_4:
 translate chinese c2_suzume_morning_visit_menu_a9c1ffb6:
 
     # you "Anyway. Why are the Kunoichi all women?"
-    you "反正。为什么国一都是女人？"
+    you "反正。为什么忍者都是女人？"
 
 # game/BKchapter2.rpy:4725
 translate chinese c2_suzume_morning_visit_menu_fcb57644:
@@ -9328,7 +9328,7 @@ translate chinese c2_suzume_morning_visit_menu_be643576:
 translate chinese c2_suzume_morning_visit_menu_0ddc898c:
 
     # you "So you Kunoichi don't know each other?"
-    you "所以你们国一不认识？"
+    you "所以你们忍者不认识？"
 
 # game/BKchapter2.rpy:4731
 translate chinese c2_suzume_morning_visit_menu_b058634b:
@@ -9364,31 +9364,31 @@ translate chinese c2_suzume_morning_visit_menu_34e20372:
 translate chinese c2_suzume_morning_visit_menu_3ae63dd0:
 
     # you "Are there any in Zan?"
-    you "赞有吗？"
+    you "瓒城有吗？"
 
 # game/BKchapter2.rpy:4743
 translate chinese c2_suzume_morning_visit_menu_4e280903:
 
     # suzume shrewd "Well, this is where it gets interesting... I know of {i}three{/i} other Kunoichi in Zan at this very moment, and all of them are famous!"
-    suzume shrewd "嗯，这就是有趣的地方...我知道此时在 Zan 的另外 {i}三个{/i} Kunoichi，他们都很有名！"
+    suzume shrewd "嗯，这就是有趣的地方...我知道此时在瓒城的另外 {i}三个{/i} Kunoichi，他们都很有名！"
 
 # game/BKchapter2.rpy:4745
 translate chinese c2_suzume_morning_visit_menu_c18759d0:
 
     # you "Three? And at least one of them is in league with the masked killer... *gulp*"
-    you "三？而且其中至少有一个与蒙面杀手结盟... *gulp *"
+    you "三个？而且其中至少有一个与蒙面杀手结盟... *吞咽*"
 
 # game/BKchapter2.rpy:4750
 translate chinese c2_suzume_morning_visit_menu_758f446c:
 
     # you "Tell me about the other Kunoichi."
-    you "告诉我另一个Kinoichi。"
+    you "告诉我另一个忍者。"
 
 # game/BKchapter2.rpy:4752
 translate chinese c2_suzume_morning_visit_menu_b6e502c7:
 
     # suzume normal "There are three of them in Zan. Any one of them could be in league with your killer... Of perhaps all of them."
-    suzume normal "赞有三人。他们中的任何一个都可能与你的杀手结盟……也许是所有人。"
+    suzume normal "瓒城里有三人。他们中的任何一个都可能与你的杀手结盟……也许是所有人。"
 
 # game/BKchapter2.rpy:4754
 translate chinese c2_suzume_morning_visit_menu_10084d5f:
@@ -9424,7 +9424,7 @@ translate chinese c2_suzume_morning_visit_menu_8f7ed483:
 translate chinese c2_suzume_morning_visit_menu_6fe8a5cd:
 
     # suzume doubt "The Earth School Kunoichi... Hmm."
-    suzume doubt "地球学园国一……嗯。"
+    suzume doubt "地球学园忍者……嗯。"
 
 # game/BKchapter2.rpy:4772
 translate chinese c2_suzume_morning_visit_menu_6987351e:
@@ -9448,7 +9448,7 @@ translate chinese c2_suzume_morning_visit_menu_148aac78:
 translate chinese c2_suzume_morning_visit_menu_64a68cd1:
 
     # suzume "Her tenacity was legendary even before she became a Kunoichi. She became the leader of her school after her Master was brutally murdered, or something. Saved the whole School from extinction."
-    suzume "甚至在她成为国一之前，她的坚韧就是传奇。在她的主人被残忍地谋杀之后，她成为了她的学校的领导者，或者什么。拯救了整个学校免于灭绝。"
+    suzume "甚至在她成为忍者之前，她的坚韧就是传奇。在她的主人被残忍地谋杀之后，她成为了她的学校的领导者，或者什么。拯救了整个学校免于灭绝。"
 
 # game/BKchapter2.rpy:4780
 translate chinese c2_suzume_morning_visit_menu_9c9c442e:
@@ -9472,7 +9472,7 @@ translate chinese c2_suzume_morning_visit_menu_aa5982f0:
 translate chinese c2_suzume_morning_visit_menu_0c79b497:
 
     # you "I see. But what is she doing in Zan?"
-    you "我懂了。可她在瓒做什么？"
+    you "我懂了。可她在瓒城做什么？"
 
 # game/BKchapter2.rpy:4788
 translate chinese c2_suzume_morning_visit_menu_f40f59be:
@@ -9532,7 +9532,7 @@ translate chinese c2_suzume_morning_visit_menu_fcf05c61:
 translate chinese c2_suzume_morning_visit_menu_a64e6e91:
 
     # you "I see... But why is she in Zan now?"
-    you "原来如此……可是她怎么现在在瓒？"
+    you "原来如此……可是她怎么现在在瓒城？"
 
 # game/BKchapter2.rpy:4809
 translate chinese c2_suzume_morning_visit_menu_f499f664:
@@ -9562,7 +9562,7 @@ translate chinese c2_suzume_morning_visit_menu_ea5f8b83:
 translate chinese c2_suzume_morning_visit_menu_4a8a576e:
 
     # suzume "The Void Kunoichi, AKA 'Little Miss Ninja Princess'."
-    suzume "虚空国一，又名“忍者小公主”。"
+    suzume "虚空忍者，又名“忍者小公主”。"
 
 # game/BKchapter2.rpy:4820
 translate chinese c2_suzume_morning_visit_menu_f6453811:
@@ -9604,7 +9604,7 @@ translate chinese c2_suzume_morning_visit_menu_ab92222d:
 translate chinese c2_suzume_morning_visit_menu_0fea6fb0:
 
     # you "A ninja prodigy, uh? And what is she doing here in Zan?"
-    you "忍者神童，嗯？她在赞这里做什么？"
+    you "忍者神童，嗯？她在瓒城这里做什么？"
 
 # game/BKchapter2.rpy:4834
 translate chinese c2_suzume_morning_visit_menu_d956493f:
@@ -10636,13 +10636,13 @@ translate chinese ninja_hunt_intro_541cbc8b:
 translate chinese ninja_hunt_begins_8f457a71:
 
     # suzume "It's one of the Kunoichi! Quick, catch her!"
-    suzume "是国一之一！快，抓住她！"
+    suzume "是忍者之一！快，抓住她！"
 
 # game/BKchapter2.rpy:5401
 translate chinese ninja_hunt_begins_c6e2e0ef:
 
     # suzume "It's that little brat again, the Void Kunoichi! Get her!"
-    suzume "又是那个小鬼，虚空国一！得到她！"
+    suzume "又是那个小鬼，虚空忍者！得到她！"
 
 # game/BKchapter2.rpy:5404
 translate chinese ninja_hunt_begins_8c4f49dc:
@@ -10666,7 +10666,7 @@ translate chinese ninja_hunt_begins_07dae04e:
 translate chinese ninja_hunt_begins_2454f755:
 
     # suzume "It's the weird lady with no smell! The Water Kunoichi! Don't let her get away!"
-    suzume "就是那个没有味道的怪女人！水之国一！不要让她跑掉！"
+    suzume "就是那个没有味道的怪女人！水之忍者！不要让她跑掉！"
 
 # game/BKchapter2.rpy:5414
 translate chinese ninja_hunt_begins_e280e79e:
@@ -10690,7 +10690,7 @@ translate chinese ninja_hunt_begins_5b6c4df9:
 translate chinese ninja_hunt_begins_57671f08:
 
     # suzume "It's the Earth Kunoichi, the serious one... After her, quickly!"
-    suzume "是地球国一，是认真的……在她之后，快！"
+    suzume "是地球忍者，是认真的……在她之后，快！"
 
 # game/BKchapter2.rpy:5424
 translate chinese ninja_hunt_begins_ab9b975a:
@@ -10738,7 +10738,7 @@ translate chinese ninja_intercept_9b802e93:
 translate chinese ninja_intercept_4e6ead66:
 
     # you "[text1]"
-    you "[文本1]"
+    you "[text1]"
 
 # game/BKchapter2.rpy:5512
 translate chinese ninja_intercept_8dd05b5b:
@@ -10870,7 +10870,7 @@ translate chinese intercept_narika_ab5646a1:
 translate chinese intercept_narika_6c19060a:
 
     # you "Why are you here, in Zan?"
-    you "你为什么会在这里，在赞？"
+    you "你为什么会在这里，在瓒城？"
 
 # game/BKchapter2.rpy:5615
 translate chinese intercept_narika_0d145a59:
@@ -10930,7 +10930,7 @@ translate chinese intercept_narika_c42c26b2:
 translate chinese intercept_narika_5b81bfc9:
 
     # narika "Fufufu, I see what's going on here... You're jealous of me for being the best Kunoichi, and decided to come challenge me to a fight!"
-    narika "呼呼呼，我知道这是怎么回事了……你嫉妒我是最好的国一，决定来挑战我！"
+    narika "呼呼呼，我知道这是怎么回事了……你嫉妒我是最好的忍者，决定来挑战我！"
 
 # game/BKchapter2.rpy:5635
 translate chinese intercept_narika_66bdc409:
@@ -11020,13 +11020,13 @@ translate chinese intercept_narika_04443d26:
 translate chinese intercept_narika_53bfc30b:
 
     # suzume "You're completely wrong, kiddo. I'm not a Kunoichi anymore, and I couldn't care less about besting you."
-    suzume "你完全错了，孩子。我已经不是国一了，我也顾不上打败你了。"
+    suzume "你完全错了，孩子。我已经不是忍者了，我也顾不上打败你了。"
 
 # game/BKchapter2.rpy:5665
 translate chinese intercept_narika_78c82aa5:
 
     # narika normal "Not a Kunoichi? You mean you quit?"
-    narika normal "不是国一吗？你的意思是你辞职？"
+    narika normal "不是忍者吗？你的意思是你辞职？"
 
 # game/BKchapter2.rpy:5669
 translate chinese intercept_narika_676147c4:
@@ -11236,7 +11236,7 @@ translate chinese intercept_narika_7f1a8eda:
 translate chinese intercept_narika_ff37177d:
 
     # you "What are you doing here in Zan? Are you here on a contract?"
-    you "你在赞这里做什么？你是来签合同的吗？"
+    you "你在瓒城这里做什么？你是来签合同的吗？"
 
 # game/BKchapter2.rpy:5769
 translate chinese intercept_narika_486d18c7:
@@ -11668,7 +11668,7 @@ translate chinese intercept_narika_3836cb9c:
 translate chinese intercept_narika_32d00b71:
 
     # suzume doubt "The Water Kunoichi..."
-    suzume doubt "水国一..."
+    suzume doubt "水忍者..."
 
 # game/BKchapter2.rpy:5946
 translate chinese intercept_narika_647dc9ec:
@@ -11746,7 +11746,7 @@ translate chinese intercept_narika_c9251880:
 translate chinese intercept_narika_07ba6fca:
 
     # narika sad "Why, it's obvious, isn't it? Why do you think those second-rate Kunoichi are heading to this dump of a city..."
-    narika sad "为什么，很明显，不是吗？为什么你认为那些二流的国一会去这个城市的垃圾场……"
+    narika sad "为什么，很明显，不是吗？为什么你认为那些二流的忍者会去这个城市的垃圾场……"
 
 # game/BKchapter2.rpy:5974
 translate chinese intercept_narika_467f2497:
@@ -13000,7 +13000,7 @@ translate chinese intercept_mizuki_f88119c4:
 translate chinese intercept_mizuki_8044f0e7:
 
     # you "Let's not beat around the bush. What are you doing here, in Zan?"
-    you "我们不要拐弯抹角。你在赞这里做什么？"
+    you "我们不要拐弯抹角。你在瓒城这里做什么？"
 
 # game/BKchapter2.rpy:6589
 translate chinese intercept_mizuki_034efb87:
@@ -13198,7 +13198,7 @@ translate chinese intercept_mizuki_5880d6fb:
 translate chinese intercept_mizuki_2f20bede:
 
     # suzume "I told you, the Water Kunoichi is an old lady! Everyone knows this."
-    suzume "我告诉过你，水国一是个老太太！每个人都知道这一点。"
+    suzume "我告诉过你，水忍者是个老太太！每个人都知道这一点。"
 
 # game/BKchapter2.rpy:6696
 translate chinese intercept_mizuki_6e3beec0:
@@ -13246,7 +13246,7 @@ translate chinese intercept_mizuki_fb4b0439:
 translate chinese intercept_mizuki_68e1cd2b:
 
     # you "Anyway, what are you doing here in Zan? Are you involved with the masked murderer?"
-    you "无论如何，你来赞这里做什么？你和蒙面凶手有牵连吗？"
+    you "无论如何，你来瓒城这里做什么？你和蒙面凶手有牵连吗？"
 
 # game/BKchapter2.rpy:6713
 translate chinese intercept_mizuki_5843248a:
@@ -13402,7 +13402,7 @@ translate chinese intercept_mizuki_5447414c:
 translate chinese intercept_mizuki_959347d9:
 
     # you "So this is it, then? You're after someone here in Zan? For revenge?"
-    you "那么是这样的吗？你是在Zan这里找人吗？为了复仇？"
+    you "那么是这样的吗？你是在瓒城这里找人吗？为了复仇？"
 
 # game/BKchapter2.rpy:6779
 translate chinese intercept_mizuki_46e09e21:
@@ -13714,13 +13714,13 @@ translate chinese intercept_mizuki_8849bbc5:
 translate chinese intercept_mizuki_d1ccafa9:
 
     # "You have lost [lost] gold."
-    "你失去了[失去]黄金。"
+    "你失去了[lost]黄金。"
 
 # game/BKchapter2.rpy:6936
 translate chinese intercept_mizuki_1396f9c9:
 
     # you "I can make it... I can... *blub*"
-    you "我可以做到……我可以……*blub*"
+    you "我可以做到……我可以……*泡水*"
 
 # game/BKchapter2.rpy:6941
 translate chinese intercept_mizuki_13874eea:
@@ -13768,7 +13768,7 @@ translate chinese intercept_mizuki_46146746:
 translate chinese intercept_mizuki_0f8346eb:
 
     # "You go back to the brothel, exhausted. You have lost all your actions for today."
-    "你回到妓院，筋疲力尽。你已经失去了今天的所有行动。"
+    "你回到青楼，筋疲力尽。你已经失去了今天的所有行动。"
 
 # game/BKchapter2.rpy:6965
 translate chinese intercept_mizuki_0c65b079:
@@ -13858,7 +13858,7 @@ translate chinese mizuki_onsen_22765529:
 translate chinese mizuki_onsen_b7a6b8bf:
 
     # "Woman" "Fufufufu..."
-    "女人”“呼呼呼呼……"
+    "女人" "呼呼呼呼……"
 
 # game/BKchapter2.rpy:7019
 translate chinese mizuki_onsen_b613a16c:
@@ -13930,7 +13930,7 @@ translate chinese mizuki_onsen_f8af1f1f:
 translate chinese mizuki_onsen_24a01f2d:
 
     # "Woman" "Fufufu... Why, don't you recognize me?"
-    "女人” “呼呼呼……怎么，你不认识我了？"
+    "女人" "呼呼呼……怎么，你不认识我了？"
 
 # game/BKchapter2.rpy:7055
 translate chinese mizuki_onsen_f44ef01c:
@@ -13972,7 +13972,7 @@ translate chinese mizuki_onsen_f3977f0f:
 translate chinese mizuki_onsen_561c2bdf:
 
     # "Woman" "Here... *whisper*"
-    "女人”“这里……*耳语*"
+    "女人" "这里……*耳语*"
 
 # game/BKchapter2.rpy:7076
 translate chinese mizuki_onsen_7c6dbf84:
@@ -13996,7 +13996,7 @@ translate chinese mizuki_onsen_7c233dc7:
 translate chinese mizuki_onsen_f56dbc1f:
 
     # you "Wait a minute... You're the Water Kunoichi! Mizuki..."
-    you "等一下……你是水之国一！水木..."
+    you "等一下……你是水之忍者！水木..."
 
 # game/BKchapter2.rpy:7088
 translate chinese mizuki_onsen_680051a7:
@@ -14494,7 +14494,7 @@ translate chinese mizuki_onsen_af8d58aa:
 translate chinese mizuki_onsen_907759af:
 
     # sill "W-Why are you naked... *blush*"
-    sill "W-你为什么光着身子……*脸红*"
+    sill "为-为什么你光着身子……*脸红*"
 
 # game/BKchapter2.rpy:7291
 translate chinese mizuki_onsen_7e62be66:
@@ -14506,7 +14506,7 @@ translate chinese mizuki_onsen_7e62be66:
 translate chinese mizuki_onsen_8dc76bbb:
 
     # sill "Uh? The towels? B-But..."
-    sill "呃？毛巾？B-但是……"
+    sill "呃？毛巾？但-但是……"
 
 # game/BKchapter2.rpy:7297
 translate chinese mizuki_onsen_1d5310cb:
@@ -14518,7 +14518,7 @@ translate chinese mizuki_onsen_1d5310cb:
 translate chinese mizuki_onsen_0fe3f2ae:
 
     # "With Sill sobbing and raging, you beat a prudent retreat to your room - trying hard to ignore the customers' strange looks as you cross the brothel butt-naked."
-    "随着 Sill 抽泣和咆哮，你谨慎地撤退到你的房间 - 当你赤着屁股穿过妓院时，努力忽略顾客奇怪的表情。"
+    "随着希露抽泣和咆哮，你谨慎地撤退到你的房间 - 当你赤着屁股穿过青楼时，努力忽略顾客奇怪的表情。"
 
 # game/BKchapter2.rpy:7310
 translate chinese intercept_haruka_4e982f4c:
@@ -14560,7 +14560,7 @@ translate chinese intercept_haruka_d53d7db3:
 translate chinese intercept_haruka_1bc8ef68:
 
     # haruka "You're a Kunoichi as well, aren't you?"
-    haruka "你也是国一吧？"
+    haruka "你也是忍者吧？"
 
 # game/BKchapter2.rpy:7326
 translate chinese intercept_haruka_4ea63789:
@@ -14578,7 +14578,7 @@ translate chinese intercept_haruka_1fb67929:
 translate chinese intercept_haruka_bff35848:
 
     # you "(You... You were a Kunoichi just a few days ago...)"
-    you "（你……前几天你还是国一……）"
+    you "（你……前几天你还是忍者……）"
 
 # game/BKchapter2.rpy:7332
 translate chinese intercept_haruka_0f40ab29:
@@ -14698,7 +14698,7 @@ translate chinese intercept_haruka_cc8f22a9:
 translate chinese intercept_haruka_9a8f6237:
 
     # you "And what are they, exactly? What takes you to Zan?"
-    you "它们到底是什么？是什么带你去赞？"
+    you "它们到底是什么？是什么带你去瓒城？"
 
 # game/BKchapter2.rpy:7380
 translate chinese intercept_haruka_2812641f:
@@ -14824,7 +14824,7 @@ translate chinese intercept_haruka_05e9e0eb:
 translate chinese intercept_haruka_503755a5:
 
     # "After a long, intense chase in Zan's streets, you finally corner Haruka in a dead end, overlooked by the grim grey walls of the prison in the distance."
-    "在 Zan 的街道上进行了漫长而激烈的追逐之后，你最终将 Haruka 逼入了死胡同，远处监狱的灰暗墙壁俯瞰着你。"
+    "在瓒城的街道上进行了漫长而激烈的追逐之后，你最终将 Haruka 逼入了死胡同，远处监狱的灰暗墙壁俯瞰着你。"
 
 # game/BKchapter2.rpy:7443
 translate chinese intercept_haruka_393a9e37:
@@ -15040,7 +15040,7 @@ translate chinese intercept_haruka_dc066c7e:
 translate chinese intercept_haruka_bfc35823:
 
     # haruka normal "Hmph, of course you do. Subaru was a legendary Kunoichi."
-    haruka normal "哼，你当然知道。昴是传说中的国一。"
+    haruka normal "哼，你当然知道。昴是传说中的忍者。"
 
 # game/BKchapter2.rpy:7529
 translate chinese intercept_haruka_62e1977d:
@@ -15130,7 +15130,7 @@ translate chinese intercept_haruka_61204a1e:
 translate chinese intercept_haruka_ad25bb46:
 
     # "Subaru" "AGGGH!!!"
-    "斯巴鲁” “啊啊啊！！！"
+    "斯巴鲁" "啊啊啊！！！"
 
 # game/BKchapter2.rpy:7583
 translate chinese intercept_haruka_4463a3b5:
@@ -15178,13 +15178,13 @@ translate chinese intercept_haruka_6b046169:
 translate chinese intercept_haruka_12e50ef7:
 
     # "Noroi" "Why don't we impregnate her for r-e-e-ecruits, boss? She's got strong hi-i-ips..."
-    "诺罗伊” “我们为什么不让她怀孕，以便重新招募，老板？她有很强的hi-i-ips..."
+    "诺罗伊" "我们为什么不让她怀孕，以便重新招募，老板？她有很强的hi-i-ips..."
 
 # game/BKchapter2.rpy:7603
 translate chinese intercept_haruka_5adf075c:
 
     # "Noroi Leader" "No. Look at that wretch. She is weak and cowardly. We can't raise good stock from this one."
-    "诺伊领袖” “没有。看那个坏蛋。她软弱而懦弱。我们不能从这个中筹集到好的股票。"
+    "诺伊领袖" "没有。看那个坏蛋。她软弱而懦弱。我们不能从这个中筹集到好的股票。"
 
 # game/BKchapter2.rpy:7605
 translate chinese intercept_haruka_48fbece3:
@@ -15196,7 +15196,7 @@ translate chinese intercept_haruka_48fbece3:
 translate chinese intercept_haruka_a545571d:
 
     # "Noroi Leader" "No. She might be of some use to us yet. I just thought of an easy way to keep our allies happy..."
-    "诺伊领袖” “没有。她可能对我们还有些用处。我只是想了一个简单的方法来让我们的盟友开心..."
+    "诺伊领袖" "没有。她可能对我们还有些用处。我只是想了一个简单的方法来让我们的盟友开心..."
 
 # game/BKchapter2.rpy:7617
 translate chinese intercept_haruka_94b47054:
@@ -15604,7 +15604,7 @@ translate chinese intercept_haruka_4f7421c7:
 translate chinese intercept_haruka_2f4dbbd3:
 
     # haruka "I never questioned my role in this. Things needed to get done, so I did them... I was taken aback when they asked me to be the new Kunoichi."
-    haruka "我从来没有质疑过我在这方面的作用。事情需要完成，所以我做了……当他们让我成为新的国一时，我吃了一惊。"
+    haruka "我从来没有质疑过我在这方面的作用。事情需要完成，所以我做了……当他们让我成为新的忍者时，我吃了一惊。"
 
 # game/BKchapter2.rpy:7820
 translate chinese intercept_haruka_2c1e8c4e:
@@ -15628,7 +15628,7 @@ translate chinese intercept_haruka_dd9b302e:
 translate chinese intercept_haruka_c31cc423:
 
     # you "This is what honor is all about. This makes you worthy to be a Kunoichi!"
-    you "这就是荣誉的全部意义所在。这让你不愧为国一！"
+    you "这就是荣誉的全部意义所在。这让你不愧为忍者！"
 
 # game/BKchapter2.rpy:7830
 translate chinese intercept_haruka_18b0eed2:
@@ -15880,7 +15880,7 @@ translate chinese intercept_haruka_d4508717:
 translate chinese c2_palace_visit1_769f4fb2:
 
     # "As you finish breakfast, Sill brings you a letter bearing the royal seal."
-    "当你吃完早餐时，Sill 会给你带来一封印有皇家印章的信。"
+    "当你吃完早餐时，希露会给你带来一封印有皇家印章的信。"
 
 # game/BKchapter2.rpy:7958
 translate chinese c2_palace_visit1_93e77161:
@@ -15892,19 +15892,19 @@ translate chinese c2_palace_visit1_93e77161:
 translate chinese c2_palace_visit1_54d0b7fc:
 
     # sill "Master [MC.name], a carriage came with the messenger. They're waiting outside."
-    sill "主人【MC.name】，一辆马车随信使而来。他们在外面等着。"
+    sill "[MC.name]主人，一辆马车随信使而来。他们在外面等着。"
 
 # game/BKchapter2.rpy:7964
 translate chinese c2_palace_visit1_247cb9ca:
 
     # you "Sounds like they want to make sure I get to the Palace in haste... Alright, let's go. Sill, you take care of the house."
-    you "听起来他们想确保我能尽快赶到皇宫……好吧，我们走吧。西尔，你照顾房子。"
+    you "听起来他们想确保我能尽快赶到皇宫……好吧，我们走吧。希露，你照顾房子。"
 
 # game/BKchapter2.rpy:7966
 translate chinese c2_palace_visit1_b347dd2b:
 
     # sill sad "O-Of course!"
-    sill sad "O-当然！"
+    sill sad "当-当然！"
 
 # game/BKchapter2.rpy:7970
 translate chinese c2_palace_visit1_f1b0a7af:
@@ -16042,7 +16042,7 @@ translate chinese c2_palace_visit1_199ab158:
 translate chinese c2_palace_visit1_1f7986d6:
 
     # you "I didn't say the killer was a Kunoichi. But I have reasons to believe one or several of them work for him."
-    you "我没说凶手是国一。但我有理由相信其中一个或几个对他有用。"
+    you "我没说凶手是忍者。但我有理由相信其中一个或几个对他有用。"
 
 # game/BKchapter2.rpy:8027
 translate chinese c2_palace_visit1_b6616308:
@@ -16192,25 +16192,25 @@ translate chinese c2_palace_visit1_3797f695:
 translate chinese c2_palace_visit1_42e54465:
 
     # "Noble man" "Your Highness, you are resplendent as the stars in the night sky, as always."
-    "贵人” “殿下，您一如既往地像夜空中的星星一样璀璨。"
+    "贵人" "殿下，您一如既往地像夜空中的星星一样璀璨。"
 
 # game/BKchapter2.rpy:8094
 translate chinese c2_palace_visit1_f846f227:
 
     # "Noble woman" "Your Highness, have you met my son? He is {i}so{/i} eager to make your acquaintance..."
-    "贵妇” “殿下，您见过我儿子吗？他{i}如此{/i}渴望结识你..."
+    "贵妇" "殿下，您见过我儿子吗？他{i}如此{/i}渴望结识你..."
 
 # game/BKchapter2.rpy:8096
 translate chinese c2_palace_visit1_9b15d706:
 
     # "Foreign dignitary" "Please, Your Highness, you must pass on this important request to your father..."
-    "外国要人” “请，殿下，您必须将这个重要的请求转达给您的父亲……"
+    "外国要人" "请，殿下，您必须将这个重要的请求转达给您的父亲……"
 
 # game/BKchapter2.rpy:8098
 translate chinese c2_palace_visit1_af85a210:
 
     # "Elder gentleman" "Your Highness, you know how lonely I've been since my poor wife passed away... But it's high time I remarry, as my children say. Did I mention how large my estate is?"
-    "老先生” “殿下，您知道自从我可怜的妻子去世后，我有多孤独……但是，正如我的孩子们所说，我该是再婚的时候了。我有没有提到我的财产有多大？"
+    "老先生" "殿下，您知道自从我可怜的妻子去世后，我有多孤独……但是，正如我的孩子们所说，我该是再婚的时候了。我有没有提到我的财产有多大？"
 
 # game/BKchapter2.rpy:8102
 translate chinese c2_palace_visit1_f666b028:
@@ -16342,7 +16342,7 @@ translate chinese c2_palace_visit1_9d910c45:
 translate chinese c2_palace_visit1_f35774c5:
 
     # "Majordomo" "Your Highness, the Duke of Hazz-Aard is here."
-    "少校” “殿下，哈兹-阿尔德公爵来了。"
+    "少校" "殿下，哈兹-阿尔德公爵来了。"
 
 # game/BKchapter2.rpy:8148
 translate chinese c2_palace_visit1_269df8de:
@@ -16522,43 +16522,43 @@ translate chinese c2_palace_visit1_7d9c6e33:
 translate chinese c2_palace_visit1_9b9aafaf:
 
     # "Noble man" "How long has it been since we've last seen him? Six weeks?"
-    "贵族” “我们有多久没有见过他了？六个星期？"
+    "贵族" "我们有多久没有见过他了？六个星期？"
 
 # game/BKchapter2.rpy:8224
 translate chinese c2_palace_visit1_35333dd4:
 
     # "Guild member" "Yes. The old man is going to kick the bucket soon, I tell you."
-    "公会成员” “是的。我告诉你，老头子马上就要踢水桶了。"
+    "公会成员" "是的。我告诉你，老头子马上就要踢水桶了。"
 
 # game/BKchapter2.rpy:8226
 translate chinese c2_palace_visit1_08e395fc:
 
     # "Arios priest" "Hey! You're talking about the King! Show some respect!"
-    "阿里奥斯牧师” “嘿！你在说国王！表示尊重！"
+    "阿里奥斯牧师" "嘿！你在说国王！表示尊重！"
 
 # game/BKchapter2.rpy:8228
 translate chinese c2_palace_visit1_1ff4709e:
 
     # "Merchant" "Some King he is, leaving the affairs of State to be handled by a girl..."
-    "商人” “他是一个国王，把国家的事情交给一个女孩来处理……"
+    "商人" "他是一个国王，把国家的事情交给一个女孩来处理……"
 
 # game/BKchapter2.rpy:8230
 translate chinese c2_palace_visit1_cd810c38:
 
     # "Noble man" "Don't disparage Princess Kurohime. She's doing a better job than the King ever did."
-    "高贵的男人” “不要贬低黑姬公主。她做得比国王做得更好。"
+    "高贵的男人" "不要贬低黑姬公主。她做得比国王做得更好。"
 
 # game/BKchapter2.rpy:8232
 translate chinese c2_palace_visit1_018a26bf:
 
     # "Merchant" "A woman is only fit for one kind of job, and that's blowjobs! Am I right?"
-    "商人” “女人只适合一种工作，那就是口交！我对吗？"
+    "商人" "女人只适合一种工作，那就是口交！我对吗？"
 
 # game/BKchapter2.rpy:8236
 translate chinese c2_palace_visit1_2affecb9:
 
     # "Arios priest" "How dare you! *mad*"
-    "阿里奥斯牧师” “你怎么敢！*疯狂的*"
+    "阿里奥斯牧师" "你怎么敢！*疯狂的*"
 
 # game/BKchapter2.rpy:8240
 translate chinese c2_palace_visit1_16f0be5a:
@@ -16576,73 +16576,73 @@ translate chinese c2_palace_visit1_3bf3ff7d:
 translate chinese c2_palace_visit1_206344da:
 
     # "Valet" "...and let me tell you, I've only been here three months, but this place is mighty strange."
-    "代客” “……我告诉你，我才来这里三个月，但这地方很奇怪。"
+    "代客" "……我告诉你，我才来这里三个月，但这地方很奇怪。"
 
 # game/BKchapter2.rpy:8249
 translate chinese c2_palace_visit1_f30f1f90:
 
     # "Manservant" "You bet. The castle's foundations were laid out by some elder civilization, I hear. Left without a trace, they did..."
-    "男仆” “你打赌。我听说，城堡的地基是由某个古老的文明奠定的。他们没有留下任何痕迹，..."
+    "男仆" "你打赌。我听说，城堡的地基是由某个古老的文明奠定的。他们没有留下任何痕迹，..."
 
 # game/BKchapter2.rpy:8251
 translate chinese c2_palace_visit1_186e8dc4:
 
     # "Maid" "But I hear they left a whole network of tunnels and galleries that radiates from the Palace and criss-crosses Zan. Some secret passages are still in use, I just know it!"
-    "女仆” “但我听说他们留下了一整套从宫殿向外辐射的隧道和画廊网络，纵横交错。有些密道还在使用，我就知道了！"
+    "女仆" "但我听说他们留下了一整套从宫殿向外辐射的隧道和画廊网络，纵横交错。有些密道还在使用，我就知道了！"
 
 # game/BKchapter2.rpy:8253
 translate chinese c2_palace_visit1_293db293:
 
     # "Valet" "Oh, really?"
-    "代客” “哦，真的吗？"
+    "代客" "哦，真的吗？"
 
 # game/BKchapter2.rpy:8255
 translate chinese c2_palace_visit1_bf7c3e33:
 
     # "Maid" "Yes, or so the older staffers tell me. That would explain..."
-    "女仆” “是的，至少年长的工作人员是这么告诉我的。那可以解释..."
+    "女仆" "是的，至少年长的工作人员是这么告诉我的。那可以解释..."
 
 # game/BKchapter2.rpy:8257
 translate chinese c2_palace_visit1_5299b72b:
 
     # "Manservant" "Explain what?"
-    "男仆” “解释什么？"
+    "男仆" "解释什么？"
 
 # game/BKchapter2.rpy:8259
 translate chinese c2_palace_visit1_b5b1d439:
 
     # "Maid" "Why, the assassin of course! He got into the castle, made it to the Princess's doorstep, didn't you hear?"
-    "女仆” “为什么，当然是刺客！他进了城堡，走到了公主的家门口，你没听到吗？"
+    "女仆" "为什么，当然是刺客！他进了城堡，走到了公主的家门口，你没听到吗？"
 
 # game/BKchapter2.rpy:8261
 translate chinese c2_palace_visit1_857de5a3:
 
     # "Maid" "I thought it was strange, because the security around here is {i}very{/i} tight. Commander Uesugi sees to that."
-    "女仆” “我觉得这很奇怪，因为这里的安全{i}非常{/i}严密。上杉指挥官看到了这一点。"
+    "女仆" "我觉得这很奇怪，因为这里的安全{i}非常{/i}严密。上杉指挥官看到了这一点。"
 
 # game/BKchapter2.rpy:8263
 translate chinese c2_palace_visit1_e4826612:
 
     # "Valet" "But the secret passages might explain how he got in. Or maybe there's a traitor in the Palace..."
-    "男仆” “不过密道或许能解释他是怎么进来的。或者说，皇宫里有叛徒……"
+    "男仆" "不过密道或许能解释他是怎么进来的。或者说，皇宫里有叛徒……"
 
 # game/BKchapter2.rpy:8265
 translate chinese c2_palace_visit1_2f9c69a8:
 
     # "Manservant" "Speaking of Commander Uesugi, have you seen her? She's {i}so{/i} hot, isn't she? Too bad she's got such a stick up her arse."
-    "男仆” “说到上杉司令，你见过她吗？她很{i}so{/i}，不是吗？太糟糕了，她的屁股上有这么一根棍子。"
+    "男仆" "说到上杉司令，你见过她吗？她很{i}so{/i}，不是吗？太糟糕了，她的屁股上有这么一根棍子。"
 
 # game/BKchapter2.rpy:8267
 translate chinese c2_palace_visit1_8fe581a4:
 
     # "Maid" "I'm sure you'd like to stick something else up her arse, you pig..."
-    "女仆” “我敢肯定你想在她屁股上塞点别的东西，你这猪……"
+    "女仆" "我敢肯定你想在她屁股上塞点别的东西，你这猪……"
 
 # game/BKchapter2.rpy:8269
 translate chinese c2_palace_visit1_55e3c3c9:
 
     # "Manservant" "You bet!"
-    "男仆” “你打赌！"
+    "男仆" "你打赌！"
 
 # game/BKchapter2.rpy:8273
 translate chinese c2_palace_visit1_84795083:
@@ -16678,7 +16678,7 @@ translate chinese c2_homura_okiya2_42451dda:
 translate chinese c2_homura_okiya2_ab9aa1b7:
 
     # "You elbow Sill out of the way and greet Homura with a smile."
-    "你将西尔推开，微笑着向小焰打招呼。"
+    "你将希露推开，微笑着向小焰打招呼。"
 
 # game/BKchapter2.rpy:8307
 translate chinese c2_homura_okiya2_96bce280:
@@ -16774,7 +16774,7 @@ translate chinese c2_homura_okiya2_df1dd578:
 translate chinese c2_homura_okiya2_584b38a5:
 
     # homura "Three Kunoichi... Yes, that fits with the information I heard. We're making progress! *smile*"
-    homura "三国一……是的，这与我听到的信息相符。我们正在取得进展！*微笑*"
+    homura "三忍者……是的，这与我听到的信息相符。我们正在取得进展！*微笑*"
 
 # game/BKchapter2.rpy:8342
 translate chinese c2_homura_okiya2_1b2eb9aa:
@@ -16882,7 +16882,7 @@ translate chinese c2_homura_okiya2_d23fc489:
 translate chinese c2_homura_okiya2_6afe71f0:
 
     # "(In fact, you asked Sill to make some, but she made a point of ignoring you.)"
-    "（事实上​​，你让 Sill 做一些，但她故意不理你。）"
+    "（事实上​​，你让希露做一些，但她故意不理你。）"
 
 # game/BKchapter2.rpy:8385
 translate chinese c2_homura_okiya2_247bd40b:
@@ -17122,7 +17122,7 @@ translate chinese c2_homura_okiya2_26ef54b5:
 translate chinese c2_homura_okiya2_2c403ae6:
 
     # "You hear something from the kitchen, as if Sill was clearing her throat loudly, but pay it no mind."
-    "你听到厨房里传来什么声音，好像西尔在大声清嗓子似的，但别在意。"
+    "你听到厨房里传来什么声音，好像希露在大声清嗓子似的，但别在意。"
 
 # game/BKchapter2.rpy:8490
 translate chinese c2_homura_okiya2_d5358093:
@@ -17344,7 +17344,7 @@ translate chinese c2_homura_okiya2_cebc8958:
 translate chinese c2_homura_okiya2_5df9b324:
 
     # you "Well... I also use this room for training the girls. But don't worry, Sill gets everything cleaned up every morning..."
-    you "嗯……我也用这个房间来训练女孩。不过别担心，Sill 每天早上都会把所有东西都清理干净……"
+    you "嗯……我也用这个房间来训练女孩。不过别担心，希露每天早上都会把所有东西都清理干净……"
 
 # game/BKchapter2.rpy:8592
 translate chinese c2_homura_okiya2_786f23b9:
@@ -17608,7 +17608,7 @@ translate chinese c2_homura_okiya2_0d4f596d:
 translate chinese c2_homura_okiya2_83d0e1e0:
 
     # "Your eyes trail her as she walks out of the brothel. Suddenly, your eyes meet Sill's, standing next to the door and burning with fury."
-    "当她走出妓院时，你的目光一直在追随着她。突然，你的目光与站在门边的西尔对上，怒火中烧。"
+    "当她走出青楼时，你的目光一直在追随着她。突然，你的目光与站在门边的希露对上，怒火中烧。"
 
 # game/BKchapter2.rpy:8702
 translate chinese c2_homura_okiya2_e3419185:
@@ -17620,7 +17620,7 @@ translate chinese c2_homura_okiya2_e3419185:
 translate chinese c2_homura_okiya2_4af31c9f:
 
     # "Sill goes to her room and slams the door so hard that a few drunk patrons fall over like bowling pins. You head back to your bedroom, sensing a headache coming."
-    "Sill 走进她的房间，用力关上门，以至于几个喝醉的顾客像保龄球一样摔倒。你回到你的卧室，感觉到头痛的来临。"
+    "希露走进她的房间，用力关上门，以至于几个喝醉的顾客像保龄球一样摔倒。你回到你的卧室，感觉到头痛的来临。"
 
 # game/BKchapter2.rpy:8720
 translate chinese c2_palace_visit2_85be6880:
@@ -17632,7 +17632,7 @@ translate chinese c2_palace_visit2_85be6880:
 translate chinese c2_palace_visit2_da7b1d49:
 
     # "Messenger" "Sir, I have been asked to take you to the Palace. Princess Kurohime's orders."
-    "使者” “先生，我奉命带您去皇宫。黑姬公主的吩咐。"
+    "使者" "先生，我奉命带您去皇宫。黑姬公主的吩咐。"
 
 # game/BKchapter2.rpy:8724
 translate chinese c2_palace_visit2_4a3edb9f:
@@ -18856,7 +18856,7 @@ translate chinese luncheon2_kenshin_menu_5b3459f6:
 translate chinese luncheon2_kenshin_menu_dd26abfa:
 
     # "Duchess" "My darling boy, you really don't know who they are, do you? You must be new to the Kingdom..."
-    "公爵夫人” “我亲爱的孩子，你真的不知道他们是谁，是吗？你一定是新来的王国..."
+    "公爵夫人" "我亲爱的孩子，你真的不知道他们是谁，是吗？你一定是新来的王国..."
 
 # game/BKchapter2.rpy:9258
 translate chinese luncheon2_kenshin_menu_3f54beab:
@@ -18868,7 +18868,7 @@ translate chinese luncheon2_kenshin_menu_3f54beab:
 translate chinese luncheon2_kenshin_menu_fcd2468c:
 
     # "Duchess" "A little country bumpkin, how adorable! A minor noble from one of the lesser cities in Xeros, no doubt... You must be starstruck to be standing among Zan's elite! This is the real deal!"
-    "公爵夫人” “乡下小土包子，好可爱啊！毫无疑问，一位来自 Xeros 小城市之一的小贵族......你必须是星光熠熠，才能站在 Zan 的精英中！这是实打实的！"
+    "公爵夫人" "乡下小土包子，好可爱啊！毫无疑问，一位来自 Xeros 小城市之一的小贵族......你必须是星光熠熠，才能站在 Zan 的精英中！这是实打实的！"
 
 # game/BKchapter2.rpy:9262
 translate chinese luncheon2_kenshin_menu_4eba0cef:
@@ -18880,7 +18880,7 @@ translate chinese luncheon2_kenshin_menu_4eba0cef:
 translate chinese luncheon2_kenshin_menu_86bbc9e6:
 
     # "Duchess" "But you're in luck, because I know {i}everyone{/i} worth knowing in the City of Jade."
-    "公爵夫人” “但你很幸运，因为我认识翡翠城中值得认识的{i}每个人{/i}。"
+    "公爵夫人" "但你很幸运，因为我认识翡翠城中值得认识的{i}每个人{/i}。"
 
 # game/BKchapter2.rpy:9266
 translate chinese luncheon2_kenshin_menu_5549e0a6:
@@ -18892,7 +18892,7 @@ translate chinese luncheon2_kenshin_menu_5549e0a6:
 translate chinese luncheon2_kenshin_menu_d6264b90:
 
     # "Duchess" "This is Lord Dukal, one of the most influential men in the city. He commands a lot of loyalty within the young people of the upper class, and speaks for many of them at Court."
-    "公爵夫人” “这位是杜卡尔勋爵，城里最有影响力的人之一。他在上流社会的年轻人中拥有很高的忠诚度，并在宫廷为他们中的许多人说话。"
+    "公爵夫人" "这位是杜卡尔勋爵，城里最有影响力的人之一。他在上流社会的年轻人中拥有很高的忠诚度，并在宫廷为他们中的许多人说话。"
 
 # game/BKchapter2.rpy:9270
 translate chinese luncheon2_kenshin_menu_e40e69b8:
@@ -18910,13 +18910,13 @@ translate chinese luncheon2_kenshin_menu_4b18fd90:
 translate chinese luncheon2_kenshin_menu_0eff8859:
 
     # "Duchess" "Oh no, far from it. He's one of the last survivors of the former dynasty."
-    "公爵夫人” “哦，不，远非如此。他是前王朝最后的幸存者之一。"
+    "公爵夫人" "哦，不，远非如此。他是前王朝最后的幸存者之一。"
 
 # game/BKchapter2.rpy:9276
 translate chinese luncheon2_kenshin_menu_c23a45f8:
 
     # "Duchess" "A distant cousin of the ruling family, he was too young and unimportant at the time of the purge. And now, it's too late for King Pharo to correct this particular mistake... Not that he has the backbone anymore."
-    "公爵夫人” “是统治家族的远房表亲，在大清洗的时候还太年轻，不重要。而现在，法罗国王要纠正这个特殊的错误已经太迟了……并不是说他不再有骨气了。"
+    "公爵夫人" "是统治家族的远房表亲，在大清洗的时候还太年轻，不重要。而现在，法罗国王要纠正这个特殊的错误已经太迟了……并不是说他不再有骨气了。"
 
 # game/BKchapter2.rpy:9278
 translate chinese luncheon2_kenshin_menu_1631b9b4:
@@ -18928,13 +18928,13 @@ translate chinese luncheon2_kenshin_menu_1631b9b4:
 translate chinese luncheon2_kenshin_menu_3db4961b:
 
     # "Duchess" "Why, yes, has no one told you how the current dynasty came to power? There was a lot of bloodshed when King Pharo took the throne..."
-    "公爵夫人” “为什么，是的，没有人告诉你现在的王朝是如何上台的吗？法罗国王即位时发生了很多流血事件……"
+    "公爵夫人" "为什么，是的，没有人告诉你现在的王朝是如何上台的吗？法罗国王即位时发生了很多流血事件……"
 
 # game/BKchapter2.rpy:9282
 translate chinese luncheon2_kenshin_menu_289551ed:
 
     # "Duchess" "Well, some would say 'usurped'. But I am not one to gossip... *wink*"
-    "公爵夫人” “嗯，有些人会说‘篡位’。但我不是八卦的人……*眨眼*"
+    "公爵夫人" "嗯，有些人会说‘篡位’。但我不是八卦的人……*眨眼*"
 
 # game/BKchapter2.rpy:9284
 translate chinese luncheon2_kenshin_menu_9bcdbe90:
@@ -18946,13 +18946,13 @@ translate chinese luncheon2_kenshin_menu_9bcdbe90:
 translate chinese luncheon2_kenshin_menu_62bbb51c:
 
     # "Duchess" "Well, he's still old Zanic nobility. Some foolish people would even say he has as much right to the throne as Princess Kurohime, Arios bless her... Some even took to calling him 'Prince Dukal'."
-    "公爵夫人” “嗯，他还是老赞尼克贵族。一些愚蠢的人甚至会说他拥有与黑姬公主一样的王位权利，阿里奥斯保佑她……甚至有人称他为“杜卡尔王子”。"
+    "公爵夫人" "嗯，他还是老赞尼克贵族。一些愚蠢的人甚至会说他拥有与黑姬公主一样的王位权利，阿里奥斯保佑她……甚至有人称他为“杜卡尔王子”。"
 
 # game/BKchapter2.rpy:9288
 translate chinese luncheon2_kenshin_menu_b51f4e8d:
 
     # "Duchess" "A good way to end up with your tongue torn out in a torture cell, if you ask me."
-    "公爵夫人” “如果你问我的话，这是一个在酷刑牢房里被撕掉舌头的好方法。"
+    "公爵夫人" "如果你问我的话，这是一个在酷刑牢房里被撕掉舌头的好方法。"
 
 # game/BKchapter2.rpy:9290
 translate chinese luncheon2_kenshin_menu_c419f9f4:
@@ -18970,7 +18970,7 @@ translate chinese luncheon2_kenshin_menu_b4dbdbad:
 translate chinese luncheon2_kenshin_menu_1bfa3101:
 
     # "Duchess" "Why, this is Lord Henso, of course. A close advisor to the King, and the most skilled astronomer at Court. He was a most handsome man in his prime..."
-    "公爵夫人” “哦，这当然是亨索勋爵。国王的亲密顾问，也是宫廷最熟练的天文学家。他是全盛时期最英俊的男人……"
+    "公爵夫人" "哦，这当然是亨索勋爵。国王的亲密顾问，也是宫廷最熟练的天文学家。他是全盛时期最英俊的男人……"
 
 # game/BKchapter2.rpy:9296
 translate chinese luncheon2_kenshin_menu_06398373:
@@ -19000,19 +19000,19 @@ translate chinese luncheon2_kenshin_menu_d59c8d2e:
 translate chinese luncheon2_kenshin_menu_0c95399b:
 
     # "Duchess" "Have you, now? No surprise here, this is one of the oldest and most respected families in the city."
-    "公爵夫人” “现在有吗？毫不奇怪，这是这座城市最古老、最受尊敬的家庭之一。"
+    "公爵夫人" "现在有吗？毫不奇怪，这是这座城市最古老、最受尊敬的家庭之一。"
 
 # game/BKchapter2.rpy:9306
 translate chinese luncheon2_kenshin_menu_994afee8:
 
     # "Duchess" "Like all of the Magic Guild, they remained neutral during the upheaval, so they got through the change of dynasty unscathed."
-    "公爵夫人” “和所有魔法公会一样，他们在动乱中保持中立，因此毫发无损地度过了王朝更迭。"
+    "公爵夫人" "和所有魔法公会一样，他们在动乱中保持中立，因此毫发无损地度过了王朝更迭。"
 
 # game/BKchapter2.rpy:9308
 translate chinese luncheon2_kenshin_menu_30769548:
 
     # "Duchess" "Not to say that Lord Henso didn't have his share of heartache, though..."
-    "公爵夫人” “虽然不是说亨索勋爵没有他那份心痛……"
+    "公爵夫人" "虽然不是说亨索勋爵没有他那份心痛……"
 
 # game/BKchapter2.rpy:9310
 translate chinese luncheon2_kenshin_menu_a8e62d8c:
@@ -19024,7 +19024,7 @@ translate chinese luncheon2_kenshin_menu_a8e62d8c:
 translate chinese luncheon2_kenshin_menu_1b9c63df:
 
     # "Duchess" "And this is Lord Kosmo the Elder. He is probably the richest man in this room, although many despise him for how he made his fortune. There's no business too dirty for this man."
-    "公爵夫人” “这位是老科斯莫大人。他可能是这个房间里最富有的人，尽管许多人鄙视他如何发家致富。对于这个男人来说，没有什么生意太肮脏了。"
+    "公爵夫人" "这位是老科斯莫大人。他可能是这个房间里最富有的人，尽管许多人鄙视他如何发家致富。对于这个男人来说，没有什么生意太肮脏了。"
 
 # game/BKchapter2.rpy:9314
 translate chinese luncheon2_kenshin_menu_21b150c6:
@@ -19036,13 +19036,13 @@ translate chinese luncheon2_kenshin_menu_21b150c6:
 translate chinese luncheon2_kenshin_menu_5958f4f1:
 
     # "Duchess" "Yes. Not an old or respected name by any means, but money commands its own loyalty."
-    "公爵夫人” “是的。无论如何，这不是一个古老的或受人尊敬的名字，但金钱拥有自己的忠诚度。"
+    "公爵夫人" "是的。无论如何，这不是一个古老的或受人尊敬的名字，但金钱拥有自己的忠诚度。"
 
 # game/BKchapter2.rpy:9318
 translate chinese luncheon2_kenshin_menu_48051032:
 
     # "Duchess" "I hear his only son is acting up... Too bad, because he had plans for him. He thinks he could forge an alliance with the King..."
-    "公爵夫人” “我听说他唯一的儿子正在闹事……太糟糕了，因为他对他有计划。他认为他可以与国王结成联盟……"
+    "公爵夫人" "我听说他唯一的儿子正在闹事……太糟糕了，因为他对他有计划。他认为他可以与国王结成联盟……"
 
 # game/BKchapter2.rpy:9320
 translate chinese luncheon2_kenshin_menu_9261172e:
@@ -19054,19 +19054,19 @@ translate chinese luncheon2_kenshin_menu_9261172e:
 translate chinese luncheon2_kenshin_menu_699ede47:
 
     # "Duchess" "Why, marriage of course!"
-    "公爵夫人” “为什么，当然是结婚！"
+    "公爵夫人" "为什么，当然是结婚！"
 
 # game/BKchapter2.rpy:9324
 translate chinese luncheon2_kenshin_menu_c231354c:
 
     # "Duchess" "The Princess is only the most coveted bachelorette in all of Xeros..."
-    "公爵夫人” “公主只是所有 Xeros 中最令人垂涎​​的单身女郎......"
+    "公爵夫人" "公主只是所有 Xeros 中最令人垂涎​​的单身女郎......"
 
 # game/BKchapter2.rpy:9326
 translate chinese luncheon2_kenshin_menu_dd6882a3:
 
     # "Duchess" "But whichever fool ends up marrying her is in for a disappointment."
-    "公爵夫人” “但无论哪个傻瓜最终娶了她，都会让人失望。"
+    "公爵夫人" "但无论哪个傻瓜最终娶了她，都会让人失望。"
 
 # game/BKchapter2.rpy:9328
 translate chinese luncheon2_kenshin_menu_fec1fe3c_1:
@@ -19084,13 +19084,13 @@ translate chinese luncheon2_kenshin_menu_74e717be:
 translate chinese luncheon2_kenshin_menu_43b92fed:
 
     # "Duchess" "Well, for starters, this girl Kurohime is likely to be as boring a bride as you could imagine... I know a frigid dove when I see one!"
-    "公爵夫人” “嗯，首先，这个女孩黑姬很可能像你想象的那样无聊的新娘……我一看到就知道是一只寒冷的鸽子！"
+    "公爵夫人" "嗯，首先，这个女孩黑姬很可能像你想象的那样无聊的新娘……我一看到就知道是一只寒冷的鸽子！"
 
 # game/BKchapter2.rpy:9334
 translate chinese luncheon2_kenshin_menu_3b8df115:
 
     # "Duchess" "I wasn't anything like her in my day... *wink*"
-    "公爵夫人” “我那个时代和她完全不同……*眨眼*"
+    "公爵夫人" "我那个时代和她完全不同……*眨眼*"
 
 # game/BKchapter2.rpy:9336
 translate chinese luncheon2_kenshin_menu_4a2689ee:
@@ -19102,13 +19102,13 @@ translate chinese luncheon2_kenshin_menu_4a2689ee:
 translate chinese luncheon2_kenshin_menu_388ca18e:
 
     # "Duchess" "But this is nothing worth mentioning. Only the plebs marry for lust or love."
-    "公爵夫人” “但这没什么值得一提的。只有平民为了欲望或爱情而结婚。"
+    "公爵夫人" "但这没什么值得一提的。只有平民为了欲望或爱情而结婚。"
 
 # game/BKchapter2.rpy:9340
 translate chinese luncheon2_kenshin_menu_c51419ba:
 
     # "Duchess" "What I meant is, whoever ends up marrying her is unlikely to keep the spoils for very long..."
-    "公爵夫人” “我的意思是，无论谁最终嫁给她，都不太可能将战利品保留很长时间……"
+    "公爵夫人" "我的意思是，无论谁最终嫁给她，都不太可能将战利品保留很长时间……"
 
 # game/BKchapter2.rpy:9342
 translate chinese luncheon2_kenshin_menu_8b2675fe:
@@ -19120,7 +19120,7 @@ translate chinese luncheon2_kenshin_menu_8b2675fe:
 translate chinese luncheon2_kenshin_menu_ee7622fc:
 
     # "Duchess" "Well, some say the Pharo dynasty will not survive its first King. Besides..."
-    "公爵夫人” “嗯，有人说法罗王朝将无法幸免于其第一任国王。除了..."
+    "公爵夫人" "嗯，有人说法罗王朝将无法幸免于其第一任国王。除了..."
 
 # game/BKchapter2.rpy:9346
 translate chinese luncheon2_kenshin_menu_6e4da1a1:
@@ -19132,13 +19132,13 @@ translate chinese luncheon2_kenshin_menu_6e4da1a1:
 translate chinese luncheon2_kenshin_menu_61bdac53:
 
     # "Duchess" "But look, my young lad, it was a pleasure talking to you. Now, I really need to talk to Lady Foozia about her new gardening book..."
-    "公爵夫人” “但是看，我的小伙子，很高兴和你交谈。现在，我真的需要和福齐亚女士谈谈她的新园艺书……"
+    "公爵夫人" "但是看，我的小伙子，很高兴和你交谈。现在，我真的需要和福齐亚女士谈谈她的新园艺书……"
 
 # game/BKchapter2.rpy:9350
 translate chinese luncheon2_kenshin_menu_09d769bd:
 
     # "Duchess" "We'll have a more private chat another time, right? *wink*"
-    "公爵夫人” “下次我们会更私密的聊天，对吧？*眨眼*"
+    "公爵夫人" "下次我们会更私密的聊天，对吧？*眨眼*"
 
 # game/BKchapter2.rpy:9352
 translate chinese luncheon2_kenshin_menu_84ed13b5:
@@ -19156,109 +19156,109 @@ translate chinese luncheon2_kenshin_menu_0bed37cb:
 translate chinese luncheon2_kenshin_menu_3c2dd3d1:
 
     # "Page" "... I don't care if you believe it or not, this is what the royal guard told me."
-    "佩奇” “……我不管你信不信，这是皇家卫队告诉我的。"
+    "Page" "……我不管你信不信，这是皇家卫队告诉我的。"
 
 # game/BKchapter2.rpy:9362
 translate chinese luncheon2_kenshin_menu_4ebb9e99:
 
     # "Manservant" "That doesn't make sense. He was in his cups."
-    "男仆” “这没有意义。他在他的杯子里。"
+    "男仆" "这没有意义。他在他的杯子里。"
 
 # game/BKchapter2.rpy:9364
 translate chinese luncheon2_kenshin_menu_8cd28632:
 
     # "Page" "'Course he was, otherwise he wouldn't have said anything... But he had no reason to lie. He said they had evidence."
-    "佩奇” “他当然是，否则他什么也不会说……但他没有理由撒谎。他说他们有证据。"
+    "Page" "他当然是，否则他什么也不会说……但他没有理由撒谎。他说他们有证据。"
 
 # game/BKchapter2.rpy:9366
 translate chinese luncheon2_kenshin_menu_be3b51a5:
 
     # "Maid" "Evidence? Against Commander Uesugi? I can't believe that."
-    "女仆” “证据？对抗上杉指挥官？我不敢相信。"
+    "女仆" "证据？对抗上杉指挥官？我不敢相信。"
 
 # game/BKchapter2.rpy:9368
 translate chinese luncheon2_kenshin_menu_c6e38311:
 
     # "Page" "Well, the date doesn't fall far from the tree."
-    "佩奇” “嗯，日期离树不远。"
+    "Page" "嗯，日期离树不远。"
 
 # game/BKchapter2.rpy:9370
 translate chinese luncheon2_kenshin_menu_ae2da0d5:
 
     # "Manservant" "What do you mean?"
-    "男仆” “什么意思？"
+    "男仆" "什么意思？"
 
 # game/BKchapter2.rpy:9372
 translate chinese luncheon2_kenshin_menu_3bcb0c09:
 
     # "Maid" "Like father, like daughter..."
-    "女仆” “像父亲，像女儿……"
+    "女仆" "像父亲，像女儿……"
 
 # game/BKchapter2.rpy:9374
 translate chinese luncheon2_kenshin_menu_610c24c1:
 
     # "Page" "Her dad was Commander of the Knights too, but he deserted suddenly, abandoning King and family."
-    "佩奇” “她的父亲也是骑士团的指挥官，但他突然离开了，抛弃了国王和家人。"
+    "Page" "她的父亲也是骑士团的指挥官，但他突然离开了，抛弃了国王和家人。"
 
 # game/BKchapter2.rpy:9376
 translate chinese luncheon2_kenshin_menu_8179e9da:
 
     # "Maid" "Lady Kenshin was just a babe."
-    "女仆” “剑心大小姐只是个宝贝。"
+    "女仆" "剑心大小姐只是个宝贝。"
 
 # game/BKchapter2.rpy:9378
 translate chinese luncheon2_kenshin_menu_0e67fbf0:
 
     # "Manservant" "He ran away, just like that?"
-    "男仆” “他就这样跑了？"
+    "男仆" "他就这样跑了？"
 
 # game/BKchapter2.rpy:9380
 translate chinese luncheon2_kenshin_menu_57836209:
 
     # "Page" "Not just like that. I hear there was another woman..."
-    "佩奇” “不只是这样。听说还有一个女人..."
+    "Page" "不只是这样。听说还有一个女人..."
 
 # game/BKchapter2.rpy:9382
 translate chinese luncheon2_kenshin_menu_a0799aec:
 
     # "Maid" "Some said they saw him fleeing with a baby. His bastard, no doubt..."
-    "女仆” “有人说他们看到他带着一个婴儿逃跑了。他的混蛋，毫无疑问..."
+    "女仆" "有人说他们看到他带着一个婴儿逃跑了。他的混蛋，毫无疑问..."
 
 # game/BKchapter2.rpy:9384
 translate chinese luncheon2_kenshin_menu_d42294a3:
 
     # "Manservant" "A baby? So he left Uesugi alone as a baby, but he took his bastard with him?"
-    "男仆” “婴儿？所以他把小时候的上杉一个人留下，但他把他的混蛋也带走了？"
+    "男仆" "婴儿？所以他把小时候的上杉一个人留下，但他把他的混蛋也带走了？"
 
 # game/BKchapter2.rpy:9386
 translate chinese luncheon2_kenshin_menu_c83d6793:
 
     # "Page" "Ouch. That's gotta sting..."
-    "页” “哎哟。那一定是刺痛..."
+    "Page" "哎哟。那一定是刺痛..."
 
 # game/BKchapter2.rpy:9388
 translate chinese luncheon2_kenshin_menu_7ab0628f:
 
     # "Manservant" "It still doesn't have anything to do with Kenshin being a traitor."
-    "男仆” “这和剑心是叛徒没有任何关系。"
+    "男仆" "这和剑心是叛徒没有任何关系。"
 
 # game/BKchapter2.rpy:9390
 translate chinese luncheon2_kenshin_menu_9487b2bd:
 
     # "Page" "Of course it does! Can't you see? She has traitor genes!"
-    "佩奇” “当然可以！你看不见吗？她有叛徒基因！"
+    "Page" "当然可以！你看不见吗？她有叛徒基因！"
 
 # game/BKchapter2.rpy:9392
 translate chinese luncheon2_kenshin_menu_84b0902a:
 
     # "Maid" "There's no such things as traitor genes..."
-    "女仆” “没有叛徒基因这种东西……"
+    "女仆" "没有叛徒基因这种东西……"
 
 # game/BKchapter2.rpy:9394
 translate chinese luncheon2_kenshin_menu_aa2ace4e:
 
     # "Page" "There is! Don't you remember the story about the wife of old Lord Wittol..."
-    "页” “有！你不记得关于老维托尔勋爵妻子的故事吗？"
+    "Page" "有！你不记得关于老维托尔勋爵妻子的故事吗？"
 
 # game/BKchapter2.rpy:9396
 translate chinese luncheon2_kenshin_menu_e1a31592:
@@ -19588,7 +19588,7 @@ translate chinese c2_unlock_next_brothel_6f3e1c8d:
 translate chinese c2_unlock_next_brothel_90cc160c:
 
     # "Voice" "The owner? You wanna talk to Papa Freak!"
-    "声音” “主人？你想和Papa Freak说话！"
+    "一个声音" "主人？你想和Papa Freak说话！"
 
 # game/BKchapter2.rpy:9576
 translate chinese c2_unlock_next_brothel_cdd9076e:
@@ -19798,7 +19798,7 @@ translate chinese c2_meet_papa_freak_ecb78e90:
 translate chinese c2_meet_papa_freak_8b09aed9:
 
     # you "So the Cimerians are an ancient civilisation?"
-    you "那么西梅里亚人是一个古老的文明吗？"
+    you "那么 Cimerians 是一个古老的文明吗？"
 
 # game/BKchapter2.rpy:9659
 translate chinese c2_meet_papa_freak_324c0d82:
@@ -19828,7 +19828,7 @@ translate chinese c2_meet_papa_freak_be2264e1:
 translate chinese c2_meet_papa_freak_cc38ba62:
 
     # papa "But this is a gross misrepresentation of what the Cimerians were doing, one that elicits rejection from common people and the Church to this day."
-    papa "但这是对西梅里安人所作所为的严重歪曲，至今仍引起普通民众和教会的拒绝。"
+    papa "但这是对 Cimerians 所作所为的严重歪曲，至今仍引起普通民众和教会的拒绝。"
 
 # game/BKchapter2.rpy:9669
 translate chinese c2_meet_papa_freak_346f9a08:
@@ -19846,7 +19846,7 @@ translate chinese c2_meet_papa_freak_63281f90:
 translate chinese c2_meet_papa_freak_d0b81e23:
 
     # papa "Oh yes, and indeed they were the first settlers of the city that became known as Zan..."
-    papa "哦，是的，他们确实是这座被称为 Zan 的城市的第一批定居者……"
+    papa "哦，是的，他们确实是这座被称为瓒的城市的第一批定居者……"
 
 # game/BKchapter2.rpy:9675
 translate chinese c2_meet_papa_freak_dcd8fc0a:
@@ -19906,7 +19906,7 @@ translate chinese c2_meet_papa_freak_cc5028b8:
 translate chinese c2_meet_papa_freak_3102a351:
 
     # papa "[brothel.name]? The place where [girl1] works? With the juicy titties?"
-    papa "[妓院名称]？[girl1] 工作的地方？与多汁的奶子？"
+    papa "[青楼名称]？[girl1] 工作的地方？与多汁的奶子？"
 
 # game/BKchapter2.rpy:9707
 translate chinese c2_meet_papa_freak_cb1fbeca:
@@ -20098,7 +20098,7 @@ translate chinese c2_meet_papa_freak_ebb11091:
 translate chinese c2_meet_papa_freak_1b359f2d:
 
     # you "But what if you sold it to someone you know? Someone who would open the coolest brothel in town?"
-    you "但是如果你把它卖给你认识的人呢？有人会开镇上最酷的妓院吗？"
+    you "但是如果你把它卖给你认识的人呢？有人会开镇上最酷的青楼吗？"
 
 # game/BKchapter2.rpy:9771
 translate chinese c2_meet_papa_freak_bd7ee741:
@@ -20230,13 +20230,13 @@ translate chinese c2_meet_papa_freak_e90b8c65:
 translate chinese visit_papa_07c43704:
 
     # "Choose a girl from your brothel to bring with you (reminder: she must have at least 50 in Beauty, Body, Refinement and Charm, and be open to whoring)"
-    "从你的妓院中选择一个女孩随身携带（提醒：她必须在美容，身体，精致和魅力方面至少有50，并且愿意嫖娼）"
+    "从你的青楼中选择一个女孩随身携带（提醒：她必须在美容，身体，精致和魅力方面至少有50，并且愿意嫖娼）"
 
 # game/BKchapter2.rpy:9836
 translate chinese visit_papa_58d0222f:
 
     # "You cannot satisfy Papa Freak's requests, as you have no girls in your brothel."
-    "你无法满足 Papa Freak 的要求，因为你的妓院里没有女孩。"
+    "你无法满足 Papa Freak 的要求，因为你的青楼里没有女孩。"
 
 # game/BKchapter2.rpy:9842
 translate chinese visit_papa_a00c8079:
@@ -20536,7 +20536,7 @@ translate chinese visit_papa_e206e569:
 translate chinese visit_papa_521401a0:
 
     # you "[girl.name]! Behave!" with vpunch
-    you "[女孩的名字]！表现！" with vpunch
+    you "[girl.name]！表现！" with vpunch
 
 # game/BKchapter2.rpy:9991
 translate chinese visit_papa_3708e0ea:
@@ -20560,13 +20560,13 @@ translate chinese visit_papa_ee05fb9c:
 translate chinese visit_papa_9b2de113:
 
     # "[girl.fullname] needs to accept {b}whoring{/b} to do this task."
-    "[girl.fullname] 需要接受 {b}whoring{/b} 才能执行此任务。"
+    "[girl.fullname] 需要接受 {b}妓女{/b} 才能执行此任务。"
 
 # game/BKchapter2.rpy:10006
 translate chinese c3_homura_okiya3_10de18aa:
 
     # "It is the last night at your old brothel. It wasn't much, but you feel a bit of nostalgia about the place."
-    "这是你老妓院的最后一晚。这并不多，但你对这个地方有点怀旧。"
+    "这是你老青楼的最后一晚。这并不多，但你对这个地方有点怀旧。"
 
 # game/BKchapter2.rpy:10008
 translate chinese c3_homura_okiya3_0fa62a37:
@@ -20620,7 +20620,7 @@ translate chinese c3_homura_okiya3_e51971c5:
 translate chinese c3_homura_okiya3_699d1abc:
 
     # you "Sure, I'll just need a little time to set things up. Sill has already started moving our stuff."
-    you "当然，我只需要一点时间来设置。Sill 已经开始搬运我们的东西了。"
+    you "当然，我只需要一点时间来设置。希露已经开始搬运我们的东西了。"
 
 # game/BKchapter2.rpy:10032
 translate chinese c3_homura_okiya3_4cc7232b:
@@ -20728,7 +20728,7 @@ translate chinese c3_homura_okiya3_e8374cad:
 translate chinese c3_homura_okiya3_ce989516:
 
     # homura normal "Mostly, I walk around in the forest West of Zan by myself, enjoying nature..."
-    homura normal "大多数时候，我一个人在赞西的森林里走来走去，享受大自然……"
+    homura normal "大多数时候，我一个人在瓒城西边的森林里走来走去，享受大自然……"
 
 # game/BKchapter2.rpy:10074
 translate chinese c3_homura_okiya3_d8b82e71:
@@ -21334,7 +21334,7 @@ translate chinese homura_sex_368c37f0:
 translate chinese homura_sex_7052fa78:
 
     # "Her cries echo through the brothel, matched by other muffled cries coming from other rooms."
-    "她的哭声在妓院里回荡，与其他房间传来的其他低沉的哭声相呼应。"
+    "她的哭声在青楼里回荡，与其他房间传来的其他低沉的哭声相呼应。"
 
 # game/BKchapter2.rpy:10351
 translate chinese homura_sex_69444012:
@@ -21568,7 +21568,7 @@ translate chinese homura_sex_bff3454e:
 translate chinese homura_sex_cebf86d6:
 
     # you "She's a nice girl... And I'm a brothel owner. I should be careful not to break her heart."
-    you "她是个好女孩... 而我是妓院老板。我应该小心不要伤了她的心。"
+    you "她是个好女孩... 而我是青楼老板。我应该小心不要伤了她的心。"
 
 # game/BKchapter2.rpy:10492
 translate chinese homura_sex_5390e86f:
@@ -21580,7 +21580,7 @@ translate chinese homura_sex_5390e86f:
 translate chinese homura_sex_0f7ea385:
 
     # you "It's always nice to bang a noble girl for novelty, but it shouldn't make me lose track of the important stuff. Let's see how the brothel is doing."
-    you "为新奇而敲打一个高贵的女孩总是很好，但这不应该让我忘记重要的事情。让我们看看妓院是怎么做的。"
+    you "为新奇而敲打一个高贵的女孩总是很好，但这不应该让我忘记重要的事情。让我们看看青楼是怎么做的。"
 
 # game/BKchapter2.rpy:10506
 translate chinese homura_mast_3f2d44a2:
@@ -22020,7 +22020,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:91
     old "I want both (Charisma test: [diff])"
-    new "我想要两个（魅力测试：[差异]）"
+    new "我想要两个（魅力测试：[diff]）"
 
     # game/BKchapter2.rpy:91
     old "I want something more 'intimate'"
@@ -22052,11 +22052,11 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:911
     old "Blame Sill"
-    new "责备门槛"
+    new "责怪希露"
 
     # game/BKchapter2.rpy:911
     old "Blame Gio"
-    new "责备乔"
+    new "责怪Gio"
 
     # game/BKchapter2.rpy:911
     old "Blame the gods"
@@ -22064,7 +22064,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:911
     old "Blame no one in particular"
-    new "不怪谁"
+    new "不责怪谁"
 
     # game/BKchapter2.rpy:1007
     old "Do you let Gio have his fun?"
@@ -22072,7 +22072,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:1007
     old "Let him have Sill"
-    new "让他有西尔"
+    new "让他有希露"
 
     # game/BKchapter2.rpy:1007
     old "Let him have one of your slaves"
@@ -22088,7 +22088,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:1636
     old "I am a brothel owner"
-    new "我是妓院老板"
+    new "我是青楼老板"
 
     # game/BKchapter2.rpy:1636
     old "I am in the entertainment business (half-lie)"
@@ -22204,15 +22204,15 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:4383
     old "Cajole Sill"
-    new "卡乔尔窗台"
+    new "劝说希露"
 
     # game/BKchapter2.rpy:4383
     old "Scold Sill"
-    new "骂窗台"
+    new "责骂希露"
 
     # game/BKchapter2.rpy:4383
     old "Punish Sill"
-    new "惩罚门槛"
+    new "惩罚希露"
 
     # game/BKchapter2.rpy:4513
     old "How did you become a Kunoichi?"
@@ -22220,11 +22220,11 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:4513
     old "What are the Kunoichi?"
-    new "什么是国一？"
+    new "什么是忍者？"
 
     # game/BKchapter2.rpy:4513
     old "Who are the Kunoichi in Zan?"
-    new "山中的国一是谁？"
+    new "瓒城里的忍者是谁？"
 
     # game/BKchapter2.rpy:4513
     old "No more questions"
@@ -22272,7 +22272,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:5763
     old "What are you doing in Zan?"
-    new "你在赞做什么？"
+    new "你在瓒城做什么？"
 
     # game/BKchapter2.rpy:5763
     old "Are you in league with the masked murderer?"
@@ -22516,8 +22516,8 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:10666
     old "Cum on her face"
-    new "暨在她的脸上"
+    new "射在她的脸上"
 
     # game/BKchapter2.rpy:10666
     old "Cum in her mouth"
-    new "暨在她的嘴里"
+    new "射在她的嘴里"
