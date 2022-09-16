@@ -22011,513 +22011,513 @@ translate chinese homura_bj_5285c564:
 translate chinese strings:
 
     # game/BKchapter2.rpy:91
-    old "我要钱"
+    old "I want the money"
     new "我要钱"
 
     # game/BKchapter2.rpy:91
-    old "我想要影响力"
+    old "I want the influence"
     new "我想要影响力"
 
     # game/BKchapter2.rpy:91
-    old "我想要两个（魅力测试：[差异]）"
+    old "I want both (Charisma test: [diff])"
     new "我想要两个（魅力测试：[差异]）"
 
     # game/BKchapter2.rpy:91
-    old "我想要更“亲密”的东西"
+    old "I want something more 'intimate'"
     new "我想要更“亲密”的东西"
 
     # game/BKchapter2.rpy:355
-    old "跳过第 2 章介绍？"
+    old "Skip Chapter 2 intro?"
     new "跳过第 2 章介绍？"
 
     # game/BKchapter2.rpy:532
-    old "小女孩很可爱"
+    old "The younger girl is cute"
     new "小女孩很可爱"
 
     # game/BKchapter2.rpy:532
-    old "我喜欢贱的"
+    old "I like the bitchy one"
     new "我喜欢贱的"
 
     # game/BKchapter2.rpy:532
-    old "白发女人火辣辣"
+    old "The white-haired woman is hot"
     new "白发女人火辣辣"
 
     # game/BKchapter2.rpy:532
-    old "那个金发女孩看起来很甜"
+    old "That blonde girl looks sweet"
     new "那个金发女孩看起来很甜"
 
     # game/BKchapter2.rpy:911
-    old "这是谁的错？"
+    old "Whose fault is this?"
     new "这是谁的错？"
 
     # game/BKchapter2.rpy:911
-    old "责备门槛"
+    old "Blame Sill"
     new "责备门槛"
 
     # game/BKchapter2.rpy:911
-    old "责备乔"
+    old "Blame Gio"
     new "责备乔"
 
     # game/BKchapter2.rpy:911
-    old "责怪诸神"
+    old "Blame the gods"
     new "责怪诸神"
 
     # game/BKchapter2.rpy:911
-    old "不怪谁"
+    old "Blame no one in particular"
     new "不怪谁"
 
     # game/BKchapter2.rpy:1007
-    old "你让 Gio 玩得开心吗？"
+    old "Do you let Gio have his fun?"
     new "你让 Gio 玩得开心吗？"
 
     # game/BKchapter2.rpy:1007
-    old "让他有西尔"
+    old "Let him have Sill"
     new "让他有西尔"
 
     # game/BKchapter2.rpy:1007
-    old "让他拥有你的一个奴隶"
+    old "Let him have one of your slaves"
     new "让他拥有你的一个奴隶"
 
     # game/BKchapter2.rpy:1007
-    old "让他同时拥有你的几个奴隶"
+    old "Let him have several of your slaves at once"
     new "让他同时拥有你的几个奴隶"
 
     # game/BKchapter2.rpy:1007
-    old "拒绝他"
+    old "Turn him down"
     new "拒绝他"
 
     # game/BKchapter2.rpy:1636
-    old "我是妓院老板"
+    old "I am a brothel owner"
     new "我是妓院老板"
 
     # game/BKchapter2.rpy:1636
-    old "我在娱乐圈（半个谎言）"
+    old "I am in the entertainment business (half-lie)"
     new "我在娱乐圈（半个谎言）"
 
     # game/BKchapter2.rpy:1636
-    old "我经营一家孤儿院（谎言）"
+    old "I operate an orphanage (lie)"
     new "我经营一家孤儿院（谎言）"
 
     # game/BKchapter2.rpy:1703
-    old "关于王国"
+    old "About the Kingdom"
     new "关于王国"
 
     # game/BKchapter2.rpy:1703
-    old "关于你"
+    old "About you"
     new "关于你"
 
     # game/BKchapter2.rpy:1703
-    old "关于那个晚上"
+    old "About that night"
     new "关于那个晚上"
 
     # game/BKchapter2.rpy:1703
-    old "关于吉奥"
+    old "About Gio"
     new "关于吉奥"
 
     # game/BKchapter2.rpy:1703
-    old "关于你父亲"
+    old "About your father"
     new "关于你父亲"
 
     # game/BKchapter2.rpy:1703
-    old "关于你妈妈"
+    old "About your mother"
     new "关于你妈妈"
 
     # game/BKchapter2.rpy:1703
-    old "关于这场婚礼"
+    old "About this wedding"
     new "关于这场婚礼"
 
     # game/BKchapter2.rpy:1703
-    old "关于这项紧急事务"
+    old "About this urgent business"
     new "关于这项紧急事务"
 
     # game/BKchapter2.rpy:1703
-    old "没有更多的问题（请假）"
+    old "No more questions (take your leave)"
     new "没有更多的问题（请假）"
 
     # game/BKchapter2.rpy:1738
-    old "没有采取"
+    old "None taken"
     new "没有采取"
 
     # game/BKchapter2.rpy:1738
-    old "所以你不喜欢我们这些平民，嗯？"
+    old "So you don't like us commoners, uh?"
     new "所以你不喜欢我们这些平民，嗯？"
 
     # game/BKchapter2.rpy:1738
-    old "我自己也是贵族，其实"
+    old "I am a noble myself, actually"
     new "我自己也是贵族，其实"
 
     # game/BKchapter2.rpy:2010
-    old "我很乐意这样做"
+    old "I will gladly do it"
     new "我很乐意这样做"
 
     # game/BKchapter2.rpy:2010
-    old "我不知道。听起来很冒险..."
+    old "I don't know. Sounds risky..."
     new "我不知道。听起来很冒险..."
 
     # game/BKchapter2.rpy:2010
-    old "对我有什么好处？"
+    old "What's in it for me?"
     new "对我有什么好处？"
 
     # game/BKchapter2.rpy:2524
-    old "说谎"
+    old "Lie"
     new "说谎"
 
     # game/BKchapter2.rpy:2793
-    old "我应该还给他们"
+    old "I should return them"
     new "我应该还给他们"
 
     # game/BKchapter2.rpy:2793
-    old "这是一个陷阱"
+    old "It's a trap"
     new "这是一个陷阱"
 
     # game/BKchapter2.rpy:3969
-    old "我想帮助她"
+    old "I want to help her"
     new "我想帮助她"
 
     # game/BKchapter2.rpy:3969
-    old "我需要力量"
+    old "I need the power"
     new "我需要力量"
 
     # game/BKchapter2.rpy:3969
-    old "关你屁事"
+    old "None of your business"
     new "关你屁事"
 
     # game/BKchapter2.rpy:4069
-    old "没门"
+    old "No way"
     new "没门"
 
     # game/BKchapter2.rpy:4205
-    old "我理解你"
+    old "I understand you"
     new "我理解你"
 
     # game/BKchapter2.rpy:4205
-    old "我不明白你"
+    old "I don't understand you"
     new "我不明白你"
 
     # game/BKchapter2.rpy:4303
-    old "告诉她公主的请求"
+    old "Tell her about the Princess's request"
     new "告诉她公主的请求"
 
     # game/BKchapter2.rpy:4303
-    old "不要告诉她"
+    old "Don't tell her"
     new "不要告诉她"
 
     # game/BKchapter2.rpy:4383
-    old "卡乔尔窗台"
+    old "Cajole Sill"
     new "卡乔尔窗台"
 
     # game/BKchapter2.rpy:4383
-    old "骂窗台"
+    old "Scold Sill"
     new "骂窗台"
 
     # game/BKchapter2.rpy:4383
-    old "惩罚门槛"
+    old "Punish Sill"
     new "惩罚门槛"
 
     # game/BKchapter2.rpy:4513
-    old "你是如何成为九野一的？"
+    old "How did you become a Kunoichi?"
     new "你是如何成为九野一的？"
 
     # game/BKchapter2.rpy:4513
-    old "什么是国一？"
+    old "What are the Kunoichi?"
     new "什么是国一？"
 
     # game/BKchapter2.rpy:4513
-    old "山中的国一是谁？"
+    old "Who are the Kunoichi in Zan?"
     new "山中的国一是谁？"
 
     # game/BKchapter2.rpy:4513
-    old "没有更多问题"
+    old "No more questions"
     new "没有更多问题"
 
     # game/BKchapter2.rpy:4764
-    old "地球学校"
+    old "The Earth School"
     new "地球学校"
 
     # game/BKchapter2.rpy:4764
-    old "水学校"
+    old "The Water School"
     new "水学校"
 
     # game/BKchapter2.rpy:4764
-    old "虚空学校"
+    old "The Void School"
     new "虚空学校"
 
     # game/BKchapter2.rpy:4764
-    old "没关系"
+    old "Never mind"
     new "算了"
 
     # game/BKchapter2.rpy:5574
-    old "奉承她"
+    old "Flatter her"
     new "奉承她"
 
     # game/BKchapter2.rpy:5574
-    old "装傻"
+    old "Play dumb"
     new "装傻"
 
     # game/BKchapter2.rpy:5574
-    old "把她放下"
+    old "Put her down"
     new "把她放下"
 
     # game/BKchapter2.rpy:5671
-    old "化解局势"
+    old "Defuse the situation"
     new "化解局势"
 
     # game/BKchapter2.rpy:5671
-    old "保卫铃目"
+    old "Defend Suzume"
     new "保卫铃目"
 
     # game/BKchapter2.rpy:5671
-    old "模拟成香"
+    old "Mock Narika"
     new "模拟成香"
 
     # game/BKchapter2.rpy:5763
-    old "你在赞做什么？"
+    old "What are you doing in Zan?"
     new "你在赞做什么？"
 
     # game/BKchapter2.rpy:5763
-    old "你和蒙面凶手有勾结吗？"
+    old "Are you in league with the masked murderer?"
     new "你和蒙面凶手有勾结吗？"
 
     # game/BKchapter2.rpy:5763
-    old "你有男朋友吗？"
+    old "Do you have a boyfriend?"
     new "你有男朋友吗？"
 
     # game/BKchapter2.rpy:5775
-    old "对对对"
+    old "Right, okay"
     new "对对对"
 
     # game/BKchapter2.rpy:5775
-    old "我不认为你是最好的"
+    old "I don't think you're the best"
     new "我不认为你是最好的"
 
     # game/BKchapter2.rpy:5804
-    old "提供帮助"
+    old "Offer to help"
     new "提供帮助"
 
     # game/BKchapter2.rpy:5804
-    old "嘲笑她"
+    old "Mock her"
     new "嘲笑她"
 
     # game/BKchapter2.rpy:5865
-    old "我相信你"
+    old "I believe you"
     new "我相信你"
 
     # game/BKchapter2.rpy:5865
-    old "不"
+    old "Nah"
     new "不"
 
     # game/BKchapter2.rpy:5980
-    old "很有意义"
+    old "Makes perfect sense"
     new "很有意义"
 
     # game/BKchapter2.rpy:5980
-    old "这种竞争是愚蠢的"
+    old "This rivalry is silly"
     new "这种竞争是愚蠢的"
 
     # game/BKchapter2.rpy:5980
-    old "你会输"
+    old "You're going to lose"
     new "你会输"
 
     # game/BKchapter2.rpy:6557
-    old "提供一些东西作为回报"
+    old "Offer something in return"
     new "提供一些东西作为回报"
 
     # game/BKchapter2.rpy:6557
-    old "威胁她"
+    old "Threaten her"
     new "威胁她"
 
     # game/BKchapter2.rpy:6605
-    old "我会记住的"
+    old "I'll keep it in mind"
     new "我会记住的"
 
     # game/BKchapter2.rpy:6605
-    old "不要那样"
+    old "Don't be like that"
     new "不要那样"
 
     # game/BKchapter2.rpy:6605
-    old "你不吓我"
+    old "You don't scare me"
     new "你不吓我"
 
     # game/BKchapter2.rpy:6737
-    old "我不会评判"
+    old "I won't judge"
     new "我不会评判"
 
     # game/BKchapter2.rpy:6785
-    old "我们可以为你杀了他们"
+    old "We could kill them for you"
     new "我们可以为你杀了他们"
 
     # game/BKchapter2.rpy:6785
-    old "让我们分享信息"
+    old "Let us share information"
     new "让我们分享信息"
 
     # game/BKchapter2.rpy:6785
-    old "我不会让你逃脱谋杀"
+    old "I won't let you get away with murder"
     new "我不会让你逃脱谋杀"
 
     # game/BKchapter2.rpy:7344
-    old "同意遥"
+    old "Agree with Haruka"
     new "同意遥"
 
     # game/BKchapter2.rpy:7344
-    old "耸耸肩"
+    old "Shrug"
     new "耸耸肩"
 
     # game/BKchapter2.rpy:7384
-    old "给她钱"
+    old "Give her money"
     new "给她钱"
 
     # game/BKchapter2.rpy:7459
-    old "我不会伤害你"
+    old "I am not going to harm you"
     new "我不会伤害你"
 
     # game/BKchapter2.rpy:7459
-    old "如果你回答我的问题，我不会伤害你"
+    old "I won't harm you if you answer my questions"
     new "如果你回答我的问题，我不会伤害你"
 
     # game/BKchapter2.rpy:7459
-    old "害怕"
+    old "Be afraid"
     new "害怕"
 
     # game/BKchapter2.rpy:7824
-    old "不要这么说"
+    old "Don't say that"
     new "不要这么说"
 
     # game/BKchapter2.rpy:7824
-    old "我们明白"
+    old "We understand"
     new "我们明白"
 
     # game/BKchapter2.rpy:7824
-    old "所以你是一个放弃者，是吗？"
+    old "So you're a quitter, eh?"
     new "所以你是一个放弃者，是吗？"
 
     # game/BKchapter2.rpy:8081
-    old "公主和她的随从"
+    old "The Princess and her entourage"
     new "公主和她的随从"
 
     # game/BKchapter2.rpy:8081
-    old "上杉谦信指挥官"
+    old "Commander Uesugi Kenshin"
     new "上杉谦信指挥官"
 
     # game/BKchapter2.rpy:8081
-    old "随机廷臣"
+    old "Random courtiers"
     new "随机廷臣"
 
     # game/BKchapter2.rpy:8081
-    old "皇宫工作人员"
+    old "The Palace staff"
     new "皇宫工作人员"
 
     # game/BKchapter2.rpy:8407
-    old "成为贵族是一种怎样的体验？"
+    old "What is it like to be a noble?"
     new "成为贵族是一种怎样的体验？"
 
     # game/BKchapter2.rpy:8407
-    old "你有什么喜欢做的事？"
+    old "What do you like to do?"
     new "你有什么喜欢做的事？"
 
     # game/BKchapter2.rpy:8457
-    old "我有女朋友（真相）"
+    old "I have a girlfriend (truth)"
     new "我有女朋友（真相）"
 
     # game/BKchapter2.rpy:8457
-    old "我有女朋友（谎言）"
+    old "I have a girlfriend (lie)"
     new "我有女朋友（谎言）"
 
     # game/BKchapter2.rpy:8457
-    old "我没有女朋友（谎言）"
+    old "I don't have a girlfriend (lie)"
     new "我没有女朋友（谎言）"
 
     # game/BKchapter2.rpy:8457
-    old "我没有女朋友（真相）"
+    old "I don't have a girlfriend (truth)"
     new "我没有女朋友（真相）"
 
     # game/BKchapter2.rpy:8457
-    old "情况很复杂"
+    old "It's complicated"
     new "情况很复杂"
 
     # game/BKchapter2.rpy:8555
-    old "你慢慢来回复。"
+    old "You take your time to reply."
     new "你慢慢来回复。"
 
     # game/BKchapter2.rpy:8555
-    old "好的，咱们走吧"
+    old "Sure, let's go"
     new "好的，咱们走吧"
 
     # game/BKchapter2.rpy:8555
-    old "不，你喝醉了"
+    old "No, you're drunk"
     new "不，你喝醉了"
 
     # game/BKchapter2.rpy:8768
-    old "的确"
+    old "Indeed"
     new "的确"
 
     # game/BKchapter2.rpy:8768
-    old "她要来了"
+    old "She had it coming"
     new "她要来了"
 
     # game/BKchapter2.rpy:8868
-    old "我很乐意提供帮助"
+    old "I'm glad to help"
     new "我很乐意提供帮助"
 
     # game/BKchapter2.rpy:8868
-    old "我希望奖励是值得的"
+    old "I hope the reward will be worth it"
     new "我希望奖励是值得的"
 
     # game/BKchapter2.rpy:8868
-    old "真可惜"
+    old "What a bummer"
     new "真可惜"
 
     # game/BKchapter2.rpy:8934
-    old "我不能"
+    old "I can't"
     new "我不能"
 
     # game/BKchapter2.rpy:8992
-    old "公主"
+    old "The Princess"
     new "公主"
 
     # game/BKchapter2.rpy:8992
-    old "皇宫工作人员"
+    old "The Palace Staff"
     new "皇宫工作人员"
 
     # game/BKchapter2.rpy:9060
-    old "提醒她你是客人"
+    old "Remind her you are a guest"
     new "提醒她你是客人"
 
     # game/BKchapter2.rpy:9060
-    old "道歉"
+    old "Apologize"
     new "道歉"
 
     # game/BKchapter2.rpy:9102
-    old "关于你的男朋友"
+    old "About your boyfriend"
     new "关于你的男朋友"
 
     # game/BKchapter2.rpy:10124
-    old "为了友谊！"
+    old "To friendship!"
     new "为了友谊！"
 
     # game/BKchapter2.rpy:10124
-    old "友谊？"
+    old "Friendship?"
     new "友谊？"
 
     # game/BKchapter2.rpy:10147
-    old "恋人！"
+    old "Lovers!"
     new "恋人！"
 
     # game/BKchapter2.rpy:10147
-    old "冒险伙伴！"
+    old "Adventure buddies!"
     new "冒险伙伴！"
 
     # game/BKchapter2.rpy:10429
-    old "我认同"
+    old "I think so"
     new "我认同"
 
     # game/BKchapter2.rpy:10429
-    old "只有我"
+    old "It's just me"
     new "只有我"
 
     # game/BKchapter2.rpy:10666
-    old "暨在她的脸上"
+    old "Cum on her face"
     new "暨在她的脸上"
 
     # game/BKchapter2.rpy:10666
-    old "暨在她的嘴里"
+    old "Cum in her mouth"
     new "暨在她的嘴里"
