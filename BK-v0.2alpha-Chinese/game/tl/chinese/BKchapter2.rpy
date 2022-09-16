@@ -387,20 +387,20 @@ translate chinese sewer_girl_returns_menu_43371141:
 # game/BKchapter2.rpy:240
 translate chinese sewer_girl_returns_menu_e4e3d41e:
 
-    # you "Don't worry. 希露will wash your clothes."
-    you "不用担心。窗台会洗你的衣服。"
+    # you "Don't worry. Sill will wash your clothes."
+    you "不用担心。希露会洗你的衣服。"
 
 # game/BKchapter2.rpy:242
 translate chinese sewer_girl_returns_menu_6750a24d:
 
     # you "Sill! Come over here."
-    you "窗台！过来这里。"
+    you "希露！过来这里。"
 
 # game/BKchapter2.rpy:244
 translate chinese sewer_girl_returns_menu_13370635:
 
     # sewer_woman "B-But... What will I do without my clothes?"
-    sewer_woman "B、但是……没有衣服我该怎么办？"
+    sewer_woman "但、但是……没有衣服我该怎么办？"
 
 # game/BKchapter2.rpy:246
 translate chinese sewer_girl_returns_menu_51f69976:
@@ -412,7 +412,7 @@ translate chinese sewer_girl_returns_menu_51f69976:
 translate chinese sewer_girl_returns_menu_853b7fe8:
 
     # sewer_woman "R-round two? Wait!"
-    sewer_woman "R轮二？等待！"
+    sewer_woman "第。第二轮？等下！"
 
 # game/BKchapter2.rpy:258
 translate chinese sewer_girl_returns_menu_65555694:
@@ -616,7 +616,7 @@ translate chinese c2_intro_61ccd6d1:
 translate chinese c2_intro_2c601bfe:
 
     # "Workers, merchants and craftsmen mingle in the busiest neighbourhood of the city. Zan's main market is just a few streets away, the noise of a thousand people bartering echoing in your ears."
-    "工人、商人和工匠在城市最繁忙的街区混在一起。瓒城的主要市场就在几条街之外，千人交易的声音在你耳边回荡。"
+    "工人、商人和工匠在城市最繁忙的街区混在一起。瓒城的主要市场就在几条街之外，上千人交易的声音在你耳边回荡。"
 
 # game/BKchapter2.rpy:398
 translate chinese c2_intro_f0bb559e:
@@ -814,7 +814,7 @@ translate chinese c2_intro_a158fce2:
 translate chinese c2_intro_4630173a:
 
     # gurigura "Ge-ni-us, ge-ni-usss... Teehee, that word sounds funny! Does it mean something?"
-    gurigura "Ge-ni-us, ge-ni-usss... Teehee，这个词听起来很有趣！这是否意味着什么？"
+    gurigura "天。。才。。天。。才，嘻嘻，这个词听起来很有趣！这是否意味着什么？"
 
 # game/BKchapter2.rpy:524
 translate chinese c2_intro_fb8bd46c:
@@ -1414,7 +1414,7 @@ translate chinese c2_princess_letter_f9401a33:
 translate chinese c2_princess_letter_03ab50e3:
 
     # sill "B-But... He attacked me!"
-    sill "B、但是……他袭击了我！"
+    sill "但、但是……他袭击了我！"
 
 # game/BKchapter2.rpy:922
 translate chinese c2_princess_letter_45de3786:
@@ -1426,7 +1426,7 @@ translate chinese c2_princess_letter_45de3786:
 translate chinese c2_princess_letter_447fa338:
 
     # sill "B-But, Master... If it's you, it's not the same thing..."
-    sill "B、但是，主人……如果是你，那就不是一回事了……"
+    sill "但、但是，主人……如果是你，那就不是一回事了……"
 
 # game/BKchapter2.rpy:926
 translate chinese c2_princess_letter_c7a71e36:
@@ -1726,7 +1726,7 @@ translate chinese c2_princess_letter_e57cdbbc:
 translate chinese c2_princess_letter_f30fbd68:
 
     # gio "A... A threesome...? *sweat*"
-    gio "A... 三人行...？*流汗*"
+    gio "3。。3P。。？*流汗*"
 
 # game/BKchapter2.rpy:1068
 translate chinese c2_princess_letter_bad49884:
@@ -1948,19 +1948,19 @@ translate chinese c2_princess_letter_dcfd5695:
 translate chinese c2_princess_letter_833770b5:
 
     # girl.char "Mister Gio!!! Aaaaah!!!"
-    girl.char "焦先生！！！啊啊啊！！！"
+    girl.char "吉奥先生！！！啊啊啊！！！"
 
 # game/BKchapter2.rpy:1196
 translate chinese c2_princess_letter_c5711c6e:
 
     # gio "A virgin! A-Amazing..."
-    gio "处女！A-惊人的..."
+    gio "处女！喔，天哪。。"
 
 # game/BKchapter2.rpy:1198
 translate chinese c2_princess_letter_046435ce:
 
     # "Tears of joy well up in Gio's eyes."
-    "乔的眼中涌出喜悦的泪水。"
+    "吉奥的眼中涌出喜悦的泪水。"
 
 # game/BKchapter2.rpy:1200
 translate chinese c2_princess_letter_45d8742c:
@@ -2542,7 +2542,7 @@ translate chinese c2_princess_visit1_1d4a3b90_1:
 translate chinese c2_princess_visit1_96e28e65:
 
     # "The Palace will send someone to pick you up {b}next Monday{/b}."
-    "The Palace {b}下周一{/b}会派人来接您。"
+    "宫里{b}下周一{/b}会派人来接您。"
 
 # game/BKchapter2.rpy:1468
 translate chinese c2_princess_visit2_cc644bdb:
@@ -3178,7 +3178,7 @@ translate chinese kurohime_conversation_menu_b3c114cc:
 translate chinese kurohime_conversation_menu_5677e140:
 
     # you "Your... Your Highness. What's your role in all of this?"
-    you "你的……殿下。你在这一切中的角色是什么？"
+    you "殿。。殿下。你在这一切中的角色是什么？"
 
 # game/BKchapter2.rpy:1772
 translate chinese kurohime_conversation_menu_749d46a9:
@@ -3442,7 +3442,7 @@ translate chinese kurohime_conversation_menu_c8b387e3:
 translate chinese kurohime_conversation_menu_7eabb1d4:
 
     # kuro "I... I'd rather not discuss it. Let old wounds heal..."
-    kuro "我...我宁愿不讨论它。让旧伤愈合..."
+    kuro "我...我不想讨论它。让我的那些旧伤愈合吧..."
 
 # game/BKchapter2.rpy:1885
 translate chinese kurohime_conversation_menu_5d4b239f:
@@ -3718,7 +3718,7 @@ translate chinese kurohime_conversation_menu_b06f1f9d:
 translate chinese kurohime_conversation_menu_e0792e53:
 
     # you "But... Who?"
-    you "但是……谁？"
+    you "但是……是谁干的？"
 
 # game/BKchapter2.rpy:1989
 translate chinese kurohime_conversation_menu_dae22a1b:
@@ -3748,7 +3748,7 @@ translate chinese kurohime_conversation_menu_15e37eff:
 translate chinese kurohime_conversation_menu_d1a614a5:
 
     # kuro "...and my usual agents are already well known by the city's underbelly. Even Gio..."
-    kuro "……而我通常的特工已经为城市的底层人所熟知。就连焦..."
+    kuro "……而我通常的特工已经为城市的底层人所熟知。就连吉尔..."
 
 # game/BKchapter2.rpy:2004
 translate chinese kurohime_conversation_menu_4c89d02d:
@@ -3874,7 +3874,7 @@ translate chinese kurohime_conversation_menu_2a08bcb0:
 translate chinese kurohime_conversation_menu_d6a25be6:
 
     # guard "Intruder! HELP!!!"
-    guard "入侵者！帮助！！！"
+    guard "入侵者！来人啊！！！"
 
 # game/BKchapter2.rpy:2069
 translate chinese kurohime_conversation_menu_ea34acbd:
@@ -3892,7 +3892,7 @@ translate chinese kurohime_conversation_menu_bf70f6e4:
 translate chinese kurohime_conversation_menu_9f7ad5be:
 
     # "Rushing outside, you stumble upon the inert body of the palace guard."
-    "冲到外面，你偶然发现了宫殿守卫的惰性身体。"
+    "冲到外面，你无意中发现了宫殿守卫的尸体。"
 
 # game/BKchapter2.rpy:2100
 translate chinese kurohime_conversation_menu_97348f42:
@@ -3928,7 +3928,7 @@ translate chinese kurohime_conversation_menu_5a2c542f:
 translate chinese kurohime_conversation_menu_6edaeda8:
 
     # "The hissing sound of a thrown dagger sends you dodging reflexively, tumbling on the floor."
-    "扔出的匕首发出的嘶嘶声让你反射性地躲避，在地板上翻滚。"
+    "扔出的匕首发出的嘶嘶声让你反射性地用一个翻滚来躲避。"
 
 # game/BKchapter2.rpy:2135
 translate chinese kurohime_conversation_menu_9360b025:
@@ -3946,7 +3946,7 @@ translate chinese kurohime_conversation_menu_5142fccb:
 translate chinese kurohime_conversation_menu_73f59634:
 
     # "Drawing your weapon, you leap back to your feet and run after the intruder."
-    "拔出你的武器，你跳回你的脚，追赶入侵者。"
+    "拔出你的武器，你一个箭步冲上前，去追赶入侵者。"
 
 # game/BKchapter2.rpy:2149
 translate chinese kurohime_conversation_menu_b9eca7cb:
@@ -3958,13 +3958,13 @@ translate chinese kurohime_conversation_menu_b9eca7cb:
 translate chinese kurohime_conversation_menu_3a05c3f5:
 
     # "Swift like the wind, the dark silhouette keeps running away from you. You manage to close in as it stops by a large window at the end of the corridor."
-    "疾如风，黑影不断地离你而去。当它停在走廊尽头的一个大窗户旁时，您设法关闭了它。"
+    "疾如风，黑影不断地离你而去。当它停在走廊尽头的一个大窗户旁时，您设法靠近它。"
 
 # game/BKchapter2.rpy:2153
 translate chinese kurohime_conversation_menu_572ae0ce:
 
     # "Catching up with the intruder, you take your first good look at the man."
-    "赶上入侵者，你第一次好好看看这个人。"
+    "追到了入侵者，你第一次好好看看这个人。"
 
 # game/BKchapter2.rpy:2157
 translate chinese kurohime_conversation_menu_a1147ff5:
@@ -3976,7 +3976,7 @@ translate chinese kurohime_conversation_menu_a1147ff5:
 translate chinese kurohime_conversation_menu_f0d52557:
 
     # mask normal "What do we have here... Another lapdog of the crown... *hiss*"
-    mask normal "我们这里有什么......皇冠的另一只小狗...... *嘶嘶声*"
+    mask normal "看看我们找到了什么......皇室的另一条走狗...... *嘶嘶声*"
 
 # game/BKchapter2.rpy:2161
 translate chinese kurohime_conversation_menu_e688931c:
@@ -3988,7 +3988,7 @@ translate chinese kurohime_conversation_menu_e688931c:
 translate chinese kurohime_conversation_menu_13ce568e:
 
     # mask "Tell your mistress more will soon share the fate of this traitorous judge. This is just the beginning..."
-    mask "告诉你的情妇，很快就会分享这个叛徒法官的命运。这仅仅是开始..."
+    mask "告诉你的情妇，更多人很快就会和这个叛徒法官一起死的。这仅仅是开始..."
 
 # game/BKchapter2.rpy:2167
 translate chinese kurohime_conversation_menu_9e0247ab:
