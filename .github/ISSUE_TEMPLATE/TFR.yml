@@ -13,7 +13,7 @@ body:
         我建议把xxx换成xxx。
     validations:
       required: true
-  - type: textarea
+  - type: textarea2
     id: describe
     attributes:
       label: 你的建议说明
