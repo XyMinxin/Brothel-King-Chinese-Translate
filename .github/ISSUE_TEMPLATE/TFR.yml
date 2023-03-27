@@ -6,9 +6,8 @@ body:
     id: describe
     attributes:
       label: 描述你的问题
-      description: 简要描述你的问题
-      value: |
-        比如：
+      description: |
+        简要描述你的问题，比如：
         我在xxx发现有漏翻，内容是xxx。
         我建议把xxx换成xxx。
     validations:
