@@ -23,6 +23,34 @@ python early:
 
 init -3 python:
 
+## Resolution functions
+# Converts size from base game resolution to custom resolution
+# Values are stored in a dictionary for faster access
+
+    def xres(_size=None): # Some custom resolutions may work better with a different xy ratio
+        if not _size:
+            return config.screen_width
+        try:
+            return res_dict["x", _size]
+        except:
+            res_dict["x", _size] = int(_size*config.screen_width*res_xy_ratio/RES_BASE_X)
+            return res_dict["x", _size]
+
+    def yres(_size=None):
+        if not _size:
+            return config.screen_height
+        try:
+            return res_dict["y", _size]
+        except:
+            res_dict["y", _size] = int(_size*config.screen_height/RES_BASE_Y)
+            return res_dict["y", _size]
+
+    def res_font(_size):
+        return yres(_size)
+
+    def res_tb(_size): # Always returns square dimensions. This function returns a tuple - unpack it with * if needed
+        return (yres(_size),)*2
+
 #<Chris12 PredictImages>
     # Threading is necessary, because otherwise the screen only shows AFTER ALL images have been loaded.
     # That would actually make things slower. With threading, the images load in the background as intended.
@@ -63,12 +91,12 @@ init -3 python:
             if queue and isinstance(queue[0], Event):
                 if queue[0].pic is not None:
                     if isinstance(queue[0].pic, Picture):
-                        renpy.predict(queue[0].pic.get(800, 600))
+                        renpy.predict(queue[0].pic.get(res_event_width, res_event_height))
                     else:
                         renpy.predict(queue[0].pic)    # image may be described by unicode string, especially for farm
                 if queue[0].background is not None:
                     if isinstance(queue[0].background, Picture):
-                        renpy.predict(queue[0].background.get(800, 600))
+                        renpy.predict(queue[0].background.get(res_event_width, res_event_height))
                     else:
                         renpy.predict(queue[0].background)    # image may be described by unicode string, especially for farm
 
@@ -2134,7 +2162,7 @@ init -3 python:
                 ev_type = "Customer"
 
                 if dice(6) >= 4 or girl.naked:
-
+                    # Jobs are linked to one specific sex act that they have a chance of improving through customer events
                     if act == "waitress":
                         s_act = "service"
                     elif act == "masseuse":
@@ -2143,6 +2171,27 @@ init -3 python:
                         s_act = "anal"
                     elif act == "geisha":
                         s_act = "fetish"
+
+                    resisted_rule = False
+
+                    # If MC has ruled out sex acts with customers
+                    if girl.flags["forbid customer sex"]:
+                        ob_target = girl.get_stat("obedience")*2 + girl.mood//5 - girl.get_stat("libido")
+
+                        if girl.is_("very dom"):
+                            ob_target -= 50
+                        elif girl.is_("dom"):
+                            ob_target -= 25
+                        elif girl.is_("very sub"):
+                            ob_target += 50
+                        elif girl.is_("sub"):
+                            ob_target += 25
+
+                        if girl.remembers("punish", "fooled around"):
+                            ob_target += 25
+
+                        if dice(250) > ob_target:
+                            resisted_rule = True
 
                 else:
                     s_act = "naked"
@@ -2154,7 +2203,7 @@ init -3 python:
                 if s_act == "naked":
 
                     if d == 1: # Obedience
-                        text1 = "{size=18}顾客开始叫嚷着要" + girl.name + "脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来。"
+                        text1 = "{size=" + str(res_font(18)) + "}顾客开始叫嚷着要" + girl.name + "脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来。"
 
                         r = girl.get_stat("obedience") - dice(250)
 
@@ -2178,7 +2227,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=18}一个好色的顾客开始在" + job_room_dict[girl.job] + "中间脱衣服。他鼓励%s也这么做。" % girl.name
+                        text1 = "{size=" + str(res_font(18)) + "}一个好色的顾客开始在" + job_room_dict[girl.job] + "中间脱衣服。他鼓励%s也这么做。" % girl.name
 
                         r = girl.get_stat("libido") - dice(250)
 
@@ -2201,7 +2250,7 @@ init -3 python:
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=18}一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。" % girl.name
+                        text1 = "{size=" + str(res_font(18)) + "}一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。" % girl.name
 
                         r = girl.get_stat("sensitivity") - dice(250)
 
@@ -2230,12 +2279,16 @@ init -3 python:
 
                     events.append(Event(pic, char = girl.char, text = text1, changes = get_change_text(extra_changes), type = ev_type))
 
-                else: # Other sex acts
+                # Sex acts
+                else:
 
                     if d == 1: # Obedience
-                        text1 = "{size=18}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" + s_des[s_act] + "。"
+                        text1 = "{size=" + str(res_font(18)) + "}一个顾客点了" + girl.name + "期待能得到额外的服务。他希望她" + s_des[s_act] + "。"
 
-                        r = girl.get_stat("obedience") - dice(250)
+                        r =  girl.get_stat("obedience") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
+
+                        if girl.flags["forbid customer sex"] and not resisted_rule:
+                            r = min(0, r)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
@@ -2261,9 +2314,9 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=18}一位客户整晚都在和" + girl.name + "调情。他试图让她" + s_des[s_act] + "。"
+                        text1 = "{size=" + str(res_font(18)) + "}一位客户整晚都在和" + girl.name + "调情。他试图让她" + s_des[s_act] + "。"
 
-                        r = girl.get_stat("libido") - dice(250)
+                        r = girl.get_stat("libido") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
@@ -2288,9 +2341,9 @@ init -3 python:
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=18}一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意" + s_des[s_act] + "来帮助他忘记悲伤。"
+                        text1 = "{size=" + str(res_font(18)) + "}一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意" + s_des[s_act] + "来帮助他忘记悲伤。"
 
-                        r = girl.get_stat("sensitivity") - dice(250)
+                        r = girl.get_stat("sensitivity") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
@@ -2314,9 +2367,14 @@ init -3 python:
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
+                    if accepted and girl.flags["forbid customer sex"]:
+                        text1 += event_color["bad"] % __("\nShe ignored your order to stay away from customers.")
+                        girl.track_event("fooled around", arg=__(s_des[s_act]))
+
                     events.append(Event(pic = work_pic, char = girl.char, text = text1, changes = get_change_text(extra_changes), type = ev_type))
 
                     if accepted:
+                        customers[0].wants_sex_act = s_act
                         events += perform(s_act, [girl], [customers[0]], job_filter=True)
 
 
@@ -2338,7 +2396,7 @@ init -3 python:
 
                     ev_type = "Customer"
 
-                    text1 = "{size=18}"
+                    text1 = "{size=" + str(res_font(18)) + "}"
 
                     pos_reaction, neg_reaction = girl.test_weakness(s_act, unlock=True)
 
@@ -2704,7 +2762,7 @@ init -3 python:
         # If stock pictures are activated: the search will move to the default pictures
         # The 'and' and 'not_tags' apply to every set of tags.
         # If 'strict' is on, a False value is returned if no picture can be found with the and/not_tags conditions
-        # If 'and_priority' is on, the 'and' clause will only be dropped after the search list has been exhausted
+        # If 'and_priority' is on, the 'and' and 'not' clauses will only be dropped after the search list has been exhausted
         # If 'always_stock' is on, a default pic will always be provided if it is missing, regardless of the stock_picture setting
 
         piclist = []
@@ -3141,7 +3199,7 @@ init -3 python:
                           "base positive traits" : ["always", "often", "rarely", "never"],
                           "base negative traits" : ["always", "often", "rarely", "never"],
                           "base personality" : ["always", "often", "rarely", "never"],
-                          "custom personality" : ["custom_personality", "personality_name", "attributes", "personality_dialogue_only", "dialogue_personality_weight", "dialogue_attribute_weight", "description", "custom_dialogue_label"],
+                          "custom personality" : ["custom_personality", "name", "personality_name", "attributes", "personality_dialogue_only", "dialogue_personality_weight", "dialogue_attribute_weight", "description", "custom_dialogue_label"],
                           "sexual preferences" : ["favorite_acts", "disliked_acts", "favorite_fixations", "always_fixations", "always_negative_fixations", "disliked_fixations", "never_fixations", "never_negative_fixations", "sexual_experience", "farm_weakness"],
                           "background story" : ["generate_as", "origin", "origin_description", "always_slave_story", "often_slave_story", "rarely_slave_story", "never_slave_story", "init_function", "city_label", "story_label", "night_label", "interact_prompt"],
                           "cloning options" : ["unique", "keep_first_name", "keep_last_name", "keep_inverted", "keep_skills", "keep_traits", "keep_personality", "keep_sex", "keep_generate_as", "keep_init", "keep_background", "keep_interactions"]
@@ -3175,15 +3233,34 @@ init -3 python:
             input_dict["base positive traits/" + key] = [t.capitalize() for t in input_dict["base positive traits/" + key]]
             input_dict["base negative traits/" + key] = [t.capitalize() for t in input_dict["base negative traits/" + key]]
 
-            for trait in input_dict["base positive traits/" + key] + input_dict["base negative traits/" + key]:
+            for trait in input_dict["base positive traits/" + key]:
                 if trait not in trait_dict.keys():
-                    renpy.say("{color=[c_red]}{b}错误解析 " + file + "{/b}{/color}", "{color=[c_red]}" + str(trait) + "{/color} 不是一个有效的特质。\n检查括号和引号的正确使用情况。")
+                    input_dict["base positive traits/" + key].remove(trait)
+
+                    if trait in renamed_traits.keys(): # Updates trait name for backwards compatibility
+                        input_dict["base positive traits/" + key].append(renamed_traits[trait])
+                    else:
+                        renpy.say("{color=[c_red]}{b}解析错误 " + file + "{/b}{/color}", "{color=[c_red]}" + str(trait) + "{/color} 不是有效的特质。\n检查括号和引号的正确使用。")
+
+            for trait in input_dict["base negative traits/" + key]:
+                if trait not in trait_dict.keys():
+                    input_dict["base negative traits/" + key].remove(trait)
+
+                    if trait in renamed_traits.keys(): # Updates trait name for backwards compatibility
+                        input_dict["base negative traits/" + key].append(renamed_traits[trait])
+                    else:
+                        renpy.say("{color=[c_red]}{b}解析错误 " + file + "{/b}{/color}", "{color=[c_red]}" + str(trait) + "{/color} 不是有效的特质。\n检查括号和引号的正确使用。")
 
             input_dict["base personality/" + key] = [p.lower() for p in input_dict["base personality/" + key]]
 
             for pers in input_dict["base personality/" + key]:
                 if pers not in gpersonalities.keys():
-                    renpy.say("{color=[c_red]}{b}错误解析 " + file + "{/b}{/color}", "{color=[c_red]}" + str(pers) + "{/color} 不是一个有效的性格。\n检查括号和引号的正确使用情况。")
+                    renpy.say("{color=[c_red]}{b}解析错误 " + file + "{/b}{/color}", "{color=[c_red]}" + str(pers) + "{/color} 不是一个有效的性格。\n请检查括号和引号的正确使用。")
+
+        # Custom personality (for backwards compatibility)
+
+        if input_dict["custom personality/name"] and not input_dict["custom personality/personality_name"]:
+            input_dict["custom personality/personality_name"] = input_dict["custom personality/name"]
 
         # Preferences
 
@@ -3732,10 +3809,17 @@ init -3 python:
         return event_color[col] % rating, ttip
 
 
-    def is_imgfile(file):
+    def is_imgfile(file, video=True):
         if file:
             if (file[-4:].lower() in IMGFORMATS or file[-5:].lower() in IMGFORMATS):
                 return True
+            if video and is_videofile(file):
+                return True
+        return False
+
+    def is_videofile(file):
+        if (file[-4:].lower() in VIDEOFORMATS or file[-5:].lower() in VIDEOFORMATS):
+            return True
         return False
 
     def list_imgfiles(path, strict=True): # Returns a list of all image files in the given folder (and sub-folders if strict is set to False)
@@ -4444,7 +4528,7 @@ init -3 python:
         return _wh_list, leftover_customers
 
 ## Difficulty settings
-    def unlocking_extras():
+    def unlocking_extras(final=False):
 
         game.update_achievements()
 
@@ -4461,27 +4545,32 @@ init -3 python:
                 story_flags["c1_path"] = c1_path
 
         if extras_dict["farm"]:
+            game.achievements = False
+            if final:
             farm.active = True
             farm_firstvisit = False
             gizel_name = "Gizel"
-            game.achievements = False
             # renpy.notify("farm")
 
         if extras_dict["carpenter"]:
+            game.achievements = False
+            if final:
             carpenter_active = True
             story_flags["found wagon"] = True
             story_flags["met carpenter"] = True
             carpenter_name = "Iulia"
-            game.achievements = False
             # renpy.notify("carpenter")
 
         if extras_dict["locations"]:
-            thieves_guild.secret
-            thieves_guild.action = True
             game.achievements = False
+            if final:
+                thieves_guild.secret = False
+            thieves_guild.action = True
             # renpy.notify("loc")
 
         if extras_dict["shops"]:
+            game.achievements = False
+            if final:
             farmland.action = True
             sewers.action = True
             junkyard.action = True
@@ -4495,10 +4584,12 @@ init -3 python:
                 botanical_garden.action = True
                 library.action = True
                 pilgrim_road.action = True
-            game.achievements = False
+
             # renpy.notify("shops")
 
         if extras_dict["resources"]:
+            game.achievements = False
+            if final:
             if extras_dict["resources"] >= 2:
                 shipyard.action = True
                 stables.action = True
@@ -4509,17 +4600,17 @@ init -3 python:
                 guild_quarter.action = True
             if extras_dict["resources"] >= 6:
                 falls.action = True
-            game.achievements = False
             # renpy.notify("resources")
 
         if extras_dict["trainers"]:
+            game.achievements = False
+            if final:
             MC.trainers.append(NPC_maya)
             MC.trainers.append(NPC_lieutenant)
             MC.trainers.append(NPC_captain)
             MC.trainers.append(NPC_renza)
             MC.trainers.append(NPC_satella)
             MC.trainers.append(NPC_bast)
-            game.achievements = False
             # renpy.notify("trainers")
 
     def update_available_mixes():

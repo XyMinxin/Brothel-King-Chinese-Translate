@@ -308,7 +308,7 @@ label c2_intro():
     $ story_add_event("meet_riche")
 
     $ calendar.set_alarm(calendar.time+2, Event(label = "c2_princess_letter"))
-    $ game.set_task("Get started with your new brothel.", "story")
+    $ game.set_task("开始你的新妓院之旅。", "story")
 
     scene black with fade
     show bg brothel1 at top with dissolve
@@ -912,6 +912,7 @@ label c2_princess_letter:
         "Whose fault is this?"
 
         "Blame Sill":
+            $ renpy.block_rollback()
             you "Sill!!! What the hell did you think you were doing!!!"
 
             $ NPC_sill.love -= 1
@@ -926,6 +927,7 @@ label c2_princess_letter:
             gio "Hmpf! How unfair!"
 
         "Blame Gio":
+            $ renpy.block_rollback()
             you "Gio!!! What on earth are you doing here, assaulting my... Sill?!?"
 
             sill "Your... Sill? *blush*"
@@ -936,6 +938,7 @@ label c2_princess_letter:
             $ NPC_gio.love -= 1
 
         "Blame the gods":
+            $ renpy.block_rollback()
             if MC.god:
                 you "O, [MC.god]! Why do you mock me so!!! Why did you curse your humble servant with such lousy friends and clumsy slaves!!!" with vpunch
             else:
@@ -948,6 +951,7 @@ label c2_princess_letter:
             sill sad "Hey!" with vpunch
 
         "Blame no one in particular":
+            $ renpy.block_rollback()
             you "Stop the blame game, you two."
 
             you "It's no one's fault that Gio is stupid and that Sill is clumsy."
@@ -1008,6 +1012,7 @@ label c2_princess_letter:
         "Do you let Gio have his fun?"
 
         "Let him have Sill":
+            $ renpy.block_rollback()
             you "Fine... I've been too lenient with Sill recently."
 
             play sound s_surprise
@@ -1033,6 +1038,7 @@ label c2_princess_letter:
             with dissolve
 
         "Let him have one of your slaves" if len(MC.girls) > 0:
+            $ renpy.block_rollback()
 
             $ NPC_sill.love += 1
             $ NPC_gio.love += 2
@@ -1057,6 +1063,7 @@ label c2_princess_letter:
             you "Now, let's see this letter."
 
         "Let him have several of your slaves at once" if len(MC.girls) > 1:
+            $ renpy.block_rollback()
 
             $ NPC_sill.love += 1
             $ NPC_gio.love += 5
@@ -1100,6 +1107,7 @@ label c2_princess_letter:
 
 
         "Turn him down":
+            $ renpy.block_rollback()
             you "Sorry, Gio. I don't give out anything for free."
 
             gio "You're... MEAN!!!" with vpunch
@@ -1128,9 +1136,9 @@ label c2_princess_letter:
 
     play sound s_dress
 
-    call screen letter(header = "A Royal Invitation",
-                       message = "Dear " + MC.name + ",\n\nI have heard from our common acquaintance that you have recently settled in Zan. It warms my heart to know that another upstanding citizen is taking root in our city.\nI am forever in your debt for the aid you provided in my hour of need. If you please, I should like to meet you again to discuss an urgent matter. My messenger can give you the details.",
-                          signature = "Princess Kurohime")
+    call screen letter(header = "皇家邀请",
+                       message = "亲爱的" + MC.name + "，\n\n我从我们共同的熟人那里听说你最近在瓒城定居。知道另一个正直的公民在我们的城市扎根，我感到很温暖。\n在我需要帮助的时候，你提供的援助让我永远感激。如果可以的话，我想再次见到你，讨论一件紧急的事情。我的信使可以给你详细信息。",
+                          signature = "黑姬公主")
 
     "You are awestruck for a moment."
 
@@ -1290,8 +1298,8 @@ label c2_princess_letter:
     you "A meeting with the Princess of Zan, uh? When did I become so fancy..."
 
     $ story_add_event("c2_princess_visit1")
-    $ game.set_task("Meet Gio at the stables on Saturday.")
-    $ game.set_task("Advance through the story to unlock the next chapter.", "advance2")
+    $ game.set_task("周六在马厩见吉奥。")
+    $ game.set_task("通过故事进展解锁下一章节。", "advance2")
 
     return
 
@@ -1459,7 +1467,7 @@ label c2_princess_visit1:
     "The Palace will send someone to pick you up {b}next Monday{/b}."
 
     $ story_add_event("c2_princess_visit2")
-    $ game.set_task("Wait for someone to pick you up on Monday.")
+    $ game.set_task("等待星期一有人来接你。")
 
     return
 
@@ -1637,6 +1645,7 @@ label c2_princess_visit2:
         extend ""
 
         "I am a brothel owner":
+            $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "truth"
 
             you "Well, I own a brothel in town. It wasn't exactly my plan when I got here, but one thing led to another..."
@@ -1648,6 +1657,7 @@ label c2_princess_visit2:
             "She takes a moment to regain her composure. After she's done, she stiffens, and goes straight to the point."
 
         "I am in the entertainment business (half-lie)":
+            $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "half-lie"
 
             you "I, uh, I provide entertainment, for, uh, discerning gentlemen..."
@@ -1663,6 +1673,7 @@ label c2_princess_visit2:
             kuro "Well, who am I kidding. I don't have the kind of freedom that would allow me to visit you, anyway..."
 
         "I operate an orphanage (lie)":
+            $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "lie"
             $ MC.evil += 1
 
@@ -1739,16 +1750,19 @@ label kurohime_conversation_menu():
                 extend ""
 
                 "None taken":
+                    $ renpy.block_rollback()
                     $ MC.noble = False
                     you "I can understand how you feel. Being in charge is a harsh responsibility."
 
                 "So you don't like us commoners, uh?":
+                    $ renpy.block_rollback()
                     $ MC.noble = False
                     you "Well, some would say this is their just due."
 
                     kuro "Believe me, I can understand how they feel... But I have to look out for the interests of the State. A civil war would be a disaster for the people."
 
                 "I am a noble myself, actually":
+                    $ renpy.block_rollback()
                     $ MC.noble = True
                     you "Actually, I do come from a minor noble family. It's a long way from Zan's court, though. I'm sure you wouldn't have heard of it."
 
@@ -2009,6 +2023,7 @@ label kurohime_conversation_menu():
 
     menu:
         "I will gladly do it":
+            $ renpy.block_rollback()
             $ MC.good += 1
 
             you "Say no more, Your Highness. I will gladly help."
@@ -2021,6 +2036,7 @@ label kurohime_conversation_menu():
 
 
         "I don't know. Sounds risky...":
+            $ renpy.block_rollback()
             $ MC.neutral += 1
 
             you "Wow, hold on, Your Highness. Murders? Royal plots? This sounds like seriously dangerous business..."
@@ -2040,6 +2056,7 @@ label kurohime_conversation_menu():
             kuro "Hmpf. Now, about the next steps..."
 
         "What's in it for me?":
+            $ renpy.block_rollback()
             $ MC.evil += 1
 
             you "Look, Princess, surely you don't expect me to do it without some kind of payment?"
@@ -2370,7 +2387,7 @@ label kurohime_conversation_menu():
 
     "You must investigate the murders in town."
 
-    $ game.set_task("Find out more about the murders of high-ranking officials.")
+    $ game.set_task("调查更多关于高级官员的谋杀案的信息。")
     $ calendar.set_alarm(calendar.time+1, Event(label = "c2_gio_message"))
 
     return
@@ -2463,8 +2480,8 @@ label c2_gio_message():
 
     "The next morning, you wake up to find a note slipped under your door."
 
-    call screen letter(header = "Where have you been?", message = MC.name + ", where the heck have you been? I'm still waiting for you to tell me how the palace meeting that I arranged went. \n\nYou didn't forget your old pal, did you?\n\nAnyway, I have some juicy intel for you. Can we talk? You can meet me at the Plaza.",
-                          signature = "Your bestie, Gio")
+    call screen letter(header = "你去哪里了？", message = MC.name + "，你到底去哪里了？我还在等你告诉我我安排的宫廷会议怎么样了。\n\n你不会忘了你的老朋友吧？\n\n不管怎样，我有一些爆炸性的情报要告诉你。我们能聊聊吗？你可以在广场见我。",
+                          signature = "你的好朋友，吉奥")
 
     you "Gio... Ever so slimy."
 
@@ -2474,7 +2491,7 @@ label c2_gio_message():
 
     "Meet Gio by the {b}Plaza{/b} in the warehouse district."
 
-    $ game.set_task("Meet Gio at the plaza.")
+    $ game.set_task("在广场上见吉奥。")
     $ story_add_event("c2_gio_meeting")
 
     return
@@ -2525,6 +2542,7 @@ label c2_gio_meeting():
         extend ""
 
         "Tell the truth":
+            $ renpy.block_rollback()
             you "Well... She wants me to investigate the murders. Find out who's behind this."
 
             gio "I see... Why you, of all people, I wonder?"
@@ -2542,6 +2560,7 @@ label c2_gio_meeting():
             you "Anyway. Know anything about the murders?"
 
         "Lie":
+            $ renpy.block_rollback()
             $ NPC_gio.love -= 1
 
             you "Well, uh... She wanted to settle a land dispute that arose from, uh... The brothel's relocation..."
@@ -2711,7 +2730,7 @@ label c2_gio_meeting():
 
     you "Well, let's not worry too much about it. Gio is usually full of crap, so his intel is probably garbage... *nervous*"
 
-    $ game.set_task("Wait for the Kunoichi to show up, and... Murder you?")
+    $ game.set_task("等待忍者出现，然后……杀了你？")
     $ temp_gossip += chapter_gossip["c2_kunoichi"]
 
     $ calendar.set_alarm(calendar.time + 2, StoryEvent("c2_suzume_invitation"))
@@ -2779,8 +2798,8 @@ label c2_suzume_invitation():
 
     "A piece of paper is pinned to the wooden post. You feel like you might as well read the message."
 
-    call screen letter(header = "Looking for my panties", message = "Have you seen my panties?\n\nI have lost them somewhere in this part of town. I miss the soft, silk fabric rubbing against my smooth, nubile skin... I feel so exposed without them!\n\nPlease meet me off the main path in the forest near the farm, where no one will bother us. You will be rewarded with a big surprise...",
-                          signature = "PS: Don't worry, this is totally not a trap.")
+    call screen letter(header = "寻找我的内裤", message = "你看到我的内裤了吗？\n\n我在城镇的某个地方丢了它们。我想念柔软的丝绸贴在我光滑的皮肤上的感觉……没有它们，我感到很暴露！\n\n请在农场附近的森林小路上见我，那里没有人会打扰我们。你会得到一个大惊喜……",
+                          signature = "PS：别担心，这不是一个陷阱。")
 
     you "This must be the panties I found before... What an amazing coincidence!"
 
@@ -2794,6 +2813,7 @@ label c2_suzume_invitation():
         you "What should I do..."
 
         "I should return them":
+            $ renpy.block_rollback()
             $ story_flags["panties trap"] = False
 
             you "Well, I should find the owner and return these. I'm not so heartless that I would leave a poor girl pantyless in the woods."
@@ -2801,6 +2821,7 @@ label c2_suzume_invitation():
             you "Good thing the message mentions that it is {i}totally not a trap{/i}. At least I don't have to worry about anything bad happening."
 
         "It's a trap":
+            $ renpy.block_rollback()
             $ story_flags["panties trap"] = True
 
             you "No! It's a TRAP!!!" with vpunch
@@ -2815,7 +2836,7 @@ label c2_suzume_invitation():
 
     "Visit the farm to return the panties to their rightful wearer."
 
-    $ game.set_task("Visit the {b}farm{/b} to return the missing panties.")
+    $ game.set_task("去{b}农场{/b}找回失踪的内裤。")
     $ story_add_event("c2_suzume_forest1")
 
     return
@@ -3171,7 +3192,7 @@ label c2_suzume_forest1():
     "You have spent all your actions for today."
 
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_report1", type = "morning"))
-    $ game.set_task("Wait for events to unfold.")
+    $ game.set_task("等待事件的发生。")
 
     return
 
@@ -3221,7 +3242,7 @@ label c2_suzume_report1:
 
     scene black with fade
     $ story_add_event("c2_suzume_arena")
-    $ game.set_task("Keep exploring the city districts for clues.")
+    $ game.set_task("继续探索城市区域以寻找线索。")
 
     return
 
@@ -3291,7 +3312,7 @@ label c2_suzume_arena(): # Arena
     "Go to the {b}farm{/b} again to meet with Suzume."
 
     $ story_add_event("c2_suzume_forest2")
-    $ game.set_task("Meet the strange girl again at the {b}farm{/b}.")
+    $ game.set_task("在{b}农场{/b}再次遇见奇怪的女孩。")
 
     return
 
@@ -3530,7 +3551,7 @@ label c2_suzume_forest2():
     $ MC.interactions = 0
     "You have lost your remaining actions for the day."
 
-    $ game.set_task("Wait for events to unfold.")
+    $ game.set_task("等待事件的发生。")
     $ MC.change_prestige(2)
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_report2", type = "morning"))
 
@@ -3641,7 +3662,7 @@ label c2_suzume_invitation2():
 
     "Visit the {b}Seafront{/b} to enjoy your free night at the Dark Serpent."
 
-    $ game.set_task("Visit the upscale hostess club by the {b}Seafront{/b}.")
+    $ game.set_task("去{b}海滨{/b}的高档女主人俱乐部。")
     $ story_add_event("c2_suzume_brothel")
 
     return
@@ -3968,6 +3989,7 @@ label c2_suzume_brothel():
 
     menu:
         "I want to help her":
+            $ renpy.block_rollback()
             $ MC.good += 1
 
             you "She may be a princess, but she's also a good woman. I want to help her."
@@ -3977,6 +3999,7 @@ label c2_suzume_brothel():
             suzume "Well don't worry, I'm not jealous, as long as your dick is not monogamous..."
 
         "I need the power":
+            $ renpy.block_rollback()
             $ MC.good -= 1
 
             you "I can use the influence to advance my standing in the city. It's simple, really."
@@ -3984,6 +4007,7 @@ label c2_suzume_brothel():
             suzume "Cold, calculating... That's my guy! I think you've got what it takes. Don't forget me when you're rich, okay?"
 
         "None of your business":
+            $ renpy.block_rollback()
             $ MC.neutral += 1
 
             you "And that's none of your business."
@@ -4010,11 +4034,9 @@ label c2_suzume_brothel():
     "You have spent all of your actions for the night."
 
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_morning_visit", type = "morning"))
-    $ game.set_task("Wait for Suzume to come back.")
+    $ game.set_task("等待铃女回来。")
 
     return
-
-
 
 
 label c2_homura_city_meet():
@@ -4070,6 +4092,7 @@ label c2_homura_city_meet():
         homura "Don't you agree?"
 
         "Sure":
+            $ renpy.block_rollback()
             you "Sure. Class is an artificial social construct that is the outcome of centuries of subjective thinking, ontologically undifferentiated from vulgar prejudice and superstition."
 
             "She blinks."
@@ -4083,6 +4106,7 @@ label c2_homura_city_meet():
             $ NPC_homura.love += 1
 
         "No way":
+            $ renpy.block_rollback()
             you "No, not really. The aristocrats should keep separate from the plebs."
 
             you "Otherwise, social distinctions will become blurred, and soon enough, people will start to question our most hallowed institutions, such as absolute monarchy or sex slavery or public executions..."
@@ -4204,6 +4228,7 @@ label c2_homura_okiya1():
 
     menu:
         "I understand you":
+            $ renpy.block_rollback()
             you "I understand. Seen from the palace towers, the women and men of Zan must be more like ants than real people..."
 
             homura surprise "Exactly. That's what makes it so easy for the higher-ups to step on them."
@@ -4213,6 +4238,7 @@ label c2_homura_okiya1():
             $ NPC_homura.love += 1
 
         "I don't understand you":
+            $ renpy.block_rollback()
             you "I don't get it. You've got everything you could want for up there. Why bother with ordinary people?"
 
             homura blush "You don't understand... A golden cage is a cage all the same. Sometimes, destiny locks you in..."
@@ -4302,6 +4328,7 @@ label c2_homura_okiya1():
 
     menu:
         "Tell her about the Princess's request":
+            $ renpy.block_rollback()
             $ NPC_homura.flags["divulged assignment"] = True
 
             "You hesitate for a second, but you do need all the help you can get."
@@ -4331,6 +4358,7 @@ label c2_homura_okiya1():
             you "Thanks. That would be useful."
 
         "Don't tell her":
+            $ renpy.block_rollback()
             $ NPC_homura.flags["divulged assignment"] = False
             "You remember the Princess requested you keep your assignment secret."
 
@@ -4382,6 +4410,7 @@ label c2_homura_okiya1():
 
     menu:
         "Cajole Sill":
+            $ renpy.block_rollback()
             $ MC.good += 1
             $ NPC_sill.love += 1
 
@@ -4394,6 +4423,7 @@ label c2_homura_okiya1():
             you "Especially since I have one right at home."
 
         "Scold Sill":
+            $ renpy.block_rollback()
             $ MC.neutral += 1
             $ NPC_sill.love -= 1
 
@@ -4409,6 +4439,7 @@ label c2_homura_okiya1():
 
 
         "Punish Sill":
+            $ renpy.block_rollback()
             $ MC.evil += 1
             $ NPC_sill.love -= 2
 
@@ -4924,7 +4955,7 @@ label c2_suzume_morning_visit_menu():
 
     "Suzume is gone, like the wind..."
 
-    $ game.set_task("Get the onsen, and wait for Suzume.")
+    $ game.set_task("去温泉等待铃女。")
     $ daily_events.append(StoryEvent(label = "c2_suzume_onsen", chapter=2, room="onsen", date=calendar.time + 3))
 
     return
@@ -5284,7 +5315,7 @@ label c2_suzume_onsen(): # Happens at night when the player has an onsen and at 
     scene black with fade
 
     $ MC.change_prestige(2)
-    $ game.set_task("Go hunt ninjas in the city.")
+    $ game.set_task("去城市里猎杀忍者。")
 
     # Init ninja hunt
     $ init_ninja_game()
@@ -5386,9 +5417,9 @@ label ninja_hunt_intro(): # Runs only once
     "Hit the Kunoichi {b}three times{/b} within the time limit to stop her."
 
     $ story_flags["ninja hunt seen intro"] = True
-    $ game.set_task("Meet the Earth Kunoichi.", "story")
-    $ game.set_task("Meet the Water Kunoichi.", "story2")
-    $ game.set_task("Meet the Void Kunoichi.", "story3")
+    $ game.set_task("见地之忍者。", "story")
+    $ game.set_task("见水之忍者。", "story2")
+    $ game.set_task("见虚之忍者。", "story3")
 
     return
 
@@ -5482,19 +5513,19 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
 
         if special == "fast":
             $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
-            $ game.set_task("The Void Kunoichi: TO BE CONTINUED", "story3", 7)
+            $ game.set_task("虚之忍者：待续", "story3", 7)
             # $ game.set_task("Find a way to overcome the Void Kunoichi's uncanny speed.", "story3", 3)
             $ story_flags["ninja hunt hide Thieves guild"] = True
 
         elif special == "rain":
             $ text1 = "It's a damn storm out here! I can't see a thing!"
-            $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", 7)
+            $ game.set_task("水之忍者：待续", "story2", 7)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
             $ story_flags["ninja hunt hide Beach"] = True
 
         elif special == "quake":
             $ text1 = "My legs are giving out, and the district is about to crumble..."
-            $ game.set_task("The Earth Kunoichi: TO BE CONTINUED", "story", 7)
+            $ game.set_task("地之忍者：待续", "story", 7)
             # $ game.set_task("Find a way to overcome the Earth Kunoichi's earthquake defense.", "story", 3)
             $ story_flags["ninja hunt hide Prison"] = True
 
@@ -5574,6 +5605,7 @@ label intercept_narika():
         menu:
 
             "Flatter her":
+                $ renpy.block_rollback()
                 you "Sure, I've heard of you. It seems the rumors about your skills were not overblown..."
 
                 narika "Ha! You haven't seen anything yet."
@@ -5587,6 +5619,7 @@ label intercept_narika():
                 $ NPC_narika.love -= 1
 
             "Play dumb":
+                $ renpy.block_rollback()
                 you "Narufa Shilulu? Never heard of you."
 
                 narika angry "NARIKA SHIHOUDOU!!!" with vpunch
@@ -5598,6 +5631,7 @@ label intercept_narika():
                 narika "Oh, really? And what makes you think I want to talk to you?"
 
             "Put her down":
+                $ renpy.block_rollback()
                 you "Come on, don't push yourself. A Legend? You might be big in your local league, but..."
 
                 narika angry "Whaaat?!? I'll have you know, I'm the greatest ninja that's ever existed, BAR NONE!" with vpunch
@@ -5670,11 +5704,13 @@ label intercept_narika():
 
         menu:
             "Defuse the situation":
+                $ renpy.block_rollback()
                 you "Please, ladies, let's just calm down. We are not here to fight you, Narika."
 
                 narika sad "Like you could if you wanted to... Hmph."
 
             "Defend Suzume":
+                $ renpy.block_rollback()
                 you "Stop it. I'm sure Suzume could kick your butt if she had to. But let it not come to that."
 
                 narika "Fufufufu, kick my butt? Keep dreaming, worm! I have no equal in a fight!"
@@ -5682,6 +5718,7 @@ label intercept_narika():
                 $ NPC_narika.love -= 1
 
             "Mock Narika":
+                $ renpy.block_rollback()
                 you "Look, we're not here to discuss Suzume's career choices, or the sad state of your virgin life..."
 
                 narika angry "I'm NOT a VIRGIN!!!" with vpunch
@@ -6556,6 +6593,7 @@ label intercept_mizuki():
 
         menu:
             "Flatter her":
+                $ renpy.block_rollback()
                 you "Look, you're a legendary ninja, reknowned for your cunning and subtlety..."
 
                 you "We're sure you wouldn't be protecting small-time murderers..."
@@ -6563,6 +6601,7 @@ label intercept_mizuki():
                 mizuki "Sorry, dear. Who I'm in league with is none of your business."
 
             "Offer something in return":
+                $ renpy.block_rollback()
                 you "There's no need for grandstanding here. We could share information with you. You could name your price..."
 
                 mizuki "My price? I don't think you could ever afford it, dear."
@@ -6576,6 +6615,7 @@ label intercept_mizuki():
                 $ NPC_mizuki.love += 2
 
             "Threaten her":
+                $ renpy.block_rollback()
                 you "We've got you cornered here. Don't think of doing anything silly."
 
                 mizuki "You think that I am cornered, here in the water, my natural element? Amusing."
@@ -6604,6 +6644,7 @@ label intercept_mizuki():
 
         menu:
             "I'll keep it in mind":
+                $ renpy.block_rollback()
                 you "I'll keep it in mind. I do not mean to fight you. But you and I aren't done talking..."
 
                 mizuki "You're wise to heed my warning. But unless you have something to offer me, we are very much done."
@@ -6611,11 +6652,13 @@ label intercept_mizuki():
                 $ NPC_mizuki.love += 2
 
             "Don't be like that":
+                $ renpy.block_rollback()
                 you "Come on, don't be like that. I'm sure we could be fast friends..."
 
                 mizuki "I don't do friends, dear. I work alone. Now leave me, I've got a lot on my plate."
 
             "You don't scare me":
+                $ renpy.block_rollback()
                 you "If you think you can scare me off so easily, you're in for a surprise. I'm tougher than you know!"
 
                 mizuki "If I had a denar for every overconfident macho I've seen buried... You're in over your head, boy, and you don't even know it."
@@ -6736,6 +6779,7 @@ label intercept_mizuki():
 
         menu:
             "You're right":
+                $ renpy.block_rollback()
                 $ MC.evil += 1
 
                 you "You're right, of course. If you want respect, you can't let a slight slide in this world."
@@ -6784,6 +6828,7 @@ label intercept_mizuki():
 
         menu:
             "We could kill them for you":
+                $ renpy.block_rollback()
                 $ MC.evil += 1
 
                 you "Well, perhaps we could help you put an end those bastards, whoever they are. Provided you only intend to kill people we don't know or care about."
@@ -6799,6 +6844,7 @@ label intercept_mizuki():
                 you "But we're here now, and your magic is gone. So you'd better cooperate."
 
             "Let us share information":
+                $ renpy.block_rollback()
                 $ MC.good -= 1
                 $ NPC_mizuki.love += 2
                 you "I guess we could stay out of each other's way, share information... "
@@ -6816,6 +6862,7 @@ label intercept_mizuki():
                 you "You won't know until you try. Besides, you have nowhere else to go, so we're in for a long chat."
 
             "I won't let you get away with murder":
+                $ renpy.block_rollback()
                 $ MC.good += 1
                 $ NPC_mizuki.love -= 1
                 you "So you're a cold-blooded assassin. Not surprising really. But we won't let you get your way."
@@ -7271,6 +7318,7 @@ label mizuki_onsen(): # Happens if the player has an onsen and got Mizuki's Kimo
     mizuki naked "Farewell, boy... Fufufu."
 
     $ NPC_mizuki.love += 1
+    $ NPC_mizuki.flags["onsen"] = True
     $ unlock_achievement("c2 mizuki")
 
     scene black with fade
@@ -7343,6 +7391,7 @@ label intercept_haruka():
 
         menu:
             "Agree with Haruka":
+                $ renpy.block_rollback()
                 you "Indeed, she has no honor or virtue to speak of. But that's how I like her."
 
                 suzume "Was that a compliment? That didn't sound like a compliment."
@@ -7352,6 +7401,7 @@ label intercept_haruka():
                 $ NPC_haruka.love -= 1
 
             "Defend Suzume":
+                $ renpy.block_rollback()
                 you "Who are you to trash-talk my friend? How can you lecture others about honor, when you're an assassin yourself?"
 
                 haruka "..."
@@ -7363,6 +7413,7 @@ label intercept_haruka():
                 $ NPC_haruka.love += 2
 
             "Shrug":
+                $ renpy.block_rollback()
                 you "Are you finished with your squabbling? We did not come here to discuss honor."
 
                 haruka "Hmpf, no surprise here. I'm sure petty thugs like you have no need for honor."
@@ -7383,6 +7434,7 @@ label intercept_haruka():
 
         menu:
             "Offer to help":
+                $ renpy.block_rollback()
                 you "We could help you. Then you'd help us out."
 
                 you "We want to know who's behind the recent spate of murders in town. You wouldn't have anything to do with that, by any chance?"
@@ -7396,6 +7448,7 @@ label intercept_haruka():
                 $ NPC_haruka.love += 2
 
             "Give her money":
+                $ renpy.block_rollback()
                 you "Name your price. We could make a deal."
 
                 haruka angry "You think I'd betray my duties for a pouch of gold? Ha! Think again."
@@ -7403,6 +7456,7 @@ label intercept_haruka():
                 $ NPC_haruka.love -= 1
 
             "Threaten her":
+                $ renpy.block_rollback()
                 you "If you won't volunteer that information, we could force you. Don't make us hurt you."
 
                 haruka angry "It's over, [MC.name]! I have the high ground!"
@@ -7458,6 +7512,7 @@ label intercept_haruka():
 
         menu:
             "I am not going to harm you":
+                $ renpy.block_rollback()
                 you "I mean you no harm. Information is all I want. You don't have to be afraid."
 
                 play sound s_surprise
@@ -7471,6 +7526,7 @@ label intercept_haruka():
                 $ NPC_haruka.love += 2
 
             "I won't harm you if you answer my questions":
+                $ renpy.block_rollback()
                 you "You are in a tight spot, yes. But if you answer my questions, nothing bad will happen to you."
 
                 play sound s_clang
@@ -7484,6 +7540,7 @@ label intercept_haruka():
                 $ NPC_haruka.love -= 1
 
             "Be afraid":
+                $ renpy.block_rollback()
                 you "Look at me! You escaped me once, but this is the end of the road for you."
 
                 you "No more ninja tricks! I will pry answers from you, and I'll use any means necessary!"
@@ -7823,6 +7880,7 @@ label intercept_haruka():
 
         menu:
             "Don't say that":
+                $ renpy.block_rollback()
                 you "Don't say that. Here you are, fighting to right the wrongs that were done to you."
 
                 you "This is what honor is all about. This makes you worthy to be a Kunoichi!"
@@ -7842,6 +7900,7 @@ label intercept_haruka():
                 $ NPC_haruka.love += 2
 
             "We understand":
+                $ renpy.block_rollback()
                 you "You're not so different from us, after all... I also left my former life behind."
 
                 suzume doubt "And you criticized me for quitting the last time we met... But you're also about to run away from your life as a ninja!"
@@ -7855,6 +7914,7 @@ label intercept_haruka():
                 $ NPC_haruka.love -= 1
 
             "So you're a quitter, eh?":
+                $ renpy.block_rollback()
                 you "So you're a quitter. The Noroi were right, after all, you're just weak."
 
                 haruka sad "I... I..."
@@ -8082,6 +8142,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
             extend ""
 
             "The Princess and her entourage" if not joined["princess"]:
+                $ renpy.block_rollback()
 
                 $ joined["princess"] = True
 
@@ -8158,6 +8219,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
                 hide kuro with dissolve
 
             "Commander Uesugi Kenshin" if not joined["kenshin"]:
+                $ renpy.block_rollback()
                 $ joined["kenshin"] = True
 
                 show kenshin with dissolve
@@ -8209,6 +8271,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
                 hide kenshin with dissolve
 
             "Random courtiers" if not joined["courtiers"]:
+                $ renpy.block_rollback()
                 $ joined["courtiers"] = True
 
                 "Trying to look inconspicuous, you drift alongside various groups of courtiers that are gossiping around the tables."
@@ -8240,6 +8303,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
                 "You listen to many such conversations as you move around the room. It seems disdain for the royal family is barely hidden within this crowd."
 
             "The Palace staff" if not joined["staff"]:
+                $ renpy.block_rollback()
                 $ joined["staff"] = True
 
                 "Sensing a good occasion to gather information {i}and{/i} devour a lot of tasty canapes, you strike up a conversation with several members of the staff. A group of young servants is especially talkative."
@@ -8354,6 +8418,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
         menu:
             "Tell her about the Princess's request":
+                $ renpy.block_rollback()
                 $ NPC_homura.flags["divulged assignment"] = True
                 you "Well, I guess it could be useful to share our information. I am looking after the killer who is terrorizing the court these days."
 
@@ -8366,6 +8431,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                 homura "I'm sure they're linked to the noble plots somehow! Let us investigate together!"
 
             "Don't tell her":
+                $ renpy.block_rollback()
                 you "Sorry, but this is still a secret."
 
                 homura sad "Aw, really? I see..."
@@ -8408,6 +8474,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
         you "So..."
 
         "What is it like to be a noble?":
+            $ renpy.block_rollback()
             you "What is it like to be part of the Zanic nobility? You said your father is a powerful royal advisor..."
 
             show bg homura_okiya sad at top with dissolve
@@ -8429,6 +8496,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
             $ NPC_homura.love -= 1
 
         "What do you like to do?":
+            $ renpy.block_rollback()
             you "What are your passions?"
 
             show bg homura_okiya happy at top with dissolve
@@ -8448,6 +8516,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
             $ NPC_homura.love += 2
 
         "Do you have a boyfriend?":
+            $ renpy.block_rollback()
             you "Let me ask you a blunt question: Do you have a boyfriend?"
 
             homura surprise "Whoah! Such a direct question! *blush*"
@@ -8458,6 +8527,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                 you "Well..."
 
                 "I have a girlfriend (truth)" if MC.has_girlfriend():
+                    $ renpy.block_rollback()
                     you "I'm seeing this girl in town. I guess you could say we're together..."
 
                     show bg homura_okiya sad at top with dissolve
@@ -8465,6 +8535,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                     homura sad "Oh. Of course... I should have guessed... Never mind."
 
                 "I have a girlfriend (lie)" if not MC.has_girlfriend():
+                    $ renpy.block_rollback()
                     you "I have a girlfriend, sure, of course... She's, a, away at the moment, but..."
 
                     show bg homura_okiya sad at top with dissolve
@@ -8472,6 +8543,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                     homura sad "Oh. Of course... I should have guessed... Never mind."
 
                 "I don't have a girlfriend (lie)" if MC.has_girlfriend():
+                    $ renpy.block_rollback()
                     you "Nope, I'm absolutely single, I have no one, cross my heart... Don't believe the people who say they see me with girls in town!"
 
                     homura "Really? Why would people say that?"
@@ -8481,6 +8553,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                     $ NPC_homura.love -= 1
 
                 "I don't have a girlfriend (truth)" if not MC.has_girlfriend():
+                    $ renpy.block_rollback()
                     you "Not at the moment, no. My work keeps me busy, but I have no serious relationship with anyone."
 
                     "You hear something from the kitchen, as if Sill was clearing her throat loudly, but pay it no mind."
@@ -8492,6 +8565,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
                     $ NPC_homura.love += 2
 
                 "It's complicated":
+                    $ renpy.block_rollback()
                     you "Well you know, what's commitment in this world, am I right? Girlfriends, boyfriends, pets, slaves... They come and go!"
 
                     homura blush "So you're a free spirit, uh? Well, I'm a little more traditional, but... I can respect that."
@@ -8556,6 +8630,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
         "You take your time to reply."
 
         "Sure, let's go":
+            $ renpy.block_rollback()
             $ NPC_homura.flags["drunk sex"] = True
             $ NPC_homura.love -= 2
 
@@ -8669,6 +8744,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
             "You follow her outside, trying to find something to say to her, but she is already rushing for the exit."
 
         "No, you're drunk":
+            $ renpy.block_rollback()
             $ NPC_homura.love += 2
 
             you "Homura, I don't think it's a good idea... You've obviously drunk too much."
@@ -8769,6 +8845,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
         extend ""
 
         "Indeed":
+            $ renpy.block_rollback()
             $ MC.good += 1
 
             you "Indeed. It's not like you to be so cold to her."
@@ -8784,6 +8861,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
             kuro "And sometimes it forces me to keep my cards close to the chest."
 
         "She had it coming":
+            $ renpy.block_rollback()
             $ MC.good -= 1
 
             you "It was time to take her down a notch. Her pride seems to exceed her capacities."
@@ -8791,6 +8869,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
             kuro "Perhaps. I hope this is mere incompetence. There is a more sinister explanation."
 
         "I won't judge":
+            $ renpy.block_rollback()
             $ MC.neutral += 1
 
             you "I do not know the particulars of this case, so I won't judge her."
@@ -8869,6 +8948,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
         extend ""
 
         "I'm glad to help":
+            $ renpy.block_rollback()
             you "I'm glad to help you, Princess... Your Highness."
 
             kuro "Please, no need to be formal."
@@ -8879,6 +8959,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
             kuro "Your help is invaluable, but I do not take it for granted."
 
         "I hope the reward will be worth it":
+            $ renpy.block_rollback()
             you "Indeed, I hope the reward matches the effort..."
 
             play sound s_sigh
@@ -8886,6 +8967,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
             kuro "The reward, of course. *sigh*"
 
         "What a bummer":
+            $ renpy.block_rollback()
             you "More investigative work? Sheesh... Look, Your Highness, I'm a busy man..."
 
             "She stiffens."
@@ -8935,6 +9017,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
         you "Well..."
 
         "Sure":
+            $ renpy.block_rollback()
             "It isn't like you to skip a free meal."
 
             you "Sure, thank you."
@@ -8942,6 +9025,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
             $ luncheon = True
 
         "I can't":
+            $ renpy.block_rollback()
             you "Thank you for your offer, but I must decline. I have urgent business to attend to."
 
             kuro "I understand. So long, Master [MC.name]."
@@ -8993,7 +9077,7 @@ label c2_luncheon2:
             extend ""
 
             "The Princess" if not _choice["princess"]:
-
+                $ renpy.block_rollback()
                 $ _choice["princess"] = True
 
                 show kuro with dissolve
@@ -9044,7 +9128,7 @@ label c2_luncheon2:
                 hide kuro with dissolve
 
             "Commander Uesugi Kenshin" if not _choice["kenshin"]:
-
+                $ renpy.block_rollback()
                 $ _choice["kenshin"] = True
 
                 show kenshin with dissolve
@@ -9061,6 +9145,7 @@ label c2_luncheon2:
                     extend ""
 
                     "Remind her you are a guest":
+                        $ renpy.block_rollback()
                         you "You seem to forget I am here at the Princess's request. I have as much a right to be here as anyone."
 
                         kenshin "You..."
@@ -9070,6 +9155,7 @@ label c2_luncheon2:
                         kenshin "Forget it. I won't waste my breath arguing with you. This is beneath me."
 
                     "Mock her":
+                        $ renpy.block_rollback()
                         you "Oh, really? After your earlier display of incompetence, I think you're closer to getting the boot than I am."
 
                         "To your surprise, she doesn't take the bait. She only lowers her head in shame."
@@ -9077,6 +9163,7 @@ label c2_luncheon2:
                         kenshin "On my honor as a knight, the killings will end... I'm this close to catching the culprit! You'll see."
 
                     "Apologize":
+                        $ renpy.block_rollback()
                         you "You're on edge. I understand. I'm sorry if I upset you."
 
                         you "Let's not bicker between friends..."
@@ -9191,7 +9278,7 @@ label c2_luncheon2:
                             jump luncheon2_kenshin_menu
 
                         "About your boyfriend" if not _choice["kenshin relationship status"]:
-
+                            $ renpy.block_rollback()
                             $ _choice["kenshin relationship status"] = True
 
                             you "I want to ask you... About your boyfriend!"
@@ -9244,7 +9331,7 @@ label c2_luncheon2:
                             hide kenshin with dissolve
 
             "Random courtiers" if not _choice["courtiers"]:
-
+                $ renpy.block_rollback()
                 $ _choice["courtiers"] = True
 
                 "The flow of courtiers of all stripes coming to greet the Princess is unceasing, but you also notice how other groups hang separately around other public figures. A handful of them draw almost as much attention to themselves as the Royal Heiress."
@@ -9352,7 +9439,7 @@ label c2_luncheon2:
                 "She gives you pat on the buttocks as she goes, and you freeze. Fortunately, the old harpy doesn't push it and leaves, chuckling as she goes."
 
             "The Palace Staff" if not _choice["staff"]:
-
+                $ renpy.block_rollback()
                 $ _choice["staff"] = True
 
                 "Heading towards the kitchen, you position yourself to be able to intercept both conversations and food platters."
@@ -9819,7 +9906,7 @@ label c2_meet_papa_freak():
 
     "When you are ready, visit the {b}[_loc.name]{/b} to bring Papa Freak the girl of his dreams."
 
-    $ game.set_task("Bring a girl with {b}at least 50 in Beauty, Body, Refinement and Charm{/b} to Papa Freak, by the [_loc.name].", "advance2")
+    $ game.set_task("把一个至少50美貌、身材、修养和魅力的妓女带到[_loc.name]给Papa Freak。", "advance2")
 
     return
 
@@ -9915,7 +10002,7 @@ label visit_papa():
 
                 $ act = rand_choice([a for a in all_sex_acts if girl.does[a]])
 
-                show screen show_event(girl.get_pic(act, "service", "naked", "profile"), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                show screen show_event(girl.get_pic(act, "service", "naked", "profile", not_tags=["cumshot"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
                 girl.char "Oh, aaah, oooh!!!"
@@ -10123,6 +10210,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
 
     menu:
         "To friendship!":
+            $ renpy.block_rollback()
             you "To friendship! *laugh*"
 
             if NPC_homura.flags["drunk sex"]:
@@ -10138,6 +10226,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
             $ NPC_homura.love -= 1
 
         "Friendship?":
+            $ renpy.block_rollback()
             you "Friends? I thought we could be more than that..."
 
             "She blushes."
@@ -10146,6 +10235,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
 
             menu:
                 "Lovers!":
+                    $ renpy.block_rollback()
                     you "You know what I would want it to be..."
 
                     "Deliberately, you place your hand on her hand. She flinches slightly, but doesn't take it away."
@@ -10155,6 +10245,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
                     $ NPC_homura.love += 1
 
                 "Adventure buddies!":
+                    $ renpy.block_rollback()
                     you "We could be... Adventure buddies!"
 
                     play sound s_laugh
@@ -10429,6 +10520,7 @@ label homura_sex(first=True):
     menu:
         extend ""
         "I think so":
+            $ renpy.block_rollback()
             you "I think so too... You look innocent and shy, but when we're in bed together... It's like fireworks!"
 
             homura "I-I know, right? I'm happy to hear you feel the same..."
@@ -10436,6 +10528,7 @@ label homura_sex(first=True):
             $ NPC_homura.love += 1
 
         "It's just me":
+            $ renpy.block_rollback()
             you "Actually, It's like that with every girl I meet. I have a gift..."
 
             show bg homura_rest3 at top with dissolve
@@ -10665,6 +10758,7 @@ label homura_bj(first=True):
 
     menu:
         "Cum on her face":
+            $ renpy.block_rollback()
             show bg homura_bj1 at top with dissolve
 
             homura "Hmmm... Do you lik-"
@@ -10688,6 +10782,7 @@ label homura_bj(first=True):
             "She spits out a bit of cum that landed in her mouth, then smiles mischievously."
 
         "Cum in her mouth":
+            $ renpy.block_rollback()
             show bg homura_bj3 at top with dissolve
             homura "NGGGH!"
 

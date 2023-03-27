@@ -1054,7 +1054,7 @@ translate chinese renza_friend3_menu_0076f3a1:
 translate chinese renza_friend3_menu_dae0ec55:
 
     # you "..."
-    you "…"
+    you "……"
 
 # game/BKstory_events.rpy:599
 translate chinese renza_friend3_menu_49bd2cec:
@@ -1126,7 +1126,7 @@ translate chinese renza_friend3_menu_f3946b67:
 translate chinese renza_friend3_menu_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:623
 translate chinese renza_friend3_menu_e1430157:
@@ -1156,7 +1156,7 @@ translate chinese renza_friend3_menu_9395f461:
 translate chinese renza_friend3_menu_dae0ec55_2:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:637
 translate chinese renza_friend3_menu_55da323b:
@@ -2092,7 +2092,7 @@ translate chinese renza_onsen3_c6581dac:
 translate chinese renza_onsen3_185b3160:
 
     # renza "..."
-    renza "…"
+    renza "……"
 
 # game/BKstory_events.rpy:1088
 translate chinese renza_onsen3_acd66114:
@@ -2104,7 +2104,7 @@ translate chinese renza_onsen3_acd66114:
 translate chinese renza_onsen3_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1092
 translate chinese renza_onsen3_23e0cea2:
@@ -2224,7 +2224,7 @@ translate chinese renza_onsen3_c244f21f:
 translate chinese renza_onsen3_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1135
 translate chinese renza_onsen3_076658d4:
@@ -2242,7 +2242,7 @@ translate chinese renza_onsen3_9c415ba3:
 translate chinese renza_onsen3_dae0ec55_2:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1146
 translate chinese renza_onsen3_fc7dec96:
@@ -2596,7 +2596,7 @@ translate chinese renza_onsen3_efe40b73:
 translate chinese renza_onsen3_dae0ec55_3:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1311
 translate chinese renza_onsen3_48997a51:
@@ -3010,7 +3010,7 @@ translate chinese renza_onsen3_020cde39:
 translate chinese renza_onsen3_dae0ec55_4:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1503
 translate chinese renza_onsen3_b6a5709a:
@@ -3298,7 +3298,7 @@ translate chinese farm_meet_gizel2_27547976:
 translate chinese farm_meet_gizel2_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:1682
 translate chinese farm_meet_gizel2_34c64472:
@@ -3652,7 +3652,7 @@ translate chinese farm_meet_gizel2_9e26e021:
 translate chinese farm_meet_gizel2_cf55cfd6:
 
     # templar "..."
-    templar "…"
+    templar "……"
 
 # game/BKstory_events.rpy:1883
 translate chinese farm_meet_gizel2_4d97999f:
@@ -4006,7 +4006,7 @@ translate chinese farm_meet_gizel2_58bf0c7f:
 translate chinese farm_meet_gizel2_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:2046
 translate chinese farm_meet_gizel2_d66feef3:
@@ -5332,7 +5332,7 @@ translate chinese gizel_attack_2762ec87_1:
 translate chinese gizel_attack_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:2775
 translate chinese gizel_attack_caee5360:
@@ -5422,7 +5422,7 @@ translate chinese gizel_attack_b50d099a:
 translate chinese gizel_attack_53320917:
 
     # gizel "..."
-    gizel "…"
+    gizel "……"
 
 # game/BKstory_events.rpy:2849
 translate chinese gizel_attack_b2546316:
@@ -5506,7 +5506,7 @@ translate chinese gizel_attack_15cbac3d:
 translate chinese gizel_attack_76dd404e:
 
     # gizel angry "..."
-    gizel angry "…"
+    gizel angry "……"
 
 # game/BKstory_events.rpy:2882
 translate chinese gizel_attack_e5e07e7c:
@@ -6466,7 +6466,7 @@ translate chinese farm_meet_goldie_menu_d384ed43:
 translate chinese farm_meet_goldie_menu_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:3322
 translate chinese farm_meet_goldie_menu_469c0599:
@@ -7468,7 +7468,7 @@ translate chinese farm_go_with_gizel_984d9cc7:
 translate chinese farm_go_with_gizel_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:3834
 translate chinese farm_go_with_gizel_d6a34a20:
@@ -10198,7 +10198,7 @@ translate chinese stella_handjob_587bd566:
 translate chinese stella_handjob_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:5136
 translate chinese stella_handjob_2d6c72df:
@@ -10276,7 +10276,7 @@ translate chinese stella_handjob_c6e8c1ae:
 translate chinese stella_handjob_a20cefa7:
 
     # "..."
-    "…"
+    "……"
 
 # game/BKstory_events.rpy:5172
 translate chinese stella_handjob_cf60411f:
@@ -10384,7 +10384,7 @@ translate chinese stella_reward2_f59b2bb4:
 translate chinese stella_reward2_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:5229
 translate chinese stella_reward2_ea48909d:
@@ -11230,7 +11230,7 @@ translate chinese stella_secret1_5cbcd59a:
 translate chinese stella_secret1_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:5660
 translate chinese stella_secret1_dd5e6687:
@@ -11290,7 +11290,7 @@ translate chinese stella_secret1_555acd62:
 translate chinese stella_secret1_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:5680
 translate chinese stella_secret1_33827f91:
@@ -12166,7 +12166,7 @@ translate chinese blood1_bj_0831c651:
 translate chinese blood1_bj_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:6102
 translate chinese blood1_bj_301c37a0:
@@ -12622,7 +12622,7 @@ translate chinese stella_bj_3e7acfc4:
 translate chinese stella_bj_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:6346
 translate chinese stella_bj_5289e50e:
@@ -13132,7 +13132,7 @@ translate chinese farm_meet_willow_69569314:
 translate chinese farm_meet_willow_24353786:
 
     # sill "..."
-    sill "…"
+    sill "……"
 
 # game/BKstory_events.rpy:6591
 translate chinese farm_meet_willow_1819f6d5:
@@ -14020,7 +14020,7 @@ translate chinese willow_fight_1ae739f9:
 translate chinese willow_fight_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:7072
 translate chinese willow_fight_625cb42d:
@@ -14974,7 +14974,7 @@ translate chinese willow_recovery_cbc3344f:
 translate chinese willow_recovery_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:7642
 translate chinese willow_recovery_029a9c6b:
@@ -15442,7 +15442,7 @@ translate chinese willow_recovery_66c4d8f1:
 translate chinese willow_recovery_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:7830
 translate chinese willow_recovery_82e218ba:
@@ -15460,7 +15460,7 @@ translate chinese willow_recovery_83bd6da2:
 translate chinese willow_recovery_dae0ec55_2:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:7836
 translate chinese willow_recovery_c2908058:
@@ -15586,7 +15586,7 @@ translate chinese willow_recovery_2a1180e5:
 translate chinese willow_recovery_dae0ec55_3:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:7901
 translate chinese willow_recovery_d1bf1be7:
@@ -15904,7 +15904,7 @@ translate chinese willow_recovery_be189eff:
 translate chinese willow_recovery_dae0ec55_4:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:8039
 translate chinese willow_recovery_04f77b1c:
@@ -15946,7 +15946,7 @@ translate chinese willow_recovery_2b32ae40:
 translate chinese willow_recovery_dae0ec55_5:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:8053
 translate chinese willow_recovery_7178bea4:
@@ -16078,7 +16078,7 @@ translate chinese willow_relative_e29a81ef:
 translate chinese willow_relative_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:8123
 translate chinese willow_relative_e908fdbb:
@@ -16366,7 +16366,7 @@ translate chinese willow_relative_11ab3218:
 translate chinese willow_relative_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:8221
 translate chinese willow_relative_15cbf7f4:
@@ -17272,7 +17272,7 @@ translate chinese farm_gizel_introduction_4b185c4b:
 translate chinese farm_gizel_introduction_ac7367b5:
 
     # gizel shy "..."
-    gizel shy "…"
+    gizel shy "……"
 
 # game/BKstory_events.rpy:8682
 translate chinese farm_gizel_introduction_18ccdf47:
@@ -17632,7 +17632,7 @@ translate chinese farm_gizel_introduction_45cc50a8:
 translate chinese farm_gizel_introduction_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:8817
 translate chinese farm_gizel_introduction_121933ff:
@@ -19546,7 +19546,7 @@ translate chinese farm_first_monster_6d46f1c1:
 translate chinese farm_first_monster_ba8ef4f3:
 
     # gizel soft "..."
-    gizel soft "…"
+    gizel soft "……"
 
 # game/BKstory_events.rpy:9760
 translate chinese farm_first_monster_0723374a:
@@ -20008,7 +20008,7 @@ translate chinese farm_first_machine_546648a2:
 translate chinese farm_first_machine_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:10021
 translate chinese farm_first_machine_2c8a310c:
@@ -20788,7 +20788,7 @@ translate chinese shop_bath_scene_e8e81747:
 translate chinese shop_bath_scene_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:10445
 translate chinese shop_bath_scene_25358aaf:
@@ -20890,7 +20890,7 @@ translate chinese satella_letter_6ad726c3:
 translate chinese satella_letter_ccaca195:
 
     # raccoon "..."
-    raccoon "…"
+    raccoon "……"
 
 # game/BKstory_events.rpy:10523
 translate chinese satella_letter_d083cf7c:
@@ -20932,7 +20932,7 @@ translate chinese satella_letter_c75adcd4:
 translate chinese satella_letter_951da1e2:
 
     # you "Ew... DEAD RACCOON!"
-    you "...死浣熊!"
+    you "……死浣熊!"
 
 # game/BKstory_events.rpy:10541
 translate chinese satella_letter_3e27ea8f:
@@ -21130,7 +21130,7 @@ translate chinese satella_first_visit_70ceaaf0:
 translate chinese satella_first_visit_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:10655
 translate chinese satella_first_visit_2ecd90c1:
@@ -21244,7 +21244,7 @@ translate chinese satella_first_visit_f9b7c4b5:
 translate chinese satella_first_visit_d6d8d413:
 
     # rodrigo "..."
-    rodrigo "…"
+    rodrigo "……"
 
 # game/BKstory_events.rpy:10705
 translate chinese satella_first_visit_95ebacf9:
@@ -21388,7 +21388,7 @@ translate chinese satella_first_visit_f52ca16a:
 translate chinese satella_first_visit_0975d47f:
 
     # gouki "..."
-    gouki "…"
+    gouki "……"
 
 # game/BKstory_events.rpy:10757
 translate chinese satella_first_visit_d6d8d413_3:
@@ -21400,7 +21400,7 @@ translate chinese satella_first_visit_d6d8d413_3:
 translate chinese satella_first_visit_2aa3969e:
 
     # akuma "..."
-    akuma "…"
+    akuma "……"
 
 # game/BKstory_events.rpy:10761
 translate chinese satella_first_visit_d61895a4:
@@ -21910,7 +21910,7 @@ translate chinese satella_first_visit_62d0a893:
 translate chinese satella_first_visit_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:11023
 translate chinese satella_first_visit_d02457c1:
@@ -21946,7 +21946,7 @@ translate chinese satella_visit_675fa7b6:
 translate chinese satella_visit_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:11069
 translate chinese satella_visit_7bce7883:
@@ -22174,7 +22174,7 @@ translate chinese satella_game_2b9ba79e:
 translate chinese satella_game_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:11181
 translate chinese satella_game_ec21ae47:
@@ -22378,7 +22378,7 @@ translate chinese satella_game_b95ec369:
 translate chinese satella_game_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:11297
 translate chinese satella_game_b48efb8c:
@@ -22564,19 +22564,19 @@ translate chinese satella_game_guess_loop_664c0012:
 translate chinese satella_game_guess_loop_c3f9a3dd:
 
     # satella "Well, that was fun. Make sure to come back next time... This time I'll win!"
-    satella "那很有趣。下次一定要回来……这次我赢了!"
+    satella "那很有趣。下次一定要回来……这次我赢了！"
 
 # game/BKstory_events.rpy:11479
 translate chinese satella_game_guess_loop_0ab9aa83:
 
     # you "I'm right! Right?"
-    you "我是正确的!对吧?"
+    you "我是正确的！对吧？"
 
 # game/BKstory_events.rpy:11481
 translate chinese satella_game_guess_loop_291f4c69:
 
     # satella "..."
-    satella "…"
+    satella "……"
 
 # game/BKstory_events.rpy:11483
 translate chinese satella_game_guess_loop_2f14b158:
@@ -22594,7 +22594,7 @@ translate chinese satella_game_guess_loop_534fb17a:
 translate chinese satella_game_guess_loop_2bb095a8:
 
     # satella "MUHAHAHAHAHA!" with vpunch
-    satella "MUHAHAHAHAHA !" with vpunch
+    satella "木哈哈哈哈哈！" with vpunch
 
 # game/BKstory_events.rpy:11491
 translate chinese satella_game_guess_loop_e29b3f0b:
@@ -22618,7 +22618,7 @@ translate chinese satella_game_guess_loop_0fd02a23:
 translate chinese satella_game_guess_loop_583c5d19:
 
     # satella angry "Whaaaat???"
-    satella angry "什么? ? ?"
+    satella angry "什么？？？"
 
 # game/BKstory_events.rpy:11502
 translate chinese satella_game_guess_loop_8076faa6:
@@ -22630,7 +22630,7 @@ translate chinese satella_game_guess_loop_8076faa6:
 translate chinese satella_game_guess_loop_8aaaf018:
 
     # satella "It's not! It's not! I wanna play ROCK SCISSOR PAPER!!! Uwaaah!!!"
-    satella "它不是!它不是!我想玩摇滚剪刀纸!!Uwaaah ! ! !"
+    satella "它不是！它不是！我想玩摇滚剪刀纸！！Uwaaah ! ! !"
 
 # game/BKstory_events.rpy:11511
 translate chinese satella_game_guess_loop_f8ac25b4:
@@ -22696,7 +22696,7 @@ translate chinese satella_game_rock_menu_c91d1c26:
 translate chinese satella_game_rock_menu_ba642d5e:
 
     # satella "Two..."
-    satella "两……"
+    satella "二……"
 
 # game/BKstory_events.rpy:11537
 translate chinese satella_game_rock_menu_a0199664:
@@ -22726,7 +22726,7 @@ translate chinese satella_game_rock_menu_f67892b0:
 translate chinese satella_game_rock_menu_291f4c69:
 
     # satella "..."
-    satella "..."
+    satella "……"
 
 # game/BKstory_events.rpy:11571
 translate chinese satella_game_rock_menu_40f0a7c2:
@@ -22750,7 +22750,7 @@ translate chinese satella_game_rock_menu_ca7cf753:
 translate chinese satella_game_rock_menu_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:11581
 translate chinese satella_game_rock_menu_6eb791d9:
@@ -23200,7 +23200,7 @@ translate chinese satella_won_1e8dae83:
 translate chinese satella_won_291f4c69:
 
     # satella "..."
-    satella "..."
+    satella "……"
 
 # game/BKstory_events.rpy:11882
 translate chinese satella_won_dc9c9cf6:
@@ -23830,7 +23830,7 @@ translate chinese shalia1_b4ffee3d:
 translate chinese shalia1_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:12291
 translate chinese shalia1_683c60e0:
@@ -23854,7 +23854,7 @@ translate chinese shalia1_c96ee11e:
 translate chinese shalia1_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:12306
 translate chinese shalia1_6d007747:
@@ -24052,7 +24052,7 @@ translate chinese shalia1_ac3b824d:
 translate chinese shalia1_dae0ec55_2:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:12378
 translate chinese shalia1_24fb9df3:
@@ -24070,7 +24070,7 @@ translate chinese shalia1_380fe344:
 translate chinese shalia1_dae0ec55_3:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:12388
 translate chinese shalia1_80fb76a5:
@@ -24514,7 +24514,7 @@ translate chinese shalia4_81853929:
 translate chinese shalia4_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:12609
 translate chinese shalia4_86cb665a:
@@ -25354,7 +25354,7 @@ translate chinese shalia_visit_3fa42a0f:
 translate chinese shalia_visit_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13098
 translate chinese shalia_visit_8a6cac0f:
@@ -25474,7 +25474,7 @@ translate chinese shalia_visit_0723374a:
 translate chinese shalia_visit_291f4c69:
 
     # satella "..."
-    satella "..."
+    satella "……"
 
 # game/BKstory_events.rpy:13150
 translate chinese shalia_visit_75db1aaa:
@@ -25660,7 +25660,7 @@ translate chinese shalia_visit_3ce2c1a3:
 translate chinese shalia_visit_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13248
 translate chinese shalia_visit_c9457d35:
@@ -25798,7 +25798,7 @@ translate chinese kosmo_returns_44ee8331:
 translate chinese kosmo_returns_8db7e627:
 
     # kosmo "..."
-    kosmo "…"
+    kosmo "……"
 
 # game/BKstory_events.rpy:13333
 translate chinese kosmo_returns_dd72abee:
@@ -25846,7 +25846,7 @@ translate chinese kosmo_returns_061f5e8b:
 translate chinese kosmo_returns_861c4bf1:
 
     # kosmo angry "..."
-    kosmo angry "…"
+    kosmo angry "……"
 
 # game/BKstory_events.rpy:13349
 translate chinese kosmo_returns_a96aef56:
@@ -25882,7 +25882,7 @@ translate chinese kosmo_returns_a3c68cc1:
 translate chinese kosmo_returns_8db7e627_1:
 
     # kosmo "..."
-    kosmo "..."
+    kosmo "……"
 
 # game/BKstory_events.rpy:13365
 translate chinese kosmo_returns_91b3436a:
@@ -25906,7 +25906,7 @@ translate chinese kosmo_returns_b4cdbe04:
 translate chinese kosmo_returns_d9b8552f:
 
     # kosmo happy "..."
-    kosmo happy "…"
+    kosmo happy "……"
 
 # game/BKstory_events.rpy:13373
 translate chinese kosmo_returns_2e40d003:
@@ -25954,7 +25954,7 @@ translate chinese kosmo_returns_eae5fde6:
 translate chinese kosmo_returns_8db7e627_2:
 
     # kosmo "..."
-    kosmo "..."
+    kosmo "……"
 
 # game/BKstory_events.rpy:13394
 translate chinese kosmo_returns_dd72abee_1:
@@ -26074,7 +26074,7 @@ translate chinese kosmo_returns_383b6d78:
 translate chinese kosmo_returns_8db7e627_3:
 
     # kosmo "..."
-    kosmo "..."
+    kosmo "……"
 
 # game/BKstory_events.rpy:13436
 translate chinese kosmo_returns_418faea0:
@@ -26086,7 +26086,7 @@ translate chinese kosmo_returns_418faea0:
 translate chinese kosmo_returns_8db7e627_4:
 
     # kosmo "..."
-    kosmo "..."
+    kosmo "……"
 
 # game/BKstory_events.rpy:13440
 translate chinese kosmo_returns_dcd49f84:
@@ -26212,7 +26212,7 @@ translate chinese kosmo_returns2_2e60154e:
 translate chinese kosmo_returns2_63f45442:
 
     # kosmo "Have you heard about the kunoichi clan? They're a bunch of female ninjas."
-    kosmo "你听说过kunoichi族吗?他们是一群女忍者。"
+    kosmo "你听说过忍者吗?他们是一群忍者。"
 
 # game/BKstory_events.rpy:13521
 translate chinese kosmo_returns2_af63ec79:
@@ -26230,13 +26230,13 @@ translate chinese kosmo_returns2_e9808810:
 translate chinese kosmo_returns2_b9bf4e4b:
 
     # kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
-    kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
+    kosmo angry "什么？闭嘴！总有一天，我会派忍者追杀你！GRRRR..." with vpunch
 
 # game/BKstory_events.rpy:13527
 translate chinese kosmo_returns2_dd72abee:
 
     # kosmo happy "Anyway."
-    kosmo happy "Anyway."
+    kosmo happy "无论如何。"
 
 # game/BKstory_events.rpy:13529
 translate chinese kosmo_returns2_525463c7:
@@ -26254,7 +26254,7 @@ translate chinese kosmo_returns2_a59343ea:
 translate chinese kosmo_returns2_bb630334:
 
     # kosmo laughing "BWAHAHAHAHAHA!!!" with vpunch
-    kosmo laughing "BWAHAHAHAHAHA ! ! !"
+    kosmo laughing "噗哈哈哈哈哈！！！"
 
 # game/BKstory_events.rpy:13537
 translate chinese kosmo_returns2_d1e1ddb1:
@@ -26554,7 +26554,7 @@ translate chinese kosmo_returns2_bf35b764:
 translate chinese kosmo_returns2_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13648
 translate chinese kosmo_returns2_1fe9baeb:
@@ -26698,13 +26698,13 @@ translate chinese kosmo_returns2_9ba10e9f:
 translate chinese kosmo_returns2_4cc0b2f4:
 
     # kosmo happy "The dear professor got a PhD, but now she only gets the D!"
-    kosmo happy "The dear professor got a PhD, but now she only gets the D!"
+    kosmo happy "亲爱的教授拿到了博士学位，但现在她只得到了D！"
 
 # game/BKstory_events.rpy:13701
 translate chinese kosmo_returns2_668d7c01:
 
     # kosmo laughing "BWAHAHAHAHAHA!!!"
-    kosmo laughing "BWAHAHAHAHAHA ! ! !"
+    kosmo laughing "噗哈哈哈哈哈！！！"
 
 # game/BKstory_events.rpy:13705
 translate chinese kosmo_returns2_c7674cd5:
@@ -26722,7 +26722,7 @@ translate chinese kosmo_returns2_04880c68:
 translate chinese kosmo_returns2_8cdeb6f4:
 
     # "Girl" "Oh, aah, aaaaaah!!!"
-    "女孩" "Oh, aah, aaaaaah!!!"
+    "女孩" "噢，啊，啊啊啊！！！"
 
 # game/BKstory_events.rpy:13719
 translate chinese kosmo_returns2_361c1bed:
@@ -26740,7 +26740,7 @@ translate chinese kosmo_returns2_ebe9df23:
 translate chinese kosmo_returns2_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13725
 translate chinese kosmo_returns2_b96c6738:
@@ -26788,7 +26788,7 @@ translate chinese kosmo_returns2_9f12551d:
 translate chinese kosmo_returns2_dae0ec55_2:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13743
 translate chinese kosmo_returns2_ded47df7:
@@ -26830,7 +26830,7 @@ translate chinese kosmo_returns2_f96e37c7:
 translate chinese kosmo_returns2_dae0ec55_3:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13765
 translate chinese kosmo_returns2_8b764d97:
@@ -26854,7 +26854,7 @@ translate chinese kosmo_returns2_d2a6b369:
 translate chinese kosmo_returns2_8db7e627:
 
     # kosmo "..."
-    kosmo "..."
+    kosmo "……"
 
 # game/BKstory_events.rpy:13779
 translate chinese kosmo_returns2_b8daf4ca:
@@ -27094,7 +27094,7 @@ translate chinese kosmo_returns2_ce78b108:
 translate chinese kosmo_returns2_dae0ec55_4:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13882
 translate chinese kosmo_returns2_87bb4029:
@@ -27118,7 +27118,7 @@ translate chinese kosmo_returns2_176ef93a:
 translate chinese kosmo_returns2_dae0ec55_5:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13890
 translate chinese kosmo_returns2_853ed0b3:
@@ -27304,7 +27304,7 @@ translate chinese kosmo_returns2_cdd61645:
 translate chinese kosmo_returns2_dae0ec55_6:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:13963
 translate chinese kosmo_returns2_b6704f58:
@@ -27676,7 +27676,7 @@ translate chinese no_money_3dc743f9:
 translate chinese no_money_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:14152
 translate chinese no_money_31163cd7:
@@ -27838,7 +27838,7 @@ translate chinese no_money_be65f497:
 translate chinese no_money_dae0ec55_1:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:14206
 translate chinese no_money_94066890:
@@ -28234,7 +28234,7 @@ translate chinese visit_bank_04df98a4:
 translate chinese visit_bank_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:14417
 translate chinese visit_bank_c2c6dde5:
@@ -29872,7 +29872,7 @@ translate chinese meet_carpenter_aaacd27e:
 translate chinese meet_carpenter_a7399b46:
 
     # carpenter "..."
-    carpenter "…"
+    carpenter "……"
 
 # game/BKstory_events.rpy:15350
 translate chinese meet_carpenter_e412fb56:
@@ -31804,7 +31804,7 @@ translate chinese trade_50_resources_28fd2f31:
 translate chinese trade_50_resources_946bfdb3:
 
     # bast "..."
-    bast "…"
+    bast "……"
 
 # game/BKstory_events.rpy:16321
 translate chinese trade_50_resources_64ec10d7:
@@ -32026,7 +32026,7 @@ translate chinese trade_50_resources_4ca17860:
 translate chinese trade_50_resources_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:16403
 translate chinese trade_50_resources_3594b446:
@@ -34276,7 +34276,7 @@ translate chinese bast_sex_b1480fa1:
 translate chinese bast_sex_dae0ec55:
 
     # you "..."
-    you "..."
+    you "……"
 
 # game/BKstory_events.rpy:17448
 translate chinese bast_sex_d8ea2722:
@@ -34612,7 +34612,7 @@ translate chinese meet_ramias_3dd448ea:
 translate chinese meet_ramias_4fafe024:
 
     # ramias "..."
-    ramias "…"
+    ramias "……"
 
 # game/BKstory_events.rpy:17606
 translate chinese meet_ramias_4b4d0d8f:
@@ -35872,7 +35872,7 @@ translate chinese meet_twins_45c580aa:
 translate chinese meet_twins_2c7c3c28:
 
     # yesterday "..."
-    yesterday "…"
+    yesterday "……"
 
 # game/BKstory_events.rpy:18213
 translate chinese meet_twins_a9cf0036:

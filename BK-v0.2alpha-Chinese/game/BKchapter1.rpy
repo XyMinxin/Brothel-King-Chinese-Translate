@@ -2827,7 +2827,7 @@ label c1_ask_guild_for_help:
 
     "Rendezvous with Renza at the {b}thieves guild{/b}."
 
-    $ game.set_task("Rendezvous with Renza at the {b}thieves guild{/b}.")
+    $ game.set_task("在{b}盗贼公会{/b}与伦萨会面。")
     return
 
 
@@ -3486,6 +3486,8 @@ label c1_interrogate_menu:
 
                 "Her anger and hatred is painful to watch. Still, you're happy that you managed to get her to talk."
 
+                $ NPC_sergeant.flags["interrogation"] = "tricked"
+
             else:
 
                 you "Look, there's no need to make a fuss about this. I can get you released quickly if you cooperate."
@@ -3625,6 +3627,8 @@ label c1_interrogate_menu:
 
                 you "Now, tell me everything. And don't hold anything back."
 
+                $ NPC_sergeant.flags["interrogation"] = "beaten"
+
             else:
 
                 play sound s_punch
@@ -3749,6 +3753,8 @@ label c1_interrogate_menu:
                 you "I will, you can trust me. I'm your {i}friend{/i}... I'm not like the {i}others{/i}."
 
                 you "Now, tell me about the captain. Don't leave anything out."
+
+                $ NPC_sergeant.flags["interrogation"] = "magic"
 
 
             else:
@@ -3951,6 +3957,7 @@ label c1_interrogate_menu:
 
             you "Fine. Let me hear what you have to say."
 
+            $ NPC_sergeant.flags["interrogation"] = "raped"
 
     scene black with fade
 
@@ -4695,7 +4702,7 @@ label c1_satella_intro():
 
     "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
 
-    $ game.set_task("Go to the {b}watchtower{/b} and confront the infamous captain of the city guard.")
+    $ game.set_task("前往{b}瞭望塔{/b}，并面对城市警卫队的臭名昭著的队长。")
 
     return
 
@@ -4825,7 +4832,7 @@ label c1_captain_meeting:
     play sound s_horn
 
     show captain:
-        ease 0.5 zoom 4.0 xoffset 300 yoffset -180
+        ease 0.5 zoom 4.0 xoffset 300 yoffset -int(config.screen_height*0.25)
         pause 0.5
         ease 0.5 zoom 1.0 xoffset 0 yoffset 0
 
@@ -4840,7 +4847,7 @@ label c1_captain_meeting:
     play sound s_horn
 
     show captain:
-        ease 0.5 zoom 4.0 xoffset 300 yoffset -180
+        ease 0.5 zoom 4.0 xoffset 300 yoffset -int(config.screen_height*0.1875)
         pause 0.5
         ease 0.5 zoom 1.0 xoffset 0 yoffset 0
 

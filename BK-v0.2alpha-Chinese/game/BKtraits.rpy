@@ -8,6 +8,7 @@
 ## - In all cases, make sure to update the Trait dictionary to avoid trait lookup problems (e.g.: 'trait_dict[trait.name] = Trait("my_trait")')
 ## - Note that if you want to include a custom made Trait as part of a _BK.ini file, the Trait() must be added to the dictionary before girls are generated (right after the init_traits() label is run)
 
+define renamed_traits = {"Good tits" : "Firm tits"} # For backwards compatibility
 
 label init_traits():
 
@@ -32,12 +33,12 @@ label init_traits():
                         Trait("Provocative", verb="be", eff1=Effect("boost", "dress", 0.5), eff2=Effect("gain", "positive fixation", "cosplay"), archetype="The Model"),
                         Trait("Fashionista", verb="be", eff1=Effect("boost", "accessory", 0.25), eff2=Effect("boost", "necklace", 0.25), eff3=Effect("boost", "ring", 0.25), archetype="The Fox"),
                         Trait("Perfectionist", verb="be a", eff1=Effect("increase satisfaction", "all jobs", 1), archetype="The Courtesan"),
-                        Trait("Elite", verb="be", eff1=Effect("special", "ignore budgets"), archetype="The Courtesan"),
+                        Trait("Elite", verb="be", eff1=Effect("special", "ignore budgets", 1), archetype="The Courtesan"),
                         Trait("Gifted", verb="be", eff1=Effect("increase satisfaction", "all sex acts", 1), archetype="The Bride"),
                         Trait("Fast learner", verb="be a", eff1=Effect("boost", "xp gains", 0.05), eff2=Effect("boost", "all jp gains", 0.05), archetype="The Escort"),
-                        Trait("Caster", verb="be a", eff1=Effect("special", "rest shield"), archetype="The Bride"), #!
+                        Trait("Caster", verb="be a", eff1=Effect("special", "rest shield", 1), archetype="The Bride"), #!
                         Trait("Driven", verb="be", eff1=Effect("boost", "max energy", 0.2), eff2=Effect("boost", "energy", 0.1), archetype="The Player"),
-                        Trait("Country girl", verb="be a", eff1=Effect("special", "all farm weaknesses"), eff2=Effect("boost", "farm preference increase", 0.5), archetype="The Maid"),
+                        Trait("Country girl", verb="be a", eff1=Effect("special", "all farm weaknesses", 1), eff2=Effect("boost", "farm preference increase", 0.5), archetype="The Maid"),
                         Trait("Noble", verb="be a", eff1=Effect("boost", "prestige", 2), archetype="The Courtesan"),
                         Trait("Naturist", verb="be a", eff1=Effect("special", "naked", 1), archetype="The Model", base_description = "她毫无羞耻地将自己的裸体展示给完全陌生的人。"),
                         Trait("Vicious", verb="be", effects=[Effect("change", "service", 5), Effect("change", "sex", 5), Effect("change", "anal", 5), Effect("change", "fetish", 5)], archetype="The Escort")
@@ -83,7 +84,7 @@ label init_traits():
                       Trait("Sexy", verb = "be", eff1 = Effect("boost", "reputation gains", 0.2), archetype="The Escort"),
                       Trait("Humble", verb = "be", eff1 = Effect("boost", "upkeep", -0.2), archetype="The Maid"),
 
-                      Trait("Virgin", verb = "be a", eff1 = Effect("special", "virgin", 1), eff2 = Effect("change", "sex act requirements", 10), archetype="The Bride", base_description = "This girl is a virgin."), # Special trait, goes away after 1st sex
+                      Trait("Virgin", verb = "be a", eff1 = Effect("special", "virgin", 1), eff2 = Effect("change", "sex act requirements", 10), archetype="The Bride", base_description = "这个女孩是个处女。"), # Special trait, goes away after 1st sex
                       Trait("Sharp", verb = "be", eff1 = Effect("boost", "xp gains", 0.1), eff2 = Effect("personality", "nerd"), archetype="The Fox"),
                       Trait("Loyal", verb = "be", eff1 = Effect("boost", "love gains", 0.1), archetype="The Bride"),
                       Trait("Brave", verb = "be", eff1 = Effect("boost", "fear", -0.1), archetype="The Escort"),
@@ -177,7 +178,7 @@ label init_traits():
         ## STORY GIRLS TRAITS ##
 
         trait_dict["Dynamo"] = Trait("Dynamo", verb = "be", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "燃烧着炽热的能量。")
-        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she does - and some customers love that.")
+        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "她实际上并不是未成年，但看起来像是未成年 —— 一些顾客很喜欢这样。")
         trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "她是一个幽灵，不能用任何正常的手段来伤害她。")
         trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "她做什么都无所谓，她会比别人更努力地训练。")
 
