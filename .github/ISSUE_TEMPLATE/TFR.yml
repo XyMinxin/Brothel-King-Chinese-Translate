@@ -13,8 +13,8 @@ body:
         我建议把xxx换成xxx。
     validations:
       required: true
-  - type: textarea2
-    id: describe
+  - type: textarea
+    id: describe2
     attributes:
       label: 你的建议说明
       description: 比如：游戏里Suzume的角色形象出自《战国兰斯》里的すずめ，并且官方翻译是铃女
