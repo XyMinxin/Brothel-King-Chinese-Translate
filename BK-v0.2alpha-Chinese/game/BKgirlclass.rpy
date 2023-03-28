@@ -472,10 +472,10 @@ init -2 python:
             elif self in game.free_girls: # Free girls will never be naked (unless activated in H menu). Profile picture changes according to current location
                 if persistent.naked_girls_in_town and self.naked:
                     _and_tags = ["naked"]
-                    _not_tags = []
+                    _not_tags = ["masseuse", "waitress", "dancer"] # Reminder: not tags are dropped from right to left when unavailable
                 else:
                     _and_tags = []
-                    _not_tags = ["naked"]
+                    _not_tags = ["naked", "masseuse", "waitress", "dancer"] # Reminder: not tags are dropped from right to left when unavailable
 
                 self.portrait = self.get_pic("portrait", "profile", and_tags=_and_tags, not_tags=_not_tags, and_priority=False, soft=True)
                 if self.location.lower() in town_locations: # Reminder: self.location contains location name (string)
@@ -489,14 +489,17 @@ init -2 python:
                 else:
                     self.profile = self.get_pic("profile", "portrait", and_tags=_and_tags, not_tags=_not_tags, soft=True)
 
-            else:
+            else: # Brothel girls
+                not_tags =  ["rest", "wet", "beach", "public"] + [j for j in all_jobs if j != self.job]
+                # edit: This suggested by darkzerotor, a lot of packs have too many pics that tag "profile" that dont make sense
+
                 self.portrait = self.get_pic("portrait", "profile", naked_filter = True, and_priority=False, soft=True)
-                self.profile = self.get_pic("profile", "portrait", not_tags = ["beach"], naked_filter = True, soft=True)
+                self.profile = self.get_pic("profile", "portrait", not_tags=not_tags, naked_filter = True, soft=True)
 
             if not self.profile:
                 #<Chris12 AutoRepair>
                 # Use not_found.webp. No longer needs to renpy.quit(), since it has some image to show
-                renpy.say("", event_color["bad"] % ("找不到以下女孩的个人资料或肖像照片: " + self.path + ".") + "\n请重命名至少一张她的照片，以包含“个人资料”或“肖像”字样\n(e.g.: 'profile3.jpg')\n或者，完全删除她的目录，重新启动游戏，然后进入帮助菜单，“修复女孩/MC图片”来删除她。")
+                renpy.say("", event_color["bad"] % ("找不到以下女孩的个人资料或肖像照片：" + self.path + ".") + "\n请重命名至少一张她的照片，以包含“profile”或“portrait”字样\n(e.g.: 'profile3.jpg')\n或者，完全删除她的目录，重新启动游戏，然后进入帮助菜单，“修复女孩/MC图片”来删除她。")
                 self.profile = Picture(path="backgrounds/not_found.webp")
                 # renpy.say("", "Exiting Ren'Py...{w=1}{nw}")
                 # renpy.quit()
@@ -678,7 +681,7 @@ init -2 python:
                     target = t[1] + modifier
 
                     if self.get_stat(stat) < target:
-                        return False, girl_related_dict[sex_act.capitalize()] + "不能被激活。\n" + event_color["a little bad"] % ("她的{b}" + girl_related_dict[stat.lower()] + "{/b}太低了(至少: " + str(target) + ")")
+                        return False, girl_related_dict[sex_act.capitalize()] + "不能被激活。\n" + event_color["a little bad"] % ("她的{b}" + girl_related_dict[stat.lower()] + "{/b}太低了(至少：" + str(target) + ")")
 
             if not compare_preference(self, sex_act, "reluctant"): # Means the girl is very reluctant or worse
                 return False, girl_related_dict[sex_act.capitalize()] + "不能被激活。\n" + event_color["a little bad"] % ("她对{b}" + girl_related_dict[sex_act.lower()] + "{/b}的偏好或了解程度太低了。她需要更多的培训。")
@@ -946,7 +949,7 @@ init -2 python:
             # The 'and' and 'not_tags' apply to every set of tags.
             # NEW: and_tags and not_tags should be listed from the most important to the least important (they will be dropped in reverse order)
             # If 'strict' is on, a False value is returned if no picture can be found with the and/not_tags conditions
-            # If 'and_priority' is on, the 'and' clause will only be dropped after the search list has been exhausted
+            # If 'and_priority' is on, the 'and' and 'not' clause will only be dropped after the search list has been exhausted
             # allow_lesbian is overridden by bisexual/group or using lesbian tag
 
 #            if debug_mode: renpy.notify("\nLooking for pic " + and_text(tags))
@@ -962,25 +965,7 @@ init -2 python:
             else:
                 not_tags = []
 
-            # 'Virgin' girls will never have pictures displaying sex shown unless the act is explicitely 'sex' or 'group'
-
-            if self.has_trait("Virgin"):
-                if not "sex" in (tags + and_tags + not_tags) and not "group" in (tags + and_tags):
-                    not_tags.append("sex")
-
-            # 'portrait' may not show unless specifically requested
-
-            if "portrait" not in (tags + and_tags + not_tags):
-                not_tags.append("portrait")
-
-            # 'Soft' automatically excludes sexual tags from the research tags. It does not exclude 'naked' or farm tags, provided they don't come with a sexual tag.
-
-            if soft:
-                not_tags.extend(ntag for ntag in (all_sex_acts + ["group", "bisexual"]) if ntag not in not_tags)
-            if hide_farm:
-                not_tags += farm_hardcore_acts
-                if "fetish" not in (tags + and_tags):
-                    not_tags.append("machine")
+            ## Priority filters: These tag filters take precedence over provided not_tags, in ascending order of importance
 
             # 'naked_filter' automatically adds the naked and_tags or not_tags tag (use only with profile, rest, or work pics. Will cause problems with sex events, use sparingly)
 
@@ -989,12 +974,36 @@ init -2 python:
                 if self.naked:
                     and_tags.append("naked")
                 elif not self.naked:
-                    not_tags.append("naked")
+                    not_tags.insert(0, "naked") # Places "naked" at the begining of the not_tags list
+
+            # 'Soft' automatically excludes sexual tags from the research tags. It does not exclude 'naked' or farm tags, provided they don't come with a sexual tag. Soft not_tags are removed last
+
+            if soft: # Inserts soft filters at the begining of the not_tags list
+                not_tags = [ntag for ntag in (all_sex_acts + ["group", "bisexual"]) if ntag not in not_tags] + not_tags
 
             # Lesbian pics will be excluded unless it is explicitely requested or the context is bisexual/group
 
             if not allow_lesbian and "lesbian" not in (tags + and_tags + not_tags) and "bisexual" not in (tags + and_tags) and "group" not in (tags + and_tags):
-                not_tags.append("lesbian")
+                not_tags.insert(0, "lesbian") # Places "lesbian" at the begining of the not_tags list
+
+            # 'Virgin' girls will never have pictures displaying sex shown unless the act is explicitely 'sex' or 'group'
+
+            if self.has_trait("Virgin"):
+                if not "sex" in (tags + and_tags + not_tags) and not "group" in (tags + and_tags):
+                    not_tags.insert(0, "sex") # Places "sex" at the begining of the not_tags list
+
+            # 'Hide_farm' excludes hardcore farm acts. It takes precedence over everything else in the not_tags list
+            if hide_farm:
+                if "fetish" not in (tags + and_tags):
+                    not_tags.insert(0, "machine") # Places "machine" at the begining of the not_tags list
+                not_tags = farm_hardcore_acts + not_tags
+
+            ## Non-priority filters (will be added at the end of the not_tags list)
+
+            # 'portrait' may not show unless specifically requested
+
+            if "portrait" not in (tags + and_tags + not_tags):
+                not_tags.append("portrait")
 
             # 'pref_filter' filters out unintended sex acts if she isn't at least indifferent to them (e.g. : 'sex fetish' pic will only show during sex if she is indifferent to fetish)
 
@@ -1018,8 +1027,9 @@ init -2 python:
         def get_pic_by_name(self, filename): # Where filename must NOT include the path to any subfolder. Doesn't include ignored folders for now.
             return GirlFilesDict.get_pic_by_name(self.path, filename)
 
-        def get_fix_pic(self, act=None, fix=None, and_tags=None, not_tags=None, hide_farm=True, naked_filter=False, pref_filter=True, attempts=0, allow_lesbian=False, always_stock=False):
+        def get_fix_pic(self, act=None, fix=None, and_tags=None, not_tags=None, hide_farm=True, naked_filter=False, pref_filter=True, attempts=0, allow_lesbian=False, always_stock=False, strict=False):
             # Where act is a string but fix is an object (important). hide_farm is on by default. allow_lesbian is overridden by bisexual/group or using lesbian tag
+            # Strict works differently for this method
 
             ## 0. Sanity check
 
@@ -1091,9 +1101,9 @@ init -2 python:
                         # Pic weight is affected by the fix_pic_balance setting
                         pics.append((pic, pic.get_weight(_context)))
                         break
-                else:
+                else: # Drops the 'strict' argument if no picture is found
                     if debug_output: BkLog.info("Not Found " + fix.name + "! (" + _context + ")")
-                    # Drops the 'strict' conditions if no picture is found
+
                     for tags in fix.tag_list:
                         attempts += 1
                         pic = self.get_pic(tags, and_tags=_and_tags, not_tags=_not_tags, attempts=attempts, naked_filter=naked_filter, pref_filter=pref_filter, always_stock=always_stock)
@@ -1105,6 +1115,8 @@ init -2 python:
 
             if pics:
                 return weighted_choice(pics)
+            elif strict: # Aborpts
+                return None
             elif pics_second:
                 return weighted_choice(pics_second)
             elif act: # Gets an act picture if no fixation picture is found, then a naked picture, then a profile pic if all else fails
@@ -1445,7 +1457,7 @@ init -2 python:
                     renpy.say(self.char, "花！给我的？谢谢你……")
 
                 if self.MC_relationship_level == 2:
-                    renpy.say(self.char, "这太浪漫了…你想从我这里得到什么吗？")
+                    renpy.say(self.char, "这太浪漫了……你想从我这里得到什么吗？")
 
                     r = menu(items = (("事实上……", None), ("约她出去", True), ("没有关系", False)))
 
@@ -1475,7 +1487,7 @@ init -2 python:
                     renpy.say(self.char, "这很不错！谢谢你为我着想。")
 
                 elif score >= 0:
-                    renpy.say(self.char, "啊，噢，谢谢。我猜这是一个有意思的…嗯……不管是什么。")
+                    renpy.say(self.char, "啊，噢，谢谢。我猜这是一个有意思的……嗯……不管是什么。")
 
                 else:
                     renpy.say(self.char, "什么鬼东西？呃，把这个给我拿走！")
@@ -1692,7 +1704,7 @@ init -2 python:
                     r += "，"
                 r += "对性行为有一个{b}负面想法{/b}"
 
-            return "当前状态: " + r + "。"
+            return "当前状态：" + r + "。"
 
 
         def get_max_cust_served(self, job="current"):
@@ -2997,8 +3009,8 @@ init -2 python:
                                                 description=self.init_dict["custom personality/description"],
                                                 )
 
-                # Adds custom personality to the gpersonalities dict
-                gpersonalities[self.personality.name] = self.personality
+                # # Adds custom personality to the gpersonalities dict
+                # gpersonalities[self.personality.name] = self.personality
 
             elif self.init_dict["base personality/always"]: # If a specific personality is provided in the init file
                 self.personality = gpersonalities[rand_choice(self.init_dict["base personality/always"])]
@@ -3029,29 +3041,6 @@ init -2 python:
             self.attributes = self.personality.generate_attributes(self)
             self.gift_likes = self.personality.gift_likes
 
-
-        # def set_personality_old(self, personality = None): # Where personality is a string if provided
-        #     if self.init_dict["base personality/always"]:
-        #         self.personality = gpersonalities[rand_choice(self.init_dict["base personality/always"])]
-        #
-        #     elif personality and personality not in self.init_dict["base personality/never"]: # If a specific personality is provided (cannot override init setting)
-        #         self.personality = gpersonalities[personality]
-        #
-        #     else: #Random personality
-        #
-        #         personalities = []
-        #
-        #         for pers in gpersonalities.values(): # In this case, pers is an Object
-        #             if pers in self.init_dict["base personality/never"]:
-        #                 pass
-        #             elif pers in self.init_dict["base personality/often"]:
-        #                 personalities.append((pers, 4))
-        #             elif pers in self.init_dict["base personality/rarely"]:
-        #                 personalities.append((pers, 1))
-        #             else:
-        #                 personalities.append((pers, 2))
-        #
-        #         self.personality = weighted_choice(personalities)
 
         def change_relationship(self, other_girl, chg):
 
@@ -3364,7 +3353,7 @@ init -2 python:
             if available_fix:
                 fixations = weighted_choice(available_fix, nb) # always returns a list
             else:
-                renpy.say("", "No " + type + " fixations found for " + self.fullname) #!
+                renpy.say("", "未找到" + self.fullname + "的 " + type + " fixations") #!
                 return False
 
             if not fixations and debug_mode:
@@ -3433,9 +3422,9 @@ init -2 python:
 
                 if act not in ("naked", "service"): # All sex acts other than service influence naked preference a little
                     change2 = self.change_preference("naked", 0.25*change)
-                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值: " + str(change) + "\n露出突发事件 (" + str(type) + ")，数值: " + str(round_int(0.25*change)))
+                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值：" + str(change) + "\n露出突发事件 (" + str(type) + ")，数值：" + str(round_int(0.25*change)))
                 elif debug_mode:
-                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值: " + str(change))
+                    renpy.notify("突发事件 " + girl_related_dict[act] + " (" + str(type) + ")，数值：" + str(change))
 
             else:
                 change = 0
@@ -3552,7 +3541,7 @@ init -2 python:
 
             boost = reverse_if(boost, amount) ## Reverses boost if decreasing love
 
-#            renpy.say("", "Boost: " + str(boost))
+#            renpy.say("", "Boost：" + str(boost))
 
             change = get_change_min_max(self.love, amount*boost, min_cap, max_cap, enforce_boundaries=False) # enforce_boundaries=False means the love value will not be reset to min or max cap if it exceeds them.
             self.love += change
@@ -3887,7 +3876,7 @@ init -2 python:
             # Life of Luxury perk
             if self.get_effect("change", "mood"):
                 mood_change += self.get_effect("change", "mood")
-                mood_factors += "+" + str(self.get_effect("change", "mood")) + ": 她很喜欢自己的衣服 (奢华的生活)。\n"
+                mood_factors += "+" + str(self.get_effect("change", "mood")) + ": 她很喜欢自己的衣服（奢华的生活）。\n"
 
             if description:
                 return mood_change, mood_factors
@@ -4216,7 +4205,7 @@ init -2 python:
 
                     details[r] = str(round_int((100.0 * self.get_log(root + "_" + r, days) / self.get_log(root + "_score_base", days))))
 
-                ttip = "完美: " + details["perfect"] + "%" + "           平均: " + details["average"] + "%" + "\n非常好: " + details["very good"] + "%" + "      糟糕: " + details["bad"] + "%" + "\n不错: " + details["good"] + "%" + "              非常糟糕: " + details["very bad"] + "%"
+                ttip = "完美：" + details["perfect"] + "%" + "           平均：" + details["average"] + "%" + "\n非常好：" + details["very good"] + "%" + "      糟糕：" + details["bad"] + "%" + "\n不错：" + details["good"] + "%" + "              非常糟糕：" + details["very bad"] + "%"
 
                 return round(perf, 1), ttip
 
@@ -4493,7 +4482,7 @@ init -2 python:
             else:
                 self.recent_events[type].description = self.recent_events[type].base_description
 
-            if debug_mode: renpy.notify("\n训练" + type + "...")
+            if debug_mode: renpy.notify("\n训练" + type + "……")
 
             return
 
@@ -4874,7 +4863,7 @@ init -2 python:
                 if dialogue_dict[topic][self.personality.name]:
                     return get_dialogue(topic, self.personality.name)
                 else:
-                    return Dialogue(event_color["bad"] % topic + " <未找到个性对话: " + self.personality.name + ">")
+                    return Dialogue(event_color["bad"] % topic + " <未找到个性对话：" + self.personality.name + ">")
 
             available_dialogue = []
 
@@ -4920,7 +4909,7 @@ init -2 python:
                     renpy.call(self.custom_dialogue_label, girl=self, topic=topic)
                     return # Probably unnecessary, but better to be safe
                 else:
-                    renpy.say(event_color["bad"] % "System", "标签: {color=[c_red]}%s{/color}不存在 (自定义女孩: {color=[c_red]}%s/_BK.ini{/color})." % (self.custom_dialogue_label, self.path))
+                    renpy.say(event_color["bad"] % "System", "标签：{color=[c_red]}%s{/color}不存在 (自定义女孩: {color=[c_red]}%s/_BK.ini{/color})." % (self.custom_dialogue_label, self.path))
 
             dial = self.pick_dialogue(topic)
 
@@ -4986,7 +4975,7 @@ init -2 python:
                         if girlpack_name in self.__pathset: # Controls for duplicate girlpack folders
                             if girlpack_path != self.__path_dict[girlpack_name]:
                                 raise AssertionError, "发现两个名字为'%s'的女孩包:\n%s\n%s\n重命名其中一个以避免冲突。" % (girlpack_name, self.__path_dict[girlpack_name], girlpack_path)
-                                renpy.say("", "退出Ren'Py...{w=1}{nw}")
+                                renpy.say("", "退出Ren'Py……{w=1}{nw}")
                                 renpy.quit()
 
                         else: # __pathset/tuple should be renamed something else since path isn't used anymore

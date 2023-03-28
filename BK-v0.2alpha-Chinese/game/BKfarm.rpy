@@ -282,7 +282,7 @@ init -2 python:
         def resolve(self, type):
 
             girl = self.girl
-            descript = ""
+            descript = "{size=" + str(res_font(14)) + "}"
             changes = defaultdict(int)
             pic = None
             pic_bg = None
@@ -374,7 +374,7 @@ init -2 python:
                         if fight_res == "tie":
                             pic = Picture(path="NPC/gizel/whip1.webp")
                             pic_bg = inst.get_pic()
-                            descript += event_color["a little bad"] % (girl.name + " " + farm_delated_dict[reaction] + "拒绝训练并攻击Gizel了！她被迫使用魔法还击。\n")
+                            descript += event_color["a little bad"] % (girl.name + " " + farm_delated_dict[reaction] + "拒绝训练并攻击吉泽尔了！她被迫使用魔法还击。\n")
                             ev_sound = s_fire
 
                             if dice(6) >= 4:
@@ -403,7 +403,7 @@ init -2 python:
                         elif fight_res: # Girl wins
                             pic = "gizel whip struggling" # Picture(path="NPC/gizel/whip3.webp")
                             pic_bg = inst.get_pic()
-                            descript += event_color["bad"] % (girl.name + " " + farm_related_dict[reaction] + "训练并且在Gizel还没来得及施展魔法就把的她踢倒在地！\n")
+                            descript += event_color["bad"] % (girl.name + " " + farm_related_dict[reaction] + "训练并且在吉泽尔还没来得及施展魔法就把的她踢倒在地！\n")
                             ev_sound = s_crash
 
                             if dice(6) >= 4:
@@ -434,7 +434,7 @@ init -2 python:
                         else: # Gizel wins
                             pic = "gizel whip happy" # Picture(path="NPC/gizel/whip2.webp")
                             pic_bg = inst.get_pic()
-                            descript += event_color["good"] % (girl.name + " " + farm_related_dict[reaction] + "训练并试图反击，但Gizel 用一个束缚咒语轻易地制服了她.\n")
+                            descript += event_color["good"] % (girl.name + " " + farm_related_dict[reaction] + "训练并试图反击，但吉泽尔用一个束缚咒语轻易地制服了她.\n")
                             ev_sound = s_spell
 
                             if dice(6) >= 4:
@@ -452,13 +452,13 @@ init -2 python:
                             calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "rebel subdued"]))
                     else:
 
-                        descript += event_color["a little bad"] % (girl.name + " " + reaction + "了训练并反抗了Gizel。\n")
+                        descript += event_color["a little bad"] % (girl.name + " " + reaction + "了训练并反抗了吉泽尔。\n")
 
                         if dice(6) >= 3:
                             pic = "gizel whip angry"# Picture(path="NPC/gizel/whip1.webp")
                             pic_bg = inst.get_pic()
                             ev_sound = s_punch
-                            descript += event_color["fear"] %  ("Gizel被她的无礼所激怒，狠狠地打了她一顿。")
+                            descript += event_color["fear"] %  ("吉泽尔被她的无礼所激怒，狠狠地打了她一顿。")
                             changes["fear"] += dice(3)
                             changes["obedience"] += dice(3)
                             changes["energy"] -= 10
@@ -466,7 +466,7 @@ init -2 python:
 
                         else:
                             pic = farm.pen_pic
-                            descript += event_color["a little bad"] % ("Gizel失去了兴趣，让她自生自灭。")
+                            descript += event_color["a little bad"] % ("吉泽尔失去了兴趣，让她自生自灭。")
                             changes["obedience"] -= 1
                             changes["energy"] += 10
                             farm.locked_girls.append(girl)
@@ -480,10 +480,10 @@ init -2 python:
                     if reaction == "accepted":
                         descript += girl.name + "没有抱怨，走进了" + farm_related_dict[self.installation.name] + "进行训练。"
                     elif reaction == "resisted":
-                        descript += girl.name + "又哭又闹，但Gizel不管那么多，嘲笑着把她推进了" + farm_related_dict[self.installation.name] + "。"
+                        descript += girl.name + "又哭又闹，但吉泽尔不管那么多，嘲笑着把她推进了" + farm_related_dict[self.installation.name] + "。"
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "resisted"]))
                     elif reaction == "refused":
-                        descript += girl.name + "大喊大叫，恳求着，但Gizel仍旧把又踢又叫的她拖进了" + self.installation.name + "。"
+                        descript += girl.name + "大喊大叫，恳求着，但吉泽尔仍旧把又踢又叫的她拖进了" + self.installation.name + "。"
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "refused"]))
 
                 # Learn from interaction
@@ -529,7 +529,7 @@ init -2 python:
                     weak = True
 
                     if not farm.knows["weakness"][girl]:
-                        descript += " Gizel注意到" + girl.name + "在" + self.minions[0].type + "面前反应强烈 (" + event_color["fear"] % "发现弱点" + ")。"
+                        descript += " 吉泽尔注意到" + girl.name + "在" + self.minions[0].type + "面前反应强烈 (" + event_color["fear"] % "发现弱点" + ")。"
                         farm.knows["weakness"][girl] = farm_installations_dict[girl.weakness]
 
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_discovered_weakness", call_args=[girl]))
@@ -537,9 +537,9 @@ init -2 python:
                     else:
                         MC.evil += 0.2
                         if girl.get_effect("special", "all farm weaknesses"):
-                            descript += " Gizel知道" + girl.name + "面对" + event_color["fear"] % "农场里的所有奴仆都软弱无力" + ", 就直接利用这一点来对付她。"
+                            descript += " 吉泽尔知道" + girl.name + "面对" + event_color["fear"] % "农场里的所有奴仆都软弱无力" + ", 就直接利用这一点来对付她。"
                         else:
-                            descript += " Gizel知道 " + girl.name + "在面对" + event_color["fear"] % ("" + girl.weakness) + "时特别软弱, 就直接利用这一点来对付她。"
+                            descript += " 吉泽尔知道 " + girl.name + "在面对" + event_color["fear"] % ("" + girl.weakness) + "时特别软弱, 就直接利用这一点来对付她。"
                 else:
                     weak = False
 
@@ -550,7 +550,7 @@ init -2 python:
 
                     if not self.act in farm.knows["amb_acts"][girl]:
                         ev_sound = s_spell
-                        descript += " " + girl.name + "特别紧张和困惑。" + event_color["average"] % ("Gizel发现她对" + long_act_description[self.act] + "感到很矛盾。")
+                        descript += " " + girl.name + "特别紧张和困惑。" + event_color["average"] % ("吉泽尔发现她对" + long_act_description[self.act] + "感到很矛盾。")
                         girl.personality_unlock[self.act] = True
                         farm.knows["amb_acts"][girl].append(self.act)
                     else:
@@ -561,7 +561,7 @@ init -2 python:
 
                     if not self.act in farm.knows["pos_acts"][girl]:
                         ev_sound = s_spell
-                        descript += " " + girl.name + "的脸发红，呼吸急促，乳头明显挺直了。" + event_color["good"] % ("Gizel发现她喜欢" + long_act_description[self.act] + "这个行感到痴迷。")
+                        descript += " " + girl.name + "的脸发红，呼吸急促，乳头明显挺直了。" + event_color["good"] % ("吉泽尔发现她喜欢" + long_act_description[self.act] + "这个行感到痴迷。")
                         girl.personality_unlock[self.act] = True
                         farm.knows["pos_acts"][girl].append(self.act)
                     else:
@@ -572,7 +572,7 @@ init -2 python:
                     changes["fear"] += 1
                     if not self.act in farm.knows["neg_acts"][girl]:
                         ev_sound = s_spell
-                        descript += " " + girl.name + "既紧张又不合作，对整个过程都很恐惧。" + event_color["a little bad"] % ("Gizel发现她不喜欢" + long_act_description[self.act] + "。")
+                        descript += " " + girl.name + "既紧张又不合作，对整个过程都很恐惧。" + event_color["a little bad"] % ("吉泽尔发现她不喜欢" + long_act_description[self.act] + "。")
                         girl.personality_unlock[self.act] = True
                         farm.knows["neg_acts"][girl].append(self.act)
                     else:
@@ -588,12 +588,12 @@ init -2 python:
                     changes["mood"] += 1
                     changes["libido"] += 1
                     if not fix in farm.knows["pos_fix"][girl]:
-                        descript += " 在训练中，Gizel发现了" + girl.name + "的一个癖好 (" + event_color["good"] % fix.name + ")!"
+                        descript += " 在训练中，吉泽尔发现了" + girl.name + "的一个癖好 (" + event_color["good"] % fix.name + ")!"
                         girl.personality_unlock[fix.name] = True
                         farm.knows["pos_fix"][girl].append(self.act)
                         test_achievement("pos fixations")
                     else:
-                        descript += " 训练更有效了，因为Gizel利用了" + girl.name + "对" + event_color["good"] % fix.name + "的痴迷这一点来对付她。"
+                        descript += " 训练更有效了，因为吉泽尔利用了" + girl.name + "对" + event_color["good"] % fix.name + "的痴迷这一点来对付她。"
 
                 elif fix.name in [f.name for f in girl.neg_fixations]:
                     training_modifier += 1
@@ -601,12 +601,12 @@ init -2 python:
                     changes["mood"] -= 1
                     changes["fear"] += 1
                     if not fix in farm.knows["neg_fix"][girl]:
-                        descript += " 在训练中，Gizel发现了" + girl.name + "真的很讨厌一些事 (" + event_color["fear"] % fix.name + ")。"
+                        descript += " 在训练中，吉泽尔发现了" + girl.name + "真的很讨厌一些事 (" + event_color["fear"] % fix.name + ")。"
                         girl.personality_unlock[fix.name] = True
                         farm.knows["neg_fix"][girl].append(self.act)
                         test_achievement("neg fixations")
                     else:
-                        descript += " 训练更有效了，因为Gizel利用了" + girl.name + "讨厌" + event_color["fear"] % fix.name + "这一点来对付她。"
+                        descript += " 训练更有效了，因为吉泽尔利用了" + girl.name + "讨厌" + event_color["fear"] % fix.name + "这一点来对付她。"
 
 
                 # Determine result
@@ -643,8 +643,8 @@ init -2 python:
                 if self.act in ("sex", "group"):
                     if girl.pop_virginity(origin="farm"):
                         changes["obedience"] += 2 + dice(6)
-                        descript += "\n{color=[c_lightred]}" + girl.name + "被" + article(rand_choice(minion_adjectives[self.minions[0].type])) + "" + self.minions[0].type + "夺取了一血！{/color}"
-                        log.add_report("{color=[c_lightred]}" + girl.fullname + "被" + article(rand_choice(minion_adjectives[self.minions[0].type])) + "" + self.minions[0].type + "夺取了贞操！{/color}")
+                        descript += "\n{color=[c_lightred]}" + girl.name + "被" + article(rand_choice(minion_adjectives[self.minions[0].type])) + "" + self.minions[0].type + "夺走了贞操！{/color}"
+                        log.add_report("{color=[c_lightred]}" + girl.fullname + "被" + article(rand_choice(minion_adjectives[self.minions[0].type])) + "" + self.minions[0].type + "夺走了贞操！{/color}")
 
 
                 # Stat changes
@@ -776,13 +776,13 @@ init -2 python:
                         descript += event_color["bad"] % (girl.fullname + "今天受伤了，不得不在她的圈栏里休息。\n")
                     elif girl.energy <= 0:
                         descript += event_color["bad"] % (girl.fullname + "今天累坏了，不得不在她的圈栏里休息。\n")
-                    descript += event_color["average"] % (girl.fullname + "看起来很累，所以Gizel今天把她留在圈栏里养伤 (作息规则：" + farm_related_dict[self.resting] + ")\n")
+                    descript += event_color["average"] % (girl.fullname + "看起来很累，所以吉泽尔今天把她留在圈栏里养伤（作息规则：" + farm_related_dict[self.resting] + "）\n")
 
                 elif self.inst_full:
                     descript += event_color["a little bad"] % ("没有足够的奴仆来训练她，所以" + girl.fullname + "今天只是待在她的圈栏里。\n")
 
                 elif self.refused:
-                    descript += event_color["bad"] % (girl.fullname + "今天不肯接受训练，所以Gizel只好把她留在自己的圈栏里") + " (训练模式：{i}" + farm_related_dict[self.mode] + "{/i})\n"
+                    descript += event_color["bad"] % (girl.fullname + "今天不肯接受训练，所以吉泽尔只好把她留在自己的圈栏里") + "（训练模式：{i}" + farm_related_dict[self.mode] + "{/i}）\n"
 
                 stat = ""
                 text1, text_changes = girl.rest(context="farm")
@@ -819,7 +819,7 @@ init -2 python:
                     descript += event_color["a little bad"] % ("没有足够的奴仆来训练她，所以" + girl.fullname + "今天只是待在她的圈栏里")
 
                 elif self.refused:
-                    descript += event_color["bad"] % (girl.fullname + " 今天不肯接受训练，所以Gizel只好把她留在自己的圈栏里") + "(训练模式：{i}" + self.mode + "{/i})"
+                    descript += event_color["bad"] % (girl.fullname + " 今天不肯接受训练，所以吉泽尔只好把她留在自己的圈栏里") + "（训练模式：{i}" + self.mode + "{/i}）"
 
                 else:
                     descript += girl.fullname + "今天就在农场休息"
@@ -845,7 +845,7 @@ init -2 python:
                     brk, new_pref = girl.raise_preference(act, status_change=True)
                     pic = girl.get_pic(act, not_tags=all_sex_acts+["group"])
                     descript += farm_description["holding " + self.holding + " good"] % girl.name
-                    text_changes += "\n\n" + girl_related_dict[act.capitalize()] + ": "
+                    text_changes += "\n\n" + girl_related_dict[act.capitalize()] + "："
 
                     if brk > 0:
                         text_changes += "{color=[c_green]}"
@@ -974,7 +974,7 @@ init -2 python:
             if self.pens >= self.get_pen_limit():
                 return False, "你现在不能再扩大农场了。这会引起人们对我们的注意……"
             elif MC.gold < self.get_pen_cost():
-                return False, "你没有足够的金币! 别再浪费我的时间了。"
+                return False, "你没有足够的金币！别再浪费我的时间了。"
             elif renpy.call_screen("yes_no", "你真的想给农场添置圈栏而花费 " + str(farm.get_pen_cost()) + " 金币吗？"):
                 MC.gold -= self.get_pen_cost()
                 self.pens += 1
@@ -1102,7 +1102,7 @@ init -2 python:
                 if farm.test_resting_conditions(girl):
                     prog.tired = True
                     resting_girls.append(girl)
-                    if logging: log.add_report(girl.fullname + "太累了，Gizel让她休息 (作息规则：" + self.programs[girl].resting + ")。")
+                    if logging: log.add_report(girl.fullname + "太累了，吉泽尔让她休息 (作息规则：" + self.programs[girl].resting + ")。")
 #                    renpy.say(girl.name + " is too tired")
 
                 # Holding girls
@@ -1139,7 +1139,7 @@ init -2 python:
 #                            renpy.say("", "Farm knows " + girl.name + " is weak to " + self.knows["weakness"].name)
                             prog.installation = self.installations[self.knows["weakness"][girl]]
                             self.installations[self.knows["weakness"][girl]].girls.append(girl)
-                            if logging: log.add_report(girl.fullname + "被指派到" + farm_related_dict[prog.installation.name] + "因为Gizel知道她的弱点" + self.knows["weakness"][girl] + "。")
+                            if logging: log.add_report(girl.fullname + "被指派到" + farm_related_dict[prog.installation.name] + "因为吉泽尔知道她的弱点" + self.knows["weakness"][girl] + "。")
                         else:
 #                            renpy.say("", "Farm doesn't know " + girl.name + " 's weakness.")
                             unassigned.append(girl)
@@ -1222,7 +1222,7 @@ init -2 python:
             if prog.target == "no training":
                 prog.act = None
                 if debug_mode:
-                    renpy.say("", "警告：没有在训练")
+                    renpy.say("", "警告: 没有在训练")
                 return False
             elif prog.target != "auto":
                 prog.act = prog.target

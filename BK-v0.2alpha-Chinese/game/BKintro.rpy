@@ -2140,7 +2140,7 @@ label brothel_first_time:
     show screen brothel()
     with dissolve
 
-    $ renpy.say(gio, "Which one of the common rooms do you want me to repair?", interact = False)
+    $ renpy.say(gio, "你想让我修复哪个公共房间？", interact = False)
 
     $ mychoice = ""
 

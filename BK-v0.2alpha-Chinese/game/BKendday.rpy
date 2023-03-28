@@ -8,12 +8,12 @@
 
 ## DICE IMAGES ##
 
-image img_dice1 = ProportionalScale("UI/dice1.webp", 20, 20)
-image img_dice2 = ProportionalScale("UI/dice2.webp", 20, 20)
-image img_dice3 = ProportionalScale("UI/dice3.webp", 20, 20)
-image img_dice4 = ProportionalScale("UI/dice4.webp", 20, 20)
-image img_dice5 = ProportionalScale("UI/dice5.webp", 20, 20)
-image img_dice6 = ProportionalScale("UI/dice6.webp", 20, 20)
+image img_dice1 = ProportionalScale("UI/dice1.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
+image img_dice2 = ProportionalScale("UI/dice2.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
+image img_dice3 = ProportionalScale("UI/dice3.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
+image img_dice4 = ProportionalScale("UI/dice4.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
+image img_dice5 = ProportionalScale("UI/dice5.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
+image img_dice6 = ProportionalScale("UI/dice6.webp", int(config.screen_height*0.0278), int(config.screen_height*0.0278))
 
 #### END DAY ####
 
@@ -133,7 +133,7 @@ label end_day:
                 else:
                     # Sanity check
                     if girl.job == "whore" and not girl.does_anything():
-                        renpy.say("", "[girl.fullname]不能从事妓女工作，因为她拒绝做任何性行为。")
+                        renpy.say("", "[girl.fullname] 拒绝做任何性行为，因此无法当妓女。")
                         working_girls.remove(girl)
                         striking_girls.append(girl)
                         girl.add_log("work_days", -1)

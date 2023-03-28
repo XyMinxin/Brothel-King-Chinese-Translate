@@ -53,7 +53,7 @@ label help(scr):
                             menu_list += mod.help_prompts
 
                 if menu_list:
-                    $ menu_list.append(("Cancel", "back"))
+                    $ menu_list.append(("取消", "back"))
 
                     $ target_label = menu(menu_list)
 
@@ -1084,7 +1084,7 @@ label help_about_game:
 """
 
             $ text3 = """顺便说一下，任何人都可以自由地修改代码，修改任何你喜欢的关于这个游戏的东西，虽然有一个严肃的警告。我不是程序员，我把这个项目作为一个机会来教自己使用ren'py和python进行编码。因此，这个游戏写得很差，有很多多余的和糟糕的代码。
-如果我可以的话，我会重新开始并清理一切，但恐怕我暂时没有时间和精力去做。所以，如果你真的看了下引擎盖，那么祝你好运，还有，呃，对不起......
+如果我可以的话，我会重新开始并清理一切，但恐怕我暂时没有时间和精力去做。所以，如果你真的看了下引擎盖，那么祝你好运，还有，呃，对不起……"
 
 请通过[URL]与我联系，以获得反馈、批评、错误报告等。
 """
@@ -1811,7 +1811,7 @@ label cheat_menu():
                         l = []
                         for g in game.free_girls:
                             l.append(g.fullname + " (id: " + str(g.id) + ")")
-                        renpy.say("", "自由女孩: " + and_text(l))
+                        renpy.say("", "自由女孩：" + and_text(l))
 
                 "Back":
                     jump cheat_menu
@@ -1878,7 +1878,7 @@ label cheat_menu():
                     python:
                         if untagged_pics:
                             for p in untagged_pics:
-                                renpy.say("", "Couldn't tag " + p)
+                                renpy.say("", "无法标记 " + p)
                         else:
                             "No picture found missing a tag"
 
@@ -1887,7 +1887,7 @@ label cheat_menu():
                         for tag in tag_dict.keys():
                             for tag2 in tag_dict.keys():
                                 if tag in tag2 and tag != tag2:
-                                    renpy.say("", "警告: " + tag + " is in " + tag2 + ".")
+                                    renpy.say("", "警告：" + tag + " 在 " + tag2 + " 中。")
 
         "Others":
 
@@ -2355,7 +2355,7 @@ label test_perks:
             for perk in l:
                 menu_list.append((perk.archetype + " - " + perk.name + "(" + str(choice_dict[perk]) + ")", perk))
 
-            menu_list.append(("COMMIT", "commit"))
+            menu_list.append(("提交", "commit"))
 
             result = long_menu("Choose perks to test", menu_list)
 
@@ -2573,122 +2573,122 @@ screen perk_test_results(days, girls, girls2, girl_stats):
                 for d in days:
                     text str(int(d))
 
-                text "Gold made-Test" size 14 yalign 0.5
+                text "Gold made-Test" size res_font(14) yalign 0.5
 
                 for d in days:
-                    text str(int(get_test_total(girls, d, "income")-get_test_total(girls, d, "upkeep"))) size 14 yalign 0.5
+                    text str(int(get_test_total(girls, d, "income")-get_test_total(girls, d, "upkeep"))) size res_font(14) yalign 0.5
 
                 for g in girls:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(get_test_total(g, d, "income")-get_test_total(g, d, "upkeep"))) size 12 yalign 0.5
+                        text str(int(get_test_total(g, d, "income")-get_test_total(g, d, "upkeep"))) size res_font(12) yalign 0.5
 
-                text "Gold made-Ctrl" size 14 yalign 0.5
+                text "Gold made-Ctrl" size res_font(14) yalign 0.5
 
                 for d in days:
-                    text str(int(get_test_total(girls2, d, "income")-get_test_total(girls2, d, "upkeep"))) size 12 yalign 0.5
+                    text str(int(get_test_total(girls2, d, "income")-get_test_total(girls2, d, "upkeep"))) size res_font(12) yalign 0.5
 
                 for g in girls2:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(get_test_total(g, d, "income")-get_test_total(g, d, "upkeep"))) size 12 yalign 0.5
+                        text str(int(get_test_total(g, d, "income")-get_test_total(g, d, "upkeep"))) size res_font(12) yalign 0.5
 
-                text "Gold adv." size 14 yalign 0.5 color c_green
+                text "Gold adv." size res_font(14) yalign 0.5 color c_green
 
                 for d in days:
-                    text str(int(get_test_advantage(girls, girls2, d, "income"))) + "%" size 14 yalign 0.5
+                    text str(int(get_test_advantage(girls, girls2, d, "income"))) + "%" size res_font(14) yalign 0.5
 
                 text ""
                 for d in days:
                     text ""
 
-                text "Stats-Test" size 14 yalign 0.5
+                text "Stats-Test" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_total(girls, d, "stat_total"))) size 14 yalign 0.5
+                    text str(int(get_test_total(girls, d, "stat_total"))) size res_font(14) yalign 0.5
 
                 for g in girls:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["stat_total"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["stat_total"])) size res_font(12) yalign 0.5
 
-                text "Stats-Ctrl" size 14 yalign 0.5
+                text "Stats-Ctrl" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_total(girls2, d, "stat_total"))) size 14 yalign 0.5
+                    text str(int(get_test_total(girls2, d, "stat_total"))) size res_font(14) yalign 0.5
 
                 for g in girls2:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["stat_total"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["stat_total"])) size res_font(12) yalign 0.5
 
-                text "Stat adv." size 14 yalign 0.5 color c_green
+                text "Stat adv." size res_font(14) yalign 0.5 color c_green
                 for d in days:
-                    text str(int(get_test_advantage(girls, girls2, d, "stat_total"))) + "%" size 14 yalign 0.5
+                    text str(int(get_test_advantage(girls, girls2, d, "stat_total"))) + "%" size res_font(14) yalign 0.5
 
                 text ""
                 for d in days:
                     text ""
 
-                text "Level-Test" size 14 yalign 0.5
+                text "Level-Test" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_average(girls, d, "level"))) size 14 yalign 0.5
+                    text str(int(get_test_average(girls, d, "level"))) size res_font(14) yalign 0.5
 
                 for g in girls:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["level"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["level"])) size res_font(12) yalign 0.5
 
-                text "Level-Ctrl" size 14 yalign 0.5
+                text "Level-Ctrl" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_average(girls2, d, "level"))) size 14 yalign 0.5
+                    text str(int(get_test_average(girls2, d, "level"))) size res_font(14) yalign 0.5
 
                 for g in girls2:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["level"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["level"])) size res_font(12) yalign 0.5
 
                 text ""
                 for d in days:
                     text ""
 
-                text "Rank-Test" size 14 yalign 0.5
+                text "Rank-Test" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(round(get_test_average(girls, d, "rank"),2)) size 14 yalign 0.5
+                    text str(round(get_test_average(girls, d, "rank"),2)) size res_font(14) yalign 0.5
 
                 for g in girls:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["rank"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["rank"])) size res_font(12) yalign 0.5
 
-                text "Rank-Ctrl" size 14 yalign 0.5
+                text "Rank-Ctrl" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(round(get_test_average(girls2, d, "rank"),2)) size 14 yalign 0.5
+                    text str(round(get_test_average(girls2, d, "rank"),2)) size res_font(14) yalign 0.5
 
                 for g in girls2:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["rank"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["rank"])) size res_font(12) yalign 0.5
 
                 text ""
                 for d in days:
                     text ""
 
-                text "Rep-Test" size 14 yalign 0.5
+                text "Rep-Test" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_average(girls, d, "rep"))) size 14 yalign 0.5
+                    text str(int(get_test_average(girls, d, "rep"))) size res_font(14) yalign 0.5
 
                 for g in girls:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["rep"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["rep"])) size res_font(12) yalign 0.5
 
-                text "Rep-Ctrl" size 14 yalign 0.5
+                text "Rep-Ctrl" size res_font(14) yalign 0.5
                 for d in days:
-                    text str(int(get_test_average(girls2, d, "rep"))) size 14 yalign 0.5
+                    text str(int(get_test_average(girls2, d, "rep"))) size res_font(14) yalign 0.5
 
                 for g in girls2:
-                    text g.name size 12 yalign 0.5
+                    text g.name size res_font(12) yalign 0.5
                     for d in days:
-                        text str(int(girl_stats[g][d]["rep"])) size 12 yalign 0.5
+                        text str(int(girl_stats[g][d]["rep"])) size res_font(12) yalign 0.5
 
             text ""
 

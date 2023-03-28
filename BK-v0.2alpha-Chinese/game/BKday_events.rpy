@@ -68,7 +68,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Demean her":
-                        $ MC.rand_say(("ev: 你在干什么，你这个愚蠢的婊子？你的身体是用来做爱的，不是用来玩游戏的！别在这浪费你精力！", "哼。我希望你能把同样的精力放在为客户服务上。", "嘿！如果你起得早，你应该给我准备早餐，而不是做这些无意义的运动。", "ev: 哼。妓女身上的肌肉就像男人身上的奶子：毫无用处。", "玩得开心吗？你不应该用这些时间做一些更有用的事情吗？"))
+                        $ MC.rand_say(("ev: 你在干什么，你这个愚蠢的婊子？你的身体是用来做爱的，不是用来玩游戏的！别在这浪费你精力！", "哼。我希望你能把同样的精力放在为客户服务上。", "嘿！如果你起得早，你应该给我准备早餐，而不是做这些无意义的运动。", "ev: 哼。妓女身上的肌肉就像男人身上的奶子: 毫无用处。", "玩得开心吗？你不应该用这些时间做一些更有用的事情吗？"))
 
                         if girl.is_("dom"):
                             girl.char "You bastard..."
@@ -99,7 +99,7 @@ label random_morning_events():
 
                 girl.char "Oh! Master [MC.name]."
 
-                show screen show_event(girl.get_pic("obedience", "maid", "profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                show screen show_event(girl.get_pic("maid", "obedience", "profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
                 if stat >= 200:
@@ -134,7 +134,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Reject her":
-                        $ MC.rand_say(("ev: 别挡着我的路，你这个肮脏的奴隶! 我没有时间和你这样的精液垃圾浪费。", "如果我需要你，我会直接命令你。我不希望你问一些无聊的问题！", "难道你不知道奴隶不能直呼她的主人名字吗？如果我需要你服务，我会派人去找你。"))
+                        $ MC.rand_say(("ev: 别挡着我的路，你这个肮脏的奴隶！我没有时间和你这样的精液垃圾浪费。", "如果我需要你，我会直接命令你。我不希望你问一些无聊的问题！", "难道你不知道奴隶不能直呼她的主人名字吗？如果我需要你服务，我会派人去找你。"))
 
                         if girl.is_("sub"):
                             girl.char "I... I understand. I'm sorry..."
@@ -179,7 +179,7 @@ label random_morning_events():
 
                             $ result = "pos"
 
-                            $ pic = girl.get_fix_pic("service", fix_dict["oral"], not_tags=["group", "bisexual"])
+                            $ pic = girl.get_fix_pic("service", fix_dict["oral"], and_tags=["maid"], not_tags=["group", "bisexual", "cumshot"])
                             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                             with dissolve
 
@@ -205,7 +205,7 @@ label random_morning_events():
 
                             "Suddenly, the hot feeling of her tongue running the length of your shaft becomes too much, and you release a wad of cum inside her mouth."
 
-                            $ pic = girl.get_fix_pic("service", fix_dict["cum in mouth"], not_tags=["group", "bisexual"])
+                            $ pic = girl.get_fix_pic("service", fix_dict["cum in mouth"], and_tags=["maid"], not_tags=["group", "bisexual"])
                             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
                             with doubleflash
@@ -310,7 +310,7 @@ label random_morning_events():
 
                         if ev_type == "sensitivity":
 
-                            show screen show_event(girl.get_pic("rest", soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                            show screen show_event(girl.get_pic("rest", and_tags=["sub"],  not_tags=["mast", "orgasm"], soft=True, naked_filter=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                             with dissolve
 
                             if girl.is_("dom"):
@@ -339,6 +339,11 @@ label random_morning_events():
 
                                 girl.char "Oh..."
 
+                                $ pic = girl.get_pic("kiss", "fondle", "rest", and_tags=["fondle"], not_tags=["group", "bisexual", "mast", "orgasm"], and_priority=False, soft=True, naked_filter=True)
+
+                                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                                with dissolve
+
                                 "She blushes, but doesn't turn away from you. Instead, she leans in and kisses you."
 
                                 girl.char "Oh, [MC.name]... *kiss*"
@@ -346,9 +351,6 @@ label random_morning_events():
                                 play sound s_sucking
 
                                 "You respond in kind, and before long, both of you are fondling each other tenderly."
-
-                                show screen show_event(girl.get_pic("kiss", "fondle", "rest", not_tags=["group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-                                with dissolve
 
                                 "After enjoying each other for a while, you both sleep late in the morning, before [girl.name] leaves discreetly."
 
@@ -455,7 +457,7 @@ label random_morning_events():
                                 girl.char "Oh, Master, I've been a bad girl... I want you to hurt me..."
 
                             if act != "sex":
-                                show screen show_event(girl.get_pic(act, "naked", not_tags=["group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                                show screen show_event(girl.get_pic(act, "naked", not_tags=["group", "bisexual", "cumshot"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                                 with fade
 
                             if act == "service":
@@ -469,7 +471,7 @@ label random_morning_events():
                                     with fade
                                     "It's [girl.name]'s first time, but she is already very wet. She moans with pleasure as you enter her pussy."
                                 else:
-                                    show screen show_event(girl.get_pic(act, "naked", not_tags=["group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                                    show screen show_event(girl.get_pic(act, "naked", not_tags=["group", "bisexual", "cumshot"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                                     with fade
 
                                 girl.char "Oh, yes, Master... My pussy feels so hot..."
@@ -490,7 +492,15 @@ label random_morning_events():
                             play sound s_orgasm_fast
                             with doubleflash
 
-                            "You spend the rest of the night enjoying yourself with [girl.name]. When she finally leaves your room, the sun is already high up, but you haven't gotten any sleep."
+                            if act == "fetish":
+                                show screen show_event(girl.get_pic("orgasm", and_tags=["fetish"], not_tags=[ "group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
+                            else:
+                                show screen show_event(girl.get_pic(act, and_tags=["cumshot"], not_tags=[ "group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
+                            "You spend the rest of the night enjoying yourself with [girl.name]."
+
+                            "When she finally leaves your room, the sun is already high up, but you haven't gotten any sleep."
 
                             hide screen show_event
                             with fade
@@ -843,7 +853,7 @@ label random_night_girl_event(girl, room):
                         "Ignoring her resistance, you force her to remove her clothes. She looks mortified."
                         $ girl.change_fear(2)
 
-                show screen show_event(girl.get_pic("profile", and_tags="naked", soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                show screen show_event(girl.get_pic("naked", "profile", and_tags="profile", soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
                 you "Hmm... Turn around..."
@@ -853,6 +863,9 @@ label random_night_girl_event(girl, room):
                 $ attitude = girl.get_sex_attitude("naked") + girl.get_love() - girl.get_fear()
 
                 if attitude > 100:
+                    show screen show_event(girl.get_pic("naked", and_tags=["libido", "profile"], soft=True), x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                     "She blushes as you look at her private parts, her nipples perking up as she gets aroused by the experience."
                     $ changed_stats = [("sensitivity", dice(3)+2)]
 
@@ -860,6 +873,9 @@ label random_night_girl_event(girl, room):
                     "She submits to your inspection, blushing and looking away as you give her a thorough examination."
                     $ changed_stats = [("sensitivity", dice(3))]
                 else:
+                    show screen show_event(girl.get_pic("naked", and_tags=["sad", "profile"], soft=True), x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                     "Upset and ashamed, she tries her best to hide her sensitive parts with her hands as you look at her with hungry eyes."
                     $ changed_stats = [("sensitivity", -1*dice(3)), ("obedience", dice(3))]
 
@@ -985,7 +1001,11 @@ label random_night_girl_event(girl, room):
         girl.char "M-Master, you... I'm sorry I'm late, [excuse], and..."
 
         if (girl.is_("very lewd") and girl.get_stat("libido") >= 75) or (girl.is_("lewd") and girl.get_stat("libido") >= 150):
+            show screen show_event(girl.get_pic("libido", and_tags=["profile"], soft=True, naked_filter=True), x=config.screen_width, y=int(config.screen_height*0.8))
+            with dissolve
+
             "You notice her clothes are in disarray, and her skin is glistening with sweat. She's got the smell of sex all over her. Clearly, she's been fooling around..."
+
         else:
             "She seems to be telling the truth."
 
@@ -1096,7 +1116,7 @@ label random_night_girl_event(girl, room):
 
                         with fade
 
-                        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["public"], not_tags=["group", "bisexual"])
+                        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["public"], not_tags=["group", "bisexual", "cumshot"])
 
                         if fix == "handjobs":
                             "She kneels beside the door, welcoming her first customer by unbuckling his pants."
@@ -1519,11 +1539,11 @@ label random_night_girl_event(girl, room):
 
         "You spot [girl.fullname] as she gets on stage, speaking a few words to usher the customers in."
 
-        show screen show_event(girl.get_pic("profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+        show screen show_event(girl.get_pic("profile", and_tags=["dancer"], naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
         girl.char "Ladies and gentlemen, please be seated..."
 
-        "The crowd is already warmed up with spices and alcohol, and greet [girl.name] with loud jeers and obscene jokes."
+        "The crowd is already warmed up with spices and alcohol, and greets [girl.name] with loud jeers and obscene jokes."
 
         menu:
             "What do you do?"
@@ -1968,7 +1988,7 @@ label random_night_girl_event(girl, room):
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
-        "You spot [girl.fullname] lazily bathing in one of the pools. As you approach, you can hear her snore noisily."
+        "You spot [girl.fullname] lazily bathing in one of the pools. As you approach, you can even hear her snore noisily."
 
         you "Slacking off on the job, uh..."
 
@@ -2277,7 +2297,8 @@ label random_night_girl_event(girl, room):
 
                             girl.char "Aaah!"
 
-                            $ pic = girl.get_fix_pic(fix=fix_dict["fondling her boobs"], and_tags="masseuse", naked_filter=True, not_tags=all_sex_acts + ["group", "bisexual"])
+                            $ pic = girl.get_fix_pic(fix=fix_dict["fondling her boobs"], and_tags=["swimsuit", "masseuse"], naked_filter=True, not_tags=all_sex_acts + ["group", "bisexual"])
+
                             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                             with fade
 
@@ -2417,6 +2438,9 @@ label random_night_girl_event(girl, room):
 
         "Speaking of which, you realize none of the geishas are ready to greet the customer yet. You only see [girl.fullname], walking across the tatami floor [text1]."
 
+        show screen show_event(girl.get_pic("profile", not_tags=["geisha", "swim", "beach"], naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+        with fade
+
         you "Hey! [girl.name]!"
 
         girl.char "Uh? Master?"
@@ -2444,8 +2468,7 @@ label random_night_girl_event(girl, room):
 
                     play sound s_dress
 
-                $ pic = girl.get_pic("geisha", and_tags = ["naked", "strip"], and_priority=False, soft=True)
-                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                show screen show_event(girl.get_pic("strip", "naked", and_tags = ["profile"], not_tags=["geisha"], and_priority=False, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with fade
 
                 girl.char "So... What should I be wearing? *blush*"
@@ -2570,6 +2593,11 @@ label random_night_girl_event(girl, room):
 
                 "[girl.name] joins you right on time to announce the show, all suited up as a geisha. You think about the more unusual plays you know. Which one could placate this snotty audience?"
 
+                $ bead_pic = girl.get_pic("beads", and_tags=["geisha"])
+                $ fist_pic = girl.get_pic("fist", and_tags=["geisha"])
+                $ milk_pic = girl.get_pic("lactation", and_tags=["geisha"])
+                $ enema_pic = girl.get_pic("enema", and_tags=["geisha"])
+
                 menu:
                     "Which show do you want [girl.name] to put on display?"
 
@@ -2580,8 +2608,7 @@ label random_night_girl_event(girl, room):
 
                         girl.char "Yes, Master."
 
-                        $ pic = girl.get_pic("sing", and_tags=["geisha"], soft=True)
-                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+                        show screen show_event(girl.get_pic("sing", and_tags=["geisha"], soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                         with fade
 
                         "[girl.char] brings out a traditional instrument called a koto, which she places in front of the audience."
@@ -2703,7 +2730,7 @@ label random_night_girl_event(girl, room):
 
                             "Your brothel reputation has decreased."
 
-                    "Legend of The Seven Pearls (Erotic show featuring anal beads)":
+                    "Legend of The Seven Pearls (Erotic show featuring anal beads)" if bead_pic:
                         $ selected_act = "fetish"
                         $ fix = "beads"
 
@@ -2728,7 +2755,7 @@ label random_night_girl_event(girl, room):
 
                             girl.char "Oh..."
 
-                    "The Howling Banshee (Erotic show featuring fisting)":
+                    "The Howling Banshee (Erotic show featuring fisting)" if fist_pic:
                         $ selected_act = "fetish"
                         $ fix = "fisting"
 
@@ -2754,7 +2781,7 @@ label random_night_girl_event(girl, room):
                         "You hand her a sheet of music. Hesitantly, [girl.name] starts singing about the troubled spirit of the woods."
 
 
-                    "The Most Unusual Tale of Molly, the Dairy Cow (Erotic show featuring lactation)":
+                    "The Most Unusual Tale of Molly, the Dairy Cow (Erotic show featuring lactation)" if milk_pic:
                         $ selected_act = "fetish"
                         $ fix = "lactation"
 
@@ -2783,7 +2810,7 @@ label random_night_girl_event(girl, room):
 
                         girl.char "Wait! Aaah!!!"
 
-                    "The Secret Spring Behind The Forbidden Gate (Erotic show featuring an enema)":
+                    "The Secret Spring Behind The Forbidden Gate (Erotic show featuring an enema)" if enema_pic:
                         $ selected_act = "fetish"
                         $ fix = "enemas"
 
@@ -2889,17 +2916,17 @@ label random_night_girl_event(girl, room):
             for stat, value in changed_stats:
                 girl.change_stat(stat, value)
                 if value > 5:
-                    renpy.say("", "[girl.name]'s [stat] skill has improved a lot.")
+                    renpy.say("", "[girl.name]的[stat]技能大幅提升。")
                 elif value > 2:
-                    renpy.say("", "[girl.name]'s [stat] skill has improved.")
+                    renpy.say("", "[girl.name]的[stat]技能提升了。")
                 elif value > 0:
-                    renpy.say("", "[girl.name]'s [stat] skill has improved a little.")
+                    renpy.say("", "[girl.name]的[stat]技能略有提升。")
                 elif value < -5:
-                    renpy.say("", "[girl.name]'s [stat] skill has decreased a lot.")
+                    renpy.say("", "[girl.name]的[stat]技能大幅下降。")
                 elif value < -2:
-                    renpy.say("", "[girl.name]'s [stat] skill has decreased.")
+                    renpy.say("", "[girl.name]的[stat]技能下降了。")
                 elif value < 0:
-                    renpy.say("", "[girl.name]'s [stat] skill has decreased a little.")
+                    renpy.say("", "[girl.name]的[stat]技能略有下降。")
 
     return
 
@@ -2985,7 +3012,7 @@ label night_girl_perform():
         you "All right, that was fun... Now, get to work."
 
     elif fix == "69":
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
         $ changed_stats = [("service", dice(3)+2), ("libido", dice(3)+2)]
 
         girl.char "You came here to inspect me, I think... Let me inspect you too..."
@@ -3035,6 +3062,10 @@ label night_girl_perform():
 
         play sound s_orgasm
 
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cof"], not_tags=["group", "bisexual"])
+        if pic:
+            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
         with flash
 
         "Unable to resist her earnest technique, you cum hard over her face as she is rocked by a powerful orgasm."
@@ -3051,7 +3082,12 @@ label night_girl_perform():
             $ changed_stats = [("sex", dice(6)+4), ("sensitivity", dice(6)+4)]
             $ lost_virginity = True
         else:
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+            #edit
+#            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["cumshot", "group", "bisexual"])
+            if not pic:
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+###
             $ changed_stats = [("sex", dice(3)+2), ("sensitivity", dice(3)+2)]
             $ lost_virginity = False
 
@@ -3118,12 +3154,17 @@ label night_girl_perform():
 
             $ girl.change_love(1)
 
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cin"], not_tags=["group", "bisexual"])
+
+        if pic:
+            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
         with doubleflash
 
         "You cum inside her, filling her up with hot semen. She shivers and moans as you pop your dick out, cum dripping out of her open pussy."
 
     elif fix == "penis worship":
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
 
         play sound s_sucking
 
@@ -3163,7 +3204,7 @@ label night_girl_perform():
 
 
     elif fix == "irrumatio":
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
 
         play sound s_sucking
 
@@ -3194,7 +3235,11 @@ label night_girl_perform():
 
         "After a few minutes of face-fucking her, you cum inside her throat."
 
-        with flash
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cim"], not_tags=["group", "bisexual"])
+        if pic:
+            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
+        with doubleflash
 
         "[text1]."
 
@@ -3253,7 +3298,7 @@ label night_girl_perform():
             $ pic = girl.get_pic("virgin", "sex", "naked", and_tags=and_tag+fix_dict[fix].tag_list[0], and_priority=False, not_tags=["group", "bisexual"])
             $ lost_virginity = True
         else:
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
             $ lost_virginity = False
 
         if fix == "public acts":
@@ -3355,7 +3400,7 @@ label night_girl_perform():
 
 
     elif punish and fix in ["cowgirl", "femdom", "footjobs"]:
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
 
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
@@ -3423,7 +3468,14 @@ label night_girl_perform():
 
 
     elif fix in ["masturbation", "deep throat", "swallowing", "insults", "dirty sex", "creampie"]:
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["waitress"], not_tags=["group", "bisexual"])
+
+        if fix in ["masturbation", "deep throat", "dirty sex"]:
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["waitress"], not_tags=["group", "bisexual", "cumshot"])
+
+        else:
+            $ pic = girl.get_pic(selected_act, and_tags=and_tag+["waitress"], not_tags=["group", "bisexual", "cumshot"])
+
+
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -3491,6 +3543,12 @@ label night_girl_perform():
 
                 "She brings the customer to his limit, and his dick pops out, shooting thick cum all over her face and chest. The whole tavern cheers."
 
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cof"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                 $ changed_stats = [("constitution", dice(3)), ("service", 2+dice(3))]
                 $ rep_impact = True
 
@@ -3545,6 +3603,13 @@ label night_girl_perform():
                 girl.char "Mmmh..."
 
                 "Expertly, she licks the customer's dick clean from the balls to the tip. She shows him the thick cum on her tongue with a hungry look, before swallowing it all down."
+
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cim"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
 
                 man "Oh, that's great..."
 
@@ -3603,6 +3668,12 @@ label night_girl_perform():
 
                 "It isn't long until the customer reaches his limit, cumming hard inside her wet pussy."
 
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                 with flash
 
                 play sound s_orgasm
@@ -3622,6 +3693,12 @@ label night_girl_perform():
                 with doubleflash
 
                 "Reaching his limit, the customer pops his dick out and shoots his load all over her."
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cob"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
 
                 with flash
 
@@ -3676,6 +3753,13 @@ label night_girl_perform():
                 "The customer quickly cums a huge load of cum inside her, and she screams, rocked by a massive orgasm."
 
                 play sound s_orgasm
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cin"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                 with flash
 
                 girl.char "AHAAAA!!!"
@@ -3693,6 +3777,12 @@ label night_girl_perform():
                 "The customer intensifies his grinding, pinching her nipples and calling her dirty names. Soon, he is close to cumming."
 
                 with flash
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cob"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
 
                 girl.char "Aaaah!!!"
 
@@ -3753,6 +3843,12 @@ label night_girl_perform():
 
                 man "Get ready to be my cum-dump, you little slut-waitress!"
 
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
+
                 with flash
 
                 play sound s_orgasm
@@ -3783,6 +3879,12 @@ label night_girl_perform():
                 man "And now, I'm going to fill you up with my cum."
 
                 girl.char "Wait... I... Aaaaah!!!"
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+                if pic:
+                    show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                    with dissolve
 
                 with flash
 
@@ -4183,7 +4285,7 @@ label night_girl_perform():
 
         "The man starts spitting a wad of saliva right into her asshole. He then places his cock of the entrance of her anus, playfully pushing the tip halfway inside."
 
-        $ pic = girl.get_pic("anal", and_tags = ["big"]+and_tag, not_tags=["bisexual", "group"])
+        $ pic = girl.get_pic("anal", and_tags=and_tag, not_tags=["bisexual", "group"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -4235,6 +4337,13 @@ label night_girl_perform():
 
                     girl.char "I'm... I'm cummiiiing!!!"
 
+                    $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cin"], not_tags=["group", "bisexual"], strict=True)
+                    if not pic:
+                        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+                    if pic:
+                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+
                     with flash
                     play sound s_orgasm
 
@@ -4262,6 +4371,12 @@ label night_girl_perform():
 
                     girl.char "Aaaah!"
 
+                    $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+                    if pic:
+                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+                        with dissolve
+
                     with doubleflash
 
                     "The man cannot take it anymore, and he cums hard inside her tight asshole, filling her stomach up with warm semen."
@@ -4287,15 +4402,17 @@ label night_girl_perform():
 
                 "The man pops his cock out of her ass, and pulls her by the hair, flipping her over. He shoves his cock right in her face."
 
-                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "group"])
-                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-                with fade
 
                 if attitude > 100:
                     "Without any hesitation, [girl.name] opens her mouth wide, engulfing his manhood just in time for him to cum inside her throat."
+                    $ and_tag += ["libido"]
                 else:
                     "[girl.name] hesitates for a second, but the man forcefully pushes his cock inside her mouth, just in time to cum a thick load of semen over her tongue."
 
+
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cim"], not_tags=["bisexual", "group"])
+
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with flash
 
                 girl.char "Ngggh!"
@@ -4458,7 +4575,7 @@ label night_girl_perform():
 
         if fix in ["double penetration", "multiple orgasms"]:
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "cumshot"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with fade
 
@@ -4529,6 +4646,11 @@ label night_girl_perform():
 
                         "The crowd cheers them on, and soon the men are reaching their limit."
 
+                        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "buk"], not_tags=["bisexual"])
+
+                        if pic:
+                            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
+
                         with flash
                         play sound s_orgasm
 
@@ -4554,6 +4676,10 @@ label night_girl_perform():
                         "The crowd encourages the men to go on like a sports team, and soon they cannot take the pressure anymore."
 
                         girl.char "Oh! Your dicks are growing... bigger!!!"
+
+                        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "buk"], not_tags=["bisexual"])
+                        if pic:
+                            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
 
                         with flash
 
@@ -4608,6 +4734,10 @@ label night_girl_perform():
 
                     pause 0.5
 
+                    $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "cumshot"])
+
+                    if pic:
+                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
                     with doubleflash
 
                     "She cums again, and again. It's like she cannot stop."
@@ -4662,7 +4792,7 @@ label night_girl_perform():
             if attitude > 0:
                 "She knows she has a job to do, and so she gets down to it."
 
-                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual"])
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "cumshot"])
                 show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with fade
 
@@ -4698,6 +4828,10 @@ label night_girl_perform():
 
                     "Another man cums on top of her hair, then another one all over her breast. Soon, every man around her reaches their limit, and she faces upwards, eager to collect all of their cum on her willing face."
 
+                    $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "buk"], not_tags=["bisexual"])
+
+                    if pic:
+                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
                     with flash
 
                     girl.char "Delishious cum...Yesh!!!"
@@ -4732,6 +4866,11 @@ label night_girl_perform():
                     girl.char "Aaaah... Aaaah..."
 
                     "The erotic look on her face as she works so many cocks at the same time is enough to bring the men overboard, and they soon start cumming."
+
+                    $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "buk"], not_tags=["bisexual"])
+
+                    if pic:
+                        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
 
                     with flash
 
@@ -4829,7 +4968,7 @@ label night_girl_perform():
             girl.char "Aw... Must I, really?"
 
 
-        $ pic = girl.get_pic("swimsuit", not_tags=extended_sex_acts)
+        $ pic = girl.get_pic("swimsuit", and_tags=["profile"], not_tags=extended_sex_acts)
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -4847,7 +4986,8 @@ label night_girl_perform():
 
             "After teasing the audience for a few minutes, she playfully removes the top of her swimsuit, exposing her glistening wet breasts."
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "group"])
+            $ pic = girl.get_pic("swimsuit", "naked", and_tags=["strip"], soft=True)
+
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with fade
 
@@ -4865,7 +5005,7 @@ label night_girl_perform():
 
             play sound s_moans
 
-            $ pic = girl.get_pic(list(selected_fix.tag_list) + ["mast"], and_tags=and_tag, not_tags=["bisexual", "group"])
+            $ pic = girl.get_pic(list(selected_fix.tag_list) + ["mast"], and_tags=["orgasm"]+and_tag, not_tags=["bisexual", "group"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with fade
 
@@ -4892,7 +5032,7 @@ label night_girl_perform():
 
             play sound s_dress
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["bisexual", "group"])
+            $ pic = girl.get_pic("swimsuit", "naked", and_tags=["strip"], soft=True)
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with fade
 
@@ -4936,6 +5076,9 @@ label night_girl_perform():
         else:
             girl.char "Uh? B-But..."
 
+        if attitude > 100:
+            $ and_tag += ["libido"]
+
         $ pic = girl.get_fix_pic(fix=selected_fix, and_tags=and_tag, not_tags=extended_sex_acts)
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
@@ -4950,12 +5093,11 @@ label night_girl_perform():
             "She seems happy someone noticed she is naked underneath, and sets aside some of her clothing to reveal more."
 
             girl.char "Dear customers, feel free to take a good look at my slutty body... ♥"
+            play sound s_dress
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=all_sex_acts + ["group", "bisexual"])
-            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+            show screen show_event(girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["naked"], not_tags=all_sex_acts + ["group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with fade
 
-            play sound s_dress
 
             "Enjoying all the attention she is getting, [girl.name] starts shedding her clothes one by one, throwing them at the audience members."
 
@@ -5187,7 +5329,7 @@ label night_girl_perform():
 
         $ rep_impact = True
 
-        $ pic = girl.get_fix_pic(selected_act, fix_dict["oral"], and_tags=and_tag, not_tags=all_sex_acts + ["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, fix_dict["oral"], and_tags=and_tag, not_tags=all_sex_acts + ["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -5428,6 +5570,9 @@ label night_girl_perform():
         if not girl.naked:
             "One by one, she removes her clothes, until she is standing buck-naked in front of the rowdy crowd."
 
+        show screen show_event(girl.get_pic("naked", "profile", soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+        with fade
+
         "You instruct her to spread her buttcheeks for the crowd."
 
         if attitude > 100:
@@ -5454,9 +5599,9 @@ label night_girl_perform():
 
         you "All right then... Let's get to it!"
 
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=all_sex_acts + ["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=all_sex_acts + ["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-        with fade
+        with dissolve
 
         if fix == "cowgirl":
             "Lying down, you instruct [girl.name] to position herself on top of you. Except this time, you position your erect cock at the level of her anus, not her slit."
@@ -5546,6 +5691,13 @@ label night_girl_perform():
 
             "Increasing your pace, you ram your cock deeper and deeper inside her loose asshole."
 
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cin"], not_tags=["group", "bisexual"], strict=True)
+            if not pic:
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+            if pic:
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
             with flash
 
             play sound s_orgasm
@@ -5574,6 +5726,13 @@ label night_girl_perform():
             girl.char "Oh, Master... You're going to rip me apart..."
 
             "She clenches her teeth, trying to keep her voice down as her moans become more intense. After fucking her ass mercilessly for a few minutes, you feel ready to cum."
+
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cin"], not_tags=["group", "bisexual"], strict=True)
+            if not pic:
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "creampie"], not_tags=["group", "bisexual"])
+
+            if pic:
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             with flash
 
@@ -5618,7 +5777,7 @@ label night_girl_perform():
     elif fix == "handjobs":
         $ attitude = girl.get_sex_attitude(selected_act, [fix, "oil"]) + girl.get_love()
 
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet"]+and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet"]+and_tag, not_tags=["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -5693,7 +5852,7 @@ label night_girl_perform():
 
         girl.char "Ah!"
 
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet", "cumshot"]+and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["cumshot", "wet", "cof"]+and_tag, not_tags=["group", "bisexual"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with doubleflash
 
@@ -5720,7 +5879,7 @@ label night_girl_perform():
     elif fix == "titjobs":
         $ attitude = girl.get_sex_attitude(selected_act, [fix, "oil"]) + girl.get_love()
 
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet"]+and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet"]+and_tag, not_tags=["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -5757,9 +5916,8 @@ label night_girl_perform():
 
             girl.char "Aaah!"
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet", "cumshot"]+and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["cumshot", "wet", "cof"]+and_tag, not_tags=["group", "bisexual"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-            with doubleflash
 
             with doubleflash
 
@@ -5802,7 +5960,7 @@ label night_girl_perform():
 
             girl.char "Aaaah!"
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["wet", "cumshot"]+and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["cumshot", "wet", "cof"]+and_tag, not_tags=["group", "bisexual"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with doubleflash
 
@@ -5840,7 +5998,7 @@ label night_girl_perform():
     elif fix == "oral":
         $ attitude = girl.get_sex_attitude(selected_act, fix) + girl.get_love()
 
-        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
+        $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with fade
 
@@ -5871,7 +6029,7 @@ label night_girl_perform():
 
             with doubleflash
 
-            $ pic = girl.get_fix_pic(selected_act, fix_dict["cum in mouth"], and_tags=and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, fix_dict["cum in mouth"], and_tags=and_tag+["cumshot", "cim"], not_tags=["group", "bisexual"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with dissolve
 
@@ -5906,9 +6064,10 @@ label night_girl_perform():
 
             girl.char "NGGGH!!!"
 
-            $ pic = girl.get_fix_pic(selected_act, fix_dict["cum on face"], and_tags=and_tag, not_tags=["group", "bisexual"])
-            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-            with dissolve
+            $ pic = girl.get_fix_pic(selected_act, fix_dict["cumshot", "cum on face"], and_tags=and_tag, not_tags=["group", "bisexual"])
+
+            if pic:
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             with doubleflash
 
@@ -5996,7 +6155,7 @@ label night_girl_perform():
         if lost_virginity:
             $ pic = girl.get_pic("virgin", "sex", "naked", and_tags=and_tag, and_priority=False, not_tags=["group", "bisexual"])
         else:
-            $ pic = girl.get_fix_pic(selected_act, fix_dict["cowgirl"], and_tags=and_tag, not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, fix_dict["cowgirl"], and_tags=and_tag, not_tags=["group", "bisexual", "cumshot"])
         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with dissolve
 
@@ -6030,9 +6189,10 @@ label night_girl_perform():
 
             "Cumming hard, [girl.name] reaches a loud orgasm, screaming at the top of her lungs."
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
-            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
-            with dissolve
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cin"], not_tags=["group", "bisexual"])
+
+            if pic:
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
             with doubleflash
 
             "You still haven't moved a muscle, but seeing her hot body shivering with pleasure as she squeezes your cock even tighter is enough to make you cum too."
@@ -6083,8 +6243,10 @@ label night_girl_perform():
 
             girl.char "AAAAAAAAH!!!"
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag, not_tags=["group", "bisexual"])
-            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot", "cof"], not_tags=["group", "bisexual"])
+            if not pic:
+                $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=and_tag+["cumshot"], not_tags=["group", "bisexual"])
+            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
             with doubleflash
 
             "Unable to hold yourself, you ram your cock up her vagina one last time, before shooting a hot load of cum deep inside her."
@@ -6494,6 +6656,9 @@ label night_girl_perform():
 
             with flash
             girl.char "AAAAAH!!!"
+
+            show screen show_event(girl.get_fix_pic(selected_act, selected_fix, and_tags=["geisha", "orgasm"], not_tags=["group", "bisexual"]), x=config.screen_width, y=int(config.screen_height*0.8))
+            with dissolve
 
             play sound s_orgasm
             with doubleflash
@@ -7020,6 +7185,11 @@ label night_girl_perform():
 
         "Ignoring her pleading, you inject the strange liquid into [girl.name]'s nipple. Almost instantly, her face becomes flushed and her tits get swollen."
 
+        $ pic = girl.get_pic("lactation", and_tags=["geisha"], not_tags=["group", "bisexual"], soft=True)
+        if pic:
+            show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+            with dissolve
+
         play sound s_surprise
 
         girl.char "My breasts! They're... growing..."
@@ -7055,7 +7225,7 @@ label night_girl_perform():
 
             you "Come here girl... It's time for your milking..."
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["geisha"], not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["geisha"], not_tags=["group", "bisexual", "profile"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with dissolve
 
@@ -7165,7 +7335,7 @@ label night_girl_perform():
 
             girl.char "Master... Wait... You can't... Aaaah!"
 
-            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["geisha"], not_tags=["group", "bisexual"])
+            $ pic = girl.get_fix_pic(selected_act, selected_fix, and_tags=["geisha"], not_tags=["group", "bisexual", "profile"])
             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
             with dissolve
 
@@ -7275,6 +7445,10 @@ label night_girl_perform():
             girl.char "AAAAAH!!!"
 
             play sound s_orgasm
+            $ pic = girl.get_pic("enema", and_tags=["orgasm"], not_tags=["group", "bisexual"])
+            if pic:
+                show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+
 
             with doubleflash
 

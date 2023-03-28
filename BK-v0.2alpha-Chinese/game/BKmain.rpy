@@ -172,6 +172,10 @@ label slavemarket_loop:
                 if MC.has_gold(price):
                     $ MC.buy(slavemarket, girl, price)
                     $ girl.original_price = price
+                    if result == "farm":
+                        $ MC.girls.remove(girl)
+                        $ farm.girls.append(girl)
+                        $ farm.programs[girl] = FarmProgram(girl)
 
                     hide screen girl_profile
                     hide screen girl_stats
@@ -234,7 +238,7 @@ label visit_district:
     $ tt = show_tt("top_right")
 
     scene black
-    show expression selected_district.get_pic(config.screen_width, int(config.screen_height*0.8)) at top
+    show expression selected_district.get_pic(config.screen_width, res_event_height) at top
     show screen visit_district()
     with Dissolve(0.3)
 
@@ -281,7 +285,7 @@ label visit_location():
 #    $ renpy.start_predict_screen("visit_location", _next)
 
     scene black
-    show expression selected_location.get_pic(config.screen_width, int(config.screen_height*0.8)) at top
+    show expression selected_location.get_pic(config.screen_width, res_event_height) at top
     show screen visit_location()
     with Dissolve(0.3)
 
@@ -343,7 +347,7 @@ label visit_location():
                             renpy.call("city_" + ev_type)
 
                 if district.rank >= 2 and renpy.random.random() <= 0.12: # 8% chance of getting a resource, 4% Cimerian
-                    $ renpy.say("", "While exploring the city, you found something useful.")
+                    $ renpy.say("", "在探索城市时，你发现了一些有用的东西。")
                     $ d = dice(6)
 
                     if dice(6) >= 5:
@@ -381,7 +385,7 @@ label brothel():
 #    $ renpy.start_predict_screen("furniture")
 
     scene black
-    show expression bg_bro at top
+    show expression bg_bro at top:
     $ tt = show_tt("top_right")
 
     show screen brothel()
@@ -874,6 +878,10 @@ label farm_loop():
 
 label main():
 
+    # <Chris12 PredictImages - Predict just the portraits.
+    # Profiles are not needed immediately on entering the girls screen. />
+    $ predict_images(MC.girls + slavemarket.girls, predict_profiles = False)
+
 #    $ renpy.start_predict_screen("girls", MC.girls, "girls")
 
     scene black with Dissolve(0.15)
@@ -972,7 +980,7 @@ label girls_first_time:
     call hide_everything() from _call_hide_everything_39
 
     scene black
-    show expression brothel.bedroom_type.pic_path at top
+    show expression brothel.bedroom_type.pic_path at top:
 
 #    $ renpy.show(brothel.bedroom_type.name, at_list = [top])
 
@@ -1083,6 +1091,10 @@ label girls_first_time:
 
 label girls():
 
+    #<Chris12 PredictImages>
+    $ predict_images(MC.girls, predict_portraits = False) # Portraits will be loaded directly, anyway. Also, they already get predicted in label main.
+    #</Chris12 PredictImages>
+
 #    $ renpy.start_predict_screen("girls", MC.girls, "girls")
 
     call hide_everything() from _call_hide_everything_22
@@ -1144,8 +1156,8 @@ label girls_loop():
             $ renpy.block_rollback()
 
         elif result == "assign":
-
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             $ girl = selected_girl
 
@@ -1300,7 +1312,8 @@ label girls_loop():
 
         elif result == "interact":
 
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             $ girl = selected_girl
 
@@ -1308,7 +1321,8 @@ label girls_loop():
 
         elif result == "sched":
 
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             if MC.girls.index(selected_girl) > 9:
                 $ sched_adj.change(MC.girls.index(selected_girl)*55)
@@ -1320,7 +1334,8 @@ label girls_loop():
 
         elif result == "level_or_perks":
 
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             $ girl = selected_girl
 
@@ -1346,7 +1361,8 @@ label girls_loop():
 
         elif result == "perks":
 
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             $ girl = selected_girl
 
@@ -1435,7 +1451,8 @@ label girls_loop():
 
         elif result == "equip":
 
-            call hide_details()
+            if not renpy.predicting():
+                call hide_details()
 
             $ girl = selected_girl
             $ selected_item = None
@@ -1571,7 +1588,7 @@ label girls_loop():
 
         elif result == "stats":
 
-            call screen girl_log()
+            call screen girl_log() nopredict
 
             with Dissolve(0.15)
 
@@ -1588,8 +1605,6 @@ label girls_loop():
 
         $ renpy.block_rollback()
         $ brothel.update_customer_count()
-
-#        pass
 
 
 ## PERKS ##

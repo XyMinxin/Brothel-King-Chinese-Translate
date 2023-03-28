@@ -4,9 +4,6 @@
 ########################
 
 screen right_menu():
-    # <Chris12 PredictImages - Predict just the portraits.
-    # Profiles are not needed immediately on entering the girls screen. />
-    $ predict_images(MC.girls + slavemarket.girls, predict_profiles = False)
 
     # Right click action
     key "mouseup_3" action (ShowMenu('save'), Hide("brothel_report"), Hide("previous_night_log"))
@@ -15,9 +12,10 @@ screen right_menu():
     vbox ypos 0.1 xalign 1.0 xfill False spacing 20:
 
         # Girls activities / information top box
-        frame background c_ui_dark xalign 1.0 xmargin 6 xsize 204:
+        frame background c_ui_dark xalign 1.0 xmargin 6 xsize xres(204):
 
             hbox:
+                xalign 0.5
                 add "girl_shadow"
 
                 vbox spacing 6:
@@ -33,8 +31,8 @@ screen right_menu():
 
         frame:
             background c_ui_dark
-
-            xsize 204
+            xalign 1.0
+            xsize xres(204)
             xmargin 6
             xpadding 9
 
@@ -65,7 +63,7 @@ screen right_menu():
             # Generate a grid of 2 columns and x rows for the right menu
 
             grid 2 rows:
-                xspacing 20
+                xspacing 2
                 yspacing 6
                 xalign 1.0
                 xanchor 1.0
@@ -112,7 +110,7 @@ screen right_menu():
 
                 if mod_menu:
                     null
-                    textbutton "Mods" action Show("mod_menu_display", mod_menu=mod_menu) tooltip "从你的激活的MOD中获取选项."
+                    textbutton "Mods" action Show("mod_menu_display", mod_menu=mod_menu) tooltip "从你的激活的MOD中获取选项。"
 
                 null
                 null
@@ -131,11 +129,12 @@ screen right_menu():
             frame:
                 background c_ui_dark
 
-                xsize 204
+                xsize xres(204)
                 xmargin 6
+                xalign 0.5
 
-                frame background Frame("UI/scroll.webp") xalign 0.5 xsize 180 xpadding 20 ypadding 10:
-                    textbutton "{b}当前目标{/b}\n{i}{size=-2}" + game.get_first_goal() style "invisible_no_padding" text_size 14 text_color c_brown xalign 0.5 text_align 0.5:
+                frame background Frame("UI/scroll.webp") xalign 0.5 xsize xres(180) xpadding 20 ypadding 9:
+                    textbutton "{b}当前目标{/b}\n{i}{size=-2}" + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.0 text_align 0.0:
                         action NullAction()
                         hovered Show("goal_ttip", transition=Dissolve(0.15))
                         unhovered Hide("goal_ttip", transition=Dissolve(0.15))
@@ -149,8 +148,8 @@ screen right_menu_mc():
     # Display alert for level up
     if MC.skill_points > 0:
 
-        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("你的角色已经准备好升级了."), SetDict(seen_alerts, "MC", True)):
-            add ProportionalScale("UI/news.webp", 25, 25) xalign 1.0
+        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("你的角色已经准备好升级了。"), SetDict(seen_alerts, "MC", True)):
+            add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
 
             if not seen_alerts["MC"]:
                 at blink
@@ -159,7 +158,8 @@ screen right_menu_mc():
         text ""
 
     # Define tool tip text for hover on MC button
-    $ ttip = "查看你的角色、物品和法术.\n你等级是" + str(MC.level) + " " + MC.playerclass + ". 你目前"
+    $ ttip = "查看你的角色、物品和法术。\n你是一个等级[MC.level]的[MC.playerclass]" + "。你目前"
+    #$ ttip = "查看你的角色、物品和法术。\n你等级是" + str(MC.level) + " " + MC.playerclass + ". 你目前"
     $ active_spells = len([1 for s in MC.active_spells if s.type!="passive"])
     $ auto_spells = len([1 for s in MC.known_spells if s.auto])
 
@@ -169,11 +169,13 @@ screen right_menu_mc():
         $ ttip += "没有激活的法术"
 
     if auto_spells:
-        $ ttip += "和 " + str(auto_spells) + " 个自动施法的法术."
+        $ ttip += "和 " + str(auto_spells) + " 个自动施法的法术。"
     else:
         $ ttip += "."
 
     textbutton "角色":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("main_character")
         tooltip ttip
@@ -191,7 +193,7 @@ screen right_menu_girls():
 
         for girl in MC.girls:
 
-            if girl.upgrade_points >= 1:
+            if girl.perk_points or girl.can_spend_upgrade_points():
                 b = True
                 break
 
@@ -200,26 +202,28 @@ screen right_menu_girls():
                 break
 
     if b:
-        $ ttip = "你的一个女孩已经准备好升级了."
+        $ ttip = "你的一个女孩已经准备好升级了。"
         button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action(ttip), SetDict(seen_alerts, "girls", True)):
-            add ProportionalScale("UI/status/levelup.webp", 25, 25) xalign 1.0
+            add ProportionalScale("UI/status/levelup.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["girls"]:
                 at blink
     elif r:
-        $ ttip = "你的一个女孩已经准备好升阶了."
+        $ ttip = "你的一个女孩已经准备好升阶了。"
         button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action(ttip), SetDict(seen_alerts, "girls", True)):
-            add ProportionalScale("UI/status/rankup.webp", 25, 25) xalign 1.0
+            add ProportionalScale("UI/status/rankup.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["girls"]:
                 at blink
 
     else:
         text ""
 
-    $ ttip = "与你青楼中的女孩互动.\n你有 " + str(len(MC.girls)) + " 个女孩在青楼 (max " + str(brothel.bedrooms) + ").\n"
+    $ ttip = "与你青楼中的女孩互动。\n你有 " + str(len(MC.girls)) + " 个女孩在青楼 (max " + str(brothel.bedrooms) + ")。\n"
     $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
-    $ ttip += "今晚有 " + str(working_girls) + " 个女孩要工作."
+    $ ttip += "今晚有 " + str(working_girls) + " 个女孩要工作。"
 
     textbutton "女孩":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("girls")
         tooltip ttip
@@ -231,8 +235,8 @@ screen right_menu_girls():
 screen right_menu_brothel():
 
     if carpenter_active and not brothel.current_building and brothel.can_build_anything():
-        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("木匠随时准备为你打造新的家具."), SetDict(seen_alerts, "carpenter", True)):
-            add ProportionalScale("UI/carpenter.webp", 25, 25) xalign 1.0
+        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("木匠随时准备为你打造新的家具。"), SetDict(seen_alerts, "carpenter", True)):
+            add ProportionalScale("UI/carpenter.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["carpenter"]:
                 at blink
 
@@ -240,9 +244,11 @@ screen right_menu_brothel():
         text ""
 
     textbutton "青楼":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("brothel")
-        tooltip "管理你的青楼和升级房间.\n" + brothel.get_ASM_report(short=True)
+        tooltip "管理你的青楼和升级房间。\n" + brothel.get_ASM_report(short=True)
 
 ################
 ## Home - Right menu - Display Farm alert and button
@@ -253,8 +259,10 @@ screen right_menu_farm():
     if farm.active:
         text ""
         textbutton "农场":
+            ypadding 0.005
+            text_size res_font(20)
             action Return("farm")
-            tooltip "参观农场并训练那里的女孩.\nGizel农场目前有 " + str(len(farm.girls)) + " 个女孩和 " + str(farm.count_minions()) + " 个仆从."
+            tooltip "参观农场并训练那里的女孩。\n吉泽尔农场目前有 " + str(len(farm.girls)) + " 个女孩和 " + str(farm.count_minions()) + " 个仆从。"
 
 
 ################
@@ -272,9 +280,11 @@ screen right_menu_city():
     text ""
 
     textbutton "访问城市":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("districts")
-        tooltip "访问瓒城."
+        tooltip "访问瓒城。"
 
 
 ################
@@ -284,16 +294,19 @@ screen right_menu_city():
 screen right_menu_slavemarket():
 
     if slavemarket.updated:
-        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("市场上有新的奴隶."), SetDict(seen_alerts, "slavemarket", True)):
-            add ProportionalScale("UI/news.webp", 25, 25) xalign 1.0
+        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered SetDict(seen_alerts, "slavemarket", True):
+            tooltip ("市场上有新的奴隶。")
+            add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["slavemarket"]:
                 at blink
     else:
         text ""
 
     textbutton "奴隶市场":
+        ypadding 0.005
+        text_size res_font(20)
         action Return("slavemarket")
-        tooltip "访问奴隶市场，寻找完美的奴隶. 或者是一个便宜货.\n奴隶市场目前有 " + str(len(slavemarket.girls)) + " 个女孩在出售."
+        tooltip "访问奴隶市场，寻找完美的奴隶. 或者是一个便宜货。\n奴隶市场目前有 " + str(len(slavemarket.girls)) + " 个女孩在出售。"
 
 ################
 ## Home - Right menu - Display Shop alert and button
@@ -302,17 +315,20 @@ screen right_menu_slavemarket():
 screen right_menu_shop():
 
     if shop.updated:
-        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("有新的物品推出."), SetDict(seen_alerts, "shop", True)):
-            add ProportionalScale("UI/news.webp", 25, 25) xalign 1.0
+        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered SetDict(seen_alerts, "shop", True):
+            tooltip ("有新的物品推出。")
+            add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["shop"]:
                 at blink
     else:
         text ""
 
     textbutton "商店":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("shop")
-        tooltip "访问商店购买有用的物品.\n商店目前有 " + str(len(shop.items)) + " 个物品在出售."
+        tooltip "访问商店购买有用的物品。\n商店目前有 " + str(len(shop.items)) + " 个物品在出售。"
 
 ################
 ## Home - Right menu - Display Postings alert and button
@@ -321,17 +337,19 @@ screen right_menu_shop():
 screen right_menu_postings():
 
     if quest_board.updated:
-        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("有新的课程和任务."), SetDict(seen_alerts, "postings", True)):
-            add ProportionalScale("UI/news.webp", 25, 25) xalign 1.0
+        button background None xalign 1.0 xmargin 0 xpadding 0 action NullAction() hovered (tt.Action("有新的课程和任务。"), SetDict(seen_alerts, "postings", True)):
+            add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
             if not seen_alerts["postings"]:
                 at blink
     else:
         text ""
 
     textbutton "外派":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("postings")
-        tooltip "了解现有课程和任务的情况.\n目前有" + str(len(quest_board.quests)) + " 个任务和 " + str(len(quest_board.classes)) + " 个课程."
+        tooltip "了解现有课程和任务的情况。\n目前有" + str(len(quest_board.quests)) + " 个任务和 " + str(len(quest_board.classes)) + " 个课程。"
 
 
 ################
@@ -349,7 +367,7 @@ screen mod_menu_display(mod_menu):
         for mod in mod_menu:
             frame:
                 has vbox box_wrap True
-                text mod.name size 14 bold True color c_prune
+                text mod.name size res_font(14) bold True color c_prune
                 for but in mod.home_rightmenu_add_buttons:
                     use expression but
         null
@@ -365,9 +383,11 @@ screen right_menu_endday():
     text ""
 
     textbutton "结束一天":
+        ypadding 0.005
+        text_size res_font(20)
 
         action Return("end_day")
-        tooltip "结束一天的工作，转入晚上的活动."
+        tooltip "结束一天的工作，转入晚上的活动。"
 
 ################
 ## Home - Right menu - Display Advance button
@@ -387,13 +407,13 @@ screen right_menu_advance():
             if MC.has_gold(blist[game.chapter+1].cost):
                 action Return("advance")
             else:
-                action Function(renpy.notify, "\n你没有足够的金币来升级.")
+                action Function(renpy.notify, "\n你没有足够的金币来升级。")
 
-            tooltip "推进到下一个游戏章节，需要 %s 金币." % '{:,}'.format(blist[game.chapter+1].cost)
+            tooltip "推进到下一个游戏章节，需要 %s 金币。" % '{:,}'.format(blist[game.chapter+1].cost)
 
 
 
 init -2:
     # Make all the right menu buttons be the same size.
     style rm_button:
-        xsize 175
+        size_group "rm"

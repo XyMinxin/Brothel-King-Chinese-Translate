@@ -1112,7 +1112,7 @@ label c2_princess_letter:
 
             gio "You're... MEAN!!!" with vpunch
 
-            $ MC.rand_say(["gd: I don't think you're any of the girls' type, anyway. Sorry.", "ne: Boohoo. Cry me a river.", "ev: Damn right I'm mean! Now give me this letter before I show you just how bad I am."])
+            $ MC.rand_say(["gd: 我觉得你不是任何一个女孩的类型，不好意思。", "ne: 呜。哭一个河。", "ev: 是这么坏！现在把这封信给我，否则我会让你看看我有多坏。"])
 
             $ NPC_gio.love -= 2
             $ girl = None
@@ -1355,7 +1355,7 @@ label c2_princess_visit1:
 
     gio "Arios worshippers are so insecure about their faith, they need to constantly rub it into everyone's face..."
 
-    $ MC.rand_say(["sh: Yeah, sounds like them all right... Tsk.", "ar: Watch it! I won't suffer insults to the name of Arios!", "ng: No separation of church and state, uh... How primitive."])
+    $ MC.rand_say(["sh: 是啊，听起来就像他们。", "ar: 心！我不会容忍对阿里奥斯名字的侮辱！", "ng: 教会和国家的分离，呃...多么原始。"])
 
     gio "Anyway. That's why this road is known as Pilgrim's Road. It's still the fastest way to get to the Palace, if you don't mind bumping into the tourists."
 
@@ -1442,7 +1442,7 @@ label c2_princess_visit1:
 
     "This last piece of information sounded a little like a threat. You're not sure, but you feel like the knight is looking at you disapprovingly from under his helmet."
 
-    $ MC.rand_say(["gd: (Well, that is to be expected, he's got his orders... I'm sure me being here is not making his job any easier.)", "ne: (What a welcome. I wonder if everyone at court is so stuck up?)", "ev: (Fuck that jerk...)"])
+    $ MC.rand_say(["gd:（好吧，这是可以预料的，他有他的命令……我相信我在这里不会让他的工作更容易。）", "ne:（多么热情的欢迎。我想知道宫廷里的每个人都这么顽固吗？）", "ev:（去他妈的混蛋……）"])
 
     knight "The Palace will now close to the visiting public for today. Let me show you the way out..."
 
@@ -2353,7 +2353,7 @@ label kurohime_conversation_menu():
 
     "Her eyes brim with tears."
 
-    $ MC.rand_say(("gd: Fear not, Your Highness. I will protect you!", "ne: All right, all right, Your Highness. I'll help...", "ev: Worry not, Your Highness, We have a deal, remember?"))
+    $ MC.rand_say(("gd: 不要害怕，殿下。我会保护你的！", "ne: 好的，好的，殿下。我会帮忙的……", "ev: 不要担心，殿下，我们有协议，记得吗？"))
 
     kuro "..."
 
@@ -2730,7 +2730,7 @@ label c2_gio_meeting():
 
     you "Well, let's not worry too much about it. Gio is usually full of crap, so his intel is probably garbage... *nervous*"
 
-    $ game.set_task("等待忍者出现，然后……杀了你？")
+    $ game.set_task("等待忍者出现，然后...杀了你？")
     $ temp_gossip += chapter_gossip["c2_kunoichi"]
 
     $ calendar.set_alarm(calendar.time + 2, StoryEvent("c2_suzume_invitation"))
@@ -2798,7 +2798,7 @@ label c2_suzume_invitation():
 
     "A piece of paper is pinned to the wooden post. You feel like you might as well read the message."
 
-    call screen letter(header = "寻找我的内裤", message = "你看到我的内裤了吗？\n\n我在城镇的某个地方丢了它们。我想念柔软的丝绸贴在我光滑的皮肤上的感觉……没有它们，我感到很暴露！\n\n请在农场附近的森林小路上见我，那里没有人会打扰我们。你会得到一个大惊喜……",
+    call screen letter(header = "寻找我的内裤", message = "你看到我的内裤了吗？\n\n我在城镇的某个地方丢了它们。我想念柔软的丝绸贴在我光滑的皮肤上的感觉...没有它们，我感到很暴露！\n\n请在农场附近的森林小路上见我，那里没有人会打扰我们。你会得到一个大惊喜...",
                           signature = "PS：别担心，这不是一个陷阱。")
 
     you "This must be the panties I found before... What an amazing coincidence!"
@@ -5369,26 +5369,25 @@ label ninja_hunt(loc):
     else:
 
         $ no_ninja_loc_dict = {
-                            "Spice market" : ["I didn't find any leads, but I did find a potent aphrodisiac I'd like you to try...", "Not now, Suz!"],
-                            "Sewers" : ["So I went through the sewers all day... Garbage, monsters, rapists, the usual... But no signs of a Kunoichi.", "Thanks for the intel... Can you stand downwind, please?"],
-                            "Farm" : ["I found nothing but a dead squirrel... Say, would you like me to drop it on your doorstep?", "No way!"],
-                            "Watchtower" : ["A Kunoichi standing so close to the Guard tower would be bold indeed... But I haven't seen any signs of recent ninja activity.", "Okay. We'll keep looking."],
-                            "Junkyard" : ["Nothing to see here. This is not the kind of junk I'm interested in...", "I get the idea."],
-                            "Thieves guild" : ["She's not here this time... Sneaky brat.", "Let's look elsewhere."],
+                            "Spice market" : ["我没有找到任何线索，但我找到了一种强效的催情剂，我想让你尝试一下……", "不要现在，Suz！"],
+                            "Sewers" : ["所以我整天都在下水道里……垃圾、怪物、强奸犯，都是家常便饭……但没有看到女忍者的迹象。", "谢谢你的情报……请你站在下风处好吗？"],
+                            "Watchtower" : ["一个女忍者站在警卫塔这么近的地方会很大胆……但我没有看到任何最近的忍者活动的迹象。", "好的。我们会继续寻找。"],
+                            "Junkyard" : ["这里没有什么好看的。这不是我感兴趣的那种垃圾……", "我明白了。"],
+                            "Thieves guild" : ["这次她不在这里……狡猾的家伙。", "我们去别的地方看看。"],
 
-                            "Harbor" : ["Nothing smells fishy here... Except the fish. Kukukuku...", "Okay. I still think your career switch to stand-up comedy is ill-conceived."],
-                            "Shipyard" : ["I haven't seen a single Kunoichi, but there was this boat that was shaped like a-", "Not interested, thank you."],
-                            "Taverns" : ["So I told that seafarer... *hiccup* There are no Kunoichi here Sir! Not one! And don't call me that, I'm not worthy of the title... *sob* Turns out the guy was a bar stool with a sailor hat on it... *hiccup*", "Go home, Suzume... You're drunk."],
-                            "Beach" : ["I thought we'd find her here again... But no dice.", "She must remain close to the water... After all, it's her element."],
-                            "Seafront" : ["I've checked every single ship. Turns out, sailors are rowdy as hell, and there are no Kunoichi on board.", "Okay, thank you... Keep looking."],
-                            "Exotic emporium" : ["You wouldn't believe the things I've seen here! They have everything... Except Kunoichi, I guess.", "We'll look elsewhere."],
+                            "Harbor" : ["这里没有什么可疑的味道……除了鱼。咕咕咕……", "好的。我仍然认为你转行做喜剧演员是不明智的。"],
+                            "Shipyard" : ["我没有看到一个女忍者，但有一艘船的形状像A-", "不感兴趣，谢谢。"],
+                            "Taverns" : ["所以我告诉那个航海家……*打嗝*这里没有女忍者，先生！一个也没有！不要叫我那个，我不配拥有这个称号……*哭泣*结果那个家伙是一个带着水手帽的凳子……*打嗝*", "回家吧，雀。你喝醉了。"],
+                            "Beach" : ["我以为我们会再次在这里找到她……但没有找到。", "她必须保持靠近水……毕竟，这是她的元素。"],
+                            "Seafront" : ["我检查了每一艘船。结果，水手们非常喧闹，没有女忍者在船上。", "好的，谢谢……继续寻找。"],
+                            "Exotic emporium" : ["你不会相信我在这里看到的东西！他们什么都有……除了女忍者，我想。", "我们去别的地方看看。"],
 
-                            "Stables" : ["There are no Kunoichi here, but the horses, hmmm... Did you know that their d-", "Not interested! Let's move on."],
-                            "Plaza" : ["I've checked the roofs, alleys, food stalls, and the loo. No Kunoichi here.", "Okay. We'll keep looking."],
-                            "Market" : ["I had to walk around the market all day, I've lost count of how many people tried to grab my ass and touch my boobies... But no Kunoichi, kukukuku.", "Why do you look happy about all this?"],
-                            "Prison" : ["Not here this time... She must be surveying the Prison from a distance.", "Let's check other places around the district."],
-                            "Gallows" : ["I've checked everything, even the hanged. Turns out they're actually dead.", "I am starting to doubt the quality of ninja education."],
-                            "Arena" : ["So I checked the arena... Turns out there was a fight going on, I had to kick the asses of an entire gladiator team... And a couple of lions. No Kunoichi there, though.", "This must be the ninjas' legendary sense of discretion... *roll eyes*"],
+                            "Stables" : ["这里没有女忍者，但是马，嗯……你知道它们的d-", "不感兴趣！我们继续吧。"],
+                            "Plaza" : ["我检查了屋顶、小巷、食品摊和厕所。这里没有女忍者。", "好的。我们会继续寻找。"],
+                            "Market" : ["我不得不在市场上走了一整天，我已经数不清有多少人试图抓我的屁股和摸我的胸部……但没有女忍者，咕咕咕。", "你为什么对这一切感到高兴？"],
+                            "Prison" : ["这次不在这里……她必须从远处观察监狱。", "让我们在区域周围的其他地方检查。"],
+                            "Gallows" : ["我检查了一切，甚至是被绞死的人。结果他们实际上是死了。", "我开始怀疑忍者教育的质量了。"],
+                            "Arena" : ["所以我检查了竞技场……结果有一场战斗正在进行中，我不得不踢一整个角斗士团队的屁股……还有几只狮子。不过那里没有女忍者。", "这一定是忍者们传说中的谨慎感……*翻白眼*"],
                             }
 
         $ suzume(no_ninja_loc_dict[loc.name][0])
@@ -5417,7 +5416,7 @@ label ninja_hunt_intro(): # Runs only once
     "Hit the Kunoichi {b}three times{/b} within the time limit to stop her."
 
     $ story_flags["ninja hunt seen intro"] = True
-    $ game.set_task("见地之忍者。", "story")
+    $ game.set_task("见土之忍者。", "story")
     $ game.set_task("见水之忍者。", "story2")
     $ game.set_task("见虚之忍者。", "story3")
 
@@ -5525,7 +5524,7 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
 
         elif special == "quake":
             $ text1 = "My legs are giving out, and the district is about to crumble..."
-            $ game.set_task("地之忍者：待续", "story", 7)
+            $ game.set_task("土之忍者：待续", "story", 7)
             # $ game.set_task("Find a way to overcome the Earth Kunoichi's earthquake defense.", "story", 3)
             $ story_flags["ninja hunt hide Prison"] = True
 
@@ -5767,7 +5766,7 @@ label intercept_narika():
 
         suzume doubt "She got the drop on us this time... But we'll run into her again. She's too bold to go into hiding."
 
-        $ game.set_task("Meet the Void Kunoichi again.", "story3", 3)
+        $ game.set_task("再次见到虚之忍者。", "story3", 3)
 
         scene black with fade
 
@@ -6179,7 +6178,7 @@ label intercept_narika():
 
         $ story_add_event("c2_narika_H1")
 
-        $ game.set_task("Meet at the brothel with Suzume tonight.", "story3")
+        $ game.set_task("今晚在妓院与铃女见面。", "story3")
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -6556,7 +6555,7 @@ label c2_narika_H1():
 
         suzume "Aw..."
 
-    $ game.set_task("Meet the Void Kunoichi, yet again.", "story3", 3)
+    $ game.set_task("再次见到虚之忍者。", "story3", 3)
 
     return
 
@@ -6703,7 +6702,7 @@ label intercept_mizuki():
 
         suzume "Well... We should keep patrolling around the district. She has a strong affinity with water... I'm sure we'll see her again, eventually."
 
-        $ game.set_task("Meet the Water Kunoichi again.", "story2", 3)
+        $ game.set_task("再次见到水之忍者。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -6718,21 +6717,21 @@ label intercept_mizuki():
 
         mizuki "This hammer of yours must be more potent than it looks."
 
-        suzume "Told ya! ♥"
+        suzume "(Told ya! ♥)"
 
         you "You are at our mercy, so you'd better answer our questions."
 
         play sound s_evil_laugh
 
-        mizuki happy "At your mercy! That's pleasant."
+        mizuki happy "At your mercy! Don't overestimate your advantage. I have more tricks up my kimono sleeve."
 
-        mizuki "Very well, I haven't had a proper challenge in a few decades. I may indulge you."
+        mizuki "But very well, I haven't had a proper challenge in a few decades. So I may indulge you."
 
         you "A few decades? How old are you, exactly? You can't be more than forty."
 
         play sound s_laugh
 
-        mizuki "Oh, dear, you're flattering me..."
+        mizuki "Oh, dear, how flattering..."
 
         suzume "I told you, the Water Kunoichi is an old lady! Everyone knows this."
 
@@ -6801,7 +6800,7 @@ label intercept_mizuki():
 
                 mizuki angry "Oh, aren't you Mister Goody-two-shoes! You have no idea what I've been through. None. *mad*"
 
-                mizuki "What if someone destroyed your life, your home, everything you've ever loved, and made you watch? Would you be so merciful then?"
+                mizuki "What if someone destroyed your life, your family, your home, everything you've ever loved, and made you watch? Would you be so merciful then?"
 
                 you "..."
 
@@ -6824,7 +6823,8 @@ label intercept_mizuki():
 
         you "A certain family... You mean the Royals?"
 
-        mizuki "I'm only going to tell you this: Do not get in my way. Those people {i}will{/i} die no matter what you do. And collateral damage be damned."
+        mizuki "Let's leave it at that. I'm only going to tell you this: Do not get in my way."
+        mizuki "These people {i}will{/i} die no matter what you do. And collateral damage be damned."
 
         menu:
             "We could kill them for you":
@@ -6832,6 +6832,7 @@ label intercept_mizuki():
                 $ MC.evil += 1
 
                 you "Well, perhaps we could help you put an end those bastards, whoever they are. Provided you only intend to kill people we don't know or care about."
+                suzume "Whaat?"
 
                 play sound s_evil_laugh
 
@@ -6859,7 +6860,7 @@ label intercept_mizuki():
 
                 mizuki normal "There is one thing I need, but... You don't strike me as the right people to ask."
 
-                you "You won't know until you try. Besides, you have nowhere else to go, so we're in for a long chat."
+                you "You won't know until you try. Besides, your magic is depleted, you have nowhere else to go, so we're in for a long chat."
 
             "I won't let you get away with murder":
                 $ renpy.block_rollback()
@@ -6871,7 +6872,7 @@ label intercept_mizuki():
 
                 mizuki "This is the second time I warn you. There won't be a third."
 
-                you "Bold words, but you're helpless now. We could just take you into custody, and let the Knights handle it."
+                you "Bold words, but you're helpless now, without your magic. We could just take you into custody, and let the Royal Knights handle it."
 
         mizuki happy "Fufufu... Magic isn't everything, my dear boy..."
 
@@ -6901,11 +6902,11 @@ label intercept_mizuki():
             you "No... She was definitely too weak to cast an invisibility spell..."
 
         else:
-            you "Are you sure?"
+            you "Are you sure? But I thought her magic was drained!"
 
         play sound s_splash
 
-        "While you were talking, Mizuki's kimono got carried off by the strong wind, and landed far away in the water."
+        "Whilst you were talking, Mizuki's kimono got carried off by the strong seaside wind, and landed far away in the water."
 
         suzume "Look over there... It's her kimono! She must have shed it so she could escape faster."
 
@@ -7011,7 +7012,7 @@ label intercept_mizuki():
         else:
             you "It's already out of reach. Damn, how can we catch someone that disappears at will?"
 
-        $ game.set_task("Meet the Water Kunoichi, yet again.", "story2", 3)
+        $ game.set_task("再次见到水之忍者。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -7028,7 +7029,7 @@ label mizuki_onsen(): # Happens if the player has an onsen and got Mizuki's Kimo
 
     show sill with dissolve
 
-    sill happy "Now, this is the last of these towels, all perfectly folded and piled up in the best way!"
+    sill happy "Now, this is the last of these towels, all perfectly folded and piled up in the neatest way!"
 
     sill "Phew, keeping this place together is such hard work..."
 
@@ -7166,7 +7167,7 @@ label mizuki_onsen(): # Happens if the player has an onsen and got Mizuki's Kimo
 
     mizuki "You have something of mine, and now... It seems I have something of yours."
 
-    you "Something? You mean... Your kimono?"
+    you "Something of yours? You mean... Your kimono?"
 
     mizuki "Precisely. A finely embroidered piece, that can withstand ninja moves and techniques while remaining stylish. It is a very rare and expensive thing, these days."
 
@@ -7249,11 +7250,11 @@ label mizuki_onsen(): # Happens if the player has an onsen and got Mizuki's Kimo
 
     you "I want you to continue..."
 
-    mizuki "Madam Mizuki."
+    mizuki "Mizuki-sama."
 
     you "..."
 
-    you "I... Want it... Madam Mizuki..."
+    you "I... Want it... Mizuki-sama..."
 
     play sound s_evil_laugh
 
@@ -7267,7 +7268,7 @@ label mizuki_onsen(): # Happens if the player has an onsen and got Mizuki's Kimo
 
     "Her fingertips wrap around your cock's head, stroking erogenous zones you didn't know existed."
 
-    mizuki "Did you know that semen is 99 per cent water? And I'm a master of water magic..."
+    mizuki "Did you know that a man's seed is 99 per cent water? And I'm a master of water magic..."
 
     with vpunch
     play sound s_spell
@@ -7484,7 +7485,7 @@ label intercept_haruka():
 
         suzume doubt "Well, we lost for today... But she'll be back to the district eventually, the prison seems to be her target. Let's come back on another day."
 
-        $ game.set_task("Meet the Earth Kunoichi again.", "story", 3)
+        $ game.set_task("再次见到土之忍者。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -7990,7 +7991,7 @@ label intercept_haruka():
 
         you "She might be the link to our masked murderer! We must catch her!"
 
-        $ game.set_task("Meet the Earth Kunoichi, yet again.", "story", 3)
+        $ game.set_task("再次见到土之忍者。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -8278,7 +8279,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
 
                 "You quickly realize that they are a diverse bunch, with foreign merchants mingling with petty nobles, country officials and professional intriguants. It makes you feel less of an outsider."
 
-                $ MC.rand_say(["wr: I've worked as a hired blade for many such arrogant pricks... They're all the same.", "wz: Just like the courts of the Westmarch swamp lords... With thankfully less mosquitoes.", "tr: It's a den of snakes, but knowing these people just might be advantageous for business..."])
+                $ MC.rand_say(["wr: 我曾经为许多这样的傲慢混蛋工作过...他们都一样。", "wz: 就像西部沼泽领主的法庭一样...幸好蚊子少了。", "tr: 这是一群蛇的巢穴，但了解这些人可能对生意有利..."])
 
                 "Leaning in, you try to overhear some conversations."
 
@@ -8799,7 +8800,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
     you "*yawn* Arrh... Of course..."
 
-    "You are getting used to these royal summons."
+    "You are getting used to the royal summons."
 
     scene black with fade
     show bg castle at top with dissolve
@@ -8904,7 +8905,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
     you "This means... It cannot be her. She would have been a child at the time."
 
-    kuro "Indeed. But there is another possibility... Lady Sora Uesugi, her mother."
+    kuro "Indeed. But there is another possibility... Lady Sora, her mother."
 
     you "Her mother?"
 
@@ -8995,7 +8996,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
         you "Yes..."
 
     else:
-        kuro "I know that your, err, business is expanding... *blush*"
+        kuro "I know that your, err, business is growing... *blush*"
 
         you "Ahem, yes."
 
@@ -9468,7 +9469,7 @@ label c2_luncheon2:
 
                 "Maid" "Some said they saw him fleeing with a baby. His bastard, no doubt..."
 
-                "Manservant" "A baby? So he left Uesugi alone as a baby, but he took his bastard with him?"
+                "Manservant" "A baby? So he left the little Lady alone as a babe, but he took his bastard with him?"
 
                 "Page" "Ouch. That's gotta sting..."
 
@@ -9644,7 +9645,7 @@ label c2_unlock_next_brothel(): # Happens in the rank 2 district where his broth
 
     suzume doubt "Still, half the rooms here are nearly collapsed. Getting this place back up and running would cost a pretty denar."
 
-    you "It's a pity such a nice place in such disrepair. Look at those cobwebs! I don't want to meet the spider that did that... *shiver*"
+    you "It's a pity such a nice place is in such disrepair. Look at those cobwebs! I don't want to meet the spider that did that... *shiver*"
 
     you "Let's go."
 
@@ -10066,7 +10067,7 @@ label visit_papa():
                 $ gallows.action = False
                 $ plaza.action = False
                 $ story_flags["c3_advance"] = True
-                $ game.set_task("Gather " + str(cost) + " gold to advance to the next chapter.", "advance2", 3)
+                $ game.set_task("收集" + str(cost) + "金币以进入下一章。", "advance2", 3)
 
             else:
                 girl.char "Wait, what? Spend the night with this old man? No way!"

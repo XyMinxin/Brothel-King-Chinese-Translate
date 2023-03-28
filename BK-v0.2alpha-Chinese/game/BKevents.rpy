@@ -164,7 +164,7 @@ label after_load: # Happens after a game state is loaded
 
     return
 
-label teleport():
+label teleport(): # Clears everything on the screen as well as the call stack before jumping to selected_destination label
 
     call hide_everything() from _call_hide_everything
 
@@ -275,7 +275,7 @@ label new_moon():
     if calendar.moon.sound:
         play sound calendar.moon.sound
 
-    "New moon" "{i}The [calendar.moon.name] is out.{/i} [calendar.moon.description]"
+    "New moon" "{i}The [calendar.moon.name!t] is out.{/i} [calendar.moon.description!t]"
 
     return
 
@@ -386,6 +386,8 @@ label choose_difficulty():
                 call girlpack_menu() from _call_girlpack_menu_1
 
             else: # CONFIRM
+                $ unlocking_extras(final=True)
+
                 if game.starting_gold:
                     $ MC.gold = int(game.starting_gold)
 
@@ -696,6 +698,8 @@ label display_events(ev_list):
         $ ev.play()
         $ ev.happened = True
 
+        stop music fadeout 3.0
+
         if ev.label:
             $ story_flags[ev.label] = True
 
@@ -707,7 +711,7 @@ label show_night_event(ev, save=False):
 #    $ renpy.say("", "Controlling " + ev.type + " as " + str(persistent.skipped_events[ev.type]))
 
     if persistent.skipped_events[ev.type]:
-        $ renpy.notify("\n跳过事件...")
+        $ renpy.notify("\n跳过事件……")
         return
 
     show screen night(ev.pic, event_bg=ev.background, changes=ev.changes)
@@ -720,14 +724,14 @@ label show_night_event(ev, save=False):
 
     if ev.char:
         if count_lines(ev.text, 85) > 5:
-            $ text_descript = "{size=14}" + ev.text
+            $ text_descript = "{size=" + str(int(config.screen_height*0.0222)) + "}" + ev.text
         else:
-            $ text_descript = "{size=16}" + ev.text
+            $ text_descript = "{size=" + str(int(config.screen_height*0.025)) + "}" + ev.text
     else:
         if count_lines(ev.text, 100) > 5:
-            $ text_descript = "{size=18}" + ev.text
+            $ text_descript = "{size=" + str(int(config.screen_height*0.025)) + "}" + ev.text
         else:
-            $ text_descript = "{size=20}" + ev.text
+            $ text_descript = "{size=" + str(int(config.screen_height*0.0277)) + "}" + ev.text
 
 
     $ renpy.say(ev.char, text_descript + "{/size}")
@@ -1031,7 +1035,13 @@ label found_escaped_girl(girl):
 
         $ MC.interactions -= 1
 
-        show screen show_event(girl.get_pic("hurt", "sad", "profile", soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
+        "On your way to the [girl.location], you see [girl.name], sitting in the dirt and trembling in her torn clothes. It seems she hasn't eaten in days."
+
+        $ pic = girl.get_pic("hurt", "sad", and_tags=["profile"], soft=True)
+        if not pic:
+            $ pic = girl.get_pic("profile", soft=True)
+
+        show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
         with dissolve
 
         "On your way to the [girl.location], you see [girl.name], sitting in the dirt and trembling in her torn clothes. It seems she hasn't eaten in days."
@@ -1393,7 +1403,7 @@ label show_relationship_change(girl1, girl2, old_status, new_status):
         "[girl1.name] and [girl2.name] are no longer [old_status]s."
 
     else:
-        $ raise AssertionError, "未找到状态: " + new_status
+        $ raise AssertionError, "Status not found: " + new_status
 
     hide screen night
 
@@ -3355,6 +3365,8 @@ label visit_twins():
 
 label send_to_farm(girl, duration=None, can_beg=True, can_cancel=True):
 
+    $ girl2 = None
+
     ## Check entry conditions ##
 
     if girl.farm_lock:
@@ -3392,8 +3404,8 @@ label send_to_farm(girl, duration=None, can_beg=True, can_cancel=True):
                     $ girl2 = long_menu("从农场选择一个女孩", menu_list)
 
                     if girl2:
-                        call farm_take_out(girl2, check_room=False) from _call_farm_take_out_1
-                        if _return: # Checks if girl was properly taken out
+                        call farm_take_out(girl2, check_room=False, context="check") from _call_farm_take_out_1
+                        if _return: # Checks if girl2 can be taken out
                             $ sent_success = True
                         else:
                             $ sent_success = False
@@ -3668,9 +3680,14 @@ label send_to_farm_menu():
         else:
             play sound s_rooster
 
-        "[girl.fullname] has been taken away to the farm."
-
         $ farm.send_girl(girl, prog)
+
+        if girl2:
+            call farm_take_out(girl2, check_room=False, context="swap")
+            "[girl.fullname] has been taken away to the farm, while [girl2.fullname] has been sent to [brothel.name]."
+        else:
+            "[girl.fullname] has been taken away to the farm."
+
 
     else: # Girl is already in farm
         $ farm.change_program(girl, prog)
@@ -3927,7 +3944,7 @@ label farm_max_skill(girl, skill):
 
     gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
 
-    if girl in farm.girls:
+    if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
@@ -3951,7 +3968,7 @@ label farm_max_pref(girl, act):
 
     gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
 
-    if girl in farm.girls:
+    if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
@@ -4163,7 +4180,7 @@ label farm_change_training_mode(girl):
 
     return
 
-label farm_take_out(girl, check_room=True):
+label farm_take_out(girl, check_room=True, context="normal"): # Context can be 'normal', 'check' or 'swap'
 
     $ prog = farm.programs[girl]
 
@@ -4177,7 +4194,10 @@ label farm_take_out(girl, check_room=True):
         elif check_room and len(MC.girls) >= brothel.bedrooms:
             gizel normal "And just where do you think you can put that wench? Your brothel is full."
 
-        elif renpy.call_screen("yes_no", "你想把[girl.fullname]送回青楼吗？"):
+        elif context == "check":
+            return True
+
+        elif context == "swap" or (context == "normal" and renpy.call_screen("yes_no", "你想把[girl.fullname]送回青楼吗？")):
             hide screen girl_stats
             hide screen girl_profile
             hide screen button_overlay
@@ -4343,7 +4363,7 @@ label exit_farm(girl, reason):
                 for act in extended_sex_acts:
                     if not girl.will_do_farm_act(act, prog.mode):
                         resist = True
-                        renpy.say(gizel, MC.name + "，我已经尽可能地训练" + girl.fullname + "，但有些事情她拒绝做。也许，如果你允许我对她进行{i}真正{/i}严厉的训练......")
+                        renpy.say(gizel, MC.name + "，我已经尽可能地训练" + girl.fullname + "，但有些事情她拒绝做。也许，如果你允许我对她进行{i}真正{/i}严厉的训练……")
                         break
                 else:
                     prep = {"indifferent" : " to", "interested" : " by", "fascinated" : " with"}[prog.condition]
@@ -5629,7 +5649,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 
             con.char "More importantly, you caught the thief and we got back [con.organizer]'s family heirloom. You deserve a reward."
 
-            call receive_item(get_rand_item("exceptional"), msg="女仆递给你一件非常昂贵的物品，以补偿你的损失: %s。") from _call_receive_item_18
+            call receive_item(get_rand_item("exceptional"), msg="女仆递给你一件非常昂贵的物品，以补偿你的损失：%s。") from _call_receive_item_18
 
         else:
             scene black with fade
@@ -6505,9 +6525,9 @@ label tax_payment(): # Happens in the evening of the 1st each month if taxes are
             show taxgirl with dissolve
 
             $ text1 = rand_choice(["晚上好。", "你好，[MC.name]。", "嗨，亲爱的。", "*咚咚咚*", "嘿，[MC.name]。", "嗨。"])
-            $ text1 += " " + rand_choice(["公会的收藏品来了。", "你的友好邻里公会收藏家在这里。", "你的公会会员费已经到期。", "我希望你把我的......公会的钱准备好。", "现在是缴纳会费的时候了。", "现在是奴隶主行会收取其应得报酬的时候了。", "我希望你已经收集了足够的钱来保护自己。"])
+            $ text1 += " " + rand_choice(["公会的收藏品来了。", "你的友好邻里公会收藏家在这里。", "你的公会会员费已经到期。", "我希望你把我的……公会的钱准备好。", "现在是缴纳会费的时候了。", "现在是奴隶主行会收取其应得报酬的时候了。", "我希望你已经收集了足够的钱来保护自己。"])
 
-            $ taxgirl(text1)
+            taxgirl "[text1!t]"
 
             taxgirl "As a reminder, you owe us [NPC_taxgirl.current_tax] denars for last month."
 
@@ -6853,7 +6873,7 @@ label tax_relationship_test():
                 you "Not today, sorry. I've got a lot on my plate."
 
     else:
-        $ taxgirl(rand_choice(["嗯，谢谢。很快就会再见面。*暗喜*", "谢谢你。那我就先走了。", "似乎所有的金币都，嗯......有所交代。很好。那么再见了。", "嗯... 好，非常好。我很快就会再见到你。", "似乎一切都在这里。完美。"]))
+        $ taxgirl(rand_choice(["嗯，谢谢。很快就会再见面。*暗喜*", "谢谢你。那我就先走了。", "似乎所有的金币都，嗯……有所交代。很好。那么再见了。", "嗯... 好，非常好。我很快就会再见到你。", "似乎一切都在这里。完美。"]))
 
     return
 

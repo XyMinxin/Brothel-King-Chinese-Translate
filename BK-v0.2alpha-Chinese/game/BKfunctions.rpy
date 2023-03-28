@@ -216,7 +216,7 @@ init -3 python:
         if not glist:
             renpy.say("", event_color["bad"] % "游戏无法在当前的女孩组合中找到一个女孩包。" + "\n你已经下载并安装了女孩包了吗？\n访问[URL]以获得你的第一个女孩包。")
 #            raise AssertionError, "No girls found! Did you download a girl pack?"
-            renpy.say("", "退出Ren'Py...{w=1}{nw}")
+            renpy.say("", "退出Ren'Py……{w=1}{nw}")
             renpy.quit()
 
         return glist
@@ -1177,7 +1177,7 @@ init -3 python:
 
                 else: # No one is here to help out
                     arson_text += cust.name + "{color=[c_red]}想放火烧掉你的青楼！\n你听到你的姑娘们在大喊大叫，很快就看到你的房子里冒出了浓烟。{/color}"
-                    arson_report = "{color=[c_red]}" + arson_report + "青...青楼着火了！{/color}"
+                    arson_report = "{color=[c_red]}" + arson_report + "青……青楼着火了！{/color}"
                     arson = True
 
                 if arson:
@@ -2067,18 +2067,18 @@ init -3 python:
 
         # Compose right text (changes)
 
-        text_changes = "难度: " + cust_diff_description(cust_diff)
-        text_changes += "\n\n掷骰: " + "{image=" + "img_dice" + str(d) + "}"
+        text_changes = "难度：" + cust_diff_description(cust_diff)
+        text_changes += "\n\n掷骰：" + "{image=" + "img_dice" + str(d) + "}"
         if "reroll" in specials:
             text_changes += " (Reroll)"
             ev_sound = s_dice
-            text_changes += "\n技能得分: " + plus_text(stat_bonus + job_bonus)
+            text_changes += "\n技能得分：" + plus_text(stat_bonus + job_bonus)
         if sensitivity_bonus:
-            text_changes += "\n敏感得分: " + plus_text(sensitivity_bonus)
-            text_changes += "\n客户得分: " + plus_text(cust_bonus)
-            text_changes += "\n其他得分: " + plus_text(misc_bonus)
+            text_changes += "\n敏感得分：" + plus_text(sensitivity_bonus)
+            text_changes += "\n客户得分：" + plus_text(cust_bonus)
+            text_changes += "\n其他得分：" + plus_text(misc_bonus)
 
-        text_changes += "\n\n{b}最终结果{/b}: " + str(score) + " ({color=" + result_colors[result] + "}" + result_name_dict[result] + "{/color})\n"
+        text_changes += "\n\n{b}最终结果{/b}：" + str(score) + " ({color=" + result_colors[result] + "}" + result_name_dict[result] + "{/color})\n"
 
         for girl in girls:
             if level_up[girl]:
@@ -2200,6 +2200,7 @@ init -3 python:
 
                 d = dice(3)
 
+                # Naked event
                 if s_act == "naked":
 
                     if d == 1: # Obedience
@@ -3052,23 +3053,23 @@ init -3 python:
 
         if shake_count == 1:
 
-            renpy.say(you, "我的意思是，我可以...", interact=False)
+            renpy.say(you, "我的意思是，我可以……", interact=False)
 
         elif shake_count == 2:
 
-            renpy.say(you, "你知道的，只要五秒钟...", interact=False)
+            renpy.say(you, "你知道的，只要五秒钟……", interact=False)
 
         elif shake_count == 3:
 
-            renpy.say(you, "它不会伤害任何人...", interact=False)
+            renpy.say(you, "它不会伤害任何人……", interact=False)
 
         elif shake_count == 4:
 
-            renpy.say(you, "什么... 我到底怎么了...", interact=False)
+            renpy.say(you, "什么……我到底怎么了……", interact=False)
 
         elif shake_count == 5:
 
-            renpy.say(you, "我... 我控制不了自己...", interact=False)
+            renpy.say(you, "我……我控制不了自己……", interact=False)
 
             shake_count = 0
 
@@ -3429,9 +3430,9 @@ init -3 python:
 
                 del persistent.mods[name]
                 # reset_updated_games()
-                renpy.notify("Mod: " + name + "已经被移除了。")
+                renpy.notify("Mod：" + name + "已经被移除了。")
 
-                mod_traceback += "\n" + "Mod: " + name + "已经被移除了。"
+                mod_traceback += "\n" + "Mod：" + name + "已经被移除了。"
 
         # Checks new mods or new mod versions
 
@@ -3443,7 +3444,7 @@ init -3 python:
                 register_mod(mod)
                 renpy.notify(mod.full_name + "已经添加了。")
 
-                mod_traceback += "\n" + "Mod: " + name + "已经添加了。"
+                mod_traceback += "\n" + "Mod：" + name + "已经添加了。"
 
             # Finding new version (basic checks: version number and events lenght)
 
@@ -3452,7 +3453,7 @@ init -3 python:
                 register_mod(mod)
                 renpy.notify(mod.full_name + "已经升级了。")
                 mod.active = True
-                mod_traceback += "\n" + "Mod: " + name + "已经升级了。"
+                mod_traceback += "\n" + "Mod：" + name + "已经升级了。"
 
             # Activating mod if it exists
 
@@ -3460,7 +3461,7 @@ init -3 python:
                 mod.active = True
 #                if debug_mode:
 #                    renpy.notify(mod.full_name + " has been activated.")
-                mod_traceback += "\n" + "Mod: " + name + "已经启用了。"
+                mod_traceback += "\n" + "Mod：" + name + "已经启用了。"
 
         # persistent.mods should now be updated to reflect all currently available mods
 
@@ -3470,7 +3471,7 @@ init -3 python:
 
         persistent.mods[mod.name] = {"version" : mod.version, "check" : mod.get_check(), "active" : mod.active}
 
-        mod_traceback += "\n" + "Mod: " + mod.name + "已经注册了。"
+        mod_traceback += "\n" + "Mod：" + mod.name + "已经注册了。"
 
 #     def reset_mod(mod): #! No longer required
 
@@ -3526,11 +3527,11 @@ init -3 python:
 
         msg += str(working_girls) + " 位女孩今晚要工作"
 
-        msg += "\n{size=-2}" + "- 服务员: " + event_color["good"] % str(waitresses) + "\n"
-        msg += "- 舞　娘: " + event_color["good"] % str(dancers) + "\n"
-        msg += "- 按摩师: " + event_color["good"] % str(masseuses) + "\n"
-        msg += "- 艺　妓: " + event_color["good"] % str(geishas) + "\n"
-        msg += "- 妓　女: " + event_color["good"] % str(whores) + "\n{/size}\n"
+        msg += "\n{size=-2}" + "- 服务员：" + event_color["good"] % str(waitresses) + "\n"
+        msg += "- 舞　娘：" + event_color["good"] % str(dancers) + "\n"
+        msg += "- 按摩师：" + event_color["good"] % str(masseuses) + "\n"
+        msg += "- 艺　妓：" + event_color["good"] % str(geishas) + "\n"
+        msg += "- 妓　女：" + event_color["good"] % str(whores) + "\n{/size}\n"
 
         if away > 1:
             msg += str(away) + " 位女孩进行外派任务或课程培训了\n\n"
@@ -3546,8 +3547,8 @@ init -3 python:
 
             msg += str(len(farm.girls)) + " 位女孩今晚将在农场度过"
 
-            msg += "\n{size=-2}" + "- 在训练中: " + event_color["good"] % str(farm_training) + "\n"
-            msg += "- 在待机中: " + event_color["good"] % str(farm_holding) + "\n{/size}\n"
+            msg += "\n{size=-2}" + "- 在训练中：" + event_color["good"] % str(farm_training) + "\n"
+            msg += "- 在待机中：" + event_color["good"] % str(farm_holding) + "\n{/size}\n"
 
             msg += str(farm_resting) + " 位女孩今晚将在农场休息"
 
@@ -3798,13 +3799,13 @@ init -3 python:
         elif d["main diversity average"] < 3:
             rating += "-"
 
-        ttip = "女孩包评级: %s, " % rating
+        ttip = "女孩包评级：%s, " % rating
         #<Chris12 PackState>
         #ttip += "\nPictures: " + str(len(girl.pics))
-        ttip += "图片: " + str(len(GirlFilesDict.get_pics(girl.path)))
+        ttip += "图片：" + str(len(GirlFilesDict.get_pics(girl.path)))
         #</Chris12 PackState>
-        ttip += "\n主要标签得分: " + str(round_int(d["main cover score"]*100)) + "% (" + str(round(d["main diversity average"], 1)) + " picture/existing tag)"
-        ttip += "\n可选标签得分: " + str(round_int(d["optional cover score"]*100)) + "% (" + str(round(d["optional diversity average"], 1)) + " picture/existing tag)"
+        ttip += "\n主要标签得分：" + str(round_int(d["main cover score"]*100)) + "% (" + str(round(d["main diversity average"], 1)) + " picture/existing tag)"
+        ttip += "\n可选标签得分：" + str(round_int(d["optional cover score"]*100)) + "% (" + str(round(d["optional diversity average"], 1)) + " picture/existing tag)"
 
         return event_color[col] % rating, ttip
 
@@ -4547,17 +4548,17 @@ init -3 python:
         if extras_dict["farm"]:
             game.achievements = False
             if final:
-            farm.active = True
-            farm_firstvisit = False
-            gizel_name = "Gizel"
+                farm.active = True
+                farm_firstvisit = False
+                gizel_name = "Gizel"
             # renpy.notify("farm")
 
         if extras_dict["carpenter"]:
             game.achievements = False
             if final:
-            carpenter_active = True
-            story_flags["found wagon"] = True
-            story_flags["met carpenter"] = True
+                carpenter_active = True
+                story_flags["found wagon"] = True
+                story_flags["met carpenter"] = True
             carpenter_name = "Iulia"
             # renpy.notify("carpenter")
 
@@ -4571,9 +4572,9 @@ init -3 python:
         if extras_dict["shops"]:
             game.achievements = False
             if final:
-            farmland.action = True
-            sewers.action = True
-            junkyard.action = True
+                farmland.action = True
+                sewers.action = True
+                junkyard.action = True
             if extras_dict["shops"] >= 2:
                 harbor.action = True
                 arena.action = True
@@ -4590,27 +4591,27 @@ init -3 python:
         if extras_dict["resources"]:
             game.achievements = False
             if final:
-            if extras_dict["resources"] >= 2:
-                shipyard.action = True
-                stables.action = True
-                beach.action = True
-            if extras_dict["resources"] >= 4:
-                old_ruins.action = True
-                hanging_gardens.action = True
-                guild_quarter.action = True
-            if extras_dict["resources"] >= 6:
-                falls.action = True
+                if extras_dict["resources"] >= 2:
+                    shipyard.action = True
+                    stables.action = True
+                    beach.action = True
+                if extras_dict["resources"] >= 4:
+                    old_ruins.action = True
+                    hanging_gardens.action = True
+                    guild_quarter.action = True
+                if extras_dict["resources"] >= 6:
+                    falls.action = True
             # renpy.notify("resources")
 
         if extras_dict["trainers"]:
             game.achievements = False
             if final:
-            MC.trainers.append(NPC_maya)
-            MC.trainers.append(NPC_lieutenant)
-            MC.trainers.append(NPC_captain)
-            MC.trainers.append(NPC_renza)
-            MC.trainers.append(NPC_satella)
-            MC.trainers.append(NPC_bast)
+                MC.trainers.append(NPC_maya)
+                MC.trainers.append(NPC_lieutenant)
+                MC.trainers.append(NPC_captain)
+                MC.trainers.append(NPC_renza)
+                MC.trainers.append(NPC_satella)
+                MC.trainers.append(NPC_bast)
             # renpy.notify("trainers")
 
     def update_available_mixes():
@@ -4774,6 +4775,16 @@ init -3 python:
         # Trim "game/" and the current file from the folder path
         foldername = foldername[len("game/"):foldername.rfind("/")+1]
         return foldername
+
+## 中文翻译函数 ##
+
+    def translate_cn(text1, dictionary):
+        if text1 in dictionary:
+            text2=dictionary[text1]
+        else:
+            text2=text1
+        
+        return text2
 
 
 #### END OF BK FUNCTIONS FILE ####

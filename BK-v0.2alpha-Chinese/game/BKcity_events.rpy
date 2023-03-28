@@ -690,6 +690,7 @@ label city_impress:
 
         $ result = 0
 
+    $ spent_AP = 0
 
     if result == -1:
 
@@ -857,11 +858,14 @@ label city_impress:
 
         "You have earned a lot of prestige. You are exhausted and can no longer act today."
 
+        $ spent_AP = MC.interactions
         $ MC.interactions = 0
         $ unlock_achievement("h impress")
 
     if result > 0:
-        $ MC.change_prestige(result * selected_district.rank * brothel.get_effect("boost", "city rewards"))
+        $ MC.change_prestige((result+spent_AP) * selected_district.rank * brothel.get_effect("boost", "city rewards"))
+        if spent_AP:
+            "You have received a prestige boost from your [spent_AP] spent AP."
 
     if result > 1 and dice(6) >= 5:
         ev_girl1 "Hey, buddy, thanks for the ride... Here, we found this on our last adventure."
@@ -1477,11 +1481,13 @@ label city_slave:
 
         with dissolve
 
+        $ MC.change_prestige((1+MC.interactions) * selected_district.rank * brothel.get_effect("boost", "city rewards"))
         "You have earned prestige. Some of your girls have increased their sex stats.\nYou have expended all your actions for the day."
 
+        if MC.interactions:
+            "You have received a prestige boost from your [MC.interactions] spent AP."
         $ MC.interactions = 0
 
-        $ MC.change_prestige(selected_district.rank * brothel.get_effect("boost", "city rewards"))
         $ unlock_achievement("h slavemarket")
 
         python:
@@ -2808,10 +2814,12 @@ label city_cat:
 
                 with dissolve
 
+                $ MC.change_prestige((2+MC.interactions) * selected_district.rank * brothel.get_effect("boost", "city rewards"))
                 "You have earned prestige. You have no remaining actions for the day."
 
+                if MC.interactions:
+                    "You have received a prestige boost from your [MC.interactions] spent AP."
                 $ MC.interactions = 0
-                $ MC.change_prestige(selected_district.rank * 2 * brothel.get_effect("boost", "city rewards"))
 
     else:
 
@@ -4673,10 +4681,14 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
         return
 
     # Only girls with a suitable pic may trigger this event
-    $ beach_pic = girl.get_pic("beach", "swimsuit", naked_filter=True, soft=True)
+    $ beach_pic = girl.get_pic("beach", "swimsuit", and_tags=["profile"], not_tags=["naked", "wet"], soft=True, strict=True)
+    if not beach_pic:
+        $ beach_pic = girl.get_pic("beach", "swimsuit", naked_filter=False, soft=True, strict=True)
 
     if not beach_pic:
         return
+    # Not naked since she's hanging in the beach with her swimsuit.
+    # Shouldnt have wet tag since it can mess with the oil rub event.
 
     $ story_flags["last beach event"] = calendar.time
 
@@ -4749,7 +4761,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             if result:
                 "She lays down on her back as you warm the oil between your hands. As you start rubbing it on her exposed skin, you feel some warmth in your pants."
 
-                $ pic = girl.get_pic("beach", "swimsuit", and_tags=["wet"], naked_filter=True, soft=True, strict=True)
+                $ pic = girl.get_pic("wet", and_tags=["beach", "swimsuit"], not_tags=["cumshot"], soft=True)
 
                 if pic:
                     show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
@@ -4815,11 +4827,10 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                     if attitude >= target:
 
-                        $ pic = girl.get_pic(["beach", "wet"], ["swimsuit", "wet"], and_tags=fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                        if not pic:
-                            $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                        $ pic = girl.get_pic("beach", "swimsuit", and_tags=fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                             if not pic:
                                 $ pic = girl.get_pic(fix_dict[fix].tag_list[0], "naked", not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                        # revome the wet tag for 2 reason: (1). It doesnt matter, the "beach" tag should be specific enough. (2). A lot of beach event use "wet" as andtag so it make the pic show up if not tagging carefully.
 
                         if pic:
                             show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
@@ -4860,9 +4871,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         menu:
                             "Make her come":
-                                $ pic = girl.get_pic(["beach", "wet"], ["swimsuit", "wet"], and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                                if not pic:
-                                    $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                                $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                     if not pic:
                                         $ pic = girl.get_pic(["orgasm"] + fix_dict[fix].tag_list[0], strict=True, not_tags=["sex", "anal", "group", "bisexual"], hide_farm=True)
 
@@ -4883,11 +4892,9 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                                 $ stat2 = rand_choice(["obedience", "sensitivity"])
 
                             "Deny her orgasm[s1]":
-                                $ pic = girl.get_pic(["beach", "wet"], ["swimsuit", "wet"], and_tags=["denied"] + fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                                if not pic:
-                                    $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["denied"] + fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                                $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                     if not pic:
-                                        $ pic = girl.get_pic(["denied"] + fix_dict[fix].tag_list[0], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                                    $ pic = girl.get_pic(["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
 
                                 if pic:
                                     show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8))
@@ -5029,11 +5036,14 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         $ act = "service"
                         $ fix = "oral"
 
-                        $ pic = girl.get_pic("oral", "service", and_tags=["beach"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                        $ pic = girl.get_pic("oral", "service", and_tags=["beach"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
                         if not pic:
-                            $ pic = girl.get_pic("oral", "service", and_tags=["swimsuit"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                            $ pic = girl.get_pic("oral", "service", and_tags=["swimsuit"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
                             if not pic:
+                                $ pic = girl.get_pic("oral", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["cumshot", "group", "bisexual"], strict=True)
+                                if not pic:
                                 $ pic = girl.get_pic("oral", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
+                        #adding cumshot to not_tags so it wont break immersion, i guess :v
 
                         you "Open your mouth and look me in the eyes..."
 
@@ -5041,10 +5051,12 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         $ act = "service"
                         $ fix = "titjobs"
 
-                        $ pic = girl.get_pic("titjob", "service", and_tags=["beach"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                        $ pic = girl.get_pic("titjob", "service", and_tags=["beach"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
                         if not pic:
-                            $ pic = girl.get_pic("titjob", "service", and_tags=["swimsuit"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                            $ pic = girl.get_pic("titjob", "service", and_tags=["swimsuit"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
                             if not pic:
+                                $ pic = girl.get_pic("titjob", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["cumshot", "group", "bisexual"], strict=True)
+                                if not pic:
                                 $ pic = girl.get_pic("titjob", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
 
                         you "I've got my eyes on your titties for some time... Why don't you use them to pleasure me?"
@@ -5053,9 +5065,11 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         $ act = "sex"
                         $ fix = None
 
-                        $ pic = girl.get_pic("sex", and_tags=["beach"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                        $ pic = girl.get_pic("sex", and_tags=["beach"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
                         if not pic:
-                            $ pic = girl.get_pic("sex", and_tags=["swimsuit"] + and_tags, not_tags=["group", "bisexual"], strict=True)
+                            $ pic = girl.get_pic("sex", and_tags=["swimsuit"] + and_tags, not_tags=["cumshot", "group", "bisexual"], strict=True)
+                            if not pic:
+                                $ pic = girl.get_pic("sex", "naked", and_tags=["beach", "swimsuit"], not_tags=["cumshot", "group", "bisexual"], strict=True)
                             if not pic:
                                 $ pic = girl.get_pic("sex", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
 
@@ -5437,7 +5451,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                     "The three men eagerly jump on [girl.name], and she squeals as they start grabbing and rubbing her private parts."
 
-                $ not_tags = opposite_sex_acts[act]
+                $ not_tags = opposite_sex_acts[act] + ["cumshot"]
 
                 $ pic = girl.get_pic("beach", "swimsuit", act, and_tags=[act], not_tags=not_tags, hide_farm=True)
 
@@ -5606,7 +5620,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                     "Give up":
                         $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你现在欠我的。",
-                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你......但也请你不要考验我的耐心。"))
+                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你……但也请你不要考验我的耐心。"))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)

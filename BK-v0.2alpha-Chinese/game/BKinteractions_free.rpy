@@ -38,6 +38,11 @@ label free_girl_interact(girl):
 
 label free_girl_talk(girl):
 
+    if girl.location.lower() in beach_locations:
+        $ use_locations = ["beach"]
+    else:
+        $ use_locations = []
+
     if not girl.MC_interact:
 
         hide screen visit_location
@@ -113,7 +118,7 @@ label free_girl_talk(girl):
     elif girl.get_love() >= 75 and girl.MC_relationship_level == 3:
         hide screen visit_location
 
-        show screen show_event(girl.get_pic("date", "profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=loc_pic)
+        show screen show_event(girl.get_pic("date", "profile", and_tags=use_locations, naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=loc_pic)
         with fade
 
         call free_girl_girlfriend(girl) from _call_free_girl_girlfriend
@@ -121,7 +126,7 @@ label free_girl_talk(girl):
     elif girl.get_love() >= 90 and girl.MC_relationship_level == 4:
         hide screen visit_location
 
-        show screen show_event(girl.get_pic("date", "profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=loc_pic)
+        show screen show_event(girl.get_pic("date", "profile", and_tags=use_locations, naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=loc_pic)
         with fade
 
         call free_girl_job_request(girl) from _call_free_girl_job_request
@@ -185,7 +190,7 @@ label free_chat_small_talk(girl):
     $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
 
-    $ text1 = rand_choice(("今天的天气不错，你不觉得吗？", "我听说今天晚些时候可能会下雨...", "我上次来的时候，这里的人要多得多。", "你最近过得怎么样？有一阵子没见到你了。", "我看到你站在那里有一会了，所以...我想过来跟你聊几句。", "你不觉得这个地方很奇怪吗？", "这条狗看起来很奇怪，不是吗？"))
+    $ text1 = rand_choice(("今天的天气不错，你不觉得吗？", "我听说今天晚些时候可能会下雨……", "我上次来的时候，这里的人要多得多。", "你最近过得怎么样？有一阵子没见到你了。", "我看到你站在那里有一会了，所以……我想过来跟你聊几句。", "你不觉得这个地方很奇怪吗？", "这条狗看起来很奇怪，不是吗？"))
 
     you "[text1]"
 
@@ -382,7 +387,7 @@ label free_play(girl):
 
         $ snd = s_equip_dress
 
-        $ pic = girl.get_pic("strip", "naked", "profile", soft=True, hide_farm=True)
+        $ pic = girl.get_pic("strip", "naked", "profile", and_tags=use_locations, not_tags=all_jobs, soft=True, hide_farm=True)
 
     elif act == "service":
 
@@ -392,7 +397,7 @@ label free_play(girl):
 
         $ snd = "sucking.wav"
 
-        $ pic = girl.get_pic("service", "naked", "profile", not_tags = ["group", "bisexual"], hide_farm=True)
+        $ pic = girl.get_pic("service", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
         if pic.has_tag("mast"):
             $ text1 = "我想让你给我手交。"
@@ -416,11 +421,11 @@ label free_play(girl):
 
         $ diff = 78
 
-        $ text1 = "让我给你..."
+        $ text1 = "让我给你……"
 
         $ snd = "orgasm.wav"
 
-        $ pic = girl.get_pic("sex", "naked", "profile", not_tags = ["group", "bisexual"], hide_farm=True)
+        $ pic = girl.get_pic("sex", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
 #         $ likes = ("nerd", "sweet")
 
@@ -437,7 +442,7 @@ label free_play(girl):
 
         $ snd = "orgasm2.mp3"
 
-        $ pic = girl.get_pic("anal", "sex", "naked", "profile", not_tags = ["group", "bisexual"], hide_farm=True)
+        $ pic = girl.get_pic("anal", "sex", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
 #         $ likes = ("masochist", "rebel")
 
@@ -454,7 +459,7 @@ label free_play(girl):
 
         $ snd = "screams.wav"
 
-        $ pic = girl.get_pic("fetish", "service", "naked", "profile", not_tags = ["group", "bisexual"], hide_farm=True)
+        $ pic = girl.get_pic("fetish", "service", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
 #         $ likes = ("masochist", "cold")
 
@@ -686,7 +691,7 @@ label free_flirt_sex_tastes(girl):
 
             "She blushes as she whispers something to you."
 
-            $ text1 = "嗯，我听说过很多关于%s的事情..." % long_act_description[act]
+            $ text1 = "嗯，我听说过很多关于%s的事情……" % long_act_description[act]
 
             $ girl.personality_unlock[act] = True
             $ girl.personality_unlock["LM"] += MC.get_charisma() + 15 + dice(10)
@@ -717,7 +722,7 @@ label free_flirt_sex_tastes(girl):
                     $ girl.personality_unlock[fix.name] = True
 
             else:
-                $ text1 = "%s让我很不舒服..." % long_act_description[act]
+                $ text1 = "%s让我很不舒服……" % long_act_description[act]
 
                 "She blushes as she whispers something to you."
 
@@ -754,7 +759,7 @@ label free_flirt_sex_act(girl):
     elif act == "service":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
         $ MC.rand_say(("你经常自慰吗？", "你喜欢口交吗？", "你喜欢如何对男人下手呢？", "ar: 你对阿里奥斯的蜡烛崇拜了解多少？", "ev: 你想不想被我的鸡巴塞进喉咙？",
-            "ne: 我相信你可以用你的这些本钱来取悦男人...", "gd: 你有着这样迷人的小嘴，一定能提供最好的口交...", "tr: 在过往旅途中，我发现熟练的口活是你获得想要的东西的最好方法...对于像你这样的漂亮孩子来说更是如此。你觉得呢？ *眨眼*"))
+            "ne: 我相信你可以用你的这些本钱来取悦男人……", "gd: 你有着这样迷人的小嘴，一定能提供最好的口交……", "tr: 在过往旅途中，我发现熟练的口活是你获得想要的东西的最好方法……对于像你这样的漂亮孩子来说更是如此。你觉得呢？*眨眼*"))
 
     elif act == "sex":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
@@ -762,18 +767,18 @@ label free_flirt_sex_act(girl):
 
     elif act == "anal":
         $ girl.personality_unlock["LM"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("用后门做过吗？", "你喜欢从后面做吗？你知道的...", "ev: 你看起来像个卖屁股的骚货。是吗？", "gd: 你用过你的另一个爱洞吗？", "ne: 你喜欢用屁股做的感觉吗？",
+        $ MC.rand_say(("用后门做过吗？", "你喜欢从后面做吗？你知道的……", "ev: 你看起来像个卖屁股的骚货。是吗？", "gd: 你用过你的另一个爱洞吗？", "ne: 你喜欢用屁股做的感觉吗？",
             "sh: 你有用Shalia的方法做过吗？", "wr: 在战争中，最好从后面冲锋。在爱情中也是如此，你觉得呢？"))
 
     elif act == "fetish":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
         $ MC.rand_say(("你喜欢变态的性爱吗？", "你喜欢在床上做非常下流的事吗？", "你喜欢快乐与痛苦交织的感觉吗？", "你拥有很多性玩具吗？",
-                       "ev: 你想让我伤害你吗？说吧。", "ne: 你会和我一起走多远？我知道一两个有意思的伎俩...", "gd: 你相信我吗？我可以向你展示一些有趣而又下流的伎俩...",
+                       "ev: 你想让我伤害你吗？说吧。", "ne: 你会和我一起走多远？我知道一两个有意思的伎俩……", "gd: 你相信我吗？我可以向你展示一些有趣而又下流的伎俩……",
                        "wz: 有些女孩喜欢用魔法来调剂她们的性爱。我们要不也试试？"))
 
     elif act == "bisexual":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("曾经有和女孩做过吗？", "你喜欢和其他女孩在一起吗？", "听说过百合吗？你试过吗？", "tr: 在Borgo，女渔民们喜欢互相擦拭珍珠。你呢？",
+        $ MC.rand_say(("曾经有和女孩做过吗？", "你喜欢和其他女孩在一起吗？", "听说过百合吗？你试过吗？", "tr: 在博尔格，渔妇们喜欢互相磨光彼此的珍珠。你呢？",
                         "你是百合吗？", "你喜欢女孩子吗？", "ev: 只有婊子才知道。你有没有试过和女孩上床？", "ne: 男人还是女人，这对你来说有什么关系吗？", "gd: 你很迷人也很有爱心，我相信女人也喜欢你。不是吗？", "sh: 崇拜女神总是比崇拜神灵更令人满意，你觉得呢？",
                         ))
 
@@ -781,7 +786,7 @@ label free_flirt_sex_act(girl):
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
         $ MC.rand_say(("曾经参加过狂欢吗？", "你喜欢3P吗？", "gd: 你不觉得人越多越好吗？", "ev: 你能同时应付多少根肉棒？",
                         "你喜欢群交吗？", "ne: 同时和几个人性交感觉怎么样？会让你兴奋起来吗？", "ng: 你与其浪费宝贵的时间向善变的神灵祈祷，还不如去享受那天堂般的乱交盛宴。你不觉得很棒吗？",
-                        "wr: 战士在与众多敌人作战时是最好的训练。而爱情，如同战场......"))
+                        "wr: 战士在与众多敌人作战时是最好的训练。而爱情，如同战场……"))
 
 #     $ pref = girl.get_preference(act)
 
@@ -1230,6 +1235,15 @@ label free_girl_girlfriend(girl):
 
         python:
 
+            fav_list = []
+
+            if type == "favorite":
+
+                fav_list.append(girl.likes[thing])
+
+            else:
+
+                fav_list.append(girl.dislikes[thing])
 
             if thing == "color":
 

@@ -34,10 +34,12 @@ init -2 python:
         NPC_mizuki.loc = beach
         NPC_haruka.loc = prison
 
-        NPC_narika.flags["hunt stage"] = NPC_mizuki.flags["hunt stage"] = NPC_haruka.flags["hunt stage"] = 0
+        # Guest setup
+        NPC_narika.guest = "guest3"
+        NPC_mizuki.guest = "guest2"
+        NPC_haruka.guest = "guest1"
 
-        for guest in ["guest1", "guest2", "guest3"]:
-            story_flags["ninja hunt " + guest]
+        NPC_narika.flags["hunt stage"] = NPC_mizuki.flags["hunt stage"] = NPC_haruka.flags["hunt stage"] = 0
 
         story_flags["ninja hunt"] = "start"
 
@@ -64,6 +66,7 @@ init -2 python:
             self.ninja = ninja
             self.sprite = self.get_ninja_sprite()
             self.guest = guest # Guest encounter
+            self.guest_hits = 0
             self.timer = timer
             self.countdown = countdown
             self.special = special
@@ -145,6 +148,9 @@ init -2 python:
             return self.timer + renpy.random.random() * 0.5 - 0.25
 
 
+screen no_click:
+    button xsize xres() ysize yres() background None
+
 screen moving_buttons(but_list):
     tag njgame_moving_buttons
 
@@ -165,7 +171,7 @@ screen moving_buttons(but_list):
                     if not njgame.special == "fast" or t <= fast_speed:
                         action (Function(renpy.notify, notification), SetField(njgame, "hits", njgame.hits+1), Return(img))
                 elif img == njgame.guest:
-                    action (Function(renpy.notify, notification), SetDict(story_flags, "ninja hunt " + img, story_flags["ninja hunt " + img]+1), Return(img))
+                    action (Function(renpy.notify, notification), SetField(njgame, "guest_hits", njgame.guest_hits+1), Return(img))
                 else:
                     action (Function(renpy.notify, notification), SetField(njgame, "misses", njgame.misses+1), Return(img))
                 add img
@@ -193,14 +199,13 @@ label ninja_game(ninja): # Where ninja is an NPC object
 
     python:
         house_templates = ["house1", "house2", "house3", "house4", "house5", "house6", "house7", "house8", ]
-        guest = rand_choice([g for g in ["guest1", "guest2", "guest3"] if story_flags["ninja hunt " + g] < 3])
 
         special = False
 
         if ninja.flags["hunt stage"] == 2: # At stage 2, the ninja is uncatchable (stage 3 is unlocked through the story)
             special = {"Narika" : "fast", "Mizuki" : "rain", "Haruka" : "quake"}[ninja.name]
 
-        njgame = NinjaGame(ninja=ninja, guest=guest, special=special)
+        njgame = NinjaGame(ninja=ninja, guest=ninja.guest, special=special)
 
     show speed_effect with dissolve
     show expression njgame.get_pic() at ninja_move with easeinright
@@ -213,11 +218,11 @@ label ninja_game(ninja): # Where ninja is an NPC object
     call run_ninja_game(njgame) from _call_run_ninja_game
 
     if njgame.special:
-        $ centered(event_color["bad"] % "\n\n{b}拦截失败...{/b}")
+        $ centered(event_color["bad"] % "\n\n{b}拦截失败……{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept
     elif _return == "guest":
         $ centered(event_color["good"] % "\n\n{b}特殊遭遇！{/b}")
-        call expression ("ninja_" + guest) from _call_expression_7
+        call expression ("ninja_" + njgame.guest) from _call_expression_7
     elif _return == "ninja":
         $ centered(event_color["good"] % "\n\n{b}成功拦截！{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept_1
@@ -256,6 +261,8 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
         else:
             play music m_kunoichi fadein 2.0
 
+    $ _skipping = False
+
     $ stage_name = str(ninja.flags["hunt stage"] + 1)
 
     if njgame.special:
@@ -292,8 +299,8 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
 
         $ but_list = [(njgame.sprite, "Hit!!!", njgame.rand_house_move()), ("passerby1", "Miss...", njgame.rand_house_move()), ("passerby2", "Miss...", njgame.rand_house_move()), ("passerby3", "Miss...", njgame.rand_house_move()), ("passerby4", "Miss...", njgame.rand_house_move()), ("passerby5", "Miss...", njgame.rand_house_move()), ("passerby6", "Miss...", njgame.rand_house_move()), ("passerby7", "Miss...", njgame.rand_house_move()), ("passerby8", "Miss...", njgame.rand_house_move()), ("passerby9", "Miss...", njgame.rand_house_move())]
 
-        #! if njgame.guest:
-        #!     $ but_list.append((njgame.guest, "Uh?!?", njgame.rand_house_move()))
+        if njgame.guest:
+            $ but_list.append((njgame.guest, "Uh?!?", njgame.rand_house_move()))
 
         # Randomizes buttons
         $ but_list = rand_choice(but_list, 5)
@@ -307,6 +314,8 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
                 show lightning with flash
                 play sound s_fire
             hide lightning
+
+        show screen no_click()
 
         if njgame.special=="quake":
             $ renpy.pause(renpy.random.random()*0.5, hard=True)
@@ -391,7 +400,7 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
                 with vpunch
                 hide expression _return
 
-                if story_flags["ninja hunt " + njgame.guest] >= 3:
+                if njgame.guest_hits >= 3:
                     $ njgame.over = True
 
             call ninja_hunt_react(_return) from _call_ninja_hunt_react
@@ -399,13 +408,16 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
     $ change_cursor()
     hide countdown
     hide screen score
+    hide screen no_click
     $ config.keymap['button_ignore'] = ['mousedown_1']
     $ config.keymap['button_select'] = ['mouseup_1', 'K_RETURN', 'K_KP_ENTER', 'K_SELECT']
 
     stop music fadeout 3.0
+    $ _skipping = True
 
-    if story_flags["ninja hunt " + njgame.guest] >= 3:
+    if njgame.guest_hits >= 3:
         play sound s_spell
+        $ njgame.ninja.guest = None # Disables guest to avoid multiple event proc
         return "guest"
     elif njgame.hits >= 3:
         play sound s_spell

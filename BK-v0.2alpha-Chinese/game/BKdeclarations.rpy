@@ -23,98 +23,101 @@ define you = DynamicCharacter("MC.name", color=c_steel)
 
 
 ## SILL ##
-define sill = DynamicCharacter("sill_name", color=c_hotpink, image = "sill", window_left_padding=160) #show_two_window=True,
+define sill = DynamicCharacter("sill_name", color=c_hotpink, image = "sill", window_left_padding=int(config.screen_height*0.205)) #show_two_window=True,
 
 
 ## KUROHIME ##
-define kuro = DynamicCharacter("kuro_name", color = c_lightprune, image = "kuro", window_left_padding=160)
+define kuro = DynamicCharacter("kuro_name", color = c_lightprune, image = "kuro", window_left_padding=int(config.screen_height*0.205))
 define kurohime = kuro
 
 
 ## MAID ##
-define maid = DynamicCharacter("maid_name", color = c_softpurple, image = "maid", window_left_padding=160)
+define maid = DynamicCharacter("maid_name", color = c_softpurple, image = "maid", window_left_padding=int(config.screen_height*0.205))
 
 
 ## GIO ##
-define gio = Character("Gio", color = c_orange, image = "gio", window_left_padding=160)
+define gio = Character("Gio", color = c_orange, image = "gio", window_left_padding=int(config.screen_height*0.205))
 
 
 ## MISC ##
-define guard = Character("Guard", color= c_yellow, image = "guard", window_left_padding=160)
-define thug1 = Character("Thug", color= c_lightgreen, image = "thug1", window_left_padding=160)
-define thug2 = Character("Thug", color= c_red, image = "thug2", window_left_padding=160)
-define thug3 = Character("Thug", color= c_lightred, image = "thug", window_left_padding=160)
-define drogon = Character("Drogon", color= c_darkred, image = "drogon", window_left_padding=160)
-define security = Character("Security", color= c_white, image = "security", window_left_padding=160)
-define security_breach = Character("Security", color= c_red, image = "security_breach", window_left_padding=160)
+define guard = Character("Guard", color= c_yellow, image = "guard", window_left_padding=int(config.screen_height*0.205))
+define thug1 = Character("Thug", color= c_lightgreen, image = "thug1", window_left_padding=int(config.screen_height*0.205))
+define thug2 = Character("Thug", color= c_red, image = "thug2", window_left_padding=int(config.screen_height*0.205))
+define thug3 = Character("Thug", color= c_lightred, image = "thug", window_left_padding=int(config.screen_height*0.205))
+define drogon = Character("Drogon", color= c_darkred, image = "drogon", window_left_padding=int(config.screen_height*0.205))
+define security = Character("Security", color= c_white, image = "security", window_left_padding=int(config.screen_height*0.205))
+define security_breach = Character("Security", color= c_red, image = "security_breach", window_left_padding=int(config.screen_height*0.205))
 
 
 #### SCREEN CHARACTERS ####
 
-define slavegirl1 = Character("Slave girl", color = c_crimson, image = "slavegirl1", window_left_padding=160)
-define slavegirl2 = Character("Slave girl", color = c_violet, image = "slavegirl2", window_left_padding=160)
-define shopgirl = Character("Merchant", color = c_pink, image = "shopgirl", window_left_padding=160)
-define jobgirl = DynamicCharacter("jobgirl_name", color = c_firered, image = "jobgirl", window_left_padding=160)
-define bast = DynamicCharacter("bast_name", color = c_copper, image = "bast", window_left_padding=160)
-define banker = DynamicCharacter("banker_name", color=c_turquoise, image = "banker", window_left_padding=160)
-define taxgirl = DynamicCharacter("taxgirl_name", color=c_turquoise, image = "taxgirl", window_left_padding=160)
+define slavegirl1 = Character("Slave girl", color = c_crimson, image = "slavegirl1", window_left_padding=int(config.screen_height*0.205))
+define slavegirl2 = Character("Slave girl", color = c_violet, image = "slavegirl2", window_left_padding=int(config.screen_height*0.205))
+define shopgirl = Character("Merchant", color = c_pink, image = "shopgirl", window_left_padding=int(config.screen_height*0.205))
+define jobgirl = DynamicCharacter("jobgirl_name", color = c_firered, image = "jobgirl", window_left_padding=int(config.screen_height*0.205))
+define bast = DynamicCharacter("bast_name", color = c_copper, image = "bast", window_left_padding=int(config.screen_height*0.205))
+define banker = DynamicCharacter("banker_name", color=c_turquoise, image = "banker", window_left_padding=int(config.screen_height*0.205))
+define taxgirl = DynamicCharacter("taxgirl_name", color=c_turquoise, image = "taxgirl", window_left_padding=int(config.screen_height*0.205))
 
 
 #### FARM AND MERCHANT CHARACTERS ####
 
 # Gizel
-define gizel = DynamicCharacter("gizel_name", color=c_magenta, image = "gizel", window_left_padding=160)
+define gizel = DynamicCharacter("gizel_name", color=c_magenta, image = "gizel", window_left_padding=int(config.screen_height*0.205))
 
 # City merchants (Characters are also defined as NPCs in 'BKstart')
-define stella = DynamicCharacter("stella_name", color=c_lightmagenta, image="stella", window_left_padding=160)
-define goldie = DynamicCharacter("goldie_name", color=c_yellow, image="goldie", window_left_padding=160)
-define willow = DynamicCharacter("willow_name", color=c_copper, image="willow", window_left_padding=160)
-define gina = DynamicCharacter("gina_name", color=c_softpurple, image="gina", window_left_padding=160)
+define stella = DynamicCharacter("stella_name", color=c_lightmagenta, image="stella", window_left_padding=int(config.screen_height*0.205))
+define goldie = DynamicCharacter("goldie_name", color=c_yellow, image="goldie", window_left_padding=int(config.screen_height*0.205))
+define willow = DynamicCharacter("willow_name", color=c_copper, image="willow", window_left_padding=int(config.screen_height*0.205))
+define gina = DynamicCharacter("gina_name", color=c_softpurple, image="gina", window_left_padding=int(config.screen_height*0.205))
 
-define riche = DynamicCharacter("riche_name", color=c_azure, image="riche", window_left_padding=160)
-define ramias = DynamicCharacter("ramias_name", color=c_lightgrey, image="ramias", window_left_padding=160)
-define giftgirl = Character("Gift Shop Girl", color=c_hotpink, image="giftgirl", window_left_padding=160)
-define gurigura = DynamicCharacter("gurigura_name", color=c_yellow, image="gurigura", window_left_padding=160)
-define katryn = DynamicCharacter("katryn_name", color=c_lightgreen, image="katryn", window_left_padding=160)
-define today = DynamicCharacter("today_name", color=c_turquoise, image="today", window_left_padding=160)
-define yesterday = DynamicCharacter("yesterday_name", color=c_turquoise, image="yesterday", window_left_padding=160)
+define riche = DynamicCharacter("riche_name", color=c_azure, image="riche", window_left_padding=int(config.screen_height*0.205))
+define ramias = DynamicCharacter("ramias_name", color=c_lightgrey, image="ramias", window_left_padding=int(config.screen_height*0.205))
+define giftgirl = Character("Gift Shop Girl", color=c_hotpink, image="giftgirl", window_left_padding=int(config.screen_height*0.205))
+define gurigura = DynamicCharacter("gurigura_name", color=c_yellow, image="gurigura", window_left_padding=int(config.screen_height*0.205))
+define katryn = DynamicCharacter("katryn_name", color=c_lightgreen, image="katryn", window_left_padding=int(config.screen_height*0.205))
+define today = DynamicCharacter("today_name", color=c_turquoise, image="today", window_left_padding=int(config.screen_height*0.205))
+define yesterday = DynamicCharacter("yesterday_name", color=c_turquoise, image="yesterday", window_left_padding=int(config.screen_height*0.205))
 
 # Extras
-define templar = Character("Knight templar", color=c_lightgrey, image="templar", window_left_padding=160)
-define initiate = Character("Initiate", color=c_white, image="initiate", window_left_padding=160)
-define initiate1 = Character("First initiate", color=c_lightblue, image="initiate", window_left_padding=160)
-define initiate2 = Character("Second initiate", color=c_lightred, image="initiate", window_left_padding=160)
-define spirit = Character("Dark spirit", color=c_white, image="spirit", window_left_padding=160)
-define milkmaid = Character("Milkmaid", color=c_pink, image="milkmaid", window_left_padding=160)
+define templar = Character("Knight templar", color=c_lightgrey, image="templar", window_left_padding=int(config.screen_height*0.205))
+define initiate = Character("Initiate", color=c_white, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define initiate1 = Character("First initiate", color=c_lightblue, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define initiate2 = Character("Second initiate", color=c_lightred, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define spirit = Character("Dark spirit", color=c_white, image="spirit", window_left_padding=int(config.screen_height*0.205))
+define milkmaid = Character("Milkmaid", color=c_pink, image="milkmaid", window_left_padding=int(config.screen_height*0.205))
 define relative = Character("Willow's relative", color=c_copper)
-define blood1 = Character("Blonde officer", color=c_yellow, image="blood1", window_left_padding=160)
-define blood2 = Character("Auburn officer", color=c_copper, image="blood2", window_left_padding=160)
+define blood1 = Character("Blonde officer", color=c_yellow, image="blood1", window_left_padding=int(config.screen_height*0.205))
+define blood2 = Character("Auburn officer", color=c_copper, image="blood2", window_left_padding=int(config.screen_height*0.205))
 
 #### STORY (Chapter 1) ####
 
-define character.kosmo = DynamicCharacter("kosmo_name", color=c_gold, image = "kosmo", window_left_padding=160)
-define sergeant = DynamicCharacter("sergeant_name", color=c_copper, image = "sergeant", window_left_padding=160)
-define maya = DynamicCharacter("maya_name", color=c_firered, image = "maya", window_left_padding=160)
-define roz = Character("Roz", color=c_firered, image = "roz", window_left_padding=160)
-define lieutenant = DynamicCharacter("lieutenant_name", color = "#C06A45", image = "lieutenant", window_left_padding=160)
-define renza = DynamicCharacter("renza_name", color=c_orange_pink, image = "renza", window_left_padding=160)
-define satella = DynamicCharacter("satella_name", color=c_copper, image = "satella", window_left_padding=160)
-define captain = DynamicCharacter("captain_name", color=c_emerald, image = "captain", window_left_padding=160)
+define character.kosmo = DynamicCharacter("kosmo_name", color=c_gold, image = "kosmo", window_left_padding=int(config.screen_height*0.205))
+define sergeant = DynamicCharacter("sergeant_name", color=c_copper, image = "sergeant", window_left_padding=int(config.screen_height*0.205))
+define maya = DynamicCharacter("maya_name", color=c_firered, image = "maya", window_left_padding=int(config.screen_height*0.205))
+define roz = Character("Roz", color=c_firered, image = "roz", window_left_padding=int(config.screen_height*0.205))
+define lieutenant = DynamicCharacter("lieutenant_name", color = "#C06A45", image = "lieutenant", window_left_padding=int(config.screen_height*0.205))
+define renza = DynamicCharacter("renza_name", color=c_orange_pink, image = "renza", window_left_padding=int(config.screen_height*0.205))
+define satella = DynamicCharacter("satella_name", color=c_copper, image = "satella", window_left_padding=int(config.screen_height*0.205))
+define captain = DynamicCharacter("captain_name", color=c_emerald, image = "captain", window_left_padding=int(config.screen_height*0.205))
 
 
 #### STORY (Chapter 2) ####
 
-define shalia = DynamicCharacter("shalia_name", color=c_softpurple, image = "shalia", window_left_padding=160)
-define carpenter = DynamicCharacter("carpenter_name", color=c_firered, image = "carpenter", window_left_padding=160)
-define kenshin = DynamicCharacter("kenshin_name", color=c_copper, image = "kenshin", window_left_padding=160)
-define homura = DynamicCharacter("homura_name", color=c_purple, image = "homura", window_left_padding=160)
-define suzume = DynamicCharacter("suzume_name", color=c_lightblue, image = "suzume", window_left_padding=160)
-define narika = DynamicCharacter("narika_name", color=c_hotpink, image = "narika", window_left_padding=160)
-define mizuki = DynamicCharacter("mizuki_name", color=c_azure, image = "mizuki", window_left_padding=160)
-define haruka = DynamicCharacter("haruka_name", color=c_yellow, image = "haruka", window_left_padding=160)
-define kunoichi = Character("Kunoichi", color=c_red, image = "kunoichi", window_left_padding=160)
-define papa_apprentice = Character("Apprentice", color=c_softpurple, image = "papa_apprentice", window_left_padding=160)
-define papa = Character("Papa Freak", color=c_lightblue, image = "papa", window_left_padding=160)
+define shalia = DynamicCharacter("shalia_name", color=c_softpurple, image = "shalia", window_left_padding=int(config.screen_height*0.205))
+define carpenter = DynamicCharacter("carpenter_name", color=c_firered, image = "carpenter", window_left_padding=int(config.screen_height*0.205))
+define kenshin = DynamicCharacter("kenshin_name", color=c_copper, image = "kenshin", window_left_padding=int(config.screen_height*0.205))
+define homura = DynamicCharacter("homura_name", color=c_purple, image = "homura", window_left_padding=int(config.screen_height*0.205))
+define suzume = DynamicCharacter("suzume_name", color=c_lightblue, image = "suzume", window_left_padding=int(config.screen_height*0.205))
+define narika = DynamicCharacter("narika_name", color=c_hotpink, image = "narika", window_left_padding=int(config.screen_height*0.205))
+define mizuki = DynamicCharacter("mizuki_name", color=c_azure, image = "mizuki", window_left_padding=int(config.screen_height*0.205))
+define haruka = DynamicCharacter("haruka_name", color=c_yellow, image = "haruka", window_left_padding=int(config.screen_height*0.205))
+define kunoichi = Character("Kunoichi", color=c_red, image = "kunoichi", window_left_padding=int(config.screen_height*0.205))
+define papa_apprentice = Character("Apprentice", color=c_softpurple, image = "papa_apprentice", window_left_padding=int(config.screen_height*0.205))
+define papa = Character("Papa Freak", color=c_lightblue, image = "papa", window_left_padding=int(config.screen_height*0.205))
+define hokoma_warrior = Character("Fierce Woman", color=c_prune, image = "hokoma_warrior")
+define magical_girl = Character("Strange Girl", color=c_emerald, image = "magical_girl")
+define girl_scientist = Character("Nerdy Girl", color=c_firered, image = "girl_scientist")
 
 #### MISC. CHARACTERS ####
 
@@ -135,31 +138,31 @@ define passerby = Character("Passerby", color = c_lightblue)
 
 ## STORY EXTRAS ##
 
-define hmas_girl = Character("Mysterious girl", color = c_emerald, image = "hmas", window_left_padding=160)
-define sewer_woman = Character("Woman", color=c_grey_blue, image = "sewer_woman", window_left_padding=160)
+define hmas_girl = Character("Mysterious girl", color = c_emerald, image = "hmas", window_left_padding=int(config.screen_height*0.205))
+define sewer_woman = Character("Woman", color=c_grey_blue, image = "sewer_woman", window_left_padding=int(config.screen_height*0.205))
 
 define mthug = Character("Masked thug", color=c_white)
 define captain_voice = Character("Captain's voice", color=c_emerald)
-define judge = Character("Judge", color=c_lightgreen, image = "judge", window_left_padding=160)
-define knight = Character("Knight", color=c_softpurple, image = "knight", window_left_padding=160)
-define mask = DynamicCharacter("mask_name", color=c_copper, image = "mask", window_left_padding=160)
+define judge = Character("Judge", color=c_lightgreen, image = "judge", window_left_padding=int(config.screen_height*0.205))
+define knight = Character("Knight", color=c_softpurple, image = "knight", window_left_padding=int(config.screen_height*0.205))
+define mask = DynamicCharacter("mask_name", color=c_copper, image = "mask", window_left_padding=int(config.screen_height*0.205))
 
-define raccoon = Character("Raccoon", color=c_yellow, image = "raccoon", window_left_padding=160)
-define akuma = Character("Akuma", color=c_steel, image = "blue_demon", window_left_padding=160)
-define gouki = Character("Gouki", color=c_lightred, image = "red_demon", window_left_padding=160)
-define rodrigo = Character("Rodrigo", color=c_lightgrey, image = "skeleton", window_left_padding=160)
+define raccoon = Character("Raccoon", color=c_yellow, image = "raccoon", window_left_padding=int(config.screen_height*0.205))
+define akuma = Character("Akuma", color=c_steel, image = "blue_demon", window_left_padding=int(config.screen_height*0.205))
+define gouki = Character("Gouki", color=c_lightred, image = "red_demon", window_left_padding=int(config.screen_height*0.205))
+define rodrigo = Character("Rodrigo", color=c_lightgrey, image = "skeleton", window_left_padding=int(config.screen_height*0.205))
 
 
 ## CONTRACT CHARACTERS ##
 
-define sailor = Character("Sailor", color=c_copper, image = "sailor", window_left_padding=160)
-define party_girl = Character("Party girl", color=c_lightred, image = "party_girl", window_left_padding=160)
-define nun = Character("Nun", color=c_grey_blue, image = "nun", window_left_padding=160)
-define kimono_lady = Character("Festival lady", color=c_softpurple, image = "kimono_lady", window_left_padding=160)
-define young_maid = Character("Young maid", color=c_yellow, image = "young_maid", window_left_padding=160)
-define diplomat = Character("Lady diplomat", color=c_orange_pink, image = "diplomat", window_left_padding=160)
-define sorceress = Character("Sorceress", color=c_lightgrey, image = "sorceress", window_left_padding=160)
-define naked_lady = Character("Naked lady", color=c_cream, image = "naked_lady", window_left_padding=160)
+define sailor = Character("Sailor", color=c_copper, image = "sailor", window_left_padding=int(config.screen_height*0.205))
+define party_girl = Character("Party girl", color=c_lightred, image = "party_girl", window_left_padding=int(config.screen_height*0.205))
+define nun = Character("Nun", color=c_grey_blue, image = "nun", window_left_padding=int(config.screen_height*0.205))
+define kimono_lady = Character("Festival lady", color=c_softpurple, image = "kimono_lady", window_left_padding=int(config.screen_height*0.205))
+define young_maid = Character("Young maid", color=c_yellow, image = "young_maid", window_left_padding=int(config.screen_height*0.205))
+define diplomat = Character("Lady diplomat", color=c_orange_pink, image = "diplomat", window_left_padding=int(config.screen_height*0.205))
+define sorceress = Character("Sorceress", color=c_lightgrey, image = "sorceress", window_left_padding=int(config.screen_height*0.205))
+define naked_lady = Character("Naked lady", color=c_cream, image = "naked_lady", window_left_padding=int(config.screen_height*0.205))
 
 
 ####                            ####
@@ -295,6 +298,9 @@ init -2 python:
                                                 declare('bg other dimension', 'backgrounds/other dimension.jpg', 's'),
                                                 declare('bg cave', 'NPC/Encounters/secret empty2.jpg', 's'),
                                                 declare('bg empty_mansion', 'backgrounds/mansion empty.jpg', 's', wide=True),
+                                                declare('bg dark_underground', 'backgrounds/dark underground.jpg', 's', wide=True),
+                                                declare('bg magic_cellar', 'backgrounds/magic cellar.jpg', 's', wide=True),
+                                                declare('bg lab', 'backgrounds/lab.webp', 's'),
                                                 ],
 
                                         "slavemarket" : [declare("bg slave market", "backgrounds/slave market12.jpg", "p"),] +
@@ -305,7 +311,7 @@ init -2 python:
 
                                         "districts" : [
                                                 declare("bg town", "backgrounds/town.jpg", "p"),
-                                                declare('bg zan', 'backgrounds/zan.jpg', 'p', wide=True),
+                                                declare('bg zan', 'backgrounds/zan.jpg', 's', wide=True),
                                                 declare('bg rich district', 'backgrounds/rich district.jpg', 'p', wide=True),
                                                 declare('bg poor district', 'backgrounds/poor district.jpg', 'p', wide=True),
                                                 declare('bg slum district', 'districts/slums.jpg', 'p', wide=True),
@@ -614,6 +620,10 @@ init -2 python:
                                 "papa freak" : [declare('bg papa_freak', 'NPC/misc/freak.jpg', 'p', wide=True)],
 
                                 "witches" : declare_multiple('bg witches%s', 'NPC/encounters/witches (%s).webp', 'p', start=1, finish=3, wide=True),
+
+                                "ninja guests" : declare_multiple('bg guest1_sex%s', 'NPC/kunoichi/guests/guest1 sex (%s).jpg', 'p', start=1, finish=7) +
+                                declare_multiple('bg guest2_sex%s', 'NPC/kunoichi/guests/guest2 sex (%s).jpg', 'p', start=1, finish=6) +
+                                declare_multiple('bg guest3_sex%s', 'NPC/kunoichi/guests/guest3 sex (%s).jpg', 'p', start=1, finish=9),
                                 }
 
 
@@ -630,36 +640,36 @@ init -2 python:
                                         declare('sill drogon', 'NPC/Sill/sill and drogon2.webp'),
                                         declare('sill naked', 'NPC/Sill/body2.webp'),
 
-                                        declare('side sill', 'NPC/Sill/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill unknown', 'NPC/Sill/portrait_unknown.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill happy', 'NPC/Sill/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill sad', 'NPC/Sill/portrait1.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill naked', 'NPC/Sill/portrait2.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill past', 'NPC/Sill/portrait_old.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sill drogon', 'NPC/Sill/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side drogon', 'NPC/Misc/drogon.jpg', 'p', x=152, y=152, gallery=False),
+                                        declare('side sill', 'NPC/Sill/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill unknown', 'NPC/Sill/portrait_unknown.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill happy', 'NPC/Sill/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill sad', 'NPC/Sill/portrait1.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill naked', 'NPC/Sill/portrait2.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill past', 'NPC/Sill/portrait_old.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sill drogon', 'NPC/Sill/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side drogon', 'NPC/Misc/drogon.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("kurohime", [
                                         declare('kuro', 'NPC/Kurohime/body.webp'),
-                                        declare('side kuro', 'NPC/Kurohime/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side kuro', 'NPC/Kurohime/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("maid", [
                                         declare('maid normal', 'NPC/Maid/normal.webp', 'f', x=1.2, y=1.2),
                                         declare('maid blush', 'NPC/Maid/blush.webp', 'f', x=1.2, y=1.2),
 
-                                        declare('side maid normal', 'NPC/Maid/portrait.webp', 's', x=152, y=152, gallery=False),
-                                        declare('side maid blush', 'NPC/Maid/portrait blush.webp', 's', x=152, y=152, gallery=False),
+                                        declare('side maid normal', 'NPC/Maid/portrait.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side maid blush', 'NPC/Maid/portrait blush.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("gio", [
                                         declare('gio', 'NPC/Gio/body.webp', 'f', x=0.5, y=0.5),
                                         declare('gio normal', 'NPC/Gio/body.webp', 'f', x=0.5, y=0.5, gallery=False),
                                         declare('gio incognito', 'NPC/Gio/body.webp', 'f', x=0.5, y=0.5, gallery=False),
-                                        declare('side gio', 'NPC/Gio/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gio normal', 'NPC/Gio/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gio incognito', 'NPC/Gio/portrait incognito.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side gio', 'NPC/Gio/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gio normal', 'NPC/Gio/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gio incognito', 'NPC/Gio/portrait incognito.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("jobgirl", [
@@ -671,33 +681,33 @@ init -2 python:
 
                                 ("sergeant", [
                                         declare('sergeant', 'NPC/Sergeant/body.webp'),
-                                        declare('side sergeant', 'NPC/Sergeant/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side sergeant', 'NPC/Sergeant/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("maya", [
                                         declare('maya', 'NPC/Maya/body.webp', 'f', x=0.5, y=0.5),
                                         declare('maya disarmed', 'NPC/Maya/disarmed.webp', 'f', x=0.5, y=0.5),
                                         declare('maya disarmed flip', im.Flip(im.FactorScale("NPC/Maya/disarmed.webp",0.5,0.5), horizontal=True), gallery=False),
-                                        declare('side maya', 'NPC/Maya/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side maya', 'NPC/Maya/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("lieutenant", [
                                         declare('lieutenant', 'NPC/Lieutenant/body.webp', 'f', x= 1.4, y= 1.4),
                                         declare('lieutenant attack', 'NPC/Lieutenant/body attack.webp', 'f', x= 1.4, y= 1.4),
-                                        declare('side lieutenant', 'NPC/Lieutenant/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side lieutenant', 'NPC/Lieutenant/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("sewer woman", [
                                         declare('sewer_woman dressed', 'NPC/Sewer girl/body.webp'),
                                         declare('sewer_woman naked', 'NPC/Sewer girl/naked.webp'),
-                                        declare('side sewer_woman', 'NPC/Sewer girl/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side sewer_woman naked', 'NPC/Sewer girl/portrait naked.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side sewer_woman', 'NPC/Sewer girl/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sewer_woman naked', 'NPC/Sewer girl/portrait naked.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
 
                                 ("renza", [
                                         declare('renza', 'NPC/Renza/body.webp', 'f', x= 0.9, y= 0.9),
-                                        declare('side renza', 'NPC/Renza/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side renza', 'NPC/Renza/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("satella", [
@@ -705,15 +715,15 @@ init -2 python:
                                         declare('satella happy', 'NPC/Satella/body1.webp', 'f', x= 0.9, y= 0.9, gallery=False),
                                         declare('satella angry', 'NPC/Satella/body1.webp', 'f', x= 0.9, y= 0.9, gallery=False),
                                         declare('satella_standing', 'NPC/Satella/body2.webp', 'f', x= 0.9, y= 0.9),
-                                        declare('side satella', 'NPC/Satella/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side satella angry', 'NPC/Satella/portrait2.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side satella', 'NPC/Satella/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side satella angry', 'NPC/Satella/portrait2.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('satella naked', 'NPC/Satella/body3.webp', 'f', x=0.6, y=0.6),
-                                        declare('side satella naked', 'NPC/Satella/portrait3.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side satella naked', 'NPC/Satella/portrait3.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("captain", [
                                         declare('captain', 'NPC/Captain/body.webp'),
-                                        declare('side captain', 'NPC/Captain/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side captain', 'NPC/Captain/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("gizel", [
@@ -731,32 +741,32 @@ init -2 python:
                                         declare('gizel whip happy', 'NPC/Gizel/whip2.webp'),
                                         declare('gizel whip struggling', 'NPC/Gizel/whip3.webp'),
 
-                                        declare('side gizel', 'NPC/Gizel/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel normal', 'NPC/Gizel/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel soft', 'NPC/Gizel/portrait soft.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel surprise', 'NPC/Gizel/portrait surprise.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel shy', 'NPC/Gizel/portrait shy.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel blush', 'NPC/Gizel/portrait blush.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel smirk', 'NPC/Gizel/portrait smirk.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel upset', 'NPC/Gizel/portrait upset.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side gizel angry', 'NPC/Gizel/portrait angry.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side gizel', 'NPC/Gizel/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel normal', 'NPC/Gizel/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel soft', 'NPC/Gizel/portrait soft.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel surprise', 'NPC/Gizel/portrait surprise.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel shy', 'NPC/Gizel/portrait shy.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel blush', 'NPC/Gizel/portrait blush.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel smirk', 'NPC/Gizel/portrait smirk.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel upset', 'NPC/Gizel/portrait upset.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side gizel angry', 'NPC/Gizel/portrait angry.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("goldie", [
                                         declare('goldie', 'NPC/Goldie/body.webp'),
-                                        declare('side goldie', 'NPC/Goldie/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side goldie', 'NPC/Goldie/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
             #                            declare('goldie_swimsuit', 'NPC/Goldie/body swimsuit.webp'),
-                                        #declare('side goldie_swimsuit', 'NPC/Goldie/portrait swimsuit.webp', 'p', x=152, y=152, gallery=False),
+                                        #declare('side goldie_swimsuit', 'NPC/Goldie/portrait swimsuit.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("willow", [
                                         declare('willow', 'NPC/Willow/body.webp'),
-                                        declare('side willow', 'NPC/Willow/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side willow', 'NPC/Willow/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("gina", [
                                         declare('gina', 'NPC/Gina/body.webp'),
-                                        declare('side gina', 'NPC/Gina/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side gina', 'NPC/Gina/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("stella", [
@@ -764,22 +774,22 @@ init -2 python:
                                         declare('stella normal', 'NPC/Stella/body1.webp', 'f', x=0.75, y=0.75, gallery=False),
                                         declare('stella crossed', 'NPC/Stella/body2.webp', 'f', x=0.75, y=0.75),
                                         declare('stella uniform', 'NPC/Stella/body3.webp', 'f', x=0.5, y=0.5),
-                                        declare('side stella', 'NPC/Stella/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side stella normal', 'NPC/Stella/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side stella uniform', 'NPC/Stella/portrait2.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side stella', 'NPC/Stella/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side stella normal', 'NPC/Stella/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side stella uniform', 'NPC/Stella/portrait2.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("blood island officers", [
                                         declare('blood1', 'NPC/Stella/ka body.webp', 'f', x=0.5, y=0.5),
-                                        declare('side blood1', 'NPC/Stella/ka portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side blood1', 'NPC/Stella/ka portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('blood2', 'NPC/Stella/zee body.webp', 'f', x=0.5, y=0.5),
-                                        declare('side blood2', 'NPC/Stella/zee portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side blood2', 'NPC/Stella/zee portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
 
                                 ("milkmaid", [
                                         declare('milkmaid', 'NPC/Misc/milkmaid.webp'),
-                                        declare('side milkmaid', 'NPC/Misc/milkmaid portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side milkmaid', 'NPC/Misc/milkmaid portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("kosmo", [
@@ -788,10 +798,10 @@ init -2 python:
                                         declare('kosmo happy bw', im.MatrixColor('NPC/Kosmo/body1.webp', im.matrix.desaturate()), gallery=False),
                                         declare('kosmo angry bw', im.MatrixColor('NPC/Kosmo/body2.webp', im.matrix.desaturate()), gallery=False),
                                         declare('kosmo laughing', 'NPC/Kosmo/body3.webp'),
-                                        declare('side kosmo', 'NPC/Kosmo/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side kosmo angry', 'NPC/Kosmo/portrait2.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side kosmo bw', im.MatrixColor('NPC/Kosmo/portrait.webp', im.matrix.desaturate()), 'p', x=152, y=152, gallery=False),
-                                        declare('side kosmo angry bw', im.MatrixColor('NPC/Kosmo/portrait2.webp', im.matrix.desaturate()), 'p', x=152, y=152, gallery=False),
+                                        declare('side kosmo', 'NPC/Kosmo/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kosmo angry', 'NPC/Kosmo/portrait2.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kosmo bw', im.MatrixColor('NPC/Kosmo/portrait.webp', im.matrix.desaturate()), 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kosmo angry bw', im.MatrixColor('NPC/Kosmo/portrait2.webp', im.matrix.desaturate()), 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('kosmo', 'NPC/Kosmo/body1.webp', gallery=False),
                                         declare('kosmo bw', im.MatrixColor('NPC/Kosmo/body1.webp', im.matrix.desaturate()), gallery=False),
                                         ]),
@@ -819,12 +829,12 @@ init -2 python:
                                         declare('shalia4', 'NPC/shalia/body (4).webp'),
                                         declare('shalia5', 'NPC/shalia/body (5).webp', 'f', x=0.55, y=0.55),
                                         declare('shalia6', 'NPC/shalia/body (6).webp', 'f', x=0.55, y=0.55),
-                                        declare('side shalia', 'NPC/shalia/portrait.jpg', 'p', x=152, y=152, gallery=False),
+                                        declare('side shalia', 'NPC/shalia/portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("roz", [
                                         declare("roz", "NPC/Roz/body.webp"),
-                                        declare("side roz", "NPC/Roz/portrait.jpg", 'p', 150, 150, gallery=False),
+                                        declare("side roz", "NPC/Roz/portrait.jpg", 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare("roz party", im.Composite(
                                                                            (800, 700),
                                                                            (0, 30), "NPC/Roz/body.webp",
@@ -836,12 +846,12 @@ init -2 python:
                                         declare('carpenter', 'NPC/carpenter/body.webp'),
                                         declare('carpenter normal', 'NPC/carpenter/body.webp', gallery=False),
                                         declare('carpenter attack', 'NPC/carpenter/attack.webp'),
-                                        declare('side carpenter', 'NPC/carpenter/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side carpenter', 'NPC/carpenter/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("bast", [
                                         declare('bast', 'NPC/bast/body.webp'),
-                                        declare('side bast', 'NPC/bast/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side bast', 'NPC/bast/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("banker", [
@@ -850,60 +860,60 @@ init -2 python:
                                         declare('banker appears happy', 'NPC/banker/appear happy.webp', 'f', x=0.55, y=0.55),
                                         declare('banker appears mad', 'NPC/banker/appear mad.webp', 'f', x=0.55, y=0.55),
                                         declare('banker cheerleader', 'NPC/banker/cheerleader.webp', 'f', x=0.55, y=0.55),
-                                        declare('side banker', 'NPC/banker/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side banker', 'NPC/banker/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("taxgirl", [
                                         declare('taxgirl', 'NPC/taxgirl/body.webp', 'f', x=0.9, y=0.9),
-                                        declare('side taxgirl', 'NPC/taxgirl/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side taxgirl', 'NPC/taxgirl/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                ("riche", [
                                         declare('riche', 'NPC/riche/body.webp', 'f', x=0.9, y=0.9),
-                                        declare('side riche', 'NPC/riche/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side riche', 'NPC/riche/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                ("ramias", [
                                        declare('ramias', 'NPC/ramias/body.webp', 'f', x=0.9, y=0.9),
                                        declare('ramias attack', 'NPC/ramias/body3.webp', 'f', x=0.9, y=0.9),
-                                       declare('side ramias', 'NPC/ramias/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side ramias', 'NPC/ramias/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                ("gurigura", [
                                        declare('gurigura', 'NPC/gurigura/body.webp', 'f', x=0.9, y=0.9),
                                        declare('gurigura attack', 'NPC/gurigura/body3.webp', 'f', x=0.9, y=0.9),
                                        declare('gurigura_attack', 'NPC/gurigura/attack.webp', 'p', wide=True),
-                                       declare('side gurigura', 'NPC/gurigura/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side gurigura', 'NPC/gurigura/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                ("katryn", [
                                        declare('katryn', 'NPC/katryn/body.webp', 'f', x=0.9, y=0.9),
-                                       declare('side katryn', 'NPC/katryn/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side katryn', 'NPC/katryn/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                ("giftgirl", [
                                        declare('giftgirl', 'NPC/gift girl/body.webp', 'f', x=0.9, y=0.9),
-                                       declare('side giftgirl', 'NPC/gift girl/portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side giftgirl', 'NPC/gift girl/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                ("today", [
                                        declare('today', 'NPC/twins/body.webp', 'f', x=0.8, y=0.8),
-                                       declare('side today', 'NPC/twins/today portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side today', 'NPC/twins/today portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        declare('bg twins', 'NPC/twins/bg.jpg', 'f', x=0.8, y=0.8),
                                        ]),
 
                                ("yesterday", [
                                        declare('yesterday', 'NPC/twins/body.webp', 'f', x=0.8, y=0.8),
-                                       declare('side yesterday', 'NPC/twins/yesterday portrait.webp', 'p', x=152, y=152, gallery=False),
+                                       declare('side yesterday', 'NPC/twins/yesterday portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                        ]),
 
                                 ("kenshin", [
                                         declare('kenshin', 'NPC/kenshin/body.webp'),
                                         declare('kenshin normal', 'NPC/kenshin/body.webp'),
                                         declare('kenshin blush', 'NPC/kenshin/body.webp'),
-                                        declare('side kenshin', 'NPC/kenshin/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side kenshin normal', 'NPC/kenshin/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side kenshin blush', 'NPC/kenshin/portrait blush.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side kenshin', 'NPC/kenshin/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kenshin normal', 'NPC/kenshin/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kenshin blush', 'NPC/kenshin/portrait blush.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("homura", [
@@ -913,12 +923,12 @@ init -2 python:
                                         declare('homura surprise', 'NPC/homura/body surprise.webp'),
                                         declare('homura sad', 'NPC/homura/body sad.webp'),
                                         declare('homura naked', 'NPC/homura/body naked.webp'),
-                                        declare('side homura', 'NPC/homura/portrait.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side homura normal', 'NPC/homura/portrait.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side homura blush', 'NPC/homura/portrait blush.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side homura surprise', 'NPC/homura/portrait surprise.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side homura sad', 'NPC/homura/portrait sad.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side homura naked', 'NPC/homura/portrait naked.jpg', 'p', x=152, y=152, gallery=False),
+                                        declare('side homura', 'NPC/homura/portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side homura normal', 'NPC/homura/portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side homura blush', 'NPC/homura/portrait blush.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side homura surprise', 'NPC/homura/portrait surprise.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side homura sad', 'NPC/homura/portrait sad.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side homura naked', 'NPC/homura/portrait naked.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("suzume", [
@@ -930,13 +940,13 @@ init -2 python:
                                         declare('suzume naked2', 'NPC/suzume/body naked2.webp', 'f', x=0.6, y=0.6),
                                         declare('suzume shrewd', 'NPC/suzume/body.webp', gallery=False),
                                         declare('suzume ninja', 'NPC/suzume/attack.webp'),
-                                        declare('side suzume', 'NPC/suzume/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume normal', 'NPC/suzume/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume doubt', 'NPC/suzume/portrait doubt.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume bend', 'NPC/suzume/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume naked', 'NPC/suzume/portrait shrewd.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume naked2', 'NPC/suzume/portrait naked2.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side suzume shrewd', 'NPC/suzume/portrait shrewd.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side suzume', 'NPC/suzume/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume normal', 'NPC/suzume/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume doubt', 'NPC/suzume/portrait doubt.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume bend', 'NPC/suzume/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume naked', 'NPC/suzume/portrait shrewd.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume naked2', 'NPC/suzume/portrait naked2.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side suzume shrewd', 'NPC/suzume/portrait shrewd.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("kunoichi", [declare('haruka', 'NPC/kunoichi/haruka/body.webp'),
@@ -947,15 +957,15 @@ init -2 python:
                                               declare('haruka sad', 'NPC/kunoichi/haruka/body.webp'),
                                               declare('haruka blush', 'NPC/kunoichi/haruka/body.webp'),
                                               declare('haruka defiant', 'NPC/kunoichi/haruka/body.webp'),
-                                              declare('side haruka', 'NPC/kunoichi/haruka/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka normal', 'NPC/kunoichi/haruka/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka ninja', 'NPC/kunoichi/haruka/portrait ninja.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka surprise', 'NPC/kunoichi/haruka/portrait surprise.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka angry', 'NPC/kunoichi/haruka/portrait angry.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka happy', 'NPC/kunoichi/haruka/portrait happy.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka sad', 'NPC/kunoichi/haruka/portrait sad.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka blush', 'NPC/kunoichi/haruka/portrait blush.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side haruka defiant', 'NPC/kunoichi/haruka/portrait defiant.webp', 'p', x=152, y=152, gallery=False),
+                                              declare('side haruka', 'NPC/kunoichi/haruka/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka normal', 'NPC/kunoichi/haruka/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka ninja', 'NPC/kunoichi/haruka/portrait ninja.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka surprise', 'NPC/kunoichi/haruka/portrait surprise.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka angry', 'NPC/kunoichi/haruka/portrait angry.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka happy', 'NPC/kunoichi/haruka/portrait happy.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka sad', 'NPC/kunoichi/haruka/portrait sad.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka blush', 'NPC/kunoichi/haruka/portrait blush.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side haruka defiant', 'NPC/kunoichi/haruka/portrait defiant.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                               declare('subaru', 'NPC/kunoichi/haruka/subaru.webp'),
 
                                               declare('narika', 'NPC/kunoichi/narika/body.webp'),
@@ -967,27 +977,27 @@ init -2 python:
                                               declare('narika blush', 'NPC/kunoichi/narika/body.webp', gallery=False),
                                               declare('narika ninja', 'NPC/kunoichi/narika/attack.webp', 'f', x=0.6, y=0.6),
                                               declare('narika school', 'NPC/kunoichi/narika/body school.webp'),
-                                              declare('side narika', 'NPC/kunoichi/narika/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika normal', 'NPC/kunoichi/narika/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika ninja', 'NPC/kunoichi/narika/portrait ninja.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika surprise', 'NPC/kunoichi/narika/portrait surprise.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika angry', 'NPC/kunoichi/narika/portrait angry.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika happy', 'NPC/kunoichi/narika/portrait happy.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika sad', 'NPC/kunoichi/narika/portrait sad.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side narika blush', 'NPC/kunoichi/narika/portrait blush.webp', 'p', x=152, y=152, gallery=False),
+                                              declare('side narika', 'NPC/kunoichi/narika/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika normal', 'NPC/kunoichi/narika/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika ninja', 'NPC/kunoichi/narika/portrait ninja.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika surprise', 'NPC/kunoichi/narika/portrait surprise.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika angry', 'NPC/kunoichi/narika/portrait angry.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika happy', 'NPC/kunoichi/narika/portrait happy.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika sad', 'NPC/kunoichi/narika/portrait sad.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side narika blush', 'NPC/kunoichi/narika/portrait blush.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
 
                                               declare('mizuki', 'NPC/kunoichi/mizuki/body.webp'),
                                               declare('mizuki normal', 'NPC/kunoichi/mizuki/body.webp', gallery=False),
                                               declare('mizuki happy', 'NPC/kunoichi/mizuki/body.webp', gallery=False),
                                               declare('mizuki sad', 'NPC/kunoichi/mizuki/body.webp', gallery=False),
                                               declare('mizuki angry', 'NPC/kunoichi/mizuki/body.webp', gallery=False),
-                                              declare('side mizuki', 'NPC/kunoichi/mizuki/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki normal', 'NPC/kunoichi/mizuki/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki ninja', 'NPC/kunoichi/mizuki/portrait ninja.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki happy', 'NPC/kunoichi/mizuki/portrait happy.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki sad', 'NPC/kunoichi/mizuki/portrait sad.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki angry', 'NPC/kunoichi/mizuki/portrait angry.webp', 'p', x=152, y=152, gallery=False),
-                                              declare('side mizuki naked', 'NPC/kunoichi/mizuki/portrait naked.webp', 'p', x=152, y=152, gallery=False),
+                                              declare('side mizuki', 'NPC/kunoichi/mizuki/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki normal', 'NPC/kunoichi/mizuki/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki ninja', 'NPC/kunoichi/mizuki/portrait ninja.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki happy', 'NPC/kunoichi/mizuki/portrait happy.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki sad', 'NPC/kunoichi/mizuki/portrait sad.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki angry', 'NPC/kunoichi/mizuki/portrait angry.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                              declare('side mizuki naked', 'NPC/kunoichi/mizuki/portrait naked.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
 
                                               declare('kunoichi', 'NPC/kunoichi/kunoichi.webp', 'f', x=1.25, y=1.25),
                                               declare('kunoichi reversed', im.Flip(im.FactorScale('NPC/kunoichi/kunoichi.webp', 1.25, 1.25), horizontal=True)),
@@ -1007,7 +1017,7 @@ init -2 python:
 
                                 ("guard", [
                                         declare('guard', 'NPC/Misc/guard.webp', 'f', x=0.5, y=0.5),
-                                        declare('side guard', 'NPC/Misc/guard portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side guard', 'NPC/Misc/guard portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare("guard party", im.Composite(
                                                                              (320, 760),
                                                                              (0, 0), im.FactorScale("NPC/Misc/guard.webp",0.5,0.5),
@@ -1016,15 +1026,15 @@ init -2 python:
                                         ]),
 
                                 ("thugs", [
-                                        declare('side thug', 'UI/customers/thug.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side thug', 'UI/customers/thug.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
 
                                         declare('thug1', 'NPC/Misc/thug1.webp', 'f', x=0.5, y=0.5),
                                         declare('thug1 attack', 'NPC/Misc/thug1 attack.webp'),
-                                        declare('side thug1', 'NPC/Misc/thug1 portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side thug1', 'NPC/Misc/thug1 portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
 
                                         declare('thug2', 'NPC/Misc/thug2.webp', 'f', x=0.5, y=0.5),
                                         declare('thug2 attack', 'NPC/Misc/thug2 attack.webp'),
-                                        declare('side thug2', 'NPC/Misc/thug2 portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side thug2', 'NPC/Misc/thug2 portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('thug2 burnt', 'NPC/Misc/burnt.webp'),
 
                                         declare('thugs attack', 'NPC/Misc/thugs attack.webp'),
@@ -1035,19 +1045,19 @@ init -2 python:
                                 ("masked thug", [declare('masked_thug', 'NPC/Misc/masked thug.webp')]),
                                 ("stranger", [declare('stranger', 'NPC/Misc/stranger.webp')]),
                                 ("sewer rapist", [declare('sewer_rapist', 'NPC/Misc/sewer rapist.webp', 'f', x= 0.75, y= 0.75)]),
-                                ("judge", [declare('judge', 'NPC/Misc/judge.webp'), declare('side judge', 'NPC/Misc/judge portrait.jpg', 'p', x=152, y=152, gallery=False),]),
-                                ("knight", [declare('knight', 'NPC/Misc/knight.webp', 'f', x= 0.8, y= 0.8), declare('side knight', 'NPC/Misc/knight portrait.webp', 'p', x=152, y=152, gallery=False),]),
+                                ("judge", [declare('judge', 'NPC/Misc/judge.webp'), declare('side judge', 'NPC/Misc/judge portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),]),
+                                ("knight", [declare('knight', 'NPC/Misc/knight.webp', 'f', x= 0.8, y= 0.8), declare('side knight', 'NPC/Misc/knight portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),]),
 
                                 ("templars", [
                                         declare('templar', 'NPC/Misc/templar.webp', 'f', x=0.8, y=0.8),
                                         declare('initiate', 'NPC/Misc/initiate.webp', 'f', x=0.9, y=0.9),
-                                        declare('side templar', 'NPC/Misc/knight portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side initiate', 'NPC/Misc/soldier portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side templar', 'NPC/Misc/knight portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side initiate', 'NPC/Misc/soldier portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("monsters", [
                                         declare('spirit', 'NPC/Misc/spirit.webp', 's', wide=True),
-                                        declare('side spirit', 'NPC/Misc/spirit portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side spirit', 'NPC/Misc/spirit portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('sewer_monster', 'NPC/Misc/sewer monster.webp'),
                                         declare('sewer_monster happy', 'NPC/Misc/sewer monster friendly.webp'),
                                         declare('tentacle_monster', 'NPC/Misc/tentacle_monster.webp', 'f', x=1.25, y=1.25),
@@ -1059,21 +1069,23 @@ init -2 python:
 
                                 ("demons", [
                                         declare('blue_demon', 'NPC/Misc/blue demon.webp', 'f', x=0.8, y=0.8),
-                                        declare('side blue_demon', 'NPC/Misc/blue demon portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side blue_demon', 'NPC/Misc/blue demon portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('red_demon', 'NPC/Misc/red demon.webp', 'f', x=0.8, y=0.8),
-                                        declare('side red_demon', 'NPC/Misc/red demon portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side red_demon', 'NPC/Misc/red demon portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("skeleton", [
                                         declare('skeleton', 'NPC/Misc/skeleton.webp'),
-                                        declare('side skeleton', 'NPC/Misc/skeleton portrait.webp', 'p', x=152, y=152, gallery=False),
+                                        declare('side skeleton', 'NPC/Misc/skeleton portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
 
                                 ("ogres", [declare('ogre', 'NPC/Misc/ogre.webp')]),
 
-                                ("mask", [declare('side mask unknown', 'NPC/Misc/killer.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side mask', 'NPC/The Mask/portrait.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side mask normal', 'NPC/The Mask/portrait.jpg', 'p', x=152, y=152, gallery=False)]),
+                                ("mask", [declare('side mask unknown', 'NPC/Misc/killer.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side mask', 'NPC/The Mask/portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side mask normal', 'NPC/The Mask/portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False)]),
+
+                                ("ninja guests", [declare('hokoma_warrior', 'NPC/kunoichi/guests/guest1.webp'), declare('magical_girl', 'NPC/kunoichi/guests/guest2.webp'), declare('girl_scientist', 'NPC/kunoichi/guests/guest3.webp')]),
 
                             ])
 
@@ -1081,28 +1093,28 @@ init -2 python:
     game_image_dict["unused"] = {
 
                                 "unused for gallery (stand-alone portraits)" : [
-                                        declare('side slavegirl1', 'NPC/Misc/slave1.webp', 's', x=152, y=152, gallery=False),
-                                        declare('side slavegirl2', 'NPC/Misc/slave2.webp', 's', x=152, y=152, gallery=False),
-                                        declare('side shopgirl', 'NPC/Misc/shop_girl.webp', 's', x=152, y=152, gallery=False),
-                                        declare('side hmas', 'NPC/Hmas/portrait.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side raccoon', 'NPC/Misc/raccoon.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side sailor', 'NPC/Misc/sailor.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side party_girl', 'NPC/Misc/party girl.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side nun', 'NPC/Misc/nun.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side kimono_lady', 'NPC/Misc/kimono lady.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side young_maid', 'NPC/Misc/maid.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side diplomat', 'NPC/Misc/diplomat.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side sorceress', 'NPC/Misc/sorceress.png', 'p', x=152, y=152, gallery=False),
-                                        declare('side naked_lady', 'NPC/Misc/naked lady.png', 'p', x=152, y=152, gallery=False),
+                                        declare('side slavegirl1', 'NPC/Misc/slave1.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side slavegirl2', 'NPC/Misc/slave2.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side shopgirl', 'NPC/Misc/shop_girl.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side hmas', 'NPC/Hmas/portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side raccoon', 'NPC/Misc/raccoon.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sailor', 'NPC/Misc/sailor.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side party_girl', 'NPC/Misc/party girl.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side nun', 'NPC/Misc/nun.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side kimono_lady', 'NPC/Misc/kimono lady.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side young_maid', 'NPC/Misc/maid.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side diplomat', 'NPC/Misc/diplomat.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side sorceress', 'NPC/Misc/sorceress.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side naked_lady', 'NPC/Misc/naked lady.png', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         declare('judge_head', 'NPC/Misc/judge head.webp'),
                                         declare('panties', 'items/accessory/lace panties.webp'),
                                         declare_multiple('house%s', 'minigame/house%s.png', start=1, finish=8),
                                         declare_multiple('passerby%s', 'minigame/passerby%s.png', start=1, finish=9),
                                         declare_multiple('ninja%s', 'minigame/ninja%s.png', start=0, finish=3),
                                         declare_multiple('guest%s', 'minigame/guest%s.png', start=1, finish=3),
-                                        declare('toy hammer', 'items/Weapons/toy hammer.webp', 'p', x=152, y=152, gallery=False),
-                                        declare('side papa', 'NPC/Misc/freak portrait.jpg', 'p', x=152, y=152, gallery=False),
-                                        declare('side papa_apprentice', 'NPC/Misc/freak apprentice.jpg', 'p', x=152, y=152, gallery=False),
+                                        declare('toy hammer', 'items/Weapons/toy hammer.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side papa', 'NPC/Misc/freak portrait.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
+                                        declare('side papa_apprentice', 'NPC/Misc/freak apprentice.jpg', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ],
 
                             }
@@ -1111,7 +1123,7 @@ init -2 python:
 
     game_image_dict["Misc"] = {
 
-                                "title" : [declare("bg title", "ui/theme.jpg", "p", wide=True, unlock=True)],
+                                "title" : [declare("bg title", "ui/theme.jpg", "s", wide=True, unlock=True)],
 
                                 "night" : ["events/" + p for p in night_pics + no_girls_pics],
 
@@ -1119,7 +1131,7 @@ init -2 python:
 
                                 "pony" : ["events/" + p for p in pony_pics],
 
-                                "security" : ["events/" + p for p in sum((security_pics.values()), [])] + [declare('side security', 'UI/shield.webp', 's', x=152, y=152, gallery=False),]+ [declare('side security_breach', 'UI/broken shield.webp', 's', x=152, y=152, gallery=False),],
+                                "security" : ["events/" + p for p in sum((security_pics.values()), [])] + [declare('side security', 'UI/shield.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),]+ [declare('side security_breach', 'UI/broken shield.webp', 's', x=res_portrait_size, y=res_portrait_size, gallery=False),],
 
                                 "arson" : ["events/" + p for p in arson_pics],
 
@@ -1228,7 +1240,7 @@ init -2 python:
             gp_gallery[pack].unlocked_advance=False # Unfortunately, unlocked advance is broken as of now.
             gp_gallery[pack].locked_button=lock
 
-            for file in [f for f in renpy.list_files() if f.startswith(path) and is_imgfile(f)]:
+            for file in [f for f in renpy.list_files() if f.startswith(path) and is_imgfile(f, video=False)]:
                 gp_gallery[pack].button(file)
                 gp_gallery[pack].condition("was_seen('" + file + "')")
                 gp_gallery[pack].image(ProportionalScale(file, config.screen_width, config.screen_height)) # file
@@ -1262,12 +1274,13 @@ init -3 python:
     def was_seen(pic): # Where pic is a String, either a file path or a renpy image name
 
         if pic:
-            if is_imgfile(pic):
+            if is_imgfile(pic, video=False): # Disables videos until we can find a way to make them show in CG gallery
                 if pic in persistent.seen_list:
                     return True
 
-            elif renpy.seen_image(pic) or pic in persistent.seen_list:
-                return True
+            elif renpy.seen_image(pic) or pic in persistent.seen_list: # These are renpy images and not filenames
+                if not is_videofile(pic):
+                    return True
 
         return False
 
@@ -1312,28 +1325,28 @@ screen galleries():
     frame xalign 0.5 yalign 0.5:
         has vbox spacing 10 box_wrap True
 
-        textbutton "CG - Game" action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) xsize 200
+        textbutton "CG - Game" action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) xsize int(config.screen_width*0.1851)
 
-        textbutton "CG - Girl packs" action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) xsize 200
+        textbutton "CG - Girl packs" action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) xsize int(config.screen_width*0.1851)
 
-        textbutton "Achievements" action ShowMenu("achievements") xsize 200
+        textbutton "Achievements" action ShowMenu("achievements") xsize int(config.screen_width*0.1851)
 
-        textbutton "Main Menu" action Function(renpy.full_restart) xsize 200
+        textbutton "Main Menu" action Function(renpy.full_restart) xsize int(config.screen_width*0.1851)
 
 
 screen gallery_left_menu(gal_type, gal):
-    viewport xsize 200 yfill True mousewheel True draggable True scrollbars "vertical":
+    viewport xsize int(config.screen_width*0.1851) yfill True mousewheel True draggable True scrollbars "vertical":
         add "#000"
 
         vbox:
             if gal_type == "ev":
                 for g in ev_gallery_list:
-                    textbutton g action (SetScreenVariable("name", g), SetScreenVariable("gal", ev_gallery[g]), SetScreenVariable("page", 0), SelectedIf(gal==ev_gallery[g])) xsize 200 text_size 18
+                    textbutton g action (SetScreenVariable("name", g), SetScreenVariable("gal", ev_gallery[g]), SetScreenVariable("page", 0), SelectedIf(gal==ev_gallery[g])) xsize int(config.screen_width*0.1851) text_size int(config.screen_height*0.025)
 
             elif gal_type == "gp":
                 for pack in GirlFilesDict.get_paths():
                     $ n = get_name(pack, full=True)
-                    textbutton n action (SetScreenVariable("name", n), SetScreenVariable("gal", gp_gallery[pack]), SetScreenVariable("page", 0), SelectedIf(gal==gp_gallery[pack])) xsize 200 text_size 18
+                    textbutton n action (SetScreenVariable("name", n), SetScreenVariable("gal", gp_gallery[pack]), SetScreenVariable("page", 0), SelectedIf(gal==gp_gallery[pack])) xsize int(config.screen_width*0.1851) text_size int(config.screen_height*0.025)
 
 
 
@@ -1384,7 +1397,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                         $ but = gal.blist[index+i]
 
                         if gal_type == "ev":
-                            if is_imgfile(game_image_dict[name][but][0]):
+                            if is_imgfile(game_image_dict[name][but][0], video=False):
                                 $ pic = ProportionalScale(game_image_dict[name][but][0], 240, 180)
                             elif game_image_dict[name][but][0]:
                                 $ pic = ProportionalScale(ImageReference(game_image_dict[name][but][0]), 240, 180)
@@ -1396,15 +1409,15 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                             add gal.make_button(but, pic, xpadding=3, ypadding=3, xalign=0.5, yalign=0.5, background=None) hover_alpha 1.0 idle_alpha 0.8
                             if gal_type == "ev":
                                 frame background "#00000055" xalign 0.5 yalign 1.0 ypadding 1:
-                                    text get_button_unlock_rate(but, name) size 14
+                                    text get_button_unlock_rate(but, name) size int(config.screen_height*0.02)
                             else:
                                 if persistent.debug_pic_counter and gal_type == "gp":
-                                    text _("Used %s times" % persistent.debug_pic_counter_dict[pic.imgname]) align (0.5, 1.0) size 14 #!
+                                    text _("Used %s times" % persistent.debug_pic_counter_dict[pic.imgname]) align (0.5, 1.0) size int(config.screen_height*0.02)#!
 
 
             $ max_page = (len(gal.blist)-1) // shown_pics
 
-            text "Page " + str(page+1) + "/" + str(max_page+1) size 14
+            text "Page " + str(page+1) + "/" + str(max_page+1) size int(config.screen_height*0.02)
 
             frame background None xfill True:
     #            textbutton "Start Slideshow" action gal.ToggleSlideshow()
@@ -1487,7 +1500,7 @@ screen gallery_navigation:
         style.gallery_button_text.color = "#666"
         style.gallery_button_text.hover_color = "#fff"
         style.gallery_button_text.selected_color = "#fff"
-        style.gallery_button_text.size = 16
+        style.gallery_button_text.size = int(config.screen_height*0.0148)
 
 
 #### END OF BK GALLERY ####
