@@ -7,6 +7,7 @@ label start:
     stop music fadeout 3.0
 
     $ debug_mode = False
+    $ story_mode = True
     $ starting_chapter = 1
     $ enemy_general = None
     $ extras_dict = {"farm" : False, "carpenter" : False, "locations" : False, "shops" : False, "trainers" : False, "resources" : False}
@@ -44,57 +45,15 @@ label start:
             "No":
                 pass
 
+            "No story mode (Test)" if persistent.new_game_plus:
+                $ story_mode = False
+
     jump quick_start
 
-# label choose_mix():
-
-#     # Sanity check
-#     python:
-#         available_mixes = persistent.girl_mix.keys()
-
-#         for mix in persistent.game_mixes:
-#             if mix not in available_mixes:
-#                 renpy.notify("Removing %s from game mixes" % mix)
-#                 persistent.game_mixes.remove(mix)
-
-#     # Choose girl mixes if several are available
-
-#     if len(available_mixes) > 1:
-#          # $ persistent.game_mixes.append(long_menu("{size=-4}Choose a girl mix to use for this game.\n{b}Warning{/b}: You will not be able to switch to a different girl mix after starting the game).{/size}", [(mix.capitalize(), mix) for mix in persistent.girl_mix.keys()]))
-
-#          $ confirm = False
-
-#          while not confirm:
-#              $ text1 = and_text(persistent.game_mixes)
-
-#              menu:
-#                 "The following girl mixes will be used in the game: [text1]"
-
-#                 "Add mix" if len(available_mixes) > len(persistent.game_mixes):
-#                      $ persistent.game_mixes.append(long_menu("{size=-4}Choose a girl mix to use for this game.\n{b}Warning{/b}: You will not be able to switch to a different girl mix after starting the game).{/size}", [(mix.capitalize(), mix) for mix in available_mixes if mix not in persistent.game_mixes]))
-
-#                 "Clear all mixes" if len(persistent.game_mixes) > 0:
-#                      $ persistent.game_mixes = []
-
-#                 "START" if len(persistent.game_mixes) > 0:
-#                      $ confirm = True
-#     else:
-#         $ persistent.game_mixes = ["default"]
-
-#     return
 
 label quick_start:
 
-    call init_game() from _call_init_game
-
-    $ main_firstvisit = False
-    $ district_firstvisit = False
-    $ brothel_firstvisit = False
-    $ shop_firstvisit = False
-    $ slavemarket_firstvisit = False
-    $ girls_firstvisit = False
-    $ postings_firstvisit = False
-    $ farm_firstvisit = True
+    call init_game(quick=True) from _call_init_game
 
     if debug_mode != "quick":
         call choose_difficulty() from _call_choose_difficulty
@@ -110,15 +69,6 @@ label quick_start:
             for room in brothel.rooms.values():
                 room.buy(forced=True)
 
-        $ farm_firstvisit = False
-        $ farm.active = True
-        $ gizel_name = "Gizel"
-        $ story_flags["found wagon"] = True
-        $ story_flags["met carpenter"] = True
-
-        # # SET UP CALENDAR
-        # $ calendar.updates()
-
     # Create enemy general for the siege security event
 
     if dice(2) == 1:
@@ -129,62 +79,6 @@ label quick_start:
 
     if starting_chapter > 1:
         call debug_load_chapter(starting_chapter) from _call_debug_load_chapter
-
-#     elif debug_mode == "custom":
-
-#         $ starting_girls = 0
-#         $ events_on = False
-
-#         label debug_custom_menu():
-
-#             menu:
-#                 "Choose starting game options"
-
-#                 "Debug mode - ON" if debug_mode:
-#                     $ debug_mode = False
-#                     jump debug_custom_menu
-
-#                 "Debug mode - OFF" if not debug_mode:
-#                     $ debug_mode = "custom"
-#                     jump debug_custom_menu
-
-#                 "Starting chapter - [starting_chapter]":
-#                     $ starting_chapter = int(renpy.input("Which chapter do you want to start at?", default=str(starting_chapter)))
-#                     jump debug_custom_menu
-
-#                 "Starting girls - [starting_girls]":
-#                     $ starting_girls = int(renpy.input("How many girls do you want to start with?", default=str(starting_girls)))
-#                     jump debug_custom_menu
-
-#                 "Starting gold - [MC.gold]":
-#                     $ MC.gold = int(renpy.input("How much gold do you want to start with?", default=str(MC.gold)))
-#                     jump debug_custom_menu
-
-#                 "Starting stats - Str. [MC.strength] / Spi. [MC.spirit] / Cha. [MC.charisma] / Spd [MC.speed]":
-#                     $ MC.strength = int(renpy.input("Choose player's Strength", default=str(MC.strength)))
-#                     $ MC.spirit = int(renpy.input("Choose player's Spirit", default=str(MC.spirit)))
-#                     $ MC.charisma = int(renpy.input("Choose player's Charisma", default=str(MC.charisma)))
-#                     $ MC.speed = int(renpy.input("Choose player's Speed", default=str(MC.speed)))
-#                     jump debug_custom_menu
-
-#                 "Events on - [events_on]":
-#                     $ events_on = not events_on
-#                     jump debug_custom_menu
-
-#                 "Farm active - [farm.active]":
-#                     $ farm.active = not farm.active
-#                     jump debug_custom_menu
-
-#                 "START":
-#                     if events_on:
-#                         call init_events() from _call_init_events
-
-#                     if starting_chapter > 1:
-#                         call debug_load_chapter(starting_chapter) from _call_debug_load_chapter_1
-
-#                     $ MC.reset_interactions()
-#                     $ MC.girls = get_girls(starting_girls)
-
 
     call chapter(starting_chapter, forced=True) from _call_chapter_1
 
@@ -214,7 +108,7 @@ label quick_start:
 
 
 
-label init_game():
+label init_game(quick=False):
 
     scene black
     centered "Loading...{nw}"
@@ -250,13 +144,24 @@ label init_game():
 
         # FIRST TIME FLAGS #
 
-        main_firstvisit = True
-        district_firstvisit = True
-        brothel_firstvisit = True
-        shop_firstvisit = True
-        slavemarket_firstvisit = True
-        girls_firstvisit = True
-        postings_firstvisit = True
+        if quick:
+            main_firstvisit = False
+            district_firstvisit = False
+            brothel_firstvisit = False
+            shop_firstvisit = False
+            slavemarket_firstvisit = False
+            girls_firstvisit = False
+            postings_firstvisit = False
+
+        else:
+            main_firstvisit = True
+            district_firstvisit = True
+            brothel_firstvisit = True
+            shop_firstvisit = True
+            slavemarket_firstvisit = True
+            girls_firstvisit = True
+            postings_firstvisit = True
+
         farm_firstvisit = True
         carpenter_active = False
 
@@ -346,8 +251,8 @@ label init_game():
         NPC_sergeant = NPC()
         NPC_roz = NPC(name = "Roz", char = roz)
         NPC_maya = NPC(name = "玛雅", trainer_portrait = "side maya", trainer_description = "'{i}我最好检查一下周边的情况。再来。{/i}'\n\n{b}永远警惕{/b}\n对青楼的危险增长速度减慢33%。", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
-        NPC_renza = NPC(name = "伦萨", trainer_portrait = "side renza", trainer_description = "'{i}他的钱包似乎很重。让我来帮你...{/i}'\n\n{b}巧妙手法{/b}\n所有女孩都会扒口袋。有{i}机灵{/i}特质的女孩永远不会被抓。", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
-        NPC_satella = NPC(name = "萨特拉", trainer_portrait = "side satella", trainer_description = "'{i}在阴暗处玩耍不是很有趣吗？库呼呼...{/i}'\n\n{b}暗黑祭司{/b}\n恐惧增加得更快。", effects = Effect("boost", "fear gains", 1, scope = "world"))
+        NPC_renza = NPC(name = "伦萨", trainer_portrait = "side renza", trainer_description = "'{i}他的钱包似乎很重。让我来帮你……{/i}'\n\n{b}巧妙手法{/b}\n所有女孩都会扒口袋。有{i}机灵{/i}特质的女孩永远不会被抓。", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
+        NPC_satella = NPC(name = "萨特拉", trainer_portrait = "side satella", trainer_description = "'{i}在阴暗处玩耍不是很有趣吗？库呼呼……{/i}'\n\n{b}暗黑祭司{/b}\n恐惧增加得更快。", effects = Effect("boost", "fear gains", 1, scope = "world"))
         NPC_captain = NPC(name = "法拉", trainer_portrait = "side captain", trainer_description = "'{i}如果你想上位，你必须准备好做任何事情。任何事情!{/i}'\n\n{b}伤风败俗{/b}\n女孩会更快地习惯肛门和变态行为。", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
         NPC_lieutenant = NPC(name = "莉迪", trainer_portrait = "side lieutenant", trainer_description = "'{i}你想让我给你做个榜样吗？我不这么认为。{/i}'\n\n{b}严苛纪律{/b}\n女孩不太可能拒绝工作。", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
         NPC_gizel = NPC(name = "Gizel", defense = 3, trainer_portrait = "side gizel", trainer_description = "", effects = None)
@@ -359,19 +264,25 @@ label init_game():
         NPC_giftgirl = NPC(name = "Gift Shop Girl", char=giftgirl, trainer_portrait = "side giftgirl", item_types=["Gift", "Misc"])
         NPC_twins = NPC(name = "Today", char=today, trainer_portrait = "side today", item_types=["Dress", "Accessory"])
         NPC_stella = NPC(name="Stella", char=stella, trainer_portrait = "side stella", minion_type="stallion", trainer_description = "'{i}你薄弱的训练技术无法与血岛相比。{/i}'\n\n{b}精耕细作{/b}\n提高了所有农场性训练的效率。", effects = Effect("boost", "farm sexual training", 0.5, scope = "farm"))
-        NPC_goldie = NPC(name="Goldie", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}我在一本书上读到过... *脸红*{/i}'\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
+        NPC_goldie = NPC(name="Goldie", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}我在一本书上读到过……*脸红*{/i}'\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
         NPC_willow = NPC(name="Willow", char=willow, minion_type="monster")
         NPC_gina = NPC(name="Gina", char=gina, minion_type="machine")
         NPC_bast = NPC(name="贝斯特", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}金币只是可以在瓒城交易的众多资源中的一种。{/i}'\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
         NPC_jobgirl = NPC(name="Scarlet", char=jobgirl)
         NPC_kuro = NPC(name="Kurohime", char=kuro)
         NPC_homura = NPC(name="Homura", char=homura)
-        NPC_taxgirl = NPC(name="公会女郎", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "'{i}只需支出龙虾和香槟酒......再给我一些。{/i}'\n\n{b}偷税漏税{/b}\n每晚为你的部分收入提供免税保护。", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
+        NPC_taxgirl = NPC(name="公会女郎", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "'{i}只需支出龙虾和香槟酒……再给我一些。{/i}'\n\n{b}偷税漏税{/b}\n每晚为你的部分收入提供免税保护。", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
 
         # Chapter 2 Kunoichi
+        NPC_suzume = NPC(name="铃女", char=suzume, trainer_portrait = "side suzume", trainer_description = "“{i}昨天又发现了一个间谍……他试图刺杀我，真是好笑！咕咕咕……/i}”\n\n{b}夜间巡逻{/b}\n33%% 的几率阻止安全事件（不会重置威胁等级）。", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
         NPC_narika = NPC(name="Narika", char=narika)
         NPC_mizuki = NPC(name="Mizuki", char=mizuki)
         NPC_haruka = NPC(name="Haruka", char=haruka)
+
+        # Guest setup
+        NPC_narika.guest = "guest3"
+        NPC_mizuki.guest = "guest2"
+        NPC_haruka.guest = "guest1"
 
         NPC_iulia = NPC(name="Iulia", char=carpenter)
         NPC_freak = NPC(name="Papa Freak", char=papa)
@@ -380,7 +291,7 @@ label init_game():
         MC.trainers.append(NPC_sill)
         MC.current_trainer = NPC_sill
 
-        if debug_mode:
+        if debug_mode or not story_mode:
             MC.trainers.append(NPC_maya)
             MC.trainers.append(NPC_lieutenant)
             MC.trainers.append(NPC_captain)
@@ -388,10 +299,11 @@ label init_game():
             MC.trainers.append(NPC_satella)
             MC.trainers.append(NPC_bast)
             MC.trainers.append(NPC_stella)
-            # MC.trainers.append(NPC_ramias)
-            # MC.trainers.append(NPC_goldie)
-            # MC.trainers.append(NPC_taxgirl)
-            # MC.trainers.append(NPC_sad_sill)
+            MC.trainers.append(NPC_gizel)
+            MC.trainers.append(NPC_goldie)
+            MC.trainers.append(NPC_taxgirl)
+            MC.trainers.append(NPC_suzume)
+#            MC.trainers.append(NPC_sad_sill)
 
 
     #### BROTHELS ####
@@ -426,7 +338,6 @@ label init_game():
                               }
         farm = Farm()
 
-
     #### DISTRICTS ####
     python:
 
@@ -437,7 +348,7 @@ label init_game():
         laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, base_description="世界上的工人们，团结起来! 或者，你知道的，找一个女孩过夜。")
 
         sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="水手们上岸后是出了名的好色。经过长时间的航行，海员们需要放松一下。")
-        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="平民在每个方面都是令人沮丧的平凡。平凡的生活，平凡的工作，平凡的妻子...看到一个平民试图在青楼里逃避这一切，是......常见的。")
+        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="平民在每个方面都是令人沮丧的平凡。平凡的生活，平凡的工作，平凡的妻子……看到一个平民试图在青楼里逃避这一切，是……见的。")
 
         craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1)], base_description="工匠们用他们的双手工作，当他们的手不安分时，他们喜欢把它们放在一个漂亮女孩身上。工匠们都很狡猾。")
 
@@ -560,34 +471,53 @@ label init_game():
         all_locations = location_dict["The Slums"] + location_dict["The Docks"] + location_dict["The Warehouse"] + location_dict["The Magic Gardens"] + location_dict["The Cathedra"] + location_dict["The King's Hold"]
 
 
-        if debug_mode:
+        #### NO STORY ####
+
+        if debug_mode or not story_mode:
+            farm.active = True
+            farm_firstvisit = False
+            gizel_name = "吉泽尔"
+
             harbor.action = True
+            stella_name = "斯特拉"
             farmland.action = True
+            goldie_name = "戈尔迪"
             sewers.action = True
+            willow_name = "薇洛"
             junkyard.action = True
+            gina_name = "吉娜"
+
             thieves_guild.secret = False
             thieves_guild.action = True
+            renza_name = "伦萨"
+            captain_name = "法拉"
 
-            shipyard.action = True
-            stables.action = True
-            beach.action = True
-            old_ruins.action = True
-            hanging_gardens.action = True
-            guild_quarter.action = True
-            falls.action = True
+            story_flags["found wagon"] = True
+            story_flags["met carpenter"] = True
+            carpenter_name = "尤利亚"
+
+            shipyard.action = True # Wood
+            stables.action = True # Leather
+            beach.action = True # Dye
+            old_ruins.action = True # Stone
+            hanging_gardens.action = True # Silk
+            guild_quarter.action = True # Ore
+            falls.action = True # Diamond
+
+
 
 
         # DISTRICT LIST #
 
-        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "贫民窟位于瓒城城墙外的郊区，。这里是诸多乌合之众的家园：移民、难民、贫民、香料瘾君子......据传闻，这里也是盗贼公会的藏身之处，他们崇拜影子女神莎莉娅。"),
+        district_dict = {"slum" : District("The Slums", 1, 1, 15, ((beggar, 50), (thug, 30), (laborer, 20)), pic = "districts/slums.jpg", description = "贫民窟位于瓒城城墙外的郊区。这里是诸多乌合之众的家园：移民、难民、贫民、香料瘾君子……据传闻，这里也是盗贼公会的藏身之处，他们崇拜影子女神莎莉娅。"),
                  "docks" : District("The Docks", 2, 2, 40, ((laborer, 10), (sailor, 40), (commoner, 30), (craftsman, 20)), room = ["tavern"], pic = "districts/docks.jpg", description = "码头是粗暴的水手和躲避险恶的大海的狡猾海盗的家园。周围徘徊的全是海员，难怪港口附近会有廉价妓女和充满异国情调的商场。"),
                  "warehouse" : District("The Warehouse", 2, 2, 40, ((laborer, 10), (sailor, 20), (commoner, 40), (craftsman, 30)), ["club"], pic = "districts/warehouse.jpg", description = "仓库是瓒城的工业区，各种工匠和短工都来这里找工作。白天的街道上充斥着各种交易和商业活动，但晚上异常凶险。"),
-                 "gardens" : District("The Magic Gardens", 4, 3, 100, ((commoner, 5), (craftsman, 15), (bourgeois, 30), (guildmember, 30), (patrician, 20)), ["onsen"], pic = "districts/gardens.jpg", description = "当地的法师们聚集在这里吸取法力，并进行着一个个漫长而危险的实验。据说某些实验偶尔也会失败..."),
+                 "gardens" : District("The Magic Gardens", 4, 3, 100, ((commoner, 5), (craftsman, 15), (bourgeois, 30), (guildmember, 30), (patrician, 20)), ["onsen"], pic = "districts/gardens.jpg", description = "当地的法师们聚集在这里吸取法力，并进行着一个个漫长而危险的实验。据说某些实验偶尔也会失败……"),
                  "cathedra" : District("The Cathedra", 4, 3, 100, ((commoner, 5), (craftsman, 10), (bourgeois, 20), (guildmember, 35), (patrician, 30)), ["okiya"], pic = "districts/cathedra.jpg", description = "大教堂是阿里奥斯教团的圣地中心。朝圣者、骑士和牧师在祈祷和仪式中磨拳擦掌，而精明的商人和银行家则为他们提供昂贵的服务，赚取利润。"),
-                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
+                 "hold" : District("The King's Hold", 6, 4, 150, ((patrician, 20), (aristocrat, 50), (noble, 30)), "free", pic = "districts/final castle night.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影……请注意。")
                 }
 
-        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影...... 请注意。")
+        endless_district = District("The King's Hold", chapter=7, rank = 5, diff = 200, pop = ((royal, 100),), room = ["tavern", "club", "onsen", "okiya"], pic = "districts/final castle.webp", description = "这里是瓒城的权力中心，朝臣们在这里争夺权力和国王的支持。然而在体面和特权的表象背后，却暗藏刀光剑影……请注意。")
 
         all_districts = [district_dict[d] for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]]
         # for d in ["slum", "warehouse", "docks", "gardens", "cathedra", "hold"]:
@@ -596,10 +526,6 @@ label init_game():
         # CREATE FIRST DISTRICT #
 
         district = district_dict["slum"]
-
-#     #### ACTIVE EFFECTS DICTIONARY ####
-
-#     active_effects_dict = defaultdict(list)
 
     #### SPELLS ####
 
@@ -622,7 +548,6 @@ label init_game():
 
 
     # CREATE SLAVEMARKET #
-
         slavemarket = NPC()
 
 
@@ -689,6 +614,13 @@ label init_game():
     # CREATE MOONS
 
     call init_moons() from _call_init_moons
+
+    # SELECT GOAL CHANNELS
+
+    if story_mode:
+        $ game.goal_channels = goal_channels
+    else:
+        $ game.goal_channels = goal_channels_no_story
 
 
     # EVENT DICTIONARY (Events need to be added to the game with 'story_add_event' in order to proc)
@@ -803,7 +735,7 @@ label init_events():
         calendar.set_alarm(333, Event(label = "hmas"))
         story_add_event("slave_beach_event", "city")
 
-        if not debug_mode:
+        if not debug_mode and story_mode:
             # TUTORIAL #
             daily_events.append(event_dict["zodiac_intro"])
 

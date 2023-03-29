@@ -23,7 +23,7 @@ screen say(who, what, side_image=False):
     style_prefix "say"
 
     # The one window variant.
-    window yalign 1.0 ysize int(config.screen_height*0.2) xpadding 20 ypadding 10:
+    window yalign 1.0 ysize int(config.screen_height*0.205) xpadding 20 ypadding 10:
         id "window"
 
         has vbox:
@@ -37,7 +37,7 @@ screen say(who, what, side_image=False):
     # If there's a side image, display it above the text.
 
     if side_image:
-        fixed xsize 150 ysize 150 xalign 0.0 yalign 1.0:
+        fixed xsize res_portrait_size ysize res_portrait_size xalign 0.0 yalign 1.0:
             add side_image xalign 0.5 yalign 0.0
     else:
         add SideImage() xalign 0.0 yalign 1.0
@@ -53,7 +53,8 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    #background Image("gui/textbox.png", xalign=0.0, yalign=0.0, yfill=True)
+    background Frame("gui/textbox.png", left=0, top=0, right=0, bottom=0, tile=False)
 
 
 ##############################################################################
@@ -124,19 +125,19 @@ screen input(prompt):
 
     modal True
 
-    frame xalign 0.5 yalign 0.5 xsize 340 ysize 290:
+    frame xalign 0.5 yalign 0.5 xsize xres(340) ysize yres(290):
         background "UI/Sill_Textbox.webp"
         has vbox
 
-        text prompt style "input_prompt" xsize 440:
+        text prompt style "input_prompt" xsize xres(440):
             if count_lines(prompt, 46) <= 2:
-                size 19
+                size res_font(19)
             elif count_lines(prompt, 50) <= 3:
-                size 15
+                size res_font(15)
             else:
-                size 13
+                size res_font(13)
 
-        input id "input" style "input_text" xsize 240 xpos 190 ypos 30 copypaste True
+        input id "input" style "input_text" xsize xres(240) xpos 190 ypos 30 copypaste True
 
     use quick_menu
 
@@ -145,13 +146,13 @@ init:
         xpos 100
         ypos 6
         xalign 0.0
-        size 19
+        size res_font(19)
         color "#521"
 
     style input_text is default:
         # xanchor 0.0
         # yanchor 0.0
-        size 18
+        size res_font(18)
         color "#931"
         background "UI/messagescroll_small.webp"
 
@@ -228,17 +229,17 @@ screen main_menu():
         if nsfw:
             add "bg title" yalign 0.5
 
-            text "青楼之王" size 128 xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
-            text "Brothel King" size 64 xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
+            text "青楼之王" size res_font(128) xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
+            text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
 
-        text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size 12
+        text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(12)
 
         vbox xalign 1.0 yalign 0.0:
             text "[renpy.version_string]" xalign 1.0 size 12
             text "BK [config.version]" xalign 1.0 size 12
 
         if debug:
-            text mod_traceback size 18
+            text mod_traceback size res_font(18)
 
     # The main menu buttons.
     frame:
@@ -411,7 +412,7 @@ screen file_picker():
                         action FilePage("quick")
                         xalign 0.5
 
-                text "" size 6
+                text "" size res_font(6)
 
                 grid 3 7:
                     xalign 0.5
@@ -423,12 +424,12 @@ screen file_picker():
                             action FilePage(i+1)
                             xalign 0.5
                             yalign 0.5
-                            text_size 14
-                            text_selected_size 17
+                            text_size res_font(14)
+                            text_selected_size res_font(17)
                             text_selected_bold True
 
-                text "" size 8
-                text "{i}Screen made\n by OhWee{/i}" size 12 xalign 0.85 color "#521" text_align 1.0 line_spacing -2
+                text "" size res_font(8)
+                text "{i}Screen made\n by OhWee{/i}" size res_font(12) xalign 0.85 color "#521" text_align 1.0 line_spacing -2
 
 
 
@@ -450,7 +451,7 @@ screen load():
 
 init -2:
     style slottext:
-        size 14
+        size res_font(14)
         color "#521"
         xalign 0.5
     style file_picker_frame is menu_frame
@@ -490,7 +491,7 @@ style slot_button:
 
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
-    size 12
+    size res_font(12)
 
 
 ##############################################################################
@@ -632,7 +633,7 @@ init -2:
         xalign 1.0
 
     style pref_slider:
-        xmaximum 192
+        xmaximum xres(192)
         xalign 1.0
 
     style soundtest_button:
@@ -719,7 +720,7 @@ init -2:
 
     style quick_button_text:
         is default
-        size 12
+        size res_font(12)
         idle_color "#8888"
         hover_color "#ccc"
         selected_idle_color "#cc08"

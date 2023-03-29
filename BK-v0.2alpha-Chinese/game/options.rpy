@@ -23,7 +23,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Brothel King"
-    config.version = "0.2 v220228"
+    config.version = "0.2 v220711"
 
     config.language = None # As recommended by DougTheC
 
@@ -259,7 +259,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Bro King-chinese-0.2a 1419249291"
+    config.save_directory = None
 
 init -1 python hide:
     #########################################

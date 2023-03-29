@@ -186,7 +186,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "{font=[gui.yishu]}神秘信件{/font}", message = "　　王子啊，你要知道\n在那几年之间亚特兰蒂斯沉没和金碧辉煌的城市\n谢罗斯之子崛起的岁月，在太阳升起时站在四边，在众多星星下站在三边...\n汝应命名为继任者")
+    call screen letter(header = "{font=[gui.yishu]}神秘信件{/font}", message = "　　王子啊，你要知道\n在那几年之间亚特兰蒂斯沉没和金碧辉煌的城市\n谢罗斯之子崛起的岁月，在太阳升起时站在四边，在众多星星下站在三边……\n汝应命名为继任者")
 
     play sound s_dress
 
@@ -216,7 +216,7 @@ label jobgirl_1():
 
     you "Ok, let's see then..."
 
-    $ answer = renpy.display_menu([("免费提供答案", 1),("索要金币", 2),("取笑她...只是有点", 3)])
+    $ answer = renpy.display_menu([("免费提供答案", 1),("索要金币", 2),("取笑她……只是有点", 3)])
 
     $ renpy.block_rollback()
 

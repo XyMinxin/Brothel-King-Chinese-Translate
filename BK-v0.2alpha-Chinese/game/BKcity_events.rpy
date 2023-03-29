@@ -4828,8 +4828,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                     if attitude >= target:
 
                         $ pic = girl.get_pic("beach", "swimsuit", and_tags=fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                            if not pic:
-                                $ pic = girl.get_pic(fix_dict[fix].tag_list[0], "naked", not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
+                        if not pic:
+                            $ pic = girl.get_pic(fix_dict[fix].tag_list[0], "naked", not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                         # revome the wet tag for 2 reason: (1). It doesnt matter, the "beach" tag should be specific enough. (2). A lot of beach event use "wet" as andtag so it make the pic show up if not tagging carefully.
 
                         if pic:
@@ -4872,8 +4872,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         menu:
                             "Make her come":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                                    if not pic:
-                                        $ pic = girl.get_pic(["orgasm"] + fix_dict[fix].tag_list[0], strict=True, not_tags=["sex", "anal", "group", "bisexual"], hide_farm=True)
+                                if not pic:
+                                    $ pic = girl.get_pic(["orgasm"] + fix_dict[fix].tag_list[0], strict=True, not_tags=["sex", "anal", "group", "bisexual"], hide_farm=True)
 
                                 "You can see she is enjoying herself too much, and decide it's time to bring this massage to a happy ending."
 
@@ -4893,7 +4893,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                             "Deny her orgasm[s1]":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
-                                    if not pic:
+                                if not pic:
                                     $ pic = girl.get_pic(["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
 
                                 if pic:
@@ -5042,7 +5042,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                             if not pic:
                                 $ pic = girl.get_pic("oral", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["cumshot", "group", "bisexual"], strict=True)
                                 if not pic:
-                                $ pic = girl.get_pic("oral", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
+                                    $ pic = girl.get_pic("oral", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
                         #adding cumshot to not_tags so it wont break immersion, i guess :v
 
                         you "Open your mouth and look me in the eyes..."
@@ -5057,7 +5057,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                             if not pic:
                                 $ pic = girl.get_pic("titjob", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["cumshot", "group", "bisexual"], strict=True)
                                 if not pic:
-                                $ pic = girl.get_pic("titjob", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
+                                    $ pic = girl.get_pic("titjob", "service", "naked", and_tags=["beach", "swimsuit"], not_tags=["group", "bisexual"])
 
                         you "I've got my eyes on your titties for some time... Why don't you use them to pleasure me?"
 

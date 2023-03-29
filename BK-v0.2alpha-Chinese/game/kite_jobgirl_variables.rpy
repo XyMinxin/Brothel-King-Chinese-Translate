@@ -3,25 +3,25 @@
 
 init -3 python:
 
-# These lines won't work as 'init' because they will be reset everytime the player starts the game. 
+# These lines won't work as 'init' because they will be reset everytime the player starts the game.
 # I moved them to the beginning of the first event.
-    
+
 #     jobgirl_romance = 0
 #     jobgirl_corruption = 0
 #     anika_sex = False
-    
-    
+
+
 ## sounds
-    
+
     ## part 1 : riddle
     m_jobgirl_1_suspence = "Tibet.mp3"
-    
-    ## part 2 : beach 
+
+    ## part 2 : beach
     s_moans_friend = "moans1.wav"
-    
+
 ## characters
-    
-define anika = Character("Anika", image="anika", window_left_padding=160)
+
+define anika = Character("Anika", image="anika", window_left_padding=int(config.screen_height*0.205))
 image anika = im.FactorScale("NPC/Jobgirl/beach/anika body.webp", 0.7, 0.7)
 image side anika = "NPC/Jobgirl/beach/anika portrait.webp"
 
@@ -30,7 +30,7 @@ image elflady = "NPC/Jobgirl/elf house/lady body.gif"
 image side elflady = "NPC/Jobgirl/elf house/lady portrait.webp"
 
 
-    
+
 ## images
 
     ## part 1 : riddle
@@ -70,7 +70,7 @@ image friend_shower = ProportionalScale ("NPC/Jobgirl/beach/friend shower.webp",
 image friend_doggy = ProportionalScale ("NPC/Jobgirl/beach/friend doggy.webp", config.screen_width, config.screen_height)
 
     ## part 3 : elf house
-    
+
 image elf_house_hall = "NPC/Jobgirl/elf house/hallroom.webp"
 image elf_house_inner = "NPC/Jobgirl/elf house/inside.webp"
 
@@ -80,5 +80,3 @@ image elf_lady_3 = "NPC/Jobgirl/elf house/lady 3.webp"
 image elf_lady_4 = "NPC/Jobgirl/elf house/lady 4.webp"
 image elf_lady_5 = "NPC/Jobgirl/elf house/lady 5.webp"
 image elf_lady_6 = "NPC/Jobgirl/elf house/lady 6.webp"
-
-

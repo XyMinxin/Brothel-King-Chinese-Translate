@@ -20,7 +20,6 @@ label hmas:
 
     scene black with fade
 
-
     play sound s_chimes
     pause 0.2
     play sound2 s_chimes
@@ -780,8 +779,9 @@ label renza_friend3_menu:
 
 label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story3]
 
-    $ renpy.show("brothel" + str(brothel.pic_index), at_list = [top])
-    with fade
+    scene black with fade
+    show expression bg_bro at top
+    with dissolve
 
     "That night, as you stand by the main entrance greeting customers, you spot a familiar face among the rowdy crowd."
 
@@ -805,7 +805,9 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
 
     "With Sill's help, you push patrons and girls away from one of the pools, paying no attention to their complaints."
 
-    show bg onsen at top with fade
+    scene black
+    show bg onsen at top
+    with fade
 
     you "We have a VIP! Sill, wipe this place clean, will you!"
 
@@ -935,7 +937,9 @@ label renza_onsen2:
 
     "Grabbing Sill by the ear, you drag her out of the bath area as quickly as you can."
 
-    show bg tavern at top with fade
+    scene black
+    show bg tavern at top
+    with fade
 
     show sill sad with dissolve
 
@@ -1603,15 +1607,15 @@ label farm_meet_gizel(): # Location: spice market
         "How do you feel about elves?"
 
         "I bear them no grudge":
-            $ MC.rand_say(("I don't hate them. Wars come and go, and it wasn't they who started this one...", "ar: Although the Arios church denounces the elves, I do not think they are bad. They can be brought back to the light.", "wr: I have fought enough elves on the battlefield to respect their grit and abilities. They are worthy opponents.", "wz: I do enjoy a good conversation with an elf from time to time. They know a great deal of secrets, though they don't share them very willingly."))
+            $ MC.rand_say(("我不讨厌他们。战争来了又走，不是他们发起的……", "ar: 虽然阿里奥斯教会谴责精灵，但我不认为他们是坏人。他们可以被带回光明。", "wr: 我在战场上打了足够多的精灵，尊重他们的勇气和能力。他们是值得尊敬的对手。", "wz: 我时不时地和精灵聊天。他们知道很多秘密，虽然他们不太愿意分享。"))
             $ story_flags["elves"] = "like"
 
         "I hate them":
-            $ MC.rand_say(("I despise these pointy-eared rats. The only good elf is a dead elf, I always say.", "ar: Those spawns of hell show no respect to the true Light, and occupy the Holy Lands against the will of men and Gods. I hate them.", "wr: The damn elves took the lives of many of my comrades on the battlefield. I shan't forgive them."))
+            $ MC.rand_say(("我鄙视这些尖耳鼠。唯一好的精灵是死去的精灵，我总是这么说。", "ar: 那些地狱的产物对真正的光明毫无尊重，占领了人和神的圣地。我讨厌他们。", "wr: 该死的精灵夺去了许多我的战友的生命。我不会原谅他们。"))
             $ story_flags["elves"] = "dislike"
 
         "I don't really know":
-            $ MC.rand_say(("I can't say I have met many elves, much less talked to them. So I reserve my judgement.", "ng: I don't really know. The Arios Church hates them I guess, but I have no time for phony gods and their minions.", "wz: Elves know many things, and I'm sure one could learn a lot from them... If they weren't like to pelt you with poison arrows whenever you come near them.", "tr: I've traded with elves quite a bit in the past. They are good on their word, I guess, although they won't win any popularity contest."))
+            $ MC.rand_say(("我不能说我见过很多精灵，更不用说和他们交谈了。所以我保留我的判断。", "ng: 我不太清楚。阿里奥斯教会讨厌他们，但我没有时间为虚伪的神和他们的爪牙服务。", "wz: 精灵知道很多东西，我相信人们可以从他们那里学到很多东西……如果他们不像在你靠近他们时用毒箭射你一样。", "tr: 我过去经常和精灵做生意。他们说到做到，我想，虽然他们不会赢得任何人气比赛。"))
             $ story_flags["elves"] = "neutral"
 
     man "Make way!"
@@ -3405,8 +3409,8 @@ label farm_meet_goldie_menu():
             goldie "Anyway, how do you expect to solve the mystery of this place?"
 
             $ MC.rand_say(("wr: 我总是说，没有什么事情是不能用几英寸的钢筋在肠子里解决的。让我来处理吧。",
-                           "wz: 我在卡尔基尔大学上过一门'诅咒和消弱管理'的课，那时候...我知道了如何处理这些事情。",
-                           "tr: 我整天都在为棘手的情况说话...... 如果那个农场里有什么东西，也许我可以和它达成协议？"))
+                           "wz: 我在卡尔基尔大学上过一门“诅咒和消弱管理”的课，那时候……我知道了如何处理这些事情。",
+                           "tr: 我整天都在为棘手的情况说话……如果那个农场里有什么东西，也许我可以和它达成协议？"))
 
             goldie "I hope you're right..."
 
@@ -3522,7 +3526,7 @@ label farm_exorcism_attempt():
 
             spirit "Fool! I exist in an ethereal plane that you cannot hope to reach with your amateurish powers..."
 
-    $ MC.rand_say(("sh: Shalia guard me...", "ar: Arios, guide me into the light...", "ng: Fuck."))
+    $ MC.rand_say(("sh: 莎莉娅保护我……", "ar: 阿里奥斯，引导我走向光明……", "ng: 该死。"))
 
     play sound s_maniacal_laugh
 
@@ -5434,7 +5438,7 @@ label stella_invitation():
 
     "Strange glyphs are written on the envelope. There is no recognizable name or address."
 
-    $ MC.rand_say(("gd: 我真的不应该窥探，但如果我不打开它，我就不能把它带给它的合法收件人。", "ev: 很好！希望我可以用这个来勒索某人。", "ne: 好吧，如果有人要打开这个并带走内容，那也可能是我......"))
+    $ MC.rand_say(("gd: 我真的不应该窥探，但如果我不打开它，我就不能把它带给它的合法收件人。", "ev: 很好！希望我可以用这个来勒索某人。", "ne: 好吧，如果有人要打开这个并带走内容，那也可能是我……"))
 
     "Slicing the envelope open with your dagger, you are somewhat disappointed to find only a small piece of paper tucked inside, alongside a small charm amulet. It's the cheap kind you can find for a denar a dozen on Pilgrim Road."
 
@@ -6668,7 +6672,7 @@ label farm_meet_willow():
 
     show bg inner_sewers at top with Pixellate(2.0, 5)
 
-    $ MC.rand_say(("ev: 这都是那该死的希露的错！", "ne: 我想帮助别人，这是我的权利。", "gd: 希露有时会很笨拙......"))
+    $ MC.rand_say(("ev: 这都是那该死的希露的错！", "ne: 我想帮助别人，这是我的权利。", "gd: 希露有时会很笨拙……"))
 
     "After you came down into the sewers, you couldn't find the armlet close by after all."
 
@@ -7166,7 +7170,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
         play sound s_dodge
         hide willow with easeoutleft
 
-        $ MC.rand_say(["又来了？真的？", "哦，不，又来了...", "又来！你到底是什么样的怪物猎人？！？"])
+        $ MC.rand_say(["又来了？真的？", "哦，不，又来了……", "又来！你到底是什么样的怪物猎人？！？"])
 
     "Effortlessly, the monster lifts Willow in the air, with her head upside down and her skirt overturned. You catch a good view of her panties."
 
@@ -10544,7 +10548,7 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "{font=[gui.yishu]}紧急邀约{/font}", message = "亲爱的" + MC.name + "，\n\n你已经有一段时间没来看我了。我很难过，明明我们是最好的朋友的说。\n不要让我{b}失望{/b}。不然我生气了。\n惹我生气的后果可是很严重的，我会控制不住乱砸东西东西或者...人。\n所以请尽快来看我，我有...呃...有重要的事情要告诉你。\n\n来吧！会很有趣的!",
+        call screen letter(header = "{font=[gui.yishu]}紧急邀约{/font}", message = "亲爱的" + MC.name + "，\n\n你已经有一段时间没来看我了。我很难过，明明我们是最好的朋友的说。\n不要让我{b}失望{/b}。不然我生气了。\n惹我生气的后果可是很严重的，我会控制不住乱砸东西东西或者……人。\n所以请尽快来看我，我有………要的事情要告诉你。\n\n来吧！会很有趣的！",
                           signature = "夜色中的情人 萨特拉{font=[gui.fuhao]}{size=28}{i} ♥ {/i}{/font}")
 
         you "Oh... Satella is summoning me to Shalia's temple... It must be important."
@@ -11342,7 +11346,7 @@ label satella_game(game_type="the guessing game"):
                         extend "\n{i}[answers]{/i}"
 
                         "Is the total above...":
-                            $ r = renpy.input("Is the total above...", default="7")
+                            $ r = renpy.input("上面的数字是多少？", default="7")
 
                             python:
                                 try:
@@ -11368,7 +11372,7 @@ label satella_game(game_type="the guessing game"):
 
 
                         "Is the total below...":
-                            $ r = renpy.input("Is the number below...", default="7")
+                            $ r = renpy.input("请在下面输入数字……", default="7")
 
                             python:
                                 try:
@@ -11393,7 +11397,7 @@ label satella_game(game_type="the guessing game"):
                                 $ answers += "\n总数高于  " + str(r-1) + "。"
 
                         "Did you roll a...":
-                            $ r = menu([("Did you roll a...", None), ("1", 1), ("2", 2), ("3", 3), ("4", 4), ("5", 5), ("6", 6)])
+                            $ r = menu([("你Roll到了……", None), ("1", 1), ("2", 2), ("3", 3), ("4", 4), ("5", 5), ("6", 6)])
 
                             if d1 == r or d2 == r:
                                 satella "Yes!"
@@ -14482,7 +14486,7 @@ label visit_bank():
 
             for l in loans:
                 if game.chapter - 4 <= loans.index(l) <= game.chapter - 1:
-                    menu_options.append(("贷款 " + str(l.amount) + " 金币在 " + str(l.duration) + " 天内还清 (总成本: " + str(l.total_cost) + ")", l))
+                    menu_options.append(("贷款" + str(l.amount) + "金币在" + str(l.duration) + "天内还清（总成本：" + str(l.total_cost) + "）", l))
 
             if NPC_banker.love >= 25:
                 menu_options.append(("TJB专项", "special"))
@@ -14610,7 +14614,7 @@ label visit_bank():
 
 
         else:
-            if renpy.call_screen("yes_no", "你确定要贷款 "+ str(r.mount) + " 金币吗？(日息: " + str(r.daily_cost) + " 金币)"):
+            if renpy.call_screen("yes_no", "你确定要贷款 "+ str(r.mount) + " 金币吗？（日息：" + str(r.daily_cost) + "金币）"):
                 $ MC.take_loan(r)
                 play sound s_gold
 
@@ -18297,5 +18301,690 @@ label meet_twins():
     $ unlock_achievement("merchant twins")
 
     return
+
+## NINJA GUEST EVENTS ##
+
+label ninja_guest1: # Warrior event
+    # "Guest event Warrior"
+
+    with vpunch
+    "*BONK*"
+
+    scene black with fade
+    show bg thieves_guild corridor at top with dissolve
+
+    show hokoma_warrior with dissolve
+
+    play sound s_surprise
+
+    hokoma_warrior "MOO!" with vpunch
+
+    "While chasing after the Kunoichi, you unexpectedly bump into a fearsome woman."
+
+    hokoma_warrior "You! Watch where you're going!"
+
+    you "S-Sorry..."
+
+    "The first thing that strikes you is a that she looks like a mighty warrior, sporting an exotic-looking claw on her arm."
+
+    "Actually, make that the second thing. The {i}first{/i} thing that strikes you is her plump body and her enormous rack, only protected by a loose loincloth that lives little to the imagination."
+
+    you "(B... Boobs...)"
+
+    hokoma_warrior "Hey! I'm talking to you!"
+
+    hokoma_warrior "I see you're wielding a hammer. You came here to challenge me? To cross sword with the elite captain of the Gwanaian tribe?"
+
+    if MC.playerclass == "Warrior":
+        "You know that Hokoma's tribes have fierce female warriors, all following a myriad local traditions and superstitions that allow them to recognize each other, while being impenetrable to outsiders."
+
+    you "N-No, that's a mistake, my Lady, I didn't mean to hit you..."
+
+    hokoma_warrior "Moo, that's a pity. I was looking for a good work out."
+
+    you "I'll be going, now, if you don't mind..."
+
+    hokoma_warrior "WAIT!!!" with vpunch
+
+    "You freeze in your steps, as the massive woman looms closer over you."
+
+    hokoma_warrior "Let me take a look at you..."
+
+    "She bends forward and... {i}sniffes{/i} you."
+
+    hokoma_warrior "Well, he's scrawny, but he could do... *sniff*"
+
+    "You start to notice she actually has animal features. She must be a descendant of the fairy people. As she looks at you with a wolfish smile, you start wondering what the Southern tribes eat..."
+
+    hokoma_warrior "Hey! Come here!"
+
+    play sound s_wscream
+
+    you "Eeek!!!" with vpunch
+
+    play sound s_crash
+
+    scene black with fade
+
+    "She pins you down on the floor with her free hand, ripping your clothes off with a lightning fast strike of her claw."
+
+    you "AAAH!!! Don't eat meeee!!!" with vpunch
+
+    "You start panicking, wondering if she's about to rip your dick off, but instead she just gives you a mad, feverish look while shoving aside her clothing."
+
+    play sound s_dress
+
+    show bg guest1_sex1 at top with fade
+
+    hokoma_warrior "Moo, let's fuck, little man! I'm in heat!"
+
+    you "Whoah!"
+
+    "Not giving you any choice in the matter, she impales herself on your dick, which out of old habit was ready for it before you were."
+
+    play sound s_orgasm
+
+    you "Uwah!"
+
+    hokoma_warrior "Oh, this is the stuff... This is just what I needed..." with vpunch
+
+    you "Ugh..." with vpunch
+
+    hokoma_warrior "Your timing was perfect, little man. I get so horny when I'm pregnant."
+
+    you "You... You what? You're pregnant?"
+
+    hokoma_warrior "Of course, moo! I get impregnated by the men of my tribe every year. This is a key part of our war rituals..."
+
+    hokoma_warrior "The women of my people are the best fighters. And they fight the hardest when they're pregnant."
+
+    you "That's crazy..."
+
+    hokoma_warrior "Don't believe me? Take a look, moo!" with vpunch
+
+    show bg guest1_sex2 at top with dissolve
+
+    "The warrior lady start massaging her massive tits, which quickly start spurting out milk."
+
+    play sound s_aaah
+
+    hokoma_warrior "Moo! This feels so good!" with vpunch
+
+    you "Oh... This is so naughty..."
+
+    "She keeps playing with her tits, lactating while riding your cock. Soon, this becomes too much for you to handle."
+
+    you "Uuuh..."
+
+    show bg guest1_sex3 at top with flash
+
+    you "UWAAH!!!"
+
+    with doubleflash
+
+    play sound s_orgasm
+
+    "You cum hard inside here, filling her up to the brim with hot cum. Enough to make her pregnant twice over."
+
+    show bg guest1_sex4 at top with flash
+
+    hokoma_warrior "So good! So good! Moo... More!"
+
+    "Not skipping a beat, she keeps riding you, squeezing your sensitive cock with her pussy until it is back in business."
+
+    play sound s_sucking
+
+    hokoma_warrior "Let us not waste so much milk... Mmmmh..." with vpunch
+
+    show bg guest1_sex5 at top with dissolve
+
+    "She starts sucking on her nipples, drinking her own milk hungrily."
+
+    you "Ohh..."
+
+    "She then turns to you and forcibly kisses you with a mouthful of warm milk and saliva, making you drink it."
+
+    you "Ngh... *swallow*"
+
+    show bg guest1_sex4 at top with dissolve
+
+    hokoma_warrior "Oh, little man! I feel it now! I feel it!" with vpunch
+
+    play sound s_scream
+
+    hokoma_warrior "Mooo!!! I'm cuuuming!!!!" with vpunch
+
+    show bg guest1_sex6 at top with doubleflash
+
+    play sound s_orgasm
+
+    "Unable to control yourself, you cum inside her again while she splashes your face with milk."
+
+    with flash
+
+    hokoma_warrior "Aaaah! ♥"
+
+    show bg guest1_sex7 at top with doubleflash
+
+    you "Ohhh..."
+
+    play sound s_ahaa
+
+    hokoma_warrior "Aaah... Thank you, little man... That was good and satisfying."
+
+    hokoma_warrior "I shall not wash your seed from my body, for good luck in battle."
+
+    you "..."
+
+    scene black with fade
+
+    "It takes you a while to recover and find your way back onto the street. The Kunoichi is long gone, of course."
+
+    return
+
+label ninja_guest2: # Magician event
+    # "Guest event Magical girl"
+
+    play sound s_crash
+    "*CRASH*" with vpunch
+
+    scene black with fade
+    show bg magic_cellar at top with dissolve
+
+    "As you run through an abandonned house in an attempt to corner the Kunoichi, the floor gives way, sending you crashing down into a cellar."
+
+    you "Ouch!" with vpunch
+
+    "Fortunately, something cushions your fall."
+
+    play sound s_crash
+    show magical_girl with vpunch
+
+    magical_girl "Abracadabr- AW!"
+
+    "It happens to be a frail girl wearing a strange outfit, that you just send tumbling backwards onto the dusty floor."
+
+    magical_girl "OUCH! My butt! What is this interruption?" with vpunch
+
+    you "Err, sorry lady, I didn't mean to..."
+
+    magical_girl "My ritual! You interrupted me! And now I have to..."
+
+    magical_girl "Uh-oh."
+
+    "She looks down at her feet. You follow her worried stare and see a magical pentagram drawn on the floor and slightly glowing."
+
+    "She is standing right in the middle."
+
+    magical_girl "Oh no!!! I am standing inside the Faustian Gate! You know what this means, don't you?"
+
+    you "A Faustian..."
+
+    if MC.playerclass == "Wizard":
+        you "So you were trying to summon something from another plane, but now you are the one who will be sent away to some other dimension?"
+    else:
+        you "I don't know... It means you screwed up bad?"
+
+    magical_girl "Please, help me! I can't pass that magical barrier! I will be transported to a demonic plane in mere moments!"
+
+    you "Wait a second... You were trying to summon a demon?"
+
+    magical_girl "We have no time for that now! Help me!" with vpunch
+
+    you "Lady, I'd love to help you, but I'm not an expert on demonic summoning..."
+
+    you "And I'm pretty sure I should be doing something safer with my time, such as chasing down crazy murderous female ninjas."
+
+    magical_girl "You ruined my ritual, and put my life and soul in jeopardy! Figure something out!" with vpunch
+
+    "She looks at you with pleading eyes, and she's also kind of cute."
+
+    you "*sigh*"
+
+    you "All right, what do you know about this ritual? Is there any way we can breach that magical barrier?"
+
+    magical_girl "Well... I was trying to summon a, err... Ahem."
+
+    you "Spit it out! Your life is at stake, remember?"
+
+    magical_girl "A-All right... I was trying to summon an incubus..."
+
+    if MC.playerclass == "Wizard":
+        you "An incubus? Wait a second... That is a sexual demon! What did you want to do with that?"
+
+        magical_girl "This is, err, ehm... Private business..."
+
+    else:
+        you "An incubus? Wait a second... Isn't that a nu-metal band from a long time ago?"
+
+        magical_girl "No, you simpleton! It's a, erm... Male demon..."
+
+    you "What did you expect from a male demon? Don't tell me... You're having sex with demons?"
+
+    magical_girl "N-N-No! I was just going to ask it questions, I swear! *blush*"
+
+    magical_girl "Maybe have him show me something... From afar! But no touching! Ew!" with vpunch
+
+    you "All right, all right, no need to yell... You won't get kink-shaming from me."
+
+    magical_girl "Stop it! And help me!"
+
+    you "Well, so you were trying to summon a demon from a sexual plane... Do they have any kind of weaknesses?"
+
+    magical_girl "Well, I mean, they feed on sexual energy, so... Perhaps it could saturate the barrier, but..."
+
+    "She blushes bright red."
+
+    you "Sexual energy? Then I think I know just what to do..."
+
+    scene black with fade
+
+    show bg guest2_sex1 at top with dissolve # prep vag see-thru
+
+    magical_girl "A-Are you quite sure?"
+
+    you "Quick! There's no time! Follow my instructions, and we can get you out of here!"
+
+    magical_girl "(So now he's an expert, uh...)"
+
+    magical_girl "I took the position you told me. What do I do now?"
+
+    you "Come on, you're not that hopeless. You know what to do! You have to touch yourself."
+
+    magical_girl "Touch myself? Down... Here?"
+
+    you "Yes. Get going, we ain't got all day."
+
+    magical_girl "B-But, do you have to watch, though? It's too embarrassing..."
+
+    you "It's quite important that, er, I watch everything, to know if, erm, if the ritual is going as planned. Spread your legs more. More!"
+
+    magical_girl "Aw... *blush*"
+
+    show bg guest2_sex2 at top with dissolve # mast through fabric
+
+    play sound s_sucking
+
+    "Reluctantly, the girl starts carressing her clit and slit through the fabric of her suit. The wet white cloth quickly becomes translucid, giving you quite the erotic view."
+
+    magical_girl "Ah, aah... Am I doing it right?"
+
+    you "Yes, you're doing great. Pull on your suit a bit more, so that it bites into it... Nice."
+
+    "Blushing bright red, the girl continues touching herself following your encouragement."
+
+    magical_girl "Oh, aah, aaah..."
+
+    "Although clearly inexperienced, she is getting in the mood quickly. Her moans become deeper as her love juice starts running down her thighs."
+
+    you "You're doing great. Keep going!"
+
+    magical_girl "I feel, ah, strange... My head is dizzy..."
+
+    magical_girl "Uhn... Ah... Aaah..."
+
+    show bg guest2_sex3 at top with flash # mast through fabric org + magic reaction
+
+    magical_girl "AAAAH!!!"
+
+    with doubleflash
+
+    "Suddenly, she comes loudly, arching her back as her love juice spurts out."
+
+    you "It's working! The pentagram is reacting!"
+
+    magical_girl "B-But... The magical barrier is still in place... It is barely weakened..."
+
+    you "Damn... We're on the right track, but something's missing..."
+
+    "Noticing you got a raging hard-on from watching her come, it gives you an idea."
+
+    you "I guess we have no choice. Let me come inside with you."
+
+    magical_girl "What? But you'll be trapped also!"
+
+    you "Trust me. And more importantly, get your suit out of the way and spread your pussy lips."
+
+    magical_girl "L-Like that?"
+
+    "Surprisingly, she complies almost immediately with your request, perhaps a bit too sheepishly. Maybe she enjoys being bossed around."
+
+    you "More, show me more... Great. Here I come."
+
+    show bg guest2_sex4 at top with dissolve # x + open psy + scream
+
+    play sound s_moans
+
+    magical_girl "Wait, aaaaaah!"
+
+    with vpunch
+
+    "Because time is of the essence, you ignore her cries and plunge your dick deep inside her."
+
+    magical_girl "OH! AAH!" with vpunch
+
+    "She is tight but also extremely wet, so it is still easy to move inside."
+
+    magical_girl "W-What am I doing... What's going on... It feels so... So..."
+
+    "Her pussy walls are nicely gripping your cock as you pound her deeper and deeper, hitting her cervix."
+
+    magical_girl "Ohh... Ohhh..." with vpunch
+
+    "The light coming from the pentagram starts to flicker. You can feel something powerful building up inside you."
+
+    magical_girl "It's reacting! The Faustian Gate! It's almost there!"
+
+    you "Then it's time to put an end to this..."
+
+    you "UWAH!" with vpunch
+
+    show bg guest2_sex5 at top with flash # cin + open psy + scream
+
+    play sound s_scream_loud
+
+    magical_girl "AAAAAAH!!!"
+
+    with doubleflash
+
+    "You cum hard inside her, spurting a huge load inside her small pussy."
+
+    play sound s_orgasm_young
+
+    "The feeling of hot cum filling her up is too much to bear, and she cums like crazy, yelling at the top of her lungs."
+
+    show bg guest2_sex6 at top with flash # cpie + open psy + blush
+
+    magical_girl "Oh, ah, aah... *pant*"
+
+    "The light of the pentagram recedes and it seems like an invisibe veil has lifted."
+
+    magical_girl "The magical barrier... It's gone... And the pentagram is inert, forever."
+
+    you "Hurray!"
+
+    you "Although I guess that means you won't be able to summon your incubus now. Sorry..."
+
+    magical_girl "The... Incubus? Oh... I, uh, I... It won't be necessary..."
+
+    you "Really? What do you mean?"
+
+    magical_girl "Ah, uh, nothing... Nothing at all! *blush*"
+
+    magical_girl "I-I have to go now. Have, uh, have a nice day!"
+
+    scene black with fade
+
+    "She darts off, barely taking the time to fix her clothes."
+
+    you "And... She's gone. Phew."
+
+    you "Oh well. Good thing that the Hero was here to save the day, once again."
+
+    "You wonder if you should stop referring to your cock as 'the Hero'."
+
+    return
+
+label ninja_guest3: # Scientist event
+    # "Guest event Scientist"
+
+    scene black with fade
+    show bg_rooftop at top with dissolve
+
+    you "Now... I gotcha!!!"
+
+    play sound s_boing
+
+    girl_scientist "UWAH!!!" with vpunch
+
+    "You saw something move on the roof, and you pounced. Turns out it is not a ninja, though."
+
+    show girl_scientist with dissolve
+
+    girl_scientist "What are you doing! Let me go!!! Aaah!" with vpunch
+
+    "The woman you just grabbed is dressed more like a lab rat than a ninja. She is holding on to some strange apparatus that looks very fragile."
+
+    play sound s_shatter
+    with vpunch
+
+    you "(Uh-oh. I hope I didn't break anything...)"
+
+    girl_scientist "Oh no! You just broke EVERYTHING!!!" with vpunch
+
+    you "W-Wait! What did I... And what are you doing up here on the roof, anyway?"
+
+    girl_scientist "Why, I'm a doctor studying under the great Katryn Lapusel. I also moonlight as a contractor for the Slavers' Guild. My research is invaluable to them."
+
+    you "Really? I know the Slaveres' Guild, and I didn't pick them to be science guys."
+
+    girl_scientist "This machinery that you just broke is a state-of-the-art intercourse lidar. It is invaluable to them!"
+
+    you "Really? What does it do?"
+
+    girl_scientist "Why, it detects sexual intercourse, of course! We can then match it with the city land registry, to discover the most sexually active buildings in the city."
+
+    you "Really? Where are they?"
+
+    girl_scientist "74 times out of 100, these are brothels! The rest are mostly noble parties."
+
+    girl_scientist "Either way, this is useful intel for the Guild. And it's a great way to spot all of the illegal brothels that don't pay their fair share."
+
+    you "*gulp* I didn't know they had access to such advanced technology..."
+
+    girl_scientist "But now it's ruined! And also, there's the additional hazard of... Uh oh."
+
+    "She takes out another gizmo from one of her numerous pockets and places it over her wrist."
+
+    play sound s_surprise
+
+    girl_scientist "Oh no... It's even worse than I've thought..."
+
+    you "Uh?"
+
+    girl_scientist "The vacuum chamber has depressurized! All the pent up sexual mojo stored inside has been released, and we've been exposed!"
+
+    you "We?"
+
+    girl_scientist "You and me both! This is a disaster..."
+
+    girl_scientist "Quick! Follow me to the lab!"
+
+    scene black with fade
+    show bg lab at top with dissolve
+
+    girl_scientist "Oh... I'm not feeling well..."
+
+    "On the way to her lab, the lady scientist has become feverish. She stumbles down on the floor of the lab, panting."
+
+    girl_scientist "Quick! I need what in that drawer! Give it to me!"
+
+    "Making your way through heaps of paper and machinery, you reach the designated drawer."
+
+    you "Let's see... Is it the drugs? The red or blue pills?"
+
+    girl_scientist "No!"
+
+    you "Okay... The syringes?"
+
+    girl_scientist "No!!! Not that!" with vpunch
+
+    you "Then what? There's nothing else here, apart from that giant pink dildo!"
+
+    girl_scientist "YES! The fuschia reticulated penetrator! Give it to me!"
+
+    you "Uh? You want the dild-..."
+
+    play sound s_dodge
+    with vpunch
+
+    "Before you have a chance to finish your sentence, she rips the device from your hands."
+
+    "Ignoring your puzzled look, the girl immediately starts putting it to good use."
+    show bg guest3_sex1 at top with dissolve # open blouse + no bottom + bend on lab floor + dild psy+A wet
+
+    play sound s_vibro
+
+    girl_scientist "F-Finally..."
+
+    girl_scientist "What? What are you looking at?"
+
+    you "I don't know... What are you doing?"
+
+    girl_scientist "What does it look like I'm doing? I must remove the pent up sexual energy... Aaah... So that it doesn't saturate my system... Ohhh..."
+
+    play sound s_sucking
+
+    you "Wow, it looks like you really know what you're doing..."
+
+    "You look on appreciatively as she uses the dildo to stimulate both of her holes. She's more experienced with it than many of your girls."
+
+    you "I like your style... How did you get so good?"
+
+    girl_scientist "Oh, please. Bodily needs only get in the way of studying. It is a simple matter to figure out how to deal with them swiftly, so that one can return to serious matters.."
+
+    play sound s_aah
+
+    girl_scientist "Aah..."
+
+    girl_scientist "Ah yes, I can feel release is coming... It's... It's..."
+
+    play sound s_scream
+
+    show bg guest3_sex2 with flash # org + sqrt
+
+    girl_scientist "Aaah!"
+
+    play sound s_orgasm_fast
+
+    with doubleflash
+
+    girl_scientist "AAAAH!!!! *squirt*"
+
+    "Angling the dildo so as to hit all of her weak spots at once, the scientist cums loudly, leaking love juice onto the lab floor."
+
+    show bg guest3_sex3 with flash # rest
+
+    girl_scientist "Oh, aah..."
+
+    you "Wow... Well, thanks for having me... I'm' grateful for the free peep show."
+
+    girl_scientist "No, wait... This isn't right..."
+
+    you "Uh? What do you mean?"
+
+    show bg guest3_sex4 with dissolve # take out dild & spread juice on floor
+
+    play sound s_vibro
+
+    "She spreads her buttcheeks, popping the dildo out as her pussy drips fluid onto the floor."
+
+    girl_scientist "I... I received a very high dose of sexual mojo... Way higher than in all those previous lab incidents!"
+
+    you "(So this happens a lot, uh...)"
+
+    girl_scientist "The reticulated penetrator is not working! What should I do?!?"
+
+    you "Well, err..."
+
+    girl_scientist "Do something!!!" with vpunch
+
+    "She waves her butt in your face, begging you to come up with a solution."
+
+    show bg guest3_sex5 with dissolve # fing psy + thumb in A
+
+    "Seeing her distress, you move forward without thinking."
+
+    girl_scientist "M-Manual stimulation? Are you sure?"
+
+    you "Well, we don't have many other choices, do we."
+
+    girl_scientist "I-I guess it's too late to send for heavy equipment. Hmm... Let's try it your way then..."
+
+    "Carefully using her love juice to lubricate her nether regions, you start fingering her pussy, while pushing your thumb inside her asshole."
+
+    "She starts moving her hips back and forth, grinding against your hand."
+
+    girl_scientist "Hmm yes... I think we are getting a reaction..."
+
+    show bg guest3_sex6 with dissolve # wet + squeal
+
+    play sound s_ahaa
+
+    girl_scientist "Ahaaa! ♥" with vpunch
+
+    play sound s_sucking
+
+    "Increasing your pace, you feel her body reacting nicely. Using your free hand, you start kneading her butt."
+
+    girl_scientist "Keep going... Ohhh..."
+
+    "You continue for a while, but she stays on the brink of orgasm, not quite getting there."
+
+    girl_scientist "I don't know... I don't think it's working... I feel hotter and hotter..."
+
+    girl_scientist "We're gonna need a bigger boat."
+
+    you "Well... I think I have just the thing."
+
+    show bg guest3_sex7 with fade # x
+
+    play sound s_moans
+
+    girl_scientist "Aaaah yes!!! ♥" with vpunch
+
+    "She squeals with pleasure as you push your erect cock inside her slimy wet pussy, still twitching your thumb inside her tight asshole."
+
+    girl_scientist "This experiment is quite, aah... Unorthodox... But it just... Hmmm... Might work!" with vpunch
+
+    "She grinds her hips against you, making sure your cock reaches as deep as possible inside her."
+
+    girl_scientist "I think the mojo is about to release! It's w-w-working..." with vpunch
+
+    play sound s_scream_loud
+    show bg guest3_sex8 with flash # cin
+
+    girl_scientist "UWAAAAAH!!!" with vpunch
+
+    play sound s_orgasm
+
+    with doubleflash
+
+    "Slamming your dick inside her once more while grabbing her ass, you shoot your load into her wet pussy."
+
+    girl_scientist "OH, AH, AAH!!!"
+
+    show bg guest3_sex9 with flash
+
+    "Taking your cock out, you spurt the rest of your semen all over her, even smearing the wall."
+
+    girl_scientist "A-Amazing... So much mojo has been extracted. You must have a natural affinity for it..."
+
+    you "..."
+
+    girl_scientist "I feel the worse of the reaction is over by now. I will be able to recover..."
+
+    girl_scientist "But wait, one thing is strange..."
+
+    girl_scientist "You've been exposed to a burst of pent-up mojo too, you must be feeling very ill right now?"
+
+    you "Ill? No. I'm feeling perfectly normal."
+
+    girl_scientist "Really? H-How? The mojo should have made you horny as hell!"
+
+    you "..."
+
+    you "I don't understand... I'm always horny as hell!"
+
+    girl_scientist "Interesting... *grumble* The subject has developped a natural immunity to mojo exposure..."
+
+    girl_scientist "L-let me get my notes."
+
+    scene black with fade
+
+    "She bombards you with questions about your sexual habits and history. It is a long time before you can escape back onto the street."
+
+    return
+
 
 #### END OF STORY EVENTS ####

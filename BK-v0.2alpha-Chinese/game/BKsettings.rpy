@@ -14,7 +14,7 @@ init -4 python:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 1366
+    config.screen_width = 1024
     config.screen_height = 768
 
     ## Picture caching. Set lower values if you have memory problems. Use only one setting, comment the other out with the # symbol.
@@ -1001,13 +1001,14 @@ init -4 python:
                         "Ramias" : "拉米阿斯",
                         "Stella" : "斯特拉",
                         "Goldie" : "戈尔迪",
+                        "Gizel" : "吉泽尔",
                         None : "(trainer_name_dict2)没有值",
                         }
 
 #### BALANCE / CHEATS ####
 
     ## 调试模式 ##
-    debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
+    debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play
                         "gold" : 1.0,
@@ -1743,6 +1744,6 @@ init -4 python:
 
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
-    URL = "{a=https://www.henthighschool.com/brothel-king/}{color=#9933FF}https://www.henthighschool.com/brothel-king/{/color}{/a}"
+    URL = "{b}*新论坛*{/b} {a=https://www.henthighschool.net/brothel-king/}{color=#9933FF}https://www.henthighschool.com/brothel-king/{/color}{/a}"
 
 #### END OF BK SETTINGS ####

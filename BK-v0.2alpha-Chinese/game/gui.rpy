@@ -1,5 +1,7 @@
 ﻿#### Note: Most of the GUI functions are unused, as BK was created using an older version of Ren'py with the Theme system
 
+# Dynamic resolution settings currently affect text, width and height parameters. pos, margins and spacing parameters are left untouched.
+
 
 ################################################################################
 ## Initialization
@@ -12,7 +14,7 @@ init offset = -2
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
-    gui.init(1024, 768)
+    gui.init(config.screen_width, config.screen_height)
 
 
 
@@ -69,22 +71,22 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 22
+define gui.text_size = res_font(22)
 
 ## The size of character names.
-define gui.name_text_size = 24
+define gui.name_text_size = res_font(24)
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 22
+define gui.interface_text_size = res_font(22)
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 24
+define gui.label_text_size = res_font(24)
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 14
+define gui.notify_text_size = res_font(14)
 
 ## The size of the game's title.
-define gui.title_text_size = 50
+define gui.title_text_size = res_font(50)
 
 
 ## Main and Game Menus #########################################################
@@ -100,7 +102,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 160
+define gui.textbox_height = yres(160)
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
@@ -137,7 +139,7 @@ define gui.dialogue_xpos = 0
 define gui.dialogue_ypos = 0
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = config.screen_width - 200 #744
+define gui.dialogue_width = int(0.8*config.screen_width) #820
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -192,7 +194,7 @@ define gui.confirm_button_text_xalign = 0.5
 define gui.page_button_borders = Borders(10, 4, 10, 4)
 
 define gui.quick_button_borders = Borders(10, 4, 10, 0)
-define gui.quick_button_text_size = 14
+define gui.quick_button_text_size = res_font(14)
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 
@@ -225,10 +227,10 @@ define gui.choice_button_text_hover_color = "#ffffff"
 ## image files in gui/button, like the other kinds of buttons.
 
 ## The save slot button.
-define gui.slot_button_width = 262
-define gui.slot_button_height = 250
+define gui.slot_button_width = xres(262)
+define gui.slot_button_height = yres(250)
 define gui.slot_button_borders = Borders(10, 10, 10, 10)
-define gui.slot_button_text_size = 14
+define gui.slot_button_text_size = res_font(14)
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
 define gui.slot_button_text_selected_idle_color = gui.selected_color
@@ -250,10 +252,10 @@ define gui.file_slot_rows = 3
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 40
+define gui.navigation_xpos = xres(40)
 
 ## The vertical position of the skip indicator.
-define gui.skip_ypos = 10
+define gui.skip_ypos = yres(10)
 
 ## The vertical position of the notify screen.
 define gui.notify_ypos = 45
@@ -433,23 +435,23 @@ init python:
     if renpy.variant("small"):
 
         ## Font sizes.
-        gui.text_size = 30
-        gui.name_text_size = 36
-        gui.notify_text_size = 25
-        gui.interface_text_size = 30
-        gui.button_text_size = 30
-        gui.label_text_size = 34
+        gui.text_size = res_font(30)
+        gui.name_text_size = res_font(36)
+        gui.notify_text_size = res_font(25)
+        gui.interface_text_size = res_font(30)
+        gui.button_text_size = res_font(30)
+        gui.label_text_size = res_font(34)
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 240
+        gui.textbox_height = yres(240)
         gui.name_xpos = 80
         gui.text_xpos = 90
-        gui.text_width = 1100
+        gui.text_width = xres(1100)
 
         ## Change the size and spacing of various things.
-        gui.slider_size = 36
+        gui.slider_size = xres(36)
 
-        gui.choice_button_width = 1240
+        gui.choice_button_width = xres(1240)
 
         gui.navigation_spacing = 20
         gui.pref_button_spacing = 10
@@ -457,7 +459,7 @@ init python:
         gui.history_height = 190
         gui.history_text_width = 690
 
-        gui.quick_button_text_size = 20
+        gui.quick_button_text_size = res_font(20)
 
         ## File button layout.
         gui.file_slot_cols = 2

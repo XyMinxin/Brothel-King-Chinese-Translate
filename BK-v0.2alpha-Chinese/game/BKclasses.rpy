@@ -2425,7 +2425,7 @@ init -2 python:
 #                 if extra:
 #                     msg += " (including " + str_int(extra) + " from girl or brothel effects)"
 
-                msg += "\n安全报告: 你青楼当前的危险等级是 " + self.estimate_threat_level(contrast=True) + ""
+                msg += "\n安全报告：你青楼当前的危险等级是 " + self.estimate_threat_level(contrast=True) + ""
 
                 msg += "\n维修报告：" + maintenance_desc[self.get_cleanliness()]
 
@@ -5242,13 +5242,13 @@ init -2 python:
                 return True
             elif self.condition == "has_worked":
                 if girl.has_worked:
-                return True
+                    return True
             elif self.condition == "other_girls":
                 if len(MC.girls) >= 2:
-                return True
+                    return True
             elif self.condition == "story":
                 if girl.flags["story"] == 50: #! To do: Make it so that she can repeat earlier parts of the story
-                return True
+                    return True
             elif self.condition == "neg_fix":
                 neg_fix = [fix.name for fix in girl.neg_fixations if girl.personality_unlock[fix.name]]
                 if neg_fix:
@@ -5270,7 +5270,7 @@ init -2 python:
                     return True
             elif self.condition == "debug_mode":
                 if debug_mode:
-                return True
+                    return True
             else: # Other conditions should be strings that will be tested as a boolean flag (start flag name with ! to test for False)
                 if self.condition.startswith("!") and not girl.flags[self.condition[1:]]:
                     return True

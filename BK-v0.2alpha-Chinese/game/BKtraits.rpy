@@ -89,7 +89,7 @@ label init_traits():
                       Trait("Loyal", verb = "be", eff1 = Effect("boost", "love gains", 0.1), archetype="The Bride"),
                       Trait("Brave", verb = "be", eff1 = Effect("boost", "fear", -0.1), archetype="The Escort"),
                       Trait("Strong", verb = "be", eff1 = Effect("change", "defense", 2), archetype="The Player"),
-                      Trait("Lucky", verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = "她彻夜未眠..."),
+                      Trait("Lucky", verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = "她彻夜未眠……"),
 
                       Trait("Deft", verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.1), eff2 = Effect("boost", "masseuse jp gains", 0.1), archetype="The Maid"),
                       Trait("Nimble", verb = "be", eff1 = Effect("boost", "dancer jp gains", 0.1), eff2 = Effect("boost", "geisha jp gains", 0.1), archetype="The Player"),
@@ -139,7 +139,7 @@ label init_traits():
                       Trait("Distrustful", verb = "be", eff1 = Effect("boost", "love gains", -0.25), opposite = "Loyal"),
                       Trait("Fearful", verb = "be", eff1 = Effect("boost", "fear", 0.25), opposite = "Brave"),
                       Trait("Vulnerable", verb = "be", eff1 = Effect("change", "defense", -2), opposite = ["Strong", "Warrior"]),
-                      Trait("Unlucky", verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = "她不应该打破那面魔镜...工作时危急失败的机会增加。", opposite = "Lucky"),
+                      Trait("Unlucky", verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = "她不应该打破那面魔镜……工作时危急失败的机会增加。", opposite = "Lucky"),
 
                       Trait("All thumbs", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("increase satisfaction", "waitress", -1), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy']),
                       Trait("Awkward", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("increase satisfaction", "dancer", -1), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful']),
