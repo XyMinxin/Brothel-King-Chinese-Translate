@@ -425,7 +425,7 @@ label brothel_loop():
 
         elif operation == "change name":
 
-            $ brothel.name = renpy.input("Change name:", default = brothel.name, length = 40)
+            $ brothel.name = renpy.input("更改名字：", default = brothel.name, length = 40)
 
         elif operation == "furniture":
 

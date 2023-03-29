@@ -8126,7 +8126,7 @@ translate chinese strings:
 
     # game/BKevents.rpy:6006
     old "Choose what you want [girl.fullname] to do:"
-    new "选择你想让[girl.fullname]做什么:"
+    new "选择你想让[girl.fullname]做什么："
 
     # game/BKevents.rpy:6006
     old "Oral sex"

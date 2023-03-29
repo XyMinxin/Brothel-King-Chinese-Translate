@@ -9,7 +9,7 @@ screen right_menu():
     key "mouseup_3" action (ShowMenu('save'), Hide("brothel_report"), Hide("previous_night_log"))
 
     # Set box for right menu
-    vbox ypos 0.1 xalign 1.0 xfill False spacing 20:
+    vbox ypos 0.08 xalign 1.0 xfill False spacing 5:
 
         # Girls activities / information top box
         frame background c_ui_dark xalign 1.0 xmargin 6 xsize xres(204):
@@ -171,7 +171,7 @@ screen right_menu_mc():
     if auto_spells:
         $ ttip += "和 " + str(auto_spells) + " 个自动施法的法术。"
     else:
-        $ ttip += "."
+        $ ttip += "。"
 
     textbutton "角色":
         ypadding 0.005

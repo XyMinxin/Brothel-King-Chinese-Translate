@@ -308,8 +308,8 @@ init -4 python:
                         "beast" : "野兽",
                         "Monster" : "怪物",
                         "monster" : "怪物",
-                        "Machine" :"机器",
-                        "machine" :"机器",
+                        "Machine" : "机器",
+                        "machine" : "机器",
 
                         ## 设施名称 ##
                         "Stables" : "马厮",
@@ -370,8 +370,8 @@ init -4 python:
                         ## 杂项 ##
                         "None" : "无",
                         "none" : "无",
-                        "Auto" :"自动",
-                        "auto" :"自动",
+                        "Auto" : "自动",
+                        "auto" : "自动",
                         "No training" : "未安排训练",
                         "no training" : "未安排训练",
                         "Farm minion" : "农场奴仆",
@@ -380,7 +380,7 @@ init -4 python:
     ## 结算界面 ##
     result_name_dict = {
                        ## 最终结果 ##
-                       "very bad" :"非常糟糕",
+                       "very bad" : "非常糟糕",
                        "bad" : "糟糕",
                        "average" : "一般",
                        "good" : "不错",
@@ -1008,7 +1008,7 @@ init -4 python:
 #### BALANCE / CHEATS ####
 
     ## 调试模式 ##
-    debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)
+    debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play
                         "gold" : 1.0,

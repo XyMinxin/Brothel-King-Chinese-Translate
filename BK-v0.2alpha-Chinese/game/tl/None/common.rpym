@@ -399,35 +399,35 @@ translate None strings:
 
     # renpy/common/00director.rpy:1674
     old "Statement:"
-    new "Statement:"
+    new "Statement："
 
     # renpy/common/00director.rpy:1695
     old "Tag:"
-    new "Tag:"
+    new "Tag："
 
     # renpy/common/00director.rpy:1711
     old "Attributes:"
-    new "Attributes:"
+    new "Attributes："
 
     # renpy/common/00director.rpy:1729
     old "Transforms:"
-    new "Transforms:"
+    new "Transforms："
 
     # renpy/common/00director.rpy:1748
     old "Behind:"
-    new "Behind:"
+    new "Behind："
 
     # renpy/common/00director.rpy:1767
     old "Transition:"
-    new "Transition:"
+    new "Transition："
 
     # renpy/common/00director.rpy:1785
     old "Channel:"
-    new "Channel:"
+    new "Channel："
 
     # renpy/common/00director.rpy:1803
     old "Audio Filename:"
-    new "Audio Filename:"
+    new "Audio Filename："
 
     # renpy/common/00gui.rpy:423
     old "Are you sure?"
@@ -819,7 +819,7 @@ translate None strings:
 
     # renpy/common/_developer/inspector.rpym:139
     old "displayable:"
-    new "displayable:"
+    new "displayable："
 
     # renpy/common/_developer/inspector.rpym:145
     old "        (no properties affect the displayable)"
@@ -887,7 +887,7 @@ translate None strings:
 
     # renpy/common/00updater.rpy:1560
     old "An error has occured:"
-    new "An error has occured:"
+    new "An error has occured："
 
     # renpy/common/00updater.rpy:1562
     old "Checking for updates."

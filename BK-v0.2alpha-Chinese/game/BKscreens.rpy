@@ -973,21 +973,21 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training":
                         hbox:
-                            textbutton "训练模式:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定吉泽尔是否会强迫女孩们违心地训练。")
+                            textbutton "训练模式：" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定吉泽尔是否会强迫女孩们违心地训练。")
                             text farm_related_dict[farm.programs[girl].mode.capitalize()] size res_font(14) bold True
 
                         hbox:
-                            textbutton "训练设施:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有)。")
+                            textbutton "训练设施：" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的培训要使用的设施(如果有)。")
                             text farm_related_dict[farm.programs[girl].installation_name.capitalize()] size res_font(14) bold True
 
                     else:
                         hbox:
-                            textbutton "待机模式:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么。")
+                            textbutton "待机模式：" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩不训练(工作或休息)时会做什么。")
                             text farm_related_dict[farm.programs[girl].holding.capitalize()] size res_font(14) bold True
 
                     hbox:
                         if farm.programs[girl].duration >= 0:
-                            textbutton "持续时间:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的逗留期限。")
+                            textbutton "持续时间：" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定她的逗留期限。")
                             text str(farm.programs[girl].duration) + "天" size res_font(14) bold True
 
                     text "" size res_font(18)
@@ -4395,14 +4395,14 @@ screen brothel_report():
                 xfill True
                 yfill False
 
-                text "昨日" color c_prune
+                text "昨天" color c_prune
 
-                text "" size res_font(14)
+                text "" size res_font(10)
 
                 if calendar.time > 1:
                     text logs[calendar.time-1].get_day_report() size res_font(14) color c_brown
 
-                    textbutton "显示昨晚的日志" xsize xres(250) ypadding 0 text_size res_font(14) xalign 0.5:
+                    textbutton "显示昨晚的日志" xsize xres(250) ypadding 5 text_size res_font(14) xalign 0.5:
                         if always_show_brothel_report:
                             action (Show("previous_night_log", log=logs[calendar.time-1]))
                     textbutton "显示满意度报告" xsize xres(250) ypadding 5 text_size res_font(14) xalign 0.5:

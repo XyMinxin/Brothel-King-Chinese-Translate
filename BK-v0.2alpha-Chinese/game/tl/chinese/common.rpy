@@ -396,39 +396,39 @@ translate chinese strings:
 
     # renpy/common/00director.rpy:1674
     old "Statement:"
-    new "声明:"
+    new "声明："
 
     # renpy/common/00director.rpy:1695
     old "Tag:"
-    new "标签:"
+    new "标签："
 
     # renpy/common/00director.rpy:1711
     old "Attributes:"
-    new "属性:"
+    new "属性："
 
     # renpy/common/00director.rpy:1729
     old "Transforms:"
-    new "过渡:"
+    new "过渡："
 
     # renpy/common/00director.rpy:1748
     old "Behind:"
-    new "后面:"
+    new "后面："
 
     # renpy/common/00director.rpy:1767
     old "Transition:"
-    new "过渡:"
+    new "过渡："
 
     # renpy/common/00director.rpy:1785
     old "Channel:"
-    new "渠道:"
+    new "渠道："
 
     # renpy/common/00director.rpy:1803
     old "Audio Filename:"
-    new "音频文件名:"
+    new "音频文件名："
 
     # renpy/common/00gui.rpy:423
     old "Are you sure?"
-    new "你确定吗?"
+    new "你确定吗？"
 
     # renpy/common/00gui.rpy:424
     old "Are you sure you want to delete this save?"
@@ -444,7 +444,7 @@ translate chinese strings:
 
     # renpy/common/00gui.rpy:427
     old "Are you sure you want to quit?"
-    new "你确定要退出吗?"
+    new "你确定要退出吗？"
 
     # renpy/common/00gui.rpy:428
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
@@ -452,19 +452,19 @@ translate chinese strings:
 
     # renpy/common/00gui.rpy:429
     old "Are you sure you want to end the replay?"
-    new "你确定你想结束重播吗?"
+    new "你确定你想结束重播吗？"
 
     # renpy/common/00gui.rpy:430
     old "Are you sure you want to begin skipping?"
-    new "你确定你想要开始跳过吗?"
+    new "你确定你想要开始跳过吗？"
 
     # renpy/common/00gui.rpy:431
     old "Are you sure you want to skip to the next choice?"
-    new "你确定你想要跳到下一个选择吗?"
+    new "你确定你想要跳到下一个选择吗？"
 
     # renpy/common/00gui.rpy:432
     old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new "你确定你想要跳过未看的对话到下一个选择吗?"
+    new "你确定你想要跳过未看的对话到下一个选择吗？"
 
     # renpy/common/00keymap.rpy:306
     old "Failed to save screenshot as %s."
@@ -744,11 +744,11 @@ translate chinese strings:
 
     # renpy/common/_developer/developer.rpym:443
     old "Rectangle: %r"
-    new "区域: %r"
+    new "区域：%r"
 
     # renpy/common/_developer/developer.rpym:448
     old "Mouse position: %r"
-    new "鼠标位置: %r"
+    new "鼠标位置：%r"
 
     # renpy/common/_developer/developer.rpym:453
     old "Right-click or escape to quit."
@@ -764,7 +764,7 @@ translate chinese strings:
 
     # renpy/common/_developer/developer.rpym:506
     old "Type to filter: "
-    new "类型过滤:"
+    new "类型过滤："
 
     # renpy/common/_developer/developer.rpym:631
     old "Textures: [tex_count] ([tex_size_mb:.1f] MB)"
@@ -808,7 +808,7 @@ translate chinese strings:
 
     # renpy/common/_developer/inspector.rpym:139
     old "displayable:"
-    new "可显示的:"
+    new "可显示的："
 
     # renpy/common/_developer/inspector.rpym:145
     old "        (no properties affect the displayable)"

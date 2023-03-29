@@ -567,7 +567,7 @@ label reached_goal():
             call c1_reached_goal() from _call_c1_reached_goal
 
         else:
-            $ text1 = "你已经达到当前的目标:\n" + game.get_goal_description(channel="advance") + "\n\n现在你可以进入下一章了"
+            $ text1 = "你已经达到当前的目标：\n" + game.get_goal_description(channel="advance") + "\n\n现在你可以进入下一章了"
 
             call screen OK_screen("目标达成！", text1, pic = Picture(path="UI/goal.webp"))
 
@@ -604,7 +604,7 @@ label advance_to_chapter(chapter, silent=False, free=False):
                 sill "Do you want to rename your brothel for the occasion?"
 
                 "Yes":
-                    $ brothel.name = renpy.input("更改名称:", default = brothel.name, length = 40)
+                    $ brothel.name = renpy.input("更改名称：", default = brothel.name, length = 40)
                 "No":
                     pass
 
@@ -661,7 +661,7 @@ label advance_to_chapter(chapter, silent=False, free=False):
                                 sill "Do you want to rename your brothel for the occasion?"
 
                                 "Yes":
-                                    $ brothel.name = renpy.input("更改名称:", default = brothel.name, length = 40)
+                                    $ brothel.name = renpy.input("更改名称：", default = brothel.name, length = 40)
                                 "No":
                                     pass
 

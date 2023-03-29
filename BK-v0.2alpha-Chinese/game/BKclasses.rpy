@@ -295,7 +295,7 @@ init -2 python:
 
             if goals:
                 if channel == "advance":
-                    return "{size=-1}进入下一章, " + and_text(goals) + ".{/size}"
+                    return "{size=-1}进入下一章, " + and_text(goals) + "。{/size}"
                 else:
                     return "{size=-1}" + and_text(goals) + "{/size}"
             else:
@@ -2891,7 +2891,7 @@ init -2 python:
             else:
                 msg = "昨晚亏损：" + event_color["bad"] % (str(round_int(self.net)) + " 金币") + "\n"
 
-            msg += "{size=-2}" + "- 获得的金币: + " + event_color["good"] % str(round_int(self.gold_made)) + "\n"
+            msg += "{size=-2}" + "- 获得的金币：+ " + event_color["good"] % str(round_int(self.gold_made)) + "\n"
             msg += "- 女孩的打赏：- " + event_color["bad"] % str(round_int(self.upkeep)) + "\n"
             msg += "- 青楼的维护：- " + event_color["bad"] % str(round_int(self.costs)) + "\n{/size}\n"
 
@@ -2945,7 +2945,7 @@ init -2 python:
                     msg += event_color["bad"] % (str(self.check("minion_hurt")) + " 位农场奴仆在战斗中受伤")
 
                 msg += "\n{size=-2}" + "- 训　练：" + event_color["good"] % str(self.check("farm_training_days")) + "\n"
-                msg += "- 待　机：" + event_color["good"] % str(self.check("farm_holding_days")) + "\n{/size}\n"
+                msg += "- 待　机：" + event_color["good"] % str(self.check("farm_holding_days")) + "\n{/size}"
 
                 if self.check("farm_rest_days") > 1:
                     msg += "{size=-2}- 休　息：" + event_color["good"] % str(self.check("farm_rest_days")) + "{/size} "
