@@ -1906,7 +1906,7 @@ translate chinese random_night_girl_event_a8570cb7:
 translate chinese random_night_girl_event_bbf94780:
 
     # "Security finally arrives, chasing the assailant away. You get back on your feet, the customers laughing and booing at your poor performance."
-    "警卫终于来了，赶走了闹事者。你重新站起来，顾客们对你的糟糕表现又笑又嘘。"
+    "卫兵终于来了，赶走了闹事者。你重新站起来，顾客们对你的糟糕表现又笑又嘘。"
 
 # game/BKday_events.rpy:1336
 translate chinese random_night_girl_event_1356134e:

@@ -1438,7 +1438,7 @@ translate chinese c2_princess_letter_c7a71e36:
 translate chinese c2_princess_letter_84ce1d1f:
 
     # you "Gio!!! What on earth are you doing here, assaulting my... Sill?!?"
-    you "吉奥！！！你到底要在这里做什么，袭击我的……希露？！？"
+    you "吉欧！！！你到底要在这里做什么，袭击我的……希露？！？"
 
 # game/BKchapter2.rpy:931
 translate chinese c2_princess_letter_43c9b722:
@@ -1780,7 +1780,7 @@ translate chinese c2_princess_letter_7e399740:
 translate chinese c2_princess_letter_6100578a:
 
     # you "I want you two to entertain my good friend Gio here..."
-    you "我想让你们两个在这里招待我的好朋友吉奥……"
+    you "我想让你们两个在这里招待我的好朋友吉欧……"
 
 # game/BKchapter2.rpy:1089
 translate chinese c2_princess_letter_7cd8a3f2:
@@ -1948,7 +1948,7 @@ translate chinese c2_princess_letter_dcfd5695:
 translate chinese c2_princess_letter_833770b5:
 
     # girl.char "Mister Gio!!! Aaaaah!!!"
-    girl.char "吉奥先生！！！啊啊啊！！！"
+    girl.char "吉欧先生！！！啊啊啊！！！"
 
 # game/BKchapter2.rpy:1196
 translate chinese c2_princess_letter_c5711c6e:
@@ -1960,7 +1960,7 @@ translate chinese c2_princess_letter_c5711c6e:
 translate chinese c2_princess_letter_046435ce:
 
     # "Tears of joy well up in Gio's eyes."
-    "吉奥的眼中涌出喜悦的泪水。"
+    "吉欧的眼中涌出喜悦的泪水。"
 
 # game/BKchapter2.rpy:1200
 translate chinese c2_princess_letter_45d8742c:
@@ -1984,7 +1984,7 @@ translate chinese c2_princess_letter_a20cefa7:
 translate chinese c2_princess_letter_a004a22f:
 
     # "Gio comes back after a while, buckling his pants and grinning like an idiot."
-    "过了一会儿，吉奥回来了，扣上裤子，像个白痴一样咧嘴笑着。"
+    "过了一会儿，吉欧回来了，扣上裤子，像个白痴一样咧嘴笑着。"
 
 # game/BKchapter2.rpy:1217
 translate chinese c2_princess_letter_db1c7f4f:
@@ -2002,7 +2002,7 @@ translate chinese c2_princess_letter_a1b9ebae:
 translate chinese c2_princess_letter_ae6d28d8:
 
     # you "Come on, Gio. Don't make it difficult. I know the Princess rewarded you already."
-    you "来吧，吉奥。不要让它变得困难。我知道公主已经奖励了你。"
+    you "来吧，吉欧。不要让它变得困难。我知道公主已经奖励了你。"
 
 # game/BKchapter2.rpy:1224
 translate chinese c2_princess_letter_8eec5cba:
@@ -2020,7 +2020,7 @@ translate chinese c2_princess_letter_b3711159:
 translate chinese c2_princess_letter_a99ab239:
 
     # you "Details, Gio. Details."
-    you "详细信息，吉奥。细节。"
+    you "详细信息，吉欧。细节。"
 
 # game/BKchapter2.rpy:1230
 translate chinese c2_princess_letter_481d0d2f:
@@ -2242,7 +2242,7 @@ translate chinese c2_princess_visit1_75d2332b:
 translate chinese c2_princess_visit1_1689c6c8:
 
     # "You reach the inner gates. After Gio shows the guards a document, they let you pass through, into the upper city."
-    "你到达内门。吉奥向守卫出示文件后，他们让你通过，进入上城。"
+    "你到达内门。吉欧向守卫出示文件后，他们让你通过，进入上城。"
 
 # game/BKchapter2.rpy:1334
 translate chinese c2_princess_visit1_b2d7ac9c:
@@ -2332,7 +2332,7 @@ translate chinese c2_princess_visit1_4d1b2e32:
 translate chinese c2_princess_visit1_533651bd:
 
     # "The knight towers above Gio, resting his hand on the pommel of his sword."
-    "骑士高高耸立在吉奥的上方，将手放在剑柄上。"
+    "骑士高高耸立在吉欧的上方，将手放在剑柄上。"
 
 # game/BKchapter2.rpy:1373
 translate chinese c2_princess_visit1_025a131a:
@@ -2830,7 +2830,7 @@ translate chinese c2_princess_visit2_3253f240:
 translate chinese c2_princess_visit2_f17b4e50:
 
     # "A guard beckons you to come forward."
-    "一名警卫招呼你上前。"
+    "一名卫兵招呼你上前。"
 
 # game/BKchapter2.rpy:1609
 translate chinese c2_princess_visit2_d9c238ed:
@@ -3280,7 +3280,7 @@ translate chinese kurohime_conversation_menu_9beefedf:
 translate chinese kurohime_conversation_menu_8b14e26e:
 
     # you "By the way, Your Highness, how in the world did you meet someone like Gio?"
-    you "对了，殿下，你到底是怎么遇到吉奥这样的人的？"
+    you "对了，殿下，你到底是怎么遇到吉欧这样的人的？"
 
 # game/BKchapter2.rpy:1816
 translate chinese kurohime_conversation_menu_126ae843:
@@ -4420,7 +4420,7 @@ translate chinese c2_gio_meeting_01e38bb9:
 translate chinese c2_gio_meeting_4b9e6a40:
 
     # "Gio looks around him carefully four or five times, with exaggerated caution."
-    "吉奥小心翼翼地环顾四周四五次，显得格外小心。"
+    "吉欧小心翼翼地环顾四周四五次，显得格外小心。"
 
 # game/BKchapter2.rpy:2504
 translate chinese c2_gio_meeting_6bbcdea2:
@@ -4588,7 +4588,7 @@ translate chinese c2_gio_meeting_b32a313a:
 translate chinese c2_gio_meeting_a60d86fd:
 
     # gio "Ever heard of the Kunoichi?"
-    gio "听说过忍者吗？"
+    gio "听说过女忍者吗？"
 
 # game/BKchapter2.rpy:2569
 translate chinese c2_gio_meeting_096c4669:
@@ -4600,31 +4600,31 @@ translate chinese c2_gio_meeting_096c4669:
 translate chinese c2_gio_meeting_6c5d382e:
 
     # gio "The Kunoichi."
-    gio "忍者。"
+    gio "女忍者。"
 
 # game/BKchapter2.rpy:2573
 translate chinese c2_gio_meeting_a842d763:
 
     # you "The Kunoichi? What's that?"
-    you "忍者？那是什么？"
+    you "女忍者？那是什么？"
 
 # game/BKchapter2.rpy:2575
 translate chinese c2_gio_meeting_845b252c:
 
     # gio "A secret order of ninjas... All of them, females."
-    gio "忍者的秘密组织……她们都是女性。"
+    gio "女忍者的秘密组织……她们都是女性。"
 
 # game/BKchapter2.rpy:2577
 translate chinese c2_gio_meeting_27d2bf13:
 
     # you "Female... ninjas?"
-    you "女……忍者？"
+    you "女……女忍者？"
 
 # game/BKchapter2.rpy:2579
 translate chinese c2_gio_meeting_3a1d07be:
 
     # gio "Yes. The Kunoichi are women trained from childhood as killers and spies... They work from the shadows..."
-    gio "是的。忍者是从小被训练为杀手和间谍的女性......她们在阴影中工作......"
+    gio "是的。女忍者是从小被训练为杀手和间谍的女性......她们在阴影中工作......"
 
 # game/BKchapter2.rpy:2581
 translate chinese c2_gio_meeting_5e7e87dd:
@@ -4636,7 +4636,7 @@ translate chinese c2_gio_meeting_5e7e87dd:
 translate chinese c2_gio_meeting_1da1a117:
 
     # gio "They are deadly and invisible to even the most trained eyes. They're the most feared of the ninja orders."
-    gio "即使是训练有素的眼睛，它们也是致命且看不见的。他们是忍者教团中最害怕的。"
+    gio "即使是训练有素的眼睛，它们也是致命且看不见的。他们是女忍者教团中最害怕的。"
 
 # game/BKchapter2.rpy:2585
 translate chinese c2_gio_meeting_5518cc92:
@@ -4648,7 +4648,7 @@ translate chinese c2_gio_meeting_5518cc92:
 translate chinese c2_gio_meeting_563bb113:
 
     # gio "No one is. Each ninjutsu school trains a single Kunoichi every generation. After they graduate, they become freelance operators."
-    gio "没有人是。每个忍术学校每一代都训练一个忍者。毕业后，他们成为自由职业者。"
+    gio "没有人是。每个忍术学校每一代都训练一个女忍者。毕业后，他们成为自由职业者。"
 
 # game/BKchapter2.rpy:2589
 translate chinese c2_gio_meeting_2b9ebdb2:
@@ -4672,7 +4672,7 @@ translate chinese c2_gio_meeting_ab8b6b04:
 translate chinese c2_gio_meeting_6638aa56:
 
     # gio "The Kunoichi are usually scattered across Xeros on various assignments. To my knowledge, only a handful are active in Zan. But as they stick to the shadows, tales of their deeds rarely surface."
-    gio "忍者通常分散在 Xeros 的各种任务中。据我所知，只有少数人活跃在瓒城。但由于他们坚持在阴影中，他们事迹的故事很少浮出水面。"
+    gio "女忍者通常分散在 Xeros 的各种任务中。据我所知，只有少数人活跃在瓒城。但由于他们坚持在阴影中，他们事迹的故事很少浮出水面。"
 
 # game/BKchapter2.rpy:2597
 translate chinese c2_gio_meeting_7983df68:
@@ -4684,7 +4684,7 @@ translate chinese c2_gio_meeting_7983df68:
 translate chinese c2_gio_meeting_d4e63236:
 
     # you "All right. But how does that help us? I saw the killer. He was a man... Not a female ninja."
-    you "好的。但这对我们有什么帮助？我看到了凶手。他是个男人……不是忍者。"
+    you "好的。但这对我们有什么帮助？我看到了凶手。他是个男人……不是女忍者。"
 
 # game/BKchapter2.rpy:2601
 translate chinese c2_gio_meeting_25e462eb:
@@ -4714,7 +4714,7 @@ translate chinese c2_gio_meeting_1aa413d1:
 translate chinese c2_gio_meeting_078df465:
 
     # gio "Anyway. I'm sure the killer and the Kunoichi are in cahoots somehow."
-    gio "反正。我敢肯定凶手和忍者是在某种程度上勾结起来的。"
+    gio "反正。我敢肯定凶手和女忍者是在某种程度上勾结起来的。"
 
 # game/BKchapter2.rpy:2611
 translate chinese c2_gio_meeting_e095f7f4:
@@ -4726,19 +4726,19 @@ translate chinese c2_gio_meeting_e095f7f4:
 translate chinese c2_gio_meeting_2c0a90c6:
 
     # gio "Stop it! My sources say that the Kunoichi have been all over the lower city recently. Spying and gathering information, no doubt. It cannot just be a coincidence."
-    gio "停下来！我的消息来源说，忍者最近已经遍布下城。毫无疑问，间谍和收集信息。这不能只是巧合。"
+    gio "停下来！我的消息来源说，女忍者最近已经遍布下城。毫无疑问，间谍和收集信息。这不能只是巧合。"
 
 # game/BKchapter2.rpy:2615
 translate chinese c2_gio_meeting_67b1009d:
 
     # gio "The Kunoichi come and go as they please. Even I cannot keep track of what they do... But my gut feeling is, this is all related. There is also one more piece of information..."
-    gio "忍者来去自如。甚至我都无法跟踪他们的所作所为……但我的直觉是，这都是相关的。还有一条信息……"
+    gio "女忍者来去自如。甚至我都无法跟踪他们的所作所为……但我的直觉是，这都是相关的。还有一条信息……"
 
 # game/BKchapter2.rpy:2617
 translate chinese c2_gio_meeting_eda50b58:
 
     # you "Okay, okay. For the sake of this argument, let's say the Kunoichi are involved. How do I find them?"
-    you "好吧好吧。为了这个论点，假设忍者参与其中。我如何找到它们？"
+    you "好吧好吧。为了这个论点，假设女忍者参与其中。我如何找到它们？"
 
 # game/BKchapter2.rpy:2619
 translate chinese c2_gio_meeting_0bbfc009:
@@ -4768,7 +4768,7 @@ translate chinese c2_gio_meeting_c8ae8fbf:
 translate chinese c2_gio_meeting_c344e32b:
 
     # you "Speak, Gio. I don't follow."
-    you "说吧，吉奥。我不跟。"
+    you "说吧，吉欧。我不跟。"
 
 # game/BKchapter2.rpy:2629
 translate chinese c2_gio_meeting_a00c0385:
@@ -4786,7 +4786,7 @@ translate chinese c2_gio_meeting_0872cbfb:
 translate chinese c2_gio_meeting_bbadb81d:
 
     # gio "My sources say one of the Kunoichi has taken on a new contract..."
-    gio "我的消息来源说，其中一个 忍者已经接受了一份新合同......"
+    gio "我的消息来源说，其中一个 女忍者已经接受了一份新合同......"
 
 # game/BKchapter2.rpy:2635
 translate chinese c2_gio_meeting_f0bfa125:
@@ -4816,7 +4816,7 @@ translate chinese c2_gio_meeting_52631eb7:
 translate chinese c2_gio_meeting_825b38c6:
 
     # you "Wait, didn't you say the Kunoichi were incredibly efficient, cold-blooded assassins?!?"
-    you "等等，你不是说忍者是非常高效的冷血刺客吗？！？"
+    you "等等，你不是说女忍者是非常高效的冷血刺客吗？！？"
 
 # game/BKchapter2.rpy:2645
 translate chinese c2_gio_meeting_52151452:
@@ -4876,7 +4876,7 @@ translate chinese c2_gio_meeting_d3f01ffb:
 translate chinese c2_gio_meeting_fe5b536b:
 
     # gio "Well, I mean... You wanted to meet the Kunoichi, right? Seems like a good occasion..."
-    gio "嗯，我的意思是……你想见忍者，对吧？似乎是个好时机..."
+    gio "嗯，我的意思是……你想见女忍者，对吧？似乎是个好时机..."
 
 # game/BKchapter2.rpy:2665
 translate chinese c2_gio_meeting_ed0e14c5:
@@ -4996,13 +4996,13 @@ translate chinese c2_gio_meeting_15f7cd73:
 translate chinese c2_gio_meeting_91d7fa04:
 
     # "Gio starts off, running across the plaza with an arm above his head in an exaggerated gesture, waving his cloak around with his other arm, like he's some cheap pulp novel adventurer."
-    "吉奥开始了，用一只胳膊举过头顶的夸张姿势跑过广场，另一只胳膊挥舞着斗篷，就像他是一个廉价的低俗小说冒险家。"
+    "吉欧开始了，用一只胳膊举过头顶的夸张姿势跑过广场，另一只胳膊挥舞着斗篷，就像他是一个廉价的低俗小说冒险家。"
 
 # game/BKchapter2.rpy:2710
 translate chinese c2_gio_meeting_d6829f62:
 
     # you "What the hell, why would the Kunoichi want to murder me..."
-    you "到底是什么，为什么忍者要杀我……"
+    you "到底是什么，为什么女忍者要杀我……"
 
 # game/BKchapter2.rpy:2712
 translate chinese c2_gio_meeting_4cc82402:
@@ -6652,7 +6652,7 @@ translate chinese c2_suzume_report2_7b9ae4c1:
 translate chinese c2_suzume_report2_4db82fa6:
 
     # suzume "But don't worry. I am as good with a blade as any ninja. I shall cut his manhood clean off, the old-fashioned way."
-    suzume "但别担心。我和任何忍者一样擅长使用刀片。我会用老式的方式割掉他的男子气概。"
+    suzume "但别担心。我和任何女忍者一样擅长使用刀片。我会用老式的方式割掉他的男子气概。"
 
 # game/BKchapter2.rpy:3578
 translate chinese c2_suzume_report2_eec9f710:
@@ -7384,13 +7384,13 @@ translate chinese c2_suzume_brothel_d42a568d:
 translate chinese c2_suzume_brothel_5c74a7a5:
 
     # suzume "Aah, but I have failed in my task... I am finished as a ninja..."
-    suzume "啊啊，但我的任务失败了……我作为忍者完成了……"
+    suzume "啊啊，但我的任务失败了……我作为女忍者完成了……"
 
 # game/BKchapter2.rpy:3886
 translate chinese c2_suzume_brothel_938e9718:
 
     # you "A ninja? So this is, mmh... This is really what you are?" with vpunch
-    you "忍者？所以这就是，嗯……这真的是你吗？" with vpunch
+    you "女忍者？所以这就是，嗯……这真的是你吗？" with vpunch
 
 # game/BKchapter2.rpy:3888
 translate chinese c2_suzume_brothel_305b01bd:
@@ -7444,7 +7444,7 @@ translate chinese c2_suzume_brothel_824ba0e2:
 translate chinese c2_suzume_brothel_455fe550:
 
     # suzume "I have given up my life as a kunoichi, and spared you, just so I can enjoy your dick..."
-    suzume "我放弃了作为忍者的生命，并饶了你，只是为了享受你的鸡巴......"
+    suzume "我放弃了作为女忍者的生命，并饶了你，只是为了享受你的鸡巴......"
 
 # game/BKchapter2.rpy:3917
 translate chinese c2_suzume_brothel_a6754a42:
@@ -7474,7 +7474,7 @@ translate chinese c2_suzume_brothel_e7cf48eb:
 translate chinese c2_suzume_brothel_245a14ae:
 
     # you "No, the other part! did you say, 'kunoichi'?"
-    you "不，另一半！你说的是“忍者”吗？"
+    you "不，另一半！你说的是“女忍者”吗？"
 
 # game/BKchapter2.rpy:3927
 translate chinese c2_suzume_brothel_dee1e758:
@@ -7528,7 +7528,7 @@ translate chinese c2_suzume_brothel_cdd9076e:
 translate chinese c2_suzume_brothel_9557c8a9:
 
     # suzume "The kunoichi is not an organization, we're individuals."
-    suzume "忍者不是一个组织，我们是个人。"
+    suzume "女忍者不是一个组织，我们是个人。"
 
 # game/BKchapter2.rpy:3947
 translate chinese c2_suzume_brothel_d9e3fdd6:
@@ -8326,7 +8326,7 @@ translate chinese c2_homura_okiya1_54a9e56b:
 translate chinese c2_homura_okiya1_3203fd44:
 
     # you "Yes. I've established that the murderer was helped by one or more female ninjas, called the kunoichi."
-    you "是的。我已经确定凶手得到了一名或多名女性忍者的帮助，称为忍者。"
+    you "是的。我已经确定凶手得到了一名或多名女性女忍者的帮助，称为女忍者。"
 
 # game/BKchapter2.rpy:4315
 translate chinese c2_homura_okiya1_1c9a99ae:
@@ -8338,7 +8338,7 @@ translate chinese c2_homura_okiya1_1c9a99ae:
 translate chinese c2_homura_okiya1_2ecb9077:
 
     # you "The kunoichi. Female ninjas."
-    you "忍者。忍者。"
+    you "女忍者。女忍者。"
 
 # game/BKchapter2.rpy:4319
 translate chinese c2_homura_okiya1_95ff8b60:
@@ -8410,7 +8410,7 @@ translate chinese c2_homura_okiya1_bb1542a5:
 translate chinese c2_homura_okiya1_d579bb96:
 
     # homura "But look at the time... I have to hurry, before my Dad's guards figure out I've skipped out on them."
-    homura "但是看看时间……我得快点，在我爸爸的警卫发现我已经跳过他们之前。"
+    homura "但是看看时间……我得快点，在我爸爸的卫兵发现我已经跳过他们之前。"
 
 # game/BKchapter2.rpy:4349
 translate chinese c2_homura_okiya1_d23ff1b4:
@@ -8698,7 +8698,7 @@ translate chinese c2_suzume_morning_visit_22130489:
 translate chinese c2_suzume_morning_visit_50dddf1e:
 
     # suzume "Thanks to you, I'm a disgraced Kunoichi now. And a lot of people are going to be cross with me. *pout*"
-    suzume "多亏了你，我现在是个丢脸的忍者。很多人都会对我生气。*噘*"
+    suzume "多亏了你，我现在是个丢脸的女忍者。很多人都会对我生气。*噘*"
 
 # game/BKchapter2.rpy:4506
 translate chinese c2_suzume_morning_visit_2e252553:
@@ -8968,7 +8968,7 @@ translate chinese c2_suzume_morning_visit_menu_92d47b58:
 translate chinese c2_suzume_morning_visit_menu_7668f5be:
 
     # you "So, how did you become a ninja?"
-    you "那么，你是如何成为忍者的呢？"
+    you "那么，你是如何成为女忍者的呢？"
 
 # game/BKchapter2.rpy:4608
 translate chinese c2_suzume_morning_visit_menu_4ec8592e:
@@ -9022,7 +9022,7 @@ translate chinese c2_suzume_morning_visit_menu_cdd8f5f0:
 translate chinese c2_suzume_morning_visit_menu_bd736e52:
 
     # suzume normal "So I followed the old man. Turns out, he was the master of a ninja school!"
-    suzume normal "于是我就跟着老爷子走了。原来，他是忍者学校的主人！"
+    suzume normal "于是我就跟着老爷子走了。原来，他是女忍者学校的主人！"
 
 # game/BKchapter2.rpy:4626
 translate chinese c2_suzume_morning_visit_menu_e33e92b5:
@@ -9034,7 +9034,7 @@ translate chinese c2_suzume_morning_visit_menu_e33e92b5:
 translate chinese c2_suzume_morning_visit_menu_6bdc6a53:
 
     # suzume "At the school, I met other young ones who trained to become ninjas."
-    suzume "在学校，我遇到了其他受过训练成为忍者的年轻人。"
+    suzume "在学校，我遇到了其他受过训练成为女忍者的年轻人。"
 
 # game/BKchapter2.rpy:4630
 translate chinese c2_suzume_morning_visit_menu_5af77e01:
@@ -9058,13 +9058,13 @@ translate chinese c2_suzume_morning_visit_menu_f0cf8138:
 translate chinese c2_suzume_morning_visit_menu_65231499:
 
     # suzume "I more than 'made it through'! I became the Kunoichi for the School of Air. It's the school's highest honor!"
-    suzume "我不仅仅是“通过”！我成为了空气学校的忍者。这是学校的最高荣誉！"
+    suzume "我不仅仅是“通过”！我成为了空气学校的女忍者。这是学校的最高荣誉！"
 
 # game/BKchapter2.rpy:4638
 translate chinese c2_suzume_morning_visit_menu_70fb3607:
 
     # suzume "So Kunoichi was the title I held. Until yesterday, anyway."
-    suzume "所以忍者是我的头衔。无论如何，直到昨天。"
+    suzume "所以女忍者是我的头衔。无论如何，直到昨天。"
 
 # game/BKchapter2.rpy:4640
 translate chinese c2_suzume_morning_visit_menu_ce1a35ba:
@@ -9196,7 +9196,7 @@ translate chinese c2_suzume_morning_visit_menu_28a0096e:
 translate chinese c2_suzume_morning_visit_menu_fb143add:
 
     # suzume bend "Until I met you! This is the single most interesting thing that happened since I became a Kunoichi."
-    suzume bend "直到遇见你！这是我成为忍者后发生的最有趣的事情。"
+    suzume bend "直到遇见你！这是我成为女忍者后发生的最有趣的事情。"
 
 # game/BKchapter2.rpy:4684
 translate chinese c2_suzume_morning_visit_menu_5f312bc1:
@@ -9232,19 +9232,19 @@ translate chinese c2_suzume_morning_visit_menu_dc9787ca:
 translate chinese c2_suzume_morning_visit_menu_b7c4f9a0:
 
     # suzume normal "Order? The Kunoichi is not an order. We each hail from different ninjutsu schools."
-    suzume normal "命令？忍者不是命令。我们每个人都来自不同的忍术学校。"
+    suzume normal "命令？女忍者不是命令。我们每个人都来自不同的忍术学校。"
 
 # game/BKchapter2.rpy:4699
 translate chinese c2_suzume_morning_visit_menu_17a42e35:
 
     # suzume "Every generation, a female ninja is chosen by her school to be its Kunoichi... It's a sacred role."
-    suzume "每一代，她的学校都会选择一名忍者作为其忍者……这是一个神圣的角色。"
+    suzume "每一代，她的学校都会选择一名女忍者作为其女忍者……这是一个神圣的角色。"
 
 # game/BKchapter2.rpy:4701
 translate chinese c2_suzume_morning_visit_menu_889c63de:
 
     # you "So not all female ninjas are Kunoichi?"
-    you "所以不是所有的忍者都是忍者吗？"
+    you "所以不是所有的女忍者都是女忍者吗？"
 
 # game/BKchapter2.rpy:4703
 translate chinese c2_suzume_morning_visit_menu_be9ff88d:
@@ -9256,13 +9256,13 @@ translate chinese c2_suzume_morning_visit_menu_be9ff88d:
 translate chinese c2_suzume_morning_visit_menu_f9e0c853:
 
     # you "What makes the Kunoichi special?"
-    you "忍者有什么特别之处？"
+    you "女忍者有什么特别之处？"
 
 # game/BKchapter2.rpy:4707
 translate chinese c2_suzume_morning_visit_menu_c2cb5e1f:
 
     # suzume "Well, they're the best of the best in their school. Deadly efficient in all ninja arts."
-    suzume "嗯，他们是学校里最好的。在所有忍者艺术中都非常高效。"
+    suzume "嗯，他们是学校里最好的。在所有女忍者艺术中都非常高效。"
 
 # game/BKchapter2.rpy:4709
 translate chinese c2_suzume_morning_visit_menu_34d8d1a8:
@@ -9310,13 +9310,13 @@ translate chinese c2_suzume_morning_visit_menu_dae0ec55_4:
 translate chinese c2_suzume_morning_visit_menu_a9c1ffb6:
 
     # you "Anyway. Why are the Kunoichi all women?"
-    you "反正。为什么忍者都是女人？"
+    you "反正。为什么女忍者都是女人？"
 
 # game/BKchapter2.rpy:4725
 translate chinese c2_suzume_morning_visit_menu_fcb57644:
 
     # suzume doubt "Well, the prophesy says that one day, a Kunoichi shall be seeded, and give birth to the ninja master who will unite all the ninja schools..."
-    suzume doubt "好吧，预言说有一天，一位忍者将被播种，并诞生将联合所有忍者学校的忍者大师......"
+    suzume doubt "好吧，预言说有一天，一位女忍者将被播种，并诞生将联合所有女忍者学校的女忍者大师......"
 
 # game/BKchapter2.rpy:4727
 translate chinese c2_suzume_morning_visit_menu_be643576:
@@ -9328,7 +9328,7 @@ translate chinese c2_suzume_morning_visit_menu_be643576:
 translate chinese c2_suzume_morning_visit_menu_0ddc898c:
 
     # you "So you Kunoichi don't know each other?"
-    you "所以你们忍者不认识？"
+    you "所以你们女忍者不认识？"
 
 # game/BKchapter2.rpy:4731
 translate chinese c2_suzume_morning_visit_menu_b058634b:
@@ -9358,7 +9358,7 @@ translate chinese c2_suzume_morning_visit_menu_31325987:
 translate chinese c2_suzume_morning_visit_menu_34e20372:
 
     # suzume doubt "But I know many of them by reputation. The most gifted are famous all around Xeros, in ninja circles anyway."
-    suzume doubt "但我知道他们中的许多人的名声。最有天赋的人在 Xeros 周围很有名，无论如何在忍者圈子里。"
+    suzume doubt "但我知道他们中的许多人的名声。最有天赋的人在 Xeros 周围很有名，无论如何在女忍者圈子里。"
 
 # game/BKchapter2.rpy:4741
 translate chinese c2_suzume_morning_visit_menu_3ae63dd0:
@@ -9370,7 +9370,7 @@ translate chinese c2_suzume_morning_visit_menu_3ae63dd0:
 translate chinese c2_suzume_morning_visit_menu_4e280903:
 
     # suzume shrewd "Well, this is where it gets interesting... I know of {i}three{/i} other Kunoichi in Zan at this very moment, and all of them are famous!"
-    suzume shrewd "嗯，这就是有趣的地方...我知道此时在瓒城的另外 {i}三个{/i}忍者，他们都很有名！"
+    suzume shrewd "嗯，这就是有趣的地方...我知道此时在瓒城的另外 {i}三个{/i}女忍者，他们都很有名！"
 
 # game/BKchapter2.rpy:4745
 translate chinese c2_suzume_morning_visit_menu_c18759d0:
@@ -9382,7 +9382,7 @@ translate chinese c2_suzume_morning_visit_menu_c18759d0:
 translate chinese c2_suzume_morning_visit_menu_758f446c:
 
     # you "Tell me about the other Kunoichi."
-    you "告诉我另一个忍者。"
+    you "告诉我另一个女忍者。"
 
 # game/BKchapter2.rpy:4752
 translate chinese c2_suzume_morning_visit_menu_b6e502c7:
@@ -9406,37 +9406,37 @@ translate chinese c2_suzume_morning_visit_menu_8341b9df:
 translate chinese c2_suzume_morning_visit_menu_1fbdbd4b:
 
     # suzume "They are the Kunoichi from the Earth School, the Kunoichi from the Water School, and the Kunoichi from the Void School."
-    suzume "分别是地宗的忍者、水宗的忍者和虚空宗的忍者。"
+    suzume "分别是地宗的女忍者、水宗的女忍者和虚空宗的女忍者。"
 
 # game/BKchapter2.rpy:4765
 translate chinese c2_suzume_morning_visit_menu_d1a448ce:
 
     # you "Tell me about the Kunoichi from..." nointeract
-    you "告诉我关于忍者的..." nointeract
+    you "告诉我关于女忍者的..." nointeract
 
 # game/BKchapter2.rpy:4768
 translate chinese c2_suzume_morning_visit_menu_8f7ed483:
 
     # you "Tell me about the Kunoichi from the Earth School."
-    you "告诉我地藏学校的忍者。"
+    you "告诉我地藏学校的女忍者。"
 
 # game/BKchapter2.rpy:4770
 translate chinese c2_suzume_morning_visit_menu_6fe8a5cd:
 
     # suzume doubt "The Earth School Kunoichi... Hmm."
-    suzume doubt "地藏学校忍者……嗯。"
+    suzume doubt "地藏学校女忍者……嗯。"
 
 # game/BKchapter2.rpy:4772
 translate chinese c2_suzume_morning_visit_menu_6987351e:
 
     # suzume "AKA 'the Ninja School Class President'. She is the most cookie-cutter Kunoichi of the three."
-    suzume "又名“忍者学校班长”。她是三人中最千篇一律的忍者。"
+    suzume "又名“女忍者学校班长”。她是三人中最千篇一律的女忍者。"
 
 # game/BKchapter2.rpy:4774
 translate chinese c2_suzume_morning_visit_menu_1efe97dc:
 
     # suzume "She's older than me - about 25 I guess. She's an elite ninja."
-    suzume "她比我大——我猜大概是 25 岁。她是精英忍者。"
+    suzume "她比我大——我猜大概是 25 岁。她是精英女忍者。"
 
 # game/BKchapter2.rpy:4776
 translate chinese c2_suzume_morning_visit_menu_148aac78:
@@ -9448,7 +9448,7 @@ translate chinese c2_suzume_morning_visit_menu_148aac78:
 translate chinese c2_suzume_morning_visit_menu_64a68cd1:
 
     # suzume "Her tenacity was legendary even before she became a Kunoichi. She became the leader of her school after her Master was brutally murdered, or something. Saved the whole School from extinction."
-    suzume "甚至在她成为忍者之前，她的坚韧就是传奇。在她的主人被残忍地谋杀之后，她成为了她的学校的领导者，或者什么。拯救了整个学校免于灭绝。"
+    suzume "甚至在她成为女忍者之前，她的坚韧就是传奇。在她的主人被残忍地谋杀之后，她成为了她的学校的领导者，或者什么。拯救了整个学校免于灭绝。"
 
 # game/BKchapter2.rpy:4780
 translate chinese c2_suzume_morning_visit_menu_9c9c442e:
@@ -9484,7 +9484,7 @@ translate chinese c2_suzume_morning_visit_menu_f40f59be:
 translate chinese c2_suzume_morning_visit_menu_3328e262:
 
     # you "Tell me about the Kunoichi from the Water School."
-    you "告诉我关于水流学校的忍者。"
+    you "告诉我关于水流学校的女忍者。"
 
 # game/BKchapter2.rpy:4793
 translate chinese c2_suzume_morning_visit_menu_97e3b49f:
@@ -9496,13 +9496,13 @@ translate chinese c2_suzume_morning_visit_menu_97e3b49f:
 translate chinese c2_suzume_morning_visit_menu_bf1fd0b0:
 
     # suzume "The Kunoichi from the Water School is shrouded in mystery..."
-    suzume "水校的忍者被笼罩在神秘之中……"
+    suzume "水校的女忍者被笼罩在神秘之中……"
 
 # game/BKchapter2.rpy:4797
 translate chinese c2_suzume_morning_visit_menu_95e4bb51:
 
     # suzume normal "She's one of the oldest living Kunoichi, some say she is over a hundred years old. Imagine that!"
-    suzume normal "她是在世最年长的忍者，有人说她已经一百多岁了。设想！"
+    suzume normal "她是在世最年长的女忍者，有人说她已经一百多岁了。设想！"
 
 # game/BKchapter2.rpy:4799
 translate chinese c2_suzume_morning_visit_menu_d3f1bf11:
@@ -9550,7 +9550,7 @@ translate chinese c2_suzume_morning_visit_menu_14729ca3:
 translate chinese c2_suzume_morning_visit_menu_5efbf01a:
 
     # you "Tell me about the Kunoichi from the Void School."
-    you "告诉我关于虚空学校的忍者。"
+    you "告诉我关于虚空学校的女忍者。"
 
 # game/BKchapter2.rpy:4816
 translate chinese c2_suzume_morning_visit_menu_ea5f8b83:
@@ -9562,31 +9562,31 @@ translate chinese c2_suzume_morning_visit_menu_ea5f8b83:
 translate chinese c2_suzume_morning_visit_menu_4a8a576e:
 
     # suzume "The Void Kunoichi, AKA 'Little Miss Ninja Princess'."
-    suzume "虚空忍者，又名“忍者小公主”。"
+    suzume "虚空女忍者，又名“女忍者小公主”。"
 
 # game/BKchapter2.rpy:4820
 translate chinese c2_suzume_morning_visit_menu_f6453811:
 
     # suzume "The current Kunoichi is the descendent of a long line of ninja warriors, going back all the way to the legendary couple, Ayame and Rikimaru..."
-    suzume "现在的忍者是一长串忍者武士的后代，可以追溯到传说中的一对，殺愛和力丸......"
+    suzume "现在的女忍者是一长串女忍者武士的后代，可以追溯到传说中的一对，殺愛和力丸......"
 
 # game/BKchapter2.rpy:4822
 translate chinese c2_suzume_morning_visit_menu_b7e0f2b8:
 
     # suzume "She's said to be the youngest Kunoichi in the history of any school, ever! She became a ninja at age six, and a Kunoichi at twelve."
-    suzume "据说她是所有学校历史上最年轻的忍者！六岁练习忍术，十二岁成为忍者。"
+    suzume "据说她是所有学校历史上最年轻的女忍者！六岁练习忍术，十二岁成为女忍者。"
 
 # game/BKchapter2.rpy:4824
 translate chinese c2_suzume_morning_visit_menu_91775dc2:
 
     # suzume normal "The Void School is a very peculiar school. They teach no magic, instead focusing on physical feats, speed, and secret techniques. People say Void ninjas move so fast, you can only see their shadows."
-    suzume normal "虚空学校是一所非常奇特的学府。他们不教授魔法，而是专注于体能、速度和秘术。人家说虚空忍者动作太快，只能看到他们的影子。"
+    suzume normal "虚空学校是一所非常奇特的学府。他们不教授魔法，而是专注于体能、速度和秘术。人家说虚空女忍者动作太快，只能看到他们的影子。"
 
 # game/BKchapter2.rpy:4826
 translate chinese c2_suzume_morning_visit_menu_7b0efe04:
 
     # suzume "Their Kunoichi is just a teenager, but already she's said to be one of the most accomplished Kunoichi in history. Not only that, but she won several 'Ninja Idol' contests."
-    suzume "他们的忍者只是一个十几岁的孩子，但据说她已经是历史上最有成就的忍者之一。不仅如此，她还赢得了几次“忍者偶像”比赛。"
+    suzume "他们的女忍者只是一个十几岁的孩子，但据说她已经是历史上最有成就的女忍者之一。不仅如此，她还赢得了几次“女忍者偶像”比赛。"
 
 # game/BKchapter2.rpy:4828
 translate chinese c2_suzume_morning_visit_menu_fc5835ed:
@@ -9604,7 +9604,7 @@ translate chinese c2_suzume_morning_visit_menu_ab92222d:
 translate chinese c2_suzume_morning_visit_menu_0fea6fb0:
 
     # you "A ninja prodigy, uh? And what is she doing here in Zan?"
-    you "忍者神童，嗯？她在瓒城这里做什么？"
+    you "女忍者神童，嗯？她在瓒城这里做什么？"
 
 # game/BKchapter2.rpy:4834
 translate chinese c2_suzume_morning_visit_menu_d956493f:
@@ -9622,7 +9622,7 @@ translate chinese c2_suzume_morning_visit_menu_407bfa4f:
 translate chinese c2_suzume_morning_visit_menu_4f678085:
 
     # you "Okay, enough about the Kunoichi."
-    you "好的，关于忍者的足够了。"
+    you "好的，关于女忍者的足够了。"
 
 # game/BKchapter2.rpy:4848
 translate chinese c2_suzume_morning_visit_menu_c01555cc:
@@ -9634,7 +9634,7 @@ translate chinese c2_suzume_morning_visit_menu_c01555cc:
 translate chinese c2_suzume_morning_visit_menu_3c932111:
 
     # you "Wait a second... How am I supposed to catch these highly accomplished Kunoichi? Every one of them is a fierce fighter... Do I stand a chance?"
-    you "等一下……我应该如何抓住这些高超的忍者？他们每个人都是凶猛的战士……我有机会吗？"
+    you "等一下……我应该如何抓住这些高超的女忍者？他们每个人都是凶猛的战士……我有机会吗？"
 
 # game/BKchapter2.rpy:4852
 translate chinese c2_suzume_morning_visit_menu_4b942ad3:
@@ -9670,13 +9670,13 @@ translate chinese c2_suzume_morning_visit_menu_08c08340:
 translate chinese c2_suzume_morning_visit_menu_675cf280:
 
     # suzume bend "That you did! But only because I'm a sex ninja, and that happens to be your natural strength."
-    suzume bend "你做的！但这只是因为我是一个性忍者，而这恰好是你的自然力量。"
+    suzume bend "你做的！但这只是因为我是一个性女忍者，而这恰好是你的自然力量。"
 
 # game/BKchapter2.rpy:4864
 translate chinese c2_suzume_morning_visit_menu_12fcb866:
 
     # suzume normal "None of the other Kunoichi uses sex as a weapon... They just get their marks using old-fashioned weapons and magic. And this is where you'll fall short."
-    suzume normal "其他 忍者都没有使用性作为武器......他们只是使用老式武器和魔法来获得他们的标记。这就是你会失败的地方。"
+    suzume normal "其他 女忍者都没有使用性作为武器......他们只是使用老式武器和魔法来获得他们的标记。这就是你会失败的地方。"
 
 # game/BKchapter2.rpy:4866
 translate chinese c2_suzume_morning_visit_menu_84713263:
@@ -10420,7 +10420,7 @@ translate chinese c2_suzume_onsen_b454cf78:
 translate chinese c2_suzume_onsen_39538a93:
 
     # suzume "Well, the Hammer is the bane of Kunoichi everywhere. It cuts us off from our base element, breaking our Ki's balance."
-    suzume "嗯，锤子到处都是忍者的祸根。它切断了我们的基本元素，打破了我们的 Ki 的平衡。"
+    suzume "嗯，锤子到处都是女忍者的祸根。它切断了我们的基本元素，打破了我们的 Ki 的平衡。"
 
 # game/BKchapter2.rpy:5204
 translate chinese c2_suzume_onsen_b68d0a35:
@@ -10468,7 +10468,7 @@ translate chinese c2_suzume_onsen_d92e442c:
 translate chinese c2_suzume_onsen_4f574798:
 
     # you "Well, even though the effect is temporary, it could be enough to give me an edge over the Kunoichi..."
-    you "嗯，虽然效果是暂时的，但也足以让我在忍者中占得先机……"
+    you "嗯，虽然效果是暂时的，但也足以让我在女忍者中占得先机……"
 
 # game/BKchapter2.rpy:5220
 translate chinese c2_suzume_onsen_0dee34da:
@@ -10492,7 +10492,7 @@ translate chinese c2_suzume_onsen_3e2d7e48:
 translate chinese c2_suzume_onsen_d09e6d39:
 
     # you "...which I will use to catch the Kunoichi..."
-    you "......我会用它来抓住忍者......"
+    you "......我会用它来抓住女忍者......"
 
 # game/BKchapter2.rpy:5228
 translate chinese c2_suzume_onsen_d7799416:
@@ -10504,13 +10504,13 @@ translate chinese c2_suzume_onsen_d7799416:
 translate chinese c2_suzume_onsen_1b904159:
 
     # you "That's right! The Earth School's Kunoichi is in the {b}Warehouse{/b} district..."
-    you "这是正确的！Earth School 的 忍者在 {b}Warehouse{/b} 区..."
+    you "这是正确的！Earth School 的 女忍者在 {b}Warehouse{/b} 区..."
 
 # game/BKchapter2.rpy:5232
 translate chinese c2_suzume_onsen_8239d093:
 
     # suzume "And the Water School's Kunoichi is by the {b}Docks{/b}..."
-    suzume "水流学校的 忍者在 {b}Docks{/b} 旁边..."
+    suzume "水流学校的 女忍者在 {b}Docks{/b} 旁边..."
 
 # game/BKchapter2.rpy:5234
 translate chinese c2_suzume_onsen_8f0d80a0:
@@ -10522,7 +10522,7 @@ translate chinese c2_suzume_onsen_8f0d80a0:
 translate chinese c2_suzume_onsen_6a8c388a:
 
     # suzume "Good. I'll be on my way, then... Let's meet up in the city to start hunting down my Kunoichi sisters!"
-    suzume "好的。那我先走了……让我们在城里碰头，开始追捕我的忍者姐妹吧！"
+    suzume "好的。那我先走了……让我们在城里碰头，开始追捕我的女忍者姐妹吧！"
 
 # game/BKchapter2.rpy:5276
 translate chinese c2_suzume_onsen_55e876f1:
@@ -10570,7 +10570,7 @@ translate chinese ninja_hunt_e481de04:
 translate chinese ninja_hunt_35a9f4a5:
 
     # suzume "Let me scout ahead. If I find them, I'll dislodge the Kunoichi from their hiding place. Then you'll act."
-    suzume "让我先侦察一下。如果我找到他们，我会把忍者从他们的藏身之处赶走。然后你就会行动。"
+    suzume "让我先侦察一下。如果我找到他们，我会把女忍者从他们的藏身之处赶走。然后你就会行动。"
 
 # game/BKchapter2.rpy:5316
 translate chinese ninja_hunt_b3d1e56e:
@@ -10588,7 +10588,7 @@ translate chinese ninja_hunt_769262c9:
 translate chinese ninja_hunt_fe0e1c0c:
 
     # "You can only hunt ninjas once a day. Try again another time."
-    "您每天只能猎杀忍者一次。再试一次。"
+    "您每天只能猎杀女忍者一次。再试一次。"
 
 # game/BKchapter2.rpy:5374
 translate chinese ninja_hunt_intro_36e59502:
@@ -10630,19 +10630,19 @@ translate chinese ninja_hunt_intro_69bd1f8d:
 translate chinese ninja_hunt_intro_541cbc8b:
 
     # "Hit the Kunoichi {b}three times{/b} within the time limit to stop her."
-    "在限定时间内击中 忍者{b}3 次{/b} 以阻止她。"
+    "在限定时间内击中 女忍者{b}3 次{/b} 以阻止她。"
 
 # game/BKchapter2.rpy:5398
 translate chinese ninja_hunt_begins_8f457a71:
 
     # suzume "It's one of the Kunoichi! Quick, catch her!"
-    suzume "是忍者之一！快，抓住她！"
+    suzume "是女忍者之一！快，抓住她！"
 
 # game/BKchapter2.rpy:5401
 translate chinese ninja_hunt_begins_c6e2e0ef:
 
     # suzume "It's that little brat again, the Void Kunoichi! Get her!"
-    suzume "又是那个小鬼，虚空忍者！得到她！"
+    suzume "又是那个小鬼，虚空女忍者！得到她！"
 
 # game/BKchapter2.rpy:5404
 translate chinese ninja_hunt_begins_8c4f49dc:
@@ -10666,7 +10666,7 @@ translate chinese ninja_hunt_begins_07dae04e:
 translate chinese ninja_hunt_begins_2454f755:
 
     # suzume "It's the weird lady with no smell! The Water Kunoichi! Don't let her get away!"
-    suzume "就是那个没有味道的怪女人！水之忍者！不要让她跑掉！"
+    suzume "就是那个没有味道的怪女人！水之女忍者！不要让她跑掉！"
 
 # game/BKchapter2.rpy:5414
 translate chinese ninja_hunt_begins_e280e79e:
@@ -10690,7 +10690,7 @@ translate chinese ninja_hunt_begins_5b6c4df9:
 translate chinese ninja_hunt_begins_57671f08:
 
     # suzume "It's the Earth Kunoichi, the serious one... After her, quickly!"
-    suzume "是地藏忍者，是认真的……在她之后，快！"
+    suzume "是地藏女忍者，是认真的……在她之后，快！"
 
 # game/BKchapter2.rpy:5424
 translate chinese ninja_hunt_begins_ab9b975a:
@@ -10846,13 +10846,13 @@ translate chinese intercept_narika_c1df0664:
 translate chinese intercept_narika_42e19a0d:
 
     # narika angry "Whaaat?!? I'll have you know, I'm the greatest ninja that's ever existed, BAR NONE!" with vpunch
-    narika angry "什么？！？我会让你知道，我是有史以来最伟大的忍者，BAR NONE！" with vpunch
+    narika angry "什么？！？我会让你知道，我是有史以来最伟大的女忍者，BAR NONE！" with vpunch
 
 # game/BKchapter2.rpy:5605
 translate chinese intercept_narika_9b329f69:
 
     # narika "I'm the youngest, most-gifted pupil any ninja school has ever seen! I've won all the awards! I won Kunoichi Idol five times in a row! I..."
-    narika "我是所有忍者学校见过的最年轻、最有天赋的学生！我赢得了所有的奖项！我连续五次赢得忍者Idol！我..."
+    narika "我是所有女忍者学校见过的最年轻、最有天赋的学生！我赢得了所有的奖项！我连续五次赢得女忍者Idol！我..."
 
 # game/BKchapter2.rpy:5607
 translate chinese intercept_narika_4e8f7fe2:
@@ -10894,7 +10894,7 @@ translate chinese intercept_narika_5d39db5f:
 translate chinese intercept_narika_94b0c053:
 
     # narika "You're a Kunoichi as well! Let me browse my phenomenal memory... Judging by your looks, you must be..."
-    narika "你也是忍者！让我浏览一下我惊人的记忆……从你的容貌来看，你一定是……"
+    narika "你也是女忍者！让我浏览一下我惊人的记忆……从你的容貌来看，你一定是……"
 
 # game/BKchapter2.rpy:5623
 translate chinese intercept_narika_e98dcb19:
@@ -10930,7 +10930,7 @@ translate chinese intercept_narika_c42c26b2:
 translate chinese intercept_narika_5b81bfc9:
 
     # narika "Fufufu, I see what's going on here... You're jealous of me for being the best Kunoichi, and decided to come challenge me to a fight!"
-    narika "呼呼呼，我知道这是怎么回事了……你嫉妒我是最好的忍者，决定来挑战我！"
+    narika "呼呼呼，我知道这是怎么回事了……你嫉妒我是最好的女忍者，决定来挑战我！"
 
 # game/BKchapter2.rpy:5635
 translate chinese intercept_narika_66bdc409:
@@ -11020,13 +11020,13 @@ translate chinese intercept_narika_04443d26:
 translate chinese intercept_narika_53bfc30b:
 
     # suzume "You're completely wrong, kiddo. I'm not a Kunoichi anymore, and I couldn't care less about besting you."
-    suzume "你完全错了，孩子。我已经不是忍者了，我也顾不上打败你了。"
+    suzume "你完全错了，孩子。我已经不是女忍者了，我也顾不上打败你了。"
 
 # game/BKchapter2.rpy:5665
 translate chinese intercept_narika_78c82aa5:
 
     # narika normal "Not a Kunoichi? You mean you quit?"
-    narika normal "不是忍者吗？你的意思是你辞职？"
+    narika normal "不是女忍者吗？你的意思是你辞职？"
 
 # game/BKchapter2.rpy:5669
 translate chinese intercept_narika_676147c4:
@@ -11140,7 +11140,7 @@ translate chinese intercept_narika_8077fd03:
 translate chinese intercept_narika_5cc2365b:
 
     # "When you come back to your senses, the Kunoichi is gone."
-    "当你回过神来时，忍者不见了。"
+    "当你回过神来时，女忍者不见了。"
 
 # game/BKchapter2.rpy:5723
 translate chinese intercept_narika_c0e2f8dd:
@@ -11212,7 +11212,7 @@ translate chinese intercept_narika_7a1a34ac:
 translate chinese intercept_narika_5d7eed30:
 
     # narika normal "No matter, I'm the best ninja on the continent. I won't let you catch me!"
-    narika normal "没关系，我是大陆上最好的忍者。我不会让你抓到我的！"
+    narika normal "没关系，我是大陆上最好的女忍者。我不会让你抓到我的！"
 
 # game/BKchapter2.rpy:5757
 translate chinese intercept_narika_7e1975cf:
@@ -11242,7 +11242,7 @@ translate chinese intercept_narika_ff37177d:
 translate chinese intercept_narika_486d18c7:
 
     # narika angry "Of course, I'm here on a contract! I'm the best ninja in the whole of Xeros! My skills are always in demand..."
-    narika angry "当然，我是签合同来的！我是整个Xeros中最好的忍者！我的技能总是很抢手..."
+    narika angry "当然，我是签合同来的！我是整个Xeros中最好的女忍者！我的技能总是很抢手..."
 
 # game/BKchapter2.rpy:5771
 translate chinese intercept_narika_40b17cd3:
@@ -11266,7 +11266,7 @@ translate chinese intercept_narika_11fdb519:
 translate chinese intercept_narika_d50bc21d:
 
     # you "Right, of course. You're the best ninja. I believe you've mentioned that a couple of times..."
-    you "没错，当然。你是最好的忍者。我相信你已经提到过几次了..."
+    you "没错，当然。你是最好的女忍者。我相信你已经提到过几次了..."
 
 # game/BKchapter2.rpy:5781
 translate chinese intercept_narika_3ac013d0:
@@ -11278,7 +11278,7 @@ translate chinese intercept_narika_3ac013d0:
 translate chinese intercept_narika_8fc75265:
 
     # you "Meh, I've heard of many ninjas who are better than you."
-    you "嗯，听说比你厉害的忍者很多。"
+    you "嗯，听说比你厉害的女忍者很多。"
 
 # game/BKchapter2.rpy:5787
 translate chinese intercept_narika_dbd9f431:
@@ -11332,7 +11332,7 @@ translate chinese intercept_narika_f05a51f5:
 translate chinese intercept_narika_6cbf22d6:
 
     # narika "You? Don't make me laugh! I have no use for second-rate ninja hunters sporting toy hammers and loose clothing!"
-    narika "你？别逗我笑！二流忍者猎人带着玩具锤和宽松的衣服，我没有用！"
+    narika "你？别逗我笑！二流女忍者猎人带着玩具锤和宽松的衣服，我没有用！"
 
 # game/BKchapter2.rpy:5812
 translate chinese intercept_narika_077e26cf:
@@ -11548,7 +11548,7 @@ translate chinese intercept_narika_dd9abc70:
 translate chinese intercept_narika_487284bb:
 
     # narika "I won't tell you a thing! But believe me, this heist will make me the most legendary ninja in history!"
-    narika "我什么都不告诉你！但相信我，这次抢劫会让我成为史上最传奇的忍者！"
+    narika "我什么都不告诉你！但相信我，这次抢劫会让我成为史上最传奇的女忍者！"
 
 # game/BKchapter2.rpy:5902
 translate chinese intercept_narika_465aef3d:
@@ -11596,7 +11596,7 @@ translate chinese intercept_narika_c9a738a0:
 translate chinese intercept_narika_8cac84c7:
 
     # you "So you're not here as a ninja, but just as a mundane thief, then..."
-    you "所以你在这里不是作为忍者，而是作为一个平凡的小偷，那么......"
+    you "所以你在这里不是作为女忍者，而是作为一个平凡的小偷，那么......"
 
 # game/BKchapter2.rpy:5920
 translate chinese intercept_narika_1dbcb419:
@@ -11608,13 +11608,13 @@ translate chinese intercept_narika_1dbcb419:
 translate chinese intercept_narika_89ad2a18:
 
     # narika "I'm a ninja! And not just any ninja, I'm the most legendary Kunoichi in Xeros history!" with vpunch
-    narika "我是忍者！而且不只是任何忍者，我是Xeros历史上最传奇的忍者！" with vpunch
+    narika "我是女忍者！而且不只是任何女忍者，我是Xeros历史上最传奇的女忍者！" with vpunch
 
 # game/BKchapter2.rpy:5924
 translate chinese intercept_narika_cd6fd7d2:
 
     # narika normal "It just so happens that stealing is one of the skills a ninja needs to master, and I wouldn't be the best if I wasn't able to do it properly..."
-    narika normal "偷窃是忍者需要掌握的技能之一，如果我不能正确地做到这一点，我就不会是最好的……"
+    narika normal "偷窃是女忍者需要掌握的技能之一，如果我不能正确地做到这一点，我就不会是最好的……"
 
 # game/BKchapter2.rpy:5926
 translate chinese intercept_narika_ec9698be:
@@ -11668,13 +11668,13 @@ translate chinese intercept_narika_3836cb9c:
 translate chinese intercept_narika_32d00b71:
 
     # suzume doubt "The Water Kunoichi..."
-    suzume doubt "水忍者..."
+    suzume doubt "水女忍者..."
 
 # game/BKchapter2.rpy:5946
 translate chinese intercept_narika_647dc9ec:
 
     # narika "As if I could lose to an old granny! I'm ten times as fast as any prime-age ninja!"
-    narika "就好像我会输给一个老奶奶一样！我的速度是任何壮年忍者的十倍！"
+    narika "就好像我会输给一个老奶奶一样！我的速度是任何壮年女忍者的十倍！"
 
 # game/BKchapter2.rpy:5948
 translate chinese intercept_narika_fa094a06:
@@ -11740,19 +11740,19 @@ translate chinese intercept_narika_7da5c6d2:
 translate chinese intercept_narika_c9251880:
 
     # you "So, let me get this straight. You're here to show your rivals who the best ninja is, is that it?"
-    you "所以，让我直截了当。你来这里是为了向你的对手展示谁是最好的忍者，是吗？"
+    you "所以，让我直截了当。你来这里是为了向你的对手展示谁是最好的女忍者，是吗？"
 
 # game/BKchapter2.rpy:5972
 translate chinese intercept_narika_07ba6fca:
 
     # narika sad "Why, it's obvious, isn't it? Why do you think those second-rate Kunoichi are heading to this dump of a city..."
-    narika sad "为什么，很明显，不是吗？为什么你认为那些二流的忍者会去这个城市的垃圾场……"
+    narika sad "为什么，很明显，不是吗？为什么你认为那些二流的女忍者会去这个城市的垃圾场……"
 
 # game/BKchapter2.rpy:5974
 translate chinese intercept_narika_467f2497:
 
     # you "Because they have... Ninja stuff to do?"
-    you "因为他们有……忍者的事情要做？"
+    you "因为他们有……女忍者的事情要做？"
 
 # game/BKchapter2.rpy:5976
 translate chinese intercept_narika_6f3c1b90:
@@ -11818,7 +11818,7 @@ translate chinese intercept_narika_458fbf79:
 translate chinese intercept_narika_56509ad8:
 
     # you "This is just silly. If you're the better ninja, you shouldn't need to prove it by playing petty games."
-    you "这很愚蠢。如果您是更好的忍者，则无需通过玩小游戏来证明这一点。"
+    you "这很愚蠢。如果您是更好的女忍者，则无需通过玩小游戏来证明这一点。"
 
 # game/BKchapter2.rpy:6002
 translate chinese intercept_narika_91d44b2b:
@@ -11830,7 +11830,7 @@ translate chinese intercept_narika_91d44b2b:
 translate chinese intercept_narika_2d2a44c0:
 
     # narika "Kunoichi are natural born competitors! We fight until only one of us is left standing!"
-    narika "忍者是天生的竞争对手！我们一直战斗到只剩下我们一个人站着！"
+    narika "女忍者是天生的竞争对手！我们一直战斗到只剩下我们一个人站着！"
 
 # game/BKchapter2.rpy:6006
 translate chinese intercept_narika_a7944092:
@@ -11848,7 +11848,7 @@ translate chinese intercept_narika_962ae68e:
 translate chinese intercept_narika_e6a7bbbb:
 
     # you "I don't think you can hold a candle to any of those ninjas. They'll beat the crap out of you, kid."
-    you "我不认为你可以为那些忍者中的任何一个举起蜡烛。他们会揍你一顿的，孩子。"
+    you "我不认为你可以为那些女忍者中的任何一个举起蜡烛。他们会揍你一顿的，孩子。"
 
 # game/BKchapter2.rpy:6016
 translate chinese intercept_narika_76e097b6:
@@ -11902,7 +11902,7 @@ translate chinese intercept_narika_889a49bd:
 translate chinese intercept_narika_f0a09fc5:
 
     # narika "Well, all the Kunoichi are here to try and become the best ninja..."
-    narika "好吧，所有的忍者都在这里尝试成为最好的忍者......"
+    narika "好吧，所有的女忍者都在这里尝试成为最好的女忍者......"
 
 # game/BKchapter2.rpy:6036
 translate chinese intercept_narika_54476a6a:
@@ -11920,7 +11920,7 @@ translate chinese intercept_narika_35807924:
 translate chinese intercept_narika_2e940a6d:
 
     # narika "We're all vying for the title of the best ninja! But only my name will be remembered by history!"
-    narika "我们都在争夺最佳忍者的称号！但只有我的名字会被历史铭记！"
+    narika "我们都在争夺最佳女忍者的称号！但只有我的名字会被历史铭记！"
 
 # game/BKchapter2.rpy:6042
 translate chinese intercept_narika_dd4ef0b5:
@@ -11992,7 +11992,7 @@ translate chinese intercept_narika_85097159:
 translate chinese intercept_narika_fb64429f:
 
     # narika "Such a clumsy attack! You call yourself a ninja? You're just pathetic."
-    narika "如此笨拙的攻击！你称自己为忍者？你只是可怜。"
+    narika "如此笨拙的攻击！你称自己为女忍者？你只是可怜。"
 
 # game/BKchapter2.rpy:6094
 translate chinese intercept_narika_412eb9b3:
@@ -12166,7 +12166,7 @@ translate chinese c2_narika_H1_6ea0391d:
 translate chinese c2_narika_H1_c959c36e:
 
     # suzume "Oh, just a common ninja magical trick. A tracking spell..."
-    suzume "哦，只是一个普通的忍者魔术。追踪咒..."
+    suzume "哦，只是一个普通的女忍者魔术。追踪咒..."
 
 # game/BKchapter2.rpy:6192
 translate chinese c2_narika_H1_ad2971e6:
@@ -12346,7 +12346,7 @@ translate chinese c2_narika_H1_341d238f:
 translate chinese c2_narika_H1_e14bcf57:
 
     # narika "That fight with the weird stalker guy and his beast ninja... That got me all worked up... Hmmm..."
-    narika "与奇怪的跟踪狂和他的野兽忍者的那场战斗……这让我很兴奋……嗯……"
+    narika "与奇怪的跟踪狂和他的野兽女忍者的那场战斗……这让我很兴奋……嗯……"
 
 # game/BKchapter2.rpy:6278
 translate chinese c2_narika_H1_0a091d69:
@@ -12358,7 +12358,7 @@ translate chinese c2_narika_H1_0a091d69:
 translate chinese c2_narika_H1_919ef05f:
 
     # suzume "('Beast ninja'??? Grrr...)"
-    suzume "（‘野兽忍者’？？？呜呜呜……）"
+    suzume "（‘野兽女忍者’？？？呜呜呜……）"
 
 # game/BKchapter2.rpy:6282
 translate chinese c2_narika_H1_33c73691:
@@ -12448,13 +12448,13 @@ translate chinese c2_narika_H1_84207d62:
 translate chinese c2_narika_H1_8980ebf9:
 
     # narika "The prince will fall madly in love, of course, and then I'll be the first Kunoichi to become a Princess... And then a Queen..."
-    narika "王子当然会疯狂地坠入爱河，然后我会成为第一个成为公主的忍者……然后是女王……"
+    narika "王子当然会疯狂地坠入爱河，然后我会成为第一个成为公主的女忍者……然后是女王……"
 
 # game/BKchapter2.rpy:6322
 translate chinese c2_narika_H1_5c0e6c24:
 
     # narika "They'll write fairy tales about me... The other ninjas will worship me as a Saint... They'll grovel before me..."
-    narika "他们会写关于我的童话故事……其他忍者会把我当作圣人来崇拜……他们会在我面前卑躬屈膝……"
+    narika "他们会写关于我的童话故事……其他女忍者会把我当作圣人来崇拜……他们会在我面前卑躬屈膝……"
 
 # game/BKchapter2.rpy:6324
 translate chinese c2_narika_H1_4ccb1c4c:
@@ -12892,7 +12892,7 @@ translate chinese c2_narika_H1_3ec5f869:
 translate chinese intercept_mizuki_bd667b40:
 
     # "The ninja escapes you and flies off towards the beach. You frantically run after her, only to find her crouched in the water, calmly waiting for you."
-    "忍者逃离你，飞向海滩。你疯狂地追着她，却发现她蹲在水里，静静地等着你。"
+    "女忍者逃离你，飞向海滩。你疯狂地追着她，却发现她蹲在水里，静静地等着你。"
 
 # game/BKchapter2.rpy:6539
 translate chinese intercept_mizuki_78612369:
@@ -12940,7 +12940,7 @@ translate chinese intercept_mizuki_7a58f9a7:
 translate chinese intercept_mizuki_1636ae73:
 
     # you "Look, you're a legendary ninja, reknowned for your cunning and subtlety..."
-    you "看，你是一个传奇的忍者，以你的狡猾和狡猾而闻名......"
+    you "看，你是一个传奇的女忍者，以你的狡猾和狡猾而闻名......"
 
 # game/BKchapter2.rpy:6561
 translate chinese intercept_mizuki_2a6da203:
@@ -13114,13 +13114,13 @@ translate chinese intercept_mizuki_9e99f5e5:
 translate chinese intercept_mizuki_dc82a41a:
 
     # "Conjuring a fire spell to turn your staff into a blowtorch, you start melting the thick ice. After you're done, you cannot see the Kunoichi anywhere."
-    "使用火咒将你的工作人员变成喷灯，你开始融化厚厚的冰。完成后，您在任何地方都看不到忍者。"
+    "使用火咒将你的工作人员变成喷灯，你开始融化厚厚的冰。完成后，您在任何地方都看不到女忍者。"
 
 # game/BKchapter2.rpy:6653
 translate chinese intercept_mizuki_a7e4f3a7:
 
     # "Hacking at the ice barrier, you slowly manage to break it down as the ice weakens. But once you're done, there is no trace of the Kunoichi."
-    "攻击冰障，随着冰的减弱，你慢慢地设法将其分解。但是一旦你完成了，就没有忍者的踪迹。"
+    "攻击冰障，随着冰的减弱，你慢慢地设法将其分解。但是一旦你完成了，就没有女忍者的踪迹。"
 
 # game/BKchapter2.rpy:6657
 translate chinese intercept_mizuki_52d42156:
@@ -13198,7 +13198,7 @@ translate chinese intercept_mizuki_5880d6fb:
 translate chinese intercept_mizuki_2f20bede:
 
     # suzume "I told you, the Water Kunoichi is an old lady! Everyone knows this."
-    suzume "我告诉过你，水忍者是个老太太！每个人都知道这一点。"
+    suzume "我告诉过你，水女忍者是个老太太！每个人都知道这一点。"
 
 # game/BKchapter2.rpy:6696
 translate chinese intercept_mizuki_6e3beec0:
@@ -13750,7 +13750,7 @@ translate chinese intercept_mizuki_6c290036:
 translate chinese intercept_mizuki_4f957b0f:
 
     # suzume "Hey! I'm a ninja, not a nurse. I've only seen this in movies."
-    suzume "嘿！我是忍者，不是护士。我只在电影中看到过这个。"
+    suzume "嘿！我是女忍者，不是护士。我只在电影中看到过这个。"
 
 # game/BKchapter2.rpy:6954
 translate chinese intercept_mizuki_3ca1c0fa:
@@ -13996,7 +13996,7 @@ translate chinese mizuki_onsen_7c233dc7:
 translate chinese mizuki_onsen_f56dbc1f:
 
     # you "Wait a minute... You're the Water Kunoichi! Mizuki..."
-    you "等一下……你是水之忍者！美月..."
+    you "等一下……你是水之女忍者！美月..."
 
 # game/BKchapter2.rpy:7088
 translate chinese mizuki_onsen_680051a7:
@@ -14050,7 +14050,7 @@ translate chinese mizuki_onsen_046cb246:
 translate chinese mizuki_onsen_8084090e:
 
     # "She squeezes your dick harder, and you can feel her trained ninja hands could just as easily crush it."
-    "她更用力地挤压你的鸡巴，你可以感觉到她训练有素的忍者手可以轻松地压碎它。"
+    "她更用力地挤压你的鸡巴，你可以感觉到她训练有素的女忍者手可以轻松地压碎它。"
 
 # game/BKchapter2.rpy:7108
 translate chinese mizuki_onsen_a5f2d12b:
@@ -14062,7 +14062,7 @@ translate chinese mizuki_onsen_a5f2d12b:
 translate chinese mizuki_onsen_3819bad6:
 
     # mizuki "You know, I've mastered all the trades a Kunoichi needs to learn over the years... {i}All of them{/i}."
-    mizuki "你知道，我已经掌握了 忍者多年来需要学习的所有技能……{i}全部{/i}。"
+    mizuki "你知道，我已经掌握了 女忍者多年来需要学习的所有技能……{i}全部{/i}。"
 
 # game/BKchapter2.rpy:7112
 translate chinese mizuki_onsen_4799923a:
@@ -14104,7 +14104,7 @@ translate chinese mizuki_onsen_7e9d9b8c:
 translate chinese mizuki_onsen_956a2673:
 
     # mizuki "Precisely. A finely embroidered piece, that can withstand ninja moves and techniques while remaining stylish. It is a very rare and expensive thing, these days."
-    mizuki "恰恰。一件精美的刺绣作品，可以承受忍者的动作和技巧，同时保持时尚。如今，这是一件非常稀有且昂贵的东西。"
+    mizuki "恰恰。一件精美的刺绣作品，可以承受女忍者的动作和技巧，同时保持时尚。如今，这是一件非常稀有且昂贵的东西。"
 
 # game/BKchapter2.rpy:7126
 translate chinese mizuki_onsen_3f414560:
@@ -14122,7 +14122,7 @@ translate chinese mizuki_onsen_86073fbf:
 translate chinese mizuki_onsen_73dd26cd:
 
     # mizuki "Well. It was expedient at the time, and expediency is what keeps good ninjas alive... But now I want it back."
-    mizuki "出色地。这在当时是权宜之计，而权宜之计是让优秀忍者活着的原因……但现在我想要它回来。"
+    mizuki "出色地。这在当时是权宜之计，而权宜之计是让优秀女忍者活着的原因……但现在我想要它回来。"
 
 # game/BKchapter2.rpy:7134
 translate chinese mizuki_onsen_4c856331:
@@ -14446,7 +14446,7 @@ translate chinese mizuki_onsen_cbfdc985:
 translate chinese mizuki_onsen_d19e60b7:
 
     # mizuki "I can see you have great untapped power, though... It must be why you gave the Air Kunoichi a run for her money."
-    mizuki "不过，我可以看出你有很大的未开发力量……这一定是你为了她的钱而与空气忍者竞争的原因。"
+    mizuki "不过，我可以看出你有很大的未开发力量……这一定是你为了她的钱而与空气女忍者竞争的原因。"
 
 # game/BKchapter2.rpy:7264
 translate chinese mizuki_onsen_15be5ed5:
@@ -14560,13 +14560,13 @@ translate chinese intercept_haruka_d53d7db3:
 translate chinese intercept_haruka_1bc8ef68:
 
     # haruka "You're a Kunoichi as well, aren't you?"
-    haruka "你也是忍者吧？"
+    haruka "你也是女忍者吧？"
 
 # game/BKchapter2.rpy:7326
 translate chinese intercept_haruka_4ea63789:
 
     # suzume doubt "A Kunoichi?"
-    suzume doubt "忍者？"
+    suzume doubt "女忍者？"
 
 # game/BKchapter2.rpy:7328
 translate chinese intercept_haruka_1fb67929:
@@ -14578,7 +14578,7 @@ translate chinese intercept_haruka_1fb67929:
 translate chinese intercept_haruka_bff35848:
 
     # you "(You... You were a Kunoichi just a few days ago...)"
-    you "（你……前几天你还是忍者……）"
+    you "（你……前几天你还是女忍者……）"
 
 # game/BKchapter2.rpy:7332
 translate chinese intercept_haruka_0f40ab29:
@@ -14650,7 +14650,7 @@ translate chinese intercept_haruka_db20bee9:
 translate chinese intercept_haruka_23d40f6a:
 
     # haruka "This is a fair question. We Kunoichi live by our own tenets. Suzume has betrayed her school, and this is a grave crime."
-    haruka "这是一个公平的问题。我们忍者按照自己的原则生活。铃女背叛了她的学校，这是严重的罪行。"
+    haruka "这是一个公平的问题。我们女忍者按照自己的原则生活。铃女背叛了她的学校，这是严重的罪行。"
 
 # game/BKchapter2.rpy:7361
 translate chinese intercept_haruka_7494e785:
@@ -14806,7 +14806,7 @@ translate chinese intercept_haruka_65179bcb:
 translate chinese intercept_haruka_dc277576:
 
     # "Before you can get back up on trembling legs, the Kunoichi is already leaping from roof to roof, disappearing into the distance."
-    "还没等你用颤抖的双腿重新站起来，忍者已经从屋顶跳到了屋顶，消失在远方。"
+    "还没等你用颤抖的双腿重新站起来，女忍者已经从屋顶跳到了屋顶，消失在远方。"
 
 # game/BKchapter2.rpy:7429
 translate chinese intercept_haruka_ba63c3eb:
@@ -14932,7 +14932,7 @@ translate chinese intercept_haruka_ff672fb9:
 translate chinese intercept_haruka_3ab8616d:
 
     # you "No more ninja tricks! I will pry answers from you, and I'll use any means necessary!"
-    you "没有更多的忍者技巧！我会从你那里得到答案，我会使用任何必要的手段！"
+    you "没有更多的女忍者技巧！我会从你那里得到答案，我会使用任何必要的手段！"
 
 # game/BKchapter2.rpy:7491
 translate chinese intercept_haruka_3724d541:
@@ -15040,7 +15040,7 @@ translate chinese intercept_haruka_dc066c7e:
 translate chinese intercept_haruka_bfc35823:
 
     # haruka normal "Hmph, of course you do. Subaru was a legendary Kunoichi."
-    haruka normal "哼，你当然知道。昴是传说中的忍者。"
+    haruka normal "哼，你当然知道。昴是传说中的女忍者。"
 
 # game/BKchapter2.rpy:7529
 translate chinese intercept_haruka_62e1977d:
@@ -15058,7 +15058,7 @@ translate chinese intercept_haruka_81cd101a:
 translate chinese intercept_haruka_410c8396:
 
     # haruka sad "Subaru was the master of our school, and our Kunoichi to boot. She was the best one among us."
-    haruka sad "昴是我们学校的主人，也是我们的忍者。她是我们当中最好的一个。"
+    haruka sad "昴是我们学校的主人，也是我们的女忍者。她是我们当中最好的一个。"
 
 # game/BKchapter2.rpy:7539
 translate chinese intercept_haruka_97203a9f:
@@ -15070,7 +15070,7 @@ translate chinese intercept_haruka_97203a9f:
 translate chinese intercept_haruka_4ab18666:
 
     # you "I don't understand. How could she be the Kunoichi? You're the Kunoichi. I thought every school had only one..."
-    you "我不明白。她怎么可能是忍者？你是小野一 我以为每个学校只有一个..."
+    you "我不明白。她怎么可能是女忍者？你是小野一 我以为每个学校只有一个..."
 
 # game/BKchapter2.rpy:7543
 translate chinese intercept_haruka_780cf4cc:
@@ -15082,7 +15082,7 @@ translate chinese intercept_haruka_780cf4cc:
 translate chinese intercept_haruka_cec36dea:
 
     # haruka "I never should have become a Kunoichi. Subaru was and is our leader by every right. Fate forced my hand. The attack..."
-    haruka "我永远不应该成为忍者。昂过去和现在都是我们的领导者。命运强迫我的手。攻击..."
+    haruka "我永远不应该成为女忍者。昂过去和现在都是我们的领导者。命运强迫我的手。攻击..."
 
 # game/BKchapter2.rpy:7547
 translate chinese intercept_haruka_c05cfee6:
@@ -15100,13 +15100,13 @@ translate chinese intercept_haruka_4634a3f4:
 translate chinese intercept_haruka_955bf79d:
 
     # haruka normal "The Noroi. Our sworn enemies, a ninja clan of half-breed demons."
-    haruka normal "诺伊人。我们的死敌，混血恶魔的忍者氏族。"
+    haruka normal "诺伊人。我们的死敌，混血恶魔的女忍者氏族。"
 
 # game/BKchapter2.rpy:7553
 translate chinese intercept_haruka_68df7aa1:
 
     # you "Ninja demons? Is that a thing?"
-    you "忍者恶魔？那是一回事吗？"
+    you "女忍者恶魔？那是一回事吗？"
 
 # game/BKchapter2.rpy:7555
 translate chinese intercept_haruka_73072770:
@@ -15268,7 +15268,7 @@ translate chinese intercept_haruka_a4f6880b:
 translate chinese intercept_haruka_0c048439:
 
     # haruka surprise "Let me go! I'm from the ninja temple... We protect your village!"
-    haruka surprise "让我走！我来自忍者神殿……我们保护你的村庄！"
+    haruka surprise "让我走！我来自女忍者神殿……我们保护你的村庄！"
 
 # game/BKchapter2.rpy:7663
 translate chinese intercept_haruka_9c61d238:
@@ -15286,7 +15286,7 @@ translate chinese intercept_haruka_0fae01c9:
 translate chinese intercept_haruka_fc292d16:
 
     # man "Those haughty ninjas have lorded over us for too long, snatching our kids to their temple and imposing levies on us!"
-    man "那些傲慢的忍者统治我们太久了，把我们的孩子抢到他们的寺庙里，向我们征税！"
+    man "那些傲慢的女忍者统治我们太久了，把我们的孩子抢到他们的寺庙里，向我们征税！"
 
 # game/BKchapter2.rpy:7669
 translate chinese intercept_haruka_83fa82d7:
@@ -15316,7 +15316,7 @@ translate chinese intercept_haruka_b427a2a9:
 translate chinese intercept_haruka_456a4707:
 
     # man "Behold... This ninja slut is ours to do what we want!"
-    man "看哪......这个忍者荡妇是我们做我们想做的事！"
+    man "看哪......这个女忍者荡妇是我们做我们想做的事！"
 
 # game/BKchapter2.rpy:7683
 translate chinese intercept_haruka_a2bc7bbb:
@@ -15346,7 +15346,7 @@ translate chinese intercept_haruka_3f9a18ac:
 translate chinese intercept_haruka_1e8e4e1e:
 
     # man "So this is what a ninja's pussy feels like... To think the bitches from your school wouldn't even give a passing look to us poor wretches. How times change, eh?"
-    man "所以这就是忍者的阴户的感觉……想想你们学校的婊子们连看都不看我们这些可怜虫。时代如何变化，嗯？"
+    man "所以这就是女忍者的阴户的感觉……想想你们学校的婊子们连看都不看我们这些可怜虫。时代如何变化，嗯？"
 
 # game/BKchapter2.rpy:7701
 translate chinese intercept_haruka_00e50961:
@@ -15406,13 +15406,13 @@ translate chinese intercept_haruka_74ff7a11:
 translate chinese intercept_haruka_eaefb055:
 
     # man2 "Don't swallow your tongue, now, you little ninja bitch! Bwahahaha..."
-    man2 "不要吞下你的舌头，现在，你这个小忍者婊子！哇哈哈哈……"
+    man2 "不要吞下你的舌头，现在，你这个小女忍者婊子！哇哈哈哈……"
 
 # game/BKchapter2.rpy:7729
 translate chinese intercept_haruka_442e97f1:
 
     # man2 "Where's your pride, now, you ninja slut? I bet you never dreamt your precious school would be burnt to ashes, while us rubes be ramming our cocks in your pussy and throat. Happy?"
-    man2 "现在，你的骄傲在哪里，你这个忍者荡妇？我敢打赌，你做梦也想不到你珍贵的学校会被烧成灰烬，而我们这些垃圾正在用我们的鸡巴在你的阴户和喉咙里猛烈撞击。快乐的？"
+    man2 "现在，你的骄傲在哪里，你这个女忍者荡妇？我敢打赌，你做梦也想不到你珍贵的学校会被烧成灰烬，而我们这些垃圾正在用我们的鸡巴在你的阴户和喉咙里猛烈撞击。快乐的？"
 
 # game/BKchapter2.rpy:7731
 translate chinese intercept_haruka_1ab394cf:
@@ -15550,13 +15550,13 @@ translate chinese intercept_haruka_ed216904:
 translate chinese intercept_haruka_2e754827:
 
     # haruka "Days later, when I could walk again, I went up to the ninja temple to meet with the survivors."
-    haruka "几天后，当我可以再次走路时，我前往忍者寺与幸存者会面。"
+    haruka "几天后，当我可以再次走路时，我前往女忍者寺与幸存者会面。"
 
 # game/BKchapter2.rpy:7802
 translate chinese intercept_haruka_002f95dc:
 
     # haruka sad "My intention was to quit then and there, to admit that I wasn't fit to be a ninja."
-    haruka sad "我的意图是当场退出，承认我不适合成为忍者。"
+    haruka sad "我的意图是当场退出，承认我不适合成为女忍者。"
 
 # game/BKchapter2.rpy:7804
 translate chinese intercept_haruka_78b627d4:
@@ -15592,7 +15592,7 @@ translate chinese intercept_haruka_7e06b9e3:
 translate chinese intercept_haruka_d7db8a5b:
 
     # haruka "The surviving ninjas followed me out of stupor, they didn't even argue with me. After a day, we had managed to improve our situation and stop dying from disease and hunger."
-    haruka "幸存的忍者从昏迷中跟着我，他们甚至没有和我争论。一天后，我们设法改善了我们的状况，不再死于疾病和饥饿。"
+    haruka "幸存的女忍者从昏迷中跟着我，他们甚至没有和我争论。一天后，我们设法改善了我们的状况，不再死于疾病和饥饿。"
 
 # game/BKchapter2.rpy:7816
 translate chinese intercept_haruka_4f7421c7:
@@ -15604,7 +15604,7 @@ translate chinese intercept_haruka_4f7421c7:
 translate chinese intercept_haruka_2f4dbbd3:
 
     # haruka "I never questioned my role in this. Things needed to get done, so I did them... I was taken aback when they asked me to be the new Kunoichi."
-    haruka "我从来没有质疑过我在这方面的作用。事情需要完成，所以我做了……当他们让我成为新的忍者时，我吃了一惊。"
+    haruka "我从来没有质疑过我在这方面的作用。事情需要完成，所以我做了……当他们让我成为新的女忍者时，我吃了一惊。"
 
 # game/BKchapter2.rpy:7820
 translate chinese intercept_haruka_2c1e8c4e:
@@ -15628,7 +15628,7 @@ translate chinese intercept_haruka_dd9b302e:
 translate chinese intercept_haruka_c31cc423:
 
     # you "This is what honor is all about. This makes you worthy to be a Kunoichi!"
-    you "这就是荣誉的全部意义所在。这让你不愧为忍者！"
+    you "这就是荣誉的全部意义所在。这让你不愧为女忍者！"
 
 # game/BKchapter2.rpy:7830
 translate chinese intercept_haruka_18b0eed2:
@@ -15676,7 +15676,7 @@ translate chinese intercept_haruka_3719ddf0:
 translate chinese intercept_haruka_96f3f034:
 
     # suzume doubt "And you criticized me for quitting the last time we met... But you're also about to run away from your life as a ninja!"
-    suzume doubt "上次见面的时候，你还批评我放弃了……但你也快要逃离忍者的生活了！"
+    suzume doubt "上次见面的时候，你还批评我放弃了……但你也快要逃离女忍者的生活了！"
 
 # game/BKchapter2.rpy:7849
 translate chinese intercept_haruka_95d38273:
@@ -15742,13 +15742,13 @@ translate chinese intercept_haruka_a309c906:
 translate chinese intercept_haruka_a606c1b4:
 
     # haruka "I know I'm not cut out to be a ninja! I'm too weak, sensitive, insecure... I know that! But..."
-    haruka "我知道我不适合成为忍者！我太虚弱、敏感、缺乏安全感……我知道！但..."
+    haruka "我知道我不适合成为女忍者！我太虚弱、敏感、缺乏安全感……我知道！但..."
 
 # game/BKchapter2.rpy:7874
 translate chinese intercept_haruka_cb63eaeb:
 
     # haruka angry "Before I give up, I must do one last thing as a ninja."
-    haruka angry "在我放弃之前，我必须作为忍者做最后一件事。"
+    haruka angry "在我放弃之前，我必须作为女忍者做最后一件事。"
 
 # game/BKchapter2.rpy:7876
 translate chinese intercept_haruka_f5fff906:
@@ -16000,7 +16000,7 @@ translate chinese c2_palace_visit1_57824ff2:
 translate chinese c2_palace_visit1_9f1b1eae:
 
     # you "Well, not much yet. But I've met all the Kunoichi that operate in the city."
-    you "好吧，还没有多少。但我见过所有在城里经营的忍者。"
+    you "好吧，还没有多少。但我见过所有在城里经营的女忍者。"
 
 # game/BKchapter2.rpy:8013
 translate chinese c2_palace_visit1_3eef5bcb:
@@ -16012,13 +16012,13 @@ translate chinese c2_palace_visit1_3eef5bcb:
 translate chinese c2_palace_visit1_848e9e98:
 
     # kuro "The Kunoichi?"
-    kuro "忍者？"
+    kuro "女忍者？"
 
 # game/BKchapter2.rpy:8017
 translate chinese c2_palace_visit1_0914e320:
 
     # kenshin "Ninjas. Cold-blooded murderers, outsiders, not doubt hired by devious foreigners plotting against Your Majesty..."
-    kenshin "忍者。冷血的杀人犯，外来者，无疑是被狡猾的外国人所雇佣，密谋反对陛下……"
+    kenshin "女忍者。冷血的杀人犯，外来者，无疑是被狡猾的外国人所雇佣，密谋反对陛下……"
 
 # game/BKchapter2.rpy:8019
 translate chinese c2_palace_visit1_ac67fe36:
@@ -16030,19 +16030,19 @@ translate chinese c2_palace_visit1_ac67fe36:
 translate chinese c2_palace_visit1_6a99f073:
 
     # kuro "So this killer is a ninja?"
-    kuro "所以这个杀手是忍者？"
+    kuro "所以这个杀手是女忍者？"
 
 # game/BKchapter2.rpy:8023
 translate chinese c2_palace_visit1_199ab158:
 
     # kenshin "No. The Kunoichi are all female. Your informant must be mistaken."
-    kenshin "不，忍者都是女性。你的线人一定是搞错了。"
+    kenshin "不，女忍者都是女性。你的线人一定是搞错了。"
 
 # game/BKchapter2.rpy:8025
 translate chinese c2_palace_visit1_1f7986d6:
 
     # you "I didn't say the killer was a Kunoichi. But I have reasons to believe one or several of them work for him."
-    you "我没说凶手是忍者。但我有理由相信其中一个或几个对他有用。"
+    you "我没说凶手是女忍者。但我有理由相信其中一个或几个对他有用。"
 
 # game/BKchapter2.rpy:8027
 translate chinese c2_palace_visit1_b6616308:
@@ -16054,7 +16054,7 @@ translate chinese c2_palace_visit1_b6616308:
 translate chinese c2_palace_visit1_e14dfbf9:
 
     # you "Not much, unfortunately, outside of their identity. They hail from three ninja schools: Earth, Water and Void."
-    you "不幸的是，除了他们的身份之外，没有多少。他们来自三个忍者学校：地藏、水流和虚空。"
+    you "不幸的是，除了他们的身份之外，没有多少。他们来自三个女忍者学校：地藏、水流和虚空。"
 
 # game/BKchapter2.rpy:8031
 translate chinese c2_palace_visit1_9cbb0caa:
@@ -16096,7 +16096,7 @@ translate chinese c2_palace_visit1_9209aa36:
 translate chinese c2_palace_visit1_1fcf2ee4:
 
     # kuro "Master [MC.name], please continue your investigation. You should learn about these foreign ninjas' motives. It must be linked to our problem in one way or another."
-    kuro "大师[MC.name]，请继续调查。你应该了解这些外国忍者的动机。它必须以某种方式与我们的问题相关联。"
+    kuro "大师[MC.name]，请继续调查。你应该了解这些外国女忍者的动机。它必须以某种方式与我们的问题相关联。"
 
 # game/BKchapter2.rpy:8045
 translate chinese c2_palace_visit1_906a2155:
@@ -16702,13 +16702,13 @@ translate chinese c2_homura_okiya2_f3ad27d9:
 translate chinese c2_homura_okiya2_a627044c:
 
     # homura "Yes! You remember you told me about the female ninjas in town, right? The Kurochichi?"
-    homura "是的！你记得你告诉过我镇上的忍者吧？库里奇？"
+    homura "是的！你记得你告诉过我镇上的女忍者吧？库里奇？"
 
 # game/BKchapter2.rpy:8316
 translate chinese c2_homura_okiya2_293da2ce:
 
     # you "The Kunoichi."
-    you "忍者。"
+    you "女忍者。"
 
 # game/BKchapter2.rpy:8318
 translate chinese c2_homura_okiya2_123e9c31:
@@ -16768,13 +16768,13 @@ translate chinese c2_homura_okiya2_ed022a9c:
 translate chinese c2_homura_okiya2_df1dd578:
 
     # you "Well, I tracked down one of the Kunoichi in town, and I know there are two others..."
-    you "嗯，我在镇上找到了一个忍者，而且我知道还有两个……"
+    you "嗯，我在镇上找到了一个女忍者，而且我知道还有两个……"
 
 # game/BKchapter2.rpy:8340
 translate chinese c2_homura_okiya2_584b38a5:
 
     # homura "Three Kunoichi... Yes, that fits with the information I heard. We're making progress! *smile*"
-    homura "三忍者……是的，这与我听到的信息相符。我们正在取得进展！*微笑*"
+    homura "三女忍者……是的，这与我听到的信息相符。我们正在取得进展！*微笑*"
 
 # game/BKchapter2.rpy:8342
 translate chinese c2_homura_okiya2_1b2eb9aa:
@@ -16828,13 +16828,13 @@ translate chinese c2_homura_okiya2_d3fc96da:
 translate chinese c2_homura_okiya2_fd50fd4a:
 
     # you "And I managed to link this man to a group of female ninjas, the Kunoichi. I even met one of them."
-    you "我设法把这个男人和一群忍者——忍者联系起来。我什至遇到了其中一位。"
+    you "我设法把这个男人和一群女忍者——女忍者联系起来。我什至遇到了其中一位。"
 
 # game/BKchapter2.rpy:8364
 translate chinese c2_homura_okiya2_fd6927e9:
 
     # homura "The Kunoichi? I've heard about them..."
-    homura "忍者？我听说过他们..."
+    homura "女忍者？我听说过他们..."
 
 # game/BKchapter2.rpy:8366
 translate chinese c2_homura_okiya2_0df2e757:
@@ -17656,7 +17656,7 @@ translate chinese c2_palace_visit2_8b43f996:
 translate chinese c2_palace_visit2_fb754e19:
 
     # you "I've made some progress... But I'm no closer to finding out which Kunoichi is working with the masked man."
-    you "我已经取得了一些进展……但我并没有更接近于找出哪个 忍者正在与蒙面人合作。"
+    you "我已经取得了一些进展……但我并没有更接近于找出哪个 女忍者正在与蒙面人合作。"
 
 # game/BKchapter2.rpy:8735
 translate chinese c2_palace_visit2_1b6a439d:
@@ -17944,7 +17944,7 @@ translate chinese c2_palace_visit2_dcadaf5c:
 translate chinese c2_palace_visit2_41c8db8f:
 
     # you "That's a lot to juggle already... Kunoichi, scheming lords, duplicitous knights..."
-    you "已经有很多事情要处理了……忍者，诡计多端的领主，两面派的骑士……"
+    you "已经有很多事情要处理了……女忍者，诡计多端的领主，两面派的骑士……"
 
 # game/BKchapter2.rpy:8866
 translate chinese c2_palace_visit2_542c2642:
@@ -18250,7 +18250,7 @@ translate chinese c2_luncheon2_997155df:
 translate chinese c2_luncheon2_fef98783:
 
     # you "Well, I didn't get a chance to update you on my progress. I've met all three ninjas that I was looking for."
-    you "好吧，我没有机会向您介绍我的进展。我遇到了我正在寻找的所有三个忍者。"
+    you "好吧，我没有机会向您介绍我的进展。我遇到了我正在寻找的所有三个女忍者。"
 
 # game/BKchapter2.rpy:9011
 translate chinese c2_luncheon2_a60c3e75:
@@ -18304,7 +18304,7 @@ translate chinese c2_luncheon2_31d5cbea:
 translate chinese c2_luncheon2_2466a663:
 
     # you "Finally, the last ninja is thirsting for revenge."
-    you "最后，最后的忍者渴望复仇。"
+    you "最后，最后的女忍者渴望复仇。"
 
 # game/BKchapter2.rpy:9030
 translate chinese c2_luncheon2_540097f2:
@@ -18328,7 +18328,7 @@ translate chinese c2_luncheon2_9c3a6f50:
 translate chinese c2_luncheon2_ac50aa6a:
 
     # kuro "Oh, really? Disappointing. Ninjas tend to do that."
-    kuro "哦真的吗？令人失望。忍者倾向于这样做。"
+    kuro "哦真的吗？令人失望。女忍者倾向于这样做。"
 
 # game/BKchapter2.rpy:9038
 translate chinese c2_luncheon2_f32a1975:
@@ -19282,7 +19282,7 @@ translate chinese c2_kosmo_new_recruit_b7472156:
 translate chinese c2_kosmo_new_recruit_deede7d2:
 
     # kosmo "Brr, it's cold again. Where is that damn ninja?"
-    kosmo "Brr，又凉了。那个该死的忍者在哪里？"
+    kosmo "Brr，又凉了。那个该死的女忍者在哪里？"
 
 # game/BKchapter2.rpy:9426
 translate chinese c2_kosmo_new_recruit_f0f5953a:
@@ -19300,7 +19300,7 @@ translate chinese c2_kosmo_new_recruit_44dfd9cf:
 translate chinese c2_kosmo_new_recruit_3d221d1f:
 
     # kosmo "D-Don't scare me like that! Gee, you ninjas are all the same!"
-    kosmo "D、不要那样吓我！哎呀，你们忍者都一样！"
+    kosmo "D、不要那样吓我！哎呀，你们女忍者都一样！"
 
 # game/BKchapter2.rpy:9432
 translate chinese c2_kosmo_new_recruit_a0c5c4e7:
@@ -19450,7 +19450,7 @@ translate chinese ninja_first_lock_884f848d:
 translate chinese c2_unlock_next_brothel_1739c69d:
 
     # "After coursing the ninja all the way into a large, empty house, only for her to escape again, you collapse on the floor, exhausted."
-    "在将忍者一路追进一间空荡荡的大房子后，只为让她再次逃脱，你瘫倒在地板上，筋疲力尽。"
+    "在将女忍者一路追进一间空荡荡的大房子后，只为让她再次逃脱，你瘫倒在地板上，筋疲力尽。"
 
 # game/BKchapter2.rpy:9514
 translate chinese c2_unlock_next_brothel_53179f8d:
@@ -20788,7 +20788,7 @@ translate chinese c3_homura_okiya3_5bd1a38e:
 translate chinese c3_homura_okiya3_9d22004d:
 
     # homura surprise "Say, [MC.name], where do you stand on your secret investigation? Hunting the mysterious ninjas around the city?"
-    homura surprise "说，[MC.name]，你对秘密调查的立场是什么？在城市周围狩猎神秘的忍者？"
+    homura surprise "说，[MC.name]，你对秘密调查的立场是什么？在城市周围狩猎神秘的女忍者？"
 
 # game/BKchapter2.rpy:10099
 translate chinese c3_homura_okiya3_951262f6:
@@ -22112,7 +22112,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:1703
     old "About Gio"
-    new "关于吉奥"
+    new "关于吉欧"
 
     # game/BKchapter2.rpy:1703
     old "About your father"
@@ -22216,15 +22216,15 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:4513
     old "How did you become a Kunoichi?"
-    new "你是如何成为忍者的？"
+    new "你是如何成为女忍者的？"
 
     # game/BKchapter2.rpy:4513
     old "What are the Kunoichi?"
-    new "什么是忍者？"
+    new "什么是女忍者？"
 
     # game/BKchapter2.rpy:4513
     old "Who are the Kunoichi in Zan?"
-    new "瓒城里的忍者是谁？"
+    new "瓒城里的女忍者是谁？"
 
     # game/BKchapter2.rpy:4513
     old "No more questions"

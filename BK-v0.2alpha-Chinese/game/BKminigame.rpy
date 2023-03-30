@@ -268,7 +268,7 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
     if njgame.special:
         $ stage_name += "*锁定*"
 
-    $ centered(event_color["special"] % "\n\n{b}忍者狩猎开始\n回合 " + stage_name + "{/b}")
+    $ centered(event_color["special"] % "\n\n{b}女忍者狩猎开始\n回合 " + stage_name + "{/b}")
 
     if MC.has_item("makibishi"):
         if not njgame.special:

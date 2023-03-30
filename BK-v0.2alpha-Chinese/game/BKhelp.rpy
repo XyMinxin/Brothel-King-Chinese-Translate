@@ -183,19 +183,19 @@ label help_MC():
 
             sill "First, let me tell you about your character class. Your class affects events in the game, your available spells and starting skills."
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
 
                 sill "You are a warrior, a skilled fighter with a tough spirit. Your social skills are a bit lacking, though, if I may say so."
 
                 you "Grumph."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
 
                 sill "You are a wizard, skilled in spellcasting and with some wits to match. Don't get into close combat, though, this is not your style."
 
                 you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
 
-            elif MC.playerclass == "Trader":
+            elif MC.playerclass == "奸商":
 
                 sill "You are good at barter and trade, and have learned the skills to survive in the streets. Magic is not your forte, however."
 

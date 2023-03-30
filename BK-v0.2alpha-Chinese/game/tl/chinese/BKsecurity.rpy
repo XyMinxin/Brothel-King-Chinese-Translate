@@ -1102,7 +1102,7 @@ translate chinese kidnap_rescue_88142c53:
 translate chinese kidnap_rescue_ee6958e7:
 
     # "You casually strike down the guard with a lightning spell, turning him into an arty lamppost for a few seconds. He falls to ashes as you deliver [girl.name] from her bonds."
-    "你随手用闪电法术击倒了那个警卫，把他变成了一盏璀璨夺目的灯柱。当你把[girl.name]从她解救出来时，他也化为了一滩灰烬。"
+    "你随手用闪电法术击倒了那个卫兵，把他变成了一盏璀璨夺目的灯柱。当你把[girl.name]从她解救出来时，他也化为了一滩灰烬。"
 
 # game/BKsecurity.rpy:1879
 translate chinese kidnap_rescue_0d84744f:

@@ -1181,7 +1181,7 @@ init -3 python:
                     arson = True
 
                 if arson:
-                    if MC.playerclass == "Wizard":
+                    if MC.playerclass == "法师":
                         damage = dice(25) + 25 - 5 * MC.get_spirit()
                         if damage < 0:
                             damage = 0

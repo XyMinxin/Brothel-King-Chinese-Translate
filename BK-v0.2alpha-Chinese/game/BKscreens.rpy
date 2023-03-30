@@ -513,7 +513,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     if context == "girls":
         if girl.job:
             $ text1 = girl_related_dict[girl.job.capitalize()]
-            $ but_ttip = "{b}" + girl.fullname + "{/b}是一个等级为{0}的{1}。".format(str(girl.level), girl_related_dict[girl.job()])
+            $ but_ttip = "{b}" + girl.fullname + "{/b}" + "是一个等级为{0}的{1}。".format(str(girl.level), girl_related_dict[girl.job])
             #$ but_ttip = "{b}" + girl.fullname + "{/b}是个等级" + str(girl.level) + "的" + girl_related_dict[girl.job()] + "。"
 
         else:
@@ -2491,14 +2491,14 @@ screen perks(girl):
 
     key "mouseup_3" action Return(("commit", ""))
 
-    frame ypos 0.1 xsize 0.9 ysize 0.94 xalign 0.5 xfill False yfill False:
+    frame ypos 0.05 xsize 0.9 ysize 0.94 xalign 0.5 xfill False yfill False:
         background c_ui_light
 
-        has vbox spacing 10
+        has vbox spacing 10 xalign 0.5
 
         text "%s的特质树" % girl.fullname size res_font(28) color c_orange xalign 0.5 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
-        hbox:
+        hbox xalign 0.5:
             for archetype in archetype_list:
                 button xsize xres(100) xfill True background None hovered SetScreenVariable("selected_archetype", archetype) action SelectedIf(selected_archetype==archetype):
                     vbox:
@@ -3398,11 +3398,11 @@ screen visit_location():
                         action Return("special")
 
             if story_flags["ninja hunt"] and story_flags["ninja hunt"] != calendar.time and not story_flags["ninja hunt hide " + selected_location.name] and selected_district.rank <= 2:
-                textbutton "狩猎忍者" text_size res_font(18) xsize xres(240) ysize yres(50):
+                textbutton "狩猎女忍者" text_size res_font(18) xsize xres(240) ysize yres(50):
 
                     if MC.interactions > 0:
                         action Return("hunt")
-                    tooltip "猎杀居住在这个地方的忍者。"
+                    tooltip "猎杀居住在这个地方的女忍者。"
 
     use overlay("visit_location")
     use close((Hide("visit_location"), Jump("visit_district")))
@@ -3535,7 +3535,7 @@ screen brothel():
 
                                 vbox:
 
-                                    text "{b}" + translate_cn(MC.current_trainer.name, trainer_name_dict2) + "{/b}" size res_font(18) xalign 0.5
+                                    text "{b}" + MC.current_trainer.cnname + "{/b}" size res_font(18) xalign 0.5
                                     text "\n" + MC.current_trainer.trainer_description size res_font(14) justify True
 
                             else:
@@ -5567,7 +5567,7 @@ screen quick_start():
                         text "职业" xalign 0.5 size res_font(18) bold True color c_prune
 
                         hbox spacing 10:
-                            for cl in ["Warrior", "Wizard", "Trader"]:
+                            for cl in ["战士", "法师", "奸商"]:
                                 button yalign 0.5 xpadding 0 action Function(MC.set_playerclass, cl) tooltip MC_playerclass_description[cl]:
                                     if MC.playerclass != cl:
                                         background None
@@ -5585,7 +5585,7 @@ screen quick_start():
                         text "信仰" xalign 0.5 size res_font(18) bold True color c_emerald
 
                         hbox spacing 10:
-                            for god in ["Arios", "Shalia", None]:
+                            for god in ["阿里奥斯", "莎莉娅", None]:
                                 button yalign 0.5 xpadding 0 action Function(MC.set_god, god) tooltip god_description[god]:
                                     if MC.god != god:
                                         background None
@@ -5602,7 +5602,7 @@ screen quick_start():
                             for stat in all_MC_stats:
                                 button background None action NullAction() tooltip MC_stat_description[stat]:
                                     vbox xsize xres(100):
-                                        text MC_stat_color[stat] % start_name_dict[stat.capitalize()] size res_font(18) xalign 1.0 bold True
+                                        text MC_stat_color[stat] % stat_name_dict[stat.capitalize()] size res_font(18) xalign 1.0 bold True
                                         text MC_stat_color[stat] % int(MC.get_stat(stat, raw=True)) size res_font(24) xanchor 1.0 xalign 1.0
 
                 # hbox spacing 20 xalign 0.5:
@@ -5744,7 +5744,7 @@ screen quick_start():
         frame xfill True xsize int(0.95*config.screen_width) ysize int(0.1*config.screen_height):
             hbox xfill True:
                 vbox spacing 10 xalign 0.5 yalign 0.5:
-                    text "{b}%s，%s{/b} ({b}%s{/b}) - {b}难度：%s{/b}" % (MC.name, start_name_dict[MC.playerclass], start_name_dict[str(MC.god)], start_name_dict[game.diff.capitalize()]) color c_prune size res_font(18)
+                    text "{b}%s，%s{/b} ({b}%s{/b}) - {b}难度：%s{/b}" % (MC.name, MC.playerclass, str(MC.god), start_name_dict[game.diff.capitalize()]) color c_prune size res_font(18)
                     if game.achievements:
                         text "本次游戏将启用成就。" italic True color c_emerald size res_font(18)
                     else:
@@ -5775,7 +5775,7 @@ screen main_character():
         frame xpadding 3 ypadding 10 xfill True:
             has vbox
             textbutton MC.name background None text_color c_steel action Return("change_name") hovered tt.Action("点击这里更改你的角色名称")
-            textbutton ("等级" + str(MC.level) + " " + start_name_dict[MC.playerclass]) background None text_size res_font(18) text_color c_darkgrey action NullAction() tooltip "你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级。"
+            textbutton ("等级" + str(MC.level) + " " + MC.playerclass) background None text_size res_font(18) text_color c_darkgrey action NullAction() tooltip "你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级。"
 
         frame xpadding 3 ypadding 10 xfill True:
             has vbox spacing 6
@@ -5798,7 +5798,7 @@ screen main_character():
                     action NullAction()
                     hovered tt.Action(MC_stat_description[stat])
 
-                    text MC_stat_color[stat] % start_name_dict[stat.capitalize()] size res_font(18)
+                    text MC_stat_color[stat] % stat_name_dict[stat.capitalize()] size res_font(18)
 
                     text "{color=[col2]}" + str(int(MC.get_stat(stat))) + "{/color}" size res_font(18) xanchor 1.0 xalign 0.8
 
@@ -7892,8 +7892,8 @@ screen achievement_notification(achievement_list, replay=False):
                     add achv.pic.get(*res_tb(100))
 
                 vbox yalign 0.5:
-                    text achv.get_title(force_level=level) xalign 0.0 size res_font(20) bold True color c_prune # font "vivaldii.TTF"
-                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                    text achv.get_title(force_level=level) xalign 0.0 size res_font(32) color c_prune font "bk.TTF" #bold True
+                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "DejaVuSans.TTF" color c_brown
     timer 6.5 action Hide("achievement_notification")
 
 screen achievements(main=False):
@@ -7917,7 +7917,7 @@ screen achievements(main=False):
                             add selected_achievement.pic.get(*res_tb(125))
 
                         vbox xsize xres(500) yalign 0.5:
-                            text selected_achievement.get_title() xalign 0.0 size res_font(32) bold True font "bk.TTF" color c_prune
+                            text selected_achievement.get_title() xalign 0.0 size res_font(32) font "bk.TTF" color c_prune #bold True
                             text selected_achievement.get_description() xalign 0.0 size res_font(20) font "DejaVuSans.TTF" color c_brown
 
                         if selected_achievement.level < selected_achievement.level_nb:
@@ -8211,6 +8211,6 @@ label packstates_menu :
 # This adds a 'Chat' button to certain trainers in the brothel screen when harem mode is activated
 
 screen harem_button():
-    textbutton "交谈" xsize xres(75) xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("与" + MC.current_trainer.name + "交谈。")
+    textbutton "交谈" xsize xres(75) xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("与" + MC.current_trainer.cnname + "交谈。")
 
 #### END OF BK SCREENS FILE ####

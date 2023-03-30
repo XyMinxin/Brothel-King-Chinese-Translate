@@ -760,7 +760,7 @@ translate chinese city_impress_97f21646:
 translate chinese city_impress_c615e5c3:
 
     # you "...that's how I ended up with the three ninja sisters. It was a fun night!"
-    you "…我就是这样和三个忍者姐妹走到了一起。这是一个有趣的夜晚!"
+    you "…我就是这样和三个女忍者姐妹走到了一起。这是一个有趣的夜晚!"
 
 # game/BKcity_events.rpy:669
 translate chinese city_impress_f3b3bb54:
@@ -784,7 +784,7 @@ translate chinese city_impress_dcadeb26:
 translate chinese city_impress_6f0fb496:
 
     # ev_girl3 "Yes! Fuck the four of us! I bet we could show the ninja sisters a thing or two..."
-    ev_girl3 "是的!操我们四个!我打赌我们可以给忍者姐妹们看两个…"
+    ev_girl3 "是的!操我们四个!我打赌我们可以给女忍者姐妹们看两个…"
 
 # game/BKcity_events.rpy:685
 translate chinese city_impress_034035c7:
@@ -2206,13 +2206,13 @@ translate chinese city_gamble_ef9737fb:
 translate chinese city_gamble_75088c84:
 
     # you "I'm sorry. But you have to pay up. Don't make me fetch the guard..."
-    you "我很抱歉。但是你必须付钱。别让我去叫警卫……"
+    you "我很抱歉。但是你必须付钱。别让我去叫卫兵……"
 
 # game/BKcity_events.rpy:1769
 translate chinese city_gamble_491bbda7:
 
     # ev_girl1 "The guard? No, please! We can work this out!!!"
-    ev_girl1 "警卫?不,请!我们可以解决这个问题!!"
+    ev_girl1 "卫兵?不,请!我们可以解决这个问题!!"
 
 # game/BKcity_events.rpy:1771
 translate chinese city_gamble_24e6b6dd:
@@ -4498,13 +4498,13 @@ translate chinese city_rob_1d846d90:
 translate chinese city_rob_adaac038:
 
     # you "Shut up. You're coming with me now, we'll have a word with the guard."
-    you "闭嘴。你现在跟我来，我们和警卫谈谈。"
+    you "闭嘴。你现在跟我来，我们和卫兵谈谈。"
 
 # game/BKcity_events.rpy:3628
 translate chinese city_rob_9f18653f:
 
     # woman "The guard? Noooo! They'll rape and torture me! Please, Mister, I'll do anything!"
-    woman "警卫?他!他们会强奸和折磨我!求你了，先生，我愿意做任何事!"
+    woman "卫兵?他!他们会强奸和折磨我!求你了，先生，我愿意做任何事!"
 
 # game/BKcity_events.rpy:3632
 translate chinese city_rob_dae0ec55:

@@ -59,7 +59,7 @@ label quick_start:
         call choose_difficulty() from _call_choose_difficulty
 
     else:
-        $ MC.set_playerclass("Wizard")
+        $ MC.set_playerclass("法师")
         $ MC.girls = get_girls(24)
         $ MC.gold = 100000
         $ MC.speed = 30
@@ -206,6 +206,7 @@ label init_game(quick=False):
         # DEFAULT NAMES #
 
         sill_name = "希露"
+        gio_name = "吉欧"
         kuro_name = "公主"
         maid_name = "美奈子"
         gio_fucked_sill = ""
@@ -238,43 +239,43 @@ label init_game(quick=False):
         homura_name = "高贵的女士"
         suzume_name = "蓝发女孩"
         taxgirl_name = "优雅的女士"
-        narika_name = "娇小的忍者"
-        mizuki_name = "优雅的忍者"
-        haruka_name = "强壮的忍者"
+        narika_name = "娇小的女忍者"
+        mizuki_name = "优雅的女忍者"
+        haruka_name = "强壮的女忍者"
 
         # NPC OBJECTS / TRAINERS #
 
-        NPC_sill = NPC(name = "希露", trainer_portrait = "side sill happy", trainer_description = "'{i}又一块精斑？ *叹气* 带我去吧。{/i}'\n\n{b}管理人{/b}\n每晚随机免除一位女孩的保养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
+        NPC_sill = NPC(name = "Sill", cnname = "希露", trainer_portrait = "side sill happy", trainer_description = "“{i}又一块精斑？ *叹气* 带我去吧。{/i}”\n\n{b}管理人{/b}\n每晚随机免除一位女孩的保养费。", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
         NPC_sad_sill = NPC(name = "Sad Sill", trainer_portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
         NPC_gio = NPC()
         NPC_kosmo = NPC()
         NPC_sergeant = NPC()
         NPC_roz = NPC(name = "Roz", char = roz)
-        NPC_maya = NPC(name = "玛雅", trainer_portrait = "side maya", trainer_description = "'{i}我最好检查一下周边的情况。再来。{/i}'\n\n{b}永远警惕{/b}\n对青楼的危险增长速度减慢33%。", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
-        NPC_renza = NPC(name = "伦萨", trainer_portrait = "side renza", trainer_description = "'{i}他的钱包似乎很重。让我来帮你……{/i}'\n\n{b}巧妙手法{/b}\n所有女孩都会扒口袋。有{i}机灵{/i}特质的女孩永远不会被抓。", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
-        NPC_satella = NPC(name = "萨特拉", trainer_portrait = "side satella", trainer_description = "'{i}在阴暗处玩耍不是很有趣吗？库呼呼……{/i}'\n\n{b}暗黑祭司{/b}\n恐惧增加得更快。", effects = Effect("boost", "fear gains", 1, scope = "world"))
-        NPC_captain = NPC(name = "法拉", trainer_portrait = "side captain", trainer_description = "'{i}如果你想上位，你必须准备好做任何事情。任何事情!{/i}'\n\n{b}伤风败俗{/b}\n女孩会更快地习惯肛门和变态行为。", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
-        NPC_lieutenant = NPC(name = "莉迪", trainer_portrait = "side lieutenant", trainer_description = "'{i}你想让我给你做个榜样吗？我不这么认为。{/i}'\n\n{b}严苛纪律{/b}\n女孩不太可能拒绝工作。", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
-        NPC_gizel = NPC(name = "Gizel", defense = 3, trainer_portrait = "side gizel", trainer_description = "", effects = None)
+        NPC_maya = NPC(name = "Maya", cnname = "玛雅", trainer_portrait = "side maya", trainer_description = "“{i}我最好检查一下周边的情况。再来。{/i}”\n\n{b}永远警惕{/b}\n对青楼的危险增长速度减慢33%。", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
+        NPC_renza = NPC(name = "Renza", cnname = "伦萨", trainer_portrait = "side renza", trainer_description = "“{i}他的钱包似乎很重。让我来帮你……{/i}”\n\n{b}巧妙手法{/b}\n所有女孩都会扒口袋。有{i}机灵{/i}特质的女孩永远不会被抓。", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
+        NPC_satella = NPC(name = "Satella", cnname = "萨特拉", trainer_portrait = "side satella", trainer_description = "“{i}在阴暗处玩耍不是很有趣吗？库呼呼……{/i}”\n\n{b}暗黑祭司{/b}\n恐惧增加得更快。", effects = Effect("boost", "fear gains", 1, scope = "world"))
+        NPC_captain = NPC(name = "Farah", cnname = "法拉", trainer_portrait = "side captain", trainer_description = "“{i}如果你想上位，你必须准备好做任何事情。任何事情！{/i}”\n\n{b}伤风败俗{/b}\n女孩会更快地习惯肛门和变态行为。", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
+        NPC_lieutenant = NPC(name = "Lydie", cnname = "莉迪", trainer_portrait = "side lieutenant", trainer_description = "“{i}你想让我给你做个榜样吗？我不这么认为。{/i}”\n\n{b}严苛纪律{/b}\n女孩不太可能拒绝工作。", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
+        NPC_gizel = NPC(name = "Gizel", cnname = "吉泽尔", defense = 3, trainer_portrait = "side gizel", trainer_description = "", effects = None)
         NPC_banker = NPC(name = "Banker", trainer_portrait = "side banker")
         NPC_riche = NPC(name = "Riche", char=riche, trainer_portrait = "side riche", item_types=["Flower"])
-        NPC_ramias = NPC(name = "Ramias", char=ramias, trainer_portrait = "side ramias", item_types=["Weapon"], trainer_description = "'{i}用尖尖的那头扎向他们！{/i}'\n\n{b}武术训练{/b}\n所有女孩都得到了 +2 的个人防御。", effects = Effect("change", "defense", 2, scope = "brothel"))
+        NPC_ramias = NPC(name = "Ramias", cnname = "拉米阿斯", char=ramias, trainer_portrait = "side ramias", item_types=["Weapon"], trainer_description = "“{i}用尖尖的那头扎向他们！{/i}”\n\n{b}武术训练{/b}\n所有女孩都得到了 +2 的个人防御。", effects = Effect("change", "defense", 2, scope = "brothel"))
         NPC_gurigura = NPC(name = "Gurigura", char=gurigura, trainer_portrait = "side gurigura", item_types=["Toy", "Food", "Supplies"])
         NPC_katryn = NPC(name = "Katryn", char=katryn, trainer_portrait = "side katryn", item_types=["Ring", "Necklace"])
         NPC_giftgirl = NPC(name = "Gift Shop Girl", char=giftgirl, trainer_portrait = "side giftgirl", item_types=["Gift", "Misc"])
         NPC_twins = NPC(name = "Today", char=today, trainer_portrait = "side today", item_types=["Dress", "Accessory"])
-        NPC_stella = NPC(name="Stella", char=stella, trainer_portrait = "side stella", minion_type="stallion", trainer_description = "'{i}你薄弱的训练技术无法与血岛相比。{/i}'\n\n{b}精耕细作{/b}\n提高了所有农场性训练的效率。", effects = Effect("boost", "farm sexual training", 0.5, scope = "farm"))
-        NPC_goldie = NPC(name="Goldie", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "'{i}我在一本书上读到过……*脸红*{/i}'\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
+        NPC_stella = NPC(name="Stella", cnname = "斯特拉", char=stella, trainer_portrait = "side stella", minion_type="stallion", trainer_description = "“{i}你薄弱的训练技术无法与血岛相比。{/i}”\n\n{b}精耕细作{/b}\n提高了所有农场性训练的效率。", effects = Effect("boost", "farm sexual training", 0.5, scope = "farm"))
+        NPC_goldie = NPC(name="Goldie", cnname = "戈尔迪", char=goldie, trainer_portrait = "side goldie", minion_type="beast", trainer_description = "“{i}我在一本书上读到过……*脸红*{/i}”\n\n{b}技术{/b}\n女孩会更快地习惯服务和性行为。", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
         NPC_willow = NPC(name="Willow", char=willow, minion_type="monster")
         NPC_gina = NPC(name="Gina", char=gina, minion_type="machine")
-        NPC_bast = NPC(name="贝斯特", char=bast, trainer_portrait = "side bast", trainer_description = "'{i}金币只是可以在瓒城交易的众多资源中的一种。{/i}'\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
+        NPC_bast = NPC(name="Bast", cnname = "贝斯特", char=bast, trainer_portrait = "side bast", trainer_description = "“{i}金币只是可以在瓒城交易的众多资源中的一种。{/i}”\n\n{b}资源丰富{/b}\n你的青楼的部分收入被转换为随机资源。", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
         NPC_jobgirl = NPC(name="Scarlet", char=jobgirl)
         NPC_kuro = NPC(name="Kurohime", char=kuro)
         NPC_homura = NPC(name="Homura", char=homura)
-        NPC_taxgirl = NPC(name="公会女郎", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "'{i}只需支出龙虾和香槟酒……再给我一些。{/i}'\n\n{b}偷税漏税{/b}\n每晚为你的部分收入提供免税保护。", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
+        NPC_taxgirl = NPC(name="Taxgirl", cnname = "公会女郎", char=taxgirl, trainer_portrait = "side taxgirl", trainer_description = "“{i}只需支出龙虾和香槟酒……再给我一些。{/i}”\n\n{b}偷税漏税{/b}\n每晚为你的部分收入提供免税保护。", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
 
         # Chapter 2 Kunoichi
-        NPC_suzume = NPC(name="铃女", char=suzume, trainer_portrait = "side suzume", trainer_description = "“{i}昨天又发现了一个间谍……他试图刺杀我，真是好笑！咕咕咕……/i}”\n\n{b}夜间巡逻{/b}\n33%% 的几率阻止安全事件（不会重置威胁等级）。", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
+        NPC_suzume = NPC(name="Suzume", cnname = "铃女", char=suzume, trainer_portrait = "side suzume", trainer_description = "“{i}昨天又发现了一个间谍……他试图刺杀我，真是好笑！咕咕咕……/i}”\n\n{b}夜间巡逻{/b}\n33%% 的几率阻止安全事件（不会重置威胁等级）。", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
         NPC_narika = NPC(name="Narika", char=narika)
         NPC_mizuki = NPC(name="Mizuki", char=mizuki)
         NPC_haruka = NPC(name="Haruka", char=haruka)

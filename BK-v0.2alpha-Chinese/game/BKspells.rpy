@@ -19,7 +19,7 @@ label init_spells():
         # REGULAR SPELLS #
 
         spellbook = {
-                    "Warrior" : [
+                    "战士" : [
                             Spell('举重训练', 'strength.jpg', level=2, effects=[Effect("gain", "strength", 1)], description="力量就是一切."),
                             Spell('守护者', 'defender.webp', type="passive", level=3, effects=[Effect("special", "defender", 1)], description="你可以无处不在。"),
                             Spell('纪律', 'discipline.webp', type="discipline", level=4, cost=1, effects=[Effect("change", "train obedience target", -10, scope="brothel"), Effect("change", "job obedience target", -10, scope="brothel")], duration="turn", description="纪律的痛苦与失望的痛苦完全不同。"),
@@ -34,7 +34,7 @@ label init_spells():
                             Spell('闪电反射', 'speed.jpg', level=22, effects=[Effect("gain", "speed", 1)], description="如眼镜蛇一般敏捷。"),
                             Spell('青楼卫队', 'militia.webp', type="passive", level=24, effects=[Effect("boost", "defense", 2, scope="brothel")], description="男人的战场! 呃……或者叫“女人的战场”？"),
                             ],
-                    "Trader" : [
+                    "奸商" : [
                             Spell('地痞流氓', 'charisma.jpg', level=2, effects=[Effect("gain", "charisma", 1)], description="我一天来一回，你记住了吗？"),
                             Spell('讨价还价', 'haggler.jpg', type="passive", level=3, effects=[Effect("boost", "buy", -0.02, scales_with="charisma"), Effect("boost", "sell", 0.02, scales_with="charisma")], description="“算了，我换家看看……” 只为了更好的价格。"),
                             Spell('信任符咒', 'sign1.webp', type="sign", level=4, cost=1, effects=[Effect("boost", "love gains", 0.1, scope="brothel"), Effect("boost", "fear gains", 0.1, scope="brothel")], duration="turn", description="信任是靠赢得的。除非你懂魔法。"),
@@ -50,7 +50,7 @@ label init_spells():
                             Spell('名扬四海', 'fame.webp', type="passive", level=24, effects=[Effect("change", "customers", 1, scales_with="charisma", scope="brothel")], description="名声，让人掌控一切！"),
 
                             ],
-                    "Wizard" : [
+                    "法师" : [
                             Spell('好奇', 'spirit.webp', level=2, effects=[Effect("gain", "spirit", 1)], description="A beautiful mind. Pity about your face, though!"),
                             Spell('小光环:纯洁', 'aura1.webp', type="aura", level=2, cost=1, effects=[Effect("change", "beauty", 5, scope="brothel")], duration="turn", description="外表不能代表一切，但是，嘿，他们很有卖点。这种气质让你的女孩看起来更漂亮。"),
                             Spell('小光环:激发', 'aura4.webp', type="aura", level=2, cost=1, effects=[Effect("change", "body", 5, scope="brothel")], duration="turn", description="依靠摇动赚钱的人.现在有了魔力。这个光环增强了你的女孩的身材。"),

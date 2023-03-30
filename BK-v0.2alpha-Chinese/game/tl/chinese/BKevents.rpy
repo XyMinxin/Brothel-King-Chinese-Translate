@@ -202,7 +202,7 @@ translate chinese found_runaway_girl_dbca4bcc:
 translate chinese found_runaway_girl_3889dcce:
 
     # "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
-    "警卫们笑着把她推倒在青楼前的地上。她半裸着，身上散发着精液的味道。似乎他们在把她带回来之前强奸了她多次。"
+    "卫兵们笑着把她推倒在青楼前的地上。她半裸着，身上散发着精液的味道。似乎他们在把她带回来之前强奸了她多次。"
 
 # game/BKevents.rpy:909
 translate chinese found_runaway_girl_2ec9063b:
@@ -802,7 +802,7 @@ translate chinese visit_exchange_075e4666:
 translate chinese visit_exchange_26689f83:
 
     # bast "You do not have [source_nb] [source] to buy this."
-    bast "您没有[source_nb]个[resource_cnname[source]]来购买这个。"
+    bast "您没有[source_nb]个[source]来购买这个。"
 
 # game/BKevents.rpy:2012
 translate chinese wood_intro_49655f52:
@@ -1384,7 +1384,7 @@ translate chinese ore_intro_c3694090:
 translate chinese ore_intro_1e57b69d:
 
     # "Miner" "The guards here, they're extra lazy. They don't bother to check the perimeter outside of the main gate, ever."
-    "矿工" "这里的警卫特别懒。他们从来没有检查过大门外面的周长。"
+    "矿工" "这里的卫兵特别懒。他们从来没有检查过大门外面的周长。"
 
 # game/BKevents.rpy:2273
 translate chinese ore_intro_c96f2868:

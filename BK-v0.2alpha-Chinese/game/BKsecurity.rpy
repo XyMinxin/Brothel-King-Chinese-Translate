@@ -333,7 +333,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             loot = enemies * 150 + war_machines * 600
 
-            if enemy_general.has_trait("Warrior"):
+            if enemy_general.has_trait("战士"):
                 enemy_g = "佣兵队长"
             elif enemy_general.has_trait("Caster"):
                 enemy_g = "自由女巫"
@@ -409,7 +409,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                         $ allies_factor += 0.1
 
 
-            "Challenge their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
+            "Challenge their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
                 $ renpy.block_rollback()
                 play sound s_sheath
                 you "Leave their general to me... I will end this!" with vpunch
@@ -535,7 +535,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             play sound s_clash
 
-            if enemy_general.has_trait("Warrior"):
+            if enemy_general.has_trait("战士"):
                 "The mercenary draws out her weapon and rises to meet you."
                 call challenge("fight", game.chapter + 1) from _call_challenge_38
                 $ result = _return
@@ -776,7 +776,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             $ narrator("你下达了最后的命令，帮其中一个女孩整了整皮背心，还提醒了一下另一个女孩的站位。她们是仆人，不是战士，但必须这样做。" + event_color["good"] % "所有女孩+1个人防御。")
 
 
-                "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
+                "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
                     $ renpy.block_rollback()
                     play sound s_sheath
                     "You leave your girls to fend for themselves and exit the brothel from a side door, determined to take out the enemy leader."
@@ -846,7 +846,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             if r == "duel":
                 "Ignoring the fighting, you sneak past their front line, spotting [enemy_general.fullname], their general, giving orders from the back. {nw}"
-                if enemy_general.has_trait("Warrior"):
+                if enemy_general.has_trait("战士"):
                     play sound s_sheath
                     extend "Jumping out of hiding, you charge the enemy general with a war cry."
 
@@ -1285,7 +1285,7 @@ init -3 python:
 
             _min, _max = alert_limits2[game.chapter]
 
-            sec_text = "一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命！"
+            sec_text = "一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "女忍者试图危及" + girl.fullname + "的性命！"
 
             renpy.play(s_sheath, "sound")
             renpy.pause(0.5)
@@ -1298,17 +1298,17 @@ init -3 python:
                 log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_pic = "events/" + rand_choice(security_pics["sword defense"])
                     sec_sound = s_clash
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_pic = "events/" + rand_choice(security_pics["magic defense"])
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "奸商":
                     sec_pic = "events/" + rand_choice(security_pics["dragon defense"])
                     sec_sound = s_roar
 
-                sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "忍者试图危及" + girl.fullname + "的性命！"
+                sec_text = ("一名" + rand_choice(["声名狼藉的", "鬼鬼祟祟的", "技艺娴熟的", "肆无忌惮的", "不可思议的", "暴戾的", "恶毒的"]) + "女忍者试图危及" + girl.fullname + "的性命！"
                            + event_color["good"] % rand_choice(MC.filter_say(["wa: 幸运的是，你就在她身边，及时带她躲过了袭击，用眼镜蛇一样的反应及时拔出你的剑。", "wi: 幸运的是，你在最后一秒用魔法盾挡住了攻击。", "tr: 幸运的是，你的宠物龙卓耿嗅到了这个混蛋的味道，在他有机会攻击之前，它咆哮着冲向他。"])) + " 刺客逃走了。")
 
                 log.add_report("{color=[c_green]}安全警报！没有人受伤。{/color}")
@@ -1386,7 +1386,7 @@ init -3 python:
                                         ("Constitution", "在生死之间斗争了几个小时后，她的高烧最终消退，看来她会活下来。但是她仍然很虚弱。\n" + event_color["bad"] % "她受伤需要休息%s天，她的体格永久性地减少了%s。"),
                                         ("Obedience", "当她醒来的时候，她看起来很野性，几乎像一只野生动物。当你走近她时，差点被她咬到，你希望她的情况会随着时间的推移逐渐减弱。\n" + event_color["bad"] % "她受伤需要休息%s天，她的服从永久性地减少了%s。"),
                                         ("Sensistivity", "当她睁开眼睛时，她轻声说:“主人，我……我的感觉不到我的四肢……”。 她整晚都在与瘫痪作斗争，如果没有希尔的高级炼金术，她可能会变成残废。当她终于能站起来的时候，她仍然感觉麻木。" + event_color["bad"] % "她受伤需要休息%s天，她的敏感永久性地减少了%s。"),
-                                        ("libido+", "当她醒来时，她看起来有点发烧，眼睛里有一种奇怪的神情。“主人……过来……”她低声说。当你靠近她的床时，她抓住你的肉棒，开始爱抚它。“主人的肉棒……啊……”她呻吟道。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，神奇的是" + event_color["good"] % "她的性欲反而永久性地增长了%s。" + " 你在想你是不是应该感谢一下那位神秘的爱之忍者。"),
+                                        ("libido+", "当她醒来时，她看起来有点发烧，眼睛里有一种奇怪的神情。“主人……过来……”她低声说。当你靠近她的床时，她抓住你的肉棒，开始爱抚它。“主人的肉棒……啊……”她呻吟道。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，神奇的是" + event_color["good"] % "她的性欲反而永久性地增长了%s。" + " 你在想你是不是应该感谢一下那位神秘的爱之女忍者。"),
                                         ("personality", "当她终于起床时，她看起来完全变了个人。“你是谁？”。她好像撞到了头什么的。\n" + event_color["average"] % "她受伤需要休息%s天，她的{b}品味{/b}发生了改变。她的{b}喜好{/b}和{b}憎恶{/b}已经重置。"),
                                         ("naked", "过了一会儿，她睁开眼睛，慢慢地恢复了知觉。 突然，她尖叫了一声，把床单扔到了一边。 “不！它灼伤了我的皮肤！”,她喊道。看来她对任何布料都有恐惧症。\n" + event_color["bad"] % "她受伤需要休息%s天" + "，而且" + event_color["good"] % "%s。" + "你估计情况有可能会更糟。"),
                                         ])
@@ -1467,11 +1467,11 @@ init -3 python:
                 log.add_report("{color=[c_green]}安全警报！暴乱被制止。{/color}")
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_sound = s_punch
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "奸商":
                     sec_sound = s_crowd_cheer
 
                 sec_text += event_color["good"] % rand_choice(MC.filter_say(["wa: \n幸运的是，你就在附近，很快就用拳头让暴乱者清醒了。其他人很快就安静下来。",

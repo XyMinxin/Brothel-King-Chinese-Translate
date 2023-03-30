@@ -453,7 +453,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
             text1 = "第三章"
 
-            text2 = "正在进行的工作"
+            text2 = "未完待续"
 
             lbl = "c3_homura_okiya3"
 
@@ -461,25 +461,25 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
             text1 = "第四章"
 
-            text2 = "正在进行的工作"
+            text2 = "未完待续"
 
         elif game.chapter == 5:
 
             text1 = "第五章"
 
-            text2 = "正在进行的工作"
+            text2 = "未完待续"
 
         elif game.chapter == 6:
 
             text1 = "第六章"
 
-            text2 = "正在进行的工作"
+            text2 = "未完待续"
 
         else:
 
             text1 = "后记"
 
-            text2 = "正在进行的工作"
+            text2 = "未完待续"
 
     call hide_everything() from _call_hide_everything_38
     scene black with fade
@@ -6387,12 +6387,12 @@ label tax_intro_menu():
 
             taxgirl "Those are all hypotheticals, of course. We wouldn't know anything about that. *smirk*"
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
                 you "Hmpf. I've seen worse in the war."
 
                 taxgirl "You may be a good fighter, but eventually you'll let your guard down... Everyone has to sleep..."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
                 you "Oh really? I've got a range of spells I could use to prevent that..."
 
                 taxgirl "Did I mention we have access to some of the best sorcerers in the city? I'm sure you'd hate it if a zombified whore accidentally bit off your manhood..."
@@ -6582,7 +6582,7 @@ label tax_relationship_test():
 
         taxgirl "You see, I wasn't born with the gift."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Yes, I could feel it in your aura. You're a conduct, aren't you?"
 
             taxgirl "Yes."

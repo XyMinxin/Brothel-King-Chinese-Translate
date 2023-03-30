@@ -3208,13 +3208,13 @@ translate chinese farm_meet_gizel_b56e511d:
 translate chinese farm_meet_gizel_06b2e3ff:
 
     # "Hearing a commotion behind you, you move aside to let a guard patrol move through the market crowd."
-    "听到身后一阵骚动，你走到一边，让一名巡逻警卫穿过市场人群。"
+    "听到身后一阵骚动，你走到一边，让一名巡逻卫兵穿过市场人群。"
 
 # game/BKstory_events.rpy:1630
 translate chinese farm_meet_gizel_74225698:
 
     # "As the armed guards pass by, you notice they are escorting a heavily armored knight, sporting the Arios crest on his tunic. A templar."
-    "当武装警卫经过时，你会注意到他们正在护送一位全副武装的骑士，他的外衣上戴着阿里奥斯的徽章。圣堂武士。"
+    "当武装卫兵经过时，你会注意到他们正在护送一位全副武装的骑士，他的外衣上戴着阿里奥斯的徽章。圣堂武士。"
 
 # game/BKstory_events.rpy:1637
 translate chinese farm_meet_gizel_ed24da76:
@@ -3280,7 +3280,7 @@ translate chinese farm_meet_gizel2_39052d1e:
 translate chinese farm_meet_gizel2_6dc4ba03:
 
     # you "I guess the guard patrols are too scared of the smell and diseases to come down here..."
-    you "我猜警卫巡逻队太害怕气味和疾病了，不敢到这里来……"
+    you "我猜卫兵巡逻队太害怕气味和疾病了，不敢到这里来……"
 
 # game/BKstory_events.rpy:1674
 translate chinese farm_meet_gizel2_51473fd3:
@@ -5044,7 +5044,7 @@ translate chinese gizel_rape_54e734ce:
 translate chinese gizel_rape_2f933a1e:
 
     # "Seeing the girl with cum overspilling out of her mouth and even nostrils, the other guards aren't long behind their boss."
-    "看到这个女孩嘴里甚至鼻孔里都流出来了精液，其他警卫很快就跟上了他们老大的节奏。"
+    "看到这个女孩嘴里甚至鼻孔里都流出来了精液，其他卫兵很快就跟上了他们老大的节奏。"
 
 # game/BKstory_events.rpy:2610
 translate chinese gizel_rape_5b69f711:
@@ -14296,7 +14296,7 @@ translate chinese willow_fight_e73748b9:
 translate chinese willow_fight_9273cb1b:
 
     # "Willow frees herself from the cut off tentacles, throwing out the one in her panties with disgust. She regains her footing and joins you."
-    "薇罗把自己从被切断的触手中解放出来，厌恶地扔掉了她内裤里的那根。她重新站稳脚跟，加入了你。"
+    "薇洛把自己从被切断的触手中解放出来，厌恶地扔掉了她内裤里的那根。她重新站稳脚跟，加入了你。"
 
 # game/BKstory_events.rpy:7294
 translate chinese willow_fight_c5f3a8b3:
@@ -14704,7 +14704,7 @@ translate chinese willow_fight_c4d8fd27:
 translate chinese willow_fight_e48e19cc:
 
     # "Willow's eyes roll backwards as she takes the tentacle deeper and deeper."
-    "薇罗的眼睛向后滚动着，她把触手抓得越来越深。"
+    "薇洛的眼睛向后滚动着，她把触手抓得越来越深。"
 
 # game/BKstory_events.rpy:7522
 translate chinese willow_fight_f00d0ca5:
@@ -14758,7 +14758,7 @@ translate chinese willow_fight_4ec61964:
 translate chinese willow_fight_7fc5c3f0:
 
     # "Willow endures as best she can, and something tells you it's not be the first time she ends up on the losing side of a fight with a sleazy monster."
-    "薇罗尽其所能地忍受着，而且有些事情告诉你，这不是她第一次在与一个肮脏的怪物的战斗中失败。"
+    "薇洛尽其所能地忍受着，而且有些事情告诉你，这不是她第一次在与一个肮脏的怪物的战斗中失败。"
 
 # game/BKstory_events.rpy:7550
 translate chinese willow_fight_7c91c5d1:
@@ -15496,7 +15496,7 @@ translate chinese willow_recovery_2a3009b4:
 translate chinese willow_recovery_5a3a0ce4:
 
     # "Willow grabs you and shakes you."
-    "薇罗抓住你，摇晃着你。"
+    "薇洛抓住你，摇晃着你。"
 
 # game/BKstory_events.rpy:7854
 translate chinese willow_recovery_2f2d06dc:
@@ -15592,7 +15592,7 @@ translate chinese willow_recovery_dae0ec55_3:
 translate chinese willow_recovery_d1bf1be7:
 
     # you "W-Willow?"
-    you "薇罗吗?"
+    you "薇洛吗?"
 
 # game/BKstory_events.rpy:7903
 translate chinese willow_recovery_9f3acf8c:
@@ -15706,7 +15706,7 @@ translate chinese willow_recovery_6b9e8461:
 translate chinese willow_recovery_0b0f176d:
 
     # "Erupting like a volcano, your cock shoots unnatural amounts of cum all over the bedroom and a surprised Willow."
-    "像火山一样喷发，你的鸡鸡在卧室里射出大量的精液，和一脸惊讶的薇罗。"
+    "像火山一样喷发，你的鸡鸡在卧室里射出大量的精液，和一脸惊讶的薇洛。"
 
 # game/BKstory_events.rpy:7951
 translate chinese willow_recovery_d3dacde8_1:
@@ -15760,7 +15760,7 @@ translate chinese willow_recovery_ba6d0700:
 translate chinese willow_recovery_c1180320:
 
     # "Willow drags you to the private bath, where she proceeds to clean up."
-    "薇罗把你拖到私人浴室，在那里她开始清理。"
+    "薇洛把你拖到私人浴室，在那里她开始清理。"
 
 # game/BKstory_events.rpy:7976
 translate chinese willow_recovery_9a85d50a:
@@ -15850,7 +15850,7 @@ translate chinese willow_recovery_623dc5db:
 translate chinese willow_recovery_e0cbd31a:
 
     # "You open your eyes, and see Willow."
-    "你睁开眼睛，看到了薇罗。"
+    "你睁开眼睛，看到了薇洛。"
 
 # game/BKstory_events.rpy:8021
 translate chinese willow_recovery_7553cda1:
@@ -16054,7 +16054,7 @@ translate chinese willow_relative_ab07b018:
 translate chinese willow_relative_fc8e6119:
 
     # you "WHERE IS WILLOW'S RELATIVE! SHOW YOURSELF!"
-    you "薇罗的亲戚在哪里?展示你自己!"
+    you "薇洛的亲戚在哪里?展示你自己!"
 
 # game/BKstory_events.rpy:8112
 translate chinese willow_relative_ae93959d:
@@ -24016,7 +24016,7 @@ translate chinese shalia1_a7126720:
 translate chinese shalia1_454e0545:
 
     # shalia "Oh, that."
-    shalia "哦,,。"
+    shalia "哦。"
 
 # game/BKstory_events.rpy:12366
 translate chinese shalia1_b1853c20:
@@ -26212,13 +26212,13 @@ translate chinese kosmo_returns2_2e60154e:
 translate chinese kosmo_returns2_63f45442:
 
     # kosmo "Have you heard about the kunoichi clan? They're a bunch of female ninjas."
-    kosmo "你听说过忍者吗?他们是一群忍者。"
+    kosmo "你听说过女忍者吗?他们是一群女忍者。"
 
 # game/BKstory_events.rpy:13521
 translate chinese kosmo_returns2_af63ec79:
 
     # kosmo "This one tried to take my life, can you believe it? But my security is top notch. I have 20 guards in my bedroom alone."
-    kosmo "这家伙想要夺走我的生命，你能相信吗?但我的安全是一流的。我一个人的卧室里就有20个警卫。"
+    kosmo "这家伙想要夺走我的生命，你能相信吗?但我的安全是一流的。我一个人的卧室里就有20个卫兵。"
 
 # game/BKstory_events.rpy:13523
 translate chinese kosmo_returns2_e9808810:
@@ -26230,7 +26230,7 @@ translate chinese kosmo_returns2_e9808810:
 translate chinese kosmo_returns2_b9bf4e4b:
 
     # kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
-    kosmo angry "什么？闭嘴！总有一天，我会派忍者追杀你！GRRRR..." with vpunch
+    kosmo angry "什么？闭嘴！总有一天，我会派女忍者追杀你！GRRRR..." with vpunch
 
 # game/BKstory_events.rpy:13527
 translate chinese kosmo_returns2_dd72abee:
@@ -26242,7 +26242,7 @@ translate chinese kosmo_returns2_dd72abee:
 translate chinese kosmo_returns2_525463c7:
 
     # kosmo "They captured the ninja bitch, and I've been keeping her high on spice ever since, just to be on the safe side..."
-    kosmo "他们抓住了那个忍者婊子，从那以后我就一直让她很兴奋，为了安全起见……"
+    kosmo "他们抓住了那个女忍者婊子，从那以后我就一直让她很兴奋，为了安全起见……"
 
 # game/BKstory_events.rpy:13531
 translate chinese kosmo_returns2_a59343ea:
@@ -26944,7 +26944,7 @@ translate chinese kosmo_returns2_fe799c0a:
 translate chinese kosmo_returns2_8d88b317:
 
     # you "Oh, that. Don't worry, I'll put it out."
-    you "哦,,。别担心，我会把它扑灭的。"
+    you "哦。别担心，我会把它扑灭的。"
 
 # game/BKstory_events.rpy:13821
 translate chinese kosmo_returns2_27275d7b:
@@ -29914,7 +29914,7 @@ translate chinese meet_carpenter_7b0acc20:
 translate chinese meet_carpenter_7f687ef3:
 
     # carpenter "I won't be part of this! It's bad enough that the guard is harassing everyone and that justice is in the hands of corrupt puppets..."
-    carpenter "我不会参与的!警卫骚扰每一个人，正义掌握在腐败的傀儡手中，这已经够糟糕的了……"
+    carpenter "我不会参与的!卫兵骚扰每一个人，正义掌握在腐败的傀儡手中，这已经够糟糕的了……"
 
 # game/BKstory_events.rpy:15366
 translate chinese meet_carpenter_36597698:

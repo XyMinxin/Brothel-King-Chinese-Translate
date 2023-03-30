@@ -3976,10 +3976,10 @@ label slave_story3(girl):
 
         girl.char "We decided to go together on a pilgrimage to visit a famous shrine of Arios. It was said to bring good luck..."
 
-        if MC.god == "Arios":
+        if MC.god == "阿里奥斯":
             you "It's the truth."
 
-        elif MC.god == "Shalia":
+        elif MC.god == "莎莉娅":
             you "You shouldn't need to go on a trip to feel close to your god..."
 
         else:
@@ -5129,7 +5129,7 @@ label slave_story7(girl):
 
         "Looking back at the wall above [girl.name]'s bed, you notice a blank space and the holes left by nails, where the symbol used to hang."
 
-        if MC.god == "Arios":
+        if MC.god == "阿里奥斯":
             you "What kind of blasphemy is that??? Did you throw away your Arios sign?"
             play sound s_surprise
             girl.char "Oh, I'm sorry, Master, I meant no disrespect!"
@@ -5390,7 +5390,7 @@ label slave_story7(girl):
 
         you "Wow."
 
-        if MC.god == "Arios":
+        if MC.god == "阿里奥斯":
             you "I am so appalled that you suffered so much at the hands of Arios worshippers... Please know that we are not all like that."
 
             girl.char "I know, Master. Some Arios people showed me kindness, including you, in your way..."
@@ -5477,7 +5477,7 @@ label slave_story8(girl):
 
         girl.char "And the fire runes should flow from East to West..."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             "You recognize crude runes among the various symbols she is drawing. It is amateurishly done, however."
         else:
             "It seems like some magical gibberish."
@@ -5510,7 +5510,7 @@ label slave_story8(girl):
 
         girl.char "Do you know a lot about witches, Master?"
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Well, I studied alongside a few in Karkyr... They're usually pretty haughty and ill-tempered."
 
             you "But they're wild in bed, so there's that."
@@ -6284,7 +6284,7 @@ label slave_story_help(girl, act):
         "Let her go pray for the unfortunate soul (1 day, 500 gold donation)" if act == "praying":
             you "I understand how you feel."
 
-            if MC.god == "Arios":
+            if MC.god == "阿里奥斯":
                 you "Arios will have mercy on this poor soul. Go to the Cathedra, pray for him, and present the priestesses with this modest gift."
             else:
                 you "I don't worship Arios, but if it can give you closure, you have my blessing. Why don't you go tomorrow?"

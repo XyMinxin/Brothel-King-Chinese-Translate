@@ -389,8 +389,8 @@ init -2 python:
             self.neutral = 0
             self.evil = 0
 
-            self.playerclass = "Warrior"
-            self.god = "Arios"
+            self.playerclass = "战士"
+            self.god = "阿里奥斯"
             self.reset_stats()
             self.load_pics()
 
@@ -429,31 +429,31 @@ init -2 python:
             self.load_pics()
 
         def reset_stats(self):
-            if self.playerclass == "Warrior":
+            if self.playerclass == "战士":
 
                 self.strength = 2
                 self.spirit = 1
                 self.charisma = 0
                 self.speed = 3
 
-            elif self.playerclass == "Wizard":
+            elif self.playerclass == "法师":
 
                 self.strength = 0
                 self.spirit = 2
                 self.charisma = 1
                 self.speed = 3
 
-            elif self.playerclass == "Trader":
+            elif self.playerclass == "奸商":
 
                 self.strength = 1
                 self.spirit = 0
                 self.charisma = 2
                 self.speed = 3
 
-            if self.god == "Arios":
+            if self.god == "阿里奥斯":
                 self.strength += 1
 
-            elif self.god == "Shalia":
+            elif self.god == "莎莉娅":
                 self.spirit += 1
 
             else:
@@ -499,7 +499,7 @@ init -2 python:
 
             # Choosing the best match
 
-            god_dict = {"Arios" : "light", "Shalia" : "dark", None : "neutral"}
+            god_dict = {"阿里奥斯" : "light", "莎莉娅" : "dark", None : "neutral"}
 
             idx = 0
 
@@ -880,7 +880,7 @@ init -2 python:
             if (self.ready_to_level() or forced) and self.level < 25:
                 self.level += 1
                 self.skill_points += 1
-                test_achievements(["Warrior", "Wizard", "Trader"])
+                test_achievements(["战士", "法师", "奸商"])
                 self.update_spells()
                 renpy.play(s_spell, "sound")
                 return True
@@ -1305,15 +1305,15 @@ init -2 python:
             for it in sentences:
 
                 if it.startswith("wr: ") or it.startswith("wa: "):
-                    if self.playerclass == "Warrior":
+                    if self.playerclass == "战士":
                         d_list.append(it[4:])
 
                 elif it.startswith("wz: ") or it.startswith("wi: "):
-                    if self.playerclass == "Wizard":
+                    if self.playerclass == "法师":
                         d_list.append(it[4:])
 
                 elif it.startswith("tr: "):
-                    if self.playerclass == "Trader":
+                    if self.playerclass == "奸商":
                         d_list.append(it[4:])
 
                 elif it.startswith("gd: "):
@@ -1329,11 +1329,11 @@ init -2 python:
                         d_list.append(it[4:])
 
                 elif it.startswith("ar: "):
-                    if self.god == "Arios":
+                    if self.god == "阿里奥斯":
                         d_list.append(it[4:])
 
                 elif it.startswith("sh: "):
-                    if self.god == "Shalia":
+                    if self.god == "莎莉娅":
                         d_list.append(it[4:])
 
                 elif it.startswith("ng: "):
@@ -1353,8 +1353,9 @@ init -2 python:
 
         """This class is for NPCs: story NPCs, shopkeeper and slave master, etc."""
 
-        def __init__(self, name = "", char=None, defense=0, trainer_portrait = None, trainer_description = None, effects = None, item_types = "all", minion_type = None):
+        def __init__(self, name = "", cnname = "", char=None, defense=0, trainer_portrait = None, trainer_description = None, effects = None, item_types = "all", minion_type = None):
             self.name = name
+            self.cnname = cnname
             self.girls = []
             self.items = []
             self.love = 0
@@ -1386,7 +1387,7 @@ init -2 python:
             if self not in MC.trainers:
                 MC.trainers.append(self)
 
-                unlock_achievement("trainer " + translate_cn(self.name.lower(), trainer_name_dict))
+                unlock_achievement("trainer " + self.name.lower())
 
 
         def can_upgrade(self):
@@ -7063,7 +7064,7 @@ init -2 python:
             elif self.target == "minions":
                 r = farm.count_minions()
 
-            elif self.target in ("Warrior", "Wizard", "Trader"):
+            elif self.target in ("战士", "法师", "奸商"):
                 if MC.playerclass == self.target:
                     r = MC.level
 

@@ -10,8 +10,8 @@ label intro:
 
     $ persistent.seen_intro = True
 
-    $ text1 = Text(('很久很久以前'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
-    $ text2 = Text(('在一个遥远的王国中'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
+    $ text1 = Text(('很久很久以前'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.TTF")
+    $ text2 = Text(('在一个遥远的王国中'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.TTF")
 
     show expression text1
     with easeinleft
@@ -311,7 +311,7 @@ label resume_intro:
         you "I am..."
 
         "A warrior":
-            $ MC.set_playerclass("Warrior")
+            $ MC.set_playerclass("战士")
             $ renpy.block_rollback()
 
             you "I am a fighter from the Northern armies."
@@ -340,7 +340,7 @@ label resume_intro:
 
 
         "A wizard":
-            $ MC.set_playerclass("Wizard")
+            $ MC.set_playerclass("法师")
             $ renpy.block_rollback()
 
             you "I am a court mage from the Westmarch Principalities."
@@ -381,7 +381,7 @@ label resume_intro:
             jump resume_intro2
 
         "A rogue trader":
-            $ MC.set_playerclass("Trader")
+            $ MC.set_playerclass("奸商")
             $ renpy.block_rollback()
 
             you "I am a proud member of the Xeros Traveling Merchant Guild."
@@ -428,13 +428,13 @@ label resume_intro2:
         you "Me?"
 
         "I am a servant of Arios, god of Light and Strength":
-            $ MC.set_god("Arios")
+            $ MC.set_god("阿里奥斯")
             $ MC.good += 1
             $ renpy.block_rollback()
             guard "That is good, brother. I hope to see you often at the Cathedra to pray."
 
         "I worship Shalia, goddess of Shadows and Cunning":
-            $ MC.set_god("Shalia")
+            $ MC.set_god("莎莉娅")
             $ MC.evil += 1
             $ renpy.block_rollback()
             "He spits on the ground."
@@ -641,13 +641,13 @@ label resume_intro3:
 
     thug1 "All right, then... You just dug your own grave, you nosy bastard!"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "Sill, fetch my swords."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "Sill, hand me the staff."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "奸商":
         you "Sill, you know what to do."
 
     sill "Yes Master!"
@@ -664,7 +664,7 @@ label resume_intro3:
     thug2 "You..."
     thug1 "DIE!"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         you "Haa!"
 
@@ -697,7 +697,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         you "Shazam!"
 
@@ -726,7 +726,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "Trader": ##TO DO : have Drogon hover around
+    elif MC.playerclass == "奸商": ##TO DO : have Drogon hover around
 
         play sound "wings.mp3"
 
@@ -798,7 +798,7 @@ label resume_intro3:
 
     kuro "Thank you, my champion, you fought bravely."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "奸商":
 
         show sill drogon at left with dissolve
 
@@ -958,13 +958,13 @@ label resume_intro3:
 
     you "Hmm."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "Power... hangs at the tip of a sword."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         you "Power resides in magic."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         you "Money is power."
 
     gio "Haha, it is true to some extent, my friend."
@@ -1964,7 +1964,7 @@ label districts_first_time:
     gio "So, while I didn't succeed in making the brothel business take off, I'm sure you will find
          a way to turn a profit. My instinct tells me so..."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "奸商":
         you "Well, I will have to rely on my legendary business acumen..."
 
     else:
@@ -2030,7 +2030,7 @@ label brothel_first_time:
 
     you "..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         you "I'll rip your head off..."
 
@@ -2071,15 +2071,15 @@ label brothel_first_time:
 
     you "*hardcore evil stare*"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         "Gio looks nervous as you start fiddling with your scabbard."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         "Gio looks nervous as you start muttering a curse."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
 
         "Gio looks nervous as you start eyeing your pet dragon."
 

@@ -4672,7 +4672,7 @@ translate chinese slave_story5_87763c13:
 translate chinese slave_story5_e4722677:
 
     # girl.char "But we had no time to celebrate, anyway... Because as we were contemplating the spoils of our crime, a guard patrol showed up."
-    girl.char "但无论如何，我们没有时间庆祝……因为正当我们考虑我们的罪行时，一个警卫巡逻队出现了。"
+    girl.char "但无论如何，我们没有时间庆祝……因为正当我们考虑我们的罪行时，一个卫兵巡逻队出现了。"
 
 # game/BKinteractions.rpy:4583
 translate chinese slave_story5_3e26844e:
@@ -4744,7 +4744,7 @@ translate chinese slave_story5_44036fd9:
 translate chinese slave_story5_8855dd4c:
 
     # you "The guard patrol arrested you and your [girl.story_guardian]?"
-    you "警卫巡逻队逮捕了你和你的[girl.story_guardian]?"
+    you "卫兵巡逻队逮捕了你和你的[girl.story_guardian]?"
 
 # game/BKinteractions.rpy:4614
 translate chinese slave_story5_152df13e:
@@ -4822,7 +4822,7 @@ translate chinese slave_story5_db7acbe3:
 translate chinese slave_story5_2e8299f1:
 
     # girl.char "The worst was the guard sergeant. He had taken a shine to me after arresting us... So whenever he came by the tower, he made it a point to visit my cell."
-    girl.char "最糟糕的是警卫中士。他在逮捕我们之后看上了我……所以无论他什么时候经过那座塔，他都一定要来看我的牢房。"
+    girl.char "最糟糕的是卫兵中士。他在逮捕我们之后看上了我……所以无论他什么时候经过那座塔，他都一定要来看我的牢房。"
 
 # game/BKinteractions.rpy:4641
 translate chinese slave_story5_fbca49cf:
@@ -4894,7 +4894,7 @@ translate chinese slave_story5_3140f824:
 translate chinese slave_story5_cb7664ee:
 
     # girl.char "At some point, the jail became overcrowded at the guard tower, so they decided to move the least dangerous prisoners out to the prison quarter in Zan."
-    girl.char "在某个时候，监狱里的警卫塔人满为患，所以他们决定把最不危险的囚犯转移到赞的监狱区。"
+    girl.char "在某个时候，监狱里的卫兵塔人满为患，所以他们决定把最不危险的囚犯转移到赞的监狱区。"
 
 # game/BKinteractions.rpy:4667
 translate chinese slave_story5_d307395d:
@@ -4924,7 +4924,7 @@ translate chinese slave_story5_13367c35:
 translate chinese slave_story5_e9b8d127:
 
     # girl.char "No... The last thing I needed was a bunch of angry guards running after me..."
-    girl.char "不…我最不需要的就是一群愤怒的警卫追着我跑……"
+    girl.char "不…我最不需要的就是一群愤怒的卫兵追着我跑……"
 
 # game/BKinteractions.rpy:4678
 translate chinese slave_story5_3cd34ed9:
@@ -5032,19 +5032,19 @@ translate chinese slave_story5_a577ad0e:
 translate chinese slave_story5_ee58330a:
 
     # girl.char "The fucking guard sergeant. I heard he quit the guard and set up shop here, in Zan, enjoying the money from the jewels he stole. I can't forget the nightmare he put me through. I want someone to make his life a nightmare..."
-    girl.char "那个该死的警卫中士。我听说他辞掉警卫工作，在赞开了家店，享受着他从珠宝中偷来的钱。我不能忘记他让我经历的噩梦。我希望有人把他的生活变成一场噩梦……"
+    girl.char "那个该死的卫兵中士。我听说他辞掉卫兵工作，在赞开了家店，享受着他从珠宝中偷来的钱。我不能忘记他让我经历的噩梦。我希望有人把他的生活变成一场噩梦……"
 
 # game/BKinteractions.rpy:4721
 translate chinese slave_story5_62d914a8:
 
     # girl.char "The fucking guard sergeant. He's been enjoying the money from the jewels he stole from us, I'm sure, and I heard he took up business and joined the Zan merchant's guild... The thought of that sucker rolling in gold over the death of my [girl.story_guardian] is driving me crazy..."
-    girl.char "那个该死的警卫中士。他一直在享受他从我们这里偷来的珠宝带来的钱，我敢肯定，而且我听说他开始做生意，加入了赞商人协会……一想到我的[girl.story_guardian]的死和那个笨蛋暴富，就快把我逼疯了……"
+    girl.char "那个该死的卫兵中士。他一直在享受他从我们这里偷来的珠宝带来的钱，我敢肯定，而且我听说他开始做生意，加入了赞商人协会……一想到我的[girl.story_guardian]的死和那个笨蛋暴富，就快把我逼疯了……"
 
 # game/BKinteractions.rpy:4726
 translate chinese slave_story5_4c0282fd:
 
     # girl.char "I... I kind of miss that stupid guard sergeant. He was forcing himself on me, abusing me, fucking my throat... But deep down... You know... I loved it."
-    girl.char "我。。。我有点想念那个愚蠢的警卫警官。他强迫自己靠近我，虐待我，操我的喉咙……但在内心深处……你知道的…我很喜欢。"
+    girl.char "我。。。我有点想念那个愚蠢的卫兵警官。他强迫自己靠近我，虐待我，操我的喉咙……但在内心深处……你知道的…我很喜欢。"
 
 # game/BKinteractions.rpy:4727
 translate chinese slave_story5_284016ad:
@@ -5914,7 +5914,7 @@ translate chinese slave_story6_67460077:
 translate chinese slave_story6_c8c08a80:
 
     # girl.char "The guards ganged up on me, and violated my every hole. I had no choice but to endure it, until morning came."
-    girl.char "警卫们联合起来对付我，把我的每一个洞都侵犯了。我别无选择，只好忍受着，直到天亮。"
+    girl.char "卫兵们联合起来对付我，把我的每一个洞都侵犯了。我别无选择，只好忍受着，直到天亮。"
 
 # game/BKinteractions.rpy:4992
 translate chinese slave_story6_766a511f:
@@ -6550,7 +6550,7 @@ translate chinese slave_story7_0a0f4417:
 translate chinese slave_story7_23a9a795:
 
     # girl.char "A few days later, me and my [girl.story_guardian] were taken in by the guards, for 'vagrancy'."
-    girl.char "几天后，我和我的[girl.story_guardian]由于“流浪”，他被警卫带走了。"
+    girl.char "几天后，我和我的[girl.story_guardian]由于“流浪”，他被卫兵带走了。"
 
 # game/BKinteractions.rpy:5228
 translate chinese slave_story7_33809d61:

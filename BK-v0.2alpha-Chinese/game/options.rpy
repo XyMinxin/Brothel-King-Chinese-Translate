@@ -23,9 +23,9 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Brothel King"
-    config.version = "0.2 v220711"
+    config.version = "0.2 v220711 / CN v230330"
 
-    config.language = None # As recommended by DougTheC
+    config.language = "chinese" # As recommended by DougTheC
 
     #########################################
     # Themes

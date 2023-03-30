@@ -36,24 +36,24 @@ define maid = DynamicCharacter("maid_name", color = c_softpurple, image = "maid"
 
 
 ## GIO ##
-define gio = Character("Gio", color = c_orange, image = "gio", window_left_padding=int(config.screen_height*0.205))
+define gio = Character("吉欧", color = c_orange, image = "gio", window_left_padding=int(config.screen_height*0.205))
 
 
 ## MISC ##
-define guard = Character("Guard", color= c_yellow, image = "guard", window_left_padding=int(config.screen_height*0.205))
-define thug1 = Character("Thug", color= c_lightgreen, image = "thug1", window_left_padding=int(config.screen_height*0.205))
-define thug2 = Character("Thug", color= c_red, image = "thug2", window_left_padding=int(config.screen_height*0.205))
-define thug3 = Character("Thug", color= c_lightred, image = "thug", window_left_padding=int(config.screen_height*0.205))
-define drogon = Character("Drogon", color= c_darkred, image = "drogon", window_left_padding=int(config.screen_height*0.205))
-define security = Character("Security", color= c_white, image = "security", window_left_padding=int(config.screen_height*0.205))
-define security_breach = Character("Security", color= c_red, image = "security_breach", window_left_padding=int(config.screen_height*0.205))
+define guard = Character("卫兵", color= c_yellow, image = "guard", window_left_padding=int(config.screen_height*0.205))
+define thug1 = Character("暴徒", color= c_lightgreen, image = "thug1", window_left_padding=int(config.screen_height*0.205))
+define thug2 = Character("暴徒", color= c_red, image = "thug2", window_left_padding=int(config.screen_height*0.205))
+define thug3 = Character("暴徒", color= c_lightred, image = "thug", window_left_padding=int(config.screen_height*0.205))
+define drogon = Character("龙-卓耿", color= c_darkred, image = "drogon", window_left_padding=int(config.screen_height*0.205))
+define security = Character("安全事件", color= c_white, image = "security", window_left_padding=int(config.screen_height*0.205))
+define security_breach = Character("安全事件", color= c_red, image = "security_breach", window_left_padding=int(config.screen_height*0.205))
 
 
 #### SCREEN CHARACTERS ####
 
-define slavegirl1 = Character("Slave girl", color = c_crimson, image = "slavegirl1", window_left_padding=int(config.screen_height*0.205))
-define slavegirl2 = Character("Slave girl", color = c_violet, image = "slavegirl2", window_left_padding=int(config.screen_height*0.205))
-define shopgirl = Character("Merchant", color = c_pink, image = "shopgirl", window_left_padding=int(config.screen_height*0.205))
+define slavegirl1 = Character("奴隶训练师", color = c_crimson, image = "slavegirl1", window_left_padding=int(config.screen_height*0.205))
+define slavegirl2 = Character("女奴-美琪", color = c_violet, image = "slavegirl2", window_left_padding=int(config.screen_height*0.205))
+define shopgirl = Character("风情万种的老板娘", color = c_pink, image = "shopgirl", window_left_padding=int(config.screen_height*0.205))
 define jobgirl = DynamicCharacter("jobgirl_name", color = c_firered, image = "jobgirl", window_left_padding=int(config.screen_height*0.205))
 define bast = DynamicCharacter("bast_name", color = c_copper, image = "bast", window_left_padding=int(config.screen_height*0.205))
 define banker = DynamicCharacter("banker_name", color=c_turquoise, image = "banker", window_left_padding=int(config.screen_height*0.205))
@@ -73,29 +73,29 @@ define gina = DynamicCharacter("gina_name", color=c_softpurple, image="gina", wi
 
 define riche = DynamicCharacter("riche_name", color=c_azure, image="riche", window_left_padding=int(config.screen_height*0.205))
 define ramias = DynamicCharacter("ramias_name", color=c_lightgrey, image="ramias", window_left_padding=int(config.screen_height*0.205))
-define giftgirl = Character("Gift Shop Girl", color=c_hotpink, image="giftgirl", window_left_padding=int(config.screen_height*0.205))
+define giftgirl = Character("礼物商店女孩", color=c_hotpink, image="giftgirl", window_left_padding=int(config.screen_height*0.205))
 define gurigura = DynamicCharacter("gurigura_name", color=c_yellow, image="gurigura", window_left_padding=int(config.screen_height*0.205))
 define katryn = DynamicCharacter("katryn_name", color=c_lightgreen, image="katryn", window_left_padding=int(config.screen_height*0.205))
 define today = DynamicCharacter("today_name", color=c_turquoise, image="today", window_left_padding=int(config.screen_height*0.205))
 define yesterday = DynamicCharacter("yesterday_name", color=c_turquoise, image="yesterday", window_left_padding=int(config.screen_height*0.205))
 
 # Extras
-define templar = Character("Knight templar", color=c_lightgrey, image="templar", window_left_padding=int(config.screen_height*0.205))
-define initiate = Character("Initiate", color=c_white, image="initiate", window_left_padding=int(config.screen_height*0.205))
-define initiate1 = Character("First initiate", color=c_lightblue, image="initiate", window_left_padding=int(config.screen_height*0.205))
-define initiate2 = Character("Second initiate", color=c_lightred, image="initiate", window_left_padding=int(config.screen_height*0.205))
-define spirit = Character("Dark spirit", color=c_white, image="spirit", window_left_padding=int(config.screen_height*0.205))
-define milkmaid = Character("Milkmaid", color=c_pink, image="milkmaid", window_left_padding=int(config.screen_height*0.205))
-define relative = Character("Willow's relative", color=c_copper)
-define blood1 = Character("Blonde officer", color=c_yellow, image="blood1", window_left_padding=int(config.screen_height*0.205))
-define blood2 = Character("Auburn officer", color=c_copper, image="blood2", window_left_padding=int(config.screen_height*0.205))
+define templar = Character("圣殿骑士", color=c_lightgrey, image="templar", window_left_padding=int(config.screen_height*0.205))
+define initiate = Character("新兵", color=c_white, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define initiate1 = Character("第一位新兵", color=c_lightblue, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define initiate2 = Character("第二位新兵", color=c_lightred, image="initiate", window_left_padding=int(config.screen_height*0.205))
+define spirit = Character("黑暗灵体", color=c_white, image="spirit", window_left_padding=int(config.screen_height*0.205))
+define milkmaid = Character("挤奶女工", color=c_pink, image="milkmaid", window_left_padding=int(config.screen_height*0.205))
+define relative = Character("薇洛相关者", color=c_copper)
+define blood1 = Character("金发警官", color=c_yellow, image="blood1", window_left_padding=int(config.screen_height*0.205))
+define blood2 = Character("赤褐色头发的警官", color=c_copper, image="blood2", window_left_padding=int(config.screen_height*0.205))
 
 #### STORY (Chapter 1) ####
 
 define character.kosmo = DynamicCharacter("kosmo_name", color=c_gold, image = "kosmo", window_left_padding=int(config.screen_height*0.205))
 define sergeant = DynamicCharacter("sergeant_name", color=c_copper, image = "sergeant", window_left_padding=int(config.screen_height*0.205))
 define maya = DynamicCharacter("maya_name", color=c_firered, image = "maya", window_left_padding=int(config.screen_height*0.205))
-define roz = Character("Roz", color=c_firered, image = "roz", window_left_padding=int(config.screen_height*0.205))
+define roz = Character("罗兹", color=c_firered, image = "roz", window_left_padding=int(config.screen_height*0.205))
 define lieutenant = DynamicCharacter("lieutenant_name", color = "#C06A45", image = "lieutenant", window_left_padding=int(config.screen_height*0.205))
 define renza = DynamicCharacter("renza_name", color=c_orange_pink, image = "renza", window_left_padding=int(config.screen_height*0.205))
 define satella = DynamicCharacter("satella_name", color=c_copper, image = "satella", window_left_padding=int(config.screen_height*0.205))
@@ -112,57 +112,57 @@ define suzume = DynamicCharacter("suzume_name", color=c_lightblue, image = "suzu
 define narika = DynamicCharacter("narika_name", color=c_hotpink, image = "narika", window_left_padding=int(config.screen_height*0.205))
 define mizuki = DynamicCharacter("mizuki_name", color=c_azure, image = "mizuki", window_left_padding=int(config.screen_height*0.205))
 define haruka = DynamicCharacter("haruka_name", color=c_yellow, image = "haruka", window_left_padding=int(config.screen_height*0.205))
-define kunoichi = Character("Kunoichi", color=c_red, image = "kunoichi", window_left_padding=int(config.screen_height*0.205))
-define papa_apprentice = Character("Apprentice", color=c_softpurple, image = "papa_apprentice", window_left_padding=int(config.screen_height*0.205))
-define papa = Character("Papa Freak", color=c_lightblue, image = "papa", window_left_padding=int(config.screen_height*0.205))
-define hokoma_warrior = Character("Fierce Woman", color=c_prune, image = "hokoma_warrior")
-define magical_girl = Character("Strange Girl", color=c_emerald, image = "magical_girl")
-define girl_scientist = Character("Nerdy Girl", color=c_firered, image = "girl_scientist")
+define kunoichi = Character("女忍者", color=c_red, image = "kunoichi", window_left_padding=int(config.screen_height*0.205))
+define papa_apprentice = Character("见习生", color=c_softpurple, image = "papa_apprentice", window_left_padding=int(config.screen_height*0.205))
+define papa = Character("怪胎爸爸", color=c_lightblue, image = "papa", window_left_padding=int(config.screen_height*0.205))
+define hokoma_warrior = Character("凶猛的女人", color=c_prune, image = "hokoma_warrior")
+define magical_girl = Character("奇怪的女孩", color=c_emerald, image = "magical_girl")
+define girl_scientist = Character("书呆子女孩", color=c_firered, image = "girl_scientist")
 
 #### MISC. CHARACTERS ####
 
 ## GENERIC EVENT CHARACTERS ##
 
-define ev_girl1 = Character("Girl", color= c_pink)
-define ev_girl2 = Character("Girl", color= c_gold)
-define ev_girl3 = Character("Girl", color= c_lightblue)
-define ev_girl4 = Character("Girl", color= c_white)
-define woman = Character("Woman", color= c_violet)
-define slave = Character("Slave girl", color= c_softpurple)
-define warrior = Character("Warrior", color= c_firered)
-define yuna = Character("Yuna", color= c_lightgrey)
-define man = Character("Man", color= c_cream)
-define man2 = Character("Other Man", color= c_lightgrey)
-define passerby = Character("Passerby", color = c_lightblue)
+define ev_girl1 = Character("女孩", color= c_pink)
+define ev_girl2 = Character("女孩", color= c_gold)
+define ev_girl3 = Character("女孩", color= c_lightblue)
+define ev_girl4 = Character("女孩", color= c_white)
+define woman = Character("女人", color= c_violet)
+define slave = Character("女奴", color= c_softpurple)
+define warrior = Character("战士", color= c_firered)
+define yuna = Character("尤娜", color= c_lightgrey)
+define man = Character("男人", color= c_cream)
+define man2 = Character("另一个男人", color= c_lightgrey)
+define passerby = Character("路人", color = c_lightblue)
 
 
 ## STORY EXTRAS ##
 
-define hmas_girl = Character("Mysterious girl", color = c_emerald, image = "hmas", window_left_padding=int(config.screen_height*0.205))
-define sewer_woman = Character("Woman", color=c_grey_blue, image = "sewer_woman", window_left_padding=int(config.screen_height*0.205))
+define hmas_girl = Character("神秘的女孩", color = c_emerald, image = "hmas", window_left_padding=int(config.screen_height*0.205))
+define sewer_woman = Character("女人", color=c_grey_blue, image = "sewer_woman", window_left_padding=int(config.screen_height*0.205))
 
-define mthug = Character("Masked thug", color=c_white)
-define captain_voice = Character("Captain's voice", color=c_emerald)
-define judge = Character("Judge", color=c_lightgreen, image = "judge", window_left_padding=int(config.screen_height*0.205))
-define knight = Character("Knight", color=c_softpurple, image = "knight", window_left_padding=int(config.screen_height*0.205))
+define mthug = Character("蒙面暴徒", color=c_white)
+define captain_voice = Character("队长的声音", color=c_emerald)
+define judge = Character("首席法官", color=c_lightgreen, image = "judge", window_left_padding=int(config.screen_height*0.205))
+define knight = Character("骑士", color=c_softpurple, image = "knight", window_left_padding=int(config.screen_height*0.205))
 define mask = DynamicCharacter("mask_name", color=c_copper, image = "mask", window_left_padding=int(config.screen_height*0.205))
 
-define raccoon = Character("Raccoon", color=c_yellow, image = "raccoon", window_left_padding=int(config.screen_height*0.205))
-define akuma = Character("Akuma", color=c_steel, image = "blue_demon", window_left_padding=int(config.screen_height*0.205))
-define gouki = Character("Gouki", color=c_lightred, image = "red_demon", window_left_padding=int(config.screen_height*0.205))
-define rodrigo = Character("Rodrigo", color=c_lightgrey, image = "skeleton", window_left_padding=int(config.screen_height*0.205))
+define raccoon = Character("浣熊", color=c_yellow, image = "raccoon", window_left_padding=int(config.screen_height*0.205))
+define akuma = Character("豪鬼", color=c_steel, image = "blue_demon", window_left_padding=int(config.screen_height*0.205))
+define gouki = Character("刚鬼", color=c_lightred, image = "red_demon", window_left_padding=int(config.screen_height*0.205))
+define rodrigo = Character("罗德里格(骷髅)", color=c_lightgrey, image = "skeleton", window_left_padding=int(config.screen_height*0.205))
 
 
 ## CONTRACT CHARACTERS ##
 
-define sailor = Character("Sailor", color=c_copper, image = "sailor", window_left_padding=int(config.screen_height*0.205))
-define party_girl = Character("Party girl", color=c_lightred, image = "party_girl", window_left_padding=int(config.screen_height*0.205))
-define nun = Character("Nun", color=c_grey_blue, image = "nun", window_left_padding=int(config.screen_height*0.205))
-define kimono_lady = Character("Festival lady", color=c_softpurple, image = "kimono_lady", window_left_padding=int(config.screen_height*0.205))
-define young_maid = Character("Young maid", color=c_yellow, image = "young_maid", window_left_padding=int(config.screen_height*0.205))
-define diplomat = Character("Lady diplomat", color=c_orange_pink, image = "diplomat", window_left_padding=int(config.screen_height*0.205))
-define sorceress = Character("Sorceress", color=c_lightgrey, image = "sorceress", window_left_padding=int(config.screen_height*0.205))
-define naked_lady = Character("Naked lady", color=c_cream, image = "naked_lady", window_left_padding=int(config.screen_height*0.205))
+define sailor = Character("水手", color=c_copper, image = "sailor", window_left_padding=int(config.screen_height*0.205))
+define party_girl = Character("派对女孩", color=c_lightred, image = "party_girl", window_left_padding=int(config.screen_height*0.205))
+define nun = Character("修女", color=c_grey_blue, image = "nun", window_left_padding=int(config.screen_height*0.205))
+define kimono_lady = Character("和服女士", color=c_softpurple, image = "kimono_lady", window_left_padding=int(config.screen_height*0.205))
+define young_maid = Character("年轻女仆", color=c_yellow, image = "young_maid", window_left_padding=int(config.screen_height*0.205))
+define diplomat = Character("女外交官", color=c_orange_pink, image = "diplomat", window_left_padding=int(config.screen_height*0.205))
+define sorceress = Character("女巫", color=c_lightgrey, image = "sorceress", window_left_padding=int(config.screen_height*0.205))
+define naked_lady = Character("裸女", color=c_cream, image = "naked_lady", window_left_padding=int(config.screen_height*0.205))
 
 
 ####                            ####

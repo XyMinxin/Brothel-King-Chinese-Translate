@@ -873,11 +873,11 @@ label c2_princess_letter:
     show expression bg_bro at top
     with dissolve
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         $ activity = "your early weapon training"
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         $ activity = "your usual meditation session"
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         $ activity = "the daily farmer's market"
 
     "Late in the morning, you come back to [brothel.name] from [activity] when you hear a sudden scream."
@@ -1298,7 +1298,7 @@ label c2_princess_letter:
     you "A meeting with the Princess of Zan, uh? When did I become so fancy..."
 
     $ story_add_event("c2_princess_visit1")
-    $ game.set_task("周六在马厩见吉奥。")
+    $ game.set_task("周六在马厩见吉欧。")
     $ game.set_task("通过故事进展解锁下一章节。", "advance2")
 
     return
@@ -2481,7 +2481,7 @@ label c2_gio_message():
     "The next morning, you wake up to find a note slipped under your door."
 
     call screen letter(header = "你去哪里了？", message = MC.name + "，你到底去哪里了？我还在等你告诉我我安排的宫廷会议怎么样了。\n\n你不会忘了你的老朋友吧？\n\n不管怎样，我有一些爆炸性的情报要告诉你。我们能聊聊吗？你可以在广场见我。",
-                          signature = "你的好朋友，吉奥")
+                          signature = "你的好朋友，吉欧")
 
     you "Gio... Ever so slimy."
 
@@ -2491,7 +2491,7 @@ label c2_gio_message():
 
     "Meet Gio by the {b}Plaza{/b} in the warehouse district."
 
-    $ game.set_task("在广场上见吉奥。")
+    $ game.set_task("在广场上见吉欧。")
     $ story_add_event("c2_gio_meeting")
 
     return
@@ -2730,7 +2730,7 @@ label c2_gio_meeting():
 
     you "Well, let's not worry too much about it. Gio is usually full of crap, so his intel is probably garbage... *nervous*"
 
-    $ game.set_task("等待忍者出现，然后...杀了你？")
+    $ game.set_task("等待女忍者出现，然后...杀了你？")
     $ temp_gossip += chapter_gossip["c2_kunoichi"]
 
     $ calendar.set_alarm(calendar.time + 2, StoryEvent("c2_suzume_invitation"))
@@ -4249,11 +4249,11 @@ label c2_homura_okiya1():
 
     you "Nevertheless, the city can be dangerous at night. I'm not sure you should act so carefree..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         $ text1 = "mighty warrior"
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         $ text1 = "grand wizard"
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         $ text1 = "charming rogue"
 
     homura normal "Oh, but surely I will be safe here! Escorted by [MC.name], [text1], and good friend of the Princess!"
@@ -5315,7 +5315,7 @@ label c2_suzume_onsen(): # Happens at night when the player has an onsen and at 
     scene black with fade
 
     $ MC.change_prestige(2)
-    $ game.set_task("去城市里猎杀忍者。")
+    $ game.set_task("去城市里猎杀女忍者。")
 
     # Init ninja hunt
     $ init_ninja_game()
@@ -5371,7 +5371,7 @@ label ninja_hunt(loc):
         $ no_ninja_loc_dict = {
                             "Spice market" : ["我没有找到任何线索，但我找到了一种强效的催情剂，我想让你尝试一下……", "不要现在，Suz！"],
                             "Sewers" : ["所以我整天都在下水道里……垃圾、怪物、强奸犯，都是家常便饭……但没有看到女忍者的迹象。", "谢谢你的情报……请你站在下风处好吗？"],
-                            "Watchtower" : ["一个女忍者站在警卫塔这么近的地方会很大胆……但我没有看到任何最近的忍者活动的迹象。", "好的。我们会继续寻找。"],
+                            "Watchtower" : ["一个女忍者站在卫兵塔这么近的地方会很大胆……但我没有看到任何最近的女忍者活动的迹象。", "好的。我们会继续寻找。"],
                             "Junkyard" : ["这里没有什么好看的。这不是我感兴趣的那种垃圾……", "我明白了。"],
                             "Thieves guild" : ["这次她不在这里……狡猾的家伙。", "我们去别的地方看看。"],
 
@@ -5386,8 +5386,8 @@ label ninja_hunt(loc):
                             "Plaza" : ["我检查了屋顶、小巷、食品摊和厕所。这里没有女忍者。", "好的。我们会继续寻找。"],
                             "Market" : ["我不得不在市场上走了一整天，我已经数不清有多少人试图抓我的屁股和摸我的胸部……但没有女忍者，咕咕咕。", "你为什么对这一切感到高兴？"],
                             "Prison" : ["这次不在这里……她必须从远处观察监狱。", "让我们在区域周围的其他地方检查。"],
-                            "Gallows" : ["我检查了一切，甚至是被绞死的人。结果他们实际上是死了。", "我开始怀疑忍者教育的质量了。"],
-                            "Arena" : ["所以我检查了竞技场……结果有一场战斗正在进行中，我不得不踢一整个角斗士团队的屁股……还有几只狮子。不过那里没有女忍者。", "这一定是忍者们传说中的谨慎感……*翻白眼*"],
+                            "Gallows" : ["我检查了一切，甚至是被绞死的人。结果他们实际上是死了。", "我开始怀疑女忍者教育的质量了。"],
+                            "Arena" : ["所以我检查了竞技场……结果有一场战斗正在进行中，我不得不踢一整个角斗士团队的屁股……还有几只狮子。不过那里没有女忍者。", "这一定是女忍者们传说中的谨慎感……*翻白眼*"],
                             }
 
         $ suzume(no_ninja_loc_dict[loc.name][0])
@@ -5416,9 +5416,9 @@ label ninja_hunt_intro(): # Runs only once
     "Hit the Kunoichi {b}three times{/b} within the time limit to stop her."
 
     $ story_flags["ninja hunt seen intro"] = True
-    $ game.set_task("见土之忍者。", "story")
-    $ game.set_task("见水之忍者。", "story2")
-    $ game.set_task("见虚之忍者。", "story3")
+    $ game.set_task("见土之女忍者。", "story")
+    $ game.set_task("见水之女忍者。", "story2")
+    $ game.set_task("见虚之女忍者。", "story3")
 
     return
 
@@ -5512,19 +5512,19 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
 
         if special == "fast":
             $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
-            $ game.set_task("虚之忍者：待续", "story3", 7)
+            $ game.set_task("虚之女忍者：待续", "story3", 7)
             # $ game.set_task("Find a way to overcome the Void Kunoichi's uncanny speed.", "story3", 3)
             $ story_flags["ninja hunt hide Thieves guild"] = True
 
         elif special == "rain":
             $ text1 = "It's a damn storm out here! I can't see a thing!"
-            $ game.set_task("水之忍者：待续", "story2", 7)
+            $ game.set_task("水之女忍者：待续", "story2", 7)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
             $ story_flags["ninja hunt hide Beach"] = True
 
         elif special == "quake":
             $ text1 = "My legs are giving out, and the district is about to crumble..."
-            $ game.set_task("土之忍者：待续", "story", 7)
+            $ game.set_task("土之女忍者：待续", "story", 7)
             # $ game.set_task("Find a way to overcome the Earth Kunoichi's earthquake defense.", "story", 3)
             $ story_flags["ninja hunt hide Prison"] = True
 
@@ -5766,7 +5766,7 @@ label intercept_narika():
 
         suzume doubt "She got the drop on us this time... But we'll run into her again. She's too bold to go into hiding."
 
-        $ game.set_task("再次见到虚之忍者。", "story3", 3)
+        $ game.set_task("再次见到虚之女忍者。", "story3", 3)
 
         scene black with fade
 
@@ -6169,7 +6169,7 @@ label intercept_narika():
 
         call receive_item(narika_hair) from _call_receive_item_3
 
-        if MC.playerclass != "Wizard":
+        if MC.playerclass != "法师":
             you "But why? What can we possibly do with that?"
         else:
             you "I see where this is going..."
@@ -6224,7 +6224,7 @@ label c2_narika_H1():
 
     suzume "Oh, just a common ninja magical trick. A tracking spell..."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "I thought that was what you'd be going for. I've already prepared a magic circle."
 
         suzume normal "Perfect! I'll let you lead the ritual, then... I'm, err, not the best with magic."
@@ -6555,7 +6555,7 @@ label c2_narika_H1():
 
         suzume "Aw..."
 
-    $ game.set_task("再次见到虚之忍者。", "story3", 3)
+    $ game.set_task("再次见到虚之女忍者。", "story3", 3)
 
     return
 
@@ -6686,7 +6686,7 @@ label intercept_mizuki():
 
         scene black with fade
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             play sound s_fire
             "Conjuring a fire spell to turn your staff into a blowtorch, you start melting the thick ice. After you're done, you cannot see the Kunoichi anywhere."
 
@@ -6702,7 +6702,7 @@ label intercept_mizuki():
 
         suzume "Well... We should keep patrolling around the district. She has a strong affinity with water... I'm sure we'll see her again, eventually."
 
-        $ game.set_task("再次见到水之忍者。", "story2", 3)
+        $ game.set_task("再次见到水之女忍者。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -6745,7 +6745,7 @@ label intercept_mizuki():
 
         mizuki "Why, sorcery, of course. I thought that was a given."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Magic can slow down aging, true... But not stop it completely."
 
             mizuki "There's more than one type of magic, dear."
@@ -6898,7 +6898,7 @@ label intercept_mizuki():
 
         suzume "I can still feel her Ki, but... It's getting weaker. She's getting away!"
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "No... She was definitely too weak to cast an invisibility spell..."
 
         else:
@@ -6947,7 +6947,7 @@ label intercept_mizuki():
             else:
                 "You swim hard to reach the kimono, but it seems to stay ahead of you no matter what you do. Soon, you feel your stamina diminish."
 
-                if MC.playerclass == "Trader":
+                if MC.playerclass == "奸商":
                     you "I need to go back..."
 
                     "The current is against you, but you remember from your time as a child swimming in Borgo's harbor that it is useless to struggle against it."
@@ -7012,7 +7012,7 @@ label intercept_mizuki():
         else:
             you "It's already out of reach. Damn, how can we catch someone that disappears at will?"
 
-        $ game.set_task("再次见到水之忍者。", "story2", 3)
+        $ game.set_task("再次见到水之女忍者。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -7485,7 +7485,7 @@ label intercept_haruka():
 
         suzume doubt "Well, we lost for today... But she'll be back to the district eventually, the prison seems to be her target. Let's come back on another day."
 
-        $ game.set_task("再次见到土之忍者。", "story", 3)
+        $ game.set_task("再次见到土之女忍者。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -7991,7 +7991,7 @@ label intercept_haruka():
 
         you "She might be the link to our masked murderer! We must catch her!"
 
-        $ game.set_task("再次见到土之忍者。", "story", 3)
+        $ game.set_task("再次见到土之女忍者。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -9727,7 +9727,7 @@ label c2_meet_papa_freak():
 
     you "It's alright."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "By the way, you should try and use a soul-charged derivator. That's how we did it at the Karkyr Academy."
 
         papa_apprentice "A derivator... Of course! Why didn't I think about that?"

@@ -232,11 +232,13 @@ screen main_menu():
             text "青楼之王" size res_font(128) xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
             text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
 
-        text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(12)
+        text "用于更新、错误报告和讨论：[URL]\n" xalign 0.5 yalign 0.96 size res_font(12)
+        text "汉化出错或者翻译意见请看这里：[issuesURL]" xalign 0.5 yalign 0.96 size res_font(12)
 
         vbox xalign 1.0 yalign 0.0:
             text "[renpy.version_string]" xalign 1.0 size 12
             text "BK [config.version]" xalign 1.0 size 12
+            text "汉化by Minxin" xalign 1.0 size 12
 
         if debug:
             text mod_traceback size res_font(18)

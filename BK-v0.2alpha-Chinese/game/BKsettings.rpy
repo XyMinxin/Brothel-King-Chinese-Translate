@@ -74,6 +74,16 @@ init -4 python:
 
                         "Brothel reputation" : "青楼声誉",
                         "brothel reputation" : "青楼声誉",
+
+                        ## 玩家属性 ##
+                        "Strength" : "力量",
+                        "strength" : "力量",
+                        "Spirit" : "法力",
+                        "spirit" : "法力",
+                        "Charisma" : "魅力",
+                        "charisma" : "魅力",
+                        "Speed" : "精力",
+                        "speed" : "精力",
                     }
 
     ## 女孩相关 ##
@@ -414,26 +424,6 @@ init -4 python:
 
     ## 初始创建界面 ##
     start_name_dict = {
-                        ## 职业 ##
-                        "Warrior" : "战士",
-                        "Wizard" : "法师",
-                        "Trader" : "奸商",
-
-                        ## 信仰 ##
-                        "Arios" : "阿里奥斯",
-                        "Shalia" : "莎莉娅",
-                        "None" : "无神论",
-
-                        ## 玩家属性 ##
-                        "Strength" : "力量",
-                        "strength" : "力量",
-                        "Spirit" : "法力",
-                        "spirit" : "法力",
-                        "Charisma" : "魅力",
-                        "charisma" : "魅力",
-                        "Speed" : "精力",
-                        "speed" : "精力",
-
                         ## 难度 ##
                         "Very easy" : "非常容易",
                         "very easy" : "非常容易",
@@ -982,29 +972,6 @@ init -4 python:
                           "Clockwork billboard" : "钟表广告牌",
                           }
 
-    ## 培训师名称 ##
-    trainer_name_dict = {
-                        "玛雅" : "maya",
-                        "伦萨" : "renza",
-                        "萨特拉" : "satella",
-                        "法拉" : "farah",
-                        "莉迪" : "lydie",
-                        "斯特拉" : "stella",
-                        "贝斯特" : "bast",
-                        "戈尔迪" : "goldie",
-                        "公会女郎" : "taxgirl",
-                        None : "(trainer_name_dict)没有值",
-                        }
-
-    ## 培训师名称2 ##
-    trainer_name_dict2 = {
-                        "Ramias" : "拉米阿斯",
-                        "Stella" : "斯特拉",
-                        "Goldie" : "戈尔迪",
-                        "Gizel" : "吉泽尔",
-                        None : "(trainer_name_dict2)没有值",
-                        }
-
 #### BALANCE / CHEATS ####
 
     ## 调试模式 ##
@@ -1359,14 +1326,14 @@ init -4 python:
     no_girls_pics = ["harem.jpg",]
 
     playerclass_pics = {
-                "Warrior" : "UI/warrior.webp",
-                "Wizard" : "UI/wizard.webp",
-                "Trader" : "UI/trader.webp"
+                "战士" : "UI/warrior.webp",
+                "法师" : "UI/wizard.webp",
+                "奸商" : "UI/trader.webp"
                 }
 
     god_pics = {
-                "Arios" : "UI/arios.webp",
-                "Shalia" : "UI/shalia.webp",
+                "阿里奥斯" : "UI/arios.webp",
+                "莎莉娅" : "UI/shalia.webp",
                 None : "UI/none.webp"
                 }
 
@@ -1745,5 +1712,6 @@ init -4 python:
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
     URL = "{b}*新论坛*{/b} {a=https://www.henthighschool.net/brothel-king/}{color=#9933FF}https://www.henthighschool.com/brothel-king/{/color}{/a}"
+    issuesURL = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues{/color}{/a}"
 
 #### END OF BK SETTINGS ####

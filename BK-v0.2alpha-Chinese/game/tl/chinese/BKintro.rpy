@@ -2758,7 +2758,7 @@ translate chinese slavemarket_first_time_bdd56139:
 translate chinese slavemarket_first_time_38e75056:
 
     # "Gio starts inspecting the slave you just bought."
-    "吉奥开始检查你刚买的奴隶。"
+    "吉欧开始检查你刚买的奴隶。"
 
 # game/BKintro.rpy:1849
 translate chinese slavemarket_first_time_3cf3b2a1:
@@ -3106,7 +3106,7 @@ translate chinese brothel_first_time_b1358fe4:
 translate chinese brothel_first_time_943b4c54:
 
     # gio "Those common rooms serve as a front for the business, just in case the Guard becomes too nosy."
-    gio "那些普通房间是公司的门面，防止警卫队来多管闲事。"
+    gio "那些普通房间是公司的门面，防止卫兵队来多管闲事。"
 
 # game/BKintro.rpy:2063
 translate chinese brothel_first_time_505459bd:

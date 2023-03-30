@@ -417,3 +417,4 @@ init -2:
     # Make all the right menu buttons be the same size.
     style rm_button:
         size_group "rm"
+        xsize xres(150)

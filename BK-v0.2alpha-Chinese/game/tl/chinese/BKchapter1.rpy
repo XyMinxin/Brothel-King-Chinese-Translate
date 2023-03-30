@@ -976,7 +976,7 @@ translate chinese c1_ambush_c1ac9f44:
 translate chinese c1_ambush_7368de48:
 
     # maya "Of course, citizen. The city guard is here to help."
-    maya "当然,公民。市警卫队是来帮忙的。"
+    maya "当然,公民。市卫兵队是来帮忙的。"
 
 # game/BKchapter1.rpy:612
 translate chinese c1_ambush_1258b1db:
@@ -1000,7 +1000,7 @@ translate chinese c1_ambush_ccc71a2b:
 translate chinese c1_ambush_57130f81:
 
     # maya "I hope you will tell your friends that not all guards are a bunch of drunkards and cheats."
-    maya "我希望你能告诉你的朋友，不是所有的警卫都是一群酒鬼和骗子。"
+    maya "我希望你能告诉你的朋友，不是所有的卫兵都是一群酒鬼和骗子。"
 
 # game/BKchapter1.rpy:620
 translate chinese c1_ambush_f1ad0e4b:
@@ -1534,7 +1534,7 @@ translate chinese c1_guards_visit_dae0ec55_1:
 translate chinese c1_guards_visit_b864636b:
 
     # "You end up paying the guards. They leave eventually, after turning [brothel.name] upside down, and roughing up some of your girls."
-    "你最后要付钱给警卫。他们把[brothel.name]翻了个底朝天，并对你的几个女孩大打出手，最后还是离开了。"
+    "你最后要付钱给卫兵。他们把[brothel.name]翻了个底朝天，并对你的几个女孩大打出手，最后还是离开了。"
 
 # game/BKchapter1.rpy:969
 translate chinese c1_guards_visit_2fb9d06c:
@@ -1564,7 +1564,7 @@ translate chinese c1_guards_visit_ed5e81ec:
 translate chinese c1_guards_visit_c2105630:
 
     # sill "No, Master, don't open! What if it's the guards again!"
-    sill "不，主人，别开门!要是又是警卫呢!"
+    sill "不，主人，别开门!要是又是卫兵呢!"
 
 # game/BKchapter1.rpy:993
 translate chinese c1_guards_visit_639d49a2:
@@ -1720,7 +1720,7 @@ translate chinese c1_guards_visit_f11832c5:
 translate chinese c1_guards_visit_e278962e:
 
     # kosmo laughing "Fine? Well, that's an interesting way to describe it! The guards just took all of your money, didn't they?"
-    kosmo laughing "罚款了吗?嗯，这是一种有趣的描述方式!警卫拿走了你所有的钱，是吗?"
+    kosmo laughing "罚款了吗?嗯，这是一种有趣的描述方式!卫兵拿走了你所有的钱，是吗?"
 
 # game/BKchapter1.rpy:1066
 translate chinese c1_guards_visit_b03a88d1:
@@ -2032,7 +2032,7 @@ translate chinese c1_spice_market_b7c02ba2:
 translate chinese c1_spice_market_c2282b6a:
 
     # "Conveniently, the city guard turns a blind eye to most of the traffic going on at the spice market, provided they get their cut."
-    "很方便的是，城市警卫对香料市场上的大部分交通视而不见，只要他们能分得一杯羹。"
+    "很方便的是，城市卫兵对香料市场上的大部分交通视而不见，只要他们能分得一杯羹。"
 
 # game/BKchapter1.rpy:1251
 translate chinese c1_spice_market_e6203b6b:
@@ -2110,7 +2110,7 @@ translate chinese c1_spice_market_524bb084:
 translate chinese c1_spice_market_1b5ae8cb:
 
     # "The stranger hasn't moved an inch since the guards called him out."
-    "自从警卫叫他出来后，这个陌生人一动也没动。"
+    "自从卫兵叫他出来后，这个陌生人一动也没动。"
 
 # game/BKchapter1.rpy:1308
 translate chinese c1_spice_market_651c21e9:
@@ -2122,7 +2122,7 @@ translate chinese c1_spice_market_651c21e9:
 translate chinese c1_spice_market_26b12d90:
 
     # "The stranger tilts his head slightly, as if acknowledging the guards for the first time. Suddenly, without so much as a warning sign, he starts moving with blinding speed."
-    "陌生人微微歪着头，好像是第一次向警卫打招呼。突然，在没有任何警告信号的情况下，他开始以惊人的速度移动。"
+    "陌生人微微歪着头，好像是第一次向卫兵打招呼。突然，在没有任何警告信号的情况下，他开始以惊人的速度移动。"
 
 # game/BKchapter1.rpy:1317
 translate chinese c1_spice_market_33cbc51c:
@@ -2218,7 +2218,7 @@ translate chinese c1_spice_market_b1d6d154:
 translate chinese c1_spice_market_4f86f417:
 
     # "The guard looks at you suspiciously."
-    "警卫怀疑地看着你。"
+    "卫兵怀疑地看着你。"
 
 # game/BKchapter1.rpy:1394
 translate chinese c1_spice_market_14daa06f:
@@ -4366,7 +4366,7 @@ translate chinese c1_ask_guild_for_help_0cc0979c:
 translate chinese c1_ask_guild_for_help_b6635e7b:
 
     # you "The guards raided my house, and grabbed all my money. I thought the lieutenant might be involved."
-    you "警卫突然搜查了我的房子，抢走了我所有的钱。我以为中尉也牵涉其中。"
+    you "卫兵突然搜查了我的房子，抢走了我所有的钱。我以为中尉也牵涉其中。"
 
 # game/BKchapter1.rpy:2616
 translate chinese c1_ask_guild_for_help_d07bfb60:
@@ -4408,7 +4408,7 @@ translate chinese c1_ask_guild_for_help_22d0e910:
 translate chinese c1_ask_guild_for_help_0db4cf1d:
 
     # renza "As you probably know, the city guard and the thieves guild are at each other's throats."
-    renza "你可能知道，城市警卫和盗贼行会是你死我活的。"
+    renza "你可能知道，城市卫兵和盗贼行会是你死我活的。"
 
 # game/BKchapter1.rpy:2636
 translate chinese c1_ask_guild_for_help_e8961737:
@@ -4438,7 +4438,7 @@ translate chinese c1_ask_guild_for_help_3c58e188:
 translate chinese c1_ask_guild_for_help_f78a7e40:
 
     # you "Well, aren't you an officer with the guard? Why are you telling me this?"
-    you "你不是警卫的警官吗?你为什么要告诉我这些?"
+    you "你不是卫兵的警官吗?你为什么要告诉我这些?"
 
 # game/BKchapter1.rpy:2647
 translate chinese c1_ask_guild_for_help_4a2b14cc:
@@ -4690,7 +4690,7 @@ translate chinese c1_ask_guild_for_help_6a04c8ba:
 translate chinese c1_ask_guild_for_help_04434417:
 
     # you "She defended me with another guard when I was under attack by some street thugs. I'm pretty sure they were corrupted guards in disguise. She's clean, she must be."
-    you "当我受到街头暴徒的袭击时，她用另一名警卫保护我。我很确定他们是伪装的堕落守卫。她很干净，她一定很干净。"
+    you "当我受到街头暴徒的袭击时，她用另一名卫兵保护我。我很确定他们是伪装的堕落守卫。她很干净，她一定很干净。"
 
 # game/BKchapter1.rpy:2749
 translate chinese c1_ask_guild_for_help_b696a57c:
@@ -5620,7 +5620,7 @@ translate chinese c1_maya_interrogation_815780de:
 translate chinese c1_maya_interrogation_e071a4af:
 
     # you "You're a feisty girl, aren't you? You should learn to like this. Because I'm sure the guards outside will want their share of that sweet pussy..."
-    you "你是个精力充沛的女孩，是吗?你应该学着喜欢这个。因为我敢肯定外面的警卫会想分一杯羹的"
+    you "你是个精力充沛的女孩，是吗?你应该学着喜欢这个。因为我敢肯定外面的卫兵会想分一杯羹的"
 
 # game/BKchapter1.rpy:3241
 translate chinese c1_maya_interrogation_7dfa6e83:
@@ -5812,7 +5812,7 @@ translate chinese c1_sergeant_interrogation_b17888e8:
 translate chinese c1_sergeant_interrogation_1a2864c6:
 
     # you "Who said there was a good guard?"
-    you "谁说有个好警卫?"
+    you "谁说有个好卫兵?"
 
 # game/BKchapter1.rpy:3337
 translate chinese c1_sergeant_interrogation_15b38bc1:
@@ -7006,7 +7006,7 @@ translate chinese c1_interrogate_menu_bab36610:
 translate chinese c1_interrogate_menu_43ab3735:
 
     # you "Oh, and I forgot... They have some strong, large guard dogs too. We'll make them fuck you too... Guard dogs fucking a bitch guard... Wouldn't that be something?"
-    you "哦，我忘了……他们也有一些强壮、高大的看门狗。我们也会让他们操你…警卫狗操一个婊子警卫…那不是很了不起吗?"
+    you "哦，我忘了……他们也有一些强壮、高大的看门狗。我们也会让他们操你…卫兵狗操一个婊子卫兵…那不是很了不起吗?"
 
 # game/BKchapter1.rpy:3932
 translate chinese c1_interrogate_menu_b41601d0:
@@ -7222,7 +7222,7 @@ translate chinese c1_interrogate_menu_2c0bda6e:
 translate chinese c1_interrogate_menu_b8f202b9:
 
     # sergeant "Well, with the amount of looting and stealing that the city guard gets away with, I always felt that we had a powerful patron covering up for us in the city... Someone at court, I would say."
-    sergeant "嗯，由于城市警卫人员的大量抢劫和偷窃行为得以逍遥法外，我总觉得我们在城市里有一个强大的赞助人在为我们遮遮掩掩……有人在法庭上，我想说。"
+    sergeant "嗯，由于城市卫兵人员的大量抢劫和偷窃行为得以逍遥法外，我总觉得我们在城市里有一个强大的赞助人在为我们遮遮掩掩……有人在法庭上，我想说。"
 
 # game/BKchapter1.rpy:4018
 translate chinese c1_interrogate_menu_68dc0e55:
@@ -7378,7 +7378,7 @@ translate chinese c1_interrogation_report_66dc54a2:
 translate chinese c1_interrogation_report_206c742a:
 
     # you "It is clear the Guard and its captain are behind all this... And responsible for robbing me, too. But how can we get back at them?"
-    you "很明显，警卫和队长是这一切的幕后黑手。也要为抢劫我负责但是我们怎么才能回到他们身上呢?"
+    you "很明显，卫兵和队长是这一切的幕后黑手。也要为抢劫我负责但是我们怎么才能回到他们身上呢?"
 
 # game/BKchapter1.rpy:4095
 translate chinese c1_interrogation_report_717190e7:
@@ -7468,7 +7468,7 @@ translate chinese c1_interrogation_report_e9fa2dee:
 translate chinese c1_interrogation_report_70ac70c3:
 
     # you "Some bastard even sent the guards to steal my money!"
-    you "有个混蛋甚至派警卫来偷我的钱!"
+    you "有个混蛋甚至派卫兵来偷我的钱!"
 
 # game/BKchapter1.rpy:4140
 translate chinese c1_interrogation_report_c77a8dd7:
@@ -7594,7 +7594,7 @@ translate chinese c1_interrogation_report_9a394c09:
 translate chinese c1_interrogation_report_f89be122:
 
     # renza "No, hear me out. You don't want revenge against the city guard, they were just the middlemen. You want to bribe the guards to go after your rival! Give him a taste of his own medicine. And you can pay!"
-    renza "不，听我说完。你不想报复城市守卫，他们只是中间人。你想贿赂警卫去追捕你的对手!让他尝尝自食其果的滋味。你可以付钱!"
+    renza "不，听我说完。你不想报复城市守卫，他们只是中间人。你想贿赂卫兵去追捕你的对手!让他尝尝自食其果的滋味。你可以付钱!"
 
 # game/BKchapter1.rpy:4186
 translate chinese c1_interrogation_report_ea7711eb:
@@ -7684,7 +7684,7 @@ translate chinese c1_interrogation_report_30de1a54:
 translate chinese c1_interrogation_report_cd21fa19:
 
     # lieutenant "But what good is it? It's gonna be [MC.name]'s word against the captain of the city guard. A foreigner and a pimp... (Sorry, [MC.name]). That's not going to cut it."
-    lieutenant "但这有什么好处呢?这将是[MC.name]对城市警卫队队长的口供。一个外国人和一个皮条客…(对不起,[MC.name])。这是行不通的。"
+    lieutenant "但这有什么好处呢?这将是[MC.name]对城市卫兵队队长的口供。一个外国人和一个皮条客…(对不起,[MC.name])。这是行不通的。"
 
 # game/BKchapter1.rpy:4221
 translate chinese c1_interrogation_report_c18f6a4e:
@@ -8764,7 +8764,7 @@ translate chinese c1_satella_intro_c8d5d5c2:
 translate chinese c1_satella_intro_f8551443:
 
     # "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
-    "到{b}瞭望塔{/b}去面对臭名昭著的城市警卫队长。"
+    "到{b}瞭望塔{/b}去面对臭名昭著的城市卫兵队长。"
 
 # game/BKchapter1.rpy:4713
 translate chinese c1_captain_meeting_88e47283:
@@ -8818,7 +8818,7 @@ translate chinese c1_captain_meeting_418974d1:
 translate chinese c1_captain_meeting_bad583ab:
 
     # you "The city guard is a menace, not just to myself but to all the slums' citizens."
-    you "城市警卫是一个威胁，不仅对我，也对所有贫民窟的市民。"
+    you "城市卫兵是一个威胁，不仅对我，也对所有贫民窟的市民。"
 
 # game/BKchapter1.rpy:4746
 translate chinese c1_captain_meeting_11620197:
@@ -8866,7 +8866,7 @@ translate chinese c1_captain_meeting_67b813e6:
 translate chinese c1_captain_meeting_b71e5571:
 
     # lieutenant "A guard will take you upstairs. Good..."
-    lieutenant "警卫会带你上楼。好…"
+    lieutenant "卫兵会带你上楼。好…"
 
 # game/BKchapter1.rpy:4775
 translate chinese c1_captain_meeting_daa7a8f7:
@@ -8938,7 +8938,7 @@ translate chinese c1_captain_meeting_678806b4:
 translate chinese c1_captain_meeting_ca5a2f7d:
 
     # "You enter the room. The guard closes the door behind you."
-    "你走进房间。警卫关上你身后的门。"
+    "你走进房间。卫兵关上你身后的门。"
 
 # game/BKchapter1.rpy:4811
 translate chinese c1_captain_meeting_bf8ff279:
@@ -9904,7 +9904,7 @@ translate chinese c1_trial_c316ee80:
 translate chinese c1_trial_f1814905:
 
     # "It's Roz, the guard who was accompanying Maya when she rescued you."
-    "是罗兹，玛雅救你的时候陪她的警卫。"
+    "是罗兹，玛雅救你的时候陪她的卫兵。"
 
 # game/BKchapter1.rpy:5258
 translate chinese c1_trial_fd4125d2:
@@ -10120,7 +10120,7 @@ translate chinese c1_trial_6057b576:
 translate chinese c1_trial_3ac178b9:
 
     # maya "Please, listen. When the time comes, expose the lieutenant as a thief spy. Don't let her take over the Guard."
-    maya "听我说。当时机成熟时，揭露中尉是一个小偷间谍。别让她接管警卫工作。"
+    maya "听我说。当时机成熟时，揭露中尉是一个小偷间谍。别让她接管卫兵工作。"
 
 # game/BKchapter1.rpy:5351
 translate chinese c1_trial_1fcb7c4c:
@@ -10210,7 +10210,7 @@ translate chinese c1_trial_05fe8a4a:
 translate chinese c1_trial_08a1e104:
 
     # "You spot the tribune where the high-ranking officials are seated. After showing your invitation to the guards, they let you climb the steps until you reach a seat next to the captain."
-    "你看到了高级官员坐的看台。向警卫出示请柬后，他们让你爬上台阶，直到你坐到队长旁边。"
+    "你看到了高级官员坐的看台。向卫兵出示请柬后，他们让你爬上台阶，直到你坐到队长旁边。"
 
 # game/BKchapter1.rpy:5394
 translate chinese c1_trial_c4dda43b:
@@ -10258,7 +10258,7 @@ translate chinese c1_trial_b512b0db:
 translate chinese c1_trial_914c7aed:
 
     # judge "Those who stand before you have been rightly condemned after a vigilant and fair inquiry by our esteemed city guard, and stand to be executed for the vileness of their crimes."
-    judge "那些站在你们面前的人，经过我们尊敬的城市警卫队的公正调查，受到了正当的判决，他将因其罪行的卑劣而被处决。"
+    judge "那些站在你们面前的人，经过我们尊敬的城市卫兵队的公正调查，受到了正当的判决，他将因其罪行的卑劣而被处决。"
 
 # game/BKchapter1.rpy:5418
 translate chinese c1_trial_4f59ca5f:
@@ -10636,7 +10636,7 @@ translate chinese c1_trial_1bfb94a8:
 translate chinese c1_trial_3495a6b2:
 
     # "Before the lieutenant can react, she is surrounded by armed guards."
-    "中尉还没来得及反应，她就被武装警卫包围了。"
+    "中尉还没来得及反应，她就被武装卫兵包围了。"
 
 # game/BKchapter1.rpy:5608
 translate chinese c1_trial_43886941:
@@ -10900,7 +10900,7 @@ translate chinese c1_trial_0fbd770a:
 translate chinese c1_trial_0bea4600:
 
     # "The crowd has had it. It's a riot down there. People are trying to rush to the tribune, pushing back the overwhelmed guards who try to keep them away."
-    "群众已经受够了。下面发生了骚乱。人们正试图冲向看台，将试图阻止他们的不堪重负的警卫推开。"
+    "群众已经受够了。下面发生了骚乱。人们正试图冲向看台，将试图阻止他们的不堪重负的卫兵推开。"
 
 # game/BKchapter1.rpy:5733
 translate chinese c1_trial_cff26d95:
@@ -10978,7 +10978,7 @@ translate chinese c1_trial_643c7475:
 translate chinese c1_trial_16fb0a95:
 
     # lieutenant "I can vouch for these accusations. I have witnessed the captain's corruption firsthand while working with the city guard. So have ten other guards, whose sworn testimony I hold at your honor's disposal."
-    lieutenant "我可以为这些指控作担保。我在与城市警卫队一起工作时亲眼目睹了队长的腐败行为。还有另外十个卫兵，他们的宣誓证词我随时听候阁下的处置。"
+    lieutenant "我可以为这些指控作担保。我在与城市卫兵队一起工作时亲眼目睹了队长的腐败行为。还有另外十个卫兵，他们的宣誓证词我随时听候阁下的处置。"
 
 # game/BKchapter1.rpy:5793
 translate chinese c1_trial_76f071eb:
@@ -11020,7 +11020,7 @@ translate chinese c1_trial_61358834:
 translate chinese c1_trial_7aa77799:
 
     # "The captain pushes back the guards who tried to rein her in."
-    "上尉把试图控制她的警卫推开。"
+    "上尉把试图控制她的卫兵推开。"
 
 # game/BKchapter1.rpy:5830
 translate chinese c1_trial_543a7783:
@@ -11110,7 +11110,7 @@ translate chinese c1_trial_8c091f78:
 translate chinese c1_trial_24e61997:
 
     # kuro "As the first daughter of our beloved King, I order you to arrest this woman, and make an example of her. She is to be discharged immediately, as well as all of her accomplices in the city guard."
-    kuro "作为我们敬爱的国王的大女儿，我命令你们逮捕这个女人，以她为案例。她和她在市警卫队的所有同伙都一起被立即流放。"
+    kuro "作为我们敬爱的国王的大女儿，我命令你们逮捕这个女人，以她为案例。她和她在市卫兵队的所有同伙都一起被立即流放。"
 
 # game/BKchapter1.rpy:5877
 translate chinese c1_trial_55302e9d:
@@ -11140,7 +11140,7 @@ translate chinese c1_trial_d728d641:
 translate chinese c1_trial_cab3289b:
 
     # judge "Let it be known that Captain Farah is hereby discharged, by order of the royal court. If no one objects, I therefore declare our faithful lieutenant Lydie the new captain of the city guard."
-    judge "请告知，根据皇家法院的命令，法拉队长已被解雇了。如果没有人反对，我宣布我们忠诚的莉迪中尉为市警卫队的新队长。"
+    judge "请告知，根据皇家法院的命令，法拉队长已被解雇了。如果没有人反对，我宣布我们忠诚的莉迪中尉为市卫兵队的新队长。"
 
 # game/BKchapter1.rpy:5890
 translate chinese c1_trial_24c6a6d6:
@@ -11254,7 +11254,7 @@ translate chinese c1_trial_9fbc9288:
 translate chinese c1_trial_c486ae6a:
 
     # maya "I have witnessed first-hand the treachery of both the Guard captain and lieutenant. In fact, she had me kidnapped by her friends in the guild. I don't know what cruel fate would have befell me if I didn't manage to escape in time."
-    maya "我亲眼目睹了警卫队长和中尉的背信弃义。事实上，她让她公会里的朋友绑架了我。我不知道如果我没有及时逃脱，我的命运将会是怎样的残酷。"
+    maya "我亲眼目睹了卫兵队长和中尉的背信弃义。事实上，她让她公会里的朋友绑架了我。我不知道如果我没有及时逃脱，我的命运将会是怎样的残酷。"
 
 # game/BKchapter1.rpy:5950
 translate chinese c1_trial_0d9e6191:
@@ -11290,7 +11290,7 @@ translate chinese c1_trial_4f64533c:
 translate chinese c1_trial_e0f10ac0:
 
     # kuro "You! Veteran fighter! What did you say your rank in the Guard was?"
-    kuro "你!老兵!你刚才说你以前在警卫的军衔是多少?"
+    kuro "你!老兵!你刚才说你以前在卫兵的军衔是多少?"
 
 # game/BKchapter1.rpy:5964
 translate chinese c1_trial_fa2e3046:
@@ -11464,13 +11464,13 @@ translate chinese c1_ending_maya_53585467:
 translate chinese c1_ending_maya_f7f4d0e4:
 
     # you "No, Roz. I'm looking for Maya. Rooting the corruption from the city guard is nice and all, but I still need a proper license for my business."
-    you "不,警察。我在找玛雅。从城市警卫那里根除腐败是件好事，但我的生意仍然需要一个合适的执照。"
+    you "不,警察。我在找玛雅。从城市卫兵那里根除腐败是件好事，但我的生意仍然需要一个合适的执照。"
 
 # game/BKchapter1.rpy:6105
 translate chinese c1_ending_maya_5ce8072b:
 
     # roz "Oh, I see... Maya isn't much for parties, anyway. I think she's up in the captain office, planning the city guard's future, or some other similarly boring stuff..."
-    roz "哦,我知道了……玛雅不太适合参加派对。我想她是在队长办公室，计划城市警卫队的未来，或者其他类似无聊的事情……"
+    roz "哦,我知道了……玛雅不太适合参加派对。我想她是在队长办公室，计划城市卫兵队的未来，或者其他类似无聊的事情……"
 
 # game/BKchapter1.rpy:6108
 translate chinese c1_ending_maya_ee49ba53:
@@ -11518,7 +11518,7 @@ translate chinese c1_ending_maya_126c483f:
 translate chinese c1_ending_maya_406281c5:
 
     # maya "We're in the process of drafting citizens from the slums to form the new city guard. We're looking for idealistic men and women who want to make a change... Turns out we found plenty of volunteers."
-    maya "我们正在从贫民窟招募市民组成新的城市警卫队。我们正在寻找理想主义的男人和女人谁想要做出改变…结果我们找到了很多志愿者。"
+    maya "我们正在从贫民窟招募市民组成新的城市卫兵队。我们正在寻找理想主义的男人和女人谁想要做出改变…结果我们找到了很多志愿者。"
 
 # game/BKchapter1.rpy:6144
 translate chinese c1_ending_maya_c598d7f5:
@@ -11638,7 +11638,7 @@ translate chinese c1_ending_maya_34ec0feb:
 translate chinese c1_ending_maya_ad8ae482:
 
     # maya "I don't have the authority to handle access to the noble and royal quarters. This is beyond the city guard's jurisdiction."
-    maya "我无权进入贵族和王室的领地。这超出了城市警卫队的管辖范围。"
+    maya "我无权进入贵族和王室的领地。这超出了城市卫兵队的管辖范围。"
 
 # game/BKchapter1.rpy:6192
 translate chinese c1_ending_maya_e41e8ffa:
@@ -11734,7 +11734,7 @@ translate chinese c1_ending_maya_91e36d18:
 translate chinese c1_ending_maya_381d4814:
 
     # "The guard shoves a bound woman down on the suite floor."
-    "警卫把一个被捆绑的女人推倒在套房的地板上。"
+    "卫兵把一个被捆绑的女人推倒在套房的地板上。"
 
 # game/BKchapter1.rpy:6272
 translate chinese c1_ending_maya_b01ea08e:
@@ -11758,7 +11758,7 @@ translate chinese c1_ending_maya_cbc7bbca:
 translate chinese c1_ending_maya_2efdf79c:
 
     # "She turns to the guard."
-    "她转向警卫。"
+    "她转向卫兵。"
 
 # game/BKchapter1.rpy:6280
 translate chinese c1_ending_maya_a2f8b290:
@@ -12148,7 +12148,7 @@ translate chinese c1_ending_maya_68ffd60c:
 translate chinese c1_ending_maya_58343e65:
 
     # renza "That... was the price for betraying me. Also, this is your cover story, for when the guards break in."
-    renza "那是背叛我的代价还有，这是你的封面故事，当警卫破门而入的时候。"
+    renza "那是背叛我的代价还有，这是你的封面故事，当卫兵破门而入的时候。"
 
 # game/BKchapter1.rpy:6439
 translate chinese c1_ending_maya_4b97a285:
@@ -12208,7 +12208,7 @@ translate chinese c1_ending_maya_e35fad61:
 translate chinese c1_ending_maya_cd61cc23:
 
     # "You've managed to salvage a bit of your reputation with Renza and the thieves guild. Your reputation with the city guard has been damaged, however."
-    "你设法挽回了你在伦萨和盗贼公会的声誉。然而，你在城市警卫队的声誉已经受损。"
+    "你设法挽回了你在伦萨和盗贼公会的声誉。然而，你在城市卫兵队的声誉已经受损。"
 
 # game/BKchapter1.rpy:6481
 translate chinese c1_ending_maya_b48aacce:
@@ -12256,7 +12256,7 @@ translate chinese c1_ending_maya_bd7b0d9c:
 translate chinese c1_ending_maya_84e5bf9f:
 
     # "Your reputation with the city guard has increased. However, you have lost access to the thieves guild for good."
-    "你在市警卫队的声望提高了。然而，你已经永远失去了盗贼公会的入口。"
+    "你在市卫兵队的声望提高了。然而，你已经永远失去了盗贼公会的入口。"
 
 # game/BKchapter1.rpy:6534
 translate chinese c1_ending_lieutenant_8b9c3f2b:
@@ -12268,7 +12268,7 @@ translate chinese c1_ending_lieutenant_8b9c3f2b:
 translate chinese c1_ending_lieutenant_68590058:
 
     # "You recognize many faces around the camp. You have seen those men hanging around the thieves guild. Even though they are now wearing guard uniforms, they look out of place somehow."
-    "你能认出营地周围的许多面孔。你见过那些人在盗贼行会附近游荡。尽管他们现在穿着警卫制服，但不知怎的，他们看起来有些格格不入。"
+    "你能认出营地周围的许多面孔。你见过那些人在盗贼行会附近游荡。尽管他们现在穿着卫兵制服，但不知怎的，他们看起来有些格格不入。"
 
 # game/BKchapter1.rpy:6539
 translate chinese c1_ending_lieutenant_32b6dad3:
@@ -12358,7 +12358,7 @@ translate chinese c1_ending_lieutenant_d039fac3:
 translate chinese c1_ending_lieutenant_baf59439:
 
     # you "Don't you have a lot on your mind though? Running the Guard is not going to be easy..."
-    you "你不是有很多心事吗?管理警卫并不容易…"
+    you "你不是有很多心事吗?管理卫兵并不容易…"
 
 # game/BKchapter1.rpy:6584
 translate chinese c1_ending_lieutenant_99c19a82:
@@ -12370,7 +12370,7 @@ translate chinese c1_ending_lieutenant_99c19a82:
 translate chinese c1_ending_lieutenant_f4f506a9:
 
     # lieutenant "Most of the guards working under Farah I've been able to turn immediately. I've already got rid of the few troublesome elements I couldn't control, like this annoying blue-haired bitch and her bullheaded lapdog. Good riddance!"
-    lieutenant "在法拉手下工作的大部分警卫我都能立即调转方向。我已经摆脱了一些我无法控制的麻烦因素，比如这个讨厌的蓝头发母狗和她的牛头哈巴狗。终于解脱了!"
+    lieutenant "在法拉手下工作的大部分卫兵我都能立即调转方向。我已经摆脱了一些我无法控制的麻烦因素，比如这个讨厌的蓝头发母狗和她的牛头哈巴狗。终于解脱了!"
 
 # game/BKchapter1.rpy:6589
 translate chinese c1_ending_lieutenant_d4abec80:
@@ -12394,7 +12394,7 @@ translate chinese c1_ending_lieutenant_94603930:
 translate chinese c1_ending_lieutenant_bed466cc:
 
     # lieutenant "Don't you know? Those districts are outside the Guard's jurisdiction. The blue bloods prefer to keep the commoners at arm's length."
-    lieutenant "难道你不知道吗?那些地区不在警卫的管辖范围之内。贵族们喜欢与平民保持一定的距离。"
+    lieutenant "难道你不知道吗?那些地区不在卫兵的管辖范围之内。贵族们喜欢与平民保持一定的距离。"
 
 # game/BKchapter1.rpy:6597
 translate chinese c1_ending_lieutenant_b74f9123:
@@ -12550,7 +12550,7 @@ translate chinese c1_ending_captain_cf6aaf7d:
 translate chinese c1_ending_captain_10fd2ea1:
 
     # guard "What do you think you're doing in the Guard camp so late?"
-    guard "这么晚了你还在警卫营地里干什么?"
+    guard "这么晚了你还在卫兵营地里干什么?"
 
 # game/BKchapter1.rpy:6708
 translate chinese c1_ending_captain_8b9e7a44:
@@ -13600,7 +13600,7 @@ translate chinese c1_judge_fate_81244157:
 translate chinese c1_judge_fate_d9a0c411:
 
     # judge "This is not funny! I am a high judge of the royal court! Leave now, or I shall call the Guard on you..."
-    judge "这一点都不好笑!我是王室的高级法官!现在就给我滚，否则我叫警卫来……"
+    judge "这一点都不好笑!我是王室的高级法官!现在就给我滚，否则我叫卫兵来……"
 
 # game/BKchapter1.rpy:7301
 translate chinese c1_judge_fate_069470b8:

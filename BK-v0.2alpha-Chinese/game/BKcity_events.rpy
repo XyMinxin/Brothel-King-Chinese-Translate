@@ -3099,19 +3099,19 @@ label city_gypsy:
     show image gypsy at center
     with dissolve
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         $ nickname = "Big man"
 
         $ nickname_l = "big man"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         $ nickname = "Weird man"
 
         $ nickname_l = "weird man"
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
 
         $ nickname = "Funny man"
 
@@ -4570,11 +4570,11 @@ label city_none:
 
         $ choices.append("%s是一群可悲的、恶毒的人，就像其他地方一样。你挤过这群失败者，你鄙视他们所有人。")
 
-    if MC.god == "Shalia":
+    if MC.god == "莎莉娅":
 
         $ choices.append("在%s的角落和阴影中，你看到了谨慎但明确无误的崇拜莎莉娅的迹象。你赞许地点点头。")
 
-    elif MC.god == "Arios":
+    elif MC.god == "阿里奥斯":
 
         $ choices.append("看着一群游荡在%s的朝圣者，你看到一些张扬的、直言不讳的阿里奥斯崇拜者，把他们的信仰放在袖子上。其他人则比较谦逊，在默默的祈祷中跟随偶像。你想知道哪些人是真正的信徒。")
 

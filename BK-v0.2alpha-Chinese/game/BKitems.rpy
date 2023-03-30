@@ -169,7 +169,7 @@ label init_items():
 
         mizuki_kimono = Item(name = "Mizuki的和服", target = 'MC', type = IT_Story, pic = 'Kimono.webp', template = False, rank = 1, rarity = "S", price = 0, pic_dir="dress", description = "神秘的大国师Mizuki留下的和服。", hidden_effect = True)
 
-        makibishi = Item(name = "撒菱", target = 'MC', type = IT_Misc, pic = 'bronze makibishi.webp', template = False, rank = 1, rarity = "S", price = 500, description = "在猎杀忍者的过程中自动抓到一个国师。", hidden_effect = True)
+        makibishi = Item(name = "撒菱", target = 'MC', type = IT_Misc, pic = 'bronze makibishi.webp', template = False, rank = 1, rarity = "S", price = 500, description = "在猎杀女忍者的过程中自动抓到一个国师。", hidden_effect = True)
 #                       Item(name = "Iron Makibishi", target = 'MC', type = IT_Story, pic = 'iron makibishi.webp', template = False, rank = 2, rarity = "S", price = 1000, description = "Slows down Kunoichi movements during ninja hunt (medium effect).", hidden_effect = True),
 #                       Item(name = "Steel Makibishi", target = 'MC', type = IT_Story, pic = 'steel makibishi.webp', template = False, rank = 3, rarity = "S", price = 1500, description = "Slows down Kunoichi movements during ninja hunt (large effect).", hidden_effect = True),
 
