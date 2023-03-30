@@ -3792,7 +3792,7 @@ init -1 python:
 
     add_dialogue("free_flirt_sex_experience very experienced", ("prude", "very modest"), ("你这个流氓！你不应该问女士这样的问题。有些事情最好不要说。*眨眼*"), love=3)
     add_dialogue("free_flirt_sex_experience experienced", ("prude", "very modest"), ("*叹气*我相信你想知道，但你真的不应该问女士这样的问题。这是不礼貌的。"), love=2)
-    add_dialogue("free_flirt_sex_experience average", ("prude", "very modest"), ("[MC.name]，行为要规矩！我宁愿不 dignify 那个问题的答案。"), love=1)
+    add_dialogue("free_flirt_sex_experience average", ("prude", "very modest"), ("[MC.name]，行为要规矩！我宁愿不给这个问题的答案留面子。"), love=1)
     add_dialogue("free_flirt_sex_experience inexperienced", ("prude", "very modest"), ("小心你的嘴巴，[MC.name]！那是一个可耻的问题。你的父母会怎么想？"))
     add_dialogue("free_flirt_sex_experience very inexperienced", ("prude", "very modest"), ("H-多么粗俗！对不起，但我宁愿不再接受你的陪伴。"), love=-1)
     add_dialogue("free_flirt_sex_experience virgin", ("prude", "very modest"), ("多么无礼！不用说，我正在为婚姻而保留自己，就像所有女孩一样。"), love=1)

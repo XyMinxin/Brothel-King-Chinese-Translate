@@ -4780,9 +4780,9 @@ init -3 python:
 
     def translate_cn(text1, dictionary):
         if text1 in dictionary:
-            text2=dictionary[text1]
+            text2 = dictionary[text1]
         else:
-            text2=text1
+            text2 = text1
         
         return text2
 
