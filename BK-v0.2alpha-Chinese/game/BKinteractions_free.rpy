@@ -1225,7 +1225,7 @@ label free_girl_girlfriend(girl):
 
     else:
 
-        $ thing = rand_choice(("颜色", "食物", "饮料"))
+        $ thing = rand_choice(("color", "food", "drink"))
 
         if dice(6) >= 4:
 
