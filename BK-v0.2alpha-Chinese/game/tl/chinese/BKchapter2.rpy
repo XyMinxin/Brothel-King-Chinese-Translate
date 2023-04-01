@@ -14380,7 +14380,7 @@ translate chinese mizuki_onsen_8e248e22:
 translate chinese mizuki_onsen_4ba0c83c:
 
     # mizuki "Did you know that a man's seed is 99 per cent water? And I'm a master of water magic..."
-    mizuki "你知道男人的精液有99%是水吗？而我是一个水系魔术大师……"
+    mizuki "你知道男人的精液有百分之99都是水吗？而我是一个水系魔术大师……"
 
 # game/BKchapter2.rpy:7276
 translate chinese mizuki_onsen_afb3b708:
