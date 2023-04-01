@@ -2908,7 +2908,7 @@ label c2_suzume_forest1():
 
     suzume "My name is Suzume. Nice to meet you, Mister [MC.name]. "
 
-    $ suzume_name = "Suzume"
+    $ suzume_name = "铃女"
 
     suzume "Seen up close, you're cuter than I thought! So, you found my message?"
 
@@ -4250,11 +4250,11 @@ label c2_homura_okiya1():
     you "Nevertheless, the city can be dangerous at night. I'm not sure you should act so carefree..."
 
     if MC.playerclass == "战士":
-        $ text1 = "mighty warrior"
+        $ text1 = "大侠"
     elif MC.playerclass == "法师":
-        $ text1 = "grand wizard"
+        $ text1 = "大巫师"
     elif MC.playerclass == "奸商":
-        $ text1 = "charming rogue"
+        $ text1 = "迷人的无赖"
 
     homura normal "Oh, but surely I will be safe here! Escorted by [MC.name], [text1], and good friend of the Princess!"
 
@@ -5369,15 +5369,16 @@ label ninja_hunt(loc):
     else:
 
         $ no_ninja_loc_dict = {
-                            "Spice market" : ["我没有找到任何线索，但我找到了一种强效的催情剂，我想让你尝试一下……", "不要现在，Suz！"],
+                            "Spice market" : ["我没有找到任何线索，但我找到了一种强效的催情剂，我想让你尝试一下……", "不是现在，铃女！"],
                             "Sewers" : ["所以我整天都在下水道里……垃圾、怪物、强奸犯，都是家常便饭……但没有看到女忍者的迹象。", "谢谢你的情报……请你站在下风处好吗？"],
+                            "Farm" : ["除了一只死松鼠，我什么也没找到……我说，你想让我把它放在你的门口吗？", "不可能！"],
                             "Watchtower" : ["一个女忍者站在卫兵塔这么近的地方会很大胆……但我没有看到任何最近的女忍者活动的迹象。", "好的。我们会继续寻找。"],
                             "Junkyard" : ["这里没有什么好看的。这不是我感兴趣的那种垃圾……", "我明白了。"],
                             "Thieves guild" : ["这次她不在这里……狡猾的家伙。", "我们去别的地方看看。"],
 
                             "Harbor" : ["这里没有什么可疑的味道……除了鱼。咕咕咕……", "好的。我仍然认为你转行做喜剧演员是不明智的。"],
                             "Shipyard" : ["我没有看到一个女忍者，但有一艘船的形状像A-", "不感兴趣，谢谢。"],
-                            "Taverns" : ["所以我告诉那个航海家……*打嗝*这里没有女忍者，先生！一个也没有！不要叫我那个，我不配拥有这个称号……*哭泣*结果那个家伙是一个带着水手帽的凳子……*打嗝*", "回家吧，雀。你喝醉了。"],
+                            "Taverns" : ["所以我告诉那个航海家……*打嗝*这里没有女忍者，先生！一个也没有！不要叫我那个，我不配拥有这个称号……*哭泣*结果那个家伙是一个带着水手帽的凳子……*打嗝*", "回家吧，铃女。你喝醉了。"],
                             "Beach" : ["我以为我们会再次在这里找到她……但没有找到。", "她必须保持靠近水……毕竟，这是她的元素。"],
                             "Seafront" : ["我检查了每一艘船。结果，水手们非常喧闹，没有女忍者在船上。", "好的，谢谢……继续寻找。"],
                             "Exotic emporium" : ["你不会相信我在这里看到的东西！他们什么都有……除了女忍者，我想。", "我们去别的地方看看。"],
@@ -5462,19 +5463,19 @@ label ninja_hunt_begins(ninja): # Runs every time. Where ninja is an NPC object.
 label ninja_hunt_react(target): # Used when hit. Where ninja is an NPC object.
 
     if target.startswith("passerby"):
-        $ suzume("Watch out! It's a civilian!", interact=False)
+        $ suzume("小心点！那是一个平民！", interact=False)
 
     elif target == "guest1":
-        $ woman("Hey! Watch it, little man...", interact=False)
+        $ woman("嘿，小心点，小家伙……", interact=False)
 
     elif target == "guest2":
-        $ woman("Aw!!! S-Sir, do be careful...", interact=False)
+        $ woman("噢！！！先生，小心……", interact=False)
 
     elif target == "guest3":
-        $ woman("Stop waving that thing around, you'll break something!", interact=False)
+        $ woman("别再挥舞那东西了，你会弄坏东西的！", interact=False)
 
     elif target == "ninja0":
-        $ kunoichi("...", interact=False)
+        $ kunoichi("……", interact=False)
 
     else: # Target is a ninja
         $ ninja = {"ninja1" : NPC_narika, "ninja2" : NPC_mizuki, "ninja3" : NPC_haruka}[target]
@@ -5491,13 +5492,13 @@ label ninja_hunt_react(target): # Used when hit. Where ninja is an NPC object.
 
         else:
             if ninja.name == "Narika":
-                $ narika("Ouch! Do that again and I'll kill you!", interact=False)
+                $ narika("哎呀！再这样我就杀了你！", interact=False)
 
             elif ninja.name == "Mizuki":
-                $ mizuki("Hey... Not bad.", interact=False)
+                $ mizuki("嘿……不错", interact=False)
 
             elif ninja.name == "Haruka":
-                $ haruka("Ouch! I must be more careful...", interact=False)
+                $ haruka("哎呀！我必须更加小心……", interact=False)
 
     return target
 
@@ -5511,19 +5512,19 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
         $ lock_ninja_locations(ninja)
 
         if special == "fast":
-            $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
+            $ text1 = "该死！她太快了……即使是完美攻击她都能躲开！"
             $ game.set_task("虚之女忍者：待续", "story3", 7)
             # $ game.set_task("Find a way to overcome the Void Kunoichi's uncanny speed.", "story3", 3)
             $ story_flags["ninja hunt hide Thieves guild"] = True
 
         elif special == "rain":
-            $ text1 = "It's a damn storm out here! I can't see a thing!"
+            $ text1 = "该死！外面刮着风暴！我什么都看不见！"
             $ game.set_task("水之女忍者：待续", "story2", 7)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
             $ story_flags["ninja hunt hide Beach"] = True
 
         elif special == "quake":
-            $ text1 = "My legs are giving out, and the district is about to crumble..."
+            $ text1 = "我的腿快不行了，而且这个区域即将崩溃……"
             $ game.set_task("土之女忍者：待续", "story", 7)
             # $ game.set_task("Find a way to overcome the Earth Kunoichi's earthquake defense.", "story", 3)
             $ story_flags["ninja hunt hide Prison"] = True

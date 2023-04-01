@@ -4332,7 +4332,7 @@ init -2 python:
 
                 new_it = copy.deepcopy(self)
 
-                new_it.name = __("{0} {1}").format(__(quality_prefix[self.adjectives + "_" + str(target_rank)]), __(self.base_name.lower()))
+                new_it.name = "{0} {1}".format(quality_prefix[self.adjectives + "_" + str(target_rank)], self.base_name.lower())
                 #new_it.name = __(quality_prefix[self.adjectives + "_" + str(target_rank)]) + __(self.base_name.lower())
                 new_it.price = round_int(quality_modifier[target_rank] * self.base_price)
 
