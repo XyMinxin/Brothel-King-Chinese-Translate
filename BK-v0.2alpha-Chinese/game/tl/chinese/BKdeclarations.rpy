@@ -1,23 +1,24 @@
-# TODO: Translation updated at 2022-03-01 21:22
+﻿# TODO: Translation updated at 2023-03-31 11:43
 
 translate chinese strings:
 
-    # game/BKdeclarations.rpy:1440
+    # game/BKdeclarations.rpy:1453
     old "Image [index] of [count] locked."
     new "图片[index]/[count]锁定。"
 
-    # game/BKdeclarations.rpy:1479
+    # game/BKdeclarations.rpy:1492
     old "prev"
     new "上一页"
 
-    # game/BKdeclarations.rpy:1480
+    # game/BKdeclarations.rpy:1493
     old "next"
     new "下一页"
 
-    # game/BKdeclarations.rpy:1481
+    # game/BKdeclarations.rpy:1494
     old "slideshow"
     new "幻灯片"
 
-    # game/BKdeclarations.rpy:1482
+    # game/BKdeclarations.rpy:1495
     old "return"
     new "返回"
+

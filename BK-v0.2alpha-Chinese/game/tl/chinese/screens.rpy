@@ -108,7 +108,7 @@ translate chinese strings:
 
     # game/screens.rpy:546
     old "Joystick..."
-    new "Joystick..."
+    new "摇杆..."
 
     # game/screens.rpy:554
     old "Skip"
