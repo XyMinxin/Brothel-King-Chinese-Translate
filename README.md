@@ -64,11 +64,11 @@ A:那么可能game文件夹下的字体文件可能丢失，你需要重新下�
 
 Q:游戏报错啦！死档啦！
 
-A:提问前回忆一下是否有改动过文件，如有改动，建议重新替换修改过文件，如果还是不行，建议使用[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issu)进行提问，附上报错日志、报错截图以及复现办法
+A:提问前回忆一下是否有改动过文件，如有改动，建议重新替换修改过文件，如果还是不行，建议使用[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)进行提问，附上报错日志、报错截图以及复现办法
 
 Q:有剧情漏翻啦！
 
-A:建议前往[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issu)进行反馈，记得附上截图，如果有时间会尽快补上的
+A:建议前往[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)进行反馈，记得附上截图，如果有时间会尽快补上的
 
 --------------------------------------------
 
@@ -76,7 +76,7 @@ A:建议前往[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translat
 
 等下次回来汉化完并且更新到0.2正式版后，他论坛里面的那些mod有点想玩，说不定会把一些mod也给汉化了吧（画饼.jpg）
 
-问题反馈或者意见请用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issu)
+问题反馈或者意见请用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)
 
 **此汉化基于0.15版本的汉化版进行修改、添加以及润色文本**
 

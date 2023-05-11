@@ -13306,7 +13306,7 @@ translate chinese c1_captain_fate_cb895a12:
 translate chinese c1_captain_fate_dbe60dd8:
 
     # guard "That's right, Captain Slutface... Massage my cock with your hungry pussy..."
-    guard "没错，Slutface上尉……用你饥饿的阴部按摩我的鸡巴……"
+    guard "没错，放荡的上尉……用你饥饿的小穴按摩我的鸡巴……"
 
 # game/BKchapter1.rpy:7097
 translate chinese c1_captain_fate_3bacb072:
