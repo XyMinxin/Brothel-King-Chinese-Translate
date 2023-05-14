@@ -10,7 +10,7 @@
 
 ## 青楼之王v0.2 / Brothel King v0.2
 
-<img src="https://i.ibb.co/tYD3wqQ/Brothel-King-v0-2.png" alt="image" border="0" width="70%">
+<img src="https://i.ibb.co/BrLjBFt/Brothel-King-v0-2.png" alt="image" border="0" width="70%">
 
 目前翻译的游戏版本是：0.2（2022/7/11）
 
@@ -33,7 +33,7 @@
 
 ## 标签工具v2.8.14 / Tagging Tool v2.8.14
 
-<img src="https://i.ibb.co/0JCMCnH/Tagging-Tool-v2-8-14.png" alt="image" border="0" width="70%">
+<img src="https://i.ibb.co/HzJHR8z/Tagging-Tool-v2-8-14.png" alt="image" border="0" width="70%">
 
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
