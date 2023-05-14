@@ -1140,5 +1140,5 @@ translate chinese strings:
 
     # renpy/common/_errorhandling.rpym:673
     old "Parsing the script failed."
-    new "Parsing the script failed."
+    new "解析脚本失败。"
 

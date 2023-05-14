@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2022-03-01 21:22
+﻿# TODO: Translation updated at 2023-03-31 11:43
 
 # game/BKsecurity.rpy:62
 translate chinese security_488f4983:
@@ -166,13 +166,13 @@ translate chinese security_30d80a11:
 translate chinese security_f19c5383:
 
     # you "Leave their general to me... I will end this!" with vpunch
-    you "把他们的将军交给我…我会结束这一切!" with vpunch
+    you "把他们的将军交给我……我会结束这一切！" with vpunch
 
 # game/BKsecurity.rpy:421
 translate chinese security_df5fe76e:
 
     # you "Leave the magic user to me... I will deal with her!" with vpunch
-    you "把那个法师留给我……我来对付她!" with vpunch
+    you "把那个法师留给我……我来对付她！" with vpunch
 
 # game/BKsecurity.rpy:427
 translate chinese security_771685c0:
@@ -502,7 +502,7 @@ translate chinese security_fd39755e:
 translate chinese security_4e89346a:
 
     # you "Every one, get inside the pentagram!"
-    you "所有人，进入五芒星!"
+    you "所有人，进入五芒星！"
 
 # game/BKsecurity.rpy:747
 translate chinese security_25ceac08:
@@ -550,7 +550,7 @@ translate chinese security_db83263d:
 translate chinese security_ab4c5041:
 
     # you "You shall not pass!!!"
-    you "你不能通过!!"
+    you "你不能通过！！"
 
 # game/BKsecurity.rpy:829
 translate chinese security_7bb9cd2a:
@@ -598,7 +598,7 @@ translate chinese security_637b87f0:
 translate chinese security_d630ba04:
 
     # enemy_general.char "Damn you..."
-    enemy_general.char "该死的你…"
+    enemy_general.char "该死的你……"
 
 # game/BKsecurity.rpy:867
 translate chinese security_f65ca89d:
@@ -616,7 +616,7 @@ translate chinese security_befe5d45:
 translate chinese security_7ced056c:
 
     # enemy_general.char "You! Damn you!"
-    enemy_general.char "你!该死的你!"
+    enemy_general.char "你！该死的你！"
 
 # game/BKsecurity.rpy:877
 translate chinese security_c2c2c42d:
@@ -640,7 +640,7 @@ translate chinese security_0f444b1c:
 translate chinese security_aa3b574c:
 
     # enemy_general.char "Hahahaha! You are no match for me!"
-    enemy_general.char "哈哈哈!你不是我的对手!"
+    enemy_general.char "哈哈哈！你不是我的对手！"
 
 # game/BKsecurity.rpy:900
 translate chinese security_91f895fd:
@@ -670,7 +670,7 @@ translate chinese security_b75e3137:
 translate chinese security_e5340962:
 
     # enemy_general.char "Y...You... Damn... You..."
-    enemy_general.char "Y…你…该死的……你……"
+    enemy_general.char "你……你……该死……你……"
 
 # game/BKsecurity.rpy:917
 translate chinese security_d068958f:
@@ -694,7 +694,7 @@ translate chinese security_8d387df5:
 translate chinese security_3a6aca93:
 
     # enemy_general.char "Impossible! *scared*"
-    enemy_general.char "不可能的!*了*"
+    enemy_general.char "不可能的！*害怕*"
 
 # game/BKsecurity.rpy:931
 translate chinese security_eaac5125:
@@ -718,13 +718,13 @@ translate chinese security_afc1f367:
 translate chinese security_547618f9:
 
     # "You have captured the enemy general, [enemy_general.fullname]!"
-    "你俘虏了敌人的将军，[enemy_general.fullname]!"
+    "你俘虏了敌人的将军，[enemy_general.fullname]！"
 
 # game/BKsecurity.rpy:1033
 translate chinese security_1e8d0e3e:
 
     # enemy_general.char "W-What do you want to do with me? You bastard!"
-    enemy_general.char "你想拿我怎么办?你这个混蛋!"
+    enemy_general.char "你想拿我怎么办？你这个混蛋！"
 
 # game/BKsecurity.rpy:1035
 translate chinese security_be274b69:
@@ -736,7 +736,7 @@ translate chinese security_be274b69:
 translate chinese security_c73f5a6c:
 
     # security "You have captured the enemy general, [enemy_general.fullname]!"
-    security "你俘虏了敌人的将军，[enemy_general.fullname]!"
+    security "你俘虏了敌人的将军，[enemy_general.fullname]！"
 
 # game/BKsecurity.rpy:1052
 translate chinese security_0d9c079f:
@@ -748,7 +748,7 @@ translate chinese security_0d9c079f:
 translate chinese security_f98ae4df:
 
     # enemy_general.char "Me? A whore??? No!!!"
-    enemy_general.char "我吗?一个妓女? ? ?不! ! !"
+    enemy_general.char "我吗？一个妓女？？？不！！！"
 
 # game/BKsecurity.rpy:1056
 translate chinese security_0d372f79:
@@ -760,13 +760,13 @@ translate chinese security_0d372f79:
 translate chinese security_4dd4e0ff:
 
     # you "I have no use for the likes of you. I'm sure you'll be an excellent slave to... Somebody."
-    you "我对你这样的人毫无用处。我相信你会成为…别人。"
+    you "我对你这样的人毫无用处。我相信你会成为……别人。"
 
 # game/BKsecurity.rpy:1064
 translate chinese security_7d4fc1d7:
 
     # enemy_general.char "Wait, no!!!"
-    enemy_general.char "等待,不! ! !"
+    enemy_general.char "等待，不！！！"
 
 # game/BKsecurity.rpy:1072
 translate chinese security_17421a6e:
@@ -778,7 +778,7 @@ translate chinese security_17421a6e:
 translate chinese security_ef0515a5:
 
     # enemy_general.char "No!!! You can't be serious! *panic*"
-    enemy_general.char "不! ! !你不是认真的吧!*恐慌*"
+    enemy_general.char "不！！！你不是认真的吧！*恐慌*"
 
 # game/BKsecurity.rpy:1078
 translate chinese security_16619f94:
@@ -790,13 +790,13 @@ translate chinese security_16619f94:
 translate chinese security_07b66ad2:
 
     # you "I'll let you go with a warning: leave town, and never come back."
-    you "我给你个警告，放你走:离开这里，永远别回来。"
+    you "我给你个警告，放你走：离开这里，永远别回来。"
 
 # game/BKsecurity.rpy:1090
 translate chinese security_0ef42837:
 
     # enemy_general.char "You... Really? Can I go?"
-    enemy_general.char "你……真的吗?我可以去吗?"
+    enemy_general.char "你……真的吗？我可以去吗？"
 
 # game/BKsecurity.rpy:1092
 translate chinese security_6f7bc476:
@@ -814,7 +814,7 @@ translate chinese security_64d9bf4f:
 translate chinese kidnap_tip_0b240c9e:
 
     # man "Psst, Captain!"
-    man "嘘,队长!"
+    man "嘘，队长！"
 
 # game/BKsecurity.rpy:1618
 translate chinese kidnap_tip_0b778190:
@@ -826,13 +826,13 @@ translate chinese kidnap_tip_0b778190:
 translate chinese kidnap_tip_4671fbd2:
 
     # you "Sorry mate, I'm not recruiting... Not the likes of you, anyway."
-    you "对不起，伙计，我不招人…至少不是像你这样的人。"
+    you "对不起，伙计，我不招人……至少不是像你这样的人。"
 
 # game/BKsecurity.rpy:1622
 translate chinese kidnap_tip_4db04105:
 
     # man "Arr, but ye'll be sorry if ye don't listen. Remember sweet little [girl.fullname]?"
-    man "但是如果你不听，你会后悔的。还记得可爱的小[girl.fullname]吗?"
+    man "但是如果你不听，你会后悔的。还记得可爱的小[girl.fullname]吗？"
 
 # game/BKsecurity.rpy:1624
 translate chinese kidnap_tip_f4fadbf1:
@@ -862,13 +862,13 @@ translate chinese kidnap_tip_b311a25b:
 translate chinese kidnap_tip_fa9b38dc:
 
     # you "*sigh* How much?"
-    you "*叹息*多少?"
+    you "*叹息*多少？"
 
 # game/BKsecurity.rpy:1634
 translate chinese kidnap_tip_24238d43:
 
     # man "Well, we's talking about a rank [rk] chick here... Let's say [price] denars. A bargain for such information."
-    man "我们说的是一个阶级[rk]贱女人…让我们说[price]枚金币。为获得这样的信息而讨价还价。"
+    man "我们说的是一个阶级[rk]贱女人……让我们说[price]枚金币。为获得这样的信息而讨价还价。"
 
 # game/BKsecurity.rpy:1636
 translate chinese kidnap_tip_11fdb519:
@@ -892,19 +892,19 @@ translate chinese kidnap_tip_93086ceb:
 translate chinese kidnap_tip_67de6d2d:
 
     # man "Well... You know where to find me."
-    man "嗯…你知道在哪里能找到我。"
+    man "嗯……你知道在哪里能找到我。"
 
 # game/BKsecurity.rpy:1653
 translate chinese kidnap_tip_d9494cbc:
 
     # man "Well, I wouldn't count on that... Have it your way, friend."
-    man "好吧，我不指望…随你的便吧，朋友。"
+    man "好吧，我不指望……随你的便吧，朋友。"
 
 # game/BKsecurity.rpy:1663
 translate chinese kidnap_tip_f7939efc:
 
     # man "I have information about [girl.fullname] for [price] gold. Interested?"
-    man "我有关于[girl.fullname]的消息，[price]枚金币。感兴趣吗?"
+    man "我有关于[girl.fullname]的消息，[price]枚金币。感兴趣吗？"
 
 # game/BKsecurity.rpy:1665
 translate chinese kidnap_tip_11fdb519_1:
@@ -940,13 +940,13 @@ translate chinese kidnap_tip_d9494cbc_1:
 translate chinese kidnap_tip_cd15ccdf:
 
     # man "Thank you, kind sir!"
-    man "谢谢你，善良的先生!"
+    man "谢谢你，善良的先生！"
 
 # game/BKsecurity.rpy:1693
 translate chinese kidnap_tip_4afd0488:
 
     # man "Right then. [girl.name] was captured by [girl.kidnapper]. I know where their lair is..."
-    man "正确的。[girl.name]被[girl.kidnapper]抓获。我知道他们的巢穴在哪里…"
+    man "正确的。[girl.name]被[girl.kidnapper]抓获。我知道他们的巢穴在哪里……"
 
 # game/BKsecurity.rpy:1700
 translate chinese kidnap_tip_7423ebaa:
@@ -1018,7 +1018,7 @@ translate chinese kidnap_rescue_82ab3d83:
 translate chinese kidnap_rescue_90ddb2bf:
 
     # "Ogre" "Duh?"
-    "食人魔" "Duh?"
+    "食人魔" "Duh？"
 
 # game/BKsecurity.rpy:1807
 translate chinese kidnap_rescue_3057cbf5:
@@ -1042,7 +1042,7 @@ translate chinese kidnap_rescue_37a4cbde:
 translate chinese kidnap_rescue_5414534b:
 
     # man "What?!?"
-    man "什么? ! ?"
+    man "什么？！？"
 
 # game/BKsecurity.rpy:1829
 translate chinese kidnap_rescue_3b0d7b3a:
@@ -1240,43 +1240,43 @@ translate chinese strings:
 
     # game/BKsecurity.rpy:370
     old "Charge into the fray (use Strength to fight the enemy)"
-    new "加入战斗(使用力量与敌人战斗)"
+    new "加入战斗（使用力量与敌人战斗）"
 
     # game/BKsecurity.rpy:370
     old "Destroy their war machines (use Spirit to cast a spell on them)"
-    new "摧毁他们的战争机器(使用精神对他们施放法术)"
+    new "摧毁他们的战争机器（使用精神对他们施放法术）"
 
     # game/BKsecurity.rpy:370
     old "Lead from behind (use Charisma to improve your troops' morale)"
-    new "在后面指挥(使用魅力提高部队士气)"
+    new "在后面指挥（使用魅力提高部队士气）"
 
     # game/BKsecurity.rpy:370
     old "Challenge their leader (use Strength to attack the [enemy_g])"
-    new "挑战他们的首领(使用力量攻击[enemy_g])"
+    new "挑战他们的首领（使用力量攻击[enemy_g]）"
 
     # game/BKsecurity.rpy:370
     old "Challenge their leader (use Spirit to attack the [enemy_g])"
-    new "挑战他们的首领(使用精神攻击[enemy_g])"
+    new "挑战他们的首领（使用精神攻击[enemy_g]）"
 
     # game/BKsecurity.rpy:727
     old "Defend your girls (use Strength to fight the enemy)"
-    new "保护你的女孩们(使用力量与敌人战斗)"
+    new "保护你的女孩们（使用力量与敌人战斗）"
 
     # game/BKsecurity.rpy:727
     old "Protect your girls (use Spirit to shield some of your girls)"
-    new "保护你的女孩们(使用精神来保护一些女孩)"
+    new "保护你的女孩们（使用精神来保护一些女孩）"
 
     # game/BKsecurity.rpy:727
     old "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
-    new "鼓励你的女孩们去战斗(使用魅力提高她们战斗能力)"
+    new "鼓励你的女孩们去战斗（使用魅力提高她们战斗能力）"
 
     # game/BKsecurity.rpy:727
     old "Intercept their leader (use Strength to attack the [enemy_g])"
-    new "袭击他们的首领(使用力量攻击[enemy_g])"
+    new "袭击他们的首领（使用力量攻击[enemy_g]）"
 
     # game/BKsecurity.rpy:727
     old "Intercept their leader (use Spirit to attack the [enemy_g])"
-    new "袭击他们的首领(使用精神力攻击[enemy_g])"
+    new "袭击他们的首领（使用精神力攻击[enemy_g]）"
 
     # game/BKsecurity.rpy:1047
     old "What do you want to do with her?"
@@ -1300,7 +1300,7 @@ translate chinese strings:
 
     # game/BKsecurity.rpy:1635
     old "All right (pay [price] gold)"
-    new "好吧(支付[price]金币)"
+    new "好吧（支付[price]金币）"
 
     # game/BKsecurity.rpy:1635
     old "Maybe later (come back later)"
@@ -1308,7 +1308,7 @@ translate chinese strings:
 
     # game/BKsecurity.rpy:1635
     old "Forget it ([girl.fullname] will be lost forever)"
-    new "忘掉她吧([girl.fullname]将永远失去了)"
+    new "忘掉她吧（[girl.fullname]将永远失去了）"
 
     # game/BKsecurity.rpy:1711
     old "Do you want to try and rescue [girl.fullname] now?"
@@ -1337,3 +1337,4 @@ translate chinese strings:
     # game/BKsecurity.rpy:1989
     old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
     new "[girl.fullname]将于今天返回，你没有空余的房间分配给她"
+

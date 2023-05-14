@@ -1,28 +1,28 @@
-# TODO: Translation updated at 2022-03-01 21:22
+﻿# TODO: Translation updated at 2023-03-31 11:43
 
 # game/BKintro.rpy:48
 translate chinese intro_bf81a46e:
 
     # sill unknown "Master!"
-    sill unknown "主人!"
+    sill unknown "主人！"
 
 # game/BKintro.rpy:50
 translate chinese intro_f925164c:
 
     # sill "Master... {w}Please wake up!"
-    sill "主人……{w}请醒醒吧!"
+    sill "主人……{w}请醒醒吧！"
 
 # game/BKintro.rpy:62
 translate chinese intro_0ba2a2d5:
 
     # you "Sill?"
-    you "希露?"
+    you "希露？"
 
 # game/BKintro.rpy:70
 translate chinese intro_940d07b2:
 
     # sill happy "Yes, Master! Finally, you're awake."
-    sill happy "是的,主人!最后,你醒了。"
+    sill happy "是的，主人！最后，你醒了。"
 
 # game/BKintro.rpy:72
 translate chinese intro_f8993d61:
@@ -64,7 +64,7 @@ translate chinese intro_af45c227:
 translate chinese intro_a7ddb8ce:
 
     # "You set out...{w=1.0} {b}{color=[c_darkred]}to become a King!{/color}{/b}{w=1.0}{nw}"
-    "你想要去…{w=1.0} {b}{color=[c_darkred]}成为国王! {/color}{/b}{w=1.0}{nw}"
+    "你想要去……{w=1.0} {b}{color=[c_darkred]}成为国王！{/color}{/b}{w=1.0}{nw}"
 
 # game/BKintro.rpy:100
 translate chinese intro_0ae9bcd0:
@@ -100,7 +100,7 @@ translate chinese intro_540be635:
 translate chinese intro_982a6218:
 
     # you "Why did I keep her already?" nointeract
-    you "为什么我已经把她留下了?"
+    you "为什么我已经把她留下了？"
 
 # game/BKintro.rpy:143
 translate chinese intro_3ac23432:
@@ -112,7 +112,7 @@ translate chinese intro_3ac23432:
 translate chinese intro_24dd8b08:
 
     # you "Sell her and what, do my own laundry? Obedient slaves are so hard to come by these days..."
-    you "卖了她，我自己洗衣服?这些天来，顺从的奴隶是那么难找……"
+    you "卖了她，我自己洗衣服？这些天来，顺从的奴隶是那么难找……"
 
 # game/BKintro.rpy:156
 translate chinese intro_b0e996dc:
@@ -124,31 +124,31 @@ translate chinese intro_b0e996dc:
 translate chinese intro_f929963c:
 
     # you "Besides, we have some good memories... Like that time..." nointeract
-    you "此外，我们有一些美好的回忆…这样的时间……"
+    you "此外，我们有一些美好的回忆……这样的时间……"
 
 # game/BKintro.rpy:186
 translate chinese sill_first_time_f71df0c8:
 
     # sill past "Oh! Master! Oh!"
-    sill past "哦!主人!哦!"
+    sill past "哦！主人！哦！"
 
 # game/BKintro.rpy:188
 translate chinese sill_first_time_763b469c:
 
     # sill "I feel so... Aaaah..."
-    sill "我觉得很……啊…"
+    sill "我觉得很……啊……"
 
 # game/BKintro.rpy:194
 translate chinese sill_first_time_5ea97539:
 
     # sill "Oh, aaaah! Maaaster..."
-    sill "哦,啊!主、主人……"
+    sill "哦，啊！主、主人……"
 
 # game/BKintro.rpy:196
 translate chinese sill_first_time_f7af7d50:
 
     # sill "Master, aaaah... I'm... I'm comiiiiing!!!"
-    sill "主人,啊……我…我要去了 ! ! !"
+    sill "主人，啊……我……我要去了！！！"
 
 # game/BKintro.rpy:211
 translate chinese sill_public_48776f53:
@@ -160,19 +160,19 @@ translate chinese sill_public_48776f53:
 translate chinese sill_public_d3c22f00:
 
     # you "Hahaha... Let them look!"
-    you "哈哈哈……让他们看!"
+    you "哈哈哈……让他们看！"
 
 # game/BKintro.rpy:213
 translate chinese sill_public_0e78f42b:
 
     # you "I bet they've never seen a cock-hungry slave like you sucking a dick from up close!"
-    you "我敢打赌，他们从来没有见过像你这样一个渴望鸡巴的奴隶近距离吮吸一个鸡巴!"
+    you "我敢打赌，他们从来没有见过像你这样一个渴望鸡巴的奴隶近距离吮吸一个鸡巴！"
 
 # game/BKintro.rpy:215
 translate chinese sill_public_c6cdb8e4:
 
     # sill "Mahher!!! Donh't..."
-    sill "主、主人 ! ! !不要…"
+    sill "主、主人！！！不要……"
 
 # game/BKintro.rpy:228
 translate chinese sill_spank_e4ce544c:
@@ -184,19 +184,19 @@ translate chinese sill_spank_e4ce544c:
 translate chinese sill_spank_daa03f08:
 
     # sill "Ow!"
-    sill "噢!"
+    sill "噢！"
 
 # game/BKintro.rpy:236
 translate chinese sill_spank_e4e7a0e4:
 
     # you "Silence, whore! You will only talk when addressed."
-    you "安静,婊子!我叫到你你才能说话。"
+    you "安静，婊子！我叫到你你才能说话。"
 
 # game/BKintro.rpy:242
 translate chinese sill_spank_00bb4f90:
 
     # sill "AAAHA!"
-    sill "啊!!!"
+    sill "啊！！！"
 
 # game/BKintro.rpy:244
 translate chinese sill_spank_72b85e3e:
@@ -214,31 +214,31 @@ translate chinese sill_spank_f23b4c09:
 translate chinese sill_spank_dc795e73:
 
     # sill "Aaaah!!!"
-    sill "啊!!!"
+    sill "啊！！！"
 
 # game/BKintro.rpy:265
 translate chinese resume_intro_131476a8:
 
     # sill happy "...and that's how the Pharo dynasty rose to power in Zan, or so the innkeeper said. Fascinating story, isn't it, Master?"
-    sill happy "…这就是法老王朝如何在赞取得权力的，至少客栈老板是这么说的。很有趣的故事，不是吗，主人?"
+    sill happy "……这就是法老王朝如何在赞取得权力的，至少客栈老板是这么说的。很有趣的故事，不是吗，主人？"
 
 # game/BKintro.rpy:274
 translate chinese resume_intro_05abe805:
 
     # sill sad "Master? Were you listening?"
-    sill sad "主人?是你在听吗?"
+    sill sad "主人？是你在听吗？"
 
 # game/BKintro.rpy:276
 translate chinese resume_intro_a832ca80:
 
     # you "Uh... Well..."
-    you "嗯…嗯…"
+    you "嗯……嗯……"
 
 # game/BKintro.rpy:278
 translate chinese resume_intro_daf95156:
 
     # sill happy "Look, Master! We've reached the outer wall!"
-    sill happy "看,主人!我们已经到达外墙了!"
+    sill happy "看，主人！我们已经到达外墙了！"
 
 # game/BKintro.rpy:286
 translate chinese resume_intro_b98dd8c2:
@@ -262,7 +262,7 @@ translate chinese resume_intro_cb58d8be:
 translate chinese resume_intro_90cd0a74:
 
     # "A perfect place for an adventurous soul to make a fresh start..."
-    "一个冒险的灵魂重新开始的完美地方…"
+    "一个冒险的灵魂重新开始的完美地方……"
 
 # game/BKintro.rpy:296
 translate chinese resume_intro_c143bd20:
@@ -274,25 +274,25 @@ translate chinese resume_intro_c143bd20:
 translate chinese resume_intro_076bb3ac:
 
     # guard "Who goes there?"
-    guard "来人是谁?"
+    guard "来人是谁？"
 
 # game/BKintro.rpy:302
 translate chinese resume_intro_5a1a4c43:
 
     # guard "[MC.name]? Odd name, for sure."
-    guard "[MC.name]?名字肯定很奇怪。"
+    guard "[MC.name]？名字肯定很奇怪。"
 
 # game/BKintro.rpy:304
 translate chinese resume_intro_3f917070:
 
     # sill happy "I am but a slave, sir. My name is..."
-    sill happy "我只是个奴隶，先生。我的名字是..."
+    sill happy "我只是个奴隶，先生。我的名字是……"
 
 # game/BKintro.rpy:306
 translate chinese resume_intro_4641be11:
 
     # guard "Silence, slave! No one cares who you are." with vpunch
-    guard "别作声,奴隶!没人在乎你是谁。"
+    guard "别作声，奴隶！没人在乎你是谁。"
 
 # game/BKintro.rpy:308
 translate chinese resume_intro_bfbe5329:
@@ -340,7 +340,7 @@ translate chinese resume_intro_0cdfd5f0:
 translate chinese resume_intro_bc90bf67:
 
     # "Still, your set of skills is always in demand in Xeros. Time will tell if life in Zan will allow you to put your swords down for good..."
-    "不过，你的技能在Xeros总是很受欢迎。时间会告诉我们，在赞的生活是否会让你永远放下你的剑…"
+    "不过，你的技能在克塞罗斯总是很受欢迎。时间会告诉我们，在赞的生活是否会让你永远放下你的剑……"
 
 # game/BKintro.rpy:335
 translate chinese resume_intro_f1792448:
@@ -412,7 +412,7 @@ translate chinese resume_intro_30c09359:
 translate chinese resume_intro_8ce983bf:
 
     # guard "A wizard!"
-    guard "一名巫师!"
+    guard "一名巫师！"
 
 # game/BKintro.rpy:374
 translate chinese resume_intro_0a68ea71:
@@ -472,7 +472,7 @@ translate chinese resume_intro_d0a005e0:
 translate chinese resume_intro_7539a6ae:
 
     # "Amazingly, you made it to Hokoma with only a few casualties, and most of your wares still intact."
-    "令人惊讶的是，你到达了Hokoma，只有一些人受伤，而你的大部分货物仍然完好无损。"
+    "令人惊讶的是，你到达了北马，只有一些人受伤，而你的大部分货物仍然完好无损。"
 
 # game/BKintro.rpy:404
 translate chinese resume_intro_543e9649:
@@ -496,7 +496,7 @@ translate chinese resume_intro_7b27127e:
 translate chinese resume_intro_74809783:
 
     # guard "A peddler, eh? You don't seem to have a lot of goods about. Seen better luck, haven't you?"
-    guard "一个小贩,嗯?你好像没有什么好东西。祝你好运，不是吗?"
+    guard "一个小贩，嗯？你好像没有什么好东西。祝你好运，不是吗？"
 
 # game/BKintro.rpy:418
 translate chinese resume_intro_dde54fb6:
@@ -508,13 +508,13 @@ translate chinese resume_intro_dde54fb6:
 translate chinese resume_intro2_b7df2a5a:
 
     # guard "One more thing. Which god do you worship, [MC.playerclass]?"
-    guard "还有一件事. 你的信仰是什么，[MC.playerclass]?"
+    guard "还有一件事. 你的信仰是什么，[MC.playerclass]？"
 
 # game/BKintro.rpy:428
 translate chinese resume_intro2_4bf8fadb:
 
     # you "Me?" nointeract
-    you "我吗?" nointeract
+    you "我吗？" nointeract
 
 # game/BKintro.rpy:434
 translate chinese resume_intro2_4fb17e63:
@@ -538,7 +538,7 @@ translate chinese resume_intro2_4708be52:
 translate chinese resume_intro2_32b8a21b:
 
     # guard "What have we here, a free thinker? You must think oh so highly of yourself, not needing the protection of gods and all?"
-    guard "我们这里有什么，一个自由思想者?你一定自以为了不起，不需要神和一切的保护吧?"
+    guard "我们这里有什么，一个自由思想者？你一定自以为了不起，不需要神和一切的保护吧？"
 
 # game/BKintro.rpy:451
 translate chinese resume_intro2_81fcfecc:
@@ -556,7 +556,7 @@ translate chinese resume_intro2_3075dc9d:
 translate chinese resume_intro2_99b3765e:
 
     # sill sad "Aw, what a bully..."
-    sill sad "哇哦，简直就是个恶霸..."
+    sill sad "哇哦，简直就是个恶霸……"
 
 # game/BKintro.rpy:461
 translate chinese resume_intro2_def9a5b2:
@@ -574,7 +574,7 @@ translate chinese resume_intro2_5508145a:
 translate chinese resume_intro2_becd0c06:
 
     # you "Oh no..."
-    you "哦,不……"
+    you "哦，不……"
 
 # game/BKintro.rpy:474
 translate chinese resume_intro2_4f426239:
@@ -586,13 +586,13 @@ translate chinese resume_intro2_4f426239:
 translate chinese resume_intro2_0568131e:
 
     # you "Sill, hurry up! We have to find an inn."
-    you "希露,快点!我们得找个客栈。"
+    you "希露，快点！我们得找个客栈。"
 
 # game/BKintro.rpy:484
 translate chinese resume_intro2_e40f6f18:
 
     # sill sad "Yes Master, *pants*, I'm doing the best I can... *pants*"
-    sill sad "是的，主人，*喘气*，我正在尽我所能…*喘气*"
+    sill sad "是的，主人，*喘气*，我正在尽我所能……*喘气*"
 
 # game/BKintro.rpy:486
 translate chinese resume_intro2_f0c16af5:
@@ -604,19 +604,19 @@ translate chinese resume_intro2_f0c16af5:
 translate chinese resume_intro2_5de258a0:
 
     # you "Hurry up now will you... What's that?"
-    you "快点，好吗?那是什么?"
+    you "快点，好吗？那是什么？"
 
 # game/BKintro.rpy:495
 translate chinese resume_intro2_67705f15:
 
     # kuro "Aaaaaaah!" with vpunch
-    kuro "Aaaaaaah !"
+    kuro "啊哈！"
 
 # game/BKintro.rpy:497
 translate chinese resume_intro2_cf35385d:
 
     # kuro "Help me!"
-    kuro "帮帮我!"
+    kuro "帮帮我！"
 
 # game/BKintro.rpy:499
 translate chinese resume_intro2_96d4e3af:
@@ -634,31 +634,31 @@ translate chinese resume_intro2_130943ef:
 translate chinese resume_intro2_b9ca7b9f:
 
     # you "What's going on here?"
-    you "这是怎么回事?"
+    you "这是怎么回事？"
 
 # game/BKintro.rpy:518
 translate chinese resume_intro2_ee6ec26a:
 
     # kuro "Please, my good lord, please help me! These men are here to kill me!"
-    kuro "求求你，我的贵人，求求你帮帮我!这些人是来杀我的!"
+    kuro "求求你，我的贵人，求求你帮帮我！这些人是来杀我的！"
 
 # game/BKintro.rpy:529
 translate chinese resume_intro2_ee17d404:
 
     # thug1 "Now, now, citizen, don't you listen to that lying bitch. We're here on... official business."
-    thug1 "好了，好了，公民，你别听那个说谎的婊子的话。我们在这里…是在执行公务。"
+    thug1 "好了，好了，公民，你别听那个说谎的婊子的话。我们在这里……是在执行公务。"
 
 # game/BKintro.rpy:531
 translate chinese resume_intro2_79f324db:
 
     # thug2 "Yeah, orficial..."
-    thug2 "是的,只是公--务……"
+    thug2 "是的，只是公--务……"
 
 # game/BKintro.rpy:532
 translate chinese resume_intro2_214c66ae:
 
     # thug1 "'n we're just takin' her to be... interrogated."
-    thug1 "我们只是把她带去…审问。"
+    thug1 "我们只是把她带去……审问。"
 
 # game/BKintro.rpy:533
 translate chinese resume_intro2_ac49d471:
@@ -670,37 +670,37 @@ translate chinese resume_intro2_ac49d471:
 translate chinese resume_intro2_d3f90e66:
 
     # thug1 "So no cause for alarm, here, you see... Now be on your way, citizen, for your own sake."
-    thug1 "所以不用担心，你看…现在你走吧，公民，为了你自己。"
+    thug1 "所以不用担心，你看……现在你走吧，公民，为了你自己。"
 
 # game/BKintro.rpy:536
 translate chinese resume_intro2_82a29aa8:
 
     # thug2 "Yeah, that's none of yer business! So back off, will ye."
-    thug2 "是啊，那不关你的事!所以退后，好吗?"
+    thug2 "是啊，那不关你的事！所以退后，好吗？"
 
 # game/BKintro.rpy:538
 translate chinese resume_intro2_dae0ec55:
 
     # you "..."
-    you "…"
+    you "……"
 
 # game/BKintro.rpy:540
 translate chinese resume_intro2_4f635bd8:
 
     # you "Did you think I'd fall for that, punks?"
-    you "朋克们，你们以为我会上当吗?"
+    you "朋克们，你们以为我会上当吗？"
 
 # game/BKintro.rpy:550
 translate chinese resume_intro2_9a03745f:
 
     # you "Well, what do we have here?"
-    you "我们得到了什么?"
+    you "我们得到了什么？"
 
 # game/BKintro.rpy:555
 translate chinese resume_intro2_ee6ec26a_1:
 
     # kuro "Please, my good lord, please help me! These men are here to kill me!"
-    kuro "求求你，我的贵人，求求你帮帮我!这些人是来杀我的!"
+    kuro "求求你，我的贵人，求求你帮帮我！这些人是来杀我的！"
 
 # game/BKintro.rpy:565
 translate chinese resume_intro2_e2d41a8f:
@@ -718,7 +718,7 @@ translate chinese resume_intro2_0450b8ad:
 translate chinese resume_intro2_1269d5ec:
 
     # you "Such bravery! They'll sing songs about you!"
-    you "太有勇气了!也许会有人歌颂你们的赞歌的!"
+    you "太有勇气了！也许会有人歌颂你们的赞歌的！"
 
 # game/BKintro.rpy:571
 translate chinese resume_intro2_f2eac70c:
@@ -730,55 +730,55 @@ translate chinese resume_intro2_f2eac70c:
 translate chinese resume_intro2_0a1007aa:
 
     # thug1 "Careful boy... This is not your fight, so back off now!"
-    thug1 "小心点，小子……我再次警告你，这不关你的事，所以现在马上滚开!"
+    thug1 "小心点，小子……我再次警告你，这不关你的事，所以现在马上滚开！"
 
 # game/BKintro.rpy:574
 translate chinese resume_intro2_432508f5:
 
     # you "So those are the faces of cowardice... Ugly faces, to be sure..."
-    you "这些都是懦弱的表现…显然都只是一些令人厌恶的面孔..."
+    you "这些都是懦弱的表现……显然都只是一些令人厌恶的面孔……"
 
 # game/BKintro.rpy:576
 translate chinese resume_intro2_b8870258:
 
     # thug2 "Whaddaya mean by that, the feces of kawadice? Speak proper Xerossi, dammit!"
-    thug2 "卡瓦迪斯的粪便是什么意思?说准确点Xerossi，该死!"
+    thug2 "卡瓦迪斯的粪便是什么意思？说准确点克塞罗斯，该死！"
 
 # game/BKintro.rpy:578
 translate chinese resume_intro2_680bb97e:
 
     # you "It means you're a big, nasty piece of shit, and that I'll have to clean up my boot real good after I shove it in your face!"
-    you "意思是你是个又大又脏的狗屎，我把靴子塞到你脸上后，我得好好把它擦干净!"
+    you "意思是你是个又大又脏的狗屎，我把靴子塞到你脸上后，我得好好把它擦干净！"
 
 # game/BKintro.rpy:580
 translate chinese resume_intro2_40a44b4f:
 
     # thug2 "Ya hear that cousin? He's ansultin' us! Let's take him!!!"
-    thug2 "你听到他说的话吗?表哥，他在骂我们!让我们把他干掉! ! !"
+    thug2 "你听到他说的话吗？表哥，他在骂我们！让我们把他干掉！！！"
 
 # game/BKintro.rpy:593
 translate chinese resume_intro2_22f082a2:
 
     # kuro "Help me! These men are here to kill me!"
-    kuro "帮帮我!这些人是来杀我的!"
+    kuro "帮帮我！这些人是来杀我的！"
 
 # game/BKintro.rpy:595
 translate chinese resume_intro2_4e4ccc22:
 
     # you "This is none of my concern... Sill, let's go."
-    you "这不关我的事。希露,我们走吧。"
+    you "这不关我的事。希露，我们走吧。"
 
 # game/BKintro.rpy:597
 translate chinese resume_intro2_d1859b15:
 
     # kuro "Please, someone, anyone! Please help!"
-    kuro "帮帮我，无论如何，求求你!请帮帮我!"
+    kuro "帮帮我，无论如何，求求你！请帮帮我！"
 
 # game/BKintro.rpy:599
 translate chinese resume_intro2_205d0e30:
 
     # sill "But... Master..."
-    sill "但是…主人……"
+    sill "但是……主人……"
 
 # game/BKintro.rpy:601
 translate chinese resume_intro2_4b2b913c:
@@ -790,19 +790,19 @@ translate chinese resume_intro2_4b2b913c:
 translate chinese resume_intro2_0bb92939:
 
     # thug1 "Wait a minute!"
-    thug1 "等一下!"
+    thug1 "等一下！"
 
 # game/BKintro.rpy:609
 translate chinese resume_intro2_f60bc48e:
 
     # thug1 "What have we here?"
-    thug1 "谁在那儿?"
+    thug1 "谁在那儿？"
 
 # game/BKintro.rpy:611
 translate chinese resume_intro2_d1a28bc3:
 
     # thug1 "So you two little birds have been eavesdropping, uh?"
-    thug1 "你们这两只小杂碎一直在偷听?"
+    thug1 "你们这两只小杂碎一直在偷听？"
 
 # game/BKintro.rpy:613
 translate chinese resume_intro2_2043e3eb:
@@ -814,31 +814,31 @@ translate chinese resume_intro2_2043e3eb:
 translate chinese resume_intro2_07e4fe09:
 
     # thug2 "What were they droppin', cousin?"
-    thug2 "他们在干嘛，表哥?"
+    thug2 "他们在干嘛，表哥？"
 
 # game/BKintro.rpy:621
 translate chinese resume_intro2_06bb64be:
 
     # thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know what the boss said... No witnesses."
-    thug1 "他们在偷听！你个白痴!干他妈的，他们已经听到我们讲的话了，你知道老板说了什么吗——不能有目击者！"
+    thug1 "他们在偷听！你个白痴！干他妈的，他们已经听到我们讲的话了，你知道老板说了什么吗——不能有目击者！"
 
 # game/BKintro.rpy:624
 translate chinese resume_intro2_c64729da:
 
     # thug2 "Oh, that's right..."
-    thug2 "喔...好像是这样说过..."
+    thug2 "喔……好像是这样说过……"
 
 # game/BKintro.rpy:626
 translate chinese resume_intro2_28266d6e:
 
     # thug2 "Hey, cousin, did you see that lil' hotty, with the pink hair?"
-    thug2 "嘿，表哥，你看见那个粉红色头发的小辣妹了吗?"
+    thug2 "嘿，表哥，你看见那个粉红色头发的小辣妹了吗？"
 
 # game/BKintro.rpy:628
 translate chinese resume_intro2_8725e437:
 
     # thug2 "I'm gonna have me some fun with her! After we're through with the noble bitch..."
-    thug2 "在我们干掉那清高的婊子之后，我再和她慢慢地玩个开心…"
+    thug2 "在我们干掉那清高的婊子之后，我再和她慢慢地玩个开心……"
 
 # game/BKintro.rpy:631
 translate chinese resume_intro2_dae0ec55_1:
@@ -856,13 +856,13 @@ translate chinese resume_intro2_742abcd0:
 translate chinese resume_intro3_be6b0d0b:
 
     # thug1 "..."
-    thug1 "…"
+    thug1 "……"
 
 # game/BKintro.rpy:642
 translate chinese resume_intro3_9e8680b8:
 
     # thug1 "All right, then... You just dug your own grave, you nosy bastard!"
-    thug1 "好了,然后……你给我去死吧，你这个爱管闲事的混蛋!"
+    thug1 "好了，然后……你给我去死吧，你这个爱管闲事的混蛋！"
 
 # game/BKintro.rpy:645
 translate chinese resume_intro3_a0a7cf74:
@@ -886,19 +886,19 @@ translate chinese resume_intro3_246de6a5:
 translate chinese resume_intro3_55110f61:
 
     # sill "Yes Master!"
-    sill "是的主人!"
+    sill "是的主人！"
 
 # game/BKintro.rpy:655
 translate chinese resume_intro3_6ca466a2:
 
     # kuro "Watch out!"
-    kuro "小心!"
+    kuro "小心！"
 
 # game/BKintro.rpy:663
 translate chinese resume_intro3_490b47c3:
 
     # thug1 "Now..."
-    thug1 "现在…"
+    thug1 "现在……"
 
 # game/BKintro.rpy:664
 translate chinese resume_intro3_f2eac70c:
@@ -910,19 +910,19 @@ translate chinese resume_intro3_f2eac70c:
 translate chinese resume_intro3_9e399200:
 
     # thug1 "DIE!"
-    thug1 "给我去——死!"
+    thug1 "给我去——死！"
 
 # game/BKintro.rpy:669
 translate chinese resume_intro3_c50523ee:
 
     # you "Haa!"
-    you "Haa !"
+    you "Haa!"
 
 # game/BKintro.rpy:674
 translate chinese resume_intro3_882c8269:
 
     # thug1 "Aaaw!"
-    thug1 "Aaaw !"
+    thug1 "Aaaw!"
 
 # game/BKintro.rpy:681
 translate chinese resume_intro3_d423ad70:
@@ -934,7 +934,7 @@ translate chinese resume_intro3_d423ad70:
 translate chinese resume_intro3_b6b6e8fe:
 
     # thug2 "Aaaaargh!!!"
-    thug2 "哎唷! ! !"
+    thug2 "哎唷！！！"
 
 # game/BKintro.rpy:687
 translate chinese resume_intro3_bf2dea4c:
@@ -958,13 +958,13 @@ translate chinese resume_intro3_c034af85:
 translate chinese resume_intro3_a2fbc6f3:
 
     # you "Shazam!"
-    you "变!"
+    you "变！"
 
 # game/BKintro.rpy:715
 translate chinese resume_intro3_a40fe476:
 
     # thug2 "AAAAAAAAARRRRRRRRHHHHHHHHH!!!"
-    thug2 "AAAAAAAAARRRRRRRRHHHHHHHHH ! ! !"
+    thug2 "AAAAAAAAARRRRRRRRHHHHHHHHH!!!"
 
 # game/BKintro.rpy:718
 translate chinese resume_intro3_09425a4b:
@@ -976,7 +976,7 @@ translate chinese resume_intro3_09425a4b:
 translate chinese resume_intro3_c7346051:
 
     # thug1 "Cou... cousin?"
-    thug1 "表……表哥?"
+    thug1 "表……表哥？"
 
 # game/BKintro.rpy:725
 translate chinese resume_intro3_e7dfe71e:
@@ -988,13 +988,13 @@ translate chinese resume_intro3_e7dfe71e:
 translate chinese resume_intro3_1313268c:
 
     # thug1 "What?"
-    thug1 "什么?"
+    thug1 "什么？"
 
 # game/BKintro.rpy:736
 translate chinese resume_intro3_94f2e604:
 
     # drogon "Hyarrrrrrr!"
-    drogon "Hyarrrrrrr !"
+    drogon "Hyarrrrrrr!"
 
 # game/BKintro.rpy:740
 translate chinese resume_intro3_71362c76:
@@ -1006,37 +1006,37 @@ translate chinese resume_intro3_71362c76:
 translate chinese resume_intro3_11198b56:
 
     # thug2 "AAAAARRRRRRGHHH!!!"
-    thug2 "AAAAARRRRRRGHHH ! ! !"
+    thug2 "AAAAARRRRRRGHHH!!!"
 
 # game/BKintro.rpy:752
 translate chinese resume_intro3_782c1539:
 
     # thug1 "Wh... What sorcery is this???"
-    thug1 "什...什么,这是巫术?"
+    thug1 "什……什么，这是巫术？"
 
 # game/BKintro.rpy:754
 translate chinese resume_intro3_80feca77:
 
     # you "Haha! Meet Drogon, my pet."
-    you "哈哈!见见卓耿，我的宠物。"
+    you "哈哈！见见卓耿，我的宠物。"
 
 # game/BKintro.rpy:757
 translate chinese resume_intro3_7a51c857:
 
     # drogon "Rrrr!"
-    drogon "Rrrr !"
+    drogon "Rrrr!"
 
 # game/BKintro.rpy:762
 translate chinese resume_intro3_8ebc5922:
 
     # thug1 "A pet... Dragon???"
-    thug1 "一个宠物……龙? ? ?"
+    thug1 "一个宠物……龙？？？"
 
 # game/BKintro.rpy:764
 translate chinese resume_intro3_99e82bfa:
 
     # you "Yes, a pet dragon! I acquired this one in the far East, all the way across the Blood Sea, when he was but an egg."
-    you "是的，一只宠物龙!我在遥远的东方，在血海的另一边得到了这只蛋，那时它还只是一只蛋。"
+    you "是的，一只宠物龙！我在遥远的东方，在血海的另一边得到了这只蛋，那时它还只是一只蛋。"
 
 # game/BKintro.rpy:767
 translate chinese resume_intro3_035d8eb1:
@@ -1048,13 +1048,13 @@ translate chinese resume_intro3_035d8eb1:
 translate chinese resume_intro3_00dee828:
 
     # you "Do you want to be his next snack so badly?"
-    you "你真的想成为他的下一个零食吗?"
+    you "你真的想成为他的下一个零食吗？"
 
 # game/BKintro.rpy:775
 translate chinese resume_intro3_455ad294:
 
     # thug1 "You... Damn you!"
-    thug1 "你……该死的你!"
+    thug1 "你……该死的你！"
 
 # game/BKintro.rpy:783
 translate chinese resume_intro3_dd8ea13a:
@@ -1072,31 +1072,31 @@ translate chinese resume_intro3_b48937e9:
 translate chinese resume_intro3_cd0570d6:
 
     # sill "Well, Drogon did most of the work! Teehee..."
-    sill "嗯，大部分工作都是卓耿做的!嘻嘻……"
+    sill "嗯，大部分工作都是卓耿做的！嘻嘻……"
 
 # game/BKintro.rpy:808
 translate chinese resume_intro3_b7fca918:
 
     # drogon "Rrrrh!"
-    drogon "Rrrrh !"
+    drogon "Rrrrh!"
 
 # game/BKintro.rpy:810
 translate chinese resume_intro3_353b9b49:
 
     # sill "You're tired now, aren't you? Poor little baby is too young to fight..."
-    sill "你现在累了，是吗?可怜的家伙太小了，还不能打架……"
+    sill "你现在累了，是吗？可怜的家伙太小了，还不能打架……"
 
 # game/BKintro.rpy:812
 translate chinese resume_intro3_2d73c6bc:
 
     # you "Shut up, you two!"
-    you "闭嘴，你们两个!"
+    you "闭嘴，你们两个！"
 
 # game/BKintro.rpy:818
 translate chinese resume_intro3_318843c0:
 
     # sill happy "Yes! Master is the best!"
-    sill happy "是的!主人是最好的!"
+    sill happy "是的！主人是最好的！"
 
 # game/BKintro.rpy:820
 translate chinese resume_intro3_fe3dcf1c:
@@ -1132,7 +1132,7 @@ translate chinese resume_intro3_cdb8eeea:
 translate chinese resume_intro3_ea211000:
 
     # sill "But wait, who..."
-    sill "但...等等,谁..."
+    sill "但……等等，谁……"
 
 # game/BKintro.rpy:836
 translate chinese resume_intro3_37d7d16a:
@@ -1162,7 +1162,7 @@ translate chinese resume_intro3_5612471a:
 translate chinese resume_intro3_7c928c6e:
 
     # you "She looked like a high-born lady, and attractive to boot. This might be my lucky day..."
-    you "她看上去像一位出身高贵的女士，而且很有魅力。今天可能是我的幸运日…"
+    you "她看上去像一位出身高贵的女士，而且很有魅力。今天可能是我的幸运日……"
 
 # game/BKintro.rpy:854
 translate chinese resume_intro3_337f8f73:
@@ -1174,13 +1174,13 @@ translate chinese resume_intro3_337f8f73:
 translate chinese resume_intro3_a20cefa7:
 
     # "..."
-    "…"
+    "……"
 
 # game/BKintro.rpy:862
 translate chinese resume_intro3_70395f9c:
 
     # maid "What is it?"
-    maid "谁在那?"
+    maid "谁在那？"
 
 # game/BKintro.rpy:864
 translate chinese resume_intro3_68242a65:
@@ -1192,7 +1192,7 @@ translate chinese resume_intro3_68242a65:
 translate chinese resume_intro3_546511ce:
 
     # maid "..."
-    maid "…"
+    maid "……"
 
 # game/BKintro.rpy:868
 translate chinese resume_intro3_755a7541:
@@ -1234,19 +1234,19 @@ translate chinese resume_intro3_ef714159:
 translate chinese resume_intro3_7acb4654:
 
     # you "Greetings, master Gio. My name is..."
-    you "你好，吉欧大人。我的名字是…"
+    you "你好，吉欧大人。我的名字是……"
 
 # game/BKintro.rpy:901
 translate chinese resume_intro3_901defd2:
 
     # gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among friends."
-    gio "我知道你是谁。[MC.name], 一位来自远方[MC.playerclass]。和朋友们在一起坐下来放松一下。"
+    gio "我知道你是谁。[MC.name]，一位来自远方[MC.playerclass]。和朋友们在一起坐下来放松一下。"
 
 # game/BKintro.rpy:904
 translate chinese resume_intro3_ffdd600a:
 
     # you "Wait... How?"
-    you "等等... 这?"
+    you "等等…… 这？"
 
 # game/BKintro.rpy:906
 translate chinese resume_intro3_a909eda0:
@@ -1264,7 +1264,7 @@ translate chinese resume_intro3_26d0f85b:
 translate chinese resume_intro3_7bb98c3e:
 
     # you "I see. Gio, I apologize for the late hour..."
-    you "我明白了。吉欧，我为这个时候还叨扰你而道歉…"
+    you "我明白了。吉欧，我为这个时候还叨扰你而道歉……"
 
 # game/BKintro.rpy:913
 translate chinese resume_intro3_c3a9758c:
@@ -1276,19 +1276,19 @@ translate chinese resume_intro3_c3a9758c:
 translate chinese resume_intro3_3f1f5faa:
 
     # you "The Princess?"
-    you "公主吗?"
+    you "公主吗？"
 
 # game/BKintro.rpy:920
 translate chinese resume_intro3_64fb6224:
 
     # gio "Ah, yes of course, the Princess. Could it be you don't know who she is?"
-    gio "啊，当然可以，公主。难道你不知道她是谁?"
+    gio "啊，当然可以，公主。难道你不知道她是谁？"
 
 # game/BKintro.rpy:922
 translate chinese resume_intro3_953b7d09:
 
     # gio "You're from a faraway land, I forgot..."
-    gio "你来自一个遥远的国度，我忘了…"
+    gio "你来自一个遥远的国度，我忘了……"
 
 # game/BKintro.rpy:924
 translate chinese resume_intro3_cd78e6c7:
@@ -1300,13 +1300,13 @@ translate chinese resume_intro3_cd78e6c7:
 translate chinese resume_intro3_9c1aa295:
 
     # sill sad "Wait! Don't leave us hanging there!"
-    sill sad "等等!别把我们晾在那儿!"
+    sill sad "等等！别把我们晾在那儿！"
 
 # game/BKintro.rpy:929
 translate chinese resume_intro3_fe43fc3c:
 
     # gio "Hahahaha! I got where I am now by asking questions, not answering them, little girl."
-    gio "哈哈哈!我能走到今天，靠的是问问题，而不是回答问题，小姑娘。"
+    gio "哈哈哈！我能走到今天，靠的是问问题，而不是回答问题，小姑娘。"
 
 # game/BKintro.rpy:931
 translate chinese resume_intro3_7fbdda74:
@@ -1330,7 +1330,7 @@ translate chinese resume_intro3_42a832d7:
 translate chinese resume_intro3_498e574c:
 
     # gio "The Princess mentioned a certain sum of money... {w}That I don't have available right now."
-    gio "公主提到了给你一笔钱... {w}可我现在唯独没有准备这个。"
+    gio "公主提到了给你一笔钱…… {w}可我现在唯独没有准备这个。"
 
 # game/BKintro.rpy:939
 translate chinese resume_intro3_c81a54ef:
@@ -1348,7 +1348,7 @@ translate chinese resume_intro3_e71459ee:
 translate chinese resume_intro3_a2738123:
 
     # gio "But wait... It is my understanding that you have come to the city to strike it rich, am I right?"
-    gio "但是等待…据我所知，你来这座城市是为了发财，对吗?"
+    gio "但是等待……据我所知，你来这座城市是为了发财，对吗？"
 
 # game/BKintro.rpy:946
 translate chinese resume_intro3_dae0ec55:
@@ -1360,7 +1360,7 @@ translate chinese resume_intro3_dae0ec55:
 translate chinese resume_intro3_ebba0da0:
 
     # gio "So I am ready to offer you something a lot better than petty cash... And of similar value to the reward the Princess wanted me to give you."
-    gio "所以我准备给你一些比零用现金更好的东西…和公主要我给你的奖赏价值相当。"
+    gio "所以我准备给你一些比零用现金更好的东西……和公主要我给你的奖赏价值相当。"
 
 # game/BKintro.rpy:951
 translate chinese resume_intro3_a9bcb5b5:
@@ -1372,19 +1372,19 @@ translate chinese resume_intro3_a9bcb5b5:
 translate chinese resume_intro3_107b2420:
 
     # gio "What do you know about power, young man?"
-    gio "年轻人，你对力量了解多少?"
+    gio "年轻人，你对力量了解多少？"
 
 # game/BKintro.rpy:955
 translate chinese resume_intro3_9ceef99f:
 
     # you "Power?"
-    you "力量?"
+    you "力量？"
 
 # game/BKintro.rpy:957
 translate chinese resume_intro3_40005353:
 
     # gio "Yes. What is power?"
-    gio "是的。什么是力量?"
+    gio "是的。什么是力量？"
 
 # game/BKintro.rpy:959
 translate chinese resume_intro3_3c7ec6d4:
@@ -1426,7 +1426,7 @@ translate chinese resume_intro3_ab2d04c8:
 translate chinese resume_intro3_043ed033:
 
     # you "Then what?"
-    you "又怎么样?"
+    you "又怎么样？"
 
 # game/BKintro.rpy:976
 translate chinese resume_intro3_61b610f9:
@@ -1438,7 +1438,7 @@ translate chinese resume_intro3_61b610f9:
 translate chinese resume_intro3_cdd9076e:
 
     # you "Uh?"
-    you "呃?"
+    you "呃？"
 
 # game/BKintro.rpy:980
 translate chinese resume_intro3_cd2ed6fd:
@@ -1450,13 +1450,13 @@ translate chinese resume_intro3_cd2ed6fd:
 translate chinese resume_intro3_076c2404:
 
     # sill "S... Sex?"
-    sill "性……性?"
+    sill "性……性？"
 
 # game/BKintro.rpy:984
 translate chinese resume_intro3_55e1dee0:
 
     # gio "Yes, sex! Everything is about sex, sweetheart... Except sex."
-    gio "是的,性!一切都是关于性的，亲爱的…除了性不会有其他的答案。"
+    gio "是的，性！一切都是关于性的，亲爱的……除了性不会有其他的答案。"
 
 # game/BKintro.rpy:986
 translate chinese resume_intro3_622ebecb:
@@ -1468,19 +1468,19 @@ translate chinese resume_intro3_622ebecb:
 translate chinese resume_intro3_24353786:
 
     # sill "..."
-    sill "…"
+    sill "……"
 
 # game/BKintro.rpy:990
 translate chinese resume_intro3_9ad01cba:
 
     # you "Fascinating lecture, professor, but can we move on to the part about my reward?"
-    you "很精彩的演讲，教授，我们能继续讲我的奖励吗?"
+    you "很精彩的演讲，教授，我们能继续讲我的奖励吗？"
 
 # game/BKintro.rpy:992
 translate chinese resume_intro3_51740d96:
 
     # gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you think pulls the strings of our stupid king and his clique?"
-    gio "啊，是的，我那急躁的朋友。你认为这个城市的驱动力是什么?你认为是谁在操纵我们愚蠢的国王和他的小集团?"
+    gio "啊，是的，我那急躁的朋友。你认为这个城市的驱动力是什么？你认为是谁在操纵我们愚蠢的国王和他的小集团？"
 
 # game/BKintro.rpy:999
 translate chinese resume_intro3_b96e91b1:
@@ -1504,13 +1504,13 @@ translate chinese resume_intro3_12063099:
 translate chinese resume_intro3_b5015152:
 
     # gio "No! It's the {b}brothel masters{/b}."
-    gio "不!这是青楼老板。"
+    gio "不！这是青楼老板。"
 
 # game/BKintro.rpy:1009
 translate chinese resume_intro3_4c18fd0d:
 
     # sill "The... Brothel masters?"
-    sill "…青楼老板?"
+    sill "……青楼老板？"
 
 # game/BKintro.rpy:1015
 translate chinese resume_intro3_82f8b786:
@@ -1570,7 +1570,7 @@ translate chinese resume_intro3_583cdedb:
 translate chinese resume_intro3_ba7fbcb4:
 
     # gio "But at night... When no one is looking..."
-    gio "但是在晚上…当没有人注意的时候……"
+    gio "但是在晚上……当没有人注意的时候……"
 
 # game/BKintro.rpy:1088
 translate chinese resume_intro3_7c7300d3:
@@ -1582,25 +1582,25 @@ translate chinese resume_intro3_7c7300d3:
 translate chinese resume_intro3_d6557bc9:
 
     # gio "... not caring for gods or morals..."
-    gio "…不关心神或道德……"
+    gio "……不关心神或道德……"
 
 # game/BKintro.rpy:1099
 translate chinese resume_intro3_ea80770f:
 
     # gio "...they revel in depravity with their willing servants..."
-    gio "…他们和心甘情愿的仆人纵情于堕落……"
+    gio "……他们和心甘情愿的仆人纵情于堕落……"
 
 # game/BKintro.rpy:1106
 translate chinese resume_intro3_563308b3:
 
     # gio "...even sometimes, their own children and siblings..."
-    gio "…甚至有时候，他们自己的孩子和兄弟姐妹……"
+    gio "……甚至有时候，他们自己的孩子和兄弟姐妹……"
 
 # game/BKintro.rpy:1112
 translate chinese resume_intro3_724bd4da:
 
     # gio "...but they can never fully sate their dirty appetites."
-    gio "...但他们永远无法完全满足自己下流的欲望"
+    gio "……但他们永远无法完全满足自己下流的欲望"
 
 # game/BKintro.rpy:1118
 translate chinese resume_intro3_0d04a0b8:
@@ -1642,19 +1642,19 @@ translate chinese resume_intro3_bb8ccd72:
 translate chinese resume_intro3_83060ccc:
 
     # gio "So, you see. In this city, to be powerful, you need to master and control the sex trade..."
-    gio "所以,你看到的。在这个城市，要想强大，你需要掌握和控制性交易……"
+    gio "所以，你看到的。在这个城市，要想强大，你需要掌握和控制性交易……"
 
 # game/BKintro.rpy:1173
 translate chinese shortcut_1ecd2c96:
 
     # gio "And I... can help you. *grin*"
-    gio "和我…可以帮助你。*笑*"
+    gio "和我……可以帮助你。*笑*"
 
 # game/BKintro.rpy:1175
 translate chinese shortcut_b16af1b0:
 
     # you "You? How?"
-    you "你吗?如何?"
+    you "你吗？如何？"
 
 # game/BKintro.rpy:1177
 translate chinese shortcut_9634a2cb:
@@ -1684,13 +1684,13 @@ translate chinese shortcut_b337bed1:
 translate chinese shortcut_b42de05b:
 
     # gio "I've decided I'm not good at this racket, but you... You can take over the whorehouse if you want."
-    gio "我已经决定我不擅长这一行，但是你…如果你愿意，你可以接管青楼。"
+    gio "我已经决定我不擅长这一行，但是你……如果你愿意，你可以接管青楼。"
 
 # game/BKintro.rpy:1188
 translate chinese shortcut_302aee0c:
 
     # gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you get a place to stay and conduct your business. What do you think?"
-    gio "这就是你的报酬:这样，我就可以履行对公主的义务，你就有地方住下来，做你的事。你觉得怎么样?"
+    gio "这就是你的报酬:这样，我就可以履行对公主的义务，你就有地方住下来，做你的事。你觉得怎么样？"
 
 # game/BKintro.rpy:1208
 translate chinese resume_intro4_df704b47:
@@ -1702,13 +1702,13 @@ translate chinese resume_intro4_df704b47:
 translate chinese resume_intro4_35e59458:
 
     # you "[text1] I'm interested! I just hope the brothel is in good condition and all..."
-    you "[text1]我感兴趣!我只希望青楼状况良好。"
+    you "[text1]我感兴趣！我只希望青楼状况良好。"
 
 # game/BKintro.rpy:1212
 translate chinese resume_intro4_859987ed:
 
     # gio "Well, of course, of course... Erm... *nervous*"
-    gio "嗯，当然，当然……嗯…*紧张*"
+    gio "嗯，当然，当然……嗯……*紧张*"
 
 # game/BKintro.rpy:1214
 translate chinese resume_intro4_c67a81b1:
@@ -1726,19 +1726,19 @@ translate chinese resume_intro4_dcb8f413:
 translate chinese resume_intro4_553da56b:
 
     # gio "Speaking of which..."
-    gio "说到这里…"
+    gio "说到这里……"
 
 # game/BKintro.rpy:1220
 translate chinese resume_intro4_b9f03b8c:
 
     # you "Yes?"
-    you "嗯?"
+    you "嗯？"
 
 # game/BKintro.rpy:1222
 translate chinese resume_intro4_41bd9cc6:
 
     # gio "I've noticed you have brought with you a fine looking slave. Nice piece of ass really..."
-    gio "我注意到你带来了一个漂亮的奴隶。屁股真漂亮…"
+    gio "我注意到你带来了一个漂亮的奴隶。屁股真漂亮……"
 
 # game/BKintro.rpy:1226
 translate chinese resume_intro4_08b0bc52:
@@ -1750,13 +1750,13 @@ translate chinese resume_intro4_08b0bc52:
 translate chinese resume_intro4_b874a3e5:
 
     # sill "Ma... Master?"
-    sill "主……主人?"
+    sill "主……主人？"
 
 # game/BKintro.rpy:1230
 translate chinese resume_intro4_59904d12:
 
     # gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very devoted little bitch, that one."
-    gio "你能让我借她过夜吗?作为交换，你可以得到美奈子。她是个非常忠诚的小贱人。"
+    gio "你能让我借她过夜吗？作为交换，你可以得到美奈子。她是个非常忠诚的小贱人。"
 
 # game/BKintro.rpy:1235
 translate chinese resume_intro4_ef5e5c01:
@@ -1768,19 +1768,19 @@ translate chinese resume_intro4_ef5e5c01:
 translate chinese resume_intro4_61116746:
 
     # sill "Master!!!"
-    sill "主人! ! !"
+    sill "主人！！！"
 
 # game/BKintro.rpy:1240
 translate chinese resume_intro4_6cdecb9c:
 
     # sill "He's... He's touching my butt!" nointeract
-    sill "他的……他在碰我的屁股!"
+    sill "他的……他在碰我的屁股！"
 
 # game/BKintro.rpy:1248
 translate chinese resume_intro4_6e700cd0:
 
     # you "Stop it Gio! She's mine."
-    you "吉欧停止它!她是我的。"
+    you "吉欧停止它！她是我的。"
 
 # game/BKintro.rpy:1250
 translate chinese resume_intro4_16a7e4c1:
@@ -1792,7 +1792,7 @@ translate chinese resume_intro4_16a7e4c1:
 translate chinese resume_intro4_2ecdbf0c:
 
     # gio "Aw, come on, friend! Is this a way to treat your host?"
-    gio "噢，来吧，朋友!这是对待主人的一种方式吗?"
+    gio "噢，来吧，朋友！这是对待主人的一种方式吗？"
 
 # game/BKintro.rpy:1254
 translate chinese resume_intro4_845fabe4:
@@ -1816,13 +1816,13 @@ translate chinese resume_intro4_6df17d62:
 translate chinese resume_intro4_ba1c6644:
 
     # gio "Minako!"
-    gio "美奈子!"
+    gio "美奈子！"
 
 # game/BKintro.rpy:1264
 translate chinese resume_intro4_aa5e31bf:
 
     # maid "Yes Master?"
-    maid "是的主人?"
+    maid "是的主人？"
 
 # game/BKintro.rpy:1266
 translate chinese resume_intro4_764c0eb3:
@@ -1846,7 +1846,7 @@ translate chinese resume_intro4_d1e09cfa:
 translate chinese resume_intro4_bf9b3bb7:
 
     # maid blush "Understood, Master."
-    maid blush "直到了,主人。"
+    maid blush "直到了，主人。"
 
 # game/BKintro.rpy:1275
 translate chinese resume_intro4_c952ccef:
@@ -1870,19 +1870,19 @@ translate chinese resume_intro4_22811f21:
 translate chinese resume_intro4_ea23c534:
 
     # sill "Thank you Master! Thank you thank you thank you!!!"
-    sill "谢谢主人!谢谢，谢谢，谢谢!!"
+    sill "谢谢主人！谢谢，谢谢，谢谢！！"
 
 # game/BKintro.rpy:1291
 translate chinese resume_intro4_4f8527a7:
 
     # you "Sill, don't overdo it."
-    you "希露, 人生地不熟，别乱来。"
+    you "希露，人生地不熟，别乱来。"
 
 # game/BKintro.rpy:1293
 translate chinese resume_intro4_68ff5205:
 
     # sill "But... Master Gio is old, fat and sleazy... I hated it when he touched me."
-    sill "但是…吉欧先生又老又胖又邋遢……我讨厌他碰我。"
+    sill "但是……吉欧先生又老又胖又邋遢……我讨厌他碰我。"
 
 # game/BKintro.rpy:1295
 translate chinese resume_intro4_24353786:
@@ -1894,7 +1894,7 @@ translate chinese resume_intro4_24353786:
 translate chinese resume_intro4_8988ffc4:
 
     # sill "But... I like it when we... You know..."
-    sill "…我只喜欢我俩……你知道"
+    sill "……我只喜欢我俩……你知道"
 
 # game/BKintro.rpy:1301
 translate chinese resume_intro4_6e763379:
@@ -1906,13 +1906,13 @@ translate chinese resume_intro4_6e763379:
 translate chinese resume_intro4_734f0926:
 
     # sill naked "Master... Aaaah... You're always looking out for me..."
-    sill naked "主人……啊…你总是在照顾我…"
+    sill naked "主人……啊……你总是在照顾我……"
 
 # game/BKintro.rpy:1312
 translate chinese resume_intro4_fa8dca53:
 
     # sill "Even though... I'm just... Aahh... Your slave... Mmmh..."
-    sill "尽管……我只是…唉呀……你的奴隶……Mmmh……"
+    sill "尽管……我只是……唉呀……你的奴隶……Mmmh……"
 
 # game/BKintro.rpy:1316
 translate chinese resume_intro4_6e8f7c7c:
@@ -1924,7 +1924,7 @@ translate chinese resume_intro4_6e8f7c7c:
 translate chinese resume_intro4_e2de5ac9:
 
     # sill "I... Aaaaaah..."
-    sill "我。。。啊…"
+    sill "我。。。啊……"
 
 # game/BKintro.rpy:1324
 translate chinese resume_intro4_1a8bd1f1:
@@ -1942,43 +1942,43 @@ translate chinese resume_intro4_4066207a:
 translate chinese resume_intro4_a3bb54ec:
 
     # sill "Aaaaaaaah!!!"
-    sill "Aaaaaaaah ! ! !"
+    sill "Aaaaaaaah!!!"
 
 # game/BKintro.rpy:1342
 translate chinese resume_intro4_b5282370:
 
     # sill "Master... We've been doing it... Aaaah... for hours..."
-    sill "主人……我们已经做了……啊…几个小时……"
+    sill "主人……我们已经做了……啊……几个小时……"
 
 # game/BKintro.rpy:1344
 translate chinese resume_intro4_667442a8:
 
     # sill "I think, aahhhh... We need to... mmmmh... rest, ah!"
-    sill "我认为,aahhhh……我们需要…mmmmh……休息,啊!"
+    sill "我认为，aahhhh……我们需要……mmmmh……休息，啊！"
 
 # game/BKintro.rpy:1346
 translate chinese resume_intro4_785e2632:
 
     # you "We'll rest... just... not... yet..."
-    you "我们会休息的……只是…不是……现在……"
+    you "我们会休息的……只是……不是……现在……"
 
 # game/BKintro.rpy:1348
 translate chinese resume_intro4_b2d5a534:
 
     # you "Raaah!!!"
-    you "Raaah ! ! !"
+    you "Raaah!!!"
 
 # game/BKintro.rpy:1350
 translate chinese resume_intro4_a4cfd2e7:
 
     # sill "Oh, aaah... Aaah!!!"
-    sill "哦,啊…啊! ! !"
+    sill "哦，啊……啊！！！"
 
 # game/BKintro.rpy:1356
 translate chinese resume_intro4_7f1aad4d:
 
     # sill "Aaaaaaahaaaaah!!!"
-    sill "Aaaaaaahaaaaah ! ! !"
+    sill "Aaaaaaahaaaaah!!!"
 
 # game/BKintro.rpy:1364
 translate chinese resume_intro4_5334fa08:
@@ -1990,13 +1990,13 @@ translate chinese resume_intro4_5334fa08:
 translate chinese resume_intro4_969bde33:
 
     # you "Look, Gio, it's tempting... But we're all tired."
-    you "听着，吉欧，这很诱人…但是我们都累了。"
+    you "听着，吉欧，这很诱人……但是我们都累了。"
 
 # game/BKintro.rpy:1377
 translate chinese resume_intro4_ac2df4c1:
 
     # you "Sill won't be any good after such a long time on the road. She's dirty..."
-    you "在路上走了这么长时间，希露不会有什么好处的。她又脏…"
+    you "在路上走了这么长时间，希露不会有什么好处的。她又脏……"
 
 # game/BKintro.rpy:1379
 translate chinese resume_intro4_29f4245a:
@@ -2008,25 +2008,25 @@ translate chinese resume_intro4_29f4245a:
 translate chinese resume_intro4_301dca82:
 
     # you "...and exhausted."
-    you "…和疲惫。"
+    you "……和疲惫。"
 
 # game/BKintro.rpy:1383
 translate chinese resume_intro4_d016b0fd:
 
     # you "Maybe next time, ok?"
-    you "也许下次吧，好吗?"
+    you "也许下次吧，好吗？"
 
 # game/BKintro.rpy:1385
 translate chinese resume_intro4_56897f30:
 
     # sill "Next... time??? But..."
-    sill "下...一次? ? ?但是…"
+    sill "下……一次？？？但是……"
 
 # game/BKintro.rpy:1387
 translate chinese resume_intro4_fa8f9436:
 
     # gio "I see..."
-    gio "我明白了…"
+    gio "我明白了……"
 
 # game/BKintro.rpy:1389
 translate chinese resume_intro4_16d8af57:
@@ -2050,43 +2050,43 @@ translate chinese resume_intro4_aea13249:
 translate chinese resume_intro4_3d9d8572:
 
     # gio "Minako, where are you?"
-    gio "美奈子 ，你在哪?"
+    gio "美奈子，你在哪？"
 
 # game/BKintro.rpy:1401
 translate chinese resume_intro4_3eaf5115:
 
     # maid "Right here, Master."
-    maid "在这里,主人。"
+    maid "在这里，主人。"
 
 # game/BKintro.rpy:1403
 translate chinese resume_intro4_44fac3cc:
 
     # gio "Take our guests to their room, will you. Then, meet me in my room with the 'toybox'."
-    gio "请把我们的客人带到他们的房间，好吗?然后，带着“玩具盒”在我的房间里等我。"
+    gio "请把我们的客人带到他们的房间，好吗？然后，带着“玩具盒”在我的房间里等我。"
 
 # game/BKintro.rpy:1406
 translate chinese resume_intro4_cc8e8472:
 
     # maid "Yes, Master."
-    maid "是的,主人。"
+    maid "是的，主人。"
 
 # game/BKintro.rpy:1414
 translate chinese resume_intro4_1f231a59:
 
     # sill "Master... I don't want to sleep with that old man! He's sweaty and gross!"
-    sill "主人……我不想和那个老头上床!他满身是汗，而且很恶心!"
+    sill "主人……我不想和那个老头上床！他满身是汗，而且很恶心！"
 
 # game/BKintro.rpy:1416
 translate chinese resume_intro4_00c1c6ba:
 
     # you "And you won't have to..."
-    you "你也不用…"
+    you "你也不用……"
 
 # game/BKintro.rpy:1418
 translate chinese resume_intro4_51ee66fe:
 
     # sill happy "..."
-    sill happy "…"
+    sill happy "……"
 
 # game/BKintro.rpy:1420
 translate chinese resume_intro4_d427d525:
@@ -2098,7 +2098,7 @@ translate chinese resume_intro4_d427d525:
 translate chinese resume_intro4_0bce19d5:
 
     # sill sad "Whaaat?"
-    sill sad "什什么?"
+    sill sad "什什么？"
 
 # game/BKintro.rpy:1424
 translate chinese resume_intro4_e5fa45e6:
@@ -2116,7 +2116,7 @@ translate chinese resume_intro4_24353786_1:
 translate chinese resume_intro4_07bfa781:
 
     # sill "Yes, master."
-    sill "是的,主人。"
+    sill "是的，主人。"
 
 # game/BKintro.rpy:1431
 translate chinese resume_intro4_09f61142:
@@ -2134,13 +2134,13 @@ translate chinese resume_intro4_fa9db4f4:
 translate chinese resume_intro4_1825586e:
 
     # sill "Master! Can you hear???"
-    sill "主人!你能听到吗? ? ?"
+    sill "主人！你能听到吗？？？"
 
 # game/BKintro.rpy:1445
 translate chinese resume_intro4_cb98bbfa:
 
     # you "Come on Sill... I'm trying to sleep here... Let them have their fun."
-    you "来吧希露……我想睡在这里…让他们玩得开心。"
+    you "来吧希露……我想睡在这里……让他们玩得开心。"
 
 # game/BKintro.rpy:1447
 translate chinese resume_intro4_d636b6d0:
@@ -2152,31 +2152,31 @@ translate chinese resume_intro4_d636b6d0:
 translate chinese resume_intro4_e78cc42c:
 
     # "Ignoring her, you fall into a long, deep sleep..."
-    "忽视她，你就会进入长时间的深度睡眠…"
+    "忽视她，你就会进入长时间的深度睡眠……"
 
 # game/BKintro.rpy:1464
 translate chinese resume_intro4_364f147e:
 
     # you "Sounds fun! You can have her."
-    you "听起来很有趣!你可以拥有她。"
+    you "听起来很有趣！你可以拥有她。"
 
 # game/BKintro.rpy:1466
 translate chinese resume_intro4_8412af2b:
 
     # sill "Whaaaat?"
-    sill "什什么?"
+    sill "什什么？"
 
 # game/BKintro.rpy:1468
 translate chinese resume_intro4_ee3172ac:
 
     # gio "Fantastic!"
-    gio "太棒了!"
+    gio "太棒了！"
 
 # game/BKintro.rpy:1470
 translate chinese resume_intro4_699c19be:
 
     # sill "Wait!!!"
-    sill "等等! ! !"
+    sill "等等！！！"
 
 # game/BKintro.rpy:1472
 translate chinese resume_intro4_71eb0bcc:
@@ -2206,13 +2206,13 @@ translate chinese resume_intro4_b69dcf89:
 translate chinese resume_intro4_733795d1:
 
     # you "So, where's Minako?"
-    you "所以,美奈子在哪?"
+    you "所以，美奈子在哪？"
 
 # game/BKintro.rpy:1486
 translate chinese resume_intro4_a2b52e10:
 
     # maid "Yes Mister [MC.name]. You called?"
-    maid "是的我的主人[MC.name]。您找我?"
+    maid "是的我的主人[MC.name]。您找我？"
 
 # game/BKintro.rpy:1488
 translate chinese resume_intro4_b8e35385:
@@ -2224,7 +2224,7 @@ translate chinese resume_intro4_b8e35385:
 translate chinese resume_intro4_6e011257:
 
     # maid blush "..."
-    maid blush "…"
+    maid blush "……"
 
 # game/BKintro.rpy:1492
 translate chinese resume_intro4_7f3dc2fb:
@@ -2242,7 +2242,7 @@ translate chinese resume_intro4_542ee343:
 translate chinese resume_intro4_2063f889:
 
     # sill "But... But..."
-    sill "但是…但是…"
+    sill "但是……但是……"
 
 # game/BKintro.rpy:1498
 translate chinese resume_intro4_70b1f19a:
@@ -2266,13 +2266,13 @@ translate chinese resume_intro4_78579f68:
 translate chinese resume_intro4_8c27cb79:
 
     # maid "So..."
-    maid "所以…"
+    maid "所以……"
 
 # game/BKintro.rpy:1515
 translate chinese resume_intro4_62690a11:
 
     # maid blush "What do you request of me, Master [MC.name]?"
-    maid blush "您对我有什么要求，主人[MC.name]?"
+    maid blush "您对我有什么要求，主人[MC.name]？"
 
 # game/BKintro.rpy:1523
 translate chinese resume_intro4_5168dba1:
@@ -2284,13 +2284,13 @@ translate chinese resume_intro4_5168dba1:
 translate chinese resume_intro4_aba47eef:
 
     # maid blush "Hmmm... It's already hard, my lord... Were you waiting for this?"
-    maid blush "嗯…这已经很难了，大人……你在哪里等这个?"
+    maid blush "嗯……这已经很难了，大人……你在哪里等这个？"
 
 # game/BKintro.rpy:1534
 translate chinese resume_intro4_1aba24d5:
 
     # maid "It's bulging... Should I slide it deeper in my throat?"
-    maid "膨胀…我应该把它往喉咙里塞得更深吗?"
+    maid "膨胀……我应该把它往喉咙里塞得更深吗？"
 
 # game/BKintro.rpy:1536
 translate chinese resume_intro4_4e8b1aa3:
@@ -2302,7 +2302,7 @@ translate chinese resume_intro4_4e8b1aa3:
 translate chinese resume_intro4_50f1cc6d:
 
     # maid "Mmmmmhhh!"
-    maid "Mmmmmhhh !"
+    maid "Mmmmmhhh!"
 
 # game/BKintro.rpy:1546
 translate chinese resume_intro4_63a92497:
@@ -2320,7 +2320,7 @@ translate chinese resume_intro4_37ae563d:
 translate chinese resume_intro4_62e88945:
 
     # maid "Please, my lord... Allow me to clean you up..."
-    maid "请,我的主人…让我帮你清理一下……"
+    maid "请，我的主人……让我帮你清理一下……"
 
 # game/BKintro.rpy:1562
 translate chinese resume_intro4_767f64a7:
@@ -2332,7 +2332,7 @@ translate chinese resume_intro4_767f64a7:
 translate chinese resume_intro4_28a1b85c:
 
     # maid "Ohh my lord... You're so forceful!"
-    maid "哦我的上帝…你真有力!"
+    maid "哦我的上帝……你真有力！"
 
 # game/BKintro.rpy:1568
 translate chinese resume_intro4_30ec90e7:
@@ -2344,19 +2344,19 @@ translate chinese resume_intro4_30ec90e7:
 translate chinese resume_intro4_187c78f5:
 
     # maid blush "Aaaaaah!"
-    maid blush "啊!"
+    maid blush "啊！"
 
 # game/BKintro.rpy:1576
 translate chinese resume_intro4_2e8a9f9d:
 
     # maid "Master [MC.name]... is so hard!"
-    maid "主人[MC.name]……太硬了!"
+    maid "主人[MC.name]……太硬了！"
 
 # game/BKintro.rpy:1578
 translate chinese resume_intro4_cbdd44d1:
 
     # maid "You're... drilling me!!!"
-    maid "你在... 进来...进来了! ! !"
+    maid "你在…… 进来……进来了！！！"
 
 # game/BKintro.rpy:1580
 translate chinese resume_intro4_dda3120a:
@@ -2368,7 +2368,7 @@ translate chinese resume_intro4_dda3120a:
 translate chinese resume_intro4_c01a8461:
 
     # you "You're already wet, aren't you, you little slut?"
-    you "你已经淋湿了，不是吗，你这个小荡妇?"
+    you "你已经淋湿了，不是吗，你这个小荡妇？"
 
 # game/BKintro.rpy:1587
 translate chinese resume_intro4_cf52d3a2:
@@ -2380,7 +2380,7 @@ translate chinese resume_intro4_cf52d3a2:
 translate chinese resume_intro4_337b166e:
 
     # maid "I'm... a dirty... slut..."
-    maid "我…一个肮脏的…荡妇……"
+    maid "我……一个肮脏的……荡妇……"
 
 # game/BKintro.rpy:1593
 translate chinese resume_intro4_fb4fb000:
@@ -2392,31 +2392,31 @@ translate chinese resume_intro4_fb4fb000:
 translate chinese resume_intro4_60ef8449:
 
     # maid "Ooh, yes, oooooh!"
-    maid "哦,是的,哇!"
+    maid "哦，是的，哇！"
 
 # game/BKintro.rpy:1597
 translate chinese resume_intro4_3f03e062:
 
     # maid "My lord! My pussy... is yours... Fuck... Fuck it harder!"
-    maid "我的主人!我的逼…被你……操得...啊哈.... 再用些力!"
+    maid "我的主人！我的逼……被你……操得……啊哈……. 再用些力！"
 
 # game/BKintro.rpy:1603
 translate chinese resume_intro4_8a08933c:
 
     # maid "Oh yes, oooooh..."
-    maid "哦,是的,哦……"
+    maid "哦，是的，哦……"
 
 # game/BKintro.rpy:1605
 translate chinese resume_intro4_1de93956:
 
     # you "I'm not done with you yet..."
-    you "我还没完呢…"
+    you "我还没完呢……"
 
 # game/BKintro.rpy:1619
 translate chinese maid_fuck_85e28c35:
 
     # maid blush "Ooooh my lord... You're so... big..."
-    maid blush "唔我的主人…你太…大……"
+    maid blush "唔我的主人……你太……大……"
 
 # game/BKintro.rpy:1621
 translate chinese maid_fuck_b95940b1:
@@ -2428,7 +2428,7 @@ translate chinese maid_fuck_b95940b1:
 translate chinese maid_fuck_f275574b:
 
     # maid "Oh yes, master [MC.name]! Do it like this..."
-    maid "噢，是的，大人[MC.name]!这样做……"
+    maid "噢，是的，大人[MC.name]！这样做……"
 
 # game/BKintro.rpy:1626
 translate chinese maid_fuck_1be05301:
@@ -2440,31 +2440,31 @@ translate chinese maid_fuck_1be05301:
 translate chinese maid_fuck_77eb2a59:
 
     # maid "Oh my lord... Ooooh..."
-    maid "哦我的主人…唔……"
+    maid "哦我的主人……唔……"
 
 # game/BKintro.rpy:1634
 translate chinese maid_fuck_3e34a67e:
 
     # maid "Ahhaaaaa!"
-    maid "Ahhaaaaa !"
+    maid "Ahhaaaaa!"
 
 # game/BKintro.rpy:1636
 translate chinese maid_fuck_b67233cb:
 
     # maid "Yes, oh yes... I'm... I'm..."
-    maid "是的,哦,是的…我…我…"
+    maid "是的，哦，是的……我……我……"
 
 # game/BKintro.rpy:1644
 translate chinese maid_fuck_a7ac3967:
 
     # maid "CUMMIIIIIIIING!!!"
-    maid "CUMMIIIIIIIING ! ! !"
+    maid "CUMMIIIIIIIING!!!"
 
 # game/BKintro.rpy:1648
 translate chinese maid_fuck_44f4fc1c:
 
     # maid "Aaaaaah..."
-    maid "啊…"
+    maid "啊……"
 
 # game/BKintro.rpy:1650
 translate chinese maid_fuck_209d2305:
@@ -2476,7 +2476,7 @@ translate chinese maid_fuck_209d2305:
 translate chinese maid_fuck_43276370:
 
     # maid "Would you... fill me up again?"
-    maid "你会……再给我加满油?"
+    maid "你会……再给我加满油？"
 
 # game/BKintro.rpy:1658
 translate chinese maid_fuck_16759eaf:
@@ -2488,19 +2488,19 @@ translate chinese maid_fuck_16759eaf:
 translate chinese maid_fuck_2151bd44:
 
     # sill naked "Ahaaaaaahh!!!"
-    sill naked "啊啊啊啊啊 ! ! !"
+    sill naked "啊啊啊啊啊！！！"
 
 # game/BKintro.rpy:1670
 translate chinese maid_fuck_185ca774:
 
     # gio "Aaaaaaaarhhhh!"
-    gio "啊啊啊啊啊啊啊啊 !"
+    gio "啊啊啊啊啊啊啊啊！"
 
 # game/BKintro.rpy:1676
 translate chinese maid_fuck_17115a84:
 
     # sill "AAAAAAHHHHH!!!"
-    sill "啊啊啊啊啊啊啊啊啊啊 ! ! !"
+    sill "啊啊啊啊啊啊啊啊啊啊！！！"
 
 # game/BKintro.rpy:1678
 translate chinese maid_fuck_24353786:
@@ -2512,13 +2512,13 @@ translate chinese maid_fuck_24353786:
 translate chinese maid_fuck_978431ad:
 
     # sill "How... How many times can you come... you... monster..."
-    sill "如何……你能来多少次……你……怪兽…"
+    sill "如何……你能来多少次……你……怪兽……"
 
 # game/BKintro.rpy:1682
 translate chinese maid_fuck_440ff308:
 
     # gio "Hahaha! We're not even halfway done!"
-    gio "哈哈哈!我们还没完成一半呢!"
+    gio "哈哈哈！我们还没完成一半呢！"
 
 # game/BKintro.rpy:1684
 translate chinese maid_fuck_c01bfd51:
@@ -2530,13 +2530,13 @@ translate chinese maid_fuck_c01bfd51:
 translate chinese maid_fuck_2063f889:
 
     # sill "But... But..."
-    sill "但是…但是…"
+    sill "但是……但是……"
 
 # game/BKintro.rpy:1688
 translate chinese maid_fuck_c99a2233:
 
     # gio "Oh, yes... Exactly. *grin*"
-    gio "哦,是的…完全正确。*笑*"
+    gio "哦，是的……完全正确。*笑*"
 
 # game/BKintro.rpy:1692
 translate chinese maid_fuck_23e2d648:
@@ -2548,7 +2548,7 @@ translate chinese maid_fuck_23e2d648:
 translate chinese day1_b2bda7b4:
 
     # gio "Behold!"
-    gio "看哪!"
+    gio "看哪！"
 
 # game/BKintro.rpy:1712
 translate chinese day1_1ce4e059:
@@ -2566,7 +2566,7 @@ translate chinese day1_9a445343:
 translate chinese day1_c2cf335b:
 
     # "They are used for most everyday tasks and are expected to provide all kinds of services... They are what their masters want them to be."
-    "它们被用于大多数日常任务，并被期望提供各种各样的服务…他们是他们的主人想要他们成为的人。"
+    "它们被用于大多数日常任务，并被期望提供各种各样的服务……他们是他们的主人想要他们成为的人。"
 
 # game/BKintro.rpy:1726
 translate chinese day1_5f51ff31:
@@ -2620,7 +2620,7 @@ translate chinese day1_eccb8c3a:
 translate chinese day1_dd055048:
 
     # "Zan has the most bustling slave market in all of Xeros..."
-    "赞有全克塞罗斯最热闹的奴隶市场…"
+    "赞有全克塞罗斯最热闹的奴隶市场……"
 
 # game/BKintro.rpy:1771
 translate chinese day1_af50d3de:
@@ -2632,13 +2632,13 @@ translate chinese day1_af50d3de:
 translate chinese day1_b1242d20:
 
     # gio "Aaaah, the slave market! The colors, the scents, the tastes!"
-    gio "啊，奴隶市场!颜色，气味，味道!"
+    gio "啊，奴隶市场！颜色，气味，味道！"
 
 # game/BKintro.rpy:1775
 translate chinese day1_d3cc46dd:
 
     # sill sad "Master! Someone tried to grab my breast! Hey, I'm not for sale!"
-    sill sad "主人!有人想抓住我的胸部!嘿，我不卖!"
+    sill sad "主人！有人想抓住我的胸部！嘿，我不卖！"
 
 # game/BKintro.rpy:1777
 translate chinese day1_fe0ce7f4:
@@ -2662,19 +2662,19 @@ translate chinese day1_77de77bf:
 translate chinese day1_0071d336:
 
     # gio "Oh, don't thank me! This is what I got from selling your horses and carriage this morning. You won't be needing them anyway..."
-    gio "噢，别谢我!这是我今天早上卖掉你的马和马车得到的。反正你也不需要……"
+    gio "噢，别谢我！这是我今天早上卖掉你的马和马车得到的。反正你也不需要……"
 
 # game/BKintro.rpy:1787
 translate chinese day1_4d9200a0:
 
     # you "What!!! Why you... [starting_gold] denars! It was worth at least twice that!!!"
-    you "什么! ! !你为什么…才[starting_gold]枚金币!它的价值至少是这个的两倍!!"
+    you "什么！！！你为什么……才[starting_gold]枚金币！它的价值至少是这个的两倍！！"
 
 # game/BKintro.rpy:1789
 translate chinese day1_3ebce7ac:
 
     # gio "Oh, well, these are hard times... I'm afraid slaves are not the best quality at that price, but your training will make all the difference, I'm sure. Hehehe..."
-    gio "哦，好吧，这是艰难的时刻…我担心奴隶的质量在那个价格上不是最好的，但我相信你的训练会使一切变得不同。哈哈…"
+    gio "哦，好吧，这是艰难的时刻……我担心奴隶的质量在那个价格上不是最好的，但我相信你的训练会使一切变得不同。哈哈……"
 
 # game/BKintro.rpy:1818
 translate chinese slavemarket_first_time_5844e0b2:
@@ -2698,7 +2698,7 @@ translate chinese slavemarket_first_time_024e8571:
 translate chinese slavemarket_first_time_b6a1fc61:
 
     # gio "Oh, by the way. Will you be using Sill as a whore?"
-    gio "哦，对了。你会用希露当妓女吗?"
+    gio "哦，对了。你会用希露当妓女吗？"
 
 # game/BKintro.rpy:1826
 translate chinese slavemarket_first_time_bfd49cfe:
@@ -2710,13 +2710,13 @@ translate chinese slavemarket_first_time_bfd49cfe:
 translate chinese slavemarket_first_time_0da19645:
 
     # sill sad "Whaaaat? Master, no!!!"
-    sill sad "什么?主人,不! ! !"
+    sill sad "什么？主人，不！！！"
 
 # game/BKintro.rpy:1830
 translate chinese slavemarket_first_time_a48092dd:
 
     # you "Hmmm..."
-    you "嗯…"
+    you "嗯……"
 
 # game/BKintro.rpy:1833
 translate chinese slavemarket_first_time_0d668adf:
@@ -2734,7 +2734,7 @@ translate chinese slavemarket_first_time_b1d6f72a:
 translate chinese slavemarket_first_time_cdaff9da:
 
     # sill "Noooooo!!!"
-    sill "不... ! ! !"
+    sill "不……！！！"
 
 # game/BKintro.rpy:1839
 translate chinese slavemarket_first_time_8f42f826:
@@ -2770,13 +2770,13 @@ translate chinese slavemarket_first_time_3cf3b2a1:
 translate chinese slavemarket_first_time_59a50666:
 
     # girl.char "Aaaaah!"
-    girl.char "Aaaaah !"
+    girl.char "Aaaaah!"
 
 # game/BKintro.rpy:1856
 translate chinese slavemarket_first_time_1cb40892:
 
     # gio "This girl has a good body. Look at those juicy boobs... Mmmmh."
-    gio "这个女孩身体很好。看那些多汁的胸部…呣。"
+    gio "这个女孩身体很好。看那些多汁的胸部……呣。"
 
 # game/BKintro.rpy:1858
 translate chinese slavemarket_first_time_b16b0edb:
@@ -2812,7 +2812,7 @@ translate chinese slavemarket_first_time_a8af99cc:
 translate chinese slavemarket_first_time_f0df62fc:
 
     # gio "She looks quite ladylike, for a cocksucking slave. Maybe she will attract more than the usual rabble, I wonder?"
-    gio "她看起来很淑女，像个爱吹牛的奴隶。我想，也许她会吸引比平常更多的乌合之众?"
+    gio "她看起来很淑女，像个爱吹牛的奴隶。我想，也许她会吸引比平常更多的乌合之众？"
 
 # game/BKintro.rpy:1868
 translate chinese slavemarket_first_time_2d33f590:
@@ -2824,7 +2824,7 @@ translate chinese slavemarket_first_time_2d33f590:
 translate chinese slavemarket_first_time_a48092dd_1:
 
     # you "Hmmm..."
-    you "嗯…"
+    you "嗯……"
 
 # game/BKintro.rpy:1872
 translate chinese slavemarket_first_time_b8af6747:
@@ -2842,7 +2842,7 @@ translate chinese slavemarket_first_time_3cd3aee4:
 translate chinese slavemarket_first_time_926b5312:
 
     # gio "Yes, well..."
-    gio "是的,嗯…"
+    gio "是的，嗯……"
 
 # game/BKintro.rpy:1914
 translate chinese districts_first_time_ed187e2e:
@@ -2866,7 +2866,7 @@ translate chinese districts_first_time_73464aa6:
 translate chinese districts_first_time_ff196fe7:
 
     # gio "...others are home to the poor and humble who toil in the shadows."
-    gio "…另一些则是在黑暗中辛勤劳作的穷人和卑微者的家园。"
+    gio "……另一些则是在黑暗中辛勤劳作的穷人和卑微者的家园。"
 
 # game/BKintro.rpy:1930
 translate chinese districts_first_time_41af7e45:
@@ -2884,13 +2884,13 @@ translate chinese districts_first_time_759cf744:
 translate chinese districts_first_time_a8ec5223:
 
     # you "What are you trying to say..."
-    you "你想说什么?"
+    you "你想说什么？"
 
 # game/BKintro.rpy:1937
 translate chinese districts_first_time_a7b3b131:
 
     # gio "Well..."
-    gio "嗯…"
+    gio "嗯……"
 
 # game/BKintro.rpy:1939
 translate chinese districts_first_time_7e1f37b3:
@@ -2902,25 +2902,25 @@ translate chinese districts_first_time_7e1f37b3:
 translate chinese districts_first_time_a577ad0e:
 
     # you "What?"
-    you "什么?"
+    you "什么？"
 
 # game/BKintro.rpy:1943
 translate chinese districts_first_time_5f5fc996:
 
     # gio "... so the only place I could open a brothel was..."
-    gio "…所以我唯一能开青楼的地方就是…"
+    gio "……所以我唯一能开青楼的地方就是……"
 
 # game/BKintro.rpy:1947
 translate chinese districts_first_time_e7db6af4:
 
     # gio "... the slums."
-    gio "…贫民窟。"
+    gio "……贫民窟。"
 
 # game/BKintro.rpy:1951
 translate chinese districts_first_time_5f2b17be:
 
     # you "Whaaat???"
-    you "什么 ? ? ?"
+    you "什么？？？"
 
 # game/BKintro.rpy:1953
 translate chinese districts_first_time_3702c7d1:
@@ -2968,7 +2968,7 @@ translate chinese districts_first_time_9f303fe7:
 translate chinese districts_first_time_7304fb29:
 
     # you "Yeah, whatever..."
-    you "好吧，不管怎样…"
+    you "好吧，不管怎样……"
 
 # game/BKintro.rpy:1980
 translate chinese districts_first_time_28e2583e:
@@ -3004,7 +3004,7 @@ translate chinese districts_first_time_slums_1054b62c:
 translate chinese brothel_first_time_dd9d0132:
 
     # gio "Behold! Your new home."
-    gio "看哪!你的新家。"
+    gio "看哪！你的新家。"
 
 # game/BKintro.rpy:2021
 translate chinese brothel_first_time_dae0ec55:
@@ -3016,19 +3016,19 @@ translate chinese brothel_first_time_dae0ec55:
 translate chinese brothel_first_time_bf822476:
 
     # you "You've got to be kidding..."
-    you "你在开玩笑吧…"
+    you "你在开玩笑吧……"
 
 # game/BKintro.rpy:2025
 translate chinese brothel_first_time_7734c789:
 
     # sill sad "What's... What's that smell?"
-    sill sad "是什么……那是什么味道?"
+    sill sad "是什么……那是什么味道？"
 
 # game/BKintro.rpy:2027
 translate chinese brothel_first_time_96ee95ff:
 
     # gio "Oh, err... We are located downwind from the nearby junkyard."
-    gio "哦,呃…我们位于附近垃圾场的顺风处。"
+    gio "哦，呃……我们位于附近垃圾场的顺风处。"
 
 # game/BKintro.rpy:2029
 translate chinese brothel_first_time_85d012d5:
@@ -3052,7 +3052,7 @@ translate chinese brothel_first_time_325732aa:
 translate chinese brothel_first_time_37d25964:
 
     # you "Are you crazy! This place is a dump!"
-    you "你疯了!这地方真是个垃圾场!"
+    you "你疯了！这地方真是个垃圾场！"
 
 # game/BKintro.rpy:2041
 translate chinese brothel_first_time_7d13c9e2:
@@ -3076,13 +3076,13 @@ translate chinese brothel_first_time_649a0165:
 translate chinese brothel_first_time_7466a9f9:
 
     # gio "Well... So do you, sweetheart, and still you've got some tricks up your skirt! *wink*"
-    gio "嗯…亲爱的，你也是，可你的裙子还是有些花样。*眨眼*"
+    gio "嗯……亲爱的，你也是，可你的裙子还是有些花样。*眨眼*"
 
 # game/BKintro.rpy:2051
 translate chinese brothel_first_time_2dadbc9f:
 
     # sill "Grrr..." with vpunch
-    sill "叽阿…" with vpunch
+    sill "叽阿……" with vpunch
 
 # game/BKintro.rpy:2053
 translate chinese brothel_first_time_78dc5ba9:
@@ -3124,13 +3124,13 @@ translate chinese brothel_first_time_262a6213:
 translate chinese brothel_first_time_7d9f8ca5:
 
     # sill "Ew, I think this one was used by vagrants... As a toilet!"
-    sill "呃，我想这个是流浪汉用的……作为一个厕所!"
+    sill "呃，我想这个是流浪汉用的……作为一个厕所！"
 
 # game/BKintro.rpy:2070
 translate chinese brothel_first_time_e90bec1c:
 
     # you "So... This brothel is useless as it is, then..."
-    you "所以…这家青楼虽然没用，但…"
+    you "所以……这家青楼虽然没用，但……"
 
 # game/BKintro.rpy:2072
 translate chinese brothel_first_time_9e574b33:
@@ -3256,7 +3256,7 @@ translate chinese brothel_first_time_03af0acd:
 translate chinese brothel_first_time_997f44cb:
 
     # gio "So, I see you've chosen the {b}[room.name]{/b}. A good choice, my friend!"
-    gio "所以，我看到您选择了{b}[room.name]{/b}。不错的选择，我的朋友!"
+    gio "所以，我看到您选择了{b}[room.name]{/b}。不错的选择，我的朋友！"
 
 # game/BKintro.rpy:2167
 translate chinese brothel_first_time_1eb42fe8:
@@ -3268,7 +3268,7 @@ translate chinese brothel_first_time_1eb42fe8:
 translate chinese main_first_time_f76e2db9:
 
     # gio "Tadaaa!"
-    gio "Tadaaa !"
+    gio "Tadaaa!"
 
 # game/BKintro.rpy:2191
 translate chinese main_first_time_a4cfd4ac:
@@ -3286,19 +3286,19 @@ translate chinese main_first_time_1da6dcb3:
 translate chinese main_first_time_56e5581a:
 
     # sill "Finally!"
-    sill "终于!"
+    sill "终于！"
 
 # game/BKintro.rpy:2202
 translate chinese main_first_time_96ac5f80:
 
     # sill "That old, disgusting guy is gone!"
-    sill "那个讨厌的老家伙不见了!"
+    sill "那个讨厌的老家伙不见了！"
 
 # game/BKintro.rpy:2204
 translate chinese main_first_time_432b2300:
 
     # you "Yes. Now what do we do?"
-    you "是的。现在我们要做什么?"
+    you "是的。现在我们要做什么？"
 
 # game/BKintro.rpy:2206
 translate chinese main_first_time_83c87f60:
@@ -3316,25 +3316,25 @@ translate chinese main_first_time_8247c529:
 translate chinese main_first_time_b3b655ba:
 
     # sill "Oh, I know! How about, 'The Rose Garden'? That sounds more poetic, don't you think?"
-    sill "哦,我知道!“玫瑰花园”怎么样?听起来更有诗意，你不觉得吗?"
+    sill "哦，我知道！“玫瑰花园”怎么样？听起来更有诗意，你不觉得吗？"
 
 # game/BKintro.rpy:2215
 translate chinese main_first_time_08f8ec6f:
 
     # sill "Yay! I'm glad you liked it."
-    sill "耶!我很高兴你喜欢它。"
+    sill "耶！我很高兴你喜欢它。"
 
 # game/BKintro.rpy:2218
 translate chinese main_first_time_f80f4ef0:
 
     # sill sad "Ew! Master! Not that name again!"
-    sill sad "哟!主人!别再说那个名字了!"
+    sill sad "哟！主人！别再说那个名字了！"
 
 # game/BKintro.rpy:2219
 translate chinese main_first_time_5ff492db:
 
     # you "Shut up, Sill. I call the shots here."
-    you "闭嘴,希露。这里我说了算。"
+    you "闭嘴，希露。这里我说了算。"
 
 # game/BKintro.rpy:2222
 translate chinese main_first_time_f3dce340:
@@ -3424,31 +3424,31 @@ translate chinese strings:
 
     # game/BKintro.rpy:995
     old "Who?"
-    new "谁?"
+    new "谁？"
 
     # game/BKintro.rpy:995
     old "The illuminati guild?"
-    new "光明公会?"
+    new "光明公会？"
 
     # game/BKintro.rpy:995
     old "Kaizer Sauze?"
-    new "凯泽·索兹?"
+    new "凯泽·索兹？"
 
     # game/BKintro.rpy:995
     old "Yo mamma?"
-    new "你妈妈?"
+    new "你妈妈？"
 
     # game/BKintro.rpy:1191
     old "Well..."
-    new "嗯…"
+    new "嗯……"
 
     # game/BKintro.rpy:1191
     old "Of course!"
-    new "当然!"
+    new "当然！"
 
     # game/BKintro.rpy:1191
     old "Sure!"
-    new "肯定啊!"
+    new "肯定啊！"
 
     # game/BKintro.rpy:1191
     old "Fuck yeah!"
@@ -3456,15 +3456,15 @@ translate chinese strings:
 
     # game/BKintro.rpy:1239
     old "Stop it already!"
-    new "阻止它了!"
+    new "阻止它了！"
 
     # game/BKintro.rpy:1239
     old "Maybe another time, Gio..."
-    new "也许另一个时间,吉欧……"
+    new "也许另一个时间，吉欧……"
 
     # game/BKintro.rpy:1239
     old "Sure, why not?"
-    new "当然,为什么不呢?"
+    new "当然，为什么不呢？"
 
     # game/BKintro.rpy:1517
     old "Fuck her where she stands"
@@ -3489,3 +3489,4 @@ translate chinese strings:
     # game/BKintro.rpy:1885
     old "An okiya (geisha house)"
     new "置屋"
+

@@ -1,46 +1,46 @@
-# TODO: Translation updated at 2022-03-01 21:22
+﻿# TODO: Translation updated at 2023-03-31 11:43
 
 # game/kite_jobgirl 1_riddle.rpy:23
 translate chinese jobgirl_0_473133ba:
 
     # jobgirl "Hey there!"
-    jobgirl "嘿!"
+    jobgirl "嘿！"
 
 # game/kite_jobgirl 1_riddle.rpy:25
 translate chinese jobgirl_0_d1f98185:
 
     # jobgirl "Looking for another quest? I noticed you come here often, you must be a busy adventurer!"
-    jobgirl "在寻找另一个任务吗?我注意到你经常来这里，你一定是个忙碌的冒险家!"
+    jobgirl "在寻找另一个任务吗？我注意到你经常来这里，你一定是个忙碌的冒险家！"
 
 # game/kite_jobgirl 1_riddle.rpy:27
 translate chinese jobgirl_0_04c60041:
 
     # you "Err, not exactly. The quests are not really for me; I have a group of, hem, workers, sometimes I get a job request here for one of them."
-    you "呃,不完全是。这些任务并不适合我;我有一群，嗯，工人，有时候我收到他们其中一个的工作申请。"
+    you "呃，不完全是。这些任务并不适合我；我有一群，嗯，工人，有时候我收到他们其中一个的工作申请。"
 
 # game/kite_jobgirl 1_riddle.rpy:29
 translate chinese jobgirl_0_903385a5:
 
     # jobgirl "Oh, really? I could have sworn you were the adventurous type of guy..."
-    jobgirl "哦,真的吗?我可以发誓你是那种爱冒险的人……"
+    jobgirl "哦，真的吗？我可以发誓你是那种爱冒险的人……"
 
 # game/kite_jobgirl 1_riddle.rpy:31
 translate chinese jobgirl_0_f3ebb966:
 
     # you "Well, I can assure you that my life is not lacking in adventures at all! *wink*"
-    you "嗯，我可以向你保证，我的生活一点也不缺乏冒险!*眨眼*"
+    you "嗯，我可以向你保证，我的生活一点也不缺乏冒险！*眨眼*"
 
 # game/kite_jobgirl 1_riddle.rpy:35
 translate chinese jobgirl_0_f656c3ff:
 
     # jobgirl "Ahah! Well, at least you have a sense of humor. So, which kind of job are you looking for your subordinates?"
-    jobgirl "啊!至少你有幽默感。那么，你想找什么样的工作呢?"
+    jobgirl "啊！至少你有幽默感。那么，你想找什么样的工作呢？"
 
 # game/kite_jobgirl 1_riddle.rpy:37
 translate chinese jobgirl_0_462d9ecb:
 
     # you "Sorry but... It's private business. We don't even know each other!"
-    you "抱歉……这是私人业务。我们甚至都不认识!"
+    you "抱歉……这是私人业务。我们甚至都不认识！"
 
 # game/kite_jobgirl 1_riddle.rpy:39
 translate chinese jobgirl_0_94a55192:
@@ -52,7 +52,7 @@ translate chinese jobgirl_0_94a55192:
 translate chinese jobgirl_0_779bd35e:
 
     # you "Scarlet?"
-    you "红色?"
+    you "朱红色？"
 
 # game/kite_jobgirl 1_riddle.rpy:45
 translate chinese jobgirl_0_1babc5c1:
@@ -76,19 +76,19 @@ translate chinese jobgirl_0_3ba6eaa2:
 translate chinese jobgirl_0_40026f0e:
 
     # you "Well, my name is [MC.name]. Scarlet, was it? Wait, how did you come up with such a nickname? Did you get it from a fairy tale?"
-    you "嗯，我的名字是[MC.name]。红色,是吗?等等，你是怎么想出这个绰号的?你是从童话里得到的吗?"
+    you "嗯，我的名字是[MC.name]。朱红色，是吗？等等，你是怎么想出这个绰号的？你是从童话里得到的吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:53
 translate chinese jobgirl_0_ff7e51d1:
 
     # jobgirl "Hey!!!" with vpunch
-    jobgirl "嘿! ! !" with vpunch
+    jobgirl "嘿！！！" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:55
 translate chinese jobgirl_0_b6422fd5:
 
     # jobgirl "What's wrong with my nickname? My hair is red, so I chose 'Scarlet' as my personal battle name!"
-    jobgirl "我的昵称怎么了?我的头发是红色的，所以我选择了“猩红色”作为我个人的战斗名字!"
+    jobgirl "我的昵称怎么了？我的头发是朱红色的，所以我选择了“猩朱红色”作为我个人的战斗名字！"
 
 # game/kite_jobgirl 1_riddle.rpy:57
 translate chinese jobgirl_0_d7421ffd:
@@ -100,13 +100,13 @@ translate chinese jobgirl_0_d7421ffd:
 translate chinese jobgirl_0_b628954f:
 
     # jobgirl "Shut up! It's a cool name, and I like it."
-    jobgirl "闭嘴!这个名字很酷，我喜欢。"
+    jobgirl "闭嘴！这个名字很酷，我喜欢。"
 
 # game/kite_jobgirl 1_riddle.rpy:61
 translate chinese jobgirl_0_1fb93c9f:
 
     # you "Ok, ok, don't get mad! I won't bug you anymore about your name."
-    you "好了，好了，别生气!我不会再为你的名字烦你了。"
+    you "好了，好了，别生气！我不会再为你的名字烦你了。"
 
 # game/kite_jobgirl 1_riddle.rpy:63
 translate chinese jobgirl_0_16ef8e77:
@@ -118,19 +118,19 @@ translate chinese jobgirl_0_16ef8e77:
 translate chinese jobgirl_0_ff7f4ddb:
 
     # jobgirl "Do you always treat girls like that? I bet you're still single, aren't you?"
-    jobgirl "你总是那样对待女孩子吗?我打赌你还是单身，是吗?"
+    jobgirl "你总是那样对待女孩子吗？我打赌你还是单身，是吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:67
 translate chinese jobgirl_0_e1475bd6:
 
     # you "Uhm, actually... Now that you mention it, I must admit I'm not into any romantic relationship. My job keeps me busy..."
-    you "嗯,其实……既然你提到了，我必须承认我不喜欢任何浪漫的关系。我的工作让我很忙…"
+    you "嗯，其实……既然你提到了，我必须承认我不喜欢任何浪漫的关系。我的工作让我很忙……"
 
 # game/kite_jobgirl 1_riddle.rpy:69
 translate chinese jobgirl_0_f8c0605f:
 
     # jobgirl "I see... I guess you chose your job over women, haven't you?"
-    jobgirl "明白了。。。我猜你选择了你的工作而不是女人，是吗?"
+    jobgirl "明白了……我猜你选择了你的工作而不是女人，是吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:71
 translate chinese jobgirl_0_ec3ab746:
@@ -142,7 +142,7 @@ translate chinese jobgirl_0_ec3ab746:
 translate chinese jobgirl_0_ea1e33c5:
 
     # you "A brothel doesn't run itself, you know?"
-    you "青楼是不会自己经营的，你知道吗?"
+    you "青楼是不会自己经营的，你知道吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:77
 translate chinese jobgirl_0_79ce8c7f:
@@ -178,13 +178,13 @@ translate chinese jobgirl_0_2330ce08:
 translate chinese jobgirl_0_0da82351:
 
     # you "There is one, my first slave, Sill; I don't let anyone put their hands on her, she's mine only!"
-    you "有一个，我的第一个奴隶，希露;我不让任何人碰她，她只是我的!"
+    you "有一个，我的第一个奴隶，希露;我不让任何人碰她，她只是我的！"
 
 # game/kite_jobgirl 1_riddle.rpy:93
 translate chinese jobgirl_0_1432a25b:
 
     # jobgirl "I see. So, even a pimp can have a heart after all. Interesting..."
-    jobgirl "我明白了。所以，即使是皮条客也可以有一颗心。有趣的…"
+    jobgirl "我明白了。所以，即使是皮条客也可以有一颗心。有趣的……"
 
 # game/kite_jobgirl 1_riddle.rpy:99
 translate chinese jobgirl_0_c0687085:
@@ -214,7 +214,7 @@ translate chinese jobgirl_0_96a62a68:
 translate chinese jobgirl_0_a0eb8b3d:
 
     # you "Now, what about you? Do you have a boyfriend?"
-    you "你呢?你有男朋友吗?"
+    you "你呢？你有男朋友吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:110
 translate chinese jobgirl_0_2d699523:
@@ -238,7 +238,7 @@ translate chinese jobgirl_0_3c253c15:
 translate chinese jobgirl_0_d87b5c63:
 
     # jobgirl "Small quests are easy and don't take much time, so I do a lot of them, having more fun and less risks than doing a single, difficult one. Plus, in this way I can help more people! Isn't it perfect?"
-    jobgirl "小任务很简单，不需要花费太多时间，所以我做了很多任务，比起一个单一的，困难的任务，我有更多的乐趣和更少的风险。另外，这样我可以帮助更多的人!这不是完美的吗?"
+    jobgirl "小任务很简单，不需要花费太多时间，所以我做了很多任务，比起一个单一的，困难的任务，我有更多的乐趣和更少的风险。另外，这样我可以帮助更多的人！这不是完美的吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:118
 translate chinese jobgirl_0_0b17a876:
@@ -256,19 +256,19 @@ translate chinese jobgirl_0_ab1bcec7:
 translate chinese jobgirl_0_6e182e58:
 
     # you "Oh shit, I have to hurry! Sorry Scarlet, business calls. It's been cool to know you better, I hope we can meet and talk again."
-    you "该死，我得快点!抱歉，斯佳丽，有公事。很高兴认识你，希望我们能再见面谈谈。"
+    you "该死，我得快点！抱歉，斯佳丽，有公事。很高兴认识你，希望我们能再见面谈谈。"
 
 # game/kite_jobgirl 1_riddle.rpy:124
 translate chinese jobgirl_0_f36beaf9:
 
     # jobgirl "Sure [MC.name], I enjoyed our time together too. You know where to find me *winks*. See ya!"
-    jobgirl "当然，[MC.name]，我也很享受我们在一起的时光。你知道在哪能找到我*眨眼*。再见!"
+    jobgirl "当然，[MC.name]，我也很享受我们在一起的时光。你知道在哪能找到我*眨眼*。再见！"
 
 # game/kite_jobgirl 1_riddle.rpy:126
 translate chinese jobgirl_0_2eecd061:
 
     # you "(I must admit it, that girl is impressive.)"
-    you "(我必须承认，那个女孩令人印象深刻。)"
+    you "（我必须承认，那个女孩令人印象深刻。）"
 
 # game/kite_jobgirl 1_riddle.rpy:152
 translate chinese jobgirl_1_69893b10:
@@ -286,7 +286,7 @@ translate chinese jobgirl_1_1df7e374:
 translate chinese jobgirl_1_9237eaae:
 
     # jobgirl "Hey, [MC.name], glad to see you around again! What brings you here today? Business as usual?"
-    jobgirl "嘿，[MC.name]，很高兴又见到你!什么风把你吹来了?一切照旧?"
+    jobgirl "嘿，[MC.name]，很高兴又见到你！什么风把你吹来了？一切照旧？"
 
 # game/kite_jobgirl 1_riddle.rpy:157
 translate chinese jobgirl_1_05794613:
@@ -304,13 +304,13 @@ translate chinese jobgirl_1_0db0f635:
 translate chinese jobgirl_1_2f046d16:
 
     # jobgirl "But I'm no scholar. I only managed to get a raw translation but it's not enough to understand its meaning!"
-    jobgirl "但我不是学者。我只能得到一个原始的翻译，但这是不够理解它的意思!"
+    jobgirl "但我不是学者。我只能得到一个原始的翻译，但这是不够理解它的意思！"
 
 # game/kite_jobgirl 1_riddle.rpy:162
 translate chinese jobgirl_1_8d815c4d:
 
     # you "A scroll, uh?"
-    you "滚动,呃?"
+    you "滚动，呃？"
 
 # game/kite_jobgirl 1_riddle.rpy:164
 translate chinese jobgirl_1_13344540:
@@ -322,7 +322,7 @@ translate chinese jobgirl_1_13344540:
 translate chinese jobgirl_1_3c4f0a44:
 
     # jobgirl "It's very difficult. Would you mind giving a hand to a damsel in distress? *winks at you*"
-    jobgirl "它是非常困难的。你介意帮个忙吗?*在你眨眼"
+    jobgirl "它是非常困难的。你介意帮个忙吗？*在你眨眼"
 
 # game/kite_jobgirl 1_riddle.rpy:167
 translate chinese jobgirl_1_b8c9d0a3:
@@ -334,7 +334,7 @@ translate chinese jobgirl_1_b8c9d0a3:
 translate chinese jobgirl_1_01f31afe:
 
     # jobgirl "*laughs* You're a funny guy, has anybody ever told you that?"
-    jobgirl "你是个有趣的人，有人告诉过你吗?"
+    jobgirl "你是个有趣的人，有人告诉过你吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:177
 translate chinese jobgirl_1_a11e0574:
@@ -346,37 +346,37 @@ translate chinese jobgirl_1_a11e0574:
 translate chinese jobgirl_1_8eeca005:
 
     # you "Let's see... Mmmh... This could be that, so this word can mean... and this one, should mean..."
-    you "让我们看看…Mmmh……这个可以是那个，所以这个词可以表示……这个应该是…"
+    you "让我们看看……嗯……这个可以是那个，所以这个词可以表示……这个应该是……"
 
 # game/kite_jobgirl 1_riddle.rpy:181
 translate chinese jobgirl_1_ef54aa95:
 
     # jobgirl "*anxious* Sooo, did you get any hints? A translation?"
-    jobgirl "焦虑，你得到任何提示了吗?一个翻译吗?"
+    jobgirl "焦虑，你得到任何提示了吗？一个翻译吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:183
 translate chinese jobgirl_1_08609b58:
 
     # you "This is... a riddle?!" with vpunch
-    you "这是……一个谜?" with vpunch
+    you "这是……一个谜？" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:193
 translate chinese jobgirl_1_ff29c8e9:
 
     # jobgirl "A riddle, uh? Interesting. It makes sense, since I found it in the Alikr desert, under a statue of a strange monster."
-    jobgirl "一个谜,呃?有趣。这是有道理的，因为我是在阿利克沙漠，在一个奇怪怪物的雕像下发现它的。"
+    jobgirl "一个谜，呃？有趣。这是有道理的，因为我是在阿利克沙漠，在一个奇怪怪物的雕像下发现它的。"
 
 # game/kite_jobgirl 1_riddle.rpy:195
 translate chinese jobgirl_1_88f710f4:
 
     # you "A winged lion with a human face?"
-    you "长着人脸的飞狮?"
+    you "长着人脸的飞狮？"
 
 # game/kite_jobgirl 1_riddle.rpy:199
 translate chinese jobgirl_1_e66271c6:
 
     # jobgirl "H-how did you know that?" with vpunch
-    jobgirl "你怎么知道的?" with vpunch
+    jobgirl "你怎么知道的？" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:201
 translate chinese jobgirl_1_158567a6:
@@ -388,7 +388,7 @@ translate chinese jobgirl_1_158567a6:
 translate chinese jobgirl_1_41490c94:
 
     # jobgirl "Eew, I hope I won't ever meet one in my lifetime!"
-    jobgirl "唉，我希望我这辈子再也不会遇到这样的人了!"
+    jobgirl "唉，我希望我这辈子再也不会遇到这样的人了！"
 
 # game/kite_jobgirl 1_riddle.rpy:205
 translate chinese jobgirl_1_39580919:
@@ -400,7 +400,7 @@ translate chinese jobgirl_1_39580919:
 translate chinese jobgirl_1_b1e01e69:
 
     # jobgirl "Good to know. Soo, what's the riddle's solution?"
-    jobgirl "很高兴知道。Soo，谜底是什么?"
+    jobgirl "很高兴知道。所以，谜底是什么？"
 
 # game/kite_jobgirl 1_riddle.rpy:209
 translate chinese jobgirl_1_7224535e:
@@ -412,7 +412,7 @@ translate chinese jobgirl_1_7224535e:
 translate chinese jobgirl_1_6978a924:
 
     # jobgirl "Gross! I'm not a monster, you know?"
-    jobgirl "恶心!我不是怪物，你知道吗?"
+    jobgirl "恶心！我不是怪物，你知道吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:213
 translate chinese jobgirl_1_082c1548:
@@ -436,13 +436,13 @@ translate chinese jobgirl_1_decc78d7:
 translate chinese jobgirl_1_39553eca:
 
     # you "This riddle is quite ancient, did you know that?"
-    you "这个谜语很古老，你知道吗?"
+    you "这个谜语很古老，你知道吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:227
 translate chinese jobgirl_1_c29f098d:
 
     # jobgirl "Really? I've never heard of it before. However, it explains why it's written in such a weird way..."
-    jobgirl "真的吗?我以前从未听说过。然而，它解释了为什么它的写作方式如此怪异……"
+    jobgirl "真的吗？我以前从未听说过。然而，它解释了为什么它的写作方式如此怪异……"
 
 # game/kite_jobgirl 1_riddle.rpy:229
 translate chinese jobgirl_1_0a3c2819:
@@ -454,19 +454,19 @@ translate chinese jobgirl_1_0a3c2819:
 translate chinese jobgirl_1_ee32c713:
 
     # jobgirl "Wait, are you giving me the answer without asking for a reward?"
-    jobgirl "等等，你是在不要求回报的情况下给我答案吗?"
+    jobgirl "等等，你是在不要求回报的情况下给我答案吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:233
 translate chinese jobgirl_1_4818ec14:
 
     # you "A reward? Do people usually demand damsels in distress a reward for rescuing them?"
-    you "一个奖励吗?人们通常会要求处于困境中的少女作为解救她们的奖励吗?"
+    you "一个奖励吗？人们通常会要求处于困境中的少女作为解救她们的奖励吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:235
 translate chinese jobgirl_1_5a80f950:
 
     # jobgirl "*smiles* Hihi, I guess they don't... Anyway, thank you very much!"
-    jobgirl "嗨，我想他们没有……无论如何，非常感谢!"
+    jobgirl "嗨，我想他们没有……无论如何，非常感谢！"
 
 # game/kite_jobgirl 1_riddle.rpy:237
 translate chinese jobgirl_1_9339a2bb:
@@ -490,37 +490,37 @@ translate chinese jobgirl_1_258e89dc:
 translate chinese jobgirl_1_04efb9b0:
 
     # you "Aren't you forgetting something babe? Since this is a help request, there should also be a reward, am I right?"
-    you "宝贝，你是不是忘了什么?既然这是一个帮助请求，也应该有一个奖励，对吗?"
+    you "宝贝，你是不是忘了什么？既然这是一个帮助请求，也应该有一个奖励，对吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:249
 translate chinese jobgirl_1_a32f4012:
 
     # jobgirl "Wait, are you asking to be compensated for {i}this{/i}? Seriously?"
-    jobgirl "等等，你要求{i}为此{/i}赔偿吗?严重吗?"
+    jobgirl "等等，你要求{i}为此{/i}赔偿吗？严重吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:251
 translate chinese jobgirl_1_b43da79b:
 
     # you "Try to understand, I'm a businessman and this is just another job. If it was this easy, you would have done it yourself. How about a hundred coins?"
-    you "试着去理解，我是个商人，这只是另一份工作。如果有这么简单的话，你早就自己做了。一百枚硬币怎么样?"
+    you "试着去理解，我是个商人，这只是另一份工作。如果有这么简单的话，你早就自己做了。一百枚硬币怎么样？"
 
 # game/kite_jobgirl 1_riddle.rpy:253
 translate chinese jobgirl_1_1decdb77:
 
     # jobgirl "(*stares at you from head to feet*) Did they ever tell you that you're as cold as an iron bar? Are you sure you have a beating heart in your chest?"
-    jobgirl "(*从头到脚盯着你*)他们有没有告诉过你，你冷得像根铁棒?你确定你的心脏还在跳动吗?"
+    jobgirl "（*从头到脚盯着你*）他们有没有告诉过你，你冷得像根铁棒？你确定你的心脏还在跳动吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:255
 translate chinese jobgirl_1_e122b685:
 
     # you "There's no need to say such things, you know? I'm not asking for the moon, just a small reward for a small task, that's all!"
-    you "没有必要说这样的话，你知道吗?我不是要天上掉馅饼，只是为了完成一项小任务而得到一点小小的奖励，仅此而已!"
+    you "没有必要说这样的话，你知道吗？我不是要天上掉馅饼，只是为了完成一项小任务而得到一点小小的奖励，仅此而已！"
 
 # game/kite_jobgirl 1_riddle.rpy:257
 translate chinese jobgirl_1_9f5140a9:
 
     # jobgirl "Yeah, whatever. Fine. I'll pay you."
-    jobgirl "是的,不管。很好。我会付给你。"
+    jobgirl "是的，不管。很好。我会付给你。"
 
 # game/kite_jobgirl 1_riddle.rpy:259
 translate chinese jobgirl_1_6cec30bc:
@@ -532,7 +532,7 @@ translate chinese jobgirl_1_6cec30bc:
 translate chinese jobgirl_1_32438381:
 
     # jobgirl "Happy now?"
-    jobgirl "现在快乐吗?"
+    jobgirl "现在快乐吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:269
 translate chinese jobgirl_1_56b2cbc0:
@@ -544,19 +544,19 @@ translate chinese jobgirl_1_56b2cbc0:
 translate chinese jobgirl_1_cb6f8254:
 
     # you "You really got it a few days ago and didn't get the solution yet?"
-    you "你几天前就知道了，但还没有得到答案?"
+    you "你几天前就知道了，但还没有得到答案？"
 
 # game/kite_jobgirl 1_riddle.rpy:277
 translate chinese jobgirl_1_122907e2:
 
     # jobgirl "Hey, what are you blabbing about!!! I'm not stupid, you know?" with vpunch
-    jobgirl "嘿，你在说什么呀!!我不傻，你知道吗?"
+    jobgirl "嘿，你在说什么呀！！我不傻，你知道吗？" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:279
 translate chinese jobgirl_1_97de1fba:
 
     # you "Don't get narky darling, didn't mean any offense, it is just... well, the riddle is quite simple, it's also quite old and famous, don't you know?"
-    you "别吸毒，亲爱的，我不是有意冒犯你，只是…嗯，这个谜语很简单，也很古老，很有名，你不知道吗?"
+    you "别吸毒，亲爱的，我不是有意冒犯你，只是……嗯，这个谜语很简单，也很古老，很有名，你不知道吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:281
 translate chinese jobgirl_1_7f5196db:
@@ -574,13 +574,13 @@ translate chinese jobgirl_1_50345bb6:
 translate chinese jobgirl_1_be4c75ed:
 
     # jobgirl "Now tell me what the answer is, or I'll never be able to sleep again!" with vpunch
-    jobgirl "现在告诉我答案是什么，否则我再也睡不着了!"
+    jobgirl "现在告诉我答案是什么，否则我再也睡不着了！"
 
 # game/kite_jobgirl 1_riddle.rpy:287
 translate chinese jobgirl_1_a898ce2d:
 
     # "Now that she mentions it you notice she looks tired and drowsy. She probably hasn't slept since getting the scroll, trying to solve the riddle!"
-    "现在她提起这件事，你会注意到她看起来很累，昏昏欲睡。她可能从拿到卷轴后就没睡过觉，想解开这个谜!"
+    "现在她提起这件事，你会注意到她看起来很累，昏昏欲睡。她可能从拿到卷轴后就没睡过觉，想解开这个谜！"
 
 # game/kite_jobgirl 1_riddle.rpy:289
 translate chinese jobgirl_1_8c4f26bc:
@@ -592,13 +592,13 @@ translate chinese jobgirl_1_8c4f26bc:
 translate chinese jobgirl_1_872b1a72:
 
     # "You don't want her to be mad at you, right? Try again!"
-    "你不想让她生你的气，对吧?再试一次!"
+    "你不想让她生你的气，对吧？再试一次！"
 
 # game/kite_jobgirl 1_riddle.rpy:305
 translate chinese jobgirl_1_fc3f2391:
 
     # "Don't you know it? Molise doesn't exist! Try again!"
-    "你不知道吗?莫利塞不存在!再试一次!"
+    "你不知道吗？莫利塞不存在！再试一次！"
 
 # game/kite_jobgirl 1_riddle.rpy:319
 translate chinese jobgirl_1_81710e34:
@@ -610,13 +610,13 @@ translate chinese jobgirl_1_81710e34:
 translate chinese jobgirl_1_142446ee:
 
     # jobgirl "Which one?" with vpunch
-    jobgirl "哪一个?"
+    jobgirl "哪一个？"
 
 # game/kite_jobgirl 1_riddle.rpy:325
 translate chinese jobgirl_1_34be61d7:
 
     # you "Mankind in general, doofus..."
-    you "人类，笨蛋…"
+    you "人类，笨蛋……"
 
 # game/kite_jobgirl 1_riddle.rpy:327
 translate chinese jobgirl_1_b05b0c24:
@@ -634,43 +634,43 @@ translate chinese jobgirl_1_dc695aec:
 translate chinese jobgirl_1_31c7da47:
 
     # jobgirl "Nah... Not now, at least. I'll give it to the client to get my reward! *smiles happily*"
-    jobgirl "不…至少现在不行。我会把它给客户以获得我的报酬!*微笑幸福*"
+    jobgirl "不……至少现在不行。我会把它给客户以获得我的报酬！*微笑幸福*"
 
 # game/kite_jobgirl 1_riddle.rpy:333
 translate chinese jobgirl_1_375a276f:
 
     # you "Alright then. So, how much will he pay you?"
-    you "好吧。那么，他会付给你多少钱?"
+    you "好吧。那么，他会付给你多少钱？"
 
 # game/kite_jobgirl 1_riddle.rpy:335
 translate chinese jobgirl_1_c28ed55e:
 
     # jobgirl "The guy is very rich, he'll pay me a thousand coins for this job!"
-    jobgirl "这家伙很有钱，他会付给我一千枚硬币做这份工作!"
+    jobgirl "这家伙很有钱，他会付给我一千枚硬币做这份工作！"
 
 # game/kite_jobgirl 1_riddle.rpy:337
 translate chinese jobgirl_1_6009c969:
 
     # you "Wow, not bad!"
-    you "哇,不错!"
+    you "哇，不错！"
 
 # game/kite_jobgirl 1_riddle.rpy:341
 translate chinese jobgirl_1_4ef84674:
 
     # jobgirl "I'm so relieved... Now I don't have to worry about my outgoings for a long time!"
-    jobgirl "我很欣慰…现在我不用担心我的支出很长一段时间!"
+    jobgirl "我很欣慰……现在我不用担心我的支出很长一段时间！"
 
 # game/kite_jobgirl 1_riddle.rpy:343
 translate chinese jobgirl_1_0c68dd5f:
 
     # you "Congratulations. What will you do with all that money?"
-    you "祝贺你。你要用这些钱干什么?"
+    you "祝贺你。你要用这些钱干什么？"
 
 # game/kite_jobgirl 1_riddle.rpy:345
 translate chinese jobgirl_1_e3008a1d:
 
     # jobgirl "I definitely want to spend a small sum for fun! Gonna plan a trip to the beach as soon as possible. Ooh my, I need a new bikini, and a lot of exercises to get fit for it!"
-    jobgirl "我一定要花一小笔钱玩!我要尽快计划一次去海滩的旅行。哦，天哪，我需要一件新的比基尼，还有很多锻炼来适应它!"
+    jobgirl "我一定要花一小笔钱玩！我要尽快计划一次去海滩的旅行。哦，天哪，我需要一件新的比基尼，还有很多锻炼来适应它！"
 
 # game/kite_jobgirl 1_riddle.rpy:351
 translate chinese jobgirl_1_ae55d497:
@@ -688,13 +688,13 @@ translate chinese jobgirl_1_f5bbb1db:
 translate chinese jobgirl_1_959d16f5:
 
     # "You almost fall back but manage to stand; she's light but quite energetic." with vpunch
-    "你几乎要后退，但还是站了起来;她很轻，但精力充沛。"
+    "你几乎要后退，但还是站了起来;她很轻，但精力充沛。" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:371
 translate chinese jobgirl_1_2a22fab1:
 
     # jobgirl "Ooh, sorry, uhm... *blushes*"
-    jobgirl "哦,对不起,嗯……*脸红*"
+    jobgirl "哦，对不起，嗯……*脸红*"
 
 # game/kite_jobgirl 1_riddle.rpy:373
 translate chinese jobgirl_1_67aed4eb:
@@ -706,7 +706,7 @@ translate chinese jobgirl_1_67aed4eb:
 translate chinese jobgirl_1_a014484f:
 
     # you "Holding you in my arms is the best thing I could ever hope for... I wish I could catch you again soon."
-    you "抱着你在我的怀里是我所能奢望的最好的事情…我希望不久能再见到你。"
+    you "抱着你在我的怀里是我所能奢望的最好的事情……我希望不久能再见到你。"
 
 # game/kite_jobgirl 1_riddle.rpy:381
 translate chinese jobgirl_1_4542b940:
@@ -718,7 +718,7 @@ translate chinese jobgirl_1_4542b940:
 translate chinese jobgirl_1_d068f1b1:
 
     # jobgirl "Thank you, gallant knight... You do know how to speak to a woman. My mom always said I was a catch, I guess you just proved it! *wink*"
-    jobgirl "谢谢你，勇敢的骑士……你知道怎么跟女人说话。我妈妈总是说我是个圈套，我猜你已经证明了这一点!*眨眼*"
+    jobgirl "谢谢你，勇敢的骑士……你知道怎么跟女人说话。我妈妈总是说我是个圈套，我猜你已经证明了这一点！*眨眼*"
 
 # game/kite_jobgirl 1_riddle.rpy:387
 translate chinese jobgirl_1_c69937e7:
@@ -730,7 +730,7 @@ translate chinese jobgirl_1_c69937e7:
 translate chinese jobgirl_1_4d7929c8:
 
     # you "I see... I think you're ready for the bikini test right now! I know very few girls more fit than you... And even less girls with such a good figure!"
-    you "明白了。。。我想你现在已经为比基尼测试做好准备了!我知道很少有女孩比你更健康……有这么好的身材的女孩就更少了!"
+    you "明白了……我想你现在已经为比基尼测试做好准备了！我知道很少有女孩比你更健康……有这么好的身材的女孩就更少了！"
 
 # game/kite_jobgirl 1_riddle.rpy:398
 translate chinese jobgirl_1_8a04707c:
@@ -742,13 +742,13 @@ translate chinese jobgirl_1_8a04707c:
 translate chinese jobgirl_1_db682ddc:
 
     # jobgirl "Really? Do you think I'm in good shape?"
-    jobgirl "真的吗?你觉得我身体好吗?"
+    jobgirl "真的吗？你觉得我身体好吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:407
 translate chinese jobgirl_1_9432b3ca:
 
     # you "I dare say fantastic shape. You can definitely wear any bikini, with such eyes no man will be able to keep his stare away from you!"
-    you "我敢说身材很好。你绝对可以穿任何比基尼，这样的眼睛没有人能把他的目光从你身上移开!"
+    you "我敢说身材很好。你绝对可以穿任何比基尼，这样的眼睛没有人能把他的目光从你身上移开！"
 
 # game/kite_jobgirl 1_riddle.rpy:409
 translate chinese jobgirl_1_f0fca549:
@@ -760,13 +760,13 @@ translate chinese jobgirl_1_f0fca549:
 translate chinese jobgirl_1_02829207:
 
     # jobgirl "What, these?"
-    jobgirl "这些,什么?"
+    jobgirl "这些，什么？"
 
 # game/kite_jobgirl 1_riddle.rpy:419
 translate chinese jobgirl_1_53973358:
 
     # you "Wow!" with vpunch
-    you "哇!" with vpunch
+    you "哇！" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:421
 translate chinese jobgirl_1_b91e6759:
@@ -778,19 +778,19 @@ translate chinese jobgirl_1_b91e6759:
 translate chinese jobgirl_1_f53be934:
 
     # jobgirl "EH! Don't stare!" with vpunch
-    jobgirl "嗯!不要盯着看!" with vpunch
+    jobgirl "嗯！不要盯着看！" with vpunch
 
 # game/kite_jobgirl 1_riddle.rpy:428
 translate chinese jobgirl_1_7ff6596b:
 
     # you "I don't want to be rude, but... I really enjoyed the view!"
-    you "我不想无礼，但是……我真的很喜欢这里的景色!"
+    you "我不想无礼，但是……我真的很喜欢这里的景色！"
 
 # game/kite_jobgirl 1_riddle.rpy:432
 translate chinese jobgirl_1_13183125:
 
     # jobgirl "Yeah, I'm sure you did. You'd better cherish that memory, because there won't be another one!"
-    jobgirl "是的，我相信你做了。你最好珍惜那段记忆，因为不会有下一个!"
+    jobgirl "是的，我相信你做了。你最好珍惜那段记忆，因为不会有下一个！"
 
 # game/kite_jobgirl 1_riddle.rpy:434
 translate chinese jobgirl_1_be443405:
@@ -808,7 +808,7 @@ translate chinese jobgirl_1_2ffedf70:
 translate chinese jobgirl_1_9483edbf:
 
     # jobgirl "N-no way!..."
-    jobgirl "不!…"
+    jobgirl "不！……"
 
 # game/kite_jobgirl 1_riddle.rpy:442
 translate chinese jobgirl_1_dc9ba118:
@@ -832,7 +832,7 @@ translate chinese jobgirl_1_0e5ec6f6:
 translate chinese jobgirl_1_9bb41fd5:
 
     # jobgirl "You've saved me a second time today. You're very useful, you know?"
-    jobgirl "你今天又救了我一次。你很有用，知道吗?"
+    jobgirl "你今天又救了我一次。你很有用，知道吗？"
 
 # game/kite_jobgirl 1_riddle.rpy:457
 translate chinese jobgirl_1_b109b706:
@@ -862,13 +862,13 @@ translate chinese jobgirl_1_c3740cf6:
 translate chinese jobgirl_1_f30c4b0a:
 
     # jobgirl "Thank you, really! If it wasn't for you, I'd still be on that stupid riddle! See ya!"
-    jobgirl "谢谢你,真的!要不是你，我还在猜那个愚蠢的谜语呢!再见!"
+    jobgirl "谢谢你，真的！要不是你，我还在猜那个愚蠢的谜语呢！再见！"
 
 # game/kite_jobgirl 1_riddle.rpy:470
 translate chinese jobgirl_1_b8a24d3f:
 
     # you "Bye!"
-    you "再见!"
+    you "再见！"
 
 translate chinese strings:
 
@@ -879,3 +879,4 @@ translate chinese strings:
     # game/kite_jobgirl 1_riddle.rpy:88
     old "I wish I had one"
     new "真希望我有一个"
+
