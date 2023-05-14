@@ -10,6 +10,8 @@
 
 ## 青楼之王v0.2 / Brothel King v0.2
 
+<img src="https://i.ibb.co/18qf1xt/image.png" alt="image" border="0" width="70%">
+
 目前翻译的游戏版本是：0.2（2022/7/11）
 
 虽然游戏版本可能会比原版慢很多，但只要原版最新补丁不修改图片格式等等的，用汉化补丁覆盖上去一般都没问题
@@ -18,37 +20,28 @@
 
 ②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
 
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.2/BK-v0.2alpha-Chinese.zip)
+③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/1.0/BK-v0.2-Chinese.zip)
 
-这样进游戏就是中文的啦~
+**[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
+**[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
 
-注意游戏本体是没有人物包的，需要另外下载
+### **注意游戏本体是没有人物包的，需要另外下载**
 
 [作者论坛链接](https://henthighschool.net/brothel-king/) | [国外基础人物](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file) | [国外人物表格](https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808)
-
-### 翻译剩余进度
-
-| 对话选项   | ❌ |
-
-| 游戏剧情   | ❌ |
-
-<img src="https://i.ibb.co/18qf1xt/image.png" alt="image" border="0" width="70%">
 
 --------------------------------------------
 
 ## 标签工具v2.8.14 / Tagging Tool v2.8.14
 
+<img src="https://i.ibb.co/f1nrw0F/image.png" alt="image" border="0" width="70%">
+
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
 ②安装补丁：[下载补丁覆盖](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
 
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/0.0.2/TaggingTool-v2.8.14-Chinese.zip)
-
-这样工具就是中文的啦~
+③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/1.0/TaggingTool-v2.8.14-Chinese.zip)
 
 [工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
-
-<img src="https://i.ibb.co/f1nrw0F/image.png" alt="image" border="0" width="70%">
 
 --------------------------------------------
 
@@ -74,10 +67,14 @@ A:建议前往[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translat
 
 ## 最后一些话
 
-等下次回来汉化完并且更新到0.2正式版后，他论坛里面的那些mod有点想玩，说不定会把一些mod也给汉化了吧（画饼.jpg）
+画饼失败！本来想着翻译完进游戏玩玩看的，但现在没啥动力打开游戏了，看之后0.3更新了啥吧
 
-问题反馈或者意见请用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)
+想了想好像搞这汉化拖了挺久的，21年12月搞到现在（md我是真的懒）
 
-**此汉化基于0.15版本的汉化版进行修改、添加以及润色文本**
+之前没搞过汉化，汉化真的好麻烦，中间还丢过好几次档，人麻了
+
+问题反馈或意见请用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)
+
+**此汉化基于0.15版本的汉化进行修改、添加以及润色文本**
 
 **未经允许禁止转售或转载**
