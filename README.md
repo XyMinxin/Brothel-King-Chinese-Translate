@@ -20,7 +20,7 @@
 
 ②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
 
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/1.0/BK-v0.2-Chinese.zip)
+③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
@@ -39,7 +39,7 @@
 
 ②安装补丁：[下载补丁覆盖](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
 
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/1.0/TaggingTool-v2.8.14-Chinese.zip)
+③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
 
 [工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
 
