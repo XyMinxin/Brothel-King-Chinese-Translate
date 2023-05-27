@@ -16,7 +16,7 @@ translate chinese before_main_menu_fafcaa21:
 translate chinese new_moon_efdf9933:
 
     # "New moon" "{i}The [calendar.moon.name!t] is out.{/i} [calendar.moon.description!t]"
-    "新月" "{i}[calendar.moon.name！t]过了。{/i} [calendar.moon.description！t]"
+    "新月" "{i}[calendar.moon.name!t]过了。{/i} [calendar.moon.description!t]"
 
 # game/BKevents.rpy:305
 translate chinese sill_checks_5f55122b:
