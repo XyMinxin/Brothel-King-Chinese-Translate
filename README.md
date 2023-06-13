@@ -18,9 +18,11 @@
 
 ①下载本体：[下载游戏本体](https://www.mediafire.com/file/h81k39vblrz5co3/Brothel_King-0.2.zip/file)
 
-②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
+~~②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)~~
 
 ③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
+
+合并了补丁，只要本体，不用中间多打个补丁了
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
@@ -37,9 +39,11 @@
 
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
-②安装补丁：[下载补丁覆盖](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)
+~~②安装补丁：[下载补丁覆盖](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)~~
 
 ③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
+
+合并了补丁，只要本体，不用中间多打个补丁了
 
 [工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
 
@@ -49,7 +53,7 @@
 
 Q:安装补丁后不是中文的！
 
-A:~~首先设置界面可以选择中文~~ 现在默认中文，如果还是英文，可能你安装操作有误，导致并没有正确安装补丁，安装顺序是①下载本体②下载补丁进行覆盖③下载汉化进行覆盖
+A:~~首先设置界面可以选择中文~~ 现在默认中文，如果还是英文，可能你安装操作有误，导致并没有正确安装补丁，安装顺序是①下载本体解压②下载汉化覆盖
 
 Q:游戏中出现□□□了！
 
