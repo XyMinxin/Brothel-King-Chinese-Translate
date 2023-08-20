@@ -3967,8 +3967,8 @@ init -2 python:
             target = "性服侍结果评价" if target == "service results" else target
             target = "皮绳愉虐结果评价" if target == "fetish results" else target
 
-            target = "破处获得的人气" if target == "virgin rep" else target
-            target = "破处获得的小费" if target == "virgin tip" else target
+            target = "处女时获得的小费" if target == "virgin rep" else target
+            target = "处女时获得的人气" if target == "virgin tip" else target
             target = "每天第一位客人的满意度" if target == "first customer satisfaction" else target
             target = "完美结果时获得的小费" if target == "perfect result tip" else target
             target = "完美结果时获得的经验" if target == "perfect result xp" else target

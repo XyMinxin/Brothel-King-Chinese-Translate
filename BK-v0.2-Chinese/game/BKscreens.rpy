@@ -2844,7 +2844,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "{b}已工作{/b}" color c_orange size small xalign 0.5
 
-                                    $ ttip = "服务员：" + str_int(log_dict["waitress_days"][days]) + "              舞娘：" + str_int(log_dict["waitress_days"][days]) + "\n按摩师：" + str_int(log_dict["masseuse_days"][days]) + "            艺伎：" + str_int(log_dict["geisha_days"][days]) + "\n妓女：" + str_int(log_dict["whore_days"][days]) + "                 工作/卖淫 ：" + int(log_dict["work_whore_days"][days])
+                                    $ ttip = "服务员：" + str_int(log_dict["waitress_days"][days]) + "              舞娘：" + str_int(log_dict["waitress_days"][days]) + "\n按摩师：" + str_int(log_dict["masseuse_days"][days]) + "            艺伎：" + str_int(log_dict["geisha_days"][days]) + "\n妓女：" + str_int(log_dict["whore_days"][days]) + "                 工作/卖淫 ：" + str_int(log_dict["work_whore_days"][days])
 
                                     textbutton str_int(log_dict["work_days"][days]) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_brown xalign 0.5 action NullAction() hovered tt.Action(ttip)
 
