@@ -619,7 +619,6 @@ screen preferences():
 
                 label _("Transitions")
                 textbutton _("All") action Preference("transitions", "all")
-                textbutton _("None") action Preference("transitions", "none")
 
             frame:
                 style_group "pref"

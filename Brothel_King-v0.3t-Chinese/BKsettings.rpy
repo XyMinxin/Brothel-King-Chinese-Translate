@@ -344,30 +344,30 @@ init -10 python:
 
     room_pics = {
                 # Common rooms
-                "tavern" : "tavern.webp",
-                "strip club" : "strip club.webp",
-                "onsen" : "onsen.webp",
-                "okiya" : "okiya.webp",
+                "零点酒吧" : "tavern.webp",
+                "激情夜店" : "strip club.webp",
+                "露天温泉" : "onsen.webp",
+                "花坊剧场" : "okiya.webp",
                 # Bedrooms
-                "Basic room" : "basic room1.webp",
-                "+Basic room+" : "basic room2.webp",
-                "*Basic room*" : "basic room3.webp",
-                "Standard room" : "standard room1.webp",
-                "+Standard room+" : "standard room2.webp",
-                "*Standard room*" : "standard room3.webp",
-                "Elegant room" : "rich room1.webp",
-                "+Elegant room+" : "rich room2.webp",
-                "*Elegant room*" : "rich room3.webp",
-                "Noble suite" : "noble room1.webp",
-                "+Royal suite+" : "noble room2.webp",
-                "*Imperial suite*" : "noble room3.webp",
+                "集体宿舍" : "basic room1.webp",
+                "四人集宿" : "basic room2.webp",
+                "单人宿舍" : "basic room3.webp",
+                "标准客房" : "standard room1.webp",
+                "复式套间" : "standard room2.webp",
+                "商务套房" : "standard room3.webp",
+                "豪华套房" : "rich room1.webp",
+                "总统套房" : "rich room2.webp",
+                "独栋别墅" : "rich room3.webp",
+                "复式别墅" : "noble room1.webp",
+                "花园洋楼" : "noble room2.webp",
+                "公主寝宫" : "noble room3.webp",
                 # Master bedroom
-                "Single room" : "master/master0.webp",
-                "Double room" : "master/master1.webp",
-                "Small suite" : "master/master2.webp",
-                "Luxury suite" : "master/master3.webp",
-                "Royal suite" : "master/master4.webp",
-                "Royal harem" : "master/master5.webp",
+                "金屋藏娇" : "master/master0.webp",
+                "一龙二凤" : "master/master1.webp",
+                "三人成行" : "master/master2.webp",
+                "淫乱派对" : "master/master3.webp",
+                "皇室寝宫" : "master/master4.webp",
+                "后宫三千" : "master/master5.webp",
                 }
 
     night_pics = ["night.webp",]
@@ -800,7 +800,6 @@ init -10 python:
     # Pictures with forbidden tags will be completely ignored. Use this to disable unwanted content.
 
     forbidden_tags = ["unused"]
-
 
 #### SUPPORT/CONTACT ####
 
