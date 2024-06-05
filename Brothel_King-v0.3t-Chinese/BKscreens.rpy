@@ -3965,7 +3965,7 @@ screen brothel():
         has vbox
         if district.rank > 1:
             if story_flags["found wagon"]:
-                $ text1 = __("Carpenter's {u}W{/u}agon") + "{size=%i}"% -res_font(4)
+                $ text1 = __("Carpenter's {u}W{/u}agon") + "{size=%i}" % -res_font(4)
 
                 if brothel.current_building:
                     if len(brothel.current_building.name) > 15:
@@ -4046,6 +4046,7 @@ screen brothel():
                                 vbox:
 
                                     button xsize xres(156) background None xmargin 0 xpadding 0 action NullAction():
+                                        hovered tt.Action("Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!")
                                         add MC.current_trainer.portrait zoom 1.0 xalign 0.5 yalign 0.5
 
 
@@ -4066,6 +4067,7 @@ screen brothel():
                                         textbutton ">" xsize xres(75) xalign 1.0:
                                             if len(MC.trainers) > 1:
                                                 action Function(MC.cycle_trainers)
+                                                tooltip "Change trainer."
 
                                 vbox:
                                     text "{b}" + MC.current_trainer.name + "{/b}" size res_font(18) xalign 0.5
@@ -4371,7 +4373,7 @@ screen furniture():
 
         has vbox spacing 10
 
-        text "Carpenter's Wagon" 
+        text "Carpenter's Wagon" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize yres(120):
             add "side carpenter" zoom 0.8 yalign 0.5
@@ -4533,10 +4535,10 @@ screen brothel_options():
 
                     text "Choose how incoming customers will be matched with your girls." size res_font(14) italic True color c_brown
 
-                    if game.matching_priority == "阶级":
                         $ text1 = "顾客会尽可能的由与他身份匹配的阶级的女孩来服务."
-                    elif game.matching_priority == "服务":
                         $ text1 = "顾客会尽可能的由擅长他喜欢的服务的女孩来侍奉."
+                    if game.matching_priority == "rank":
+                    elif game.matching_priority == "act":
 
                     textbutton "By %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
@@ -4910,7 +4912,7 @@ screen home():
                     text "✓" font "DejaVuSans.ttf" size res_font(14) xalign 0.5 yalign 0.5
                 else:
                     text " " size res_font(14) xalign 0.5
-            text "Show brothel report" bold True xalign 0
+            text "Show brothel report" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
 
 screen brothel_report():
@@ -5441,7 +5443,6 @@ screen girl_select(girl_list, orange = False, no_sched=False, action_button=None
                                 $ sched = selected_girl.workdays[calendar.get_weekday()]
 
                             else:
-                                $ text1 += __("\nNo job")
                                 $ text1 += __("\n无工作")
                                 $ sched = 0
 
