@@ -1991,7 +1991,7 @@ label main_character:
 
         if result == "change_name":
 
-            $ MC.name = renpy.input("Do you want to change your name?", default = MC.name, length = 20)
+            $ MC.name = renpy.input("你想取个新名字吗?", default = MC.name, length = 20)
 
             $ renpy.block_rollback()
 

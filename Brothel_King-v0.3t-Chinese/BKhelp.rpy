@@ -32,21 +32,21 @@ init python:
     config.hyperlink_handlers['help'] = help_hyperlink
 
     def get_help_menu_topics(scr): # Creates the help menu
-        help_menu_topics = [("Help with the current screen", "help_" + scr), ("Brokipedia", "brokipedia"), ("How to win", "help_how_to_win"), ("Replay last achievements", "achievements"), ("Picture management", "pictures"), ("About this game", "help_about_game")]
+        help_menu_topics = [("当前页面各种功能的介绍", "help_" + scr), ("青楼经营指南", "brokipedia"), ("如何赢得胜利", "help_how_to_win"), ("再次显示上一个获得的成就", "achievements"), ("图片管理器", "pictures"), ("关于本游戏", "help_about_game")]
 
         if scr == "main":
-            help_menu_topics.insert(1, ("Tell me about night events", "help_night_events"))
+            help_menu_topics.insert(1, ("告诉我有关夜间事件的事", "help_night_events"))
 
         if debug_mode:
             help_menu_topics.append(("Debug menu", "debug"))
             help_menu_topics.append(("Cheat menu", "cheats"))
         elif game.cheats and scr == "main":
-            help_menu_topics.append(("Cheat menu - Main Screen only", "cheats"))
+            help_menu_topics.append(("作弊菜单 - 只能在主界面使用", "cheats"))
         elif not game.cheats:
-            help_menu_topics.append(("Activate cheats (disable achievements)", "cheats"))
+            help_menu_topics.append(("启用作弊功能 (将禁用成就)", "cheats"))
 
         if game.active_mods:
-            help_menu_topics.append(("Mods", "mods"))
+            help_menu_topics.append(("模组", "mods"))
 
         help_menu_topics.append(("Never mind", "back"))
 

@@ -72,8 +72,11 @@ label init_traits():
                       Trait("Graceful", verb = "be", eff1 = Effect("change", "refinement", 10), eff2 = Effect("gain", "reputation", 5), archetype="The Courtesan"), #!
 
                       Trait("Beautiful", verb = "be", eff1 = Effect("boost", "beauty gains", 0.25), archetype="The Model"),
+                      Trait("Fit", verb = "be", eff1 = Effect("boost", "body gains", 0.25), archetype="The Escort"),
+                      Trait("Charming", verb = "be", eff1 = Effect("boost", "charm gains", 0.25), archetype="The Fox"),
                       Trait("Elegant", verb = "be", eff1 = Effect("boost", "refinement gains", 0.25), archetype="The Courtesan"),
                       Trait("Slutty", verb = "be", eff1 = Effect("boost", "libido gains", 0.25), archetype="The Slut"),
+                      Trait("Athletic", verb = "be", eff1 = Effect("boost", "Aconstitution gains", 0.25), archetype="The Player"),
                       Trait("Sensitive", verb = "be", eff1 = Effect("boost", "sensitivity gains", 0.25), archetype="The Bride"),
                       Trait("Obedient", verb = "be", eff1 = Effect("boost", "obedience gains", 0.25), archetype="The Maid"),
 
@@ -132,6 +135,7 @@ label init_traits():
                       Trait("Rebellious", verb = "be", eff1 = Effect("boost", "obedience gains", -0.5), eff2 = Effect("personality", "rebel"), opposite = "Obedient"),
 
                       Trait("Lazy", verb = "be", eff1 = Effect("boost", "max energy", -0.15), opposite = ["Energetic", "Driven"]),
+                      Trait("Sickly", verb = "be", eff1 = Effect("boost", "hurt", +2), opposite = "Tough"),
                       Trait("Homely", verb = "be", eff1 = Effect("boost", "reputation gains", -0.25), opposite = "Sexy"),
                       Trait("Expensive", verb = "be", eff1 = Effect("boost", "upkeep", 0.25), opposite = "Humble"),
 
