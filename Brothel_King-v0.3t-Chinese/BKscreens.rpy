@@ -4540,7 +4540,7 @@ screen brothel_options():
                     elif game.matching_priority == "act":
                         $ text1 = "顾客会尽可能的由擅长他喜欢的服务的女孩来侍奉."
 
-                    textbutton "By %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
+                    textbutton "按照 %s 匹配" % setting_name_dict[game.matching_priority] action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
                     text text1 size res_font(14) color c_prune
 
