@@ -1436,7 +1436,6 @@ init python:
     interact_dict = {
                     "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
                     "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
-
                                         GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与其他女孩相处", "slave_chat_other_girls", condition="other_girls"),
@@ -3620,7 +3619,7 @@ init python:
                                    organizers=["瓒城委员会", "反叛者联盟", "法罗一世陛下的政府", "奇形怪状的桌子的骑士们", "血岛盟会"],
                                    venues=["圣战进展情况", "军事合作", "更自由的性奴交易", "新的渔业条例", "对魔法武器储备的限制", "降低贵族出身的税收", "对穷人和赤贫者加税"], # Different use for venue for this particular contract
                                    character=diplomat,
-                                   MC_event_pic="NPC/encounters/thief2.webp", #impress1_5.jpg / quests/sex9.png
+                                   MC_event_pic="NPC/encounters/thief2.webp", #impress1_5.webp / quests/sex9.webp
                                   ),
                           Contract(type="magic", district="The Magic Gardens", archetypes = ["The Escort", "The Courtesan"],
                                    names=["魔术：集会", "巫师年会", "神奇的科学博览会", "在魔法协会的乐趣", "魔法学校对决", "巫师请"],
