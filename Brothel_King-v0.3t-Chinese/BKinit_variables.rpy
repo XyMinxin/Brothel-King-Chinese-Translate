@@ -2233,7 +2233,7 @@ init -4 python:
 
 
     ## JOKES ##
-
+    ##笑话##
     jokes = {
              "harmless" : ("What's the hardest thing about being a Guard? Telling your parents you're gay!", "My dog used to run after everyone on a horse. It got so bad, I had to take his horse away.", "What's the difference between a snowman and a snowwoman? Snowballs!", "How do you catch a bra? With a booby trap."),
              "sex" : ("Why was the luth teacher arrested? For fingering a minor...", "What do the Court and pussies have in common? One slip of the tongue, and you're in deep shit.", "Know what I do in my garden? Get down and dirty with my hoes.", "What do you call the useless part around a dick? A man!", "What's the difference between a wife and a job? After 5 years, your job will still suck."),
@@ -2243,7 +2243,7 @@ init -4 python:
 
 
     ## COMPLIMENTS ##
-
+    ##赞美##
     compliments =  {
                     "beauty" : ("%s，你今天真漂亮……", "%s，你太可爱了……", "%s，我发誓你有最可爱的脸。", "当你微笑时，你的脸就会亮起来，%s。"),
                     "body" : ("哇，你的身材真火辣。", "宝贝，你的屁股太棒了……", "我喜欢你的大咪咪，亲爱的，不穿胸罩看起来棒极了。", "看那漂亮的屁股……", "哇，你太棒了，真想用手去感受一下……！"),
@@ -2253,7 +2253,7 @@ init -4 python:
 
 
     ## GIRL BACKGROUND ##
-
+    ##女孩故事##
     slave_stories = ["slave_story1", "slave_story2", "slave_story3", "slave_story4", "slave_story5", "slave_story6", "slave_story7", "slave_story8"]
 
     origins = ["Zan", "the border with the Holy Lands", "the Blood Islands", "Karkyr", "Westmarch", "the desert of Hokoma", "Borgo, the port city", "the Goliath desolations", "the Arik mountains"]
