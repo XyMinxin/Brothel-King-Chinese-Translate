@@ -456,56 +456,56 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
         if game.chapter == 0:
 
-            text1 = 'Prelude'
+            text1 = '序章'
 
-            text2 = "Dark streets, dark deeds"
+            text2 = "阴暗之地行阴暗之事"
 
         elif game.chapter == 1:
 
-            text1 = "Chapter One"
+            text1 = "第一章"
 
-            text2 = "Small beginnings"
+            text2 = "新起点"
 
         elif game.chapter == 2:
 
-            text1 = "Chapter Two"
+            text1 = "第二章"
 
-            text2 = "Blades in the night"
+            text2 = "暮色之刃"
 
             lbl = "chapter2"
 
         elif game.chapter == 3:
 
-            text1 = "Chapter Three"
+            text1 = "第三章"
 
-            text2 = "Work in progress"
+            text2 = "危机四伏"
 
             if story_mode:
                 lbl = "c3_homura_okiya3"
 
         elif game.chapter == 4:
 
-            text1 = "Chapter Four"
+            text1 = "第四章"
 
-            text2 = "Work in progress"
+            text2 = "攀权附贵"
 
         elif game.chapter == 5:
 
-            text1 = "Chapter Five"
+            text1 = "第五章"
 
-            text2 = "Work in progress"
+            text2 = "加官进爵"
 
         elif game.chapter == 6:
 
-            text1 = "Chapter Six"
+            text1 = "第六章"
 
-            text2 = "Work in progress"
+            text2 = "青楼之王"
 
         else:
 
-            text1 = "Epilogue"
+            text1 = "尾声"
 
-            text2 = "Work in progress"
+            text2 = "后日谈"
 
     call hide_everything() from _call_hide_everything_38
     scene black with fade
@@ -516,7 +516,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
         $ text1 = Text((text1), size=50, yalign=0.4, xpos=0.5, drop_shadow=(2,2))
 
-        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "VIVALDII.TTF")
+        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "巴贝斯通汉字(改名版).ttf")
 
         show expression text1
         with easeinleft
