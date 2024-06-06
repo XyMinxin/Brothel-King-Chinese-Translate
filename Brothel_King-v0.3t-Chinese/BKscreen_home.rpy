@@ -204,13 +204,13 @@ screen right_menu_girls():
     hbox xalign 1.0 spacing 20:
 
         if b:
-            $ ttip = "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
+            $ ttip = "你有员工可以 {color=[c_yellow]}{b}升级{/b}{/color}."
             button style "rm_alert" action NullAction() tooltip ttip hovered (SetDict(seen_alerts, "girls", True)):
                 add ProportionalScale("UI/status/levelup.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["girls"] and persistent.home_screen_notifications == 0:
                     at blink
         elif r:
-            $ ttip = "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
+            $ ttip = "你有员工可以 {color=[c_yellow]}{b}提升阶级.{/b}{/color}"
             button style "rm_alert" action NullAction() tooltip ttip hovered (SetDict(seen_alerts, "girls", True)):
                 add ProportionalScale("UI/status/rankup.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["girls"] and persistent.home_screen_notifications == 0:
@@ -219,11 +219,11 @@ screen right_menu_girls():
         else:
             text ""
 
-        $ ttip = __("Interact with the girls in your brothel.\nYou have {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __("{/b}{/color} in your brothel (max ") + str(brothel.bedrooms) + ").\n"
+        $ ttip = __("检查青楼里姑娘们的状态，和她们培养感情.\n你有 {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" 个女孩{/b}{/color}在青楼 (最多 ") + str(brothel.bedrooms) + ").\n"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
-        $ ttip += str(working_girls) + __(" girl") + plural(working_girls) + __(" will be working tonight.")
+        $ ttip += __("今晚有 ") str(working_girls) __(" 个女孩要工作.")
 
-        textbutton "{u}G{/u}irls" style_group "rm":
+        textbutton "{u}女孩{/u}" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -239,7 +239,7 @@ screen right_menu_brothel():
     hbox xalign 1.0 spacing 20:
 
         if NPC_carpenter.active and not brothel.current_building and brothel.can_build_anything() and persistent.home_screen_notifications != 2:
-            button style "rm_alert" action NullAction() hovered (tt.Action("The carpenter stands ready to build new furniture for you."), SetDict(seen_alerts, "carpenter", True)):
+            button style "rm_alert" action NullAction() hovered (tt.Action("工匠已经准备好帮你升级设施了."), SetDict(seen_alerts, "carpenter", True)):
                 add ProportionalScale("UI/carpenter.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["carpenter"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -247,7 +247,7 @@ screen right_menu_brothel():
         else:
             text ""
 
-        textbutton "{u}B{/u}rothel" style_group "rm":
+        textbutton "{u}青楼{/u}" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -263,11 +263,11 @@ screen right_menu_farm():
     if farm.active:
         hbox xalign 1.0 spacing 20:
             text ""
-            textbutton "{u}F{/u}arm" style_group "rm":
+            textbutton "{u}农场{/u}" style_group "rm":
                 ypadding 0.005
                 text_size res_font(20)
                 action Return("farm")
-                tooltip "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " girl" + plural(len(farm.girls)) + "{/b}{/color} and {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " minion" + plural(farm.count_minions()) + "{/b}{/color} at the farm."
+                tooltip "前往奴隶农场，在那里训练你的女孩. 吉泽管理着 {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " 个女孩{/b}{/color}和 {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " 个仆从{/b}{/color}."
 
 
 ################
@@ -285,12 +285,12 @@ screen right_menu_city():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton "{u}V{/u}isit City" style_group "rm":
+        textbutton "{u}访问城市{/u}" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("districts")
-            tooltip "Visit the {b}city{/b} of Zan and explore its various locations."
+            tooltip "探索其他地区获得{b}资源{/b}，或是和美丽的{b}陌生姑娘{/b}搭讪来一次一夜情。"
 
 
 ################
@@ -309,14 +309,14 @@ screen right_menu_slavemarket():
         else:
             text ""
 
-        textbutton "Slave {u}M{/u}arket" style_group "rm":
+        textbutton "{u}奴隶市场{/u}" style_group "rm":
             ypadding 0.005
             if screen_is_wide:
                 text_size res_font(20)
             else:
                 text_size res_font(18)
             action Return("slavemarket")
-            tooltip __("Visit the {b}slavemarket{/b} to find the perfect slave. Or just a cheap one. The slavemarket currently has {color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __(" girl") + plural(len(slavemarket.girls)) + __("{/b}{/color} for sale.")
+            tooltip __("前往{b}奴隶市场{/b}. 无论是亡国公主，落魄千金，兽耳娘，清纯少女还是精液中毒的肉便器总有一款适合你。 目前有 {color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __(" 个奴隶{/b}{/color}待售.")
 
 ################
 ## Home - Right menu - Display Shop alert and button
@@ -334,12 +334,12 @@ screen right_menu_shop():
         else:
             text ""
 
-        textbutton "{u}S{/u}hop" style_group "rm":
+        textbutton "{u}商店{/u}" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("shop")
-            tooltip __("Visit the {b}shop{/b} to buy useful items.\nThe shop currently has {color=[c_yellow]}{b}") + str(len(shop.items)) + __(" item") + plural(len(shop.items)) + __("{/b}{/color} for sale.")
+            tooltip __("逛逛{b}商店{/b}淘些好货，情趣内衣，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}") + str(len(shop.items)) + __("件商品{/b}{/color}待售.")
 
 ################
 ## Home - Right menu - Display Postings alert and button
@@ -349,19 +349,19 @@ screen right_menu_postings():
 
     hbox xalign 1.0 spacing 20:
         if quest_board.updated and persistent.home_screen_notifications != 2:
-            button style "rm_alert" action NullAction() tooltip "New classes and tasks are available." hovered SetDict(seen_alerts, "postings", True):
+            button style "rm_alert" action NullAction() tooltip "有新的任务和课程发布." hovered SetDict(seen_alerts, "postings", True):
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["postings"] and persistent.home_screen_notifications == 0:
                     at blink
         else:
             text ""
 
-        textbutton "Pos{u}t{/u}ings" style_group "rm":
+        textbutton "{u}外派{/u}" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("postings")
-            tooltip __("See available classes and quests.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" class") + plural(len(quest_board.quests), __("es")) + __("{/b}{/color} and {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" quest") + plural(len(quest_board.quests)) + __("{/b}{/color} are currently available.")
+            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" class{/b}{/color} and {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" quest{/b}{/color} are currently available.")
 
 
 ################
@@ -400,7 +400,7 @@ screen right_menu_endday():
             text_size res_font(20)
 
             action Return("end_day")
-            tooltip "Click here to {b}end the day{/b} and move on with the night's events."
+            tooltip "点击此按钮 {b}开始营业{/b} ，结束这一天."
 
 ################
 ## Home - Right menu - Display Advance button
