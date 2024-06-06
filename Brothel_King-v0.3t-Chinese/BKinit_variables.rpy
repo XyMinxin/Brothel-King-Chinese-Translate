@@ -1436,6 +1436,7 @@ init python:
     interact_dict = {
                     "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
                     "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
+
                                         GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与其他女孩相处", "slave_chat_other_girls", condition="other_girls"),
@@ -3612,14 +3613,14 @@ init python:
                                    organizers=["卡利夫-布雷兹纳", "大祭司罗恩", "纳布科夫阁下", "瑞祥大师", "迪库伯爵", "粉红男爵", "杜克-努克姆", "公会会长菲利克斯"],
                                    character=young_maid,
                                    venues=["豪华顶层公寓", "乡间大屋", "老宅子", "家庭宫殿", "私人寺院", "热门度假村"],
-                                   MC_event_pic="NPC/encounters/thief4.jpg",
+                                   MC_event_pic="NPC/encounters/thief4.webp",
                                   ),
                           Contract(type="meeting", district="The Warehouse", archetypes = ["The Courtesan", "The Maid"],
                                    names=["战略会晤", "权力的展示", "政治重逢", "重要的场合", "夸夸其谈的会议"],
                                    organizers=["瓒城委员会", "反叛者联盟", "法罗一世陛下的政府", "奇形怪状的桌子的骑士们", "血岛盟会"],
                                    venues=["圣战进展情况", "军事合作", "更自由的性奴交易", "新的渔业条例", "对魔法武器储备的限制", "降低贵族出身的税收", "对穷人和赤贫者加税"], # Different use for venue for this particular contract
                                    character=diplomat,
-                                   MC_event_pic="NPC/encounters/thief2.webp", #impress1_5.webp / quests/sex9.webp
+                                   MC_event_pic="NPC/encounters/thief2.webp", #impress1_5.jpg / quests/sex9.png
                                   ),
                           Contract(type="magic", district="The Magic Gardens", archetypes = ["The Escort", "The Courtesan"],
                                    names=["魔术：集会", "巫师年会", "神奇的科学博览会", "在魔法协会的乐趣", "魔法学校对决", "巫师请"],
