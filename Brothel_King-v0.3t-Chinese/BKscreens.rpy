@@ -374,7 +374,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip (__("%s\n今天是 %s, 第 %i 年 第 %i 个月 第 %i 天." % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day)))
+            tooltip (__("%s\n今天是 %s, 第 %i 年 第 %i 月 第 %i 天." % (moons[calendar.month].short_description, setting_name_dict[calendar.get_weekday()], calendar.year, calendar.month, calendar.day)))
 
             hbox:
                 spacing 8
@@ -383,9 +383,9 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
                 null
 
-                text "Year: [calendar.year]" size res_font(18) yalign 0.5
-                text "Month: [calendar.month]" size res_font(18) yalign 0.5
-                text (__("Day: [calendar.day] (") + __(calendar.get_weekday())[:3] + ")") size res_font(18) yalign 0.5
+                text "[calendar.year]年" size res_font(18) yalign 0.5
+                text "[calendar.month]月" size res_font(18) yalign 0.5
+                text (__("[calendar.day]日 (") + __(setting_name_dict[calendar.get_weekday()])[:3] + ")") size res_font(18) yalign 0.5
 
 
         hbox:
@@ -491,9 +491,9 @@ screen girl_tab(girls, context="girls"):
         if game.has_active_mod("Headhunter Mod"):
             if game.headhunter_button_enabled:
                 key "shift_K_h" action Jump("headhunter_main")
-            $ textHH = "{u}H{/u}eadhunter" #
+            $ textHH = "{u}猎头{/u}" #
 
-            $ textHH2 = "Order slaves with specific characteristics for increased cost."
+            $ textHH2 = "订购具有特定特性的从属产品以增加成本."
 
             if game.headhunter_button_enabled:
                 textbutton textHH:
@@ -636,7 +636,7 @@ screen girl_tab(girls, context="girls"):
                         use girl_button(girl, bsize, status_list=girl_status_dict[girl], context=context, hovered_action=SetScreenVariable("hovered_girl", girl), unhovered_action=SetScreenVariable("hovered_girl", None)) id girl.fullname
 
             else:
-                text "{i}  No girl available  {/i}" size res_font(18) color c_brown
+                text "{i}  没有可用的女孩  {/i}" size res_font(18) color c_brown
 
 
 screen girl_pick_badge(girl):
@@ -649,7 +649,7 @@ screen girl_pick_badge(girl):
     frame xalign 0.5 yalign 0.5 xpadding 20 ypadding 20:
         has vbox
 
-        text "Choose a badge for [girl.fullname]" color c_darkorange
+        text "为 [girl.fullname] 选择徽章" color c_darkorange
 
         text ""
 
@@ -664,10 +664,10 @@ screen girl_pick_badge(girl):
                 button xsize yres(80) ysize yres(80):
                     if i == 0:
                         action (SetField(girl, "badge", ""), Return())
-                        tooltip "No badge"
+                        tooltip "没有徽章"
                     else:
                         action (SetField(girl, "badge", badge_pics[i]), Return())
-                        tooltip "Pick this badge"
+                        tooltip "选择此徽章"
                     add ProportionalScale(badge_pics[i], *res_tb(60)) xalign 0.5 yalign 0.5
 
 
@@ -676,14 +676,14 @@ screen badge_button(girl, _size, t_size=20, active=True): # Where badge is a fil
 
     if not badge:
         if active:
-            textbutton "+" xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 text_size res_font(t_size) tooltip "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience.":
+            textbutton "+" xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 text_size res_font(t_size) tooltip "为这个女孩添加自定义徽章。自定义徽章没有任何作用，它们是为了你自己的方便.":
                 action Return(("badge", girl))
                 text_color c_white
                 text_drop_shadow (1, 1)
 
     else:
         $ badge_name = badge.rsplit(".", 1)[0]
-        button xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 tooltip "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl." % badge_name:
+        button xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 tooltip "当前徽章: {b}%s{/b}.\n单击更改此女孩的自定义徽章." % badge_name:
             if active:
                 action Return(("badge", girl))
             add ProportionalScale(badge, *res_tb(_size))
@@ -697,36 +697,36 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     if context == "girls" or context == "powers":
         if girl.job:
             $ text1 = __(girl.job.capitalize()) # text1 is displayed on the button next to girl name and portrait
-            $ but_ttip = "{b}" + girl.fullname + "{/b} " + __("is a level {0} {1}.").format(__(str(girl.level)), __(girl.job))
+            $ but_ttip = "{b}" + girl.fullname + "{/b} " + __(" 是一个 {0} 等级的 {1}.").format(__(str(girl.level)), __(girl.job))
         else:
             $ text1 = "无工作"
-            $ but_ttip = "{b}" + girl.fullname + __("{/b} is resting.")
+            $ but_ttip = "{b}" + girl.fullname + __("{/b} 正在休息.")
         $ text_col = job_color[girl.job]
         $ use_badge = True
 
     elif context == "free":
         $ text1 = girl.get_MC_relation().capitalize()
         if girl.MC_interact:
-            $ but_ttip = girl.fullname + " is currently at the " + girl.location + "."
+            $ but_ttip = girl.fullname + " 当前位于 " + girl.location + "."
         else:
-            $ but_ttip = "You haven't met this girl before."
+            $ but_ttip = "你以前没见过这个女孩."
         $ text_col = c_white
 
     elif context == "farm":
         if farm.programs[girl].target != "no training":
             $ text1 = farm.programs[girl].target.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is training (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b} 正在训练 (" + text1 + ")."
             $ text_col = c_orange
         else:
             $ text1 = farm.programs[girl].holding.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} is being held (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b} 正在被关押 (" + text1 + ")."
             $ text_col = c_white
         $ use_badge = True
 
     elif context == "slavemarket":
         $ text1 = experienced_description[girl.sexual_experience]
         $ text2 = str(girl.get_price("buy")) + " gold"
-        $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + __(". Click for details.")
+        $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + __(". 点击查看详细信息.")
         $ text_col = experienced_color[girl.sexual_experience]
 
     if context == "powers":
@@ -2323,26 +2323,26 @@ screen button_overlay(girl, context="girls"):
 
 
             if girl.away:
-                $ text1 = "Away"
-                $ ttip = __("She is away on a class or assignment for %s more day%s.") % (girl.return_date - calendar.time)
+                $ text1 = "离开"
+                $ ttip = __("She is away on a class or assignment for %s more day.") % (girl.return_date - calendar.time)
 
             elif girl.hurt > 0:
-                $ text1 = "Hurt"
+                $ text1 = "受伤"
                 if girl.hurt <= 1:
                     $ ttip = __("This girl is hurt and will need to rest for 1 more day until she is ready to do anything.")
                 else:
                     $ ttip = __("This girl is hurt and will need to rest for ") + str(round_int(girl.hurt)) + __(" more days until she is ready to do anything.")
 
             elif girl.exhausted:
-                $ text1 = "Tired"
+                $ text1 = "疲倦"
                 $ ttip = __("她需要得到完全休息后才能开始工作.")
 
             elif girl.resting and girl.job:
-                $ text1 = "Resting"
+                $ text1 = "休息"
                 $ ttip = __("排班表显示她今天休息.")
 
             elif not girl.job:
-                $ text1 = "No {u}j{/u}ob"
+                $ text1 = "{u}无工作{/u}"
                 $ ttip = __("没有安排工作. 在得到新的指示前她会一直休息.")
 
             elif girl.work_whore:
@@ -2367,7 +2367,7 @@ screen button_overlay(girl, context="girls"):
             if not girls_firstvisit:
                 key "noshift_K_d" action Return("sched")
 
-            textbutton "Sche{u}d{/u}ule" text_color c_white text_size res_font(14):
+            textbutton "{u}排班{/u}" text_color c_white text_size res_font(14):
                 tooltip "{i}今日排班: %s{/i}.\n点击打开 %s 的排班表." % (text1, girl.fullname)
                 if not girls_firstvisit:
                     action Return("sched")
@@ -2385,9 +2385,9 @@ screen button_overlay(girl, context="girls"):
                 xpadding 0
                 ypadding 0
 
-                textbutton "{u}I{/u}nteract":
+                textbutton "{u}互动{/u}":
                     text_size res_font(14)
-                    hovered tt.Action("Interact with your girl. Costs actions.")
+                    hovered tt.Action("与你的女孩互动。消耗行动力。")
 
                     if MC.interactions > 0 and not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("interact"))
@@ -2403,7 +2403,7 @@ screen button_overlay(girl, context="girls"):
                 elif girl.away:
                     tooltip "You cannot interact with %s as she is away." % girl.name
 
-            textbutton "I{u}t{/u}ems":
+            textbutton "{u}物品{/u}":
                 text_size res_font(14)
 
                 if not girls_firstvisit: # Available for away girls to avoid complications in the Equipment screen
