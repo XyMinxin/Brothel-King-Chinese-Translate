@@ -4535,10 +4535,10 @@ screen brothel_options():
 
                     text "Choose how incoming customers will be matched with your girls." size res_font(14) italic True color c_brown
 
-                        $ text1 = "顾客会尽可能的由与他身份匹配的阶级的女孩来服务."
-                        $ text1 = "顾客会尽可能的由擅长他喜欢的服务的女孩来侍奉."
                     if game.matching_priority == "rank":
+                        $ text1 = "顾客会尽可能的由与他身份匹配的阶级的女孩来服务."
                     elif game.matching_priority == "act":
+                        $ text1 = "顾客会尽可能的由擅长他喜欢的服务的女孩来侍奉."
 
                     textbutton "By %s" % game.matching_priority action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 

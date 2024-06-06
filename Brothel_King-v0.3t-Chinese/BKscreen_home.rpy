@@ -221,7 +221,7 @@ screen right_menu_girls():
 
         $ ttip = __("检查青楼里姑娘们的状态，和她们培养感情.\n你有 {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" 个女孩{/b}{/color}在青楼 (最多 ") + str(brothel.bedrooms) + ").\n"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
-        $ ttip += __("今晚有 ") str(working_girls) __(" 个女孩要工作.")
+        $ ttip += __("今晚有 ") + str(working_girls) + __(" 个女孩要工作.")
 
         textbutton "{u}女孩{/u}" style_group "rm":
             ypadding 0.005
