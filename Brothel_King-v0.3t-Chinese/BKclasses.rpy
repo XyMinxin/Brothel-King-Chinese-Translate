@@ -1483,9 +1483,10 @@ init -2 python:
 
         """This class is for NPCs: story NPCs, shopkeeper and slave master, etc."""
 
-        def __init__(self, name = "", char=None, defense=0, portrait = None, trainer_description = None, effects = None, item_types = "all", minion_type = None, bg = "bg_bro"):
+        def __init__(self, name = "", cname = "", char=None, defense=0, portrait = None, trainer_description = None, effects = None, item_types = "all", minion_type = None, bg = "bg_bro"):
             self.type = "NPC"
             self.name = name
+            self.cname = cname
             self.girls = []
             self.items = []
             self.love = 0

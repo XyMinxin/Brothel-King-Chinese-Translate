@@ -4070,7 +4070,7 @@ screen brothel():
                                                 tooltip "Change trainer."
 
                                 vbox:
-                                    text "{b}" + MC.current_trainer.name + "{/b}" size res_font(18) xalign 0.5
+                                    text "{b}" + MC.current_trainer.cname + "{/b}" size res_font(18) xalign 0.5
                                     text "\n" + MC.current_trainer.trainer_description size res_font(14) justify True
 
                             else:
@@ -8961,6 +8961,6 @@ label packstates_menu :
 # This adds a 'Chat' button to certain trainers in the brothel screen when harem mode is activated
 
 screen harem_button():
-    textbutton "Chat" xsize xres(75) xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("Talk to " + MC.current_trainer.name + ".")
+    textbutton "交谈" xsize xres(75) xalign 0.09 yalign 0.25 action Jump("harem_" + MC.current_trainer.name.lower()) hovered tt.Action("与 " + MC.current_trainer.cname + "交谈。")
 
 #### END OF BK SCREENS FILE ####

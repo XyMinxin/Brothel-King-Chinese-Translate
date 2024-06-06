@@ -250,44 +250,44 @@ label init_game(quick=False):
 
         # NPC OBJECTS / TRAINERS #
 
-        NPC_sill = NPC(name = "Sill", portrait = "side sill happy", trainer_description = "'{i}这里还有一个精斑? *叹气* 交给我吧.{/i}'\n\n{b}临时代理{/b}\n每晚给一个随机的女孩提供免费保养服务.", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
-        NPC_sad_sill = NPC(name = "Sad Sill", portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
+        NPC_sill = NPC(name = "Sill", cname = "希露", portrait = "side sill happy", trainer_description = "'{i}这里还有一个精斑? *叹气* 交给我吧.{/i}'\n\n{b}临时代理{/b}\n每晚给一个随机的女孩提供免费保养服务.", effects = Effect("special", "free upkeep", 1, scope = "brothel"))
+        NPC_sad_sill = NPC(name = "Sad Sill", cname = "Sad Sill", portrait = "side sill sad", trainer_description = "bla", effects = Effect("change", "charm", 40, scope = "brothel"))
         NPC_gio = NPC()
         NPC_kosmo = NPC()
         NPC_sergeant = NPC()
-        NPC_roz = NPC(name = "Roz", char = roz)
-        NPC_maya = NPC(name = "Maya", portrait = "side maya", trainer_description = "'{i}我最好检查一下周边情况。再查一次.{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% .", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
-        NPC_renza = NPC(name = "Renza", portrait = "side renza", bg = 'bg thieves_guild room', trainer_description = "'{i}这个钱包似乎很重。让我来替你拿吧...{/i}'\n\n{b}偷天换日{/b}\n所有的女孩都会扒窃. 拥有 {i}Thief{/i} 天赋的女孩永远不会失手.", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
-        NPC_satella = NPC(name = "Satella", portrait = "side satella", bg = "bg shalia_temple", trainer_description = "'{i}在阴影中玩耍不是很有趣吗? 呋呋呋...{/i}'\n\n{b}黑暗神官{/b}\n恐惧增长的更快了.", effects = Effect("boost", "fear gains", 1, scope = "world"))
-        NPC_captain = NPC(name = "Farah", portrait = "side captain", bg = 'bg vault', trainer_description = "'{i}如果你想往上爬，你必须准备好做任何事. 任何事!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为.", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
-        NPC_lieutenant = NPC(name = "Lydie", portrait = "side lieutenant", trainer_description = "'{i}你想让我拿你来杀鸡儆猴吗?我可不想这么做.{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性.", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
-        NPC_gizel = NPC(name = "Gizel", defense = 3, portrait = "side gizel smirk", bg = 'bg farm', trainer_description = "'{i}我喜欢在清晨品味令人绝望的味道.{/i}'\n\n{b}黑魔法{/b}\n从农场内外的基于恐惧的互动中获得更多的魔力.", effects = Effect("boost", "all mojo gains", 0.5))
-        NPC_banker = NPC(name = "Banker", portrait = "side banker", bg = 'bg banking_quarter')
-        NPC_riche = NPC(name = "Riche", char=riche, portrait = "side riche", bg = 'bg botanical_garden', item_types=["Flower"])
-        NPC_ramias = NPC(name = "Ramias", char=ramias, portrait = "side ramias", bg = 'bg arena', item_types=["Weapon"], trainer_description = "'{i}用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2.", effects = Effect("change", "defense", 2, scope = "brothel"))
-        NPC_gurigura = NPC(name = "Gurigura", char=gurigura, portrait = "side gurigura", bg = 'bg prison', item_types=["Toy", "Food", "Supplies"])
-        NPC_katryn = NPC(name = "Katryn", char=katryn, portrait = "side katryn", bg = 'bg library', item_types=["Ring", "Necklace"])
-        NPC_giftgirl = NPC(name = "Gift Shop Girl", char=giftgirl, portrait = "side giftgirl", bg = 'bg exotic_emporium', item_types=["Gift", "Misc"])
-        NPC_twins = NPC(name = "Today", char=today, portrait = "side today", bg = 'bg pilgrim_road', item_types=["Dress", "Accessory"])
-        NPC_stella = NPC(name="Stella", char=stella, portrait = "side stella", bg = 'bg harbor', minion_type="stallion", trainer_description = "'{i}你们薄弱的训练技术根本不是血色群岛的对手.{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩性训练的效率.", effects = Effect("boost", "farm preference increase", 0.5, scope = "farm"))
-        NPC_goldie = NPC(name="Goldie", char=goldie, portrait = "side goldie", bg = 'bg farmland', minion_type="beast", trainer_description = "'{i}我在书里见过... *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为.", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
-        NPC_willow = NPC(name="Willow", char=willow, portrait = "side willow", bg = 'bg sewers', minion_type="monster")
-        NPC_gina = NPC(name="Gina", char=gina, portrait = "side gina", bg = 'bg junkyard', minion_type="machine")
-        NPC_bast = NPC(name="Bast", char=bast, portrait = "side bast", bg = 'bg market', trainer_description = "'{i}黄金只是在赞城中可以交易的众多资源之一.{/i}'\n\n{b}物资置换{/b}\n你的部分青楼收入将被转换成随机资源.", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
-        NPC_jobgirl = NPC(name="Scarlet", char=jobgirl, bg = "bg town")
-        NPC_kuro = NPC(name="Kurohime", char=kuro)
-        NPC_homura = NPC(name="Homura", char=homura)
-        NPC_taxgirl = NPC(name="Taxgirl", char=taxgirl, portrait = "side taxgirl", trainer_description = "'{i}到时候就就请我吃龙虾喝香槟吧... 然后再给我些营养品....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来避税.", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
+        NPC_roz = NPC(name = "Roz", cname = "Roz", char = roz)
+        NPC_maya = NPC(name = "Maya", cname = "玛雅", portrait = "side maya", trainer_description = "'{i}我最好检查一下周边情况。再查一次.{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% .", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
+        NPC_renza = NPC(name = "Renza", cname = "伦萨", portrait = "side renza", bg = 'bg thieves_guild room', trainer_description = "'{i}这个钱包似乎很重。让我来替你拿吧...{/i}'\n\n{b}偷天换日{/b}\n所有的女孩都会扒窃. 拥有 {i}Thief{/i} 天赋的女孩永远不会失手.", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
+        NPC_satella = NPC(name = "Satella", cname = "萨特拉", portrait = "side satella", bg = "bg shalia_temple", trainer_description = "'{i}在阴影中玩耍不是很有趣吗? 呋呋呋...{/i}'\n\n{b}黑暗神官{/b}\n恐惧增长的更快了.", effects = Effect("boost", "fear gains", 1, scope = "world"))
+        NPC_captain = NPC(name = "Farah", cname = "法拉", portrait = "side captain", bg = 'bg vault', trainer_description = "'{i}如果你想往上爬，你必须准备好做任何事. 任何事!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为.", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
+        NPC_lieutenant = NPC(name = "Lydie", cname = "莉迪", portrait = "side lieutenant", trainer_description = "'{i}你想让我拿你来杀鸡儆猴吗?我可不想这么做.{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性.", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
+        NPC_gizel = NPC(name = "Gizel", cname = "吉泽尔", defense = 3, portrait = "side gizel smirk", bg = 'bg farm', trainer_description = "'{i}我喜欢在清晨品味令人绝望的味道.{/i}'\n\n{b}黑魔法{/b}\n从农场内外的基于恐惧的互动中获得更多的魔力.", effects = Effect("boost", "all mojo gains", 0.5))
+        NPC_banker = NPC(name = "Banker", cname = "Banker", portrait = "side banker", bg = 'bg banking_quarter')
+        NPC_riche = NPC(name = "Riche", cname = "Riche", char=riche, portrait = "side riche", bg = 'bg botanical_garden', item_types=["Flower"])
+        NPC_ramias = NPC(name = "Ramias", cname = "拉米阿斯", char=ramias, portrait = "side ramias", bg = 'bg arena', item_types=["Weapon"], trainer_description = "'{i}用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2.", effects = Effect("change", "defense", 2, scope = "brothel"))
+        NPC_gurigura = NPC(name = "Gurigura", cname = "Gurigura", char=gurigura, portrait = "side gurigura", bg = 'bg prison', item_types=["Toy", "Food", "Supplies"])
+        NPC_katryn = NPC(name = "Katryn", cname = "Katryn", char=katryn, portrait = "side katryn", bg = 'bg library', item_types=["Ring", "Necklace"])
+        NPC_giftgirl = NPC(name = "Gift Shop Girl", cname = "Gift Shop Girl", char=giftgirl, portrait = "side giftgirl", bg = 'bg exotic_emporium', item_types=["Gift", "Misc"])
+        NPC_twins = NPC(name = "Today", cname = "Today", char=today, portrait = "side today", bg = 'bg pilgrim_road', item_types=["Dress", "Accessory"])
+        NPC_stella = NPC(name="Stella", cname = "斯特拉", char=stella, portrait = "side stella", bg = 'bg harbor', minion_type="stallion", trainer_description = "'{i}你们薄弱的训练技术根本不是血色群岛的对手.{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩性训练的效率.", effects = Effect("boost", "farm preference increase", 0.5, scope = "farm"))
+        NPC_goldie = NPC(name="Goldie", cname = "戈尔迪", char=goldie, portrait = "side goldie", bg = 'bg farmland', minion_type="beast", trainer_description = "'{i}我在书里见过... *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为.", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
+        NPC_willow = NPC(name="Willow", cname = "Willow", char=willow, portrait = "side willow", bg = 'bg sewers', minion_type="monster")
+        NPC_gina = NPC(name="Gina", cname = "Gina", char=gina, portrait = "side gina", bg = 'bg junkyard', minion_type="machine")
+        NPC_bast = NPC(name="Bast", cname = "贝斯特", char=bast, portrait = "side bast", bg = 'bg market', trainer_description = "'{i}黄金只是在赞城中可以交易的众多资源之一.{/i}'\n\n{b}物资置换{/b}\n你的部分青楼收入将被转换成随机资源.", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
+        NPC_jobgirl = NPC(name="Scarlet", cname = "Scarlet", char=jobgirl, bg = "bg town")
+        NPC_kuro = NPC(name="Kurohime", cname = "Kurohime", char=kuro)
+        NPC_homura = NPC(name="Homura", cname = "Homura", char=homura)
+        NPC_taxgirl = NPC(name="Taxgirl", cname = "公会女郎", char=taxgirl, portrait = "side taxgirl", trainer_description = "'{i}到时候就就请我吃龙虾喝香槟吧... 然后再给我些营养品....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来避税.", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
 
         # Chapter 2 Kunoichi
-        NPC_suzume = NPC(name="Suzume", char=suzume, portrait = "side suzume", trainer_description = "'{i}昨天又抓到一个间谍……他还想捅我，太滑稽了！库库库库...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你以避免安全事件 (不重置威胁等级).", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
-        NPC_narika = NPC(name="Narika", char=narika)
-        NPC_mizuki = NPC(name="Mizuki", char=mizuki)
-        NPC_haruka = NPC(name="Haruka", char=haruka)
+        NPC_suzume = NPC(name="Suzume", cname = "铃女", char=suzume, portrait = "side suzume", trainer_description = "'{i}昨天又抓到一个间谍……他还想捅我，太滑稽了！库库库库...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你以避免安全事件 (不重置威胁等级).", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
+        NPC_narika = NPC(name="Narika", cname = "Narika", char=narika)
+        NPC_mizuki = NPC(name="Mizuki", cname = "Mizuki", char=mizuki)
+        NPC_haruka = NPC(name="Haruka", cname = "Haruka", char=haruka)
 
-        NPC_carpenter = NPC(name="Iulia", char=carpenter)
-        NPC_freak = NPC(name="Papa Freak", char=papa)
-        NPC_kenshin = NPC(name="Lady Kenshin", char=kenshin, portrait = "side kenshin", bg = "bg palace")
+        NPC_carpenter = NPC(name="Iulia", cname = "Iulia", char=carpenter)
+        NPC_freak = NPC(name="Papa Freak", cname = "Papa Freak", char=papa)
+        NPC_kenshin = NPC(name="Lady Kenshin", cname = "Lady Kenshin", char=kenshin, portrait = "side kenshin", bg = "bg palace")
 
         MC.trainers.append(NPC_sill)
         MC.current_trainer = NPC_sill
@@ -369,36 +369,36 @@ label init_game(quick=False):
         # LOCATIONS # Locations should have been in a dictionary from the start, but it's messy. Sorry.
 
         spice_market = Location("Spice market", pic = "Spice market.webp")
-        sewers = Location("Sewers", pic = "Sewers.webp", menu = ("Visit the monster catcher", "visit_willow"), menu_costs_AP=False) # Monster merchant
-        farmland = Location("Farm", pic = "farmland.webp", menu = ("Visit the rancher", "visit_goldie"), menu_costs_AP=False) # Beast merchant
-        watchtower = Location("Watchtower", pic = "Watchtower.webp", menu = ("Browse the Captain's vault", "visit_watchtower"))
-        junkyard = Location("Junkyard", pic = "Junkyard.webp", menu = ("Visit the scientist", "visit_gina"), menu_costs_AP=False) # Machine merchant
-        thieves_guild = Location("Thieves guild", pic = "Thieves guild.webp", secret = True, menu = ("Browse the guild warehouse", "visit_thieves_guild"))
+        sewers = Location("Sewers", pic = "Sewers.webp", menu = ("访问怪物捕手", "visit_willow"), menu_costs_AP=False) # Monster merchant
+        farmland = Location("Farm", pic = "farmland.webp", menu = ("访问牧场主人", "visit_goldie"), menu_costs_AP=False) # Beast merchant
+        watchtower = Location("Watchtower", pic = "Watchtower.webp", menu = ("访问上尉的地下室", "visit_watchtower"))
+        junkyard = Location("Junkyard", pic = "Junkyard.webp", menu = ("访问科学家", "visit_gina"), menu_costs_AP=False) # Machine merchant
+        thieves_guild = Location("Thieves guild", pic = "Thieves guild.webp", secret = True, menu = ("访问公会仓库", "visit_thieves_guild"))
 
-        harbor = Location("Harbor", pic = "Harbor.webp", menu = ("Visit the headmaster", "visit_stella"), menu_costs_AP=False) # Stallion merchant
-        shipyard = Location("Shipyard", pic = "Shipyard.webp", menu = ("Collect wood", "collect_wood")) # Wood extraction
+        harbor = Location("Harbor", pic = "Harbor.webp", menu = ("访问种马贩子", "visit_stella"), menu_costs_AP=False) # Stallion merchant
+        shipyard = Location("Shipyard", pic = "Shipyard.webp", menu = ("收集木材", "collect_wood")) # Wood extraction
         taverns = Location("Taverns", pic = "Taverns.webp")
-        seafront = Location("Seafront", pic = "Seafront.webp", menu = ("Visit Papa Freak", "visit_papa"), menu_costs_AP=False)
-        beach = Location("Beach", pic = "Beach.webp", menu = ("Brew dye", "collect_dye")) # Dye
-        exotic_emporium = Location("Exotic emporium", pic = "Exotic emporium.webp", menu = ("Visit gift shop", "visit_giftgirl"), menu_costs_AP=False) # Gift girl, gifts
+        seafront = Location("Seafront", pic = "Seafront.webp", menu = ("访问怪胎爸爸", "visit_papa"), menu_costs_AP=False)
+        beach = Location("Beach", pic = "Beach.webp", menu = ("酿造染料", "collect_dye")) # Dye
+        exotic_emporium = Location("Exotic emporium", pic = "Exotic emporium.webp", menu = ("访问礼品店", "visit_giftgirl"), menu_costs_AP=False) # Gift girl, gifts
 
-        stables = Location("Stables", pic = "Stables.webp", menu = ("Get leather", "collect_leather")) # Leather
-        plaza = Location("Plaza", pic = "Plaza.webp", menu = ("Contact Homura", "c3_contact_homura"), menu_costs_AP=False) # Homura, story
-        market = Location("Market", pic = "Market.webp", menu = ("Visit the exchange", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
-        gallows = Location("Gallows", pic = "Gallows.webp", menu = ("Visit Papa Freak", "visit_papa"), menu_costs_AP=False)
-        prison = Location("Prison", pic = "Prison.webp", menu = ("Visit G's bazaar", "visit_gurigura"), menu_costs_AP=False) # Gurigura, toys
-        arena = Location("Arena", pic = "Arena.webp", menu = ("Visit weapon shop", "visit_ramias"), menu_costs_AP=False) # Ramias, weapons
+        stables = Location("Stables", pic = "Stables.webp", menu = ("获取皮革", "collect_leather")) # Leather
+        plaza = Location("Plaza", pic = "Plaza.webp", menu = ("联系焰", "c3_contact_homura"), menu_costs_AP=False) # Homura, story
+        market = Location("Market", pic = "Market.webp", menu = ("访问交换所", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
+        gallows = Location("Gallows", pic = "Gallows.webp", menu = ("访问怪胎爸爸", "visit_papa"), menu_costs_AP=False)
+        prison = Location("Prison", pic = "Prison.webp", menu = ("访问G的集市", "visit_gurigura"), menu_costs_AP=False) # Gurigura, toys
+        arena = Location("Arena", pic = "Arena.webp", menu = ("访问武器店", "visit_ramias"), menu_costs_AP=False) # Ramias, weapons
 
-        botanical_garden = Location("Botanical garden", pic = "Botanical garden.webp", menu = ("Visit flower stall", "visit_riche"), menu_costs_AP=False) # Riche, flowers
-        hanging_gardens = Location("Hanging gardens", pic = "Hanging gardens.webp", menu = ("Weave silk", "collect_silk")) # Silk
-        library = Location("Library", pic = "Library.webp", menu = ("Visit trinket shop", "visit_katryn"), menu_costs_AP=False) # Katryn, trinkets
-        guild_quarter = Location("Guild quarter", pic = "Guild quarter.webp", menu = ("Smuggle ore", "collect_ore")) # Ore
+        botanical_garden = Location("Botanical garden", pic = "Botanical garden.webp", menu = ("访问花摊", "visit_riche"), menu_costs_AP=False) # Riche, flowers
+        hanging_gardens = Location("Hanging gardens", pic = "Hanging gardens.webp", menu = ("织造丝绸", "collect_silk")) # Silk
+        library = Location("Library", pic = "Library.webp", menu = ("访问饰品店", "visit_katryn"), menu_costs_AP=False) # Katryn, trinkets
+        guild_quarter = Location("Guild quarter", pic = "Guild quarter.webp", menu = ("走私矿石", "collect_ore")) # Ore
         magic_guild = Location("Magic guild", pic = "Magic guild.webp")
         magic_forest = Location("Magic forest", pic = "Magic forest.webp")
 
-        pilgrim_road = Location("Pilgrim road", pic = "Pilgrim road.webp", menu = ("Visit tailor shop", "visit_twins"), menu_costs_AP=False) # Twins, dresses
-        banking_quarter = Location("Banking quarter", pic = "Banking quarter.webp", menu = ("Visit Bank", "visit_bank"), action=True, menu_costs_AP=False)
-        old_ruins = Location("Old ruins", pic = "Ruins.webp", menu = ("Extract marble", "collect_marble")) # Marble
+        pilgrim_road = Location("Pilgrim road", pic = "Pilgrim road.webp", menu = ("访问裁缝店", "visit_twins"), menu_costs_AP=False) # Twins, dresses
+        banking_quarter = Location("Banking quarter", pic = "Banking quarter.webp", menu = ("访问银行", "visit_bank"), action=True, menu_costs_AP=False)
+        old_ruins = Location("Old ruins", pic = "Ruins.webp", menu = ("开采大理石", "collect_marble")) # Marble
         lake = Location("Lakefront", pic = "Lake.webp")
         training_ground = Location("Training ground", pic = "Training ground.webp")
         cathedra = Location("Cathedra", pic = "Cathedra.webp")
@@ -408,7 +408,7 @@ label init_game(quick=False):
         hall = Location("Hall", pic = "Hall.webp")
         courtyard = Location("Courtyard", pic = "Courtyard.webp")
         temple = Location("Temple", pic = "Temple.webp")
-        falls = Location("Waterfalls", pic = "Falls.webp", menu = ("Look for diamonds", "collect_diamond")) # Diamonds
+        falls = Location("Waterfalls", pic = "Falls.webp", menu = ("寻找钻石", "collect_diamond")) # Diamonds
 
         location_dict = {# Districts
                         "The Slums" : [spice_market, sewers, farmland, watchtower, junkyard, thieves_guild],
