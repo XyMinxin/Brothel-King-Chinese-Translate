@@ -732,39 +732,39 @@ label farm_loop():
                     except:
                         act = r
 
-                if act in ("give", "take", "give and equip"):
+                if act in ("给予", "取回", "给予并装备"):
                     if it.equipped:
                         $ owner.unequip(it)
                         play sound it.sound
 
                     $ counterpart.take(owner, it)
 
-                    if act == "give and equip":
+                    if act == "给予并装备":
                         hide screen item_profile
                         $ counterpart.equip(it)
                         play sound it.sound
 
-                elif act == "equip":
+                elif act == "装备":
                     hide screen item_profile
                     $ owner.equip(it)
                     play sound it.sound
                     if owner == MC:
                         $ MC.update_spells()
 
-                elif act == "unequip":
+                elif act == "取消装备":
                     hide screen item_profile
                     $ owner.unequip(it)
                     play sound it.sound
                     if owner == MC:
                         $ MC.update_spells()
 
-                elif act == "gift":
+                elif act == "赠予":
                     hide screen item_profile
                     hide screen item_profile
                     $ MC.gift(counterpart, it)
                     play sound it.sound
 
-                elif act == "use on her":
+                elif act == "对她使用":
                     if it.equipped:
                         $ owner.unequip(it)
                         play sound it.sound
@@ -776,7 +776,7 @@ label farm_loop():
                         $ owner.items.remove(it)
                         hide screen item_profile
 
-                elif act == "use":
+                elif act == "使用":
                     $ r = owner.use_item(it)
                     play sound it.sound
 
@@ -1466,35 +1466,35 @@ label girls_loop():
                     except:
                         act = res
 
-                if act in ("give", "take", "give and equip"):
+                if act in ("给予", "取回", "给予并装备"):
                     if it.equipped:
                         $ owner.unequip(it)
                         play sound it.sound
 
                     $ counterpart.take(owner, it)
 
-                    if act == "give and equip":
+                    if act == "给予并装备":
                         $ counterpart.equip(it)
                         play sound it.sound
 
-                elif act == "equip":
+                elif act == "装备":
                     $ owner.equip(it)
                     play sound it.sound
                     if owner == MC:
                         $ MC.update_spells()
 
-                elif act == "unequip":
+                elif act == "取消装备":
                     $ owner.unequip(it)
                     play sound it.sound
                     if owner == MC:
                         $ MC.update_spells()
 
-                elif act == "gift":
+                elif act == "赠予":
                     hide screen item_profile
                     $ MC.gift(counterpart, it)
                     play sound it.sound
 
-                elif act == "use on her":
+                elif act == "对她使用":
                     if it.equipped:
                         $ owner.unequip(it)
                         play sound it.sound
@@ -1506,7 +1506,7 @@ label girls_loop():
                         $ owner.items.remove(it)
                         hide screen item_profile
 
-                elif act == "use":
+                elif act == "使用":
                     $ r = owner.use_item(it)
                     play sound it.sound
 
@@ -1816,7 +1816,7 @@ label visit_merchant_loop():
                 else:
                     right_focus.char "You do not have the necessary gold.{w=0.8}{nw}"
 
-            elif act == "sell":
+            elif act == "出售":
                 if not MC.can_sell(right_focus, it):
                     right_focus.char "You already sold this to me once! I'm sorry, but this is not a pawn shop. You keep it now."
                     if renpy.call_screen("yes_no", "The merchant will not buy this back. Do you want to get rid of [it.name] for no money?"):
@@ -1832,7 +1832,7 @@ label visit_merchant_loop():
                         hide screen item_profile
                         with Dissolve(0.15)
 
-            elif act in ("buy", "buy and equip"):
+            elif act in ("购买", "购买并装备"):
                 $ price = it.get_price("buy")
 
                 if MC.has_gold(price):
@@ -1868,7 +1868,7 @@ label visit_merchant_loop():
                         if context == "shop":
                             $ shop.love += 1
 
-                        if act == "buy and equip":
+                        if act == "购买并装备":
                             $ counterpart.equip(it)
                         else:
                             hide screen item_profile
@@ -1888,22 +1888,22 @@ label visit_merchant_loop():
                         if right_focus == NPC_twins:
                             $ yesterday(merchant_greetings["Yesterday bought something"])
 
-                        if act == "buy and equip":
+                        if act == "购买并装备":
                             play sound it.sound
                             "[counterpart.name] has equipped the [it.name]."
 
                 else:
                     $ right_focus.char(merchant_greetings[merc.name + " no money"])
 
-            elif act == "equip":
+            elif act == "装备":
                 $ owner.equip(it)
                 play sound it.sound
 
-            elif act == "unequip":
+            elif act == "取消装备":
                 $ owner.unequip(it)
                 play sound it.sound
 
-            elif act == "use":
+            elif act == "使用":
                 $ r = owner.use_item(it)
                 play sound it.sound
 

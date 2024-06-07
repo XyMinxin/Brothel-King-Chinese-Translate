@@ -1685,7 +1685,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + self.name.capitalize() + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + setting_name_dict[self.name.capitalize()] + "{/b}（难度: " + self.get_difficulty() + "）: " + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -4213,36 +4213,36 @@ init -2 python:
                 if owner in (NPC_renza, NPC_captain):
                     possible_acts.append("bargain")
                 else:
-                    possible_acts.append("buy")
+                    possible_acts.append("购买")
                     if counterpart:
                         if self.can_wear(counterpart.type):
                             possible_acts.append("购买并装备")
 
             if counterpart and counterpart.type == "NPC":
                 if self.sellable:
-                    possible_acts.append("sell")
+                    possible_acts.append("出售")
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
-                    possible_acts.append("use")
+                    possible_acts.append("使用")
                 if self.can_wear(owner.type):
                     if not self.equipped:
-                        possible_acts.append("equip")
+                        possible_acts.append("装备")
                     else:
-                        possible_acts.append("unequip")
+                        possible_acts.append("取消装备")
                 if counterpart and counterpart.type == "girl":
                     if self.usage == "gift":
-                        possible_acts.append("gift")
+                        possible_acts.append("赠予")
                     else:
-                        possible_acts.append("give")
+                        possible_acts.append("给予")
                         if self.can_wear("girl"):
-                            possible_acts.append("让她换上")
+                            possible_acts.append("给予并装备")
                         if self.can_use("girl"):
-                            possible_acts.append("use on her")
+                            possible_acts.append("对她使用")
 
             if owner.type == "girl":
                 if counterpart and counterpart.type == "MC":
-                    possible_acts.append("take")
+                    possible_acts.append("取回")
 
 
 

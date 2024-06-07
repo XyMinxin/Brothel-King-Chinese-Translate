@@ -34,6 +34,7 @@ init -10 python:
     max_item_shown = 30
 
 #### TRANSLATION OPTIONS ####
+#### 翻译 ####
 
     ## Edit this dictionary to change the stat names that are displayed (change the right-hand text)
 
@@ -968,7 +969,7 @@ init -10 python:
 
 #### BALANCE / CHEATS ####
 
-    debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
+    debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play
                         "gold" : 1.0,
