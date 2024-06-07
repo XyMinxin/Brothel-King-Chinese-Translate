@@ -18,16 +18,16 @@ init -2 python:
 
         def get_tooltip(self):
 
-            ttip = "农场 %s 可以容纳 %i 单位 %s (目前: %i). " % (self.name, self.rank, plural(self.rank), len(self.minions))
+            ttip = "农场 %s 可以容纳 %i 单位 (目前: %i).\n" % (farm_related_dict[self.name], self.rank, len(self.minions))
 
             if self.can_upgrade():
                 if self.rank > 0:
-                    ttip += "点击升级设施，这将花费" + str(self.get_price()) + " 金币"
+                    ttip += "点击升级设施, 这将花费" + str(self.get_price()) + " 金币"
                 else:
-                    ttip += "点击建造设施，这将花费" + str(self.get_price()) + " 金币"
+                    ttip += "点击建造设施, 这将花费" + str(self.get_price()) + " 金币"
 
             elif self.rank < 5:
-                ttip += "在你得到更高级的营业执照前，该设施无法升级"
+                ttip += "在你得到更高级的营业执照前, 该设施无法升级"
 
             else:
                 "设施已达到最大等级"
@@ -302,7 +302,7 @@ init -2 python:
 
         def update(self):
             if self.target != "no training":
-                self.name = "{color=[c_orange]}" + self.target.capitalize() + " training"  + "{/color}"
+                self.name = "{color=[c_orange]}" + farm_related_dict[self.target.capitalize()] + "训练"  + "{/color}"
             elif self.holding == "rest":
                 self.name = "{color=[c_lightgreen]}" + farm_holding_dict[self.holding] + "{/color}"
             else:

@@ -374,7 +374,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip (__("%s\n今天是 %s, 第 %i 年 第 %i 月 第 %i 天." % (moons[calendar.month].short_description, setting_name_dict[calendar.get_weekday()], calendar.year, calendar.month, calendar.day)))
+            tooltip (__("%s\n今天是%s, 第%i年 第%i月 第%i天." % (moons[calendar.month].short_description, setting_name_dict[calendar.get_weekday()], calendar.year, calendar.month, calendar.day)))
 
             hbox:
                 spacing 8
@@ -697,35 +697,35 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     if context == "girls" or context == "powers":
         if girl.job:
             $ text1 = __(girl.job.capitalize()) # text1 is displayed on the button next to girl name and portrait
-            $ but_ttip = "{b}" + girl.fullname + "{/b} " + __(" 是一个 {0} 等级的 {1}.").format(__(str(girl.level)), __(girl.job))
+            $ but_ttip = "{b}" + girl.fullname + "{/b} " + __(" 是一个 {0} 等级的 {1}.").format(__(str(girl.level)), __(girl_related_dict[girl.job]))
         else:
             $ text1 = "无工作"
-            $ but_ttip = "{b}" + girl.fullname + __("{/b} 正在休息.")
+            $ but_ttip = "{b}" + girl.fullname + __("{/b}正在休息.")
         $ text_col = job_color[girl.job]
         $ use_badge = True
 
     elif context == "free":
         $ text1 = girl.get_MC_relation().capitalize()
         if girl.MC_interact:
-            $ but_ttip = girl.fullname + " 当前位于 " + girl.location + "."
+            $ but_ttip = girl.fullname + " 当前位于" + location_name_dict[girl.location] + "."
         else:
             $ but_ttip = "你以前没见过这个女孩."
         $ text_col = c_white
 
     elif context == "farm":
         if farm.programs[girl].target != "no training":
-            $ text1 = farm.programs[girl].target.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} 正在训练 (" + text1 + ")."
+            $ text1 = farm_related_dict[farm.programs[girl].target.capitalize()]
+            $ but_ttip = "{b}" + girl.fullname + "{/b}正在训练 (" + text1 + ")."
             $ text_col = c_orange
         else:
-            $ text1 = farm.programs[girl].holding.capitalize()
-            $ but_ttip = "{b}" + girl.fullname + "{/b} 正在被关押 (" + text1 + ")."
+            $ text1 = farm_related_dict[farm.programs[girl].holding.capitalize()]
+            $ but_ttip = "{b}" + girl.fullname + "{/b}正在被关押 (" + text1 + ")."
             $ text_col = c_white
         $ use_badge = True
 
     elif context == "slavemarket":
         $ text1 = experienced_description[girl.sexual_experience]
-        $ text2 = str(girl.get_price("buy")) + " gold"
+        $ text2 = str(girl.get_price("buy")) + "金币"
         $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + __(". 点击查看详细信息.")
         $ text_col = experienced_color[girl.sexual_experience]
 
@@ -773,7 +773,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                     if unhovered_action:
                         unhovered unhovered_action
 
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
 
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
@@ -860,7 +860,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action
                     if unhovered_action:
                         unhovered unhovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -946,7 +946,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action
                     if unhovered_action:
                         unhovered unhovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1049,7 +1049,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                                 hovered hovered_action
                             if unhovered_action:
                                 unhovered unhovered_action
-                            tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                            tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
                             vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                                 thumb None
                                 thumb_offset 0
@@ -1095,10 +1095,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         yalign 0.6
 
                         hbox spacing 6:
-                            text "Rank" size res_font(14)
+                            text "阶级" size res_font(14)
                             text rank_name[girl.rank] bold True drop_shadow (1, 1)
                         hbox spacing 6:
-                            text "Level" size res_font(14)
+                            text "等级" size res_font(14)
                             text str(girl.level) bold True drop_shadow (1, 1)
 
                 if context != "free" or girl.MC_interact:
@@ -1131,14 +1131,14 @@ screen girl_fast_actions(girl, notebook=True, love_fear=True, schedule=True, cus
         has hbox spacing 5 xfill True yfill True
 
         if schedule:
-            button yalign 0.5 xmargin 0 xpadding 3 ymargin 0 ypadding 3 action Return("sched") tooltip __("Open%s's schedule") % girl.fullname:
+            button yalign 0.5 xmargin 0 xpadding 3 ymargin 0 ypadding 3 action Return("sched") tooltip __("打开 %s 的时间表") % girl.fullname:
                 add "UI/calendar.webp" zoom 0.4 #idle_alpha 0.66 hover_alpha 1.0
         else:
             null
 
         if notebook:
             if MC.get_effect("special", "notebook"):
-                button action Show("notebook") xmargin 0 xpadding 3 ymargin 0 ypadding 3 yalign 0.5 tooltip __("Open %s's entry in your magical notebook") % girl.fullname:
+                button action Show("notebook") xmargin 0 xpadding 3 ymargin 0 ypadding 3 yalign 0.5 tooltip __("在您的魔法笔记本中打开 %s 的条目") % girl.fullname:
                     add "items/misc/magic notebook.webp" zoom 0.4 #idle_alpha 0.5 hover_alpha 1.0
         else:
             null
@@ -1231,7 +1231,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training" or farm.programs[girl].holding != "rest":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "Training mode:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会违背女孩意愿强迫她们训练."
+                            textbutton "训练模式:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会违背女孩意愿强迫她们训练."
                             textbutton farm.programs[girl].mode.capitalize() style "inv_no_padding" text_size res_font(14) yalign 0.5 text_bold True action NullAction() tooltip farm_ttip[farm.programs[girl].mode]
 
                             if farm.programs[girl].mode == "tough":
@@ -1241,7 +1241,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "Training facility:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "确定使用哪个设施对她进行训练 (如果可用)."
+                            textbutton "训练设施:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "确定使用哪个设施对她进行训练 (如果可用)."
                             textbutton farm.programs[girl].installation_name.capitalize() style "inv_no_padding" yalign 0.5 text_size res_font(14) text_bold True action NullAction():
                                 if farm.programs[girl].installation:
                                     tooltip farm.programs[girl].installation.get_tooltip()
@@ -1262,12 +1262,12 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                         if farm.knows["weakness"][girl]:
                             hbox xalign 0.5 spacing xres(10):
-                                textbutton "Use Weakness:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会利用她已知的弱点来对付她."
-                                text {True: "No", False: "Yes"}[farm.programs[girl].avoid_weakness] size res_font(14) bold True
+                                textbutton "针对弱点:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会利用她已知的弱点来对付她."
+                                text {True: "否", False: "是"}[farm.programs[girl].avoid_weakness] size res_font(14) bold True
 
                     else:
                         hbox xalign 0.5 spacing 10:
-                            textbutton "Holding mode:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩在不训练的时候做什么 (工作或休息).")
+                            textbutton "当前状态:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩在不训练的时候做什么 (工作或休息).")
                             text farm.programs[girl].holding.capitalize() size res_font(14) bold True
 
                     # hbox xalign 0.5 spacing 10:
@@ -1275,7 +1275,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     #         textbutton "Duration:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("The duration of her stay.")
                     #         text str(farm.programs[girl].duration) + " days" size res_font(14) bold True
 
-                    textbutton "Change program" text_size res_font(16) xalign 0.5 action Return(("change program", girl)) tooltip "Change " + girl.name + "'s current training program."
+                    textbutton "改变计划" text_size res_font(16) xalign 0.5 action Return(("change program", girl)) tooltip "改变 " + girl.name + " 目前的培训计划."
 
                     text "" size res_font(18)
 
@@ -1293,7 +1293,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     if MC.get_effect("special", "notebook"):
                         key "noshift_K_n" action Show("notebook")
                         #button background None xmargin 10 xpadding 0 action Show("notebook") tooltip "Open " + girl.fullname + "'s entry in your magical notebook (shortcut: {u}n{/u})":
-                        button background None xsize xres(80) ysize yres(80) xmargin 10 xpadding 0 action Show("notebook") tooltip "展开 %s 的所有记录在魔法笔记里的信息 (快捷键: {u}N{/u})" % girl.fullname:
+                        button background None xsize xres(80) ysize yres(80) xmargin 10 xpadding 0 action Show("notebook") tooltip "展开 %s 所有记录在魔法笔记里的信息 (快捷键: {u}N{/u})" % girl.fullname:
                             add "items/misc/magic notebook.webp" idle_alpha 0.66 hover_alpha 1.0 fit "contain"
 
                 vbox xalign 1.0:
@@ -1312,7 +1312,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                 if context == "slavemarket" or persistent.show_girlpack_rating=="Everywhere":
                     $ rating, ttip = get_girlpack_rating(girl)
 
-                    textbutton "Girl rating (" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size res_font(18) yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
+                    textbutton "女孩评级 (" + capitalize(girl.path.split("/")[-1]) + "): " + rating background c_ui_darkblue text_size res_font(18) yalign 1.0 xmargin 10 ymargin 10 action NullAction() tooltip ttip
 
 
 screen stat_bar(base_value, bonus, max_skill=100, max_cap=None, separator=50, bar_color=c_darkorange, pos_color=c_emerald, neg_color=c_crimson, color_scale=False): # All purpose stat bar, can be recolored
@@ -1459,11 +1459,11 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                         if context == "girls":
                             action (SetVariable("selected_girl", girl), Return("change_name"))
-                            tooltip __("Click to change her name")
+                            tooltip __("点击更改她的名字")
 
                         elif context == "farm":
                             action Return(("change_name", girl))
-                            tooltip __("Click to change her name")
+                            tooltip __("点击更改她的名字")
 
                         xmargin 0
                         ymargin 0
@@ -1494,17 +1494,17 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             $ defense = girl.get_defense()
 
                             if defense <= 0:
-                                    $ ttip = __("{b}Helpless")
+                                    $ ttip = __("{b}手无寸铁")
                             elif defense <= 3:
-                                $ ttip = __("{b}Mostly harmless")
+                                $ ttip = __("{b}娇花易折")
                             elif defense <= 6:
-                                $ ttip = __("{b}Competent")
+                                $ ttip = __("{b}红颜侠客")
                             elif defense <= 9:
-                                $ ttip = __("{b}Dangerous")
+                                $ ttip = __("{b}绝色杀手")
                             else:
-                                $ ttip = __("{b}Deadly")
+                                $ ttip = __("{b}致命诱惑")
 
-                            $ ttip += __("{/b}\nHow well she can defend herself. Raise this by giving her a weapon.")
+                            $ ttip += __("{/b}\n她的自卫能力如何. 给她一把武器可以提高自卫能力.")
 
                             button:
 
@@ -1538,7 +1538,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 add ProportionalScale(girl.get_mood_picture(), *res_tb(16))
 
                     elif context == "powers":
-                        text "Sanity: " + girl.get_sanity() size res_font(16)
+                        text "理智: " + girl.get_sanity() size res_font(16)
 
 
                 if context in ["girls", "farm", "contract", "postings", "powers"]:
@@ -1591,22 +1591,22 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             if girl.job in all_jobs:
                                 $ job = girl.job
                                 $ jp_show = True
-                            $ jp_text = "Away"
+                            $ jp_text = "离开"
 
                         elif girl.hurt > 0:
                             if girl.job in all_jobs:
                                 $ job = girl.job
                                 $ jp_show = True
-                            $ jp_text = "Hurt"
+                            $ jp_text = "受伤"
 
                         elif girl.workdays[calendar.get_weekday()] == 0:
                             if girl.job in all_jobs:
                                 $ job = girl.job
                                 $ jp_show = True
-                            $ jp_text = "Resting"
+                            $ jp_text = "休息中"
 
                         elif girl.resting or not girl.job:
-                            $ jp_text = "Resting"
+                            $ jp_text = "休息中"
 
                         elif girl.job in all_jobs:
                             $ job = girl.job
@@ -1615,11 +1615,11 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         elif girl in farm.girls:
                             if farm.programs[girl].target == "no training":
                                 if farm.programs[girl].holding == "rest":
-                                    $ jp_text = "Resting"
+                                    $ jp_text = "休息中"
                                 else:
-                                    $ jp_text = "Holding"
+                                    $ jp_text = "待机中"
                             else:
-                                $ jp_text = "Training"
+                                $ jp_text = "训练中"
 
                         else: # Whore
                             $ job = None
@@ -1632,7 +1632,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                     $ jp_show = True
 
                         if jp_show:
-                            $ jp_text = __(job.capitalize()) + " " + str(girl.job_level[job]) + " {image=img_star}"
+                            $ jp_text = __(girl_related_dict[job.capitalize()]) + " " + str(girl.job_level[job]) + " {image=img_star}"
 
                             $ jp_val = girl.jp[job]
                             $ jp_max = girl.get_jp_cap(job)
@@ -1702,7 +1702,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 action Return(("debug change all stats", 0))
                             else:
                                 action NullAction()
-                            tooltip __("She has {b}") + str_int(girl.energy) + __("{/b} energy remaining. Her maximum energy is {b}") + str_int(girl_max) + __("{/b} (increase constitution for higher energy).")
+                            tooltip __("她还有{b}") + str_int(girl.energy) + __("{/b}点精力. 她的最大精力为{b}") + str_int(girl_max) + __("{/b} (增加体格可以提高精力上限).")
                             keyboard_focus False
                             yfill False
                             ysize yres(30)
@@ -1747,7 +1747,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             button:
                                 background None
                                 action NullAction()
-                                tooltip "You need to become her friend to see her level for this skill."
+                                tooltip "你需要成为她的朋友才能看到她的技能水平."
                                 keyboard_focus False
                                 ysize yres(30)
 
@@ -1789,13 +1789,13 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                         if not girls_firstvisit:
                                             action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
 
-                                        hovered (tt.Action("This will activate {b}" + act + " acts{/b} for this girl. At least one regular sex act muct be active as well."), Show("sex_details", girl=girl))
+                                        hovered (tt.Action("这将为这个女孩激活{b}" + girl_related_dict[act] + "行为{/b}. 至少要激活一种常规的性行为."), Show("sex_details", girl=girl))
                                         unhovered Hide("sex_details")
-                                    text __(act.capitalize()) layout "nobreak": #preference_color[pref] % stat.name:
+                                    text __(girl_related_dict[act.capitalize()]) layout "nobreak": #preference_color[pref] % stat.name:
                                         size res_font(12)
 
                 if context == "slavemarket":
-                    $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" Prior training may make a girl more suitable for sex acts.")
+                    $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" 事先的训练可能会使女孩更适合性行为.")
                     textbutton __("Prior training received:   {color=" + experienced_color[girl.sexual_experience] + "}") + __(experienced_description[girl.sexual_experience]) + "{/color}" ymargin yres(3) ypadding 0 text_color c_white text_size res_font(14) background None action NullAction() tooltip ttip
 
 
@@ -1842,7 +1842,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                         $ result, reason = girl.will_do_sex_act(stat.name.lower(), True)
 
                                         if result:
-                                            $ ttip = __("This will activate {b}") + __(stat_name_dict[stat.name]) + __("{/b} for this girl.")
+                                            $ ttip = __("这将为这个女孩激活{b}") + __(stat_name_dict[stat.name]) + __("{/b}.")
                                         else:
                                             $ ttip = reason
 
@@ -1871,7 +1871,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             button:
                                 background None
                                 action NullAction()
-                                tooltip "You need to become her lover to see her level for this skill."
+                                tooltip "你需要成为她的爱人才能看到她的技能水平."
                                 keyboard_focus False
                                 ysize yres(30)
 
@@ -1938,7 +1938,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             yalign 0.5
                             text_size res_font(14)
                             action NullAction()
-                            tooltip "You need to become her boyfriend to see her traits."
+                            tooltip "你需要成为她的男朋友才能看到她的特质."
                             keyboard_focus False
 
                 if context == "girls":
@@ -1966,7 +1966,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 thumb "tb empty"
 
                                 keyboard_focus False
-                                hovered tt.Action("You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy.")
+                                hovered tt.Action("你必须每天支付保养费. 高端女孩将需要更高的保养. 保持高报酬，让你的女孩开心.")
 
                             textbutton "-":
                                 text_size res_font(14)
@@ -2022,7 +2022,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                         text "" size res_font(14)
 
-                        text str(girl.get_med_upkeep() // 4) + " gold (fixed)" size res_font(14)
+                        text str(girl.get_med_upkeep() // 4) + " 金币 (固定)" size res_font(14)
 
 
 screen assign_job(girl):
@@ -2062,10 +2062,10 @@ screen assign_job(girl):
                 button background None xpadding 2 ypadding 2 xalign 0:
                     if brothel.has_room(job_room_dict[j]):
                         action Return(j)
-                        tooltip __("Ask ") + girl.fullname + __(" to work as a ") + __(j) + __(" AAAAA ") 
+                        tooltip __("Ask ") + girl.fullname + __(" to work as a ") + __(girl_related_dict[j]) + __(" AAAAA ") 
                         fixed fit_first True:
                             add "tb " + j idle_alpha 0.66 selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
-                            text __(j.capitalize()) selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
+                            text __(girl_related_dict[j.capitalize()]) selected_color c_yellow hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
                             if j == "whore":
                                 $ text1 = "6"
                             else:
@@ -2073,7 +2073,7 @@ screen assign_job(girl):
                             text text1 size res_font(12) xalign 0.05 yalign 0.95 drop_shadow (1, 1)
 
                     else:
-                        text __(j.capitalize()) + __("\n(unavailable)") selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
+                        text __(girl_related_dict[j.capitalize()]) + __("\n(unavailable)") selected_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
 
 
             if farm.active:
@@ -2089,7 +2089,7 @@ screen assign_job(girl):
                 null
 
             if brothel.master_bedroom.level >= 1:
-                $ text1 = "Auto-train "
+                $ text1 = "自动训练 "
                 if girl in brothel.master_bedroom.girls:
                     $ ttip = __("Remove ") + girl.fullname + __(" from your bedroom.")
                     $ text1 += "(ON)"
@@ -2346,11 +2346,11 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = __("没有安排工作. 在得到新的指示前她会一直休息.")
 
             elif girl.work_whore:
-                $ text1 = girl.job.capitalize()[:4] + "./Wh."
+                $ text1 = girl_related_dict[girl.job.capitalize()][:4] + "./Wh."
                 $ ttip = __("一边工作一边勾引客人. 点击更换工作或让她去休息.")
 
             else:
-                $ text1 = girl.job.capitalize()
+                $ text1 = girl_related_dict[girl.job.capitalize()]
                 $ ttip = __("点击更换工作或让她去休息.")
 
             textbutton text1 text_size res_font(14) action (SetVariable("selected_girl", girl), Return("assign")) tooltip ttip + __(" ({i}shortcut: {u}j{/u}{/i})")
@@ -2367,7 +2367,7 @@ screen button_overlay(girl, context="girls"):
             if not girls_firstvisit:
                 key "noshift_K_d" action Return("sched")
 
-            textbutton "{u}排班{/u}" text_color c_white text_size res_font(14):
+            textbutton "Sche{u}d{/u}ule" text_color c_white text_size res_font(14):
                 tooltip "{i}今日排班: %s{/i}.\n点击打开 %s 的排班表." % (text1, girl.fullname)
                 if not girls_firstvisit:
                     action Return("sched")
@@ -2385,7 +2385,7 @@ screen button_overlay(girl, context="girls"):
                 xpadding 0
                 ypadding 0
 
-                textbutton "{u}互动{/u}":
+                textbutton "{u}I{/u}nteract":
                     text_size res_font(14)
                     hovered tt.Action("与你的女孩互动。消耗行动力。")
 
@@ -2398,12 +2398,12 @@ screen button_overlay(girl, context="girls"):
                     action NullAction()
 
                 if MC.interactions <= 0:
-                    tooltip "行动力耗尽，你今天无法再行动了"
+                    tooltip "行动力耗尽, 你今天无法再行动了"
 
                 elif girl.away:
-                    tooltip "You cannot interact with %s as she is away." % girl.name
+                    tooltip "由于 %s 不在, 您无法与她互动." % girl.name
 
-            textbutton "{u}物品{/u}":
+            textbutton "I{u}t{/u}ems":
                 text_size res_font(14)
 
                 if not girls_firstvisit: # Available for away girls to avoid complications in the Equipment screen
@@ -6295,19 +6295,19 @@ screen farm_menu(prog, can_cancel=True):
         $ _warning = False
 
         if prog.target == "no training" and prog.holding=="rest":
-            $ text1 = prog.girl.fullname + " 将在牢房里 {b}休息{/b} ."
+            $ text1 = prog.girl.fullname + "将在牢房里{b}休息{/b}."
 
         else:
             if prog.target == "no training":
-                $ text1 = prog.girl.fullname + " 将在家务劳动中提升她的 {b}" + stat_name_dict[prog.holding.capitalize()] + "{/b} 属性."
+                $ text1 = prog.girl.fullname + "将在{b}" + farm_related_dict[prog.holding.capitalize()] + "{/b}中提升她的属性."
             else:
                 if prog.target == "auto":
-                    $ text1 = prog.girl.fullname + " 将接受 {b}自动训练{/b}"
+                    $ text1 = prog.girl.fullname + "将接受{b}自动训练{/b}"
                 else:
-                    $ text1 = prog.girl.fullname + " 将接受 {b}" + prog.target.capitalize() + " 训练{/b}"
+                    $ text1 = prog.girl.fullname + "将接受{b}" + farm_related_dict[prog.target.capitalize()] + "训练{/b}"
 
                 if prog.auto_inst:
-                    $ text1 += ".\n我会安排她 {b}自动设施训练{/b}, 如果还有设施还有空房间的话."
+                    $ text1 += ".\n我会安排她{b}自动设施训练{/b}, 如果还有设施还有空房间的话."
 
                     $ _warning = "可能没有足够数量的仆从在设施中训练她." # Reverse logic, because of the lack of for... else loops in screen language
 
@@ -6318,7 +6318,11 @@ screen farm_menu(prog, can_cancel=True):
                             $ _warning = False
 
                 elif prog.installation:
-                    $ text1 += " at the {b}" + capitalize(prog.installation.name) + "{/b}."
+                    if prog.target == "auto":
+                        $ text1 = prog.girl.fullname + "将在{b}" + farm_related_dict[capitalize(prog.installation.name)] + "{/b}接受{b}自动训练{/b}"
+                    else:
+                        $ text1 = prog.girl.fullname + "将在{b}" + farm_related_dict[capitalize(prog.installation.name)] + "{/b}接受{b}" + farm_related_dict[prog.target.capitalize()] + "训练{/b}"
+                    # $ text1 += "在 {b}" + farm_related_dict[capitalize(prog.installation.name)] + "{/b}."
 
                     # $ other_assigned_girls = [g for g in inst.return_assigned_girls() if g != prog.girl]
                     $ free_m = len(prog.installation.get_healthy_minions()) - prog.installation.count_busy_minions()
@@ -6327,11 +6331,11 @@ screen farm_menu(prog, can_cancel=True):
                         if prog.target == "group":
                             $ _warning = "这儿可能没有足够多的仆从用来群体训练. 我也许得把她送去别的设施训练，如果别的设施有空间的话."
                         else:
-                            $ _warning = " %s 中没有足够的空闲的仆从, 我可能得安排这女孩轮流使用设施." % prog.installation.name
+                            $ _warning = "%s中没有足够的空闲的仆从, 我可能得安排这女孩轮流使用设施." % farm_related_dict[prog.installation.name]
 
         if _warning:
             $ pic = "side gizel upset"
-            $ text1 += event_color["very bad"] % ("\n{b}Warning{/b}: " + _warning)
+            $ text1 += event_color["very bad"] % ("\n{b}警告{/b}: " + _warning)
         else:
             $ pic = "side gizel"
 
@@ -6347,9 +6351,9 @@ screen farm_menu(prog, can_cancel=True):
 
         text "" size 16
 
-        textbutton "Farm activities" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "Work for Gizel on the farm. These activities do no require minions."
+        textbutton "Farm activities" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "在农场给吉泽尔干活。这些活动不需要仆从。"
 
-        textbutton "Rest" style "farm_button" text_size res_font(18) xsize yres(780) action (SetField(prog, "target", "no training"), SetField(prog, "holding", "rest"), SetField(prog, "installation", None), SelectedIf(prog.target == "no training" and prog.holding=="rest")) tooltip "She will simply rest in her pen."
+        textbutton "休息" style "farm_button" text_size res_font(18) xsize yres(780) action (SetField(prog, "target", "no training"), SetField(prog, "holding", "rest"), SetField(prog, "installation", None), SelectedIf(prog.target == "no training" and prog.holding=="rest")) tooltip "她会乖乖待在猪圈里。"
 
         null height yres(9)
 
@@ -6364,16 +6368,16 @@ screen farm_menu(prog, can_cancel=True):
 
         text "" size 16
 
-        textbutton "Sexual Training" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "Go through Gizel's special training program. Sexual training requires available minions."
+        textbutton "Sexual Training" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "通过吉泽尔的特殊培训计划。性训练需要可用的仆从。"
 
         hbox:
             for act in extended_sex_acts:
-                $ ttip = "吉泽将用仆从训练她的 %s 能力." % act
+                $ ttip = "吉泽将用仆从训练她的 %s 能力." % girl_related_dict[act]
 
                 if act == "group":
                     $ ttip += "\n需要在同一个设施内有2个或3个空闲的仆从."
 
-                textbutton act.capitalize() style "farm_button" text_size res_font(18) xsize yres(780//7):
+                textbutton girl_related_dict[act.capitalize()] style "farm_button" text_size res_font(18) xsize yres(780//7):
                     if prog.target==act:
                         action (SetField(prog, "target", "no training"), SetField(prog, "holding", "rest"), SetField(prog, "installation", None), SelectedIf(True))
                     else:
@@ -6385,9 +6389,9 @@ screen farm_menu(prog, can_cancel=True):
 
         hbox:
             for cond in ("indifferent", "interested", "fascinated"):
-                textbutton "Everything (%s)" % cond.capitalize() style "farm_button" text_size res_font(14) xsize yres(780//3) ysize yres(28):
+                textbutton "任意训练 (%s)" % farm_related_dict[cond.capitalize()] style "farm_button" text_size res_font(14) xsize yres(780//3) ysize yres(28):
                     action (SetField(prog, "target", "auto"), SetField(prog, "condition", cond), SelectedIf(prog.target=="auto" and prog.condition == cond))
-                    tooltip "在她对这种行为感到 %s 前，她将一直自动训练." % (preference_color[cond] % cond)
+                    tooltip "在她对这种行为感到 %s 前，她将一直自动训练." % (preference_color[cond] % girl_related_dict[cond])
 
         text "" size 16
 
@@ -6422,12 +6426,12 @@ screen farm_menu(prog, can_cancel=True):
                 for inst in available_installations:
                     # $ other_assigned_girls = [g for g in inst.return_assigned_girls() if g != prog.girl]
                     $ inst_nb = inst.count_busy_minions()
-                    $ ttip = "It has %i healthy minion available." % (len(inst.get_healthy_minions()))
+                    $ ttip = "这有 %i 个健康的仆从可用." % (len(inst.get_healthy_minions()))
                     # if prog.installation==inst:
                     #     $ inst_nb += 1
 
                     if farm.knows["weakness"][girl] and girl.weakness == inst.minion_type:
-                        $ ttip += "\n她十分害怕 " + girl.weakness + "训练效果会更好, 但违背她的意愿会增加她的恐惧，更快地降低情绪."
+                        $ ttip += "\n她十分害怕 " + farm_related_dict[girl.weakness] + "训练效果会更好, 但违背她的意愿会增加她的恐惧，更快地降低情绪."
                     if len(inst.get_healthy_minions()) < 1:
                         $ ttip += event_color["bad"] % "\n这个设施里没有可用的仆从."
 
@@ -6462,7 +6466,7 @@ screen farm_menu(prog, can_cancel=True):
                         if prog.installation==inst:
                             tooltip "她将被送去这个设施. " + ttip
                         else:
-                            tooltip "%s 已被送去这个设施. " % (and_text([g.fullname for g in inst.return_assigned_girls()], if_none="No girls")) + ttip
+                            tooltip "%s 被送去这个设施. " % (and_text([g.fullname for g in inst.return_assigned_girls()], if_none="没有女孩")) + ttip
 
         text ""
 
@@ -6472,7 +6476,7 @@ screen farm_menu(prog, can_cancel=True):
         else:
             hbox xalign 0.5:
                 for train_mode in ("gentle", "tough", "hardcore"):
-                    textbutton "Train her (%s)" % train_mode ypadding yres(9) text_color c_white text_size res_font(18) xsize yres(780//3) action (SetField(prog, "mode", train_mode), SelectedIf(prog.mode==train_mode), Return("commit")) tooltip farm_ttip[train_mode]
+                    textbutton "训练她 (%s)" % farm_related_dict[train_mode] ypadding yres(9) text_color c_white text_size res_font(18) xsize yres(780//3) action (SetField(prog, "mode", train_mode), SelectedIf(prog.mode==train_mode), Return("commit")) tooltip farm_ttip[train_mode]
 
 
 
@@ -6665,7 +6669,7 @@ screen farm_tab():
                     vbox xsize xres(130) xfill True:
 
                         if len(farm.get_minions(type)) > 0:
-                            textbutton str(len(farm.get_minions(type))) + " " + type.capitalize() + plural(len(farm.get_minions(type))) style "inv_no_padding" text_size res_font(14) text_bold True xalign 0.5 action NullAction() tooltip minion_description[type]
+                            textbutton str(len(farm.get_minions(type))) + " " + farm_related_dict[type.capitalize()] style "inv_no_padding" text_size res_font(14) text_bold True xalign 0.5 action NullAction() tooltip minion_description[type]
 
                         text "" size res_font(6)
 
@@ -6812,7 +6816,7 @@ screen sex_details(girl):
                     $ text1 = ""
 
                 if girl.personality_unlock[act]:
-                    text preference_color[girl.get_preference(act)] % __(girl.get_preference(act).capitalize()) + text1 size res_font(14)
+                    text preference_color[girl.get_preference(act)] % __(girl_related_dict[girl.get_preference(act).capitalize()]) + text1 size res_font(14)
                 else:
                     text "Unknown" + text1 size res_font(14) italic True
 
@@ -7974,7 +7978,7 @@ screen debug_pics(girl):
                         if act != "bisexual":
                             $ not_tags.append("bisexual")
 
-                        textbutton fix.name.capitalize() + " " + act.capitalize() text_size res_font(14) action SetScreenVariable("pic", girl.get_fix_pic(act, fix, not_tags=not_tags))
+                        textbutton fix.name.capitalize() + " " + girl_related_dict[act.capitalize()] text_size res_font(14) action SetScreenVariable("pic", girl.get_fix_pic(act, fix, not_tags=not_tags))
 
 
 #### GIRL MIXES ####

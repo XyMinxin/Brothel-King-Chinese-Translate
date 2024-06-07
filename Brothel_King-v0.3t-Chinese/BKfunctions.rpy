@@ -901,13 +901,13 @@ init -3 python:
             stat, nb = c
 
             if stat in ("rep", "reputation"):
-                change_log.add("Reputation: %i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
+                change_log.add("声望: %i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
 
             elif stat == "gold":
-                change_log.add("Gold: {image=img_gold} %s" % plus_text(int(nb), "gold"))
+                change_log.add("金币: {image=img_gold} %s" % plus_text(int(nb), "gold"))
 
             else:
-                change_log.add("%s: %i/%i (%s)" % ((__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
+                change_log.add("%s: %i/%i (%s)" % ((__(stat_name_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
 
         return change_log
 
@@ -940,7 +940,7 @@ init -3 python:
                     text_changes += __("Gold: {image=img_gold} ") + plus_text(round_int(nb), color_scheme="gold")
 
                 else:
-                    text_changes += __("%s: " % stat.capitalize()) + plus_text(round_int(nb), color_scheme="standard")
+                    text_changes += __("%s: " % stat_name_dict[stat.capitalize()]) + plus_text(round_int(nb), color_scheme="standard")
 
             text_changes += "\n"
 

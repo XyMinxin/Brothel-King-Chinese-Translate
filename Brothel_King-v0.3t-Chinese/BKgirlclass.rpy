@@ -1844,67 +1844,67 @@ init -2 python:
 
 
             if self.away and persistent.show_girl_status["away"]:
-                status_list.append(["away.webp", self.fullname + " 要 {b}出门{/b} 花 %s 天来完成委托或参加培训"  % (self.return_date - calendar.time)])
+                status_list.append(["away.webp", self.fullname + " 要{b}出门{/b}花 %s 天来完成委托或参加培训"  % (self.return_date - calendar.time)])
 
             elif self in farm.girls and persistent.show_girl_status["farm"]:
                 try:
                     if farm.programs[self].target == "no training":
                         if farm.programs[self].holding == "rest":
-                            status_list.append(["rest.webp", self.fullname + " 今天在她的牢房里 {b}休息{/b} ."])
+                            status_list.append(["rest.webp", self.fullname + " 今天在她的牢房里{b}休息{/b}."])
                         else:
-                            status_list.append(["farm.webp", self.fullname + " 在 {b}农场{/b} (" + farm.programs[self].holding + " 接受训练)."])
+                            status_list.append(["farm.webp", self.fullname + " 在{b}农场{/b} (接受" + farm_related_dict[farm.programs[self].holding] + "训练)."])
                     else:
-                        status_list.append(["farm.webp", self.fullname + " 在 {b}农场{/b} (" + farm.programs[self].target + " 接受训练)."])
+                        status_list.append(["farm.webp", self.fullname + " 在{b}农场{/b} (接受" + farm_related_dict[farm.programs[self].target] + "训练)."])
                 except:
                     farm.programs[self] = FarmProgram(self)
 
             elif (self.resting or not self.job or not self.works_today()) and not self.exhausted:
                 if self.workdays[calendar.get_weekday()] > 0 and persistent.show_girl_status["scheduled"]:
-                    status_list.append(["scheduled.webp", self.fullname + " 排班表安排她今天 {b}休息{/b} ."])
+                    status_list.append(["scheduled.webp", self.fullname + " 排班表安排她今天{b}休息{/b}."])
                 elif persistent.show_girl_status["rest"]:
-                    status_list.append(["rest.webp", self.fullname + " 今天 {b}休息{/b} ."])
+                    status_list.append(["rest.webp", self.fullname + " 今天{b}休息{/b}."])
 
             elif self.energy < autorest_limit:
-                status_list.append(["autorest.webp", self.fullname + " 体力透支了. 她将自动被安排去 {b}休息{/b} ."])
+                status_list.append(["autorest.webp", self.fullname + " 体力透支了. 她将自动被安排去{b}休息{/b}."])
 
             elif self.works_today() == 50 and persistent.show_girl_status["half-shift"]:
-                status_list.append(["half.webp", self.fullname + " 今天只上 {b}半天班{/b} ."])
+                status_list.append(["half.webp", self.fullname + " 今天只上{b}半天班{/b} "])
 
             if self in brothel.master_bedroom.girls and persistent.show_girl_status["master bedroom"]:
-                status_list.append(["master.webp", self.fullname + " 今晚要来你房间接受 {b}私人指导{/b}."])
+                status_list.append(["master.webp", self.fullname + " 今晚要来你房间接受{b}私人指导{/b}."])
 
             if self.ready_to_rank():
-                status_list.append(["rankup.webp", self.fullname + " 可以提升 {b}阶级{/b}."])
+                status_list.append(["rankup.webp", self.fullname + " 可以提升{b}阶级{/b}."])
 
             if self.perk_points or self.can_spend_upgrade_points():
-                status_list.append(["levelup.webp", self.fullname + " 可以提升 {b}等级{/b}."])
+                status_list.append(["levelup.webp", self.fullname + " 可以提升{b}等级{/b}."])
 
             if self.hurt > 0:
                 if self.hurt <= 1:
-                    status_list.append(["hurt.webp", self.fullname + " 因为 {b}生病或受伤{/b} 她需要再休息一天才能回到最佳状态，否则她什么也做不了."])
+                    status_list.append(["hurt.webp", self.fullname + " 因为{b}生病或受伤{/b}她需要再休息一天才能回到最佳状态，否则她什么也做不了."])
                 else:
-                    status_list.append(["hurt.webp", self.fullname + " 因为 {b}生病或受伤{/b} 她需要再休息 " + str(round_int(self.hurt)) + " 天才能回到最佳状态，否则她什么也做不了."])
+                    status_list.append(["hurt.webp", self.fullname + " 因为{b}生病或受伤{/b}她需要再休息 " + str(round_int(self.hurt)) + " 天才能回到最佳状态，否则她什么也做不了."])
 
             elif self.exhausted:
-                status_list.append(["tired.webp", self.fullname + " 感觉 {b}体力透支{/b} 需要彻底的休息才能回来工作。"]) # Replaced exhausted.webp
+                status_list.append(["tired.webp", self.fullname + " 感觉{b}体力透支{/b}需要彻底的休息才能回来工作。"]) # Replaced exhausted.webp
 
             if self.work_whore and persistent.show_girl_status["work&whore"]:
-                status_list.append(["ww.webp", self.fullname + " 今天 {b}一边服务一边勾引客人{/b} ."])
+                status_list.append(["ww.webp", self.fullname + " 今天{b}一边服务一边勾引客人{/b}."])
 
             if not self.work_whore and persistent.show_girl_status["not work&whore"]:
-                status_list.append(["not_ww.webp", self.fullname + " 无法 {b}一边服务一边勾引客人{/b}."])
+                status_list.append(["not_ww.webp", self.fullname + " 无法{b}一边服务一边勾引客人{/b}."])
 
             if self.naked and persistent.show_girl_status["naked"]:
                 if self.get_effect("special", "naked"):
-                    status_list.append(["naked.webp", self.fullname + " 将一直 {b}一丝不挂{/b} 的展示给所有人."])
+                    status_list.append(["naked.webp", self.fullname + " 将一直{b}一丝不挂{/b}的展示给所有人."])
                 else:
-                    status_list.append(["naked2.webp", self.fullname + " 今天将 {b}全裸{/b} 一整天."])
+                    status_list.append(["naked2.webp", self.fullname + " 今天将{b}全裸{/b}一整天."])
 
             if not self.naked and persistent.show_girl_status["not naked"]:
-                status_list.append(["not_naked.webp", self.fullname + " 不处于 {b}裸体{/b} (这对你来说显然是个难题)."])
+                status_list.append(["not_naked.webp", self.fullname + " 不处于{b}裸体{/b} (这对你来说显然是个难题)."])
 
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]] and persistent.show_girl_status["negative fixation"]:
-                status_list.append(["negfix.webp", "你发现 " + self.fullname + " 有一个 {b}负面的癖好{/b}."])
+                status_list.append(["negfix.webp", "你发现 " + self.fullname + " 有一个{b}负面的癖好{/b}."])
 
             return status_list
 
