@@ -1,224 +1,240 @@
-﻿# TODO: Translation updated at 2024-06-04 17:00
+﻿# TODO: Translation updated at 2024-04-27 18:30
 
 translate schinese strings:
 
     # game/screens.rpy:256
     old "Girl packs"
-    new "Girl packs"
+    new "女孩包"
 
     # game/screens.rpy:257
     old "Mods"
-    new "Mods"
+    new "MOD"
 
     # game/screens.rpy:260
     old "Extras"
-    new "Extras"
+    new "额外"
 
     # game/screens.rpy:264
     old "Start Game"
-    new "Start Game"
+    new "开始游戏"
 
     # game/screens.rpy:265
     old "Load Game"
-    new "Load Game"
+    new "加载游戏"
 
     # game/screens.rpy:266
     old "Quit"
-    new "Quit"
+    new "退出"
 
     # game/screens.rpy:270
     old "Preferences"
-    new "Preferences"
+    new "设置"
 
     # game/screens.rpy:271
     old "Resolution"
-    new "Resolution"
+    new "分辨率"
 
     # game/screens.rpy:272
     old "Help"
-    new "Help"
+    new "帮助"
 
     # game/screens.rpy:278
     old "Choose target resolution (currently [config.screen_width]x[config.screen_height])"
-    new "Choose target resolution (currently [config.screen_width]x[config.screen_height])"
-
-    # game/screens.rpy:278
-    old "1920x1080 (16:9)"
-    new "1920x1080 (16:9)"
-
-    # game/screens.rpy:278
-    old "1024x768 (4:3)"
-    new "1024x768 (4:3)"
+    new "选择目标分辨率(当前为[config.screen_width]x[config.screen_height])"
 
     # game/screens.rpy:278
     old "Custom resolution"
-    new "Custom resolution"
+    new "自定义分辨率"
 
     # game/screens.rpy:278
     old "Cancel"
-    new "Cancel"
+    new "取消"
 
     # game/screens.rpy:380
     old "Return"
-    new "Return"
+    new "返回"
 
     # game/screens.rpy:382
     old "Game settings"
-    new "Game settings"
+    new "游戏设置"
 
     # game/screens.rpy:383
     old "Achievements"
-    new "Achievements"
+    new "成就"
 
     # game/screens.rpy:385
     old "Save Game"
-    new "Save Game"
+    new "保存游戏"
 
     # game/screens.rpy:387
     old "Main Menu"
-    new "Main Menu"
-
-    # game/screens.rpy:470
-    old "{#file_time}%A, %B %d, %H:%M"
-    new "{#file_time}%A, %B %d, %H:%M"
+    new "标题菜单"
 
     # game/screens.rpy:470
     old "empty slot"
-    new "empty slot"
+    new "空存档位"
 
     # game/screens.rpy:490
     old "Previous"
-    new "Previous"
+    new "上一页"
 
     # game/screens.rpy:495
     old "Auto"
-    new "Auto"
+    new "自动"
 
     # game/screens.rpy:499
     old "Next"
-    new "Next"
+    new "下一页"
 
     # game/screens.rpy:503
     old "Quick"
-    new "Quick"
+    new "快速"
 
     # game/screens.rpy:612
     old "Display"
-    new "Display"
+    new "显示"
 
     # game/screens.rpy:613
     old "Window"
-    new "Window"
+    new "窗口"
 
     # game/screens.rpy:614
     old "Fullscreen"
-    new "Fullscreen"
+    new "全屏"
 
     # game/screens.rpy:620
     old "Transitions"
-    new "Transitions"
+    new "忽略转场"
 
     # game/screens.rpy:621
     old "All"
-    new "All"
+    new "全部"
 
     # game/screens.rpy:622
-    old "None"
-    new "None"
+    old "None."
+    new "无"
 
     # game/screens.rpy:628
     old "Text Speed"
-    new "Text Speed"
+    new "文字速度"
 
     # game/screens.rpy:635
     old "Joystick..."
-    new "Joystick..."
+    new "手柄..."
 
     # game/screens.rpy:643
     old "Skip"
-    new "Skip"
+    new "快进"
 
     # game/screens.rpy:644
     old "Seen Messages"
-    new "Seen Messages"
+    new "已查看消息"
 
     # game/screens.rpy:645
     old "All Messages"
-    new "All Messages"
+    new "所有消息"
 
     # game/screens.rpy:651
     old "Begin Skipping"
-    new "Begin Skipping"
+    new "开始跳过"
 
     # game/screens.rpy:657
     old "After Choices"
-    new "After Choices"
+    new "选项后继续"
 
     # game/screens.rpy:658
     old "Stop Skipping"
-    new "Stop Skipping"
+    new "停止跳过"
 
     # game/screens.rpy:659
     old "Keep Skipping"
-    new "Keep Skipping"
+    new "继续跳过"
 
     # game/screens.rpy:665
     old "Auto-Forward Time"
-    new "Auto-Forward Time"
+    new "自动前进时间"
 
     # game/screens.rpy:669
     old "Wait for Voice"
-    new "Wait for Voice"
+    new "等待语音"
 
     # game/screens.rpy:676
     old "Music Volume"
-    new "Music Volume"
+    new "音乐音量"
 
     # game/screens.rpy:683
     old "Sound Volume"
-    new "Sound Volume"
+    new "音效音量"
 
     # game/screens.rpy:687
     old "Test"
-    new "Test"
+    new "测试"
 
     # game/screens.rpy:696
     old "Voice Volume"
-    new "Voice Volume"
+    new "语音音量"
 
     # game/screens.rpy:699
     old "Voice Sustain"
-    new "Voice Sustain"
+    new "语音持续"
 
     # game/screens.rpy:761
     old "Yes"
-    new "Yes"
+    new "确定"
 
     # game/screens.rpy:762
     old "No"
-    new "No"
+    new "取消"
 
     # game/screens.rpy:790
     old "Back"
-    new "Back"
+    new "回退"
 
     # game/screens.rpy:791
     old "Save"
-    new "Save"
+    new "保存"
 
     # game/screens.rpy:792
     old "Q.Save"
-    new "Q.Save"
+    new "快速保存"
 
     # game/screens.rpy:793
     old "Q.Load"
-    new "Q.Load"
+    new "快速读取"
 
     # game/screens.rpy:795
     old "F.Skip"
-    new "F.Skip"
+    new "快进"
 
     # game/screens.rpy:797
     old "Prefs"
-    new "Prefs"
+    new "设置"
 
+    # game/screens.rpy:238
+    old "For updates, bug reports, and discussion: [URL]"
+    new "更新、错误报告及讨论: [URL] \n AI汉化-By JulienSlink-使用Claude3Sonnet \n 翻译报错或改进请联系julienslink@outlook.com/TG:@JulienSlink"
+
+    # game/screens.rpy:524
+    old "{i}Screen made\n by OhWee{/i}"
+    new "{i}屏幕由 \n OhWee 制作{/i}"
+
+    # game/screens.rpy:657
+    old "Language"
+    new "语言"
+
+    # game/screens.rpy:658
+    old "English"
+    new "英文"
+
+###########################################################
+#  ________  ________  ________        ___  ________      #
+# |\   __  \|\   __  \|\   __  \      |\  \|\_____  \     #
+# \ \  \|\  \ \  \|\  \ \  \|\  \     \ \  \\|___/  /|    #
+#  \ \   ____\ \   _  _\ \  \\\  \  __ \ \  \   /  / /    #
+#   \ \  \___|\ \  \\  \\ \  \\\  \|\  \\_\  \ /  /_/__   #
+#    \ \__\    \ \__\\ _\\ \_______\ \________\\________\ #
+#     \|__|     \|__|\|__|\|_______|\|________|\|_______| #
+#                                                         #
+#  This rpy file is generated by the project:             #
+#  https://github.com/abse4411/projz_renpy_translation    #
+###########################################################

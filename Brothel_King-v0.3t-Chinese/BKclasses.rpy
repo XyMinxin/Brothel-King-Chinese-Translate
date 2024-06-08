@@ -297,7 +297,7 @@ init -2 python:
 
             if goals:
                 if channel == "advance":
-                    return __("{size=-1}To advance to the next chapter, ") + and_text(goals) + ".{/size}"
+                    return __("{size=-1}进入下一章, ") + and_text(goals) + ".{/size}"
                 else:
                     return "{size=-1}" + and_text(goals) + "{/size}"
             else:
@@ -2579,18 +2579,18 @@ init -2 python:
             msg = ""
 
             if short:
-                msg += __("Advertising: ") + brothel.count_customers_description(short=True)
+                msg += __("广告宣传: ") + brothel.count_customers_description(short=True)
 
-                msg += __("\nSecurity: The threat level is ") + self.estimate_threat_level(contrast=False) + "."
+                msg += __("\n安全保障:威胁级别为 ") + self.estimate_threat_level(contrast=False) + "."
 
-                msg += __("\nMaintenance: ") + __(maintenance_desc[self.get_cleanliness()])
+                msg += __("\n家政清洁: ") + __(maintenance_desc[self.get_cleanliness()])
 
             else:
-                msg += __("Advertising report: ") + brothel.count_customers_description()
+                msg += __("广告宣传报告: ") + brothel.count_customers_description()
 
-                msg += __(".\n\nSecurity report: The threat to your brothel is ") + self.estimate_threat_level(contrast=True) + "."
+                msg += __(".\n\n安全报告:你的妓院面临的威胁是 ") + self.estimate_threat_level(contrast=True) + "."
 
-                msg += __("\n\nMaintenance report: ") + __(maintenance_desc[self.get_cleanliness()])
+                msg += __("\n\n家政清洁报告: ") + __(maintenance_desc[self.get_cleanliness()])
 
             return msg
 

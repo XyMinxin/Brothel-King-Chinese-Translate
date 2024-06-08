@@ -94,18 +94,18 @@ label quick_start:
     if debug_mode != "quick" and starting_chapter in (1, 6):
 
         menu:
-            "What will you use as a front for your business?"
+            "你会用什么作为你生意的幌子?"
 
-            "A tavern":
+            "零点酒吧":
                 $ brothel.add_room("tavern", forced=True)
 
-            "A dance club":
+            "激情夜店":
                 $ brothel.add_room("strip club", forced=True)
 
-            "A bath house":
+            "露天温泉":
                 $ brothel.add_room("onsen", forced=True)
 
-            "An okiya (geisha house)":
+            "花坊剧场":
                 $ brothel.add_room("okiya", forced=True)
 
         $ brothel.free_room = False

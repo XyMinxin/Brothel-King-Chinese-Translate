@@ -146,7 +146,7 @@ init -2 python:
 
         def upgrade(self):
             if MC.gold < self.get_price():
-                return False, "你没有足够的钱去扩大" + inst.name + "！别再浪费我的时间！"
+                return False, "你没有足够的钱去扩大" + self.name + "！别再浪费我的时间！"
             elif self.rank >= 5:
                 return False, "这个" + self.name + "无法再扩大了"
             elif self.rank >= district.rank:
@@ -1257,7 +1257,7 @@ init -2 python:
 
                 if logging:
                     for girl in excess_girls:
-                        log.add_report(girl.fullname + " 无法在 " + inst.name + " 训练，因为没有更多的仆从.")
+                        log.add_report(girl.fullname + " 无法在 " + self.name + " 训练，因为没有更多的仆从.")
 
                 unassigned += excess_girls
 
@@ -1276,13 +1276,13 @@ init -2 python:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + inst.name + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + self.name + "训练.")
                         break
                     elif inst.count_free_minions() > 1:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + inst.name + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + self.name + "训练.")
                         break
 
             for inst in self.installations.values():

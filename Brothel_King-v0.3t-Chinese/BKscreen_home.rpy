@@ -24,12 +24,12 @@ screen right_menu():
 
                 vbox spacing 6:
                     # Count of girls in Brothel
-                    text __("In brothel: {b}{size=+4}") + str(len(MC.girls)) + "{/size}{/b} /" + str(brothel.bedrooms) size res_font(12)
+                    text __("在青楼里的女孩有: {b}{size=+4}") + str(len(MC.girls)) + "{/size}{/b} /" + str(brothel.bedrooms) size res_font(12)
                     # Count of working girls
-                    text __("Working today: {b}{size=+4}") + str(sum(1 for g in MC.girls if g.works_today())) + "{/size}{/b} /" + str(len(MC.girls)) size res_font(12)
+                    text __("今晚工作的女孩有: {b}{size=+4}") + str(sum(1 for g in MC.girls if g.works_today())) + "{/size}{/b} /" + str(len(MC.girls)) size res_font(12)
                     # Count of girls in farm
                     if farm.active:
-                        text __("In farm: {b}{size=+4}") + str(len(farm.girls)) + "{/size}{/b} /" + str(farm.pens) size res_font(12)
+                        text __("在农场里有: {b}{size=+4}") + str(len(farm.girls)) + "{/size}{/b} /" + str(farm.pens) size res_font(12)
 
         # Right menu frame
 
@@ -132,7 +132,7 @@ screen right_menu():
                     xsize 0.125
                 else:
                     xsize 0.2
-                textbutton __("{b}Current goal{/b}\n{i}{size=-2}") + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
+                textbutton __("{b}当前目标{/b}\n{i}{size=-2}") + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
                     action NullAction()
                     hovered Show("goal_ttip", transition=Dissolve(0.15))
                     unhovered Hide("goal_ttip", transition=Dissolve(0.15))
@@ -147,7 +147,7 @@ screen right_menu_mc():
         # Display alert for level up
         if MC.skill_points > 0 and persistent.home_screen_notifications != 2:
 
-            button style "rm_alert" action NullAction() tooltip "Your character is ready to level up." hovered SetDict(seen_alerts, "MC", True):
+            button style "rm_alert" action NullAction() tooltip "你的角色可以升级了." hovered SetDict(seen_alerts, "MC", True):
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
 
                 if not seen_alerts["MC"] and persistent.home_screen_notifications == 0:
@@ -157,22 +157,22 @@ screen right_menu_mc():
             text ""
 
         # Define tool tip text for hover on MC button
-        $ ttip = __("Access your main character, items and spells.\nYou are a {color=[c_steel]}{b}Level [MC.level] [MC.playerclass]{/b}{/color}") + __(". You currently have ")
+        $ ttip = __("查看你的状态、装备的道具和已掌握的能力。\n你是一位 {color=[c_steel]}{b}等级 [MC.level]的 [MC.playerclass]{/b}{/color}") + __(". 你目前激活了 ")
         #$ ttip = __("Access your main character, items and spells.\nYou are a level ") + str(MC.level) + " " + __(MC.playerclass) + __(". You currently have ")
         $ active_spells = len([1 for s in MC.active_spells if s.type!="passive"])
         $ auto_spells = len([1 for s in MC.known_spells if s.auto])
 
         if active_spells:
-            $ ttip += str(active_spells) + __(" active spell") + plural(active_spells)
+            $ ttip += str(active_spells) + __(" 可用法术") + plural(active_spells)
         else:
-            $ ttip += __("no active spells")
+            $ ttip += __("不可用法术")
 
         if auto_spells:
-            $ ttip += __(" and ") + str(auto_spells) + __(" auto-cast spell") + plural(auto_spells) + "."
+            $ ttip += __(" 和 ") + str(auto_spells) + __(" 自动施放的法术") + plural(auto_spells) + "."
         else:
             $ ttip += "."
 
-        textbutton "{u}C{/u}haracter" style_group "rm":
+        textbutton "{u}C{/u}角色状态" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -302,7 +302,7 @@ screen right_menu_slavemarket():
     hbox xalign 1.0 spacing 20:
         if slavemarket.updated and persistent.home_screen_notifications != 2:
             button style "rm_alert" action NullAction() hovered SetDict(seen_alerts, "slavemarket", True):
-                tooltip __("New slaves are available at the market.")
+                tooltip __("新的奴隶可以在市场上买到.")
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["slavemarket"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -327,7 +327,7 @@ screen right_menu_shop():
     hbox xalign 1.0 spacing 20:
         if shop.updated and persistent.home_screen_notifications != 2:
             button style "rm_alert" action NullAction() hovered SetDict(seen_alerts, "shop", True):
-                tooltip __("New items are available.")
+                tooltip __("有新商品可以买.")
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["shop"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -361,7 +361,7 @@ screen right_menu_postings():
             text_size res_font(20)
 
             action Return("postings")
-            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" class{/b}{/color} and {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" quest{/b}{/color} are currently available.")
+            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" 个培训班") + __("{/b}{/color} 和 {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" 个合同") + plural(len(quest_board.quests)) + __("{/b}{/color} 目前可用的.")
 
 
 ################
@@ -395,7 +395,7 @@ screen right_menu_endday():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton "{u}E{/u}nd Day" style_group "rm":
+        textbutton "{u}E{/u}开始营业" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -413,7 +413,7 @@ screen right_menu_advance():
             hbox xalign 1.0 spacing 20:
                 text ""
 
-                textbutton "Advance" text_size res_font(20) style_group "rm":
+                textbutton "进入下一章" text_size res_font(20) style_group "rm":
 
                     xalign 1.0
 
@@ -422,9 +422,9 @@ screen right_menu_advance():
                     if MC.has_gold(blist[game.chapter+1].cost):
                         action Return("advance")
                     else:
-                        action Function(renpy.notify, "You do not have enough gold to advance.")
+                        action Function(renpy.notify, "你没有足够的金币进入下一章.")
 
-                    tooltip __("Advance to the next game chapter, at the cost of %s gold.") % '{:,}'.format(blist[game.chapter+1].cost)
+                    tooltip __("花费 %s 金币,进入到下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
 
 
 
