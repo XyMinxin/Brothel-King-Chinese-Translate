@@ -4067,7 +4067,7 @@ screen brothel():
                                         textbutton ">" xsize xres(75) xalign 1.0:
                                             if len(MC.trainers) > 1:
                                                 action Function(MC.cycle_trainers)
-                                                tooltip "Change trainer."
+                                                tooltip "next trainer."
 
                                 vbox:
                                     text "{b}" + MC.current_trainer.cname + "{/b}" size res_font(18) xalign 0.5
