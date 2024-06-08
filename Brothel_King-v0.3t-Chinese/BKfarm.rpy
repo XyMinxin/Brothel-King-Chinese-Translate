@@ -146,17 +146,17 @@ init -2 python:
 
         def upgrade(self):
             if MC.gold < self.get_price():
-                return False, "你没有足够的钱去扩大" + self.name + "！别再浪费我的时间！"
+                return False, "你没有足够的钱去扩大" + farm_related_dict[self.name] + "！别再浪费我的时间！"
             elif self.rank >= 5:
-                return False, "这个" + self.name + "无法再扩大了"
+                return False, "这个" + farm_related_dict[self.name] + "无法再扩大了"
             elif self.rank >= district.rank:
-                return False, "继续扩大" + self.name + "会引来许多不必要的麻烦，什么时候等你有更高级的营业执照，再来找我谈扩张的事吧"
-            elif renpy.call_screen("yes_no", "你真的想要升级" + self.name + "吗？这将花费" + str(self.get_price()) + "金币"):
+                return False, "继续扩大" + farm_related_dict[self.name] + "会引来许多不必要的麻烦，什么时候等你有更高级的营业执照，再来找我谈扩张的事吧"
+            elif renpy.call_screen("yes_no", "你真的想要升级" + farm_related_dict[self.name] + "吗？这将花费" + str(self.get_price()) + "金币"):
                 MC.gold -= self.get_price()
                 self.rank += 1
                 renpy.play(s_gold, "sound")
                 unlock_pic(self.pic.path)
-                return True, "这个" + self.name + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " " + self.minion_type + "."
+                return True, "这个" + farm_related_dict[self.name] + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " " + self.minion_type + "."
             else:
                 return False, ""
 
@@ -1257,7 +1257,7 @@ init -2 python:
 
                 if logging:
                     for girl in excess_girls:
-                        log.add_report(girl.fullname + " 无法在 " + self.name + " 训练，因为没有更多的仆从.")
+                        log.add_report(girl.fullname + " 无法在 " + farm_related_dict[self.name] + " 训练，因为没有更多的仆从.")
 
                 unassigned += excess_girls
 
@@ -1276,13 +1276,13 @@ init -2 python:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + self.name + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[self.name] + "训练.")
                         break
                     elif inst.count_free_minions() > 1:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + self.name + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[self.name] + "训练.")
                         break
 
             for inst in self.installations.values():

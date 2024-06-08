@@ -6654,7 +6654,7 @@ screen farm_tab():
                                     text str(inst.rank) + "{size=-8}/" + str(district.rank) xalign 0.9 yalign 0.1
 
                                 if inst.rank > 0:
-                                    text inst.name.capitalize() size res_font(14) xcenter 0.5
+                                    text farm_related_dict[inst.name.capitalize()] size res_font(14) xcenter 0.5
                                 else:
                                     text "???" size res_font(14) xcenter 0.5
 
