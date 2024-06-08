@@ -18134,8 +18134,7 @@ label meet_katryn():
 
     katryn "This place has got all the books I need to complete my experiments! It's a lot more efficient this way."
 
-    katryn "Until someone invents a way to share knowledge over long distance using some kind of personal terminals that can compute data or something,
-            this has to be the best way."
+    katryn "Until someone invents a way to share knowledge over long distance using some kind of personal terminals that can compute data or something, this has to be the best way."
 
     katryn "But everyone knows this is just a pipe dream: the second you'd invent that, it would be overloaded with porn and penis enlargement ads...."
 

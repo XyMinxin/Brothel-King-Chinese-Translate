@@ -297,7 +297,7 @@ init -2 python:
 
             if goals:
                 if channel == "advance":
-                    return __("{size=-1}To advance to the next chapter, ") + and_text(goals) + ".{/size}"
+                    return __("{size=-1}进入下一章, ") + and_text(goals) + ".{/size}"
                 else:
                     return "{size=-1}" + and_text(goals) + "{/size}"
             else:
