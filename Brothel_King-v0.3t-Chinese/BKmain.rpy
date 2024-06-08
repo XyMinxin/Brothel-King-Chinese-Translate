@@ -1036,8 +1036,7 @@ label girls_first_time:
                     else:
                         call dialogue(girl, "refuse whoring") from _call_dialogue_91
 
-                        sill sad "You cannot make her a whore in her current state, you know. She'll run
-                                  away or harm a customer."
+                        sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
 
                         if help_tips["whore"]:
                             sill happy "Would you like to learn more about training your girls to become whores?"
@@ -1183,8 +1182,7 @@ label girls_loop():
                         with Dissolve(0.15)
                         call dialogue(girl, "refuse whoring") from _call_dialogue_94
 
-                        sill sad "You cannot make her a whore in her current state, you know. She'll run
-                                  away or harm a customer."
+                        sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
 
                         if help_tips["whore"]:
 
@@ -1254,8 +1252,7 @@ label girls_loop():
                                 if not girl.will_do("whore"):
                                     call dialogue(girl, "refuse whoring") from _call_dialogue_95
 
-                                    sill sad "You cannot make her a whore in her current state, you know. She'll run
-                                              away or harm a customer."
+                                    sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
 
                                     if help_tips["whore"]:
 
@@ -1676,11 +1673,9 @@ label shop:
 
         shopgirl "Oh, a new customer! Lovely! And handsome at that, too..."
 
-        shopgirl "Old man Gio told me you'd be coming soon. You and I are going to become the best of friends,
-        I'm sure... *wink*"
+        shopgirl "Old man Gio told me you'd be coming soon. You and I are going to become the best of friends, I'm sure... *wink*"
 
-        shopgirl "We sell all kinds of mundane and rare items here, from all over Xeros. Come back
-        often, we have regular arrivals."
+        shopgirl "We sell all kinds of mundane and rare items here, from all over Xeros. Come back often, we have regular arrivals."
 
         $ shop_firstvisit = False
 
