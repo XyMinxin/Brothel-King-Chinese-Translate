@@ -2186,7 +2186,7 @@ label main_first_time:
 
     $ room = rand_choice(brothel.get_common_rooms())
 
-    $ renpy.show("bg " + room.name, at_list = [top])
+    $ renpy.show("bg " + bgroom_pics[room.name], at_list = [top])
     with dissolve
 
     gio "Tadaaa!"

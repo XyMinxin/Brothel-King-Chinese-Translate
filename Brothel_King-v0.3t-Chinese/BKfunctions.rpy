@@ -934,10 +934,10 @@ init -3 python:
 
             if nb:
                 if stat in ("rep", "reputation"):
-                    text_changes += __("Girl reputation: ") + plus_text(nb, color_scheme="rep", decimals=1)
+                    text_changes += __("声誉: ") + plus_text(nb, color_scheme="rep", decimals=1)
 
                 elif stat == "gold":
-                    text_changes += __("Gold: {image=img_gold} ") + plus_text(round_int(nb), color_scheme="gold")
+                    text_changes += __("金币: {image=img_gold} ") + plus_text(round_int(nb), color_scheme="gold")
 
                 else:
                     text_changes += __("%s: " % stat_name_dict[stat.capitalize()]) + plus_text(round_int(nb), color_scheme="standard")
@@ -1108,12 +1108,12 @@ init -3 python:
                 notify("%s: Assault attempt" % girl.fullname, pic=girl.portrait)
                 crazy_changes.add("Assault attempt", "header")
 
-                violent_text = __(cust.name) + __(" went berserk and attacked ") + girl.name + __(" all of a sudden!")
-                violent_report = __("Security alert! Violent customer.")
+                violent_text = __(cust.name) + __(" 陷入癫狂,攻击了 ") + girl.name + __(" 电光火石之间!")
+                violent_report = __("意外事件! 有人施暴.")
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
 #                   reward = (cust.diff  + dice(cust.diff)) * district.rank
-                    violent_text += "\n{color=[c_green]}Fortunately, your security is close at hand. They quickly gang up on him and proceed to beat the crap out of his sorry ass.\n{/color}Your girl is safe, and you pocket the content of his wallet: %s gold." % str(cust.ent_budget)
+                    violent_text += "\n{color=[c_green]}幸运的是，你的保镖就在身边。他们很快联合起来对付他，把他打得屁滚尿流.\n{/color}你的女孩很安全，而你却把他钱包里的东西装进了口袋: %s 金币." % str(cust.ent_budget)
                     violent_report = "{color=[c_green]}" + violent_report + " Your guards beat him up (%s gold earned).{/color}" % str(cust.ent_budget)
                     MC.gold += cust.ent_budget
                     girl.change_mood(1)
@@ -3820,7 +3820,7 @@ init -3 python:
 
         global mod_traceback
 
-        mod_traceback += "Updating mods... "
+        mod_traceback += "更新 mods... "
 
         # Checks if existing/active mods have been disabled
 
@@ -3833,8 +3833,8 @@ init -3 python:
         for name in undetected_mods:
             del persistent.mods[name]
 
-            renpy.notify("Mod: " + name + " has been removed.")
-            mod_traceback += "\n" + "Mod: " + name + " has been removed."
+            renpy.notify("Mod: " + name + " 已被移除.")
+            mod_traceback += "\n" + "Mod: " + name + " 已被移除."
 
         # Checks new mods or new mod versions
 
@@ -3844,18 +3844,18 @@ init -3 python:
 
             if name not in persistent.mods.keys():
                 register_mod(mod)
-                renpy.notify(mod.full_name + " has been added.")
+                renpy.notify(mod.full_name + " 已添加.")
 
-                mod_traceback += "\n" + "Mod: " + name + " has been added."
+                mod_traceback += "\n" + "Mod: " + name + " 已添加."
 
             # Finding new version (basic checks: version number and events lenght)
 
             elif mod.check_for_updates():
 #                renpy.call_screen("OK_screen", title = mod.name + ": new version found", message = "A different version of this mod: " + mod.name + " has been found ([[mod.version]]). The mod has been reset.")
                 register_mod(mod)
-                renpy.notify(mod.full_name + " has been updated.")
+                renpy.notify(mod.full_name + " 已更新.")
                 mod.active = True
-                mod_traceback += "\n" + "Mod: " + name + " has been updated."
+                mod_traceback += "\n" + "Mod: " + name + " 已更新."
 
             # Activating mod if it exists
 
@@ -3863,7 +3863,7 @@ init -3 python:
                 mod.active = True
 #                if debug_mode:
 #                    renpy.notify(mod.full_name + " has been activated.")
-                mod_traceback += "\n" + "Mod: " + name + " has been activated."
+                mod_traceback += "\n" + "Mod: " + name + " 已激活."
 
         # persistent.mods should now be updated to reflect all currently available mods
 
@@ -3873,7 +3873,7 @@ init -3 python:
 
         persistent.mods[mod.name] = {"version" : mod.version, "check" : mod.get_check(), "active" : mod.active}
 
-        mod_traceback += "\n" + "Mod: " + mod.name + " has been registered."
+        mod_traceback += "\n" + "Mod: " + mod.name + " 已注册."
 
 #     def reset_mod(mod): # No longer required
 
@@ -3916,7 +3916,7 @@ init -3 python:
 
     def get_next_day_report(): # Compiles Yesterday's report for the Brothel screen
 
-        msg = __("You have ") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __(" in your brothel (max ") + str(brothel.bedrooms) + ").\n\n"
+        msg = __("你有 ") + str(len(MC.girls)) + __(" 女孩") + plural(len(MC.girls)) + __(" 在你的妓院里 (容量上限 ") + str(brothel.bedrooms) + ").\n\n"
 
         working_girls = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True))
         waitresses = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True) and girl.job == "waitress")
@@ -3927,32 +3927,32 @@ init -3 python:
         away = sum(1 for girl in MC.girls if girl.away)
         resting = sum(1 for girl in MC.girls if not girl.works_today(check_autorest=True) and not girl.away)
 
-        msg += str(working_girls) + __(" girl") + plural(working_girls) + __(" will be working tonight.")
+        msg += str(working_girls) + __(" 女孩") + plural(working_girls) + __(" 今晚将会工作.")
 
-        msg += "\n{size=-2}" + __("- Waitress: ") + event_color["good"] % str(waitresses) + "\n"
-        msg += __("- Dancer: ") + event_color["good"] % str(dancers) + "\n"
-        msg += __("- Masseuse: ") + event_color["good"] % str(masseuses) + "\n"
-        msg += __("- Geisha: ") + event_color["good"] % str(geishas) + "\n"
-        msg += __("- Whore: ") + event_color["good"] % str(whores) + "\n{/size}\n"
+        msg += "\n{size=-2}" + __("- 服务员: ") + event_color["good"] % str(waitresses) + "\n"
+        msg += __("- 舞娘: ") + event_color["good"] % str(dancers) + "\n"
+        msg += __("- 按摩师: ") + event_color["good"] % str(masseuses) + "\n"
+        msg += __("- 艺妓: ") + event_color["good"] % str(geishas) + "\n"
+        msg += __("- 妓女: ") + event_color["good"] % str(whores) + "\n{/size}\n"
 
         if away > 1:
-            msg += str(away) + __(" are away on a quest or class.\n\n")
+            msg += str(away) + __(" 正在外出执行任务或参加培训.\n\n")
         elif away > 0:
-            msg += str(away) + __(" is away on a quest or class.\n\n")
+            msg += str(away) + __(" 正在外出执行任务或参加培训.\n\n")
 
-        msg += str(resting) + __(" girl") + plural(resting) + __(" will be resting at the brothel tonight.\n\n")
+        msg += str(resting) + __(" 女孩") + plural(resting) + __(" 今晚会在妓院休息.\n\n")
 
         if farm.active:
             farm_training = sum(1 for girl in farm.girls if farm.programs[girl].target != "no training")
             farm_holding = sum(1 for girl in farm.girls if farm.programs[girl].target == "no training" and farm.programs[girl].holding != "rest")
             farm_resting = sum(1 for girl in farm.girls if farm.programs[girl].target == "no training" and farm.programs[girl].holding == "rest")
 
-            msg += str(len(farm.girls)) + __(" girl") + plural(len(farm.girls)) + __(" will be at the farm tonight.")
+            msg += str(len(farm.girls)) + __(" 女孩") + plural(len(farm.girls)) + __(" 今晚会在农场.")
 
-            msg += "\n{size=-2}" + __("- In training: ") + event_color["good"] % str(farm_training) + "\n"
-            msg += __("- In holding: ") + event_color["good"] % str(farm_holding) + "\n{/size}\n"
+            msg += "\n{size=-2}" + __("- 训练中: ") + event_color["good"] % str(farm_training) + "\n"
+            msg += __("- 关押中: ") + event_color["good"] % str(farm_holding) + "\n{/size}\n"
 
-            msg += str(farm_resting) + __(" girl") + plural(farm_resting) + __(" will be resting at the farm tonight.")
+            msg += str(farm_resting) + __(" 女孩") + plural(farm_resting) + __(" 今晚会在农场休息.")
 
         return msg
 
@@ -3970,7 +3970,7 @@ init -3 python:
 
         for girl in MC.girls:
             if girl.run_away_check():
-                msg += event_color["a little bad contrast"] % (__("Warning! ") + girl.fullname + __(" 抱怨着她要离开这里.\n"))
+                msg += event_color["a little bad contrast"] % (__("警告! ") + girl.fullname + __(" 抱怨着她要离开这里.\n"))
 
         # Tired and hurt girls
 

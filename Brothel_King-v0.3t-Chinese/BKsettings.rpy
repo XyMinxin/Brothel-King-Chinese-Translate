@@ -1306,6 +1306,15 @@ init -10 python:
                 "皇室寝宫" : "master/master4.webp",
                 "后宫三千" : "master/master5.webp",
                 }
+    bgroom_pics = {
+                #修复序章选过营业后内容后，背景图不显示
+                "零点酒吧" : "tavern",
+                "激情夜店" : "strip club",
+                "露天温泉" : "onsen",
+                "花坊剧场" : "okiya",
+    }
+
+            
 
     night_pics = ["night.webp",]
 
