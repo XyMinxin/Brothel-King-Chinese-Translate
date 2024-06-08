@@ -586,6 +586,13 @@ init python:
                      "geisha" : "okiya",
                      "whore" : "bedroom"
                      }
+# 根据职业选择中文地址
+    cnjob_room_dict = {"waitress" : "酒吧",
+                     "dancer" : "夜店",
+                     "masseuse" : "温泉",
+                     "geisha" : "艺伎馆",
+                     "whore" : "卧室"
+                     }                 
 
     room_capacity_dict = {0 : 4, 1 : 4, 2 : 6, 3 : 8, 4 : 10, 5 : 12, 6 : 14, 7 : 16}
 
