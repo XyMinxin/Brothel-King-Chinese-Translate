@@ -6802,7 +6802,7 @@ init -2 python:
         """A new Moon appears every month. They have an effect on gameplay."""
 
         def __init__(self, name, effects=None, description="", sound=None):
-            self.name = name.capitalize() + " Moon"
+            self.name = name.capitalize() + " 月相"
             self.pic = Picture(name + ".webp", "backgrounds/moons/" + name + ".webp")
             self.tb = ProportionalScale("backgrounds/moons/%s tb.webp" % name, *res_tb(25))
             if effects == None: effects = []

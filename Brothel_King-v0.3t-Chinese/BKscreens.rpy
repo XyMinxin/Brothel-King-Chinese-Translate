@@ -242,7 +242,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
-                text "No guild fee is due." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
+                text "没有公会费." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
 
 
 screen tax_tab(fade=False):

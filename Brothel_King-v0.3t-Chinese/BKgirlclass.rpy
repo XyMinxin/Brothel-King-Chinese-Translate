@@ -2538,16 +2538,16 @@ init -2 python:
             else:
                 col = c_red
 
-            resting_changes.add("Energy: %s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
+            resting_changes.add("体力: %s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
 
             if case == "recovered":
                 resting_changes.add("(fully rested)", "header", col="good", separator="\n")
                 if context == "farm":
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and can go back to her training.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息了，可以继续训练了.{/color}"
                 elif self.job:
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and can go back to work as a " + self.job + ".{/color}"
+                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息好了，可以回去工作了 " + self.job + ".{/color}"
                 else:
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and is waiting for a job assignment.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息好了，正在等待分配工作.{/color}"
 
             return resting_text, resting_changes
 
@@ -2583,7 +2583,7 @@ init -2 python:
             stat = self.find_stat(stat_name)
 
             if stat == False: # wrong stat name
-                raise AssertionError(stat_name + " is not a valid stat/skill name. Accepted: " + and_text(["defense", "strength", "energy"] + [s.name.lower() for s in (self.stats+self.sex_stats)]))
+                raise AssertionError(stat_name + " 不是一个有效的属性/技能名称. 正确的: " + and_text(["defense", "strength", "energy"] + [s.name.lower() for s in (self.stats+self.sex_stats)]))
 
             result = stat.value + eff
 
@@ -2755,7 +2755,7 @@ init -2 python:
             if self.get_effect("special", "shield", raw=True):
 
                 self.remove_effects(shield_effect)
-                notify(self.name + " was protected by a magic shield", pic=self.portrait)
+                notify(self.name + " 被魔法护盾保护着", pic=self.portrait)
                 renpy.pause(0.5)
 
                 return True
@@ -2764,7 +2764,7 @@ init -2 python:
 
                 spl = MC.has_spell(bshield_spell)
 
-                notify(self.name + " was protected by a magic shield", pic=self.portrait)
+                notify(self.name + " 被魔法护盾保护着", pic=self.portrait)
                 renpy.pause(0.5)
 
                 if spl:
@@ -3317,7 +3317,7 @@ init -2 python:
 
             if self.rank < district.rank:
 
-                if self.rep >= rep_to_rank[self.rank] * self.get_effect("boost", "new rank reputation requirement") and self.level >= self.rank * 5:
+                if self.rep >= rep_to_rank[self.rank] * self.get_effect("boost", "新的等级声望要求") and self.level >= self.rank * 5:
 
                     return True
 
@@ -3362,13 +3362,13 @@ init -2 python:
             message = ""
 
             if not self.archetypes[perk.archetype].unlocked:
-                message += perk.archetype + " is locked for now.\n"
+                message += perk.archetype + " 暂时是锁定的.\n"
             elif val < perk.value:
-                message += str(perk.value) + " more perk must be unlocked first.\n"
+                message += str(perk.value) + " 更多的等级必须先解锁.\n"
             elif self.rank < perk.min_rank:
-                message += self.name + " must be rank " + rank_name[perk.min_rank] + " before she can acquire this perk.\n"
+                message += self.name + " 必须是等级 " + rank_name[perk.min_rank] + "的,在她获得这个特权之前.\n"
             elif points < 1:
-                message = self.name + " does not have enough points."
+                message = self.name + " 没有足够的天赋点."
             else:
                 return True, ""
 
@@ -3423,7 +3423,7 @@ init -2 python:
                     self.perks.append(p)
                     self.add_effects(p.effects)
 
-                    renpy.call_screen("OK_screen", title = p.name, message = self.name + " has learnt a new combo! " + p.description)
+                    renpy.call_screen("OK_screen", title = p.name, message = self.name + " 学会了一个新的组合! " + p.description)
 
 
 
@@ -3461,9 +3461,9 @@ init -2 python:
 
             _min, _max = self.get_stat_minmax("rep")
 
-            boost = self.get_effect("boost", "reputation gains") * game.get_diff_setting("rep")
+            boost = self.get_effect("boost", "声誉收益") * game.get_diff_setting("rep")
 
-            boost += 0.05 * self.remembers("reward", "rank up") # Boosts REP is she was rewarded before
+            boost += 0.05 * self.remembers("reward", "晋级") # Boosts REP is she was rewarded before
 
             boost = reverse_if(boost, chg)
 
@@ -4206,7 +4206,7 @@ init -2 python:
                 else: # Can no longer work as a whore
                     if self.job == "whore":
                         self.job = None
-                        notify("%s cannot work as a whore anymore." % self.fullname, pic=self.portrait)
+                        notify("%s 不能再当妓女了." % self.fullname, pic=self.portrait)
 
                     # raise AssertionError("No sex act activated")
 
@@ -4809,10 +4809,10 @@ init -2 python:
 
         def get_personality_description(self, show="personality"):
 
-            des = "{b}" + self.fullname + "'s "
+            des = "{b}" + self.fullname + " "
 
             if show == "personality":
-                des += "personality{/b}{size=-1}\n\n"
+                des += "个性{/b}{size=-1}\n\n"
 
                 ei = self.personality_unlock["EI"]
                 mi = self.personality_unlock["MI"]
@@ -4824,17 +4824,17 @@ init -2 python:
 #                lm = 100
 #                ds = 100
 
-                des += self.name + " is a "
+                des += self.name + " 是一个 "
 
                 if self.free and self in MC.girls + farm.girls:
-                    des += "former free girl"
+                    des += "曾经自由的女孩"
                 elif self.free:
-                    des += "free girl"
+                    des += "自由的女孩"
                 else:
-                    des += "slave"
+                    des += "奴隶"
 
                 if self.personality_unlock["origin"]:
-                    des += " from " + self.origin
+                    des += " 来自 " + self.origin
 
                 des += ". "
 
@@ -4845,11 +4845,11 @@ init -2 python:
                 elif self.flags["story"] < 50:
                     des += "你对她的情况有些了解."
                 elif self.flags["story"] < 100:
-                    des += "她告诉了你她的故事, but you haven't done anything about it yet."
+                    des += "她告诉了你她的故事, 但你什么都没做."
                 elif self.flags["MC refused story"]:
                     des += "你很了解她的身世."
                 else:
-                    des += "你很了解她的身世, and did something about it."
+                    des += "你很了解她的身世, 并为此做了一些事情."
 
                 des += "\n\n"
 
@@ -4905,7 +4905,7 @@ init -2 python:
 
             elif show == "tastes":
 
-                des += "tastes{/b}{size=-1}\n\n"
+                des += "她的喜好{/b}{size=-1}\n\n"
 
                 taste_text = ""
 
@@ -4971,7 +4971,7 @@ init -2 python:
 
             elif show == "sexual":
 
-                des += "sexuality{/b}\n\n"
+                des += "性癖{/b}\n\n"
 
                 sex_text = ""
 
