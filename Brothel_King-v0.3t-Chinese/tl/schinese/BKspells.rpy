@@ -1,6 +1,5 @@
 ﻿# # TODO: Translation updated at 2024-04- 1:30
-
- translate schinese strings:
+translate schinese strings:
 
      # game/BKspells.rpy:21
      old "Protects your girls from external threats with a magic barrier. Stops the next act of aggression against one of your girls before it happens. Lasts until the next attack."
@@ -58,14 +57,14 @@
 
 
     # game/BKspells.rpy:21
-    old "Summons a totemic beast that infuses your girls with supernatural power."
-    new "召唤一只灵兽，提升姑娘们床上的持久力。"
+     old "Summons a totemic beast that infuses your girls with supernatural power."
+     new "召唤一只灵兽，提升姑娘们床上的持久力。"
 
 
 
     # game/BKspells.rpy:21
-    old "Swift like a cobra."
-    new "你的反应快如闪电，动作灵活的像响尾蛇一般。"
+     old "Swift like a cobra."
+     new "你的反应快如闪电，动作灵活的像响尾蛇一般。"
 
 
 
