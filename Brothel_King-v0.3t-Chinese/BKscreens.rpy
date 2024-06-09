@@ -1796,7 +1796,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 if context == "slavemarket":
                     $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" 事先的训练可能会使女孩更适合性行为.")
-                    textbutton __("Prior training received:   {color=" + experienced_color[girl.sexual_experience] + "}") + __(experienced_description[girl.sexual_experience]) + "{/color}" ymargin yres(3) ypadding 0 text_color c_white text_size res_font(14) background None action NullAction() tooltip ttip
+                    textbutton __("性奴隶训练等级:   {color=" + experienced_color[girl.sexual_experience] + "}") + __(experienced_description[girl.sexual_experience]) + "{/color}" ymargin yres(3) ypadding 0 text_color c_white text_size res_font(14) background None action NullAction() tooltip ttip
 
 
                 vbox:
