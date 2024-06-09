@@ -2265,13 +2265,13 @@ init -3 python:
 
             if customers[0].wants_sex_act != customers[0].got_sex_act:
                 if len(customers) > 1:
-                    text_descript += __(perform_job_dict["group not satisfied"]) % customers[0].got_sex_act
+                    text_descript += __(perform_job_dict["群交不满意"]) % customers[0].got_sex_act
 
                 elif len(girls) > 1:
-                    text_descript += __(perform_job_dict["bisexual not satisfied"]) % customers[0].got_sex_act
+                    text_descript += __(perform_job_dict["百合不满意"]) % customers[0].got_sex_act
 
                 else:
-                    text_descript += __(perform_job_dict["not satisfied"])
+                    text_descript += __(perform_job_dict["不满意"])
 
         if entertainment_bonus < 0:
             text_descript += __("\n一些客户可能更愿意做其他的事情.")
@@ -2339,7 +2339,7 @@ init -3 python:
             elif act in all_sex_acts:
                 job_ttip = list_text([(a.capitalize() + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s changes" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级 %i %s.\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
+            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级 %i %s.\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2499,7 +2499,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个好色的顾客开始在 ") + __(job_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做.") % girl.name
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个好色的顾客开始在 ") + __(cnjob_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做.") % girl.name
 
                         r = girl.get_stat("libido") - dice(250)
 
@@ -2677,7 +2677,7 @@ init -3 python:
                         text1 += girl.name + __(" 脸红得通红 ") + __(long_act_description[s_act]) + __(". 让她看起来很不舒服。然而，她的乳头激凸，而且明显潮湿，明显一幅欲火中烧的样子. {color=[c_yellow]}她好像既喜欢又讨厌这样做.{/color}")
                         ev_sound = s_sigh
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_darkgold]}矛盾的{/color}。")
-                        chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, s_act.capitalize())
+                        chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, girl_related_dict[s_act])
 
                     elif pos_reaction:
                         if act == "service":
@@ -2690,13 +2690,13 @@ init -3 python:
                         text1 += __("\n{color=[c_green]}她似乎很喜欢 ") + __(long_act_description[s_act]) + ".{/color}"
                         ev_sound = s_mmmh
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_green]}敏感的{/color}。")
-                        chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, s_act.capitalize())
+                        chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, girl_related_dict[s_act])
 
                     elif neg_reaction:
                         text1 += girl.name + __(" 在") + plur + __("客户身边表现得很不自在, 似乎什么东西困扰着她. {color=[c_red]}她似乎不喜欢 ") + __(long_act_description[act]) + ".{/color}"
                         ev_sound = s_surprise
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_red]}不舒服的{/color}。")
-                        chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, s_act.capitalize())
+                        chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, girl_related_dict[s_act])
 
                     if pos_reaction or neg_reaction:
                         events.append(Event(pic = work_pic, char = girl.char, text = text1, changes=chg, sound = ev_sound, type = ev_type))
@@ -4054,7 +4054,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + __(" 来到青楼。他希望得到一个 ") + __(c.wants_entertainment) + __(" 并且喜欢 ") + __(c.wants_sex_act) + ".")
+            log.add_report(c.name + __(" 来到青楼。他希望得到一个 ") + __(girl_related_dict[c.wants_entertainment]) + __(" 并且喜欢 ") + __(girl_related_dict[c.wants_sex_act]) + ".")
 
         return cust_list, cust_text, cust_nb_dict
 
