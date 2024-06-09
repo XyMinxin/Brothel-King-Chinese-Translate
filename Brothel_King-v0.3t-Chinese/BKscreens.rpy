@@ -242,7 +242,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
-                text "没有公会费." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
+                text "无需缴纳公会费用." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
 
 
 screen tax_tab(fade=False):
@@ -271,7 +271,7 @@ screen tax_tab(fade=False):
                 $ due_date = "in %s days" % (8-calendar.day)
 
             vbox:
-                text "Guild Fee" bold True size res_font(14)
+                text "公会费用" bold True size res_font(14)
                 text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
 
 
@@ -491,9 +491,9 @@ screen girl_tab(girls, context="girls"):
         if game.has_active_mod("Headhunter Mod"):
             if game.headhunter_button_enabled:
                 key "shift_K_h" action Jump("headhunter_main")
-            $ textHH = "{u}猎头{/u}" #
+            $ textHH = "{u}猎头公司{/u}" #
 
-            $ textHH2 = "订购具有特定特性的从属产品以增加成本."
+            $ textHH2 = "订购具有特定特征的奴隶，以增加成本."
 
             if game.headhunter_button_enabled:
                 textbutton textHH:
@@ -699,7 +699,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
             $ text1 = __(girl.job.capitalize()) # text1 is displayed on the button next to girl name and portrait
             $ but_ttip = "{b}" + girl.fullname + "{/b} " + __(" 是一个 {0} 等级的 {1}.").format(__(str(girl.level)), __(girl_related_dict[girl.job]))
         else:
-            $ text1 = "无工作"
+            $ text1 = "休息"
             $ but_ttip = "{b}" + girl.fullname + __("{/b}正在休息.")
         $ text_col = job_color[girl.job]
         $ use_badge = True
@@ -715,18 +715,18 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     elif context == "farm":
         if farm.programs[girl].target != "no training":
             $ text1 = farm_related_dict[farm.programs[girl].target.capitalize()]
-            $ but_ttip = "{b}" + girl.fullname + "{/b}正在训练 (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场训练 (" + text1 + ")."
             $ text_col = c_orange
         else:
             $ text1 = farm_related_dict[farm.programs[girl].holding.capitalize()]
-            $ but_ttip = "{b}" + girl.fullname + "{/b}正在被关押 (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场待机 (" + text1 + ")."
             $ text_col = c_white
         $ use_badge = True
 
     elif context == "slavemarket":
         $ text1 = experienced_description[girl.sexual_experience]
         $ text2 = str(girl.get_price("buy")) + "金币"
-        $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + __(". 点击查看详细信息.")
+        $ but_ttip = "购买{b}" + girl.fullname + "{/b}, 需要" + text2 + __(". 点击查看详细信息.")
         $ text_col = experienced_color[girl.sexual_experience]
 
     if context == "powers":
@@ -2329,7 +2329,7 @@ screen button_overlay(girl, context="girls"):
             elif girl.hurt > 0:
                 $ text1 = "受伤"
                 if girl.hurt <= 1:
-                    $ ttip = __("This girl is hurt and will need to rest for 1 more day until she is ready to do anything.")
+                    $ ttip = __("这个女孩受伤了，需要再休息一天，直到她准备好做任何事情.")
                 else:
                     $ ttip = __("This girl is hurt and will need to rest for ") + str(round_int(girl.hurt)) + __(" more days until she is ready to do anything.")
 
