@@ -3960,7 +3960,7 @@ init -2 python:
                     text1 += __(str(val)) + " "
 
                 if self.target.endswith("preference") or self.target.endswith("preferences"):
-                    text1 += __(" to ")
+                    text1 += __(" 到 ")
 
             elif self.type == "change": # Temporary x effect (can be added or removed)
                 text1 += str(round_best(val, 2)) + __(" 到 ")
@@ -3983,7 +3983,7 @@ init -2 python:
                 text1 += str(round_int(val)) + " "
 
             elif self.type == "increase satisfaction":
-                text1 += str(round_int(val)) + __(" 使客户满意 ")
+                text1 += str(round_int(val)) + __(" 客户满意度限 ")
 
             if self.scope and not target.startswith(self.scope): # The second part handles the 'brothel rep' special case, although renaming brothel reputation to something different to avoid confusion with girl reputation would be a good long-term fix
                 #text1 += __(self.scope) + " "

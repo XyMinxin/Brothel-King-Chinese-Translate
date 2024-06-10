@@ -590,21 +590,21 @@ translate schinese strings:
     old "%s's sexual preferences"
     new " %s 的性偏好"
 
-    # game/BKscreens.rpy:6801
-    old "Act"
-    new "性行为"
+    # # game/BKscreens.rpy:6801
+    # old "Act"
+    # new "性行为"
 
-    # game/BKscreens.rpy:6802
-    old "Preference"
-    new "偏好"
+    # # game/BKscreens.rpy:6802
+    # old "Preference"
+    # new "偏好"
 
-    # game/BKscreens.rpy:6803
-    old "Will train"
-    new "训练意向"
+    # # game/BKscreens.rpy:6803
+    # old "Will train"
+    # new "训练意向"
 
-    # game/BKscreens.rpy:6804
-    old "Will work"
-    new "工作意向"
+    # # game/BKscreens.rpy:6804
+    # old "Will work"
+    # new "工作意向"
 
     # game/BKscreens.rpy:6900
     old " challenge{/b}: This challenges your {b}"
