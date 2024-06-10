@@ -6932,9 +6932,9 @@ translate schinese strings:
     old "Group sex[s4]"
     new "群交[s4]"
 
-    # game/BKcity_events.rpy:5614
-    old "Force her"
-    new "强奸她"
+    # # game/BKcity_events.rpy:5614
+    # old "Force her"
+    # new "强奸她"
 
     # game/BKcity_events.rpy:5614
     old "Give up"
