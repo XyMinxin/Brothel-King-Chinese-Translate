@@ -1598,7 +1598,7 @@ init -2 python:
                             changes.add("Level: +1", col=c_orange)
                             used = True
                         else:
-                            notify("This item can only be used up to level " + str(e.value), pic=self.portrait)
+                            notify("这个道具只能使用到 " + str(e.value), pic=self.portrait)
 
                     elif e.target == "heal":
                         if not self.can_heal_from_item() and not night:
