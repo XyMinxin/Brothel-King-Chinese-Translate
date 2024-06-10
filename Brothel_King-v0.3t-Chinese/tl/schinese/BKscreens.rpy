@@ -592,7 +592,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6801
     old "Act"
-    new "行动"
+    new "性行为"
 
     # game/BKscreens.rpy:6802
     old "Preference"
@@ -600,11 +600,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6803
     old "Will train"
-    new "将训练"
+    new "训练意向"
 
     # game/BKscreens.rpy:6804
     old "Will work"
-    new "将工作"
+    new "工作意向"
 
     # game/BKscreens.rpy:6900
     old " challenge{/b}: This challenges your {b}"
