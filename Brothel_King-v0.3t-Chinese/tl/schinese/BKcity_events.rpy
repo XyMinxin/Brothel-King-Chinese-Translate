@@ -6816,9 +6816,9 @@ translate schinese strings:
     old "I don't have time for this"
     new "我没有时间"
 
-    # game/BKcity_events.rpy:1537
-    old "What will you do?"
-    new "你会做什么？"
+    # # game/BKcity_events.rpy:1537
+    # old "What will you do?"
+    # new "你会做什么？"
 
     # game/BKcity_events.rpy:1537
     old "Accept"
