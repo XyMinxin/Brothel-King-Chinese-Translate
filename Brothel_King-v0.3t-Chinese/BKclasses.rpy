@@ -1955,9 +1955,9 @@ init -2 python:
                 return desc + "." + crz_text
 
             elif act == "end":
-                desc += self.name + " 想要一个 {b}%s{/b}, " % self.wants_entertainment
+                desc += self.name + " 想要一个 {b}%s{/b}, " % girl_related_dict[self.wants_entertainment]
                 if self.got_entertainment:
-                    desc += "最终得到 {b}%s{/b}. " % self.got_entertainment
+                    desc += "最终得到 {b}%s{/b}. " % girl_related_dict[self.got_entertainment]
                 else:
                     desc += "但是却没有这样的人. "
 
@@ -2216,7 +2216,7 @@ init -2 python:
         def buy_furniture(self, furn):
 
             if self.current_building:
-                renpy.say(carpenter, "对不起，老板，我还有工作要做 " + self.current_building.name + " 订制.")
+                renpy.say(carpenter, "对不起，老板，你需要的 " + self.current_building.name + " 还没有建好.")
                 return False
 
             elif not furn.can_build():
@@ -2230,8 +2230,8 @@ init -2 python:
                     renpy.say(carpenter, "听着，老大，在我开始工作之前你得有足够的资源.")
                     break
             else:
-                renpy.say(carpenter, __("好吧，看来你有真货了。把它们给我，我就开始做 ") + __(furn.name) + __(" right away."))
-                if renpy.call_screen("yes_no", __("你确定要为 ") + __(furn.name) + __(" 建立一个 ") + __(furn.describe_cost()) + "吗?"):
+                renpy.say(carpenter, __("好的，看样子你已经拿到材料了，交给我。我马上就为 ") + __(furn.name) + __(" 开始准备。"))
+                if renpy.call_screen("yes_no", __("您确定要为修 ") + __(furn.name) + __(" 而花费 ") + __(furn.describe_cost()) + "吗?"):
                     MC.spend_resources(furn.cost)
                     renpy.block_rollback()
                     furn.start_building()
@@ -2346,36 +2346,36 @@ init -2 python:
 
             # Entertainment budget description
 
-            des = __("您的客户的平均 {b}娱乐预算{/b} 估计约为 {b}%s 金币{/b}") % int(self.customer_budget_dict["ent budget"])
+            des = __("你的顾客的平均 {b}娱乐预算{/b} 估计约为 {b}%s 金币{/b}") % int(self.customer_budget_dict["ent budget"])
 
             if self.customer_budget_dict["ent budget"] != base_ent_budget:
                 des += " ("
                 if self.customer_budget_dict["ent advertising"]:
-                    des += event_color["good"] % ("+%s 受宣传效果影响" % int(self.customer_budget_dict["ent advertising"]))
+                    des += event_color["good"] % ("+%s 来自广告吸引" % int(self.customer_budget_dict["ent advertising"]))
                     if self.customer_budget_dict["ent acts"]:
                         des += ", "
                 if self.customer_budget_dict["ent acts"] > 0:
-                    des += event_color["good"] % ("+%s 受工作奖金影响" % int(self.customer_budget_dict["ent acts"]))
+                    des += event_color["good"] % ("+%s 来自工作奖金" % int(self.customer_budget_dict["ent acts"]))
                 elif self.customer_budget_dict["ent acts"] < 0:
-                    des += event_color["bad"] % ("%s 受工作奖金影响" % int(self.customer_budget_dict["ent acts"]))
+                    des += event_color["bad"] % ("%s 来自工作奖金" % int(self.customer_budget_dict["ent acts"]))
                 des += ")"
 
             des += ".\n"
 
             # Whoring budget description
 
-            des += __("\n您的客户的平均 {b}嫖娼预算{/b} 估计约为 {b}%s 金币{/b}") % int(self.customer_budget_dict["wh budget"])
+            des += __("\n你的顾客的平均 {b}嫖娼预算{/b} 估计约为 {b}%s 金币{/b}") % int(self.customer_budget_dict["wh budget"])
 
             if self.customer_budget_dict["wh budget"] != base_wh_budget:
                 des += " ("
                 if self.customer_budget_dict["wh advertising"]:
-                    des += event_color["good"] % ("+%s 受宣传效果影响" % int(self.customer_budget_dict["wh advertising"]))
+                    des += event_color["good"] % ("+%s 来自广告吸引" % int(self.customer_budget_dict["wh advertising"]))
                     if self.customer_budget_dict["wh acts"]:
                         des += ", "
                 if self.customer_budget_dict["wh acts"] > 0:
-                    des += event_color["good"] % (__("+%s 受性行为影响") % int(self.customer_budget_dict["wh acts"]))
+                    des += event_color["good"] % (__("+%s 来自性行为") % int(self.customer_budget_dict["wh acts"]))
                 elif self.customer_budget_dict["wh acts"] < 0:
-                    des += event_color["bad"] % (__("%s 受性行为影响") % int(self.customer_budget_dict["wh acts"]))
+                    des += event_color["bad"] % (__("%s 来自性行为") % int(self.customer_budget_dict["wh acts"]))
                 des += ")"
 
             des += "."
@@ -2401,16 +2401,16 @@ init -2 python:
 
                 if self.customer_count_dict["advertising"]:
                     if short:
-                        des += event_color["good"] % ("受宣传效果影响: +%s" % str_int(self.customer_count_dict["advertising"]))
+                        des += event_color["good"] % ("广告: +%s" % str_int(self.customer_count_dict["advertising"]))
                     else:
-                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["advertising"]) + " 受宣传效果影响")
+                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["advertising"]) + " 来自广告吸引")
                     if self.customer_count_dict["special"]:
                         des += ", "
                 if self.customer_count_dict["special"]:
                     if short:
-                        des += event_color["good"] % ("Other: +%s" % str_int(self.customer_count_dict["special"]))
+                        des += event_color["good"] % ("其他: +%s" % str_int(self.customer_count_dict["special"]))
                     else:
-                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["special"]) + " 来自女孩和妓院的影响")
+                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["special"]) + " 来自女孩和青楼的影响")
 
                 des += ")"
 
@@ -2640,7 +2640,7 @@ init -2 python:
                         renpy.say(narrator, "你没有足够的钱.")
 
             else:
-                renpy.say(sill, "你的青楼目前无法再升级房间了.")
+                renpy.say(sill, "你已经有了这个青楼的最大卧室数量。.")
 
         def get_mood_modifier(self, rank): #Increases with bedroom type: Girls score higher with customers and their mood improves
 
@@ -3577,17 +3577,17 @@ init -2 python:
         def get_past_tense(self):
 
             if self.verb.startswith("be"):
-                text1 = "was"
+                text1 = "已经"
             elif self.verb.startswith("have"):
-                text1 = "had"
+                text1 = "已经"
 
             return self.add_article(text1) + " {b}" + self.name.lower() + "{/b}"
 
         def add_article(self, mytext):
             if self.verb.endswith("a"):
-                mytext += " a"
+                mytext += " 一个"
             elif self.verb.endswith("an"):
-                mytext += " an"
+                mytext += " 一个"
 
             return mytext
 
@@ -3600,7 +3600,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\nUnlocks {b}") + __(self.archetype) + __("{/b} zodiac sign.")
+                        des += __("\n解锁 {b}") + __(self.archetype) + __("{/b} 特质分支.")
 
                 return des
 
@@ -3843,7 +3843,7 @@ init -2 python:
                     text1 = "接受全裸"
 
                 elif target == "level":
-                    text1 = "+1 等级 (max level: " + str(val) + ")"
+                    text1 = "+1等级（等级上限: " + str(val) + ")"
 
                 elif target == "advertising power":
                     text1 = "增加你的宣发女孩的力量(更多的青楼声望，客户吸引力和客户预算)."
@@ -3911,14 +3911,14 @@ init -2 python:
                 return "加速一个女孩的恢复 " + str(val) + " 天."
 
             if self.type == "set":
-                text1 += "set " + target + __(" to ") + str(val)
+                text1 += "改变 " + target + __(" 到 ") + str(val)
                 if self.scope:
                     text1 += " (%s)" % self.scope
                 return text1
 
             if self.type == "allow":
                 if target.endswith("preference"):
-                    text1 += "允许你增加' " + target + " 最多 +" + str(50*val) + "%."
+                    text1 += "允许您增加客人的' " + target + " 最多 +" + str(50*val) + "%."
                 else:
                     text1 += "现在 " + target + " 会来你的青楼消费."
 
@@ -3940,7 +3940,7 @@ init -2 python:
                     text1 += __("掷骰子")
 
                 if self.target == "job critical failure":
-                    text1 += __(" 工作时的严重失败")
+                    text1 += __(" 当工作出现严重失误时")
 
                 return text1
 
@@ -3963,7 +3963,7 @@ init -2 python:
                     text1 += __(" to ")
 
             elif self.type == "change": # Temporary x effect (can be added or removed)
-                text1 += str(round_best(val, 2)) + __(" to ")
+                text1 += str(round_best(val, 2)) + __(" 到 ")
 
             elif self.type == "resist":
                 text1 += str(round_int(val)) + __(" negated {#1}")
