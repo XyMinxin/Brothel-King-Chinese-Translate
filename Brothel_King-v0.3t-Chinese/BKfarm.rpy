@@ -76,28 +76,28 @@ init -2 python:
 
         def add_minion(self, mn):
             if mn.type != self.minion_type:
-                return False, "你无法添加一个 " + mn.type + " 到 " + self.name + " (错误的仆从类型)."
+                return False, "你无法添加一个 " + farm_related_dict[mn.type] + " 到 " + farm_related_dict[self.name] + " (错误的仆从类型)."
             elif self.has_room():
                 self.minions.append(mn)
                 renpy.play(s_moo, "sound")
 #                renpy.say ("", "Adding to " + self.name)
-                return True, mn.name + ", 等级 " + str(mn.level) + "的 " + mn.type + ", 已经加入到 " + self.name + "."
+                return True, mn.name + ", 一个等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ", 已经加入到 " + farm_related_dict[self.name] + "."
             elif self.can_upgrade():
                 if self.rank > 0:
-                    renpy.say("", "农场的 " + self.name + " 现在满员了.")
+                    renpy.say("", "农场的 " + farm_related_dict[self.name] + " 现在满员了.")
                 else:
-                    renpy.say("", "你必须先建造一个 " + self.name + " 才行.")
-                if renpy.call_screen("yes_no", "你想升级 " + self.name + " 到 " + str(self.rank+1) + " 阶吗？这将花费 " + str(self.get_price()) + " 金币"):
+                    renpy.say("", "你必须先建造一个 " + farm_related_dict[self.name] + " 才行.")
+                if renpy.call_screen("yes_no", "你想升级 " + farm_related_dict[self.name] + " 到 " + str(self.rank+1) + " 阶吗？这将花费 " + str(self.get_price()) + " 金币"):
                     if MC.gold < self.get_price() + mn.get_price("buy"):
-                        return False, "你没有足够多的钱去升级 " + self.name + " 并购买仆从"
+                        return False, "你没有足够多的钱去升级 " + farm_related_dict[self.name] + " 并购买仆从"
                     MC.gold -= self.get_price()
                     self.rank += 1
                     self.minions.append(mn)
-                    return True, "农场的 " + self.name + " 已经扩大了，现在 " + mn.name + ", 等级 " + str(mn.level) + " " + self.minion_type + ", 已经加入."
+                    return True, "农场的 " + farm_related_dict[self.name] + " 已经扩大了，一个等级 " + str(mn.level) + " 的 " + farm_related_dict[self.minion_type] + mn.name + " 加入了."
                 else:
                     return False, ""
             else:
-                return False, "这不可能，农场的 " + self.name + " 已经满员了，现在又没办法升级扩大"
+                return False, "这不可能，农场的 " + farm_related_dict[self.name] + " 已满并且不能再升级了。"
 
         def assign_minions(self): # Returns excess girls to be assigned elsewhere automatically
 
@@ -156,7 +156,7 @@ init -2 python:
                 self.rank += 1
                 renpy.play(s_gold, "sound")
                 unlock_pic(self.pic.path)
-                return True, "这个" + farm_related_dict[self.name] + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " " + self.minion_type + "."
+                return True, "这个" + farm_related_dict[self.name] + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " 个 " + farm_related_dict[self.minion_type] + "."
             else:
                 return False, ""
 
@@ -243,19 +243,19 @@ init -2 python:
 
         def get_tooltip(self):
 
-            des = "Level %i %s" % (self.level, self.type)
+            des = "等级 %i %s" % (self.level, farm_related_dict[self.type])
 
             if self.level >= 5:
-                des += " (max level)"
+                des += " (满级)"
             else:
                 des += " (XP: %i/%i)" % (self.xp, minion_xp_to_level[self.level+1])
 
 
             if self.hurt:
                 if self.type == "machine":
-                    des += event_color["bad"] % ("\n" + self.name + " 机器出了故障，我得花 " + str(self.hurt) + " 天来修复它 ")
+                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " 已经损坏，我得花 " + str(self.hurt) + " 天来修复它 ")
                 else:
-                    des += event_color["bad"] % ("\n" + self.name + " 受了重伤，它得休息 " + str(self.hurt) + " 天来养伤 ")
+                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " 严重受伤，它得休息 " + str(self.hurt) + " 天来养伤 ")
 
             return des
 
@@ -441,9 +441,9 @@ init -2 python:
                                 mn = rand_choice(self.minions)
                                 mn.hurt = True
                                 if mn.type == "machine":
-                                    descript += event_color["bad"] % (mn.name + " (level " + str(mn.level) + mn.type + ") 在搏斗中损坏了. 在你修好它之前它只能吃灰了.")
+                                    descript += event_color["bad"] % (mn.name + " (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ") 在搏斗中损坏了. 在你修好它之前它只能吃灰了.")
                                 else:
-                                    descript += event_color["bad"] % (mn.name + " (level " + str(mn.level) + mn.type + ") 在搏斗中受伤了. 在你治好它之前它只能歇着了.")
+                                    descript += event_color["bad"] % (mn.name + " (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ") 在搏斗中受伤了. 在你治好它之前它只能歇着了.")
                                 changes["obedience"] -= dice(3)
                                 changes["fear"] -= dice(3)
                                 girl.add_log("minion_hurt")
@@ -453,7 +453,7 @@ init -2 python:
                         elif fight_res: # Girl wins
                             pic = "gizel whip struggling" # Picture(path="NPC/gizel/whip3.webp")
                             # pic_bg = inst.get_pic()
-                            descript += event_color["bad"] % (girl.name + " " + reaction + "攻击了吉泽, 在她吟唱魔法时就一脚将她踢翻在地!\n")
+                            descript += event_color["bad"] % (girl.name + " " + farm_related_dict[reaction] + "攻击了吉泽, 在她吟唱魔法时就一脚将她踢翻在地!\n")
                             ev_sound = s_crash
 
                             if dice(6) >= 4:
@@ -470,9 +470,9 @@ init -2 python:
                                 mn = rand_choice(self.minions)
                                 mn.hurt = True
                                 if mn.type == "machine":
-                                    descript += event_color["bad"] % (mn.name + " (level " + str(mn.level) + mn.type + ") 在搏斗中损坏了. 在你修好它之前它只能吃灰了.")
+                                    descript += event_color["bad"] % (mn.name + " (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ") 在搏斗中损坏了. 在你修好它之前它只能吃灰了.")
                                 else:
-                                    descript += event_color["bad"] % (mn.name + " (level " + str(mn.level) + mn.type + ") 在搏斗中受伤了. 在你治好它之前它只能歇着了.")
+                                    descript += event_color["bad"] % (mn.name + " (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ") 在搏斗中受伤了. 在你治好它之前它只能歇着了.")
                                 changes["obedience"] -= dice(3) + 2
                                 changes["fear"] -= dice(3) + 1
                                 girl.add_log("minion_hurt")
@@ -482,7 +482,7 @@ init -2 python:
                         else: # Gizel wins
                             pic = "gizel whip happy" # Picture(path="NPC/gizel/whip2.webp")
                             # pic_bg = inst.get_pic()
-                            descript += event_color["good"] % (girl.name + " " + reaction + " 想要还击, 但是吉泽随便用了个捆绑术就把她制服了.\n")
+                            descript += event_color["good"] % (girl.name + " " + farm_related_dict[reaction] + " 想要还击, 但是吉泽随便用了个捆绑术就把她制服了.\n")
                             ev_sound = s_punch
 
                             if dice(6) >= 4:
@@ -498,7 +498,7 @@ init -2 python:
                             calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "rebel subdued"]))
 
                     else:
-                        descript += event_color["a little bad"] % (girl.name + " " + reaction + " 训练，并且不服从吉泽.\n")
+                        descript += event_color["a little bad"] % (girl.name + " " + farm_related_dict[reaction] + " 训练，并且不服从吉泽.\n")
 
                         if dice(6) >= 3:
                             pic = "gizel whip angry"# Picture(path="NPC/gizel/whip1.webp")
@@ -522,12 +522,12 @@ init -2 python:
 
                 elif self.installation: # sanity check
                     if reaction == "accepted":
-                        descript += girl.name + " 被送进 " + self.installation.name + " 接受训练时没有抱怨."
+                        descript += girl.name + " 被送进 " + farm_related_dict[self.installation.name] + " 接受训练时没有抱怨."
                     elif reaction == "resisted":
-                        descript += girl.name + " 又哭又闹, 但吉泽一边嘲讽着一边把她踢进 " + self.installation.name + " 接受训练."
+                        descript += girl.name + " 又哭又闹, 但吉泽一边嘲讽着一边把她踢进 " + farm_related_dict[self.installation.name] + " 接受训练."
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "resisted"]))
                     elif reaction == "refused":
-                        descript += girl.name + " 哀求着不要, 但吉泽一边怒吼着一边把她踢进 " + self.installation.name + "."
+                        descript += girl.name + " 哀求着不要, 但吉泽一边怒吼着一边把她踢进 " + farm_related_dict[self.installation.name] + "."
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "refused"]))
 
                 # Learn from interaction
@@ -755,7 +755,7 @@ init -2 python:
                 for mn in self.minions:
                     mn.xp += girl.rank
                     if mn.level_up():
-                        change_log.add("MINION LEVEL UP (level " + str(mn.level) + ")", col="special")
+                        change_log.add("仆从升级 (等级 " + str(mn.level) + ")", col="special")
 
                 # Breaking text
 
@@ -801,7 +801,7 @@ init -2 python:
 
                 ## Adds main event
 
-                log.add_report(girl.fullname + " has trained " + self.act + " acts in the " + self.installation.name + ".")
+                log.add_report(girl.fullname + "在" + farm_related_dict[self.installation.name] + "中训练了" + girl_related_dict[self.act] + "。")
 
                 farm_events.append(Event(pic, background = pic_bg, char = girl.char, text = descript, changes = change_log, sound = ev_sound, type = "Farm"))
 
@@ -815,7 +815,7 @@ init -2 python:
 
                     farm_events.append(Event(pic, background = pic_bg, char = girl.char, text = (pref_response[text1 + " " + new_pref] % long_act_description[self.act]), changes = change_log, sound = s_ahaa, type = "special"))
 
-                    text1 = girl.fullname + " is now " + preference_color[new_pref] % new_pref + " with " + self.act + " acts."
+                    text1 = girl.fullname + "现在对" + girl_related_dict[self.act] + "行为一副" + preference_color[new_pref] % girl_related_dict[new_pref] + " 的模样。"
                     log.add_report(text1)
 
                     farm_events.append(Event(pic, background = pic_bg, char = narrator, text = "\n" + text1, changes = change_log, sound = s_spell, type = "special"))
@@ -832,13 +832,13 @@ init -2 python:
                         descript += event_color["bad"] % (girl.fullname + " 受伤了，今天不得不在牢房里休息.\n")
                     elif girl.energy <= 0:
                         descript += event_color["bad"] % (girl.fullname + " 今天累坏了，今天不得不在牢房里休息.\n")
-                    descript += event_color["average"] % (girl.fullname + " 看起来疲惫不堪, 所以吉泽让她在牢房里休息 (auto-resting: " + self.resting + ").\n")
+                    descript += event_color["average"] % (girl.fullname + " 看起来疲惫不堪, 所以吉泽让她在牢房里休息 (auto-resting: " + farm_related_dict[self.resting] + ").\n")
 
                 elif self.inst_full:
                     descript += event_color["a little bad"] % ("我们没有更多的仆从来训练她, 所以 " + girl.fullname + " 在牢房里休息了一天.\n")
 
                 elif self.refused:
-                    descript += event_color["bad"] % (girl.fullname + " 今天拒绝训练, 所以吉泽只能把她丢在牢房里") + " (training mode: {i}" + self.mode + "{/i}).\n"
+                    descript += event_color["bad"] % (girl.fullname + " 今天拒绝训练, 所以吉泽只能把她丢在牢房里") + " (训练模式: {i}" + farm_related_dict[self.mode] + "{/i}).\n"
 
                 stat = ""
                 text1, change_log = girl.rest(context="farm")
@@ -875,10 +875,10 @@ init -2 python:
                     descript += event_color["a little bad"] % ("我们没有更多的仆从来训练她, 所以 " + girl.fullname + " 今天在农场干了一天的活")
 
                 elif self.refused:
-                    descript += event_color["bad"] % (girl.fullname + " 今天拒绝训练, 所以吉泽让她在农场干了一天的活 ") + "(training mode: {i}" + self.mode + "{/i})"
+                    descript += event_color["bad"] % (girl.fullname + " 今天拒绝训练, 所以吉泽让她在农场干了一天的活 ") + "(训练模式: {i}" + farm_related_dict[self.mode] + "{/i})"
 
                 else:
-                    descript += girl.fullname + " was held at the farm today"
+                    descript += girl.fullname + "今天就在农场休息"
 
                 log.add_report(descript + ", " + farm_holding_dict[self.holding].lower() + ".")
 
@@ -926,7 +926,7 @@ init -2 python:
                     brk, new_pref = girl.raise_preference(act, status_change=True)
                     pic = girl.get_pic(act, not_tags=all_sex_acts+["group"])
                     descript += farm_description["holding " + self.holding + " good"] % girl.name
-                    text_changes = __(act.capitalize()) + ": "
+                    text_changes = __(girl_related_dict[act.capitalize()]) + ": "
 
                     if brk > 0:
                         text_changes += "{color=[c_green]}"
@@ -998,7 +998,7 @@ init -2 python:
                 changes[stat] = girl.change_stat(stat, chg)
 
                 if stat not in ("mood", "fear", "love"):
-                    change_log.add("%s: %i/%i (%s)" % (__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(changes[stat], color_scheme="standard")))
+                    change_log.add("%s: %i/%i (%s)" % (__(girl_related_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(changes[stat], color_scheme="standard")))
 
             return change_log
 
@@ -1201,7 +1201,7 @@ init -2 python:
                 if farm.test_resting_conditions(girl):
                     prog.tired = True
                     resting_girls.append(girl)
-                    if logging: log.add_report(girl.fullname + " 疲惫不堪，吉泽把她送去休息了 (resting mode: " + self.programs[girl].resting + ").")
+                    if logging: log.add_report(girl.fullname + " 疲惫不堪，吉泽把她送去休息了 (作息规则: " + self.programs[girl].resting + ").")
 #                    renpy.say(girl.name + " is too tired")
 
                 # Holding girls
@@ -1224,7 +1224,7 @@ init -2 python:
 
                         if prog.installation and not prog.auto_inst:
                             prog.installation.girls.append(girl)
-                            if logging: log.add_report("As per her training program, " + girl.fullname + " was assigned to the " + prog.installation.name)
+                            if logging: log.add_report("根据她的训练计划，" + girl.fullname + "被指派到" + farm_related_dict[prog.installation.name])
                         elif prog.avoid_weakness: # Assigns to another installation if has been ordered to by the player
                             for inst in renpy.random.sample(list(self.installations.values()), len(self.installations.values())):
                                 if inst != self.installations[self.knows["weakness"][girl]] and inst.count_free_minions() > 0:
@@ -1238,7 +1238,7 @@ init -2 python:
 #                            renpy.say("", "Farm knows " + girl.name + " is weak to " + self.knows["weakness"].name)
                             prog.installation = self.installations[self.knows["weakness"][girl]]
                             self.installations[self.knows["weakness"][girl]].girls.append(girl)
-                            if logging: log.add_report(girl.fullname + " 被送去 " + prog.installation.name + " 训练。因为吉泽知道她害怕 " + self.knows["weakness"][girl] + "s.")
+                            if logging: log.add_report(girl.fullname + " 被送去 " + farm_related_dict[prog.installation.name] + " 训练。因为吉泽知道她害怕 " + self.knows["weakness"][girl] + "s.")
                         else:
 #                            renpy.say("", "Farm doesn't know " + girl.name + " 's weakness.")
                             unassigned.append(girl)

@@ -65,7 +65,7 @@ label quick_start:
         call choose_difficulty() from _call_choose_difficulty
 
     else:
-        $ MC.set_playerclass("Wizard")
+        $ MC.set_playerclass("法师")
         $ MC.girls = get_girls(24)
         $ MC.gold = 100000
         $ MC.speed = 30

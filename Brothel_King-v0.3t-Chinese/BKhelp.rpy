@@ -243,8 +243,8 @@ init python:
 
                             "Main Character information" : "Your character is first defined by his class (Warrior, Wizard or Rogue trader).\n\nYour class determines your available spells and your starting level in each of the four Main Character skills: strength, spirit, charisma and speed. All skills can reach a maximum of 10 (before bonuses), regardless of your class.\n\nYou are currently level [MC.level]/25. You can level up with prestige. Each new level will grant you a skill point which you may use to boost your skills.\n\nFinally, you can find information about your beliefs (set at character creation) and alignment (determined by your actions in and out of the brothel).",
 
-                            "Warrior" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
-                            "Wizard" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "战士" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "法师" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
                             "Rogue trader" : "The {b}Rogue trader{/b} is one of the three Main Character classes. He is good at bartering and trading favorably, and has learned the skills to survive in the mean streets of Borgo, even acquiring a $fearsome baby dragon as his protector. As he would rather sell books than read them, he is not very good with magic, though.\n\nMain skill: charisma.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
 
                             "strength" : "{b}Strength{/b} is one of the four Main Character skills. It affects how well you perform physical tasks and hold your own in close combat.\n\nWhenever you have unspent *AP at the end of the day, Strength gives a free boost to your brothel security and may twart negative outcomes from security events and runaway attempts.\n\nYou may use skill points to increase your strength, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
@@ -786,19 +786,19 @@ label help_MC():
 
             sill "First, let me tell you about your character class. Your class affects events in the game, your available spells and starting skills."
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
 
                 sill "You are a warrior, a skilled fighter with a tough spirit. Your social skills are a bit lacking, though, if I may say so."
 
                 you "Grumph."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
 
                 sill "You are a wizard, skilled in spellcasting and with some wits to match. Don't get into close combat, though, this is not your style."
 
                 you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
 
-            elif MC.playerclass == "Trader":
+            elif MC.playerclass == "奸商":
 
                 sill "You are good at barter and trade, and have learned the skills to survive in the streets. Magic is not your forte, however."
 

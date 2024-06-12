@@ -1271,7 +1271,7 @@ init -3 python:
                     arson = True
 
                 if arson:
-                    if MC.playerclass == "Wizard":
+                    if MC.playerclass == "法师":
                         damage = dice(25) + 25 - 5 * MC.get_spirit()
                         if damage < 0:
                             damage = 0
@@ -1987,7 +1987,7 @@ init -3 python:
                     cust.entertainment_score = score
         #</Chris Job Mod>
 
-        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + " result (%i){/color}" % score, ttip=result_reference)
+        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result_name_dict[result.capitalize()]) + " result (%i){/color}" % score, ttip=result_reference)
 
         if act in all_jobs:
             change_log.add("服务的顾客人数: %i/%i" % (cust.service_dict["entertained"], len(customers)))
@@ -2730,10 +2730,10 @@ init -3 python:
             girl.add_log(act + "_rep", rep_gains[girl])
 
             if result in ("very bad", "bad"):
-                girl.track_event("bad result", arg=(__(result), __(act)))
+                girl.track_event("bad result", arg=(__(result_name_dict[result]), __(girl_related_dict[act])))
 
             elif result in ("good", "very good", "perfect"):
-                girl.track_event("good result", arg=(__(result), __(act)))
+                girl.track_event("good result", arg=(__(result_name_dict[result]), __(girl_related_dict[act])))
 
 
         return events
@@ -5327,6 +5327,14 @@ init -3 python:
             girl.rank = dice(4)
             girl.set_job(rand_choice(all_jobs))
 
+## 中文翻译函数 ##
 
+    def translate_cn(text1, dictionary):
+        if text1 in dictionary:
+            text2 = dictionary[text1]
+        else:
+            text2 = text1
+        
+        return text2
 
 #### END OF BK FUNCTIONS FILE ####

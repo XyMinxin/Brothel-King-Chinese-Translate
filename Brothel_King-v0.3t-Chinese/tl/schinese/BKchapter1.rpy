@@ -1690,7 +1690,7 @@ translate schinese c1_guards_visit_28f11c4a:
 translate schinese c1_guards_visit_4d36ba71:
 
     # kosmo happy "Oh, nothing, nothing... I can only empathize with the 'concerned citizen' who reported this place, of course. No one should have to come to this dump, when fantastic brothels from the HʘʘKERS chain are just a block away!"
-    kosmo happy "哦,没什么,没什么...我只是很理解那个'热心市民'的心情,他肯定是为了大家好才举报的这里吧。大家可不应该来这种破地方,附近不是还有正规的妓院嘛!"
+    kosmo happy "哦,没什么,没什么...我只是很理解那个'热心市民'的心情,他肯定是为了大家好才举报的这里吧。大家可不应该来这种破地方,附近不是还有正规的青楼嘛!"
 
 # game/BKchapter1.rpy:1084
 translate schinese c1_guards_visit_ed021779:

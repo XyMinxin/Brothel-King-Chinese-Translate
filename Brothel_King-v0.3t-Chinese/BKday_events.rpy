@@ -261,13 +261,13 @@ label random_morning_events():
                 elif girl.is_("introvert"):
                     "As you open your eyes, you see a dark silhouette standing in the shadows near your bed."
 
-                    if MC.playerclass == "Warrior":
+                    if MC.playerclass == "战士":
                         play sound s_sheath
                         "Your reflexes kick in, and you reach for the dagger you always keep under your pillow with lightning speed. The silhouette recoils in fear, and you realize it's [girl.fullname]."
-                    elif MC.playerclass == "Wizard":
+                    elif MC.playerclass == "法师":
                         play sound s_fire
                         "Muttering the words of a quick defensive spell, you summon a blue flame into the air, casting a spooky light on [girl.fullname]'s surprised face."
-                    elif MC.playerclass == "Trader":
+                    elif MC.playerclass == "奸商":
                         play sound s_wscream
                         "Startled out of your sleep, you grab for a weapon and find a pillow, your nightcap half-falling over your eyes. Yanking it off with one hand while trying to desperately fend off the intruder with your pillow, you are stunned to see [girl.fullname] standing in front of you, with a surprised look."
 

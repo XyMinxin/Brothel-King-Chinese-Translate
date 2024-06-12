@@ -163,16 +163,19 @@ screen right_menu_mc():
         $ auto_spells = len([1 for s in MC.known_spells if s.auto])
 
         if active_spells:
-            $ ttip += str(active_spells) + __(" 可用法术") + plural(active_spells)
+            $ ttip += str(active_spells) + __("个可用法术")
         else:
-            $ ttip += __("不可用法术")
+            $ ttip += __("没有法术")
 
         if auto_spells:
-            $ ttip += __(" 和 ") + str(auto_spells) + __(" 自动施放的法术") + plural(auto_spells) + "."
+            $ ttip += __("和") + str(auto_spells) + __("个自动施放的法术.")
         else:
             $ ttip += "."
+        
+        $ ttip += "\n({i}快捷键: {u}C{/u}{/i})"
+            
 
-        textbutton "{u}C{/u}角色状态" style_group "rm":
+        textbutton "角色状态" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -222,8 +225,9 @@ screen right_menu_girls():
         $ ttip = __("检查青楼里姑娘们的状态，和她们培养感情.\n你有 {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" 个女孩{/b}{/color}在青楼 (最多 ") + str(brothel.bedrooms) + ").\n"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
         $ ttip += __("今晚有 ") + str(working_girls) + __(" 个女孩要工作.")
+        $ ttip += "\n({i}快捷键: {u}G{/u}{/i})"
 
-        textbutton "{u}女孩{/u}" style_group "rm":
+        textbutton "女孩" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -247,7 +251,7 @@ screen right_menu_brothel():
         else:
             text ""
 
-        textbutton "{u}青楼{/u}" style_group "rm":
+        textbutton "青楼" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -263,11 +267,11 @@ screen right_menu_farm():
     if farm.active:
         hbox xalign 1.0 spacing 20:
             text ""
-            textbutton "{u}农场{/u}" style_group "rm":
+            textbutton "农场" style_group "rm":
                 ypadding 0.005
                 text_size res_font(20)
                 action Return("farm")
-                tooltip "前往奴隶农场，在那里训练你的女孩. 吉泽管理着 {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " 个女孩{/b}{/color}和 {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " 个仆从{/b}{/color}."
+                tooltip "前往奴隶农场，在那里训练你的女孩. 吉泽管理着 {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " 个女孩{/b}{/color}和 {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " 个仆从{/b}{/color}.\n({i}快捷键: {u}F{/u}{/i})"
 
 
 ################
@@ -285,12 +289,12 @@ screen right_menu_city():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton "{u}访问城市{/u}" style_group "rm":
+        textbutton "访问城市" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("districts")
-            tooltip "探索其他地区获得{b}资源{/b}，或是和美丽的{b}陌生姑娘{/b}搭讪来一次一夜情。"
+            tooltip "探索其他地区获得{b}资源{/b}，或是和美丽的{b}陌生姑娘{/b}搭讪来一次一夜情。\n({i}快捷键: {u}V{/u}{/i})"
 
 
 ################
@@ -309,14 +313,14 @@ screen right_menu_slavemarket():
         else:
             text ""
 
-        textbutton "{u}奴隶市场{/u}" style_group "rm":
+        textbutton "奴隶市场" style_group "rm":
             ypadding 0.005
             if screen_is_wide:
                 text_size res_font(20)
             else:
                 text_size res_font(18)
             action Return("slavemarket")
-            tooltip __("前往{b}奴隶市场{/b}. 无论是亡国公主，落魄千金，兽耳娘，清纯少女还是精液中毒的肉便器总有一款适合你。 目前有 {color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __(" 个奴隶{/b}{/color}待售.")
+            tooltip __("前往{b}奴隶市场{/b}. 无论是亡国公主，落魄千金，兽耳娘，清纯少女还是精液中毒的肉便器总有一款适合你。 目前有{color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __("个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})")
 
 ################
 ## Home - Right menu - Display Shop alert and button
@@ -334,12 +338,12 @@ screen right_menu_shop():
         else:
             text ""
 
-        textbutton "{u}商店{/u}" style_group "rm":
+        textbutton "商店" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("shop")
-            tooltip __("逛逛{b}商店{/b}淘些好货，情趣内衣，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}") + str(len(shop.items)) + __("件商品{/b}{/color}待售.")
+            tooltip __("逛逛{b}商店{/b}淘些好货，情趣内衣，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}") + str(len(shop.items)) + __("件商品{/b}{/color}待售.\n({i}快捷键: {u}S{/u}{/i})")
 
 ################
 ## Home - Right menu - Display Postings alert and button
@@ -356,12 +360,12 @@ screen right_menu_postings():
         else:
             text ""
 
-        textbutton "{u}外派{/u}" style_group "rm":
+        textbutton "外派" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("postings")
-            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" 个培训班") + __("{/b}{/color} 和 {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" 个合同") + plural(len(quest_board.quests)) + __("{/b}{/color} 目前可用的.")
+            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" 个培训班") + __("{/b}{/color} 和 {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" 个合同") + plural(len(quest_board.quests)) + __("{/b}{/color} 目前可用的.\n({i}快捷键: {u}T{/u}{/i})")
 
 
 ################
@@ -395,12 +399,12 @@ screen right_menu_endday():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton "{u}E{/u}开始营业" style_group "rm":
+        textbutton "开始营业" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("end_day")
-            tooltip "点击此按钮 {b}开始营业{/b} ，结束这一天."
+            tooltip "点击此按钮 {b}开始营业{/b} ，结束这一天. \n({i}快捷键: {u}E{/u}{/i})"
 
 ################
 ## Home - Right menu - Display Advance button

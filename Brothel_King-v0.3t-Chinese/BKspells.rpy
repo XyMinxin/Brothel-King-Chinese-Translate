@@ -19,7 +19,7 @@ label init_spells():
         # REGULAR SPELLS #
 
         spellbook = {
-                    "Warrior" : [
+                    "战士" : [
                             Spell('Heavy Lifting', 'strength.webp', level=2, effects=[Effect("gain", "strength", 1)], description="Pumping and Pimping."),
                             Spell('The Defender', 'defender.webp', type="passive", level=3, effects=[Effect("special", "defender", 1)], description="It's like you can be everywhere at once."),
                             Spell('Discipline', 'discipline.webp', type="discipline", level=4, cost=1, effects=[Effect("change", "train obedience target", -10, scope="brothel"), Effect("change", "job obedience target", -10, scope="brothel")], duration="turn", description="The pain of discipline is nothing like the pain of disappointment."),
@@ -34,7 +34,7 @@ label init_spells():
                             Spell('Lightning Reflexes', 'speed.webp', level=22, effects=[Effect("gain", "speed", 1)], description="Swift like a cobra."),
                             Spell('Brothel Militia', 'militia.webp', type="passive", level=24, effects=[Effect("boost", "defense", 2, scope="brothel")], description="Man the battlestations! Err… Should it be 'Woman the battlestations'?"),
                             ],
-                    "Trader" : [
+                    "奸商" : [
                             Spell('Rogue', 'charisma.webp', level=2, effects=[Effect("gain", "charisma", 1)], description="Every day I'm hustling."),
                             Spell('The Haggler', 'haggler.webp', type="passive", level=3, effects=[Effect("boost", "buy", -0.02, scales_with="charisma"), Effect("boost", "sell", 0.02, scales_with="charisma")], description="'That's it. I'm walking away now...' Better prices for girls and items."),
                             Spell('Sign Of Influence', 'sign1.webp', type="sign", level=4, cost=1, effects=[Effect("boost", "love gains", 0.1, scope="brothel"), Effect("boost", "fear gains", 0.1, scope="brothel")], duration="turn", description="Trust is earned. Unless you know magic."),
@@ -50,7 +50,7 @@ label init_spells():
                             Spell('Fame', 'fame.webp', type="passive", level=24, effects=[Effect("change", "customers", 1, scales_with="charisma", scope="brothel")], description="Fame, makes a man take things over!"),
 
                             ],
-                    "Wizard" : [
+                    "法师" : [
                             Spell('Inquisitive', 'spirit.webp', level=2, effects=[Effect("gain", "spirit", 1)], description="A beautiful mind. Pity about your face, though!"),
                             Spell('Minor Aura: Purity', 'aura1.webp', type="aura", level=2, cost=1, effects=[Effect("change", "beauty", 5, scope="brothel")], duration="turn", description="Looks aren't everything, but, hey, they sell. This aura makes your girls look nicer."),
                             Spell('Minor Aura: Provocation', 'aura4.webp', type="aura", level=2, cost=1, effects=[Effect("change", "body", 5, scope="brothel")], duration="turn", description="Shake your money-maker. Now with magic. This aura enhances your girl's body."),

@@ -455,9 +455,19 @@ init -10 python:
                         "lnsane" : "疯狂",
                         "Custom" : "定制",
                         "custom" : "定制",
+                        
+                        ## 玩家属性 ##
+                        "Strength" : "力量",
+                        "strength" : "力量",
+                        "Spirit" : "法力",
+                        "spirit" : "法力",
+                        "Charisma" : "魅力",
+                        "charisma" : "魅力",
+                        "Speed" : "精力",
+                        "speed" : "精力",
                         }
 
-    ## 特质树名称 ##
+    ## 天赋树名称 ##
     archetype_name_dict = {
                           "The Maid" : "女仆",
                           "The Player" : "优伶",
@@ -1359,14 +1369,14 @@ init -10 python:
     no_girls_pics = ["harem.webp",]
 
     playerclass_pics = {
-                "Warrior" : "UI/warrior.webp",
-                "Wizard" : "UI/wizard.webp",
-                "Trader" : "UI/trader.webp"
+                "战士" : "UI/warrior.webp",
+                "法师" : "UI/wizard.webp",
+                "奸商" : "UI/trader.webp"
                 }
 
     god_pics = {
-                "Arios" : "UI/arios.webp",
-                "Shalia" : "UI/shalia.webp",
+                "阿里奥斯" : "UI/arios.webp",
+                "莎莉娅" : "UI/shalia.webp",
                 None : "UI/none.webp"
                 }
 

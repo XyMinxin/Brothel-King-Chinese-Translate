@@ -792,7 +792,7 @@ label c3_hint(npc, ninja):
 
             satella "They're a bunch of hopeless losers."
 
-            if MC.playerclass == "Wizard":
+            if MC.playerclass == "法师":
                 you "Ouch, thanks."
             else:
                 you "That's what I think, too."
@@ -1884,7 +1884,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
         homura sad "My ears are ringing, though... There's something odd about this place."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Ah yes, you noticed. The walls are infused with ancient magic."
 
             you "It normally only affects people with elemental affinity, though. You may be experiencing some kind of magic resonance. Do you have magical affinity?"

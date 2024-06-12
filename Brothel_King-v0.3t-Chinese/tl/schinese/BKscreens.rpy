@@ -156,11 +156,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1990
     old "Auto upkeep setting is {b}{color=[c_green]}on{/color}{/b} {i}(shortcut: {u}Shift+a{/u}){/i}"
-    new "自动调整保养费用功能状态为{b}{color=[c_green]}激活{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
+    new "自动调整保养费用功能状态为{b}{color=[c_green]}激活{/color}{/b} \n({i}快捷键: {u}Shift+a{/u}{/i})"
 
     # game/BKscreens.rpy:1992
     old "Auto upkeep setting is {b}{color=[c_red]}off{/color}{/b} {i}(shortcut: {u}Shift+a{/u}){/i}"
-    new "自动调整保养费用功能状态为{b}{color=[c_red]}停用{/color}{/b} {i}(快捷键: {u}Shift+a{/u}){/i}"
+    new "自动调整保养费用功能状态为{b}{color=[c_red]}停用{/color}{/b} \n({i}快捷键: {u}Shift+a{/u}{/i})"
 
     # game/BKscreens.rpy:2003
     old "\nWhen this is turned on, current upkeep balance will 'lock', and upkeep will rise and fall automatically."
@@ -264,15 +264,18 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2356
     old " ({i}shortcut: {u}j{/u}{/i})"
-    new " ({i}快捷键: {u}j{/u}{/i})"
+    new " \n({i}快捷键: {u}J{/u}{/i})"
 
     # game/BKscreens.rpy:2413
     old "Change this girl's equipment."
-    new "更换她的装备。"
+    new "更换她的装备 \n({i}快捷键: {u}T{/u}{/i})"
 
     # game/BKscreens.rpy:2430
     old "Sell this girl for %s gold (original cost: %s gold). ({i}shortcut: {u}Delete{/u}{/i})"
-    new "以 %s 金币的价格出售她(原价: %s 金币)。({i}快捷键: {u}删除{/u}{/i})"
+    new "以 %s 金币的价格出售她 (原价: %s 金币). \n({i}快捷键: {u}Delete{/u}{/i})"
+    
+    old "You have "
+    new "你有 "
 
     # game/BKscreens.rpy:2439
     old " perk points to spend.\nRight-click to access perks."
@@ -304,7 +307,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2959
     old "%s's perks"
-    new "%s 的技能"
+    new "%s的天赋树"
 
     # game/BKscreens.rpy:3051
     old "Perk points: "
@@ -388,15 +391,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3968
     old "Carpenter's {u}W{/u}agon"
-    new "{u}青楼改造{/u}"
+    new "青楼改造"
 
     # game/BKscreens.rpy:3993
     old "Customer {u}o{/u}ptions"
-    new "{u}经营策略{/u}"
+    new "经营策略"
 
     # game/BKscreens.rpy:3993
     old "Fine-tune your brothel for various customer populations and preferences."
-    new "调整经营策略以满足不同顾客群体和喜好。"
+    new "调整经营策略以满足不同顾客群体和喜好。\n({i}快捷键: {u}O{/u}{/i})"
 
     # game/BKscreens.rpy:4015
     old "You must pay {b}"
@@ -554,9 +557,12 @@ translate schinese strings:
     old " skill points"
     new " 技能点"
 
+    old "{b}Current goal{/b}\n{i}{size=-2}"
+    new "{b}当前目标{/b}\n{i}{size=-2}"
+
     # game/BKscreens.rpy:5808
     old "Spellboo{u}k{/u}"
-    new "法术{u}书{/u}"
+    new "法术书"
 
     # game/BKscreens.rpy:5808
     old "See all available spells and active talents"
@@ -703,8 +709,8 @@ translate schinese strings:
     new "UI设置"
 
     # game/BKscreens.rpy:7853
-    old "Misc"
-    new "其他"
+    # old "Misc"
+    # new "其他"
 
     # game/BKscreens.rpy:7983
     old "Girl pack mix"
@@ -788,7 +794,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:796
     old "Rk"
-    new "等阶"
+    new "阶级"
 
     # game/BKscreens.rpy:799
     old "Lv"
@@ -796,7 +802,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1098
     old "Rank"
-    new "等阶"
+    new "阶级"
 
     # game/BKscreens.rpy:1101
     old "Level"
@@ -856,19 +862,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2292
     old "Bu{u}y{/u}"
-    new "购买{u}y{/u}"
+    new "购买"
 
     # game/BKscreens.rpy:2370
     old "Sche{u}d{/u}ule"
-    new "排班{u}d{/u}"
+    new "排班"
 
     # game/BKscreens.rpy:2388
     old "{u}I{/u}nteract"
-    new "互动{u}i{/u}"
+    new "互动"
 
     # game/BKscreens.rpy:2406
     old "I{u}t{/u}ems"
-    new "物品{u}t{/u}"
+    new "物品"
 
     # game/BKscreens.rpy:2419
     old "Dismiss"
@@ -880,19 +886,22 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2436
     old "Level {u}u{/u}p"
-    new "升级{u}u{/u}"
+    new "升级"
 
     # game/BKscreens.rpy:2447
     old "Per{u}k{/u}s"
-    new "特技{u}k{/u}"
+    new "天赋"
+
+    old "Check her current perks"
+    new "点击查看她的天赋\n({i}快捷键: {u}K{/u}{/i})"
 
     # game/BKscreens.rpy:2459
     old "{u}R{/u}ank up"
-    new "升阶{u}r{/u}"
+    new "升阶"
 
     # game/BKscreens.rpy:2464
     old "St{u}a{/u}ts"
-    new "状态{u}a{/u}"
+    new "状态"
 
     old "Test girl pack with the game's picture generation."
     new "测试女孩包与游戏的图片生成."
@@ -907,7 +916,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2535
     old "Le{u}a{/u}ve farm"
-    new "离开奴隶农场{u}a{/u}"
+    new "离开奴隶农场"
 
     # game/BKscreens.rpy:2671
     old "Girl Schedule"
@@ -1303,6 +1312,9 @@ translate schinese strings:
     old "Religion"
     new "信仰"
 
+    old "Change your Main Character's picture."
+    new "更改主角的图片."
+
     # game/BKscreens.rpy:5611
     old "Click on a girl mix to add or remove it from this game."
     new "点击一个女孩组合可将其添加或从此游戏中删除。"
@@ -1517,7 +1529,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6616
     old "{u}U{/u}se item"
-    new "{u}使用{/u}物品"
+    new "使用物品"
 
     # game/BKscreens.rpy:6724
     old "Current sanity: "
@@ -1595,6 +1607,18 @@ translate schinese strings:
     old "\nChoose the behavior of stock (default) pictures and girl pack pictures"
     new "\n选择默认图片和女孩包图片的行为"
 
+    old "When a picture is missing:\nUse stock pictures"
+    new "找不到可用图片时：使用默认图片库"
+
+    old "When a picture is missing:\nUse another picture from the girl pack"
+    new "找不到可用图片时：随机一位女孩图片包"
+
+    old "When the picture count is low:\nMix stock and girl pack pictures"
+    new "当图片数量太少时：混合使用图库和女孩图片包"
+
+    old "When the picture count is low:\nOnly use girl pack pictures"
+    new "当图片数量太少时：只使用该女孩图片包"
+
     # game/BKscreens.rpy:7748
     old "\nChoose the behavior of advanced training pictures"
     new "\n选择高级培养图片的行为"
@@ -1611,25 +1635,41 @@ translate schinese strings:
     old "\nChoose the behavior of group and bisexual pictures"
     new "\n选择群交和双性图片的行为"
 
+    old "Group sex: Mix group pictures with regular pictures"
+    new "群交：将群交图片与普通图片混合"
+
+    old "Group sex: Only use group sex pictures"
+    new "群交：只使用群交图片"
+
+    old "Bisexual sex: Mix bisexual pictures with regular pictures"
+    new "百合：将百合图片与普通图片混合"
+
+    old "Bisexual sex: Only use bisexual pictures"
+    new "百合：只使用百合图片"
+
     # game/BKscreens.rpy:7763
     old "\nChoose the behavior of slavemarket girls' pictures"
     new "\n选择奴隶市场女孩图片的行为"
+
+    old "Allow naked pictures in the slavemarket"
+    new "允许奴隶市场上的裸体图片"
+
+    old "No naked pictures in the market"
+    new "不允许奴隶市场上的裸体图片"
 
     # game/BKscreens.rpy:7766
     old "\nChoose the behavior of free girls' pictures"
     new "\n选择自由女孩图片的行为"
 
+    old "Allow naked pictures in the city (naturist trait)"
+    new "允许在城市中出现裸体图片(裸体主义特质)"
+
+    old "No naked pictures in the city"
+    new "不允许在城市中出现裸体图片"
+
     # game/BKscreens.rpy:7770
     old "\nAllow 'close enough' tags to be used (e.g. 'swimsuit' for masseuse events)"
     new "\n允许使用'近似'标签（例如 '泳衣'用于按摩事件）"
-
-    # game/BKscreens.rpy:7773
-    old "For jobs: %s"
-    new "对于工作: %s"
-
-    # game/BKscreens.rpy:7774
-    old "For sex acts: %s"
-    new "对于性行为: %s"
 
     # game/BKscreens.rpy:7782
     old "\nDisplay pack rating on girl profiles"
@@ -1643,6 +1683,15 @@ translate schinese strings:
     old "\nDisplay notifications next to buttons on the home screen"
     new "\n在主页上的按钮旁显示通知"
 
+    old "Flashing notifications (default)"
+    new "闪烁通知（默认）"
+
+    old "Static notifications"
+    new "静态通知"
+
+    old "No notifications"
+    new "没有通知"
+
     # game/BKscreens.rpy:7805
     old "\nDisplay girl status icons"
     new "\n显示女孩状态图标"
@@ -1650,6 +1699,12 @@ translate schinese strings:
     # game/BKscreens.rpy:7827
     old "\nYour preferences for setting girl badges"
     new "\n您对设置女孩徽章的偏好"
+
+    old "Badges can be modified directly on girls' portraits"
+    new "徽章可以直接在女孩的肖像上修改"
+
+    old "Badges can only be modified on a girl's profile"
+    new "徽章只能在女孩的个人资料上修改"
 
     # game/BKscreens.rpy:7832
     old "\nShow/Skip night events"
@@ -1696,40 +1751,40 @@ translate schinese strings:
     new "修复"
 
     # game/BKscreens.rpy:7899
-    old "Portrait"
-    new "头像"
+    # old "Portrait"
+    # new "头像"
 
-    # game/BKscreens.rpy:7900
-    old "Portrait Naked"
-    new "裸体肖像"
+    # # game/BKscreens.rpy:7900
+    # old "Portrait Naked"
+    # new "裸体肖像"
 
-    # game/BKscreens.rpy:7901
-    old "Profile"
-    new "侧身照"
+    # # game/BKscreens.rpy:7901
+    # old "Profile"
+    # new "侧身照"
 
-    # game/BKscreens.rpy:7902
-    old "Profile Naked"
-    new "裸体侧身照"
+    # # game/BKscreens.rpy:7902
+    # old "Profile Naked"
+    # new "裸体侧身照"
 
-    # game/BKscreens.rpy:7905
-    old "Rest Naked"
-    new "裸睡休息"
+    # # game/BKscreens.rpy:7905
+    # old "Rest Naked"
+    # new "裸睡休息"
 
-    # game/BKscreens.rpy:7907
-    old "Waitress Naked"
-    new "毫无遮掩的服务员"
+    # # game/BKscreens.rpy:7907
+    # old "Waitress Naked"
+    # new "毫无遮掩的服务员"
 
-    # game/BKscreens.rpy:7909
-    old "Dancer Naked"
-    new "赤身裸体的表演艺伎"
+    # # game/BKscreens.rpy:7909
+    # old "Dancer Naked"
+    # new "赤身裸体的表演艺伎"
 
-    # game/BKscreens.rpy:7911
-    old "Masseuse Naked"
-    new "不着寸缕的按摩技师"
+    # # game/BKscreens.rpy:7911
+    # old "Masseuse Naked"
+    # new "不着寸缕的按摩技师"
 
-    # game/BKscreens.rpy:7913
-    old "Geisha Naked"
-    new "一丝不挂的脱衣舞娘"
+    # # game/BKscreens.rpy:7913
+    # old "Geisha Naked"
+    # new "一丝不挂的脱衣舞娘"
 
     # game/BKscreens.rpy:7920
     # old "Naked"
@@ -1752,148 +1807,148 @@ translate schinese strings:
     #new "调教"
 
     # game/BKscreens.rpy:7925
-    old "Bisexual Service"
-    new "双性侍奉"
+    # old "Bisexual Service"
+    # new "双性侍奉"
 
-    # game/BKscreens.rpy:7926
-    old "Bisexual Sex"
-    new "双性性交"
+    # # game/BKscreens.rpy:7926
+    # old "Bisexual Sex"
+    # new "双性性交"
 
-    # game/BKscreens.rpy:7927
-    old "Bisexual Anal"
-    new "双性肛交"
+    # # game/BKscreens.rpy:7927
+    # old "Bisexual Anal"
+    # new "双性肛交"
 
-    # game/BKscreens.rpy:7928
-    old "Bisexual Fetish"
-    new "被双性调教"
+    # # game/BKscreens.rpy:7928
+    # old "Bisexual Fetish"
+    # new "被双性调教"
 
-    # game/BKscreens.rpy:7929
-    old "Group Service"
-    new "群体侍奉"
+    # # game/BKscreens.rpy:7929
+    # old "Group Service"
+    # new "群体侍奉"
 
-    # game/BKscreens.rpy:7930
-    old "Group Sex"
-    new "多人性交"
+    # # game/BKscreens.rpy:7930
+    # old "Group Sex"
+    # new "多人性交"
 
-    # game/BKscreens.rpy:7931
-    old "Group Anal"
-    new "多人肛交"
+    # # game/BKscreens.rpy:7931
+    # old "Group Anal"
+    # new "多人肛交"
 
-    # game/BKscreens.rpy:7932
-    old "Group Fetish"
-    new "多人调教"
+    # # game/BKscreens.rpy:7932
+    # old "Group Fetish"
+    # new "多人调教"
 
-    # game/BKscreens.rpy:7936
-    old "Stallion Naked"
-    new "与种马裸体相处"
+    # # game/BKscreens.rpy:7936
+    # old "Stallion Naked"
+    # new "与种马裸体相处"
 
-    # game/BKscreens.rpy:7937
-    old "Stallion Service"
-    new "侍奉种马"
+    # # game/BKscreens.rpy:7937
+    # old "Stallion Service"
+    # new "侍奉种马"
 
-    # game/BKscreens.rpy:7938
-    old "Stallion Sex"
-    new "种马性交"
+    # # game/BKscreens.rpy:7938
+    # old "Stallion Sex"
+    # new "种马性交"
 
-    # game/BKscreens.rpy:7939
-    old "Stallion Anal"
-    new "种马肛交"
+    # # game/BKscreens.rpy:7939
+    # old "Stallion Anal"
+    # new "种马肛交"
 
-    # game/BKscreens.rpy:7940
-    old "Stallion Fetish"
-    new "种马调教"
+    # # game/BKscreens.rpy:7940
+    # old "Stallion Fetish"
+    # new "种马调教"
 
-    # game/BKscreens.rpy:7941
-    old "Stallion Bisexual"
-    new "种马双性恋"
+    # # game/BKscreens.rpy:7941
+    # old "Stallion Bisexual"
+    # new "种马双性恋"
 
-    # game/BKscreens.rpy:7942
-    old "Stallion Group"
-    new "种马群交"
+    # # game/BKscreens.rpy:7942
+    # old "Stallion Group"
+    # new "种马群交"
 
-    # game/BKscreens.rpy:7944
-    old "Beast Naked"
-    new "与野兽裸体相处"
+    # # game/BKscreens.rpy:7944
+    # old "Beast Naked"
+    # new "与野兽裸体相处"
 
-    # game/BKscreens.rpy:7945
-    old "Beast Service"
-    new "侍奉野兽"
+    # # game/BKscreens.rpy:7945
+    # old "Beast Service"
+    # new "侍奉野兽"
 
-    # game/BKscreens.rpy:7946
-    old "Beast Sex"
-    new "与野兽性交"
+    # # game/BKscreens.rpy:7946
+    # old "Beast Sex"
+    # new "与野兽性交"
 
-    # game/BKscreens.rpy:7947
-    old "Beast Anal"
-    new "与野兽肛交"
+    # # game/BKscreens.rpy:7947
+    # old "Beast Anal"
+    # new "与野兽肛交"
 
-    # game/BKscreens.rpy:7948
-    old "Beast Fetish"
-    new "被野兽调教"
+    # # game/BKscreens.rpy:7948
+    # old "Beast Fetish"
+    # new "被野兽调教"
 
-    # game/BKscreens.rpy:7949
-    old "Beast Bisexual"
-    new "与野兽双性恋"
+    # # game/BKscreens.rpy:7949
+    # old "Beast Bisexual"
+    # new "与野兽双性恋"
 
-    # game/BKscreens.rpy:7950
-    old "Beast Group"
-    new "与野兽群交"
+    # # game/BKscreens.rpy:7950
+    # old "Beast Group"
+    # new "与野兽群交"
 
-    # game/BKscreens.rpy:7952
-    old "Monster Naked"
-    new "怪物裸体"
+    # # game/BKscreens.rpy:7952
+    # old "Monster Naked"
+    # new "怪物裸体"
 
-    # game/BKscreens.rpy:7953
-    old "Monster Service"
-    new "侍奉怪物"
+    # # game/BKscreens.rpy:7953
+    # old "Monster Service"
+    # new "侍奉怪物"
 
-    # game/BKscreens.rpy:7954
-    old "Monster Sex"
-    new "与怪物性交"
+    # # game/BKscreens.rpy:7954
+    # old "Monster Sex"
+    # new "与怪物性交"
 
-    # game/BKscreens.rpy:7955
-    old "Monster Anal"
-    new "与怪物肛交"
+    # # game/BKscreens.rpy:7955
+    # old "Monster Anal"
+    # new "与怪物肛交"
 
-    # game/BKscreens.rpy:7956
-    old "Monster Fetish"
-    new "被怪物调教"
+    # # game/BKscreens.rpy:7956
+    # old "Monster Fetish"
+    # new "被怪物调教"
 
-    # game/BKscreens.rpy:7957
-    old "Monster Bisexual"
-    new "与怪物双性恋"
+    # # game/BKscreens.rpy:7957
+    # old "Monster Bisexual"
+    # new "与怪物双性恋"
 
-    # game/BKscreens.rpy:7958
-    old "Monster Group"
-    new "与怪物群交"
+    # # game/BKscreens.rpy:7958
+    # old "Monster Group"
+    # new "与怪物群交"
 
-    # game/BKscreens.rpy:7960
-    old "Machine Naked"
-    new "机械裸体"
+    # # game/BKscreens.rpy:7960
+    # old "Machine Naked"
+    # new "机械裸体"
 
-    # game/BKscreens.rpy:7961
-    old "Machine Service"
-    new "机械侍奉"
+    # # game/BKscreens.rpy:7961
+    # old "Machine Service"
+    # new "机械侍奉"
 
-    # game/BKscreens.rpy:7962
-    old "Machine Sex"
-    new "机械性交"
+    # # game/BKscreens.rpy:7962
+    # old "Machine Sex"
+    # new "机械性交"
 
-    # game/BKscreens.rpy:7963
-    old "Machine Anal"
-    new "机械肛交"
+    # # game/BKscreens.rpy:7963
+    # old "Machine Anal"
+    # new "机械肛交"
 
-    # game/BKscreens.rpy:7964
-    old "Machine Fetish"
-    new "被机械调教"
+    # # game/BKscreens.rpy:7964
+    # old "Machine Fetish"
+    # new "被机械调教"
 
-    # game/BKscreens.rpy:7965
-    old "Machine Bisexual"
-    new "机械双性恋"
+    # # game/BKscreens.rpy:7965
+    # old "Machine Bisexual"
+    # new "机械双性恋"
 
-    # game/BKscreens.rpy:7966
-    old "Machine Group"
-    new "机械群交"
+    # # game/BKscreens.rpy:7966
+    # old "Machine Group"
+    # new "机械群交"
 
     # game/BKscreens.rpy:8024
     old "Girl Mix"
