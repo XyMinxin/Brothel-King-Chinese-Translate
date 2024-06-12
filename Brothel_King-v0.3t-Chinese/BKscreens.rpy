@@ -242,7 +242,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
-                text "No guild fee is due." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
+                text "无需缴纳公会费用." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
 
 
 screen tax_tab(fade=False):
@@ -271,7 +271,7 @@ screen tax_tab(fade=False):
                 $ due_date = "in %s days" % (8-calendar.day)
 
             vbox:
-                text "Guild Fee" bold True size res_font(14)
+                text "公会费用" bold True size res_font(14)
                 text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
 
 
@@ -491,9 +491,9 @@ screen girl_tab(girls, context="girls"):
         if game.has_active_mod("Headhunter Mod"):
             if game.headhunter_button_enabled:
                 key "shift_K_h" action Jump("headhunter_main")
-            $ textHH = "{u}猎头{/u}" #
+            $ textHH = "{u}猎头公司{/u}" #
 
-            $ textHH2 = "订购具有特定特性的从属产品以增加成本."
+            $ textHH2 = "订购具有特定特征的奴隶，以增加成本."
 
             if game.headhunter_button_enabled:
                 textbutton textHH:
@@ -699,7 +699,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
             $ text1 = __(girl.job.capitalize()) # text1 is displayed on the button next to girl name and portrait
             $ but_ttip = "{b}" + girl.fullname + "{/b} " + __(" 是一个 {0} 等级的 {1}.").format(__(str(girl.level)), __(girl_related_dict[girl.job]))
         else:
-            $ text1 = "无工作"
+            $ text1 = "休息"
             $ but_ttip = "{b}" + girl.fullname + __("{/b}正在休息.")
         $ text_col = job_color[girl.job]
         $ use_badge = True
@@ -715,18 +715,18 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     elif context == "farm":
         if farm.programs[girl].target != "no training":
             $ text1 = farm_related_dict[farm.programs[girl].target.capitalize()]
-            $ but_ttip = "{b}" + girl.fullname + "{/b}正在训练 (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场训练 (" + text1 + ")."
             $ text_col = c_orange
         else:
             $ text1 = farm_related_dict[farm.programs[girl].holding.capitalize()]
-            $ but_ttip = "{b}" + girl.fullname + "{/b}正在被关押 (" + text1 + ")."
+            $ but_ttip = "{b}" + girl.fullname + "{/b}在农场待机 (" + text1 + ")."
             $ text_col = c_white
         $ use_badge = True
 
     elif context == "slavemarket":
         $ text1 = experienced_description[girl.sexual_experience]
         $ text2 = str(girl.get_price("buy")) + "金币"
-        $ but_ttip = "{b}" + girl.fullname + "{/b}, " + text2 + __(". 点击查看详细信息.")
+        $ but_ttip = "购买{b}" + girl.fullname + "{/b}, 需要" + text2 + __(". 点击查看详细信息.")
         $ text_col = experienced_color[girl.sexual_experience]
 
     if context == "powers":
@@ -1796,7 +1796,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 if context == "slavemarket":
                     $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" 事先的训练可能会使女孩更适合性行为.")
-                    textbutton __("Prior training received:   {color=" + experienced_color[girl.sexual_experience] + "}") + __(experienced_description[girl.sexual_experience]) + "{/color}" ymargin yres(3) ypadding 0 text_color c_white text_size res_font(14) background None action NullAction() tooltip ttip
+                    textbutton __("性奴隶训练等级:   {color=" + experienced_color[girl.sexual_experience] + "}") + __(experienced_description[girl.sexual_experience]) + "{/color}" ymargin yres(3) ypadding 0 text_color c_white text_size res_font(14) background None action NullAction() tooltip ttip
 
 
                 vbox:
@@ -1889,7 +1889,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
 
                 ## TRAITS LIST ##
-                textbutton "Traits" text_color c_white text_size res_font(18) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+                textbutton "特质列表" text_font "bk.ttf" text_outlines [ (1, "#000", 1, 0) ] text_color c_white text_size res_font(18) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                     action NullAction()
                     if context != "free" or girl.MC_relationship_level >= 3:
                         hovered Show("trait_details", girl=girl)
@@ -1910,7 +1910,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                                 $ ttip = trait.get_description(context)
 
-                                textbutton trait.name:
+                                textbutton trait_name_dict[trait.name]:
 
                                     background None
                                     xalign 0.0
@@ -1943,10 +1943,10 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 if context == "girls":
                     text "" size res_font(3)
-                    text "Upkeep" size res_font(18)
+                    text "保养费用" size res_font(18) yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                     if girl.locked_upkeep:
-                        text "Her upkeep is currently withdrawn." size res_font(14) italic True
+                        text "她的保养费目前已被收回。" size res_font(14) italic True
 
                     else:
                         key "noshift_K_a" action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", s_click))
@@ -2329,7 +2329,7 @@ screen button_overlay(girl, context="girls"):
             elif girl.hurt > 0:
                 $ text1 = "受伤"
                 if girl.hurt <= 1:
-                    $ ttip = __("This girl is hurt and will need to rest for 1 more day until she is ready to do anything.")
+                    $ ttip = __("这个女孩受伤了，需要再休息一天，直到她准备好做任何事情.")
                 else:
                     $ ttip = __("This girl is hurt and will need to rest for ") + str(round_int(girl.hurt)) + __(" more days until she is ready to do anything.")
 
@@ -3083,14 +3083,14 @@ screen trait_details(girl):
 
             spacing 3
 
-            text __("%s's traits") % (girl.fullname) xalign 0.5 color c_orange
+            text girl.name + "的特质列表" size res_font(28) xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             text "" size res_font(6)
 
             for trait in girl.traits:
                 hbox:
                     frame background None ypadding 0 xsize xres(150) xfill True xalign 0.0 yalign 0.0:
-                        text trait.name xmaximum xres(150) yalign 0.0 size res_font(14) bold True:
+                        text trait_name_dict[trait.name] xmaximum xres(150) yalign 0.0 size res_font(14) bold True:
                             if trait in gold_traits:
                                 color c_orange
                             elif trait in pos_traits:
@@ -3103,7 +3103,7 @@ screen trait_details(girl):
 
             if girl.perks:
 
-                text __("%s's perks") % girl.name xalign 0.5 color c_orange
+                text girl.name + "的特质树" size res_font(28) xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 text "" size res_font(6)
 
@@ -6020,27 +6020,27 @@ screen postings(qlist):
 
                             text "" size res_font(18)
 
-                            text "Duration" size res_font(18) color c_prune
+                            text "持续" size res_font(18) color c_prune
 
-                            text str(selected_quest.duration) + __(" days") size res_font(14) color c_brown
+                            text str(selected_quest.duration) + __(" 天") size res_font(14) color c_brown
 
                             text "" size res_font(18)
 
                             if selected_quest.type == "class":
 
-                                text "Cost" size res_font(18) color c_prune
+                                text "费用" size res_font(18) color c_prune
 
-                                text str(int(selected_quest.gold)) + " gold" size res_font(14) color c_brown
+                                text str(int(selected_quest.gold)) + " 金币" size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 
-                                text "Enrolled" size res_font(18) color c_prune
+                                text "报名" size res_font(18) color c_prune
 
                                 text str(len(selected_quest.enrolled)) + "/" + str(selected_quest.capacity) + __(" girls") size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 
-                                text "Gains" size res_font(18) color c_prune
+                                text "获得" size res_font(18) color c_prune
 
                                 for stat, _min, _max in selected_quest.bonuses:
 
@@ -6055,19 +6055,19 @@ screen postings(qlist):
 
                                     text "[stat!t]" + " " + t size res_font(14) color c_brown
 
-                                textbutton "\nMax skill: " + str(selected_quest.stat_cap) text_size res_font(14) text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
-                                    tooltip "Classes may cause a girl's skills to exceed their level cap."
+                                textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size res_font(14) text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
+                                    tooltip "课程可能导致女孩的技能超过等级上限。"
 
 
                             elif selected_quest.type == "quest":
 
-                                text "Reward" size res_font(18) color c_prune
+                                text "报酬" size res_font(18) color c_prune
 
-                                text str(selected_quest.gold) + " gold" size res_font(14) color c_brown
+                                text str(selected_quest.gold) + " 金币" size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 
-                                text "Requirements" size res_font(18) color c_prune
+                                text "要求" size res_font(18) color c_prune
 
                                 for stat, val in selected_quest.requirements:
 
@@ -6075,18 +6075,18 @@ screen postings(qlist):
 
                                 text "" size res_font(18)
 
-                                text "Desirable" size res_font(18) color c_prune
+                                text "令人满意" size res_font(18) color c_prune
 
-                                text selected_quest.pos_traits[0].name + ", " + selected_quest.pos_traits[1].name size res_font(14) color c_emerald
+                                text trait_name_dict[selected_quest.pos_traits[0].name] + ", " + trait_name_dict[selected_quest.pos_traits[1].name] size res_font(14) color c_emerald
 
                                 text "" size res_font(18)
 
-                                text "Undesirable" size res_font(18) color c_prune
+                                text "不受欢迎" size res_font(18) color c_prune
 
-                                text selected_quest.neg_trait.name size res_font(14) color c_crimson
+                                text trait_name_dict[selected_quest.neg_trait.name] size res_font(14) color c_crimson
 
                 else:
-                    text "No task is currently available." italic True color c_brown size res_font(18)
+                    text "目前没有任何任务可用。" italic True color c_brown size res_font(18)
 
             fixed xalign 0.5:
                 fit_first True
@@ -6125,8 +6125,8 @@ screen postings(qlist):
 
                 hbox:
 
-                    textbutton "Quests" text_size res_font(14) xsize xres(80) xfill True style "posting_button" action (Return("quests"), SelectedIf(qlist == quest_board.quests))
-                    textbutton "Classes" text_size res_font(14) xsize xres(80) xfill True style "posting_button" action (Return("classes"), SelectedIf(qlist == quest_board.classes))
+                    textbutton "任务" text_size res_font(14) xsize xres(80) xfill True style "posting_button" action (Return("quests"), SelectedIf(qlist == quest_board.quests))
+                    textbutton "课程" text_size res_font(14) xsize xres(80) xfill True style "posting_button" action (Return("classes"), SelectedIf(qlist == quest_board.classes))
 
 
                 if qlist:
@@ -6147,13 +6147,13 @@ screen postings(qlist):
 
                                 if quest.type == "quest":
 
-                                    $ ttip = __("This task requires ") + __(and_text([stat for stat, v in quest.requirements])) + ".\n"
-                                    $ ttip += str(quest.count_eligible_girls()) + __(" girls can complete this task.")
+                                    $ ttip = __("这个任务需要 ") + __(and_text([stat for stat, v in quest.requirements])) + ".\n"
+                                    $ ttip += str(quest.count_eligible_girls()) + __(" 女孩可以完成这项任务。")
 
                                 elif quest.type == "class":
 
-                                    $ ttip = __("This class may improve ") + __(and_text([stat for stat, _min, _max in quest.bonuses])) + ".\n"
-                                    $ ttip += str(len(quest.enrolled)) + "/" + str(quest.capacity) + " are enrolled in this class."
+                                    $ ttip = __("专门课程可能会提高 ") + __(and_text([stat for stat, _min, _max in quest.bonuses])) + ".\n"
+                                    $ ttip += str(len(quest.enrolled)) + "/" + str(quest.capacity) + " 是这门课程的学生。"
 
                                 button:
                                     xsize xres(160)
@@ -6178,14 +6178,14 @@ screen postings(qlist):
                                             else:
                                                 $ text1 = ""
                                             text text1 + "[quest.name!t]"  size res_font(13)
-                                            text str(int(quest.gold)) + " gold" size res_font(13)
+                                            text str(int(quest.gold)) + " 金币" size res_font(13)
 
                 if calendar.active_contract:
                     text ""
                     text ""
                     button xfill True xpadding 6 ypadding 6 action Return("active_contract"): # hovered Show("contract_tab", contract=calendar.active_contract, x=450, active=True, transition=Dissolve(0.15)) unhovered Hide("contract_tab", transition=Dissolve(0.15)) tooltip "Show active contract (%s day%s left)." % (28-calendar.day, plural(28-calendar.day)):
                         vbox xfill True:
-                            text "Active contract" size res_font(14) color c_darkbrown xalign 0.5
+                            text "有效合同" size res_font(14) color c_darkbrown xalign 0.5
                             add ProportionalScale("UI/" + license_dict[1][1], *res_tb(50)) xalign 0.5
 
 
@@ -6221,10 +6221,10 @@ screen personality_screen():
         if selected_girl:
 
             hbox xalign 0.0:
-                textbutton "Pers. " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
-                textbutton "Tastes" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
-                textbutton "Sex. " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
-                textbutton "Events" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
+                textbutton "个性. " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
+                textbutton "品味" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
+                textbutton "性趣 " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
+                textbutton "事件" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
 
             hbox spacing xres(6) xpos 0.01:
 
@@ -6351,7 +6351,7 @@ screen farm_menu(prog, can_cancel=True):
 
         text "" size 16
 
-        textbutton "Farm activities" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "在农场给吉泽尔干活。这些活动不需要仆从。"
+        textbutton "农场活动" style "inv_no_padding" xalign 0.01 text_size res_font(18) text_drop_shadow (2, 2) action NullAction() tooltip "在农场给吉泽尔干活。这些活动不需要仆从。"
 
         textbutton "休息" style "farm_button" text_size res_font(18) xsize yres(780) action (SetField(prog, "target", "no training"), SetField(prog, "holding", "rest"), SetField(prog, "installation", None), SelectedIf(prog.target == "no training" and prog.holding=="rest")) tooltip "她会乖乖待在猪圈里。"
 
@@ -6802,10 +6802,10 @@ screen sex_details(girl):
 
         grid 4 8 spacing 6:
 
-            text __("Act") size res_font(14) bold True
-            text __("Preference") size res_font(14) bold True
-            text __("Will train") size res_font(14) bold True xalign 0.5
-            text __("Will work") size res_font(14) bold True xalign 0.5
+            text __("性行为") size res_font(14) bold True
+            text __("偏好") size res_font(14) bold True
+            text __("训练意向") size res_font(14) bold True xalign 0.5
+            text __("工作意向") size res_font(14) bold True xalign 0.5
 
             for act in extended_sex_acts:
                 text act.capitalize() size res_font(14) bold True

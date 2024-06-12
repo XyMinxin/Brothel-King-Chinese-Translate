@@ -142,9 +142,9 @@ translate schinese strings:
     old " Prior training may make a girl more suitable for sex acts."
     new "之前接受的训练可能会使女孩更适合从事性行为。"
 
-    # game/BKscreens.rpy:1799
-    old "Prior training received:   {color="
-    new "性奴隶训练等级:   {color="
+    # # game/BKscreens.rpy:1799
+    # old "Prior training received:   {color="
+    # new "性奴隶训练等级:   {color="
 
     # game/BKscreens.rpy:1845
     old "This will activate {b}"
@@ -590,21 +590,21 @@ translate schinese strings:
     old "%s's sexual preferences"
     new " %s 的性偏好"
 
-    # game/BKscreens.rpy:6801
-    old "Act"
-    new "行动"
+    # # game/BKscreens.rpy:6801
+    # old "Act"
+    # new "性行为"
 
-    # game/BKscreens.rpy:6802
-    old "Preference"
-    new "偏好"
+    # # game/BKscreens.rpy:6802
+    # old "Preference"
+    # new "偏好"
 
-    # game/BKscreens.rpy:6803
-    old "Will train"
-    new "将训练"
+    # # game/BKscreens.rpy:6803
+    # old "Will train"
+    # new "训练意向"
 
-    # game/BKscreens.rpy:6804
-    old "Will work"
-    new "将工作"
+    # # game/BKscreens.rpy:6804
+    # old "Will work"
+    # new "工作意向"
 
     # game/BKscreens.rpy:6900
     old " challenge{/b}: This challenges your {b}"

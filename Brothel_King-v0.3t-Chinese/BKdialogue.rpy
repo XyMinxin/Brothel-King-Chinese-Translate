@@ -5317,7 +5317,7 @@ label test_dialogue():
     python:
         girl = MC.girls[0]
         add_dialogue("test dialg", "generic", "你好，你想要什么？")
-        add_dialogue("test dialm", "generic", ["多个对话开始", "g：那是什么？", "mc：我们正在进行多次对话。", "g：哦。我懂了。", "多重对话结束"], True)
+        add_dialogue("test dialm", "generic", ["Multiple dialogue starts", "g：那是什么？", "mc：我们正在进行多次对话。", "g：哦。我懂了。", "多重对话结束"], True)
         add_dialogue("test dialp", girl.personality.name, "这是我的个性对话。")
         add_dialogue("test diala", rand_choice(girl.attributes), "这是我的属性对话。")
 
