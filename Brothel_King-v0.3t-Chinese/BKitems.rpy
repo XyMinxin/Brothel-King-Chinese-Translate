@@ -22,14 +22,14 @@ init -2 python:
 ## FURNITURE TYPES ##
 # A tuple (type, description)
 
-    furniture_types = [("Decoration", "Attracts new kinds of customers to your brothel"),
-                       ("Furnishing", "Unlocks more options for attracting customers"),
-                       ("Utility", "Help with advertising, security and maintenance"),
-                       ("Comfort", "Help your girls feel more comfortable in the brothel"),
-                       ("Windows", "Influences your girl's preferences"),
-                       ("Altars", "Pray here and get results, for once"),
-                       ("Arcane", "Helps with dark rituals"),
-                       ("Gizmos", "Strange artefacts from a bygone technological age")
+    furniture_types = [("Decoration", "为你的青楼吸引新类型的顾客"),
+                       ("Furnishing", "开启更多吸引客户的选择"),
+                       ("Utility", "协助广告、安全和维护"),
+                       ("Comfort", "帮助女孩在青楼中过到更舒适"),
+                       ("Windows", "影响女孩的喜好"),
+                       ("Altars", "在这里祈祷并得到结果，仅此一次"),
+                       ("Arcane", "对黑暗仪式有帮助"),
+                       ("Gizmos", "来自已逝科技时代的奇怪文物")
                        ]
 
 ## ITEMS ##
@@ -40,8 +40,8 @@ label init_items():
         # REGULAR ITEMS #
 
         all_items = [
-                    Item(name = 'Short sword', target = 'MC', type = IT_Weapon, pic = 'Short sword.webp', rank = 1, rarity = 1, price = 250, effects = (Effect('change', 'strength', 1), ), description =  ""),
-                    Item(name = 'Cutlass', target = 'MC', type = IT_Weapon, pic = 'Cutlass.webp', rank = 1, rarity = 2, price = 500, effects = (Effect('change', 'strength', 2), ), description =  "It's not a knife. That's a knife."),
+                    Item(name = '短剑', target = 'MC', type = IT_Weapon, pic = 'Short sword.webp', rank = 1, rarity = 1, price = 250, effects = (Effect('change', 'strength', 1), ), description =  ""),
+                    Item(name = '弯刀', target = 'MC', type = IT_Weapon, pic = 'Cutlass.webp', rank = 1, rarity = 2, price = 500, effects = (Effect('change', 'strength', 2), ), description =  "它不是一把匕首。它是一把弯刀。"),
                     Item(name = 'Axe', target = 'MC', type = IT_Weapon, pic = 'Axe.webp', rank = 2, rarity = 2, price = 1000, effects = (Effect('change', 'strength', 2), Effect('change', 'spirit', 1), ), description =  ""),
                     Item(name = 'Lance', target = 'MC', type = IT_Weapon, pic = 'Lance.webp', rank = 2, rarity = 2, price = 2500, effects = (Effect('change', 'strength', 3), Effect('change', 'charisma', 1), ), description =  ""),
                     Item(name = 'Long sword', target = 'MC', type = IT_Weapon, pic = 'Long sword.webp', rank = 2, rarity = 3, price = 3500, effects = (Effect('change', 'strength', 3), Effect('change', 'charisma', 1), Effect('change', 'spirit', 1), ), description =  ""),
@@ -144,13 +144,13 @@ label init_items():
                     Item(name = 'Orange flower', target = 'girl', type = IT_Flower, pic = 'Orange flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'orange', 1), ), description = "橙色鲜花接触皮肤会让皮肤变得十分敏感，你想涂在哪里？", hidden_effect = True),
                     Item(name = 'Purple flower', target = 'girl', type = IT_Flower, pic = 'Purple flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'purple', 1), ), description = "紫色鲜花暗示今晚你可以对她为所欲为，如果她接受的话。", hidden_effect = True),
                     Item(name = 'Pink flower', target = 'girl', type = IT_Flower, pic = 'Pink flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'pink', 1), ), description = "粉色鲜花常会刺激女性的乳头和阴蒂变得肥大充满弹性。", hidden_effect = True),
-                    Item(name = 'Black flower', target = 'girl', type = IT_Flower, pic = 'Black flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'black', 1), ), description = "黑色鲜花具有安神作用，催眠洗脑前闻一闻效果更佳哦。", hidden_effect = True),
+                    Item(name = '黑色鲜花', target = 'girl', type = IT_Flower, pic = 'Black flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'black', 1), ), description = "黑色鲜花具有安神作用，催眠洗脑前闻一闻效果更佳哦。", hidden_effect = True),
                     ]
 
 
         # SPECIAL ITEMS AND FURNITURE #
 
-        blueprint_item = Item(name = 'Ancient blueprint', target = 'MC', type = IT_Story, pic = 'scanner blueprint.webp', template = False, rank = 1, rarity = "S", price = 0, effects = [], description = "An ancient blueprint written on a light yet strong paper-like material. The instructions are foreign and indecipherable, but a skilled craftsman could perhaps make sense of it.", hidden_effect = True)
+        blueprint_item = Item(name = '古代的蓝图', target = 'MC', type = IT_Story, pic = 'scanner blueprint.webp', template = False, rank = 1, rarity = "S", price = 0, effects = [], description = "An ancient blueprint written on a light yet strong paper-like material. The instructions are foreign and indecipherable, but a skilled craftsman could perhaps make sense of it.", hidden_effect = True)
 
         vitals_scanner = Furniture('Strange machine', type='Gizmos', pic='scanner.webp', rank=2, chapter=2, cost=[('wood', 20), ('dye', 20), ('leather', 20)], duration=4, effects=[Effect("special", "autorest", 1, scope="brothel")], base_description="This mysterious machine glows with pulsating magical energy.") #  It scans your girls automatically to make sure they are fit to work.
 
