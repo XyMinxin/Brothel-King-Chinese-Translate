@@ -816,7 +816,7 @@ init -10 python:
                        "Expensive" : "养尊处优",
 
                        "Slow" : "天资愚钝",
-                       "Distrustful" : "阳奉阴违",
+                       "Disloyal" : "阳奉阴违",
                        "Fearful" : "胆小如鼠",
                        "Vulnerable" : "不堪一击",
                        "Unlucky" : "厄运缠身",
