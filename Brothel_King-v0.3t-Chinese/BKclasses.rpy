@@ -3977,7 +3977,7 @@ init -2 python:
 
                 percentage = round_int(val * 100)
 
-                text1 += str(percentage) + __("% to ")
+                text1 += str(percentage) + __("% ")
 
             elif self.type == "gift":
                 text1 += str(round_int(val)) + " "
