@@ -336,7 +336,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             loot = enemies * 150 + war_machines * 600
 
-            if enemy_general.has_trait("Warrior"):
+            if enemy_general.has_trait("战士"):
                 enemy_g = "佣兵队长"
             elif enemy_general.has_trait("Caster"):
                 enemy_g = "自由女巫"
@@ -412,7 +412,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                         $ allies_factor += 0.1
 
 
-            "Challenge their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
+            "Challenge their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
                 $ renpy.block_rollback()
                 play sound s_sheath
                 you "Leave their general to me... I will end this!" with vpunch
@@ -538,7 +538,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             play sound s_clash
 
-            if enemy_general.has_trait("Warrior"):
+            if enemy_general.has_trait("战士"):
                 "The mercenary draws out her weapon and rises to meet you."
                 call challenge("fight", game.chapter + 1) from _call_challenge_38
                 $ result = _return
@@ -779,7 +779,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             $ narrator("You give your last orders, helping a girl don a leather vest, commenting on another girl's footing. They are servants, not fighters, but this will have to do. " + event_color["good"] % "+1 to all girls defense.")
 
 
-                "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("Warrior"):
+                "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
                     $ renpy.block_rollback()
                     play sound s_sheath
                     "You leave your girls to fend for themselves and exit the brothel from a side door, determined to take out the enemy leader."
@@ -849,7 +849,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             if r == "duel":
                 "Ignoring the fighting, you sneak past their front line, spotting [enemy_general.fullname], their general, giving orders from the back. {nw}"
-                if enemy_general.has_trait("Warrior"):
+                if enemy_general.has_trait("战士"):
                     play sound s_sheath
                     extend "Jumping out of hiding, you charge the enemy general with a war cry."
 
@@ -1113,7 +1113,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 # Create new enemy general for the siege security event
 
                 if dice(2) == 1:
-                    $ enemy_general = get_girls(1, free=True, p_traits=["Warrior"])[0]
+                    $ enemy_general = get_girls(1, free=True, p_traits=["战士"])[0]
                 else:
                     $ enemy_general = get_girls(1, free=True, p_traits=["Caster"])[0]
                 $ enemy_general.love = -50
@@ -1306,13 +1306,13 @@ init -3 python:
                 log.add_report(__("{color=[c_green]}Security alert! No was one hurt.{/color}"))
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_pic = "events/" + rand_choice(security_pics["sword defense"])
                     sec_sound = s_clash
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_pic = "events/" + rand_choice(security_pics["magic defense"])
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "奸商":
                     sec_pic = "events/" + rand_choice(security_pics["dragon defense"])
                     sec_sound = s_roar
 
@@ -1474,11 +1474,11 @@ init -3 python:
                 log.add_report("{color=[c_green]}Security alert! Riot prevented.{/color}")
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_sound = s_punch
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "奸商":
                     sec_sound = s_crowd_cheer
 
                 sec_text += event_color["good"] % rand_choice(MC.filter_say([__("wa: \nFortunately, you were around and promptly beat some sense into the worst offenders. The others quickly went quiet."),

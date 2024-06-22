@@ -867,11 +867,11 @@ label c2_princess_letter:
     show expression bg_bro at top
     with dissolve
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         $ activity = "your early weapon training"
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         $ activity = "your usual meditation session"
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         $ activity = "the daily farmer's market"
 
     "Late in the morning, you come back to [brothel.name] from [activity] when you hear a sudden scream."
@@ -4246,11 +4246,11 @@ label c2_homura_okiya1():
 
     you "Nevertheless, the city can be dangerous at night. I'm not sure you should act so carefree..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         $ text1 = "mighty warrior"
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         $ text1 = "grand wizard"
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         $ text1 = "charming rogue"
 
     homura normal "Oh, but surely I will be safe here! Escorted by [MC.name], [text1], and good friend of the Princess!"
@@ -6160,7 +6160,7 @@ label intercept_narika():
 
         call receive_item(narika_hair) from _call_receive_item_3
 
-        if MC.playerclass != "Wizard":
+        if MC.playerclass != "法师":
             you "But why? What can we possibly do with that?"
         else:
             you "I see where this is going..."
@@ -6215,7 +6215,7 @@ label c2_narika_H1():
 
     suzume "Oh, just a common ninja magical trick. A tracking spell..."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "I thought that was what you'd be going for. I've already prepared a magic circle."
 
         suzume normal "Perfect! I'll let you lead the ritual, then... I'm, err, not the best with magic."
@@ -6677,7 +6677,7 @@ label intercept_mizuki():
 
         scene black with fade
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             play sound s_fire
             "Conjuring a fire spell to turn your staff into a blowtorch, you start melting the thick ice. After you're done, you cannot see the Kunoichi anywhere."
 
@@ -6736,7 +6736,7 @@ label intercept_mizuki():
 
         mizuki "Why, sorcery, of course. I thought that was a given."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Magic can slow down aging, true... But not stop it completely."
 
             mizuki "There's more than one type of magic, dear."
@@ -6891,7 +6891,7 @@ label intercept_mizuki():
 
         suzume "I can still feel her Ki, but... It's getting weaker. She's getting away!"
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "No... She was definitely too weak to cast an invisibility spell..."
 
         else:
@@ -6940,7 +6940,7 @@ label intercept_mizuki():
             else:
                 "You swim hard to reach the kimono, but it seems to stay ahead of you no matter what you do. Soon, you feel your stamina diminish."
 
-                if MC.playerclass == "Trader":
+                if MC.playerclass == "奸商":
                     you "I need to go back..."
 
                     "The current is against you, but you remember from your time as a child swimming in Borgo's harbor that it is useless to struggle against it."
@@ -9725,7 +9725,7 @@ label c2_meet_papa_freak():
 
     you "It's alright."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "By the way, you should try and use a soul-charged derivator. That's how we did it at the Karkyr Academy."
 
         papa_apprentice "A derivator... Of course! Why didn't I think about that?"

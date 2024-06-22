@@ -134,7 +134,7 @@ label init_items():
                     Item(name = 'Healing powder', target = 'minion', type = IT_Misc, pic = 'healing powder.webp', template = False, rank = 1, rarity = "M", charges = 1, price = 100, effects = (Effect('special', 'heal minion', 1), ), description = "这种来自东方的神秘粉末可以治愈仆从的伤口或修复魔工机械。但是副作用可能包括头晕，皮肤鳞片化，长出触手。"),
                     Item(name = 'Cimerian scrap', target = 'misc', type = IT_Misc, pic = 'Cimerian scrap.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 250, effects = (), description = "一个神秘的古代科技残件。只是个垃圾。"),
                     Item(name = 'Cimerian artefact', target = 'misc', type = IT_Misc, pic = 'Cimerian artefact.webp', sound=s_vibro, template = False, rank = 1, max_rank = 5, rarity = 4, charges = 1, price = 1000, effects = (), description = "一个神秘的古代科技器械，但还是坨废铁。"),
-                    Item(name = "Lightning Rod", target = 'MC', type = IT_Story, pic = "lightning rod.webp", template=False, rank=2, max_rank = 5, rarity=3, price = 1000, effects = (), description = "防止被雷劈。在某些场合，它可以救你一命，尽管在妓院工作时被闪电击中的几率非常低。有这钱买点安全套和避孕药可能更有用。"),
+                    Item(name = "Lightning Rod", target = 'MC', type = IT_Story, pic = "lightning rod.webp", template=False, rank=2, max_rank = 5, rarity=3, price = 1000, effects = (), description = "防止被雷劈。在某些场合，它可以救你一命，尽管在青楼工作时被闪电击中的几率非常低。有这钱买点安全套和避孕药可能更有用。"),
 
                     Item(name = 'White flower', target = 'girl', type = IT_Flower, pic = 'White flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'white', 1), ), description = "白色鲜花象征着纯洁的爱情，也可能是白浊的精液覆盖在花穴。", hidden_effect = True),
                     Item(name = 'Yellow flower', target = 'girl', type = IT_Flower, pic = 'Yellow flower.webp', template = False, rank = 1, max_rank = 5, rarity = "F", price = 75, effects = (Effect('flower', 'yellow', 1), ), description = "黄色鲜花带有今晚想要和你上床的暗示，送几朵做几次。", hidden_effect = True),
@@ -459,7 +459,7 @@ screen item_tab(context, left_party, right_party): # Where X_party are a list of
                     use universal_selector(party=left_party, current=left_focus, var="left_focus", avoid=right_focus, sc_prefix="") id "sel1"
                 hbox spacing xres(6) xalign 0.0:
                     frame xsize xres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                        textbutton {True: "Hide", False: "Search"}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
+                        textbutton {True: "隐藏", False: "搜索"}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
                     use sorting_tab(context + " items", sort_target=left_focus.items, sorters=["type", "price", "alpha"]) id "st1"
                 hbox xalign 0.0:
                     use item_list(items=left_focus.items, owner=left_focus, counterpart=right_focus, sc_prefix="noshift_", search=show_search_left) id "il1"
@@ -538,7 +538,7 @@ screen universal_selector:
                 $ sched = current.workdays[calendar.get_weekday()]
 
             else:
-                $ text1 += __("\n无职业")
+                $ text1 += __("\nNo job")
                 $ sched = 0
 
             if current.away:
@@ -583,7 +583,7 @@ screen sorting_tab(context, sort_target=None, sorters=[]): # Sorters are defined
 
                 textbutton _caption text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None:
                     action (Function(sort_target.sort, key=lambda x, s=_attr: getattr(x, s), reverse=_reverse), SetDict(game.sorting_dict, context, [_caption, _attr, _ttip, _reverse]))
-                    tooltip __("Click to sort by ") + __(_ttip) +"."
+                    tooltip __("点击根据") + __(_ttip) +"排序."
 
 screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also accept Minions as 'items'
 
@@ -619,7 +619,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
 
             if search:
                 hbox:
-                    text "Search: " size res_font(16) color c_brown
+                    text "搜索: " size res_font(16) color c_brown
                     input size res_font(16) color c_darkorange changed(MC.add_text_filter)
 
             if items:
@@ -656,10 +656,10 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                                         $ text1 +=  __("\nLevel ") + str(it.level)
 
                                     if "sell" in acts:
-                                        $ text1 += "\n" + str(it.get_price("sell")) + " gold"
+                                        $ text1 += "\n" + str(it.get_price("sell")) + "金币"
 
                                     if "buy" in acts:
-                                        $ text1 += "\n" + str(it.get_price("buy")) + " gold"
+                                        $ text1 += "\n" + str(it.get_price("buy")) + "金币"
 
                                     text __(text1) size res_font(14)
 
@@ -829,7 +829,7 @@ screen item_profile(it):
             if isinstance(type, ItemType):
                 text "{color=[col]}" + __(it.type.name) + "{/color}" xalign 0.5 size res_font(18)
             else:
-                text "{color=[col]}" + __(it.target.capitalize()) + "{/color}" xalign 0.5 size res_font(18)
+                text "{color=[col]}" + __(setting_name_dict[it.target.capitalize()]) + "{/color}" xalign 0.5 size res_font(18)
 
             if isinstance(it, Item):
                 text __(it.base_description) size res_font(14) xalign 0.5
@@ -838,15 +838,15 @@ screen item_profile(it):
             text ""
 
             if "buy" in acts:
-                text str(it.get_price("buy")) + " gold" xalign 0.5
+                text str(it.get_price("buy")) + "金币" xalign 0.5
                 text ""
 
             if "bargain" in acts:
-                text str(it.get_price("bargain")) + " gold" xalign 0.5
+                text str(it.get_price("bargain")) + "金币" xalign 0.5
                 text ""
 
             if "sell" in acts:
-                text str(it.get_price("sell")) + " gold" xalign 0.5
+                text str(it.get_price("sell")) + "金币" xalign 0.5
                 text ""
 
             if isinstance(it, Item) and it in MC.items and not it.sellable:
@@ -864,7 +864,7 @@ screen item_profile(it):
                                 unhovered SetScreenVariable("focused_char", owner)
 
                 if "bargain" in acts:
-                    textbutton __("Skip") action Return("leave") xalign 0.5
+                    textbutton __("跳过") action Return("leave") xalign 0.5
 
     if isinstance(it, Item) and focused_char and (it.can_wear("girl") or it.can_use("girl")):
         if focused_char == left_focus:
@@ -890,7 +890,7 @@ screen inventory(char, counterpart=None):
                         $ acts = it.get_acts(char, counterpart)
 
                 vbox:
-                    text slot.capitalize() size res_font(14) xalign 0.5 color c_brown
+                    text setting_name_dict[slot.capitalize()] size res_font(14) xalign 0.5 color c_brown
 
                     button xsize yres(60) ysize yres(60) xfill True yfill True xalign 0.5:
                         style "girlbutton_blue"
@@ -899,7 +899,7 @@ screen inventory(char, counterpart=None):
                             action (Show("item_profile", it=eq, transition = dissolve), SetVariable("owner", char), SetVariable("counterpart", counterpart), SetVariable("selected_item", eq), SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip __(eq.description)
                         else:
-                            text "Empty" size res_font(12) italic True xalign 0.5 yalign 0.5
+                            text "空的" size res_font(12) italic True xalign 0.5 yalign 0.5
                             action (SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip "这个栏位没有装备物品."
 
@@ -921,7 +921,7 @@ screen item_filter(filters=inventory_filters["base"]):
                             add "filter_" + filter xalign 0.5 yalign 0.5
                         else:
                             add "filter_" + filter + "_unselect" xalign 0.5 yalign 0.5
-                        tooltip __("Show %s items.") % __(filter)
+                        tooltip __("Show %s items.") % __(setting_name_dict[filter])
                     else:
                         if not MC.active_inv_filter:
                             add "filter_all" xalign 0.5 yalign 0.5

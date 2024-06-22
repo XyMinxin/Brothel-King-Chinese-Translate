@@ -471,12 +471,12 @@ label farm_loop():
 
             if MC.get_items(target="minion", name="Healing powder"):
                 for mn in hurt:
-                    menu_list.append(("Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn)))
+                    menu_list.append(("使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn)))
 
             for mn in hurt:
-                menu_list.append(("Retire [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("retire", mn)))
+                menu_list.append(("退役 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("retire", mn)))
 
-            menu_list.append(("Ignore it for now", ("ignore", None)))
+            menu_list.append(("暂时忽略它", ("ignore", None)))
 
         $ res, mn = menu(menu_list)
 
@@ -608,7 +608,7 @@ label farm_loop():
 
                     if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
                         for mn in farm.get_hurt_minions():
-                            menu_list.append(["Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn, MC.get_items(target="minion", name="Healing powder")[0])])
+                            menu_list.append(["使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn, MC.get_items(target="minion", name="Healing powder")[0])])
 
                     # XP items
 
@@ -616,25 +616,25 @@ label farm_loop():
                         minions = farm.get_minions("stallion")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="stallion xp"):
                             xp_bonus = it.get_effect("gain", "stallion xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per stallion", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 种马经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="beast xp") and farm.get_minions("beast"):
                         minions = farm.get_minions("beast")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="beast xp"):
                             xp_bonus = it.get_effect("gain", "beast xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per beast", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 野兽经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="monster xp") and farm.get_minions("monster"):
                         minions = farm.get_minions("monster")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="monster xp"):
                             xp_bonus = it.get_effect("gain", "monster xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per monster", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 怪兽经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="machine xp") and farm.get_minions("machine"):
                         minions = farm.get_minions("machine")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="machine xp"):
                             xp_bonus = it.get_effect("gain", "machine xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per machine", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 机械经验", ("gain xp", minions, it, xp_bonus)])
 
                     menu_list.append(["Forget it", ("back")])
 
@@ -660,7 +660,7 @@ label farm_loop():
 
                     play sound s_spell
 
-                    $ renpy.say("", "Your " + minions[0].type + plural(len(minions)) + " earned XP.")
+                    $ renpy.say("", "你的 " + minions[0].type + plural(len(minions)) + " 获得了经验.")
 
                     $ MC.use_item(it)
 
@@ -674,7 +674,7 @@ label farm_loop():
 
                     while levelup:
                         $ mn = levelup.pop()
-                        $ renpy.say(gizel, mn.name + " is now a level " + str(mn.level) + " " + mn.type + ".")
+                        $ renpy.say(gizel, mn.name + "现在是一个等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + "了.")
 
                 hide screen dark_filter
 
@@ -1600,7 +1600,7 @@ label perks(): # girl is passed by the previous label (girls)
         $ result, obj = ui.interact() # bj is an archetype or perk
 
         if result == "unlock":
-            if renpy.call_screen("yes_no", "Are you sure you want to unlock {b}" + obj + "{/b} zodiac for 2 perk points?"):
+            if renpy.call_screen("yes_no", "你确定要花费2点天赋点解锁 {b}" + archetype_name_dict[obj] + "{/b}的天赋分支？"):
 
                 play sound s_spell
                 $ girl.unlock_archetype(obj)

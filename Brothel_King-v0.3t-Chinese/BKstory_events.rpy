@@ -869,7 +869,7 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
                 "No, don't peep":
                     you "I must be strong. I'm an upstanding citizen."
 
-                    if MC.god == "Arios":
+                    if MC.god == "阿里奥斯":
 
                         you "Remember what Arios says. 'Temptation is a dark tit'... Pit. Pit, I meant pit."
 
@@ -1560,11 +1560,11 @@ label farm_meet_gizel(): # Location: spice market
 
     with fade
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         $ text1 = "anti-rust lotion"
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         $ text1 = "magic herbs"
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         $ text1 = "dragon feed"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
@@ -4615,7 +4615,7 @@ label gina_research():
 
     you "Uh..."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "(Didn't they teach us to stay clear of this in Conjuring 101? Damn, I don't know, I was too busy checking out the teacher's cleavage...)"
 
     gina "Go to page 666 and find my notes. You must read me the exact words as I handle Test Subject #1 with care."
@@ -8317,7 +8317,7 @@ label willow_relative_returns():
 
                 relative "It was a lot easier before that stupid war started. The so-called 'Holy war' spread distrust and ill-will between our people."
 
-                if MC.god == "Arios":
+                if MC.god == "阿里奥斯":
                     you "Well, surely you cannot blame Arios the all-mighty for these troubles? A righteous light must be shone on the Pagans..."
 
                     "She shakes a head disapprovingly."
@@ -8332,7 +8332,7 @@ label willow_relative_returns():
 
                     return
 
-                elif MC.god == "Shalia":
+                elif MC.god == "莎莉娅":
 
                     you "Yeah, I get you. Arios and his followers are a nuisance. I prefer the Goddess of the night..."
 
@@ -9517,7 +9517,7 @@ label farm_first_monster():
 
             "Blind with fury, Gizel rushes to strangle you."
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
                 "You take a step aside, easily dodging her attack."
                 gizel "Hey!"
                 "Flipping around, Gizel gets ready to leap at your throat."
@@ -9532,7 +9532,7 @@ label farm_first_monster():
 
                 gizel upset "OUCH!" with vpunch
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
                 "Reaching two fingers to her forehead, you cast a calming spell before she can reach you."
 
                 "She seems to lose all aggressivity and stumbles on her knees."
@@ -9557,7 +9557,7 @@ label farm_first_monster():
 
                 gizel upset "OUCH!" with vpunch
 
-            elif MC.playerclass == "Trader":
+            elif MC.playerclass == "奸商":
 
                 "You yell, pointing at something behind her."
 
@@ -11053,7 +11053,7 @@ label satella_first_visit(): # Happens when visiting the thieves guild after the
     $ story_remove_event("satella_first_visit")
     $ calendar.set_alarm(calendar.time+14, StoryEvent(label = "satella_letter", type = "morning"))
 
-    if MC.god == "Shalia":
+    if MC.god == "莎莉娅":
         $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia2", type = "morning"))
 
     return
@@ -11887,7 +11887,7 @@ label satella_won():
         else:
             $ NPC_satella.love = 25
 
-            if MC.god == "Shalia" and not story_flags["shalia3"]:
+            if MC.god == "莎莉娅" and not story_flags["shalia3"]:
                 $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia3", type = "morning"))
 
             you "Come on, it's just a little massage... Let yourself go..."
@@ -12066,7 +12066,7 @@ label satella_lost():
     if NPC_satella.love < 25:
         $ NPC_satella.love = 25
 
-        if MC.god == "Shalia" and not story_flags["shalia3"]:
+        if MC.god == "莎莉娅" and not story_flags["shalia3"]:
             $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia3", type = "morning"))
 
         "You feel like you have come a bit too far already. You leave before Satella has a chance to recover and fry your balls."
@@ -12181,7 +12181,7 @@ label satella_virgin_sex():
 
     "You have earned prestige."
 
-    if MC.god == "Shalia":
+    if MC.god == "莎莉娅":
         $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia4", type = "morning"))
 
     $ NPC_satella.unlock_trainer()
@@ -12283,7 +12283,7 @@ label satella_sex():
 
     "You have earned prestige."
 
-    if MC.god == "Shalia":
+    if MC.god == "莎莉娅":
         $ calendar.set_alarm(calendar.time+3, StoryEvent(label = "shalia_visit", type = "morning"))
 
     return
@@ -12348,7 +12348,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     you "Shalia!" with vpunch
 
-    $ shalia_name = "Shalia"
+    $ shalia_name = "莎莉娅"
 
     "She is the Goddess herself. You are awestruck. You try to bow or take a knee, only to fail embarrassingly, as you are just a disembodied spirit floating in space."
 
@@ -12547,7 +12547,7 @@ label shalia3(): # Happens in the morning the day after Satella's love reaches 2
 
     you "*gasp* A dragon?"
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "奸商":
         shalia "Yes, a dragon. Not a common worm like your pet Drogon, no offense, but one of the old ones. One of the oldest. Axiom was his name."
     else:
         shalia "Yes, one of the oldest, born before the continents spread apart. Axiom was his name."
@@ -12991,11 +12991,11 @@ label shalia_visit(): # Happens in the morning a week after Satella's love reach
 
     "You look around you in complete amazement. You are standing there with your own mortal body, breathing the air and stomping the grass of another dimension."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "This is unnatural... I must be dreaming..."
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         you "Fascinating... I only read about that place in books..."
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "奸商":
         you "Wow... No one is going to believe {i}that{/i} tale."
 
     play sound s_spell
@@ -15062,7 +15062,7 @@ label game_over(antagonist):
 
     play music m_theme
 
-    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="MATURASC.TTF")
+    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="DejaVuSans.TTF")
 
     show expression title #Note: Find a way to make the zoom slower and the title cooler
     with zoomin
@@ -15874,7 +15874,7 @@ label resource_exchange_intro():
 
     bast "Yes? Are you a trader? This is break time, come back in one hour..."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "奸商":
         "She goes back to her paperwork, thinking you are one more merchant to be dealt with later."
 
         you "Sorry to interrupt, really. I had a few questions."
@@ -17766,7 +17766,7 @@ label meet_ramias():
 
         you " Your wares, of course, haha..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         ramias "You look familiar... And you have the build of a soldier. Have I met you somewhere in battle?"
 
@@ -17888,7 +17888,7 @@ label meet_riche():
 
     riche "But I was tired of being sheltered, so after I graduated, I decided to join the war effort."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "Karkyr? What a coincidence! I was studying there too. I must have been a few years your senior..."
 
         you "I was also top of my class, what a coincidence... I mean, definitely in the top 50, at least..."
@@ -18217,7 +18217,7 @@ label meet_twins():
 
     "Incessant flows of pilgrims come up and down the road, some of them walking the whole way on their knees and elbows, other walking backwards or blindfolded as a sign of worship. {nw}"
 
-    if MC.god == "Arios":
+    if MC.god == "阿里奥斯":
         extend "Although you empathize with their fervor, it is no less annoying to have to dodge clumsy pilgrims every step of the way."
     else:
         extend "You are annoyed at the Arios fanatics that threaten to bump into you every step of the way."
@@ -18367,7 +18367,7 @@ label ninja_guest1: # Warrior event
 
     hokoma_warrior "I see you're wielding a hammer. You came here to challenge me? To cross sword with the elite captain of the Gwanaian tribe?"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         "You know that Hokoma's tribes have fierce female warriors, all following a myriad local traditions and superstitions that allow them to recognize each other, while being impenetrable to outsiders."
 
     you "N-No, that's a mistake, my Lady, I didn't mean to hit you..."
@@ -18552,7 +18552,7 @@ label ninja_guest2: # Magician event
 
     you "A Faustian..."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "So you were trying to summon something from another plane, but now you are the one who will be sent away to some other dimension?"
     else:
         you "I don't know... It means you screwed up bad?"
@@ -18581,7 +18581,7 @@ label ninja_guest2: # Magician event
 
     magical_girl "A-All right... I was trying to summon an incubus..."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "An incubus? Wait a second... That is a sexual demon! What did you want to do with that?"
 
         magical_girl "This is, err, ehm... Private business..."

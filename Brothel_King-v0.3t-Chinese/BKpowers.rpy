@@ -1012,7 +1012,7 @@ label power_use(pow, girl, girl2):
                 for mn in farm.get_minions(mn_type):
                     mn.xp += girl.rank*5
                     if mn.level_up():
-                        text1 = "MINION LEVEL UP: %s (level " + str(mn.level) + ")" % mn.name
+                        text1 = "仆从升级: %s (等级 " + str(mn.level) + ")" % mn.name
                         change_log.add(text1, color="special")
                         renpy.notify(text1)
 
