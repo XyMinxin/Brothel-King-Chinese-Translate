@@ -296,25 +296,25 @@ init -2 python:
             if self.broken:
                 calendar.set_alarm(calendar.time+1, StoryEvent("is_broken", arg=self, type = "morning"))
                 renpy.play(s_scream_loud, "sound")
-                return event_color["fear"] % ("A long, inhumane shriek sends shivers down your spine. It came from %s, who is white with terror and on the verge of collapsing. This can't be good..." % self.name)
+                return event_color["fear"] % ("一声长长的、不人道的尖叫会让你脊背发冷。它来自 %s, 他吓得脸色发白，濒临崩溃。这不可能是好事d..." % self.name)
 
             elif self.sanity < 5:
-                return event_color["very bad"] % ("%s has a look of sheer terror in her eyes, and she shakes uncontrollably. She moans like a wounded animal if you move even slightly towards her. You can tell that a slight push would be all it takes to send her mind over the edge now." % self.name)
+                return event_color["very bad"] % ("%s 她的眼睛里充满了恐惧，她无法控制地颤抖着。如果你稍微靠近她一点，她就会像受伤的动物一样呻吟。你可以看出，现在只要轻轻一推，就能把她的思想推向崩溃的边缘." % self.name)
 
             elif self.sanity < 10:
-                return event_color["bad"] % ("%s curls and looks around herself in complete panic, her eyes wild with fear. If you insist on using your powers on her, her mind will end up breaking." % self.name)
+                return event_color["bad"] % ("%s 她惊慌地卷了卷，环顾四周，眼睛里充满了恐惧。如果你坚持对她使用你的能力，她的思想最终会崩溃" % self.name)
 
             elif self.sanity < 20:
-                return event_color["a little bad"] % ("%s looks bewildered, not sure what has been happening to her. Little by little her sanity is beginning to slip." % self.name)
+                return event_color["a little bad"] % ("%s 看起来很困惑，不知道发生了什么事。渐渐地，她的神志开始失常了." % self.name)
 
             elif self.sanity < 50:
                 if self.is_("dom"):
-                    return event_color["a little bad"] % ("%s seems shaken by what just happened, but puts on a brave face. She looks defiant in spite of what she has been through." % self.name)
+                    return event_color["a little bad"] % ("%s 似乎被刚刚发生的事吓到了，但还是装出一副勇敢的样子。尽管她经历了这么多，她还是显得很不服气." % self.name)
                 else:
-                    return event_color["a little bad"] % ("%s seems shaken by what just happened, but she tries to keep it to herself. She looks away from you, trying to suppress a sob." % self.name)
+                    return event_color["a little bad"] % ("%s 她似乎被刚刚发生的事吓坏了，但她不想告诉别人。她把目光从你身上移开，努力忍住哭泣." % self.name)
 
             else:
-                 return ("As %s returns to normal, she barely seems to register what just happened to her, although you know it must have had a subconscious effect." % self.name)
+                 return ("当 %s 恢复正常时，她似乎几乎没有注意到刚刚发生在她身上的事情，尽管你知道这一定是潜意识的影响." % self.name)
 
 
         def set_name(self): ## This creates the full name with or without lastname
@@ -565,7 +565,7 @@ init -2 python:
             if not self.profile:
                 #<Chris12 AutoRepair>
                 # Use not_found.webp. No longer needs to renpy.quit(), since it has some image to show
-                renpy.say("", event_color["bad"] % ("No profile or portrait picture could be found for the following girl: " + self.path + ".") + "\nPlease rename at least one of her pictures to include the words 'profile' or 'portrait'\n(e.g.: 'profile3.webp')\nAlternatively, completely delete her directory, restart the game and then go to the Help Menu and 'Repair Girl/MC Pictures' to remove her.")
+                renpy.say("", event_color["bad"] % ("找不到以下女孩的头像或肖像照片: " + self.path + ".") + "\n请至少重命名她的一张照片，包括“个人资料”或“肖像”字样\n(e.g.: 'profile3.webp')\n完全删除她的目录，重新启动游戏，然后去帮助菜单和“修理女孩/MC图片”删除她.")
                 self.profile = Picture(path="backgrounds/not_found.webp")
                 # renpy.say("", "Exiting Ren'Py...{w=1}{nw}")
                 # renpy.quit()
@@ -749,7 +749,7 @@ init -2 python:
 
                     if self.get_stat(stat) < target:
                         if use_desc:
-                            return False, sex_act.capitalize() + " cannot be activated.\n" + event_color["a little bad"] % ("Her {b}" + stat.lower() + "{/b} is too low (min: " + str(target) + ").")
+                            return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她的 {b}" + stat.lower() + "{/b} 太低了 (min: " + str(target) + ").")
                         return False
 
             if self.get_effect("special", "minimum preference", raw=True):
@@ -759,7 +759,7 @@ init -2 python:
 
             if not compare_preference(self, sex_act, min_pref): # Means the girl is very reluctant or worse
                 if use_desc:
-                    return False, sex_act.capitalize() + " cannot be activated.\n" + event_color["a little bad"] % ("Her preference for {b}" + sex_act.lower() + "{/b} acts is too low. She requires more training.")
+                    return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她对 {b}" + sex_act.lower() + "{/b} 行为太低了。她需要更多的训练.")
                 return False
 
             if use_desc:
@@ -774,7 +774,7 @@ init -2 python:
                 self.does[sex_act] = False
                 if not self.has_activated_sex_acts() and self.job == "whore":
                     self.set_job(None)
-                    renpy.say("", self.fullname + " cannot remain a whore if you deactivate all sex acts. She has been set to rest.")
+                    renpy.say("", self.fullname + " 如果你停止所有的性行为，你就不能继续做妓女了。她已被安葬.")
                 return True, ""
 
             else:
@@ -871,7 +871,7 @@ init -2 python:
             self.does[sex_act] = False
 
             if not self.has_activated_sex_acts() and self.job == "whore":
-                renpy.say("", self.fullname + " cannot remain a whore if you deactivate all sex acts. She has been set to rest.")
+                renpy.say("", self.fullname + " 如果你停止所有的性行为，你就不能继续做妓女了。她已被安葬.")
                 self.set_job(None)
             return True
 
@@ -1349,7 +1349,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_aaah, "sound")
-                            renpy.say("", "You have discovered " + self.name + "'s fixation with " + name + ".")
+                            renpy.say("", "你已经发现了 " + self.name + "对 " + name + "的迷恋.")
                 return "pos"
             elif r == "neg":
                 if unlock:
@@ -1357,7 +1357,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_surprise, "sound")
-                            renpy.say("", "You have discovered " + self.name + "'s disgust for " + name + ".")
+                            renpy.say("", "你已经发现了 " + self.name + "对 " + name + "的厌恶.")
                 return "neg"
             else:
                 return False
@@ -1764,7 +1764,7 @@ init -2 python:
                     if self.will_do_anything():
                         return True
                     elif not silent:
-                        notify("No sex acts available for whoring", pic=self.portrait)
+                        notify("没有适合卖淫的性行为", pic=self.portrait)
                 elif not silent:
                     notify("性欲/服从 太低了", pic=self.portrait)
                 return False
@@ -1913,55 +1913,55 @@ init -2 python:
             r = ""
 
             if self.ready_to_rank():
-                r += "ready to {b}rank up{/b}"
+                r += "准备好 {b}rank up{/b}"
             if self.perk_points or self.can_spend_upgrade_points():
                 if r:
                     r += ", "
-                r += "ready to {b}level up{/b}"
+                r += "准备好 {b}level up{/b}"
 
             if self.hurt > 0:
                 if r:
                     r += ", "
-                r += "{b}hurt{/b} for %s day" % round_up(self.hurt)
+                r += "{b}受伤{/b}  %s 天" % round_up(self.hurt)
 
             elif self.exhausted:
                 if r:
                     r += ", "
-                r += "{b}exhausted{/b}"
+                r += "{b}筋疲力尽{/b}"
 
             if self.away:
                 if r:
                     r += ", "
-                r += "{b}away{/b} on a class or quest for %s day" % (self.return_date - calendar.time)
+                r += "{b}外出{/b} 任何或培训 %s 天" % (self.return_date - calendar.time)
             elif self in farm.girls:
                 if r:
                     r += ", "
-                r += "training at the {b}farm{/b}"
+                r += "在{b}农场训练{/b}"
             elif self.resting or not self.job or not self.works_today():
                 if r:
                     r += ", "
-                r += "{b}resting{/b}t"
+                r += "{b}休息中{/b}t"
             elif self.works_today() == 50:
                 if r:
                     r += ", "
-                r += "on a {b}half-shift{/b}"
+                r += "上 {b}半天班{/b}"
 
             if self.work_whore:
                 if r:
                     r += ", "
-                r += "{b}working and whoring{/b}"
+                r += "{b}工作和卖淫{/b}"
 
             if self.naked:
                 if r:
                     r += ", "
-                r += "{b}naked{/b}"
+                r += "{b}裸体{/b}"
 
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]]:
                 if r:
                     r += ", "
-                r += "has a {b}negative fixation{/b}"
+                r += "有一个{b}负面想法{/b}"
 
-            return "Current status: " + r + "."
+            return "当前状态: " + r + "."
 
 
         def get_max_cust_served(self, job="current"):
@@ -2083,6 +2083,7 @@ init -2 python:
             boost = self.get_effect("boost", result + " result xp")
             if boost != 1.0:
                 xp = xp * boost
+                
                 xp_ttip += "\nPerks & special effects: x%s" % percent_text(boost, False)
 
             #<Chris Job Mod>
@@ -2138,7 +2139,7 @@ init -2 python:
             # Reputation gains now depend on relative rank between girl and customer
 
             if cust_rank + 1 < self.rank: # No reputation changes for customers two ranks lower or more
-                rep_ttip = "No reputation change: customer rank too low."
+                rep_ttip = "信誉没有变化:客户等级太低."
                 return 0, rep_ttip
 
             elif cust_rank < self.rank: # Girls serving lower rank customers gain reputation less easily
@@ -2160,18 +2161,18 @@ init -2 python:
 
             if score >= (reversed_result_dict[rep_gains_dict[self.rank][relative_rank]] + self.get_effect("special", "score_to_rep")):
                 pos_rep *= dice(len(customers))
-                rep_ttip = "Reputation increase vs Customers: +%s" % str_dec(pos_rep, 1)
+                rep_ttip = "声誉提升 vs Customers: +%s" % str_dec(pos_rep, 1)
                 # First customer effect
                 if first_customer:
                     first_rep_boost = self.get_effect("boost", "first customer rep")
                     if first_rep_boost != 1.0:
                         pos_rep *= first_rep_boost
-                        rep_ttip += "\nFirst customer: x%s" % percent_text(self.get_effect("boost", "first customer rep"), False)
+                        rep_ttip += "\n第一位顾客: x%s" % percent_text(self.get_effect("boost", "first customer rep"), False)
                 return pos_rep, rep_ttip
 
             elif score < (reversed_result_dict[rep_loss_dict[self.rank][relative_rank]] - self.get_effect("special", "score_to_rep")):
                 neg_rep *= dice(len(customers))
-                rep_ttip = "Reputation decrease vs Customers: %s" % str_dec(neg_rep)
+                rep_ttip = "声誉下降 vs Customers: %s" % str_dec(neg_rep)
                 return neg_rep, rep_ttip
 
             else:
