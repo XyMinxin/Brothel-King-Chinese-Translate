@@ -1023,72 +1023,72 @@ translate schinese strings:
     new "返回（B）"
 
     # renpy/common/_errorhandling.rpym:555
-    old "Open"
-    new "打开"
+    #old "Open"
+    #new "打开"
 
     # renpy/common/_errorhandling.rpym:557
-    old "Opens the traceback.txt file in a text editor."
-    new "在文本编辑器中打开追溯报告（traceback.txt）。"
+    #old "Opens the traceback.txt file in a text editor."
+    #new "在文本编辑器中打开追溯报告（traceback.txt）。"
 
     # renpy/common/_errorhandling.rpym:559
-    old "Copy BBCode"
-    new "复制 BBCode"
+    #old "Copy BBCode"
+    #new "复制 BBCode"
 
     # renpy/common/_errorhandling.rpym:561
-    old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new "复制追溯报告（traceback.txt）的内容到剪贴板并转换为 BBcode 以供诸如 https://lemmasoft.renai.us/ 等论坛使用。"
+    #old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
+    #new "复制追溯报告（traceback.txt）的内容到剪贴板并转换为 BBcode 以供诸如 https://lemmasoft.renai.us/ 等论坛使用。"
 
     # renpy/common/_errorhandling.rpym:563
-    old "Copy Markdown"
-    new "复制 Markdown"
+    #old "Copy Markdown"
+    #new "复制 Markdown"
 
     # renpy/common/_errorhandling.rpym:565
-    old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
-    new "复制追溯报告（traceback.txt）的内容到剪贴板并转换为 Markdown 以供 Discord 使用。"
+    #old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
+    #new "复制追溯报告（traceback.txt）的内容到剪贴板并转换为 Markdown 以供 Discord 使用。"
 
     # renpy/common/_errorhandling.rpym:594
-    old "An exception has occurred."
-    new "发生异常。"
+    #old "An exception has occurred."
+    #new "发生异常。"
 
     # renpy/common/_errorhandling.rpym:617
-    old "Rollback"
-    new "回滚"
+    #old "Rollback"
+    #new "回滚"
 
     # renpy/common/_errorhandling.rpym:619
-    old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    new "尝试回滚到先前的状态，使您可以存档或者选择不同选项。"
+    #old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
+    #new "尝试回滚到先前的状态，使您可以存档或者选择不同选项。"
 
     # renpy/common/_errorhandling.rpym:626
-    old "Ignores the exception, allowing you to continue."
-    new "忽略异常，让您可以继续。"
+    #old "Ignores the exception, allowing you to continue."
+    #new "忽略异常，让您可以继续。"
 
     # renpy/common/_errorhandling.rpym:628
-    old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new "忽略异常，让您可以继续。但这通常会引起更多错误。"
+    #old "Ignores the exception, allowing you to continue. This often leads to additional errors."
+    #new "忽略异常，让您可以继续。但这通常会引起更多错误。"
 
     # renpy/common/_errorhandling.rpym:632
-    old "Reload"
-    new "重新加载"
+    #old "Reload"
+    #new "重新加载"
 
     # renpy/common/_errorhandling.rpym:634
-    old "Reloads the game from disk, saving and restoring game state if possible."
-    new "从硬盘重新加载游戏，尝试保存和恢复游戏状态。"
+    #old "Reloads the game from disk, saving and restoring game state if possible."
+    #new "从硬盘重新加载游戏，尝试保存和恢复游戏状态。"
 
     # renpy/common/_errorhandling.rpym:637
-    old "Console"
-    new "控制台"
+    #old "Console"
+    #new "控制台"
 
     # renpy/common/_errorhandling.rpym:639
-    old "Opens a console to allow debugging the problem."
-    new "打开控制台，允许您对问题进行调试。"
+    #old "Opens a console to allow debugging the problem."
+    #new "打开控制台，允许您对问题进行调试。"
 
     # renpy/common/_errorhandling.rpym:652
-    old "Quits the game."
-    new "退出游戏。"
+    #old "Quits the game."
+    #new "退出游戏。"
 
     # renpy/common/_errorhandling.rpym:673
-    old "Parsing the script failed."
-    new "解析脚本失败。"
+    #old "Parsing the script failed."
+    #new "解析脚本失败。"
 
 
 ###########################################################
