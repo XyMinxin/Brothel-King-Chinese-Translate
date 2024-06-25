@@ -24,12 +24,12 @@ screen right_menu():
 
                 vbox spacing 6:
                     # Count of girls in Brothel
-                    text __("在青楼里的女孩有: {b}{size=+4}") + str(len(MC.girls)) + "{/size}{/b} /" + str(brothel.bedrooms) size res_font(12)
+                    text __("在青楼里的女孩数量: {b}{size=+4}") + str(len(MC.girls)) + "{/size}{/b} /" + str(brothel.bedrooms) size res_font(12)
                     # Count of working girls
-                    text __("今晚工作的女孩有: {b}{size=+4}") + str(sum(1 for g in MC.girls if g.works_today())) + "{/size}{/b} /" + str(len(MC.girls)) size res_font(12)
+                    text __("今晚工作的女孩数量: {b}{size=+4}") + str(sum(1 for g in MC.girls if g.works_today())) + "{/size}{/b} /" + str(len(MC.girls)) size res_font(12)
                     # Count of girls in farm
                     if farm.active:
-                        text __("在农场里有: {b}{size=+4}") + str(len(farm.girls)) + "{/size}{/b} /" + str(farm.pens) size res_font(12)
+                        text __("在农场里的女孩数量: {b}{size=+4}") + str(len(farm.girls)) + "{/size}{/b} /" + str(farm.pens) size res_font(12)
 
         # Right menu frame
 
@@ -132,7 +132,7 @@ screen right_menu():
                     xsize 0.125
                 else:
                     xsize 0.2
-                textbutton __("{b}当前目标{/b}\n{i}{size=-2}") + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
+                textbutton __("   {b}主线目标{/b}\n{i}{size=-2}") + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
                     action NullAction()
                     hovered Show("goal_ttip", transition=Dissolve(0.15))
                     unhovered Hide("goal_ttip", transition=Dissolve(0.15))
@@ -175,7 +175,7 @@ screen right_menu_mc():
         $ ttip += "\n({i}快捷键: {u}C{/u}{/i})"
             
 
-        textbutton "角色状态" style_group "rm":
+        textbutton "主角状态" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -222,12 +222,12 @@ screen right_menu_girls():
         else:
             text ""
 
-        $ ttip = __("检查青楼里姑娘们的状态，和她们培养感情.\n你有 {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" 个女孩{/b}{/color}在青楼 (最多 ") + str(brothel.bedrooms) + ").\n"
+        $ ttip = __("看看姑娘们的状态，和她们培养培养感情.\n你有 {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" 个女孩{/b}{/color}在青楼 (上限 ") + str(brothel.bedrooms) + ").\n"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
-        $ ttip += __("今晚有 ") + str(working_girls) + __(" 个女孩要工作.")
+        $ ttip += __("今晚有 ") + str(working_girls) + __(" 个女孩服务客人.")
         $ ttip += "\n({i}快捷键: {u}G{/u}{/i})"
 
-        textbutton "女孩" style_group "rm":
+        textbutton "女孩卧室" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -251,7 +251,7 @@ screen right_menu_brothel():
         else:
             text ""
 
-        textbutton "青楼" style_group "rm":
+        textbutton "管理青楼" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
@@ -267,7 +267,7 @@ screen right_menu_farm():
     if farm.active:
         hbox xalign 1.0 spacing 20:
             text ""
-            textbutton "农场" style_group "rm":
+            textbutton "奴隶农场" style_group "rm":
                 ypadding 0.005
                 text_size res_font(20)
                 action Return("farm")
@@ -289,12 +289,12 @@ screen right_menu_city():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton "访问城市" style_group "rm":
+        textbutton "探索城市" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("districts")
-            tooltip "探索其他地区获得{b}资源{/b}，或是和美丽的{b}陌生姑娘{/b}搭讪来一次一夜情。\n({i}快捷键: {u}V{/u}{/i})"
+            tooltip "获取各种{b}资源{/b}，或是和美丽的{b}陌生姑娘{/b}搭讪来一场美丽的邂逅。\n({i}快捷键: {u}V{/u}{/i})"
 
 
 ################
@@ -306,7 +306,7 @@ screen right_menu_slavemarket():
     hbox xalign 1.0 spacing 20:
         if slavemarket.updated and persistent.home_screen_notifications != 2:
             button style "rm_alert" action NullAction() hovered SetDict(seen_alerts, "slavemarket", True):
-                tooltip __("新的奴隶可以在市场上买到.")
+                tooltip __("市场来了一批新的奴隶.")
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["slavemarket"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -320,7 +320,7 @@ screen right_menu_slavemarket():
             else:
                 text_size res_font(18)
             action Return("slavemarket")
-            tooltip __("前往{b}奴隶市场{/b}. 无论是亡国公主，落魄千金，兽耳娘，清纯少女还是精液中毒的肉便器总有一款适合你。 目前有{color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __("个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})")
+            tooltip __("前往{b}奴隶市场{/b}. 不管是清纯处女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __("个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})")
 
 ################
 ## Home - Right menu - Display Shop alert and button
@@ -331,19 +331,19 @@ screen right_menu_shop():
     hbox xalign 1.0 spacing 20:
         if shop.updated and persistent.home_screen_notifications != 2:
             button style "rm_alert" action NullAction() hovered SetDict(seen_alerts, "shop", True):
-                tooltip __("有新商品可以买.")
+                tooltip __("有新商品上架.")
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["shop"] and persistent.home_screen_notifications == 0:
                     at blink
         else:
             text ""
 
-        textbutton "商店" style_group "rm":
+        textbutton "浏览商店" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("shop")
-            tooltip __("逛逛{b}商店{/b}淘些好货，情趣内衣，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}") + str(len(shop.items)) + __("件商品{/b}{/color}待售.\n({i}快捷键: {u}S{/u}{/i})")
+            tooltip __("逛逛{b}商店{/b}淘些好货，衣服首饰，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}") + str(len(shop.items)) + __("件商品{/b}{/color}待售.\n({i}快捷键: {u}S{/u}{/i})")
 
 ################
 ## Home - Right menu - Display Postings alert and button
@@ -360,12 +360,12 @@ screen right_menu_postings():
         else:
             text ""
 
-        textbutton "外派" style_group "rm":
+        textbutton "公告大厅" style_group "rm":
             ypadding 0.005
             text_size res_font(20)
 
             action Return("postings")
-            tooltip __("女孩们可以贴身服务他人，也可以接受他人的贴身指导.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" 个培训班") + __("{/b}{/color} 和 {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" 个合同") + plural(len(quest_board.quests)) + __("{/b}{/color} 目前可用的.\n({i}快捷键: {u}T{/u}{/i})")
+            tooltip __("你可以在大厅里接取他人发布的悬赏任务，也可以让女孩参加培训课程.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" 个培训班") + __("{/b}{/color} 和 {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" 个任务") + plural(len(quest_board.quests)) + __("{/b}{/color} 可用.\n({i}快捷键: {u}T{/u}{/i})")
 
 
 ################
@@ -426,9 +426,9 @@ screen right_menu_advance():
                     if MC.has_gold(blist[game.chapter+1].cost):
                         action Return("advance")
                     else:
-                        action Function(renpy.notify, "你没有足够的金币进入下一章.")
+                        action Function(renpy.notify, "你没有足够的金币.")
 
-                    tooltip __("花费 %s 金币,进入到下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
+                    tooltip __("花费 %s 金币,进入下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
 
 
 
