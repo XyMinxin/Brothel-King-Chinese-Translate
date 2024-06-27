@@ -1587,9 +1587,21 @@ translate schinese strings:
     old "Talk"
     new "对话"
 
-    # game/BKscreens.rpy:7579
+    # game/BKscreens.rpy:7547
     old "Train"
-    new "培养"
+    new "训练"
+
+    # game/BKscreens.rpy:7547
+    old "Magic"
+    new "催眠"
+
+    # game/BKscreens.rpy:7547
+    old "React"
+    new "奖惩"
+
+    # game/BKscreens.rpy:7547
+    old "Misc"
+    new "其他"
 
     # game/BKscreens.rpy:7599
     old "Advanced"
