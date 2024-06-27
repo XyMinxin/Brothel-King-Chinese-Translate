@@ -55,9 +55,9 @@ label free_girl_talk(girl):
 
         $ MC.interactions -= 1
 
-        $ text1 = rand_choice((__("当你走在%s时，"), __("在前往%s的途中，"), __("心不在焉地在%s街上闲逛，"))) % __(uncapitalize(selected_location.name))
+        $ text1 = rand_choice((__("当你路过%s时，"), __("在前往%s的途中，"), __("心不在焉地在%s的街上闲逛时，"))) % __(uncapitalize(selected_location.name))
 
-        $ text1 += rand_choice((__("你注意到一个漂亮的女孩独自站在那里。"), __(" 你差点撞到一个可爱的女孩子。"), __(" 你发现一个漂亮的小女孩在和小贩讨价还价。"), __(" 你看到一个漂亮的女孩，看起来很迷茫。")))
+        $ text1 += rand_choice((__("你注意到一个漂亮的女孩独自站在那里。"), __(" 你差点撞到一个可爱的女孩子。"), __(" 你发现一个漂亮的姑娘在和小贩讨价还价。"), __(" 你看到一个漂亮的女孩，她看起来很迷茫。")))
 
         "[text1]"
 
@@ -65,33 +65,33 @@ label free_girl_talk(girl):
 
             extend ""
 
-            "Greetings":
+            "你好，打扰一下（礼貌）":
 
                 $ renpy.block_rollback()
 
-                you "Greetings, my lady. They call me [MC.name], your humble servant. Is there anything I can do to help?"
+                you "很高兴见到你，美丽的女士. 他们都叫我 [MC.name], 我很乐意为你这样的美人效劳. 有什么我能帮到你的吗?"
 
                 call dialogue(girl, "free_greetings_polite") from _call_dialogue_21
 
 
-            "Hi there":
+            "嗨，你好（随和）":
 
                 $ renpy.block_rollback()
 
-                you "Oh, hi there! I'm [MC.name]. Who are you?"
+                you "嗨你好! 我叫 [MC.name]. 你叫什么名字?"
 
                 call dialogue(girl, "free_greetings_casual") from _call_dialogue_22
 
 
-            "Hey, sexy":
+            "嘿！美女（调戏）":
 
                 $ renpy.block_rollback()
 
                 if dice(6) < 6:
-                    you "Well, what do we have here... Damn, you're hot! I'm [MC.name]. What's your name baby?"
+                    you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]. 你叫什么名字，宝贝?"
 
                 else:
-                    $ you(rand_choice(("你爸爸是个面包师吗？因为你的小圆面包看起来会很好吃！", "我不是在盯着你的胸口看。我凝视的是你的心。", "我们一起上过课吗？我发誓，我跟你在一起的时候总有股奇怪的感觉。")))
+                    $ you(rand_choice(("你是个面包师吗？因为你的小圆面包看起来非常美味可口！", "我不是在盯着你的胸部看。我是在和你的心交流。", "我们是不是在哪儿见过？我发誓，跟你在一起的时候总有股奇妙的感觉。")))
 
                 call dialogue(girl, "free_greetings_rude") from _call_dialogue_23
 
