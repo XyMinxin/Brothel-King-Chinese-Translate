@@ -1635,7 +1635,7 @@ init -3 python:
 
             elif len(girls) > 1: # Bisexual: +1 to customer satisfaction
                 base_sex_act_bonus = mean(c.get_sex_act_bonus(bis=True) for c in customers) + 1
-                ttip = "百合技能加成: %s" % plus_text(base_sex_act_bonus, "normal")
+                ttip = "双飞技能加成: %s" % plus_text(base_sex_act_bonus, "normal")
                 sex_act_bonus = base_sex_act_bonus + sum(g.get_effect("increase satisfaction", "bisexual") for g in girls)
                 if base_sex_act_bonus != sex_act_bonus:
                     ttip += "\n特技和特殊效果: %s" % plus_text(sex_act_bonus - base_sex_act_bonus)
@@ -1987,7 +1987,7 @@ init -3 python:
                     cust.entertainment_score = score
         #</Chris Job Mod>
 
-        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result_name_dict[result.capitalize()]) + " result (%i){/color}" % score, ttip=result_reference)
+        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "} + __(result_name_dict[result.capitalize()]) +  result (%i){/color}" % score, ttip=result_reference)
 
         if act in all_jobs:
             change_log.add("服务的顾客人数: %i/%i" % (cust.service_dict["entertained"], len(customers)))
@@ -2265,13 +2265,13 @@ init -3 python:
 
             if customers[0].wants_sex_act != customers[0].got_sex_act:
                 if len(customers) > 1:
-                    text_descript += __(perform_job_dict["群交不满意"]) % customers[0].got_sex_act
+                    text_descript += __(perform_job_dict["group not satisfied"]) % customers[0].got_sex_act
 
                 elif len(girls) > 1:
-                    text_descript += __(perform_job_dict["百合不满意"]) % customers[0].got_sex_act
+                    text_descript += __(perform_job_dict["bisexual not satisfied"]) % customers[0].got_sex_act
 
                 else:
-                    text_descript += __(perform_job_dict["不满意"])
+                    text_descript += __(perform_job_dict["not satisfied"])
 
         if entertainment_bonus < 0:
             text_descript += __("\n一些客户可能更愿意做其他的事情.")

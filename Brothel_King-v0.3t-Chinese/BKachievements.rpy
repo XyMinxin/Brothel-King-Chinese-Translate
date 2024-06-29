@@ -89,7 +89,7 @@ init python:
                         Achievement("情比金坚", "给 %s 位女孩配备戒指。", pic="brass ring.webp", pic_path="Items/ring/", level_nb=5, target="finger", requirements={1 : 1, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
                         Achievement("点睛之笔", "给 %s 位女孩配备饰品。", pic="lace panties.webp", pic_path="Items/accessory/", level_nb=5, target="accessory", requirements={1 : 2, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
                         Achievement("众目睽睽", "有 %s 位女孩同时裸体。", pic="naked2.webp", pic_path="UI/status/", level_nb=5, target="naked", requirements={1 : 2, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
-                        Achievement("花好月圆", "有 %s 位女孩对百合感到舒服。", pic="naked2.webp", pic_path="UI/status/", level_nb=5, target="bisexual", requirements={1 : 1, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
+                        Achievement("花好月圆", "有 %s 位女孩对双飞感到舒服。", pic="naked2.webp", pic_path="UI/status/", level_nb=5, target="bisexual", requirements={1 : 1, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
                         Achievement("众星捧月", "有 %s 位女孩对群交感到舒服。", pic="naked2.webp", pic_path="UI/status/", level_nb=5, target="group", requirements={1 : 1, 2 : 4, 3 : 8, 4 : 16, 5 : 32}),
 
 
@@ -203,7 +203,7 @@ init python:
                         Achievement("性爱狂热", "让女孩进行性交 %s 次。", pic="lace panties.webp", pic_path="items/accessory/", target="perform sex", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
                         Achievement("肛交狂热", "让女孩进行肛交 %s 次。", pic="butt plug.webp", pic_path="items/toy/", target="perform anal", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
                         Achievement("皮绳愉虐狂热", "让女孩进行皮绳愉虐 %s 次。", pic="ropes.webp", pic_path="items/toy/", target="perform fetish", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
-                        Achievement("百合狂热", "让女孩进行百合 %s 次。", pic="black dildo.webp", pic_path="items/toy/", target="perform bisexual", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 100, 5 : 250}),
+                        Achievement("双飞狂热", "让女孩进行双飞 %s 次。", pic="black dildo.webp", pic_path="items/toy/", target="perform bisexual", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 100, 5 : 250}),
                         Achievement("群交狂热", "让女孩进行群交 %s 次。", pic="beer keg.webp", pic_path="items/furniture/", target="perform group", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 100, 5 : 250}),
                         Achievement("Star System", "达到 %s 声誉.", pic="star.webp", pic_path="UI/", target="rep", level_nb=5, requirements={1 : 100, 2 : 1000, 3 : 5000, 4 : 10000, 5 : 30000}),
                         Achievement("Interior Designer", "在第 %s 章建造所有家具。", pic="steam jacuzzi.webp", pic_path="items/furniture/", target="furniture", level_nb=6, requirements={1 : 2, 2 : 3, 3 : 4, 4 : 5, 5 : 6, 6 : 7}),

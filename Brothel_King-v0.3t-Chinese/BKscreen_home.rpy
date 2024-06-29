@@ -165,7 +165,7 @@ screen right_menu_mc():
         if active_spells:
             $ ttip += str(active_spells) + __("个可用法术")
         else:
-            $ ttip += __("没有法术")
+            $ ttip += __("0个法术")
 
         if auto_spells:
             $ ttip += __("和") + str(auto_spells) + __("个自动施放的法术.")
@@ -320,7 +320,7 @@ screen right_menu_slavemarket():
             else:
                 text_size res_font(18)
             action Return("slavemarket")
-            tooltip __("前往{b}奴隶市场{/b}. 不管是清纯处女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __("个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})")
+            tooltip __("前往{b}奴隶市场{/b}. 不管是清纯少女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __("个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})")
 
 ################
 ## Home - Right menu - Display Shop alert and button
