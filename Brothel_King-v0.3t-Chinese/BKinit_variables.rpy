@@ -2418,9 +2418,9 @@ init -4 python:
                         "swallow" : " 他挺直了腰板，在她嘴里射了几十秒，她发不出声，翻着白眼，咕噜咕噜地全部咽下去。",
                         "irrumatio" : "",
 
-                        "not satisfied" : " :客人们很失望，她不愿意做客人们让她做的事.",
+                        "not satisfied" : " :Pron: 很失望，她不愿意做客人们让她做的事.",
                         "group not satisfied" : " 她不愿意做, 但他们也不介意，因为群交 %s 很火爆.",
-                        "bisexual not satisfied" : " 最后:客人们得到了%s，不过客人们很乐意让女孩们自由发挥.",
+                        "bisexual not satisfied" : " 最后:Pron: 得到了%s，不过客人们很乐意让女孩们自由发挥.",
 
                         "roll_critical failure" : "{color=[c_red]}%s 今晚工作不是很认真. 她的心思没有放在工作上.{/color}",
                         "roll_failure" : "%s 今晚心不在焉.",
@@ -2436,22 +2436,22 @@ init -4 python:
 
                         "anal_stats" : (("anal", 6), ("constitution", 2), ("body", 1), ("sex",1)),
                         "anal_changes" : ((("anal",), 100, 2), (("constitution",), 70, 1), (("libido", "obedience", "body"), 25, 1), (("sensitivity",), 25, -1)),
-                        "anal_init" : " 客人们想要给 %s 的菊花开苞.",
+                        "anal_init" : " :Pron: 想要给 %s 的菊花开苞.",
                         "anal_tags" : ["anal"],
 
                         "sex_stats" : (("sex", 6), ("libido", 2), ("beauty", 1), ("service",1)),
                         "sex_changes" : ((("sex",), 100, 2), (("libido",), 70, 1), (("sensitivity", "constitution", "beauty"), 25, 1), (("obedience",), 25, -1)),
-                        "sex_init" : " 客人们想插入 %s 的骚穴.",
+                        "sex_init" : " :Pron: 想插入 %s 的骚穴.",
                         "sex_tags" : ["sex"],
 
                         "service_stats" : (("service", 6), ("sensitivity", 2), ("charm", 1), ("fetish",1)),
                         "service_changes" : ((("service",), 100, 2), (("sensitivity",), 70, 1), (("obedience", "libido", "charm"), 25, 1), (("constitution",), 25, -1)),
-                        "service_init" : " 客人们想让 %s 好好侍奉他.",
+                        "service_init" : " :Pron: 想让 %s 好好侍奉他.",
                         "service_tags" : ["service"],
 
                         "fetish_stats" : (("fetish", 6), ("obedience", 2), ("refinement", 1), ("anal",1)),
                         "fetish_changes" : ((("fetish",), 100, 2), (("obedience",), 70, 1), (("constitution", "sensitivity", "refinement"), 25, 1), (("libido",), 25, -1)),
-                        "fetish_init" : " 客人们对 %s 提出了非常变态的玩法.",
+                        "fetish_init" : " :Pron: 对 %s 提出了非常变态的玩法.",
                         "fetish_tags" : ["fetish"],
 
                         "whore_init" : "%s 点名要 %s 服侍他.",
