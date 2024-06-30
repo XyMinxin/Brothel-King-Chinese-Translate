@@ -2260,7 +2260,7 @@ translate schinese check_missing_pictures_4f1baf65:
 translate schinese check_missing_pictures_c9cd67c9:
 
     # "Step4: Checking group and bisexual sex pictures"
-    "步骤4: 检查群交和百合词条图片"
+    "步骤4: 检查群交和双飞词条图片"
 
 # game/BKhelp.rpy:2711
 translate schinese check_missing_pictures_51aadab5:
@@ -2586,11 +2586,11 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1554
     old "No, I'm good"
-    new "不,我很好"
+    new "不,不必了"
 
     # game/BKhelp.rpy:1611
     old "Tell me about classes"
-    new "告诉我关于角色职业的信息"
+    new "告诉我关于培训课程的信息"
 
     # game/BKhelp.rpy:1611
     old "Tell me about quests"

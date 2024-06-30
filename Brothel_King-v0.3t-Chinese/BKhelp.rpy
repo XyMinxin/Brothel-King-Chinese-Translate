@@ -38,17 +38,17 @@ init python:
             help_menu_topics.insert(1, ("告诉我有关夜间事件的事", "help_night_events"))
 
         if debug_mode:
-            help_menu_topics.append(("Debug menu", "debug"))
-            help_menu_topics.append(("Cheat menu", "cheats"))
+            help_menu_topics.append(("调试菜单", "debug"))
+            help_menu_topics.append(("作弊菜单", "cheats"))
         elif game.cheats and scr == "main":
-            help_menu_topics.append(("作弊菜单 - 只能在主界面使用", "cheats"))
+            help_menu_topics.append(("作弊菜单 只能在主界面使用", "cheats"))
         elif not game.cheats:
-            help_menu_topics.append(("启用作弊功能 (将禁用成就)", "cheats"))
+            help_menu_topics.append(("作弊菜单 (将禁用成就)", "cheats"))
 
         if game.active_mods:
-            help_menu_topics.append(("模组", "mods"))
+            help_menu_topics.append(("Mods", "mods"))
 
-        help_menu_topics.append(("Never mind", "back"))
+        help_menu_topics.append(("没事了", "back"))
 
         return help_menu_topics
 
@@ -1352,7 +1352,7 @@ label help_brothel():
 
             sill happy "Please note that freelancers get more expensive as you move your operations to fancier city districts. But they are also more efficient."
 
-        "Tell me about trainers":
+        "关于调教师":
 
             sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls.
                   Only one trainer can be active at all times."
@@ -1375,9 +1375,9 @@ label help_advertising():
 
 label help_advertising_menu():
     menu:
-        "Tell me about..."
+        "我想要知道..."
 
-        "Customers":
+        "关于顾客":
 
             sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
 
@@ -1389,7 +1389,7 @@ label help_advertising_menu():
 
             sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
 
-        "Brothel reputation":
+        "关于青楼的评价":
 
             sill "{b}Brothel reputation{/b} receives a boost from advertising every night. It is also affected negatively or positively by your {b}customers' satisfaction{/b}."
 
@@ -1409,7 +1409,7 @@ label help_advertising_menu():
 
             sill "One day, you may even be able to unlock a way to increase {b}customer attraction{/b}, at the expense of {b}customer budgets{/b}."
 
-        "Customer budgets":
+        "关于顾客的预算":
             sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
 
             sill "Customers have a separate budget for {b}entertainment{/b}, such as hanging by the tavern or club, and {b}whoring{/b}. Their budget for whoring is higher, naturally.
@@ -1423,15 +1423,15 @@ label help_advertising_menu():
 
             sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
 
-        "Advertising power":
+        "广告宣发的作用":
 
             sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
 
             sill "There may be a way to unlock new outfits in the future."
 
-        "Nothing":
+        "没有要问的了":
 
-            you "I'm good now, thanks."
+            you "我知道了, 谢谢你."
 
             return
 
@@ -1483,7 +1483,7 @@ label help_districts():
 
         sill "This is {b}Zan{/b}, the City of Jade! From here, you can visit all of the districts you have unlocked."
 
-        "Tell me about districts":
+        "关于城市里的地区":
 
             sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
 
@@ -1491,7 +1491,7 @@ label help_districts():
 
             sill "In time, you will be able to unlock new districts and relocate your brothel to fancier areas."
 
-        "Tell me about unlocking new districts":
+        "如何解锁新的地区":
 
             sill "You need a proper brothel {b}license{/b} to move out of the Slums. Accessing the more upscale districts requires an even higher license."
 
@@ -1501,7 +1501,7 @@ label help_districts():
 
             sill "New licenses and brothel relocation will become available as you advance in the game."
 
-        "Never mind":
+        "没有要问的了":
 
             return
 
@@ -1612,7 +1612,7 @@ label help_postings():
 
         sill "The {b}posting{/b} board. This is a good place to look for classes or quests!"
 
-        "Tell me about classes":
+        "关于培训课程":
 
             sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
 
@@ -1620,7 +1620,7 @@ label help_postings():
 
             sill "Please be aware that classes can only improve a girl's skill up to a point. To raise her skills further, you might need more advanced classes."
 
-        "Tell me about quests":
+        "关于委托任务":
 
             sill "{b}Quests{/b} are special requests posted by locals that your girl can fulfill. Questing rewards include {b}gold{/b}, {b}skills{/b}, {b}experience{/b} and {b}reputation{/b}."
 
@@ -1630,7 +1630,7 @@ label help_postings():
 
             sill "Watch for specific {b}traits{/b} that the customers love or hate. This might increase or decrease the reward for the quest by a large amount."
 
-        "Never mind":
+        "没有要问的了":
 
             return
 
@@ -1707,7 +1707,7 @@ Please contact me at [URL] for feedback, criticism, bug reports, etc.
             "Contact me at [URL] for feedback, criticism, bug reports, etc."
 
 
-        "Never mind":
+        "没事了":
             return
 
     jump help_about_game
