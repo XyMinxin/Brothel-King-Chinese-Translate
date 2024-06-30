@@ -275,16 +275,16 @@ init -2 python:
                 san = event_color["very bad"] % __("接近崩溃")
 
             elif self.sanity < 10:
-                san = event_color["bad"] % __("任人拿捏")
+                san = event_color["bad"] % __("任人宰割")
 
             elif self.sanity < 20:
                 san = event_color["a little bad"] % ("意志薄弱")
 
             elif self.sanity < 50:
-                san = event_color["a little bad"] % ("动摇")
+                san = event_color["a little bad"] % ("有些动摇")
 
             else:
-                san = event_color["a little bad"] % ("稳定")
+                san = event_color["a little bad"] % ("精神稳定")
 
             if debug_mode:
                 san += " (%i)" % self.sanity
@@ -296,25 +296,25 @@ init -2 python:
             if self.broken:
                 calendar.set_alarm(calendar.time+1, StoryEvent("is_broken", arg=self, type = "morning"))
                 renpy.play(s_scream_loud, "sound")
-                return event_color["fear"] % ("一声长长的、不人道的尖叫会让你脊背发冷。它来自 %s, 他吓得脸色发白，濒临崩溃。这不可能是好事d..." % self.name)
+                return event_color["fear"] % (" %s 发出刺耳的尖叫声，让你全身都起了鸡皮疙瘩, 她吓得脸色苍白，浑身发抖。看起来效果很糟糕..." % self.name)
 
             elif self.sanity < 5:
-                return event_color["very bad"] % ("%s 她的眼睛里充满了恐惧，她无法控制地颤抖着。如果你稍微靠近她一点，她就会像受伤的动物一样呻吟。你可以看出，现在只要轻轻一推，就能把她的思想推向崩溃的边缘." % self.name)
+                return event_color["very bad"] % ("%s 她的眼神中充满了绝望，她不由自主地颤抖着。如果你再靠近她一点，她就会像受伤的小动物一样呻吟。你可以看出，现在只要再推一把，就能把她的理智推向崩溃的边缘." % self.name)
 
             elif self.sanity < 10:
-                return event_color["bad"] % ("%s 她惊慌地卷了卷，环顾四周，眼睛里充满了恐惧。如果你坚持对她使用你的能力，她的思想最终会崩溃" % self.name)
+                return event_color["bad"] % ("%s 她惊慌地抱着胸口，环顾四周，眼神中充满了恐惧。如果你坚持对她使用你的能力，她的心智最终会崩溃" % self.name)
 
             elif self.sanity < 20:
-                return event_color["a little bad"] % ("%s 看起来很困惑，不知道发生了什么事。渐渐地，她的神志开始失常了." % self.name)
+                return event_color["a little bad"] % ("%s 看起来很困惑，不知道发生了什么事。渐渐地，她的意识开始模糊." % self.name)
 
             elif self.sanity < 50:
                 if self.is_("dom"):
-                    return event_color["a little bad"] % ("%s 似乎被刚刚发生的事吓到了，但还是装出一副勇敢的样子。尽管她经历了这么多，她还是显得很不服气." % self.name)
+                    return event_color["a little bad"] % ("%s 似乎被刚刚发生的事吓到了，但还是装出一副镇定的样子。尽管她经历了这么多，她还是显得很不服气." % self.name)
                 else:
-                    return event_color["a little bad"] % ("%s 她似乎被刚刚发生的事吓坏了，但她不想告诉别人。她把目光从你身上移开，努力忍住哭泣." % self.name)
+                    return event_color["a little bad"] % ("%s 她似乎被刚刚发生的事吓坏了，但她不想告诉别人。她把目光从你身上移开，努力忍住泪水." % self.name)
 
             else:
-                 return ("当 %s 恢复正常时，她似乎几乎没有注意到刚刚发生在她身上的事情，尽管你知道这一定是潜意识的影响." % self.name)
+                 return ("当 %s 恢复正常时，她似乎几乎没有察觉到刚刚发生在她身上的事情，但你知道她的潜意识里已经深受影响." % self.name)
 
 
         def set_name(self): ## This creates the full name with or without lastname
@@ -749,7 +749,7 @@ init -2 python:
 
                     if self.get_stat(stat) < target:
                         if use_desc:
-                            return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她的 {b}" + stat.lower() + "{/b} 太低了 (min: " + str(target) + ").")
+                            return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她的 {b}" + stat.lower() + "{/b} 属性太低了 (min: " + str(target) + ").")
                         return False
 
             if self.get_effect("special", "minimum preference", raw=True):
@@ -759,7 +759,7 @@ init -2 python:
 
             if not compare_preference(self, sex_act, min_pref): # Means the girl is very reluctant or worse
                 if use_desc:
-                    return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她对 {b}" + sex_act.lower() + "{/b} 行为太低了。她需要更多的训练.")
+                    return False, sex_act.capitalize() + " 无法激活.\n" + event_color["a little bad"] % ("她对 {b}" + sex_act.lower() + "{/b} 的接受能力太低了。她需要训练来适应.")
                 return False
 
             if use_desc:
@@ -774,7 +774,7 @@ init -2 python:
                 self.does[sex_act] = False
                 if not self.has_activated_sex_acts() and self.job == "whore":
                     self.set_job(None)
-                    renpy.say("", self.fullname + " 如果你停止所有的性行为，你就不能继续做妓女了。她已被安葬.")
+                    renpy.say("", self.fullname + " 如果你禁止所有的性行为，她就不能继续做妓女了。")
                 return True, ""
 
             else:
@@ -871,7 +871,7 @@ init -2 python:
             self.does[sex_act] = False
 
             if not self.has_activated_sex_acts() and self.job == "whore":
-                renpy.say("", self.fullname + " 如果你停止所有的性行为，你就不能继续做妓女了。她已被安葬.")
+                renpy.say("", self.fullname + " 如果你禁止所有的性行为，她就不能继续做妓女了。")
                 self.set_job(None)
             return True
 
@@ -1349,7 +1349,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_aaah, "sound")
-                            renpy.say("", "你已经发现了 " + self.name + "对 " + name + "的迷恋.")
+                            renpy.say("", "你发现 " + self.name + "对 " + name + "有些迷恋.")
                 return "pos"
             elif r == "neg":
                 if unlock:
@@ -1357,7 +1357,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_surprise, "sound")
-                            renpy.say("", "你已经发现了 " + self.name + "对 " + name + "的厌恶.")
+                            renpy.say("", "你发现 " + self.name + "对 " + name + "有些厌恶.")
                 return "neg"
             else:
                 return False
@@ -1686,19 +1686,19 @@ init -2 python:
                 if e.target == self.likes["color"]:
                     score += 4
                     self.personality_unlock["fav_color"] = True
-                    renpy.say(self.char, "哦，你还记得我喜欢什么颜色! 你真贴心...")
+                    renpy.say(self.char, "哦，你还记得我喜欢什么颜色! 你真浪漫...")
 
                 elif e.target == self.dislikes["color"]:
                     score += 0
                     self.personality_unlock["dis_color"] = True
-                    renpy.say(self.char, "emmm，谢谢你, 但我不喜欢这个颜色, 总之还是感谢你的好意.")
+                    renpy.say(self.char, "Emmm，谢谢你, 但我不喜欢这个颜色, 总之还是感谢你的花.")
 
                 else:
                     score += 2
                     renpy.say(self.char, "花! 给我的吗! 真是个惊喜...")
 
                 if self.MC_relationship_level == 2:
-                    renpy.say(self.char, "你好浪漫... 你想要我怎么报答你?")
+                    renpy.say(self.char, "你好浪漫... 你想要我怎么奖励你?")
 
                     r = menu(items = (("实际上...", None), ("约她开房", True), ("别在意", False)))
 
@@ -1719,19 +1719,19 @@ init -2 python:
                     else:
                         renpy.block_rollback()
                         renpy.say(you, "Hmm, no, not really.")
-                        renpy.say(self.char, "Oh... 我知道了.")
+                        renpy.say(self.char, "哦... 我知道了.")
             else:
                 if score >= 4:
-                    renpy.say(self.char, "我太喜欢这个了!!! 谢谢你, 真的!")
+                    renpy.say(self.char, "这是？!!!你怎么知道我喜欢这个!")
 
                 elif score >= 2:
-                    renpy.say(self.char, "真不错! 谢谢你还记得关心我.")
+                    renpy.say(self.char, "真不错! 谢谢你还没把我忘了.")
 
                 elif score >= 0:
-                    renpy.say(self.char, "emmm, 谢了. 看起来挺有趣的... 虽然我不知道它是什么,我猜.")
+                    renpy.say(self.char, "emmm, 谢了. 看起来挺有趣的... 虽然我不知道它是什么.")
 
                 else:
-                    renpy.say(self.char, "这是? 呕, 拿着东西滚开，离我远点!")
+                    renpy.say(self.char, "这是? 呕, 带着你的东西滚开，离我远点!")
 
             if score >= 0:
                 score *= mod
@@ -1745,10 +1745,10 @@ init -2 python:
         def test_say(self):
             renpy.say(self.char, "让我们测试一下这些方法是否会中断流动.")
             self.change_love(200)
-            renpy.say(self.char, "我的好感度提高了吗? 现在 it's %s" % self.love)
+            renpy.say(self.char, "我的好感度提高了吗? 现在的关系： %s" % self.love)
             self.say("free_ask_out")
             self.change_love(-200)
-            renpy.say(self.char, "我的好感度下降了吗? It's %s" % self.love)
+            renpy.say(self.char, "我的好感度下降了吗? 现在的关系： %s" % self.love)
             return
 
 
@@ -1764,9 +1764,9 @@ init -2 python:
                     if self.will_do_anything():
                         return True
                     elif not silent:
-                        notify("没有适合卖淫的性行为", pic=self.portrait)
+                        notify("性技能水平太低了", pic=self.portrait)
                 elif not silent:
-                    notify("性欲/服从 太低了", pic=self.portrait)
+                    notify("性欲/服从太低了", pic=self.portrait)
                 return False
 
             else:
@@ -1868,13 +1868,13 @@ init -2 python:
                 status_list.append(["autorest.webp", self.fullname + " 体力透支了. 她将自动被安排去{b}休息{/b}."])
 
             elif self.works_today() == 50 and persistent.show_girl_status["half-shift"]:
-                status_list.append(["half.webp", self.fullname + " 今天只上{b}半天班{/b} "])
+                status_list.append(["half.webp", self.fullname + " 今天只上{b}半个夜班{/b} "])
 
             if self in brothel.master_bedroom.girls and persistent.show_girl_status["master bedroom"]:
-                status_list.append(["master.webp", self.fullname + " 今晚要来你房间接受{b}私人指导{/b}."])
+                status_list.append(["master.webp", self.fullname + " 今晚要来你的卧室接受{b}私人指导{/b}."])
 
             if self.ready_to_rank():
-                status_list.append(["rankup.webp", self.fullname + " 可以提升{b}阶级{/b}."])
+                status_list.append(["rankup.webp", self.fullname + " 可以晋升{b}阶级{/b}."])
 
             if self.perk_points or self.can_spend_upgrade_points():
                 status_list.append(["levelup.webp", self.fullname + " 可以提升{b}等级{/b}."])
@@ -1896,9 +1896,9 @@ init -2 python:
 
             if self.naked and persistent.show_girl_status["naked"]:
                 if self.get_effect("special", "naked"):
-                    status_list.append(["naked.webp", self.fullname + " 将一直{b}一丝不挂{/b}的展示给所有人."])
+                    status_list.append(["naked.webp", self.fullname + " 将{b}一丝不挂{/b}的展示给所有人看."])
                 else:
-                    status_list.append(["naked2.webp", self.fullname + " 今天将{b}全裸{/b}一整天."])
+                    status_list.append(["naked2.webp", self.fullname + " 今天一整天都将保持{b}全裸{/b}."])
 
             if not self.naked and persistent.show_girl_status["not naked"]:
                 status_list.append(["not_naked.webp", self.fullname + " 不处于{b}裸体{/b} (这对你来说显然是个难题)."])
@@ -1913,11 +1913,11 @@ init -2 python:
             r = ""
 
             if self.ready_to_rank():
-                r += "准备好 {b}rank up{/b}"
+                r += "准备好 {b}晋升{/b}"
             if self.perk_points or self.can_spend_upgrade_points():
                 if r:
                     r += ", "
-                r += "准备好 {b}level up{/b}"
+                r += "准备好 {b}升级{/b}"
 
             if self.hurt > 0:
                 if r:
@@ -1932,7 +1932,7 @@ init -2 python:
             if self.away:
                 if r:
                     r += ", "
-                r += "{b}外出{/b} 任何或培训 %s 天" % (self.return_date - calendar.time)
+                r += "{b}外出{/b} 完成委托或培训 %s 天" % (self.return_date - calendar.time)
             elif self in farm.girls:
                 if r:
                     r += ", "
@@ -1944,7 +1944,7 @@ init -2 python:
             elif self.works_today() == 50:
                 if r:
                     r += ", "
-                r += "上 {b}半天班{/b}"
+                r += "上 {b}半个夜班{/b}"
 
             if self.work_whore:
                 if r:
@@ -1959,7 +1959,7 @@ init -2 python:
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]]:
                 if r:
                     r += ", "
-                r += "有一个{b}负面想法{/b}"
+                r += "有一个{b}负面习惯{/b}"
 
             return "当前状态: " + r + "."
 
@@ -2354,15 +2354,15 @@ init -2 python:
             max_en = self.get_stat_max("energy")
 
             if self.energy >= 0.8 * max_en:
-                ttip = "She is well-rested."
+                ttip = "她精力充沛."
             elif self.energy >= 0.6 * max_en:
-                ttip = "She is rested."
+                ttip = "她充满活力."
             elif self.energy >= 0.4 * max_en:
-                ttip = "She is a little tired."
+                ttip = "她有点累了."
             elif self.energy >= 0.2 * max_en:
-                ttip = "She is quite tired."
+                ttip = "她摇摇欲坠."
             else:
-                ttip = event_color["bad"] % "Warning! She is getting very tired."
+                ttip = event_color["bad"] % "警告! 她已经非常累了."
 
             return ttip
 
@@ -2370,7 +2370,7 @@ init -2 python:
 
             # Frenzy effect
             if self.get_effect("special", "ignore energy"):
-                return "\n{color=[c_purple]}" + self.name + " is working tirelessly.{/color}", 0
+                return "\n{color=[c_purple]}" + self.name + "不知疲倦地工作.{/color}", 0
 
             chg = x * self.get_effect("boost", "tiredness") + self.get_effect("change", "tiredness")
 
@@ -2384,10 +2384,10 @@ init -2 python:
             text2 = plus_text(round_int(r), "standard")
 
             if _case == "exhausted":
-                text1 += "\n{color=[c_red]}" + self.name + " is too tired to continue working.{/color}"
+                text1 += "\n{color=[c_red]}" + self.name + "累倒在地，无法继续工作了.{/color}"
 
                 if self.hurt:
-                    text1 += "\n{color=[c_red]}" + " She has fallen sick and must rest for " + str(round_int(self.hurt)) + " days.{/color}"
+                    text1 += "\n{color=[c_red]}" + "她生病了，必须休养" + str(round_int(self.hurt)) + "天.{/color}"
 
                 self.add_log("exhausted")
                 self.track_event("exhausted")
@@ -2487,7 +2487,7 @@ init -2 python:
                 return chg, "sick"
             else:
                 update_effects()
-                notify(self.fullname + " is fully healed.", pic=self.portrait)
+                notify(self.fullname + "已经痊愈了", pic=self.portrait)
                 return chg, "healthy"
 
         def full_rest(self):
@@ -2498,10 +2498,10 @@ init -2 python:
 
             if context == "farm":
                 resting_changes = NightChangeLog(title="Holding")
-                resting_text = self.fullname + " rested in her pen today."
+                resting_text = self.fullname + " 在地牢里休息."
             else:
                 resting_changes = NightChangeLog(title="Resting")
-                resting_text = self.fullname + " rested in her room today."
+                resting_text = self.fullname + " 在房间里休息."
 
             if self.hurt > 0:
                 r, case = self.heal(1)
@@ -2511,11 +2511,11 @@ init -2 python:
                 if case == "healthy":
                     resting_changes.add("(full recovery)", "header", col="good", separator="\n")
                     if context == "farm":
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and can go back to work or training.{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，可以回去工作或者接受训练了.{/color}"
                     elif self.job:
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and can go back to work as a " + self.job + ".{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，可以继续作为 " + self.job + "工作了.{/color}"
                     else:
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and went back to resting.{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，并继续在房间里休息.{/color}"
 
             x = (25 + self.get_stat("constitution")/4) * self.get_effect("boost", "energy when resting") + self.get_effect("change", "energy when resting")
 
@@ -2544,11 +2544,11 @@ init -2 python:
             if case == "recovered":
                 resting_changes.add("(fully rested)", "header", col="good", separator="\n")
                 if context == "farm":
-                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息了，可以继续训练了.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，可以继续训练了.{/color}"
                 elif self.job:
-                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息好了，可以回去工作了 " + self.job + ".{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，可以继续作为" + self.job + "工作了.{/color}"
                 else:
-                    resting_text += "\n{color=[c_emerald]}她现在已经完全休息好了，正在等待分配工作.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，正在等待分配工作.{/color}"
 
             return resting_text, resting_changes
 
@@ -3367,7 +3367,7 @@ init -2 python:
             elif val < perk.value:
                 message += str(perk.value) + " 更多的等级必须先解锁.\n"
             elif self.rank < perk.min_rank:
-                message += self.name + " 必须是等级 " + rank_name[perk.min_rank] + "的,在她获得这个特权之前.\n"
+                message += self.name + " 必须达到 " + rank_name[perk.min_rank] + "阶级,在她解锁这个天赋之前.\n"
             elif points < 1:
                 message = self.name + " 没有足够的天赋点."
             else:
@@ -4409,20 +4409,20 @@ init -2 python:
                     mood_factors += "+1: 她在农场休息.\n"
                 else:
                     mood_change -= 1
-                    mood_factors += "-1: 她被关在农场.\n"
+                    mood_factors += "-1: 她在农场训练.\n"
 
             else: # Working girls
                 w = 0
                 if self.works_today():
                     if self.job == "whore" and self.get_effect("special", "whore mood modifier"):
                         w += 1
-                        mood_factors += "+1: 她是个妓女而她对性成瘾.\n"
+                        mood_factors += "+1: 她是个妓女而她性爱成瘾.\n"
                     elif self.workdays[calendar.get_weekday()] == 100:
                         w = -1
-                        mood_factors += "-1: 她今天要工作.\n"
+                        mood_factors += "-1: 她今天要工作一整晚.\n"
                     else: # Half shift
                         w = -0.5
-                        mood_factors += "-0.5: 她今天要工作半天.\n"
+                        mood_factors += "-0.5: 她今天要工作半宿.\n"
                 elif self.assignment:
                     if self.assignment.type == "quest":
                         w = -1
@@ -4442,10 +4442,10 @@ init -2 python:
                 mood_change += up + roo + bro + w + fr
 
                 if up > 0:
-                    mood_factors += "+" + str(up) + ": 她觉得她的保养费用很充足.\n"
+                    mood_factors += "+" + str(up) + ": 她觉得她的薪水很优渥.\n"
 
                 elif up < 0:
-                    mood_factors += str(up) + ": 她对保养费用很不满意.\n"
+                    mood_factors += str(up) + ": 她对她的薪水很不满意.\n"
 
                 if fr > 0:
                     mood_factors += "+" + str(round_best(fr)) + ": 她有闺蜜陪伴.\n"
@@ -4453,13 +4453,13 @@ init -2 python:
                     mood_factors += str(round_best(fr)) + ": 她有死对头在.\n"
 
                 if roo > 4:
-                    mood_factors += "+" + str(round_best(roo)) + ": 她超爱她的房间.\n"
+                    mood_factors += "+" + str(round_best(roo)) + ": 她对她的房间很满意.\n"
                 elif roo > 0:
-                    mood_factors += "+" + str(round_best(roo)) + ": 她喜欢她的住处.\n"
+                    mood_factors += "+" + str(round_best(roo)) + ": 她喜欢她的房间.\n"
                 elif roo < -4:
-                    mood_factors += str(round_best(roo)) + ": 她嫌弃她的房间.\n"
+                    mood_factors += str(round_best(roo)) + ": 她有些嫌弃她的房间.\n"
                 elif roo < 0:
-                    mood_factors += str(round_best(roo)) + ": 她不喜欢她的住处.\n"
+                    mood_factors += str(round_best(roo)) + ": 她的房间令她作呕.\n"
 
                 # Change this later if more mood gain effects are added
                 if bro > 1:
@@ -4474,7 +4474,7 @@ init -2 python:
                 if self.has_perk("Life of Luxury"):
                     mood_factors += plus_minus(mood_eff) + ": 她喜欢她的衣服(奢侈的生活).\n"
                 else:
-                    mood_factors += plus_minus(mood_eff) + ": 其他影响.\n"
+                    mood_factors += plus_minus(mood_eff) + ": 其他效果影响.\n"
 
 
             if description:
@@ -4846,7 +4846,7 @@ init -2 python:
                 elif self.flags["story"] < 50:
                     des += "你对她的情况有些了解."
                 elif self.flags["story"] < 100:
-                    des += "她告诉了你她的故事, 但你什么都没做."
+                    des += "她告诉了你她的故事, 但你无动于衷."
                 elif self.flags["MC refused story"]:
                     des += "你很了解她的身世."
                 else:
@@ -4877,7 +4877,7 @@ init -2 python:
                         des += "她很 {b}肤浅和物质主义{/b}.\n"
 
                     elif self.is_("very idealist"):
-                        des += "她很有 {b}梦想{/b},想让世界变得更加美好.\n"
+                        des += "她很有 {b}梦想{/b},盼望着世界和平.\n"
 
                     elif self.is_("idealist"):
                         des += "她很 {b}关心他人{/b}.\n"
@@ -4890,15 +4890,15 @@ init -2 python:
                     elif self.is_("very sub"):
                         des += "她很 {b}顺从{/b} 总是把自己摆在最后一位.\n"
                     elif self.is_("sub"):
-                        des += "她很 {b}谦让{/b}, 尽可能避免冲突.\n"
+                        des += "她很 {b}谦让{/b}, 她总是尽可能避免冲突.\n"
 
                 if lm >= 100 or always_show_personality[self]:
                     if self.is_("very modest"):
-                        des += "她有强烈的道德观对性爱感到 {b}反感{/b}.\n"
+                        des += "她非常保守并对性爱感到 {b}反感{/b}.\n"
                     elif self.is_("modest"):
                         des += "她遵循自己的 {b}道德准则{/b}, 对淫荡的行为感到不齿.\n"
                     elif self.is_("very lewd"):
-                        des += "她只想要 {b}愉悦{/b}自己, 不在乎世俗道德.\n"
+                        des += "她只想要 {b}愉悦{/b}自己, 不在乎世俗偏见.\n"
                     elif self.is_("lewd"):
                         des += "她 {b}思想开放 没有底线{/b}.\n"
 
@@ -5014,7 +5014,7 @@ init -2 python:
                 neg_fix = [fix.name for fix in self.neg_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
 
                 if pos_fix:
-                    sex_text += "她十分着迷于 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}. "
+                    sex_text += "她十分痴迷 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}. "
                 if neg_fix:
                     sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color}感到恶心. "
 
@@ -5024,7 +5024,7 @@ init -2 python:
                     des += "你不太了解她的性癖."
 
                 if farm.knows["weakness"][self]:
-                    des+= "\n她对农场的 %ss.很敏感" % self.weakness
+                    des+= "\n她对农场的 %ss.十分敏感" % self.weakness
 
             elif show == "recent":
 
