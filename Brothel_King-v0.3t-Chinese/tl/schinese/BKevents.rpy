@@ -8614,11 +8614,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:4059
     old "Okay, sure"
-    new "好的,当然"
+    new "告诉我"
 
     # game/BKevents.rpy:4059
     old "Nah, I'm fine"
-    new "不,我没事"
+    new "不用了"
 
     # game/BKevents.rpy:4120
     old "Go on"
