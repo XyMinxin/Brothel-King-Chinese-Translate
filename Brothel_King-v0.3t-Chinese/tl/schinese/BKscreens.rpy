@@ -1224,7 +1224,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4589
     old "{b}Forecast{/b}"
-    new "{b}财报{/b}"
+    new "{b}预测{/b}"
 
     # game/BKscreens.rpy:4655
     old "All customers have been assigned."
@@ -1284,8 +1284,8 @@ translate schinese strings:
     new "无可报告项目"
 
     # game/BKscreens.rpy:4987
-    old "Today"
-    new "今天"
+    #old "Today"
+    #new "今天"
 
 
     # game/BKscreens.rpy:5472
@@ -1293,24 +1293,24 @@ translate schinese strings:
     new "{i}没有女孩符合这个任务的需求{/i}"
 
     # game/BKscreens.rpy:5489
-    old "Character"
-    new "角色"
+    #old "Character"
+    #new "角色"
 
     # game/BKscreens.rpy:5491
-    old "Difficulty"
-    new "难度"
+    #old "Difficulty"
+    #new "难度"
 
     # game/BKscreens.rpy:5510
     old "Name: "
     new "名称: "
 
     # game/BKscreens.rpy:5519
-    old "Class"
-    new "职业"
+    #old "Class"
+    #new "职业"
 
     # game/BKscreens.rpy:5537
-    old "Religion"
-    new "信仰"
+    #old "Religion"
+    #new "信仰"
 
     old "Change your Main Character's picture."
     new "更改主角的图片."
@@ -1400,40 +1400,40 @@ translate schinese strings:
     new "{i}你还没有学会任何法术。请提升等级。{/i}"
 
     # game/BKscreens.rpy:6023
-    old "Duration"
-    new "持续时间"
+    #old "Duration"
+    #new "持续时间"
 
     # game/BKscreens.rpy:6031
-    old "Cost"
-    new "消耗"
+    #old "Cost"
+    #new "消耗"
 
     # game/BKscreens.rpy:6037
-    old "Enrolled"
-    new "已报名"
+    #old "Enrolled"
+    #new "已报名"
 
     # game/BKscreens.rpy:6043
-    old "Gains"
-    new "收益"
+    #old "Gains"
+    #new "收益"
 
     # game/BKscreens.rpy:6058
     old "\nMax skill: "
     new "\n最高等级: "
 
     # game/BKscreens.rpy:6064
-    old "Reward"
-    new "奖励"
+    #old "Reward"
+    #new "奖励"
 
     # game/BKscreens.rpy:6070
-    old "Requirements"
-    new "要求"
+    #old "Requirements"
+    #new "要求"
 
     # game/BKscreens.rpy:6078
-    old "Desirable"
-    new "推荐"
+    #old "Desirable"
+    #new "推荐"
 
     # game/BKscreens.rpy:6084
-    old "Undesirable"
-    new "不推荐"
+    #old "Undesirable"
+    #new "不推荐"
 
     # game/BKscreens.rpy:6089
     old "No task is currently available."

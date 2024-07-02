@@ -76,13 +76,10 @@ label intro:
     "It seems your long trip across Xeros is coming to an end."
 
     "On the other side of this valley is the city of Zan, jewel of the Eastern coast."
-    "Already the most powerful city in Xeros by far, Zan grows by the day with the arrival of
-     travelers and migrants from all of Xeros and beyond."
+    "Already the most powerful city in Xeros by far, Zan grows by the day with the arrival of travelers and migrants from all of Xeros and beyond."
 
-    "You are one of them, lured by stories of the riches and pleasures that can only be had in
-     the 'City of Jade'..."
-    "But you didn't set out to become just another faceless adventurer lost in the
-     mean streets of the city-state."
+    "You are one of them, lured by stories of the riches and pleasures that can only be had in the 'City of Jade'..."
+    "But you didn't set out to become just another faceless adventurer lost in the mean streets of the city-state."
 
     "You set out...{w=1.0} {b}{color=[c_darkred]}to become a King!{/color}{/b}{w=1.0}{nw}"
 
@@ -121,11 +118,9 @@ label intro:
 
     show sill past at truecenter with dissolve
 
-    "You trained her to follow your every whim and desire, and taught her about the world. You are
-     the only family she has now."
+    "You trained her to follow your every whim and desire, and taught her about the world. You are the only family she has now."
 
-    "You sold all of your slaves in a hurry before starting your journey, but somehow you couldn't
-     let go of Sill."
+    "You sold all of your slaves in a hurry before starting your journey, but somehow you couldn't let go of Sill."
 
     show sill past at centerleft with move
 
@@ -136,21 +131,18 @@ label intro:
             $ MC.good += 1
             $ NPC_sill.love += 1
             $ renpy.block_rollback()
-            you "Well, she is more than a simple slave. Roaming this land wouldn't be the same
-                 without her."
+            you "Well, she is more than a simple slave. Roaming this land wouldn't be the same without her."
 
         "She's an investment.":
             $ MC.neutral += 1
             $ renpy.block_rollback()
-            you "Sell her and what, do my own laundry? Obedient slaves are so hard to come by these
-                 days..."
+            you "Sell her and what, do my own laundry? Obedient slaves are so hard to come by these days..."
 
         "Beats me. She's a waste of space.":
             $ MC.evil += 1
             $ NPC_sill.love -= 1
             $ renpy.block_rollback()
-            you "Never cared for the little brat. But someone has to drive the carriage when I'm
-                 sleeping..."
+            you "Never cared for the little brat. But someone has to drive the carriage when I'm sleeping..."
 
     menu:
         you "Besides, we have some good memories... Like that time..."
@@ -210,8 +202,7 @@ label sill_public:
 
     sill past "Mahhher... Thehe ahe childhhen... Mmmh... coming..."
     you "Hahaha... Let them look!"
-    you "I bet they've never seen a cock-hungry slave like you sucking a dick
-         from up close!"
+    you "I bet they've never seen a cock-hungry slave like you sucking a dick from up close!"
     sill "Mahher!!! Donh't..."
 
     play sound s_mmmh
@@ -243,8 +234,7 @@ label sill_spank:
 
     sill "AAAHA!"
 
-    you "Since you cannot seem to get the basics of discipline through your thick skull, I'll beat
-         it into you proper."
+    you "Since you cannot seem to get the basics of discipline through your thick skull, I'll beat it into you proper."
 
     you "But first, let's see if I can fit THIS into your slutty little hole."
 
@@ -264,8 +254,7 @@ label resume_intro:
 
     play music m_wind fadein 2.0
 
-    sill happy "...and that's how the Pharo dynasty rose to power in Zan, or so the innkeeper said.
-          Fascinating story, isn't it, Master?"
+    sill happy "...and that's how the Pharo dynasty rose to power in Zan, or so the innkeeper said. Fascinating story, isn't it, Master?"
 
     show bg sky night at top with dissolve
 
@@ -287,8 +276,7 @@ label resume_intro:
 
     "Zan is well protected from outside dangers by a series of moats, walls and garrisons."
     "The city has never fallen before any foe, even during the time of the Goliath invasion."
-    "That is not to say that Zan is a peaceful city, however. Its rulers are constantly brought down
-     by plots and internal strife."
+    "That is not to say that Zan is a peaceful city, however. Its rulers are constantly brought down by plots and internal strife."
     "A perfect place for an adventurous soul to make a fresh start..."
 
     show bg outer gate at top with fade
@@ -320,23 +308,17 @@ label resume_intro:
 
             hide guard
             show bg battleground at top with fade
-            "For years you have battled hordes of humans and monsters, far away North in the Holy
-             Lands."
-            "You fought side by side with great knights and dirty sellswords. In the heat of battle,
-             peasants and highborns were comrades."
-            "Battles were won, and battles were lost, always at a dear cost. Most of your friends
-             ended up dead or missing."
-            "You have grown tired of the constant fighting and senseless bloodshed. This is not your
-             calling anymore."
-            "Still, your set of skills is always in demand in Xeros. Time will tell if life in Zan
-             will allow you to put your swords down for good..."
+            "For years you have battled hordes of humans and monsters, far away North in the Holy Lands."
+            "You fought side by side with great knights and dirty sellswords. In the heat of battle, peasants and highborns were comrades."
+            "Battles were won, and battles were lost, always at a dear cost. Most of your friends ended up dead or missing."
+            "You have grown tired of the constant fighting and senseless bloodshed. This is not your calling anymore."
+            "Still, your set of skills is always in demand in Xeros. Time will tell if life in Zan will allow you to put your swords down for good..."
 
             show bg outer gate with fade
             show guard with dissolve
 
             guard "We have great respect for veterans here, Sir."
-            guard "But do mind your manners while in town. Our quiet urban community is not to be
-                   mistaken for a battleground."
+            guard "But do mind your manners while in town. Our quiet urban community is not to be mistaken for a battleground."
 
             jump resume_intro2
 
@@ -350,23 +332,14 @@ label resume_intro:
             hide guard
             show bg palace at top with fade
 
-            "Educated with the best minds of Karkyr to become a battlemage, you used the gold
-             from an inheritance to buy off your years of service, and set out for the Western
-             territories for fame and fortune."
-            "There, you found your place as the court wizard of one Prince Arkin, a powerful
-             border lord."
-            "The hundred warring Princes in Westmarch are always in need of a wizard for counsel,
-             enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of
-             life and death are woven into the fabric of magic itself, and a potent spellcaster can
-             easily wield both."
+            "Educated with the best minds of Karkyr to become a battlemage, you used the gold from an inheritance to buy off your years of service, and set out for the Western territories for fame and fortune."
+            "There, you found your place as the court wizard of one Prince Arkin, a powerful border lord."
+            "The hundred warring Princes in Westmarch are always in need of a wizard for counsel, enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of life and death are woven into the fabric of magic itself, and a potent spellcaster can easily wield both."
             "The Prince had a beautiful wife... And a jealous, suspicious mind."
-            "Somehow, he got it into his thick head that you had been sleeping with his wife, using
-             spells to bypass the guards posted by her chambers."
-            "You got word of this madness a few hours before he planned to have you arrested and burnt
-             at the stake. You escaped swiftly with Sill and what little valuables you could carry."
+            "Somehow, he got it into his thick head that you had been sleeping with his wife, using spells to bypass the guards posted by her chambers."
+            "You got word of this madness a few hours before he planned to have you arrested and burnt at the stake. You escaped swiftly with Sill and what little valuables you could carry."
             "Not forgetting to pay a last visit to the Princess on your way out, of course..."
-            "Zan seems like a good place for you to lay low for a while, and leave that nasty
-             business of stakes and pyres behind."
+            "Zan seems like a good place for you to lay low for a while, and leave that nasty business of stakes and pyres behind."
 
             show bg outer gate with fade
             show guard with dissolve
@@ -375,10 +348,8 @@ label resume_intro:
 
             "He spits."
 
-            guard "There is no shortage of self-proclaimed mages and witches in Zan. I won't
-                   stop you... But wherever your kind goes, trouble is sure to follow."
-            guard "I'll keep my eye on you, wizard, so don't step out of line. Otherwise it'll be
-                   my pleasure to escort you out of the city... or to the pit."
+            guard "There is no shortage of self-proclaimed mages and witches in Zan. I won't stop you... But wherever your kind goes, trouble is sure to follow."
+            guard "I'll keep my eye on you, wizard, so don't step out of line. Otherwise it'll be my pleasure to escort you out of the city... or to the pit."
 
             jump resume_intro2
 
@@ -391,34 +362,21 @@ label resume_intro:
             hide guard
             show bg caravan at top with fade
 
-            "A native of Borgo, the harbor city, you grew up on the docks, buying and selling all
-             kinds of legal and less legal merchandise from overseas for a profit."
-            "Before long, you decided to venture into the wild world, to see for yourself the
-             wonders sailors and travelers had been mumbling about in their cups."
-            "You went to the furthest corners of Xeros and back, and even sailed the Blood Sea. But
-             your latest trip was nearly your last."
-            "Your party had set out for the legendary Southern land of Hokoma, roaming through
-             scorching desert and sweltering jungles."
-            "Your aim was to negotiate with native tribes for the rarest spices and magical
-             ingredients, to exchange for cheap trinkets."
-            "Amazingly, you made it to Hokoma with only a few casualties, and most of your wares
-             still intact."
-            "But on the way back through the jungles, as you were busy dreaming of the riches you
-             were sure to obtain back in Borgo, your party got ambushed and slaughtered by a
-             ferocious headhunting tribe."
-            "You and Sill barely made it out with your lives, losing all of your stock while
-             escaping."
-            "Returning to Borgo empty-handed to face your creditors didn't seem like the brightest
-             idea. So instead, you decided to head for Zan, and use your business acumen to
-             rebuild from there."
+            "A native of Borgo, the harbor city, you grew up on the docks, buying and selling all kinds of legal and less legal merchandise from overseas for a profit."
+            "Before long, you decided to venture into the wild world, to see for yourself the wonders sailors and travelers had been mumbling about in their cups."
+            "You went to the furthest corners of Xeros and back, and even sailed the Blood Sea. But your latest trip was nearly your last."
+            "Your party had set out for the legendary Southern land of Hokoma, roaming through scorching desert and sweltering jungles."
+            "Your aim was to negotiate with native tribes for the rarest spices and magical ingredients, to exchange for cheap trinkets."
+            "Amazingly, you made it to Hokoma with only a few casualties, and most of your wares still intact."
+            "But on the way back through the jungles, as you were busy dreaming of the riches you were sure to obtain back in Borgo, your party got ambushed and slaughtered by a ferocious headhunting tribe."
+            "You and Sill barely made it out with your lives, losing all of your stock while escaping."
+            "Returning to Borgo empty-handed to face your creditors didn't seem like the brightest idea. So instead, you decided to head for Zan, and use your business acumen to  rebuild from there."
 
             show bg outer gate with fade
             show guard with dissolve
 
-            guard "A peddler, eh? You don't seem to have a lot of goods about. Seen better
-                   luck, haven't you?"
-            guard "Well, any man can make it in the City of Jade, or so they say. But stay on the right
-                   side of the law, merchant, or you will have to deal with me."
+            guard "A peddler, eh? You don't seem to have a lot of goods about. Seen better luck, haven't you?"
+            guard "Well, any man can make it in the City of Jade, or so they say. But stay on the right side of the law, merchant, or you will have to deal with me."
 
             jump resume_intro2
 
@@ -440,15 +398,13 @@ label resume_intro2:
             $ MC.evil += 1
             $ renpy.block_rollback()
             "He spits on the ground."
-            guard "I knew you had that sneaky look about you... There are many shrines dedicated to
-                   the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
+            guard "I knew you had that sneaky look about you... There are many shrines dedicated to the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
 
         "I serve none but myself":
             $ MC.set_god(None)
             $ MC.neutral += 1
             $ renpy.block_rollback()
-            guard "What have we here, a free thinker? You must think oh so highly of yourself, not
-                   needing the protection of gods and all?"
+            guard "What have we here, a free thinker? You must think oh so highly of yourself, not needing the protection of gods and all?"
 
     "Please take a moment to review your choices now. You won't be able to change them after this point."
 
@@ -485,8 +441,7 @@ label resume_intro2:
 
     sill sad "Yes Master, *pants*, I'm doing the best I can... *pants*"
 
-    "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly
-     crumbling under its weight."
+    "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly crumbling under its weight."
 
     you "Hurry up now will you... What's that?"
 
@@ -498,8 +453,7 @@ label resume_intro2:
 
     kuro "Help me!"
 
-    "In a dark alley on the side of the plaza, a woman is standing with her back to the wall. Two
-     men are blocking her way out."
+    "In a dark alley on the side of the plaza, a woman is standing with her back to the wall. Two men are blocking her way out."
 
     menu:
         "What do you do?"
@@ -509,8 +463,7 @@ label resume_intro2:
             $ MC.good += 1
             $ renpy.block_rollback()
 
-            "Charging in the back alley without a moment of hesitation, you reach the men just as
-             they're closing in on the helpless woman."
+            "Charging in the back alley without a moment of hesitation, you reach the men just as they're closing in on the helpless woman."
 
             you "What's going on here?"
 
@@ -528,13 +481,11 @@ label resume_intro2:
                 yalign 1.0
 
 
-            thug1 "Now, now, citizen, don't you listen to that lying bitch. We're here on...
-                   official business."
+            thug1 "Now, now, citizen, don't you listen to that lying bitch. We're here on... official business."
             thug2 "Yeah, orficial..."
             thug1 "'n we're just takin' her to be... interrogated."
             thug2 "Yeah, in taro gated..."
-            thug1 "So no cause for alarm, here, you see... Now be on your way, citizen, for your
-                   own sake."
+            thug1 "So no cause for alarm, here, you see... Now be on your way, citizen, for your own sake."
             thug2 "Yeah, that's none of yer business! So back off, will ye."
 
             you "..."
@@ -620,15 +571,13 @@ label resume_intro2:
 
             thug2 "What were they droppin', cousin?"
 
-            thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know
-                   what the boss said... No witnesses."
+            thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know what the boss said... No witnesses."
 
             thug2 "Oh, that's right..."
 
             thug2 "Hey, cousin, did you see that lil' hotty, with the pink hair?"
 
-            thug2 "I'm gonna have me some fun with her! After we're through with the noble
-                   bitch..."
+            thug2 "I'm gonna have me some fun with her! After we're through with the noble bitch..."
 
             you "..."
 
@@ -680,8 +629,7 @@ label resume_intro3:
         with flash
 
 
-        "You dodge the first thug and shove him to the side, before slicing up and severing the arm
-         of the second thug clean off."
+        "You dodge the first thug and shove him to the side, before slicing up and severing the arm of the second thug clean off."
 
         play sound s_wscream
         thug2 "Aaaaargh!!!"
@@ -717,8 +665,7 @@ label resume_intro3:
         thug2 "AAAAAAAAARRRRRRRRHHHHHHHHH!!!"
         play sound s_wscream
 
-        "A bolt of lightning thunders down from the dark skies, striking one thug and
-         blinding the other one."
+        "A bolt of lightning thunders down from the dark skies, striking one thug and blinding the other one."
 
         thug1 "Cou... cousin?"
 
@@ -763,11 +710,9 @@ label resume_intro3:
 
         thug1 "A pet... Dragon???"
 
-        you "Yes, a pet dragon! I acquired this one in the far East, all the way across the Blood
-             Sea, when he was but an egg."
+        you "Yes, a pet dragon! I acquired this one in the far East, all the way across the Blood Sea, when he was but an egg."
 
-        you "I retrieved it from the funeral pyre of some petty nomad king, incinerated with his
-             western bride and a slave witch, if you can believe it. But long story short..."
+        you "I retrieved it from the funeral pyre of some petty nomad king, incinerated with his western bride and a slave witch, if you can believe it. But long story short..."
 
         you "Do you want to be his next snack so badly?"
 
@@ -824,8 +769,7 @@ label resume_intro3:
 
     kuro "Thank you, from the bottom of my heart."
 
-    kuro "Forgive me though, but I have to leave now. Others like them are on my trail, and I
-          must make it to safety as quickly as I can."
+    kuro "Forgive me though, but I have to leave now. Others like them are on my trail, and I must make it to safety as quickly as I can."
 
     kuro "But you have saved my life, and my honor. I am in your debt."
     kuro "Seek the house of master Gio. He is a friend of my family, and he will reward you."
@@ -835,8 +779,7 @@ label resume_intro3:
     hide kuro with dissolve
 #    play sound s_steps fadein 0.5 fadeout 0.5
 
-    "Without a word, the lady bows politely, and bolts past you and Sill, disappearing into the
-     night."
+    "Without a word, the lady bows politely, and bolts past you and Sill, disappearing into the night."
 
     sill "I hope she'll be ok..."
 
@@ -900,20 +843,17 @@ label resume_intro3:
 
     you "Greetings, master Gio. My name is..."
 
-    gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among
-         friends."
+    gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among friends."
 
     you "Wait... How?"
 
     gio "I am Gio Fratello, or Shady Gio, as they call me."
 
-    gio "One of my jobs is to know about anyone unusual who comes and goes in this city. And that alone is a lot
-         of work..."
+    gio "One of my jobs is to know about anyone unusual who comes and goes in this city. And that alone is a lot of work..."
 
     you "I see. Gio, I apologize for the late hour..."
 
-    gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at
-         night, anyway."
+    gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at night, anyway."
 
     $ kuro_name = "Princess"
 
@@ -923,8 +863,7 @@ label resume_intro3:
 
     gio "You're from a faraway land, I forgot..."
 
-    gio "Well, I'm not going to spoil the surprise here. I'm sure you'll meet her properly when the
-         time is right."
+    gio "Well, I'm not going to spoil the surprise here. I'm sure you'll meet her properly when the time is right."
 
     sill sad "Wait! Don't leave us hanging there!"
 
@@ -942,13 +881,11 @@ label resume_intro3:
 
     you "*frown*"
 
-    gio "But wait... It is my understanding that you have come to the city to strike it rich, am I
-         right?"
+    gio "But wait... It is my understanding that you have come to the city to strike it rich, am I right?"
 
     you "..."
 
-    gio "So I am ready to offer you something a lot better than petty cash... And of similar value to
-         the reward the Princess wanted me to give you."
+    gio "So I am ready to offer you something a lot better than petty cash... And of similar value to the reward the Princess wanted me to give you."
 
     you "Go on."
 
@@ -991,8 +928,7 @@ label resume_intro3:
 
     you "Fascinating lecture, professor, but can we move on to the part about my reward?"
 
-    gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you
-         think pulls the strings of our stupid king and his clique?"
+    gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you think pulls the strings of our stupid king and his clique?"
 
     menu:
         "Who?"
@@ -1140,11 +1076,9 @@ label resume_intro3:
     show princess fucked:
         alpha 0.8
 
-    gio "They are men and women who work in the shadows, procuring nobles and rich citizens alike the
-     vices they crave."
+    gio "They are men and women who work in the shadows, procuring nobles and rich citizens alike the vices they crave."
 
-    gio "They can provide any kind of 'entertainment' if you have the gold: women, fairies, animals,
-         even monsters... They can indulge your every possible fantasy."
+    gio "They can provide any kind of 'entertainment' if you have the gold: women, fairies, animals, even monsters... They can indulge your every possible fantasy."
 
     gio "This gives them {b}true{/b} power. They know every one of their customers' dirty secrets..."
 
@@ -1154,8 +1088,7 @@ label resume_intro3:
 
     hide princess with dissolve
 
-    gio "They say even King Pharo I is the pawn of a powerful brothel master, a fellow by the
-     name of 'Cloud'. {i}I{/i} have never met him, however. And I know {i}everyone{/i} in Zan. Almost."
+    gio "They say even King Pharo I is the pawn of a powerful brothel master, a fellow by the name of 'Cloud'. {i}I{/i} have never met him, however. And I know {i}everyone{/i} in Zan. Almost."
 
     stop music fadeout 5.0
 
@@ -1184,11 +1117,9 @@ label shortcut:
 
     gio "All the girls left, but the house is still in order."
 
-    gio "I've decided I'm not good at this racket, but you... You can take over the whorehouse if
-         you want."
+    gio "I've decided I'm not good at this racket, but you... You can take over the whorehouse if you want."
 
-    gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you
-         get a place to stay and conduct your business. What do you think?"
+    gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you get a place to stay and conduct your business. What do you think?"
 
     menu:
         "Well..."
@@ -1229,8 +1160,7 @@ label resume_intro4:
 
     sill "Ma... Master?"
 
-    gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very
-         devoted little bitch, that one."
+    gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very devoted little bitch, that one."
 
     play sound s_surprise
 
@@ -1269,8 +1199,7 @@ label resume_intro4:
 
             "His voice is cold."
 
-            gio "And come to my bedchambers after that, bringing the SM equipment. I need
-                 to blow off some steam."
+            gio "And come to my bedchambers after that, bringing the SM equipment. I need to blow off some steam."
 
             maid blush "Understood, Master."
 
@@ -1402,8 +1331,7 @@ label resume_intro4:
 
             maid "Right here, Master."
 
-            gio "Take our guests to their room, will you. Then, meet me in my room with the
-                 'toybox'."
+            gio "Take our guests to their room, will you. Then, meet me in my room with the 'toybox'."
 
             maid "Yes, Master."
 
@@ -1423,8 +1351,7 @@ label resume_intro4:
 
             sill sad "Whaaat?"
 
-            you "You need to learn to respect my wishes, Sill. You are my slave, and I'm the
-                 one calling the shots."
+            you "You need to learn to respect my wishes, Sill. You are my slave, and I'm the one calling the shots."
 
             sill "..."
 
@@ -1518,7 +1445,7 @@ label resume_intro4:
 
             menu:
 
-                "Ask for a blowjob":
+                "让她用嘴为你口交":
 
                     $ renpy.block_rollback()
 
@@ -1545,8 +1472,7 @@ label resume_intro4:
 
                     show bg gioblow3 with dissolve
 
-                    "You come all over her face and hair. She engulfs your shaft in her mouth as
-                     you keep cumming, trying to make sure to drink some of it."
+                    "You come all over her face and hair. She engulfs your shaft in her mouth as you keep cumming, trying to make sure to drink some of it."
 
                     "She makes wet noises, swallowing your hot cum eagerly."
 
@@ -1557,7 +1483,7 @@ label resume_intro4:
                     jump maid_fuck
 
 
-                "Fuck her where she stands":
+                "让她趴在床上撅起屁股":
 
                     $ renpy.block_rollback()
 
@@ -1579,8 +1505,7 @@ label resume_intro4:
 
                     maid "You're... drilling me!!!"
 
-                    "Even though you've just started shoving your dick in her, she is already
-                     completely wet."
+                    "Even though you've just started shoving your dick in her, she is already completely wet."
 
                     you "You're already wet, aren't you, you little slut?"
 
@@ -1620,8 +1545,7 @@ label maid_fuck:
 
     maid blush "Ooooh my lord... You're so... big..."
 
-    "It's hard to believe how wet she is. You can slide in and out of her with ease, even though
-     she is very tight."
+    "It's hard to believe how wet she is. You can slide in and out of her with ease, even though she is very tight."
 
     maid "Oh yes, master [MC.name]! Do it like this..."
 
@@ -1696,7 +1620,7 @@ label maid_fuck:
 
     jump day1
 
-
+#汉化标签，参照这里的格式修改图片出现的数量#
 label day1:
 
     scene black with fade
@@ -1715,23 +1639,19 @@ label day1:
 
     show bg slave market2 at top with fade
 
-    "For centuries, slave traders from all of Xeros have converged on Zan to buy and sell the finest
-     slaves on the continent."
+    "For centuries, slave traders from all of Xeros have converged on Zan to buy and sell the finest slaves on the continent."
 
     show bg slave market3 at top with fade
 
-    "They are used for most everyday tasks and are expected to provide all kinds of
-     services... They are what their masters want them to be."
+    "They are used for most everyday tasks and are expected to provide all kinds of services... They are what their masters want them to be."
 
     show bg slave market9 at top with fade
 
-    "Slaves cannot address free people unless spoken to. And, most importantly, slaves can
-     never raise a hand against their betters. This is a very grave offense."
+    "Slaves cannot address free people unless spoken to. And, most importantly, slaves can never raise a hand against their betters. This is a very grave offense."
 
     show bg slave market10 at top with fade
 
-    "Which is why warriors are usually free men and women, except for some of the pitfighters
-     who fight against monsters or other slaves."
+    "Which is why warriors are usually free men and women, except for some of the pitfighters who fight against monsters or other slaves."
 
     show bg slave market5 at top with fade
 
@@ -1739,8 +1659,7 @@ label day1:
 
     show bg slave market4 at top with fade
 
-    "Girls from all over Xeros born, sold, or coerced into slavery, are trained to
-     become perfect sex kittens."
+    "Girls from all over Xeros born, sold, or coerced into slavery, are trained to become perfect sex kittens."
 
     scene black with fade
     show bg slave market6 at topleft with dissolve:
@@ -1788,8 +1707,7 @@ label day1:
 
     you "What!!! Why you... [starting_gold] denars! It was worth at least twice that!!!"
 
-    gio "Oh, well, these are hard times... I'm afraid slaves are not the best quality at that price, but your training will make all the
-         difference, I'm sure. Hehehe..."
+    gio "Oh, well, these are hard times... I'm afraid slaves are not the best quality at that price, but your training will make all the difference, I'm sure. Hehehe..."
 
     # SET UP CALENDAR
     $ calendar.updates()
@@ -1834,12 +1752,10 @@ label slavemarket_first_time:
     if MC.get_alignment() == "good":
         you "No, Sill is my personal slave and I don't want to share her with all of Zan."
     elif MC.get_alignment() == "evil":
-        you "She is a dumb slut, but her skills are lacking. Maybe I'll use her later, as a cum
-             dump for unsatisfied customers."
+        you "She is a dumb slut, but her skills are lacking. Maybe I'll use her later, as a cum dump for unsatisfied customers."
         sill "Noooooo!!!"
     else:
-        you "No, Sill will help with other tasks. I need someone to handle the reception,
-             the accounting, the laundry, the groceries, the cooking, the cleaning..."
+        you "No, Sill will help with other tasks. I need someone to handle the reception, the accounting, the laundry, the groceries, the cooking, the cleaning..."
         "The list goes on and on and Sill looks aghast."
 
     ## TO DO: Implement Sill as a functioning working girl?
@@ -1857,8 +1773,7 @@ label slavemarket_first_time:
     if girl.get_stat("body") >= 20:
         gio "This girl has a good body. Look at those juicy boobs... Mmmmh."
     elif girl.get_stat("beauty") >= 20:
-        gio "This girl is not bad looking. Even if she's useless in bed, she will still attract
-             customers who want to fuck a pretty slut."
+        gio "This girl is not bad looking. Even if she's useless in bed, she will still attract customers who want to fuck a pretty slut."
     elif girl.get_stat("charm") >= 20:
         "[girl.name] slaps Gio's hands off."
         girl.char "Come on now, keep your hands to yourself, granpa."
@@ -1931,8 +1846,7 @@ label districts_first_time:
 
     gio "Every district requires a specific license to open a business within the district limits."
 
-    gio "To get a license, of course, you need to have the right political and business connections...
-         Something which isn't easy to achieve."
+    gio "To get a license, of course, you need to have the right political and business connections... Something which isn't easy to achieve."
 
     you "What are you trying to say..."
 
@@ -1960,11 +1874,9 @@ label districts_first_time:
 
     gio "All right, most of them are drifters and beggars."
 
-    gio "But like everyone in Zan, they need sex, and what little money they get, they spend on
-         girls and spice."
+    gio "But like everyone in Zan, they need sex, and what little money they get, they spend on girls and spice."
 
-    gio "So, while I didn't succeed in making the brothel business take off, I'm sure you will find
-         a way to turn a profit. My instinct tells me so..."
+    gio "So, while I didn't succeed in making the brothel business take off, I'm sure you will find a way to turn a profit. My instinct tells me so..."
 
     if MC.playerclass == "奸商":
         you "Well, I will have to rely on my legendary business acumen..."
@@ -1993,9 +1905,7 @@ label districts_first_time_slums:
 
     $ ui.interact()
 
-    "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the
-     Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host
-     the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
+    "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
 
     if not renpy.call_screen("yes_no", "Do you really want to choose the Slums to open your new brothel?"):
         jump districts_first_time_slums
@@ -2056,14 +1966,11 @@ label brothel_first_time:
 
     gio "Right now, only one is usable, though."
 
-    gio "Also, you will need to entertain your customers in a common room while they wait their turn for more...
-         private action."
+    gio "Also, you will need to entertain your customers in a common room while they wait their turn for more... private action."
 
-    gio "Those common rooms serve as a front for the business, just in case the Guard becomes
-         too nosy."
+    gio "Those common rooms serve as a front for the business, just in case the Guard becomes too nosy."
 
-    gio "New girls will start working in the common rooms, until they are comfortable enough taking
-         guests to the bedrooms."
+    gio "New girls will start working in the common rooms, until they are comfortable enough taking guests to the bedrooms."
 
     gio "Currently, all the common rooms are in disrepair."
 
@@ -2087,8 +1994,7 @@ label brothel_first_time:
 
     gio "I see that you are not quite pleased with my gift... so I'll throw in a bonus."
 
-    gio "Craftsmen working for me will come this afternoon, and they'll repair one of the common
-         rooms. This should get you started."
+    gio "Craftsmen working for me will come this afternoon, and they'll repair one of the common rooms. This should get you started."
 
     gio "There are 4 types of common areas. You get to pick the one you like best."
 
@@ -2099,8 +2005,7 @@ label brothel_first_time:
 
     gio "Waitresses with good {b}charm{/b} will keep the customers entertained."
 
-    gio "With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment'
-         to the customers."
+    gio "With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
 
 
     show bg stripper at top with fade
@@ -2109,8 +2014,7 @@ label brothel_first_time:
 
     gio "You should pick girls with a good {b}body{/b} to be Dancers."
 
-    gio "With time, they will remove more and more clothing, and take the customers to a room for
-         a 'private dance'."
+    gio "With time, they will remove more and more clothing, and take the customers to a room for a 'private dance'."
 
     show bg masseuse at top with fade
 
@@ -2118,18 +2022,15 @@ label brothel_first_time:
 
     gio "Masseuses should be {b}beautiful{/b} girls, to attract customers to the onsen."
 
-    gio "With time, they will give erotic massages to the customers, and eventually provide
-         them with 'full service'."
+    gio "With time, they will give erotic massages to the customers, and eventually provide them with 'full service'."
 
     show bg geisha at top with fade
 
     gio "The {b}okiya{/b} will allow you to train girls as {b}geishas{/b}."
 
-    gio "Geishas should be {b}refined{/b}, elegant and witty. Not that the riffraff around here knows anything about
-         class, mind you... But that's the job description."
+    gio "Geishas should be {b}refined{/b}, elegant and witty. Not that the riffraff around here knows anything about class, mind you... But that's the job description."
 
-    gio "With time, they'll learn a thousand ways to please their customers, and how to take
-         care of their more... 'special' requests."
+    gio "With time, they'll learn a thousand ways to please their customers, and how to take care of their more... 'special' requests."
 
     hide bg
 
@@ -2193,8 +2094,7 @@ label main_first_time:
 
     gio "The [room.name] is in order now."
 
-    gio "I'll leave you to it then. Don't forget to assign your girl to work there for the big
-    opening tonight."
+    gio "I'll leave you to it then. Don't forget to assign your girl to work there for the big opening tonight."
 
     $ unlock_achievement("intro")
 
@@ -2227,8 +2127,7 @@ label main_first_time:
 
     sill happy "While the workers were busy, I went over the old accounting books."
 
-    sill "The old geezer was as bad as he said he was at managing the business, but I think I got a rough
-          idea of how things work."
+    sill "The old geezer was as bad as he said he was at managing the business, but I think I got a rough idea of how things work."
 
     sill "Let us visit your girl, and I will explain."
 

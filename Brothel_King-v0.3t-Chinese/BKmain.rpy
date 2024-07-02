@@ -189,7 +189,7 @@ label visit_district:
 
             if selected_location.secret:
 
-                "You have not discovered this location yet."
+                "你还没有解锁这个地区。"
 
             else:
 
@@ -1007,27 +1007,27 @@ label girls_first_time:
 
                 girl.char "What do you want me to do, Master?"
 
-                "Rest":
+                "暂时先休息吧":
                     $ girl.set_job(None)
                     $ renpy.block_rollback()
 
-                "Work as a waitress" if brothel.has_room("tavern"):
+                "去做女服务员" if brothel.has_room("tavern"):
                     $ girl.set_job("waitress")
                     $ renpy.block_rollback()
 
-                "Work as a dancer" if brothel.has_room("strip club"):
+                "去做脱衣舞娘" if brothel.has_room("strip club"):
                     $ girl.set_job("dancer")
                     $ renpy.block_rollback()
 
-                "Work as a masseuse" if brothel.has_room("onsen"):
+                "去做按摩技师" if brothel.has_room("onsen"):
                     $ girl.set_job("masseuse")
                     $ renpy.block_rollback()
 
-                "Work as a geisha" if brothel.has_room("okiya"):
+                "去做表演艺伎" if brothel.has_room("okiya"):
                     $ girl.set_job("geisha")
                     $ renpy.block_rollback()
 
-                "Work as a whore":
+                "勾引客人上床":
                     $ renpy.block_rollback()
 
                     if girl.will_do("whore"):

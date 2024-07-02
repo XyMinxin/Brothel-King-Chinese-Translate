@@ -5364,14 +5364,14 @@ label ninja_hunt(loc):
         call ninja_game(NPC_haruka) from _call_ninja_game_2
 
     else:
-
+#汉化标签，未翻译的部分#
         $ no_ninja_loc_dict = {
-                            "Spice market" : ["I didn't find any leads, but I did find a potent aphrodisiac I'd like you to try...", "Not now, Suz!"],
+                            "Spice market" : ["I didn't find any leads, but I did find a potent aphrodisiac I'd like you to try...", "不是现在, 云雀!"],
                             "Sewers" : ["So I went through the sewers all day... Garbage, monsters, rapists, the usual... But no signs of a Kunoichi.", "Thanks for the intel... Can you stand downwind, please?"],
-                            "Farm" : ["I found nothing but a dead squirrel... Say, would you like me to drop it on your doorstep?", "No way!"],
-                            "Watchtower" : ["A Kunoichi standing so close to the Guard tower would be bold indeed... But I haven't seen any signs of recent ninja activity.", "Okay. We'll keep looking."],
-                            "Junkyard" : ["Nothing to see here. This is not the kind of junk I'm interested in...", "I get the idea."],
-                            "Thieves guild" : ["She's not here this time... Sneaky brat.", "Let's look elsewhere."],
+                            "Farm" : ["I found nothing but a dead squirrel... Say, would you like me to drop it on your doorstep?", "没门!"],
+                            "Watchtower" : ["A Kunoichi standing so close to the Guard tower would be bold indeed... But I haven't seen any signs of recent ninja activity.", "好吧，让我们继续找。"],
+                            "Junkyard" : ["Nothing to see here. This is not the kind of junk I'm interested in...", "我明白了。"],
+                            "Thieves guild" : ["She's not here this time... Sneaky brat.", "让我们去其他地方找找。"],
 
                             "Harbor" : ["Nothing smells fishy here... Except the fish. Kukukuku...", "Okay. I still think your career switch to stand-up comedy is ill-conceived."],
                             "Shipyard" : ["I haven't seen a single Kunoichi, but there was this boat that was shaped like a-", "Not interested, thank you."],

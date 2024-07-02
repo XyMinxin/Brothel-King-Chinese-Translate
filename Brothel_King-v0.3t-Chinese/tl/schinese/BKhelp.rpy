@@ -2658,35 +2658,35 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2097
     old "Cheat modifier"
-    new "自定义难度"
+    new "调整游戏难度"
 
     # game/BKhelp.rpy:2097
-    old "Gold"
-    new "获得金币"
+    #old "Gold"
+    #new "获得金币"
 
     # game/BKhelp.rpy:2097
-    old "Main character"
-    new "修改主角状态"
+    #old "Main character"
+    #new "修改主角状态"
 
     # game/BKhelp.rpy:2097
-    old "Girls"
-    new "修改员工属性"
+    #old "Girls"
+    #new "修改员工属性"
 
     # game/BKhelp.rpy:2097
-    old "Free girls"
-    new "调整陌生女孩"
+    #old "Free girls"
+    #new "调整陌生女孩"
 
     # game/BKhelp.rpy:2097
-    old "Items"
-    new "获取物品道具"
+    #old "Items"
+    #new "获取物品道具"
 
     # game/BKhelp.rpy:2097
-    old "Tags"
-    new "修改标签"
+    #old "Tags"
+    #new "修改标签"
 
     # game/BKhelp.rpy:2097
-    old "Others"
-    new "其他"
+    #old "Others"
+    #new "其他"
 
     # game/BKhelp.rpy:2194
     old "The cheat modifier is a float number affecting stat gains, xp, jp, reputation and gold earned by your girls. Use it to adjust the difficulty level (e.g.: a modifier of 1.5 gives your girl a 50% increase); a modifier of 0.75 decreases gains by 25%)"
@@ -2969,16 +2969,16 @@ translate schinese strings:
     new "显示事件: [show_ev]"
 
     # game/BKhelp.rpy:2890
-    old "GO"
-    new "开始"
+    #old "GO"
+    #new "开始"
 
     # game/BKhelp.rpy:360
     old "BROKIPEDIA"
     new "青楼百科全书"
 
     # game/BKhelp.rpy:380
-    old "Close"
-    new "关闭"
+    #old "Close"
+    #new "关闭"
 
     # game/BKhelp.rpy:420
     old "Previous notifications"
@@ -3057,8 +3057,8 @@ translate schinese strings:
     new "新的测试"
 
     # game/BKhelp.rpy:3211
-    old "STOP"
-    new "停止"
+    #old "STOP"
+    #new "停止"
 
 
 ###########################################################

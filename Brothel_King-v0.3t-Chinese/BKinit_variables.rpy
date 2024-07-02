@@ -168,9 +168,9 @@ init -3 python:
 
     diff_list = ["very easy", "easy", "normal", "hard", "insane"] # A list is needed to show the values in order
 
-    diff_name = {"very easy" : "Gigolo", "easy" : "Hustler", "normal" : "Whorelord", "hard" : "Brothel Prince", "insane" : "Brothel King{#1}"}
+    diff_name = {"very easy" : "宝宝巴士", "easy" : "简单", "normal" : "正常", "hard" : "困难", "insane" : "青楼之王{#1}"}
 
-    diff_description = {"very easy" : "No challenge at all. You're either here for the story, or the pretty pictures. {i}All achievements are locked.{/i}", "easy" : "A basic challenge for new players.", "normal" : "The classic experience.", "hard" : "Want more challenge? Hard has got you covered.", "insane" : "The ultimate challenge."}
+    diff_description = {"very easy" : "没有任何挑战性，我猜你只是想看看剧情和色图。{i}本局游戏将无法解锁成就{/i}", "easy" : "对于新手来说，难度刚刚好。", "normal" : "适合有一些经验的玩家。", "hard" : "想要挑战自我？那就选困难模式吧！", "insane" : "终极挑战，现实也不过如此吧~"}
 
     diff_settings = ["stats", "xp", "jp", "pref", "rep", "gold", "budget", "rewards", "resources", "prestige", "tax rate", "satisfaction", "security"] # A list is needed to show the values in order
 
@@ -185,25 +185,25 @@ init -3 python:
                          "jp" : "职业经验倍率",
                          "rep" : "女孩声望倍率",
                          "prestige" : "主角声望倍率",
-                         "tax rate" : "公会会费倍率",
-                         "satisfaction" : "满意度倍率",
+                         "tax rate" : "公会税款倍率",
+                         "satisfaction" : "顾客的满意度",
                          "security" : "事件周期长度",
                         }
 
     diff_setting_description = {
-                         "gold" : "影响{b}}青楼收入{/b}.",
-                         "budget" : "影响客户个人的{b}预算上限{/b}.",
-                         "rewards" : "影响{b}任务、等级和合约{/b}的奖励.",
-                         "resources" : "影响收集和交易{b}资源{/b}的数量.",
-                         "stats" : "影响女孩{b}技能{/b}的增长.",
-                         "pref" : "影响女孩{b}性偏好{/b}的增长.",
-                         "xp" : "影响女孩{b}等级经验{/b}的增长.",
-                         "jp" : "影响女孩{b}职业经验{/b}的增长.",
-                         "rep" : "影响女孩{b}声望{/b}的增长.",
-                         "prestige" : "影响主角 {b}声望{/b}的增长.",
-                         "tax rate" : "增加或减少奴隶公会的 {b}费用{/b}.",
-                         "satisfaction" : "改变客户{b}满意度{/b}奖金.",
-                         "security" : "每次事件发生后将威胁累积延迟此天数.",
+                         "gold" : "调整青楼的{b}}收入{/b}倍率。",
+                         "budget" : "调整客户消费的{b}预算{/b}上限。",
+                         "rewards" : "调整{b}任务、培训和合约{/b}的奖励倍率。",
+                         "resources" : "调整单次收集和交易{b}资源{/b}的数量。",
+                         "stats" : "调整女孩{b}属性{/b}的增长速度。",
+                         "pref" : "调整女孩{b}性倾向{/b}的增长速度。",
+                         "xp" : "调整女孩{b}等级经验{/b}的增长速度。",
+                         "jp" : "调整女孩{b}职业经验{/b}的增长速度。",
+                         "rep" : "调整女孩{b}声望{/b}的增长速度。",
+                         "prestige" : "影响主角 {b}声望{/b}的增长。",
+                         "tax rate" : "增加或减少交给公会的 {b}税款{/b}。",
+                         "satisfaction" : "改变客户{b}满意度{/b}的增长速度。",
+                         "security" : "调整每次安全事件之间的间隔时间。",
                         }
 
     diff_settings_range = {
@@ -488,7 +488,7 @@ init -3 python:
                     "price" : ["价值", "price", "价值", False],
                     "type" : ["种类", "filter", "物品类型", False],
                     "level" : ["等级", "level", "女孩的等级", True],
-                    "rank" : ["阶级", "rank", "奴隶的阶级", True],
+                    "rank" : ["阶级", "rank", "女孩的阶级", True],
                     "job" : ["职业", "job_sort_value", "女孩的工作", False],
                     "experience" : ["性能力", "training_value", "性训练水平", True],
                     }

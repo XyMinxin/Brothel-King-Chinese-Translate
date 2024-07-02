@@ -417,7 +417,7 @@ screen right_menu_advance():
             hbox xalign 1.0 spacing 20:
                 text ""
 
-                textbutton "进入下一章" text_size res_font(20) style_group "rm":
+                textbutton "推进到下一章" text_size res_font(20) style_group "rm":
 
                     xalign 1.0
 
@@ -428,7 +428,7 @@ screen right_menu_advance():
                     else:
                         action Function(renpy.notify, "你没有足够的金币.")
 
-                    tooltip __("花费 %s 金币,进入下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
+                    tooltip __("花费 %s 金币,推进到下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
 
 
 

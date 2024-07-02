@@ -343,16 +343,16 @@ label init_game(quick=False):
     #### DISTRICTS ####
     python:
 
-        # POPULATIONS #
+        # POPULATIONS 汉化标签，乞丐，工人，工匠顾客游戏内不显示描述文本，游戏原本的BUG，通过复制别的顾客的效果并将数值修改为0,游戏内正常显示了#
 
-        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, base_description="一群极其粗陋、要求不高的顾客。毕竟，乞丐没资格挑肥拣瘦。")
+        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, effects=[Effect("change", "satisfaction", -0)], base_description="一群极其粗陋、要求不高的顾客。毕竟，乞丐没资格挑肥拣瘦。")
         thug = Population("thugs", "thug.webp", diff = 20, range = 10, rank=1, weight=3, effects=[Effect("boost", "crazy", 1)], base_description="混混的生活总是伴随着兄弟情和女人。兄弟如衣服女人如手足。")
-        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, base_description="工人们，团结起来!或者，你知道的，先找个女孩爽一晚上。")
+        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, effects=[Effect("change", "satisfaction", -0)], base_description="工人们，团结起来!或者，你知道的，先找个女孩爽一晚上。")
 
         sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="水手上岸后都是出了名的好色。经过长途航行后，船员们需要发泄积累的性欲。")
         commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="枯燥的生活，乏味的工作，将就的配偶……看到一个普通人试图在青楼里逃避这一切……这很常见。")
 
-        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1)], base_description="工匠们都是手艺人，当他们的手里没工具的时候，他们喜欢把手放在女人的胸和屁股上揉捏，就像在塑造艺术品。")
+        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -0)], base_description="工匠们都是手艺人，当他们的手里没工具的时候，他们喜欢把手放在女人的胸和屁股上揉捏，就像在塑造艺术品。")
 
         bourgeois = Population("bourgeois", "bourgeois.webp", 90, range = 30, rank=3, effects=[Effect("change", "geisha preference", 15), Effect("change", "sex preference", 15)], base_description="这是一群有些小钱的人，他们愿意付出更多只为博得美人一笑。钱场得意，情场会失意吗？")
         guildmember = Population("guild members", "guild member.webp", 110, range = 30, rank=3, effects=[Effect("change", "masseuse preference", 15), Effect("change", "fetish preference", 15)], base_description="这些公会职员拥有大量的人脉关系，只要你服务到位，他们日后就会给你行个方便。")
