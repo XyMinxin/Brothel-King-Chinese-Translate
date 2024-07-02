@@ -1612,103 +1612,103 @@ translate schinese shop_restock_intro_0417c7d0:
 translate schinese shop_restock_intro_247cb2ad:
 
     # shopgirl "Say, I've noticed you come by often these days..."
-    shopgirl "我注意到你最近常来这里..."
+    shopgirl "你最近经常来照顾我的生意..."
 
 # game/BKevents.rpy:2522
 translate schinese shop_restock_intro_336a7f29:
 
     # you "Well, yeah. I've got a business to run, and your items can be useful to me..."
-    you "是啊,我有生意要经营,你的物品对我很有用..."
+    you "是啊,我是个生意人，我需要各种各样的东西..."
 
 # game/BKevents.rpy:2524
 translate schinese shop_restock_intro_cccebaa7:
 
     # shopgirl "But I've noticed sometimes you come and leave empty-handed. That's just... *sad face*"
-    shopgirl "但我有时注意到你来了又空手而归,真的是....*伤心的表情*"
+    shopgirl "但有时候你只是进来看看就走了....*伤心的表情*"
 
 # game/BKevents.rpy:2526
 translate schinese shop_restock_intro_ceadf0a1:
 
     # you "Well, yeah, sometimes I just don't find what I want..."
-    you "是啊,有时候我就是找不到想要的东西..."
+    you "这不怪我，宝贝儿。有些我想要的东西你这里不一定卖..."
 
 # game/BKevents.rpy:2528
 translate schinese shop_restock_intro_558be043:
 
     # shopgirl "I see! Then, I have a solution for you. Hear me out. We could expand our... relationship."
-    shopgirl "我明白了!那么,我有一个解决方案。听我说。我们可以扩展一下...关系。"
+    shopgirl "原来如此!我有个方案能够让你买到更多的商品...我们可以增进一下....。"
 
 # game/BKevents.rpy:2530
 translate schinese shop_restock_intro_5fef97bf:
 
     # you "Business, or pleasure?"
-    you "生意还是情趣?"
+    you "增进感情还是合作?"
 
 # game/BKevents.rpy:2534
 translate schinese shop_restock_intro_b82531ce:
 
     # shopgirl "Business {i}is{/i} pleasure, darling... *giggle*"
-    shopgirl "生意{i}就是{/i}快乐,亲爱的...*轻笑*"
+    shopgirl "增进合作{i}就是{/i}增进感情,亲爱的...*轻笑*"
 
 # game/BKevents.rpy:2536
 translate schinese shop_restock_intro_66df0f90:
 
     # shopgirl "You see, if you cover parts of my expenses, I could {b}restock my inventory{/b} more regularly. It's costly of course, but useful, right?"
-    shopgirl "你看,如果你承担一部分我的开支,我就可以{b}更新存货{/b}得更频繁一些。当然这样做很费钱,但对你也很有用吧?"
+    shopgirl "你看,我平时要看着店面腾不开手,如果你可以招募一些劳动力帮我卸货，我就能有更多的时间{b}更新商品{/b}。虽然这要花点小钱，但我相信你不会介意吧?"
 
 # game/BKevents.rpy:2538
 translate schinese shop_restock_intro_a9673c51:
 
     # shopgirl "I will only do it once a day, though. It's a lot of work..."
-    shopgirl "不过我一天只能这样做一次,太累了..."
+    shopgirl "不过我一天也只能更新一次商品，清点账目太累了..."
 
 # game/BKevents.rpy:2540
 translate schinese shop_restock_intro_2ccb1047:
 
     # you "Interesting. Go on."
-    you "听起来很有趣。请说下去。"
+    you "有点意思。接着说。"
 
 # game/BKevents.rpy:2542
 translate schinese shop_restock_intro_a5111acb:
 
     # shopgirl "In addition, I am looking to {b}extend the shop counter{/b}, but I am missing some materials."
-    shopgirl "此外,我正打算{b}扩大商店柜台{/b},但我缺少一些材料。"
+    shopgirl "此外,我也打算换一个更大的{b}商品货架{/b},但我缺少一些材料。"
 
 # game/BKevents.rpy:2544
 translate schinese shop_restock_intro_acd889a9:
 
     # shopgirl "If you provide me with the right resources, I could stock more items, increasing the choice for you!"
-    shopgirl "如果您能提供我所需的资源,我就能增加库存,为您提供更多选择!"
+    shopgirl "如果你能给我带来一些材料,我就能让工匠做一个更大的货架,到时候就会有更多的商品!"
 
 # game/BKevents.rpy:2546
 translate schinese shop_restock_intro_2f9bdf1b:
 
     # you "That sounds good. What do you need?"
-    you "听起来不错。你需要什么?"
+    you "听起来不错。你需要什么材料?"
 
 # game/BKevents.rpy:2548
 translate schinese shop_restock_intro_85578647:
 
     # shopgirl "Well, first, I'd need {b}5 pieces of wood{/b} to add a new shelf."
-    shopgirl "首先,我需要{b}5块木材{/b}来添加一个新的货架。"
+    shopgirl "首先,需要{b}5块木材{/b}来做一个新的货架。"
 
 # game/BKevents.rpy:2550
 translate schinese shop_restock_intro_73db48f4:
 
     # you "Got it."
-    you "明白了。"
+    you "交给我吧。"
 
 # game/BKevents.rpy:2552
 translate schinese shop_restock_intro_37ef5819:
 
     # "From now on, you can {b}restock{/b} any shop once a day for a hefty sum of gold."
-    "从现在开始,你每天都可以{b}刷新{/b}一次商店,但需要支付大量金币来。"
+    "从现在开始,你每天都可以消耗金币来{b}刷新{/b}一次商店。"
 
 # game/BKevents.rpy:2554
 translate schinese shop_restock_intro_b50cf8fd:
 
     # "You can also improve the main shop's {b}inventory size{/b} by spending resources."
-    "你也可以通过消耗资源来扩大商店的{b}库存容量{/b}。"
+    "你也可以通过提供老板娘她需要的材料来扩大商店的{b}商品数量{/b}。"
 
 # game/BKevents.rpy:2589
 translate schinese visit_thieves_guild_75fd26da:
@@ -1726,25 +1726,25 @@ translate schinese visit_thieves_guild_2b2883c7:
 translate schinese thieves_guild_menu_cf938780:
 
     # renza "Hey, it's rude to stare!" nointeract
-    renza "嘿,看呆了可不太礼貌!" nointeract
+    renza "嘿,盯着那看可不太礼貌!" nointeract
 
 # game/BKevents.rpy:2605
 translate schinese thieves_guild_menu_6c4c57a0:
 
     # renza "I give you access to some of our merchandise. It's stuff that, err, fell off the back of a cart, so to speak."
-    renza "我会给你一些独特的商品。说白了,就是我们从商队那...额..商队不小心落下的东西。"
+    renza "我会给你一些特价的商品。说白了,就是我们从商队那捡来的...额..商队不小心落下的东西。"
 
 # game/BKevents.rpy:2607
 translate schinese thieves_guild_menu_94a21cda:
 
     # renza "As long as we understand each other and you keep your side of the deal, you can come here once a week. I'll have an item for sale, for a bargain price compared to regular item shops."
-    renza "只要我们达成共识,你遵守规矩,你每周都可以来这里。我会有一件特价商品供你选择。"
+    renza "只要你遵守规矩,你每周都可以来这里一次。我会有一件特价商品供你选择。"
 
 # game/BKevents.rpy:2609
 translate schinese thieves_guild_menu_70db56a6:
 
     # renza "But you must understand and accept my rules"
-    renza "但你必须理解并接受我的规矩"
+    renza "但你必须对其他人保密！"
 
 # game/BKevents.rpy:2611
 translate schinese thieves_guild_menu_2879f742:
@@ -2686,7 +2686,7 @@ translate schinese vital_scanners_built_9e8bd5f6:
 translate schinese vital_scanners_built_a647b18c:
 
     # you "Anyway. Sill, gather the girls here."
-    you "总之,西尔,把姑娘们都叫过来。"
+    you "总之,希露,把姑娘们都叫过来。"
 
 # game/BKevents.rpy:3292
 translate schinese vital_scanners_built_cbb024e8:
@@ -3496,7 +3496,7 @@ translate schinese zodiac_intro_0080067d:
 translate schinese zodiac_intro_777d2b41:
 
     # you "Oh, Sill... What is it this time?"
-    you "哦,西尔...这次又是什么事?"
+    you "哦,希露...这次又是什么事?"
 
 # game/BKevents.rpy:4112
 translate schinese zodiac_intro_9cd87925:
@@ -3550,7 +3550,7 @@ translate schinese zodiac_intro_eaf14262:
 translate schinese zodiac_intro_957f88d3:
 
     # you "Sill... You sound weird..."
-    you "西尔...你听起来有点奇怪..."
+    you "希露...你听起来有点奇怪..."
 
 # game/BKevents.rpy:4139
 translate schinese zodiac_intro_0a33cf01:
@@ -8262,7 +8262,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:603
     old "\n\nYou may now advance to the next chapter!"
-    new "\n\n你现在可以进入下一章节了!"
+    new "\n\n你现在可以推进到下一章节了!"
 
     # game/BKevents.rpy:605
     old "Goal reached!"
