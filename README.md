@@ -10,15 +10,13 @@
 
 目前汉化版本：20240707
 
-虽然游戏版本可能会比原版慢很多，但只要原版最新补丁不修改图片格式等等的，用汉化补丁覆盖上去一般都没问题
-
 ①下载本体：[下载游戏本体](https://www.mediafire.com/file/da0luyi63xgczfp/Brothel_King-0.3t.zip/file)
 
-~~②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)~~
+②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
+
+或者直接下载打包好的[本体+原版补丁](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
 
 ③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
-
-合并了补丁，只要本体，不用中间多打个补丁了
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
@@ -55,7 +53,7 @@ A:~~首先设置界面可以选择中文~~ 现在默认中文，如果还是英�
 
 Q:游戏中出现□□□了！
 
-A:那么可能game文件夹下的字体文件可能丢失，你需要重新下载汉化补丁覆盖进去，或者自行往game文件夹放一个字体，并且修改出问题的文本字体
+A:那么可能game文件夹下的字体文件丢失，你需要重新下载汉化补丁覆盖进去，如果还不行，请提交[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)进行反馈
 
 Q:游戏报错啦！死档啦！
 
