@@ -2385,9 +2385,9 @@ screen button_overlay(girl, context="girls"):
                 xpadding 0
                 ypadding 0
 
-                textbutton "{u}I{/u}nteract":
+                textbutton "互动":
                     text_size res_font(14)
-                    hovered tt.Action("与你的女孩互动. 消耗行动力. \n({i}快捷键: {u}I{/u}{/i})")
+                    hovered tt.Action("与女孩互动. 有些行为会消耗行动力. \n({i}快捷键: {u}I{/u}{/i})")
 
                     if MC.interactions > 0 and not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("interact"))
@@ -2401,9 +2401,9 @@ screen button_overlay(girl, context="girls"):
                     tooltip "行动力耗尽, 你今天无法再行动了"
 
                 elif girl.away:
-                    tooltip "由于 %s 不在, 您无法与她互动." % girl.name
+                    tooltip "由于 %s 不在青楼中, 您无法与她互动." % girl.name
 
-            textbutton "I{u}t{/u}ems":
+            textbutton "物品":
                 text_size res_font(14)
 
                 if not girls_firstvisit: # Available for away girls to avoid complications in the Equipment screen
@@ -2416,14 +2416,14 @@ screen button_overlay(girl, context="girls"):
                 #     tooltip "[girl.fullname] is away on a class or assignment."
 
             if girl.free:
-                textbutton "Dismiss":
+                textbutton "解雇":
                     text_size res_font(14)
                     if not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("dismiss"))
                     tooltip "Release this girl from your custody. ({i}shortcut: {u}Delete{/u}{/i})"
 
             else:
-                textbutton "Sell":
+                textbutton "sell":
                     text_size res_font(14)
                     if not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("sell"))
@@ -2433,7 +2433,7 @@ screen button_overlay(girl, context="girls"):
             if girl.upgrade_points >= 1 or girl.perk_points > 0:
                 key "noshift_K_u" action (SetVariable("selected_girl", girl), Return("level_or_perks"))
                 key "noshift_K_k" action (SetVariable("selected_girl", girl), Return("perks"))
-                textbutton "Level {u}u{/u}p" text_size res_font(14):
+                textbutton "升级" text_size res_font(14):
                     action (SetVariable("selected_girl", girl), Return("level_or_perks"))
                     alternate (SetVariable("selected_girl", girl), Return("perks"))
                     tooltip (__("You have ") + str (girl.perk_points) + __(" perk points to spend.\nRight-click to access perks."))
@@ -2444,7 +2444,7 @@ screen button_overlay(girl, context="girls"):
                 if not girls_firstvisit:
                     key "noshift_K_k" action (SetVariable("selected_girl", girl), Return("perks"))
 
-                textbutton "Per{u}k{/u}s":
+                textbutton "天赋":
                     text_size res_font(14)
                     if not girls_firstvisit:
                         action (SetVariable("selected_girl", girl), Return("perks"))
@@ -2461,7 +2461,7 @@ screen button_overlay(girl, context="girls"):
             if not girls_firstvisit:
                 key "noshift_K_a" action (SetVariable("selected_girl", girl), Return("stats"))
 
-                textbutton "St{u}a{/u}ts":
+                textbutton "状态":
                     text_size res_font(14)
                     action (SetVariable("selected_girl", girl), Return("stats"))
                     tooltip "点击查看她的具体数据. \n({i}快捷键: {u}A{/u}{/i})"
@@ -2525,7 +2525,7 @@ screen button_overlay(girl, context="girls"):
             else:
                 key "K_DELETE" action Return(("sell", girl))
 
-            textbutton "I{u}t{/u}ems":
+            textbutton "物品":
                 text_size res_font(14)
                 if not girls_firstvisit:
                     action Return(("equip", girl))
@@ -2535,12 +2535,12 @@ screen button_overlay(girl, context="girls"):
             textbutton "Le{u}a{/u}ve farm" text_size res_font(14) action Return(("take out", girl)) hovered tt.Action("Send " + girl.name + " back to the brothel.")
 
             if girl.free:
-                textbutton "Dismiss":
+                textbutton "解雇":
                     text_size res_font(14)
                     action Return(("dismiss", girl))
                     tooltip "Release this girl from your custody. ({i}shortcut: {u}Delete{/u}{/i})"
             else:
-                textbutton "Sell":
+                textbutton "sell":
                     text_size res_font(14)
                     if not girls_firstvisit and not girl.broken:
                         action Return(("sell", girl))

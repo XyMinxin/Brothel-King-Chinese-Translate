@@ -706,20 +706,20 @@ init -1 python:
     add_dialogue("slave first visit", ("introvert"), "什……你想从我这里得到什么？")
     add_dialogue("slave first visit", ("extravert"), "你！你要对我做什么？")
 
-    add_dialogue("MC kind promise", ("modest"), ["她给你一个淡淡的微笑。", "g：谢谢。"], multiple=True, love=2, fear=-3)
-    add_dialogue("MC kind promise", ("lewd"), ["她给你一个怀疑的眼神。", "g：谢谢，我想。"], multiple=True, love=1, fear=-3)
-    add_dialogue("MC fair promise", ("generic"), ["她看上去警惕心少了一些。", "g：我明白了。"], multiple=True, fear=-1)
-    add_dialogue("MC no promise", ("generic"), ["她低下头。", "g：是的，主人。"], multiple=True, fear=1)
+    add_dialogue("MC kind promise", ("modest"), ["她回以一个淡淡的微笑。", "g：谢谢。"], multiple=True, love=2, fear=-3)
+    add_dialogue("MC kind promise", ("lewd"), ["她给了你一个怀疑的眼神。", "g：谢谢您。"], multiple=True, love=1, fear=-3)
+    add_dialogue("MC fair promise", ("generic"), ["她看起来没那么警惕了。", "g：我明白了。"], multiple=True, fear=-1)
+    add_dialogue("MC no promise", ("generic"), ["她低下头，咬着嘴唇。", "g：好的，主人。"], multiple=True, fear=1)
     add_dialogue("MC harsh promise", ("sub"), "她点点头，泪水无声地顺着脸颊流下。", love=-3, fear=4)
-    add_dialogue("MC harsh promise", ("dom"), "她咬紧牙关，露出挑衅的表情，但什么也没说。", love=-3, fear=2)
+    add_dialogue("MC harsh promise", ("dom"), "她咬紧牙关，露出不爽的表情，但一个字也没有说。", love=-3, fear=2)
 
-    add_dialogue("MC break promise", ("idealist"), "你...你答应过要好好对待我...*抽泣*你撒谎了！", love=-8)
-    add_dialogue("MC break promise", ("materialist"), "你...你答应过要好好对待我...*抽泣*你撒谎了！", love=-5)
+    add_dialogue("MC break promise", ("idealist"), "你...你答应过要好好对我的...*抽泣*你撒谎！", love=-8)
+    add_dialogue("MC break promise", ("materialist"), "你...你答应过要好好对我的...*抽泣*你骗我！", love=-5)
 
-    add_dialogue("MC fight intro", ("very dom"), ["g：不！！！你不能逼我！离我远点，你这个混蛋！", "她以惊人的力量与你战斗。"], multiple=True, sound=s_scream_loud)
-    add_dialogue("MC fight intro", ("dom"), ["g：不……不可能！！！请别打扰我！我不会让你的！", "你向她走近，但她试图击退你。"], multiple=True, sound=s_scream_loud)
-    add_dialogue("MC fight intro", ("sub"), ["g：你不能！不是这个...不，拜托！", "她看起来很惊恐，因愤怒而浑身发抖。没想到，她却反抗你，并试图把你推开。"], multiple=True, sound=s_scream_loud)
-    add_dialogue("MC fight intro", ("very sub"), "她看起来很震惊，但她不敢违抗你。") # Very sub girls don't fight back
+    add_dialogue("MC fight intro", ("very dom"), ["g：不！！！你不能逼我这么做！离我远点，你这个混蛋！", "她爆发出惊人的力量与你搏斗。"], multiple=True, sound=s_scream_loud)
+    add_dialogue("MC fight intro", ("dom"), ["g：不...不可能！！！请别这么做！我不会屈服的！", "你慢慢向她走去，她试图击退你。"], multiple=True, sound=s_scream_loud)
+    add_dialogue("MC fight intro", ("sub"), ["g：你不能！这个不行...不，拜托！", "她看起来很害怕，但又充满了愤怒。没想到，她居然敢反抗你，并试图把你推开。"], multiple=True, sound=s_scream_loud)
+    add_dialogue("MC fight intro", ("very sub"), " 她看起来十分震惊，但她不敢违抗你的命令。") # Very sub girls don't fight back
 
     add_dialogue("slave fear intro", ("generic"), "当你靠近时，她因恐惧而畏缩，她的眼睛因惊慌而困惑。她没有能力回答你的问题。")
     add_dialogue("slave fear reassure success", ("generic"), "她稍微放松了一些，似乎终于明白了你话里的意思。", fear=-2)
@@ -743,9 +743,9 @@ init -1 python:
 
     add_dialogue("slave train beg", ("generic"), ["[girl.name]跪下，开始含泪恳求你。", "g：主人，求你了，不要！！！不是这样的……我求你了，请温柔点……"], multiple=True)
     add_dialogue("slave punish beg", ("generic"), ["[girl.name] 因恐惧而退缩，并开始双手合十乞求你的怜悯。", "g：主人，求你了，不要！！！我很抱歉！我不会再这样做了！"], multiple=True)
-    add_dialogue("slave beg proceed", ("generic"), "不！！！", sound=s_scream_loud, fear=1, love=-1, mood=-3)
-    add_dialogue("slave beg warning", ("generic"), "明白了，主人……", sound=s_sigh, fear=1)
-    add_dialogue("slave beg give up", ("generic"), ["g：对——真的吗？", "mc：当然。你现在可以走了，不用担心。", "g：哦，谢谢你，谢谢你！"], multiple=True, sound=s_surprise, fear=-1, love=1)
+    add_dialogue("slave beg proceed", ("generic"), "不要！！！", sound=s_scream_loud, fear=1, love=-1, mood=-3)
+    add_dialogue("slave beg warning", ("generic"), "我明白了，主人……", sound=s_sigh, fear=1)
+    add_dialogue("slave beg give up", ("generic"), ["g：对不...等等，您说什么？", "mc：你没听错。我说你现在可以走了，不用紧张。", "g：哦，谢谢你，您对我真好！"], multiple=True, sound=s_surprise, fear=-1, love=1)
 
     add_dialogue("slave send to master bedroom love +", "generic", ["当她听到你的话时，她高兴得浑身发抖。", "g：噢，主人，我太高兴了……*脸红*"], multiple=True)
     add_dialogue("slave send to master bedroom love", "generic", ["她看着你，眼里闪烁着光芒。", "g： 去你的房间吗？这是不是意味着……我们会整晚都在一起？嗯..."], multiple=True)
