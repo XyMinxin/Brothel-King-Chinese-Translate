@@ -418,7 +418,7 @@ init -10 python:
 
     ## 按钮名字 ##
     button_name_dict = {
-                        ## 一般选项 ##
+                        ## 物品交互 ##
                         "Buy" : "购买",
                         "buy" : "购买",
                         "Buy and equip" : "购买并装备",
@@ -439,8 +439,12 @@ init -10 python:
                         "use" : "使用",
                         "Use on her" : "对她使用",
                         "use on her" : "对她使用",
+                        "Take" : "取回",
+                        "take" : "取回",
                         "Sell" : "出售",
                         "sell" : "出售",
+                        
+                        ## 一般选项 ##
                         "Back" : "返回",
                         "back" : "返回",
                         "Hide" : "隐藏",

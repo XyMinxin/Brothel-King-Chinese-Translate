@@ -4519,7 +4519,7 @@ init -2 python:
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
-                    possible_acts.append("使用")
+                    possible_acts.append("use")
                 if self.can_wear(owner.type):
                     if not self.equipped:
                         possible_acts.append("equip")
@@ -4537,7 +4537,7 @@ init -2 python:
 
             if owner.type == "girl":
                 if counterpart and counterpart.type == "MC":
-                    possible_acts.append("取回")
+                    possible_acts.append("take")
 
 
 
