@@ -2585,14 +2585,14 @@ init -2 python:
 
                 msg += __("\n家政清洁: ") + __(maintenance_desc[self.get_cleanliness()])
 
+                msg += "\n({i}快捷键: {u}B{/u}{/i})"
+
             else:
                 msg += __("广告宣传报告: ") + brothel.count_customers_description()
 
                 msg += __(".\n\n安全报告: 你的青楼面临的威胁是 ") + self.estimate_threat_level(contrast=True) + "."
 
                 msg += __("\n\n家政清洁报告: ") + __(maintenance_desc[self.get_cleanliness()])
-
-            msg += "\n({i}快捷键: {u}B{/u}{/i})"
 
             return msg
 
@@ -4506,34 +4506,34 @@ init -2 python:
 
             if owner.type == "NPC":
                 if owner in (NPC_renza, NPC_captain):
-                    possible_acts.append("议价")
+                    possible_acts.append("bargain")
                 else:
                     possible_acts.append("buy")
                     if counterpart:
                         if self.can_wear(counterpart.type):
-                            possible_acts.append("购买并装备")
+                            possible_acts.append("buy and equip")
 
             if counterpart and counterpart.type == "NPC":
                 if self.sellable:
-                    possible_acts.append("sell")
+                    possible_acts.append("use")
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
                     possible_acts.append("使用")
                 if self.can_wear(owner.type):
                     if not self.equipped:
-                        possible_acts.append("装备")
+                        possible_acts.append("equip")
                     else:
-                        possible_acts.append("取消装备")
+                        possible_acts.append("unequip")
                 if counterpart and counterpart.type == "girl":
                     if self.usage == "gift":
-                        possible_acts.append("赠予")
+                        possible_acts.append("gift")
                     else:
-                        possible_acts.append("给予")
+                        possible_acts.append("give")
                         if self.can_wear("girl"):
-                            possible_acts.append("给予并装备")
+                            possible_acts.append("give and equip")
                         if self.can_use("girl"):
-                            possible_acts.append("对她使用")
+                            possible_acts.append("use on her")
 
             if owner.type == "girl":
                 if counterpart and counterpart.type == "MC":
@@ -4810,9 +4810,9 @@ init -2 python:
 
             if dice(6) == 6:
                 if self.type == "class":
-                    self.special = rand_choice(("有折扣", "大师班"))
+                    self.special = rand_choice(("折扣价", "大师班"))
                 elif self.type == "quest":
-                    self.special = rand_choice(("高报酬", "臭名昭著"))
+                    self.special = rand_choice(("高报酬", "高难度"))
             else:
                 self.special = None
 
@@ -4920,7 +4920,7 @@ init -2 python:
                 self.xp = (10 * rank**2) * self.duration * game.get_diff_setting("rewards") #? Experimental
                 self.rep = (1 + 0.05*(self.duration-1)) * 2**(rank-1) * game.get_diff_setting("rewards")
 
-                if self.special == "有折扣":
+                if self.special == "折扣价":
                     self.gold = round_int(0.75*self.gold)
 
             self.energy = -5 * rank * self.duration

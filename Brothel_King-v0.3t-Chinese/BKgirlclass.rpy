@@ -4631,7 +4631,7 @@ init -2 python:
             elif filter == "fear":
                 return fear_text
             elif filter == "mood":
-                return mood_text + mood_change_text + "\nSanity: " + self.get_sanity()
+                return mood_text + mood_change_text + "\n精神状态: " + self.get_sanity()
             else:
                 return love_text, fear_text, mood_text, mood_change_text, mood_factors
 

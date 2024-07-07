@@ -233,7 +233,8 @@ screen main_menu():
         if nsfw:
             add "bg title" yalign 0.5
 
-            text "{b}青 楼 之 王{/b}" size res_font(80) xalign 0.5 yalign 0.5 drop_shadow (3,3) font "巴贝斯通汉字(改名版).ttF" color c_orange
+            text "青 楼 之 王" size res_font(128) xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
+            text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
 
         text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(14)
 

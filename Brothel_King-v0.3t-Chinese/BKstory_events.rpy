@@ -15062,7 +15062,7 @@ label game_over(antagonist):
 
     play music m_theme
 
-    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="DejaVuSans.TTF")
+    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="DejaVuSans.ttf")
 
     show expression title #Note: Find a way to make the zoom slower and the title cooler
     with zoomin

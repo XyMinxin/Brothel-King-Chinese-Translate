@@ -419,6 +419,28 @@ init -10 python:
     ## 按钮名字 ##
     button_name_dict = {
                         ## 一般选项 ##
+                        "Buy" : "购买",
+                        "buy" : "购买",
+                        "Buy and equip" : "购买并装备",
+                        "buy and equip" : "购买并装备",
+                        "Bargain" : "讨价还价",
+                        "bargain" : "讨价还价",
+                        "Equip" : "装备",
+                        "equip" : "装备",
+                        "Give" : "给予",
+                        "give" : "给予",
+                        "Gift" : "赠予",
+                        "gift" : "赠予",
+                        "Unequip" : "取消装备",
+                        "unequip" : "取消装备",
+                        "Give and equip" : "给予并装备",
+                        "give and equip" : "给予并装备",
+                        "Use" : "使用",
+                        "use" : "使用",
+                        "Use on her" : "对她使用",
+                        "use on her" : "对她使用",
+                        "Sell" : "出售",
+                        "sell" : "出售",
                         "Back" : "返回",
                         "back" : "返回",
                         "Hide" : "隐藏",
@@ -653,7 +675,6 @@ init -10 python:
                          }
 
     ## 访问城市界面 ##
-    #汉化标签，此处词典未生效#
     location_name_dict = {
                          ## 地区名称 ##
                          "The Slums" : "贫民窟",

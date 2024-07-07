@@ -315,9 +315,9 @@ label init_furniture():
             Furniture('金漆吧台', type='Furnishing', pic='bar counter3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 6), ('ore', 12), ], duration=5, upgrade='抛光吧台', effects=[Effect("allow", "waitress preference", 3, scope="brothel")], ),
             Furniture('红木吧台', type='Furnishing', pic='bar counter4.webp', rank=5, chapter=7, cost=[('marble', 5), ('ore', 10), ], duration=7, upgrade='金漆吧台', effects=[Effect("allow", "waitress preference", 5, scope="brothel")], ),
             Furniture('狭窄的卫生间', type='Furnishing', pic='washroom1.webp', rank=2, chapter=2, cost=[('dye', 8), ], duration=1, effects=[Effect("allow", "masseuse preference", 1, scope="brothel")], ),
-            Furniture('干净的卫生间', type='Furnishing', pic='washroom2.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('marble', 6), ], duration=3, upgrade='小卫生间', effects=[Effect("allow", "masseuse preference", 2, scope="brothel")], ),
-            Furniture('高级的卫生间', type='Furnishing', pic='washroom3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 12), ('silk', 6), ], duration=5, upgrade='干净卫生间', effects=[Effect("allow", "masseuse preference", 3, scope="brothel")], ),
-            Furniture('豪华的卫生间', type='Furnishing', pic='washroom4.webp', rank=5, chapter=7, cost=[('marble', 10), ('silk', 5), ], duration=7, upgrade='有热水的卫生间', effects=[Effect("allow", "masseuse preference", 5, scope="brothel")], ),
+            Furniture('干净的卫生间', type='Furnishing', pic='washroom2.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('marble', 6), ], duration=3, upgrade='狭窄的卫生间', effects=[Effect("allow", "masseuse preference", 2, scope="brothel")], ),
+            Furniture('高级的卫生间', type='Furnishing', pic='washroom3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 12), ('silk', 6), ], duration=5, upgrade='干净的卫生间', effects=[Effect("allow", "masseuse preference", 3, scope="brothel")], ),
+            Furniture('豪华的卫生间', type='Furnishing', pic='washroom4.webp', rank=5, chapter=7, cost=[('marble', 10), ('silk', 5), ], duration=7, upgrade='高级的卫生间', effects=[Effect("allow", "masseuse preference", 5, scope="brothel")], ),
             Furniture('临时舞台', type='Furnishing', pic='stage1.webp', rank=2, chapter=2, cost=[('wood', 4), ('dye', 4), ], duration=1, effects=[Effect("allow", "dancer preference", 1, scope="brothel")], ),
             Furniture('业余舞台', type='Furnishing', pic='stage2.webp', rank=3, chapter=4, cost=[('leather', 12), ('marble', 4), ('ore', 2), ], duration=3, upgrade='临时舞台', effects=[Effect("allow", "dancer preference", 2, scope="brothel")], ),
             Furniture('大型舞台', type='Furnishing', pic='stage3.webp', rank=4, chapter=6, cost=[('leather', 6), ('marble', 6), ('silk', 12), ], duration=5, upgrade='业余舞台', effects=[Effect("allow", "dancer preference", 3, scope="brothel")], ),
@@ -737,7 +737,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset-previous), SetLocalVariable("page", page_offset))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "DejaVuSans.ttf"
 
                     for p in range(start, finish):
                         textbutton str(p+1) style "UI_button":
@@ -760,7 +760,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset+next), SetLocalVariable("page", page_offset+next+1))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "DejaVuSans.ttf"
 
 
 screen item_profile(it):
@@ -795,7 +795,7 @@ screen item_profile(it):
         has vbox
 
         if "bargain" not in acts:
-            use close(Hide("item_profile"), name = "hide")
+            use close(Hide("item_profile"), name = "返回")
             key "mouseup_3" action Hide("item_profile")
 
 
@@ -855,7 +855,7 @@ screen item_profile(it):
 
             hbox spacing 10 xalign 0.5:
                 for act in acts:
-                    textbutton __(capitalize(act)) action Return((it, act)) xalign 0.5:
+                    textbutton __(button_name_dict[capitalize(act)]) action Return((it, act)) xalign 0.5:
                         if owner.type == "girl" and act in ("equip", "unequip", "use"):
                             hovered SetScreenVariable("focused_char", owner)
                         elif counterpart and counterpart.type == "girl":

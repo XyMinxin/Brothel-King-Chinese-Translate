@@ -31,7 +31,7 @@ init -1 python hide:
     except: # Covers exceptions for older versions that didn't have the dist number
         config.version = "0.2 %s" % patch_version
 
-    config.language = None # As recommended by DougTheC
+    config.language = "schinese" # As recommended by DougTheC
 
     #########################################
     # Themes
@@ -147,8 +147,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    style.default.font = "Lato-Regular.TTF"
-
+    style.default.font = "DejaVuSans.ttf"
     ## The default size of text.
 
     style.default.size = res_font(22)

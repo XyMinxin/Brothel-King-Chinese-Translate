@@ -76,7 +76,7 @@ translate schinese advance_to_chapter_326959e3:
 translate schinese advance_to_chapter_1ef7a1d7_1:
 
     # sill "Do you want to rename your brothel for the occasion?" nointeract
-    sill "你想为这个场合重命名你的妓院吗?" nointeract
+    sill "你想为这个场合重命名你的青楼吗?" nointeract
 
 # game/BKevents.rpy:824
 translate schinese run_away_d1b4784e:
@@ -184,13 +184,13 @@ translate schinese found_runaway_girl_dbca4bcc:
 translate schinese found_runaway_girl_3889dcce:
 
     # "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
-    "守卫们大笑着把她推倒在妓院门前。她半裸着身子,全身散发着精液的气味。看来他们在把她带回来之前一直在强奸她。"
+    "守卫们大笑着把她推倒在青楼门前。她半裸着身子,全身散发着精液的气味。看来他们在把她带回来之前一直在强奸她。"
 
 # game/BKevents.rpy:981
 translate schinese found_runaway_girl_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的妓院没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
 
 # game/BKevents.rpy:1008
 translate schinese found_runaway_girl_no_room_4b57f1f5:
@@ -226,7 +226,7 @@ translate schinese found_runaway_girl_come_back_3816ee7d:
 translate schinese found_runaway_girl_come_back_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的妓院没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
 
 # game/BKevents.rpy:1072
 translate schinese found_runaway_girl_come_back_4b57f1f5:
@@ -262,7 +262,7 @@ translate schinese found_escaped_girl_0b29fd61:
 translate schinese found_escaped_girl_2400c9b6:
 
     # you "Oh, but I haven't got enough room in the brothel to take her back."
-    you "唉,我的妓院无法收留她。"
+    you "唉,我的青楼无法收留她。"
 
 # game/BKevents.rpy:1123
 translate schinese found_escaped_girl_275fba30:
@@ -286,7 +286,7 @@ translate schinese found_escaped_girl_4dc83d43:
 translate schinese found_escaped_girl_ab62619c:
 
     # you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
-    you "[girl.name]...是我。我知道妓院的生活很艰难,但你应该回来。我们想你了。"
+    you "[girl.name]...是我。我知道青楼的生活很艰难,但你应该回来。我们想你了。"
 
 # game/BKevents.rpy:1150
 translate schinese found_escaped_girl_2f2948b5:
@@ -304,7 +304,7 @@ translate schinese found_escaped_girl_1641c2cc:
 translate schinese found_escaped_girl_22820a44:
 
     # "She cries on your shoulder for a while. Taking her by the hand, you take her back to the brothel."
-    "她在你肩上哭了一会儿。你牵着她的手把她带回了妓院。"
+    "她在你肩上哭了一会儿。你牵着她的手把她带回了青楼。"
 
 # game/BKevents.rpy:1166
 translate schinese found_escaped_girl_decd7840:
@@ -352,7 +352,7 @@ translate schinese found_escaped_girl_f9343fae:
 translate schinese found_escaped_girl_fda387bd:
 
     # "Yanking her to her feet, you push her forward and bring her back to the brothel."
-    "你拽起她,粗暴地推着她走,把她带回了妓院。"
+    "你拽起她,粗暴地推着她走,把她带回了青楼。"
 
 # game/BKevents.rpy:1208
 translate schinese found_escaped_girl_decd7840_1:
@@ -412,7 +412,7 @@ translate schinese found_escaped_girl_6ed6ad11:
 translate schinese found_escaped_girl_c2c2d06e:
 
     # "Loading her on your shoulder, you bring her kicking and screaming back to the brothel."
-    "你把她扛在肩上,拽着她一路嘶吼着把她带回了妓院。"
+    "你把她扛在肩上,拽着她一路嘶吼着把她带回了青楼。"
 
 # game/BKevents.rpy:1257
 translate schinese found_escaped_girl_decd7840_2:
@@ -2692,13 +2692,13 @@ translate schinese vital_scanners_built_a647b18c:
 translate schinese vital_scanners_built_cbb024e8:
 
     # you "Ahem, I don't have any girls at the brothel right now..."
-    you "咳,我现在在妓院里没有任何姑娘..."
+    you "咳,我现在在青楼里没有任何姑娘..."
 
 # game/BKevents.rpy:3294
 translate schinese vital_scanners_built_0f606445:
 
     # gina "What?!? What kind of brothel owner are you!"
-    gina "什么?!?你这种妓院老板是怎么回事!"
+    gina "什么?!?你这种青楼老板是怎么回事!"
 
 # game/BKevents.rpy:3296
 translate schinese vital_scanners_built_8051e8a0:
@@ -3346,7 +3346,7 @@ translate schinese farm_take_out_64cc7863:
 translate schinese farm_take_out_7f5e4217:
 
     # gizel normal "And just where do you think you can put that wench? Your brothel is full."
-    gizel normal "那你打算把那个婊子放在哪里?你的妓院已经满了。"
+    gizel normal "那你打算把那个婊子放在哪里?你的青楼已经满了。"
 
 # game/BKevents.rpy:3968
 translate schinese exit_farm_3424b2db:
@@ -3376,13 +3376,13 @@ translate schinese exit_farm_77245fb1:
 translate schinese exit_farm_5811b00a:
 
     # "[girl.fullname] is back to work at the brothel as a [girl.job]."
-    "[girl.fullname]已经回到妓院,担任[girl.job]的工作。"
+    "[girl.fullname]已经回到青楼,担任[girl.job]的工作。"
 
 # game/BKevents.rpy:3988
 translate schinese exit_farm_fdbfd284:
 
     # "[girl.fullname] is back at the brothel and is resting."
-    "[girl.fullname]已经回到妓院休息。"
+    "[girl.fullname]已经回到青楼休息。"
 
 # game/BKevents.rpy:3994
 translate schinese exit_farm_79c7b6ac:
@@ -3412,13 +3412,13 @@ translate schinese exit_farm_34067ce9:
 translate schinese exit_farm_5811b00a_1:
 
     # "[girl.fullname] is back to work at the brothel as a [girl.job]."
-    "[girl.fullname]已经回到妓院,担任[girl.job]的工作。"
+    "[girl.fullname]已经回到青楼,担任[girl.job]的工作。"
 
 # game/BKevents.rpy:4027
 translate schinese exit_farm_fdbfd284_1:
 
     # "[girl.fullname] is back at the brothel and is resting."
-    "[girl.fullname]已经回到妓院休息。"
+    "[girl.fullname]已经回到青楼休息。"
 
 # game/BKevents.rpy:4032
 translate schinese exit_farm_79c7b6ac_1:
@@ -4479,8 +4479,8 @@ translate schinese contract_MC_event_c074fd88:
 # game/BKevents.rpy:4972
 translate schinese contract_MC_event_c10602c0:
 
-    # you "{font=SFBurlingtonScript.TTF}Nogephaii ahagl ymg', err...{/font}\nC'm'on, lady, wake up!"
-    you "{font=SFBurlingtonScript.TTF}Nogephaii ahagl ymg', err...{/font}\n来,女士,醒醒!"
+    # you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\nC'm'on, lady, wake up!"
+    you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\n来,女士,醒醒!"
 
 # game/BKevents.rpy:4976
 translate schinese contract_MC_event_b8f3c672:
@@ -4528,7 +4528,7 @@ translate schinese contract_MC_event_ccf1cf47:
 translate schinese contract_MC_event_7413be73:
 
     # "In spite of its doubtful origins, you nevertheless have the girls try the beverage back at the brothel. They actually like it, and receive a boost to their energy and morale."
-    "尽管来源可疑,你还是让姑娘们在妓院里试了试这种饮料。她们居然很喜欢,精神状态和士气都得到了提升。"
+    "尽管来源可疑,你还是让姑娘们在青楼里试了试这种饮料。她们居然很喜欢,精神状态和士气都得到了提升。"
 
 # game/BKevents.rpy:5008
 translate schinese contract_MC_event_7124f3dc:
@@ -6124,7 +6124,7 @@ translate schinese tax_intro_menu_c68e0f7a:
 translate schinese tax_intro_menu_222b26a9:
 
     # taxgirl "But without protection money, it's possible that a squad of goons headed by a one-eyed ogre called 'Gutspill' will visit your brothel at night, set fire to the place, and chop your manhood off..."
-    taxgirl "但是没有保护费,可能会有一支由一只独眼食人魔'肠裂'率领的打手晚上来你的妓院,纵火烧毁,并砍掉你的下身..."
+    taxgirl "但是没有保护费,可能会有一支由一只独眼食人魔'肠裂'率领的打手晚上来你的青楼,纵火烧毁,并砍掉你的下身..."
 
 # game/BKevents.rpy:6022
 translate schinese tax_intro_menu_daac11c7:
@@ -7906,7 +7906,7 @@ translate schinese is_broken_2e1a0b2a:
 translate schinese is_broken_228883fb:
 
     # gizel angry "Like I said, she's good for nothing at the brothel or even the farm in that state. You do have a few options, though."
-    gizel angry "正如我说的,她现在这种状态,在妓院或农场里都没有用处。不过你还是有几个选择。"
+    gizel angry "正如我说的,她现在这种状态,在青楼或农场里都没有用处。不过你还是有几个选择。"
 
 # game/BKevents.rpy:7140
 translate schinese broken_explain_options_15fc1efb:
@@ -7984,7 +7984,7 @@ translate schinese broken_explain_options_a26a5b9e:
 translate schinese broken_explain_options_09575e0f:
 
     # you "But I thought only licensed brothels were authorized in Zan?"
-    you "但是我以为只有持牌的妓院才被允许在赞城内运营?"
+    you "但是我以为只有持牌的青楼才被允许在赞城内运营?"
 
 # game/BKevents.rpy:7168
 translate schinese broken_explain_options_49d55848:
@@ -8218,7 +8218,7 @@ translate schinese acquire_girl_d4f4cfcb:
 translate schinese acquire_girl_1af223e0:
 
     # sill "Sorry Master, I'm afraid you don't have room in your brothel for another girl." nointeract
-    sill "很抱歉主人,我恐怕你的妓院里已经没有多余的地方收留另一个女孩了。" nointeract
+    sill "很抱歉主人,我恐怕你的青楼里已经没有多余的地方收留另一个女孩了。" nointeract
 
 # game/BKevents.rpy:7471
 translate schinese acquire_girl_6660ebc4:
@@ -8294,7 +8294,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:713
     old "New license available!"
-    new "新许可证可用!"
+    new "新的许可证可用!"
 
     # game/BKevents.rpy:713
     old "You have received a brand new "
@@ -8806,7 +8806,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:7426
     old "Add a new room to your brothel ([price1] gold)"
-    new "在你的妓院添加一个新房间([price1]金币)"
+    new "在你的青楼添加一个新房间([price1]金币)"
 
     # game/BKevents.rpy:7426
     old "Add a new pen to your farm ([price2] gold)"

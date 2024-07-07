@@ -516,7 +516,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
         $ text1 = Text((text1), size=50, yalign=0.4, xpos=0.5, drop_shadow=(2,2))
 
-        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "巴贝斯通汉字(改名版).ttf")
+        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "DejaVuSans.ttf")
 
         show expression text1
         with easeinleft
@@ -710,7 +710,7 @@ label got_license(level):
 
     $ lic_name, lic_pic = license_dict[level]
 
-    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(lic_name) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
+    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(location_name_dict[lic_name]) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
 
     return
 
@@ -4900,7 +4900,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 
         play sound s_mystery
 
-        "Demonic Voice" "{font=SFBurlingtonScript.TTF}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
+        "Demonic Voice" "{font=SFBurlingtonScript.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
 
         play sound s_roar
 
