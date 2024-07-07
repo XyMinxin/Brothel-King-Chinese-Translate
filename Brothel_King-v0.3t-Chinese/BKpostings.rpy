@@ -3,7 +3,7 @@
 
 label init_postings():
     python:
-        # QUESTS #
+        # QUESTS 汉化标签，需要词典#
 
         quest_templates = [
                         Quest("quest", name = __('Model needed'), main_stat = 'Beauty', second_stat = 'Libido', other_stats = ("Body", "Charm", "Refinement"), tags = 'model', description = "I'm an artist, an artist I tell thee! I need a muse. Clothing unnecessary,", sound = s_sigh),

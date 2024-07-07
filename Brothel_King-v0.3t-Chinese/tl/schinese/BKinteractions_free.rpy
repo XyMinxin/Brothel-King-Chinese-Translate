@@ -40,7 +40,7 @@ translate chinese free_girl_talk_6030b19a:
 translate chinese free_girl_talk_37f1d822:
 
     # you "Well, what do we have here... Damn, you're hot! I'm [MC.name]. What's your name baby?"
-    you "我们这里有什么……该死，你真性感！我叫[MC.name]。宝贝，你叫什么名字？"
+    you "我们这里有什么....该死，你真性感！我叫[MC.name]。宝贝，你叫什么名字？"
 
 # game/BKinteractions_free.rpy:195
 translate chinese free_chat_small_talk_4e6ead66:
@@ -148,25 +148,25 @@ translate chinese free_play_8ef1b8f4:
 translate chinese free_play_a784fb2c:
 
     # you "Come here... [text1]"
-    you "来这里……[text1]"
+    you "来这里....[text1]"
 
 # game/BKinteractions_free.rpy:497
 translate chinese free_play_1bf1c011:
 
     # girl.char "Mmmh... Aaah..."
-    girl.char "嗯……啊……"
+    girl.char "嗯....啊...."
 
 # game/BKinteractions_free.rpy:501
 translate chinese free_play_030686f5:
 
     # you "Ooooh..."
-    you "唔……"
+    you "唔...."
 
 # game/BKinteractions_free.rpy:510
 translate chinese free_play_a5a00ee0:
 
     # "You have taken [girl.name]'s virginity... You earn extra prestige."
-    "你夺走了[girl.name]的贞操……你赢得了额外的威望。"
+    "你夺走了[girl.name]的贞操....你赢得了额外的威望。"
 
 # game/BKinteractions_free.rpy:537
 translate chinese free_flirt_beauty_f0a506af:
@@ -202,19 +202,19 @@ translate chinese free_flirt_sex_experience_69427b10:
 translate chinese free_flirt_sex_experience_7debaa95:
 
     # you "It might sound silly, but I am waiting for the right person..."
-    you "这听起来可能很傻，但我在等待合适的人……"
+    you "这听起来可能很傻，但我在等待合适的人...."
 
 # game/BKinteractions_free.rpy:619
 translate chinese free_flirt_sex_experience_b5aaa294:
 
     # you "Uh, well, no, not many..."
-    you "呃，不，不是很多……"
+    you "呃，不，不是很多...."
 
 # game/BKinteractions_free.rpy:639
 translate chinese free_flirt_sex_experience_7505d596:
 
     # you "Well, I've been around... You know."
-    you "嗯，你知道的，我一直在……"
+    you "嗯，你知道的，我一直在...."
 
 # game/BKinteractions_free.rpy:645
 translate chinese free_flirt_sex_experience_a5a7a1fe:
@@ -226,7 +226,7 @@ translate chinese free_flirt_sex_experience_a5a7a1fe:
 translate chinese free_flirt_sex_experience_47894835:
 
     # you "Well, I'm a brothel owner, so what do you expect... It's my job!"
-    you "我是一家青楼的老板，你还想怎样……这是我的工作！"
+    you "我是一家青楼的老板，你还想怎样....这是我的工作！"
 
 # game/BKinteractions_free.rpy:686
 translate chinese free_flirt_sex_tastes_be9561ba:
@@ -334,19 +334,19 @@ translate chinese free_offer_job_0f648f47:
 translate chinese free_offer_job_fadbfad2:
 
     # you "Well, this isn't the whole truth... You see, I also have a business on the side."
-    you "这不是全部的真相……你看，我也有个副业。"
+    you "这不是全部的真相....你看，我也有个副业。"
 
 # game/BKinteractions_free.rpy:945
 translate chinese free_offer_job_0aa8868a:
 
     # girl.char "What... What do you mean?"
-    girl.char "什么……你什么意思？"
+    girl.char "什么....你什么意思？"
 
 # game/BKinteractions_free.rpy:947
 translate chinese free_offer_job_34d3075e:
 
     # you "Well I, uh, own a cathouse..."
-    you "好吧，我，呃，我有一间青楼……"
+    you "好吧，我，呃，我有一间青楼...."
 
 # game/BKinteractions_free.rpy:949
 translate chinese free_offer_job_22fca1c1:
@@ -364,25 +364,25 @@ translate chinese free_offer_job_454bf4d6:
 translate chinese free_offer_job_99f64913:
 
     # you "I..."
-    you "我……"
+    you "我...."
 
 # game/BKinteractions_free.rpy:959
 translate chinese free_offer_job_62838043:
 
     # girl.char "This is great! We can be together, and I will be safe, get money..."
-    girl.char "这太棒了！我们可以在一起，我会安全的赚钱……"
+    girl.char "这太棒了！我们可以在一起，我会安全的赚钱...."
 
 # game/BKinteractions_free.rpy:961
 translate chinese free_offer_job_3919bea6:
 
     # you "I'm afraid that it isn't so simple..."
-    you "恐怕事情没那么简单……"
+    you "恐怕事情没那么简单...."
 
 # game/BKinteractions_free.rpy:963
 translate chinese free_offer_job_bf3b5fe9:
 
     # girl.char "I don't like that look... What do you mean?"
-    girl.char "我不喜欢那个样子……你什么意思？"
+    girl.char "我不喜欢那个样子....你什么意思？"
 
 # game/BKinteractions_free.rpy:965
 translate chinese free_offer_job_7a9bc975:
@@ -394,19 +394,19 @@ translate chinese free_offer_job_7a9bc975:
 translate chinese free_offer_job_22570b4f:
 
     # you "Of course. The sex trade is hard work, but it has its perks, you know... Flexible schedule, good money, round-the-clock protection..."
-    you "当然可以。性交易是一项艰辛的工作，但它也有它的好处，你知道的……灵活的时间安排，大笔的票子，24小时的保护……"
+    you "当然可以。性交易是一项艰辛的工作，但它也有它的好处，你知道的....灵活的时间安排，大笔的票子，24小时的保护...."
 
 # game/BKinteractions_free.rpy:971
 translate chinese free_offer_job_d6f8dcb1:
 
     # you "You could also just be a waitress, or a dancer... It's not so bad."
-    you "你也可以只是一个服务员，或者一个舞者……没那么糟。"
+    you "你也可以只是一个服务员，或者一个舞者....没那么糟。"
 
 # game/BKinteractions_free.rpy:973
 translate chinese free_offer_job_7470d1cd:
 
     # girl.char "Oh..."
-    girl.char "哦……"
+    girl.char "哦...."
 
 # game/BKinteractions_free.rpy:975
 translate chinese free_offer_job_2dd0a37f:
@@ -436,13 +436,13 @@ translate chinese free_offer_job_e6dd36fa:
 translate chinese free_offer_job_c1da3d17:
 
     # girl.char "..."
-    girl.char "……"
+    girl.char "...."
 
 # game/BKinteractions_free.rpy:1008
 translate chinese free_offer_job_14135656:
 
     # you "It is decided then. Take your things and come with me. I will have you magically branded..."
-    you "那就决定了。带上你的东西跟我走。我会用魔法给你打上烙印……"
+    you "那就决定了。带上你的东西跟我走。我会用魔法给你打上烙印...."
 
 # game/BKinteractions_free.rpy:1010
 translate chinese free_offer_job_f193dbbc:
@@ -466,7 +466,7 @@ translate chinese free_girl_friend_2b79fa34:
 translate chinese free_girl_friend_5b08bc1c:
 
     # girl.char "But there's one thing I'd like to know... You never told me about your job. What do you do?"
-    girl.char "但是有一件事我想知道……你从来没告诉过我你的工作。你是做什么的？"
+    girl.char "但是有一件事我想知道....你从来没告诉过我你的工作。你是做什么的？"
 
 # game/BKinteractions_free.rpy:1053
 translate chinese free_girl_friend_4ae3b4ce:
@@ -478,13 +478,13 @@ translate chinese free_girl_friend_4ae3b4ce:
 translate chinese free_girl_friend_6b44ee2f:
 
     # you "Well, er, I'm a [MC.playerclass] freshly arrived in Zan. I'm considering a career change though..."
-    you "呃，我是[MC.playerclass]，刚到瓒城。不过我在考虑换工作……"
+    you "呃，我是[MC.playerclass]，刚到瓒城。不过我在考虑换工作...."
 
 # game/BKinteractions_free.rpy:1076
 translate chinese free_girl_friend_6bb62131:
 
     # you "Me? Uh, I'm..."
-    you "我吗？呃，我……"
+    you "我吗？呃，我...."
 
 # game/BKinteractions_free.rpy:1078
 translate chinese free_girl_friend_d163c101:
@@ -502,7 +502,7 @@ translate chinese free_girl_friend_18df221b:
 translate chinese free_girl_love_interest_30b2e2bd:
 
     # girl.char "Oh, it's you..."
-    girl.char "哦，是你……"
+    girl.char "哦，是你...."
 
 # game/BKinteractions_free.rpy:1103
 translate chinese free_girl_love_interest_f9f9e0e2:
@@ -568,7 +568,7 @@ translate chinese free_girl_girlfriend_a7e1a2bd:
 translate chinese free_girl_girlfriend_d21337ea:
 
     # girl.char "Don't you think... We need to know each other better?"
-    girl.char "你不觉得……我们需要更好地了解彼此？"
+    girl.char "你不觉得....我们需要更好地了解彼此？"
 
 # game/BKinteractions_free.rpy:1347
 translate chinese free_girl_girlfriend_bd20dafe:
@@ -580,13 +580,13 @@ translate chinese free_girl_girlfriend_bd20dafe:
 translate chinese free_girl_girlfriend_7901316a:
 
     # you "Anyway... What was it you wanted to show me?"
-    you "总之……你想给我看什么？"
+    you "总之....你想给我看什么？"
 
 # game/BKinteractions_free.rpy:1356
 translate chinese free_girl_girlfriend_7a9a86f9:
 
     # girl.char "Never mind... It doesn't matter."
-    girl.char "没事……那不重要。"
+    girl.char "没事....那不重要。"
 
 # game/BKinteractions_free.rpy:1363
 translate chinese free_girl_job_request_09b64180:
@@ -666,7 +666,7 @@ translate chinese strings:
 
     # game/BKinteractions_free.rpy:593
     old "I'm a brothel owner, so..."
-    new "我是青楼老板，所以……"
+    new "我是青楼老板，所以...."
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[0]] gold"

@@ -106,7 +106,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:346
     old "Common lives, common jobs, common wives... Seeing a commoner trying to escape all of this in a brothel is... common."
-    new "枯燥的生活，乏味的工作，将就的配偶……看到一个普通人试图在青楼里逃避这一切……这很常见。"
+    new "枯燥的生活，乏味的工作，将就的配偶....看到一个普通人试图在青楼里逃避这一切....这很常见。"
 
     # game/BKstart.rpy:346
     old "Craftsmen work with their hands, and when their hands get restless, they like to lay them on a pretty girl. Craftsmen are crafty."
@@ -138,7 +138,7 @@ translate schinese strings:
 
         # game/BKstart.rpy:478
     old "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."
-    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子……还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神沙利亚。"
+    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神沙利亚。"
 
     # game/BKstart.rpy:478
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
@@ -154,8 +154,8 @@ translate schinese strings:
 
     # game/BKstart.rpy:478
     old "The Cathedra is the holy center of the Arios order. Pilgrims, knights and priests rub elbows during prayers and rituals, while savvy merchants and bankers make a killing providing them with expensive service."
-    new "大教堂是阿里奥斯秩序的神圣中心。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
+    new "大教堂是太阳神秩序的神圣中心。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
 
     # game/BKstart.rpy:478
     old "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware."
-    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险……当心！"
+    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"

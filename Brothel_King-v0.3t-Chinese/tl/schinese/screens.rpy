@@ -212,7 +212,7 @@ translate schinese strings:
 
     # game/screens.rpy:238
     old "For updates, bug reports, and discussion: [URL]"
-    new "{b}更新、反馈及资源包下载请前往:{/b} [URL] \n{b}游戏报错或建议请联系：julienslink@outlook.com/TG:@JulienSlink{/b} \n{b}机翻By JulienSlink；汉化by 再见少年拉满弓、小熊猫、冥鑫{/b} "
+    new "{b} 报错或建议请联系：[URL]{/b} \n{b} 机翻By JulienSlink；汉化by 迷雾战神、小熊猫、冥鑫{/b} \n{b} 本汉化版本仅供学习分享交流，不得用于商业用途{/b}"
 
     # game/screens.rpy:524
     old "{i}Screen made\n by OhWee{/i}"

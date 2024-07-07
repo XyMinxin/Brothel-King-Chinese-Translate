@@ -796,7 +796,7 @@ translate schinese strings:
 
     # renpy/common/00iap.rpy:219
     old "Contacting App Store\nPlease Wait..."
-    new "正在连接 App Store\n请稍后……"
+    new "正在连接 App Store\n请稍后...."
 
     # renpy/common/00updater.rpy:419
     old "The Ren'Py Updater is not supported on mobile devices."

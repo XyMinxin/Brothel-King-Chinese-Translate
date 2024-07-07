@@ -2986,7 +2986,7 @@ translate schinese send_to_farm_menu_09b7fafb:
 translate schinese send_to_farm_menu_fff596d2:
 
     # you "I'm the one in charge here. Get yourself ready. Gizel will pick you up shortly."
-    you "我才是这里的主人。准备好自己吧,吉泽尔很快就会来接你。"
+    you "我才是这里的主人。准备好自己吧,吉泽很快就会来接你。"
 
 # game/BKevents.rpy:3545
 translate schinese send_to_farm_menu_a2f3ccdd:
@@ -3058,7 +3058,7 @@ translate schinese send_to_farm_menu_6329550c:
 translate schinese send_to_farm_menu_f0f21f79:
 
     # "Gizel didn't lift a finger to help you."
-    "吉泽尔丝毫没有伸出援手。"
+    "吉泽丝毫没有伸出援手。"
 
 # game/BKevents.rpy:3629
 translate schinese send_to_farm_menu_2d414750:
@@ -3070,7 +3070,7 @@ translate schinese send_to_farm_menu_2d414750:
 translate schinese send_to_farm_menu_8f79dfba:
 
     # "Gizel watched the fight with amusement. She grabs [girl.fullname] by the hair."
-    "吉泽尔饶有兴趣地观看了整个打斗。她抓住[girl.fullname]的头发。"
+    "吉泽饶有兴趣地观看了整个打斗。她抓住[girl.fullname]的头发。"
 
 # game/BKevents.rpy:3652
 translate schinese send_to_farm_menu_9fdd4096:
@@ -3310,13 +3310,13 @@ translate schinese farm_change_training_mode_57d6c487:
 translate schinese farm_change_training_mode_3335cf76:
 
     # "In hard mode, Gizel will overcome moderate resistance on her part."
-    "在强硬模式下,吉泽尔会克服她的适度抵抗。"
+    "在强硬模式下,吉泽会克服她的适度抵抗。"
 
 # game/BKevents.rpy:3907
 translate schinese farm_change_training_mode_d8ba7e01:
 
     # "In this mode, Gizel will ignore all red lines and force her to do anything."
-    "在这种模式下,吉泽尔将忽略所有禁忌事项并强迫她做任何事情。"
+    "在这种模式下,吉泽将忽略所有禁忌事项并强迫她做任何事情。"
 
 # game/BKevents.rpy:3918
 translate schinese farm_change_training_mode_4d105c3f:
@@ -3328,7 +3328,7 @@ translate schinese farm_change_training_mode_4d105c3f:
 translate schinese farm_change_training_mode_777372fe:
 
     # "You don't want to cause her too much distress. Gizel will separate [girl.name] from [girl.weakness]s whenever possible."
-    "你不想让她受太多痛苦。吉泽尔会尽可能把[girl.name]与她的[girl.weakness]分开。"
+    "你不想让她受太多痛苦。吉泽会尽可能把[girl.name]与她的[girl.weakness]分开。"
 
 # game/BKevents.rpy:3934
 translate schinese farm_take_out_60e465a4:
@@ -5218,7 +5218,7 @@ translate schinese contract_MC_event_63e1c2ed:
 translate schinese contract_MC_event_119ef155:
 
     # "Blue witch" "Are you mad? How could I befriend this slut? She couldn't even summon a minor demon to save her life, but she got ahead at school because she was fucking the Principal..."
-    "Blue witch" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先……"
+    "Blue witch" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先...."
 
 # game/BKevents.rpy:5505
 translate schinese contract_MC_event_62dff14b:
@@ -6814,7 +6814,7 @@ translate schinese tax_relationship_test_06434bf4:
 translate schinese tax_relationship_test_2d0e8e84:
 
     # taxgirl "Hmmm... So you'll do it."
-    taxgirl "嗯……那你就去做吧。"
+    taxgirl "嗯....那你就去做吧。"
 
 # game/BKevents.rpy:6419
 translate schinese tax_relationship_test_4c0f01d3:
@@ -6856,7 +6856,7 @@ translate schinese tax_relationship_test_f7d77590:
 translate schinese tax_relationship_test_9ee11710:
 
     # you "Look at you... These magic side-effects really played a number on you."
-    you "看看你……这些魔法副作用真是对你造成了不小的影响。"
+    you "看看你....这些魔法副作用真是对你造成了不小的影响。"
 
 # game/BKevents.rpy:6439
 translate schinese tax_relationship_test_ecf4de0d:
@@ -6880,7 +6880,7 @@ translate schinese tax_relationship_test_023e2484:
 translate schinese tax_relationship_test_a24a30a3:
 
     # you "Ooh... *drool*"
-    you "哦……*流口水*"
+    you "哦....*流口水*"
 
 # game/BKevents.rpy:6447
 translate schinese tax_relationship_test_eb36714a:
@@ -6892,7 +6892,7 @@ translate schinese tax_relationship_test_eb36714a:
 translate schinese tax_relationship_test_bafe4aed:
 
     # taxgirl "Do... Do me."
-    taxgirl "来……干我。"
+    taxgirl "来....干我。"
 
 # game/BKevents.rpy:6451
 translate schinese tax_relationship_test_cdd9076e_1:
@@ -6904,7 +6904,7 @@ translate schinese tax_relationship_test_cdd9076e_1:
 translate schinese tax_relationship_test_d17838fd:
 
     # taxgirl "Fuck me now, [MC.name]. Use my pussy, I don't care... I want it. Now."
-    taxgirl "现在就操我吧,[MC.name]。使用我的阴户,我不在乎……我想要。现在就要。"
+    taxgirl "现在就操我吧,[MC.name]。使用我的阴户,我不在乎....我想要。现在就要。"
 
 # game/BKevents.rpy:6455
 translate schinese tax_relationship_test_94889a7d:
@@ -6982,7 +6982,7 @@ translate schinese tax_relationship_test_ba953364:
 translate schinese tax_relationship_test_635b6167:
 
     # taxgirl "Would you... Would you fuck me again?" nointeract
-    taxgirl "你能否……再次操我?" nointeract
+    taxgirl "你能否....再次操我?" nointeract
 
 # game/BKevents.rpy:6497
 translate schinese tax_relationship_test_0b71aca9:
@@ -7696,13 +7696,13 @@ translate schinese pet_armageddon_9db72c03:
 translate schinese pet_armageddon_8bb3012c:
 
     # you "THIS TIME WILL BE... BIGGER!" with vpunch
-    you "这次将会更加……大规模！" with vpunch
+    you "这次将会更加....大规模！" with vpunch
 
 # game/BKevents.rpy:6970
 translate schinese pet_armageddon_5ec970d0:
 
     # gizel shy "What... What's got into you..."
-    gizel shy "什么……发生了什么……"
+    gizel shy "什么....发生了什么...."
 
 # game/BKevents.rpy:6972
 translate schinese pet_armageddon_2f6a0135:
@@ -7738,7 +7738,7 @@ translate schinese pet_armageddon_38c6ecef:
 translate schinese pet_armageddon_e5da5bdd:
 
     # you "They're coming for us... I can feel it..."
-    you "他们来了……我能感觉到……"
+    you "他们来了....我能感觉到...."
 
 # game/BKevents.rpy:6999
 translate schinese pet_armageddon_be12874b:
@@ -7762,13 +7762,13 @@ translate schinese pet_armageddon_7d71d2f5:
 translate schinese pet_armageddon_6e80e1cd:
 
     # "Out of thin air, dark shapes materialize near the portal, falling towards you. At first, you cannot distinguish their features, but soon..."
-    "从虚空中,黑暗的形状在传送门附近凝聚,向你坠落下来。起初你无法辨认它们的特征,但很快……"
+    "从虚空中,黑暗的形状在传送门附近凝聚,向你坠落下来。起初你无法辨认它们的特征,但很快...."
 
 # game/BKevents.rpy:7019
 translate schinese pet_armageddon_054ba3b3:
 
     # gizel surprise "By the seven hells... Are these... "
-    gizel surprise "在七大地狱之中……这些是……"
+    gizel surprise "在七大地狱之中....这些是...."
 
 # game/BKevents.rpy:7021
 translate schinese pet_armageddon_ceb9d123:
@@ -7804,7 +7804,7 @@ translate schinese pet_armageddon_d3663c51:
 translate schinese pet_armageddon_3f88f565:
 
     # you "YOU... SHALL... NOT... PASS!!!"
-    you "你……不得……越过!"
+    you "你....不得....越过!"
 
 # game/BKevents.rpy:7044
 translate schinese pet_armageddon_b8813e87:
@@ -7876,7 +7876,7 @@ translate schinese pet_armageddon_521cf9c4:
 translate schinese pet_armageddon_41862aff:
 
     # you "Actually... That won't teach them a lesson, BECAUSE THEY BE DEAD!!!" with vpunch
-    you "其实……这不会给他们一个教训,因为他们已经死了!!!" with vpunch
+    you "其实....这不会给他们一个教训,因为他们已经死了!!!" with vpunch
 
 # game/BKevents.rpy:7084
 translate schinese pet_armageddon_d7140e45:
@@ -7894,13 +7894,13 @@ translate schinese pet_armageddon_730347e3:
 translate schinese is_broken_82ecdcdc:
 
     # "Gizel asked for you to come to the farm this morning. She said you'd better hurry."
-    "吉泽尔要求你今天早上去农场一趟。她说你最好赶紧过去。"
+    "吉泽要求你今天早上去农场一趟。她说你最好赶紧过去。"
 
 # game/BKevents.rpy:7130
 translate schinese is_broken_2e1a0b2a:
 
     # gizel upset "It seems using her to conduct evil powers have cost her the last of her {a=help:sanity}sanity{/a}... She's good for nothing now. She'll only harm herself."
-    gizel upset "看来利用她来施展邪恶力量,已经耗尽了她仅存的{a=help:sanity}理智{/a}……她现在什么也做不了了。她只会伤害自己。"
+    gizel upset "看来利用她来施展邪恶力量,已经耗尽了她仅存的{a=help:sanity}理智{/a}....她现在什么也做不了了。她只会伤害自己。"
 
 # game/BKevents.rpy:7134
 translate schinese is_broken_228883fb:
@@ -8254,7 +8254,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:334
     old "Change your brothel settings"
-    new "更改你的红灯区设置"
+    new "更改青楼设置"
 
     # game/BKevents.rpy:603
     old "You have reached your current goal:\n"

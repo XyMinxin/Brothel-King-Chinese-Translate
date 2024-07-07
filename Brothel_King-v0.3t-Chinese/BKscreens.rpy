@@ -1213,14 +1213,14 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                             $ reaction = girl.will_do_farm_act(farm.programs[girl].target)
 
                             if reaction == "accepted":
-                                $ text1 = event_color["good"] % "吉泽认为她完全不抗拒这种训练."
+                                $ text1 = event_color["good"] % "吉泽尔认为她完全不抗拒这种训练."
                             elif reaction == "resisted":
-                                $ text1 = event_color["a little bad"] % "吉泽认为她有些抗拒这种训练，需要劝服她 (需要强硬模式)."
+                                $ text1 = event_color["a little bad"] % "吉泽尔认为她有些抗拒这种训练，需要劝服她 (需要强硬模式)."
                             elif reaction == "refused":
-                                $ text1 = event_color["a little bad"] % "吉泽认为她会拒绝这种训练，除非她被教训一顿 (需要硬核模式)."
+                                $ text1 = event_color["a little bad"] % "吉泽尔认为她会拒绝这种训练，除非她被教训一顿 (需要硬核模式)."
 
                         else:
-                            $ text1 = "吉泽不确定 " + girl.name + " 对这种训练持有什么态度."
+                            $ text1 = "吉泽尔不确定 " + girl.name + " 对这种训练持有什么态度."
 
                     else:
                         $ text1 = "[girl.name] 永远不会拒绝这么做."
@@ -1231,7 +1231,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training" or farm.programs[girl].holding != "rest":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "训练模式:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会违背女孩意愿强迫她们训练."
+                            textbutton "训练模式:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会违背女孩意愿强迫她们训练."
                             textbutton farm.programs[girl].mode.capitalize() style "inv_no_padding" text_size res_font(14) yalign 0.5 text_bold True action NullAction() tooltip farm_ttip[farm.programs[girl].mode]
 
                             if farm.programs[girl].mode == "tough":
@@ -1246,7 +1246,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                                 if farm.programs[girl].installation:
                                     tooltip farm.programs[girl].installation.get_tooltip()
                                 else:
-                                    tooltip "吉泽将自动选择一个可用的设施进行训练."
+                                    tooltip "吉泽尔将自动选择一个可用的设施进行训练."
 
                             if farm.programs[girl].installation:
                                 vbox:
@@ -1262,7 +1262,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                         if farm.knows["weakness"][girl]:
                             hbox xalign 0.5 spacing xres(10):
-                                textbutton "针对弱点:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽是否会利用她已知的弱点来对付她."
+                                textbutton "针对弱点:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会利用她已知的弱点来对付她."
                                 text {True: "否", False: "是"}[farm.programs[girl].avoid_weakness] size res_font(14) bold True
 
                     else:
@@ -4377,7 +4377,7 @@ screen furniture():
 
         has vbox spacing 10
 
-        text "Carpenter's Wagon" bold True xalign 0 yalign 0
+        text "工匠的马车" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize yres(120):
             add "side carpenter" zoom 0.8 yalign 0.5
@@ -4944,13 +4944,13 @@ screen brothel_report():
                 text "主人!!! " + brothel.name + " 这里臭烘烘的，到处都是苍蝇和蟑螂!" yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
             elif calendar.time == 1:
                 add "side sill happy" zoom 0.5
-                text "欢迎来到青楼, 主人! 我相信你一定能让青楼的生意蒸蒸日上的!" yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
+                text "欢迎回来, 主人! 我相信你一定能让青楼的生意蒸蒸日上的!" yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
             elif logs[calendar.time-1] and logs[calendar.time-1].net >= 0:
                 add "side sill happy" zoom 0.5
                 text "{color=[c_lightblue]}你知道吗? {/color}" + daily_tip yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
             else:
                 add "side sill sad" zoom 0.5
-                text "主人!!! " + brothel.name + "正在在亏损，再这样下去我们要破产了！" yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
+                text "主人!!! " + brothel.name + "正在亏损，再这样下去我们要破产了！" yalign 0.5 size res_font(18) justify True italic True xmaximum 0.8 color c_brown
 
 
         hbox spacing xres(20) xfill True yfill False:
@@ -4960,7 +4960,7 @@ screen brothel_report():
                 xfill True
                 yfill False
 
-                text "Yesterday" color c_prune
+                text "昨 天" color c_prune
 
                 text "" size res_font(14)
 
@@ -4988,7 +4988,7 @@ screen brothel_report():
                 xfill True
                 yfill False
 
-                text "Today" color c_prune
+                text "今 天" color c_prune
 
                 text "" size res_font(14)
 
@@ -5347,7 +5347,7 @@ screen restock_button(merc, upgrade=False):
         if upgrade == True and merc.can_upgrade():
             $ chapter, cost, upgrade = shop_upgrades[merc.upgrade_level + 1]
 
-            $ ttip = __("Upgrade this shop's inventory (+%s %s item) for %s %s.") % (str(upgrade[1]), upgrade[0], str(cost[1]), cost[0])
+            $ ttip = __("扩容商店的货架 (+%s 个  %s 商品) 。需要 %s %s.") % (str(upgrade[1]), upgrade[0], str(cost[1]), cost[0])
 
             textbutton __("Upgrade shop") text_size res_font(18) tooltip ttip:
                 if MC.has_resource(*cost):
@@ -5541,7 +5541,7 @@ screen quick_start():
                         text "信仰" xalign 0.5 size res_font(18) bold True color c_emerald
 
                         hbox spacing 10:
-                            for god in ["阿里奥斯", "莎莉娅", None]:
+                            for god in ["太阳神", "莎莉娅", None]:
                                 button yalign 0.5 xpadding 0 action Function(MC.set_god, god) tooltip god_description[god]:
                                     if MC.god != god:
                                         background None
@@ -6376,7 +6376,7 @@ screen farm_menu(prog, can_cancel=True):
 
         hbox:
             for act in extended_sex_acts:
-                $ ttip = "吉泽将用仆从训练她的 %s 能力." % girl_related_dict[act]
+                $ ttip = "吉泽尔将用仆从训练她的 %s 能力." % girl_related_dict[act]
 
                 if act == "group":
                     $ ttip += "\n需要在同一个设施内有2个或3个空闲的仆从."
@@ -6418,7 +6418,7 @@ screen farm_menu(prog, can_cancel=True):
             hbox xalign 0.0:
                 button style "farm_button" action (SetField(prog, "auto_inst", True), SetField(prog, "installation", None), SelectedIf(prog.installation==None)):
 
-                    tooltip "让吉泽安排一只宠物去陪她一直训练."
+                    tooltip "让吉泽尔安排一只宠物去陪她一直训练."
 
                     vbox:
                         spacing 3
@@ -6540,7 +6540,7 @@ screen farm_tab():
                         action Return(("powers", None))
                         if farm.powers == "intro":
                             background None
-                            tooltip "点击前往吉泽所在地点."
+                            tooltip "点击前往吉泽尔所在地点."
                         elif evpower_deck.can_draw:
                             background None
                             tooltip "新的卡牌! 点击获得 {b}Power Deck{/b}."
@@ -6551,7 +6551,7 @@ screen farm_tab():
                 button xfill True xmargin 3 ymargin 3 xpadding 6 ypadding 6 tooltip "Ask Gizel for help about the farm." background c_ui_dark:
                     if farm.powers == "intro":
                         action Return(("powers", None))
-                        tooltip "点击前往吉泽所在地点."
+                        tooltip "点击前往吉泽尔所在地点."
                     else:
                         action Return(("help", None))
                         tooltip "点击这里获取如何使用农场的帮助."

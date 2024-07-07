@@ -10,7 +10,7 @@ translate schinese city_rape_28dc46b8:
 translate schinese city_rape_795cacf6:
 
     # "Listening intently, you hear muffled screams coming from a dark corner. You rush towards the source..."
-    "你聚精会神地听着，听到一个黑暗的角落里传来低沉的尖叫声。你冲向源头……"
+    "你聚精会神地听着，听到一个黑暗的角落里传来低沉的尖叫声。你冲向源头...."
 
 # game/BKcity_events.rpy:33
 translate schinese city_rape_69107b8c:
@@ -28,7 +28,7 @@ translate schinese city_rape_6081d6b6:
 translate schinese city_rape_956cf43e:
 
     # ev_girl1 "Aaah, aah, noooo... It's ravaging me! Help! Help me!!!"
-    ev_girl1 "啊，啊，不……它要干坏我啦！救命！救救我！！！"
+    ev_girl1 "啊，啊，不....它要干坏我啦！救命！救救我！！！"
 
 # game/BKcity_events.rpy:39
 translate schinese city_rape_df1322d0:
@@ -100,7 +100,7 @@ translate schinese city_rape_07c5e6ea:
 translate schinese city_rape_fb02adf5:
 
     # you "Now, this knocked out monster... What should I do with it?"
-    you "现在，击倒了这个怪物……我该拿它怎么办？"
+    you "现在，击倒了这个怪物....我该拿它怎么办？"
 
 # game/BKcity_events.rpy:117
 translate schinese city_rape_3b16f6a2:
@@ -178,7 +178,7 @@ translate schinese city_rape_6b5419d7:
 translate schinese city_rape_800e1264:
 
     # you "Thou shall not pass...{w=1.0} your genes!"
-    you "你不该出现的……{w=1.0}这你恶魔！"
+    you "你不该出现的....{w=1.0}这你恶魔！"
 
 # game/BKcity_events.rpy:192
 translate schinese city_rape_c3acfded:
@@ -226,19 +226,19 @@ translate schinese city_rape_cde27e5c:
 translate schinese city_rape_463a3e6f:
 
     # ev_girl1 "Wh... What happenned?"
-    ev_girl1 "什……发生了什么？"
+    ev_girl1 "什....发生了什么？"
 
 # game/BKcity_events.rpy:231
 translate schinese city_rape_3b0ecb8b:
 
     # you "I cast a hypnotic spell... Don't worry, child, it is unable to harm you now."
-    you "我施了催眠咒……别担心，孩子，现在它伤害不了你了。"
+    you "我施了催眠咒....别担心，孩子，现在它伤害不了你了。"
 
 # game/BKcity_events.rpy:233
 translate schinese city_rape_16b0a077:
 
     # ev_girl1 "Oh, you saved me... *sob8 I will tell everyone what you did for me... *sob*"
-    ev_girl1 "你救了我…我会告诉大家你为我做了什么……*抽泣*"
+    ev_girl1 "你救了我…我会告诉大家你为我做了什么....*抽泣*"
 
 # game/BKcity_events.rpy:235
 translate schinese city_rape_c1f8088e:
@@ -298,7 +298,7 @@ translate schinese city_rape_fa1760f7:
 translate schinese city_rape_e29b3f0b:
 
     # you "Uh oh..."
-    you "哦哦……"
+    you "哦哦...."
 
 # game/BKcity_events.rpy:293
 translate schinese city_rape_49436318:
@@ -322,13 +322,13 @@ translate schinese city_rape_c195d233:
 translate schinese city_rape_7bc3e35c:
 
     # "The beast has now noticed you, and glares at you with murderous eyes..."
-    "野兽现在注意到你了，用凶狠的眼睛瞪着你……"
+    "野兽现在注意到你了，用凶狠的眼睛瞪着你...."
 
 # game/BKcity_events.rpy:313
 translate schinese city_rape_612d9431:
 
     # you "Well, discretion is the better part of valor..."
-    you "嗯，谨慎比勇敢更重要……"
+    you "嗯，谨慎比勇敢更重要...."
 
 # game/BKcity_events.rpy:317
 translate schinese city_rape_8c0db1f9:
@@ -370,7 +370,7 @@ translate schinese city_monster_menu_c964ce72:
 translate schinese city_monster_menu_f2a54552:
 
     # you "I know someone who can take care of it, making me some money in the process..."
-    you "我知道有人可以帮我处理这件事，在这个过程中还能给我赚了一些钱……"
+    you "我知道有人可以帮我处理这件事，在这个过程中还能给我赚了一些钱...."
 
 # game/BKcity_events.rpy:371
 translate schinese city_monster_menu_f69c1dab:
@@ -430,13 +430,13 @@ translate schinese city_impress_2ac65c34:
 translate schinese city_impress_3baa2d51:
 
     # ev_girl2 "But look at those dumb peasants... I wish we could find a real man..."
-    ev_girl2 "但是看看那些愚蠢的农民……我希望我们能找到一个真正的男人…"
+    ev_girl2 "但是看看那些愚蠢的农民....我希望我们能找到一个真正的男人…"
 
 # game/BKcity_events.rpy:452
 translate schinese city_impress_4c5a4d70:
 
     # ev_girl3 "Patience, sister... Hey look, someone is coming."
-    ev_girl3 "要有耐心,姐姐……看，有人来了。"
+    ev_girl3 "要有耐心,姐姐....看，有人来了。"
 
 # game/BKcity_events.rpy:456
 translate schinese city_impress_06040ba6:
@@ -460,13 +460,13 @@ translate schinese city_impress_a762f9b4:
 translate schinese city_impress_9db62c4b:
 
     # you "Ooooh... My back... <holding back tears>"
-    you "唔……我的背…<阻碍眼泪>"
+    you "唔....我的背…<阻碍眼泪>"
 
 # game/BKcity_events.rpy:496
 translate schinese city_impress_640a941c:
 
     # ev_girl2 "Well, that was an unexpected move! I suppose it deserves an artistic note... I bet Katya could you how it's done..."
-    ev_girl2 "嗯，这是一个意想不到的举动！我想它应该有艺术价值……我打赌卡蒂亚能告诉我是怎么做的……"
+    ev_girl2 "嗯，这是一个意想不到的举动！我想它应该有艺术价值....我打赌卡蒂亚能告诉我是怎么做的...."
 
 # game/BKcity_events.rpy:498
 translate schinese city_impress_53ccd857:
@@ -478,7 +478,7 @@ translate schinese city_impress_53ccd857:
 translate schinese city_impress_1cd7b566:
 
     # ev_girl4 "None of us does... This is embarrassing. Let's move on, sisters!"
-    ev_girl4 "我们没有人……这是尴尬。让我们继续，姐妹们！"
+    ev_girl4 "我们没有人....这是尴尬。让我们继续，姐妹们！"
 
 # game/BKcity_events.rpy:509
 translate schinese city_impress_b1056eb7:
@@ -502,7 +502,7 @@ translate schinese city_impress_cec4c3ed:
 translate schinese city_impress_fba1e449:
 
     # ev_girl1 "I like him. I can't wait anymore sisters... You! Come here."
-    ev_girl1 "我喜欢他。我再也等不下去了，姐妹们……你！到这里来。"
+    ev_girl1 "我喜欢他。我再也等不下去了，姐妹们....你！到这里来。"
 
 # game/BKcity_events.rpy:519
 translate schinese city_impress_b9f03b8c:
@@ -514,7 +514,7 @@ translate schinese city_impress_b9f03b8c:
 translate schinese city_impress_fb1754e7:
 
     # ev_girl1 "I have waited for this moment... You, strong guy! Let's fuck!"
-    ev_girl1 "我等了这一刻……你很强壮的家伙！让我们干！"
+    ev_girl1 "我等了这一刻....你很强壮的家伙！让我们干！"
 
 # game/BKcity_events.rpy:530
 translate schinese city_impress_6ef50743:
@@ -550,7 +550,7 @@ translate schinese city_impress_5863f924:
 translate schinese city_impress_48b7d138:
 
     # ev_girl3 "Let's see about that..."
-    ev_girl3 "让我们看看……"
+    ev_girl3 "让我们看看...."
 
 # game/BKcity_events.rpy:550
 translate schinese city_impress_4a22364e:
@@ -604,7 +604,7 @@ translate schinese city_impress_4d7f2852:
 translate schinese city_impress_5ee28dbf:
 
     # ev_girl4 "And looks like he's got a big... too..."
-    ev_girl4 "看起来他有个大…太……"
+    ev_girl4 "看起来他有个大…太...."
 
 # game/BKcity_events.rpy:576
 translate schinese city_impress_90323092:
@@ -622,7 +622,7 @@ translate schinese city_impress_7fe30539:
 translate schinese city_impress_4c958196:
 
     # ev_girl4 "Sisters! Calm down... Look how much man there is, we can all share!"
-    ev_girl4 "姐妹们！冷静下来……看看有多少人，我们都可以分享！"
+    ev_girl4 "姐妹们！冷静下来....看看有多少人，我们都可以分享！"
 
 # game/BKcity_events.rpy:582
 translate schinese city_impress_834c2638:
@@ -646,7 +646,7 @@ translate schinese city_impress_dadddaff:
 translate schinese city_impress_7fef2142:
 
     # you "So, erm... The weather is quite fine today, don't you think? Even though, yesterday..."
-    you "所以,嗯……你不觉得今天天气很好吗？虽然,昨天……"
+    you "所以,嗯....你不觉得今天天气很好吗？虽然,昨天...."
 
 # game/BKcity_events.rpy:603
 translate schinese city_impress_515d2231:
@@ -664,7 +664,7 @@ translate schinese city_impress_c6722fb7:
 translate schinese city_impress_e0cc606b:
 
     # ev_girl4 "She's a little harsh, friend, but she's right. We do have to move on... Sorry!"
-    ev_girl4 "她有点苛刻，朋友，但她是对的。我们必须继续……对不起！"
+    ev_girl4 "她有点苛刻，朋友，但她是对的。我们必须继续....对不起！"
 
 # game/BKcity_events.rpy:615
 translate schinese city_impress_33533913:
@@ -688,7 +688,7 @@ translate schinese city_impress_aecc46b4:
 translate schinese city_impress_0c26feb9:
 
     # ev_girl2 "Aw, enough jokes, girls! I have an itch that funny guy here could scratch..."
-    ev_girl2 "够了，姑娘们！我有点痒，这儿那个有趣的家伙会抓……"
+    ev_girl2 "够了，姑娘们！我有点痒，这儿那个有趣的家伙会抓...."
 
 # game/BKcity_events.rpy:625
 translate schinese city_impress_8bac7a4b:
@@ -724,13 +724,13 @@ translate schinese city_impress_01b0316a:
 translate schinese city_impress_b7e3043f:
 
     # you "...and that's how I brought peace to the kingdom, and ended up in the princess's bed..."
-    you "…我就是这样给王国带来了和平，最后躺在公主的床上……"
+    you "…我就是这样给王国带来了和平，最后躺在公主的床上...."
 
 # game/BKcity_events.rpy:649
 translate schinese city_impress_7299ea59:
 
     # ev_girl4 "She's a lucky one... I'd like you in my bed as well!"
-    ev_girl4 "她很幸运……我也想让你睡在我的床上！"
+    ev_girl4 "她很幸运....我也想让你睡在我的床上！"
 
 # game/BKcity_events.rpy:651
 translate schinese city_impress_e4125816:
@@ -766,13 +766,13 @@ translate schinese city_impress_c615e5c3:
 translate schinese city_impress_f3b3bb54:
 
     # ev_girl1 "Ah, you're so cool... Talking about sex with you is making me all wet..."
-    ev_girl1 "啊，你真酷……和你谈论性让我浑身湿透…"
+    ev_girl1 "啊，你真酷....和你谈论性让我浑身湿透…"
 
 # game/BKcity_events.rpy:671
 translate schinese city_impress_4bca3277:
 
     # ev_girl2 "Me too... I want some!"
-    ev_girl2 "我也是……我想要一些！"
+    ev_girl2 "我也是....我想要一些！"
 
 # game/BKcity_events.rpy:675
 translate schinese city_impress_dcadeb26:
@@ -802,7 +802,7 @@ translate schinese city_impress_be00aa42:
 translate schinese city_impress_b6d0d70e:
 
     # ev_girl3 "Calm down, sister... Plenty of fish in the sea. let's look elsewhere."
-    ev_girl3 "冷静下来,姐姐……天涯何处无芳草。让我们看其他地方。"
+    ev_girl3 "冷静下来,姐姐....天涯何处无芳草。让我们看其他地方。"
 
 # game/BKcity_events.rpy:701
 translate schinese city_impress_c55b17d5:
@@ -820,13 +820,13 @@ translate schinese city_impress_a8fab31f:
 translate schinese city_impress_58e8061b:
 
     # ev_girl1 "Oh, yes!!! Cum! Give me more cum! The smell of cock is driving me crazy..."
-    ev_girl1 "哦,是的！！！暨！给我更多的精液！鸡巴的味道快把我逼疯了……"
+    ev_girl1 "哦,是的！！！暨！给我更多的精液！鸡巴的味道快把我逼疯了...."
 
 # game/BKcity_events.rpy:727
 translate schinese city_impress_9b39d4b4:
 
     # ev_girl2 "That's our girl..."
-    ev_girl2 "这是我们的女孩……"
+    ev_girl2 "这是我们的女孩...."
 
 # game/BKcity_events.rpy:729
 translate schinese city_impress_30727017:
@@ -838,7 +838,7 @@ translate schinese city_impress_30727017:
 translate schinese city_impress_a46b4173:
 
     # ev_girl3 "Way to go, sister..."
-    ev_girl3 "干得好，妹妹……"
+    ev_girl3 "干得好，妹妹...."
 
 # game/BKcity_events.rpy:737
 translate schinese city_impress_a9baabcd:
@@ -868,7 +868,7 @@ translate schinese city_impress_f2241653:
 translate schinese city_impress_4f0b1f1d:
 
     # ev_girl3 "Oh, it's sooo good... Aaaaah!!!"
-    ev_girl3 "哦，太好了……啊哈！！！"
+    ev_girl3 "哦，太好了....啊哈！！！"
 
 # game/BKcity_events.rpy:771
 translate schinese city_impress_a9baabcd_1:
@@ -886,7 +886,7 @@ translate schinese city_impress_b485c9ae:
 translate schinese city_impress_45fcdc80:
 
     # ev_girl4 "Master, allow us to suck your dick dry..."
-    ev_girl4 "主人，让我们把你的鸡巴吸干……"
+    ev_girl4 "主人，让我们把你的鸡巴吸干...."
 
 # game/BKcity_events.rpy:793
 translate schinese city_impress_eac51347:
@@ -904,7 +904,7 @@ translate schinese city_impress_6b277130:
 translate schinese city_impress_55d3ab7e:
 
     # "Today is a good day..."
-    "今天是个好日子……"
+    "今天是个好日子...."
 
 # game/BKcity_events.rpy:809
 translate schinese city_impress_a9baabcd_2:
@@ -922,7 +922,7 @@ translate schinese city_impress_1e1a8a90:
 translate schinese city_impress_8b4ef274:
 
     # ev_girl2 "Oh, master, it's sooo big... Fuck me harder! Ruin my pussy!"
-    ev_girl2 "哦，主人，它太大了……更厉害的操我！毁了我的猫咪！"
+    ev_girl2 "哦，主人，它太大了....更厉害的操我！毁了我的猫咪！"
 
 # game/BKcity_events.rpy:833
 translate schinese city_impress_dda7fded:
@@ -934,19 +934,19 @@ translate schinese city_impress_dda7fded:
 translate schinese city_impress_01b725c3:
 
     # ev_girl4 "Master, I feel empty inside... Why don't you stick it in my ass?"
-    ev_girl4 "师父，我感到内心空虚……你为什么不插在我屁股上？"
+    ev_girl4 "师父，我感到内心空虚....你为什么不插在我屁股上？"
 
 # game/BKcity_events.rpy:841
 translate schinese city_impress_1831fa09:
 
     # ev_girl3 "Oh, please, let me drink your milk..."
-    ev_girl3 "哦，拜托，让我喝你的牛奶……"
+    ev_girl3 "哦，拜托，让我喝你的牛奶...."
 
 # game/BKcity_events.rpy:853
 translate schinese city_impress_e9410bdc:
 
     # "You have a hard time leaving..."
-    "你很难离开……"
+    "你很难离开...."
 
 # game/BKcity_events.rpy:859
 translate schinese city_impress_efb088bc:
@@ -970,7 +970,7 @@ translate schinese city_impress_c749dbaa:
 translate schinese city_impress_16e83859:
 
     # ev_girl1 "You can have it. This will be a nice souvenir..."
-    ev_girl1 "你可以拥有它。这将是一个很好的纪念品……"
+    ev_girl1 "你可以拥有它。这将是一个很好的纪念品...."
 
 # game/BKcity_events.rpy:878
 translate schinese city_impress_867a7f8c:
@@ -1156,7 +1156,7 @@ translate schinese city_slave_d56b70e6:
 translate schinese city_slave_a0f8e770:
 
     # slave "I had never heard something like that before..."
-    slave "我以前从未听过这样的话……"
+    slave "我以前从未听过这样的话...."
 
 # game/BKcity_events.rpy:1000
 translate schinese city_slave_85ac5c55:
@@ -1186,7 +1186,7 @@ translate schinese city_slave_0769663a:
 translate schinese city_slave_4b50ad06:
 
     # you "If you embrace your condition, you can do amazing things. You can be a godly vessel, harnessing the power of lust and vice and turning it into positive energy..."
-    you "如果你能接受自己的现状，你就能做出惊人的事情。你可以成为一艘神圣的船，驾驭欲望和邪恶的力量，把它变成正能量……"
+    you "如果你能接受自己的现状，你就能做出惊人的事情。你可以成为一艘神圣的船，驾驭欲望和邪恶的力量，把它变成正能量...."
 
 # game/BKcity_events.rpy:1013
 translate schinese city_slave_18ecba08:
@@ -1270,7 +1270,7 @@ translate schinese city_slave_ca4d4c16:
 translate schinese city_slave_d4036871:
 
     # you "Damn, she's strong-willed..."
-    you "该死的,她意志坚强……"
+    you "该死的,她意志坚强...."
 
 # game/BKcity_events.rpy:1055
 translate schinese city_slave_613e7676:
@@ -1300,7 +1300,7 @@ translate schinese city_slave_99bff055_1:
 translate schinese city_slave_9aa59e9b:
 
     # slave "Resistance..."
-    slave "抵抗……"
+    slave "抵抗...."
 
 # game/BKcity_events.rpy:1071
 translate schinese city_slave_d919dde5:
@@ -1336,7 +1336,7 @@ translate schinese city_slave_5c966fa6:
 translate schinese city_slave_81e3d044:
 
     # slave "You... You are the voice of my master..."
-    slave "你……你是我主人的声音……"
+    slave "你....你是我主人的声音...."
 
 # game/BKcity_events.rpy:1091
 translate schinese city_slave_de31bc83:
@@ -1396,7 +1396,7 @@ translate schinese city_slave_c1dacd9f:
 translate schinese city_slave_91a39f4f:
 
     # slave "What... What is going on?"
-    slave "什么……发生了什么事？"
+    slave "什么....发生了什么事？"
 
 # game/BKcity_events.rpy:1117
 translate schinese city_slave_3db876d9:
@@ -1438,7 +1438,7 @@ translate schinese city_slave_1d713ca3:
 translate schinese city_slave_24dcda9a:
 
     # slave "I'm a dirty whore, I'll do anything... Please... Fuck meeeeeeee!"
-    slave "我是个肮脏的婊子，我愿意做任何事……请……操我！"
+    slave "我是个肮脏的婊子，我愿意做任何事....请....操我！"
 
 # game/BKcity_events.rpy:1145
 translate schinese city_slave_9f1451e7:
@@ -1498,7 +1498,7 @@ translate schinese city_slave_a9baabcd:
 translate schinese city_slave_1f77043b:
 
     # slavegirl1 "Amazing! You succeeded where I failed... You are truly something."
-    slavegirl1 "神奇的！你在我失败的地方成功了……你真了不起。"
+    slavegirl1 "神奇的！你在我失败的地方成功了....你真了不起。"
 
 # game/BKcity_events.rpy:1198
 translate schinese city_slave_6a0acc1f:
@@ -1558,7 +1558,7 @@ translate schinese city_slave_cbaacbae:
 translate schinese city_slave_36eacddf:
 
     # slavegirl1 "Master [MC.name] will now fuck your pussy. Brace yourself, now, he's got a big dick. Mmmh..."
-    slavegirl1 "[MC.name]大人现在要操你的阴部了。打起精神来，他有个大鸡巴。Mmmh……"
+    slavegirl1 "[MC.name]大人现在要操你的阴部了。打起精神来，他有个大鸡巴。Mmmh...."
 
 # game/BKcity_events.rpy:1268
 translate schinese city_slave_0657eae3:
@@ -1582,7 +1582,7 @@ translate schinese city_slave_465730fc:
 translate schinese city_slave_4d802672:
 
     # slavegirl1 "Take some time to get used to the feeling... Ease into it..."
-    slavegirl1 "花点时间来适应这种感觉……缓解进去……"
+    slavegirl1 "花点时间来适应这种感觉....缓解进去...."
 
 # game/BKcity_events.rpy:1288
 translate schinese city_slave_9d371e26:
@@ -1618,19 +1618,19 @@ translate schinese city_slave_46143a51:
 translate schinese city_slave_d5de3b60:
 
     # slavegirl1 "Looks like you managed to turn Master [MC.name] on... *giggle*"
-    slavegirl1 "看起来你成功地打开了大师[MC.name]……*笑*"
+    slavegirl1 "看起来你成功地打开了大师[MC.name]....*笑*"
 
 # game/BKcity_events.rpy:1314
 translate schinese city_slave_5d29cd48:
 
     # you "I'm close..."
-    you "我已经结束了……"
+    you "我已经结束了...."
 
 # game/BKcity_events.rpy:1318
 translate schinese city_slave_802d5805:
 
     # slave "Ohhhh, aaaahhh... AAAAAH!"
-    slave "噢,啊哈……啊啊啊哈！"
+    slave "噢,啊哈....啊啊啊哈！"
 
 # game/BKcity_events.rpy:1327
 translate schinese city_slave_6c6ac6f8:
@@ -1720,7 +1720,7 @@ translate schinese city_slave_2764ba73:
 translate schinese city_slave_34169bac:
 
     # you "Maybe I could show the girls a thing or two back at the brothel..."
-    you "也许我可以带姑娘们回青楼看看……"
+    you "也许我可以带姑娘们回青楼看看...."
 
 # game/BKcity_events.rpy:1386
 translate schinese city_slave_51a349cb:
@@ -1738,13 +1738,13 @@ translate schinese city_slave_50201891:
 translate schinese city_slave_6c7e6493:
 
     # slavegirl1 "I want to personally reward you... Miki, come over here!"
-    slavegirl1 "我想亲自奖励你……美琪，过来！"
+    slavegirl1 "我想亲自奖励你....美琪，过来！"
 
 # game/BKcity_events.rpy:1423
 translate schinese city_slave_227495f0:
 
     # slavegirl2 "Mmmh, aaah..."
-    slavegirl2 "嗯，啊……"
+    slavegirl2 "嗯，啊...."
 
 # game/BKcity_events.rpy:1425
 translate schinese city_slave_77342fea:
@@ -1762,7 +1762,7 @@ translate schinese city_slave_849622ef:
 translate schinese city_slave_d5bb2c99:
 
     # slavegirl2 "Mmmmh..."
-    slavegirl2 "嗯……"
+    slavegirl2 "嗯...."
 
 # game/BKcity_events.rpy:1439
 translate schinese city_slave_eefaf412:
@@ -1786,7 +1786,7 @@ translate schinese city_slave_f3666851:
 translate schinese city_slave_f5245a47:
 
     # slavegirl1 "Master... You came so much!"
-    slavegirl1 "主人……你来了这么多次！"
+    slavegirl1 "主人....你来了这么多次！"
 
 # game/BKcity_events.rpy:1470
 translate schinese city_slave_f44ca558:
@@ -1810,7 +1810,7 @@ translate schinese city_slave_3d8c5057:
 translate schinese city_slave_0ab5aa90:
 
     # slavegirl1 "The night has only just started..."
-    slavegirl1 "夜晚才刚刚开始……"
+    slavegirl1 "夜晚才刚刚开始...."
 
 # game/BKcity_events.rpy:1485
 translate schinese city_slave_a9046625:
@@ -1834,7 +1834,7 @@ translate schinese city_gamble_7d17a49f:
 translate schinese city_gamble_8d2c768a:
 
     # ev_girl1 "Hello, mister! I'm bored... Won't you play with me? We can wage a few denars..."
-    ev_girl1 "你好,先生！我无聊……你不和我一起玩吗？我们可以赚几枚金币……"
+    ev_girl1 "你好,先生！我无聊....你不和我一起玩吗？我们可以赚几枚金币...."
 
 # game/BKcity_events.rpy:1535
 translate schinese city_gamble_82f4a93b:
@@ -1888,7 +1888,7 @@ translate schinese city_gamble_7de57ce5:
 translate schinese city_gamble_b65f8599:
 
     # ev_girl1 "Well, mister, it looks like lady luck is favoring me now... Teehee..."
-    ev_girl1 "嗯，先生，看来现在幸运女神眷顾我了……嘻嘻嘻……"
+    ev_girl1 "嗯，先生，看来现在幸运女神眷顾我了....嘻嘻嘻...."
 
 # game/BKcity_events.rpy:1564
 translate schinese city_gamble_40703e17:
@@ -1984,7 +1984,7 @@ translate schinese city_gamble_a75181bc:
 translate schinese city_gamble_becd0c06:
 
     # you "Oh no..."
-    you "哦,不……"
+    you "哦,不...."
 
 # game/BKcity_events.rpy:1623
 translate schinese city_gamble_fd340498:
@@ -2008,7 +2008,7 @@ translate schinese city_gamble_d4c4c437:
 translate schinese city_gamble_1a3f7fa9:
 
     # you "This is the right time..."
-    you "现在正是时候……"
+    you "现在正是时候...."
 
 # game/BKcity_events.rpy:1645
 translate schinese city_gamble_56297960:
@@ -2098,13 +2098,13 @@ translate schinese city_gamble_9dc3e641:
 translate schinese city_gamble_da3b5fec:
 
     # you "Oh, uh, ahem... Just stretching, hahahahaha!"
-    you "哦,嗯,嗯……只是伸展，哈哈哈哈！"
+    you "哦,嗯,嗯....只是伸展，哈哈哈哈！"
 
 # game/BKcity_events.rpy:1689
 translate schinese city_gamble_a005b622:
 
     # ev_girl1 "You're acting weird... Don't try to cheat, now, ok?"
-    ev_girl1 "你举止怪怪的……别想作弊，好吗？"
+    ev_girl1 "你举止怪怪的....别想作弊，好吗？"
 
 # game/BKcity_events.rpy:1691
 translate schinese city_gamble_6878d040:
@@ -2134,7 +2134,7 @@ translate schinese city_gamble_dfd842f8:
 translate schinese city_gamble_fbd1f22d:
 
     # ev_girl1 "Aw, that's too bad, I'm sure you were about to win big... *sneer*"
-    ev_girl1 "哦，那太糟糕了，我肯定你会赢很多……*冷笑*"
+    ev_girl1 "哦，那太糟糕了，我肯定你会赢很多....*冷笑*"
 
 # game/BKcity_events.rpy:1720
 translate schinese city_gamble_04964a88:
@@ -2158,7 +2158,7 @@ translate schinese city_gamble_f1b8b9a3:
 translate schinese city_gamble_3771127e:
 
     # ev_girl1 "Aw... You're robbing me blind..."
-    ev_girl1 "啊……你在瞎抢我的东西……"
+    ev_girl1 "啊....你在瞎抢我的东西...."
 
 # game/BKcity_events.rpy:1747
 translate schinese city_gamble_b1b89f60:
@@ -2176,7 +2176,7 @@ translate schinese city_gamble_3a3405b9:
 translate schinese city_gamble_41ab9b9e:
 
     # ev_girl1 "Uh... It's... I..."
-    ev_girl1 "嗯……这是……我……"
+    ev_girl1 "嗯....这是....我...."
 
 # game/BKcity_events.rpy:1759
 translate schinese city_gamble_d8259c57:
@@ -2206,7 +2206,7 @@ translate schinese city_gamble_a577ad0e:
 translate schinese city_gamble_4b439b96:
 
     # ev_girl1 "I don't have any money... This gig was supposed to earn me some..."
-    ev_girl1 "我没有钱……这份工作本来是要给我挣点钱的……"
+    ev_girl1 "我没有钱....这份工作本来是要给我挣点钱的...."
 
 # game/BKcity_events.rpy:1771
 translate schinese city_gamble_ef9737fb:
@@ -2218,7 +2218,7 @@ translate schinese city_gamble_ef9737fb:
 translate schinese city_gamble_75088c84:
 
     # you "I'm sorry. But you have to pay up. Don't make me fetch the guard..."
-    you "我很抱歉。但是你必须付钱。别让我去叫卫兵……"
+    you "我很抱歉。但是你必须付钱。别让我去叫卫兵...."
 
 # game/BKcity_events.rpy:1775
 translate schinese city_gamble_491bbda7:
@@ -2236,7 +2236,7 @@ translate schinese city_gamble_24e6b6dd:
 translate schinese city_gamble_c3e3c1f2:
 
     # ev_girl1 "I can make it up to you in another way..."
-    ev_girl1 "我可以用另一种方式来补偿你……"
+    ev_girl1 "我可以用另一种方式来补偿你...."
 
 # game/BKcity_events.rpy:1789
 translate schinese city_gamble_d2482226:
@@ -2260,13 +2260,13 @@ translate schinese city_gamble_c2182a64:
 translate schinese city_gamble_0ec82c53:
 
     # ev_girl1 "Ooooh... I like it... Mister, your cock is huge, oh..."
-    ev_girl1 "唔……我喜欢它……先生，你的鸡巴很大，哦……"
+    ev_girl1 "唔....我喜欢它....先生，你的鸡巴很大，哦...."
 
 # game/BKcity_events.rpy:1799
 translate schinese city_gamble_d89d6d72:
 
     # you "This is only the beginning..."
-    you "这只是开始……"
+    you "这只是开始...."
 
 # game/BKcity_events.rpy:1801
 translate schinese city_gamble_4736b5fc:
@@ -2314,7 +2314,7 @@ translate schinese city_gamble_cd6b38b6:
 translate schinese city_gamble_a1e9c257:
 
     # ev_girl1 "Cum... So warm inside... Feels so good... Aaaah..."
-    ev_girl1 "和……所以里面温暖……感觉很好……啊……"
+    ev_girl1 "和....所以里面温暖....感觉很好....啊...."
 
 # game/BKcity_events.rpy:1835
 translate schinese city_gamble_a9baabcd:
@@ -2332,7 +2332,7 @@ translate schinese city_gamble_995a6198:
 translate schinese city_gamble_48a2c215:
 
     # you "Damn..."
-    you "该死的……"
+    you "该死的...."
 
 # game/BKcity_events.rpy:1858
 translate schinese city_gamble_04964a88_1:
@@ -2350,7 +2350,7 @@ translate schinese city_gamble_cfb1a132:
 translate schinese city_gamble_dba13d1b:
 
     # ev_girl1 "Really? That's too bad, I figured you were the playing type... Goodbye, then."
-    ev_girl1 "真的吗？太糟糕了，我以为你是那种爱玩的人……那么，再见。"
+    ev_girl1 "真的吗？太糟糕了，我以为你是那种爱玩的人....那么，再见。"
 
 # game/BKcity_events.rpy:1885
 translate schinese city_thief_b71bafed:
@@ -2416,7 +2416,7 @@ translate schinese city_thief_cee55968:
 translate schinese city_thief_48a2c215:
 
     # you "Damn..."
-    you "该死的……"
+    you "该死的...."
 
 # game/BKcity_events.rpy:1950
 translate schinese city_thief_19de95e8:
@@ -2518,7 +2518,7 @@ translate schinese city_thief_75863963:
 translate schinese city_thief_f61cb9b5:
 
     # you "Thank you, but this isn't necessary..."
-    you "谢谢，但这没有必要……"
+    you "谢谢，但这没有必要...."
 
 # game/BKcity_events.rpy:2015
 translate schinese city_thief_ba41d60b:
@@ -2656,7 +2656,7 @@ translate schinese city_wrestle_bce48510:
 translate schinese city_wrestle_5ee7ff9d:
 
     # you "Shit..."
-    you "狗屎……"
+    you "狗屎...."
 
 # game/BKcity_events.rpy:2146
 translate schinese city_wrestle_3e8a4b55:
@@ -2674,7 +2674,7 @@ translate schinese city_wrestle_b2bea753:
 translate schinese city_wrestle_141f5b86:
 
     # warrior "Careful now, boy..."
-    warrior "小心了，男孩……"
+    warrior "小心了，男孩...."
 
 # game/BKcity_events.rpy:2152
 translate schinese city_wrestle_cd163e53:
@@ -2698,7 +2698,7 @@ translate schinese city_wrestle_65ee0a62:
 translate schinese city_wrestle_85598211:
 
     # warrior "Grrr..."
-    warrior "叽阿……"
+    warrior "叽阿...."
 
 # game/BKcity_events.rpy:2166
 translate schinese city_wrestle_f9f43a26:
@@ -2716,7 +2716,7 @@ translate schinese city_wrestle_a87365e5:
 translate schinese city_wrestle_129cdef2:
 
     # you "I see, you were born with a helmet then..."
-    you "我明白了，你生下来就带着头盔……"
+    you "我明白了，你生下来就带着头盔...."
 
 # game/BKcity_events.rpy:2174
 translate schinese city_wrestle_36a2ce18:
@@ -2752,7 +2752,7 @@ translate schinese city_wrestle_b9943a91:
 translate schinese city_wrestle_ce6831c7:
 
     # you "You know what? I'm... I'm stronger than you! You might as well give up."
-    you "你知道吗？我……我比你强壮！你还是放弃算了。"
+    you "你知道吗？我....我比你强壮！你还是放弃算了。"
 
 # game/BKcity_events.rpy:2192
 translate schinese city_wrestle_422a594d:
@@ -2782,7 +2782,7 @@ translate schinese city_wrestle_f8910b6b:
 translate schinese city_wrestle_fa530948:
 
     # you "I can't, I have... stuff to do."
-    you "我不能，我……东西要做。"
+    you "我不能，我....东西要做。"
 
 # game/BKcity_events.rpy:2210
 translate schinese city_wrestle_fb565e36:
@@ -2812,7 +2812,7 @@ translate schinese city_wrestle_a48d4343:
 translate schinese city_wrestle_0043fb82:
 
     # warrior "Fine, here's your gold... *frown*"
-    warrior "好吧，这是你的金币……*皱眉*"
+    warrior "好吧，这是你的金币....*皱眉*"
 
 # game/BKcity_events.rpy:2244
 translate schinese city_wrestle_b1b89f60:
@@ -2848,7 +2848,7 @@ translate schinese city_cat_ea6e8d15:
 translate schinese city_cat_c25ad0ac:
 
     # you "What is it? ...and what's with the strange ears??"
-    you "它是什么？……那奇怪的耳朵是怎么回事？"
+    you "它是什么？....那奇怪的耳朵是怎么回事？"
 
 # game/BKcity_events.rpy:2305
 translate schinese city_cat_21c2f2e0:
@@ -2860,7 +2860,7 @@ translate schinese city_cat_21c2f2e0:
 translate schinese city_cat_aa8879a5:
 
     # ev_girl3 "She's been missing for days! She told me she was going out for a while, but..."
-    ev_girl3 "她失踪好几天了！她告诉我她要出去一段时间，但是……"
+    ev_girl3 "她失踪好几天了！她告诉我她要出去一段时间，但是...."
 
 # game/BKcity_events.rpy:2309
 translate schinese city_cat_dda822f5:
@@ -2872,7 +2872,7 @@ translate schinese city_cat_dda822f5:
 translate schinese city_cat_eea52340:
 
     # ev_girl3 "Well... She's been fooling around with those cool cats lately..."
-    ev_girl3 "嗯……她最近一直在和那些很酷的猫鬼混……"
+    ev_girl3 "嗯....她最近一直在和那些很酷的猫鬼混...."
 
 # game/BKcity_events.rpy:2313
 translate schinese city_cat_fbbe8633:
@@ -2884,49 +2884,49 @@ translate schinese city_cat_fbbe8633:
 translate schinese city_cat_65fd96dc:
 
     # ev_girl3 "There's Steve, the handsome dark one... Garfy, the fat, funny one... And the siamese twins..."
-    ev_girl3 "有史蒂夫，那个英俊的黑人……加菲，那个又胖又有趣的……还有暹罗双胞胎……"
+    ev_girl3 "有史蒂夫，那个英俊的黑人....加菲，那个又胖又有趣的....还有暹罗双胞胎...."
 
 # game/BKcity_events.rpy:2317
 translate schinese city_cat_2f7024d1:
 
     # you "Siamese twins?? That's rare... I don't remember ever meeting any of those guys..."
-    you "暹罗双胞胎吗？？这是罕见的……我不记得见过这些人……"
+    you "暹罗双胞胎吗？？这是罕见的....我不记得见过这些人...."
 
 # game/BKcity_events.rpy:2321
 translate schinese city_cat_63521e2b:
 
     # ev_girl3 "Oh, mister, what am I gonna do... What if she gets eaten?"
-    ev_girl3 "噢，先生，我该怎么办……如果她被吃掉了怎么办？"
+    ev_girl3 "噢，先生，我该怎么办....如果她被吃掉了怎么办？"
 
 # game/BKcity_events.rpy:2323
 translate schinese city_cat_7fcfbc3e:
 
     # you "Eaten? Calm down, I don't think anyone will eat your friend..."
-    you "吃了吗？冷静点，我不认为有人会吃了你的朋友……"
+    you "吃了吗？冷静点，我不认为有人会吃了你的朋友...."
 
 # game/BKcity_events.rpy:2325
 translate schinese city_cat_cbb5c79e:
 
     # ev_girl3 "But some people like eating cats!!! There's Alf, this dodgy dwarf, he..."
-    ev_girl3 "但是有些人喜欢吃猫！！阿尔夫，这个狡猾的小矮人，他……"
+    ev_girl3 "但是有些人喜欢吃猫！！阿尔夫，这个狡猾的小矮人，他...."
 
 # game/BKcity_events.rpy:2327
 translate schinese city_cat_c979b16a:
 
     # you "Cats??? Wait a minute... Your friend is a cat?"
-    you "猫？？？等一下……你的朋友是一只猫？"
+    you "猫？？？等一下....你的朋友是一只猫？"
 
 # game/BKcity_events.rpy:2329
 translate schinese city_cat_9d607a1e:
 
     # ev_girl3 "Yes, of course! She's my best friend! We have such great conversations, you know, about life, love, nyaa... We share the same world view..."
-    ev_girl3 "是的，当然！她是我最好的朋友！我们聊得很开心，你知道，关于生活、爱情、喵……我们有相同的世界观……"
+    ev_girl3 "是的，当然！她是我最好的朋友！我们聊得很开心，你知道，关于生活、爱情、喵....我们有相同的世界观...."
 
 # game/BKcity_events.rpy:2331
 translate schinese city_cat_537ab76c:
 
     # you "Okaay... Right..."
-    you "Okaay……对吧……"
+    you "Okaay....对吧...."
 
 # game/BKcity_events.rpy:2342
 translate schinese city_cat_c3b1c980:
@@ -2938,7 +2938,7 @@ translate schinese city_cat_c3b1c980:
 translate schinese city_cat_d801513d:
 
     # ev_girl3 "Oh, mister, thank you, nyaaa! I think she went this way..."
-    ev_girl3 "哦，先生，谢谢你，喵！我想她走了这条路……"
+    ev_girl3 "哦，先生，谢谢你，喵！我想她走了这条路...."
 
 # game/BKcity_events.rpy:2350
 translate schinese city_cat_11aa6670:
@@ -2986,7 +2986,7 @@ translate schinese city_cat_777b91ba:
 translate schinese city_cat_9e0ced25:
 
     # you "Come here, kitty kitty... Yuna, please come here, there's nothing to be afraid of..."
-    you "过来，小猫小猫……由奈，请过来，没什么好怕的……"
+    you "过来，小猫小猫....由奈，请过来，没什么好怕的...."
 
 # game/BKcity_events.rpy:2392
 translate schinese city_cat_4cff14e4:
@@ -3076,7 +3076,7 @@ translate schinese city_cat_4f7a97bf:
 translate schinese city_cat_a0517fa6:
 
     # ev_girl3 "What... What's this sound?"
-    ev_girl3 "什么……这是什么声音？"
+    ev_girl3 "什么....这是什么声音？"
 
 # game/BKcity_events.rpy:2451
 translate schinese city_cat_25f7a449:
@@ -3088,7 +3088,7 @@ translate schinese city_cat_25f7a449:
 translate schinese city_cat_e770ceee:
 
     # ev_girl3 "Oh no... It's..."
-    ev_girl3 "哦，不……这是……"
+    ev_girl3 "哦，不....这是...."
 
 # game/BKcity_events.rpy:2457
 translate schinese city_cat_8ad8d44f:
@@ -3130,7 +3130,7 @@ translate schinese city_cat_8bae13a6:
 translate schinese city_cat_1d82668c:
 
     # you "I summon thee, ye little feline furball! Thy friend misses thee..."
-    you "我召唤你，你这只小毛毛猫！你的朋友想念你……"
+    you "我召唤你，你这只小毛毛猫！你的朋友想念你...."
 
 # game/BKcity_events.rpy:2487
 translate schinese city_cat_63a801bd:
@@ -3142,19 +3142,19 @@ translate schinese city_cat_63a801bd:
 translate schinese city_cat_49eb5da7:
 
     # ev_girl3 "Did it work? It's like nothing happened..."
-    ev_girl3 "它工作了吗？好像什么都没发生……"
+    ev_girl3 "它工作了吗？好像什么都没发生...."
 
 # game/BKcity_events.rpy:2491
 translate schinese city_cat_82ed3050:
 
     # you "I'm sorry. I think..."
-    you "我很抱歉。我认为……"
+    you "我很抱歉。我认为...."
 
 # game/BKcity_events.rpy:2495
 translate schinese city_cat_617eadfd:
 
     # ev_girl3 "..."
-    ev_girl3 "……"
+    ev_girl3 "...."
 
 # game/BKcity_events.rpy:2499
 translate schinese city_cat_91fdb66f:
@@ -3172,13 +3172,13 @@ translate schinese city_cat_fd86ec75:
 translate schinese city_cat_4643c4be:
 
     # you "Nine tails, nine lives, I summon thee, Neko spirit... Bring me thy kin, do us a favor and we will repay thee..."
-    you "九尾，九命，我召唤你，猫猫精灵……把你的亲人带来，帮我们个忙，我们会报答你的……"
+    you "九尾，九命，我召唤你，猫猫精灵....把你的亲人带来，帮我们个忙，我们会报答你的...."
 
 # game/BKcity_events.rpy:2522
 translate schinese city_cat_852da9ef:
 
     # ev_girl3 "You're glowing! Your scent is strange... Musky..."
-    ev_girl3 "你容光焕发！你的气味很奇怪……麝香的……"
+    ev_girl3 "你容光焕发！你的气味很奇怪....麝香的...."
 
 # game/BKcity_events.rpy:2541
 translate schinese city_cat_7eea6700:
@@ -3190,7 +3190,7 @@ translate schinese city_cat_7eea6700:
 translate schinese city_cat_9d58bf54:
 
     # ev_girl3 "Amazing! Coral! Mr. Kitty! Steve... The siamese twins!"
-    ev_girl3 "神奇的！珊瑚！基蒂先生！史蒂夫……暹罗双胞胎！"
+    ev_girl3 "神奇的！珊瑚！基蒂先生！史蒂夫....暹罗双胞胎！"
 
 # game/BKcity_events.rpy:2545
 translate schinese city_cat_2b93463b:
@@ -3256,7 +3256,7 @@ translate schinese city_cat_50abf0f8:
 translate schinese city_cat_c658bc12:
 
     # ev_girl3 "Thanks, mister, I was so worried... It was lucky you were here to help!"
-    ev_girl3 "谢谢，先生，我很担心……你能来帮忙真是太幸运了！"
+    ev_girl3 "谢谢，先生，我很担心....你能来帮忙真是太幸运了！"
 
 # game/BKcity_events.rpy:2598
 translate schinese city_cat_a266484b:
@@ -3286,19 +3286,19 @@ translate schinese city_cat_af7a0f21:
 translate schinese city_cat_6f50c6ec:
 
     # ev_girl3 "Yuna would also like to thank you..."
-    ev_girl3 "由奈也要感谢你……"
+    ev_girl3 "由奈也要感谢你...."
 
 # game/BKcity_events.rpy:2624
 translate schinese city_cat_6cf2b05f:
 
     # you "Yuna? Err, I don't think it's necessary..."
-    you "由奈？呃，我觉得没有必要……"
+    you "由奈？呃，我觉得没有必要...."
 
 # game/BKcity_events.rpy:2626
 translate schinese city_cat_1264adb3:
 
     # ev_girl3 "It's very necessary! You won't be disappointed, believe me... *wink*"
-    ev_girl3 "这是非常必要的！相信我，你不会失望的……*眨眼*"
+    ev_girl3 "这是非常必要的！相信我，你不会失望的....*眨眼*"
 
 # game/BKcity_events.rpy:2628
 translate schinese city_cat_95cc9628:
@@ -3322,13 +3322,13 @@ translate schinese city_cat_67d4bb67:
 translate schinese city_cat_2d912c92:
 
     # yuna "Yuna is in heat... It burns... Mister, won't you help Yuna? Nyaah..."
-    yuna "由奈发情了……它燃烧……先生，你不帮帮由奈吗？喵……"
+    yuna "由奈发情了....它燃烧....先生，你不帮帮由奈吗？喵...."
 
 # game/BKcity_events.rpy:2650
 translate schinese city_cat_84974854:
 
     # yuna "Yuna has been with many cats, but now, Yuna wants a human dick... Yuna is dripping down there, just to think about a big, fat human cock..."
-    yuna "由奈和很多猫在一起，但是现在，由奈想要一个人类的鸡巴……由奈正往下滴呢，想想那只又大又胖的人类鸡巴……"
+    yuna "由奈和很多猫在一起，但是现在，由奈想要一个人类的鸡巴....由奈正往下滴呢，想想那只又大又胖的人类鸡巴...."
 
 # game/BKcity_events.rpy:2652
 translate schinese city_cat_52d8142e:
@@ -3346,13 +3346,13 @@ translate schinese city_cat_c16d43b0:
 translate schinese city_cat_390b9719:
 
     # yuna "Yuna is so horny... Yuna needed a cock so bad... Nyaaaaah!"
-    yuna "由奈太好色了……由奈非常需要一只鸡巴……Nyaaaaah！"
+    yuna "由奈太好色了....由奈非常需要一只鸡巴....Nyaaaaah！"
 
 # game/BKcity_events.rpy:2660
 translate schinese city_cat_65feaf5f:
 
     # "You both enjoy it tremendously. It isn't long before climax..."
-    "你们俩都非常喜欢。离高潮不远了……"
+    "你们俩都非常喜欢。离高潮不远了...."
 
 # game/BKcity_events.rpy:2666
 translate schinese city_cat_852ecace:
@@ -3364,7 +3364,7 @@ translate schinese city_cat_852ecace:
 translate schinese city_cat_6fb426dd:
 
     # yuna "Yuna is so happy... Aaaaah..."
-    yuna "由奈好开心……啊哈……"
+    yuna "由奈好开心....啊哈...."
 
 # game/BKcity_events.rpy:2682
 translate schinese city_cat_a9baabcd:
@@ -3388,25 +3388,25 @@ translate schinese city_cat_c235fa2b:
 translate schinese city_cat_80d93bbb:
 
     # "But it isn't all... You feel a hand reach down your crotch, freeing your dick from your pants."
-    "但这并不是全部……你感觉到一只手伸到你的胯部，把你的鸡巴从裤子里解放出来。"
+    "但这并不是全部....你感觉到一只手伸到你的胯部，把你的鸡巴从裤子里解放出来。"
 
 # game/BKcity_events.rpy:2699
 translate schinese city_cat_9bb965a8:
 
     # ev_girl3 "Mind if I join? I can't control myself right now..."
-    ev_girl3 "介意我加入吗？我现在控制不了自己……"
+    ev_girl3 "介意我加入吗？我现在控制不了自己...."
 
 # game/BKcity_events.rpy:2701
 translate schinese city_cat_05aae2b0:
 
     # "It seems like you have little choice but to oblige..."
-    "看来你别无选择，只能答应……"
+    "看来你别无选择，只能答应...."
 
 # game/BKcity_events.rpy:2711
 translate schinese city_cat_11402d23:
 
     # ev_girl3 "Suck a big cock... Mister, isn't it too big for Yuna?"
-    ev_girl3 "吸一个大鸡巴……先生，对由奈来说是不是太大了？"
+    ev_girl3 "吸一个大鸡巴....先生，对由奈来说是不是太大了？"
 
 # game/BKcity_events.rpy:2713
 translate schinese city_cat_49c34f11:
@@ -3418,13 +3418,13 @@ translate schinese city_cat_49c34f11:
 translate schinese city_cat_672ec378:
 
     # you "So tight... Hmmm..."
-    you "这么紧……嗯……"
+    you "这么紧....嗯...."
 
 # game/BKcity_events.rpy:2721
 translate schinese city_cat_e2352d1b:
 
     # yuna "Yuna can't take it anymore... Yuna is cumming..."
-    yuna "由奈再也受不了了……由奈要去了……"
+    yuna "由奈再也受不了了....由奈要去了...."
 
 # game/BKcity_events.rpy:2723
 translate schinese city_cat_a47c436c:
@@ -3436,7 +3436,7 @@ translate schinese city_cat_a47c436c:
 translate schinese city_cat_030686f5:
 
     # you "Ooooh..."
-    you "唔……"
+    you "唔...."
 
 # game/BKcity_events.rpy:2739
 translate schinese city_cat_5db132a6:
@@ -3448,13 +3448,13 @@ translate schinese city_cat_5db132a6:
 translate schinese city_cat_4d7e7ccf:
 
     # yuna "Aw... Yuna's pussy is so full... Full of hot cum... Nyaaah..."
-    yuna "啊……由奈的阴户太满了……充满了热精液……喵……"
+    yuna "啊....由奈的阴户太满了....充满了热精液....喵...."
 
 # game/BKcity_events.rpy:2745
 translate schinese city_cat_36f9b415:
 
     # ev_girl3 "Oh, I want some too... *licking her lips*"
-    ev_girl3 "哦，我也想要一些……*舔她的嘴唇*"
+    ev_girl3 "哦，我也想要一些....*舔她的嘴唇*"
 
 # game/BKcity_events.rpy:2747
 translate schinese city_cat_fe2ffae4:
@@ -3478,7 +3478,7 @@ translate schinese city_cat_3d4288ab:
 translate schinese city_cat_8f9a1c62:
 
     # you "Of course... Come here and spread your legs... Show me everything... That's it..."
-    you "当然……过来伸开你的腿……给我的一切……就是这样……"
+    you "当然....过来伸开你的腿....给我的一切....就是这样...."
 
 # game/BKcity_events.rpy:2773
 translate schinese city_cat_47128241:
@@ -3520,13 +3520,13 @@ translate schinese city_cat_69bf38ed:
 translate schinese city_cat_85f5b86f:
 
     # ev_girl3 "Creampie!!! I love cream..."
-    ev_girl3 "体内射精！！！我爱霜……"
+    ev_girl3 "体内射精！！！我爱霜...."
 
 # game/BKcity_events.rpy:2805
 translate schinese city_cat_914e2d9f:
 
     # yuna "Ooooh... Yuna wants to lick it clean... Nyaaah..."
-    yuna "唔……由奈想把它舔干净……喵……"
+    yuna "唔....由奈想把它舔干净....喵...."
 
 # game/BKcity_events.rpy:2807
 translate schinese city_cat_1c7fd903:
@@ -3628,7 +3628,7 @@ translate schinese city_secret_ec07890f:
 translate schinese city_secret_2ed6fda0:
 
     # you "I wonder where this leads..."
-    you "我想知道这会导致什么结果……"
+    you "我想知道这会导致什么结果...."
 
 # game/BKcity_events.rpy:2906
 translate schinese city_secret_fe2f02f7:
@@ -3658,7 +3658,7 @@ translate schinese city_secret_bcfb6305:
 translate schinese city_secret_69e68765:
 
     # you "I am the seeker of secrets! None shall be hidden from my all-seeing eye..."
-    you "我是秘密的探索者！没有一件事可以瞒过我的眼睛……"
+    you "我是秘密的探索者！没有一件事可以瞒过我的眼睛...."
 
 # game/BKcity_events.rpy:2922
 translate schinese city_secret_7fbf3529:
@@ -3694,7 +3694,7 @@ translate schinese city_secret_807c93c3:
 translate schinese city_secret_6e5f3372:
 
     # you "Damn... This powder isn't cheap..."
-    you "该死的……这种粉不便宜……"
+    you "该死的....这种粉不便宜...."
 
 # game/BKcity_events.rpy:2955
 translate schinese city_secret_74964b19:
@@ -3892,7 +3892,7 @@ translate schinese city_gypsy_4910c724:
 translate schinese city_gypsy_0f169813:
 
     # you "Erm, no, thanks..."
-    you "嗯，不用了，谢谢……"
+    you "嗯，不用了，谢谢...."
 
 # game/BKcity_events.rpy:3142
 translate schinese city_gypsy_eef0eb53:
@@ -3904,7 +3904,7 @@ translate schinese city_gypsy_eef0eb53:
 translate schinese city_gypsy_acdd4596:
 
     # you "I could always try to fix your ride... Let me have a look."
-    you "我总能帮你修好车……让我看看。"
+    you "我总能帮你修好车....让我看看。"
 
 # game/BKcity_events.rpy:3155
 translate schinese city_gypsy_cb4959c6:
@@ -3928,7 +3928,7 @@ translate schinese city_gypsy_e9054f2d:
 translate schinese city_gypsy_fa73f4ec:
 
     # you "HAAAAAAAA..."
-    you "哈哈哈哈哈……"
+    you "哈哈哈哈哈...."
 
 # game/BKcity_events.rpy:3173
 translate schinese city_gypsy_d2cb010c:
@@ -3946,13 +3946,13 @@ translate schinese city_gypsy_c445c883:
 translate schinese city_gypsy_4fc4b582:
 
     # ev_girl2 "Ooooh... The wheel broke down again... And you've splashed mud all over the place!"
-    ev_girl2 "唔……轮子又坏了……你把泥溅得到处都是！"
+    ev_girl2 "唔....轮子又坏了....你把泥溅得到处都是！"
 
 # game/BKcity_events.rpy:3179
 translate schinese city_gypsy_6ed7ba4d:
 
     # you "Well, excuse me, I was just trying to help..."
-    you "对不起，我只是想帮你……"
+    you "对不起，我只是想帮你...."
 
 # game/BKcity_events.rpy:3185
 translate schinese city_gypsy_da9c56eb:
@@ -4012,13 +4012,13 @@ translate schinese city_gypsy_4f4b8598:
 translate schinese city_gypsy_f2984926:
 
     # you "*pant* It was easy... *pant*"
-    you "*喘气*很容易……*喘气*"
+    you "*喘气*很容易....*喘气*"
 
 # game/BKcity_events.rpy:3219
 translate schinese city_gypsy_fcd41708:
 
     # ev_girl2 "Let me touch those big muscles of yours... Oh, they're nice..."
-    ev_girl2 "让我摸摸你的大肌肉……哦，不错的话……"
+    ev_girl2 "让我摸摸你的大肌肉....哦，不错的话...."
 
 # game/BKcity_events.rpy:3229
 translate schinese city_gypsy_618ee2db:
@@ -4030,7 +4030,7 @@ translate schinese city_gypsy_618ee2db:
 translate schinese city_gypsy_61e9d2fa:
 
     # ev_girl2 "Oh..."
-    ev_girl2 "哦……"
+    ev_girl2 "哦...."
 
 # game/BKcity_events.rpy:3233
 translate schinese city_gypsy_149b5791:
@@ -4054,7 +4054,7 @@ translate schinese city_gypsy_f111166d:
 translate schinese city_gypsy_58d67c08:
 
     # "Most people ignore you, however, until you run into a group of Arios worshippers."
-    "然而，大多数人忽视你，直到你遇到一群阿里奥斯崇拜者。"
+    "然而，大多数人忽视你，直到你遇到一群太阳神崇拜者。"
 
 # game/BKcity_events.rpy:3249
 translate schinese city_gypsy_daef8ba2:
@@ -4096,7 +4096,7 @@ translate schinese city_gypsy_3803a96a:
 translate schinese city_gypsy_3599bd33:
 
     # you "That was close..."
-    you "那是接近……"
+    you "那是接近...."
 
 # game/BKcity_events.rpy:3271
 translate schinese city_gypsy_b690e9a5:
@@ -4126,7 +4126,7 @@ translate schinese city_gypsy_bc350c26:
 translate schinese city_gypsy_aabe3f92:
 
     # ev_girl2 "I did! Some customers paid extra... It helped."
-    ev_girl2 "我做了！有些顾客付了额外的钱……它帮助。"
+    ev_girl2 "我做了！有些顾客付了额外的钱....它帮助。"
 
 # game/BKcity_events.rpy:3285
 translate schinese city_gypsy_47e4dbd6:
@@ -4180,7 +4180,7 @@ translate schinese city_gypsy_6bce16ef:
 translate schinese city_gypsy_f75186ef:
 
     # ev_girl2 "It's all thanks to you, [nickname_l]! I'm really grateful..."
-    ev_girl2 "都是你的功劳，[nickname_l]！我真的很感激……"
+    ev_girl2 "都是你的功劳，[nickname_l]！我真的很感激...."
 
 # game/BKcity_events.rpy:3317
 translate schinese city_gypsy_992ff48b:
@@ -4204,7 +4204,7 @@ translate schinese city_gypsy_930f560c:
 translate schinese city_gypsy_60b73731:
 
     # ev_girl2 "Thank you, [nickname_l], you did me a favor! Here, wait a second..."
-    ev_girl2 "谢谢，[nickname_l]，你帮了我一个忙！就在这稍微等一下……"
+    ev_girl2 "谢谢，[nickname_l]，你帮了我一个忙！就在这稍微等一下...."
 
 # game/BKcity_events.rpy:3345
 translate schinese city_gypsy_ea3bfadd:
@@ -4234,25 +4234,25 @@ translate schinese city_gypsy_8c372b81:
 translate schinese city_gypsy_4dc9a6cd:
 
     # ev_girl2 "You saved me, [nickname_l], so I will show you something interesting... Follow me..."
-    ev_girl2 "你救了我，[nickname_l]，所以我要给你看一些有趣的东西……跟我来……"
+    ev_girl2 "你救了我，[nickname_l]，所以我要给你看一些有趣的东西....跟我来...."
 
 # game/BKcity_events.rpy:3394
 translate schinese city_gypsy_3eb9711f:
 
     # ev_girl2 "Oh, [nickname_l]! Give it to me... Mmmh..."
-    ev_girl2 "哦，[nickname_l]！给我……嗯……"
+    ev_girl2 "哦，[nickname_l]！给我....嗯...."
 
 # game/BKcity_events.rpy:3400
 translate schinese city_gypsy_5fe5687c:
 
     # ev_girl2 "Aaaaaah! I... I didn't know you liked this sort of things..."
-    ev_girl2 "啊！我……我不知道你喜欢这种东西……"
+    ev_girl2 "啊！我....我不知道你喜欢这种东西...."
 
 # game/BKcity_events.rpy:3402
 translate schinese city_gypsy_106d629b:
 
     # you "You seem to enjoy it just as much as me..."
-    you "你似乎和我一样喜欢……"
+    you "你似乎和我一样喜欢...."
 
 # game/BKcity_events.rpy:3404
 translate schinese city_gypsy_384154a6:
@@ -4282,13 +4282,13 @@ translate schinese city_gypsy_fdbf20d3:
 translate schinese city_gypsy_34b60ad2:
 
     # ev_girl2 "Your dick is so big and tasty... Give me your juice..."
-    ev_girl2 "你的鸡巴又大又好吃……把果汁给我……"
+    ev_girl2 "你的鸡巴又大又好吃....把果汁给我...."
 
 # game/BKcity_events.rpy:3424
 translate schinese city_gypsy_ae7875cc:
 
     # you "Oh, it's good... Oooooh..."
-    you "哦，很好……嗡嗡……"
+    you "哦，很好....嗡嗡...."
 
 # game/BKcity_events.rpy:3430
 translate schinese city_gypsy_d12156fb:
@@ -4312,19 +4312,19 @@ translate schinese city_gypsy_5f2e05d3:
 translate schinese city_gypsy_c380fa0a:
 
     # ev_girl2 "Mmmmh..."
-    ev_girl2 "嗯……"
+    ev_girl2 "嗯...."
 
 # game/BKcity_events.rpy:3444
 translate schinese city_gypsy_0e33a685:
 
     # ev_girl2 "I almost forgot... I have this I no longer need. I'm sure you can put it to good use."
-    ev_girl2 "我差点忘了……我不再需要这个了。我相信你能把它用好。"
+    ev_girl2 "我差点忘了....我不再需要这个了。我相信你能把它用好。"
 
 # game/BKcity_events.rpy:3446
 translate schinese city_gypsy_dfdf7298:
 
     # ev_girl2 "Now... I hope you're ready for round two! *wink*"
-    ev_girl2 "现在……我希望你已经为第二轮做好了准备！*眨眼*"
+    ev_girl2 "现在....我希望你已经为第二轮做好了准备！*眨眼*"
 
 # game/BKcity_events.rpy:3461
 translate schinese city_gypsy_30be676f:
@@ -4348,7 +4348,7 @@ translate schinese city_rob_ee0d4625:
 translate schinese city_rob_a4d44ee9:
 
     # woman "Don't be in such a hurry..."
-    woman "别这么着急……"
+    woman "别这么着急...."
 
 # game/BKcity_events.rpy:3505
 translate schinese city_rob_f98fd8d4:
@@ -4414,7 +4414,7 @@ translate schinese city_rob_9f0ea931:
 translate schinese city_rob_7d3fb1b2:
 
     # woman "Taking on the queen of bandits! You're lucky to be alive..."
-    woman "对付土匪女王！你能活着真是幸运……"
+    woman "对付土匪女王！你能活着真是幸运...."
 
 # game/BKcity_events.rpy:3558
 translate schinese city_rob_264126d8:
@@ -4456,7 +4456,7 @@ translate schinese city_rob_3ae276c8:
 translate schinese city_rob_dd019ae4:
 
     # woman "Humph... Maybe this won't be as easy as I thought. *mutter*"
-    woman "哼……也许这不会像我想的那么简单。*咕哝*"
+    woman "哼....也许这不会像我想的那么简单。*咕哝*"
 
 # game/BKcity_events.rpy:3596
 translate schinese city_rob_172dbbf1:
@@ -4486,7 +4486,7 @@ translate schinese city_rob_efb96f01:
 translate schinese city_rob_2da2f8a4:
 
     # woman "Who do you think you are! I'll teach you!!! I'll..."
-    woman "你以为你是谁？我会教你的！！！我将……"
+    woman "你以为你是谁？我会教你的！！！我将...."
 
 # game/BKcity_events.rpy:3622
 translate schinese city_rob_890e88c2:
@@ -4504,7 +4504,7 @@ translate schinese city_rob_310ab429:
 translate schinese city_rob_4f4dae69:
 
     # woman "F... Fast... How..."
-    woman "快……快点……如何……"
+    woman "快....快点....如何...."
 
 # game/BKcity_events.rpy:3630
 translate schinese city_rob_1d846d90:
@@ -4528,7 +4528,7 @@ translate schinese city_rob_9f18653f:
 translate schinese city_rob_dae0ec55:
 
     # you "..."
-    you "……"
+    you "...."
 
 # game/BKcity_events.rpy:3642
 translate schinese city_rob_f609fb29:
@@ -4546,7 +4546,7 @@ translate schinese city_rob_5d1f9b1a:
 translate schinese city_rob_c85476fc:
 
     # woman "Yes..."
-    woman "是的……"
+    woman "是的...."
 
 # game/BKcity_events.rpy:3650
 translate schinese city_rob_29eb521d:
@@ -4570,7 +4570,7 @@ translate schinese city_rob_4dd3fc1e:
 translate schinese city_rob_ac221403:
 
     # you "I, uh... I bet your dad was a thief too!"
-    you "我，嗯……我打赌你爸爸也是小偷！"
+    you "我，嗯....我打赌你爸爸也是小偷！"
 
 # game/BKcity_events.rpy:3672
 translate schinese city_rob_2497c403:
@@ -4582,19 +4582,19 @@ translate schinese city_rob_2497c403:
 translate schinese city_rob_1c0eb605:
 
     # you "Because he stole all of the stars in the night sky... And put them into your eyes! Hahaha... *nervous*"
-    you "因为他偷走了夜空中所有的星星……把它们放进你的眼睛里！哈哈哈……*紧张*"
+    you "因为他偷走了夜空中所有的星星....把它们放进你的眼睛里！哈哈哈....*紧张*"
 
 # game/BKcity_events.rpy:3676
 translate schinese city_rob_2a5463be:
 
     # woman "..."
-    woman "……"
+    woman "...."
 
 # game/BKcity_events.rpy:3678
 translate schinese city_rob_f1dad0a2:
 
     # you "Stars? In your eyes? It means you have beautiful eyes, you see... get it?"
-    you "明星？在你的眼睛吗？这意味着你有一双美丽的眼睛，你看……明白了吗？"
+    you "明星？在你的眼睛吗？这意味着你有一双美丽的眼睛，你看....明白了吗？"
 
 # game/BKcity_events.rpy:3682
 translate schinese city_rob_54730e63:
@@ -4612,13 +4612,13 @@ translate schinese city_rob_0cee55a9:
 translate schinese city_rob_d6d23918:
 
     # you "Aw..."
-    you "啊……"
+    you "啊...."
 
 # game/BKcity_events.rpy:3690
 translate schinese city_rob_808e866c:
 
     # woman "And make sure to empty your pockets, too..."
-    woman "一定要把口袋里的东西也掏出来……"
+    woman "一定要把口袋里的东西也掏出来...."
 
 # game/BKcity_events.rpy:3694
 translate schinese city_rob_aa255b8d:
@@ -4660,7 +4660,7 @@ translate schinese city_rob_bf9426fa:
 translate schinese city_rob_ccc043dc:
 
     # woman "Well, err..."
-    woman "好吧，呃……"
+    woman "好吧，呃...."
 
 # game/BKcity_events.rpy:3730
 translate schinese city_rob_8be76df3:
@@ -4672,25 +4672,25 @@ translate schinese city_rob_8be76df3:
 translate schinese city_rob_167fe98a:
 
     # you "They say you got out of a thousand traps, and evaded arrest a hundred times! You made a mockery of the guard and are the darling of the people..."
-    you "他们说你从一千个陷阱里逃出来，一百次逃脱逮捕！你嘲弄了卫兵，是人民的宠儿……"
+    you "他们说你从一千个陷阱里逃出来，一百次逃脱逮捕！你嘲弄了卫兵，是人民的宠儿...."
 
 # game/BKcity_events.rpy:3734
 translate schinese city_rob_bc36bcc4:
 
     # woman "Oh, well... This is a little exaggerated... *blush*"
-    woman "哦，好吧……这有点夸张……*脸红*"
+    woman "哦，好吧....这有点夸张....*脸红*"
 
 # game/BKcity_events.rpy:3736
 translate schinese city_rob_f413dc9b:
 
     # you "They also said you were a real beauty, and now I can see they were telling the truth..."
-    you "他们还说你是一个真正的美人，现在我明白他们说的是实话……"
+    you "他们还说你是一个真正的美人，现在我明白他们说的是实话...."
 
 # game/BKcity_events.rpy:3740
 translate schinese city_rob_95b67283:
 
     # woman "Oh, what a gentleman... Ok, you may go. Spread the word of my generosity in those taverns of yours, will ya!"
-    woman "哦，好绅士……好吧，你可以走了。在你的那些酒馆里散布我的慷慨之词，好吗？"
+    woman "哦，好绅士....好吧，你可以走了。在你的那些酒馆里散布我的慷慨之词，好吗？"
 
 # game/BKcity_events.rpy:3742
 translate schinese city_rob_69cf745b:
@@ -4720,7 +4720,7 @@ translate schinese city_rob_f34ed0f0:
 translate schinese city_rob_ed8348e6:
 
     # you "Because you already stole my heart..."
-    you "因为你已经偷走了我的心……"
+    you "因为你已经偷走了我的心...."
 
 # game/BKcity_events.rpy:3762
 translate schinese city_rob_88cdb07c:
@@ -4738,7 +4738,7 @@ translate schinese city_rob_24965e94:
 translate schinese city_rob_3ae8a6e1:
 
     # woman "I am... What?"
-    woman "我是……什么？"
+    woman "我是....什么？"
 
 # game/BKcity_events.rpy:3768
 translate schinese city_rob_7cfbceb6:
@@ -4756,19 +4756,19 @@ translate schinese city_rob_de534082:
 translate schinese city_rob_04736b7f:
 
     # woman "Oh..."
-    woman "哦……"
+    woman "哦...."
 
 # game/BKcity_events.rpy:3778
 translate schinese city_rob_d6432bc2:
 
     # woman "No one... No one has ever talked to me like this..."
-    woman "没有人……从来没有人这样跟我说话……"
+    woman "没有人....从来没有人这样跟我说话...."
 
 # game/BKcity_events.rpy:3780
 translate schinese city_rob_55455558:
 
     # woman "You're quite handsome yourself, if I may say so... *blush*"
-    woman "你自己也很帅，如果我可以这么说的话……*脸红*"
+    woman "你自己也很帅，如果我可以这么说的话....*脸红*"
 
 # game/BKcity_events.rpy:3782
 translate schinese city_rob_de158ee5:
@@ -4780,13 +4780,13 @@ translate schinese city_rob_de158ee5:
 translate schinese city_rob_33cafd22:
 
     # woman "Oh, you devil..."
-    woman "哦，你这个魔鬼……"
+    woman "哦，你这个魔鬼...."
 
 # game/BKcity_events.rpy:3788
 translate schinese city_rob_8ad91dba:
 
     # you "Come on, why don't we move from this wretched place to somewhere more... Comfortable?"
-    you "来吧，我们为什么不从这个倒霉的地方搬到别的地方去……舒服吗？"
+    you "来吧，我们为什么不从这个倒霉的地方搬到别的地方去....舒服吗？"
 
 # game/BKcity_events.rpy:3790
 translate schinese city_rob_5a0ab639:
@@ -4828,25 +4828,25 @@ translate schinese city_rob_04964a88_2:
 translate schinese city_rob_da6db8c0:
 
     # woman "Mister... Oh!!!"
-    woman "先生……哦！！！"
+    woman "先生....哦！！！"
 
 # game/BKcity_events.rpy:3842
 translate schinese city_rob_9f8fdc49:
 
     # you "Who would have thought... The queen of bandits is also the queen of sluts... Hmmpf..."
-    you "谁会想到……土匪女王也是荡妇女王……嗯……"
+    you "谁会想到....土匪女王也是荡妇女王....嗯...."
 
 # game/BKcity_events.rpy:3844
 translate schinese city_rob_28d5f91b:
 
     # woman "Oh, ah, don't say that... *blush*"
-    woman "哦，啊，别这么说……*脸红*"
+    woman "哦，啊，别这么说....*脸红*"
 
 # game/BKcity_events.rpy:3846
 translate schinese city_rob_8148c643:
 
     # you "I am not finished with you..."
-    you "我对你还没完……"
+    you "我对你还没完...."
 
 # game/BKcity_events.rpy:3850
 translate schinese city_rob_369f454d:
@@ -4858,7 +4858,7 @@ translate schinese city_rob_369f454d:
 translate schinese city_rob_70db8e4f:
 
     # woman "Oh, no... I'm cumming again, aaaah!"
-    woman "哦，不……我又要去了，啊！"
+    woman "哦，不....我又要去了，啊！"
 
 # game/BKcity_events.rpy:3860
 translate schinese city_rob_a185120a:
@@ -4870,7 +4870,7 @@ translate schinese city_rob_a185120a:
 translate schinese city_rob_f0349cbd:
 
     # woman "Aaaaah..."
-    woman "啊啊啊……"
+    woman "啊啊啊...."
 
 # game/BKcity_events.rpy:3877
 translate schinese city_rob_b21c27d9:
@@ -5056,7 +5056,7 @@ translate schinese city_ambush_ad1f7aea:
 translate schinese city_ambush_1f90cc0b:
 
     # you "You've been... Thunderstruck!"
-    you "你已经……吓坏了的！"
+    you "你已经....吓坏了的！"
 
 # game/BKcity_events.rpy:4116
 translate schinese city_ambush_dc842bb3:
@@ -5080,7 +5080,7 @@ translate schinese city_ambush_38d3feab:
 translate schinese city_ambush_a634c3b3:
 
     # you "HA..."
-    you "哈……"
+    you "哈...."
 
 # game/BKcity_events.rpy:4128
 translate schinese city_ambush_7e6d9cc5:
@@ -5092,7 +5092,7 @@ translate schinese city_ambush_7e6d9cc5:
 translate schinese city_ambush_2537f429:
 
     # you "ME... OUCH!!!"
-    you "我……哎哟！！！"
+    you "我....哎哟！！！"
 
 # game/BKcity_events.rpy:4140
 translate schinese city_ambush_74f77e89:
@@ -5128,7 +5128,7 @@ translate schinese city_ambush_c1b11258:
 translate schinese city_ambush_ba73a5fa:
 
     # you "Stop..."
-    you "停下……"
+    you "停下...."
 
 # game/BKcity_events.rpy:4178
 translate schinese city_ambush_d9d7a526:
@@ -5176,7 +5176,7 @@ translate schinese city_ambush_368e7679:
 translate schinese city_ambush_027edb5f:
 
     # you "I guess I have no choice..."
-    you "我想我别无选择……"
+    you "我想我别无选择...."
 
 # game/BKcity_events.rpy:4221
 translate schinese city_ambush_19fc3801:
@@ -5200,7 +5200,7 @@ translate schinese city_ambush_33b60461:
 translate schinese city_ambush_3599bd33:
 
     # you "That was close..."
-    you "当时非常接近……"
+    you "当时非常接近...."
 
 # game/BKcity_events.rpy:4245
 translate schinese city_ambush_04964a88:
@@ -5224,7 +5224,7 @@ translate schinese city_mob_cd39c36d:
 translate schinese city_mob_35eba98f:
 
     # man "They hide amongst our people, spreading vice and corruption in their filthy taverns and whorehouses..."
-    man "他们躲在我们的人民中间，在他们肮脏的酒馆和青楼里散布邪恶和腐败……"
+    man "他们躲在我们的人民中间，在他们肮脏的酒馆和青楼里散布邪恶和腐败...."
 
 # game/BKcity_events.rpy:4280
 translate schinese city_mob_853d1124:
@@ -5266,7 +5266,7 @@ translate schinese city_mob_747efbfb:
 translate schinese city_mob_6dc22a32:
 
     # you "Fellas, I..."
-    you "伙计们，我……"
+    you "伙计们，我...."
 
 # game/BKcity_events.rpy:4309
 translate schinese city_mob_3175b40d:
@@ -5278,7 +5278,7 @@ translate schinese city_mob_3175b40d:
 translate schinese city_mob_6527bb82:
 
     # you "You're making a mistake, good sir..."
-    you "你弄错了，好先生……"
+    you "你弄错了，好先生...."
 
 # game/BKcity_events.rpy:4313
 translate schinese city_mob_bc5fe762:
@@ -5296,7 +5296,7 @@ translate schinese city_mob_b6e89e07:
 translate schinese city_mob_7c0d9d13:
 
     # man "We... need to let him go. This is not the druid we are looking for."
-    man "我们……我得让他走。这不是我们要找的德鲁伊。"
+    man "我们....我得让他走。这不是我们要找的德鲁伊。"
 
 # game/BKcity_events.rpy:4327
 translate schinese city_mob_c30de29a:
@@ -5338,7 +5338,7 @@ translate schinese city_mob_4aa1c879:
 translate schinese city_mob_20e93590:
 
     # you "Yes, brothels are places of sin and debauchery..."
-    you "是的，青楼是罪恶和放荡的地方……"
+    you "是的，青楼是罪恶和放荡的地方...."
 
 # game/BKcity_events.rpy:4356
 translate schinese city_mob_db0ad6cd:
@@ -5374,13 +5374,13 @@ translate schinese city_mob_5f1322bd:
 translate schinese city_mob_45205e62:
 
     # you "Oh, really? But what does Arios teach us? To seek the light. If you refuse the sex trade to be out in the open, it will only move to the shadows. Into the realm of Shalia, far from Arios's reach. Is that what you want?"
-    you "哦，真的吗？但是阿里奥斯教会了我们什么呢？去寻找光明。如果你拒绝公开性交易，它只会走向阴影。进入沙里亚王国，远离阿里奥斯。这就是你想要的吗？"
+    you "哦，真的吗？但是太阳神教会了我们什么呢？去寻找光明。如果你拒绝公开性交易，它只会走向阴影。进入沙里亚王国，远离太阳神。这就是你想要的吗？"
 
 # game/BKcity_events.rpy:4368
 translate schinese city_mob_924122b6:
 
     # man "Well, err... No, I meant..."
-    man "好吧，呃……不，我的意思是……"
+    man "好吧，呃....不，我的意思是...."
 
 # game/BKcity_events.rpy:4370
 translate schinese city_mob_b0ccecda:
@@ -5428,7 +5428,7 @@ translate schinese city_mob_64c93e8c:
 translate schinese city_mob_1fbc1693:
 
     # man "It is a brothel! I went there on a, ahem, an errand, and I saw half-naked girls rubbing themselves against a customer. And the prices were outrageous, too! Not that I'd care, of course, but..."
-    man "这是青楼！我去那儿办了件事，我看到半裸的女孩在一个顾客身上蹭来蹭去。而且价格也太离谱了！当然，我不在乎，但是……"
+    man "这是青楼！我去那儿办了件事，我看到半裸的女孩在一个顾客身上蹭来蹭去。而且价格也太离谱了！当然，我不在乎，但是...."
 
 # game/BKcity_events.rpy:4392
 translate schinese city_mob_97c895b4:
@@ -5506,7 +5506,7 @@ translate schinese city_mob_d90b21cb:
 translate schinese city_mob_8874c0e7:
 
     # man "That will teach you, you evil demon-worshipping bitches! Hmm..."
-    man "这将教会你们，你们这些崇拜恶魔的婊子！嗯……"
+    man "这将教会你们，你们这些崇拜恶魔的婊子！嗯...."
 
 # game/BKcity_events.rpy:4486
 translate schinese city_mob_ce040dd1:
@@ -5524,7 +5524,7 @@ translate schinese city_mob_a20e77e1:
 translate schinese city_mob_b347d1cf:
 
     # you "No... Not the face!!!"
-    you "不……不要打脸！！！"
+    you "不....不要打脸！！！"
 
 # game/BKcity_events.rpy:4510
 translate schinese city_mob_fa2bb8a9:
@@ -5560,7 +5560,7 @@ translate schinese city_mob_9f1c09dd:
 translate schinese city_mob_0b364580:
 
     # you "Hell..."
-    you "地狱……"
+    you "地狱...."
 
 # game/BKcity_events.rpy:4540
 translate schinese city_mob_a490fd10:
@@ -5596,7 +5596,7 @@ translate schinese city_luck_7fab135b:
 translate schinese city_luck_6eae37c9:
 
     # you "What's this... Oh! It's a purse of gold! Nice!"
-    you "这是什么……哦！这是一袋金币！好了！"
+    you "这是什么....哦！这是一袋金币！好了！"
 
 # game/BKcity_events.rpy:4623
 translate schinese city_luck_d5210ceb:
@@ -5608,7 +5608,7 @@ translate schinese city_luck_d5210ceb:
 translate schinese city_luck_856d3e40:
 
     # npc "Oh no... Where is it? It must be around here..."
-    npc "哦，不……在哪里？一定在这附近……"
+    npc "哦，不....在哪里？一定在这附近...."
 
 # game/BKcity_events.rpy:4629
 translate schinese city_luck_266a6db4:
@@ -5620,7 +5620,7 @@ translate schinese city_luck_266a6db4:
 translate schinese city_luck_012a58c6:
 
     # npc "Mister, can you help me? I lost my purse... I really need it..."
-    npc "先生，你能帮帮我吗？我的钱包丢了……我真的需要它……"
+    npc "先生，你能帮帮我吗？我的钱包丢了....我真的需要它...."
 
 # game/BKcity_events.rpy:4640
 translate schinese city_luck_1545fa72:
@@ -5632,7 +5632,7 @@ translate schinese city_luck_1545fa72:
 translate schinese city_luck_0ec82954:
 
     # npc "Yes, Sir... Have you seen it anywhere?"
-    npc "是的，先生……你在哪儿见过吗？"
+    npc "是的，先生....你在哪儿见过吗？"
 
 # game/BKcity_events.rpy:4644
 translate schinese city_luck_254d3caf:
@@ -5644,13 +5644,13 @@ translate schinese city_luck_254d3caf:
 translate schinese city_luck_d84c1181:
 
     # npc "Aw..."
-    npc "啊……"
+    npc "啊...."
 
 # game/BKcity_events.rpy:4652
 translate schinese city_luck_6218b925:
 
     # you "Oh, so it's yours... Here, I found this."
-    you "哦，那是你的了……这里，我找到了这个。"
+    you "哦，那是你的了....这里，我找到了这个。"
 
 # game/BKcity_events.rpy:4656
 translate schinese city_luck_af655f88:
@@ -5704,13 +5704,13 @@ translate schinese slave_beach_event_7b34cb37:
 translate schinese slave_beach_event_3202ba13:
 
     # "Looking at [girl.name], you notice that she looks really hot in her tight beach wear... This gives you a few ideas."
-    "看着[girl.name]，你会注意到她穿着紧身沙滩服看起来非常性感……这给了你一些想法。"
+    "看着[girl.name]，你会注意到她穿着紧身沙滩服看起来非常性感....这给了你一些想法。"
 
 # game/BKcity_events.rpy:4728
 translate schinese slave_beach_event_693314da:
 
     # you "Listen..."
-    you "听……"
+    you "听...."
 
 # game/BKcity_events.rpy:4733
 translate schinese slave_beach_event_11fdb519:
@@ -5722,7 +5722,7 @@ translate schinese slave_beach_event_11fdb519:
 translate schinese slave_beach_event_0add0ae4:
 
     # you "The sun is getting high, I wouldn't want you to get sunburnt. Let me help you..."
-    you "太阳越来越高了，我不想让你被晒伤。让我来帮你……"
+    you "太阳越来越高了，我不想让你被晒伤。让我来帮你...."
 
 # game/BKcity_events.rpy:4741
 translate schinese slave_beach_event_dfcfefd5:
@@ -5752,7 +5752,7 @@ translate schinese slave_beach_event_6363db8b:
 translate schinese slave_beach_event_39570823:
 
     # girl.char "Oh... O-Okay..."
-    girl.char "哦好吧……"
+    girl.char "哦好吧...."
 
 # game/BKcity_events.rpy:4756
 translate schinese slave_beach_event_62bfef84:
@@ -5776,7 +5776,7 @@ translate schinese slave_beach_event_f6634f7e:
 translate schinese slave_beach_event_d104f8c5:
 
     # girl.char "Thank you, Master, it's nice..."
-    girl.char "谢谢你，主人，谢谢……"
+    girl.char "谢谢你，主人，谢谢...."
 
 # game/BKcity_events.rpy:4772
 translate schinese slave_beach_event_79dc27c9:
@@ -5836,7 +5836,7 @@ translate schinese slave_beach_event_c88763ca:
 translate schinese slave_beach_event_721fea8a:
 
     # you "Let me massage here too..."
-    you "让我在这也按摩一下……"
+    you "让我在这也按摩一下...."
 
 # game/BKcity_events.rpy:4839
 translate schinese slave_beach_event_39c46cf2:
@@ -5914,7 +5914,7 @@ translate schinese slave_beach_event_2d7049c8:
 translate schinese slave_beach_event_36104a17:
 
     # girl.char "What? Is it over? But..."
-    girl.char "什么结束了吗？但是……"
+    girl.char "什么结束了吗？但是...."
 
 # game/BKcity_events.rpy:4908
 translate schinese slave_beach_event_255c6ada:
@@ -5932,7 +5932,7 @@ translate schinese slave_beach_event_ada9ca75:
 translate schinese slave_beach_event_5a190256:
 
     # you "That was fun..."
-    you "有意思吧……"
+    you "有意思吧...."
 
 # game/BKcity_events.rpy:4929
 translate schinese slave_beach_event_cc252f77:
@@ -5944,7 +5944,7 @@ translate schinese slave_beach_event_cc252f77:
 translate schinese slave_beach_event_48a2c215:
 
     # you "Damn..."
-    you "妈的……"
+    you "妈的...."
 
 # game/BKcity_events.rpy:4939
 translate schinese slave_beach_event_4c934cd5:
@@ -5992,7 +5992,7 @@ translate schinese slave_beach_event_c7ec28eb:
 translate schinese slave_beach_event_f21ba248:
 
     # girl.char "In... In public? I mean... Sure..."
-    girl.char "当。。当着这么多人的面？！我的意思是……好吧……"
+    girl.char "当。。当着这么多人的面？！我的意思是....好吧...."
 
 # game/BKcity_events.rpy:4977
 translate schinese slave_beach_event_cac033de:
@@ -6010,7 +6010,7 @@ translate schinese slave_beach_event_aab7e42f:
 translate schinese slave_beach_event_1f40409e:
 
     # you "Let us hide behind some rocks..."
-    you "让我们躲在石头后面……"
+    you "让我们躲在石头后面...."
 
 # game/BKcity_events.rpy:4996
 translate schinese slave_beach_event_82c4f436:
@@ -6028,7 +6028,7 @@ translate schinese slave_beach_event_b891e11a:
 translate schinese slave_beach_event_71c0b1b5:
 
     # girl.char "Hiding? Why? It's all the same to me... Let's just stay here."
-    girl.char "藏起来？为什么？对我来说都一样……我们就待在这儿吧。"
+    girl.char "藏起来？为什么？对我来说都一样....我们就待在这儿吧。"
 
 # game/BKcity_events.rpy:5005
 translate schinese slave_beach_event_cbebd128:
@@ -6052,13 +6052,13 @@ translate schinese slave_beach_event_3d32263d:
 translate schinese slave_beach_event_e37339ef:
 
     # you "Open your mouth and look me in the eyes..."
-    you "张开嘴，看着我的眼睛……"
+    you "张开嘴，看着我的眼睛...."
 
 # game/BKcity_events.rpy:5062
 translate schinese slave_beach_event_d86d6012:
 
     # you "I've got my eyes on your titties for some time... Why don't you use them to pleasure me?"
-    you "我有时间看你的乳头……你为什么不用它们来让我更爽呢？"
+    you "我有时间看你的乳头....你为什么不用它们来让我更爽呢？"
 
 # game/BKcity_events.rpy:5076
 translate schinese slave_beach_event_5e0b0700:
@@ -6124,7 +6124,7 @@ translate schinese slave_beach_event_f5ccab27:
 translate schinese slave_beach_event_5ff1ca2e:
 
     # passerby "Look at 'em go! I wish I had a recording crystal..."
-    passerby "看他们！我真希望我有一个录像水晶……"
+    passerby "看他们！我真希望我有一个录像水晶...."
 
 # game/BKcity_events.rpy:5144
 translate schinese slave_beach_event_95a28545:
@@ -6154,7 +6154,7 @@ translate schinese slave_beach_event_47645da3:
 translate schinese slave_beach_event_da2af5af:
 
     # girl.char "Ngggh!!! *cough* *cough*"
-    girl.char "喔！！咳咳……"
+    girl.char "喔！！咳咳...."
 
 # game/BKcity_events.rpy:5171
 translate schinese slave_beach_event_4081e2d5:
@@ -6166,7 +6166,7 @@ translate schinese slave_beach_event_4081e2d5:
 translate schinese slave_beach_event_198e6936:
 
     # girl.char "So rough... Aaah..."
-    girl.char "太粗暴了……啊……"
+    girl.char "太粗暴了....啊...."
 
 # game/BKcity_events.rpy:5178
 translate schinese slave_beach_event_795f8948:
@@ -6214,7 +6214,7 @@ translate schinese slave_beach_event_4606b25e:
 translate schinese slave_beach_event_5a2909b8:
 
     # girl.char "It will take hours to wash it away... Aw..."
-    girl.char "洗掉它需要几个小时……喔……"
+    girl.char "洗掉它需要几个小时....喔...."
 
 # game/BKcity_events.rpy:5208
 translate schinese slave_beach_event_c54783b0:
@@ -6226,7 +6226,7 @@ translate schinese slave_beach_event_c54783b0:
 translate schinese slave_beach_event_f5b6bc2f:
 
     # girl.char "Mmmh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKcity_events.rpy:5216
 translate schinese slave_beach_event_67bf8a92:
@@ -6238,7 +6238,7 @@ translate schinese slave_beach_event_67bf8a92:
 translate schinese slave_beach_event_004f83c6:
 
     # girl.char "There's cum all over my swimsuit... And I've got no other clothes to wear! Aw..."
-    girl.char "我的泳衣上到处都是……我没有别的衣服穿了！喔……"
+    girl.char "我的泳衣上到处都是....我没有别的衣服穿了！喔...."
 
 # game/BKcity_events.rpy:5221
 translate schinese slave_beach_event_5db0bde8:
@@ -6250,19 +6250,19 @@ translate schinese slave_beach_event_5db0bde8:
 translate schinese slave_beach_event_a3d34740:
 
     # girl.char "Ooh..."
-    girl.char "喔……"
+    girl.char "喔...."
 
 # game/BKcity_events.rpy:5227
 translate schinese slave_beach_event_c14666d3:
 
     # girl.char "My swimsuit is ruined... And I have no spare clothes!"
-    girl.char "我的泳衣坏了……我没有多余的衣服！"
+    girl.char "我的泳衣坏了....我没有多余的衣服！"
 
 # game/BKcity_events.rpy:5229
 translate schinese slave_beach_event_6a7bf726:
 
     # you "Oh well, too bad..."
-    you "哦，太糟糕了……"
+    you "哦，太糟糕了...."
 
 # game/BKcity_events.rpy:5235
 translate schinese slave_beach_event_4b744439:
@@ -6322,7 +6322,7 @@ translate schinese slave_beach_event_51a34b98:
 translate schinese slave_beach_event_a4604e4c:
 
     # girl.char "You came inside... Aaah..."
-    girl.char "你进来了……啊啊……"
+    girl.char "你进来了....啊啊...."
 
 # game/BKcity_events.rpy:5280
 translate schinese slave_beach_event_2e26bc9b:
@@ -6346,7 +6346,7 @@ translate schinese slave_beach_event_bc93318d:
 translate schinese slave_beach_event_9d3f5943:
 
     # girl.char "I'm so dirty... Mmmh..."
-    girl.char "我好脏……嗯……"
+    girl.char "我好脏....嗯...."
 
 # game/BKcity_events.rpy:5299
 translate schinese slave_beach_event_6d35652f:
@@ -6370,7 +6370,7 @@ translate schinese slave_beach_event_37e819ad:
 translate schinese slave_beach_event_5d204b66:
 
     # girl.char "My swimsuit is all sticky now... Aw..."
-    girl.char "我的泳衣现在全是黏糊糊的……啊……"
+    girl.char "我的泳衣现在全是黏糊糊的....啊...."
 
 # game/BKcity_events.rpy:5316
 translate schinese slave_beach_event_8a001466:
@@ -6406,25 +6406,25 @@ translate schinese slave_beach_event_51f4b6cf:
 translate schinese slave_beach_event_a5efeed9:
 
     # you "Listen, I'll give you... double your regular upkeep. How does that sound?"
-    you "听着，我会给你……双倍的日常保养费。听上去怎么样？"
+    you "听着，我会给你....双倍的日常保养费。听上去怎么样？"
 
 # game/BKcity_events.rpy:5342
 translate schinese slave_beach_event_534f02be:
 
     # girl.char "Double the money, uh..."
-    girl.char "双倍的钱，嗯……"
+    girl.char "双倍的钱，嗯...."
 
 # game/BKcity_events.rpy:5352
 translate schinese slave_beach_event_fc71f818:
 
     # you "I'll pay your normal upkeep, of course. It's only fair..."
-    you "当然，我会支付你的正常保养费用。这只是公平的……"
+    you "当然，我会支付你的正常保养费用。这只是公平的...."
 
 # game/BKcity_events.rpy:5354
 translate schinese slave_beach_event_c1da3d17:
 
     # girl.char "..."
-    girl.char "……"
+    girl.char "...."
 
 # game/BKcity_events.rpy:5359
 translate schinese slave_beach_event_dd50664b:
@@ -6436,7 +6436,7 @@ translate schinese slave_beach_event_dd50664b:
 translate schinese slave_beach_event_fdde360c:
 
     # girl.char "Hey! That's not fair..."
-    girl.char "嘿！这不公平……"
+    girl.char "嘿！这不公平...."
 
 # game/BKcity_events.rpy:5382
 translate schinese slave_beach_event_30ebcc9d:
@@ -6448,7 +6448,7 @@ translate schinese slave_beach_event_30ebcc9d:
 translate schinese slave_beach_event_4ee40f29:
 
     # you "Good. Let me get things set-up..."
-    you "好的。让我整理一下东西……"
+    you "好的。让我整理一下东西...."
 
 # game/BKcity_events.rpy:5391
 translate schinese slave_beach_event_5d3c6149:
@@ -6466,7 +6466,7 @@ translate schinese slave_beach_event_9dfc76af:
 translate schinese slave_beach_event_c42686a9:
 
     # you "Lovely miss [girl.fullname] is waiting for you here, ready to serve at your whim..."
-    you "可爱的小姐 [girl.fullname] 在这里等你，随时为你服务……"
+    you "可爱的小姐 [girl.fullname] 在这里等你，随时为你服务...."
 
 # game/BKcity_events.rpy:5403
 translate schinese slave_beach_event_0cd402a4:
@@ -6478,7 +6478,7 @@ translate schinese slave_beach_event_0cd402a4:
 translate schinese slave_beach_event_c550eaaf:
 
     # "Dude" "Sweet! I want her to suck my dick... Is it cool?"
-    "小哥" "小可爱！我想让她吮吸我的鸡巴……是不是很酷？"
+    "小哥" "小可爱！我想让她吮吸我的鸡巴....是不是很酷？"
 
 # game/BKcity_events.rpy:5407
 translate schinese slave_beach_event_e836a702:
@@ -6496,13 +6496,13 @@ translate schinese slave_beach_event_230fb705:
 translate schinese slave_beach_event_724bde1c:
 
     # you "You there, get yourself ready. [girl.name] will take good care of you..."
-    you "你在那里准备好。 [girl.name] 会好好服务你的……"
+    you "你在那里准备好。 [girl.name] 会好好服务你的...."
 
 # game/BKcity_events.rpy:5425
 translate schinese slave_beach_event_ba9e6bd0:
 
     # you "One of you lucky bastards can get laid today... You! Step forward."
-    you "你们中的一个幸运的混蛋今天可以上床……你！向前一步。"
+    you "你们中的一个幸运的混蛋今天可以上床....你！向前一步。"
 
 # game/BKcity_events.rpy:5429
 translate schinese slave_beach_event_562e2e91:
@@ -6526,7 +6526,7 @@ translate schinese slave_beach_event_c64f1079:
 translate schinese slave_beach_event_a9b8e8b4:
 
     # "Dude" "Oh, this is my lucky day..."
-    "小哥" "哦，这是我的幸运日……"
+    "小哥" "哦，这是我的幸运日...."
 
 # game/BKcity_events.rpy:5441
 translate schinese slave_beach_event_841402fd:
@@ -6538,7 +6538,7 @@ translate schinese slave_beach_event_841402fd:
 translate schinese slave_beach_event_bac2af43:
 
     # man "Come on, babe! Let's fuck..."
-    man "来吧宝贝儿！让我们开始草吧……"
+    man "来吧宝贝儿！让我们开始草吧...."
 
 # game/BKcity_events.rpy:5445
 translate schinese slave_beach_event_061b0610:
@@ -6550,7 +6550,7 @@ translate schinese slave_beach_event_061b0610:
 translate schinese slave_beach_event_64a4be4e:
 
     # passerby "Let me just move this swimsuit out of the way... Nice."
-    passerby "让我把这件泳衣拿开……很好。"
+    passerby "让我把这件泳衣拿开....很好。"
 
 # game/BKcity_events.rpy:5450
 translate schinese slave_beach_event_65ebfa4c:
@@ -6604,7 +6604,7 @@ translate schinese slave_beach_event_a3debe29:
 translate schinese slave_beach_event_a7325ce9:
 
     # "Dude" "Oh, man... I will not stand... this aggression... Man..."
-    "小哥" "哦，伙计……我受不了……这种刺激……伙计……"
+    "小哥" "哦，伙计....我受不了....这种刺激....伙计...."
 
 # game/BKcity_events.rpy:5484
 translate schinese slave_beach_event_97a15c09:
@@ -6616,7 +6616,7 @@ translate schinese slave_beach_event_97a15c09:
 translate schinese slave_beach_event_d1de2594:
 
     # man "Oh, yes! I'm on fire..."
-    man "哦。。草！我好热……"
+    man "哦。。草！我好热...."
 
 # game/BKcity_events.rpy:5489
 translate schinese slave_beach_event_fb7cd5b5:
@@ -6628,7 +6628,7 @@ translate schinese slave_beach_event_fb7cd5b5:
 translate schinese slave_beach_event_dff03954:
 
     # passerby "Oh, I can go all the way in... I'm balls deep... This is the best!"
-    passerby "哦，我可以一直往里面去……我插得好深……这太爽了！"
+    passerby "哦，我可以一直往里面去....我插得好深....这太爽了！"
 
 # game/BKcity_events.rpy:5495
 translate schinese slave_beach_event_1686205b:
@@ -6652,7 +6652,7 @@ translate schinese slave_beach_event_7ff63124:
 translate schinese slave_beach_event_323a8633:
 
     # "Dude" "Awesome..."
-    "小哥" "太爽了……"
+    "小哥" "太爽了...."
 
 # game/BKcity_events.rpy:5503
 translate schinese slave_beach_event_85bafe9e:
@@ -6664,13 +6664,13 @@ translate schinese slave_beach_event_85bafe9e:
 translate schinese slave_beach_event_19af7a9d:
 
     # passerby "That brothel guy wasn't joking... I've never had so much fun!"
-    passerby "那个青楼的家伙真不是在开玩笑……我从来没有这么爽过！"
+    passerby "那个青楼的家伙真不是在开玩笑....我从来没有这么爽过！"
 
 # game/BKcity_events.rpy:5509
 translate schinese slave_beach_event_b3717b26:
 
     # girl.char "Hmm... Oooh..."
-    girl.char "嗯……呜……"
+    girl.char "嗯....呜...."
 
 # game/BKcity_events.rpy:5519
 translate schinese slave_beach_event_f33411fa:
@@ -6766,7 +6766,7 @@ translate schinese slave_beach_event_5d996cc8:
 translate schinese slave_beach_event_dc0306da:
 
     # "Let down, the men scatter and grumble something about false advertising... Your brothel has lost reputation."
-    "真是令人失望，男人们散开了，抱怨虚假广告……你的青楼名誉扫地了。"
+    "真是令人失望，男人们散开了，抱怨虚假广告....你的青楼名誉扫地了。"
 
 # game/BKcity_events.rpy:5633
 translate schinese slave_beach_event_2666d939:
@@ -6794,7 +6794,7 @@ translate schinese strings:
 
     # game/BKcity_events.rpy:1204
     old "Let me..."
-    new "让我……"
+    new "让我...."
 
     # game/BKcity_events.rpy:1204
     old "Fuck her mouth"

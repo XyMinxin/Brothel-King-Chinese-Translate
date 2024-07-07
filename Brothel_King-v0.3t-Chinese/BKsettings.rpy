@@ -118,8 +118,8 @@ init -10 python:
                         "dancer" : "脱衣舞娘",
                         "Masseuse" : "按摩技师",
                         "masseuse" : "按摩技师",
-                        "Geisha" : "艺伎",
-                        "geisha" : "艺伎",
+                        "Geisha" : "表演艺伎",
+                        "geisha" : "表演艺伎",
                         "Whore" : "妓女",
                         "whore" : "妓女",
 
@@ -581,16 +581,16 @@ init -10 python:
                          "minion" : "农场用品",
                          "Gift" : "礼物",
                          "gift" : "礼物",
-                         "Decoration" : "饰品",
-                         "decoration" : "饰品",
-                         "Furnishing" : "家具",
-                         "furnishing" : "家具",
+                         "Decoration" : "装饰品",
+                         "decoration" : "装饰品",
+                         "Furnishing" : "设施",
+                         "furnishing" : "设施",
                          "Utility" : "公用设施",
                          "utility" : "公用设施",
                          "Windows" : "窗户",
                          "windows" : "窗户",
-                         "Comfort" : "慰藉用品",
-                         "comfort" : "慰藉用品",
+                         "Comfort" : "生活用品",
+                         "comfort" : "生活用品",
                          "Altars" : "祭坛",
                          "altars" : "祭坛",
                          "Gizmos" : "小玩意",
@@ -1404,7 +1404,7 @@ init -10 python:
                 }
 
     god_pics = {
-                "阿里奥斯" : "UI/arios.webp",
+                "太阳神" : "UI/arios.webp",
                 "莎莉娅" : "UI/shalia.webp",
                 None : "UI/none.webp"
                 }
@@ -1790,6 +1790,6 @@ init -10 python:
 
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
-    URL = "{a=https://www.henthighschool.net/brothel-king/}{color=#9933FF}https://www.henthighschool.net/brothel-king/{/color}{/a}"
+    URL = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate{/color}{/a}"
 
 #### END OF BK SETTINGS ####

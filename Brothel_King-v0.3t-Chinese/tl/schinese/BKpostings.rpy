@@ -128,7 +128,7 @@ translate schinese strings:
 
     # game/BKpostings.rpy:8
     old "I aim to break the record set by Long Dick Silver, and this will take long hours of practice... Help me get harder and stronger so that I can succeed!"
-    new "我想打破由季伯常创下的最持久性交记录，这需要一位性爱大师帮助我锻炼……至少要能不停歇的做一整晚，这样我才能创下新纪录!"
+    new "我想打破由季伯常创下的最持久性交记录，这需要一位性爱大师帮助我锻炼....至少要能不停歇的做一整晚，这样我才能创下新纪录!"
 
     # game/BKpostings.rpy:8
     old "I feel lonely... Will you help me forget my troubles?"
@@ -136,7 +136,7 @@ translate schinese strings:
 
     # game/BKpostings.rpy:8
     old "I need an extra AMaid to help out in the mansion. There is a very specific uniform..."
-    new "我需要一个女佣来帮我打扫卫生。穿着我设计的特殊的制服……用奶子贴着清洁玻璃，沉下腰，撅起屁股除尘，用你股间的水来冲洗污垢。最后别忘了用你的小嘴清理我好几天没洗过的肉棒."
+    new "我需要一个女佣来帮我打扫卫生。穿着我设计的特殊的制服....用奶子贴着清洁玻璃，沉下腰，撅起屁股除尘，用你股间的水来冲洗污垢。最后别忘了用你的小嘴清理我好几天没洗过的肉棒."
 
     # game/BKpostings.rpy:8
     old "My son is already 21, and not yet married. He's a big oaf when it comes to women... Can you help him come out of his shell?"

@@ -3034,7 +3034,7 @@ translate schinese farm_meet_gizel_2a4e4200:
 translate schinese farm_meet_gizel_d5ebc757:
 
     # gizel "And whatever is this? Fireroot, perhaps? Hmm, no..."
-    gizel "那是什么呢?也许是防火根茎?不,不对……"
+    gizel "那是什么呢?也许是防火根茎?不,不对...."
 
 # game/BKstory_events.rpy:1585
 translate schinese farm_meet_gizel_e90493bc:
@@ -3100,13 +3100,13 @@ translate schinese farm_meet_gizel_06b2e3ff:
 translate schinese farm_meet_gizel_74225698:
 
     # "As the armed guards pass by, you notice they are escorting a heavily armored knight, sporting the Arios crest on his tunic. A templar."
-    "经过时,你注意到他们正护送一名身着铠甲的骑士,胸前图腾竟是阿里奥斯家徽。那是一位神殿骑士。"
+    "经过时,你注意到他们正护送一名身着铠甲的骑士,胸前图腾竟是太阳神家徽。那是一位神殿骑士。"
 
 # game/BKstory_events.rpy:1643
 translate schinese farm_meet_gizel_ed24da76:
 
     # you "We see more and more of them in the streets every day... Shouldn't they be on the battlefield?"
-    you "这样的神殿骑士在街头越来越常见了……他们难道不该在战场上吗?"
+    you "这样的神殿骑士在街头越来越常见了....他们难道不该在战场上吗?"
 
 # game/BKstory_events.rpy:1645
 translate schinese farm_meet_gizel_486fb70e:
@@ -3124,7 +3124,7 @@ translate schinese farm_meet_gizel_6e058e5f:
 translate schinese farm_meet_gizel_b7941c26:
 
     # you "Well, good for her..."
-    you "那也好吧……"
+    you "那也好吧...."
 
 # game/BKstory_events.rpy:1651
 translate schinese farm_meet_gizel_def13e0a:
@@ -3136,7 +3136,7 @@ translate schinese farm_meet_gizel_def13e0a:
 translate schinese farm_meet_gizel_63b78836:
 
     # you "'Bernard's love charms and aphrodisiacs', uhm..."
-    you "'伯纳德的情爱护符和春药',嗯……"
+    you "'伯纳德的情爱护符和春药',嗯...."
 
 # game/BKstory_events.rpy:1669
 translate schinese farm_meet_gizel2_e493cc63:
@@ -3196,7 +3196,7 @@ translate schinese farm_meet_gizel2_cbb55582:
 translate schinese farm_meet_gizel2_6cd26150:
 
     # you "Hey! Wait a minute... Isn't it that girl elf?"
-    you "嘿!等等……难道不是那个精灵女孩吗?"
+    you "嘿!等等....难道不是那个精灵女孩吗?"
 
 # game/BKstory_events.rpy:1697
 translate schinese farm_meet_gizel2_d61bef70:
@@ -3730,7 +3730,7 @@ translate schinese farm_meet_gizel2_8ea8a010:
 translate schinese farm_meet_gizel2_3e594aa2:
 
     # templar "Do you deny that you are Gizel, the evil witch of the North?"
-    templar "你是否否认你就是北方那个邪恶的女巫吉泽?"
+    templar "你是否否认你就是北方那个邪恶的女巫吉泽尔?"
 
 # game/BKstory_events.rpy:1990
 translate schinese farm_meet_gizel2_e70dfbd4:
@@ -4432,7 +4432,7 @@ translate schinese gizel_rape_2a4e96c5:
 translate schinese gizel_rape_9a9665e0:
 
     # initiate1 "I swear, you must be glad Arios has a fondness for the dimwitted, that makes you one of his favorites I'm sure..."
-    initiate1 "我发誓,阿里奥斯一定很喜欢你这种愚蠢的人,他一定把你当成他最喜欢的人了。"
+    initiate1 "我发誓,太阳神一定很喜欢你这种愚蠢的人,他一定把你当成他最喜欢的人了。"
 
 # game/BKstory_events.rpy:2408
 translate schinese gizel_rape_bda5dbb3:
@@ -5014,7 +5014,7 @@ translate schinese gizel_attack_bf931546:
 translate schinese gizel_attack_3bf24788:
 
     # "Gizel is hovering into mid-air, in the middle of a sphere of dark energy whose crackling is making your hair stand up on end."
-    "吉泽正漂浮在半空中,身周环绕着一个暗能量的球体,电流的噼啪声让你毛骨悚然。"
+    "吉泽尔正漂浮在半空中,身周环绕着一个暗能量的球体,电流的噼啪声让你毛骨悚然。"
 
 # game/BKstory_events.rpy:2680
 translate schinese gizel_attack_a591c343:
@@ -5098,7 +5098,7 @@ translate schinese gizel_attack_09973411:
 translate schinese gizel_attack_2fc77e5a:
 
     # "The Arios worshippers make pathetic efforts to get up and follow you, but it's like they have no energy left..."
-    "那些阿里奥斯信徒虽然勉强想要起身追赶你,但却无力以赴..."
+    "那些太阳神信徒虽然勉强想要起身追赶你,但却无力以赴..."
 
 # game/BKstory_events.rpy:2721
 translate schinese gizel_attack_6c2b5c3e:
@@ -5128,7 +5128,7 @@ translate schinese gizel_attack_21df1f11:
 translate schinese gizel_attack_2859f951:
 
     # "When the dark winds finally settle, and your senses return, you find Gizel standing before you."
-    "风暴终于平息下来,你的感官也恢复了正常,吉泽就站在你面前。"
+    "风暴终于平息下来,你的感官也恢复了正常,吉泽尔就站在你面前。"
 
 # game/BKstory_events.rpy:2755
 translate schinese gizel_attack_b7151b38:
@@ -5140,7 +5140,7 @@ translate schinese gizel_attack_b7151b38:
 translate schinese gizel_attack_aba08f1b:
 
     # gizel "You're the one who tried to warn me, aren't you? You're not one of those Arios bigots. Your heart was bleeding for a poor little elf, was it?"
-    gizel "是你,试图警告我的那个人吧?你不是那些阿里奥斯的狂热分子,你的内心为一个可怜的小精灵流血,对吗?"
+    gizel "是你,试图警告我的那个人吧?你不是那些太阳神的狂热分子,你的内心为一个可怜的小精灵流血,对吗?"
 
 # game/BKstory_events.rpy:2761
 translate schinese gizel_attack_b0183039:
@@ -5248,7 +5248,7 @@ translate schinese gizel_attack_ae01113b:
 translate schinese gizel_attack_62356561:
 
     # gizel smirk "Yeah, I noticed how powerful you were, getting your ass handed to you by those dumb Arios cultists... Stop wasting my time!"
-    gizel smirk "是啊,我看出你很强大,却被那些愚蠢的阿里奥斯教徒打得落花流水...别浪费我的时间了!"
+    gizel smirk "是啊,我看出你很强大,却被那些愚蠢的太阳神教徒打得落花流水...别浪费我的时间了!"
 
 # game/BKstory_events.rpy:2831
 translate schinese gizel_attack_ceb493f4:
@@ -5296,7 +5296,7 @@ translate schinese gizel_attack_61919e85:
 translate schinese gizel_attack_bb3b08a3:
 
     # you "Look, I can be useful to you. I am not one of those Arios bigots. My name is [MC.name], I'm a business man, I own a brothel in town..."
-    you "听着,我可以对你有用。我不是那些阿里奥斯的偏执分子。我叫[MC.name],我是个生意人,我在城里开了家青楼..."
+    you "听着,我可以对你有用。我不是那些太阳神的偏执分子。我叫[MC.name],我是个生意人,我在城里开了家青楼..."
 
 # game/BKstory_events.rpy:2866
 translate schinese gizel_attack_70413b49:
@@ -5560,7 +5560,7 @@ translate schinese gizel_questions_menu_2e78af4a:
 translate schinese gizel_questions_menu_f50b2b40:
 
     # gizel upset "And now, there's the damn war. Arios bigot crusaders swarm the land, eager to find elves to string up and villages to loot on the way to the front line, trying to delay real fighting for as long as possible..."
-    gizel upset "现在还有那该死的战争。阿里奥斯的偏执狂十字军东征,急于在前线延缓真正交战之前,寻找要吊死的精灵和要掠劫的村庄..."
+    gizel upset "现在还有那该死的战争。太阳神的偏执狂十字军东征,急于在前线延缓真正交战之前,寻找要吊死的精灵和要掠劫的村庄..."
 
 # game/BKstory_events.rpy:2988
 translate schinese gizel_questions_menu_f3c0a045:
@@ -6562,7 +6562,7 @@ translate schinese farm_exorcism_attempt_12605851:
 translate schinese farm_exorcism_attempt_bf443536:
 
     # you "It's like something... Bored through the earth and burst out here..."
-    you "好像是某种东西……穿透地球而突然出现在这里。"
+    you "好像是某种东西....穿透地球而突然出现在这里。"
 
 # game/BKstory_events.rpy:3456
 translate schinese farm_exorcism_attempt_7baa3c47:
@@ -6916,7 +6916,7 @@ translate schinese farm_go_with_gizel_6117ace9:
 translate schinese farm_go_with_gizel_d688c021:
 
     # gizel smirk "{i}{b}See{/b}{/i} it? I could feel it a mile from here... It's bustling with dark energy."
-    gizel smirk "{i}{b}看到{/b}{/i}了吗?我能从这里感受到一英里远的地方……到处都弥漫着黑暗能量。"
+    gizel smirk "{i}{b}看到{/b}{/i}了吗?我能从这里感受到一英里远的地方....到处都弥漫着黑暗能量。"
 
 # game/BKstory_events.rpy:3654
 translate schinese farm_go_with_gizel_dcf6741c:
@@ -6934,7 +6934,7 @@ translate schinese farm_go_with_gizel_c1968b71:
 translate schinese farm_go_with_gizel_cb955a95:
 
     # gizel normal "Yes, my dear cow-loving bimbo... A place of demonic power that exists in several planes at once, home to creatures beyond your wildest imagination..."
-    gizel normal "是的,我亲爱的牛奶爱好者……这是一处存在于多个层面的邪恶力量之地,居住着你难以想象的生物……"
+    gizel normal "是的,我亲爱的牛奶爱好者....这是一处存在于多个层面的邪恶力量之地,居住着你难以想象的生物...."
 
 # game/BKstory_events.rpy:3660
 translate schinese farm_go_with_gizel_d22aa0d6:
@@ -6958,7 +6958,7 @@ translate schinese farm_go_with_gizel_c2c15d56:
 translate schinese farm_go_with_gizel_1b15a879:
 
     # gizel "You might want to stand back. I can feel the demon that dwells in this place is quite powerful indeed..."
-    gizel "最好后退一些。我能感觉到这个地方居住的恶魔是相当强大的……"
+    gizel "最好后退一些。我能感觉到这个地方居住的恶魔是相当强大的...."
 
 # game/BKstory_events.rpy:3676
 translate schinese farm_go_with_gizel_d8e99d0b:
@@ -6976,7 +6976,7 @@ translate schinese farm_go_with_gizel_56848feb:
 translate schinese farm_go_with_gizel_09f6c259:
 
     # you "I hope she knows what she's doing..."
-    you "但愿她知道自己在做什么……"
+    you "但愿她知道自己在做什么...."
 
 # game/BKstory_events.rpy:3686
 translate schinese farm_go_with_gizel_984ffd31:
@@ -6988,25 +6988,25 @@ translate schinese farm_go_with_gizel_984ffd31:
 translate schinese farm_go_with_gizel_8d735164:
 
     # spirit "Ooooh, a cute little she-elf... Let me take a bite off your sweet, innocent soul..."
-    spirit "哦,一个可爱的小精灵女孩……让我咬一口你纯真的灵魂吧……"
+    spirit "哦,一个可爱的小精灵女孩....让我咬一口你纯真的灵魂吧...."
 
 # game/BKstory_events.rpy:3696
 translate schinese farm_go_with_gizel_1f180d01:
 
     # gizel shy "Oh, mister demon... What... What kind of nasty things are you going to do to me?"
-    gizel shy "噢,恶魔先生……你要对我做些什么可怕的事情呢?"
+    gizel shy "噢,恶魔先生....你要对我做些什么可怕的事情呢?"
 
 # game/BKstory_events.rpy:3698
 translate schinese farm_go_with_gizel_b198f7f0:
 
     # spirit "You shall be my next snack... Let me take a little peek at that delicious soul of yours..."
-    spirit "你将是我的下一个小吃……让我瞧瞧你诱人的灵魂吧……"
+    spirit "你将是我的下一个小吃....让我瞧瞧你诱人的灵魂吧...."
 
 # game/BKstory_events.rpy:3702
 translate schinese farm_go_with_gizel_1a11aca4:
 
     # gizel blush "Oh no, mister demon-guy... It tickles..."
-    gizel blush "噢,恶魔先生,这种感觉好痒啊……"
+    gizel blush "噢,恶魔先生,这种感觉好痒啊...."
 
 # game/BKstory_events.rpy:3704
 translate schinese farm_go_with_gizel_9773cf19:
@@ -7018,7 +7018,7 @@ translate schinese farm_go_with_gizel_9773cf19:
 translate schinese farm_go_with_gizel_49cd3b23:
 
     # gizel smirk "Oh, mister demon, why do you have such a big..."
-    gizel smirk "噢,恶魔先生,你怎么会有这么大的……"
+    gizel smirk "噢,恶魔先生,你怎么会有这么大的...."
 
 # game/BKstory_events.rpy:3712
 translate schinese farm_go_with_gizel_0c3fc3ee:
@@ -7030,7 +7030,7 @@ translate schinese farm_go_with_gizel_0c3fc3ee:
 translate schinese farm_go_with_gizel_5717e606:
 
     # gizel "Come here... I wanna say hi..."
-    gizel "过来吧……我想打个招呼……"
+    gizel "过来吧....我想打个招呼...."
 
 # game/BKstory_events.rpy:3734
 translate schinese farm_go_with_gizel_c5ab2389:
@@ -7042,13 +7042,13 @@ translate schinese farm_go_with_gizel_c5ab2389:
 translate schinese farm_go_with_gizel_86dfcf32:
 
     # gizel "Come on, don't be so shy, demon-boy... Show it to me!"
-    gizel "来吧,别那么害羞,恶魔小子……拿出来给我看看!"
+    gizel "来吧,别那么害羞,恶魔小子....拿出来给我看看!"
 
 # game/BKstory_events.rpy:3740
 translate schinese farm_go_with_gizel_11a79f33:
 
     # spirit "Lady, I must protest, we haven't been properly introduced..."
-    spirit "小姐,我必须抗议,我们还未正式相识……"
+    spirit "小姐,我必须抗议,我们还未正式相识...."
 
 # game/BKstory_events.rpy:3744
 translate schinese farm_go_with_gizel_30a2aff1:
@@ -7066,7 +7066,7 @@ translate schinese farm_go_with_gizel_64a83187:
 translate schinese farm_go_with_gizel_5fdf01f1:
 
     # gizel "Oh, come on, don't be a bore... What if I do this?"
-    gizel "噢,别那么无聊嘛……要是我这样呢?"
+    gizel "噢,别那么无聊嘛....要是我这样呢?"
 
 # game/BKstory_events.rpy:3754
 translate schinese farm_go_with_gizel_ed245291:
@@ -7090,7 +7090,7 @@ translate schinese farm_go_with_gizel_971790e4:
 translate schinese farm_go_with_gizel_e3919bfb:
 
     # spirit "What in the seven fucking hells! And I should know... I've been there!"
-    spirit "在七个该死的地狱里!我应该知道的……因为我去过那儿!"
+    spirit "在七个该死的地狱里!我应该知道的....因为我去过那儿!"
 
 # game/BKstory_events.rpy:3766
 translate schinese farm_go_with_gizel_1134e310:
@@ -8680,7 +8680,7 @@ translate schinese farm_meet_gina_1712f969:
 translate schinese gina_research_10a8d97d:
 
     # "Curiosity finally gets the better of you, and you decide to visit Gina the Scientist in the Warehouse district."
-    "好奇心终于战胜了你,你决定去仓库区拜访吉娜科学家。"
+    "好奇心终于战胜了你,你决定去工业区拜访吉娜科学家。"
 
 # game/BKstory_events.rpy:4566
 translate schinese gina_research_aab438f9:
@@ -11164,7 +11164,7 @@ translate schinese stella_secret1_d552273c:
 translate schinese stella_secret1_59e28517:
 
     # blood2 "The fleet is gathering, only a few vessels at a time... We don't want Zan's spies to get suspicious."
-    blood2 "舰队正在集结,一次只有几艘船只……我们不想引起扎恩的间谍的怀疑。"
+    blood2 "舰队正在集结,一次只有几艘船只....我们不想引起扎恩的间谍的怀疑。"
 
 # game/BKstory_events.rpy:5752
 translate schinese stella_secret1_994e569c:
@@ -11338,7 +11338,7 @@ translate schinese stella_secret1_9fe3adbf:
 translate schinese stella_secret1_4057eddb:
 
     # blood1 "Really? I was going to go for stronger stuff, but... okay."
-    blood1 "真的吗?我原本打算喝更烈的,不过……好吧。"
+    blood1 "真的吗?我原本打算喝更烈的,不过....好吧。"
 
 # game/BKstory_events.rpy:5815
 translate schinese stella_secret1_683bd5ae:
@@ -12568,7 +12568,7 @@ translate schinese stella_bj_67f35c1a:
 translate schinese stella_bj_6d25ca71:
 
     # stella "Ngggh... Let's shee how much is left in there..."
-    stella "嗯嗯……让我看看里面还有多少剩下的……"
+    stella "嗯嗯....让我看看里面还有多少剩下的...."
 
 # game/BKstory_events.rpy:6461
 translate schinese stella_bj_6ccde5dd:
@@ -12580,7 +12580,7 @@ translate schinese stella_bj_6ccde5dd:
 translate schinese farm_meet_willow_def4b195:
 
     # you "Damn, I'm completely lost..."
-    you "该死,我完全迷路了……"
+    you "该死,我完全迷路了...."
 
 # game/BKstory_events.rpy:6476
 translate schinese farm_meet_willow_ecd3ba43:
@@ -12610,13 +12610,13 @@ translate schinese farm_meet_willow_786a1a7e:
 translate schinese farm_meet_willow_a73c682a:
 
     # sill "It's almost as if we were... Mmmh."
-    sill "感觉就像是……呼~"
+    sill "感觉就像是....呼~"
 
 # game/BKstory_events.rpy:6493
 translate schinese farm_meet_willow_270e43a6:
 
     # sill "Although I wish we'd gone to a nicer place... Maybe the lake, or the gardens, or the beach? Oh, I wanna swim in the ocean!"
-    sill "不过我希望我们能去个更好的地方……也许湖边,或者花园,亦或是海滩?哦,我好想在海里游泳!"
+    sill "不过我希望我们能去个更好的地方....也许湖边,或者花园,亦或是海滩?哦,我好想在海里游泳!"
 
 # game/BKstory_events.rpy:6495
 translate schinese farm_meet_willow_0067819a:
@@ -12634,7 +12634,7 @@ translate schinese farm_meet_willow_288b16e5:
 translate schinese farm_meet_willow_1600d3fe:
 
     # sill sad "Aw, don't remind me..."
-    sill sad "啊,别提了……"
+    sill sad "啊,别提了...."
 
 # game/BKstory_events.rpy:6501
 translate schinese farm_meet_willow_b10a54ab:
@@ -12658,7 +12658,7 @@ translate schinese farm_meet_willow_9a2724c6:
 translate schinese farm_meet_willow_f51e5c86:
 
     # you "Uh, yeah, sure..."
-    you "呃,是挺好看的……"
+    you "呃,是挺好看的...."
 
 # game/BKstory_events.rpy:6509
 translate schinese farm_meet_willow_e64eea20:
@@ -12676,19 +12676,19 @@ translate schinese farm_meet_willow_85f4b3f5:
 translate schinese farm_meet_willow_30b21490:
 
     # sill "Can I... Can I have it?"
-    sill "我……我可以要它吗?"
+    sill "我....我可以要它吗?"
 
 # game/BKstory_events.rpy:6515
 translate schinese farm_meet_willow_197147f7:
 
     # you "Sill..."
-    you "希露……"
+    you "希露...."
 
 # game/BKstory_events.rpy:6517
 translate schinese farm_meet_willow_79d5355d:
 
     # sill sad "Pleaaaaaaaaaaase..."
-    sill sad "拜托拜托拜托拜托……"
+    sill sad "拜托拜托拜托拜托...."
 
 # game/BKstory_events.rpy:6519
 translate schinese farm_meet_willow_b83f42af:
@@ -12718,19 +12718,19 @@ translate schinese farm_meet_willow_0080a863:
 translate schinese farm_meet_willow_a39a743b:
 
     # sill "Aw..."
-    sill "啊……"
+    sill "啊...."
 
 # game/BKstory_events.rpy:6541
 translate schinese farm_meet_willow_b3ffe9ff:
 
     # sill "It's so expensive... But it's so pretty..."
-    sill "这么贵啊……但它真的好漂亮……"
+    sill "这么贵啊....但它真的好漂亮...."
 
 # game/BKstory_events.rpy:6543
 translate schinese farm_meet_willow_ba6238ec:
 
     # sill "All right... I'll just eat white rice for the next two weeks, then."
-    sill "好吧……那我接下来两周就只吃白米饭了。"
+    sill "好吧....那我接下来两周就只吃白米饭了。"
 
 # game/BKstory_events.rpy:6545
 translate schinese farm_meet_willow_e8068bb1:
@@ -14890,7 +14890,7 @@ translate schinese willow_recovery_20604252:
 translate schinese willow_recovery_e2195821:
 
     # willow "Yes. I put it in a safehouse in the warehouse district, near the Prison."
-    willow "是的。我把它放在了监狱附近的仓库区的一个安全屋里。"
+    willow "是的。我把它放在了监狱附近的工业区的一个安全屋里。"
 
 # game/BKstory_events.rpy:7764
 translate schinese willow_recovery_d3c3ea94:
@@ -16066,7 +16066,7 @@ translate schinese willow_relative_returns_98c49488:
 translate schinese willow_relative_returns_7d255d93:
 
     # "Taking a hot bath with an even hotter guest... This is a no-brainer."
-    "和一个更热情的客人一起洗个热水澡……这再明显不过了。"
+    "和一个更热情的客人一起洗个热水澡....这再明显不过了。"
 
 # game/BKstory_events.rpy:8290
 translate schinese willow_relative_returns_2612c731:
@@ -16078,7 +16078,7 @@ translate schinese willow_relative_returns_2612c731:
 translate schinese willow_relative_returns_eb0ad1cd:
 
     # you "It's pretty hot in here... I brought us some refreshments. Can I interest you in a cup of sake?"
-    you "这里真热啊……我给我们拿了些饮品。你想喝一杯清酒吗?"
+    you "这里真热啊....我给我们拿了些饮品。你想喝一杯清酒吗?"
 
 # game/BKstory_events.rpy:8294
 translate schinese willow_relative_returns_da126c56:
@@ -16090,7 +16090,7 @@ translate schinese willow_relative_returns_da126c56:
 translate schinese willow_relative_returns_de7254ba:
 
     # relative "Sure, I need to unwind... This place is a long way from the countryside; I've been walking all day."
-    relative "好啊,我需要放松一下……这地方离乡下可远着呢,我一路走过来。"
+    relative "好啊,我需要放松一下....这地方离乡下可远着呢,我一路走过来。"
 
 # game/BKstory_events.rpy:8298
 translate schinese willow_relative_returns_daa2fb33:
@@ -16120,7 +16120,7 @@ translate schinese willow_relative_returns_7dfb32bb:
 translate schinese willow_relative_returns_c45d4a1f:
 
     # relative "Most of them have disappeared now..."
-    relative "现在大部分都已经消失了……"
+    relative "现在大部分都已经消失了...."
 
 # game/BKstory_events.rpy:8308
 translate schinese willow_relative_returns_5156867a:
@@ -16132,13 +16132,13 @@ translate schinese willow_relative_returns_5156867a:
 translate schinese willow_relative_returns_f29832b9:
 
     # you "Yet I don't see a lot of you around..."
-    you "但我没看到你们有多少人……"
+    you "但我没看到你们有多少人...."
 
 # game/BKstory_events.rpy:8312
 translate schinese willow_relative_returns_45dac8b0:
 
     # relative "Oh, you'd be surprised. Some of us hide our 'animal' features pretty well..."
-    relative "噢,你会很惊讶的。我们有些人很擅长掩藏自己的'动物'特征……"
+    relative "噢,你会很惊讶的。我们有些人很擅长掩藏自己的'动物'特征...."
 
 # game/BKstory_events.rpy:8314
 translate schinese willow_relative_returns_a7a2b18e:
@@ -16150,7 +16150,7 @@ translate schinese willow_relative_returns_a7a2b18e:
 translate schinese willow_relative_returns_ac6481e9:
 
     # you "Yeah..."
-    you "是啊……"
+    you "是啊...."
 
 # game/BKstory_events.rpy:8318
 translate schinese willow_relative_returns_3c9cc461:
@@ -16162,7 +16162,7 @@ translate schinese willow_relative_returns_3c9cc461:
 translate schinese willow_relative_returns_62e0e761:
 
     # you "Well, surely you cannot blame Arios the all-mighty for these troubles? A righteous light must be shone on the Pagans..."
-    you "难道你不能把这些麻烦归咎于全能的阿里奥斯吗?正义的光明必须照射到异教徒身上……"
+    you "难道你不能把这些麻烦归咎于全能的太阳神吗?正义的光明必须照射到异教徒身上...."
 
 # game/BKstory_events.rpy:8323
 translate schinese willow_relative_returns_389ba7d4:
@@ -16180,7 +16180,7 @@ translate schinese willow_relative_returns_06cfbc50:
 translate schinese willow_relative_returns_bdb45132:
 
     # you "But... This is Arios's will..."
-    you "可是……这是阿里奥斯的意志啊……"
+    you "可是....这是太阳神的意志啊...."
 
 # game/BKstory_events.rpy:8329
 translate schinese willow_relative_returns_8a9bcfb5:
@@ -16192,13 +16192,13 @@ translate schinese willow_relative_returns_8a9bcfb5:
 translate schinese willow_relative_returns_42094ac0:
 
     # you "Such a hot woman... Pity she doesn't understand the one True religion..."
-    you "真是个美艳的女人……可惜她不明白唯一的真教。"
+    you "真是个美艳的女人....可惜她不明白唯一的真教。"
 
 # game/BKstory_events.rpy:8337
 translate schinese willow_relative_returns_23a2360d:
 
     # you "Yeah, I get you. Arios and his followers are a nuisance. I prefer the Goddess of the night..."
-    you "是啊,我懂你的意思。阿里奥斯和他的信徒真是烦人。我更喜欢夜之女神。"
+    you "是啊,我懂你的意思。太阳神和他的信徒真是烦人。我更喜欢夜之女神。"
 
 # game/BKstory_events.rpy:8339
 translate schinese willow_relative_returns_9b3164d0:
@@ -16210,19 +16210,19 @@ translate schinese willow_relative_returns_9b3164d0:
 translate schinese willow_relative_returns_13724a55:
 
     # relative "No offense, but the night isn't a Goddess. It is a part of nature, and thus is composed of many spirits..."
-    relative "不好意思,但夜晚并非女神。它只是大自然的一部分,由许多精灵构成……"
+    relative "不好意思,但夜晚并非女神。它只是大自然的一部分,由许多精灵构成...."
 
 # game/BKstory_events.rpy:8343
 translate schinese willow_relative_returns_79c6bf2b:
 
     # you "But... Shalia is the night incarnate... Surely she is no mere spirit..."
-    you "可是……夏莉亚就是夜晚的化身啊,她肯定不是什么微不足道的精灵……"
+    you "可是....夏莉亚就是夜晚的化身啊,她肯定不是什么微不足道的精灵...."
 
 # game/BKstory_events.rpy:8347
 translate schinese willow_relative_returns_18aab156:
 
     # relative "*sigh* Humans... Your people always need a simple explanation for everything..."
-    relative "*叹气*人类啊……你们总是需要一个简单的解释来解释一切事物……"
+    relative "*叹气*人类啊....你们总是需要一个简单的解释来解释一切事物...."
 
 # game/BKstory_events.rpy:8349
 translate schinese willow_relative_returns_d959effe:
@@ -16240,7 +16240,7 @@ translate schinese willow_relative_returns_40fb418f:
 translate schinese willow_relative_returns_1a50488a:
 
     # relative "Right? Humans just love these make-believe stories..."
-    relative "是吧?人类就是喜欢这些虚构的故事……"
+    relative "是吧?人类就是喜欢这些虚构的故事...."
 
 # game/BKstory_events.rpy:8359
 translate schinese willow_relative_returns_d0e1c81c:
@@ -16552,7 +16552,7 @@ translate schinese willow_relative_returns_7479c461:
 translate schinese farm_gizel_introduction_962ce8bb:
 
     # "You came back today to see how Gizel is doing with her new place."
-    "你今天回来看看吉泽在她新的农场过得怎么样。"
+    "你今天回来看看吉泽尔在她新的农场过得怎么样。"
 
 # game/BKstory_events.rpy:8536
 translate schinese farm_gizel_introduction_a683b533:
@@ -16576,7 +16576,7 @@ translate schinese farm_gizel_introduction_00b9cd7f:
 translate schinese farm_gizel_introduction_07377686:
 
     # you "I guess this place's magic is as powerful as Gizel says it is..."
-    you "看来这个地方的魔力正如吉泽所说的一样强大..."
+    you "看来这个地方的魔力正如吉泽尔所说的一样强大..."
 
 # game/BKstory_events.rpy:8546
 translate schinese farm_gizel_introduction_e15a324c:
@@ -16600,7 +16600,7 @@ translate schinese farm_gizel_introduction_926cf852:
 translate schinese farm_gizel_introduction_bfc236b2:
 
     # you "Maybe Gizel is a pet-lover?"
-    you "难道吉泽是个宠物爱好者?"
+    you "难道吉泽尔是个宠物爱好者?"
 
 # game/BKstory_events.rpy:8559
 translate schinese farm_gizel_introduction_f7a72cd7:
@@ -16780,7 +16780,7 @@ translate schinese farm_gizel_introduction_34f9ecf9:
 translate schinese farm_gizel_introduction_c6b0d418:
 
     # gizel shy "M-Man? Ahhaa..." with hpunch
-    gizel shy "唔……男人?啊哈哈..." with hpunch
+    gizel shy "唔....男人?啊哈哈..." with hpunch
 
 # game/BKstory_events.rpy:8645
 translate schinese farm_gizel_introduction_e4869533:
@@ -16960,13 +16960,13 @@ translate schinese farm_gizel_introduction_e66cc3a4:
 translate schinese farm_gizel_introduction_d94f9983:
 
     # gizel "On the surface, human females seem completely useless, much more fragile than beast people, much less sensitive than elves..."
-    gizel "表面上看,人类女性似乎完全没有用处,比野兽人类脆弱得多,比精灵不太敏感……"
+    gizel "表面上看,人类女性似乎完全没有用处,比野兽人类脆弱得多,比精灵不太敏感...."
 
 # game/BKstory_events.rpy:8735
 translate schinese farm_gizel_introduction_de1c0af2:
 
     # gizel smirk "But after extensive research, I have become convinced that there is more to human females than meets the dick. In fact, I believe their sexual compatibility is highest among all the races..."
-    gizel smirk "但经过广泛的研究,我已经确信,人类女性比看起来更有潜力。事实上,我相信她们的性兼容性是所有种族中最高的……"
+    gizel smirk "但经过广泛的研究,我已经确信,人类女性比看起来更有潜力。事实上,我相信她们的性兼容性是所有种族中最高的...."
 
 # game/BKstory_events.rpy:8738
 translate schinese farm_gizel_introduction_f650f997:
@@ -16990,13 +16990,13 @@ translate schinese farm_gizel_introduction_214d2db2:
 translate schinese farm_gizel_introduction_2a8194de:
 
     # you "And you're telling me all this, because...?"
-    you "你告诉我这些,是因为……?"
+    you "你告诉我这些,是因为....?"
 
 # game/BKstory_events.rpy:8747
 translate schinese farm_gizel_introduction_7d59160f:
 
     # gizel "Well..."
-    gizel "嗯……"
+    gizel "嗯...."
 
 # game/BKstory_events.rpy:8749
 translate schinese farm_gizel_introduction_ca700517:
@@ -17008,7 +17008,7 @@ translate schinese farm_gizel_introduction_ca700517:
 translate schinese farm_gizel_introduction_b0a689b7:
 
     # you "Uh..."
-    you "呃……"
+    you "呃...."
 
 # game/BKstory_events.rpy:8753
 translate schinese farm_gizel_introduction_472143c7:
@@ -17032,25 +17032,25 @@ translate schinese farm_gizel_introduction_7d3971f0:
 translate schinese farm_gizel_introduction_008490f1:
 
     # gizel normal "Listen to me. First of all, I promise I will not damage your merchandise, ok? Or I won't damage their looks, anyway..."
-    gizel normal "听我说,首先我保证不会伤害你的商品,好吗?至少不会伤害她们的外表……"
+    gizel normal "听我说,首先我保证不会伤害你的商品,好吗?至少不会伤害她们的外表...."
 
 # game/BKstory_events.rpy:8761
 translate schinese farm_gizel_introduction_5a82733d:
 
     # gizel blush "But more importantly, my training can make your slaves a lot more obedient..."
-    gizel blush "但更重要的是,我的训练可以让你的奴隶更加服从……"
+    gizel blush "但更重要的是,我的训练可以让你的奴隶更加服从...."
 
 # game/BKstory_events.rpy:8763
 translate schinese farm_gizel_introduction_71c59212:
 
     # gizel "And I can teach them so many tricks... Eons of experience. With my training, they'll be ready to fulfill your customers' darkest fantasies..."
-    gizel "我还可以教会她们很多技巧……有数不尽的经验。有了我的训练,她们就能满足客户最黑暗的幻想……"
+    gizel "我还可以教会她们很多技巧....有数不尽的经验。有了我的训练,她们就能满足客户最黑暗的幻想...."
 
 # game/BKstory_events.rpy:8765
 translate schinese farm_gizel_introduction_e53668db:
 
     # you "Hmm..."
-    you "嗯……"
+    you "嗯...."
 
 # game/BKstory_events.rpy:8767
 translate schinese farm_gizel_introduction_f6ef8cb1:
@@ -17068,7 +17068,7 @@ translate schinese farm_gizel_introduction_07001372:
 translate schinese farm_gizel_introduction_c052bd84:
 
     # gizel normal "Well... You remember Bob, right?"
-    gizel normal "嗯……你还记得鲍勃吗?"
+    gizel normal "嗯....你还记得鲍勃吗?"
 
 # game/BKstory_events.rpy:8773
 translate schinese farm_gizel_introduction_3fcd1f9b:
@@ -17086,7 +17086,7 @@ translate schinese farm_gizel_introduction_b365119b:
 translate schinese farm_gizel_introduction_2f0e8369:
 
     # you "A... Stallion?"
-    you "一头……种马?"
+    you "一头....种马?"
 
 # game/BKstory_events.rpy:8781
 translate schinese farm_gizel_introduction_eb837711:
@@ -17104,19 +17104,19 @@ translate schinese farm_gizel_introduction_943e953c:
 translate schinese farm_gizel_introduction_d9a2a181:
 
     # you "B... Bred?"
-    you "繁……衍?"
+    you "繁....衍?"
 
 # game/BKstory_events.rpy:8787
 translate schinese farm_gizel_introduction_3ee319ff:
 
     # gizel smirk "That's right. The mages there are truly evil... I love it. They raise stallions as sex slaves from birth, breeding them selectively for their unnaturally large cocks."
-    gizel smirk "没错。那里的法师们真是邪恶……我很喜欢。他们从出生就将种马培养成性奴,选择性地培养他们那不自然的巨大阴茎。"
+    gizel smirk "没错。那里的法师们真是邪恶....我很喜欢。他们从出生就将种马培养成性奴,选择性地培养他们那不自然的巨大阴茎。"
 
 # game/BKstory_events.rpy:8790
 translate schinese farm_gizel_introduction_74cfc2ca:
 
     # gizel "Using spells and coercion, they help them grow into hulking sex beasts by the time they reach adulthood... Ready to serve their masters blindly."
-    gizel "通过咒语和强制,他们帮助它们在成年时长成狂野的性怪物……准备盲目地服侍主人。"
+    gizel "通过咒语和强制,他们帮助它们在成年时长成狂野的性怪物....准备盲目地服侍主人。"
 
 # game/BKstory_events.rpy:8792
 translate schinese farm_gizel_introduction_410dd5ac:
@@ -17128,7 +17128,7 @@ translate schinese farm_gizel_introduction_410dd5ac:
 translate schinese farm_gizel_introduction_74173776:
 
     # gizel "Of course not! Stallions are magically lobotomized... They are incapable of independent thought."
-    gizel "当然不会!种马被魔法洗脑……他们无法独立思考。"
+    gizel "当然不会!种马被魔法洗脑....他们无法独立思考。"
 
 # game/BKstory_events.rpy:8798
 translate schinese farm_gizel_introduction_4f09f5aa:
@@ -17632,7 +17632,7 @@ translate schinese farm_first_beast_14db5ee1:
 translate schinese farm_first_beast_5580df0a:
 
     # milkmaid "Hello, mistress Gizel!"
-    milkmaid "您好,吉泽夫人!"
+    milkmaid "您好,吉泽尔夫人!"
 
 # game/BKstory_events.rpy:9033
 translate schinese farm_first_beast_556f5efd:
@@ -17794,7 +17794,7 @@ translate schinese farm_first_beast_f589e265:
 translate schinese farm_first_beast_5df24ea0:
 
     # "Gizel goes behind you and pushes you forward. As she does, her hands bury themselves in the flesh of your back in a strange way, as if you had no backbone."
-    "吉泽走到你身后,推着你向前走。当她这么做时,她的双手以一种奇怪的方式陷入你背部的肉里,仿佛你没有脊骨一般。"
+    "吉泽尔走到你身后,推着你向前走。当她这么做时,她的双手以一种奇怪的方式陷入你背部的肉里,仿佛你没有脊骨一般。"
 
 # game/BKstory_events.rpy:9109
 translate schinese farm_first_beast_d52da42f:
@@ -17860,7 +17860,7 @@ translate schinese farm_first_beast_94a1b640:
 translate schinese farm_first_beast_157056b8:
 
     # "Gizel viciously kicks you in the back, sending you bouncing straight into the milk girl." with vpunch
-    "吉泽狠狠地踢了你的背部,把你直接踢到了牛奶女孩身上。" with vpunch
+    "吉泽尔狠狠地踢了你的背部,把你直接踢到了牛奶女孩身上。" with vpunch
 
 # game/BKstory_events.rpy:9139
 translate schinese farm_first_beast_dc3880d6:
@@ -17950,7 +17950,7 @@ translate schinese farm_first_beast_440ba90b:
 translate schinese farm_first_beast_958695e1:
 
     # milkmaid "Please, mistress Gizel... Your pet is acting weird..." with vpunch
-    milkmaid "求您了,吉泽小姐...您的宠物在表现得很奇怪..." with vpunch
+    milkmaid "求您了,吉泽尔小姐...您的宠物在表现得很奇怪..." with vpunch
 
 # game/BKstory_events.rpy:9179
 translate schinese farm_first_beast_3839cd6f:
@@ -18298,7 +18298,7 @@ translate schinese farm_first_beast_d0550a64:
 translate schinese farm_first_beast_5acb25a1:
 
     # "Gizel looks at you slyly."
-    "吉泽斜睨着你。"
+    "吉泽尔斜睨着你。"
 
 # game/BKstory_events.rpy:9352
 translate schinese farm_first_beast_2518ec4f:
@@ -18364,7 +18364,7 @@ translate schinese farm_first_beast_0ef8fbe1:
 translate schinese farm_first_monster_bd14abf4:
 
     # "You decide to pay a visit to Gizel to check on her new pensioner."
-    "你决定去拜访吉泽,看看她那位新来的房客。"
+    "你决定去拜访吉泽尔,看看她那位新来的房客。"
 
 # game/BKstory_events.rpy:9403
 translate schinese farm_first_monster_3915fb31:
@@ -18376,7 +18376,7 @@ translate schinese farm_first_monster_3915fb31:
 translate schinese farm_first_monster_17e036ed:
 
     # you "Hi there, Gizel."
-    you "嗨,吉泽。"
+    you "嗨,吉泽尔。"
 
 # game/BKstory_events.rpy:9413
 translate schinese farm_first_monster_f3dc3424:
@@ -18934,7 +18934,7 @@ translate schinese farm_first_monster_0cfce900:
 translate schinese farm_first_monster_1222d7a3:
 
     # "Bringing another thick tentacle in play, the monster starts playing harder with Gizel's soft mound and pussy lips."
-    "怪物又用一条粗壮的触手加入进来,开始更加粗暴地玩弄吉泽丽的柔软阴阜和阴唇。"
+    "怪物又用一条粗壮的触手加入进来,开始更加粗暴地玩弄吉泽尔丽的柔软阴阜和阴唇。"
 
 # game/BKstory_events.rpy:9667
 translate schinese farm_first_monster_9540a559:
@@ -18958,7 +18958,7 @@ translate schinese farm_first_monster_0a003461:
 translate schinese farm_first_monster_578e37ed:
 
     # "As if moving in sync with Gizel's wishes, the monster pokes Gizel's tiny pink asshole with another large tentacle."
-    "好像在回应吉泽丽的愿望一样,怪物用另一根粗大的触手戳弄起她娇小的粉色后穴。"
+    "好像在回应吉泽尔丽的愿望一样,怪物用另一根粗大的触手戳弄起她娇小的粉色后穴。"
 
 # game/BKstory_events.rpy:9675
 translate schinese farm_first_monster_fab03a14:
@@ -18970,7 +18970,7 @@ translate schinese farm_first_monster_fab03a14:
 translate schinese farm_first_monster_c38a69a8:
 
     # "Gizel is completely enthralled by the sensations now, and she looks expectantly at the tentacles swirling around her, waiting for the monster's next move."
-    "吉泽丽已经完全沦陷在这种感觉之中,她期待地看着缠绕着她的触手,等待着怪物的下一步动作。"
+    "吉泽尔丽已经完全沦陷在这种感觉之中,她期待地看着缠绕着她的触手,等待着怪物的下一步动作。"
 
 # game/BKstory_events.rpy:9683
 translate schinese farm_first_monster_79a3f20a:
@@ -18982,7 +18982,7 @@ translate schinese farm_first_monster_79a3f20a:
 translate schinese farm_first_monster_45093bcf:
 
     # "Gizel screams with pleasure as the monster arches one of his tentacles against her tiny pussy, abruptly shoving the tip inside."
-    "当怪物用一条触手猛地插入吉泽丽娇小的阴部,她发出了愉悦的尖叫。"
+    "当怪物用一条触手猛地插入吉泽尔丽娇小的阴部,她发出了愉悦的尖叫。"
 
 # game/BKstory_events.rpy:9687
 translate schinese farm_first_monster_4f35519e:
@@ -19000,19 +19000,19 @@ translate schinese farm_first_monster_473b649d:
 translate schinese farm_first_monster_c6389a5d:
 
     # "You watch with interest as Gizel surrenders to the feeling, tentacles being pumped repeatedly in and out of her deformed pussy."
-    "你带着兴趣观看着吉泽丽屈服于这种感觉,被触手一次次地抽插貫穿。"
+    "你带着兴趣观看着吉泽尔丽屈服于这种感觉,被触手一次次地抽插貫穿。"
 
 # game/BKstory_events.rpy:9695
 translate schinese farm_first_monster_dc007cea:
 
     # "The pacing of the monster increases, as if answering Gizel's secret wishes."
-    "怪物的速度越来越快,仿佛在回应吉泽丽内心的渴望。"
+    "怪物的速度越来越快,仿佛在回应吉泽尔丽内心的渴望。"
 
 # game/BKstory_events.rpy:9699
 translate schinese farm_first_monster_b392541d:
 
     # "The thick tentacles keeping Gizel in place seem to tighten around her, almost crushing her frail body. She seems even more turned on by this."
-    "紧紧缠绕住吉泽丽的粗壮触手似乎越收越紧,几乎要碾碎她单薄的身体。但她看起来更兴奋了。"
+    "紧紧缠绕住吉泽尔丽的粗壮触手似乎越收越紧,几乎要碾碎她单薄的身体。但她看起来更兴奋了。"
 
 # game/BKstory_events.rpy:9701
 translate schinese farm_first_monster_acf01a1a:
@@ -19030,7 +19030,7 @@ translate schinese farm_first_monster_933a21bd:
 translate schinese farm_first_monster_f6e713fd:
 
     # "Gizel cries tears of pleasure and pain as the monster continuously ravages her small body."
-    "吉泽丽随着持续的蹂躏发出了痛苦欢愉交织的哭喊。"
+    "吉泽尔丽随着持续的蹂躏发出了痛苦欢愉交织的哭喊。"
 
 # game/BKstory_events.rpy:9709
 translate schinese farm_first_monster_3d3ee1b4:
@@ -19048,7 +19048,7 @@ translate schinese farm_first_monster_6c74fc33:
 translate schinese farm_first_monster_031718bb:
 
     # "Gizel's love juices mix with the monster's pre-cum and start dripping out of her ravaged pussy. The tentacles in her pussy are completely messing up her insides."
-    "吉泽丽的爱液和怪物的前液混杂在一起,从她被蹂躏的阴道中汩汩流出。触手彻底破坏了她的内部。"
+    "吉泽尔丽的爱液和怪物的前液混杂在一起,从她被蹂躏的阴道中汩汩流出。触手彻底破坏了她的内部。"
 
 # game/BKstory_events.rpy:9727
 translate schinese farm_first_monster_541b2fc1:
@@ -19060,13 +19060,13 @@ translate schinese farm_first_monster_541b2fc1:
 translate schinese farm_first_monster_fad94e1c:
 
     # "Squeezing gizel like a broken toy, the monster pumps her full of his thick semen, his tentacles shaking uncontrollably as he pours his load."
-    "怪物像玩坏了的玩具一样紧紧抱住吉泽丽,将浓稠的精液尽数浇灌进她的身体,它的触手颤抖着泄了出来。"
+    "怪物像玩坏了的玩具一样紧紧抱住吉泽尔丽,将浓稠的精液尽数浇灌进她的身体,它的触手颤抖着泄了出来。"
 
 # game/BKstory_events.rpy:9734
 translate schinese farm_first_monster_7f2a5521:
 
     # "Gizel cannot take it anymore. She is rocked by multiple, continuous orgasms as the monster spits out its cum inside her willing pussy." with flash
-    "吉泽丽再也受不了了。她被一次又一次的高潮席卷,而怪物则源源不断地将精液喷进她渴望的下体。" with flash
+    "吉泽尔丽再也受不了了。她被一次又一次的高潮席卷,而怪物则源源不断地将精液喷进她渴望的下体。" with flash
 
 # game/BKstory_events.rpy:9738
 translate schinese farm_first_monster_cf9a2450:
@@ -19084,7 +19084,7 @@ translate schinese farm_first_monster_4212c024:
 translate schinese farm_first_monster_a83a27d0:
 
     # "Looking at you with glassy eyes, all fight knocked out of her, Gizel implores you to help her out."
-    "吉泽丽用失去斗志的眼神看向你,乞求你来救救她。"
+    "吉泽尔丽用失去斗志的眼神看向你,乞求你来救救她。"
 
 # game/BKstory_events.rpy:9748
 translate schinese farm_first_monster_edab5ccf:
@@ -19102,13 +19102,13 @@ translate schinese farm_first_monster_7911eb14:
 translate schinese farm_first_monster_d12ad2f7:
 
     # "Gizel cannot even stand up and walk. You'll have to help her up."
-    "吉泽连站起来走路都做不到。你得帮助她站起来。"
+    "吉泽尔连站起来走路都做不到。你得帮助她站起来。"
 
 # game/BKstory_events.rpy:9758
 translate schinese farm_first_monster_b024307a:
 
     # "Carefully going around the resting monster, you reach Gizel and help her up."
-    "小心绕过休息的怪物,你走到吉泽身边,帮助她站了起来。"
+    "小心绕过休息的怪物,你走到吉泽尔身边,帮助她站了起来。"
 
 # game/BKstory_events.rpy:9762
 translate schinese farm_first_monster_c52436f5:
@@ -19120,7 +19120,7 @@ translate schinese farm_first_monster_c52436f5:
 translate schinese farm_first_monster_6d46f1c1:
 
     # "With what little strength she has left, Gizel stumbles along with you, thick monster cum still dripping down her legs as she walks out."
-    "凭借着仅剩的力量,吉泽跌跌撞撞地跟着你走出去,怪物的浓稠体液还在从双腿间滴落。"
+    "凭借着仅剩的力量,吉泽尔跌跌撞撞地跟着你走出去,怪物的浓稠体液还在从双腿间滴落。"
 
 # game/BKstory_events.rpy:9773
 translate schinese farm_first_monster_0723374a:
@@ -19210,7 +19210,7 @@ translate schinese farm_first_monster_b5016fe4:
 translate schinese farm_first_monster_2d1a3eaa:
 
     # "Slowly stepping back from Gizel, you pretend not to hear her plea."
-    "你装作没听见吉泽的哀求,慢慢地从她身边退开。"
+    "你装作没听见吉泽尔的哀求,慢慢地从她身边退开。"
 
 # game/BKstory_events.rpy:9813
 translate schinese farm_first_monster_925cedcd:
@@ -19222,7 +19222,7 @@ translate schinese farm_first_monster_925cedcd:
 translate schinese farm_first_monster_5987f9fe:
 
     # you "I've got a business to run, gotta go back to the brothel! See ya, Gizel!"
-    you "我得回到青楼去做生意了!再见,吉泽!"
+    you "我得回到青楼去做生意了!再见,吉泽尔!"
 
 # game/BKstory_events.rpy:9817
 translate schinese farm_first_monster_cf2a503b:
@@ -19246,7 +19246,7 @@ translate schinese farm_first_monster_eddfddf4:
 translate schinese farm_first_monster_8715c3aa:
 
     # "A tentacle grabbing her leg, Gizel is pulled back towards the monster den."
-    "一条触手抓住了吉泽的腿,把她拽回了怪物的巢穴。"
+    "一条触手抓住了吉泽尔的腿,把她拽回了怪物的巢穴。"
 
 # game/BKstory_events.rpy:9829
 translate schinese farm_first_monster_b619b6e0:
@@ -19264,7 +19264,7 @@ translate schinese farm_first_monster_d6f37a66:
 translate schinese farm_first_monster_f508dcaf:
 
     # "You later learn that [monster.name] the monster had fun with Gizel all night, until she could finally get it under control. Although Gizel was pretty mad, she decided to keep [monster.name] for its undeniable raping skills."
-    "后来你得知,整个晚上[monster.name]一直在折磨吉泽,直到她终于把它控制住。虽然吉泽非常生气,但她决定留下[monster.name],因为它无可辩驳的强暴技能。"
+    "后来你得知,整个晚上[monster.name]一直在折磨吉泽尔,直到她终于把它控制住。虽然吉泽尔非常生气,但她决定留下[monster.name],因为它无可辩驳的强暴技能。"
 
 # game/BKstory_events.rpy:9841
 translate schinese farm_first_monster_9fad8d3b:
@@ -19618,7 +19618,7 @@ translate schinese farm_first_machine_6cd07fd8:
 translate schinese farm_first_machine_c88c5ffc:
 
     # "Gizel is dangling from a strange array of machinery, ensnared in what looks like a strange mix beween bondage chains and dildos."
-    "吉泽挂在一串奇怪的机械装置上,被看起来是束缚链和假阳具的东西缠住了。"
+    "吉泽尔挂在一串奇怪的机械装置上,被看起来是束缚链和假阳具的东西缠住了。"
 
 # game/BKstory_events.rpy:10059
 translate schinese farm_first_machine_8474a4e0:
@@ -19972,7 +19972,7 @@ translate schinese farm_first_machine_8a79aea1:
 translate schinese farm_first_machine_b1628fc3:
 
     # gizel "I'll... I'll kill you..."
-    gizel "我会……我会杀了你的……"
+    gizel "我会....我会杀了你的...."
 
 # game/BKstory_events.rpy:10251
 translate schinese farm_first_machine_27fa9f7c:
@@ -19996,19 +19996,19 @@ translate schinese farm_first_machine_102ef9f9:
 translate schinese farm_first_machine_dc479fcd:
 
     # gizel "Hey! Come, come back here! I'll... Hey!" with vpunch
-    gizel "嘿!过来,过来这里!我会……嘿!" with vpunch
+    gizel "嘿!过来,过来这里!我会....嘿!" with vpunch
 
 # game/BKstory_events.rpy:10261
 translate schinese farm_first_machine_647ef298:
 
     # "Thanks to your invaluable help, Gizel has learned from first-hand experience how [name] works. You saved the day once again. Well done!"
-    "多亏了你无价的帮助,吉泽亲身体验到了[name]的工作方式。你再次拯救了局面。干得好!"
+    "多亏了你无价的帮助,吉泽尔亲身体验到了[name]的工作方式。你再次拯救了局面。干得好!"
 
 # game/BKstory_events.rpy:10271
 translate schinese farm_first_stallion_8c52a5e1:
 
     # "Today's perfect weather is great for enjoying a little stroll in the countryside. You decide to pay Gizel a visit."
-    "今天的天气真好,适合在乡间散散步。你决定去看看吉泽。"
+    "今天的天气真好,适合在乡间散散步。你决定去看看吉泽尔。"
 
 # game/BKstory_events.rpy:10277
 translate schinese farm_first_stallion_3f339fb7:
@@ -20032,7 +20032,7 @@ translate schinese farm_first_stallion_39ac9762:
 translate schinese farm_first_stallion_65566268:
 
     # gizel blush "Mmmmh, aaah..."
-    gizel blush "唔,啊……"
+    gizel blush "唔,啊...."
 
 # game/BKstory_events.rpy:10294
 translate schinese farm_first_stallion_0ff71929:
@@ -20050,7 +20050,7 @@ translate schinese farm_first_stallion_fc3a327a:
 translate schinese farm_first_stallion_c03f7f6c:
 
     # gizel blush "Oh, [MC.name]... Hi..."
-    gizel blush "[MC.name]……你好……"
+    gizel blush "[MC.name]....你好...."
 
 # game/BKstory_events.rpy:10302
 translate schinese farm_first_stallion_9cc1fbee:
@@ -20068,25 +20068,25 @@ translate schinese farm_first_stallion_b6bfc4a1:
 translate schinese farm_first_stallion_27a62c12:
 
     # "The huge man who is busy grinding his fat dick against Gizel's pussy turns his muscular neck and gives you an empty stare."
-    "那个正忙着用他粗壮的阴茎在吉泽下体摩擦的大汉转过肌肉发达的脖子,向你投来一个空茫的注视。"
+    "那个正忙着用他粗壮的阴茎在吉泽尔下体摩擦的大汉转过肌肉发达的脖子,向你投来一个空茫的注视。"
 
 # game/BKstory_events.rpy:10308
 translate schinese farm_first_stallion_29805d75:
 
     # you "Hi there, big fella... Bob, was it?"
-    you "嗨,大个子……叫你什么来着,鲍勃是吗?"
+    you "嗨,大个子....叫你什么来着,鲍勃是吗?"
 
 # game/BKstory_events.rpy:10314
 translate schinese farm_first_stallion_744c8b88:
 
     # gizel "That's not Bob! It's [name], the new slave you bought... Mmmmh, aaah..."
-    gizel "那不是鲍勃!是你新买的奴隶[name]……唔,啊……"
+    gizel "那不是鲍勃!是你新买的奴隶[name]....唔,啊...."
 
 # game/BKstory_events.rpy:10320
 translate schinese farm_first_stallion_a479ae0d:
 
     # gizel "Oh, that's it, big boy, give it to me..."
-    gizel "哦,就是这样,大个子,给我吧……"
+    gizel "哦,就是这样,大个子,给我吧...."
 
 # game/BKstory_events.rpy:10322
 translate schinese farm_first_stallion_44d6e106:
@@ -20098,7 +20098,7 @@ translate schinese farm_first_stallion_44d6e106:
 translate schinese farm_first_stallion_aae0cac8:
 
     # gizel "Yes... Push it inside!"
-    gizel "是的……插进来!"
+    gizel "是的....插进来!"
 
 # game/BKstory_events.rpy:10326
 translate schinese farm_first_stallion_fc3a327a_1:
@@ -20752,7 +20752,7 @@ translate schinese satella_first_visit_b0a689b7:
 translate schinese satella_first_visit_1c23674e:
 
     # satella "Rodrigo was a templar of Arios, and he was very naughty. He tried to destroy our shrine, can you believe it?"
-    satella "Rodrigo曾是阿里奥斯的圣殿骑士,非常调皮捣蛋。你敢相信他竟然想摧毁我们的神社?"
+    satella "Rodrigo曾是太阳神的圣殿骑士,非常调皮捣蛋。你敢相信他竟然想摧毁我们的神社?"
 
 # game/BKstory_events.rpy:10716
 translate schinese satella_first_visit_f9b7c4b5:
@@ -25288,7 +25288,7 @@ translate schinese kosmo_returns_929983c5:
 translate schinese kosmo_returns_93384b94:
 
     # kosmo "Grrrr..." with vpunch
-    kosmo "咕噜咕噜……" with vpunch
+    kosmo "咕噜咕噜...." with vpunch
 
 # game/BKstory_events.rpy:13444
 translate schinese kosmo_returns_c98a64c8:
@@ -26656,7 +26656,7 @@ translate schinese no_money_a7bcc003:
 translate schinese no_money_c2bb27e1:
 
     # you "What the... *cough* *cough*"
-    you "什么……*咳嗽**咳嗽*"
+    you "什么....*咳嗽**咳嗽*"
 
 # game/BKstory_events.rpy:14108
 translate schinese no_money_e7cdaab3:
@@ -26668,7 +26668,7 @@ translate schinese no_money_e7cdaab3:
 translate schinese no_money_333cccf6:
 
     # you "Who... Who the hell are you?"
-    you "你……你到底是谁？"
+    you "你....你到底是谁？"
 
 # game/BKstory_events.rpy:14112
 translate schinese no_money_33b7dc34:
@@ -26680,7 +26680,7 @@ translate schinese no_money_33b7dc34:
 translate schinese no_money_ceef6a60:
 
     # banker "So this is the place, uh... I figured it would be run down, but still..."
-    banker "原来就是这里啊……我猜它应该很破旧,不过还是……"
+    banker "原来就是这里啊....我猜它应该很破旧,不过还是...."
 
 # game/BKstory_events.rpy:14116
 translate schinese no_money_320a8f59:
@@ -26704,13 +26704,13 @@ translate schinese no_money_ba29a9ca:
 translate schinese no_money_988fc9f1:
 
     # "She must be one of the forest people... Although she looks very worldly."
-    "她一定是森林之人……尽管她看起来很通达世事。"
+    "她一定是森林之人....尽管她看起来很通达世事。"
 
 # game/BKstory_events.rpy:14126
 translate schinese no_money_79cacbd9:
 
     # sill "She's one of the Inari... The fox people... Watch out, Master, maybe she is cursed! *whisper*"
-    sill "她是稻荷神的子民……狐狸人……小心点,主人,她或许受到了诅咒!*悄悄地说*"
+    sill "她是稻荷神的子民....狐狸人....小心点,主人,她或许受到了诅咒!*悄悄地说*"
 
 # game/BKstory_events.rpy:14128
 translate schinese no_money_0c1a2bb4:
@@ -26794,7 +26794,7 @@ translate schinese no_money_a34c2921:
 translate schinese no_money_a37ebbab:
 
     # you "No, err, we're doing fine..."
-    you "不,呃,我们还好……"
+    you "不,呃,我们还好...."
 
 # game/BKstory_events.rpy:14158
 translate schinese no_money_3c45aef3:
@@ -31432,7 +31432,7 @@ translate schinese bast_informant_274b9724:
 translate schinese bast_informant_ee8db49a:
 
     # "Stranger" "Oh yes, my prince, yesss... *cough* Gimme, gimme the g-g-gold..."
-    "Stranger" "哦是的,我的王子殿下,是的……*咳嗽*给我,给我黄金……"
+    "Stranger" "哦是的,我的王子殿下,是的....*咳嗽*给我,给我黄金...."
 
 # game/BKstory_events.rpy:16597
 translate schinese bast_informant_ab5b6db7:
@@ -31450,7 +31450,7 @@ translate schinese bast_informant_ee6bfadb:
 translate schinese bast_informant_8021e725:
 
     # "Stranger" "Gold, oh brother, I got me some g-g-gold..."
-    "Stranger" "黄金,哦天哪,我有了一些黄金……"
+    "Stranger" "黄金,哦天哪,我有了一些黄金...."
 
 # game/BKstory_events.rpy:16603
 translate schinese bast_informant_3b8b35e0:
@@ -31462,7 +31462,7 @@ translate schinese bast_informant_3b8b35e0:
 translate schinese bast_informant_5b7ea1df:
 
     # "Stranger" "Spice! Quick, I want spice... Oh, poor Billy needs the spice..."
-    "Stranger" "香料!快,我要香料……哦,可怜的比利需要香料……"
+    "Stranger" "香料!快,我要香料....哦,可怜的比利需要香料...."
 
 # game/BKstory_events.rpy:16607
 translate schinese bast_informant_f516bcac:
@@ -31474,13 +31474,13 @@ translate schinese bast_informant_f516bcac:
 translate schinese bast_informant_6a064b05:
 
     # you "Poor soul..."
-    you "可怜的灵魂……"
+    you "可怜的灵魂...."
 
 # game/BKstory_events.rpy:16612
 translate schinese bast_informant_f9de3fda:
 
     # you "Sick bastard..."
-    you "该死的家伙……"
+    you "该死的家伙...."
 
 # game/BKstory_events.rpy:16614
 translate schinese bast_informant_df908fc8:
@@ -31498,7 +31498,7 @@ translate schinese bast_informant_34ada461:
 translate schinese bast_informant_c11b8cc2:
 
     # "Stranger" "B-b-but..."
-    "Stranger" "但是但是……"
+    "Stranger" "但是但是...."
 
 # game/BKstory_events.rpy:16623
 translate schinese bast_informant_d8336b6e:
@@ -31510,7 +31510,7 @@ translate schinese bast_informant_d8336b6e:
 translate schinese bast_informant_012a292f:
 
     # "Stranger" "F-fine! I'll find someone who's interested in this... I don't need you!"
-    "Stranger" "好吧!我会找到有兴趣的人的……我不需要你!"
+    "Stranger" "好吧!我会找到有兴趣的人的....我不需要你!"
 
 # game/BKstory_events.rpy:16627
 translate schinese bast_informant_979e9e50:
@@ -31522,7 +31522,7 @@ translate schinese bast_informant_979e9e50:
 translate schinese bast_informant_1633b198:
 
     # you "Poor guy's only a month from the grave, by the looks of him... *shiver*"
-    you "看起来他只有一个月的寿命了……*颤抖*"
+    you "看起来他只有一个月的寿命了....*颤抖*"
 
 # game/BKstory_events.rpy:16632
 translate schinese bast_informant_cbbc6f30:
@@ -31534,7 +31534,7 @@ translate schinese bast_informant_cbbc6f30:
 translate schinese bast_informant_92c014bd:
 
     # you "Filthy son of a... I should have killed him when I had the chance."
-    you "肮脏的混蛋……我当时就应该杀了他。"
+    you "肮脏的混蛋....我当时就应该杀了他。"
 
 # game/BKstory_events.rpy:16642
 translate schinese bast_informant_10a67980:
@@ -31588,7 +31588,7 @@ translate schinese bast_informant_0d628996:
 translate schinese bast_informant_ca1170ca:
 
     # you "Well... Sounds like she was quite taken with the guy..."
-    you "看来她对这家伙情有独钟啊……"
+    you "看来她对这家伙情有独钟啊...."
 
 # game/BKstory_events.rpy:16682
 translate schinese bast_informant_52d0af09:
@@ -31600,7 +31600,7 @@ translate schinese bast_informant_52d0af09:
 translate schinese bast_informant_45a1409c:
 
     # you " Could it be that he..."
-    you "难道他就是……"
+    you "难道他就是...."
 
 # game/BKstory_events.rpy:16686
 translate schinese bast_informant_829d8845:
@@ -32302,7 +32302,7 @@ translate schinese trade_100_resources_0f2c9781:
 translate schinese trade_100_resources_f8f01eab:
 
     # bast "There's... One more thing... *blush*"
-    bast "还有……一件事……*脸红*"
+    bast "还有....一件事....*脸红*"
 
 # game/BKstory_events.rpy:17020
 translate schinese trade_100_resources_c55a7c1c:
@@ -32320,19 +32320,19 @@ translate schinese trade_100_resources_b9f03b8c:
 translate schinese trade_100_resources_a75aaea6:
 
     # bast "I have no right to ask more of you... You've helped me so much already..."
-    bast "我没资格再向你要求什么……你已经帮了我很多了……"
+    bast "我没资格再向你要求什么....你已经帮了我很多了...."
 
 # game/BKstory_events.rpy:17026
 translate schinese trade_100_resources_3684338f:
 
     # bast "But..."
-    bast "但是……"
+    bast "但是...."
 
 # game/BKstory_events.rpy:17028
 translate schinese trade_100_resources_47c16a06:
 
     # bast "Would you... "
-    bast "你愿意……"
+    bast "你愿意...."
 
 # game/BKstory_events.rpy:17030
 translate schinese trade_100_resources_5fcd14e0:
@@ -32344,25 +32344,25 @@ translate schinese trade_100_resources_5fcd14e0:
 translate schinese trade_100_resources_2f5af105:
 
     # you "Of cours... Whaaat?"
-    you "当然……什么?！"
+    you "当然....什么?！"
 
 # game/BKstory_events.rpy:17034
 translate schinese trade_100_resources_0d59571a:
 
     # bast "Look, I'm not asking you for commitment, or a relationship... I'm not ready..."
-    bast "看,我不是要求你承诺或是恋爱关系……我还没准备好……"
+    bast "看,我不是要求你承诺或是恋爱关系....我还没准备好...."
 
 # game/BKstory_events.rpy:17036
 translate schinese trade_100_resources_c4b68ac4:
 
     # bast "But... It's been 5 years... I'm still young, and... I want to live a normal life. But there's this cloud that hangs over me..."
-    bast "但是……已经5年了……我还年轻,我想过正常的生活。可是我心里一直笼罩着一团阴影……"
+    bast "但是....已经5年了....我还年轻,我想过正常的生活。可是我心里一直笼罩着一团阴影...."
 
 # game/BKstory_events.rpy:17038
 translate schinese trade_100_resources_079031b9:
 
     # bast "You're the only one I can trust with this. Besides, I... Err..."
-    bast "你是我唯一能信任的人。另外,我……呃……"
+    bast "你是我唯一能信任的人。另外,我....呃...."
 
 # game/BKstory_events.rpy:17040
 translate schinese trade_100_resources_d150c272:
@@ -32374,7 +32374,7 @@ translate schinese trade_100_resources_d150c272:
 translate schinese trade_100_resources_d57ab8a5:
 
     # bast "I think you're considerate, and handsome and... I wouldn't mind if you... *blush*"
-    bast "我觉得你很周到,而且很英俊,我也不介意你……*脸红*"
+    bast "我觉得你很周到,而且很英俊,我也不介意你....*脸红*"
 
 # game/BKstory_events.rpy:17045
 translate schinese trade_100_resources_ac89493c:
@@ -32410,7 +32410,7 @@ translate schinese bast_titjob_ebd521c4:
 translate schinese bast_titjob_f8f6f23f:
 
     # you "Finally... I was dying to see your naked tits..."
-    you "终于……我好想看到你的裸乳……"
+    you "终于....我好想看到你的裸乳...."
 
 # game/BKstory_events.rpy:17081
 translate schinese bast_titjob_3ad661a7:
@@ -32422,13 +32422,13 @@ translate schinese bast_titjob_3ad661a7:
 translate schinese bast_titjob_0c725e74:
 
     # you "You're going to make those big knockers of yours useful..."
-    you "你要把那对大奶子派上用场了……"
+    you "你要把那对大奶子派上用场了...."
 
 # game/BKstory_events.rpy:17085
 translate schinese bast_titjob_ae63c28a:
 
     # bast "Do you want me to... rub it? *blush*"
-    bast "你想让我……揉它吗?*脸红*"
+    bast "你想让我....揉它吗?*脸红*"
 
 # game/BKstory_events.rpy:17087
 translate schinese bast_titjob_10559c6c:
@@ -32452,7 +32452,7 @@ translate schinese bast_titjob_2ef6a719:
 translate schinese bast_titjob_e53668db:
 
     # you "Hmm..."
-    you "嗯……"
+    you "嗯...."
 
 # game/BKstory_events.rpy:17099
 translate schinese bast_titjob_76233a6f:
@@ -32812,7 +32812,7 @@ translate schinese bast_titjob_c1ba6556:
 translate schinese bast_titjob_46a80b66:
 
     # bast "Aaah..."
-    bast "啊……"
+    bast "啊...."
 
 # game/BKstory_events.rpy:17249
 translate schinese bast_titjob_e489c174:
@@ -32824,7 +32824,7 @@ translate schinese bast_titjob_e489c174:
 translate schinese bast_titjob_e8931011:
 
     # you "Muhahaha... That was good..."
-    you "哈哈哈哈……很好……"
+    you "哈哈哈哈....很好...."
 
 # game/BKstory_events.rpy:17253
 translate schinese bast_titjob_5c76226b:
@@ -32836,7 +32836,7 @@ translate schinese bast_titjob_5c76226b:
 translate schinese bast_titjob_583e6296:
 
     # you "Here, you've been a good, obedient slut... You can get your letter back."
-    you "来,你真是个乖巧的婊子……你可以拿回你的信了。"
+    you "来,你真是个乖巧的婊子....你可以拿回你的信了。"
 
 # game/BKstory_events.rpy:17257
 translate schinese bast_titjob_55715851:
@@ -32854,7 +32854,7 @@ translate schinese bast_titjob_a06e0a3c:
 translate schinese bast_titjob_6b9c01c2:
 
     # bast "The letter... Oh!"
-    bast "信……哦！"
+    bast "信....哦！"
 
 # game/BKstory_events.rpy:17263
 translate schinese bast_titjob_2d228858:
@@ -32884,13 +32884,13 @@ translate schinese bast_sex_552b3594:
 translate schinese bast_sex_56d7f9e0:
 
     # bast "W-wow... Wait!"
-    bast "哇……等等！"
+    bast "哇....等等！"
 
 # game/BKstory_events.rpy:17289
 translate schinese bast_sex_48457343:
 
     # you "I'm already on fire..."
-    you "我已经忍不住了……"
+    you "我已经忍不住了...."
 
 # game/BKstory_events.rpy:17291
 translate schinese bast_sex_25c802d9:
@@ -32902,13 +32902,13 @@ translate schinese bast_sex_25c802d9:
 translate schinese bast_sex_40b0ef28:
 
     # bast "I don't know if this is a good idea... I..."
-    bast "我不确定这是否是个好主意……我……"
+    bast "我不确定这是否是个好主意....我...."
 
 # game/BKstory_events.rpy:17295
 translate schinese bast_sex_a6a3caf8:
 
     # you "Come on... We've come too far already."
-    you "来吧……我们已经走到这一步了。"
+    you "来吧....我们已经走到这一步了。"
 
 # game/BKstory_events.rpy:17297
 translate schinese bast_sex_8814b7a9:
@@ -32920,7 +32920,7 @@ translate schinese bast_sex_8814b7a9:
 translate schinese bast_sex_10cd57d8:
 
     # bast "It's so big... Will it really fit?"
-    bast "好大……真的会进得去吗？"
+    bast "好大....真的会进得去吗？"
 
 # game/BKstory_events.rpy:17303
 translate schinese bast_sex_25f948e9:
@@ -32932,7 +32932,7 @@ translate schinese bast_sex_25f948e9:
 translate schinese bast_sex_086d992e:
 
     # bast "It's been a while, so... Be gentle, okay? *blush*"
-    bast "已经很久没有了,所以……温柔点,好吗？*脸红*"
+    bast "已经很久没有了,所以....温柔点,好吗？*脸红*"
 
 # game/BKstory_events.rpy:17307
 translate schinese bast_sex_54d5c922:
@@ -32956,19 +32956,19 @@ translate schinese bast_sex_76d7daa6:
 translate schinese bast_sex_ede7190b:
 
     # bast "Ahaa..."
-    bast "哈啊……"
+    bast "哈啊...."
 
 # game/BKstory_events.rpy:17319
 translate schinese bast_sex_afedafeb:
 
     # you "What a hot body you have... It's really a shame it went unfucked for so long..."
-    you "你的身材真性感……真遗憾它已经太久没被操过了……"
+    you "你的身材真性感....真遗憾它已经太久没被操过了...."
 
 # game/BKstory_events.rpy:17323
 translate schinese bast_sex_754979d1:
 
     # bast "Hey! You're terrible... *blush*"
-    bast "嘿!你好坏哦……*脸红*"
+    bast "嘿!你好坏哦....*脸红*"
 
 # game/BKstory_events.rpy:17327
 translate schinese bast_sex_d6fbd927:
@@ -32980,7 +32980,7 @@ translate schinese bast_sex_d6fbd927:
 translate schinese bast_sex_9c898dee:
 
     # bast "It's... It's somewhat different... I mean, not in a bad way..."
-    bast "不……不是坏的感觉,只是有点不同……"
+    bast "不....不是坏的感觉,只是有点不同...."
 
 # game/BKstory_events.rpy:17331
 translate schinese bast_sex_be7f334a:
@@ -33178,7 +33178,7 @@ translate schinese bast_sex_c3b3a9da:
 translate schinese bast_sex_bb6788a9:
 
     # bast "Aaaah..."
-    bast "啊……"
+    bast "啊...."
 
 # game/BKstory_events.rpy:17413
 translate schinese bast_sex_d7e6c189:
@@ -33190,7 +33190,7 @@ translate schinese bast_sex_d7e6c189:
 translate schinese bast_sex_68a80800:
 
     # bast "Yes..."
-    bast "是的……"
+    bast "是的...."
 
 # game/BKstory_events.rpy:17421
 translate schinese bast_sex_3dd49dd8:
@@ -33202,13 +33202,13 @@ translate schinese bast_sex_3dd49dd8:
 translate schinese bast_sex_fbb33f71:
 
     # you "Such a hungry pussy... It's like it was waiting for me all this time."
-    you "真是饥渴的阴户……好像一直在等待我。"
+    you "真是饥渴的阴户....好像一直在等待我。"
 
 # game/BKstory_events.rpy:17427
 translate schinese bast_sex_dfbe4479:
 
     # bast "D-Don't... *blush*"
-    bast "不要……*脸红*"
+    bast "不要....*脸红*"
 
 # game/BKstory_events.rpy:17431
 translate schinese bast_sex_04737bdd:
@@ -33220,7 +33220,7 @@ translate schinese bast_sex_04737bdd:
 translate schinese bast_sex_42f576eb:
 
     # you "Yes, show me your hot, naked body... More..."
-    you "是的,给我看看你火辣裸露的身体……再多一些……"
+    you "是的,给我看看你火辣裸露的身体....再多一些...."
 
 # game/BKstory_events.rpy:17435
 translate schinese bast_sex_7b718bcf:
@@ -33232,7 +33232,7 @@ translate schinese bast_sex_7b718bcf:
 translate schinese bast_sex_268c3606:
 
     # bast "Aaaah... Ahaaa..."
-    bast "啊……啊哈……"
+    bast "啊....啊哈...."
 
 # game/BKstory_events.rpy:17439
 translate schinese bast_sex_d2050b16:
@@ -33304,7 +33304,7 @@ translate schinese bast_sex_d8ea2722:
 translate schinese bast_sex_71dd0f7c:
 
     # bast "You came inside... so much..."
-    bast "你射进去了……好多……"
+    bast "你射进去了....好多...."
 
 # game/BKstory_events.rpy:17483
 translate schinese bast_sex_9505b378:
@@ -33316,19 +33316,19 @@ translate schinese bast_sex_9505b378:
 translate schinese bast_sex_68a80800_1:
 
     # bast "Yes..."
-    bast "是的……"
+    bast "是的...."
 
 # game/BKstory_events.rpy:17489
 translate schinese bast_sex_d5bcbd63:
 
     # you "Look, if this is uncomfortable for you..."
-    you "听着,如果你感到不舒服的话……"
+    you "听着,如果你感到不舒服的话...."
 
 # game/BKstory_events.rpy:17491
 translate schinese bast_sex_be491041:
 
     # bast "No... I didn't say that."
-    bast "不……我没那么说。"
+    bast "不....我没那么说。"
 
 # game/BKstory_events.rpy:17493
 translate schinese bast_sex_68b7ac29:
@@ -33592,7 +33592,7 @@ translate schinese meet_gurigura_b72443a6:
 translate schinese meet_ramias_b3929a8a:
 
     # "The wide open space in front of the Arena is a pleasant break from the crowded and bustling streets of the Warehouse district."
-    "竞技场前宽敞开阔的空间,与仓库区拥挤喧嚣的街道形成了愉悦的对比。"
+    "竞技场前宽敞开阔的空间,与工业区拥挤喧嚣的街道形成了愉悦的对比。"
 
 # game/BKstory_events.rpy:17626
 translate schinese meet_ramias_c790cbce:
@@ -35812,13 +35812,13 @@ translate schinese ninja_guest2_44c311ca:
 translate schinese ninja_guest2_8cefee68:
 
     # magical_girl "B-But... The magical barrier is still in place... It is barely weakened..."
-    magical_girl "可是……魔法屏障仍然存在……它只是微弱地减弱了……"
+    magical_girl "可是....魔法屏障仍然存在....它只是微弱地减弱了...."
 
 # game/BKstory_events.rpy:18671
 translate schinese ninja_guest2_9ffd3ffa:
 
     # you "Damn... We're on the right track, but something's missing..."
-    you "该死的……我们正在正确的轨道上,但缺少些什么……"
+    you "该死的....我们正在正确的轨道上,但缺少些什么...."
 
 # game/BKstory_events.rpy:18673
 translate schinese ninja_guest2_abed65d1:
@@ -35860,7 +35860,7 @@ translate schinese ninja_guest2_210fcd0a:
 translate schinese ninja_guest2_f5d6b3bb:
 
     # you "More, show me more... Great. Here I come."
-    you "更多,让我看看更多……好极了。我来了。"
+    you "更多,让我看看更多....好极了。我来了。"
 
 # game/BKstory_events.rpy:18691
 translate schinese ninja_guest2_71616dc7:
@@ -35890,7 +35890,7 @@ translate schinese ninja_guest2_c2e37077:
 translate schinese ninja_guest2_30d70545:
 
     # magical_girl "W-What am I doing... What's going on... It feels so... So..."
-    magical_girl "我在做什么……发生了什么……感觉这么……这么……"
+    magical_girl "我在做什么....发生了什么....感觉这么....这么...."
 
 # game/BKstory_events.rpy:18703
 translate schinese ninja_guest2_4808e4d3:
@@ -35902,7 +35902,7 @@ translate schinese ninja_guest2_4808e4d3:
 translate schinese ninja_guest2_72fdcd8a:
 
     # magical_girl "Ohh... Ohhh..." with vpunch
-    magical_girl "哦……哦……" with vpunch
+    magical_girl "哦....哦...." with vpunch
 
 # game/BKstory_events.rpy:18707
 translate schinese ninja_guest2_f8756b5c:
@@ -35920,7 +35920,7 @@ translate schinese ninja_guest2_79e1f3a0:
 translate schinese ninja_guest2_b8c96c8d:
 
     # you "Then it's time to put an end to this..."
-    you "那就是时候结束这一切了……"
+    you "那就是时候结束这一切了...."
 
 # game/BKstory_events.rpy:18713
 translate schinese ninja_guest2_4bd49b18:
@@ -35950,7 +35950,7 @@ translate schinese ninja_guest2_3d64d440:
 translate schinese ninja_guest2_b8b9148e:
 
     # magical_girl "Oh, ah, aah... *pant*"
-    magical_girl "哦,啊,啊……*喘息*"
+    magical_girl "哦,啊,啊....*喘息*"
 
 # game/BKstory_events.rpy:18733
 translate schinese ninja_guest2_0a24670b:
@@ -35962,7 +35962,7 @@ translate schinese ninja_guest2_0a24670b:
 translate schinese ninja_guest2_c1e5998b:
 
     # magical_girl "The magical barrier... It's gone... And the pentagram is inert, forever."
-    magical_girl "魔法屏障……没了……五角星也失去了作用,永远。"
+    magical_girl "魔法屏障....没了....五角星也失去了作用,永远。"
 
 # game/BKstory_events.rpy:18737
 translate schinese ninja_guest2_b136490e:
@@ -35974,13 +35974,13 @@ translate schinese ninja_guest2_b136490e:
 translate schinese ninja_guest2_f618ed65:
 
     # you "Although I guess that means you won't be able to summon your incubus now. Sorry..."
-    you "不过我想这意味着你将无法再召唤你的梦魔了。真遗憾……"
+    you "不过我想这意味着你将无法再召唤你的梦魔了。真遗憾...."
 
 # game/BKstory_events.rpy:18741
 translate schinese ninja_guest2_b7a7c8db:
 
     # magical_girl "The... Incubus? Oh... I, uh, I... It won't be necessary..."
-    magical_girl "那个……梦魔?哦……我,呃,我……这已经不再需要了。"
+    magical_girl "那个....梦魔?哦....我,呃,我....这已经不再需要了。"
 
 # game/BKstory_events.rpy:18743
 translate schinese ninja_guest2_d65a7278:

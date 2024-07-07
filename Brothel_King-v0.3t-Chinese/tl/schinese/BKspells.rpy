@@ -192,7 +192,7 @@ translate schinese strings:
 
      # game/BKspells.rpy:21
      old "It's getting hot in here… This halo boosts your girls' libido."
-     new "这里越来越热了……这个光环增强了女孩的性欲。"
+     new "这里越来越热了....这个光环增强了女孩的性欲。"
 
 
 
@@ -263,7 +263,7 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "I saw people sticking a needle into a voodoo doll, but never {i}there{/i}…"
-     new "我看到有人把针扎进巫毒娃娃，但从来没有扎它的{i}那里{/i}……"
+     new "我看到有人把针扎进巫毒娃娃，但从来没有扎它的{i}那里{/i}...."
 
 
 
@@ -323,7 +323,7 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "That's a kind of magic… Not the one your childhood fairy tales were referring to."
-     new "那是一种魔法……不是你童年童话里提到的那种。"
+     new "那是一种魔法....不是你童年童话里提到的那种。"
 
 
 
@@ -389,7 +389,7 @@ translate schinese strings:
     
 #     # game/BKspells.rpy:98
      old "It's time for your girls to harvest your crops, tend to your cattle, and learn animal husbandry... with a twist!"
-     new "是时候收割庄稼、照料牲畜、发展畜牧业了……当然在情场上收割女性的芳心也是一种大丰收！你的工具是否足够强大？"
+     new "是时候收割庄稼、照料牲畜、发展畜牧业了....当然在情场上收割女性的芳心也是一种大丰收！你的工具是否足够强大？"
 
 
 
