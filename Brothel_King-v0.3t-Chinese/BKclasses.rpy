@@ -86,7 +86,7 @@ init -2 python:
 
 
         def activate_cheats(self):
-            if renpy.call_screen("yes_no", "警告。激活作弊器将禁用此游戏的成就。这不会影响你已经拥有的成就。这一决定不能被逆转。\n{b}你确定要激活这个游戏的作弊器吗？{/b}"):
+            if renpy.call_screen("yes_no", "警告。激活作弊器将禁用本局游戏的成就系统。这不会影响你已经解锁的成就。一旦作弊就无法反悔。\n{b}你确定要使用作弊功能吗？{/b}"):
                 self.cheats=True
                 self.achievements=False
             else:
@@ -5146,22 +5146,22 @@ init -10 python:
         def get_description(self):
             if not self.description:
                 if self.type == "gold":
-                    self.description = __("你必须拥有 ") + str(self.value) + " 金币"
+                    self.description = __("你需要拥有至少") + str(self.value) + "个金币"
 
                 elif self.type == "ranked":
-                    self.description = str(self.target) + __(" 个女孩必须达到阶级 ") + rank_name[self.value]
+                    self.description = __("你需要拥有至少") + str(self.target) + __("个达到阶级") + rank_name[self.value] + __("的女孩")
 
                 elif self.type == "reputation":
-                    self.description = __("你的青楼必须达到 ") + str(self.value) + __(" 声望等级")
+                    self.description = __("你的青楼需要获得至少") + str(self.value) + __("点声望")
 
                 elif self.type == "prestige":
-                    self.description = __("需要获得 ") + str(self.value) + __(" prestige")
+                    self.description = __("你的角色需要获得至少") + str(self.value) + __("点声望")
 
                 elif self.type == "story":
                     self.description = self.value # value for story events must be text
 
                 else:
-                    self.description = "你现在进入了无尽模式, 尽情享受游戏吧!"
+                    self.description = "恭喜你通关了，现在是无尽模式, 尽情享受游戏吧!"
 
             return self.description
 

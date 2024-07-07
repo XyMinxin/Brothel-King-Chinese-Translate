@@ -1756,13 +1756,13 @@ translate schinese renza_onsen2_367a9f6f:
 translate schinese renza_onsen2_6f4ce082:
 
     # "You see Sill entering the onsen space, looking for you. Leaving your hideout, you rush towards her, trying to prevent her from exposing you."
-    "你看到希尔进入温泉区域,在寻找你。离开你的藏身处,你急忙向她跑去,试图阻止她暴露你的行为。"
+    "你看到希露进入温泉区域,在寻找你。离开你的藏身处,你急忙向她跑去,试图阻止她暴露你的行为。"
 
 # game/BKstory_events.rpy:932
 translate schinese renza_onsen2_1fa44bc7:
 
     # you "*whispering* Damn you, Sill!!! Now is not the right time..."
-    you "*小声说*该死的希尔!!!现在可不是合适的时候..."
+    you "*小声说*该死的希露!!!现在可不是合适的时候..."
 
 # game/BKstory_events.rpy:934
 translate schinese renza_onsen2_11ec9631:
@@ -1774,7 +1774,7 @@ translate schinese renza_onsen2_11ec9631:
 translate schinese renza_onsen2_2d039da9:
 
     # "Grabbing Sill by the ear, you drag her out of the bath area as quickly as you can."
-    "抓住希尔的耳朵,你尽快把她拽出了浴室区域。"
+    "抓住希露的耳朵,你尽快把她拽出了浴室区域。"
 
 # game/BKstory_events.rpy:946
 translate schinese renza_onsen2_145f3f0b:
@@ -1888,7 +1888,7 @@ translate schinese renza_onsen2_8dc44876:
 translate schinese renza_onsen2_d855f634:
 
     # "After Renza leaves, you realize watching her gave you a raging hard on. You decide to take it out on Sill, as she's sort of the cause of your current predicament."
-    "伦扎离开后,你意识到目睹她给了你一根硬挺的阴茎。你决定把这件事撒在西尔身上,因为她有些责任。"
+    "伦扎离开后,你意识到目睹她给了你一根硬挺的阴茎。你决定把这件事撒在希露身上,因为她有些责任。"
 
 # game/BKstory_events.rpy:998
 translate schinese renza_onsen2_173ca295:
@@ -1924,7 +1924,7 @@ translate schinese renza_onsen3_d0295bc7:
 translate schinese renza_onsen3_9c6f629f:
 
     # you "Night, Sill..."
-    you "晚安,西尔..."
+    you "晚安,希露..."
 
 # game/BKstory_events.rpy:1028
 translate schinese renza_onsen3_8dcc9a09:
@@ -16030,7 +16030,7 @@ translate schinese willow_relative_returns_4afb0937:
 translate schinese willow_relative_returns_202246dd:
 
     # "Sill made sure to give her a private pool to keep the lusty customers at bay."
-    "西尔确保给她准备了一个私人泳池,以免引起太多色眯眯的客人。"
+    "希露确保给她准备了一个私人泳池,以免引起太多色眯眯的客人。"
 
 # game/BKstory_events.rpy:8270
 translate schinese willow_relative_returns_9492a44a:
@@ -26728,7 +26728,7 @@ translate schinese no_money_4b7d7722:
 translate schinese no_money_04872e33:
 
     # "Sill runs away scared to cower in her room. Waiting for an explanation for this interruption, you stand your ground and point an accusing finger."
-    "希尔吓得逃回房间躲藏起来。你站稳脚跟,指着她质问。"
+    "希露吓得逃回房间躲藏起来。你站稳脚跟,指着她质问。"
 
 # game/BKstory_events.rpy:14134
 translate schinese no_money_97eec849:
@@ -28516,7 +28516,7 @@ translate schinese game_over_bb54c8eb:
 translate schinese game_over_b1860e8b:
 
     # "Even Sill was taken from you. There was nothing you could do to prevent the slaver's guild from carrying her away."
-    "连希尔也被你失去了。你无法阻止那些奴隶商人带她走。"
+    "连希露也被你失去了。你无法阻止那些奴隶商人带她走。"
 
 # game/BKstory_events.rpy:15059
 translate schinese game_over_27e9abfa:
@@ -29242,25 +29242,25 @@ translate schinese wagon_40a5e6b2:
 translate schinese wagon_first_visit_b4dfbd94:
 
     # "Today, you take Sill out to explore your new backyard."
-    "今天,你带着Sill去探索你的新后院。"
+    "某日,你带着希露去探索你的新后院。"
 
 # game/BKstory_events.rpy:15496
 translate schinese wagon_first_visit_1b52e632:
 
     # you "Wow, it's a jungle out here... Look how tall that grass is."
-    you "哇,这里真是个丛林啊...看看那么高的草。"
+    you "哇,这里简直就是个丛林啊...草长得都快有人高了。"
 
 # game/BKstory_events.rpy:15498
 translate schinese wagon_first_visit_3a271a1b:
 
     # you "Uh? Look, Sill, there's something over there!"
-    you "哇?看,Sill,那边有什么东西!"
+    you "看,希露,那边有什么东西!"
 
 # game/BKstory_events.rpy:15500
 translate schinese wagon_first_visit_529ef170:
 
     # "You notice some kind of carriage, half-buried in the vegetation."
-    "你注意到一辆马车,半埋在植被中。"
+    "你注意到一辆马车,被植物淹没。"
 
 # game/BKstory_events.rpy:15505
 translate schinese wagon_first_visit_0d2e4023:
@@ -29272,37 +29272,37 @@ translate schinese wagon_first_visit_0d2e4023:
 translate schinese wagon_first_visit_fa957c33:
 
     # sill happy "It's an old wagon... Maybe left over by gypsies?"
-    sill happy "这是一辆旧马车...也许是吉普赛人留下的?"
+    sill happy "这是一辆旧马车...也许是房子的前任主人留下的?"
 
 # game/BKstory_events.rpy:15511
 translate schinese wagon_first_visit_acfc8fa4:
 
     # you "Well, it looks like it's been abandoned for a while. I don't think they'll come back for it."
-    you "看起来已经被抛弃很久了。我想他们不会再来要它了。"
+    you "看起来已经被废弃很久了。我想他们不会把它要回去了。"
 
 # game/BKstory_events.rpy:15513
 translate schinese wagon_first_visit_1c4280ae:
 
     # sill "It's on your premises anyway, Master, so that makes you the owner!"
-    sill "反正它在你的地盘上,老爷,所以现在它就是你的了!"
+    sill "反正它在你的地盘上,主人,所以现在它就是你的!"
 
 # game/BKstory_events.rpy:15515
 translate schinese wagon_first_visit_e8aae734:
 
     # you "Great, just what I needed... An old decrepit wagon, what the hell could I do with it?"
-    you "太好了,正是我需要的...一辆破旧的马车,我能拿它怎么办呢?"
+    you "太好了,正是我需要的...一辆破旧的马车,我能用它做什么呢?"
 
 # game/BKstory_events.rpy:15517
 translate schinese wagon_first_visit_2fa31764:
 
     # "Suddenly, you're overrun with a strange thought. What if you were diagnosed with cancer, and you needed to make money fast? Maybe you could use your chemical knowledge to make crystal-spice out of that old trailer."
-    "突然,你被一个奇怪的想法所淹没。如果你被诊断出患有癌症,你需要快速赚钱怎么办?也许你可以利用你的化学知识从那辆旧拖车上制造出冰毒。"
+    "突然,你脑海里涌出一个奇怪的想法。如果你被诊断出患有绝症,你需要大把的钱续命怎么办?也许你可以利用你的化学知识用在辆旧马车上制造毒品。"
 
 # game/BKstory_events.rpy:15520
 translate schinese wagon_first_visit_9ecefa21:
 
     # "But then you would run into some Kroxican gangsters and have to get rid of the bodies..."
-    "但是这样你会遇到一些克罗西恩黑帮分子,你得处理掉他们的尸体..."
+    "但是这样你就会被当地的黑帮找上门来,你得处理掉他们的尸体..."
 
 # game/BKstory_events.rpy:15522
 translate schinese wagon_first_visit_90d9f27d:
@@ -29314,37 +29314,37 @@ translate schinese wagon_first_visit_90d9f27d:
 translate schinese wagon_first_visit_258ce2b8:
 
     # "Sill interrupts your pointless revery."
-    "西尔打断了你无意义的沉思。"
+    "希露打断了你无意义的思考。"
 
 # game/BKstory_events.rpy:15526
 translate schinese wagon_first_visit_6a352c65:
 
     # sill "Its not so run down... Look inside, Master!"
-    sill "这里还不赖...进去看看吧,主人!"
+    sill "看上去还不赖...进去看看吧,主人!"
 
 # game/BKstory_events.rpy:15528
 translate schinese wagon_first_visit_eb4a9262:
 
     # "Carefully, you open the wagon's door, half expecting to find some dead Kroxicans on the floor. You are relieved to find cramped living quarters and a kind of workbench instead."
-    "你小心翼翼地打开马车的门,一半期待在地板上找到几具死去的克罗沙人。看到这里只是狭窄的生活空间和一张工作台,你感到宽慰。"
+    "你小心翼翼地打开马车的门,期待在地板上发现几具被毁容的尸体。但这里只有狭窄的生活空间和一张工作台,你感到欣慰。"
 
 # game/BKstory_events.rpy:15530
 translate schinese wagon_first_visit_506677cf:
 
     # you "There are some tools here... Crude ones. It must have been used by a craftsman of some sort."
-    you "这里有一些工具...很粗糙的。一定是某种工匠使用过的。"
+    you "这里有一些工具...很不牢固。一定是被工匠弄坏了。"
 
 # game/BKstory_events.rpy:15532
 translate schinese wagon_first_visit_4bfd1364:
 
     # sill "That makes sense. Craftsmen usually roam the land, looking for customers."
-    sill "这很合理。工匠通常在外游荡,寻找客户。"
+    sill "这很合理。工匠驾驶着马车,四处寻找客户。"
 
 # game/BKstory_events.rpy:15534
 translate schinese wagon_first_visit_bcf28cff:
 
     # sill "When we found this place, Gio told us it belonged to a retired workman. Maybe that's where he used to practice?"
-    sill "当我们发现这个地方时,乔告诉我们这属于一位退休工人。也许这就是他以前的工作室?"
+    sill "当我们买下这个地方时,乔告诉我们这属于一位退休的工匠。也许这就是他以前的工作室?"
 
 # game/BKstory_events.rpy:15536
 translate schinese wagon_first_visit_33da7e0c:
@@ -29362,7 +29362,7 @@ translate schinese wagon_first_visit_8d7216b4:
 translate schinese wagon_first_visit_45f8d380:
 
     # you "Without horses, it's going to be a pain to move this. I must give it some thinking."
-    you "没有马匹,将这个移动会很麻烦。我必须好好考虑一下。"
+    you "没有马匹,我要怎么拖动马车呢。我必须好好考虑一下。"
 
 # game/BKstory_events.rpy:15555
 translate schinese wagon_first_visit_72849a0f:
@@ -29374,7 +29374,7 @@ translate schinese wagon_first_visit_72849a0f:
 translate schinese wagon_first_visit_021c55f0:
 
     # you "What should we do with an empty craftsman trailer?"
-    you "我们该怎么处置这个空掉的工匠拖车?"
+    you "我们该怎么处置这个废弃的工匠马车?"
 
 # game/BKstory_events.rpy:15559
 translate schinese wagon_first_visit_d8b6b169:
@@ -29458,7 +29458,7 @@ translate schinese wagon_first_visit_22bdb2b3:
 translate schinese wagon_first_visit_6acd842a:
 
     # sill happy "Your jokes are even more terrible than usual..."
-    sill happy "你的笑话比平时还要糟糕..."
+    sill happy "这笑话听起来一点都不好笑..."
 
 # game/BKstory_events.rpy:15598
 translate schinese wagon_first_visit_1a4b7cea:
@@ -29476,7 +29476,7 @@ translate schinese wagon_first_visit_5101eb47:
 translate schinese wagon_first_visit_856b43b2:
 
     # you "Shut up, Sill! Let me think... I'm on the verge of having an idea..."
-    you "闭嘴,西尔!让我想想...我快要有主意了..."
+    you "闭嘴,希露!让我想想...我快要有主意了..."
 
 # game/BKstory_events.rpy:15604
 translate schinese wagon_first_visit_ceb7ed61:
@@ -29512,7 +29512,7 @@ translate schinese wagon_first_visit_f73efee3:
 translate schinese wagon_first_visit_7b698b41:
 
     # sill sad "More things to buy? But Master, we don't have the money... I still have to pay the water bill..."
-    sill sad "还要买更多东西?但是主人,我们没有钱......我还要交水费呢。"
+    sill sad "还要买更多东西?但是主人,我们没有钱......还要交水费呢。"
 
 # game/BKstory_events.rpy:15618
 translate schinese wagon_first_visit_feee752b:

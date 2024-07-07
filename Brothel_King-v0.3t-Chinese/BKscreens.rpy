@@ -1293,7 +1293,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     if MC.get_effect("special", "notebook"):
                         key "noshift_K_n" action Show("notebook")
                         #button background None xmargin 10 xpadding 0 action Show("notebook") tooltip "Open " + girl.fullname + "'s entry in your magical notebook (shortcut: {u}n{/u})":
-                        button background None xsize xres(80) ysize yres(80) xmargin 10 xpadding 0 action Show("notebook") tooltip "展开 %s 所有记录在魔法笔记里的信息 \n({i}快捷键: {u}N{/u}{/i})" % girl.fullname:
+                        button background None xsize xres(80) ysize yres(80) xmargin 10 xpadding 0 action Show("notebook") tooltip "浏览 %s 被记录在魔法笔记里的信息 \n({i}快捷键: {u}N{/u}{/i})" % girl.fullname:
                             add "items/misc/magic notebook.webp" idle_alpha 0.66 hover_alpha 1.0 fit "contain"
 
                 vbox xalign 1.0:
@@ -1504,7 +1504,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             else:
                                 $ ttip = __("{b}致命诱惑")
 
-                            $ ttip += __("{/b}\n她的自卫能力如何. 给她一把武器可以提高自卫能力.")
+                            $ ttip += __("{/b}\n数值越高女孩的自卫能力越强，让女孩装备武器可以提高她的自卫等级")
 
                             button:
 
@@ -1889,7 +1889,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
 
                 ## TRAITS LIST ##
-                textbutton "特质列表" text_font "bk.ttf" text_outlines [ (1, "#000", 1, 0) ] text_color c_white text_size res_font(18) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+                textbutton "特质" text_font "bk.ttf" text_outlines [ (1, "#000", 1, 0) ] text_color c_white text_size res_font(18) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                     action NullAction()
                     if context != "free" or girl.MC_relationship_level >= 3:
                         hovered Show("trait_details", girl=girl)
@@ -2423,7 +2423,7 @@ screen button_overlay(girl, context="girls"):
                     tooltip "Release this girl from your custody. ({i}shortcut: {u}Delete{/u}{/i})"
 
             else:
-                textbutton "sell":
+                textbutton "出售":
                     text_size res_font(14)
                     if not (girls_firstvisit or girl.away):
                         action (SetVariable("selected_girl", girl), Return("sell"))
@@ -2601,11 +2601,11 @@ screen rank_level_details(girl):
 
         grid 3 10:
 
-            text __("SKILLS") size res_font(12)
+            text __("熟练度") size res_font(12)
 
             text "" size res_font(12)
 
-            text "JP" size res_font(12)
+            text "经验值" size res_font(12)
 
             spacing 10
 
@@ -3083,7 +3083,7 @@ screen trait_details(girl):
 
             spacing 3
 
-            text girl.name + "的特质列表" size res_font(28) xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
+            text girl.name + "的特质" size res_font(28) xalign 0.5 color c_orange font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             text "" size res_font(6)
 
@@ -3741,7 +3741,7 @@ screen visit_district():
                     action Return([location, "go"])
 
                     if location.secret:
-                        tooltip "You have not discovered this location yet."
+                        tooltip "你还没有解锁这个地区。"
                     else:
                         tooltip "{b}" + __(location.name) + __("{/b}. Press ") + str(location_dict[selected_district.name].index(location) + 1) + __(" to visit this location.")
 
@@ -4047,7 +4047,7 @@ screen brothel():
                                 vbox:
 
                                     button xsize xres(156) background None xmargin 0 xpadding 0 action NullAction():
-                                        hovered tt.Action("Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!")
+                                        hovered tt.Action("调教师可以帮助你训练女孩或是提供增益效果。在泽恩城里结识更多的朋友让她们成为你的助力!")
                                         add MC.current_trainer.portrait zoom 1.0 xalign 0.5 yalign 0.5
 
 
@@ -5487,14 +5487,14 @@ screen quick_start():
 
     vbox xalign 0.5 yalign 0.5 xsize int(0.95*config.screen_width):
         hbox xfill True:
-            textbutton "Character" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "MC") hovered SetScreenVariable("panel", "MC") tooltip "Create your Main Character."
+            textbutton "主角属性" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "MC") hovered SetScreenVariable("panel", "MC") tooltip "Create your Main Character."
 
-            textbutton "Difficulty" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "diff") hovered SetScreenVariable("panel", "diff") tooltip "Change difficulty settings."
+            textbutton "选择难度" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "diff") hovered SetScreenVariable("panel", "diff") tooltip "Change difficulty settings."
 
-            textbutton "Girls" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "mix") hovered SetScreenVariable("panel", "mix") tooltip "Choose your girl mixes."
+            textbutton "女孩组合" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "mix") hovered SetScreenVariable("panel", "mix") tooltip "Choose your girl mixes."
 
             if persistent.new_game_plus or debug:
-                textbutton "Extras" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "extras") hovered SetScreenVariable("panel", "extras") tooltip "Access NewGame+ settings."
+                textbutton "其他设置" xsize xres(160) ysize yres(48) text_size res_font(24) text_selected_bold True action SelectedIf(panel == "extras") hovered SetScreenVariable("panel", "extras") tooltip "Access NewGame+ settings."
 
             button background None xsize xres(320) ysize yres(52) xalign 1.0:
                 if GetTooltip():
@@ -5517,7 +5517,7 @@ screen quick_start():
                     frame: # background c_orange:
                         has vbox
 
-                        text "Class" xalign 0.5 size res_font(18) bold True color c_prune
+                        text "职业" xalign 0.5 size res_font(18) bold True color c_prune
 
                         hbox spacing 10:
                             for cl in ["战士", "法师", "奸商"]:
@@ -5535,7 +5535,7 @@ screen quick_start():
                     frame: # background c_purple:
                         has vbox
 
-                        text "Religion" xalign 0.5 size res_font(18) bold True color c_emerald
+                        text "信仰" xalign 0.5 size res_font(18) bold True color c_emerald
 
                         hbox spacing 10:
                             for god in ["阿里奥斯", "莎莉娅", None]:
@@ -5703,7 +5703,7 @@ screen quick_start():
                     else:
                         text "Achievements will be disabled for this game." italic True color c_red size res_font(18)
 
-                textbutton "CONFIRM" xalign 0.95 yfill True action Return(True) tooltip "Start a new game with these settings."
+                textbutton "开始游戏" xalign 0.95 yfill True action Return(True) tooltip "Start a new game with these settings."
 
 ## MAIN CHARACTER SCREEN
 

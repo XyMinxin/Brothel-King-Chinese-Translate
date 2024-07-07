@@ -260,7 +260,7 @@ init -2 python:
         for i in range(5):
             declare("%s canister %i" % (col, i), "UI/powers/%s canister%i.webp" % (col, i), "s")
 
-    ## BACKGROUNDS ##
+    ## BACKGROUNDS #汉化标签，在这里修改事件的背景图片，可以添加额外的图片，需要在对应剧情里修改文本，参照slave market1~12那段#
 
     game_image_dict["Backgrounds"] = {
 
@@ -403,7 +403,7 @@ init -2 python:
                                                 ],
                                         }
 
-    ## STORY ##
+    ## STORY 汉化标签，在这里修改事件的图片数量##
 
     game_image_dict["Story"] = {
 
