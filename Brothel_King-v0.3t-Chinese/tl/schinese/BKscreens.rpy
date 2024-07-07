@@ -881,8 +881,8 @@ translate schinese strings:
     new "解放"
 
     # game/BKscreens.rpy:2426
-    old "Sell"
-    new "出售"
+    #old "Sell"
+    #new "出售"
 
     # game/BKscreens.rpy:2436
     old "Level {u}u{/u}p"
@@ -1584,32 +1584,32 @@ translate schinese strings:
     new "女孩互动"
 
     # game/BKscreens.rpy:7569
-    old "Talk"
-    new "对话"
+    #old "Talk"
+    #new "对话"
 
     # game/BKscreens.rpy:7547
-    old "Train"
-    new "训练"
+    #old "Train"
+    #new "训练"
 
     # game/BKscreens.rpy:7547
-    old "Magic"
-    new "催眠"
+    #old "Magic"
+    #new "催眠"
 
     # game/BKscreens.rpy:7547
-    old "React"
-    new "奖惩"
+    #old "React"
+    #new "奖惩"
 
     # game/BKscreens.rpy:7547
-    old "Misc"
-    new "其他"
+    #old "Misc"
+    #new "其他"
 
     # game/BKscreens.rpy:7599
-    old "Advanced"
-    new "进阶"
+    #old "Advanced"
+    #new "进阶"
 
     # game/BKscreens.rpy:7636
-    old "OTHER"
-    new "其他"
+    #old "OTHER"
+    #new "其他"
 
     # game/BKscreens.rpy:7690
     old "\nActivate or deactivate objectionable content (won't affect story scenes)"
@@ -1654,10 +1654,10 @@ translate schinese strings:
     new "群交：只使用群交图片"
 
     old "Bisexual sex: Mix bisexual pictures with regular pictures"
-    new "百合：将百合图片与普通图片混合"
+    new "双飞：将双飞图片与普通图片混合"
 
     old "Bisexual sex: Only use bisexual pictures"
-    new "百合：只使用百合图片"
+    new "双飞：只使用双飞图片"
 
     # game/BKscreens.rpy:7763
     old "\nChoose the behavior of slavemarket girls' pictures"

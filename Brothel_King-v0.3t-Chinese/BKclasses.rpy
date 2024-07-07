@@ -3899,7 +3899,7 @@ init -2 python:
                     text1 += "青楼的危险事件发生时候至少保留 " + str(val) + " 金币。"
 
                 elif target == "focus":
-                    text1 += "如果她只有一个激活的性行为，+25%小费和声誉收益 (不包括百合和群交)"
+                    text1 += "如果她只有一个激活的性行为，+25%小费和声誉收益 (不包括双飞和群交)"
 
                 elif target == "rest shield":
                     text1 += "休息时，她可以对自己或朋友施放魔法护盾，以保护其免受攻击"
@@ -3907,7 +3907,7 @@ init -2 python:
                 elif target == "ignore budgets":
                     text1 += "无视顾客的预算限制"
                 text1 = "在作为妓女工作时接受群交(3P)行为" if target == "group" else text1
-                text1 = "在作为妓女工作时接受百合(双飞)行为" if target == "bisexual" else text1
+                text1 = "在作为妓女工作时接受双飞(双飞)行为" if target == "bisexual" else text1
                 text1 = "在任何时候包括平时都接受裸体" if target == "naked" else text1
                 text1 = "在作为妓女工作时接受多人群交(狂欢)行为" if target == "orgy" else text1
                 text1 = "顾名思义，接受扮演各种动物(比如马)的行为" if target == "ponygirl" else text1
@@ -3935,7 +3935,7 @@ init -2 python:
                     target = "肛交偏爱" if target == "anal preference" else target
                     target = " SM偏爱" if target == "fetish preference" else target
                     target = "群交偏爱" if target == "group preference" else target
-                    target = "百合偏爱" if target == "bisexual preference" else target
+                    target = "双飞偏爱" if target == "bisexual preference" else target
                     target = "所有性行为偏爱" if target == "all sex acts preference" else target
                     text1 += "允许您增加客人的' " + target + " 最多 +" + str(50*val) + "%."
                 else:
@@ -4068,7 +4068,7 @@ init -2 python:
             if target == "fetish":
                 target = " SM"
             if target == "bisexual":
-                target = "百合"
+                target = "双飞"
             if target == "group":
                 target = "群交"
             if target == "all jobs":
@@ -4125,7 +4125,7 @@ init -2 python:
             target = "侍奉偏爱增加" if target == "service preference increase" else target
             target = " SM偏爱增加" if target == "fetish preference increase" else target
             target = "群交偏爱增加" if target == "group preference increase" else target
-            target = "百合偏爱增加" if target == "bisexual preference increase" else target
+            target = "双飞偏爱增加" if target == "bisexual preference increase" else target
             target = "所有性行为偏爱增加" if target == "all sex acts preference increase" else target
 
             target = "舞娘职业经验得分" if target == "dancer jp bonus" else target
@@ -4234,7 +4234,7 @@ init -2 python:
 
             target = "名声" if target == "brothel reputation" else target
             target = "小费总额" if target == "total tip" else target
-            target = "百合概率" if target == "bisexual chance" else target
+            target = "双飞概率" if target == "bisexual chance" else target
             target = "群交概率" if target == "group chance" else target
             target = "作为工作时客户的预算" if target == "job customer budget" else target
             target = "作为妓女时客户的预算" if target == "whore customer budget" else target
@@ -4249,7 +4249,7 @@ init -2 python:
             target = "肛交偏爱" if target == "anal preference" else target
             target = " SM偏爱" if target == "fetish preference" else target
             target = "群交偏爱" if target == "group preference" else target
-            target = "百合偏爱" if target == "bisexual preference" else target
+            target = "双飞偏爱" if target == "bisexual preference" else target
             target = "所有性行为偏爱" if target == "all sex acts preference" else target
             target = "满意度" if target == "satisfaction" else target
             target = "每日恐惧" if target == "fear per day" else target
@@ -4508,14 +4508,14 @@ init -2 python:
                 if owner in (NPC_renza, NPC_captain):
                     possible_acts.append("议价")
                 else:
-                    possible_acts.append("购买")
+                    possible_acts.append("buy")
                     if counterpart:
                         if self.can_wear(counterpart.type):
                             possible_acts.append("购买并装备")
 
             if counterpart and counterpart.type == "NPC":
                 if self.sellable:
-                    possible_acts.append("出售")
+                    possible_acts.append("sell")
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
@@ -4544,7 +4544,7 @@ init -2 python:
             return possible_acts
 
 
-        def get_price(self, operation):
+        def get_price(self, operation="buy"):
 
             modifier = MC.get_modifier(operation)
 
