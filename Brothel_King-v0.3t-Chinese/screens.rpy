@@ -233,7 +233,7 @@ screen main_menu():
         if nsfw:
             add "bg title" yalign 0.5
 
-            text "青 楼 之 王" size res_font(128) xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
+            text "青楼之王" size res_font(128) xalign 0.5 yalign 0.35 drop_shadow (3,3) font "bk.ttf" color c_orange
             text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (3,3) font "MATURASC.TTF" color c_orange
 
         text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(14)
@@ -241,6 +241,7 @@ screen main_menu():
         vbox xalign 0.99 yalign 0.01:
             text "[renpy.version_string]" xalign 1.0 size res_font(12)
             text "BK [config.version]" xalign 1.0 size res_font(12)
+            text "汉化 v20240707" xalign 1.0 size res_font(12)
 
         if debug:
             text mod_traceback xalign 0.01 yalign 0.01 size res_font(18)
