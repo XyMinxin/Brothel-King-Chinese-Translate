@@ -1270,26 +1270,26 @@ label end_day:
             girl.add_log("upkeep", girl.get_med_upkeep() * girl.get_effect("boost", "total upkeep") // 4)
 
         # gold_text is displayed to the right-hand side. gold_recap is displayed in the renpy window
-        gold_text = __("你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.upkeep)) + __(" 金币作为女孩的保养费用")
+        gold_text = __("你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.upkeep)) + __(" 金币作为女孩的薪水。")
 
         if free_girl:
             gold_text += __(" (免保养费: ") + free_girl.name + ")"
 
         if working_girls:
             log.costs = brothel.get_adv_cost() + brothel.get_sec_cost() + brothel.get_maintenance_cost()
-            gold_text += __(".\nY你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的维护费用.")
+            gold_text += __(".\nY你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的开销。")
 
         else:
             log.costs = brothel.get_maintenance_cost()
-            gold_text += ". " + brothel.name + __(" 关门了，所以你让保安和广告人员回家了。你支付了 ") + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的维护费用.")
+            gold_text += ". " + brothel.name + __(" 关门了，所以你让保安和广告人员回家了。你支付了 ") + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的开销。")
 
         loan_payment = MC.repay_loan()
 
         if loan_payment:
             log.costs += loan_payment
-            gold_text += "\n你支付了 {image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + " 金币作为青楼的维护费用。."
+            gold_text += "\n你支付了 {image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + " 金币作为青楼的开销。"
 
-        gold_recap = "你支付了 {image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + " 金币以偿还银行中的贷款。."
+        gold_recap = "你支付了 {image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + " 金币作为青楼的开销。."
 
     ## Katchiiing
 

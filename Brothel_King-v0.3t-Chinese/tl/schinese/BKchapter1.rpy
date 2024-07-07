@@ -2464,7 +2464,7 @@ translate schinese c1_sewers_4848d480:
 translate schinese c1_sewers_0f6097f3:
 
     # "The others are immediately behind him, however, and soon you find yourself sparring with a trio of thugs."
-    "但其他人紧随其后,很快你发现自己正与一群暴徒过招。"
+    "但其他人欲壑难填,很快你发现自己正与一群暴徒过招。"
 
 # game/BKchapter1.rpy:1641
 translate schinese c1_sewers_a5011f86:
@@ -3586,7 +3586,7 @@ translate schinese c1_thieves_guild_found_8facbae9:
 translate schinese c1_thieves_guild_found_973d1cc5:
 
     # "She pushes you inside the house and enters behind you, closely followed by the masked goon."
-    "她把你推进房子里,跟在后面,蒙面的家伙紧随其后。"
+    "她把你推进房子里,跟在后面,蒙面的家伙欲壑难填。"
 
 # game/BKchapter1.rpy:2294
 translate schinese c1_thieves_guild_found_ca758232:
@@ -5242,7 +5242,7 @@ translate schinese c1_maya_interrogation_2343457b:
 translate schinese c1_maya_interrogation_be4b757f:
 
     # maya "Nooooo..."
-    maya "不要啊……"
+    maya "不要啊...."
 
 # game/BKchapter1.rpy:3145
 translate schinese c1_maya_interrogation_830b9a78:
@@ -5254,7 +5254,7 @@ translate schinese c1_maya_interrogation_830b9a78:
 translate schinese c1_maya_interrogation_0107d4a4:
 
     # maya "Ooh... Aaah!!! Aaah..." with hpunch
-    maya "哦……啊!!!啊……" with hpunch
+    maya "哦....啊!!!啊...." with hpunch
 
 # game/BKchapter1.rpy:3152
 translate schinese c1_maya_interrogation_530e103a:
@@ -5284,13 +5284,13 @@ translate schinese c1_maya_interrogation_0308d39c:
 translate schinese c1_maya_interrogation_b6a90a8a:
 
     # you "I can feel your pussy becoming looser... What's happening? Do you like being raped in a dark cell by a stranger?"
-    you "我能感觉到你的小穴变得更松弛了……发生什么事了?你是不是喜欢被陌生人在黑暗的牢房里强奸?"
+    you "我能感觉到你的小穴变得更松弛了....发生什么事了?你是不是喜欢被陌生人在黑暗的牢房里强奸?"
 
 # game/BKchapter1.rpy:3164
 translate schinese c1_maya_interrogation_5cadbfbe:
 
     # maya "Nooo... I'm not a whore! Leave me alone..."
-    maya "不,不,我不是妓女!离我远点……"
+    maya "不,不,我不是妓女!离我远点...."
 
 # game/BKchapter1.rpy:3168
 translate schinese c1_maya_interrogation_922d9c28:
@@ -5314,7 +5314,7 @@ translate schinese c1_maya_interrogation_ee1fa387:
 translate schinese c1_maya_interrogation_eb80acc5:
 
     # maya "Ha! Haaa..." with hpunch
-    maya "哈!哈啊……" with hpunch
+    maya "哈!哈啊...." with hpunch
 
 # game/BKchapter1.rpy:3179
 translate schinese c1_maya_interrogation_b9c0eb42:
@@ -5326,7 +5326,7 @@ translate schinese c1_maya_interrogation_b9c0eb42:
 translate schinese c1_maya_interrogation_1e226686:
 
     # you "Deep down inside, you're a little slut, and you know it... Look how much you're enjoying being viciously fucked from behind."
-    you "你内心深处其实是个小荡妇,你自己也知道……看看你被粗暴地从后面干时有多兴奋。"
+    you "你内心深处其实是个小荡妇,你自己也知道....看看你被粗暴地从后面干时有多兴奋。"
 
 # game/BKchapter1.rpy:3186
 translate schinese c1_maya_interrogation_0126ce1e:
@@ -5368,7 +5368,7 @@ translate schinese c1_maya_interrogation_e1e54a1f:
 translate schinese c1_maya_interrogation_4233aa07:
 
     # you "Now... Time to see if you'd make a good cum dump..."
-    you "现在……让我们看看你会不会成为一个好的肉便器……"
+    you "现在....让我们看看你会不会成为一个好的肉便器...."
 
 # game/BKchapter1.rpy:3205
 translate schinese c1_maya_interrogation_de740dc3:
@@ -5416,7 +5416,7 @@ translate schinese c1_maya_interrogation_c44dbf75:
 translate schinese c1_maya_interrogation_3a120dea:
 
     # you "Mmmmh... That was a good fuck..."
-    you "唔……这真是太爽了……"
+    you "唔....这真是太爽了...."
 
 # game/BKchapter1.rpy:3233
 translate schinese c1_maya_interrogation_ffff2b8c:
@@ -9256,7 +9256,7 @@ translate schinese c1_captain_meeting_277a6f2f:
 translate schinese c1_captain_meeting_6441c0ac:
 
     # captain "I will be able to let the gold run through my well-manicured hands for relaxation... Mmmmh..."
-    captain "我会让金币在我的掌间流淌,这样会让我感到放松……嗯………"
+    captain "我会让金币在我的掌间流淌,这样会让我感到放松....嗯....…"
 
 # game/BKchapter1.rpy:5104
 translate schinese c1_captain_meeting_829992d5:
@@ -9280,13 +9280,13 @@ translate schinese c1_captain_meeting_fd1106ab:
 translate schinese c1_captain_meeting_85a4642b:
 
     # you "Well, let us arrange an exchange soon... In a public place."
-    you "好吧,让我们尽快安排一次交易……在一个公共场所。"
+    you "好吧,让我们尽快安排一次交易....在一个公共场所。"
 
 # game/BKchapter1.rpy:5114
 translate schinese c1_captain_meeting_e78bb06c:
 
     # captain "A public place, uh? I see, you don't trust me... I am pained."
-    captain "公共场所,嗯?我懂了,你不相信我……我伤心了。"
+    captain "公共场所,嗯?我懂了,你不相信我....我伤心了。"
 
 # game/BKchapter1.rpy:5116
 translate schinese c1_captain_meeting_ceef165b:
@@ -9316,7 +9316,7 @@ translate schinese c1_captain_meeting_667d99ad:
 translate schinese c1_captain_meeting_0b3b2580:
 
     # captain "I will get you an invitation to the tribune. We can talk safely during the morning hangings... Not many people will be paying attention."
-    captain "我会给你一张参加审判的邀请函。我们可以在早上的绞刑时间里安全地谈话……那时很少有人会注意到我们。"
+    captain "我会给你一张参加审判的邀请函。我们可以在早上的绞刑时间里安全地谈话....那时很少有人会注意到我们。"
 
 # game/BKchapter1.rpy:5128
 translate schinese c1_captain_meeting_0111ff70:
@@ -9334,7 +9334,7 @@ translate schinese c1_captain_meeting_07723ff9:
 translate schinese c1_captain_meeting_fbfd7954:
 
     # captain "And of course, keep everything you've seen here to yourself... No one would believe you if you tried to betray me, anyway. Are we clear?"
-    captain "当然,你在这里看到的一切都要保密……不过就算你想背叛我,也没人会相信你。你明白吗?"
+    captain "当然,你在这里看到的一切都要保密....不过就算你想背叛我,也没人会相信你。你明白吗?"
 
 # game/BKchapter1.rpy:5134
 translate schinese c1_captain_meeting_81c9474c:
@@ -9376,7 +9376,7 @@ translate schinese c1_captain_meeting_2f0056ac:
 translate schinese c1_captain_meeting_b9c1b730:
 
     # you "Renza..."
-    you "伦萨……"
+    you "伦萨...."
 
 # game/BKchapter1.rpy:5165
 translate schinese c1_captain_meeting_7ce77426:
@@ -9406,31 +9406,31 @@ translate schinese c1_captain_meeting_20e12746:
 translate schinese c1_captain_meeting_d3fcadc0:
 
     # renza "Oh, that's a relief... And the recording? You have it?"
-    renza "哦,太好了……录音呢?你有吗?"
+    renza "哦,太好了....录音呢?你有吗?"
 
 # game/BKchapter1.rpy:5175
 translate schinese c1_captain_meeting_af53e9d6:
 
     # you "I do... Good thing she didn't know I was wearing a Wyer."
-    you "有的……幸好她不知道我带着这个。"
+    you "有的....幸好她不知道我带着这个。"
 
 # game/BKchapter1.rpy:5177
 translate schinese c1_captain_meeting_6abb5c2b:
 
     # renza "Perfect! [MC.name], you've been an amazing help..."
-    renza "[MC.name],你太棒了,真是帮了大忙……"
+    renza "[MC.name],你太棒了,真是帮了大忙...."
 
 # game/BKchapter1.rpy:5179
 translate schinese c1_captain_meeting_41bcc05d:
 
     # you "Hehe... Don't make me blush."
-    you "呵呵……别让我脸红。"
+    you "呵呵....别让我脸红。"
 
 # game/BKchapter1.rpy:5181
 translate schinese c1_captain_meeting_8631c3f5:
 
     # renza "We can now move on to the next phase of our plan... Did she agree to meet you in public?"
-    renza "我们现在可以进入计划的下一阶段了……她同意在公共场合见你吗?"
+    renza "我们现在可以进入计划的下一阶段了....她同意在公共场合见你吗?"
 
 # game/BKchapter1.rpy:5183
 translate schinese c1_captain_meeting_c5142ecc:
@@ -10306,13 +10306,13 @@ translate schinese c1_trial_3495a6b2:
 translate schinese c1_trial_43886941:
 
     # lieutenant "You... You've ruined everything!!!"
-    lieutenant "你……你毁掉了一切！！！"
+    lieutenant "你....你毁掉了一切！！！"
 
 # game/BKchapter1.rpy:5628
 translate schinese c1_trial_be2c7f91:
 
     # captain "Take her away! I don't care what you do to her... But no one must ever hear of her again. You understand me?"
-    captain "带她走吧！我不在乎你们对她做什么……但任何人都不可以再提起她的存在,明白吗?"
+    captain "带她走吧！我不在乎你们对她做什么....但任何人都不可以再提起她的存在,明白吗?"
 
 # game/BKchapter1.rpy:5630
 translate schinese c1_trial_ba78029c:
@@ -10828,7 +10828,7 @@ translate schinese c1_trial_b2cbdd65:
 translate schinese c1_trial_ac89493c:
 
     # you "Well..." nointeract
-    you "嗯……" nointeract
+    you "嗯...." nointeract
 
 # game/BKchapter1.rpy:5929
 translate schinese c1_trial_86360b99:
@@ -11902,7 +11902,7 @@ translate schinese c1_ending_lieutenant_68590058:
 translate schinese c1_ending_lieutenant_32b6dad3:
 
     # you "Evening. I'm looking for lieuten... I mean, captain Lydie."
-    you "晚上好。我在找莉……我是说,莉迪总督。"
+    you "晚上好。我在找莉....我是说,莉迪总督。"
 
 # game/BKchapter1.rpy:6559
 translate schinese c1_ending_lieutenant_655ef585:

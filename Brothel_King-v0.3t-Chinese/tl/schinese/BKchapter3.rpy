@@ -10,7 +10,7 @@ translate schinese c3_suzume_hint_cb6a8167:
 translate schinese c3_suzume_hint_10f62c76:
 
     # you "Do you mean... Homura? Are you stalking me, or something?"
-    you "你是说……焰吗?你跟踪我?"
+    you "你是说....焰吗?你跟踪我?"
 
 # game/BKchapter3.rpy:16
 translate schinese c3_suzume_hint_894ee243:
@@ -22,19 +22,19 @@ translate schinese c3_suzume_hint_894ee243:
 translate schinese c3_suzume_hint_606cdffc:
 
     # you "Watch me have... THIS IS WORSE THAN STALKING!" with vpunch
-    you "偷窥……这比跟踪还糟糕!" with vpunch
+    you "偷窥....这比跟踪还糟糕!" with vpunch
 
 # game/BKchapter3.rpy:20
 translate schinese c3_suzume_hint_ec3923c2:
 
     # suzume "Hey, what can I say... It turns me on."
-    suzume "嘿,我能说什么呢……我就好这一口。"
+    suzume "嘿,我能说什么呢....我就好这一口。"
 
 # game/BKchapter3.rpy:22
 translate schinese c3_suzume_hint_7eced502:
 
     # you "Why you... Grrr..."
-    you "你这个……咆哮…"
+    you "你这个....咆哮…"
 
 # game/BKchapter3.rpy:24
 translate schinese c3_suzume_hint_167239e1:
@@ -4912,19 +4912,19 @@ translate schinese homura_cowgirl_b903fc2f:
 translate schinese homura_cowgirl_c705db54:
 
     # homura "I'm... I'm close..."
-    homura "我……快要了。"
+    homura "我....快要了。"
 
 # game/BKchapter3.rpy:2516
 translate schinese homura_cowgirl_d8966146:
 
     # you "Me too... Ohh..."
-    you "我也是……哦……"
+    you "我也是....哦...."
 
 # game/BKchapter3.rpy:2519
 translate schinese homura_cowgirl_1cd8dd70:
 
     # homura "Today is a safe day... Let it all in!"
-    homura "今天是安全日……射在里面吧！"
+    homura "今天是安全日....射在里面吧！"
 
 # game/BKchapter3.rpy:2522
 translate schinese homura_cowgirl_1acaf8bf:
@@ -4942,7 +4942,7 @@ translate schinese homura_cowgirl_d842cde4:
 translate schinese homura_cowgirl_2f524d9a:
 
     # you "OHHH..." nointeract
-    you "喔哦……" nointeract
+    you "喔哦...." nointeract
 
 # game/BKchapter3.rpy:2532
 translate schinese homura_cowgirl_952a146b:
@@ -4978,7 +4978,7 @@ translate schinese homura_cowgirl_504fc4be:
 translate schinese homura_cowgirl_c96654c5:
 
     # homura "And now I'll have to get herbs from the alchemist, and feel sick for two days... Ugh!"
-    homura "现在我得去药剂师那里买避孕药了,接下来两天会很难受……哼!"
+    homura "现在我得去药剂师那里买避孕药了,接下来两天会很难受....哼!"
 
 # game/BKchapter3.rpy:2549
 translate schinese homura_cowgirl_210eaaab:
@@ -4996,7 +4996,7 @@ translate schinese homura_cowgirl_e8186bac:
 translate schinese homura_cowgirl_a80338ef:
 
     # homura "I came... Ohh..."
-    homura "我要去了……哦……"
+    homura "我要去了....哦...."
 
 # game/BKchapter3.rpy:2560
 translate schinese homura_cowgirl_8bac255a:
@@ -5014,7 +5014,7 @@ translate schinese homura_cowgirl_b80d716e:
 translate schinese homura_cowgirl_7ea1993e:
 
     # homura "Oh my... Look at this... It's all over my breasts..."
-    homura "哦我的天……看看这些……你射得我满胸都是……"
+    homura "哦我的天....看看这些....你射得我满胸都是...."
 
 # game/BKchapter3.rpy:2570
 translate schinese homura_cowgirl_5f6407b4:
@@ -5026,7 +5026,7 @@ translate schinese homura_cowgirl_5f6407b4:
 translate schinese homura_cowgirl_6f2442a7:
 
     # homura "I told you to cum inside, though... Why didn't you?"
-    homura "我不是让你射在里面吗?为什么不……"
+    homura "我不是让你射在里面吗?为什么不...."
 
 # game/BKchapter3.rpy:2575
 translate schinese homura_cowgirl_7e7d73db:
@@ -5038,7 +5038,7 @@ translate schinese homura_cowgirl_7e7d73db:
 translate schinese homura_cowgirl_01060015:
 
     # homura "You came outside, like I said. You're a good boy... Hmmm..."
-    homura "你射在外面了。你真乖……嗯……"
+    homura "你射在外面了。你真乖....嗯...."
 
 # game/BKchapter3.rpy:2582
 translate schinese homura_cowgirl_dc0cb735:
@@ -5050,7 +5050,7 @@ translate schinese homura_cowgirl_dc0cb735:
 translate schinese homura_river_d4183bde:
 
     # homura "Aaah... The forest. I love it here..."
-    homura "啊……森林。我超喜欢这里。"
+    homura "啊....森林。我超喜欢这里。"
 
 # game/BKchapter3.rpy:2602
 translate schinese homura_river_f6455598:
@@ -5080,7 +5080,7 @@ translate schinese homura_river_cce82d0f:
 translate schinese homura_river_37626a82:
 
     # homura "I've always liked walking in nature. I've got fond memories of these woods. I even..."
-    homura "我一直很喜欢在大自然中散步。这里的树林里有我美好的回忆。我甚至……"
+    homura "我一直很喜欢在大自然中散步。这里的树林里有我美好的回忆。我甚至...."
 
 # game/BKchapter3.rpy:2614
 translate schinese homura_river_e7791deb:

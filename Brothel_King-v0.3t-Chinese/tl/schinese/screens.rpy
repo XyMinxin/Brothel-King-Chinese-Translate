@@ -167,8 +167,8 @@ translate schinese strings:
     new "音效音量"
 
     # game/screens.rpy:687
-    old "Test"
-    new "测试"
+    #old "Test"
+    #new "测试"
 
     # game/screens.rpy:696
     old "Voice Volume"
@@ -179,16 +179,16 @@ translate schinese strings:
     new "语音持续"
 
     # game/screens.rpy:761
-    old "Yes"
-    new "确定"
+    #old "Yes"
+    #new "确定"
 
     # game/screens.rpy:762
-    old "No"
-    new "取消"
+    #old "No"
+    #new "取消"
 
     # game/screens.rpy:790
-    old "Back"
-    new "回退"
+    #old "Back"
+    #new "回退"
 
     # game/screens.rpy:791
     old "Save"
@@ -212,11 +212,11 @@ translate schinese strings:
 
     # game/screens.rpy:238
     old "For updates, bug reports, and discussion: [URL]"
-    new "更新、错误报告及讨论: [URL] \n AI汉化-By JulienSlink-使用Claude3Sonnet \n 翻译报错或改进请联系julienslink@outlook.com/TG:@JulienSlink"
+    new "{b} 报错或建议请联系：[URL]{/b} \n{b} 机翻By JulienSlink；汉化by 迷雾战神、小熊猫、冥鑫{/b} \n{b} 本汉化版本仅供学习分享交流，不得用于商业用途{/b}"
 
     # game/screens.rpy:524
     old "{i}Screen made\n by OhWee{/i}"
-    new "{i}屏幕由 \n OhWee 制作{/i}"
+    new "{i}屏幕由 \n OhWee 设计制作{/i}"
 
     # game/screens.rpy:657
     old "Language"

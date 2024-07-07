@@ -2323,11 +2323,11 @@ init -3 python:
         # Budget cap description
 
         if total_budget == 0:
-            text_descript += " {color=[c_green]}客户将%s预算全部花在了%s上。{/color}" % (cust_pronoun2, girl_pronoun)
+            text_descript += " {color=[c_green]}客人将 %s 预算全部花在了 %s 身上。{/color}" % (cust_pronoun2, girl_pronoun)
             for cust in customers:
                 unlock_achievement("broke " + cust.pop.name)
         elif total_budget < 0: # with ignore_budget
-            text_descript += " {color=[c_gold]}客户在%s上超过了%s预算 (+%s 金币)。{/color}" % (girl_pronoun, cust_pronoun2, str_int(-total_budget))
+            text_descript += " {color=[c_gold]} %s 让 %s 的预算超支消费了 (+%s 金币)。{/color}" % (girl_pronoun, cust_pronoun2, str_int(-total_budget))
             for cust in customers:
                 unlock_achievement("broke " + cust.pop.name)
 
@@ -3359,11 +3359,11 @@ init -3 python:
 
         elif shake_count == 4:
 
-            renpy.say(you, "什么……我到底怎么了...", interact=False)
+            renpy.say(you, "什么....我到底怎么了...", interact=False)
 
         elif shake_count == 5:
 
-            renpy.say(you, "我……我控制不了自己...", interact=False)
+            renpy.say(you, "我....我控制不了自己...", interact=False)
 
             shake_count = 0
 
@@ -3929,11 +3929,11 @@ init -3 python:
 
         msg += str(working_girls) + " 位女孩今晚要工作"
 
-        msg += "\n{size=-2}" + __("- 服务员: ") + event_color["good"] % str(waitresses) + "\n"
-        msg += __("- 舞　娘: ") + event_color["good"] % str(dancers) + "\n"
-        msg += __("- 按摩师: ") + event_color["good"] % str(masseuses) + "\n"
-        msg += __("- 艺　妓: ") + event_color["good"] % str(geishas) + "\n"
-        msg += __("- 妓　女: ") + event_color["good"] % str(whores) + "\n{/size}\n"
+        msg += "\n{size=-2}" + __("- 女服务员: ") + event_color["good"] % str(waitresses) + "\n"
+        msg += __("- 脱衣舞娘: ") + event_color["good"] % str(dancers) + "\n"
+        msg += __("- 按摩技师: ") + event_color["good"] % str(masseuses) + "\n"
+        msg += __("- 表演艺伎: ") + event_color["good"] % str(geishas) + "\n"
+        msg += __("- 妓　　女: ") + event_color["good"] % str(whores) + "\n{/size}\n"
 
         if away > 1:
             msg += str(away) + " 位女孩进行外派任务或课程培训了\n\n"
@@ -3998,14 +3998,14 @@ init -3 python:
         ready_to_perk = sum(1 for girl in MC.girls if girl.perk_points > 0)
 
         if ready_to_level > 1:
-            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n")
+            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n\n")
         elif ready_to_level > 0:
-            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n")
+            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n\n")
 
         if ready_to_perk > 1:
-            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n")
+            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n\n")
         elif ready_to_perk > 0:
-            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n")
+            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n\n")
 
         if shop.updated:
             msg += __("商店进了一批新货，看看有没有你想要的.\n\n")

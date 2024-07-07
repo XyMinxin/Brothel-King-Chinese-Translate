@@ -118,8 +118,8 @@ init -10 python:
                         "dancer" : "脱衣舞娘",
                         "Masseuse" : "按摩技师",
                         "masseuse" : "按摩技师",
-                        "Geisha" : "艺伎",
-                        "geisha" : "艺伎",
+                        "Geisha" : "表演艺伎",
+                        "geisha" : "表演艺伎",
                         "Whore" : "妓女",
                         "whore" : "妓女",
 
@@ -136,8 +136,8 @@ init -10 python:
                         "naked" : "露出",
                         "Group" : "群交",
                         "group" : "群交",
-                        "Bisexual" : "百合",
-                        "bisexual" : "百合",
+                        "Bisexual" : "双飞",
+                        "bisexual" : "双飞",
 
                         ## 偏好 ##
                         "Refuses" : "完全拒绝",
@@ -303,8 +303,8 @@ init -10 python:
                         "naked" : "露出",
                         "Group" : "群交",
                         "group" : "群交",
-                        "Bisexual" : "百合",
-                        "bisexual" : "百合",
+                        "Bisexual" : "双飞",
+                        "bisexual" : "双飞",
 
                         ## 农场奴仆 ##
                         "Stallion" : "种马",
@@ -399,15 +399,15 @@ init -10 python:
                         "naked training" : "露出训练",
                         "Group training" : "群交训练",
                         "group training" : "群交训练",
-                        "Bisexual training" : "百合训练",
-                        "bisexual training" : "百合训练",
+                        "Bisexual training" : "双飞训练",
+                        "bisexual training" : "双飞训练",
                         "Auto training" : "自动训练",
                         "auto training" : "自动训练",
                         }
 
     ## 结算界面 ##
     result_name_dict = {
-                       ## 最终结果 ##
+                       # 最终结果 ##
                        "very bad" : "非常糟糕",
                        "bad" : "糟糕",
                        "average" : "一般",
@@ -559,16 +559,16 @@ init -10 python:
                          "minion" : "农场用品",
                          "Gift" : "礼物",
                          "gift" : "礼物",
-                         "Decoration" : "饰品",
-                         "decoration" : "饰品",
-                         "Furnishing" : "家具",
-                         "furnishing" : "家具",
+                         "Decoration" : "装饰品",
+                         "decoration" : "装饰品",
+                         "Furnishing" : "设施",
+                         "furnishing" : "设施",
                          "Utility" : "公用设施",
                          "utility" : "公用设施",
                          "Windows" : "窗户",
                          "windows" : "窗户",
-                         "Comfort" : "慰藉用品",
-                         "comfort" : "慰藉用品",
+                         "Comfort" : "生活用品",
+                         "comfort" : "生活用品",
                          "Altars" : "祭坛",
                          "altars" : "祭坛",
                          "Gizmos" : "小玩意",
@@ -653,6 +653,7 @@ init -10 python:
                          }
 
     ## 访问城市界面 ##
+    #汉化标签，此处词典未生效#
     location_name_dict = {
                          ## 地区名称 ##
                          "The Slums" : "贫民窟",
@@ -1303,25 +1304,25 @@ init -10 python:
                 "露天温泉" : "onsen.webp",
                 "花坊剧场" : "okiya.webp",
                 # Bedrooms
-                "集体宿舍" : "basic room1.webp",
-                "四人集宿" : "basic room2.webp",
-                "单人宿舍" : "basic room3.webp",
-                "标准客房" : "standard room1.webp",
-                "复式套间" : "standard room2.webp",
+                "拥挤的混宿" : "basic room1.webp",
+                "狭窄的单间" : "basic room2.webp",
+                "简陋的房间" : "basic room3.webp",
+                "普通的房间" : "standard room1.webp",
+                "舒适的客房" : "standard room2.webp",
                 "商务套房" : "standard room3.webp",
                 "豪华套房" : "rich room1.webp",
                 "总统套房" : "rich room2.webp",
-                "独栋别墅" : "rich room3.webp",
-                "复式别墅" : "noble room1.webp",
-                "花园洋楼" : "noble room2.webp",
-                "公主寝宫" : "noble room3.webp",
+                "温暖阳光房" : "rich room3.webp",
+                "独栋海景房" : "noble room1.webp",
+                "千金的闺房" : "noble room2.webp",
+                "公主的寝宫" : "noble room3.webp",
                 # Master bedroom
-                "金屋藏娇" : "master/master0.webp",
-                "一龙二凤" : "master/master1.webp",
-                "三人成行" : "master/master2.webp",
-                "淫乱派对" : "master/master3.webp",
-                "皇室寝宫" : "master/master4.webp",
-                "后宫三千" : "master/master5.webp",
+                "简陋的卧室" : "master/master0.webp",
+                "狭窄的卧室" : "master/master1.webp",
+                "宽敞的卧室" : "master/master2.webp",
+                "豪华的卧室" : "master/master3.webp",
+                "华美的寝宫" : "master/master4.webp",
+                "奢华的宫殿" : "master/master5.webp",
                 }
     bgroom_pics = {
                 #修复序章选过营业后内容后，背景图不显示
@@ -1382,7 +1383,7 @@ init -10 python:
                 }
 
     god_pics = {
-                "阿里奥斯" : "UI/arios.webp",
+                "太阳神" : "UI/arios.webp",
                 "莎莉娅" : "UI/shalia.webp",
                 None : "UI/none.webp"
                 }
@@ -1768,6 +1769,6 @@ init -10 python:
 
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
-    URL = "{a=https://www.henthighschool.net/brothel-king/}{color=#9933FF}https://www.henthighschool.net/brothel-king/{/color}{/a}"
+    URL = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate{/color}{/a}"
 
 #### END OF BK SETTINGS ####

@@ -869,7 +869,7 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
                 "No, don't peep":
                     you "I must be strong. I'm an upstanding citizen."
 
-                    if MC.god == "阿里奥斯":
+                    if MC.god == "太阳神":
 
                         you "Remember what Arios says. 'Temptation is a dark tit'... Pit. Pit, I meant pit."
 
@@ -8317,7 +8317,7 @@ label willow_relative_returns():
 
                 relative "It was a lot easier before that stupid war started. The so-called 'Holy war' spread distrust and ill-will between our people."
 
-                if MC.god == "阿里奥斯":
+                if MC.god == "太阳神":
                     you "Well, surely you cannot blame Arios the all-mighty for these troubles? A righteous light must be shone on the Pagans..."
 
                     "She shakes a head disapprovingly."
@@ -16013,7 +16013,7 @@ label resource_exchange_menu():
             else:
                 bast "It doesn't seem like you have those resources with you now. Come back later, maybe?"
 
-        "Never mind":
+        "没事了":
             you "Ok, I'll leave you to... whatever it is you're doing."
 
             bast "Yeah. See ya."
@@ -18217,7 +18217,7 @@ label meet_twins():
 
     "Incessant flows of pilgrims come up and down the road, some of them walking the whole way on their knees and elbows, other walking backwards or blindfolded as a sign of worship. {nw}"
 
-    if MC.god == "阿里奥斯":
+    if MC.god == "太阳神":
         extend "Although you empathize with their fervor, it is no less annoying to have to dodge clumsy pilgrims every step of the way."
     else:
         extend "You are annoyed at the Arios fanatics that threaten to bump into you every step of the way."

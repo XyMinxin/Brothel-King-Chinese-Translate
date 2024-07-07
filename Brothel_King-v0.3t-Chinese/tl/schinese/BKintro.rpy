@@ -2218,7 +2218,7 @@ translate schinese resume_intro4_767f64a7:
 translate schinese resume_intro4_28a1b85c:
 
     # maid "Ohh my lord... You're so forceful!"
-    maid "哦,我的主人……您真是威猛无比!"
+    maid "哦,我的主人....您真是威猛无比!"
 
 # game/BKintro.rpy:1570
 translate schinese resume_intro4_30ec90e7:
@@ -2236,7 +2236,7 @@ translate schinese resume_intro4_187c78f5:
 translate schinese resume_intro4_2e8a9f9d:
 
     # maid "Master [MC.name]... is so hard!"
-    maid "主人[MC.name]……大鸡巴好烫!"
+    maid "主人[MC.name]....大鸡巴好烫!"
 
 # game/BKintro.rpy:1580
 translate schinese resume_intro4_cbdd44d1:
@@ -2368,7 +2368,7 @@ translate schinese maid_fuck_43276370:
 translate schinese maid_fuck_16759eaf:
 
     # "Meanwhile, in Gio's room..."
-    "与此同时,在乔的私人房间里……"
+    "与此同时,在乔的私人房间里...."
 
 # game/BKintro.rpy:1664
 translate schinese maid_fuck_2151bd44:

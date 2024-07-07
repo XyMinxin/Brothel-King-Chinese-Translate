@@ -76,7 +76,7 @@ translate schinese help_main_c0ded2fc:
 translate schinese help_main_79c98d2c:
 
     # sill "The {b}Farm{/b} tab allows you to visit Gizel and her spooky farm. This will only lead to trouble, if you ask me."
-    sill "{b}奴隶农场{/b}标签页让你可以拜访吉泽尔和她阴森的农场。我看这只会带来麻烦。"
+    sill "{b}奴隶农场{/b}标签页让你可以拜访吉泽和她阴森的农场。我看这只会带来麻烦。"
 
 # game/BKhelp.rpy:759
 translate schinese help_main_d774e7a6:
@@ -604,13 +604,13 @@ translate schinese help_whores_a3048321:
 translate schinese help_whores_4a609ba6:
 
     # sill sad "But some brothel masters choose to use fear and coercion instead... Some even brutally rape their slaves into submission."
-    sill sad "但是一些brothel的主人选择使用恐吓和强制手段……甚至残酷地强奸她们使之服从。"
+    sill sad "但是一些brothel的主人选择使用恐吓和强制手段....甚至残酷地强奸她们使之服从。"
 
 # game/BKhelp.rpy:1100
 translate schinese help_whores_d6dcee3c:
 
     # sill happy "Other choose to use magic... In the end, it's up to you to decide how you prefer to train your girls."
-    sill happy "其他人则选择使用魔法……归根结底,如何训练您的女孩取决于您自己。"
+    sill happy "其他人则选择使用魔法....归根结底,如何训练您的女孩取决于您自己。"
 
 # game/BKhelp.rpy:1102
 translate schinese help_whores_b8b5b024:
@@ -622,7 +622,7 @@ translate schinese help_whores_b8b5b024:
 translate schinese help_whores_3b10d222:
 
     # sill "Working in the brothel will make your girls more receptive to sex work over time. Sometimes, interacting with customers will make them more interested in sex... Until they are ready for the next step."
-    sill "在青楼工作会使您的女孩逐渐对性工作更加接受。有时,与客户的互动也会让她们对性产生更多兴趣……直到她们准备好进入下一步。"
+    sill "在青楼工作会使您的女孩逐渐对性工作更加接受。有时,与客户的互动也会让她们对性产生更多兴趣....直到她们准备好进入下一步。"
 
 # game/BKhelp.rpy:1107
 translate schinese help_whores_2cc36857:
@@ -724,19 +724,19 @@ translate schinese skills_introduction_510ae8f6:
 translate schinese bis_introduction_ca0dddba:
 
     # sill happy "Master! It seems you have trained your first bisexual girl."
-    sill happy "主人!看来你已经训练出了第一个双性恋女孩。"
+    sill happy "主人!看来你已经训练出了第一个接受双飞玩法的女孩。"
 
 # game/BKhelp.rpy:1172
 translate schinese bis_introduction_958ca6ab:
 
     # sill "Would you like to learn more about how {b}bisexual{/b} whores work?" nointeract
-    sill "你想了解双性恋{b}婊子{/b}的工作方式吗?" nointeract
+    sill "你想了解{b}双飞{/b}是怎么一回事吗?" nointeract
 
 # game/BKhelp.rpy:1174
 translate schinese bis_introduction_ff9ff0da:
 
     # sill "Bisexual girls are able to have a threesome with a customer. For that, you will need {b}at least two bisexual whores{/b} active at the same time."
-    sill "双性恋女孩能够与客户进行三人行。为此,你需要{b}至少有两个正在服务的双性恋女孩{/b}。"
+    sill "双飞可以让一个客人同时和两个女孩做爱。为此,你需要{b}至少有两个正在服务的双飞女孩{/b}。"
 
 # game/BKhelp.rpy:1178
 translate schinese bis_introduction_9ba21507:
@@ -754,7 +754,7 @@ translate schinese bis_introduction_d680755a:
 translate schinese bis_introduction_4724d70a:
 
     # sill "Bisexual girls are useful if you want to get the {b}maximum value{/b} out of a few customers!"
-    sill "双性恋女孩很有用,如果你想从少数客户那里获得{b}最大价值{/b}的话!"
+    sill "能够双飞的女孩很有用,如果你想从少数客户那里获得{b}最大价值{/b}的话!"
 
 # game/BKhelp.rpy:1184
 translate schinese bis_introduction_807ea81c:
@@ -772,13 +772,13 @@ translate schinese bis_introduction_6e4cab89:
 translate schinese group_introduction_b67fee2c:
 
     # sill happy "Master! It seems you have trained your first group girl."
-    sill happy "主人!看来你已经训练出了第一个群交女孩。"
+    sill happy "主人!看来你已经训练出了第一个接受群交的女孩。"
 
 # game/BKhelp.rpy:1197
 translate schinese group_introduction_54670519:
 
     # sill "Would you like to learn more about how {b}group{/b} works for whores?" nointeract
-    sill "你想了解{b}群P{/b}对婊子来说是如何工作的吗?" nointeract
+    sill "你想了解{b}群交{/b}是怎么一回事吗?" nointeract
 
 # game/BKhelp.rpy:1199
 translate schinese group_introduction_b9132224:
@@ -1768,7 +1768,7 @@ translate schinese help_farm_5c3737c1:
 translate schinese help_farm_9b6a2942:
 
     # gizel "Of course, it is much more than that. It is a shining place of power acting like a beacon through space and time, sitting on a whirlpool of dark magical energy..."
-    gizel "当然,这远不止如此。这是一个光辉灿烂的力量之地,如同一座位于时空漩涡之上的信号塔,镶嵌着黑暗魔法的能量……"
+    gizel "当然,这远不止如此。这是一个光辉灿烂的力量之地,如同一座位于时空漩涡之上的信号塔,镶嵌着黑暗魔法的能量...."
 
 # game/BKhelp.rpy:1855
 translate schinese help_farm_d99951a5:
@@ -1786,7 +1786,7 @@ translate schinese help_farm_99f22c61:
 translate schinese help_farm_a03c3eaf:
 
     # you "*sigh* You do that..."
-    you "*叹息*你就这么做吧……"
+    you "*叹息*你就这么做吧...."
 
 # game/BKhelp.rpy:1866
 translate schinese help_farm_menu_21bd3cff:
@@ -1840,7 +1840,7 @@ translate schinese help_farm_menu_76939fcc:
 translate schinese help_farm_menu_ee85818f:
 
     # gizel "Our activities here are a bit unusual, I guess, and might attract attention from the wrong crowd... Like those Arios-worshipping apes. So let's keep our little operation quiet."
-    gizel "我们在这里的活动有些不寻常,我想,可能会引起错误人群的注意……比如那些崇拜亚里奥斯的猴子们。所以让我们保持我们的小小运作的低调吧。"
+    gizel "我们在这里的活动有些不寻常,我想,可能会引起错误人群的注意....比如那些崇拜亚里奥斯的猴子们。所以让我们保持我们的小小运作的低调吧。"
 
 # game/BKhelp.rpy:1890
 translate schinese help_farm_menu_cedb2a82:
@@ -1864,7 +1864,7 @@ translate schinese help_farm_menu_6c52d52b:
 translate schinese help_farm_menu_8dfec8f5:
 
     # gizel smirk "Ah, the minions! My little babies, my loves..."
-    gizel smirk "啊,仆从们!我的小宝贝们,我的挚爱……"
+    gizel smirk "啊,仆从们!我的小宝贝们,我的挚爱...."
 
 # game/BKhelp.rpy:1901
 translate schinese help_farm_menu_6413bebc:
@@ -1894,13 +1894,13 @@ translate schinese help_farm_menu_bf18b887:
 translate schinese help_farm_menu_887e01c7:
 
     # gizel "Stallions are magically brainwashed sex-slaves from the Blood Islands, bred selectively for their unnaturally large dicks..."
-    gizel "种马是从血岛带来的, 经过选择性培育的魔法洗脑性奴隶,拥有非自然的巨大阴茎……"
+    gizel "种马是从血岛带来的, 经过选择性培育的魔法洗脑性奴隶,拥有非自然的巨大阴茎...."
 
 # game/BKhelp.rpy:1911
 translate schinese help_farm_menu_0980844a:
 
     # you "Freaky..."
-    you "太可怕了……"
+    you "太可怕了...."
 
 # game/BKhelp.rpy:1914
 translate schinese help_farm_menu_3d1d6e8c:
@@ -2260,7 +2260,7 @@ translate schinese check_missing_pictures_4f1baf65:
 translate schinese check_missing_pictures_c9cd67c9:
 
     # "Step4: Checking group and bisexual sex pictures"
-    "步骤4: 检查群交和百合词条图片"
+    "步骤4: 检查群交和双飞词条图片"
 
 # game/BKhelp.rpy:2711
 translate schinese check_missing_pictures_51aadab5:
@@ -2586,11 +2586,11 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1554
     old "No, I'm good"
-    new "不,我很好"
+    new "不,不必了"
 
     # game/BKhelp.rpy:1611
     old "Tell me about classes"
-    new "告诉我关于角色职业的信息"
+    new "告诉我关于培训课程的信息"
 
     # game/BKhelp.rpy:1611
     old "Tell me about quests"

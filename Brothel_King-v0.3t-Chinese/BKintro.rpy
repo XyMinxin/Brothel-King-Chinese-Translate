@@ -388,7 +388,7 @@ label resume_intro2:
         you "Me?"
 
         "I am a servant of Arios, god of Light and Strength":
-            $ MC.set_god("阿里奥斯")
+            $ MC.set_god("太阳神")
             $ MC.good += 1
             $ renpy.block_rollback()
             guard "That is good, brother. I hope to see you often at the Cathedra to pray."

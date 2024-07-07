@@ -4579,9 +4579,9 @@ label city_none:
 
         $ choices.append("在%s的角落和阴影中，你看到了谨慎但明确无误的崇拜莎莉娅的迹象。你赞许地点点头.")
 
-    elif MC.god == "阿里奥斯":
+    elif MC.god == "太阳神":
 
-        $ choices.append("看着一群游荡在%s的朝圣者，你看到一些张扬的、直言不讳的阿里奥斯崇拜者，把他们的信仰放在袖子上。其他人则比较谦逊，在默默的祈祷中跟随偶像。你想知道哪些人是真正的信徒.")
+        $ choices.append("看着一群游荡在%s的朝圣者，你看到一些张扬的、直言不讳的太阳神崇拜者，把他们的信仰放在袖子上。其他人则比较谦逊，在默默的祈祷中跟随偶像。你想知道哪些人是真正的信徒.")
 
     else:
 
@@ -5644,7 +5644,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         if _return:
                             you "该死的你!你就等着我再抓到你..."
                         else:
-                            you "嗯，你根本不值得我这么麻烦……下次你最好照我说的做!"
+                            you "嗯，你根本不值得我这么麻烦....下次你最好照我说的做!"
 
                             "你知道她现在的状态不适合接待顾客。你很沮丧，让她收拾东西回青楼去."
 
@@ -5652,7 +5652,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                     "Give up":
                         $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你现在欠我的.",
-                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你……但也请你不要考验我的耐心."))
+                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你....但也请你不要考验我的耐心."))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)

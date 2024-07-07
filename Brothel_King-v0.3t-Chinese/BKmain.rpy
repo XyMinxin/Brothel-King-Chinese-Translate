@@ -1811,7 +1811,7 @@ label visit_merchant_loop():
                 else:
                     right_focus.char "You do not have the necessary gold.{w=0.8}{nw}"
 
-            elif act == "出售":
+            elif act == "sell":
                 if not MC.can_sell(right_focus, it):
                     right_focus.char "You already sold this to me once! I'm sorry, but this is not a pawn shop. You keep it now."
                     if renpy.call_screen("yes_no", "The merchant will not buy this back. Do you want to get rid of [it.name] for no money?"):
@@ -1827,7 +1827,7 @@ label visit_merchant_loop():
                         hide screen item_profile
                         with Dissolve(0.15)
 
-            elif act in ("购买", "购买并装备"):
+            elif act in ("buy", "购买并装备"):
                 $ price = it.get_price("buy")
 
                 if MC.has_gold(price):

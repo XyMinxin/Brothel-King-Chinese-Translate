@@ -4073,9 +4073,9 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("基础着装", "你从希露那里得到了供宣传人员换装用的 {b}基础着装{/b} 。 这是用 '%s' 剩下的布料缝制的凡品，但总比没有好。" % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
-        "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
+        "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
 
         $ story_remove_event("advertising_intro", "daily")
 
@@ -5316,7 +5316,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 #     - Spell battle: Spi/Cha
 #     - Join fun
 
-
+#汉化标签，待汉化的合同内容，对应描述在BKdialouge line378#
 #     - Context: Boat cruise (JP), Lavish Party (gold), Religious ceremony (mood+energy), School festival (skill), Private Date (items),
 #                Official Meeting (rep), Magic conference (double AP), Orgy (pref increase)
 

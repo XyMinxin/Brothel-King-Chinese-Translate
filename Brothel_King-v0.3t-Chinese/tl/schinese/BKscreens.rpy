@@ -451,7 +451,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4382
     old "Oh, hi. Got a new job for me?"
-    new "有新工作给我吗?还是说你想和我到房间里深入交流一下？"
+    new "需要我做些什么?还是说你想和我到马车里疼爱我一番？"
 
     # game/BKscreens.rpy:4384
     old "I'm still working on that "
@@ -518,8 +518,8 @@ translate schinese strings:
     new "用 %s 金币刷新商品(一天限一次)。"
 
     # game/BKscreens.rpy:5346
-    old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
-    new "扩容货架(+%s %s 件商品 %s )消耗 %s %s 。"
+    #old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
+    #new "扩容货架(+%s %s 件商品 %s )消耗 %s %s 。"
 
     # game/BKscreens.rpy:5348
     old "Upgrade shop"
@@ -858,7 +858,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2086
     old "Farm"
-    new "奴隶农场"
+    new "农场"
 
     # game/BKscreens.rpy:2292
     old "Bu{u}y{/u}"
@@ -881,8 +881,8 @@ translate schinese strings:
     new "解放"
 
     # game/BKscreens.rpy:2426
-    old "Sell"
-    new "出售"
+    #old "Sell"
+    #new "出售"
 
     # game/BKscreens.rpy:2436
     old "Level {u}u{/u}p"
@@ -1240,11 +1240,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4902
     old "Click to keep the brothel report showing at all times."
-    new "点击后 青楼报告总是显示状态"
+    new "点击后 青楼报告将保持显示状态"
 
     # game/BKscreens.rpy:4905
     old "Click to hide the brothel report."
-    new "点击后 隐藏青楼报告"
+    new "点击后 取消青楼报告保持显示"
 
     # game/BKscreens.rpy:4915
     old "Show brothel report"
@@ -1584,32 +1584,32 @@ translate schinese strings:
     new "女孩互动"
 
     # game/BKscreens.rpy:7569
-    old "Talk"
-    new "对话"
+    #old "Talk"
+    #new "对话"
 
     # game/BKscreens.rpy:7547
-    old "Train"
-    new "训练"
+    #old "Train"
+    #new "训练"
 
     # game/BKscreens.rpy:7547
-    old "Magic"
-    new "催眠"
+    #old "Magic"
+    #new "催眠"
 
     # game/BKscreens.rpy:7547
-    old "React"
-    new "奖惩"
+    #old "React"
+    #new "奖惩"
 
     # game/BKscreens.rpy:7547
-    old "Misc"
-    new "其他"
+    #old "Misc"
+    #new "其他"
 
     # game/BKscreens.rpy:7599
-    old "Advanced"
-    new "进阶"
+    #old "Advanced"
+    #new "进阶"
 
     # game/BKscreens.rpy:7636
-    old "OTHER"
-    new "其他"
+    #old "OTHER"
+    #new "其他"
 
     # game/BKscreens.rpy:7690
     old "\nActivate or deactivate objectionable content (won't affect story scenes)"
@@ -1654,10 +1654,10 @@ translate schinese strings:
     new "群交：只使用群交图片"
 
     old "Bisexual sex: Mix bisexual pictures with regular pictures"
-    new "百合：将百合图片与普通图片混合"
+    new "双飞：将双飞图片与普通图片混合"
 
     old "Bisexual sex: Only use bisexual pictures"
-    new "百合：只使用百合图片"
+    new "双飞：只使用双飞图片"
 
     # game/BKscreens.rpy:7763
     old "\nChoose the behavior of slavemarket girls' pictures"
@@ -1756,7 +1756,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7887
     old "FARM"
-    new "奴隶农场"
+    new "农场"
 
     # game/BKscreens.rpy:7888
     old "FIX"
@@ -1872,7 +1872,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7941
     # old "Stallion Bisexual"
-    # new "种马双性恋"
+    # new "种马双飞"
 
     # # game/BKscreens.rpy:7942
     # old "Stallion Group"
@@ -1900,7 +1900,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7949
     # old "Beast Bisexual"
-    # new "与野兽双性恋"
+    # new "与野兽双飞"
 
     # # game/BKscreens.rpy:7950
     # old "Beast Group"
@@ -1928,7 +1928,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7957
     # old "Monster Bisexual"
-    # new "与怪物双性恋"
+    # new "与怪物双飞"
 
     # # game/BKscreens.rpy:7958
     # old "Monster Group"
@@ -1956,7 +1956,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7965
     # old "Machine Bisexual"
-    # new "机械双性恋"
+    # new "机械双飞"
 
     # # game/BKscreens.rpy:7966
     # old "Machine Group"
