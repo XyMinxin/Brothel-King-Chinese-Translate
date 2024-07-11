@@ -8,7 +8,7 @@
 
 目前游戏版本：0.3t（2023/09/23）
 
-目前汉化版本：20240708
+目前汉化版本：20240712
 
 ①下载本体：[下载游戏本体](https://www.mediafire.com/file/da0luyi63xgczfp/Brothel_King-0.3t.zip/file)
 

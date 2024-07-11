@@ -1772,7 +1772,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     for act in ("group", "bisexual"):
 
                         if girl.does[act]:
-                            $ text1 = "{b}✓{/b}"
+                            $ text1 = "{b}{font=[gui.fuhao]}✓{/font}{/b}"
                         else:
                             $ text1 = ""
 
@@ -1835,7 +1835,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                     if context == "girls":
 
                                         if girl.does[stat.name.lower()]:
-                                            $ text1 = "✓"
+                                            $ text1 = "{font=[gui.fuhao]}✓{/font}"
                                         else:
                                             $ text1 = ""
 
@@ -4913,7 +4913,7 @@ screen home():
                 style "gui_button"
 
                 if always_show_brothel_report:
-                    text "✓" font "DejaVuSans.ttf" size res_font(14) xalign 0.5 yalign 0.5
+                    text "{font=[gui.fuhao]}✓{/font}" size res_font(14) xalign 0.5 yalign 0.5
                 else:
                     text " " size res_font(14) xalign 0.5
             text "Show brothel report" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
@@ -7567,9 +7567,9 @@ screen girl_interact(girl, free=False):
 
                             textbutton __(topic.caption) + get_act_weakness_symbol(girl, topic.act) background None text_layout "nobreak" text_size res_font(13) text_color c_white xsize xres(100) text_xalign 0.0 action NullAction():
                                 if girl.personality_unlock[topic.act]:
-                                    tooltip __("You know that [girl.name] has ") + __(girl.get_reaction_to_act(topic.act)) + __(" for ") + __(topic.act) + __(" acts.")
+                                    tooltip __("你知道 [girl.name] 对") + __(girl_related_dict[topic.act]) + __(girl_related_dict[girl.get_reaction_to_act(topic.act)]) + "。"
                                 else:
-                                    tooltip __("You do not know [girl.name]'s reaction to ") + __(topic.act) + __(" acts.")
+                                    tooltip __("你不知道 [girl.name] 对") + __(girl_related_dict[topic.act]) + __("是什么感觉。")
                                 hovered Show("sex_details", girl=girl)
                                 unhovered Hide("sex_details")
 
@@ -7578,7 +7578,7 @@ screen girl_interact(girl, free=False):
                                     if topic.is_available(girl, "lecture", free)[0]:
                                         text_hover_underline True
                                         action Return([topic, "lecture"])
-                                        tooltip __("Lecture [girl.name] about the virtues of ") + __(topic.act) + __(" acts (soft).\nCosts ") + str(normal_cost) + "{image=img_AP}."
+                                        tooltip __("Lecture [girl.name] about the virtues of ") + __(girl_related_dict[topic.act]) + __(" acts (soft).\nCosts ") + str(normal_cost) + "{image=img_AP}."
                                     else:
                                         text_color c_grey
                                         action NullAction()
@@ -7589,9 +7589,9 @@ screen girl_interact(girl, free=False):
                                     text_hover_underline True
                                     action Return([topic, "train"])
                                     if topic.gold_cost:
-                                        tooltip __("Train [girl.name] for ") + __(topic.act) + __(" acts.\nCosts ") + str(normal_cost) + "{image=img_AP} and " + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                        tooltip __("Train [girl.name] for ") + __(girl_related_dict[topic.act]) + __(" acts.\nCosts ") + str(normal_cost) + "{image=img_AP} and " + str(topic.get_gold_cost()) + "{image=img_gold}."
                                     else:
-                                        tooltip __("Train [girl.name] for ") + __(topic.act) + __(" acts.\nCosts ") + str(normal_cost) + "{image=img_AP}."
+                                        tooltip __("Train [girl.name] for ") + __(girl_related_dict[topic.act]) + __(" acts.\nCosts ") + str(normal_cost) + "{image=img_AP}."
                                 else:
                                     text_color c_grey
                                     action NullAction()

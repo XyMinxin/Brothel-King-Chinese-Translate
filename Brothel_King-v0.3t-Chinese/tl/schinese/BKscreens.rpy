@@ -669,16 +669,16 @@ translate schinese strings:
     new " 本周供应充足。物价下跌。"
 
     # game/BKscreens.rpy:7562
-    old "You know that [girl.name] has "
-    new "你知道 [girl.name] 有 "
+    # old "You know that [girl.name] has "
+    # new "你知道 [girl.name] 有 "
 
-    # game/BKscreens.rpy:7562
-    old " acts."
-    new "行为。"
+    # # game/BKscreens.rpy:7562
+    # old " acts."
+    # new "行为。"
 
     # game/BKscreens.rpy:7564
-    old "You do not know [girl.name]'s reaction to "
-    new "你不知道 [girl.name] 对 "
+    # old "You do not know [girl.name]'s reaction to "
+    # new "你不知道 [girl.name] 对 "
 
     # game/BKscreens.rpy:7573
     old "Lecture [girl.name] about the virtues of "

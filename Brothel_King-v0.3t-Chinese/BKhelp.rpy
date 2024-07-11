@@ -2609,7 +2609,7 @@ label cheat_menu():
 #                    $ calendar.set_alarm(calendar.time + 1, Event(label = "collect_wood"))
 
                 "测试特殊的角色":
-                    "✓ [emo_heart] [emo_lightning]"
+                    "{font=[gui.fuhao]}✓{/font} [emo_heart] [emo_lightning]"
 
                 "返回上一级":
                     jump cheat_menu
