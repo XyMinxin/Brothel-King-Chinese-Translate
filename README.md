@@ -12,7 +12,7 @@
 
 ①下载本体：[下载游戏本体](https://www.mediafire.com/file/da0luyi63xgczfp/Brothel_King-0.3t.zip/file)
 
-②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)
+②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/1va1v7cq1psp53x/game_patch_0.3.zip/file)
 
 或者直接下载打包好的[本体+原版补丁](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
 
