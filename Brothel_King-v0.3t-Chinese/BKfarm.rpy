@@ -248,7 +248,7 @@ init -2 python:
             if self.level >= 5:
                 des += " (满级)"
             else:
-                des += " (XP: %i/%i)" % (self.xp, minion_xp_to_level[self.level+1])
+                des += " (XP: %i/%i)(self.xp, minion_xp_to_level[self.level+1])
 
 
             if self.hurt:
@@ -553,9 +553,9 @@ init -2 python:
                 descript += " "
 
                 if self.act == "group":
-                    descript += farm_description[self.act + " intro"] % (girl.fullname, str(len(self.minions)) + " " + rand_choice(minion_adjectives[min_type]) + " " + min_type)
+                    descript += farm_description[self.act + " intro"] % (girl.fullname, str(len(self.minions)) + rand_choice(minion_adjectives[min_type]) + " " + farm_related_dict[min_type])
                 else:
-                    descript += farm_description[self.act + " intro"] % (girl.fullname, article(rand_choice(minion_adjectives[min_type])) + " " + min_type)
+                    descript += farm_description[self.act + " intro"] % (girl.fullname, article(rand_choice(minion_adjectives[min_type])) + " " + farm_related_dict[min_type])
 
                 ## Calculates roll modifier
 
@@ -573,7 +573,7 @@ init -2 python:
                     weak = True
 
                     if not farm.knows["weakness"][girl]:
-                        descript += " 吉泽尔注意到 " + girl.name + " 在 " + self.minions[0].type + "面前有强烈的反应 (" + event_color["fear"] % "weakness discovered" + ")."
+                        descript += " 吉泽尔注意到 " + girl.name + " 在 " + farm_related_dict[self.minions[0].type] + "面前有强烈的反应 (" + event_color["fear"] % "weakness discovered" + ")."
                         farm.knows["weakness"][girl] = farm_installations_dict[girl.weakness]
 
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_discovered_weakness", call_args=[girl]))
@@ -585,7 +585,7 @@ init -2 python:
                         if girl.get_effect("special", "all farm weaknesses"):
                             descript += " 吉泽尔发现 " + girl.name + " 会 " + event_color["fear"] % "对所有的仆从都感到恐惧" + ", 利用她的弱点来训练她."
                         else:
-                            descript += " 吉泽尔发现 " + girl.name + " 对 " + event_color["fear"] % ("这些 " + girl.weakness + "感到害怕") + ", 利用她的弱点来训练她."
+                            descript += " 吉泽尔发现 " + girl.name + " 对 " + event_color["fear"] % ("这些 " + farm_related_dict[girl.weakness] + "感到害怕") + ", 利用她的弱点来训练她."
                 else:
                     weak = False
 
@@ -615,7 +615,7 @@ init -2 python:
                         girl.personality_unlock[self.act] = True
                         farm.knows["pos_acts"][girl].append(self.act)
                     else:
-                        descript += " " + girl.name + " 在训练 " + self.act + " 时十分满足, 她乐在其中."
+                        descript += " " + girl.name + " 在训练" + girl_related_dict[self.act] + "时十分满足, 她乐在其中."
                     training_modifier += 1
 
                 elif self.act in girl.neg_acts: # Negative act
@@ -629,7 +629,7 @@ init -2 python:
                         girl.personality_unlock[self.act] = True
                         farm.knows["neg_acts"][girl].append(self.act)
                     else:
-                        descript += " " + girl.name + " 对 " + self.act + " 感到不适, 所以她还是对此紧张和抗拒."
+                        descript += " " + girl.name + " 对 " + girl_related_dict[self.act] + " 感到不适, 所以她还是对此紧张和抗拒."
 
                     training_modifier -= 1
 
@@ -642,7 +642,7 @@ init -2 python:
                         changes["mood"] += 1
                     changes["libido"] += 1
                     if not fix in farm.knows["pos_fix"][girl]:
-                        descript += " 训练过程中, 吉泽尔发现了一个 " + girl.name + "的爱好 (" + event_color["good"] % fix.name + ")!"
+                        descript += " 训练过程中, 吉泽尔发现了一个 " + girl.name + " 的爱好 (" + event_color["good"] % fix.name + ")!"
                         girl.personality_unlock[fix.name] = True
                         farm.knows["pos_fix"][girl].append(fix)
                         test_achievement("pos fixations")
@@ -697,8 +697,8 @@ init -2 python:
                 if self.act in ("sex", "group"):
                     if girl.pop_virginity(origin="farm"):
                         changes["obedience"] += 2 + dice(6)
-                        descript += "\n{color=[c_lightred]}" + girl.name + " 把处女献给了 " + article(rand_choice(minion_adjectives[self.minions[0].type])) + " " + self.minions[0].type + "!{/color}"
-                        log.add_report("{color=[c_lightred]}" + girl.fullname + " 把处女献给了 " + article(rand_choice(minion_adjectives[self.minions[0].type])) + " " + self.minions[0].type + "!{/color}")
+                        descript += "\n{color=[c_lightred]}" + girl.name + " 把处女献给了 " + article(rand_choice(minion_adjectives[self.minions[0].type])) + " " + farm_related_dict[self.minions[0].type] + "!{/color}"
+                        log.add_report("{color=[c_lightred]}" + girl.fullname + " 把处女献给了 " + article(rand_choice(minion_adjectives[self.minions[0].type])) + " " + farm_related_dict[self.minions[0].type] + "!{/color}")
 
 
                 ## Stat changes
@@ -1238,7 +1238,7 @@ init -2 python:
 #                            renpy.say("", "Farm knows " + girl.name + " is weak to " + self.knows["weakness"].name)
                             prog.installation = self.installations[self.knows["weakness"][girl]]
                             self.installations[self.knows["weakness"][girl]].girls.append(girl)
-                            if logging: log.add_report(girl.fullname + " 被送去 " + farm_related_dict[prog.installation.name] + " 训练。因为吉泽尔知道她害怕 " + self.knows["weakness"][girl] + "s.")
+                            if logging: log.add_report(girl.fullname + " 被送去 " + farm_related_dict[prog.installation.name] + " 训练。因为吉泽尔知道她害怕 " + farm_related_dict[self.knows["weakness"][girl]] + "s.")
                         else:
 #                            renpy.say("", "Farm doesn't know " + girl.name + " 's weakness.")
                             unassigned.append(girl)
@@ -1257,7 +1257,7 @@ init -2 python:
 
                 if logging:
                     for girl in excess_girls:
-                        log.add_report(girl.fullname + " 无法在 " + farm_related_dict[self.name] + " 训练，因为没有更多的仆从.")
+                        log.add_report(girl.fullname + " 无法在 " + farm_related_dict[inst.name] + " 训练，因为没有更多的仆从.")
 
                 unassigned += excess_girls
 
@@ -1276,13 +1276,13 @@ init -2 python:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[self.name] + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[inst.name] + "训练.")
                         break
                     elif inst.count_free_minions() > 1:
                         prog.installation = inst
                         inst.girls.append(girl)
                         inst.assign_minions()
-                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[self.name] + "训练.")
+                        if logging: log.add_report(girl.fullname + " 被安排在 " + farm_related_dict[inst.name] + "训练.")
                         break
 
             for inst in self.installations.values():

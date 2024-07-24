@@ -403,6 +403,9 @@ init -10 python:
                         "bisexual training" : "双飞训练",
                         "Auto training" : "自动训练",
                         "auto training" : "自动训练",
+
+                        "Farm" : "农场",
+                        "farm" : "农场",
                         }
 
     ## 结算界面 ##

@@ -3453,7 +3453,7 @@ init -5 python:
 
     c_darkpurple = "#3D007A"
 
-    c_orange = "#FF9900" # #FD9B1C
+    c_orange = "#ff9b11" # #FD9B1C
 
     c_lightorange = "#FFCC66"
 

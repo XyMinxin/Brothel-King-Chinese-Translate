@@ -3082,7 +3082,7 @@ translate schinese send_to_farm_menu_9fdd4096:
 translate schinese farm_max_skill_ec9b24d8:
 
     # gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
-    gizel normal "我已经将[girl.fullname]的{b}[skill]{/b}技能提升到了她目前的最高值。"
+    gizel normal "我已经将[girl.fullname]的{b}[cntext]{/b}技能提升到了她目前的最高值。"
 
 # game/BKevents.rpy:3691
 translate schinese farm_max_skill_94d6c557:
@@ -3100,7 +3100,7 @@ translate schinese farm_max_skill_7fa55369:
 translate schinese farm_max_pref_9471933a:
 
     # gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
-    gizel normal "[girl.fullname]现在对{b}[act]{/b}着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
+    gizel normal "[girl.fullname]现在对{b}[cntext]{/b}着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
 
 # game/BKevents.rpy:3715
 translate schinese farm_max_pref_94d6c557:
@@ -3136,7 +3136,7 @@ translate schinese farm_discovered_weakness_6ca493b1:
 translate schinese farm_discovered_weakness_a6f51d66:
 
     # gizel upset "Hey! Don't you give me orders! Now, I'll go back to training... {i}Out of my own free will!{/i}"
-    gizel upset "嘿!别对我发号施令!现在我要回去训练了..。{i}出于我自己的意愿!{/i}"
+    gizel upset "嘿!别对我发号施令!现在我要回去训练了...{i}出于我自己的意愿!{/i}"
 
 # game/BKevents.rpy:3763
 translate schinese farm_discovered_weakness_d05c31d2:
@@ -8538,11 +8538,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:3690
     old "Keep training [skill]"
-    new "继续训练[skill]"
+    new "继续训练[cntext]"
 
     # game/BKevents.rpy:3714
     old "Keep training [act]"
-    new "继续训练[act]"
+    new "继续训练[cntext]"
 
     # game/BKevents.rpy:3750
     old "Yes, do that"
