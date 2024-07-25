@@ -248,7 +248,7 @@ init -2 python:
             if self.level >= 5:
                 des += " (满级)"
             else:
-                des += " (XP: %i/%i)(self.xp, minion_xp_to_level[self.level+1])
+                des += " (XP: %i/%i)" % (self.xp, minion_xp_to_level[self.level+1])
 
 
             if self.hurt:
