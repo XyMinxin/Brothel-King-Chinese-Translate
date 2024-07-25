@@ -10,23 +10,23 @@ translate schinese strings:
 
     # game/BKstart.rpy:25
     old "Choose a starting mode"
-    new "选择一个开始模式"
+    new "请选择游戏模式"
 
     # game/BKstart.rpy:25
     old "Normal mode - See intro"
-    new "普通模式 - 查看介绍"
+    new "剧情模式 - 含教程"
 
     # game/BKstart.rpy:25
     old "Normal mode - No intro"
-    new "普通模式 - 无介绍"
+    new "剧情模式 - 无教程"
 
     # game/BKstart.rpy:25
     old "No story mode (Test)"
-    new "无剧情模式 (测试)"
+    new "沙盒模式 - 测试中"
 
     # game/BKstart.rpy:25
     old "Debug mode - Fast"
-    new "调试模式 - 快速"
+    new "调试模式 - 预设档"
 
     # game/BKstart.rpy:25
     old "Debug mode - Custom"
@@ -34,15 +34,15 @@ translate schinese strings:
 
     # game/BKstart.rpy:45
     old "Would you like to see the intro?"
-    new "你想看新手教程吗?"
+    new "你想观看新手教程吗?"
 
     # game/BKstart.rpy:253
     old "'{i}Another cum stain? *sigh* Give me that.{/i}'\n\n{b}The Caretaker{/b}\nGrants free upkeep to a random girl every night."
-    new "'{i}这里还有一个精斑? *叹气* 交给我吧.{/i}'\n\n{b}临时代理{/b}\n每晚给一个随机的女孩提供免费保养服务。"
+    new "'{i}这里还有一个精斑? *叹气* 交给我吧。{/i}'\n\n{b}临时代理{/b}\n每晚给一个随机的女孩提供免费保养服务。"
 
     # game/BKstart.rpy:253
     old "'{i}I'd better check the perimeter. Again.{/i}'\n\n{b}Ever vigilant{/b}\nBrothel threat builds up 33% slower."
-    new "'{i}我最好检查一下周边情况。再查一次.{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% 。"
+    new "'{i}我最好检查一下周边情况。再巡逻一圈。{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% 。"
 
     # game/BKstart.rpy:253
     old "'{i}This purse seems heavy. Let me relieve you...{/i}'\n\n{b}Sleight of hand{/b}\nAll girls can pick pockets. Girls with the {i}Thief{/i} trait never get caught."
@@ -50,43 +50,43 @@ translate schinese strings:
 
     # game/BKstart.rpy:253
     old "'{i}Isn't it fun to play in the shadows? Fufufu...{/i}'\n\n{b}Dark priestess{/b}\nFear increases faster."
-    new "'{i}在阴影中玩耍不是很有趣吗? 呋呋呋...{/i}'\n\n{b}黑暗神官{/b}\n恐惧增长的更快了。"
+    new "'{i}在影子里玩耍不是很有趣吗? 呋呋呋...{/i}'\n\n{b}黑暗神官{/b}\n恐惧增长的更快了。"
 
     # game/BKstart.rpy:253
     old "'{i}If you wanna get on top, you must be ready to do anything. ANYTHING!{/i}'\n\n{b}Immoral{/b}\nGirls will grow used to anal and fetish acts faster."
-    new "'{i}如果你想往上爬，你必须准备好做任何事. 任何事!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为。"
+    new "'{i}如果你想往上爬，你就得丢掉你的自尊心!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为。"
 
     # game/BKstart.rpy:253
     old "'{i}Do you want me to make an example of you? I didn't think so.{/i}'\n\n{b}Harsh discipline{/b}\nGirls are less likely to refuse to work."
-    new "'{i}你想让我拿你来杀鸡儆猴吗?我可不想这么做.{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性。"
+    new "'{i}你也不想被我扒光了吊在门口，用鞭子抽你的屁股吧！{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性。"
 
     # game/BKstart.rpy:253
     old "'{i}I love the smell of despair in the morning.{/i}'\n\n{b}Bad mojo{/b}\nEarn more mojo from fear interactions in and out of the farm."
-    new "'{i}我喜欢在清晨品味令人绝望的味道.{/i}'\n\n{b}黑魔法{/b}\n从农场内外的基于恐惧的互动中获得更多的魔力。"
+    new "'{i}我喜欢在清晨品味这股令人绝望的味道~{/i}'\n\n{b}黑暗仪式{/b}\n你将从基于恐惧的互动中获得更多的魔力。"
 
     # game/BKstart.rpy:253
     old "'{i}Stick 'em with the pointy end!{/i}'\n\n{b}Martial training{/b}\nAll girls receive +2 to their personal defense."
-    new "'{i}用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2。"
+    new "'{i}要是那些色狼敢动手，你就用你的用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2。"
 
     # game/BKstart.rpy:253
     old "'{i}Your weak training techniques are no match for the Blood Islands.{/i}'\n\n{b}Intensive Farming{/b}\nIncreases the efficiency of all Farm sexual training."
-    new "'{i}你们薄弱的训练技术根本不是血色群岛的对手.{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩性训练的效率。"
+    new "'{i}你这点手段在鲜血群岛上根本就是挠痒痒。{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩训练性技能的效率。"
 
     # game/BKstart.rpy:253
     old "'{i}I read it in a book... *blush*{/i}'\n\n{b}Technique{/b}\nGirls will grow used to service and sex acts faster."
-    new "'{i}我在书里见过... *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为。"
+    new "'{i}我在书里见过...她们很大胆 *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为。"
 
     # game/BKstart.rpy:253
     old "'{i}Gold is only one of the many resources that can be traded in Zan.{/i}'\n\n{b}Resourceful{/b}\nPart of your brothel's income is converted to random resources."
-    new "'{i}黄金只是在赞城中可以交易的众多资源之一.{/i}'\n\n{b}物资置换{/b}\n你的部分青楼收入将被转换成随机资源。"
+    new "'{i}花不掉的钱可就不值钱了，老板。{/i}'\n\n{b}资源置换{/b}\n青楼收入的一部分将被用于购买随机资源。"
 
     # game/BKstart.rpy:253
     old "'{i}Just expense the lobster and champagne... And give me some more.{/i}'\n\n{b}Tax Deductible{/b}\nShields part of your income against taxes every night."
-    new "'{i}到时候就就请我吃龙虾喝香槟吧... 然后再给我些营养品....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来避税。"
+    new "'{i}到时候就就请我吃顿海鲜大餐吧... 然后再给我买些补品....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来规避税款。"
 
     # game/BKstart.rpy:253
     old "'{i}Found another spy yesterday... He tried to stab me, it was hilarious! Kukukuku...{/i}'\n\n{b}Night Patrol{/b}\n33%% chance of twarting security events (does not reset threat level)."
-    new "'{i}昨天又发现了一个间谍……他还想捅我，太滑稽了！库库库库...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你以避免安全事件 (不重置威胁等级)。"
+    new "'{i}昨天晚上又抓住一个蟊贼，他还想冲过来挟持我！可惜...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你即将发生的安全事件 (不重置威胁等级)。"
 
     # game/BKstart.rpy:346
     old "An extremely unrefined and undemanding class of customers. After all, beggars can't be choosers."
@@ -106,7 +106,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:346
     old "Common lives, common jobs, common wives... Seeing a commoner trying to escape all of this in a brothel is... common."
-    new "枯燥的生活，乏味的工作，将就的配偶……看到一个普通人试图在青楼里逃避这一切……这很常见。"
+    new "枯燥的生活，乏味的工作，将就的配偶....看到一个普通人试图在青楼里逃避这一切....这很常见。"
 
     # game/BKstart.rpy:346
     old "Craftsmen work with their hands, and when their hands get restless, they like to lay them on a pretty girl. Craftsmen are crafty."
@@ -138,7 +138,7 @@ translate schinese strings:
 
         # game/BKstart.rpy:478
     old "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."
-    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子……还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神沙利亚。"
+    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神沙利亚。"
 
     # game/BKstart.rpy:478
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
@@ -154,8 +154,8 @@ translate schinese strings:
 
     # game/BKstart.rpy:478
     old "The Cathedra is the holy center of the Arios order. Pilgrims, knights and priests rub elbows during prayers and rituals, while savvy merchants and bankers make a killing providing them with expensive service."
-    new "大教堂是阿里奥斯秩序的神圣中心。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
+    new "大教堂是太阳神秩序的神圣中心。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
 
     # game/BKstart.rpy:478
     old "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware."
-    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险……当心！"
+    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"

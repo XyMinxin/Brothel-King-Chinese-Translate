@@ -10,7 +10,7 @@ translate chinese random_morning_events_e3b92e30:
 translate chinese random_morning_events_03465c18:
 
     # girl.char "One, two, three, four..."
-    girl.char "一、二、三、四……"
+    girl.char "一、二、三、四...."
 
 # game/BKday_events.rpy:33
 translate chinese random_morning_events_d82e9dee:
@@ -28,7 +28,7 @@ translate chinese random_morning_events_10a5fb62:
 translate chinese random_morning_events_e32eed3f:
 
     # girl.char "Oh, it's you... I didn't think there would be anyone here."
-    girl.char "哦，是你……我没想到会有人在这里。"
+    girl.char "哦，是你....我没想到会有人在这里。"
 
 # game/BKday_events.rpy:41
 translate chinese random_morning_events_ab135fad:
@@ -58,7 +58,7 @@ translate chinese random_morning_events_11fdb519:
 translate chinese random_morning_events_dce1f6bc:
 
     # you "You have become truly strong now, [girl.name]... I bet you could take me on!"
-    you "你现在变得真正强大了，[girl.name]……我打赌你能和我较量！"
+    you "你现在变得真正强大了，[girl.name]....我打赌你能和我较量！"
 
 # game/BKday_events.rpy:54
 translate chinese random_morning_events_6b4a3521:
@@ -70,7 +70,7 @@ translate chinese random_morning_events_6b4a3521:
 translate chinese random_morning_events_2b2aa0ad:
 
     # girl.char "Oh, no, Master... I wouldn't dare..."
-    girl.char "哦，不，主人……我不敢……"
+    girl.char "哦，不，主人....我不敢...."
 
 # game/BKday_events.rpy:61
 translate chinese random_morning_events_d92d470c:
@@ -88,19 +88,19 @@ translate chinese random_morning_events_0575936b:
 translate chinese random_morning_events_90827a0a:
 
     # girl.char "You... You really think so?"
-    girl.char "你……你真的这么想？"
+    girl.char "你....你真的这么想？"
 
 # game/BKday_events.rpy:74
 translate chinese random_morning_events_e5fbe6fa:
 
     # girl.char "You bastard..."
-    girl.char "你这个混蛋……"
+    girl.char "你这个混蛋...."
 
 # game/BKday_events.rpy:76
 translate chinese random_morning_events_af4e21a1:
 
     # girl.char "Aw... You're mean..."
-    girl.char "啊……你的意思是……"
+    girl.char "啊....你的意思是...."
 
 # game/BKday_events.rpy:78
 translate chinese random_morning_events_5d4f74d8:
@@ -112,7 +112,7 @@ translate chinese random_morning_events_5d4f74d8:
 translate chinese random_morning_events_604638f5:
 
     # girl.char "N-nothing..."
-    girl.char "没什么……"
+    girl.char "没什么...."
 
 # game/BKday_events.rpy:85
 translate chinese random_morning_events_219d9903:
@@ -148,7 +148,7 @@ translate chinese random_morning_events_b4f1213f:
 translate chinese random_morning_events_c3459848:
 
     # girl.char "M-Master... I am truly honored to see you. Please, allow me to be of service..."
-    girl.char "主人……我真的很荣幸见到你。请允许我为您服务……"
+    girl.char "主人....我真的很荣幸见到你。请允许我为您服务...."
 
 # game/BKday_events.rpy:114
 translate chinese random_morning_events_c915bc1b:
@@ -160,7 +160,7 @@ translate chinese random_morning_events_c915bc1b:
 translate chinese random_morning_events_17121eba:
 
     # girl.char "Good day to you, Master [MC.name]... Can I be of service?"
-    girl.char "您好，主人[MC.name]……我能为您效劳吗？"
+    girl.char "您好，主人[MC.name]....我能为您效劳吗？"
 
 # game/BKday_events.rpy:119
 translate chinese random_morning_events_61edaaa4:
@@ -172,7 +172,7 @@ translate chinese random_morning_events_61edaaa4:
 translate chinese random_morning_events_c2e76538:
 
     # girl.char "Master... Was there something you wanted from me?"
-    girl.char "主人……你想从我这里得到什么吗？"
+    girl.char "主人....你想从我这里得到什么吗？"
 
 # game/BKday_events.rpy:124
 translate chinese random_morning_events_11fdb519_1:
@@ -190,25 +190,25 @@ translate chinese random_morning_events_916f206f:
 translate chinese random_morning_events_4f14f7db:
 
     # girl.char "Well... Thanks..."
-    girl.char "嗯……谢谢……"
+    girl.char "嗯....谢谢...."
 
 # game/BKday_events.rpy:132
 translate chinese random_morning_events_f84bbc5a:
 
     # girl.char "It is my pleasure, Master [MC.name]..."
-    girl.char "这是我的荣幸，主人[MC.name]……"
+    girl.char "这是我的荣幸，主人[MC.name]...."
 
 # game/BKday_events.rpy:140
 translate chinese random_morning_events_6ea7c9b5:
 
     # girl.char "I... I understand. I'm sorry..."
-    girl.char "我……我明白了。我很抱歉……"
+    girl.char "我....我明白了。我很抱歉...."
 
 # game/BKday_events.rpy:142
 translate chinese random_morning_events_28768784:
 
     # girl.char "Humph... Serves me right for asking..."
-    girl.char "哼……我就不该问……"
+    girl.char "哼....我就不该问...."
 
 # game/BKday_events.rpy:147
 translate chinese random_morning_events_59286a98:
@@ -220,7 +220,7 @@ translate chinese random_morning_events_59286a98:
 translate chinese random_morning_events_8e963ac2:
 
     # girl.char "Aw, must I, really? All right, I'll do it... *sigh*"
-    girl.char "哦，我必须吗，真的？好吧，我来……*叹息*"
+    girl.char "哦，我必须吗，真的？好吧，我来....*叹息*"
 
 # game/BKday_events.rpy:153
 translate chinese random_morning_events_b8af37cc:
@@ -238,7 +238,7 @@ translate chinese random_morning_events_6a66cc7b:
 translate chinese random_morning_events_28ef0d1a:
 
     # you "Why, sure, there's something you could do for me..."
-    you "当然，你可以帮我……"
+    you "当然，你可以帮我...."
 
 # game/BKday_events.rpy:164
 translate chinese random_morning_events_0243f0da:
@@ -250,7 +250,7 @@ translate chinese random_morning_events_0243f0da:
 translate chinese random_morning_events_ece4e231:
 
     # you "I just woke up, and I'm still hard... I need someone to relieve my stress down there."
-    you "我刚醒来，我还在努力……我需要有人帮我减压。"
+    you "我刚醒来，我还在努力....我需要有人帮我减压。"
 
 # game/BKday_events.rpy:172
 translate chinese random_morning_events_9e6335c6:
@@ -262,7 +262,7 @@ translate chinese random_morning_events_9e6335c6:
 translate chinese random_morning_events_d514a2e1:
 
     # girl.char "Why, of course, Master... I was looking forward to my breakfast today..."
-    girl.char "当然，主人……我想要着今天的早餐……"
+    girl.char "当然，主人....我想要着今天的早餐...."
 
 # game/BKday_events.rpy:176
 translate chinese random_morning_events_efaf5a2d:
@@ -274,7 +274,7 @@ translate chinese random_morning_events_efaf5a2d:
 translate chinese random_morning_events_005e9925:
 
     # girl.char "You mean... Here? I... Well... Okay..."
-    girl.char "你的意思是……在这里吗？我……嗯……好吧……"
+    girl.char "你的意思是....在这里吗？我....嗯....好吧...."
 
 # game/BKday_events.rpy:186
 translate chinese random_morning_events_bc281135:
@@ -286,7 +286,7 @@ translate chinese random_morning_events_bc281135:
 translate chinese random_morning_events_9ef718e9:
 
     # girl.char "Oh... It's already big and hard..."
-    girl.char "哦……它已经又大又硬了……"
+    girl.char "哦....它已经又大又硬了...."
 
 # game/BKday_events.rpy:190
 translate chinese random_morning_events_3eff813d:
@@ -298,7 +298,7 @@ translate chinese random_morning_events_3eff813d:
 translate chinese random_morning_events_3d7d191e:
 
     # girl.char "Mmmh... It tastes salty..."
-    girl.char "嗯……味道有点咸……"
+    girl.char "嗯....味道有点咸...."
 
 # game/BKday_events.rpy:196
 translate chinese random_morning_events_68343f57:
@@ -310,7 +310,7 @@ translate chinese random_morning_events_68343f57:
 translate chinese random_morning_events_058c8245:
 
     # girl.char "Hnngh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:200
 translate chinese random_morning_events_466ca4d9:
@@ -322,7 +322,7 @@ translate chinese random_morning_events_466ca4d9:
 translate chinese random_morning_events_869d8c63:
 
     # girl.char "Nggh! Nggh... Nggggh!!!"
-    girl.char "嗯！嗯……嗯嗯！！！"
+    girl.char "嗯！嗯....嗯嗯！！！"
 
 # game/BKday_events.rpy:206
 translate chinese random_morning_events_dbd0668b:
@@ -334,7 +334,7 @@ translate chinese random_morning_events_dbd0668b:
 translate chinese random_morning_events_6447e46d:
 
     # girl.char "Nggh... Aaah..."
-    girl.char "嗯……啊……"
+    girl.char "嗯....啊...."
 
 # game/BKday_events.rpy:215
 translate chinese random_morning_events_a83cea3c:
@@ -346,13 +346,13 @@ translate chinese random_morning_events_a83cea3c:
 translate chinese random_morning_events_4190c9bb:
 
     # girl.char "Thank you, Master [MC.name]. I'm always happy to serve..."
-    girl.char "谢谢你，主人[MC.name]。我很乐意为您服务……"
+    girl.char "谢谢你，主人[MC.name]。我很乐意为您服务...."
 
 # game/BKday_events.rpy:224
 translate chinese random_morning_events_df2843e0:
 
     # girl.char "Haha, Master, you're pushing it... Well, I'm kind of busy now... Sorry."
-    girl.char "哈哈，主人，你在推它……嗯，我现在有点忙……对不起。"
+    girl.char "哈哈，主人，你在推它....嗯，我现在有点忙....对不起。"
 
 # game/BKday_events.rpy:225
 translate chinese random_morning_events_4b790bdc:
@@ -364,7 +364,7 @@ translate chinese random_morning_events_4b790bdc:
 translate chinese random_morning_events_d94300a1:
 
     # girl.char "Wh-What? B-But...."
-    girl.char "关注度高吗？但是……"
+    girl.char "关注度高吗？但是...."
 
 # game/BKday_events.rpy:230
 translate chinese random_morning_events_628bedd5:
@@ -388,7 +388,7 @@ translate chinese random_morning_events_d45e14db:
 translate chinese random_morning_events_14208cb2:
 
     # you "Hey, wait! Damn..."
-    you "嘿，等等！该死的……"
+    you "嘿，等等！该死的...."
 
 # game/BKday_events.rpy:239
 translate chinese random_morning_events_ed1b154c:
@@ -442,13 +442,13 @@ translate chinese random_morning_events_d6a6e0c8:
 translate chinese random_morning_events_a13e0d1f:
 
     # you "Uh... [girl.name]? What the hell are you doing in my room?"
-    you "嗯……[girl.name]？你在我房间里干什么？"
+    you "嗯....[girl.name]？你在我房间里干什么？"
 
 # game/BKday_events.rpy:280
 translate chinese random_morning_events_3dfcfbc8:
 
     # girl.char "Oh... Sorry Master... I didn't mean to startle you..."
-    girl.char "哦……对不起主人……我不是有意吓你……"
+    girl.char "哦....对不起主人....我不是有意吓你...."
 
 # game/BKday_events.rpy:282
 translate chinese random_morning_events_96cc8b91:
@@ -460,31 +460,31 @@ translate chinese random_morning_events_96cc8b91:
 translate chinese random_morning_events_98f36f02:
 
     # girl.char "Well, you're not going to believe this... There's a mouse in my room. A MOUSE!!!"
-    girl.char "你不会相信的……我的房间里有一只老鼠。一只老鼠！！！"
+    girl.char "你不会相信的....我的房间里有一只老鼠。一只老鼠！！！"
 
 # game/BKday_events.rpy:287
 translate chinese random_morning_events_248e559b:
 
     # girl.char "So, obviously, I can't sleep there, and I don't want the girls to laugh at me, or anything... So I thought, you know... Since you're in charge, I guess you could let me sleep here until this is taken care of? *blush*"
-    girl.char "所以，很明显，我不能睡在那里，我不想让女孩们嘲笑我，或者其他什么……所以我想，你知道……既然你是负责人，我想你可以让我睡在这里，直到这件事处理好？*脸红*"
+    girl.char "所以，很明显，我不能睡在那里，我不想让女孩们嘲笑我，或者其他什么....所以我想，你知道....既然你是负责人，我想你可以让我睡在这里，直到这件事处理好？*脸红*"
 
 # game/BKday_events.rpy:290
 translate chinese random_morning_events_303e3fe0:
 
     # girl.char "I couldn't tell the others, but... I have night terrors, I feel very scared... I cannot sleep..."
-    girl.char "我不敢告诉其他人，但是……我有夜惊，我觉得很害怕……我不能睡觉……"
+    girl.char "我不敢告诉其他人，但是....我有夜惊，我觉得很害怕....我不能睡觉...."
 
 # game/BKday_events.rpy:291
 translate chinese random_morning_events_e934519c:
 
     # girl.char "So I was wondering... Can I sleep with you for a little while? *blush*"
-    girl.char "所以我在想……我能和你睡一会儿吗？*脸红*"
+    girl.char "所以我在想....我能和你睡一会儿吗？*脸红*"
 
 # game/BKday_events.rpy:294
 translate chinese random_morning_events_1c8cb39d:
 
     # girl.char "Master... I'm bored... I haven't had much {i}action{/i} lately."
-    girl.char "主人……我无聊……我最近没有什么活动。"
+    girl.char "主人....我无聊....我最近没有什么活动。"
 
 # game/BKday_events.rpy:295
 translate chinese random_morning_events_10dcbd6a:
@@ -496,13 +496,13 @@ translate chinese random_morning_events_10dcbd6a:
 translate chinese random_morning_events_c2109474:
 
     # girl.char "Master... I... Hem..."
-    girl.char "主人……我……哼哼……"
+    girl.char "主人....我....哼哼...."
 
 # game/BKday_events.rpy:298
 translate chinese random_morning_events_3aa98418:
 
     # girl.char "I was feeling lonely, I mean... Maybe we could... You know..."
-    girl.char "我觉得很孤单，我是说……也许我们可以……你知道的……"
+    girl.char "我觉得很孤单，我是说....也许我们可以....你知道的...."
 
 # game/BKday_events.rpy:299
 translate chinese random_morning_events_0b78a162:
@@ -550,7 +550,7 @@ translate chinese random_morning_events_30aeb897:
 translate chinese random_morning_events_80e08cb9:
 
     # girl.char "Can I light this candle? I'm still reeling from that last nightmare..."
-    girl.char "我能点燃这支蜡烛吗？我还在从最后的噩梦中挣扎……"
+    girl.char "我能点燃这支蜡烛吗？我还在从最后的噩梦中挣扎...."
 
 # game/BKday_events.rpy:327
 translate chinese random_morning_events_a6023bdf:
@@ -562,7 +562,7 @@ translate chinese random_morning_events_a6023bdf:
 translate chinese random_morning_events_11fec8fd:
 
     # girl.char "Well, it's funny, I can't remember... I feel safe now, thanks to you."
-    girl.char "很有趣，我不记得了……多亏了你，我现在才感到安全。"
+    girl.char "很有趣，我不记得了....多亏了你，我现在才感到安全。"
 
 # game/BKday_events.rpy:332
 translate chinese random_morning_events_8a38e13c:
@@ -574,7 +574,7 @@ translate chinese random_morning_events_8a38e13c:
 translate chinese random_morning_events_aed09213:
 
     # girl.char "Master... Could you hold me?"
-    girl.char "主人……你能抱着我吗？"
+    girl.char "主人....你能抱着我吗？"
 
 # game/BKday_events.rpy:336
 translate chinese random_morning_events_482a16c7:
@@ -592,7 +592,7 @@ translate chinese random_morning_events_602052c7:
 translate chinese random_morning_events_7470d1cd:
 
     # girl.char "Oh..."
-    girl.char "哦……"
+    girl.char "哦...."
 
 # game/BKday_events.rpy:347
 translate chinese random_morning_events_b65d7abf:
@@ -604,7 +604,7 @@ translate chinese random_morning_events_b65d7abf:
 translate chinese random_morning_events_0b1a1f1e:
 
     # girl.char "Oh, [MC.name]... *kiss*"
-    girl.char "哦，[MC.name]……*吻*"
+    girl.char "哦，[MC.name]....*吻*"
 
 # game/BKday_events.rpy:353
 translate chinese random_morning_events_acf11ea6:
@@ -622,7 +622,7 @@ translate chinese random_morning_events_027994ad:
 translate chinese random_morning_events_983a6dd3:
 
     # girl.char "Master... Can I ask you something?"
-    girl.char "主人……我能问你点事吗？"
+    girl.char "主人....我能问你点事吗？"
 
 # game/BKday_events.rpy:364
 translate chinese random_morning_events_b9f03b8c:
@@ -634,7 +634,7 @@ translate chinese random_morning_events_b9f03b8c:
 translate chinese random_morning_events_aa6a257d:
 
     # girl.char "What do you think... What do you think people see in me?"
-    girl.char "你觉得……你觉得人们在我身上看到了什么？"
+    girl.char "你觉得....你觉得人们在我身上看到了什么？"
 
 # game/BKday_events.rpy:371
 translate chinese random_morning_events_11fdb519_3:
@@ -658,7 +658,7 @@ translate chinese random_morning_events_33a481eb:
 translate chinese random_morning_events_889417e8:
 
     # girl.char "Oh... You really think so?"
-    girl.char "哦……你真的这么想？"
+    girl.char "哦....你真的这么想？"
 
 # game/BKday_events.rpy:383
 translate chinese random_morning_events_9e6d7ee4:
@@ -670,13 +670,13 @@ translate chinese random_morning_events_9e6d7ee4:
 translate chinese random_morning_events_bd511577:
 
     # girl.char "Oh... Thank you, I'm happy to hear that."
-    girl.char "哦……谢谢，听到这个我很高兴。"
+    girl.char "哦....谢谢，听到这个我很高兴。"
 
 # game/BKday_events.rpy:389
 translate chinese random_morning_events_7f1a9de3:
 
     # girl.char "Hmph. You mean they think I'm just a pushover. Damn..."
-    girl.char "嗯。你的意思是他们认为我只是个容易对付的人。该死的……"
+    girl.char "嗯。你的意思是他们认为我只是个容易对付的人。该死的...."
 
 # game/BKday_events.rpy:392
 translate chinese random_morning_events_03db9819:
@@ -688,13 +688,13 @@ translate chinese random_morning_events_03db9819:
 translate chinese random_morning_events_64dfd124:
 
     # girl.char "Hey! That's not what I meant... Aw, it's terrible..."
-    girl.char "嘿！我不是那个意思……啊，太可怕了……"
+    girl.char "嘿！我不是那个意思....啊，太可怕了...."
 
 # game/BKday_events.rpy:398
 translate chinese random_morning_events_331f5702:
 
     # girl.char "Aw... That's all that you men ever think about, isn't it? *giggle*"
-    girl.char "啊……这就是你们男人想的，不是吗？*笑*"
+    girl.char "啊....这就是你们男人想的，不是吗？*笑*"
 
 # game/BKday_events.rpy:401
 translate chinese random_morning_events_2e36077f:
@@ -712,13 +712,13 @@ translate chinese random_morning_events_ce76b7ac:
 translate chinese random_morning_events_157ee2cd:
 
     # girl.char "I see, thank you... Is that really so important, though?"
-    girl.char "我明白了，谢谢你……这真的那么重要吗？"
+    girl.char "我明白了，谢谢你....这真的那么重要吗？"
 
 # game/BKday_events.rpy:410
 translate chinese random_morning_events_1296a862:
 
     # you "Well, uh, everything about you is just fine, you know..."
-    you "你的一切都很好，你知道……"
+    you "你的一切都很好，你知道...."
 
 # game/BKday_events.rpy:414
 translate chinese random_morning_events_ea2d71c4:
@@ -736,7 +736,7 @@ translate chinese random_morning_events_e320b094:
 translate chinese random_morning_events_de20ba01:
 
     # you "To be honest, I don't think people really look at you. For most people, you are just a sex slave..."
-    you "说实话，我不认为人们真的在看你。对大多数人来说，你只是一个性奴隶……"
+    you "说实话，我不认为人们真的在看你。对大多数人来说，你只是一个性奴隶...."
 
 # game/BKday_events.rpy:424
 translate chinese random_morning_events_4fe93ff7:
@@ -748,7 +748,7 @@ translate chinese random_morning_events_4fe93ff7:
 translate chinese random_morning_events_d3bee9ee:
 
     # girl.char "Oh no... *sob*"
-    girl.char "哦，不……*抽泣*"
+    girl.char "哦，不....*抽泣*"
 
 # game/BKday_events.rpy:428
 translate chinese random_morning_events_a0b7a448:
@@ -772,31 +772,31 @@ translate chinese random_morning_events_84509039:
 translate chinese random_morning_events_d404bb97:
 
     # girl.char "Mmmh, Master... I want to make you feel good..."
-    girl.char "嗯，主人……我想让你感觉好点……"
+    girl.char "嗯，主人....我想让你感觉好点...."
 
 # game/BKday_events.rpy:453
 translate chinese random_morning_events_382532f4:
 
     # girl.char "Come here Master... Mmmh... I want to feel you..."
-    girl.char "来这里的主人……嗯……我想感受你……"
+    girl.char "来这里的主人....嗯....我想感受你...."
 
 # game/BKday_events.rpy:455
 translate chinese random_morning_events_c5e7dfe3:
 
     # girl.char "Master, I have a request... Hem... Could you use my ass? *blush*"
-    girl.char "主人，我有个请求……哼哼……你能借用一下我的屁股吗？*脸红*"
+    girl.char "主人，我有个请求....哼哼....你能借用一下我的屁股吗？*脸红*"
 
 # game/BKday_events.rpy:457
 translate chinese random_morning_events_7ef7e821:
 
     # girl.char "Oh, Master, I've been a bad girl... I want you to hurt me..."
-    girl.char "哦，主人，我一直是个坏女孩……我要你伤害我……"
+    girl.char "哦，主人，我一直是个坏女孩....我要你伤害我...."
 
 # game/BKday_events.rpy:465
 translate chinese random_morning_events_8c4900c7:
 
     # girl.char "Nggh... Your cock is so delishious..."
-    girl.char "嗯……你的鸡巴太好吃了……"
+    girl.char "嗯....你的鸡巴太好吃了...."
 
 # game/BKday_events.rpy:472
 translate chinese random_morning_events_0cd3b744:
@@ -808,25 +808,25 @@ translate chinese random_morning_events_0cd3b744:
 translate chinese random_morning_events_5c9a1ae8:
 
     # girl.char "Oh, yes, Master... My pussy feels so hot..."
-    girl.char "哦，是的，主人……我的阴部好热……"
+    girl.char "哦，是的，主人....我的阴部好热...."
 
 # game/BKday_events.rpy:481
 translate chinese random_morning_events_8e184f2b:
 
     # girl.char "Oh yes! Yes... Fuck my ass, harder!!!"
-    girl.char "哦，是的！是的……操我妈的，再狠点！！"
+    girl.char "哦，是的！是的....操我妈的，再狠点！！"
 
 # game/BKday_events.rpy:484
 translate chinese random_morning_events_d5d77b65:
 
     # girl.char "Ouch! Aw, it hurts... But it feels so good..."
-    girl.char "哎哟！哦，这很伤我的心……但感觉很好……"
+    girl.char "哎哟！哦，这很伤我的心....但感觉很好...."
 
 # game/BKday_events.rpy:486
 translate chinese random_morning_events_4086bae8:
 
     # girl.char "Ooh, aaah..."
-    girl.char "哦，啊……"
+    girl.char "哦，啊...."
 
 # game/BKday_events.rpy:490
 translate chinese random_morning_events_e72da05e:
@@ -850,7 +850,7 @@ translate chinese random_morning_events_23c71739:
 translate chinese random_morning_events_26319a3b:
 
     # "You lose an action for today. You have earned prestige. [girl.name]'s [act] skill has improved."
-    "你今天失去了一个行动。你赢得了声望。[girl.name]的[act]技巧提高了。"
+    "你今天失去了一个行动。你获得了一些声望。[girl.name]的[act]技巧提高了。"
 
 # game/BKday_events.rpy:519
 translate chinese random_morning_events_76a0809e:
@@ -868,19 +868,19 @@ translate chinese random_morning_events_223fed0d:
 translate chinese random_morning_events_8bfdb6ee:
 
     # girl.char "Aw, I'm sorry, Master! Please don't hurt me... *sob*"
-    girl.char "噢，对不起，主人！请不要伤害我……*抽泣*"
+    girl.char "噢，对不起，主人！请不要伤害我....*抽泣*"
 
 # game/BKday_events.rpy:528
 translate chinese random_morning_events_aef6b971:
 
     # you "And don't come back! For the love of [MC.god], slaves these days..."
-    you "别再回来了！为了对[MC.god]的爱。如今的奴隶……"
+    you "别再回来了！为了对[MC.god]的爱。如今的奴隶...."
 
 # game/BKday_events.rpy:530
 translate chinese random_morning_events_91852b54:
 
     # you "And don't come back! In the name of cocks and tits and all that is holy..."
-    you "别再回来了！以鸡鸡、乳房和一切神圣的名义……"
+    you "别再回来了！以鸡鸡、乳房和一切神圣的名义...."
 
 # game/BKday_events.rpy:538
 translate chinese random_morning_events_f96e569d:
@@ -892,13 +892,13 @@ translate chinese random_morning_events_f96e569d:
 translate chinese random_morning_events_c056b6d4:
 
     # girl.char "I see... I'm sorry to have disturbed you. I will go."
-    girl.char "明白了……对不起，打扰你了。我将去。"
+    girl.char "明白了....对不起，打扰你了。我将去。"
 
 # game/BKday_events.rpy:545
 translate chinese random_morning_events_59b46bdc:
 
     # girl.char "Aw, but I need to... Fine, I'll just go, then."
-    girl.char "但我得……好吧，那我就走吧。"
+    girl.char "但我得....好吧，那我就走吧。"
 
 # game/BKday_events.rpy:551
 translate chinese random_morning_events_94a0d47b:
@@ -922,7 +922,7 @@ translate chinese random_morning_events_a4e3b8c6:
 translate chinese random_morning_events_d8922d6f:
 
     # girl.char "Oh, aah, yes, [MC.name]... AAAAAH!!!"
-    girl.char "哦，啊，是的，[MC.name]……啊哈！！！"
+    girl.char "哦，啊，是的，[MC.name]....啊哈！！！"
 
 # game/BKday_events.rpy:567
 translate chinese random_morning_events_4ee7f03b:
@@ -958,7 +958,7 @@ translate chinese random_night_girl_event_7384713a:
 translate chinese random_night_girl_event_4bd8751f:
 
     # you "Hi, [girl.name]. It's inspection time..."
-    you "嗨，[girl.name]。现在是检验时间……"
+    you "嗨，[girl.name]。现在是检验时间...."
 
 # game/BKday_events.rpy:673
 translate chinese random_night_girl_event_f472198b:
@@ -970,7 +970,7 @@ translate chinese random_night_girl_event_f472198b:
 translate chinese random_night_girl_event_92c1421a:
 
     # girl.char "Oh, Master [MC.name]... How nice of you to come by... ♥"
-    girl.char "哦，主人[MC.name]……你能来真是太好了……♥"
+    girl.char "哦，主人[MC.name]....你能来真是太好了....♥"
 
 # game/BKday_events.rpy:677
 translate chinese random_night_girl_event_65271728:
@@ -994,7 +994,7 @@ translate chinese random_night_girl_event_74195f36:
 translate chinese random_night_girl_event_9ec00d75:
 
     # girl.char "Master! I... I mean... I'm sorry..."
-    girl.char "主人！我……我的意思是……我很抱歉……"
+    girl.char "主人！我....我的意思是....我很抱歉...."
 
 # game/BKday_events.rpy:686
 translate chinese random_night_girl_event_702eb4d0:
@@ -1006,13 +1006,13 @@ translate chinese random_night_girl_event_702eb4d0:
 translate chinese random_night_girl_event_6d19abc9:
 
     # girl.char "Oh, it's you... What is it?"
-    girl.char "哦，是你……它是什么？"
+    girl.char "哦，是你....它是什么？"
 
 # game/BKday_events.rpy:691
 translate chinese random_night_girl_event_1653af76:
 
     # girl.char "I'll... I'll leave you to it then..."
-    girl.char "我将……那我就把这件事留给你吧……"
+    girl.char "我将....那我就把这件事留给你吧...."
 
 # game/BKday_events.rpy:692
 translate chinese random_night_girl_event_2aed5c0c:
@@ -1036,7 +1036,7 @@ translate chinese random_night_girl_event_93d20918:
 translate chinese random_night_girl_event_eeb3d794:
 
     # you "Not so fast, little girl... I am here to inspect {i}you{/i} as well as your room."
-    you "别那么快，小姑娘……我来这里检查{i}你{/i}和你的房间。"
+    you "别那么快，小姑娘....我来这里检查{i}你{/i}和你的房间。"
 
 # game/BKday_events.rpy:704
 translate chinese random_night_girl_event_1a8c2e33:
@@ -1054,7 +1054,7 @@ translate chinese random_night_girl_event_ce834ae7:
 translate chinese random_night_girl_event_7057995f:
 
     # girl.char "Why don't you join me, Master? You'll be more comfortable here..."
-    girl.char "主人，你为什么不跟我一起去呢？你在这里会更舒服……"
+    girl.char "主人，你为什么不跟我一起去呢？你在这里会更舒服...."
 
 # game/BKday_events.rpy:717
 translate chinese random_night_girl_event_784d0084:
@@ -1084,7 +1084,7 @@ translate chinese random_night_girl_event_c576f0a9:
 translate chinese random_night_girl_event_380bd730:
 
     # "You notice many shiny jewels and nice clothes laying around her night table, and about a hundred boxes for shoes and accessories. She sure seems to live large for a slave..."
-    "你注意到她的床头柜上放着许多闪亮的珠宝和漂亮的衣服，还有大约一百盒鞋子和配饰。她似乎为一个奴隶过着奢侈的生活……"
+    "你注意到她的床头柜上放着许多闪亮的珠宝和漂亮的衣服，还有大约一百盒鞋子和配饰。她似乎为一个奴隶过着奢侈的生活...."
 
 # game/BKday_events.rpy:742
 translate chinese random_night_girl_event_41680458:
@@ -1108,7 +1108,7 @@ translate chinese random_night_girl_event_f071cf98:
 translate chinese random_night_girl_event_685847ec:
 
     # you "Well..."
-    you "嗯……"
+    you "嗯...."
 
 # game/BKday_events.rpy:757
 translate chinese random_night_girl_event_ec458832:
@@ -1162,19 +1162,19 @@ translate chinese random_night_girl_event_7ea76525:
 translate chinese random_night_girl_event_899591a7:
 
     # girl.char "So... So mean..."
-    girl.char "所以……所以说……"
+    girl.char "所以....所以说...."
 
 # game/BKday_events.rpy:786
 translate chinese random_night_girl_event_d28b1079:
 
     # you "Appearance isn't everything... But you could make more effort."
-    you "外表不是一切……但是你可以付出更多的努力。"
+    you "外表不是一切....但是你可以付出更多的努力。"
 
 # game/BKday_events.rpy:788
 translate chinese random_night_girl_event_fbf00f5d:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:793
 translate chinese random_night_girl_event_ac48a9f6:
@@ -1186,19 +1186,19 @@ translate chinese random_night_girl_event_ac48a9f6:
 translate chinese random_night_girl_event_32b271c6:
 
     # girl.char "... Thanks..."
-    girl.char "……谢谢……"
+    girl.char "....谢谢...."
 
 # game/BKday_events.rpy:800
 translate chinese random_night_girl_event_4955d18c:
 
     # you "You are something to behold... Such beauty... Use it well."
-    you "你真值得一看……这样的美……好好利用它。"
+    you "你真值得一看....这样的美....好好利用它。"
 
 # game/BKday_events.rpy:802
 translate chinese random_night_girl_event_54b28b34:
 
     # girl.char "Oh... Thank you, Master."
-    girl.char "哦……谢谢你，主人。"
+    girl.char "哦....谢谢你，主人。"
 
 # game/BKday_events.rpy:807
 translate chinese random_night_girl_event_473c885d:
@@ -1222,19 +1222,19 @@ translate chinese random_night_girl_event_b1f55c75:
 translate chinese random_night_girl_event_b2458296:
 
     # girl.char "Uh? I..."
-    girl.char "呃？我……"
+    girl.char "呃？我...."
 
 # game/BKday_events.rpy:823
 translate chinese random_night_girl_event_1e286684:
 
     # you "Boobs, ass... I like what I see... Keep it that way."
-    you "乳房，屁股……我喜欢我所看到的……保持这种状态。"
+    you "乳房，屁股....我喜欢我所看到的....保持这种状态。"
 
 # game/BKday_events.rpy:825
 translate chinese random_night_girl_event_07dc6395:
 
     # girl.char "Oh... Thanks, I guess..."
-    girl.char "哦……谢谢，我想……"
+    girl.char "哦....谢谢，我想...."
 
 # game/BKday_events.rpy:830
 translate chinese random_night_girl_event_d96ac4d0:
@@ -1246,7 +1246,7 @@ translate chinese random_night_girl_event_d96ac4d0:
 translate chinese random_night_girl_event_0f1a4558:
 
     # girl.char "I... Thank you, Master."
-    girl.char "我……谢谢你，主人。"
+    girl.char "我....谢谢你，主人。"
 
 # game/BKday_events.rpy:837
 translate chinese random_night_girl_event_01fbd59f:
@@ -1258,7 +1258,7 @@ translate chinese random_night_girl_event_01fbd59f:
 translate chinese random_night_girl_event_2e930463:
 
     # you "Anyway. Make sure to flaunt your goods right tonight... I'll be watching."
-    you "无论如何。今晚一定要好好炫耀你的商品……我要看。"
+    you "无论如何。今晚一定要好好炫耀你的商品....我要看。"
 
 # game/BKday_events.rpy:847
 translate chinese random_night_girl_event_7a3f5153:
@@ -1276,7 +1276,7 @@ translate chinese random_night_girl_event_89f123b6:
 translate chinese random_night_girl_event_9c536e0c:
 
     # girl.char "What? B-But... No!"
-    girl.char "什么？但是……不！"
+    girl.char "什么？但是....不！"
 
 # game/BKday_events.rpy:853
 translate chinese random_night_girl_event_1c657804:
@@ -1288,7 +1288,7 @@ translate chinese random_night_girl_event_1c657804:
 translate chinese random_night_girl_event_2f1ab81f:
 
     # you "Hmm... Turn around..."
-    you "嗯……转身……"
+    you "嗯....转身...."
 
 # game/BKday_events.rpy:861
 translate chinese random_night_girl_event_034796de:
@@ -1330,7 +1330,7 @@ translate chinese random_night_girl_event_7019a559:
 translate chinese random_night_girl_event_eefab0a7:
 
     # girl.char "Oh, Master... *blush*"
-    girl.char "哦，主……*脸红*"
+    girl.char "哦，主....*脸红*"
 
 # game/BKday_events.rpy:905
 translate chinese random_night_girl_event_d4556639:
@@ -1342,13 +1342,13 @@ translate chinese random_night_girl_event_d4556639:
 translate chinese random_night_girl_event_e28218be:
 
     # you "Thank you, [girl.name]... Good job."
-    you "谢谢你，[girl.name]……做得好。"
+    you "谢谢你，[girl.name]....做得好。"
 
 # game/BKday_events.rpy:909
 translate chinese random_night_girl_event_cd219407:
 
     # girl.char "Sure... Anytime, boss..."
-    girl.char "好的……任何时候，老板……"
+    girl.char "好的....任何时候，老板...."
 
 # game/BKday_events.rpy:916
 translate chinese random_night_girl_event_1a5b4d44:
@@ -1360,13 +1360,13 @@ translate chinese random_night_girl_event_1a5b4d44:
 translate chinese random_night_girl_event_5fb9014a:
 
     # you "Show me some respect here... I want you to devote all your attention to your Master's dick."
-    you "给我点尊重……我要你把所有的注意力都放在你主人的阴茎上。"
+    you "给我点尊重....我要你把所有的注意力都放在你主人的阴茎上。"
 
 # game/BKday_events.rpy:921
 translate chinese random_night_girl_event_ce46bd3a:
 
     # girl.char "S... Stop it!"
-    girl.char "停……停下来！"
+    girl.char "停....停下来！"
 
 # game/BKday_events.rpy:928
 translate chinese random_night_girl_event_2a052473:
@@ -1426,7 +1426,7 @@ translate chinese random_night_girl_event_995f1ec8:
 translate chinese random_night_girl_event_ccea137e:
 
     # you "It is late already, she should be preparing? I wonder what's going on..."
-    you "已经很晚了，她该准备了吧？我不知道发生了什么事……"
+    you "已经很晚了，她该准备了吧？我不知道发生了什么事...."
 
 # game/BKday_events.rpy:989
 translate chinese random_night_girl_event_988a0551:
@@ -1444,13 +1444,13 @@ translate chinese random_night_girl_event_d77f25d1:
 translate chinese random_night_girl_event_d63c0d5f:
 
     # girl.char "M-Master, you... I'm sorry I'm late, [excuse], and..."
-    girl.char "主人，你……对不起，我迟到了，[excuse]，还有……"
+    girl.char "主人，你....对不起，我迟到了，[excuse]，还有...."
 
 # game/BKday_events.rpy:1007
 translate chinese random_night_girl_event_c23955c0:
 
     # "You notice her clothes are in disarray, and her skin is glistening with sweat. She's got the smell of sex all over her. Clearly, she's been fooling around..."
-    "你注意到她的衣服乱作一团，她的皮肤因汗水而闪闪发光。她浑身都是性的味道。很明显，她一直在鬼混……"
+    "你注意到她的衣服乱作一团，她的皮肤因汗水而闪闪发光。她浑身都是性的味道。很明显，她一直在鬼混...."
 
 # game/BKday_events.rpy:1010
 translate chinese random_night_girl_event_a26d1480:
@@ -1474,19 +1474,19 @@ translate chinese random_night_girl_event_462004fb:
 translate chinese random_night_girl_event_d818e765:
 
     # girl.char "B-But, Master... Really, it's not my fault! Aw..."
-    girl.char "但是，主人……真的，这不是我的错！啊……"
+    girl.char "但是，主人....真的，这不是我的错！啊...."
 
 # game/BKday_events.rpy:1029
 translate chinese random_night_girl_event_ec2e9759:
 
     # girl.char "S-sorry, Master... I will..."
-    girl.char "对不起，主人……我将……"
+    girl.char "对不起，主人....我将...."
 
 # game/BKday_events.rpy:1040
 translate chinese random_night_girl_event_d5c8dd6b:
 
     # girl.char "Get away from me! You have no right..."
-    girl.char "离我远点！你没有权利……"
+    girl.char "离我远点！你没有权利...."
 
 # game/BKday_events.rpy:1043
 translate chinese random_night_girl_event_bccecbe3:
@@ -1498,13 +1498,13 @@ translate chinese random_night_girl_event_bccecbe3:
 translate chinese random_night_girl_event_cab0caa8:
 
     # girl.char "W-what... Oh... I see..."
-    girl.char "什-什么……哦……我明白了……"
+    girl.char "什-什么....哦....我明白了...."
 
 # game/BKday_events.rpy:1049
 translate chinese random_night_girl_event_5f23bdef:
 
     # girl.char "Oh, Master... Please, d-don't..."
-    girl.char "哦，主人……请，不要……"
+    girl.char "哦，主人....请，不要...."
 
 # game/BKday_events.rpy:1056
 translate chinese random_night_girl_event_e22935b5:
@@ -1516,7 +1516,7 @@ translate chinese random_night_girl_event_e22935b5:
 translate chinese random_night_girl_event_fbf00f5d_1:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:1063
 translate chinese random_night_girl_event_856a1723:
@@ -1528,7 +1528,7 @@ translate chinese random_night_girl_event_856a1723:
 translate chinese random_night_girl_event_c2f387fd:
 
     # girl.char "Oh no... They're so heavy..."
-    girl.char "哦，不……他们那么重……"
+    girl.char "哦，不....他们那么重...."
 
 # game/BKday_events.rpy:1096
 translate chinese random_night_girl_event_5d2fcec5:
@@ -1540,7 +1540,7 @@ translate chinese random_night_girl_event_5d2fcec5:
 translate chinese random_night_girl_event_d565895d:
 
     # girl.char "Whaaat??? No way! It's not..."
-    girl.char "什么 ？ ？ ？没门！这不是……"
+    girl.char "什么 ？ ？ ？没门！这不是...."
 
 # game/BKday_events.rpy:1106
 translate chinese random_night_girl_event_2a052473_2:
@@ -1564,13 +1564,13 @@ translate chinese random_night_girl_event_7b1682ce:
 translate chinese random_night_girl_event_fbf00f5d_2:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:1115
 translate chinese random_night_girl_event_b3453cd1:
 
     # girl.char "I understand..."
-    girl.char "我明白了……"
+    girl.char "我明白了...."
 
 # game/BKday_events.rpy:1122
 translate chinese random_night_girl_event_829f73e1:
@@ -1582,7 +1582,7 @@ translate chinese random_night_girl_event_829f73e1:
 translate chinese random_night_girl_event_2d47ac29:
 
     # girl.char "Please, mister, let me help you with this..."
-    girl.char "求你了，先生，让我来帮你……"
+    girl.char "求你了，先生，让我来帮你...."
 
 # game/BKday_events.rpy:1126
 translate chinese random_night_girl_event_822209f7:
@@ -1594,7 +1594,7 @@ translate chinese random_night_girl_event_822209f7:
 translate chinese random_night_girl_event_1df0330a:
 
     # girl.char "Welcome, Mister... Let me pleasure you with my mouth. It's... On the house."
-    girl.char "欢迎你，先生……让我用我的嘴来取悦你。这是……免费赠送的。"
+    girl.char "欢迎你，先生....让我用我的嘴来取悦你。这是....免费赠送的。"
 
 # game/BKday_events.rpy:1130
 translate chinese random_night_girl_event_f0b8739a:
@@ -1636,7 +1636,7 @@ translate chinese random_night_girl_event_b1cc9673:
 translate chinese random_night_girl_event_eb9a5ea4:
 
     # you "Take off your panties, turn around, and put your hands against the wall. I'm going to teach you a little lesson..."
-    you "脱掉你的内裤，转过身来，把手靠在墙上。我要给你上一课……"
+    you "脱掉你的内裤，转过身来，把手靠在墙上。我要给你上一课...."
 
 # game/BKday_events.rpy:1167
 translate chinese random_night_girl_event_c3a7633c:
@@ -1666,13 +1666,13 @@ translate chinese random_night_girl_event_e1347f0a:
 translate chinese random_night_girl_event_46095a91:
 
     # you "Let me teach you to obey using a language your pussy will understand...."
-    you "让我教你如何服从，用一种你的猫咪能听懂的语言……"
+    you "让我教你如何服从，用一种你的猫咪能听懂的语言...."
 
 # game/BKday_events.rpy:1184
 translate chinese random_night_girl_event_28bc2440:
 
     # girl.char "... Yes, Master."
-    girl.char "……是的，主人。"
+    girl.char "....是的，主人。"
 
 # game/BKday_events.rpy:1185
 translate chinese random_night_girl_event_b0a40cea:
@@ -1702,7 +1702,7 @@ translate chinese random_night_girl_event_8d1e0756:
 translate chinese random_night_girl_event_48aab748:
 
     # girl.char "M-Mister... Please, don't..."
-    girl.char "先生……请不要……"
+    girl.char "先生....请不要...."
 
 # game/BKday_events.rpy:1215
 translate chinese random_night_girl_event_5735e80e:
@@ -1738,7 +1738,7 @@ translate chinese random_night_girl_event_11720783:
 translate chinese random_night_girl_event_71724c04:
 
     # man "Wh... What? Whaddaya want?"
-    man "什……什么？你想要什么？"
+    man "什....什么？你想要什么？"
 
 # game/BKday_events.rpy:1233
 translate chinese random_night_girl_event_d1dd9e1b:
@@ -1750,7 +1750,7 @@ translate chinese random_night_girl_event_d1dd9e1b:
 translate chinese random_night_girl_event_ab9934a1:
 
     # man "Please, sir, leave an old feller be! I was only havin' a li'l fun with the missy here..."
-    man "先生，请让一个老家伙呆着吧！我只是和这个小妞开个小玩笑……"
+    man "先生，请让一个老家伙呆着吧！我只是和这个小妞开个小玩笑...."
 
 # game/BKday_events.rpy:1238
 translate chinese random_night_girl_event_5cbe49b5:
@@ -1762,7 +1762,7 @@ translate chinese random_night_girl_event_5cbe49b5:
 translate chinese random_night_girl_event_811dbfd0:
 
     # girl.char "Oh, Master [MC.name], thanks..."
-    girl.char "噢，主人[MC.name]，谢谢……"
+    girl.char "噢，主人[MC.name]，谢谢...."
 
 # game/BKday_events.rpy:1244
 translate chinese random_night_girl_event_3ea8dcb9:
@@ -1780,7 +1780,7 @@ translate chinese random_night_girl_event_cc88deaf:
 translate chinese random_night_girl_event_12b013f0:
 
     # man "I... I didn't mean no harm, good sir..."
-    man "我……我没有恶意，好先生……"
+    man "我....我没有恶意，好先生...."
 
 # game/BKday_events.rpy:1258
 translate chinese random_night_girl_event_8c678dea:
@@ -1810,7 +1810,7 @@ translate chinese random_night_girl_event_15acab5a:
 translate chinese random_night_girl_event_0ac8d013:
 
     # man "Hands off, peasant! I shall teach you how to treat your betters..."
-    man "放开手，乡下人！我会教你如何对待你的上司……"
+    man "放开手，乡下人！我会教你如何对待你的上司...."
 
 # game/BKday_events.rpy:1277
 translate chinese random_night_girl_event_86b5e7db:
@@ -1954,7 +1954,7 @@ translate chinese random_night_girl_event_abe73044:
 translate chinese random_night_girl_event_243531ff:
 
     # girl.char "I have an appropriate punishment in mind... Let me have a little fun..."
-    girl.char "我心里有个合适的惩罚……让我找点乐子……"
+    girl.char "我心里有个合适的惩罚....让我找点乐子...."
 
 # game/BKday_events.rpy:1388
 translate chinese random_night_girl_event_a546598b:
@@ -1966,7 +1966,7 @@ translate chinese random_night_girl_event_a546598b:
 translate chinese random_night_girl_event_e43d9c5b:
 
     # girl.char "He must be punished... I think I know a way..."
-    girl.char "他必须受到惩罚……我想我知道一个办法……"
+    girl.char "他必须受到惩罚....我想我知道一个办法...."
 
 # game/BKday_events.rpy:1395
 translate chinese random_night_girl_event_7a2017d5:
@@ -2002,7 +2002,7 @@ translate chinese random_night_girl_event_09c1315c:
 translate chinese random_night_girl_event_17b9170e:
 
     # girl.char "It... It isn't necessary, just let him go... I'm sorry for causing trouble, Master."
-    girl.char "它……没有必要，让他走吧……对不起，给您添麻烦了，主人。"
+    girl.char "它....没有必要，让他走吧....对不起，给您添麻烦了，主人。"
 
 # game/BKday_events.rpy:1420
 translate chinese random_night_girl_event_87cb8871:
@@ -2020,7 +2020,7 @@ translate chinese random_night_girl_event_d99eabe3:
 translate chinese random_night_girl_event_547c43bc:
 
     # girl.char "Master, haa... Help me..."
-    girl.char "主人，哈啊……救我……"
+    girl.char "主人，哈啊....救我...."
 
 # game/BKday_events.rpy:1444
 translate chinese random_night_girl_event_b05fe4de:
@@ -2038,7 +2038,7 @@ translate chinese random_night_girl_event_30b43ef3:
 translate chinese random_night_girl_event_a7a6d019:
 
     # man "She's a wild one! She won't let me have a little fun..."
-    man "她是个野丫头！她不会让我开心的……"
+    man "她是个野丫头！她不会让我开心的...."
 
 # game/BKday_events.rpy:1450
 translate chinese random_night_girl_event_5fcf13bf:
@@ -2056,7 +2056,7 @@ translate chinese random_night_girl_event_7f53da7d:
 translate chinese random_night_girl_event_2374dcca:
 
     # you "Shut up, slave. You are here to serve the customers! You'd better behave now..."
-    you "闭嘴，奴隶。您是来服务客户的！你现在最好乖一点……"
+    you "闭嘴，奴隶。您是来服务客户的！你现在最好乖一点...."
 
 # game/BKday_events.rpy:1460
 translate chinese random_night_girl_event_f4356ab4:
@@ -2074,13 +2074,13 @@ translate chinese random_night_girl_event_5816fc0f:
 translate chinese random_night_girl_event_db56b8da:
 
     # man "Why, there sure is..."
-    man "当然有……"
+    man "当然有...."
 
 # game/BKday_events.rpy:1472
 translate chinese random_night_girl_event_a3a3c1e8:
 
     # girl.char "No! I don't want to..."
-    girl.char "不！我不想……"
+    girl.char "不！我不想...."
 
 # game/BKday_events.rpy:1479
 translate chinese random_night_girl_event_2a052473_4:
@@ -2122,7 +2122,7 @@ translate chinese random_night_girl_event_33f30cd4:
 translate chinese random_night_girl_event_c1da3d17:
 
     # girl.char "..."
-    girl.char "……"
+    girl.char "...."
 
 # game/BKday_events.rpy:1524
 translate chinese random_night_girl_event_0e1da1f9:
@@ -2146,7 +2146,7 @@ translate chinese random_night_girl_event_764ccd16:
 translate chinese random_night_girl_event_206ea60e:
 
     # girl.char "Ladies and gentlemen, please be seated..."
-    girl.char "女士们，先生们，请入座……"
+    girl.char "女士们，先生们，请入座...."
 
 # game/BKday_events.rpy:1546
 translate chinese random_night_girl_event_71b92a3f:
@@ -2218,7 +2218,7 @@ translate chinese random_night_girl_event_0d0eb120:
 translate chinese random_night_girl_event_18dd7731:
 
     # man "You! Good man! I've got my eye on your little pet slave up over there... Why don't you let me show her a thing or two? I can be a {i}very{/i} generous man..."
-    man "你！好男人！我注意到你的小宠物奴隶在那边……你为什么不让我给她看一两件东西呢？我可以成为一个{i}非常{/i}慷慨的人……"
+    man "你！好男人！我注意到你的小宠物奴隶在那边....你为什么不让我给她看一两件东西呢？我可以成为一个{i}非常{/i}慷慨的人...."
 
 # game/BKday_events.rpy:1587
 translate chinese random_night_girl_event_d0272329:
@@ -2356,7 +2356,7 @@ translate chinese random_night_girl_event_6aeee82a:
 translate chinese random_night_girl_event_e8487bc1:
 
     # woman "How disappointing. I thought we were this close to an understanding..."
-    woman "多么令人失望。我以为我们就快达成共识了……"
+    woman "多么令人失望。我以为我们就快达成共识了...."
 
 # game/BKday_events.rpy:1668
 translate chinese random_night_girl_event_e07cf374:
@@ -2380,7 +2380,7 @@ translate chinese random_night_girl_event_4661ac22:
 translate chinese random_night_girl_event_07f5d170:
 
     # man "Come on, man, you suck! Bros, let's leave this hovel... I am getting bored to death."
-    man "拜托，伙计，你真烂！兄弟们，我们离开这破屋吧……我无聊死了。"
+    man "拜托，伙计，你真烂！兄弟们，我们离开这破屋吧....我无聊死了。"
 
 # game/BKday_events.rpy:1675
 translate chinese random_night_girl_event_dca38637:
@@ -2404,7 +2404,7 @@ translate chinese random_night_girl_event_d04eb7f0:
 translate chinese random_night_girl_event_5032488d:
 
     # girl.char "Master [MC.name]? Wh... What's going on?"
-    girl.char "主人[MC.name]？这……这是怎么呢"
+    girl.char "主人[MC.name]？这....这是怎么呢"
 
 # game/BKday_events.rpy:1692
 translate chinese random_night_girl_event_ec02dde0:
@@ -2416,7 +2416,7 @@ translate chinese random_night_girl_event_ec02dde0:
 translate chinese random_night_girl_event_1832667f:
 
     # you "Dear friends..."
-    you "亲爱的朋友们……"
+    you "亲爱的朋友们...."
 
 # game/BKday_events.rpy:1696
 translate chinese random_night_girl_event_d1643931:
@@ -2488,7 +2488,7 @@ translate chinese random_night_girl_event_cf35b3ab:
 translate chinese random_night_girl_event_25c651a6:
 
     # you "[girl.name] gets wet every night, knowing you guys are coming for her... And she has many sisters here who share her devotion and are ready to do your every bidding!"
-    you "[girl.name]每天晚上都淋湿，知道你们要来找她……她有许多姐妹在这里分享她的奉献，并准备做你的每一个命令！"
+    you "[girl.name]每天晚上都淋湿，知道你们要来找她....她有许多姐妹在这里分享她的奉献，并准备做你的每一个命令！"
 
 # game/BKday_events.rpy:1722
 translate chinese random_night_girl_event_60b9e618:
@@ -2500,7 +2500,7 @@ translate chinese random_night_girl_event_60b9e618:
 translate chinese random_night_girl_event_ba5c1cb3:
 
     # girl.char "What the..."
-    girl.char "什么……"
+    girl.char "什么...."
 
 # game/BKday_events.rpy:1726
 translate chinese random_night_girl_event_bdc8da39:
@@ -2524,7 +2524,7 @@ translate chinese random_night_girl_event_8df5b147:
 translate chinese random_night_girl_event_b7bdc823:
 
     # you "Good people, we are so thankful to have you here..."
-    you "好人，我们非常感谢你们能来这里……"
+    you "好人，我们非常感谢你们能来这里...."
 
 # game/BKday_events.rpy:1745
 translate chinese random_night_girl_event_c00207e0:
@@ -2548,7 +2548,7 @@ translate chinese random_night_girl_event_8df5b147_1:
 translate chinese random_night_girl_event_9db3f376:
 
     # you "I, uh, I would like to introduce myself..."
-    you "我，呃，我想自我介绍一下……"
+    you "我，呃，我想自我介绍一下...."
 
 # game/BKday_events.rpy:1759
 translate chinese random_night_girl_event_39ffd893:
@@ -2560,7 +2560,7 @@ translate chinese random_night_girl_event_39ffd893:
 translate chinese random_night_girl_event_49e9c888:
 
     # you "My name is [MC.name] and, uh, I would like to thank all the good people that made this possible... First, my parents..."
-    you "我的名字是[MC.name]，我想感谢所有让这一切成为可能的好人……首先，我的父母……"
+    you "我的名字是[MC.name]，我想感谢所有让这一切成为可能的好人....首先，我的父母...."
 
 # game/BKday_events.rpy:1763
 translate chinese random_night_girl_event_8d62aefa:
@@ -2668,7 +2668,7 @@ translate chinese random_night_girl_event_57b4a8bd:
 translate chinese random_night_girl_event_b4c101e8:
 
     # girl.char "Oh, of course Master... I was just beginning to feel hungry for your cock..."
-    girl.char "哦，当然，大师……我刚开始想吃你的鸡巴……"
+    girl.char "哦，当然，大师....我刚开始想吃你的鸡巴...."
 
 # game/BKday_events.rpy:1874
 translate chinese random_night_girl_event_646f6abf:
@@ -2680,7 +2680,7 @@ translate chinese random_night_girl_event_646f6abf:
 translate chinese random_night_girl_event_1eb0e7fe:
 
     # girl.char "Yes, Master..."
-    girl.char "是的，主人……"
+    girl.char "是的，主人...."
 
 # game/BKday_events.rpy:1879
 translate chinese random_night_girl_event_b61c7bed:
@@ -2698,7 +2698,7 @@ translate chinese random_night_girl_event_0ee72e8c:
 translate chinese random_night_girl_event_c2e0099d:
 
     # you "That's the point, girl! You must do what you're told..."
-    you "这才是重点，女孩！你必须按吩咐去做……"
+    you "这才是重点，女孩！你必须按吩咐去做...."
 
 # game/BKday_events.rpy:1889
 translate chinese random_night_girl_event_321d0fe0:
@@ -2716,13 +2716,13 @@ translate chinese random_night_girl_event_2a052473_7:
 translate chinese random_night_girl_event_99f4b39f:
 
     # girl.char "Oh, please, no... *sob*"
-    girl.char "哦，拜托，不……*抽泣*"
+    girl.char "哦，拜托，不....*抽泣*"
 
 # game/BKday_events.rpy:1902
 translate chinese random_night_girl_event_65dd1eb7:
 
     # girl.char "Aw... I understand... *frown*"
-    girl.char "啊……我明白了……*皱眉*"
+    girl.char "啊....我明白了....*皱眉*"
 
 # game/BKday_events.rpy:1910
 translate chinese random_night_girl_event_b1cc9673_1:
@@ -2764,13 +2764,13 @@ translate chinese random_night_girl_event_e1347f0a_1:
 translate chinese random_night_girl_event_46095a91_1:
 
     # you "Let me teach you to obey using a language your pussy will understand...."
-    you "让我教你如何服从，用一种你的逼能听懂的语言……"
+    you "让我教你如何服从，用一种你的逼能听懂的语言...."
 
 # game/BKday_events.rpy:1931
 translate chinese random_night_girl_event_28bc2440_1:
 
     # girl.char "... Yes, Master."
-    girl.char "……是的，主人。"
+    girl.char "....是的，主人。"
 
 # game/BKday_events.rpy:1932
 translate chinese random_night_girl_event_b0a40cea_1:
@@ -2794,7 +2794,7 @@ translate chinese random_night_girl_event_0ccc1992:
 translate chinese random_night_girl_event_230841c5:
 
     # you "Take all of your clothes off... We're going to have some fun in front of the customers."
-    you "把你所有的衣服都脱掉……我们要在顾客面前玩得开心。"
+    you "把你所有的衣服都脱掉....我们要在顾客面前玩得开心。"
 
 # game/BKday_events.rpy:1948
 translate chinese random_night_girl_event_552447d1:
@@ -2818,13 +2818,13 @@ translate chinese random_night_girl_event_2a052473_9:
 translate chinese random_night_girl_event_bc63890a:
 
     # girl.char "Oh no... Please, don't hurt me..."
-    girl.char "哦，不……求求你，不要伤害我……"
+    girl.char "哦，不....求求你，不要伤害我...."
 
 # game/BKday_events.rpy:1964
 translate chinese random_night_girl_event_5ca466f5:
 
     # girl.char "Oh... I understand..."
-    girl.char "哦……我明白了……"
+    girl.char "哦....我明白了...."
 
 # game/BKday_events.rpy:1970
 translate chinese random_night_girl_event_cbaaa1b7:
@@ -2842,7 +2842,7 @@ translate chinese random_night_girl_event_a376e402:
 translate chinese random_night_girl_event_10288ea8:
 
     # you "Every thing seems to be in order... Wait, who's that?"
-    you "一切似乎都很正常……等等，那是谁？"
+    you "一切似乎都很正常....等等，那是谁？"
 
 # game/BKday_events.rpy:1991
 translate chinese random_night_girl_event_0521b76a:
@@ -2854,7 +2854,7 @@ translate chinese random_night_girl_event_0521b76a:
 translate chinese random_night_girl_event_45eee181:
 
     # you "Slacking off on the job, uh..."
-    you "在工作上偷懒，呃……"
+    you "在工作上偷懒，呃...."
 
 # game/BKday_events.rpy:2001
 translate chinese onsen_night_event_menu_b1092229:
@@ -2878,7 +2878,7 @@ translate chinese onsen_night_event_menu_548f442d:
 translate chinese onsen_night_event_menu_1af0dd01:
 
     # you "Hey... [girl.name]..."
-    you "嘿……[girl.name]……"
+    you "嘿....[girl.name]...."
 
 # game/BKday_events.rpy:2023
 translate chinese onsen_night_event_menu_b531b9ba:
@@ -2908,7 +2908,7 @@ translate chinese onsen_night_event_wake_up_cd1eb650:
 translate chinese onsen_night_event_wake_up_e6924c16:
 
     # you "Hey, sleepyhead... Work is about to begin!"
-    you "嗨，懒鬼……工作就要开始了！"
+    you "嗨，懒鬼....工作就要开始了！"
 
 # game/BKday_events.rpy:2035
 translate chinese onsen_night_event_wake_up_5bf853ca:
@@ -2926,7 +2926,7 @@ translate chinese onsen_night_event_wake_up_79879b72:
 translate chinese onsen_night_event_wake_up_959f2098:
 
     # girl.char "B-But, Master! I'm naked..."
-    girl.char "但是，主人！我现在裸体……"
+    girl.char "但是，主人！我现在裸体...."
 
 # game/BKday_events.rpy:2044
 translate chinese onsen_night_event_wake_up_f6818d02:
@@ -2938,7 +2938,7 @@ translate chinese onsen_night_event_wake_up_f6818d02:
 translate chinese onsen_night_event_wake_up_fbf00f5d:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2049
 translate chinese onsen_night_event_wake_up_1d3a0e4b:
@@ -2962,31 +2962,31 @@ translate chinese onsen_night_event_wake_up_d82cabb0:
 translate chinese onsen_night_event_wake_up_fbf00f5d_1:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2060
 translate chinese onsen_night_event_wake_up_04395b13:
 
     # you "Well, since we're here, you might as well give me a massage... I need to, err, inspect your technique."
-    you "既然我们来了，你不妨给我按摩一下……我需要检查一下你的技术。"
+    you "既然我们来了，你不妨给我按摩一下....我需要检查一下你的技术。"
 
 # game/BKday_events.rpy:2063
 translate chinese onsen_night_event_wake_up_0754ba3e:
 
     # girl.char "A massage? Like this? I'm naked... *blush*"
-    girl.char "一个按摩吗？像这样的吗？我裸体……*脸红*"
+    girl.char "一个按摩吗？像这样的吗？我裸体....*脸红*"
 
 # game/BKday_events.rpy:2065
 translate chinese onsen_night_event_wake_up_476b051a:
 
     # you "Of course. We need to have a real body to body experience..."
-    you "当然可以。我们需要一个真实的身体对身体的体验……"
+    you "当然可以。我们需要一个真实的身体对身体的体验...."
 
 # game/BKday_events.rpy:2067
 translate chinese onsen_night_event_wake_up_9107c847:
 
     # girl.char "Oh... I see..."
-    girl.char "哦……我明白了……"
+    girl.char "哦....我明白了...."
 
 # game/BKday_events.rpy:2073
 translate chinese onsen_night_event_wake_up_7211c9e8:
@@ -2998,13 +2998,13 @@ translate chinese onsen_night_event_wake_up_7211c9e8:
 translate chinese onsen_night_event_wake_up_42885cc1:
 
     # girl.char "Master... Is it good?"
-    girl.char "主人……这样好吗？"
+    girl.char "主人....这样好吗？"
 
 # game/BKday_events.rpy:2077
 translate chinese onsen_night_event_wake_up_89540a62:
 
     # you "Yes, keep going..."
-    you "是的，继续……"
+    you "是的，继续...."
 
 # game/BKday_events.rpy:2079
 translate chinese onsen_night_event_wake_up_512b0493:
@@ -3022,7 +3022,7 @@ translate chinese onsen_night_event_wake_up_d55c6c75:
 translate chinese onsen_night_event_wake_up_2c65ec52:
 
     # you "That's good..."
-    you "这很好……"
+    you "这很好...."
 
 # game/BKday_events.rpy:2088
 translate chinese onsen_night_event_wake_up_a7e48586:
@@ -3034,7 +3034,7 @@ translate chinese onsen_night_event_wake_up_a7e48586:
 translate chinese onsen_night_event_wake_up_bc3007a5:
 
     # girl.char "Oh, Master... You're so hard already..."
-    girl.char "哦，主……你已经这么辛苦了……"
+    girl.char "哦，主....你已经这么辛苦了...."
 
 # game/BKday_events.rpy:2093
 translate chinese onsen_night_event_wake_up_19829784:
@@ -3058,7 +3058,7 @@ translate chinese onsen_night_event_wake_up_83d56ad9:
 translate chinese onsen_night_event_wake_up_89ab21ac:
 
     # girl.char "Master..."
-    girl.char "主人……"
+    girl.char "主人...."
 
 # game/BKday_events.rpy:2102
 translate chinese onsen_night_event_wake_up_1fea2146:
@@ -3070,7 +3070,7 @@ translate chinese onsen_night_event_wake_up_1fea2146:
 translate chinese onsen_night_event_wake_up_cf727640:
 
     # girl.char "All right, Master, it's over..."
-    girl.char "好了，主人，结束了……"
+    girl.char "好了，主人，结束了...."
 
 # game/BKday_events.rpy:2106
 translate chinese onsen_night_event_wake_up_e15a5f34:
@@ -3094,7 +3094,7 @@ translate chinese onsen_night_event_wake_up_d51a2023:
 translate chinese onsen_night_event_wake_up_146b52eb:
 
     # girl.char "Master, no... I won't do that..."
-    girl.char "主人，不……我不会那么做的……"
+    girl.char "主人，不....我不会那么做的...."
 
 # game/BKday_events.rpy:2127
 translate chinese onsen_night_event_wake_up_2a052473:
@@ -3118,13 +3118,13 @@ translate chinese onsen_night_event_wake_up_3d843bf5:
 translate chinese onsen_night_event_wake_up_fbf00f5d_2:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2136
 translate chinese onsen_night_event_wake_up_55b6efed:
 
     # girl.char "Of course, Master..."
-    girl.char "当然，主人……"
+    girl.char "当然，主人...."
 
 # game/BKday_events.rpy:2144
 translate chinese onsen_night_event_wake_up_e82c6cf2:
@@ -3136,7 +3136,7 @@ translate chinese onsen_night_event_wake_up_e82c6cf2:
 translate chinese onsen_night_event_wake_up_146b52eb_1:
 
     # girl.char "Master, no... I won't do that..."
-    girl.char "主人，不……我不会那么做的……"
+    girl.char "主人，不....我不会那么做的...."
 
 # game/BKday_events.rpy:2156
 translate chinese onsen_night_event_wake_up_2a052473_1:
@@ -3160,7 +3160,7 @@ translate chinese onsen_night_event_wake_up_3d843bf5_1:
 translate chinese onsen_night_event_wake_up_fbf00f5d_3:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2165
 translate chinese onsen_night_event_wake_up_fc6b92a2:
@@ -3178,7 +3178,7 @@ translate chinese onsen_night_event_wake_up_00c973b5:
 translate chinese onsen_night_event_wake_up_146b52eb_2:
 
     # girl.char "Master, no... I won't do that..."
-    girl.char "主人，不……我不会那么做的……"
+    girl.char "主人，不....我不会那么做的...."
 
 # game/BKday_events.rpy:2183
 translate chinese onsen_night_event_wake_up_2a052473_2:
@@ -3202,7 +3202,7 @@ translate chinese onsen_night_event_wake_up_3d843bf5_2:
 translate chinese onsen_night_event_wake_up_fbf00f5d_4:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2192
 translate chinese onsen_night_event_wake_up_fc6b92a2_1:
@@ -3220,7 +3220,7 @@ translate chinese onsen_night_event_wake_up_17f60561:
 translate chinese onsen_night_event_wake_up_b206ef26:
 
     # girl.char "Master, no... I can't do that..."
-    girl.char "主人，不……我不能那么做……"
+    girl.char "主人，不....我不能那么做...."
 
 # game/BKday_events.rpy:2211
 translate chinese onsen_night_event_wake_up_2a052473_3:
@@ -3244,13 +3244,13 @@ translate chinese onsen_night_event_wake_up_3d843bf5_3:
 translate chinese onsen_night_event_wake_up_fbf00f5d_5:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:2220
 translate chinese onsen_night_event_wake_up_55b6efed_1:
 
     # girl.char "Of course, Master..."
-    girl.char "当然，主人……"
+    girl.char "当然，主人...."
 
 # game/BKday_events.rpy:2225
 translate chinese onsen_night_event_wake_up_7682ba26:
@@ -3298,13 +3298,13 @@ translate chinese onsen_night_event_wake_up_ee555eb7:
 translate chinese onsen_night_event_wake_up_98042b7d:
 
     # girl.char "YOU..."
-    girl.char "你……"
+    girl.char "你...."
 
 # game/BKday_events.rpy:2256
 translate chinese onsen_night_event_wake_up_31fe46bc:
 
     # "Looking very mad, she grits her teeth, her fists balled as if she's about to fight you..."
-    "她看上去很生气，咬紧牙关，握紧拳头，好像要和你打架……"
+    "她看上去很生气，咬紧牙关，握紧拳头，好像要和你打架...."
 
 # game/BKday_events.rpy:2258
 translate chinese onsen_night_event_wake_up_61f67e18:
@@ -3316,7 +3316,7 @@ translate chinese onsen_night_event_wake_up_61f67e18:
 translate chinese onsen_night_event_wake_up_c5cd0b64:
 
     # girl.char "Oh, Master... Come over here, will you... ♥"
-    girl.char "哦，主人……过来一下，好吗？♥"
+    girl.char "哦，主人....过来一下，好吗？♥"
 
 # game/BKday_events.rpy:2262
 translate chinese onsen_night_event_wake_up_ab1609ba:
@@ -3358,7 +3358,7 @@ translate chinese onsen_night_event_wake_up_cdf050c8:
 translate chinese onsen_night_event_wake_up_3c2872a1:
 
     # girl.char "You're... You're mean!!!"
-    girl.char "你……你的意思是！！！"
+    girl.char "你....你的意思是！！！"
 
 # game/BKday_events.rpy:2283
 translate chinese onsen_night_event_wake_up_c9811855:
@@ -3394,7 +3394,7 @@ translate chinese onsen_night_event_wake_up_78cb04f2:
 translate chinese onsen_night_event_wake_up_f58feff7:
 
     # girl.char "What... Hey!!!"
-    girl.char "什么……嘿！！！"
+    girl.char "什么....嘿！！！"
 
 # game/BKday_events.rpy:2309
 translate chinese onsen_night_event_wake_up_792e777b:
@@ -3412,7 +3412,7 @@ translate chinese onsen_night_event_wake_up_19aec182:
 translate chinese onsen_night_event_wake_up_5f6dd77b:
 
     # girl.char "Oh, Master... Aaaaah!"
-    girl.char "哦，主人……啊！"
+    girl.char "哦，主人....啊！"
 
 # game/BKday_events.rpy:2321
 translate chinese onsen_night_event_wake_up_4dde2acd:
@@ -3424,7 +3424,7 @@ translate chinese onsen_night_event_wake_up_4dde2acd:
 translate chinese onsen_night_event_wake_up_efc93f76:
 
     # girl.char "Mmmmh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:2325
 translate chinese onsen_night_event_wake_up_64ced1b1:
@@ -3436,7 +3436,7 @@ translate chinese onsen_night_event_wake_up_64ced1b1:
 translate chinese onsen_night_event_wake_up_9f6fa2ac:
 
     # girl.char "Oh, Master... Aaaaah!!!"
-    girl.char "哦，主人……啊！！！"
+    girl.char "哦，主人....啊！！！"
 
 # game/BKday_events.rpy:2332
 translate chinese onsen_night_event_wake_up_eda29d28:
@@ -3448,7 +3448,7 @@ translate chinese onsen_night_event_wake_up_eda29d28:
 translate chinese onsen_night_event_wake_up_fa6aa677:
 
     # you "Good girl... All right now, get down to work."
-    you "好女孩……好了，现在开始工作吧。"
+    you "好女孩....好了，现在开始工作吧。"
 
 # game/BKday_events.rpy:2336
 translate chinese onsen_night_event_wake_up_c1da3d17:
@@ -3460,7 +3460,7 @@ translate chinese onsen_night_event_wake_up_c1da3d17:
 translate chinese onsen_night_event_wake_up_d35cc7fa:
 
     # girl.char "Master... Aaaah... What are you doing!"
-    girl.char "主人……啊……你在干什么！"
+    girl.char "主人....啊....你在干什么！"
 
 # game/BKday_events.rpy:2347
 translate chinese onsen_night_event_wake_up_84cda0db:
@@ -3472,7 +3472,7 @@ translate chinese onsen_night_event_wake_up_84cda0db:
 translate chinese onsen_night_event_wake_up_2e6dcf12:
 
     # girl.char "Master... Please stop... Someone will see us..."
-    girl.char "主人……请停止……有人会看到我们……"
+    girl.char "主人....请停止....有人会看到我们...."
 
 # game/BKday_events.rpy:2351
 translate chinese onsen_night_event_wake_up_ddbc772a:
@@ -3484,13 +3484,13 @@ translate chinese onsen_night_event_wake_up_ddbc772a:
 translate chinese onsen_night_event_wake_up_15aea7a3:
 
     # you "Don't worry... I bet the customers would love to see how perverted your tits are..."
-    you "别担心……我敢打赌顾客们一定很想看看你的咪咪有多变态……"
+    you "别担心....我敢打赌顾客们一定很想看看你的咪咪有多变态...."
 
 # game/BKday_events.rpy:2357
 translate chinese onsen_night_event_wake_up_9c48037d:
 
     # girl.char "Oh, Master! Don't say that! Aaaah..."
-    girl.char "哦，主人！不要说！啊……"
+    girl.char "哦，主人！不要说！啊...."
 
 # game/BKday_events.rpy:2359
 translate chinese onsen_night_event_wake_up_64966773:
@@ -3598,13 +3598,13 @@ translate chinese onsen_night_event_wake_up_f48eb9cd:
 translate chinese onsen_night_event_wake_up_936eca49:
 
     # girl.char "B-But, Master! I don't even work as a geisha! I was just passing by here..."
-    girl.char "但是，主人！我甚至不做艺妓！我只是路过这里……"
+    girl.char "但是，主人！我甚至不做艺妓！我只是路过这里...."
 
 # game/BKday_events.rpy:2454
 translate chinese onsen_night_event_wake_up_d3013cf0:
 
     # girl.char "B-But, Master, I am not ready yet! I need more time..."
-    girl.char "可是，主人，我还没有准备好呢！我需要更多的时间……"
+    girl.char "可是，主人，我还没有准备好呢！我需要更多的时间...."
 
 # game/BKday_events.rpy:2460
 translate chinese onsen_night_event_wake_up_b5f7f09d:
@@ -3616,7 +3616,7 @@ translate chinese onsen_night_event_wake_up_b5f7f09d:
 translate chinese onsen_night_event_wake_up_d2382320:
 
     # girl.char "But... *blush*"
-    girl.char "但是……*脸红*"
+    girl.char "但是....*脸红*"
 
 # game/BKday_events.rpy:2465
 translate chinese onsen_night_event_wake_up_8052a9d7:
@@ -3634,13 +3634,13 @@ translate chinese onsen_night_event_wake_up_04097a7a:
 translate chinese onsen_night_event_wake_up_f29fcd65:
 
     # girl.char "So... What should I be wearing? *blush*"
-    girl.char "所以……我应该穿什么？*脸红*"
+    girl.char "所以....我应该穿什么？*脸红*"
 
 # game/BKday_events.rpy:2476
 translate chinese onsen_night_event_wake_up_83d170e0:
 
     # you "All right, let me think..."
-    you "好吧，让我想想……"
+    you "好吧，让我想想...."
 
 # game/BKday_events.rpy:2483
 translate chinese onsen_night_event_wake_up_30d173f8:
@@ -3664,7 +3664,7 @@ translate chinese onsen_night_event_wake_up_c1da3d17_2:
 translate chinese onsen_night_event_wake_up_c59792a2:
 
     # girl.char "Thanks..."
-    girl.char "谢谢……"
+    girl.char "谢谢...."
 
 # game/BKday_events.rpy:2501
 translate chinese onsen_night_event_wake_up_f81ed50c:
@@ -3682,13 +3682,13 @@ translate chinese onsen_night_event_wake_up_6a0691c6:
 translate chinese onsen_night_event_wake_up_98f16f7f:
 
     # you "Here, this is going to be your suit for the night. I'm sure this will suit you just right..."
-    you "给，这是你今晚要穿的衣服。我相信这正适合你……"
+    you "给，这是你今晚要穿的衣服。我相信这正适合你...."
 
 # game/BKday_events.rpy:2515
 translate chinese onsen_night_event_wake_up_2df80ff4:
 
     # girl.char "*gasp* You're... You're kidding, right?"
-    girl.char "*喘息*你……你在开玩笑，对吧？"
+    girl.char "*喘息*你....你在开玩笑，对吧？"
 
 # game/BKday_events.rpy:2516
 translate chinese onsen_night_event_wake_up_9b1e4d3c:
@@ -3706,7 +3706,7 @@ translate chinese onsen_night_event_wake_up_c1da3d17_3:
 translate chinese onsen_night_event_wake_up_af7cf591:
 
     # you "Now, let me help you put this on. It needs to be very tight..."
-    you "现在，让我帮你戴上这个。它需要非常紧……"
+    you "现在，让我帮你戴上这个。它需要非常紧...."
 
 # game/BKday_events.rpy:2529
 translate chinese onsen_night_event_wake_up_9043633c:
@@ -3742,13 +3742,13 @@ translate chinese onsen_night_event_wake_up_aefcb21e:
 translate chinese onsen_night_event_wake_up_cbf46f82:
 
     # girl.char "Wait... You don't mean..."
-    girl.char "等待……你不是说……"
+    girl.char "等待....你不是说...."
 
 # game/BKday_events.rpy:2550
 translate chinese onsen_night_event_wake_up_1fc04ce5:
 
     # you "Oh, yes..."
-    you "哦，是的……"
+    you "哦，是的...."
 
 # game/BKday_events.rpy:2559
 translate chinese onsen_night_event_wake_up_2a052473_4:
@@ -3766,7 +3766,7 @@ translate chinese onsen_night_event_wake_up_d0bdecd8:
 translate chinese onsen_night_event_wake_up_e5f35f1a:
 
     # girl.char "Well, Master, if I have to... *sigh*"
-    girl.char "主人，如果我必须……*叹息*"
+    girl.char "主人，如果我必须....*叹息*"
 
 # game/BKday_events.rpy:2569
 translate chinese onsen_night_event_wake_up_18014af9:
@@ -3790,7 +3790,7 @@ translate chinese onsen_night_event_wake_up_da3c9e5b:
 translate chinese onsen_night_event_wake_up_1f75e425:
 
     # girl.char "Oh... Are you sure?"
-    girl.char "哦……你确定吗？"
+    girl.char "哦....你确定吗？"
 
 # game/BKday_events.rpy:2584
 translate chinese onsen_night_event_wake_up_24aab2ad:
@@ -3820,7 +3820,7 @@ translate chinese onsen_night_event_wake_up_91296546:
 translate chinese onsen_night_event_wake_up_685847ec:
 
     # you "Well..."
-    you "好吧……"
+    you "好吧...."
 
 # game/BKday_events.rpy:2594
 translate chinese onsen_night_event_wake_up_fe0c4b06:
@@ -3832,7 +3832,7 @@ translate chinese onsen_night_event_wake_up_fe0c4b06:
 translate chinese onsen_night_event_wake_up_8434bc37:
 
     # you "Our graceful host, Lady [girl.fullname], will now tell you the sad story of a most remarkable fish..."
-    you "我们优雅的主人，[girl.fullname]小姐。现在，我将告诉你一条最非凡的鱼的悲伤故事……"
+    you "我们优雅的主人，[girl.fullname]小姐。现在，我将告诉你一条最非凡的鱼的悲伤故事...."
 
 # game/BKday_events.rpy:2609
 translate chinese onsen_night_event_wake_up_fc6b92a2_2:
@@ -3856,7 +3856,7 @@ translate chinese onsen_night_event_wake_up_8ef478b0:
 translate chinese onsen_night_event_wake_up_e5a81aca:
 
     # girl.char "Let the gods lead my hands on mine harp, to tell you the story of a singing carp..."
-    girl.char "愿诸神牵着我的手，弹着我的琴，给你讲一条会唱歌的鲤鱼的故事……"
+    girl.char "愿诸神牵着我的手，弹着我的琴，给你讲一条会唱歌的鲤鱼的故事...."
 
 # game/BKday_events.rpy:2623
 translate chinese onsen_night_event_wake_up_87c03819:
@@ -3940,7 +3940,7 @@ translate chinese onsen_night_event_wake_up_636411b4:
 translate chinese onsen_night_event_wake_up_78026420:
 
     # girl.char "Oh, my lover, where are thee? How my sinful body longs for thy warm embrace..."
-    girl.char "哦，我的爱人，你在哪里？我罪恶的身体多么渴望你温暖的拥抱……"
+    girl.char "哦，我的爱人，你在哪里？我罪恶的身体多么渴望你温暖的拥抱...."
 
 # game/BKday_events.rpy:2677
 translate chinese onsen_night_event_wake_up_259d5d23:
@@ -4006,7 +4006,7 @@ translate chinese onsen_night_event_wake_up_3af66d4d:
 translate chinese onsen_night_event_wake_up_ae4942c2:
 
     # girl.char "O lover, I long to fall in your arms... Aaaaah!!!"
-    girl.char "哦，我的爱人，我渴望着倒在你的怀里……啊哈！！！"
+    girl.char "哦，我的爱人，我渴望着倒在你的怀里....啊哈！！！"
 
 # game/BKday_events.rpy:2718
 translate chinese onsen_night_event_wake_up_c55bb8af:
@@ -4024,7 +4024,7 @@ translate chinese onsen_night_event_wake_up_a88ca4f9:
 translate chinese onsen_night_event_wake_up_69325caf:
 
     # girl.char "Uh... I'm sorry..."
-    girl.char "嗯……我很抱歉……"
+    girl.char "嗯....我很抱歉...."
 
 # game/BKday_events.rpy:2726
 translate chinese onsen_night_event_wake_up_31f3459c:
@@ -4048,7 +4048,7 @@ translate chinese onsen_night_event_wake_up_29953b07:
 translate chinese onsen_night_event_wake_up_43611dcc:
 
     # you "Let me tell you of the legend of the Seven Magical Pearls. A long time ago, in a whorehouse far, far away..."
-    you "让我来告诉你关于七颗魔法珍珠的传说。很久很久以前，在一个很远很远的青楼里……"
+    you "让我来告诉你关于七颗魔法珍珠的传说。很久很久以前，在一个很远很远的青楼里...."
 
 # game/BKday_events.rpy:2748
 translate chinese onsen_night_event_wake_up_2a052473_5:
@@ -4066,7 +4066,7 @@ translate chinese onsen_night_event_wake_up_d219b49e:
 translate chinese onsen_night_event_wake_up_7470d1cd:
 
     # girl.char "Oh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:2769
 translate chinese onsen_night_event_wake_up_2a052473_6:
@@ -4084,7 +4084,7 @@ translate chinese onsen_night_event_wake_up_d219b49e_1:
 translate chinese onsen_night_event_wake_up_3f10df43:
 
     # girl.char "B-But, Master, that one is..."
-    girl.char "但是，师傅，那个是……"
+    girl.char "但是，师傅，那个是...."
 
 # game/BKday_events.rpy:2779
 translate chinese onsen_night_event_wake_up_466b353d:
@@ -4114,7 +4114,7 @@ translate chinese onsen_night_event_wake_up_d219b49e_2:
 translate chinese onsen_night_event_wake_up_852d2ad9:
 
     # girl.char "That one? B-but... It's humiliating..."
-    girl.char "这一个吗？b但是……这是耻辱……"
+    girl.char "这一个吗？b但是....这是耻辱...."
 
 # game/BKday_events.rpy:2805
 translate chinese onsen_night_event_wake_up_b7946ecf:
@@ -4156,13 +4156,13 @@ translate chinese onsen_night_event_wake_up_c012251a:
 translate chinese onsen_night_event_wake_up_0eb13112:
 
     # girl.char "Oh no..."
-    girl.char "哦，不……"
+    girl.char "哦，不...."
 
 # game/BKday_events.rpy:2836
 translate chinese onsen_night_event_wake_up_c9f0531a:
 
     # you "Once upon a time, there were twelve forbidden gates. The first one..."
-    you "从前，有十二个禁门。第一个……"
+    you "从前，有十二个禁门。第一个...."
 
 # game/BKday_events.rpy:2838
 translate chinese onsen_night_event_wake_up_9b55fb7f:
@@ -4180,7 +4180,7 @@ translate chinese onsen_night_event_wake_up_28954dfd:
 translate chinese onsen_night_event_wake_up_bc6c358d:
 
     # you "B-but... This is part of the show! This is art!"
-    you "但是……这是节目的一部分！这是艺术！"
+    you "但是....这是节目的一部分！这是艺术！"
 
 # game/BKday_events.rpy:2846
 translate chinese onsen_night_event_wake_up_04a5005f:
@@ -4192,7 +4192,7 @@ translate chinese onsen_night_event_wake_up_04a5005f:
 translate chinese onsen_night_event_wake_up_19f6d1f4:
 
     # you "Fine then... You barbarians..."
-    you "好然后……你的野蛮人……"
+    you "好然后....你的野蛮人...."
 
 # game/BKday_events.rpy:2850
 translate chinese onsen_night_event_wake_up_5c110106:
@@ -4282,7 +4282,7 @@ translate chinese night_girl_perform_75a85f29:
 translate chinese night_girl_perform_f5b1c489:
 
     # girl.char "Hmmm... Aaaah..."
-    girl.char "嗯……啊……"
+    girl.char "嗯....啊...."
 
 # game/BKday_events.rpy:2972
 translate chinese night_girl_perform_aab48592:
@@ -4312,7 +4312,7 @@ translate chinese night_girl_perform_6963c86c:
 translate chinese night_girl_perform_4785dc4c:
 
     # girl.char "Hnnn..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:2988
 translate chinese night_girl_perform_c56453b2:
@@ -4324,7 +4324,7 @@ translate chinese night_girl_perform_c56453b2:
 translate chinese night_girl_perform_d758fb8a:
 
     # you "That's it... Hmmm..."
-    you "就是这样……嗯……"
+    you "就是这样....嗯...."
 
 # game/BKday_events.rpy:2992
 translate chinese night_girl_perform_7a49b829:
@@ -4336,7 +4336,7 @@ translate chinese night_girl_perform_7a49b829:
 translate chinese night_girl_perform_05174330:
 
     # girl.char "Th... Thank you Master... *blush*"
-    girl.char "谢……谢谢你的主人……*脸红*"
+    girl.char "谢....谢谢你的主人....*脸红*"
 
 # game/BKday_events.rpy:3001
 translate chinese night_girl_perform_5c94cd60:
@@ -4372,13 +4372,13 @@ translate chinese night_girl_perform_6fbec44e:
 translate chinese night_girl_perform_12548953:
 
     # you "All right, that was fun... Now, get to work."
-    you "好吧，很有趣……现在，开始工作吧。"
+    you "好吧，很有趣....现在，开始工作吧。"
 
 # game/BKday_events.rpy:3018
 translate chinese night_girl_perform_9ddeb210:
 
     # girl.char "You came here to inspect me, I think... Let me inspect you too..."
-    girl.char "你是来检查我的，我想……我也来检查一下……"
+    girl.char "你是来检查我的，我想....我也来检查一下...."
 
 # game/BKday_events.rpy:3020
 translate chinese night_girl_perform_bf704c40:
@@ -4390,7 +4390,7 @@ translate chinese night_girl_perform_bf704c40:
 translate chinese night_girl_perform_603c5776:
 
     # girl.char "Hmmm, it's already nice and hard... *gulp*"
-    girl.char "嗯，已经很好很硬了……*吞咽*"
+    girl.char "嗯，已经很好很硬了....*吞咽*"
 
 # game/BKday_events.rpy:3034
 translate chinese night_girl_perform_d55ee6b4:
@@ -4402,7 +4402,7 @@ translate chinese night_girl_perform_d55ee6b4:
 translate chinese night_girl_perform_0bba0d5d:
 
     # girl.char "Sho delishious... Hnnn..."
-    girl.char "如此美味……嗯……"
+    girl.char "如此美味....嗯...."
 
 # game/BKday_events.rpy:3039
 translate chinese night_girl_perform_b6114a93:
@@ -4432,7 +4432,7 @@ translate chinese night_girl_perform_7e225ff0:
 translate chinese night_girl_perform_74dabd84:
 
     # girl.char "Hnnn... Hnnn... Aaah..."
-    girl.char "嗯……嗯……啊……"
+    girl.char "嗯....嗯....啊...."
 
 # game/BKday_events.rpy:3059
 translate chinese night_girl_perform_83e3dbd0:
@@ -4444,7 +4444,7 @@ translate chinese night_girl_perform_83e3dbd0:
 translate chinese night_girl_perform_71a7172f:
 
     # girl.char "Oh, Master..."
-    girl.char "哦，主人……"
+    girl.char "哦，主人...."
 
 # game/BKday_events.rpy:3071
 translate chinese night_girl_perform_66ab38bc:
@@ -4468,7 +4468,7 @@ translate chinese night_girl_perform_8f33e271:
 translate chinese night_girl_perform_5f65084b:
 
     # you "Hello babe..."
-    you "你好宝贝……"
+    you "你好宝贝...."
 
 # game/BKday_events.rpy:3098
 translate chinese night_girl_perform_69c2bfff:
@@ -4480,7 +4480,7 @@ translate chinese night_girl_perform_69c2bfff:
 translate chinese night_girl_perform_918142a2:
 
     # girl.char "Oh... Hmmm... Master, oh..."
-    girl.char "哦……嗯……主，哦……"
+    girl.char "哦....嗯....主，哦...."
 
 # game/BKday_events.rpy:3109
 translate chinese night_girl_perform_551a5acc:
@@ -4498,7 +4498,7 @@ translate chinese night_girl_perform_9953653a:
 translate chinese night_girl_perform_cb975d8d:
 
     # girl.char "Master... Aah..."
-    girl.char "主人……啊……"
+    girl.char "主人....啊...."
 
 # game/BKday_events.rpy:3118
 translate chinese night_girl_perform_50efcf9b:
@@ -4522,7 +4522,7 @@ translate chinese night_girl_perform_dc7084ad:
 translate chinese night_girl_perform_5e1464ff:
 
     # girl.char "It's all right... I want it."
-    girl.char "没关系……我想要它。"
+    girl.char "没关系....我想要它。"
 
 # game/BKday_events.rpy:3122
 translate chinese night_girl_perform_0cc53fa4:
@@ -4540,7 +4540,7 @@ translate chinese night_girl_perform_47f34c13:
 translate chinese night_girl_perform_4785dc4c_1:
 
     # girl.char "Hnnn..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:3131
 translate chinese night_girl_perform_dc119db1:
@@ -4582,7 +4582,7 @@ translate chinese night_girl_perform_7c33c8d4:
 translate chinese night_girl_perform_699f9730:
 
     # you "Yeah... That's good..."
-    you "是的……这很好……"
+    you "是的....这很好...."
 
 # game/BKday_events.rpy:3179
 translate chinese night_girl_perform_c7f50cda:
@@ -4618,7 +4618,7 @@ translate chinese night_girl_perform_84b6d597:
 translate chinese night_girl_perform_3123c798:
 
     # you "Good girl... Now go to work."
-    you "好女孩……现在去工作吧。"
+    you "好女孩....现在去工作吧。"
 
 # game/BKday_events.rpy:3214
 translate chinese night_girl_perform_4c350a3d:
@@ -4666,7 +4666,7 @@ translate chinese night_girl_perform_39f4bd90:
 translate chinese night_girl_perform_7742c7dc:
 
     # you "Well, that was fun... Now, get ready to work."
-    you "嗯，那很有趣……现在，准备工作。"
+    you "嗯，那很有趣....现在，准备工作。"
 
 # game/BKday_events.rpy:3252
 translate chinese night_girl_perform_f0fe277e:
@@ -4708,7 +4708,7 @@ translate chinese night_girl_perform_7b1682ce:
 translate chinese night_girl_perform_548fd52c:
 
     # girl.char "Welcome, sir..."
-    girl.char "欢迎光临，先生……"
+    girl.char "欢迎光临，先生...."
 
 # game/BKday_events.rpy:3272
 translate chinese night_girl_perform_076984e2:
@@ -4726,7 +4726,7 @@ translate chinese night_girl_perform_9d501b68:
 translate chinese night_girl_perform_ee3fc3dc:
 
     # "[girl.name] loves being touched and groped by many strangers' marauding hands... You watch as she quietly orgasms under the customers' watchful gaze."
-    "[girl.name]喜欢被许多陌生人掠夺的手抚摸……你看着她在顾客的注视下静静地高潮。"
+    "[girl.name]喜欢被许多陌生人掠夺的手抚摸....你看着她在顾客的注视下静静地高潮。"
 
 # game/BKday_events.rpy:3284
 translate chinese night_girl_perform_c0da5488:
@@ -4768,7 +4768,7 @@ translate chinese night_girl_perform_5dfc5939:
 translate chinese night_girl_perform_40326295:
 
     # you "Get ready for a good fucking, bitch..."
-    you "准备好，婊子……"
+    you "准备好，婊子...."
 
 # game/BKday_events.rpy:3313
 translate chinese night_girl_perform_9ddbfe36:
@@ -4810,7 +4810,7 @@ translate chinese night_girl_perform_5285cdad:
 translate chinese night_girl_perform_b35b34f4:
 
     # girl.char "Ooooh..."
-    girl.char "唔……"
+    girl.char "唔...."
 
 # game/BKday_events.rpy:3341
 translate chinese night_girl_perform_9438d06c:
@@ -4822,7 +4822,7 @@ translate chinese night_girl_perform_9438d06c:
 translate chinese night_girl_perform_f1cca45d:
 
     # girl.char "No..."
-    girl.char "不要……"
+    girl.char "不要...."
 
 # game/BKday_events.rpy:3348
 translate chinese night_girl_perform_7d4d73e1:
@@ -4912,13 +4912,13 @@ translate chinese night_girl_perform_596bc1d4:
 translate chinese night_girl_perform_89df2710:
 
     # girl.char "I'm going to ride the fucker until his back breaks..."
-    girl.char "我要骑着这混蛋，直到他的背摔断……"
+    girl.char "我要骑着这混蛋，直到他的背摔断...."
 
 # game/BKday_events.rpy:3418
 translate chinese night_girl_perform_83e05e96:
 
     # man "Aaah!!! Lady, what are you..."
-    man "啊！！！女士，你是……"
+    man "啊！！！女士，你是...."
 
 # game/BKday_events.rpy:3422
 translate chinese night_girl_perform_f635ac03:
@@ -4936,7 +4936,7 @@ translate chinese night_girl_perform_14dddac3:
 translate chinese night_girl_perform_6f4f621b:
 
     # man "Please, my lady! I beg forgiveness..."
-    man "请，我的女士！我请求宽恕……"
+    man "请，我的女士！我请求宽恕...."
 
 # game/BKday_events.rpy:3437
 translate chinese night_girl_perform_43a8ebd5:
@@ -4948,7 +4948,7 @@ translate chinese night_girl_perform_43a8ebd5:
 translate chinese night_girl_perform_ba3317c4:
 
     # man "Please, Mistress, don't hurt me... *sob*"
-    man "求你了，女主人，别伤害我……*抽泣*"
+    man "求你了，女主人，别伤害我....*抽泣*"
 
 # game/BKday_events.rpy:3455
 translate chinese night_girl_perform_a943b1c0:
@@ -4960,7 +4960,7 @@ translate chinese night_girl_perform_a943b1c0:
 translate chinese night_girl_perform_0b07996e:
 
     # man "Mercy, my lady... *sob*"
-    man "仁慈，我的夫人……*抽泣*"
+    man "仁慈，我的夫人....*抽泣*"
 
 # game/BKday_events.rpy:3459
 translate chinese night_girl_perform_9b8b1967:
@@ -4978,7 +4978,7 @@ translate chinese night_girl_perform_2605539e:
 translate chinese night_girl_perform_9001d10d:
 
     # girl.char "Don't you dare cum until I say so! I will squeeze your stupid dick dry tonight..."
-    girl.char "除非我这么说，否则你不敢！今晚我要把你的老二榨干……"
+    girl.char "除非我这么说，否则你不敢！今晚我要把你的老二榨干...."
 
 # game/BKday_events.rpy:3467
 translate chinese night_girl_perform_11529b51:
@@ -4996,7 +4996,7 @@ translate chinese night_girl_perform_4ca9f3c9:
 translate chinese night_girl_perform_d97cf094:
 
     # man "Oh, look at that bitch go..."
-    man "看那个婊子……"
+    man "看那个婊子...."
 
 # game/BKday_events.rpy:3492
 translate chinese night_girl_perform_0026162c:
@@ -5026,7 +5026,7 @@ translate chinese night_girl_perform_ad143f85:
 translate chinese night_girl_perform_dae966e6:
 
     # girl.char "Hmmm..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:3507
 translate chinese night_girl_perform_29377365:
@@ -5080,7 +5080,7 @@ translate chinese night_girl_perform_e3259af8:
 translate chinese night_girl_perform_eaef6e38:
 
     # girl.char "Ngggh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:3540
 translate chinese night_girl_perform_70e8e7ab:
@@ -5092,7 +5092,7 @@ translate chinese night_girl_perform_70e8e7ab:
 translate chinese night_girl_perform_d44dec95:
 
     # man "Oooh..." with flash
-    man "噢……"
+    man "噢...."
 
 # game/BKday_events.rpy:3544
 translate chinese night_girl_perform_b816ff14:
@@ -5110,7 +5110,7 @@ translate chinese night_girl_perform_17e73ae7:
 translate chinese night_girl_perform_f5b6bc2f:
 
     # girl.char "Mmmh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:3560
 translate chinese night_girl_perform_8b96f2d1:
@@ -5140,7 +5140,7 @@ translate chinese night_girl_perform_3f81854a:
 translate chinese night_girl_perform_0ef69310:
 
     # girl.char "Hrrr..."
-    girl.char "Hrrr……"
+    girl.char "Hrrr...."
 
 # game/BKday_events.rpy:3574
 translate chinese night_girl_perform_78e707af:
@@ -5152,7 +5152,7 @@ translate chinese night_girl_perform_78e707af:
 translate chinese night_girl_perform_7bb65962:
 
     # man "You useless bitch... What good is a whore who can't suck a dick?"
-    man "你没用的婊子……不会吸鸡巴的妓女有什么用？"
+    man "你没用的婊子....不会吸鸡巴的妓女有什么用？"
 
 # game/BKday_events.rpy:3582
 translate chinese night_girl_perform_65036331:
@@ -5188,7 +5188,7 @@ translate chinese night_girl_perform_c03cb2df:
 translate chinese night_girl_perform_f5b6bc2f_1:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:3605
 translate chinese night_girl_perform_137187e7:
@@ -5200,7 +5200,7 @@ translate chinese night_girl_perform_137187e7:
 translate chinese night_girl_perform_82abfe16:
 
     # man "Oh, that's great..."
-    man "哦，太好了……"
+    man "哦，太好了...."
 
 # game/BKday_events.rpy:3620
 translate chinese night_girl_perform_4804bc86:
@@ -5212,7 +5212,7 @@ translate chinese night_girl_perform_4804bc86:
 translate chinese night_girl_perform_53380db8:
 
     # girl.char "Ngh... Ngggh..."
-    girl.char "已……已经……"
+    girl.char "已....已经...."
 
 # game/BKday_events.rpy:3624
 translate chinese night_girl_perform_86b125ff:
@@ -5230,7 +5230,7 @@ translate chinese night_girl_perform_49753b58:
 translate chinese night_girl_perform_67738346:
 
     # man "Nice little bitch, [girl.name]..."
-    man "可爱的小婊子，[girl.name]……"
+    man "可爱的小婊子，[girl.name]...."
 
 # game/BKday_events.rpy:3636
 translate chinese night_girl_perform_28090ad5:
@@ -5296,7 +5296,7 @@ translate chinese night_girl_perform_8df8416c:
 translate chinese night_girl_perform_6f667078:
 
     # girl.char "M... More! I'm a dirty, dirty bitch! Fuck me hard!"
-    girl.char "米……更多！我是个肮脏的婊子！他妈的我努力！"
+    girl.char "米....更多！我是个肮脏的婊子！他妈的我努力！"
 
 # game/BKday_events.rpy:3669
 translate chinese night_girl_perform_48627054:
@@ -5326,7 +5326,7 @@ translate chinese night_girl_perform_766dc198:
 translate chinese night_girl_perform_c6c03961:
 
     # girl.char "Oh, ah, aah..."
-    girl.char "哦，啊，啊……"
+    girl.char "哦，啊，啊...."
 
 # game/BKday_events.rpy:3695
 translate chinese night_girl_perform_c95538cd:
@@ -5344,7 +5344,7 @@ translate chinese night_girl_perform_2f80a50a:
 translate chinese night_girl_perform_74bd4e2d:
 
     # girl.char "Stop! Please, Master, make him stop..."
-    girl.char "停！求求你，主人，让他停下来……"
+    girl.char "停！求求你，主人，让他停下来...."
 
 # game/BKday_events.rpy:3715
 translate chinese night_girl_perform_36ba3031:
@@ -5362,7 +5362,7 @@ translate chinese night_girl_perform_5ae41b60:
 translate chinese night_girl_perform_89119f03:
 
     # man "What a good-for-nothing slave slut... You're not even good as a cum dump!"
-    man "真是个没用的奴隶荡妇……你连厕所都不如！"
+    man "真是个没用的奴隶荡妇....你连厕所都不如！"
 
 # game/BKday_events.rpy:3725
 translate chinese night_girl_perform_e3e602e8:
@@ -5386,7 +5386,7 @@ translate chinese night_girl_perform_d1292e1f:
 translate chinese night_girl_perform_23fbb911:
 
     # girl.char "W-Wait a minute..."
-    girl.char "W-Wait一分钟……"
+    girl.char "W-Wait一分钟...."
 
 # game/BKday_events.rpy:3735
 translate chinese night_girl_perform_d83dc9a2:
@@ -5440,7 +5440,7 @@ translate chinese night_girl_perform_bb3b1581:
 translate chinese night_girl_perform_18ab1f29:
 
     # girl.char "Oh... Ah..."
-    girl.char "哦……啊……"
+    girl.char "哦....啊...."
 
 # game/BKday_events.rpy:3777
 translate chinese night_girl_perform_ba47323e:
@@ -5500,19 +5500,19 @@ translate chinese night_girl_perform_3b5f35a5:
 translate chinese night_girl_perform_4a0ca8aa:
 
     # girl.char "Mister... What... What do you want from me?"
-    girl.char "先生……什么……你想从我这里得到什么？"
+    girl.char "先生....什么....你想从我这里得到什么？"
 
 # game/BKday_events.rpy:3816
 translate chinese night_girl_perform_8e729531:
 
     # man "I have been saving my semen for a month, just for you..."
-    man "我保存精液一个月了，就是为了你……"
+    man "我保存精液一个月了，就是为了你...."
 
 # game/BKday_events.rpy:3818
 translate chinese night_girl_perform_eec6e358:
 
     # girl.char "Whaaat? Mister, no... Aaaah!"
-    girl.char "什么？先生，不……啊！"
+    girl.char "什么？先生，不....啊！"
 
 # game/BKday_events.rpy:3820
 translate chinese night_girl_perform_c00da0ce:
@@ -5530,7 +5530,7 @@ translate chinese night_girl_perform_929ccdf5:
 translate chinese night_girl_perform_44513c9d:
 
     # girl.char "Oh, mister... You're so hard..."
-    girl.char "哦，先生……你那么辛苦……"
+    girl.char "哦，先生....你那么辛苦...."
 
 # game/BKday_events.rpy:3834
 translate chinese night_girl_perform_1c15c62c:
@@ -5542,7 +5542,7 @@ translate chinese night_girl_perform_1c15c62c:
 translate chinese night_girl_perform_c8cb9d05:
 
     # girl.char "Mmmh, aaah..."
-    girl.char "嗯，啊……"
+    girl.char "嗯，啊...."
 
 # game/BKday_events.rpy:3840
 translate chinese night_girl_perform_4bfb3fd4:
@@ -5578,7 +5578,7 @@ translate chinese night_girl_perform_606ad665:
 translate chinese night_girl_perform_2ef88c4b:
 
     # girl.char "Aaah... It's so... warm..."
-    girl.char "啊……它是如此……温暖……"
+    girl.char "啊....它是如此....温暖...."
 
 # game/BKday_events.rpy:3864
 translate chinese night_girl_perform_68174876:
@@ -5590,7 +5590,7 @@ translate chinese night_girl_perform_68174876:
 translate chinese night_girl_perform_80a42650:
 
     # girl.char "Mister, wait..."
-    girl.char "先生，等等……"
+    girl.char "先生，等等...."
 
 # game/BKday_events.rpy:3873
 translate chinese night_girl_perform_73c8be5d:
@@ -5620,7 +5620,7 @@ translate chinese night_girl_perform_96646647:
 translate chinese night_girl_perform_b99558c3:
 
     # girl.char "Wait... I... Aaaaah!!!"
-    girl.char "等待……我……啊！！！"
+    girl.char "等待....我....啊！！！"
 
 # game/BKday_events.rpy:3891
 translate chinese night_girl_perform_a750ee6a:
@@ -5632,13 +5632,13 @@ translate chinese night_girl_perform_a750ee6a:
 translate chinese night_girl_perform_273a1c98:
 
     # girl.char "Oooh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:3902
 translate chinese night_girl_perform_39af959d:
 
     # girl.char "Stop! What are you do... Aaaah!!!"
-    girl.char "停！你在做什么……啊！！！"
+    girl.char "停！你在做什么....啊！！！"
 
 # game/BKday_events.rpy:3904
 translate chinese night_girl_perform_efa0beac:
@@ -5668,7 +5668,7 @@ translate chinese night_girl_perform_5d973424:
 translate chinese night_girl_perform_e7765669:
 
     # girl.char "Ah!!! It hurts! Stop..."
-    girl.char "啊！！！好痛！停下来……"
+    girl.char "啊！！！好痛！停下来...."
 
 # game/BKday_events.rpy:3916
 translate chinese night_girl_perform_59b376a9:
@@ -5680,7 +5680,7 @@ translate chinese night_girl_perform_59b376a9:
 translate chinese night_girl_perform_f56574e6:
 
     # girl.char "Noooo... It's disgusting..."
-    girl.char "不。。好恶心……"
+    girl.char "不。。好恶心...."
 
 # game/BKday_events.rpy:3922
 translate chinese night_girl_perform_d024723a:
@@ -5692,7 +5692,7 @@ translate chinese night_girl_perform_d024723a:
 translate chinese night_girl_perform_fba986b8:
 
     # man "What a useless slave... Can't you take a little fucking properly? Being a cum dump for the customers is part of your job, you know."
-    man "真是个没用的奴隶……你就不能正常一点吗？你知道，为顾客提供一流服务是你工作的一部分。"
+    man "真是个没用的奴隶....你就不能正常一点吗？你知道，为顾客提供一流服务是你工作的一部分。"
 
 # game/BKday_events.rpy:3932
 translate chinese night_girl_perform_eefbff81:
@@ -5722,7 +5722,7 @@ translate chinese night_girl_perform_abb3dff4:
 translate chinese night_girl_perform_f5b6bc2f_2:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:3949
 translate chinese night_girl_perform_578ba940:
@@ -5740,7 +5740,7 @@ translate chinese night_girl_perform_c46df82f:
 translate chinese night_girl_perform_79e9cf79:
 
     # girl.char "Nggh..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:3960
 translate chinese night_girl_perform_725b0601:
@@ -5758,7 +5758,7 @@ translate chinese night_girl_perform_80861be9:
 translate chinese night_girl_perform_72ae0b3d:
 
     # girl.char "Sh...Shtop!!! Nngh..."
-    girl.char "停……停下来！！！嗯……"
+    girl.char "停....停下来！！！嗯...."
 
 # game/BKday_events.rpy:3972
 translate chinese night_girl_perform_3d5d2a56:
@@ -5788,7 +5788,7 @@ translate chinese night_girl_perform_b6dac751:
 translate chinese night_girl_perform_e63173c4:
 
     # girl.char "W... Wait... Aaaah!"
-    girl.char "等……等一下……啊！"
+    girl.char "等....等一下....啊！"
 
 # game/BKday_events.rpy:3991
 translate chinese night_girl_perform_a66343f8:
@@ -5800,7 +5800,7 @@ translate chinese night_girl_perform_a66343f8:
 translate chinese night_girl_perform_dee6d640:
 
     # woman "This is only half the fun..."
-    woman "这才只是到了是一半呢……"
+    woman "这才只是到了是一半呢...."
 
 # game/BKday_events.rpy:3995
 translate chinese night_girl_perform_061952b0:
@@ -5818,19 +5818,19 @@ translate chinese night_girl_perform_1e22ec11:
 translate chinese night_girl_perform_8ef13920:
 
     # woman "Oh, my... You were a virgin!"
-    woman "哦，我的天……你是个处女！"
+    woman "哦，我的天....你是个处女！"
 
 # game/BKday_events.rpy:4004
 translate chinese night_girl_perform_d6bf6a2c:
 
     # woman "What a treat... How does it feel to have your virginity taken by a mindless dildo?"
-    woman "真是一种享受啊……被一个愚蠢的假阳具夺走你的贞操是什么感觉？"
+    woman "真是一种享受啊....被一个愚蠢的假阳具夺走你的贞操是什么感觉？"
 
 # game/BKday_events.rpy:4006
 translate chinese night_girl_perform_ba550908:
 
     # "The crowd roars back in approval. [girl.name] blushes bright red and looks down at her violated pussy with tearful eyes..."
-    "人群怒吼着表示赞同。[girl.name]脸涨得通红，满眼泪水，低头看着她那被侵犯的小穴……"
+    "人群怒吼着表示赞同。[girl.name]脸涨得通红，满眼泪水，低头看着她那被侵犯的小穴...."
 
 # game/BKday_events.rpy:4009
 translate chinese night_girl_perform_6565ced5:
@@ -5848,7 +5848,7 @@ translate chinese night_girl_perform_0a7b6150:
 translate chinese night_girl_perform_064de98a:
 
     # girl.char "Wh... What is that?!?"
-    girl.char "那……那是什么？！？"
+    girl.char "那....那是什么？！？"
 
 # game/BKday_events.rpy:4015
 translate chinese night_girl_perform_ebbeae28:
@@ -5896,19 +5896,19 @@ translate chinese night_girl_perform_11317913:
 translate chinese night_girl_perform_8ef13920_1:
 
     # woman "Oh, my... You were a virgin!"
-    woman "哦，我的天……你是个处女！"
+    woman "哦，我的天....你是个处女！"
 
 # game/BKday_events.rpy:4036
 translate chinese night_girl_perform_f5d6ae5a:
 
     # woman "Fufufu... How does it feel to lose your virginity to another girl? I bet you were saving it for me..."
-    woman "嘿嘿嘿……被另一个女孩失去贞操是什么感觉？我打赌你是为我留着的……"
+    woman "嘿嘿嘿....被另一个女孩失去贞操是什么感觉？我打赌你是为我留着的...."
 
 # game/BKday_events.rpy:4038
 translate chinese night_girl_perform_ba550908_1:
 
     # "The crowd roars back in approval. [girl.name] blushes bright red and looks down at her violated pussy with tearful eyes..."
-    "人群怒吼着表示赞同。[girl.name]脸涨得通红，满眼泪水，低头看着她那被侵犯的小穴……"
+    "人群怒吼着表示赞同。[girl.name]脸涨得通红，满眼泪水，低头看着她那被侵犯的小穴...."
 
 # game/BKday_events.rpy:4041
 translate chinese night_girl_perform_b166c4f9:
@@ -5926,7 +5926,7 @@ translate chinese night_girl_perform_48d37aed:
 translate chinese night_girl_perform_e1308853:
 
     # girl.char "Oh... This is so shameful..."
-    girl.char "这。。这太羞耻了……"
+    girl.char "这。。这太羞耻了...."
 
 # game/BKday_events.rpy:4047
 translate chinese night_girl_perform_2995a185:
@@ -5944,7 +5944,7 @@ translate chinese night_girl_perform_6e03b3c5:
 translate chinese night_girl_perform_34f7c0a5:
 
     # woman "I'm going to give you pleasure, like only a woman can..."
-    woman "我要给你快乐，就像只有女人能……"
+    woman "我要给你快乐，就像只有女人能...."
 
 # game/BKday_events.rpy:4060
 translate chinese night_girl_perform_6aed0a9b:
@@ -5968,7 +5968,7 @@ translate chinese night_girl_perform_944619e1:
 translate chinese night_girl_perform_e9263a56:
 
     # girl.char "Oooooh..."
-    girl.char "嗡嗡……"
+    girl.char "嗡嗡...."
 
 # game/BKday_events.rpy:4070
 translate chinese night_girl_perform_2add2133:
@@ -5992,7 +5992,7 @@ translate chinese night_girl_perform_e01e3901:
 translate chinese night_girl_perform_c78e6c00:
 
     # you "What a great show..."
-    you "多么精彩的表演啊……"
+    you "多么精彩的表演啊...."
 
 # game/BKday_events.rpy:4094
 translate chinese night_girl_perform_88c3df2e:
@@ -6010,13 +6010,13 @@ translate chinese night_girl_perform_53e84dee:
 translate chinese night_girl_perform_efc93f76:
 
     # girl.char "Mmmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:4102
 translate chinese night_girl_perform_b6d8b621:
 
     # woman "Come on, sweetie... Let yourself go..."
-    woman "来吧，亲爱的……放松……"
+    woman "来吧，亲爱的....放松...."
 
 # game/BKday_events.rpy:4104
 translate chinese night_girl_perform_a0c374c7:
@@ -6034,7 +6034,7 @@ translate chinese night_girl_perform_ad4b7109:
 translate chinese night_girl_perform_034b1b02:
 
     # you "That was a nice show..."
-    you "那是个不错的表演……"
+    you "那是个不错的表演...."
 
 # game/BKday_events.rpy:4121
 translate chinese night_girl_perform_7fbb15a9:
@@ -6064,7 +6064,7 @@ translate chinese night_girl_perform_6283e69b:
 translate chinese night_girl_perform_e0c845a9:
 
     # woman "This isn't going anywhere..."
-    woman "这不会有结果的……"
+    woman "这不会有结果的...."
 
 # game/BKday_events.rpy:4131
 translate chinese night_girl_perform_427afa40:
@@ -6094,7 +6094,7 @@ translate chinese night_girl_perform_e1a84ae0:
 translate chinese night_girl_perform_27027bf9:
 
     # girl.char "Oh... It's so good..."
-    girl.char "哦……这么好……"
+    girl.char "哦....这么好...."
 
 # game/BKday_events.rpy:4150
 translate chinese night_girl_perform_0d4f85aa:
@@ -6106,7 +6106,7 @@ translate chinese night_girl_perform_0d4f85aa:
 translate chinese night_girl_perform_868d992d:
 
     # girl.char "Aaaah... What's happening... to me..."
-    girl.char "啊……发生了什么……对我来说……"
+    girl.char "啊....发生了什么....对我来说...."
 
 # game/BKday_events.rpy:4158
 translate chinese night_girl_perform_b8813e87_1:
@@ -6142,7 +6142,7 @@ translate chinese night_girl_perform_01af95e7:
 translate chinese night_girl_perform_781a9239:
 
     # you "Wow... What a great show!"
-    you "哇……多么精彩的表演啊！"
+    you "哇....多么精彩的表演啊！"
 
 # game/BKday_events.rpy:4181
 translate chinese night_girl_perform_4fb7e037:
@@ -6154,7 +6154,7 @@ translate chinese night_girl_perform_4fb7e037:
 translate chinese night_girl_perform_787d5151:
 
     # woman "Lean back and enjoy it..."
-    woman "向后靠，享受它……"
+    woman "向后靠，享受它...."
 
 # game/BKday_events.rpy:4185
 translate chinese night_girl_perform_f60d7bb6:
@@ -6166,7 +6166,7 @@ translate chinese night_girl_perform_f60d7bb6:
 translate chinese night_girl_perform_a3d34740:
 
     # girl.char "Ooh..."
-    girl.char "哦……"
+    girl.char "哦...."
 
 # game/BKday_events.rpy:4191
 translate chinese night_girl_perform_fd13c5c9:
@@ -6178,7 +6178,7 @@ translate chinese night_girl_perform_fd13c5c9:
 translate chinese night_girl_perform_cdff6354:
 
     # woman "Now, let us give our guests a good show..."
-    woman "现在，让我们给我们的客人表演个好活……"
+    woman "现在，让我们给我们的客人表演个好活...."
 
 # game/BKday_events.rpy:4195
 translate chinese night_girl_perform_bc31cf2b:
@@ -6244,7 +6244,7 @@ translate chinese night_girl_perform_b559ad76:
 translate chinese night_girl_perform_53161a91:
 
     # you "I better stop this now... This isn't going anywhere."
-    you "我最好现在就停止……这不会有结果的。"
+    you "我最好现在就停止....这不会有结果的。"
 
 # game/BKday_events.rpy:4237
 translate chinese night_girl_perform_59c773dd:
@@ -6268,7 +6268,7 @@ translate chinese night_girl_perform_a168ed27:
 translate chinese night_girl_perform_feff0953:
 
     # girl.char "M-Mister... What are you... doing..."
-    girl.char "先生……什么是你……做……"
+    girl.char "先生....什么是你....做...."
 
 # game/BKday_events.rpy:4253
 translate chinese night_girl_perform_cd2c905c:
@@ -6280,7 +6280,7 @@ translate chinese night_girl_perform_cd2c905c:
 translate chinese night_girl_perform_30f6f16b:
 
     # girl.char "Ohhh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:4260
 translate chinese night_girl_perform_e9526f3f:
@@ -6346,7 +6346,7 @@ translate chinese night_girl_perform_38f1bc7d:
 translate chinese night_girl_perform_4f5701ce:
 
     # girl.char "Oh! My ass... Wait..."
-    girl.char "哦！我的屁股……等待……"
+    girl.char "哦！我的屁股....等待...."
 
 # game/BKday_events.rpy:4294
 translate chinese night_girl_perform_edb73f07:
@@ -6400,7 +6400,7 @@ translate chinese night_girl_perform_0478dfa2:
 translate chinese night_girl_perform_bc990f3a:
 
     # girl.char "Oh... Aaah!"
-    girl.char "哦……啊！"
+    girl.char "哦....啊！"
 
 # game/BKday_events.rpy:4320
 translate chinese night_girl_perform_19073c74:
@@ -6424,7 +6424,7 @@ translate chinese night_girl_perform_bf7787be:
 translate chinese night_girl_perform_bffd3a06:
 
     # girl.char "Aah, aaaah..."
-    girl.char "啊，啊……"
+    girl.char "啊，啊...."
 
 # game/BKday_events.rpy:4336
 translate chinese night_girl_perform_db042c6a:
@@ -6436,7 +6436,7 @@ translate chinese night_girl_perform_db042c6a:
 translate chinese night_girl_perform_12761a32:
 
     # girl.char "I'm... I'm cummiiiing!!!"
-    girl.char "我……我要去了！！！"
+    girl.char "我....我要去了！！！"
 
 # game/BKday_events.rpy:4350
 translate chinese night_girl_perform_3c674b47:
@@ -6460,7 +6460,7 @@ translate chinese night_girl_perform_badaae4a:
 translate chinese night_girl_perform_d0ffb766:
 
     # man "Thank you, you are a true Brothel Master... Here is your cash, it was worth every last coin!"
-    man "谢谢你，你是一个真正的青楼主人……这是你的现金，它值你花的每一分钱！"
+    man "谢谢你，你是一个真正的青楼主人....这是你的现金，它值你花的每一分钱！"
 
 # game/BKday_events.rpy:4366
 translate chinese night_girl_perform_0b4f379d:
@@ -6472,7 +6472,7 @@ translate chinese night_girl_perform_0b4f379d:
 translate chinese night_girl_perform_42024848:
 
     # girl.char "Oh, mister... It's growing even larger... What's... going on..."
-    girl.char "哦，先生……它越来越大……是什么……发生了……"
+    girl.char "哦，先生....它越来越大....是什么....发生了...."
 
 # game/BKday_events.rpy:4372
 translate chinese night_girl_perform_e1b53fd0:
@@ -6508,7 +6508,7 @@ translate chinese night_girl_perform_60436027:
 translate chinese night_girl_perform_f70276ff:
 
     # man "You earned it, my good man... I'll be back."
-    man "这是你应得的，我的好人……我马上就回来。"
+    man "这是你应得的，我的好人....我马上就回来。"
 
 # game/BKday_events.rpy:4399
 translate chinese night_girl_perform_5e070f9e:
@@ -6568,7 +6568,7 @@ translate chinese night_girl_perform_d51bcd82:
 translate chinese night_girl_perform_d0ffb766_1:
 
     # man "Thank you, you are a true Brothel Master... Here is your cash, it was worth every last coin!"
-    man "谢谢你，你是一个真正的青楼主人……这是你的钱，真的是物超所值！"
+    man "谢谢你，你是一个真正的青楼主人....这是你的钱，真的是物超所值！"
 
 # game/BKday_events.rpy:4435
 translate chinese night_girl_perform_f69734e9:
@@ -6586,7 +6586,7 @@ translate chinese night_girl_perform_9ae91ca9:
 translate chinese night_girl_perform_d60eb177:
 
     # man "Good, good... You have earned your coin, my good man. I shall be back."
-    man "好，好……你的钱是你应得的，我的好人。我会回来的。"
+    man "好，好....你的钱是你应得的，我的好人。我会回来的。"
 
 # game/BKday_events.rpy:4446
 translate chinese night_girl_perform_ed4a1243:
@@ -6622,7 +6622,7 @@ translate chinese night_girl_perform_a61aee59:
 translate chinese night_girl_perform_3a0f0fd0:
 
     # girl.char "I'm a bad, bad bitch... Hit me! Harder!"
-    girl.char "我是个坏女人，坏女人……打我！困难！"
+    girl.char "我是个坏女人，坏女人....打我！困难！"
 
 # game/BKday_events.rpy:4468
 translate chinese night_girl_perform_4af5b60a:
@@ -6664,7 +6664,7 @@ translate chinese night_girl_perform_32798787:
 translate chinese night_girl_perform_b0ea9d1e:
 
     # girl.char "Oh... It hurts... Aaah..."
-    girl.char "哦……这很伤我的心……啊……"
+    girl.char "哦....这很伤我的心....啊...."
 
 # game/BKday_events.rpy:4492
 translate chinese night_girl_perform_d81cbe9b:
@@ -6688,7 +6688,7 @@ translate chinese night_girl_perform_103ada10:
 translate chinese night_girl_perform_b35b34f4_1:
 
     # girl.char "Ooooh..."
-    girl.char "喔喔喔……"
+    girl.char "喔喔喔...."
 
 # game/BKday_events.rpy:4506
 translate chinese night_girl_perform_631128b7:
@@ -6712,7 +6712,7 @@ translate chinese night_girl_perform_9facffec:
 translate chinese night_girl_perform_a0a49c06:
 
     # girl.char "Nooo... You're ripping me apart!"
-    girl.char "不……你要把我撕碎了！"
+    girl.char "不....你要把我撕碎了！"
 
 # game/BKday_events.rpy:4519
 translate chinese night_girl_perform_7bc2c014:
@@ -6724,7 +6724,7 @@ translate chinese night_girl_perform_7bc2c014:
 translate chinese night_girl_perform_51fa96a5:
 
     # girl.char "Let me go... It hurts..."
-    girl.char "让我走……这很伤我的心……"
+    girl.char "让我走....这很伤我的心...."
 
 # game/BKday_events.rpy:4525
 translate chinese night_girl_perform_2587647a:
@@ -6736,7 +6736,7 @@ translate chinese night_girl_perform_2587647a:
 translate chinese night_girl_perform_d654e7f2:
 
     # man "Where I come from, girls are taught to serve a man properly... What kind of training have you received? It's a disgrace!"
-    man "在我的家乡，女孩们被教导要正确地为男人服务……你接受过什么培训？这是一个耻辱！"
+    man "在我的家乡，女孩们被教导要正确地为男人服务....你接受过什么培训？这是一个耻辱！"
 
 # game/BKday_events.rpy:4529
 translate chinese night_girl_perform_e94c084f:
@@ -6760,7 +6760,7 @@ translate chinese night_girl_perform_d4157240:
 translate chinese night_girl_perform_7bb766aa:
 
     # girl.char "Wh... What do you expect from me..."
-    girl.char "你……你对我有什么要求？"
+    girl.char "你....你对我有什么要求？"
 
 # game/BKday_events.rpy:4551
 translate chinese night_girl_perform_77857391:
@@ -6796,7 +6796,7 @@ translate chinese night_girl_perform_0497bc62:
 translate chinese night_girl_perform_e1902425:
 
     # man "Hmmm..."
-    man "嗯……"
+    man "嗯...."
 
 # game/BKday_events.rpy:4568
 translate chinese night_girl_perform_8a3193a6:
@@ -6814,7 +6814,7 @@ translate chinese night_girl_perform_0e091ddf:
 translate chinese night_girl_perform_cce5bcc0:
 
     # girl.char "Uh? What, wait..."
-    girl.char "呃？什么，等等……"
+    girl.char "呃？什么，等等...."
 
 # game/BKday_events.rpy:4582
 translate chinese night_girl_perform_d1ff5a8f:
@@ -6844,7 +6844,7 @@ translate chinese night_girl_perform_6e62af3f:
 translate chinese night_girl_perform_08cc4c5a:
 
     # man "Wait a minute... Is she a virgin? Oh, man..."
-    man "等一下……她是处女吗？噢，兄弟！"
+    man "等一下....她是处女吗？噢，兄弟！"
 
 # game/BKday_events.rpy:4598
 translate chinese night_girl_perform_f266a858:
@@ -6874,7 +6874,7 @@ translate chinese night_girl_perform_8de3289a:
 translate chinese night_girl_perform_169c6e1d:
 
     # girl.char "Come on... Don't be shy... You can jerk off with my hair if you like... Men tell me it's soft like silk..."
-    girl.char "来吧……不要害羞……如果你愿意，你可以乱动我的头发……男人们告诉我它像丝绸一样柔软……"
+    girl.char "来吧....不要害羞....如果你愿意，你可以乱动我的头发....男人们告诉我它像丝绸一样柔软...."
 
 # game/BKday_events.rpy:4612
 translate chinese night_girl_perform_ed3e041e:
@@ -6916,7 +6916,7 @@ translate chinese night_girl_perform_9ad83006:
 translate chinese night_girl_perform_538cc15d:
 
     # girl.char "It's... Coming in... Aaah!!!"
-    girl.char "这是……进来了……啊！！！"
+    girl.char "这是....进来了....啊！！！"
 
 # game/BKday_events.rpy:4634
 translate chinese night_girl_perform_6005f152:
@@ -6994,7 +6994,7 @@ translate chinese night_girl_perform_aa87ea83:
 translate chinese night_girl_perform_ddd15072:
 
     # girl.char "I'm so full... Aah!"
-    girl.char "我很满……啊！"
+    girl.char "我很满....啊！"
 
 # game/BKday_events.rpy:4676
 translate chinese night_girl_perform_47001c5b:
@@ -7006,7 +7006,7 @@ translate chinese night_girl_perform_47001c5b:
 translate chinese night_girl_perform_15214d05:
 
     # girl.char "Oh! Your dicks are growing... bigger!!!"
-    girl.char "哦！你的鸡鸡在长……大！！！"
+    girl.char "哦！你的鸡鸡在长....大！！！"
 
 # game/BKday_events.rpy:4686
 translate chinese night_girl_perform_80bb34c2:
@@ -7042,7 +7042,7 @@ translate chinese night_girl_perform_9b992d21:
 translate chinese night_girl_perform_5b40b457:
 
     # girl.char "Aw! What is this... I... feel strange..."
-    girl.char "哦！这是什么……我……觉得奇怪……"
+    girl.char "哦！这是什么....我....觉得奇怪...."
 
 # game/BKday_events.rpy:4711
 translate chinese night_girl_perform_d6f463a8:
@@ -7060,7 +7060,7 @@ translate chinese night_girl_perform_16ce1f65:
 translate chinese night_girl_perform_7d7c339a:
 
     # girl.char "Rhaaa... Rhaaaa..."
-    girl.char "啊哈……啊哈……"
+    girl.char "啊哈....啊哈...."
 
 # game/BKday_events.rpy:4717
 translate chinese night_girl_perform_88c89edd:
@@ -7114,7 +7114,7 @@ translate chinese night_girl_perform_b297d559:
 translate chinese night_girl_perform_70aceddf:
 
     # girl.char "Arrrh... Ahaaa... Ngggh..."
-    girl.char "啊……啊哈……嗯……"
+    girl.char "啊....啊哈....嗯...."
 
 # game/BKday_events.rpy:4766
 translate chinese night_girl_perform_c6822549:
@@ -7132,7 +7132,7 @@ translate chinese night_girl_perform_54bb9739:
 translate chinese night_girl_perform_b863ab98:
 
     # man "*pant*, *pant*... Dude, what a mess... I'd hate to be the cleaning staff! Thank you, bro, here is your cash!"
-    man "*喘气*，*喘气*……伙计，真是一团糟……我可不想当清洁工！谢谢你，兄弟，这是你的钱！"
+    man "*喘气*，*喘气*....伙计，真是一团糟....我可不想当清洁工！谢谢你，兄弟，这是你的钱！"
 
 # game/BKday_events.rpy:4780
 translate chinese night_girl_perform_63ee8660:
@@ -7168,7 +7168,7 @@ translate chinese night_girl_perform_7e306750:
 translate chinese night_girl_perform_e12dffbd:
 
     # girl.char "Dear customers, please cover my lowly face with your thick, dirty cum..."
-    girl.char "亲爱的顾客，请用你那又厚又脏的精液……"
+    girl.char "亲爱的顾客，请用你那又厚又脏的精液...."
 
 # game/BKday_events.rpy:4803
 translate chinese night_girl_perform_05fab00d:
@@ -7180,7 +7180,7 @@ translate chinese night_girl_perform_05fab00d:
 translate chinese night_girl_perform_6800a4a0:
 
     # girl.char "Nggh, mmh... Let me feel the taste of warm cum over my tongue..."
-    girl.char "嗯，嗯……让我感受温暖的味道，在我的舌头上……"
+    girl.char "嗯，嗯....让我感受温暖的味道，在我的舌头上...."
 
 # game/BKday_events.rpy:4809
 translate chinese night_girl_perform_07bc16b4:
@@ -7192,7 +7192,7 @@ translate chinese night_girl_perform_07bc16b4:
 translate chinese night_girl_perform_13778a4b:
 
     # girl.char "Let me have it... Aaah!!!"
-    girl.char "让我拥有它……啊！！！"
+    girl.char "让我拥有它....啊！！！"
 
 # game/BKday_events.rpy:4817
 translate chinese night_girl_perform_03a2912f:
@@ -7222,7 +7222,7 @@ translate chinese night_girl_perform_8e6c6c83:
 translate chinese night_girl_perform_988c4ae8:
 
     # girl.char "Delishious cum...Yesh!!!"
-    girl.char "美味的精液……（撒娇意味）！！！"
+    girl.char "美味的精液....（撒娇意味）！！！"
 
 # game/BKday_events.rpy:4842
 translate chinese night_girl_perform_cfc0c45e:
@@ -7234,7 +7234,7 @@ translate chinese night_girl_perform_cfc0c45e:
 translate chinese night_girl_perform_49455361:
 
     # girl.char "Mmmh... I love cum..."
-    girl.char "嗯……我爱精液……"
+    girl.char "嗯....我爱精液...."
 
 # game/BKday_events.rpy:4846
 translate chinese night_girl_perform_5816b771:
@@ -7246,7 +7246,7 @@ translate chinese night_girl_perform_5816b771:
 translate chinese night_girl_perform_50eb9223:
 
     # girl.char "Please don't shoot it in my eyes..."
-    girl.char "请不要射到我的眼睛里……"
+    girl.char "请不要射到我的眼睛里...."
 
 # game/BKday_events.rpy:4854
 translate chinese night_girl_perform_5b189f86:
@@ -7282,7 +7282,7 @@ translate chinese night_girl_perform_3adbda0d:
 translate chinese night_girl_perform_6883b35d:
 
     # girl.char "Aaaah... Aaaah..."
-    girl.char "啊……啊……"
+    girl.char "啊....啊...."
 
 # game/BKday_events.rpy:4868
 translate chinese night_girl_perform_220e3f84:
@@ -7330,7 +7330,7 @@ translate chinese night_girl_perform_ebf3c58c:
 translate chinese night_girl_perform_b2ab6a32:
 
     # man "C'm'on, be nice... We'll reward you with some nice cum..."
-    man "C我们，很好……我们会奖励你一些好的和……"
+    man "C我们，很好....我们会奖励你一些好的和...."
 
 # game/BKday_events.rpy:4900
 translate chinese night_girl_perform_f1092fd6:
@@ -7360,7 +7360,7 @@ translate chinese night_girl_perform_b0b729ad:
 translate chinese night_girl_perform_6ef06824:
 
     # man "BEST. BIRTHDAY. EVER!!! Thank you so much, bro! I was supposed to save some of my birthday money, but what the hell... Here is all I have!"
-    man "请接受我最美好的祝愿，的生日。永远！！！非常感谢你，兄弟！我应该存一些生日的钱，但管他呢……这就是我所拥有的一切！"
+    man "请接受我最美好的祝愿，的生日。永远！！！非常感谢你，兄弟！我应该存一些生日的钱，但管他呢....这就是我所拥有的一切！"
 
 # game/BKday_events.rpy:4924
 translate chinese night_girl_perform_176313bf:
@@ -7426,7 +7426,7 @@ translate chinese night_girl_perform_33b42a17:
 translate chinese night_girl_perform_f2ff0e4a:
 
     # you "I want you to put on a sexy swimsuit, and play in the water... Make it interesting!"
-    you "我想让你穿上性感的泳衣，在水里玩……使它有趣！"
+    you "我想让你穿上性感的泳衣，在水里玩....使它有趣！"
 
 # game/BKday_events.rpy:4964
 translate chinese night_girl_perform_7e761bcf:
@@ -7444,7 +7444,7 @@ translate chinese night_girl_perform_19920d33:
 translate chinese night_girl_perform_6cf06196:
 
     # girl.char "Aw... Must I, really?"
-    girl.char "啊……我必须，真的吗？"
+    girl.char "啊....我必须，真的吗？"
 
 # game/BKday_events.rpy:4975
 translate chinese night_girl_perform_9ff9940e:
@@ -7582,19 +7582,19 @@ translate chinese night_girl_perform_9a03041b:
 translate chinese night_girl_perform_a20452d9:
 
     # girl.char "Of course, Master... I already have something in mind... Ah, this will be perfect!"
-    girl.char "当然，主人……我已经想好了……啊，这太完美了！"
+    girl.char "当然，主人....我已经想好了....啊，这太完美了！"
 
 # game/BKday_events.rpy:5074
 translate chinese night_girl_perform_587ccb35:
 
     # girl.char "A uniform? Mmmh..."
-    girl.char "一个制服吗？嗯……"
+    girl.char "一个制服吗？嗯...."
 
 # game/BKday_events.rpy:5077
 translate chinese night_girl_perform_dcf833a8:
 
     # girl.char "Uh? B-But..."
-    girl.char "呃？但是……"
+    girl.char "呃？但是...."
 
 # game/BKday_events.rpy:5086
 translate chinese night_girl_perform_59003e13:
@@ -7612,7 +7612,7 @@ translate chinese night_girl_perform_7e75042f:
 translate chinese night_girl_perform_228e931a:
 
     # man "Look at this... She doesn't have panties on!"
-    man "看看这个……她没有穿内裤！"
+    man "看看这个....她没有穿内裤！"
 
 # game/BKday_events.rpy:5093
 translate chinese night_girl_perform_18a12986:
@@ -7624,7 +7624,7 @@ translate chinese night_girl_perform_18a12986:
 translate chinese night_girl_perform_70541249:
 
     # girl.char "Dear customers, feel free to take a good look at my slutty body... ♥"
-    girl.char "亲爱的顾客们，请随意欣赏我淫荡的身体……♥"
+    girl.char "亲爱的顾客们，请随意欣赏我淫荡的身体....♥"
 
 # game/BKday_events.rpy:5102
 translate chinese night_girl_perform_acb28ee7:
@@ -7636,7 +7636,7 @@ translate chinese night_girl_perform_acb28ee7:
 translate chinese night_girl_perform_3f8b16ca:
 
     # girl.char "I feel so hot... Mmmh..."
-    girl.char "我觉得好热……嗯……"
+    girl.char "我觉得好热....嗯...."
 
 # game/BKday_events.rpy:5110
 translate chinese night_girl_perform_c43b57c5:
@@ -7660,7 +7660,7 @@ translate chinese night_girl_perform_239004d5:
 translate chinese night_girl_perform_48a860d2:
 
     # girl.char "Ahaa... You guys are so demanding..."
-    girl.char "啊哈……你们要求这么高……"
+    girl.char "啊哈....你们要求这么高...."
 
 # game/BKday_events.rpy:5123
 translate chinese night_girl_perform_5260a441:
@@ -7672,7 +7672,7 @@ translate chinese night_girl_perform_5260a441:
 translate chinese night_girl_perform_a1053bc7:
 
     # girl.char "What are you making me do... Mmmmh..."
-    girl.char "你要我做什么……嗯……"
+    girl.char "你要我做什么....嗯...."
 
 # game/BKday_events.rpy:5135
 translate chinese night_girl_perform_060f2a1b:
@@ -7708,7 +7708,7 @@ translate chinese night_girl_perform_aa48ac83:
 translate chinese night_girl_perform_447fc314:
 
     # girl.char "It's not... I didn't mean..."
-    girl.char "这不是……我不是故意的……"
+    girl.char "这不是....我不是故意的...."
 
 # game/BKday_events.rpy:5154
 translate chinese night_girl_perform_99b4be85:
@@ -7720,7 +7720,7 @@ translate chinese night_girl_perform_99b4be85:
 translate chinese night_girl_perform_59b1c8bd:
 
     # girl.char "N... No!!!"
-    girl.char "不……不要！！！"
+    girl.char "不....不要！！！"
 
 # game/BKday_events.rpy:5158
 translate chinese night_girl_perform_552f05d8:
@@ -7756,19 +7756,19 @@ translate chinese night_girl_perform_73746d4b:
 translate chinese night_girl_perform_90b52a04:
 
     # girl.char "Mmmh... You know what I like..."
-    girl.char "嗯……你知道我喜欢什么……"
+    girl.char "嗯....你知道我喜欢什么...."
 
 # game/BKday_events.rpy:5183
 translate chinese night_girl_perform_22bfa060:
 
     # girl.char "This? In front of everyone? Aw..."
-    girl.char "这个吗？当着大家的面？啊……"
+    girl.char "这个吗？当着大家的面？啊...."
 
 # game/BKday_events.rpy:5188
 translate chinese night_girl_perform_0f60f40a:
 
     # girl.char "What is this? Wait... You must be kidding!!!"
-    girl.char "这是什么？等待……你在开玩笑吧！"
+    girl.char "这是什么？等待....你在开玩笑吧！"
 
 # game/BKday_events.rpy:5190
 translate chinese night_girl_perform_3eff2343:
@@ -7786,7 +7786,7 @@ translate chinese night_girl_perform_d7391169:
 translate chinese night_girl_perform_67e2be8a:
 
     # girl.char "Thank you for waiting... *blush*"
-    girl.char "让您久等了……*脸红*"
+    girl.char "让您久等了....*脸红*"
 
 # game/BKday_events.rpy:5198
 translate chinese night_girl_perform_41e30001:
@@ -7804,7 +7804,7 @@ translate chinese night_girl_perform_24ef083e:
 translate chinese night_girl_perform_0d3035ef:
 
     # girl.char "Watch closely... Mmmh..."
-    girl.char "密切关注……嗯……"
+    girl.char "密切关注....嗯...."
 
 # game/BKday_events.rpy:5208
 translate chinese night_girl_perform_ec1bc4cf:
@@ -7828,7 +7828,7 @@ translate chinese night_girl_perform_98caddf7:
 translate chinese night_girl_perform_1bf1c011:
 
     # girl.char "Mmmh... Aaah..."
-    girl.char "嗯……啊……"
+    girl.char "嗯....啊...."
 
 # game/BKday_events.rpy:5220
 translate chinese night_girl_perform_4d4a2ad5:
@@ -7840,7 +7840,7 @@ translate chinese night_girl_perform_4d4a2ad5:
 translate chinese night_girl_perform_be6eae17:
 
     # girl.char "Oh... It feels so good..."
-    girl.char "哦……感觉真好……"
+    girl.char "哦....感觉真好...."
 
 # game/BKday_events.rpy:5224
 translate chinese night_girl_perform_dd3b663c:
@@ -7894,7 +7894,7 @@ translate chinese night_girl_perform_e76e8be1:
 translate chinese night_girl_perform_4a53dfec:
 
     # girl.char "Ahaa..."
-    girl.char "啊哈……"
+    girl.char "啊哈...."
 
 # game/BKday_events.rpy:5260
 translate chinese night_girl_perform_0665cc82:
@@ -7924,7 +7924,7 @@ translate chinese night_girl_perform_2a75e888:
 translate chinese night_girl_perform_273a1c98_1:
 
     # girl.char "Oooh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:5274
 translate chinese night_girl_perform_dd43bbab:
@@ -7936,7 +7936,7 @@ translate chinese night_girl_perform_dd43bbab:
 translate chinese night_girl_perform_f3b80889:
 
     # girl.char "Ah, aaah, ahaa..."
-    girl.char "啊，啊，啊哈……"
+    girl.char "啊，啊，啊哈...."
 
 # game/BKday_events.rpy:5280
 translate chinese night_girl_perform_46b9140f:
@@ -7948,7 +7948,7 @@ translate chinese night_girl_perform_46b9140f:
 translate chinese night_girl_perform_ab64bf34:
 
     # girl.char "Ooh... Aaah..."
-    girl.char "哦……啊……"
+    girl.char "哦....啊...."
 
 # game/BKday_events.rpy:5284
 translate chinese night_girl_perform_c4491f88:
@@ -7960,7 +7960,7 @@ translate chinese night_girl_perform_c4491f88:
 translate chinese night_girl_perform_9f6bb385:
 
     # girl.char "Everybody's watching... Oh... I'm such a slut... Aaaah!!!"
-    girl.char "每个人的看……哦……我真是个荡妇……啊！！！"
+    girl.char "每个人的看....哦....我真是个荡妇....啊！！！"
 
 # game/BKday_events.rpy:5291
 translate chinese night_girl_perform_422ef976:
@@ -7978,7 +7978,7 @@ translate chinese night_girl_perform_a8d9964b:
 translate chinese night_girl_perform_034b1b02_1:
 
     # you "That was a nice show..."
-    you "那是个不错的表演……"
+    you "那是个不错的表演...."
 
 # game/BKday_events.rpy:5303
 translate chinese night_girl_perform_f1da245c:
@@ -8050,7 +8050,7 @@ translate chinese night_girl_perform_9a84221d:
 translate chinese night_girl_perform_7c754a0d:
 
     # girl.char "Mmmh... It's so hot..."
-    girl.char "嗯……这个好热……"
+    girl.char "嗯....这个好热...."
 
 # game/BKday_events.rpy:5346
 translate chinese night_girl_perform_23715980:
@@ -8062,7 +8062,7 @@ translate chinese night_girl_perform_23715980:
 translate chinese night_girl_perform_cfaead13:
 
     # girl.char "Mashter... I hope you have saved a lot of cum for me..."
-    girl.char "主人……我希望你为我存了足够的精液……"
+    girl.char "主人....我希望你为我存了足够的精液...."
 
 # game/BKday_events.rpy:5352
 translate chinese night_girl_perform_d0b97851:
@@ -8086,7 +8086,7 @@ translate chinese night_girl_perform_d4b5e5d1:
 translate chinese night_girl_perform_5a5ff848:
 
     # girl.char "Hnn... Hnnn..."
-    girl.char "嗯……嗯……"
+    girl.char "嗯....嗯...."
 
 # game/BKday_events.rpy:5360
 translate chinese night_girl_perform_9e92ed55:
@@ -8110,7 +8110,7 @@ translate chinese night_girl_perform_73222fd2:
 translate chinese night_girl_perform_f5b6bc2f_3:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:5372
 translate chinese night_girl_perform_77fd5236:
@@ -8134,7 +8134,7 @@ translate chinese night_girl_perform_b21fbb95:
 translate chinese night_girl_perform_c79a8ada:
 
     # girl.char "Hnn... Ngh..."
-    girl.char "嗯……已……"
+    girl.char "嗯....已...."
 
 # game/BKday_events.rpy:5382
 translate chinese night_girl_perform_bb352a1a:
@@ -8146,7 +8146,7 @@ translate chinese night_girl_perform_bb352a1a:
 translate chinese night_girl_perform_7d6f1067:
 
     # girl.char "Nghhhh..."
-    girl.char "嗯哈……"
+    girl.char "嗯哈...."
 
 # game/BKday_events.rpy:5386
 translate chinese night_girl_perform_194d5180:
@@ -8188,7 +8188,7 @@ translate chinese night_girl_perform_b845c87e:
 translate chinese night_girl_perform_4785dc4c_2:
 
     # girl.char "Hnnn..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:5407
 translate chinese night_girl_perform_785c431b:
@@ -8254,13 +8254,13 @@ translate chinese night_girl_perform_e9951e12:
 translate chinese night_girl_perform_6b319a7f:
 
     # girl.char "Oh, Master [MC.name]... I'm so lucky you chose to nurture my skin with your precious semen..."
-    girl.char "哦，主人[MC.name]……我很幸运你用你珍贵的精液滋养了我的皮肤……"
+    girl.char "哦，主人[MC.name]....我很幸运你用你珍贵的精液滋养了我的皮肤...."
 
 # game/BKday_events.rpy:5455
 translate chinese night_girl_perform_6f9952dd:
 
     # girl.char "Aaaah..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:5457
 translate chinese night_girl_perform_46a61cc2:
@@ -8278,7 +8278,7 @@ translate chinese night_girl_perform_41a3d0f2:
 translate chinese night_girl_perform_b9e2f2a0:
 
     # girl.char "Thank you, Master..."
-    girl.char "谢谢你，主人……"
+    girl.char "谢谢你，主人...."
 
 # game/BKday_events.rpy:5473
 translate chinese night_girl_perform_5405d55b:
@@ -8398,7 +8398,7 @@ translate chinese night_girl_perform_54394d1f:
 translate chinese night_girl_perform_63fbb3c9:
 
     # girl.char "*cough*, *cough*..."
-    girl.char "咳嗽* *咳嗽*……"
+    girl.char "咳嗽* *咳嗽*...."
 
 # game/BKday_events.rpy:5558
 translate chinese night_girl_perform_ce89f0fe:
@@ -8464,7 +8464,7 @@ translate chinese night_girl_perform_6c4a32e0:
 translate chinese night_girl_perform_0218650e:
 
     # you "All right then... Let's get to it!"
-    you "那好吧……让我们开始吧！"
+    you "那好吧....让我们开始吧！"
 
 # game/BKday_events.rpy:5607
 translate chinese night_girl_perform_d056ead4:
@@ -8488,7 +8488,7 @@ translate chinese night_girl_perform_54640176:
 translate chinese night_girl_perform_b7dd0051:
 
     # girl.char "Ooh... Master, your dick feels so hot... Will this fit inside my ass?"
-    girl.char "哦……师父，你的老二好热……这个能塞进我的屁屁里吗？"
+    girl.char "哦....师父，你的老二好热....这个能塞进我的屁屁里吗？"
 
 # game/BKday_events.rpy:5622
 translate chinese night_girl_perform_4d4025d3:
@@ -8500,7 +8500,7 @@ translate chinese night_girl_perform_4d4025d3:
 translate chinese night_girl_perform_74f31688:
 
     # girl.char "Oh... I'm getting wet..."
-    girl.char "哦……我得到湿……"
+    girl.char "哦....我得到湿...."
 
 # game/BKday_events.rpy:5626
 translate chinese night_girl_perform_eec90ead:
@@ -8518,7 +8518,7 @@ translate chinese night_girl_perform_5ed6273d:
 translate chinese night_girl_perform_42ee5732:
 
     # girl.char "Oh, Master... This is so naughty..."
-    girl.char "哦，主……这太淘气了……"
+    girl.char "哦，主....这太淘气了...."
 
 # game/BKday_events.rpy:5637
 translate chinese night_girl_perform_18ed92e4:
@@ -8530,7 +8530,7 @@ translate chinese night_girl_perform_18ed92e4:
 translate chinese night_girl_perform_16c03d31:
 
     # girl.char "It's so big... Aaaah..."
-    girl.char "它是如此之大……啊……"
+    girl.char "它是如此之大....啊...."
 
 # game/BKday_events.rpy:5646
 translate chinese night_girl_perform_831ab701:
@@ -8572,7 +8572,7 @@ translate chinese night_girl_perform_c1debfcf:
 translate chinese night_girl_perform_23d0d47e:
 
     # girl.char "Aaah!!! It's so good... Fuck me, Master [MC.name]!!!"
-    girl.char "啊！！！这么好……操我妈的，主人[MC.name]！！"
+    girl.char "啊！！！这么好....操我妈的，主人[MC.name]！！"
 
 # game/BKday_events.rpy:5676
 translate chinese night_girl_perform_3ea3d019:
@@ -8584,7 +8584,7 @@ translate chinese night_girl_perform_3ea3d019:
 translate chinese night_girl_perform_a8087b4e:
 
     # girl.char "It's so hot... inside my ass... Aaaah..."
-    girl.char "天气太热……在我的屁股……啊……"
+    girl.char "天气太热....在我的屁股....啊...."
 
 # game/BKday_events.rpy:5681
 translate chinese night_girl_perform_b28966af:
@@ -8596,7 +8596,7 @@ translate chinese night_girl_perform_b28966af:
 translate chinese night_girl_perform_c8bc9e5c:
 
     # girl.char "Let me go! Please! Nooo..."
-    girl.char "让我走！拜托！不……"
+    girl.char "让我走！拜托！不...."
 
 # game/BKday_events.rpy:5685
 translate chinese night_girl_perform_ea6dd9e5:
@@ -8614,7 +8614,7 @@ translate chinese night_girl_perform_680f1a31:
 translate chinese night_girl_perform_3d08adeb:
 
     # girl.char "Oh Master! Oh, Master! It's so good!!! I'm... I'm..."
-    girl.char "哦，主人！哦，主人！真是太好！！！我……我……"
+    girl.char "哦，主人！哦，主人！真是太好！！！我....我...."
 
 # game/BKday_events.rpy:5692
 translate chinese night_girl_perform_5631beb3:
@@ -8656,7 +8656,7 @@ translate chinese night_girl_perform_19172f37:
 translate chinese night_girl_perform_e7d8b827:
 
     # girl.char "Oh, Master... You're going to rip me apart..."
-    girl.char "哦，主人……你要把我撕成碎片……"
+    girl.char "哦，主人....你要把我撕成碎片...."
 
 # game/BKday_events.rpy:5728
 translate chinese night_girl_perform_5174536f:
@@ -8728,7 +8728,7 @@ translate chinese night_girl_perform_2343cd88:
 translate chinese night_girl_perform_fa9ace54:
 
     # girl.char "Oh, Master... Your dick is so hard and hot..."
-    girl.char "哦，主人……你的鸡巴又硬又热……"
+    girl.char "哦，主人....你的鸡巴又硬又热...."
 
 # game/BKday_events.rpy:5791
 translate chinese night_girl_perform_461a9320:
@@ -8740,7 +8740,7 @@ translate chinese night_girl_perform_461a9320:
 translate chinese night_girl_perform_376954fd:
 
     # girl.char "Is it good, Master? I want you to feel good..."
-    girl.char "好吗，主人？我想让你感觉好点……"
+    girl.char "好吗，主人？我想让你感觉好点...."
 
 # game/BKday_events.rpy:5795
 translate chinese night_girl_perform_d25ef01d:
@@ -8752,13 +8752,13 @@ translate chinese night_girl_perform_d25ef01d:
 translate chinese night_girl_perform_c0db8887:
 
     # girl.char "Master... It's growing..."
-    girl.char "主人……它日益增长的……"
+    girl.char "主人....它日益增长的...."
 
 # game/BKday_events.rpy:5799
 translate chinese night_girl_perform_3cc2a27a:
 
     # you "Keep going... Don't stop..."
-    you "继续……不要停……"
+    you "继续....不要停...."
 
 # game/BKday_events.rpy:5801
 translate chinese night_girl_perform_a8f30e72:
@@ -8770,7 +8770,7 @@ translate chinese night_girl_perform_a8f30e72:
 translate chinese night_girl_perform_8bbdfd37:
 
     # girl.char "Master [MC.name]... Cum for me..."
-    girl.char "主人[MC.name]……插我……"
+    girl.char "主人[MC.name]....插我...."
 
 # game/BKday_events.rpy:5808
 translate chinese night_girl_perform_4575bd62:
@@ -8782,7 +8782,7 @@ translate chinese night_girl_perform_4575bd62:
 translate chinese night_girl_perform_135e3157:
 
     # girl.char "Master... It's throbbing..."
-    girl.char "主人……悸动的……"
+    girl.char "主人....悸动的...."
 
 # game/BKday_events.rpy:5816
 translate chinese night_girl_perform_c0dc2ae3:
@@ -8794,7 +8794,7 @@ translate chinese night_girl_perform_c0dc2ae3:
 translate chinese night_girl_perform_1810209a:
 
     # girl.char "It's very hot..."
-    girl.char "好热……"
+    girl.char "好热...."
 
 # game/BKday_events.rpy:5820
 translate chinese night_girl_perform_467700b3:
@@ -8806,7 +8806,7 @@ translate chinese night_girl_perform_467700b3:
 translate chinese night_girl_perform_f6fc05bd:
 
     # girl.char "Master... Are you close to..."
-    girl.char "主人……你离……很近吗？"
+    girl.char "主人....你离....很近吗？"
 
 # game/BKday_events.rpy:5827
 translate chinese night_girl_perform_94f5e0bb:
@@ -8842,7 +8842,7 @@ translate chinese night_girl_perform_66dbebf7:
 translate chinese night_girl_perform_4dbede6c:
 
     # you "Keep going..."
-    you "继续……"
+    you "继续...."
 
 # game/BKday_events.rpy:5839
 translate chinese night_girl_perform_aba3a276:
@@ -8902,7 +8902,7 @@ translate chinese night_girl_perform_ecaee461:
 translate chinese night_girl_perform_35270f70:
 
     # girl.char "Thank you, Master. I hope you're more relaxed..."
-    girl.char "谢谢你，主人。我希望你能放松点……"
+    girl.char "谢谢你，主人。我希望你能放松点...."
 
 # game/BKday_events.rpy:5887
 translate chinese night_girl_perform_4a12c4ea:
@@ -8914,7 +8914,7 @@ translate chinese night_girl_perform_4a12c4ea:
 translate chinese night_girl_perform_4b5ca9bc:
 
     # girl.char "Master, I'd be happy to service you with my boobs..."
-    girl.char "主人，我很乐意用我的胸部为您服务……"
+    girl.char "主人，我很乐意用我的胸部为您服务...."
 
 # game/BKday_events.rpy:5891
 translate chinese night_girl_perform_c6f08421:
@@ -8926,7 +8926,7 @@ translate chinese night_girl_perform_c6f08421:
 translate chinese night_girl_perform_dde8f2a4:
 
     # girl.char "Master... Let me make you comfortable..."
-    girl.char "主人……让我让你舒服点……"
+    girl.char "主人....让我让你舒服点...."
 
 # game/BKday_events.rpy:5897
 translate chinese night_girl_perform_465e5740:
@@ -8938,7 +8938,7 @@ translate chinese night_girl_perform_465e5740:
 translate chinese night_girl_perform_3932148b:
 
     # girl.char "It's so hot... It's burning..."
-    girl.char "天气太热……燃烧……"
+    girl.char "天气太热....燃烧...."
 
 # game/BKday_events.rpy:5903
 translate chinese night_girl_perform_c8235a19:
@@ -8950,7 +8950,7 @@ translate chinese night_girl_perform_c8235a19:
 translate chinese night_girl_perform_14f3bd4b:
 
     # girl.char "Is it good, Master? I want to make you cum..."
-    girl.char "这样好吗，主人？我不想让你射精……"
+    girl.char "这样好吗，主人？我不想让你射精...."
 
 # game/BKday_events.rpy:5907
 translate chinese night_girl_perform_e8e6ecc1:
@@ -8974,7 +8974,7 @@ translate chinese night_girl_perform_3dabef52:
 translate chinese night_girl_perform_3cfb3725:
 
     # girl.char "Master... Please... Cum all over my breasts! I beg you..."
-    girl.char "主人……请……射在我的胸上！我求求你……"
+    girl.char "主人....请....射在我的胸上！我求求你...."
 
 # game/BKday_events.rpy:5917
 translate chinese night_girl_perform_0dd4eb5a:
@@ -9004,7 +9004,7 @@ translate chinese night_girl_perform_33cac7a5:
 translate chinese night_girl_perform_553db4d7:
 
     # girl.char "Oh, Master... I'm so happy..."
-    girl.char "哦，主……我很高兴……"
+    girl.char "哦，主....我很高兴...."
 
 # game/BKday_events.rpy:5941
 translate chinese night_girl_perform_5346d56b:
@@ -9016,7 +9016,7 @@ translate chinese night_girl_perform_5346d56b:
 translate chinese night_girl_perform_d11a3b50:
 
     # girl.char "Is it... Good?"
-    girl.char "这……好吗？"
+    girl.char "这....好吗？"
 
 # game/BKday_events.rpy:5945
 translate chinese night_girl_perform_b529245c:
@@ -9028,7 +9028,7 @@ translate chinese night_girl_perform_b529245c:
 translate chinese night_girl_perform_f5b6bc2f_4:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:5953
 translate chinese night_girl_perform_876c425c:
@@ -9040,7 +9040,7 @@ translate chinese night_girl_perform_876c425c:
 translate chinese night_girl_perform_273a1c98_2:
 
     # girl.char "Oooh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:5957
 translate chinese night_girl_perform_e9272a4c:
@@ -9064,7 +9064,7 @@ translate chinese night_girl_perform_f5b8376b:
 translate chinese night_girl_perform_4f84a62b:
 
     # girl.char "Oh, Master... You made me all messy..."
-    girl.char "哦，主人……你把我弄得一团糟……"
+    girl.char "哦，主人....你把我弄得一团糟...."
 
 # game/BKday_events.rpy:5976
 translate chinese night_girl_perform_5478dd94:
@@ -9076,7 +9076,7 @@ translate chinese night_girl_perform_5478dd94:
 translate chinese night_girl_perform_0fa3adf9:
 
     # girl.char "Ew..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:5980
 translate chinese night_girl_perform_5369e109:
@@ -9136,7 +9136,7 @@ translate chinese night_girl_perform_9772a208:
 translate chinese night_girl_perform_228f7550:
 
     # girl.char "Do you like it, Mashter? Nggh..."
-    girl.char "你喜欢吗，主人？嗯……"
+    girl.char "你喜欢吗，主人？嗯...."
 
 # game/BKday_events.rpy:6016
 translate chinese night_girl_perform_f55646bc:
@@ -9148,7 +9148,7 @@ translate chinese night_girl_perform_f55646bc:
 translate chinese night_girl_perform_2c1e384e:
 
     # girl.char "Let me help you release your stress, Master... Mmmh..."
-    girl.char "让我帮你放松吧，主人……嗯……"
+    girl.char "让我帮你放松吧，主人....嗯...."
 
 # game/BKday_events.rpy:6020
 translate chinese night_girl_perform_ca851b2e:
@@ -9190,7 +9190,7 @@ translate chinese night_girl_perform_bee043d6:
 translate chinese night_girl_perform_5b8039e8:
 
     # girl.char "Come to me anytime for stress relief, Master... *giggle*"
-    girl.char "随时来找我减压，大师……*笑*"
+    girl.char "随时来找我减压，大师....*笑*"
 
 # game/BKday_events.rpy:6047
 translate chinese night_girl_perform_8bb3552b:
@@ -9202,7 +9202,7 @@ translate chinese night_girl_perform_8bb3552b:
 translate chinese night_girl_perform_0201f957:
 
     # girl.char "Ngh..."
-    girl.char "已……"
+    girl.char "已...."
 
 # game/BKday_events.rpy:6053
 translate chinese night_girl_perform_1754a8b8:
@@ -9226,7 +9226,7 @@ translate chinese night_girl_perform_23eb34e1:
 translate chinese night_girl_perform_7b888639:
 
     # girl.char "Nggh... Mmmh..."
-    girl.char "嗯……嗯……"
+    girl.char "嗯....嗯...."
 
 # game/BKday_events.rpy:6061
 translate chinese night_girl_perform_781d4b27:
@@ -9250,7 +9250,7 @@ translate chinese night_girl_perform_9f48ed1d:
 translate chinese night_girl_perform_b7527a92:
 
     # girl.char "Ohhh... Master, you made me all dirty..."
-    girl.char "噢……主人，你把我弄脏了……"
+    girl.char "噢....主人，你把我弄脏了...."
 
 # game/BKday_events.rpy:6078
 translate chinese night_girl_perform_ff88c48d:
@@ -9292,7 +9292,7 @@ translate chinese night_girl_perform_5def1e24:
 translate chinese night_girl_perform_d69f61ae:
 
     # you "What the hell, [girl.name]... This is terrible..."
-    you "我他妈，[girl.name]……这真是太差了……"
+    you "我他妈，[girl.name]....这真是太差了...."
 
 # game/BKday_events.rpy:6098
 translate chinese night_girl_perform_caf0b371:
@@ -9322,7 +9322,7 @@ translate chinese night_girl_perform_06e756ad:
 translate chinese night_girl_perform_71a7172f_1:
 
     # girl.char "Oh, Master..."
-    girl.char "喔，主人……"
+    girl.char "喔，主人...."
 
 # game/BKday_events.rpy:6121
 translate chinese night_girl_perform_e7ec0033:
@@ -9334,7 +9334,7 @@ translate chinese night_girl_perform_e7ec0033:
 translate chinese night_girl_perform_4bdfe5ae:
 
     # girl.char "Aaah! Master [MC.name] is inside me... I feel so good..."
-    girl.char "啊！主人[MC.name]就在我心里……我感觉很好……"
+    girl.char "啊！主人[MC.name]就在我心里....我感觉很好...."
 
 # game/BKday_events.rpy:6131
 translate chinese night_girl_perform_4a53dfec_1:
@@ -9358,13 +9358,13 @@ translate chinese night_girl_perform_f97a80d9:
 translate chinese night_girl_perform_f64b4dc2:
 
     # girl.char "Aah..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:6143
 translate chinese night_girl_perform_598492a1:
 
     # girl.char "W-wait..."
-    girl.char "等-等等……"
+    girl.char "等-等等...."
 
 # game/BKday_events.rpy:6145
 translate chinese night_girl_perform_e80f1ab9:
@@ -9424,7 +9424,7 @@ translate chinese night_girl_perform_97f05d3b:
 translate chinese night_girl_perform_fc734a70:
 
     # girl.char "Oh, Master... I want you to fuck me... Fuck me hard..."
-    girl.char "哦，主人……我要你操我……更加厉害的操我……"
+    girl.char "哦，主人....我要你操我....更加厉害的操我...."
 
 # game/BKday_events.rpy:6176
 translate chinese night_girl_perform_fa39c2ac:
@@ -9436,7 +9436,7 @@ translate chinese night_girl_perform_fa39c2ac:
 translate chinese night_girl_perform_d3e6f432:
 
     # girl.char "Master [MC.name]! I'm so close... Ah, ah, aah..."
-    girl.char "主人[MC.name]！我这么近……啊，啊，啊……"
+    girl.char "主人[MC.name]！我这么近....啊，啊，啊...."
 
 # game/BKday_events.rpy:6184
 translate chinese night_girl_perform_b8813e87_6:
@@ -9466,7 +9466,7 @@ translate chinese night_girl_perform_9ef2f3bb:
 translate chinese night_girl_perform_222f0312:
 
     # girl.char "Aaaah... Master is filling me up with warm, sticky cum... ♥"
-    girl.char "啊……师父在我肚子里灌满了又热又黏的东西……♥"
+    girl.char "啊....师父在我肚子里灌满了又热又黏的东西....♥"
 
 # game/BKday_events.rpy:6206
 translate chinese night_girl_perform_49eb767c:
@@ -9478,7 +9478,7 @@ translate chinese night_girl_perform_49eb767c:
 translate chinese night_girl_perform_9ac31db8:
 
     # girl.char "Master... Can we do this again?"
-    girl.char "主人……我们能再来一次吗？"
+    girl.char "主人....我们能再来一次吗？"
 
 # game/BKday_events.rpy:6215
 translate chinese night_girl_perform_e3b36d15:
@@ -9490,7 +9490,7 @@ translate chinese night_girl_perform_e3b36d15:
 translate chinese night_girl_perform_321b146a:
 
     # girl.char "Master... You're so big... It won't fit..."
-    girl.char "主人……你这么大……它不适合……"
+    girl.char "主人....你这么大....它不适合...."
 
 # game/BKday_events.rpy:6221
 translate chinese night_girl_perform_5307af84:
@@ -9502,7 +9502,7 @@ translate chinese night_girl_perform_5307af84:
 translate chinese night_girl_perform_4009c1ab:
 
     # girl.char "Oh, Master! You are going to tear my pussy apart..."
-    girl.char "哦，主人！你要把我的小穴撕成碎片……"
+    girl.char "哦，主人！你要把我的小穴撕成碎片...."
 
 # game/BKday_events.rpy:6227
 translate chinese night_girl_perform_e0e6b9cf:
@@ -9514,7 +9514,7 @@ translate chinese night_girl_perform_e0e6b9cf:
 translate chinese night_girl_perform_d503796a:
 
     # girl.char "Aaah... Aah... Aaaah..."
-    girl.char "啊……啊……啊……"
+    girl.char "啊....啊....啊...."
 
 # game/BKday_events.rpy:6231
 translate chinese night_girl_perform_da76e8a7:
@@ -9526,7 +9526,7 @@ translate chinese night_girl_perform_da76e8a7:
 translate chinese night_girl_perform_9a944680:
 
     # girl.char "Master... I feel strange... Aaaah!!!"
-    girl.char "主人……我觉得奇怪……啊！！！"
+    girl.char "主人....我觉得奇怪....啊！！！"
 
 # game/BKday_events.rpy:6238
 translate chinese night_girl_perform_e0d3e67c:
@@ -9538,7 +9538,7 @@ translate chinese night_girl_perform_e0d3e67c:
 translate chinese night_girl_perform_02b2ebd5:
 
     # girl.char "Aaaaaah..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:6244
 translate chinese night_girl_perform_42b5dd62:
@@ -9556,7 +9556,7 @@ translate chinese night_girl_perform_520d376e:
 translate chinese night_girl_perform_afa0879c:
 
     # girl.char "Master!!! I'm... I'm..."
-    girl.char "主人！！！我……我……"
+    girl.char "主人！！！我....我...."
 
 # game/BKday_events.rpy:6260
 translate chinese night_girl_perform_c8245b8c:
@@ -9580,7 +9580,7 @@ translate chinese night_girl_perform_a0977e17:
 translate chinese night_girl_perform_da22d73c:
 
     # girl.char "Oh, Master... You came inside me... It was too intense..."
-    girl.char "哦，主……你走进我的内心……太紧张了……"
+    girl.char "哦，主....你走进我的内心....太紧张了...."
 
 # game/BKday_events.rpy:6272
 translate chinese night_girl_perform_c8e03e4d:
@@ -9604,7 +9604,7 @@ translate chinese night_girl_perform_d0012dec:
 translate chinese night_girl_perform_85549a21:
 
     # girl.char "Aw... It hurts... *sob*"
-    girl.char "啊……这很伤我的心……*抽泣*"
+    girl.char "啊....这很伤我的心....*抽泣*"
 
 # game/BKday_events.rpy:6282
 translate chinese night_girl_perform_987044b7:
@@ -9622,7 +9622,7 @@ translate chinese night_girl_perform_6e161976:
 translate chinese night_girl_perform_e9695eb8:
 
     # you "This is useless... Get off me."
-    you "这是没用的……放开我。"
+    you "这是没用的....放开我。"
 
 # game/BKday_events.rpy:6288
 translate chinese night_girl_perform_0ee9ad1d:
@@ -9634,7 +9634,7 @@ translate chinese night_girl_perform_0ee9ad1d:
 translate chinese night_girl_perform_e9efdd13:
 
     # you "She has such nice, silky hair... Hmmm..."
-    you "她有一头柔滑的秀发……嗯……"
+    you "她有一头柔滑的秀发....嗯...."
 
 # game/BKday_events.rpy:6296
 translate chinese night_girl_perform_2f272e15:
@@ -9646,7 +9646,7 @@ translate chinese night_girl_perform_2f272e15:
 translate chinese night_girl_perform_25a0fa2b:
 
     # girl.char "Zzzz..."
-    girl.char "Zzzz……"
+    girl.char "Zzzz...."
 
 # game/BKday_events.rpy:6300
 translate chinese night_girl_perform_66494525:
@@ -9658,7 +9658,7 @@ translate chinese night_girl_perform_66494525:
 translate chinese night_girl_perform_9cc517b7:
 
     # girl.char "Zzz... Mmh... No... Don't do that... It tickles... *snore*"
-    girl.char "呼……嗯……不……不要……痒……*打鼾*"
+    girl.char "呼....嗯....不....不要....痒....*打鼾*"
 
 # game/BKday_events.rpy:6304
 translate chinese night_girl_perform_462bf447:
@@ -9670,7 +9670,7 @@ translate chinese night_girl_perform_462bf447:
 translate chinese night_girl_perform_14449510:
 
     # girl.char "Mmmh... Fuck me harder... Yes... *snore*"
-    girl.char "嗯……快操我……喔……*打鼾*"
+    girl.char "嗯....快操我....喔....*打鼾*"
 
 # game/BKday_events.rpy:6311
 translate chinese night_girl_perform_d96227fa:
@@ -9682,7 +9682,7 @@ translate chinese night_girl_perform_d96227fa:
 translate chinese night_girl_perform_76932acf:
 
     # girl.char "Oh... You're naughty... Teehee... *snore*"
-    girl.char "哦……你真淘气……嘻嘻……*打鼾*"
+    girl.char "哦....你真淘气....嘻嘻....*打鼾*"
 
 # game/BKday_events.rpy:6318
 translate chinese night_girl_perform_9444d933:
@@ -9694,13 +9694,13 @@ translate chinese night_girl_perform_9444d933:
 translate chinese night_girl_perform_532ab3a4:
 
     # girl.char "Milk shake, please... With extra thick cream... *snore*"
-    girl.char "奶昔，请……加上特厚奶油……*打鼾*"
+    girl.char "奶昔，请....加上特厚奶油....*打鼾*"
 
 # game/BKday_events.rpy:6325
 translate chinese night_girl_perform_730a2b6c:
 
     # "She is dreaming about foodstuff... Greedy girl."
-    "她梦见了食物……贪婪的女孩。"
+    "她梦见了食物....贪婪的女孩。"
 
 # game/BKday_events.rpy:6327
 translate chinese night_girl_perform_dd91e0f4:
@@ -9718,7 +9718,7 @@ translate chinese night_girl_perform_c5cd3ef1:
 translate chinese night_girl_perform_f559951f:
 
     # girl.char "Mmmh... What's going on..."
-    girl.char "嗯……发生了什么……"
+    girl.char "嗯....发生了什么...."
 
 # game/BKday_events.rpy:6337
 translate chinese night_girl_perform_1b638ad9_6:
@@ -9754,13 +9754,13 @@ translate chinese night_girl_perform_b606ab4b:
 translate chinese night_girl_perform_2c8dfbec:
 
     # girl.char "Wow, Master... You made me all dirty..."
-    girl.char "哇，主人……你把我弄脏了……"
+    girl.char "哇，主人....你把我弄脏了...."
 
 # game/BKday_events.rpy:6356
 translate chinese night_girl_perform_edd4d450:
 
     # girl.char "What kind of manners is that... You could have warned me you were doing that... *smile*"
-    girl.char "这是什么礼貌……你应该提前告诉我你要这么做的……*微笑*"
+    girl.char "这是什么礼貌....你应该提前告诉我你要这么做的....*微笑*"
 
 # game/BKday_events.rpy:6358
 translate chinese night_girl_perform_e329fec4:
@@ -9772,7 +9772,7 @@ translate chinese night_girl_perform_e329fec4:
 translate chinese night_girl_perform_ed06b652:
 
     # girl.char "Next time, wake me up so I can help... *wink*"
-    girl.char "下次，叫醒我，我可以帮你……*眨眼*"
+    girl.char "下次，叫醒我，我可以帮你....*眨眼*"
 
 # game/BKday_events.rpy:6366
 translate chinese night_girl_perform_ca87f8cb:
@@ -9784,7 +9784,7 @@ translate chinese night_girl_perform_ca87f8cb:
 translate chinese night_girl_perform_d889958c:
 
     # girl.char "I'm all sticky now... Aw, Master, you're terrible... *blush* Do you know how hard it is to wash this stuff out?"
-    girl.char "我现在浑身粘糊糊的……主人，你太可怕了……你知道把这些东西洗掉有多难吗？"
+    girl.char "我现在浑身粘糊糊的....主人，你太可怕了....你知道把这些东西洗掉有多难吗？"
 
 # game/BKday_events.rpy:6376
 translate chinese night_girl_perform_b48f2935:
@@ -9802,7 +9802,7 @@ translate chinese night_girl_perform_8b5539b9:
 translate chinese night_girl_perform_7bd172cd:
 
     # girl.char "Oh, this is so disgusting... I'm gonna be sick..."
-    girl.char "哦，这太恶心了……我要吐了……"
+    girl.char "哦，这太恶心了....我要吐了...."
 
 # game/BKday_events.rpy:6382
 translate chinese night_girl_perform_c1ae0f90:
@@ -9814,7 +9814,7 @@ translate chinese night_girl_perform_c1ae0f90:
 translate chinese night_girl_perform_662834aa:
 
     # you "Come on, [girl.name], you should be used to this by now... Better not fall asleep next time, don't you think? Hehe..."
-    you "来吧，[girl.name]，你现在应该习惯了……你不觉得下次最好别睡着了吗？呵呵……"
+    you "来吧，[girl.name]，你现在应该习惯了....你不觉得下次最好别睡着了吗？呵呵...."
 
 # game/BKday_events.rpy:6386
 translate chinese night_girl_perform_543a8ca1:
@@ -9832,7 +9832,7 @@ translate chinese night_girl_perform_3949b2e0:
 translate chinese night_girl_perform_533eaef2:
 
     # you "Well... [girl.name] seems to like getting wet... Maybe I can help by giving her a little shower of my own?"
-    you "嗯……[girl.name]似乎喜欢淋湿……也许我可以帮她冲个澡？"
+    you "嗯....[girl.name]似乎喜欢淋湿....也许我可以帮她冲个澡？"
 
 # game/BKday_events.rpy:6400
 translate chinese night_girl_perform_8adf2f53:
@@ -9886,7 +9886,7 @@ translate chinese night_girl_perform_98769bc2:
 translate chinese night_girl_perform_ddee8a0f:
 
     # girl.char "*gulp* Mmmh, Master... What was that for?"
-    girl.char "*吞咽*嗯，主人……那是干什么用的？"
+    girl.char "*吞咽*嗯，主人....那是干什么用的？"
 
 # game/BKday_events.rpy:6428
 translate chinese night_girl_perform_eb43a76e:
@@ -9898,7 +9898,7 @@ translate chinese night_girl_perform_eb43a76e:
 translate chinese night_girl_perform_f1cca45d_1:
 
     # girl.char "No..."
-    girl.char "不……"
+    girl.char "不...."
 
 # game/BKday_events.rpy:6438
 translate chinese night_girl_perform_08a7fb87:
@@ -9928,7 +9928,7 @@ translate chinese night_girl_perform_538f9aae:
 translate chinese night_girl_perform_d28bcd72:
 
     # girl.char "Aw... Master..."
-    girl.char "啊……主人……"
+    girl.char "啊....主人...."
 
 # game/BKday_events.rpy:6448
 translate chinese night_girl_perform_531d5660:
@@ -9970,7 +9970,7 @@ translate chinese night_girl_perform_0c484411:
 translate chinese night_girl_perform_3033dad5:
 
     # you "Come on, it's not shit... Hmmm. Maybe you would have liked that better."
-    you "拜托，这不是狗屎……嗯。也许你会更喜欢那样。"
+    you "拜托，这不是狗屎....嗯。也许你会更喜欢那样。"
 
 # game/BKday_events.rpy:6468
 translate chinese night_girl_perform_51ceb2c5:
@@ -9994,7 +9994,7 @@ translate chinese night_girl_perform_6d653707:
 translate chinese night_girl_perform_ccc540a9:
 
     # you "Welcome, gentlemen, would you follow me? One of my girls needs your help with something..."
-    you "欢迎，先生们，请跟我来好吗？我的一个女孩需要你帮忙……"
+    you "欢迎，先生们，请跟我来好吗？我的一个女孩需要你帮忙...."
 
 # game/BKday_events.rpy:6487
 translate chinese night_girl_perform_da2eeeb7:
@@ -10006,7 +10006,7 @@ translate chinese night_girl_perform_da2eeeb7:
 translate chinese night_girl_perform_e4673934:
 
     # girl.char "ZZZZ... *snore*"
-    girl.char "睡眠……*打鼾*"
+    girl.char "睡眠....*打鼾*"
 
 # game/BKday_events.rpy:6491
 translate chinese night_girl_perform_f269453d:
@@ -10048,7 +10048,7 @@ translate chinese night_girl_perform_4607fe82:
 translate chinese night_girl_perform_aed422e6:
 
     # girl.char "Wh... What? What's going on?"
-    girl.char "什……什么？这是怎么回事"
+    girl.char "什....什么？这是怎么回事"
 
 # game/BKday_events.rpy:6511
 translate chinese night_girl_perform_73bf4455:
@@ -10060,7 +10060,7 @@ translate chinese night_girl_perform_73bf4455:
 translate chinese night_girl_perform_68970d8b:
 
     # you "It's time for your deluxe shower, [girl.name]... I hope you'll enjoy it!"
-    you "是时候为你的豪华淋浴，[girl.name]……我希望你会喜欢它！"
+    you "是时候为你的豪华淋浴，[girl.name]....我希望你会喜欢它！"
 
 # game/BKday_events.rpy:6517
 translate chinese night_girl_perform_bad8226d:
@@ -10102,7 +10102,7 @@ translate chinese night_girl_perform_5a2bb612:
 translate chinese night_girl_perform_60368fc6:
 
     # girl.char "Oh... So much cum! Aaah!"
-    girl.char "哦……暨！啊！"
+    girl.char "哦....暨！啊！"
 
 # game/BKday_events.rpy:6540
 translate chinese night_girl_perform_b419462c:
@@ -10132,7 +10132,7 @@ translate chinese night_girl_perform_ce98c506:
 translate chinese night_girl_perform_f5b6bc2f_5:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:6554
 translate chinese night_girl_perform_95be88a7:
@@ -10186,7 +10186,7 @@ translate chinese night_girl_perform_972d6d7c:
 translate chinese night_girl_perform_ed2bfb12:
 
     # girl.char "Master [MC.name]... Ish that you?"
-    girl.char "主人[MC.name]……是你吗？"
+    girl.char "主人[MC.name]....是你吗？"
 
 # game/BKday_events.rpy:6581
 translate chinese night_girl_perform_a2aca047:
@@ -10216,7 +10216,7 @@ translate chinese night_girl_perform_024e15a8:
 translate chinese night_girl_perform_b6e18f9b:
 
     # girl.char "Mmmh, Mashter... It'sh delishioush..."
-    girl.char "嗯，主人……它好美味……"
+    girl.char "嗯，主人....它好美味...."
 
 # game/BKday_events.rpy:6594
 translate chinese night_girl_perform_9f048ef0:
@@ -10228,7 +10228,7 @@ translate chinese night_girl_perform_9f048ef0:
 translate chinese night_girl_perform_66023346:
 
     # girl.char "Thank you all, from the bottom of my heart... I am happy to be your cum toilet... *blush*"
-    girl.char "谢谢大家，从心底里……我很高兴成为你的兼厕所……*脸红*"
+    girl.char "谢谢大家，从心底里....我很高兴成为你的兼厕所....*脸红*"
 
 # game/BKday_events.rpy:6602
 translate chinese night_girl_perform_69ff93f0:
@@ -10240,7 +10240,7 @@ translate chinese night_girl_perform_69ff93f0:
 translate chinese night_girl_perform_7e4705de:
 
     # girl.char "There's so much... It's so hot... Aw..."
-    girl.char "有这么多……天气太热……啊……"
+    girl.char "有这么多....天气太热....啊...."
 
 # game/BKday_events.rpy:6606
 translate chinese night_girl_perform_1e00b6b5:
@@ -10270,7 +10270,7 @@ translate chinese night_girl_perform_5b0e8d73:
 translate chinese night_girl_perform_fcc8d8bc:
 
     # you "Here, let me adjust this..."
-    you "来，我来调整一下……"
+    you "来，我来调整一下...."
 
 # game/BKday_events.rpy:6628
 translate chinese night_girl_perform_95ed1489:
@@ -10300,13 +10300,13 @@ translate chinese night_girl_perform_46350511:
 translate chinese night_girl_perform_e0158251:
 
     # girl.char "No... Please make it tighter..."
-    girl.char "不……请再紧一点……"
+    girl.char "不....请再紧一点...."
 
 # game/BKday_events.rpy:6647
 translate chinese night_girl_perform_f57f7c1a:
 
     # you "All right..."
-    you "好吧……"
+    you "好吧...."
 
 # game/BKday_events.rpy:6649
 translate chinese night_girl_perform_f0ec5526:
@@ -10318,7 +10318,7 @@ translate chinese night_girl_perform_f0ec5526:
 translate chinese night_girl_perform_450b7627:
 
     # girl.char "Oh... Oh... *pant*... It's so good..."
-    girl.char "哦……哦……*喘气*……这么好……"
+    girl.char "哦....哦....*喘气*....这么好...."
 
 # game/BKday_events.rpy:6655
 translate chinese night_girl_perform_77a34573:
@@ -10342,7 +10342,7 @@ translate chinese night_girl_perform_02d7fb6a:
 translate chinese night_girl_perform_746ebd92:
 
     # girl.char "Aah... *pant*... Aaah..."
-    girl.char "啊……*喘气*……啊……"
+    girl.char "啊....*喘气*....啊...."
 
 # game/BKday_events.rpy:6670
 translate chinese night_girl_perform_61d5aa51:
@@ -10372,7 +10372,7 @@ translate chinese night_girl_perform_ca27f48a:
 translate chinese night_girl_perform_ea9ea909:
 
     # girl.char "No, aaah..."
-    girl.char "不，啊……"
+    girl.char "不，啊...."
 
 # game/BKday_events.rpy:6689
 translate chinese night_girl_perform_9bcf0b26:
@@ -10384,13 +10384,13 @@ translate chinese night_girl_perform_9bcf0b26:
 translate chinese night_girl_perform_04be9808:
 
     # you "It seems to me you are enjoying this... The customers will be happy..."
-    you "在我看来你很享受……顾客会很高兴……"
+    you "在我看来你很享受....顾客会很高兴...."
 
 # game/BKday_events.rpy:6693
 translate chinese night_girl_perform_f03aff31:
 
     # girl.char "Oh, don't say that... Aaaah!!!"
-    girl.char "哦，别那么说……啊！！！"
+    girl.char "哦，别那么说....啊！！！"
 
 # game/BKday_events.rpy:6695
 translate chinese night_girl_perform_052f9f3a:
@@ -10408,7 +10408,7 @@ translate chinese night_girl_perform_397beb45:
 translate chinese night_girl_perform_ec92fb3f:
 
     # girl.char "*pants*... No, please, Master, this is too tight... I'm going to suffocate..."
-    girl.char "*喘气*……不，求你了，主人，这太紧了……我要窒息了……"
+    girl.char "*喘气*....不，求你了，主人，这太紧了....我要窒息了...."
 
 # game/BKday_events.rpy:6706
 translate chinese night_girl_perform_c8c21c68:
@@ -10420,7 +10420,7 @@ translate chinese night_girl_perform_c8c21c68:
 translate chinese night_girl_perform_f158ee77:
 
     # you "Damn, you're such a crybaby... All right, you'll just go work naked, then."
-    you "该死，你真是个爱哭鬼……好吧，那你就光着身子去上班吧。"
+    you "该死，你真是个爱哭鬼....好吧，那你就光着身子去上班吧。"
 
 # game/BKday_events.rpy:6710
 translate chinese night_girl_perform_f7813ba0:
@@ -10462,7 +10462,7 @@ translate chinese night_girl_perform_0c97a018:
 translate chinese night_girl_perform_f380c148:
 
     # girl.char "Nggh... 'as'er..."
-    girl.char "嗯……“怎样……"
+    girl.char "嗯....“怎样...."
 
 # game/BKday_events.rpy:6740
 translate chinese night_girl_perform_94f3b253:
@@ -10492,7 +10492,7 @@ translate chinese night_girl_perform_e45d955d:
 translate chinese night_girl_perform_6dc31a6f:
 
     # you "Hmmm... Not bad. You look like a decent, quiet slave now."
-    you "嗯……不坏。你现在看起来像个体面、安静的奴隶。"
+    you "嗯....不坏。你现在看起来像个体面、安静的奴隶。"
 
 # game/BKday_events.rpy:6755
 translate chinese night_girl_perform_9a245357:
@@ -10552,7 +10552,7 @@ translate chinese night_girl_perform_025eaad5:
 translate chinese night_girl_perform_4ea24787:
 
     # girl.char "Uhn..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKday_events.rpy:6793
 translate chinese night_girl_perform_73849509:
@@ -10564,13 +10564,13 @@ translate chinese night_girl_perform_73849509:
 translate chinese night_girl_perform_60658ff4:
 
     # girl.char "Is that... Is that it?"
-    girl.char "是……是它吗？"
+    girl.char "是....是它吗？"
 
 # game/BKday_events.rpy:6797
 translate chinese night_girl_perform_089314ba:
 
     # you "Well... Yeah?"
-    you "嗯……是吗？"
+    you "嗯....是吗？"
 
 # game/BKday_events.rpy:6799
 translate chinese night_girl_perform_36b3d761:
@@ -10582,7 +10582,7 @@ translate chinese night_girl_perform_36b3d761:
 translate chinese night_girl_perform_fa380e32:
 
     # girl.char "I... I don't think it's my usual size... It seems tiny."
-    girl.char "我……我想这不是我通常穿的尺寸……看起来很小。"
+    girl.char "我....我想这不是我通常穿的尺寸....看起来很小。"
 
 # game/BKday_events.rpy:6803
 translate chinese night_girl_perform_99051f56:
@@ -10594,7 +10594,7 @@ translate chinese night_girl_perform_99051f56:
 translate chinese night_girl_perform_0ab50025:
 
     # you "All right, let me see if I have something else..."
-    you "好吧，让我看看还有没有别的……"
+    you "好吧，让我看看还有没有别的...."
 
 # game/BKday_events.rpy:6807
 translate chinese night_girl_perform_b77e078a:
@@ -10630,7 +10630,7 @@ translate chinese night_girl_perform_468f8d81:
 translate chinese night_girl_perform_efad4d54:
 
     # girl.char "AAAAH!!! It's so good... I feel complete, now..."
-    girl.char "啊！！！这么好……我觉得很完整，现在……"
+    girl.char "啊！！！这么好....我觉得很完整，现在...."
 
 # game/BKday_events.rpy:6821
 translate chinese night_girl_perform_224020d7:
@@ -10654,7 +10654,7 @@ translate chinese night_girl_perform_d83ae537:
 translate chinese night_girl_perform_66aeb876:
 
     # girl.char "Oh... It feels weird..."
-    girl.char "哦……感觉怪怪的……"
+    girl.char "哦....感觉怪怪的...."
 
 # game/BKday_events.rpy:6836
 translate chinese night_girl_perform_c9e91b34:
@@ -10672,7 +10672,7 @@ translate chinese night_girl_perform_9373d117:
 translate chinese night_girl_perform_db771797:
 
     # girl.char "Welcome, mister... You'll never guess what I'm wearing underneath... *giggle*"
-    girl.char "欢迎你，先生……你永远猜不到我下面穿的是什么……*笑*"
+    girl.char "欢迎你，先生....你永远猜不到我下面穿的是什么....*笑*"
 
 # game/BKday_events.rpy:6849
 translate chinese night_girl_perform_1825dcf4:
@@ -10720,7 +10720,7 @@ translate chinese night_girl_perform_f6ed2adf:
 translate chinese night_girl_perform_d0b52f3d:
 
     # girl.char "Now, dear guests, please watch as I enact the mysterious disappearance of the Seven Pearls..."
-    girl.char "现在，亲爱的客人们，请看着我表演七颗珍珠的神秘失踪……"
+    girl.char "现在，亲爱的客人们，请看着我表演七颗珍珠的神秘失踪...."
 
 # game/BKday_events.rpy:6880
 translate chinese night_girl_perform_fac91af8:
@@ -10744,7 +10744,7 @@ translate chinese night_girl_perform_8f9cf64c:
 translate chinese night_girl_perform_a49fd624:
 
     # girl.char "Oooh... Aaaah... AAAH!!!"
-    girl.char "噢……啊……啊！！！"
+    girl.char "噢....啊....啊！！！"
 
 # game/BKday_events.rpy:6892
 translate chinese night_girl_perform_4abb4cdd:
@@ -10756,13 +10756,13 @@ translate chinese night_girl_perform_4abb4cdd:
 translate chinese night_girl_perform_2f03792d:
 
     # you "But it wasn't over... Finally, the glorious hero showed up, and recovered all seven pearls from the pit."
-    you "但这并没有结束……最后，光荣的英雄出现了，并找回了所有七颗珍珠的坑。"
+    you "但这并没有结束....最后，光荣的英雄出现了，并找回了所有七颗珍珠的坑。"
 
 # game/BKday_events.rpy:6896
 translate chinese night_girl_perform_2e12a63f:
 
     # girl.char "Aaah... I can't hold it much longer... Dear guest, will you be my hero?"
-    girl.char "啊……我撑不了多久了……亲爱的客人，你愿意做我的英雄吗？"
+    girl.char "啊....我撑不了多久了....亲爱的客人，你愿意做我的英雄吗？"
 
 # game/BKday_events.rpy:6898
 translate chinese night_girl_perform_77ea5dbd:
@@ -10774,7 +10774,7 @@ translate chinese night_girl_perform_77ea5dbd:
 translate chinese night_girl_perform_1475c142:
 
     # girl.char "Please, hurry, take it out... Do it all at once..."
-    girl.char "拜托，快点，把它拿出来……一次做完……"
+    girl.char "拜托，快点，把它拿出来....一次做完...."
 
 # game/BKday_events.rpy:6902
 translate chinese night_girl_perform_8578e4bd:
@@ -10786,7 +10786,7 @@ translate chinese night_girl_perform_8578e4bd:
 translate chinese night_girl_perform_40e42273:
 
     # you "One, two..."
-    you "一个，两个……"
+    you "一个，两个...."
 
 # game/BKday_events.rpy:6908
 translate chinese night_girl_perform_1804e8ae:
@@ -10834,7 +10834,7 @@ translate chinese night_girl_perform_c42a4ffd:
 translate chinese night_girl_perform_a3cdf569:
 
     # you "When the maiden found the first golden pearl, she knew she had to hide it from the demon army, for she knew that the one who gathered all seven pearls would summon a wish-granting dragon..."
-    you "当少女发现第一颗金珠时，她知道她必须把它藏起来，不让恶魔的军队发现，因为她知道，谁收集了所有的七颗珍珠，谁就会召唤出一条龙……"
+    you "当少女发现第一颗金珠时，她知道她必须把它藏起来，不让恶魔的军队发现，因为她知道，谁收集了所有的七颗珍珠，谁就会召唤出一条龙...."
 
 # game/BKday_events.rpy:6936
 translate chinese night_girl_perform_6f9952dd_1:
@@ -10852,13 +10852,13 @@ translate chinese night_girl_perform_98442a60:
 translate chinese night_girl_perform_d96aaf00:
 
     # you "Then she found the second magic pearl, and she needed to put it somewhere safe..."
-    you "然后她找到了第二颗魔法珍珠，她需要把它放在安全的地方……"
+    you "然后她找到了第二颗魔法珍珠，她需要把它放在安全的地方...."
 
 # game/BKday_events.rpy:6944
 translate chinese night_girl_perform_f5b6bc2f_6:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:6946
 translate chinese night_girl_perform_b0bccb1e:
@@ -10870,7 +10870,7 @@ translate chinese night_girl_perform_b0bccb1e:
 translate chinese night_girl_perform_07cd04ce:
 
     # you "When she found the third pearl, she thought, what the heck, she might as well put it with the others..."
-    you "当她找到第三颗珍珠时，她想，管它呢，还是把它和其他珍珠放在一起吧……"
+    you "当她找到第三颗珍珠时，她想，管它呢，还是把它和其他珍珠放在一起吧...."
 
 # game/BKday_events.rpy:6952
 translate chinese night_girl_perform_a0161858_3:
@@ -10882,13 +10882,13 @@ translate chinese night_girl_perform_a0161858_3:
 translate chinese night_girl_perform_f398d203:
 
     # "[girl.name] slides another pearl inside, then another. As she reaches the sixth pearl, however, she doesn't manage to push it in..."
-    "[girl.name]再往里面塞一颗珍珠，然后又一颗。然而，当她到达第六颗珍珠时，却没能把它塞进去……"
+    "[girl.name]再往里面塞一颗珍珠，然后又一颗。然而，当她到达第六颗珍珠时，却没能把它塞进去...."
 
 # game/BKday_events.rpy:6958
 translate chinese night_girl_perform_4da3fe47:
 
     # girl.char "Aaaarh, Master, I can't do it anymore... I'm so full..."
-    girl.char "啊，大师，我不能再这样了……我很满……"
+    girl.char "啊，大师，我不能再这样了....我很满...."
 
 # game/BKday_events.rpy:6960
 translate chinese night_girl_perform_65192a40:
@@ -10900,7 +10900,7 @@ translate chinese night_girl_perform_65192a40:
 translate chinese night_girl_perform_e3f1145e:
 
     # you "Well, look at the time... That will be all for today, folks, we must move on to the next show..."
-    you "嗯，看看时间……今天就到这里，伙计们，我们必须进入下一个节目了。"
+    you "嗯，看看时间....今天就到这里，伙计们，我们必须进入下一个节目了。"
 
 # game/BKday_events.rpy:6964
 translate chinese night_girl_perform_ce4b152f:
@@ -10918,13 +10918,13 @@ translate chinese night_girl_perform_d0ce0b34:
 translate chinese night_girl_perform_c5bb868d:
 
     # you "There was once a very attractive maiden, but she had a secret..."
-    you "从前有一位非常迷人的姑娘，但她有一个秘密……"
+    you "从前有一位非常迷人的姑娘，但她有一个秘密...."
 
 # game/BKday_events.rpy:6974
 translate chinese night_girl_perform_46ef43a2:
 
     # you "...and eventually, she decided to hide the first pearl. And here's how she did it..."
-    you "……最后，她决定把第一颗珍珠藏起来。她是这样做的……"
+    you "....最后，她决定把第一颗珍珠藏起来。她是这样做的...."
 
 # game/BKday_events.rpy:6976
 translate chinese night_girl_perform_d56d98cb:
@@ -10972,7 +10972,7 @@ translate chinese night_girl_perform_04a7b152:
 translate chinese night_girl_perform_212c2d8f:
 
     # girl.char "Oh! No. No, no, no..."
-    girl.char "哦！不。不，不，不……"
+    girl.char "哦！不。不，不，不...."
 
 # game/BKday_events.rpy:6994
 translate chinese night_girl_perform_263d570d:
@@ -10996,7 +10996,7 @@ translate chinese night_girl_perform_1d55d6fc:
 translate chinese night_girl_perform_421e329c:
 
     # you "Wait! Come back! It's just a small technical problem, it's going to be fixed soon, don't worry, haha..."
-    you "等等！回来！只是个小技术问题，很快就会解决的，别担心，哈哈……"
+    you "等等！回来！只是个小技术问题，很快就会解决的，别担心，哈哈...."
 
 # game/BKday_events.rpy:7005
 translate chinese night_girl_perform_95b2bbd9:
@@ -11032,7 +11032,7 @@ translate chinese night_girl_perform_c2256faf:
 translate chinese night_girl_perform_f5b6bc2f_7:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:7041
 translate chinese night_girl_perform_19ed0111:
@@ -11092,7 +11092,7 @@ translate chinese night_girl_perform_7aa3abd1:
 translate chinese night_girl_perform_1f1aa64d:
 
     # girl.char "Your hand is inside me! You're going to... Break me... Aaaaah!!!"
-    girl.char "你的手在我里面！我……我要裂开了……啊！！！"
+    girl.char "你的手在我里面！我....我要裂开了....啊！！！"
 
 # game/BKday_events.rpy:7072
 translate chinese night_girl_perform_c90e749e:
@@ -11128,7 +11128,7 @@ translate chinese night_girl_perform_3b698bda:
 translate chinese night_girl_perform_eb6140d6:
 
     # girl.char "No! That's impossible... You're going to put your whole forearm in!!!"
-    girl.char "不！这是不可能的……你要把你的整个前臂都伸进去！！"
+    girl.char "不！这是不可能的....你要把你的整个前臂都伸进去！！"
 
 # game/BKday_events.rpy:7094
 translate chinese night_girl_perform_f1d7cb16:
@@ -11176,7 +11176,7 @@ translate chinese night_girl_perform_6f9952dd_2:
 translate chinese night_girl_perform_2ca283e2:
 
     # you "It's time, now, [girl.name]..."
-    you "是时候了，现在，[girl.name]……"
+    you "是时候了，现在，[girl.name]...."
 
 # game/BKday_events.rpy:7120
 translate chinese night_girl_perform_a2b2326b:
@@ -11200,7 +11200,7 @@ translate chinese night_girl_perform_f440f125:
 translate chinese night_girl_perform_79a603c3:
 
     # girl.char "AAAAH, AAAAAAAH, AAAAAAH..."
-    girl.char "啊哈，啊……"
+    girl.char "啊哈，啊...."
 
 # game/BKday_events.rpy:7134
 translate chinese night_girl_perform_9b72e67f:
@@ -11212,7 +11212,7 @@ translate chinese night_girl_perform_9b72e67f:
 translate chinese night_girl_perform_d378376f:
 
     # girl.char "Ooooh... You're ripping my [type] apart..."
-    girl.char "唔……你要把我的[type]撕裂了……"
+    girl.char "唔....你要把我的[type]撕裂了...."
 
 # game/BKday_events.rpy:7140
 translate chinese night_girl_perform_96f9e702:
@@ -11224,7 +11224,7 @@ translate chinese night_girl_perform_96f9e702:
 translate chinese night_girl_perform_bf9717d5:
 
     # girl.char "I... Aaah... am... Aaaah... a most fierce spirit... Aaaah!!!"
-    girl.char "我……啊……我……啊……最凶猛的灵魂……啊！！！"
+    girl.char "我....啊....我....啊....最凶猛的灵魂....啊！！！"
 
 # game/BKday_events.rpy:7154
 translate chinese night_girl_perform_c741bf37:
@@ -11242,7 +11242,7 @@ translate chinese night_girl_perform_e4c08ab4:
 translate chinese night_girl_perform_52b1c483:
 
     # you "Come on, don't be a wimp... If this is too much for you, how will you react when I slide my whole fist inside you?"
-    you "得了，别那么懦弱……如果这对你来说太过分了，当我把整个拳头塞进你的身体时，你会有什么反应？"
+    you "得了，别那么懦弱....如果这对你来说太过分了，当我把整个拳头塞进你的身体时，你会有什么反应？"
 
 # game/BKday_events.rpy:7164
 translate chinese night_girl_perform_86fcd1f0:
@@ -11272,7 +11272,7 @@ translate chinese night_girl_perform_20f1cced:
 translate chinese night_girl_perform_8d05891b:
 
     # you "Please, stay! There are other shows... Please, come back..."
-    you "请保持！还有其他节目……请回来……"
+    you "请保持！还有其他节目....请回来...."
 
 # game/BKday_events.rpy:7186
 translate chinese night_girl_perform_b718c8c9:
@@ -11284,7 +11284,7 @@ translate chinese night_girl_perform_b718c8c9:
 translate chinese night_girl_perform_fd58cfb5:
 
     # girl.char "My breasts! They're... growing..."
-    girl.char "我的乳房！他们……越来越多的……"
+    girl.char "我的乳房！他们....越来越多的...."
 
 # game/BKday_events.rpy:7197
 translate chinese night_girl_perform_9c8e0d0a:
@@ -11296,7 +11296,7 @@ translate chinese night_girl_perform_9c8e0d0a:
 translate chinese night_girl_perform_10b171bf:
 
     # girl.char "Aaaah... I feel weird..."
-    girl.char "啊……我觉得奇怪……"
+    girl.char "啊....我觉得奇怪...."
 
 # game/BKday_events.rpy:7201
 translate chinese night_girl_perform_cb1f3918:
@@ -11308,13 +11308,13 @@ translate chinese night_girl_perform_cb1f3918:
 translate chinese night_girl_perform_b29e49bd:
 
     # you "Ladies and Gentlemen of the City, many of you have forgotten the simple pleasures of the farmer, living off the land and tending to his animals..."
-    you "城市里的女士们先生们，你们中的许多人已经忘记了农民的简单乐趣，他们靠土地为生，照料着他的牲畜……"
+    you "城市里的女士们先生们，你们中的许多人已经忘记了农民的简单乐趣，他们靠土地为生，照料着他的牲畜...."
 
 # game/BKday_events.rpy:7205
 translate chinese night_girl_perform_b5fe009e:
 
     # you "Let me tell you the story of a nice, healthy cow, a girl called Molly, and her deep and sweet relationship with her owner..."
-    you "让我来告诉你一头健康可爱的奶牛的故事，一个叫莫莉的女孩，她和她的主人有着深厚而甜蜜的关系……"
+    you "让我来告诉你一头健康可爱的奶牛的故事，一个叫莫莉的女孩，她和她的主人有着深厚而甜蜜的关系...."
 
 # game/BKday_events.rpy:7207
 translate chinese night_girl_perform_d6f3c71d:
@@ -11326,7 +11326,7 @@ translate chinese night_girl_perform_d6f3c71d:
 translate chinese night_girl_perform_f100ddf3:
 
     # you "Molly lived a simple life, living in harmony with nature and following her daily routine..."
-    you "莫莉过着简单的生活，与自然和谐相处，遵循着她的日常生活……"
+    you "莫莉过着简单的生活，与自然和谐相处，遵循着她的日常生活...."
 
 # game/BKday_events.rpy:7211
 translate chinese night_girl_perform_c721ba40:
@@ -11344,13 +11344,13 @@ translate chinese night_girl_perform_774839cb:
 translate chinese night_girl_perform_37d7b250:
 
     # "Taking out an empty milk keg from your bag, you show it to Molly... Er, I mean, [girl.name]."
-    "从包里拿出一个空牛奶桶，给莫莉看……呃，我是说，[girl.name]。"
+    "从包里拿出一个空牛奶桶，给莫莉看....呃，我是说，[girl.name]。"
 
 # game/BKday_events.rpy:7220
 translate chinese night_girl_perform_f5b6bc2f_8:
 
     # girl.char "Mmmh..."
-    girl.char "呜……"
+    girl.char "呜...."
 
 # game/BKday_events.rpy:7222
 translate chinese night_girl_perform_92cdda22:
@@ -11362,7 +11362,7 @@ translate chinese night_girl_perform_92cdda22:
 translate chinese night_girl_perform_f7d56c91:
 
     # you "Come here girl... It's time for your milking..."
-    you "来这里的女孩……该给你挤奶了……"
+    you "来这里的女孩....该给你挤奶了...."
 
 # game/BKday_events.rpy:7232
 translate chinese night_girl_perform_9f289f54:
@@ -11380,7 +11380,7 @@ translate chinese night_girl_perform_b67fac83:
 translate chinese night_girl_perform_e2e31e7b:
 
     # you "Wow... Molly loves milking so much, she came even before I started... Ain't that right, girl?"
-    you "哇……莫莉非常喜欢挤奶，她甚至在我开始挤奶之前就来了……对不对，姑娘？"
+    you "哇....莫莉非常喜欢挤奶，她甚至在我开始挤奶之前就来了....对不对，姑娘？"
 
 # game/BKday_events.rpy:7245
 translate chinese night_girl_perform_dfbee017:
@@ -11392,7 +11392,7 @@ translate chinese night_girl_perform_dfbee017:
 translate chinese night_girl_perform_273a1c98_3:
 
     # girl.char "Oooh..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKday_events.rpy:7249
 translate chinese night_girl_perform_a5c77cd8:
@@ -11410,7 +11410,7 @@ translate chinese night_girl_perform_1b638ad9_8:
 translate chinese night_girl_perform_f0cfb478:
 
     # girl.char "Again... I'm cumming! Agaiiiiin..."
-    girl.char "又来了……我要去了！去了……"
+    girl.char "又来了....我要去了！去了...."
 
 # game/BKday_events.rpy:7261
 translate chinese night_girl_perform_f857cc27:
@@ -11434,7 +11434,7 @@ translate chinese night_girl_perform_c26fffe1:
 translate chinese night_girl_perform_b30b843e:
 
     # "Customer" "As she ventured into the moutain, still dazed from a particularly intense milking session, she ran into a big, bad wolf..."
-    "客户" "当她冒险走进山里时，由于一次特别激烈的挤奶，她仍然感到头晕目眩，然后她遇到了一只又大又坏的狼……"
+    "客户" "当她冒险走进山里时，由于一次特别激烈的挤奶，她仍然感到头晕目眩，然后她遇到了一只又大又坏的狼...."
 
 # game/BKday_events.rpy:7275
 translate chinese night_girl_perform_f81378ce:
@@ -11464,7 +11464,7 @@ translate chinese night_girl_perform_3713d923:
 translate chinese night_girl_perform_058a7b01:
 
     # you "As the wolf leapt right onto Molly's back, his large, knotted cock came bumping right onto her tight asshole..."
-    you "正当那只狼跳到莫利的背上时，他那只结着结的大鸡巴撞到了她那紧绷的屁股上……"
+    you "正当那只狼跳到莫利的背上时，他那只结着结的大鸡巴撞到了她那紧绷的屁股上...."
 
 # game/BKday_events.rpy:7300
 translate chinese night_girl_perform_b7824057:
@@ -11476,7 +11476,7 @@ translate chinese night_girl_perform_b7824057:
 translate chinese night_girl_perform_94322b4a:
 
     # girl.char "Aaaah! Mister! You're fucking Molly's ass... Aaaah!!!"
-    girl.char "啊！先生！你操的是莫莉的屁股……啊！！！"
+    girl.char "啊！先生！你操的是莫莉的屁股....啊！！！"
 
 # game/BKday_events.rpy:7312
 translate chinese night_girl_perform_d9f7bbaf:
@@ -11500,13 +11500,13 @@ translate chinese night_girl_perform_d3f53588:
 translate chinese night_girl_perform_e115bb43:
 
     # "Customer" "Aw... *sigh*"
-    "客户" "唉……*叹息*"
+    "客户" "唉....*叹息*"
 
 # game/BKday_events.rpy:7325
 translate chinese night_girl_perform_fd347a9c:
 
     # you "Come on, don't be shy... You can even drink directly from the tap!"
-    you "来吧，别害羞……你甚至可以直接从水龙头喝水！"
+    you "来吧，别害羞....你甚至可以直接从水龙头喝水！"
 
 # game/BKday_events.rpy:7327
 translate chinese night_girl_perform_fb29224a:
@@ -11524,7 +11524,7 @@ translate chinese night_girl_perform_b69cff86:
 translate chinese night_girl_perform_54977727:
 
     # girl.char "Master... Wait... You can't... Aaaah!"
-    girl.char "主人……等等……你不能……啊！"
+    girl.char "主人....等等....你不能....啊！"
 
 # game/BKday_events.rpy:7342
 translate chinese night_girl_perform_f7bad78e:
@@ -11536,7 +11536,7 @@ translate chinese night_girl_perform_f7bad78e:
 translate chinese night_girl_perform_64f100e9:
 
     # girl.char "I feel so strange... Aaaah..."
-    girl.char "我觉得很奇怪……啊……"
+    girl.char "我觉得很奇怪....啊...."
 
 # game/BKday_events.rpy:7348
 translate chinese night_girl_perform_9c4cef1e:
@@ -11548,7 +11548,7 @@ translate chinese night_girl_perform_9c4cef1e:
 translate chinese night_girl_perform_585c4d1a:
 
     # girl.char "Aw... I'm like a real cow now... Aaaah..."
-    girl.char "啊……我现在就像一头真正的牛……啊……"
+    girl.char "啊....我现在就像一头真正的牛....啊...."
 
 # game/BKday_events.rpy:7354
 translate chinese night_girl_perform_94ae0c71:
@@ -11572,13 +11572,13 @@ translate chinese night_girl_perform_af1094be:
 translate chinese night_girl_perform_ea7936f8:
 
     # you "Come on... Don't make a scene... It's just a little play for the benefit of the customers..."
-    you "来吧……别大吵大闹……这只是为了客户的利益而玩的一个小游戏……"
+    you "来吧....别大吵大闹....这只是为了客户的利益而玩的一个小游戏...."
 
 # game/BKday_events.rpy:7371
 translate chinese night_girl_perform_0b6156d2:
 
     # girl.char "No! Don't... Aaaah!"
-    girl.char "不！不要……啊！"
+    girl.char "不！不要....啊！"
 
 # game/BKday_events.rpy:7373
 translate chinese night_girl_perform_512f31e0:
@@ -11602,7 +11602,7 @@ translate chinese night_girl_perform_4dcd291d:
 translate chinese night_girl_perform_c92819ff:
 
     # you "Wait! She'll come around... Please, wait! Damn..."
-    you "等等！她会来……请等等！该死的……"
+    you "等等！她会来....请等等！该死的...."
 
 # game/BKday_events.rpy:7392
 translate chinese night_girl_perform_4ae36d1c:
@@ -11626,7 +11626,7 @@ translate chinese night_girl_perform_88255771:
 translate chinese night_girl_perform_b6832ab8:
 
     # girl.char "Aaaah! Something... is filling up my ass!"
-    girl.char "啊！的东西……填满我的屁股！"
+    girl.char "啊！的东西....填满我的屁股！"
 
 # game/BKday_events.rpy:7410
 translate chinese night_girl_perform_17637725:
@@ -11644,7 +11644,7 @@ translate chinese night_girl_perform_314daf11:
 translate chinese night_girl_perform_efc068b8:
 
     # girl.char "I feel so strange... My body... Aaaah..."
-    girl.char "我觉得很奇怪……我的身体……啊……"
+    girl.char "我觉得很奇怪....我的身体....啊...."
 
 # game/BKday_events.rpy:7418
 translate chinese night_girl_perform_d6f8725b:
@@ -11656,7 +11656,7 @@ translate chinese night_girl_perform_d6f8725b:
 translate chinese night_girl_perform_c1703d3a:
 
     # girl.char "Aaah! I can't hold it... inside... Aaaah!"
-    girl.char "啊！我受不了了……里面……啊！"
+    girl.char "啊！我受不了了....里面....啊！"
 
 # game/BKday_events.rpy:7422
 translate chinese night_girl_perform_067f2040:
@@ -11668,7 +11668,7 @@ translate chinese night_girl_perform_067f2040:
 translate chinese night_girl_perform_f5d0da33:
 
     # girl.char "Nooo... I... Aaaah..."
-    girl.char "不……我……啊……"
+    girl.char "不....我....啊...."
 
 # game/BKday_events.rpy:7428
 translate chinese night_girl_perform_95541454:
@@ -11680,7 +11680,7 @@ translate chinese night_girl_perform_95541454:
 translate chinese night_girl_perform_ca6e9604:
 
     # you "Look at her! She's valiantly holding it all inside, I guess she loves it... Oh, by the way, this liquid..."
-    you "看她！她勇敢地把这一切都藏在心里，我想她喜欢这样……哦，顺便说一下，这种液体……"
+    you "看她！她勇敢地把这一切都藏在心里，我想她喜欢这样....哦，顺便说一下，这种液体...."
 
 # game/BKday_events.rpy:7432
 translate chinese night_girl_perform_efcf89ac:
@@ -11716,13 +11716,13 @@ translate chinese night_girl_perform_7b4142b6:
 translate chinese night_girl_perform_4ada2b5f:
 
     # you "Gee, that was just a joke... Look at how hard you came... You've made such a mess!"
-    you "哎呀，那只是个玩笑……看看你有多努力……你弄得一团糟！"
+    you "哎呀，那只是个玩笑....看看你有多努力....你弄得一团糟！"
 
 # game/BKday_events.rpy:7467
 translate chinese night_girl_perform_172cd49d:
 
     # girl.char "What's this? Aaah..."
-    girl.char "这是什么？啊……"
+    girl.char "这是什么？啊...."
 
 # game/BKday_events.rpy:7469
 translate chinese night_girl_perform_618523d5:
@@ -11746,7 +11746,7 @@ translate chinese night_girl_perform_e1e11b53:
 translate chinese night_girl_perform_b9c9980f:
 
     # girl.char "No... I can't anymore... Nooo..."
-    girl.char "不……我不能了……不……"
+    girl.char "不....我不能了....不...."
 
 # game/BKday_events.rpy:7481
 translate chinese night_girl_perform_4ab350de:
@@ -11758,7 +11758,7 @@ translate chinese night_girl_perform_4ab350de:
 translate chinese night_girl_perform_9d365f7f:
 
     # you "That should be it now... Wow!"
-    you "应该是现在了……哇！"
+    you "应该是现在了....哇！"
 
 # game/BKday_events.rpy:7489
 translate chinese night_girl_perform_64829432:
@@ -11884,13 +11884,13 @@ translate chinese night_girl_perform_4a0b549d:
 translate chinese night_girl_perform_3519ed8c:
 
     # you "Oh, look, a cum enema! She seems to like it even more..."
-    you "看，灌肠剂！她似乎更喜欢……"
+    you "看，灌肠剂！她似乎更喜欢...."
 
 # game/BKday_events.rpy:7562
 translate chinese night_girl_perform_44a3bf27:
 
     # girl.char "Arrrh..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKday_events.rpy:7564
 translate chinese night_girl_perform_b1a8223e:

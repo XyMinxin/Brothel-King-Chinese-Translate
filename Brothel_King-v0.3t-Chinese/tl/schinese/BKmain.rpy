@@ -464,7 +464,7 @@ translate schinese strings:
 
     # game/BKmain.rpy:941
     old "Do you really want to advance to the next chapter?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.\nIt will cost you {b}"
-    new "你确定要进入下一章吗?\n\n{size=-2}这将重置你所有的房间升级,但你会保留你的设施和装饰等级.\n这会花费你 {b}"
+    new "你确定要推进到下一章吗?\n\n{size=-2}这将重置你所有的房间升级,但你会保留你的设施和装饰等级.\n这会花费你 {b}"
 
     # # game/BKmain.rpy:1006
     # old "Rest"

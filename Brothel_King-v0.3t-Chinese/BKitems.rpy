@@ -198,7 +198,7 @@ label init_items():
                             Item(name = '工口读物', target = 'gift', type = IT_Gift, pic = 'Erotic manual.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'erotica', 1), Effect('gift', 'book', 1), ), description =  "女骑士被兽人所俘虏，沦为生殖工具，整日以精液为食...", hidden_effect = True),
                             Item(name = '金箔笔记', target = 'gift', type = IT_Gift, pic = 'Goldleaf book.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'precious', 1), Effect('gift', 'book', 1), ), description =  "里面写了什么，谁在意这些，看这闪亮的封面！", hidden_effect = True),
                             Item(name = '魔药大全', target = 'gift', type = IT_Gift, pic = 'Book of magical cocktails.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'drinks', 1), Effect('gift', 'book', 1), ), description =  "警告:喝下配方制作的药水可能会导致记忆丧失。还可能丧失你的尊严。", hidden_effect = True),
-                            Item(name = '可爱萌宠', target = 'gift', type = IT_Gift, pic = 'Pet.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'cute', 1), Effect('gift', 'precious', 1), ), description =  "天呐，谁能拒绝毛茸茸的，可爱的小家伙...", hidden_effect = True),
+                            Item(name = '宠物', target = 'gift', type = IT_Gift, pic = 'Pet.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'cute', 1), Effect('gift', 'precious', 1), ), description =  "天呐，谁能拒绝毛茸茸的，可爱的小家伙...", hidden_effect = True),
                             Item(name = '轻纱睡衣', target = 'gift', type = IT_Gift, pic = 'Silky nighties.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'cute', 1), Effect('gift', 'erotica', 1), ), description =  "丝般顺滑，隐约能看到内部，轻轻挑动就能瞬间从肩上滑落。", hidden_effect = True),
                             Item(name = '樱花清酒', target = 'gift', type = IT_Gift, pic = 'Sakura liquor.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'cute', 1), Effect('gift', 'drinks', 1), ), description =  "来自远东岛国的特产，回口有一丝樱花的甘甜。", hidden_effect = True),
                             Item(name = '高跟鞋', target = 'gift', type = IT_Gift, pic = 'Sexy high heels.webp', template = True, rank = 1, max_rank = 5, rarity = 1, charges = 1, price = 100, effects = (Effect('gift', 'erotica', 1), Effect('gift', 'precious', 1), ), description =  "穿上它就能得到修长的身材，或是用它踩踏在男人的胯下摩擦。", hidden_effect = True),
@@ -267,10 +267,10 @@ label init_items():
                             Item(name = '透明内衣', target = 'girl', type = IT_Dress, pic = 'Seethrough dress.webp', template = True, rank = 0, max_rank = 6, rarity = 0, price = 425, effects = (Effect('change', 'sensitivity', 10), ), ),
                             Item(name = '女仆装', target = 'girl', type = IT_Dress, pic = 'Maid uniform.webp', template = True, rank = 0, max_rank = 6, rarity = 0, price = 500, effects = (Effect('change', 'obedience', 10), ), ),
                             Item(name = '体操服', target = 'girl', type = IT_Dress, pic = 'Gym uniform.webp', template = True, rank = 0, max_rank = 6, rarity = 0, price = 425, effects = (Effect('change', 'constitution', 10), ), ),
-                            Item(name = '绿翡翠戒指', target = 'girl', type = IT_Ring, pic = 'Emerald ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'service', 5), ), ),
+                            Item(name = '祖母绿戒指', target = 'girl', type = IT_Ring, pic = 'Emerald ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'service', 5), ), ),
                             Item(name = '红宝石戒指', target = 'girl', type = IT_Ring, pic = 'Ruby ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'sex', 5), ), ),
                             Item(name = '黄琥珀戒指', target = 'girl', type = IT_Ring, pic = 'Amber ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'anal', 5), ), ),
-                            Item(name = '紫水晶戒指', target = 'girl', type = IT_Ring, pic = 'sapphire ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'fetish', 5), ), ),
+                            Item(name = '蓝宝石戒指', target = 'girl', type = IT_Ring, pic = 'sapphire ring.webp', template = True, rank = 1, max_rank = 5, rarity = 3, price = 500, effects = (Effect('change', 'fetish', 5), ), ),
                             Item(name = '调酒教材', target = 'girl', type = IT_Misc, pic = 'Scroll of bartending.webp', template = True, rank = 1, max_rank = 5, rarity = 2, charges = 1, price = 150, effects = (Effect('gain', 'waitress jp', 10), ), adjectives = "scroll"),
                             Item(name = '舞蹈教材', target = 'girl', type = IT_Misc, pic = 'Scroll of whirling.webp', template = True, rank = 1, max_rank = 5, rarity = 2, charges = 1, price = 150, effects = (Effect('gain', 'dancer jp', 10), ), adjectives = "scroll"),
                             Item(name = '按摩教材', target = 'girl', type = IT_Misc, pic = 'Scroll of rubbing.webp', template = True, rank = 1, max_rank = 5, rarity = 2, charges = 1, price = 150, effects = (Effect('gain', 'masseuse jp', 10), ), adjectives = "scroll"),
@@ -314,10 +314,10 @@ label init_furniture():
             Furniture('抛光吧台', type='Furnishing', pic='bar counter2.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('marble', 4), ('ore', 2), ], duration=3, upgrade='木质吧台', effects=[Effect("allow", "waitress preference", 2, scope="brothel")], ),
             Furniture('金漆吧台', type='Furnishing', pic='bar counter3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 6), ('ore', 12), ], duration=5, upgrade='抛光吧台', effects=[Effect("allow", "waitress preference", 3, scope="brothel")], ),
             Furniture('红木吧台', type='Furnishing', pic='bar counter4.webp', rank=5, chapter=7, cost=[('marble', 5), ('ore', 10), ], duration=7, upgrade='金漆吧台', effects=[Effect("allow", "waitress preference", 5, scope="brothel")], ),
-            Furniture('小卫生间', type='Furnishing', pic='washroom1.webp', rank=2, chapter=2, cost=[('dye', 8), ], duration=1, effects=[Effect("allow", "masseuse preference", 1, scope="brothel")], ),
-            Furniture('干净卫生间', type='Furnishing', pic='washroom2.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('marble', 6), ], duration=3, upgrade='小卫生间', effects=[Effect("allow", "masseuse preference", 2, scope="brothel")], ),
-            Furniture('有热水的卫生间', type='Furnishing', pic='washroom3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 12), ('silk', 6), ], duration=5, upgrade='干净卫生间', effects=[Effect("allow", "masseuse preference", 3, scope="brothel")], ),
-            Furniture('豪华的卫生间', type='Furnishing', pic='washroom4.webp', rank=5, chapter=7, cost=[('marble', 10), ('silk', 5), ], duration=7, upgrade='有热水的卫生间', effects=[Effect("allow", "masseuse preference", 5, scope="brothel")], ),
+            Furniture('狭窄的卫生间', type='Furnishing', pic='washroom1.webp', rank=2, chapter=2, cost=[('dye', 8), ], duration=1, effects=[Effect("allow", "masseuse preference", 1, scope="brothel")], ),
+            Furniture('干净的卫生间', type='Furnishing', pic='washroom2.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('marble', 6), ], duration=3, upgrade='狭窄的卫生间', effects=[Effect("allow", "masseuse preference", 2, scope="brothel")], ),
+            Furniture('高级的卫生间', type='Furnishing', pic='washroom3.webp', rank=4, chapter=6, cost=[('wood', 6), ('marble', 12), ('silk', 6), ], duration=5, upgrade='干净的卫生间', effects=[Effect("allow", "masseuse preference", 3, scope="brothel")], ),
+            Furniture('豪华的卫生间', type='Furnishing', pic='washroom4.webp', rank=5, chapter=7, cost=[('marble', 10), ('silk', 5), ], duration=7, upgrade='高级的卫生间', effects=[Effect("allow", "masseuse preference", 5, scope="brothel")], ),
             Furniture('临时舞台', type='Furnishing', pic='stage1.webp', rank=2, chapter=2, cost=[('wood', 4), ('dye', 4), ], duration=1, effects=[Effect("allow", "dancer preference", 1, scope="brothel")], ),
             Furniture('业余舞台', type='Furnishing', pic='stage2.webp', rank=3, chapter=4, cost=[('leather', 12), ('marble', 4), ('ore', 2), ], duration=3, upgrade='临时舞台', effects=[Effect("allow", "dancer preference", 2, scope="brothel")], ),
             Furniture('大型舞台', type='Furnishing', pic='stage3.webp', rank=4, chapter=6, cost=[('leather', 6), ('marble', 6), ('silk', 12), ], duration=5, upgrade='业余舞台', effects=[Effect("allow", "dancer preference", 3, scope="brothel")], ),
@@ -356,16 +356,16 @@ label init_furniture():
             Furniture('安全警报', type='Utility', pic='Alarm system.webp', rank=3, chapter=5, cost=[('leather', 12), ('marble', 4), ('ore', 10), ], duration=2, upgrade='大型陷阱', effects=[Effect("boost", "security", 0.4, scope="brothel")], ),
             Furniture('爆炸陷阱', type='Utility', pic='Explosive traps.webp', rank=4, chapter=6, cost=[('leather', 6), ('ore', 18), ], duration=3, upgrade='安全警报', effects=[Effect("boost", "security", 0.5, scope="brothel")], ),
             Furniture('电击陷阱', type='Utility', pic='Zap traps.webp', rank=5, chapter=7, cost=[('marble', 4), ('ore', 12), ], duration=3, upgrade='爆炸陷阱', effects=[Effect("boost", "security", 0.6, scope="brothel")], ),
-            Furniture('标准间', type='Utility', pic='Broom.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("boost", "maintenance", 0, scope="brothel")], ),
-            Furniture('水桶', type='Utility', pic='Buckets.webp', rank=2, chapter=2, cost=[('wood', 6), ('leather', 2), ], duration=0, upgrade='标准间', effects=[Effect("boost", "maintenance", 0.25, scope="brothel")], ),
+            Furniture('扫帚', type='Utility', pic='Broom.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("boost", "maintenance", 0, scope="brothel")], ),
+            Furniture('水桶', type='Utility', pic='Buckets.webp', rank=2, chapter=2, cost=[('wood', 6), ('leather', 2), ], duration=0, upgrade='扫帚', effects=[Effect("boost", "maintenance", 0.25, scope="brothel")], ),
             Furniture('浴巾', type='Utility', pic='Towels.webp', rank=3, chapter=3, cost=[('dye', 5), ('leather', 5), ], duration=1, upgrade='水桶', effects=[Effect("boost", "maintenance", 0.35, scope="brothel")], ),
             Furniture('手推车', type='Utility', pic='Wheelbarrow.webp', rank=3, chapter=4, cost=[('wood', 4), ('dye', 4), ('leather', 4), ('ore', 4), ], duration=1, upgrade='水桶', effects=[Effect("boost", "maintenance", 0.5, scope="brothel")], ),
             Furniture('魔力扫帚', type='Utility', pic='magic broom.webp', rank=3, chapter=5, cost=[('wood', 10), ('leather', 6), ('silk', 6), ], duration=2, upgrade='手推车', effects=[Effect("boost", "maintenance", 1, scope="brothel")], ),
             Furniture('蒸汽货车', type='Utility', pic='Steam cart.webp', rank=4, chapter=6, cost=[('leather', 6), ('marble', 6), ('silk', 6), ('ore', 6), ], duration=2, upgrade='手推车', effects=[Effect("boost", "maintenance", 1.5, scope="brothel")], ),
             Furniture('机械女仆', type='Utility', pic='Robot maid.webp', rank=5, chapter=7, cost=[('silk', 6), ('ore', 10), ], duration=3, upgrade='蒸汽货车', effects=[Effect("boost", "maintenance", 3, scope="brothel")], ),
-            Furniture('木艺雕像', type='Decoration', pic='Bronze statue.webp', rank=2, chapter=2, cost=[('wood', 4), ('dye', 4), ], duration=1, effects=[Effect("change", "brothel reputation", 6, scope="brothel")], ),
-            Furniture('大理石雕像', type='Decoration', pic='Silver statue.webp', rank=3, chapter=4, cost=[('dye', 15), ('marble', 6), ], duration=2, upgrade='木艺雕像', effects=[Effect("change", "brothel reputation", 12, scope="brothel")], ),
-            Furniture('镀金雕像', type='Decoration', pic='Gold statue.webp', rank=4, chapter=6, cost=[('dye', 6), ('ore', 20), ], duration=3, upgrade='大理石雕像', effects=[Effect("change", "brothel reputation", 18, scope="brothel")], ),
+            Furniture('大理石雕像', type='Decoration', pic='Bronze statue.webp', rank=2, chapter=2, cost=[('wood', 4), ('dye', 4), ], duration=1, effects=[Effect("change", "brothel reputation", 6, scope="brothel")], ),
+            Furniture('白银雕像', type='Decoration', pic='Silver statue.webp', rank=3, chapter=4, cost=[('dye', 15), ('marble', 6), ], duration=2, upgrade='大理石雕像', effects=[Effect("change", "brothel reputation", 12, scope="brothel")], ),
+            Furniture('镀金雕像', type='Decoration', pic='Gold statue.webp', rank=4, chapter=6, cost=[('dye', 6), ('ore', 20), ], duration=3, upgrade='白银雕像', effects=[Effect("change", "brothel reputation", 18, scope="brothel")], ),
             Furniture('铂金雕像', type='Decoration', pic='Platinum statue.webp', rank=5, chapter=7, cost=[('ore', 20), ('diamond', 1), ], duration=4, upgrade='镀金雕像', effects=[Effect("change", "brothel reputation", 24, scope="brothel")], ),
             Furniture('储物柜', type='Utility', pic='safe1.webp', rank=2, chapter=2, cost=[('wood', 4), ('dye', 2), ('leather', 4), ], duration=3, effects=[Effect("special", "safe", 3000, scope="brothel")]),
             Furniture('带锁的箱子', type='Utility', pic='safe2.webp', rank=3, chapter=4, cost=[('wood', 5), ('leather', 10), ('ore', 6), ], duration=5, upgrade='储物柜', effects=[Effect("special", "safe", 6000, scope="brothel")]),
@@ -737,7 +737,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset-previous), SetLocalVariable("page", page_offset))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "DejaVuSans.ttf"
 
                     for p in range(start, finish):
                         textbutton str(p+1) style "UI_button":
@@ -760,7 +760,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset+next), SetLocalVariable("page", page_offset+next+1))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "DejaVuSans.ttf"
 
 
 screen item_profile(it):
@@ -795,7 +795,7 @@ screen item_profile(it):
         has vbox
 
         if "bargain" not in acts:
-            use close(Hide("item_profile"), name = "hide")
+            use close(Hide("item_profile"), name = "返回")
             key "mouseup_3" action Hide("item_profile")
 
 
@@ -855,7 +855,7 @@ screen item_profile(it):
 
             hbox spacing 10 xalign 0.5:
                 for act in acts:
-                    textbutton __(capitalize(act)) action Return((it, act)) xalign 0.5:
+                    textbutton __(button_name_dict[capitalize(act)]) action Return((it, act)) xalign 0.5:
                         if owner.type == "girl" and act in ("equip", "unequip", "use"):
                             hovered SetScreenVariable("focused_char", owner)
                         elif counterpart and counterpart.type == "girl":

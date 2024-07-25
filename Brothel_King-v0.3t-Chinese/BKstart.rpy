@@ -208,7 +208,7 @@ label init_game(quick=False):
     #### NPCs #### Declare unique NPCs
 
 
-        # DEFAULT NAMES #
+        # DEFAULT NAMES 汉化标签，这里可以修改NPC人名，不确定会不会出现BUG#
 
         sill_name = "Sill"
         kuro_name = "Princess"
@@ -256,31 +256,31 @@ label init_game(quick=False):
         NPC_kosmo = NPC()
         NPC_sergeant = NPC()
         NPC_roz = NPC(name = "Roz", cname = "罗兹", char = roz)
-        NPC_maya = NPC(name = "Maya", cname = "玛雅", portrait = "side maya", trainer_description = "'{i}我最好检查一下周边情况。再查一次.{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% .", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
+        NPC_maya = NPC(name = "Maya", cname = "玛雅", portrait = "side maya", trainer_description = "'{i}我最好检查一下周边情况。再巡逻一圈。{/i}'\n\n{b}保持警惕{/b}\n青楼威胁等级增加速度降低 33% .", effects = Effect("boost", "threat build up", -0.33, scope = "brothel"))
         NPC_renza = NPC(name = "Renza", cname = "伦萨", portrait = "side renza", bg = 'bg thieves_guild room', trainer_description = "'{i}这个钱包似乎很重。让我来替你拿吧...{/i}'\n\n{b}偷天换日{/b}\n所有的女孩都会扒窃. 拥有 {i}Thief{/i} 天赋的女孩永远不会失手.", effects = Effect("special", "pickpocket", 1, scope = "brothel"))
         NPC_satella = NPC(name = "Satella", cname = "萨特拉", portrait = "side satella", bg = "bg shalia_temple", trainer_description = "'{i}在阴影中玩耍不是很有趣吗? 呋呋呋...{/i}'\n\n{b}黑暗神官{/b}\n恐惧增长的更快了.", effects = Effect("boost", "fear gains", 1, scope = "world"))
-        NPC_captain = NPC(name = "Farah", cname = "法拉", portrait = "side captain", bg = 'bg vault', trainer_description = "'{i}如果你想往上爬，你必须准备好做任何事. 任何事!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为.", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
-        NPC_lieutenant = NPC(name = "Lydie", cname = "莉迪", portrait = "side lieutenant", trainer_description = "'{i}你想让我拿你来杀鸡儆猴吗?我可不想这么做.{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性.", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
-        NPC_gizel = NPC(name = "Gizel", cname = "吉泽尔", defense = 3, portrait = "side gizel smirk", bg = 'bg farm', trainer_description = "'{i}我喜欢在清晨品味令人绝望的味道.{/i}'\n\n{b}黑魔法{/b}\n从农场内外的基于恐惧的互动中获得更多的魔力.", effects = Effect("boost", "all mojo gains", 0.5))
+        NPC_captain = NPC(name = "Farah", cname = "法拉", portrait = "side captain", bg = 'bg vault', trainer_description = "'{i}如果你想往上爬，你就得接受这些!{/i}'\n\n{b}伤风败俗{/b}\n女孩们会更快地习惯肛交和调教行为.", effects = (Effect("change", "anal preferences changes", 25, scope = "brothel"), Effect("change", "fetish preferences changes", 25, scope = "brothel")))
+        NPC_lieutenant = NPC(name = "Lydie", cname = "莉迪", portrait = "side lieutenant", trainer_description = "'{i}上一个不好好工作的现在还光着身子被吊在十字架上被一群色狼围观呢，你也想去陪她吗？{/i}'\n\n{b}钢铁纪律{/b}\n减少女孩拒绝工作的可能性.", effects = Effect("boost", "obedience tests", 0.1, scope = "brothel"))
+        NPC_gizel = NPC(name = "Gizel", cname = "吉泽尔", defense = 3, portrait = "side gizel smirk", bg = 'bg farm', trainer_description = "'{i}啊~我喜欢在清晨品味令人绝望的味道！{/i}'\n\n{b}黑魔法{/b}\n从农场内外的基于恐惧的互动中获得更多的魔力.", effects = Effect("boost", "all mojo gains", 0.5))
         NPC_banker = NPC(name = "Banker", cname = "银行家", portrait = "side banker", bg = 'bg banking_quarter')
         NPC_riche = NPC(name = "Riche", cname = "瑞秋", char=riche, portrait = "side riche", bg = 'bg botanical_garden', item_types=["Flower"])
-        NPC_ramias = NPC(name = "Ramias", cname = "拉米亚斯", char=ramias, portrait = "side ramias", bg = 'bg arena', item_types=["Weapon"], trainer_description = "'{i}用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2.", effects = Effect("change", "defense", 2, scope = "brothel"))
+        NPC_ramias = NPC(name = "Ramias", cname = "拉米亚斯", char=ramias, portrait = "side ramias", bg = 'bg arena', item_types=["Weapon"], trainer_description = "'{i}要是有动手动脚的家伙，就用簪子戳他们!{/i}'\n\n{b}女子防身术{/b}\n所有女孩的个人防御能力+2.", effects = Effect("change", "defense", 2, scope = "brothel"))
         NPC_gurigura = NPC(name = "Gurigura", cname = "古莉古拉", char=gurigura, portrait = "side gurigura", bg = 'bg prison', item_types=["Toy", "Food", "Supplies"])
         NPC_katryn = NPC(name = "Katryn", cname = "卡特琳", char=katryn, portrait = "side katryn", bg = 'bg library', item_types=["Ring", "Necklace"])
         NPC_giftgirl = NPC(name = "Gift Shop Girl", cname = "礼品店女孩", char=giftgirl, portrait = "side giftgirl", bg = 'bg exotic_emporium', item_types=["Gift", "Misc"])
         NPC_twins = NPC(name = "Today", cname = "今朝", char=today, portrait = "side today", bg = 'bg pilgrim_road', item_types=["Dress", "Accessory"])
-        NPC_stella = NPC(name="Stella", cname = "斯特拉", char=stella, portrait = "side stella", bg = 'bg harbor', minion_type="stallion", trainer_description = "'{i}你们薄弱的训练技术根本不是血色群岛的对手.{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩性训练的效率.", effects = Effect("boost", "farm preference increase", 0.5, scope = "farm"))
-        NPC_goldie = NPC(name="Goldie", cname = "戈尔迪", char=goldie, portrait = "side goldie", bg = 'bg farmland', minion_type="beast", trainer_description = "'{i}我在书里见过... *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为.", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
+        NPC_stella = NPC(name="Stella", cname = "斯特拉", char=stella, portrait = "side stella", bg = 'bg harbor', minion_type="stallion", trainer_description = "'{i}你的训练强度甚至比不上鲜血群岛训奴大师的百分之一！难道你以为你的奴隶是纸糊的？{/i}'\n\n{b}高效训奴{/b}\n提高所有奴隶农场中女孩性训练的效率.", effects = Effect("boost", "farm preference increase", 0.5, scope = "farm"))
+        NPC_goldie = NPC(name="Goldie", cname = "戈尔迪", char=goldie, portrait = "side goldie", bg = 'bg farmland', minion_type="beast", trainer_description = "'{i}我在书里见过...她们很大胆，没想到那里还可以... *脸红*{/i}'\n\n{b}技术指导{/b}\n女孩们会更快地习惯服务和性行为.", effects = (Effect("change", "service preferences changes", 25, scope = "brothel"), Effect("change", "sex preferences changes", 25, scope = "brothel")))
         NPC_willow = NPC(name="Willow", cname = "薇儿", char=willow, portrait = "side willow", bg = 'bg sewers', minion_type="monster")
         NPC_gina = NPC(name="Gina", cname = "吉娜", char=gina, portrait = "side gina", bg = 'bg junkyard', minion_type="machine")
-        NPC_bast = NPC(name="Bast", cname = "贝斯特", char=bast, portrait = "side bast", bg = 'bg market', trainer_description = "'{i}黄金只是在赞城中可以交易的众多资源之一.{/i}'\n\n{b}物资置换{/b}\n你的部分青楼收入将被转换成随机资源.", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
+        NPC_bast = NPC(name="Bast", cname = "贝斯特", char=bast, portrait = "side bast", bg = 'bg market', trainer_description = "'{i}钱是最没用的资源了，你没听说过千金散去还复来吗？不过如果是你的话，可以买到我的爱哦~{/i}'\n\n{b}物资置换{/b}\n你的部分青楼收入将被转换成随机资源.", effects = [Effect("special", "resources as income", 1.0, scope = "brothel"), Effect("boost", "income", -0.2, scope = "brothel")])
         NPC_jobgirl = NPC(name="Scarlet", cname = "斯卡莱特", char=jobgirl, bg = "bg town")
         NPC_kuro = NPC(name="Kurohime", cname = "黑雪姬", char=kuro)
         NPC_homura = NPC(name="Homura", cname = "汉索-焰", char=homura)
-        NPC_taxgirl = NPC(name="Taxgirl", cname = "税务官", char=taxgirl, portrait = "side taxgirl", trainer_description = "'{i}到时候就就请我吃龙虾喝香槟吧... 然后再给我些营养品....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来避税.", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
+        NPC_taxgirl = NPC(name="Taxgirl", cname = "税务官", char=taxgirl, portrait = "side taxgirl", trainer_description = "'{i}我会帮你说些好话的，到时候就就请我吃顿海鲜大餐吧... 然后再给我补充一点你的特制牛奶....{/i}'\n\n{b}合法避税{/b}\n每晚消耗你的一部分收入来避税.", effects = [Effect("boost", "taxable net income", -0.05, scope = "brothel")])
 
         # Chapter 2 Kunoichi
-        NPC_suzume = NPC(name="Suzume", cname = "云雀", char=suzume, portrait = "side suzume", trainer_description = "'{i}昨天又抓到一个间谍……他还想捅我，太滑稽了！库库库库...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你以避免安全事件 (不重置威胁等级).", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
+        NPC_suzume = NPC(name="Suzume", cname = "云雀", char=suzume, portrait = "side suzume", trainer_description = "'{i}昨天又解决掉一个闹事的，他还想用餐刀捅我，太滑稽了！我只在床上被你捅过...{/i}'\n\n{b}夜间巡逻{/b}\n有33%% 的几率警告你以避免安全事件 (不重置威胁等级).", effects = [Effect("special", "security block", 1.0, 0.33, scope = "brothel")])
         NPC_narika = NPC(name="Narika", cname = "四方堂鸣香", char=narika)
         NPC_mizuki = NPC(name="Mizuki", cname = "昴月", char=mizuki)
         NPC_haruka = NPC(name="Haruka", cname = "鹰守遥", char=haruka)
@@ -343,26 +343,26 @@ label init_game(quick=False):
     #### DISTRICTS ####
     python:
 
-        # POPULATIONS #
+        # POPULATIONS 汉化标签，乞丐，工人，工匠顾客游戏内不显示描述文本，游戏原本的BUG，通过复制别的顾客的效果并将数值修改为0,游戏内正常显示了#
 
-        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, base_description="一群极其粗陋、要求不高的顾客。毕竟，乞丐没资格挑肥拣瘦。")
-        thug = Population("thugs", "thug.webp", diff = 20, range = 10, rank=1, weight=3, effects=[Effect("boost", "crazy", 1)], base_description="混混的生活总是伴随着兄弟情和女人。兄弟如衣服女人如手足。")
-        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, base_description="工人们，团结起来!或者，你知道的，先找个女孩爽一晚上。")
+        beggar = Population("beggars", "beggar.webp", diff = 15, range = 10, rank=1, weight=5, effects=[Effect("change", "satisfaction", -0)], base_description="一群极其粗陋、无力的顾客。他们可没资格挑肥拣瘦。")
+        thug = Population("thugs", "thug.webp", diff = 20, range = 10, rank=1, weight=3, effects=[Effect("boost", "crazy", 1)], base_description="对于古惑仔来说，兄弟如衣服女人如手足。")
+        laborer = Population("laborers", "laborer.webp", 30, range = 20, rank=1, weight=2, effects=[Effect("change", "satisfaction", -0)], base_description="在辛苦一天后，需要找个女孩好好放松一下自己的肉体。")
 
-        sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="水手上岸后都是出了名的好色。经过长途航行后，船员们需要发泄积累的性欲。")
-        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="枯燥的生活，乏味的工作，将就的配偶……看到一个普通人试图在青楼里逃避这一切……这很常见。")
+        sailor = Population("sailors", "sailor.webp", 40, range = 20, rank=2, effects=[Effect("change", "waitress preference", 15), Effect("change", "anal preference", 15)], base_description="水手在经过长途航行后，需要发泄积累已久的性欲，不然会憋坏的。")
+        commoner = Population("commoners", "commoner.webp", 50, range = 20, rank=2, effects=[Effect("change", "dancer preference", 15), Effect("change", "service preference", 15)], base_description="受够了家里的黄脸婆，他们决定来青楼体验一下甜蜜的爱情。")
 
-        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1)], base_description="工匠们都是手艺人，当他们的手里没工具的时候，他们喜欢把手放在女人的胸和屁股上揉捏，就像在塑造艺术品。")
+        craftsman = Population("craftsmen", "craftsman.webp", 70, range = 30, rank=2, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -0)], base_description="工匠的手艺活很好，他们灵活的手指用来对付姑娘们也是一流的。")
 
-        bourgeois = Population("bourgeois", "bourgeois.webp", 90, range = 30, rank=3, effects=[Effect("change", "geisha preference", 15), Effect("change", "sex preference", 15)], base_description="这是一群有些小钱的人，他们愿意付出更多只为博得美人一笑。钱场得意，情场会失意吗？")
-        guildmember = Population("guild members", "guild member.webp", 110, range = 30, rank=3, effects=[Effect("change", "masseuse preference", 15), Effect("change", "fetish preference", 15)], base_description="这些公会职员拥有大量的人脉关系，只要你服务到位，他们日后就会给你行个方便。")
+        bourgeois = Population("bourgeois", "bourgeois.webp", 90, range = 30, rank=3, effects=[Effect("change", "geisha preference", 15), Effect("change", "sex preference", 15)], base_description="这些暴发户一有钱就想要在女人身上消费，也许钱能买到他们想要的自尊心？")
+        guildmember = Population("guild members", "guild member.webp", 110, range = 30, rank=3, effects=[Effect("change", "masseuse preference", 15), Effect("change", "fetish preference", 15)], base_description="这些职员经常潜规则女下属，把他们伺候好了日后可能会给你行个方便。")
 
-        patrician = Population("patricians", "patrician.webp", 110, range = 40, rank=3, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -1)], base_description="这些中年人喜欢在街上闲逛，看看有没有年轻貌美的小姑娘寻找爸爸活。")
+        patrician = Population("patricians", "patrician.webp", 110, range = 40, rank=3, effects=[Effect("special", "horny", 1), Effect("change", "satisfaction", -1)], base_description="他们喜欢在街道上巡逻，要是碰到落单的美女他们就会用一些手段把她骗到床上去。")
 
         aristocrat = Population("aristocrats", "aristocrat.webp", 135, range = 40, rank=4, effects=[Effect("boost", "crazy", 1.5), Effect("change", "satisfaction", -1)], base_description="这些二世祖目无王法，他们强抢民女，花天酒地，真叫人羡慕啊！")
-        noble = Population("nobles", "noble.webp", 160, range = 40, rank=4, effects=[Effect("change", "satisfaction", -2)], base_description="他们都是见过世面的人，普通姿色无法引起他们的兴趣。特权也伴随着义务，需得苦心经营，可别让他们无聊到打哈欠。")
+        noble = Population("nobles", "noble.webp", 160, range = 40, rank=4, effects=[Effect("change", "satisfaction", -2)], base_description="他们都是见过世面的人，普通姿色无法引起他们的兴趣。你需要提供一些更刺激的玩法。")
 
-        royal = Population("royals", "royal.webp", 200, range = 50, rank=5, effects=[Effect("change", "satisfaction", -3)], base_description="许多人说皇亲国戚都是搜刮民脂民膏的寄生虫。没有人会称赞他们对底层的奉献和牺牲有多慷慨，无论上面做的有多好，真是可悲。")
+        royal = Population("royals", "royal.webp", 200, range = 50, rank=5, effects=[Effect("change", "satisfaction", -3)], base_description="可能只有堕落的仙子才能滋润他们干涸已久的心灵和审美吧。")
 
         all_populations = [beggar, thug, laborer, sailor, commoner, craftsman, bourgeois, guildmember, patrician, aristocrat, noble, royal]
 
@@ -370,12 +370,12 @@ label init_game(quick=False):
 
         spice_market = Location("Spice market", pic = "Spice market.webp")
         sewers = Location("Sewers", pic = "Sewers.webp", menu = ("拜访怪物猎人", "visit_willow"), menu_costs_AP=False) # Monster merchant
-        farmland = Location("Farm", pic = "farmland.webp", menu = ("拜访牧场女孩", "visit_goldie"), menu_costs_AP=False) # Beast merchant
+        farmland = Location("Farm", pic = "farmland.webp", menu = ("去见农场女孩", "visit_goldie"), menu_costs_AP=False) # Beast merchant
         watchtower = Location("Watchtower", pic = "Watchtower.webp", menu = ("浏览上尉的私人收藏", "visit_watchtower"))
         junkyard = Location("Junkyard", pic = "Junkyard.webp", menu = ("拜访古怪的科学家", "visit_gina"), menu_costs_AP=False) # Machine merchant
         thieves_guild = Location("Thieves guild", pic = "Thieves guild.webp", secret = True, menu = ("查看盗贼公会的特价商品", "visit_thieves_guild"))
 
-        harbor = Location("Harbor", pic = "Harbor.webp", menu = ("访问种马贩子", "visit_stella"), menu_costs_AP=False) # Stallion merchant
+        harbor = Location("Harbor", pic = "Harbor.webp", menu = ("拜访种马贩子", "visit_stella"), menu_costs_AP=False) # Stallion merchant
         shipyard = Location("Shipyard", pic = "Shipyard.webp", menu = ("砍伐木材", "collect_wood")) # Wood extraction
         taverns = Location("Taverns", pic = "Taverns.webp")
         seafront = Location("Seafront", pic = "Seafront.webp", menu = ("拜访怪老爹", "visit_papa"), menu_costs_AP=False)
@@ -384,7 +384,7 @@ label init_game(quick=False):
 
         stables = Location("Stables", pic = "Stables.webp", menu = ("采集皮革", "collect_leather")) # Leather
         plaza = Location("Plaza", pic = "Plaza.webp", menu = ("联系焰", "c3_contact_homura"), menu_costs_AP=False) # Homura, story
-        market = Location("Market", pic = "Market.webp", menu = ("前往交换所", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
+        market = Location("Market", pic = "Market.webp", menu = ("前往物资仓库", "visit_exchange"), action=True, menu_costs_AP=False) # Resource market
         gallows = Location("Gallows", pic = "Gallows.webp", menu = ("访问怪老爹", "visit_papa"), menu_costs_AP=False)
         prison = Location("Prison", pic = "Prison.webp", menu = ("拜访古莉古拉", "visit_gurigura"), menu_costs_AP=False) # Gurigura, toys
         arena = Location("Arena", pic = "Arena.webp", menu = ("前往武器店", "visit_ramias"), menu_costs_AP=False) # Ramias, weapons

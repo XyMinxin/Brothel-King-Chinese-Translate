@@ -76,7 +76,7 @@ translate schinese advance_to_chapter_326959e3:
 translate schinese advance_to_chapter_1ef7a1d7_1:
 
     # sill "Do you want to rename your brothel for the occasion?" nointeract
-    sill "你想为这个场合重命名你的妓院吗?" nointeract
+    sill "你想为这个场合重命名你的青楼吗?" nointeract
 
 # game/BKevents.rpy:824
 translate schinese run_away_d1b4784e:
@@ -184,13 +184,13 @@ translate schinese found_runaway_girl_dbca4bcc:
 translate schinese found_runaway_girl_3889dcce:
 
     # "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
-    "守卫们大笑着把她推倒在妓院门前。她半裸着身子,全身散发着精液的气味。看来他们在把她带回来之前一直在强奸她。"
+    "守卫们大笑着把她推倒在青楼门前。她半裸着身子,全身散发着精液的气味。看来他们在把她带回来之前一直在强奸她。"
 
 # game/BKevents.rpy:981
 translate schinese found_runaway_girl_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的妓院没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
 
 # game/BKevents.rpy:1008
 translate schinese found_runaway_girl_no_room_4b57f1f5:
@@ -226,7 +226,7 @@ translate schinese found_runaway_girl_come_back_3816ee7d:
 translate schinese found_runaway_girl_come_back_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的妓院没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
 
 # game/BKevents.rpy:1072
 translate schinese found_runaway_girl_come_back_4b57f1f5:
@@ -262,7 +262,7 @@ translate schinese found_escaped_girl_0b29fd61:
 translate schinese found_escaped_girl_2400c9b6:
 
     # you "Oh, but I haven't got enough room in the brothel to take her back."
-    you "唉,我的妓院无法收留她。"
+    you "唉,我的青楼无法收留她。"
 
 # game/BKevents.rpy:1123
 translate schinese found_escaped_girl_275fba30:
@@ -286,7 +286,7 @@ translate schinese found_escaped_girl_4dc83d43:
 translate schinese found_escaped_girl_ab62619c:
 
     # you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
-    you "[girl.name]...是我。我知道妓院的生活很艰难,但你应该回来。我们想你了。"
+    you "[girl.name]...是我。我知道青楼的生活很艰难,但你应该回来。我们想你了。"
 
 # game/BKevents.rpy:1150
 translate schinese found_escaped_girl_2f2948b5:
@@ -304,7 +304,7 @@ translate schinese found_escaped_girl_1641c2cc:
 translate schinese found_escaped_girl_22820a44:
 
     # "She cries on your shoulder for a while. Taking her by the hand, you take her back to the brothel."
-    "她在你肩上哭了一会儿。你牵着她的手把她带回了妓院。"
+    "她在你肩上哭了一会儿。你牵着她的手把她带回了青楼。"
 
 # game/BKevents.rpy:1166
 translate schinese found_escaped_girl_decd7840:
@@ -352,7 +352,7 @@ translate schinese found_escaped_girl_f9343fae:
 translate schinese found_escaped_girl_fda387bd:
 
     # "Yanking her to her feet, you push her forward and bring her back to the brothel."
-    "你拽起她,粗暴地推着她走,把她带回了妓院。"
+    "你拽起她,粗暴地推着她走,把她带回了青楼。"
 
 # game/BKevents.rpy:1208
 translate schinese found_escaped_girl_decd7840_1:
@@ -412,7 +412,7 @@ translate schinese found_escaped_girl_6ed6ad11:
 translate schinese found_escaped_girl_c2c2d06e:
 
     # "Loading her on your shoulder, you bring her kicking and screaming back to the brothel."
-    "你把她扛在肩上,拽着她一路嘶吼着把她带回了妓院。"
+    "你把她扛在肩上,拽着她一路嘶吼着把她带回了青楼。"
 
 # game/BKevents.rpy:1257
 translate schinese found_escaped_girl_decd7840_2:
@@ -1612,103 +1612,103 @@ translate schinese shop_restock_intro_0417c7d0:
 translate schinese shop_restock_intro_247cb2ad:
 
     # shopgirl "Say, I've noticed you come by often these days..."
-    shopgirl "我注意到你最近常来这里..."
+    shopgirl "你最近经常来照顾我的生意..."
 
 # game/BKevents.rpy:2522
 translate schinese shop_restock_intro_336a7f29:
 
     # you "Well, yeah. I've got a business to run, and your items can be useful to me..."
-    you "是啊,我有生意要经营,你的物品对我很有用..."
+    you "是啊,我是个生意人，我需要各种各样的东西..."
 
 # game/BKevents.rpy:2524
 translate schinese shop_restock_intro_cccebaa7:
 
     # shopgirl "But I've noticed sometimes you come and leave empty-handed. That's just... *sad face*"
-    shopgirl "但我有时注意到你来了又空手而归,真的是....*伤心的表情*"
+    shopgirl "但有时候你只是进来看看就走了....*伤心的表情*"
 
 # game/BKevents.rpy:2526
 translate schinese shop_restock_intro_ceadf0a1:
 
     # you "Well, yeah, sometimes I just don't find what I want..."
-    you "是啊,有时候我就是找不到想要的东西..."
+    you "这不怪我，宝贝儿。有些我想要的东西你这里不一定卖..."
 
 # game/BKevents.rpy:2528
 translate schinese shop_restock_intro_558be043:
 
     # shopgirl "I see! Then, I have a solution for you. Hear me out. We could expand our... relationship."
-    shopgirl "我明白了!那么,我有一个解决方案。听我说。我们可以扩展一下...关系。"
+    shopgirl "原来如此!我有个方案能够让你买到更多的商品...我们可以增进一下....。"
 
 # game/BKevents.rpy:2530
 translate schinese shop_restock_intro_5fef97bf:
 
     # you "Business, or pleasure?"
-    you "生意还是情趣?"
+    you "增进感情还是合作?"
 
 # game/BKevents.rpy:2534
 translate schinese shop_restock_intro_b82531ce:
 
     # shopgirl "Business {i}is{/i} pleasure, darling... *giggle*"
-    shopgirl "生意{i}就是{/i}快乐,亲爱的...*轻笑*"
+    shopgirl "增进合作{i}就是{/i}增进感情,亲爱的...*轻笑*"
 
 # game/BKevents.rpy:2536
 translate schinese shop_restock_intro_66df0f90:
 
     # shopgirl "You see, if you cover parts of my expenses, I could {b}restock my inventory{/b} more regularly. It's costly of course, but useful, right?"
-    shopgirl "你看,如果你承担一部分我的开支,我就可以{b}更新存货{/b}得更频繁一些。当然这样做很费钱,但对你也很有用吧?"
+    shopgirl "你看,我平时要看着店面腾不开手,如果你可以招募一些劳动力帮我卸货，我就能有更多的时间{b}更新商品{/b}。虽然这要花点小钱，但我相信你不会介意吧?"
 
 # game/BKevents.rpy:2538
 translate schinese shop_restock_intro_a9673c51:
 
     # shopgirl "I will only do it once a day, though. It's a lot of work..."
-    shopgirl "不过我一天只能这样做一次,太累了..."
+    shopgirl "不过我一天也只能更新一次商品，清点账目太累了..."
 
 # game/BKevents.rpy:2540
 translate schinese shop_restock_intro_2ccb1047:
 
     # you "Interesting. Go on."
-    you "听起来很有趣。请说下去。"
+    you "有点意思。接着说。"
 
 # game/BKevents.rpy:2542
 translate schinese shop_restock_intro_a5111acb:
 
     # shopgirl "In addition, I am looking to {b}extend the shop counter{/b}, but I am missing some materials."
-    shopgirl "此外,我正打算{b}扩大商店柜台{/b},但我缺少一些材料。"
+    shopgirl "此外,我也打算换一个更大的{b}商品货架{/b},但我缺少一些材料。"
 
 # game/BKevents.rpy:2544
 translate schinese shop_restock_intro_acd889a9:
 
     # shopgirl "If you provide me with the right resources, I could stock more items, increasing the choice for you!"
-    shopgirl "如果您能提供我所需的资源,我就能增加库存,为您提供更多选择!"
+    shopgirl "如果你能给我带来一些材料,我就能让工匠做一个更大的货架,到时候就会有更多的商品!"
 
 # game/BKevents.rpy:2546
 translate schinese shop_restock_intro_2f9bdf1b:
 
     # you "That sounds good. What do you need?"
-    you "听起来不错。你需要什么?"
+    you "听起来不错。你需要什么材料?"
 
 # game/BKevents.rpy:2548
 translate schinese shop_restock_intro_85578647:
 
     # shopgirl "Well, first, I'd need {b}5 pieces of wood{/b} to add a new shelf."
-    shopgirl "首先,我需要{b}5块木材{/b}来添加一个新的货架。"
+    shopgirl "首先,需要{b}5块木材{/b}来做一个新的货架。"
 
 # game/BKevents.rpy:2550
 translate schinese shop_restock_intro_73db48f4:
 
     # you "Got it."
-    you "明白了。"
+    you "交给我吧。"
 
 # game/BKevents.rpy:2552
 translate schinese shop_restock_intro_37ef5819:
 
     # "From now on, you can {b}restock{/b} any shop once a day for a hefty sum of gold."
-    "从现在开始,你每天都可以{b}刷新{/b}一次商店,但需要支付大量金币来。"
+    "从现在开始,你每天都可以消耗金币来{b}刷新{/b}一次商店。"
 
 # game/BKevents.rpy:2554
 translate schinese shop_restock_intro_b50cf8fd:
 
     # "You can also improve the main shop's {b}inventory size{/b} by spending resources."
-    "你也可以通过消耗资源来扩大商店的{b}库存容量{/b}。"
+    "你也可以通过提供老板娘她需要的材料来扩大商店的{b}商品数量{/b}。"
 
 # game/BKevents.rpy:2589
 translate schinese visit_thieves_guild_75fd26da:
@@ -1726,25 +1726,25 @@ translate schinese visit_thieves_guild_2b2883c7:
 translate schinese thieves_guild_menu_cf938780:
 
     # renza "Hey, it's rude to stare!" nointeract
-    renza "嘿,看呆了可不太礼貌!" nointeract
+    renza "嘿,盯着那看可不太礼貌!" nointeract
 
 # game/BKevents.rpy:2605
 translate schinese thieves_guild_menu_6c4c57a0:
 
     # renza "I give you access to some of our merchandise. It's stuff that, err, fell off the back of a cart, so to speak."
-    renza "我会给你一些独特的商品。说白了,就是我们从商队那...额..商队不小心落下的东西。"
+    renza "我会给你一些特价的商品。说白了,就是我们从商队那捡来的...额..商队不小心落下的东西。"
 
 # game/BKevents.rpy:2607
 translate schinese thieves_guild_menu_94a21cda:
 
     # renza "As long as we understand each other and you keep your side of the deal, you can come here once a week. I'll have an item for sale, for a bargain price compared to regular item shops."
-    renza "只要我们达成共识,你遵守规矩,你每周都可以来这里。我会有一件特价商品供你选择。"
+    renza "只要你遵守规矩,你每周都可以来这里一次。我会有一件特价商品供你选择。"
 
 # game/BKevents.rpy:2609
 translate schinese thieves_guild_menu_70db56a6:
 
     # renza "But you must understand and accept my rules"
-    renza "但你必须理解并接受我的规矩"
+    renza "但你必须对其他人保密！"
 
 # game/BKevents.rpy:2611
 translate schinese thieves_guild_menu_2879f742:
@@ -2686,19 +2686,19 @@ translate schinese vital_scanners_built_9e8bd5f6:
 translate schinese vital_scanners_built_a647b18c:
 
     # you "Anyway. Sill, gather the girls here."
-    you "总之,西尔,把姑娘们都叫过来。"
+    you "总之,希露,把姑娘们都叫过来。"
 
 # game/BKevents.rpy:3292
 translate schinese vital_scanners_built_cbb024e8:
 
     # you "Ahem, I don't have any girls at the brothel right now..."
-    you "咳,我现在在妓院里没有任何姑娘..."
+    you "咳,我现在在青楼里没有任何姑娘..."
 
 # game/BKevents.rpy:3294
 translate schinese vital_scanners_built_0f606445:
 
     # gina "What?!? What kind of brothel owner are you!"
-    gina "什么?!?你这种妓院老板是怎么回事!"
+    gina "什么?!?你这种青楼老板是怎么回事!"
 
 # game/BKevents.rpy:3296
 translate schinese vital_scanners_built_8051e8a0:
@@ -2986,7 +2986,7 @@ translate schinese send_to_farm_menu_09b7fafb:
 translate schinese send_to_farm_menu_fff596d2:
 
     # you "I'm the one in charge here. Get yourself ready. Gizel will pick you up shortly."
-    you "我才是这里的主人。准备好自己吧,吉泽尔很快就会来接你。"
+    you "我才是这里的主人。准备好自己吧,吉泽很快就会来接你。"
 
 # game/BKevents.rpy:3545
 translate schinese send_to_farm_menu_a2f3ccdd:
@@ -3058,7 +3058,7 @@ translate schinese send_to_farm_menu_6329550c:
 translate schinese send_to_farm_menu_f0f21f79:
 
     # "Gizel didn't lift a finger to help you."
-    "吉泽尔丝毫没有伸出援手。"
+    "吉泽丝毫没有伸出援手。"
 
 # game/BKevents.rpy:3629
 translate schinese send_to_farm_menu_2d414750:
@@ -3070,7 +3070,7 @@ translate schinese send_to_farm_menu_2d414750:
 translate schinese send_to_farm_menu_8f79dfba:
 
     # "Gizel watched the fight with amusement. She grabs [girl.fullname] by the hair."
-    "吉泽尔饶有兴趣地观看了整个打斗。她抓住[girl.fullname]的头发。"
+    "吉泽饶有兴趣地观看了整个打斗。她抓住[girl.fullname]的头发。"
 
 # game/BKevents.rpy:3652
 translate schinese send_to_farm_menu_9fdd4096:
@@ -3082,7 +3082,7 @@ translate schinese send_to_farm_menu_9fdd4096:
 translate schinese farm_max_skill_ec9b24d8:
 
     # gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
-    gizel normal "我已经将[girl.fullname]的{b}[skill]{/b}技能提升到了她目前的最高值。"
+    gizel normal "我已经将[girl.fullname]的{b}[cntext]{/b}技能提升到了她目前的最高值。"
 
 # game/BKevents.rpy:3691
 translate schinese farm_max_skill_94d6c557:
@@ -3100,7 +3100,7 @@ translate schinese farm_max_skill_7fa55369:
 translate schinese farm_max_pref_9471933a:
 
     # gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
-    gizel normal "[girl.fullname]现在对{b}[act]{/b}着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
+    gizel normal "[girl.fullname]现在对{b}[cntext]{/b}着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
 
 # game/BKevents.rpy:3715
 translate schinese farm_max_pref_94d6c557:
@@ -3136,7 +3136,7 @@ translate schinese farm_discovered_weakness_6ca493b1:
 translate schinese farm_discovered_weakness_a6f51d66:
 
     # gizel upset "Hey! Don't you give me orders! Now, I'll go back to training... {i}Out of my own free will!{/i}"
-    gizel upset "嘿!别对我发号施令!现在我要回去训练了..。{i}出于我自己的意愿!{/i}"
+    gizel upset "嘿!别对我发号施令!现在我要回去训练了...{i}出于我自己的意愿!{/i}"
 
 # game/BKevents.rpy:3763
 translate schinese farm_discovered_weakness_d05c31d2:
@@ -3310,13 +3310,13 @@ translate schinese farm_change_training_mode_57d6c487:
 translate schinese farm_change_training_mode_3335cf76:
 
     # "In hard mode, Gizel will overcome moderate resistance on her part."
-    "在强硬模式下,吉泽尔会克服她的适度抵抗。"
+    "在强硬模式下,吉泽会克服她的适度抵抗。"
 
 # game/BKevents.rpy:3907
 translate schinese farm_change_training_mode_d8ba7e01:
 
     # "In this mode, Gizel will ignore all red lines and force her to do anything."
-    "在这种模式下,吉泽尔将忽略所有禁忌事项并强迫她做任何事情。"
+    "在这种模式下,吉泽将忽略所有禁忌事项并强迫她做任何事情。"
 
 # game/BKevents.rpy:3918
 translate schinese farm_change_training_mode_4d105c3f:
@@ -3328,7 +3328,7 @@ translate schinese farm_change_training_mode_4d105c3f:
 translate schinese farm_change_training_mode_777372fe:
 
     # "You don't want to cause her too much distress. Gizel will separate [girl.name] from [girl.weakness]s whenever possible."
-    "你不想让她受太多痛苦。吉泽尔会尽可能把[girl.name]与她的[girl.weakness]分开。"
+    "你不想让她受太多痛苦。吉泽会尽可能把[girl.name]与她的[girl.weakness]分开。"
 
 # game/BKevents.rpy:3934
 translate schinese farm_take_out_60e465a4:
@@ -3346,7 +3346,7 @@ translate schinese farm_take_out_64cc7863:
 translate schinese farm_take_out_7f5e4217:
 
     # gizel normal "And just where do you think you can put that wench? Your brothel is full."
-    gizel normal "那你打算把那个婊子放在哪里?你的妓院已经满了。"
+    gizel normal "那你打算把那个婊子放在哪里?你的青楼已经满了。"
 
 # game/BKevents.rpy:3968
 translate schinese exit_farm_3424b2db:
@@ -3376,13 +3376,13 @@ translate schinese exit_farm_77245fb1:
 translate schinese exit_farm_5811b00a:
 
     # "[girl.fullname] is back to work at the brothel as a [girl.job]."
-    "[girl.fullname]已经回到妓院,担任[girl.job]的工作。"
+    "[girl.fullname]已经回到青楼,担任[girl.job]的工作。"
 
 # game/BKevents.rpy:3988
 translate schinese exit_farm_fdbfd284:
 
     # "[girl.fullname] is back at the brothel and is resting."
-    "[girl.fullname]已经回到妓院休息。"
+    "[girl.fullname]已经回到青楼休息。"
 
 # game/BKevents.rpy:3994
 translate schinese exit_farm_79c7b6ac:
@@ -3412,13 +3412,13 @@ translate schinese exit_farm_34067ce9:
 translate schinese exit_farm_5811b00a_1:
 
     # "[girl.fullname] is back to work at the brothel as a [girl.job]."
-    "[girl.fullname]已经回到妓院,担任[girl.job]的工作。"
+    "[girl.fullname]已经回到青楼,担任[girl.job]的工作。"
 
 # game/BKevents.rpy:4027
 translate schinese exit_farm_fdbfd284_1:
 
     # "[girl.fullname] is back at the brothel and is resting."
-    "[girl.fullname]已经回到妓院休息。"
+    "[girl.fullname]已经回到青楼休息。"
 
 # game/BKevents.rpy:4032
 translate schinese exit_farm_79c7b6ac_1:
@@ -3496,7 +3496,7 @@ translate schinese zodiac_intro_0080067d:
 translate schinese zodiac_intro_777d2b41:
 
     # you "Oh, Sill... What is it this time?"
-    you "哦,西尔...这次又是什么事?"
+    you "哦,希露...这次又是什么事?"
 
 # game/BKevents.rpy:4112
 translate schinese zodiac_intro_9cd87925:
@@ -3550,7 +3550,7 @@ translate schinese zodiac_intro_eaf14262:
 translate schinese zodiac_intro_957f88d3:
 
     # you "Sill... You sound weird..."
-    you "西尔...你听起来有点奇怪..."
+    you "希露...你听起来有点奇怪..."
 
 # game/BKevents.rpy:4139
 translate schinese zodiac_intro_0a33cf01:
@@ -4479,8 +4479,8 @@ translate schinese contract_MC_event_c074fd88:
 # game/BKevents.rpy:4972
 translate schinese contract_MC_event_c10602c0:
 
-    # you "{font=SFBurlingtonScript.TTF}Nogephaii ahagl ymg', err...{/font}\nC'm'on, lady, wake up!"
-    you "{font=SFBurlingtonScript.TTF}Nogephaii ahagl ymg', err...{/font}\n来,女士,醒醒!"
+    # you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\nC'm'on, lady, wake up!"
+    you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\n来,女士,醒醒!"
 
 # game/BKevents.rpy:4976
 translate schinese contract_MC_event_b8f3c672:
@@ -4528,7 +4528,7 @@ translate schinese contract_MC_event_ccf1cf47:
 translate schinese contract_MC_event_7413be73:
 
     # "In spite of its doubtful origins, you nevertheless have the girls try the beverage back at the brothel. They actually like it, and receive a boost to their energy and morale."
-    "尽管来源可疑,你还是让姑娘们在妓院里试了试这种饮料。她们居然很喜欢,精神状态和士气都得到了提升。"
+    "尽管来源可疑,你还是让姑娘们在青楼里试了试这种饮料。她们居然很喜欢,精神状态和士气都得到了提升。"
 
 # game/BKevents.rpy:5008
 translate schinese contract_MC_event_7124f3dc:
@@ -5218,7 +5218,7 @@ translate schinese contract_MC_event_63e1c2ed:
 translate schinese contract_MC_event_119ef155:
 
     # "Blue witch" "Are you mad? How could I befriend this slut? She couldn't even summon a minor demon to save her life, but she got ahead at school because she was fucking the Principal..."
-    "Blue witch" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先……"
+    "Blue witch" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先...."
 
 # game/BKevents.rpy:5505
 translate schinese contract_MC_event_62dff14b:
@@ -6124,7 +6124,7 @@ translate schinese tax_intro_menu_c68e0f7a:
 translate schinese tax_intro_menu_222b26a9:
 
     # taxgirl "But without protection money, it's possible that a squad of goons headed by a one-eyed ogre called 'Gutspill' will visit your brothel at night, set fire to the place, and chop your manhood off..."
-    taxgirl "但是没有保护费,可能会有一支由一只独眼食人魔'肠裂'率领的打手晚上来你的妓院,纵火烧毁,并砍掉你的下身..."
+    taxgirl "但是没有保护费,可能会有一支由一只独眼食人魔'肠裂'率领的打手晚上来你的青楼,纵火烧毁,并砍掉你的下身..."
 
 # game/BKevents.rpy:6022
 translate schinese tax_intro_menu_daac11c7:
@@ -6814,7 +6814,7 @@ translate schinese tax_relationship_test_06434bf4:
 translate schinese tax_relationship_test_2d0e8e84:
 
     # taxgirl "Hmmm... So you'll do it."
-    taxgirl "嗯……那你就去做吧。"
+    taxgirl "嗯....那你就去做吧。"
 
 # game/BKevents.rpy:6419
 translate schinese tax_relationship_test_4c0f01d3:
@@ -6856,7 +6856,7 @@ translate schinese tax_relationship_test_f7d77590:
 translate schinese tax_relationship_test_9ee11710:
 
     # you "Look at you... These magic side-effects really played a number on you."
-    you "看看你……这些魔法副作用真是对你造成了不小的影响。"
+    you "看看你....这些魔法副作用真是对你造成了不小的影响。"
 
 # game/BKevents.rpy:6439
 translate schinese tax_relationship_test_ecf4de0d:
@@ -6880,7 +6880,7 @@ translate schinese tax_relationship_test_023e2484:
 translate schinese tax_relationship_test_a24a30a3:
 
     # you "Ooh... *drool*"
-    you "哦……*流口水*"
+    you "哦....*流口水*"
 
 # game/BKevents.rpy:6447
 translate schinese tax_relationship_test_eb36714a:
@@ -6892,7 +6892,7 @@ translate schinese tax_relationship_test_eb36714a:
 translate schinese tax_relationship_test_bafe4aed:
 
     # taxgirl "Do... Do me."
-    taxgirl "来……干我。"
+    taxgirl "来....干我。"
 
 # game/BKevents.rpy:6451
 translate schinese tax_relationship_test_cdd9076e_1:
@@ -6904,7 +6904,7 @@ translate schinese tax_relationship_test_cdd9076e_1:
 translate schinese tax_relationship_test_d17838fd:
 
     # taxgirl "Fuck me now, [MC.name]. Use my pussy, I don't care... I want it. Now."
-    taxgirl "现在就操我吧,[MC.name]。使用我的阴户,我不在乎……我想要。现在就要。"
+    taxgirl "现在就操我吧,[MC.name]。使用我的阴户,我不在乎....我想要。现在就要。"
 
 # game/BKevents.rpy:6455
 translate schinese tax_relationship_test_94889a7d:
@@ -6982,7 +6982,7 @@ translate schinese tax_relationship_test_ba953364:
 translate schinese tax_relationship_test_635b6167:
 
     # taxgirl "Would you... Would you fuck me again?" nointeract
-    taxgirl "你能否……再次操我?" nointeract
+    taxgirl "你能否....再次操我?" nointeract
 
 # game/BKevents.rpy:6497
 translate schinese tax_relationship_test_0b71aca9:
@@ -7696,13 +7696,13 @@ translate schinese pet_armageddon_9db72c03:
 translate schinese pet_armageddon_8bb3012c:
 
     # you "THIS TIME WILL BE... BIGGER!" with vpunch
-    you "这次将会更加……大规模！" with vpunch
+    you "这次将会更加....大规模！" with vpunch
 
 # game/BKevents.rpy:6970
 translate schinese pet_armageddon_5ec970d0:
 
     # gizel shy "What... What's got into you..."
-    gizel shy "什么……发生了什么……"
+    gizel shy "什么....发生了什么...."
 
 # game/BKevents.rpy:6972
 translate schinese pet_armageddon_2f6a0135:
@@ -7738,7 +7738,7 @@ translate schinese pet_armageddon_38c6ecef:
 translate schinese pet_armageddon_e5da5bdd:
 
     # you "They're coming for us... I can feel it..."
-    you "他们来了……我能感觉到……"
+    you "他们来了....我能感觉到...."
 
 # game/BKevents.rpy:6999
 translate schinese pet_armageddon_be12874b:
@@ -7762,13 +7762,13 @@ translate schinese pet_armageddon_7d71d2f5:
 translate schinese pet_armageddon_6e80e1cd:
 
     # "Out of thin air, dark shapes materialize near the portal, falling towards you. At first, you cannot distinguish their features, but soon..."
-    "从虚空中,黑暗的形状在传送门附近凝聚,向你坠落下来。起初你无法辨认它们的特征,但很快……"
+    "从虚空中,黑暗的形状在传送门附近凝聚,向你坠落下来。起初你无法辨认它们的特征,但很快...."
 
 # game/BKevents.rpy:7019
 translate schinese pet_armageddon_054ba3b3:
 
     # gizel surprise "By the seven hells... Are these... "
-    gizel surprise "在七大地狱之中……这些是……"
+    gizel surprise "在七大地狱之中....这些是...."
 
 # game/BKevents.rpy:7021
 translate schinese pet_armageddon_ceb9d123:
@@ -7804,7 +7804,7 @@ translate schinese pet_armageddon_d3663c51:
 translate schinese pet_armageddon_3f88f565:
 
     # you "YOU... SHALL... NOT... PASS!!!"
-    you "你……不得……越过!"
+    you "你....不得....越过!"
 
 # game/BKevents.rpy:7044
 translate schinese pet_armageddon_b8813e87:
@@ -7876,7 +7876,7 @@ translate schinese pet_armageddon_521cf9c4:
 translate schinese pet_armageddon_41862aff:
 
     # you "Actually... That won't teach them a lesson, BECAUSE THEY BE DEAD!!!" with vpunch
-    you "其实……这不会给他们一个教训,因为他们已经死了!!!" with vpunch
+    you "其实....这不会给他们一个教训,因为他们已经死了!!!" with vpunch
 
 # game/BKevents.rpy:7084
 translate schinese pet_armageddon_d7140e45:
@@ -7894,19 +7894,19 @@ translate schinese pet_armageddon_730347e3:
 translate schinese is_broken_82ecdcdc:
 
     # "Gizel asked for you to come to the farm this morning. She said you'd better hurry."
-    "吉泽尔要求你今天早上去农场一趟。她说你最好赶紧过去。"
+    "吉泽要求你今天早上去农场一趟。她说你最好赶紧过去。"
 
 # game/BKevents.rpy:7130
 translate schinese is_broken_2e1a0b2a:
 
     # gizel upset "It seems using her to conduct evil powers have cost her the last of her {a=help:sanity}sanity{/a}... She's good for nothing now. She'll only harm herself."
-    gizel upset "看来利用她来施展邪恶力量,已经耗尽了她仅存的{a=help:sanity}理智{/a}……她现在什么也做不了了。她只会伤害自己。"
+    gizel upset "看来利用她来施展邪恶力量,已经耗尽了她仅存的{a=help:sanity}理智{/a}....她现在什么也做不了了。她只会伤害自己。"
 
 # game/BKevents.rpy:7134
 translate schinese is_broken_228883fb:
 
     # gizel angry "Like I said, she's good for nothing at the brothel or even the farm in that state. You do have a few options, though."
-    gizel angry "正如我说的,她现在这种状态,在妓院或农场里都没有用处。不过你还是有几个选择。"
+    gizel angry "正如我说的,她现在这种状态,在青楼或农场里都没有用处。不过你还是有几个选择。"
 
 # game/BKevents.rpy:7140
 translate schinese broken_explain_options_15fc1efb:
@@ -7984,7 +7984,7 @@ translate schinese broken_explain_options_a26a5b9e:
 translate schinese broken_explain_options_09575e0f:
 
     # you "But I thought only licensed brothels were authorized in Zan?"
-    you "但是我以为只有持牌的妓院才被允许在赞城内运营?"
+    you "但是我以为只有持牌的青楼才被允许在赞城内运营?"
 
 # game/BKevents.rpy:7168
 translate schinese broken_explain_options_49d55848:
@@ -8218,7 +8218,7 @@ translate schinese acquire_girl_d4f4cfcb:
 translate schinese acquire_girl_1af223e0:
 
     # sill "Sorry Master, I'm afraid you don't have room in your brothel for another girl." nointeract
-    sill "很抱歉主人,我恐怕你的妓院里已经没有多余的地方收留另一个女孩了。" nointeract
+    sill "很抱歉主人,我恐怕你的青楼里已经没有多余的地方收留另一个女孩了。" nointeract
 
 # game/BKevents.rpy:7471
 translate schinese acquire_girl_6660ebc4:
@@ -8254,7 +8254,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:334
     old "Change your brothel settings"
-    new "更改你的红灯区设置"
+    new "更改青楼设置"
 
     # game/BKevents.rpy:603
     old "You have reached your current goal:\n"
@@ -8262,7 +8262,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:603
     old "\n\nYou may now advance to the next chapter!"
-    new "\n\n你现在可以进入下一章节了!"
+    new "\n\n你现在可以推进到下一章节了!"
 
     # game/BKevents.rpy:605
     old "Goal reached!"
@@ -8294,7 +8294,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:713
     old "New license available!"
-    new "新许可证可用!"
+    new "新的许可证可用!"
 
     # game/BKevents.rpy:713
     old "You have received a brand new "
@@ -8538,11 +8538,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:3690
     old "Keep training [skill]"
-    new "继续训练[skill]"
+    new "继续训练[cntext]"
 
     # game/BKevents.rpy:3714
     old "Keep training [act]"
-    new "继续训练[act]"
+    new "继续训练[cntext]"
 
     # game/BKevents.rpy:3750
     old "Yes, do that"
@@ -8806,7 +8806,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:7426
     old "Add a new room to your brothel ([price1] gold)"
-    new "在你的妓院添加一个新房间([price1]金币)"
+    new "在你的青楼添加一个新房间([price1]金币)"
 
     # game/BKevents.rpy:7426
     old "Add a new pen to your farm ([price2] gold)"

@@ -2096,7 +2096,7 @@ label cheat_menu():
 
     menu:
 
-        sill "WARNING! These cheats are for testing purposes, and may easily break your game! Only call this menu from the Home screen."
+        sill "警告! 作弊功能只是用于测试, 否则会毁了你的游戏体验! 只有在主界面才能使用作弊按钮。"
 
 #        "Test line counting" if debug_mode:
 
@@ -2145,7 +2145,7 @@ label cheat_menu():
 #                    renpy.say("exceptional", and_text([it.name for it in dis.items["exceptional"]]))
 
 
-        "Test event" if debug_mode:
+        "测试游戏事件" if debug_mode:
 
             $ test_event_name = renpy.input("Event name", default=test_event_name)
 
@@ -2189,19 +2189,19 @@ label cheat_menu():
 
 #            return
 
-        "Cheat modifier":
+        "调整游戏难度":
 
             menu:
                 "The cheat modifier is a float number affecting stat gains, xp, jp, reputation and gold earned by your girls. Use it to adjust the difficulty level (e.g.: a modifier of 1.5 gives your girl a 50\% increase); a modifier of 0.75 decreases gains by 25\%)"
 
-                "Set global cheat modifier":
+                "调整全局的难度系数":
                     $ global_cheat_modifier = float(renpy.input("Cheat modifier", default = 1.0))
 
                     python:
                         for cheat in cheat_modifier.keys():
                             cheat_modifier[cheat] = global_cheat_modifier
 
-                "Set modifiers separately":
+                "自定义各项数值系数":
                     $ cheat_modifier["gold"] = float(renpy.input("Gold cheat modifier", default = cheat_modifier["gold"]))
                     $ cheat_modifier["xp"] = float(renpy.input("XP cheat modifier", default = cheat_modifier["xp"]))
                     $ cheat_modifier["jp"] = float(renpy.input("JP cheat modifier", default = cheat_modifier["jp"]))
@@ -2210,40 +2210,40 @@ label cheat_menu():
                     $ cheat_modifier["prestige"] = float(renpy.input("Prestige cheat modifier", default = cheat_modifier["prestige"]))
 
 
-        "Gold":
+        "获得大量金币":
 
             menu:
 
-                "Get 1,000 gold":
+                "获得一千金币":
                     $ MC.gold += 1000
 
-                "Get 10,000 gold":
+                "获得一万金币":
                     $ MC.gold += 10000
 
-                "Get 100,000 gold":
+                "获得十万金币":
                     $ MC.gold += 100000
 
-                "Custom amount":
+                "获得自定义数量金币":
                     $ MC.gold += int(renpy.input("How much?"))
 
-                "Back":
+                "返回上一级":
                     jump cheat_menu
 
 
-        "Main character":
+        "修改主角属性":
 
             menu:
-                "Level MC":
+                "提升主角等级":
                     python:
                         nb = int(renpy.input("How many levels?", default = "1"))
 
                         for i in range(nb):
                             MC.level_up(forced = True)
 
-                "Reset interactions":
+                "重置互动次数":
                     $ MC.reset_interactions()
 
-                "Check MC effects":
+                "检查增益效果":
 
                     python:
 
@@ -2252,21 +2252,21 @@ label cheat_menu():
                             renpy.say("", eff.target + " " + str(eff.value))
 
 
-                "Back":
+                "返回上一级":
 
                     jump cheat_menu
 
 
-        "Girls":
+        "修改青楼女孩们的属性":
 
             menu:
-                "Get naked":
+                "让所有的女孩都脱光衣服":
                     python:
                         for girl in MC.girls:
                             girl.naked=True
                             girl.refresh_pictures()
 
-                "Give girls perk points":
+                "让所有女孩获得天赋点数":
 
                     $ nb = int(renpy.input("Perk points", default = "1"))
 
@@ -2274,7 +2274,7 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.perk_points += nb
 
-                "Give girls upgrade points":
+                "让所有女孩获得属性点数":
 
                     $ nb = int(renpy.input("Upgrade points", default = "10"))
 
@@ -2282,52 +2282,52 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.upgrade_points += nb
 
-                "Rank girls up":
+                "晋升所有女孩的角色阶级":
                     $ nb = int(renpy.input("How many ranks", default = "1"))
                     python:
                         for girl in MC.girls:
                             for i in range(nb):
                                 girl.rank_up(forced = True)
 
-                "Level girls up":
+                "提升所有女孩的角色等级":
                     python:
                         for girl in MC.girls:
                             girl.level_up(forced = True)
 
-                "Job skill up":
+                "提高所有女孩的职业等级":
                     $ job = renpy.input("Choose skill to improve", default = "waitress").lower()
 
                     python:
                         for girl in MC.girls:
                             girl.job_up(job, forced = True)
 
-                "Raise libido and obedience" if debug:
+                "提高女孩们的性欲和服从" if debug:
                     $ val = int(renpy.input("Raise libido/obedience", default = 50))
                     python:
                         for girl in MC.girls:
                             girl.change_stat("obedience", val)
                             girl.change_stat("libido", val)
 
-                "Raise sexual preferences" if debug:
+                "提高所有女孩性行为倾向" if debug:
                     $ val = int(renpy.input("Raise all sexual preferences", default = 1000))
                     python:
                         for girl in MC.girls:
                             for s in extended_sex_acts:
                                 girl.change_preference(s, val)
 
-                "Set all girls to rest":
+                "让所有人停止工作去休息":
                     python:
                         for girl in MC.girls:
                             girl.set_job(None, forced=True)
 
-                "Sell all girls":
+                "出售掉青楼里所有的女孩":
                     python:
                         for girl in MC.girls:
                             MC.gold += girl.get_price("sell")
                         MC.girls = []
                     play sound s_gold
 
-                "Give all girls a random job":
+                "给所有人一份随机的工作":
                     python:
                         for girl in MC.girls:
                             if girl.will_do("whore"):
@@ -2335,18 +2335,18 @@ label cheat_menu():
                             else:
                                 girl.set_job(rand_choice(all_jobs))
 
-                "Fully rest girls":
+                "让女孩们得到充分的休息":
                     python:
                         for girl in MC.girls:
                             girl.change_energy(250)
                             girl.heal(99)
 
-                "Reset girl interactions":
+                "重置所有女孩的互动次数":
                     python:
                         for girl in MC.girls:
                             girl.reset_interactions()
 
-                "Change love":
+                "修改所有女孩的好感数值":
 
                     $ nb = int(renpy.input("Change", default = "10"))
 
@@ -2354,7 +2354,7 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.change_love(nb)
 
-                "Change fear":
+                "修改所有女孩的恐惧数值":
 
                     $ nb = int(renpy.input("Change", default = "10"))
 
@@ -2362,56 +2362,56 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.change_fear(nb)
 
-                "Force girl to run away" if debug_mode:
+                "强制让某个女孩逃出青楼" if debug_mode:
                     call run_away(MC.girls[0]) from _call_run_away_2
 
 
-                "Back":
+                "返回上一级菜单":
                     jump cheat_menu
 
-        "Free girls":
+        "调整城市里的陌生女孩":
 
             menu:
 
-                "Get new free girls":
+                "补充新的陌生女孩":
                     $ game.free_girls = []
                     $ update_free_girls()
                     $ cycle_free_girls()
                     $ renpy.restart_interaction()
 
-                "Update free girls":
+                "刷新新的陌生女孩":
                     $ update_free_girls()
                     $ renpy.restart_interaction()
 
-                "Cycle free girls":
+                "轮换一批陌生女孩":
                     $ cycle_free_girls()
                     $ renpy.restart_interaction()
 
-                "Reset girl interactions":
+                "重置陌生女孩互动":
                     python:
                         for girl in game.free_girls:
                             girl.reset_interactions()
 
-                "List free girls":
+                "列出所有陌生女孩":
                     python:
                         l = []
                         for g in game.free_girls:
                             l.append(g.fullname + " (id: " + str(g.id) + ")")
                         renpy.say("", "Free girls: " + and_text(l))
 
-                "Back":
+                "返回上一级菜单":
                     jump cheat_menu
 
-        "Items":
+        "刷新商店及获得道具":
 
             menu:
 
-                "Refresh shops":
+                "刷新商店货架":
 
                     $ update_shops()
 
 
-                "Get all items":
+                "获得所有道具":
 
                     python:
 
@@ -2419,7 +2419,7 @@ label cheat_menu():
 
                             MC.items.append(copy.deepcopy(it))
 
-                "Get item":
+                "获得指定道具":
 
                     $ name = renpy.input("Item name contains")
 
@@ -2431,33 +2431,33 @@ label cheat_menu():
 
                                 MC.items.append(copy.deepcopy(it))
 
-                "Clear items":
+                "清空所有道具":
 
                     $ MC.items = []
 
-                "Build all furniture":
+                "完成所有改造":
                     python:
                         for furn in all_furniture:
                             furn.build(message=False)
                         all_furniture.append(vitals_scanner)
                         all_furniture.append(billboard)
 
-                "Back":
+                "返回上一级菜单":
                     jump cheat_menu
 
-        "Tags":
+        "检查图片标签":
             menu:
-                "Check girls for missing pictures (main)":
+                "检查缺失的图片 (main)":
 
                     call check_missing_pictures("main") from _call_check_missing_pictures
 
-                "Check girls for missing pictures (optional)":
+                "检查缺失的图片 (optional)":
 
                     call check_missing_pictures("optional") from _call_check_missing_pictures_1
 
 
 
-                "Check untagged girl pics":
+                "检查没有标签的图片":
 
                     "This allows you to check if some girl pics have no usable tags (excluding the 'unused' tag)."
 
@@ -2468,18 +2468,19 @@ label cheat_menu():
                         else:
                             "No picture found missing a tag"
 
-                "Check tags for duplicates":
+                "检查有无重复的标签":
                     python:
                         for tag in tag_dict.keys():
                             for tag2 in tag_dict.keys():
                                 if tag in tag2 and tag != tag2:
                                     renpy.say("", "Warning: " + tag + " is in " + tag2 + ".")
-
-        "Others":
+                "返回上一级菜单":
+                    jump cheat_menu
+        "其他作弊功能":
 
             menu:
 
-                "Test brothel events" if debug_mode:
+                "测试青楼事件" if debug_mode:
                     python:
                         ev_list = []
                         for key, pic_list in security_pics.items():
@@ -2491,14 +2492,14 @@ label cheat_menu():
 
                         call show_night_event(ev) from _call_show_night_event_4
 
-                "Change brothel reputation":
+                "改变青楼声望":
                     $ brothel.rep = int(renpy.input("Brothel reputation", default = brothel.rep))
 
-                "Refresh slave market":
+                "刷新奴隶市场":
                     $ update_slaves()
                     jump slavemarket
 
-                "Refresh postings":
+                "刷新公告大厅":
 
                     $ update_quests()
                     $ selected_girl, available_girls = refresh_quest_girls(selected_girl, selected_quest)
@@ -2506,13 +2507,13 @@ label cheat_menu():
                 "Toggle secret locations":
                     call toggle_secrets from _call_toggle_secrets
 
-                "Skip time":
+                "跳过指定天数":
 
                     $ t = int(renpy.input("How many days do you want to skip", default = 1))
 
                     $ calendar.newday(t)
 
-                "Advance to chapter":
+                "跳转主线章节":
 
                     $ c = int(renpy.input("Advance to chapter", default = game.chapter + 1))
 
@@ -2520,28 +2521,28 @@ label cheat_menu():
 
                     jump brothel
 
-                "Change goal":
+                "改变游戏目标":
 
                     menu:
 
-                        "What type of goal are you going to achieve?"
+                        "你想在游戏中设置什么样的目标?"
 
-                        "Raise gold":
+                        "赚到足够多的钱":
                             $ _type = "gold"
                             $ val = int(renpy.input("How much gold will you need?", default = 2500))
                             $ target = 0
 
-                        "Rank up your girls":
+                        "晋升你的女孩们":
                             $ _type = "ranked"
                             $ val = int(renpy.input("Which rank will they need to reach?", default = 2))
                             $ target = renpy.input("How many girls will need to reach that rank?", default = 4)
 
-                        "Raise brothel reputation":
+                        "提高青楼的声誉":
                             $ _type = "reputation"
                             $ val = int(renpy.input("How much reputation will you need to get?", default = 250))
                             $ target = 0
 
-                        "Raise player prestige":
+                        "提高主角的声望":
                             $ _type = "prestige"
                             $ val = int(renpy.input("How much prestige will you need to collect?", default = 1000))
                             $ target = 0
@@ -2549,7 +2550,7 @@ label cheat_menu():
                     $ game.goals = (Goal(_type, val, target, channel="advance"),)
                     $ renpy.say(sill, game.get_goal_description(channel="advance"))
 
-                "Check goals" if debug_mode:
+                "检查游戏目标" if debug_mode:
 
                     $ text1 = ""
 
@@ -2569,17 +2570,17 @@ label cheat_menu():
 #                     call repair_safes() from _call_repair_safes
 
 
-                "List available story events":
+                "列出所有可用的剧情事件":
 
                     $ renpy.say("", and_text([ev.label for ev in city_events]))
 
-                "Check active brothel effects" if debug_mode:
+                "检查激活的青楼增益效果" if debug_mode:
                     python:
                         for eff_list in brothel.effect_dict.values():
                             for eff in eff_list:
                                 renpy.say("", eff.type + ", " + eff.target + ", " + str(eff.value))
 
-                "Add minion" if debug_mode:
+                "添加指定种类的仆从" if debug_mode:
                     menu:
                         "Stables":
                             $ farm.installations["pig stall"].minions.append(Minion("stallion"))
@@ -2591,13 +2592,13 @@ label cheat_menu():
                             $ farm.installations["pig stall"].minions.append(Minion("machine"))
 
 
-                "Get resources":
+                "获得指定数量的资源":
                     python:
                         nb = int(renpy.input("How many?", 50))
                         for resource in build_resources:
                             MC.gain_resource(resource, nb, message=False)
 
-                "Wound minions":
+                "让你的仆从受伤":
                     python:
                         for mn in farm.get_minions("stallion"):
                             mn.hurt = True
@@ -2607,15 +2608,15 @@ label cheat_menu():
 #                    $ calendar.set_alarm(calendar.time + 1, Event(label = "test2"))
 #                    $ calendar.set_alarm(calendar.time + 1, Event(label = "collect_wood"))
 
-                "Test special characters":
-                    "✓ [emo_heart] [emo_lightning]"
+                "测试特殊的角色":
+                    "{font=[gui.fuhao]}✓{/font} [emo_heart] [emo_lightning]"
 
-                "Back":
+                "返回上一级":
                     jump cheat_menu
 
             return
 
-        "Nothing":
+        "返回游戏界面":
 
             return
 
@@ -2630,9 +2631,9 @@ label check_missing_pictures(type):
             girl.randomize(force_original=True)
 
     menu:
-        "Choose an option"
+        "选择一个选项"
 
-        "Check all girl packs":
+        "检查所有的女孩图包":
             pass
 
         "Check a specific girl pack":

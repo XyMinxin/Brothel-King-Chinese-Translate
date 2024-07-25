@@ -451,7 +451,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4382
     old "Oh, hi. Got a new job for me?"
-    new "有新工作给我吗?还是说你想和我到房间里深入交流一下？"
+    new "需要我做些什么?还是说你想和我到马车里疼爱我一番？"
 
     # game/BKscreens.rpy:4384
     old "I'm still working on that "
@@ -518,8 +518,8 @@ translate schinese strings:
     new "用 %s 金币刷新商品(一天限一次)。"
 
     # game/BKscreens.rpy:5346
-    old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
-    new "扩容货架(+%s %s 件商品 %s )消耗 %s %s 。"
+    #old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
+    #new "扩容货架(+%s %s 件商品 %s )消耗 %s %s 。"
 
     # game/BKscreens.rpy:5348
     old "Upgrade shop"
@@ -669,16 +669,16 @@ translate schinese strings:
     new " 本周供应充足。物价下跌。"
 
     # game/BKscreens.rpy:7562
-    old "You know that [girl.name] has "
-    new "你知道 [girl.name] 有 "
+    # old "You know that [girl.name] has "
+    # new "你知道 [girl.name] 有 "
 
-    # game/BKscreens.rpy:7562
-    old " acts."
-    new "行为。"
+    # # game/BKscreens.rpy:7562
+    # old " acts."
+    # new "行为。"
 
     # game/BKscreens.rpy:7564
-    old "You do not know [girl.name]'s reaction to "
-    new "你不知道 [girl.name] 对 "
+    # old "You do not know [girl.name]'s reaction to "
+    # new "你不知道 [girl.name] 对 "
 
     # game/BKscreens.rpy:7573
     old "Lecture [girl.name] about the virtues of "
@@ -858,7 +858,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2086
     old "Farm"
-    new "奴隶农场"
+    new "农场"
 
     # game/BKscreens.rpy:2292
     old "Bu{u}y{/u}"
@@ -1224,7 +1224,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4589
     old "{b}Forecast{/b}"
-    new "{b}财报{/b}"
+    new "{b}预测{/b}"
 
     # game/BKscreens.rpy:4655
     old "All customers have been assigned."
@@ -1240,11 +1240,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4902
     old "Click to keep the brothel report showing at all times."
-    new "点击后 青楼报告总是显示状态"
+    new "点击后 青楼报告将保持显示状态"
 
     # game/BKscreens.rpy:4905
     old "Click to hide the brothel report."
-    new "点击后 隐藏青楼报告"
+    new "点击后 取消青楼报告保持显示"
 
     # game/BKscreens.rpy:4915
     old "Show brothel report"
@@ -1284,8 +1284,8 @@ translate schinese strings:
     new "无可报告项目"
 
     # game/BKscreens.rpy:4987
-    old "Today"
-    new "今天"
+    #old "Today"
+    #new "今天"
 
 
     # game/BKscreens.rpy:5472
@@ -1293,24 +1293,24 @@ translate schinese strings:
     new "{i}没有女孩符合这个任务的需求{/i}"
 
     # game/BKscreens.rpy:5489
-    old "Character"
-    new "角色"
+    #old "Character"
+    #new "角色"
 
     # game/BKscreens.rpy:5491
-    old "Difficulty"
-    new "难度"
+    #old "Difficulty"
+    #new "难度"
 
     # game/BKscreens.rpy:5510
     old "Name: "
     new "名称: "
 
     # game/BKscreens.rpy:5519
-    old "Class"
-    new "职业"
+    #old "Class"
+    #new "职业"
 
     # game/BKscreens.rpy:5537
-    old "Religion"
-    new "信仰"
+    #old "Religion"
+    #new "信仰"
 
     old "Change your Main Character's picture."
     new "更改主角的图片."
@@ -1400,40 +1400,40 @@ translate schinese strings:
     new "{i}你还没有学会任何法术。请提升等级。{/i}"
 
     # game/BKscreens.rpy:6023
-    old "Duration"
-    new "持续时间"
+    #old "Duration"
+    #new "持续时间"
 
     # game/BKscreens.rpy:6031
-    old "Cost"
-    new "消耗"
+    #old "Cost"
+    #new "消耗"
 
     # game/BKscreens.rpy:6037
-    old "Enrolled"
-    new "已报名"
+    #old "Enrolled"
+    #new "已报名"
 
     # game/BKscreens.rpy:6043
-    old "Gains"
-    new "收益"
+    #old "Gains"
+    #new "收益"
 
     # game/BKscreens.rpy:6058
     old "\nMax skill: "
     new "\n最高等级: "
 
     # game/BKscreens.rpy:6064
-    old "Reward"
-    new "奖励"
+    #old "Reward"
+    #new "奖励"
 
     # game/BKscreens.rpy:6070
-    old "Requirements"
-    new "要求"
+    #old "Requirements"
+    #new "要求"
 
     # game/BKscreens.rpy:6078
-    old "Desirable"
-    new "推荐"
+    #old "Desirable"
+    #new "推荐"
 
     # game/BKscreens.rpy:6084
-    old "Undesirable"
-    new "不推荐"
+    #old "Undesirable"
+    #new "不推荐"
 
     # game/BKscreens.rpy:6089
     old "No task is currently available."
@@ -1756,7 +1756,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7887
     old "FARM"
-    new "奴隶农场"
+    new "农场"
 
     # game/BKscreens.rpy:7888
     old "FIX"
@@ -1872,7 +1872,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7941
     # old "Stallion Bisexual"
-    # new "种马双性恋"
+    # new "种马双飞"
 
     # # game/BKscreens.rpy:7942
     # old "Stallion Group"
@@ -1900,7 +1900,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7949
     # old "Beast Bisexual"
-    # new "与野兽双性恋"
+    # new "与野兽双飞"
 
     # # game/BKscreens.rpy:7950
     # old "Beast Group"
@@ -1928,7 +1928,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7957
     # old "Monster Bisexual"
-    # new "与怪物双性恋"
+    # new "与怪物双飞"
 
     # # game/BKscreens.rpy:7958
     # old "Monster Group"
@@ -1956,7 +1956,7 @@ translate schinese strings:
 
     # # game/BKscreens.rpy:7965
     # old "Machine Bisexual"
-    # new "机械双性恋"
+    # new "机械双飞"
 
     # # game/BKscreens.rpy:7966
     # old "Machine Group"

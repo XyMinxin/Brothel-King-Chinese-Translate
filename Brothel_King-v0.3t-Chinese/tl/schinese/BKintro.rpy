@@ -2218,7 +2218,7 @@ translate schinese resume_intro4_767f64a7:
 translate schinese resume_intro4_28a1b85c:
 
     # maid "Ohh my lord... You're so forceful!"
-    maid "哦,我的主人……您真是威猛无比!"
+    maid "哦,我的主人....您真是威猛无比!"
 
 # game/BKintro.rpy:1570
 translate schinese resume_intro4_30ec90e7:
@@ -2236,7 +2236,7 @@ translate schinese resume_intro4_187c78f5:
 translate schinese resume_intro4_2e8a9f9d:
 
     # maid "Master [MC.name]... is so hard!"
-    maid "主人[MC.name]……大鸡巴好烫!"
+    maid "主人[MC.name]....大鸡巴好烫!"
 
 # game/BKintro.rpy:1580
 translate schinese resume_intro4_cbdd44d1:
@@ -2368,7 +2368,7 @@ translate schinese maid_fuck_43276370:
 translate schinese maid_fuck_16759eaf:
 
     # "Meanwhile, in Gio's room..."
-    "与此同时,在乔的私人房间里……"
+    "与此同时,在乔的私人房间里...."
 
 # game/BKintro.rpy:1664
 translate schinese maid_fuck_2151bd44:
@@ -3238,15 +3238,15 @@ translate schinese strings:
 
     # game/BKintro.rpy:132
     old "I'm kind of fond of the girl."
-    new "我对她还有些感情."
+    new "我对她有特殊的感情."
 
     # game/BKintro.rpy:132
     old "She's an investment."
-    new "她是一笔投资."
+    new "她是一笔不错的投资."
 
     # game/BKintro.rpy:132
     old "Beats me. She's a waste of space."
-    new "我也不知道为什么。她一无是处."
+    new "好问题，她一无是处."
 
     # game/BKintro.rpy:155
     old "The first night I trained her"
@@ -3254,11 +3254,11 @@ translate schinese strings:
 
     # game/BKintro.rpy:155
     old "The time we did it in public"
-    new "在大庭广众下做爱"
+    new "在大庭广众下调教她"
 
     # game/BKintro.rpy:155
     old "I spanked her silly"
-    new "我把她吊起来抽"
+    new "在家里狠狠地玩弄她"
 
     # game/BKintro.rpy:312
     old "A warrior"
@@ -3274,23 +3274,23 @@ translate schinese strings:
 
     # game/BKintro.rpy:429
     old "I am a servant of Arios, god of Light and Strength"
-    new "我是太阳神最忠实的信徒"
+    new "我是太阳神虔诚的信徒"
 
     # game/BKintro.rpy:429
     old "I worship Shalia, goddess of Shadows and Cunning"
-    new "我崇拜阴影与欺诈的黑暗之神莎莉娅"
+    new "我崇拜黑暗女神莎莉娅"
 
     # game/BKintro.rpy:429
     old "I serve none but myself"
-    new "除了我自己,我不信仰何人"
+    new "我是个理性的无神论者"
 
     # game/BKintro.rpy:504
     old "Run to her rescue"
-    new "去救她"
+    new "对她伸出援手"
 
     # game/BKintro.rpy:504
     old "Taunt her attackers"
-    new "嘲讽袭击者"
+    new "嘲讽那些歹徒"
 
     # game/BKintro.rpy:504
     old "Ignore her plea"
@@ -3302,15 +3302,15 @@ translate schinese strings:
 
     # game/BKintro.rpy:997
     old "The illuminati guild?"
-    new "光明议会?"
+    new "也许是光明议会?"
 
     # game/BKintro.rpy:997
     old "Kaizer Sauze?"
-    new "凯撒大帝?"
+    new "可能是凯撒大帝?"
 
     # game/BKintro.rpy:997
     old "Yo mamma?"
-    new "你的妈妈?"
+    new "难道是你的妈妈?"
 
     # game/BKintro.rpy:1193
     old "Well..."
@@ -3318,11 +3318,11 @@ translate schinese strings:
 
     # game/BKintro.rpy:1193
     old "Of course!"
-    new "当然!"
+    new "好主意!"
 
     # game/BKintro.rpy:1193
     old "Sure!"
-    new "当然没问题!"
+    new "没问题!"
 
     # game/BKintro.rpy:1193
     old "Fuck yeah!"

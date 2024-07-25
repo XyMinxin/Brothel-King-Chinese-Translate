@@ -22,7 +22,7 @@ init python:
                         Achievement("新的商户：卡特林", "卡特林卖小饰品，脾气很暴躁。", pic="portrait.webp", pic_path="NPC/Katryn/", target="merchant katryn"),
                         Achievement("新的商户：古里古拉", "古里古拉卖玩具、食品和用品，当她不分心的时候。", pic="portrait.webp", pic_path="NPC/Gurigura/", target="merchant gurigura"),
                         Achievement("新的商户：拉米阿斯", "拉米阿斯卖武器，不受傻瓜和讨价还价的影响。", pic="portrait.webp", pic_path="NPC/Ramias/", target="merchant ramias"),
-                        Achievement("新的商户：礼品店", "礼品店女孩卖的是……礼物。废话。", pic="portrait.webp", pic_path="NPC/Gift girl/", target="merchant giftgirl"),
+                        Achievement("新的商户：礼品店", "礼品店女孩卖的是....礼物。废话。", pic="portrait.webp", pic_path="NPC/Gift girl/", target="merchant giftgirl"),
                         Achievement("新的商户：双胞胎", "双胞胎，奥斯汀！双胞胎！", pic="body.webp", pic_path="NPC/Twins/", target="merchant twins"),
 
                         Achievement("章节 1：黑帮老大", "你帮助一帮暴徒在下水道里干一个无助的女人。", pic="portrait naked.webp", pic_path="NPC/Sewer girl/", target="c1 gang"),

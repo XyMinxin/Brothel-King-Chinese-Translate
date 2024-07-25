@@ -243,7 +243,7 @@ screen right_menu_brothel():
     hbox xalign 1.0 spacing 20:
 
         if NPC_carpenter.active and not brothel.current_building and brothel.can_build_anything() and persistent.home_screen_notifications != 2:
-            button style "rm_alert" action NullAction() hovered (tt.Action("工匠已经准备好帮你升级设施了."), SetDict(seen_alerts, "carpenter", True)):
+            button style "rm_alert" action NullAction() hovered (tt.Action("工匠已经准备好开始工作了。"), SetDict(seen_alerts, "carpenter", True)):
                 add ProportionalScale("UI/carpenter.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["carpenter"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -271,7 +271,7 @@ screen right_menu_farm():
                 ypadding 0.005
                 text_size res_font(20)
                 action Return("farm")
-                tooltip "前往奴隶农场，在那里训练你的女孩. 吉泽管理着 {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " 个女孩{/b}{/color}和 {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " 个仆从{/b}{/color}.\n({i}快捷键: {u}F{/u}{/i})"
+                tooltip "前往奴隶农场，在那里训练你的女孩. 吉泽尔管理着 {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " 个女孩{/b}{/color}和 {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " 个仆从{/b}{/color}.\n({i}快捷键: {u}F{/u}{/i})"
 
 
 ################
@@ -417,7 +417,7 @@ screen right_menu_advance():
             hbox xalign 1.0 spacing 20:
                 text ""
 
-                textbutton "进入下一章" text_size res_font(20) style_group "rm":
+                textbutton "推进到下一章" text_size res_font(20) style_group "rm":
 
                     xalign 1.0
 
@@ -428,7 +428,7 @@ screen right_menu_advance():
                     else:
                         action Function(renpy.notify, "你没有足够的金币.")
 
-                    tooltip __("花费 %s 金币,进入下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
+                    tooltip __("花费 %s 金币,推进到下一章.") % '{:,}'.format(blist[game.chapter+1].cost)
 
 
 

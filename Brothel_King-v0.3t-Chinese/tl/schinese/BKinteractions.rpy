@@ -94,7 +94,7 @@ translate chinese slave_fear_test_3e476c8f:
 translate chinese slave_naked_menu_e6324b9f:
 
     # you "Mmh, maybe we should take this further..."
-    you "嗯，也许我们应该更进一步……"
+    you "嗯，也许我们应该更进一步...."
 
 # game/BKinteractions.rpy:190
 translate chinese slave_naked_menu_11804a71:
@@ -106,7 +106,7 @@ translate chinese slave_naked_menu_11804a71:
 translate chinese slave_naked_menu_b9b8cd39:
 
     # girl.char "At... At all times? Even when going out?"
-    girl.char "在……在任何时候？甚至在外出的时候？"
+    girl.char "在....在任何时候？甚至在外出的时候？"
 
 # game/BKinteractions.rpy:194
 translate chinese slave_naked_menu_078935c2:
@@ -124,7 +124,7 @@ translate chinese slave_naked_menu_ee284995:
 translate chinese slave_naked_menu_0e5140be:
 
     # you "You seem to be just fine showing me your body... So why don't we make it interesting: you will spend the rest of the day naked!"
-    you "你让我看看你的身体似乎很好……所以，我们为什么不让它变得有趣一点呢:你将在剩下的时间里裸体度过！"
+    you "你让我看看你的身体似乎很好....所以，我们为什么不让它变得有趣一点呢:你将在剩下的时间里裸体度过！"
 
 # game/BKinteractions.rpy:211
 translate chinese slave_naked_menu_92e652c5:
@@ -142,7 +142,7 @@ translate chinese slave_naked_menu_00a3cc5c:
 translate chinese slave_naked_menu_fbf00f5d:
 
     # girl.char "Aw..."
-    girl.char "啊……"
+    girl.char "啊...."
 
 # game/BKinteractions.rpy:227
 translate chinese slave_naked_menu_95fdcba5:
@@ -172,7 +172,7 @@ translate chinese slave_beg_e46101d0:
 translate chinese slave_beg_84a9d791:
 
     # you "Hmm, maybe this can be your lesson for today... But don't test my patience, or I {i}will{/i} go back to you."
-    you "嗯，也许这可以成为你今天的课……但是不要考验我的耐心，否则我{i}会{/i}回到你身边。"
+    you "嗯，也许这可以成为你今天的课....但是不要考验我的耐心，否则我{i}会{/i}回到你身边。"
 
 # game/BKinteractions.rpy:290
 translate chinese slave_beg_46582dbe:
@@ -376,7 +376,7 @@ translate chinese slave_chat_well_being_cd87df78:
 translate chinese slave_chat_feelings_6b4a2459:
 
     # girl.char "Well..."
-    girl.char "嗯……"
+    girl.char "嗯...."
 
 # game/BKinteractions.rpy:866
 translate chinese slave_chat_feelings_b0ecb5e5:
@@ -394,7 +394,7 @@ translate chinese slave_chat_feelings_290d7571:
 translate chinese slave_chat_feelings_84d4dd26:
 
     # you "What the... Who asked for your opinion, you stupid bitch?"
-    you "什么……谁征求你的意见的，你这个傻婊子？"
+    you "什么....谁征求你的意见的，你这个傻婊子？"
 
 # game/BKinteractions.rpy:875
 translate chinese slave_chat_feelings_f1ded324:
@@ -526,7 +526,7 @@ translate chinese slave_chat_origins_06398373:
 translate chinese slave_chat_origins_cb218fe8:
 
     # girl.char "I'm sorry, Master, but where I come from isn't important. I'm here, now..."
-    girl.char "对不起，师傅，我从哪里来并不重要。我在这里，现在……"
+    girl.char "对不起，师傅，我从哪里来并不重要。我在这里，现在...."
 
 # game/BKinteractions.rpy:1098
 translate chinese slave_chat_origins_9c8a9afb:
@@ -550,7 +550,7 @@ translate chinese slave_chat_origins_cd2cdcd3:
 translate chinese slave_chat_origins_1b02f428:
 
     # girl.char "Home... Oh..."
-    girl.char "家哦……"
+    girl.char "家哦...."
 
 # game/BKinteractions.rpy:1132
 translate chinese slave_chat_origins_743d9504:
@@ -598,7 +598,7 @@ translate chinese slave_train_sex_acts_76e7b752:
 translate chinese slave_train_sex_acts_4f7088ff:
 
     # you "Today, I'll introduce you to some of my new toys..."
-    you "今天，我将向你介绍我的一些新玩具……"
+    you "今天，我将向你介绍我的一些新玩具...."
 
 # game/BKinteractions.rpy:1190
 translate chinese slave_train_sex_acts_f697fa38:
@@ -730,7 +730,7 @@ translate chinese slave_remove_fixation_3d88aec3:
 translate chinese slave_remove_fixation_71a7172f:
 
     # girl.char "Oh, Master..."
-    girl.char "哦，主人……"
+    girl.char "哦，主人...."
 
 # game/BKinteractions.rpy:1423
 translate chinese slave_remove_fixation_62a43486:
@@ -1228,7 +1228,7 @@ translate chinese slave_do_3f07bf8c:
 translate chinese slave_do_3daf2855:
 
     # you "Such a waste of time..."
-    you "真是浪费时间……"
+    you "真是浪费时间...."
 
 # game/BKinteractions.rpy:2019
 translate chinese slave_do_dfd268de:
@@ -1246,7 +1246,7 @@ translate chinese slave_do_34d95ed5:
 translate chinese slave_do_ac5a4ee4:
 
     # girl.char "I feel weird..."
-    girl.char "我觉得奇怪……"
+    girl.char "我觉得奇怪...."
 
 # game/BKinteractions.rpy:2026
 translate chinese slave_do_a5918939:
@@ -1342,25 +1342,25 @@ translate chinese slave_do_c0ebff62:
 translate chinese slave_do_e3be463b:
 
     # girl.char "Master... Please hurt me... {nw}"
-    girl.char "主人……请伤害我……{nw}"
+    girl.char "主人....请惩罚我....{nw}"
 
 # game/BKinteractions.rpy:2085
 translate chinese slave_do_8b900358:
 
     # extend "I'm a dirty, dirty slut..."
-    extend "我是个肮脏肮脏的荡妇……"
+    extend "我是个下流淫荡的母狗...."
 
 # game/BKinteractions.rpy:2087
 translate chinese slave_do_49333d8a:
 
     # extend "It's giving me so much pleasure... Ah!"
-    extend "它给了我如此多的快乐……啊！"
+    extend "它给了我如此多的快乐....啊！"
 
 # game/BKinteractions.rpy:2097
 translate chinese slave_do_2cef280f:
 
     # "[girl.name] and Sill get on top of each other."
-    "[girl.name]和希露会压在一起。"
+    "[girl.name]和希露的身躯重叠在一起。"
 
 # game/BKinteractions.rpy:2103
 translate chinese slave_do_2e211311:
@@ -1378,7 +1378,7 @@ translate chinese slave_do_ec1c841b:
 translate chinese slave_do_ac5c5a68:
 
     # "The two girls kiss and fondle each other. [girl.name] doesn't even pretend to enjoy it."
-    "这两个女孩互相亲吻、爱抚。[girl.name]至没有假装享受它。"
+    "这两个女孩互相亲吻、爱抚。[girl.name]至懒得假装享受它。"
 
 # game/BKinteractions.rpy:2113
 translate chinese slave_do_4e5075c2:
@@ -1414,7 +1414,7 @@ translate chinese slave_do_417ce18a:
 translate chinese slave_do_5d77f3a8:
 
     # "She loves fucking women and is completely bisexual now. [girl.name] and Sill know each other's body perfectly now, and bring each other off numerous times."
-    "她爱他妈的女人，现在完全是双性恋。[girl.name]现在我和希露完全了解对方的身体，并且会多次把对方带离。"
+    "她爱他妈的女人，现在完全是蕾丝边。[girl.name]现在我和希露完全了解对方的身体，并且会多次把对方带离。"
 
 # game/BKinteractions.rpy:2141
 translate chinese slave_do_923a62f2:
@@ -1558,7 +1558,7 @@ translate chinese slave_magic_57332bfb:
 translate chinese slave_magic_5c073ccd:
 
     # you "Your craving for sin and debauchery is like a thorn that tears at your soul..."
-    you "你对罪恶和放荡的渴望就像一根刺，撕裂你的灵魂……"
+    you "你对罪恶和放荡的渴望就像一根刺，撕裂你的灵魂...."
 
 # game/BKinteractions.rpy:2289
 translate chinese slave_magic_fd90911f:
@@ -1570,7 +1570,7 @@ translate chinese slave_magic_fd90911f:
 translate chinese slave_magic_5d515b4b:
 
     # you "In the realm of angels, if anything is pleasurable to us, it is pleasurable to gods..."
-    you "在天使的世界里，如果有什么是我们所喜欢的，那就是上帝所喜欢的……"
+    you "在天使的世界里，如果有什么是我们所喜欢的，那就是上帝所喜欢的...."
 
 # game/BKinteractions.rpy:2294
 translate chinese slave_magic_944a4458:
@@ -1582,7 +1582,7 @@ translate chinese slave_magic_944a4458:
 translate chinese slave_magic_6fdd9ea9:
 
     # you "Show me your true nature..."
-    you "让我看看你的本性……"
+    you "让我看看你的本性...."
 
 # game/BKinteractions.rpy:2299
 translate chinese slave_magic_d85f3a0c:
@@ -1618,7 +1618,7 @@ translate chinese slave_magic_c30eb226:
 translate chinese slave_magic_894885cd:
 
     # you "I am your lord and master... You must be ready to serve with your every hole..."
-    you "我是你的主人……你必须准备好为你的每一个洞发球……"
+    you "我是你的主人....你必须准备好为你的每一个洞发球...."
 
 # game/BKinteractions.rpy:2314
 translate chinese slave_magic_c2c8e35a:
@@ -1630,7 +1630,7 @@ translate chinese slave_magic_c2c8e35a:
 translate chinese slave_magic_83ed41b9:
 
     # you "I am your lord and master, so I can do as I please... Beg me to continue."
-    you "我是你的主人，所以我可以做我想做的……求我继续。"
+    you "我是你的主人，所以我可以做我想做的....求我继续。"
 
 # game/BKinteractions.rpy:2319
 translate chinese slave_magic_8bff543d:
@@ -1642,7 +1642,7 @@ translate chinese slave_magic_8bff543d:
 translate chinese slave_magic_8d582310:
 
     # you "Become one with your lover..."
-    you "和你的爱人成为一体……"
+    you "和你的爱人成为一体...."
 
 # game/BKinteractions.rpy:2324
 translate chinese slave_magic_18c47f1a:
@@ -1654,7 +1654,7 @@ translate chinese slave_magic_18c47f1a:
 translate chinese slave_magic_cd907445:
 
     # sill naked "Haaa! Master, it's moving inside..."
-    sill naked "哈哈！师父，它在里面动……"
+    sill naked "哈哈！师父，它在里面动...."
 
 # game/BKinteractions.rpy:2329
 translate chinese slave_magic_5f1c6466:
@@ -1768,7 +1768,7 @@ translate chinese slave_reward_sex_cbb8eaf6:
 translate chinese slave_reward_sex_04ac1ae7:
 
     # you "You deserve a little play session... Hand me the tool bag."
-    you "你应该好好玩玩……把工具袋递给我。"
+    you "你应该好好玩玩....把工具袋递给我。"
 
 # game/BKinteractions.rpy:2550
 translate chinese slave_reward_sex_cbaff687:
@@ -1924,7 +1924,7 @@ translate chinese slave_rape_aa0d15cf:
 translate chinese slave_rape_2335a399:
 
     # "No, that's not it... You proceed anyway."
-    "不，不是这样的……你继续做下去。"
+    "不，不是这样的....你继续做下去。"
 
 # game/BKinteractions.rpy:3113
 translate chinese slave_rape_7a90c4d6:
@@ -2188,7 +2188,7 @@ translate chinese slave_story1_ee86aea0:
 translate chinese slave_story1_e00bebee:
 
     # you "[girl.name]... What's wrong?"
-    you "[girl.name]……怎么了？"
+    you "[girl.name]....怎么了？"
 
 # game/BKinteractions.rpy:3449
 translate chinese slave_story1_2732f726:
@@ -2200,19 +2200,19 @@ translate chinese slave_story1_2732f726:
 translate chinese slave_story1_1526f033:
 
     # you "Well... Sure."
-    you "嗯……确定。"
+    you "嗯....确定。"
 
 # game/BKinteractions.rpy:3453
 translate chinese slave_story1_468be923:
 
     # girl.char "This happened a long time ago..."
-    girl.char "这件事发生在很久以前……"
+    girl.char "这件事发生在很久以前...."
 
 # game/BKinteractions.rpy:3460
 translate chinese slave_story1_bc9c19dc:
 
     # girl.char "Life was uneventful, until..."
-    girl.char "生活本来平淡无奇，直到……"
+    girl.char "生活本来平淡无奇，直到...."
 
 # game/BKinteractions.rpy:3462
 translate chinese slave_story1_2015a94a:
@@ -2230,7 +2230,7 @@ translate chinese slave_story1_132223ee:
 translate chinese slave_story1_f35c95cb:
 
     # girl.char "He was older than me... Tall, handsome."
-    girl.char "他比我大……高大，英俊。"
+    girl.char "他比我大....高大，英俊。"
 
 # game/BKinteractions.rpy:3470
 translate chinese slave_story1_27a69a4c:
@@ -2242,19 +2242,19 @@ translate chinese slave_story1_27a69a4c:
 translate chinese slave_story1_6d7e0a66:
 
     # girl.char "I had never met a man before, I was so shy... But he noticed me."
-    girl.char "我从来没有见过男人，我很害羞……但他注意到了我。"
+    girl.char "我从来没有见过男人，我很害羞....但他注意到了我。"
 
 # game/BKinteractions.rpy:3476
 translate chinese slave_story1_db213217:
 
     # girl.char "My hormones were raging at that time, I was just a dreamy, horny teenager..."
-    girl.char "那时我的荷尔蒙很旺盛，我只是一个爱做梦、好色的少年……"
+    girl.char "那时我的荷尔蒙很旺盛，我只是一个爱做梦、好色的少年...."
 
 # game/BKinteractions.rpy:3479
 translate chinese slave_story1_bdeb4781:
 
     # girl.char "He lured me away from my family with promises of love and wealth, telling me I would be living like a princess in the big city..."
-    girl.char "他用爱和财富的诺言把我从家里骗走，告诉我在大城市我会像公主一样生活……"
+    girl.char "他用爱和财富的诺言把我从家里骗走，告诉我在大城市我会像公主一样生活...."
 
 # game/BKinteractions.rpy:3481
 translate chinese slave_story1_083da8fd:
@@ -2266,19 +2266,19 @@ translate chinese slave_story1_083da8fd:
 translate chinese slave_story1_8378cbe2:
 
     # girl.char "He would sweet-talk me for hours, feeding me stories about how he was going to move to the noble quarters of Zan, and become a great man... With me at his side."
-    girl.char "他会甜言蜜语地跟我说上几个小时，告诉我他将如何搬到赞的贵族区，并成为一个伟大的人……有我在他身边。"
+    girl.char "他会甜言蜜语地跟我说上几个小时，告诉我他将如何搬到赞的贵族区，并成为一个伟大的人....有我在他身边。"
 
 # game/BKinteractions.rpy:3486
 translate chinese slave_story1_97313db0:
 
     # girl.char "And I believed him, I believed every word... I thought my life was becoming magical."
-    girl.char "我相信他，我相信他说的每一句话……我觉得我的生活变得不可思议。"
+    girl.char "我相信他，我相信他说的每一句话....我觉得我的生活变得不可思议。"
 
 # game/BKinteractions.rpy:3488
 translate chinese slave_story1_e6e43125:
 
     # girl.char "But... Look at me now..."
-    girl.char "但是……现在看着我……"
+    girl.char "但是....现在看着我...."
 
 # game/BKinteractions.rpy:3490
 translate chinese slave_story1_440ade1c:
@@ -2314,7 +2314,7 @@ translate chinese slave_story1_ab2332d7:
 translate chinese slave_story1_f80f52c4:
 
     # girl.char "So I took my life's savings... I gave a last look to my room, the only place I had known so far..."
-    girl.char "所以我拿了我一生的积蓄……我最后看了一眼我的房间，这是我到目前为止唯一知道的地方……"
+    girl.char "所以我拿了我一生的积蓄....我最后看了一眼我的房间，这是我到目前为止唯一知道的地方...."
 
 # game/BKinteractions.rpy:3511
 translate chinese slave_story1_13fe3536:
@@ -2332,7 +2332,7 @@ translate chinese slave_story1_d96db41e:
 translate chinese slave_story1_4865a568:
 
     # girl.char "That night, riding behing the man I loved along the dark roads, looking up at the stars, I thought I was the luckiest girl alive..."
-    girl.char "那天晚上，我跟在我爱的男人后面，在黑暗的路上，仰望星空，我觉得自己是世界上最幸运的女孩……"
+    girl.char "那天晚上，我跟在我爱的男人后面，在黑暗的路上，仰望星空，我觉得自己是世界上最幸运的女孩...."
 
 # game/BKinteractions.rpy:3517
 translate chinese slave_story1_ab2a9776:
@@ -2350,13 +2350,13 @@ translate chinese slave_story1_0409ebc3:
 translate chinese slave_story1_f7f27b77:
 
     # girl.char "That's where he wanted to 'get to know me'... But I was young and shy, and I only agreed to give him head at first. That made him mad."
-    girl.char "这就是他想“了解我”的地方……但我又年轻又害羞，一开始我只同意给他一个头。这让他很生气。"
+    girl.char "这就是他想“了解我”的地方....但我又年轻又害羞，一开始我只同意给他一个头。这让他很生气。"
 
 # game/BKinteractions.rpy:3523
 translate chinese slave_story1_a90d4179:
 
     # girl.char "That's when... That's when he beat me up for the first time."
-    girl.char "那时候……那是他第一次打我。"
+    girl.char "那时候....那是他第一次打我。"
 
 # game/BKinteractions.rpy:3525
 translate chinese slave_story1_bd8f7448:
@@ -2380,7 +2380,7 @@ translate chinese slave_story1_266b6b46:
 translate chinese slave_story1_c1da3d17:
 
     # girl.char "..."
-    girl.char "……"
+    girl.char "...."
 
 # game/BKinteractions.rpy:3540
 translate chinese slave_story1_391272e2:
@@ -2410,7 +2410,7 @@ translate chinese slave_story1_7d0e7d23:
 translate chinese slave_story1_4390ad18:
 
     # girl.char "I thought life was so unfair. What a way to repay me for loving him with all my heart..."
-    girl.char "我觉得生活太不公平了。这是一种怎样的方式来报答我全心全意爱他……"
+    girl.char "我觉得生活太不公平了。这是一种怎样的方式来报答我全心全意爱他...."
 
 # game/BKinteractions.rpy:3553
 translate chinese slave_story1_67dff3b0:
@@ -2422,7 +2422,7 @@ translate chinese slave_story1_67dff3b0:
 translate chinese slave_story1_3659f66b:
 
     # girl.char "I quickly learned that I was supposed to do anything they asked, or he would beat me savagely. They made me do so many things..."
-    girl.char "我很快意识到，他们要我做什么我就做什么，否则他就会狠狠地打我。他们让我做了很多事情……"
+    girl.char "我很快意识到，他们要我做什么我就做什么，否则他就会狠狠地打我。他们让我做了很多事情...."
 
 # game/BKinteractions.rpy:3557
 translate chinese slave_story1_54a1b521:
@@ -2434,13 +2434,13 @@ translate chinese slave_story1_54a1b521:
 translate chinese slave_story1_ff357462:
 
     # girl.char "For the longest time, I tried to believe that his feelings for me were real. When he was in a good mood, he called me all sorts of sweet names, promised me the world, saying this was all temporary..."
-    girl.char "很长一段时间，我都试着相信他对我的感情是真实的。当他心情好的时候，他对我百般甜言蜜语，许诺给我整个世界，说这一切都是暂时的……"
+    girl.char "很长一段时间，我都试着相信他对我的感情是真实的。当他心情好的时候，他对我百般甜言蜜语，许诺给我整个世界，说这一切都是暂时的...."
 
 # game/BKinteractions.rpy:3561
 translate chinese slave_story1_17fd7e99:
 
     # girl.char "But when he was in his cups... He was nasty."
-    girl.char "但当他喝醉的时候……他真的很讨厌。"
+    girl.char "但当他喝醉的时候....他真的很讨厌。"
 
 # game/BKinteractions.rpy:3564
 translate chinese slave_story1_b72ff58f:
@@ -2452,7 +2452,7 @@ translate chinese slave_story1_b72ff58f:
 translate chinese slave_story1_872ea6d3:
 
     # girl.char "After he sold me to a fat merchant, he didn't even look back. I wanted him to look me in the eye at least, in spite of everything... He just stormed out, already thinking of the booze he was gonna buy with the money."
-    girl.char "在他把我卖给一个肥胖的商人后，他甚至没有回头看。我希望他至少能看着我的眼睛，不管发生什么……他怒气冲冲地走了出去，心里已经在想着要用这些钱买些什么酒。"
+    girl.char "在他把我卖给一个肥胖的商人后，他甚至没有回头看。我希望他至少能看着我的眼睛，不管发生什么....他怒气冲冲地走了出去，心里已经在想着要用这些钱买些什么酒。"
 
 # game/BKinteractions.rpy:3569
 translate chinese slave_story1_380ba0eb:
@@ -2470,19 +2470,19 @@ translate chinese slave_story1_83ac5c7a:
 translate chinese slave_story1_07c4b439:
 
     # girl.char "Best decision of my life... Although it's funny that eventually, I ended up here. But at least I made that choice."
-    girl.char "我一生中最好的决定……虽然很有趣，我最终还是来到了这里。但至少我做了那个选择。"
+    girl.char "我一生中最好的决定....虽然很有趣，我最终还是来到了这里。但至少我做了那个选择。"
 
 # game/BKinteractions.rpy:3575
 translate chinese slave_story1_9404d408:
 
     # you "This is a terrible story... I'm very sorry. You must have been so hurt."
-    you "这是一个可怕的故事……我很抱歉。你一定很伤心。"
+    you "这是一个可怕的故事....我很抱歉。你一定很伤心。"
 
 # game/BKinteractions.rpy:3577
 translate chinese slave_story1_2ebb7e41:
 
     # girl.char "I was... But years have passed, and now, there is only one thing I regret..."
-    girl.char "我是……但是多年过去了，现在，只有一件事让我后悔……"
+    girl.char "我是....但是多年过去了，现在，只有一件事让我后悔...."
 
 # game/BKinteractions.rpy:3580
 translate chinese slave_story1_8cc5d1fc:
@@ -2494,7 +2494,7 @@ translate chinese slave_story1_8cc5d1fc:
 translate chinese slave_story1_b9cd52f1:
 
     # girl.char "I... I kind of miss him. He was forcing himself on me, beating me up, abusing me... Deep down... I liked it."
-    girl.char "我……我有点想念他。他强迫自己靠近我，打我，虐待我……在内心深处……我喜欢它。"
+    girl.char "我....我有点想念他。他强迫自己靠近我，打我，虐待我....在内心深处....我喜欢它。"
 
 # game/BKinteractions.rpy:3588
 translate chinese slave_story1_88427517:
@@ -2518,7 +2518,7 @@ translate chinese slave_story1_03de4d54:
 translate chinese slave_story1_ed64a472:
 
     # girl.char "There is only one thing I regret..."
-    girl.char "只有一件事我很遗憾……"
+    girl.char "只有一件事我很遗憾...."
 
 # game/BKinteractions.rpy:3610
 translate chinese slave_story1_8cc5d1fc_1:
@@ -2566,7 +2566,7 @@ translate chinese slave_story2_1a8c2e33:
 translate chinese slave_story2_a625f97b:
 
     # "She is startled and moves to hide the money... But she stops in her tracks when she realizes it's you."
-    "她吓了一跳，想把钱藏起来……但当她意识到是你时，她停了下来。"
+    "她吓了一跳，想把钱藏起来....但当她意识到是你时，她停了下来。"
 
 # game/BKinteractions.rpy:3646
 translate chinese slave_story2_d665dd91:
@@ -2578,13 +2578,13 @@ translate chinese slave_story2_d665dd91:
 translate chinese slave_story2_802ae114:
 
     # girl.char "Oh, Master, you surprised me... This is just some leftover money from my allowance..."
-    girl.char "哦，主人，你让我大吃一惊……这只是我零用钱的余钱……"
+    girl.char "哦，主人，你让我大吃一惊....这只是我零用钱的余钱...."
 
 # game/BKinteractions.rpy:3649
 translate chinese slave_story2_6148ef4c:
 
     # girl.char "I'm... I'm trying to save some money."
-    girl.char "我……我想存点钱。"
+    girl.char "我....我想存点钱。"
 
 # game/BKinteractions.rpy:3651
 translate chinese slave_story2_75238450:
@@ -2632,7 +2632,7 @@ translate chinese slave_story2_ba376f3b:
 translate chinese slave_story2_37d71182:
 
     # girl.char "Aww..."
-    girl.char "噢……"
+    girl.char "噢...."
 
 # game/BKinteractions.rpy:3685
 translate chinese slave_story2_ee4a48ab:
@@ -2674,7 +2674,7 @@ translate chinese slave_story2_748a5542:
 translate chinese slave_story2_602b4aa4:
 
     # girl.char "It's a long story..."
-    girl.char "说来话长……"
+    girl.char "说来话长...."
 
 # game/BKinteractions.rpy:3702
 translate chinese slave_story2_4e3e3d2a:
@@ -2686,13 +2686,13 @@ translate chinese slave_story2_4e3e3d2a:
 translate chinese slave_story2_c2a355ad:
 
     # girl.char "It all happened a long time ago, back in [girl.origin]..."
-    girl.char "这一切都发生在很久以前，在[girl.origin]里……"
+    girl.char "这一切都发生在很久以前，在[girl.origin]里...."
 
 # game/BKinteractions.rpy:3711
 translate chinese slave_story2_7e0b1b13:
 
     # girl.char "What I didn't know was that my [girl.story_guardian] had a huge gambling addiction. There was a huge debt to pay off, some very bad people involved..."
-    girl.char "我不知道的是我的[girl.story_guardian]有一个巨大的赌博瘾。有一笔巨额债务需要偿还，一些非常坏的人牵涉其中……"
+    girl.char "我不知道的是我的[girl.story_guardian]有一个巨大的赌博瘾。有一笔巨额债务需要偿还，一些非常坏的人牵涉其中...."
 
 # game/BKinteractions.rpy:3713
 translate chinese slave_story2_9e3213b9:
@@ -2710,7 +2710,7 @@ translate chinese slave_story2_857834e9:
 translate chinese slave_story2_dae0ec55:
 
     # you "..."
-    you "……"
+    you "...."
 
 # game/BKinteractions.rpy:3719
 translate chinese slave_story2_2a3609ce:
@@ -2722,13 +2722,13 @@ translate chinese slave_story2_2a3609ce:
 translate chinese slave_story2_062d4094:
 
     # girl.char "Oh, Sill is calling me. I'll tell you the rest of the story later..."
-    girl.char "哦，希露在叫我。我之后再告诉你剩下的故事……"
+    girl.char "哦，希露在叫我。我之后再告诉你剩下的故事...."
 
 # game/BKinteractions.rpy:3723
 translate chinese slave_story2_f57f7c1a:
 
     # you "All right..."
-    you "好吧……"
+    you "好吧...."
 
 # game/BKinteractions.rpy:3734
 translate chinese slave_story2_21ad0740:
@@ -2746,7 +2746,7 @@ translate chinese slave_story2_2a580215:
 translate chinese slave_story2_47ba4cf4:
 
     # girl.char "It's not a nice story... They came in the middle of the night, and they demanded to be paid in full."
-    girl.char "这不是一个好故事……他们半夜里来了，要求全部付清。"
+    girl.char "这不是一个好故事....他们半夜里来了，要求全部付清。"
 
 # game/BKinteractions.rpy:3740
 translate chinese slave_story2_8c969f4f:
@@ -2758,7 +2758,7 @@ translate chinese slave_story2_8c969f4f:
 translate chinese slave_story2_90b2b063:
 
     # girl.char "We were treated like servants, they made us work hard and degrading jobs to repay our 'debt'..."
-    girl.char "我们像仆人一样被对待，他们让我们努力工作，做有辱人格的工作来偿还我们的“债务”……"
+    girl.char "我们像仆人一样被对待，他们让我们努力工作，做有辱人格的工作来偿还我们的“债务”...."
 
 # game/BKinteractions.rpy:3745
 translate chinese slave_story2_c435a816:
@@ -2782,19 +2782,19 @@ translate chinese slave_story2_7a87a962:
 translate chinese slave_story2_807c5b18:
 
     # girl.char "This was... This was the last time we saw each other. "
-    girl.char "这是……这是我们最后一次见面。"
+    girl.char "这是....这是我们最后一次见面。"
 
 # game/BKinteractions.rpy:3755
 translate chinese slave_story2_3387dd16:
 
     # girl.char "Eventually, I ended up in the custody of [girl.story_profession_article]. He was an evil man..."
-    girl.char "最终，我被[girl.story_profession_article]收押。他是个邪恶的人……"
+    girl.char "最终，我被[girl.story_profession_article]收押。他是个邪恶的人...."
 
 # game/BKinteractions.rpy:3759
 translate chinese slave_story2_9bdc60f2:
 
     # girl.char "He had me... perform for him, every day... He disgusted me, but I had to do it."
-    girl.char "他让我……为他表演，每天……他使我厌恶，但我不得不这样做。"
+    girl.char "他让我....为他表演，每天....他使我厌恶，但我不得不这样做。"
 
 # game/BKinteractions.rpy:3763
 translate chinese slave_story2_a4613aed:
@@ -2806,25 +2806,25 @@ translate chinese slave_story2_a4613aed:
 translate chinese slave_story2_f6d9a8aa:
 
     # girl.char "He was always looking at me, fondling my private parts unexpectedly, drooling like the old leech he was..."
-    girl.char "他总是看着我，出乎意料地抚摸着我的私处，像老水蛭一样流口水……"
+    girl.char "他总是看着我，出乎意料地抚摸着我的私处，像老水蛭一样流口水...."
 
 # game/BKinteractions.rpy:3767
 translate chinese slave_story2_29753cc2:
 
     # girl.char "He'd even jerk off in front of me, making me clean up after him... I hated him."
-    girl.char "他甚至在我面前耍滑头，让我跟在他后面收拾……我讨厌他。"
+    girl.char "他甚至在我面前耍滑头，让我跟在他后面收拾....我讨厌他。"
 
 # game/BKinteractions.rpy:3771
 translate chinese slave_story2_52249528:
 
     # girl.char "Every morning, I had to 'clean him up', using only my tongue..."
-    girl.char "每天早上，我都要用舌头把他“清理干净”……"
+    girl.char "每天早上，我都要用舌头把他“清理干净”...."
 
 # game/BKinteractions.rpy:3773
 translate chinese slave_story2_87b6b3a1:
 
     # girl.char "He made me lick his shaft and balls, until he came into my mouth. Then he made me swallow his load of stinky cum... Said it was the perfect breakfast for me..."
-    girl.char "他让我舔他的柄和球，直到他进入我的嘴里。然后他让我吞下他的臭屁……说这对我来说是完美的早餐……"
+    girl.char "他让我舔他的柄和球，直到他进入我的嘴里。然后他让我吞下他的臭屁....说这对我来说是完美的早餐...."
 
 # game/BKinteractions.rpy:3777
 translate chinese slave_story2_af0e18a7:
@@ -2836,7 +2836,7 @@ translate chinese slave_story2_af0e18a7:
 translate chinese slave_story2_8ecbbad6:
 
     # girl.char "It's sad to say, but I became used to it, even spreading my legs automatically whenever he entered the room... I resented him so much."
-    girl.char "说起来很难过，但我已经习惯了，他一进屋我就不由自主地伸开双腿……我对他恨之入骨。"
+    girl.char "说起来很难过，但我已经习惯了，他一进屋我就不由自主地伸开双腿....我对他恨之入骨。"
 
 # game/BKinteractions.rpy:3783
 translate chinese slave_story2_4e041267:
@@ -2854,7 +2854,7 @@ translate chinese slave_story2_a5a8354e:
 translate chinese slave_story2_0401d5c9:
 
     # girl.char "Eventually, my ass became so loose, he was using it as a wine holder when entertaining fancy guests... Oh, how I hated him..."
-    girl.char "最后，我的屁股变得很松，他在招待高级客人的时候就用它来盛酒……哦，我是多么恨他……"
+    girl.char "最后，我的屁股变得很松，他在招待高级客人的时候就用它来盛酒....哦，我是多么恨他...."
 
 # game/BKinteractions.rpy:3791
 translate chinese slave_story2_7349f5db:
@@ -2866,25 +2866,25 @@ translate chinese slave_story2_7349f5db:
 translate chinese slave_story2_f85d0ece:
 
     # girl.char "He used to punish me when I didn't behave, putting clothespins on my nipples and pussy lips... Enjoying watching me suffer and scream."
-    girl.char "我不守规矩的时候，他会惩罚我，把晾衣夹放在我的乳头和阴唇上……享受看着我痛苦和尖叫。"
+    girl.char "我不守规矩的时候，他会惩罚我，把晾衣夹放在我的乳头和阴唇上....享受看着我痛苦和尖叫。"
 
 # game/BKinteractions.rpy:3795
 translate chinese slave_story2_389a5e46:
 
     # girl.char "Other times, he would just whip me ferociously for the slightest mistake... When he was done, he always had such a hard on... Then he would force me to help him 'release'... That sick fuck."
-    girl.char "有时候，他只是因为我犯了一点小错就狠狠地抽我……当他做完时，他总是对……然后他会强迫我帮他“释放”……那个恶心的混蛋。"
+    girl.char "有时候，他只是因为我犯了一点小错就狠狠地抽我....当他做完时，他总是对....然后他会强迫我帮他“释放”....那个恶心的混蛋。"
 
 # game/BKinteractions.rpy:3798
 translate chinese slave_story2_42d2a35a:
 
     # you "Wow... I had no idea this happened to you."
-    you "哇……我不知道这事会发生在你身上。"
+    you "哇....我不知道这事会发生在你身上。"
 
 # game/BKinteractions.rpy:3800
 translate chinese slave_story2_78978e4a:
 
     # girl.char "This was before we met, I was still young and innocent... But after I met this bastard, I was innocent no longer."
-    girl.char "那是在我们相遇之前，我还年轻天真……但在我遇见这个混蛋之后，我不再是无辜的了。"
+    girl.char "那是在我们相遇之前，我还年轻天真....但在我遇见这个混蛋之后，我不再是无辜的了。"
 
 # game/BKinteractions.rpy:3812
 translate chinese slave_story2_582e8a36:
@@ -2896,13 +2896,13 @@ translate chinese slave_story2_582e8a36:
 translate chinese slave_story2_fac602f1:
 
     # you "You told me how you were indebted to a vicious [girl.story_profession]... But you never told me how you got out of it?"
-    you "你告诉我你是如何亏欠一个恶毒的[girl.story_profession]……但你从来没告诉我你是怎么逃出来的？"
+    you "你告诉我你是如何亏欠一个恶毒的[girl.story_profession]....但你从来没告诉我你是怎么逃出来的？"
 
 # game/BKinteractions.rpy:3818
 translate chinese slave_story2_87eff826:
 
     # girl.char "Oh, that's easy... I killed the fucker."
-    girl.char "哦，这很简单……我杀了那个混蛋。"
+    girl.char "哦，这很简单....我杀了那个混蛋。"
 
 # game/BKinteractions.rpy:3820
 translate chinese slave_story2_8d6b1f8b:
@@ -2914,13 +2914,13 @@ translate chinese slave_story2_8d6b1f8b:
 translate chinese slave_story2_a5ea57e9:
 
     # girl.char "One day, I just couldn't take his sick games anymore... As I was going to the market to fetch some food, I stopped by an old spice dealer."
-    girl.char "有一天，我再也无法忍受他那病态的游戏……我正要去市场买些吃的，路过一个卖香料的老店。"
+    girl.char "有一天，我再也无法忍受他那病态的游戏....我正要去市场买些吃的，路过一个卖香料的老店。"
 
 # game/BKinteractions.rpy:3824
 translate chinese slave_story2_85aa34c4:
 
     # girl.char "I slipped him a deadly dose of Shalia's weed... I told the asshole it would make his dick bigger... Oh, how he swallowed it with gusto!"
-    girl.char "我偷偷给他灌了一剂致命剂量的莎莉娅草……我告诉那个混蛋这会让他的鸡巴变大……噢，他是多么津津有味地把它吞下去啊！"
+    girl.char "我偷偷给他灌了一剂致命剂量的莎莉娅草....我告诉那个混蛋这会让他的鸡巴变大....噢，他是多么津津有味地把它吞下去啊！"
 
 # game/BKinteractions.rpy:3826
 translate chinese slave_story2_448ddd35:
@@ -2932,7 +2932,7 @@ translate chinese slave_story2_448ddd35:
 translate chinese slave_story2_cf745fde:
 
     # girl.char "You don't know how bad he was..."
-    girl.char "你不知道他有多坏……"
+    girl.char "你不知道他有多坏...."
 
 # game/BKinteractions.rpy:3830
 translate chinese slave_story2_a889bc02:
@@ -2944,7 +2944,7 @@ translate chinese slave_story2_a889bc02:
 translate chinese slave_story2_d19f415a:
 
     # you "Remind me not to let you anywhere near the kitchen..."
-    you "提醒我不要让你靠近厨房……"
+    you "提醒我不要让你靠近厨房...."
 
 # game/BKinteractions.rpy:3836
 translate chinese slave_story2_0bc7db9d:
@@ -2962,7 +2962,7 @@ translate chinese slave_story2_6c367ada:
 translate chinese slave_story2_3f7141cf:
 
     # girl.char "Well... He died."
-    girl.char "嗯……他就死了。"
+    girl.char "嗯....他就死了。"
 
 # game/BKinteractions.rpy:3844
 translate chinese slave_story2_9b460774:
@@ -2974,31 +2974,31 @@ translate chinese slave_story2_9b460774:
 translate chinese slave_story2_9dc671c5:
 
     # girl.char "Well, after a night of orgy and heavy drinking... He came back home, behaving even worse than usual."
-    girl.char "嗯，在一夜狂欢和豪饮之后……他回到家，表现得比平时更糟。"
+    girl.char "嗯，在一夜狂欢和豪饮之后....他回到家，表现得比平时更糟。"
 
 # game/BKinteractions.rpy:3848
 translate chinese slave_story2_a38180a0:
 
     # girl.char "I hadn't done anything to displease him, but he threatened to beat and rape me, even let his dogs at me... He was mad with rage."
-    girl.char "我没有做任何让他不高兴的事，但他威胁说要打我，强奸我，甚至让他的狗咬我……他气得发疯。"
+    girl.char "我没有做任何让他不高兴的事，但他威胁说要打我，强奸我，甚至让他的狗咬我....他气得发疯。"
 
 # game/BKinteractions.rpy:3850
 translate chinese slave_story2_23482d13:
 
     # girl.char "I was crying my heart's out, and it only seemed to drive him madder... That's when he had a seizure."
-    girl.char "我哭得心如止水，这似乎只会让他更加疯狂……那时他突然发作了。"
+    girl.char "我哭得心如止水，这似乎只会让他更加疯狂....那时他突然发作了。"
 
 # game/BKinteractions.rpy:3852
 translate chinese slave_story2_2df377d7:
 
     # girl.char "He fell down on the floor, he could only crawl. Unable to call for help, he looked at me with glassy eyes. 'Call a doctor, you stupid bitch', he said. 'Hurry...'"
-    girl.char "他跌倒在地板上，只能爬行。他无法呼救，目光呆滞地看着我。“叫医生来，你这个傻婊子。”他说。“快点……”"
+    girl.char "他跌倒在地板上，只能爬行。他无法呼救，目光呆滞地看着我。“叫医生来，你这个傻婊子。”他说。“快点....”"
 
 # game/BKinteractions.rpy:3854
 translate chinese slave_story2_8c68997d:
 
     # girl.char "But I... I didn't do it."
-    girl.char "但我……不是我干的。"
+    girl.char "但我....不是我干的。"
 
 # game/BKinteractions.rpy:3856
 translate chinese slave_story2_16339ebb:
@@ -3022,7 +3022,7 @@ translate chinese slave_story2_3c5c2b7b:
 translate chinese slave_story2_cb73fc65:
 
     # girl.char "I don't know if what I did was right... But he made my life hell, you know..."
-    girl.char "我不知道我做的对不对……但他让我的生活一团糟"
+    girl.char "我不知道我做的对不对....但他让我的生活一团糟"
 
 # game/BKinteractions.rpy:3865
 translate chinese slave_story2_59440f0f:
@@ -3034,7 +3034,7 @@ translate chinese slave_story2_59440f0f:
 translate chinese slave_story2_a64b741c:
 
     # girl.char "After that, I was put for sale on the Zan slave market... Which is where you found me."
-    girl.char "在那之后，我被卖到赞奴隶市场……你就是在那里找到我的"
+    girl.char "在那之后，我被卖到赞奴隶市场....你就是在那里找到我的"
 
 # game/BKinteractions.rpy:3870
 translate chinese slave_story2_eb266b4d:
@@ -3046,13 +3046,13 @@ translate chinese slave_story2_eb266b4d:
 translate chinese slave_story2_ef805378:
 
     # girl.char "Here I am. But you know, there is something I regret..."
-    girl.char "我在这里。但你知道，有件事我很遗憾……"
+    girl.char "我在这里。但你知道，有件事我很遗憾...."
 
 # game/BKinteractions.rpy:3875
 translate chinese slave_story2_0a5efb33:
 
     # girl.char "I wish... I wish I could repay my [girl.story_guardian]'s debt. I can't stand the idea of someone close to me suffering what I have been through..."
-    girl.char "我希望……我希望我能报答我的[girl.story_guardian]的债务。我无法忍受身边的人承受我所经历的一切……"
+    girl.char "我希望....我希望我能报答我的[girl.story_guardian]的债务。我无法忍受身边的人承受我所经历的一切...."
 
 # game/BKinteractions.rpy:3879
 translate chinese slave_story2_3bb0af14:
@@ -3076,7 +3076,7 @@ translate chinese slave_story2_7945fa96:
 translate chinese slave_story2_a8fb5952:
 
     # girl.char "But I kind of miss the rest of my family... I wish I could track them back."
-    girl.char "但我有点想念我的家人……我希望我能找到他们。"
+    girl.char "但我有点想念我的家人....我希望我能找到他们。"
 
 # game/BKinteractions.rpy:3900
 translate chinese slave_story2_ed64a472:
@@ -3130,7 +3130,7 @@ translate chinese slave_story3_fc3acfb4:
 translate chinese slave_story3_2d49bef9:
 
     # girl.char "Sorry, Master... I was just thinking about an old story..."
-    girl.char "对不起，主人……我只是在想一个古老的故事……"
+    girl.char "对不起，主人....我只是在想一个古老的故事...."
 
 # game/BKinteractions.rpy:3941
 translate chinese slave_story3_098c0275:
@@ -3148,13 +3148,13 @@ translate chinese slave_story3_c1da3d17:
 translate chinese slave_story3_c7542f25:
 
     # girl.char "I never dreamt I would end up in this place and become a slave, you know..."
-    girl.char "我从来没想过我最终会在这个地方成为一个奴隶，你知道……"
+    girl.char "我从来没想过我最终会在这个地方成为一个奴隶，你知道...."
 
 # game/BKinteractions.rpy:3947
 translate chinese slave_story3_7a1a8533:
 
     # girl.char "I used to live a happy life in [girl.origin], where I enjoyed [girl.hobbies[0]] most days..."
-    girl.char "我过去在[girl.origin]里过着幸福的生活。起源，在那里我喜欢[girl.hobbies[0]]大多数日子里……"
+    girl.char "我过去在[girl.origin]里过着幸福的生活。起源，在那里我喜欢[girl.hobbies[0]]大多数日子里...."
 
 # game/BKinteractions.rpy:3956
 translate chinese slave_story3_5886ce35:
@@ -3166,7 +3166,7 @@ translate chinese slave_story3_5886ce35:
 translate chinese slave_story3_4ab053d4:
 
     # girl.char "But one day..."
-    girl.char "但是有一天……"
+    girl.char "但是有一天...."
 
 # game/BKinteractions.rpy:3960
 translate chinese slave_story3_e26de5a5:
@@ -3208,7 +3208,7 @@ translate chinese slave_story3_ab40dad9:
 translate chinese slave_story3_60424f2d:
 
     # girl.char "We decided to go together on a pilgrimage to visit a famous shrine of Arios. It was said to bring good luck..."
-    girl.char "我们决定一起去朝拜著名的阿里奥斯神龛。据说它能带来好运……"
+    girl.char "我们决定一起去朝拜著名的太阳神神龛。据说它能带来好运...."
 
 # game/BKinteractions.rpy:3980
 translate chinese slave_story3_42d1ebcf:
@@ -3220,25 +3220,25 @@ translate chinese slave_story3_42d1ebcf:
 translate chinese slave_story3_54b55f7d:
 
     # you "You shouldn't need to go on a trip to feel close to your god..."
-    you "你不应该为了亲近你的神而去旅行……"
+    you "你不应该为了亲近你的神而去旅行...."
 
 # game/BKinteractions.rpy:3986
 translate chinese slave_story3_bbcf0a23:
 
     # you "Baseless superstitions..."
-    you "毫无根据的迷信……"
+    you "毫无根据的迷信...."
 
 # game/BKinteractions.rpy:3988
 translate chinese slave_story3_a416d356:
 
     # girl.char "...it was anything, but lucky. Bandits were waiting in the hills, and we fell into an ambush."
-    girl.char "……这是任何事情，但幸运。土匪在山里埋伏着，我们中了埋伏。"
+    girl.char "....这是任何事情，但幸运。土匪在山里埋伏着，我们中了埋伏。"
 
 # game/BKinteractions.rpy:3990
 translate chinese slave_story3_8632caff:
 
     # girl.char "Some people tried to fight back, and the bandits started slaughtering people left and right. My [girl.story_guardian]... killed."
-    girl.char "一些人试图反击，土匪开始到处杀人。我的[girl.story_guardian]……被杀了。"
+    girl.char "一些人试图反击，土匪开始到处杀人。我的[girl.story_guardian]....被杀了。"
 
 # game/BKinteractions.rpy:3992
 translate chinese slave_story3_74cedf28:
@@ -3250,7 +3250,7 @@ translate chinese slave_story3_74cedf28:
 translate chinese slave_story3_4e108d83:
 
     # girl.char "They took the rest of us away... I didn't know what fate awaited us."
-    girl.char "他们把我们都带走了……我不知道等待我们的是什么命运。"
+    girl.char "他们把我们都带走了....我不知道等待我们的是什么命运。"
 
 # game/BKinteractions.rpy:3996
 translate chinese slave_story3_0d9b6a20:
@@ -3292,7 +3292,7 @@ translate chinese slave_story3_314433c9:
 translate chinese slave_story3_66d0daae:
 
     # girl.char "Their leader was an evil man, [girl.story_profession_article]... He was always taunting us captives, and mistreating young girls like me... Sometimes he'd take a girl in his tent for the night..."
-    girl.char "他们的领袖是个邪恶的人，[girl.story_profession_article]...。他总是嘲笑我们这些俘虏，虐待像我这样的年轻姑娘……有时他会带一个女孩到他的帐篷里过夜……"
+    girl.char "他们的领袖是个邪恶的人，[girl.story_profession_article]...。他总是嘲笑我们这些俘虏，虐待像我这样的年轻姑娘....有时他会带一个女孩到他的帐篷里过夜...."
 
 # game/BKinteractions.rpy:4018
 translate chinese slave_story3_85670843:
@@ -3322,7 +3322,7 @@ translate chinese slave_story3_1fa3221c:
 translate chinese slave_story3_07842537:
 
     # you "W... What happened? Did he rape you?"
-    you "W……发生了什么事？他强奸你了吗？"
+    you "W....发生了什么事？他强奸你了吗？"
 
 # game/BKinteractions.rpy:4028
 translate chinese slave_story3_6122b49a:
@@ -3352,7 +3352,7 @@ translate chinese slave_story3_019fc387:
 translate chinese slave_story3_745f9add:
 
     # girl.char "That's when he brought forward his favorite horse..."
-    girl.char "就在那时，他提出了他最喜欢的马……"
+    girl.char "就在那时，他提出了他最喜欢的马...."
 
 # game/BKinteractions.rpy:4037
 translate chinese slave_story3_96a70992:
@@ -3370,19 +3370,19 @@ translate chinese slave_story3_7b693942:
 translate chinese slave_story3_5178ed47:
 
     # girl.char "He told me... To pleasure his horse, in front of everyone... Or he would slit my throat."
-    girl.char "他告诉我……为了取悦他的马，在大家面前……否则他会割断我的喉咙。"
+    girl.char "他告诉我....为了取悦他的马，在大家面前....否则他会割断我的喉咙。"
 
 # game/BKinteractions.rpy:4043
 translate chinese slave_story3_b4ed34b8:
 
     # girl.char "I was weak... I didn't want to die..."
-    girl.char "我很软弱……我不想死……"
+    girl.char "我很软弱....我不想死...."
 
 # game/BKinteractions.rpy:4045
 translate chinese slave_story3_8bb00932:
 
     # you "I see..."
-    you "我明白了……"
+    you "我明白了...."
 
 # game/BKinteractions.rpy:4047
 translate chinese slave_story3_98ddf7e1:
@@ -3406,7 +3406,7 @@ translate chinese slave_story3_12508aa3:
 translate chinese slave_story3_5cb74dbd:
 
     # girl.char "When I was a prisoner, in the hills, I used to look at the skies all night... I wondered if I could fly away, like a bird, and escape from this pain and madness."
-    girl.char "当我还是个囚犯的时候，在山里，我常常整夜看天空……我想知道我是否能像鸟一样飞走，逃离这种痛苦和疯狂。"
+    girl.char "当我还是个囚犯的时候，在山里，我常常整夜看天空....我想知道我是否能像鸟一样飞走，逃离这种痛苦和疯狂。"
 
 # game/BKinteractions.rpy:4062
 translate chinese slave_story3_40bb0b24:
@@ -3436,19 +3436,19 @@ translate chinese slave_story3_562149bd:
 translate chinese slave_story3_38bcd874:
 
     # girl.char "At some point... I decided to end my life."
-    girl.char "在某一时刻……我决定结束我的生命。"
+    girl.char "在某一时刻....我决定结束我的生命。"
 
 # game/BKinteractions.rpy:4072
 translate chinese slave_story3_3e26844e:
 
     # you "Oh..."
-    you "哦……"
+    you "哦...."
 
 # game/BKinteractions.rpy:4074
 translate chinese slave_story3_f63a794e:
 
     # girl.char "Other captives started complaining that they didn't want to be chained with... the horsefucker. It got so bad that the bandits decided to just make me walk in front of the party all day, while they took turns mocking and abusing me."
-    girl.char "其他的俘虏开始抱怨他们不想和……混蛋。太糟糕了，土匪们决定让我整天走在队伍前面，他们轮流嘲笑和辱骂我。"
+    girl.char "其他的俘虏开始抱怨他们不想和....混蛋。太糟糕了，土匪们决定让我整天走在队伍前面，他们轮流嘲笑和辱骂我。"
 
 # game/BKinteractions.rpy:4076
 translate chinese slave_story3_15ac8cb2:
@@ -3466,19 +3466,19 @@ translate chinese slave_story3_441cfb4a:
 translate chinese slave_story3_85cd7df8:
 
     # girl.char "Before I jumped, I had decided to end my life... But when I got back to my senses, I was scared senseless. I broke my bonds with a strength I didn't know I had, and I swam against the current to reach the other side."
-    girl.char "在我跳下去之前，我决定结束我的生命……但当我恢复理智时，我吓得失去了知觉。我用一种自己都不知道的力量挣脱了束缚，逆流而上，游到了对岸。"
+    girl.char "在我跳下去之前，我决定结束我的生命....但当我恢复理智时，我吓得失去了知觉。我用一种自己都不知道的力量挣脱了束缚，逆流而上，游到了对岸。"
 
 # game/BKinteractions.rpy:4084
 translate chinese slave_story3_08516455:
 
     # girl.char "I was weak... My body wouldn't let me die."
-    girl.char "我很软弱……我的身体不会让我死去。"
+    girl.char "我很软弱....我的身体不会让我死去。"
 
 # game/BKinteractions.rpy:4086
 translate chinese slave_story3_79ea25ff:
 
     # you "Then... What happened?"
-    you "然后……发生了什么事？"
+    you "然后....发生了什么事？"
 
 # game/BKinteractions.rpy:4089
 translate chinese slave_story3_9fa446ca:
@@ -3490,7 +3490,7 @@ translate chinese slave_story3_9fa446ca:
 translate chinese slave_story3_69244085:
 
     # girl.char "A caravan found me by the side of the road, when I was nearly starving... I had no clothes on my back, not a denar to my name... They decided to brand me a slave, and there was nothing I could do. It was destiny..."
-    girl.char "一辆大篷车在路边发现了我，当时我快饿死了……我身上没穿衣服，连一丁纳也没有……他们决定给我戴上奴隶的帽子，我也无能为力。这是命运……"
+    girl.char "一辆大篷车在路边发现了我，当时我快饿死了....我身上没穿衣服，连一丁纳也没有....他们决定给我戴上奴隶的帽子，我也无能为力。这是命运...."
 
 # game/BKinteractions.rpy:4095
 translate chinese slave_story3_b0ecb5e5:
@@ -3502,7 +3502,7 @@ translate chinese slave_story3_b0ecb5e5:
 translate chinese slave_story3_ecfca602:
 
     # girl.char "So many things have happened since, but I can't forget about that nightmare... Sometimes, it keeps me awake at night, reliving through the terror of it all."
-    girl.char "从那以后发生了很多事，但我无法忘记那个噩梦……有时，它让我夜不能寐，重新体验这一切的恐怖。"
+    girl.char "从那以后发生了很多事，但我无法忘记那个噩梦....有时，它让我夜不能寐，重新体验这一切的恐怖。"
 
 # game/BKinteractions.rpy:4099
 translate chinese slave_story3_ecc9aa85:
@@ -3514,7 +3514,7 @@ translate chinese slave_story3_ecc9aa85:
 translate chinese slave_story3_1bf4dbfc:
 
     # girl.char "Well... I don't know if I should ask..."
-    girl.char "嗯……我不知道该不该问……"
+    girl.char "嗯....我不知道该不该问...."
 
 # game/BKinteractions.rpy:4103
 translate chinese slave_story3_74d26893:
@@ -3526,37 +3526,37 @@ translate chinese slave_story3_74d26893:
 translate chinese slave_story3_63f8834f:
 
     # girl.char "There is one thing I would really like..."
-    girl.char "有一件事我真的很想……"
+    girl.char "有一件事我真的很想...."
 
 # game/BKinteractions.rpy:4108
 translate chinese slave_story3_30a0e246:
 
     # girl.char "You might not believe me, but... The night I... played with the horse, in front of everyone..."
-    girl.char "你可能不相信我，但是……晚上我……和马玩耍，在大家面前……"
+    girl.char "你可能不相信我，但是....晚上我....和马玩耍，在大家面前...."
 
 # game/BKinteractions.rpy:4109
 translate chinese slave_story3_544f27dc:
 
     # girl.char "I can't get it out of my mind. It was so intense..."
-    girl.char "我无法忘记它。太紧张了……"
+    girl.char "我无法忘记它。太紧张了...."
 
 # game/BKinteractions.rpy:4110
 translate chinese slave_story3_86b9e2f9:
 
     # girl.char "Whenever I think about it, I get so wet... I wish I had another chance... To do it in public with a stallion, with all eyes on me..."
-    girl.char "一想到它，我就浑身湿透……我希望我还有一次机会……在大庭广众之下和一匹种马做这件事，所有人都盯着我……"
+    girl.char "一想到它，我就浑身湿透....我希望我还有一次机会....在大庭广众之下和一匹种马做这件事，所有人都盯着我...."
 
 # game/BKinteractions.rpy:4115
 translate chinese slave_story3_1720783e:
 
     # girl.char "I have learnt that the son of a bitch who led that raiding party is in town right now... Spending the spoils of his misdeeds. If I could, I would kill him myself, but..."
-    girl.char "我听说那个领导突袭队的狗娘养的现在在城里……挥霍他的恶行带来的战利品。如果我能，我会亲自杀了他，但是……"
+    girl.char "我听说那个领导突袭队的狗娘养的现在在城里....挥霍他的恶行带来的战利品。如果我能，我会亲自杀了他，但是...."
 
 # game/BKinteractions.rpy:4116
 translate chinese slave_story3_a206a445:
 
     # girl.char "I'm weak..."
-    girl.char "我弱……"
+    girl.char "我弱...."
 
 # game/BKinteractions.rpy:4120
 translate chinese slave_story3_d5d87e40:
@@ -3568,13 +3568,13 @@ translate chinese slave_story3_d5d87e40:
 translate chinese slave_story3_72c1d9a4:
 
     # girl.char "I just learnt that the son of a bitch who led that raiding party is in town right now..."
-    girl.char "我刚听说那个领导突袭队的狗娘养的现在在城里……"
+    girl.char "我刚听说那个领导突袭队的狗娘养的现在在城里...."
 
 # game/BKinteractions.rpy:4122
 translate chinese slave_story3_b9cde491:
 
     # girl.char "There's nothing he loves more in the world than this horse. And there's nothing I hate more..."
-    girl.char "世界上没有什么比这匹马更让他爱的了。没有什么比这更让我讨厌的了……"
+    girl.char "世界上没有什么比这匹马更让他爱的了。没有什么比这更让我讨厌的了...."
 
 # game/BKinteractions.rpy:4123
 translate chinese slave_story3_403c6623:
@@ -3592,19 +3592,19 @@ translate chinese slave_story3_d94adbdc:
 translate chinese slave_story3_17c69e27:
 
     # girl.char "I know it's strange, but hear me out: if I eat that dumb animal, I can get over my trauma. And I can get my revenge... I just need to find someone who will get that horse for me, and turn it into a steak..."
-    girl.char "我知道这很奇怪，但是听我说:如果我吃了那只哑巴动物，我就能克服我的创伤。我就能报仇了……我只是想找个人帮我把那匹马变成牛排……"
+    girl.char "我知道这很奇怪，但是听我说:如果我吃了那只哑巴动物，我就能克服我的创伤。我就能报仇了....我只是想找个人帮我把那匹马变成牛排...."
 
 # game/BKinteractions.rpy:4126
 translate chinese slave_story3_b29f429e:
 
     # you "Well... That's an odd request..."
-    you "嗯……这是个奇怪的要求……"
+    you "嗯....这是个奇怪的要求...."
 
 # game/BKinteractions.rpy:4130
 translate chinese slave_story3_bf3073f1:
 
     # girl.char "I can't forget that they left my [girl.story_guardian] to rot in a field, together with the other dead pilgrims... I wish I could offer them a proper burial... Burn their remains in Arios fire..."
-    girl.char "我不能忘记他们离开了我的女孩。和其他死去的朝圣者一起腐烂在田野里……我希望能给他们一个像样的葬礼……在阿里奥斯之火中焚烧他们的遗体……"
+    girl.char "我不能忘记他们离开了我的女孩。和其他死去的朝圣者一起腐烂在田野里....我希望能给他们一个像样的葬礼....在太阳神之火中焚烧他们的遗体...."
 
 # game/BKinteractions.rpy:4132
 translate chinese slave_story3_f24fbd54:
@@ -3676,7 +3676,7 @@ translate chinese slave_story4_076984e2:
 translate chinese slave_story4_44bab695:
 
     # you "Hi, [girl.name]... Am I interrupting something?"
-    you "嗨，[girl.name]……我打断什么了吗？"
+    you "嗨，[girl.name]....我打断什么了吗？"
 
 # game/BKinteractions.rpy:4190
 translate chinese slave_story4_32c32369:
@@ -3688,7 +3688,7 @@ translate chinese slave_story4_32c32369:
 translate chinese slave_story4_e9692be3:
 
     # girl.char "No, Master..."
-    girl.char "不，主人……"
+    girl.char "不，主人...."
 
 # game/BKinteractions.rpy:4194
 translate chinese slave_story4_3ef61008:
@@ -3718,19 +3718,19 @@ translate chinese slave_story4_6ca15cd6:
 translate chinese slave_story4_b6d367bd:
 
     # you "Well, as long as it's your money..."
-    you "只要是你的钱……"
+    you "只要是你的钱...."
 
 # game/BKinteractions.rpy:4204
 translate chinese slave_story4_d34f0608:
 
     # girl.char "I... I got it for cheap..."
-    girl.char "我……我买的很便宜……"
+    girl.char "我....我买的很便宜...."
 
 # game/BKinteractions.rpy:4206
 translate chinese slave_story4_c028f9e0:
 
     # girl.char "I never got to enjoy this kind of luxury when I was a child..."
-    girl.char "我小时候从来没有享受过这种奢侈……"
+    girl.char "我小时候从来没有享受过这种奢侈...."
 
 # game/BKinteractions.rpy:4208
 translate chinese slave_story4_1b43fbf6:
@@ -3742,31 +3742,31 @@ translate chinese slave_story4_1b43fbf6:
 translate chinese slave_story4_b6fe2914:
 
     # girl.char "Yes... I was born in [girl.origin], in a very poor family..."
-    girl.char "是的……我出生在[girl.origin]。，出身于一个非常贫穷的家庭……"
+    girl.char "是的....我出生在[girl.origin]。，出身于一个非常贫穷的家庭...."
 
 # game/BKinteractions.rpy:4213
 translate chinese slave_story4_4680cb4f:
 
     # girl.char "Yes, I was born a slave... My [girl.story_guardian] too..."
-    girl.char "是的，我生来就是奴隶……我的[girl.story_guardian]也……"
+    girl.char "是的，我生来就是奴隶....我的[girl.story_guardian]也...."
 
 # game/BKinteractions.rpy:4221
 translate chinese slave_story4_a3b1a43a:
 
     # girl.char "But I wasn't having much fun..."
-    girl.char "但我没有玩得很开心……"
+    girl.char "但我没有玩得很开心...."
 
 # game/BKinteractions.rpy:4223
 translate chinese slave_story4_258c9fbb:
 
     # girl.char "We were servants. We lived in [girl.story_home_article], doing hard chores for our masters..."
-    girl.char "我们的仆人。我们住在[girl.story_home_article]，为我们的主人做艰苦的家务……"
+    girl.char "我们的仆人。我们住在[girl.story_home_article]，为我们的主人做艰苦的家务...."
 
 # game/BKinteractions.rpy:4225
 translate chinese slave_story4_33148a27:
 
     # girl.char "My earliest memories are of orders being barked, and the cracking of the whip... It wasn't nice."
-    girl.char "我最早的记忆是命令在吠叫，鞭子在噼啪作响……这不是好。"
+    girl.char "我最早的记忆是命令在吠叫，鞭子在噼啪作响....这不是好。"
 
 # game/BKinteractions.rpy:4227
 translate chinese slave_story4_b0ecb5e5:
@@ -3784,31 +3784,31 @@ translate chinese slave_story4_22dc23eb:
 translate chinese slave_story4_eb86dd87:
 
     # girl.char "One day... I must have been 7 or 8... I saw a noble lady ride down the road. Most nobles ride in carriages, so I rarely had a chance to see one up close, but that lady was very brazen."
-    girl.char "有一天……我当时一定有7、8岁……我看见一位高贵的女士骑在路上。大多数贵族都坐马车，所以我很少有机会近距离看到，但那位女士非常厚颜无耻。"
+    girl.char "有一天....我当时一定有7、8岁....我看见一位高贵的女士骑在路上。大多数贵族都坐马车，所以我很少有机会近距离看到，但那位女士非常厚颜无耻。"
 
 # game/BKinteractions.rpy:4233
 translate chinese slave_story4_91be91f5:
 
     # girl.char "She had the most sublime, amazing outfit I had ever seen... Red, flamboyant, with silk ribbons and silver and gold ornaments. I was dumbstruck."
-    girl.char "她穿的衣服是我见过的最高贵、最迷人的……红色，艳丽，有丝带和金银饰品。我被吓懵了。"
+    girl.char "她穿的衣服是我见过的最高贵、最迷人的....红色，艳丽，有丝带和金银饰品。我被吓懵了。"
 
 # game/BKinteractions.rpy:4235
 translate chinese slave_story4_513f7cc8:
 
     # girl.char "Ever since, I have loved pretty dresses..."
-    girl.char "从那时起，我就爱上了漂亮的裙子……"
+    girl.char "从那时起，我就爱上了漂亮的裙子...."
 
 # game/BKinteractions.rpy:4237
 translate chinese slave_story4_397e68e9:
 
     # you "Well, work hard, and you just might get your own, one day..."
-    you "努力工作，总有一天你会有属于自己的……"
+    you "努力工作，总有一天你会有属于自己的...."
 
 # game/BKinteractions.rpy:4239
 translate chinese slave_story4_4e8eeb14:
 
     # girl.char "Yes, Master [MC.name]..."
-    girl.char "是的，主人[MC.name]……"
+    girl.char "是的，主人[MC.name]...."
 
 # game/BKinteractions.rpy:4250
 translate chinese slave_story4_f8088ea1:
@@ -3856,31 +3856,31 @@ translate chinese slave_story4_030f35a5:
 translate chinese slave_story4_ac89493c:
 
     # you "Well..." nointeract
-    you "嗯……" nointeract
+    you "嗯...." nointeract
 
 # game/BKinteractions.rpy:4268
 translate chinese slave_story4_58a3dd56:
 
     # you "Of course. Slaves are human beings, we are all the same. It's just a social institution..."
-    you "当然可以。奴隶是人，我们都是一样的。它只是一个社会机构……"
+    you "当然可以。奴隶是人，我们都是一样的。它只是一个社会机构...."
 
 # game/BKinteractions.rpy:4269
 translate chinese slave_story4_c7b8d007:
 
     # girl.char "You really think so? I'm not so sure..."
-    girl.char "你真的这么想？我不太确定……"
+    girl.char "你真的这么想？我不太确定...."
 
 # game/BKinteractions.rpy:4273
 translate chinese slave_story4_26ecab87:
 
     # you "Well, slaves aren't equal with free persons, of course, but they are definitely people. I mean, they have thoughts and feelings, you know... More than a vulgar animal, anyway."
-    you "当然，奴隶和自由人是不平等的，但他们绝对是人。我的意思是，他们有思想和感情，你知道……至少比粗俗的动物还粗俗。"
+    you "当然，奴隶和自由人是不平等的，但他们绝对是人。我的意思是，他们有思想和感情，你知道....至少比粗俗的动物还粗俗。"
 
 # game/BKinteractions.rpy:4274
 translate chinese slave_story4_53bc58d0:
 
     # girl.char "I see..."
-    girl.char "我明白了……"
+    girl.char "我明白了...."
 
 # game/BKinteractions.rpy:4278
 translate chinese slave_story4_6d09d2c3:
@@ -3910,7 +3910,7 @@ translate chinese slave_story4_e7c72d25:
 translate chinese slave_story4_01107499:
 
     # girl.char "Being born [text1], I don't believe that a slave can be equal with free persons..."
-    girl.char "我生来就不相信奴隶能与自由人平等……"
+    girl.char "我生来就不相信奴隶能与自由人平等...."
 
 # game/BKinteractions.rpy:4291
 translate chinese slave_story4_346f7e24:
@@ -3928,13 +3928,13 @@ translate chinese slave_story4_9183ebbc:
 translate chinese slave_story4_cb07da27:
 
     # girl.char "I know it's true. When I was a child, I was treated with no more consideration than a cheap rag. People knew that I was nothing, anonymous and replaceable..."
-    girl.char "我知道这是真的。当我还是个孩子的时候，别人对我的关心不过是一块廉价的破布。人们知道我什么都不是，默默无闻，可以替代……"
+    girl.char "我知道这是真的。当我还是个孩子的时候，别人对我的关心不过是一块廉价的破布。人们知道我什么都不是，默默无闻，可以替代...."
 
 # game/BKinteractions.rpy:4297
 translate chinese slave_story4_7e098665:
 
     # girl.char "At least until... Until I became a grown woman..."
-    girl.char "至少直到……直到我长大成人……"
+    girl.char "至少直到....直到我长大成人...."
 
 # game/BKinteractions.rpy:4299
 translate chinese slave_story4_fec1fe3c:
@@ -3946,19 +3946,19 @@ translate chinese slave_story4_fec1fe3c:
 translate chinese slave_story4_e3814ad2:
 
     # girl.char "As I grew older, I began to notice the stares men were giving me... A few at first, then many."
-    girl.char "随着年龄的增长，我开始注意到男人们对我的凝视……开始是几个，然后是很多。"
+    girl.char "随着年龄的增长，我开始注意到男人们对我的凝视....开始是几个，然后是很多。"
 
 # game/BKinteractions.rpy:4303
 translate chinese slave_story4_90093daa:
 
     # girl.char "The son of the owner of the [girl.story_home] was [girl.story_profession_article]. He was always giving me those weird looks..."
-    girl.char "[girl.story_home]的主人的儿子是[girl.story_profession_article]。他总是用那种奇怪的眼神看着我……"
+    girl.char "[girl.story_home]的主人的儿子是[girl.story_profession_article]。他总是用那种奇怪的眼神看着我...."
 
 # game/BKinteractions.rpy:4305
 translate chinese slave_story4_2eee39f0:
 
     # girl.char "One day, he offered to give me some money... In exchange, I had to show him my body... Nothing more."
-    girl.char "有一天，他提出给我一些钱……作为交换，我必须让他看我的身体……仅此而已。"
+    girl.char "有一天，他提出给我一些钱....作为交换，我必须让他看我的身体....仅此而已。"
 
 # game/BKinteractions.rpy:4307
 translate chinese slave_story4_0d6a0a86:
@@ -3970,31 +3970,31 @@ translate chinese slave_story4_0d6a0a86:
 translate chinese slave_story4_940c4ab5:
 
     # girl.char "This was the first time I had any money to my name... I was so excited. I went to town, and bought a small bag of candy. I was so happy, I couldn't believe my luck."
-    girl.char "这是我第一次有钱……我很兴奋。我去了城里，买了一小袋糖果。我太高兴了，我不敢相信我的运气。"
+    girl.char "这是我第一次有钱....我很兴奋。我去了城里，买了一小袋糖果。我太高兴了，我不敢相信我的运气。"
 
 # game/BKinteractions.rpy:4311
 translate chinese slave_story4_06eb2679:
 
     # girl.char "The [girl.story_profession] kept coming, and I kept taking his money. I was saving it, a few denars at a time... I thought I could buy a beautiful dress after a while, like the noble lady I had seen..."
-    girl.char "[girl.story_profession]不断地来，我不断地拿他的钱。我在攒钱，一次几枚金币……我想过一会儿我就能买一件漂亮的衣服，就像我看到的那位高贵的女士……"
+    girl.char "[girl.story_profession]不断地来，我不断地拿他的钱。我在攒钱，一次几枚金币....我想过一会儿我就能买一件漂亮的衣服，就像我看到的那位高贵的女士...."
 
 # game/BKinteractions.rpy:4315
 translate chinese slave_story4_d785e624:
 
     # girl.char "I had no idea how much it really cost..."
-    girl.char "我不知道它到底花了多少钱……"
+    girl.char "我不知道它到底花了多少钱...."
 
 # game/BKinteractions.rpy:4317
 translate chinese slave_story4_fc6c0541:
 
     # girl.char "But the [girl.story_profession] wasn't satisfied with just seeing me naked... He wanted more, and with each day passing, he became more impatient."
-    girl.char "但[girl.story_profession]不满足于只看到我裸体……他想要更多，但随着日子一天天过去，他变得越来越不耐烦。"
+    girl.char "但[girl.story_profession]不满足于只看到我裸体....他想要更多，但随着日子一天天过去，他变得越来越不耐烦。"
 
 # game/BKinteractions.rpy:4319
 translate chinese slave_story4_1a978e01:
 
     # girl.char "One day... Something terrible happened..."
-    girl.char "有一天……可怕的事情发生了……"
+    girl.char "有一天....可怕的事情发生了...."
 
 # game/BKinteractions.rpy:4321
 translate chinese slave_story4_a577ad0e:
@@ -4018,7 +4018,7 @@ translate chinese slave_story4_4e2e024e:
 translate chinese slave_story4_039efb21:
 
     # you "Well... Perhaps you can tell me later?"
-    you "嗯……也许你以后可以告诉我？"
+    you "嗯....也许你以后可以告诉我？"
 
 # game/BKinteractions.rpy:4329
 translate chinese slave_story4_81bf8848:
@@ -4060,7 +4060,7 @@ translate chinese slave_story4_2bde40cf:
 translate chinese slave_story4_e40f7bf8:
 
     # girl.char "Oh, Master [MC.name]... I was just... Yesterday night was quite tiring, and..."
-    girl.char "哦，主人[MC.name]……我只是……昨天晚上很累，而且……"
+    girl.char "哦，主人[MC.name]....我只是....昨天晚上很累，而且...."
 
 # game/BKinteractions.rpy:4351
 translate chinese slave_story4_33f80bf7:
@@ -4072,7 +4072,7 @@ translate chinese slave_story4_33f80bf7:
 translate chinese slave_story4_20d9d73d:
 
     # girl.char "Oh, that man..."
-    girl.char "哦，那个人……"
+    girl.char "哦，那个人...."
 
 # game/BKinteractions.rpy:4355
 translate chinese slave_story4_cb89afdf:
@@ -4090,13 +4090,13 @@ translate chinese slave_story4_d0d855aa:
 translate chinese slave_story4_5c1683ab:
 
     # girl.char "One night, he told me to follow him in the stables near the [girl.story_home]. I though he only wanted to slip me a few coins in exchange for seeing my boobs or something, so I accepted..."
-    girl.char "一天晚上，他让我跟他去[girl.story_home]附近的马厩。我以为他只是想塞给我几个硬币，换我看看我的胸部什么的，所以我接受了……"
+    girl.char "一天晚上，他让我跟他去[girl.story_home]附近的马厩。我以为他只是想塞给我几个硬币，换我看看我的胸部什么的，所以我接受了...."
 
 # game/BKinteractions.rpy:4361
 translate chinese slave_story4_955e2048:
 
     # girl.char "I was still very young, and it all felt like a game..."
-    girl.char "当时我还很年轻，一切都像是一场游戏……"
+    girl.char "当时我还很年轻，一切都像是一场游戏...."
 
 # game/BKinteractions.rpy:4363
 translate chinese slave_story4_7ab57d7f:
@@ -4108,19 +4108,19 @@ translate chinese slave_story4_7ab57d7f:
 translate chinese slave_story4_ded3dc03:
 
     # girl.char "I was confused, I didn't know what to say at first as he was fondling my breasts..."
-    girl.char "我很困惑，一开始我不知道该说什么，因为他在抚摸我的胸部……"
+    girl.char "我很困惑，一开始我不知道该说什么，因为他在抚摸我的胸部...."
 
 # game/BKinteractions.rpy:4367
 translate chinese slave_story4_b46b1511:
 
     # girl.char "When he lowered his hands, I started fighting him. But he didn't stop. In fact, he only seemed to become more excited as I resisted..."
-    girl.char "当他把手放下来时，我开始和他搏斗。但他没有停下来。事实上，当我拒绝时，他似乎变得更兴奋了……"
+    girl.char "当他把手放下来时，我开始和他搏斗。但他没有停下来。事实上，当我拒绝时，他似乎变得更兴奋了...."
 
 # game/BKinteractions.rpy:4369
 translate chinese slave_story4_97f06d3f:
 
     # girl.char "When he took off his pants and I saw his erect dick, I realized he wasn't going to stop there. I was so scared..."
-    girl.char "当他脱下裤子，我看到他勃起的阴茎时，我意识到他不会就此打住。我很害怕……"
+    girl.char "当他脱下裤子，我看到他勃起的阴茎时，我意识到他不会就此打住。我很害怕...."
 
 # game/BKinteractions.rpy:4372
 translate chinese slave_story4_260af2ca:
@@ -4132,7 +4132,7 @@ translate chinese slave_story4_260af2ca:
 translate chinese slave_story4_aea0cc3e:
 
     # girl.char "I started crying, not knowing what to do... I tried running from him, but he followed me around the stables, taunting me... He was drunk and angry..."
-    girl.char "我哭了起来，不知道该怎么办……我试图从他身边跑开，但他在马厩里跟着我，嘲笑我……他喝醉了，很生气……"
+    girl.char "我哭了起来，不知道该怎么办....我试图从他身边跑开，但他在马厩里跟着我，嘲笑我....他喝醉了，很生气...."
 
 # game/BKinteractions.rpy:4376
 translate chinese slave_story4_317b1e1f:
@@ -4150,7 +4150,7 @@ translate chinese slave_story4_3402a791:
 translate chinese slave_story4_dfba1ed7:
 
     # girl.char "I was so scared I nearly fainted... I closed my eyes..."
-    girl.char "我吓得差点晕过去……我闭上眼睛……"
+    girl.char "我吓得差点晕过去....我闭上眼睛...."
 
 # game/BKinteractions.rpy:4382
 translate chinese slave_story4_6e74181c:
@@ -4162,19 +4162,19 @@ translate chinese slave_story4_6e74181c:
 translate chinese slave_story4_bf877fbf:
 
     # girl.char "The [girl.story_profession] looked like he wasn't breathing... My [girl.story_guardian] told me to get dressed and run back to the [girl.story_home], quickly. So I did..."
-    girl.char "[girl.story_profession]看起来他没有呼吸……我的[girl.story_guardian]让我穿上衣服，跑回[girl.story_home]身边，很快。所以我做了……"
+    girl.char "[girl.story_profession]看起来他没有呼吸....我的[girl.story_guardian]让我穿上衣服，跑回[girl.story_home]身边，很快。所以我做了...."
 
 # game/BKinteractions.rpy:4386
 translate chinese slave_story4_2aaa212f:
 
     # girl.char "When I got to my bunk, I fell asleep immediately, exhausted and confused... It seemed like it was all a dream..."
-    girl.char "我上了床铺，马上就睡着了，又累又糊涂……好像这一切都是一场梦……"
+    girl.char "我上了床铺，马上就睡着了，又累又糊涂....好像这一切都是一场梦...."
 
 # game/BKinteractions.rpy:4388
 translate chinese slave_story4_2fc792a1:
 
     # girl.char "When I woke up the next day, I went out to the courtyard... And I fell on my knees, oh! What a horrible scene..."
-    girl.char "第二天醒来，我走到院子里……我跪倒在地，噢！多么可怕的一幕……"
+    girl.char "第二天醒来，我走到院子里....我跪倒在地，噢！多么可怕的一幕...."
 
 # game/BKinteractions.rpy:4390
 translate chinese slave_story4_3900c296:
@@ -4186,25 +4186,25 @@ translate chinese slave_story4_3900c296:
 translate chinese slave_story4_e3b475a0:
 
     # girl.char "They had hung my [girl.story_guardian] from a high tree... Right there in the courtyard. There was no inquiry, no trial."
-    girl.char "他们把我的[girl.story_guardian]绞死了。从一棵高树上……就在院子里。没有调查，没有审判。"
+    girl.char "他们把我的[girl.story_guardian]绞死了。从一棵高树上....就在院子里。没有调查，没有审判。"
 
 # game/BKinteractions.rpy:4394
 translate chinese slave_story4_d994784f:
 
     # girl.char "They found the son of the owner in a coma, he said he was attacked... Someone saw my [girl.story_guardian] leaving the stables..."
-    girl.char "他们发现失主的儿子在昏迷中，他说自己被袭击了……有人看见我的[girl.story_guardian]离开马厩……"
+    girl.char "他们发现失主的儿子在昏迷中，他说自己被袭击了....有人看见我的[girl.story_guardian]离开马厩...."
 
 # game/BKinteractions.rpy:4396
 translate chinese slave_story4_3f4bb48e:
 
     # girl.char "After that, none of the slaves and servants wanted anything to do with me. I was completely lonely then, even the basest slave despised me... No one has the right to lift a hand against their betters."
-    girl.char "从此以后，没有一个奴仆和仆人愿意和我有什么来往。那时我非常孤独，连最卑贱的奴隶也看不起我……没有人有权对比自己强的人采取行动。"
+    girl.char "从此以后，没有一个奴仆和仆人愿意和我有什么来往。那时我非常孤独，连最卑贱的奴隶也看不起我....没有人有权对比自己强的人采取行动。"
 
 # game/BKinteractions.rpy:4398
 translate chinese slave_story4_794737ee:
 
     # girl.char "I have learnt my lesson that day. If you're poor and defenseless, everyone will abuse you. People only care for wealth, birth, power, and sex. I had only one of those to give away... So being a sex slave was always my destiny, I guess."
-    girl.char "那天我吸取了教训。如果你贫穷无助，每个人都会虐待你。人们只关心财富、出身、权力和性。我只有一个可以送人……所以我想，做一个性奴隶一直是我的命运。"
+    girl.char "那天我吸取了教训。如果你贫穷无助，每个人都会虐待你。人们只关心财富、出身、权力和性。我只有一个可以送人....所以我想，做一个性奴隶一直是我的命运。"
 
 # game/BKinteractions.rpy:4400
 translate chinese slave_story4_8bb00932:
@@ -4228,31 +4228,31 @@ translate chinese slave_story4_33c6fd3a:
 translate chinese slave_story4_5be4095b:
 
     # girl.char "That son of a bitch... The [girl.story_profession]... He's just a cripple now, a drooling idiot who can't even form a complete sentence..."
-    girl.char "那个狗娘养的……[girl.story_profession]……他现在只是个跛子，一个连完整的句子都不会说的流口水的白痴……"
+    girl.char "那个狗娘养的....[girl.story_profession]....他现在只是个跛子，一个连完整的句子都不会说的流口水的白痴...."
 
 # game/BKinteractions.rpy:4408
 translate chinese slave_story4_9f24ee31:
 
     # girl.char "But I don't care. I want revenge on his sorry ass. I want someone to kick his fucking head in. Make him feel scared and powerless, like I once did..."
-    girl.char "但我不在乎。我要报复他的混蛋，我要有人把他的头踢进去。让他感到害怕和无能为力，就像我曾经做过的那样……"
+    girl.char "但我不在乎。我要报复他的混蛋，我要有人把他的头踢进去。让他感到害怕和无能为力，就像我曾经做过的那样...."
 
 # game/BKinteractions.rpy:4409
 translate chinese slave_story4_cca2820d:
 
     # you "Scary..."
-    you "可怕的……"
+    you "可怕的...."
 
 # game/BKinteractions.rpy:4413
 translate chinese slave_story4_57eef8f2:
 
     # girl.char "My [girl.story_guardian] died trying to protect me... No one else ever looked after me..."
-    girl.char "我的[girl.story_guardian]为了保护我而死……从来没有人照顾过我……"
+    girl.char "我的[girl.story_guardian]为了保护我而死....从来没有人照顾过我...."
 
 # game/BKinteractions.rpy:4414
 translate chinese slave_story4_cbd2e533:
 
     # girl.char "After a few days, they threw my [girl.story_guardian] in the latrines, around the back of the [girl.story_home]... Said that's what criminals deserve..."
-    girl.char "几天后，他们把我的[girl.story_guardian]扔在厕所里，在[girl.story_home]后面……说这是罪犯应得的……"
+    girl.char "几天后，他们把我的[girl.story_guardian]扔在厕所里，在[girl.story_home]后面....说这是罪犯应得的...."
 
 # game/BKinteractions.rpy:4415
 translate chinese slave_story4_44d44e84:
@@ -4270,7 +4270,7 @@ translate chinese slave_story4_d4454155:
 translate chinese slave_story4_4836eef5:
 
     # girl.char "I never want to feel so weak, ever again... For that, I need money... This is the only thing that can make a difference for a lowly slave like me."
-    girl.char "我再也不想感到如此虚弱，再也不想……为此，我需要钱……这是唯一能使我这样一个卑微的奴隶有所不同的东西。"
+    girl.char "我再也不想感到如此虚弱，再也不想....为此，我需要钱....这是唯一能使我这样一个卑微的奴隶有所不同的东西。"
 
 # game/BKinteractions.rpy:4424
 translate chinese slave_story4_51682f98:
@@ -4282,13 +4282,13 @@ translate chinese slave_story4_51682f98:
 translate chinese slave_story4_4b2efc01:
 
     # girl.char "Master... If I had only an ounce of wealth or power, you know what I would do?"
-    girl.char "主人……如果我只有一盎司的财富或权力，你知道我会做什么吗？"
+    girl.char "主人....如果我只有一盎司的财富或权力，你知道我会做什么吗？"
 
 # game/BKinteractions.rpy:4439
 translate chinese slave_story4_9b1fed0c:
 
     # girl.char "I want someone to kick the [girl.story_profession]'s fucking head in. Make him feel scared and powerless, like I once did..."
-    girl.char "我想有个人能踢那个[girl.story_profession]猪头。让他感到害怕和无能为力，就像我曾经做过的那样……"
+    girl.char "我想有个人能踢那个[girl.story_profession]猪头。让他感到害怕和无能为力，就像我曾经做过的那样...."
 
 # game/BKinteractions.rpy:4443
 translate chinese slave_story4_57eef8f2_1:
@@ -4366,13 +4366,13 @@ translate chinese slave_story5_363ccb90:
 translate chinese slave_story5_d6194184:
 
     # girl.char "Master! I, uh, I was just going for some fresh air, I swear..."
-    girl.char "主人！我，呃，我只是想呼吸点新鲜空气，我发誓……"
+    girl.char "主人！我，呃，我只是想呼吸点新鲜空气，我发誓...."
 
 # game/BKinteractions.rpy:4495
 translate chinese slave_story5_2119dbe3:
 
     # you "Is that so... Why do I feel like there's more to it?"
-    you "是这样……为什么我觉得还有更多呢？"
+    you "是这样....为什么我觉得还有更多呢？"
 
 # game/BKinteractions.rpy:4500
 translate chinese slave_story5_af3c345d:
@@ -4390,13 +4390,13 @@ translate chinese slave_story5_1c7a94aa:
 translate chinese slave_story5_10f603c4:
 
     # girl.char "I'm sorry..."
-    girl.char "我很抱歉……"
+    girl.char "我很抱歉...."
 
 # game/BKinteractions.rpy:4506
 translate chinese slave_story5_2325727f:
 
     # girl.char "I haven't been able to cope with the feeling of being locked in... Not since..."
-    girl.char "我一直无法应对被锁在家里的感觉……自从……"
+    girl.char "我一直无法应对被锁在家里的感觉....自从...."
 
 # game/BKinteractions.rpy:4509
 translate chinese slave_story5_7af00b8e:
@@ -4420,7 +4420,7 @@ translate chinese slave_story5_96773a44:
 translate chinese slave_story5_f5103810:
 
     # girl.char "I just... I was in prison before, you see. It was a terrible, terrible time."
-    girl.char "我只是……你知道，我以前坐过牢。那是一段非常非常糟糕的时间。"
+    girl.char "我只是....你知道，我以前坐过牢。那是一段非常非常糟糕的时间。"
 
 # game/BKinteractions.rpy:4516
 translate chinese slave_story5_fef91995:
@@ -4438,7 +4438,7 @@ translate chinese slave_story5_7ce7c857:
 translate chinese slave_story5_54e6d272:
 
     # girl.char "We were living together in [girl.story_home_article]... Life was easy then."
-    girl.char "我们一起住在[girl.story_home_article]……那时的生活很轻松。"
+    girl.char "我们一起住在[girl.story_home_article]....那时的生活很轻松。"
 
 # game/BKinteractions.rpy:4527
 translate chinese slave_story5_a87859b5:
@@ -4450,13 +4450,13 @@ translate chinese slave_story5_a87859b5:
 translate chinese slave_story5_f3970f70:
 
     # girl.char "I was happy that way, but I could tell something frustrated my [girl.story_guardian]..."
-    girl.char "这样我很开心，但我能说出一些令我的[girl.story_guardian]感到沮丧的事情……"
+    girl.char "这样我很开心，但我能说出一些令我的[girl.story_guardian]感到沮丧的事情...."
 
 # game/BKinteractions.rpy:4531
 translate chinese slave_story5_cb1988a5:
 
     # girl.char "Kept saying, 'If we had more money, we could move to a rich area, and live the high life', stuff like that..."
-    girl.char "一直在说，‘如果我们有更多的钱，我们可以搬到一个富裕的地区，过上奢华的生活’，诸如此类的话……"
+    girl.char "一直在说，‘如果我们有更多的钱，我们可以搬到一个富裕的地区，过上奢华的生活’，诸如此类的话...."
 
 # game/BKinteractions.rpy:4533
 translate chinese slave_story5_b7e720e7:
@@ -4474,7 +4474,7 @@ translate chinese slave_story5_96a70992:
 translate chinese slave_story5_25e23f39:
 
     # girl.char "As you can imagine, things didn't go down so well..."
-    girl.char "你可以想象，事情进展得不太顺利……"
+    girl.char "你可以想象，事情进展得不太顺利...."
 
 # game/BKinteractions.rpy:4539
 translate chinese slave_story5_fc99e269:
@@ -4504,25 +4504,25 @@ translate chinese slave_story5_fc93ed0c:
 translate chinese slave_story5_2c0dc8b2:
 
     # girl.char "Oh, Master [MC.name]..."
-    girl.char "哦，主人[MC.name]……"
+    girl.char "哦，主人[MC.name]...."
 
 # game/BKinteractions.rpy:4557
 translate chinese slave_story5_88e7601a:
 
     # girl.char "Thanks for coming... I appreciate the company."
-    girl.char "谢谢光临……谢谢你的陪伴。"
+    girl.char "谢谢光临....谢谢你的陪伴。"
 
 # game/BKinteractions.rpy:4559
 translate chinese slave_story5_7c920f22:
 
     # girl.char "I was thinking by myself... It's hard to talk sometimes..."
-    girl.char "我一个人在想……有时候很难说话……"
+    girl.char "我一个人在想....有时候很难说话...."
 
 # game/BKinteractions.rpy:4561
 translate chinese slave_story5_3b74b67c:
 
     # girl.char "I was thinking about the story I told you last time... Of how I ended up in a jail..."
-    girl.char "我在想上次给你讲的那个故事……我是如何被关进监狱的"
+    girl.char "我在想上次给你讲的那个故事....我是如何被关进监狱的"
 
 # game/BKinteractions.rpy:4563
 translate chinese slave_story5_5329c274:
@@ -4546,19 +4546,19 @@ translate chinese slave_story5_adc030f2:
 translate chinese slave_story5_1f9617fe:
 
     # girl.char "I was barely 16 or 17, and in my prime... Most men lusted after me."
-    girl.char "那时我才16、17岁，正值壮年……大多数男人都贪恋我。"
+    girl.char "那时我才16、17岁，正值壮年....大多数男人都贪恋我。"
 
 # game/BKinteractions.rpy:4571
 translate chinese slave_story5_1150e5c2:
 
     # girl.char "My part was to seduce the single men that came by our guesthouse... I'd drink a few rounds with them, then offered them to skip out and take a little walk by the moonlight."
-    girl.char "我的任务是引诱来我们宾馆的单身男子……我会和他们喝上几杯，然后让他们跳下车，在月光下散散步。"
+    girl.char "我的任务是引诱来我们宾馆的单身男子....我会和他们喝上几杯，然后让他们跳下车，在月光下散散步。"
 
 # game/BKinteractions.rpy:4574
 translate chinese slave_story5_f081bd16:
 
     # girl.char "Of course, they didn't know their drinks were spiked... Once outside, I'd lead them towards a quiet spot near the river... There, my [girl.story_guardian] would ambush them, beating them up and stealing their belongings. Because they were drugged, they couldn't put up a big fight."
-    girl.char "当然，他们不知道他们的饮料里有兴奋剂……一到外面，我就带他们去河边一个安静的地方……在那里，我的[girl.story_guardian]会伏击他们，殴打他们，偷走他们的财物。因为他们被下了药，所以他们打不了一场大仗。"
+    girl.char "当然，他们不知道他们的饮料里有兴奋剂....一到外面，我就带他们去河边一个安静的地方....在那里，我的[girl.story_guardian]会伏击他们，殴打他们，偷走他们的财物。因为他们被下了药，所以他们打不了一场大仗。"
 
 # game/BKinteractions.rpy:4577
 translate chinese slave_story5_c08b646e:
@@ -4570,7 +4570,7 @@ translate chinese slave_story5_c08b646e:
 translate chinese slave_story5_bce97211:
 
     # girl.char "But..."
-    girl.char "但是……"
+    girl.char "但是...."
 
 # game/BKinteractions.rpy:4582
 translate chinese slave_story5_e9cb16c3:
@@ -4588,7 +4588,7 @@ translate chinese slave_story5_3900c296:
 translate chinese slave_story5_3d87271d:
 
     # girl.char "One night, our guest was a mean looking man from the West, [girl.story_profession_article], I think... He was scarred and ugly, I didn't want anything to do with him..."
-    girl.char "一天晚上，我们的客人是一个长相凶恶的西方人，[girl.story_profession_article]，我认为……他伤痕累累，长相丑陋，我不想和他有任何瓜葛……"
+    girl.char "一天晚上，我们的客人是一个长相凶恶的西方人，[girl.story_profession_article]，我认为....他伤痕累累，长相丑陋，我不想和他有任何瓜葛...."
 
 # game/BKinteractions.rpy:4589
 translate chinese slave_story5_ce55e789:
@@ -4600,19 +4600,19 @@ translate chinese slave_story5_ce55e789:
 translate chinese slave_story5_804411a6:
 
     # girl.char "So I tried my usual routine with the stranger, and it worked all right... After we had a few rounds, I started running my hand across his crotch, and whispered to him: 'follow me...'"
-    girl.char "所以我试着像往常一样和陌生人相处，一切都很顺利……我们打了几枪后，我开始用手抚摸他的胯部，小声对他说:“跟我来……”"
+    girl.char "所以我试着像往常一样和陌生人相处，一切都很顺利....我们打了几枪后，我开始用手抚摸他的胯部，小声对他说:“跟我来....”"
 
 # game/BKinteractions.rpy:4594
 translate chinese slave_story5_887db267:
 
     # girl.char "We went outside by the back door, and I took his hand and led him towards the river..."
-    girl.char "我们从后门出去，我拉着他的手，带他走向河边……"
+    girl.char "我们从后门出去，我拉着他的手，带他走向河边...."
 
 # game/BKinteractions.rpy:4596
 translate chinese slave_story5_d7ee04be:
 
     # girl.char "We were making out, and he started fondling me under my blouse... I was disgusted to have an old, ugly man touch me in such a way, but it was also oddly exciting..."
-    girl.char "我们正在亲热，他开始在我的上衣下面爱抚我……让一个又老又丑的男人用这种方式碰我，我感到恶心，但这也奇怪地令人兴奋……"
+    girl.char "我们正在亲热，他开始在我的上衣下面爱抚我....让一个又老又丑的男人用这种方式碰我，我感到恶心，但这也奇怪地令人兴奋...."
 
 # game/BKinteractions.rpy:4598
 translate chinese slave_story5_fd39bb7f:
@@ -4636,7 +4636,7 @@ translate chinese slave_story5_3d9893be:
 translate chinese slave_story5_4d5232d5:
 
     # girl.char "In spite of the drugs running through his system, the [girl.story_profession] put up a fierce fight. My [girl.story_guardian] started to panic... And took out a knife."
-    girl.char "尽管他的身体里有毒品，[girl.story_profession]进行了一场激烈的战斗。我的[girl.story_guardian]开始恐慌……然后拿出一把刀。"
+    girl.char "尽管他的身体里有毒品，[girl.story_profession]进行了一场激烈的战斗。我的[girl.story_guardian]开始恐慌....然后拿出一把刀。"
 
 # game/BKinteractions.rpy:4607
 translate chinese slave_story5_ea99acad:
@@ -4654,7 +4654,7 @@ translate chinese slave_story5_4d84418d:
 translate chinese slave_story5_8756e0fa:
 
     # you "Wow..."
-    you "哇……"
+    you "哇...."
 
 # game/BKinteractions.rpy:4613
 translate chinese slave_story5_52654763:
@@ -4684,7 +4684,7 @@ translate chinese slave_story5_87763c13:
 translate chinese slave_story5_e4722677:
 
     # girl.char "But we had no time to celebrate, anyway... Because as we were contemplating the spoils of our crime, a guard patrol showed up."
-    girl.char "但无论如何，我们没有时间庆祝……因为正当我们考虑我们的罪行时，一个卫兵巡逻队出现了。"
+    girl.char "但无论如何，我们没有时间庆祝....因为正当我们考虑我们的罪行时，一个卫兵巡逻队出现了。"
 
 # game/BKinteractions.rpy:4623
 translate chinese slave_story5_3e26844e:
@@ -4702,7 +4702,7 @@ translate chinese slave_story5_a8888bbd:
 translate chinese slave_story5_95549195:
 
     # girl.char "I will tell you the rest later... It's a painful story to me."
-    girl.char "我稍后再告诉你其余的……这对我来说是一个痛苦的故事。"
+    girl.char "我稍后再告诉你其余的....这对我来说是一个痛苦的故事。"
 
 # game/BKinteractions.rpy:4629
 translate chinese slave_story5_b0ecb5e5:
@@ -4720,25 +4720,25 @@ translate chinese slave_story5_d6ad4b86:
 translate chinese slave_story5_aa46bdbd:
 
     # girl.char "Hi, Master [MC.name]..."
-    girl.char "你好，主人[MC.name]……"
+    girl.char "你好，主人[MC.name]...."
 
 # game/BKinteractions.rpy:4642
 translate chinese slave_story5_5a777dc3:
 
     # you "Hi, [girl.name]... You're not thinking of sneaking out on me again, are you?"
-    you "嗨，[girl.name]……你不会想再偷偷溜出去吧？"
+    you "嗨，[girl.name]....你不会想再偷偷溜出去吧？"
 
 # game/BKinteractions.rpy:4644
 translate chinese slave_story5_23ef2a8a:
 
     # girl.char "N... No..."
-    girl.char "不……不要……"
+    girl.char "不....不要...."
 
 # game/BKinteractions.rpy:4646
 translate chinese slave_story5_40f3547c:
 
     # girl.char "I was in prison for 13 months..."
-    girl.char "我在监狱里呆了13个月……"
+    girl.char "我在监狱里呆了13个月...."
 
 # game/BKinteractions.rpy:4648
 translate chinese slave_story5_b22b7c6a:
@@ -4750,7 +4750,7 @@ translate chinese slave_story5_b22b7c6a:
 translate chinese slave_story5_44036fd9:
 
     # girl.char "For being an accessory to the crime..."
-    girl.char "作为犯罪的从犯……"
+    girl.char "作为犯罪的从犯...."
 
 # game/BKinteractions.rpy:4652
 translate chinese slave_story5_8855dd4c:
@@ -4762,19 +4762,19 @@ translate chinese slave_story5_8855dd4c:
 translate chinese slave_story5_152df13e:
 
     # girl.char "Oh... They did worse than that."
-    girl.char "哦……他们做得更糟。"
+    girl.char "哦....他们做得更糟。"
 
 # game/BKinteractions.rpy:4656
 translate chinese slave_story5_297da782:
 
     # girl.char "When the patrol arrived, we were busy counting the jewels, my [girl.story_guardian] was still covered with the [girl.story_profession]'s blood..."
-    girl.char "巡逻队到达时，我们正忙着数珠宝呢，我的[girl.story_guardian]仍然覆盖着[girl.story_profession]的血液……"
+    girl.char "巡逻队到达时，我们正忙着数珠宝呢，我的[girl.story_guardian]仍然覆盖着[girl.story_profession]的血液...."
 
 # game/BKinteractions.rpy:4658
 translate chinese slave_story5_e2973082:
 
     # you "It must have been hard to explain..."
-    you "一定很难解释……"
+    you "一定很难解释...."
 
 # game/BKinteractions.rpy:4660
 translate chinese slave_story5_7023e094:
@@ -4792,7 +4792,7 @@ translate chinese slave_story5_8fece875:
 translate chinese slave_story5_18bb41b2:
 
     # girl.char "But the patrol sergeant stepped forward. A fat man, with a thin mustache... I still remember his evil, greedy smile..."
-    girl.char "但是巡警走上前去。一个留着小胡子的胖子……我还记得他邪恶贪婪的笑容……"
+    girl.char "但是巡警走上前去。一个留着小胡子的胖子....我还记得他邪恶贪婪的笑容...."
 
 # game/BKinteractions.rpy:4666
 translate chinese slave_story5_a003ee03:
@@ -4810,13 +4810,13 @@ translate chinese slave_story5_b0c1b103:
 translate chinese slave_story5_3a9e8f2b:
 
     # girl.char "A few days later, after a summary trial, they hung my [girl.story_guardian] from the gallows of the nearby guard tower..."
-    girl.char "几天后，经过简易审讯，他们绞死了我的[girl.story_guardian]从附近守卫塔的绞刑架上……"
+    girl.char "几天后，经过简易审讯，他们绞死了我的[girl.story_guardian]从附近守卫塔的绞刑架上...."
 
 # game/BKinteractions.rpy:4672
 translate chinese slave_story5_62953cf2:
 
     # girl.char "I was only found an accessory to the crime, so I was jailed instead. 'Ten years', the judge said. My heart sank..."
-    girl.char "我只是被发现是这个罪行的从犯，所以我被判入狱。“十年，”法官说。我的心沉了下去……"
+    girl.char "我只是被发现是这个罪行的从犯，所以我被判入狱。“十年，”法官说。我的心沉了下去...."
 
 # game/BKinteractions.rpy:4674
 translate chinese slave_story5_41153d19:
@@ -4828,19 +4828,19 @@ translate chinese slave_story5_41153d19:
 translate chinese slave_story5_db7acbe3:
 
     # girl.char "I was one of the few female prisoners, and the guards enjoyed torturing us... Making us do degrading things just to get bread and water, doing 'cavity'searches under flimsy excuses..."
-    girl.char "我是为数不多的女囚犯之一，狱警们喜欢折磨我们……让我们做一些有辱人格的事情，只是为了得到面包和水，在脆弱的借口下做“空洞”的搜索……"
+    girl.char "我是为数不多的女囚犯之一，狱警们喜欢折磨我们....让我们做一些有辱人格的事情，只是为了得到面包和水，在脆弱的借口下做“空洞”的搜索...."
 
 # game/BKinteractions.rpy:4679
 translate chinese slave_story5_2e8299f1:
 
     # girl.char "The worst was the guard sergeant. He had taken a shine to me after arresting us... So whenever he came by the tower, he made it a point to visit my cell."
-    girl.char "最糟糕的是卫兵中士。他在逮捕我们之后看上了我……所以无论他什么时候经过那座塔，他都一定要来看我的牢房。"
+    girl.char "最糟糕的是卫兵中士。他在逮捕我们之后看上了我....所以无论他什么时候经过那座塔，他都一定要来看我的牢房。"
 
 # game/BKinteractions.rpy:4681
 translate chinese slave_story5_fbca49cf:
 
     # girl.char "There... He did things to me."
-    girl.char "在那里……他对我做了一些事。"
+    girl.char "在那里....他对我做了一些事。"
 
 # game/BKinteractions.rpy:4683
 translate chinese slave_story5_574fbcf2:
@@ -4852,7 +4852,7 @@ translate chinese slave_story5_574fbcf2:
 translate chinese slave_story5_537f26f9:
 
     # girl.char "He was a sadistic bastard. His favorite thing was to put a knife to my face while I was chained to the wall, and tell me he'd slash my pretty face if I didn't do as he said..."
-    girl.char "他是个虐待狂。他最喜欢做的事就是在我被锁在墙上的时候用刀指着我的脸，告诉我如果我不照他说的做，他就会砍了我漂亮的脸……"
+    girl.char "他是个虐待狂。他最喜欢做的事就是在我被锁在墙上的时候用刀指着我的脸，告诉我如果我不照他说的做，他就会砍了我漂亮的脸...."
 
 # game/BKinteractions.rpy:4687
 translate chinese slave_story5_ffbadd1b:
@@ -4864,31 +4864,31 @@ translate chinese slave_story5_ffbadd1b:
 translate chinese slave_story5_ccced5a4:
 
     # girl.char "I felt completely helpless, like I was an object, devoid of free will... I just went along with the feeling..."
-    girl.char "我感到完全无助，就像我是一个没有自由意志的物体……我只是跟着感觉走……"
+    girl.char "我感到完全无助，就像我是一个没有自由意志的物体....我只是跟着感觉走...."
 
 # game/BKinteractions.rpy:4692
 translate chinese slave_story5_5b1d49d4:
 
     # girl.char "I hated it with every fiber of my body. I wanted to bite his fucking dick off, but I was too scared..."
-    girl.char "我全身上下都讨厌它。我想咬掉他的鸡巴，但我太害怕了……"
+    girl.char "我全身上下都讨厌它。我想咬掉他的鸡巴，但我太害怕了...."
 
 # game/BKinteractions.rpy:4694
 translate chinese slave_story5_fafc5d7d:
 
     # girl.char "When he was done, he usually came all over my food. Then he told me that I wouldn't have anything else to eat for a week..."
-    girl.char "当他吃完后，他通常会把我的食物弄得到处都是。然后他告诉我，我一个星期都没有别的东西吃了……"
+    girl.char "当他吃完后，他通常会把我的食物弄得到处都是。然后他告诉我，我一个星期都没有别的东西吃了...."
 
 # game/BKinteractions.rpy:4696
 translate chinese slave_story5_5321087d:
 
     # girl.char "Shamefully, I had to eat that food, I was starving... I can't get that awful taste out of my mouth."
-    girl.char "可耻的是，我不得不吃那些食物，我饿死了……我无法把那可怕的味道从嘴里说出来。"
+    girl.char "可耻的是，我不得不吃那些食物，我饿死了....我无法把那可怕的味道从嘴里说出来。"
 
 # game/BKinteractions.rpy:4698
 translate chinese slave_story5_bad055b8:
 
     # you "That's terrible... How did you finally escape?"
-    you "太可怕了……你最后是怎么逃跑的？"
+    you "太可怕了....你最后是怎么逃跑的？"
 
 # game/BKinteractions.rpy:4701
 translate chinese slave_story5_7a352f77:
@@ -4930,13 +4930,13 @@ translate chinese slave_story5_9add1070:
 translate chinese slave_story5_13367c35:
 
     # you "Did you... Kill him?"
-    you "你是……杀了他？"
+    you "你是....杀了他？"
 
 # game/BKinteractions.rpy:4716
 translate chinese slave_story5_e9b8d127:
 
     # girl.char "No... The last thing I needed was a bunch of angry guards running after me..."
-    girl.char "不……我最不需要的就是一群愤怒的卫兵追着我跑……"
+    girl.char "不....我最不需要的就是一群愤怒的卫兵追着我跑...."
 
 # game/BKinteractions.rpy:4718
 translate chinese slave_story5_3cd34ed9:
@@ -4954,25 +4954,25 @@ translate chinese slave_story5_058e8546:
 translate chinese slave_story5_85df0759:
 
     # girl.char "The taste of freedom, after a year locked in a dark cell... The cool night air rushing under my dress as I ran, caressing my naked pussy... It's such an undescribable feeling."
-    girl.char "自由的滋味，锁在黑暗的牢房一年之后……清凉的夜风从我的裙子下吹过，抚摸着我赤裸的阴部……这是一种难以形容的感觉。"
+    girl.char "自由的滋味，锁在黑暗的牢房一年之后....清凉的夜风从我的裙子下吹过，抚摸着我赤裸的阴部....这是一种难以形容的感觉。"
 
 # game/BKinteractions.rpy:4724
 translate chinese slave_story5_fcfa59f5:
 
     # girl.char "Then I got to Zan, and I met you... You know the rest."
-    girl.char "然后我到了赞，我遇见了你……其余的你都知道。"
+    girl.char "然后我到了赞，我遇见了你....其余的你都知道。"
 
 # game/BKinteractions.rpy:4726
 translate chinese slave_story5_6e9a44fb:
 
     # you "Yes..."
-    you "是的……"
+    you "是的...."
 
 # game/BKinteractions.rpy:4728
 translate chinese slave_story5_2b180728:
 
     # girl.char "Now that I am a slave, I am not free, of course... But I know that at least, now that I am just property, I will never be judged and jailed again. This is a wonderful feeling."
-    girl.char "既然我是奴隶，当然就不自由了……但我知道，至少，现在我只是财产，我不会再被审判和监禁。这是一种美妙的感觉。"
+    girl.char "既然我是奴隶，当然就不自由了....但我知道，至少，现在我只是财产，我不会再被审判和监禁。这是一种美妙的感觉。"
 
 # game/BKinteractions.rpy:4732
 translate chinese slave_story5_eb11f9b5:
@@ -4996,7 +4996,7 @@ translate chinese slave_story5_12149025:
 translate chinese slave_story5_f966ec7d:
 
     # girl.char "Because I was young and attractive, I was a prime choice to be sold as a sex slave... That's how, eventually, I ended up on Zan's slave market... Where you found me."
-    girl.char "因为我年轻又有魅力，我是被卖为性奴的首选……最终，我就这样来到了赞的奴隶市场……你找到我的地方。"
+    girl.char "因为我年轻又有魅力，我是被卖为性奴的首选....最终，我就这样来到了赞的奴隶市场....你找到我的地方。"
 
 # game/BKinteractions.rpy:4741
 translate chinese slave_story5_986bd48f:
@@ -5008,7 +5008,7 @@ translate chinese slave_story5_986bd48f:
 translate chinese slave_story5_d094e804:
 
     # girl.char "He could even... have bought me..."
-    girl.char "他甚至可以……买了我……"
+    girl.char "他甚至可以....买了我...."
 
 # game/BKinteractions.rpy:4745
 translate chinese slave_story5_ef1c0073:
@@ -5026,13 +5026,13 @@ translate chinese slave_story5_b0ecb5e5_1:
 translate chinese slave_story5_074d421a:
 
     # girl.char "So, all in all, I traded one captivity for another... But I'm much better here, than in this cruel and horrible place."
-    girl.char "所以，总而言之，我用一个俘虏换了另一个……但我在这里比在这个残酷可怕的地方好多了。"
+    girl.char "所以，总而言之，我用一个俘虏换了另一个....但我在这里比在这个残酷可怕的地方好多了。"
 
 # game/BKinteractions.rpy:4751
 translate chinese slave_story5_8f0aed18:
 
     # girl.char "But you know, I still have regrets... Like..."
-    girl.char "但你知道，我还是有遗憾……喜欢……"
+    girl.char "但你知道，我还是有遗憾....喜欢...."
 
 # game/BKinteractions.rpy:4753
 translate chinese slave_story5_a577ad0e:
@@ -5044,31 +5044,31 @@ translate chinese slave_story5_a577ad0e:
 translate chinese slave_story5_ee58330a:
 
     # girl.char "The fucking guard sergeant. I heard he quit the guard and set up shop here, in Zan, enjoying the money from the jewels he stole. I can't forget the nightmare he put me through. I want someone to make his life a nightmare..."
-    girl.char "那个该死的卫兵中士。我听说他辞掉卫兵工作，在赞开了家店，享受着他从珠宝中偷来的钱。我不能忘记他让我经历的噩梦。我希望有人把他的生活变成一场噩梦……"
+    girl.char "那个该死的卫兵中士。我听说他辞掉卫兵工作，在赞开了家店，享受着他从珠宝中偷来的钱。我不能忘记他让我经历的噩梦。我希望有人把他的生活变成一场噩梦...."
 
 # game/BKinteractions.rpy:4761
 translate chinese slave_story5_62d914a8:
 
     # girl.char "The fucking guard sergeant. He's been enjoying the money from the jewels he stole from us, I'm sure, and I heard he took up business and joined the Zan merchant's guild... The thought of that sucker rolling in gold over the death of my [girl.story_guardian] is driving me crazy..."
-    girl.char "那个该死的卫兵中士。他一直在享受他从我们这里偷来的珠宝带来的钱，我敢肯定，而且我听说他开始做生意，加入了赞商人协会……一想到我的[girl.story_guardian]的死和那个笨蛋暴富，就快把我逼疯了……"
+    girl.char "那个该死的卫兵中士。他一直在享受他从我们这里偷来的珠宝带来的钱，我敢肯定，而且我听说他开始做生意，加入了赞商人协会....一想到我的[girl.story_guardian]的死和那个笨蛋暴富，就快把我逼疯了...."
 
 # game/BKinteractions.rpy:4766
 translate chinese slave_story5_4c0282fd:
 
     # girl.char "I... I kind of miss that stupid guard sergeant. He was forcing himself on me, abusing me, fucking my throat... But deep down... You know... I loved it."
-    girl.char "我……我有点想念那个愚蠢的卫兵警官。他强迫自己靠近我，虐待我，操我的喉咙……但在内心深处……你知道的……我很喜欢。"
+    girl.char "我....我有点想念那个愚蠢的卫兵警官。他强迫自己靠近我，虐待我，操我的喉咙....但在内心深处....你知道的....我很喜欢。"
 
 # game/BKinteractions.rpy:4767
 translate chinese slave_story5_284016ad:
 
     # girl.char "I can still feel the taste of cum in my mouth, hmmm..."
-    girl.char "我还能感觉到嘴里含着精液的味道，嗯……"
+    girl.char "我还能感觉到嘴里含着精液的味道，嗯...."
 
 # game/BKinteractions.rpy:4772
 translate chinese slave_story5_e5196964:
 
     # girl.char "That poor guy... The [girl.story_profession]."
-    girl.char "可怜的家伙……[girl.story_profession]。"
+    girl.char "可怜的家伙....[girl.story_profession]。"
 
 # game/BKinteractions.rpy:4773
 translate chinese slave_story5_96a70992_1:
@@ -5080,7 +5080,7 @@ translate chinese slave_story5_96a70992_1:
 translate chinese slave_story5_ac707e5e:
 
     # girl.char "So many things happened, but you know... Eventually, we got what we deserved... But he was the victim. At least I think so, anyway."
-    girl.char "发生了很多事，但你知道……最终，我们得到了我们应得的……但他是受害者。至少我是这么认为的。"
+    girl.char "发生了很多事，但你知道....最终，我们得到了我们应得的....但他是受害者。至少我是这么认为的。"
 
 # game/BKinteractions.rpy:4775
 translate chinese slave_story5_3c5c2b7b:
@@ -5092,7 +5092,7 @@ translate chinese slave_story5_3c5c2b7b:
 translate chinese slave_story5_5040fe38:
 
     # girl.char "We threw his body in the river, didn't even give him a proper burial... He might have had a family; they will never know what happened to him... I feel so guilty."
-    girl.char "我们把他的尸体扔进河里，甚至没有给他一个像样的葬礼……他可能已经有了家庭;他们永远也不会知道他出了什么事……我感到很内疚。"
+    girl.char "我们把他的尸体扔进河里，甚至没有给他一个像样的葬礼....他可能已经有了家庭;他们永远也不会知道他出了什么事....我感到很内疚。"
 
 # game/BKinteractions.rpy:4778
 translate chinese slave_story5_e26816df:
@@ -5104,7 +5104,7 @@ translate chinese slave_story5_e26816df:
 translate chinese slave_story5_43358bbd:
 
     # girl.char "I can't make up for what I did, I know... But at least I could set up an altar for him at the Cathedra. Maybe then, Arios could shine his Light on him, and on his loved ones..."
-    girl.char "我无法弥补我所做的，我知道……但至少我可以在大教堂为他建一座祭坛。也许到那时，阿里奥斯会把他的光芒照耀在他身上，照耀在他所爱的人身上……"
+    girl.char "我无法弥补我所做的，我知道....但至少我可以在大教堂为他建一座祭坛。也许到那时，太阳神会把他的光芒照耀在他身上，照耀在他所爱的人身上...."
 
 # game/BKinteractions.rpy:4792
 translate chinese slave_story5_8f0aed18_1:
@@ -5182,7 +5182,7 @@ translate chinese slave_story6_d813ee49:
 translate chinese slave_story6_95d5e5df:
 
     # girl.char "Sill's cooking is getting worse and worse! This is the third day in a row we get peas... I hate peas!"
-    girl.char "希露的厨艺越来越差了！这是我们连续第三天吃豌豆了……我讨厌豌豆！"
+    girl.char "希露的厨艺越来越差了！这是我们连续第三天吃豌豆了....我讨厌豌豆！"
 
 # game/BKinteractions.rpy:4845
 translate chinese slave_story6_6bb21ad6:
@@ -5224,7 +5224,7 @@ translate chinese slave_story6_dae0ec55:
 translate chinese slave_story6_fb7f620b:
 
     # girl.char "And look at this meat! Overcooked, again! I don't know how many times I told her I hate this..."
-    girl.char "看这肉！煮得过久，再次！我不知道我跟她说过多少次我讨厌这个……"
+    girl.char "看这肉！煮得过久，再次！我不知道我跟她说过多少次我讨厌这个...."
 
 # game/BKinteractions.rpy:4856
 translate chinese slave_story6_dae0ec55_1:
@@ -5236,7 +5236,7 @@ translate chinese slave_story6_dae0ec55_1:
 translate chinese slave_story6_a1a171c6:
 
     # girl.char "I mean, come on! Can't that girl do anything right? I can't stand it for much longer..."
-    girl.char "我是说，拜托！那个女孩做什么都不对吗？我再也受不了了……"
+    girl.char "我是说，拜托！那个女孩做什么都不对吗？我再也受不了了...."
 
 # game/BKinteractions.rpy:4858
 translate chinese slave_story6_e632895c:
@@ -5248,7 +5248,7 @@ translate chinese slave_story6_e632895c:
 translate chinese slave_story6_3ddb8966:
 
     # girl.char "Well... Not really, but..."
-    girl.char "嗯……不是，但是……"
+    girl.char "嗯....不是，但是...."
 
 # game/BKinteractions.rpy:4865
 translate chinese slave_story6_fa287a7f:
@@ -5284,7 +5284,7 @@ translate chinese slave_story6_8feb2789:
 translate chinese slave_story6_1bae9787:
 
     # girl.char "M... Ma... Master..."
-    girl.char "米……马……主人……"
+    girl.char "米....马....主人...."
 
 # game/BKinteractions.rpy:4871
 translate chinese slave_story6_623eb864:
@@ -5296,7 +5296,7 @@ translate chinese slave_story6_623eb864:
 translate chinese slave_story6_885d8063:
 
     # girl.char "Y... Yes..."
-    girl.char "Y……是的……"
+    girl.char "Y....是的...."
 
 # game/BKinteractions.rpy:4876
 translate chinese slave_story6_de0fa5a4:
@@ -5308,7 +5308,7 @@ translate chinese slave_story6_de0fa5a4:
 translate chinese slave_story6_382efbf8:
 
     # girl.char "It's just... I'm not used to this kind of treatment..."
-    girl.char "它只是……我不习惯这种待遇……"
+    girl.char "它只是....我不习惯这种待遇...."
 
 # game/BKinteractions.rpy:4879
 translate chinese slave_story6_9bb09cb7:
@@ -5326,7 +5326,7 @@ translate chinese slave_story6_e232fb8d:
 translate chinese slave_story6_9c697c16:
 
     # girl.char "Well... Kind of..."
-    girl.char "嗯……种……"
+    girl.char "嗯....种...."
 
 # game/BKinteractions.rpy:4882
 translate chinese slave_story6_ac52c92a:
@@ -5338,7 +5338,7 @@ translate chinese slave_story6_ac52c92a:
 translate chinese slave_story6_abef361c:
 
     # girl.char "I wasn't always a slave, you know... In fact, I come from an old and well-respected family..."
-    girl.char "我并不总是一个奴隶，你知道……事实上，我来自一个古老而受人尊敬的家庭。"
+    girl.char "我并不总是一个奴隶，你知道....事实上，我来自一个古老而受人尊敬的家庭。"
 
 # game/BKinteractions.rpy:4884
 translate chinese slave_story6_adb6bbb8:
@@ -5356,31 +5356,31 @@ translate chinese slave_story6_948a280f:
 translate chinese slave_story6_9464a26a:
 
     # you "Really... You didn't look that well-off when I met you..."
-    you "真的……我见到你的时候，你看起来并不富裕……"
+    you "真的....我见到你的时候，你看起来并不富裕...."
 
 # game/BKinteractions.rpy:4887
 translate chinese slave_story6_41464af2:
 
     # girl.char "It's true... But my family was very unlucky. My current predicament is the result of a succession of terrible unfortunate events..."
-    girl.char "这是真的……但是我的家庭非常不幸。我目前的困境是一连串可怕不幸事件的结果。"
+    girl.char "这是真的....但是我的家庭非常不幸。我目前的困境是一连串可怕不幸事件的结果。"
 
 # game/BKinteractions.rpy:4888
 translate chinese slave_story6_ed7d87b7:
 
     # girl.char "I was raised like a princess... I never wanted for anything..."
-    girl.char "我像公主一样长大……我从来没有想要什么……"
+    girl.char "我像公主一样长大....我从来没有想要什么...."
 
 # game/BKinteractions.rpy:4896
 translate chinese slave_story6_5126b17f:
 
     # girl.char "I had a large estate, and many friends, slaves and servants... I was especially close to my [girl.story_guardian]."
-    girl.char "我有一大笔财产，还有许多朋友、奴隶和仆人……我和我的[girl.story_guardian]特别亲密。"
+    girl.char "我有一大笔财产，还有许多朋友、奴隶和仆人....我和我的[girl.story_guardian]特别亲密。"
 
 # game/BKinteractions.rpy:4897
 translate chinese slave_story6_09824579:
 
     # girl.char "My parents kept me sheltered from the outside world and its vices... I never knew suffering, hunger, or fear... I was spoiled and happy..."
-    girl.char "我的父母让我远离外面的世界和它的罪恶……我从未经历过痛苦、饥饿或恐惧……我被宠坏了，但很开心……"
+    girl.char "我的父母让我远离外面的世界和它的罪恶....我从未经历过痛苦、饥饿或恐惧....我被宠坏了，但很开心...."
 
 # game/BKinteractions.rpy:4898
 translate chinese slave_story6_9316a048:
@@ -5398,19 +5398,19 @@ translate chinese slave_story6_8235cf51:
 translate chinese slave_story6_e62cef3c:
 
     # girl.char "It was... I had four cats of the purest race, all of them with fancy names and their personal set of clothes... I fed them catfood from the court's chef himself, much better than any of the dreadful cooking that Sill inflicts upon us now..."
-    girl.char "这是……我养了四只最纯种的猫，它们都有着奇特的名字和各自的衣服……我亲自喂他们吃宫廷厨师做的猫食，比我们现在吃的任何一种可怕的烹调都好吃得多……"
+    girl.char "这是....我养了四只最纯种的猫，它们都有着奇特的名字和各自的衣服....我亲自喂他们吃宫廷厨师做的猫食，比我们现在吃的任何一种可怕的烹调都好吃得多...."
 
 # game/BKinteractions.rpy:4901
 translate chinese slave_story6_4e0c7b8f:
 
     # you "You were spoiled all right... What happened?"
-    you "你被宠坏了……发生了什么事？"
+    you "你被宠坏了....发生了什么事？"
 
 # game/BKinteractions.rpy:4903
 translate chinese slave_story6_f06a1200:
 
     # girl.char "As I was growing up, living a happy and innocent life, little did I know that my [girl.story_guardian] had been scheming behind my back..."
-    girl.char "在我成长的过程中，我过着快乐而天真的生活，我几乎不知道我的[girl.story_guardian]一直在我背后耍阴谋……"
+    girl.char "在我成长的过程中，我过着快乐而天真的生活，我几乎不知道我的[girl.story_guardian]一直在我背后耍阴谋...."
 
 # game/BKinteractions.rpy:4904
 translate chinese slave_story6_7f8939be:
@@ -5422,7 +5422,7 @@ translate chinese slave_story6_7f8939be:
 translate chinese slave_story6_37e39fae:
 
     # girl.char "I was barely out of my childhood years... Only 14 or 15... When one day, an old gentleman came to the family estate. He was in his 60s, but to me, he looked older than the Golgoth invasions..."
-    girl.char "我刚刚走出童年时代……只有14或15……有一天，一位老先生来到他家。他60多岁了，但对我来说，他看起来比哥特人入侵时还要老……"
+    girl.char "我刚刚走出童年时代....只有14或15....有一天，一位老先生来到他家。他60多岁了，但对我来说，他看起来比哥特人入侵时还要老...."
 
 # game/BKinteractions.rpy:4906
 translate chinese slave_story6_9401f119:
@@ -5440,19 +5440,19 @@ translate chinese slave_story6_a4ee7af5:
 translate chinese slave_story6_e5093cf0:
 
     # girl.char "I was deeply incurious at that time, so after he left, I came back to my usual games, ordering around my slaves and servants..."
-    girl.char "那时候我对他非常不感兴趣，所以在他离开后，我又回到了我平常的游戏中，对我的奴隶和仆人们发号施令……"
+    girl.char "那时候我对他非常不感兴趣，所以在他离开后，我又回到了我平常的游戏中，对我的奴隶和仆人们发号施令...."
 
 # game/BKinteractions.rpy:4909
 translate chinese slave_story6_a4161c2a:
 
     # girl.char "But the old gentleman returned several times after that. Every time, I was forced to be courteous, and exchange pleasantries with him. I didn't know what was going on, but I went along with it..."
-    girl.char "但老人在那之后又回来了好几次。每一次，我都不得不彬彬有礼，和他寒暄。我不知道发生了什么事，但我接受了……"
+    girl.char "但老人在那之后又回来了好几次。每一次，我都不得不彬彬有礼，和他寒暄。我不知道发生了什么事，但我接受了...."
 
 # game/BKinteractions.rpy:4910
 translate chinese slave_story6_76091049:
 
     # girl.char "Then, after one of his visits, my [girl.story_guardian] came to see me, beaming, and informed me that a date had been decided... For our wedding."
-    girl.char "然后，在他的一次拜访之后，我的[girl.story_guardian]。喜气洋洋地来见我，告诉我一个日期已经决定了……为我们的婚礼。"
+    girl.char "然后，在他的一次拜访之后，我的[girl.story_guardian]。喜气洋洋地来见我，告诉我一个日期已经决定了....为我们的婚礼。"
 
 # game/BKinteractions.rpy:4911
 translate chinese slave_story6_f64140bc:
@@ -5464,7 +5464,7 @@ translate chinese slave_story6_f64140bc:
 translate chinese slave_story6_e29b3f0b:
 
     # you "Uh oh..."
-    you "哦哦……"
+    you "哦哦...."
 
 # game/BKinteractions.rpy:4914
 translate chinese slave_story6_b0694956:
@@ -5476,7 +5476,7 @@ translate chinese slave_story6_b0694956:
 translate chinese slave_story6_7a852782:
 
     # girl.char "I will tell you the rest of this story later, Master... I have to try and eat some of that dreadful grub, then get ready for the opening tonight."
-    girl.char "我以后再把这个故事的其余部分告诉你，主人……我得试着吃点难吃的东西，然后为今晚的开幕式做准备。"
+    girl.char "我以后再把这个故事的其余部分告诉你，主人....我得试着吃点难吃的东西，然后为今晚的开幕式做准备。"
 
 # game/BKinteractions.rpy:4925
 translate chinese slave_story6_f6e45f00:
@@ -5494,19 +5494,19 @@ translate chinese slave_story6_de4e2907:
 translate chinese slave_story6_6c2bf18c:
 
     # you "There appears to be a small tear in the dress..."
-    you "衣服上似乎有个小裂口……"
+    you "衣服上似乎有个小裂口...."
 
 # game/BKinteractions.rpy:4929
 translate chinese slave_story6_a578afac:
 
     # girl.char "A small tear! This is unwearable! A customer did this... Aw, now I just have to throw away this worthless rag!!!"
-    girl.char "一个小撕裂！这是不能穿！一位顾客这样做了……噢，现在我必须扔掉这没用的破布！！"
+    girl.char "一个小撕裂！这是不能穿！一位顾客这样做了....噢，现在我必须扔掉这没用的破布！！"
 
 # game/BKinteractions.rpy:4930
 translate chinese slave_story6_b0895277:
 
     # you "Well... You could always sew it..."
-    you "嗯……你总能把它缝好……"
+    you "嗯....你总能把它缝好...."
 
 # game/BKinteractions.rpy:4931
 translate chinese slave_story6_3a86d6ec:
@@ -5518,13 +5518,13 @@ translate chinese slave_story6_3a86d6ec:
 translate chinese slave_story6_f2025d36:
 
     # girl.char "M, me... Sew???"
-    girl.char "我,我……缝？？？"
+    girl.char "我,我....缝？？？"
 
 # game/BKinteractions.rpy:4933
 translate chinese slave_story6_e3b93f05:
 
     # girl.char "I... No... I won't..."
-    girl.char "我……不……我不会……"
+    girl.char "我....不....我不会...."
 
 # game/BKinteractions.rpy:4934
 translate chinese slave_story6_7a0d9b32:
@@ -5542,25 +5542,25 @@ translate chinese slave_story6_6bf025b7:
 translate chinese slave_story6_30d555dd:
 
     # you "Wow, calm down..."
-    you "哇，冷静下来……"
+    you "哇，冷静下来...."
 
 # game/BKinteractions.rpy:4937
 translate chinese slave_story6_5a252c03:
 
     # girl.char "Back in the days, I had an army of low-born slovens who would do this for me..."
-    girl.char "在过去，我有一群出身卑微的懒汉，他们会为我做这些……"
+    girl.char "在过去，我有一群出身卑微的懒汉，他们会为我做这些...."
 
 # game/BKinteractions.rpy:4938
 translate chinese slave_story6_790ab214:
 
     # you "Ah, yes, in the golden days of your noble youth..."
-    you "啊，是的，在你高贵青春的黄金岁月里……"
+    you "啊，是的，在你高贵青春的黄金岁月里...."
 
 # game/BKinteractions.rpy:4939
 translate chinese slave_story6_9facbb8e:
 
     # girl.char "And I still would, if not for that awful wedding my [girl.story_guardian] arranged for me..."
-    girl.char "如果不是因为那个可怕的婚礼，我的[girl.story_guardian]为我安排的……"
+    girl.char "如果不是因为那个可怕的婚礼，我的[girl.story_guardian]为我安排的...."
 
 # game/BKinteractions.rpy:4940
 translate chinese slave_story6_3900c296:
@@ -5572,7 +5572,7 @@ translate chinese slave_story6_3900c296:
 translate chinese slave_story6_8c41578f:
 
     # girl.char "Well... I didn't want to marry an old slob... But he had a big name, and he was loaded, so my [girl.story_guardian] wouldn't have any of my objections."
-    girl.char "嗯……我不想嫁给一个老懒汉……但他名气很大，而且很有钱，所以我的[girl.story_guardian]不会有任何异议。"
+    girl.char "嗯....我不想嫁给一个老懒汉....但他名气很大，而且很有钱，所以我的[girl.story_guardian]不会有任何异议。"
 
 # game/BKinteractions.rpy:4942
 translate chinese slave_story6_f3f306c5:
@@ -5584,7 +5584,7 @@ translate chinese slave_story6_f3f306c5:
 translate chinese slave_story6_2f2a5c53:
 
     # girl.char "Plus, he was an old guy... Soon he'd kick the bucket, and I would be a powerful, rich and happy widow. Or so they said."
-    girl.char "再说，他是个老家伙……不久他就会死去，而我将成为一个有权有势、富有而幸福的寡妇。至少他们是这么说的。"
+    girl.char "再说，他是个老家伙....不久他就会死去，而我将成为一个有权有势、富有而幸福的寡妇。至少他们是这么说的。"
 
 # game/BKinteractions.rpy:4944
 translate chinese slave_story6_d9d6e8dd:
@@ -5602,7 +5602,7 @@ translate chinese slave_story6_2618600f:
 translate chinese slave_story6_ef3e9e22:
 
     # girl.char "I had no experience of the world, I had almost never ventured outside my estate... Disobeying my [girl.story_guardian] wasn't even an option."
-    girl.char "我对这个世界没有任何经验，我几乎从未冒险走出我的庄园……违反我的[girl.story_guardian]都没有。"
+    girl.char "我对这个世界没有任何经验，我几乎从未冒险走出我的庄园....违反我的[girl.story_guardian]都没有。"
 
 # game/BKinteractions.rpy:4947
 translate chinese slave_story6_b0ecb5e5:
@@ -5680,7 +5680,7 @@ translate chinese slave_story6_b9c3d59f:
 translate chinese slave_story6_68a4b1cc:
 
     # girl.char "But the future only brought me more of the same..."
-    girl.char "但未来只会给我带来更多的相同……"
+    girl.char "但未来只会给我带来更多的相同...."
 
 # game/BKinteractions.rpy:4967
 translate chinese slave_story6_00c1bf2c:
@@ -5716,13 +5716,13 @@ translate chinese slave_story6_8c381e1e:
 translate chinese slave_story6_cc89a8f9:
 
     # girl.char "I tried to explain my situation to my [girl.story_guardian] when I was visiting, but no one showed me any understanding..."
-    girl.char "我试着向我的[girl.story_guardian]解释我的情况。当我参观时，没有人向我表示任何理解……"
+    girl.char "我试着向我的[girl.story_guardian]解释我的情况。当我参观时，没有人向我表示任何理解...."
 
 # game/BKinteractions.rpy:4980
 translate chinese slave_story6_d5a60018:
 
     # girl.char "When I got too direct, people just told me that ladies shouldn't talk about things like that, and I was sent back to my lonely existence with my hated husband..."
-    girl.char "当我太直率的时候，人们只是告诉我，女士们不应该谈论那样的事情，于是我被送回了我孤独的生活，和我讨厌的丈夫在一起……"
+    girl.char "当我太直率的时候，人们只是告诉我，女士们不应该谈论那样的事情，于是我被送回了我孤独的生活，和我讨厌的丈夫在一起...."
 
 # game/BKinteractions.rpy:4982
 translate chinese slave_story6_03e23381:
@@ -5734,25 +5734,25 @@ translate chinese slave_story6_03e23381:
 translate chinese slave_story6_26bf7285:
 
     # girl.char "He was [girl.story_profession_article]... I often saw him in the courtyard, smiling shyly at me. He was young and handsome... Very much like you, Master. *blush*"
-    girl.char "他是[girl.story_profession_article]……我经常看见他在院子里，害羞地对我微笑。他年轻英俊……非常像你，主人。*脸红*"
+    girl.char "他是[girl.story_profession_article]....我经常看见他在院子里，害羞地对我微笑。他年轻英俊....非常像你，主人。*脸红*"
 
 # game/BKinteractions.rpy:4985
 translate chinese slave_story6_70eb309a:
 
     # girl.char "We got to talk about this and that when I went out for a walk in the castle's park. He was charming and witty, and it was obvious he liked me..."
-    girl.char "当我去城堡公园散步的时候，我们开始谈论这个和那个。他很有魅力，很风趣，很明显他喜欢我……"
+    girl.char "当我去城堡公园散步的时候，我们开始谈论这个和那个。他很有魅力，很风趣，很明显他喜欢我...."
 
 # game/BKinteractions.rpy:4986
 translate chinese slave_story6_19e3ba06:
 
     # girl.char "I was desperate for some human warmth and companionship, and I told him some foolish things that got his mind racing..."
-    girl.char "我迫切地想要一些人类的温暖和陪伴，我告诉了他一些愚蠢的事情，让他的脑子转得飞快……"
+    girl.char "我迫切地想要一些人类的温暖和陪伴，我告诉了他一些愚蠢的事情，让他的脑子转得飞快...."
 
 # game/BKinteractions.rpy:4987
 translate chinese slave_story6_a1384532:
 
     # girl.char "That was... a terrible mistake."
-    girl.char "那是……一个可怕的错误。"
+    girl.char "那是....一个可怕的错误。"
 
 # game/BKinteractions.rpy:4988
 translate chinese slave_story6_8b90d45f:
@@ -5788,25 +5788,25 @@ translate chinese slave_story6_353bc04e:
 translate chinese slave_story6_ae1e9f70:
 
     # girl.char "I found this at the market the other day... It reminds me of the landscape I could see from my bedroom, when I was still living in a castle with my old, lecherous husband."
-    girl.char "我前几天在市场上发现的……这让我想起了卧室里的景色，那时我还和好色的老丈夫住在城堡里。"
+    girl.char "我前几天在市场上发现的....这让我想起了卧室里的景色，那时我还和好色的老丈夫住在城堡里。"
 
 # game/BKinteractions.rpy:5003
 translate chinese slave_story6_30b378af:
 
     # you "It looks nice..."
-    you "它看起来不错……"
+    you "它看起来不错...."
 
 # game/BKinteractions.rpy:5004
 translate chinese slave_story6_85121ee0:
 
     # girl.char "I look at this, and all it brings is painful and sad memories. Give me the noise and mess of Zan's streets over that any day..."
-    girl.char "我看着这个，它带给我的只有痛苦和悲伤的回忆。给我任何一天赞的街道上的噪音和混乱……"
+    girl.char "我看着这个，它带给我的只有痛苦和悲伤的回忆。给我任何一天赞的街道上的噪音和混乱...."
 
 # game/BKinteractions.rpy:5005
 translate chinese slave_story6_8d9e1a4c:
 
     # you "You didn't tell me the end of your story... About that handsome [girl.story_profession]?"
-    you "你没有把故事的结局告诉我……关于那个英俊的[girl.story_profession]？"
+    you "你没有把故事的结局告诉我....关于那个英俊的[girl.story_profession]？"
 
 # game/BKinteractions.rpy:5006
 translate chinese slave_story6_6b4a2459:
@@ -5830,13 +5830,13 @@ translate chinese slave_story6_43c051d0:
 translate chinese slave_story6_c406d906:
 
     # you "Why do I sense it didn't go well..."
-    you "为什么我感觉不太好……"
+    you "为什么我感觉不太好...."
 
 # game/BKinteractions.rpy:5010
 translate chinese slave_story6_3df3c6be:
 
     # girl.char "But my husband, the old wretch, he wasn't born yesterday. He had spies around court, people I trusted, and it didn't escape anyone that the young [girl.story_profession] was courting me..."
-    girl.char "但是我的丈夫，那个老坏蛋，他又不是三岁小孩。他在法庭周围有密探，是我信任的人，并且谁也逃不掉那个[girl.story_profession]正在向我求爱……"
+    girl.char "但是我的丈夫，那个老坏蛋，他又不是三岁小孩。他在法庭周围有密探，是我信任的人，并且谁也逃不掉那个[girl.story_profession]正在向我求爱...."
 
 # game/BKinteractions.rpy:5011
 translate chinese slave_story6_b05fed2f:
@@ -5854,7 +5854,7 @@ translate chinese slave_story6_c329791d:
 translate chinese slave_story6_4c7350cc:
 
     # girl.char "We were so overjoyed to be together, we forgot all caution... Instead of running like we should have, we just kissed passionately, and things started to heat up... Before long, we ended up with our clothes strewn out around the floor."
-    girl.char "我们在一起太高兴了，忘记了所有的谨慎……我们没有像我们应该做的那样奔跑，我们只是热烈地亲吻，然后事情开始升温……不久，我们的衣服就散落在地板上。"
+    girl.char "我们在一起太高兴了，忘记了所有的谨慎....我们没有像我们应该做的那样奔跑，我们只是热烈地亲吻，然后事情开始升温....不久，我们的衣服就散落在地板上。"
 
 # game/BKinteractions.rpy:5014
 translate chinese slave_story6_33f7831c:
@@ -5890,7 +5890,7 @@ translate chinese slave_story6_48df11c8:
 translate chinese slave_story6_54b119d5:
 
     # girl.char "He said that I was a filthy slut who had defiled his noble bed, unworthy of the name of wife..."
-    girl.char "他说我是个肮脏的荡妇，玷污了他高贵的床，不配做妻子……"
+    girl.char "他说我是个肮脏的荡妇，玷污了他高贵的床，不配做妻子...."
 
 # game/BKinteractions.rpy:5021
 translate chinese slave_story6_35f54bfa:
@@ -5914,7 +5914,7 @@ translate chinese slave_story6_5ecec4e3:
 translate chinese slave_story6_a56f7bc4:
 
     # girl.char "He ordered them... to fuck me, in front of everyone."
-    girl.char "他命令他们……在大家面前操我"
+    girl.char "他命令他们....在大家面前操我"
 
 # game/BKinteractions.rpy:5028
 translate chinese slave_story6_67460077:
@@ -5950,7 +5950,7 @@ translate chinese slave_story6_fe2abb32:
 translate chinese slave_story6_3e38db93:
 
     # girl.char "There, I met my [girl.story_guardian]... Stone-faced and full of anger."
-    girl.char "在那里，我遇见了我的[女友。story_guardian]……面无表情，充满愤怒。"
+    girl.char "在那里，我遇见了我的[女友。story_guardian]....面无表情，充满愤怒。"
 
 # game/BKinteractions.rpy:5036
 translate chinese slave_story6_e701ff86:
@@ -5968,7 +5968,7 @@ translate chinese slave_story6_6e093742:
 translate chinese slave_story6_545b4775:
 
     # girl.char "I wandered for many months, taking small jobs to make it, and relying on the kindness... or lust... of strangers."
-    girl.char "我流浪了好几个月，靠做一些小活维持生计，靠的是这份好心……或欲望……的陌生人。"
+    girl.char "我流浪了好几个月，靠做一些小活维持生计，靠的是这份好心....或欲望....的陌生人。"
 
 # game/BKinteractions.rpy:5039
 translate chinese slave_story6_a478fca0:
@@ -5992,13 +5992,13 @@ translate chinese slave_story6_c6b372db:
 translate chinese slave_story6_a2710be7:
 
     # girl.char "Eventually, I ended up on the slave market in Zan... That's where you found me."
-    girl.char "最终，我来到了赞的奴隶市场……你就是在那里找到我的。"
+    girl.char "最终，我来到了赞的奴隶市场....你就是在那里找到我的。"
 
 # game/BKinteractions.rpy:5045
 translate chinese slave_story6_ef98d041:
 
     # you "Wow... That's a pretty sad story."
-    you "哇……这是一个很悲伤的故事。"
+    you "哇....这是一个很悲伤的故事。"
 
 # game/BKinteractions.rpy:5047
 translate chinese slave_story6_d8057221:
@@ -6010,13 +6010,13 @@ translate chinese slave_story6_d8057221:
 translate chinese slave_story6_aeb19c3a:
 
     # girl.char "It was awful! Just awful, you know..."
-    girl.char "这是可怕的！太糟糕了，你知道……"
+    girl.char "这是可怕的！太糟糕了，你知道...."
 
 # game/BKinteractions.rpy:5050
 translate chinese slave_story6_6e6ecc98:
 
     # girl.char "If only... I wish..."
-    girl.char "要是……我希望……"
+    girl.char "要是....我希望...."
 
 # game/BKinteractions.rpy:5051
 translate chinese slave_story6_a577ad0e:
@@ -6028,7 +6028,7 @@ translate chinese slave_story6_a577ad0e:
 translate chinese slave_story6_d7db4f41:
 
     # girl.char "My poor lover... The [girl.story_profession]."
-    girl.char "我可怜的爱人……（girl.story_profession）。"
+    girl.char "我可怜的爱人....（girl.story_profession）。"
 
 # game/BKinteractions.rpy:5057
 translate chinese slave_story6_5195c0af:
@@ -6046,13 +6046,13 @@ translate chinese slave_story6_b58431a3:
 translate chinese slave_story6_c841b89c:
 
     # girl.char "All of this, it happened because... Because of my fucking [girl.story_guardian]... That's who!"
-    girl.char "发生这一切是因为……因为我妈的[女友。story_guardian]……那是谁！"
+    girl.char "发生这一切是因为....因为我妈的[女友。story_guardian]....那是谁！"
 
 # game/BKinteractions.rpy:5063
 translate chinese slave_story6_6f6af15c:
 
     # girl.char "Everyone I grew up with turned their backs on me... I want them all to burn in hell!"
-    girl.char "和我一起长大的人都对我不理不睬……我要他们都在地狱里被烧死！"
+    girl.char "和我一起长大的人都对我不理不睬....我要他们都在地狱里被烧死！"
 
 # game/BKinteractions.rpy:5064
 translate chinese slave_story6_fa75cb1a:
@@ -6088,13 +6088,13 @@ translate chinese slave_story6_e7716d7f:
 translate chinese slave_story6_685847ec:
 
     # you "Well..."
-    you "嗯……"
+    you "嗯...."
 
 # game/BKinteractions.rpy:5073
 translate chinese slave_story6_e035fc55:
 
     # girl.char "It's a long shot, since I'm a slave now, and I've been repudiated... But with a good lawyer... Perhaps I could get some kind of inheritance?"
-    girl.char "这是一个很长的机会，因为我现在是一个奴隶，我已经被拒绝了……但有个好律师也许我能得到某种遗产？"
+    girl.char "这是一个很长的机会，因为我现在是一个奴隶，我已经被拒绝了....但有个好律师也许我能得到某种遗产？"
 
 # game/BKinteractions.rpy:5074
 translate chinese slave_story6_028f6b86:
@@ -6106,7 +6106,7 @@ translate chinese slave_story6_028f6b86:
 translate chinese slave_story6_693a3c43:
 
     # girl.char "I miss my innocent days... I miss my cats..."
-    girl.char "我怀念那些纯真的日子……我想念我的猫……"
+    girl.char "我怀念那些纯真的日子....我想念我的猫...."
 
 # game/BKinteractions.rpy:5090
 translate chinese slave_story6_6e6ecc98_1:
@@ -6178,7 +6178,7 @@ translate chinese slave_story7_7a42b110:
 translate chinese slave_story7_39d68949:
 
     # "You take a look at the dust bin, and are surprised to see some kind of emblem sticking out. You recognize it to be a symbol of Arios."
-    "你看一下垃圾桶，惊讶地发现有某种徽章露了出来。你认出它是阿里奥斯的象征。"
+    "你看一下垃圾桶，惊讶地发现有某种徽章露了出来。你认出它是太阳神的象征。"
 
 # game/BKinteractions.rpy:5130
 translate chinese slave_story7_7fa8be44:
@@ -6190,7 +6190,7 @@ translate chinese slave_story7_7fa8be44:
 translate chinese slave_story7_ff78afa7:
 
     # you "What kind of blasphemy is that??? Did you throw away your Arios sign?"
-    you "这是什么亵渎？？你扔掉你的阿里奥斯标志了吗？"
+    you "这是什么亵渎？？你扔掉你的太阳神标志了吗？"
 
 # game/BKinteractions.rpy:5135
 translate chinese slave_story7_97f5b071:
@@ -6202,43 +6202,43 @@ translate chinese slave_story7_97f5b071:
 translate chinese slave_story7_0d6696c0:
 
     # you "Not a big fan of Arios, are you?"
-    you "你不是阿里奥斯的教徒吧？"
+    you "你不是太阳神的教徒吧？"
 
 # game/BKinteractions.rpy:5139
 translate chinese slave_story7_c3a0ed14:
 
     # girl.char "The sign, it wasn't mine, you see... It was here when I arrived."
-    girl.char "那牌子不是我的，你看……我到的时候它就在这儿。"
+    girl.char "那牌子不是我的，你看....我到的时候它就在这儿。"
 
 # game/BKinteractions.rpy:5141
 translate chinese slave_story7_9cb7793b:
 
     # girl.char "But it would have been too strange to keep it, because I don't worship Arios, you see..."
-    girl.char "但如果留着它就太奇怪了，因为我不崇拜阿里奥斯，你看……"
+    girl.char "但如果留着它就太奇怪了，因为我不崇拜太阳神，你看...."
 
 # game/BKinteractions.rpy:5143
 translate chinese slave_story7_6cffe240:
 
     # you "Oh, really? That's quite rare in this city... Who do you worship then?"
-    you "哦，真的吗？这在这个城市很少见……那么你崇拜谁呢？"
+    you "哦，真的吗？这在这个城市很少见....那么你崇拜谁呢？"
 
 # game/BKinteractions.rpy:5145
 translate chinese slave_story7_ed522ba3:
 
     # girl.char "Well... I don't... I mean, I used to worship a god... We call Him the Dweller."
-    girl.char "嗯……我不……我的意思是，我曾经崇拜上帝……我们称他为居民。"
+    girl.char "嗯....我不....我的意思是，我曾经崇拜上帝....我们称他为居民。"
 
 # game/BKinteractions.rpy:5147
 translate chinese slave_story7_dec94a21:
 
     # you "The Dweller? This sounds familiar..."
-    you "居民吗？这听起来很熟悉……"
+    you "居民吗？这听起来很熟悉...."
 
 # game/BKinteractions.rpy:5149
 translate chinese slave_story7_89cc7bdc:
 
     # girl.char "The Dweller is an old god, He does not care if He has few or many followers... But he is powerful. He's said to keep many secrets..."
-    girl.char "居民是一位老神，他不在乎他的追随者是少是多……但他很强大。据说他有很多秘密……"
+    girl.char "居民是一位老神，他不在乎他的追随者是少是多....但他很强大。据说他有很多秘密...."
 
 # game/BKinteractions.rpy:5151
 translate chinese slave_story7_3ce3d0c0:
@@ -6250,13 +6250,13 @@ translate chinese slave_story7_3ce3d0c0:
 translate chinese slave_story7_d62a412e:
 
     # you "That sounds familiar... Wait a minute, isn't that the god of the elves?"
-    you "这听起来熟悉……等等，那不是精灵之神吗？"
+    you "这听起来熟悉....等等，那不是精灵之神吗？"
 
 # game/BKinteractions.rpy:5155
 translate chinese slave_story7_6bf13f1f:
 
     # girl.char "He's one of many gods known to the fairy people, yes... But they aren't the only one who worship Him. I received His teaching from my [girl.story_guardian], who traded with the elves for a time, before the war..."
-    girl.char "他是仙女们认识的众多神之一，是的……但他们并不是唯一崇拜他的人。我从我的[girl.story_guardian]那里得到了他的教导。他在战前曾与精灵进行过一段时间的贸易……"
+    girl.char "他是仙女们认识的众多神之一，是的....但他们并不是唯一崇拜他的人。我从我的[girl.story_guardian]那里得到了他的教导。他在战前曾与精灵进行过一段时间的贸易...."
 
 # game/BKinteractions.rpy:5158
 translate chinese slave_story7_78f547c1:
@@ -6268,7 +6268,7 @@ translate chinese slave_story7_78f547c1:
 translate chinese slave_story7_5b5bef6d:
 
     # girl.char "Believe it or not, when I was growing up in [girl.origin], it was perfectly normal to worship the Dweller. There was no holy war then..."
-    girl.char "信不信由你，当我在[girl.origin]长大的时候。，敬拜居民是完全正常的。那时没有圣战……"
+    girl.char "信不信由你，当我在[girl.origin]长大的时候。，敬拜居民是完全正常的。那时没有圣战...."
 
 # game/BKinteractions.rpy:5167
 translate chinese slave_story7_1a07ef4a:
@@ -6280,7 +6280,7 @@ translate chinese slave_story7_1a07ef4a:
 translate chinese slave_story7_fee7499e:
 
     # girl.char "How things have changed..."
-    girl.char "事情发生了怎样的变化……"
+    girl.char "事情发生了怎样的变化...."
 
 # game/BKinteractions.rpy:5171
 translate chinese slave_story7_fec1fe3c:
@@ -6298,7 +6298,7 @@ translate chinese slave_story7_4d66c72e:
 translate chinese slave_story7_ec865fec:
 
     # girl.char "But in all those years, I never dreamt I would end up a sex slave, a toy to satisfy the urges of strangers..."
-    girl.char "但这么多年来，我从未想过自己会变成一个性奴，一个满足陌生人欲望的玩具……"
+    girl.char "但这么多年来，我从未想过自己会变成一个性奴，一个满足陌生人欲望的玩具...."
 
 # game/BKinteractions.rpy:5178
 translate chinese slave_story7_ac89493c:
@@ -6310,7 +6310,7 @@ translate chinese slave_story7_ac89493c:
 translate chinese slave_story7_33fa438a:
 
     # you "I'm sorry it's come to this. I wish things could have turned out differently..."
-    you "我很抱歉事情发展到这个地步。我希望事情的结果能有所不同……"
+    you "我很抱歉事情发展到这个地步。我希望事情的结果能有所不同...."
 
 # game/BKinteractions.rpy:5182
 translate chinese slave_story7_402651a5:
@@ -6346,13 +6346,13 @@ translate chinese slave_story7_35f4fe92:
 translate chinese slave_story7_05e96c00:
 
     # girl.char "You're right, Master [MC.name]... That's why I chose to become a slave."
-    girl.char "你说得对，主人[MC.name]……这就是为什么我选择成为一个奴隶。"
+    girl.char "你说得对，主人[MC.name]....这就是为什么我选择成为一个奴隶。"
 
 # game/BKinteractions.rpy:5194
 translate chinese slave_story7_f1cf0c2d:
 
     # you "Oh, boo-fucking-hoo..."
-    you "哦，操他妈的……"
+    you "哦，操他妈的...."
 
 # game/BKinteractions.rpy:5195
 translate chinese slave_story7_82d410a3:
@@ -6406,7 +6406,7 @@ translate chinese slave_story7_ef25d77d:
 translate chinese slave_story7_b3824ffe:
 
     # you "You mean... When I offered you a job in town?"
-    you "你的意思是……当我在城里给你提供工作的时候？"
+    you "你的意思是....当我在城里给你提供工作的时候？"
 
 # game/BKinteractions.rpy:5208
 translate chinese slave_story7_68a61b70:
@@ -6424,7 +6424,7 @@ translate chinese slave_story7_8b90d45f:
 translate chinese slave_story7_108c08d8:
 
     # girl.char "It's a long story. Allow me to tell you later, Master [MC.name]. For now, I have to finish what I started..."
-    girl.char "说来话长。请允许我稍后告诉您，主人[MC.name]。现在，我必须完成我开始做的……"
+    girl.char "说来话长。请允许我稍后告诉您，主人[MC.name]。现在，我必须完成我开始做的...."
 
 # game/BKinteractions.rpy:5221
 translate chinese slave_story7_5ad4fd4c:
@@ -6460,13 +6460,13 @@ translate chinese slave_story7_a09881b2:
 translate chinese slave_story7_d8a048e0:
 
     # girl.char "Well, it's the story I promised to tell you..."
-    girl.char "这就是我答应过要告诉你的故事……"
+    girl.char "这就是我答应过要告诉你的故事...."
 
 # game/BKinteractions.rpy:5233
 translate chinese slave_story7_74024fdb:
 
     # girl.char "Back then in [girl.origin], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
-    girl.char "回到[girl.origin]，所有和平的宗教都是受欢迎的。没有人谈论焚烧异教徒或折磨精灵间谍……"
+    girl.char "回到[girl.origin]，所有和平的宗教都是受欢迎的。没有人谈论焚烧异教徒或折磨精灵间谍...."
 
 # game/BKinteractions.rpy:5235
 translate chinese slave_story7_25328452:
@@ -6490,25 +6490,25 @@ translate chinese slave_story7_2fa50361:
 translate chinese slave_story7_98f3ec05:
 
     # girl.char "We were confident in our community, in our neighbours... Even after the elven traders were run out of town, even after they started mugging and lynching non-humans in the marketplace..."
-    girl.char "我们对我们的社区，对我们的邻居充满信心……即使精灵商人被赶出城，即使他们开始在市场上抢劫和私刑处死非人类……"
+    girl.char "我们对我们的社区，对我们的邻居充满信心....即使精灵商人被赶出城，即使他们开始在市场上抢劫和私刑处死非人类...."
 
 # game/BKinteractions.rpy:5243
 translate chinese slave_story7_d35f68ca:
 
     # girl.char "We didn't see that as our problem. But I did notice some of the gossiping..."
-    girl.char "我们不认为这是我们的问题。但我确实注意到了一些流言蜚语……"
+    girl.char "我们不认为这是我们的问题。但我确实注意到了一些流言蜚语...."
 
 # game/BKinteractions.rpy:5245
 translate chinese slave_story7_bc5a92f6:
 
     # girl.char "People grumbled that we were involved in sorcery, or spying for the enemy... Some knew about the altar to the Dweller in our house, and said we were devil-worshippers. They were more ignorant than mean, I suppose, but they were plenty of both."
-    girl.char "人们抱怨说我们参与了巫术，或为敌人刺探情报……有人知道我们家有供这人用的坛，就说我们是拜鬼的。我想，他们比一般人更无知，但他们两者都有。"
+    girl.char "人们抱怨说我们参与了巫术，或为敌人刺探情报....有人知道我们家有供这人用的坛，就说我们是拜鬼的。我想，他们比一般人更无知，但他们两者都有。"
 
 # game/BKinteractions.rpy:5248
 translate chinese slave_story7_9e2263e6:
 
     # girl.char "My [girl.story_guardian] started worrying, and talking about moving away... But I wouldn't have any of it."
-    girl.char "我的[girl.story_guardian]开始担心，谈论着要搬走……但我什么都不想要。"
+    girl.char "我的[girl.story_guardian]开始担心，谈论着要搬走....但我什么都不想要。"
 
 # game/BKinteractions.rpy:5250
 translate chinese slave_story7_34f28464:
@@ -6520,7 +6520,7 @@ translate chinese slave_story7_34f28464:
 translate chinese slave_story7_0c3b3d8d:
 
     # girl.char "How wrong I was..."
-    girl.char "我错得多离谱……"
+    girl.char "我错得多离谱...."
 
 # game/BKinteractions.rpy:5254
 translate chinese slave_story7_3900c296:
@@ -6532,7 +6532,7 @@ translate chinese slave_story7_3900c296:
 translate chinese slave_story7_41d196e3:
 
     # girl.char "First they came for the elves, and I said nothing... Of course later, they came for us."
-    girl.char "他们先是来抓精灵，我什么也没说……当然，后来他们来找我们了。"
+    girl.char "他们先是来抓精灵，我什么也没说....当然，后来他们来找我们了。"
 
 # game/BKinteractions.rpy:5258
 translate chinese slave_story7_0ff0ebc6:
@@ -6550,13 +6550,13 @@ translate chinese slave_story7_7dae15bd:
 translate chinese slave_story7_06c57059:
 
     # girl.char "Hungry and homeless, we tried to ask some of the neighbors for help... But no one would open their door to us."
-    girl.char "饥饿和无家可归，我们试图向一些邻居寻求帮助……但是没有人愿意为我们开门。"
+    girl.char "饥饿和无家可归，我们试图向一些邻居寻求帮助....但是没有人愿意为我们开门。"
 
 # game/BKinteractions.rpy:5264
 translate chinese slave_story7_0a0f4417:
 
     # girl.char "Some told us to go to hell, that our home burning was divine punishment... People I had known all my life..."
-    girl.char "有些人叫我们下地狱，说我们的家被烧毁是神的惩罚……我一生都认识的人……"
+    girl.char "有些人叫我们下地狱，说我们的家被烧毁是神的惩罚....我一生都认识的人...."
 
 # game/BKinteractions.rpy:5266
 translate chinese slave_story7_23a9a795:
@@ -6568,7 +6568,7 @@ translate chinese slave_story7_23a9a795:
 translate chinese slave_story7_33809d61:
 
     # girl.char "They locked us in for days... We used to joke that at least, now we had food and shelter."
-    girl.char "他们把我们锁了好几天……我们曾经开玩笑说，至少现在我们有了食物和住所。"
+    girl.char "他们把我们锁了好几天....我们曾经开玩笑说，至少现在我们有了食物和住所。"
 
 # game/BKinteractions.rpy:5270
 translate chinese slave_story7_f0b569c5:
@@ -6592,7 +6592,7 @@ translate chinese slave_story7_8d6973c2:
 translate chinese slave_story7_6959b3d7:
 
     # you "Uh-oh..."
-    you "啊哦……"
+    you "啊哦...."
 
 # game/BKinteractions.rpy:5278
 translate chinese slave_story7_51fdd291:
@@ -6628,7 +6628,7 @@ translate chinese slave_story7_4bd884b0:
 translate chinese slave_story7_5999b59f:
 
     # you "Wow, with such flexibility, no wonder you're popular with customers..."
-    you "哇，这么灵活，难怪你很受顾客欢迎……"
+    you "哇，这么灵活，难怪你很受顾客欢迎...."
 
 # game/BKinteractions.rpy:5299
 translate chinese slave_story7_0bc7db9d:
@@ -6640,7 +6640,7 @@ translate chinese slave_story7_0bc7db9d:
 translate chinese slave_story7_42b3ed1b:
 
     # girl.char "That's nothing! You'd be surprised what the elves can do... I mean, if there were any left."
-    girl.char "那是什么！你会惊讶于精灵们所能做的……我是说，如果还有的话。"
+    girl.char "那是什么！你会惊讶于精灵们所能做的....我是说，如果还有的话。"
 
 # game/BKinteractions.rpy:5303
 translate chinese slave_story7_1002acf4:
@@ -6652,7 +6652,7 @@ translate chinese slave_story7_1002acf4:
 translate chinese slave_story7_a0560252:
 
     # girl.char "That's right..."
-    girl.char "这是正确的……"
+    girl.char "这是正确的...."
 
 # game/BKinteractions.rpy:5307
 translate chinese slave_story7_82cae9fe:
@@ -6670,7 +6670,7 @@ translate chinese slave_story7_5e4f0ad3:
 translate chinese slave_story7_ae9fe7b9:
 
     # girl.char "The war was going badly, just like now, so the Arios church was badly in need of a scapegoat. They decided to crack down on so-called heretics and spies..."
-    girl.char "战争进行得很糟糕，就像现在一样，所以阿里奥斯教堂急需一个替罪羊。他们决定镇压所谓的异教徒和间谍。"
+    girl.char "战争进行得很糟糕，就像现在一样，所以太阳神教堂急需一个替罪羊。他们决定镇压所谓的异教徒和间谍。"
 
 # game/BKinteractions.rpy:5313
 translate chinese slave_story7_2c062cc8:
@@ -6688,7 +6688,7 @@ translate chinese slave_story7_a637278f:
 translate chinese slave_story7_0da899ba:
 
     # girl.char "I remember myself, gagged and chained in an impossible position, with my legs spread out and a large dildo in my ass, waiting for them to come back and hurt me..."
-    girl.char "我记得我自己，被堵住了嘴，被锁在一个不可能的位置上，我的腿摊开，屁股里塞着一个大假阳具，等着它们回来伤害我……"
+    girl.char "我记得我自己，被堵住了嘴，被锁在一个不可能的位置上，我的腿摊开，屁股里塞着一个大假阳具，等着它们回来伤害我...."
 
 # game/BKinteractions.rpy:5320
 translate chinese slave_story7_6a65e8ef:
@@ -6700,7 +6700,7 @@ translate chinese slave_story7_6a65e8ef:
 translate chinese slave_story7_471f2d57:
 
     # girl.char "After many days, the inquisitor came to visit. I was allowed some food and water, and they even untied me. He told me some nonsense about Arios's mercy..."
-    girl.char "过了许多天，检察官来了。他们给了我一些食物和水，甚至给我松绑。他跟我说了些关于阿里奥斯仁慈的废话……"
+    girl.char "过了许多天，检察官来了。他们给了我一些食物和水，甚至给我松绑。他跟我说了些关于太阳神仁慈的废话...."
 
 # game/BKinteractions.rpy:5325
 translate chinese slave_story7_7117c2ab:
@@ -6736,7 +6736,7 @@ translate chinese slave_story7_375099fb:
 translate chinese slave_story7_f5016a75:
 
     # girl.char "But when the day came..."
-    girl.char "但当那一天到来的时候……"
+    girl.char "但当那一天到来的时候...."
 
 # game/BKinteractions.rpy:5337
 translate chinese slave_story7_a577ad0e:
@@ -6754,7 +6754,7 @@ translate chinese slave_story7_b06416d9:
 translate chinese slave_story7_d8b418fe:
 
     # girl.char "The smell of death and charred wood was in the air..."
-    girl.char "空气中弥漫着死亡和烧焦木头的味道……"
+    girl.char "空气中弥漫着死亡和烧焦木头的味道...."
 
 # game/BKinteractions.rpy:5343
 translate chinese slave_story7_96381874:
@@ -6772,13 +6772,13 @@ translate chinese slave_story7_9db9ba3b:
 translate chinese slave_story7_cbd0f186:
 
     # girl.char "A crowd gathered, and the inquisitor started his speech. He went on about enemies of the one true religion..."
-    girl.char "一群人聚集起来，检察官开始了他的演讲。他继续谈论唯一真正宗教的敌人……"
+    girl.char "一群人聚集起来，检察官开始了他的演讲。他继续谈论唯一真正宗教的敌人...."
 
 # game/BKinteractions.rpy:5349
 translate chinese slave_story7_c17d306d:
 
     # girl.char "Then he said that we were here that day to witness the burning of evil, and possibly redemption... It was deeply unsettling. I didn't understand why anything had to burn."
-    girl.char "然后他说，那天我们在这里目睹了罪恶的燃烧，也许还有救赎……这令人深感不安。我不明白为什么要烧东西。"
+    girl.char "然后他说，那天我们在这里目睹了罪恶的燃烧，也许还有救赎....这令人深感不安。我不明白为什么要烧东西。"
 
 # game/BKinteractions.rpy:5351
 translate chinese slave_story7_4aa6b02e:
@@ -6808,7 +6808,7 @@ translate chinese slave_story7_c5fdebb9:
 translate chinese slave_story7_3938a451:
 
     # girl.char "He then asked me if I would prove my loyalty to Arios, by publicly accusing the ones responsible for my 'indoctrination'..."
-    girl.char "然后他问我是否愿意公开指责那些对我的“教化”负有责任的人，以此证明我对阿里奥斯的忠诚……"
+    girl.char "然后他问我是否愿意公开指责那些对我的“教化”负有责任的人，以此证明我对太阳神的忠诚...."
 
 # game/BKinteractions.rpy:5361
 translate chinese slave_story7_5b4e5efd:
@@ -6820,7 +6820,7 @@ translate chinese slave_story7_5b4e5efd:
 translate chinese slave_story7_adc02c48:
 
     # girl.char "I was crying and confused, and lost, so lost... I turned to my [girl.story_guardian], desperate for help..."
-    girl.char "我又哭又迷茫，迷失了，迷失了……我转向我的[girl.story_guardian]绝望地寻求帮助……"
+    girl.char "我又哭又迷茫，迷失了，迷失了....我转向我的[girl.story_guardian]绝望地寻求帮助...."
 
 # game/BKinteractions.rpy:5365
 translate chinese slave_story7_4dc5a941:
@@ -6892,7 +6892,7 @@ translate chinese slave_story7_e2cd36b2:
 translate chinese slave_story7_fb58656f:
 
     # girl.char "That's why eventually, when I ended up a sex slave, I didn't complain or fight it. It is a fate I amply deserve..."
-    girl.char "这就是为什么当我最终成为一名性奴隶时，我没有抱怨，也没有反抗。这是我应得的命运……"
+    girl.char "这就是为什么当我最终成为一名性奴隶时，我没有抱怨，也没有反抗。这是我应得的命运...."
 
 # game/BKinteractions.rpy:5391
 translate chinese slave_story7_31fe1d97:
@@ -6904,13 +6904,13 @@ translate chinese slave_story7_31fe1d97:
 translate chinese slave_story7_7f56e9cc:
 
     # you "I am so appalled that you suffered so much at the hands of Arios worshippers... Please know that we are not all like that."
-    you "我非常震惊，你们在阿里奥斯崇拜者的手中遭受了如此之多的痛苦……请知道我们并不都是那样的。"
+    you "我非常震惊，你们在太阳神崇拜者的手中遭受了如此之多的痛苦....请知道我们并不都是那样的。"
 
 # game/BKinteractions.rpy:5396
 translate chinese slave_story7_27d6dab1:
 
     # girl.char "I know, Master. Some Arios people showed me kindness, including you, in your way..."
-    girl.char "我知道，主人。一些阿里奥斯人对我很好，包括你，在你的方式……"
+    girl.char "我知道，主人。一些太阳神人对我很好，包括你，在你的方式...."
 
 # game/BKinteractions.rpy:5398
 translate chinese slave_story7_03b3fc92:
@@ -6946,19 +6946,19 @@ translate chinese slave_story7_9bd80317:
 translate chinese slave_story7_e55dd4cb:
 
     # girl.char "The more I think about it, the more it makes sense... I'm a bitch and a terrible person. I need to be punished..."
-    girl.char "我想得越多，它就越有意义……我是个婊子，是个很糟糕的人。我需要被惩罚……"
+    girl.char "我想得越多，它就越有意义....我是个婊子，是个很糟糕的人。我需要被惩罚...."
 
 # game/BKinteractions.rpy:5414
 translate chinese slave_story7_e453782e:
 
     # girl.char "I have betrayed my god... I am godless now..."
-    girl.char "我背叛了我的上帝……我现在不信神了……"
+    girl.char "我背叛了我的上帝....我现在不信神了...."
 
 # game/BKinteractions.rpy:5415
 translate chinese slave_story7_00791494:
 
     # girl.char "And yet, I miss Him... I miss a reassuring presence in my life, some greater power to shelter me from harm..."
-    girl.char "然而，我想念他……我错过了生命中一个让我安心的存在，一些更大的力量来保护我免受伤害……"
+    girl.char "然而，我想念他....我错过了生命中一个让我安心的存在，一些更大的力量来保护我免受伤害...."
 
 # game/BKinteractions.rpy:5416
 translate chinese slave_story7_2d520e06:
@@ -6970,7 +6970,7 @@ translate chinese slave_story7_2d520e06:
 translate chinese slave_story7_c23afdf8:
 
     # girl.char "I have been thinking of setting up an altar here. I will need some ingredients from the forest. Something to keep me occupied..."
-    girl.char "我一直想在这里建一座祭坛。我需要一些来自森林的原料。让我有事可做……"
+    girl.char "我一直想在这里建一座祭坛。我需要一些来自森林的原料。让我有事可做...."
 
 # game/BKinteractions.rpy:5418
 translate chinese slave_story7_dfd8f187:
@@ -6982,7 +6982,7 @@ translate chinese slave_story7_dfd8f187:
 translate chinese slave_story7_cab555c2:
 
     # girl.char "My poor [girl.story_guardian] remained faithful to the Dweller, up to the very last moment... A death unworthy of my [girl.story_guardian]'s life."
-    girl.char "我可怜的[girl.story_guardian]直到最后一刻都对居住者忠心耿耿……一个不值得我的[girl.story_guardian]去死的生活。"
+    girl.char "我可怜的[girl.story_guardian]直到最后一刻都对居住者忠心耿耿....一个不值得我的[girl.story_guardian]去死的生活。"
 
 # game/BKinteractions.rpy:5423
 translate chinese slave_story7_79e11c3d:
@@ -7000,7 +7000,7 @@ translate chinese slave_story7_95570996:
 translate chinese slave_story7_6d082254:
 
     # girl.char "I wish I could give my [girl.story_guardian] a real burial... Set our souls at peace."
-    girl.char "我希望我能给我的[girl.story_guardian]。一个真正的葬礼……让我们的灵魂安息。"
+    girl.char "我希望我能给我的[girl.story_guardian]。一个真正的葬礼....让我们的灵魂安息。"
 
 # game/BKinteractions.rpy:5429
 translate chinese slave_story7_c1cf3327:
@@ -7036,7 +7036,7 @@ translate chinese slave_story7_01f82067:
 translate chinese slave_story7_3e80261e:
 
     # girl.char "I don't want to pretend to believe in anything. Not with you, not with the girls, not with the customers..."
-    girl.char "我不想假装相信任何事情。不是和你，不是和女孩，不是和顾客……"
+    girl.char "我不想假装相信任何事情。不是和你，不是和女孩，不是和顾客...."
 
 # game/BKinteractions.rpy:5447
 translate chinese slave_story7_5d63e99d_1:
@@ -7090,7 +7090,7 @@ translate chinese slave_story8_726bca15:
 translate chinese slave_story8_76aed45d:
 
     # girl.char "And the fire runes should flow from East to West..."
-    girl.char "火符应该从东到西流动……"
+    girl.char "火符应该从东到西流动...."
 
 # game/BKinteractions.rpy:5481
 translate chinese slave_story8_067687ba:
@@ -7114,7 +7114,7 @@ translate chinese slave_story8_6fca62d1:
 translate chinese slave_story8_793655f1:
 
     # girl.char "Oh, Master... Don't break my concentration... I'm almost done."
-    girl.char "哦，主……不要打断我的注意力……我差不多要做完了。"
+    girl.char "哦，主....不要打断我的注意力....我差不多要做完了。"
 
 # game/BKinteractions.rpy:5489
 translate chinese slave_story8_dd2f566a:
@@ -7144,7 +7144,7 @@ translate chinese slave_story8_b6355368:
 translate chinese slave_story8_02cb965e:
 
     # girl.char "It's not the dead I'm afraid of... It's the living."
-    girl.char "我怕的不是死人……这是生活。"
+    girl.char "我怕的不是死人....这是生活。"
 
 # game/BKinteractions.rpy:5499
 translate chinese slave_story8_e17aa81f:
@@ -7156,7 +7156,7 @@ translate chinese slave_story8_e17aa81f:
 translate chinese slave_story8_cda0c023:
 
     # girl.char "It will affect some of their powers, yes. You see..."
-    girl.char "是的，这将影响他们的一些权力。你看到……"
+    girl.char "是的，这将影响他们的一些权力。你看到...."
 
 # game/BKinteractions.rpy:5503
 translate chinese slave_story8_bff59177:
@@ -7192,7 +7192,7 @@ translate chinese slave_story8_da2430f9:
 translate chinese slave_story8_cce87d6d:
 
     # you "Well, I studied alongside a few in Karkyr... They're usually pretty haughty and ill-tempered."
-    you "嗯，我和几个人一起在卡尔凯尔学习……他们通常相当傲慢和暴躁。"
+    you "嗯，我和几个人一起在卡尔凯尔学习....他们通常相当傲慢和暴躁。"
 
 # game/BKinteractions.rpy:5516
 translate chinese slave_story8_d6c61e34:
@@ -7210,7 +7210,7 @@ translate chinese slave_story8_fcb27314:
 translate chinese slave_story8_54072934:
 
     # you "Well, they live alone in the forest, and they eat little children..."
-    you "嗯，它们独自生活在森林里，吃小孩子……"
+    you "嗯，它们独自生活在森林里，吃小孩子...."
 
 # game/BKinteractions.rpy:5523
 translate chinese slave_story8_0bc7db9d:
@@ -7228,7 +7228,7 @@ translate chinese slave_story8_48c07f22:
 translate chinese slave_story8_15f2c1df:
 
     # girl.char "Witches are usually pretty normal-acting. They can be anyone... A shopkeeper, a noblewoman, a nurse..."
-    girl.char "女巫通常都很正常。他们可以是任何人……一个店主，一个贵妇人，一个护士……"
+    girl.char "女巫通常都很正常。他们可以是任何人....一个店主，一个贵妇人，一个护士...."
 
 # game/BKinteractions.rpy:5529
 translate chinese slave_story8_9d6d1145:
@@ -7240,19 +7240,19 @@ translate chinese slave_story8_9d6d1145:
 translate chinese slave_story8_2877615e:
 
     # girl.char "I'm not talking about the swamp-dwelling, crystal-ball wielding, wart-nosed variety... Those are just for show."
-    girl.char "我说的可不是那种住在沼泽里、挥舞水晶球、长着翘鼻子的生物……那些只是作秀。"
+    girl.char "我说的可不是那种住在沼泽里、挥舞水晶球、长着翘鼻子的生物....那些只是作秀。"
 
 # game/BKinteractions.rpy:5533
 translate chinese slave_story8_8427eaaa:
 
     # girl.char "No self-respecting witch would be caught acting like that... Except maybe those obsessed with decorum and traditions."
-    girl.char "没有一个有自尊的女巫会被抓到那样做……除了那些痴迷于礼仪和传统的人。"
+    girl.char "没有一个有自尊的女巫会被抓到那样做....除了那些痴迷于礼仪和传统的人。"
 
 # game/BKinteractions.rpy:5535
 translate chinese slave_story8_dec2d846:
 
     # girl.char "I'm talking about the powerful and secret ones, the ones who live among us..."
-    girl.char "我说的是那些强大而神秘的人，那些和我们生活在一起的人……"
+    girl.char "我说的是那些强大而神秘的人，那些和我们生活在一起的人...."
 
 # game/BKinteractions.rpy:5537
 translate chinese slave_story8_3196df6b:
@@ -7264,7 +7264,7 @@ translate chinese slave_story8_3196df6b:
 translate chinese slave_story8_e33ce46e:
 
     # girl.char "I'm talking about... {w}a {i}curse{/i}."
-    girl.char "我说的是……{w}一个{i}诅咒{/i}。"
+    girl.char "我说的是....{w}一个{i}诅咒{/i}。"
 
 # game/BKinteractions.rpy:5544
 translate chinese slave_story8_53973358:
@@ -7288,7 +7288,7 @@ translate chinese slave_story8_554781da:
 translate chinese slave_story8_26f08e5b:
 
     # girl.char "I'm talking about..."
-    girl.char "我说的是……"
+    girl.char "我说的是...."
 
 # game/BKinteractions.rpy:5555
 translate chinese slave_story8_f0a26a5f:
@@ -7300,7 +7300,7 @@ translate chinese slave_story8_f0a26a5f:
 translate chinese slave_story8_c7c8832f:
 
     # you "Spooky...."
-    you "幽灵……"
+    you "幽灵...."
 
 # game/BKinteractions.rpy:5561
 translate chinese slave_story8_143dee9f:
@@ -7312,7 +7312,7 @@ translate chinese slave_story8_143dee9f:
 translate chinese slave_story8_01b3726f:
 
     # girl.char "Not just anyone... I've been cursed by a powerful and vengeful witch... You want to know how that happened?"
-    girl.char "不是任何人……我被一个复仇心重的女巫诅咒了……你想知道这是怎么发生的吗？"
+    girl.char "不是任何人....我被一个复仇心重的女巫诅咒了....你想知道这是怎么发生的吗？"
 
 # game/BKinteractions.rpy:5565
 translate chinese slave_story8_a55df97f:
@@ -7336,7 +7336,7 @@ translate chinese slave_story8_a1918715:
 translate chinese slave_story8_f256ee5f:
 
     # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin]..."
-    girl.char "这一切都开始于不久前，当我住在[girl.story_home_article] [girl.origin]……"
+    girl.char "这一切都开始于不久前，当我住在[girl.story_home_article] [girl.origin]...."
 
 # game/BKinteractions.rpy:5578
 translate chinese slave_story8_f2692a58:
@@ -7348,13 +7348,13 @@ translate chinese slave_story8_f2692a58:
 translate chinese slave_story8_123c9c70:
 
     # girl.char "Said all magic had ever brought Xeros was chaos and destruction... But I didn't see it that way."
-    girl.char "说所有给克塞罗斯带来的魔法都是混乱和毁灭……但我不这么认为。"
+    girl.char "说所有给克塞罗斯带来的魔法都是混乱和毁灭....但我不这么认为。"
 
 # game/BKinteractions.rpy:5582
 translate chinese slave_story8_9dc424ec:
 
     # girl.char "Magic creates chaos, it's true, but chaos breeds change... And change is good, right?"
-    girl.char "魔法创造混乱，这是真的，但混乱孕育变化……改变是好事，对吧？"
+    girl.char "魔法创造混乱，这是真的，但混乱孕育变化....改变是好事，对吧？"
 
 # game/BKinteractions.rpy:5585
 translate chinese slave_story8_ac89493c:
@@ -7378,13 +7378,13 @@ translate chinese slave_story8_c1da3d17:
 translate chinese slave_story8_7c04db40:
 
     # girl.char "Perhaps I should have heeded that advice... But it's a little late now."
-    girl.char "也许我应该听从那个建议……但是现在有点晚了。"
+    girl.char "也许我应该听从那个建议....但是现在有点晚了。"
 
 # game/BKinteractions.rpy:5595
 translate chinese slave_story8_fe193a85:
 
     # you "Some change is simply inevitable. Adaptable people can come out on top..."
-    you "一些变化是不可避免的。适应性强的人能脱颖而出……"
+    you "一些变化是不可避免的。适应性强的人能脱颖而出...."
 
 # game/BKinteractions.rpy:5596
 translate chinese slave_story8_d2e14eb3:
@@ -7396,7 +7396,7 @@ translate chinese slave_story8_d2e14eb3:
 translate chinese slave_story8_f16cb665:
 
     # you "Creative destruction... I like that."
-    you "创造性破坏……我很喜欢这样。"
+    you "创造性破坏....我很喜欢这样。"
 
 # game/BKinteractions.rpy:5601
 translate chinese slave_story8_0395c0a2:
@@ -7408,13 +7408,13 @@ translate chinese slave_story8_0395c0a2:
 translate chinese slave_story8_95adb921:
 
     # girl.char "Anyway. As I grew older, I became increasingly bored staying at home and listening to my [girl.story_guardian]'s lectures..."
-    girl.char "无论如何。随着年龄的增长，我越来越厌倦呆在家里听我的[girl.story_guardian]的讲座……"
+    girl.char "无论如何。随着年龄的增长，我越来越厌倦呆在家里听我的[girl.story_guardian]的讲座...."
 
 # game/BKinteractions.rpy:5605
 translate chinese slave_story8_4dee1272:
 
     # girl.char "I thought I had it in me to become a skilled magician... So I decided to seek a teacher."
-    girl.char "我想我有能力成为一个熟练的魔术师……所以我决定找一个老师。"
+    girl.char "我想我有能力成为一个熟练的魔术师....所以我决定找一个老师。"
 
 # game/BKinteractions.rpy:5607
 translate chinese slave_story8_e31aa406:
@@ -7426,7 +7426,7 @@ translate chinese slave_story8_e31aa406:
 translate chinese slave_story8_77786689:
 
     # girl.char "To be continued..."
-    girl.char "未完待续……"
+    girl.char "未完待续...."
 
 # game/BKinteractions.rpy:5611
 translate chinese slave_story8_b64d38e3:
@@ -7438,7 +7438,7 @@ translate chinese slave_story8_b64d38e3:
 translate chinese slave_story8_76660229:
 
     # girl.char "Why, yes, Master [MC.name]... I can't tell you the whole story all at once, now, can I? It wouldn't be fun..."
-    girl.char "是的，主人[MC.name]……我现在不能一下子把全部经过告诉你，是吗？这不会很有趣……"
+    girl.char "是的，主人[MC.name]....我现在不能一下子把全部经过告诉你，是吗？这不会很有趣...."
 
 # game/BKinteractions.rpy:5625
 translate chinese slave_story8_3ae8a663:
@@ -7450,7 +7450,7 @@ translate chinese slave_story8_3ae8a663:
 translate chinese slave_story8_9afd1bdd:
 
     # you "What the..."
-    you "什么……"
+    you "什么...."
 
 # game/BKinteractions.rpy:5632
 translate chinese slave_story8_bbafc366:
@@ -7486,19 +7486,19 @@ translate chinese slave_story8_5fd00221:
 translate chinese slave_story8_57e8b959:
 
     # you "What the hell happened here..."
-    you "这里到底发生了什么……"
+    you "这里到底发生了什么...."
 
 # game/BKinteractions.rpy:5645
 translate chinese slave_story8_a8b038fa:
 
     # you "What the... You're gonna pay for the damage from your allowance, you hear me!"
-    you "什么……你要用你的零用钱来赔偿损失，听我说！"
+    you "什么....你要用你的零用钱来赔偿损失，听我说！"
 
 # game/BKinteractions.rpy:5647
 translate chinese slave_story8_25fad722:
 
     # girl.char "I just... I mean..."
-    girl.char "我只是……我的意思是……"
+    girl.char "我只是....我的意思是...."
 
 # game/BKinteractions.rpy:5649
 translate chinese slave_story8_90b25749:
@@ -7528,7 +7528,7 @@ translate chinese slave_story8_38f4e60b:
 translate chinese slave_story8_eb869c56:
 
     # girl.char "Well, it's about the curse, you see... I found that book of magic recipes, and I thought..."
-    girl.char "是关于诅咒的，你看……我找到那本魔法食谱，我想……"
+    girl.char "是关于诅咒的，你看....我找到那本魔法食谱，我想...."
 
 # game/BKinteractions.rpy:5660
 translate chinese slave_story8_18113c8f:
@@ -7540,7 +7540,7 @@ translate chinese slave_story8_18113c8f:
 translate chinese slave_story8_b38e882d:
 
     # girl.char "So much for that idea..."
-    girl.char "这个想法到此为止……"
+    girl.char "这个想法到此为止...."
 
 # game/BKinteractions.rpy:5664
 translate chinese slave_story8_7a2f08c2:
@@ -7558,7 +7558,7 @@ translate chinese slave_story8_4a3f9188:
 translate chinese slave_story8_1eb0e7fe:
 
     # girl.char "Yes, Master..."
-    girl.char "是的，主人……"
+    girl.char "是的，主人...."
 
 # game/BKinteractions.rpy:5670
 translate chinese slave_story8_9d46dba6:
@@ -7570,7 +7570,7 @@ translate chinese slave_story8_9d46dba6:
 translate chinese slave_story8_ce9564f7:
 
     # girl.char "Well... I told you about my time in [girl.origin], when I was looking for a magic teacher..."
-    girl.char "嗯……我告诉过你我在[girl.origin]的时光。当我在找一个魔法老师的时候……"
+    girl.char "嗯....我告诉过你我在[girl.origin]的时光。当我在找一个魔法老师的时候...."
 
 # game/BKinteractions.rpy:5674
 translate chinese slave_story8_8b044c9c:
@@ -7582,7 +7582,7 @@ translate chinese slave_story8_8b044c9c:
 translate chinese slave_story8_cd1403d4:
 
     # girl.char "Eventually, I did..."
-    girl.char "最终，我做……"
+    girl.char "最终，我做...."
 
 # game/BKinteractions.rpy:5678
 translate chinese slave_story8_0cac5be6:
@@ -7648,19 +7648,19 @@ translate chinese slave_story8_d0a02cff:
 translate chinese slave_story8_e37bb862:
 
     # you "Hmm... Who was she?"
-    you "嗯……她是谁？"
+    you "嗯....她是谁？"
 
 # game/BKinteractions.rpy:5700
 translate chinese slave_story8_3221c4ea:
 
     # girl.char "She was what she seemed to be. A lady at court, from an old and respected family..."
-    girl.char "她就是她看上去的样子。宫廷里的一位贵妇人，来自一个古老而受人尊敬的家庭……"
+    girl.char "她就是她看上去的样子。宫廷里的一位贵妇人，来自一个古老而受人尊敬的家庭...."
 
 # game/BKinteractions.rpy:5702
 translate chinese slave_story8_37baae7f:
 
     # girl.char "But she was also something else. A powerful sorceress, hiding terrible family secrets and wielding dark powers..."
-    girl.char "但她也是另外一个人。一个强大的女巫，隐藏可怕的家庭秘密和挥舞黑暗力量……"
+    girl.char "但她也是另外一个人。一个强大的女巫，隐藏可怕的家庭秘密和挥舞黑暗力量...."
 
 # game/BKinteractions.rpy:5704
 translate chinese slave_story8_4c36bc59:
@@ -7672,7 +7672,7 @@ translate chinese slave_story8_4c36bc59:
 translate chinese slave_story8_ac6ec176:
 
     # girl.char "And she had appetites..."
-    girl.char "她有食欲……"
+    girl.char "她有食欲...."
 
 # game/BKinteractions.rpy:5709
 translate chinese slave_story8_6a22c1a5:
@@ -7684,7 +7684,7 @@ translate chinese slave_story8_6a22c1a5:
 translate chinese slave_story8_6d81eff0:
 
     # girl.char "Of a sexual nature, mostly. Man, woman or beast, she didn't care... But she also had other carnal appetites. I helped her sate them..."
-    girl.char "主要是性方面的。男人、女人还是野兽，她都不在乎……但她也有其他的肉体欲望。我帮她解决了……"
+    girl.char "主要是性方面的。男人、女人还是野兽，她都不在乎....但她也有其他的肉体欲望。我帮她解决了...."
 
 # game/BKinteractions.rpy:5713
 translate chinese slave_story8_6f0867e1:
@@ -7702,13 +7702,13 @@ translate chinese slave_story8_597a5975:
 translate chinese slave_story8_1d041614:
 
     # girl.char "As her apprentice, her lover, her would-be daughter, I'm not really sure..."
-    girl.char "作为她的学徒，她的爱人，她未来的女儿，我不确定……"
+    girl.char "作为她的学徒，她的爱人，她未来的女儿，我不确定...."
 
 # game/BKinteractions.rpy:5719
 translate chinese slave_story8_d253e09b:
 
     # girl.char "I put my heart into learning everything I could from her. I was an eager student, if maybe not the most-gifted one..."
-    girl.char "我全身心地向她学习。我是一个求知若渴的学生，即使不是最有天赋的学生……"
+    girl.char "我全身心地向她学习。我是一个求知若渴的学生，即使不是最有天赋的学生...."
 
 # game/BKinteractions.rpy:5721
 translate chinese slave_story8_a49f6764:
@@ -7720,7 +7720,7 @@ translate chinese slave_story8_a49f6764:
 translate chinese slave_story8_e5d1bcd1:
 
     # girl.char "The Lady was patient with me, and I learnt a lot in a short time... But I still felt like it was going too slow."
-    girl.char "那位女士对我很有耐心，我在短时间内学到了很多……但我还是觉得进展太慢了。"
+    girl.char "那位女士对我很有耐心，我在短时间内学到了很多....但我还是觉得进展太慢了。"
 
 # game/BKinteractions.rpy:5725
 translate chinese slave_story8_bf34a948:
@@ -7744,7 +7744,7 @@ translate chinese slave_story8_74692a88:
 translate chinese slave_story8_897b4a7d:
 
     # girl.char "Eventually, I became paranoid, thinking the Lady was deliberately hiding knowledge from me... Perhaps she was afraid I would become too powerful and threaten her?"
-    girl.char "最后，我变得偏执起来，以为那位女士在故意向我隐瞒知识……也许她害怕我会变得太强大而威胁她？"
+    girl.char "最后，我变得偏执起来，以为那位女士在故意向我隐瞒知识....也许她害怕我会变得太强大而威胁她？"
 
 # game/BKinteractions.rpy:5733
 translate chinese slave_story8_2ca2338a:
@@ -7768,7 +7768,7 @@ translate chinese slave_story8_f4381891:
 translate chinese slave_story8_9afca04f:
 
     # girl.char "I wasn't nearly good enough at spellpicking to open that lock, but I knew my mistress's habits... She always wore a silver key around her neck, except when taking milk baths..."
-    girl.char "我的拼写还差得远，打不开那把锁，但我知道我情妇的习惯……她脖子上总是挂着一把银钥匙，除了洗牛奶澡的时候……"
+    girl.char "我的拼写还差得远，打不开那把锁，但我知道我情妇的习惯....她脖子上总是挂着一把银钥匙，除了洗牛奶澡的时候...."
 
 # game/BKinteractions.rpy:5741
 translate chinese slave_story8_5444b512:
@@ -7804,7 +7804,7 @@ translate chinese slave_story8_b71f2ff6:
 translate chinese slave_story8_2b4113bd:
 
     # girl.char "Well... Let me tell you the rest of the story later, Master [MC.name]. I think your pants are beginning to catch fire."
-    girl.char "嗯……我以后再把故事的其余部分告诉你，主人[MC.name]。我想你的裤子开始着火了。"
+    girl.char "嗯....我以后再把故事的其余部分告诉你，主人[MC.name]。我想你的裤子开始着火了。"
 
 # game/BKinteractions.rpy:5753
 translate chinese slave_story8_c6b8fbf0:
@@ -7834,19 +7834,19 @@ translate chinese slave_story8_c974b9ae:
 translate chinese slave_story8_fa53c2e6:
 
     # you "Who... Who did this to you? Is it some kind of sick customer???"
-    you "谁……这是谁对你做的？是生病的顾客吗？"
+    you "谁....这是谁对你做的？是生病的顾客吗？"
 
 # game/BKinteractions.rpy:5772
 translate chinese slave_story8_66ac5273:
 
     # girl.char "Uh? Ah! No, no, I did it myself..."
-    girl.char "呃？啊！不，不，我自己做的……"
+    girl.char "呃？啊！不，不，我自己做的...."
 
 # game/BKinteractions.rpy:5774
 translate chinese slave_story8_a1615fc8:
 
     # you "You??? But... When... How..."
-    you "你吗？？？但是……当……如何……"
+    you "你吗？？？但是....当....如何...."
 
 # game/BKinteractions.rpy:5776
 translate chinese slave_story8_06b2b022:
@@ -7858,13 +7858,13 @@ translate chinese slave_story8_06b2b022:
 translate chinese slave_story8_aea95514:
 
     # girl.char "Oh, I read somewhere that this ritual of purification could help drive away curses... But it hurts like hell!"
-    girl.char "哦，我在什么地方读到过，这种净化仪式可以帮助赶走诅咒……但是疼死我了！"
+    girl.char "哦，我在什么地方读到过，这种净化仪式可以帮助赶走诅咒....但是疼死我了！"
 
 # game/BKinteractions.rpy:5780
 translate chinese slave_story8_267012dd:
 
     # you "What the... Are you crazy? How did you even manage to tie yourself up???"
-    you "什么……你疯了吗？你是怎么把自己绑起来的？"
+    you "什么....你疯了吗？你是怎么把自己绑起来的？"
 
 # game/BKinteractions.rpy:5782
 translate chinese slave_story8_17750a8b:
@@ -7876,13 +7876,13 @@ translate chinese slave_story8_17750a8b:
 translate chinese slave_story8_72b70164:
 
     # you "Well... I don't know... How can I tell?"
-    you "嗯……我不知道……我怎么知道呢？"
+    you "嗯....我不知道....我怎么知道呢？"
 
 # game/BKinteractions.rpy:5786
 translate chinese slave_story8_52630fe4:
 
     # girl.char "You can't... It's my own burden..."
-    girl.char "你不能……这是我自己的负担……"
+    girl.char "你不能....这是我自己的负担...."
 
 # game/BKinteractions.rpy:5788
 translate chinese slave_story8_eef45149:
@@ -7894,7 +7894,7 @@ translate chinese slave_story8_eef45149:
 translate chinese slave_story8_f0c7f23f:
 
     # girl.char "A terrible and ancient curse... I shiver just to think about it."
-    girl.char "一个可怕而古老的诅咒……我一想到它就发抖。"
+    girl.char "一个可怕而古老的诅咒....我一想到它就发抖。"
 
 # game/BKinteractions.rpy:5792
 translate chinese slave_story8_33c6fd3a:
@@ -7918,7 +7918,7 @@ translate chinese slave_story8_15d6b866:
 translate chinese slave_story8_42b818f9:
 
     # girl.char "One day, I decided to steal the key she was carrying with her at all times... The key to an old manuscript that I thought held incredible power..."
-    girl.char "有一天，我决定偷她一直带着的钥匙……一本我认为具有不可思议力量的旧手稿的钥匙……"
+    girl.char "有一天，我决定偷她一直带着的钥匙....一本我认为具有不可思议力量的旧手稿的钥匙...."
 
 # game/BKinteractions.rpy:5800
 translate chinese slave_story8_6e9a44fb:
@@ -7936,31 +7936,31 @@ translate chinese slave_story8_4dbe83c9:
 translate chinese slave_story8_c6602880:
 
     # girl.char "It was some kind of chant, a call to a powerful being from beyond the planes..."
-    girl.char "这是一种圣歌，一种对来自外太空的强大生命的召唤……"
+    girl.char "这是一种圣歌，一种对来自外太空的强大生命的召唤...."
 
 # game/BKinteractions.rpy:5806
 translate chinese slave_story8_ba7576bf:
 
     # you "Tell me you didn't read it aloud..."
-    you "告诉我你没有大声读出来……"
+    you "告诉我你没有大声读出来...."
 
 # game/BKinteractions.rpy:5808
 translate chinese slave_story8_e9a7159d:
 
     # girl.char "Oh, but I did! Runes are hard to read, you know, so it helps if I say them aloud..."
-    girl.char "哦，但我做到了！符文很难读，你知道，所以如果我大声说出来会有帮助……"
+    girl.char "哦，但我做到了！符文很难读，你知道，所以如果我大声说出来会有帮助...."
 
 # game/BKinteractions.rpy:5810
 translate chinese slave_story8_48a2c215:
 
     # you "Damn..."
-    you "该死的……"
+    you "该死的...."
 
 # game/BKinteractions.rpy:5812
 translate chinese slave_story8_ec9bfb43:
 
     # girl.char "And guess what? Soon as I was finished reading, there was a big rumble... A tear appeared in time and space..."
-    girl.char "你猜怎么着？我刚读完，就听到一阵轰隆声……时空中出现了一滴泪……"
+    girl.char "你猜怎么着？我刚读完，就听到一阵轰隆声....时空中出现了一滴泪...."
 
 # game/BKinteractions.rpy:5814
 translate chinese slave_story8_a0372974:
@@ -7984,7 +7984,7 @@ translate chinese slave_story8_51492967:
 translate chinese slave_story8_847c21f3:
 
     # girl.char "Yeah! I was so excited..."
-    girl.char "是啊！我太兴奋了……"
+    girl.char "是啊！我太兴奋了...."
 
 # game/BKinteractions.rpy:5822
 translate chinese slave_story8_737150bd:
@@ -7996,7 +7996,7 @@ translate chinese slave_story8_737150bd:
 translate chinese slave_story8_6887a4d6:
 
     # girl.char "I was expecting some kind of hulk with horns and cool wings..."
-    girl.char "我以为会是一个长着角和翅膀的绿巨人……"
+    girl.char "我以为会是一个长着角和翅膀的绿巨人...."
 
 # game/BKinteractions.rpy:5826
 translate chinese slave_story8_c3dde265:
@@ -8014,13 +8014,13 @@ translate chinese slave_story8_aa56e0be:
 translate chinese slave_story8_794189fc:
 
     # girl.char "But it didn't answer me... Instead, it just grabbed me with its slimy tentacles, and started ripping my dress!"
-    girl.char "但它没有回答我……相反，它只是用它黏糊糊的触角抓住我，开始撕扯我的衣服！"
+    girl.char "但它没有回答我....相反，它只是用它黏糊糊的触角抓住我，开始撕扯我的衣服！"
 
 # game/BKinteractions.rpy:5832
 translate chinese slave_story8_8cd26f33:
 
     # you "How... Unexpected..."
-    you "如何……意想不到的……"
+    you "如何....意想不到的...."
 
 # game/BKinteractions.rpy:5834
 translate chinese slave_story8_127dc844:
@@ -8032,7 +8032,7 @@ translate chinese slave_story8_127dc844:
 translate chinese slave_story8_90401839:
 
     # girl.char "I don't know why though, but it was only interested in one thing: my ass..."
-    girl.char "我不知道为什么，但它只对一件事感兴趣:我的屁股……"
+    girl.char "我不知道为什么，但它只对一件事感兴趣:我的屁股...."
 
 # game/BKinteractions.rpy:5839
 translate chinese slave_story8_577d0ab5:
@@ -8044,13 +8044,13 @@ translate chinese slave_story8_577d0ab5:
 translate chinese slave_story8_b2043c2c:
 
     # girl.char "At first, it was only small tendrils... It felt ticklish. But soon, larger, thicker tentacles started making their way inside me."
-    girl.char "起初，它只是小卷须……感觉痒。但很快，更大更厚的触手开始进入我的身体。"
+    girl.char "起初，它只是小卷须....感觉痒。但很快，更大更厚的触手开始进入我的身体。"
 
 # game/BKinteractions.rpy:5843
 translate chinese slave_story8_03aeb455:
 
     # girl.char "They were spurting some gooey, sticky liquid non-stop... What a weird sensation... Mmmh..."
-    girl.char "他们不停地喷出粘糊糊的液体……多么奇怪的感觉……嗯……"
+    girl.char "他们不停地喷出粘糊糊的液体....多么奇怪的感觉....嗯...."
 
 # game/BKinteractions.rpy:5847
 translate chinese slave_story8_f3684822:
@@ -8074,7 +8074,7 @@ translate chinese slave_story8_913e8c71:
 translate chinese slave_story8_e699f424:
 
     # girl.char "I could only watch with horror and fascination as the demon kept pouring his gooey fluid into her every hole... The whole room was slippery with his fluids..."
-    girl.char "我只能带着恐惧和迷恋看着恶魔不停地把他粘稠的液体灌进她的每一个洞里……整个房间都被他的液体弄湿了……"
+    girl.char "我只能带着恐惧和迷恋看着恶魔不停地把他粘稠的液体灌进她的每一个洞里....整个房间都被他的液体弄湿了...."
 
 # game/BKinteractions.rpy:5855
 translate chinese slave_story8_62662a72:
@@ -8092,7 +8092,7 @@ translate chinese slave_story8_7b17ddf5:
 translate chinese slave_story8_ba59fd73:
 
     # girl.char "So I grabbed her scepter, and I pointed it at the demon... It was moving a lot, fucking the Lady with renewed fury..."
-    girl.char "于是我抓起她的权杖，指着那个恶魔……它在不停地移动，以新的愤怒操着这位女士……"
+    girl.char "于是我抓起她的权杖，指着那个恶魔....它在不停地移动，以新的愤怒操着这位女士...."
 
 # game/BKinteractions.rpy:5861
 translate chinese slave_story8_3e51ecf7:
@@ -8104,13 +8104,13 @@ translate chinese slave_story8_3e51ecf7:
 translate chinese slave_story8_7b898a0a:
 
     # girl.char "Then, a deep ray of light started shining from the scepter... It was a success!"
-    girl.char "然后，一束深深的光开始从权杖上闪耀……成功了！"
+    girl.char "然后，一束深深的光开始从权杖上闪耀....成功了！"
 
 # game/BKinteractions.rpy:5865
 translate chinese slave_story8_6267b8f3:
 
     # girl.char "I pointed it at the demon's head... But then, I slipped into a pool of the demon's bodily fluids."
-    girl.char "我指着恶魔的头……然后，我溜进了恶魔的体液池。"
+    girl.char "我指着恶魔的头....然后，我溜进了恶魔的体液池。"
 
 # game/BKinteractions.rpy:5867
 translate chinese slave_story8_0ee95e82:
@@ -8152,7 +8152,7 @@ translate chinese slave_story8_c1da3d17_1:
 translate chinese slave_story8_ec3a7cef:
 
     # you "And...?"
-    you "和……吗？"
+    you "和....吗？"
 
 # game/BKinteractions.rpy:5881
 translate chinese slave_story8_6f0c100a:
@@ -8164,7 +8164,7 @@ translate chinese slave_story8_6f0c100a:
 translate chinese slave_story8_73a2a5b1:
 
     # you "I mean... What happened?"
-    you "我的意思是……发生了什么事？"
+    you "我的意思是....发生了什么事？"
 
 # game/BKinteractions.rpy:5885
 translate chinese slave_story8_cdee7464:
@@ -8182,13 +8182,13 @@ translate chinese slave_story8_fd653af1:
 translate chinese slave_story8_7fbe8dad:
 
     # girl.char "Yes! With her words, she cursed me! 'Curse you, you clumsy bitch...'"
-    girl.char "是的！她用言语诅咒我！“诅咒你，你这个笨手笨脚的婊子……”"
+    girl.char "是的！她用言语诅咒我！“诅咒你，你这个笨手笨脚的婊子....”"
 
 # game/BKinteractions.rpy:5891
 translate chinese slave_story8_c4b04709:
 
     # girl.char "Ever since, I have been clumsy! I mean, more than usual! And she said 'bitch'... Look at me now! I'm a sex slave!"
-    girl.char "从那以后，我一直笨手笨脚的！我是说，比平常多！她说“婊子”……现在看着我！我是个性奴隶！"
+    girl.char "从那以后，我一直笨手笨脚的！我是说，比平常多！她说“婊子”....现在看着我！我是个性奴隶！"
 
 # game/BKinteractions.rpy:5893
 translate chinese slave_story8_dae0ec55_1:
@@ -8218,7 +8218,7 @@ translate chinese slave_story8_685847ec:
 translate chinese slave_story8_90069e2b:
 
     # girl.char "Oh, Master, I'm so afraid... Please help me!"
-    girl.char "哦，主人，我很害怕……请帮助我！"
+    girl.char "哦，主人，我很害怕....请帮助我！"
 
 # game/BKinteractions.rpy:5903
 translate chinese slave_story8_799f2556:
@@ -8230,37 +8230,37 @@ translate chinese slave_story8_799f2556:
 translate chinese slave_story8_59f98aeb:
 
     # girl.char "I am cursed, and I must pay for my sins... But I was once pure, I had a family."
-    girl.char "我被诅咒了，我必须为我的罪付出代价……但我曾经纯洁，我有一个家庭。"
+    girl.char "我被诅咒了，我必须为我的罪付出代价....但我曾经纯洁，我有一个家庭。"
 
 # game/BKinteractions.rpy:5909
 translate chinese slave_story8_e5ef866b:
 
     # girl.char "I left my [girl.story_guardian] a long time ago, without saying anything... Everyone must be worried sick about me."
-    girl.char "我离开了我的女朋友。很久以前，什么也没说……每个人都为我担心。"
+    girl.char "我离开了我的女朋友。很久以前，什么也没说....每个人都为我担心。"
 
 # game/BKinteractions.rpy:5910
 translate chinese slave_story8_81c5ed68:
 
     # girl.char "I wish I could at least see them, and ask for their forgiveness..."
-    girl.char "我希望我至少能看到他们，请求他们的原谅……"
+    girl.char "我希望我至少能看到他们，请求他们的原谅...."
 
 # game/BKinteractions.rpy:5914
 translate chinese slave_story8_51a8626f:
 
     # girl.char "I have been through a lot since that incident with the demon... I have met many men..."
-    girl.char "自从那次和恶魔的事件之后，我经历了很多……我见过很多男人……"
+    girl.char "自从那次和恶魔的事件之后，我经历了很多....我见过很多男人...."
 
 # game/BKinteractions.rpy:5915
 translate chinese slave_story8_a8c93075:
 
     # girl.char "But you know..."
-    girl.char "但是你知道……"
+    girl.char "但是你知道...."
 
 # game/BKinteractions.rpy:5916
 translate chinese slave_story8_66eb0c35:
 
     # girl.char "I never felt... I never found such bliss, than when I was being raped by that demon... I wish this could happen again..."
-    girl.char "我从来没有感觉到……我从来没有找到过这样的幸福，当我被那个恶魔强奸的时候……我希望这种事能再发生一次……"
+    girl.char "我从来没有感觉到....我从来没有找到过这样的幸福，当我被那个恶魔强奸的时候....我希望这种事能再发生一次...."
 
 # game/BKinteractions.rpy:5920
 translate chinese slave_story8_a95d12af:
@@ -8320,13 +8320,13 @@ translate chinese slave_story_help_20593d59:
 translate chinese slave_story_help_eb374de6:
 
     # you "I will... Don't worry."
-    you "我将……别担心。"
+    you "我将....别担心。"
 
 # game/BKinteractions.rpy:5972
 translate chinese slave_story_help_4146f7b9:
 
     # "You don't tell her that the ritual is quite basic and unlikely to stop a powerful curse... She's probably not cursed anyway."
-    "你不会告诉她这个仪式很基本，不太可能阻止强大的诅咒……反正她也没被诅咒。"
+    "你不会告诉她这个仪式很基本，不太可能阻止强大的诅咒....反正她也没被诅咒。"
 
 # game/BKinteractions.rpy:5978
 translate chinese slave_story_help_5e3020af:
@@ -8338,13 +8338,13 @@ translate chinese slave_story_help_5e3020af:
 translate chinese slave_story_help_1e206d68:
 
     # girl.char "Oh, thank you! Thank you, Master [MC.name]! You saved me..."
-    girl.char "噢，谢谢你！谢谢你，主人[MC.name]！你救了我……"
+    girl.char "噢，谢谢你！谢谢你，主人[MC.name]！你救了我...."
 
 # game/BKinteractions.rpy:5982
 translate chinese slave_story_help_376a805b:
 
     # you "It's nothing..."
-    you "没什么……"
+    you "没什么...."
 
 # game/BKinteractions.rpy:5989
 translate chinese slave_story_help_1283a873:
@@ -8356,7 +8356,7 @@ translate chinese slave_story_help_1283a873:
 translate chinese slave_story_help_5b1fb2fe:
 
     # you "Look. It isn't that bad. Being clumsy isn't the end of the world..."
-    you "看。没那么糟。笨手笨脚并不是世界末日……"
+    you "看。没那么糟。笨手笨脚并不是世界末日...."
 
 # game/BKinteractions.rpy:5998
 translate chinese slave_story_help_35e07b0d:
@@ -8368,13 +8368,13 @@ translate chinese slave_story_help_35e07b0d:
 translate chinese slave_story_help_4e5f92c3:
 
     # girl.char "A... A toad?"
-    girl.char "一个……蟾蜍？"
+    girl.char "一个....蟾蜍？"
 
 # game/BKinteractions.rpy:6002
 translate chinese slave_story_help_31f99779:
 
     # you "Oh, yes... You'd be living in a swamp, eating flies..."
-    you "哦，是的……你会住在沼泽里，吃苍蝇……"
+    you "哦，是的....你会住在沼泽里，吃苍蝇...."
 
 # game/BKinteractions.rpy:6004
 translate chinese slave_story_help_a2859c41:
@@ -8392,13 +8392,13 @@ translate chinese slave_story_help_a1fafc4b:
 translate chinese slave_story_help_c81af5d5:
 
     # girl.char "By the goddess... You're right, Master [MC.name]. I should count my blessings."
-    girl.char "的女神……你说得对，主人[MC.name]。我应该感恩。"
+    girl.char "的女神....你说得对，主人[MC.name]。我应该感恩。"
 
 # game/BKinteractions.rpy:6010
 translate chinese slave_story_help_3ee1eed2:
 
     # girl.char "Being clumsy is not so bad... I guess I should avoid heavy machinery for a while..."
-    girl.char "笨手笨脚也不是坏事……我想我应该暂时避开重型机械……"
+    girl.char "笨手笨脚也不是坏事....我想我应该暂时避开重型机械...."
 
 # game/BKinteractions.rpy:6012
 translate chinese slave_story_help_77a3c3d9:
@@ -8422,19 +8422,19 @@ translate chinese slave_story_help_1283a873_1:
 translate chinese slave_story_help_8c997c00:
 
     # you "I know the kind of creature that you speak of... I might be able to 'arrange' a private meeting with one of them."
-    you "我知道你说的那种生物……我或许可以“安排”与他们中的一位私下会面。"
+    you "我知道你说的那种生物....我或许可以“安排”与他们中的一位私下会面。"
 
 # game/BKinteractions.rpy:6032
 translate chinese slave_story_help_0c2ae388:
 
     # girl.char "Aaah! You could?!? Oh, Master, I'll be a good girl, please..."
-    girl.char "啊！你可以？！？哦，主人，我要做个好孩子，求求你……"
+    girl.char "啊！你可以？！？哦，主人，我要做个好孩子，求求你...."
 
 # game/BKinteractions.rpy:6034
 translate chinese slave_story_help_5b9a661c:
 
     # you "All right, all right. Take tonight off, and wait in your room. I'll send you a little surprise..."
-    you "好吧，好吧。今晚请个假，在你的房间里等着。我会送你一个小惊喜……"
+    you "好吧，好吧。今晚请个假，在你的房间里等着。我会送你一个小惊喜...."
 
 # game/BKinteractions.rpy:6036
 translate chinese slave_story_help_d0dcbaad:
@@ -8530,7 +8530,7 @@ translate chinese slave_story_help_a24749a6:
 translate chinese slave_story_help_ad8aad95:
 
     # girl.char "Oh, of course..."
-    girl.char "哦，当然……"
+    girl.char "哦，当然...."
 
 # game/BKinteractions.rpy:6135
 translate chinese slave_story_help_1283a873_2:
@@ -8584,7 +8584,7 @@ translate chinese slave_story_help_5eab26d0:
 translate chinese slave_story_help_dc655b71:
 
     # girl.char "R-really? Even to the customers? Some won't be happy, you know..."
-    girl.char "真-真的吗？甚至对顾客？有些人会不开心，你知道的……"
+    girl.char "真-真的吗？甚至对顾客？有些人会不开心，你知道的...."
 
 # game/BKinteractions.rpy:6168
 translate chinese slave_story_help_037da70b:
@@ -8596,7 +8596,7 @@ translate chinese slave_story_help_037da70b:
 translate chinese slave_story_help_ceeafcb9:
 
     # girl.char "Thank you, Master! You take a weight off my chest..."
-    girl.char "谢谢你，主人！你减轻了我的负担……"
+    girl.char "谢谢你，主人！你减轻了我的负担...."
 
 # game/BKinteractions.rpy:6178
 translate chinese slave_story_help_46f90e73:
@@ -8614,7 +8614,7 @@ translate chinese slave_story_help_1283a873_4:
 translate chinese slave_story_help_c5587d71:
 
     # you "You look like you are feeling lonely... What if I got you a new pet?"
-    you "你看起来很孤独……如果我给你买一只新宠物呢？"
+    you "你看起来很孤独....如果我给你买一只新宠物呢？"
 
 # game/BKinteractions.rpy:6195
 translate chinese slave_story_help_6e57656b:
@@ -8656,7 +8656,7 @@ translate chinese slave_story_help_362d9711:
 translate chinese slave_story_help_e6493b51:
 
     # you "We'd have to share the money, of course..."
-    you "当然，我们得平分这笔钱……"
+    you "当然，我们得平分这笔钱...."
 
 # game/BKinteractions.rpy:6216
 translate chinese slave_story_help_b80036c3:
@@ -8692,7 +8692,7 @@ translate chinese slave_story_help_1283a873_6:
 translate chinese slave_story_help_19ec7475:
 
     # you "Let me talk to some people I know. We could arrange a little fire..."
-    you "让我和一些我认识的人谈谈。我们可以安排点小火……"
+    you "让我和一些我认识的人谈谈。我们可以安排点小火...."
 
 # game/BKinteractions.rpy:6243
 translate chinese slave_story_help_3f34b634:
@@ -8710,7 +8710,7 @@ translate chinese slave_story_help_8a970120:
 translate chinese slave_story_help_527b9d74:
 
     # you "Why not..."
-    you "为什么不……"
+    you "为什么不...."
 
 # game/BKinteractions.rpy:6246
 translate chinese slave_story_help_c595fa4c:
@@ -8746,7 +8746,7 @@ translate chinese slave_story_help_1283a873_7:
 translate chinese slave_story_help_46d90622:
 
     # you "Well, this could be a good time to dust off some of my old fire spells..."
-    you "嗯，这可能是一个很好的时间来掸去我的一些旧火咒……"
+    you "嗯，这可能是一个很好的时间来掸去我的一些旧火咒...."
 
 # game/BKinteractions.rpy:6265
 translate chinese slave_story_help_8a970120_1:
@@ -8800,7 +8800,7 @@ translate chinese slave_story_help_b37382f0:
 translate chinese slave_story_help_2db5b2a4:
 
     # you "Arios will have mercy on this poor soul. Go to the Cathedra, pray for him, and present the priestesses with this modest gift."
-    you "阿里奥斯会怜悯这个可怜的灵魂。去教堂，为他祈祷，给女祭司们这个谦虚的礼物。"
+    you "太阳神会怜悯这个可怜的灵魂。去教堂，为他祈祷，给女祭司们这个谦虚的礼物。"
 
 # game/BKinteractions.rpy:6290
 translate chinese slave_story_help_4c01fcef:
@@ -8812,7 +8812,7 @@ translate chinese slave_story_help_4c01fcef:
 translate chinese slave_story_help_4ad6ee99:
 
     # you "I'm sure those priestesses will want money... Here, take this."
-    you "我相信那些女祭司会想要钱……在这里，把这个。"
+    you "我相信那些女祭司会想要钱....在这里，把这个。"
 
 # game/BKinteractions.rpy:6296
 translate chinese slave_story_help_a38221ab:
@@ -8830,7 +8830,7 @@ translate chinese slave_story_help_1283a873_9:
 translate chinese slave_story_help_480b3fe3:
 
     # you "I could allow you a larger allowance..."
-    you "我可以给你更大的折扣……"
+    you "我可以给你更大的折扣...."
 
 # game/BKinteractions.rpy:6309
 translate chinese slave_story_help_275bc168:
@@ -8842,7 +8842,7 @@ translate chinese slave_story_help_275bc168:
 translate chinese slave_story_help_41b2c798:
 
     # you "...but you'd have to promise to behave, and keep it to yourself. I don't want the other girls to complain that I am having favorites."
-    you "……但你得保证要守规矩，而且要保密。我不想让其他女孩抱怨我有最爱。"
+    you "....但你得保证要守规矩，而且要保密。我不想让其他女孩抱怨我有最爱。"
 
 # game/BKinteractions.rpy:6313
 translate chinese slave_story_help_1ea8568d:
@@ -8872,13 +8872,13 @@ translate chinese slave_story_help_f5eef4da:
 translate chinese slave_story_help_43985a59:
 
     # girl.char "Thank you for your kind words, Master... But I don't nearly have enough money right now..."
-    girl.char "谢谢你的美言，主人……但是我现在的钱还不够……"
+    girl.char "谢谢你的美言，主人....但是我现在的钱还不够...."
 
 # game/BKinteractions.rpy:6335
 translate chinese slave_story_help_67a70741:
 
     # you "Well, that is not a problem... It can be my gift to you."
-    you "嗯，那不是问题……它可以是我给你的礼物。"
+    you "嗯，那不是问题....它可以是我给你的礼物。"
 
 # game/BKinteractions.rpy:6337
 translate chinese slave_story_help_cbf94272:
@@ -8902,7 +8902,7 @@ translate chinese slave_story_help_b36d9240:
 translate chinese slave_story_help_85ffef47:
 
     # girl.char "Master! Look at this! It's so beautiful..."
-    girl.char "主人！看看这个！它是如此美丽……"
+    girl.char "主人！看看这个！它是如此美丽...."
 
 # game/BKinteractions.rpy:6355
 translate chinese slave_story_help_2a95cd6a:
@@ -8932,13 +8932,13 @@ translate chinese slave_story_help_987df59e:
 translate chinese slave_story_help_6cd8799b:
 
     # you "Well, I have to look after the needs of my slaves..."
-    you "我得照顾我奴隶的需要……"
+    you "我得照顾我奴隶的需要...."
 
 # game/BKinteractions.rpy:6371
 translate chinese slave_story_help_7782de0d:
 
     # girl.char "Oh, thank you, Master! Thank you! I am so grateful..."
-    girl.char "噢，谢谢你，主人！谢谢你！我很感激……"
+    girl.char "噢，谢谢你，主人！谢谢你！我很感激...."
 
 # game/BKinteractions.rpy:6380
 translate chinese slave_story_help_1283a873_12:
@@ -8950,13 +8950,13 @@ translate chinese slave_story_help_1283a873_12:
 translate chinese slave_story_help_f28d2e65:
 
     # you "If you really insist, I suppose I should let you have your fun... I could even turn out a profit..."
-    you "如果你真的坚持，我想我应该让你玩得开心……我甚至可以盈利……"
+    you "如果你真的坚持，我想我应该让你玩得开心....我甚至可以盈利...."
 
 # game/BKinteractions.rpy:6390
 translate chinese slave_story_help_68d14a35:
 
     # girl.char "You would? Oh, Master... I feel so horny, just thinking about it..."
-    girl.char "你会吗？哦，主人……一想到它，我就觉得好色……"
+    girl.char "你会吗？哦，主人....一想到它，我就觉得好色...."
 
 # game/BKinteractions.rpy:6396
 translate chinese slave_story_help_88d4be98_1:
@@ -8992,7 +8992,7 @@ translate chinese slave_story_help_e2439411:
 translate chinese slave_story_help_59c4268a:
 
     # you "You know what, I always felt like stealing horses! There was that game, GTH..."
-    you "你知道吗，我一直想偷马！有个游戏叫《GTH》……"
+    you "你知道吗，我一直想偷马！有个游戏叫《GTH》...."
 
 # game/BKinteractions.rpy:6433
 translate chinese slave_story_help_f168e26a:
@@ -9004,25 +9004,25 @@ translate chinese slave_story_help_f168e26a:
 translate chinese slave_story_help_e3e40e45:
 
     # you "I will have to pull a few strings with the [text1], but... It shouldn't be a problem."
-    you "我将不得不拉一些字符串与[text1]，但……这应该不成问题。"
+    you "我将不得不拉一些字符串与[text1]，但....这应该不成问题。"
 
 # game/BKinteractions.rpy:6447
 translate chinese slave_story_help_b76dfec2:
 
     # "You paid the [text1] 750 gold to 'confiscate' the horse and turn it into a tasty meal..."
-    "你为[text1]花了750枚金币“没收”了这匹马，把它变成了一顿美味的大餐……"
+    "你为[text1]花了750枚金币“没收”了这匹马，把它变成了一顿美味的大餐...."
 
 # game/BKinteractions.rpy:6451
 translate chinese slave_story_help_51ad11b9:
 
     # you "Voila! One horsesteak with ginger and turnips for Lady [girl.name]..."
-    you "瞧！女士[girl.name]要一份姜萝卜马排……"
+    you "瞧！女士[girl.name]要一份姜萝卜马排...."
 
 # game/BKinteractions.rpy:6453
 translate chinese slave_story_help_7450aaf2:
 
     # girl.char "You did it! Oh, I'm so happy..."
-    girl.char "你做到了！哦，我太高兴了……"
+    girl.char "你做到了！哦，我太高兴了...."
 
 # game/BKinteractions.rpy:6459
 translate chinese slave_story_help_1283a873_13:
@@ -9034,7 +9034,7 @@ translate chinese slave_story_help_1283a873_13:
 translate chinese slave_story_help_9ae5fb11:
 
     # girl.char "Oh, it's this part..."
-    girl.char "哦，是这部分……"
+    girl.char "哦，是这部分...."
 
 # game/BKinteractions.rpy:6463
 translate chinese slave_story_help_d0fae6c4:
@@ -9052,7 +9052,7 @@ translate chinese slave_story_help_5d4f74d8:
 translate chinese slave_story_help_2edf2123:
 
     # girl.char "Oh, nothing! Haha..."
-    girl.char "哦，没什么！哈哈……"
+    girl.char "哦，没什么！哈哈...."
 
 # game/BKinteractions.rpy:6473
 translate chinese slave_story_help_893b71a7:
@@ -9064,19 +9064,19 @@ translate chinese slave_story_help_893b71a7:
 translate chinese slave_story_help_6d7948f1:
 
     # girl.char "You would? Oh, Master [MC.name]! I... I don't know what to say!"
-    girl.char "你会吗？哦，主人[MC.name]！我……我不知道该说什么！"
+    girl.char "你会吗？哦，主人[MC.name]！我....我不知道该说什么！"
 
 # game/BKinteractions.rpy:6477
 translate chinese slave_story_help_4039b54b:
 
     # you "Hush, take this and go to the bank..."
-    you "嘘，拿着这个去银行……"
+    you "嘘，拿着这个去银行...."
 
 # game/BKinteractions.rpy:6480
 translate chinese slave_story_help_c002f451:
 
     # you "...before I change my mind."
-    you "……在我改变主意之前。"
+    you "....在我改变主意之前。"
 
 # game/BKinteractions.rpy:6489
 translate chinese slave_story_help_71a7172f:
@@ -9100,13 +9100,13 @@ translate chinese slave_story_help_28b9b70b:
 translate chinese slave_story_help_37eec77e:
 
     # girl.char "You... You will? Yes, that will do! Thank you, from the bottom of my heart! Oh, I miss my family so much..."
-    girl.char "你……你会吗？是的，可以！谢谢你，从心底里感谢你！哦，我非常想念我的家人……"
+    girl.char "你....你会吗？是的，可以！谢谢你，从心底里感谢你！哦，我非常想念我的家人...."
 
 # game/BKinteractions.rpy:6502
 translate chinese slave_story_help_afdf9d7c:
 
     # girl.char "Understood... Thank you! I don't care what people say, you're a good master, you know?"
-    girl.char "理解……谢谢你！我不在乎别人怎么说，你是个好主人，知道吗？"
+    girl.char "理解....谢谢你！我不在乎别人怎么说，你是个好主人，知道吗？"
 
 # game/BKinteractions.rpy:6508
 translate chinese slave_story_help_1283a873_15:
@@ -9118,13 +9118,13 @@ translate chinese slave_story_help_1283a873_15:
 translate chinese slave_story_help_4de6b5e8:
 
     # you "About that [girl.story_profession]..."
-    you "关于[girl.story_profession]……"
+    you "关于[girl.story_profession]...."
 
 # game/BKinteractions.rpy:6519
 translate chinese slave_story_help_47c11875:
 
     # girl.char "You will? I would love for him to suffer... Curse that son of a bitch!"
-    girl.char "你会吗？我希望他受苦……诅咒那个狗娘养的！"
+    girl.char "你会吗？我希望他受苦....诅咒那个狗娘养的！"
 
 # game/BKinteractions.rpy:6521
 translate chinese slave_story_help_f36c7d37:
@@ -9160,7 +9160,7 @@ translate chinese slave_story_help_c080eaa4:
 translate chinese slave_story_help_be9afa97:
 
     # girl.char "You really will? That's... Unexpected. I owe you thanks."
-    girl.char "你真的会吗？这是……意想不到的。我应该谢谢你。"
+    girl.char "你真的会吗？这是....意想不到的。我应该谢谢你。"
 
 # game/BKinteractions.rpy:6542
 translate chinese slave_story_help_0d1c8b3d:
@@ -9172,7 +9172,7 @@ translate chinese slave_story_help_0d1c8b3d:
 translate chinese slave_story_help_e704fcc2:
 
     # girl.char "You're a real gentleman. It seems my luck is turning a little..."
-    girl.char "你真是个绅士。看来我的运气有点……"
+    girl.char "你真是个绅士。看来我的运气有点...."
 
 # game/BKinteractions.rpy:6550
 translate chinese slave_story_help_1283a873_17:
@@ -9244,7 +9244,7 @@ translate chinese slave_story_help_4bfcb164:
 translate chinese slave_story_help_a8cea093:
 
     # you "You sure are a perverted bitch..."
-    you "你真是个变态的婊子……"
+    you "你真是个变态的婊子...."
 
 # game/BKinteractions.rpy:6602
 translate chinese slave_story_help_c1da3d17:
@@ -9256,7 +9256,7 @@ translate chinese slave_story_help_c1da3d17:
 translate chinese slave_story_help_1fe5495d:
 
     # girl.char "Yes, Master... *blush*"
-    girl.char "是的，主人……*脸红*"
+    girl.char "是的，主人....*脸红*"
 
 # game/BKinteractions.rpy:6606
 translate chinese slave_story_help_03134378:
@@ -9268,13 +9268,13 @@ translate chinese slave_story_help_03134378:
 translate chinese slave_story_help_e2ca386a:
 
     # girl.char "R-r... Rape me? *blush*"
-    girl.char "强-强……强奸我吗？*脸红*"
+    girl.char "强-强....强奸我吗？*脸红*"
 
 # game/BKinteractions.rpy:6610
 translate chinese slave_story_help_705d3f47:
 
     # you "That's right..."
-    you "这是正确的……"
+    you "这是正确的...."
 
 # game/BKinteractions.rpy:6612
 translate chinese slave_story_help_ce6a9fc7:
@@ -9286,7 +9286,7 @@ translate chinese slave_story_help_ce6a9fc7:
 translate chinese slave_story_help_2b5cd699:
 
     # girl.char "Master, oh, Master... You're so forceful..."
-    girl.char "主人，哦，主……你这么有力……"
+    girl.char "主人，哦，主....你这么有力...."
 
 # game/BKinteractions.rpy:6646
 translate chinese slave_story_help_6e73c6fb:
@@ -9310,7 +9310,7 @@ translate chinese slave_story_help_bd54eb9c:
 translate chinese slave_story_help_bf43061a:
 
     # girl.char "Yesh, Master... I'm a dirty, dirty bitch... Mmmmh... Aaaah..."
-    girl.char "住宅小区，主人……我是个肮脏的婊子……嗯……啊……"
+    girl.char "住宅小区，主人....我是个肮脏的婊子....嗯....啊...."
 
 # game/BKinteractions.rpy:6666
 translate chinese slave_story_help_c9ba68a6:
@@ -9328,19 +9328,19 @@ translate chinese slave_story_help_d8279df3:
 translate chinese slave_story_help_6f650fbd:
 
     # girl.char "Oh, Master... I can't take it anymore..."
-    girl.char "哦，主……我再也受不了了……"
+    girl.char "哦，主....我再也受不了了...."
 
 # game/BKinteractions.rpy:6674
 translate chinese slave_story_help_f4d578ee:
 
     # you "Beg for it, bitch. Beg..."
-    you "求你了，婊子。求……"
+    you "求你了，婊子。求...."
 
 # game/BKinteractions.rpy:6676
 translate chinese slave_story_help_d5ba17b7:
 
     # girl.char "I... Master... Please let me come, I want it so bad..."
-    girl.char "我……主人……请让我来吧，我太想要了……"
+    girl.char "我....主人....请让我来吧，我太想要了...."
 
 # game/BKinteractions.rpy:6679
 translate chinese slave_story_help_60aaa955:
@@ -9358,7 +9358,7 @@ translate chinese slave_story_help_9e8fe105:
 translate chinese slave_story_help_faee0bc3:
 
     # girl.char "Yes, Master [MC.name]... I'm a filthy sex slave... I'll cum on your orders, please give me a load of warm cum!"
-    girl.char "是的，主人[MC.name]……我是个肮脏的性奴隶……我会按你的命令来，请给我一车温暖的精液！"
+    girl.char "是的，主人[MC.name]....我是个肮脏的性奴隶....我会按你的命令来，请给我一车温暖的精液！"
 
 # game/BKinteractions.rpy:6685
 translate chinese slave_story_help_e72da05e:
@@ -9406,7 +9406,7 @@ translate chinese slave_story_help_dc7aec1e:
 translate chinese slave_story_help_c5083d48:
 
     # girl.char "I am yours, Master... I feel so wonderful..."
-    girl.char "我是你的，主人……我感觉好极了……"
+    girl.char "我是你的，主人....我感觉好极了...."
 
 # game/BKinteractions.rpy:6718
 translate chinese slave_story_help_cb32b29c:
@@ -9430,7 +9430,7 @@ translate chinese slave_story_help_255789cd:
 translate chinese slave_story_help_f7afcfa2:
 
     # girl.char "I... I understand. I was thinking... Never mind."
-    girl.char "我……我明白了。我在想……不要紧。"
+    girl.char "我....我明白了。我在想....不要紧。"
 
 # game/BKinteractions.rpy:6730
 translate chinese slave_story_help_c129bc56:
@@ -9542,7 +9542,7 @@ translate chinese strings:
 
     # game/BKinteractions.rpy:770
     old "Keep working hard, or else..."
-    new "继续努力，否则……"
+    new "继续努力，否则...."
 
     # game/BKinteractions.rpy:770
     old "Get used to it"

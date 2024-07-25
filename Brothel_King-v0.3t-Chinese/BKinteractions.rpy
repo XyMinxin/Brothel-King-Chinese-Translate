@@ -220,7 +220,7 @@ label slave_naked_menu(girl):
 
                 girl.char "W-What??? But, but, I have to serve customers tonight!"
 
-                $ MC.rand_say(("gd: 我知道，这样做会让你更舒服地在陌生人面前裸露身体。这是你需要学习的事情。", "ne: 恰恰相反。你将裸体为他们服务，并让他们稍微触摸你。这对生意有好处。", "ev: 哦，是的，确保给他们一个眼神……你是一个性奴隶，不要忘记这一点，不久之后他们将会在你身上插入每个洞。"))
+                $ MC.rand_say(("gd: 我知道，这样做会让你更舒服地在陌生人面前裸露身体。这是你需要学习的事情。", "ne: 恰恰相反。你将裸体为他们服务，并让他们稍微触摸你。这对生意有好处。", "ev: 哦，是的，确保给他们一个眼神....你是一个性奴隶，不要忘记这一点，不久之后他们将会在你身上插入每个洞。"))
 
                 if naked_score >= 100:
                     call dialogue(girl, "slave naked request accept") from _call_dialogue_116
@@ -230,7 +230,7 @@ label slave_naked_menu(girl):
                 else:
                     call dialogue(girl, "slave naked request accept") from _call_dialogue_117
 
-                    $ MC.rand_say(("做吧。", "ev: 做吧。否则……"))
+                    $ MC.rand_say(("做吧。", "ev: 做吧。否则...."))
 
                     girl.char "Aw..."
 
@@ -1291,8 +1291,8 @@ label slave_train_sex_acts(girl, mode):
 
                     "Give up":
                         $ inter.MC_reaction = "give up"
-                        $ MC.rand_say((__("好吧……按你的方式来吧."), __("我不敢相信现在的奴隶……好吧!"), __("ne: 哼。这一次我会放过你的。你欠我一个人情."),
-                                        __("gd: 好吧，我不会强迫你做你不喜欢的事情."), __("ev: 他妈的，这一次我会放过你……但不要考验我的耐心.")))
+                        $ MC.rand_say((__("好吧....按你的方式来吧."), __("我不敢相信现在的奴隶....好吧!"), __("ne: 哼。这一次我会放过你的。你欠我一个人情."),
+                                        __("gd: 好吧，我不会强迫你做你不喜欢的事情."), __("ev: 他妈的，这一次我会放过你....但不要考验我的耐心.")))
 
 
             else:
@@ -1315,8 +1315,8 @@ label slave_train_sex_acts(girl, mode):
 
                     "Give up":
                         $ inter.MC_reaction = "give up"
-                        $ MC.rand_say(("好吧……按你的方式来吧。", "我不敢相信现在的奴隶……好吧！", "ne: 哼。这一次我会放过你的。你欠我一个人情。",
-                                        "gd: 好吧，好吧。我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我会放过你……但不要考验我的耐心。"))
+                        $ MC.rand_say(("好吧....按你的方式来吧。", "我不敢相信现在的奴隶....好吧！", "ne: 哼。这一次我会放过你的。你欠我一个人情。",
+                                        "gd: 好吧，好吧。我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我会放过你....但不要考验我的耐心。"))
 
     return
 
@@ -1418,8 +1418,8 @@ label slave_remove_fixation(girl):
 
         "Give up" if inter.response != "accepted":
             $ inter.MC_reaction = "give up"
-            $ MC.rand_say(("好吧……按你说的做。", "我简直不敢相信现在的奴隶……好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
-                           "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你……但不要考验我的耐心。"))
+            $ MC.rand_say(("好吧....按你说的做。", "我简直不敢相信现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                           "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你....但不要考验我的耐心。"))
             return
 
 
@@ -1559,8 +1559,8 @@ label slave_train_obedience(girl):
     "You start with giving [girl.name] simple orders around the house."
 
     $ MC.rand_say(("打扫阁楼，好吗？", "帮希尔做家务。", "换所有床单。", "拿着扫帚清理" + rand_choice(brothel.rooms.keys()) + "。",
-                  "去井里取些水。", "ar: 清理阿里奥斯祭坛。", "确保墙上没有灰尘。", "为我们做点什么。", "ev: 把我的靴子擦得干干净净的。我不想看到一点灰尘，你听到了吗？",
-                  "wr: 给我的武器上油。当然，我是指我的剑。", "tr: 喂德拉贡一只青蛙。别害羞，他很少咬人的手。", "wz: 擦一下我的法杖。我的魔法法杖。我是说……你知道的。"))
+                  "去井里取些水。", "ar: 清理太阳神祭坛。", "确保墙上没有灰尘。", "为我们做点什么。", "ev: 把我的靴子擦得干干净净的。我不想看到一点灰尘，你听到了吗？",
+                  "wr: 给我的武器上油。当然，我是指我的剑。", "tr: 喂德拉贡一只青蛙。别害羞，他很少咬人的手。", "wz: 擦一下我的法杖。我的魔法法杖。我是说....你知道的。"))
 
     $ pic = girl.get_pic("obedience", "maid", "waitress", "profile", naked_filter=True, soft=True)
 
@@ -2537,7 +2537,7 @@ label slave_reward_gift(girl):
     return
 
 label slave_reward_pet(girl):
-    $ MC.rand_say((__("过来！谁是我最可爱的小奴隶...是 ") + girl.name + __("！没错！"), __("过来，给主人 ") + MC.name + __(" 一个拥抱。把舌头伸出来……"), __("来这里，宝贝，坐到爸爸腿上。")))
+    $ MC.rand_say((__("过来！谁是我最可爱的小奴隶...是 ") + girl.name + __("！没错！"), __("过来，给主人 ") + MC.name + __(" 一个拥抱。把舌头伸出来...."), __("来这里，宝贝，坐到爸爸腿上。")))
     $ success_factor = 1
     call slave_reward(girl, "pet") from _call_slave_reward_3
     return
@@ -2606,7 +2606,7 @@ label slave_reward_sex(girl):
 
             "这次放过她":
                 $ MC.rand_say((__("好吧...随你的便。"), __("真不敢相信现在的奴隶...好吧！"), __("ne: 哼，这次就先放过你，但是下次..."),
-                                    __("gd: 好吧，我不会强迫你做你不喜欢的事情。"), __("ev: 操，这一次我就放过你了……但是不要考验我的耐心。")))
+                                    __("gd: 好吧，我不会强迫你做你不喜欢的事情。"), __("ev: 操，这一次我就放过你了....但是不要考验我的耐心。")))
 
                 $ inter.MC_reaction = "give up"
 
@@ -2631,8 +2631,8 @@ label slave_reward_sex(girl):
                 return
 
             "放过她":
-                $ MC.rand_say(("好吧……按你说的做。", "我简直不敢相信现在的奴隶……好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
-                                "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你……但不要考验我的耐心。"))
+                $ MC.rand_say(("好吧....按你说的做。", "我简直不敢相信现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                                "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你....但不要考验我的耐心。"))
 
                 $ inter.MC_reaction = "give up"
 
@@ -2796,12 +2796,12 @@ label slave_punish_scold(girl):
             $ MC.rand_say(("gd: 请你锻炼一下？你必须变得有吸引力。", "ne: 如果你不努力变得性感，人们就不会喜欢你。这意味着对我来说钱会更少。",
                            "ev: 看看你有多胖。你很恶心。"))
         elif my_stat == "charm":
-            $ MC.rand_say(("gd: 你能不能更有魅力一点？你有时候可以很粗鲁。", "ne: 没有两种方法，你只是不会与人相处。", "ev: 你是一个粗鲁和傲慢的婊子。降低一点，否则……"))
+            $ MC.rand_say(("gd: 你能不能更有魅力一点？你有时候可以很粗鲁。", "ne: 没有两种方法，你只是不会与人相处。", "ev: 你是一个粗鲁和傲慢的婊子。降低一点，否则...."))
         elif my_stat == "refinement":
-            $ MC.rand_say(("gd: 请努力变得更有品位。这是一个高档的妓院，不是鱼市场。", "ne: 你真的必须向每个人展示你是多么无知和不成熟吗？", "ev: 我发誓，你比门把手还笨。你最好学习礼仪，否则我会让你学习。"))
+            $ MC.rand_say(("gd: 请努力变得更有品位。这是一个高档的青楼，不是鱼市场。", "ne: 你真的必须向每个人展示你是多么无知和不成熟吗？", "ev: 我发誓，你比门把手还笨。你最好学习礼仪，否则我会让你学习。"))
 
     else:
-        $ MC.rand_say(("ar: 为了阿里奥斯的爱，你能不能努力表现一下？", "sh: 我发誓，在莎莉娅的阴影下没有比你更懒惰的奴隶了！",
+        $ MC.rand_say(("ar: 为了太阳神的爱，你能不能努力表现一下？", "sh: 我发誓，在莎莉娅的阴影下没有比你更懒惰的奴隶了！",
                        "ng: 如果你有一个造物主，我会让你去见他！", "gd: 你没有尽你的最大努力，这伤害了我们所有人。", "ne: 你懒惰又傲慢。你必须做得更好。", "ev: 你不尊重我，你最好准备好面对后果。"
                        "为什么不试着更努力一点呢？", "你必须做得更好，为了你自己的利益。"))
 
@@ -4037,7 +4037,7 @@ label slave_story3(girl):
 
         girl.char "We decided to go together on a pilgrimage to visit a famous shrine of Arios. It was said to bring good luck..."
 
-        if MC.god == "阿里奥斯":
+        if MC.god == "太阳神":
             you "It's the truth."
 
         elif MC.god == "莎莉娅":
@@ -5190,7 +5190,7 @@ label slave_story7(girl):
 
         "Looking back at the wall above [girl.name]'s bed, you notice a blank space and the holes left by nails, where the symbol used to hang."
 
-        if MC.god == "阿里奥斯":
+        if MC.god == "太阳神":
             you "What kind of blasphemy is that??? Did you throw away your Arios sign?"
             play sound s_surprise
             girl.char "Oh, I'm sorry, Master, I meant no disrespect!"
@@ -5451,7 +5451,7 @@ label slave_story7(girl):
 
         you "Wow."
 
-        if MC.god == "阿里奥斯":
+        if MC.god == "太阳神":
             you "I am so appalled that you suffered so much at the hands of Arios worshippers... Please know that we are not all like that."
 
             girl.char "I know, Master. Some Arios people showed me kindness, including you, in your way..."
@@ -6345,7 +6345,7 @@ label slave_story_help(girl, act):
         "Let her go pray for the unfortunate soul (1 day, 500 gold donation)" if act == "praying":
             you "I understand how you feel."
 
-            if MC.god == "阿里奥斯":
+            if MC.god == "太阳神":
                 you "Arios will have mercy on this poor soul. Go to the Cathedra, pray for him, and present the priestesses with this modest gift."
             else:
                 you "I don't worship Arios, but if it can give you closure, you have my blessing. Why don't you go tomorrow?"
@@ -6575,7 +6575,7 @@ label slave_story_help(girl, act):
 
             you "About that [girl.story_profession]..."
 
-            $ MC.rand_say(("gd: 我会派一些人去给他上一课。一顿痛打应该就够了。", "ne: 我会派一些人去追他，让他骨折或留下永久的伤疤……那应该能教训他。", "ev: 我会派一些人去折磨和杀他。他们会让它变得缓慢，太……我会对他的屁股进行中世纪式的刑罚……"))
+            $ MC.rand_say(("gd: 我会派一些人去给他上一课。一顿痛打应该就够了。", "ne: 我会派一些人去追他，让他骨折或留下永久的伤疤....那应该能教训他。", "ev: 我会派一些人去折磨和杀他。他们会让它变得缓慢，太....我会对他的屁股进行中世纪式的刑罚...."))
 
             girl.char "You will? I would love for him to suffer... Curse that son of a bitch!"
 

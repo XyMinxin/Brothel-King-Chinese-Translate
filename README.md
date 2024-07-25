@@ -2,27 +2,21 @@
 
 # Brothel King 中文翻译
 
-你们好呀，我是冥鑫
+## 青楼之王v0.3t / Brothel King v0.3t
 
-这里只是单纯游戏翻译，不包含游戏本体
+<img src="https://i.ibb.co/rFn08BK/20240707.png" alt="image" border="0" width="70%">
 
---------------------------------------------
+目前游戏版本：0.3t（2023/09/23）
 
-## 青楼之王v0.2 / Brothel King v0.2
+目前汉化版本：20240712
 
-<img src="https://i.ibb.co/BrLjBFt/Brothel-King-v0-2.png" alt="image" border="0" width="70%">
+①下载本体：[下载游戏本体](https://www.mediafire.com/file/da0luyi63xgczfp/Brothel_King-0.3t.zip/file)
 
-目前翻译的游戏版本是：0.2（2022/7/11）
+②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/1va1v7cq1psp53x/game_patch_0.3.zip/file)
 
-虽然游戏版本可能会比原版慢很多，但只要原版最新补丁不修改图片格式等等的，用汉化补丁覆盖上去一般都没问题
-
-①下载本体：[下载游戏本体](https://www.mediafire.com/file/h81k39vblrz5co3/Brothel_King-0.2.zip/file)
-
-~~②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/nnxnr2pkopkzv2y/game+patch+0.2.zip/file)~~
+或者直接下载打包好的[本体+原版补丁](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
 
 ③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
-
-合并了补丁，只要本体，不用中间多打个补丁了
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
@@ -34,6 +28,8 @@
 --------------------------------------------
 
 ## 标签工具v2.8.14 / Tagging Tool v2.8.14
+
+### **标签工具未更新，不保证是否在0.3t可用**
 
 <img src="https://i.ibb.co/HzJHR8z/Tagging-Tool-v2-8-14.png" alt="image" border="0" width="70%">
 
@@ -57,7 +53,7 @@ A:~~首先设置界面可以选择中文~~ 现在默认中文，如果还是英�
 
 Q:游戏中出现□□□了！
 
-A:那么可能game文件夹下的字体文件可能丢失，你需要重新下载汉化补丁覆盖进去，或者自行往game文件夹放一个字体，并且修改出问题的文本字体
+A:那么可能game文件夹下的字体文件丢失，你需要重新下载汉化补丁覆盖进去，如果还不行，请提交[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)进行反馈
 
 Q:游戏报错啦！死档啦！
 
@@ -68,14 +64,6 @@ Q:有剧情漏翻啦！
 A:建议前往[issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)进行反馈，记得附上截图，如果有时间会尽快补上的
 
 --------------------------------------------
-
-## 最后一些话
-
-画饼失败！本来想着翻译完进游戏玩玩看的，但现在没啥动力打开游戏了，看之后0.3更新了啥吧
-
-想了想好像搞这汉化拖了挺久的，21年12月搞到现在（md我是真的懒）
-
-之前没搞过汉化，汉化真的好麻烦，中间还丢过好几次档，人麻了
 
 问题反馈或意见请用[github issuse](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)
 

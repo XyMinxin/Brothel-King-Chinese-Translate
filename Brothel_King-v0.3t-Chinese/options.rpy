@@ -18,7 +18,7 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Brothel King"
+    config.window_title = u"青楼之王"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
@@ -26,12 +26,14 @@ init -1 python hide:
 
     patch_version = "v230923"
 
+
+
     try:
         config.version = "%s %s" % (BK_DIST, patch_version)
     except: # Covers exceptions for older versions that didn't have the dist number
         config.version = "0.2 %s" % patch_version
 
-    config.language = None # As recommended by DougTheC
+    config.language = "schinese" # As recommended by DougTheC
 
     #########################################
     # Themes
@@ -147,8 +149,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    style.default.font = "Lato-Regular.TTF"
-
+    style.default.font = "DejaVuSans.ttf"
     ## The default size of text.
 
     style.default.size = res_font(22)

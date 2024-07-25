@@ -880,7 +880,7 @@ translate schinese jobgirl_beach_4_338b9a50:
 translate schinese jobgirl_beach_4_0ac6a3a9:
 
     # anika "You can bet I am... and the best is yet to come! While sucking the glans, I would start feeling your cock inch by inch, every time swallowing a little more, until your whole length is inside me."
-    anika "相信我……更精彩的还在后面!在吮吸龟头的同时,我会一寸寸地感受你的肉棒,直到完全吞下。"
+    anika "相信我....更精彩的还在后面!在吮吸龟头的同时,我会一寸寸地感受你的肉棒,直到完全吞下。"
 
 # game/kite_jobgirl 2_beach.rpy:491
 translate schinese jobgirl_beach_4_ab5ae628:

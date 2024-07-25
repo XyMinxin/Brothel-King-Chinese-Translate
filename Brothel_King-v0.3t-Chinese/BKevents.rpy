@@ -516,7 +516,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
         $ text1 = Text((text1), size=50, yalign=0.4, xpos=0.5, drop_shadow=(2,2))
 
-        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "巴贝斯通汉字(改名版).ttf")
+        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "DejaVuSans.ttf")
 
         show expression text1
         with easeinleft
@@ -710,7 +710,7 @@ label got_license(level):
 
     $ lic_name, lic_pic = license_dict[level]
 
-    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(lic_name) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
+    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(location_name_dict[lic_name]) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
 
     return
 
@@ -3683,10 +3683,12 @@ label farm_max_skill(girl, skill):
     else:
         $ room = "black"
 
+    $ cntext = girl_related_dict[skill]
     gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
+        $ cntext = girl_related_dict[skill]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -3707,10 +3709,12 @@ label farm_max_pref(girl, act):
     else:
         $ room = "black"
 
+    $ cntext = girl_related_dict[act]
     gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
+        $ cntext = girl_related_dict[act]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -4073,9 +4077,9 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("基础着装", "你从希露那里得到了供宣传人员换装用的 {b}基础着装{/b} 。 这是用 '%s' 剩下的布料缝制的凡品，但总比没有好。" % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
-        "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
+        "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
 
         $ story_remove_event("advertising_intro", "daily")
 
@@ -4900,7 +4904,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 
         play sound s_mystery
 
-        "Demonic Voice" "{font=SFBurlingtonScript.TTF}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
+        "Demonic Voice" "{font=SFBurlingtonScript.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
 
         play sound s_roar
 
@@ -5316,7 +5320,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 #     - Spell battle: Spi/Cha
 #     - Join fun
 
-
+#汉化标签，待汉化的合同内容，对应描述在BKdialouge line378#
 #     - Context: Boat cruise (JP), Lavish Party (gold), Religious ceremony (mood+energy), School festival (skill), Private Date (items),
 #                Official Meeting (rep), Magic conference (double AP), Orgy (pref increase)
 
