@@ -4,7 +4,7 @@
 translate chinese random_morning_events_e3b92e30:
 
     # "As you come out for some fresh air in the early morning, rubbing the sleep from your eyes, you are surprised to meet [girl.fullname], already up and running."
-    "当你清晨出来呼吸新鲜空气，揉着睡眼时，你会惊讶地发现遇见了[girl.fullname]，已经起来跑步了。"
+    "当你清晨起床走出房间，呼吸新鲜空气时，你惊讶地发现[girl.fullname]正在院子里锻炼，身上挥洒着汗水。"
 
 # game/BKday_events.rpy:31
 translate chinese random_morning_events_03465c18:
@@ -22,31 +22,31 @@ translate chinese random_morning_events_d82e9dee:
 translate chinese random_morning_events_10a5fb62:
 
     # girl.char "Oh, hi, Master! How is it going?"
-    girl.char "哦，你好，主人！最近怎么样？"
+    girl.char "哦，早上好，主人！昨晚睡得怎么样？"
 
 # game/BKday_events.rpy:38
 translate chinese random_morning_events_e32eed3f:
 
     # girl.char "Oh, it's you... I didn't think there would be anyone here."
-    girl.char "哦，是你....我没想到会有人在这里。"
+    girl.char "哦，是你....我没想到会有人起这么早。"
 
 # game/BKday_events.rpy:41
 translate chinese random_morning_events_ab135fad:
 
     # "You are amazed at how fast and tough she has become. She has been at it for over an hour, but she barely looks out of breath."
-    "你会惊讶地发现她变得如此迅速和坚强。她已经干了一个多小时了，但她看上去几乎没怎么费劲。"
+    "你惊讶地发现和刚来时相比，她已经变得如此迅速和坚强。她已经锻炼了一个多小时了，但她看上去还留有余力。"
 
 # game/BKday_events.rpy:43
 translate chinese random_morning_events_95585cf1:
 
     # "She is in very good shape, and you can't help but be impressed by her stamina."
-    "她的身材很好，你不能不为她的毅力所折服。"
+    "她的身材很好，你为她的毅力所折服。"
 
 # game/BKday_events.rpy:45
 translate chinese random_morning_events_83511984:
 
     # "She is doing some valiant efforts, and little by little, it seems to be paying off."
-    "她正在做一些勇敢的努力，而且一点一点地，似乎得到了回报。"
+    "她正在试着改变，而且一点一点地，似乎得到了回报。"
 
 # game/BKday_events.rpy:48
 translate chinese random_morning_events_11fdb519:
@@ -58,49 +58,49 @@ translate chinese random_morning_events_11fdb519:
 translate chinese random_morning_events_dce1f6bc:
 
     # you "You have become truly strong now, [girl.name]... I bet you could take me on!"
-    you "你现在变得真正强大了，[girl.name]....我打赌你能和我较量！"
+    you "你的肉体和心灵都变得更加强大，[girl.name]....我敢打赌你在床上能和我大战三百回合了！"
 
 # game/BKday_events.rpy:54
 translate chinese random_morning_events_6b4a3521:
 
     # girl.char "Ha! You bet! I could take anyone on!"
-    girl.char "哈！你说的没错我可以和任何人较量！"
+    girl.char "哈！谢谢您的夸奖！我一定不会辜负您的期待！"
 
 # game/BKday_events.rpy:56
 translate chinese random_morning_events_2b2aa0ad:
 
     # girl.char "Oh, no, Master... I wouldn't dare..."
-    girl.char "哦，不，主人....我不敢...."
+    girl.char "哦，不，主人....我怎么能和您相提并论呢...."
 
 # game/BKday_events.rpy:61
 translate chinese random_morning_events_d92d470c:
 
     # you "You're doing good, [girl.name]. Keep it up, and you'll be an accomplished athlete in no time."
-    you "你做得很好，[girl.name]。坚持下去，你很快就会成为一名有成就的运动员。"
+    you "你做得很好，[girl.name]。坚持下去，你很快就会成为青楼里的一道风景线。"
 
 # game/BKday_events.rpy:64
 translate chinese random_morning_events_0575936b:
 
     # girl.char "Hehe, I'm glad you noticed!"
-    girl.char "呵呵，我很高兴你注意到了！"
+    girl.char "呵呵，很高兴您对我的肯定！"
 
 # game/BKday_events.rpy:66
 translate chinese random_morning_events_90827a0a:
 
     # girl.char "You... You really think so?"
-    girl.char "你....你真的这么想？"
+    girl.char "您....您真的这么想？"
 
 # game/BKday_events.rpy:74
 translate chinese random_morning_events_e5fbe6fa:
 
     # girl.char "You bastard..."
-    girl.char "你这个混蛋...."
+    girl.char "真是狗嘴里吐不出象牙...."
 
 # game/BKday_events.rpy:76
 translate chinese random_morning_events_af4e21a1:
 
     # girl.char "Aw... You're mean..."
-    girl.char "啊....你的意思是...."
+    girl.char "啊...您的意思是...."
 
 # game/BKday_events.rpy:78
 translate chinese random_morning_events_5d4f74d8:
@@ -124,13 +124,13 @@ translate chinese random_morning_events_219d9903:
 translate chinese random_morning_events_81c352f8:
 
     # "As you cross the [room] in the morning, you run into [girl.fullname]."
-    "当你早上穿过[room]时，你遇到了[girl.fullname]。"
+    "当你早上经过[room]时，你遇到了[girl.fullname]。"
 
 # game/BKday_events.rpy:100
 translate chinese random_morning_events_81323ad2:
 
     # girl.char "Oh! Master [MC.name]."
-    girl.char "哦！主人[MC.name]。"
+    girl.char "哦！早上好，[MC.name]主人。"
 
 # game/BKday_events.rpy:106
 translate chinese random_morning_events_a1c6cae9:
@@ -142,13 +142,13 @@ translate chinese random_morning_events_a1c6cae9:
 translate chinese random_morning_events_b4f1213f:
 
     # girl.char "Welcome, Master [MC.name], is there anything I can do for you today?"
-    girl.char "欢迎光临，主人[MC.name]，今天我能为您做些什么吗？"
+    girl.char "[MC.name]大驾光临，我能为您做些什么吗？"
 
 # game/BKday_events.rpy:111
 translate chinese random_morning_events_c3459848:
 
     # girl.char "M-Master... I am truly honored to see you. Please, allow me to be of service..."
-    girl.char "主人....我真的很荣幸见到你。请允许我为您服务...."
+    girl.char "主人....我真的很荣幸见到您。请允许我为您服务...."
 
 # game/BKday_events.rpy:114
 translate chinese random_morning_events_c915bc1b:
@@ -166,13 +166,13 @@ translate chinese random_morning_events_17121eba:
 translate chinese random_morning_events_61edaaa4:
 
     # "She nods in your direction, and moves out of your way as you come. She is learning how to be polite."
-    "她朝你的方向点了点头，然后在你走过来的时候走开了。她正在学习如何有礼貌。"
+    "她朝你的方向颔首示意，然后与你擦肩而过。她正在学习礼仪。"
 
 # game/BKday_events.rpy:121
 translate chinese random_morning_events_c2e76538:
 
     # girl.char "Master... Was there something you wanted from me?"
-    girl.char "主人....你想从我这里得到什么吗？"
+    girl.char "主人....你想让我做些什么？"
 
 # game/BKday_events.rpy:124
 translate chinese random_morning_events_11fdb519_1:
@@ -184,7 +184,7 @@ translate chinese random_morning_events_11fdb519_1:
 translate chinese random_morning_events_916f206f:
 
     # you "You are behaving very well these days. Congratulations! The other girls could learn from you."
-    you "这些天你表现得很好。恭喜你！其他女孩可以向你学习。"
+    you "这些天你表现得很好。干得漂亮！其他女孩应该以你为榜样。"
 
 # game/BKday_events.rpy:130
 translate chinese random_morning_events_4f14f7db:
@@ -214,25 +214,25 @@ translate chinese random_morning_events_28768784:
 translate chinese random_morning_events_59286a98:
 
     # you "Well, sure. The [room] is a bit dusty. Why don't you grab a broom and bucket, and clean this place up?"
-    you "嗯，当然。这[room]有点灰尘。你为什么不拿把扫帚和水桶把这地方打扫干净呢？"
+    you "嗯，当然。[room]的地上都落灰了。你为什么不拿起扫帚和水桶把这地方打扫干净呢？"
 
 # game/BKday_events.rpy:151
 translate chinese random_morning_events_8e963ac2:
 
     # girl.char "Aw, must I, really? All right, I'll do it... *sigh*"
-    girl.char "哦，我必须吗，真的？好吧，我来....*叹息*"
+    girl.char "哦，必须得我来吗？好吧，我会照做的....*叹息*"
 
 # game/BKday_events.rpy:153
 translate chinese random_morning_events_b8af37cc:
 
     # girl.char "Of course, Master. You're the boss."
-    girl.char "当然，主人。你是老板。"
+    girl.char "当然，主人。您的命令就是一切。"
 
 # game/BKday_events.rpy:157
 translate chinese random_morning_events_6a66cc7b:
 
     # "[girl.name] spent all morning cleaning up the [room]. [brothel.name] cleanliness has improved."
-    "[girl.name]整个上午我都在打扫[room]。[brothel.name]清洁度提高了。"
+    "[girl.name]整个上午都在打扫[room]。[brothel.name]的清洁度提高了。"
 
 # game/BKday_events.rpy:162
 translate chinese random_morning_events_28ef0d1a:
@@ -250,7 +250,7 @@ translate chinese random_morning_events_0243f0da:
 translate chinese random_morning_events_ece4e231:
 
     # you "I just woke up, and I'm still hard... I need someone to relieve my stress down there."
-    you "我刚醒来，我还在努力....我需要有人帮我减压。"
+    you "我刚醒来不久，昨晚睡得不香....我需要有人帮我释放一下压力。"
 
 # game/BKday_events.rpy:172
 translate chinese random_morning_events_9e6335c6:
@@ -262,7 +262,7 @@ translate chinese random_morning_events_9e6335c6:
 translate chinese random_morning_events_d514a2e1:
 
     # girl.char "Why, of course, Master... I was looking forward to my breakfast today..."
-    girl.char "当然，主人....我想要着今天的早餐...."
+    girl.char "当然，主人....我很期待今天的早餐...."
 
 # game/BKday_events.rpy:176
 translate chinese random_morning_events_efaf5a2d:
@@ -280,19 +280,19 @@ translate chinese random_morning_events_005e9925:
 translate chinese random_morning_events_bc281135:
 
     # "Going down on her knees, she pulls down your pants. Your erect cock flies right out in her face, and she proceeds to rub it with both hands."
-    "她双膝跪下，拉下你的裤子。你那勃起的鸡巴径直弹到她的脸上，她赶紧用双手握住。"
+    "她双膝跪下，用嘴拉下你的裤子拉链。你勃起的鸡巴径直弹到她的脸上，她赶紧用双手握住。"
 
 # game/BKday_events.rpy:188
 translate chinese random_morning_events_9ef718e9:
 
     # girl.char "Oh... It's already big and hard..."
-    girl.char "哦....它已经又大又硬了...."
+    girl.char "哦....它已经变得又大又硬了...."
 
 # game/BKday_events.rpy:190
 translate chinese random_morning_events_3eff813d:
 
     # "She licks the tip carefully, where pre-cum is already starting to leak out."
-    "她小心地舔着针尖，那里的预液已经开始渗出来了。"
+    "她小心地舔着龟头，先走汁已经开始渗出来了。"
 
 # game/BKday_events.rpy:194
 translate chinese random_morning_events_3d7d191e:
@@ -304,7 +304,7 @@ translate chinese random_morning_events_3d7d191e:
 translate chinese random_morning_events_68343f57:
 
     # "Feeling very excited you push your dick forward, and she opens her mouth to let you slide in."
-    "你感到非常兴奋，把你的阴茎向前推，她张开嘴让你溜进去。"
+    "你感到非常兴奋，把你的阴茎向前推，她张大嘴巴好让你插进去。"
 
 # game/BKday_events.rpy:198
 translate chinese random_morning_events_058c8245:
@@ -969,8 +969,8 @@ translate chinese random_night_girl_event_f472198b:
 # game/BKday_events.rpy:674
 translate chinese random_night_girl_event_92c1421a:
 
-    # girl.char "Oh, Master [MC.name]... How nice of you to come by... ♥"
-    girl.char "哦，主人[MC.name]....你能来真是太好了....♥"
+    # girl.char "Oh, Master [MC.name]... How nice of you to come by... {font=1.ttf}❤{/font}"
+    girl.char "哦，主人[MC.name]....你能来真是太好了....{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:677
 translate chinese random_night_girl_event_65271728:
@@ -3315,8 +3315,8 @@ translate chinese onsen_night_event_wake_up_61f67e18:
 # game/BKday_events.rpy:2260
 translate chinese onsen_night_event_wake_up_c5cd0b64:
 
-    # girl.char "Oh, Master... Come over here, will you... ♥"
-    girl.char "哦，主人....过来一下，好吗？♥"
+    # girl.char "Oh, Master... Come over here, will you... {font=1.ttf}❤{/font}"
+    girl.char "哦，主人....过来一下，好吗？{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:2262
 translate chinese onsen_night_event_wake_up_ab1609ba:
@@ -4797,8 +4797,8 @@ translate chinese night_girl_perform_e24ca3f3:
 # game/BKday_events.rpy:3329
 translate chinese night_girl_perform_33b936ee:
 
-    # girl.char "Aaah! ♥"
-    girl.char "啊！♥"
+    # girl.char "Aaah! {font=1.ttf}❤{/font}"
+    girl.char "啊！{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:3334
 translate chinese night_girl_perform_5285cdad:
@@ -7485,8 +7485,8 @@ translate chinese night_girl_perform_3bbad241:
 # game/BKday_events.rpy:5000
 translate chinese night_girl_perform_a49cccc9:
 
-    # girl.char "Aaaah! ♥"
-    girl.char "啊！♥"
+    # girl.char "Aaaah! {font=1.ttf}❤{/font}"
+    girl.char "啊！{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:5002
 translate chinese night_girl_perform_62f57e65:
@@ -7623,8 +7623,8 @@ translate chinese night_girl_perform_18a12986:
 # game/BKday_events.rpy:5095
 translate chinese night_girl_perform_70541249:
 
-    # girl.char "Dear customers, feel free to take a good look at my slutty body... ♥"
-    girl.char "亲爱的顾客们，请随意欣赏我淫荡的身体....♥"
+    # girl.char "Dear customers, feel free to take a good look at my slutty body... {font=1.ttf}❤{/font}"
+    girl.char "亲爱的顾客们，请随意欣赏我淫荡的身体....{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:5102
 translate chinese night_girl_perform_acb28ee7:
@@ -9465,8 +9465,8 @@ translate chinese night_girl_perform_9ef2f3bb:
 # game/BKday_events.rpy:6204
 translate chinese night_girl_perform_222f0312:
 
-    # girl.char "Aaaah... Master is filling me up with warm, sticky cum... ♥"
-    girl.char "啊....师父在我肚子里灌满了又热又黏的东西....♥"
+    # girl.char "Aaaah... Master is filling me up with warm, sticky cum... {font=1.ttf}❤{/font}"
+    girl.char "啊....师父在我肚子里灌满了又热又黏的东西....{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:6206
 translate chinese night_girl_perform_49eb767c:
@@ -10287,8 +10287,8 @@ translate chinese night_girl_perform_a3f6ef9d:
 # game/BKday_events.rpy:6641
 translate chinese night_girl_perform_a49cccc9_1:
 
-    # girl.char "Aaaah! ♥"
-    girl.char "Aaaah! ♥"
+    # girl.char "Aaaah! {font=1.ttf}❤{/font}"
+    girl.char "Aaaah! {font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:6643
 translate chinese night_girl_perform_46350511:

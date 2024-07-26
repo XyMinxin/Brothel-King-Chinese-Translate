@@ -1348,7 +1348,7 @@ translate schinese city_slave_de31bc83:
 translate schinese city_slave_0a925e06:
 
     # slave "I must do whatever is asked of me, whenever and wherever I am."
-    slave "敏感...发情....肉棒....啊❤我要肉棒❤"
+    slave "敏感...发情....肉棒....啊{font=1.ttf}❤{/font}我要肉棒{font=1.ttf}❤{/font}"
 
 # game/BKcity_events.rpy:1095
 translate schinese city_slave_b7fdcb00:
@@ -1360,7 +1360,7 @@ translate schinese city_slave_b7fdcb00:
 translate schinese city_slave_cc63b4b2:
 
     # slave "I will never forget your command."
-    slave "我会忘掉我们之间的对话，我是淫荡的母狗❤"
+    slave "我会忘掉我们之间的对话，我是淫荡的母狗{font=1.ttf}❤{/font}"
 
 # game/BKcity_events.rpy:1099
 translate schinese city_slave_256ac5e8:
@@ -1378,7 +1378,7 @@ translate schinese city_slave_8ddcc16e:
 translate schinese city_slave_f950481d:
 
     # slave "Master, what can I do for you? I will do whatever you ask. *smile*"
-    slave "主人，人家的小穴好痒啊，求求您用您的大肉棒给我止止痒吧❤。*吐舌头*"
+    slave "主人，人家的小穴好痒啊，求求您用您的大肉棒给我止止痒吧{font=1.ttf}❤{/font}。*吐舌头*"
 
 # game/BKcity_events.rpy:1109
 translate schinese city_slave_bcd6f635:
@@ -1408,7 +1408,7 @@ translate schinese city_slave_3db876d9:
 translate schinese city_slave_78be7583:
 
     # slave "Oooh... What's happening to me..."
-    slave "噢...好痛...好痒啊~❤❤"
+    slave "噢...好痛...好痒啊~{font=1.ttf}❤{/font}{font=1.ttf}❤{/font}"
 
 # game/BKcity_events.rpy:1123
 translate schinese city_slave_4c003d45:
@@ -1420,7 +1420,7 @@ translate schinese city_slave_4c003d45:
 translate schinese city_slave_171152c2:
 
     # slave "I'm so horny!!! AAAAAH!"
-    slave "那里好涨，好痒啊！！！啊啊❤！*一只手捏着自己的乳头把玩，一只手塞进裙底抚摸阴蒂*"
+    slave "那里好涨，好痒啊！！！啊啊{font=1.ttf}❤{/font}！*一只手捏着自己的乳头把玩，一只手塞进裙底抚摸阴蒂*"
 
 # game/BKcity_events.rpy:1129
 translate schinese city_slave_f53cddb0:
@@ -1432,7 +1432,7 @@ translate schinese city_slave_f53cddb0:
 translate schinese city_slave_1d713ca3:
 
     # slave "Someone fuck me! Please, anyone!!!"
-    slave "好哥哥们来救救我！快把你们的大肉棒塞到我的口穴，奶穴，小穴里❤！！！"
+    slave "好哥哥们来救救我！快把你们的大肉棒塞到我的口穴，奶穴，小穴里{font=1.ttf}❤{/font}！！！"
 
 # game/BKcity_events.rpy:1135
 translate schinese city_slave_24dcda9a:
@@ -1576,7 +1576,7 @@ translate schinese city_slave_ae115b8a:
 translate schinese city_slave_465730fc:
 
     # slave "Aaaaaah!!!"
-    slave "啊❤！！！"
+    slave "啊{font=1.ttf}❤{/font}！！！"
 
 # game/BKcity_events.rpy:1284
 translate schinese city_slave_4d802672:
@@ -1630,7 +1630,7 @@ translate schinese city_slave_5d29cd48:
 translate schinese city_slave_802d5805:
 
     # slave "Ohhhh, aaaahhh... AAAAAH!"
-    slave "噢,啊哈....啊啊啊哈❤！"
+    slave "噢,啊哈....啊啊啊哈{font=1.ttf}❤{/font}！"
 
 # game/BKcity_events.rpy:1327
 translate schinese city_slave_6c6ac6f8:
@@ -1690,7 +1690,7 @@ translate schinese city_slave_9c0b235e:
 translate schinese city_slave_20f91c9b:
 
     # slave "AAAAAAAAAAAAAAH!!!!"
-    slave "啊啊啊啊❤啊啊啊啊啊❤!!!!"
+    slave "啊啊啊啊{font=1.ttf}❤{/font}啊啊啊啊啊{font=1.ttf}❤{/font}!!!!"
 
 # game/BKcity_events.rpy:1368
 translate schinese city_slave_52216f2d:
@@ -1768,7 +1768,7 @@ translate schinese city_slave_d5bb2c99:
 translate schinese city_slave_eefaf412:
 
     # slavegirl1 "It's pulsating! It's so warm!"
-    slavegirl1 "我能感受到肉棒的脉动！好烫啊❤！"
+    slavegirl1 "我能感受到肉棒的脉动！好烫啊{font=1.ttf}❤{/font}！"
 
 # game/BKcity_events.rpy:1453
 translate schinese city_slave_b502c3b5:
@@ -1786,7 +1786,7 @@ translate schinese city_slave_f3666851:
 translate schinese city_slave_f5245a47:
 
     # slavegirl1 "Master... You came so much!"
-    slavegirl1 "先生....您还能再射这么多❤！"
+    slavegirl1 "先生....您还能再射这么多{font=1.ttf}❤{/font}！"
 
 # game/BKcity_events.rpy:1470
 translate schinese city_slave_f44ca558:
@@ -1798,7 +1798,7 @@ translate schinese city_slave_f44ca558:
 translate schinese city_slave_28ffc30e:
 
     # slavegirl1 "So delicious... More..."
-    slavegirl1 "美味的...我还想要❤..."
+    slavegirl1 "美味的...我还想要{font=1.ttf}❤{/font}..."
 
 # game/BKcity_events.rpy:1476
 translate schinese city_slave_3d8c5057:
@@ -5664,7 +5664,7 @@ translate schinese city_luck_d5448762:
     # npc "Oh, thank you! It's good to see that gentlemen still exist in this rotten city."
     npc "噢，谢谢你！很高兴看到在这个腐朽的城市里还有像你这样的绅士。"
 
-# game/BKcity_events.rpy:4701汉化标签2024-7-14
+# game/BKcity_events.rpy:4701
 translate schinese slave_beach_event_f54a88e7:
 
     # "By the [loc] is a long stretch of white sand where the people of [dis] come to relax. As you pass by, you spot a familiar sight."
@@ -5865,8 +5865,8 @@ translate schinese slave_beach_event_a9b98d2f:
 # game/BKcity_events.rpy:4854
 translate schinese slave_beach_event_fb1adbbd:
 
-    # girl.char "Aaaah! 汉化标签爱心符号❤"
-    girl.char "啊啊啊啊！❤"
+    # girl.char "Aaaah! {font=1.ttf}❤{/font}"
+    girl.char "啊啊啊啊！{font=1.ttf}❤{/font}"
 
 # game/BKcity_events.rpy:4857
 translate schinese slave_beach_event_f853db99:
@@ -5896,7 +5896,7 @@ translate schinese slave_beach_event_23b03eb3:
 translate schinese slave_beach_event_8a41b161:
 
     # girl.char "Aaah, ah, AAAAAH!!!"
-    girl.char "啊，哦，啊啊啊❤！！！"
+    girl.char "啊，哦，啊啊啊{font=1.ttf}❤{/font}！！！"
 
 # game/BKcity_events.rpy:4889
 translate schinese slave_beach_event_00dded58:
