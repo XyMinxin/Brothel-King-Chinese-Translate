@@ -5496,7 +5496,7 @@ translate schinese c2_suzume_forest1_5be212d7:
 translate schinese c2_suzume_forest1_0e9c8de4:
 
     # suzume "Ah! [emo_heart]"
-    suzume "啊![emo_heart]"
+    suzume "啊!{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:3040
 translate schinese c2_suzume_forest1_c6ea39ad:
@@ -5508,7 +5508,7 @@ translate schinese c2_suzume_forest1_c6ea39ad:
 translate schinese c2_suzume_forest1_8ca533d8:
 
     # suzume "It feels nice and warm now... Thank you, Mister... Ku ku ku [emo_heart]"
-    suzume "现在感觉暖和多了...谢谢你,先生...嘻嘻嘻[emo_heart]"
+    suzume "现在感觉暖和多了...谢谢你,先生...嘻嘻嘻{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:3044
 translate schinese c2_suzume_forest1_9abccfc6:
@@ -6090,7 +6090,7 @@ translate schinese c2_suzume_forest2_9067c8f0:
 translate schinese c2_suzume_forest2_c3b02cc4:
 
     # suzume "My body is ready to withstand your assaults... You cannot win this! But try, if you dare... [emo_heart]"
-    suzume "我的身体已经做好了准备...你是赢不了我的!但如果你敢来的话就试试看吧...[emo_heart]"
+    suzume "我的身体已经做好了准备...你是赢不了我的!但如果你敢来的话就试试看吧...{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:3369
 translate schinese c2_suzume_forest2_55e82f53:
@@ -6138,7 +6138,7 @@ translate schinese c2_suzume_forest2_f9e895be:
 translate schinese c2_suzume_forest2_f9724822:
 
     # suzume "Oh, that's the spot... Keep doing that... [emo_heart]"
-    suzume "噢,就是那里...继续...[emo_heart]"
+    suzume "噢,就是那里...继续...{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:3393
 translate schinese c2_suzume_forest2_3ee5d977:
@@ -8724,7 +8724,7 @@ translate schinese c2_suzume_morning_visit_menu_f220af71:
 translate schinese c2_suzume_morning_visit_menu_4238256f:
 
     # suzume bend "Well, you see, I've always had a healthy sex drive. Some people would say 'too healthy'. [emo_heart]"
-    suzume bend "嗯,你看,我的性欲一直很强。有些人会说'太旺盛了'。[emo_heart]"
+    suzume bend "嗯,你看,我的性欲一直很强。有些人会说'太旺盛了'。{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:4617
 translate schinese c2_suzume_morning_visit_menu_c6af0db9:
@@ -9852,7 +9852,7 @@ translate schinese c2_suzume_onsen_81b2f7dc:
 translate schinese c2_suzume_onsen_a93ecc57:
 
     # suzume "Aaaah! [emo_heart]" with vpunch
-    suzume "啊啊啊![emo_heart]" with vpunch
+    suzume "啊啊啊!{font=1.ttf}❤{/font}" with vpunch
 
 # game/BKchapter2.rpy:5081
 translate schinese c2_suzume_onsen_872495cd:
@@ -12420,7 +12420,7 @@ translate schinese c2_narika_H1_002cc124:
 translate schinese c2_narika_H1_2f8e2885:
 
     # narika "Aaaaah... [emo_heart]"
-    narika "啊啊....[emo_heart]"
+    narika "啊啊....{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:6470
 translate schinese c2_narika_H1_4caa7249:
@@ -12546,7 +12546,7 @@ translate schinese c2_narika_H1_6bb9499f:
 translate schinese c2_narika_H1_886f18bb:
 
     # suzume "I'm cutting this off! Sorry, Narika, see youuu! [emo_heart]"
-    suzume "我要切断连接了!抱歉啦,鸣香,再见哦![emo_heart]"
+    suzume "我要切断连接了!抱歉啦,鸣香,再见哦!{font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:6525
 translate schinese c2_narika_H1_d6860788:
@@ -12876,7 +12876,7 @@ translate schinese intercept_mizuki_b7a96a09:
 translate schinese intercept_mizuki_1fe5a0f7:
 
     # suzume "(Told ya! [emo_heart])"
-    suzume "(我就说吧![emo_heart])"
+    suzume "(我就说吧!{font=1.ttf}❤{/font})"
 
 # game/BKchapter2.rpy:6713
 translate schinese intercept_mizuki_c56a6e30:
@@ -20821,7 +20821,7 @@ translate schinese homura_sex_3cb5d3d0:
 translate schinese homura_sex_74726e81:
 
     # homura "Ahaa! [emo_heart]"
-    homura "啊哈哈! [emo_heart]"
+    homura "啊哈哈! {font=1.ttf}❤{/font}"
 
 # game/BKchapter2.rpy:10383
 translate schinese homura_sex_79ec1491:

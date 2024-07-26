@@ -8068,7 +8068,7 @@ translate schinese c1_satella_intro_19ec2375:
 translate schinese c1_satella_intro_1c097287:
 
     # satella "Just give me a minute! [emo_heart]"
-    satella "稍等片刻![emo_heart]"
+    satella "稍等片刻!{font=1.ttf}❤{/font}"
 
 # game/BKchapter1.rpy:4548
 translate schinese c1_satella_intro_b0fc4d6e:
@@ -8122,7 +8122,7 @@ translate schinese c1_satella_intro_508633cf:
 translate schinese c1_satella_intro_932e8a40:
 
     # satella "Music for our guests!!! Yay [emo_heart] !"
-    satella "给我们的客人来点音乐!!!耶 [emo_heart]!"
+    satella "给我们的客人来点音乐!!!耶 {font=1.ttf}❤{/font}!"
 
 # game/BKchapter1.rpy:4572
 translate schinese c1_satella_intro_b7cc9d89:
@@ -8248,7 +8248,7 @@ translate schinese c1_satella_intro_52490bd9:
 translate schinese c1_satella_intro_044f40e6:
 
     # satella happy "Good! [emo_heart]"
-    satella happy "那太好了![emo_heart]"
+    satella happy "那太好了!{font=1.ttf}❤{/font}"
 
 # game/BKchapter1.rpy:4621
 translate schinese c1_satella_intro_9f564899:
@@ -8260,7 +8260,7 @@ translate schinese c1_satella_intro_9f564899:
 translate schinese c1_satella_intro_f70383b5:
 
     # satella "Oh, you do? [emo_heart]"
-    satella "哦,什么请求?[emo_heart]"
+    satella "哦,什么请求?{font=1.ttf}❤{/font}"
 
 # game/BKchapter1.rpy:4625
 translate schinese c1_satella_intro_64ea15bd:

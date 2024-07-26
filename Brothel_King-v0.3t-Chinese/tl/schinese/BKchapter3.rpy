@@ -166,7 +166,7 @@ translate schinese c3_suzume_hint_732bb425:
 translate schinese c3_suzume_hint_e1341609:
 
     # suzume "Aaah... That's better! [emo_heart]"
-    suzume "啊...这下舒服多了![emo_heart]"
+    suzume "啊...这下舒服多了!{font=1.ttf}❤{/font}"
 
 # game/BKchapter3.rpy:86
 translate schinese c3_suzume_hint_4e952b73:
@@ -4384,13 +4384,13 @@ translate schinese c3_homura_menu_pleasure_3c3899d4:
 translate schinese c3_homura_menu_pleasure_a1a62702:
 
     # homura naked "Wow, having sex outside is so much fun... It always feels as if someone could catch us at any moment. [emo_heart]"
-    homura naked "哇,野战真的好刺激...总感觉会随时被人发现。[emo_heart]"
+    homura naked "哇,野战真的好刺激...总感觉会随时被人发现。{font=1.ttf}❤{/font}"
 
 # game/BKchapter3.rpy:2268
 translate schinese c3_homura_menu_pleasure_48c9a023:
 
     # homura naked "Oh, that was rough... But I loved it. [emo_heart]"
-    homura naked "哦,有点粗暴...但我喜欢。[emo_heart]"
+    homura naked "哦,有点粗暴...但我喜欢。{font=1.ttf}❤{/font}"
 
 # game/BKchapter3.rpy:2273
 translate schinese c3_homura_menu_pleasure_5ef77357:
@@ -4522,7 +4522,7 @@ translate schinese homura_69_895f316b:
 translate schinese homura_69_3b4d5fbc:
 
     # homura "Oh! Aaaah!!! [emo_heart]"
-    homura "哦!啊啊啊!!! [emo_heart]"
+    homura "哦!啊啊啊!!! {font=1.ttf}❤{/font}"
 
 # game/BKchapter3.rpy:2342
 translate schinese homura_69_a501d1e5:
@@ -5416,7 +5416,7 @@ translate schinese homura_river_2abfb529:
 translate schinese homura_river_219e56ff:
 
     # homura "Aaaah! [emo_heart]" with hpunch
-    homura "啊啊![emo_heart]" with hpunch
+    homura "啊啊!{font=1.ttf}❤{/font}" with hpunch
 
 # game/BKchapter3.rpy:2793
 translate schinese homura_river_406d0d8d:
@@ -5452,7 +5452,7 @@ translate schinese homura_river_fd5a80c5:
 translate schinese homura_river_fa05c9fb:
 
     # homura "S-Shut up... Aaaah!!! [emo_heart]" with hpunch
-    homura "闭嘴...啊啊啊!![emo_heart]" with hpunch
+    homura "闭嘴...啊啊啊!!{font=1.ttf}❤{/font}" with hpunch
 
 # game/BKchapter3.rpy:2807
 translate schinese homura_river_81ac7e08:
