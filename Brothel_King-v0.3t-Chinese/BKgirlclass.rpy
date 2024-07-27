@@ -4183,10 +4183,10 @@ init -2 python:
 
             if not silent:
                 if change > 0.5:
-                    notify("fear increased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("恐惧值上升", pic=self.portrait, debug_txt="(%s)" % str(change))
 
                 elif change < -0.5:
-                    notify("fear decreased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("恐惧值减少", pic=self.portrait, debug_txt="(%s)" % str(change))
 
             test_achievement("fear")
 
@@ -4631,7 +4631,7 @@ init -2 python:
             elif filter == "fear":
                 return fear_text
             elif filter == "mood":
-                return mood_text + mood_change_text + "\n精神状态: " + self.get_sanity()
+                return mood_text + mood_change_text + "\nSanity: " + self.get_sanity()
             else:
                 return love_text, fear_text, mood_text, mood_change_text, mood_factors
 
@@ -4784,7 +4784,7 @@ init -2 python:
 
             else:
 
-                return "-", "这个女孩在选定的时间段内没有执行这个动作。"
+                return "-", "这个女孩在选定的时间段内没有执行这个动作."
 
         # Personality traits
 
@@ -4840,17 +4840,17 @@ init -2 python:
                 des += ". "
 
                 if self.flags["story"] < 10:
-                    des += "你对她一无所知。"
+                    des += "你对她一无所知."
                 elif self.flags["story"] < 20:
-                    des += "你对她有了初步的了解。"
+                    des += "你对她有了初步的了解."
                 elif self.flags["story"] < 50:
-                    des += "你对她的情况有些了解。"
+                    des += "你对她的情况有些了解."
                 elif self.flags["story"] < 100:
-                    des += "她告诉了你她的故事, 但你毫无兴趣。"
+                    des += "她告诉了你她的故事, 但你无动于衷."
                 elif self.flags["MC refused story"]:
-                    des += "你很了解她的身世。"
+                    des += "你很了解她的身世."
                 else:
-                    des += "你很了解她的身世, 并对此做了一些调查。"
+                    des += "你很了解她的身世, 并为此做了一些事情."
 
                 des += "\n\n"
 
@@ -4861,46 +4861,46 @@ init -2 python:
                 if ei >= 100 or always_show_personality[self]:
 
                     if self.is_("very extravert"):
-                        des += "她简直就是个 {b}社交恐怖分子{/b}。\n"
+                        des += "她简直就是个 {b}社交恐怖分子{/b}.\n"
                     elif self.is_("extravert"):
-                        des += "她很 {b}外向{/b}。\n"
+                        des += "她很 {b}外向{/b}.\n"
                     elif self.is_("very introvert"):
-                        des += "她很 {b}文静羞涩{/b}。\n"
+                        des += "她很 {b}文静羞涩{/b}.\n"
                     elif self.is_("introvert"):
-                        des += "她有一点 {b}害羞{/b}。\n"
+                        des += "她有一点 {b}害羞{/b}.\n"
 
                 if mi >= 100 or always_show_personality[self]:
                     if self.is_("very materialist"):
-                        des += "她非常 {b}自私贪婪{/b}, 如果有人妨碍她她会毫不留情地除掉他。\n"
+                        des += "她非常 {b}自私贪婪{/b}, 如果有人妨碍她她会毫不留情地除掉他.\n"
 
                     elif self.is_("materialist"):
-                        des += "她很 {b}肤浅和物质主义{/b}。\n"
+                        des += "她很 {b}肤浅和物质主义{/b}.\n"
 
                     elif self.is_("very idealist"):
-                        des += "她有远大的 {b}理想{/b},她盼望世界和平。\n"
+                        des += "她很有 {b}梦想{/b},盼望着世界和平.\n"
 
                     elif self.is_("idealist"):
-                        des += "她很 {b}关心他人{/b}。\n"
+                        des += "她很 {b}关心他人{/b}.\n"
 
                 if ds >= 100 or always_show_personality[self]:
                     if self.is_("very dom"):
-                        des += "她 {b}积极向上 意志坚定{/b} ，能够做到换位思考。\n"
+                        des += "她 {b}积极向上意志坚定{/b} 希望别人能从她的角度看问题.\n"
                     elif self.is_("dom"):
-                        des += "她知道自己想要什么,她是个 {b}独立女性{/b}。\n"
+                        des += "她知道自己想要什么,她是个 {b}独立女性{/b}.\n"
                     elif self.is_("very sub"):
-                        des += "她很 {b}顺从{/b} 总是把自己摆在最后一位。\n"
+                        des += "她很 {b}顺从{/b} 总是把自己摆在最后一位.\n"
                     elif self.is_("sub"):
-                        des += "她很 {b}谦让{/b}, 她总是尽可能避免冲突。\n"
+                        des += "她很 {b}谦让{/b}, 她总是尽可能避免冲突.\n"
 
                 if lm >= 100 or always_show_personality[self]:
                     if self.is_("very modest"):
-                        des += "她非常保守并对性行为感到 {b}反感{/b}。\n"
+                        des += "她非常保守并对性爱感到 {b}反感{/b}.\n"
                     elif self.is_("modest"):
-                        des += "她有自己的 {b}道德底线{/b}, 对淫乱的行为感到不齿。\n"
+                        des += "她遵循自己的 {b}道德准则{/b}, 对淫荡的行为感到不齿.\n"
                     elif self.is_("very lewd"):
-                        des += "她只在乎自己 {b}开心{/b}与否, 不在乎世俗偏见。\n"
+                        des += "她只想要 {b}愉悦{/b}自己, 不在乎世俗偏见.\n"
                     elif self.is_("lewd"):
-                        des += "她 {b}思想开放 不受约束{/b}。\n"
+                        des += "她 {b}思想开放 没有底线{/b}.\n"
 
             # Add tastes
 
@@ -4911,34 +4911,34 @@ init -2 python:
                 taste_text = ""
 
                 if self.personality_unlock["fav_color"] or always_show_personality[self]:
-                    taste_text += "她最爱的颜色是 {b}" + self.likes["color"] + "{/b}。 "
+                    taste_text += "她最爱的颜色是 {b}" + self.likes["color"] + "{/b}. "
 
                 if self.personality_unlock["fav_food"] or always_show_personality[self]:
-                    taste_text += "她最爱的食物是 {b}" + self.likes["food"] + "{/b}。 "
+                    taste_text += "她最爱的食物是 {b}" + self.likes["food"] + "{/b}. "
 
                 if self.personality_unlock["fav_drink"] or always_show_personality[self]:
-                    taste_text += "她最爱的饮品是 {b}" + self.likes["drink"] + "{/b}。 "
+                    taste_text += "她最爱的饮品是 {b}" + self.likes["drink"] + "{/b}. "
 
                 if (self.personality_unlock["hobby_" + self.hobbies[0]] and self.personality_unlock["hobby_" + self.hobbies[1]]) or always_show_personality[self]:
-                    taste_text += "她喜欢 {b}" + self.hobbies[0] + " and " + self.hobbies[1] + "{/b}。 "
+                    taste_text += "她喜欢 {b}" + self.hobbies[0] + " and " + self.hobbies[1] + "{/b}. "
 
                 elif self.personality_unlock["hobby_" + self.hobbies[0]]:
-                    taste_text += "她喜欢 {b}" + self.hobbies[0] + "{/b}。 "
+                    taste_text += "她喜欢 {b}" + self.hobbies[0] + "{/b}. "
 
                 elif self.personality_unlock["hobby_" + self.hobbies[1]]:
-                    taste_text += "她喜欢 {b}" + self.hobbies[1] + "{/b}。 "
+                    taste_text += "她喜欢 {b}" + self.hobbies[1] + "{/b}. "
 
                 if taste_text:
                     taste_text += "\n\n"
 
                 if self.personality_unlock["dis_color"] or always_show_personality[self]:
-                    taste_text += "她最讨厌的颜色是 {b}" + self.dislikes["color"] + "{/b}。 "
+                    taste_text += "她最讨厌的颜色是 {b}" + self.dislikes["color"] + "{/b}. "
 
                 if self.personality_unlock["dis_food"] or always_show_personality[self]:
-                    taste_text += "她最讨厌的食物是 {b}" + self.dislikes["food"] + "{/b}。 "
+                    taste_text += "她最讨厌的食物是 {b}" + self.dislikes["food"] + "{/b}. "
 
                 if self.personality_unlock["dis_drink"] or always_show_personality[self]:
-                    taste_text += "她最讨厌的饮品是 {b}" + self.dislikes["drink"] + "{/b}。 "
+                    taste_text += "她最讨厌的饮品是 {b}" + self.dislikes["drink"] + "{/b}. "
 
 
                 if taste_text:
@@ -4968,7 +4968,7 @@ init -2 python:
                 if taste_text:
                     des += taste_text
                 else:
-                    des += "你对她的喜好一无所知。"
+                    des += "你对她的品位一无所知."
 
             elif show == "sexual":
 
@@ -4992,20 +4992,20 @@ init -2 python:
                         neg_unlocked.append(act)
 
                 if pos_unlocked:
-                    sex_text += "她喜欢 {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} 行为"
+                    sex_text += "她有些害怕 {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} acts"
 
                     if neg_unlocked:
                         sex_text += ", 但她 "
                     else:
-                        sex_text += "。 "
+                        sex_text += ". "
 
                 if neg_unlocked:
                     if not sex_text:
                         sex_text += "她 "
-                    sex_text += "不喜欢 {color=[c_crimson]}" + and_text(neg_unlocked) + "{/color} 行为。 "
+                    sex_text += "不喜欢 {color=[c_crimson]}" + and_text(neg_unlocked) + "{/color} 行为. "
 
                 if amb_unlocked:
-                    sex_text += "她对 {color=[c_yellow]}" + and_text(amb_unlocked) + "{/color} 行为感到矛盾。 "
+                    sex_text += "她对 {color=[c_yellow]}" + and_text(amb_unlocked) + "{/color} 行为感到很矛盾. "
 
                 if sex_text:
                     sex_text += "\n\n"
@@ -5014,14 +5014,14 @@ init -2 python:
                 neg_fix = [fix.name for fix in self.neg_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
 
                 if pos_fix:
-                    sex_text += "她十分痴迷于 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}行为。 "
+                    sex_text += "她十分痴迷 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}. "
                 if neg_fix:
-                    sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color}行为感到恶心。"
+                    sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color}感到恶心. "
 
                 if sex_text:
                     des += sex_text
                 else:
-                    des += "你不太了解她的性癖。"
+                    des += "你不太了解她的性癖."
 
                 if farm.knows["weakness"][self]:
                     des+= "\n她对农场的 %ss.十分敏感" % self.weakness
@@ -5147,13 +5147,13 @@ init -2 python:
                     if feedback:
                         if _pos and _neg:
                             renpy.play(s_ahaa, "sound")
-                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "感到矛盾。")
+                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "既感觉快乐又感觉不适. 她似乎对此有矛盾的感觉.")
                         elif _pos:
                             renpy.play(s_mmh, "sound")
-                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "感到享受。")
+                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "感到享受.")
                         elif _neg:
                             renpy.play(s_scream, "sound")
-                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "感到恶心。")
+                            renpy.say("", "你注意到 " + self.name + " 对 " + long_act_description[act] + "感到恶心.")
 
             return _pos, _neg
 
