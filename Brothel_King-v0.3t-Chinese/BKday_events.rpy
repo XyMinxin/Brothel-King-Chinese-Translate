@@ -22,66 +22,66 @@ label random_morning_events():
                 scene black with fade
                 show expression bg_bro at top with dissolve
 
-                "As you come out for some fresh air in the early morning, rubbing the sleep from your eyes, you are surprised to meet [girl.fullname], already up and running."
+                "当你清晨起床走出房间，呼吸新鲜空气时，你惊讶地发现[girl.fullname]正在院子里锻炼，身上挥洒着汗水。"
 
                 show screen show_event(girl.get_pic("constitution", "dance", "profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
-                girl.char "One, two, three, four..."
+                girl.char "一二三四，二二三四..."
 
-                "She is doing her morning exercise, bursting with energy."
+                "她正在晨练，充满了活力。"
 
                 if girl.is_("extravert"):
-                    girl.char "Oh, hi, Master! How is it going?"
+                    girl.char "早上好，主人! 昨晚睡的如何?"
                 elif girl.is_("introvert"):
-                    girl.char "Oh, it's you... I didn't think there would be anyone here."
+                    girl.char "哦, 是你啊... 没想到这个点这里还有人来。"
 
                 if stat >= 200:
-                    "You are amazed at how fast and tough she has become. She has been at it for over an hour, but she barely looks out of breath."
+                    "你惊讶地发现与来时相比，她的动作变得如此灵活有力。她已经锻炼了一个多小时了，但她看上去还留有余力。"
                 elif stat >= 100:
-                    "She is in very good shape, and you can't help but be impressed by her stamina."
+                    "她的身材变得越来越好，你为她的毅力所折服。"
                 else:
-                    "She is doing some valiant efforts, and little by little, it seems to be paying off."
+                    "她正在试着改变，而且她一点一点地得到了回报。"
 
                 menu:
                     extend ""
 
-                    "Admire her" if stat >= 200:
-                        you "You have become truly strong now, [girl.name]... I bet you could take me on!"
+                    "赞美她" if stat >= 200:
+                        you "你现在变得如此强壮, [girl.name]... 我敢打赌你的力气不输给我了!"
 
                         if girl.is_("dom"):
-                            girl.char "Ha! You bet! I could take anyone on!"
+                            girl.char "那还用说! 你最好尊重我! 不然我会让你吃点苦头的!"
                         elif girl.is_("sub"):
-                            girl.char "Oh, no, Master... I wouldn't dare..."
+                            girl.char "怎么会呢，主人... 我怎么能和您相提并论..."
 
                         $ result = "pos"
 
-                    "Encourage her" if stat < 200:
-                        you "You're doing good, [girl.name]. Keep it up, and you'll be an accomplished athlete in no time."
+                    "鼓励她" if stat < 200:
+                        you "做得很不错, [girl.name]。 继续保持, 你很快就能成为一名出色的运动员。"
 
                         if girl.is_("dom"):
-                            girl.char "Hehe, I'm glad you noticed!"
+                            girl.char "咯咯,很高兴您这么支持我!"
                         elif girl.is_("sub"):
-                            girl.char "You... You really think so?"
+                            girl.char "你... 你真的这么想?"
 
                         $ result = "pos"
 
-                    "Demean her":
-                        $ MC.rand_say(("ev: 你在干什么，你这个愚蠢的婊子？你的身体是用来做爱的，不是用来玩游戏的！别在这浪费你精力！", "哼。我希望你能把同样的精力放在为客户服务上。", "嘿！如果你起得早，你应该给我准备早餐，而不是做这些无意义的运动。", "ev: 哼。妓女身上的肌肉就像男人身上的奶子: 毫无用处。", "玩得开心吗？你不应该用这些时间做一些更有用的事情吗?"))
+                    "嘲讽她":
+                        $ MC.rand_say(("ev: 你在干什么，你这个愚蠢的婊子？你的身体是用来服务男人的，不是用来做这些的！别在这浪费你的精力！", "哼。我希望你能把精力放在思考如何提升服务质量上。", "嘿！如果你喜欢早起，你应该去为我准备早餐，而不是做这些无意义的运动。", "ev: 哼。妓女身上的肌肉就像男人的胸部: 再大也毫无用处。", "玩得开心吗？你不应该用这些时间做一些更有用的事情吗?"))
 
                         if girl.is_("dom"):
-                            girl.char "You bastard..."
+                            girl.char "真是狗嘴里吐不出象牙..."
                         elif girl.is_("sub"):
-                            girl.char "Aw... You're mean..."
+                            girl.char "嗷... 你的话也太伤人自尊了..."
 
-                        you "Say what?"
+                        you "你说什么?"
 
-                        girl.char "N-nothing..."
+                        girl.char "没...没什么。"
 
                         $ result = "neg"
 
-                    "Say nothing":
-                        "You leave her to her training."
+                    "无视她":
+                        "你无视了她，任由她自己在一旁锻炼。"
                         $ result = ""
 
                 hide screen show_event
@@ -1054,23 +1054,23 @@ label random_night_girl_event(girl, room):
                     $ girl.change_fear(1)
 
                 menu:
-                    "How will you punish her?"
+                    "你想怎么惩罚她?"
 
-                    "Make her clean up the dirty sheets tonight":
+                    "让她今晚负责清洗床单":
                         you "After your service, you're going to do all the laundry tonight, using your bare hands and a bar of soap. I want you to wipe every last cum stain off those bed sheets! Or you'll have to do it again tomorrow."
                         girl.char "Aw..."
 
                         $ girl.change_fear(1)
                         $ changed_stats = [("obedience", dice(3))]
 
-                    "Force her to haul some heavy supplies":
+                    "强迫她搬运沉重的货物":
                         you "You're going to pick up the beer kegs downstairs and bring them all up to the hall. On the double!"
                         girl.char "Oh no... They're so heavy..."
 
                         $ girl.change_fear(1)
                         $ changed_stats = [("constitution", dice(3))]
 
-                    "Place her naked by the entrance door":
+                    "让她一丝不挂的招揽客人":
 
                         $ selected_act = "naked"
 
@@ -1084,7 +1084,7 @@ label random_night_girl_event(girl, room):
 
                         call night_girl_perform() from _call_night_girl_perform_4
 
-                    "Make her service every customer that comes in": # No call of the perform label for this one
+                    "让她接待每一位光顾的顾客": # No call of the perform label for this one
 
                         $ selected_act = "service"
                         $ fix = rand_choice(["handjobs", "oral", "titjobs"])

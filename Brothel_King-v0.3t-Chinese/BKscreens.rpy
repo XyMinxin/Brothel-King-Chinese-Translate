@@ -2754,27 +2754,27 @@ screen schedule(glist):
                     for day in weekdays:
 
                         if girl.workdays[day] == 100:
-                            $ ttip = "She will work to the maximum of her abilities."
+                            $ ttip = "她将尽她的最大努力来工作。"
 
                         elif girl.workdays[day] == 50:
-                            $ ttip = "She will receive half the usual number of clients, saving some energy."
+                            $ ttip = "她将劳逸结合，只完成一半的工作量以节省体力。"
 
                         elif girl.workdays[day] == 0:
-                            $ ttip = "She will rest and recover some energy."
+                            $ ttip = "她将好好休息以恢复体力。"
 
-                        $ ttip += "\n{i}Right-click to reverse cycle order.{/i}"
+                        $ ttip += "\n{i}单击右键以反向修改顺序。{/i}"
 
                         textbutton workshift_dict[girl.workdays[day]] text_size res_font(14) xsize xres(90) ysize yres(40) yalign 0.5 tooltip ttip idle_background workshift_color[girl.workdays[day]] hover_background c_darkbrown + "CC":
                             if girl.block_schedule != day:
                                 action Function(girl.cycle_workday, day) # renpy.curried_invoke_in_new_context(girl.cycle_workday, day)
                             else:
-                                action Function(renpy.notify, "\nYou cannot change her schedule as you gave her a day off.")
+                                action Function(renpy.notify, "\n在她放假时你无法变更她的排班安排。")
 
                             alternate Function(girl.cycle_workday, day, True)
 
                     vbox yalign 0.5:
-                        textbutton "S" action ShowTransient("save_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "Click here to save %s's schedule." % girl.fullname
-                        textbutton "L" action ShowTransient("load_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "Click here to load a schedule for %s." % girl.fullname
+                        textbutton "S" action ShowTransient("save_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "点击保存 %s 的排班表。" % girl.fullname
+                        textbutton "L" action ShowTransient("load_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "点击读取 %s 的排班表" % girl.fullname
 
         text ""
 

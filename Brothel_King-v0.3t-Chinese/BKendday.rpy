@@ -457,7 +457,7 @@ label end_day:
                 ## Autorest check
 
                 if girl.energy < autorest_limit:
-                    log.add_report("{color=[c_red]}" + girl.fullname + " 的体力低于阈值，并被安排自动休息。{/color}")
+                    log.add_report("{color=[c_red]}" + girl.fullname + " 的体力低于阈值，自动被安排去休息。{/color}")
                     resting_girls.append(girl)
                     girl.add_log("rest_days")
 
@@ -531,9 +531,9 @@ label end_day:
 
         if sick_girls != []:
             if len(sick_girls) == 1:
-                sick_text += "\n{color=[c_red]}%s 生病了.{/color}" % sick_girls[0].name
+                sick_text += "\n{color=[c_red]}%s 生病了。{/color}" % sick_girls[0].name
             else:
-                sick_text += "\n{color=[c_red]}%s 生病了.{/color}" % and_text([g.name for g in sick_girls])
+                sick_text += "\n{color=[c_red]}%s 生病了。{/color}" % and_text([g.name for g in sick_girls])
 
     ## Apply advertisement
 
@@ -560,17 +560,17 @@ label end_day:
             chg = round_int(brothel.change_rep_nightly(rep_change))
 
             if round_int(brothel.rep) != old_rep:
-                rep_text = __("你的青楼声望从 %s 变为 %s." % ('{:,}'.format(round_int(old_rep)), '{:,}'.format(round_int(brothel.rep))))
+                rep_text = __("你的青楼名声从 %s 变为 %s。" % ('{:,}'.format(round_int(old_rep)), '{:,}'.format(round_int(brothel.rep))))
             else:
-                rep_text = __("你的青楼声望保持不变 (") + '{:,}'.format(round_int(brothel.rep)) + ")."
+                rep_text = __("你的青楼名声保持不变 (") + '{:,}'.format(round_int(brothel.rep)) + ")。"
 
-            night_early.add("青楼声望:\n%s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), plus_text(chg, color_scheme="rep")), "header", ttip_title = "青楼报告", ttip = rep_text)
+            night_early.add("青楼名声:\n%s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), plus_text(chg, color_scheme="rep")), "header", ttip_title = "青楼报告", ttip = rep_text)
 
             night_early.add("宣传效果: +%s" % str_dec(raw_rep))
             if bonus_rep >= 1:
-                night_early.add("津贴: +%s" % str_dec(bonus_rep))
+                night_early.add("名声奖励: +%s" % str_dec(bonus_rep))
             if decay_rep <= -1:
-                night_early.add("章节修正: %s" % plus_text(decay_rep))
+                night_early.add("名声衰减: %s" % plus_text(decay_rep))
 
             log.add_report(event_color["rep"] % rep_text)
 
@@ -578,11 +578,11 @@ label end_day:
 
             if dice(6) >= 6 and pony:
                 ad_pic = "events/" + rand_choice(pony_pics)
-                night_text += "{color=[c_pink]}母狗游行时间到!{/color}\n"
+                night_text += "{color=[c_pink]}今晚不醉不归!{/color}\n"
 
             elif brothel.get_effect("special", "demon advertising"):
                 ad_pic = rand_choice(game_image_dict["Misc"]["succubi"])
-                night_text += "{color=[c_softpurple]}你的恶魔盟友使用他们的超自然魅力帮助吸引了更多的客户到你的青楼。{/color}\n"
+                night_text += "{color=[c_softpurple]}你的恶魔盟友使用他们的超自然魅力吸引了更多的顾客来你的青楼。{/color}\n"
 
             elif adv_girls:
                 adv_girl = rand_choice(adv_girls)
@@ -590,7 +590,7 @@ label end_day:
                 night_text += "%s: {color=[c_pink]}'%s'{/color}\n" % (adv_girl.name, __(adv_girl.pick_dialogue("advertise").line))
 
             elif brothel.advertising > 0:
-                night_text += __("{color=[c_pink]}'先生!来看看我们的商品，我们也可以是商品哦~ *咯咯*'{/color}\n")
+                night_text += __("{color=[c_pink]}'先生们!欢迎光临，要不要试试我们店里的特色~ *咯咯*'{/color}\n")
 
             if not ad_pic:
                 if brothel.advertising > 0:
@@ -650,12 +650,12 @@ label end_day:
     ## Close brothel if no girls are available
 
         if not working_girls:
-            night_early.add("青楼关门", "header", col="bad")
+            night_early.add("暂停营业", "header", col="bad")
             night_early.add("顾客被拒之门外: %s" % len(customers), ttip = get_customer_population_count(customers))
 
             ad_pic = "events/" + rand_choice(night_pics)
-            night_text += __("青楼今晚关门了.")
-            cust_text = brothel.name + __(" 今晚关门了，因为你的姑娘们都没上班.\n")
+            night_text += __("青楼今晚暂停营业。")
+            cust_text = brothel.name + __(" 今晚暂停营业，因为没有人上班。\n")
 
             if len(customers) > 5: # Lose rep for each customer that comes in vain
                 old_rep = brothel.rep
@@ -665,7 +665,7 @@ label end_day:
                 # cust_text += __("Some customers came and were disappointed. Your brothel's reputation has changed from ") + str_int(old_rep) + __(" to ") + str_int(brothel.rep) + " (" + event_color["bad"] % str_int(rep_loss) + ")."
 
                 if rep_loss:
-                    night_early.add("声誉受损: %s" % plus_text(rep_loss))
+                    night_early.add("名声减少: %s" % plus_text(rep_loss))
 
         # night_text += cust_text
 
@@ -679,15 +679,15 @@ label end_day:
 
         if cleanliness == "dusty":
             turned_away = (dice(2, district.rank)-1)
-            maint_text = "\n你的青楼尘土飞扬。房间里甚至有蜘蛛网."
+            maint_text = "\n你的青楼尘土飞扬。房间里都结蜘蛛网了。"
 
         elif cleanliness == "dirty":
             turned_away = dice(3, district.rank)
-            maint_text = "\n你的青楼越来越脏了。希露甚至还看见了一只老鼠."
+            maint_text = "\n你的青楼越来越脏了。老鼠都能把这里当窝了。"
 
         elif cleanliness == "disgusting":
             turned_away = dice(6, district.rank)
-            maint_text = "\n这地方太恶心了。顾客们都离开了，甚至女孩都生病了!"
+            maint_text = "\n这地方太恶心了。顾客们无法忍受，有些女孩甚至因此生病了!"
 
         if working_girls:
             # Turn away disgusted customers
@@ -702,17 +702,17 @@ label end_day:
                 rep_loss = -sum(c.rank for c in lost_customers)
                 rep_loss = brothel.change_rep(rep_loss)
                 if not customers:
-                    text1 = "你的青楼太脏了，所有 %s 位顾客都跑了 (%s 名声)" % (str(len(lost_customers)), str_int(rep_loss))
+                    text1 = "青楼脏臭不堪， %s 位顾客全都忍受不了离开了青楼 (%s 名声)" % (str(len(lost_customers)), str_int(rep_loss))
                 else:
-                    text1 = "有%s 位顾客因为青楼看起来很脏而拒绝前来 (%s 名声)"  % (str(len(lost_customers)), str_int(rep_loss))
+                    text1 = "有 %s 位顾客因为青楼看起来很脏而拒绝光顾 (%s 名声)"  % (str(len(lost_customers)), str_int(rep_loss))
                 maint_text += "\n" + text1
                 log.add_report(event_color["bad"] % text1)
 
                 night_early.add("Dirtiness", "header")
-                night_early.add("顾客拒之门外: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
-                cust_text += "\n转身走了: %s" % plus_text(-len(lost_customers))
+                night_early.add("顾客被拒之门外: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
+                cust_text += "\n转身离开: %s" % plus_text(-len(lost_customers))
                 if rep_loss:
-                    night_early.add("名称损失: %s" % plus_text(rep_loss))
+                    night_early.add("名声减少: %s" % plus_text(rep_loss))
 
             night_early.add("顾客: %s" % len(customers), "header", ttip = cust_text, ttip_title = "Customer report")
 
@@ -735,7 +735,7 @@ label end_day:
         call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["hannies"]), char = "", text = "虽然比门把手还笨，但她们却很擅长抛光门把手。你的顽皮盟友帮你清理顾客留下的烂摊子，而且他们免费工作:有什么不喜欢的?", type="UI")) from _call_show_night_event_7
 
     if brothel.get_effect("special", "demon security"):
-        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "你的恶魔盟友的大量出现加强了你的安全。今晚维持治安应该是轻而易举的事.", type="UI")) from _call_show_night_event_8
+        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "你的恶魔盟友的大量出现加强了你的安全。今晚维持治安应该是轻而易举的事。", type="UI")) from _call_show_night_event_8
 
     if brothel.threat_build_up(): # Returns True if security event may proc
         call security(working_girls) from _call_security
@@ -817,10 +817,10 @@ label end_day:
                 log.add_report(girl.name + " 今天没有顾客可供招待。.")
 
         if not leftover_customers:
-            log.add_report(event_color["good"] % (__("所有 %s 位顾客在等待时得到了照顾。.") % str_int(len(customers))))
+            log.add_report(event_color["good"] % (__(" %s 位顾客全都被服务的很好。") % str_int(len(customers))))
 
         else:
-            log.add_report(event_color["bad"] % (__("%s 位顾客没有得到照顾，感到厌烦.") % str_int(len(leftover_customers))))
+            log.add_report(event_color["bad"] % (__("%s 位顾客被晾在一旁，十分不爽。") % str_int(len(leftover_customers))))
 
     $ renpy.block_rollback()
 
@@ -830,7 +830,7 @@ label end_day:
         # Sanity check
         for girl in whores:
             if not girl.does_anything():
-                raise AssertionError(" " + girl.fullname + "没有性行为可言。.")
+                raise AssertionError(" " + girl.fullname + "没有激活的性行为。")
 
         wh_crazy_dict = defaultdict(list) # Tracks crazy_customers for the matchmaking screen
 
@@ -905,11 +905,11 @@ label end_day:
     python:
 
         if not leftover_customers:
-            log.add_report(event_color["good"] % ("所有 %s 名顾客都能和妓女上床." % str_int(len(customers))))
+            log.add_report(event_color["good"] % (" %s 个嫖客中的每一位都能和姑娘们在床上一番云雨。" % str_int(len(customers))))
 
         else:
-            night_no_girls = NightChangeLog(title="长夜漫漫", col=c_lightorange)
-            night_no_girls.add("遭受冷待的顾客", "header", col="bad")
+            night_no_girls = NightChangeLog(title="夜色渐深", col=c_lightorange)
+            night_no_girls.add("白跑一趟的顾客", "header", col="bad")
             night_no_girls.add(get_customer_population_count(leftover_customers))
 
             if len(leftover_customers) == len(customers):
@@ -919,10 +919,10 @@ label end_day:
 
             pic = rand_choice(no_girls_pics)
 
-            ev = Event(Picture(pic, "events/" + pic), text = text1 + __("有 %s 名顾客失望地离开了.") % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls)
+            ev = Event(Picture(pic, "events/" + pic), text = text1 + __("有 %s 名顾客失望地离开了。") % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls)
             perform_events.append(ev)
 
-            log.add_report(event_color["bad"] % (__("%s 顾客不能上床，失望地离开.") % str(len(leftover_customers))))
+            log.add_report(event_color["bad"] % (__("%s 名顾客没人伺候，失望地离开了。") % str(len(leftover_customers))))
 
 
     # Predict image for first event in Perform list
@@ -994,13 +994,13 @@ label end_day:
                     for g in girl.friends:
                         if not g.get_effect("special", "shield"):
                             g.add_effects(shield_effect)
-                            extra_text = "\n" + girl.name + " 给她的朋友 " + g.fullname + "施加了一个魔法盾."
+                            extra_text = "\n" + girl.name + " 给她的闺蜜" + g.fullname + "施加了一层魔法护盾。"
                             resting_changes.add("Shield cast on " + g.fullname, col=c_lightblue)
                             extra_sound = s_spell
                             break
                 else:
                     girl.add_effects(shield_effect)
-                    extra_text =  "\n" + girl.name + " 给自己施加了一个魔法盾."
+                    extra_text =  "\n" + girl.name + " 给自己施加了一层魔法护盾。"
                     resting_changes.add("Shield cast on herself", col=c_lightblue)
                     extra_sound = s_spell
 
@@ -1080,7 +1080,7 @@ label end_day:
     ## Change Brothel Rep
 
     python:
-        night_late = NightChangeLog("深夜回顾", col=c_lightorange)
+        night_late = NightChangeLog("今日小结", col=c_lightorange)
         night_late.add("第 %i 年 %i 月 第 %i 天 %s" % (calendar.year, calendar.month, calendar.day, __(calendar.get_weekday())), "header")
         old_rep = brothel.rep
 
@@ -1090,19 +1090,19 @@ label end_day:
         satisfied = sum(1 for c in customers if c.got_sex_act == c.wants_sex_act)
 
         night_late.add("顾客总数: %i" % len(customers), "header")
-        night_late.add("被服务的总人数: %s" % (event_color["average"] % served), ttip="%i 名等待的顾客中，顾客们被招待了 %i " % (served, len(customers)))
-        night_late.add("嫖娼总人数: %s" % (event_color["average"] % laid), ttip="%i customers were tended to by a whore out of %i waiting customers" % (laid, len(customers)))
-        night_late.add("被服务得满意的人数: %s" % (event_color["a little good"] % entertained), ttip="%i customers were satisfied out of %i entertained customers" % (entertained, served))
-        night_late.add("对做爱满意的人数: %s" % (event_color["a little good"] % satisfied), ttip="%i customers were satisfied out of %i whoring customers" % (satisfied, laid))
+        night_late.add("普通顾客总数: %s" % (event_color["average"] % served), ttip="%i 名顾客中只有 %i 名顾客得到了服务。" % (len(customers), served ))
+        night_late.add("嫖娼顾客总数: %s" % (event_color["average"] % laid), ttip="%i 名嫖客中只有 %i 名嫖客有姑娘伺候。" % (len(customers), laid))
+        night_late.add("对服务满意的人数: %s" % (event_color["a little good"] % entertained), ttip="%i 名消费的顾客中有 %i 名顾客对服务表示满意。" % (served, entertained))
+        night_late.add("对嫖娼满意的人数: %s" % (event_color["a little good"] % satisfied), ttip="%i 名嫖客中有 %i 名嫖客对姑娘们感到满意。" % (laid, satisfied))
 
-        log.add_report(event_color["good"] % (str(len(customers)) + " customer" + plural(len(customers)) + " came to your brothel. " + str(served) + " got attended (" + str(entertained) + " entertained), " + str(laid) + " got laid (" + str(satisfied) + " satisfied)."))
+        log.add_report(event_color["good"] % (str(len(customers)) + " 名顾客" + plural(len(customers)) + " 光顾了你的青楼。 " + str(served) + " 名顾客得到了服务 (" + str(entertained) + " 名顾客对服务感到满意), " + str(laid) + " 名顾客和姑娘们巫山云雨 (" + str(satisfied) + " 名顾客对姑娘们很满意)。"))
 
         rep_chg = sum(c.get_reputation_change() for c in customers)
         rep_chg = brothel.change_rep(rep_chg)
 
-        night_late.add("名声: %s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), event_color["rep"] % (plus_text(rep_chg))), "header", ttip=plus_text(rep_chg) + " 从满意的客户中增加名声.")
+        night_late.add("名声: %s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), event_color["rep"] % (plus_text(rep_chg))), "header", ttip=plus_text(rep_chg) + " 客户的满意度提供的名声。")
 
-        log.add_report(event_color["rep"] % ("青楼名声从 %s 变为 %s (%s)" % (str_int(old_rep), str_int(brothel.rep), plus_text(round_int(rep_chg)))))
+        log.add_report(event_color["rep"] % ("青楼的名声从 %s 变为 %s (%s)" % (str_int(old_rep), str_int(brothel.rep), plus_text(round_int(rep_chg)))))
 
         log.track("served", served)
         log.track("entertained", entertained)
@@ -1115,7 +1115,7 @@ label end_day:
 
     $ customers.sort(key=lambda x: x.reputation_change, reverse=True)
 
-    $ renpy.say("", "嫖妓阶段结束", interact=False)
+    $ renpy.say("", "客人离场，结束营业", interact=False)
 
     $ latest_sat_report = [customers, old_rep, rep_chg]
 
@@ -1149,11 +1149,11 @@ label end_day:
             call show_relationship_change(girl1, girl2, old_status, new_status) from _call_show_relationship_change
 
             if new_status == "friend":
-                $ log.add_report(event_color["good"] % ("%s 和 %s 已经成为朋友." % (girl1.fullname, girl2.fullname)))
+                $ log.add_report(event_color["good"] % ("%s 和 %s 成为了好闺蜜。" % (girl1.fullname, girl2.fullname)))
             elif new_status == "rival":
-                $ log.add_report(event_color["bad"] % ("%s 和 %s 已经成为竞争对手." % (girl1.fullname, girl2.fullname)))
+                $ log.add_report(event_color["bad"] % ("%s 和 %s 成为了死对头。" % (girl1.fullname, girl2.fullname)))
             elif new_status == "normal":
-                $ log.add_report("%s 和 %s 不再是 %s." % (girl1.fullname, girl2.fullname, old_status))
+                $ log.add_report("%s 和 %s 不再是 %s 。" % (girl1.fullname, girl2.fullname, old_status))
 
     elif len(working_girls) > 1:
         call random_relationship_event(working_girls) from _call_random_relationship_event
@@ -1246,9 +1246,9 @@ label end_day:
 
         chg = brothel.change_dirt(-1 * brothel.get_maintenance())
 
-        night_late.add("Cleanliness: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + brothel.get_cleanliness())
-        night_late.add("Dirt: %s" % plus_text(log.dirt))
-        night_late.add("Maintenance: %s" % plus_text(chg))
+        night_late.add("卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="你的青楼 " + brothel.get_cleanliness())
+        night_late.add("垃圾: %s" % plus_text(log.dirt))
+        night_late.add("清洁: %s" % plus_text(chg))
 
     ## Pay the rent
 
@@ -1273,23 +1273,23 @@ label end_day:
         gold_text = __("你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.upkeep)) + __(" 金币作为女孩的薪水。")
 
         if free_girl:
-            gold_text += __(" (免保养费: ") + free_girl.name + ")"
+            gold_text += __(" (免费保养: ") + free_girl.name + ")"
 
         if working_girls:
             log.costs = brothel.get_adv_cost() + brothel.get_sec_cost() + brothel.get_maintenance_cost()
-            gold_text += __(".\nY你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的开销。")
+            gold_text += __(".\nY你支付了 ") + '{image=img_gold} ' + '{:,}'.format(round_int(log.costs)) + __(" 金币作为员工工资。")
 
         else:
             log.costs = brothel.get_maintenance_cost()
-            gold_text += ". " + brothel.name + __(" 关门了，所以你让保安和广告人员回家了。你支付了 ") + '{:,}'.format(round_int(log.costs)) + __(" 金币作为青楼的开销。")
+            gold_text += "。 " + brothel.name + __(" 暂停营业，所以你让保安和宣传人员回去了。你支付了 ") + '{:,}'.format(round_int(log.costs)) + __("金币作为青楼的开销。")
 
         loan_payment = MC.repay_loan()
 
         if loan_payment:
             log.costs += loan_payment
-            gold_text += "\n你支付了 {image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + " 金币作为青楼的开销。"
+            gold_text += "\n你支付了 {image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + "金币给外包人员。"
 
-        gold_recap = "你支付了 {image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + " 金币作为青楼的开销。."
+        gold_recap = "你支付了 {image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + " 金币给外包人员。"
 
     ## Katchiiing
 
@@ -1319,7 +1319,7 @@ label end_day:
 
             if nb > 0:
                 MC.gain_resource(resource, nb, message=False)
-                gold_recap += __(" 和 ") + str_int(nb) + " " + resource
+                gold_recap += __("和") + str_int(nb) + " " + resource
                 night_late.add("Resources", "header")
                 night_late.add("+%i {image=tb %s}" % (nb, resource), col="good")
 
@@ -1359,11 +1359,11 @@ label end_day:
         NPC_taxgirl.MC_income += (log.net * brothel.get_effect("boost", "taxable net income"))
 
         if log.net > 0:
-            gold_recap += __(", 获得利润  {image=img_gold_24} {b}") + event_color["a little good"] % '{:,}'.format(log.net) + "{/b}金币."
+            gold_recap += __(", 获得利润  {image=img_gold_24} {b}") + event_color["a little good"] % '{:,}'.format(log.net) + "{/b}金币。"
         elif log.net < 0:
-            gold_recap += __(", 未能获利。你亏损了 {image=img_gold_24} {b}") + event_color["a little bad"] % '{:,}'.format(-1*log.net) + "{/b}金币."
+            gold_recap += __(", 入不敷出。你亏损了 {image=img_gold_24} {b}") + event_color["a little bad"] % '{:,}'.format(-1*log.net) + "{/b}金币。"
         else:
-            gold_recap += __("，不赚不赔。你盈利了 {color=[c_red]}{b}0{/b} 金币{/color}。")
+            gold_recap += __("，收支平衡。你盈利了 {color=[c_red]}{b}0{/b} 金币{/color}。")
 
         if log.net > 2500:
             pic = rand_choice(treasure_pics["+++"])
@@ -1386,11 +1386,11 @@ label end_day:
     while catch_up_changes:
         $ girl, changes = catch_up_changes.pop(0)
 
-        $ text1 = girl.fullname + " helped "
+        $ text1 = girl.fullname + "帮助"
         if len(changes) > 1:
-            $ text1 += "other girls develop their skills.\n{size=-6}("
+            $ text1 += "其他女孩提升了她们的技能。\n{size=-6}("
         else:
-            $ text1 += "another girl develop her skills.\n{size=-6}("
+            $ text1 += "另一个女孩提升了她的技能。\n{size=-6}("
 
         python:
             for girl2, stats in changes:
