@@ -2676,7 +2676,7 @@ screen schedule(glist):
             for day in weekdays:
 
                 frame xsize xres(88) ysize yres(20)  yalign 1.0 background None:
-                    text day size res_font(14) xalign 0.5 color c_brown xsize xres(90):
+                    text setting_name_dict[day] size res_font(14) xalign 0.5 color c_brown xsize xres(90):
                         if day == calendar.get_weekday():
                             bold True
 
@@ -2705,7 +2705,7 @@ screen schedule(glist):
                         xalign 1.0
                         yalign 0.5
 
-                        button xsize xres(95) ysize yres(53) style "girlbutton" xpadding xres(6) ypadding yres(3) action (SetVariable("selected_girl", girl), Return()) tooltip "Click here to check " + girl.fullname + "'s profile.":
+                        button xsize xres(95) ysize yres(53) style "girlbutton" xpadding xres(6) ypadding yres(3) action (SetVariable("selected_girl", girl), Return()) tooltip "点击这里查看 " + girl.fullname + " 的概要。":
                             has vbox
 
                             xalign 1.0
@@ -2718,7 +2718,7 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = girl.job.capitalize()
+                                $ text1 = setting_name_dict[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
                                 $ text1 = "无工作"
@@ -2757,27 +2757,27 @@ screen schedule(glist):
                     for day in weekdays:
 
                         if girl.workdays[day] == 100:
-                            $ ttip = "She will work to the maximum of her abilities."
+                            $ ttip = "她将尽最大努力工作。"
 
                         elif girl.workdays[day] == 50:
-                            $ ttip = "She will receive half the usual number of clients, saving some energy."
+                            $ ttip = "她接待的客户数量将是平时的一半，节省了一些精力。"
 
                         elif girl.workdays[day] == 0:
-                            $ ttip = "She will rest and recover some energy."
+                            $ ttip = "她要休息一下，恢复体力。"
 
-                        $ ttip += "\n{i}Right-click to reverse cycle order.{/i}"
+                        $ ttip += "\n{i}右键可反转循环顺序。{/i}"
 
-                        textbutton workshift_dict[girl.workdays[day]] text_size res_font(14) xsize xres(90) ysize yres(40) yalign 0.5 tooltip ttip idle_background workshift_color[girl.workdays[day]] hover_background c_darkbrown + "CC":
+                        textbutton setting_name_dict[workshift_dict[girl.workdays[day]]] text_size res_font(14) xsize xres(90) ysize yres(40) yalign 0.5 tooltip ttip idle_background workshift_color[girl.workdays[day]] hover_background c_darkbrown + "CC":
                             if girl.block_schedule != day:
                                 action Function(girl.cycle_workday, day) # renpy.curried_invoke_in_new_context(girl.cycle_workday, day)
                             else:
-                                action Function(renpy.notify, "\nYou cannot change her schedule as you gave her a day off.")
+                                action Function(renpy.notify, "\n你给她放了一天假，你不能改变她的日程安排。")
 
                             alternate Function(girl.cycle_workday, day, True)
 
                     vbox yalign 0.5:
-                        textbutton "S" action ShowTransient("save_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "Click here to save %s's schedule." % girl.fullname
-                        textbutton "L" action ShowTransient("load_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "Click here to load a schedule for %s." % girl.fullname
+                        textbutton "S" action ShowTransient("save_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "点击这里保存%s的排班表。" % girl.fullname
+                        textbutton "L" action ShowTransient("load_schedule", girl=girl, transition=Dissolve(0.15)) tooltip "点击这里加载%s的排班表。" % girl.fullname
 
         text ""
 
@@ -2795,7 +2795,7 @@ screen save_schedule(girl):
     frame background c_ui_darkblue align(0.5, 0.5) xpadding xres(20) ypadding yres(20):
 
         vbox:
-            text "Save %s's schedule" % (event_color["special"] % girl.fullname) bold True color c_white size res_font(18) xalign 0.5
+            text "保存%s的日程安排" % (event_color["special"] % girl.fullname) bold True color c_white size res_font(18) xalign 0.5
             null height yres(20)
             for i in range(10):
                 button action (Function(game.save_schedule, girl, i), Hide("save_schedule", transition=Dissolve(0.15))) xsize xres(220) ysize yres(28):

@@ -566,6 +566,8 @@ init -10 python:
                          "Negative fixation" : "不良癖好",
                          "Not naked" : "穿好衣服",
                          "Not work&whore" : "正常工作",
+                         "Full Shift" : "全班",
+                         "Half Shift" : "半班",
 
                          ## 夜间活动设置 ##
                          "Normal" : "一般",
