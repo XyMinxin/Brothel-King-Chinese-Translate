@@ -12072,58 +12072,6 @@ translate chinese strings:
     old "Punish her"
     new "惩罚她"
 
-    # game/BKday_events.rpy:1052
-    old "How will you punish her?"
-    new "你将怎样惩罚她吗？"
-
-    # game/BKday_events.rpy:1052
-    old "Make her clean up the dirty sheets tonight"
-    new "今晚让她清理脏的床单"
-
-    # game/BKday_events.rpy:1052
-    old "Force her to haul some heavy supplies"
-    new "强迫她拖着有些沉重的物资"
-
-    # game/BKday_events.rpy:1052
-    old "Place her naked by the entrance door"
-    new "让她裸体站在入口"
-
-    # game/BKday_events.rpy:1052
-    old "Make her service every customer that comes in"
-    new "让她为进来的每一位客户服务"
-
-    # game/BKday_events.rpy:1052
-    old "Fuck her right where she stands"
-    new "就在她站着的地方操她"
-
-    # game/BKday_events.rpy:1219
-    old "Intervene and take [girl.name]'s side"
-    new "介入并站在[girl.name]的一边"
-
-    # game/BKday_events.rpy:1219
-    old "Intervene and take the customer's side"
-    new "介入并站在客户的一边"
-
-    # game/BKday_events.rpy:1219
-    old "Let them sort it out between themselves"
-    new "让他们自己解决"
-
-    # game/BKday_events.rpy:1280
-    old "Fight him"
-    new "打他"
-
-    # game/BKday_events.rpy:1280
-    old "Cast a spell"
-    new "施放魔法"
-
-    # game/BKday_events.rpy:1466
-    old "Make [girl.name] service the customer"
-    new "使[girl.name]服务客户"
-
-    # game/BKday_events.rpy:1466
-    old "Let the customer fuck [girl.name]"
-    new "让客户去操[girl.name]"
-
     # game/BKday_events.rpy:1548
     old "Join the crowd"
     new "加入人群"

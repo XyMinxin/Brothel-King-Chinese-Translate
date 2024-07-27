@@ -2608,7 +2608,7 @@ init -2 python:
             chg = get_change_min_max(self.rep, chg, 0, self.max_rep)
             self.rep += chg
 
-            notify("%s: %s reputation: " % (brothel.name, plus_text(chg, color_scheme="rep")))
+            notify("%s 的名声变化: %s " % (brothel.name, plus_text(chg, color_scheme="rep")))
 
             return chg
 
@@ -3884,7 +3884,7 @@ init -2 python:
                     text1 = "可以在普通工作中获得声望"
 
                 elif target == "skill catch up":
-                    text1 += "每天晚上，她会帮助其他属性较低的姐妹获得永久的属性提升 (每升一阶多提升一人)"
+                    text1 += "每天晚上，她会帮助其他属性比她低的女孩获得永久的属性提升 (每升一阶多帮助一人)"
 
                 elif target == "effect chance":
                     text1 += "使天赋生效的基础几率加倍 (最多50%)"
@@ -3893,16 +3893,16 @@ init -2 python:
                     text1 += "即使你没有行动力了你也可以保护她们"
 
                 elif target == "snake eyes":
-                    text1 += "你的催眠洗脑现在不会失手了"
+                    text1 += "你的催眠洗脑现在不会失败了"
 
                 elif target == "safe":
                     text1 += "青楼的发生紧急事件时至少保留 " + str(val) + " 金币。"
 
                 elif target == "focus":
-                    text1 += "如果她只有一个激活的性行为，+25%小费和声誉收益 (不包括双飞和群交)"
+                    text1 += "如果女孩专精于一种性行为，+25%小费和声望收益 (不包括双飞和群交行为)"
 
                 elif target == "rest shield":
-                    text1 += "休息时，她可以对自己或朋友施放魔法护盾，以保护其免受攻击"
+                    text1 += "休息时，她可以对自己或朋友施放一层魔法护盾，保护其免受攻击"
 
                 elif target == "ignore budgets":
                     text1 += "无视顾客的预算限制"
@@ -3910,12 +3910,12 @@ init -2 python:
                 text1 = "在作为妓女工作时接受双飞行为" if target == "bisexual" else text1
                 text1 = "在任何时候包括平时都保持裸体" if target == "naked" else text1
                 text1 = "在作为妓女工作时接受激烈的多人群交" if target == "orgy" else text1
-                text1 = "在座位妓女工作时扮演各种动物(比如母狗)" if target == "ponygirl" else text1
+                text1 = "在作为妓女工作时戴上装饰扮演兽耳娘" if target == "ponygirl" else text1
 
                 return __(text1)
 
             elif self.type == "instant" and target == "heal":
-                return "疗伤时间减少 " + str(val) + " 天."
+                return "疗伤时间减少 " + str(val) + "天。"
 
             if self.type == "set":
                 target = "所有技能上限值" if target == "all skill max" else target
@@ -3926,20 +3926,20 @@ init -2 python:
 
             if self.type == "allow":
                 if target.endswith("preference"):
-                    target = "享受服务喜好" if target == "waitress preference" else target
-                    target = "观看舞蹈喜好" if target == "dancer preference" else target
-                    target = "接受按摩喜好" if target == "masseuse preference" else target
-                    target = "观摩表演喜好" if target == "geisha preference" else target
-                    target = "侍奉喜好" if target == "service preference" else target
-                    target = "性交喜好" if target == "sex preference" else target
-                    target = "肛交喜好" if target == "anal preference" else target
-                    target = "调教喜好" if target == "fetish preference" else target
-                    target = "群交喜好" if target == "group preference" else target
-                    target = "双飞喜好" if target == "bisexual preference" else target
-                    target = "所有性行为喜好" if target == "all sex acts preference" else target
+                    target = "享受服务倾向" if target == "waitress preference" else target
+                    target = "观看舞蹈倾向" if target == "dancer preference" else target
+                    target = "接受按摩倾向" if target == "masseuse preference" else target
+                    target = "观摩表演倾向" if target == "geisha preference" else target
+                    target = "侍奉倾向" if target == "service preference" else target
+                    target = "性交倾向" if target == "sex preference" else target
+                    target = "肛交倾向" if target == "anal preference" else target
+                    target = "调教倾向" if target == "fetish preference" else target
+                    target = "群交倾向" if target == "group preference" else target
+                    target = "双飞倾向" if target == "bisexual preference" else target
+                    target = "所有性行为倾向" if target == "all sex acts preference" else target
                     text1 += "允许您增加客人的' " + target + " 最多 +" + str(50*val) + "%."
                 else:
-                    text1 += "现在" + setting_name_dict[target] + "会来你的青楼消费."
+                    text1 += "现在" + setting_name_dict[target] + "也会光顾你的青楼了。"
 
                 return text1
 
@@ -3954,7 +3954,7 @@ init -2 python:
 
             if self.type == "reroll":
                 if text1:
-                    text1 += "投掷骰子... "
+                    text1 += "再掷一次... "
                 else:
                     text1 += __("掷骰子")
 
@@ -4119,14 +4119,14 @@ init -2 python:
             target = "所有技能收益" if target == "all skill gains" else target
             target = "所有职业经验收益" if target == "all jp gains" else target
 
-            target = "露出偏爱增加" if target == "naked preference increase" else target
-            target = "肛交偏爱增加" if target == "anal preference increase" else target
-            target = "性交偏爱增加" if target == "sex preference increase" else target
-            target = "侍奉偏爱增加" if target == "service preference increase" else target
-            target = "调教偏爱增加" if target == "fetish preference increase" else target
-            target = "群交偏爱增加" if target == "group preference increase" else target
-            target = "双飞偏爱增加" if target == "bisexual preference increase" else target
-            target = "所有性行为偏爱增加" if target == "all sex acts preference increase" else target
+            target = "露出倾向增加" if target == "naked preference increase" else target
+            target = "肛交倾向增加" if target == "anal preference increase" else target
+            target = "性交倾向增加" if target == "sex preference increase" else target
+            target = "侍奉倾向增加" if target == "service preference increase" else target
+            target = "调教倾向增加" if target == "fetish preference increase" else target
+            target = "群交倾向增加" if target == "group preference increase" else target
+            target = "双飞倾向增加" if target == "bisexual preference increase" else target
+            target = "所有性行为倾向增加" if target == "all sex acts preference increase" else target
 
             target = "舞娘职业经验得分" if target == "dancer jp bonus" else target
             target = "按摩师职业经验得分" if target == "masseuse jp bonus" else target
@@ -4240,17 +4240,17 @@ init -2 python:
             target = "作为妓女时客户的预算" if target == "whore customer budget" else target
             target = "客户活动 " if target == "customer events" else target
             target = "疯狂" if target == "crazy" else target
-            target = "服务员偏爱" if target == "waitress preference" else target
-            target = "舞娘偏爱" if target == "dancer preference" else target
-            target = "按摩师偏爱" if target == "masseuse preference" else target
-            target = "艺妓偏爱" if target == "geisha preference" else target
-            target = "侍奉偏爱" if target == "service preference" else target
-            target = "性交偏爱" if target == "sex preference" else target
-            target = "肛交偏爱" if target == "anal preference" else target
-            target = "调教偏爱" if target == "fetish preference" else target
-            target = "群交偏爱" if target == "group preference" else target
-            target = "双飞偏爱" if target == "bisexual preference" else target
-            target = "所有性行为偏爱" if target == "all sex acts preference" else target
+            target = "服务员倾向" if target == "waitress preference" else target
+            target = "舞娘倾向" if target == "dancer preference" else target
+            target = "按摩师倾向" if target == "masseuse preference" else target
+            target = "艺妓倾向" if target == "geisha preference" else target
+            target = "侍奉倾向" if target == "service preference" else target
+            target = "性交倾向" if target == "sex preference" else target
+            target = "肛交倾向" if target == "anal preference" else target
+            target = "调教倾向" if target == "fetish preference" else target
+            target = "群交倾向" if target == "group preference" else target
+            target = "双飞倾向" if target == "bisexual preference" else target
+            target = "所有性行为倾向" if target == "all sex acts preference" else target
             target = "满意度" if target == "satisfaction" else target
             target = "每日恐惧" if target == "fear per day" else target
             target = "" if target == "" else target
@@ -4270,40 +4270,40 @@ init -2 python:
             if self.scales_with:
 
                 if self.scales_with == "equipped":
-                    text1 += "随装备数递增"
+                    text1 += "（随装备数递增）"
 
                 elif self.scales_with == "cust nb":
-                    text1 += "随顾客数递增"
+                    text1 += "（随顾客数递增）"
                 elif self.scales_with == "job cust nb":
                     text1 += "针对为顾客工作时"
                 elif self.scales_with == "whore cust nb":
                     text1 += "针对为顾客提供特殊服务时"
                 elif self.scales_with == "customer satisfaction":
-                    text1 += "随客户满意度递增"
+                    text1 += "（随客户满意度递增）"
 
                 else:
                     # text1 += __("对于每点的") + __(self.scales_with)
 
                     if self.scales_with == "strength":
-                        scalesxxx="随主角力量递增"
+                        scalesxxx="（随主角力量递增）"
                     elif self.scales_with == "spirit":
-                        scalesxxx="随主角精神递增"
+                        scalesxxx="（随主角精神递增）"
                     elif self.scales_with == "charisma":
-                        scalesxxx="随主角魅力递增"
+                        scalesxxx="（随主角魅力递增）"
                     elif self.scales_with == "speed":
-                        scalesxxx="随主角速度递增"
+                        scalesxxx="（随主角速度递增）"
                     elif self.scales_with == "charisma":
-                        scalesxxx="随主角魅力递增"
+                        scalesxxx="（随主角魅力递增）"
                     elif self.scales_with == "defense":
-                        scalesxxx="随个人防御递增"
+                        scalesxxx="（随个人防御递增）"
                     elif self.scales_with in ("rep", "reputation"):
-                        scalesxxx="随个人名声递增"
+                        scalesxxx="（随个人名声递增）"
                     elif self.scales_with == "rank":
-                        scalesxxx="随阶级递增"
+                        scalesxxx="（随阶级递增）"
                     elif self.scales_with == "equipped": # Counts every piece of equipment
-                        scalesxxx="随装备数递增"
+                        scalesxxx="（随装备数递增）"
                     elif self.scales_with == "district":
-                        scalesxxx="随地区递增"
+                        scalesxxx="（随地区递增）"
                     else:
                         scalesxxx=self.scales_with
                     text1 += scalesxxx
