@@ -656,10 +656,10 @@ label random_night_girl_event(girl, room):
         menu:
             extend ""
 
-            "Enter [girl.fullname]'s room":
+            "进入[girl.fullname]的房间":
                 pass
 
-            "Maybe another time":
+            "下次再说吧":
                 call hide_everything() from _call_hide_everything_7
                 scene black with dissolve
                 return
@@ -1054,23 +1054,23 @@ label random_night_girl_event(girl, room):
                     $ girl.change_fear(1)
 
                 menu:
-                    "How will you punish her?"
+                    "你将怎样惩罚她？"
 
-                    "Make her clean up the dirty sheets tonight":
+                    "今晚让她清理脏的床单":
                         you "After your service, you're going to do all the laundry tonight, using your bare hands and a bar of soap. I want you to wipe every last cum stain off those bed sheets! Or you'll have to do it again tomorrow."
                         girl.char "Aw..."
 
                         $ girl.change_fear(1)
                         $ changed_stats = [("obedience", dice(3))]
 
-                    "Force her to haul some heavy supplies":
+                    "强迫她拖着有些沉重的物资":
                         you "You're going to pick up the beer kegs downstairs and bring them all up to the hall. On the double!"
                         girl.char "Oh no... They're so heavy..."
 
                         $ girl.change_fear(1)
                         $ changed_stats = [("constitution", dice(3))]
 
-                    "Place her naked by the entrance door":
+                    "让她裸体站在入口":
 
                         $ selected_act = "naked"
 
@@ -1084,7 +1084,7 @@ label random_night_girl_event(girl, room):
 
                         call night_girl_perform() from _call_night_girl_perform_4
 
-                    "Make her service every customer that comes in": # No call of the perform label for this one
+                    "让她为进来的每一位客户服务": # No call of the perform label for this one
 
                         $ selected_act = "service"
                         $ fix = rand_choice(["handjobs", "oral", "titjobs"])
@@ -1159,7 +1159,7 @@ label random_night_girl_event(girl, room):
 
                         "You make her service every incoming customer tonight. Exhausted, her body and clothes covered in cum stains, she goes off to rest."
 
-                    "Fuck her right where she stands":
+                    "就在她站着的地方操她":
                         $ selected_act = "sex"
                         $ fix = rand_choice(["public acts", "doggy style", "piledriver"])
 
@@ -1223,7 +1223,7 @@ label random_night_girl_event(girl, room):
         menu:
             extend ""
 
-            "Intervene and take [girl.name]'s side":
+            "介入并站在[girl.name]的一边":
                 "Grabbing the man by the shoulder, you yank him away from your slavegirl."
 
                 you "Hey, buster! Take your hands off the merchandise."
@@ -1284,12 +1284,12 @@ label random_night_girl_event(girl, room):
                     menu:
                         "What do you do?"
 
-                        "Fight him":
+                        "打他":
 
                             $ _type = "combat"
                             $ result = MC.get_defense() + dice(6) - (strength + dice(6))
 
-                        "Cast a spell":
+                        "施放魔法":
 
                             $ _type = "magic"
                             $ result = MC.get_spirit() + dice(6) - (magic + dice(6))
@@ -1443,7 +1443,7 @@ label random_night_girl_event(girl, room):
                 else:
                     $ girl.change_love(dice(3))
 
-            "Intervene and take the customer's side":
+            "介入并站在客户的一边":
                 man "Stop resisting, ye little slut!"
                 girl.char "Master, haa... Help me..."
 
@@ -1470,7 +1470,7 @@ label random_night_girl_event(girl, room):
                 man "Why, there sure is..."
 
                 menu:
-                    "Make [girl.name] service the customer":
+                    "让[girl.name]服务客户":
                         $ selected_act = "service"
                         $ fix = rand_choice(["masturbation", "deep throat", "swallowing"])
 
@@ -1485,7 +1485,7 @@ label random_night_girl_event(girl, room):
                                 "[girl.fullname] ran away."
                                 return
 
-                    "Let the customer fuck [girl.name]":
+                    "让客户去操[girl.name]":
                         $ selected_act = "sex"
                         $ fix = rand_choice(["insults", "dirty sex", "creampie"])
 
@@ -1507,7 +1507,7 @@ label random_night_girl_event(girl, room):
 
 
 
-            "Let them sort it out between themselves":
+            "让他们自己解决":
                 you "I like to stay above the fray."
 
                 if girl.is_("dom"):
