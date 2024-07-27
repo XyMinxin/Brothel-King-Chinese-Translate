@@ -1000,7 +1000,7 @@ label random_night_girl_event(girl, room):
 
         $ MC.rand_say(("gd: 发生什么事了[girl.name]？你还好吗？", "ne: 啊，[girl.name]。你是时候回来了。", "ev: 嘿，[girl.name]，你这个愚蠢的婊子！你他妈以为你在干什么?"))
 
-        $ excuse = rand_choice((__("我去拜访了一个朋友", "我去购买了一些用品", "我去散步结果迷路了", "我在给希露拿东西", "我感觉有点不舒服，想出去呼吸一下新鲜空气", "我休息的时候忘了时间")))
+        $ excuse = rand_choice(("我去拜访了一个朋友", "我去购买了一些用品", "我去散步结果迷路了", "我在给希露拿东西", "我感觉有点不舒服，想出去呼吸一下新鲜空气", "我休息的时候忘了时间"))
 
         girl.char "M-Master, you... I'm sorry I'm late, [excuse], and..."
 
