@@ -856,10 +856,6 @@ translate schinese strings:
     old "Her upkeep is currently withdrawn."
     new "她目前的保养费用用已被提取。"
 
-    # game/BKscreens.rpy:2086
-    old "Farm"
-    new "农场"
-
     # game/BKscreens.rpy:2292
     old "Bu{u}y{/u}"
     new "购买"
@@ -879,10 +875,6 @@ translate schinese strings:
     # game/BKscreens.rpy:2419
     old "Dismiss"
     new "解放"
-
-    # game/BKscreens.rpy:2426
-    #old "Sell"
-    #new "出售"
 
     # game/BKscreens.rpy:2436
     old "Level {u}u{/u}p"
@@ -1968,7 +1960,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8032
     old "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
-    new "点击女孩的个人资料可以添加或删除该女孩。\n你可以点击'+'创建一个新的组合。"
+    new "点击女孩的头像可以添加或删除该女孩。\n你可以点击'+'创建一个新的组合。"
 
     # game/BKscreens.rpy:8077
     old "by "

@@ -736,7 +736,7 @@ label slave_chat_well_being(girl):
         if nb == 1:
             $ nb_times = "1次"
         else:
-            $ nb_times = str(nb) + " 次"
+            $ nb_times = str(nb) + "次"
 
         call dialogue(girl, "slave chat well_being attacked") from _call_dialogue_135
 
@@ -749,7 +749,7 @@ label slave_chat_well_being(girl):
         if nb == 1:
             $ nb_times = "1次"
         else:
-            $ nb_times = str(nb) + " 次"
+            $ nb_times = str(nb) + "次"
 
         call dialogue(girl, "slave chat well_being sick") from _call_dialogue_136
 
@@ -762,7 +762,7 @@ label slave_chat_well_being(girl):
         if nb == 1:
             $ nb_times = "1次"
         else:
-            $ nb_times = str(nb) + " 次"
+            $ nb_times = str(nb) + "次"
 
         call dialogue(girl, "slave chat well_being exhausted") from _call_dialogue_137
 

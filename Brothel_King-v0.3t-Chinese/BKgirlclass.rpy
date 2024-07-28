@@ -3363,7 +3363,7 @@ init -2 python:
             message = ""
 
             if not self.archetypes[perk.archetype].unlocked:
-                message += perk.archetype + " 暂时是锁定的。\n"
+                message += translate_cn(perk.archetype, archetype_name_dict) + "暂时是锁定的。\n"
             elif val < perk.value:
                 message += str(perk.value) + " 更多的等级必须先解锁。\n"
             elif self.rank < perk.min_rank:
@@ -4813,7 +4813,7 @@ init -2 python:
             des = "{b}" + self.fullname + " "
 
             if show == "personality":
-                des += "个性{/b}{size=-1}\n\n"
+                des += "的个性{/b}{size=-1}\n\n"
 
                 ei = self.personality_unlock["EI"]
                 mi = self.personality_unlock["MI"]
@@ -4825,7 +4825,7 @@ init -2 python:
 #                lm = 100
 #                ds = 100
 
-                des += self.name + " 是一个 "
+                des += self.name + " 是一个"
 
                 if self.free and self in MC.girls + farm.girls:
                     des += "曾经自由的女孩"
@@ -4906,7 +4906,7 @@ init -2 python:
 
             elif show == "tastes":
 
-                des += "她的喜好{/b}{size=-1}\n\n"
+                des += "的喜好{/b}{size=-1}\n\n"
 
                 taste_text = ""
 
@@ -4972,7 +4972,7 @@ init -2 python:
 
             elif show == "sexual":
 
-                des += "性癖{/b}\n\n"
+                des += "的性癖{/b}\n\n"
 
                 sex_text = ""
 
