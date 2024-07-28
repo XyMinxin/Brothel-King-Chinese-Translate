@@ -1331,7 +1331,7 @@ init -3 python:
         else:
             return event_color[neg_color] % (neg_marker + nb_txt)
 
-    def and_text(li, txt=" 和 ", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
+    def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator="、"): # prune_empty removes empty entries from the list
 
         if prune_empty:
             li = [x for x in li if x]

@@ -196,11 +196,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2083
     old "Send "
-    new "送 "
+    new "送"
 
     # game/BKscreens.rpy:2083
     old " to the farm."
-    new " 到奴隶农场接受调教。"
+    new "到奴隶农场接受调教。"
 
     # game/BKscreens.rpy:2094
     old "Remove "
