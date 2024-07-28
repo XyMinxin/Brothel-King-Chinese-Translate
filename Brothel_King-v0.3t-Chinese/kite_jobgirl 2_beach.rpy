@@ -404,11 +404,11 @@ label jobgirl_beach_4():
     "If not for her swimsuit, you could clearly see her cunt. You realize that she's teasing you, but you're not sure if she really wants it, or she's testing you. Maybe she's got ulterior motives."
 
     menu:
-        "Why, yes, I'd like to fuck her":
+        "为什么, 那还用问？ 我想和她上床":
 
             you "Damn right I wanna fuck her, she's so hot! Are you going to help me or put a stick in my wheel?"
 
-        "Who, me? Nope!":
+        "谁, 我? 不可能的!":
 
             you "I'm not so mean. I don't want to do what you said. Nor am I looking to do 'naughty things' right now. For now I just want to know her better."
 
@@ -456,7 +456,7 @@ label jobgirl_beach_4():
 
     menu:
 
-        "Pull out your cock":
+        "掏出肉棒":
 
             $ NPC_jobgirl.flags["anika_sex"] = True
 
@@ -594,7 +594,7 @@ label jobgirl_beach_4():
 
             menu:
 
-                "Cum inside":
+                "射在里面":
 
                     anika "Are you going to fill me with your semen?"
 
@@ -608,7 +608,7 @@ label jobgirl_beach_4():
 
                     anika "I... aaah... came again..."
 
-                "Pull out":
+                "拔出来":
 
                     "A few instants before you ejaculate, you pull your cock out of her, then shoot your load on her buttocks."
 
@@ -707,7 +707,7 @@ label jobgirl_beach_4():
             play sound s_door_close
 
 
-        "Don't indulge her":
+        "拒绝她":
 
             you "Are you serious? We barely know each other!"
 

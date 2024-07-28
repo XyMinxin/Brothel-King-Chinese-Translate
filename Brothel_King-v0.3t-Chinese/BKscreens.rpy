@@ -7989,20 +7989,20 @@ screen debug_pics(girl):
 
 label girlpack_menu:
     menu:
-        "Girl pack mix":
+        "女孩包":
 
             menu:
                 "Would you like to see girl ratings (this may take some time if you have many girl packs)?"
 
-                "Yes":
+                "是的":
                     call screen girl_mix(True) nopredict
-                "No":
+                "不必了":
                     call screen girl_mix(False)
 
-        "Update packstates":
+        "更新组合包":
             call packstates_menu from _call_packstates_menu
 
-        "Cancel":
+        "取消":
             pass
 
     return
@@ -8917,7 +8917,7 @@ label packstates_menu :
 
     menu:
         "Welcome to the packstate feature (courtesy of {color=[c_magenta]}{b}Chris12{/b}{/color})"
-        "Introduction to Packstates" :
+        "组合包介绍" :
             $ packdir = GirlFilesDict.get_packstate_directory()
             "Oftentimes, a Girlpack creator may wish to change some of the picture names to better fit Brothel King's tagging system. The packstate feature helps updating girlpacks without having to download hundreds of pictures all over again."
             "" "{b}Packstates{/b} contain all the necessary information to keep the tags of a Girlpack up to date. These files need to be put into the {color=[c_magenta]}/game/[packdir]{/color} directory and named exactly like the girlpack they are for."
@@ -8929,36 +8929,36 @@ label packstates_menu :
             "" "That's all! Why not try a {b}simulation{/b} and see if the {color=[c_magenta]}/packstate_log.txt{/color} shows any useful changes?"
             jump packstates_menu
 
-        "Unrecognized Images: [preferences.packstate_unrecognized]":
+        "无法识别的图片: [preferences.packstate_unrecognized]":
             menu:
                 "Hide: Rename and don't show unrecognized images.\nRename: Rename unrecognized images, but show them.\nIgnore: Don't rename unrecognized images. Will also show them.\n   Removes any _UNRECOGNIZED tags again.\n(Renaming means adding _UNRECOGNIZED as tag to the filename)"
-                "Hide":
+                "屏蔽":
                     $ preferences.packstate_unrecognized = "Hide"
                     jump packstates_menu
-                "Rename":
+                "重命名":
                     $ preferences.packstate_unrecognized = "Rename"
                     jump packstates_menu
-                "Ignore":
+                "忽略":
                     $ preferences.packstate_unrecognized = "Ignore"
                     jump packstates_menu
-                "Back (don't change setting)":
+                "返回 (不修改设置)":
                     jump packstates_menu
 
-        "Simulation" :
+        "模拟" :
             python:
                 GirlFilesDict.import_packstates(simulate = True)
                 # renpy.full_restart()
 
-        "Apply packstate" :
+        "应用组合包" :
             menu:
                 "It is recommended that you backup your girls folder and run a simulation beforehand. There is no Undo operation!{fast}{nw}"
                 "Continue" :
                     python:
                         GirlFilesDict.import_packstates(simulate = False) # if files get renamed, this will call renpy.utter_restart() on its own
                         # renpy.full_restart() # only gets called if no files are renamed
-                "Back" :
+                "返回" :
                     jump packstates_menu
-        "Back" :
+        "返回" :
             pass
     return
 #</Chris12 PackState>

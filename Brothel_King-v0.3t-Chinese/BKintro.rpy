@@ -127,18 +127,18 @@ label intro:
     menu:
         you "Why did I keep her already?"
 
-        "I'm kind of fond of the girl.":
+        "我挺喜欢她的":
             $ MC.good += 1
             $ NPC_sill.love += 1
             $ renpy.block_rollback()
             you "Well, she is more than a simple slave. Roaming this land wouldn't be the same without her."
 
-        "She's an investment.":
+        "她是一笔投资":
             $ MC.neutral += 1
             $ renpy.block_rollback()
             you "Sell her and what, do my own laundry? Obedient slaves are so hard to come by these days..."
 
-        "Beats me. She's a waste of space.":
+        "她就是个废物":
             $ MC.evil += 1
             $ NPC_sill.love -= 1
             $ renpy.block_rollback()
@@ -147,18 +147,18 @@ label intro:
     menu:
         you "Besides, we have some good memories... Like that time..."
 
-        "The first night I trained her":
+        "第一次训练她的那个晚上":
             $ MC.good += 1
             $ NPC_sill.love += 1
             $ renpy.block_rollback()
             jump sill_first_time
 
-        "The time we did it in public":
+        "我们在大庭广众之下做爱":
             $ MC.neutral += 1
             $ renpy.block_rollback()
             jump sill_public
 
-        "I spanked her silly":
+        "我把她给干成了一个白痴":
             $ MC.evil += 1
             $ NPC_sill.love -= 1
             $ renpy.block_rollback()
@@ -300,7 +300,7 @@ label resume_intro:
     menu:
         you "I am..."
 
-        "A warrior":
+        "一名战士":
             $ MC.set_playerclass("战士")
             $ renpy.block_rollback()
 
@@ -323,7 +323,7 @@ label resume_intro:
             jump resume_intro2
 
 
-        "A wizard":
+        "一位法师":
             $ MC.set_playerclass("法师")
             $ renpy.block_rollback()
 
@@ -353,7 +353,7 @@ label resume_intro:
 
             jump resume_intro2
 
-        "A rogue trader":
+        "一个商人":
             $ MC.set_playerclass("奸商")
             $ renpy.block_rollback()
 
@@ -387,20 +387,20 @@ label resume_intro2:
     menu:
         you "Me?"
 
-        "I am a servant of Arios, god of Light and Strength":
+        "我信奉光明与力量的象征——太阳神":
             $ MC.set_god("太阳神")
             $ MC.good += 1
             $ renpy.block_rollback()
             guard "That is good, brother. I hope to see you often at the Cathedra to pray."
 
-        "I worship Shalia, goddess of Shadows and Cunning":
+        "我信奉暗影与睿智的象征——莎莉娅":
             $ MC.set_god("莎莉娅")
             $ MC.evil += 1
             $ renpy.block_rollback()
             "He spits on the ground."
             guard "I knew you had that sneaky look about you... There are many shrines dedicated to the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
 
-        "I serve none but myself":
+        "我是个无神论者，求人不如求己":
             $ MC.set_god(None)
             $ MC.neutral += 1
             $ renpy.block_rollback()
@@ -458,7 +458,7 @@ label resume_intro2:
     menu:
         "What do you do?"
 
-        "Run to her rescue":
+        "伸出援手":
 
             $ MC.good += 1
             $ renpy.block_rollback()
@@ -495,7 +495,7 @@ label resume_intro2:
             jump resume_intro3
 
 
-        "Taunt her attackers":
+        "嘲讽歹徒":
 
             $ MC.neutral +=1
             $ renpy.block_rollback()
@@ -535,7 +535,7 @@ label resume_intro2:
             jump resume_intro3
 
 
-        "Ignore her plea":
+        "视若无睹":
 
             $ MC.evil += 1
             $ renpy.block_rollback()
@@ -933,13 +933,13 @@ label resume_intro3:
     menu:
         "Who?"
 
-        "The illuminati guild?":
+        "光明教会?":
             gio "*roll eyes*"
 
-        "Kaizer Sauze?":
+        "凯撒大帝?":
             gio "*roll eyes*"
 
-        "Yo mamma?":
+        "你的妈妈?":
             gio "*facepalm*"
 
     gio "No! It's the {b}brothel masters{/b}."
@@ -1124,15 +1124,15 @@ label shortcut:
     menu:
         "Well..."
 
-        "Of course!":
+        "那太好了!":
             $ text1 = "Of course"
             jump resume_intro4
 
-        "Sure!":
+        "再好不过!":
             $ text1 = "Well, sure"
             jump resume_intro4
 
-        "Fuck yeah!":
+        "真他妈爽!":
             $ text1 = "Fuck yeah"
             jump resume_intro4
 
@@ -1171,7 +1171,7 @@ label resume_intro4:
     menu:
         sill "He's... He's touching my butt!"
 
-        "Stop it already!":
+        "把你的脏手拿开!":
             $ gio_fucked_sill = False
             $ NPC_sill.love += 1
             $ MC.good += 1
@@ -1297,7 +1297,7 @@ label resume_intro4:
             jump day1
 
 
-        "Maybe another time, Gio...":
+        "下次再说吧，乔...":
             $ gio_fucked_sill = ""
             $ MC.neutral += 1
             $ NPC_sill.love -= 1
@@ -1384,7 +1384,7 @@ label resume_intro4:
             jump day1
 
 
-        "Sure, why not?":
+        "你开心就好":
             $ gio_fucked_sill = True
             $ MC.evil += 1
             $ NPC_sill.love -= 2
@@ -1445,7 +1445,7 @@ label resume_intro4:
 
             menu:
 
-                "让她用嘴为你口交":
+                "让她跪下用嘴为你口交":
 
                     $ renpy.block_rollback()
 
@@ -1802,16 +1802,16 @@ label slavemarket_first_time:
             menu:
                 "What will you use as a front for your business?"
 
-                "A tavern":
+                "零点酒吧":
                     $ brothel.add_room("tavern", forced=True)
 
-                "A strip club":
+                "激情夜店":
                     $ brothel.add_room("strip club", forced=True)
 
-                "A bath house":
+                "露天温泉":
                     $ brothel.add_room("onsen", forced=True)
 
-                "An okiya (geisha house)":
+                "花坊剧场":
                     $ brothel.add_room("okiya", forced=True)
 
             $ brothel.free_room = False

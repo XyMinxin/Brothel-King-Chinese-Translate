@@ -283,11 +283,11 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
             menu:
                 "Do you want to use your makibishi to automatically catch your target?"
 
-                "Yes (spend 1 makibishi)":
+                "是的 (消耗1个蒺藜)":
                     play sound s_dice
                     $ njgame.hits = 3
                     $ MC.items.remove(makibishi)
-                "No":
+                "不用":
                     pass
 
     hide expression njgame.sprite with blinds

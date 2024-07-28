@@ -65,16 +65,16 @@ label free_girl_talk(girl):
 
             extend ""
 
-            "你好，打扰一下（礼貌）":
+            "不好意思打扰一下（礼貌）":
 
                 $ renpy.block_rollback()
 
-                you "很高兴见到你，美丽的女士. 他们都叫我 [MC.name], 我很乐意为你这样的美人效劳. 有什么我能帮到你的吗?"
+                you "很高兴见到你，美丽的女士. 他们都叫我 [MC.name], 有什么我能帮到你的吗?我很乐意为你这样的美人效劳。 "
 
                 call dialogue(girl, "free_greetings_polite") from _call_dialogue_21
 
 
-            "嗨，你好（随和）":
+            "嗨，很高兴见到你（随和）":
 
                 $ renpy.block_rollback()
 
@@ -83,7 +83,7 @@ label free_girl_talk(girl):
                 call dialogue(girl, "free_greetings_casual") from _call_dialogue_22
 
 
-            "嘿！美女（调戏）":
+            "嘿！美女*吹口哨*（调戏）":
 
                 $ renpy.block_rollback()
 
@@ -589,7 +589,7 @@ label free_flirt_sex_experience(girl):
     menu:
         "What do you tell her?"
 
-        "I'm waiting for the right person":
+        "我一直在等命中注定的那个人":
             $ renpy.block_rollback()
             you "It might sound silly, but I am waiting for the right person..."
 
@@ -610,7 +610,7 @@ label free_flirt_sex_experience(girl):
 
 
 
-        "I haven't been with many girls":
+        "说实话我也没谈过几个女朋友":
             $ renpy.block_rollback()
             you "Uh, well, no, not many..."
 
@@ -630,13 +630,13 @@ label free_flirt_sex_experience(girl):
                 call dialogue(girl, "free_flirt_sex_experience reply_not_many failure") from _call_dialogue_55
 
 
-        "I've been around":
+        "我是个情场老手，妇女之友~":
             $ renpy.block_rollback()
             you "Well, I've been around... You know."
 
             call dialogue(girl, "free_flirt_sex_experience reply_been_around") from _call_dialogue_56
 
-        "I'm a sex god":
+        "我御女无数，没人比我经验丰富":
             $ renpy.block_rollback()
             you "Babe, I'm the best lay in town, believe me."
 
@@ -655,7 +655,7 @@ label free_flirt_sex_experience(girl):
             else:
                 call dialogue(girl, "free_flirt_sex_experience reply_sex_god failure") from _call_dialogue_58
 
-        "I'm a brothel owner, so..." if not girl.MC_lied:
+        "我经营着一家青楼, 你懂的..." if not girl.MC_lied:
             $ renpy.block_rollback()
             you "Well, I'm a brothel owner, so what do you expect... It's my job!"
 
@@ -855,31 +855,31 @@ label free_give_gold(girl): # Interactions are deducted here for giving presents
 
         you "I want you to have this."
 
-        "[tip_range[0]] gold" if MC.gold >= tip_range[0]:
+        "[tip_range[0]] 金币" if MC.gold >= tip_range[0]:
 
             $ tip = tip_range[0]
 
             $ diff = 75
 
-        "[tip_range[1]] gold" if MC.gold >= tip_range[1]:
+        "[tip_range[1]] 金币" if MC.gold >= tip_range[1]:
 
             $ tip = tip_range[1]
 
             $ diff = 50
 
-        "[tip_range[2]] gold" if MC.gold >= tip_range[2]:
+        "[tip_range[2]] 金币" if MC.gold >= tip_range[2]:
 
             $ tip = tip_range[2]
 
             $ diff = 25
 
-        "[tip_range[3]] gold" if MC.gold >= tip_range[3]:
+        "[tip_range[3]] 金币" if MC.gold >= tip_range[3]:
 
             $ tip = tip_range[3]
 
             $ diff = 0
 
-        "Go back":
+        "返回":
             $ choice_menu_girl_interact = False
             hide screen dark_filter
             return
@@ -1039,7 +1039,7 @@ label free_girl_friend(girl):
 
         "What do you tell her?"
 
-        "Tell the truth":
+        "坦白真相":
 
             $ renpy.block_rollback()
 
@@ -1049,7 +1049,7 @@ label free_girl_friend(girl):
 
             call dialogue(girl, "free_friend no_lie") from _call_dialogue_73
 
-        "Tell a half lie":
+        "半真半假":
 
             $ renpy.block_rollback()
 
@@ -1060,7 +1060,7 @@ label free_girl_friend(girl):
             call dialogue(girl, "free_friend half_lie") from _call_dialogue_74
 
 
-        "Outright lying":
+        "撒个小谎":
 
             $ renpy.block_rollback()
 

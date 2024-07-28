@@ -288,7 +288,7 @@ label pick_resolution():
             $ persistent.screen_width = 1024
             $ persistent.screen_height = 768
 
-        "Custom resolution":
+        "自定义分辨率":
             python:
                 narrator("{color=%s}Warning: This feature is experimental. Please use at your own risks.{/color}" % c_red, interact=False)
                 _stop = False
@@ -326,7 +326,7 @@ label pick_resolution():
                     persistent.screen_width = x
                     persistent.screen_height = y
 
-        "Cancel":
+        "取消":
             $ renpy.full_restart()
 
     $ centered("Restarting Brothel King...", interact=False)

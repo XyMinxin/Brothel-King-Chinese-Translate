@@ -167,19 +167,19 @@ label c3_interrogate_contacts():
     menu:
         "Who do you want to ask [npc.name] about?"
 
-        "Ask about Narika, the Void Kunoichi" if NPC_narika.flags["locked"] or debug_mode:
+        "询问Narika的情报, 虚空忍者" if NPC_narika.flags["locked"] or debug_mode:
             "You tell [npc.name] about {b}Narika{/b}, the Kunoichi you are looking for, and what she's been up to."
             $ nin = NPC_narika
 
-        "Ask about Mizuki, the Water Kunoichi" if NPC_mizuki.flags["locked"] or debug_mode:
+        "询问Mizuki的情报, 水之忍者" if NPC_mizuki.flags["locked"] or debug_mode:
             "You tell [npc.name] about {b}Mizuki{/b}, the Kunoichi you are looking for, and what she's been up to."
             $ nin = NPC_mizuki
 
-        "Ask about Haruka, the Earth Kunoichi" if NPC_haruka.flags["locked"] or debug_mode:
+        "询问Haruka的情报, 土之忍者" if NPC_haruka.flags["locked"] or debug_mode:
             "You tell [npc.name] about {b}Haruka{/b}, the Kunoichi you are looking for, and what she's been up to."
             $ nin = NPC_haruka
 
-        "Ask about the elemental-proof cells" if npc == NPC_freak and NPC_freak.flags["holding info"]:
+        "询问关于元素屏蔽密室的情报" if npc == NPC_freak and NPC_freak.flags["holding info"]:
             "You talk to {b}Papa Freak{/b} about the secret magic-proof cells in your building again."
             call c3_papa_cells from _call_c3_papa_cells
             return
@@ -294,7 +294,7 @@ label c3_interrogate_contacts():
 
         if MC.gold >= 1000:
             menu:
-                "Sure (pay 1,000 gold)":
+                "成交 (支付 1,000 金币)":
                     you "Sure okay, give it to me."
 
                     play sound s_gold
@@ -303,7 +303,7 @@ label c3_interrogate_contacts():
 
                     call receive_item(fire_rune) from _call_receive_item_19
 
-                "No":
+                "我才不买":
                     you "1,000 gold for a trinket I'll never use? No thanks."
 
         else:
@@ -545,16 +545,16 @@ label c3_hint(npc, ninja):
 
                 menu:
                     extend ""
-                    "Give her 10 {image=tb wood}" if MC.has_resource("wood", 10):
+                    "给她10个{image=tb wood}" if MC.has_resource("wood", 10):
                         $ MC.spend_resource("wood", 10)
 
-                    "Give her 10 {image=tb leather}" if MC.has_resource("leather", 10):
+                    "给她10个{image=tb leather}" if MC.has_resource("leather", 10):
                         $ MC.spend_resource("leather", 10)
 
-                    "Give her 10 {image=tb dye}" if MC.has_resource("dye", 10):
+                    "给她10个{image=tb dye}" if MC.has_resource("dye", 10):
                         $ MC.spend_resource("dye", 10)
 
-                    "Don't give her":
+                    "暂时不给":
                         you "Sorry, maybe next time."
                         return
 
@@ -681,7 +681,7 @@ label c3_hint(npc, ninja):
 
             if MC.gold >= 1000:
                 menu:
-                    "Okay (pay 1,000 gold)":
+                    "成交(支付1,000 金币)":
                         you "Fine, I'll take it."
 
                         play sound s_gold
@@ -690,7 +690,7 @@ label c3_hint(npc, ninja):
 
                         call receive_item(void_rune) from _call_receive_item_20
 
-                    "Maybe later":
+                    "也许下次":
                         you "1,000 gold for a piece of rubble? I'll pass."
 
                         gina "Suit yourself. Come back if you change your mind."
@@ -1004,7 +1004,7 @@ label c3_hint(npc, ninja):
 
             if MC.gold >= 1000:
                 menu:
-                    "Okay (pay 1,000 gold)":
+                    "成交(支付1,000 金币)":
                         you "Okay, I'll take it."
 
                         play sound s_gold
@@ -1013,7 +1013,7 @@ label c3_hint(npc, ninja):
 
                         call receive_item(water_rune) from _call_receive_item_21
 
-                    "Maybe later":
+                    "也许下次":
                         you "1,000 gold is more than I can afford. Maybe next time."
 
                         stella "Out of my way, then. I've got actual paying customers to tend to."
@@ -1414,7 +1414,7 @@ label c3_hint(npc, ninja):
                 menu:
                     "What will you do?"
 
-                    "Grab the stone for free":
+                    "白嫖这块石头":
                         you "(This offer is too good to pass.)"
 
                         you "Thank you Goldie, I'll have the stone, then."
@@ -1423,7 +1423,7 @@ label c3_hint(npc, ninja):
 
                         $ MC.good -= 1
 
-                    "Give her 500 gold for it":
+                    "花500金币买下":
                         if MC.gold < 500:
                             "You don't have enough money."
                             jump c2_goldie_buy_rune
@@ -1442,7 +1442,7 @@ label c3_hint(npc, ninja):
                         play sound s_gold
                         $ MC.gold -= 500
 
-                    "Give her 1,000 gold for it":
+                    "花1000金币买下":
                         if MC.gold < 1000:
                             "You don't have enough money."
                             jump c2_goldie_buy_rune
@@ -1465,7 +1465,7 @@ label c3_hint(npc, ninja):
                         play sound s_gold
                         $ MC.gold -= 1000
 
-                    "Come back later":
+                    "下次再说":
                         you "Thank you for your offer, but I can't accept just yet. I will be back."
                         return
 
@@ -1661,22 +1661,22 @@ label c3_papa_cells():
             menu:
                 extend ""
 
-                "Build me a cell with a Void ward" if not story_flags["void ward"]:
+                "帮我建造一间能屏蔽虚空元素的密室" if not story_flags["void ward"]:
                     $ target = "void"
 
                     papa "This is a complex element, if it is an element at all... Fortunately, the old Cimerians knew a thing or two about manipulating time and space."
 
-                "Build me a cell with a Water ward" if not story_flags["water ward"]:
+                "帮我建造一间能屏蔽水之元素的密室" if not story_flags["water ward"]:
                     $ target = "water"
 
                     papa "Ah, water... I've this special desiccant technology I've been experimenting with. I thought it was only good for preserving cookies, but I might find a use for it after all"
 
-                "Build me a cell with an Earth ward" if not story_flags["earth ward"]:
+                "帮我建造一间能屏蔽土之元素的密室" if not story_flags["earth ward"]:
                     $ target = "earth"
 
                     papa "This is straightforward enough. Metal blocks most Earth magic. A cell made entirely of steel would do the trick."
 
-                "Build me the cell with a ward against Air and Fire" if NPC_freak.flags["cells built"] >= 3:
+                "帮我建造一间能屏蔽风和火之元素的密室" if NPC_freak.flags["cells built"] >= 3:
                     $ target = "air and fire"
                     $ story_flags["air ward"] = True
                     $ story_flags["fire ward"] = True
@@ -1792,7 +1792,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
         homura "I thought maybe a man in your occupation might just care about... *blush*"
 
         menu:
-            "Tell her you're not like that": # For good characters
+            "告诉她你不是这样的人": # For good characters
                 you "I'm not like that, you know."
 
                 if MC.get_alignment() == "good":
@@ -1824,7 +1824,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                     $ NPC_homura.love -= 2
 
-            "Tell her she's different": # For neutral characters
+            "告诉她她是独一无二的": # For neutral characters
                 you "In other circumstances, you would be right. But there's something special about you."
 
                 homura blush "Hmmm..."
@@ -1849,7 +1849,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                     $ NPC_homura.love -= 1
 
-            "Tell her you still need her": # For evil characters
+            "告诉她你仍然需要她": # For evil characters
                 you "I'll be blunt. I'm not one for commitment. But right now, I still need you."
 
                 if MC.get_alignment() == "evil":
@@ -1914,7 +1914,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
         menu:
             extend ""
 
-            "He's wrong, of course":
+            "他简直大错特错":
                 $ MC.good += 1
 
                 you "That's just wrong. Women are just as capable as men... They can do great things..."
@@ -1930,7 +1930,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                     $ NPC_homura.love += 1
 
-            "He's got a point":
+            "他说的也有道理":
                 $ MC.evil += 1
 
                 you "Look, he's not wrong. Women are less capable than men, it's obvious."
@@ -1948,7 +1948,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                 $ NPC_homura -= 3
 
-            "There are much more interesting things to do with women":
+            "女人还能做些其他有趣的事":
                 $ MC.neutral += 1
                 you "Such a sad lack of imagination. Women are wonderful, everywhere... Especially..."
 
@@ -1976,7 +1976,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
     menu:
         extend ""
 
-        "Business":
+        "紧急任务":
             you "Business, I'm afraid. You remember about the task that the Princess gave me?"
 
             if NPC_homura.flags["divulged assignment"]:
@@ -1994,7 +1994,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
                 menu:
                     you "Well..."
 
-                    "Yes":
+                    "好吧":
                         $ NPC_homura.flags["divulged assignment"] = True
 
                         you "Yes. I need help, and I don't think I can manage this alone."
@@ -2013,7 +2013,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                         call c3_homura_menu_business() from _call_c3_homura_menu_business_1
 
-                    "No":
+                    "不行":
                         you "No, sorry."
 
                         homura "..."
@@ -2036,7 +2036,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                 menu:
                     extend ""
-                    "Let's go to the bedroom":
+                    "让我们到卧室里加深一下交流":
                         $ NPC_homura.love += 0.5
 
                         you "Of course, Lady Henso... Follow... Hey!"
@@ -2045,14 +2045,14 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
                         call c3_homura_menu_pleasure() from _call_c3_homura_menu_pleasure
 
-                    "Perhaps another time":
+                    "也许下次":
                         $ NPC_homura.love -= 0.5
 
                         you "I would love to, Homura, but I'm really busy right now..."
 
                         homura sad "Oh, I see."
 
-        "Pleasure":
+        "乐意之至":
             you "Pleasure, of course."
 
             call c3_homura_menu_pleasure() from _call_c3_homura_menu_pleasure_1
@@ -2073,7 +2073,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 label c3_homura_menu_business():
 
     menu:
-        "Tell her about Narika, the Void Kunoichi" if NPC_narika.flags["locked"]:
+        "告诉她关于Narika, 虚空忍者的事" if NPC_narika.flags["locked"]:
             with fade
             "You spend a long time explaining about the Void Kunoichi and the details of your encounter."
 
@@ -2102,7 +2102,7 @@ label c3_homura_menu_business():
 
                 you "Err, do I know anyone like that?"
 
-        "Tell her about Mizuki, the Water Kunoichi" if NPC_mizuki.flags["locked"]:
+        "告诉她关于Mizuki, 水之忍者的事" if NPC_mizuki.flags["locked"]:
             with fade
 
             "You spend a long time explaining about the Water Kunoichi and the details of your encounter."
@@ -2117,7 +2117,7 @@ label c3_homura_menu_business():
 
             you "You're right."
 
-        "Tell her about Haruka, the Earth Kunoichi" if NPC_haruka.flags["locked"]:
+        "告诉她关于 Haruka, 土之忍者的事" if NPC_haruka.flags["locked"]:
             with fade
 
             "You spend a long time explaining about the Earth Kunoichi and the details of your encounter."
@@ -2190,7 +2190,7 @@ label c3_homura_menu_pleasure():
         menu:
             extend ""
 
-            "I want to see you masturbate":
+            "我想看你自慰":
                 call homura_mast(False) from _call_homura_mast_1
 
                 scene black with fade
@@ -2203,7 +2203,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.25
 
-            "I want a blowjob":
+            "我想让你为我口交":
                 call homura_bj(False) from _call_homura_bj_1
 
                 scene black with fade
@@ -2216,7 +2216,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.25
 
-            "Let's do 69" if NPC_homura.flags["H level"] == 2:
+            "试试69式" if NPC_homura.flags["H level"] == 2:
                 call homura_69(False) from _call_homura_69_1
 
                 scene black with fade
@@ -2226,7 +2226,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.5
 
-            "Let's have sex (missionary)":
+            "来做爱吧(后入式)":
                 call homura_sex(False) from _call_homura_sex
 
                 scene black with fade
@@ -2236,7 +2236,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.5
 
-            "Let's have sex (cowgirl)" if NPC_homura.flags["H level"] == 3:
+            "来做爱吧(骑乘式)" if NPC_homura.flags["H level"] == 3:
                 call homura_cowgirl(False) from _call_homura_cowgirl_1
 
                 scene black with fade
@@ -2246,7 +2246,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.5
 
-            "Let's go outside" if NPC_homura.flags["H level"] == 4:
+            "我想试试野战" if NPC_homura.flags["H level"] == 4:
                 call homura_river(False) from _call_homura_river_1
 
                 show bg forest at top with fade
@@ -2256,7 +2256,7 @@ label c3_homura_menu_pleasure():
 
                 $ NPC_homura.love += 0.5
 
-            "Let me do your ass" if NPC_homura.flags["H level"] == 5:
+            "我想试试肛交" if NPC_homura.flags["H level"] == 5:
                 call homura_anal(False) from _call_homura_anal
 
                 scene black with fade
@@ -2273,7 +2273,7 @@ label c3_homura_menu_pleasure():
                     homura naked "Oh, that was too rough..."
                     $ NPC_homura.love -= 0.5
 
-            "Nothing":
+            "算了吧":
                 you "Sorry, I changed my mind."
 
                 play sound s_surprise
@@ -2526,7 +2526,7 @@ label homura_cowgirl(first=True):
     menu:
         you "OHHH..."
 
-        "Cum inside":
+        "内射":
             with flash
 
             homura "Aaaah!!!"
@@ -2554,7 +2554,7 @@ label homura_cowgirl(first=True):
 
                 homura "I came... Ohh..."
 
-        "Cum outside":
+        "外射":
             with flash
 
             you "Uhhhh!!!"
@@ -2630,7 +2630,7 @@ label homura_river(first=True):
         menu:
             extend ""
 
-            "Amazing":
+            "天呐！":
                 you "Wonderful! This place feels out of time..."
 
                 homura "Right? I come here every chance I get."
@@ -2639,12 +2639,12 @@ label homura_river(first=True):
 
                 $ NPC_homura.love += 1
 
-            "It's alright":
+            "不错":
                 you "Yeah, it's fine, I guess."
 
                 homura surprise "You guess? Come on! It's great, admit it!"
 
-            "I've seen better":
+            "就这？":
                 you "Well, it's nothing compared to this waterfall in the Arik Mountains. I hear it falls from a mile high..."
 
                 homura sad "Aw, do you have to spoil this moment? I took you here for us to be together..."
