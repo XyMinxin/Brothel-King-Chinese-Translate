@@ -373,13 +373,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         menu:
             security "{b}Battle Phase 1{/b}\nYou must defend the Brothel! What do you do?"
 
-            "Charge into the fray (use Strength to fight the enemy)":
+            "拿起剑加入战斗 (用武力对抗敌人)":
                 $ renpy.block_rollback()
                 play sound s_sheath
                 you "To battle!!!" with vpunch
                 $ r = "fight"
 
-            "Destroy their war machines (use Spirit to cast a spell on them)":
+            "摧毁他们的器械 (用魔力施展法术)":
                 $ renpy.block_rollback()
                 play sound s_spell
 
@@ -389,7 +389,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                     you "Let's see how well those machines burn!"
                 $ r = "cast"
 
-            "Lead from behind (use Charisma to improve your troops' morale)":
+            "在后方指挥大局 (用魅力提高士气)":
                 $ renpy.block_rollback()
                 play sound s_sheath
                 $ MC.rand_say(["ev: Men, get ready!!! We will slaughter them where they stand!", "gd: Brothers and sisters! We didn't choose to start this fight, but we will surely end it!", "ne: Men, fight them smart, fight them hard! Be the first one on your block to get a confirmed kill!"])
@@ -412,13 +412,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                         $ allies_factor += 0.1
 
 
-            "Challenge their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
+            "挑战他们的首领 (用武器攻击 [enemy_g])" if enemy_general.has_trait("战士"):
                 $ renpy.block_rollback()
                 play sound s_sheath
                 you "Leave their general to me... I will end this!" with vpunch
                 $ r = "duel"
 
-            "Challenge their leader (use Spirit to attack the [enemy_g])" if enemy_general.has_trait("Caster"):
+            "挑战他们的首领 (用法术攻击 [enemy_g])" if enemy_general.has_trait("Caster"):
                 $ renpy.block_rollback()
                 play sound s_dress
                 you "Leave the magic user to me... I will deal with her!" with vpunch
@@ -730,13 +730,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             menu:
                 extend ""
 
-                "Defend your girls (use Strength to fight the enemy)":
+                "保护你的女孩 (用武力解决敌人)":
                     $ renpy.block_rollback()
                     play sound s_sheath
                     you "Bring it on!"
                     $ r = "fight"
 
-                "Protect your girls (use Spirit to shield some of your girls)":
+                "保护你的女孩 (用法术施加护盾)":
                     $ renpy.block_rollback()
                     play sound s_spell
                     you "Every one, get inside the pentagram!"
@@ -758,7 +758,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                                 else:
                                     rand_choice(fighting_girls).add_shield()
 
-                "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)":
+                "激励女孩自卫 (用魅力提高士气)":
                     $ renpy.block_rollback()
                     play sound s_roar
                     $ MC.rand_say(("Brace yourself! The enemy is coming, you know what to do!", "ev: All right, bitches, prepare to defend your miserable lives! You'd better not disappoint me!", "gd: All right everyone, remember your training, and don't take any unnecessary risks!", "ne: Babes, this is it. I'm counting on you!"))
@@ -779,13 +779,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             $ narrator("You give your last orders, helping a girl don a leather vest, commenting on another girl's footing. They are servants, not fighters, but this will have to do. " + event_color["good"] % "+1 to all girls defense.")
 
 
-                "Intercept their leader (use Strength to attack the [enemy_g])" if enemy_general.has_trait("战士"):
+                "拦下他们的首领 (用武器攻击 [enemy_g])" if enemy_general.has_trait("战士"):
                     $ renpy.block_rollback()
                     play sound s_sheath
                     "You leave your girls to fend for themselves and exit the brothel from a side door, determined to take out the enemy leader."
                     $ r = "duel"
 
-                "Intercept their leader (use Spirit to attack the [enemy_g])" if enemy_general.has_trait("Caster"):
+                "拦下他们的首领 (用法术攻击 [enemy_g])" if enemy_general.has_trait("Caster"):
                     $ renpy.block_rollback()
                     play sound s_dress
                     "You leave your girls to fend for themselves and exit the brothel from a side door, determined to take out the enemy leader."
@@ -1051,7 +1051,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                     menu:
                         "What do you want to do with her?"
 
-                        "Keep her as a slave":
+                        "把她收为自己的奴隶以弥补损失":
 
                             you "I will now keep you as my pet. It's only fair that you work here to rebuild the damage you caused."
 
@@ -1069,7 +1069,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                                 you "Hmph, it's a shame, but it seems I can't take you right now."
                                 jump enemy_general_captured
 
-                        "Sell her as a slave for [price] gold":
+                        "把她卖给奴隶贩子换取[price]金币":
                             $ MC.neutral += 1
                             you "I have no use for the likes of you. I'm sure you'll be an excellent slave to... Somebody."
 
@@ -1078,7 +1078,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             $ MC.gold += price
                             play sound s_gold
 
-                        "Sell her as sacrifice fodder for the blood islands for [evil_price] gold":
+                        "把她卖给鲜血群岛换取[evil_price]金币":
                             $ MC.evil += 2
 
                             you "Well well... A woman with such spirit would be a perfect sacrifice for the demon lords of the blood islands..."
@@ -1092,7 +1092,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                             $ MC.gold += evil_price
                             play sound s_gold
 
-                        "Make her swear an oath never to cross you again and let her go":
+                        "让她发誓再也不会招惹你，然后放了她":
                             $ MC.good += 2
 
                             you "I'll let you go with a warning: leave town, and never come back."
@@ -1640,7 +1640,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
         man "Well, we's talking about a rank [rk] chick here... Let's say [price] denars. A bargain for such information."
         menu:
             extend ""
-            "All right (pay [price] gold)" if MC.gold >= price:
+            "那就成交 (支付[price]金币)" if MC.gold >= price:
                 "Frowning, you throw the shady man a bag of coins."
 
                 play sound s_gold
@@ -1648,12 +1648,12 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
 
                 $ tip = True
 
-            "Maybe later (come back later)":
+            "下次再说(以后再来)":
                 you "I don't have the coin right now. Stay put."
 
                 man "Well... You know where to find me."
 
-            "Forget it ([girl.fullname] will be lost forever)":
+            "当我没说([girl.fullname]将永远消失)":
                 $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
@@ -1670,7 +1670,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
         menu:
             extend ""
 
-            "All right (pay [price] gold)" if MC.gold >= price:
+            "那就成交 (支付[price]金币)" if MC.gold >= price:
                 "Frowning, you throw the shady man a bag of coins."
 
                 play sound s_gold
@@ -1678,12 +1678,12 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
 
                 $ tip = True
 
-            "Maybe later (come back later)":
+            "下次再说(以后再来)":
                 you "I don't have the coin right now. Stay put."
 
                 man "Well... You know where to find me."
 
-            "Forget it ([girl.fullname] will be lost forever)":
+            "当我没说([girl.fullname]将永远消失)":
                 $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
@@ -1717,9 +1717,9 @@ label kidnap_rescue(girl):
     menu:
         "Do you want to try and rescue [girl.fullname] now?"
 
-        "Yes":
+        "是的":
             pass
-        "No":
+        "算了":
             $ city_events.append(StoryEvent(label = "kidnap_rescue", call_args = [girl], location = selected_location.name))
             $ MC.interactions += 1 # Refund AP
             return
@@ -1942,23 +1942,23 @@ label kidnap_rescue(girl):
             menu:
                 "You do not have enough room to welcome [girl.fullname] back to the brothel."
 
-                "Let her stay in an inn until tomorrow for 50 gold":
+                "给她50金币让她找间旅店住一夜":
                     $ come_back = 1
                     $ MC.gold -= 50
                     play sound s_cash
 
-                "Let her stay in an inn for a week for 250 gold":
+                "给她250金币让她找间旅店住一周":
                     $ come_back = 7
                     $ MC.gold -= 250
                     play sound s_cash
 
-                "Sell her for [price] gold":
+                "以 [price] 金币的价格把她卖掉":
                     $ come_back = 0
                     $ MC.gold += price
                     $ MC.neutral += 1
                     play sound s_cash
 
-                "Free her":
+                "放了她，还她自由之身":
                     $ come_back = 0
                     $ MC.good += 1
 
@@ -1995,23 +1995,23 @@ label girl_come_back(girl):
         menu:
             "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
 
-            "Let her stay in an inn until tomorrow for 50 gold":
+            "给她50金币让她找间旅店住一夜":
                 $ come_back = 1
                 $ MC.gold -= 50
                 play sound s_cash
 
-            "Let her stay in an inn for a week for 250 gold":
+            "给她250金币让她找间旅店住一周":
                 $ come_back = 7
                 $ MC.gold -= 250
                 play sound s_cash
 
-            "Sell her for [price] gold":
+            "以 [price] 金币的价格把她卖掉":
                 $ come_back = 0
                 $ MC.gold += price
                 $ MC.neutral += 1
                 play sound s_cash
 
-            "Free her":
+            "放了她，还她自由之身":
                 $ come_back = 0
                 $ MC.good += 1
 

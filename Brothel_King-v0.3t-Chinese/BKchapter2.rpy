@@ -91,7 +91,7 @@ label sewer_girl_returns_menu():
     menu:
         extend ""
 
-        "I want the money":
+        "我想要钱":
 
             $ renpy.block_rollback()
 
@@ -103,7 +103,7 @@ label sewer_girl_returns_menu():
 
             "You have received 750 gold."
 
-        "I want the influence":
+        "我想要人脉":
 
             $ renpy.block_rollback()
 
@@ -113,7 +113,7 @@ label sewer_girl_returns_menu():
 
             "You have earned a lot of prestige."
 
-        "I want both (Charisma test: [diff])" if can_roll:
+        "我全都要 (魅力检定: [diff])" if can_roll:
 
             $ renpy.block_rollback()
 
@@ -148,7 +148,7 @@ label sewer_girl_returns_menu():
                 jump sewer_girl_returns_menu
 
 
-        "I want something more 'intimate'":
+        "我想要更“亲密”的回报":
 
             $ renpy.block_rollback()
 
@@ -349,10 +349,10 @@ label c2_intro():
         menu:
             "Skip Chapter 2 intro?"
 
-            "Yes":
+            "是":
                 stop music fadeout 3.0
                 return
-            "No":
+            "否":
                 pass
 
     you "We won't be missing that place! Especially the smell... Right, Sill?"
@@ -526,7 +526,7 @@ label c2_intro():
     menu:
         you "Mmmh..."
 
-        "The younger girl is cute":
+        "那个小姑娘真可爱":
             $ NPC_gurigura.love += 1
 
             show gurigura at left with dissolve
@@ -537,7 +537,7 @@ label c2_intro():
 
             gurigura "Hiii!" with vpunch
 
-        "I like the bitchy one":
+        "我更喜欢那个辣妹":
             $ NPC_katryn.love += 1
 
             show katryn with dissolve
@@ -551,7 +551,7 @@ label c2_intro():
             hide katryn with dissolve
             show gurigura at left with dissolve
 
-        "The white-haired woman is hot":
+        "那个白发女人真性感":
             $ NPC_ramias.love += 1
 
             show ramias with dissolve
@@ -574,7 +574,7 @@ label c2_intro():
             hide ramias with dissolve
             show gurigura at left with dissolve
 
-        "That blonde girl looks sweet":
+        "金发女人才是我的菜":
             $ NPC_riche.love += 1
 
             show riche with dissolve
@@ -905,7 +905,7 @@ label c2_princess_letter:
     menu:
         "Whose fault is this?"
 
-        "Blame Sill":
+        "责怪希露":
             $ renpy.block_rollback()
             you "Sill!!! What the hell did you think you were doing!!!"
 
@@ -920,7 +920,7 @@ label c2_princess_letter:
 
             gio "Hmpf! How unfair!"
 
-        "Blame Gio":
+        "责怪 乔":
             $ renpy.block_rollback()
             you "Gio!!! What on earth are you doing here, assaulting my... Sill?!?"
 
@@ -931,7 +931,7 @@ label c2_princess_letter:
             $ NPC_sill.love += 1
             $ NPC_gio.love -= 1
 
-        "Blame the gods":
+        "怨天尤人":
             $ renpy.block_rollback()
             if MC.god:
                 you "O, [MC.god]! Why do you mock me so!!! Why did you curse your humble servant with such lousy friends and clumsy slaves!!!" with vpunch
@@ -944,7 +944,7 @@ label c2_princess_letter:
 
             sill sad "Hey!" with vpunch
 
-        "Blame no one in particular":
+        "不怪任何人":
             $ renpy.block_rollback()
             you "Stop the blame game, you two."
 
@@ -1005,7 +1005,7 @@ label c2_princess_letter:
     menu:
         "Do you let Gio have his fun?"
 
-        "Let him have Sill":
+        "让他和希露上床":
             $ renpy.block_rollback()
             you "Fine... I've been too lenient with Sill recently."
 
@@ -1031,7 +1031,7 @@ label c2_princess_letter:
             hide sill
             with dissolve
 
-        "Let him have one of your slaves" if len(MC.girls) > 0:
+        "让他享用你的一个奴隶" if len(MC.girls) > 0:
             $ renpy.block_rollback()
 
             $ NPC_sill.love += 1
@@ -1056,7 +1056,7 @@ label c2_princess_letter:
 
             you "Now, let's see this letter."
 
-        "Let him have several of your slaves at once" if len(MC.girls) > 1:
+        "让他享用你的多个奴隶" if len(MC.girls) > 1:
             $ renpy.block_rollback()
 
             $ NPC_sill.love += 1
@@ -1100,7 +1100,7 @@ label c2_princess_letter:
             "Gio elopes with the girls in one of the back rooms, while you turn your attention back to the letter."
 
 
-        "Turn him down":
+        "拒绝他的要求":
             $ renpy.block_rollback()
             you "Sorry, Gio. I don't give out anything for free."
 
@@ -1640,7 +1640,7 @@ label c2_castle_interview():
     menu:
         extend ""
 
-        "I am a brothel owner":
+        "我是开青楼的":
             $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "truth"
 
@@ -1652,7 +1652,7 @@ label c2_castle_interview():
 
             "She takes a moment to regain her composure. After she's done, she stiffens, and goes straight to the point."
 
-        "I am in the entertainment business (half-lie)":
+        "我是个生意人 (半真半假)":
             $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "half-lie"
 
@@ -1668,7 +1668,7 @@ label c2_castle_interview():
 
             kuro "Well, who am I kidding. I don't have the kind of freedom that would allow me to visit you, anyway..."
 
-        "I operate an orphanage (lie)":
+        "我经营着一家孤儿院 (撒谎)":
             $ renpy.block_rollback()
             $ NPC_kuro.flags["occupation"] = "lie"
             $ MC.evil += 1
@@ -1709,7 +1709,7 @@ label kurohime_conversation_menu():
 
     menu:
         you "I wanted to know more..."
-        "About the Kingdom":
+        "关于泽恩王国":
             you "How fares the Kingdom?"
 
             kuro "The Kingdom... This small, powerless city-state, you mean?"
@@ -1745,19 +1745,19 @@ label kurohime_conversation_menu():
             menu:
                 extend ""
 
-                "None taken":
+                "不要介意":
                     $ renpy.block_rollback()
                     $ MC.noble = False
                     you "I can understand how you feel. Being in charge is a harsh responsibility."
 
-                "So you don't like us commoners, uh?":
+                "所以你不喜欢平民, 哈?":
                     $ renpy.block_rollback()
                     $ MC.noble = False
                     you "Well, some would say this is their just due."
 
                     kuro "Believe me, I can understand how they feel... But I have to look out for the interests of the State. A civil war would be a disaster for the people."
 
-                "I am a noble myself, actually":
+                "事实上我也是个贵族":
                     $ renpy.block_rollback()
                     $ MC.noble = True
                     you "Actually, I do come from a minor noble family. It's a long way from Zan's court, though. I'm sure you wouldn't have heard of it."
@@ -1773,7 +1773,7 @@ label kurohime_conversation_menu():
             $ _result_dict["wedding"] = True
             jump kurohime_conversation_menu
 
-        "About you":
+        "关于你":
 
             you "Your... Your Highness. What's your role in all of this?"
 
@@ -1794,7 +1794,7 @@ label kurohime_conversation_menu():
             kuro "I try my best to help and be worthy of our name. If my father won't take charge, I will have to, for the good of all of us..."
             jump kurohime_conversation_menu
 
-        "About that night":
+        "关于那一晚":
 
             you "When we first met... You were wandering alone at night. What was it all about?"
 
@@ -1819,7 +1819,7 @@ label kurohime_conversation_menu():
             kuro "In a sense, I was lucky. The enemies we now face are a lot more dangerous..."
             jump kurohime_conversation_menu
 
-        "About Gio" if _result_dict["gio"]:
+        "关于 乔" if _result_dict["gio"]:
 
             you "By the way, Your Highness, how in the world did you meet someone like Gio?"
 
@@ -1844,7 +1844,7 @@ label kurohime_conversation_menu():
             kuro "Never mind. It is an old story."
             jump kurohime_conversation_menu
 
-        "About your father" if _result_dict["father"]:
+        "关于你的父亲" if _result_dict["father"]:
 
             you "Your father... King Pharo... How is he?"
 
@@ -1877,7 +1877,7 @@ label kurohime_conversation_menu():
             kuro "Many people think that Zan is ripe for the taking... The only thing I can do is fight back, at my modest level."
             jump kurohime_conversation_menu
 
-        "About your mother" if _result_dict["mother"]:
+        "关于你的母亲" if _result_dict["mother"]:
 
             kuro "She died. Many years ago. I was still little."
 
@@ -1890,7 +1890,7 @@ label kurohime_conversation_menu():
             kuro "I... I'd rather not discuss it. Let old wounds heal..."
             jump kurohime_conversation_menu
 
-        "About this wedding" if _result_dict["wedding"]:
+        "关于婚约" if _result_dict["wedding"]:
 
             you "You mentioned a wedding. Whose wedding..."
 
@@ -1961,7 +1961,7 @@ label kurohime_conversation_menu():
             "She looks lost and vulnerable. You feel an urge to protect her."
             jump kurohime_conversation_menu
 
-        "About this urgent business":
+        "关于紧急情况":
             $ _result_dict["can_leave"] = True
 
             you "Let me go to the point, then, Your Highness. What is this urgent business you wanted to speak of?"
@@ -2017,7 +2017,7 @@ label kurohime_conversation_menu():
     kuro "Will you help me uncover the truth about those murders?"
 
     menu:
-        "I will gladly do it":
+        "乐意为您效劳":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -2030,7 +2030,7 @@ label kurohime_conversation_menu():
             kuro "I am relieved to hear that. Now, let me waste no time in telling you..."
 
 
-        "I don't know. Sounds risky...":
+        "我不知道，听起来很危险...":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
@@ -2050,7 +2050,7 @@ label kurohime_conversation_menu():
 
             kuro "Hmpf. Now, about the next steps..."
 
-        "What's in it for me?":
+        "这对我有什么好处呢?":
             $ renpy.block_rollback()
             $ MC.evil += 1
 
@@ -2538,7 +2538,7 @@ label c2_gio_meeting():
     menu:
         extend ""
 
-        "Tell the truth":
+        "坦白":
             $ renpy.block_rollback()
             you "Well... She wants me to investigate the murders. Find out who's behind this."
 
@@ -2556,7 +2556,7 @@ label c2_gio_meeting():
 
             you "Anyway. Know anything about the murders?"
 
-        "Lie":
+        "撒谎":
             $ renpy.block_rollback()
             $ NPC_gio.love -= 1
 
@@ -2809,7 +2809,7 @@ label c2_suzume_invitation():
     menu:
         you "What should I do..."
 
-        "I should return them":
+        "我应该归还给失主":
             $ renpy.block_rollback()
             $ story_flags["panties trap"] = False
 
@@ -2817,7 +2817,7 @@ label c2_suzume_invitation():
 
             you "Good thing the message mentions that it is {i}totally not a trap{/i}. At least I don't have to worry about anything bad happening."
 
-        "It's a trap":
+        "这摆明了是个圈套！":
             $ renpy.block_rollback()
             $ story_flags["panties trap"] = True
 
@@ -3985,7 +3985,7 @@ label c2_suzume_brothel():
     suzume "Is that so? And why do you care?"
 
     menu:
-        "I want to help her":
+        "我想帮她一把":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -3995,7 +3995,7 @@ label c2_suzume_brothel():
 
             suzume "Well don't worry, I'm not jealous, as long as your dick is not monogamous..."
 
-        "I need the power":
+        "我需要权力":
             $ renpy.block_rollback()
             $ MC.good -= 1
 
@@ -4003,7 +4003,7 @@ label c2_suzume_brothel():
 
             suzume "Cold, calculating... That's my guy! I think you've got what it takes. Don't forget me when you're rich, okay?"
 
-        "None of your business":
+        "不关你的事":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
@@ -4088,7 +4088,7 @@ label c2_homura_city_meet():
     menu:
         homura "Don't you agree?"
 
-        "Sure":
+        "当然":
             $ renpy.block_rollback()
             you "Sure. Class is an artificial social construct that is the outcome of centuries of subjective thinking, ontologically undifferentiated from vulgar prejudice and superstition."
 
@@ -4102,7 +4102,7 @@ label c2_homura_city_meet():
 
             $ NPC_homura.love += 1
 
-        "No way":
+        "没门":
             $ renpy.block_rollback()
             you "No, not really. The aristocrats should keep separate from the plebs."
 
@@ -4224,7 +4224,7 @@ label c2_homura_okiya1():
     homura "Because! This is real life, isn't it? This is what ordinary people do, isn't it? I want to learn about the world..."
 
     menu:
-        "I understand you":
+        "我理解":
             $ renpy.block_rollback()
             you "I understand. Seen from the palace towers, the women and men of Zan must be more like ants than real people..."
 
@@ -4234,7 +4234,7 @@ label c2_homura_okiya1():
 
             $ NPC_homura.love += 1
 
-        "I don't understand you":
+        "我不理解":
             $ renpy.block_rollback()
             you "I don't get it. You've got everything you could want for up there. Why bother with ordinary people?"
 
@@ -4324,7 +4324,7 @@ label c2_homura_okiya1():
     homura "You know, if it's something about the court, I'm sure I can help you! I know everyone, and every bit of gossip..."
 
     menu:
-        "Tell her about the Princess's request":
+        "告诉她公主的任务":
             $ renpy.block_rollback()
             $ NPC_homura.flags["divulged assignment"] = True
 
@@ -4354,7 +4354,7 @@ label c2_homura_okiya1():
 
             you "Thanks. That would be useful."
 
-        "Don't tell her":
+        "保守秘密":
             $ renpy.block_rollback()
             $ NPC_homura.flags["divulged assignment"] = False
             "You remember the Princess requested you keep your assignment secret."
@@ -4406,7 +4406,7 @@ label c2_homura_okiya1():
     you "'Our' place?"
 
     menu:
-        "Cajole Sill":
+        "拍拍希露":
             $ renpy.block_rollback()
             $ MC.good += 1
             $ NPC_sill.love += 1
@@ -4419,7 +4419,7 @@ label c2_homura_okiya1():
 
             you "Especially since I have one right at home."
 
-        "Scold Sill":
+        "呵斥希露":
             $ renpy.block_rollback()
             $ MC.neutral += 1
             $ NPC_sill.love -= 1
@@ -4435,7 +4435,7 @@ label c2_homura_okiya1():
             sill "Aw..."
 
 
-        "Punish Sill":
+        "惩罚希露":
             $ renpy.block_rollback()
             $ MC.evil += 1
             $ NPC_sill.love -= 2
@@ -4541,7 +4541,7 @@ label c2_suzume_morning_visit_menu():
     menu:
         extend ""
 
-        "Who are you?":
+        "你到底是谁?":
             you "Who are you, really?"
 
             play sound s_surprise
@@ -4630,7 +4630,7 @@ label c2_suzume_morning_visit_menu():
 
             jump c2_suzume_morning_visit_menu
 
-        "How did you become a Kunoichi?":
+        "你是怎么成为女忍者的?":
             you "So, how did you become a ninja?"
 
             suzume "So I was living in a monastery. Up in the mountains, there was a secretive place that occasionally traded with the monks in the valley."
@@ -4719,7 +4719,7 @@ label c2_suzume_morning_visit_menu():
 
             jump c2_suzume_morning_visit_menu
 
-        "What are the Kunoichi?":
+        "女忍者都是些什么样的人?":
             you "Tell me about your order, the Kunoichi."
 
             suzume normal "Order? The Kunoichi is not an order. We each hail from different ninjutsu schools."
@@ -4774,7 +4774,7 @@ label c2_suzume_morning_visit_menu():
 
             jump c2_suzume_morning_visit_menu
 
-        "Who are the Kunoichi in Zan?":
+        "泽恩里还有其他女忍者吗?":
             you "Tell me about the other Kunoichi."
 
             suzume normal "There are three of them in Zan. Any one of them could be in league with your killer... Of perhaps all of them."
@@ -4792,7 +4792,7 @@ label c2_suzume_morning_visit_menu():
                 menu:
                     you "Tell me about the Kunoichi from..."
 
-                    "The Earth School":
+                    "土之流派":
                         you "Tell me about the Kunoichi from the Earth School."
 
                         suzume doubt "The Earth School Kunoichi... Hmm."
@@ -4815,7 +4815,7 @@ label c2_suzume_morning_visit_menu():
 
                         suzume normal "Beats me! But I heard she can be found in the {b}Warehouse{/b} district."
 
-                    "The Water School":
+                    "水之流派":
                         you "Tell me about the Kunoichi from the Water School."
 
                         suzume doubt "Hmm, water. Not my favorite element."
@@ -4838,7 +4838,7 @@ label c2_suzume_morning_visit_menu():
 
                         suzume normal "Anyway, wherever that old hag is hiding, it has to be near water. I'd check the {b}Docks{/b} district, if I were you."
 
-                    "The Void School":
+                    "虚空流派":
                         you "Tell me about the Kunoichi from the Void School."
 
                         suzume doubt "Aw, do I have to talk about that little brat? *annoyed*"
@@ -4863,14 +4863,14 @@ label c2_suzume_morning_visit_menu():
 
                         suzume "We need to catch her flat-footed before she has a chance to settle in..."
 
-                    "Never mind":
+                    "就这些了":
                         you "Okay, enough about the Kunoichi."
 
                         $ suzume_loop_menu = False
 
             jump c2_suzume_morning_visit_menu
 
-        "No more questions":
+        "没什么要问的了":
             pass
 
     suzume bend "So, you know everything."
@@ -5594,7 +5594,7 @@ label intercept_narika():
 
         menu:
 
-            "Flatter her":
+            "奉承她":
                 $ renpy.block_rollback()
                 you "Sure, I've heard of you. It seems the rumors about your skills were not overblown..."
 
@@ -5608,7 +5608,7 @@ label intercept_narika():
 
                 $ NPC_narika.love -= 1
 
-            "Play dumb":
+            "羞辱她":
                 $ renpy.block_rollback()
                 you "Narufa Shilulu? Never heard of you."
 
@@ -5620,7 +5620,7 @@ label intercept_narika():
 
                 narika "Oh, really? And what makes you think I want to talk to you?"
 
-            "Put her down":
+            "贬低她":
                 $ renpy.block_rollback()
                 you "Come on, don't push yourself. A Legend? You might be big in your local league, but..."
 
@@ -5693,13 +5693,13 @@ label intercept_narika():
         narika "Bwahahahaha! And here I was, worried that you might have some dirty sexy-jutsu trick up your slutty skirt... But you're just a quitter. Pathetic."
 
         menu:
-            "Defuse the situation":
+            "缓和气氛":
                 $ renpy.block_rollback()
                 you "Please, ladies, let's just calm down. We are not here to fight you, Narika."
 
                 narika sad "Like you could if you wanted to... Hmph."
 
-            "Defend Suzume":
+            "袒护云雀":
                 $ renpy.block_rollback()
                 you "Stop it. I'm sure Suzume could kick your butt if she had to. But let it not come to that."
 
@@ -5707,7 +5707,7 @@ label intercept_narika():
 
                 $ NPC_narika.love -= 1
 
-            "Mock Narika":
+            "嘲讽Narika":
                 $ renpy.block_rollback()
                 you "Look, we're not here to discuss Suzume's career choices, or the sad state of your virgin life..."
 
@@ -5788,7 +5788,7 @@ label intercept_narika():
         narika "Grrr... I'm not saying anything to you!"
 
         menu:
-            "What are you doing in Zan?":
+            "你来泽恩做什么?":
                 $ renpy.block_rollback()
 
                 you "What are you doing here in Zan? Are you here on a contract?"
@@ -5801,13 +5801,13 @@ label intercept_narika():
 
                 menu:
                     extend ""
-                    "Right, okay":
+                    "当然，没错":
                         $ renpy.block_rollback()
                         you "Right, of course. You're the best ninja. I believe you've mentioned that a couple of times..."
 
                         narika happy "You bet! And in case anyone still has doubts, I'm going to prove it!"
 
-                    "I don't think you're the best":
+                    "我不觉得你是最强的":
                         $ renpy.block_rollback()
                         you "Meh, I've heard of many ninjas who are better than you."
 
@@ -5818,7 +5818,7 @@ label intercept_narika():
                         $ NPC_narika.love += 1
 
 
-            "Are you in league with the masked murderer?":
+            "你和那个假面刺客是一伙的吗?":
                 $ renpy.block_rollback()
                 you "Tell me now, who do you work with? Is it the masked murderer?"
 
@@ -5830,7 +5830,7 @@ label intercept_narika():
 
                 menu:
                     extend ""
-                    "Offer to help":
+                    "提供帮助":
                         $ renpy.block_rollback()
                         you "Why don't you let us in on your little plan? I'm sure we could help you out, too..."
 
@@ -5842,7 +5842,7 @@ label intercept_narika():
 
                         $ NPC_narika.love -= 1
 
-                    "Mock her":
+                    "嘲讽她":
                         $ renpy.block_rollback()
                         you "Of course you need help. You couldn't possibly pull off anything big like that by yourself. There must be a mastermind..."
 
@@ -5856,7 +5856,7 @@ label intercept_narika():
 
                         suzume doubt "Is that what a mastermind is?"
 
-            "Do you have a boyfriend?":
+            "你有男朋友吗?":
                 $ renpy.block_rollback()
                 $ NPC_narika.flags["boyfriend question"] = True
 
@@ -5892,7 +5892,7 @@ label intercept_narika():
                 menu:
                     extend ""
 
-                    "I believe you":
+                    "我相信你":
                         $ renpy.block_rollback()
                         you "I believe you, Narika."
 
@@ -5902,7 +5902,7 @@ label intercept_narika():
 
                         $ NPC_narika.love += 2
 
-                    "Nah":
+                    "骗鬼呢你":
                         $ renpy.block_rollback()
                         you "So you're a virgin {i}and{/i} a mythomaniac? It gets better and better..."
 
@@ -6006,7 +6006,7 @@ label intercept_narika():
 
         menu:
             extend ""
-            "Makes perfect sense":
+            "很有道理":
                 $ renpy.block_rollback()
                 you "I get it. You're going to show the world who's best? Am I right?"
 
@@ -6022,7 +6022,7 @@ label intercept_narika():
 
                 narika blush "I mean no! There is no heist! I meant, uh..."
 
-            "This rivalry is silly":
+            "愚蠢至极":
                 $ renpy.block_rollback()
                 you "This is just silly. If you're the better ninja, you shouldn't need to prove it by playing petty games."
 
@@ -6036,7 +6036,7 @@ label intercept_narika():
 
                 $ NPC_narika.love -= 1
 
-            "You're going to lose":
+            "你会输的一败涂地":
                 $ renpy.block_rollback()
                 you "I don't think you can hold a candle to any of those ninjas. They'll beat the crap out of you, kid."
 
@@ -6582,7 +6582,7 @@ label intercept_mizuki():
         $ mizuki_name = "Mizuki"
 
         menu:
-            "Flatter her":
+            "奉承她":
                 $ renpy.block_rollback()
                 you "Look, you're a legendary ninja, reknowned for your cunning and subtlety..."
 
@@ -6590,7 +6590,7 @@ label intercept_mizuki():
 
                 mizuki "Sorry, dear. Who I'm in league with is none of your business."
 
-            "Offer something in return":
+            "提供回报":
                 $ renpy.block_rollback()
                 you "There's no need for grandstanding here. We could share information with you. You could name your price..."
 
@@ -6604,7 +6604,7 @@ label intercept_mizuki():
 
                 $ NPC_mizuki.love += 2
 
-            "Threaten her":
+            "威胁她":
                 $ renpy.block_rollback()
                 you "We've got you cornered here. Don't think of doing anything silly."
 
@@ -6633,7 +6633,7 @@ label intercept_mizuki():
         mizuki "Remember that."
 
         menu:
-            "I'll keep it in mind":
+            "我会牢记于心":
                 $ renpy.block_rollback()
                 you "I'll keep it in mind. I do not mean to fight you. But you and I aren't done talking..."
 
@@ -6641,13 +6641,13 @@ label intercept_mizuki():
 
                 $ NPC_mizuki.love += 2
 
-            "Don't be like that":
+            "别这么说嘛":
                 $ renpy.block_rollback()
                 you "Come on, don't be like that. I'm sure we could be fast friends..."
 
                 mizuki "I don't do friends, dear. I work alone. Now leave me, I've got a lot on my plate."
 
-            "You don't scare me":
+            "我可不是吓大的":
                 $ renpy.block_rollback()
                 you "If you think you can scare me off so easily, you're in for a surprise. I'm tougher than you know!"
 
@@ -6768,7 +6768,7 @@ label intercept_mizuki():
         mizuki "So, revenge. I like mine ice-cold."
 
         menu:
-            "You're right":
+            "你说得对":
                 $ renpy.block_rollback()
                 $ MC.evil += 1
 
@@ -6782,7 +6782,7 @@ label intercept_mizuki():
 
                 mizuki "It's been so long, but I am finally here to end what began so long ago... And no one will rob me of my vengeance."
 
-            "You're wrong":
+            "不敢苟同":
                 $ MC.good += 1
                 $ NPC_mizuki.love -= 1
                 you "Holding grudges is bad, you know. This is no way to live."
@@ -6795,7 +6795,7 @@ label intercept_mizuki():
 
                 you "..."
 
-            "I won't judge":
+            "无权评判":
                 $ MC.neutral += 1
                 $ NPC_mizuki.love += 2
                 you "Revenge can be petty, or necessary. I don't know your circumstances, so I won't judge you."
@@ -6819,7 +6819,7 @@ label intercept_mizuki():
         mizuki "These people {i}will{/i} die no matter what you do. And collateral damage be damned."
 
         menu:
-            "We could kill them for you":
+            "我们可以帮你杀了他们":
                 $ renpy.block_rollback()
                 $ MC.evil += 1
 
@@ -6837,7 +6837,7 @@ label intercept_mizuki():
 
                 you "But we're here now, and your magic is gone. So you'd better cooperate."
 
-            "Let us share information":
+            "情报共享如何？":
                 $ renpy.block_rollback()
                 $ MC.good -= 1
                 $ NPC_mizuki.love += 2
@@ -6855,7 +6855,7 @@ label intercept_mizuki():
 
                 you "You won't know until you try. Besides, your magic is depleted, you have nowhere else to go, so we're in for a long chat."
 
-            "I won't let you get away with murder":
+            "别想杀了人还一走了之":
                 $ renpy.block_rollback()
                 $ MC.good += 1
                 $ NPC_mizuki.love -= 1
@@ -7387,7 +7387,7 @@ label intercept_haruka():
         suzume doubt "Aw, sis, that's mean... *frown*"
 
         menu:
-            "Agree with Haruka":
+            "同意Haruka的观点":
                 $ renpy.block_rollback()
                 you "Indeed, she has no honor or virtue to speak of. But that's how I like her."
 
@@ -7397,7 +7397,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love -= 1
 
-            "Defend Suzume":
+            "袒护云雀":
                 $ renpy.block_rollback()
                 you "Who are you to trash-talk my friend? How can you lecture others about honor, when you're an assassin yourself?"
 
@@ -7409,7 +7409,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love += 2
 
-            "Shrug":
+            "耸耸肩膀":
                 $ renpy.block_rollback()
                 you "Are you finished with your squabbling? We did not come here to discuss honor."
 
@@ -7430,7 +7430,7 @@ label intercept_haruka():
         haruka "Hmpf. Why would I tell you, of all people?"
 
         menu:
-            "Offer to help":
+            "提供帮助":
                 $ renpy.block_rollback()
                 you "We could help you. Then you'd help us out."
 
@@ -7444,7 +7444,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love += 2
 
-            "Give her money":
+            "收买她":
                 $ renpy.block_rollback()
                 you "Name your price. We could make a deal."
 
@@ -7452,7 +7452,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love -= 1
 
-            "Threaten her":
+            "威胁她":
                 $ renpy.block_rollback()
                 you "If you won't volunteer that information, we could force you. Don't make us hurt you."
 
@@ -7508,7 +7508,7 @@ label intercept_haruka():
         "Her voice is shaking, and she looks in a state of panic, gripping her blade tightly. You try to defuse the situation before you end up with a knife in the gut."
 
         menu:
-            "I am not going to harm you":
+            "我不会伤害你的":
                 $ renpy.block_rollback()
                 you "I mean you no harm. Information is all I want. You don't have to be afraid."
 
@@ -7522,7 +7522,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love += 2
 
-            "I won't harm you if you answer my questions":
+            "只要你回答我的问题我就不会伤害你":
                 $ renpy.block_rollback()
                 you "You are in a tight spot, yes. But if you answer my questions, nothing bad will happen to you."
 
@@ -7536,7 +7536,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love -= 1
 
-            "Be afraid":
+            "恐吓她":
                 $ renpy.block_rollback()
                 you "Look at me! You escaped me once, but this is the end of the road for you."
 
@@ -7878,7 +7878,7 @@ label intercept_haruka():
         haruka "I did... And I do. I am not worthy of this title."
 
         menu:
-            "Don't say that":
+            "别这么说":
                 $ renpy.block_rollback()
                 you "Don't say that. Here you are, fighting to right the wrongs that were done to you."
 
@@ -7898,7 +7898,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love += 2
 
-            "We understand":
+            "我们理解":
                 $ renpy.block_rollback()
                 you "You're not so different from us, after all... I also left my former life behind."
 
@@ -7912,7 +7912,7 @@ label intercept_haruka():
 
                 $ NPC_haruka.love -= 1
 
-            "So you're a quitter, eh?":
+            "所以你半途而废了?":
                 $ renpy.block_rollback()
                 you "So you're a quitter. The Noroi were right, after all, you're just weak."
 
@@ -8140,7 +8140,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
         menu:
             extend ""
 
-            "The Princess and her entourage" if not joined["princess"]:
+            "公主殿下和她的侍从" if not joined["princess"]:
                 $ renpy.block_rollback()
 
                 $ joined["princess"] = True
@@ -8217,7 +8217,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
 
                 hide kuro with dissolve
 
-            "Commander Uesugi Kenshin" if not joined["kenshin"]:
+            "上杉剑心团长" if not joined["kenshin"]:
                 $ renpy.block_rollback()
                 $ joined["kenshin"] = True
 
@@ -8269,7 +8269,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
 
                 hide kenshin with dissolve
 
-            "Random courtiers" if not joined["courtiers"]:
+            "随便找个人堆" if not joined["courtiers"]:
                 $ renpy.block_rollback()
                 $ joined["courtiers"] = True
 
@@ -8416,7 +8416,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
         homura normal "If it's something I can help you with, you should tell me. I can recoup that with my own intel!"
 
         menu:
-            "Tell her about the Princess's request":
+            "告诉她公主的任务":
                 $ renpy.block_rollback()
                 $ NPC_homura.flags["divulged assignment"] = True
                 you "Well, I guess it could be useful to share our information. I am looking after the killer who is terrorizing the court these days."
@@ -8429,7 +8429,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
                 homura "I'm sure they're linked to the noble plots somehow! Let us investigate together!"
 
-            "Don't tell her":
+            "闭口不谈":
                 $ renpy.block_rollback()
                 you "Sorry, but this is still a secret."
 
@@ -8472,7 +8472,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
     menu:
         you "So..."
 
-        "What is it like to be a noble?":
+        "贵族的生活怎么样?":
             $ renpy.block_rollback()
             you "What is it like to be part of the Zanic nobility? You said your father is a powerful royal advisor..."
 
@@ -8494,7 +8494,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
             $ NPC_homura.love -= 1
 
-        "What do you like to do?":
+        "你有什么爱好吗?":
             $ renpy.block_rollback()
             you "What are your passions?"
 
@@ -8514,7 +8514,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
             $ NPC_homura.love += 2
 
-        "Do you have a boyfriend?":
+        "你有男朋友吗？":
             $ renpy.block_rollback()
             you "Let me ask you a blunt question: Do you have a boyfriend?"
 
@@ -8525,7 +8525,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
             menu:
                 you "Well..."
 
-                "I have a girlfriend (truth)" if MC.has_girlfriend():
+                "我有女朋友了(坦白)" if MC.has_girlfriend():
                     $ renpy.block_rollback()
                     you "I'm seeing this girl in town. I guess you could say we're together..."
 
@@ -8533,7 +8533,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
                     homura sad "Oh. Of course... I should have guessed... Never mind."
 
-                "I have a girlfriend (lie)" if not MC.has_girlfriend():
+                "我有女朋友了(撒谎)" if not MC.has_girlfriend():
                     $ renpy.block_rollback()
                     you "I have a girlfriend, sure, of course... She's, a, away at the moment, but..."
 
@@ -8541,7 +8541,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
                     homura sad "Oh. Of course... I should have guessed... Never mind."
 
-                "I don't have a girlfriend (lie)" if MC.has_girlfriend():
+                "我还是单身(撒谎)" if MC.has_girlfriend():
                     $ renpy.block_rollback()
                     you "Nope, I'm absolutely single, I have no one, cross my heart... Don't believe the people who say they see me with girls in town!"
 
@@ -8551,7 +8551,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
                     $ NPC_homura.love -= 1
 
-                "I don't have a girlfriend (truth)" if not MC.has_girlfriend():
+                "我还是单身(坦白)" if not MC.has_girlfriend():
                     $ renpy.block_rollback()
                     you "Not at the moment, no. My work keeps me busy, but I have no serious relationship with anyone."
 
@@ -8563,7 +8563,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
                     $ NPC_homura.love += 2
 
-                "It's complicated":
+                "这很难说":
                     $ renpy.block_rollback()
                     you "Well you know, what's commitment in this world, am I right? Girlfriends, boyfriends, pets, slaves... They come and go!"
 
@@ -8628,7 +8628,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
     menu:
         "You take your time to reply."
 
-        "Sure, let's go":
+        "当然，出发吧":
             $ renpy.block_rollback()
             $ NPC_homura.flags["drunk sex"] = True
             $ NPC_homura.love -= 2
@@ -8742,7 +8742,7 @@ label c2_homura_okiya2(): # Happens sometimes after the first Kunoichi has been 
 
             "You follow her outside, trying to find something to say to her, but she is already rushing for the exit."
 
-        "No, you're drunk":
+        "你喝醉了":
             $ renpy.block_rollback()
             $ NPC_homura.love += 2
 
@@ -8843,7 +8843,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
     menu:
         extend ""
 
-        "Indeed":
+        "确实如此":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -8859,7 +8859,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
             kuro "And sometimes it forces me to keep my cards close to the chest."
 
-        "She had it coming":
+        "她自找的":
             $ renpy.block_rollback()
             $ MC.good -= 1
 
@@ -8867,7 +8867,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
             kuro "Perhaps. I hope this is mere incompetence. There is a more sinister explanation."
 
-        "I won't judge":
+        "不予置评":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
@@ -8946,7 +8946,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
     menu:
         extend ""
 
-        "I'm glad to help":
+        "很乐意为您效劳，荣幸之至":
             $ renpy.block_rollback()
             you "I'm glad to help you, Princess... Your Highness."
 
@@ -8957,7 +8957,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
             kuro "Your help is invaluable, but I do not take it for granted."
 
-        "I hope the reward will be worth it":
+        "希望回报对得起我的付出":
             $ renpy.block_rollback()
             you "Indeed, I hope the reward matches the effort..."
 
@@ -8965,7 +8965,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
             kuro "The reward, of course. *sigh*"
 
-        "What a bummer":
+        "真是倒霉透顶":
             $ renpy.block_rollback()
             you "More investigative work? Sheesh... Look, Your Highness, I'm a busy man..."
 
@@ -9015,7 +9015,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
     menu:
         you "Well..."
 
-        "Sure":
+        "当然":
             $ renpy.block_rollback()
             "It isn't like you to skip a free meal."
 
@@ -9023,7 +9023,7 @@ label c2_palace_visit2(): # Happens after all Kunoichi have been met twice
 
             $ luncheon = True
 
-        "I can't":
+        "我不能":
             $ renpy.block_rollback()
             you "Thank you for your offer, but I must decline. I have urgent business to attend to."
 
@@ -9075,7 +9075,7 @@ label c2_luncheon2:
         menu:
             extend ""
 
-            "The Princess" if not _choice["princess"]:
+            "公主殿下" if not _choice["princess"]:
                 $ renpy.block_rollback()
                 $ _choice["princess"] = True
 
@@ -9126,7 +9126,7 @@ label c2_luncheon2:
 
                 hide kuro with dissolve
 
-            "Commander Uesugi Kenshin" if not _choice["kenshin"]:
+            "骑士团长剑心" if not _choice["kenshin"]:
                 $ renpy.block_rollback()
                 $ _choice["kenshin"] = True
 
@@ -9143,7 +9143,7 @@ label c2_luncheon2:
                 menu:
                     extend ""
 
-                    "Remind her you are a guest":
+                    "提醒她你是贵宾":
                         $ renpy.block_rollback()
                         you "You seem to forget I am here at the Princess's request. I have as much a right to be here as anyone."
 
@@ -9153,7 +9153,7 @@ label c2_luncheon2:
 
                         kenshin "Forget it. I won't waste my breath arguing with you. This is beneath me."
 
-                    "Mock her":
+                    "嘲讽她":
                         $ renpy.block_rollback()
                         you "Oh, really? After your earlier display of incompetence, I think you're closer to getting the boot than I am."
 
@@ -9161,7 +9161,7 @@ label c2_luncheon2:
 
                         kenshin "On my honor as a knight, the killings will end... I'm this close to catching the culprit! You'll see."
 
-                    "Apologize":
+                    "向她道歉":
                         $ renpy.block_rollback()
                         you "You're on edge. I understand. I'm sorry if I upset you."
 
@@ -9188,7 +9188,7 @@ label c2_luncheon2:
                     menu:
                         you "I wanted to ask you..."
 
-                        "About your father" if not _choice["kenshin father"]:
+                        "关于你的父亲" if not _choice["kenshin father"]:
 
                             $ _choice["kenshin father"] = True
 
@@ -9242,7 +9242,7 @@ label c2_luncheon2:
 
                             jump luncheon2_kenshin_menu
 
-                        "About your mother" if not _choice["kenshin mother"]:
+                        "关于你的母亲" if not _choice["kenshin mother"]:
 
                             $ _choice["kenshin mother"] = True
 
@@ -9276,7 +9276,7 @@ label c2_luncheon2:
 
                             jump luncheon2_kenshin_menu
 
-                        "About your boyfriend" if not _choice["kenshin relationship status"]:
+                        "关于你的男朋友" if not _choice["kenshin relationship status"]:
                             $ renpy.block_rollback()
                             $ _choice["kenshin relationship status"] = True
 
@@ -9322,14 +9322,14 @@ label c2_luncheon2:
 
                             you "I guess it's me, then. *sigh*"
 
-                        "Never mind":
+                        "时候不早了":
                             you "Well, look at the time. Forgive me, but I have to go."
 
                             kenshin "Yes. Don't let me keep you."
 
                             hide kenshin with dissolve
 
-            "Random courtiers" if not _choice["courtiers"]:
+            "随便找个人堆" if not _choice["courtiers"]:
                 $ renpy.block_rollback()
                 $ _choice["courtiers"] = True
 
@@ -10208,7 +10208,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
     homura normal "Let's have another toast! To friendship!"
 
     menu:
-        "To friendship!":
+        "敬友谊!":
             $ renpy.block_rollback()
             you "To friendship! *laugh*"
 
@@ -10224,7 +10224,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
 
             $ NPC_homura.love -= 1
 
-        "Friendship?":
+        "友谊?":
             $ renpy.block_rollback()
             you "Friends? I thought we could be more than that..."
 
@@ -10233,7 +10233,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
             homura blush "[MC.name]... What would you like it to be, then?"
 
             menu:
-                "Lovers!":
+                "男女朋友!":
                     $ renpy.block_rollback()
                     you "You know what I would want it to be..."
 
@@ -10243,7 +10243,7 @@ label c3_homura_okiya3(): # Happens the night after moving to chapter 3.
 
                     $ NPC_homura.love += 1
 
-                "Adventure buddies!":
+                "冒险伙伴!":
                     $ renpy.block_rollback()
                     you "We could be... Adventure buddies!"
 
@@ -10518,7 +10518,7 @@ label homura_sex(first=True):
 
     menu:
         extend ""
-        "I think so":
+        "我也这么认为":
             $ renpy.block_rollback()
             you "I think so too... You look innocent and shy, but when we're in bed together... It's like fireworks!"
 
@@ -10526,7 +10526,7 @@ label homura_sex(first=True):
 
             $ NPC_homura.love += 1
 
-        "It's just me":
+        "我和谁都这样":
             $ renpy.block_rollback()
             you "Actually, It's like that with every girl I meet. I have a gift..."
 
@@ -10756,7 +10756,7 @@ label homura_bj(first=True):
     "Homura looks up at you lewdly, while licking the sweat off your cock. Her erotic face is enough to bring you over the top."
 
     menu:
-        "Cum on her face":
+        "射在她的脸上":
             $ renpy.block_rollback()
             show bg homura_bj1 at top with dissolve
 
@@ -10780,7 +10780,7 @@ label homura_bj(first=True):
 
             "She spits out a bit of cum that landed in her mouth, then smiles mischievously."
 
-        "Cum in her mouth":
+        "射在她的嘴里":
             $ renpy.block_rollback()
             show bg homura_bj3 at top with dissolve
             homura "NGGGH!"

@@ -336,7 +336,7 @@ label city_monster_menu():
     menu:
         you "Now, this knocked out monster... What should I do with it?"
 
-        "Keep it at the farm":
+        "在农场饲养它":
 
             you "How would you like to get room and board, pal, and fuck some girls all day?"
 
@@ -357,7 +357,7 @@ label city_monster_menu():
 
             "After sending the girl off, you drag the submissive monster to the farm. This consumes all your remaining actions."
 
-        "Sell it to Willow" if sewers.action:
+        "把它卖给薇儿" if sewers.action:
             you "I know someone who can take care of it, making me some money in the process..."
 
             hide screen show_event
@@ -378,7 +378,7 @@ label city_monster_menu():
             $ story_add_event("willow fight", type="city", duplicates=False)
 
 
-        "Finish it off":
+        "了结它的生命":
             $ MC.good -= 1
 
             you "Your days of happily roaming around and randomly banging innocent girls are over, monster. Prepare to die."
@@ -397,7 +397,7 @@ label city_monster_menu():
             scene black
             with dissolve
 
-        "Spare it":
+        "仁慈地放了它":
             $ MC.good += 1
 
             "You can't bring yourself to kill off a wounded opponent."
@@ -1205,23 +1205,23 @@ label city_slave:
 
             "Let me..."
 
-            "Fuck her mouth":
+            "插她的喉咙":
 
                 $ act = "service"
 
-            "Fuck her pussy":
+            "干她的小穴":
 
                 $ act = "sex"
 
-            "Fuck her ass":
+            "操她的菊穴":
 
                 $ act = "anal"
 
-            "Do something else":
+            "做点其他的":
 
                 $ act = "fetish"
 
-            "I don't have time for this":
+            "我没时间浪费在她身上":
 
                 $ renpy.block_rollback()
 
@@ -1540,7 +1540,7 @@ label city_gamble:
 
         "What will you do?"
 
-        "Accept":
+        "接受赌局":
 
             $ renpy.block_rollback()
 
@@ -1863,7 +1863,7 @@ label city_gamble:
 
 
 
-        "Refuse":
+        "我不赌博":
 
             $ renpy.block_rollback()
 
@@ -4638,7 +4638,7 @@ label city_luck():
         menu:
             "What do you do?"
 
-            "Keep the gold":
+            "私吞金币":
 
                 $ MC.good -= 1
 
@@ -4650,7 +4650,7 @@ label city_luck():
 
                 npc "Aw..."
 
-            "Give back the gold":
+            "归还失物":
 
                 $ MC.good += 1
 
@@ -4737,7 +4737,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
     menu:
         extend ""
 
-        "Would you like some tanning oil?[s1]":
+        "你想不想涂点防晒油?[s1]":
             you "The sun is getting high, I wouldn't want you to get sunburnt. Let me help you..."
 
             $ result = False
@@ -4787,16 +4787,16 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 menu:
                     extend ""
 
-                    "Grope her ass[s1]":
+                    "抚摸她的臀部[s1]":
                         $ fix = "groping her ass"
 
-                    "Fondle her boobs[s2]":
+                    "揉捏她的胸部[s2]":
                         $ fix = "fondling her boobs"
 
-                    "Finger her[s3]":
+                    "用手指挑逗她[s3]":
                         $ fix = "fingering"
 
-                    "Leave it at that":
+                    "就到此为止吧":
                         $ fix = None
 
                 if fix:
@@ -4875,7 +4875,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         $ s1 = get_fix_weakness_symbol(girl, "denied orgasm")
 
                         menu:
-                            "Make her come":
+                            "让她高潮":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                 if not pic:
                                     $ pic = girl.get_pic(["orgasm"] + fix_dict[fix].tag_list[0], strict=True, not_tags=["sex", "anal", "group", "bisexual"], hide_farm=True)
@@ -4896,7 +4896,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                                 $ stat1 = "libido"
                                 $ stat2 = rand_choice(["obedience", "sensitivity"])
 
-                            "Deny her orgasm[s1]":
+                            "禁止高潮[s1]":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                 if not pic:
                                     $ pic = girl.get_pic(["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
@@ -4954,7 +4954,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 "Disappointed, you take your leave."
 
 
-        "Have sex with me":
+        "和我云雨一番":
 
             you "I'm feeling horny right now. Let's fuck."
 
@@ -4965,7 +4965,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             $ s1 = get_fix_weakness_symbol(girl, "public acts")
 
             menu:
-                "Let's do it in plain sight[s1]":
+                "让我们在众目睽睽之下做吧[s1]":
                     you "Yes, here! I don't care who's watching... Let's do it!"
 
                     if girl.check_fix("public acts") == "neg" and girl.get_stat("obedience") <= 150:
@@ -4994,7 +4994,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         "She darts away from you, leaving you looking stupid with a useless boner."
 
 
-                "Let's hide":
+                "让我们找个没人的地方做吧":
                     you "Let us hide behind some rocks..."
 
                     if girl.check_fix("public acts") != "neg" and girl.is_("lewd") and girl.get_stat("libido") > 150:
@@ -5037,7 +5037,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 menu:
                     "What will you have her do?"
 
-                    "Suck your dick[s1]":
+                    "吮吸你的肉棒[s1]":
                         $ act = "service"
                         $ fix = "oral"
 
@@ -5052,7 +5052,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         you "Open your mouth and look me in the eyes..."
 
-                    "Give you a titjob[s2]":
+                    "让她给你乳交[s2]":
                         $ act = "service"
                         $ fix = "titjobs"
 
@@ -5066,7 +5066,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         you "I've got my eyes on your titties for some time... Why don't you use them to pleasure me?"
 
-                    "Have sex[s3]":
+                    "掰开她的小穴[s3]":
                         $ act = "sex"
                         $ fix = None
 
@@ -5327,7 +5327,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             else:
                 "Disappointed, you go back to your other business."
 
-        "Get ready to serve some customers":
+        "准备好服务客人":
             $ MC.good -= 1
             you "Well, I hope you enjoyed your time off - because it's over now."
 
@@ -5343,7 +5343,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             call dialogue(girl, "beach whoring request") from _call_dialogue_249
 
             menu:
-                "Pay double her upkeep":
+                "付她双倍的工资":
                     $ upk = round_int(girl.upkeep * girl.get_effect("boost", "total upkeep") * 2)
                     $ MC.good += 0.5
                     you "Listen, I'll give you... double your regular upkeep. How does that sound?"
@@ -5355,14 +5355,14 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                     else:
                         $ target -= 25
 
-                "Pay her regular upkeep":
+                "付她正常的工资":
                     $ upk = round_int(girl.upkeep * girl.get_effect("boost", "total upkeep"))
                     $ MC.neutral += 1
                     you "I'll pay your normal upkeep, of course. It's only fair..."
 
                     girl.char "..."
 
-                "Don't pay her":
+                "她应该无偿劳动":
                     $ upk = 0
                     $ MC.evil += 1
                     you "I own you, so why should I care about your opinion? Get your ass to work!"
@@ -5425,19 +5425,19 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             menu:
                 "Choose what [girl.name] will do."
 
-                "Service[s1]":
+                "侍奉[s1]":
                     $ act = "service"
                     you "You there, get yourself ready. [girl.name] will take good care of you..."
 
-                "Sex[s2]":
+                "做爱[s2]":
                     $ act = "sex"
                     you "One of you lucky bastards can get laid today... You! Step forward."
 
-                "Anal sex[s3]":
+                "肛交[s3]":
                     $ act = "anal"
                     you "Did someone say 'anal sex'? You've come to the right place!"
 
-                "Group sex[s4]":
+                "群交[s4]":
                     $ act = "group"
                     you "Chill, guys, there's no need to fight: [girl.fullname] will serve all of you today!"
 
@@ -5635,7 +5635,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 girl.char "What? No, I'm not going to do that with this guy!"
 
                 menu:
-                    "How dare you!":
+                    "你怎么敢!":
                         $ MC.rand_say(("我是你的主人。你将会服从我。", "你要按我说的去做！因为这就是板上钉钉的!!!",
                             "ev: 闭嘴，婊子。我制定的规则！", "gd: 我的耐心已经到了极限。这次你别想逃过去."))
 
@@ -5650,9 +5650,9 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                             $ girl.change_stat("obedience", 2)
 
-                    "Give up":
-                        $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你现在欠我的.",
-                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你....但也请你不要考验我的耐心."))
+                    "放弃计划":
+                        $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你欠我个人情。",
+                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你....但也请你不要考验我的耐心。"))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)
@@ -5661,7 +5661,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         return
 
-        "Nothing (Leave)":
+        "什么也不做 (离开)":
             you "All right, I'll see you at [brothel.name]."
 
     hide screen show_event

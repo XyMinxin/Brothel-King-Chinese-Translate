@@ -25,33 +25,33 @@ label start:
         menu:
             "Choose a starting mode"
 
-            "Normal mode - See intro":
+            "剧情模式-含新手教程（有额外CG）":
                 jump intro
 
-            "Normal mode - No intro":
+            "剧情模式-无新手教程":
                 pass
 
-            "No story mode (Test)":
+            "沙盒模式 (测试中)":
                 $ story_mode = False
 
-            "Debug mode - Fast":
+            "测试模式-快速调试":
                 $ persistent.active_mix = "default"
                 $ debug_mode = "quick"
 
-            "Debug mode - Custom":
+            "测试模式-自定义":
                 $ debug_mode = "custom"
 
     else:
         menu:
             "Would you like to see the intro?"
 
-            "Yes":
+            "是的":
                 jump intro
 
-            "No":
+            "不用了":
                 pass
 
-            "No story mode (Test)" if persistent.new_game_plus:
+            "自由模式(测试中)" if persistent.new_game_plus:
                 $ story_mode = False
 
     jump quick_start
@@ -94,7 +94,7 @@ label quick_start:
     if debug_mode != "quick" and starting_chapter in (1, 6):
 
         menu:
-            "你会用什么作为你生意的幌子?"
+            "你打算用什么作为青楼的招牌业务?"
 
             "零点酒吧":
                 $ brothel.add_room("tavern", forced=True)

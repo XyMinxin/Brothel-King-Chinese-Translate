@@ -372,13 +372,13 @@ label brothel_loop():
 
             menu:
                 "Choose what to do"
-                "Full clean-up ([full_cost] gold)":
+                "彻底清洁 (花费[full_cost]金币)":
                     $ result = brothel.clean_up()
                     sill sad "*pant* *pant* It is done, Master... I'm so tired... *pant*"
-                "Partial clean-up ([half_cost] gold)":
+                "部分清洁 (花费[half_cost]金币)":
                     $ result = brothel.clean_up(0.5)
                     sill happy "Yes Master, I will get some supplies and work on it right away!"
-                "Cancel":
+                "取消":
                     $ result = False
 
         elif operation == "change name":
@@ -574,9 +574,9 @@ label farm_loop():
             menu:
                 "Do you want to invert her first and last name?"
 
-                "Yes":
+                "是的":
                     $ girl.init_dict["identity/inverted_name"] = True
-                "No":
+                "算了":
                     $ girl.init_dict["identity/inverted_name"] = False
 
             $ girl.set_fullname()
@@ -1042,11 +1042,11 @@ label girls_first_time:
                             sill happy "Would you like to learn more about training your girls to become whores?"
 
                             menu:
-                                "Yes":
+                                "告诉我":
                                     call help_whores() from _call_help_whores
-                                "No":
+                                "不用了":
                                     pass
-                                "Don't ask me again":
+                                "别再问了":
                                     $ help_tips["whore"] = False
                                     "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
@@ -1127,9 +1127,9 @@ label girls_loop():
             menu:
                 "Do you want to invert her first and last name?"
 
-                "Yes":
+                "是的":
                     $ girl.init_dict["identity/inverted_name"] = True
-                "No":
+                "算了":
                     $ girl.init_dict["identity/inverted_name"] = False
 
             $ girl.set_fullname()
@@ -1189,11 +1189,11 @@ label girls_loop():
                             sill happy "Would you like to learn more about training your girls to become whores?"
 
                             menu:
-                                "Yes":
+                                "告诉我":
                                     call help_whores() from _call_help_whores_5
-                                "No":
+                                "不用了":
                                     pass
-                                "Don't tell me again":
+                                "别再问了":
                                     $ help_tips["whore"] = False
                                     "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
@@ -1248,7 +1248,7 @@ label girls_loop():
                         menu:
                             "Ask [girl.name] to work and whore at the same time?"
 
-                            "Yes":
+                            "是的":
                                 if not girl.will_do("whore"):
                                     call dialogue(girl, "refuse whoring") from _call_dialogue_95
 
@@ -1259,18 +1259,18 @@ label girls_loop():
                                         sill happy "Would you like to learn more about training your girls to become whores?"
 
                                         menu:
-                                            "Yes":
+                                            "告诉我":
                                                 call help_whores() from _call_help_whores_7
-                                            "No":
+                                            "不用了":
                                                 pass
-                                            "Don't tell me again":
+                                            "别再问了":
                                                 $ help_tips["whore"] = False
                                                 "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
                                 else:
                                     $ girl.work_whore = True
 
-                            "No":
+                            "算了":
                                 $ girl.work_whore = False
 
 
