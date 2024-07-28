@@ -2668,7 +2668,7 @@ init -1 python:
     add_dialogue("free_chat_love", ("superficial", "bimbo"), ("{i}可爱。{/i}我的意思是，这就是字面上的“我”，你知道吗？", "我的意思是它比仅仅喜欢某件事要严肃得多，你知道吗？"), love=1, max_cap=25)
     add_dialogue("free_chat_origins", ("superficial", "rebel", "bimbo" ), ("我来自[girl.origin]。那里实在是太无聊了。", "我来自[girl.origin]。我决定尽快搬到泽恩。", "我很高兴我们能够从 [girl.origin] 搬到 Zan。 [girl.origin] 简直就是一个屎坑。"), love=2, max_cap=40)
     add_dialogue("free_chat_hobbies", ("superficial", "pervert", "yandere"), ("喜欢[hobby]的人都非常性感。", "嗯，我的意思是，我是个女孩，所以....显然我喜欢[hobby]。","嗯，我怎么可能不喜欢[hobby]呢？","我，就像，完全是[hobby]类型！"), love=1, max_cap=40)
-    add_dialogue("free_chat_likes", ("superficial", "sweet", "bimbo"), ("嗯，我的意思是，我是个女孩，所以....显然我喜欢[thing]。特别是[best]。","嗯，我怎么可能不喜欢[best]呢？没有其他[thing]可以与之相媲美。","就[thing]而言，我完全是[最佳]类型！"), love=1, max_cap=40)
+    add_dialogue("free_chat_likes", ("superficial", "sweet", "bimbo"), ("嗯，我的意思是，我是个女孩，所以....显然我喜欢[thing]。特别是[best]。","嗯，我怎么可能不喜欢[best]呢？没有其他[thing]可以与之相媲美。","就[thing]而言，我完全是[best]类型！"), love=1, max_cap=40)
     add_dialogue("free_chat_dislikes", ("superficial", "rebel", "bimbo" ), ("嗯，如果[worst]是你最喜欢的[thing]，我真的不想被看到和你在一起，所以......", "我朋友现在就面临这样的情况。她最喜欢的[thing]是[worst]，我想....嗯....不怎么样？！友谊结束了。", "实际上，我并不喜欢[worst]的[thing]。"), max_cap=40)
 
     add_dialogue("free_joke_harmless", ("superficial", "pervert", "sweet", "holy"), ("我们能谈谈一些更有趣的事情吗？","*打哈欠* ...抱歉，我有点困了。","...好吧，如果你不需要什么东西，我就真的离开了。","呃，我今天其实不想再跟你说话了。再见！", "哇，时间过得真快！再见！","下次我们就彻底解决这个问题吧。之后！","抱歉，我今天有{i}很多{/i}要做，你知道吗？","抱歉，我现在太忙了。","哦。好吧，当然，那就是，完全没问题，无论如何。","嗯，我现在确实没什么可对你说的，所以..."), love=-1, max_cap=50)
@@ -2862,7 +2862,7 @@ init -1 python:
     add_dialogue("slave chat feelings a little obedient", ("superficial", "very extravert", "very materialist"), ("我很乐意服从命令之类的，只要它们不会变得太奇怪。"), unlock="DS")
     add_dialogue("slave chat feelings obedient", ("superficial", "very extravert", "very materialist"), ("你完全赢得了我的尊敬，主人。"), unlock="DS")
     add_dialogue("slave chat feelings very obedient", ("superficial", "very extravert"), ("我会{i}完全{/i}为你加倍努力，因为你是我的主人，你对我来说很特别。"), unlock="DS")
-    add_dialogue("slave chat tastes likes", ("superficial", "sweet", "bimbo"), ("嗯，我的意思是，我是个女孩，所以....显然我喜欢[thing]。特别是[best]。","嗯，我怎么可能不喜欢[best]呢？没有其他[thing]可以与之相媲美。","就[thing]而言，我完全是[最佳]类型！"), unlock="LM")
+    add_dialogue("slave chat tastes likes", ("superficial", "sweet", "bimbo"), ("嗯，我的意思是，我是个女孩，所以....显然我喜欢[thing]。特别是[best]。","嗯，我怎么可能不喜欢[best]呢？没有其他[thing]可以与之相媲美。","就[thing]而言，我完全是[best]类型！"), unlock="LM")
     add_dialogue("slave chat tastes dislikes", ("superficial", "rebel", "bimbo" ), ("嗯，如果[worst]是你最喜欢的[thing]，我真的不想被看到和你在一起，所以......", "我朋友现在就面临这样的情况。她最喜欢的[thing]是[worst]，我想....嗯....不怎么样？！友谊结束了。", "实际上，我并不喜欢[worst]的[thing]。"), unlock="LM")
     add_dialogue("slave chat tastes loves +", ("superficial", "rebel", "bimbo"), ("我愿意为[thing]做任何事情。","嗯，我怎么可能不喜欢[thing]呢？","我，就像，完全是[thing]类型！"), unlock="LM")
     add_dialogue("slave chat tastes loves -", ("superficial", "very extravert"), ("我想[thing]没问题或者怎么样。","您对[thing]有何看法？我的朋友不会对此闭嘴。"), unlock="LM")
