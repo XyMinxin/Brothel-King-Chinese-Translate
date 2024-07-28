@@ -4515,7 +4515,7 @@ init -2 python:
 
             if counterpart and counterpart.type == "NPC":
                 if self.sellable:
-                    possible_acts.append("use")
+                    possible_acts.append("sell")
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
