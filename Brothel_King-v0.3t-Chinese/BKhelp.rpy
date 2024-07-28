@@ -457,7 +457,7 @@ label help(scr):
 
     elif r == "debug":
         menu:
-            "Reset food effects":
+            "重置食物效果":
                 python:
                     for girl in game.get_all_girls():
                         girl.current_food_effect = defaultdict(bool)
@@ -472,10 +472,10 @@ label help(scr):
                     menu:
                         "Would you like to reset all existing counters to zero?"
 
-                        "Yes":
+                        "是的":
                             $ persistent.debug_pic_counter_dict = defaultdict(int)
 
-                        "No":
+                        "算了":
                             pass
 
             "Deactivate picture count in gallery" if persistent.debug_pic_counter:
@@ -483,7 +483,7 @@ label help(scr):
 
                 "Girl pack pictures will no longer be counted."
 
-            "Cancel":
+            "取消":
                 pass
 
     elif r == "cheats":
@@ -524,21 +524,21 @@ label help(scr):
         menu:
             "Choose an option"
 
-            "Manage ignored pictures":
+            "管理忽略的图片":
                 $ nb = len(persistent.pic_ignore_list)
                 "You can ask the game to {b}ignore{/b} a specific picture from a girlpack by hitting the 'DELETE' key while it is displayed.\n[nb] picture(s) are currently ignored."
 
                 menu:
                     "Pictures will be removed from the picture set on your next restart or by using the refresh option below."
 
-                    "Refresh pictures":
+                    "刷新图片":
                         python:
                             globalFilesDict.reload_files()
                             for girl in game.get_all_girls():
                                 girl.load_pics()
                                 girl.refresh_pictures()
                                 girl.create_char()
-                    "Edit ignored pictures":
+                    "编辑忽略的图片":
                         $ fil = "" # renpy.input("Picture path contains\n(leave empty to see all):")
 
                         label edit_ignored:
@@ -549,16 +549,16 @@ label help(scr):
                                 if renpy.call_screen("yes_no", "Do you want to remove this picture from the 'IGNORE' list?"):
                                     $ toggle_ignore_pic(r)
                                     jump edit_ignored
-                    "Clear ignored pictures":
+                    "清楚忽略的图片":
                         if renpy.call_screen("yes_no", "This will reset the 'IGNORE' list and restore all girl packs to default. Would you like to proceed?"):
                             $ persistent.pic_ignore_list = []
-                    "Print list of ignored pictures to file":
+                    "将忽略的图片整理列出":
                         if renpy.call_screen("yes_no", "This will create a file named 'ignored_pictures.txt' in your 'game/' directory containing the list of ignored pictures so that you can edit or delete them. Would you like to proceed?"):
                             $ print_ignore_list()
-                    "Cancel":
+                    "取消":
                         pass
 
-            "Repair girl/MC pictures": #! Broken
+            "修复女孩/主角图片": #! Broken
                 if renpy.call_screen("yes_no", "This will reset all girl and MC pictures (useful if you changed some pictures outside of the game or renamed them). Would you like to proceed?"):
 
                     python:
@@ -778,11 +778,11 @@ label help_MC():
 
         sill "{b}The Character tab{/b}. This is you, Master! From here, you can see your personal information, change your portrait, manage your items and your spells."
 
-        "Can I rename my character?":
+        "我可以重命名主角吗?":
 
             sill "Sure thing! Just click on your name, and choose a new one. Oh, I'm curious!!! What's it gonna be?"
 
-        "Tell me about my character and skills":
+        "介绍一下主角的职业和技能":
 
             sill "First, let me tell you about your character class. Your class affects events in the game, your available spells and starting skills."
 
@@ -822,14 +822,14 @@ label help_MC():
                   This is impacted by the actions you take, and used during dialog and story events."
 
 
-        "How can I change my portrait?":
+        "怎么切换我的肖像?":
 
             sill "Just click on the arrows to select your portrait. This is just for flavor and doesn't affect the game in any other way."
 
             sill "By the way, if you don't like those, did you know you can add more portraits in the {b}game\\MC\\{/b} folder?"
 
 
-        "Tell me about prestige and skill points":
+        "介绍一下声望和技能点":
 
             sill "{b}Prestige{/b} reflects your character's renown in Zan. Earning prestige allows you to level up and get skill points."
 
@@ -838,7 +838,7 @@ label help_MC():
             sill "You may use {b}Skill points{/b} to increase your {b}Strength{/b}, {b}Spirit{/b}, {b}Charisma{/b}, and {b}Speed{/b}, up to a maximum of 10."
 
 
-        "Tell me how to use items":
+        "介绍一下如何使用道具":
 
             sill "It's easy! Just click on the item you want to use, and select 'use' or 'equip'. You can unequip an item in the same way."
 
@@ -846,7 +846,7 @@ label help_MC():
                   {color=[c_pink]}{b}for your girls{/b}{/color}. Watch for the color in the item tab."
 
 
-        "Tell me how to learn and use spells":
+        "介绍一下如何学习并使用法术":
 
             sill "You can learn new {b}Spells{/b} and {b}Talents{/b} from your character class when increasing your level."
 
@@ -869,7 +869,7 @@ label help_MC():
             sill "Some spells are only active for one night, and some last until a specific event occurs. {b}Hover{/b} over a spell to see its description."
 
 
-        "Never mind":
+        "没事了":
 
             return
 
@@ -884,7 +884,7 @@ label help_girls():
 
         sill "{b}The Girls' rooms{/b}. This is where you can check your girls' information, interact with them, choose their job and schedule, and more."
 
-        "Can I change a girl's name?":
+        "我可以修改女孩的名字吗?":
 
             sill happy "You sure can! This is your privilege as the slave's master."
 
@@ -898,7 +898,7 @@ label help_girls():
             sill sad "B-But..."
 
             menu:
-                "Rename her 'Sill'" if sill_name != "Sill":
+                "把她的名字改为'希露'" if sill_name != "Sill":
                     $ sill_name = "Sill"
 
                     you "Go back to Sill."
@@ -909,23 +909,23 @@ label help_girls():
 
                     jump help_girls
 
-                "Rename her 'Rose'":
+                "把她的名字改为'露丝'":
                     $ new_name = "Rose"
 
-                "Rename her 'Lolita'":
+                "把她的名字改为'萝莉'":
                     $ new_name = "Lolita"
 
-                "Rename her 'Pinky'":
+                "把她的名字改为'粉毛'":
                     $ new_name = "Pinky"
 
 
-                "Rename her 'Peggy'":
+                "把她的名字改为'母狗'":
                     $ new_name = "Peggy"
 
-                "Rename her 'Bitch'":
+                "把她的名字改为'婊子'":
                     $ new_name = "Bitch"
 
-                "Don't rename her":
+                "不修改她的名字":
                     jump help_girls
 
             you "Your new name is... [new_name]"
@@ -980,13 +980,13 @@ label help_girls():
 
                 sill "What are you interested in?"
 
-                "Rank and reputation":
+                "阶级和声望":
 
                     call help_rank_introduction from _call_help_rank_introduction
 
                     "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
 
-                "Leveling and experience":
+                "等级和经验":
 
                     sill "As your girl works, goes on quests or attends classes she will become more experienced. Once she has enough {b}experience{/b} (XP),
                           she will be ready to reach a new level."
@@ -997,11 +997,11 @@ label help_girls():
 
                     sill "The maximum level a girl can reach is capped by her current {b}rank{/b}, however. Don't forget to rank up!"
 
-                "Zodiac signs and perks":
+                "佐迪亚克标志和天赋":
 
                     call help_zodiac() from _call_help_zodiac
 
-                "Job skill and job points":
+                "职业技能和技能点":
 
                     sill "Every time your girl accomplishes a specific job or sex act, she will receive {b}job points{/b} (JP). Job points will allow her to automatically
                           increase her job level."
@@ -1012,7 +1012,7 @@ label help_girls():
 
                     "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
 
-                "Back":
+                "返回":
 
                     jump help_girls
 
@@ -1022,51 +1022,51 @@ label help_girls():
             menu:
                 sill "What do you want to know about?"
 
-                "Changing a girl's job":
+                "如何更换女孩的工作":
 
                     sill "The first button is the {b}job{/b} button. It allows you to change a girl's job. Keep in mind that she may refuse to be a whore if her obedience and/or libido is too low."
 
                     sill sad "You cannot change a girl's job while she is away, hurt, sick or exhausted. Sorry."
 
-                "Changing a girl's schedule":
+                "如何修改女孩的排班":
 
                     sill "You can set a weekly schedule for your girls using the {b}schedule{/b} button."
 
                     sill "Girls cannot work every day, or they will deplete their energy and become sick. A girl can work a half shift on certain days
                           if you want to spare some of her energy."
 
-                "Interacting with a girl":
+                "如何与女孩互动":
 
                     sill "The {b}interact{/b} button allows you to visit your girl and talk to her. You might find it useful to know your girls better, and maybe try to influence their behavior."
 
-                "Equipping and using items":
+                "如何装备和使用道具":
 
                     sill "Use the {b}equip{/b} button to have a girl take, give, use or equip items. Some effects are permanent: think carefully before you use an item!"
 
-                "Selling a girl":
+                "如何出售女孩":
 
                     sill "Oh, that one is easy. Just click the {b}sell{/b} button to get rid of a girl. But not me, of course."
 
-                "Perks, leveling and ranking up":
+                "天赋，等级和升阶":
 
                     sill "The {b}level up{/b} or {b}rank up{/b} buttons become available once your girl is ready to advance. Otherwise, you can use the {b}perks{/b} button to check
                           on your girl's current perks"
 
-                "Tracking a girl's performance":
+                "如何查看女孩的近期表现":
 
                     sill "The {b}stats{/b} button is handy if you want to keep track of the latest information about your girl's performance."
 
-                "Back":
+                "返回":
 
                     jump help_girls
 
-        "Tell me about girl skills and traits":
+        "介绍一下女孩的技能和天赋":
 
             call skills_introduction from _call_skills_introduction
 
             jump help_girls
 
-        "Tell me more about jobs":
+        "介绍一下女孩的职业":
 
             call jobs_introduction from _call_jobs_introduction
 
@@ -1074,11 +1074,11 @@ label help_girls():
 
             jump help_girls
 
-        "How can I train a girl to become a whore?":
+        "如何训练女孩成为妓女?":
             call help_whores from _call_help_whores_6
 
 
-        "Never mind":
+        "没事了":
 
             return
 
@@ -1128,7 +1128,7 @@ label skills_introduction():
     menu:
         sill "What are you interested in?"
 
-        "Tell me about skills":
+        "介绍一下技能":
 
             sill "There are two types of skills for your girls: main skills and sex skills. Working jobs may increase, and sometimes decrease, specific stats."
 
@@ -1143,21 +1143,21 @@ label skills_introduction():
 
             sill "The maximum skill a girl can have is limited by her current rank, however. Be sure to rank up your girls!"
 
-        "Tell me about traits":
+        "介绍一下特质":
 
             sill "Every girl has {b}3 traits{/b} that she is born with. You cannot change those."
 
             sill "Some traits can have powerful effects on your girl, but beware! No one is perfect, so your girls will usually have a
                   negative trait as well."
 
-        "Tell me about upkeep":
+        "介绍一下保养费":
 
             sill "You can freely adjust {b}upkeep{/b}. Upkeep covers how much money you spend every night keeping your girl suitably fed and groomed."
 
             sill "Slave or not, your girls have some expensive tastes, you know! Giving your girls extra money will keep them content.
                   Watch that you don't let their upkeep sink too low, however! They will be mad at you."
 
-        "Back":
+        "返回":
 
             return
 
@@ -1170,7 +1170,7 @@ label bis_introduction(unlock=True):
 
     menu:
         sill "Would you like to learn more about how {b}bisexual{/b} whores work?"
-        "Yes, fill me in":
+        "当然，告诉我":
             sill "Bisexual girls are able to have a threesome with a customer. For that, you will need {b}at least two bisexual whores{/b} active at the same time."
 
             $ bonus = percent_text(tip_act_modifier["bisexual bonus"] * 2)[1:]
@@ -1183,7 +1183,7 @@ label bis_introduction(unlock=True):
 
             you "I see. Thanks!"
 
-        "No thanks":
+        "不用了":
             sill "All right."
 
     return
@@ -1195,7 +1195,7 @@ label group_introduction(unlock=True):
 
     menu:
         sill "Would you like to learn more about how {b}group{/b} works for whores?"
-        "Yes, fill me in":
+        "当然，告诉我":
             sill "Group girls are able to have orgies with several customers. For that, you will need {b}at least two willing customers{/b} that want the same sex act."
 
             $ bonus = percent_text(tip_act_modifier["group bonus"])[1:]
@@ -1210,7 +1210,7 @@ label group_introduction(unlock=True):
 
             you "I'll keep that in mind. Thanks!"
 
-        "No thanks":
+        "不用了":
             sill "Okay. Call me if you need anything..."
 
     return
@@ -1224,7 +1224,7 @@ label jobs_introduction():
 
         sill "What job do you want to know about?"
 
-        "Waitress":
+        "女服务员":
 
             sill "The {b}tavern{/b} will allow you to train your girl as a {b}waitress{/b}. With time, they will start wearing sexy uniforms
                   and providing all kinds of 'entertainment' to the customers."
@@ -1232,7 +1232,7 @@ label jobs_introduction():
             sill "Waitresses need {b}charm{/b} to keep the customers entertained. They also need a strong {b}constitution{/b}: working tables is not easy, you know!
                   Finally, it cannot hurt if they are {b}beautiful{/b}, and have a good {b}body{/b}."
 
-        "Dancer":
+        "脱衣舞娘":
 
             sill "The {b}strip club{/b} will allow you to train her as a {b}dancer{/b}. With time, they will remove more and more clothing, and
                   take the customers to a room for a 'private dance'."
@@ -1240,7 +1240,7 @@ label jobs_introduction():
             sill "You should pick girls with a good {b}body{/b} to be dancers. A {b}libidinous{/b} girl is always better, the customers can sense it.
                  {b}Refinement{/b} and {b}charm{/b} are also good qualities for a dancer."
 
-        "Masseuse":
+        "按摩技师":
 
             sill "The {b}onsen{/b} will allow you to train her as a {b}masseuse{/b}. With time, they will provide more erotic massages
                   to the customers, and eventually give them 'full service'"
@@ -1248,7 +1248,7 @@ label jobs_introduction():
             sill "Masseuses should be {b}beautiful{/b} girls, to attract customers to the onsen. {b}Sensitive{/b} girls fare better as they can
                   make the customer more comfortable. A good {b}body{/b} and a little {b}refinement{/b} are also important."
 
-        "Geisha":
+        "表演艺伎":
 
             sill "The {b}okiya{/b} will allow you to train her as a {b}geisha{/b}. With time, they'll learn a thousand ways to please their
                   customers, and how to take care of their more 'special' requests."
@@ -1256,7 +1256,7 @@ label jobs_introduction():
             sill "Geishas should be {b}refined{/b} girls. {b}Obedience{/b} is a prized quality, to make the customers feel important. {b}Beauty{/b} and {b}charm{/b} also help
                   make a perfect geisha."
 
-        "Whore":
+        "卖淫妓女":
 
             sill "Girls need to be trained before they will accept to be whores. Forcing them never gives good results. Girls with a high libido or obedience can be trained faster."
 
@@ -1293,7 +1293,7 @@ label help_brothel():
 
         sill "{b}Your Brothel{/b}. This is where you can check your brothel information, buy new rooms, and hire freelancers."
 
-        "How can I check my brothel's information?":
+        "如何查看青楼的信息?":
 
             sill "The {b}Rooms{/b} you own are highlighted on the brothel tab. You can also see the number and type of bedrooms you have."
 
@@ -1303,7 +1303,7 @@ label help_brothel():
 
                 sill "From the Brothel, you can also access the {b}Carpenter's Wagon{/b} and {b}Customer options{/b}."
 
-        "Tell me more about rooms":
+        "介绍一下青楼的房间":
 
             sill "There are two types of rooms: bedrooms and common rooms."
 
@@ -1317,7 +1317,7 @@ label help_brothel():
 
             sill "A word of warning: The more common rooms you build, the more expensive they get! Think before you buy. Contractors are so unreliable these days..."
 
-        "Tell me more about freelancers":
+        "介绍一下外包人员":
 
             sill "You can hire {b}3 types of freelancers{/b} to help with your business: advertising girls, goons and cleaners."
 
@@ -1330,9 +1330,9 @@ label help_brothel():
             menu:
                 sill "Would you like to know more about advertising?"
 
-                "Yes":
+                "是的":
                     call help_advertising() from _call_help_advertising_1
-                "No":
+                "不了":
                     pass
 
             sill "{b}Goons{/b} improve your brothel security by beating the unpleasantness out of rowdy customers. Trouble is sure to show up at your door
@@ -1341,9 +1341,9 @@ label help_brothel():
             menu:
                 sill "Would you like to know more about security?"
 
-                "Yes":
+                "是的":
                     call help_security() from _call_help_security
-                "No":
+                "不了":
                     pass
 
             sill "{b}Cleaners{/b} are maids that take care of the maintenance of your brothel. Low maintenance may cause your girls to fall sick and turn away customers."
@@ -1399,7 +1399,7 @@ label help_advertising_menu():
 
             sill "And a word of warning: {b}Unhappy customers{/b} may really drag your reputation down, especially at higher ranks. It is best to focus on drawing only as many customers as you can serve to the brothel to avoid grumbling."
 
-        "Customer attraction":
+        "关于顾客的吸引力":
 
             sill "{b}Customer attraction{/b} is a temporary boost your advertising girls will bring to the total number of customers that come to the brothel."
 
@@ -1431,7 +1431,7 @@ label help_advertising_menu():
 
         "没有要问的了":
 
-            you "我知道了, 谢谢你."
+            you "我知道了, 谢谢你。"
 
             return
 
@@ -1523,7 +1523,7 @@ label help_visit_location():
 
         sill "You are visiting the {b}[selected_location.name]{/b}. From here, you can meet and chat with people, or take a random tour of the area."
 
-        "Tell me about meeting girls":
+        "如何邂逅陌生女孩":
 
             sill sad "Aw, Master, you're such a playboy!!!"
 
@@ -1534,7 +1534,7 @@ label help_visit_location():
             sill "But it will take some hard convincing. Or charms... And even then, there is no way to know in advance if the girl is any good.
                   You might be pleasantly surprised, though."
 
-        "Tell me about looking around":
+        "如何探索城市地区":
 
             sill "Touring the area may allow you to learn some interesting rumors or meet new people..."
 
@@ -1555,15 +1555,15 @@ label help_slavemarket():
 
         sill "Do you want to know more?"
 
-        "Tell me about girl skills and traits":
+        "介绍一下女孩的技能和特质":
 
             call skills_introduction from _call_skills_introduction_1
 
-        "Tell me more about jobs":
+        "介绍一下女孩的职业内容":
 
             call jobs_introduction from _call_jobs_introduction_1
 
-        "Tell me about sexual experience":
+        "介绍一下性培训经验等级":
 
             sill "Sexual experience... Well, you know... *blush*"
 
@@ -1574,7 +1574,7 @@ label help_slavemarket():
 
             sill "You can get a general idea about a slave's sexual training by looking at her experience level and stats."
 
-        "No, I'm good":
+        "不用了，没什么要问的":
 
             return
 
@@ -1658,7 +1658,7 @@ label help_about_game:
 
         sill "What would you like to know about this game?"
 
-        "DISCLAIMER":
+        "免责声明":
 
             $ text1 = """This is a hobby project, if someone wants you to pay for it, you are being scammed. I do not own any of the images, music and sound effects used in this game. I wish I could credit the rightful authors for all of them, but most of it had been sitting on my hard drive for a long, long time, and I've forgotten where it came from.\nIf you are the author of any of this material and you feel that this game is infringing on your rights in any way,
             please contact me on the [URL] forum and I'll drop it from the game.\n\nPlease contact me at [URL] for feedback, criticism, bug reports, etc."""
@@ -1666,7 +1666,7 @@ label help_about_game:
             call screen OK_screen("DISCLAIMER", text1)
 
 
-        "What is this game?":
+        "这是个什么样的游戏?":
 
             $ text1 = """As a fan of the original Sim Brothel and some of the games it inspired, as well as games like Slave Maker, I have wanted for a long time to 'make it my own', and try my hand at coding.
 
@@ -1690,13 +1690,13 @@ Please contact me at [URL] for feedback, criticism, bug reports, etc.
             call screen OK_screen("What is this game? (3/3)", text3)
 
 
-        "How can I help?":
+        "如何支持游戏?":
 
             $ text1 = """Play the game! By now I've spent so much time working on this game that I have genuinely zero idea if it's any good. If you spot a bug, a typo (I am not a native speaker), have some ideas to improve gameplay, game balance or fun, please speak up, this will help me enormously.\n\nI am always looking for {b}writers{/b}, as writing events is the most time-consuming part of developing the game. So far they have a tendency to disappear into thin air, but if you're willing, please drop me a PM at [URL].\n\nAlthough I won't rework all game mechanics from scratch, I am expecting to make a lot of adjustments to make the game more balanced and fun, so all your suggestions will be read and welcome.\n\nIf you're an experienced programmer and want to look under the hood or tinker with the game, by all means, do it!\n\nFinally, if you have some art to recommend such as good hentai series or music that fit the flavor of the game, by all means, do so.\n\nContact me at [URL] for feedback, criticism, bug reports, etc."""
 
             call screen OK_screen("How can I help?", text1)
 
-        "Special thanks":
+        "特别鸣谢":
             "Thanks to all the people on the [URL] forum for their support and all the good ideas, girl packs and mods they contributed."
 
             "Special thanks to OhWee for making some great screens (including the load/save screen and the input screen), and Deimos96 for making the cool Evil Power cards' UI."
@@ -1719,7 +1719,7 @@ label help_night_events:
 
         sill "{b}Night events{/b} are where the action is!"
 
-        "Tell me about brothel reputation and customers":
+        "介绍一下青楼的名声和顾客":
 
             sill "Every night, customers will flock to your brothel in the hope of getting some action, both in the form of entertainment and sex.
                   How many customers actually show up depends on your {b}brothel reputation{/b}."
@@ -1732,7 +1732,7 @@ label help_night_events:
             sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home.
                  You will still have to pay for upkeep and maintenance."
 
-        "Tell me about advertising, security and maintenance":
+        "介绍一下广告，保安和清洁工":
 
             sill "{b}Advertising{/b} is pretty straightforward. Get a bunch of young, hot girls out there with signs, flyers or bodily tattoos with the brothel's name on it,
                  and its reputation will increase. Reputation begets more customers."
@@ -1743,9 +1743,9 @@ label help_night_events:
             menu:
                 sill "Would you like to know more about security?"
 
-                "Yes":
+                "是的":
                     call help_security from _call_help_security_1
-                "No":
+                "不了":
                     pass
 
             sill "Customers are messy and will dirty up the place every night as they go about their business. {b}Maintenance{/b} is essential is you don't want your brothel to become a hotbed
@@ -1755,7 +1755,7 @@ label help_night_events:
                  You will still have to pay for upkeep and maintenance."
 
 
-        "Tell me about girl performances":
+        "介绍一下女孩的表现":
 
             sill "Every night, the available working girls will {b}perform{/b} for the visiting customers."
 
@@ -1769,7 +1769,7 @@ label help_night_events:
 
             sill "A good performance will massively increase the rewards from the customers, especially the tipping."
 
-        "Never mind":
+        "没什么要问的了":
 
             return
 
@@ -1782,9 +1782,9 @@ label security_introduction:
     menu:
         "You've just had your first security event. Would you like to learn more about security events?"
 
-        "Yes":
+        "好的":
             call help_security from _call_help_security_2
-        "No":
+        "不了":
             pass
 
     return
@@ -1840,9 +1840,9 @@ label help_farm_question():
     menu:
         gizel "Do you need some help with the farm?"
 
-        "Yes":
+        "是的":
             call help_farm() from _call_help_farm_2
-        "No":
+        "不了":
             pass
 
     return
@@ -1865,7 +1865,7 @@ label help_farm_menu():
     menu:
         gizel "What do you want to know, then?"
 
-        "Tell me about the farm":
+        "介绍一下农场":
 
             gizel "You can send girls here at the {b}farm{/b}, where they will remain in my care for a fixed duration, or until you want them back."
 
@@ -1875,7 +1875,7 @@ label help_farm_menu():
 
             "You can use the shortcuts to sort your girls by name, level or rank (right-click on a sort method to sort backwards)."
 
-        "Tell me about pens and facilities":
+        "介绍一下牢房和设施":
 
             gizel normal "Certainly. {b}Pens{/b} are where your girls are being kept while they are at the farm. {b}Facilities{/b} are where I host my beloved minions."
 
@@ -1894,7 +1894,7 @@ label help_farm_menu():
             else:
                 extend " We can develop the farm further if you obtain a higher brothel license and some protection in high places."
 
-        "Tell me about minions and facilities":
+        "介绍一下仆从和设施":
 
             gizel smirk "Ah, the minions! My little babies, my loves..."
 
@@ -1952,7 +1952,7 @@ label help_farm_menu():
 
             gizel "Finally, you should note that for {b}group sex training{/b}, I'll need more than one minion of the same type. But that's obvious, right?"
 
-        "Tell me about girl training and rules":
+        "介绍一下女孩训练的规则":
 
             gizel normal "Right, let's get to the main reason we're here. {b}Training{/b}."
 
@@ -2525,7 +2525,7 @@ label cheat_menu():
 
                     menu:
 
-                        "你想在游戏中设置什么样的目标?"
+                        "你想在游戏中达成什么样的目标?"
 
                         "赚到足够多的钱":
                             $ _type = "gold"
@@ -2636,7 +2636,7 @@ label check_missing_pictures(type):
         "检查所有的女孩图包":
             pass
 
-        "Check a specific girl pack":
+        "检查特定的女孩图包":
             $ girl = long_menu("Select a girl pack", [(" ".join(get_name(girl.path)), girl) for girl in template_girls])
             $ template_girls = [girl]
 
@@ -2891,19 +2891,19 @@ label test_perks_menu:
     menu:
         "Testing perks: [perk_text]"
 
-        "Girls: [girl_nb]":
+        "女孩: [girl_nb]":
             $ girl_nb = int(renpy.input("Girl nb", default=girl_nb))
 
-        "Duration: [duration] months":
+        "持续: [duration] months":
             $ duration = int(renpy.input("Duration", default=duration))
 
-        "Job: [jobs]":
+        "职业: [jobs]":
             $ jobs = menu([("Whore", "whore"), ("Waitress", "waitress"), ("Dancer", "dancer"), ("Masseuse", "masseuse"), ("Geisha", "geisha"), ("Cycle jobs", "cycle jobs"), ("Cycle all", "cycle all")])
 
-        "Show events: [show_ev]":
+        "展示事件: [show_ev]":
             $ show_ev = not show_ev
 
-        "GO":
+        "开始测试":
             jump test_perks_launch
 
     jump test_perks_menu

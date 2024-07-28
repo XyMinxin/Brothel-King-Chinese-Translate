@@ -86,7 +86,7 @@ label jobgirl_0():
 
     ## choice menu 1) yes 2) no
     menu:
-        "My slave Sill":
+        "我的奴隶希露":
 
             you "There is one, my first slave, Sill; I don't let anyone put their hands on her, she's mine only!"
 
@@ -94,7 +94,7 @@ label jobgirl_0():
 
             $ NPC_jobgirl.corruption += 2
 
-        "I wish I had one":
+        "要是有就好了":
 
             you "I deal with pretty girls on a daily basis, but you can guess how my job is a great obstacle for a true relationship."
             you "Some people consider slavery and whoring immoral, others just don't want to have any sort of business with a guy like me. Furthermore, I think I haven't encountered the right girl for me yet."

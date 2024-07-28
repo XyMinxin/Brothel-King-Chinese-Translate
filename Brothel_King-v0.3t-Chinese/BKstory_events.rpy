@@ -130,10 +130,10 @@ label hmas:
         menu:
             "Choose your present"
 
-            "Fuck her pussy":
+            "干她的小穴":
                 call hmas_sex("sex") from _call_hmas_sex_1
 
-            "Fuck her ass":
+            "干她的菊穴":
                 call hmas_sex("anal") from _call_hmas_sex_2
 
     else:
@@ -409,7 +409,7 @@ label renza_friend1: # L >= 5 and dice(6) = 6
 
     menu:
 
-        "Maybe I do":
+        "确实如此":
 
             $ renpy.block_rollback()
 
@@ -425,7 +425,7 @@ label renza_friend1: # L >= 5 and dice(6) = 6
 
             $ NPC_renza.love += 1
 
-        "You're mistaken":
+        "你记错了":
 
             $ renpy.block_rollback()
 
@@ -535,7 +535,7 @@ label renza_friend3_menu:
 
     menu:
 
-        "How did you become a thief?" if not NPC_renza.flags["told_origin_story1"]:
+        "你是怎么走上这一行的?" if not NPC_renza.flags["told_origin_story1"]:
 
             renza "Well... I was born right here, in Zan. Some say I was delivered in the temple of Shalia itself. It's not like I really remember, but I play along with the rumors."
 
@@ -553,7 +553,7 @@ label renza_friend3_menu:
 
             $ NPC_renza.flags["told_origin_story1"] = True
 
-        "How did you become the guild leader?" if NPC_renza.flags["told_origin_story1"] and not NPC_renza.flags["told_origin_story2"]:
+        "你是怎么爬到首领的地位的?" if NPC_renza.flags["told_origin_story1"] and not NPC_renza.flags["told_origin_story2"]:
 
             "A shadow comes across her face. She turns her head."
 
@@ -631,7 +631,7 @@ label renza_friend3_menu:
 
             $ NPC_renza.flags["told_origin_story2"] = True
 
-        "What happened to you?" if  NPC_renza.flags["told_origin_story2"] and not NPC_renza.flags["told_origin_story3"]:
+        "发生什么事了?" if  NPC_renza.flags["told_origin_story2"] and not NPC_renza.flags["told_origin_story3"]:
 
             you "How... How did you escape the gang that killed your mother?"
 
@@ -703,7 +703,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story3"] = True
 
-        "Who was your mother?" if not  NPC_renza.flags["told_origin_story4"]:
+        "你的母亲是...?" if not  NPC_renza.flags["told_origin_story4"]:
 
             renza "My mother... My mother was magnificent."
 
@@ -729,7 +729,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story4"] = True
 
-        "What about your father?" if NPC_renza.flags["told_origin_story4"]:
+        "那你的父亲呢?" if NPC_renza.flags["told_origin_story4"]:
 
             renza "My father? Oh, my father was a brave man..."
 
@@ -743,7 +743,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story5"] = True
 
-        "Can I ask about your tattoo?":
+        "介意我问一下你的纹身吗?":
 
             "You look at her tattoo, trying to pretend you're only interested in the artful drawing and not the juicy, fleshy hip underneath."
 
@@ -821,19 +821,19 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
 
         "You think to yourself."
 
-        "My friends should be treated well":
+        "我应该取悦我的合作伙伴":
             $ renpy.block_rollback()
             $ MC.good += 1
 
             you "(I'm happy Renza came. I want her to be comfortable. Plus, she's hot.)"
 
-        "It's good for business":
+        "这对我的生意很有帮助":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
             you "(Having the infamous leader of the thieves guild as a guest will surely drive business up. Plus, she's hot.)"
 
-        "I'm only doing this because I want to peep":
+        "我只是想大饱眼福":
             $ renpy.block_rollback()
             $ MC.good -= 1
 
@@ -851,10 +851,10 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
 
         "What do you do?"
 
-        "Peep on Renza":
+        "偷窥伦萨":
             jump renza_onsen2
 
-        "Don't peep":
+        "不偷窥":
 
             you "This isn't right. Renza's my friend. A very hot friend, for sure..."
 
@@ -863,10 +863,10 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
             "You swallow hard."
 
             menu:
-                "Peep on Renza":
+                "偷窥伦萨":
                     jump renza_onsen2
 
-                "No, don't peep":
+                "不，还是算了":
                     you "I must be strong. I'm an upstanding citizen."
 
                     if MC.god == "太阳神":
@@ -880,10 +880,10 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
                     show screen invisible_button
 
                     menu:
-                        "Peep on Renza":
+                        "偷窥伦萨":
                             pass
 
-                        "Definitely don't peep":
+                        "绝对不能偷看":
                             "You have decided not to peep on Renza."
                             "Or..."
                             "Or have you? You are feeling a little confused right now."
@@ -1143,7 +1143,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
     you "..."
 
     menu:
-        "You have people counting on you":
+        "大家可都指望着你":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -1157,7 +1157,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             you "It's not... You're a great person. Don't let one mistake define you."
 
-        "You can honor her memory":
+        "你可以纪念她":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -1172,7 +1172,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             renza "She raised me as a fighter. So I will fight on. To preserve her legacy to the guild."
 
-        "You have to let it go":
+        "过去的事就让它过去吧":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
@@ -1188,7 +1188,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
             renza "Thank you. I understand."
 
 
-        "You could set yourself free":
+        "没必要沉浸在过去的伤痛中":
             $ renpy.block_rollback()
             $ MC.neutral += 1
 
@@ -1207,7 +1207,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             renza "Thank you, [MC.name]..."
 
-        "You could stop whining":
+        "停下你无谓的抱怨吧":
             $ renpy.block_rollback()
             $ MC.evil += 1
 
@@ -1240,39 +1240,39 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
     menu:
 
-        "To make a name for myself":
+        "为了扬名立万，出人头地":
             $ MC.neutral += 1
 
             you "I want to rise in Zan and make a name for myself. I want to become as famous as the King himself."
 
-        "To become rich and live in luxury":
+        "为了富甲天下，酒池肉林":
             $ MC.neutral += 1
 
             you "I want to become filthy rich, and live a lavish lifestyle..."
 
-        "To get absolute power":
+        "为了权倾朝野，掌控一切":
             $ MC.evil += 1
 
             you "I want to be all powerful, to force the world to do my bidding..."
 
-        "To do right by my friends":
+        "为我的朋友两肋插刀":
             $ MC.good += 1
 
             you "I want to do right by my friends, and remain loyal."
 
-        "To crush my enemies":
+        "让我的敌人一败涂地":
             $ MC.evil += 1
 
             you "I want to crush my enemies, see them driven before me, and hear the lamentation of their women... While I fuck them!"
 
             you "While I fuck the women, I mean, not the enemies... Unless the enemies are women... But then, uh... Err..."
 
-        "To fuck as many girls as possible":
+        "我要和所有美女做爱":
             $ MC.neutral += 1
 
             you "I want to fuck all the girls in Zan. It's a tough job, but someone's got to do it."
 
-        "There is no goal to life":
+        "我喜欢走一步算一步":
 
             you "There's no such thing as a goal in life. We're only here for a fleeting instant... So all we can do is enjoy the ride. And I intend to enjoy it."
 
@@ -1608,15 +1608,15 @@ label farm_meet_gizel(): # Location: spice market
     menu:
         "How do you feel about elves?"
 
-        "I bear them no grudge":
+        "我和他们无冤无仇":
             $ MC.rand_say(("I don't hate them. Wars come and go, and it wasn't they who started this one...", "ar: Although the Arios church denounces the elves, I do not think they are bad. They can be brought back to the light.", "wr: I have fought enough elves on the battlefield to respect their grit and abilities. They are worthy opponents.", "wz: I do enjoy a good conversation with an elf from time to time. They know a great deal of secrets, though they don't share them very willingly."))
             $ story_flags["elves"] = "like"
 
-        "I hate them":
+        "我恨他们":
             $ MC.rand_say(("I despise these pointy-eared rats. The only good elf is a dead elf, I always say.", "ar: Those spawns of hell show no respect to the true Light, and occupy the Holy Lands against the will of men and Gods. I hate them.", "wr: The damn elves took the lives of many of my comrades on the battlefield. I shan't forgive them."))
             $ story_flags["elves"] = "dislike"
 
-        "I don't really know":
+        "我也不知道":
             $ MC.rand_say(("I can't say I have met many elves, much less talked to them. So I reserve my judgement.", "ng: I don't really know. The Arios Church hates them I guess, but I have no time for phony gods and their minions.", "wz: Elves know many things, and I'm sure one could learn a lot from them... If they weren't like to pelt you with poison arrows whenever you come near them.", "tr: I've traded with elves quite a bit in the past. They are good on their word, I guess, although they won't win any popularity contest."))
             $ story_flags["elves"] = "neutral"
 
@@ -1736,10 +1736,10 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "Warn the elf girl":
+            "警告那个女精灵":
                 $ result = "warn"
                 $ MC.good += 1
-            "Wait and see":
+            "袖手旁观吃瓜看戏":
                 $ result = "wait"
                 $ MC.good -= 1
 
@@ -1751,10 +1751,10 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "Denounce the elf's hiding place":
+            "检举精灵的藏身之处":
                 $ result = "denounce"
                 $ MC.evil += 1
-            "Wait and see":
+            "袖手旁观吃瓜看戏":
                 $ result = "wait"
                 $ MC.neutral -= 1
 
@@ -1763,13 +1763,13 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "Warn the elf girl":
+            "警告那个女精灵":
                 $ result = "warn"
                 $ MC.good += 1
-            "Denounce the elf's hiding place":
+            "检举精灵的藏身之处":
                 $ result = "denounce"
                 $ MC.evil += 1
-            "Wait and see":
+            "袖手旁观吃瓜看戏":
                 $ result = "wait"
                 $ MC.neutral += 1
 
@@ -2046,7 +2046,7 @@ label farm_meet_gizel2():
         menu:
             "What do you do?"
 
-            "Defend yourself" if result == "warn":
+            "正当防卫" if result == "warn":
                 $ reaction = "fight"
 
                 you "You think I'd fall to a bunch of braindead bigots like you? I can crush you with my bare hands!"
@@ -2062,12 +2062,12 @@ label farm_meet_gizel2():
                 pause 0.1
                 play sound2 s_sheath
 
-            "Wait and see"  if result == "warn":
+            "袖手旁观"  if result == "warn":
                 $ reaction = "wait"
 
                 you "Damn, I'm unarmed and defenseless... There's nothing I can do for now..."
 
-            "Defend the girl" if not result == "warn":
+            "掩护她" if not result == "warn":
                 $ reaction = "fight"
                 $ MC.good += 1
 
@@ -2099,7 +2099,7 @@ label farm_meet_gizel2():
 
                 you "Uh-oh."
 
-            "Keep watching" if not result == "warn":
+            "继续观察" if not result == "warn":
                 $ reaction = "wait"
                 $ MC.neutral += 1
                 you "There doesn't seem to be anything I can do. After all, discretion is the better part of valor. Let us see how it all unfolds..."
@@ -2110,10 +2110,10 @@ label farm_meet_gizel2():
         menu:
             "What will you do?"
 
-            "Fight them head-on":
+            "与他们正面对抗":
                 jump templar_fight
 
-            "Use magic":
+            "用魔法攻击他们":
                 jump templar_magic
 
     else:
@@ -2816,7 +2816,7 @@ label gizel_attack():
     menu:
         you "Because..."
 
-        "You don't want to fight me":
+        "你不会想和我战斗的":
 
             you "My name is [MC.name]. I'm a lot tougher than those clowns out there. You don't want to start a fight you can't win."
 
@@ -2859,7 +2859,7 @@ label gizel_attack():
 
                 gizel upset "But what do I have to gain from an alliance with you!"
 
-        "I can be useful to you":
+        "我对你还有些用处":
 
             you "Look, I can be useful to you. I am not one of those Arios bigots. My name is [MC.name], I'm a business man, I own a brothel in town..."
 
@@ -2923,7 +2923,7 @@ label gizel_attack():
 
             label gizel_questions_menu():
                 menu:
-                    "Who are you?":
+                    "还未请教姑娘芳名?":
 
                         you "Who are you?"
 
@@ -2970,7 +2970,7 @@ label gizel_attack():
 
                         jump gizel_questions_menu
 
-                    "What are you doing in Zan?":
+                    "你在泽恩做什么?":
 
                         you "What are you doing here in Zan?"
 
@@ -2991,7 +2991,7 @@ label gizel_attack():
 
                         jump gizel_questions_menu
 
-                    "What did you do to those men?":
+                    "你对他们做了什么?":
 
                         you "What... What did you just do to those men out there?"
 
@@ -3055,7 +3055,7 @@ label gizel_attack():
 
                             jump gizel_questions_menu
 
-                    "No more questions":
+                    "没有要问的了":
                         pass
 
         "Fine":
@@ -3251,7 +3251,7 @@ label farm_meet_goldie_menu():
 
         goldie "What is it?"
 
-        "Why is your brother leaving?":
+        "你的弟弟为什么离开了?":
 
             you "Why is your brother leaving?"
 
@@ -3265,7 +3265,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["curse"] = True
 
-        "Can't you hire help?":
+        "你不能雇佣帮工吗?":
 
             you "Can't you just hire more people?"
 
@@ -3281,7 +3281,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["curse"] = True
 
-        "Why are your animals dying?":
+        "你的动物为什么会死?":
 
             you "Your animals are dying? Why?"
 
@@ -3303,7 +3303,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["farm"] = True
 
-        "A curse?" if menu_answers["curse"]:
+        "诅咒?" if menu_answers["curse"]:
 
             you "What was that about a curse?"
 
@@ -3349,7 +3349,7 @@ label farm_meet_goldie_menu():
             $ menu_answers["farm"] = True
             $ menu_answers["help"] = True
 
-        "What about this 'farm'?" if menu_answers["farm"]:
+        "这间农场怎么了?" if menu_answers["farm"]:
 
             you "What is this 'farm' you speak of?"
 
@@ -3371,7 +3371,7 @@ label farm_meet_goldie_menu():
 
             you "Hmm."
 
-        "What if I helped you?" if menu_answers["help"]:
+        "也许我可以帮到你?" if menu_answers["help"]:
 
             you "What if I helped you lift this curse?"
 
@@ -3496,7 +3496,7 @@ label farm_exorcism_attempt():
     menu:
         "What do you do?"
 
-        "Attack him with your weapon":
+        "拿出武器攻击它":
 
             play sound s_sheath
 
@@ -3516,7 +3516,7 @@ label farm_exorcism_attempt():
 
             spirit "Muhahaha, worm! You can't hope to defeat me with your petty mortal weapons!"
 
-        "Attack him with a spell":
+        "吟唱咒语攻击它":
 
             play sound s_spell
 
@@ -4301,7 +4301,7 @@ label farm_meet_gina():
     menu:
         "What do you do?"
 
-        "Save her":
+        "伸出援手":
             $ MC.good += 1
 
             you "Lady, wait!!!"
@@ -4345,7 +4345,7 @@ label farm_meet_gina():
 
             you "Ahhh..."
 
-        "Stay out of this":
+        "袖手旁观":
             $ MC.good -= 1
 
             you "I would help her, I would. But it's too damn far."
@@ -5405,15 +5405,15 @@ label stella_reward3(): # Activates when the player has spent another 1000 denar
     menu:
         stella "What do you choose?"
 
-        "Get a handjob":
+        "用你的小手撸我的肉棒":
             scene black with fade
             call stella_handjob from _call_stella_handjob
 
-        "Have sex":
+        "趴在那里掰开你的小穴":
             scene black with fade
             call stella_sex from _call_stella_sex
 
-        "Escape":
+        "火速逃离这里":
             you "Look behind you! A three-headed monkey!!!"
 
             stella "What?!?" with vpunch
@@ -6022,7 +6022,7 @@ label stella_secret2():
     menu:
         "Stumble towards..."
 
-        "General Ka":
+        "Ka将军":
             "Trying to remain zombie-like, you stumble towards the lady-in-red."
 
             blood1 "Hey! The scrawny one is coming at me... Creepy!"
@@ -6036,7 +6036,7 @@ label stella_secret2():
             call blood1_bj from _call_blood1_bj
             $ unlock_achievement("h ka")
 
-        "Admiral Zee":
+        " Zee上将":
             "Pretending to be drifting aimlessly, you bump into Admiral Zee."
 
             play sound s_horn
@@ -6056,7 +6056,7 @@ label stella_secret2():
             call blood2_tj from _call_blood2_tj
             $ unlock_achievement("h zee")
 
-        "Lieutenant Stella":
+        "斯特拉中尉":
             "You gravitate little by little towards Stella."
 
             stella "Shhh! Bad boy! Go away!"
@@ -6521,7 +6521,7 @@ label farm_meet_willow():
     menu:
         sill "Master, please, can I have it?"
 
-        "Sure (50 gold)":
+        "当然了(50金币)":
             you "All right, I guess with all your hard work, you deserve a present from time to time."
             $ MC.good += 1
             $ NPC_sill.love += 1
@@ -6532,7 +6532,7 @@ label farm_meet_willow():
             $ bought = True
 
 
-        "Only if you pay for it":
+        "你得自己买单":
             you "You can buy it with your own pocket money. I'm not your boyfriend."
             $ MC.neutral += 1
 
@@ -6546,7 +6546,7 @@ label farm_meet_willow():
 
             $ bought = True
 
-        "Absolutely not":
+        "当然不行了":
             you "Absolutely not. As a slave, you don't get to choose what you wear. I do."
             $ MC.evil += 1
             $ NPC_sill.love -= 1
@@ -6728,7 +6728,7 @@ label farm_meet_willow():
     menu:
         "The monster seems poised to attack you. It's time to defend yourself."
 
-        "Fight the monster":
+        "和怪物战斗":
             show sewer_monster as sewer_monster2 at truecenter:
                 xoffset -xres(100) yoffset yres(75)
             play sound s_sheath
@@ -6764,7 +6764,7 @@ label farm_meet_willow():
 
             "Both halves regroup and reform as a whole."
 
-        "Cast a spell":
+        "念动咒语":
 
             play sound s_spell
 
@@ -6794,7 +6794,7 @@ label farm_meet_willow():
 
             $ story_flags["willow fight cast fire"] = True
 
-        "Run":
+        "调头就跑":
 
             you "I'm not about to risk my life for a bloody trinket. I'm out of here!"
 
@@ -7047,10 +7047,10 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
     menu:
         "What do you do?"
 
-        "Follow the traces":
+        "循迹而行":
             you "I wonder where this leads..."
 
-        "Ignore them":
+        "无视它们":
             you "Yeah, no."
 
             return
@@ -7198,7 +7198,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
     menu:
         "What do you do?"
 
-        "Rush to help":
+        "火速支援":
             $ MC.evil -= 1
 
             you "Damsel in distress! I got this!"
@@ -7450,7 +7450,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
 
                 $ NPC_willow.love += 1
 
-        "Watch on":
+        "吃瓜看戏":
             $ MC.good -= 1
             $ see_ev = True
 
@@ -7458,9 +7458,9 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
                 menu:
                     "Skip event? (monster)"
 
-                    "Yes":
+                    "是":
                         $ see_ev = False
-                    "No":
+                    "否":
                         pass
 
             if see_ev:
@@ -8269,7 +8269,7 @@ label willow_relative_returns():
     menu:
         you "Should I go talk to her?"
 
-        "Greet her":
+        "和她打招呼":
 
             if not NPC_willow.flags["chat relative"]:
 
@@ -8506,7 +8506,7 @@ label willow_relative_returns():
                 relative "Goodbye..."
 
 
-        "No time":
+        "没空搭讪":
 
             you "Nah, I'm too busy."
 
@@ -8869,10 +8869,10 @@ label farm_first_visit():
     menu:
         gizel "I guess I should explain to you how things work around here, right?"
 
-        "Sure":
+        "请告诉我":
             pass
 
-        "No need":
+        "没有必要":
             gizel "All right then. Call me if you need me."
             "Click on Gizel's portrait if you need help with the farm."
             return
@@ -8935,9 +8935,9 @@ label farm_first_beast():
         menu:
             "Skip event? (bestiality)"
 
-            "Yes":
+            "是":
                 return
-            "No":
+            "否":
                 pass
 
     play sound s_rooster
@@ -9047,13 +9047,13 @@ label farm_first_beast():
     you "Oh..."
 
     menu:
-        "I'm sorry, my lady, we haven't been introduced":
+        "对不起，夫人，还没自我介绍呢":
             pass
 
-        "Don't mind me. I was just taking a nap.":
+        "别介意，我刚才在打盹。":
             pass
 
-        "Hey, babe. Care to join me for a roll in the hay?":
+        "嘿,宝贝。想不想和我到床上打滚呢?":
             pass
 
     you "Rrr..."
@@ -9077,11 +9077,11 @@ label farm_first_beast():
     you "(Pet?)"
 
     menu:
-        "You must be mistaken...":
+        "你一定是弄错了...":
             you "Ribbit..." with vpunch
-        "I'm not a pet! Are you blind?":
+        "我可不是畜生！你瞎了吗?":
             you "Ribbit!!! Ribbit?" with vpunch
-        "Who are you calling a pet, wench?":
+        "你管谁叫动物呢，小丫头?":
             you "Ribbibbibibit?" with vpunch
 
     "Come to think of it, the sounds you are making sound awfully animalistic."
@@ -9143,11 +9143,11 @@ label farm_first_beast():
     "Your mind blanks for a second. When you come back to your senses, you are laying on top of the milk girl, crushing her under your weight."
 
     menu:
-        "Oh, sorry!":
+        "哦，对不起!":
             you "Ri, ribbit!"
-        "I didn't mean it...":
+        "我不是故意的...":
             you "Ribbbit..."
-        "RIBBIT!":
+        "呱~呱~呱!":
             you "I'm awfully sorry..."
             play sound s_scream
             milkmaid "It... It spoke!" with vpunch
@@ -9391,9 +9391,9 @@ label farm_first_monster():
         menu:
             "Skip event? (monster)"
 
-            "Yes":
+            "是":
                 return
-            "No":
+            "否":
                 pass
 
     play sound s_rooster
@@ -9454,7 +9454,7 @@ label farm_first_monster():
     gizel "No, not until I get a sense of its weaknesses and I am sure I can control it. Believe me, I know these things..."
 
     menu:
-        "Agree with her":
+        "同意她的观点":
             $ renpy.block_rollback()
             you "Well... I guess it's better to be safe than sorry."
 
@@ -9491,7 +9491,7 @@ label farm_first_monster():
 
             return
 
-        "Disagree with her":
+        "不同意她的观点":
             $ renpy.block_rollback()
             you "Come on, I thought you were a powerful witch and all! The wicked witch of the North or some such nonsense."
 
@@ -9581,7 +9581,7 @@ label farm_first_monster():
 
                 gizel "Eeek!" with vpunch
 
-        "Push her down the hole":
+        "把她推下去":
             $ renpy.block_rollback()
             $ MC.evil += 1
             you "Oh my... What's that?"
@@ -9752,7 +9752,7 @@ label farm_first_monster():
     "Gizel cannot even stand up and walk. You'll have to help her up."
 
     menu:
-        "Help her":
+        "帮助她":
             $ renpy.block_rollback()
 
             "Carefully going around the resting monster, you reach Gizel and help her up."
@@ -9802,7 +9802,7 @@ label farm_first_monster():
 
             scene black with fade
 
-        "Leave her":
+        "甩下她":
             $ renpy.block_rollback()
             $ MC.evil += 1
 
@@ -9857,10 +9857,10 @@ label farm_second_monster():
         menu:
             "Skip event? (monster)"
 
-            "Yes":
+            "是":
                 hide bg with dissolve
                 return
-            "No":
+            "否":
                 pass
 
     you "Hi, Gizel! Gizel? Where are you?"
@@ -10017,9 +10017,9 @@ label farm_first_machine():
         menu:
             "Skip event? (machine)"
 
-            "Yes":
+            "是":
                 return
-            "No":
+            "否":
                 pass
 
     play sound s_rooster
@@ -11317,7 +11317,7 @@ label satella_game(game_type="the guessing game"):
             menu:
                 extend ""
 
-                "Let's play":
+                "来玩两把吧":
                     satella "Very well, I shall roll the dice... Hmmpf!"
 
                     play sound s_dice
@@ -11329,11 +11329,11 @@ label satella_game(game_type="the guessing game"):
 
                     satella "Okay! We've got a number. Remember, you've got three questions!"
 
-                "What happens if I win?":
+                "如果我赢了会我能得到什么?":
                     satella "Well... I have some junk items in the back. I can let you have one of them, if you guess right."
                     jump satella_game_guess_menu
 
-                "What happens if I lose?":
+                "如果我输了会发生什么事?":
                     play sound s_evil_laugh
                     satella "Bwahaha!!! I'll fry your guts, just like all the other losers! How do you think I got all those items in the first place?"
                     you "*gulp*"
@@ -11357,7 +11357,7 @@ label satella_game(game_type="the guessing game"):
                     menu:
                         extend "\n{i}[answers]{/i}"
 
-                        "Is the total above...":
+                        "数字大于...":
                             $ r = renpy.input("Is the number above...", default="7")
 
                             python:
@@ -11383,7 +11383,7 @@ label satella_game(game_type="the guessing game"):
                                 $ answers += "\nThe total is below " + str(r+1) + ". "
 
 
-                        "Is the total below...":
+                        "数字小于...":
                             $ r = renpy.input("Is the number below...", default="7")
 
                             python:
@@ -11408,7 +11408,7 @@ label satella_game(game_type="the guessing game"):
 
                                 $ answers += "\nThe total is above " + str(r-1) + ". "
 
-                        "Did you roll a...":
+                        "你掷出的点数是...":
                             $ r = menu([("Did you roll a...", None), ("One", 1), ("Two", 2), ("Three", 3), ("Four", 4), ("Five", 5), ("Six", 6)])
 
                             if d1 == r or d2 == r:
@@ -11421,7 +11421,7 @@ label satella_game(game_type="the guessing game"):
 
                                 $ answers += "\nSatella didn't roll a " + str(r) + ". "
 
-                        "Did you roll twice the same number?":
+                        "两个骰子点数相同吗？":
 
                             if d1 == d2:
                                 satella "I did! Aw, you're good!"
@@ -11430,7 +11430,7 @@ label satella_game(game_type="the guessing game"):
                                 satella "Haha, no!"
                                 $ answers += "\nSatella rolled different numbers. "
 
-                        "Is the total an odd number?":
+                        "骰子点数之和是奇数吗？":
 
                             if (d1+d2) % 2 != 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
@@ -11440,7 +11440,7 @@ label satella_game(game_type="the guessing game"):
                                 satella "Wrong... [emo_heart]"
                                 $ answers += "\nSatella rolled an even number. "
 
-                        "Is the total an even number?":
+                        "骰子点数之和是偶数吗？":
 
                             if (d1+d2) % 2 == 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
@@ -11557,13 +11557,13 @@ label satella_game(game_type="the guessing game"):
             menu:
                 extend ""
 
-                "Paper!":
+                "布!":
                     $ r = "paper"
 
-                "Scissor!":
+                "剪刀!":
                     $ r = "scissor"
 
-                "Rock!":
+                "石头!":
                     $ r = "rock"
 
             $ renpy.block_rollback()
@@ -11687,14 +11687,14 @@ label satella_thunderbolt():
 
     if MC.get_items(name="Lightning Rod") or MC.get_spirit() > 5:
         menu:
-            "Use the lightning rod" if MC.get_items(name="Lightning Rod"):
+            "使用避雷针" if MC.get_items(name="Lightning Rod"):
                 you "I knew this day would come... {i}Lightning rod{/i}! Lend me your power!"
 
                 "Holding the lightning rod by the rubbery part, you brandish it as Satella completes her casting."
 
                 $ reaction = True
 
-            "Use a counterspell" if MC.get_spirit() > 5:
+            "使用反击咒语" if MC.get_spirit() > 5:
                 $ r = MC.get_spirit() + dice(6)
 
                 if r >= 10:
@@ -11711,7 +11711,7 @@ label satella_thunderbolt():
 
                     "Unfortunately, you forgot -again- that metal is conductive to electricity. You really shouldn't have skipped all those physics classes."
 
-            "Do nothing":
+            "坐以待毙":
                 pass
 
     $ renpy.block_rollback()
@@ -12555,14 +12555,14 @@ label shalia3(): # Happens in the morning the day after Satella's love reaches 2
     menu:
         extend ""
 
-        "Satella was born from a dragon?":
+        "史黛拉是龙的后裔?":
             you "A human, born from a dragon?"
 
             shalia "Not a human, not quite... But the old dragons were shapeshifters. There's a lot more to that story."
 
             shalia "Suffice to say that Satella grew up without a mother."
 
-        "Wait, did you fuck a dragon?":
+        "等等，你上了一头龙?":
             you "Wait a minute... Satella is your daughter..."
 
             you "You... You had sex with a dragon?!?" with vpunch
@@ -14475,17 +14475,17 @@ label visit_bank():
         menu:
             banker "Would you like to repay your loan early?"
 
-            "Yes. Repay [MC.loan.amount] gold right now and settle your account":
+            "是的，我想现在就结清[MC.loan.amount]金币的债务。":
                 if MC.repay_in_full():
                     play sound s_gold
                     "You have repaid your loan in full. You are now free to take a new loan."
 
                 jump visit_bank
 
-            "No. Keep your loan and keep paying interest":
+            "不，我要继续贷款，继续支付利息":
                 pass
 
-            "No. I'd rather get laid" if NPC_banker.flags["sex"]:
+            "不，我宁愿和你到床上谈业务" if NPC_banker.flags["sex"]:
 
                 banker "Hungry for more, are you? I must say I was looking forward to it, too. Give me a second."
 
@@ -14760,7 +14760,7 @@ label loan_repaid():
     menu:
         extend ""
 
-        "What's a TJB card?":
+        "TJB会员卡是什么?":
             you "A TJB card? What is that?"
 
             banker "It's a customer loyalty card. As soon as you complete 5 loans with our bank, you will get a special service that we only offer our best customers at TJB."
@@ -14773,7 +14773,7 @@ label loan_repaid():
 
             you "T-J-B... TJ... Nope. I really don't see what this could stand for."
 
-        "Nice!":
+        "太棒了!":
             you "Yay! Being in debt is fun!"
 
             banker "That's the spirit."
@@ -15895,7 +15895,7 @@ label resource_exchange_menu():
     menu:
         bast "What do you want?"
 
-        "Who are you?":
+        "你是什么人?":
             you "Who are you?"
 
             bast "I'm Bast. I'm the quartermaster here. Or, quartermistress. Whichever floats your boat."
@@ -15940,7 +15940,7 @@ label resource_exchange_menu():
 
             bast "Anyway, you didn't come here only to chat?"
 
-        "What is this place?":
+        "这里是什么地方?":
 
             bast "This is the resource exchange! The biggest one of its kind in Zan, and maybe the world. I wouldn't know about that."
 
@@ -15968,7 +15968,7 @@ label resource_exchange_menu():
 
             bast "Is that all?"
 
-        "Can I trade here?" if not story_flags["builder license"]:
+        "我可以在这里和别人交易吗?" if not story_flags["builder license"]:
 
             you "I want to trade resources here. Can I?"
 
@@ -16050,7 +16050,7 @@ label new_builder_license():
     menu:
         bast "Do you want an upgraded builder license?"
 
-        "Tell me more":
+        "告诉我详细信息":
             you "Upgrade my license? What for?"
 
             if story_flags["builder license"] == 2:
@@ -16099,7 +16099,7 @@ label new_builder_license():
 
                         bast "You can now trade diamonds at the resource exchange."
 
-        "I do":
+        "我确实很想":
             you "I want to upgrade my license."
 
             if story_flags["builder license"] == 2:
@@ -16137,7 +16137,7 @@ label new_builder_license():
                         bast "You can now trade diamonds at the resource exchange."
 
 
-        "No, I just want to trade":
+        "不必了，我只是来做交易的":
             pass
 
     return
@@ -16179,7 +16179,7 @@ label trade_10_resources():
     bast "Good to see you are using your license."
 
     menu:
-        "Compliment her":
+        "赞美她":
             $ renpy.block_rollback()
 
             you "Well, to be honest, I mostly come here to see you..."
@@ -16196,7 +16196,7 @@ label trade_10_resources():
 
             $ NPC_bast.love -= 1
 
-        "Ask a personal question":
+        "问一些私人话题":
             $ renpy.block_rollback()
 
             you "You said you were a Holy Builder, correct?"
@@ -16213,7 +16213,7 @@ label trade_10_resources():
 
             $ NPC_bast.love += 1
 
-        "Ask for a rebate":
+        "请求优惠":
             $ renpy.block_rollback()
 
             you "So, I've been a good customer, eh..."
@@ -16251,7 +16251,7 @@ label trade_25_resources():
     you "I think I deserve a reward."
 
     menu:
-        "Ask for a kiss":
+        "让她给你一个香吻":
             $ renpy.block_rollback()
 
             you "Why not give me a big kiss to celebrate our friendship? Come to daddy..."
@@ -16262,7 +16262,7 @@ label trade_25_resources():
 
             $ NPC_bast.love -= 1
 
-        "Ask for a story":
+        "让她说说她的过往":
             $ renpy.block_rollback()
 
             you "Look, I know you don't like to talk about your past..."
@@ -16305,7 +16305,7 @@ label trade_25_resources():
 
             $ NPC_bast.love += 2
 
-        "Ask for free stuff":
+        "获得一些免费物资":
             $ renpy.block_rollback()
 
             you "As I am such a good customer, perhaps I should be rewarded?"
@@ -16334,7 +16334,7 @@ label trade_50_resources:
 
     menu:
 
-        "Ask her on a date":
+        "约她出去":
             $ renpy.block_rollback()
 
             you "I think we should celebrate. Why don't you take some time off and join me for drinks, or dinner?"
@@ -16469,7 +16469,7 @@ label trade_50_resources:
                 $ NPC_bast.love += 1
 
 
-        "Ask to touch her boobs":
+        "摸摸她的胸部":
             $ renpy.block_rollback()
 
             you "As my reward, I choose... Fondling your juicy boobies!"
@@ -16504,7 +16504,7 @@ label trade_50_resources:
 
             $ NPC_bast.love -= 1
 
-        "Ask for advanced resources":
+        "免费的高级物资":
             $ renpy.block_rollback()
 
             you "I'd like some advanced resources as a reward. I'm sure you can spare some."
@@ -16582,7 +16582,7 @@ label bast_informant():
     menu:
         "What do you do?"
 
-        "Accept the offer (1000 gold)":
+        "接受提议(1000 gold)":
             $ renpy.block_rollback()
             $ MC.gold -= 1000
 
@@ -16613,7 +16613,7 @@ label bast_informant():
             else:
                 you "Dirty dog. I should have cut his arm off."
 
-        "Refuse the offer":
+        "拒绝请求":
             $ renpy.block_rollback()
 
             you "Whatever information you think you have, I won't pay you."
@@ -16635,7 +16635,7 @@ label bast_informant():
 
             return
 
-        "Kill him":
+        "杀人灭口":
             $ renpy.block_rollback()
             $ MC.evil += 3
 
@@ -16739,7 +16739,7 @@ label return_to_bast():
     menu:
         extend ""
 
-        "Nothing":
+        "不要求报酬":
             $ renpy.block_rollback()
             $ MC.good += 1
 
@@ -16767,7 +16767,7 @@ label return_to_bast():
 
             $ NPC_bast.love += 2
 
-        "I want 1000 gold":
+        "我想要1000金币":
             $ MC.neutral += 1
 
             you "Well, considering the guy I got it from wanted 1000 gold for it, it's only fair that you compensate me I think..."
@@ -16787,7 +16787,7 @@ label return_to_bast():
 
             $ NPC_bast.love += 1
 
-        "I want 2000 gold":
+        "我想要2000金币":
             $ renpy.block_rollback()
             $ MC.good -= 1
 
@@ -16816,7 +16816,7 @@ label return_to_bast():
 
             $ NPC_bast.love -= 2
 
-        "I want something else...":
+        "我想要点别的奖励...":
             $ renpy.block_rollback()
             $ MC.evil += 1
 
@@ -16898,7 +16898,7 @@ label return_to_bast():
     menu:
         "What do you tell her?"
 
-        "He's alive (truth)" if not NPC_bast.flags["killed_bast_ex"]:
+        "他还活着(坦白)" if not NPC_bast.flags["killed_bast_ex"]:
             $ renpy.block_rollback()
 
             you "He's alive. He's not... doing so well. It is best you don't seek him out."
@@ -16907,7 +16907,7 @@ label return_to_bast():
 
             "She says nothing, but you wonder if telling her was the right choice."
 
-        "He's alive (lie)" if NPC_bast.flags["killed_bast_ex"]:
+        "他还活着(撒谎)" if NPC_bast.flags["killed_bast_ex"]:
             $ renpy.block_rollback()
 
             you "He's uh, just fine and dandy, you know! I think he went... On an adventure! To a far, far away land, upstate..."
@@ -16920,7 +16920,7 @@ label return_to_bast():
 
             $ NPC_bast.love -= 1
 
-        "He's dead (truth)" if NPC_bast.flags["killed_bast_ex"]:
+        "他已经死了 (坦白)" if NPC_bast.flags["killed_bast_ex"]:
             $ renpy.block_rollback()
 
             you "He's dead."
@@ -16933,7 +16933,7 @@ label return_to_bast():
 
             bast "I suppose it was his fate... Maybe it means I can finally move on..."
 
-        "He's dead (lie)" if not NPC_bast.flags["killed_bast_ex"]:
+        "他已经死了 (撒谎)" if not NPC_bast.flags["killed_bast_ex"]:
             $ renpy.block_rollback()
 
             you "He's dead. Definitely. Yup."
@@ -16948,7 +16948,7 @@ label return_to_bast():
 
             "You wonder if lying was the right course, but you hope it can give her closure."
 
-        "I don't know (half-lie)":
+        "我也不知道 (半真半假)":
             $ renpy.block_rollback()
 
             you "Well... I don't know."
@@ -17044,13 +17044,13 @@ label trade_100_resources():
         menu:
             you "Well..."
 
-            "Of course!":
+            "当然!":
                 you "Of course!"
 
-            "You bet!":
+            "那还用说!":
                 you "You bet!"
 
-            "Fuck yeah!":
+            "太棒了!":
                 you "FUCK YEAH!!!"
 
         play sound s_dress
@@ -17927,7 +17927,7 @@ label meet_riche():
     riche "But what I saw during the war still haunts me. I want to be a force for good."
 
     menu:
-        "You're nice":
+        "你真是心地善良":
             you "It's nice of you to place others before yourself."
 
             riche "Well... It's the least I can do..."
@@ -17938,7 +17938,7 @@ label meet_riche():
 
             $ MC.good += 1
 
-        "You're stupid":
+        "你真是蠢到家了":
             you "It's stupid. In this world, trying to alleviate other people's suffering is a fool's errand. You're better off thinking about yourself."
 
             "She blushes."
@@ -17949,7 +17949,7 @@ label meet_riche():
 
             $ MC.evil += 1
 
-        "You're hot":
+        "你真是太性感了":
             you "Baby, just laying eyes on your sweet body is enough to nurse a dying man back to health..."
 
             "She blushes bright red and is at a loss for words."
@@ -19046,27 +19046,27 @@ label chaos_update_menu():
     menu:
         "Choose which girls to share with Chaos. This will cost them some enery and sanity (and possibly their virginity)."
 
-        "Give him a virgin (full charge)" if virgins:
+        "给他一个处女 (完全充能)" if virgins:
             $ prompt = "Choose a girl for Chaos (she will lose her virginity)"
             $ girl_list = virgins
             $ girl_nb = 1
 
-        "Give him 4 girls (full charge)" if len(MC.girls + farm.girls) >= 4:
+        "给他四个女孩 (完全充能)" if len(MC.girls + farm.girls) >= 4:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 4
 
-        "Give him 3 girls (high charge)" if len(MC.girls + farm.girls) >= 3:
+        "给他三个女孩 (能量充足)" if len(MC.girls + farm.girls) >= 3:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 3
 
-        "Give him 2 girls (low charge)" if len(MC.girls + farm.girls) >= 2:
+        "给他两个女孩 (能量不足)" if len(MC.girls + farm.girls) >= 2:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 2
 
-        "Not this month":
+        "这个月不行":
             scene black
             show bg chaos no girl
             with dissolve
