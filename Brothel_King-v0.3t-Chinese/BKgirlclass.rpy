@@ -4992,7 +4992,7 @@ init -2 python:
                         neg_unlocked.append(girl_related_dict[act])
 
                 if pos_unlocked:
-                    sex_text += "她有些害怕 {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} 行为"
+                    sex_text += "她有些喜欢 {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} 行为"
 
                     if neg_unlocked:
                         sex_text += ", 但她"
@@ -5014,7 +5014,7 @@ init -2 python:
                 neg_fix = [girl_related_dict[fix.name] for fix in self.neg_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
 
                 if pos_fix:
-                    sex_text += "她十分痴迷 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}。"
+                    sex_text += "她痴迷于 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}。"
                 if neg_fix:
                     sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color}感到恶心。"
 
@@ -5024,7 +5024,7 @@ init -2 python:
                     des += "你不太了解她的性癖。"
 
                 if farm.knows["weakness"][self]:
-                    des+= "\n她对农场的 %ss.十分敏感" % self.weakness
+                    des+= "\n她对农场的 %s 十分敏感" % self.weakness
 
             elif show == "recent":
 
