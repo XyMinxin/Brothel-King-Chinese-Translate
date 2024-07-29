@@ -8270,11 +8270,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:657
     old "You can now move to a larger brothel (maximum "
-    new "你现在可以搬到一个更大的红灯区(最高 "
+    new "你现在可以搬到一个更大的青楼(最多 "
 
     # game/BKevents.rpy:657
     old " bedrooms).\nChoose a district to set up your new brothel."
-    new " 间客房)。\n选择一个区域来建立你的新红灯区。"
+    new " 间房间)。\n选择一个区域来建立新的青楼。"
 
     # game/BKevents.rpy:668
     old "\nYou will receive a free room of your choice."
@@ -8282,11 +8282,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:671
     old "\nYou will receive a {b}free "
-    new "\n你将获得一件{b}免费 "
+    new "\n你将获得一间{b}免费的"
 
     # game/BKevents.rpy:676
     old "Do you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations."
-    new "你确定要把你的红灯区搬到{b}[chosen_district.name]{/b}吗?\n\n{size=-2}这将会重置你所有房间的改造,但你将保留你的家具和装饰。"
+    new "你确定要把青楼搬到{b}[textcn]{/b}吗?\n\n{size=-2}这将会重置你所有房间的改造,但会保留你的家具和装饰。"
 
     # game/BKevents.rpy:690
     old "You have received a new goal"

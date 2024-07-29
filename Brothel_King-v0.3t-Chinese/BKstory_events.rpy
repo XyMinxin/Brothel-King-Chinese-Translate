@@ -11685,9 +11685,9 @@ label satella_thunderbolt():
 
     $ reaction = False
 
-    if MC.get_items(name="Lightning Rod") or MC.get_spirit() > 5:
+    if MC.get_items(name="避雷针") or MC.get_spirit() > 5:
         menu:
-            "使用避雷针" if MC.get_items(name="Lightning Rod"):
+            "使用避雷针" if MC.get_items(name="避雷针"):
                 you "I knew this day would come... {i}Lightning rod{/i}! Lend me your power!"
 
                 "Holding the lightning rod by the rubbery part, you brandish it as Satella completes her casting."

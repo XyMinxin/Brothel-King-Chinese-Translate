@@ -740,6 +740,16 @@ init -10 python:
                          "Pimp license" : "皮条客执照",
                          "Whoremonger license" : "妓女贩执照",
                          "Brothelmaster license" : "青楼主执照",
+
+                         ## 青楼房间名称 ##
+                         "Tavern" : "零点酒吧",
+                         "tavern" : "零点酒吧",
+                         "Strip club" : "激情夜店",
+                         "strip club" : "激情夜店",
+                         "Onsen" : "露天温泉",
+                         "onsen" : "露天温泉",
+                         "Okiya" : "花坊剧场",
+                         "okiya" : "花坊剧场",
                          }
 
     ## 特质名称 ##
@@ -1040,7 +1050,7 @@ init -10 python:
 
 #### BALANCE / CHEATS ####
 
-    debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
+    debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play
                         "gold" : 1.0,

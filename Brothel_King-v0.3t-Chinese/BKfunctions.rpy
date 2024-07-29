@@ -3415,7 +3415,7 @@ init -3 python:
 
     def can_use_minion_item():
 
-        if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
+        if MC.get_items(target="minion", name="愈合粉") and farm.get_hurt_minions():
             return True
         if MC.get_items(target="minion", effect_type="gain"):
             for it in MC.get_items(target="minion", effect_type="gain"):

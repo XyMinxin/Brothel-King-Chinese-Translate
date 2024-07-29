@@ -1702,7 +1702,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 action Return(("debug change all stats", 0))
                             else:
                                 action NullAction()
-                            tooltip __("她还有{b}") + str_int(girl.energy) + __("{/b}点精力. 她的最大精力为{b}") + str_int(girl_max) + __("{/b} (增加体格可以提高精力上限).")
+                            tooltip __("她还有{b}") + str_int(girl.energy) + __("{/b}点精力。她的最大精力为{b}") + str_int(girl_max) + __("{/b} (增加体格可以提高精力上限)。")
                             keyboard_focus False
                             yfill False
                             ysize yres(30)
@@ -2719,7 +2719,7 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = setting_name_dict[girl.job.capitalize()]
+                                $ text1 = girl_related_dict[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
                                 $ text1 = "无工作"
@@ -7037,7 +7037,7 @@ screen resource_tab(rlist="MC", sz = yres(15), sp = 3, x=0.0, y=0.0, bg=None): #
             for resource in [resource_dict[r] for r in build_resources]:
 
                 if resource.rank <= district.rank:
-                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(resource.name) + __(" in store.")) xpadding sp ypadding sp:
+                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(resource_name_dict[resource.name]) + __(" in store.")) xpadding sp ypadding sp:
                         has hbox spacing sp*2 yalign 0.5
                         add resource.pic.get(sz, sz) yalign 0.5
                         if MC.resources[resource.name] < 100:
@@ -7112,7 +7112,7 @@ screen resource_exchange():
                 for r in calendar.scarce:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip __("There is a shortage of ") + r.capitalize() + __(" this week. Value is going up."):
+                        button background None action NullAction() tooltip __("There is a shortage of ") + resource_name_dict[r.capitalize()] + __(" this week. Value is going up."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
                             text "▲" size res_font(16) color c_emerald yalign 0.5 font "DejaVuSans.ttf"
@@ -7120,7 +7120,7 @@ screen resource_exchange():
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip r.capitalize() + __(" is plentiful this week. Value is going down."):
+                        button background None action NullAction() tooltip resource_name_dict[r.capitalize()] + __(" is plentiful this week. Value is going down."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
                             text "▼" size res_font(16) color c_red yalign 0.5 font "DejaVuSans.ttf"
@@ -7136,7 +7136,7 @@ screen resource_exchange():
 
             text "Your resources" size res_font(14) italic True color c_brown
 
-            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "Use your gold to buy resources":
+            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "用你的 金币 购买资源":
                 selected_background c_emerald
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", *res_tb(40)) yalign 0.5
@@ -7150,13 +7150,13 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("Trade your " + r + " for other resources"):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用你的 " + resource_name_dict[r] + " 换取其他资源"):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text resource.name.capitalize() size res_font(18)
+                                text resource_name_dict[resource.name.capitalize()] size res_font(18)
                                 if r in calendar.discounted:
                                     text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
                                 elif r in calendar.scarce:
@@ -7177,7 +7177,7 @@ screen resource_exchange():
                 button xfill True ysize yres(60):
                     if "gold" != source:
                         action (SetScreenVariable("target", "gold"), SetScreenVariable("target_name", "gold"), SetScreenVariable("target_nb", 0), SelectedIf("gold"==target))
-                        tooltip "Sell your " + source_name + " for gold"
+                        tooltip "出售你的 " + source_name + " 换取金币"
                         selected_background c_emerald
 
                     hbox xfill True yfill True spacing 10:
@@ -7188,9 +7188,9 @@ screen resource_exchange():
                                 hbox spacing 6:
                                     $ rate = get_exchange_rate(source, "gold")
                                     if rate < 1:
-                                        $ text2 = "Get 1 for " + str_dec(1/rate, 1)
+                                        $ text2 = "获得 1 ，消耗 " + str_dec(1/rate, 1)
                                     else:
-                                        $ text2 = "Get " + str_dec(rate, 1) + " for 1"
+                                        $ text2 = "获得 " + str_dec(rate, 1) + " ，消耗 1"
 
                                     text text2 size res_font(14)
                                     add source.pic.get(*res_tb(16))
@@ -7203,7 +7203,7 @@ screen resource_exchange():
                         button xfill True ysize yres(60):
                             if resource != source:
                                 action (SetScreenVariable("target", resource), SetScreenVariable("target_name", resource.name), SetScreenVariable("target_nb", 0), SelectedIf(resource==target))
-                                tooltip "Trade " + r +" in exchange for your " + source_name
+                                tooltip "交易 " + r +" ，作为交换消耗你的 " + source_name
                                 selected_background c_emerald
                             hbox xfill True yfill True spacing 10:
                                 add resource.pic.get(*res_tb(40)) yalign 0.5
@@ -7218,9 +7218,9 @@ screen resource_exchange():
                                         hbox spacing 6:
                                             $ rate = get_exchange_rate(source, resource)
                                             if rate < 1:
-                                                $ text2 = "Get 1 for " + str(round_up(1/rate))
+                                                $ text2 = "获得 1 ，消耗 " + str(round_up(1/rate))
                                             else:
-                                                $ text2 = "Get " + str(round_up(rate)) + " for 1"
+                                                $ text2 = "获得 " + str(round_up(rate)) + " ，消耗 1"
 
                                             text text2 size res_font(14)
                                             if source == "gold":
@@ -7265,7 +7265,7 @@ screen resource_exchange():
                         color c_red
 
 
-                text "➜" size 54 xalign 0.5 yalign 0.5 font "DejaVuSans.ttf"
+                text "➜" size 54 xalign 0.5 yalign 0.5 font "1.ttf"
 
                 text "[target_nb]" size res_font(32) color c_white xalign 1.0 yalign 0.5
 
@@ -7283,17 +7283,17 @@ screen resource_exchange():
                         action (SetScreenVariable("source_nb", source_nb-1), SetScreenVariable("target_nb", round_up((source_nb-1)*rate)))
 
                 if source == "gold":
-                    $ text1 = "Buy"
+                    $ text1 = "购买"
                 else:
-                    $ text1 = "Trade"
+                    $ text1 = "交易"
 
                 textbutton text1 xalign 0.5 xsize 0.8 ysize yres(65):
                     if source == "gold" and MC.gold >= source_nb:
                         action Return(("gold", target_name, source_nb, target_nb))
-                        tooltip "Buy " + str(target_nb) + " " + target_name + " for " + str(source_nb) + " " + target_name
+                        tooltip "购买 " + str(target_nb) + " " + target_name + " ，消耗 " + str(source_nb) + " " + target_name
                     elif MC.resources[source_name] >= source_nb:
                         action Return((source_name, target_name, source_nb, target_nb))
-                        tooltip "Trade " + str(source_nb) + " " + source_name + " for " + str(target_nb) + " " + target_name
+                        tooltip "交易 " + str(source_nb) + " " + source_name + " ，消耗 " + str(target_nb) + " " + target_name
 
                 textbutton "+" xsize xres(65) ysize yres(65) text_size res_font(32) xalign 1.0:
                     if rate < 1:

@@ -278,7 +278,7 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
 
     $ centered(event_color["special"] % "\n\n{b}Ninja hunt started\nROUND " + stage_name + "{/b}")
 
-    if MC.has_item("makibishi"):
+    if MC.has_item("蒺藜"):
         if not njgame.special:
             menu:
                 "Do you want to use your makibishi to automatically catch your target?"
