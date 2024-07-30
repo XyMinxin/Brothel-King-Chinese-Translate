@@ -12268,3 +12268,533 @@ translate schinese strings:
     old "Nope"
     new "不"
 
+# TODO: Translation updated at 2024-07-31 01:49
+
+# game/BKday_events.rpy:678
+translate schinese random_night_girl_event_a2b17c13:
+
+    # girl.char "Oh, Master [MC.name]... How nice of you to come by... [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:1710
+translate schinese random_night_girl_event_28b9c2f0:
+
+    # you "Here at [brothel.name], we're slashing pussy in half!"
+    you ""
+
+# game/BKday_events.rpy:1713
+translate schinese random_night_girl_event_bef59d60:
+
+    # you "C'mon, you want pussy, come on in Pussy Lovers! If we don't got it, you don't want it! Come on in Pussy lovers!"
+    you ""
+
+# game/BKday_events.rpy:2266
+translate schinese onsen_night_event_wake_up_f5895f36:
+
+    # girl.char "Oh, Master... Come over here, will you... [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:3335
+translate schinese night_girl_perform_08d79272:
+
+    # girl.char "Aaah! [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:4038
+translate schinese night_girl_perform_1e22ec11_1:
+
+    # "[girl.fullname] gasps in shock, and blood starts running down her thighs."
+    ""
+
+# game/BKday_events.rpy:5006
+translate schinese night_girl_perform_28be6530:
+
+    # girl.char "Aaaah! [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:5101
+translate schinese night_girl_perform_e9ba90da:
+
+    # girl.char "Dear customers, feel free to take a good look at my slutty body... [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:6210
+translate schinese night_girl_perform_15ff0d2b:
+
+    # girl.char "Aaaah... Master is filling me up with warm, sticky cum... [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:6290
+translate schinese night_girl_perform_78798730:
+
+    # "After getting it only halfway in, you find yourself stuck. [girl.name] is weeping quietly, and dry as the Hokoman desert."
+    ""
+
+# game/BKday_events.rpy:6647
+translate schinese night_girl_perform_28be6530_1:
+
+    # girl.char "Aaaah! [emo_heart]"
+    girl.char ""
+
+# game/BKday_events.rpy:7049
+translate schinese night_girl_perform_b20baa23:
+
+    # "As she gets to the chorus of the song, the cry of the howling banshee, you clench your hand into a fist, and place it at the entrance of her [_type]."
+    ""
+
+# game/BKday_events.rpy:7059
+translate schinese night_girl_perform_4e0728e2:
+
+    # "The customers hold their breath as you push your clenched fist right into [girl.name]'s [_type]."
+    ""
+
+# game/BKday_events.rpy:7065
+translate schinese night_girl_perform_a06f108d:
+
+    # "It seems impossible that your whole fist will fit inside her, yet slowly, her [_type] opens up, aided by the love juice covering your hand."
+    ""
+
+# game/BKday_events.rpy:7071
+translate schinese night_girl_perform_05c0e1fe:
+
+    # "As her [_type] opens up to accommodate your hand, you are able to slide your fist inside her. Her eyes seem about to pop out and she screams with a mix of pain and pleasure."
+    ""
+
+# game/BKday_events.rpy:7092
+translate schinese night_girl_perform_a3fc38a7:
+
+    # "Her [_type] is completely dilated now, and her belly is grotesquely deformed by your hand inside her. You decide to go even deeper."
+    ""
+
+# game/BKday_events.rpy:7102
+translate schinese night_girl_perform_0244d926:
+
+    # "She howls like a wild animal as you shove your arm very deep inside her [_type], bumping into her inner regions. The customers are amazed by how far you were able to push her."
+    ""
+
+# game/BKday_events.rpy:7116
+translate schinese night_girl_perform_388bfe6e:
+
+    # "You know her weaknesses, and before long, you can feel her getting wet. Using her love juice, you start playing with her [_type], sliding one finger first, then two."
+    ""
+
+# game/BKday_events.rpy:7126
+translate schinese night_girl_perform_30ef8061:
+
+    # "As she gets to the chorus of the song, the cry of the howling banshee, you slide even more fingers inside her [_type], until you have four of them well in."
+    ""
+
+# game/BKday_events.rpy:7134
+translate schinese night_girl_perform_e18c5e89:
+
+    # "It's time to make her howl. Adding your thumb to the mix, you struggle to fit your hand inside [girl.name]. She screams in pain and struggles hard to accommodate your whole hand inside her [_type]."
+    ""
+
+# game/BKday_events.rpy:7144
+translate schinese night_girl_perform_42e95b15:
+
+    # girl.char "Ooooh... You're ripping my [_type] apart..."
+    girl.char ""
+
+translate schinese strings:
+
+    # game/BKday_events.rpy:46
+    old "赞美她"
+    new ""
+
+    # game/BKday_events.rpy:46
+    old "鼓励她"
+    new ""
+
+    # game/BKday_events.rpy:46
+    old "无视她"
+    new ""
+
+    # game/BKday_events.rpy:122
+    old "祝贺她"
+    new ""
+
+    # game/BKday_events.rpy:122
+    old "呵斥她"
+    new ""
+
+    # game/BKday_events.rpy:122
+    old "让她打扫[room]"
+    new ""
+
+    # game/BKday_events.rpy:122
+    old "让她舔你的肉棒"
+    new ""
+
+    # game/BKday_events.rpy:304
+    old "让她进来"
+    new ""
+
+    # game/BKday_events.rpy:304
+    old "把她赶出去"
+    new ""
+
+    # game/BKday_events.rpy:304
+    old "让她回自己的房间"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "你的美貌"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "你的魅力"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "你的身材"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "你的气质"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "你的一切"
+    new ""
+
+    # game/BKday_events.rpy:373
+    old "没有什么特别的理由"
+    new ""
+
+    # game/BKday_events.rpy:561
+    old "偷窥"
+    new ""
+
+    # game/BKday_events.rpy:561
+    old "不偷窥"
+    new ""
+
+    # game/BKday_events.rpy:656
+    old "进入[girl.fullname]的房间"
+    new ""
+
+    # game/BKday_events.rpy:656
+    old "下次再说吧"
+    new ""
+
+    # game/BKday_events.rpy:698
+    old "别急着走嘛"
+    new ""
+
+    # game/BKday_events.rpy:698
+    old "让她离开"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "检查她的卧室"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "评价她的外貌"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "给她做个全身检查（裸体）"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "给她一个法式深吻"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "把她抱到床上去"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "让她抚摸你的鸡巴"
+    new ""
+
+    # game/BKday_events.rpy:723
+    old "用肉棒插她的喉咙"
+    new ""
+
+    # game/BKday_events.rpy:758
+    old "不错的地方"
+    new ""
+
+    # game/BKday_events.rpy:758
+    old "就像个狗窝"
+    new ""
+
+    # game/BKday_events.rpy:986
+    old "直视她"
+    new ""
+
+    # game/BKday_events.rpy:1016
+    old "惩罚她"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "你想怎样惩罚她？"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "让她今晚清洗脏床单"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "让她搬运沉重的货物"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "让她一丝不挂地揽客"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "让她为每一位顾客服务"
+    new ""
+
+    # game/BKday_events.rpy:1056
+    old "就在她站着的地方操她"
+    new ""
+
+    # game/BKday_events.rpy:1223
+    old "站在[girl.name]这边"
+    new ""
+
+    # game/BKday_events.rpy:1223
+    old "帮客人说话"
+    new ""
+
+    # game/BKday_events.rpy:1223
+    old "让他们自己解决"
+    new ""
+
+    # game/BKday_events.rpy:1284
+    old "给他一拳"
+    new ""
+
+    # game/BKday_events.rpy:1284
+    old "施展魔法"
+    new ""
+
+    # game/BKday_events.rpy:1472
+    old "让[girl.name]服务客户"
+    new ""
+
+    # game/BKday_events.rpy:1472
+    old "让客户和[girl.name]上床"
+    new ""
+
+    # game/BKday_events.rpy:1554
+    old "挤进观众席"
+    new ""
+
+    # game/BKday_events.rpy:1554
+    old "到舞台上"
+    new ""
+
+    # game/BKday_events.rpy:1554
+    old "离开现场"
+    new ""
+
+    # game/BKday_events.rpy:1613
+    old "让[cust]在舞台上扯下[girl.name]的衣服"
+    new ""
+
+    # game/BKday_events.rpy:1613
+    old "拒绝要求"
+    new ""
+
+    # game/BKday_events.rpy:1694
+    old "发表激动人心的演讲"
+    new ""
+
+    # game/BKday_events.rpy:1694
+    old "让[girl.name]在观众面前表演"
+    new ""
+
+    # game/BKday_events.rpy:1694
+    old "在舞台上和[girl.name]做爱"
+    new ""
+
+    # game/BKday_events.rpy:1809
+    old "让她穿着泳装表演"
+    new ""
+
+    # game/BKday_events.rpy:1809
+    old "让她穿着COS服表演"
+    new ""
+
+    # game/BKday_events.rpy:1809
+    old "让她脱光了衣服表演"
+    new ""
+
+    # game/BKday_events.rpy:1830
+    old "给你口交"
+    new ""
+
+    # game/BKday_events.rpy:1830
+    old "掰开小穴"
+    new ""
+
+    # game/BKday_events.rpy:1830
+    old "掰开菊穴"
+    new ""
+
+    # game/BKday_events.rpy:2003
+    old "一把扯下她的浴巾"
+    new ""
+
+    # game/BKday_events.rpy:2003
+    old "把她叫醒"
+    new ""
+
+    # game/BKday_events.rpy:2003
+    old "趁她睡着了捉弄她"
+    new ""
+
+    # game/BKday_events.rpy:2003
+    old "让她好好休息"
+    new ""
+
+    # game/BKday_events.rpy:2043
+    old "催她去工作"
+    new ""
+
+    # game/BKday_events.rpy:2043
+    old "训斥她一顿"
+    new ""
+
+    # game/BKday_events.rpy:2043
+    old "让她给你按摩"
+    new ""
+
+    # game/BKday_events.rpy:2118
+    old "给你手交"
+    new ""
+
+    # game/BKday_events.rpy:2118
+    old "给你乳交"
+    new ""
+
+    # game/BKday_events.rpy:2118
+    old "放她一马"
+    new ""
+
+    # game/BKday_events.rpy:2236
+    old "挠痒痒"
+    new ""
+
+    # game/BKday_events.rpy:2236
+    old "揉胸部"
+    new ""
+
+    # game/BKday_events.rpy:2236
+    old "让她在‘沐浴’中醒来"
+    new ""
+
+    # game/BKday_events.rpy:2400
+    old "射在她的头发上"
+    new ""
+
+    # game/BKday_events.rpy:2400
+    old "尿在她身上"
+    new ""
+
+    # game/BKday_events.rpy:2400
+    old "让她享受精子浴"
+    new ""
+
+    # game/BKday_events.rpy:2400
+    old "还是算了"
+    new ""
+
+    # game/BKday_events.rpy:2462
+    old "让她做好准备"
+    new ""
+
+    # game/BKday_events.rpy:2462
+    old "让她举行一个特别的仪式"
+    new ""
+
+    # game/BKday_events.rpy:2484
+    old "给她一条华丽的裙子"
+    new ""
+
+    # game/BKday_events.rpy:2484
+    old "给她一捆粗糙的绳子"
+    new ""
+
+    # game/BKday_events.rpy:2484
+    old "给她一个深喉的口球"
+    new ""
+
+    # game/BKday_events.rpy:2484
+    old "给她一个粗长的肛塞"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "唱歌的人鱼(传统音乐和歌唱)"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "艳丽的女鬼(传统舞蹈和戏剧)"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "七龙珠传说(以肛珠为特色的成人节目)"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "嚎叫的女妖(以拳交为特色的成人节目)"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "奶牛莫莉大冒险(以榨乳为特色的成人节目)"
+    new ""
+
+    # game/BKday_events.rpy:2607
+    old "禁地的秘泉(以灌肠为特色的成人表演)"
+    new ""
+
+    # game/BKday_events.rpy:2925
+    old "[girl.name]的 [stat] 技能大幅提升。"
+    new ""
+
+    # game/BKday_events.rpy:2927
+    old "[girl.name]的 [stat] 技能提升了。"
+    new ""
+
+    # game/BKday_events.rpy:2929
+    old "[girl.name]的 [stat] 技能略有提升。"
+    new ""
+
+    # game/BKday_events.rpy:2931
+    old "[girl.name]的 [stat] 技能大幅下降。"
+    new ""
+
+    # game/BKday_events.rpy:2933
+    old "[girl.name]的 [stat] 技能下降了。."
+    new ""
+
+    # game/BKday_events.rpy:2935
+    old "[girl.name]的 [stat] 技能略有下降。."
+    new ""
+
+    # game/BKday_events.rpy:7285
+    old "让客人玩弄[girl.name]的小穴"
+    new ""
+
+    # game/BKday_events.rpy:7285
+    old "让客人玩弄[girl.name]的菊穴"
+    new ""
+
+    # game/BKday_events.rpy:7285
+    old "阻止客人"
+    new ""
+
+    # game/BKday_events.rpy:7538
+    old "当然可以"
+    new ""
+
+    # game/BKday_events.rpy:7538
+    old "做你的梦"
+    new ""
+

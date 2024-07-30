@@ -14,3 +14,19 @@ translate schinese strings:
     old "Very frail"
     new "Very frail"
 
+# TODO: Translation updated at 2024-07-31 01:49
+
+translate schinese strings:
+
+    # game/BKgirlclass.rpy:272
+    old "彻底玩坏"
+    new ""
+
+    # game/BKgirlclass.rpy:275
+    old "接近崩溃"
+    new ""
+
+    # game/BKgirlclass.rpy:278
+    old "任人宰割"
+    new ""
+
