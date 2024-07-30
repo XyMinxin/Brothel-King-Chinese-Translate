@@ -77,15 +77,3 @@ translate schinese strings:
 
     old "Show all items."
     new "显示所有物品."
-# TODO: Translation updated at 2024-07-31 01:49
-
-translate schinese strings:
-
-    # game/BKitems.rpy:586
-    old "点击根据"
-    new ""
-
-    # game/BKitems.rpy:867
-    old "跳过"
-    new ""
-
