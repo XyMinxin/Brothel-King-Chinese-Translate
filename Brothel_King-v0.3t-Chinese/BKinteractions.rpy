@@ -894,38 +894,38 @@ label slave_chat_tastes(girl):
     if inter.score <= 15:
         if girl.is_(("extravert", "dom")):
 #             "She looks annoyed and sneers."
-            girl.char "Me? My tastes don't really matter. I'm just a slave, remember? *sneer*"
+            girl.char "我?我的想法并不重要。我只是个奴隶，不是吗? *冷笑*"
         elif girl.is_(("introvert", "dom")):
 #             "She looks bothered and sighs heavily."
-            girl.char "What I like is to be left alone. *heavy sigh*"
+            girl.char "我喜欢一个人待着。*叹气*"
         elif girl.is_(("introvert", "sub")):
-            "She mumbles something, but you can't hear her. She almost bursts into tears as you insist. It's useless."
+            "她咕哝着什么，但你听不见。在你的坚持下，她几乎哭了出来。她的意见并不重要。"
         elif girl.is_(("extravert", "sub")):
 #             "She blushes and look away."
-            girl.char "My tastes don't matter, Master [MC.name]. I'm just here to do your bidding. *blush*"
+            girl.char "我的想法不重要，[MC.name]主人。 我只是你的一个奴隶。 *脸红*"
 
         $ inter.response = "refused"
 
     elif inter.score <= 30:
-        "She is more relaxed around you now. She tells you a little about her tastes."
+        "她现在和你在一起感到更加自然放松了。她向你透露了一些她的喜好。"
         $ result = rand_choice(("likes", "dislikes"))
         $ girl.change_love(1)
         $ girl.change_fear(-1)
 
     elif inter.score <= 60:
-        "She's comfortable around you. She tells you about her tastes as you share a cup of tea."
+        "她和你在一起感觉很舒服。当你们一起喝下午茶时，她告诉了你她喜欢什么讨厌什么。"
         $ result = weighted_choice([("likes", 1), ("dislikes", 1), ("loves", 2), ("hates", 2)])
         $ girl.change_love(2)
         $ girl.change_fear(-1)
 
     elif inter.score <= 120:
-        "She blushes as you sit by her side and start talking in depth about what she likes."
+        "当你坐在她身边，提及她喜欢什么时，她的脸红的像个苹果一样。"
         $ result = weighted_choice([("likes", 1), ("dislikes", 1), ("loves", 2), ("hates", 2), ("pos_act", 2), ("neg_act", 2)])
         $ girl.change_love(3)
         $ girl.change_fear(-2)
 
     else:
-        "She sits on your lap and throws her arms around you, telling you all about what she likes."
+        "她坐在你的腿上，双臂环抱着你，柔情似水地告诉你她喜欢什么。"
         $ result = weighted_choice([("likes", 1), ("dislikes", 1), ("loves", 1), ("hates", 1), ("pos_fix", 2), ("neg_fix", 2)])
         $ girl.change_love(3)
         $ girl.change_fear(-3)
@@ -990,7 +990,7 @@ label slave_chat_tastes(girl):
             $ act = rand_choice(girl.pos_acts)
             $ act_desc = long_act_description[act]
 
-            "She blushes as she whispers something to you."
+            "她贴着你的耳朵轻声细语，脸红的发烫。"
 
             $ girl.personality_unlock[act] = True
             # $ girl.personality_unlock["LM"] += MC.get_charisma() + 15 + dice(10)
@@ -1003,7 +1003,7 @@ label slave_chat_tastes(girl):
             $ act = rand_choice(girl.neg_acts)
 
             if act:
-                "She blushes as she whispers something to you."
+                "她贴着你的耳朵轻声细语，脸红的发烫。"
 
                 $ act_desc = long_act_description[act]
                 $ girl.personality_unlock[act] = True
@@ -1020,11 +1020,11 @@ label slave_chat_tastes(girl):
             $ fix_desc = fix_description[fix.name + " description"].lower()
 
             play sound s_mmmh
-            "She tells you that she loves [fix_desc]"
+            "她告诉你她喜欢[fix_desc]"
 
             if not girl.personality_unlock[fix.name]:
 
-                "You have discovered [girl.name]'s fixation with [fix.name]."
+                "你知道了[girl.name]喜欢[fix.name]。"
 
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("pos fixations")
@@ -1036,11 +1036,11 @@ label slave_chat_tastes(girl):
             if fix:
                 play sound s_sigh
                 $ fix_desc = fix_description[fix.name + " description"].lower()
-                "She tells you that she really hates [fix_desc] It creeps her out."
+                "她告诉你她真的很讨厌[fix_desc]。她很害怕。"
 
                 if not girl.personality_unlock[fix.name]:
 
-                    "You have discovered [girl.name]'s disgust for [fix.name]."
+                    "你知道了[girl.name]很讨厌[fix.name]。"
 
                     $ girl.personality_unlock[fix.name] = True
                     $ test_achievement("neg fixations")
@@ -1049,10 +1049,10 @@ label slave_chat_tastes(girl):
 
         menu:
             "我知道了":
-                you "Fine, we'll discuss this later."
+                you "好的，我们稍后再讨论。"
                 $ inter.MC_reaction = "give up"
 
-            "你吃了熊心豹子胆？":
+            "谁给你的胆子？":
                 $ inter.MC_reaction = "discipline"
 
                 play sound s_punch
@@ -2306,8 +2306,8 @@ label slave_magic(girl, mode="train"):
     if not girl.magic_training:
         call slave_hypnotize_method(girl) from _call_slave_hypnotize_method
 
-    $ text1 = rand_choice(MC.filter_say(("ar: 凭借太阳神的神光{nw}", "sh: 凭借黑夜中的莎莉娅{nw}", "凭借五大元素的力量{nw}", "ev: 凭借7层地狱的力量{nw}", "gd: 凭借我纯洁的灵魂", "ne: 凭借龙之怒吼{nw}",
-                   "ng: 凭借时之沙{nw}", "By the beat of the magic groove{nw}", "凭借死星的激光射线{nw}", "凭借腥红之月的暗面{nw}", "凭借无边海洋的深度{nw}")))
+    $ text1 = rand_choice(MC.filter_say(("ar: 太阳神的神光{nw}", "sh: 黑夜中的莎莉娅{nw}", "五大元素的力量{nw}", "ev: 7层地狱的力量{nw}", "gd: 纯洁的灵魂", "ne: 龙之怒吼{nw}",
+                   "ng: 时之沙{nw}", "魔力的律动{nw}", "死星的激光射线{nw}", "腥红之月的暗面{nw}", "无边无际的海洋{nw}")))
 
     $ text1 += ", 我命令你, "
 
@@ -2402,11 +2402,11 @@ label slave_magic(girl, mode="train"):
     $ d = MC.challenges["control"].d - MC.challenges["control"].d_op
 
     if d >= 3:
-        "魔法效果十分强劲。她变成了不会思考的人偶. {nw}"
+        "魔法效果十分强劲。她变成了不会思考的人偶。 {nw}"
     elif d <= -3:
-        "你对她意识的影响十分微弱。你得快点完事. {nw}"
+        "你对她意识的影响十分微弱。你得快点完事。 {nw}"
     else:
-        "她潜意识里一直在抵抗，但你努力克服了它. {nw}"
+        "她潜意识里一直在抵抗，但你努力克服了它。 {nw}"
 
     if inter.score > 0:
 
@@ -2415,7 +2415,7 @@ label slave_magic(girl, mode="train"):
 
         play sound s_spell
 
-        extend "催眠成功, [girl.name] 似乎没有意识到你在做什么，只知道听从你的命令."
+        extend "催眠很成功, [girl.name]没有意识到你在做什么，只知道听从你的命令。"
 
         call dialogue(girl, "slave magic " + act + " success") from _call_dialogue_195
 
@@ -2429,9 +2429,9 @@ label slave_magic(girl, mode="train"):
 
         play sound s_spell
 
-        extend "[girl.name]看起来晕头转向，面色潮红。她拒绝服从你的指令，但你能感觉到她的反抗在减弱."
+        extend "[girl.name]看起来晕头转向，精神恍惚。她拒绝服从你的指令，但你能感觉到她的反抗在不断减弱。"
 
-        "几分钟后, 你停止了试验, 这次进展不太顺利."
+        "几分钟后, 你停止了催眠, 这次进展不太顺利。"
 
     else:
 
@@ -2460,16 +2460,16 @@ label slave_reward_praise(girl):
                     counter = girl.get_stat(stat)
 
         if my_stat == "beauty":
-            you "你一天比一天漂亮. 客人们都喜欢你。"
+            you "你一天比一天漂亮，客人们都喜欢你。"
         elif my_stat == "body":
-            you "你今天看起来很性感. 你令我神魂颠倒。"
+            you "你今天看起来很性感，你令我神魂颠倒。"
         elif my_stat == "charm":
-            you "你今天魅力十足. 回头率百分之一万。"
+            you "你今天魅力十足， 回头率百分之一万。"
         elif my_stat == "refinement":
             you "你就像是个公主一样，那些女人都在嫉妒你。"
 
     else:
-        $ MC.rand_say(("你很努力，我很感激。", "没有你，这个地方就不一样了。谢谢你。", "gd: 感谢你的所有努力。我对你非常满意。",
+        $ MC.rand_say(("你很努力，我很感激。", "没有你，这个地方就不一样了。谢谢你。", "gd: 感谢你付出的努力。我对你非常满意。",
                     "ev: 你是我最有效率的仆人之一。不过不要变得自满。", "ne: 你是一个好奴隶，像你这样的好货色越来越少了。",
                     "ar: 太阳神在上，他会奖励你的精神。", "sh: 女神大人说：在阴影中劳作的人将获得十倍的回报。", "ng: 我不相信什么神，但你可能是一个天使*眨眼*。"))
 
