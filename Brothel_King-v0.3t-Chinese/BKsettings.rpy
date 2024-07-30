@@ -554,6 +554,16 @@ init -10 python:
                          "Neck" : "项链",
                          "neck" : "项链",
 
+                         ## 合同类型 ##
+                         "Weapon" : "武器",
+                         "weapon" : "武器",
+                         "Dress" : "服装",
+                         "dress" : "服装",
+                         "Ring" : "戒指",
+                         "ring" : "戒指",
+                         "Necklace" : "项链",
+                         "necklace" : "项链",
+
                          ## 状态名称 ##
                          "Away" : "离开",
                          "Farm" : "农场",
@@ -579,7 +589,7 @@ init -10 python:
                          "Farm" : "农场",
                          "Rest" : "休息",
 
-                         ## 商店物品种类 ##
+                         ## 商店物品类型 ##
                          "MC" : "主角",
                          "Mc" : "主角",
                          "Girl" : "女孩",
@@ -708,7 +718,7 @@ init -10 python:
                          "Exotic emporium" : "舶来品商场",
 
                          "Market" : "集市",
-                         "Stables" : "牲畜棚",
+                         "Stables" : "马厩",
                          "Plaza" : "广场",
                          "Gallows" : "绞刑架",
                          "Prison" : "监狱",
@@ -740,6 +750,16 @@ init -10 python:
                          "Pimp license" : "皮条客执照",
                          "Whoremonger license" : "妓女贩执照",
                          "Brothelmaster license" : "青楼主执照",
+
+                         ## 青楼房间名称 ##
+                         "Tavern" : "零点酒吧",
+                         "tavern" : "零点酒吧",
+                         "Strip club" : "激情夜店",
+                         "strip club" : "激情夜店",
+                         "Onsen" : "露天温泉",
+                         "onsen" : "露天温泉",
+                         "Okiya" : "花坊剧场",
+                         "okiya" : "花坊剧场",
                          }
 
     ## 特质名称 ##

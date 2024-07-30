@@ -124,7 +124,7 @@ translate schinese strings:
 
     # game/screens.rpy:643
     old "Skip"
-    new "快进"
+    new "跳过"
 
     # game/screens.rpy:644
     old "Seen Messages"
@@ -204,7 +204,7 @@ translate schinese strings:
 
     # game/screens.rpy:795
     old "F.Skip"
-    new "快进"
+    new "F.跳过"
 
     # game/screens.rpy:797
     old "Prefs"

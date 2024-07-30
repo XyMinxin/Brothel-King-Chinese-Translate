@@ -1331,7 +1331,7 @@ init -3 python:
         else:
             return event_color[neg_color] % (neg_marker + nb_txt)
 
-    def and_text(li, txt=" 和 ", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
+    def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator="、"): # prune_empty removes empty entries from the list
 
         if prune_empty:
             li = [x for x in li if x]
@@ -3415,7 +3415,7 @@ init -3 python:
 
     def can_use_minion_item():
 
-        if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
+        if MC.get_items(target="minion", name="愈合粉") and farm.get_hurt_minions():
             return True
         if MC.get_items(target="minion", effect_type="gain"):
             for it in MC.get_items(target="minion", effect_type="gain"):

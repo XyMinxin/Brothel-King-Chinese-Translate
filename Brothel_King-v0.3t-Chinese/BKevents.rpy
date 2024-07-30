@@ -668,11 +668,12 @@ label advance_to_chapter(chapter, silent=False, free=False):
                         $ free_room_text = __("\nYou will receive a free room of your choice.")
 
                     elif chosen_district.room != []:
-                        $ free_room_text =  __("\nYou will receive a {b}free ") + __(chosen_district.room[0]) + "{/b}."
+                        $ free_room_text =  __("\nYou will receive a {b}free ") + __(location_name_dict[chosen_district.room[0]]) + "{/b}."
 
                     else:
                         $ free_room_text = ""
 
+                    $ textcn = location_name_dict[chosen_district.name]
                     if renpy.call_screen("yes_no", __("Do you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.") + __(free_room_text)):
                         $ change_district(chosen_district, free)
                         $ renpy.block_rollback()
@@ -1634,13 +1635,13 @@ label collect_wood():
 
     $ resource = "wood"
 
-    if MC.get_items(name="Extractor Mk I") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk I in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk I")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1688,13 +1689,13 @@ label collect_leather():
 
     $ resource = "leather"
 
-    if MC.get_items(name="Extractor Mk I") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk I in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk I")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1742,13 +1743,13 @@ label collect_dye():
 
     $ resource = "dye"
 
-    if MC.get_items(name="Extractor Mk I") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk I in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk I")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1796,13 +1797,13 @@ label collect_marble():
 
     $ resource = "marble"
 
-    if MC.get_items(name="Extractor Mk II") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk II in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk II")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1850,13 +1851,13 @@ label collect_ore():
 
     $ resource = "ore"
 
-    if MC.get_items(name="Extractor Mk II") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk II in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk II")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1904,13 +1905,13 @@ label collect_silk():
 
     $ resource = "silk"
 
-    if MC.get_items(name="Extractor Mk II") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
             "Yes, set up a resource extractor Mk II in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="Extractor Mk II")[0])
+                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
                 $ resource_dict[resource].activate_extractor()
                 return
 
@@ -1966,7 +1967,7 @@ label break_extractor(resource):
     "Your [resource] extractor has broken down."
     $ resource_dict[resource].deactivate_extractor()
 
-    call receive_item(item_dict["Cimerian scrap"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
+    call receive_item(item_dict["席米亚科技废料"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
 
     return
 
@@ -2911,7 +2912,7 @@ label visit_willow():
 
 label visit_gina():
 
-    if MC.get_items(name="Cimerian"):
+    if MC.get_items(name="席米亚"):
         scene black
         show expression selected_location.get_pic(config.screen_width, int(config.screen_height*0.8)) at top
         with fade
@@ -2938,11 +2939,11 @@ label visit_gina():
                 python:
                     ev_list = []
 
-                    for it in MC.get_items(name="Cimerian"):
-                        if it.name == "Cimerian scrap":
+                    for it in MC.get_items(name="席米亚"):
+                        if it.name == "席米亚科技废料":
                             price = 350
                             rv = 1
-                        elif it.name == "Cimerian artefact":
+                        elif it.name == "席米亚科技产物":
                             price = 1500
                             rv = 5
 
@@ -2971,7 +2972,7 @@ label visit_gina():
                             $ NPC_gina.love += rv
                             $ MC.items.remove(it)
 
-                            if it.name == "Cimerian artefact":
+                            if it.name == "席米亚科技产物":
                                 gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
 
                         "拒绝":

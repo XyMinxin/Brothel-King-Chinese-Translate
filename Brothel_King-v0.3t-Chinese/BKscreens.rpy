@@ -500,7 +500,7 @@ screen girl_tab(girls, context="girls"):
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
+                    text_font "DejaVuSans.TTF"
                     action Jump("headhunter_main")
                     hovered tt.Action(textHH2)
 
@@ -509,7 +509,7 @@ screen girl_tab(girls, context="girls"):
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
+                    text_font "DejaVuSans.TTF"
                     hovered tt.Action(textHH2)
 
 ############ Jman - Headhunter Mod End ########
@@ -1455,7 +1455,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         background None
                         text_color c_white
                         text_size res_font(20)
-                        text_font "DejaVuSans.ttf"
+                        text_font "bk.ttf"
 
                         if context == "girls":
                             action (SetVariable("selected_girl", girl), Return("change_name"))
@@ -1646,12 +1646,12 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 if context != "capture":
                     text ""
-                    text ""
+                    # text ""
 
 
                 ## SKILLS LISTING
 
-                text "Main skills" size res_font(18) font "bk.ttf"
+                text "Main skills" size res_font(20) yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                 vbox:
                     spacing 0
@@ -1702,7 +1702,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 action Return(("debug change all stats", 0))
                             else:
                                 action NullAction()
-                            tooltip __("她还有{b}") + str_int(girl.energy) + __("{/b}点精力. 她的最大精力为{b}") + str_int(girl_max) + __("{/b} (增加体格可以提高精力上限).")
+                            tooltip __("她还有{b}") + str_int(girl.energy) + __("{/b}点精力。她的最大精力为{b}") + str_int(girl_max) + __("{/b} (增加体格可以提高精力上限)。")
                             keyboard_focus False
                             yfill False
                             ysize yres(30)
@@ -1767,7 +1767,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                     # text "" size res_font(6)
 
                 hbox spacing 14:
-                    text "Sex skills" size res_font(18) yalign 0.0 font "bk.ttf"
+                    text "Sex skills" size res_font(18) yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                     for act in ("group", "bisexual"):
 
@@ -2015,7 +2015,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 elif context == "farm":
                     text "" size res_font(3)
-                    text "Upkeep" size res_font(18)
+                    text "保养费用" size res_font(18) yalign 0.0 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
                     hbox:
                         spacing 2
@@ -2055,7 +2055,7 @@ screen assign_job(girl):
                 tooltip __("Tell ") + girl.fullname + __(" to get some rest.")
                 fixed fit_first True:
                     add "tb rest" alpha 0.6 hover_alpha 1.0 selected_hover_alpha 1.0 selected_idle_alpha 1.0 xalign 0.5 yalign 0.5
-                    text "Rest" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
+                    text "休息" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
                     text "1" size res_font(12) xalign 0.05 yalign 0.95 drop_shadow (1, 1)
 
             for j in all_jobs + ["whore"]:
@@ -2083,7 +2083,7 @@ screen assign_job(girl):
                     tooltip __("Send ") + girl.fullname + __(" to the farm.")
                     fixed fit_first True:
                         add "tb farm" idle_alpha 0.66 selected_hover_alpha 1.0 selected_idle_alpha 1.0 hover_alpha 1.0 xalign 0.5 yalign 0.5
-                        text "Farm" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
+                        text "农场" selected_color c_green hover_bold True xalign 0.5 yalign 0.5 drop_shadow (1, 1) size res_font(14)
                         text "7" size res_font(12) xalign 0.05 yalign 0.95 drop_shadow (1, 1)
             else:
                 null
@@ -2573,6 +2573,7 @@ screen rank_level_details(girl):
         text girl.fullname:
             xalign 0.5
             color c_orange
+            font "bk.ttf"
 
         grid 2 2:
 
@@ -2718,7 +2719,7 @@ screen schedule(glist):
                                     color c_white
 
                             if girl.job:
-                                $ text1 = setting_name_dict[girl.job.capitalize()]
+                                $ text1 = girl_related_dict[girl.job.capitalize()]
                                 $ col = job_color[girl.job]
                             else:
                                 $ text1 = "无工作"
@@ -2959,7 +2960,7 @@ screen perks(girl):
 
         has vbox spacing 10 xalign 0.5
 
-        text __("%s's perks") % girl.fullname color c_darkorange xalign 0.5
+        text __("%s's perks") % girl.fullname size res_font(24) color c_orange xalign 0.5 font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         hbox:
             for archetype in archetype_list:
@@ -2973,7 +2974,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(*res_tb(75)), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text translate_cn(archetype, archetype_name_dict) size res_font(12) selected_bold True color c_darkgrey selected_color c_black xalign 0.5
+                        text translate_cn(archetype, archetype_name_dict) size res_font(20) selected_bold True color c_ui_dark  selected_color c_black xalign 0.5 font "bk.ttf" selected_outlines [ (2, "#ffffff", 0, 0) ]  # color c_darkgrey
 
         frame background c_ui_dark xalign 0.5 yalign 0.5 ypadding 0 xpadding 0 xmargin 0:
             fixed fit_first True:
@@ -3038,7 +3039,7 @@ screen perks(girl):
                                     $ text1 = ""
                                     $ text2 = archetype_description[selected_archetype]
 
-                                text __(title) size res_font(18) bold True yalign 0.0 xalign 0.5 drop_shadow 2,2
+                                text __(title) size res_font(28) yalign 0.0 xalign 0.5 drop_shadow 2,2 font "bk.ttf" color c_white outlines [ (2, "#000", 2, 0) ] # bold True
 
                                 add pic.get(*res_tb(220)) xalign 0.5
 
@@ -3131,7 +3132,7 @@ screen perk_details(girl):
 
             has vbox spacing 3
 
-            text  __("%s's active perks") % girl.name xalign 0.5 color c_orange
+            text  __("%s's active perks") % girl.name xalign 0.5 color c_orange size res_font(28) font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
             text "" size res_font(6)
 
@@ -4207,7 +4208,7 @@ screen brothel():
                         text "{b}Bedrooms{/b}" size res_font(18) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
                         $ ttip = __("Upgrade all your bedrooms for ") + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + __(" gold. Upgraded bedrooms are more comfortable for girls and customers alike.")
-                        textbutton "▲" text_font "DejaVuSans.ttf" ysize yres(24):
+                        textbutton "▲" text_font "1.ttf" ysize yres(24):
                             xalign 0.5
                             yalign 0.5
                             text_size res_font(14)
@@ -4880,7 +4881,7 @@ screen home():
                         xalign 0.5
                         yalign 0.0825
                         text_size 36
-                        text_font "CHOWFUN_0.TTF"
+                        text_font "DejaVuSans.TTF"
                         action Jump("headhunter_delivers")
                         hovered tt.Action(textHH2)
 
@@ -4892,7 +4893,7 @@ screen home():
                     xalign 0.5
                     yalign 0.0825
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
+                    text_font "DejaVuSans.TTF"
                     hovered tt.Action(textHH2)
         else:
             $ game.headhunter_button_enabled = 1
@@ -6225,9 +6226,9 @@ screen personality_screen():
         if selected_girl:
 
             hbox xalign 0.0:
-                textbutton "个性. " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
-                textbutton "品味" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
-                textbutton "性趣 " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
+                textbutton "个性" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "personality") action NullAction(), SelectedIf(pers_showing=="personality")
+                textbutton "喜好" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "tastes") action NullAction(), SelectedIf(pers_showing=="tastes")
+                textbutton "性癖 " xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "sexual") action NullAction(), SelectedIf(pers_showing=="sexual")
                 textbutton "事件" xsize xres(85) text_size res_font(18) hovered SetVariable("pers_showing", "recent") action NullAction(), SelectedIf(pers_showing=="recent")
 
             hbox spacing xres(6) xpos 0.01:
@@ -6709,7 +6710,7 @@ screen mood_details(girl):
 
         spacing 6
 
-        text __("%s's mood") % girl.name color c_orange xalign 0.5
+        text __("%s's mood") % girl.name color c_orange xalign 0.5 font "bk.ttf"
 
         text "" size res_font(6)
 
@@ -6800,7 +6801,7 @@ screen sex_details(girl):
 
         spacing 6
 
-        text __("%s's sexual preferences") % girl.name xalign 0.5 color c_orange
+        text __("%s's sexual preferences") % girl.name xalign 0.5 color c_orange size res_font(28) font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         text "" size res_font(6)
 
@@ -7010,19 +7011,19 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         xsize 0.75
 
         hbox xfill True:
-            text header xalign 0.0 size res_font(32) font "DejaVuSans.ttf" color c_black
+            text header xalign 0.0 size res_font(32) font "bk.TTF" color c_black
             fixed fit_first True xalign 1.0 yalign 0.5:
                 use close(act=Return(True), name = "close")
 
         text ""
         text ""
 
-        text message size res_font(40) font "SFBurlingtonScript.TTF" color c_black
+        text message size res_font(20) font "bk.ttf" color c_black
 
         text ""
         text ""
 
-        text signature size res_font(44) font "SFBurlingtonScript.TTF" xalign 1.0 color c_black
+        text signature size res_font(24) font "bk.ttf" xalign 1.0 color c_black
 
 
 #### RESOURCES ####
@@ -7036,7 +7037,7 @@ screen resource_tab(rlist="MC", sz = yres(15), sp = 3, x=0.0, y=0.0, bg=None): #
             for resource in [resource_dict[r] for r in build_resources]:
 
                 if resource.rank <= district.rank:
-                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(resource.name) + __(" in store.")) xpadding sp ypadding sp:
+                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(resource_name_dict[resource.name]) + __(" in store.")) xpadding sp ypadding sp:
                         has hbox spacing sp*2 yalign 0.5
                         add resource.pic.get(sz, sz) yalign 0.5
                         if MC.resources[resource.name] < 100:
@@ -7111,18 +7112,18 @@ screen resource_exchange():
                 for r in calendar.scarce:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip __("There is a shortage of ") + r.capitalize() + __(" this week. Value is going up."):
+                        button background None action NullAction() tooltip __("There is a shortage of ") + resource_name_dict[r.capitalize()] + __(" this week. Value is going up."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "DejaVuSans.ttf"
+                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "1.ttf"
 
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip r.capitalize() + __(" is plentiful this week. Value is going down."):
+                        button background None action NullAction() tooltip resource_name_dict[r.capitalize()] + __(" is plentiful this week. Value is going down."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▼" size res_font(16) color c_red yalign 0.5 font "DejaVuSans.ttf"
+                            text "▼" size res_font(16) color c_red yalign 0.5 font "1.ttf"
 
 
 
@@ -7135,7 +7136,7 @@ screen resource_exchange():
 
             text "Your resources" size res_font(14) italic True color c_brown
 
-            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "Use your gold to buy resources":
+            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "用你的 金币 购买资源":
                 selected_background c_emerald
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", *res_tb(40)) yalign 0.5
@@ -7149,17 +7150,17 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("Trade your " + r + " for other resources"):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用你的 " + resource_name_dict[r] + " 换取其他资源"):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text resource.name.capitalize() size res_font(18)
+                                text resource_name_dict[resource.name.capitalize()] size res_font(18)
                                 if r in calendar.discounted:
-                                    text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                    text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
-                                    text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                    text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                             hbox spacing 6 xfill True:
                                 text "In storage: " size res_font(14) yalign 1.0
                                 text str(MC.resources[resource.name]) xalign 1.0 size res_font(16)
@@ -7176,7 +7177,7 @@ screen resource_exchange():
                 button xfill True ysize yres(60):
                     if "gold" != source:
                         action (SetScreenVariable("target", "gold"), SetScreenVariable("target_name", "gold"), SetScreenVariable("target_nb", 0), SelectedIf("gold"==target))
-                        tooltip "Sell your " + source_name + " for gold"
+                        tooltip "出售你的 " + source_name + " 换取金币"
                         selected_background c_emerald
 
                     hbox xfill True yfill True spacing 10:
@@ -7187,9 +7188,9 @@ screen resource_exchange():
                                 hbox spacing 6:
                                     $ rate = get_exchange_rate(source, "gold")
                                     if rate < 1:
-                                        $ text2 = "Get 1 for " + str_dec(1/rate, 1)
+                                        $ text2 = "获得 1 ，消耗 " + str_dec(1/rate, 1)
                                     else:
-                                        $ text2 = "Get " + str_dec(rate, 1) + " for 1"
+                                        $ text2 = "获得 " + str_dec(rate, 1) + " ，消耗 1"
 
                                     text text2 size res_font(14)
                                     add source.pic.get(*res_tb(16))
@@ -7202,7 +7203,7 @@ screen resource_exchange():
                         button xfill True ysize yres(60):
                             if resource != source:
                                 action (SetScreenVariable("target", resource), SetScreenVariable("target_name", resource.name), SetScreenVariable("target_nb", 0), SelectedIf(resource==target))
-                                tooltip "Trade " + r +" in exchange for your " + source_name
+                                tooltip "交易 " + r +" ，作为交换消耗你的 " + source_name
                                 selected_background c_emerald
                             hbox xfill True yfill True spacing 10:
                                 add resource.pic.get(*res_tb(40)) yalign 0.5
@@ -7210,16 +7211,16 @@ screen resource_exchange():
                                     hbox spacing 3:
                                         text resource.name.capitalize() size res_font(18)
                                         if r in calendar.discounted:
-                                            text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                            text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                         elif r in calendar.scarce:
-                                            text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                            text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                                     if resource != source:
                                         hbox spacing 6:
                                             $ rate = get_exchange_rate(source, resource)
                                             if rate < 1:
-                                                $ text2 = "Get 1 for " + str(round_up(1/rate))
+                                                $ text2 = "获得 1 ，消耗 " + str(round_up(1/rate))
                                             else:
-                                                $ text2 = "Get " + str(round_up(rate)) + " for 1"
+                                                $ text2 = "获得 " + str(round_up(rate)) + " ，消耗 1"
 
                                             text text2 size res_font(14)
                                             if source == "gold":
@@ -7264,7 +7265,7 @@ screen resource_exchange():
                         color c_red
 
 
-                text "➜" size 54 xalign 0.5 yalign 0.5 font "DejaVuSans.ttf"
+                text "➜" size 54 xalign 0.5 yalign 0.5 font "1.ttf"
 
                 text "[target_nb]" size res_font(32) color c_white xalign 1.0 yalign 0.5
 
@@ -7282,17 +7283,17 @@ screen resource_exchange():
                         action (SetScreenVariable("source_nb", source_nb-1), SetScreenVariable("target_nb", round_up((source_nb-1)*rate)))
 
                 if source == "gold":
-                    $ text1 = "Buy"
+                    $ text1 = "购买"
                 else:
-                    $ text1 = "Trade"
+                    $ text1 = "交易"
 
                 textbutton text1 xalign 0.5 xsize 0.8 ysize yres(65):
                     if source == "gold" and MC.gold >= source_nb:
                         action Return(("gold", target_name, source_nb, target_nb))
-                        tooltip "Buy " + str(target_nb) + " " + target_name + " for " + str(source_nb) + " " + target_name
+                        tooltip "购买 " + str(target_nb) + " " + target_name + " ，消耗 " + str(source_nb) + " " + target_name
                     elif MC.resources[source_name] >= source_nb:
                         action Return((source_name, target_name, source_nb, target_nb))
-                        tooltip "Trade " + str(source_nb) + " " + source_name + " for " + str(target_nb) + " " + target_name
+                        tooltip "交易 " + str(source_nb) + " " + source_name + " ，消耗 " + str(target_nb) + " " + target_name
 
                 textbutton "+" xsize xres(65) ysize yres(65) text_size res_font(32) xalign 1.0:
                     if rate < 1:
@@ -7446,7 +7447,7 @@ screen free_girl_interact(girl):
 
         has vbox spacing 3
 
-        text "City girl interactions" size res_font(18) bold True
+        text "City girl interactions" size res_font(28) font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 
         text "" size res_font(14)
 
@@ -7537,7 +7538,7 @@ screen girl_interact(girl, free=False):
 
         has vbox spacing 3
 
-        text "Girl interactions" size res_font(18) bold True
+        text "Girl interactions" size res_font(28) font "bk.ttf" outlines [ (1, "#000", 1, 0) ]
 #        text "Every interaction costs 1 AP" size res_font(14) italic True
         text "" size res_font(14)
 
@@ -8034,7 +8035,7 @@ screen girl_mix(show_rating=False):
             hbox box_wrap True:
                 for mix_name in sorted(persistent.girl_mix):
                     textbutton mix_name.capitalize()[:25] action (SetField(persistent, "active_mix", mix_name), SelectedIf(persistent.active_mix==mix_name)) text_size res_font(18) text_selected_bold True tooltip "Click here to see the %s girl mix." % mix_name.capitalize()
-                textbutton "+" action renpy.curried_invoke_in_new_context(add_mix) text_size res_font(18) tooltip "Click here to create a new girl mix."
+                textbutton "+" action renpy.curried_invoke_in_new_context(add_mix) text_size res_font(18) tooltip "点击此处创建新的女孩组合。"
 
             text "" size res_font(12)
             text "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'" size res_font(14) color c_brown xpos xres(6)
@@ -8059,7 +8060,7 @@ screen girl_mix(show_rating=False):
 
                 for gp in shown_gp:
                     $ pack_name = get_name(gp, full=True)
-                    $ ttip = "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n" % (pack_name, gpinfo_dict[gp]["creator"], gpinfo_dict[gp]["version"], gpinfo_dict[gp]["description"])
+                    $ ttip = "{b}%s{/b} {i}by %s{/i}\n\n版本: %s\n\n说明: %s\n\n" % (pack_name, gpinfo_dict[gp]["creator"], gpinfo_dict[gp]["version"], gpinfo_dict[gp]["description"])
 
                     if filter.lower() in pack_name.lower():
                         if show_rating:
@@ -8070,11 +8071,11 @@ screen girl_mix(show_rating=False):
                             button xfill True ysize yres(82) ymargin 0 ypadding 0:
                                 if gp in persistent.girl_mix[persistent.active_mix]:
                                     action RemoveFromSet(persistent.girl_mix[persistent.active_mix], gp)
-                                    tooltip ttip + "\n\n{i}Click to remove this girl pack from the mix.{/i}"
+                                    tooltip ttip + "\n\n{i}单击可以将此女孩包从组合中删除。{/i}"
                                 else:
                                     idle_background None
                                     action AddToSet(persistent.girl_mix[persistent.active_mix], gp)
-                                    tooltip ttip + "{i}Click to add this girl pack to the mix.{/i}"
+                                    tooltip ttip + "{i}单击可以将此女孩包添加到组合中。{/i}"
 
                                 hbox spacing 12 yalign 0.5:
                                     frame xalign 0.0 yalign 0.5 xsize xres(80) background None:
@@ -8125,8 +8126,8 @@ screen achievement_notification(achievement_list, replay=False):
                         text "Not found" italic True color c_red
 
                 vbox yalign 0.5:
-                    text achv.get_title(force_level=level) xalign 0.0 size res_font(20) bold True color c_prune # font "vivaldii.TTF"
-                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                    text achv.get_title(force_level=level) xalign 0.0 size res_font(32) color c_prune font "bk.TTF" #bold True
+                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "DejaVuSans.TTF" color c_brown
     timer 6.5 action Hide("achievement_notification")
 
 screen achievements(main=False):
@@ -8150,13 +8151,13 @@ screen achievements(main=False):
                             add selected_achievement.pic.get(*res_tb(125))
 
                         vbox xsize xres(500) yalign 0.5:
-                            text selected_achievement.get_title() xalign 0.0 size res_font(20) bold True color c_prune
-                            text selected_achievement.get_description() xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                            text selected_achievement.get_title() xalign 0.0 size res_font(32) font "bk.TTF" color c_prune #bold True
+                            text selected_achievement.get_description() xalign 0.0 size res_font(20) font "DejaVuSans.TTF" color c_brown
 
                         if selected_achievement.level < selected_achievement.level_nb:
                             vbox yalign 0.5:
                                 text "Next unlock:" italic True size res_font(20)
-                                text selected_achievement.get_description(_next=True) xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                                text selected_achievement.get_description(_next=True) xalign 0.0 size res_font(20) font "DejaVuSans.TTF" color c_brown
 
             hbox xalign 1.0 yalign 0.0:
 
@@ -8187,7 +8188,7 @@ screen achievements(main=False):
                     if achv.level > 0:
                         textbutton achv.get_title(_button=True) xsize xres(150) ysize yres(50) text_size res_font(12) action NullAction() hovered [SetVariable("selected_achievement", achv), SelectedIf(selected_achievement==achv)]
                     else:
-                        textbutton "???" xsize xres(150) ysize yres(50)
+                        textbutton "？？？" xsize xres(150) ysize yres(50)
 
 
 
@@ -8212,7 +8213,7 @@ screen contracts(contracts, free=False):
                 vbox:
                     # if not free:
                     frame xalign 0.5 xfill False yfill False:
-                        text "Fee: %s gold." % str(con.base_value) size res_font(14) color c_brown bold True
+                        text "费用：%s 金币。" % str(con.base_value) size res_font(14) color c_brown bold True
                     button action Return(con) xpadding 6 ypadding 6:
                         use contract_tab(con)
 
@@ -8237,7 +8238,7 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "The " + contract.location.name drop_shadow (1, 1) font "DejaVuSans.ttf" color c_brown
+                text "" + location_name_dict[contract.location.name] drop_shadow (1, 1) font "DejaVuSans.ttf" color c_brown
                 text contract.title drop_shadow (1, 1) font "DejaVuSans.ttf" color c_prune
 
             vbox spacing 3:

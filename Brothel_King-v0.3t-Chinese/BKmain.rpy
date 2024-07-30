@@ -285,9 +285,9 @@ label visit_location():
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("Cimerian artefact")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
+                            call receive_item(search_items("席米亚科技产物")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("Cimerian scrap")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("席米亚科技废料")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
 
                     else:
                         $ MC.gain_resource(number=dice(3), random=True)
@@ -469,7 +469,7 @@ label farm_loop():
         python:
             menu_list = [(str(len(hurt)) + " minion" + plural(len(hurt)) + " are hurt. What do you want to do?", None)]
 
-            if MC.get_items(target="minion", name="Healing powder"):
+            if MC.get_items(target="minion", name="愈合粉"):
                 for mn in hurt:
                     menu_list.append(("使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn)))
 
@@ -483,7 +483,7 @@ label farm_loop():
         if res == "heal":
             gizel normal "Fine, let's use this to get the poor bastard back on its feet. Or tentacles. Whatever."
 
-            $ MC.use_item(MC.get_items(target="minion", name="Healing powder")[0])
+            $ MC.use_item(MC.get_items(target="minion", name="愈合粉")[0])
             $ mn.heal()
 
             play sound s_spell
@@ -606,9 +606,9 @@ label farm_loop():
 
                     # Healing powder
 
-                    if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
+                    if MC.get_items(target="minion", name="愈合粉") and farm.get_hurt_minions():
                         for mn in farm.get_hurt_minions():
-                            menu_list.append(["使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn, MC.get_items(target="minion", name="Healing powder")[0])])
+                            menu_list.append(["使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn, MC.get_items(target="minion", name="愈合粉")[0])])
 
                     # XP items
 

@@ -496,7 +496,7 @@ translate schinese strings:
 
     # renpy/common/00library.rpy:248
     old "Skip Mode"
-    new "快进"
+    new "跳过模式"
 
     # renpy/common/00library.rpy:353
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."

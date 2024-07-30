@@ -4515,7 +4515,7 @@ init -2 python:
 
             if counterpart and counterpart.type == "NPC":
                 if self.sellable:
-                    possible_acts.append("use")
+                    possible_acts.append("sell")
 
             if owner.type in ("MC", "girl"):
                 if self.can_use(owner.type):
@@ -4566,7 +4566,7 @@ init -2 python:
         def transform(self, target_rank): # Transforms an item in a better or worse version of itself
 
             if self.template == True:
-                self.name = __("{0} {1}").format(__(quality_prefix[self.adjectives + "_" + str(target_rank)]), __(self.base_name.lower()))
+                self.name = __("{0}{1}").format(__(quality_prefix[self.adjectives + "_" + str(target_rank)]), __(self.base_name.lower()))
 
                 self.price = round_int(quality_modifier[target_rank] * self.base_price)
 
@@ -4593,7 +4593,7 @@ init -2 python:
 
                 new_it = copy.deepcopy(self)
 
-                new_it.name = __("{0} {1}").format(__(quality_prefix[self.adjectives + "_" + str(target_rank)]), __(self.base_name.lower()))
+                new_it.name = __("{0}{1}").format(__(quality_prefix[self.adjectives + "_" + str(target_rank)]), __(self.base_name.lower()))
                 new_it.price = round_int(quality_modifier[target_rank] * self.base_price)
 
                 if self.rarity in ("S", "U", "M"):
@@ -7484,8 +7484,8 @@ init -2 python:
             desc = desc.replace(":org:", self.organizer)
             desc = desc.replace(":DIS:", self.district)
             desc = desc.replace(":dis:", self.district.lower())
-            desc = desc.replace(":LOC:", self.location.name)
-            desc = desc.replace(":loc:", self.location.name.lower())
+            desc = desc.replace(":LOC:", location_name_dict[self.location.name])
+            desc = desc.replace(":loc:", location_name_dict[self.location.name])
             desc = desc.replace(":VEN:", capitalize(self.venue))
             desc = desc.replace(":ven:", self.venue.lower())
             desc = desc.replace(":AVEN:", capitalize(self.a_venue))
@@ -7496,19 +7496,19 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}特质{/b}: " + and_text([t.name for t in target], " 或 ")
+                return "{b}特质{/b}: " + and_text([trait_name_dict[t.name] for t in target], " 或 ")
 
             elif spe == "perk":
                 return "{b}奖励{/b}: " + target.name
 
             elif spe == "fix":
-                return "{b}正面癖好{/b}: " + and_text([f.name.capitalize() for f in target], " 或 ")
+                return "{b}正面癖好{/b}: " + and_text([girl_related_dict[f.name.capitalize()] for f in target], " 或 ")
 
             elif spe == "farm":
-                return "{b}弱点{/b}: " + target.capitalize()
+                return "{b}弱点{/b}: " + girl_related_dict[target.capitalize()]
 
             elif spe == "item":
-                return "{b}必须穿着{/b}: " + target.name
+                return "{b}必须穿着{/b}: " + setting_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外付费)"
@@ -7699,11 +7699,11 @@ init -2 python:
 
             for req in self.requirements:
                 if req.startswith("job"):
-                    r.append("{b}"+ __(req[4:].capitalize()) + "{/b} %s or better" % ("{image=img_star}" * self.limits[req]))
+                    r.append("{b}"+ __(girl_related_dict[req[4:].capitalize()]) + "{/b} %s 或者更好的" % ("{image=img_star}" * self.limits[req]))
                 elif req.startswith("skill"):
-                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b} or better")
+                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b} 或者更好的")
                 elif req.startswith("pref"):
-                    r.append("{b}" + __(req[5:].capitalize()) + " preference: " + self.limits[req].capitalize() + "{/b} or better")
+                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + " 性癖: " + girl_related_dict[self.limits[req].capitalize()] + "{/b} 或者更好的")
 
             return r
 

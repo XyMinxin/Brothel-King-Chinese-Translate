@@ -257,6 +257,8 @@ label free_chat_likes(girl):
 
     you "What are your favorite things?"
 
+    $ thing_cn = translate_cn(thing, girl_related_dict)
+
     call dialogue(girl, "free_chat_likes") from _call_dialogue_30 #! , custom_arg=h)
 
     $ girl.personality_unlock["fav_" + thing] = True
@@ -268,6 +270,8 @@ label free_chat_dislikes(girl):
     $ thing, worst = girl.talk_tastes("dislikes")
 
     you "Is there anything you dislike?"
+
+    $ thing_cn = translate_cn(thing, girl_related_dict)
 
     call dialogue(girl, "free_chat_dislikes") from _call_dialogue_31 #, custom_arg=(thing, worst))
 
