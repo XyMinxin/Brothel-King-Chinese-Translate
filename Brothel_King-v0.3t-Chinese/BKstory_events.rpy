@@ -10589,8 +10589,8 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nI have to see you urgently. In fact, you should have been here yesterday.\nWhere WERE you yesterday???\nDon't be a bad friend. Bad friends die young.\nCome visit me.",
-                          signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}[emo_heart]")
+        call screen letter(header = "紧急事态", message = "亲爱的 " + MC.name + ",\n\n我需要马上见到你。事实上，你昨天就该来我这了。\n你昨天跑去哪鬼混了???\n不要背信弃义，叛徒往往都没有好下场。\n立刻来公会见我。",
+                          signature = "你的秘密情人 Satella {font=[style.default.font]}{size=-18}[emo_heart]")
 
         you "I've got a bad feeling about this."
 

@@ -3760,31 +3760,31 @@ translate schinese city_secret_d4e1d540:
 translate schinese city_secret_b4151c49:
 
     # "You see a girl there, bound and gagged. She sees you, but doesn't seem to react to your presence."
-    "循声摸过去，有一群人围着一个女孩，他们在肆意凌辱她，女孩放弃了抵抗，开始享受这一切。"
+    "循声摸过去，你看到一个被绑起来，被口球堵住了嘴的女孩。她也看到了你，但似乎对你的存在没有任何反应。。"
 
 # game/BKcity_events.rpy:3020
 translate schinese city_secret_0e568b0c:
 
     # "The air is thick with the smell of moisture and semen."
-    "“夹得好紧，好爽！”，“别把嘴空出来了，还有你的手，也给我用上！”。“这小手和头发真丝滑啊~”。"
+    "空气中弥漫着精液的味道。"
 
 # game/BKcity_events.rpy:3022
 translate schinese city_secret_d5dec428:
 
     # you "Do you need help?"
-    you "我得藏好了，不能被他们发现...不过我也想加入他们，有了！"
+    you "你需要帮助吗？"
 
 # game/BKcity_events.rpy:3026
 translate schinese city_secret_b751bc5d:
 
     # "She ignores you, instead concentrating on something that's happening to her."
-    "你给自己施放了一个咒语，这样那群沉迷肉欲的人就分不出你是谁了，他们只会以为你是他们中的一员。"
+    "她无视了你，把注意力集中在感受身体上的变化。"
 
 # game/BKcity_events.rpy:3030
 translate schinese city_secret_ecf3532f:
 
     # "You can hear the vibration of a sex toy, plugged deep inside the girl."
-    "你和他们一起，把每个洞都塞满了，女孩被插的花枝乱颤，眼神迷离。她的鼻孔里都呛出了些许精液。"
+    "你听到了自慰棒的振动声，它就插在女孩小穴深处。"
 
 # game/BKcity_events.rpy:3034
 translate schinese city_secret_14e020c1:
@@ -3796,25 +3796,25 @@ translate schinese city_secret_14e020c1:
 translate schinese city_secret_1a1e27d3:
 
     # "She reaches a quiet orgasm as you watch, apparently the latest in a long series."
-    "她又被顶到了高潮，其他人把精液射在她的身体各处，这肯定不是她第一次参加这种活动了。"
+    "在你欣赏的时候，她又一次迎来了高潮，不过因为口球她发不出明显的声音。显然她已经高潮过很多次了。"
 
 # game/BKcity_events.rpy:3040
 translate schinese city_secret_b78e1961:
 
     # "You notice something, shoved into one of the girl's slutty holes."
-    "完事之后，大家原地解散。你提议让你留下来清理，他们高兴地拍拍你的肩膀就离开了。"
+    "你注意到那个女孩的小穴里塞着什么东西。"
 
 # game/BKcity_events.rpy:3042
 translate schinese city_secret_7c244c01:
 
     # you "Do you mind?"
-    you "这里面还塞着东西呢，闻起来还有一股奇怪的香味？"
+    you "介意我拔出来吗？"
 
 # game/BKcity_events.rpy:3048
 translate schinese city_secret_ecda54b4:
 
     # "You retrieve the item. It could be useful, after Sill gives it a good washing."
-    "你拔出一个沾满淫水的道具。让希露洗一洗应该可以给姑娘们拿去爽爽。"
+    "你拔出一个沾满淫水的道具。让希露洗一洗应该可以给姑娘们用。"
 
 # game/BKcity_events.rpy:3058
 translate schinese city_secret_6a0019cd_1:

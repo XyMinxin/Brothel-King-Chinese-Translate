@@ -990,7 +990,7 @@ label random_night_girl_event(girl, room):
                 pass
 
             "无视她":
-                you "Well, she's here now. I've got more important things to attend to."
+                you "好吧，至少她现在来了。我还有更重要的事要做。"
 
                 call hide_everything() from _call_hide_everything_10
                 scene black with dissolve
@@ -1000,18 +1000,18 @@ label random_night_girl_event(girl, room):
 
         $ MC.rand_say(("gd: 发生什么事了[girl.name]？你还好吗？", "ne: 啊，[girl.name]。你是时候回来了。", "ev: 嘿，[girl.name]，你这个愚蠢的婊子！你他妈以为你在干什么?"))
 
-        $ excuse = rand_choice(("我去拜访了一个朋友", "我去购买了一些用品", "我去散步结果迷路了", "我在给希露拿东西", "我感觉有点不舒服，想出去呼吸一下新鲜空气", "我休息的时候忘了时间"))
+        $ excuse = rand_choice(("我去拜访了一个朋友", "我去购买了一些日用品", "我去散步结果迷路了", "我在帮希露拿东西", "我感觉有点不舒服，想出去呼吸一下新鲜空气", "我休息的时候忘了时间"))
 
-        girl.char "M-Master, you... I'm sorry I'm late, [excuse], and..."
+        girl.char "主..主人, 你... 我很抱歉我迟到了, [excuse], 但是..."
 
         if (girl.is_("very lewd") and girl.get_stat("libido") >= 75) or (girl.is_("lewd") and girl.get_stat("libido") >= 150):
             show screen show_event(girl.get_pic("libido", and_tags=["profile"], soft=True, naked_filter=True), x=config.screen_width, y=int(config.screen_height*0.8))
             with dissolve
 
-            "You notice her clothes are in disarray, and her skin is glistening with sweat. She's got the smell of sex all over her. Clearly, she's been fooling around..."
+            "你注意到她的衣服凌乱不堪，她的皮肤因汗水而闪闪发光。她浑身都是性爱的味道。很明显，她一直在鬼混..."
 
         else:
-            "She seems to be telling the truth."
+            "她看起来不像在撒谎。"
 
         menu:
             "What do you do?"
@@ -1028,9 +1028,9 @@ label random_night_girl_event(girl, room):
             "呵斥她":
                 $ MC.rand_say(("gd: 过来，[girl.name]，你看大家都在忙着准备晚上的工作。你也应该做好你的本分工作。", "ne: 听着，我不在乎你在做什么，但你必须按时准备好工作。从现在开始，你要按时回来。", "ev: 借口，总是借口！我看起来像是在乎的人吗？现在马上给我滚去工作，否则后果自负!"))
                 if girl.is_("dom"):
-                    girl.char "B-But, Master... Really, it's not my fault! Aw..."
+                    girl.char "但..但是, 主人... 这真的不怪我! 啊..."
                 else:
-                    girl.char "S-sorry, Master... I will..."
+                    girl.char "对..对不起，主人... 我下次再也不敢了..."
 
                 call hide_everything() from _call_hide_everything_12
                 scene black with dissolve
@@ -1041,16 +1041,16 @@ label random_night_girl_event(girl, room):
             "惩罚她":
                 $ MC.rand_say(("gd: 虽然我不喜欢这样做，但你必须受到惩罚。我们有规则，你必须遵守。", "ne: 好了，你知道该怎么做了吧。你违反了规则，现在准备接受惩罚吧。", "ev: 真是个自命不凡的小婊子。还敢跟我顶嘴？让我们讨论一下对你的惩罚."))
                 if girl.is_("very dom"):
-                    girl.char "Get away from me! You have no right..."
+                    girl.char "离我远点!你无权这么做..."
                     $ girl.change_love(-3)
                 elif girl.is_("dom"):
-                    girl.char "No! I haven't done anything wrong!!!"
+                    girl.char "不! 我一点错也没有!!!"
                     $ girl.change_love(-1)
                 elif girl.is_("very sub"):
-                    girl.char "W-what... Oh... I see..."
+                    girl.char "什..什么，好吧，我知道了..."
                     $ girl.change_fear(2)
                 elif girl.is_("sub"):
-                    girl.char "Oh, Master... Please, d-don't..."
+                    girl.char "哦，主人... 求你了, 不要..."
                     $ girl.change_fear(1)
 
                 menu:
@@ -1097,26 +1097,26 @@ label random_night_girl_event(girl, room):
                         elif fix == "titjobs":
                             $ text1 = "饱满的胸部"
 
-                        you "Stand right here. On your knees. You will use your [text1] to service the customers. Give them a proper greeting!"
+                        you "站好别动。给我跪下，给我用你的[text1]去服务客人。给他们最诚挚的问候!"
 
                         if girl.get_stat("obedience") < 100:
-                            girl.char "Whaaat??? No way! It's not..."
+                            girl.char "什什什么??? 没门! 这不可能..."
 
                             call fight_attempt(girl, "service", 1) from _call_fight_attempt_2
 
                             if _return:
                                 call hide_everything() from _call_hide_everything_13
                                 scene black with dissolve
-                                "[girl.fullname] ran away."
+                                "[girl.fullname]跑开了。"
                                 return
 
                             "Forcefully grabbing her, you push her onto her knees."
                             you "You will do as you're told! And don't let me hear that you disrespected a single customer."
 
-                            girl.char "Aw..."
+                            girl.char "哦..."
 
                         else:
-                            girl.char "I understand..."
+                            girl.char "我明白了..."
 
                         with fade
 
