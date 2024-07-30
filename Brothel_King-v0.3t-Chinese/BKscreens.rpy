@@ -4208,7 +4208,7 @@ screen brothel():
                         text "{b}Bedrooms{/b}" size res_font(18) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
                         $ ttip = __("Upgrade all your bedrooms for ") + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + __(" gold. Upgraded bedrooms are more comfortable for girls and customers alike.")
-                        textbutton "▲" text_font "DejaVuSans.ttf" ysize yres(24):
+                        textbutton "▲" text_font "1.ttf" ysize yres(24):
                             xalign 0.5
                             yalign 0.5
                             text_size res_font(14)
@@ -7011,7 +7011,7 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         xsize 0.75
 
         hbox xfill True:
-            text header xalign 0.0 size res_font(32) font "1.TTF" color c_black
+            text header xalign 0.0 size res_font(32) font "bk.TTF" color c_black
             fixed fit_first True xalign 1.0 yalign 0.5:
                 use close(act=Return(True), name = "close")
 
@@ -7115,7 +7115,7 @@ screen resource_exchange():
                         button background None action NullAction() tooltip __("There is a shortage of ") + resource_name_dict[r.capitalize()] + __(" this week. Value is going up."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "DejaVuSans.ttf"
+                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "1.ttf"
 
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
@@ -7123,7 +7123,7 @@ screen resource_exchange():
                         button background None action NullAction() tooltip resource_name_dict[r.capitalize()] + __(" is plentiful this week. Value is going down."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▼" size res_font(16) color c_red yalign 0.5 font "DejaVuSans.ttf"
+                            text "▼" size res_font(16) color c_red yalign 0.5 font "1.ttf"
 
 
 
@@ -7158,9 +7158,9 @@ screen resource_exchange():
                             hbox spacing 3:
                                 text resource_name_dict[resource.name.capitalize()] size res_font(18)
                                 if r in calendar.discounted:
-                                    text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                    text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
-                                    text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                    text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                             hbox spacing 6 xfill True:
                                 text "In storage: " size res_font(14) yalign 1.0
                                 text str(MC.resources[resource.name]) xalign 1.0 size res_font(16)
@@ -7211,9 +7211,9 @@ screen resource_exchange():
                                     hbox spacing 3:
                                         text resource.name.capitalize() size res_font(18)
                                         if r in calendar.discounted:
-                                            text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                            text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                         elif r in calendar.scarce:
-                                            text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.ttf"
+                                            text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                                     if resource != source:
                                         hbox spacing 6:
                                             $ rate = get_exchange_rate(source, resource)
@@ -8213,7 +8213,7 @@ screen contracts(contracts, free=False):
                 vbox:
                     # if not free:
                     frame xalign 0.5 xfill False yfill False:
-                        text "Fee: %s gold." % str(con.base_value) size res_font(14) color c_brown bold True
+                        text "费用：%s 金币。" % str(con.base_value) size res_font(14) color c_brown bold True
                     button action Return(con) xpadding 6 ypadding 6:
                         use contract_tab(con)
 
@@ -8238,7 +8238,7 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "The " + contract.location.name drop_shadow (1, 1) font "DejaVuSans.ttf" color c_brown
+                text "" + location_name_dict[contract.location.name] drop_shadow (1, 1) font "DejaVuSans.ttf" color c_brown
                 text contract.title drop_shadow (1, 1) font "DejaVuSans.ttf" color c_prune
 
             vbox spacing 3:
