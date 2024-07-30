@@ -1909,17 +1909,17 @@ label visit_merchant_loop():
                 if it:
                     $ chapter, cost, upgrade = shop_upgrades[right_focus.upgrade_level + 1]
 
-                    if renpy.call_screen("yes_no", "Are you sure you want to upgrade this shop for %s %s?" % (str(cost[1]), cost[0])):
+                    if renpy.call_screen("yes_no", "你确定要消耗 %s %s 升级商店的货架吗？" % (str(cost[1]), cost[0])):
                         $ right_focus.upgrade_shop(cost, upgrade)
 
                         $ right_focus.char(shopgirl_comment[cost[0]])
 
-                        $ right_focus.char("Very good. I will have more items for you after the next inventory restock.")
+                        $ right_focus.char("很好。下次进货后我就会有更多的货供你挑选了。")
 
                         if right_focus.can_upgrade():
-                            $ right_focus.char("If you bring me more materials, I may be able to expand my inventory again. Keep it up!")
+                            $ right_focus.char("如果你能给我带来更多的材料，也许我能再次扩大我的货架。继续加油！")
                 else:
-                    $ right_focus.char("You do not have the necessary resources with you.{w=0.8}{nw}")
+                    $ right_focus.char("看来你的材料不够。{w=0.8}{nw}")
 
             elif act == "back":
                 # Stella reward events
