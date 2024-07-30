@@ -132,3 +132,111 @@ translate schinese strings:
     old ", breaking even. You made {image=img_gold_24} {b}0{/b}."
     new ", breaking even. You made {image=img_gold_24} {b}0{/b}."
 
+# TODO: Translation updated at 2024-07-31 01:49
+
+translate schinese strings:
+
+    # game/BKendday.rpy:565
+    old "你的青楼名声保持不变 ("
+    new ""
+
+    # game/BKendday.rpy:593
+    old "{color=[c_pink]}'先生们!欢迎光临，要不要试试我们店里的特色~ *咯咯*'{/color}\n"
+    new ""
+
+    # game/BKendday.rpy:619
+    old " 今天的工作是 "
+    new ""
+
+    # game/BKendday.rpy:631
+    old " 拒绝工作!{/color} "
+    new ""
+
+    # game/BKendday.rpy:632
+    old " 拒绝工作!{/color}"
+    new ""
+
+    # game/BKendday.rpy:657
+    old "青楼今晚暂停营业。"
+    new ""
+
+    # game/BKendday.rpy:658
+    old " 今晚暂停营业，因为没有人上班。\n"
+    new ""
+
+    # game/BKendday.rpy:820
+    old " %s 位顾客全都被服务的很好。"
+    new ""
+
+    # game/BKendday.rpy:823
+    old "%s 位顾客被晾在一旁，十分不爽。"
+    new ""
+
+    # game/BKendday.rpy:922
+    old "有 %s 名顾客失望地离开了。"
+    new ""
+
+    # game/BKendday.rpy:925
+    old "%s 名顾客没人伺候，失望地离开了。"
+    new ""
+
+    # game/BKendday.rpy:1028
+    old "\n她拒绝使用 "
+    new ""
+
+    # game/BKendday.rpy:1273
+    old "你支付了 "
+    new ""
+
+    # game/BKendday.rpy:1273
+    old " 金币作为女孩的薪水。"
+    new ""
+
+    # game/BKendday.rpy:1276
+    old " (免费保养: "
+    new ""
+
+    # game/BKendday.rpy:1280
+    old ".\nY你支付了 "
+    new ""
+
+    # game/BKendday.rpy:1280
+    old " 金币作为员工工资。"
+    new ""
+
+    # game/BKendday.rpy:1284
+    old " 暂停营业，所以你让保安和宣传人员回去了。你支付了 "
+    new ""
+
+    # game/BKendday.rpy:1284
+    old "金币作为青楼的开销。"
+    new ""
+
+    # game/BKendday.rpy:1299
+    old "\n你的女孩赚到了 {image=img_gold_24} "
+    new ""
+
+    # game/BKendday.rpy:1302
+    old "盈利: {image=img_gold_24} "
+    new ""
+
+    # game/BKendday.rpy:1304
+    old "亏损: {image=img_gold_24} "
+    new ""
+
+    # game/BKendday.rpy:1322
+    old "和"
+    new ""
+
+    # game/BKendday.rpy:1362
+    old ", 获得利润  {image=img_gold_24} {b}"
+    new ""
+
+    # game/BKendday.rpy:1364
+    old ", 入不敷出。你亏损了 {image=img_gold_24} {b}"
+    new ""
+
+    # game/BKendday.rpy:1366
+    old "，收支平衡。你盈利了 {color=[c_red]}{b}0{/b} 金币{/color}。"
+    new ""
+
