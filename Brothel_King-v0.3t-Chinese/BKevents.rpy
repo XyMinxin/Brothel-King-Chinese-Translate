@@ -2641,7 +2641,7 @@ label thieves_guild_loop:
 
         while True:
 
-            $ renza("Here's what I have on sale this week, at a special price just for you.", interact = False)
+            $ renza("这是本周的特价商品，是专为你准备的。", interact = False)
 
             $ result = ui.interact()
 
@@ -2651,7 +2651,7 @@ label thieves_guild_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要花[price]金币购买[it.name]吗？")
 
                     if result == True:
                         # $ MC.buy(NPC_renza, it, price)
@@ -2664,34 +2664,34 @@ label thieves_guild_loop:
 
                         if dice(6) == 1:
 
-                            "As soon as you take the item from Renza's hands, however, you realize it's in very poor condition."
+                            "然而，当你从伦萨手中接过这件物品时，你立刻意识到它的质量非常糟糕。"
 
-                            you "Renza, what's this..."
+                            you "伦萨，这是什么..."
 
-                            renza "No refunds! You know that."
+                            renza "货物售出概不退换!你知道规矩的。"
 
                             hide screen overlay
                             scene black with fade
 
                             if it.rank == it.min_rank:
 
-                                "You have been ripped off. The item falls apart as soon as you bring it home. It was fake."
+                                "你被宰了。这东西一带回家就散架了。这是假货。"
                                 $ MC.items.remove(it)
                             else:
                                 $ it.transform(it.min_rank)
-                                $ renpy.say("", "You have been ripped off. This item is just " + article(it.name) + ".")
+                                $ renpy.say("", "你被宰了。这不过是个" + article(it.name) + "。")
 
                             return
 
                         else:
-                            renza "A pleasure doing business with you."
+                            renza "很高兴和你做买卖。"
                     else:
                         jump thieves_guild_loop
 
                 else:
                     hide screen item_profile
-                    you "Damn, I don't have the money right now..."
-                    renza "Buddy, don't waste my time."
+                    you "该死，我现在没这么多钱..."
+                    renza "兄弟，别浪费我的时间。"
 
                 hide screen overlay
                 scene black with fade
@@ -2699,14 +2699,14 @@ label thieves_guild_loop:
 
             elif result == "leave":
                 hide screen item_profile
-                renza "Well, that's too bad then. See ya!"
+                renza "哦，那真是太遗憾了，回见!"
 
                 hide screen overlay
                 scene black with fade
                 return
 
     else:
-        renza "I have no extra items to sell this week. Why don't you come back next week? Items fall off merchant wagons all the time!"
+        renza "本周我没有其他东西能卖给你了。你为什么不下周再来呢?货物到时候会从货车上掉下来的!"
 
         scene black with fade
         return
@@ -2721,34 +2721,33 @@ label visit_watchtower:
 
     show captain at right with dissolve
 
-    captain "Hi, [MC.name]! Have you come here for business, or... pleasure?"
+    captain "嗨, [MC.name]! 你是来找我谈生意的，还是说想....找点乐子？"
 
-    "Her gorgeous tits are bouncing in an hypnotic way as she says that."
+    "她打招呼的同时，她那对漂亮的奶子在自然地跳动着。"
 
-    "You try and snap out of it."
+    "你试着集中注意力。"
 
     label watchtower_menu:
 
         menu:
 
-            captain "So what will it be?"
+            captain "它会是什么呢？"
 
-            "Show me what you have":
+            "让我看看你的货":
 
                 jump watchtower_loop
 
-            "What can I get from you here, again?":
+            "我能从你这儿得到什么呢，又一次？":
 
-                captain "Why, pleasant company, of course! *wink*"
+                captain "为什么不呢，我的合作伙伴？*眨眼*"
 
-                captain "This is my vault, where I store all the goodies I confiscate from the unruly peons in the slums."
+                captain "这是我的金库，存放着我从贫民窟里不守规矩的苦工那里没收来的所有好东西。"
 
-                captain "I get to keep the gold and the shiny bits, but every once in a while, some unusual item is confiscated that
-                         I don't have a use for. In that case, I'll offer it to you for a good price."
+                captain "我会保留金子和闪闪发光的东西，但偶尔，一些不寻常的东西也会被没收。这个...对我没什么用。我可以给你一个优惠价。"
 
-                captain "My conditions are final, take it or leave it. You'll have to buy the stuff on offer at face value."
+                captain "这就是我的最终定价了，要不要随你。一分钱一分货。"
 
-                captain "Also, I can get you one item per week, no more. I can't have you coming and going into my vault all day."
+                captain "另外，我每周只能允许你买一样东西，不能再多了。我不能让你整天在我的金库里进进出出。"
 
                 jump watchtower_menu
 
@@ -2766,7 +2765,7 @@ label watchtower_loop:
 
         while True:
 
-            $ captain("Here's what I have on sale this week, at a special price just for you.", interact = False)
+            $ captain("这是本周的特价商品，是专为你准备的。", interact = False)
 
             $ result = ui.interact()
 
@@ -2776,7 +2775,7 @@ label watchtower_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要花[price]金币购买[it.name]吗？")
 
                     if result == True:
                         $ MC.buy(NPC_captain, it, price)
@@ -2789,43 +2788,43 @@ label watchtower_loop:
 
                         if d == 1:
 
-                            "As soon as you take the item from the vault to examine it closer, however, you realize it's in very poor condition."
+                            "然而，当你从法拉手中接过这件物品时，你立刻意识到它的质量非常糟糕。"
 
-                            you "Farah, what's this..."
+                            you "法拉, 这是怎么一回事..."
 
-                            captain "Hey, you break it, you own it. You know the rules"
+                            captain "嘿，你自己弄坏的，真是可惜。你知道规矩的。"
 
                             hide screen overlay
                             scene black with fade
 
                             if it.rank == it.min_rank:
 
-                                "You have been ripped off. The item falls apart as soon as you bring it home. It was fake."
+                                "你被宰了。这东西一带回家就散架了。这是假货。"
                                 $ MC.items.remove(it)
                             else:
                                 $ it.transform(it.min_rank)
-                                $ renpy.say("", "You have been ripped off. This item is just " + article(it.name) + ".")
+                                $ renpy.say("", "你被宰了。这东西不过是个" + article(it.name) + "。")
 
                             return
 
                         elif d == 6:
 
-                            "The captain purrs as she counts your gold."
+                            "上尉数你的金币数的都要睡着了。"
 
-                            captain "Thank for your purchase..."
+                            captain "感谢惠顾..."
 
                             play sound s_laugh
 
-                            "She is giving you a strange look."
+                            "她用奇怪的眼神看着你。"
 
-                            captain "[MC.name], I think I can show you a fun way to use this..."
+                            captain "[MC.name], 我可以给你展示它的另一种有趣的用法..."
 
-                            "She puts her hands on your chest and bites her lip seductively."
+                            "她把双手放在你的胸前，诱人地咬她的嘴唇。"
 
-                            captain "Why don't you follow me into my chamber?"
+                            captain "为什么不去我的房间呢？"
 
                             menu:
-                                "Sure":
+                                "当然":
                                     call hide_everything() from _call_hide_everything_46
 
                                     show bg captain_office at top with dissolve
@@ -2863,21 +2862,21 @@ label watchtower_loop:
 
                                     $ MC.change_prestige(1)
 
-                                "Another time":
-                                    you "Sorry Farah, I gotta go."
+                                "下次吧":
+                                    you "对不起法拉,我得走了。"
 
-                                    captain "Aw, aren't you mean... I guess I'll have to order one of my slaves to scratch that itch..."
+                                    captain "哦，你是说...我想我得让我的一个奴隶帮你挠挠痒了..."
 
                         else:
-                            captain "Thank you for your purchase. Now, scram."
+                            captain "感谢惠顾。现在，你该离开了。"
 
                     else:
                         jump watchtower_loop
 
                 else:
                     hide screen item_profile
-                    you "Damn, I don't have the money right now..."
-                    captain "What? No money? Get out!!!"
+                    you "该死，我没有那么多钱..."
+                    captain "什么？没钱？没钱装什么大爷!!!"
 
                 hide screen overlay
                 scene black with fade
@@ -2885,14 +2884,14 @@ label watchtower_loop:
 
             elif result == "leave":
                 hide screen item_profile
-                captain "Well, stop wasting my time, then. Bye now."
+                captain "好吧, 别再浪费我的时间了，滚吧。"
 
                 hide screen overlay
                 scene black with fade
                 return
 
     else:
-        captain "Damn it [MC.name], I can't have you coming and going in my apartments all the time like it's the fucking spice market. Come back next week!"
+        captain "该死的[MC.name], 你把这当成菜市场一样每天想来就来想走就走？下周再来!"
 
         scene black with fade
         return
@@ -2919,15 +2918,15 @@ label visit_gina():
         with fade
         show gina with dissolve
 
-        gina "Oh, [MC.name]. Have you found anything good for me?"
+        gina "哦, [MC.name]。你帮我找到什么好东西了吗？"
 
         menu:
             "What would you like to do?"
 
-            "Buy something":
+            "买东西":
                 pass
 
-            "Show her what you found":
+            "给她看你的发现":
 
                 you "I think you were looking for Cimerian artefacts. I have found this. Can you tell me how much it's worth?"
 
@@ -2959,13 +2958,13 @@ label visit_gina():
                     menu:
                         extend ""
 
-                        "Accept":
+                        "接受":
                             play sound s_gold
                             gina "There you go."
                             $ MC.items.remove(it)
                             $ MC.gold += price
 
-                        "Give her as a present":
+                        "送给她":
                             $ renpy.play(s_surprise, "sound")
 
                             gina "For me, really, for free? I... I don't know what to say... *blush*"
@@ -2976,7 +2975,7 @@ label visit_gina():
                             if it.name == "席米亚科技产物":
                                 gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
 
-                        "Refuse":
+                        "拒绝":
                             you "No thanks."
                             $ rv = 0
 

@@ -2316,57 +2316,57 @@ label slave_magic(girl, mode="train"):
     $ text1 = rand_choice(MC.filter_say(("ar: 凭借太阳神的神光{nw}", "sh: 凭借黑夜中的莎莉娅{nw}", "凭借五大元素的力量{nw}", "ev: 凭借7层地狱的力量{nw}", "gd: 凭借我纯洁的灵魂", "ne: 凭借龙之怒吼{nw}",
                    "ng: 凭借时之沙{nw}", "By the beat of the magic groove{nw}", "凭借死星的激光射线{nw}", "凭借腥红之月的暗面{nw}", "凭借无边海洋的深度{nw}")))
 
-    $ text1 += ", I command thee, "
+    $ text1 += ", 我命令你, "
 
-    $ text1 += rand_choice(("follow my voice into the labyrinth...", "bid farewell to the limits of the physical world...",
-                           "fall into a deep, deep slumber...", "do not fight the power of the ethereal dream...", "embark on the seas of oblivion...",
-                           "forget who you are and where you lay...", "hear my stories and forget yourself..."))
+    $ text1 += rand_choice(("跟着我的声音走进迷宫...", "脱离物质世界的禁锢...",
+                           "进入深深的沉睡...", "不要抵抗梦境的侵蚀...", "踏上遗忘之海的旅程...",
+                           "忘记你是谁，忘记你躺在哪里...", "你是我故事中的角色..."))
 
     play sound s_spell
 
-    "闭上眼聆听你的声音, [girl.name] 渐渐地听不清你说的话语. 她保持站姿, 目光逐渐呆滞."
+    "闭上眼聆听你的声音, [girl.name]渐渐听不清你说的话语。她保持站姿, 目光逐渐呆滞，眼神变得空洞。"
 
     if girl.magic_training == "positive":
-        "你开始用温柔的语气说话."
+        "你开始用温柔的语气下达指令。"
         $ bonus = (girl.get_love() - girl.get_fear())//10
 
     elif girl.magic_training == "negative":
-        "你开始用威胁的语气说话."
+        "你开始用威胁的语气下达指令。"
         $ bonus = (girl.get_fear() - girl.get_love())//10
     else:
-        "你开始用平静的语气说话."
+        "你开始用平静的语气下达指令。"
         $ bonus = 0
 
     $ bonus += girl.get_effect("change", "hypnosis")
 
     if act == "obedience":
         you "只有主人才能打开你内心的枷锁.你要服从主人的一切命令."
-        "你在她面前晃动着一把奇怪的钥匙."
+        "你在她面前晃动着一把奇怪的钥匙。"
         $ diff = 2
 
     elif act == "libido":
         you "你是个沉迷欲望的荡妇，你的欲望就像荆棘一样缠绕着你的灵魂..."
-        "你把一根银针扎入她的乳头. 她不仅没有感到疼痛,反而有些享受."
+        "你把一根银针扎入她的乳头. 她不仅没有感到疼痛,反而有些享受。"
         $ diff = 2
 
     elif act == "sensitivity":
         you "不要抗拒你的本性，如果你感到快乐，那么众神也会感到满足..."
-        "你点燃了一盏东方的熏香，香味让人有些飘飘欲仙."
+        "你点燃了一根东方的熏香，香味让人有些飘飘欲仙。"
         $ diff = 2
 
     elif act == "naked":
         you "让我好好欣赏你的身体..."
-        "你在她面前摆了一面全身镜，她可以从里面看到自己的每个部位."
+        "你在她面前摆了一面全身镜，她可以从中看到自己的每个部位。"
         $ diff = 4
 
     elif act == "service":
-        you "我是你的所有者，你的主人。能够用你的身体侍奉我是你的荣幸."
-        "你把神仙快乐水滴进她的嘴里."
+        you "我是你的所有者，你的主人。能够用你的身体侍奉我是你的荣幸。"
+        "你把神仙快乐水滴进她的嘴里。"
         $ diff = 5
 
     elif act == "sex":
-        you "我是你的所有者，你的主人。准备好收下我的礼物吧."
-        "你把一个又大又亮的金色假阳具放在她面前."
+        you "我是你的所有者，你的主人。准备好收下我的恩赐吧。"
+        "你把一个又大又亮的金色假阳具放在她面前。"
         $ diff = 6
 
     elif act == "anal":
@@ -2375,19 +2375,19 @@ label slave_magic(girl, mode="train"):
         $ diff = 7
 
     elif act == "fetish":
-        you "我是你的所有者，你的主人。只要我想... 跪下求我."
-        "你从口袋里掏出一对银夹子，夹在她的两个乳头上，涨得像两个紫葡萄."
+        you "我是你的所有者，你的主人。只要我想... 跪下求我。"
+        "你从口袋里掏出一对银夹子，夹在她的两个乳头上，两颗葡萄涨得发紫。"
         $ diff = 8
 
     elif act == "bisexual":
-        you "和你的姐妹一起来伺候我吧..."
-        "你让希露加入其中，让她在腰间戴上一个假阳具。它以暗元素驱动."
+        you "和你的姐妹一起来侍奉我吧..."
+        "你让希露加入其中，让她在腰间戴上假阳具。它以暗元素驱动。"
         sill naked "哈! 主人, 我插进去了..."
         $ diff = 9
 
     elif act == "group":
         you "欢迎加入淫乱派对..."
-        "吟唱了一段古老的咒语，你召唤了一个元素傀儡。它不会主动思考，但它拥有巨大的肉棒...在你的操纵下它立即将注意力转向 [girl.name] ."
+        "吟唱了一段古老的咒语，你召唤了一个元素傀儡。它不会主动思考，但它拥有巨大的肉棒...在你的操纵下它立即将注意力转向 [girl.name]。"
         $ diff = 10
 
     if girl.is_("very dom"):
