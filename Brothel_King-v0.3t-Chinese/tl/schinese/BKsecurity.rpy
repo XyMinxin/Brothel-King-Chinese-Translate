@@ -1966,3 +1966,107 @@ translate schinese strings:
     old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
     new "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
 
+# TODO: Translation updated at 2024-07-31 02:24
+
+translate schinese strings:
+
+    # game/BKsecurity.rpy:373
+    old "拿起剑加入战斗 (用武力对抗敌人)"
+    new "拿起剑加入战斗 (用武力对抗敌人)"
+
+    # game/BKsecurity.rpy:373
+    old "摧毁他们的器械 (用魔力施展法术)"
+    new "摧毁他们的器械 (用魔力施展法术)"
+
+    # game/BKsecurity.rpy:373
+    old "在后方指挥大局 (用魅力提高士气)"
+    new "在后方指挥大局 (用魅力提高士气)"
+
+    # game/BKsecurity.rpy:373
+    old "挑战他们的首领 (用武器攻击 [enemy_g])"
+    new "挑战他们的首领 (用武器攻击 [enemy_g])"
+
+    # game/BKsecurity.rpy:373
+    old "挑战他们的首领 (用法术攻击 [enemy_g])"
+    new "挑战他们的首领 (用法术攻击 [enemy_g])"
+
+    # game/BKsecurity.rpy:730
+    old "保护你的女孩 (用武力解决敌人)"
+    new "保护你的女孩 (用武力解决敌人)"
+
+    # game/BKsecurity.rpy:730
+    old "保护你的女孩 (用法术施加护盾)"
+    new "保护你的女孩 (用法术施加护盾)"
+
+    # game/BKsecurity.rpy:730
+    old "激励女孩自卫 (用魅力提高士气)"
+    new "激励女孩自卫 (用魅力提高士气)"
+
+    # game/BKsecurity.rpy:730
+    old "拦下他们的首领 (用武器攻击 [enemy_g])"
+    new "拦下他们的首领 (用武器攻击 [enemy_g])"
+
+    # game/BKsecurity.rpy:730
+    old "拦下他们的首领 (用法术攻击 [enemy_g])"
+    new "拦下他们的首领 (用法术攻击 [enemy_g])"
+
+    # game/BKsecurity.rpy:1051
+    old "把她收为自己的奴隶以弥补损失"
+    new "把她收为自己的奴隶以弥补损失"
+
+    # game/BKsecurity.rpy:1051
+    old "把她卖给奴隶贩子换取[price]金币"
+    new "把她卖给奴隶贩子换取[price]金币"
+
+    # game/BKsecurity.rpy:1051
+    old "把她卖给鲜血群岛换取[evil_price]金币"
+    new "把她卖给鲜血群岛换取[evil_price]金币"
+
+    # game/BKsecurity.rpy:1051
+    old "让她发誓再也不会招惹你，然后放了她"
+    new "让她发誓再也不会招惹你，然后放了她"
+
+    # game/BKsecurity.rpy:1265
+    old "{color=[c_green]}安全警报！"
+    new "{color=[c_green]}安全警报！"
+
+    # game/BKsecurity.rpy:1283
+    old "{color=[c_red]}安全警报！"
+    new "{color=[c_red]}安全警报！"
+
+    # game/BKsecurity.rpy:1283
+    old "受伤了。{/color}"
+    new "受伤了。{/color}"
+
+    # game/BKsecurity.rpy:1512
+    old "受伤了。\n"
+    new "受伤了。\n"
+
+    # game/BKsecurity.rpy:1641
+    old "那就成交 (支付[price]金币)"
+    new "那就成交 (支付[price]金币)"
+
+    # game/BKsecurity.rpy:1641
+    old "下次再说(以后再来)"
+    new "下次再说(以后再来)"
+
+    # game/BKsecurity.rpy:1641
+    old "当我没说([girl.fullname]将永远消失)"
+    new "当我没说([girl.fullname]将永远消失)"
+
+    # game/BKsecurity.rpy:1942
+    old "给她50金币让她找间旅店住一夜"
+    new "给她50金币让她找间旅店住一夜"
+
+    # game/BKsecurity.rpy:1942
+    old "给她250金币让她找间旅店住一周"
+    new "给她250金币让她找间旅店住一周"
+
+    # game/BKsecurity.rpy:1942
+    old "以 [price] 金币的价格把她卖掉"
+    new "以 [price] 金币的价格把她卖掉"
+
+    # game/BKsecurity.rpy:1942
+    old "放了她，还她自由之身"
+    new "放了她，还她自由之身"
+
