@@ -970,13 +970,13 @@ translate schinese slave_advanced_training_e589ac84_1:
 translate schinese slave_advanced_training_cfcd6460:
 
     # "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
-    "你发现了[girl.fullname]的一个特殊嗜好：{b}[xxx4]{/b}。你可以用它来加速她的训练。"
+    "你发现了[girl.fullname]的一个特殊嗜好：{b}[cntext]{/b}。你可以用它来加速她的训练。"
 
 # game/BKinteractions.rpy:1818
 translate schinese slave_advanced_training_cdeeb7c3:
 
     # "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
-    "因为[girl.name]喜欢{b}[xxx4]{/b}，所以她进步得更快了。"
+    "因为[girl.name]喜欢{b}[cntext]{/b}，所以她进步得更快了。"
 
 # game/BKinteractions.rpy:1824
 translate schinese slave_advanced_training_e589ac84_2:
@@ -988,13 +988,13 @@ translate schinese slave_advanced_training_e589ac84_2:
 translate schinese slave_advanced_training_47722ac0:
 
     # "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
-    "你发现了[girl.fullname]的一个恐惧事物：{b}[xxx4]{/b}。也许你可以好好利用这些信息。"
+    "你发现了[girl.fullname]的一个恐惧事物：{b}[cntext]{/b}。也许你可以好好利用这些信息。"
 
 # game/BKinteractions.rpy:1843
 translate schinese slave_advanced_training_9e16c264:
 
     # "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
-    "因为[girl.name]讨厌{b}[xxx4]{/b}，所以她的进度变慢了。"
+    "因为[girl.name]讨厌{b}[cntext]{/b}，所以她的进度变慢了。"
 
 # game/BKinteractions.rpy:1854
 translate schinese slave_advanced_training_f0742fc4:
@@ -2224,7 +2224,7 @@ translate schinese slave_story1_2015a94a:
 translate schinese slave_story1_132223ee:
 
     # girl.char "I ran into him one day while I was [activity]."
-    girl.char "I ran into him one day while I was [activity]."
+    girl.char "有一天，我在[activity]时碰到了他。"
 
 # game/BKinteractions.rpy:3468
 translate schinese slave_story1_f35c95cb:

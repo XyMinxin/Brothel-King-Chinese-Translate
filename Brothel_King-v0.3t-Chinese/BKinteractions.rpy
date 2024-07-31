@@ -1873,10 +1873,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, 50)
 
             if not girl.personality_unlock[fix.name]:
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("pos fixations")
             else:
+                $ cntext = girl_related_dict[fix.name]
                 "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
 
         elif fix.name in [f.name for f in girl.neg_fixations]:
@@ -1896,10 +1898,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, -75)
 
             if not girl.personality_unlock[fix.name]:
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("neg fixations")
             else:
+                $ cntext = girl_related_dict[fix.name]
                 "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
 
         else:
@@ -3101,8 +3105,10 @@ label slave_rape(girl, act): # If girl refused and was forced
             $ reaction = ""
 
         if reaction:
+            $ cntext = girl_related_dict[act]
+            $ cntext2 = girl_related_dict[reaction]
             menu:
-                "你记得 [girl.name] 对 [act] 行为有 [reaction] 的反应。你要利用这一点来训练她吗?"
+                "你记得 [girl.name] 对 [cntext] 行为有 [cntext2] 的反应。你要利用这一点来训练她吗?"
 
                 "是的":
                     $ fix = rand_choice([fix for fix in girl.neg_fixations if girl.personality_unlock[fix.name]])
@@ -3124,7 +3130,8 @@ label slave_rape(girl, act): # If girl refused and was forced
 
                         $ text1 = long_act_description[act]
                         $ text2 = fix_description[fix.name + " description"][:-1]
-                        "你不知道她怕不怕 [text1], 所以你打算试试, 看看她对 [fix.name] 会有什么反应。"
+                        $ cntext = girl_related_dict[fix.name]
+                        "你不知道她怕不怕 [text1], 所以你打算试试, 看看她对 [cntext] 会有什么反应。"
 
                         if fix.name in [f.name for f in girl.neg_fixations]:
 
@@ -3529,7 +3536,7 @@ label slave_story1(girl):
 
         girl.char "I was barely a teenager when I met him."
 
-        $ activity = rand_choice(("fetching water", "running an errand", "going to school", "cleaning outside", "playing outside with my sister"))
+        $ activity = rand_choice(("取水", "跑腿", "上学", "打扫", "和我妹妹在外面玩"))
 
         girl.char "I ran into him one day while I was [activity]."
 
