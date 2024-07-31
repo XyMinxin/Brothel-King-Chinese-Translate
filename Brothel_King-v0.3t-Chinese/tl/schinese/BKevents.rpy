@@ -8326,7 +8326,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:856
     old "The city guard ([cost3] gold)"
-    new "城市警卫([cost3] 金币)"
+    new "城市警卫队([cost3] 金币)"
 
     # game/BKevents.rpy:856
     old "Change your mind and look for her yourself"
@@ -8410,11 +8410,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:1638
     old "No, collect resources instead"
-    new "不,改为收集资源"
+    new "不,我只是想收集一些资源"
 
     # game/BKevents.rpy:1654
     old "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-    new "这里有一个活跃的资源提取器。你要把它关闭吗{b}OFF{/b}?"
+    new "这里有一个工作中的资源提取器。你要把它关闭吗{b}OFF{/b}?"
 
     # game/BKevents.rpy:1654
     old "Turn it OFF"
@@ -8426,7 +8426,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:1669
     old "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-    new "这里有一个不活跃的资源提取器。你要把它开启吗{b}ON{/b}?"
+    new "这里有一个停止运行的资源提取器。你要把它开启吗{b}ON{/b}?"
 
     # game/BKevents.rpy:1669
     old "Turn it ON"
@@ -8566,7 +8566,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3830
     old "Change training mode (hardcore)"
-    new "切换训练模式 (猛烈)"
+    new "切换训练模式 (硬核)"
 
     # game/BKevents.rpy:3830
     old "Keep her current training mode ([prog.mode])"
@@ -8578,7 +8578,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3894
     old "Use her weakness for [girl.weakness]s ([not_avoid])"
-    new "利用她对[girl.weakness]的弱点([not_avoid])"
+    new "利用她对[girl.weakness]的恐惧([not_avoid])"
 
     # game/BKevents.rpy:3896
     old "Gentle"
@@ -8590,7 +8590,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3896
     old "Hardcore"
-    new "激烈"
+    new "硬核"
 
     # game/BKevents.rpy:3910
     old "Use it"
@@ -8650,7 +8650,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:5665
     old "Choose what you want [girl.fullname] to do:"
-    new "选择你想让[girl.fullname]做什么:"
+    new "你想让[girl.fullname]做什么:"
 
     # game/BKevents.rpy:5665
     old "Oral sex"
@@ -8831,19 +8831,19 @@ translate schinese strings:
 translate schinese before_main_menu_fafcaa21:
 
     # "{nw}"
-    ""
+    "{nw}"
 
 # game/BKevents.rpy:666
 translate schinese advance_to_chapter_269dccba:
 
     # "[chosen_district.description]"
-    ""
+    "[chosen_district.description]"
 
 # game/BKevents.rpy:953
 translate schinese found_runaway_girl_c1da3d17:
 
     # girl.char "..."
-    girl.char ""
+    girl.char "..."
 
 # game/BKevents.rpy:1372
 translate schinese too_tired_11fdb519:
@@ -8861,7 +8861,7 @@ translate schinese test_resources_0ae9bcd0:
 translate schinese leather_intro_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:2960
 translate schinese visit_gina_11fdb519:
@@ -8873,31 +8873,31 @@ translate schinese visit_gina_11fdb519:
 translate schinese vital_scanners_built_7880e8db:
 
     # you "Gina?"
-    you ""
+    you "吉娜？"
 
 # game/BKevents.rpy:3463
 translate schinese send_to_farm_a42c33ca:
 
     # gizel happy "[text1]"
-    gizel happy ""
+    gizel happy "[text1]"
 
 # game/BKevents.rpy:3466
 translate schinese send_to_farm_439b5ef7:
 
     # gizel upset "[text1]"
-    gizel upset ""
+    gizel upset "[text1]"
 
 # game/BKevents.rpy:3747
 translate schinese farm_discovered_weakness_eef70d99:
 
     # gizel "[MC.name]!" with vpunch
-    gizel "" with vpunch
+    gizel "[MC.name]!" with vpunch
 
 # game/BKevents.rpy:3866
 translate schinese farm_resisted_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:4065
 translate schinese advertising_intro_11fdb519:
@@ -8909,79 +8909,79 @@ translate schinese advertising_intro_11fdb519:
 translate schinese advertising_intro_a3d93716:
 
     # "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
-    ""
+    "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
 
 # game/BKevents.rpy:4201
 translate schinese add_billboard_a7399b46:
 
     # carpenter "..."
-    carpenter ""
+    carpenter "..."
 
 # game/BKevents.rpy:4236
 translate schinese first_contract_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:4256
 translate schinese first_contract_dae0ec55_1:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:4908
 translate schinese contract_MC_event_4027e073:
 
     # "Demonic Voice" "{font=SFBurlingtonScript.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
-    "Demonic Voice" ""
+    "Demonic Voice" "{font=DejaVuSans.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
 
 # game/BKevents.rpy:4970
 translate schinese contract_MC_event_f80c140c:
 
     # you "{font=SFBurlingtonScript.TTF}Nogephaii ahagl ymg' hup mgepnog, ars'hol!{/font}"
-    you ""
+    you "{font=DejaVuSans.ttf}Nogephaii ahagl ymg' hup mgepnog, ars'hol!{/font}"
 
 # game/BKevents.rpy:5546
 translate schinese contract_MC_event_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:5807
 translate schinese tax_intro_a0798e9c:
 
     # taxgirl "..."
-    taxgirl ""
+    taxgirl "..."
 
 # game/BKevents.rpy:6060
 translate schinese tax_intro_menu_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:6171
 translate schinese tax_payment_cbce0735:
 
     # taxgirl "[text1!t]"
-    taxgirl ""
+    taxgirl "[text1!t]"
 
 # game/BKevents.rpy:6943
 translate schinese pet_untimely_demise_e14181ce:
 
     # "[desc1]"
-    ""
+    "[desc1]"
 
 # game/BKevents.rpy:6948
 translate schinese pet_untimely_demise_bdcfd372:
 
     # "[desc2]"
-    ""
+    "[desc2]"
 
 # game/BKevents.rpy:7129
 translate schinese is_broken_f9eba542:
 
     # gizel upset "{nw}"
-    gizel upset ""
+    gizel upset "{nw}"
 
 # game/BKevents.rpy:7188
 translate schinese broken_menu_11fdb519:
@@ -8993,17 +8993,17 @@ translate schinese broken_menu_11fdb519:
 translate schinese asylum_return_d9ab8aeb:
 
     # nun "..."
-    nun ""
+    nun "..."
 
 # game/BKevents.rpy:7341
 translate schinese asylum_return_dae0ec55:
 
     # you "..."
-    you ""
+    you "..."
 
 # game/BKevents.rpy:7448
 translate schinese acquire_girl_f67c4853:
 
     # gizel normal "[text1]"
-    gizel normal ""
+    gizel normal "[text1]"
 
