@@ -1030,7 +1030,7 @@ label slave_chat_tastes(girl):
             "She tells you that she loves [fix_desc]"
 
             if not girl.personality_unlock[fix.name]:
-
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered [girl.name]'s fixation with [fix.name]."
 
                 $ girl.personality_unlock[fix.name] = True
@@ -1046,7 +1046,7 @@ label slave_chat_tastes(girl):
                 "She tells you that she really hates [fix_desc] It creeps her out."
 
                 if not girl.personality_unlock[fix.name]:
-
+                    $ cntext = girl_related_dict[fix.name]
                     "You have discovered [girl.name]'s disgust for [fix.name]."
 
                     $ girl.personality_unlock[fix.name] = True
@@ -1355,6 +1355,7 @@ label slave_remove_fixation(girl):
         return
 
     elif fix.name in girl.locked_fix:
+        $ cntext = girl_related_dict[fix.name]
         "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
         $ inter.canceled=True
         return
@@ -3146,7 +3147,7 @@ label slave_rape(girl, act): # If girl refused and was forced
 
                             call dialogue(girl, "slave rape positive fixation") from _call_dialogue_212
 
-                            "和你预期的相反, [girl.name] 看起来反而有些享受. 这还算得上是惩罚吗?"
+                            "和你预期的相反, [girl.name] 看起来反而有些享受。这还算得上惩罚吗？"
                             $ reluctance -= 25
                             $ impact -= 1
                             $ inter.result = "pos_fix"

@@ -934,7 +934,7 @@ translate schinese random_morning_events_4ee7f03b:
 translate schinese random_morning_events_10903478:
 
     # "[girl.fullname]'s [ev_type] has increased."
-    "[girl.fullname]的[xxx6]已经增加。"
+    "[girl.fullname]的[cntext]已经增加。"
 
 # game/BKday_events.rpy:648
 translate schinese random_night_girl_event_5bb8986a:

@@ -472,7 +472,7 @@ translate schinese slave_chat_tastes_6cfd37d9:
 translate schinese slave_chat_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你已经发现[girl.name]对[xxx3]的迷恋。"
+    "你已经发现[girl.name]对[cntext]的迷恋。"
 
 # game/BKinteractions.rpy:1045
 translate schinese slave_chat_tastes_3f2466f8:
@@ -484,7 +484,7 @@ translate schinese slave_chat_tastes_3f2466f8:
 translate schinese slave_chat_tastes_2c0cf15f:
 
     # "You have discovered [girl.name]'s disgust for [fix.name]."
-    "你已经发现[girl.name]对[xxx3]很反感。"
+    "你已经发现[girl.name]对[cntext]很反感。"
 
 # game/BKinteractions.rpy:1060
 translate schinese slave_chat_tastes_743d9504:
@@ -676,7 +676,7 @@ translate schinese slave_train_sex_acts_99742c96:
 translate schinese slave_remove_fixation_8a1b364c:
 
     # "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
-    "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
+    "[girl.name]被逼得太紧了，她现在完全讨厌[cntext]。你对此无能为力。"
 
 # game/BKinteractions.rpy:1315
 translate schinese slave_remove_fixation_44008d8e:
@@ -1906,7 +1906,7 @@ translate schinese slave_rape_98f56acc:
 translate schinese slave_rape_82edb748:
 
     # "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [fix.name]."
-    "你不知道她讨厌[text1]什么，所以你随便试着做点什么，看看她是如何处理[xxx3]的。"
+    "你不知道她讨厌[text1]什么，所以你随便试着做点什么，看看她是如何处理[cntext]的。"
 
 # game/BKinteractions.rpy:3073
 translate schinese slave_rape_9b162712:
