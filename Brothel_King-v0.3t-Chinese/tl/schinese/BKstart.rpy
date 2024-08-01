@@ -158,35 +158,35 @@ translate schinese strings:
 
     # game/BKstart.rpy:478
     old "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware."
-    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"# TODO: Translation updated at 2024-07-31 01:49
+    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"# TODO: Translation updated at 2024-07-31 02:24
 
 translate schinese strings:
 
     # game/BKstart.rpy:25
     old "剧情模式-含新手教程（有额外CG）"
-    new ""
+    new "剧情模式-含新手教程（有额外CG）"
 
     # game/BKstart.rpy:25
     old "剧情模式-无新手教程"
-    new ""
+    new "剧情模式-无新手教程"
 
     # game/BKstart.rpy:25
     old "沙盒模式 (测试中)"
-    new ""
+    new "沙盒模式 (测试中)"
 
     # game/BKstart.rpy:25
     old "测试模式-快速调试"
-    new ""
+    new "测试模式-快速调试"
 
     # game/BKstart.rpy:25
     old "测试模式-自定义"
-    new ""
+    new "测试模式-自定义"
 
     # game/BKstart.rpy:45
     old "自由模式(测试中)"
-    new ""
+    new "自由模式(测试中)"
 
     # game/BKstart.rpy:96
     old "你打算用什么作为青楼的招牌业务?"
-    new ""
+    new "你打算用什么作为青楼的招牌业务?"
 

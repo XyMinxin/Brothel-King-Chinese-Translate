@@ -692,133 +692,133 @@ translate schinese strings:
     old "Outright lying"
     new "瞎掰"
 
-# TODO: Translation updated at 2024-07-31 01:49
+# TODO: Translation updated at 2024-07-31 02:24
 
 # game/BKinteractions_free.rpy:72
 translate schinese free_girl_talk_5b9edd39:
 
     # you "很高兴见到你，美丽的女士. 他们都叫我 [MC.name], 有什么我能帮到你的吗?我很乐意为你这样的美人效劳。 "
-    you ""
+    you "很高兴见到你，美丽的女士. 他们都叫我 [MC.name], 有什么我能帮到你的吗?我很乐意为你这样的美人效劳。 "
 
 # game/BKinteractions_free.rpy:81
 translate schinese free_girl_talk_98cedbca:
 
     # you "嗨你好! 我叫 [MC.name]. 你叫什么名字?"
-    you ""
+    you "嗨你好! 我叫 [MC.name]. 你叫什么名字?"
 
 # game/BKinteractions_free.rpy:91
 translate schinese free_girl_talk_9a5e260a:
 
     # you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]. 你叫什么名字，宝贝?"
-    you ""
+    you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]. 你叫什么名字，宝贝?"
 
 # game/BKinteractions_free.rpy:1126
 translate schinese free_girl_girlfriend_f7432d7f:
 
     # girl.char "Can you name one of my hobbies?"
-    girl.char ""
+    girl.char "Can you name one of my hobbies?"
 
 # game/BKinteractions_free.rpy:1234
 translate schinese free_girl_girlfriend_0ee8c7a2:
 
     # girl.char "Do you remember what is my [_type] [thing]?"
-    girl.char ""
+    girl.char "Do you remember what is my [_type] [thing]?"
 
 translate schinese strings:
 
     # game/BKinteractions_free.rpy:58
     old "当你路过%s时，"
-    new ""
+    new "当你路过%s时，"
 
     # game/BKinteractions_free.rpy:58
     old "在前往%s的途中，"
-    new ""
+    new "在前往%s的途中，"
 
     # game/BKinteractions_free.rpy:58
     old "心不在焉地在%s的街上闲逛时，"
-    new ""
+    new "心不在焉地在%s的街上闲逛时，"
 
     # game/BKinteractions_free.rpy:60
     old "你注意到一个漂亮的女孩独自站在那里。"
-    new ""
+    new "你注意到一个漂亮的女孩独自站在那里。"
 
     # game/BKinteractions_free.rpy:60
     old " 你差点撞到一个可爱的女孩子。"
-    new ""
+    new " 你差点撞到一个可爱的女孩子。"
 
     # game/BKinteractions_free.rpy:60
     old " 你发现一个漂亮的姑娘在和小贩讨价还价。"
-    new ""
+    new " 你发现一个漂亮的姑娘在和小贩讨价还价。"
 
     # game/BKinteractions_free.rpy:60
     old " 你看到一个漂亮的女孩，她看起来很迷茫。"
-    new ""
+    new " 你看到一个漂亮的女孩，她看起来很迷茫。"
 
     # game/BKinteractions_free.rpy:64
     old "不好意思打扰一下（礼貌）"
-    new ""
+    new "不好意思打扰一下（礼貌）"
 
     # game/BKinteractions_free.rpy:64
     old "嗨，很高兴见到你（随和）"
-    new ""
+    new "嗨，很高兴见到你（随和）"
 
     # game/BKinteractions_free.rpy:64
     old "嘿！美女*吹口哨*（调戏）"
-    new ""
+    new "嘿！美女*吹口哨*（调戏）"
 
     # game/BKinteractions_free.rpy:593
     old "我一直在等命中注定的那个人"
-    new ""
+    new "我一直在等命中注定的那个人"
 
     # game/BKinteractions_free.rpy:593
     old "说实话我也没谈过几个女朋友"
-    new ""
+    new "说实话我也没谈过几个女朋友"
 
     # game/BKinteractions_free.rpy:593
     old "我是个情场老手，妇女之友~"
-    new ""
+    new "我是个情场老手，妇女之友~"
 
     # game/BKinteractions_free.rpy:593
     old "我御女无数，没人比我经验丰富"
-    new ""
+    new "我御女无数，没人比我经验丰富"
 
     # game/BKinteractions_free.rpy:593
     old "我经营着一家青楼, 你懂的..."
-    new ""
+    new "我经营着一家青楼, 你懂的..."
 
     # game/BKinteractions_free.rpy:698
     old "嗯，我听说过很多关于%s的事情...."
-    new ""
+    new "嗯，我听说过很多关于%s的事情...."
 
     # game/BKinteractions_free.rpy:719
     old "你知道是什么让我对 %s厌恶吗?"
-    new ""
+    new "你知道是什么让我对 %s厌恶吗?"
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[0]] 金币"
-    new ""
+    new "[tip_range[0]] 金币"
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[1]] 金币"
-    new ""
+    new "[tip_range[1]] 金币"
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[2]] 金币"
-    new ""
+    new "[tip_range[2]] 金币"
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[3]] 金币"
-    new ""
+    new "[tip_range[3]] 金币"
 
     # game/BKinteractions_free.rpy:1042
     old "坦白真相"
-    new ""
+    new "坦白真相"
 
     # game/BKinteractions_free.rpy:1042
     old "半真半假"
-    new ""
+    new "半真半假"
 
     # game/BKinteractions_free.rpy:1042
     old "撒个小谎"
-    new ""
+    new "撒个小谎"
 

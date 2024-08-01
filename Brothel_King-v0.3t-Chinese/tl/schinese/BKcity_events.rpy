@@ -6940,305 +6940,305 @@ translate schinese strings:
     old "Give up"
     new "放弃"
 
-# TODO: Translation updated at 2024-07-31 01:49
+# TODO: Translation updated at 2024-07-31 02:24
 
 # game/BKcity_events.rpy:100
 translate schinese city_rape_8c1203b7:
 
     # ev_girl1 "Thanks, you saved me... *sob* I will tell everyone what you did for me..."
-    ev_girl1 ""
+    ev_girl1 "Thanks, you saved me... *sob* I will tell everyone what you did for me..."
 
 # game/BKcity_events.rpy:163
 translate schinese city_rape_abcf6f33:
 
     # "Before you can get back to your feet, the beast grabs its unfortunate victim and runs off into the night."
-    ""
+    "Before you can get back to your feet, the beast grabs its unfortunate victim and runs off into the night."
 
 # game/BKcity_events.rpy:271
 translate schinese city_rape_f234f69e_1:
 
     # ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
-    ev_girl1 ""
+    ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
 
 # game/BKcity_events.rpy:297
 translate schinese city_rape_1bb2b3de:
 
     # "As you try frantically to reach for your staff, the beast seizes its victim and disappears into the night, uninterested in a fight."
-    ""
+    "As you try frantically to reach for your staff, the beast seizes its victim and disappears into the night, uninterested in a fight."
 
 # game/BKcity_events.rpy:303
 translate schinese city_rape_9e384a5b_1:
 
     # "You are wounded and lose your remaining actions for the day."
-    ""
+    "You are wounded and lose your remaining actions for the day."
 
 # game/BKcity_events.rpy:371
 translate schinese city_monster_menu_5763083e:
 
     # "You sell [mn.name] the monster to Willow for [price] gold."
-    ""
+    "You sell [mn.name] the monster to Willow for [price] gold."
 
 # game/BKcity_events.rpy:496
 translate schinese city_impress_9bb6561b:
 
     # ev_girl2 "Well, that was an unexpected move! I suppose it deserves an artistic note... I bet Katya could show you how it's done..."
-    ev_girl2 ""
+    ev_girl2 "Well, that was an unexpected move! I suppose it deserves an artistic note... I bet Katya could show you how it's done..."
 
 # game/BKcity_events.rpy:689
 translate schinese city_impress_18b34c32:
 
     # ev_girl3 "Calm down, sister... Plenty of fish in the sea. Let's look elsewhere."
-    ev_girl3 ""
+    ev_girl3 "Calm down, sister... Plenty of fish in the sea. Let's look elsewhere."
 
 # game/BKcity_events.rpy:2095
 translate schinese city_wrestle_f32dd71d:
 
     # "The crowd cheers and jeers as you sit down in front of the seasoned veteran."
-    ""
+    "The crowd cheers and jeers as you sit down in front of the seasoned veteran."
 
 # game/BKcity_events.rpy:2656
 translate schinese city_cat_eb44d7e6:
 
     # "You do not waste time giving her an answer. Soon, the air is filled with the wet sound of your love-making."
-    ""
+    "You do not waste time giving her an answer. Soon, the air is filled with the wet sound of your love-making."
 
 # game/BKcity_events.rpy:2713
 translate schinese city_cat_58566848:
 
     # ev_girl3 "Such a big cock... Mister, isn't it too big for Yuna?"
-    ev_girl3 ""
+    ev_girl3 "Such a big cock... Mister, isn't it too big for Yuna?"
 
 # game/BKcity_events.rpy:3275
 translate schinese city_gypsy_12d9bfd1:
 
     # "You don't have much success at first, but with time, you are able to send a few customers her way."
-    ""
+    "You don't have much success at first, but with time, you are able to send a few customers her way."
 
 # game/BKcity_events.rpy:3349
 translate schinese city_gypsy_7d532edc:
 
     # "The girl rummages through her wagon for a minute, then comes out, holding a dusty item."
-    ""
+    "The girl rummages through her wagon for a minute, then comes out, holding a dusty item."
 
 # game/BKcity_events.rpy:3886
 translate schinese city_rob_03eece81:
 
     # "After you have your way with her, you have her thrown out into the street, naked and reeking of semen."
-    ""
+    "After you have your way with her, you have her thrown out into the street, naked and reeking of semen."
 
 # game/BKcity_events.rpy:4297
 translate schinese city_mob_b7447831:
 
     # "An angry chatter emerges from the crowd. People are blocking your way on every side, some trying to get ahold of you."
-    ""
+    "An angry chatter emerges from the crowd. People are blocking your way on every side, some trying to get ahold of you."
 
 # game/BKcity_events.rpy:4859
 translate schinese slave_beach_event_28be6530:
 
     # girl.char "Aaaah! [emo_heart]"
-    girl.char ""
+    girl.char "Aaaah! [emo_heart]"
 
 # game/BKcity_events.rpy:5024
 translate schinese slave_beach_event_a56ec551:
 
     # "She turns away from you, blushing, hugging her knees and legs tightly pressed together. You know better than to make a scene here."
-    ""
+    "She turns away from you, blushing, hugging her knees and legs tightly pressed together. You know better than to make a scene here."
 
 # game/BKcity_events.rpy:5136
 translate schinese slave_beach_event_0cecfc03:
 
     # "You feel some resistance inside, and then something tears. A trickle of blood running down your shaft confirms that she is no longer a virgin."
-    ""
+    "You feel some resistance inside, and then something tears. A trickle of blood running down your shaft confirms that she is no longer a virgin."
 
 # game/BKcity_events.rpy:5147
 translate schinese slave_beach_event_de6a410f:
 
     # "A crowd quickly gathers. [girl.name] blushes but makes no effort to stop you."
-    ""
+    "A crowd quickly gathers. [girl.name] blushes but makes no effort to stop you."
 
 # game/BKcity_events.rpy:5498
 translate schinese slave_beach_event_67a2ab6d:
 
     # "She yelps with pain as he enters her, forcing her hymen open. She is no longer a virgin."
-    ""
+    "She yelps with pain as he enters her, forcing her hymen open. She is no longer a virgin."
 
 # game/BKcity_events.rpy:5513
 translate schinese slave_beach_event_afefac09:
 
     # man "Oh, man, look at that! She was a virgin, hahaha..."
-    man ""
+    man "Oh, man, look at that! She was a virgin, hahaha..."
 
 # game/BKcity_events.rpy:5515
 translate schinese slave_beach_event_00417ccb:
 
     # passerby "Unbelievable!"
-    passerby ""
+    passerby "Unbelievable!"
 
 # game/BKcity_events.rpy:5645
 translate schinese slave_beach_event_ac2b8787:
 
     # you "该死的你!你就等着我再抓到你..."
-    you ""
+    you "该死的你!你就等着我再抓到你..."
 
 # game/BKcity_events.rpy:5647
 translate schinese slave_beach_event_f566c76b:
 
     # you "嗯，你根本不值得我这么麻烦....下次你最好照我说的做!"
-    you ""
+    you "嗯，你根本不值得我这么麻烦....下次你最好照我说的做!"
 
 # game/BKcity_events.rpy:5649
 translate schinese slave_beach_event_c9bef6a0:
 
     # "你知道她现在的状态不适合接待顾客。你很沮丧，让她收拾东西回青楼去."
-    ""
+    "你知道她现在的状态不适合接待顾客。你很沮丧，让她收拾东西回青楼去."
 
 translate schinese strings:
 
     # game/BKcity_events.rpy:336
     old "在农场饲养它"
-    new ""
+    new "在农场饲养它"
 
     # game/BKcity_events.rpy:336
     old "把它卖给薇儿"
-    new ""
+    new "把它卖给薇儿"
 
     # game/BKcity_events.rpy:336
     old "了结它的生命"
-    new ""
+    new "了结它的生命"
 
     # game/BKcity_events.rpy:336
     old "仁慈地放了它"
-    new ""
+    new "仁慈地放了它"
 
     # game/BKcity_events.rpy:1204
     old "插她的喉咙"
-    new ""
+    new "插她的喉咙"
 
     # game/BKcity_events.rpy:1204
     old "干她的小穴"
-    new ""
+    new "干她的小穴"
 
     # game/BKcity_events.rpy:1204
     old "操她的菊穴"
-    new ""
+    new "操她的菊穴"
 
     # game/BKcity_events.rpy:1204
     old "做点其他的"
-    new ""
+    new "做点其他的"
 
     # game/BKcity_events.rpy:1204
     old "我没时间浪费在她身上"
-    new ""
+    new "我没时间浪费在她身上"
 
     # game/BKcity_events.rpy:1539
     old "接受赌局"
-    new ""
+    new "接受赌局"
 
     # game/BKcity_events.rpy:1539
     old "我不赌博"
-    new ""
+    new "我不赌博"
 
     # game/BKcity_events.rpy:4638
     old "私吞金币"
-    new ""
+    new "私吞金币"
 
     # game/BKcity_events.rpy:4638
     old "归还失物"
-    new ""
+    new "归还失物"
 
     # game/BKcity_events.rpy:4737
     old "你想不想涂点防晒油?[s1]"
-    new ""
+    new "你想不想涂点防晒油?[s1]"
 
     # game/BKcity_events.rpy:4737
     old "和我云雨一番"
-    new ""
+    new "和我云雨一番"
 
     # game/BKcity_events.rpy:4737
     old "准备好服务客人"
-    new ""
+    new "准备好服务客人"
 
     # game/BKcity_events.rpy:4737
     old "什么也不做 (离开)"
-    new ""
+    new "什么也不做 (离开)"
 
     # game/BKcity_events.rpy:4787
     old "抚摸她的臀部[s1]"
-    new ""
+    new "抚摸她的臀部[s1]"
 
     # game/BKcity_events.rpy:4787
     old "揉捏她的胸部[s2]"
-    new ""
+    new "揉捏她的胸部[s2]"
 
     # game/BKcity_events.rpy:4787
     old "用手指挑逗她[s3]"
-    new ""
+    new "用手指挑逗她[s3]"
 
     # game/BKcity_events.rpy:4787
     old "就到此为止吧"
-    new ""
+    new "就到此为止吧"
 
     # game/BKcity_events.rpy:4877
     old "让她高潮"
-    new ""
+    new "让她高潮"
 
     # game/BKcity_events.rpy:4877
     old "禁止高潮[s1]"
-    new ""
+    new "禁止高潮[s1]"
 
     # game/BKcity_events.rpy:4967
     old "让我们在众目睽睽之下做吧[s1]"
-    new ""
+    new "让我们在众目睽睽之下做吧[s1]"
 
     # game/BKcity_events.rpy:4967
     old "让我们找个没人的地方做吧"
-    new ""
+    new "让我们找个没人的地方做吧"
 
     # game/BKcity_events.rpy:5037
     old "吮吸你的肉棒[s1]"
-    new ""
+    new "吮吸你的肉棒[s1]"
 
     # game/BKcity_events.rpy:5037
     old "让她给你乳交[s2]"
-    new ""
+    new "让她给你乳交[s2]"
 
     # game/BKcity_events.rpy:5037
     old "掰开她的小穴[s3]"
-    new ""
+    new "掰开她的小穴[s3]"
 
     # game/BKcity_events.rpy:5345
     old "付她双倍的工资"
-    new ""
+    new "付她双倍的工资"
 
     # game/BKcity_events.rpy:5345
     old "付她正常的工资"
-    new ""
+    new "付她正常的工资"
 
     # game/BKcity_events.rpy:5345
     old "她应该无偿劳动"
-    new ""
+    new "她应该无偿劳动"
 
     # game/BKcity_events.rpy:5425
     old "侍奉[s1]"
-    new ""
+    new "侍奉[s1]"
 
     # game/BKcity_events.rpy:5425
     old "做爱[s2]"
-    new ""
+    new "做爱[s2]"
 
     # game/BKcity_events.rpy:5425
     old "肛交[s3]"
-    new ""
+    new "肛交[s3]"
 
     # game/BKcity_events.rpy:5425
     old "群交[s4]"
-    new ""
+    new "群交[s4]"
 
     # game/BKcity_events.rpy:5637
     old "你怎么敢!"
-    new ""
+    new "你怎么敢!"
 
     # game/BKcity_events.rpy:5637
     old "放弃计划"
-    new ""
+    new "放弃计划"
 

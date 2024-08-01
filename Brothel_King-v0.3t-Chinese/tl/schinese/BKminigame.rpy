@@ -16,15 +16,15 @@ translate schinese strings:
     old "Yes (spend 1 makibishi)"
     new "Yes (spend 1 makibishi)"
 
-# TODO: Translation updated at 2024-07-31 01:49
+# TODO: Translation updated at 2024-07-31 02:24
 
 translate schinese strings:
 
     # game/BKminigame.rpy:283
     old "是的 (消耗1个撒菱)"
-    new ""
+    new "是的 (消耗1个撒菱)"
 
     # game/BKminigame.rpy:283
     old "不用"
-    new ""
+    new "不用"
 
