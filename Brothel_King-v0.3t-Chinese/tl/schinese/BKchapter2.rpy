@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-04-27 18:30
+# TODO: Translation updated at 2024-04-27 18:30
 
 # game/BKchapter2.rpy:22
 translate schinese sewer_girl_returns_006c950d:
@@ -28,13 +28,13 @@ translate schinese sewer_girl_returns_647e5474:
 translate schinese sewer_girl_returns_79906e5f:
 
     # you "Uh, hello... Do I know you from somewhere?"
-    you "呃,你好...我在哪里见过你?"
+    you "呃,你好...我是不是在哪里见过你?"
 
 # game/BKchapter2.rpy:36
 translate schinese sewer_girl_returns_84344522:
 
     # sewer_woman "Oh, you don't remember... We met under very different circumstances..."
-    sewer_woman "你不记得了...还记得下水道里发生的事吗..."
+    sewer_woman "看来你忘了...还记得下水道里发生的事吗..."
 
 # game/BKchapter2.rpy:45
 translate schinese sewer_girl_returns_0f37c3fc:

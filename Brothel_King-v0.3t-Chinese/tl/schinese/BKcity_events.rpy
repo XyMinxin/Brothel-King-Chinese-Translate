@@ -6946,133 +6946,133 @@ translate schinese strings:
 translate schinese city_rape_8c1203b7:
 
     # ev_girl1 "Thanks, you saved me... *sob* I will tell everyone what you did for me..."
-    ev_girl1 "Thanks, you saved me... *sob* I will tell everyone what you did for me..."
+    ev_girl1 "感激不尽，你救了我... *啜泣* 我会告诉大家你的英勇事迹的..."
 
 # game/BKcity_events.rpy:163
 translate schinese city_rape_abcf6f33:
 
     # "Before you can get back to your feet, the beast grabs its unfortunate victim and runs off into the night."
-    "Before you can get back to your feet, the beast grabs its unfortunate victim and runs off into the night."
+    "在你站起来之前，怪物已经抓着不幸的受害者消失在了夜色之中。"
 
 # game/BKcity_events.rpy:271
 translate schinese city_rape_f234f69e_1:
 
     # ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
-    ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
+    ev_girl1 "你救了我的命... *啜泣* 我会告诉大家你的英勇事迹的... *啜泣*"
 
 # game/BKcity_events.rpy:297
 translate schinese city_rape_1bb2b3de:
 
     # "As you try frantically to reach for your staff, the beast seizes its victim and disappears into the night, uninterested in a fight."
-    "As you try frantically to reach for your staff, the beast seizes its victim and disappears into the night, uninterested in a fight."
+    "当你疯狂地试图去抓住你的法杖时，怪物已经抓着不幸的受害者消失在了夜色之中，它对你不感兴趣。"
 
 # game/BKcity_events.rpy:303
 translate schinese city_rape_9e384a5b_1:
 
     # "You are wounded and lose your remaining actions for the day."
-    "You are wounded and lose your remaining actions for the day."
+    "你受伤了并且耗尽了剩余的行动力。"
 
 # game/BKcity_events.rpy:371
 translate schinese city_monster_menu_5763083e:
 
     # "You sell [mn.name] the monster to Willow for [price] gold."
-    "You sell [mn.name] the monster to Willow for [price] gold."
+    "你把[mn.name]卖给薇儿换取了[price]金币。"
 
 # game/BKcity_events.rpy:496
 translate schinese city_impress_9bb6561b:
 
     # ev_girl2 "Well, that was an unexpected move! I suppose it deserves an artistic note... I bet Katya could show you how it's done..."
-    ev_girl2 "Well, that was an unexpected move! I suppose it deserves an artistic note... I bet Katya could show you how it's done..."
+    ev_girl2 "嗯，这确实是个意想不到的表演！我想它值得一个艺术性的评价。我打赌 Katya 可以向你展示它是如何做到的..."
 
 # game/BKcity_events.rpy:689
 translate schinese city_impress_18b34c32:
 
     # ev_girl3 "Calm down, sister... Plenty of fish in the sea. Let's look elsewhere."
-    ev_girl3 "Calm down, sister... Plenty of fish in the sea. Let's look elsewhere."
+    ev_girl3 "淡定，姐姐....天涯何处无芳草。我们去别处碰碰运气吧。"
 
 # game/BKcity_events.rpy:2095
 translate schinese city_wrestle_f32dd71d:
 
     # "The crowd cheers and jeers as you sit down in front of the seasoned veteran."
-    "The crowd cheers and jeers as you sit down in front of the seasoned veteran."
+    "当你走到经验丰富的老兵对面坐下时，人群欢呼雀跃。"
 
 # game/BKcity_events.rpy:2656
 translate schinese city_cat_eb44d7e6:
 
     # "You do not waste time giving her an answer. Soon, the air is filled with the wet sound of your love-making."
-    "You do not waste time giving her an answer. Soon, the air is filled with the wet sound of your love-making."
+    "你没有一丝犹豫。很快，空气中就充满了肉体碰撞的水乳交融的声音。"
 
 # game/BKcity_events.rpy:2713
 translate schinese city_cat_58566848:
 
     # ev_girl3 "Such a big cock... Mister, isn't it too big for Yuna?"
-    ev_girl3 "Such a big cock... Mister, isn't it too big for Yuna?"
+    ev_girl3 "好大的鸡巴...先生，对尤娜来说是不是太大了？"
 
 # game/BKcity_events.rpy:3275
 translate schinese city_gypsy_12d9bfd1:
 
     # "You don't have much success at first, but with time, you are able to send a few customers her way."
-    "You don't have much success at first, but with time, you are able to send a few customers her way."
+    "一开始宣传效果并不理想，但随着时间的推移，你能够为她引来一些客户。"
 
 # game/BKcity_events.rpy:3349
 translate schinese city_gypsy_7d532edc:
 
     # "The girl rummages through her wagon for a minute, then comes out, holding a dusty item."
-    "The girl rummages through her wagon for a minute, then comes out, holding a dusty item."
+    "女人在她的马车里翻找了一会儿，然后走了出来，手里拿着一件满是灰尘的东西。"
 
 # game/BKcity_events.rpy:3886
 translate schinese city_rob_03eece81:
 
     # "After you have your way with her, you have her thrown out into the street, naked and reeking of semen."
-    "After you have your way with her, you have her thrown out into the street, naked and reeking of semen."
+    "在你得手之后，你把她扔到街上，她全身赤裸，身上散发着一股精液的恶臭。"
 
 # game/BKcity_events.rpy:4297
 translate schinese city_mob_b7447831:
 
     # "An angry chatter emerges from the crowd. People are blocking your way on every side, some trying to get ahold of you."
-    "An angry chatter emerges from the crowd. People are blocking your way on every side, some trying to get ahold of you."
+    "人群中传来一阵愤怒的喧闹声。人们从四面八方围追阻截，有些人还试图抓住你。"
 
 # game/BKcity_events.rpy:4859
 translate schinese slave_beach_event_28be6530:
 
     # girl.char "Aaaah! [emo_heart]"
-    girl.char "Aaaah! [emo_heart]"
+    girl.char "啊啊! [emo_heart]"
 
 # game/BKcity_events.rpy:5024
 translate schinese slave_beach_event_a56ec551:
 
     # "She turns away from you, blushing, hugging her knees and legs tightly pressed together. You know better than to make a scene here."
-    "She turns away from you, blushing, hugging her knees and legs tightly pressed together. You know better than to make a scene here."
+    "她红着脸转过身去，紧紧抱住膝盖和双腿。你知道最好不要在这里大吵大闹。"
 
 # game/BKcity_events.rpy:5136
 translate schinese slave_beach_event_0cecfc03:
 
     # "You feel some resistance inside, and then something tears. A trickle of blood running down your shaft confirms that she is no longer a virgin."
-    "You feel some resistance inside, and then something tears. A trickle of blood running down your shaft confirms that she is no longer a virgin."
+    "你感觉到里面有什么东西卡住了，然后被捅开了。一缕血迹顺着你的阴茎流下来，这证明她刚刚被你夺走了处子之身。"
 
 # game/BKcity_events.rpy:5147
 translate schinese slave_beach_event_de6a410f:
 
     # "A crowd quickly gathers. [girl.name] blushes but makes no effort to stop you."
-    "A crowd quickly gathers. [girl.name] blushes but makes no effort to stop you."
+    "人们很快就把她围成一团。[girl.name]面色潮红但是并没有阻止你。"
 
 # game/BKcity_events.rpy:5498
 translate schinese slave_beach_event_67a2ab6d:
 
     # "She yelps with pain as he enters her, forcing her hymen open. She is no longer a virgin."
-    "She yelps with pain as he enters her, forcing her hymen open. She is no longer a virgin."
+    "当他的肉棒进入她的体内，撕裂了她的处女时，她痛苦地尖叫起来。她不再是处女了。"
 
 # game/BKcity_events.rpy:5513
 translate schinese slave_beach_event_afefac09:
 
     # man "Oh, man, look at that! She was a virgin, hahaha..."
-    man "Oh, man, look at that! She was a virgin, hahaha..."
+    man "好家伙, 瞧瞧! 她还是个处女, 真是赚到了，哈哈哈哈..."
 
 # game/BKcity_events.rpy:5515
 translate schinese slave_beach_event_00417ccb:
 
     # passerby "Unbelievable!"
-    passerby "Unbelievable!"
+    passerby "难以置信!"
 
 # game/BKcity_events.rpy:5645
 translate schinese slave_beach_event_ac2b8787:

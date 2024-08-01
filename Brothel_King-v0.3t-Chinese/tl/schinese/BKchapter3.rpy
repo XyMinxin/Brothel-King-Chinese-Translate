@@ -6553,7 +6553,7 @@ translate schinese homura_river_11fdb519:
 translate schinese homura_river_0a14d774:
 
     # you "Homura?"
-    you "Homura?"
+    you "焰?"
 
 # game/BKchapter3.rpy:3095
 translate schinese homura_anal_7f8cc686:
