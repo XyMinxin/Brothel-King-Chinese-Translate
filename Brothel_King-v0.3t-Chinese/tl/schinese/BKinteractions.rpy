@@ -4,61 +4,61 @@
 translate schinese slave_first_meet_0c98ab5a:
 
     # "You came to visit [girl.fullname] for the first time."
-    "你第一次来来看[girl.fullname]了。"
+    "你第一次来房间里拜访[girl.fullname]。"
 
 # game/BKinteractions.rpy:26
 translate schinese slave_first_meet_27e50de3:
 
     # you "You have nothing to fear from me. I promise you will be treated kindly."
-    you "你不用害怕的。我承诺我会善待你的"
+    you "别害怕。我会很温柔的。"
 
 # game/BKinteractions.rpy:37
 translate schinese slave_first_meet_511ce690:
 
     # you "I am your new owner. I expect you to do my bidding, but I will treat you fairly."
-    you "我是你的新主人。我希望你按我的吩咐去做，但我会公平地对待你。"
+    you "我是你的新主人。我希望你按我的吩咐去做，我会赏罚分明的。"
 
 # game/BKinteractions.rpy:47
 translate schinese slave_first_meet_f8240970:
 
     # you "I'm your owner, don't you forget that. I can do anything I want with you."
-    you "我是你的主人，别忘了这一点。我可以对你做任何我想做的事。"
+    you "我是你的主人，别忘了这一点。我让你往东你就不能往西。"
 
 # game/BKinteractions.rpy:58
 translate schinese slave_first_meet_71ebebd2:
 
     # "You slap her across the face. She looks at you in shock."
-    "You slap her across the face. She looks at you in shock."
+    "你扇了她一耳光。她惊恐地看着你。"
 
 # game/BKinteractions.rpy:60
 translate schinese slave_first_meet_afc035e4:
 
     # you "You do not address your betters without being spoken to, and you will refer to me as 'Master', or I will have your tongue!"
-    you "你不想好好说话就不要说，但只要提及我就应该称呼我为'主人'，否则小心你的舌头！"
+    you "不想好好说话那就别说了，但只要提到我就要称呼我为'主人'，否则小心你的舌头！"
 
 # game/BKinteractions.rpy:62
 translate schinese slave_first_meet_d3cc8296:
 
     # you "Learn your place, or I will discipline you personally."
-    you "搞清楚你的状况哦，要不然我会亲自让你吃苦头的。"
+    you "端正你的态度，要不然我会让你吃点苦头。"
 
 # game/BKinteractions.rpy:97
 translate schinese fight_attempt_afd9fb4a:
 
     # "[girl.name] throws herself at you, but the magical bind holding her is just too strong. She is jolted by a surge of magical energy, and crumbles to the floor, winded."
-    "[girl.name] throws herself at you, but the magical bind holding her is just too strong. She is jolted by a surge of magical energy, and crumbles to the floor, winded."
+    "[girl.name]向你冲来, 但束缚魔法十分强大。她被一股神奇的能量震动击倒，倒在地板上气喘吁吁。"
 
 # game/BKinteractions.rpy:106
 translate schinese fight_attempt_c6b9d571:
 
     # you "Ouch!"
-    you "Ouch!"
+    you "好痛!"
 
 # game/BKinteractions.rpy:108
 translate schinese fight_attempt_ac166a20:
 
     # "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes through the door."
-    "她挣扎着把你推开。你试图强迫她，但她踢了你的腹股沟，从门里逃了出去。"
+    "她挣扎着把你推开。你试图抓住她，但她对着你的肚子来了一脚，从门口逃了出去。"
 
 # game/BKinteractions.rpy:121
 translate schinese fight_attempt_3149cc65:
@@ -70,25 +70,25 @@ translate schinese fight_attempt_3149cc65:
 translate schinese fight_attempt_5e68fac8:
 
     # "She is no match for you. Restraining her, you shove her on the bed then slam the door shut."
-    "She is no match for you. Restraining her, you shove her on the bed then slam the door shut."
+    "她不是你的对手。你擒住她，把她按到床上，然后用力把门关上。"
 
 # game/BKinteractions.rpy:126
 translate schinese fight_attempt_18c556bb:
 
     # "She is no match for you. Restraining her, you force her into submission."
-    "她不是你的对手。你要约束她，逼她就范。"
+    "她不是你的对手。你抓住她，逼她就范。"
 
 # game/BKinteractions.rpy:160
 translate schinese slave_fear_test_307644d3:
 
     # "You tell her it's all right, nothing bad will happen to her, and you repeat your question slowly."
-    "你告诉她一切都好，她不会有什么不好的事情发生，然后你慢慢地重复你的问题。"
+    "你告诉她不用担心，她不会遭受虐待和不公，然后你慢慢地重复你的问题。"
 
 # game/BKinteractions.rpy:169
 translate schinese slave_fear_test_3e476c8f:
 
     # you "I see it's useless trying to talk to you. So, here's a language you will understand!"
-    you "我看跟你说话是没用的。所以，这是一种你会理解的语言！"
+    you "我看你是听不懂人话。所以，我只好用你能理解的语言了！"
 
 # game/BKinteractions.rpy:185
 translate schinese slave_naked_menu_e6324b9f:
@@ -106,37 +106,37 @@ translate schinese slave_naked_menu_11804a71:
 translate schinese slave_naked_menu_b9b8cd39:
 
     # girl.char "At... At all times? Even when going out?"
-    girl.char "在....在任何时候？甚至在外出的时候？"
+    girl.char "在....在任何时候？甚至在外面也要？"
 
 # game/BKinteractions.rpy:194
 translate schinese slave_naked_menu_078935c2:
 
     # you "Yes, of course. Let the whole world see who you really are."
-    you "是的，当然。让全世界都知道你是谁。"
+    you "是的，当然。让全世界都来欣赏你的酮体。"
 
 # game/BKinteractions.rpy:198
 translate schinese slave_naked_menu_ee284995:
 
     # "[girl.name] will remain naked until you tell her otherwise."
-    "除非你告诉她，否则[girl.name]将保持裸体。"
+    "除非你让她停下，否则[girl.name]将一直保持裸体。"
 
 # game/BKinteractions.rpy:207
 translate schinese slave_naked_menu_0e5140be:
 
     # you "You seem to be just fine showing me your body... So why don't we make it interesting: you will spend the rest of the day naked!"
-    you "你让我看看你的身体似乎很好....所以，我们为什么不让它变得有趣一点呢:你将在剩下的时间里裸体度过！"
+    you "你的身材很不错....所以，我们为什么要羞于展示它呢:你今天就光着身子吧！"
 
 # game/BKinteractions.rpy:211
 translate schinese slave_naked_menu_92e652c5:
 
     # girl.char "W-What??? But, but, I have to serve customers tonight!"
-    girl.char "什-什么？？？但是，但是，我今晚必须为顾客服务！"
+    girl.char "什，什么？？？但是，但是，我今晚还得服务客人！"
 
 # game/BKinteractions.rpy:218
 translate schinese slave_naked_menu_00a3cc5c:
 
     # you "Good."
-    you "好。"
+    you "很好。"
 
 # game/BKinteractions.rpy:225
 translate schinese slave_naked_menu_fbf00f5d:
@@ -148,19 +148,19 @@ translate schinese slave_naked_menu_fbf00f5d:
 translate schinese slave_naked_menu_95fdcba5:
 
     # "[girl.name] will remain naked for the rest of the day."
-    "[girl.name]这一天剩下的时间都是裸体的。"
+    "[girl.name]今天将保持裸体。"
 
 # game/BKinteractions.rpy:272
 translate schinese slave_beg_9bb09cb7:
 
     # "You scoff."
-    "你嘲笑。"
+    "你嘲笑她。"
 
 # game/BKinteractions.rpy:274
 translate schinese slave_beg_a03b0f83:
 
     # you "Giving me orders, are you? I don't think you understand your situation, slave. Now, get ready."
-    you "给我下命令，是吗？我认为你不了解你的处境，奴隶。现在，准备好。"
+    you "给我下命令，是吗？摆正你的位置，奴隶。现在，准备好。"
 
 # game/BKinteractions.rpy:281
 translate schinese slave_beg_e46101d0:
@@ -172,13 +172,13 @@ translate schinese slave_beg_e46101d0:
 translate schinese slave_beg_84a9d791:
 
     # you "Hmm, maybe this can be your lesson for today... But don't test my patience, or I {i}will{/i} go back to you."
-    you "嗯，也许这可以成为你今天的课....但是不要考验我的耐心，否则我{i}会{/i}回到你身边。"
+    you "嗯，也许今天的事会给你上一课....但是不要考验我的耐心，否则我{i}会{/i}回到你身边。"
 
 # game/BKinteractions.rpy:290
 translate schinese slave_beg_46582dbe:
 
     # "You take a good look at her, she's a mess. You decide to give her a break."
-    "你好好看看她，她一团糟。你决定让她休息一下。"
+    "你仔细的观察她，她的身上一团糟。你决定让她休息一下。"
 
 # game/BKinteractions.rpy:292
 translate schinese slave_beg_7b33a8a4:
@@ -196,7 +196,7 @@ translate schinese slave_interact_f4fb5b2b:
 translate schinese slave_interact_menu_20dd36e6:
 
     # "[girl.fullname] is away. You can't interact with her."
-    "[girl.fullname] is away. You can't interact with her."
+    "[girl.fullname]离开了。你无法和她互动。"
 
 # game/BKinteractions.rpy:423
 translate schinese slave_chat_init_821bd6e2:
@@ -226,7 +226,7 @@ translate schinese slave_chat_slave_life_0fe44a64:
 translate schinese slave_chat_brothel_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:537
 translate schinese slave_chat_brothel_0152e15c:
@@ -244,7 +244,7 @@ translate schinese slave_chat_brothel_3b6cd73f:
 translate schinese slave_chat_customers_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:583
 translate schinese slave_chat_customers_38a5e6b9:
@@ -292,31 +292,31 @@ translate schinese slave_chat_other_girls_b0ecb5e5:
 translate schinese slave_chat_other_girls_46ce6db7:
 
     # you "Keep being nice to the other girls, and you will make more friends in no time."
-    you "继续对其他女孩好，你很快就会交到更多的朋友。"
+    you "和其他女孩和睦相处，你很快就会交到更多的朋友。"
 
 # game/BKinteractions.rpy:669
 translate schinese slave_chat_other_girls_8622338d:
 
     # you "Stop complaining already! Get along with the other girls, or I'll make you!"
-    you "别抱怨了！和其他女孩们好好相处，否则我就逼你！"
+    you "别抱怨了！和其他女孩们好好相处，别逼我动手！"
 
 # game/BKinteractions.rpy:673
 translate schinese slave_chat_other_girls_32afbd42:
 
     # you "I think [inter.other_girl.name] is a great girl. I'm happy you two are getting along."
-    you "我认为[inter.other_girl.name]是个很棒的女孩。我很高兴你们两个相处得很好。"
+    you "我认为[inter.other_girl.name]是个很棒的女孩。我很高兴你们两个和睦相处。"
 
 # game/BKinteractions.rpy:678
 translate schinese slave_chat_other_girls_95bc21dc:
 
     # you "[inter.other_girl.name] is a stupid bitch, I'll give you that."
-    you "[inter.other_girl.name]真是个蠢婊子，我承认。"
+    you "[inter.other_girl.name]就是个愚蠢的贱人，我认同你的观点。"
 
 # game/BKinteractions.rpy:683
 translate schinese slave_chat_other_girls_773039ec:
 
     # you "I don't like you wasting time fooling around with [inter.other_girl.name]. Stop seeing her."
-    you "我不喜欢你浪费时间跟[inter.other_girl.name]鬼混。停止见到她。"
+    you "我不喜欢你浪费时间跟[inter.other_girl.name]鬼混。别和她待在一起了。"
 
 # game/BKinteractions.rpy:685
 translate schinese slave_chat_other_girls_563423bd:
@@ -328,49 +328,49 @@ translate schinese slave_chat_other_girls_563423bd:
 translate schinese slave_chat_other_girls_973b006d:
 
     # you "Stop your bickering with [inter.other_girl.name]. I want you to be friends."
-    you "停止和[inter.other_girl.name]争吵。我希望你们成为朋友。"
+    you "停止和[inter.other_girl.name]的争吵。我希望你们成为朋友。"
 
 # game/BKinteractions.rpy:726
 translate schinese slave_chat_well_being_10fbcf2f:
 
     # "She doesn't answer, but her eyes are red from crying her heart out for many a sleepless night. She clearly feels horrible here."
-    "She doesn't answer, but her eyes are red from crying her heart out for many a sleepless night. She clearly feels horrible here."
+    "她沉默不语，但她的眼眶红了，她哭了好几宿。她显然觉得这里很糟糕。"
 
 # game/BKinteractions.rpy:772
 translate schinese slave_chat_well_being_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:775
 translate schinese slave_chat_well_being_c8c06b0b:
 
     # you "I'm happy that things are to your liking here. Keep up the good work."
-    you "我很高兴这里的东西合你的意。再接再厉。"
+    you "我很高兴这里的布置合你的意。希望你能好好工作。"
 
 # game/BKinteractions.rpy:781
 translate schinese slave_chat_well_being_4c79f897:
 
     # you "I'm sorry the conditions here have been less than ideal. Please hang in there."
-    you "很抱歉，这里的条件不太理想。请坚持住。"
+    you "很抱歉，这里的条件不太理想。暂时先忍耐一下吧。"
 
 # game/BKinteractions.rpy:788
 translate schinese slave_chat_well_being_8563eaa3:
 
     # you "Don't get too comfortable. Remember, what your master gives, he can take away."
-    you "不要太舒服。记住，你的主人给予什么，他就能拿走什么。"
+    you "你还想住得有多舒服？记住，我让你住哪你就得住哪。"
 
 # game/BKinteractions.rpy:795
 translate schinese slave_chat_well_being_1de7c70a:
 
     # you "Do you think you can tell me what I should or shouldn't do? Do You?"
-    you "你觉得你能告诉我该做什么不该做什么吗？你呢？"
+    you "我做事轮得到你指指点点？你觉得呢？"
 
 # game/BKinteractions.rpy:797
 translate schinese slave_chat_well_being_cd87df78:
 
     # you "Shut up, and get ready to work."
-    you "闭嘴，准备工作。"
+    you "闭嘴，安心工作。"
 
 # game/BKinteractions.rpy:814
 translate schinese slave_chat_feelings_6b4a2459:
@@ -382,7 +382,7 @@ translate schinese slave_chat_feelings_6b4a2459:
 translate schinese slave_chat_feelings_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:869
 translate schinese slave_chat_feelings_290d7571:
@@ -394,97 +394,97 @@ translate schinese slave_chat_feelings_290d7571:
 translate schinese slave_chat_feelings_84d4dd26:
 
     # you "What the... Who asked for your opinion, you stupid bitch?"
-    you "什么....谁征求你的意见的，你这个傻婊子？"
+    you "什么....谁征求你的意见了，你这个白痴？"
 
 # game/BKinteractions.rpy:875
 translate schinese slave_chat_feelings_f1ded324:
 
     # you "Shut the fuck up!"
-    you "闭嘴！"
+    you "闭上你的臭嘴！"
 
 # game/BKinteractions.rpy:894
 translate schinese slave_chat_tastes_2d9c6347:
 
     # girl.char "Me? My tastes don't really matter. I'm just a slave, remember? *sneer*"
-    girl.char "Me? My tastes don't really matter. I'm just a slave, remember? *sneer*"
+    girl.char "我?我的想法并不重要。我只是个奴隶，不是吗? *冷笑*"
 
 # game/BKinteractions.rpy:897
 translate schinese slave_chat_tastes_bea770f7:
 
     # girl.char "What I like is to be left alone. *heavy sigh*"
-    girl.char "What I like is to be left alone. *heavy sigh*"
+    girl.char "我喜欢一个人待着。*叹气*"
 
 # game/BKinteractions.rpy:899
 translate schinese slave_chat_tastes_a56a4d9b:
 
     # "She mumbles something, but you can't hear her. She almost bursts into tears as you insist. It's useless."
-    "She mumbles something, but you can't hear her. She almost bursts into tears as you insist. It's useless."
+    "她咕哝着什么，但你听不见。在你的坚持下，她几乎哭了出来。她的意见并不重要。"
 
 # game/BKinteractions.rpy:902
 translate schinese slave_chat_tastes_b8bca4cc:
 
     # girl.char "My tastes don't matter, Master [MC.name]. I'm just here to do your bidding. *blush*"
-    girl.char "My tastes don't matter, Master [MC.name]. I'm just here to do your bidding. *blush*"
+    girl.char "我的想法不重要，[MC.name]主人。 我只是你的一个奴隶。 *脸红*"
 
 # game/BKinteractions.rpy:907
 translate schinese slave_chat_tastes_46f4f913:
 
     # "She is more relaxed around you now. She tells you a little about her tastes."
-    "她现在和你在一起更放松了。她会告诉你一些她的品味。"
+    "她现在和你在一起感到更加自然放松了。她透露了一些她的喜好。"
 
 # game/BKinteractions.rpy:913
 translate schinese slave_chat_tastes_e042d888:
 
     # "She's comfortable around you. She tells you about her tastes as you share a cup of tea."
-    "她和你在一起很舒服。当你们一起喝茶时，她会告诉你她的品味。"
+    "她和你在一起感觉很舒服。当你们一起喝下午茶时，她告诉了你她喜欢什么讨厌什么。"
 
 # game/BKinteractions.rpy:919
 translate schinese slave_chat_tastes_a1410893:
 
     # "She blushes as you sit by her side and start talking in depth about what she likes."
-    "当你坐在她身边，开始深入地谈论她喜欢什么时，她的脸会红起来。"
+    "当你坐在她身边，提及她喜欢什么时，她的脸红的像个苹果一样。"
 
 # game/BKinteractions.rpy:925
 translate schinese slave_chat_tastes_0a374176:
 
     # "She sits on your lap and throws her arms around you, telling you all about what she likes."
-    "她坐在你的腿上，双臂环抱着你，告诉你她喜欢什么。"
+    "她坐在你的腿上，双臂环抱着你，柔情似水地告诉你她喜欢什么。"
 
 # game/BKinteractions.rpy:997
 translate schinese slave_chat_tastes_be25caff:
 
     # "She blushes as she whispers something to you."
-    "她对你耳语时脸都红了。"
+    "她贴着你的耳朵轻声细语，脸红的发烫。"
 
 # game/BKinteractions.rpy:1010
 translate schinese slave_chat_tastes_be25caff_1:
 
     # "She blushes as she whispers something to you."
-    "She blushes as she whispers something to you."
+    "她贴着你的耳朵轻声细语，脸红的发烫。"
 
 # game/BKinteractions.rpy:1027
 translate schinese slave_chat_tastes_6cfd37d9:
 
     # "She tells you that she loves [fix_desc]"
-    "She tells you that she loves [fix_desc]"
+    "她告诉你她喜欢[fix_desc]行为"
 
 # game/BKinteractions.rpy:1033
 translate schinese slave_chat_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你已经发现[girl.name]对[cntext]的迷恋。"
+    "你发现[girl.name]很喜欢[xxx3]行为。"
 
 # game/BKinteractions.rpy:1045
 translate schinese slave_chat_tastes_3f2466f8:
 
     # "She tells you that she really hates [fix_desc] It creeps her out."
-    "She tells you that she really hates [fix_desc] It creeps her out."
+    "她告诉你她非常讨厌[fix_desc]行为，这让她感到恶心。"
 
 # game/BKinteractions.rpy:1051
 translate schinese slave_chat_tastes_2c0cf15f:
 
     # "You have discovered [girl.name]'s disgust for [fix.name]."
-    "你已经发现[girl.name]对[cntext]很反感。"
+    "你发现[girl.name]对[xxx3]行为感到抗拒。"
 
 # game/BKinteractions.rpy:1060
 translate schinese slave_chat_tastes_743d9504:
@@ -496,25 +496,25 @@ translate schinese slave_chat_tastes_743d9504:
 translate schinese slave_chat_tastes_5998fc4a:
 
     # "You slap her across the face." with vpunch
-    "你打了她一耳光。" with vpunch
+    "你扇了她一耳光。" with vpunch
 
 # game/BKinteractions.rpy:1069
 translate schinese slave_chat_tastes_f27b665a:
 
     # you "I've asked you a fucking question! Don't you dare ignore me, slave!"
-    you "我问了你一个该死的问题！你竟敢不理我，奴隶！"
+    you "我在问你话呢！别给我装聋作哑！"
 
 # game/BKinteractions.rpy:1090
 translate schinese slave_chat_origins_0d8fa5c8:
 
     # "She rolls her eyes."
-    "她翻了翻眼睛。"
+    "她翻了翻白眼。"
 
 # game/BKinteractions.rpy:1091
 translate schinese slave_chat_origins_71bc563a:
 
     # girl.char "What kind of question is that... Why do you care where I come from!"
-    girl.char "这是什么问题？你为什么关心我来自哪里！"
+    girl.char "这是什么问题？你为什么要问我来自哪里！"
 
 # game/BKinteractions.rpy:1094
 translate schinese slave_chat_origins_06398373:
@@ -526,13 +526,13 @@ translate schinese slave_chat_origins_06398373:
 translate schinese slave_chat_origins_cb218fe8:
 
     # girl.char "I'm sorry, Master, but where I come from isn't important. I'm here, now..."
-    girl.char "对不起，师傅，我从哪里来并不重要。我在这里，现在...."
+    girl.char "对不起，主人，我从哪里来并不重要。我此时此刻就在这里...."
 
 # game/BKinteractions.rpy:1098
 translate schinese slave_chat_origins_9c8a9afb:
 
     # "Her mood darkens."
-    "她的心情变暗。"
+    "她的心情变得阴郁。"
 
 # game/BKinteractions.rpy:1099
 translate schinese slave_chat_origins_77d129e6:
@@ -550,97 +550,97 @@ translate schinese slave_chat_origins_cd2cdcd3:
 translate schinese slave_chat_origins_1b02f428:
 
     # girl.char "Home... Oh..."
-    girl.char "家哦...."
+    girl.char "我的家乡...."
 
 # game/BKinteractions.rpy:1132
 translate schinese slave_chat_origins_743d9504:
 
     # you "Fine, we'll discuss this later."
-    you "Fine, we'll discuss this later."
+    you "好吧，我们稍后再讨论这个话题。"
 
 # game/BKinteractions.rpy:1139
 translate schinese slave_chat_origins_5998fc4a:
 
     # "You slap her across the face." with vpunch
-    "You slap her across the face." with vpunch
+    "你扇了她一耳光。" with vpunch
 
 # game/BKinteractions.rpy:1141
 translate schinese slave_chat_origins_f27b665a:
 
     # you "I've asked you a fucking question! Don't you dare ignore me, slave!"
-    you "I've asked you a fucking question! Don't you dare ignore me, slave!"
+    you "我在问你话呢！别给我装聋作哑！"
 
 # game/BKinteractions.rpy:1180
 translate schinese slave_train_sex_acts_f7a1c704:
 
     # you "Remove your clothes. I want you to expose your body to me."
-    you "脱光你的衣服。我要你把你的身体暴露给我。"
+    you "脱光你的衣服。我要好好欣赏你的身体。"
 
 # game/BKinteractions.rpy:1182
 translate schinese slave_train_sex_acts_fc875c62:
 
     # you "I want you to service me with your mouth and hands."
-    you "我要你用你的嘴和手来服侍我。"
+    you "我要你用你的嘴和手来服侍我的肉棒。"
 
 # game/BKinteractions.rpy:1184
 translate schinese slave_train_sex_acts_47132472:
 
     # you "Lay down. I am going to fuck you."
-    you "躺下。我要操你。"
+    you "到床上去，撅起你的屁股，把小穴露出来。"
 
 # game/BKinteractions.rpy:1186
 translate schinese slave_train_sex_acts_76e7b752:
 
     # you "Turn around and bend over. I am going to fuck your ass."
-    you "转过身来，弯下腰。我要走后门。"
+    you "转过去，把腰弯下去。我要给你的菊穴开个苞。"
 
 # game/BKinteractions.rpy:1188
 translate schinese slave_train_sex_acts_4f7088ff:
 
     # you "Today, I'll introduce you to some of my new toys..."
-    you "今天，我将向你介绍我的一些新玩具...."
+    you "今天，我要让你试试我的新玩具...."
 
 # game/BKinteractions.rpy:1190
 translate schinese slave_train_sex_acts_f697fa38:
 
     # "You call Sill over to [girl.name]'s room."
-    "你把希露叫到[girl.name]房间去。"
+    "你把希露叫到[girl.name]的房间。"
 
 # game/BKinteractions.rpy:1191
 translate schinese slave_train_sex_acts_1ea015b7:
 
     # sill happy "Yes, Master [MC.name]?"
-    sill happy "是的，主人[MC.name]？"
+    sill happy "[MC.name]主人，什么事？"
 
 # game/BKinteractions.rpy:1192
 translate schinese slave_train_sex_acts_661101f1:
 
     # you "Get naked. You and [girl.name] will pleasure each other."
-    you "来..脱光.你和[girl.name]会彼此喜欢的。"
+    you "来..把衣服都脱了，陪[girl.name]在床上好好玩玩。"
 
 # game/BKinteractions.rpy:1195
 translate schinese slave_train_sex_acts_538868c1:
 
     # "You call Sill over, and ask her to fetch a security guard."
-    "You call Sill over, and ask her to fetch a security guard."
+    "你让希露去门口把保安喊来。"
 
 # game/BKinteractions.rpy:1197
 translate schinese slave_train_sex_acts_ae4d436d:
 
     # "You call Sill over, and ask her to fetch a random vagrant off the street."
-    "You call Sill over, and ask her to fetch a random vagrant off the street."
+    "你让希露去大街上随便找一个流浪汉过来。"
 
 # game/BKinteractions.rpy:1198
 translate schinese slave_train_sex_acts_d2c91b4c:
 
     # sill happy "All right. What for, Master [MC.name]?"
-    sill happy "All right. What for, Master [MC.name]?"
+    sill happy "遵命，不过为什么, [MC.name]主人？"
 
 # game/BKinteractions.rpy:1199
 translate schinese slave_train_sex_acts_7c69242a:
 
     # you "The lucky sod and I are going to fuck this girl silly. [girl.name], get yourself ready!"
-    you "The lucky sod and I are going to fuck this girl silly. [girl.name], get yourself ready!"
+    you "那个撞大运的家伙要和我一起干这个家伙。 [girl.name]，给我做好准备！"
 
 # game/BKinteractions.rpy:1212
 translate schinese slave_train_sex_acts_3faa2ddc:
@@ -652,55 +652,55 @@ translate schinese slave_train_sex_acts_3faa2ddc:
 translate schinese slave_train_sex_acts_a90650c2:
 
     # "She moves to position herself where you want her."
-    "她会移动到你想要她的位置。"
+    "她移动到了你指定的位置。"
 
 # game/BKinteractions.rpy:1224
 translate schinese slave_train_sex_acts_df180724:
 
     # "She resists you."
-    "她拒绝你。"
+    "她拒绝了你的要求。"
 
 # game/BKinteractions.rpy:1239
 translate schinese slave_train_sex_acts_cbaff687:
 
     # "You ignore her complaints and gesture for her to move to the bed."
-    "你不理会她的抱怨，也不做让她上床的手势。"
+    "你无视了她的抱怨，摆手势让她挪到床上去"
 
 # game/BKinteractions.rpy:1250
 translate schinese slave_train_sex_acts_99742c96:
 
     # "She refuses you."
-    "她拒绝你。"
+    "她拒绝了你的要求。"
 
 # game/BKinteractions.rpy:1302
 translate schinese slave_remove_fixation_8a1b364c:
 
     # "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
-    "[girl.name]被逼得太紧了，她现在完全讨厌[cntext]。你对此无能为力。"
+    "[girl.name]被逼的太紧,她恨透了[fix.name]行为。你对此束手无策。"
 
 # game/BKinteractions.rpy:1315
 translate schinese slave_remove_fixation_44008d8e:
 
     # "[girl.fullname] isn't comfortable enough with any of the required sex acts to try to remove this fixation."
-    "[girl.fullname]对任何试图消除这种癖好的必要的性行为都感到不舒服。"
+    "[girl.fullname]对任何试图说服她接受的方法都感到不舒服。"
 
 # game/BKinteractions.rpy:1329
 translate schinese slave_remove_fixation_70c73ec2:
 
     # girl.char "Uh, [fix.short_name]? Well... Okay... {color=[c_green]}*accepted*{/color}"
-    girl.char "Uh, [fix.short_name]? Well... Okay... {color=[c_green]}*accepted*{/color}"
+    girl.char "哦, [fix.short_name]吗? 好吧... 好吧... {color=[c_green]}*接受*{/color}"
 
 # game/BKinteractions.rpy:1333
 translate schinese slave_remove_fixation_b8c47446:
 
     # girl.char "Oh no, Master, not [fix.short_name]! Let's do something else... {color=[c_lightred]}*resisted*{/color}"
-    girl.char "Oh no, Master, not [fix.short_name]! Let's do something else... {color=[c_lightred]}*resisted*{/color}"
+    girl.char "不, 主人, 我不要[fix.short_name]！我们不能做点别的吗... {color=[c_lightred]}*抵抗*{/color}"
 
 # game/BKinteractions.rpy:1337
 translate schinese slave_remove_fixation_b2b63228:
 
     # girl.char "[fix.short_name]? No, no way!!! {color=[c_lightred]}*refused*{/color}"
-    girl.char "[fix.short_name]? No, no way!!! {color=[c_lightred]}*refused*{/color}"
+    girl.char "[fix.short_name]? 不可能，没门!!! {color=[c_lightred]}*拒绝*{/color}"
 
 # game/BKinteractions.rpy:1342
 translate schinese slave_remove_fixation_11fdb519:
@@ -712,19 +712,19 @@ translate schinese slave_remove_fixation_11fdb519:
 translate schinese slave_remove_fixation_c1dc810d:
 
     # you "You're going to do as you're told."
-    you "你要按吩咐去做。"
+    you "你要听我的话。"
 
 # game/BKinteractions.rpy:1358
 translate schinese slave_remove_fixation_798ef7c1:
 
     # you "I don't care if you like [fix.short_name] or not, slave. When you work for me, you have to do anything I tell you."
-    you "I don't care if you like [fix.short_name] or not, slave. When you work for me, you have to do anything I tell you."
+    you "我才不管你喜不喜欢[fix.short_name], 你不过是个奴隶。既然我是你的主人，你就得听从我的命令。"
 
 # game/BKinteractions.rpy:1363
 translate schinese slave_remove_fixation_3d88aec3:
 
     # you "This is not your call, slave! Get ready! *angry*"
-    you "This is not your call, slave! Get ready! *angry*"
+    you "这还轮不到你说了算！给我过来！ *生气*"
 
 # game/BKinteractions.rpy:1406
 translate schinese slave_remove_fixation_71a7172f:
@@ -742,79 +742,79 @@ translate schinese slave_remove_fixation_62a43486:
 translate schinese slave_remove_fixation_248c9578:
 
     # "[girl.name] pushes you back, curls up and starts sobbing uncontrollably. You cannot get anything more out of her."
-    "[girl.name]把你往后推，卷起来，开始失控地哭泣。你不能再从她那里得到什么了。"
+    "[girl.name]把你往后推，缩成一团，情绪崩溃止不住地哭泣。你不能再逼她了。"
 
 # game/BKinteractions.rpy:1436
 translate schinese slave_remove_fixation_836fed3d:
 
     # "[girl.name] is still very reluctant, but you could show her a thing or two."
-    "[girl.name] 还是很不情愿，但你可以给她看一两件事。"
+    "[girl.name]还是有些抗拒，但你可以让她看看别人是怎么做的。"
 
 # game/BKinteractions.rpy:1444
 translate schinese slave_remove_fixation_78c39577:
 
     # "[girl.name] is getting used to [text1] Her progress is encouraging."
-    "[girl.name] is getting used to [text1] Her progress is encouraging."
+    "[girl.name] 渐渐地习惯了[text1]。她的进步令人满意。"
 
 # game/BKinteractions.rpy:1448
 translate schinese slave_remove_fixation_87870cd5:
 
     # "[girl.name] did very well today. [text1] is beginning to feel almost normal to her."
-    "[girl.name]今天做得很好。[text1]开始觉得自己几乎是正常的了。"
+    "[girl.name]今天表现很好。她开始觉得[text1]是一个很正常的行为。"
 
 # game/BKinteractions.rpy:1465
 translate schinese slave_train_lecture_96a226f4:
 
     # you "Today, I wanna talk to you about [act_desc]."
-    you "Today, I wanna talk to you about [act_desc]."
+    you "今天, 我想和你聊聊关于[act_desc]的事。"
 
 # game/BKinteractions.rpy:1475
 translate schinese slave_train_lecture_c9082620:
 
     # "You feel inspired today, and give her one of the most impassioned lecture you are capable of."
-    "今天你感到很受鼓舞，给她做一个你能做的最有激情的演讲。"
+    "今天你有点小激动，打算给她做一个充满激情的演讲。"
 
 # game/BKinteractions.rpy:1477
 translate schinese slave_train_lecture_d14636f7:
 
     # "You haven't really prepared anything for this lesson, and it shows."
-    "你没有为这节课做任何准备，这一点很明显。"
+    "不过很显然，你没有为演讲做任何准备。"
 
 # game/BKinteractions.rpy:1479
 translate schinese slave_train_lecture_8d0c5ac2:
 
     # "You give her the usual speech about the merits of [act_desc]."
-    "You give her the usual speech about the merits of [act_desc]."
+    "你按照惯例给她科普了一下[act_desc]的好处。"
 
 # game/BKinteractions.rpy:1484
 translate schinese slave_train_lecture_10372d4e:
 
     # "She listens intently, because she admires you."
-    "她听得很认真，因为她欣赏你。"
+    "她听得很认真，因为她崇拜你。"
 
 # game/BKinteractions.rpy:1486
 translate schinese slave_train_lecture_a1086925:
 
     # "She listens carefully, because she fears you."
-    "她仔细听着，因为她害怕你。"
+    "她仔细地听着，因为她害怕你。"
 
 # game/BKinteractions.rpy:1491
 translate schinese slave_train_lecture_10ab542b:
 
     # "You have made good progress. She is now more knowledgeable and relaxed about [act_desc]."
-    "You have made good progress. She is now more knowledgeable and relaxed about [act_desc]."
+    "演讲效果很好。她现在加深了对[act_desc]的了解，没有那么抵触了。"
 
 # game/BKinteractions.rpy:1494
 translate schinese slave_train_lecture_dff768af:
 
     # "You have made some progress. She is now a little more relaxed about [act_desc]."
-    "You have made some progress. She is now a little more relaxed about [act_desc]."
+    "演讲起到了一定的效果。 她对[act_desc]没有那么抵触了。"
 
 # game/BKinteractions.rpy:1497
 translate schinese slave_train_lecture_5a84a178:
 
     # "She politely hears you out, but it doesn't seem to change her mind. She feels the same about [act_desc]."
-    "She politely hears you out, but it doesn't seem to change her mind. She feels the same about [act_desc]."
+    "她很有耐心地听你说完, 但她一点也没听进去。她对[act_desc]的态度还是保持不变。"
 
 # game/BKinteractions.rpy:1506
 translate schinese slave_train_obedience_0a9fac1e:
@@ -826,19 +826,19 @@ translate schinese slave_train_obedience_0a9fac1e:
 translate schinese slave_train_obedience_c19afc70:
 
     # "You give her a few more menial chores. You observe her as she carries out her tasks."
-    "You give her a few more menial chores. You observe her as she carries out her tasks."
+    "你让她做更多的家务。你在她工作时观察她。"
 
 # game/BKinteractions.rpy:1531
 translate schinese slave_train_obedience_c39134c6:
 
     # "She follows your instructions carefully, doing her best to impress you."
-    "她认真地听你的指示，尽力给你留下好印象。"
+    "她认真地听从你的指示，尽力给你留下好印象。"
 
 # game/BKinteractions.rpy:1536
 translate schinese slave_train_obedience_f1397a6f:
 
     # "She grumbles and drags her feet as she goes about her business. You inspect her work when she is finished. It's sloppy."
-    "她抱怨着，做事拖拖拉拉。当她完成时，你检查她的工作。这是草率的。"
+    "她不情不愿的，做事拖拖拉拉。当她结束工作时，你检查她的工作成果，简直就是糊弄了事。"
 
 # game/BKinteractions.rpy:1548
 translate schinese slave_train_obedience_80a8e70b:
@@ -850,7 +850,7 @@ translate schinese slave_train_obedience_80a8e70b:
 translate schinese slave_train_obedience_5f4a6c8f:
 
     # you "You call that working? Do it all over again, and do it right this time!"
-    you "你管这叫工作？再做一遍，这次要做对！"
+    you "你管这叫工作？再做一遍，这次认真点！"
 
 # game/BKinteractions.rpy:1558
 translate schinese slave_train_obedience_764b847f:
@@ -862,7 +862,7 @@ translate schinese slave_train_obedience_764b847f:
 translate schinese slave_train_obedience_af9de7d2:
 
     # you "Mmmh. I'll give her a break this time."
-    you "哼。这次我饶了她。"
+    you "哼。这次先放她一马。"
 
 # game/BKinteractions.rpy:1567
 translate schinese slave_train_constitution_424ba973:
@@ -874,61 +874,61 @@ translate schinese slave_train_constitution_424ba973:
 translate schinese slave_train_constitution_fcae42b6:
 
     # "You give her a few more physical feats to achieve. You follow her and advise her as she carries out her tasks."
-    "You give her a few more physical feats to achieve. You follow her and advise her as she carries out her tasks."
+    "你让她做了更多的体能训练。你盯着她，在她训练时给她建议。"
 
 # game/BKinteractions.rpy:1592
 translate schinese slave_train_constitution_3f7a8014:
 
     # "She follows your training instructions carefully, progressing thanks to your advice."
-    "她认真地按照你的培训指导，在你的建议下不断进步。"
+    "她认真地按照你的指导训练，在你的建议下不断进步。"
 
 # game/BKinteractions.rpy:1597
 translate schinese slave_train_constitution_5bca5e8f:
 
     # "She struggles with the task and is out of breath within a few minutes. She implores you to let her rest."
-    "她吃力地做着这项工作，几分钟后就上气不接下气了。她恳求你让她休息。"
+    "她吃力地做着动作，几分钟后就上气不接下气了。她恳求你让她休息一下。"
 
 # game/BKinteractions.rpy:1609
 translate schinese slave_train_constitution_80a8e70b:
 
     # you "I'm happy that you are giving it your best."
-    you "I'm happy that you are giving it your best."
+    you "我很高兴你能够全力以赴。"
 
 # game/BKinteractions.rpy:1614
 translate schinese slave_train_constitution_9b679244:
 
     # you "You're a maggot, you're puke, you're the last thing on earth!!! Do that again!"
-    you "你是蛆虫，你呕吐，你是地球上最后的东西！！做一遍！"
+    you "你是蛆虫，你是垃圾，你是地上的尘土！！再来一遍！"
 
 # game/BKinteractions.rpy:1621
 translate schinese slave_train_constitution_764b847f:
 
     # "You nod and send her back to her room."
-    "You nod and send her back to her room."
+    "你点点头，把她送回她的房间。"
 
 # game/BKinteractions.rpy:1623
 translate schinese slave_train_constitution_af9de7d2:
 
     # you "Mmmh. I'll give her a break this time."
-    you "Mmmh. I'll give her a break this time."
+    you "Mmmh。这次先放她一马。"
 
 # game/BKinteractions.rpy:1665
 translate schinese slave_train_05a1f5a9:
 
     # "[text1]she starts removing her clothes."
-    "[text1]she starts removing her clothes."
+    "[text1]她开始一件件的脱下衣服。"
 
 # game/BKinteractions.rpy:1667
 translate schinese slave_train_a09e58bd:
 
     # "[text1]she gets on her knees to service you."
-    "她跪下来为你服务。"
+    "[text1]她双膝跪地，用手掏出你的肉棒。"
 
 # game/BKinteractions.rpy:1669
 translate schinese slave_train_6cb826a9:
 
     # "[text1]she strips down and lies down on the bed with her legs spread out."
-    "[text1]she strips down and lies down on the bed with her legs spread out."
+    "[text1]她脱下衣服，张开双腿躺在床上。"
 
 # game/BKinteractions.rpy:1671
 translate schinese slave_train_108f9a3d:
@@ -940,7 +940,7 @@ translate schinese slave_train_108f9a3d:
 translate schinese slave_train_87afe0e2:
 
     # "[text1]she strips naked and positions herself on all fours, waiting for your next move."
-    "[text1]she strips naked and positions herself on all fours, waiting for your next move."
+    "[text1]她脱光了衣服，趴在地上，像一只母狗。等待着你的行动。"
 
 # game/BKinteractions.rpy:1675
 translate schinese slave_train_4177c3d9:
@@ -952,7 +952,7 @@ translate schinese slave_train_4177c3d9:
 translate schinese slave_train_d526b941:
 
     # "[text1]she strips naked as you and the other guy remove your clothes."
-    "[text1]she strips naked as you and the other guy remove your clothes."
+    "[text1]她在你和另一个人脱衣服时已经做好了准备。"
 
 # game/BKinteractions.rpy:1793
 translate schinese slave_advanced_training_e589ac84:
@@ -970,13 +970,13 @@ translate schinese slave_advanced_training_e589ac84_1:
 translate schinese slave_advanced_training_cfcd6460:
 
     # "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
-    "你发现了[girl.fullname]的一个特殊嗜好：{b}[cntext]{/b}。你可以用它来加速她的训练。"
+    "你发现了[girl.fullname]的一个特殊嗜好：{b}[xxx4]{/b}。你可以用它来提高训练效果。"
 
 # game/BKinteractions.rpy:1818
 translate schinese slave_advanced_training_cdeeb7c3:
 
     # "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
-    "因为[girl.name]喜欢{b}[cntext]{/b}，所以她进步得更快了。"
+    "因为[girl.name]喜欢{b}[xxx4]{/b}，所以训练效果有所提升。"
 
 # game/BKinteractions.rpy:1824
 translate schinese slave_advanced_training_e589ac84_2:
@@ -988,13 +988,13 @@ translate schinese slave_advanced_training_e589ac84_2:
 translate schinese slave_advanced_training_47722ac0:
 
     # "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
-    "你发现了[girl.fullname]的一个恐惧事物：{b}[cntext]{/b}。也许你可以好好利用这些信息。"
+    "你发现了[girl.fullname]对{b}[xxx4]{/b}感到十分抵触。尽量避免在训练中做这些事吧。"
 
 # game/BKinteractions.rpy:1843
 translate schinese slave_advanced_training_9e16c264:
 
     # "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
-    "因为[girl.name]讨厌{b}[cntext]{/b}，所以她的进度变慢了。"
+    "因为[girl.name]讨厌{b}[xxx4]{/b}，所以训练效果不是很理想。"
 
 # game/BKinteractions.rpy:1854
 translate schinese slave_advanced_training_f0742fc4:
@@ -1006,13 +1006,13 @@ translate schinese slave_advanced_training_f0742fc4:
 translate schinese slave_do_4120bcbf:
 
     # "Taking off her clothes, she stands completely nude for your attention."
-    "她脱下衣服，一丝不挂地站在那里，以引起你的注意。"
+    "她脱下衣服，一丝不挂地站在那里，试图引起你的注意。"
 
 # game/BKinteractions.rpy:1871
 translate schinese slave_do_3a772807:
 
     # "She is shaking with fear and shame, desperately trying to hide her private parts."
-    "她因恐惧和羞愧而浑身发抖，拼命想隐藏自己的私处。"
+    "她因恐惧和羞愧而浑身发抖，拼命想挡住自己的私处。"
 
 # game/BKinteractions.rpy:1875
 translate schinese slave_do_7f1cfead:
@@ -1024,169 +1024,169 @@ translate schinese slave_do_7f1cfead:
 translate schinese slave_do_05ee79e1:
 
     # "You order her to remove her hands from covering her breasts, and she complies grudgingly. She looks very unhappy as you contemplate her assets."
-    "你吩咐她把手从遮胸上挪开，她却勉强答应。你仔细打量她的财产时，她看上去很不高兴。"
+    "你吩咐她把手从胸口挪开，她不情愿的把手放下。你仔细打量她的身体时，她看上去很不高兴。"
 
 # game/BKinteractions.rpy:1881
 translate schinese slave_do_19952fbb:
 
     # "She takes some convincing, but eventually she stops covering her body and stands there with her hands behind her back. You move in close to inspect her."
-    "她花了一些时间来说服自己，但最终她停止了掩盖自己的身体，站在那里，双手放在背后。你走近看她。"
+    "她花了一些时间来说服自己，但最终她不再遮挡自己的身体，站在那里，双手放在背后。你走到她身边。"
 
 # game/BKinteractions.rpy:1884
 translate schinese slave_do_a33505ca:
 
     # "She doesn't make a fuss, letting you get an eyeful. It seems that she is getting used to it."
-    "她不会大惊小怪，让你看个够。看来她已经习惯了。"
+    "她毫不在意，随你怎么看。看来她已经习惯了。"
 
 # game/BKinteractions.rpy:1887
 translate schinese slave_do_2d85c0f9:
 
     # "She seems to enjoy your gaze as she displays her assets for your inspection. She doesn't complain when you [text1]."
-    "She seems to enjoy your gaze as she displays her assets for your inspection. She doesn't complain when you [text1]."
+    "她似乎很享受你的目光，她尽情的展示自己的资本。当你[text1]时她也没有抱怨。"
 
 # game/BKinteractions.rpy:1890
 translate schinese slave_do_33960f7d:
 
     # "She likes being naked, and she moans softly as you [text1]."
-    "她喜欢赤身裸体，像你[text1]一样轻声呻吟。"
+    "她喜欢光着身子，当你[text1]时她轻声呻吟。"
 
 # game/BKinteractions.rpy:1893
 translate schinese slave_do_e6f38861:
 
     # "She loves being naked and feeling your eyes and hands all over her. She almost reaches climax when you [text1]."
-    "她喜欢赤身裸体，感觉你的眼睛和手在她身上。当你[text1]时，她几乎达到了高潮。"
+    "她喜欢光着身子，感觉你视线在抚摸和侵犯她。当你[text1]时，她的小穴已经泛滥成灾。"
 
 # game/BKinteractions.rpy:1896
 translate schinese slave_do_9381b53b:
 
     # "Naked is how she always wants to be. Her love juices run down her legs as you [text1]."
-    "裸体是她一直想要的样子。当你[text1]，她的爱的汁液顺着腿流下来。"
+    "她恨不得一直不穿衣服。当你[text1]时，她的淫水顺着腿流下来。"
 
 # game/BKinteractions.rpy:1911
 translate schinese slave_do_0ebeabff:
 
     # "You push your dick into her mouth, making her service you with her mouth and tongue."
-    "你把你的鸡巴塞进她嘴里，让她用嘴和舌头为你服务。"
+    "你把你的鸡巴塞进她的嘴里，让她用嘴和舌头为你服务。"
 
 # game/BKinteractions.rpy:1915
 translate schinese slave_do_2af46a0e:
 
     # "You ask her to use her hands to massage and service your dick."
-    "你让她用她的手按摩你的阴茎。"
+    "你让她用她的手按摩你的老二。"
 
 # game/BKinteractions.rpy:1919
 translate schinese slave_do_5e6161b3:
 
     # "You ask her to use her naughty tits to service your dick."
-    "你让她用她那调皮的奶头为你的老二服务。"
+    "你让她用她充血的奶头摩擦挤压你的老二。"
 
 # game/BKinteractions.rpy:1923
 translate schinese slave_do_89b9c9d8:
 
     # "You ask her to masturbate and give you a good show while you do the same."
-    "你让她手淫，当你手淫的时候给你一个好的表现。"
+    "你让她在你面前自慰，同时你也掏出老二对着她打飞机。"
 
 # game/BKinteractions.rpy:1927
 translate schinese slave_do_d4f6e564:
 
     # "You ask her to service you with her body."
-    "你让她用她的身体为你服务。"
+    "你让她用她的身体来侍奉你。"
 
 # game/BKinteractions.rpy:1930
 translate schinese slave_do_8f81de5c:
 
     # "She is completely clueless and unable to give you any pleasure."
-    "她完全没有头绪，不能给你任何快乐。"
+    "她手忙脚乱的，让你感觉很难受。"
 
 # game/BKinteractions.rpy:1934
 translate schinese slave_do_7f1cfead_1:
 
     # you "This is pointless."
-    you "This is pointless."
+    you "这毫无意义。"
 
 # game/BKinteractions.rpy:1937
 translate schinese slave_do_fc70367c:
 
     # "She has no technique, and you quickly start to feel bored."
-    "她没有技巧，你很快就会觉得无聊。"
+    "她的动作很不熟练，没过一会你就觉得无聊起来。"
 
 # game/BKinteractions.rpy:1940
 translate schinese slave_do_df05f864:
 
     # "She isn't very good, and you give her tips to improve her technique."
-    "她不是很好，你给她一些建议来提高她的技巧。"
+    "她的技巧不是很好，你给了她一些建议来提高她的技巧。"
 
 # game/BKinteractions.rpy:1943
 translate schinese slave_do_cf8a6b8e:
 
     # "She is starting to get better, and you both get pleasure as she [text1]."
-    "她开始好转了，你们俩都因为她[text1]而感到高兴。"
+    "她的动作逐渐熟练起来，你们俩都因为她[text1]而感到高兴。"
 
 # game/BKinteractions.rpy:1946
 translate schinese slave_do_2b68920b:
 
     # "She gives you a great show as she [text1], making you hard in an instant."
-    "她给你一个伟大的表演，因为她[text1]，让你在一瞬间努力。"
+    "她在[text1]时让你大饱眼福，你一下子就硬了起来。"
 
 # game/BKinteractions.rpy:1949
 translate schinese slave_do_42cc62f9:
 
     # "She is very good at this now, giving you a dirty, slutty look as she [text1]."
-    "她现在很擅长这个，当她[text1]给你一个肮脏的，淫荡的表情。"
+    "她现在非常熟练。她在[text1]时露出下流，淫荡的表情。"
 
 # game/BKinteractions.rpy:1952
 translate schinese slave_do_cd88a4a6:
 
     # "She is a perfect slut, giving you a great show as she services you with her body."
-    "她是一个完美的荡妇，当她用她的身体为你服务时，给你一个很棒的表演。"
+    "她真是个迷人的小妖精，当她用她的身体为你服务时，你感觉到了升天般的快感。"
 
 # game/BKinteractions.rpy:1955
 translate schinese slave_do_8a7782d2:
 
     # "She is a true sex goddess, instantly bringing you to your limit as she [text1]."
-    "她是一位真正的性爱女神，当她[text1]就会让你的性欲达到极限。"
+    "她简直就是个魅魔，当她[text1]时你已经压不住枪了。"
 
 # game/BKinteractions.rpy:1967
 translate schinese slave_do_b299934b:
 
     # "You waste no time and start fucking her."
-    "你不浪费时间，开始操她。"
+    "你懒得和她废话，直接提枪上阵。"
 
 # game/BKinteractions.rpy:1970
 translate schinese slave_do_13e2cd84:
 
     # "Her pussy is completely dry. She has zero experience and just lays there, waiting for it to be over."
-    "她的阴部完全干了。她没有任何经验，只是躺在那里，等着事情结束。"
+    "她的小穴一点都不湿润。她一点经验也没有，就像一只咸鱼一样躺在那里等待事情结束。"
 
 # game/BKinteractions.rpy:1974
 translate schinese slave_do_f0255cff:
 
     # "Frustrated, you give up after a minute."
-    "沮丧的你，一分钟后就放弃了。"
+    "你大失所望，一分钟后就放弃了。"
 
 # game/BKinteractions.rpy:1976
 translate schinese slave_do_bb2b10dc:
 
     # you "This is useless."
-    you "这是无用的。"
+    you "这一点用也没有。"
 
 # game/BKinteractions.rpy:1979
 translate schinese slave_do_47e9cdcc:
 
     # "She has very little experience, and all she can do is lay there as you have your way with her."
-    "她没有什么经验，她所能做的就是躺在那里，就像你对她那样。"
+    "她没有什么经验，她所能做的就是躺在那里，就像你让她做的那样。"
 
 # game/BKinteractions.rpy:1982
 translate schinese slave_do_7895b6b0:
 
     # "She gets a little wet, and you can fuck her a little more easily. She doesn't seem to enjoy herself much, however."
-    "她有点湿，你可以更容易地操她。然而，她似乎玩得不太开心。"
+    "她的小穴有些湿润了，你可以更加容易地插入。然而，她似乎并不享受。"
 
 # game/BKinteractions.rpy:1985
 translate schinese slave_do_d8d09047:
 
     # "She is starting to feel it more, moaning as she [text1]."
-    "她开始有更多的感觉，一边呻吟一边[text1]。"
+    "她开始变得敏感起来，一边呻吟一边[text1]。"
 
 # game/BKinteractions.rpy:1988
 translate schinese slave_do_f3424d41:
@@ -1198,31 +1198,31 @@ translate schinese slave_do_f3424d41:
 translate schinese slave_do_b3e13e2f:
 
     # "She is already very wet, and she takes initiative, screaming with pleasure as she [text1]."
-    "她已经很湿了，她采取主动，高兴地尖叫着当她[text1]。"
+    "她的小穴已经如同洪水般泛滥，她变得十分主动，当她[text1]时她兴奋得发出尖叫。"
 
 # game/BKinteractions.rpy:1994
 translate schinese slave_do_207f598f:
 
     # "She loves it when she [text1], begging you to slam your hard cock into her wet pussy."
-    "她喜欢这样当[text1]时，求你把你的硬鸡巴塞进她湿漉漉的阴部。"
+    "她很喜欢[text1]，乞求你把大鸡巴塞进她饥渴的小穴。"
 
 # game/BKinteractions.rpy:1997
 translate schinese slave_do_61e17ef5:
 
     # "Her pussy is dripping with love juice. She is a true sex goddess, gripping your dick inside her hot, wet cunt as you give her a fierce pounding."
-    "她的阴部滴着爱情的汁液。她是一个真正的性女神，当你给她猛烈的一击时，她会把你的阴茎夹在她湿热的阴蒂里。"
+    "她的小穴已经泛滥成灾了。她就是性爱女神的化身，当你狠狠地撞击她的花心时，她的肉壁紧缩把你的肉棒牢牢地锁在肉穴里。"
 
 # game/BKinteractions.rpy:2009
 translate schinese slave_do_e0621008:
 
     # "You push your hard dick inside her tight ass."
-    "你把你的硬鸡巴塞进她的屁股里。"
+    "你试着把你的肉棒插进她紧绷屁股里。"
 
 # game/BKinteractions.rpy:2012
 translate schinese slave_do_3f07bf8c:
 
     # "Her asshole shuts down completely. You can't even get an inch inside. You give up after a minute, upset and frustrated."
-    "她的混蛋完全闭嘴了。你连一英寸都进不去。你在一分钟后就放弃了，感到沮丧和沮丧。"
+    "她的屁股完全闭合。你连一厘米都插进不去。你在努力了一分钟后放弃了，你感到非常失望。"
 
 # game/BKinteractions.rpy:2016
 translate schinese slave_do_3daf2855:
@@ -1234,91 +1234,91 @@ translate schinese slave_do_3daf2855:
 translate schinese slave_do_dfd268de:
 
     # "You manage to get in with great difficulty, using a lot of lube. She complains that it hurts."
-    "你用了很多润滑油，好不容易才弄进去。她抱怨说疼。"
+    "你用了很多润滑油，好不容易才插进去一点。她抱怨着说很疼。"
 
 # game/BKinteractions.rpy:2022
 translate schinese slave_do_34d95ed5:
 
     # "She relaxes a little, and you manage to get inside even though she's extremely tight."
-    "她放松了一点，你设法进去，即使她非常紧张。"
+    "她逐渐放松，你一点一点地插进去，但里面还是很紧。"
 
 # game/BKinteractions.rpy:2023
 translate schinese slave_do_ac5a4ee4:
 
     # girl.char "I feel weird..."
-    girl.char "我觉得奇怪...."
+    girl.char "我感觉怪怪的...."
 
 # game/BKinteractions.rpy:2026
 translate schinese slave_do_a5918939:
 
     # "She is more relaxed now, and you slide in without too much trouble. She moans as you give her a good fucking."
-    "她现在更放松了，你也不用太麻烦就溜进去了。她呻吟，因为你给她一个好他妈的。"
+    "她现在可以收放自如了，你费多大功夫就插进去了。她发出呻吟，你激烈地来回冲刺。"
 
 # game/BKinteractions.rpy:2029
 translate schinese slave_do_b24d1ba8:
 
     # "It's becoming easier and easier to move inside her ass. She moans like a horny bitch as you [text1]."
-    "在她屁股里动来动去越来越容易了。当你[text1]的时候，她就像个饥渴的婊子一样呻吟。"
+    "你现在可以在她的菊穴里来去自如。当你[text1]的时候，她就像个饥渴的婊子一样呻吟。"
 
 # game/BKinteractions.rpy:2032
 translate schinese slave_do_b2cb8bb3:
 
     # "Moving inside her ass is easy now, and she squeals with pleasure as you give her little asshole a pounding."
-    "现在在她屁股里活动很容易，当你给她的小混蛋一拳时，她高兴地尖叫着。"
+    "她的菊穴现在甚至能吞下好几根肉棒，当你把拳头塞进去时，她高兴地尖叫着。"
 
 # game/BKinteractions.rpy:2035
 translate schinese slave_do_ef9e0426:
 
     # "She loves to feel your dick as you [text1], and begs you to fuck her deeper and harder."
-    "她喜欢在你[text1]时摸你的老二，并请求你更深入、更用力地操她。"
+    "她喜欢在你[text1]时抚摸你的肉棒，并乞求你更深入、更用力地操她。"
 
 # game/BKinteractions.rpy:2038
 translate schinese slave_do_4fac9640:
 
     # "She cums almost immediately as you [text1]. She's a perfect anal slut now."
-    "她几乎立刻就像你一样[text1]。她现在是一个完美的肛交荡妇。"
+    "在你[text1]的瞬间她马上就高潮了。她的菊穴已经是个名器了。"
 
 # game/BKinteractions.rpy:2049
 translate schinese slave_do_6b1d9859:
 
     # "You open your toolbox."
-    "你打开工具箱。"
+    "你打开了你的工具箱。"
 
 # game/BKinteractions.rpy:2054
 translate schinese slave_do_0dcf4b65:
 
     # "She cries and squirms to avoid you as you try to tie her up."
-    "当你试图把她绑起来的时候，她会哭，会扭来扭去躲避你。"
+    "当你试图把她绑起来的时候，她开始抽泣，扭动身躯想躲避你。"
 
 # game/BKinteractions.rpy:2058
 translate schinese slave_do_dd53f86b:
 
     # "In the end, you barely make any progress, she was too wild and afraid."
-    "最后，你几乎没有任何进展，她太狂野，太害怕了。"
+    "最后，你拿她毫无办法，她因为害怕而变得癫狂。"
 
 # game/BKinteractions.rpy:2061
 translate schinese slave_do_41646876:
 
     # "You tie her hands behind her back, and tease her a little. She cries and doesn't enjoy it at all."
-    "你把她的手绑在背后，稍微戏弄她一下。她哭了，一点也不喜欢。"
+    "你把她的手绑在背后，稍微捉弄了她一下。她泪流满面，一点也不喜欢被这样对待。"
 
 # game/BKinteractions.rpy:2064
 translate schinese slave_do_c2c04b33:
 
     # "You tie her up and use a variety of tools on her. She is ashamed and scared, but a little turned on as well."
-    "你把她绑起来，用各种工具对付她。她感到羞愧和害怕，但也有点兴奋。"
+    "你把她绑了起来，用各种工具玩弄她。她感到羞愧和害怕，但也有点兴奋。"
 
 # game/BKinteractions.rpy:2067
 translate schinese slave_do_dbb63eda:
 
     # "She is getting used to being tied up. She moans with pleasure and pain as you [text1]."
-    "她开始习惯被绑着。她高兴和痛苦地呻吟着，就像你一样。"
+    "她开始习惯被绑起来。当你[text1]时她高兴却又痛苦地呻吟着。"
 
 # game/BKinteractions.rpy:2070
 translate schinese slave_do_1c90a360:
 
     # "She is starting to enjoy it more and more. She's already wet when you [text1]."
-    "她开始越来越喜欢它了。当你[text1]的时候她已经湿了。"
+    "她开始喜欢被粗暴的对待了。当你[text1]的时候她已经有点湿了。"
 
 # game/BKinteractions.rpy:2073
 translate schinese slave_do_d249e514:
@@ -1330,13 +1330,13 @@ translate schinese slave_do_d249e514:
 translate schinese slave_do_22e8bb77:
 
     # "She loves pain and wants to try everything. She begs you to [text1]."
-    "她喜欢痛苦，想尝试一切。她恳求你[text1]。"
+    "她喜欢痛苦的滋味，想尝试一切惩罚。她恳求你[text1]。"
 
 # game/BKinteractions.rpy:2079
 translate schinese slave_do_c0ebff62:
 
     # "She cums numerous times as you tie her up in a bizarre position and use all of your toys on her. What a kinky bitch!"
-    "当你把她绑成一个奇怪的姿势，把你所有的玩具都用在她身上时，她会不停地跑。真是个变态的婊子！"
+    "当你把她绑成一个奇怪的姿势，把所有的玩具都用在她身上时，她不停地高潮。真是个变态的婊子！"
 
 # game/BKinteractions.rpy:2083
 translate schinese slave_do_e3be463b:
@@ -1354,7 +1354,7 @@ translate schinese slave_do_8b900358:
 translate schinese slave_do_49333d8a:
 
     # extend "It's giving me so much pleasure... Ah!"
-    extend "它给了我如此多的快乐....啊！"
+    extend "真是太爽了....啊！"
 
 # game/BKinteractions.rpy:2097
 translate schinese slave_do_2cef280f:
@@ -1366,7 +1366,7 @@ translate schinese slave_do_2cef280f:
 translate schinese slave_do_2e211311:
 
     # "She's obviously disgusted by Sill. She won't even touch her."
-    "她显然对希露很反感。她甚至不碰她。"
+    "她显然有些反感希露。她连碰都不想碰希露一下。"
 
 # game/BKinteractions.rpy:2107
 translate schinese slave_do_ec1c841b:
@@ -1378,79 +1378,79 @@ translate schinese slave_do_ec1c841b:
 translate schinese slave_do_ac5c5a68:
 
     # "The two girls kiss and fondle each other. [girl.name] doesn't even pretend to enjoy it."
-    "这两个女孩互相亲吻、爱抚。[girl.name]至懒得假装享受它。"
+    "这两个女孩互相亲吻、爱抚。[girl.name]甚至懒得装装样子。"
 
 # game/BKinteractions.rpy:2113
 translate schinese slave_do_4e5075c2:
 
     # "[girl.name] kisses Sill a little bit more passionately this time. She's slowly forgetting that she is with a girl."
-    "[girl.name]这次吻希露的感情要热烈一些。她慢慢地才忘记她和一个女孩在一起。"
+    "[girl.name]这次吻希露的感情要热烈一些。她渐渐地忘记她的对象是一个女孩。"
 
 # game/BKinteractions.rpy:2116
 translate schinese slave_do_df73bb42:
 
     # "[girl.name] is now more enthusiastic about being with a girl. She enjoys [text1]."
-    "[girl.name]现在对和女孩在一起更有热情了。她喜欢[text1]。"
+    "[girl.name]现在对和女孩一起亲热更加积极了。她喜欢[text1]。"
 
 # game/BKinteractions.rpy:2119
 translate schinese slave_do_67cba39d:
 
     # "[girl.name] has a surprise orgasm while [text1]. She is starting to understand the pleasures to be had with women."
-    "[girl.name]在[text1]的时候有一个意外的高潮。她开始懂得和女人在一起的乐趣。"
+    "[girl.name]在[text1]的时候突然就高潮了。她开始享受和女人在一起的乐趣。"
 
 # game/BKinteractions.rpy:2122
 translate schinese slave_do_22e9c1a4:
 
     # "[girl.name] doesn't differentiate between men and women now. She fucks Sill enthusiastically, bringing her off several times."
-    "[girl.name]现在已经不分男女了。她热情地操着希露，好几次把她干掉了。"
+    "[girl.name]现在已经分不清男女了。她用假屌热情地操着希露，干得她一直高潮。"
 
 # game/BKinteractions.rpy:2125
 translate schinese slave_do_417ce18a:
 
     # "She loves [text1]. Sill and [girl.name] shake with a mutual orgasm while doing a 69."
-    "她喜欢[text1]。希露和[girl.name]在做69动作的时候，伴随着共同的高潮摇摆。"
+    "她喜欢[text1]。希露和[girl.name]在做69式动作的时候，激烈的高潮让她们的身躯止不住地颤动。"
 
 # game/BKinteractions.rpy:2128
 translate schinese slave_do_5d77f3a8:
 
     # "She loves fucking women and is completely bisexual now. [girl.name] and Sill know each other's body perfectly now, and bring each other off numerous times."
-    "她爱他妈的女人，现在完全是蕾丝边。[girl.name]现在我和希露完全了解对方的身体，并且会多次把对方带离。"
+    "她喜欢女人，她现在已经是个女同性恋了。[girl.name]和希露已经完全了解对方的身体，很容易就能让对方高潮。"
 
 # game/BKinteractions.rpy:2141
 translate schinese slave_do_923a62f2:
 
     # "You and the other dude start fondling her private parts."
-    "You and the other dude start fondling her private parts."
+    "你和另一个男人开始抚摸她的私处。"
 
 # game/BKinteractions.rpy:2147
 translate schinese slave_do_47e56bf0:
 
     # "She doesn't know how to react. She remains stiff and passive, waiting for you to finish."
-    "她不知道如何反应。她仍然僵硬被动，等着你把话说完。"
+    "她不知道该如何反应。她的身体十分僵硬，等着你的下一个吩咐。"
 
 # game/BKinteractions.rpy:2149
 translate schinese slave_do_80c3bd91:
 
     # "Disappointed, you stop and dismiss the guy. He looks pissed."
-    "Disappointed, you stop and dismiss the guy. He looks pissed."
+    "失望的你停下动作，解雇了那个人。他看起来很生气。"
 
 # game/BKinteractions.rpy:2152
 translate schinese slave_do_05c3c073:
 
     # "She clumsily manages to bring one of you off. She isn't doing much, but it's a start."
-    "She clumsily manages to bring one of you off. She isn't doing much, but it's a start."
+    "她笨手笨脚地服务了你们中的一个。她做得还不够熟练，但这是个好的开始。"
 
 # game/BKinteractions.rpy:2155
 translate schinese slave_do_37f31623:
 
     # "[girl.name] takes turns sucking your and the other guy's dick, before you proceed to fuck her. She is putting more heart into it."
-    "[girl.name] takes turns sucking your and the other guy's dick, before you proceed to fuck her. She is putting more heart into it."
+    "在你准备干她之前，[girl.name]交替吮吸你和另一个人的肉棒。她比上一次要更加投入和专注。"
 
 # game/BKinteractions.rpy:2158
 translate schinese slave_do_ebd18b87:
 
     # "You [text1]. [girl.name] looks more relaxed now, and it's less awkward."
-    "你[text1]。[girl.name]现在看起来更放松了，也不那么尴尬了。"
+    "你[text1]。[girl.name]现在看起来更放松了，也没那么尴尬了。"
 
 # game/BKinteractions.rpy:2161
 translate schinese slave_do_5b73ce74:
@@ -1462,121 +1462,121 @@ translate schinese slave_do_5b73ce74:
 translate schinese slave_do_3421f13e:
 
     # "[girl.name] is happy to oblige as you proceed to [text1]. She likes fooling around in a group."
-    "[girl.name] is happy to oblige as you proceed to [text1]. She likes fooling around in a group."
+    "当你[text1]的时候[girl.name]很乐意配合。她喜欢在人群中的感觉。"
 
 # game/BKinteractions.rpy:2167
 translate schinese slave_do_e11d4430:
 
     # "She loves it when you [text1]. It seems she loves fucking a group."
-    "She loves it when you [text1]. It seems she loves fucking a group."
+    "当你[text1]的时候她很享受。她喜欢和一群男人搞在一起。"
 
 # game/BKinteractions.rpy:2170
 translate schinese slave_do_49692a5e:
 
     # "She brings you and the guy off many times, her holes dripping with cum. She begs you to bring more and more people next time. She adores group sex."
-    "She brings you and the guy off many times, her holes dripping with cum. She begs you to bring more and more people next time. She adores group sex."
+    "她让你和那个男人射了很多发，她的小穴里全是精液。她希望你下次能带更多的人来。她喜欢和大家一起开淫趴。"
 
 # game/BKinteractions.rpy:2198
 translate schinese slave_rape_test_c6fa7fec:
 
     # "You step forward menacingly."
-    "你威胁地向前走。"
+    "你一步一步逼近她。"
 
 # game/BKinteractions.rpy:2208
 translate schinese slave_rape_test_b661c833:
 
     # "She looks away as you approach her, but doesn't try to stop you."
-    "当你走近她时，她把目光移开，但并没有试图阻止你。"
+    "当你走到她面前时，她把目光移开，但并没有阻止你的动作。"
 
 # game/BKinteractions.rpy:2212
 translate schinese slave_rape_test_06d35b2c:
 
     # "She blushes as she feels your hands touch her body."
-    "她脸红了，因为她觉得你的手触碰了她的身体。"
+    "她脸红了，因为她感觉到你的手正在触碰她的身体。"
 
 # game/BKinteractions.rpy:2219
 translate schinese slave_rape_test_e8a7d051:
 
     # "She sobs and fights you weakly as you push her on the bed."
-    "当你把她推到床上时，她会虚弱地抽泣和反抗。"
+    "当你把她扔到床上时，她无力的挣扎和反抗。"
 
 # game/BKinteractions.rpy:2236
 translate schinese slave_hypnotize_method_20b0102a:
 
     # "Reinforcing positive emotions works better if a girl likes you."
-    "如果一个女孩喜欢你，加强正面情绪会更有效。"
+    "如果一个女孩喜欢你，利用正面情绪会更有效。"
 
 # game/BKinteractions.rpy:2240
 translate schinese slave_hypnotize_method_5792b8a6:
 
     # "Reinforcing negative emotions works better if a girl fears you."
-    "如果一个女孩害怕你，加强她的消极情绪会更有效。"
+    "如果一个女孩害怕你，利用负面情绪会更有效。"
 
 # game/BKinteractions.rpy:2244
 translate schinese slave_hypnotize_method_abb3ca0d:
 
     # "Balanced training uses a mix of positive and negative emotions to influence your girl."
-    "平衡训练使用积极和消极的情绪来影响你的女孩。"
+    "均衡地使用正面和负面的情绪来催眠你的女孩。"
 
 # game/BKinteractions.rpy:2269
 translate schinese slave_magic_b8269d3d:
 
     # "Listening to the sound of your voice, [girl.name] doesn't seem to hear the actual words. She stands still, looking vaguely into the distance."
-    "听你的声音，[girl.name]似乎并没有听到真正的单词。她静静地站着，茫然地望着远方。"
+    "听着你的声音，[girl.name]似乎并没有听清楚你说了什么。她呆呆地站着，茫然地望着远方。"
 
 # game/BKinteractions.rpy:2272
 translate schinese slave_magic_0ebab5e3:
 
     # "You start talking with a soothing voice."
-    "你开始用舒缓的声音说话。"
+    "你用温和的语调发出指令。"
 
 # game/BKinteractions.rpy:2276
 translate schinese slave_magic_a3cd644c:
 
     # "You start talking with a threatening voice."
-    "你开始用威胁的声音说话。"
+    "你用粗暴的语调发出指令。"
 
 # game/BKinteractions.rpy:2279
 translate schinese slave_magic_782b6cc4:
 
     # "You start talking with a calm voice."
-    "你开始用平静的声音说话。"
+    "你用平静的语调发出指令。"
 
 # game/BKinteractions.rpy:2283
 translate schinese slave_magic_3244c8a5:
 
     # you "Only the Master holds the key to your soul. You must obey the Master."
-    you "只有主人拥有开启你灵魂的钥匙。你必须服从主人。"
+    you "只有你的主人拥有解封你灵魂的钥匙。你必须服从主人。"
 
 # game/BKinteractions.rpy:2284
 translate schinese slave_magic_57332bfb:
 
     # "You show her a heavy lead key."
-    "你给她一把沉重的铅钥匙。"
+    "你把一把钥匙放在她面前晃动。"
 
 # game/BKinteractions.rpy:2288
 translate schinese slave_magic_5c073ccd:
 
     # you "Your craving for sin and debauchery is like a thorn that tears at your soul..."
-    you "你对罪恶和放荡的渴望就像一根刺，撕裂你的灵魂...."
+    you "你对罪恶和性的渴望就像一根刺，在撕裂你的灵魂...."
 
 # game/BKinteractions.rpy:2289
 translate schinese slave_magic_fd90911f:
 
     # "You prick a silver needle into her breast. She doesn't feel pain, but her face becomes red."
-    "你把一根银针扎进她的胸膛。她没有感觉到疼痛，但是她的脸变红了。"
+    "你把一根银针扎进她的胸脯。她没有感觉到疼痛，但是她的脸色变红了。"
 
 # game/BKinteractions.rpy:2293
 translate schinese slave_magic_5d515b4b:
 
     # you "In the realm of angels, if anything is pleasurable to us, it is pleasurable to gods..."
-    you "在天使的世界里，如果有什么是我们所喜欢的，那就是上帝所喜欢的...."
+    you "在天使的世界里，如果有什么是我们所喜欢的，那上帝也会喜欢的...."
 
 # game/BKinteractions.rpy:2294
 translate schinese slave_magic_944a4458:
 
     # "You light a stick of suave incense from the southern lands."
-    "你点燃一根来自南方大地的温文尔雅的香。"
+    "你点燃一根来自南方大陆的奇异的熏香。"
 
 # game/BKinteractions.rpy:2298
 translate schinese slave_magic_6fdd9ea9:
@@ -1588,7 +1588,7 @@ translate schinese slave_magic_6fdd9ea9:
 translate schinese slave_magic_d85f3a0c:
 
     # "You hold a large mirror in front of her."
-    "你拿着一面大镜子在她面前。"
+    "你拿起一面镜子摆在她面前。"
 
 # game/BKinteractions.rpy:2303
 translate schinese slave_magic_7d1e9983:
@@ -1798,13 +1798,13 @@ translate schinese slave_reward_fec99e97:
 translate schinese slave_reward_d157ab7a:
 
     # you "I feel like rewarding you today... For no particular reason."
-    you "今天我要好好酬劳你一下。没有特别的原因。"
+    you "今天我要好好奖励你一下。没什么特别的原因。"
 
 # game/BKinteractions.rpy:2720
 translate schinese slave_reward_805a0c6d:
 
     # "Your reward is less effective because she has been spoiled lately."
-    "你的奖励没那么有效，因为她最近被宠坏了。"
+    "你的奖励效果一般，她最近被你给宠坏了。"
 
 # game/BKinteractions.rpy:2775
 translate schinese slave_punish_naked_3a762321:
@@ -1906,7 +1906,7 @@ translate schinese slave_rape_98f56acc:
 translate schinese slave_rape_82edb748:
 
     # "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [fix.name]."
-    "你不知道她讨厌[text1]什么，所以你随便试着做点什么，看看她是如何处理[cntext]的。"
+    "你不知道她讨厌[text1]什么，所以你随便试着做点什么，看看她是如何处理[xxx3]的。"
 
 # game/BKinteractions.rpy:3073
 translate schinese slave_rape_9b162712:
@@ -2224,7 +2224,7 @@ translate schinese slave_story1_2015a94a:
 translate schinese slave_story1_132223ee:
 
     # girl.char "I ran into him one day while I was [activity]."
-    girl.char "有一天，我在[activity]时碰到了他。"
+    girl.char "I ran into him one day while I was [activity]."
 
 # game/BKinteractions.rpy:3468
 translate schinese slave_story1_f35c95cb:
@@ -9816,19 +9816,19 @@ translate schinese strings:
     old "Don't bother me with this anymore"
     new "别再拿这个来烦我了"
 
-# TODO: Translation updated at 2024-07-31 02:24
+# TODO: Translation updated at 2024-07-31 01:49
 
 # game/BKinteractions.rpy:102
 translate schinese fight_attempt_4ad79042:
 
     # "[girl.name] throws herself at you, but the magical bind holding her is just too strong. She is jolted by a surge of magical energy, and crumbles to the [text1], winded."
-    "[girl.name] throws herself at you, but the magical bind holding her is just too strong. She is jolted by a surge of magical energy, and crumbles to the [text1], winded."
+    ""
 
 # game/BKinteractions.rpy:118
 translate schinese fight_attempt_2f8a4273:
 
     # "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes [text1]."
-    "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes [text1]."
+    ""
 
 # game/BKinteractions.rpy:1213
 translate schinese slave_train_free_form_0ae9bcd0:
@@ -9840,929 +9840,929 @@ translate schinese slave_train_free_form_0ae9bcd0:
 translate schinese slave_magic_1d5c0a3a:
 
     # "闭上眼聆听你的声音, [girl.name] 渐渐地听不清你说的话语. 她保持站姿, 目光逐渐呆滞."
-    "闭上眼聆听你的声音, [girl.name] 渐渐地听不清你说的话语. 她保持站姿, 目光逐渐呆滞."
+    ""
 
 # game/BKinteractions.rpy:2330
 translate schinese slave_magic_a2eb7053:
 
     # "你开始用温柔的语气说话."
-    "你开始用温柔的语气说话."
+    ""
 
 # game/BKinteractions.rpy:2334
 translate schinese slave_magic_e88b7c79:
 
     # "你开始用威胁的语气说话."
-    "你开始用威胁的语气说话."
+    ""
 
 # game/BKinteractions.rpy:2337
 translate schinese slave_magic_e29403d5:
 
     # "你开始用平静的语气说话."
-    "你开始用平静的语气说话."
+    ""
 
 # game/BKinteractions.rpy:2343
 translate schinese slave_magic_5bd73e1a:
 
     # you "只有主人才能打开你内心的枷锁.你要服从主人的一切命令."
-    you "只有主人才能打开你内心的枷锁.你要服从主人的一切命令."
+    you ""
 
 # game/BKinteractions.rpy:2344
 translate schinese slave_magic_77d4add4:
 
     # "你在她面前晃动着一把奇怪的钥匙."
-    "你在她面前晃动着一把奇怪的钥匙."
+    ""
 
 # game/BKinteractions.rpy:2348
 translate schinese slave_magic_d0e0e1f8:
 
     # you "你是个沉迷欲望的荡妇，你的欲望就像荆棘一样缠绕着你的灵魂..."
-    you "你是个沉迷欲望的荡妇，你的欲望就像荆棘一样缠绕着你的灵魂..."
+    you ""
 
 # game/BKinteractions.rpy:2349
 translate schinese slave_magic_839f0a19:
 
     # "你把一根银针扎入她的乳头. 她不仅没有感到疼痛,反而有些享受."
-    "你把一根银针扎入她的乳头. 她不仅没有感到疼痛,反而有些享受."
+    ""
 
 # game/BKinteractions.rpy:2353
 translate schinese slave_magic_4aa96800:
 
     # you "不要抗拒你的本性，如果你感到快乐，那么众神也会感到满足..."
-    you "不要抗拒你的本性，如果你感到快乐，那么众神也会感到满足..."
+    you ""
 
 # game/BKinteractions.rpy:2354
 translate schinese slave_magic_d9a648a0:
 
     # "你点燃了一盏东方的熏香，香味让人有些飘飘欲仙."
-    "你点燃了一盏东方的熏香，香味让人有些飘飘欲仙."
+    ""
 
 # game/BKinteractions.rpy:2358
 translate schinese slave_magic_09d2a6b0:
 
     # you "让我好好欣赏你的身体..."
-    you "让我好好欣赏你的身体..."
+    you ""
 
 # game/BKinteractions.rpy:2359
 translate schinese slave_magic_c6c8409e:
 
     # "你在她面前摆了一面全身镜，她可以从里面看到自己的每个部位."
-    "你在她面前摆了一面全身镜，她可以从里面看到自己的每个部位."
+    ""
 
 # game/BKinteractions.rpy:2363
 translate schinese slave_magic_5493deb2:
 
     # you "我是你的所有者，你的主人。能够用你的身体侍奉我是你的荣幸."
-    you "我是你的所有者，你的主人。能够用你的身体侍奉我是你的荣幸."
+    you ""
 
 # game/BKinteractions.rpy:2364
 translate schinese slave_magic_9d3c51a4:
 
     # "你把神仙快乐水滴进她的嘴里."
-    "你把神仙快乐水滴进她的嘴里."
+    ""
 
 # game/BKinteractions.rpy:2368
 translate schinese slave_magic_1d1a4087:
 
     # you "我是你的所有者，你的主人。准备好收下我的礼物吧."
-    you "我是你的所有者，你的主人。准备好收下我的礼物吧."
+    you ""
 
 # game/BKinteractions.rpy:2369
 translate schinese slave_magic_22f21620:
 
     # "你把一个又大又亮的金色假阳具放在她面前."
-    "你把一个又大又亮的金色假阳具放在她面前."
+    ""
 
 # game/BKinteractions.rpy:2373
 translate schinese slave_magic_24e36f36:
 
     # you "我是你的所有者，你的主人。.. 你身上的每个洞都将被我填满..."
-    you "我是你的所有者，你的主人。.. 你身上的每个洞都将被我填满..."
+    you ""
 
 # game/BKinteractions.rpy:2374
 translate schinese slave_magic_43b41df8:
 
     # "你掀起她的裙子，把她的内裤推到一边，轻轻地把一颗珍珠塞入她的菊花."
-    "你掀起她的裙子，把她的内裤推到一边，轻轻地把一颗珍珠塞入她的菊花."
+    ""
 
 # game/BKinteractions.rpy:2378
 translate schinese slave_magic_088e8335:
 
     # you "我是你的所有者，你的主人。只要我想... 跪下求我."
-    you "我是你的所有者，你的主人。只要我想... 跪下求我."
+    you ""
 
 # game/BKinteractions.rpy:2379
 translate schinese slave_magic_a704c681:
 
     # "你从口袋里掏出一对银夹子，夹在她的两个乳头上，涨得像两个紫葡萄."
-    "你从口袋里掏出一对银夹子，夹在她的两个乳头上，涨得像两个紫葡萄."
+    ""
 
 # game/BKinteractions.rpy:2383
 translate schinese slave_magic_c3386454:
 
     # you "和你的姐妹一起来伺候我吧..."
-    you "和你的姐妹一起来伺候我吧..."
+    you ""
 
 # game/BKinteractions.rpy:2384
 translate schinese slave_magic_3d980da9:
 
     # "你让希露加入其中，让她在腰间戴上一个假阳具。它以暗元素驱动."
-    "你让希露加入其中，让她在腰间戴上一个假阳具。它以暗元素驱动."
+    ""
 
 # game/BKinteractions.rpy:2385
 translate schinese slave_magic_994676b9:
 
     # sill naked "哈! 主人, 我插进去了..."
-    sill naked "哈! 主人, 我插进去了..."
+    sill naked ""
 
 # game/BKinteractions.rpy:2389
 translate schinese slave_magic_998b2cca:
 
     # you "欢迎加入淫乱派对..."
-    you "欢迎加入淫乱派对..."
+    you ""
 
 # game/BKinteractions.rpy:2390
 translate schinese slave_magic_1793e2db:
 
     # "吟唱了一段古老的咒语，你召唤了一个元素傀儡。它不会主动思考，但它拥有巨大的肉棒...在你的操纵下它立即将注意力转向 [girl.name] ."
-    "吟唱了一段古老的咒语，你召唤了一个元素傀儡。它不会主动思考，但它拥有巨大的肉棒...在你的操纵下它立即将注意力转向 [girl.name] ."
+    ""
 
 # game/BKinteractions.rpy:2412
 translate schinese slave_magic_7b528870:
 
     # "魔法效果十分强劲。她变成了不会思考的人偶. {nw}"
-    "魔法效果十分强劲。她变成了不会思考的人偶. {nw}"
+    ""
 
 # game/BKinteractions.rpy:2414
 translate schinese slave_magic_5c96c06e:
 
     # "你对她意识的影响十分微弱。你得快点完事. {nw}"
-    "你对她意识的影响十分微弱。你得快点完事. {nw}"
+    ""
 
 # game/BKinteractions.rpy:2416
 translate schinese slave_magic_830d1f4c:
 
     # "她潜意识里一直在抵抗，但你努力克服了它. {nw}"
-    "她潜意识里一直在抵抗，但你努力克服了它. {nw}"
+    ""
 
 # game/BKinteractions.rpy:2425
 translate schinese slave_magic_e4606e97:
 
     # extend "催眠成功, [girl.name] 似乎没有意识到你在做什么，只知道听从你的命令."
-    extend "催眠成功, [girl.name] 似乎没有意识到你在做什么，只知道听从你的命令."
+    extend ""
 
 # game/BKinteractions.rpy:2439
 translate schinese slave_magic_a701f492:
 
     # extend "[girl.name]看起来晕头转向，面色潮红。她拒绝服从你的指令，但你能感觉到她的反抗在减弱."
-    extend "[girl.name]看起来晕头转向，面色潮红。她拒绝服从你的指令，但你能感觉到她的反抗在减弱."
+    extend ""
 
 # game/BKinteractions.rpy:2441
 translate schinese slave_magic_f306a373:
 
     # "几分钟后, 你停止了试验, 这次进展不太顺利."
-    "几分钟后, 你停止了试验, 这次进展不太顺利."
+    ""
 
 # game/BKinteractions.rpy:2470
 translate schinese slave_reward_praise_3e719bed:
 
     # you "你一天比一天漂亮. 客人们都喜欢你。"
-    you "你一天比一天漂亮. 客人们都喜欢你。"
+    you ""
 
 # game/BKinteractions.rpy:2472
 translate schinese slave_reward_praise_ed0f7926:
 
     # you "你今天看起来很性感. 你令我神魂颠倒。"
-    you "你今天看起来很性感. 你令我神魂颠倒。"
+    you ""
 
 # game/BKinteractions.rpy:2474
 translate schinese slave_reward_praise_6bb16c6c:
 
     # you "你今天魅力十足. 回头率百分之一万。"
-    you "你今天魅力十足. 回头率百分之一万。"
+    you ""
 
 # game/BKinteractions.rpy:2476
 translate schinese slave_reward_praise_ae56f807:
 
     # you "你就像是个公主一样，那些女人都在嫉妒你。"
-    you "你就像是个公主一样，那些女人都在嫉妒你。"
+    you ""
 
 # game/BKinteractions.rpy:2511
 translate schinese slave_reward_gold_81b333d3:
 
     # you "希望这点微薄的谢礼可以帮你解决燃眉之急."
-    you "希望这点微薄的谢礼可以帮你解决燃眉之急."
+    you ""
 
 # game/BKinteractions.rpy:2553
 translate schinese slave_reward_day_8b144c8e:
 
     # you "你最近工作一直很努力. 今晚为什么不好好休息一下呢?"
-    you "你最近工作一直很努力. 今晚为什么不好好休息一下呢?"
+    you ""
 
 # game/BKinteractions.rpy:2568
 translate schinese slave_reward_sex_5f94e076:
 
     # you "作为你的奖励，我就让你来侍奉我吧 *脱下裤子*。"
-    you "作为你的奖励，我就让你来侍奉我吧 *脱下裤子*。"
+    you ""
 
 # game/BKinteractions.rpy:2570
 translate schinese slave_reward_sex_ae7a9236:
 
     # you "作为你的奖励，到床上把你的屁股撅起来，我来让你好好爽一爽。*解开腰带*"
-    you "作为你的奖励，到床上把你的屁股撅起来，我来让你好好爽一爽。*解开腰带*"
+    you ""
 
 # game/BKinteractions.rpy:2572
 translate schinese slave_reward_sex_96586bbc:
 
     # you "过来躺下, 把大腿掰开，让我们来看看你能吞下几只手指。*戴上手套，涂上润滑油*"
-    you "过来躺下, 把大腿掰开，让我们来看看你能吞下几只手指。*戴上手套，涂上润滑油*"
+    you ""
 
 # game/BKinteractions.rpy:2574
 translate schinese slave_reward_sex_1d4e5390:
 
     # you "你值得我用上那些宝贝...把我的玩具箱拿来。*给她带上眼罩口球*"
-    you "你值得我用上那些宝贝...把我的玩具箱拿来。*给她带上眼罩口球*"
+    you ""
 
 # game/BKinteractions.rpy:2610
 translate schinese slave_reward_sex_470d27af:
 
     # "你无视了她的哀嚎和泪水，把她一把丢到床上."
-    "你无视了她的哀嚎和泪水，把她一把丢到床上."
+    ""
 
 # game/BKinteractions.rpy:2780
 translate schinese slave_reward_7bb7e1cc:
 
     # "你的奖励没那么有效，因为她最近被宠坏了。"
-    "你的奖励没那么有效，因为她最近被宠坏了。"
+    ""
 
 # game/BKinteractions.rpy:2835
 translate schinese slave_punish_naked_a50a2fa6:
 
     # you "把你的衣服都脱了。包括内衣。你就这样光着身子为客人服务吧。"
-    you "把你的衣服都脱了。包括内衣。你就这样光着身子为客人服务吧。"
+    you ""
 
 # game/BKinteractions.rpy:2849
 translate schinese slave_punish_beat_9e6d8d5c:
 
     # "握着一把长钢尺, 你让她把领口的扣子都解开."
-    "握着一把长钢尺, 你让她把领口的扣子都解开."
+    ""
 
 # game/BKinteractions.rpy:2854
 translate schinese slave_punish_rape_4d24f07f:
 
     # you "你得好好上一课! 我得确保你听进去了."
-    you "你得好好上一课! 我得确保你听进去了."
+    you ""
 
 # game/BKinteractions.rpy:2865
 translate schinese slave_punish_rape_fe3d423e:
 
     # "你解开腰带，命令她跪在你的面前"
-    "你解开腰带，命令她跪在你的面前"
+    ""
 
 # game/BKinteractions.rpy:2866
 translate schinese slave_punish_rape_ef6fc638:
 
     # you "好了, 用你的手和小嘴来伺候我."
-    you "好了, 用你的手和小嘴来伺候我."
+    you ""
 
 # game/BKinteractions.rpy:2868
 translate schinese slave_punish_rape_d89b50ff:
 
     # "你把她带到床边，让她脱光衣服."
-    "你把她带到床边，让她脱光衣服."
+    ""
 
 # game/BKinteractions.rpy:2869
 translate schinese slave_punish_rape_2a5a03f7:
 
     # you "这么喜欢顶嘴，我倒要看看你下面的嘴是不是也这么硬气."
-    you "这么喜欢顶嘴，我倒要看看你下面的嘴是不是也这么硬气."
+    you ""
 
 # game/BKinteractions.rpy:2871
 translate schinese slave_punish_rape_cc325d22:
 
     # "抓着她的胳膊, 你把她翻过来，在她耳边用威胁的语气低语."
-    "抓着她的胳膊, 你把她翻过来，在她耳边用威胁的语气低语."
+    ""
 
 # game/BKinteractions.rpy:2872
 translate schinese slave_punish_rape_008ea2a4:
 
     # you "让我们看看在我干爆你的菊花之后你还会不会嘴硬."
-    you "让我们看看在我干爆你的菊花之后你还会不会嘴硬."
+    you ""
 
 # game/BKinteractions.rpy:2874
 translate schinese slave_punish_rape_e3bbac56:
 
     # "你给她看挂在墙上的架子，让她把手叠在一起，这样你就可以把它们绑起来."
-    "你给她看挂在墙上的架子，让她把手叠在一起，这样你就可以把它们绑起来."
+    ""
 
 # game/BKinteractions.rpy:2875
 translate schinese slave_punish_rape_ba450362:
 
     # you "我要让你感受一下“惩罚”的真正含义'."
-    you "我要让你感受一下“惩罚”的真正含义'."
+    you ""
 
 # game/BKinteractions.rpy:2901
 translate schinese slave_punish_9a76ea46:
 
     # you "骂你还需要理由吗, 小贱货!"
-    you "骂你还需要理由吗, 小贱货!"
+    you ""
 
 # game/BKinteractions.rpy:2962
 translate schinese slave_punish_7f0d49f9:
 
     # "你脱下她的内裤，用金属尺子反复敲打她裸露在外的屁股。"
-    "你脱下她的内裤，用金属尺子反复敲打她裸露在外的屁股。"
+    ""
 
 # game/BKinteractions.rpy:3061
 translate schinese slave_punish_3e2112a9:
 
     # "你的惩罚没那么有效，因为她最近已经被惩罚太多次了。"
-    "你的惩罚没那么有效，因为她最近已经被惩罚太多次了。"
+    ""
 
 # game/BKinteractions.rpy:3112
 translate schinese slave_rape_d7ba3a0d:
 
     # "你记得她害怕 [text1], 所以你决定就这样训练她。"
-    "你记得她害怕 [text1], 所以你决定就这样训练她。"
+    ""
 
 # game/BKinteractions.rpy:3127
 translate schinese slave_rape_06c05f6d:
 
     # "你不知道她怕不怕 [text1], 所以你打算试试, 看看她对 [fix.name] 会有什么反应。"
-    "你不知道她怕不怕 [text1], 所以你打算试试, 看看她对 [fix.name] 会有什么反应。"
+    ""
 
 # game/BKinteractions.rpy:3133
 translate schinese slave_rape_b88a7913:
 
     # "看起来你发现了她的弱点。 她很害怕 [text2], 哭喊着求你停下。"
-    "看起来你发现了她的弱点。 她很害怕 [text2], 哭喊着求你停下。"
+    ""
 
 # game/BKinteractions.rpy:3142
 translate schinese slave_rape_22cfc2ee:
 
     # "和你预期的相反, [girl.name] 看起来反而有些享受. 这还算得上是惩罚吗?"
-    "和你预期的相反, [girl.name] 看起来反而有些享受. 这还算得上是惩罚吗?"
+    ""
 
 # game/BKinteractions.rpy:3148
 translate schinese slave_rape_67785968:
 
     # "不，这不是你想要的效果... 但你还是让她继续。"
-    "不，这不是你想要的效果... 但你还是让她继续。"
+    ""
 
 translate schinese strings:
 
     # game/BKinteractions.rpy:19
     old "我会温柔地对待你的"
-    new "我会温柔地对待你的"
+    new ""
 
     # game/BKinteractions.rpy:19
     old "我会公正地对待你的"
-    new "我会公正地对待你的"
+    new ""
 
     # game/BKinteractions.rpy:19
     old "我怎么对你看我心情"
-    new "我怎么对你看我心情"
+    new ""
 
     # game/BKinteractions.rpy:19
     old "你吃了熊心豹子胆？"
-    new "你吃了熊心豹子胆？"
+    new ""
 
     # game/BKinteractions.rpy:165
     old "安慰她"
-    new "安慰她"
+    new ""
 
     # game/BKinteractions.rpy:165
     old "让她静静"
-    new "让她静静"
+    new ""
 
     # game/BKinteractions.rpy:197
     old "让她今后一直保持裸体"
-    new "让她今后一直保持裸体"
+    new ""
 
     # game/BKinteractions.rpy:197
     old "让她今天保持裸体"
-    new "让她今天保持裸体"
+    new ""
 
     # game/BKinteractions.rpy:278
     old "不理会她，继续"
-    new "不理会她，继续"
+    new ""
 
     # game/BKinteractions.rpy:278
     old "这次先放她一马"
-    new "这次先放她一马"
+    new ""
 
     # game/BKinteractions.rpy:278
     old "可怜她，放弃"
-    new "可怜她，放弃"
+    new ""
 
     # game/BKinteractions.rpy:486
     old "我知道了"
-    new "我知道了"
+    new ""
 
     # game/BKinteractions.rpy:486
     old "干得漂亮"
-    new "干得漂亮"
+    new ""
 
     # game/BKinteractions.rpy:486
     old "别抱怨了"
-    new "别抱怨了"
+    new ""
 
     # game/BKinteractions.rpy:534
     old "我很欣赏你的努力"
-    new "我很欣赏你的努力"
+    new ""
 
     # game/BKinteractions.rpy:534
     old "摆正你的位置!"
-    new "摆正你的位置!"
+    new ""
 
     # game/BKinteractions.rpy:580
     old "你的表现很不错"
-    new "你的表现很不错"
+    new ""
 
     # game/BKinteractions.rpy:580
     old "给我把嘴闭上"
-    new "给我把嘴闭上"
+    new ""
 
     # game/BKinteractions.rpy:662
     old "多交些朋友"
-    new "多交些朋友"
+    new ""
 
     # game/BKinteractions.rpy:662
     old "别再抱怨了"
-    new "别再抱怨了"
+    new ""
 
     # game/BKinteractions.rpy:662
     old "别整天和[inter.other_girl.name]鬼混在一起"
-    new "别整天和[inter.other_girl.name]鬼混在一起"
+    new ""
 
     # game/BKinteractions.rpy:662
     old "放下你和[inter.other_girl.name]的私人恩怨"
-    new "放下你和[inter.other_girl.name]的私人恩怨"
+    new ""
 
     # game/BKinteractions.rpy:773
     old "很高兴看到你对这里满意"
-    new "很高兴看到你对这里满意"
+    new ""
 
     # game/BKinteractions.rpy:773
     old "我很抱歉这里的环境..."
-    new "我很抱歉这里的环境..."
+    new ""
 
     # game/BKinteractions.rpy:773
     old "给我好好工作，否则..."
-    new "给我好好工作，否则..."
+    new ""
 
     # game/BKinteractions.rpy:773
     old "你最好早点习惯这里..."
-    new "你最好早点习惯这里..."
+    new ""
 
     # game/BKinteractions.rpy:867
     old "感谢你的坦诚相告"
-    new "感谢你的坦诚相告"
+    new ""
 
     # game/BKinteractions.rpy:1283
     old "坚持训练"
-    new "坚持训练"
+    new ""
 
     # game/BKinteractions.rpy:1283
     old "放弃训练"
-    new "放弃训练"
+    new ""
 
     # game/BKinteractions.rpy:1301
     old "好吧....按你的方式来吧."
-    new "好吧....按你的方式来吧."
+    new ""
 
     # game/BKinteractions.rpy:1301
     old "我不敢相信现在的奴隶....好吧!"
-    new "我不敢相信现在的奴隶....好吧!"
+    new ""
 
     # game/BKinteractions.rpy:1301
     old "ne: 哼。这一次我会放过你的。你欠我一个人情."
-    new "ne: 哼。这一次我会放过你的。你欠我一个人情."
+    new ""
 
     # game/BKinteractions.rpy:1301
     old "gd: 好吧，我不会强迫你做你不喜欢的事情."
-    new "gd: 好吧，我不会强迫你做你不喜欢的事情."
+    new ""
 
     # game/BKinteractions.rpy:1301
     old "ev: 他妈的，这一次我会放过你....但不要考验我的耐心."
-    new "ev: 他妈的，这一次我会放过你....但不要考验我的耐心."
+    new ""
 
     # game/BKinteractions.rpy:1312
     old "强迫训练"
-    new "强迫训练"
+    new ""
 
     # game/BKinteractions.rpy:1397
     old "温和地训练她"
-    new "温和地训练她"
+    new ""
 
     # game/BKinteractions.rpy:1397
     old "正常地训练她"
-    new "正常地训练她"
+    new ""
 
     # game/BKinteractions.rpy:1397
     old "严苛地训练她"
-    new "严苛地训练她"
+    new ""
 
     # game/BKinteractions.rpy:1397
     old "揍她一顿"
-    new "揍她一顿"
+    new ""
 
     # game/BKinteractions.rpy:1467
     old "训练进行得非常顺利。 "
-    new "训练进行得非常顺利。 "
+    new ""
 
     # game/BKinteractions.rpy:1467
     old " 不再对 "
-    new " 不再对 "
+    new ""
 
     # game/BKinteractions.rpy:1469
     old "neg fixation removed"
-    new "neg fixation removed"
+    new ""
 
     # game/BKinteractions.rpy:1493
     old "训练进行得很顺利。 "
-    new "训练进行得很顺利。 "
+    new ""
 
     # game/BKinteractions.rpy:1493
     old " 有了一些进步。"
-    new " 有了一些进步。"
+    new ""
 
     # game/BKinteractions.rpy:1600
     old "poor"
-    new "poor"
+    new ""
 
     # game/BKinteractions.rpy:1600
     old "chores"
-    new "chores"
+    new ""
 
     # game/BKinteractions.rpy:1602
     old "告诫她"
-    new "告诫她"
+    new ""
 
     # game/BKinteractions.rpy:1633
     old " 个俯卧撑。去！"
-    new " 个俯卧撑。去！"
+    new ""
 
     # game/BKinteractions.rpy:1633
     old "举起这根木头，大约 "
-    new "举起这根木头，大约 "
+    new ""
 
     # game/BKinteractions.rpy:1633
     old " 次。"
-    new " 次。"
+    new ""
 
     # game/BKinteractions.rpy:1665
     old "out"
-    new "out"
+    new ""
 
     # game/BKinteractions.rpy:2239
     old "You notice that "
-    new "You notice that "
+    new ""
 
     # game/BKinteractions.rpy:2239
     old " is feeling strange during "
-    new " is feeling strange during "
+    new ""
 
     # game/BKinteractions.rpy:2239
     old ". It's like she both loves it and hates it."
-    new ". It's like she both loves it and hates it."
+    new ""
 
     # game/BKinteractions.rpy:2241
     old " is very sensitive during "
-    new " is very sensitive during "
+    new ""
 
     # game/BKinteractions.rpy:2241
     old ". Perhaps you should explore this further."
-    new ". Perhaps you should explore this further."
+    new ""
 
     # game/BKinteractions.rpy:2243
     old " seems to dislike "
-    new " seems to dislike "
+    new ""
 
     # game/BKinteractions.rpy:2243
     old ". Perhaps there's something in particular that makes her uncomfortable."
-    new ". Perhaps there's something in particular that makes her uncomfortable."
+    new ""
 
     # game/BKinteractions.rpy:2290
     old "利用正面情绪"
-    new "利用正面情绪"
+    new ""
 
     # game/BKinteractions.rpy:2290
     old "利用负面情绪"
-    new "利用负面情绪"
+    new ""
 
     # game/BKinteractions.rpy:2290
     old "保持情绪稳定"
-    new "保持情绪稳定"
+    new ""
 
     # game/BKinteractions.rpy:2491
     old "你愿意给她多少金币?"
-    new "你愿意给她多少金币?"
+    new ""
 
     # game/BKinteractions.rpy:2491
     old "[low] 金币"
-    new "[low] 金币"
+    new ""
 
     # game/BKinteractions.rpy:2491
     old "[med] 金币"
-    new "[med] 金币"
+    new ""
 
     # game/BKinteractions.rpy:2491
     old "[high] 金币"
-    new "[high] 金币"
+    new ""
 
     # game/BKinteractions.rpy:2547
     old "过来！谁是我最可爱的小奴隶...是 "
-    new "过来！谁是我最可爱的小奴隶...是 "
+    new ""
 
     # game/BKinteractions.rpy:2547
     old "！没错！"
-    new "！没错！"
+    new ""
 
     # game/BKinteractions.rpy:2547
     old "过来，给主人 "
-    new "过来，给主人 "
+    new ""
 
     # game/BKinteractions.rpy:2547
     old " 一个拥抱。把舌头伸出来...."
-    new " 一个拥抱。把舌头伸出来...."
+    new ""
 
     # game/BKinteractions.rpy:2547
     old "来这里，宝贝，坐到爸爸腿上。"
-    new "来这里，宝贝，坐到爸爸腿上。"
+    new ""
 
     # game/BKinteractions.rpy:2603
     old "你打算怎么办?"
-    new "你打算怎么办?"
+    new ""
 
     # game/BKinteractions.rpy:2603
     old "坚持到底"
-    new "坚持到底"
+    new ""
 
     # game/BKinteractions.rpy:2615
     old "好吧...随你的便。"
-    new "好吧...随你的便。"
+    new ""
 
     # game/BKinteractions.rpy:2615
     old "真不敢相信现在的奴隶...好吧！"
-    new "真不敢相信现在的奴隶...好吧！"
+    new ""
 
     # game/BKinteractions.rpy:2615
     old "ne: 哼，这次就先放过你，但是下次..."
-    new "ne: 哼，这次就先放过你，但是下次..."
+    new ""
 
     # game/BKinteractions.rpy:2615
     old "gd: 好吧，我不会强迫你做你不喜欢的事情。"
-    new "gd: 好吧，我不会强迫你做你不喜欢的事情。"
+    new ""
 
     # game/BKinteractions.rpy:2615
     old "ev: 操，这一次我就放过你了....但是不要考验我的耐心。"
-    new "ev: 操，这一次我就放过你了....但是不要考验我的耐心。"
+    new ""
 
     # game/BKinteractions.rpy:2669
     old "你告诉她你很高兴，因为 "
-    new "你告诉她你很高兴，因为 "
+    new ""
 
     # game/BKinteractions.rpy:2899
     old "你告诉她你很生气，因为 "
-    new "你告诉她你很生气，因为 "
+    new ""
 
     # game/BKinteractions.rpy:3036
     old "你想让她在农场待多久?"
-    new "你想让她在农场待多久?"
+    new ""
 
     # game/BKinteractions.rpy:3036
     old "1 天"
-    new "1 天"
+    new ""
 
     # game/BKinteractions.rpy:3036
     old "3 天"
-    new "3 天"
+    new ""
 
     # game/BKinteractions.rpy:3036
     old "7 天"
-    new "7 天"
+    new ""
 
     # game/BKinteractions.rpy:3104
     old "你记得 [girl.name] 对 [act] 行为有 [reaction] 的反应。你要利用这一点来训练她吗?"
-    new "你记得 [girl.name] 对 [act] 行为有 [reaction] 的反应。你要利用这一点来训练她吗?"
+    new ""
 
     # game/BKinteractions.rpy:3307
     old "你注意到 "
-    new "你注意到 "
+    new ""
 
     # game/BKinteractions.rpy:3307
     old "期间感到愉悦和反感。她似乎对此有矛盾的感觉。"
-    new "期间感到愉悦和反感。她似乎对此有矛盾的感觉。"
+    new ""
 
     # game/BKinteractions.rpy:3309
     old "尽管她在哭泣，你注意到 "
-    new "尽管她在哭泣，你注意到 "
+    new ""
 
     # game/BKinteractions.rpy:3309
     old " 似乎喜欢 "
-    new " 似乎喜欢 "
+    new ""
 
     # game/BKinteractions.rpy:3309
     old "。也许你应该进一步探索这个问题。"
-    new "。也许你应该进一步探索这个问题。"
+    new ""
 
     # game/BKinteractions.rpy:3311
     old " 似乎非常讨厌 "
-    new " 似乎非常讨厌 "
+    new ""
 
     # game/BKinteractions.rpy:3311
     old " 。也许你可以利用这个信息对付她。"
-    new " 。也许你可以利用这个信息对付她。"
+    new ""
 
     # game/BKinteractions.rpy:3443
     old "改变好感度"
-    new "改变好感度"
+    new ""
 
     # game/BKinteractions.rpy:3443
     old "改变恐惧值"
-    new "改变恐惧值"
+    new ""
 
     # game/BKinteractions.rpy:3443
     old "改变情绪值"
-    new "改变情绪值"
+    new ""
 
     # game/BKinteractions.rpy:3721
     old "没事的宝贝"
-    new "没事的宝贝"
+    new ""
 
     # game/BKinteractions.rpy:3721
     old "把钱还给你"
-    new "把钱还给你"
+    new ""
 
     # game/BKinteractions.rpy:3721
     old "装作不知情"
-    new "装作不知情"
+    new ""
 
     # game/BKinteractions.rpy:4030
     old "慢慢说"
-    new "慢慢说"
+    new ""
 
     # game/BKinteractions.rpy:4030
     old "说快点"
-    new "说快点"
+    new ""
 
     # game/BKinteractions.rpy:4030
     old "专心听"
-    new "专心听"
+    new ""
 
     # game/BKinteractions.rpy:4332
     old "当然是了"
-    new "当然是了"
+    new ""
 
     # game/BKinteractions.rpy:4332
     old "换个说法"
-    new "换个说法"
+    new ""
 
     # game/BKinteractions.rpy:4332
     old "她们也配？"
-    new "她们也配？"
+    new ""
 
     # game/BKinteractions.rpy:4557
     old "真是这样吗?"
-    new "真是这样吗?"
+    new ""
 
     # game/BKinteractions.rpy:4557
     old "你在逗老子?"
-    new "你在逗老子?"
+    new ""
 
     # game/BKinteractions.rpy:4907
     old "袒护希露"
-    new "袒护希露"
+    new ""
 
     # game/BKinteractions.rpy:4907
     old "让她发泄"
-    new "让她发泄"
+    new ""
 
     # game/BKinteractions.rpy:4907
     old "冲她咆哮"
-    new "冲她咆哮"
+    new ""
 
     # game/BKinteractions.rpy:5245
     old "我很抱歉事情变成这样"
-    new "我很抱歉事情变成这样"
+    new ""
 
     # game/BKinteractions.rpy:5245
     old "人生不总是一帆风顺的"
-    new "人生不总是一帆风顺的"
+    new ""
 
     # game/BKinteractions.rpy:5245
     old "别自顾自的怨天尤人了"
-    new "别自顾自的怨天尤人了"
+    new ""
 
     # game/BKinteractions.rpy:5652
     old "改革可能会带来不好的影响"
-    new "改革可能会带来不好的影响"
+    new ""
 
     # game/BKinteractions.rpy:5652
     old "改革也会带来很多新的机遇"
-    new "改革也会带来很多新的机遇"
+    new ""
 
     # game/BKinteractions.rpy:5652
     old "乱成一团那才叫有趣，对吧"
-    new "乱成一团那才叫有趣，对吧"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "告诉她你会举行驱魔仪式 (2天)"
-    new "告诉她你会举行驱魔仪式 (2天)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "告诉她，她必须学会接受它(用“笨拙”的特质取代她的消极特质)"
-    new "告诉她，她必须学会接受它(用“笨拙”的特质取代她的消极特质)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "召唤一只黏糊糊的触手怪到她的房间 (1天)"
-    new "召唤一只黏糊糊的触手怪到她的房间 (1天)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "花钱雇魔法公会召唤一个触手怪到她的房间 (1000金币, 1天)"
-    new "花钱雇魔法公会召唤一个触手怪到她的房间 (1000金币, 1天)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "让她收集一些食材，搭建一个祭坛 (3天)"
-    new "让她收集一些食材，搭建一个祭坛 (3天)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "采购一些食材，搭建一个祭坛 (1天, 650金币)"
-    new "采购一些食材，搭建一个祭坛 (1天, 650金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "让她畅所欲言(用“无神论”特质取代她的消极特质)"
-    new "让她畅所欲言(用“无神论”特质取代她的消极特质)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "给她买一只新宠物 (800金币)"
-    new "给她买一只新宠物 (800金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "聘请一些律师把[girl.name]的案子移送法庭审理 (1250金币定金,未知的收益)"
-    new "聘请一些律师把[girl.name]的案子移送法庭审理 (1250金币定金,未知的收益)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "派几个混混放火烧了她的老宅子 (900金币)"
-    new "派几个混混放火烧了她的老宅子 (900金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "在庄园的木材仓库里点起一场大火"
-    new "在庄园的木材仓库里点起一场大火"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "让她去为那个不幸的灵魂祈祷 (1天, 捐赠500金币)"
-    new "让她去为那个不幸的灵魂祈祷 (1天, 捐赠500金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "提出增加她的零用钱(用“养尊处优”的特质取代她的消极特质)"
-    new "提出增加她的零用钱(用“养尊处优”的特质取代她的消极特质)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "给她买她梦寐以求的那条裙子 ([dress.price]金币)"
-    new "给她买她梦寐以求的那条裙子 ([dress.price]金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "让她去埋葬她的亲人吧 (2天, 1000金币)"
-    new "让她去埋葬她的亲人吧 (2天, 1000金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "举办一次公开的活动 (1500金币定金,未知收益)"
-    new "举办一次公开的活动 (1500金币定金,未知收益)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "绑架一匹马?!? (750金币)"
-    new "绑架一匹马?!? (750金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "帮她还清债务 (900金币)"
-    new "帮她还清债务 (900金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "给她几天时间去探亲 (3天)"
-    new "给她几天时间去探亲 (3天)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "派几个打手去收拾那个混蛋 (500金币)"
-    new "派几个打手去收拾那个混蛋 (500金币)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "雇盗贼公会把那个混蛋洗劫一空 (750金币定金,未知收益)"
-    new "雇盗贼公会把那个混蛋洗劫一空 (750金币定金,未知收益)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "派几个奸诈的卫兵去把那个混蛋洗劫一空 (750金币定金,未知收益)"
-    new "派几个奸诈的卫兵去把那个混蛋洗劫一空 (750金币定金,未知收益)"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "像处置坏女孩一样惩罚她"
-    new "像处置坏女孩一样惩罚她"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "现在还不是时候"
-    new "现在还不是时候"
+    new ""
 
     # game/BKinteractions.rpy:6029
     old "别再为这点小事来烦我"
-    new "别再为这点小事来烦我"
+    new ""
 

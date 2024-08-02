@@ -2231,7 +2231,7 @@ init -2 python:
                     break
             else:
                 renpy.say(carpenter, __("好的，看样子你已经拿到材料了，交给我。我马上就为 ") + __(furn.name) + __(" 开始准备。"))
-                if renpy.call_screen("yes_no", __("您确定要为修 ") + __(furn.name) + __(" 而花费 ") + __(furn.describe_cost()) + "吗?"):
+                if renpy.call_screen("yes_no", __("您确定要修建 ") + __(furn.name) + __("吗？这将花费") + __(furn.describe_cost()) + "金币。"):
                     MC.spend_resources(furn.cost)
                     renpy.block_rollback()
                     furn.start_building()
