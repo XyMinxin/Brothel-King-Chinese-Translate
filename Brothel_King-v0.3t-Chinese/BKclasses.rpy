@@ -7508,7 +7508,7 @@ init -2 python:
                 return "{b}农场弱点{/b}: " + farm_related_dict[target.capitalize()]
 
             elif spe == "item":
-                return "{b}必须穿着{/b}: " + setting_name_dict[target.name]
+                return "{b}必要穿着{/b}: " + setting_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外付费)"
