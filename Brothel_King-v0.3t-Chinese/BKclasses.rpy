@@ -7505,7 +7505,7 @@ init -2 python:
                 return "{b}正面癖好{/b}: " + and_text([girl_related_dict[f.name.capitalize()] for f in target], " 或 ")
 
             elif spe == "farm":
-                return "{b}弱点{/b}: " + girl_related_dict[target.capitalize()]
+                return "{b}农场弱点{/b}: " + farm_related_dict[target.capitalize()]
 
             elif spe == "item":
                 return "{b}必须穿着{/b}: " + setting_name_dict[target.name]
