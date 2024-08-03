@@ -1286,7 +1286,7 @@ init python:
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
                                 "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}([girl_related_dict[%s]])。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
                                 "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
@@ -1304,7 +1304,7 @@ init python:
                                 "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了。", encourage=False),
                                 "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]形式工作{/color}。", encourage=False),
                                 "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人[girl_related_dict[%s]]{/color}。", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}%s{/color}([girl_related_dict[%s]])。", encourage=False),
                                 "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
                                 "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
                                 "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练([girl_related_dict[%s]]){/color}。", encourage=False),
@@ -3575,14 +3575,14 @@ init -2 python:
 
     # ORG/org = Organizer, VEN/ven = venue, AVEN/aven = article + venue, LOC/loc = location, DIS/dis = district  汉化标签，8种不同的合同
 
-    contract_description = {"cruise" : ":ORG:正在组织一次夜间巡游:dis:以感谢其成员今年的辛勤工作。:AVEN:将在黄昏时分出发前往海湾观光，然后停泊在:LOC:旁边，享受一个娱乐之夜。",
-                            "party" : ":ORG:正在:aven:附近举办一个奢华的派对。所有在瓒城的人都要参加，并一直狂欢到天亮之后。",
-                            "ceremony" : ":ORG:选择了:aven:靠近:LOC:来庆祝他们众多的圣日之一。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣酒洗去他们的罪孽，教会在现场很方便地出售这些圣酒。",
-                            "festival" : ":ORG:下个月将在:dis:举办一个巨大的节日，以庆祝新的季节、三头牛、太阳再次升起，或其他一些乡下人的胡话。不过，在:aven:靠近:LOC:的地方会有一场大的盛宴，有食物、饮料、表演，当然还有女孩！",
-                            "date" : ":ORG:已经邀请了几个朋友到:aven:旁边的:LOC:过夜，并要求有人陪伴。仪容整洁、举止得体的女仆被期望照顾他的每一个需求。",
-                            "meeting" : ":ORG:召集志同道合的贵族和外交官开会，讨论:ven:在:LOC:附近的一个隐秘的地点。虽然这一严肃话题的复杂性将占据他们的大部分时间，但他们也希望主人能提供一流的服务和'缓解'紧张的方法。",
-                            "magic" : ":ORG:召集所有的奥术师在:LOC:参加一个有趣的魔法之夜。在美女们的照顾下，客人们将在:aven:参加特别活动，俯瞰:DIS:的壮丽景色。",
-                            "orgy" : ":ORG:很高兴地宣布，在:LOC:中，有一个漫长的享乐主义和色情惊喜的夜晚。聚集在:aven:，客人们将与志同道合的人和精心挑选的精英性奴一起享受禁忌的快乐。"}
+    contract_description = {"cruise" : ":ORG:正在组织一次环绕:dis:的巡游，以犒劳大伙今年的辛勤工作。在黄昏时分从:AVEN:出发前往海湾观光，然后停泊在:LOC:附近，享受娱乐之夜。",
+                            "party" : ":ORG:计划在:aven:附近举办一场奢华的派对。所有在泽恩的人都可以参加，从天黑一直狂欢到天亮结束。",
+                            "ceremony" : ":ORG:选择在靠近:LOC:的:aven:来庆祝他们众多纪念日中的一个。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣水洗去他们的罪孽，教会会在现场大量出售这些圣水。",
+                            "festival" : ":ORG:下个月将在:dis:举办一个巨大的庆典，以庆祝季节的更替、母牛生了三头小牛、太阳照常升起，或者随便什么理由。不过，在:aven:靠近:LOC:的地方会有一场大的盛宴，有丰富食物、酒水、演出，当然也少不了性感的女孩！",
+                            "date" : ":ORG:邀请了几位好友到:LOC:附近的:aven:过夜，并承诺会有人服侍他们。仪表整洁、举止得体的女仆要满足贵客的一切需求。",
+                            "meeting" : ":ORG:召集了同一派系中的贵族和外交官会晤，讨论关于:ven:的相关事宜，会议将在:LOC的一个隐秘的据点举行。虽然会议十分严肃，但他们也希望主办方能提供一流的服务和'缓解'紧张氛围的娱乐项目。",
+                            "magic" : ":ORG:召集受邀的法师在:LOC:度过有趣的一晚。客人们将在美女们的陪伴下前往:aven:参加这次活动，共同探索:DIS的秘密。",
+                            "orgy" : ":ORG:高兴地宣布，在:LOC:，将有一个漫长的享受肉欲和交配本能的夜晚。大家聚集在:aven:，与同道中人和精心挑选的高级性奴一起享受禁忌的快乐。"}
 
 init python:
 
