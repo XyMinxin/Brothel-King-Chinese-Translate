@@ -3291,7 +3291,7 @@ init -2 python:
                     self.change_stat(add1, job_up_change[self.job_level[job]][2], apply_boost = False)
                     self.change_stat(add2, job_up_change[self.job_level[job]][2], apply_boost = False)
 
-                    self.track_event("job up", arg=job)
+                    self.track_event("job up", arg=girl_related_dict[job])
 
                     calendar.set_alarm(calendar.time + announcement_delay, Event(label = "job_up", object = (self, job, self.job_level[job])))
 

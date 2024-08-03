@@ -1305,7 +1305,7 @@ label slave_train_sex_acts(girl, mode):
             else:
                 "She refuses you."
 
-                $ girl.track_event("refused", arg=act)
+                $ girl.track_event("refused", arg=girl_related_dict[act])
 
                 call dialogue(girl, "slave train refused") from _call_dialogue_168
 

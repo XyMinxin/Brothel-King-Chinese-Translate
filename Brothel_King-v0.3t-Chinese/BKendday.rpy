@@ -496,7 +496,7 @@ label end_day:
 
                     else:
                         striking_girls.append(girl)
-                        girl.track_event("disobey", arg=girl.job)
+                        girl.track_event("disobey", arg=girl_related_dict[girl.job])
                         girl.add_log("strike_days")
 
             elif girl.away:
