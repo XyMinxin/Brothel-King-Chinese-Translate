@@ -202,7 +202,7 @@ translate schinese c3_suzume_hint_6f1495b5:
 translate schinese c3_suzume_hint_41f4edc5:
 
     # "Homura also mentioned that she can help you if you tie her ribbon to a pole in the {b}Plaza{/b}, but you'll need an okiya first."
-    "焰还提到,如果你把她的丝带系在{b}广场{/b}的一根柱子上,她就会来见你,不过你的青楼要有一间花坊剧场。"
+    "焰还提到,如果你把她的丝带系在{b}广场{/b}的一根柱子上,她就会来见你,不过你的青楼要有一间艺妓置屋。"
 
 # game/BKchapter3.rpy:171
 translate schinese c3_interrogate_contacts_15c12661:
@@ -3574,13 +3574,13 @@ translate schinese c3_contact_homura_c051ba90:
 translate schinese c3_contact_homura_5b041a47:
 
     # you "She did mention I needed to build an okiya first... No point in summoning her now."
-    you "她说我需要先建一个花坊剧场。现在召唤她还为时尚早。"
+    you "她说我需要先建一个艺妓置屋。现在召唤她还为时尚早。"
 
 # game/BKchapter3.rpy:1764
 translate schinese c3_contact_homura_1e83cf40:
 
     # "You must buy the {b}Okiya{/b} before you can contact Homura again."
-    "你必须先建造{b}花坊剧场{/b},然后才能再次联系焰。"
+    "你必须先建造{b}艺妓置屋{/b},然后才能再次联系焰。"
 
 # game/BKchapter3.rpy:1775
 translate schinese c3_homura_visit_1e997669:

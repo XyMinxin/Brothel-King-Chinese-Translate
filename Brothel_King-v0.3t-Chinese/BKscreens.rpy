@@ -3030,7 +3030,7 @@ screen perks(girl):
                                     if selected_perk.min_rank:
                                         $ text1 = "阶级 " + rank_name[selected_perk.min_rank] + ""
                                     else:
-                                        $ text1 = "阶级 普通丫鬟"
+                                        $ text1 = "阶级 C"
                                     $ text2 = selected_perk.get_description()
 
                                 else:

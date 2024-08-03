@@ -7980,7 +7980,7 @@ translate schinese c2_homura_okiya1_1258b1db:
 translate schinese c2_homura_okiya1_4f28da96:
 
     # you "...and this is the last room, the Okiya. Here, we organize tea ceremonies, and some other forms of entertainment for our guests..."
-    you "...最里面的房间,这里是花坊剧场。姑娘们在这里举办茶会,还有一些其他形式的娱乐活动供客人享受..."
+    you "...最里面的房间,这里是艺妓置屋。姑娘们在这里举办茶会,还有一些其他形式的娱乐活动供客人享受..."
 
 # game/BKchapter2.rpy:4271
 translate schinese c2_homura_okiya1_687a1846:

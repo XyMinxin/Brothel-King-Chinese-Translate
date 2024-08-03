@@ -105,7 +105,7 @@ label quick_start:
             "露天温泉":
                 $ brothel.add_room("onsen", forced=True)
 
-            "花坊剧场":
+            "艺妓置屋":
                 $ brothel.add_room("okiya", forced=True)
 
         $ brothel.free_room = False

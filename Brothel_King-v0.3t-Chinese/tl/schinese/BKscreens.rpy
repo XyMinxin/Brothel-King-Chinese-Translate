@@ -96,27 +96,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1497
     old "{b}Helpless"
-    new "{b}手无寸铁"
+    new "{b}无助的"
 
     # game/BKscreens.rpy:1499
     old "{b}Mostly harmless"
-    new "{b}娇花易折"
+    new "{b}无害的"
 
     # game/BKscreens.rpy:1501
     old "{b}Competent"
-    new "{b}红颜侠客"
+    new "{b}安全的"
 
     # game/BKscreens.rpy:1503
     old "{b}Dangerous"
-    new "{b}绝色杀手"
+    new "{b}危险的"
 
     # game/BKscreens.rpy:1505
     old "{b}Deadly"
-    new "{b}致命诱惑"
+    new "{b}致命的"
 
     # game/BKscreens.rpy:1507
     old "{/b}\nHow well she can defend herself. Raise this by giving her a weapon."
-    new "{/b}\n她的自卫能力如何。给她一把武器可以提高自卫能力。"
+    new "{/b}\n她的自卫能力。给她配备一把武器可以提高她的自卫能力。"
 
     # game/BKscreens.rpy:1566
     old "Rank "
