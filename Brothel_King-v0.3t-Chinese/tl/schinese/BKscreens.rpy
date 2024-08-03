@@ -2012,15 +2012,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8243
     old "Tasks"
-    new "任务"
+    new "任务内容"
 
     # game/BKscreens.rpy:8252
     old "Bonus requirement"
-    new "奖励要求"
+    new "额外要求"
 
     # game/BKscreens.rpy:8256
     old "Reward: "
-    new "奖励: "
+    new "报酬: "
 
     # game/BKscreens.rpy:8257
     old "%s gold"

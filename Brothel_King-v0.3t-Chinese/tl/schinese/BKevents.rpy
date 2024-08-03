@@ -3904,13 +3904,13 @@ translate schinese contract_chosen_10008941:
 translate schinese contract_chosen_eba0ee0b:
 
     # jobgirl "Come on! As your agent, I expect to get paid... *grumble*"
-    jobgirl "拜托!作为你的代理人,我当然要拿点佣金...*咕哝*"
+    jobgirl "拜托!作为你的代理人,我当然要收点佣金...*咕哝*"
 
 # game/BKevents.rpy:4332
 translate schinese contract_chosen_980b02b2:
 
     # jobgirl "Tell you what. Because it's your first contract, it will be on me, this time."
-    jobgirl "告诉你吧。因为这是你的第一个合同,这次中间人费我来掏。"
+    jobgirl "告诉你吧。因为这是你的第一个高级委托,这次中介费我替你垫了。"
 
 # game/BKevents.rpy:4334
 translate schinese contract_chosen_683fe73a:
@@ -3928,7 +3928,7 @@ translate schinese contract_chosen_d3261b02:
 translate schinese contract_chosen_5924d643:
 
     # jobgirl "Great! I will tell the guild. Now, time to pay my finder's fee..."
-    jobgirl "太棒了!我会告知工会。现在,该支付我的中间人费了..."
+    jobgirl "太棒了!我会上报给工会。现在,该支付我的中介费了..."
 
 # game/BKevents.rpy:4357
 translate schinese first_contract_return_fec09946:
@@ -3940,13 +3940,13 @@ translate schinese first_contract_return_fec09946:
 translate schinese first_contract_return_2f6ccb8b:
 
     # jobgirl "Here are the contracts on offer. Choose carefully."
-    jobgirl "这些是本月的合同选择。请仔细选择。"
+    jobgirl "这个月的合约都在这儿了。请仔细阅读雇主的要求，挑选一份适合你的签了吧。"
 
 # game/BKevents.rpy:4366
 translate schinese first_contract_return_155b5b46:
 
     # jobgirl "That's too bad. I'll come back in a month, with new contract opportunities. Next time, I hope we can make a deal!"
-    jobgirl "太遗憾了。一个月后我会带来新的合同机会。希望下次我们能达成交易!"
+    jobgirl "太遗憾了。下个月还会有其他合约。希望到时候你能接上一单!"
 
 # game/BKevents.rpy:4388
 translate schinese new_contract_eb8778b9:
@@ -3958,19 +3958,19 @@ translate schinese new_contract_eb8778b9:
 translate schinese new_contract_c82227fb:
 
     # jobgirl "Seems like you did well on that last contract. The customer was pleased."
-    jobgirl "看来你在上次合同中表现不错。客户很满意。"
+    jobgirl "看来你在上次委托中表现不错。客户很满意。"
 
 # game/BKevents.rpy:4395
 translate schinese new_contract_ae044438:
 
     # jobgirl "I heard that last contract was a failure. Too bad... I hope you'll do better next time!"
-    jobgirl "我听说上次的合同是个失败。太糟糕了...希望你下次表现更好!"
+    jobgirl "我听说上次的委托雇主很不满意。太糟糕了...希望你的姑娘下次能好好表现!"
 
 # game/BKevents.rpy:4399
 translate schinese new_contract_7fb95822:
 
     # jobgirl "Here are some new contract opportunities. Take a look!"
-    jobgirl "这里有一些新的合同机会,请看看!"
+    jobgirl "这里有一些新的合约,请看看!"
 
 # game/BKevents.rpy:4407
 translate schinese new_contract_e57b1f48:
@@ -3982,25 +3982,25 @@ translate schinese new_contract_e57b1f48:
 translate schinese new_contract_16f69e0b:
 
     # jobgirl "All right, then, I'll come back tonight. This will be your last chance to pick a contract for this month, so think carefully!"
-    jobgirl "好吧,那么我今晚就会回来。这将是本月你选择合同的最后机会,所以请仔细考虑!"
+    jobgirl "好吧,那么我晚上再来拜访你。这将是本月你选择签订合约的最后机会,所以请仔细斟酌!"
 
 # game/BKevents.rpy:4414
 translate schinese new_contract_be7aa2e5:
 
     # jobgirl "Aw, I went through all this trouble to find some suitable customers for you... Well, I hope you won't miss your chance next month!"
-    jobgirl "哎,我费了这么大劲为你找到一些合适的客户...嗯,希望你下个月不要错过机会!"
+    jobgirl "哎,我费了这么大劲才为你找到一些合适的客户...嗯,希望你下个月不要错过机会!"
 
 # game/BKevents.rpy:4429
 translate schinese new_contract_return_bc0b149a:
 
     # jobgirl "Seems like you did well on that last contract! The customer was pleased."
-    jobgirl "看来你上次的合同做得很好!客户很满意。"
+    jobgirl "看来你上次的委托完成得很好!雇主很满意。"
 
 # game/BKevents.rpy:4431
 translate schinese new_contract_return_ae044438:
 
     # jobgirl "I heard that last contract was a failure. Too bad... I hope you'll do better next time!"
-    jobgirl "我听说上次的合同是个失败。太糟糕了...希望你下次表现更好!"
+    jobgirl "我听说上次的委托雇主很不满意。太糟糕了...希望你的姑娘下次能好好表现!"
 
 # game/BKevents.rpy:4433
 translate schinese new_contract_return_fec09946:
@@ -4012,7 +4012,7 @@ translate schinese new_contract_return_fec09946:
 translate schinese new_contract_return_2f6ccb8b:
 
     # jobgirl "Here are the contracts on offer. Choose carefully."
-    jobgirl "这里有一些待选的合同。请仔细选择。"
+    jobgirl "这里有一些待选的合约。请仔细选择。"
 
 # game/BKevents.rpy:4442
 translate schinese new_contract_return_155b5b46:
@@ -4024,13 +4024,13 @@ translate schinese new_contract_return_155b5b46:
 translate schinese run_contract_bb10f273:
 
     # "[con.title]" "The time for the contract has come."
-    "[con.title]" "合同开始执行的时候到了。"
+    "[con.title]" "履行合约的时候到了。"
 
 # game/BKevents.rpy:4471
 translate schinese run_contract_9028636b:
 
     # jobgirl "Unfortunately, none of your girls are available for this contract. You missed your chance this time..."
-    jobgirl "很遗憾,你的女孩都不可用于这份合同。这次你错过了机会..."
+    jobgirl "很遗憾,你的女孩都不满足合约上的要求。这次没法履行合约..."
 
 # game/BKevents.rpy:4473
 translate schinese run_contract_b541e7e3:
