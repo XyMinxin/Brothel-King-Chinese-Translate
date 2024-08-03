@@ -560,7 +560,7 @@ init python:
                         "tavern" : Room("零点酒吧", 0, "special", job = "waitress"),
                         "strip club" : Room("激情夜店", 0, "special", job = "dancer"),
                         "onsen" : Room("露天温泉", 0, "special", job = "masseuse"),
-                        "okiya" : Room("花坊剧场", 0, "special", job = "geisha"),
+                        "okiya" : Room("艺妓置屋", 0, "special", job = "geisha"),
                         }
 
     for room in common_room_dict:
@@ -590,7 +590,7 @@ init python:
     cnjob_room_dict = {"waitress" : "零点酒吧",
                      "dancer" : "激情夜店",
                      "masseuse" : "露天温泉",
-                     "geisha" : "花坊剧场",
+                     "geisha" : "艺妓置屋",
                      "whore" : "卧室"
                      }                 
 
@@ -2673,8 +2673,8 @@ init -4 python:
     special_quest_description = {
                                  "折扣价" : "新人注册享受优惠。千万别错过!",
                                  "大师班" : "大师亲自指导。一节更比七节强！",
-                                 "高报酬" : "完成这个任务将获得更多的报酬！",
-                                 "高难度" : "完成这个任务将获得更多的声望！"
+                                 "高报酬" : "完成这个委托将获得更多的报酬！",
+                                 "高难度" : "完成这个委托将获得更多的声望！"
                                  }
 
     quest_base_gold = { # This the gold value per stat point of requirement and per day
@@ -2795,59 +2795,59 @@ init -4 python:
     # Rank names #
 #汉化书签，待润色修改#
     rank_name = {
-                 1 : "普通丫鬟", #"{color=[c_white]}C{/color}",
-                 2 : "风尘女子", #"{color=[c_yellow]}B{/color}",
-                 3 : "青楼红牌", #"{color=[c_lightblue]}A{/color}",
-                 4 : "头牌花魁", #"{color=[c_purple]}S{/color}",
-                 5 : "倾国倾城", #"{color=[c_gold]}X{/color}",
-                 "waitress0": "毫无经验",
-                 "waitress1": "生疏的服务员",
-                 "waitress2": "称职的服务员",
-                 "waitress3": "熟练的服务员",
-                 "waitress4": "老练的服务员",
-                 "waitress5": "酒场女王",
-                 "dancer0": "毫无经验",
-                 "dancer1": "初学者舞娘",
-                 "dancer2": "熟练的舞娘",
-                 "dancer3": "专业的舞女",
-                 "dancer4": "大师级舞女",
-                 "dancer5": "舞淋高手",
-                 "masseuse0": "毫无经验",
-                 "masseuse1": "生疏的按摩师",
-                 "masseuse2": "熟练的按摩师",
-                 "masseuse3": "专业的按摩女",
-                 "masseuse4": "顶级的按摩女",
-                 "masseuse5": "按摩达人",
-                 "geisha0": "毫无经验",
-                 "geisha1": "生疏的艺伎",
-                 "geisha2": "入门的艺伎",
-                 "geisha3": "熟练的艺伎",
-                 "geisha4": "专业的艺伎",
-                 "geisha5": "红毯公主",
-                 "sex0" : "毫无经验",
-                 "sex1" : "生疏的妓女",
-                 "sex2" : "熟练的妓女",
-                 "sex3" : "专业的妓女",
-                 "sex4" : "诱人的妓女",
-                 "sex5" : "性爱大师",
-                 "service0" : "毫无经验",
-                 "service1" : "新手手淫者",
-                 "service2" : "称职的手淫者",
-                 "service3" : "熟练的口交者",
-                 "service4" : "专家级口交者",
-                 "service5" : "侍奉女王",
-                 "anal0" : "毫无经验",
-                 "anal1" : "新手肛交荡妇",
-                 "anal2" : "称职的肛交荡妇",
-                 "anal3" : "熟练的肛交情人",
-                 "anal4" : "专家级肛交情人",
-                 "anal5" : "肛交女王",
-                 "fetish0" : "毫无经验",
-                 "fetish1" : "新手女仆",
-                 "fetish2" : "称职的女仆",
-                 "fetish3" : "熟练的伴游",
-                 "fetish4" : "专家级贴身保镖",
-                 "fetish5" : "调教女王"
+                 1 : "C", #"{color=[c_white]}C{/color}",
+                 2 : "B", #"{color=[c_yellow]}B{/color}",
+                 3 : "A", #"{color=[c_lightblue]}A{/color}",
+                 4 : "S", #"{color=[c_purple]}S{/color}",
+                 5 : "X", #"{color=[c_gold]}X{/color}",
+                 "waitress0": "女服务员LV0",
+                 "waitress1": "女服务员LV1",
+                 "waitress2": "女服务员LV2",
+                 "waitress3": "女服务员LV3",
+                 "waitress4": "女服务员LV4",
+                 "waitress5": "女服务员LV5",
+                 "dancer0": "脱衣舞娘LV0",
+                 "dancer1": "脱衣舞娘LV1",
+                 "dancer2": "脱衣舞娘LV2",
+                 "dancer3": "脱衣舞娘LV3",
+                 "dancer4": "脱衣舞娘LV4",
+                 "dancer5": "脱衣舞娘LV5",
+                 "masseuse0": "按摩技师LV0",
+                 "masseuse1": "按摩技师LV1",
+                 "masseuse2": "按摩技师LV2",
+                 "masseuse3": "按摩技师LV3",
+                 "masseuse4": "按摩技师LV4",
+                 "masseuse5": "按摩技师LV5",
+                 "geisha0": "表演艺妓LV0",
+                 "geisha1": "表演艺妓LV1",
+                 "geisha2": "表演艺妓LV2",
+                 "geisha3": "表演艺妓LV3",
+                 "geisha4": "表演艺妓LV4",
+                 "geisha5": "表演艺妓LV5",
+                 "sex0" : "妓女LV0",
+                 "sex1" : "妓女LV1",
+                 "sex2" : "妓女LV2",
+                 "sex3" : "妓女LV3",
+                 "sex4" : "妓女LV4",
+                 "sex5" : "妓女LV5",
+                 "service0" : "侍奉LV0",
+                 "service1" : "侍奉LV1",
+                 "service2" : "侍奉LV2",
+                 "service3" : "侍奉LV3",
+                 "service4" : "侍奉LV4",
+                 "service5" : "侍奉LV5",
+                 "anal0" : "肛交LV0",
+                 "anal1" : "肛交LV1",
+                 "anal2" : "肛交LV2",
+                 "anal3" : "肛交LV3",
+                 "anal4" : "肛交LV4",
+                 "anal5" : "肛交LV5",
+                 "fetish0" : "调教LV0",
+                 "fetish1" : "调教LV1",
+                 "fetish2" : "调教LV2",
+                 "fetish3" : "调教LV3",
+                 "fetish4" : "调教LV4",
+                 "fetish5" : "调教LV5"
                  }
 
 
@@ -3575,14 +3575,14 @@ init -2 python:
 
     # ORG/org = Organizer, VEN/ven = venue, AVEN/aven = article + venue, LOC/loc = location, DIS/dis = district  汉化标签，8种不同的合同
 
-    contract_description = {"cruise" : ":ORG:正在组织一次环绕:dis:的巡游，以犒劳大伙今年的辛勤工作。在黄昏时分从:AVEN:出发前往海湾观光，然后停泊在:LOC:附近，享受娱乐之夜。",
+    contract_description = {"cruise" : ":ORG:策划了一次环绕:dis:的巡游，以犒劳大伙今年的辛勤工作。在黄昏时分从:AVEN:出发前往海湾观光，然后停泊在:LOC:附近，享受娱乐之夜。",
                             "party" : ":ORG:计划在:aven:附近举办一场奢华的派对。所有在泽恩的人都可以参加，从天黑一直狂欢到天亮结束。",
-                            "ceremony" : ":ORG:选择在靠近:LOC:的:aven:来庆祝他们众多纪念日中的一个。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣水洗去他们的罪孽，教会会在现场大量出售这些圣水。",
-                            "festival" : ":ORG:下个月将在:dis:举办一个巨大的庆典，以庆祝季节的更替、母牛生了三头小牛、太阳照常升起，或者随便什么理由。不过，在:aven:靠近:LOC:的地方会有一场大的盛宴，有丰富食物、酒水、演出，当然也少不了性感的女孩！",
-                            "date" : ":ORG:邀请了几位好友到:LOC:附近的:aven:过夜，并承诺会有人服侍他们。仪表整洁、举止得体的女仆要满足贵客的一切需求。",
+                            "ceremony" : ":ORG:打算在靠近:LOC:的:aven:庆祝他们众多纪念日中的一个。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣水洗去他们的罪孽，教会会在现场大量出售这些圣水。",
+                            "festival" : ":ORG:下个月将在:dis:举办一场巨大的庆典，以庆祝季节的更替、母牛生了三头小牛、太阳照常升起，或者随便什么理由。不过，在:aven:靠近:LOC:的地方会有一场大的盛宴，有丰富食物、酒水、演出，当然也少不了性感的女孩！",
+                            "date" : ":ORG:邀请了几位好友到:LOC:附近的:aven:过夜，并承诺会有人服侍他们。仪表整洁、举止得体的女仆会满足贵客的一切需求。",
                             "meeting" : ":ORG:召集了同一派系中的贵族和外交官会晤，讨论关于:ven:的相关事宜，会议将在:LOC的一个隐秘的据点举行。虽然会议十分严肃，但他们也希望主办方能提供一流的服务和'缓解'紧张氛围的娱乐项目。",
                             "magic" : ":ORG:召集受邀的法师在:LOC:度过有趣的一晚。客人们将在美女们的陪伴下前往:aven:参加这次活动，共同探索:DIS的秘密。",
-                            "orgy" : ":ORG:高兴地宣布，在:LOC:，将有一个漫长的享受肉欲和交配本能的夜晚。大家聚集在:aven:，与同道中人和精心挑选的高级性奴一起享受禁忌的快乐。"}
+                            "orgy" : ":ORG:高兴地宣布，在:LOC:，将有一个漫长的享受肉欲和释放交配本能的夜晚。大家聚集在:aven:，与同道中人和精心挑选的高级性奴一起享受禁忌的快乐。"}
 
 init python:
 
@@ -3637,15 +3637,15 @@ init python:
                                   ),
                           Contract(type="orgy", district="The King's Hold", archetypes = ["The Slut", "The Escort"],
                                    names=["放浪之夜", "淫乱派对", "准备好迎接新的挑战", "单身汉派对", "淫秽的狂欢之夜"],
-                                   organizers=["淫荡的猫娘", "青楼老板奎恩", "大祭司罗恩", "太阳神教修女合唱团", "残障人士", "性奴隶贸易联盟", "匿名的皇室成员", "富有的商人", "贵族妇人"],
-                                   venues=["神秘的林中空地", "吉普赛营帐", "幽暗的地牢", "荒废的宫殿遗址", "淫荡的酒馆", "隐蔽的地下室", "被遗忘的寺庙"],
+                                   organizers=["淫荡的猫娘", "青楼老板奎恩", "大祭司罗恩", "太阳神教修女合唱团", "残障人士", "性奴贸易联盟", "匿名的皇室成员", "富有的商人", "贵族妇人"],
+                                   venues=["神秘的林中空地", "吉普赛营地", "幽暗的地牢", "荒废的宫殿遗址", "淫荡的酒馆", "隐蔽的地下室", "被遗忘的寺庙"],
                                    character=naked_lady,
                                    MC_event_pic="NPC/encounters/ev_onsens2.webp",
                                   ),
                                   ]
 
     contract_task_types_order = {"greet" : 1, "serve" : 2, "mingle" : 3, "event" : 4, "private show" : 5, "fun" : 6}
-    contract_task_types_description = {"greet" : "迎接客人", "serve" : "招待客人", "mingle" : "社交", "event" : "参加活动", "private show" : "举办私人表演", "fun" : "享受“乐趣”"}
+    contract_task_types_description = {"greet" : "接待客人", "serve" : "服侍客人", "mingle" : "社交场合", "event" : "参加活动", "private show" : "私人演出", "fun" : "玩的开心"}
 
     contract_tasks = [
                         ContractTask("clean", type="serve", requirements=["job waitress", "skill obedience", "skill constitution", ], tags=(["maid"], ["obedience"], ["waitress"], ["profile"])),

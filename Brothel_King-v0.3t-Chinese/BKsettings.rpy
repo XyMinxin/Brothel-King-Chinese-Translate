@@ -758,8 +758,8 @@ init -10 python:
                          "strip club" : "激情夜店",
                          "Onsen" : "露天温泉",
                          "onsen" : "露天温泉",
-                         "Okiya" : "花坊剧场",
-                         "okiya" : "花坊剧场",
+                         "Okiya" : "艺妓置屋",
+                         "okiya" : "艺妓置屋",
                          }
 
     ## 特质名称 ##
@@ -1352,7 +1352,7 @@ init -10 python:
                 "零点酒吧" : "tavern.webp",
                 "激情夜店" : "strip club.webp",
                 "露天温泉" : "onsen.webp",
-                "花坊剧场" : "okiya.webp",
+                "艺妓置屋" : "okiya.webp",
                 # Bedrooms
                 "拥挤的混宿" : "basic room1.webp",
                 "狭窄的单间" : "basic room2.webp",
@@ -1379,7 +1379,7 @@ init -10 python:
                 "零点酒吧" : "tavern",
                 "激情夜店" : "strip club",
                 "露天温泉" : "onsen",
-                "花坊剧场" : "okiya",
+                "艺妓置屋" : "okiya",
     }
 
             

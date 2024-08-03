@@ -3100,7 +3100,7 @@ translate schinese brothel_first_time_03bf0d24:
 translate schinese brothel_first_time_b17ae063:
 
     # gio "The {b}okiya{/b} will allow you to train girls as {b}geishas{/b}."
-    gio "{b}花坊剧场{/b}：女孩们将作为{b}表演艺伎{/b}在众人面前表演茶艺、传统表演。"
+    gio "{b}艺妓置屋{/b}：女孩们将作为{b}表演艺伎{/b}在众人面前表演茶艺、传统表演。"
 
 # game/BKintro.rpy:2128
 translate schinese brothel_first_time_9c8cc9ab:
@@ -3362,7 +3362,7 @@ translate schinese strings:
 
     # game/BKintro.rpy:1887
     old "An okiya (geisha house)"
-    new "花坊剧场"
+    new "艺妓置屋"
 
 
 ###########################################################
@@ -3630,6 +3630,6 @@ translate schinese strings:
     new "露天温泉"
 
     # game/BKintro.rpy:1802
-    old "花坊剧场"
-    new "花坊剧场"
+    old "艺妓置屋"
+    new "艺妓置屋"
 

@@ -4144,10 +4144,10 @@ init -2 python:
 
             if not silent:
                 if change > 0.5:
-                    notify("Love increased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("好感度上升", pic=self.portrait, debug_txt="(%s)" % str(change))
 
                 elif change < -0.5:
-                    notify("Love decreased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("好感度降低", pic=self.portrait, debug_txt="(%s)" % str(change))
 
             test_achievement("love")
 
