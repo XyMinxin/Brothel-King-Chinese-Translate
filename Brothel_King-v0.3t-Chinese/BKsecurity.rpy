@@ -44,8 +44,8 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
     if ev_type == "raid": # A raiding party blitzes the brothel, trying to kidnap one of your girls. 2-4 girls are targeted, you can only defend one yourself.
 
         python:
-            attackers = rand_choice(("四处劫掠的巨魔", "粘糊糊的怪物", "流浪佣兵"))
-            if attackers == "粘糊糊的怪物" and is_censored("monster"):
+            attackers = rand_choice(("四处劫掠的巨魔", "黏糊糊的怪物", "流浪佣兵"))
+            if attackers == "黏糊糊的怪物" and is_censored("monster"):
                 attackers = "流浪佣兵"
 
             pic1 = "events/" + rand_choice(security_pics["brothel defense"])
@@ -109,7 +109,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ hit = "手中的那把巨斧"
             show ogre at totheleft as enemy with dissolve
 
-        elif attackers == "粘糊糊的怪物":
+        elif attackers == "黏糊糊的怪物":
             $ strength = 4
             $ magic = 7
             $ hit = "一条抖动的触手"
@@ -126,7 +126,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         if attackers == "四处劫掠的巨魔":
             show ogre at left as enemy with move
 
-        elif attackers == "粘糊糊的怪物":
+        elif attackers == "黏糊糊的怪物":
             show sewer_monster as enemy at centerleft with move
 
         elif attackers == "流浪佣兵":
@@ -270,12 +270,12 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                     game.kidnapped.append(girl)
                     girl.kidnapper = attackers
 #                    text2 += "\n{color=[c_red]}" + girl.fullname + " has been kidnapped!{/color}"
-                    girl.track_event("kidnapped", arg = attackers + ".")
+                    girl.track_event("kidnapped", arg = attackers)
                 else:
                     girl.get_hurt(1+dice(4))
                     if girl.hurt > 0:
                         hurt_girls.append(girl)
-                        girl.track_event("hurt", arg = attackers + ".")
+                        girl.track_event("hurt", arg = attackers)
 
 
             if len(defended_girls) > 1:
@@ -1279,7 +1279,7 @@ init -3 python:
                     girl.get_hurt(dice(3)+2)
 
                     if girl.hurt > 0:
-                        girl.track_event("hurt", arg="an evil night monster.")
+                        girl.track_event("hurt", arg="邪恶的夜魔")
                         log.add_report(__("{color=[c_red]}安全警报！") + girl.fullname + __("受伤了。{/color}"))
                     else:
                         log.add_report(__("{color=[c_red]}安全警报！") + girl.fullname + __(" was raped.{/color}"))
@@ -1607,7 +1607,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
         try:
             k = girl.kidnapper
         except:
-            girl.kidnapper = "rogue mercenaries"
+            girl.kidnapper = "流浪佣兵"
 
     play music m_tavern fadein 3.0
 
@@ -1751,7 +1751,7 @@ label kidnap_rescue(girl):
     hide screen show_event
     with dissolve
 
-    if girl.kidnapper == "marauding ogres":
+    if girl.kidnapper == "四处劫掠的巨魔":
         $ pic = girl.get_pic("sex", and_tags = ["big"])
         if not pic:
             $ pic = farm.get_pic("sex", and_tags = ["big"])
@@ -1760,7 +1760,7 @@ label kidnap_rescue(girl):
 
         "An ogre is fucking [girl.fullname] mercilessly, his huge cock messing up her insides."
 
-    elif girl.kidnapper == "gooey monsters":
+    elif girl.kidnapper == "黏糊糊的怪物":
         $ pic = girl.get_pic("monster", and_tags = ["anal"])
         if not pic:
             $ pic = farm.get_pic("monster", and_tags = ["anal"])
@@ -1802,7 +1802,7 @@ label kidnap_rescue(girl):
 
             play sound s_crash
             with vpunch
-            if girl.kidnapper == "marauding ogres":
+            if girl.kidnapper == "四处劫掠的巨魔":
                 "Ogre" "Duh?"
                 play sound s_sheath
                 pause 0.2
@@ -1812,7 +1812,7 @@ label kidnap_rescue(girl):
 
                 "Bursting throught the door, you impale the ogre on your sword, slashing through his innards. His eyes have a look of dumbfound surprise as he loudly falls backwards in the dust, dead."
 
-            elif girl.kidnapper == "gooey monsters":
+            elif girl.kidnapper == "黏糊糊的怪物":
                 "Monster" "Grrr..."
                 play sound s_sheath
                 pause 0.2
@@ -1849,7 +1849,7 @@ label kidnap_rescue(girl):
 
             you "Booh."
 
-            if girl.kidnapper == "marauding ogres":
+            if girl.kidnapper == "四处劫掠的巨魔":
                 "Ogre" "Uh?"
                 play sound s_lightning
                 pause 0.2
@@ -1859,7 +1859,7 @@ label kidnap_rescue(girl):
 
                 "You strike the ogre with a bolt of lightning, briefly seeing the outline of his skeleton as he is fried dead. You girl escapes just in time, her hair standing on end from static electricity."
 
-            elif girl.kidnapper == "gooey monsters":
+            elif girl.kidnapper == "黏糊糊的怪物":
                 "Monster" "Rrrh!!!"
                 play sound s_fire
                 pause 0.2
@@ -1884,11 +1884,11 @@ label kidnap_rescue(girl):
 
             "Your spell fizzles, and you fiddle with the lock desperate to find another way to open the door."
 
-            if girl.kidnapper == "marauding ogres":
+            if girl.kidnapper == "四处劫掠的巨魔":
                 play sound s_roar
                 "You have been discovered! A large ogre roars as he spots you. You run for your life as [girl.fullname] is being dragged away."
 
-            elif girl.kidnapper == "gooey monsters":
+            elif girl.kidnapper == "黏糊糊的怪物":
                 play sound s_roar
                 "The monster has sensed your presence! You hear [girl.fullname]'s screams as she is being taken away."
 

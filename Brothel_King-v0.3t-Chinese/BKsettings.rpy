@@ -285,6 +285,9 @@ init -10 python:
                         "food" : "食物",
                         "Drink" : "饮料",
                         "drink" : "饮料",
+                        "out" : "外派",
+                        "chores" : "家务",
+                        "beach whore" : "海滩妓女",
                         None : "(girl_related_dict)没有值",
                         }
 
@@ -417,6 +420,7 @@ init -10 python:
                        "good" : "不错",
                        "very good" : "非常好",
                        "perfect" : "完美",
+                       "poor" : "低劣",
                        }
 
     ## 按钮名字 ##
@@ -1397,9 +1401,9 @@ init -10 python:
     pony_pics = ["ponygirls.webp", "ponygirls (1).webp", "ponygirls (2).webp", "ponygirls (3).webp", "ponygirls (4).webp", "ponygirls (5).webp", "ponygirls (6).webp",]
 
     security_pics = {
-                     "gooey monsters" : ["monster assault.webp",],
-                     "rogue mercenaries" :  ["merc assault (1).webp", "merc assault (1).webp", "merc assault (2).webp"],
-                     "marauding ogres" : ["ogre assault (1).webp", "ogre assault (3).webp", "ogre assault (2).webp"],
+                     "黏糊糊的怪物" : ["monster assault.webp",],
+                     "流浪佣兵" :  ["merc assault (1).webp", "merc assault (1).webp", "merc assault (2).webp"],
+                     "四处劫掠的巨魔" : ["ogre assault (1).webp", "ogre assault (3).webp", "ogre assault (2).webp"],
                      "monster rape" : ["monster (1).webp", "monster (1).webp", "monster (2).webp", "monster (2).webp", "monster (3).webp", "monster (4).webp", "monster (5).webp", "monster (6).webp", "monster (7).webp", "monster (8).webp", "monster (9).webp", "monster (10).webp", ],
                      "thief" : ["thief (1).webp", "thief (2).webp", "thief (3).webp", "thief (4).webp", "thief (5).webp", "thief (6).webp"],
                      "brothel defense" : ["brothel defense (1).webp", "brothel defense (2).webp"],

@@ -5303,8 +5303,8 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
                 log.add_report("{color=[c_red]}Security alert! {b}" + kidnapped_girls[0].fullname + " was kidnapped!{/b}{/color}")
                 MC.girls.remove(girl)
                 game.kidnapped.append(girl)
-                girl.kidnapper = "a dangerous thief"
-                girl.track_event("kidnapped", arg = "a dangerous thief.")
+                girl.kidnapper = "一个危险的小偷"
+                girl.track_event("kidnapped", arg = "一个危险的小偷")
 
             security_breach "There is nothing you could do. Maybe someone in town can help you find out her whereabouts?"
 

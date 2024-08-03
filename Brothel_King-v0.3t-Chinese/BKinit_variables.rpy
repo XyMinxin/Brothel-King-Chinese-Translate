@@ -560,7 +560,7 @@ init python:
                         "tavern" : Room("零点酒吧", 0, "special", job = "waitress"),
                         "strip club" : Room("激情夜店", 0, "special", job = "dancer"),
                         "onsen" : Room("露天温泉", 0, "special", job = "masseuse"),
-                        "okiya" : Room("艺妓置屋", 0, "special", job = "geisha"),
+                        "okiya" : Room("花坊剧场", 0, "special", job = "geisha"),
                         }
 
     for room in common_room_dict:
@@ -590,7 +590,7 @@ init python:
     cnjob_room_dict = {"waitress" : "零点酒吧",
                      "dancer" : "激情夜店",
                      "masseuse" : "露天温泉",
-                     "geisha" : "艺妓置屋",
+                     "geisha" : "花坊剧场",
                      "whore" : "卧室"
                      }                 
 
@@ -1286,7 +1286,7 @@ init python:
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
                                 "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}([girl_related_dict[%s]])。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
                                 "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
@@ -1296,15 +1296,15 @@ init python:
                                 # Neutral events
                                 "exhausted" : GirlRecentEvent(type="exhausted", action="变得筋疲力尽", base_description="她把自己逼得太紧了，结果{color=[c_crimson]}筋疲力尽{/color}了。"),
                                 "sick" : GirlRecentEvent(type="sick", action="生病了", base_description="她 {color=[c_crimson]}生病{/color}了。"),
-                                "hurt" : GirlRecentEvent(type="hurt", action="受伤了", base_description="她被%sgeisha{color=[c_crimson]}强奸{/color}了。"),
+                                "hurt" : GirlRecentEvent(type="hurt", action="受伤了", base_description="她被%s{color=[c_crimson]}强奸{/color}了。"),
                                 "defended" : GirlRecentEvent(type="defended", action="与客人争执", base_description="她{color=[c_emerald]}保护自己{/color}免于受到强奸。"),
 
 
                                 # Punishable events
                                 "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了。", encourage=False),
-                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]形式工作{/color}。", encourage=False),
-                                "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人[girl_related_dict[%s]]{/color}。", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}%s{/color}([girl_related_dict[%s]])。", encourage=False),
+                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]的形式工作{/color}。", encourage=False),
+                                "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人%s{/color}。", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", encourage=False),
                                 "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
                                 "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
                                 "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练([girl_related_dict[%s]]){/color}。", encourage=False),
@@ -3645,7 +3645,7 @@ init python:
                                   ]
 
     contract_task_types_order = {"greet" : 1, "serve" : 2, "mingle" : 3, "event" : 4, "private show" : 5, "fun" : 6}
-    contract_task_types_description = {"greet" : "接待客人", "serve" : "服侍客人", "mingle" : "社交场合", "event" : "参加活动", "private show" : "私人演出", "fun" : "玩的开心"}
+    contract_task_types_description = {"greet" : "迎接客人", "serve" : "招待客人", "mingle" : "社交场合", "event" : "参加活动", "private show" : "举办私人表演", "fun" : "享受“乐趣”"}
 
     contract_tasks = [
                         ContractTask("clean", type="serve", requirements=["job waitress", "skill obedience", "skill constitution", ], tags=(["maid"], ["obedience"], ["waitress"], ["profile"])),
