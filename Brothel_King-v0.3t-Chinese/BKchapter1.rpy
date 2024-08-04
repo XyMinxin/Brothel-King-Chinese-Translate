@@ -2836,7 +2836,7 @@ label c1_ask_guild_for_help:
 
     $ story_add_event("c1_satella_intro")
 
-    "Rendezvous with Renza at the {b}thieves guild{/b}."
+    "和伦萨在{b}盗贼公会{/b}会合。"
 
     $ game.set_task("Rendezvous with Renza at the {b}thieves guild{/b}.")
     return
