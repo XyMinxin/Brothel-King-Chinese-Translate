@@ -1976,7 +1976,7 @@ label kurohime_conversation_menu():
             else:
                 kuro "And you have proven your worth to me not once, but twice. Nicely done."
 
-                $ text1 = globals()[new_captain]
+                $ text1 = globals()[new_captain.name]
 
                 kuro "I won't forget the time when you exposed that wretch Farah for the fraud that she was... [text1] speaks highly of you."
 
