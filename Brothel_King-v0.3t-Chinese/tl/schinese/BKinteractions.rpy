@@ -472,7 +472,7 @@ translate schinese slave_chat_tastes_6cfd37d9:
 translate schinese slave_chat_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你发现[girl.name]很喜欢[xxx3]行为。"
+    "你发现[girl.name]很喜欢[cntext]行为。"
 
 # game/BKinteractions.rpy:1045
 translate schinese slave_chat_tastes_3f2466f8:
@@ -484,7 +484,7 @@ translate schinese slave_chat_tastes_3f2466f8:
 translate schinese slave_chat_tastes_2c0cf15f:
 
     # "You have discovered [girl.name]'s disgust for [fix.name]."
-    "你发现[girl.name]对[xxx3]行为感到抗拒。"
+    "你发现[girl.name]对[cntext]行为感到抗拒。"
 
 # game/BKinteractions.rpy:1060
 translate schinese slave_chat_tastes_743d9504:
