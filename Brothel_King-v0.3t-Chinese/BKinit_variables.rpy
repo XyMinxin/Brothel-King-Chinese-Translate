@@ -560,7 +560,7 @@ init python:
                         "tavern" : Room("零点酒吧", 0, "special", job = "waitress"),
                         "strip club" : Room("激情夜店", 0, "special", job = "dancer"),
                         "onsen" : Room("露天温泉", 0, "special", job = "masseuse"),
-                        "okiya" : Room("花坊剧场", 0, "special", job = "geisha"),
+                        "okiya" : Room("艺妓置屋", 0, "special", job = "geisha"),
                         }
 
     for room in common_room_dict:
@@ -590,7 +590,7 @@ init python:
     cnjob_room_dict = {"waitress" : "零点酒吧",
                      "dancer" : "激情夜店",
                      "masseuse" : "露天温泉",
-                     "geisha" : "花坊剧场",
+                     "geisha" : "艺妓置屋",
                      "whore" : "卧室"
                      }                 
 
