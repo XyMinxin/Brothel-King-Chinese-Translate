@@ -3602,7 +3602,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\n解锁{b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支.")
+                        des += __("\n解锁 {b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支.")
 
                 return des
 
