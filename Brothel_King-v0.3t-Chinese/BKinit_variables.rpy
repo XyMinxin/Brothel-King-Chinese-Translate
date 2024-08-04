@@ -2315,7 +2315,7 @@ init -4 python:
 
     reversed_result_dict = {v: k for k, v in result_dict.items()}
 
-    result_reference = "%i: {color=%s}Very bad{/color}\n" % (reversed_result_dict["bad"]-1, result_colors["very bad"]) + "%i-%i: {color=%s}Bad{/color}\n" % (reversed_result_dict["bad"], reversed_result_dict["average"]-1, result_colors["bad"]) + "%i-%i: {color=%s}Average{/color}\n" % (reversed_result_dict["average"], reversed_result_dict["good"]-1, result_colors["average"]) + "%i-%i: {color=%s}Good{/color}\n" % (reversed_result_dict["good"], reversed_result_dict["very good"]-1, result_colors["good"]) + "%i-%i: {color=%s}Very good{/color}\n" % (reversed_result_dict["very good"], reversed_result_dict["perfect"]-1, result_colors["very good"]) + "%i+: {color=%s}Perfect{/color}\n" % (reversed_result_dict["perfect"], result_colors["perfect"])
+    result_reference = "%i: {color=%s}非常糟糕{/color}\n" % (reversed_result_dict["bad"]-1, result_colors["very bad"]) + "%i-%i: {color=%s}糟糕{/color}\n" % (reversed_result_dict["bad"], reversed_result_dict["average"]-1, result_colors["bad"]) + "%i-%i: {color=%s}一般{/color}\n" % (reversed_result_dict["average"], reversed_result_dict["good"]-1, result_colors["average"]) + "%i-%i: {color=%s}不错{/color}\n" % (reversed_result_dict["good"], reversed_result_dict["very good"]-1, result_colors["good"]) + "%i-%i: {color=%s}非常好{/color}\n" % (reversed_result_dict["very good"], reversed_result_dict["perfect"]-1, result_colors["very good"]) + "%i+: {color=%s}完美{/color}\n" % (reversed_result_dict["perfect"], result_colors["perfect"])
 
 
 

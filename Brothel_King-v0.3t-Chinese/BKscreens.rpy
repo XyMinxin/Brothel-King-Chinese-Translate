@@ -2125,10 +2125,10 @@ screen girl_stats_light(girl, x=0.5, y=0.825, panel="left"): # Used to display a
                     xalign 1.0
 
                 if panel == "left":
-                    text "⟸" font "DejaVuSans.ttf" color c_darkorange bold True
+                    text "⟸" font "1.ttf" color c_darkorange bold True
                 text girl.fullname color c_darkorange bold True
                 if panel == "right":
-                    text "⟹" font "DejaVuSans.ttf" color c_darkorange
+                    text "⟹" font "1.ttf" color c_darkorange
 
             hbox spacing 10 xalign 0.5:
                 grid 3 8:
@@ -2162,7 +2162,7 @@ screen girl_stats_light(girl, x=0.5, y=0.825, panel="left"): # Used to display a
                                 bold True
 
                         if change:
-                            text "  {font=DejaVuSans.ttf}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14) bold True:
+                            text "  {font=1.ttf}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14) bold True:
                                 if change >= 0:
                                     color c_emerald
                                 else:
@@ -4618,7 +4618,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
     default girl_customers = defaultdict(list)
     default job_customers = defaultdict(int)
     default cust_act = defaultdict(str)
-    default load_txt = " (matching...)"
+    default load_txt = " (安排入座中...)"
 
     if match_list:
         $ tick = min(1.5 / len(match_list), 0.2) # Takes maximum 1.5 seconds to display all customer matches
@@ -4636,9 +4636,9 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
         has vbox spacing 10
 
         if context == "job":
-            $ text1 = "Entertainment Phase"
+            $ text1 = "接待阶段"
         else:
-            $ text1 = "Whoring Phase"
+            $ text1 = "嫖娼阶段"
 
         text "[text1!t]" + load_txt xalign 0.0 xanchor 0.0 bold True drop_shadow (2, 2) #color c_prune
 
@@ -4697,7 +4697,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
                                         vbox spacing 3:
                                             for girl in [g for g in girls if g.job == job]:
                                                 hbox ysize yres(25) yalign 0.5:
-                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize xres(45) yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + ": " + girl.job.capitalize() + " (capacity: %s/%s).{/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
+                                                    button xmargin 0 xpadding 0 ymargin 0 ypadding 0 xsize xres(45) yalign 0.5 background None action NullAction() tooltip  "{b}" + girl.fullname + "：" + girl_related_dict[girl.job.capitalize()] + " (容量: %s/%s){/b}" % (str(len(girl_customers[girl])), str(girl.get_max_cust_served())):
                                                         add girl.portrait.get(*res_tb(25)) xalign 0.5 yalign 0.5
 
                                                     frame ysize yres(25) ymargin 0 ypadding 1 background c_ui_brown xfill True:

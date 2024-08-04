@@ -278,6 +278,20 @@ init -10 python:
                         "Squirting" : "潮吹",
                         "squirting" : "潮吹",
 
+                        ## 训练态度 ##
+                        "Soft" : "温和",
+                        "soft" : "温和",
+                        "Gentle" : "温和",
+                        "gentle" : "温和",
+                        "Hard" : "努力",
+                        "hard" : "努力",
+                        "Tough" : "强硬",
+                        "tough" : "强硬",
+                        "Hardest" : "强硬",
+                        "hardest" : "强硬",
+                        "Hardcore" : "硬核",
+                        "hardcore" : "硬核",
+
                         ## 杂项 ##
                         "Color" : "颜色",
                         "color" : "颜色",
@@ -414,12 +428,19 @@ init -10 python:
     ## 结算界面 ##
     result_name_dict = {
                        # 最终结果 ##
+                       "Very bad" : "非常糟糕",
                        "very bad" : "非常糟糕",
+                       "Bad" : "糟糕",
                        "bad" : "糟糕",
+                       "Average" : "一般",
                        "average" : "一般",
+                       "Good" : "不错",
                        "good" : "不错",
+                       "Very good" : "非常好",
                        "very good" : "非常好",
+                       "Perfect" : "完美",
                        "perfect" : "完美",
+                       "Poor" : "低劣",
                        "poor" : "低劣",
                        }
 
@@ -913,6 +934,7 @@ init -10 python:
                        "Teacher's pet" : "入室弟子",
                        "Trauma" : "黯然神伤",
                        "Farmgirl" : "农场之星",
+                       "Mark of Chaos" : "Mark of Chaos",
 
                        ## 故事特质 ##
                        "Dynamo" : "精力充沛",

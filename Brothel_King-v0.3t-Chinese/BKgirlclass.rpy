@@ -565,7 +565,7 @@ init -2 python:
             if not self.profile:
                 #<Chris12 AutoRepair>
                 # Use not_found.webp. No longer needs to renpy.quit(), since it has some image to show
-                renpy.say("", event_color["bad"] % ("找不到以下女孩的头像或肖像照片: " + self.path + "。") + "\n请至少重命名她的一张照片，包括“个人资料”或“肖像”字样\n(e.g.: 'profile3.webp')\n完全删除她的目录，重新启动游戏，然后去帮助菜单和“修理女孩/MC图片”删除她。")
+                renpy.say("", event_color["bad"] % ("找不到以下女孩的头像或肖像照片：" + self.path + "。") + "\n请至少重命名她的一张照片，包括“个人资料”或“肖像”字样\n(e.g.: 'profile3.webp')\n完全删除她的目录，重新启动游戏，然后去帮助菜单和“修理女孩/MC图片”删除她。")
                 self.profile = Picture(path="backgrounds/not_found.webp")
                 # renpy.say("", "Exiting Ren'Py...{w=1}{nw}")
                 # renpy.quit()
@@ -749,7 +749,7 @@ init -2 python:
 
                     if self.get_stat(stat) < target:
                         if use_desc:
-                            return False, girl_related_dict[sex_act.capitalize()] + " 无法激活。\n" + event_color["a little bad"] % ("她的 {b}" + girl_related_dict[stat.lower()] + "{/b} 属性太低了 (min: " + str(target) + ")。")
+                            return False, girl_related_dict[sex_act.capitalize()] + " 无法激活。\n" + event_color["a little bad"] % ("她的 {b}" + girl_related_dict[stat.lower()] + "{/b} 属性太低了 (最低：" + str(target) + ")。")
                         return False
 
             if self.get_effect("special", "minimum preference", raw=True):
@@ -1574,7 +1574,7 @@ init -2 python:
                 elif e.type == "change": # In case of direct usage, the change will last only for one turn or the item duration
                     if item.type.name == "Food": # Prevents stacking food effects for the same stat
                         if self.current_food_effect[e.target]:
-                            changes.add("%s: %s (expired)" % (self.current_food_effect[e.target].target.capitalize(), plus_text(-self.current_food_effect[e.target].value)))
+                            changes.add("%s：%s (过期)" % (self.current_food_effect[e.target].target.capitalize(), plus_text(-self.current_food_effect[e.target].value)))
                             self.remove_effects(self.current_food_effect[e.target])
 
                         self.current_food_effect[e.target] = e # Stores the object used to remove the effect in case another food is absorbed
@@ -1582,11 +1582,11 @@ init -2 python:
                     if e.duration > 0:
                         c = self.add_effects(e, expires = calendar.time + e.duration)
                         if c:
-                            changes.add("%s: %s (duration: %s days)" % (e.target.capitalize(), plus_text(c), e.duration))
+                            changes.add("%s：%s (持续时间：%s 天)" % (e.target.capitalize(), plus_text(c), e.duration))
                     else:
                         c = self.add_effects(e, expires = calendar.time + 1)
                         if c:
-                            changes.add("%s: %s" % (e.target.capitalize(), plus_text(c)))
+                            changes.add("%s：%s" % (e.target.capitalize(), plus_text(c)))
 
                     used = True
 
@@ -1595,7 +1595,7 @@ init -2 python:
                         if self.level < e.value:
                             self.xp = self.get_xp_cap()
                             self.level_up()
-                            changes.add("Level: +1", col=c_orange)
+                            changes.add("等级：+1", col=c_orange)
                             used = True
                         else:
                             notify("这个道具只能使用到 " + str(e.value), pic=self.portrait)
@@ -1608,7 +1608,7 @@ init -2 python:
                             c, _ = self.heal(e.value, from_item=True)
                             if c:
                                 changes.add("Healing", "header")
-                                changes.add("Healed: %s" % plus_text(c))
+                                changes.add("痊愈：%s" % plus_text(c))
                                 if self.hurt <= 0:
                                     changes.add("(fully healed)", col="good")
                                     if not night:
@@ -1916,52 +1916,52 @@ init -2 python:
                 r += "准备好 {b}晋升{/b}"
             if self.perk_points or self.can_spend_upgrade_points():
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "准备好 {b}升级{/b}"
 
             if self.hurt > 0:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}受伤{/b}  %s 天" % round_up(self.hurt)
 
             elif self.exhausted:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}筋疲力尽{/b}"
 
             if self.away:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}外出{/b} 完成委托或培训 %s 天" % (self.return_date - calendar.time)
             elif self in farm.girls:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "在{b}农场训练{/b}"
             elif self.resting or not self.job or not self.works_today():
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}休息中{/b}t"
             elif self.works_today() == 50:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "上 {b}半个夜班{/b}"
 
             if self.work_whore:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}工作和卖淫{/b}"
 
             if self.naked:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "{b}裸体{/b}"
 
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]]:
                 if r:
-                    r += ", "
+                    r += "，"
                 r += "有一个{b}负面习惯{/b}"
 
-            return "当前状态: " + r + "。"
+            return "当前状态：" + r + "。"
 
 
         def get_max_cust_served(self, job="current"):
@@ -2077,23 +2077,23 @@ init -2 python:
             elif act in all_sex_acts:
                 xp = (xp_bonus_dict[result] * cust_diff) ** 1.1 / len(customers) # Gives a small advantage to group over normal
 
-            xp_ttip = "Base XP vs Difficulty: %s" % event_color["xp"] % (str_int(xp) + " XP")
+            xp_ttip = "基础经验与难度：%s" % event_color["xp"] % (str_int(xp) + " 经验")
 
             # Result boost effect
             boost = self.get_effect("boost", result + " result xp")
             if boost != 1.0:
                 xp = xp * boost
                 
-                xp_ttip += "\nPerks & special effects: x%s" % percent_text(boost, False)
+                xp_ttip += "\n天赋和特效：x%s" % percent_text(boost, False)
 
             #<Chris Job Mod>
             if game.has_active_mod("chrisjobmod"):
                 xp /= act_max_customers_modifier[self.job]
-                xp_ttip += "\nJob Mod modifier: x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
+                xp_ttip += "\n工作模式补正：x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
             #</Chris Job Mod>
 
             xp = max(xp * cheat_modifier["xp"] * game.get_diff_setting("xp"), 1) # 1 XP is always guaranteed
-            xp_ttip += "\n\nDifficulty modifier: x%s" % percent_text(cheat_modifier["xp"] * game.get_diff_setting("xp"), False)
+            xp_ttip += "\n\n难度补正：x%s" % percent_text(cheat_modifier["xp"] * game.get_diff_setting("xp"), False)
 
             return xp, xp_ttip
 
@@ -2107,26 +2107,26 @@ init -2 python:
             else:
                 jp = dice(3, 1+len(customers)) # Gives 2-6 JP + 1-3 per extra customer
 
-            jp_ttip = "Base JP vs customers: %s" % event_color["jp"] % (str_int(jp) + " JP")
+            jp_ttip = "基础工作经验vs客户：%s" % event_color["jp"] % (str_int(jp) + " 工作经验")
 
             jp += jp_job_level_modifier[self.job_level[act]] + jp_customer_rank_modifier[cust_rank] + jp_result_modifier[result]
 
-            jp_ttip += "\nGirl rank vs Customer rank: %s\n" % plus_text(jp_job_level_modifier[self.job_level[act]] + jp_customer_rank_modifier[cust_rank], color_scheme="jp")
-            jp_ttip += result.capitalize() + " result: %s" % plus_text(jp_result_modifier[result], color_scheme="jp")
+            jp_ttip += "\n女孩阶级vs顾客阶级：%s\n" % plus_text(jp_job_level_modifier[self.job_level[act]] + jp_customer_rank_modifier[cust_rank], color_scheme="jp")
+            jp_ttip += result_name_dict[result.capitalize()] + "的结果：%s" % plus_text(jp_result_modifier[result], color_scheme="jp")
 
             # Result boost effect
             boost = self.get_effect("boost", result + " result jp")
             if boost != 1.0:
                 jp = jp * boost
-                jp_ttip += "\nPerks & special effects: x%s" % percent_text(boost, False)
+                jp_ttip += "\n天赋和特效：x%s" % percent_text(boost, False)
 
             #<Chris Job Mod>
             if game.has_active_mod("chrisjobmod"):
                 jp /= act_max_customers_modifier[self.job]
-                jp_ttip += "\nJob Mod modifier: x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
+                jp_ttip += "\n工作模式补正：x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
             #</Chris Job Mod>
 
-            jp_ttip += "\n\nDifficulty modifier: x%s" % percent_text(cheat_modifier["jp"] * game.get_diff_setting("jp"), False)
+            jp_ttip += "\n\n难度补正：x%s" % percent_text(cheat_modifier["jp"] * game.get_diff_setting("jp"), False)
 
             jp *= cheat_modifier["jp"] * game.get_diff_setting("jp")
 
@@ -2197,9 +2197,9 @@ init -2 python:
 
             if "lost virginity" in specials:
                 tip += 100
-                gold_ttip = "Base tip: {image=img_gold}%i(失去童贞: {image=img_gold}+100)\n" % tip
+                gold_ttip = "基础小费：{image=img_gold}%i(失去童贞：{image=img_gold}+100)\n" % tip
             else:
-                gold_ttip = "Base tip: {image=img_gold}%i\n" % tip
+                gold_ttip = "基础小费：{image=img_gold}%i\n" % tip
 
             ## 2. Generic multipliers apply to the base tip ##
 
@@ -2208,24 +2208,24 @@ init -2 python:
             # Work tip is higher if the girl is naked
             if self.naked and act in all_jobs:
                 tip_multiplier *= tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus")
-                gold_ttip += "\nNaked bonus: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
+                gold_ttip += "\n裸露收入：x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
 
             if "bisexual" in specials:
                 tip_multiplier *= tip_act_modifier["bisexual bonus"]
-                gold_ttip += "\nBisexual bonus: %s" % tip_act_modifier["bisexual bonus"]
+                gold_ttip += "\n双飞收入：%s" % tip_act_modifier["bisexual bonus"]
 
             # Group sex
             if act in all_sex_acts and len(customers) > 1:
                 tip_multiplier *= tip_act_modifier["group bonus"] * len(customers) #? As diff already increases base tip for groups, this might be too much of an advantage
-                gold_ttip += "\nGroup bonus: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
+                gold_ttip += "\n群交收入：x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
 
             # Result boost
             if act in all_jobs:
                 tip_multiplier *= tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip")
-                gold_ttip += "\nResult bonus: x%s" % percent_text(tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip"), False)
+                gold_ttip += "\n最终收入：x%s" % percent_text(tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip"), False)
             else:
                 tip_multiplier *= tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip")
-                gold_ttip += "\nResult bonus: x%s" % percent_text(tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip"), False)
+                gold_ttip += "\n最终收入：x%s" % percent_text(tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip"), False)
 
             ## 3. Perk multipliers and other special effects apply (additive) ##
 
@@ -2249,13 +2249,13 @@ init -2 python:
                 perk_tip_multiplier += self.get_effect("boost", "total tip", custom_scale=("whore cust nb", self.get_log("whore_cust", "today"))) - 1
 
             if perk_tip_multiplier != 1.0:
-                gold_ttip += "\nPerks and special effects: x%s" % percent_text(perk_tip_multiplier, False)
+                gold_ttip += "\n天赋和特效：x%s" % percent_text(perk_tip_multiplier, False)
 
             tip_multiplier *= perk_tip_multiplier
 
             # Sanity check: final tip_multiplier cannot go below 10% or above 500%
             if tip_multiplier > 5.0:
-                gold_ttip += "\n{i}Total modifier cannot exceed x5.0{/i}"
+                gold_ttip += "\n{i}补正总数不能超过 x5.0{/i}"
             tip_multiplier = min(5.0, max(0.1, tip_multiplier))
 
             tip *= tip_multiplier
@@ -2263,7 +2263,7 @@ init -2 python:
             #<Chris Job Mod>
             if game.has_active_mod("chrisjobmod"):
                 tip /= act_max_customers_modifier[self.job]
-                gold_ttip += "\nJob Mod modifier: x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
+                gold_ttip += "\n工作模式补正：x%s" % percent_text(1.0/act_max_customers_modifier[self.job], False)
             #</Chris Job Mod>
 
             ## 4. Extra flat tip is added ##
@@ -2273,15 +2273,15 @@ init -2 python:
 
             tip += extra
             if extra:
-                gold_ttip += "\n\nExtra tip: {image=img_gold}%s" % plus_text(extra)
+                gold_ttip += "\n\n额外小费：{image=img_gold}%s" % plus_text(extra)
                 if final_tip_change:
-                    gold_ttip += " (Five stars perk: {image=img_gold}%s" % plus_text(final_tip_change)
+                    gold_ttip += " (五星福利：{image=img_gold}%s" % plus_text(final_tip_change)
 
             ## 5. Difficulty and cheat modifiers multiply everything ##
 
             # Difficulty/Cheats
             tip *= cheat_modifier["gold"] * game.get_diff_setting("gold")
-            gold_ttip += "\n\nDifficulty modifier: x%s" % percent_text(cheat_modifier["gold"] * game.get_diff_setting("gold"), False)
+            gold_ttip += "\n\n难度补正：x%s" % percent_text(cheat_modifier["gold"] * game.get_diff_setting("gold"), False)
 
             # A final (unneeded) sanity check is applied
             tip = max(10, round_int(tip))
@@ -2539,7 +2539,7 @@ init -2 python:
             else:
                 col = c_red
 
-            resting_changes.add("体力: %s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
+            resting_changes.add("体力：%s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
 
             if case == "recovered":
                 resting_changes.add("(fully rested)", "header", col="good", separator="\n")
@@ -2584,7 +2584,7 @@ init -2 python:
             stat = self.find_stat(stat_name)
 
             if stat == False: # wrong stat name
-                raise AssertionError(stat_name + " 不是一个有效的属性/技能名称. 正确的: " + and_text(["defense", "strength", "energy"] + [s.name.lower() for s in (self.stats+self.sex_stats)]))
+                raise AssertionError(stat_name + " 不是一个有效的属性/技能名称。正确的：" + and_text(["defense", "strength", "energy"] + [s.name.lower() for s in (self.stats+self.sex_stats)]))
 
             result = stat.value + eff
 
@@ -3037,7 +3037,7 @@ init -2 python:
                             self.refresh_sex_acts() # Checks if sex_acts can still be done
 
                         if not silent and r:
-                            notify(stat_name_dict[s.name] + ": %s" % plus_text(r, color_scheme="stat"), pic=self.portrait) # Experimental
+                            notify(stat_name_dict[s.name] + "：%s" % plus_text(r, color_scheme="stat"), pic=self.portrait) # Experimental
 
                         return r
 
@@ -3056,7 +3056,7 @@ init -2 python:
                         test_achievements(gstats_main + gstats_sex + ["ultimate"])
 
                         if not silent and r:
-                            notify(stat_name_dict[s.name] + ": %s" % plus_text(r, color_scheme="stat"), pic=self.portrait) # Experimental
+                            notify(stat_name_dict[s.name] + "：%s" % plus_text(r, color_scheme="stat"), pic=self.portrait) # Experimental
 
                         return r
 
@@ -3151,7 +3151,7 @@ init -2 python:
             else:
                 self.xp += change
 
-            if change and not silent: notify("经验: %s" % plus_text(change, color_scheme="xp"), pic=self.portrait) # Experimental
+            if change and not silent: notify("经验：%s" % plus_text(change, color_scheme="xp"), pic=self.portrait) # Experimental
 
             return change
 
@@ -3194,7 +3194,7 @@ init -2 python:
             while self.ready_to_job_up(job):
                 self.job_up(job, announcement_delay=announcement_delay)
 
-            if change and not silent: notify(job.capitalize() + " 职业经验: %s" % plus_text(change, color_scheme="jp"), pic=self.portrait) # Experimental
+            if change and not silent: notify(girl_related_dict[job.capitalize()] + " 职业经验：%s" % plus_text(change, color_scheme="jp"), pic=self.portrait) # Experimental
 
             return change
 
@@ -3473,7 +3473,7 @@ init -2 python:
 
             self.rep += chg
 
-            if not silent: notify("声誉: %s" % plus_text(int(chg)), col="rep", pic=self.portrait)
+            if not silent: notify("声誉：%s" % plus_text(int(chg)), col="rep", pic=self.portrait)
 
             return chg
 
@@ -4383,23 +4383,23 @@ init -2 python:
             if self.personality.name != "masochist":
                 mood_change = (l - f)/10
                 if l >= 1:
-                    mood_factors += "+" + str(round_best(l/10)) + ": " + love_text + "\n"
+                    mood_factors += "+" + str(round_best(l/10)) + "：" + love_text + "\n"
                 elif l <= -1:
-                    mood_factors += str(round_best(l/10)) + ": " + love_text + "\n"
+                    mood_factors += str(round_best(l/10)) + "：" + love_text + "\n"
                 if f >= 1:
-                    mood_factors += str(round_best(-f/10)) + ": " + fear_text + "\n"
+                    mood_factors += str(round_best(-f/10)) + "：" + fear_text + "\n"
                 elif f <= -1:
-                    mood_factors += "+" + str(round_best(-f/10)) + ": " + fear_text + "\n"
+                    mood_factors += "+" + str(round_best(-f/10)) + "：" + fear_text + "\n"
             else:
                 mood_change = (l + f)/20
                 if l >= 2:
-                    mood_factors += "+" + str(round_best(l/20)) + ": " + love_text + "\n"
+                    mood_factors += "+" + str(round_best(l/20)) + "：" + love_text + "\n"
                 elif l <= -2:
-                    mood_factors += str(round_best(l/20)) + ": " + love_text + "\n"
+                    mood_factors += str(round_best(l/20)) + "：" + love_text + "\n"
                 if f >= 2:
-                    mood_factors += "+" + str(round_best(f/20)) + ": " + fear_text + "\n"
+                    mood_factors += "+" + str(round_best(f/20)) + "：" + fear_text + "\n"
                 elif f <= -2:
-                    mood_factors += str(round_best(f/20)) + ": " + fear_text + "\n"
+                    mood_factors += str(round_best(f/20)) + "：" + fear_text + "\n"
 
             # Farm girls
 
@@ -4631,7 +4631,7 @@ init -2 python:
             elif filter == "fear":
                 return fear_text
             elif filter == "mood":
-                return mood_text + mood_change_text + "\n精神状态: " + self.get_sanity()
+                return mood_text + mood_change_text + "\n精神状态：" + self.get_sanity()
             else:
                 return love_text, fear_text, mood_text, mood_change_text, mood_factors
 
@@ -4995,7 +4995,7 @@ init -2 python:
                     sex_text += "她有些喜欢 {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} 行为"
 
                     if neg_unlocked:
-                        sex_text += ", 但她"
+                        sex_text += "，但她"
                     else:
                         sex_text += "。"
 
@@ -5016,7 +5016,7 @@ init -2 python:
                 if pos_fix:
                     sex_text += "她痴迷于 {color=[c_emerald]}" + and_text(pos_fix) + "{/color}。"
                 if neg_fix:
-                    sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color}感到恶心。"
+                    sex_text += "她对 {color=[c_crimson]}" + and_text(neg_fix) + "{/color} 感到恶心。"
 
                 if sex_text:
                     des += sex_text
@@ -5024,7 +5024,7 @@ init -2 python:
                     des += "你不太了解她的性癖。"
 
                 if farm.knows["weakness"][self]:
-                    des+= "\n她对农场的 %s 十分敏感" % self.weakness
+                    des+= "\n她对农场的 %s 十分敏感" % farm_related_dict[self.weakness]
 
             elif show == "recent":
 
@@ -5086,7 +5086,7 @@ init -2 python:
 
             if events:
                 for ev in events:
-                    description += calendar.get_date(ev.time) + ": " + ev.description
+                    description += calendar.get_date(ev.time) + "：" + ev.description
                     if self.remembers("reward", ev.type):
                         description += "{color=[c_emerald]} *奖励* :){/color}"
 
@@ -5428,7 +5428,7 @@ init -2 python:
                 if dialogue_dict[topic][self.personality.name]:
                     return get_dialogue(topic, self.personality.name)
                 else:
-                    return Dialogue(event_color["bad"] % topic + " <PERSONALITY DIALOGUE NOT FOUND: " + self.personality.name + ">")
+                    return Dialogue(event_color["bad"] % topic + " <没有找到人格对话：" + self.personality.name + ">")
 
             available_dialogue = []
 
@@ -5491,7 +5491,7 @@ init -2 python:
                     break
             else:
                 self.refused_populations[current_pop] = False
-                notify("You must activate at least one customer population for this girl.", pic=self.portrait)
+                notify("您必须为该女孩激活至少一种客户群体。", pic=self.portrait)
 
             return
 

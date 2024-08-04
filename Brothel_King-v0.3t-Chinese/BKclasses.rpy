@@ -209,7 +209,7 @@ init -2 python:
                         self.deactivate_mod(mod)
 
                 elif mod.check_for_updates():
-                    renpy.say("Mod Update", "发现了一个不同版本的mod: %s  (%s)." % (mod.name, str(mod.version)))
+                    renpy.say("Mod Update", "发现了一个不同版本的mod：%s  (%s)。" % (mod.name, str(mod.version)))
 
                     if not hasattr(mod, "update_label"): # Fix for older games
                         mod.update_label = ""
@@ -585,7 +585,7 @@ init -2 python:
                         break
 
             if not self.pics:
-                raise AssertionError("没有找到主角的照片。检查游戏/MC文件夹.")
+                raise AssertionError("没有找到主角的照片。检查游戏/MC文件夹。")
             else:
                 self.current_pic = self.pics[idx]
 
@@ -625,7 +625,7 @@ init -2 python:
                     self.pics.append(pic)
 
             if not self.pics:
-                raise AssertionError("没有找到 " + MC.playerclass + " 类的图片。检查游戏/MC文件夹.")
+                raise AssertionError("没有找到 " + MC.playerclass + " 类的图片。检查游戏/MC文件夹。")
             else:
                 self.current_pic = self.pics[0]
 
@@ -683,7 +683,7 @@ init -2 python:
             if amount !=0:
                 renpy.play(s_gold, "sound")
                 self.gold += amount
-                notify("Gold: " + plus_text(amount, color_scheme="gold"), pic="img_gold_24", col=c_gold)
+                notify("金币：" + plus_text(amount, color_scheme="gold"), pic="img_gold_24", col=c_gold)
 
         def gain_resource(self, resource="", number=1, message=True, random=False): # Where resource is the resource name
 
@@ -769,7 +769,7 @@ init -2 python:
             cost = get_exchange_rate(source, target) * target_amount
 
             if not self.has_resource(source, cost):
-                renpy.say(market_girl, "很抱歉，您没有足够的 " + source + " 来支付这笔费用.")
+                renpy.say(market_girl, "很抱歉，您没有足够的 " + source + " 来支付这笔费用。")
 
             else:
                 renpy.play(resource_dict[target].sound, "sound")
@@ -855,11 +855,11 @@ init -2 python:
         def activate_spell(self, spl):
 
             if spl in self.active_spells:
-                renpy.notify("%s: 这个法术已经生效." % spl.name)
+                renpy.notify("%s: 这个法术已经生效。" % spl.name)
                 return False
 
             elif self.has_active_spell(spelltype = spl.type):
-                renpy.notify("另一个 " + spl.type + " 法术已经生效.")
+                renpy.notify("另一个 " + spl.type + " 法术已经生效。")
                 return False
 
             elif self.mana >= spl.cost:
@@ -869,14 +869,14 @@ init -2 python:
                 self.add_effects(spl.effects)
 
                 renpy.play(spl.sound, channel='sound2')
-                renpy.notify(spl.name + " 已经生效。.")
+                renpy.notify(spl.name + " 已经生效。")
                 renpy.pause(0.5)
 
                 return True
 
             else:
 
-                renpy.notify("%s: 你没有足够的法力来施展这个法术." % spl.name)
+                renpy.notify("%s: 你没有足够的法力来施展这个法术。" % spl.name)
 
                 return False
 
@@ -889,11 +889,11 @@ init -2 python:
 
             if spell.auto == _time and spell not in self.active_spells:
                 if self.activate_spell(spell):
-                    msg = __("你成功施展了法术 ") + __(spell.name) + "."
+                    msg = __("你成功施展了法术 ") + __(spell.name) + "。"
                     result = "success"
                     _sound = s_spell
                 else:
-                    msg = __("你施展法术 ") + __(spell.name) + "失败."
+                    msg = __("你施展法术 ") + __(spell.name) + "失败。"
                     result = "fail"
                     _sound = s_fizzle
 
@@ -927,7 +927,7 @@ init -2 python:
                 spl.auto = False
 
             elif self.has_auto_spell(spl.type):
-                renpy.notify("只能有一个 " + spl.type + " 法术可以自动施展。.")
+                renpy.notify("只能有一个 " + spl.type + " 法术可以自动施展。")
 
             else:
                 spl.auto = "night"
@@ -998,7 +998,7 @@ init -2 python:
 
             if nb > 0:
                 if not silent:
-                    notify("%s's %s: +%i" % (self.name, stat, int(nb)))
+                    notify("%s 的 %s: +%i" % (self.name, stat, int(nb)))
                 return True
 
             return False
@@ -1202,7 +1202,7 @@ init -2 python:
 
             if isinstance(obj, Item):
                 if not obj.sellable:
-                    renpy.notify("%s: 你不能出售这个物品." % obj.name)
+                    renpy.notify("%s：你不能出售这个物品。" % obj.name)
                     return False
 
             self.gold += price
@@ -1247,7 +1247,7 @@ init -2 python:
                 taker.girls.append(obj)
 
             elif taker != MC and not obj.giveable:
-                renpy.notify("%s: 你不能赠送这个物品." % obj.name)
+                renpy.notify("%s：你不能赠送这个物品。" % obj.name)
                 return False
 
             elif taker:
@@ -1265,7 +1265,7 @@ init -2 python:
             if item.giveable:
                 self.items.remove(item)
 
-                renpy.say("", __("你把 ") + taker.name + " {b}给了" + __(article(item.name)) + "{/b}.")
+                renpy.say("", __("你把 ") + taker.name + " {b}给了" + __(article(item.name)) + "{/b}。")
 
                 renpy.block_rollback()
 
@@ -1273,7 +1273,7 @@ init -2 python:
 
                 return result
             else:
-                renpy.notify("%s: 你不能赠送这个物品." % item.name)
+                renpy.notify("%s：你不能赠送这个物品。" % item.name)
                 return -1
 
         def equip(self, item):
@@ -1554,7 +1554,7 @@ init -2 python:
                 self.upgrade_level += 1
                 self.stock_modifiers[upgrade[0]] += upgrade[1]
             else:
-                renpy.call_screen("OK_screen", "Missing resources", "您缺少此升级所需的资源 (%s %s)." % (cost[1], cost[0]))
+                renpy.call_screen("OK_screen", "Missing resources", "您缺少此升级所需的资源 (%s %s)。" % (cost[1], cost[0]))
                 return False
 
         def restock(self, once_a_day=True, update_flag = True): # For shop NPCs
@@ -1846,46 +1846,46 @@ init -2 python:
             # Get random comment
 
             if self.base_rating == 0:
-                comment = rand_choice([__("我来这里是为了什么."), __("我根本就没有参加."), __("多么可耻的事情。我在这里浪费了很多时间."), __("没有人给我服务。简直是浪费时间...")])
+                comment = rand_choice([__("我来这里是为了什么。"), __("我根本就没有参加。"), __("多么可耻的事情。我在这里浪费了很多时间。"), __("没有人给我服务。简直是浪费时间……")])
 
                 if chg < 0:
                     comment = event_color["bad"] % comment
 
             elif self.base_rating == 8:
-                comment = event_color["special contrast"] % rand_choice([__("我度过了一生中最美好的时光."), __("一切都是那么完美."), __("有史以来最棒的夜晚！我已经筋疲力尽了."), __("这地方太神奇了。五星级!")])
+                comment = event_color["special contrast"] % rand_choice([__("我度过了一生中最美好的时光。"), __("一切都是那么完美。"), __("有史以来最棒的夜晚！我已经筋疲力尽了。"), __("这地方太神奇了。五星级!")])
 
             else:
                 pos_comments = []
                 neg_comments = []
 
                 if self.service_dict["entertained"] >= 2:
-                    pos_comments.append(__("我看了一场非常棒的表演."))
+                    pos_comments.append(__("我看了一场非常棒的表演。"))
                 elif self.service_dict["entertained"] == 1:
-                    pos_comments += [__("我得到一些娱乐."), __("我在等待中得到了乐趣."), __("一个女孩为我表演.")]
-                    neg_comments.append(__("这位艺人本可以演得更好."))
+                    pos_comments += [__("我得到一些娱乐。"), __("我在等待中得到了乐趣。"), __("一个女孩为我表演。")]
+                    neg_comments.append(__("这位艺人本可以演得更好。"))
                 else:
-                    neg_comments += [__("没有什么娱乐活动."), __("我在等待时感到很无聊."), __("没有娱乐,烦人...")]
+                    neg_comments += [__("没有什么娱乐活动。"), __("我在等待时感到很无聊。"), __("没有娱乐,烦人……")]
 
                 if self.service_dict["laid"] >= 2:
-                    pos_comments.append(__("性爱真的很赞."))
+                    pos_comments.append(__("性爱真的很赞。"))
                 elif self.service_dict["laid"] == 1:
-                    pos_comments += [__("我有了新欢."), __("一个妓女照顾了我."), __("我有 %s.") % __(self.got_sex_act)]
-                    neg_comments.append(__("性服务可以做得更好一些."))
+                    pos_comments += [__("我有了新欢。"), __("一个妓女照顾了我。"), __("我有 %s。") % __(self.got_sex_act)]
+                    neg_comments.append(__("性服务可以做得更好一些。"))
                 else:
-                    neg_comments += [__("居然没有妓女！这是个屁的青楼?"), __("我找不到一个妓女。太令人沮丧了."), __("不能上床，该死的!"), __("妓女们在哪里？人呢?")]
+                    neg_comments += [__("居然没有妓女！这是个屁的青楼?"), __("我找不到一个妓女。太令人沮丧了。"), __("不能上床，该死的!"), __("妓女们在哪里？人呢?")]
 
                 if self.service_dict["both"] > 1:
-                    pos_comments.append(__("我同时得到了性和娱乐."))
+                    pos_comments.append(__("我同时得到了性和娱乐。"))
 
                 if self.service_dict["favorite entertainment"] >= 1:
-                    pos_comments.append(__("我在等待时得到了我最喜欢的娱乐."))
+                    pos_comments.append(__("我在等待时得到了我最喜欢的娱乐。"))
                 else:
-                    neg_comments.append(__("没有我最喜欢的娱乐活动."))
+                    neg_comments.append(__("没有我最喜欢的娱乐活动。"))
 
                 if self.service_dict["favorite sex act"] > 1:
-                    pos_comments.append(__("我得到了我最喜欢的性行为."))
+                    pos_comments.append(__("我得到了我最喜欢的性行为。"))
                 else:
-                    neg_comments.append(__("没有我最喜欢的性行为."))
+                    neg_comments.append(__("没有我最喜欢的性行为。"))
 
                 if self.service_dict["extra"] > 1:
                     pos_comments.append(__("人多的时候，性爱会更精彩!"))
@@ -1935,10 +1935,10 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle job" or act in all_jobs:
-                return self.name + __(" 进来青楼.%s 希望得到%s 和喜欢 {b}%s{/b}的人的招待. %s 更喜欢 %s 的女孩.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(self.fetish.lower()))
+                return self.name + __(" 进来青楼。%s希望得到%s和喜欢{b}%s{/b}的人的招待。%s更喜欢 %s 的女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(trait_name_dict[self.fetish]))
 
             elif act == "idle whore":
-                return self.name + __("%s %s 喜欢 {b}%s{/b}. %s 完美的 %s 女孩.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(self.fetish.lower()))
+                return self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
 
             # elif act in all_jobs:
             #     desc += self.name + __(" came in.%s\n%s wanted to be entertained by a {b}%s{/b}") % (crz_text, __(pronoun), __(self.wants_entertainment))
@@ -1947,25 +1947,25 @@ init -2 python:
             #     return desc
 
             elif act in all_sex_acts:
-                desc += self.name + __("%s %s 喜欢 {b}%s{/b}. %s 完美的 %s 女孩.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(self.fetish.lower()))
+                desc += self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
                 if self.wants_sex_act != act:
-                    desc += __(", 但还是将就了 {b}%s{/b}") % girl_related_dict[act]
+                    desc += __("，但还是将就了{b}%s{/b}") % girl_related_dict[act]
                 if self.group:
-                    desc += __(". %s 加入了一个叫 {color=" + c_purple + "}{b}的队伍 %s{/b}{/color}") % (pronoun, self.group)
-                return desc + "." + crz_text
+                    desc += __("。%s加入了一个叫{color=" + c_purple + "}{b}的队伍%s{/b}{/color}") % (pronoun, self.group)
+                return desc + "。" + crz_text
 
             elif act == "end":
-                desc += self.name + " 想要一个 {b}%s{/b}, " % girl_related_dict[self.wants_entertainment]
+                desc += self.name + " 想要一个 {b}%s{/b}，" % girl_related_dict[self.wants_entertainment]
                 if self.got_entertainment:
-                    desc += "最终得到 {b}%s{/b}. " % girl_related_dict[self.got_entertainment]
+                    desc += "最终得到 {b}%s{/b}。" % girl_related_dict[self.got_entertainment]
                 else:
-                    desc += "但是却没有这样的人. "
+                    desc += "但是却没有这样的人。"
 
-                desc += "%s 想要 {b}%s{/b}, " % (pronoun, girl_related_dict[self.wants_sex_act])
+                desc += "%s 想要 {b}%s{/b}，" % (pronoun, girl_related_dict[self.wants_sex_act])
                 if self.got_sex_act:
-                    desc += "最终得到 {b}%s{/b}. " % self.got_sex_act
+                    desc += "最终得到 {b}%s{/b}。" % self.got_sex_act
                 else:
-                    desc += "但是找不到这样妓女. "
+                    desc += "但是找不到这样妓女。"
 
                 return desc
 
@@ -2012,29 +2012,29 @@ init -2 python:
                     girl_score += 250
 
                     if trait_dict[self.fetish].verb == "be":
-                        reason = __(":cust: 来寻找") + __(self.fetish) + __("的女孩服务他. :pron: :verb: 欣喜遇见了 :girl:.")
+                        reason = __(":cust:来寻找 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "be a":
-                        reason = __(":cust: 来寻找") + __(self.fetish) + __("的女孩服务他. :pron: :verb: 欣喜遇见了 :girl:.")
+                        reason = __(":cust:来寻找 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "have":
-                        reason = __(":cust: 来寻找有") + __(self.fetish) + __("的女孩服务他. :pron: :verb: 欣喜遇见了 :girl:.")
+                        reason = __(":cust:来寻找有 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "have a":
-                        reason = __(":cust: 来寻找有") + __(self.fetish) + __("的女孩服务他. :pron: :verb: 欣喜遇见了 :girl:.")
+                        reason = __(":cust:来寻找有 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
 
                 # 2. The customer looks for a particular stat
 
                 girl_score += girl.get_stat(self.preference) # Customers are looking for one stat in particular
 
                 if not reason:
-                    reason = __(":cust: 想要 ") + __(gstats_descript[self.preference]) + "来服务他. "
+                    reason = __(":cust:想要") + __(gstats_descript[self.preference]) + "来服务他。"
 
                     if girl_score >= 50*self.rank:
-                        reason += __(":pron: :verb: 看到 :girl:.裤子都顶起来了")
+                        reason += __(":pron::verb:看到:girl:。裤子都顶起来了")
                     elif girl_score >= 35*self.rank:
-                        reason += __(":pron: :verb: 看到 :girl:.口水直流")
+                        reason += __(":pron::verb:看到:girl:。口水直流")
                     elif girl_score >= 20*self.rank:
-                        reason += __(":pron: 看到 :girl:.很满意") # Special case handled with a try / except clause within the perform method
+                        reason += __(":pron:看到:girl:。很满意") # Special case handled with a try / except clause within the perform method
                     else:
-                        reason += __(":pron: :verb: 对 :girl:.很不满意")
+                        reason += __(":pron::verb:对:girl:。很不满意")
 
                 # 3. The customer looks for the best performer
 
@@ -2067,7 +2067,7 @@ init -2 python:
                 else:
                     sex_act = rand_choice([act for act in all_sex_acts if chosen.does[act] == True])
             if not self.reason:
-                self.reason = __(":cust: 想要一个 ") + __(gstats_descript[self.preference]) + __(". :pron: 却找不到合适的女孩.")
+                self.reason = __(":cust:想要") + __(gstats_descript[self.preference]) + __("。:pron:却找不到合适的女孩。")
 
             return chosen, sex_act
 
@@ -2193,7 +2193,7 @@ init -2 python:
 #                     test_achievement("upgrades")
 
             else:
-                renpy.say(sill, "对不起，主人，你没有足够的钱.")
+                renpy.say(sill, "对不起，主人，你没有足够的钱。")
 
 
         def can_have(self, job):
@@ -2216,18 +2216,18 @@ init -2 python:
         def buy_furniture(self, furn):
 
             if self.current_building:
-                renpy.say(carpenter, "对不起，老板，你需要的 " + self.current_building.name + " 还没有建好.")
+                renpy.say(carpenter, "对不起，老板，你需要的" + self.current_building.name + "还没有建好。")
                 return False
 
             elif not furn.can_build():
                 if furn.built:
-                    renpy.say(carpenter, "你已经有了。我觉得你不需要第二个了.")
-                renpy.say(carpenter, "恐怕现在还造不出来。你需要一个更大的地方.")
+                    renpy.say(carpenter, "你已经有了。我觉得你不需要第二个了。")
+                renpy.say(carpenter, "恐怕现在还造不出来。你需要一个更大的地方。")
                 return False
 
             for resource, amount in furn.cost:
                 if not MC.has_resource(resource, amount):
-                    renpy.say(carpenter, "听着，老大，在我开始工作之前你得有足够的资源.")
+                    renpy.say(carpenter, "听着，老大，在我开始工作之前你得有足够的资源。")
                     break
             else:
                 renpy.say(carpenter, __("好的，看样子你已经拿到材料了，交给我。我马上就为 ") + __(furn.name) + __(" 开始准备。"))
@@ -2378,7 +2378,7 @@ init -2 python:
                     des += event_color["bad"] % (__("%s 来自性行为") % int(self.customer_budget_dict["wh acts"]))
                 des += ")"
 
-            des += "."
+            des += "。"
 
             return des
 
@@ -2414,7 +2414,7 @@ init -2 python:
 
                 des += ")"
 
-            return des + "."
+            return des + "。"
 
         def get_advertising(self, boost=True):
 
@@ -2581,7 +2581,7 @@ init -2 python:
             if short:
                 msg += __("宣传效果: ") + brothel.count_customers_description(short=True)
 
-                msg += __("\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=False) + "."
+                msg += __("\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=False) + "。"
 
                 msg += __("\n卫生情况: ") + __(maintenance_desc[self.get_cleanliness()])
 
@@ -2590,7 +2590,7 @@ init -2 python:
             else:
                 msg += __("宣传效果: ") + brothel.count_customers_description()
 
-                msg += __(".\n\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=True) + "."
+                msg += __(".\n\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=True) + "。"
 
                 msg += __("\n\n卫生情况: ") + __(maintenance_desc[self.get_cleanliness()])
 
@@ -2608,7 +2608,7 @@ init -2 python:
             chg = get_change_min_max(self.rep, chg, 0, self.max_rep)
             self.rep += chg
 
-            notify("%s 的名声变化: %s " % (brothel.name, plus_text(chg, color_scheme="rep")))
+            notify("%s 的名声变化：%s " % (brothel.name, plus_text(chg, color_scheme="rep")))
 
             return chg
 
@@ -2639,10 +2639,10 @@ init -2 python:
                         renpy.restart_interaction()
 
                     else:
-                        renpy.say(narrator, "你没有足够的钱.")
+                        renpy.say(narrator, "你没有足够的钱。")
 
             else:
-                renpy.say(sill, "你已经有了这个青楼的最大卧室数量。.")
+                renpy.say(sill, "你已经有了这个青楼的最大卧室数量。")
 
         def get_mood_modifier(self, rank): #Increases with bedroom type: Girls score higher with customers and their mood improves
 
@@ -2704,10 +2704,10 @@ init -2 python:
                             return True
 
                         else:
-                            renpy.say(narrator, "你没有足够多的钱.")
+                            renpy.say(narrator, "你没有足够多的钱。")
                             return False
                 else:
-                    renpy.say(sill, "你的青楼房间数量已经达到了最大规模.")
+                    renpy.say(sill, "你的青楼房间数量已经达到了最大规模。")
                     return False
 
             else:
@@ -2820,7 +2820,7 @@ init -2 python:
                 return True
 
             else:
-                renpy.say(narrator, "你没有足够多的钱.")
+                renpy.say(narrator, "你没有足够多的钱。")
 
                 return False
 
@@ -2846,7 +2846,7 @@ init -2 python:
                 if self.pic_index < 1:
                     self.pic_index = 7
 
-            debug_notify("循环中..." + str(self.pic_index))
+            debug_notify("循环中……" + str(self.pic_index))
 
             self.pic = self.get_pic(config.screen_width, int(config.screen_height*0.8))
 
@@ -3079,12 +3079,12 @@ init -2 python:
             msg += "- 被性侍奉" + plural(self.check("laid")) + " 的顾客总数: " + event_color["good"] % str(self.check("laid")) + "/" + str(self.cust) + "\n"
             msg += "- 对性交满足的" + plural(self.check("satisfied")) + " 顾客数: " + event_color["good"] % str(self.check("satisfied")) + "/" + str(self.check("laid")) + "\n{/size}\n"
 
-            msg += str(self.check("work_days")) + " girl" + plural(self.check("work_days")) + " 在青楼工作. "
+            msg += str(self.check("work_days")) + " girl" + plural(self.check("work_days")) + " 在青楼工作。"
 
             if self.check("strike_days"):
-                msg += event_color["bad"] % (str(self.check("strike_days")) + " girl" + plural(self.check("strike_days")) + " 遭到袭击. ")
+                msg += event_color["bad"] % (str(self.check("strike_days")) + " girl" + plural(self.check("strike_days")) + " 遭到袭击。")
             if self.check("run_away"):
-                    msg += event_color["bad"] % (str(self.check("run_away")) + " girl" + plural(self.check("run_away")) + " 从青楼里逃跑了.")
+                    msg += event_color["bad"] % (str(self.check("run_away")) + " girl" + plural(self.check("run_away")) + " 从青楼里逃跑了。")
 
             msg += "\n{size=-2}" + "- 女服务员: " + event_color["good"] % str(self.check("waitress_days")) + "\n"
             msg += "- 脱衣舞娘: " + event_color["good"] % str(self.check("dancer_days")) + "\n"
@@ -3093,42 +3093,42 @@ init -2 python:
             msg += "- 妓女: " + event_color["good"] % str(self.check("whore_days")) + "\n{/size}\n"
 
             if self.check("rest_days") > 1:
-                msg += str(self.check("rest_days")) + " 个女孩在青楼中休息. "
+                msg += str(self.check("rest_days")) + " 个女孩在青楼中休息。"
             elif self.check("rest_days") > 0:
-                msg += str(self.check("rest_days")) + " 个女孩在青楼中休息. "
+                msg += str(self.check("rest_days")) + " 个女孩在青楼中休息。"
 
             if self.check("hurt_days") > 1:
-                msg += event_color["bad"] % (str(self.check("hurt_days")) + " 个女孩工作中受了伤. ")
+                msg += event_color["bad"] % (str(self.check("hurt_days")) + " 个女孩工作中受了伤。")
             elif self.check("hurt_days") > 0:
-                msg += event_color["bad"] % (str(self.check("hurt_days")) + " 个女孩工作中受了伤. ")
+                msg += event_color["bad"] % (str(self.check("hurt_days")) + " 个女孩工作中受了伤。")
 
             if self.check("exhausted"):
-                msg += event_color["bad"] % (str(self.check("exhausted")) + " 个女孩" + plural(self.check("exhausted")) + " 工作中筋疲力竭. ")
+                msg += event_color["bad"] % (str(self.check("exhausted")) + " 个女孩" + plural(self.check("exhausted")) + " 工作中筋疲力竭。")
 
             msg += "\n"
 
             if farm.active:
-                msg += str(self.check("farm_days") + self.check("farm_rest_days")) + " 个女孩昨晚在奴隶农场. "
+                msg += str(self.check("farm_days") + self.check("farm_rest_days")) + " 个女孩昨晚在奴隶农场。"
 
                 if self.check("farm_resisted_training"):
-                    msg += event_color["bad"] % (str(self.check("farm_resisted_training")) + " girl" + plural(self.check("farm_resisted_training")) + " 拒绝训练. ")
+                    msg += event_color["bad"] % (str(self.check("farm_resisted_training")) + " girl" + plural(self.check("farm_resisted_training")) + " 拒绝训练。")
 
                 if self.check("farm_run_away"):
-                    msg += event_color["bad"] % (str(self.check("farm_run_away")) + " girl" + plural(self.check("farm_run_away")) + " 从奴隶农场逃走了.")
+                    msg += event_color["bad"] % (str(self.check("farm_run_away")) + " girl" + plural(self.check("farm_run_away")) + " 从奴隶农场逃走了。")
 
                 if self.check("farm_hurt"):
-                    msg += event_color["bad"] % (str(self.check("farm_hurt")) + " girl" + plural(self.check("farm_hurt")) + " 反抗时受伤了.")
+                    msg += event_color["bad"] % (str(self.check("farm_hurt")) + " girl" + plural(self.check("farm_hurt")) + " 反抗时受伤了。")
 
                 if self.check("minion_hurt"):
-                    msg += event_color["bad"] % (str(self.check("minion_hurt")) + " minion" + plural(self.check("minion_hurt")) + " 反抗时受伤了.")
+                    msg += event_color["bad"] % (str(self.check("minion_hurt")) + " minion" + plural(self.check("minion_hurt")) + " 反抗时受伤了。")
 
                 msg += "\n{size=-2}" + "- 训练中: " + event_color["good"] % str(self.check("farm_training_days")) + "\n"
                 msg += "- 关押中: " + event_color["good"] % str(self.check("farm_holding_days")) + "{/size}\n"
 
                 if self.check("farm_rest_days") > 1:
-                    msg += str(self.check("farm_rest_days")) + " 个女孩在奴隶农场休息. "
+                    msg += str(self.check("farm_rest_days")) + " 个女孩在奴隶农场休息。"
                 elif self.check("farm_rest_days") > 0:
-                    msg += str(self.check("farm_rest_days")) + " 个女孩在奴隶农场休息. "
+                    msg += str(self.check("farm_rest_days")) + " 个女孩在奴隶农场休息。"
 
             return msg
 
@@ -3384,7 +3384,7 @@ init -2 python:
                     col = "bad"
                 bonus_text = " (%s)" % plus_text(bonus, color_scheme="standard")
 
-            description = event_color[col] % ("{b}%s/%s{/b}" % (int(total_value), maxrange)) + "%s. " % (bonus_text) + __(gstats_dict[self.name])
+            description = event_color[col] % ("{b}%s/%s{/b}" % (int(total_value), maxrange)) + "%s。" % (bonus_text) + __(gstats_dict[self.name])
 
             if self.name in gstat_job_skill.keys():
                 return description % (self.parent.get_max_cust_served(gstat_job_skill[self.name]), plural(self.parent.get_max_cust_served(gstat_job_skill[self.name])))
@@ -3602,7 +3602,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\n解锁 {b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支.")
+                        des += __("\n解锁 {b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支。")
 
                 return des
 
@@ -3848,10 +3848,10 @@ init -2 python:
                     text1 = "+1等级 (等级上限: " + str(val) + ")"
 
                 elif target == "advertising power":
-                    text1 = "不同的穿着打扮可以吸引到不同的客人 (更多的青楼声望，客户吸引力和客户预算)."
+                    text1 = "不同的穿着打扮可以吸引到不同的客人 (更多的青楼声望，客户吸引力和客户预算)。"
 
                 elif target == "heal minion":
-                    text1 = "帮助治疗一个受伤的仆从."
+                    text1 = "帮助治疗一个受伤的仆从。"
 
                 elif target == "workwhore":
                     text1 = "她可以一边工作一边勾引客人，从大厅服务到床上。"
@@ -3937,7 +3937,7 @@ init -2 python:
                     target = "群交倾向" if target == "group preference" else target
                     target = "双飞倾向" if target == "bisexual preference" else target
                     target = "所有性行为倾向" if target == "all sex acts preference" else target
-                    text1 += "允许您增加客人的' " + target + " 最多 +" + str(50*val) + "%."
+                    text1 += "允许您增加客人的' " + target + " 最多 +" + str(50*val) + "%。"
                 else:
                     text1 += "现在" + setting_name_dict[target] + "也会光顾你的青楼了。"
 
@@ -3954,7 +3954,7 @@ init -2 python:
 
             if self.type == "reroll":
                 if text1:
-                    text1 += "再掷一次... "
+                    text1 += "再掷一次…… "
                 else:
                     text1 += __("掷骰子")
 
@@ -4685,7 +4685,7 @@ init -2 python:
                     brothel.free_room = False
 
             elif self.get_price() >= MC.gold:
-                renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间.")
+                renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间。")
 
 
             elif renpy.call_screen("yes_no", __("你想要建造一个 ") + __(self.name) + __(" 吗？这将花费 ") + str(self.get_price()) + " 金币"):
@@ -4702,7 +4702,7 @@ init -2 python:
                 self.level += 1
                 self.update_cust_limit(True)
             elif self.get_price() >= MC.gold:
-                renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间.")
+                renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间。")
             elif renpy.call_screen("yes_no", __("你想要升级 ") + __(self.name) + __(" 吗？这将花费 ") + str(self.get_price()) + " 金币"):
                 MC.gold -= self.get_price()
                 brothel.total_value += self.get_price()
@@ -4732,27 +4732,27 @@ init -2 python:
         def get_description(self):
             if self.type == "master":
                 if self.level > 1:
-                    desc = "可以同时训练 {b}" + str(self.level) + " 个女孩{/b} . 女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b} ."
+                    desc = "可以同时训练 {b}" + str(self.level) + " 个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b} 。"
                 elif self.level == 1:
-                    desc = "可以训练 {b}1个女孩{/b} . 女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b} ."
+                    desc = "可以训练 {b}1个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b}。"
                 else:
-                    desc = "你的私人卧室。现在还无法容纳更多女孩."
+                    desc = "你的私人卧室。现在还无法容纳更多女孩。"
 
                 if self.level < brothel.rank:
-                    desc += " 花费 {b}" + str(master_bedrooms[self.level+1].cost) + " 金币{/b} 来升级你的卧室."
+                    desc += " 花费 {b}" + str(master_bedrooms[self.level+1].cost) + " 金币{/b} 来升级你的卧室。"
                 elif self.level == 5:
                     desc += " {i}你无法继续升级你的私人卧室了.{/i}"
 
                 return desc
 
             if brothel_firstvisit:
-                return "建造一个 {b}" + self.name + "{/b} 来提供一个 {b}" + girl_related_dict[self.job] + "{/b}岗位."
+                return "建造一个 {b}" + self.name + "{/b} 来提供一个 {b}" + girl_related_dict[self.job] + "{/b}岗位。"
             elif self.level == 0:
-                return "建造一个 {b}" + self.name + "{/b} 这将花费 {b}" + str(self.get_price()) + " 金币{/b}."
+                return "建造一个 {b}" + self.name + "{/b} 这将花费 {b}" + str(self.get_price()) + " 金币{/b}。"
             elif self.level < district.rank:
                 return "  {b}" + self.name + "{/b} 每晚可以最多容纳" + str(self.cust_limit) + "位顾客。" + "花费 {b}" + str(self.get_price()) + " 金币{/b}扩建 "+ self.name + "才能接待更多人。 "
             else:
-                return "  {b}" + self.name + "{/b} 每晚可以最多容纳" + str(self.cust_limit) + "位顾客."
+                return "  {b}" + self.name + "{/b} 每晚可以最多容纳" + str(self.cust_limit) + "位顾客。"
 
         def update_cust_limit(self, silent=False): # Returns value if changed
             _old = self.cust_limit
@@ -4930,7 +4930,7 @@ init -2 python:
 
             if not ignore_status:
                 if girl.hurt > 0 or girl.away or girl.exhausted:
-                    return (False, "你的女孩目前无法工作或学习.")
+                    return (False, "你的女孩目前无法工作或学习。")
 
             if self.type == "class":
 
@@ -4938,20 +4938,20 @@ init -2 python:
 
                     for stat, _min, _max in self.bonuses:
                         if girl.get_stat(stat, raw=True) < self.stat_cap:
-                            return (True, "Register %s for the selected class." % girl.fullname)
+                            return (True, "为%s注册所选课程" % girl.fullname)
 
-                    return (False, "你女孩的技能太高了，从这堂课上学不到任何东西.")
+                    return (False, "你女孩的技能太高了，从这堂课上学不到任何东西。")
 
                 else:
-                    return (False, "你没有足够的钱为这门课培训一个女孩.")
+                    return (False, "你没有足够的钱为这门课培训一个女孩。")
 
 
             elif self.type == "quest":
 
                 for stat, value in self.requirements:
                     if girl.get_stat(stat) < value:
-                        return (False, "你的女孩不符合这项任务的要求.")
-                return (True, __("让 %s 完成这项任务.") % girl.fullname)
+                        return (False, "你的女孩不符合这项任务的要求。")
+                return (True, __("让 %s 完成这项任务。") % girl.fullname)
 
             raise AssertionError("奇怪的是" + self.type)
 
@@ -4996,38 +4996,38 @@ init -2 python:
                 perf += girl.remembers("punish", "class bad result")
 
                 if perf >= 12:
-                    description += __("她学习很努力，取得了非凡的进步.")
+                    description += __("她学习很努力，取得了非凡的进步。")
                     boost = 2.0
 
                     girl.track_event("class good result", arg=__("她非常努力地学习 ") + __(self.name)  + __(" 这门课程中学习很努力。"))
 
                 elif perf >= 9:
-                    description += __("她认真听老师讲课，取得了很好的进步.")
+                    description += __("她认真听老师讲课，取得了很好的进步。")
                     boost = 1.5
 
                     girl.track_event("class good result", arg=__("她在学习期间取得了很大的进步 ") + __(self.name) + __(" 这门课程中取得了良好的进步。"))
 
                 elif perf <= 2:
-                    description += __("她心烦意乱，不太注意老师讲课，阻碍了她的进步.")
+                    description += __("她心烦意乱，不太注意老师讲课，阻碍了她的进步。")
                     boost = 0.75
 
                     girl.track_event("class bad result", arg=__("她在期间没有努力学习 ") + __(self.name) + __(" 这门课程。"))
 
                 elif perf <= 5:
-                    description += __("她根本不关心功课，几乎没有进步.")
+                    description += __("她根本不关心功课，几乎没有进步。")
                     boost = 0.5
 
                     girl.track_event("class bad result", arg=__("她根本没有为她学习 ") + __(self.name) + __(" 这门课程任何东西。"))
 
                 else:
-                    description += __("在老师的帮助下，她取得了一些进步.")
+                    description += __("在老师的帮助下，她取得了一些进步。")
                     boost = 1.0
 
                 if girl.class_friend_bonus > 0:
-                    description += __(" 她很高兴和朋友们一起学习.")
+                    description += __(" 她很高兴和朋友们一起学习。")
                     girl.change_mood(10)
                 elif girl.class_friend_bonus < -1:
-                    description += __(" 她不喜欢和她的对手在同一个班级.")
+                    description += __(" 她不喜欢和她的对手在同一个班级。")
                     girl.change_mood(-5)
 
                 if self.special == "大师班":
@@ -5065,7 +5065,7 @@ init -2 python:
                     girl.track_event("quest bad result", arg=__("她在一次任务中表现{color=[c_crimson]}糟糕{/color}"))
 
                 else:
-                    description += __("她顺利地完成了任务.")
+                    description += __("她顺利地完成了任务。")
                     boost = 1.0
 
                 had = []
@@ -5076,10 +5076,10 @@ init -2 python:
                         boost *= 1.5
 
                 if had:
-                    description += __(" 顾客很兴奋，因为她 ") + __(and_text(had)) + "."
+                    description += __(" 顾客很兴奋，因为她 ") + __(and_text(had)) + "。"
 
                 if girl.has_trait(self.neg_trait.name):
-                    description += __(" 顾客很不高兴，因为她 ") + __(self.neg_trait.get_past_tense()) + "."
+                    description += __(" 顾客很不高兴，因为她 ") + __(self.neg_trait.get_past_tense()) + "。"
                     boost /= 2.0
 
                 boost *= girl.get_effect("boost", "quest results") # Note quest results boost is different from quest reward boost
@@ -5098,7 +5098,7 @@ init -2 python:
             energy, status = girl.change_energy(self.energy)
 
             if status == "exhausted":
-                " 她 {color=[c_red]}筋疲力尽{/color} 需要休息直到恢复."
+                " 她 {color=[c_red]}筋疲力尽{/color} 需要休息直到恢复。"
 
             description += "\n"
 
@@ -5506,14 +5506,14 @@ init -2 python:
         def is_available(self, girl, mode=None, free=False): # The option will display inactive if False. Returns a tuple with bool and a tooltip description.
 
             if girl.away:
-                return False, "%s 不在。你不能和她互动." % girl.fullname
+                return False, "%s不在。你不能和她互动。" % girl.fullname
 
             if self.group == "train":
                 if girl.exhausted:
-                    return False, "你不能训练 %s, 因为她已经筋疲力尽了." % girl.fullname
+                    return False, "你不能训练%s，因为她已经筋疲力尽了。" % girl.fullname
 
                 elif girl.hurt > 0:
-                    return False, "你不能训练 %s, 因为她受伤了." % girl.fullname
+                    return False, "你不能训练%s，因为她受伤了。" % girl.fullname
 
             if mode: # 'mode' is either 'lecture' (Talk), 'train' or advanced.
                 if mode == "lecture":
@@ -5546,36 +5546,36 @@ init -2 python:
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "你没有足够的互动留给高级培训."
+                            return False, "你没有足够的互动留给高级培训。"
 
                         if not girl.personality_unlock[self.act]:
-                            return False, __("你需要训练一个女孩至少一次，才能进入高级培训.")
+                            return False, __("你需要训练一个女孩至少一次，才能进入高级培训。")
 
                 elif mode == "master_bedroom_add":
                     if not brothel.master_bedroom.can_have_girl():
-                        return False, "主卧室已经住满了."
+                        return False, "主卧室已经住满了。"
 
             if MC.interactions < 1 and self.AP_cost > 0 and not free:
-                return False, "你今天没有互动了."
+                return False, "你今天没有互动了。"
             elif MC.interactions < self.AP_cost and not free:
-                return False, "你没有足够的互动来做这个."
+                return False, "你没有足够的互动来做这个。"
             elif self.get_gold_cost() and MC.gold < self.get_gold_cost():
-                return False, "你没有足够的钱来支付这次培训 (" + str(self.get_gold_cost()) + "{image=img_gold})."
+                return False, "你没有足够的钱来支付这次培训 (" + str(self.get_gold_cost()) + "{image=img_gold})。"
             elif self.group == "train" and girl.MC_interact_counters[self.group] >= 1:
-                return False, "你每天训练一个女孩不能超过一次."
+                return False, "你每天训练一个女孩不能超过一次。"
             elif self.group in ("reward", "discipline") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "你每天不能奖励或惩罚一个女孩超过一次."
+                return False, "你每天不能奖励或惩罚一个女孩超过一次。"
             elif self.group in ("gold", "gift", "sex_reward", "rape", "offer") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "每天这样做不能超过一次."
+                return False, "每天这样做不能超过一次。"
             elif self.group == "offer" and len(MC.girls) >= brothel.bedrooms:
-                return False, "你的青楼满了，容不下另一个女孩."
+                return False, "你的青楼满了，容不下另一个女孩。"
             elif self.group and girl.MC_interact_counters[self.group] >= 3:
-                return False, "你不能一天和一个女孩 " + self.group + " 超过3次."
+                return False, "你不能一天和一个女孩 " + self.group + " 超过3次。"
             elif self.label == "slave_master_bedroom_add" and not brothel.master_bedroom.can_have_girl():
-                return False, "主卧室已经住满了."
+                return False, "主卧室已经住满了。"
 
             if self.condition == "free-form":
-                return True, "在自由形式的训练中，你将能够在她感到舒服的不同的性行为之间切换。只有{b}最后选择的性行为{/b}才会真正接受训练."
+                return True, "在自由形式的训练中，你将能够在她感到舒服的不同的性行为之间切换。只有{b}最后选择的性行为{/b}才会真正接受训练。"
 
             return True, ""
 
@@ -6663,8 +6663,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text2 += "\n" + __(setting_name_dict[s.capitalize()]) + ": " + shown
-                    #更改增加对话，复制0.2代码片段
+                    text2 += "\n" + __(setting_name_dict[s.capitalize()]) + "：" + shown
 
                     if s in ("mood", "love", "fear"):
                         if s=="mood":
@@ -6675,7 +6674,7 @@ init -2 python:
                             s="恐惧"
                         text1 = "{b}" + s + "{/b}"
                     else:
-                        text1 = "{b}" + s + "技能" + "{/b}"
+                        text1 = "{b}" + girl_related_dict[s] + "技能" + "{/b}"
 
                     if c >= 5:
                         renpy.say("", girl.name + "的" + text1 + "增加了很多。")
@@ -6713,7 +6712,7 @@ init -2 python:
                 girl.interactions += inter
 
             if virgin:
-                text1 += "\n" + girl.fullname + " 因为你失去了童贞."
+                text1 += "\n" + girl.fullname + " 因为你失去了童贞。"
 
             text1 += "\n"
 
@@ -6853,21 +6852,21 @@ init -2 python:
                 if not self.active or not persistent.mods[self.name]["active"]:
                     self.active = True
                     persistent.mods[self.name]["active"] = True
-                    renpy.notify(self.name + " 已被激活.")
+                    renpy.notify(self.name + " 已被激活。")
                     reset_updated_games()
 
                 else:
-                    renpy.notify(self.name + " 已经激活.")
+                    renpy.notify(self.name + " 已经激活。")
 
         def deactivate(self):
-            if renpy.call_screen("yes_no", "你真的要停用吗 " + self.full_name + "? 这可能会对这个mod打开时保存的游戏产生负面影响."):
+            if renpy.call_screen("yes_no", "你真的要停用吗 " + self.full_name + "? 这可能会对这个mod打开时保存的游戏产生负面影响。"):
                 if self.active or persistent.mods[self.name]["active"]:
                     self.active = False
                     persistent.mods[self.name]["active"] = False
-                    renpy.notify(self.name + " 已经停用了.")
+                    renpy.notify(self.name + " 已经停用了。")
                     reset_updated_games()
                 else:
-                    renpy.notify(self.name + " 在活跃模组中找不到.")
+                    renpy.notify(self.name + " 在活跃模组中找不到。")
 
         def add_event(self, event_name, type=None, date=None, delay=1, call_args=None): # event_name is the event label (not object). date is the exact calendar date. If not provided, current time + delay is used instead (D+1 by default).
 
@@ -6885,7 +6884,7 @@ init -2 python:
                 calendar.set_alarm(date, self.events[event_name])
 
                 if date <= calendar.time:
-                    renpy.say("System", "警告:事件设置为过去的日期。更改事件时间或延迟时间.")
+                    renpy.say("System", "警告:事件设置为过去的日期。更改事件时间或延迟时间。")
 
             elif type in ("morning", "day", "night"):
                 daily_events.append(self.events[event_name])
@@ -7090,9 +7089,9 @@ init -2 python:
                     brothel.furniture.remove(furniture_dict[self.upgrade])
                 brothel.deactivate_furniture(furniture_dict[self.upgrade])
                 if message:
-                    renpy.call_screen("OK_screen", title = __("家具升级"), message = __(self.upgrade) + __(" 已经升级到 ") + __(self.name) + ".\n\n" + __(self.description), pic = self.pic, pic_size = "large")
+                    renpy.call_screen("OK_screen", title = __("家具升级"), message = __(self.upgrade) + __(" 已经升级到 ") + __(self.name) + "。\n\n" + __(self.description), pic = self.pic, pic_size = "large")
             elif message:
-                renpy.call_screen("OK_screen", title = __("家具制造"), message = __("一个新的 ") + __(self.name) + __(" 已经建成了。.\n\n") + __(self.description), pic = self.pic, pic_size = "large")
+                renpy.call_screen("OK_screen", title = __("家具制造"), message = __("一个新的 ") + __(self.name) + __(" 已经建成了。\n\n") + __(self.description), pic = self.pic, pic_size = "large")
             self.activate()
             test_achievement("furniture")
 
@@ -7107,7 +7106,7 @@ init -2 python:
                 if message:
                     renpy.call_screen("OK_screen", title = "家具升级", message = self.name + " 已被销毁并替换为 " + self.upgrade, pic = self.pic, pic_size = "large")
             elif message:
-                renpy.call_screen("OK_screen", title = "家具被毁", message = self.name + " 已被销毁.", pic = self.pic, pic_size = "large")
+                renpy.call_screen("OK_screen", title = "家具被毁", message = self.name + " 已被销毁。", pic = self.pic, pic_size = "large")
             self.activate()
 
         def activate(self):

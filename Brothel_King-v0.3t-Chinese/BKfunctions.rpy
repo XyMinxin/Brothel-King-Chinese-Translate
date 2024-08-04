@@ -907,14 +907,14 @@ init -3 python:
                 change_log.add("金币：{image=img_gold} %s" % plus_text(int(nb), "gold"))
 
             else:
-                change_log.add("%s：%i/%i (%s)" % ((__(stat_name_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
+                change_log.add("%s：%i/%i (%s)" % ((__(stat_name_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s技能变化" % girl_related_dict[act.capitalize()])
 
         return change_log
 
     def describe_leveled_stats(act):
         desc = ""
         for stat, _, chg in perform_job_dict[act + "_changes"]:
-            desc += stat_name_dict[stat[0].capitalize()] + ": "
+            desc += stat_name_dict[stat[0].capitalize()] + "："
             if chg > 1:
                 desc += event_color["good"] % "++"
             elif chg == 1:
@@ -1113,7 +1113,7 @@ init -3 python:
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
 #                   reward = (cust.diff  + dice(cust.diff)) * district.rank
-                    violent_text += "\n{color=[c_green]}幸运的是，你的保镖就在身边。他们很快联合起来对付他，把他打得屁滚尿流。\n{/color}你的女孩很安全，而你却把他钱包里的东西装进了口袋: %s 金币." % str(cust.ent_budget)
+                    violent_text += "\n{color=[c_green]}幸运的是，你的保镖就在身边。他们很快联合起来对付他，把他打得屁滚尿流。\n{/color}你的女孩很安全，而你却把他钱包里的东西装进了口袋：%s金币." % str(cust.ent_budget)
                     violent_report = "{color=[c_green]}" + violent_report + " 你的警卫把他揍了一顿 (抢到了 %s 金币)。{/color}" % str(cust.ent_budget)
                     MC.gold += cust.ent_budget
                     girl.change_mood(1)
@@ -1125,7 +1125,7 @@ init -3 python:
 
                 elif MC.can_defend() and MC.get_defense() > girl.get_defense(): # Your guards are somewhere else, your girl is helpless, it's your turn to take action!
                     if fight(cust, MC) == False:
-                        violent_text += __("\n{color=[c_green]}你冲到现场，在他还没来得及行动之前把他的脸打烂。\n{/color}你的女孩安全了，而你却把他钱包里的东西装进了口袋: %s 金币.") % str(cust.ent_budget)
+                        violent_text += __("\n{color=[c_green]}你冲到现场，在他还没来得及行动之前把他的脸打烂。\n{/color}你的女孩安全了，而你却把他钱包里的东西装进了口袋：%s金币.") % str(cust.ent_budget)
                         violent_report = "{color=[c_green]}" + violent_report + __(" 你揍了他一顿 (抢到了 %s 金币)。{/color}") % str(cust.ent_budget)
                         girl.change_mood(1)
                         girl.change_fear(-2)
@@ -1182,7 +1182,7 @@ init -3 python:
                     if girl.get_defense() + mod >= cust.get_defense():
                         violent_text += (__("\n{color=[c_green]}然而，你的女孩有办法保护自己. ") + rand_choice([__("她刺穿了这可怜虫的内脏，让他停下了脚步."),
                                         __("她一膝盖狠狠顶在他的蛋蛋上，然后在就之间他跪在地板上哭了起来."), __("她一脚踢在他脸, 彻底打败了他.")])
-                                        + __("\n{/color}你的女孩很安全，你的手下把这个可怜的傻瓜扔到了暗巷里，你则把他钱包里的东西装进口袋: %s 金币.") % str(cust.ent_budget))
+                                        + __("\n{/color}你的女孩很安全，你的手下把这个可怜的傻瓜扔到了暗巷里，你则把他钱包里的东西装进口袋：%s金币.") % str(cust.ent_budget))
 
                         violent_report = "{color=[c_green]}" + violent_report + __(" %s 毒打了他 (获得 %s 金币)。{/color}") % (girl.name, str(cust.ent_budget))
 
@@ -1276,12 +1276,12 @@ init -3 python:
                         if damage < 0:
                             damage = 0
 
-                        arson_text += __("\n你召唤了风暴的力量,快速施放了一个降雨咒语。最终,损失还算有限。你的青楼状况有所恶化 ") + str(damage) + "."
+                        arson_text += __("\n你召唤了风暴的力量,快速施放了一个降雨咒语。最终,损失还算有限。你的青楼状况有所恶化 ") + str(damage) + "。"
                         brothel.change_dirt(damage)
 
                     else:
                         damage = dice(25) + 25
-                        arson_text += __("\n你和员工以及一些有帮助的顾客一起协力灭火。不过,这里受到严重损坏。你的青楼风评下降了 ") + str(damage) + "."
+                        arson_text += __("\n你和员工以及一些有帮助的顾客一起协力灭火。不过,这里受到严重损坏。你的青楼风评下降了 ") + str(damage) + "。"
                         brothel.change_dirt(damage)
 
                 pic = rand_choice(arson_pics)
@@ -1304,7 +1304,7 @@ init -3 python:
 
         for pop in all_populations:
             if pop_count[pop]:
-                ttip += "%s: %i\n" % (setting_name_dict[pop.name.capitalize()], pop_count[pop])
+                ttip += "%s：%i\n" % (setting_name_dict[pop.name.capitalize()], pop_count[pop])
 
         return ttip
 
@@ -1334,7 +1334,7 @@ init -3 python:
     def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator="、"): # prune_empty removes empty entries from the list
 
         if prune_empty:
-            li = [x for x in li if x]
+            li = [translate_cn(x, [girl_related_dict, farm_related_dict]) for x in li if x]
 
         if not li:
             return if_none
@@ -1536,7 +1536,7 @@ init -3 python:
 
     def perform(act, girls, customers, customer_reason = "", job_filter=False): # job_filter forces the use of the current job's tag as 'and_tag'
 
-        change_log = NightChangeLog("Results", col=c_lightorange)
+        change_log = NightChangeLog("薄暮冥冥", col=c_lightorange)
 
         xp_gains = defaultdict(int)
         rep_gains = defaultdict(int)
@@ -1596,7 +1596,7 @@ init -3 python:
 
         cust_diff = mean_int(c.diff for c in customers) # // len(customers)
 
-        change_log.add("难度: %s" % cust_diff_description(cust_diff), "header", ttip = "难度与客户数量和所有目标客户的平均值有关。", ttip_title="难度", separator="\n")
+        change_log.add("难度：%s" % cust_diff_description(cust_diff), "header", ttip = "难度与客户数量和所有目标客户的平均值有关。", ttip_title="难度", separator="\n")
 
 
         ## STEP 2: Get customer satisfaction
@@ -1609,7 +1609,7 @@ init -3 python:
             # Customers special effects (only one customer result applies: too easy?)
             base_entertainment_bonus, sat, unsat = get_entertainment_bonus(customers) # / len(customers)
 
-            ttip += "基础加成: %s" % plus_text(int(base_entertainment_bonus))
+            ttip += "基础加成：%s" % plus_text(int(base_entertainment_bonus))
 
             if unsat:
                 ttip += " (%i 想做点别的事情)" % unsat
@@ -1621,24 +1621,24 @@ init -3 python:
             entertainment_bonus += sum(g.get_effect("increase satisfaction", "all jobs") for g in girls) + sum(g.get_effect("increase satisfaction", act) for g in girls)
 
             if entertainment_bonus != base_entertainment_bonus:
-                ttip += "\n特技和特殊效果: %s" % plus_text(entertainment_bonus - base_entertainment_bonus)
+                ttip += "\n特技和特殊效果：%s" % plus_text(entertainment_bonus - base_entertainment_bonus)
 
         elif act in all_sex_acts:
             # Customers special effects
 
             if len(customers) > 1: # Group: Customer satisfaction penalties stack
                 base_sex_act_bonus = sum(c.get_sex_act_bonus(group=True) for c in customers)
-                ttip = "群交技能加成: %s" % plus_text(base_sex_act_bonus)
+                ttip = "群交技能加成：%s" % plus_text(base_sex_act_bonus)
                 sex_act_bonus = base_sex_act_bonus + sum(g.get_effect("increase satisfaction", "group") for g in girls)
                 if base_sex_act_bonus != sex_act_bonus:
-                    ttip += "\n特技和特殊效果: %s" % plus_text(sex_act_bonus - base_sex_act_bonus)
+                    ttip += "\n特技和特殊效果：%s" % plus_text(sex_act_bonus - base_sex_act_bonus)
 
             elif len(girls) > 1: # Bisexual: +1 to customer satisfaction
                 base_sex_act_bonus = mean(c.get_sex_act_bonus(bis=True) for c in customers) + 1
-                ttip = "双飞技能加成: %s" % plus_text(base_sex_act_bonus, "normal")
+                ttip = "双飞技能加成：%s" % plus_text(base_sex_act_bonus, "normal")
                 sex_act_bonus = base_sex_act_bonus + sum(g.get_effect("increase satisfaction", "bisexual") for g in girls)
                 if base_sex_act_bonus != sex_act_bonus:
-                    ttip += "\n特技和特殊效果: %s" % plus_text(sex_act_bonus - base_sex_act_bonus)
+                    ttip += "\n特技和特殊效果：%s" % plus_text(sex_act_bonus - base_sex_act_bonus)
 
             else: # One on one
                 cust = customers[0]
@@ -1661,31 +1661,31 @@ init -3 python:
 
                 base_sex_act_bonus = cust.get_sex_act_bonus()
 
-                ttip = "选择的性服务加成: %s" % plus_text(base_sex_act_bonus) + ttip
+                ttip = "选择的性服务加成：%s" % plus_text(base_sex_act_bonus) + ttip
 
             sex_act_bonus = base_sex_act_bonus + sum(g.get_effect("increase satisfaction", "all sex acts") for g in girls) + sum(g.get_effect("increase satisfaction", act) for g in girls)
 
             if base_sex_act_bonus != sex_act_bonus:
-                ttip += "\n特技和特殊效果: %s" % plus_text(sex_act_bonus - base_sex_act_bonus)
+                ttip += "\n特技和特殊效果：%s" % plus_text(sex_act_bonus - base_sex_act_bonus)
 
             #<Chris Job Mod: Bonus/Malus from Entertainment Score>
             if game.has_active_mod("chrisjobmod"):
                 sex_act_bonus += ((cust.entertainment_score - entertainment_neutral_score) * entertainment_bonus_strength)
-                ttip += "\n工作职业加成: %s" % plus_text((cust.entertainment_score - entertainment_neutral_score) * entertainment_bonus_strength)
+                ttip += "\n工作职业加成：%s" % plus_text((cust.entertainment_score - entertainment_neutral_score) * entertainment_bonus_strength)
             #</Chris Job Mod>
 
         # Improve customer mood if the bedroom type is better (lowers it if it isn't). Lower rank customers will be slightly less picky.
 
         cust_bonus = round_int(entertainment_bonus + sex_act_bonus + brothel.get_mood_modifier(min(district.rank-1, customers[0].rank)) + game.get_diff_setting("satisfaction"))
 
-        ttip += "\n房间加成: %s" % plus_text(brothel.get_mood_modifier(min(district.rank-1, customers[0].rank)) + game.get_diff_setting("satisfaction"))
+        ttip += "\n房间加成：%s" % plus_text(brothel.get_mood_modifier(min(district.rank-1, customers[0].rank)) + game.get_diff_setting("satisfaction"))
 
         # Special interactions
 
         for girl in girls:
             if first_customer[girl] and girl.get_effect("change", "first customer satisfaction"):
                 cust_bonus += girl.get_effect("change", "first customer satisfaction")
-                ttip += "第一个客户奖金: %s" % plus_text(girl.get_effect("change", "first customer satisfaction"))
+                ttip += "第一个客户奖金：%s" % plus_text(girl.get_effect("change", "first customer satisfaction"))
 
 
             # BBCR bonus (may boost tip if procs depending on stat) - Unused for now
@@ -1744,14 +1744,14 @@ init -3 python:
                         cust_bonus += 3
                         specials.append("virgin" + suf)
                         lost_virginity[girl] = True
-                        ttip += event_color["good"] % "Lost virginity: +3"
+                        ttip += event_color["good"] % "失去了童贞：+3"
 
                 # DT (unused)
                 spe = girl.get_effect("special", "deep throat")
                 if spe and act == "service":
                     cust_bonus += spe
                     specials.append("DT" + suf)
-                    ttip += event_color["good"] % "Deep throat: %s" % plus_text(spe)
+                    ttip += event_color["good"] % "深喉：%s" % plus_text(spe)
 
                 # Irrumatio (unused)
                 if girl.get_effect("special", "irrumatio") and act == "service":
@@ -1765,7 +1765,7 @@ init -3 python:
                     finish = True
                     dirt_change += brothel.change_dirt(len(customers))
                     specials.append("bukkake")
-                    ttip += event_color["good"] % "Bukkake: %s" % plus_text(len(customers))
+                    ttip += event_color["good"] % "多人颜射：%s" % plus_text(len(customers))
 
                 # Creampie (unused)
                 spe = girl.get_effect("special", "creampie")
@@ -1774,7 +1774,7 @@ init -3 python:
                     specials.append("creampie" + suf)
                     finish = True
                     dirt_change += brothel.change_dirt(1)
-                    ttip += event_color["good"] % "Creampie: %s" % plus_text(spe)
+                    ttip += event_color["good"] % "外射：%s" % plus_text(spe)
 
                 # A. Creampie (unused)
                 spe = girl.get_effect("special", "anal creampie")
@@ -1783,7 +1783,7 @@ init -3 python:
                     specials.append("anal creampie" + suf)
                     finish = True
                     dirt_change += brothel.change_dirt(1)
-                    ttip += event_color["good"] % "Anal creampie: %s" % plus_text(spe)
+                    ttip += event_color["good"] % "肛门中出：%s" % plus_text(spe)
 
                 # Cum on face (unused)
                 spe = girl.get_effect("special", "cum on face")
@@ -1792,7 +1792,7 @@ init -3 python:
                     specials.append("cum on face" + suf)
                     finish = True
                     dirt_change += brothel.change_dirt(1)
-                    ttip += event_color["good"] % "Cum on face: %s" % plus_text(spe)
+                    ttip += event_color["good"] % "颜射：%s" % plus_text(spe)
 
                 # # Swallow (unused)
                 # if girl.get_effect("special", "swallow") and not finish:
@@ -1821,12 +1821,12 @@ init -3 python:
                         pickpocket_boost = 0.1
                         caught_chance = 0.15
 
-        change_log.add("顾客满意度: %s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="顾客满意度")
+        change_log.add("顾客满意度：%s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="顾客满意度")
 
         ## STEP 3: Calculate stat bonus
 
         stat_bonus = mean_int(girl.test_stats(perform_job_dict[act + "_stats"], cust_diff) for girl in girls) # // len(girls)
-        ttip = "属性提高 (%s): %s ({i}%s{/i})" % (act, plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], ", "))
+        ttip = "属性提高 (%s)：%s ({i}%s{/i})" % (girl_related_dict[act], plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], "、"))
 
         sensitivity_bonus = 0
         if act in all_sex_acts:
@@ -1851,63 +1851,63 @@ init -3 python:
 
 
         if sensitivity_bonus:
-            ttip += "\nSensitivity modifier: %s" % plus_text(sensitivity_bonus)
+            ttip += "\n敏感补正：%s" % plus_text(sensitivity_bonus)
 
 
         ## STEP 4: Get job level bonus
 
         job_bonus = mean_int(girl.job_level[act] for girl in girls) # // len(girls)
-        ttip += "\nJob level modifier (%s): %s" % (act, plus_text(job_bonus))
+        ttip += "\n工作等级补正 (%s)：%s" % (girl_related_dict[act], plus_text(job_bonus))
 
-        change_log.add("Girl skills: %s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
+        change_log.add("女孩技能：%s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
 
         ## STEP 5: roll dice
 
         d = dice(6)
-        ttip = "Represents her performance on a given interaction. She rolled a %i" % d
+        ttip = "表示她在给定交互中的表现。她摇了%i" % d
 
         # re-rolls (traits/perks)
 
         if d == 1:
-            ttip += " (" + event_color["bad"] % "critical failure" + ")"
+            ttip += " (" + event_color["bad"] % "大失败" + ")"
 
             #Reroll chance
             if girls[0].get_effect("reroll", "critical failure") > 0 or (girls[0].get_effect("reroll", "job critical failure") > 0 and act in all_jobs) or (girls[0].get_effect("reroll", "whore critical failure") > 0 and act in all_sex_acts):
                 d = dice(6)
                 specials.append("reroll")
 
-                ttip += " (" + event_color["bad"] % "critical failure" + "). She rerolled a %i" % d
+                ttip += " (" + event_color["bad"] % "大失败" + ")。她摇了%i" % d
 
         if d == 2:
             if girls[0].get_effect("special", "unlucky"):
                 d = 1
                 specials.append("unlucky")
 
-                ttip += ", but it turned to a 1 because she is unlucky (" + event_color["bad"] % "critical failure" + ")"
+                ttip += "，但是因为她运气不好，点数变成了1 (" + event_color["bad"] % "大失败" + ")"
 
         if d == 5:
             if girls[0].get_effect("special", "lucky"):
                 d = 6
                 specials.append("lucky")
 
-                ttip += ", but it turned to a 6 because she is lucky"
+                ttip += "，因为她很幸运，点数变成了6"
 
-        ttip += "."
+        ttip += "。"
 
         roll = roll_dict[d]
 
         # A roll of 6 will bypass budget restrictions
 
         if d == 6:
-            ttip += " (" + event_color["good"] % "critical success" + "). She may ignore customer budget limits."
+            ttip += " (" + event_color["good"] % "大成功" + ")。她可能会忽略客户的预算限制。"
             ignore_budget = 1
 
-        roll_changes = __("Roll: ") + "{image=" + "img_dice" + str(d) + "}"
+        roll_changes = __("检定: ") + "{image=" + "img_dice" + str(d) + "}"
         if "reroll" in specials:
-            roll_changes += __(" (Reroll)")
+            roll_changes += __(" (重新检定)")
             ev_sound = s_dice
 
-        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="判定")
+        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="检定")
 
         ## STEP 6: Misc. bonuses
 
@@ -1919,18 +1919,18 @@ init -3 python:
             elif it.usage == "auto_work":
                 for e in it.effects:
                     if e.target.startswith(act):
-                        text1 = "Used %s" % (it.name)
+                        text1 = "使用 %s" % (it.name)
                         r = girls[0].use_item(it)
                         if r == "used_up":
-                            text1 += event_color["bad"] % " (used up)"
+                            text1 += event_color["bad"] % " (用完了)"
                         item_used = it
 
                         ttip = ""
                         for e in it.effects:
                             if e.type in ("gain", "changes"):
-                                ttip += "%s: %s\n" % (e.target.capitalize(), plus_text(e.value))
+                                ttip += "%s：%s\n" % (e.target.capitalize(), plus_text(e.value))
 
-                        change_log.add(text1 + ".", ttip = ttip, ttip_title = it.name)
+                        change_log.add(text1 + "。", ttip = ttip, ttip_title = it.name)
                         break
 
         # Apply misc effects
@@ -1941,12 +1941,12 @@ init -3 python:
 
         misc_bonus += brothel.get_effect("change", act + " results") + sum(girl.get_effect("change", act + " results", raw=True) for girl in girls)
 
-        ttip = "Perks & special effects: %s" % plus_text(misc_bonus, "normal") + ttip
+        ttip = "天赋和特效：%s" % plus_text(misc_bonus, "normal") + ttip
 
         #<Chris Job Mod: Apply Difficulty Modifier for Job>
         if game.has_active_mod("chrisjobmod"):
             misc_bonus += act_difficulty_modifier[act]
-            ttip += "\nJob Mod modifier: %s" % plus_text(act_difficulty_modifier[act], "normal")
+            ttip += "\n工作模式补正：%s" % plus_text(act_difficulty_modifier[act], "normal")
         #</Chris Job Mod>
 
         # Memories of rewards and punishment
@@ -1954,13 +1954,13 @@ init -3 python:
         for girl in girls:
             if girl.remembers("reward", "good result"):
                 misc_bonus += 1
-                ttip += "\nRewarded bonus: +1"
+                ttip += "\n奖励奖金：+1"
             if girl.remembers("punish", "bad result"):
                 misc_bonus += 1
-                ttip += "\nPunished bonus: +1"
+                ttip += "\n惩罚奖金：+1"
 
         if misc_bonus:
-            change_log.add("Misc. effects: %s" % plus_text(misc_bonus, "normal"), ttip = ttip, ttip_title = "Miscellaneous")
+            change_log.add("其他效果：%s" % plus_text(misc_bonus, "normal"), ttip = ttip, ttip_title = "Miscellaneous")
 
         ## STEP 7: Get final result
 
@@ -1987,26 +1987,26 @@ init -3 python:
                     cust.entertainment_score = score
         #</Chris Job Mod>
 
-        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "} + __(result_name_dict[result.capitalize()]) +  result (%i){/color}" % score, ttip=result_reference)
+        change_log.add(__("{b}最终结果{/b}：%i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + "(%i){/color}" % score, ttip=result_reference)
 
         if act in all_jobs:
-            change_log.add("服务的顾客人数: %i/%i" % (cust.service_dict["entertained"], len(customers)))
+            change_log.add("客户招待：%i/%i" % (cust.service_dict["entertained"], len(customers)))
 
         elif act in all_sex_acts:
-            change_log.add("Customers served: %i/%i" % (cust.service_dict["laid"], len(customers)))
+            change_log.add("客户服务：%i/%i" % (cust.service_dict["laid"], len(customers)))
 
         # Get tip, xp, jp and rep
 
-        budget_ttip = "Customer budget is the cumulated amount they are willing to spend on this interaction.\n"
+        budget_ttip = "客户预算是他们愿意在这种互动上花费的金额上限。\n"
         if act in all_jobs:
             total_budget = sum(c.ent_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n客户初始预算：%s (%s 客户)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "job customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和特效：%s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2014,11 +2014,11 @@ init -3 python:
             total_budget = sum(c.wh_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n客户初始预算：%s (%s 客户)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "whore customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和特效：%s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2070,7 +2070,7 @@ init -3 python:
 
             if not ignore_budget:
                 if tip_gains[girl] > total_budget:
-                    gold_ttip[girl] += event_color["bad"] % "\n客户预算限制: %s" % (total_budget - tip_gains[girl])
+                    gold_ttip[girl] += event_color["bad"] % "\n客户预算限制：%s" % (total_budget - tip_gains[girl])
                 tip_gains[girl] = min(tip_gains[girl], total_budget)
 
             total_budget -= tip_gains[girl]
@@ -2081,7 +2081,7 @@ init -3 python:
             girl = girls[0]
             gain = round_int(pickpocket_boost * tip_gains[girl])
             tip_gains[girl] += gain
-            gold_ttip[girl] += "\n\n神偷: %s (%s)" % (plus_text(gain), girl.name)
+            gold_ttip[girl] += "\n\n神偷：%s (%s)" % (plus_text(gain), girl.name)
             if renpy.random.random() <= caught_chance:
                 rep_gains[girl] -= 1
                 brothel.change_rep(-1 * customers[0].rank)
@@ -2089,19 +2089,19 @@ init -3 python:
 
 
         if len(girls) > 1:
-            change_log.add("小费: {image=img_gold_20} %s" % plus_text(sum(tip_gains.values()), "gold"), "header")
+            change_log.add("小费：{image=img_gold_20} %s" % plus_text(sum(tip_gains.values()), "gold"), "header")
             for girl in girls:
-                change_log.add("%s: {image=img_gold} %s" % (girl.fullname, plus_text(tip_gains[girl], "gold")), ttip=gold_ttip[girl], ttip_title="Total tip (%s)" % (girl.fullname))
+                change_log.add("%s：{image=img_gold} %s" % (girl.fullname, plus_text(tip_gains[girl], "gold")), ttip=gold_ttip[girl], ttip_title="总小费 (%s)" % (girl.fullname))
         else:
             girl = girls[0]
-            change_log.add("小费: {image=img_gold_20} %s" % plus_text(tip_gains[girl], "gold"), "header", ttip=gold_ttip[girl], ttip_title="Total tip")
+            change_log.add("小费：{image=img_gold_20} %s" % plus_text(tip_gains[girl], "gold"), "header", ttip=gold_ttip[girl], ttip_title="总小费")
 
         if ignore_budget:
-            change_log.add("顾客预算: Unlimited", ttip=budget_ttip, ttip_title="顾客预算")
+            change_log.add("顾客预算：无限制", ttip=budget_ttip, ttip_title="顾客预算")
         else:
             if sum(tip_gains.values()) >= total_budget:
                 budget_ttip += " (达到上限)"
-            change_log.add("顾客预算: %s" % str(initial_budget), ttip=budget_ttip, ttip_title="顾客预算")
+            change_log.add("顾客预算：%s" % str(initial_budget), ttip=budget_ttip, ttip_title="顾客预算")
 
 
         ## STEP 8: Apply Changes
@@ -2274,7 +2274,7 @@ init -3 python:
                     text_descript += __(perform_job_dict["not satisfied"])
 
         if entertainment_bonus < 0:
-            text_descript += __("\n一些客户可能更愿意做其他的事情.")
+            text_descript += __("\n一些客户可能更愿意做其他的事情。")
 
         # Replace pronouns
         text_descript = text_descript.replace(":cust:", cust_names)
@@ -2292,7 +2292,7 @@ init -3 python:
             customers[0].gender = "M" # Rapists are always males to avoid complications
 
         if item_used:
-            text_descript += "\n她使用 " + item_used.name.lower() + " 来改善心情."
+            text_descript += "\n她使用 " + item_used.name.lower() + " 来改善心情。"
 
         for spe in specials:
             try:
@@ -2335,11 +2335,11 @@ init -3 python:
 
         for girl in girls:
             if act in all_jobs:
-                job_ttip = list_text([(j.capitalize() + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
+                job_ttip = list_text([(girl_related_dict[j.capitalize()] + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
             elif act in all_sex_acts:
-                job_ttip = list_text([(a.capitalize() + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
+                job_ttip = list_text([(girl_related_dict[a.capitalize()] + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级 %i %s。\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
+            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级%i的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2349,9 +2349,9 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("LEVEL UP", col="good", ttip = girl.fullname + " 准备升级 (%i -> %i)" % (girl.level, girl.level+1))
+                change_log.add("等级提升", col="good", ttip = girl.fullname + " 准备升级 (%i -> %i)" % (girl.level, girl.level+1))
 
-            change_log.add("{color=[c_lightgreen]}经验{/color}: %i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "Experience")
+            change_log.add("{color=[c_lightgreen]}经验{/color}：%i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "经验")
 
             if job_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2363,7 +2363,7 @@ init -3 python:
 
                 change_log.add("工作技能等级提升", "header", col=c_orange)
 
-            change_log.add("{color=[c_orange]}工作经验{/color}: %i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "Job points")
+            change_log.add("{color=[c_orange]}工作经验{/color}：%i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "工作经验")
 
             if girl.ready_to_rank():
                 ev_type = "Level/Job/Rank up"
@@ -2373,20 +2373,20 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("RANK UP", "header", col=c_softpurple)
+                change_log.add("阶级提升", "header", col=c_softpurple)
 
         # text_changes += stat_increase_dict["xp"] % str(round_int(xp_gains[girls[0]]))
         # text_changes += stat_increase_dict["jp"] % str(round_int(jp_gains[girls[0]]))
 
             if rep_gains[girl] > 0:
-                change_log.add("{color=[c_softpurple]}声望{/color}: %i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "Girl reputation")
+                change_log.add("{color=[c_softpurple]}声望{/color}：%i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "女孩声誉")
 
             change_log = get_log_changes(girl, change_log, stat_gains[girl], act)
 
-            change_log.add("体力: {color=%s}%i{/color}/%i (%s)" % (girl.get_energy_color(), girl.energy, girl.get_stat_max("energy"), event_color["bad"] % str_dec(tired_changes[girl], 1)), ttip=girl.get_energy_ttip(), ttip_title = "Energy", before_separator="\n")
+            change_log.add("体力：{color=%s}%i{/color}/%i (%s)" % (girl.get_energy_color(), girl.energy, girl.get_stat_max("energy"), event_color["bad"] % str_dec(tired_changes[girl], 1)), ttip=girl.get_energy_ttip(), ttip_title = "体力", before_separator="\n")
 
         if dirt_change:
-            change_log.add("卫生: {color=%s}%s{/color}" % (c_lightred, plus_text(dirt_change)), ttip=maintenance_desc[brothel.get_cleanliness()], ttip_title = "Dirt", before_separator="\n")
+            change_log.add("卫生：{color=%s}%s{/color}" % (c_lightred, plus_text(dirt_change)), ttip=maintenance_desc[brothel.get_cleanliness()], ttip_title = "污垢", before_separator="\n")
             log.dirt += dirt_change
             # debug_dirt_log.append([girls, dirt_change])
 
@@ -2475,7 +2475,7 @@ init -3 python:
                 if s_act == "naked":
 
                     if d == 1: # Obedience
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("顾客开始叫嚷着要 ") + girl.name + __(" 脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来.")
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("顾客开始叫嚷着要 ") + girl.name + __(" 脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来。")
 
                         r = girl.get_stat("obedience") - dice(250)
 
@@ -2487,19 +2487,19 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}顾客们非常坚持，所以她同意光着上身。{/color}\n尽管顾客会想要更多，但当前已满足于能在她工作的时候能抚摸到她裸露的乳房.")
+                            text1 += __("\n{color=[c_yellow]}顾客们非常坚持，所以她同意光着上身。{/color}\n尽管顾客会想要更多，但当前已满足于能在她工作的时候能抚摸到她裸露的乳房。")
                             extra_changes.append(("obedience", girl.change_stat("obedience", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她尖叫着把顾客推开，大吵大闹起来。{/color}\n有几个顾客离开了，他们嘀咕说，他们见过的教堂比你的青楼还野.")
+                            text1 += __("\n{color=[c_red]}她尖叫着把顾客推开，大吵大闹起来。{/color}\n有几个顾客离开了，他们嘀咕说，他们见过的教堂比你的青楼还野。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个好色的顾客开始在 ") + __(cnjob_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做.") % girl.name
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个好色的顾客开始在 ") + __(cnjob_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做。") % girl.name
 
                         r = girl.get_stat("libido") - dice(250)
 
@@ -2511,18 +2511,18 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}她因为感到害羞，拒绝了，但顾客开始在她身上蹭来蹭去，撩起她的裙子和衬衫，让每个人都看一眼她的身体。{/color}\n她感到有些兴奋了.")
+                            text1 += __("\n{color=[c_yellow]}她因为感到害羞，拒绝了，但顾客开始在她身上蹭来蹭去，撩起她的裙子和衬衫，让每个人都看一眼她的身体。{/color}\n她感到有些兴奋了。")
                             extra_changes.append(("libido", girl.change_stat("obedience", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她告诉客户在呼叫保安之前把衣服穿上。{/color}\n客户很不高兴就离开了.")
+                            text1 += __("\n{color=[c_red]}她告诉客户在呼叫保安之前把衣服穿上。{/color}\n客户很不高兴就离开了。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人.") % girl.name
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。") % girl.name
 
                         r = girl.get_stat("sensitivity") - dice(250)
 
@@ -2534,13 +2534,13 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}她拒绝了，但那人不停地恳求她，很快其他客户也来了。{/color}\n最后，她同意用自己的胸部来取悦观众。这让她有点兴奋.")
+                            text1 += __("\n{color=[c_yellow]}她拒绝了，但那人不停地恳求她，很快其他客户也来了。{/color}\n最后，她同意用自己的胸部来取悦观众。这让她有点兴奋。")
                             extra_changes.append(("sensitivity", girl.change_stat("sensitivity", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她呵斥并对顾客大喊大叫。{/color}\n他失望的离开了。其他客户无意中听到这些，不满地抱怨起来.")
+                            text1 += __("\n{color=[c_red]}她呵斥并对顾客大喊大叫。{/color}\n他失望的离开了。其他客户无意中听到这些，不满地抱怨起来。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
@@ -2555,7 +2555,7 @@ init -3 python:
                 else:
 
                     if d == 1: # Obedience
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她 ") + __(s_des[s_act]) + "."
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她 ") + __(s_des[s_act]) + "。"
 
                         r =  girl.get_stat("obedience") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2575,19 +2575,19 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}她礼貌地拒绝了，当客户抽出他的肉棒开始手淫的时候，她什么也没说{/color}\n整个经历让她感到困惑和亢奋.")
+                            text1 += __("\n{color=[c_yellow]}她礼貌地拒绝了，当客户抽出他的肉棒开始手淫的时候，她什么也没说{/color}\n整个经历让她感到困惑和亢奋。")
                             extra_changes.append(("obedience", girl.change_stat("obedience", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她告诉客户让他滚蛋。{/color}\n他心烦意乱地离开了，抱怨你青楼的服务不行.")
+                            text1 += __("\n{color=[c_red]}她告诉客户让他滚蛋。{/color}\n他心烦意乱地离开了，抱怨你青楼的服务不行。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位客户整晚都在和 ") + girl.name + __(" 调情。他试图让她 ") + __(s_des[s_act]) + "."
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位客户整晚都在和 ") + girl.name + __(" 调情。他试图让她 ") + __(s_des[s_act]) + "。"
 
                         r = girl.get_stat("libido") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2603,18 +2603,18 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}她拒绝了，但客户非常坚持，她感觉自己有点欲火中烧。{/color}\n所以他稍微抚摸了一下她的乳房和屁股.")
+                            text1 += __("\n{color=[c_yellow]}她拒绝了，但客户非常坚持，她感觉自己有点欲火中烧。{/color}\n所以他稍微抚摸了一下她的乳房和屁股。")
                             extra_changes.append(("libido", girl.change_stat("obedience", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她生气的离开了房间。{/color}\n顾客脾气暴躁，失望至极.")
+                            text1 += __("\n{color=[c_red]}她生气的离开了房间。{/color}\n顾客脾气暴躁，失望至极。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意 ") + __(s_des[s_act]) + __(", 来帮助他忘记悲伤.")
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意 ") + __(s_des[s_act]) + __("，来帮助他忘记悲伤。")
 
                         r = girl.get_stat("sensitivity") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2630,18 +2630,18 @@ init -3 python:
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}她温和地拒绝了，但还是给了顾客一个拥抱。{/color}\n他利用这个机会去磨蹭着她的身体，她也听之任之.")
+                            text1 += __("\n{color=[c_yellow]}她温和地拒绝了，但还是给了顾客一个拥抱。{/color}\n他利用这个机会去磨蹭着她的身体，她也听之任之。")
                             extra_changes.append(("sensitivity", girl.change_stat("sensitivity", 1, silent=True)))
 
                             girl.raise_preference(s_act)
 
                         else:
-                            text1 += __("\n{color=[c_red]}她冷冷地告诉客户，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了.")
+                            text1 += __("\n{color=[c_red]}她冷冷地告诉客户，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。")
                             extra_changes.append(("reputation", girl.change_stat("reputation", -1, silent=True)))
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     if accepted and girl.flags["forbid customer sex"]:
-                        text1 += event_color["bad"] % __("\n她无视你让她远离顾客的命令.")
+                        text1 += event_color["bad"] % __("\n她无视你让她远离顾客的命令。")
                         girl.track_event("fooled around", arg=__(s_des[s_act]))
 
                     events.append(Event(pic = work_pic, char = girl.char, text = text1, changes = get_change_text(extra_changes), type = ev_type))
@@ -2674,18 +2674,18 @@ init -3 python:
                     pos_reaction, neg_reaction = girl.test_weakness(s_act, unlock=True)
 
                     if pos_reaction and neg_reaction:
-                        text1 += girl.name + __(" 脸红得通红 ") + __(long_act_description[s_act]) + __(". 让她看起来很不舒服。然而，她的乳头激凸，而且明显潮湿，明显一幅欲火中烧的样子. {color=[c_yellow]}她好像既喜欢又讨厌这样做。{/color}")
+                        text1 += girl.name + __(" 脸红得通红 ") + __(long_act_description[s_act]) + __(". 让她看起来很不舒服。然而，她的乳头激凸，而且明显潮湿，明显一幅欲火中烧的样子。{color=[c_yellow]}她好像既喜欢又讨厌这样做。{/color}")
                         ev_sound = s_sigh
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_darkgold]}矛盾的{/color}。")
                         chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, girl_related_dict[s_act])
 
                     elif pos_reaction:
                         if act == "service":
-                            text1 += girl.name + "在为" + plur + "顾客服务时，看到顾客的肉棒而感到慌乱。 她开始边玩弄顾客边自慰。"
+                            text1 += girl.name + "在为" + plur + "顾客服务时，看到顾客的肉棒而感到慌乱。她开始边玩弄顾客边自慰。"
                         elif act == "fetish":
-                            text1 += girl.name + __(" 被未知的感觉所淹没，在顾客的玩弄下她变得非常湿润.")
+                            text1 += girl.name + __(" 被未知的感觉所淹没，在顾客的玩弄下她变得非常湿润。")
                         else:
-                            text1 += girl.name + __(" 是非常敏感的，她最终达到高潮，因为她被客户操了") + plur + "."
+                            text1 += girl.name + __(" 是非常敏感的，她最终达到高潮，因为她被客户操了") + plur + "。"
 
                         text1 += __("\n{color=[c_green]}她似乎很喜欢 ") + __(long_act_description[s_act]) + "。{/color}"
                         ev_sound = s_mmmh
@@ -2693,7 +2693,7 @@ init -3 python:
                         chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, girl_related_dict[s_act])
 
                     elif neg_reaction:
-                        text1 += girl.name + __(" 在") + plur + __("客户身边表现得很不自在, 似乎什么东西困扰着她. {color=[c_red]}她似乎不喜欢 ") + __(long_act_description[act]) + "。{/color}"
+                        text1 += girl.name + __(" 在") + plur + __("客户身边表现得很不自在, 似乎什么东西困扰着她。{color=[c_red]}她似乎不喜欢 ") + __(long_act_description[act]) + "。{/color}"
                         ev_sound = s_surprise
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_red]}不舒服的{/color}。")
                         chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, girl_related_dict[s_act])
@@ -3240,7 +3240,7 @@ init -3 python:
         if type:
             if type == "train" and girl.MC_interact_counters[type] >= 1:
                 if not silent:
-                    renpy.say("", "你不能一天里训练一个女孩超过一次.")
+                    renpy.say("", "你不能一天里训练一个女孩超过一次。")
                 return False
 
             elif type in ("present", "money", "offer") and girl.MC_interact_counters[type] >= 1:
@@ -3251,7 +3251,7 @@ init -3 python:
 
             elif girl.MC_interact_counters[type] >= 3:
                 if not silent:
-                    renpy.say("", "同样的事情，你一天里和一个女孩做的次数不能超过3次.")
+                    renpy.say("", "同样的事情，你一天里和一个女孩做的次数不能超过3次。")
                 return False
 
         return True
@@ -3833,8 +3833,8 @@ init -3 python:
         for name in undetected_mods:
             del persistent.mods[name]
 
-            renpy.notify("Mod: " + name + " 已被移除.")
-            mod_traceback += "\n" + "Mod: " + name + " 已被移除."
+            renpy.notify("Mod：" + name + " 已被移除。")
+            mod_traceback += "\n" + "Mod：" + name + " 已被移除。"
 
         # Checks new mods or new mod versions
 
@@ -3844,18 +3844,18 @@ init -3 python:
 
             if name not in persistent.mods.keys():
                 register_mod(mod)
-                renpy.notify(mod.full_name + " 已添加.")
+                renpy.notify(mod.full_name + " 已添加。")
 
-                mod_traceback += "\n" + "Mod: " + name + " 已添加."
+                mod_traceback += "\n" + "Mod：" + name + " 已添加。"
 
             # Finding new version (basic checks: version number and events lenght)
 
             elif mod.check_for_updates():
 #                renpy.call_screen("OK_screen", title = mod.name + ": new version found", message = "A different version of this mod: " + mod.name + " has been found ([[mod.version]]). The mod has been reset.")
                 register_mod(mod)
-                renpy.notify(mod.full_name + " 已更新.")
+                renpy.notify(mod.full_name + " 已更新。")
                 mod.active = True
-                mod_traceback += "\n" + "Mod: " + name + " 已更新."
+                mod_traceback += "\n" + "Mod：" + name + " 已更新。"
 
             # Activating mod if it exists
 
@@ -3863,7 +3863,7 @@ init -3 python:
                 mod.active = True
 #                if debug_mode:
 #                    renpy.notify(mod.full_name + " has been activated.")
-                mod_traceback += "\n" + "Mod: " + name + " 已激活."
+                mod_traceback += "\n" + "Mod：" + name + " 已激活。"
 
         # persistent.mods should now be updated to reflect all currently available mods
 
@@ -3873,7 +3873,7 @@ init -3 python:
 
         persistent.mods[mod.name] = {"version" : mod.version, "check" : mod.get_check(), "active" : mod.active}
 
-        mod_traceback += "\n" + "Mod: " + mod.name + " 已注册."
+        mod_traceback += "\n" + "Mod：" + mod.name + " 已注册。"
 
 #     def reset_mod(mod): # No longer required
 
@@ -4026,20 +4026,20 @@ init -3 python:
 
         # Log incoming customers
 
-        cust_text = str(cust_nb) + " " + __("位顾客来到 ") + brothel.name + "."
+        cust_text = str(cust_nb) + " " + __("位顾客来到 ") + brothel.name + "。"
         log.add_report(event_color["good"] % cust_text)
 
-        cust_text += "\n来自基础效果: %s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
+        cust_text += "\n来自基础效果：%s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
 
         # if cust_nb_dict["advertising"] and cust_nb_dict["special"]:
         #     # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising and +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
         #     cust_text += "\nAdvertising: %s\nSpecial effects: %s" % (plus_text(cust_nb_dict["advertising"]), plus_text(cust_nb_dict["special"]))
         if cust_nb_dict["advertising"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising)")
-            cust_text += "\n来自广告吸引: %s" % (plus_text(cust_nb_dict["advertising"]))
+            cust_text += "\n来自广告吸引：%s" % (plus_text(cust_nb_dict["advertising"]))
         elif cust_nb_dict["special"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
-            cust_text += "\n来自特殊效果: %s" % (plus_text(cust_nb_dict["special"]))
+            cust_text += "\n来自特殊效果：%s" % (plus_text(cust_nb_dict["special"]))
 
         log.cust = cust_nb
 
@@ -4054,7 +4054,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + __(" 来到青楼。他希望得到一个 ") + __(girl_related_dict[c.wants_entertainment]) + __(" 并且喜欢 ") + __(girl_related_dict[c.wants_sex_act]) + ".")
+            log.add_report(c.name + __(" 来到青楼。他希望得到一个 ") + __(girl_related_dict[c.wants_entertainment]) + __(" 并且喜欢 ") + __(girl_related_dict[c.wants_sex_act]) + "。")
 
         return cust_list, cust_text, cust_nb_dict
 
@@ -4204,7 +4204,7 @@ init -3 python:
         elif d["main diversity average"] < 3:
             rating += "-"
 
-        ttip = "女孩包评级: %s, " % rating
+        ttip = "女孩包评级：%s, " % rating
         #<Chris12 PackState>
         #ttip += "\nPictures: " + str(len(girl.pics))
         ttip += "图片: " + str(len(GirlFilesDict.get_pics(girl.path)))
@@ -4637,7 +4637,7 @@ init -3 python:
 
     def delete_mix(mix):
         if mix == "default":
-            renpy.notify("不能删除“默认”组合.")
+            renpy.notify("不能删除“默认”组合。")
         elif mix in persistent.girl_mix.keys() and renpy.call_screen("yes_no", "你确定你要删除这个女孩的组合吗?"):
             del persistent.girl_mix[mix]
             if persistent.active_mix == mix:
@@ -5258,7 +5258,7 @@ init -3 python:
         with open((config.gamedir + "\\ignored_pictures.txt"), "wt") as ignore_file: #? Check that it works if file doesn't exist
             ignore_file.write(ignore_text)
 
-        notify("List printed to: " + config.gamedir + "\\ignored_pictures.txt")
+        notify("列表打印到：" + config.gamedir + "\\ignored_pictures.txt")
 
     def toggle_ignore_pic(pic): # path overrides pic if provided
 
@@ -5329,12 +5329,20 @@ init -3 python:
 
 ## 中文翻译函数 ##
 
-    def translate_cn(text1, dictionary):
-        if text1 in dictionary:
-            text2 = dictionary[text1]
+    def translate_cn(text, translation_dicts, default_value=None):
+        if isinstance(translation_dicts, dict):
+            # 如果 translation_dicts 是单个字典
+            if text in translation_dicts:
+                return translation_dicts[text]
         else:
-            text2 = text1
+            # 如果 translation_dicts 是字典列表
+            for translation_dict in translation_dicts:
+                if text in translation_dict:
+                    return translation_dict[text]
         
-        return text2
+        if default_value is not None:
+            return default_value
+        else:
+            return text
 
 #### END OF BK FUNCTIONS FILE ####
