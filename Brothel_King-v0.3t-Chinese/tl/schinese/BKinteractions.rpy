@@ -4444,7 +4444,7 @@ translate schinese slave_story5_54e6d272:
 translate schinese slave_story5_a87859b5:
 
     # girl.char "We weren't very well off, so we sometimes accommodated travellers for the night for a few denars... There weren't many inns in the remote neighborhood where we lived."
-    girl.char "We weren't very well off, so we sometimes accommodated travellers for the night for a few denars... There weren't many inns in the remote neighborhood where we lived."
+    girl.char "我们不是很富裕，所以我们有时为旅客提供住宿，收几金币补贴家用。我们住的那个偏远地区没有多少旅馆。"
 
 # game/BKinteractions.rpy:4529
 translate schinese slave_story5_f3970f70:
@@ -4468,7 +4468,7 @@ translate schinese slave_story5_b7e720e7:
 translate schinese slave_story5_96a70992:
 
     # you "Oh."
-    you "Oh."
+    you "哦。"
 
 # game/BKinteractions.rpy:4537
 translate schinese slave_story5_25e23f39:
