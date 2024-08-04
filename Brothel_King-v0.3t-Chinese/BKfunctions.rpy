@@ -883,11 +883,11 @@ init -3 python:
                 begin = False
 
             elif not begin and d:
-                text1 += ", " + d
+                text1 += "，" + d
 
         if final_dot:
-            if len(text1) > 0 and text1[-1] not in (".", "!", "?"): # Makes sure punctuation is added last.
-                text1 += "."
+            if len(text1) > 0 and text1[-1] not in ("。", "！", "？"): # Makes sure punctuation is added last.
+                text1 += "。"
 
         return __(text1)
 
@@ -901,13 +901,13 @@ init -3 python:
             stat, nb = c
 
             if stat in ("rep", "reputation"):
-                change_log.add("声望: %i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
+                change_log.add("声望：%i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
 
             elif stat == "gold":
-                change_log.add("金币: {image=img_gold} %s" % plus_text(int(nb), "gold"))
+                change_log.add("金币：{image=img_gold} %s" % plus_text(int(nb), "gold"))
 
             else:
-                change_log.add("%s: %i/%i (%s)" % ((__(stat_name_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
+                change_log.add("%s：%i/%i (%s)" % ((__(stat_name_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
 
         return change_log
 
@@ -1016,24 +1016,24 @@ init -3 python:
         change_log.add("Rape attempt", "header")
 
         if brothel.get_security() >= threat: #You have enough guards to look after your girls
-            text_descript += girl.name + " {color=[c_green]}叫了保安。他道过歉并表示只是个玩笑而已.{/color}"
+            text_descript += girl.name + " {color=[c_green]}叫了保安。他道过歉并表示只是个玩笑而已。{/color}"
 
             girl.change_mood(1)
             girl.change_fear(-1)
 
-            change_log.add("Averted by security", col="good", ttip = event_color["good"] % "Mood +, Fear -")
+            change_log.add("Averted by security", col="good", ttip = event_color["good"] % "心情 +, 恐惧 -")
 
         elif MC.can_defend() and MC.get_defense() > girl.get_defense(): #You don't have enough guards but the Player is available and tougher than your girl
 
             if MC.get_defense() >= cust.get_defense():
 
-                text_descript += "{color=[c_green]}你听到%s在喊救命，威胁着要把他赶出去。他决定好好表现.{/color}" % girl.name
+                text_descript += "{color=[c_green]}你听到%s在喊救命，威胁着要把他赶出去。他决定好好表现。{/color}" % girl.name
 
                 girl.change_mood(1)
                 girl.change_love(1)
                 girl.change_fear(-2)
 
-                change_log.add("Averted by you", col="good", ttip = event_color["good"] % "Mood +, Love +, Fear -")
+                change_log.add("Averted by you", col="good", ttip = event_color["good"] % "心情 +, 爱情 +, 恐惧 -")
 
             elif girl.test_shield():
 
@@ -1041,17 +1041,17 @@ init -3 python:
 
                 girl.change_mood(1)
 
-                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "心情 +")
 
             else:
-                text_descript += "{color=[c_red]}你想帮忙，但顾客把你打晕了，还把门锁上了.{/color}"
+                text_descript += "{color=[c_red]}你想帮忙，但顾客把你打晕了，还把门锁上了。{/color}"
                 raped = True
 
                 girl.change_mood(-3)
                 girl.change_love(-1)
                 girl.change_fear(3)
 
-                change_log.add("Security failure", col="very bad", ttip = event_color["bad"] % "Mood --, Love -, Fear ++")
+                change_log.add("Security failure", col="very bad", ttip = event_color["bad"] % "心情 --, 爱情 -, 恐惧 ++")
 
             MC.interactions -= 1
 
@@ -1068,29 +1068,29 @@ init -3 python:
 
             if girl.get_defense() + mod >= cust.get_defense():
 
-                text_descript += "{color=[c_green]}%s 告诉他要么乖乖听话，要么失去一个重要的身体部位。他改变了主意.{/color}" % girl.name
+                text_descript += "{color=[c_green]}%s 告诉他要么乖乖听话，要么失去一个重要的身体部位。他改变了主意。{/color}" % girl.name
 
                 girl.track_event("defended")
                 girl.change_mood(1)
 
-                change_log.add("Averted by herself", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("Averted by herself", col="good", ttip = event_color["good"] % "心情 +")
 
             elif girl.test_shield():
 
                 text_descript += "幸运的是，她的魔法盾牌保护了她。顾客被吓到了，不好意思地同意退让."
                 girl.change_mood(1)
 
-                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "心情 +")
 
             else:
 
-                text_descript += "{color=[c_red]}%s 我试着反抗他，但没有用，他对她为所欲为.{/color}" % girl.name
+                text_descript += "{color=[c_red]}%s 我试着反抗他，但没有用，他对她为所欲为。{/color}" % girl.name
                 raped = True
 
                 girl.change_mood(-3)
                 girl.change_fear(3)
 
-                change_log.add("Security failure", col="very bad", ttip = event_color["bad"] % "Mood --, Fear ++")
+                change_log.add("Security failure", col="very bad", ttip = event_color["bad"] % "心情 --, 恐惧 ++")
 
         return raped, text_descript
 
@@ -1108,25 +1108,25 @@ init -3 python:
                 notify("%s: 袭击企图" % girl.fullname, pic=girl.portrait)
                 crazy_changes.add("Assault attempt", "header")
 
-                violent_text = __(cust.name) + __(" 陷入癫狂,攻击了 ") + girl.name + __(" 电光火石之间!")
-                violent_report = __("意外事件! 有人施暴.")
+                violent_text = __(cust.name) + __(" 陷入癫狂,攻击了 ") + girl.name + __(" 电光火石之间！")
+                violent_report = __("意外事件！有人施暴。")
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
 #                   reward = (cust.diff  + dice(cust.diff)) * district.rank
-                    violent_text += "\n{color=[c_green]}幸运的是，你的保镖就在身边。他们很快联合起来对付他，把他打得屁滚尿流.\n{/color}你的女孩很安全，而你却把他钱包里的东西装进了口袋: %s 金币." % str(cust.ent_budget)
-                    violent_report = "{color=[c_green]}" + violent_report + " 你的警卫把他揍了一顿 (抢到了 %s 金币).{/color}" % str(cust.ent_budget)
+                    violent_text += "\n{color=[c_green]}幸运的是，你的保镖就在身边。他们很快联合起来对付他，把他打得屁滚尿流。\n{/color}你的女孩很安全，而你却把他钱包里的东西装进了口袋: %s 金币." % str(cust.ent_budget)
+                    violent_report = "{color=[c_green]}" + violent_report + " 你的警卫把他揍了一顿 (抢到了 %s 金币)。{/color}" % str(cust.ent_budget)
                     MC.gold += cust.ent_budget
                     girl.change_mood(1)
                     girl.change_fear(-1)
 
                     pic = Picture(path="events/" + rand_choice(security_pics["girl defense"]))
 
-                    crazy_changes.add("Averted by security ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Fear -")
+                    crazy_changes.add("Averted by security ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "心情 +, 恐惧 -")
 
                 elif MC.can_defend() and MC.get_defense() > girl.get_defense(): # Your guards are somewhere else, your girl is helpless, it's your turn to take action!
                     if fight(cust, MC) == False:
-                        violent_text += __("\n{color=[c_green]}你冲到现场，在他还没来得及行动之前把他的脸打烂.\n{/color}你的女孩安全了，而你却把他钱包里的东西装进了口袋: %s 金币.") % str(cust.ent_budget)
-                        violent_report = "{color=[c_green]}" + violent_report + __(" 你揍了他一顿 (抢到了 %s 金币).{/color}") % str(cust.ent_budget)
+                        violent_text += __("\n{color=[c_green]}你冲到现场，在他还没来得及行动之前把他的脸打烂。\n{/color}你的女孩安全了，而你却把他钱包里的东西装进了口袋: %s 金币.") % str(cust.ent_budget)
+                        violent_report = "{color=[c_green]}" + violent_report + __(" 你揍了他一顿 (抢到了 %s 金币)。{/color}") % str(cust.ent_budget)
                         girl.change_mood(1)
                         girl.change_fear(-2)
                         girl.change_love(1)
@@ -1134,7 +1134,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl defense"]))
 
-                        crazy_changes.add("Averted by you ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Love +, Fear --")
+                        crazy_changes.add("Averted by you ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "心情 +, 爱情 +, 恐惧 --")
 
                     elif girl.test_shield():
                         violent_text += __(" 她被魔法护盾保护着.")
@@ -1142,7 +1142,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "心情 +")
 
                     elif girl.get_effect("special", "immune"):
                         violent_text += __(" 她对物理攻击免疫。.")
@@ -1150,22 +1150,22 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "心情 +")
 
                     else:
-                        violent_text += __("\n{color=[c_red]}你想帮她，但那个混蛋把你打倒在地，把你们两个都揍了一顿.\n{/color}") + girl.name + __(" 受伤了，你失去了一些自尊.")
+                        violent_text += __("\n{color=[c_red]}你想帮她，但那个混蛋把你打倒在地，把你们两个都揍了一顿。\n{/color}") + girl.name + __(" 受伤了，你失去了一些自尊.")
                         wounds = girl.get_hurt(dice(3)+1)
 
                         girl.track_event("hurt", "一个暴力的顾客")
 
-                        violent_report = "{color=[c_red]}" + violent_report + __(" 他打了你一顿并让%s受伤了.{/color} ") % girl.name
+                        violent_report = "{color=[c_red]}" + violent_report + __(" 他打了你一顿并让%s受伤了。{/color} ") % girl.name
                         girl.change_mood(-2)
                         girl.change_fear(2)
                         girl.change_love(-1)
 
                         pic = Picture(path="events/" + rand_choice(violent_pics))
 
-                        crazy_changes.add("Security failure", col="bad", ttip = event_color["bad"] % "Mood --, Love -, Fear ++")
+                        crazy_changes.add("Security failure", col="bad", ttip = event_color["bad"] % "心情 --, 爱情 -, 恐惧 ++")
                         crazy_changes.add(girl.fullname + " 受伤了 %i 天%s" % (wounds, plural(wounds)), col="very bad")
 
 
@@ -1184,7 +1184,7 @@ init -3 python:
                                         __("她一膝盖狠狠顶在他的蛋蛋上，然后在就之间他跪在地板上哭了起来."), __("她一脚踢在他脸, 彻底打败了他.")])
                                         + __("\n{/color}你的女孩很安全，你的手下把这个可怜的傻瓜扔到了暗巷里，你则把他钱包里的东西装进口袋: %s 金币.") % str(cust.ent_budget))
 
-                        violent_report = "{color=[c_green]}" + violent_report + __(" %s 毒打了他 (获得 %s 金币).{/color}") % (girl.name, str(cust.ent_budget))
+                        violent_report = "{color=[c_green]}" + violent_report + __(" %s 毒打了他 (获得 %s 金币)。{/color}") % (girl.name, str(cust.ent_budget))
 
                         girl.track_event("defended")
 
@@ -1199,7 +1199,7 @@ init -3 python:
                             if not pic:
                                 pic = Picture(path="events/" + rand_choice(security_pics["default girl fight"]))
 
-                        crazy_changes.add("Averted by herself", col="good", ttip = event_color["good"] % "Mood +, Fear -")
+                        crazy_changes.add("Averted by herself", col="good", ttip = event_color["good"] % "心情 +, 恐惧 -")
 
                     elif girl.test_shield():
                         violent_text += __(" 她被一个魔法盾所保护着.")
@@ -1207,7 +1207,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "心情 +")
 
                     elif girl.get_effect("special", "immune"):
                         violent_text += __(" 她对物理攻击免疫.")
@@ -1215,16 +1215,16 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "心情 +")
 
                     else:
-                        violent_text += __("\n{color=[c_red]}你的女孩试图保护自己，但他似乎更强壮，把踢她到地上用拳头不停地打她.\n{/color}你最终把他赶走了，但 ") + girl.name + __(" 还是受伤了.")
+                        violent_text += __("\n{color=[c_red]}你的女孩试图保护自己，但他似乎更强壮，把踢她到地上用拳头不停地打她。\n{/color}你最终把他赶走了，但 ") + girl.name + __(" 还是受伤了.")
                         girl.get_hurt(dice(3)+1)
 #                         girl.add_log("hurt_days")
 
                         girl.track_event("hurt", "一个暴力的客户")
 
-                        violent_report = "{color=[c_red]}" + violent_report + __(" %s 受伤了.{/color}") % girl.name
+                        violent_report = "{color=[c_red]}" + violent_report + __(" %s 受伤了。{/color}") % girl.name
                         girl.change_mood(-2)
                         girl.change_fear(2)
 
@@ -1234,7 +1234,7 @@ init -3 python:
                             if not pic:
                                 pic = Picture(path="events/" + rand_choice(violent_pics))
 
-                        crazy_changes.add("Security failure", col="bad", ttip = event_color["bad"] % "Mood --, Fear ++")
+                        crazy_changes.add("Security failure", col="bad", ttip = event_color["bad"] % "心情 --, 恐惧 ++")
 
                 log.add_report(violent_report)
 
@@ -1244,30 +1244,30 @@ init -3 python:
 
             elif cust.crazy == "arsonist":
 
-                notify("%s: Arson attempt" % brothel.name)
+                notify("%s：纵火企图" % brothel.name)
                 crazy_changes.add("Arson attempt", "header", col="bad")
 
                 arson_text = ""
-                arson_report = __("安全警报! 火灾发生了.")
+                arson_report = __("安全警报！火灾发生了。")
                 arson = False
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
-                    arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼!\n{color=[c_green]}你的守卫抓住了他，还没等他点燃火柴就把他打晕了.{/color}")
-                    arson_report = "{color=[c_green]}" + arson_report + __(" 你的警卫阻止了他.{/color}")
+                    arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼！\n{color=[c_green]}你的守卫抓住了他，还没等他点燃火柴就把他打晕了。{/color}")
+                    arson_report = "{color=[c_green]}" + arson_report + __(" 你的警卫阻止了他。{/color}")
 
                 elif MC.can_defend(): # Your guards are somewhere else, it's your turn to take action!
                     if fight(cust, MC) == False:
-                        arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼!\n{color=[c_green]}事情发生的时候，你正在巡逻，还没等那坏蛋实施他的计划，你就把他打昏了.{/color}")
-                        arson_report = "{color=[c_green]}" + arson_report + __(" 你阻止了他.{/color}")
+                        arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼！\n{color=[c_green]}事情发生的时候，你正在巡逻，还没等那坏蛋实施他的计划，你就把他打昏了。{/color}")
+                        arson_report = "{color=[c_green]}" + arson_report + __(" 你阻止了他。{/color}")
                     else:
-                        arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼!\n{color=[c_red]}你试图阻止他,但他疯狂地与你战斗,给火势蔓延留下了机会.{/color}")
-                        arson_report = "{color=[c_red]}" + arson_report + __(" 你被打败了,青楼着火了.{/color}")
+                        arson_text += __(cust.name) + __(" 试图纵火烧毁你的青楼！\n{color=[c_red]}你试图阻止他，但他疯狂地与你战斗，给火势蔓延留下了机会。{/color}")
+                        arson_report = "{color=[c_red]}" + arson_report + __(" 你被打败了，青楼着火了。{/color}")
                         arson = True
                     MC.interactions -= 1
 
                 else: # No one is here to help out
-                    arson_text += __(cust.name) + __("{color=[c_red]} 纵火烧毁了你的青楼!\n你听到女孩们的尖叫,很快就看到你的庄园冒出了浓烟.{/color}")
-                    arson_report = "{color=[c_red]}" + arson_report + __(" 那-那-那里起火了!{/color}")
+                    arson_text += __(cust.name) + __("{color=[c_red]} 纵火烧毁了你的青楼！\n你听到女孩们的尖叫，很快就看到你的庄园冒出了浓烟。{/color}")
+                    arson_report = "{color=[c_red]}" + arson_report + __(" 那-那-那里起火了！{/color}")
                     arson = True
 
                 if arson:
@@ -1304,7 +1304,7 @@ init -3 python:
 
         for pop in all_populations:
             if pop_count[pop]:
-                ttip += "%s: %i\n" % (pop.name.capitalize(), pop_count[pop])
+                ttip += "%s: %i\n" % (setting_name_dict[pop.name.capitalize()], pop_count[pop])
 
         return ttip
 
@@ -1460,7 +1460,7 @@ init -3 python:
     def transact(obj, seller, buyer, price):
         if isinstance(obj, Item) and buyer != MC:
             if not obj.sellable:
-                renpy.notify("%s: 你不能交易这个物品." % obj.name)
+                renpy.notify("%s: 你不能交易这个物品。" % obj.name)
                 return False
 
         debug_notify(seller.type + " selling to " + buyer.type)
@@ -2339,7 +2339,7 @@ init -3 python:
             elif act in all_sex_acts:
                 job_ttip = list_text([(a.capitalize() + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级 %i %s.\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
+            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级 %i %s。\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2480,14 +2480,14 @@ init -3 python:
                         r = girl.get_stat("obedience") - dice(250)
 
                         if r > 0:
-                            text1 += __("\n{color=[c_green]}知道客户永远是对的，她让他们一个接一个地脱掉衣服，直到她完全赤身裸体.{/color}")
+                            text1 += __("\n{color=[c_green]}知道客户永远是对的，她让他们一个接一个地脱掉衣服，直到她完全赤身裸体。{/color}")
                             extra_changes.append(("obedience", girl.change_stat("obedience", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
 
                             accepted = True
 
                         elif r > -50:
-                            text1 += __("\n{color=[c_yellow]}顾客们非常坚持，所以她同意光着上身.{/color}\n尽管顾客会想要更多，但当前已满足于能在她工作的时候能抚摸到她裸露的乳房.")
+                            text1 += __("\n{color=[c_yellow]}顾客们非常坚持，所以她同意光着上身。{/color}\n尽管顾客会想要更多，但当前已满足于能在她工作的时候能抚摸到她裸露的乳房.")
                             extra_changes.append(("obedience", girl.change_stat("obedience", 1, silent=True)))
 
                             girl.raise_preference(s_act)
@@ -2504,7 +2504,7 @@ init -3 python:
                         r = girl.get_stat("libido") - dice(250)
 
                         if r > 0:
-                            text1 += __("\n{color=[c_green]}她觉得自己本欲火中烧，而且喜欢这个客户，所以她同意了.{/color}")
+                            text1 += __("\n{color=[c_green]}她觉得自己本欲火中烧，而且喜欢这个客户，所以她同意了。{/color}")
                             extra_changes.append(("libido", girl.change_stat("libido", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
 
@@ -2527,7 +2527,7 @@ init -3 python:
                         r = girl.get_stat("sensitivity") - dice(250)
 
                         if r > 0:
-                            text1 += __("\n{color=[c_green]}所有的顾客都开始央求她，所以%s觉得自己无法拒绝.{/color}") % girl.name
+                            text1 += __("\n{color=[c_green]}所有的顾客都开始央求她，所以%s觉得自己无法拒绝。{/color}") % girl.name
                             extra_changes.append(("sensitivity", girl.change_stat("sensitivity", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
 
@@ -2565,9 +2565,9 @@ init -3 python:
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += __("\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用 ") + __(s_des[s_act]) + " 来代替.{/color}"
+                                text1 += __("\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用 ") + __(s_des[s_act]) + " 来代替。{/color}"
                             else:
-                                text1 += __("\n{color=[c_green]}她顺从地接受了客户的要求.{/color}")
+                                text1 += __("\n{color=[c_green]}她顺从地接受了客户的要求。{/color}")
 
                             extra_changes.append(("obedience", girl.change_stat("obedience", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
@@ -2594,9 +2594,9 @@ init -3 python:
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += __("\n{color=[c_green]}为了保护她的童贞，她淫荡地同意 ") + __(s_des[s_act]) + __(" 来代替.{/color}")
+                                text1 += __("\n{color=[c_green]}为了保护她的童贞，她淫荡地同意 ") + __(s_des[s_act]) + __(" 来代替。{/color}")
                             else:
-                                text1 += __("\n{color=[c_green]}她觉得自己欲火中烧，而且喜欢这个客户，所以她同意了.{/color}")
+                                text1 += __("\n{color=[c_green]}她觉得自己欲火中烧，而且喜欢这个客户，所以她同意了。{/color}")
                             extra_changes.append(("libido", girl.change_stat("libido", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
 
@@ -2621,9 +2621,9 @@ init -3 python:
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += __("\n{color=[c_green]}她想帮助他，并提出 ") + __(s_des[s_act]) + __(" 代替他，以保留她的贞操.{/color}")
+                                text1 += __("\n{color=[c_green]}她想帮助他，并提出 ") + __(s_des[s_act]) + __(" 代替他，以保留她的贞操。{/color}")
                             else:
-                                text1 += __("\n{color=[c_green]}她被他的故事感动了，决定不能拒绝他.{/color}")
+                                text1 += __("\n{color=[c_green]}她被他的故事感动了，决定不能拒绝他。{/color}")
                             extra_changes.append(("sensitivity", girl.change_stat("sensitivity", dice(3), silent=True)))
                             extra_changes.append(("reputation", girl.change_stat("reputation", 1, silent=True)))
 
@@ -2674,7 +2674,7 @@ init -3 python:
                     pos_reaction, neg_reaction = girl.test_weakness(s_act, unlock=True)
 
                     if pos_reaction and neg_reaction:
-                        text1 += girl.name + __(" 脸红得通红 ") + __(long_act_description[s_act]) + __(". 让她看起来很不舒服。然而，她的乳头激凸，而且明显潮湿，明显一幅欲火中烧的样子. {color=[c_yellow]}她好像既喜欢又讨厌这样做.{/color}")
+                        text1 += girl.name + __(" 脸红得通红 ") + __(long_act_description[s_act]) + __(". 让她看起来很不舒服。然而，她的乳头激凸，而且明显潮湿，明显一幅欲火中烧的样子. {color=[c_yellow]}她好像既喜欢又讨厌这样做。{/color}")
                         ev_sound = s_sigh
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_darkgold]}矛盾的{/color}。")
                         chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, girl_related_dict[s_act])
@@ -2687,13 +2687,13 @@ init -3 python:
                         else:
                             text1 += girl.name + __(" 是非常敏感的，她最终达到高潮，因为她被客户操了") + plur + "."
 
-                        text1 += __("\n{color=[c_green]}她似乎很喜欢 ") + __(long_act_description[s_act]) + ".{/color}"
+                        text1 += __("\n{color=[c_green]}她似乎很喜欢 ") + __(long_act_description[s_act]) + "。{/color}"
                         ev_sound = s_mmmh
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_green]}敏感的{/color}。")
                         chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, girl_related_dict[s_act])
 
                     elif neg_reaction:
-                        text1 += girl.name + __(" 在") + plur + __("客户身边表现得很不自在, 似乎什么东西困扰着她. {color=[c_red]}她似乎不喜欢 ") + __(long_act_description[act]) + ".{/color}"
+                        text1 += girl.name + __(" 在") + plur + __("客户身边表现得很不自在, 似乎什么东西困扰着她. {color=[c_red]}她似乎不喜欢 ") + __(long_act_description[act]) + "。{/color}"
                         ev_sound = s_surprise
                         log.add_report(girl.name + "对于" + long_act_description[s_act] + "的感觉是{color=[c_red]}不舒服的{/color}。")
                         chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, girl_related_dict[s_act])
@@ -3964,25 +3964,25 @@ init -3 python:
         # Escaped girls
 
         for girl in MC.escaped_girls:
-            msg += event_color["bad"] % (girl.fullname + " 从青楼里逃走了，还没有找回来.\n")
+            msg += event_color["bad"] % (girl.fullname + " 从青楼里逃走了，还没有找回来。\n")
 
         # Grumbling girls
 
         for girl in MC.girls:
             if girl.run_away_check():
-                msg += event_color["a little bad contrast"] % (__("警告! ") + girl.fullname + __(" 抱怨着她要离开这里.\n"))
+                msg += event_color["a little bad contrast"] % (__("警告！") + girl.fullname + __(" 抱怨着她要离开这里。\n"))
 
         # Tired and hurt girls
 
         for girl in MC.girls:
             if girl.tired_check():
-                msg += event_color["a little bad contrast"] % (girl.fullname + " 感到疲惫.\n")
+                msg += event_color["a little bad contrast"] % (girl.fullname + " 感到疲惫。\n")
 
             if girl.exhausted:
-                msg += event_color["bad"] % (girl.fullname + " 累坏了，在充分休息之前不能工作.\n")
+                msg += event_color["bad"] % (girl.fullname + " 累坏了，在充分休息之前不能工作。\n")
 
             if girl.hurt:
-                msg += event_color["bad"] % (girl.fullname + " 受伤了，在恢复健康之前不能工作.\n")
+                msg += event_color["bad"] % (girl.fullname + " 受伤了，在恢复健康之前不能工作。\n")
 
         # News
 
@@ -3992,29 +3992,29 @@ init -3 python:
 #             msg += event_color["special"] % "You are ready to move to a new district.\n\n"
 
         if MC.skill_points > 0:
-            msg += event_color["good"] % "你已经准备好升级了。.\n"
+            msg += event_color["good"] % "你已经准备好升级了。\n"
 
         ready_to_level = sum(1 for girl in MC.girls if girl.upgrade_points >= 1)
         ready_to_perk = sum(1 for girl in MC.girls if girl.perk_points > 0)
 
         if ready_to_level > 1:
-            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n\n")
+            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。\n\n")
         elif ready_to_level > 0:
-            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。.\n\n")
+            msg += event_color["good"] % (str(ready_to_level) + " 位女孩有未分配的技能点。\n\n")
 
         if ready_to_perk > 1:
-            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n\n")
+            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点。\n\n")
         elif ready_to_perk > 0:
-            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点.\n\n")
+            msg += event_color["good"] % (str(ready_to_perk) + " 位女孩有未分配的天赋点。\n\n")
 
         if shop.updated:
-            msg += __("商店进了一批新货，看看有没有你想要的.\n\n")
+            msg += __("商店进了一批新货，看看有没有你想要的。\n\n")
 
         if slavemarket.updated:
-            msg += __("奴隶市场来了一批新的奴隶，快去看看吧.\n\n")
+            msg += __("奴隶市场来了一批新的奴隶，快去看看吧。\n\n")
 
         if quest_board.updated:
-            msg += __("又有新的任务和培训课程发布了.\n\n")
+            msg += __("又有新的任务和培训课程发布了。\n\n")
 
         return msg
 
@@ -4623,7 +4623,7 @@ init -3 python:
         new_mix = renpy.input("输入要创建的混合包的名称")
 
         if new_mix in (persistent.girl_mix.keys()):
-            renpy.notify("{color=[c_red]}[new_mix] 已经存在.{/color}")
+            renpy.notify("{color=[c_red]}[new_mix] 已经存在。{/color}")
         else:
             persistent.girl_mix[new_mix] = []
             persistent.active_mix = new_mix

@@ -1441,7 +1441,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6188
     old "Active contract"
-    new "签订的合同"
+    new "签订的合约"
 
     # game/BKscreens.rpy:6224
     old "Pers. "
@@ -2000,7 +2000,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8198
     old "Choose a contract"
-    new "选择一份合同"
+    new "选择一份合约"
 
     # game/BKscreens.rpy:8207
     old "Fee: %s gold."
@@ -2012,7 +2012,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8243
     old "Tasks"
-    new "任务内容"
+    new "合约内容"
 
     # game/BKscreens.rpy:8252
     old "Bonus requirement"

@@ -28,7 +28,7 @@ translate schinese slavemarket_5ea722bf:
 translate schinese slavemarket_ea2de983:
 
     # headhunter strip1 "Get [game.headhunter_discount] denars off yer first contract!"
-    headhunter strip1 "获得[game.headhunter_discount]金币的首次合同折扣!"
+    headhunter strip1 "获得[game.headhunter_discount]金币的首次合约折扣!"
 
 # game/BKmain.rpy:46
 translate schinese slavemarket_b81bb1bc:
