@@ -92,7 +92,7 @@ label random_morning_events():
             elif ev_type == "obedience":
                 scene black with fade
                 $ room = rand_choice([room.name for room in brothel.get_common_rooms()])
-                show expression "bg " + room at top with dissolve
+                show expression "bg " + bgroom_pics[room] at top with dissolve
 
                 "As you cross the [room] in the morning, you run into [girl.fullname]."
 
@@ -1202,7 +1202,7 @@ label random_night_girl_event(girl, room):
 
         "As the first customers pour into [brothel.name], you decide to check out the {b}tavern{/b} to see how things are going."
 
-        $ renpy.show("bg " + room, at_list = [top])
+        $ renpy.show("bg " + bgroom_pics[room], at_list = [top])
         with dissolve
 
         "As you move among the tables, greeting some regulars, you hear one of the girls scream."
@@ -1540,7 +1540,7 @@ label random_night_girl_event(girl, room):
 
         "You join the customers as they gather inside [brothel.name] and head for the {b}strip club{/b}, where the night is about to get started."
 
-        $ renpy.show("bg " + room, at_list = [top])
+        $ renpy.show("bg " + bgroom_pics[room], at_list = [top])
         with dissolve
 
         "You spot [girl.fullname] as she gets on stage, speaking a few words to usher the customers in."
@@ -1986,7 +1986,7 @@ label random_night_girl_event(girl, room):
 
         "Before [brothel.name]'s big opening, you run a last check on the {b}onsen{/b}, making sure everything is ready for the customers."
 
-        $ renpy.show("bg " + room, at_list = [top])
+        $ renpy.show("bg " + bgroom_pics[room], at_list = [top])
 
         you "Every thing seems to be in order... Wait, who's that?"
 
@@ -2433,7 +2433,7 @@ label random_night_girl_event(girl, room):
     elif room == "okiya":
         "You mix in with the customers as they pour into the {b}okiya{/b}."
 
-        $ renpy.show("bg " + room, at_list = [top])
+        $ renpy.show("bg " + bgroom_pics[room], at_list = [top])
 
         "Those are not the usual riff-raff: they style themselves as gentlemen, looking for refinement and the more elevated pleasures to be found in your whorehouse, such as that of good company."
 
