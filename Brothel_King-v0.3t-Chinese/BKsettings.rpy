@@ -558,7 +558,7 @@ init -10 python:
                          "Neck" : "项链",
                          "neck" : "项链",
 
-                         ## 合同类型 ##
+                         ## 合约类型 ##
                          "Weapon" : "武器",
                          "weapon" : "武器",
                          "Dress" : "服装",
@@ -695,6 +695,13 @@ init -10 python:
                          "fetish" : "调教",
                          "Energy" : "精力",
                          "energy" : "精力",
+
+                         "clean" : "很干净",
+                         "clean enough" : "一尘不染",
+                         "dusty" : "尘土飞扬",
+                         "dirty" : "脏乱不堪",
+                         "disgusting" : "令人作呕",
+                         "fire" : "有火灾风险",
                          }
 
     ## 访问城市界面 ##

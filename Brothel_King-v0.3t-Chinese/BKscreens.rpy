@@ -6190,7 +6190,7 @@ screen postings(qlist):
                     text ""
                     button xfill True xpadding 6 ypadding 6 action Return("active_contract"): # hovered Show("contract_tab", contract=calendar.active_contract, x=450, active=True, transition=Dissolve(0.15)) unhovered Hide("contract_tab", transition=Dissolve(0.15)) tooltip "Show active contract (%s day%s left)." % (28-calendar.day, plural(28-calendar.day)):
                         vbox xfill True:
-                            text "有效合同" size res_font(14) color c_darkbrown xalign 0.5
+                            text "有效合约" size res_font(14) color c_darkbrown xalign 0.5
                             add ProportionalScale("UI/" + license_dict[1][1], *res_tb(50)) xalign 0.5
 
 
@@ -8335,7 +8335,7 @@ screen contract_result(contract, x=450):
         hbox:
             text "Reward: " size res_font(16) bold True color c_prune
 
-            text "%s gold" % min(displayed_gold, earned_gold) size res_font(16) bold True:
+            text "%s 金币" % min(displayed_gold, earned_gold) size res_font(16) bold True:
                 if earned_gold > 0:
                     color c_darkgold
                 else:

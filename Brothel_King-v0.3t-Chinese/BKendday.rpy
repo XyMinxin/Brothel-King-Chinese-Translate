@@ -1081,7 +1081,7 @@ label end_day:
 
     python:
         night_late = NightChangeLog("今日小结", col=c_lightorange)
-        night_late.add("第 %i 年 %i 月 第 %i 天 %s" % (calendar.year, calendar.month, calendar.day, __(calendar.get_weekday())), "header")
+        night_late.add("第 %i 年 %i 月 第 %i 天 %s" % (calendar.year, calendar.month, calendar.day, __(setting_name_dict[calendar.get_weekday()])), "header")
         old_rep = brothel.rep
 
         served = sum(1 for c in customers if c.got_entertainment)
@@ -1246,7 +1246,7 @@ label end_day:
 
         chg = brothel.change_dirt(-1 * brothel.get_maintenance())
 
-        night_late.add("卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="你的青楼 " + brothel.get_cleanliness())
+        night_late.add("卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="你的青楼 " + setting_name_dict[brothel.get_cleanliness()])
         night_late.add("垃圾: %s" % plus_text(log.dirt))
         night_late.add("清洁: %s" % plus_text(chg))
 

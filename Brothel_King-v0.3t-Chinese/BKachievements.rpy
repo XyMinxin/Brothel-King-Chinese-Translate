@@ -106,8 +106,8 @@ init python:
                         Achievement("风驰电掣", "速度达到10。.", pic="Leather boots.webp", pic_path="items/accessory/", target="mc speed"),
 
                         Achievement("漫漫长夜", "一局游戏中，玩“青楼之王”的时间为 %s 游戏月。", pic="calendar.webp", pic_path="UI/", level_nb=5, target="months", requirements={1 : 1, 2 : 3, 3 : 6, 4 : 12, 5 : 24}),
-                        Achievement("衣冠禽兽", "成功完成 %s 份合同。", pic=license_dict[1][1], pic_path="UI/", level_nb=5, target="completed contracts", requirements={1 : 1, 2 : 3, 3 : 6, 4 : 12, 5 : 24}),
-                        Achievement("改弦更张", "在完美完成合同之后卖掉一个女孩。", pic="maid.png", pic_path="NPC/Misc/", target="contract sale"),
+                        Achievement("衣冠禽兽", "成功完成 %s 份合约。", pic=license_dict[1][1], pic_path="UI/", level_nb=5, target="completed contracts", requirements={1 : 1, 2 : 3, 3 : 6, 4 : 12, 5 : 24}),
+                        Achievement("改弦更张", "在完美完成合约之后卖掉一个女孩。", pic="maid.png", pic_path="NPC/Misc/", target="contract sale"),
                         Achievement("任务达人", "完成 %s 份任务。", pic="portrait.webp", pic_path="NPC/Jobgirl/", level_nb=5, target="completed quest", requirements={1 : 5, 2 : 25, 3 : 50, 4 : 100, 5 : 250}),
                         Achievement("变态高中", "完成 %s 个课程。", pic="portrait.webp", pic_path="NPC/Jobgirl/", level_nb=5, target="completed class", requirements={1 : 5, 2 : 25, 3 : 50, 4 : 100, 5 : 250}),
                         Achievement("课业繁重", "用你的女孩塞满课程。", pic="portrait.webp", pic_path="NPC/Sewer girl/", target="filled class"),

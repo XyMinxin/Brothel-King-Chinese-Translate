@@ -2497,19 +2497,19 @@ init -2 python:
         def rest(self, context=None, mod=1):
 
             if context == "farm":
-                resting_changes = NightChangeLog(title="Holding")
+                resting_changes = NightChangeLog(title="关押")
                 resting_text = self.fullname + " 在地牢里休息。"
             else:
-                resting_changes = NightChangeLog(title="Resting")
+                resting_changes = NightChangeLog(title="休息")
                 resting_text = self.fullname + " 在房间里休息。"
 
             if self.hurt > 0:
                 r, case = self.heal(1)
 
-                resting_changes.add("\n{color=[c_green]}Health{/color}: %s" % plus_text(r, color_scheme="standard"))
+                resting_changes.add("\n{color=[c_green]}健康{/color}: %s" % plus_text(r, color_scheme="standard"))
 
                 if case == "healthy":
-                    resting_changes.add("(full recovery)", "header", col="good", separator="\n")
+                    resting_changes.add("(完全康复)", "header", col="good", separator="\n")
                     if context == "farm":
                         resting_text += "\n{color=[c_emerald]}她已经完全康复，可以回去工作或者接受训练了.{/color}"
                     elif self.job:

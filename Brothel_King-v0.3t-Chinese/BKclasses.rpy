@@ -3602,7 +3602,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\n解锁{b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支.")
+                        des += __("\n解锁 {b}") + __(archetype_name_dict[self.archetype]) + __("{/b} 天赋分支.")
 
                 return des
 
@@ -7482,8 +7482,8 @@ init -2 python:
         def get_description(self, base_text): # can be called from outside the Contract object to convert any string (may not be necessary)
             desc = base_text.replace(":ORG:", capitalize(self.organizer))
             desc = desc.replace(":org:", self.organizer)
-            desc = desc.replace(":DIS:", self.district)
-            desc = desc.replace(":dis:", self.district.lower())
+            desc = desc.replace(":DIS:", location_name_dict[self.district])
+            desc = desc.replace(":dis:", location_name_dict[self.district])
             desc = desc.replace(":LOC:", location_name_dict[self.location.name])
             desc = desc.replace(":loc:", location_name_dict[self.location.name])
             desc = desc.replace(":VEN:", capitalize(self.venue))
@@ -7677,7 +7677,7 @@ init -2 python:
                         self.limits[req] = district.rank
 
                     if self.limits[req] <= 0: # Sanity check
-                        raise AssertionError("合同要求阶级: %s (当前阶级: %s)" % (self.limits[req], district.rank))
+                        raise AssertionError("合约要求阶级: %s (当前阶级: %s)" % (self.limits[req], district.rank))
 
                 elif req.startswith("skill"): # Base skill limit is determined by game chapter and diff, +/- 15, with a -20 modifier then -10 for the first and second contract of each chapter.
                     mod = dice(31)-16

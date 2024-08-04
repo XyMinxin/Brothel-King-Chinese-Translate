@@ -66,7 +66,7 @@ label slavemarket:
     if game.has_active_mod("Headhunter Mod"):
         if not slavemarket_firstvisit and slavemarket_firstvisit3:
             $ slavemarket_firstvisit3 = False
-            if renpy.call_screen("yes_no", "去看看这些关于合同的计划是怎么回事？"):
+            if renpy.call_screen("yes_no", "去看看这些关于合约的计划是怎么回事？"):
                 jump headhunter_main
 ############ Jman - Headhunter Mod End ########
 

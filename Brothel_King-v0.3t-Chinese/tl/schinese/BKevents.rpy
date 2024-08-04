@@ -3718,13 +3718,13 @@ translate schinese first_contract_5bd945f6:
 translate schinese first_contract_f4a89bfe:
 
     # jobgirl "Now that you are legit, you can actually take on {b}Contracts{/b} from the rich and powerful."
-    jobgirl "既然你合法了,你就可以从富人和权贵那里接到{b}合同{/b}了。"
+    jobgirl "既然你合法了,你就可以从富人和权贵那里接到{b}合约{/b}了。"
 
 # game/BKevents.rpy:4239
 translate schinese first_contract_3442e17c:
 
     # you "{b}Contracts{/b}?"
-    you "{b}合同{/b}?"
+    you "{b}合约{/b}?"
 
 # game/BKevents.rpy:4241
 translate schinese first_contract_eb0fc054:
@@ -3766,7 +3766,7 @@ translate schinese first_contract_0e006e76:
 translate schinese first_contract_e2d7cf91:
 
     # jobgirl "But you know, contracts are serious commitments. The slavers' guild is not an organization that tolerates failure."
-    jobgirl "不过你要知道,合同是一种严肃的承诺。奴隶工会可不会容忍失败。"
+    jobgirl "不过你要知道,合约是一种严肃的承诺。奴隶工会可不会容忍失败。"
 
 # game/BKevents.rpy:4257
 translate schinese first_contract_2c6d7445:
@@ -3778,37 +3778,37 @@ translate schinese first_contract_2c6d7445:
 translate schinese first_contract_1a08b41a:
 
     # jobgirl "You are limited to one contract a month, guild rules for newbies. Also a good way to avoid too much competition for the guild elders, I guess."
-    jobgirl "作为新手,你每个月只能接一个合同。这也是为了避免与工会长老们产生过多竞争。"
+    jobgirl "作为新手,你每个月只能接一个合约。这也是为了避免与工会长老们产生过多竞争。"
 
 # game/BKevents.rpy:4261
 translate schinese first_contract_31174ccc:
 
     # you "And what exactly are those contracts?"
-    you "这些合同到底是什么?"
+    you "这些合约到底是什么?"
 
 # game/BKevents.rpy:4263
 translate schinese first_contract_c2847837:
 
     # jobgirl "It's very simple. Every month, I will present you with a selection of contracts from the guild. You may choose one as your objective for the month."
-    jobgirl "很简单。每个月,我都会为你带来一些来自工会的合同选择。你可以选择其中一个作为本月的目标。"
+    jobgirl "很简单。每个月,我都会为你带来一些来自工会的合约选择。你可以选择其中一个作为本月的目标。"
 
 # game/BKevents.rpy:4265
 translate schinese first_contract_378a7217:
 
     # jobgirl "Each contract requires a girl completing one or more {b}tasks{/b}. Tasks require specific skills. It's up to you to choose the best girl for the job."
-    jobgirl "每份合同都需要一名女孩完成一项或多项{b}任务{/b}。任务需要特定的技能。由你来选择最合适的女孩完成任务。"
+    jobgirl "每份合约都需要一名女孩完成一项或多项{b}任务{/b}。任务需要特定的技能。由你来选择最合适的女孩完成任务。"
 
 # game/BKevents.rpy:4267
 translate schinese first_contract_0f4a619f:
 
     # jobgirl "After picking a contract, you will have until the end of the month (the 28th) to prepare. When the month ends, you will be able to send one of your girls to complete the contract."
-    jobgirl "选定合同后,你将有一个月的时间(直到28日)进行准备。当月结束时,你就可以派出一名女孩来完成合同。"
+    jobgirl "选定合约后,你将有一个月的时间(直到28日)进行准备。当月结束时,你就可以派出一名女孩来完成合约。"
 
 # game/BKevents.rpy:4269
 translate schinese first_contract_1c0eaf04:
 
     # jobgirl "The contracts offer big payouts... As well as reputation for you and your girl. The customers may also pay extra, if they're happy."
-    jobgirl "这些合同提供丰厚的回报...以及对你和女孩的声誉。如果客户满意,他们也可能会额外支付酬劳。"
+    jobgirl "这些合约提供丰厚的回报...以及对你和女孩的声誉。如果客户满意,他们也可能会额外支付酬劳。"
 
 # game/BKevents.rpy:4271
 translate schinese first_contract_3dd84e45:
@@ -3826,13 +3826,13 @@ translate schinese first_contract_4467d573:
 translate schinese first_contract_98e2d5c7:
 
     # jobgirl "Aw, come on, what's wrong with those contracts? You don't feel up for it?"
-    jobgirl "哎呀,这些合同有什么问题吗?你不想接吗?"
+    jobgirl "哎呀,这些合约有什么问题吗?你不想接吗?"
 
 # game/BKevents.rpy:4285
 translate schinese first_contract_94b6d651:
 
     # jobgirl "Aw, come on, what's wrong with those contracts? You don't feel up for it?" nointeract
-    jobgirl "哎呀,这些合同有什么问题吗?你不想接吗?" nointeract
+    jobgirl "哎呀,这些合约有什么问题吗?你不想接吗?" nointeract
 
 # game/BKevents.rpy:4288
 translate schinese first_contract_1f53645f:
@@ -4018,7 +4018,7 @@ translate schinese new_contract_return_2f6ccb8b:
 translate schinese new_contract_return_155b5b46:
 
     # jobgirl "That's too bad. I'll come back in a month, with new contract opportunities. Next time, I hope we can make a deal!"
-    jobgirl "太遗憾了。我将在一个月后回来,带来新的合同机会。下次,希望我们能达成交易!"
+    jobgirl "太遗憾了。我将在一个月后回来,带来新的合约机会。下次,希望我们能达成交易!"
 
 # game/BKevents.rpy:4463
 translate schinese run_contract_bb10f273:
@@ -4036,19 +4036,19 @@ translate schinese run_contract_9028636b:
 translate schinese run_contract_b541e7e3:
 
     # jobgirl "Unfortunately, not enough of your girls are available for this contract. You missed your chance this time..."
-    jobgirl "很遗憾,你的女孩们不足以完成这份合同。这次你错过了机会..."
+    jobgirl "很遗憾,你的女孩们不足以完成这份合约。这次你错过了机会..."
 
 # game/BKevents.rpy:4479
 translate schinese run_contract_573866b8:
 
     # jobgirl "It's time to choose a girl to send to complete the contract."
-    jobgirl "是时候选择一个女孩去完成这份合同了。"
+    jobgirl "是时候选择一个女孩去完成这份合约了。"
 
 # game/BKevents.rpy:4481
 translate schinese run_contract_cbdff8b2:
 
     # jobgirl "It's time to choose which girls to send to complete the contract."
-    jobgirl "是时候选择哪些女孩去完成这份合同了。"
+    jobgirl "是时候选择哪些女孩去完成这份合约了。"
 
 # game/BKevents.rpy:4602
 translate schinese run_contract_end_9710ada1:
@@ -4084,7 +4084,7 @@ translate schinese run_contract_end_6a99d81e:
 translate schinese run_contract_end_f6139c85:
 
     # "[girl.name] performed poorly, but as she met the organizer's bonus requirement, they reluctantly agreed to refund your contract fee ([con.base_value] gold).\nNevertheless, your reputation suffered."
-    "[girl.name]的表现很差,但由于她满足了组织者的奖金要求,他们勉强同意退还你的合同费([con.base_value]金币)。\n不过,你的声誉受到了损害。"
+    "[girl.name]的表现很差,但由于她满足了组织者的奖金要求,他们勉强同意退还你的合约费([con.base_value]金币)。\n不过,你的声誉受到了损害。"
 
 # game/BKevents.rpy:4651
 translate schinese run_contract_end_c489819d:
@@ -8646,7 +8646,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:4406
     old "No, I'll skip on contracts this month"
-    new "不,这个月我会跳过合同"
+    new "不,这个月我会跳过合约"
 
     # game/BKevents.rpy:5665
     old "Choose what you want [girl.fullname] to do:"
