@@ -3250,7 +3250,7 @@ translate schinese slave_story3_74cedf28:
 translate schinese slave_story3_4e108d83:
 
     # girl.char "They took the rest of us away... I didn't know what fate awaited us."
-    girl.char "他们把我们都带走了....我不知道等待我们的是什么命运。"
+    girl.char "他们把我们都抓走了....我不知道等待我们的是什么命运。"
 
 # game/BKinteractions.rpy:3996
 translate schinese slave_story3_0d9b6a20:
@@ -3262,7 +3262,7 @@ translate schinese slave_story3_0d9b6a20:
 translate schinese slave_story3_2f6861d3:
 
     # "You ask [girl.name] to tell you more about her kidnapping by a raiding party. She seems ready to talk now."
-    "你让[girl.name]告诉你更多关于她被突袭队绑架的事。她现在似乎准备好要说话了。"
+    "你让[girl.name]告诉你更多关于她被袭击者绑架的事。她现在似乎准备好要说话了。"
 
 # game/BKinteractions.rpy:4007
 translate schinese slave_story3_a0bf7ee4:
@@ -3274,7 +3274,7 @@ translate schinese slave_story3_a0bf7ee4:
 translate schinese slave_story3_7c8d0260:
 
     # girl.char "They took the survivors away, chaining us together... They were treating us like a piece of chattel. The bodies of the fallen were left to rot, including my [girl.story_guardian]..."
-    girl.char "They took the survivors away, chaining us together... They were treating us like a piece of chattel. The bodies of the fallen were left to rot, including my [girl.story_guardian]..."
+    girl.char "他们抓走了剩下来的人，把我们关在一起...他们把我们当成货物。死掉的人他们就任由尸体腐烂，我的护卫[girl.story_guardian]也..."
 
 # game/BKinteractions.rpy:4012
 translate schinese slave_story3_bb619bb5:
@@ -3286,13 +3286,13 @@ translate schinese slave_story3_bb619bb5:
 translate schinese slave_story3_314433c9:
 
     # "She starts sobbing again."
-    "她又开始哭泣。"
+    "随后她又开始哭泣。"
 
 # game/BKinteractions.rpy:4017
 translate schinese slave_story3_66d0daae:
 
     # girl.char "Their leader was an evil man, [girl.story_profession_article]... He was always taunting us captives, and mistreating young girls like me... Sometimes he'd take a girl in his tent for the night..."
-    girl.char "他们的领袖是个邪恶的人，[girl.story_profession_article]...。他总是嘲笑我们这些俘虏，虐待像我这样的年轻姑娘....有时他会带一个女孩到他的帐篷里过夜...."
+    girl.char "他们的领袖是个邪恶的人，[girl.story_profession_article]...他总是嘲笑我们这些俘虏，虐待像我这样的年轻姑娘....有时他会带一个女孩到他的帐篷里过夜...."
 
 # game/BKinteractions.rpy:4018
 translate schinese slave_story3_85670843:
@@ -3340,19 +3340,19 @@ translate schinese slave_story3_67addc97:
 translate schinese slave_story3_d536175f:
 
     # girl.char "After his men had ample time to leer and jeer, he told me to get on all fours."
-    girl.char "After his men had ample time to leer and jeer, he told me to get on all fours."
+    girl.char "在他的手下看够了之后，他让我四肢着地趴下。"
 
 # game/BKinteractions.rpy:4033
 translate schinese slave_story3_019fc387:
 
     # girl.char "Again, I had no choice."
-    girl.char "我再一次别无选择。"
+    girl.char "我别无选择。"
 
 # game/BKinteractions.rpy:4035
 translate schinese slave_story3_745f9add:
 
     # girl.char "That's when he brought forward his favorite horse..."
-    girl.char "就在那时，他提出了他最喜欢的马...."
+    girl.char "就在那时，他牵出了他最喜欢的马...."
 
 # game/BKinteractions.rpy:4037
 translate schinese slave_story3_96a70992:
@@ -3370,13 +3370,13 @@ translate schinese slave_story3_7b693942:
 translate schinese slave_story3_5178ed47:
 
     # girl.char "He told me... To pleasure his horse, in front of everyone... Or he would slit my throat."
-    girl.char "他告诉我....为了取悦他的马，在大家面前....否则他会割断我的喉咙。"
+    girl.char "他告诉我....让我在所有人面前给他的马配种....否则他就割断我的喉咙。"
 
 # game/BKinteractions.rpy:4043
 translate schinese slave_story3_b4ed34b8:
 
     # girl.char "I was weak... I didn't want to die..."
-    girl.char "我很软弱....我不想死...."
+    girl.char "我很害怕....我不想死...."
 
 # game/BKinteractions.rpy:4045
 translate schinese slave_story3_8bb00932:
@@ -3388,7 +3388,7 @@ translate schinese slave_story3_8bb00932:
 translate schinese slave_story3_98ddf7e1:
 
     # "She starts crying uncontrollably. You decide to give her a break."
-    "她开始情不自禁地哭起来。你决定让她休息一下。"
+    "她情不自禁地哭起来。你决定让她休息一下。"
 
 # game/BKinteractions.rpy:4056
 translate schinese slave_story3_c7383372:
@@ -3400,7 +3400,7 @@ translate schinese slave_story3_c7383372:
 translate schinese slave_story3_12508aa3:
 
     # "Even though she noticed your presence, she doesn't move from her position. She starts talking absent-mindedly."
-    "即使她注意到你的存在，她也不会离开她的位置。她开始心不在焉地说话。"
+    "即使她注意到你的存在，她也不愿离开床铺。她开始心不在焉地说话。"
 
 # game/BKinteractions.rpy:4060
 translate schinese slave_story3_5cb74dbd:
@@ -3460,7 +3460,7 @@ translate schinese slave_story3_15ac8cb2:
 translate schinese slave_story3_441cfb4a:
 
     # girl.char "Before anyone could react, I ran up to the edge and leapt down. I heard some curses and screams, the rush of wind, and then the water hit me like a wall and everything went blank."
-    girl.char "Before anyone could react, I ran up to the edge and leapt down. I heard some curses and screams, the rush of wind, and then the water hit me like a wall and everything went blank."
+    girl.char "没等别人反应过来，我就跑到悬崖边跳了下去。我听到了咒骂和尖叫声，耳边狂风呼啸，然后我就像撞到坚硬的墙壁一样落到了水中，大脑一片空白。"
 
 # game/BKinteractions.rpy:4081
 translate schinese slave_story3_85cd7df8:
@@ -3496,7 +3496,7 @@ translate schinese slave_story3_69244085:
 translate schinese slave_story3_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我理解。"
 
 # game/BKinteractions.rpy:4097
 translate schinese slave_story3_ecfca602:
@@ -3586,7 +3586,7 @@ translate schinese slave_story3_403c6623:
 translate schinese slave_story3_d94adbdc:
 
     # you "Whaat?"
-    you "Whaat吗？"
+    you "什，什么？"
 
 # game/BKinteractions.rpy:4125
 translate schinese slave_story3_17c69e27:
@@ -3616,13 +3616,13 @@ translate schinese slave_story3_f24fbd54:
 translate schinese slave_story3_86b9e2f9_1:
 
     # girl.char "Whenever I think about it, I get so wet... I wish I had another chance... To do it in public with a stallion, with all eyes on me..."
-    girl.char "Whenever I think about it, I get so wet... I wish I had another chance... To do it in public with a stallion, with all eyes on me..."
+    girl.char "每当我想到它，我就浑身湿透……我希望我还有一次机会……在众目睽睽之下，和一匹种马在公共场合做爱..."
 
 # game/BKinteractions.rpy:4152
 translate schinese slave_story3_1720783e_1:
 
     # girl.char "I have learnt that the son of a bitch who led that raiding party is in town right now... Spending the spoils of his misdeeds. If I could, I would kill him myself, but..."
-    girl.char "I have learnt that the son of a bitch who led that raiding party is in town right now... Spending the spoils of his misdeeds. If I could, I would kill him myself, but..."
+    girl.char "我听说那个领导突袭队的狗娘养的现在就在城里…挥霍他的战利品。如果可以，我会亲手杀了他，但是..."
 
 # game/BKinteractions.rpy:4156
 translate schinese slave_story3_6f5fc28f:
@@ -3634,7 +3634,7 @@ translate schinese slave_story3_6f5fc28f:
 translate schinese slave_story3_d94adbdc_1:
 
     # you "Whaat?"
-    you "Whaat?"
+    you "什，什么？?"
 
 # game/BKinteractions.rpy:4158
 translate schinese slave_story3_17c69e27_1:
@@ -4786,7 +4786,7 @@ translate schinese slave_story5_7023e094:
 translate schinese slave_story5_8fece875:
 
     # girl.char "We'd give them half the jewels if they'd let us go. I mean, wealthy people get let off the hook by the guard all the time like that..."
-    girl.char "We'd give them half the jewels if they'd let us go. I mean, wealthy people get let off the hook by the guard all the time like that..."
+    girl.char "如果他们放我们走，我们就把一半珠宝给他们。我是说，有钱人总是能像这样被警卫放过..."
 
 # game/BKinteractions.rpy:4664
 translate schinese slave_story5_18bb41b2:
@@ -4804,7 +4804,7 @@ translate schinese slave_story5_a003ee03:
 translate schinese slave_story5_b0c1b103:
 
     # girl.char "We begged him, eventually we even told him to take all the jewels and let us be... But he just laughed it off, and his men took us away."
-    girl.char "We begged him, eventually we even told him to take all the jewels and let us be... But he just laughed it off, and his men took us away."
+    girl.char "我们恳求他，最后我们甚至告诉他拿走所有的珠宝，让我们自己……但他只是一笑置之，他的人就把我们带走了。"
 
 # game/BKinteractions.rpy:4670
 translate schinese slave_story5_3a9e8f2b:
@@ -4858,7 +4858,7 @@ translate schinese slave_story5_537f26f9:
 translate schinese slave_story5_ffbadd1b:
 
     # girl.char "Then, he'd take out his cock, and fuck my throat ruthlessly. I couldn't do anything but let him do it..."
-    girl.char "Then, he'd take out his cock, and fuck my throat ruthlessly. I couldn't do anything but let him do it..."
+    girl.char "然后，他会掏出他的鸡巴，狠狠地操我的喉咙。我没办法，只好让他去做..."
 
 # game/BKinteractions.rpy:4690
 translate schinese slave_story5_ccced5a4:
@@ -4918,7 +4918,7 @@ translate schinese slave_story5_d307395d:
 translate schinese slave_story5_265ec471:
 
     # girl.char "One night as we were camping on the way to Zan, I managed to seduce a rookie guard during his night shift. I told him I would be very nice to him, and he untied me so we could go somewhere private..."
-    girl.char "One night as we were camping on the way to Zan, I managed to seduce a rookie guard during his night shift. I told him I would be very nice to him, and he untied me so we could go somewhere private..."
+    girl.char "一天晚上，我们在去赞的路上露营，我设法勾引了一个正在上夜班的新警卫。我告诉他我会对他很好的，他就给我松绑了，这样我们就可以去一个隐蔽的地方了..."
 
 # game/BKinteractions.rpy:4712
 translate schinese slave_story5_9add1070:
@@ -5020,7 +5020,7 @@ translate schinese slave_story5_ef1c0073:
 translate schinese slave_story5_b0ecb5e5_1:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:4749
 translate schinese slave_story5_074d421a:
@@ -5038,7 +5038,7 @@ translate schinese slave_story5_8f0aed18:
 translate schinese slave_story5_a577ad0e:
 
     # you "What?"
-    you "What?"
+    you "什，什么？"
 
 # game/BKinteractions.rpy:4756
 translate schinese slave_story5_ee58330a:
@@ -5074,7 +5074,7 @@ translate schinese slave_story5_e5196964:
 translate schinese slave_story5_96a70992_1:
 
     # you "Oh."
-    you "Oh."
+    you "哦。"
 
 # game/BKinteractions.rpy:4774
 translate schinese slave_story5_ac707e5e:
@@ -5086,7 +5086,7 @@ translate schinese slave_story5_ac707e5e:
 translate schinese slave_story5_3c5c2b7b:
 
     # "She gets teary-eyed."
-    "She gets teary-eyed."
+    "她热泪盈眶。"
 
 # game/BKinteractions.rpy:4776
 translate schinese slave_story5_5040fe38:
@@ -5110,43 +5110,43 @@ translate schinese slave_story5_43358bbd:
 translate schinese slave_story5_8f0aed18_1:
 
     # girl.char "But you know, I still have regrets... Like..."
-    girl.char "But you know, I still have regrets... Like..."
+    girl.char "但是你知道，我仍然有遗憾...就像..."
 
 # game/BKinteractions.rpy:4795
 translate schinese slave_story5_ee58330a_1:
 
     # girl.char "The fucking guard sergeant. I heard he quit the guard and set up shop here, in Zan, enjoying the money from the jewels he stole. I can't forget the nightmare he put me through. I want someone to make his life a nightmare..."
-    girl.char "The fucking guard sergeant. I heard he quit the guard and set up shop here, in Zan, enjoying the money from the jewels he stole. I can't forget the nightmare he put me through. I want someone to make his life a nightmare..."
+    girl.char "那个该死的警卫中士。我听说他辞去了卫兵的职务，在这里开了家店，在赞，享受着他偷珠宝赚来的钱。我无法忘记他带给我的噩梦。我希望有人能让他的生活变成噩梦..."
 
 # game/BKinteractions.rpy:4800
 translate schinese slave_story5_62d914a8_1:
 
     # girl.char "The fucking guard sergeant. He's been enjoying the money from the jewels he stole from us, I'm sure, and I heard he took up business and joined the Zan merchant's guild... The thought of that sucker rolling in gold over the death of my [girl.story_guardian] is driving me crazy..."
-    girl.char "The fucking guard sergeant. He's been enjoying the money from the jewels he stole from us, I'm sure, and I heard he took up business and joined the Zan merchant's guild... The thought of that sucker rolling in gold over the death of my [girl.story_guardian] is driving me crazy..."
+    girl.char "那个该死的警卫中士。我敢肯定，他一直在享受从我们这里偷来的珠宝赚来的钱，我听说他从商了，加入了Zan商人行会...一想到那个混蛋为我[girl.story_guardian]的死赚大钱。快把我逼疯了..."
 
 # game/BKinteractions.rpy:4805
 translate schinese slave_story5_4c0282fd_1:
 
     # girl.char "I... I kind of miss that stupid guard sergeant. He was forcing himself on me, abusing me, fucking my throat... But deep down... You know... I loved it."
-    girl.char "I... I kind of miss that stupid guard sergeant. He was forcing himself on me, abusing me, fucking my throat... But deep down... You know... I loved it."
+    girl.char "我...我有点想念那个愚蠢的警卫中士。他强迫我，虐待我，操我的喉咙...但在内心深处...你知道的...我很喜欢。"
 
 # game/BKinteractions.rpy:4806
 translate schinese slave_story5_284016ad_1:
 
     # girl.char "I can still feel the taste of cum in my mouth, hmmm..."
-    girl.char "I can still feel the taste of cum in my mouth, hmmm..."
+    girl.char "我嘴里还能感觉到精液的味道，emmmm..."
 
 # game/BKinteractions.rpy:4811
 translate schinese slave_story5_e5196964_1:
 
     # girl.char "That poor guy... The [girl.story_profession]."
-    girl.char "That poor guy... The [girl.story_profession]."
+    girl.char "那个可怜的家伙... [girl.story_profession]。"
 
 # game/BKinteractions.rpy:4812
 translate schinese slave_story5_43358bbd_1:
 
     # girl.char "I can't make up for what I did, I know... But at least I could set up an altar for him at the Cathedra. Maybe then, Arios could shine his Light on him, and on his loved ones..."
-    girl.char "I can't make up for what I did, I know... But at least I could set up an altar for him at the Cathedra. Maybe then, Arios could shine his Light on him, and on his loved ones..."
+    girl.char "我无法弥补我所做的，我知道…但至少我可以在大教堂为他建一个祭坛。也许到那时，阿里奥斯就能把他的光照耀在他身上，照耀在他所爱的人身上..."
 
 # game/BKinteractions.rpy:4827
 translate schinese slave_story6_8a06ad2f:
@@ -5206,7 +5206,7 @@ translate schinese slave_story6_e3960693:
 translate schinese slave_story6_e2f943f7:
 
     # you "Sill has many things to take care of, you should cut her a little slack. This is not a 5-star inn, all right?"
-    you "Sill has many things to take care of, you should cut her a little slack. This is not a 5-star inn, all right?"
+    you "她还有很多事情要处理，你应该放她一马。这不是五星级酒店，好吗?"
 
 # game/BKinteractions.rpy:4849
 translate schinese slave_story6_fbf00f5d:
@@ -5320,7 +5320,7 @@ translate schinese slave_story6_9bb09cb7:
 translate schinese slave_story6_e232fb8d:
 
     # you "Oh, really? Perhaps you are used to having a fleet of white-gloved servants looking after your every need?"
-    you "Oh, really? Perhaps you are used to having a fleet of white-gloved servants looking after your every need?"
+    you "哦,真的吗?也许你已经习惯了有一队戴着白手套的仆人为你效劳?"
 
 # game/BKinteractions.rpy:4881
 translate schinese slave_story6_9c697c16:
@@ -5392,7 +5392,7 @@ translate schinese slave_story6_9316a048:
 translate schinese slave_story6_8235cf51:
 
     # "She looks sad."
-    "She looks sad."
+    "她看起来很悲伤。"
 
 # game/BKinteractions.rpy:4900
 translate schinese slave_story6_e62cef3c:
@@ -5566,7 +5566,7 @@ translate schinese slave_story6_9facbb8e:
 translate schinese slave_story6_3900c296:
 
     # you "What happened?"
-    you "What happened?"
+    you "发生什么事了?"
 
 # game/BKinteractions.rpy:4941
 translate schinese slave_story6_8c41578f:
@@ -5578,7 +5578,7 @@ translate schinese slave_story6_8c41578f:
 translate schinese slave_story6_f3f306c5:
 
     # girl.char "'Marrying for love is only good for farmhands', everyone told me. A lady had to marry up."
-    girl.char "'Marrying for love is only good for farmhands', everyone told me. A lady had to marry up."
+    girl.char "每个人都对我说:“为爱结婚只对农人有好处。”一位女士必须嫁得高一些。"
 
 # game/BKinteractions.rpy:4943
 translate schinese slave_story6_2f2a5c53:
@@ -5608,7 +5608,7 @@ translate schinese slave_story6_ef3e9e22:
 translate schinese slave_story6_b0ecb5e5:
 
     # you "I see."
-    you "I see."
+    you "我知道了。"
 
 # game/BKinteractions.rpy:4949
 translate schinese slave_story6_cf985093:
