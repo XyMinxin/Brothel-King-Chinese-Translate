@@ -10,7 +10,7 @@ translate schinese free_girl_interact_a16803aa:
 translate schinese free_girl_interact_cb168c77:
 
     # "You do not have any interactions left for today."
-    "你今天没有任何互动了。"
+    "你耗尽了今天的行动力。"
 
 # game/BKinteractions_free.rpy:62
 translate schinese free_girl_talk_e589ac84:
@@ -28,13 +28,13 @@ translate schinese free_girl_talk_11fdb519:
 translate schinese free_girl_talk_78546b2e:
 
     # you "Greetings, my lady. They call me [MC.name], your humble servant. Is there anything I can do to help?"
-    you "你好，我的夫人。他们叫我[MC.name]，你卑微的仆人。有什么我能帮忙的吗？"
+    you "你好，尊贵的女士。他们都叫我[MC.name]，作为你卑微的仆人。有什么我能帮忙的吗？"
 
 # game/BKinteractions_free.rpy:81
 translate schinese free_girl_talk_6030b19a:
 
     # you "Oh, hi there! I'm [MC.name]. Who are you?"
-    you "哦，你好！我叫[MC.name]。你是谁？"
+    you "哦，你好！我叫[MC.name]。敢问尊姓大名？"
 
 # game/BKinteractions_free.rpy:91
 translate schinese free_girl_talk_37f1d822:
@@ -58,19 +58,19 @@ translate schinese free_chat_life_d4054e47:
 translate schinese free_chat_love_460d2a5f:
 
     # you "Love. What do you think about it?"
-    you "你对爱情是怎么看的？"
+    you "你对“爱情”是怎么看的？"
 
 # game/BKinteractions_free.rpy:234
 translate schinese free_chat_origins_c0fe7221:
 
     # you "Where are you from?"
-    you "你是哪里人？"
+    you "你的家乡在哪里？"
 
 # game/BKinteractions_free.rpy:244
 translate schinese free_chat_hobbies_b2220c8f:
 
     # you "What do you like to do with your free time?"
-    you "你空闲时间喜欢做什么？"
+    you "你闲暇之余喜欢做些什么？"
 
 # game/BKinteractions_free.rpy:258
 translate schinese free_chat_likes_741f0d80:
@@ -82,7 +82,7 @@ translate schinese free_chat_likes_741f0d80:
 translate schinese free_chat_dislikes_7cc4a8c3:
 
     # you "Is there anything you dislike?"
-    you "她讨厌什么？"
+    you "你有什么讨厌的东西吗？"
 
 # game/BKinteractions_free.rpy:288
 translate schinese free_joke_harmless_9f482d04:
@@ -118,13 +118,13 @@ translate schinese free_touch_hand_4ba8cd0a:
 translate schinese free_touch_kiss_4730e528:
 
     # "Bringing your face closer, you lean in to kiss her."
-    "你把脸凑得更近些，倾身去吻她。"
+    "你把脸凑得更近些，弯下身子与她深吻。"
 
 # game/BKinteractions_free.rpy:356
 translate schinese free_touch_ass_f3ff0791:
 
     # "*smack*" with vpunch
-    "* *味道" with vpunch
+    "*猛击*" with vpunch
 
 # game/BKinteractions_free.rpy:366
 translate schinese free_touch_breasts_72997f94:
@@ -142,13 +142,13 @@ translate schinese free_touch_pussy_da057d9a:
 translate schinese free_play_8ef1b8f4:
 
     # "Taking her by the hand, you lead her around a corner."
-    "你牵着她的手，带她拐过一个弯。"
+    "你牵着她的手，带她拐过一个转角。"
 
 # game/BKinteractions_free.rpy:474
 translate schinese free_play_a784fb2c:
 
     # you "Come here... [text1]"
-    you "来这里....[text1]"
+    you "到这里来....[text1]"
 
 # game/BKinteractions_free.rpy:497
 translate schinese free_play_1bf1c011:
@@ -166,7 +166,7 @@ translate schinese free_play_030686f5:
 translate schinese free_play_a5a00ee0:
 
     # "You have taken [girl.name]'s virginity... You earn extra prestige."
-    "你夺走了[girl.name]的贞操....你赢得了额外的威望。"
+    "你夺走了[girl.name]的贞操....你赢得了额外的声望。"
 
 # game/BKinteractions_free.rpy:537
 translate schinese free_flirt_beauty_f0a506af:
@@ -238,7 +238,7 @@ translate schinese free_flirt_sex_tastes_be9561ba:
 translate schinese free_flirt_sex_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你已经发现[girl.name]对[fix.name]的迷恋。"
+    "你发现[girl.name]痴迷[fix.name]。"
 
 # game/BKinteractions_free.rpy:696
 translate schinese free_flirt_sex_tastes_be25caff:
@@ -274,7 +274,7 @@ translate schinese free_flirt_sex_tastes_2c0cf15f:
 translate schinese free_flirt_sex_tastes_be25caff_1:
 
     # "She blushes as she whispers something to you."
-    "She blushes as she whispers something to you."
+    "她对你耳语时脸红了。"
 
 # game/BKinteractions_free.rpy:737
 translate schinese free_flirt_sex_tastes_fa9f12d0:
@@ -298,19 +298,19 @@ translate schinese free_flirt_sex_tastes_0bf58f12:
 translate schinese free_give_gold_a74bdb77:
 
     # you "I want you to have this." nointeract
-    you "我想给你这个。"
+    you "收下这个吧。"
 
 # game/BKinteractions_free.rpy:925
 translate schinese free_offer_job_f1898032:
 
     # you "[girl.name], I think I have found a solution to your problem."
-    you "[girl.name]，我想我已经找。到解决你问题的方法了"
+    you "[girl.name]，我想我已经找到解决问题的方法了。"
 
 # game/BKinteractions_free.rpy:927
 translate schinese free_offer_job_fbd5a008:
 
     # girl.char "What? You have?"
-    girl.char "What? You have?"
+    girl.char "什么? 真的吗?"
 
 # game/BKinteractions_free.rpy:929
 translate schinese free_offer_job_34d59088:
@@ -322,43 +322,43 @@ translate schinese free_offer_job_34d59088:
 translate schinese free_offer_job_1f1f7406:
 
     # girl.char "With you? At the brothel?"
-    girl.char "与你吗？在青楼？"
+    girl.char "为你工作吗？在青楼？"
 
 # game/BKinteractions_free.rpy:941
 translate schinese free_offer_job_0f648f47:
 
     # girl.char "Work for you? I thought you were a freelance [MC.playerclass]?"
-    girl.char "为你工作？我以为你是自由职业者或着说是[MC.playerclass]？"
+    girl.char "为你工作？我以为你是自由职业者或者说是[MC.playerclass]？"
 
 # game/BKinteractions_free.rpy:943
 translate schinese free_offer_job_fadbfad2:
 
     # you "Well, this isn't the whole truth... You see, I also have a business on the side."
-    you "这不是全部的真相....你看，我也有个副业。"
+    you "那只是我其中一个职业....你看，我还有其他副业。"
 
 # game/BKinteractions_free.rpy:945
 translate schinese free_offer_job_0aa8868a:
 
     # girl.char "What... What do you mean?"
-    girl.char "什么....你什么意思？"
+    girl.char "什么....你是什么意思？"
 
 # game/BKinteractions_free.rpy:947
 translate schinese free_offer_job_34d3075e:
 
     # you "Well I, uh, own a cathouse..."
-    you "好吧，我，呃，我有一间青楼...."
+    you "好吧，我，呃，我经营着一家青楼...."
 
 # game/BKinteractions_free.rpy:949
 translate schinese free_offer_job_22fca1c1:
 
     # girl.char "A brothel? You're a brothel owner?"
-    girl.char "青楼？你是青楼老板？"
+    girl.char "青楼？你是个皮条客？"
 
 # game/BKinteractions_free.rpy:955
 translate schinese free_offer_job_454bf4d6:
 
     # girl.char "Work for you? Oh yes, I forgot, you're [girl.MC_lied]!"
-    girl.char "为你工作？哦，是的，我忘了，你是[girl.MC_lied]！"
+    girl.char "为你工作？哦，当然，我都忘了你是个[girl.MC_lied]！"
 
 # game/BKinteractions_free.rpy:957
 translate schinese free_offer_job_99f64913:
@@ -370,7 +370,7 @@ translate schinese free_offer_job_99f64913:
 translate schinese free_offer_job_62838043:
 
     # girl.char "This is great! We can be together, and I will be safe, get money..."
-    girl.char "这太棒了！我们可以在一起，我会安全的赚钱...."
+    girl.char "太棒了！我们可以在一起，我们可以赚到很多钱，没有后顾之忧...."
 
 # game/BKinteractions_free.rpy:961
 translate schinese free_offer_job_3919bea6:
@@ -382,25 +382,25 @@ translate schinese free_offer_job_3919bea6:
 translate schinese free_offer_job_bf3b5fe9:
 
     # girl.char "I don't like that look... What do you mean?"
-    girl.char "我不喜欢那个样子....你什么意思？"
+    girl.char "我没听明白....你是什么意思？"
 
 # game/BKinteractions_free.rpy:965
 translate schinese free_offer_job_7a9bc975:
 
     # you "I'm afraid I didn't tell you the truth. I'm not [girl.MC_lied], I'm a pimp. I own a brothel in town."
-    you "恐怕我没有告诉你真相。我不是[girl.MC_lied]。我是个皮条客。我在城里有一家青楼。"
+    you "很遗憾我撒了个小谎。我不是[girl.MC_lied]。我是个皮条客。我在城里经营着一家青楼。"
 
 # game/BKinteractions_free.rpy:969
 translate schinese free_offer_job_22570b4f:
 
     # you "Of course. The sex trade is hard work, but it has its perks, you know... Flexible schedule, good money, round-the-clock protection..."
-    you "当然可以。性交易是一项艰辛的工作，但它也有它的好处，你知道的....灵活的时间安排，大笔的票子，24小时的保护...."
+    you "当然可以。性交易是一项艰辛的工作，但它也有它的好处，你知道的....灵活的时间安排，大笔的钞票，二十四小时都有人保护...."
 
 # game/BKinteractions_free.rpy:971
 translate schinese free_offer_job_d6f8dcb1:
 
     # you "You could also just be a waitress, or a dancer... It's not so bad."
-    you "你也可以只是一个服务员，或者一个舞者....没那么糟。"
+    you "你也可以只做一个服务员，或者一个舞女....没你想得那么糟。"
 
 # game/BKinteractions_free.rpy:973
 translate schinese free_offer_job_7470d1cd:
@@ -424,7 +424,7 @@ translate schinese free_offer_job_3deaa338:
 translate schinese free_offer_job_9b065dc1:
 
     # you "You would have to sign a temporary slave contract. As you know, only sex slaves are allowed in the city's brothels. [text1]"
-    you "You would have to sign a temporary slave contract. As you know, only sex slaves are allowed in the city's brothels. [text1]"
+    you "你得签一份临时的奴隶合同。众所周知，只有性奴才能进入泽恩的青楼。 [text1]"
 
 # game/BKinteractions_free.rpy:996
 translate schinese free_offer_job_e6dd36fa:
@@ -442,43 +442,43 @@ translate schinese free_offer_job_c1da3d17:
 translate schinese free_offer_job_14135656:
 
     # you "It is decided then. Take your things and come with me. I will have you magically branded..."
-    you "那就决定了。带上你的东西跟我走。我会用魔法给你打上烙印...."
+    you "那就这么说定。带上你的行李跟我走。我会用魔法给你打上烙印...."
 
 # game/BKinteractions_free.rpy:1010
 translate schinese free_offer_job_f193dbbc:
 
     # "[girl.fullname] has become one of your girls."
-    "[girl.fullname]已经成为你家青楼的姑娘了。"
+    "[girl.fullname]加入了你的青楼，成为了你的员工。"
 
 # game/BKinteractions_free.rpy:1037
 translate schinese free_girl_friend_4932d6c2:
 
     # girl.char "We've known each other for a little while now. Let's be friends!"
-    girl.char "我们认识已经有一段时间了。让我们成为朋友！"
+    girl.char "我们认识已经有一段时间了。我觉得我们算得上是好朋友了！"
 
 # game/BKinteractions_free.rpy:1039
 translate schinese free_girl_friend_2b79fa34:
 
     # you "Okay, sure!"
-    you "好的，当然可以！"
+    you "当然，我们是朋友！"
 
 # game/BKinteractions_free.rpy:1041
 translate schinese free_girl_friend_5b08bc1c:
 
     # girl.char "But there's one thing I'd like to know... You never told me about your job. What do you do?"
-    girl.char "但是有一件事我想知道....你从来没告诉过我你的工作。你是做什么的？"
+    girl.char "但是有一件事我很好奇....你从来没告诉过我你的工作。你是做什么的？"
 
 # game/BKinteractions_free.rpy:1053
 translate schinese free_girl_friend_4ae3b4ce:
 
     # you "I own a brothel in town. I'm a pimp."
-    you "我在城里有一家青楼。我是一个皮条客。"
+    you "我在城里有开了一家青楼。我是一个皮条客。"
 
 # game/BKinteractions_free.rpy:1063
 translate schinese free_girl_friend_6b44ee2f:
 
     # you "Well, er, I'm a [MC.playerclass] freshly arrived in Zan. I'm considering a career change though..."
-    you "呃，我是[MC.playerclass]，刚到瓒城。不过我在考虑换工作...."
+    you "呃，我是个[MC.playerclass]，刚到泽恩。不过我在考虑换份工作...."
 
 # game/BKinteractions_free.rpy:1076
 translate schinese free_girl_friend_6bb62131:
@@ -490,13 +490,13 @@ translate schinese free_girl_friend_6bb62131:
 translate schinese free_girl_friend_d163c101:
 
     # you "I'm {b}[lie]{/b}!"
-    you "我是{b}[lie]{/b}！"
+    you "我是个{b}[lie]{/b}！"
 
 # game/BKinteractions_free.rpy:1088
 translate schinese free_girl_friend_18df221b:
 
     # "You and [girl.fullname] are now friends."
-    "你和[girl.fullname]现在是朋友了。"
+    "你和[girl.fullname]成为了朋友。"
 
 # game/BKinteractions_free.rpy:1097
 translate schinese free_girl_love_interest_30b2e2bd:
@@ -514,13 +514,13 @@ translate schinese free_girl_love_interest_f9f9e0e2:
 translate schinese free_girl_love_interest_7afc2f4f:
 
     # girl.char "Anyway. Let's get out of here."
-    girl.char "无论如何。让我们离开这里。"
+    girl.char "总之，先换个地方再说。"
 
 # game/BKinteractions_free.rpy:1109
 translate schinese free_girl_love_interest_49509bfb:
 
     # "You may now bring [girl.fullname] {b}flowers{/b} to express your interest."
-    "你现在可以送[girl.fullname]{b}鲜花{/b}表示您的情趣了。"
+    "你现在可以送[girl.fullname]{b}鲜花{/b}表示您的爱意了。"
 
 # game/BKinteractions_free.rpy:1127
 translate schinese free_girl_girlfriend_f9b32ba6:
@@ -538,25 +538,25 @@ translate schinese free_girl_girlfriend_d9a9b5f7:
 translate schinese free_girl_girlfriend_ace96f2d:
 
     # girl.char "Do you remember where I come from?"
-    girl.char "你还记得我来自哪里吗？"
+    girl.char "你还记得我的家乡在哪里吗？"
 
 # game/BKinteractions_free.rpy:1219
 translate schinese free_girl_girlfriend_d9a9b5f7_1:
 
     # you "I just don't know. Sorry."
-    you "I just don't know. Sorry."
+    you "我记得不太清楚了，对不起。"
 
 # game/BKinteractions_free.rpy:1238
 translate schinese free_girl_girlfriend_f64defce:
 
     # girl.char "Do you remember what is my [type] [thing]?"
-    girl.char "你还记得我[type]的[thing]是什么？"
+    girl.char "你还记得我[type]的[thing]是什么吗？"
 
 # game/BKinteractions_free.rpy:1311
 translate schinese free_girl_girlfriend_d9a9b5f7_2:
 
     # you "I just don't know. Sorry."
-    you "I just don't know. Sorry."
+    you "我记得不太清楚了，对不起。"
 
 # game/BKinteractions_free.rpy:1322
 translate schinese free_girl_girlfriend_a7e1a2bd:
@@ -592,105 +592,43 @@ translate schinese free_girl_girlfriend_7a9a86f9:
 translate schinese free_girl_job_request_09b64180:
 
     # "[girl.name] rushes to you, looking worried."
-    "[girl.name] rushes to you, looking worried."
+    "[girl.name]冲到你的怀里,看起来很焦急。"
 
 # game/BKinteractions_free.rpy:1373
 translate schinese free_girl_job_request_6e831c52:
 
     # "You can now offer [girl.fullname] a job."
-    "你现在可以提供[girl.fullname]一份工作。"
+    "你现在可以说服[girl.fullname]为你工作。"
 
 # game/BKinteractions_free.rpy:1382
 translate schinese free_try_interact_5a0b5e85:
 
     # "You can only give a girl money once per day."
-    "你每天只能给一个女孩一次钱。"
+    "一天内最多赠予同一个女孩一次金币。"
 
 # game/BKinteractions_free.rpy:1385
 translate schinese free_try_interact_282713e1:
 
     # "You can only give a girl one present per day."
-    "你每天只能给一个女孩一件礼物。"
+    "一天内最多给同一个女孩送一件礼物。"
 
 # game/BKinteractions_free.rpy:1389
 translate schinese free_try_interact_1e166279:
 
     # "You cannot offer her work as long as your brothel is full."
-    "只要你的青楼满员，你就不能给她提供工作。"
+    "如果你的青楼容纳不下更多女孩，你就无法让她为你工作。"
 
 # game/BKinteractions_free.rpy:1392
 translate schinese free_try_interact_3e97d836:
 
     # "You cannot offer her work again today."
-    "你今天不能再给她提供工作了。"
+    "你今天不能再劝她为你工作了。"
 
 # game/BKinteractions_free.rpy:1395
 translate schinese free_try_interact_d2a06ca2:
 
     # "You cannot do the same action with a girl more than 3 times a day."
-    "你不能一天对一个女孩做同样的动作超过3次。"
-
-translate schinese strings:
-
-    # game/BKinteractions_free.rpy:64
-    old "Greetings"
-    new "你好，打扰一下（友好）"
-
-    # game/BKinteractions_free.rpy:64
-    old "Hi there"
-    new "嗨，你好（随意）"
-
-    # game/BKinteractions_free.rpy:64
-    old "Hey, sexy"
-    new "嘿！美女（调戏）"
-
-    # game/BKinteractions_free.rpy:593
-    old "What do you tell her?"
-    new "你打算跟她聊点什么？"
-
-    # game/BKinteractions_free.rpy:593
-    old "I'm waiting for the right person"
-    new "我正在等待合适的人"
-
-    # game/BKinteractions_free.rpy:593
-    old "I haven't been with many girls"
-    new "我没怎么和女孩交往过"
-
-    # game/BKinteractions_free.rpy:593
-    old "I've been around"
-    new "我谈过的应该不算少吧"
-
-    # game/BKinteractions_free.rpy:593
-    old "I'm a sex god"
-    new "我是性爱之神"
-
-    # game/BKinteractions_free.rpy:593
-    old "I'm a brothel owner, so..."
-    new "我是青楼老板，所以...."
-
-    # game/BKinteractions_free.rpy:858
-    old "[tip_range[0]] gold"
-    new "[tip_range[0]]枚金币"
-
-    # game/BKinteractions_free.rpy:858
-    old "[tip_range[1]] gold"
-    new "[tip_range[1]]枚金币"
-
-    # game/BKinteractions_free.rpy:858
-    old "[tip_range[2]] gold"
-    new "[tip_range[2]]枚金币"
-
-    # game/BKinteractions_free.rpy:858
-    old "[tip_range[3]] gold"
-    new "[tip_range[3]]枚金币"
-
-    # game/BKinteractions_free.rpy:1043
-    old "Tell a half lie"
-    new "半真半假"
-
-    # game/BKinteractions_free.rpy:1043
-    old "Outright lying"
-    new "瞎掰"
+    "一天内最多和同一个女孩互动3次。"
 
 # TODO: Translation updated at 2024-07-31 02:24
 
@@ -704,25 +642,25 @@ translate schinese free_girl_talk_5b9edd39:
 translate schinese free_girl_talk_98cedbca:
 
     # you "嗨你好! 我叫 [MC.name]. 你叫什么名字?"
-    you "嗨你好! 我叫 [MC.name]. 你叫什么名字?"
+    you "嗨你好! 我叫 [MC.name]。 你叫什么名字?"
 
 # game/BKinteractions_free.rpy:91
 translate schinese free_girl_talk_9a5e260a:
 
     # you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]. 你叫什么名字，宝贝?"
-    you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]. 你叫什么名字，宝贝?"
+    you "哦天呐，瞧瞧这火辣的身材... 你可真性感! 我是 [MC.name]。 你叫什么名字，宝贝?"
 
 # game/BKinteractions_free.rpy:1126
 translate schinese free_girl_girlfriend_f7432d7f:
 
     # girl.char "Can you name one of my hobbies?"
-    girl.char "Can you name one of my hobbies?"
+    girl.char "你能说出我的一个兴趣爱好吗?"
 
 # game/BKinteractions_free.rpy:1234
 translate schinese free_girl_girlfriend_0ee8c7a2:
 
     # girl.char "Do you remember what is my [_type] [thing]?"
-    girl.char "Do you remember what is my [_type] [thing]?"
+    girl.char "你还记得我[_type]的[thing]吗?"
 
 translate schinese strings:
 
@@ -776,11 +714,11 @@ translate schinese strings:
 
     # game/BKinteractions_free.rpy:593
     old "我是个情场老手，妇女之友~"
-    new "我是个情场老手，妇女之友~"
+    new "我是个情场老手，女性之友~"
 
     # game/BKinteractions_free.rpy:593
     old "我御女无数，没人比我经验丰富"
-    new "我御女无数，没人比我经验丰富"
+    new "我御女无数，没人比我经验更丰富"
 
     # game/BKinteractions_free.rpy:593
     old "我经营着一家青楼, 你懂的..."
@@ -792,7 +730,7 @@ translate schinese strings:
 
     # game/BKinteractions_free.rpy:719
     old "你知道是什么让我对 %s厌恶吗?"
-    new "你知道是什么让我对 %s厌恶吗?"
+    new "你知道是什么让我对%s感到厌恶吗?"
 
     # game/BKinteractions_free.rpy:858
     old "[tip_range[0]] 金币"
@@ -812,11 +750,11 @@ translate schinese strings:
 
     # game/BKinteractions_free.rpy:1042
     old "坦白真相"
-    new "坦白真相"
+    new "如实相告"
 
     # game/BKinteractions_free.rpy:1042
     old "半真半假"
-    new "半真半假"
+    new "含糊其辞"
 
     # game/BKinteractions_free.rpy:1042
     old "撒个小谎"

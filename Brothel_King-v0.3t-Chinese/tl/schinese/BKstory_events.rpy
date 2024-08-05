@@ -21658,7 +21658,7 @@ translate schinese satella_game_db54b968:
 translate schinese satella_game_e3576188:
 
     # "Thing in the darkness" "*mad roar*" with vpunch
-    "Thing in the darkness" "*愤怒的咆哮*" with vpunch
+    "黑暗中的东西" "*愤怒的咆哮*" with vpunch
 
 # game/BKstory_events.rpy:11233
 translate schinese satella_game_42a59978:
