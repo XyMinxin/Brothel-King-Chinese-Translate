@@ -387,7 +387,7 @@ label free_play(girl):
 
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
-        $ text1 =  "你为什么不为我脱光衣服呢，宝贝？"
+        $ text1 =  "为什么不把这些碍事的衣服都脱掉呢，宝贝？"
 
         $ snd = s_equip_dress
 
@@ -406,13 +406,13 @@ label free_play(girl):
         if pic.has_tag("mast"):
             $ text1 = "我想让你给我手交。"
         elif pic.has_tag("titjob"):
-            $ text1 = "我想操你那对漂亮的奶子。"
+            $ text1 = "用你的奶子夹住我的肉棒。"
         elif pic.has_tag("footjob"):
-            $ text1 = "你为什么不用你的脚给我打飞机呢？"
+            $ text1 = "用你的玉足帮我撸出来。"
         elif pic.has_tag("oral"):
-            $ text1 = "我想让你为我口交。"
+            $ text1 = "用你的小嘴帮我清理肉棒。"
         elif pic.has_tag("handjob"):
-            $ text1 = "我想让你给我打手枪。"
+            $ text1 = "用你的手帮我撸出来。"
         else:
             $ text1 = "我希望你能取悦我。"
 
@@ -442,7 +442,7 @@ label free_play(girl):
 
         $ diff = 80
 
-        $ text1 = "我想操你的屁股。"
+        $ text1 = "我想插入你的菊穴。"
 
         $ snd = s_orgasm_fast
 
@@ -459,7 +459,7 @@ label free_play(girl):
 
         $ diff = 82
 
-        $ text1 = "跪下来，准备好接受主人的鞭打。"
+        $ text1 = "跪下，准备好接受主人的鞭打。"
 
         $ snd = s_screams
 
