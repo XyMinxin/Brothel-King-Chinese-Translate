@@ -2473,7 +2473,7 @@ label cheat_menu():
                         for tag in tag_dict.keys():
                             for tag2 in tag_dict.keys():
                                 if tag in tag2 and tag != tag2:
-                                    renpy.say("", "Warning: " + tag + " is in " + tag2 + ".")
+                                    renpy.say("", "Warning: " + tag + " is in " + tag2 + "。")
                 "返回上一级菜单":
                     jump cheat_menu
         "其他作弊功能":
@@ -3000,7 +3000,7 @@ label test_perks_launch:
                             else:
                                 c = Customer(endless_district)
                             cust_list.append(c)
-                            log.add_report(c.name + " came to the brothel. He wants to be attended to by a " + c.wants_entertainment + " and likes " + c.wants_sex_act + ".")
+                            log.add_report(c.name + " came to the brothel. He wants to be attended to by a " + c.wants_entertainment + " and likes " + c.wants_sex_act + "。")
 
                         if girl.job in all_jobs:
                             event_list += perform(girl.job, (girl,), cust_list)

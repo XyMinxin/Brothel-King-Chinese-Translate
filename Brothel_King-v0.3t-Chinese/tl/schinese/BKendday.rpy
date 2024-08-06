@@ -130,7 +130,7 @@ translate schinese strings:
 
     # game/BKendday.rpy:1366
     old ", breaking even. You made {image=img_gold_24} {b}0{/b}."
-    new ", breaking even. You made {image=img_gold_24} {b}0{/b}."
+    new ", breaking even. You made {image=img_gold_24} {b}0{/b}。"
 
 # TODO: Translation updated at 2024-07-31 02:24
 
@@ -146,7 +146,7 @@ translate schinese strings:
 
     # game/BKendday.rpy:619
     old " 今天的工作是 "
-    new " 今天的工作是 "
+    new "今天的工作是"
 
     # game/BKendday.rpy:631
     old " 拒绝工作!{/color} "
@@ -182,11 +182,11 @@ translate schinese strings:
 
     # game/BKendday.rpy:1028
     old "\n她拒绝使用 "
-    new "\n她拒绝使用 "
+    new "\n她拒绝使用"
 
     # game/BKendday.rpy:1273
     old "你支付了 "
-    new "你支付了 "
+    new "你支付了"
 
     # game/BKendday.rpy:1273
     old " 金币作为女孩的薪水。"
@@ -198,7 +198,7 @@ translate schinese strings:
 
     # game/BKendday.rpy:1280
     old ".\nY你支付了 "
-    new ".\nY你支付了 "
+    new ".\nY你支付了"
 
     # game/BKendday.rpy:1280
     old " 金币作为员工工资。"
@@ -206,7 +206,7 @@ translate schinese strings:
 
     # game/BKendday.rpy:1284
     old " 暂停营业，所以你让保安和宣传人员回去了。你支付了 "
-    new " 暂停营业，所以你让保安和宣传人员回去了。你支付了 "
+    new " 暂停营业，所以你让保安和宣传人员回去了。你支付了"
 
     # game/BKendday.rpy:1284
     old "金币作为青楼的开销。"
@@ -214,7 +214,7 @@ translate schinese strings:
 
     # game/BKendday.rpy:1299
     old "\n你的女孩赚到了 {image=img_gold_24} "
-    new "\n你的女孩赚到了 {image=img_gold_24} "
+    new "\n你的女孩赚到了{image=img_gold_24}"
 
     # game/BKendday.rpy:1302
     old "盈利: {image=img_gold_24} "
@@ -230,13 +230,13 @@ translate schinese strings:
 
     # game/BKendday.rpy:1362
     old ", 获得利润  {image=img_gold_24} {b}"
-    new ", 获得利润  {image=img_gold_24} {b}"
+    new ", 获得利润 {image=img_gold_24} {b}"
 
     # game/BKendday.rpy:1364
     old ", 入不敷出。你亏损了 {image=img_gold_24} {b}"
-    new ", 入不敷出。你亏损了 {image=img_gold_24} {b}"
+    new ", 入不敷出。你亏损了{image=img_gold_24} {b}"
 
     # game/BKendday.rpy:1366
     old "，收支平衡。你盈利了 {color=[c_red]}{b}0{/b} 金币{/color}。"
-    new "，收支平衡。你盈利了 {color=[c_red]}{b}0{/b} 金币{/color}。"
+    new "，收支平衡。你盈利了{color=[c_red]}{b}0{/b}金币{/color}。"
 

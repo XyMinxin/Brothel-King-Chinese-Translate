@@ -2145,23 +2145,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:413
     old "行动力: 你今天还能行动的次数."
-    new "行动力: 你今天还能行动的次数."
+    new "行动力: 你今天剩余的行动次数。"
 
     # game/BKscreens.rpy:423
     old "魔力: 你剩余的魔力量."
-    new "魔力: 你剩余的魔力量."
+    new "魔力: 你剩余的魔力量。"
 
     # game/BKscreens.rpy:700
     old " 是一个 {0} 等级的 {1}."
-    new " 是一个 {0} 等级的 {1}."
+    new " 是一个{0}级的{1}。"
 
     # game/BKscreens.rpy:703
     old "{/b}正在休息."
-    new "{/b}正在休息."
+    new "{/b}正在休息。"
 
     # game/BKscreens.rpy:729
     old ". 点击查看详细信息."
-    new ". 点击查看详细信息."
+    new "。点击查看详细信息。"
 
     # game/BKscreens.rpy:776
     old "她还有"
@@ -2173,7 +2173,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1134
     old "打开 %s 的时间表"
-    new "打开 %s 的时间表"
+    new "打开 %s 的排班表"
 
     # game/BKscreens.rpy:1141
     old "在您的魔法笔记本中打开 %s 的条目"
@@ -2221,7 +2221,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1798
     old " 事先的训练可能会使女孩更适合性行为."
-    new " 事先的训练可能会使女孩更适合性行为."
+    new "先前的训练可能会使女孩更容易接受性行为。"
 
     # game/BKscreens.rpy:1845
     old "这将为这个女孩激活{b}"
@@ -2229,35 +2229,35 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1845
     old "{/b}."
-    new "{/b}."
+    new "{/b}。"
 
     # game/BKscreens.rpy:2292
     old " 这将花费 "
-    new " 这将花费 "
+    new " 这将花费"
 
     # game/BKscreens.rpy:2332
     old "这个女孩受伤了，需要再休息一天，直到她准备好做任何事情."
-    new "这个女孩受伤了，需要再休息一天，直到她准备好做任何事情."
+    new "这个女孩受伤了，需要再休息一天，直到她准备好做任何事情。"
 
     # game/BKscreens.rpy:2338
     old "她需要得到完全休息后才能开始工作."
-    new "她需要得到完全休息后才能开始工作."
+    new "她需要得到完全休息后才能开始工作。"
 
     # game/BKscreens.rpy:2342
     old "排班表显示她今天休息."
-    new "排班表显示她今天休息."
+    new "排班表显示她今天休息。"
 
     # game/BKscreens.rpy:2346
     old "没有安排工作. 在得到新的指示前她会一直休息."
-    new "没有安排工作. 在得到新的指示前她会一直休息."
+    new "没有安排工作. 在得到新的指示前她会一直休息。"
 
     # game/BKscreens.rpy:2350
     old "一边工作一边勾引客人. 点击更换工作或让她去休息."
-    new "一边工作一边勾引客人. 点击更换工作或让她去休息."
+    new "一边工作一边勾引客人。点击更换工作或让她去休息。"
 
     # game/BKscreens.rpy:2354
     old "点击更换工作或让她去休息."
-    new "点击更换工作或让她去休息."
+    new "点击更换工作或让她去休息。"
 
     # game/BKscreens.rpy:2608
     old "熟练度"
@@ -2273,11 +2273,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5351
     old "扩容商店的货架 (+%s 个  %s 商品) 。需要 %s %s."
-    new "扩容商店的货架 (+%s 个  %s 商品) 。需要 %s %s."
+    new "扩容商店的货架 (+%s个%s商品) 。需要 %s %s。"
 
     # game/BKscreens.rpy:5377
     old "显示 %s 物品."
-    new "显示 %s 物品."
+    new "显示 %s 物品。"
 
     # game/BKscreens.rpy:5451
     old "\n无工作"
@@ -2301,27 +2301,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5773
     old " 声望升到下一级。"
-    new " 声望升到下一级。"
+    new "声望升到下一级。"
 
     # game/BKscreens.rpy:5787
     old " 天赋点"
-    new " 天赋点"
+    new "天赋点"
 
     # game/BKscreens.rpy:6030
     old " 天"
-    new " 天"
+    new "天"
 
     # game/BKscreens.rpy:6155
     old "这个任务需要 "
-    new "这个任务需要 "
+    new "这个任务需要"
 
     # game/BKscreens.rpy:6156
     old " 女孩可以完成这项任务。"
-    new " 女孩可以完成这项任务。"
+    new "女孩可以完成这项任务。"
 
     # game/BKscreens.rpy:6160
     old "专门课程可能会提高 "
-    new "专门课程可能会提高 "
+    new "专门课程可能会提高"
 
     # game/BKscreens.rpy:6810
     old "性行为"
@@ -2345,7 +2345,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7573
     old "你不知道 [girl.name] 对"
-    new "你不知道 [girl.name] 对"
+    new "你不知道[girl.name]对"
 
     # game/BKscreens.rpy:7573
     old "是什么感觉。"

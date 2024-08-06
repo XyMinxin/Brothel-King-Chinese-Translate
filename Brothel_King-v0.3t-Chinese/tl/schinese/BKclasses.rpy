@@ -368,7 +368,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5008
     old "她在学习期间取得了很大的进步 "
-    new "她在培训期间取得了很大的进步，在 "
+    new "她在培训期间取得了很大的进步，在"
 
     # game/BKclasses.rpy:5008
     old " 这门课程中取得了良好的进步。"
@@ -380,7 +380,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5014
     old "她在期间没有努力学习 "
-    new "她在培训期间没有努力学习 "
+    new "她在培训期间没有努力学习"
 
     # game/BKclasses.rpy:5014
     old " 这门课程。"
@@ -392,7 +392,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5020
     old "她根本没有为她学习 "
-    new "她完全没有学到 "
+    new "她完全没有学到"
 
     # game/BKclasses.rpy:5020
     old " 这门课程任何东西。"
@@ -476,7 +476,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5531
     old " 或者 "
-    new " 或者 "
+    new "或者"
 
     # game/BKclasses.rpy:5545
     old "你还不能训练 "
@@ -484,7 +484,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5545
     old " 要求： "
-    new " 要求： "
+    new " 要求："
 
     # game/BKclasses.rpy:5552
     old "你需要训练一个女孩至少一次，才能进入高级培训."
@@ -492,7 +492,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:7080
     old "我会在 "
-    new "我会在 "
+    new "我会在"
 
     # game/BKclasses.rpy:7080
     old " 天内完成. 我相信你会对结果满意的"
@@ -512,7 +512,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:7095
     old "一个新的 "
-    new "一个新的 "
+    new "一个新的"
 
     # game/BKclasses.rpy:7095
     old " 已经建成了。.\n\n"

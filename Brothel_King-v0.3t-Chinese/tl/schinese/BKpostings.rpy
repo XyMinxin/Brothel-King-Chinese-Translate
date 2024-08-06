@@ -276,57 +276,57 @@ translate schinese strings:
 
     # game/BKpostings.rpy:8
     old "Model needed"
-    new "Model needed"
+    new "平面模特"
 
     # game/BKpostings.rpy:8
     old "Private dance"
-    new "Private dance"
+    new "私人舞会"
 
     # game/BKpostings.rpy:8
     old "Entertain my guests"
-    new "Entertain my guests"
+    new "招待贵宾"
 
     # game/BKpostings.rpy:8
     old "Escort needed"
-    new "Escort needed"
+    new "临时女伴"
 
     # game/BKpostings.rpy:8
     old "Make me feel young again"
-    new "Make me feel young again"
+    new "枯木逢春"
 
     # game/BKpostings.rpy:8
     old "Setting a record"
-    new "Setting a record"
+    new "突破记录"
 
     # game/BKpostings.rpy:8
     old "Girlfriend needed"
-    new "Girlfriend needed"
+    new "租赁女友"
 
     # game/BKpostings.rpy:8
     old "Hiring help"
-    new "Hiring help"
+    new "保洁服务"
 
     # game/BKpostings.rpy:8
     old "Please teach my son"
-    new "Please teach my son"
+    new "家庭教师"
 
     # game/BKpostings.rpy:8
     old "Bored in Zan"
-    new "Bored in Zan"
+    new "找点乐子"
 
     # game/BKpostings.rpy:8
     old "Back door man"
-    new "Back door man"
+    new "走后门"
 
     # game/BKpostings.rpy:8
     old "Night at the dungeon"
-    new "Night at the dungeon"
+    new "地牢之夜"
 
     # game/BKpostings.rpy:8
     old "Private party"
-    new "Private party"
+    new "私人派对"
 
     # game/BKpostings.rpy:8
     old "Ladies night"
-    new "Ladies night"
+    new "女士之夜"
 

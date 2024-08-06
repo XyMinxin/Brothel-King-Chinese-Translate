@@ -6164,7 +6164,7 @@ label tax_payment(): # Happens in the evening of the 1st each month if taxes are
 
             show taxgirl with dissolve
 
-            $ text1 = rand_choice([__("Good evening."), __("Hello, ") + MC.name +".", __("Hi, dear."), __("Knock knock."), __("Hey, ") + MC.name + ".", __("Hi.")])
+            $ text1 = rand_choice([__("Good evening."), __("Hello, ") + MC.name +"。", __("Hi, dear."), __("Knock knock."), __("Hey, ") + MC.name + "。", __("Hi.")])
             $ text1 += " " + __(rand_choice(["Here comes the guild collection.", "Your friendly neighborhood tax collector is here.", "Your guild membership fees are due.", "I hope you have my... the Guild's money ready.", "It's time to pay your dues.", "It's time for the slavers' guild to collect its due.", "I hope you have gathered enough money for protection."]))
 
             taxgirl "[text1!t]"

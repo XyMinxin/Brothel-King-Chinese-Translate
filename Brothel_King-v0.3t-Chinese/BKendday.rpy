@@ -616,7 +616,7 @@ label end_day:
             night_early.add(line, ttip=ttip, ttip_title = event_color["a little good"] % "今天工作")
 
             for girl in working_girls:
-                log.add_report(girl.fullname + __(" 今天的工作是 ") + __(girl_related_dict[girl.job]) + ".")
+                log.add_report(girl.fullname + __(" 今天的工作是 ") + __(girl_related_dict[girl.job]) + "。")
 
         if sick_girls:
             line = event_color["bad"] % ("生病的女孩：%s" % len(sick_girls))

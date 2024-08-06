@@ -841,16 +841,16 @@ init -4 python:
     merchant_greetings = {
                           "shop greeting" : "帅哥，欢迎光临！*眨眼*",
                           "shop caravan" : "这可是最新上市的好东西，走过路过不要错过哦！*抛媚眼*",
-                          "shop bought something" : "这是你的 [it.name]. 帮你打包好了，今晚有兴趣来陪我吗？*向前弯腰露出乳沟*.{w=2.0}{nw}",
+                          "shop bought something" : "这是你的 [it.name]，帮你打包好了，今晚有兴趣来陪我吗？*不经意露出乳沟*。{w=2.0}{nw}",
                           "shop no money" : "抱歉，小本经营概不赊账...*嫌弃的眼神*",
 
-                          "Stella greeting" : "呦！瞧瞧谁来了。希望你别浪费我的时间.",
-                          "Stella bought something" : "一手交钱一手交货，买完了就快滚，还是说你想和我深入交流一下？*舔舌头*.{w=2.0}{nw}",
-                          "Stella no money" : "没钱装什么大爷，赶紧滚蛋.",
+                          "Stella greeting" : "呦！瞧瞧谁来了。希望你别浪费我的时间。",
+                          "Stella bought something" : "一手交钱一手交货，买完了就快滚，还是说你想和我深入交流一下？*舔舌头*。{w=2.0}{nw}",
+                          "Stella no money" : "没钱装什么大爷，赶紧滚蛋。",
 
                           "Goldie greeting" : "有什么我可以帮到你的吗?还是说你是来...*脸红*",
-                          "Goldie bought something" : "拿好。呀！我不是让你拿这两个蜜瓜！*脸红*.{w=2.0}{nw}",
-                          "Goldie no money" : "抱歉，就算是我们之间也得明算账.",
+                          "Goldie bought something" : "拿好。呀！我不是让你拿这两个蜜瓜！*脸红*。{w=2.0}{nw}",
+                          "Goldie no money" : "抱歉，就算是我们之间也得明算账。",
 
                           "Willow greeting" : "嘿，瞧瞧我刚抓来的小可爱.*香汗淋漓，贴身的衣服变得透明*",
                           "Willow bought something" : "成交, 就这样... 它很好用!你问我怎么知道的？*脸红*{w=2.0}{nw}",
@@ -858,41 +858,41 @@ init -4 python:
 
                           "Gina greeting" : "嗯, 如果我按下这个按钮... 噫！...怎么这时候来了客人...*两腿夹紧，浑身颤抖*",
                           "Gina bought something" : "东西收好，啊不对，那个遥控器不是和它一起卖的，别按！...啊啊！*大腿上有不明液体流下*~{w=2.0}{nw}",
-                          "Gina no money" : "穷鬼，弄坏了你赔得起吗。买不起就别摸.",
+                          "Gina no money" : "穷鬼，弄坏了你赔得起吗。买不起就别摸。",
 
                           "Riche greeting" : "来看一看吧.我的花可是用特殊的营养水培育的 *脸红*",
                           "Riche bought something" : "哇！你真大方!真羡慕收到花的女孩 *扭动屁股*{w=2.0}{nw}",
-                          "Riche no money" : "哦,对不起，但你的钱好像不够.",
+                          "Riche no money" : "哦,对不起，但你的钱好像不够。",
 
-                          "Ramias greeting" : "哦, 是你呀。来选一件趁手的兵器吧.",
-                          "Ramias bought something" : "眼光不错！接好！哦！*不小心划破衣服* 快闭上眼睛！.{w=2.0}{nw}",
-                          "Ramias no money" : "没钱就去努力赚钱吧.",
+                          "Ramias greeting" : "哦, 是你呀。来选一件趁手的兵器吧。",
+                          "Ramias bought something" : "眼光不错！接好！哦！*不小心划破衣服* 快闭上眼睛！。{w=2.0}{nw}",
+                          "Ramias no money" : "没钱就去努力赚钱吧。",
 
                           "Gurigura greeting" : "嗨!!!又见面了！ *乳摇*",
                           "Gurigura bought something" : "有了这些钱我又可以喝很多牛奶了*跳起来* 可惜只长那里不长个子.{w=2.0}{nw}",
                           "Gurigura no money" : "嘿，等一下...先生，你的钱不够!",
 
-                          "Katryn greeting" : "你好，客人。把握不准的话可以帮我戴上上看看效果 *舔嘴唇*.",
-                          "Katryn bought something" : "把钱放到这里就好... *稍微敞开领口露出乳沟*.{w=2.0}{nw}",
+                          "Katryn greeting" : "你好，客人。把握不准的话可以帮我戴上上看看效果 *舔嘴唇*。",
+                          "Katryn bought something" : "把钱放到这里就好... *稍微敞开领口露出乳沟*。{w=2.0}{nw}",
                           "Katryn no money" : "什么...这点钱也想买...，笨蛋!",
 
                           "Gift Shop Girl greeting" : "嘿,帅哥.来挑选你想要的礼物吧！ *抛媚眼*{w=2.0}{nw}",
-                          "Gift Shop Girl bought something" : "多谢惠顾 *用胸部在你的手臂上蹭了一下*.{w=2.0}{nw}",
-                          "Gift Shop Girl no money" : "对不起,先生...但你的钱好像不够.",
+                          "Gift Shop Girl bought something" : "多谢惠顾 *用胸部在你的手臂上蹭了一下*。{w=2.0}{nw}",
+                          "Gift Shop Girl no money" : "对不起,先生...但你的钱好像不够。",
 
                           "Today greeting" : "嗨，大哥哥！想买衣服，还是让我们帮你量尺寸?那里的尺寸得用嘴量才准... *脸红* ",
                           "Yesterday greeting" : "啊...大哥哥，这次你想用哪里帮你量尺寸... *脸红*",
                           "Today bought something" : "你眼光真好，大哥哥! 我就原谅你对我的骚扰吧！ *眨眼*{w=2.0}{nw}",
                           "Yesterday bought something" : "感谢惠顾，大哥哥，呀！别摸那里.{w=2.0}{nw}",
-                          "Today no money" : "等等，大哥哥。你的钱好像不够哦.",
+                          "Today no money" : "等等，大哥哥。你的钱好像不够哦。",
 
                           }
 
 
-    shopgirl_comment = {"wood" : "新架子，太好了!", "leather" : "太棒了!这个皮篮子正好可以放在入口处.",
-                        "dye" : "很好！这个新画的展览看起来很不错.", "marble" : "哦，大理石柜台！这将使所有其他店主感到嫉妒，耶!",
-                        "ore" : "镀铜的柜台肯定会吸引一些人的注意。非常漂亮.", "silk" : "啊，终于有一些柔软光滑的丝绸来承载易碎物品了....揉我的脸!",
-                        "diamond" : "女孩最好的朋友....你很有风格，很帅！还有我的新镶钻显示器... [emo_heart]"}
+    shopgirl_comment = {"wood" : "新的货架，太好了!", "leather" : "太棒了!这个皮制购物篮正好可以放在门口。",
+                        "dye" : "很好！这幅画看起来很不错。", "marble" : "哦，大理石柜台！其他店主要羡慕死我了，耶!",
+                        "ore" : "镀铜的柜台肯定能吸引路人的注意。闪闪发亮。", "silk" : "啊，终于可以用光滑柔顺的丝绸来包裹易碎物品了....真是奢华!",
+                        "diamond" : "女孩最好的朋友....你很有品味，很帅！新镶钻广告牌更帅... [emo_heart]"}
 
 
 
@@ -913,7 +913,7 @@ init -4 python:
                     "M royals" : ("侯爵", "亲王", "总督", "公爵", "大主教", "苏丹"),
 
                     "F beggars" : ("女无赖", "衣衫褴褛的女人", "乞丐", "女流浪汉"),
-                    "F thugs" : ("女暴徒", "女恶棍", "土匪夫人", "女贼", "女流氓", "老巫婆"),
+                    "F thugs" : ("女暴徒", "女恶棍", "土匪夫人", "女飞贼", "女流氓", "老巫婆"),
                     "F laborers" : ("女劳工", "女工人", "女摊贩", "女佣", "女农民"),
                     "F sailors" : ("女海盗", "女海员", "码头女郎", "女船友", "船上的护士", "女水手"),
                     "F commoners" : ("女平民", "女工头", "女文员", "女商人", "女卫兵", "尼姑"),
@@ -922,8 +922,8 @@ init -4 python:
                     "F guild members" : ("公会女成员", "女发明家", "女魔法师", "奴隶贩子", "香料女商人", "女卫兵队长"),
                     "F patricians" : ("女航海家", "女地主", "女银行家", "女官员", "女骑士", "女主教"),
                     "F aristocrats" : ("贵族女士", "淑女", "女郎", "宫廷女巫", "闺秀", "女城主", "公会夫人"),
-                    "F nobles" : ("贵族小姐", "女伯爵", "名门女士", "女祭司", "男爵夫人", "女子爵", "红衣主教女士"),
-                    "F royals" : ("女佣人", "公主", "王妃", "公爵夫人", "母系氏族长", "苏丹娜")
+                    "F nobles" : ("贵族小姐", "女伯爵", "名门女士", "女祭司", "男爵夫人", "女子爵", "女红衣主教"),
+                    "F royals" : ("女佣", "公主", "王妃", "公爵夫人", "女主教", "苏丹娜")
                     }
 
 
@@ -1039,18 +1039,18 @@ init -4 python:
     ## STAT DESCRIPTION ##
 
     gstats_dict = {
-                    "Beauty" : "属性越高她的外表越美丽。影响她作为 {b}按摩技师{/b}时的表现以及{b}性交{/b}时的技术。她作为按摩技师可以同时服务 {b}%s{/b} 个顾客%s.",
-                    "Body" : "属性越高她的身材越火辣。影响她作为 {b}脱衣舞娘{/b}时的表现以及{b}肛交{/b}时的技术。她作为脱衣舞娘可以同时服务 {b}%s{/b} 个顾客%s.",
-                    "Charm" : "属性越高她的魅力越迷人。影响她作为 {b}女服务员{/b}时的表现以及{b}侍奉{/b}时的技术。她作为女服务员可以同时服务 {b}%s{/b} 个顾客%s.",
-                    "Refinement" : "属性越高她的举止越优雅。影响她作为 {b}表演艺伎{/b}时的表现以及{b}调教{/b}时的技术。她作为表演艺伎可以同时服务 {b}%s{/b} 个顾客%s.",
-                    "Libido" : "属性越高她的性欲越旺盛。影响她作为 {b}脱衣舞娘{/b}时的表现, {b}性交{/b}时的技术以及最大 {b}接客{/b}人数。她作为妓女可以一晚服务 {b}%s{/b} 个顾客%s.",
-                    "Sensitivity" : "属性越高她的身体越敏感。影响她作为 {b}按摩技师{/b}时的表现, {b}侍奉{/b}时的技术以及提升更多的 {b}顾客满意度{/b}.",
-                    "Constitution" : "属性越高她的身体越健壮。影响她作为 {b}女服务员{/b}时的表现, {b}肛交{/b}时的技术,提高她的 {b}体力{/b}上限并且能够接待 {b}更多顾客{/b}.",
-                    "Obedience" : "属性越高她的服从性越强。影响她作为{b}表演艺伎{/b}时的表现, {b}调教{/b}时的技术以及对 {b}工作{/b}或{b}训练{/b}的接受程度.",
-                    "Service" : "属性越高她的手交、足交、口交等侍奉技术越好.",
-                    "Sex" : "属性越高她的性交技术越好.",
-                    "Anal" : "属性越高她的肛交技术越好.",
-                    "Fetish" : "属性越高她的捆绑、SM等调教技术越好."
+                    "Beauty" : "属性越高她的外表越美丽。影响她作为{b}按摩技师{/b}时的表现以及{b}性交{/b}时的技术。她作为按摩技师可以同时服务{b}%s{/b}个顾客%s。",
+                    "Body" : "属性越高她的身材越火辣。影响她作为{b}脱衣舞娘{/b}时的表现以及{b}肛交{/b}时的技术。她作为脱衣舞娘可以同时服务{b}%s{/b}个顾客%s。",
+                    "Charm" : "属性越高她的魅力越迷人。影响她作为{b}女服务员{/b}时的表现以及{b}侍奉{/b}时的技术。她作为女服务员可以同时服务{b}%s{/b}个顾客%s。",
+                    "Refinement" : "属性越高她的举止越优雅。影响她作为{b}表演艺伎{/b}时的表现以及{b}调教{/b}时的技术。她作为表演艺伎可以同时服务{b}%s{/b}个顾客%s。",
+                    "Libido" : "属性越高她的性欲越旺盛。影响她作为{b}脱衣舞娘{/b}时的表现,{b}性交{/b}时的技术以及最大{b}接客{/b}人数。她作为妓女可以一晚服务{b}%s{/b}个顾客%s。",
+                    "Sensitivity" : "属性越高她的身体越敏感。影响她作为{b}按摩技师{/b}时的表现,{b}侍奉{/b}时的技术以及提升更多的 {b}顾客满意度{/b}。",
+                    "Constitution" : "属性越高她的身体越健壮。影响她作为{b}女服务员{/b}时的表现,{b}肛交{/b}时的技术,提高她的 {b}体力{/b}上限并且能够接待 {b}更多顾客{/b}。",
+                    "Obedience" : "属性越高她的服从性越强。影响她作为{b}表演艺伎{/b}时的表现,{b}调教{/b}时的技术以及对 {b}工作{/b}或{b}训练{/b}的接受程度。",
+                    "Service" : "属性越高她的手交、足交、口交等侍奉技术越好。",
+                    "Sex" : "属性越高她的性交技术越好。",
+                    "Anal" : "属性越高她的肛交技术越好。",
+                    "Fetish" : "属性越高她的捆绑、SM等调教技术越好。"
                     }
 
     gstats_descript = {
@@ -1268,10 +1268,10 @@ init python:
                             "very lewd pos" : ("她思想开放。", "她很好奇", "她知道如何聚会。", "她是个真正的派对女孩。"),
                             "very modest pos" : ("她很理性。", "她保持头脑清醒。", "她很稳重。", "她是纯洁的。"),
                             "very dom pos" : ("她是如此自信。", "她是领导者。", "她是非常独立的人。", "她无所畏惧。"),
-                            "very sub pos" : ("她很卑微。", "她很沉默。", "她很忠诚。", "她很顺从。"),
+                            "very sub pos" : ("她很卑微。", "她很内向。", "她很忠诚。", "她很顺从。"),
 
                             "very extravert neg" : ("她很自以为是。", "她很吵闹。", "她是以自我为中心的人。", "她不愿闭嘴。"),
-                            "very introvert neg" : ("她没有情趣。", "她很冷漠。", "她很不友善。", "她是一个无聊的人。"),
+                            "very introvert neg" : ("她不懂情趣。", "她很冷漠。", "她很不友善。", "她是一个无趣的人。"),
                             "very idealist neg" : ("她是书呆子。", "她是一片雪花。", "她是个势利小人。", "她是一个书呆子。"),
                             "very materialist neg" : ("她是个肮脏的婊子。", "她是如此肤浅。", "她很自私。", "她是个冷酷无情的婊子。"),
                             "very lewd neg" : ("她是个变态。", "她很堕落，即使对一个妓女来说也是如此。", "她没有道德观念。", "她是个荡妇。"),
@@ -1315,8 +1315,8 @@ init python:
                                 "MC met" : GirlRecentEvent(type="MC met", base_description="你已经见过%s了。", encourage=False, discipline=False),
                                 "MC friend" : GirlRecentEvent(type="MC friend", base_description="你和%s成为了好朋友。", encourage=False, discipline=False),
                                 "MC flower" : GirlRecentEvent(type="MC flower", base_description="你现在可以给%s送花了。", encourage=False, discipline=False),
-                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的红颜知己。", encourage=False, discipline=False),
-                                "MC lover" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的女朋友了。", encourage=False, discipline=False),
+                                "MC girlfriend" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的女朋友。", encourage=False, discipline=False),
+                                "MC lover" : GirlRecentEvent(type="MC friend", base_description="%s现在是你的红颜知己。", encourage=False, discipline=False),
                                 "MC job" : GirlRecentEvent(type="MC job", base_description="现在你可以给%s提供一份工作。", encourage=False, discipline=False),
                                 "kidnapped" : GirlRecentEvent(type="kidnapped", base_description="她被%s给绑架了。", encourage=False, discipline=False),
                                 }
@@ -1593,7 +1593,7 @@ init python:
 #汉化书签，待润色修改#
     fix_description = {
                        "public acts description" : "在公共场合做",
-                       "public acts action" : "进行公开play",
+                       "public acts action" : "公开play",
                        "public acts intro" : "你把青楼里的所有人都叫来: 女孩、帮手、路人....你告诉%s，她必须在公开场合做。",
                        "public acts pos_reaction" : "她脸红了，你可以看到她的乳头在她的上衣下微微颤动。一想到要在公共场合做，她就兴奋不已。",
                        "public acts neg_reaction" : "她愤愤不平，抱怨说被人们看着时，她什么也做不了。你无视了她的抱怨。",
@@ -1659,7 +1659,7 @@ init python:
                        "femdom neg_reaction" : "她犹豫了一下，然后尴尬地试图用不太令人信服的声音下达一个命令。她几乎马上就改口道歉了。她一点也不喜欢在这种事情上作为主导。",
 
                        "gags description" : "做爱时被塞住嘴",
-                       "gags action" : "戴上口塞",
+                       "gags action" : "戴上口球",
                        "gags intro" : "你命令%s戴上一个大的球型口塞，使她的嘴一直张着难以说话。",
                        "gags pos_reaction" : "当她戴上口塞时给你一个羞涩的眼神，似乎很奇怪，她看起来既高兴又兴奋。",
                        "gags neg_reaction" : "她控制不住地流口水，几乎说不出话来，愤怒地看着你。她似乎很讨厌这样。",
@@ -2457,7 +2457,7 @@ init -4 python:
                         "whore_init" : "%s点名要%s服侍他。",
                         "bisexual_tags" : ["bisexual"],
                         "group_tags" : ["group"],
-#汉化标签，套用了小黄文的桥段，略微修改了一下，有需要自己替换#
+
                         "M anal_very bad" : "\n{color=[c_red]}%s很不配合，顾客一点也不爽。他很快就失去了兴趣，抱怨着离开了....",
                         "M anal_bad" : "\n{color=[c_lightred]}%s不喜欢被人捅菊花，她把不情愿都写在了脸上。顾客看着她的表情也没了兴致。",
                         "M anal_average" : "\n当顾客对%s的屁股为所欲为时，她呻吟着。她越来越喜欢肛交了。",
@@ -2559,29 +2559,29 @@ init -4 python:
         event_color[k] = "{color=" + color_dict[k] + "}%s{/color}"
 
     log_event_dict = {
-                        "level" : "{color=" + c_orange + "}%s 等级提升了1级.{/color}",
-                        "job_up" : "{color=" + c_orange + "}%s 提升了她的 %s 职业等级.{/color}",
-                        "rank" : "{color=" + c_orange + "}%s 准备好升到下一阶级了.{/color}"
+                        "level" : "{color=" + c_orange + "}%s的等级提升了。{/color}",
+                        "job_up" : "{color=" + c_orange + "}%s的%s职业等级提升了。{/color}",
+                        "rank" : "{color=" + c_orange + "}%s准备好升到下一阶级了。{/color}"
                         }
 
     attraction_dict = {
                        "beauty_good" : "让这群色鬼口水直流",
                        "body_good" : "拥有魔鬼般的身材",
-                       "charm_good" : "抛一个媚眼就能让人血脉喷张",
-                       "refinement_good" : "的举止就像是贵族千金",
-                       "beauty_bad" : "让客人看了就恶心反胃",
+                       "charm_good" : "抛一个媚眼就能让人神魂颠倒",
+                       "refinement_good" : "的举止就像是大家闺秀",
+                       "beauty_bad" : "让人看了就恶心反胃",
                        "body_bad" : "的身材就像飞机场一样平",
-                       "charm_bad" : "让客人看到她直接萎了",
+                       "charm_bad" : "让人看到她直接阳痿",
                        "refinement_bad" : "粗鄙的像个乡巴佬"
                       }
 
     #### BROTHEL SERVICES ####
 
-    maintenance_desc = {"clean" : "你的青楼 " + event_color["good"] % "{b}很干净{/b}" + ".",
-                    "clean enough" : "你的青楼 " + event_color["a little good"] % "{b}一尘不染{/b}" + ".",
-                    "dusty" : "你的青楼 " + event_color["average contrast"] % "{b}尘土飞扬{/b}" + ".",
-                    "dirty" : "你的青楼 " + event_color["a little bad"] % "{b}脏乱不堪{/b}" + ".",
-                    "disgusting" : "警告! 你的青楼 " + event_color["bad"] % "{b}令人作呕{/b}" + "!",
+    maintenance_desc = {"clean" : "你的青楼" + event_color["good"] % "{b}很干净{/b}" + "。",
+                    "clean enough" : "你的青楼" + event_color["a little good"] % "{b}一尘不染{/b}" + "。",
+                    "dusty" : "你的青楼" + event_color["average contrast"] % "{b}尘土飞扬{/b}" + "。",
+                    "dirty" : "你的青楼" + event_color["a little bad"] % "{b}脏乱不堪{/b}" + "。",
+                    "disgusting" : "警告! 你的青楼" + event_color["bad"] % "{b}令人作呕{/b}" + "!",
                     "fire" : event_color["very bad"] % "大事不妙!!! 你的青楼随时可能着火!"
                     }
 
@@ -3645,7 +3645,7 @@ init python:
                                   ]
 
     contract_task_types_order = {"greet" : 1, "serve" : 2, "mingle" : 3, "event" : 4, "private show" : 5, "fun" : 6}
-    contract_task_types_description = {"greet" : "迎接客人", "serve" : "招待客人", "mingle" : "社交场合", "event" : "参加活动", "private show" : "举办私人表演", "fun" : "享受“乐趣”"}
+    contract_task_types_description = {"greet" : "迎接客人", "serve" : "招待客人", "mingle" : "社交场合", "event" : "参加活动", "private show" : "表演节目", "fun" : "享受“乐趣”"}
 
     contract_tasks = [
                         ContractTask("clean", type="serve", requirements=["job waitress", "skill obedience", "skill constitution", ], tags=(["maid"], ["obedience"], ["waitress"], ["profile"])),

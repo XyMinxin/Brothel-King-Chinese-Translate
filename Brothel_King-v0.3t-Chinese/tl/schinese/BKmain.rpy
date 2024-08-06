@@ -16,7 +16,7 @@ translate schinese slavemarket_7a16f791:
 translate schinese slavemarket_4abebc59:
 
     # slavegirl1 "Fresh girls are available today, Master."
-    slavegirl1 "贵客,今天有新鲜的雏菊供您挑选。"
+    slavegirl1 "贵客,今天来了一批新的奴隶供您挑选。"
 
 # game/BKmain.rpy:40
 translate schinese slavemarket_5ea722bf:

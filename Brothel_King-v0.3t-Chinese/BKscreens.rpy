@@ -682,7 +682,7 @@ screen badge_button(girl, _size, t_size=20, active=True): # Where badge is a fil
                 text_drop_shadow (1, 1)
 
     else:
-        $ badge_name = badge.rsplit(".", 1)[0]
+        $ badge_name = badge.rsplit("。", 1)[0]
         button xmargin 0 ymargin 0 xpadding 0 ypadding 0 background None xalign 0.9 yalign 0.1 tooltip "当前徽章: {b}%s{/b}.\n单击更改此女孩的自定义徽章." % badge_name:
             if active:
                 action Return(("badge", girl))
@@ -707,7 +707,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
     elif context == "free":
         $ text1 = girl.get_MC_relation().capitalize()
         if girl.MC_interact:
-            $ but_ttip = girl.fullname + " 当前位于" + location_name_dict[girl.location] + "."
+            $ but_ttip = girl.fullname + " 当前位于" + location_name_dict[girl.location] + "。"
         else:
             $ but_ttip = "你以前没见过这个女孩."
         $ text_col = c_white
@@ -773,7 +773,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                     if unhovered_action:
                         unhovered unhovered_action
 
-                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "。"
 
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
@@ -860,7 +860,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action
                     if unhovered_action:
                         unhovered unhovered_action
-                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "。"
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -946,7 +946,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action
                     if unhovered_action:
                         unhovered unhovered_action
-                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "。"
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1049,7 +1049,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                                 hovered hovered_action
                             if unhovered_action:
                                 unhovered unhovered_action
-                            tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                            tooltip __("她还有") + str_int(girl.energy) + __("点精力, 其精力上限是") + str(int(girl.get_stat_minmax("energy")[1])) + "。"
                             vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                                 thumb None
                                 thumb_offset 0
@@ -3795,7 +3795,7 @@ screen visit_district():
                                             if location.menu_costs_AP:
                                                 tooltip __(location.menu[0]) + __(". Costs 1 {image=img_AP}.")
                                             else:
-                                                tooltip __(location.menu[0]) + "."
+                                                tooltip __(location.menu[0]) + "。"
 
                                 text str(location_dict[selected_district.name].index(location) + 1) size res_font(14)  xalign 0.05 yalign 0.95
 
@@ -3858,7 +3858,7 @@ screen visit_location():
 
                     action Return(girl)
                     if girl.MC_interact:
-                        tooltip __("Talk to ") + girl.fullname + "."
+                        tooltip __("Talk to ") + girl.fullname + "。"
                     else:
                         tooltip "和这个陌生女孩搭讪. 消耗1 {image=img_AP}."
 
@@ -4119,7 +4119,7 @@ screen brothel():
 
                             textbutton __("[brothel.advertising]  babes") + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
 
-                            $ ttip = "你的青楼当前威胁等级为 " + brothel.estimate_threat_level() + "."
+                            $ ttip = "你的青楼当前威胁等级为 " + brothel.estimate_threat_level() + "。"
 
                             textbutton "Security" text_color c_white ypos 0.4 ymargin 0 ypadding 4 text_align 0.0  background None text_size res_font(18) action NullAction() tooltip ttip
 
@@ -4451,7 +4451,7 @@ screen furniture():
                                             use resource_tab(furn.cost, sp=1)
                                         text str(furn.duration) + __("d") xalign 0.95 yalign 0.05 size res_font(18)
 #                        else:
-#                            text "You have built every available " + type +"." size res_font(14) italic True
+#                            text "You have built every available " + type +"。" size res_font(14) italic True
                     text "" size res_font(8)
 
 

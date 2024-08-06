@@ -10328,7 +10328,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:1301
     old "好吧....按你的方式来吧."
-    new "好吧....按你的方式来吧."
+    new "好吧....按你的方式来吧。"
 
     # game/BKinteractions.rpy:1301
     old "我不敢相信现在的奴隶....好吧!"
@@ -10336,15 +10336,15 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:1301
     old "ne: 哼。这一次我会放过你的。你欠我一个人情."
-    new "ne: 哼。这一次我会放过你的。你欠我一个人情."
+    new "ne: 哼。这一次我会放过你的。你欠我一个人情。"
 
     # game/BKinteractions.rpy:1301
     old "gd: 好吧，我不会强迫你做你不喜欢的事情."
-    new "gd: 好吧，我不会强迫你做你不喜欢的事情."
+    new "gd: 好吧，我不会强迫你做你不喜欢的事情。"
 
     # game/BKinteractions.rpy:1301
     old "ev: 他妈的，这一次我会放过你....但不要考验我的耐心."
-    new "ev: 他妈的，这一次我会放过你....但不要考验我的耐心."
+    new "ev: 他妈的，这一次我会放过你....但不要考验我的耐心。"
 
     # game/BKinteractions.rpy:1312
     old "强迫训练"
@@ -10368,15 +10368,15 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:1467
     old "训练进行得非常顺利。 "
-    new "训练进行得非常顺利。 "
+    new "训练进行得非常顺利。"
 
     # game/BKinteractions.rpy:1467
     old " 不再对 "
-    new " 不再对 "
+    new "不再对"
 
     # game/BKinteractions.rpy:1469
     old "neg fixation removed"
-    new "neg fixation removed"
+    new "neg fixation已移除"
 
     # game/BKinteractions.rpy:1493
     old "训练进行得很顺利。 "
@@ -10408,7 +10408,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:1633
     old " 次。"
-    new " 次。"
+    new "次。"
 
     # game/BKinteractions.rpy:1665
     old "out"
@@ -10416,7 +10416,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2239
     old "You notice that "
-    new "You notice that "
+    new "你发现"
 
     # game/BKinteractions.rpy:2239
     old " is feeling strange during "
@@ -10424,7 +10424,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2239
     old ". It's like she both loves it and hates it."
-    new ". It's like she both loves it and hates it."
+    new "。她好像又喜欢又抗拒。"
 
     # game/BKinteractions.rpy:2241
     old " is very sensitive during "
@@ -10432,15 +10432,15 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2241
     old ". Perhaps you should explore this further."
-    new ". Perhaps you should explore this further."
+    new ". 你应该在这方面再多试试。"
 
     # game/BKinteractions.rpy:2243
     old " seems to dislike "
-    new " seems to dislike "
+    new "好像讨厌"
 
     # game/BKinteractions.rpy:2243
     old ". Perhaps there's something in particular that makes her uncomfortable."
-    new ". Perhaps there's something in particular that makes her uncomfortable."
+    new "。也许有什么特别的原因让她不舒服。"
 
     # game/BKinteractions.rpy:2290
     old "利用正面情绪"
@@ -10460,19 +10460,19 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2491
     old "[low] 金币"
-    new "[low] 金币"
+    new "[low]金币"
 
     # game/BKinteractions.rpy:2491
     old "[med] 金币"
-    new "[med] 金币"
+    new "[med]金币"
 
     # game/BKinteractions.rpy:2491
     old "[high] 金币"
-    new "[high] 金币"
+    new "[high]金币"
 
     # game/BKinteractions.rpy:2547
     old "过来！谁是我最可爱的小奴隶...是 "
-    new "过来！谁是我最可爱的小奴隶...是 "
+    new "过来！谁是我最可爱的小奴隶...是"
 
     # game/BKinteractions.rpy:2547
     old "！没错！"
@@ -10544,11 +10544,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:3104
     old "你记得 [girl.name] 对 [act] 行为有 [reaction] 的反应。你要利用这一点来训练她吗?"
-    new "你记得 [girl.name] 对 [act] 行为有 [reaction] 的反应。你要利用这一点来训练她吗?"
+    new "你记得[girl.name]对[act]行为有[reaction]的反应。你要利用这一点来训练她吗?"
 
     # game/BKinteractions.rpy:3307
     old "你注意到 "
-    new "你注意到 "
+    new "你注意到"
 
     # game/BKinteractions.rpy:3307
     old "期间感到愉悦和反感。她似乎对此有矛盾的感觉。"
@@ -10556,11 +10556,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:3309
     old "尽管她在哭泣，你注意到 "
-    new "尽管她在哭泣，你注意到 "
+    new "尽管她在哭泣，你注意到"
 
     # game/BKinteractions.rpy:3309
     old " 似乎喜欢 "
-    new " 似乎喜欢 "
+    new " 似乎喜欢"
 
     # game/BKinteractions.rpy:3309
     old "。也许你应该进一步探索这个问题。"
@@ -10568,11 +10568,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:3311
     old " 似乎非常讨厌 "
-    new " 似乎非常讨厌 "
+    new " 似乎非常讨厌"
 
     # game/BKinteractions.rpy:3311
     old " 。也许你可以利用这个信息对付她。"
-    new " 。也许你可以利用这个信息对付她。"
+    new " 。也许你可以利用这个弱点对付她。"
 
     # game/BKinteractions.rpy:3443
     old "改变好感度"

@@ -1277,7 +1277,7 @@ translate schinese strings:
 
     # renpy/common/_errorhandling.rpym:559
     old "Copy BBCode"
-    new "Copy BBCode"
+    new "复制BBCode"
 
     # renpy/common/_errorhandling.rpym:561
     old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
@@ -1329,7 +1329,7 @@ translate schinese strings:
 
     # renpy/common/_errorhandling.rpym:652
     old "Quits the game."
-    new "Quits the game."
+    new "退出游戏。"
 
     # renpy/common/_errorhandling.rpym:673
     old "Parsing the script failed."

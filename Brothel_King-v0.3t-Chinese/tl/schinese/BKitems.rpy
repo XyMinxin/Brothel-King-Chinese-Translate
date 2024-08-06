@@ -10,11 +10,11 @@ translate schinese strings:
 
     # game/BKitems.rpy:530
     old "\nRank "
-    new "\n"
+    new "\n阶级"
 
     # game/BKitems.rpy:530
     old " - Level "
-    new "阶级 - 等级 "
+    new "- 等级 "
 
     # game/BKitems.rpy:537
     old "/Whore"
