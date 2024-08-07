@@ -5343,6 +5343,22 @@ init -3 python:
         if default_value is not None:
             return default_value
         else:
-            return text
+            return text    
+    
+    def tl_cn(self, translation_dicts, default_value=None):
+        if isinstance(translation_dicts, dict):
+            # 如果 translation_dicts 是单个字典
+            if self in translation_dicts:
+                return translation_dicts[self]
+        else:
+            # 如果 translation_dicts 是字典列表
+            for translation_dict in translation_dicts:
+                if self in translation_dict:
+                    return translation_dict[self]
+        
+        if default_value is not None:
+            return default_value
+        else:
+            return self
 
 #### END OF BK FUNCTIONS FILE ####
