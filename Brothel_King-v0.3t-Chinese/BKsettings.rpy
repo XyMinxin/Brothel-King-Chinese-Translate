@@ -764,7 +764,7 @@ init -10 python:
                          "Magic guild" : "魔法公会",
 
                          "Pilgrim road": "朝圣者之路",
-                         "Banking quarter" : "银行窗口",
+                         "Banking quarter" : "金融街",
                          "Old ruins" : "远古遗迹",
                          "Lakefront" : "湖畔",
                          "Training ground" : "演武场",
