@@ -730,12 +730,12 @@ init -10 python:
                          ## 地区名称 ##
                          "The Slums" : "贫民窟",
                          "The Docks" : "码头区",
-                         "The Warehouse" : "仓库区",
+                         "The Warehouse" : "工业区",
                          "The Magic Gardens" : "魔法花园",
-                         "The Cathedra" : "教堂区",
-                         "The King's Hold" : "国王城堡区",
+                         "The Cathedra" : "教会辖地",
+                         "The King's Hold" : "皇城",
 
-                         "Spice market" : "香料市场",
+                         "Spice market" : "黑市",
                          "Sewers" : "下水道",
                          "Farm" : "农场",
                          "Watchtower" : "瞭望塔",
@@ -747,7 +747,7 @@ init -10 python:
                          "Seafront" : "海滨",
                          "Beach" : "海滩",
                          "Taverns" : "酒馆",
-                         "Exotic emporium" : "舶来品商场",
+                         "Exotic emporium" : "进口商场",
 
                          "Market" : "集市",
                          "Stables" : "马厩",
@@ -760,21 +760,21 @@ init -10 python:
                          "Library" : "图书馆",
                          "Magic forest" : "魔法森林",
                          "Hanging gardens" : "空中花园",
-                         "Guild quarter" : "公会区",
+                         "Guild quarter" : "公会大楼",
                          "Magic guild" : "魔法公会",
 
                          "Pilgrim road": "朝圣者之路",
-                         "Banking quarter" : "银行区",
-                         "Old ruins" : "古老的遗迹",
+                         "Banking quarter" : "银行窗口",
+                         "Old ruins" : "远古遗迹",
                          "Lakefront" : "湖畔",
-                         "Training ground" : "训练场",
+                         "Training ground" : "演武场",
                          "Cathedra" : "教堂",
 
                          "Battlements" : "城垛",
                          "Keep" : "城堡主楼",
-                         "Hall" : "门厅",
+                         "Hall" : "接待厅",
                          "Courtyard" : "庭院",
-                         "Temple" : "庙宇",
+                         "Temple" : "神社",
                          "Waterfalls" : "瀑布",
 
                          ## 执照名称 ##
