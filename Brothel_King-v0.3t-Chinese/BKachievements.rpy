@@ -48,7 +48,7 @@ init python:
                         Achievement("H：牧场主", "你与戈尔迪发生了关系。", pic="portrait.webp", pic_path="NPC/Goldie/", target="h goldie"),
                         Achievement("H：官员", "你与斯特拉发生了关系。", pic="portrait.webp", pic_path="NPC/Stella/", target="h stella"),
                         Achievement("H：将军", "你与卡发生了关系。", pic="ka portrait.webp", pic_path="NPC/Stella/", target="h ka"),
-                        Achievement("H：上将", "你与泽发生了关系。", pic="zee portrait.webp", pic_path="NPC/Stella/", target="h zee"),
+                        Achievement("H：上将", "你与泽伊发生了关系。", pic="zee portrait.webp", pic_path="NPC/Stella/", target="h zee"),
                         Achievement("H：猎人", "你与薇洛发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h willow"),
                         Achievement("H：亲戚", "你与薇洛的亲戚发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h relative"),
                         Achievement("H：猎人", "你与薇洛发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h willow"),
