@@ -10,79 +10,79 @@ translate schinese before_main_menu_d6726edf:
 translate schinese new_moon_efdf9933:
 
     # "New moon" "{i}The [calendar.moon.name!t] is out.{/i} [calendar.moon.description!t]"
-    "New moon" "{i}[calendar.moon.name!t]已经出现了。{/i} [calendar.moon.description!t]"
+    "月相更替" "{i}[calendar.moon.name!t]出现了。{/i} [calendar.moon.description!t]"
 
 # game/BKevents.rpy:333
 translate schinese sill_checks_5f55122b:
 
     # sill sad "Master [MC.name]!\n{color=[c_red]}The threat to [brothel.name] is high or worse!{/color} You should hire more security.\nDo you want to end the day anyway?" (interact=False)
-    sill sad "主人[MC.name]!\n{color=[c_red]}对[brothel.name]的威胁很高或更糟!{/color}你应该雇佣更多安保人员。\n你还是要结束今天的营业吗?" (interact=False)
+    sill sad "[MC.name]!\n{color=[c_red]}对[brothel.name]的威胁很高或更糟!{/color}你应该雇佣更多安保人员。\n你要保持现在的设置直接开始营业吗?" (interact=False)
 
 # game/BKevents.rpy:345
 translate schinese sill_checks_ce64d60a:
 
     # sill sad "Master [MC.name]!\n{color=[c_red]}[brothel.name] is [cleanliness]!{/color} You should hire more cleaners.\nDo you want to end the day anyway?" (interact=False)
-    sill sad "主人[MC.name]!\n{color=[c_red]}[brothel.name]已经[cleanliness]了!{/color}你应该雇佣更多清洁工。\n你还是要结束今天的营业吗?" (interact=False)
+    sill sad "[MC.name]!\n{color=[c_red]}[brothel.name]已经[cleanliness]了!{/color}你应该雇佣更多清洁工。\n你要保持现在的设置直接开始营业吗?" (interact=False)
 
 # game/BKevents.rpy:355
 translate schinese sill_checks_b9b5ede4:
 
     # sill sad "Master [MC.name]!\n{color=[c_lightred]}Only [brothel.customer_count] customers are expected at [brothel.name] tonight.{/color} You should raise advertising.\nDo you want to end the day anyway?" (interact=False)
-    sill sad "主人[MC.name]!\n{color=[c_lightred]}今晚预计只有[brothel.customer_count]位客人来[brothel.name]。{/color}你应该增加广告投放。\n你还是要结束今天的营业吗?" (interact=False)
+    sill sad "[MC.name]!\n{color=[c_lightred]}今晚预计只有[brothel.customer_count]位客人来[brothel.name]。{/color}你应该增加广告投放。\n你要保持现在的设置直接开始营业吗?" (interact=False)
 
 # game/BKevents.rpy:551
 translate schinese chapter2_1367ef10:
 
     # "You have reached a new chapter! There is a total of 6 chapters. With each chapter, you can move to a new brothel and develop your business."
-    "你已经到达一个新的章节!共有6个章节。随着每个章节的推移,你可以搬到一个新的娼馆并发展你的事业。"
+    "故事已经推进到新的章节!一共有六个章节。随着主线剧情的推移,你可以搬到更好的位置，经营更大的青楼。"
 
 # game/BKevents.rpy:553
 translate schinese chapter2_7a1b9cbf:
 
     # sill happy "You can now move this operation to a larger brothel. Go to the {b}city{/b} tab to set up your new quarters."
-    sill happy "你现在可以搬到一个更大的娼馆了。前往{b}城市{/b}标签页设置你的新据点。"
+    sill happy "你现在可以搬到一个更好的位置扩大经营规模了。前往{b}城市{/b}标签页设置你的新产业。"
 
 # game/BKevents.rpy:571
 translate schinese rank_message_c0db008a:
 
     # sill "You now hold a proper pimp license! It is time I told you about your girls' ranks and reputation."
-    sill "你现在持有正式的皮条客执照!是时候告诉你关于女孩等级和声誉的事了。"
+    sill "你现在持有正式的皮条客执照!是时候告诉你关于女孩的等级和声望的事了。"
 
 # game/BKevents.rpy:574
 translate schinese rank_message_dc9d8fdb:
 
     # sill "Would you like to learn about girl ranks and reputation?" nointeract
-    sill "你想学习关于女孩等级和声誉的知识吗?" nointeract
+    sill "你想学习关于女孩的等级和声望的知识吗?" nointeract
 
 # game/BKevents.rpy:591
 translate schinese rank_message_baed337f:
 
     # "Your girls may now reach rank [rk]."
-    "你的女孩现在可以达到[rk]级。"
+    "你的女孩现在最高可以达到[rk]级。"
 
 # game/BKevents.rpy:637
 translate schinese advance_to_chapter_1ef7a1d7:
 
     # sill "Do you want to rename your brothel for the occasion?" nointeract
-    sill "你想为这个场合为你的娼馆改名吗?" nointeract
+    sill "你想为你的青楼起一个新的名字吗?" nointeract
 
 # game/BKevents.rpy:663
 translate schinese advance_to_chapter_326959e3:
 
     # "[chosen_district.name] is the district where you are currently established. Please choose a different district."
-    "[chosen_district.name]是您当前所在的区域。请选择其他区域。"
+    "您现在就在[chosen_district.name]。请选择一个其他区域。"
 
 # game/BKevents.rpy:698
 translate schinese advance_to_chapter_1ef7a1d7_1:
 
     # sill "Do you want to rename your brothel for the occasion?" nointeract
-    sill "你想为这个场合重命名你的青楼吗?" nointeract
+    sill "你想为你的青楼起一个新的名字吗?" nointeract
 
 # game/BKevents.rpy:824
 translate schinese run_away_d1b4784e:
 
     # sill sad "Master! [girl.fullname] has escaped!!!"
-    sill sad "主人! [girl.fullname]逃脱了!"
+    sill sad "主人! [girl.fullname]逃跑了!"
 
 # game/BKevents.rpy:852
 translate schinese run_away_47f409f7:
@@ -118,7 +118,7 @@ translate schinese run_away_39ee0da0:
 translate schinese run_away_5894837b:
 
     # "She might reappear in a few days, somewhere in the city. You should look around."
-    "她可能会在几天内的某个地方重新出现在城里。你应该四处寻找。"
+    "她可能会在未来几天内的某个时间出现在城里的某个地方。你应该四处寻找。"
 
 # game/BKevents.rpy:918
 translate schinese run_away_39ee0da0_1:
@@ -130,13 +130,13 @@ translate schinese run_away_39ee0da0_1:
 translate schinese run_away_5894837b_1:
 
     # "She might reappear in a few days, somewhere in the city. You should look around."
-    "她可能会在几天内的某个地方重新出现在城里。你应该四处寻找。"
+    "她可能会在未来几天内的某个时间出现在城里的某个地方。你应该四处寻找。"
 
 # game/BKevents.rpy:924
 translate schinese run_away_7bf33617:
 
     # you "I guess she didn't really belong here. Let her go."
-    you "看来她并不真正属于这里。让她走吧。"
+    you "看来她的心不在这里。让她走吧。"
 
 # game/BKevents.rpy:950
 translate schinese found_runaway_girl_18334eca:
@@ -148,13 +148,13 @@ translate schinese found_runaway_girl_18334eca:
 translate schinese found_runaway_girl_c4a9f1f9:
 
     # "[girl.name] looks absent-minded. She hasn't been hurt, but has a strange bruise on her neck."
-    "[girl.name]看起来心不在焉。她没有受伤,但脖子上有一个奇怪的瘀伤。"
+    "[girl.name]看起来心不在焉。她没有受伤,但脖子上有一道奇怪的瘀痕。"
 
 # game/BKevents.rpy:959
 translate schinese found_runaway_girl_dec4d47f:
 
     # "The slavers have brought you [girl.fullname] back."
-    "那些奴隶贩子把[girl.fullname]带了回来。"
+    "那些奴隶贩子把[girl.fullname]绑了回来。"
 
 # game/BKevents.rpy:961
 translate schinese found_runaway_girl_cbb5edaa:
@@ -166,43 +166,43 @@ translate schinese found_runaway_girl_cbb5edaa:
 translate schinese found_runaway_girl_70f3d55d:
 
     # "The solemn guild henchmen ignore her plea and deliver her to you. She has been roughed up a little, but she'll be fine."
-    "那些严肃的工会打手无视她的哀求,把她送回给你。她受了点伤,但会没事的。"
+    "那些凶狠的公会打手无视她的哀求,把她绑了回来。她受了点伤,不过早晚会恢复的。"
 
 # game/BKevents.rpy:969
 translate schinese found_runaway_girl_938bac40:
 
     # "The city guard have brought you [girl.fullname] back, kicking and screaming."
-    "城市守卫把[girl.fullname]带了回来,又哭又闹。"
+    "城市卫队把[girl.fullname]带了回来,她一路上又哭又闹。"
 
 # game/BKevents.rpy:971
 translate schinese found_runaway_girl_dbca4bcc:
 
     # girl.char "Let me go you brutes! Aw, I hate you all..."
-    girl.char "放了我你这些暴徒!啊,我恨你们所有人..."
+    girl.char "放开我你这些混蛋!啊,我恨你们所有人..."
 
 # game/BKevents.rpy:973
 translate schinese found_runaway_girl_3889dcce:
 
     # "The guards laugh and push her to the ground in front of the brothel. She is half naked and her body reeks of semen. It seems they raped her repeatedly before bringing her back."
-    "守卫们大笑着把她推倒在青楼门前。她半裸着身子,全身散发着精液的气味。看来他们在把她带回来之前一直在强奸她。"
+    "守卫们大笑着把她踢倒在青楼门前。她衣衫不整,浑身散发着腥臭的气味。看来他们在把她带回来之前一直在凌辱她。"
 
 # game/BKevents.rpy:981
 translate schinese found_runaway_girl_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空房间让她住下了..."
 
 # game/BKevents.rpy:1008
 translate schinese found_runaway_girl_no_room_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
-    "{b}[girl.fullname]{/b}已经被送到农场了。"
+    "{b}[girl.fullname]{/b}已经被送往农场。"
 
 # game/BKevents.rpy:1025
 translate schinese found_runaway_girl_no_room_decd7840:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "她无法再回到[girl.job]的岗位上,所以被安排休养了。"
+    "她无法再回到[girl.job]的岗位上,所以被自动安排休息了。"
 
 # game/BKevents.rpy:1030
 translate schinese found_runaway_girl_no_room_907e67a3:
@@ -214,31 +214,31 @@ translate schinese found_runaway_girl_no_room_907e67a3:
 translate schinese found_runaway_girl_come_back_a10e0ff9:
 
     # "The [hunters] are back with [girl.fullname] in chains. She looks exhausted."
-    "[hunters]带着镣铐押送[girl.fullname]回来。她看起来筋疲力尽。"
+    "[hunters]用镣铐押送[girl.fullname]回来。她看起来筋疲力尽。"
 
 # game/BKevents.rpy:1043
 translate schinese found_runaway_girl_come_back_3816ee7d:
 
     # you "We'll take it from here."
-    you "我们会接手的。"
+    you "接下来就交给我吧。"
 
 # game/BKevents.rpy:1047
 translate schinese found_runaway_girl_come_back_2ec9063b:
 
     # sill sad "Master! There's a problem. We don't have room for her in the brothel..."
-    sill sad "主人!出现了一个问题。我们的青楼没有空间容纳她..."
+    sill sad "主人!出现了一个问题。我们的青楼没有空房间让她住下了..."
 
 # game/BKevents.rpy:1072
 translate schinese found_runaway_girl_come_back_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
-    "{b}[girl.fullname]{/b}已经被送到农场了。"
+    "{b}[girl.fullname]{/b}已经被送往农场。"
 
 # game/BKevents.rpy:1089
 translate schinese found_runaway_girl_come_back_decd7840:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "她无法再做一个[girl.job]，只能静候终结。"
+    "她无法再回到[girl.job]的岗位上,所以被自动安排休息了。"
 
 # game/BKevents.rpy:1092
 translate schinese found_runaway_girl_come_back_907e67a3:
@@ -250,43 +250,43 @@ translate schinese found_runaway_girl_come_back_907e67a3:
 translate schinese found_escaped_girl_679c7ad8:
 
     # "On your way to the [girl.location], you see [girl.name], sitting in the dirt and trembling in her torn clothes. It seems she hasn't eaten in days."
-    "在去[girl.location]的路上，你看到[girl.name]蜷缩在泥土中,穿着破烂的衣服瑟瑟发抖。看来她已经好几天没吃东西了。"
+    "在去[girl.location]的路上，你看到[girl.name]蜷缩在泥土中,穿着破烂的衣服瑟瑟发抖。看来她已经好几天没吃饱饭了。"
 
 # game/BKevents.rpy:1114
 translate schinese found_escaped_girl_0b29fd61:
 
     # "She hasn't seen you yet."
-    "她还没有发现你。"
+    "她还没有注意到你。"
 
 # game/BKevents.rpy:1117
 translate schinese found_escaped_girl_2400c9b6:
 
     # you "Oh, but I haven't got enough room in the brothel to take her back."
-    you "唉,我的青楼无法收留她。"
+    you "唉,我的青楼没有多余的房间留给她了。"
 
 # game/BKevents.rpy:1123
 translate schinese found_escaped_girl_275fba30:
 
     # you "Well, I'll try and catch her another day."
-    you "算了,我以后再试试抓到她吧。"
+    you "算了,我以后会抓到她的。"
 
 # game/BKevents.rpy:1127
 translate schinese found_escaped_girl_43e99c61:
 
     # "[girl.fullname] has moved to a new location."
-    "[girl.fullname]已经换了新的住所。"
+    "[girl.fullname]已经远走他乡。"
 
 # game/BKevents.rpy:1130
 translate schinese found_escaped_girl_4dc83d43:
 
     # you "Forget it. I was never too fond of her anyway."
-    you "算了吧,反正我也没多喜欢她。"
+    you "算了,反正我也没多喜欢她。"
 
 # game/BKevents.rpy:1146
 translate schinese found_escaped_girl_ab62619c:
 
     # you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
-    you "[girl.name]...是我。我知道青楼的生活很艰难,但你应该回来。我们想你了。"
+    you "[girl.name]...是我。我知道青楼的生活很艰难,但你应该回家。大伙都很想念你。"
 
 # game/BKevents.rpy:1150
 translate schinese found_escaped_girl_2f2948b5:
@@ -310,7 +310,7 @@ translate schinese found_escaped_girl_22820a44:
 translate schinese found_escaped_girl_decd7840:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "她无法再做一个[girl.job]，只能静候终结。"
+    "她无法再回到[girl.job]的岗位上,所以被自动安排休息了。"
 
 # game/BKevents.rpy:1171
 translate schinese found_escaped_girl_907e67a3:
@@ -8606,11 +8606,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:4017
     old "No, keep her and change her training to 'tough'"
-    new "不,留下她,并将她的训练改为'强硬'"
+    new "不,留下她,并将她的训练模式改为'强硬'"
 
     # game/BKevents.rpy:4017
     old "No, keep her and change her training to 'hardcore'"
-    new "不,留下她,并将她的训练改为'激烈'"
+    new "不,留下她,并将她的训练模式改为'硬核'"
 
     # game/BKevents.rpy:4059
     old "Okay, sure"
@@ -8909,7 +8909,7 @@ translate schinese advertising_intro_11fdb519:
 translate schinese advertising_intro_a3d93716:
 
     # "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
-    "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
+    "你得到了一套新的宣传制服,这增加了青楼的{b}宣传效果{/b}。以后肯定还有办法弄到更加吸引人的装束。"
 
 # game/BKevents.rpy:4201
 translate schinese add_billboard_a7399b46:
@@ -8933,7 +8933,7 @@ translate schinese first_contract_dae0ec55_1:
 translate schinese contract_MC_event_4027e073:
 
     # "Demonic Voice" "{font=SFBurlingtonScript.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
-    "Demonic Voice" "{font=DejaVuSans.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
+    "恶魔的低语" "{font=DejaVuSans.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
 
 # game/BKevents.rpy:4970
 translate schinese contract_MC_event_f80c140c:

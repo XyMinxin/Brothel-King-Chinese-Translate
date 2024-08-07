@@ -376,7 +376,7 @@ label init_game(quick=False):
         thieves_guild = Location("Thieves guild", pic = "Thieves guild.webp", secret = True, menu = ("查看盗贼公会的特价商品", "visit_thieves_guild"))
 
         harbor = Location("Harbor", pic = "Harbor.webp", menu = ("拜访种马贩子", "visit_stella"), menu_costs_AP=False) # Stallion merchant
-        shipyard = Location("Shipyard", pic = "Shipyard.webp", menu = ("砍伐木材", "collect_wood")) # Wood extraction
+        shipyard = Location("Shipyard", pic = "Shipyard.webp", menu = ("获取木材", "collect_wood")) # Wood extraction
         taverns = Location("Taverns", pic = "Taverns.webp")
         seafront = Location("Seafront", pic = "Seafront.webp", menu = ("拜访怪老爹", "visit_papa"), menu_costs_AP=False)
         beach = Location("Beach", pic = "Beach.webp", menu = ("制造染料", "collect_dye")) # Dye
