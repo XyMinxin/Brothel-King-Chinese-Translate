@@ -778,7 +778,7 @@ init -10 python:
                          "Waterfalls" : "瀑布",
 
                          ## 执照名称 ##
-                         "No license" : "没有执照",
+                         "No license" : "无需执照",
                          "Pimp license" : "皮条客执照",
                          "Whoremonger license" : "妓女贩执照",
                          "Brothelmaster license" : "青楼主执照",

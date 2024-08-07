@@ -257,7 +257,7 @@ label free_chat_likes(girl):
 
     you "What are your favorite things?"
 
-    $ thing_cn = translate_cn(thing, girl_related_dict)
+    $ thing_cn = tl_cn(thing, girl_related_dict)
 
     call dialogue(girl, "free_chat_likes") from _call_dialogue_30 #! , custom_arg=h)
 
@@ -271,7 +271,7 @@ label free_chat_dislikes(girl):
 
     you "Is there anything you dislike?"
 
-    $ thing_cn = translate_cn(thing, girl_related_dict)
+    $ thing_cn = tl_cn(thing, girl_related_dict)
 
     call dialogue(girl, "free_chat_dislikes") from _call_dialogue_31 #, custom_arg=(thing, worst))
 
@@ -678,7 +678,7 @@ label free_flirt_sex_tastes(girl):
 
         if girl.personality_unlock[act] and dice(6) >= 4:
 
-            $ renpy.say(girl.char, "你知道是什么让我对 %s着迷吗?" % long_act_description[act])
+            $ renpy.say(girl.char, "你知道是什么让我对%s着迷吗？" % long_act_description[act])
 
             $ text1 = fix_description[fix.name + " description"].lower()
 

@@ -941,7 +941,7 @@ label slave_chat_tastes(girl):
 
             $ thing, best = girl.talk_tastes("likes")
 
-            $ thing_cn = translate_cn(thing, girl_related_dict)
+            $ thing_cn = tl_cn(thing, girl_related_dict)
 
             call dialogue(girl, "slave chat tastes likes") from _call_dialogue_150
 
@@ -951,7 +951,7 @@ label slave_chat_tastes(girl):
 
             $ thing, worst = girl.talk_tastes("dislikes")
 
-            $ thing_cn = translate_cn(thing, girl_related_dict)
+            $ thing_cn = tl_cn(thing, girl_related_dict)
 
             call dialogue(girl, "slave chat tastes dislikes") from _call_dialogue_151
 

@@ -3363,7 +3363,7 @@ init -2 python:
             message = ""
 
             if not self.archetypes[perk.archetype].unlocked:
-                message += translate_cn(perk.archetype, archetype_name_dict) + "暂时是锁定的。\n"
+                message += tl_cn(perk.archetype, archetype_name_dict) + "暂时是锁定的。\n"
             elif val < perk.value:
                 message += str(perk.value) + " 更多的等级必须先解锁。\n"
             elif self.rank < perk.min_rank:

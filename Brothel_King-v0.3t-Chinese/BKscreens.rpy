@@ -2974,7 +2974,7 @@ screen perks(girl):
                                 add im.MatrixColor(girl.archetypes[archetype].get_pic(portrait=True).get(*res_tb(75)), im.matrix.desaturate()) idle_alpha 0.6 selected_hover_alpha 1.0 selected_idle_alpha 1.0
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha 0.8
 
-                        text translate_cn(archetype, archetype_name_dict) size res_font(20) selected_bold True color c_ui_dark  selected_color c_black xalign 0.5 font "bk.ttf" selected_outlines [ (2, "#ffffff", 0, 0) ]  # color c_darkgrey
+                        text tl_cn(archetype, archetype_name_dict) size res_font(20) selected_bold True color c_ui_dark  selected_color c_black xalign 0.5 font "bk.ttf" selected_outlines [ (2, "#ffffff", 0, 0) ]  # color c_darkgrey
 
         frame background c_ui_dark xalign 0.5 yalign 0.5 ypadding 0 xpadding 0 xmargin 0:
             fixed fit_first True:
@@ -3579,7 +3579,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
                     add ProportionalScale("UI/" + license_dict[0][1], *res_tb(50)) xalign 0.5
 
-                text __(license_dict[1][0]) + __("\nrequired") xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
+                text tl_cn(license_dict[1][0], location_name_dict) + __("\nrequired") xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["warehouse"], context) id "b2"
             use district_button(district_dict["docks"], context) id "b3"
@@ -6058,7 +6058,7 @@ screen postings(qlist):
                                     else:
                                         $ t = "+"
 
-                                    text "[stat!t]" + " " + t size res_font(14) color c_brown
+                                    text tl_cn([stat!t], girl_related_dict) + " " + t size res_font(14) color c_brown
 
                                 textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size res_font(14) text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
                                     tooltip "课程可能导致女孩的技能超过等级上限。"
@@ -6076,13 +6076,13 @@ screen postings(qlist):
 
                                 for stat, val in selected_quest.requirements:
 
-                                    text "[stat!t]" + " " + str(val) size res_font(14) color c_brown
+                                    text tl_cn([stat!t], stat_name_dict) + " " + str(val) size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 
                                 text "令人满意" size res_font(18) color c_prune
 
-                                text trait_name_dict[selected_quest.pos_traits[0].name] + ", " + trait_name_dict[selected_quest.pos_traits[1].name] size res_font(14) color c_emerald
+                                text trait_name_dict[selected_quest.pos_traits[0].name] + "，" + trait_name_dict[selected_quest.pos_traits[1].name] size res_font(14) color c_emerald
 
                                 text "" size res_font(18)
 

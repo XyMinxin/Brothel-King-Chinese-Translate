@@ -1334,7 +1334,7 @@ init -3 python:
     def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator="、"): # prune_empty removes empty entries from the list
 
         if prune_empty:
-            li = [translate_cn(x, [girl_related_dict, farm_related_dict]) for x in li if x]
+            li = [tl_cn(x, [girl_related_dict, farm_related_dict]) for x in li if x]
 
         if not li:
             return if_none
@@ -5329,7 +5329,7 @@ init -3 python:
 
 ## 中文翻译函数 ##
 
-    def translate_cn(text, translation_dicts, default_value=None):
+    def tl_cn(text, translation_dicts, default_value=None):
         if isinstance(translation_dicts, dict):
             # 如果 translation_dicts 是单个字典
             if text in translation_dicts:
@@ -5343,22 +5343,6 @@ init -3 python:
         if default_value is not None:
             return default_value
         else:
-            return text    
-    
-    def tl_cn(self, translation_dicts, default_value=None):
-        if isinstance(translation_dicts, dict):
-            # 如果 translation_dicts 是单个字典
-            if self in translation_dicts:
-                return translation_dicts[self]
-        else:
-            # 如果 translation_dicts 是字典列表
-            for translation_dict in translation_dicts:
-                if self in translation_dict:
-                    return translation_dict[self]
-        
-        if default_value is not None:
-            return default_value
-        else:
-            return self
+            return text
 
 #### END OF BK FUNCTIONS FILE ####

@@ -363,7 +363,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3578
     old "\nrequired"
-    new "\n需要"
+    new "\n要求"
 
     # game/BKscreens.rpy:3746
     old "{/b}. Press "
@@ -1044,7 +1044,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3553
     old "No license\nrequired"
-    new "无需许可\n"
+    new "无需许可证\n要求"
 
     # game/BKscreens.rpy:3909
     old "Take a look around (1 "
