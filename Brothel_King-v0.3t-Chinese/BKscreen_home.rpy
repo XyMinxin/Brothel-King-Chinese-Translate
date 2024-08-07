@@ -170,7 +170,7 @@ screen right_menu_mc():
         if auto_spells:
             $ ttip += __("和") + str(auto_spells) + __("个自动施放的法术.")
         else:
-            $ ttip += "."
+            $ ttip += "。"
         
         $ ttip += "\n({i}快捷键: {u}C{/u}{/i})"
             

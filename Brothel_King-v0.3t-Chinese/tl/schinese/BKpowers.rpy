@@ -634,7 +634,7 @@ translate schinese powers_intro_c2289b51:
 translate schinese powers_intro_760aa20c:
 
     # you "I did not... Hey!"
-    you "I did not... Hey!"
+    you "我没有... 嘿!"
 
 # game/BKpowers.rpy:1454
 translate schinese powers_intro_2b23e417:
@@ -646,25 +646,25 @@ translate schinese powers_intro_2b23e417:
 translate schinese powers_intro_74e6f621:
 
     # "*CRACK*"
-    "*CRACK*"
+    "*破裂*"
 
 # game/BKpowers.rpy:1462
 translate schinese powers_intro_bfc851a3:
 
     # you "What... What was that?"
-    you "What... What was that?"
+    you "什....那是什么东西！？"
 
 # game/BKpowers.rpy:1469
 translate schinese powers_intro_28a72783:
 
     # gizel upset "Look!"
-    gizel upset "Look!"
+    gizel upset "看!"
 
 # game/BKpowers.rpy:1484
 translate schinese powers_intro_cbe8c193:
 
     # you "What on earth is that?"
-    you "What on earth is that?"
+    you "那到底是什么鬼东西?"
 
 # game/BKpowers.rpy:1486
 translate schinese powers_intro_689c9dbc:
@@ -676,29 +676,29 @@ translate schinese powers_intro_689c9dbc:
 translate schinese powers_intro_0aa1970b:
 
     # gizel "It appears to be a floating deck of cards."
-    gizel "It appears to be a floating deck of cards."
+    gizel "它看起来像是一副漂浮的纸牌。"
 
 # game/BKpowers.rpy:1490
 translate schinese powers_intro_a21e6761:
 
     # you "Such sharp wits. That's what I like about you..."
-    you "Such sharp wits. That's what I like about you..."
+    you "大智若愚。这就是我喜欢你的地方..."
 
 # game/BKpowers.rpy:1494
 translate schinese powers_intro_ca6fc252:
 
     # gizel upset "Shut up! I think it's beckoning you. Come on, pick a card!"
-    gizel upset "Shut up! I think it's beckoning you. Come on, pick a card!"
+    gizel upset "住口!我想它在呼唤你。来吧，抽一张牌！"
 
 # game/BKpowers.rpy:1496
 translate schinese powers_intro_e1175aa4:
 
     # you "What, are you crazy?" with vpunch
-    you "What, are you crazy?" with vpunch
+    you "什么，你疯了吗？！" with vpunch
 
 # game/BKpowers.rpy:1498
 translate schinese powers_intro_9bf1152d:
 
     # you "(What am I saying... Of course she's crazy.)"
-    you "(What am I saying... Of course she's crazy.)"
+    you "(我在说什么... 她肯定是疯了。)"
 

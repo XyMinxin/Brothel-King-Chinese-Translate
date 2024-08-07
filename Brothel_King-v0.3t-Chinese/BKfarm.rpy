@@ -81,7 +81,7 @@ init -2 python:
                 self.minions.append(mn)
                 renpy.play(s_moo, "sound")
 #                renpy.say ("", "Adding to " + self.name)
-                return True, mn.name + ", 一个等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ", 已经加入到 " + farm_related_dict[self.name] + "."
+                return True, mn.name + ", 一个等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ", 已经加入到 " + farm_related_dict[self.name] + "。"
             elif self.can_upgrade():
                 if self.rank > 0:
                     renpy.say("", "农场的 " + farm_related_dict[self.name] + " 现在满员了.")
@@ -156,7 +156,7 @@ init -2 python:
                 self.rank += 1
                 renpy.play(s_gold, "sound")
                 unlock_pic(self.pic.path)
-                return True, "这个" + farm_related_dict[self.name] + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " 个 " + farm_related_dict[self.minion_type] + "."
+                return True, "这个" + farm_related_dict[self.name] + "已经扩张完毕，现在它可以同时容纳" + str(self.rank) + " 个 " + farm_related_dict[self.minion_type] + "。"
             else:
                 return False, ""
 
@@ -527,7 +527,7 @@ init -2 python:
                         descript += girl.name + " 又哭又闹, 但吉泽尔一边嘲讽着一边把她踢进 " + farm_related_dict[self.installation.name] + " 接受训练."
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "resisted"]))
                     elif reaction == "refused":
-                        descript += girl.name + " 哀求着不要, 但吉泽尔一边怒吼着一边把她踢进 " + farm_related_dict[self.installation.name] + "."
+                        descript += girl.name + " 哀求着不要, 但吉泽尔一边怒吼着一边把她踢进 " + farm_related_dict[self.installation.name] + "。"
                         calendar.set_alarm(calendar.time+1, StoryEvent(label="farm_resisted", type="morning", call_args=[girl, "refused"]))
 
                 # Learn from interaction
@@ -602,7 +602,7 @@ init -2 python:
                         girl.personality_unlock[self.act] = True
                         farm.knows["amb_acts"][girl].append(self.act)
                     else:
-                        descript += " " + girl.name + " 十分矛盾, 她也不知道自己到底有什么样的感觉 " + long_act_description[self.act] + "."
+                        descript += " " + girl.name + " 十分矛盾, 她也不知道自己到底有什么样的感觉 " + long_act_description[self.act] + "。"
 
                 elif self.act in girl.pos_acts: # Positive act
                     changes["libido"] += 1
@@ -611,7 +611,7 @@ init -2 python:
 
                     if not self.act in farm.knows["pos_acts"][girl]:
                         ev_sound = s_spell
-                        descript += " " + girl.name + " 面色潮红，呼吸急促, 她的乳头勃起得像葡萄. " + event_color["good"] % ("吉泽尔发现她喜欢 " + long_act_description[self.act] + ".")
+                        descript += " " + girl.name + " 面色潮红，呼吸急促, 她的乳头勃起得像葡萄. " + event_color["good"] % ("吉泽尔发现她喜欢 " + long_act_description[self.act] + "。")
                         girl.personality_unlock[self.act] = True
                         farm.knows["pos_acts"][girl].append(self.act)
                     else:
@@ -625,7 +625,7 @@ init -2 python:
                         changes["mood"] -= 1
                     if not self.act in farm.knows["neg_acts"][girl]:
                         ev_sound = s_spell
-                        descript += " " + girl.name + " 一直紧张和抗拒, 在整个训练过程中都十分害怕. " + event_color["a little bad"] % ("吉泽尔发现她讨厌 " + long_act_description[self.act] + ".")
+                        descript += " " + girl.name + " 一直紧张和抗拒, 在整个训练过程中都十分害怕. " + event_color["a little bad"] % ("吉泽尔发现她讨厌 " + long_act_description[self.act] + "。")
                         girl.personality_unlock[self.act] = True
                         farm.knows["neg_acts"][girl].append(self.act)
                     else:
@@ -880,7 +880,7 @@ init -2 python:
                 else:
                     descript += girl.fullname + "今天就在农场休息"
 
-                log.add_report(descript + ", " + farm_holding_dict[self.holding].lower() + ".")
+                log.add_report(descript + ", " + farm_holding_dict[self.holding].lower() + "。")
 
                 descript += ".\n" + farm_description["holding %s %s" % (self.mode, self.holding)] % (girl.name, girl.name)
                 act, decreased = farm_holding_stats[self.holding]

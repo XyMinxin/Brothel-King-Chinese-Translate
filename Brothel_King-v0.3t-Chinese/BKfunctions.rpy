@@ -469,7 +469,7 @@ init -3 python:
         return str(round_int(x))
 
     def str_dec(nb, decimals=2): # Returns a string of either an integer or a float, depending on the nb of decimals available
-        return ((("%." + str(decimals) + "f") % nb).rstrip("0")).rstrip(".")
+        return ((("%." + str(decimals) + "f") % nb).rstrip("0")).rstrip("。")
 
     def round_down(x): # Home-made version of math.floor
         return int(x)

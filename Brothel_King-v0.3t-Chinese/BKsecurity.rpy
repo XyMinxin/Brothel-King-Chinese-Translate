@@ -698,7 +698,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
         if not round2:
             $ MC.gold += loot
-            $ ("You let the surviving guards loot the battlefield, getting your share of " + event_color["good"] % "[loot] gold" + ".")
+            $ ("You let the surviving guards loot the battlefield, getting your share of " + event_color["good"] % "[loot] gold" + "。")
 
             $ log.add_report("{color=[c_green]}Battle results: " + str_int(loot) + " gold recovered.{/color}")
 
@@ -977,9 +977,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 if enemies:
                     $ dirt = int(brothel.change_dirt(100*enemies))
                     if hurt_girls:
-                        $ security_breach("[enemies] enemies overwhelmed your girls. " + event_color["bad"] % and_text(hurt_girls) + " were hurt" + ". The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + ".")
+                        $ security_breach("[enemies] enemies overwhelmed your girls. " + event_color["bad"] % and_text(hurt_girls) + " were hurt" + ". The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + "。")
                     else:
-                        $ security_breach("Your girls opposed no resistance to the enemy. The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + ".")
+                        $ security_breach("Your girls opposed no resistance to the enemy. The attackers set fire to your brothel before leaving, causing " + event_color["bad"] % "heavy damage (+[dirt] dirt)" + "。")
 
                     python:
                         burnt_furniture = rand_choice(brothel.furniture, dice(3)+1)

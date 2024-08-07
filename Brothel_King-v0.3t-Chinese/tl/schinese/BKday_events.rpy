@@ -12274,67 +12274,67 @@ translate schinese strings:
 translate schinese random_night_girl_event_a2b17c13:
 
     # girl.char "Oh, Master [MC.name]... How nice of you to come by... [emo_heart]"
-    girl.char "Oh, Master [MC.name]... How nice of you to come by... [emo_heart]"
+    girl.char "哦, [MC.name]主人... 你是专程来找我的吗，你真好... [emo_heart]"
 
 # game/BKday_events.rpy:1710
 translate schinese random_night_girl_event_28b9c2f0:
 
     # you "Here at [brothel.name], we're slashing pussy in half!"
-    you "Here at [brothel.name], we're slashing pussy in half!"
+    you "在[brothel.name], 我们会把女人切成两半!"
 
 # game/BKday_events.rpy:1713
 translate schinese random_night_girl_event_bef59d60:
 
     # you "C'mon, you want pussy, come on in Pussy Lovers! If we don't got it, you don't want it! Come on in Pussy lovers!"
-    you "C'mon, you want pussy, come on in Pussy Lovers! If we don't got it, you don't want it! Come on in Pussy lovers!"
+    you "来吧，你渴望做爱，来吧!欲求不满的人！只有试过了才知道!好色之徒都来吧!"
 
 # game/BKday_events.rpy:2266
 translate schinese onsen_night_event_wake_up_f5895f36:
 
     # girl.char "Oh, Master... Come over here, will you... [emo_heart]"
-    girl.char "Oh, Master... Come over here, will you... [emo_heart]"
+    girl.char "哦，主人... 到这来, 你要... [emo_heart]"
 
 # game/BKday_events.rpy:3335
 translate schinese night_girl_perform_08d79272:
 
     # girl.char "Aaah! [emo_heart]"
-    girl.char "Aaah! [emo_heart]"
+    girl.char "啊啊! [emo_heart]"
 
 # game/BKday_events.rpy:4038
 translate schinese night_girl_perform_1e22ec11_1:
 
     # "[girl.fullname] gasps in shock, and blood starts running down her thighs."
-    "[girl.fullname] gasps in shock, and blood starts running down her thighs."
+    "[girl.fullname]她被吓得喘不过气来，鲜血从大腿上顺流而下。"
 
 # game/BKday_events.rpy:5006
 translate schinese night_girl_perform_28be6530:
 
     # girl.char "Aaaah! [emo_heart]"
-    girl.char "Aaaah! [emo_heart]"
+    girl.char "啊啊! [emo_heart]"
 
 # game/BKday_events.rpy:5101
 translate schinese night_girl_perform_e9ba90da:
 
     # girl.char "Dear customers, feel free to take a good look at my slutty body... [emo_heart]"
-    girl.char "Dear customers, feel free to take a good look at my slutty body... [emo_heart]"
+    girl.char "尊贵的客人们，请尽情欣赏我淫荡的身体吧... [emo_heart]"
 
 # game/BKday_events.rpy:6210
 translate schinese night_girl_perform_15ff0d2b:
 
     # girl.char "Aaaah... Master is filling me up with warm, sticky cum... [emo_heart]"
-    girl.char "Aaaah... Master is filling me up with warm, sticky cum... [emo_heart]"
+    girl.char "啊啊... 主人把他又热又粘的精液全都灌注给我了... [emo_heart]"
 
 # game/BKday_events.rpy:6290
 translate schinese night_girl_perform_78798730:
 
     # "After getting it only halfway in, you find yourself stuck. [girl.name] is weeping quietly, and dry as the Hokoman desert."
-    "After getting it only halfway in, you find yourself stuck. [girl.name] is weeping quietly, and dry as the Hokoman desert."
+    "才做了一半，你发现自己卡住了。 [girl.name]静静地哭泣，那里就像撒哈拉沙漠一样干燥。"
 
 # game/BKday_events.rpy:6647
 translate schinese night_girl_perform_28be6530_1:
 
     # girl.char "Aaaah! [emo_heart]"
-    girl.char "Aaaah! [emo_heart]"
+    girl.char "啊啊! [emo_heart]"
 
 # game/BKday_events.rpy:7049
 translate schinese night_girl_perform_b20baa23:
@@ -12394,7 +12394,7 @@ translate schinese night_girl_perform_e18c5e89:
 translate schinese night_girl_perform_42e95b15:
 
     # girl.char "Ooooh... You're ripping my [_type] apart..."
-    girl.char "Ooooh... You're ripping my [_type] apart..."
+    girl.char "哦哦... You're ripping my [_type] apart..."
 
 translate schinese strings:
 
@@ -12776,7 +12776,7 @@ translate schinese strings:
 
     # game/BKday_events.rpy:2935
     old "[girl.name]的 [stat] 技能略有下降。."
-    new "[girl.name]的 [stat] 技能略有下降。."
+    new "[girl.name]的 [stat] 技能略有下降。"
 
     # game/BKday_events.rpy:7285
     old "让客人玩弄[girl.name]的小穴"

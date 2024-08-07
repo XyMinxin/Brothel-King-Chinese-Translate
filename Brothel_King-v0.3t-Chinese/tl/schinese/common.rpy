@@ -1205,7 +1205,7 @@ translate schinese strings:
 
     # renpy/common/_developer/developer.rpym:633
     old "Textures: [tex_count] ([tex_size_mb:.1f] MB)"
-    new "Textures: [tex_count] ([tex_size_mb:.1f] MB)"
+    new "纹理: [tex_count] ([tex_size_mb:.1f] MB)"
 
     # renpy/common/_developer/developer.rpym:637
     old "Image cache: [cache_pct:.1f]% ([cache_size_mb:.1f] MB)"
@@ -1229,7 +1229,7 @@ translate schinese strings:
 
     # renpy/common/_developer/inspector.rpym:61
     old "Size"
-    new "Size"
+    new "尺寸"
 
     # renpy/common/_developer/inspector.rpym:65
     old "Style"
@@ -1269,69 +1269,69 @@ translate schinese strings:
 
     # renpy/common/_errorhandling.rpym:555
     old "Open"
-    new "Open"
+    new "打开"
 
     # renpy/common/_errorhandling.rpym:557
     old "Opens the traceback.txt file in a text editor."
-    new "Opens the traceback.txt file in a text editor."
+    new "在文本编辑器中打开traceback.txt文件。"
 
     # renpy/common/_errorhandling.rpym:559
     old "Copy BBCode"
-    new "Copy BBCode"
+    new "复制BBCode"
 
     # renpy/common/_errorhandling.rpym:561
     old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
+    new "将traceback.txt文件作为BBcode复制到剪贴板上传到论坛，例如： https://lemmasoft.renai.us/."
 
     # renpy/common/_errorhandling.rpym:563
     old "Copy Markdown"
-    new "Copy Markdown"
+    new "复制Markdown"
 
     # renpy/common/_errorhandling.rpym:565
     old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
-    new "Copies the traceback.txt file to the clipboard as Markdown for Discord."
+    new "将traceback.txt文件复制到剪贴板，便于在Discord上进行反馈。"
 
     # renpy/common/_errorhandling.rpym:594
     old "An exception has occurred."
-    new "An exception has occurred."
+    new "游戏运行时出现异常。"
 
     # renpy/common/_errorhandling.rpym:617
     old "Rollback"
-    new "Rollback"
+    new "回滚操作"
 
     # renpy/common/_errorhandling.rpym:619
     old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    new "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
+    new "尝试回滚到上一个操作的节点，允许您保存或选择不同的选项。"
 
     # renpy/common/_errorhandling.rpym:626
     old "Ignores the exception, allowing you to continue."
-    new "Ignores the exception, allowing you to continue."
+    new "忽略异常，继续游戏。"
 
     # renpy/common/_errorhandling.rpym:628
     old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new "Ignores the exception, allowing you to continue. This often leads to additional errors."
+    new "忽略异常，继续游戏。这通常会导致更多的报错。"
 
     # renpy/common/_errorhandling.rpym:632
     old "Reload"
-    new "Reload"
+    new "重新加载"
 
     # renpy/common/_errorhandling.rpym:634
     old "Reloads the game from disk, saving and restoring game state if possible."
-    new "Reloads the game from disk, saving and restoring game state if possible."
+    new "重新加载游戏, 尽可能地保存和储存游戏数据。"
 
     # renpy/common/_errorhandling.rpym:637
     old "Console"
-    new "Console"
+    new "控制台"
 
     # renpy/common/_errorhandling.rpym:639
     old "Opens a console to allow debugging the problem."
-    new "Opens a console to allow debugging the problem."
+    new "打开控制台面板调试问题。"
 
     # renpy/common/_errorhandling.rpym:652
     old "Quits the game."
-    new "Quits the game."
+    new "退出游戏。"
 
     # renpy/common/_errorhandling.rpym:673
     old "Parsing the script failed."
-    new "Parsing the script failed."
+    new "解析脚本失败。"
 

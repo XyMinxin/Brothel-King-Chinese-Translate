@@ -2,7 +2,7 @@
 
 init python:
     achievement_list = [
-                        Achievement("简介：青楼管理101", "观看介绍。", pic="portrait.webp", pic_path="NPC/Sill/", target="intro"),
+                        Achievement("磨刀不误砍柴工", "观看新手教程。", pic="portrait.webp", pic_path="NPC/Sill/", target="intro"),
 
                         Achievement("新培训师：玛雅", "你已经解锁了玛雅。她可以提高女孩的自卫能力。", pic="portrait.webp", pic_path="NPC/Maya/", target="trainer maya"),
                         Achievement("新培训师：伦萨", "你已经解锁了伦萨。她可以把你的女孩训练成小偷。", pic="portrait.webp", pic_path="NPC/Renza/", target="trainer renza"),
@@ -12,7 +12,7 @@ init python:
                         Achievement("新培训师：斯特拉", "你已经解锁了斯特拉。她可以提高你的农场训练效果。", pic="portrait.webp", pic_path="NPC/Stella/", target="trainer stella"),
                         Achievement("新培训师：贝斯特", "你已经解锁了贝斯特。她可以帮助你收集资源。", pic="portrait.webp", pic_path="NPC/Bast/", target="trainer bast"),
                         Achievement("新培训师：戈尔迪", "你已经解锁了戈尔迪。她可以对你的女孩进行软核技术培训。", pic="portrait.webp", pic_path="NPC/Goldie/", target="trainer goldie"),
-                        Achievement("新培训师：公会女郎", "你已经解锁了公会女郎。她可以保护你的部分收入免于纳税。", pic="portrait.webp", pic_path="NPC/Taxgirl/", target="trainer taxgirl"),
+                        Achievement("新培训师：公会职员", "你已经解锁了公会职员。她可以保护你的部分收入免于纳税。", pic="portrait.webp", pic_path="NPC/Taxgirl/", target="trainer taxgirl"),
 
                         Achievement("新的商户：戈尔迪", "你已经解锁了牧场，戈尔迪在这里出售野兽和相关物品。", pic="portrait.webp", pic_path="NPC/Goldie/", target="merchant goldie"),
                         Achievement("新的商户：斯特拉", "斯特拉出售种马和相关物品，如果你敢接近她。", pic="portrait.webp", pic_path="NPC/Stella/", target="merchant stella"),
@@ -25,22 +25,22 @@ init python:
                         Achievement("新的商户：礼品店", "礼品店女孩卖的是....礼物。废话。", pic="portrait.webp", pic_path="NPC/Gift girl/", target="merchant giftgirl"),
                         Achievement("新的商户：双胞胎", "双胞胎，奥斯汀！双胞胎！", pic="body.webp", pic_path="NPC/Twins/", target="merchant twins"),
 
-                        Achievement("章节 1：黑帮老大", "你帮助一帮暴徒在下水道里干一个无助的女人。", pic="portrait naked.webp", pic_path="NPC/Sewer girl/", target="c1 gang"),
-                        Achievement("章节 1：正义之友", "你已经完成了第一章，并且站在了玛雅一边。", pic="portrait.webp", pic_path="NPC/Maya/", target="c1 good"),
-                        Achievement("章节 1：公会之友", "你已经完成了第一章，并且站在了伦萨一边。", pic="portrait.webp", pic_path="NPC/Renza/", target="c1 neutral"),
-                        Achievement("章节 1：守卫之友", "你已经完成了第一章，并且站在了队长一边。", pic="portrait.webp", pic_path="NPC/Captain/", target="c1 evil"),
+                        Achievement("第一章：狼狈为奸", "你帮助一帮暴徒在下水道里干一个无助的女人。", pic="portrait naked.webp", pic_path="NPC/Sewer girl/", target="c1 gang"),
+                        Achievement("第一章：正义之友", "你已经完成了第一章，并且站在了玛雅那一边。", pic="portrait.webp", pic_path="NPC/Maya/", target="c1 good"),
+                        Achievement("第一章：公会之友", "你已经完成了第一章，并且站在了伦萨那一边。", pic="portrait.webp", pic_path="NPC/Renza/", target="c1 neutral"),
+                        Achievement("第一章：守卫之友", "你已经完成了第一章，并且站在了上尉那一边。", pic="portrait.webp", pic_path="NPC/Captain/", target="c1 evil"),
 
-                        Achievement("章节 2：狩猎忍者", "你已经抓到了你的第一个忍者。", pic="kunoichi portrait.webp", pic_path="NPC/kunoichi/", target="c2 kunoichi"),
-                        Achievement("章节 2：痛苦回忆", "你已经了解了春香悲伤的过去。", pic="portrait.webp", pic_path="NPC/kunoichi/haruka/", target="c2 haruka"),
-                        Achievement("章节 2：温泉幽灵", "你在温泉中与水木发生了奇怪的、令人激动的邂逅。", pic="portrait.webp", pic_path="NPC/kunoichi/mizuki/", target="c2 mizuki"),
-                        Achievement("章节 2：顽皮学生", "你偷看了成香的秘密会议。", pic="portrait.webp", pic_path="NPC/kunoichi/narika/", target="c2 narika"),
+                        Achievement("第二章：狩猎忍者", "你已经抓到了你的第一个忍者。", pic="kunoichi portrait.webp", pic_path="NPC/kunoichi/", target="c2 kunoichi"),
+                        Achievement("第二章：痛苦回忆", "你已经了解了春香悲伤的过去。", pic="portrait.webp", pic_path="NPC/kunoichi/haruka/", target="c2 haruka"),
+                        Achievement("第二章：温泉幽灵", "你在温泉中与水木发生了奇怪的、令人激动的邂逅。", pic="portrait.webp", pic_path="NPC/kunoichi/mizuki/", target="c2 mizuki"),
+                        Achievement("第二章：顽皮学生", "你偷看了成香的秘密会议。", pic="portrait.webp", pic_path="NPC/kunoichi/narika/", target="c2 narika"),
 
                         Achievement("宝藏猎人：金发女郎", "你和那个金发碧眼的女郎发生了关系。", pic="amber ring.webp", pic_path="items/ring/", target="h treasure blonde"),
                         Achievement("宝藏猎人：粉发女孩", "你和那个粉红头发的女孩发生了关系。", pic="amber ring.webp", pic_path="items/ring/", target="h treasure pink"),
-                        Achievement("H：奴隶", "你与你的奴隶希露发生了火热的性关系。", pic="portrait2.webp", pic_path="NPC/Sill/", target="h sill1"),
+                        Achievement("H：希露", "你与你的奴隶希露发生了火热的性关系。", pic="portrait2.webp", pic_path="NPC/Sill/", target="h sill1"),
                         Achievement("H：女仆", "你与吉欧的女佣发生了关系。", pic="portrait blush.webp", pic_path="NPC/Maid/", target="h maid"),
                         Achievement("H：银行家", "你与银行家发生了关系。", pic="portrait.webp", pic_path="NPC/Banker/", target="h banker"),
-                        Achievement("H：船长", "你与法拉发生了关系。", pic="portrait.webp", pic_path="NPC/Captain/", target="h farah"),
+                        Achievement("H：上尉", "你与法拉发生了关系。", pic="portrait.webp", pic_path="NPC/Captain/", target="h farah"),
                         Achievement("H：中尉", "你与莉迪发生了关系。", pic="portrait.webp", pic_path="NPC/Lieutenant/", target="h lydie"),
                         Achievement("H：中士", "你与卡希夫发生了关系。", pic="portrait.webp", pic_path="NPC/Sergeant/", target="h kashiv"),
                         Achievement("H：守卫", "你与玛雅发生了关系.", pic="portrait.webp", pic_path="NPC/Maya/", target="h maya"),
@@ -48,7 +48,7 @@ init python:
                         Achievement("H：牧场主", "你与戈尔迪发生了关系。", pic="portrait.webp", pic_path="NPC/Goldie/", target="h goldie"),
                         Achievement("H：官员", "你与斯特拉发生了关系。", pic="portrait.webp", pic_path="NPC/Stella/", target="h stella"),
                         Achievement("H：将军", "你与卡发生了关系。", pic="ka portrait.webp", pic_path="NPC/Stella/", target="h ka"),
-                        Achievement("H：上将", "你与泽发生了关系。", pic="zee portrait.webp", pic_path="NPC/Stella/", target="h zee"),
+                        Achievement("H：上将", "你与泽伊发生了关系。", pic="zee portrait.webp", pic_path="NPC/Stella/", target="h zee"),
                         Achievement("H：猎人", "你与薇洛发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h willow"),
                         Achievement("H：亲戚", "你与薇洛的亲戚发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h relative"),
                         Achievement("H：猎人", "你与薇洛发生了关系。", pic="portrait.webp", pic_path="NPC/Willow/", target="h willow"),
@@ -60,18 +60,18 @@ init python:
                         Achievement("H：圣洁筑者", "你与贝斯特发生了关系。", pic="portrait.webp", pic_path="NPC/Bast/", target="h bast"),
                         Achievement("H：游泳者", "你与阿妮卡发生了关系。", pic="anika portrait.webp", pic_path="NPC/Jobgirl/beach/", target="h anika"),
 #                         Achievement("Bedded: The Adventurer", "You had sex with Scarlet.", pic="portrait.webp", pic_path="NPC/Jobgirl/", target="h jobgirl"), # Event not ready yet?
-                        Achievement("H：女税官", "你与奴隶主协会的女人发生了关系。", pic="portrait.webp", pic_path="NPC/taxgirl/", target="h taxgirl"),
-                        Achievement("H：气功忍者", "你与铃木发生了（反复）关系。", pic="portrait.webp", pic_path="NPC/suzume/", target="h suzume"),
-                        Achievement("H：贵族女孩", "你与焰村发生了关系。", pic="portrait.jpg", pic_path="NPC/homura/", target="h homura"),
+                        Achievement("H：女税务官", "你与奴隶主协会的女职员发生了关系。", pic="portrait.webp", pic_path="NPC/taxgirl/", target="h taxgirl"),
+                        Achievement("H：气功忍者", "你与云雀发生了（多次）关系。", pic="portrait.webp", pic_path="NPC/suzume/", target="h suzume"),
+                        Achievement("H：贵族千金", "你与焰发生了关系。", pic="portrait.jpg", pic_path="NPC/homura/", target="h homura"),
 
 
-                        Achievement("城市：突袭者", "你与 %s 位女冒险家发生了关系。", pic="impress0.webp", pic_path="NPC/encounters/", target="h impress", level_nb=4),
-                        Achievement("城市：奴隶学徒", "你帮助训练一个女奴。", pic="slave2.webp", pic_path="NPC/misc/", target="h slavegirl"),
-                        Achievement("城市：奴隶主人", "你与奴隶市场的女孩发生了关系。", pic="slave1.webp", pic_path="NPC/misc/", target="h slavemarket"),
-                        Achievement("城市：猫女", "你与 %s 位猫女发生了关系。", pic="cat found.webp", pic_path="NPC/encounters/", target="h catgirl", level_nb=2),
-                        Achievement("城市：吉普赛人", "你与一个吉普赛人女孩发生了关系。", pic="gypsy1_1.webp", pic_path="NPC/encounters/", target="h gypsy"),
-                        Achievement("城市：劫匪", "你与一个被打败的强盗发生了关系。", pic="rob5_1.webp", pic_path="NPC/encounters/", target="h robber"),
-                        Achievement("城市：赌徒", "你与一个赌博女孩发生了关系。", pic="gambler4_1.webp", pic_path="NPC/encounters/", target="h gambler"),
+                        Achievement("城市：冒险家", "你与%s位女冒险家发生了关系。", pic="impress0.webp", pic_path="NPC/encounters/", target="h impress", level_nb=4),
+                        Achievement("城市：训奴师", "你帮助训练一个女奴。", pic="slave2.webp", pic_path="NPC/misc/", target="h slavegirl"),
+                        Achievement("城市：奴隶商", "你与奴隶市场的女孩发生了关系。", pic="slave1.webp", pic_path="NPC/misc/", target="h slavemarket"),
+                        Achievement("城市：喵喵喵", "你与%s位猫娘发生了关系。", pic="cat found.webp", pic_path="NPC/encounters/", target="h catgirl", level_nb=2),
+                        Achievement("城市：占卜师", "你与一个吉普赛人女孩发生了关系。", pic="gypsy1_1.webp", pic_path="NPC/encounters/", target="h gypsy"),
+                        Achievement("城市：女飞贼", "你与一个被打败的强盗发生了关系。", pic="rob5_1.webp", pic_path="NPC/encounters/", target="h robber"),
+                        Achievement("城市：女赌徒", "你与一个赌博女孩发生了关系。", pic="gambler4_1.webp", pic_path="NPC/encounters/", target="h gambler"),
                         Achievement("圣诞快乐", "你与一个神秘的冬季访客发生了关系。", pic="portrait.webp", pic_path="NPC/Hmas/", target="hmas"),
 
 
@@ -190,14 +190,14 @@ init python:
                         Achievement("五星好评：伯爵阶级", "让一名伯爵阶级在青楼里达到最大的满足。", pic="Noble.webp", pic_path="UI/customers/", target="happy nobles"),
                         Achievement("五星好评：国王阶级", "让一名国王阶级在青楼里达到最大的满足。", pic="Royal.webp", pic_path="UI/customers/", target="happy royals"),
 
-                        Achievement("天赋精通：女仆", "在一名女孩上解锁女仆天赋树上的所有天赋分支。", pic="The Maid portrait.webp", pic_path="perks/", target="The Maid"),
-                        Achievement("天赋精通：优伶", "在一名女孩上解锁优伶天赋树上的所有天赋分支。", pic="The Player portrait.webp", pic_path="perks/", target="The Player"),
-                        Achievement("天赋精通：模特", "在一名女孩上解锁模特天赋树上的所有天赋分支。", pic="The Model portrait.webp", pic_path="perks/", target="The Model"),
-                        Achievement("天赋精通：花魁", "在一名女孩上解锁花魁天赋树上的所有天赋分支。", pic="The Courtesan portrait.webp", pic_path="perks/", target="The Courtesan"),
-                        Achievement("天赋精通：伴游", "在一名女孩上解锁伴游天赋树上的所有天赋分支。", pic="The Escort portrait.webp", pic_path="perks/", target="The Escort"),
-                        Achievement("天赋精通：狐娘", "在一名女孩上解锁狐娘天赋树上的所有天赋分支。", pic="The Fox portrait.webp", pic_path="perks/", target="The Fox"),
-                        Achievement("天赋精通：荡妇", "在一名女孩上解锁荡妇天赋树上的所有天赋分支。", pic="The Slut portrait.webp", pic_path="perks/", target="The Slut"),
-                        Achievement("天赋精通：新娘", "在一名女孩上解锁新娘天赋树上的所有天赋分支。", pic="The Bride portrait.webp", pic_path="perks/", target="The Bride"),
+                        Achievement("登峰造极：女仆", "在一名女孩上解锁女仆天赋树上的所有天赋分支。", pic="The Maid portrait.webp", pic_path="perks/", target="The Maid"),
+                        Achievement("登峰造极：优伶", "在一名女孩上解锁优伶天赋树上的所有天赋分支。", pic="The Player portrait.webp", pic_path="perks/", target="The Player"),
+                        Achievement("登峰造极：模特", "在一名女孩上解锁模特天赋树上的所有天赋分支。", pic="The Model portrait.webp", pic_path="perks/", target="The Model"),
+                        Achievement("登峰造极：花魁", "在一名女孩上解锁花魁天赋树上的所有天赋分支。", pic="The Courtesan portrait.webp", pic_path="perks/", target="The Courtesan"),
+                        Achievement("登峰造极：伴游", "在一名女孩上解锁伴游天赋树上的所有天赋分支。", pic="The Escort portrait.webp", pic_path="perks/", target="The Escort"),
+                        Achievement("登峰造极：狐娘", "在一名女孩上解锁狐娘天赋树上的所有天赋分支。", pic="The Fox portrait.webp", pic_path="perks/", target="The Fox"),
+                        Achievement("登峰造极：荡妇", "在一名女孩上解锁荡妇天赋树上的所有天赋分支。", pic="The Slut portrait.webp", pic_path="perks/", target="The Slut"),
+                        Achievement("登峰造极：新娘", "在一名女孩上解锁新娘天赋树上的所有天赋分支。", pic="The Bride portrait.webp", pic_path="perks/", target="The Bride"),
 
                         Achievement("侍奉狂热", "让女孩进行性服侍 %s 次。", pic="egg vibrator.webp", pic_path="items/toy/", target="perform service", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
                         Achievement("性爱狂热", "让女孩进行性交 %s 次。", pic="lace panties.webp", pic_path="items/accessory/", target="perform sex", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
@@ -218,15 +218,15 @@ init python:
                         Achievement("青楼之王", "在困难难度下达到无尽模式。", pic="silver statue.webp", pic_path="items/furniture/", target="win hard"),
                         Achievement("青楼帝皇", "在最难难度下达到无尽模式。", pic="gold statue.webp", pic_path="items/furniture/", target="win insane"),
 
-                        Achievement("Faust", "施展 %s 种邪恶力量。", pic="evil deck.webp", pic_path="UI/powers/", target="powers", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 50, 5 : 100}), #!
-                        Achievement("Purple Rain", "积累 %s 紫色 魔酒。", pic="purple mojo.webp", pic_path="UI/powers/", target="purple mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
-                        Achievement("Dr. Greenthumb", "积累 %s 绿色 魔酒。", pic="orb_green.webp", pic_path="UI/powers/", target="green mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
-                        Achievement("Blue Monday", "积累 %s 蓝色 魔酒。", pic="orb_blue.webp", pic_path="UI/powers/", target="blue mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
-                        Achievement("Red Alert", "积累 %s 红色 魔酒。", pic="orb_red.webp", pic_path="UI/powers/", target="red mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
-                        Achievement("Yellow Fever", "积累 %s 黄色 魔酒。", pic="orb_yellow.webp", pic_path="UI/powers/", target="yellow mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
-                        Achievement("Can't make an omelet...", "打破 %s 个女孩的理智。", pic="whip.webp", pic_path="Items/weapon/", target="broken", level_nb=5, requirements={1 : 1, 2 : 3, 3 : 10, 4 : 25, 5 : 50}), #!
-                        Achievement("Somebody Else's Problem", "把一个心碎的女孩扔在街上。", pic="navThe Slums_idle.webp", pic_path="UI/", target="broken girl free"), #!
-                        Achievement("See? I'm Not That Bad!", "把一个破碎的女孩送去精神病院。", pic="navThe Cathedra_idle.webp", pic_path="UI/", target="broken girl asylum"), #!
+                        Achievement("十恶不赦", "施展 %s 种邪恶力量。", pic="evil deck.webp", pic_path="UI/powers/", target="powers", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 50, 5 : 100}), #!
+                        Achievement("紫雨天降", "积累 %s 紫色 魔酒。", pic="purple mojo.webp", pic_path="UI/powers/", target="purple mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
+                        Achievement("绿色园丁", "积累 %s 绿色 魔酒。", pic="orb_green.webp", pic_path="UI/powers/", target="green mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
+                        Achievement("忧郁蓝调", "积累 %s 蓝色 魔酒。", pic="orb_blue.webp", pic_path="UI/powers/", target="blue mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
+                        Achievement("红色警戒", "积累 %s 红色 魔酒。", pic="orb_red.webp", pic_path="UI/powers/", target="red mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
+                        Achievement("黄色病毒", "积累 %s 黄色 魔酒。", pic="orb_yellow.webp", pic_path="UI/powers/", target="yellow mojo", level_nb=5, requirements={1 : 10, 2 : 25, 3 : 50, 4 : 100, 5 : 500}), #!
+                        Achievement("万念俱灰", "让%s个女孩的心智崩溃。", pic="whip.webp", pic_path="Items/weapon/", target="broken", level_nb=5, requirements={1 : 1, 2 : 3, 3 : 10, 4 : 25, 5 : 50}), #!
+                        Achievement("无情无义", "把一个心碎的女孩扔在街上。", pic="navThe Slums_idle.webp", pic_path="UI/", target="broken girl free"), #!
+                        Achievement("心存善念", "把一个破碎的女孩送去精神病院。", pic="navThe Cathedra_idle.webp", pic_path="UI/", target="broken girl asylum"), #!
                         Achievement("人才妓妓", "有 %s 个妓女。", pic="brothelnavbutton_idle.webp", pic_path="UI/", target="broken girl street", level_nb=4, requirements={1 : 1, 2 : 3, 3 : 10, 4 : 20}), #!
                         Achievement("混乱无序", "解锁会说话的混沌魔剑。", pic="portrait.webp", pic_path="NPC/Chaos/", target="chaos"),
                         ]

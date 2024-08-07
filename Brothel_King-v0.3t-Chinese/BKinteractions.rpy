@@ -1480,7 +1480,7 @@ label slave_remove_fixation(girl):
         girl.char "NO! Go away!!!"
         "[girl.name] pushes you back, curls up and starts sobbing uncontrollably. You cannot get anything more out of her."
 
-        $ renpy.say("", "你的粗暴训练对她来说太过分了。 " + event_color["bad"] % ("她现在永远恨 " + fix.name + "."))
+        $ renpy.say("", "你的粗暴训练对她来说太过分了。 " + event_color["bad"] % ("她现在永远恨 " + fix.name + "。"))
 
         $ unlock_achievement("neg fixation locked")
 

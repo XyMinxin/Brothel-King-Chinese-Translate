@@ -120,11 +120,11 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:160
     old "查看你的状态、装备的道具和已掌握的能力。\n你是一位 {color=[c_steel]}{b}等级 [MC.level]的 [MC.playerclass]{/b}{/color}"
-    new "查看你的状态、装备的道具和已掌握的能力。\n你是一位 {color=[c_steel]}{b}等级 [MC.level]的 [MC.playerclass]{/b}{/color}"
+    new "查看你的状态、装备的道具和已掌握的能力。\n你是一位{color=[c_steel]}{b}等级[MC.level]的[MC.playerclass]{/b}{/color}"
 
     # game/BKscreen_home.rpy:160
     old ". 你目前激活了 "
-    new ". 你目前激活了 "
+    new "。你目前激活了"
 
     # game/BKscreen_home.rpy:166
     old "个可用法术"
@@ -136,11 +136,11 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:171
     old "个自动施放的法术."
-    new "个自动施放的法术."
+    new "个自动施放的法术。"
 
     # game/BKscreen_home.rpy:225
     old "看看姑娘们的状态，和她们培养培养感情.\n你有 {color=[c_hotpink]}{b}"
-    new "看看姑娘们的状态，和她们培养培养感情.\n你有 {color=[c_hotpink]}{b}"
+    new "看看姑娘们的状态，和她们培养培养感情。\n你有{color=[c_hotpink]}{b}"
 
     # game/BKscreen_home.rpy:225
     old " 个女孩{/b}{/color}在青楼 (上限 "
@@ -148,35 +148,35 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:227
     old "今晚有 "
-    new "今晚有 "
+    new "今晚有"
 
     # game/BKscreen_home.rpy:227
     old " 个女孩服务客人."
-    new " 个女孩服务客人."
+    new "个女孩服务客人。"
 
     # game/BKscreen_home.rpy:309
     old "市场来了一批新的奴隶."
-    new "市场来了一批新的奴隶."
+    new "市场来了一批新的奴隶。"
 
     # game/BKscreen_home.rpy:323
     old "前往{b}奴隶市场{/b}. 不管是清纯少女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}"
-    new "前往{b}奴隶市场{/b}. 不管是清纯少女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}"
+    new "前往{b}奴隶市场{/b}。不管是清纯少女还是欲求不满的母狗这里都应有尽有。 目前有{color=[c_hotpink]}{b}"
 
     # game/BKscreen_home.rpy:323
     old "个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})"
-    new "个奴隶{/b}{/color}待售.\n({i}快捷键: {u}M{/u}{/i})"
+    new "个奴隶{/b}{/color}待售。\n({i}快捷键: {u}M{/u}{/i})"
 
     # game/BKscreen_home.rpy:334
     old "有新商品上架."
-    new "有新商品上架."
+    new "有新商品上架。"
 
     # game/BKscreen_home.rpy:346
     old "逛逛{b}商店{/b}淘些好货，衣服首饰，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}"
-    new "逛逛{b}商店{/b}淘些好货，衣服首饰，武器护甲应有尽有.\n商店目前有 {color=[c_yellow]}{b}"
+    new "逛逛{b}商店{/b}淘些好货，衣服首饰，武器护甲应有尽有。\n商店目前有 {color=[c_yellow]}{b}"
 
     # game/BKscreen_home.rpy:346
     old "件商品{/b}{/color}待售.\n({i}快捷键: {u}S{/u}{/i})"
-    new "件商品{/b}{/color}待售.\n({i}快捷键: {u}S{/u}{/i})"
+    new "件商品{/b}{/color}待售。\n({i}快捷键: {u}S{/u}{/i})"
 
     # game/BKscreen_home.rpy:368
     old "你可以在大厅里接取他人发布的悬赏任务，也可以让女孩参加培训课程.\n{color=[c_orange_pink]}{b}"
@@ -184,19 +184,19 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:368
     old " 个培训班"
-    new " 个培训班"
+    new "个培训班"
 
     # game/BKscreen_home.rpy:368
     old "{/b}{/color} 和 {color=[c_orange_pink]}{b}"
-    new "{/b}{/color} 和 {color=[c_orange_pink]}{b}"
+    new "{/b}{/color}和{color=[c_orange_pink]}{b}"
 
     # game/BKscreen_home.rpy:368
     old " 个任务"
-    new " 个任务"
+    new "个任务"
 
     # game/BKscreen_home.rpy:368
     old "{/b}{/color} 可用.\n({i}快捷键: {u}T{/u}{/i})"
-    new "{/b}{/color} 可用.\n({i}快捷键: {u}T{/u}{/i})"
+    new "{/b}{/color}可用。\n({i}快捷键: {u}T{/u}{/i})"
 
     # game/BKscreen_home.rpy:431
     old "花费 %s 金币,推进到下一章."

@@ -4,7 +4,7 @@ translate schinese strings:
 
     # game/BKdeclarations.rpy:1528
     old "Image [index] of [count] locked."
-    new "图片 [count] of [index] 尚未解锁。"
+    new "[count]的图片[index]尚未解锁。"
 
     # game/BKdeclarations.rpy:1569
     old "prev"
@@ -36,7 +36,7 @@ translate schinese strings:
 
     # game/BKdeclarations.rpy:1497
     old "Page " 
-    new "页面 "
+    new "页面"
 
 
 ###########################################################
@@ -57,5 +57,5 @@ translate schinese strings:
 
     # game/BKdeclarations.rpy:1570
     old "next"
-    new "next"
+    new "下一页"
 

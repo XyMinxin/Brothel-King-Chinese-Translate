@@ -10,7 +10,7 @@ translate schinese hmas_0a7b8ac5:
 translate schinese hmas_789b2a6b:
 
     # "Loud voice" "HO HO HO..."
-    "Loud voice" "嗷 嗷 嗷..."
+    "吵闹的声音" "嗷 嗷 嗷..."
 
 # game/BKstory_events.rpy:33
 translate schinese hmas_ce2c807f:
@@ -28,7 +28,7 @@ translate schinese hmas_42193563:
 translate schinese hmas_86e349bb:
 
     # "Looking around you, you find nothing out of place in your room. Sill is sleeping naked on her cot at the foot of your bed, exhausted after the vicious pounding you gave her last night."
-    "环顾四周,你发现你房间里一切如常。瑟尔正赤裸地睡在你床脚的床铺上,昨晚的猛烈冲击令她筋疲力尽。"
+    "环顾四周,你发现你房间里一切如常。希露正赤裸地睡在你床脚的床铺上,昨晚的猛烈冲击令她筋疲力尽。"
 
 # game/BKstory_events.rpy:40
 translate schinese hmas_7ee4c2a8:
@@ -8686,7 +8686,7 @@ translate schinese gina_research_10a8d97d:
 translate schinese gina_research_aab438f9:
 
     # you "Willow gave me this address... This building looks like a ruin... It must be abandoned."
-    you "威洛给了我这个地址...这幢建筑看起来像个废墟...一定是被弃置了。"
+    you "薇儿给了我这个地址...这幢建筑看起来像个废墟...一定是被弃置了。"
 
 # game/BKstory_events.rpy:4568
 translate schinese gina_research_4d8c871c:
@@ -10894,7 +10894,7 @@ translate schinese stella_secret1_c3ea2439:
 translate schinese stella_secret1_9f85a97f:
 
     # stella "General Ka."
-    stella "卡将军。"
+    stella "卡尔将军。"
 
 # game/BKstory_events.rpy:5639
 translate schinese stella_secret1_ca0e5cc1:
@@ -10906,7 +10906,7 @@ translate schinese stella_secret1_ca0e5cc1:
 translate schinese stella_secret1_9f441ca0:
 
     # stella "Thank you, Admiral Zee..."
-    stella "谢谢您,泽将军。"
+    stella "谢谢您,泽伊上将。"
 
 # game/BKstory_events.rpy:5643
 translate schinese stella_secret1_c3ac212a:
@@ -11158,7 +11158,7 @@ translate schinese stella_secret1_7c6a46a3:
 translate schinese stella_secret1_d552273c:
 
     # blood1 "What about you, Admiral Zee, how is the invasion planning going?"
-    blood1 "那么你呢,祖舰长,侵略计划进展如何?"
+    blood1 "那么你呢,泽伊舰长,侵略计划进展如何?"
 
 # game/BKstory_events.rpy:5750
 translate schinese stella_secret1_59e28517:
@@ -11788,7 +11788,7 @@ translate schinese stella_secret2_cf623c92:
 translate schinese stella_secret2_e813cb20:
 
     # "Pretending to be drifting aimlessly, you bump into Admiral Zee."
-    "装作漫无目的地游荡,你撞上了海军上将兹。"
+    "装作漫无目的地游荡,你撞上了海军上将泽伊。"
 
 # game/BKstory_events.rpy:6046
 translate schinese stella_secret2_ab9e91f1:
@@ -11890,13 +11890,13 @@ translate schinese blood1_bj_301c37a0:
 translate schinese blood1_bj_98cd7e3d:
 
     # "Tapping your shaft lightly against her lips and breathing in, General Ka seems to enjoy your manly smell."
-    "用你的阴茎轻轻在她的嘴唇上拍打,深吸了一口气,卡将军似乎很享受你男性的气味。"
+    "用你的阴茎轻轻在她的嘴唇上拍打,深吸了一口气,卡尔将军似乎很享受你男性的气味。"
 
 # game/BKstory_events.rpy:6117
 translate schinese blood1_bj_cb0662db:
 
     # "Taking your cock inside her mouth, Ka starts sucking on it noisily."
-    "把你的阴茎放进她的嘴里,卡开始大声吮吸。"
+    "把你的阴茎放进她的嘴里,卡尔开始大声吮吸。"
 
 # game/BKstory_events.rpy:6121
 translate schinese blood1_bj_9b23c82a:
@@ -11956,7 +11956,7 @@ translate schinese blood1_bj_21ca0be8:
 translate schinese blood1_bj_fde574a3:
 
     # "General Ka enjoys watching as you struggle with your bonds."
-    "卡将军很享受看着你与束缚的抗争。"
+    "卡尔将军很享受看着你与束缚的抗争。"
 
 # game/BKstory_events.rpy:6145
 translate schinese blood1_bj_ef0bfb47:
@@ -11968,7 +11968,7 @@ translate schinese blood1_bj_ef0bfb47:
 translate schinese blood1_bj_dd02b876:
 
     # "Sucking harder on your cock, General Ka starts giving you deep throat. The feeling is amazing and you feel your cock is ready to explode."
-    "卡将军吮吸你的阴茎吮吸得更用力,开始给你深喉。这种感觉太棒了,你感觉自己随时都会喷薄而出。"
+    "卡尔将军吮吸你的阴茎吮吸得更用力,开始给你深喉。这种感觉太棒了,你感觉自己随时都会喷薄而出。"
 
 # game/BKstory_events.rpy:6149
 translate schinese blood1_bj_880fee16:
@@ -12028,7 +12028,7 @@ translate schinese blood1_bj_238fcb45:
 translate schinese blood1_bj_fe211342:
 
     # "As soon as General Ka releases the bindings, you shoot a bucketload of cum inside her mouth."
-    "一旦卡将军释放了束缚,你就在她嘴里喷出了一大股精液。"
+    "一旦卡尔将军释放了束缚,你就在她嘴里喷出了一大股精液。"
 
 # game/BKstory_events.rpy:6182
 translate schinese blood1_bj_675b1922:
@@ -12040,7 +12040,7 @@ translate schinese blood1_bj_675b1922:
 translate schinese blood1_bj_906549e6:
 
     # "Surprised as she is, Ka doesn't let a drop of cum slip away from her hungry mouth."
-    "虽然感到惊讶,但卡还是没有让一滴精液从她饥渴的嘴里溜走。"
+    "虽然感到惊讶,但卡尔还是没有让一滴精液从她饥渴的嘴里溜走。"
 
 # game/BKstory_events.rpy:6188
 translate schinese blood1_bj_1466f9ab:
@@ -12052,7 +12052,7 @@ translate schinese blood1_bj_1466f9ab:
 translate schinese blood1_bj_eaf0cde9:
 
     # "Licking her lips, Ka looks at your still-erect cock appreciatively."
-    "舔了舔嘴唇,卡赞赏地看着你仍然勃起的阴茎。"
+    "舔了舔嘴唇,卡尔赞赏地看着你仍然勃起的阴茎。"
 
 # game/BKstory_events.rpy:6196
 translate schinese blood1_bj_2af1b77e:
@@ -12094,7 +12094,7 @@ translate schinese blood1_bj_663168f5:
 translate schinese blood2_tj_70370afd:
 
     # "Unbuttoning her shirt, Admiral Zee lets her massive boobs pop out of her tight uniform."
-    "解开她的衬衫,津提尔上将让她那对巨大的乳房从紧身制服里弹了出来。"
+    "解开她的衬衫,泽伊上将让她那对巨大的乳房从紧身制服里弹了出来。"
 
 # game/BKstory_events.rpy:6230
 translate schinese blood2_tj_088914c9:
@@ -12106,7 +12106,7 @@ translate schinese blood2_tj_088914c9:
 translate schinese blood2_tj_51476234:
 
     # "Placing your hard cock between her mounds, Zee presses them together. You do your best not to squeal at the marvelous sensation of so much flesh encasing your dick."
-    "将你勃起的阴茎放在她的乳房之间,津提尔用双手将之夹紧。你不禁为这种肉体包裹带来的美妙感觉而低吟。"
+    "将你勃起的阴茎放在她的乳房之间,泽伊用双手将之夹紧。你不禁为这种肉体包裹带来的美妙感觉而低吟。"
 
 # game/BKstory_events.rpy:6234
 translate schinese blood2_tj_2c9eaabd:
@@ -12124,7 +12124,7 @@ translate schinese blood2_tj_2c8e2a81:
 translate schinese blood2_tj_bab4fded:
 
     # "Placing her gloved hands over your chest, Admiral Zee starts pinching your nipples between her fingers."
-    "用她戴着手套的手覆盖在你的胸膛上,津提尔开始用手指捏弄你的乳头。"
+    "用她戴着手套的手覆盖在你的胸膛上,泽伊开始用手指捏弄你的乳头。"
 
 # game/BKstory_events.rpy:6240
 translate schinese blood2_tj_d54c875e:
@@ -12142,7 +12142,7 @@ translate schinese blood2_tj_fac0b48d:
 translate schinese blood2_tj_11c0672e:
 
     # "Zee starts moving slowly, gently rubbing your cock between her big tits. You can feel her soft skin rub against your dick."
-    "津提尔开始缓慢地动作,温柔地摩擦你的阴茎和她的大奶子。你能感受到她柔软的皮肤摩擦着你的阴茎。"
+    "泽伊开始缓慢地动作,温柔地摩擦你的阴茎和她的大奶子。你能感受到她柔软的皮肤摩擦着你的阴茎。"
 
 # game/BKstory_events.rpy:6248
 translate schinese blood2_tj_8d8b9cc6:
@@ -12178,7 +12178,7 @@ translate schinese blood2_tj_0e8f7c0f:
 translate schinese blood2_tj_923be01a:
 
     # "Spreading your pre-cum all over her tits, Zee makes her cleavage all slippery, increasing the pace of her titfuck."
-    "将你的前列腺液涂满她的乳房,津提尔让她的乳沟变得滑溜溜的,加快了她的乳交速度。"
+    "将你的前列腺液涂满她的乳房,泽伊让她的乳沟变得滑溜溜的,加快了她的乳交速度。"
 
 # game/BKstory_events.rpy:6266
 translate schinese blood2_tj_a9428062:
@@ -12196,7 +12196,7 @@ translate schinese blood2_tj_156febdf:
 translate schinese blood2_tj_93a10f5c:
 
     # "Waving her boobs from left to right, Zee makes sure to increase the sensation in your dick as she pinches your nipples playfully."
-    "津提尔上下摇摆着乳房,确保你的阴茎感受到更多刺激,同时还在调皮地捏着你的乳头。"
+    "泽伊上下摇摆着乳房,确保你的阴茎感受到更多刺激,同时还在调皮地捏着你的乳头。"
 
 # game/BKstory_events.rpy:6276
 translate schinese blood2_tj_3c73cf69:
@@ -12214,7 +12214,7 @@ translate schinese blood2_tj_720ef716:
 translate schinese blood2_tj_39c964f1:
 
     # "Pressing her chest down, Zee squeezes your cock deeply between her mounds."
-    "Zee 将胸部压下,深深地将你的阴茎夹在她的双乳之间。"
+    "泽伊将胸部压下,深深地将你的阴茎夹在她的双乳之间。"
 
 # game/BKstory_events.rpy:6282
 translate schinese blood2_tj_70d5d7f4:
@@ -12244,7 +12244,7 @@ translate schinese blood2_tj_9af82401:
 translate schinese blood2_tj_ebab5224:
 
     # "Admiral Zee's tits are smeared with your thick cum. She gently squeezes her boobs together, milking the last drops of semen out of you."
-    "Zee 提督的乳房被你浓稠的精液弄脏了。她轻轻挤压双乳,挤出最后一些精液。"
+    "泽伊提督的乳房被你浓稠的精液弄脏了。她轻轻挤压双乳,挤出最后一些精液。"
 
 # game/BKstory_events.rpy:6303
 translate schinese blood2_tj_11327990:
@@ -12268,7 +12268,7 @@ translate schinese blood2_tj_6c36191f:
 translate schinese blood2_tj_e0d6c580:
 
     # "Admiral Zee keeps playing with you until you are completely drained."
-    "Zee 提督一直在玩弄你,直到你完全耗尽。"
+    "泽伊提督一直在玩弄你,直到你完全耗尽。"
 
 # game/BKstory_events.rpy:6325
 translate schinese stella_bj_c913a8ce:
@@ -12280,7 +12280,7 @@ translate schinese stella_bj_c913a8ce:
 translate schinese stella_bj_1cc86110:
 
     # "Pinning you to the wall, Stella grabs a glass... And your dick."
-    "将你压在墙上,Stella 拿起一个玻璃杯...还有你的老二。"
+    "将你压在墙上,史黛拉拿起一个玻璃杯...还有你的老二。"
 
 # game/BKstory_events.rpy:6331
 translate schinese stella_bj_417ef6e3:
@@ -12292,7 +12292,7 @@ translate schinese stella_bj_417ef6e3:
 translate schinese stella_bj_42da08d2:
 
     # "Jerking you off with rough and efficient moves, Stella wastes no time bringing you off a first time."
-    "Stella 用粗暴而高效的动作撸动你,毫不留情地让你第一次射精。"
+    "史黛拉用粗暴而高效的动作撸动你,毫不留情地让你第一次射精。"
 
 # game/BKstory_events.rpy:6337
 translate schinese stella_bj_6c6dbe5f:
@@ -12304,7 +12304,7 @@ translate schinese stella_bj_6c6dbe5f:
 translate schinese stella_bj_3b5e8582:
 
     # "You keep cumming hard into the glass, and Stella keeps jerking you, giving you no respite until you cum a second time."
-    "你一次又一次地大量射进玻璃杯,而Stella也一直在撸动你,给你没有喘息的机会,直到你第二次射精。"
+    "你一次又一次地大量射进玻璃杯,而史黛拉也一直在撸动你,给你没有喘息的机会,直到你第二次射精。"
 
 # game/BKstory_events.rpy:6343
 translate schinese stella_bj_b070cdb4:
@@ -12322,7 +12322,7 @@ translate schinese stella_bj_450d32d6:
 translate schinese stella_bj_5ef75503:
 
     # "Making sure she doesn't drop any, Stella puts the glass down on a night table."
-    "确保一滴也不漏,Stella 把玻璃杯放在床头柜上。"
+    "确保一滴也不漏,史黛拉把玻璃杯放在床头柜上。"
 
 # game/BKstory_events.rpy:6351
 translate schinese stella_bj_3e7acfc4:
@@ -12346,7 +12346,7 @@ translate schinese stella_bj_912078c7:
 translate schinese stella_bj_3d0460c9:
 
     # "Stella yells at you in a commanding voice, startling you."
-    "Stella 用命令的语气朝你大喊,吓了你一跳。"
+    "史黛拉用命令的语气朝你大喊,吓了你一跳。"
 
 # game/BKstory_events.rpy:6363
 translate schinese stella_bj_2a10c048:
@@ -12358,7 +12358,7 @@ translate schinese stella_bj_2a10c048:
 translate schinese stella_bj_c4483e15:
 
     # "Squatting before you, Stella brings her face only an inch from your dirty, smelly cock. You can feel her silky hair caress your shaft lightly."
-    "Stella 蹲在你面前,把脸凑到你肮脏、恶臭的阴茎只有一英寸远。你能感受到她丝滑的头发轻轻扫过你的阴茎。"
+    "史黛拉蹲在你面前,把脸凑到你肮脏、恶臭的阴茎只有一英寸远。你能感受到她丝滑的头发轻轻扫过你的阴茎。"
 
 # game/BKstory_events.rpy:6371
 translate schinese stella_bj_0b9ea0fa:
@@ -12430,7 +12430,7 @@ translate schinese stella_bj_b1334cac:
 translate schinese stella_bj_4c6a253d:
 
     # "Taking your dick in her mouth, Stella slides her finger deeper inside you."
-    "Stella含住你的性器,同时把手指推得更深。"
+    "史黛拉含住你的性器,同时把手指推得更深。"
 
 # game/BKstory_events.rpy:6397
 translate schinese stella_bj_79ff312b:
@@ -12466,7 +12466,7 @@ translate schinese stella_bj_b8ed8f0e:
 translate schinese stella_bj_987bc3f3:
 
     # "Moving her finger inside you, raping your ass, Stella covers your cock with her wet saliva."
-    "Stella在你体内进出手指,狂暴地侵犯你的后穴,同时用满是唾液的嘴包裹你的性器。"
+    "史黛拉在你体内进出手指,狂暴地侵犯你的后穴,同时用满是唾液的嘴包裹你的性器。"
 
 # game/BKstory_events.rpy:6413
 translate schinese stella_bj_38bd93da:
@@ -12478,7 +12478,7 @@ translate schinese stella_bj_38bd93da:
 translate schinese stella_bj_c6098ce9:
 
     # "Stella swallows the whole length of your shaft, your cock hitting the walls of her throat. She has no gag reflexes whatsoever."
-    "Stella整个吞下你的阴茎,龟头抵到喉咙深处,她竟没有任何反胃反应。"
+    "史黛拉整个吞下你的阴茎,龟头抵到喉咙深处,她竟没有任何反胃反应。"
 
 # game/BKstory_events.rpy:6419
 translate schinese stella_bj_1d26293f:
@@ -12520,7 +12520,7 @@ translate schinese stella_bj_b5a09377:
 translate schinese stella_bj_59d2285b:
 
     # "Stella welcomes the thick cum oozing in her mouth and swallows it noisily."
-    "Stella欣然接受了从嘴中喷涌而出的浓稠精液,大口大口地吞咽着。"
+    "史黛拉欣然接受了从嘴中喷涌而出的浓稠精液,大口大口地吞咽着。"
 
 # game/BKstory_events.rpy:6437
 translate schinese stella_bj_06c3ef62:
@@ -12754,13 +12754,13 @@ translate schinese farm_meet_willow_6ebfa877:
 translate schinese farm_meet_willow_f1f280aa:
 
     # you "Sill, stop whining. We've got stuff to do. Put this armlet back where it was and let's go."
-    you "Sill,别哭了。我们还有事要做。把这个臂环放回原处,我们走吧。"
+    you "希露,别哭了。我们还有事要做。把这个臂环放回原处,我们走吧。"
 
 # game/BKstory_events.rpy:6566
 translate schinese farm_meet_willow_fd7750dd:
 
     # "Sill springs alongside you, beaming as she admires her new item."
-    "Sill欢欣雀跃地跟在你身边,一边欣赏着新获得的道具。"
+    "希露欢欣雀跃地跟在你身边,一边欣赏着新获得的道具。"
 
 # game/BKstory_events.rpy:6568
 translate schinese farm_meet_willow_9ff188d5:
@@ -12814,19 +12814,19 @@ translate schinese farm_meet_willow_e45d1017:
 translate schinese farm_meet_willow_ebf4a6e4:
 
     # "Sill runs to the grate, looking down into the darkness. The armlet is nowhere to be seen."
-    "Sill跑到栅栏边,望进黑暗中。那个臂环已经看不见了。"
+    "希露跑到栅栏边,望进黑暗中。那个臂环已经看不见了。"
 
 # game/BKstory_events.rpy:6594
 translate schinese farm_meet_willow_88dc6615:
 
     # you "Sill, you clumsy fool!" with vpunch
-    you "Sill,你这个笨蛋!" with vpunch
+    you "希露,你这个笨蛋!" with vpunch
 
 # game/BKstory_events.rpy:6596
 translate schinese farm_meet_willow_69569314:
 
     # "Sill turns around towards you, and her eyes fill with tears."
-    "Sill转过身面对着你,眼中布满泪水。"
+    "希露转过身面对着你,眼中布满泪水。"
 
 # game/BKstory_events.rpy:6602
 translate schinese farm_meet_willow_ddc1bf40:
@@ -12838,7 +12838,7 @@ translate schinese farm_meet_willow_ddc1bf40:
 translate schinese farm_meet_willow_d84f020f:
 
     # "Sill starts crying like a fountain, her wailing so loud people from the other end of the street turn to look at you two disapprovingly."
-    "Sill破涕为笑,哭声大得连街的另一头的人都转过头来不赞同地看着你们。"
+    "希露破涕为笑,哭声大得连街的另一头的人都转过头来不赞同地看着你们。"
 
 # game/BKstory_events.rpy:6606
 translate schinese farm_meet_willow_d49fd0d4:
@@ -12856,7 +12856,7 @@ translate schinese farm_meet_willow_0f1bc83b:
 translate schinese farm_meet_willow_280bd112:
 
     # you "Come on, Sill, it's not the end of the world..."
-    you "别这样,Sill,世界又不会因此而结束..."
+    you "别这样,希露,世界又不会因此而结束..."
 
 # game/BKstory_events.rpy:6612
 translate schinese farm_meet_willow_308cebc1:
@@ -12898,7 +12898,7 @@ translate schinese farm_meet_willow_fca060a0:
 translate schinese farm_meet_willow_e6d8a5cc:
 
     # "Sill instantly interrupts her wailing and looks at you with gigantic, mirror-like puppy eyes."
-    "Sill立刻停下哭泣,目光炯炯有神地望着你,眼睛大得像镜子。"
+    "希露立刻停下哭泣,目光炯炯有神地望着你,眼睛大得像镜子。"
 
 # game/BKstory_events.rpy:6628
 translate schinese farm_meet_willow_7dee4261:
@@ -12964,7 +12964,7 @@ translate schinese farm_meet_willow_bab95415:
 translate schinese farm_meet_willow_7751d801:
 
     # you "Sill, you imbecile!!!" with vpunch
-    you "Sill,你个白痴!!!" with vpunch
+    you "希露,你个白痴!!!" with vpunch
 
 # game/BKstory_events.rpy:6658
 translate schinese farm_meet_willow_48a2c215:
@@ -13090,7 +13090,7 @@ translate schinese farm_meet_willow_cdd9076e:
 translate schinese farm_meet_willow_76cd51cd:
 
     # "Sewer monster" "GOOOOH..."
-    "Sewer monster" "咕噢噢噢..."
+    "下水道怪物" "咕噢噢噢..."
 
 # game/BKstory_events.rpy:6713
 translate schinese farm_meet_willow_11756fb8:
@@ -13114,7 +13114,7 @@ translate schinese farm_meet_willow_a0c67bb5:
 translate schinese farm_meet_willow_8f6a092d:
 
     # "Sewer monster" "GOOH... "
-    "Sewer monster" "咕噢噢..."
+    "下水道怪物" "咕噢噢..."
 
 # game/BKstory_events.rpy:6726
 translate schinese farm_meet_willow_1de11c1d:
@@ -13258,7 +13258,7 @@ translate schinese farm_meet_willow_37ac6222:
 translate schinese farm_meet_willow_044f71d5:
 
     # "Sewer monster" "GOoOoOH..."
-    "Sewer monster" "咕噢噢噢噢噢..."
+    "下水道怪物" "咕噢噢噢噢噢..."
 
 # game/BKstory_events.rpy:6819
 translate schinese farm_meet_willow_dff44290:
@@ -13300,7 +13300,7 @@ translate schinese farm_meet_willow_bc048a88:
 translate schinese farm_meet_willow_607f6d25:
 
     # "Sewer monster" "GOOOH?"
-    "Sewer monster" "嘎啊？"
+    "下水道怪物" "嘎啊？"
 
 # game/BKstory_events.rpy:6846
 translate schinese farm_meet_willow_f88c1be6:
@@ -13366,7 +13366,7 @@ translate schinese farm_meet_willow_754d68f7:
 translate schinese farm_meet_willow_d4ce0a56:
 
     # "Sewer monster" "GOOOOooOooH!!!"
-    "Sewer monster" "嘿嘿嘿嘿嘿!!!"
+    "下水道怪物" "咕咕咕嘿嘿!!!"
 
 # game/BKstory_events.rpy:6897
 translate schinese farm_meet_willow_b897f5c9:
@@ -13612,13 +13612,13 @@ translate schinese farm_meet_willow_e730c322:
 translate schinese farm_meet_willow_29eb3807:
 
     # "Friendly sewer monster" "GoOooOoh..."
-    "Friendly sewer monster" "咕噜噜噜..."
+    "友善的下水道怪物" "咕噜噜噜..."
 
 # game/BKstory_events.rpy:7011
 translate schinese farm_meet_willow_18b41ea7:
 
     # "The monster extends an antenna towards you. On it, you see the silver armlet Sill dropped earlier on."
-    "怪物用触角指向你。上面,你看到了之前Sill掉落的那枚银镯。"
+    "怪物用触角指向你。上面,你看到了之前希露掉落的那枚银镯。"
 
 # game/BKstory_events.rpy:7013
 translate schinese farm_meet_willow_c4bf8c32:
@@ -13726,13 +13726,13 @@ translate schinese willow_fight_4d12990c:
 translate schinese willow_fight_e903edcc:
 
     # "Monster sound" "ROAAAAR!!!" with vpunch
-    "Monster sound" "咆哮!!!!" with vpunch
+    "怪物的声音" "咆哮!!!!" with vpunch
 
 # game/BKstory_events.rpy:7105
 translate schinese willow_fight_f6b56d19:
 
     # "Girl voice" "Come back here you stupid critter! You're mine!"
-    "Girl voice" "给我回来,你这个蠢东西!你是我的!"
+    "女性的声音" "给我回来,你这个蠢东西!你是我的!"
 
 # game/BKstory_events.rpy:7107
 translate schinese willow_fight_3c1376b7:
@@ -14140,13 +14140,13 @@ translate schinese willow_fight_43cf3586:
 translate schinese willow_fight_8d3fe62c:
 
     # "Willow blasts the monster with a firebolt and the smell of burnt monster flesh reaches your nostrils." with vpunch
-    "Willow向怪物发射了一团火焰,烧焦的怪物肉味充满你的鼻孔。" with vpunch
+    "薇儿向怪物发射了一团火焰,烧焦的怪物肉味充满你的鼻孔。" with vpunch
 
 # game/BKstory_events.rpy:7409
 translate schinese willow_fight_ff4ad670:
 
     # "The burn hurts the monster and it growls in pain, letting Willow go."
-    "烧伤让怪物痛苦地咆哮,它松开了对Willow的束缚。"
+    "烧伤让怪物痛苦地咆哮,它松开了对薇儿的束缚。"
 
 # game/BKstory_events.rpy:7414
 translate schinese willow_fight_4b1fcb6a_1:
@@ -14584,7 +14584,7 @@ translate schinese willow_recovery_a5f0f202:
 translate schinese willow_recovery_f372af91:
 
     # "Woman voice" "Man, you're really out of it..."
-    "Woman voice" "伙计,你真的神志不清..."
+    "女人的声音" "伙计,你真的神志不清..."
 
 # game/BKstory_events.rpy:7635
 translate schinese willow_recovery_59034f47:
@@ -14596,7 +14596,7 @@ translate schinese willow_recovery_59034f47:
 translate schinese willow_recovery_3fbc9508:
 
     # "Woman voice" "Hey, [MC.name]! Wake up!"
-    "Woman voice" "[MC.name]!快醒醒!"
+    "女人的声音" "[MC.name]!快醒醒!"
 
 # game/BKstory_events.rpy:7639
 translate schinese willow_recovery_3478c5d3:
@@ -14638,7 +14638,7 @@ translate schinese willow_recovery_cbc3344f:
 translate schinese willow_recovery_029a9c6b:
 
     # you "W... Willow?"
-    you "w...柳?"
+    you "薇...薇儿?"
 
 # game/BKstory_events.rpy:7657
 translate schinese willow_recovery_257516b7:
@@ -14680,7 +14680,7 @@ translate schinese willow_recovery_90b470a2:
 translate schinese willow_recovery_6e687984:
 
     # willow "It was a messy business. So I brought you back to the brothel, and I asked your slave Sill to clean our clothes. I don't want to risk the side effects rubbing off..."
-    willow "这是一件很麻烦的事。所以我把你带回这个青楼,让你的奴隶Sill去清洗我们的衣服。我不希望有任何副作用附着在身上..."
+    willow "这是一件很麻烦的事。所以我把你带回这个青楼,让你的奴隶希露去清洗我们的衣服。我不希望有任何副作用附着在身上..."
 
 # game/BKstory_events.rpy:7671
 translate schinese willow_recovery_f62c19dc:
@@ -14704,13 +14704,13 @@ translate schinese willow_recovery_ccc685d1:
 translate schinese willow_recovery_76e6c63c:
 
     # "It doesn't seem to bother Willow, who is bouncing up and down cheerfully. It occurs to you that she is really wearing {i}nothing{/i} under your shirt."
-    "这似乎并没有困扰Willow,她正欢快地上下蹦跳。你这才意识到,她在你的衬衫下{i}什么{/i}都没穿。"
+    "这似乎并没有困扰薇儿,她正欢快地上下蹦跳。你这才意识到,她在你的衬衫下{i}什么{/i}都没穿。"
 
 # game/BKstory_events.rpy:7682
 translate schinese willow_recovery_06b0eab2:
 
     # sill sad "MASTEEEER!!!"
-    sill sad "主人大人!!!"
+    sill sad "主~人!!!"
 
 # game/BKstory_events.rpy:7690
 translate schinese willow_recovery_73170c90:
@@ -14722,7 +14722,7 @@ translate schinese willow_recovery_73170c90:
 translate schinese willow_recovery_15b9790a:
 
     # "Sill rushes to your side, shoving Willow out of the way."
-    "Sill急忙冲到你身边,将Willow推开。"
+    "希露急忙冲到你身边,将薇儿推开。"
 
 # game/BKstory_events.rpy:7696
 translate schinese willow_recovery_23514900:
@@ -14770,19 +14770,19 @@ translate schinese willow_recovery_25218a03:
 translate schinese willow_recovery_6011c877:
 
     # willow "Gina? Hey, what's up!"
-    willow "Gina?嘿,怎么回事!"
+    willow "吉娜?嘿,怎么回事!"
 
 # game/BKstory_events.rpy:7716
 translate schinese willow_recovery_ae0a95b0:
 
     # gina "Oh. So you're here too. And, uh... Naked?!?"
-    gina "噢。你也在这里。而且,呃...赤身裸体?!?"
+    gina "噢。你也在这里。而且,呃...光着身子?!?"
 
 # game/BKstory_events.rpy:7718
 translate schinese willow_recovery_d0bd0711:
 
     # willow "I'm not naked! Look, I found a nice shirt!"
-    willow "我没有赤身裸体!看,我找到一件不错的衬衫!"
+    willow "我才没有光着身子!看,我找到一件不错的衬衫!"
 
 # game/BKstory_events.rpy:7720
 translate schinese willow_recovery_d6d8c1ab:
@@ -14824,7 +14824,7 @@ translate schinese willow_recovery_b8090c3d:
 translate schinese willow_recovery_958ebe9b:
 
     # "Willow beams with joy."
-    "Willow满怀喜悦地微笑着。"
+    "薇儿满怀喜悦地微笑着。"
 
 # game/BKstory_events.rpy:7740
 translate schinese willow_recovery_6af51357:
@@ -14854,7 +14854,7 @@ translate schinese willow_recovery_cdd9076e:
 translate schinese willow_recovery_cbd4ff8c:
 
     # willow "Ah, I see... So that's why you came all the way out here. I thought you were just looking for entertainment."
-    willow "啊,我明白了...所以你来这里的目的就是这个。我原以为你只是来寻找娱乐的。"
+    willow "啊,我明白了...所以你来这里的目的就是这个。我原以为你也是来找点乐子的。"
 
 # game/BKstory_events.rpy:7752
 translate schinese willow_recovery_a2288eb0:
@@ -14866,13 +14866,13 @@ translate schinese willow_recovery_a2288eb0:
 translate schinese willow_recovery_f1135efc:
 
     # gina "I'm a scientist! I have no time to partake in vulgar mating rituals!!!"
-    gina "我是个科学家!我没时间参与下流的交配仪式!!!"
+    gina "我是个科学家!我可没时间参与下流的交配仪式!!!"
 
 # game/BKstory_events.rpy:7756
 translate schinese willow_recovery_97ee50b8:
 
     # gina "I came here to enlist your help. Both of you, actually."
-    gina "我来这里是想请求你们的帮助。你们两个人都有。"
+    gina "我来这里是想请求你的帮助。事实上，是寻求你们两位的帮助。"
 
 # game/BKstory_events.rpy:7758
 translate schinese willow_recovery_02cfe2c6:
@@ -14896,7 +14896,7 @@ translate schinese willow_recovery_e2195821:
 translate schinese willow_recovery_d3c3ea94:
 
     # gina "Great. That's where [MC.name] comes in."
-    gina "[MC.name]就是在这里起作用的。"
+    gina "然后就看[MC.name]的了。"
 
 # game/BKstory_events.rpy:7766
 translate schinese willow_recovery_c9149c7a:
@@ -14908,7 +14908,7 @@ translate schinese willow_recovery_c9149c7a:
 translate schinese willow_recovery_5466e703:
 
     # gina "I need your help. For science."
-    gina "我需要你的帮助。为了科学。"
+    gina "我需要你为了科学而献身。"
 
 # game/BKstory_events.rpy:7770
 translate schinese willow_recovery_42adc6c0:
@@ -14920,67 +14920,67 @@ translate schinese willow_recovery_42adc6c0:
 translate schinese willow_recovery_7c007282:
 
     # gina "I would like to use you as a live test subject."
-    gina "我想把你作为实验对象。"
+    gina "我想把你作为我的实验对象。"
 
 # game/BKstory_events.rpy:7774
 translate schinese willow_recovery_92ca6e4b:
 
     # you "Wrong! Not cool. Count me out."
-    you "不对!一点也不酷。我拒绝。"
+    you "不对!这一点也不酷。我拒绝。"
 
 # game/BKstory_events.rpy:7776
 translate schinese willow_recovery_7397b133:
 
     # gina "You're in, then? Fantastic!"
-    gina "那你就同意了?太棒了!"
+    gina "这么说你同意了?太棒了!"
 
 # game/BKstory_events.rpy:7778
 translate schinese willow_recovery_a2a28ac6:
 
     # you "I just said..."
-    you "我刚说过..."
+    you "我说我不..."
 
 # game/BKstory_events.rpy:7780
 translate schinese willow_recovery_0a8ac8d4:
 
     # gina "Meet me at the Prison when you're ready. I'll have you sign a number of waivers... You're not afraid of heights?"
-    gina "准备好后来监狱找我。我会让你签好多份免责声明...你不怕高吗?"
+    gina "准备好后来监狱找我。我会让你签好免责声明...你恐高吗?"
 
 # game/BKstory_events.rpy:7782
 translate schinese willow_recovery_07c29cc0:
 
     # you "No way! Read my lips! I'm N-O-T C-O-M-I-N-G." with vpunch
-    you "绝对不行!听清楚了,我 N-O-T 来。" with vpunch
+    you "绝对不行!听清楚了,我 不 去。" with vpunch
 
 # game/BKstory_events.rpy:7784
 translate schinese willow_recovery_4e2d7872:
 
     # gina "That's great, then. I'll see you there."
-    gina "好的,那我就在那里等你。"
+    gina "好的,那就不见不散。"
 
 # game/BKstory_events.rpy:7786
 translate schinese willow_recovery_4ebafc0c:
 
     # "Smiling, Gina waves at you, pats Willow's head, and takes her leave."
-    "微笑着,吉娜朝你挥手,拍了拍威洛的头,然后离开了。"
+    "吉娜一边微笑一边朝你挥手,拍了拍薇儿的头,然后离开了。"
 
 # game/BKstory_events.rpy:7788
 translate schinese willow_recovery_2e3b4dec:
 
     # willow "Look, I ain't going to tell you how to live your life, but... I'd avoid the {b}Prison{/b}, if I were you."
-    willow "看,我不会告诉你该怎么生活,但是...要是我是你,我就不会去{b}监狱{/b}。"
+    willow "看,我不会教你该怎么做,但是...如果我是你,我会离{b}监狱{/b}远远的。"
 
 # game/BKstory_events.rpy:7790
 translate schinese willow_recovery_9e25ef1e:
 
     # you "You don't have to tell me!" with vpunch
-    you "你不用提醒我!" with vpunch
+    you "用不着你提醒我!" with vpunch
 
 # game/BKstory_events.rpy:7792
 translate schinese willow_recovery_586b11c4:
 
     # you "*sigh* Those girls..."
-    you "*叹气*那些女孩..."
+    you "*叹气*这些擅作主张的女孩..."
 
 # game/BKstory_events.rpy:7805
 translate schinese willow_recovery_b581eded:
@@ -15022,7 +15022,7 @@ translate schinese willow_recovery_468a9d5b:
 translate schinese willow_recovery_4f0d66ef:
 
     # you "Hey! It's completely wet!" with vpunch
-    you "嘿!它完全湿了!" with vpunch
+    you "嘿!它湿透了!" with vpunch
 
 # game/BKstory_events.rpy:7821
 translate schinese willow_recovery_a63428f2:
@@ -15220,7 +15220,7 @@ translate schinese willow_recovery_2a1180e5:
 translate schinese willow_recovery_d1bf1be7:
 
     # you "W-Willow?"
-    you "威洛?"
+    you "薇儿?"
 
 # game/BKstory_events.rpy:7916
 translate schinese willow_recovery_9f3acf8c:
@@ -15232,7 +15232,7 @@ translate schinese willow_recovery_9f3acf8c:
 translate schinese willow_recovery_e65ffe43:
 
     # "Willow is sitting on your bed. She is stroking and licking your massively oversized cock."
-    "威洛正坐在你的床上,抚摸和舔弄你那明显异常肿大的性器。"
+    "薇儿正坐在你的床上,抚摸和舔弄你那明显异常肿大的性器。"
 
 # game/BKstory_events.rpy:7920
 translate schinese willow_recovery_e017b21d:
@@ -15250,7 +15250,7 @@ translate schinese willow_recovery_0d3dfdc4:
 translate schinese willow_recovery_fc741060:
 
     # "Willow is enthusiastically sucking on your cock, placing your oversized tip in her drooling mouth, stretching her jaw to its limit."
-    "威洛热情洋溢地吮吸着你的性器,把粗大的龟头含入口中,不得不拼命撑大自己的下颌。"
+    "薇儿热情洋溢地吮吸着你的性器,把粗大的龟头含入口中,不得不拼命撑大自己的下颌。"
 
 # game/BKstory_events.rpy:7926
 translate schinese willow_recovery_2a48fb38:
@@ -15334,7 +15334,7 @@ translate schinese willow_recovery_6b9e8461:
 translate schinese willow_recovery_0b0f176d:
 
     # "Erupting like a volcano, your cock shoots unnatural amounts of cum all over the bedroom and a surprised Willow."
-    "你的性器像火山喷发一样,喷洒出不自然的大量精液,沾满了整个房间和一脸惊讶的威洛。"
+    "你的性器像火山喷发一样,喷洒出不自然的大量精液,沾满了整个房间和一脸惊讶的薇儿。"
 
 # game/BKstory_events.rpy:7964
 translate schinese willow_recovery_d3dacde8_1:
@@ -15358,7 +15358,7 @@ translate schinese willow_recovery_418a0c0e:
 translate schinese willow_recovery_ca69d9cb:
 
     # "When it is finally over, Willow looks at you and gently scolds you."
-    "终于结束后,威洛看着你,温和地责备道。"
+    "终于结束后,薇儿看着你,温和地责备道。"
 
 # game/BKstory_events.rpy:7976
 translate schinese willow_recovery_e7b5b18c:
@@ -15742,7 +15742,7 @@ translate schinese willow_relative_e54b79aa:
 translate schinese willow_relative_9aa749e4:
 
     # relative "My little Willow told me you had no class, but I can see she was just joking..."
-    relative "我的小威洛告诉我你没什么品位,但我看出她只是在开玩笑..."
+    relative "我的小薇儿告诉我你没什么品位,但我看出她只是在开玩笑..."
 
 # game/BKstory_events.rpy:8156
 translate schinese willow_relative_16a5c166:
@@ -15760,7 +15760,7 @@ translate schinese willow_relative_7cc945c4:
 translate schinese willow_relative_9f78bdb4:
 
     # relative "Teehee, you flatterer... I'm not Willow's sister... I'm her great-great auntie."
-    relative "嘻嘻,你真会说话...我不是威洛的妹妹...我是她的曾曾祖母。"
+    relative "嘻嘻,你真会说话...我不是薇儿的妹妹...我是她的曾曾祖母。"
 
 # game/BKstory_events.rpy:8162
 translate schinese willow_relative_6e0946ce:
@@ -15808,7 +15808,7 @@ translate schinese willow_relative_1bd47185:
 translate schinese willow_relative_7e8dddc9:
 
     # you "But, Willow... She looks human... You look human... I mean..."
-    you "但是威洛...她看起来很人类...你看起来也很人类...我是说..."
+    you "但是薇儿...她看起来很人类...你看起来也很人类...我是说..."
 
 # game/BKstory_events.rpy:8178
 translate schinese willow_relative_bcce0723:
@@ -15850,7 +15850,7 @@ translate schinese willow_relative_4d34d5d2:
 translate schinese willow_relative_ec2b2cdf:
 
     # relative "Except Willow, of course, she's always been brazen... But what do you expect from a kid who just turned 50?"
-    relative "除了威洛,她一向很大胆...但从一个50岁的孩子身上能指望什么呢?"
+    relative "除了薇儿,她一向很大胆...但从一个50岁的孩子身上能指望什么呢?"
 
 # game/BKstory_events.rpy:8192
 translate schinese willow_relative_85f6d859:
@@ -18592,7 +18592,7 @@ translate schinese farm_first_monster_f7f790aa:
 translate schinese farm_first_monster_6dff3084:
 
     # you "I mean, Willow the monster catcher managed to catch this monster single-handedly, and she's just a teenager... Maybe you should work a little on your fighting techniques!"
-    you "我是说,就连小女孩威洛都能单独捕获这只怪物,你应该好好提升自己的战斗技巧了!"
+    you "我是说,就连小女孩薇儿都能单独捕获这只怪物,你应该好好提升自己的战斗技巧了!"
 
 # game/BKstory_events.rpy:9512
 translate schinese farm_first_monster_4610df9d:
@@ -28534,7 +28534,7 @@ translate schinese treasure_girl_sex_d054c5f9:
 translate schinese treasure_girl_sex_b62da9ae:
 
     # "{color=[col]}Girl{/color}" "Uh?!?"
-    "{color=[col]}Girl{/color}" "呃?!?"
+    "{color=[col]}女孩{/color}" "呃?!?"
 
 # game/BKstory_events.rpy:15104
 translate schinese treasure_girl_sex_181dd16c:
@@ -28558,7 +28558,7 @@ translate schinese treasure_girl_sex_471709bb:
 translate schinese treasure_girl_sex_b6ef0a74:
 
     # "{color=[col]}Girl{/color}" "Aaah!!!"
-    "{color=[col]}Girl{/color}" "啊!!!"
+    "{color=[col]}女孩{/color}" "啊!!!"
 
 # game/BKstory_events.rpy:15123
 translate schinese treasure_girl_sex_536b4975:
@@ -28576,7 +28576,7 @@ translate schinese treasure_girl_sex_da2c6503:
 translate schinese treasure_girl_sex_ee02378e:
 
     # "{color=[col]}Girl{/color}" "W-Wait..."
-    "{color=[col]}Girl{/color}" "等等..."
+    "{color=[col]}女孩{/color}" "等等..."
 
 # game/BKstory_events.rpy:15133
 translate schinese treasure_girl_sex_c7922447:
@@ -28600,13 +28600,13 @@ translate schinese treasure_girl_sex_ea93cdcc:
 translate schinese treasure_girl_sex_3e667f01:
 
     # "{color=[col]}Girl{/color}" "D-Don't... I..."
-    "{color=[col]}Girl{/color}" "不要...我..."
+    "{color=[col]}女孩{/color}" "不要...我..."
 
 # game/BKstory_events.rpy:15147
 translate schinese treasure_girl_sex_9da67795:
 
     # "{color=[col]}Girl{/color}" "Aaaah!!!" with hpunch
-    "{color=[col]}Girl{/color}" "啊啊啊!!!" with hpunch
+    "{color=[col]}女孩{/color}" "啊啊啊!!!" with hpunch
 
 # game/BKstory_events.rpy:15149
 translate schinese treasure_girl_sex_936fd851:
@@ -28618,7 +28618,7 @@ translate schinese treasure_girl_sex_936fd851:
 translate schinese treasure_girl_sex_a56a3427:
 
     # "{color=[col]}Girl{/color}" "Aaah, aaaah!!! Aaaah!!!" with hpunch
-    "{color=[col]}Girl{/color}" "啊,啊啊!!! 啊啊!!!" with hpunch
+    "{color=[col]}女孩{/color}" "啊,啊啊!!! 啊啊!!!" with hpunch
 
 # game/BKstory_events.rpy:15153
 translate schinese treasure_girl_sex_39292df9:
@@ -28630,7 +28630,7 @@ translate schinese treasure_girl_sex_39292df9:
 translate schinese treasure_girl_sex_ae6e3e78:
 
     # "{color=[col]}Girl{/color}" "N-No... Aaaah!!!" with hpunch
-    "{color=[col]}Girl{/color}" "不...啊啊!!!" with hpunch
+    "{color=[col]}女孩{/color}" "不...啊啊!!!" with hpunch
 
 # game/BKstory_events.rpy:15157
 translate schinese treasure_girl_sex_a78093e3:
@@ -28648,7 +28648,7 @@ translate schinese treasure_girl_sex_9b747705:
 translate schinese treasure_girl_sex_bf2c23de:
 
     # "{color=[col]}Girl{/color}" "Aaah! Stop, it's dangerous-"
-    "{color=[col]}Girl{/color}" "啊! 住手,这太危险了-"
+    "{color=[col]}女孩{/color}" "啊! 住手,这太危险了-"
 
 # game/BKstory_events.rpy:15169
 translate schinese treasure_girl_sex_1e512692:
@@ -28660,7 +28660,7 @@ translate schinese treasure_girl_sex_1e512692:
 translate schinese treasure_girl_sex_61ab0314:
 
     # "{color=[col]}Girl{/color}" "You... You monster... How long have you been fucking me..."
-    "{color=[col]}Girl{/color}" "你...你这个怪物...你已经操了我多长时间了..."
+    "{color=[col]}女孩{/color}" "你...你这个怪物...你已经操了我多长时间了..."
 
 # game/BKstory_events.rpy:15175
 translate schinese treasure_girl_sex_5aa13a14:
@@ -28672,7 +28672,7 @@ translate schinese treasure_girl_sex_5aa13a14:
 translate schinese treasure_girl_sex_fa122044:
 
     # "{color=[col]}Girl{/color}" "AHAAA!!!" with hpunch
-    "{color=[col]}Girl{/color}" "啊哈哈!!!" with hpunch
+    "{color=[col]}女孩{/color}" "啊哈哈!!!" with hpunch
 
 # game/BKstory_events.rpy:15181
 translate schinese treasure_girl_sex_7eaa4ddd:
@@ -28690,13 +28690,13 @@ translate schinese treasure_girl_sex_dfe9557e:
 translate schinese treasure_girl_sex_fc37add0:
 
     # "{color=[col]}Girl{/color}" "Don't! If you do, I'll... I'll..."
-    "{color=[col]}Girl{/color}" "不要! 如果你这么做,我会...我会..."
+    "{color=[col]}女孩{/color}" "不要! 如果你这么做,我会...我会..."
 
 # game/BKstory_events.rpy:15191
 translate schinese treasure_girl_sex_78902db5:
 
     # "{color=[col]}Girl{/color}" "AAAAAAAH!!!!" with hpunch
-    "{color=[col]}Girl{/color}" "啊啊啊啊啊啊!!!!" with hpunch
+    "{color=[col]}女孩{/color}" "啊啊啊啊啊啊!!!!" with hpunch
 
 # game/BKstory_events.rpy:15195
 translate schinese treasure_girl_sex_2ff936b7:
@@ -28708,7 +28708,7 @@ translate schinese treasure_girl_sex_2ff936b7:
 translate schinese treasure_girl_sex_f23e6758:
 
     # "{color=[col]}Girl{/color}" "AAAAAAH!!!"
-    "{color=[col]}Girl{/color}" "啊啊啊啊!!!"
+    "{color=[col]}女孩{/color}" "啊啊啊啊!!!"
 
 # game/BKstory_events.rpy:15201
 translate schinese treasure_girl_sex_b3523cad:
@@ -28720,7 +28720,7 @@ translate schinese treasure_girl_sex_b3523cad:
 translate schinese treasure_girl_sex_1b627815:
 
     # "{color=[col]}Girl{/color}" "Amazing... Aaaah..."
-    "{color=[col]}Girl{/color}" "太棒了...啊..."
+    "{color=[col]}女孩{/color}" "太棒了...啊..."
 
 # game/BKstory_events.rpy:15209
 translate schinese treasure_girl_sex_387bab85:
@@ -28732,7 +28732,7 @@ translate schinese treasure_girl_sex_387bab85:
 translate schinese treasure_girl_sex_eef370cc:
 
     # "{color=[col]}Girl{/color}" "Aaah, ah, aw... My belly is full of cum... You ruined my pussy..."
-    "{color=[col]}Girl{/color}" "啊,啊,哦...我的肚子里满是精液...你毁掉了我的阴部..."
+    "{color=[col]}女孩{/color}" "啊,啊,哦...我的肚子里满是精液...你毁掉了我的阴部..."
 
 # game/BKstory_events.rpy:15213
 translate schinese treasure_girl_sex_182efd62:
@@ -28744,7 +28744,7 @@ translate schinese treasure_girl_sex_182efd62:
 translate schinese treasure_girl_sex_f56f0b8d:
 
     # "{color=[col]}Girl{/color}" "Aah... It's leaking out... Aw... *drool*"
-    "{color=[col]}Girl{/color}" "啊...它正在往外流...哦...*流口水*"
+    "{color=[col]}女孩{/color}" "啊...它正在往外流...哦...*流口水*"
 
 # game/BKstory_events.rpy:15224
 translate schinese treasure_girl_sex_d33cc876:
@@ -37072,13 +37072,13 @@ translate schinese chaos_e4a29db5:
 translate schinese chaos_39f54983:
 
     # "You gesture vaguely at where you guess the sword's crotch is."
-    "你模糊地朝你猜测剑的裆部gestures。"
+    "你模糊地指了指你猜的剑的裆部在哪里。"
 
 # game/BKstory_events.rpy:19339
 translate schinese chaos_6e831391:
 
     # chaos "That's none of your damn business, okay! I can manage perfectly fine!" with vpunch
-    chaos "这关你什么事,好吗!我可以完全自己管理好!" with vpunch
+    chaos "别多管闲事,好吗!我自己可以处理好!" with vpunch
 
 # game/BKstory_events.rpy:19341
 translate schinese chaos_a7c28591:
@@ -37144,7 +37144,7 @@ translate schinese chaos_71132714:
 translate schinese chaos_d36d2cde:
 
     # chaos "*clears metaphorical throat*, ahem, I believe we have a deal. For this month, I'll just power myself using this wench's energy."
-    chaos "*清了个虚构的喉咙*,呃,我相信我们达成了协议。这个月,我就用这个女孩的力量来给自己充能吧。"
+    chaos "*清了清不存在的嗓子*,呃,我相信我们达成了协议。这个月,我就用这个女孩的力量来给自己充能吧。"
 
 # game/BKstory_events.rpy:19363
 translate schinese chaos_d9ceb9af:
@@ -37156,7 +37156,7 @@ translate schinese chaos_d9ceb9af:
 translate schinese chaos_a1367ebf:
 
     # "Chaos provides a boost to your personal skills when wielded. The bonus depends on how many girls you provide him to play with at the beginning of the month (Chaos can instantly charge with a virgin, but she will be deflowered)."
-    "混沌提供了对你个人技能的提升。这个加成取决于你在月初提供给他玩弄的女孩数量(混沌可以立即从处女那里获得充能,但她将失去贞操)。"
+    "混沌魔剑能够提升你的个人技能数值。加成的多少取决于你每个月献给它的女孩数量(只需要一个处女就可以让混沌魔剑充满能量,但她将失去贞操)。"
 
 translate schinese strings:
 
@@ -37210,11 +37210,11 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:820
     old "I'm only doing this because I want to peep"
-    new "我只是因为想偷窥才这么做"
+    new "我单纯只是想偷窥"
 
     # game/BKstory_events.rpy:850
     old "Peep on Renza"
-    new "偷窥Renza"
+    new "偷窥伦萨"
 
     # game/BKstory_events.rpy:850
     old "Don't peep"
@@ -37336,10 +37336,6 @@ translate schinese strings:
     old "Can I ask you a few questions?"
     new "我可以问你几个问题吗?"
 
-    # game/BKstory_events.rpy:2916
-    #old "Fine"
-    #new "好的"
-
     # game/BKstory_events.rpy:2925
     old "What did you do to those men?"
     new "你对那些人做了什么?"
@@ -37394,7 +37390,7 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:5405
     old "Escape"
-    new "Esc"
+    new "逃跑"
 
     # game/BKstory_events.rpy:5956
     old "Infiltrate the club"
@@ -37410,11 +37406,11 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:6022
     old "General Ka"
-    new "将军卡"
+    new "卡尔将军"
 
     # game/BKstory_events.rpy:6022
     old "Admiral Zee"
-    new "提督济"
+    new "泽伊上将"
 
     # game/BKstory_events.rpy:6022
     old "Lieutenant Stella"
@@ -37594,7 +37590,7 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:12555
     old "Wait, did you fuck a dragon?"
-    new "等等,你是和龙搞过吗?"
+    new "等等,难道你和龙乱搞过吗?"
 
     # game/BKstory_events.rpy:14475
     old "Yes. Repay [MC.loan.amount] gold right now and settle your account"
@@ -37718,39 +37714,39 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:17929
     old "You're nice"
-    new "你真好人"
+    new "你真体贴"
 
     # game/BKstory_events.rpy:17929
     old "You're stupid"
-    new "你真笨"
+    new "你真愚钝"
 
     # game/BKstory_events.rpy:17929
     old "You're hot"
-    new "你真辣"
+    new "你真性感"
 
     # game/BKstory_events.rpy:19047
     old "Choose which girls to share with Chaos. This will cost them some enery and sanity (and possibly their virginity)."
-    new "选择哪几个女孩与混沌分享。这会消耗她们的一些精力和理智(可能还有处女之身)。"
+    new "选择献给混沌魔剑的女孩。这会消耗她们的一些精力和理智(可能还有处女之身)。"
 
     # game/BKstory_events.rpy:19047
     old "Give him a virgin (full charge)"
-    new "给他一个处女(全力充电)"
+    new "给他一个处女(全盛充能)"
 
     # game/BKstory_events.rpy:19047
     old "Give him 4 girls (full charge)"
-    new "给他4个女孩(全力充电)"
+    new "给他4个女孩(全盛充能)"
 
     # game/BKstory_events.rpy:19047
     old "Give him 3 girls (high charge)"
-    new "给他3个女孩(高功率充电)"
+    new "给他3个女孩(高功率充能)"
 
     # game/BKstory_events.rpy:19047
     old "Give him 2 girls (low charge)"
-    new "给他2个女孩(低功率充电)"
+    new "给他2个女孩(低功率充能)"
 
     # game/BKstory_events.rpy:19047
     old "Not this month"
-    new "本月不行"
+    new "这个月不行"
 
 
 ###########################################################
@@ -37867,7 +37863,7 @@ translate schinese renza_onsen3_185b3160_6:
 translate schinese renza_onsen3_b9c1b730_1:
 
     # you "Renza..."
-    you "Renza..."
+    you "伦萨..."
 
 # game/BKstory_events.rpy:1499
 translate schinese renza_onsen3_185b3160_7:
@@ -38623,7 +38619,7 @@ translate schinese game_over_0ae9bcd0:
 translate schinese game_over_e5a7681a:
 
     # centered "{color=[c_red]}{b}GAME OVER{/b}{/color}"
-    centered "{color=[c_red]}{b}GAME OVER{/b}{/color}"
+    centered "{color=[c_red]}{b}游戏结束{/b}{/color}"
 
 # game/BKstory_events.rpy:15378
 translate schinese meet_carpenter_a7399b46:
@@ -39011,7 +39007,7 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:2916
     old "Fine"
-    new "Fine"
+    new "好吧"
 
     # game/BKstory_events.rpy:2925
     old "还未请教姑娘芳名?"
@@ -39071,11 +39067,11 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:6022
     old "Ka将军"
-    new "Ka将军"
+    new "卡尔将军"
 
     # game/BKstory_events.rpy:6022
     old " Zee上将"
-    new " Zee上将"
+    new " 泽伊上将"
 
     # game/BKstory_events.rpy:6022
     old "斯特拉中尉"

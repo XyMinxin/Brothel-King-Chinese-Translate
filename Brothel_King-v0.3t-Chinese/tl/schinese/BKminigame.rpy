@@ -4,7 +4,7 @@
 translate schinese ninja_game_fc645987:
 
     # suzume shrewd "Wait, [MC.name]... I sense something." with vpunch
-    suzume shrewd "Wait, [MC.name]... I sense something." with vpunch
+    suzume shrewd "慢着, [MC.name]... 我感觉哪里不对。" with vpunch
 
 translate schinese strings:
 
