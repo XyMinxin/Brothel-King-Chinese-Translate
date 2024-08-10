@@ -2169,15 +2169,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:776
     old "点精力, 其精力上限是"
-    new "点精力, 其精力上限是"
+    new "点精力, 她的精力上限为"
 
     # game/BKscreens.rpy:1134
     old "打开 %s 的时间表"
-    new "打开 %s 的排班表"
+    new "打开%s的排班表"
 
     # game/BKscreens.rpy:1141
     old "在您的魔法笔记本中打开 %s 的条目"
-    new "在您的魔法笔记本中打开 %s 的条目"
+    new "在您的魔法笔记本中查看%s的信息"
 
     # game/BKscreens.rpy:1462
     old "点击更改她的名字"
@@ -2185,23 +2185,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1497
     old "{b}手无寸铁"
-    new "{b}手无寸铁"
+    new "{b}不堪一击"
 
     # game/BKscreens.rpy:1499
     old "{b}娇花易折"
-    new "{b}娇花易折"
+    new "{b}手无寸铁"
 
     # game/BKscreens.rpy:1501
     old "{b}红颜侠客"
-    new "{b}红颜侠客"
+    new "{b}铜墙铁壁"
 
     # game/BKscreens.rpy:1503
     old "{b}绝色杀手"
-    new "{b}绝色杀手"
+    new "{b}坚如磐石"
 
     # game/BKscreens.rpy:1505
     old "{b}致命诱惑"
-    new "{b}致命诱惑"
+    new "{b}固若金汤"
 
     # game/BKscreens.rpy:1507
     old "{/b}\n数值越高女孩的自卫能力越强，让女孩装备武器可以提高她的自卫等级"

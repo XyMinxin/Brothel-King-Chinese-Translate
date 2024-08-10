@@ -6436,7 +6436,7 @@ translate schinese slave_story7_5ad4fd4c:
 translate schinese slave_story7_7c5c86cb:
 
     # "She acknowledges your presence without opening her eyes. You sit on the bed next to her."
-    "She acknowledges your presence without opening her eyes. You sit on the bed next to her."
+    "她闭着眼睛都能知道是你来了。你坐到她旁边的床上。"
 
 # game/BKinteractions.rpy:5225
 translate schinese slave_story7_ece4bd18:

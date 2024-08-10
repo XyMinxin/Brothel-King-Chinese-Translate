@@ -1431,7 +1431,7 @@ label powers_intro():
 
     gizel "Yes! You are the cause of this!" with vpunch
 
-    $ MC.rand_say(["wz: But I didn't cast any spell? I didn't do anything!", "How is that even possible?"])
+    $ MC.rand_say(["wz: 但我没有施任何咒语?我什么都没做!", "这怎么可能呢?"])
 
     gizel normal "I've been wondering about that myself, and I have a theory."
 
