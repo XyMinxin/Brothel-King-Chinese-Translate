@@ -3451,7 +3451,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         for act in all_sex_acts:
 
-                            text "{b}" + __(act.capitalize()) + "{/b}" color c_firered size small xalign 0.5
+                            text "{b}" + tl_cn(act.capitalize(), girl_related_dict) + "{/b}" color c_firered size small xalign 0.5
 
                             text str_int(log_dict[act + "_cust"][days]) size average color c_brown xalign 0.5
 

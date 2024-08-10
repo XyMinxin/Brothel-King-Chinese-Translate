@@ -14040,7 +14040,7 @@ translate schinese mizuki_onsen_71ba0ff0:
 translate schinese mizuki_onsen_e8ba522c:
 
     # mizuki "Good boy! Good. You're being honest."
-    mizuki "好孩子!很好,你很诚实。"
+    mizuki "好孩子！很好，你很诚实。"
 
 # game/BKchapter2.rpy:7256
 translate schinese mizuki_onsen_04ae7af9:
@@ -14058,19 +14058,19 @@ translate schinese mizuki_onsen_59f0697c:
 translate schinese mizuki_onsen_8e248e22:
 
     # "Her fingertips wrap around your cock's head, stroking erogenous zones you didn't know existed."
-    "她的指尖包裹住你肉棒的顶端,抚摸着你从未体验过的敏感区域。"
+    "她的指尖包裹住你肉棒的顶端，抚摸着你从未体验过的敏感区域。"
 
 # game/BKchapter2.rpy:7264
 translate schinese mizuki_onsen_4ba0c83c:
 
     # mizuki "Did you know that a man's seed is 99 per cent water? And I'm a master of water magic..."
-    mizuki "你知道吗,男人的精子有99%是水?而我是水系魔法的大师..."
+    mizuki "你知道吗，男人的精子有99\%是水？而我是水系魔法的大师..."
 
 # game/BKchapter2.rpy:7269
 translate schinese mizuki_onsen_afb3b708:
 
     # "Suddenly, you feel a powerful rush build up inside you. Her hand closes into a fist around your cock, not letting anything come out."
-    "突然间,你感到一股强大的冲动在你体内累积。她的手紧紧地握住你的肉棒,不让任何东西溢出。"
+    "突然间，你感到一股强大的冲动在你体内累积。她的手紧紧地握住你的肉棒，不让任何东西溢出。"
 
 # game/BKchapter2.rpy:7271
 translate schinese mizuki_onsen_d09c9973:
@@ -14082,7 +14082,7 @@ translate schinese mizuki_onsen_d09c9973:
 translate schinese mizuki_onsen_db2ad24e:
 
     # "Your cock grows to abnormal proportions, throbbing extremely painfully with every heartbeat. For an instant, you think your cock might explode and you might die here."
-    "你的肉棒异常膨胀,每一次跳动都伴随着剧烈的疼痛。这个瞬间,你觉得你的肉棒可能会爆炸,你可能会死在这里。"
+    "你的肉棒异常膨胀，每一次跳动都伴随着剧烈的疼痛。这个瞬间,你觉得你的肉棒可能会爆炸，你可能会死在这里。"
 
 # game/BKchapter2.rpy:7275
 translate schinese mizuki_onsen_1601faa5:

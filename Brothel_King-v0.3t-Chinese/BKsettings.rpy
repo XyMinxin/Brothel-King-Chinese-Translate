@@ -946,6 +946,14 @@ init -10 python:
                        "Voidbound" : "虚无缥缈",
                        "Waterbound" : "翻江倒海",
                        "Earthbound" : "地动山摇",
+
+                       ## 特殊状态 ##
+                       "Naked" : "裸体",
+
+                       "Group" : "群交",
+                       "Bisexual" : "双飞",
+                       "Orgy" : "激烈的多人群交",
+                       "Ponygirl" : "扮演兽耳娘",
                        }
 
     ## 资源名称 ##

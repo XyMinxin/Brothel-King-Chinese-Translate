@@ -2875,7 +2875,7 @@ init -1 python:
     add_dialogue("slave chat tastes no negative act", ("superficial", "very extravert", "very lewd"), ("*咯咯笑*我愿意做任何事情。让我们玩得开心吧？"), unlock="LM")
 
     add_dialogue("slave chat origins 1", ("superficial", "rebel", "bimbo" ), ("我来自[girl.origin]。那里实在是太无聊了。", "我来自[girl.origin]。我决定尽快搬到泽恩。", "我很高兴我们能够从 [girl.origin] 搬到 Zan。 [girl.origin] 简直就是一个屎坑。"), unlock="EI")
-    add_dialogue("slave chat origins 2", ("superficial", "rebel", "princess", "schemer", "stubborn"), ["g: 回到[girl.origin]，我曾经爬上我们的[家]顶，激怒了我的[girl.story_guardian]。", "g: 我不知道为什么我会想到这样做....我想这只是一种引起他们注意的方式。"], multiple=True, unlock="EI")
+    add_dialogue("slave chat origins 2", ("superficial", "rebel", "princess", "schemer", "stubborn"), ["g: 回到[girl.origin]，我曾经爬上我们的[a_home]顶，激怒了我的[girl.story_guardian]。", "g: 我不知道为什么我会想到这样做....我想这只是一种引起他们注意的方式。"], multiple=True, unlock="EI")
     add_dialogue("slave chat origins 3", ("superficial", "very materialist"), ["g: 我已经很久没有在那个[girl.story_home]了，但我仍然清楚地记得和我的[girl.story_guardian]一起用雏菊制作一条项链。", "g: 我想这就是我对珠宝的喜爱的开始。"], multiple=True, unlock="EI")
     add_dialogue("origin Zan", ("superficial", "very materialist"), ["g: 我和我的[girl.story_guardian]经常会在大教堂附近闲逛。", "g: 如果你仔细看看大教堂广场附近的那棵老树，你会发现它的树皮上刻着一颗小心，两边都有我名字的缩写。"], multiple=True)
     add_dialogue("origin the border with the Holy Lands", ("superficial", "very extravert"), ["当你听到呼啸的风吹过圣地的山丘时，你会感到难以忍受的悲伤。", "g: 我的[girl.story_guardian]会自发地唱歌，只是为了淹没风的噪音。"], multiple=True)
@@ -3988,7 +3988,7 @@ init -1 python:
     add_dialogue("slave chat tastes no negative act", ("prude", "very modest"), ("不言而喻，性轻浮是一种可耻的追求，但我不认为任何一种性行为比其他性行为更糟糕......"), unlock="LM")
 
     add_dialogue("slave chat origins 1", ("prude", "class president", "holy", "princess"), ("我的婴儿床位于 [girl.origin] 的一个古色古香的小角落。"), unlock="EI")
-    add_dialogue("slave chat origins 2", ("prude", "very modest"), ("我是由我的[girl.story_guardian]抚养长大的。我们在[girl.origin]有一个可爱的[家]。"), unlock="EI")
+    add_dialogue("slave chat origins 2", ("prude", "very modest"), ("我是由我的[girl.story_guardian]抚养长大的。我们在[girl.origin]有一个可爱的[a_home]。"), unlock="EI")
     add_dialogue("slave chat origins 3", ("prude", "very modest"), ("啊，我很向往在我们的[girl.story_home]里和我的[girl.story_guardian]一起度过的平静日子。"), unlock="EI")
     add_dialogue("slave train accepted", ("prude", "very modest"), ("我不同意这种做法，但我会遵守规定。", "我不敢相信你让我这么做。", "哦不...这是非常答错了，但我会按照你的要求去做。", "这绝对是可悲的，但我会忍受它。"))
     add_dialogue("slave train resisted", ("prude", "very modest"), ("你不能让我这么做。这是不对的！", "不，请不要让我这么做。那太丢人了！", "这太令人反感了！你怎么能问我这个？", "我恳求您重新考虑一下，主人。我不同意这一点。"))

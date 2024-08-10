@@ -1335,8 +1335,8 @@ label slave_remove_fixation(girl):
 
         if len(neg_fix) == 1:
             fix = neg_fix[0]
-
-            renpy.say(you, "今天，我希望你能克服对[fix.short_name]的厌恶")
+            cnttxt = tl_cn(fix.short_name, girl_related_dict)
+            renpy.say(you, "今天，我希望你能克服对的厌恶")
 
         else:
             menu_list = [] #[("Choose a fixation to work on", None)]
