@@ -6058,7 +6058,7 @@ screen postings(qlist):
                                     else:
                                         $ t = "+"
 
-                                    text tl_cn([stat!t], girl_related_dict) + " " + t size res_font(14) color c_brown
+                                    text tl_cn("[stat!t]", girl_related_dict) + " " + t size res_font(14) color c_brown
 
                                 textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size res_font(14) text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
                                     tooltip "课程可能导致女孩的技能超过等级上限。"
@@ -6076,7 +6076,7 @@ screen postings(qlist):
 
                                 for stat, val in selected_quest.requirements:
 
-                                    text tl_cn([stat!t], stat_name_dict) + " " + str(val) size res_font(14) color c_brown
+                                    text tl_cn("[stat!t]", stat_name_dict) + " " + str(val) size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 
