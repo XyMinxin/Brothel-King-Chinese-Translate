@@ -931,7 +931,7 @@ init -10 python:
                        ## 特殊特质 ##
                        "Godless" : "敬而远之",
                        "Housebroken" : "恬不知耻",
-                       "Teacher's pet" : "入室弟子",
+                       "Teacher's pet" : "得意门生",
                        "Trauma" : "黯然神伤",
                        "Farmgirl" : "农场之星",
                        "Mark of Chaos" : "Mark of Chaos",

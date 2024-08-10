@@ -304,7 +304,7 @@ translate schinese found_escaped_girl_1641c2cc:
 translate schinese found_escaped_girl_22820a44:
 
     # "She cries on your shoulder for a while. Taking her by the hand, you take her back to the brothel."
-    "她在你肩上哭了一会儿。你牵着她的手把她带回了青楼。"
+    "她靠在你肩上哭了一会儿。你牵着她的手把她带回了青楼。"
 
 # game/BKevents.rpy:1166
 translate schinese found_escaped_girl_decd7840:
@@ -322,25 +322,25 @@ translate schinese found_escaped_girl_907e67a3:
 translate schinese found_escaped_girl_2c71ca88:
 
     # "Startled by your approach, she jumps to her feet and runs into an alley."
-    "被你的靠近吓了一跳,她跳起来逃进了小巷。"
+    "她发现你时吓了一跳,跳起身来逃进了小巷。"
 
 # game/BKevents.rpy:1178
 translate schinese found_escaped_girl_46342aa5:
 
     # "You try calling after her, but it's too late. She's already gone."
-    "你试着呼唤她,但已经太迟了,她已经逃走了。"
+    "你试着劝阻她,但已经太迟了,她已经逃走了。"
 
 # game/BKevents.rpy:1188
 translate schinese found_escaped_girl_263fe356:
 
     # you "There you are! Look at you... You're a wreck. At this rate, you will starve before the end of the week. You better come back, or else..."
-    you "终于找到你了!看看你,一团糟。这样下去,你撑不到本周结束就会饿死。你最好回来,要不然..."
+    you "总算找到你了!看看你这副德行。再这样下去,再过几天你就会饿死。你最好回来,要不然..."
 
 # game/BKevents.rpy:1192
 translate schinese found_escaped_girl_58deffc0:
 
     # "She breaks down in tears."
-    "她崩溃地哭泣起来。"
+    "她在这一瞬间突然崩溃了。"
 
 # game/BKevents.rpy:1194
 translate schinese found_escaped_girl_f9343fae:
@@ -352,13 +352,13 @@ translate schinese found_escaped_girl_f9343fae:
 translate schinese found_escaped_girl_fda387bd:
 
     # "Yanking her to her feet, you push her forward and bring her back to the brothel."
-    "你拽起她,粗暴地推着她走,把她带回了青楼。"
+    "你拽住她,粗暴地按着她走,把她押回了青楼。"
 
 # game/BKevents.rpy:1208
 translate schinese found_escaped_girl_decd7840_1:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "她无法再做一个[girl.job]，只能静候终结。"
+    "她无法再回到[girl.job]的岗位上,所以被自动安排休息了。"
 
 # game/BKevents.rpy:1213
 translate schinese found_escaped_girl_907e67a3_1:
@@ -370,55 +370,55 @@ translate schinese found_escaped_girl_907e67a3_1:
 translate schinese found_escaped_girl_7572c8b2:
 
     # "She gives you a defiant look and hisses at you."
-    "她给了你一个挑衅的眼神,对你嘶吼。"
+    "她给了你一个挑衅的眼神,对你竖起中指。"
 
 # game/BKevents.rpy:1220
 translate schinese found_escaped_girl_ab39660c:
 
     # girl.char "Never!"
-    girl.char "永远不会!"
+    girl.char "你休想!"
 
 # game/BKevents.rpy:1222
 translate schinese found_escaped_girl_727a51a3:
 
     # "With desperate strength, she leaps to her feet and darts away."
-    "在绝望的力量驱使下,她跳起来,逃之夭夭。"
+    "在绝望的驱使下,她跳了起来,逃之夭夭。"
 
 # game/BKevents.rpy:1224
 translate schinese found_escaped_girl_15c88621:
 
     # "You swear and curse after her as she disappears into a crowd."
-    "你咒骂着她,但她已经消失在人群中。"
+    "你破口大骂,但她已经消失在人群中。"
 
 # game/BKevents.rpy:1236
 translate schinese found_escaped_girl_1a764ed5:
 
     # "Not saying anything, you approach her from behind, and grab her firmly by her hair."
-    "你一言不发,从背后靠近她,狠狠抓住她的头发。"
+    "你沉默不语,从背后悄悄靠近她,一把揪住她的头发。"
 
 # game/BKevents.rpy:1238
 translate schinese found_escaped_girl_9cf1dd3a:
 
     # you "You're going to come with me, you bitch!"
-    you "你这个婊子,你得跟我走!"
+    you "臭婊子,跟我回去!"
 
 # game/BKevents.rpy:1242
 translate schinese found_escaped_girl_6ed6ad11:
 
     # "She gasps in surprise as you yank her to the side like a ragdoll and slap her senseless."
-    "她被你像个布娃娃一样扯到一边,狠狠地扇了几个耳光,吓了一跳。"
+    "她像个布娃娃一样被你拽到一边,被狠狠地扇了几个耳光,一脸茫然。"
 
 # game/BKevents.rpy:1244
 translate schinese found_escaped_girl_c2c2d06e:
 
     # "Loading her on your shoulder, you bring her kicking and screaming back to the brothel."
-    "你把她扛在肩上,拽着她一路嘶吼着把她带回了青楼。"
+    "你把她扛在肩上,她嘶吼着被你带回了青楼。"
 
 # game/BKevents.rpy:1257
 translate schinese found_escaped_girl_decd7840_2:
 
     # "She couldn't go back to being a [girl.job], so she was set to rest."
-    "她无法再回到[girl.job]的工作,所以她被安排休息了。"
+    "她无法再回到[girl.job]的岗位上,所以被自动安排休息了。"
 
 # game/BKevents.rpy:1262
 translate schinese found_escaped_girl_907e67a3_2:
@@ -430,13 +430,13 @@ translate schinese found_escaped_girl_907e67a3_2:
 translate schinese found_escaped_girl_766c40d9:
 
     # "With uncanny speed, she turns toward you and bites your hand with all her strength."
-    "她以惊人的速度转向你,用全力咬住你的手。"
+    "她以惊人的速度冲向你,用牙齿咬住你的手。"
 
 # game/BKevents.rpy:1269
 translate schinese found_escaped_girl_61bb64d5:
 
     # "You scream in pain and let go as the blood runs down your fingers. Jumping aside, she bolts down the street like a frightened hare."
-    "你痛苦地尖叫,松开手,鲜血从指缝中流下。她像受惊的兔子一样冲下街道。"
+    "你痛苦地尖叫,松开手,鲜血从指缝中流下。她像受惊的兔子一样冲出街道。"
 
 # game/BKevents.rpy:1271
 translate schinese found_escaped_girl_280adbfa:
@@ -448,61 +448,61 @@ translate schinese found_escaped_girl_280adbfa:
 translate schinese found_escaped_girl_71a0f655:
 
     # you "Well, she's on her own now. It was her choice..."
-    you "好吧,现在她自己走吧。这是她的选择..."
+    you "好吧,我尊重她的选择，你自由了..."
 
 # game/BKevents.rpy:1283
 translate schinese found_escaped_girl_b60410ba:
 
     # you "I haven't got time to deal with this now."
-    you "我现在没时间处理这件事。"
+    you "我现在没时间管她。"
 
 # game/BKevents.rpy:1295
 translate schinese take_leave_429d1af9:
 
     # "[girl.fullname] is leaving. She will be back in [day_nb] day[plu]."
-    "[girl.fullname]正在离开。她将在[day_nb]天[plu]后回来。"
+    "[girl.fullname]不在青楼。她将在[day_nb]天[plu]后回来。"
 
 # game/BKevents.rpy:1308
 translate schinese return_from_leave_ff4b6ced:
 
     # sill happy "Master! [girl.fullname] has returned from her leave."
-    sill happy "主人![girl.fullname]从休假中回来了。"
+    sill happy "主人![girl.fullname]回来了。"
 
 # game/BKevents.rpy:1357
 translate schinese too_tired_1ac9f1a6:
 
     # "[girl.fullname] has come to see you."
-    "[girl.fullname]来看你了。"
+    "[girl.fullname]来到你的面前。"
 
 # game/BKevents.rpy:1362
 translate schinese too_tired_705cfbea:
 
     # girl.char "Oh, Master [MC.name]... I'm so tired, I don't think I can work tomorrow... Would you give me a little break? [emo_heart]"
-    girl.char "哦,[MC.name]主人...我太累了,我想明天不工作了...您能让我休息一天吗?[emo_heart]"
+    girl.char "哦,[MC.name]...我好累,我明天干不动活了...能不能让我休息一天?[emo_heart]"
 
 # game/BKevents.rpy:1365
 translate schinese too_tired_9811ebef:
 
     # girl.char "Master, I... Forgive me for saying this, but... I don't think I can work tomorrow, I feel very tired..."
-    girl.char "主人,我...对不起这么说,但...我明天实在太累了,无法工作下去...请给我一些休息吧。"
+    girl.char "主人,我...我很抱歉,但...我实在太累了,我明天没法工作...请让我休息一下吧。"
 
 # game/BKevents.rpy:1368
 translate schinese too_tired_d6900435:
 
     # girl.char "Master [MC.name]. I'm too tired to work tomorrow, I can't go on like this... Please give me some rest."
-    girl.char "[MC.name]主人。我明天实在太累了,我做不下去了...请让我休息一天。"
+    girl.char "[MC.name]。我实在太累了,一点力气也没有了...请让我休息一天。"
 
 # game/BKevents.rpy:1378
 translate schinese too_tired_17fc5c72:
 
     # you "Fine, take the day off if you need it.[text1]"
-    you "好吧,如果你需要休息就休息一天吧。[text1]"
+    you "好吧,如果你需要休息那就好好放松一下吧。[text1]"
 
 # game/BKevents.rpy:1385
 translate schinese too_tired_104aa028:
 
     # you "No way. You've got a job to do, so do it."
-    you "不行。你有工作要做,所以就去做吧。"
+    you "不行。排班表都排好了，好好干活。"
 
 # game/BKevents.rpy:1386
 translate schinese too_tired_fbf00f5d:
@@ -514,7 +514,7 @@ translate schinese too_tired_fbf00f5d:
 translate schinese show_relationship_change_32a81615:
 
     # girl1.char "Hey, [girl2.name]! Let's work together, it will be more fun!"
-    girl1.char "嘿,[girl2.name]!让我们一起工作,会更有趣!"
+    girl1.char "嘿,[girl2.name]!我们一起工作吧,一定会很有趣的!"
 
 # game/BKevents.rpy:1424
 translate schinese show_relationship_change_5948375f:
@@ -532,19 +532,19 @@ translate schinese show_relationship_change_885c5bd6:
 translate schinese show_relationship_change_da354323:
 
     # "[girl1.name] and [girl2.name] are now friends."
-    "[girl1.name]和[girl2.name]现在是朋友了。"
+    "[girl1.name]和[girl2.name]成为了好朋友。"
 
 # game/BKevents.rpy:1444
 translate schinese show_relationship_change_87cc5c26:
 
     # girl1.char "Hey, [text1]! Why don't you get out of my way?"
-    girl1.char "嘿,[text1]!你为什么不让开?"
+    girl1.char "嘿,[text1]!你没长眼睛吗?别挡我的道！"
 
 # game/BKevents.rpy:1446
 translate schinese show_relationship_change_dbe1bb79:
 
     # girl1.char "Oh, it's you, [text1]... I was just leaving, anyway."
-    girl1.char "哦,是你,[text1]...我正要走,反正。"
+    girl1.char "哦,是你,[text1]...反正我也要离开，随你怎么说吧。"
 
 # game/BKevents.rpy:1452
 translate schinese show_relationship_change_77e4ef71:
@@ -556,13 +556,13 @@ translate schinese show_relationship_change_77e4ef71:
 translate schinese show_relationship_change_2bb474cf:
 
     # girl2.char "That's just fine. I want nothing to do with you..."
-    girl2.char "那很好。我不想跟你扯上任何关系..."
+    girl2.char "你怎么说都行，我不想跟你扯上任何关系..."
 
 # game/BKevents.rpy:1456
 translate schinese show_relationship_change_03233420:
 
     # "[girl1.name] and [girl2.name] are now rivals."
-    "[girl1.name]和[girl2.name]现在是敌人了。"
+    "[girl1.name]和[girl2.name]结下了梁子。"
 
 # game/BKevents.rpy:1463
 translate schinese show_relationship_change_7c40bb8e:
@@ -586,7 +586,7 @@ translate schinese show_relationship_change_2fb8297b:
 translate schinese random_relationship_event_28599ae2:
 
     # girl1.char "[girl2.name], you're so cool!"
-    girl1.char "[girl2.name],你真酷!"
+    girl1.char "[girl2.name],你真时髦!"
 
 # game/BKevents.rpy:1495
 translate schinese random_relationship_event_28b4cb60:
@@ -598,55 +598,55 @@ translate schinese random_relationship_event_28b4cb60:
 translate schinese random_relationship_event_9a4a6105:
 
     # girl1.char "[text1]... Master hasn't got around to sell you yet?"
-    girl1.char "[text1]... 主人还没来得及把你卖掉吗?"
+    girl1.char "[text1]... 主人还没把你给卖掉吗?"
 
 # game/BKevents.rpy:1514
 translate schinese random_relationship_event_f28fad59:
 
     # girl2.char "Grrr..."
-    girl2.char "咆哮..."
+    girl2.char "咬牙..."
 
 # game/BKevents.rpy:1537
 translate schinese auto_train_61474d4d:
 
     # "[girl.fullname] is away and cannot be trained."
-    "[girl.fullname] 现在不在,无法训练。"
+    "[girl.fullname]外出了,无法被训练。"
 
 # game/BKevents.rpy:1541
 translate schinese auto_train_b8f31028:
 
     # "[girl.fullname] has already trained today. She cannot train more than once per day."
-    "[girl.fullname] 今天已经训练过了,一天只能训练一次。"
+    "[girl.fullname]今天已经被训练过了,一天只能训练一次。"
 
 # game/BKevents.rpy:1545
 translate schinese auto_train_c0226b1a:
 
     # "[girl.fullname] is exhausted or hurt, and unable to train tonight."
-    "[girl.fullname] 现在很累或受伤,今晚无法训练。"
+    "[girl.fullname]的身体状态不适,今晚无法训练。"
 
 # game/BKevents.rpy:1548
 translate schinese auto_train_74827601:
 
     # "[girl.fullname] is waiting for you in the bedroom for tonight's training."
-    "[girl.fullname] 正在卧室里等你今晚的训练。"
+    "[girl.fullname]在你的房间里等待今晚的私人指导。"
 
 # game/BKevents.rpy:1563
 translate schinese auto_train_menu_b8f31028:
 
     # "[girl.fullname] has already trained today. She cannot train more than once per day."
-    "[girl.fullname] 今天已经训练过了,一天只能训练一次。"
+    "[girl.fullname]今天已经被训练过了,一天只能训练一次。"
 
 # game/BKevents.rpy:1572
 translate schinese auto_train_menu_d58255d5:
 
     # you "Go back to your bedroom now. I am done with you."
-    you "现在回你自己的卧室去吧,我已经完事了。"
+    you "现在回你自己的房间去吧,我没什么好教你的了。"
 
 # game/BKevents.rpy:1576
 translate schinese auto_train_menu_2f0ec43a:
 
     # "[girl.fullname] has left the master bedroom."
-    "[girl.fullname] 已经离开主人的卧室。"
+    "[girl.fullname]现在开始不再接受你的私人指导了。"
 
 # game/BKevents.rpy:1613
 translate schinese test_resources_4d846f38:
@@ -658,19 +658,19 @@ translate schinese test_resources_4d846f38:
 translate schinese furniture_built_1cf70525:
 
     # carpenter "Hey, boss! I've just finished work on the [furn.name]. I hope you like it."
-    carpenter "嘿,老板!我刚刚完成了[furn.name]的工作。希望你会喜欢。"
+    carpenter "嘿,老板!我刚刚弄好了[furn.name]。希望你喜欢。"
 
 # game/BKevents.rpy:1684
 translate schinese collect_wood_c314ab88:
 
     # "You cannot collect wood more than once per day."
-    "你一天只能采集一次木材。"
+    "你一天只能收集一次木材。"
 
 # game/BKevents.rpy:1738
 translate schinese collect_leather_da3a27a5:
 
     # "You cannot trade leather more than once per day."
-    "你一天只能交易一次皮革。"
+    "你一天只能换取一次皮革。"
 
 # game/BKevents.rpy:1792
 translate schinese collect_dye_6ce4d5eb:
@@ -682,13 +682,13 @@ translate schinese collect_dye_6ce4d5eb:
 translate schinese collect_marble_77cd23bb:
 
     # "You cannot mine marble more than once per day."
-    "你一天只能采矿一次大理石。"
+    "你一天只能开采一次大理石。"
 
 # game/BKevents.rpy:1900
 translate schinese collect_ore_2cf8bbf6:
 
     # "You cannot negotiate ore more than once per day."
-    "你一天只能谈判一次矿石。"
+    "你一天只能挖掘一次矿石。"
 
 # game/BKevents.rpy:1954
 translate schinese collect_silk_c7b642f8:
@@ -706,25 +706,25 @@ translate schinese collect_diamond_566a380e:
 translate schinese break_extractor_45e93d2f:
 
     # "Your [resource] extractor has broken down."
-    "你的[resource]提取设备出现故障了。"
+    "你的[resource]采集设备发生了故障。"
 
 # game/BKevents.rpy:2004
 translate schinese visit_exchange_3d87bc36:
 
     # bast "Welcome to the resource exchange. How may I help you?"
-    bast "欢迎来到资源交易所,我能为您效劳吗?"
+    bast "欢迎来到资源交易市场,我能为您效劳吗?"
 
 # game/BKevents.rpy:2011
 translate schinese visit_exchange_12df1e2b:
 
     # you "Hey Bast, do you want to have some fun?"
-    you "嘿,巴斯特,你想玩些有趣的吗?"
+    you "嘿,巴斯特,想不想找点乐子?"
 
 # game/BKevents.rpy:2013
 translate schinese visit_exchange_a589c4ee:
 
     # "Bast looks around to make sure no one can hear you. She lowers her voice."
-    "巴斯特环顾四周,确保没有人能听到你。她压低声音说:"
+    "巴斯特环顾四周,确保没有人能听到你们交谈。她压低声音说:"
 
 # game/BKevents.rpy:2015
 translate schinese visit_exchange_be3775b3:
@@ -736,13 +736,13 @@ translate schinese visit_exchange_be3775b3:
 translate schinese visit_exchange_b8499140:
 
     # you "Yes... I'm horny as hell..."
-    you "是的...我都快被欲望填满了..."
+    you "是的...我想你想的好难受..."
 
 # game/BKevents.rpy:2020
 translate schinese visit_exchange_b7fe4468:
 
     # bast "You... You can't be serious... We only just did it!"
-    bast "你...你不会是认真的吧...我们刚刚才做完!"
+    bast "你...你不会是认真的吧...我们不是刚刚才做完嘛!"
 
 # game/BKevents.rpy:2022
 translate schinese visit_exchange_46c1dc5a:
@@ -760,7 +760,7 @@ translate schinese visit_exchange_c054fc44:
 translate schinese visit_exchange_93545409:
 
     # bast "Oh, [MC.name]... *blush*"
-    bast "*脸红*哦,[MC.name]..."
+    bast "*脸红*我不是那个意思,[MC.name]..."
 
 # game/BKevents.rpy:2029
 translate schinese visit_exchange_075e4666:
@@ -784,7 +784,7 @@ translate schinese wood_intro_49655f52:
 translate schinese wood_intro_6c927173:
 
     # "Zan is a prime destination for trade from all over the known world, and its shipyard is always buzzing with activity from workmen, seamen, seagulls, moguls, bribe-givers, bribe-takers, bribe-agnostics, idlers and other riff-raff."
-    "赞是世界各地贸易的主要目的地,它的船坞总是人声鼎沸,到处都是工人、水手、海鸥、商人、行贿者、受贿者、不懂贿赂的人、闲散人等等各类人群。"
+    "泽恩是世界各地贸易的枢纽,它的船坞二十四小时都在运行,这里充满了工人、水手、海鸥、商人、行贿者、受贿者、不懂贿赂的人、游手好闲的人等等各类人群。"
 
 # game/BKevents.rpy:2094
 translate schinese wood_intro_a456aa9e:
@@ -796,7 +796,7 @@ translate schinese wood_intro_a456aa9e:
 translate schinese wood_intro_c64fea32:
 
     # "Because of its ever-growing population, Zan has stripped most of the surrounding country of its timber. Therefore, wood is a valuable commodity, so instead of letting it go to waste, some enterprising people dismantle old boats to make new ones."
-    "由于人口不断增长,赞已经砍光了周围大部分的林木。因此木材是宝贵的商品,所以有一些有创业精神的人拆解旧船来制造新船,以免浪费木材。"
+    "由于人口不断增长,泽恩已经砍光了周围大部分的林木。因此木材是宝贵的商品,所以有一些有创业精神的人拆解旧船来制造新船,以免浪费木材。"
 
 # game/BKevents.rpy:2098
 translate schinese wood_intro_1caccc6f:
@@ -1168,7 +1168,7 @@ translate schinese marble_intro_b02f412c:
 translate schinese silk_intro_6a983f1a:
 
     # "The hanging gardens are a wonderful place, tended by the magic guild's airmancers and extending high above Zan. The view is magnificent from here."
-    "悬挂的花园是一个美丽的地方,由魔法公会的空气法师精心照料,高高地伸展在赞城之上。在这里可以欣赏到壮丽的景色。"
+    "悬挂的花园是一个美丽的地方,由魔法公会的空气法师精心照料,高高地伸展在泽恩之上。在这里可以欣赏到壮丽的景色。"
 
 # game/BKevents.rpy:2281
 translate schinese silk_intro_19d11233:
@@ -1180,7 +1180,7 @@ translate schinese silk_intro_19d11233:
 translate schinese silk_intro_a0427549:
 
     # "Creeping along those vines is a unique animal Zan is known all around Xeros for: the Zanic silkworm."
-    "沿着那些藤蔓爬行的是赞城著名的整个杰罗斯地区都闻名的独特动物:赞尼克蚕。"
+    "沿着那些藤蔓爬行的是泽恩著名的整个杰罗斯地区都闻名的独特动物:赞尼克蚕。"
 
 # game/BKevents.rpy:2285
 translate schinese silk_intro_33b67048:
@@ -1192,7 +1192,7 @@ translate schinese silk_intro_33b67048:
 translate schinese silk_intro_e2bf4d4b:
 
     # "They are slow-paced, majestic animals. Silkworms are a delicacy for nobles around Zan, who like to eat a whole one roasted in butter for new year's eve, but very pricey."
-    "它们是缓慢而庄重的动物。蚕是赞城周围贵族的美味佳肴,他们喜欢在除夕夜将一只整只烤熟在黄油中食用,但价格昂贵。"
+    "它们是缓慢而庄重的动物。蚕是泽恩周围贵族的美味佳肴,他们喜欢在除夕夜将一只整只烤熟在黄油中食用,但价格昂贵。"
 
 # game/BKevents.rpy:2289
 translate schinese silk_intro_91289a63:
@@ -1216,7 +1216,7 @@ translate schinese silk_intro_096b7f43:
 translate schinese ore_intro_ebd6f897:
 
     # "The guild quarter hosts representatives from every possible trade in Zan, except for the Magic and Banking guilds that have their own separate quarter."
-    "工会区聚集了赞城所有可能的行业代表,除了魔法和银行公会,它们有自己独立的区域。"
+    "工会区聚集了泽恩所有可能的行业代表,除了魔法和银行公会,它们有自己独立的区域。"
 
 # game/BKevents.rpy:2307
 translate schinese ore_intro_4b745e39:
@@ -1228,7 +1228,7 @@ translate schinese ore_intro_4b745e39:
 translate schinese ore_intro_536562de:
 
     # "The guild quarter is also where the mining activities are concentrated in Zan, as the guilds handle claims and stakes for the miners."
-    "工会区还是赞城矿业活动集中的地方,公会负责管理矿工的权利和股份。"
+    "工会区还是泽恩矿业活动集中的地方,公会负责管理矿工的权利和股份。"
 
 # game/BKevents.rpy:2311
 translate schinese ore_intro_5049007a:
@@ -1450,7 +1450,7 @@ translate schinese ore_intro_6e3d37b3:
 translate schinese diamond_intro_d80ef30c:
 
     # "As you enjoy the sight of Zan's mighty waterfalls, you hear an eery noise that makes your hair stand."
-    "当你欣赏着赞恩壮丽的瀑布时,一阵诡异的声音让你毛骨悚然。"
+    "当你欣赏着泽恩壮丽的瀑布时,一阵诡异的声音让你毛骨悚然。"
 
 # game/BKevents.rpy:2398
 translate schinese diamond_intro_f4da045c:
@@ -1492,7 +1492,7 @@ translate schinese diamond_intro_f4dc0fa7:
 translate schinese diamond_intro_4d26ea10:
 
     # "Old man" "Oh, yes! There's a huge network of caves that starts there and runs through the whole mountain range. Some say it's many times bigger than Zan, and Zan is the largest city in the world!"
-    "Old man" "哦,是的!那里有一个巨大的洞穴网络,贯穿整个山脉。有人说它比赞城还要大得多,而赞城可是世界上最大的城市!"
+    "Old man" "哦,是的!那里有一个巨大的洞穴网络,贯穿整个山脉。有人说它比泽恩还要大得多,而泽恩可是世界上最大的城市!"
 
 # game/BKevents.rpy:2412
 translate schinese diamond_intro_990f348e:
@@ -7984,7 +7984,7 @@ translate schinese broken_explain_options_a26a5b9e:
 translate schinese broken_explain_options_09575e0f:
 
     # you "But I thought only licensed brothels were authorized in Zan?"
-    you "但是我以为只有持牌的青楼才被允许在赞城内运营?"
+    you "但是我以为只有持牌的青楼才被允许在泽恩内运营?"
 
 # game/BKevents.rpy:7168
 translate schinese broken_explain_options_49d55848:
