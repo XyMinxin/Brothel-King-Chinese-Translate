@@ -1750,7 +1750,7 @@ translate schinese c1_guards_visit_2436f319:
 translate schinese c1_guards_visit_cf718e53:
 
     # gio "Don't, [MC.name]. We have other things to worry about than quarrelling with this dipshit."
-    gio "别虫洞,[MC.name]。我们现在还有更重要的事情要处理,别跟这个白痴纠缠。"
+    gio "别冲动，[MC.name]。我们现在还有更重要的事情要处理,别跟这个白痴纠缠。"
 
 # game/BKchapter1.rpy:1106
 translate schinese c1_guards_visit_5c8f7936:
