@@ -10,13 +10,9 @@
 
 目前汉化版本：20240811
 
-①下载本体：[下载游戏本体](https://www.mediafire.com/file/da0luyi63xgczfp/Brothel_King-0.3t.zip/file)
+①下载本体：[下载游戏本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20240712/Brothel_King.v0.3t.zip)
 
-②安装补丁：[下载补丁覆盖](https://www.mediafire.com/file/1va1v7cq1psp53x/game_patch_0.3.zip/file)
-
-或者直接下载打包好的[本体+原版补丁](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
-
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
+②安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20240811/Brothel_King-v0.3t-Chinese.zip)
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
@@ -35,11 +31,7 @@
 
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
-~~②安装补丁：[下载补丁覆盖](https://mega.nz/file/JaVUAB6A#d0aIFmJ0SkpWusdc1zVBssUMiTsODF7PE3QzxH1GzA0)~~
-
 ③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
-
-合并了补丁，只要本体，不用中间多打个补丁了
 
 [工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
 
