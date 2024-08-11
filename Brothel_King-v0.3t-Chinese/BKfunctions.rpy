@@ -3916,7 +3916,7 @@ init -3 python:
 
     def get_next_day_report(): # Compiles Yesterday's report for the Brothel screen
 
-        msg = "你的青楼拥有 " + str(len(MC.girls)) + " 位女孩 (max " + str(brothel.bedrooms) + ")\n\n"
+        msg = "你的青楼拥有 " + str(len(MC.girls)) + " 位女孩 (最多 " + str(brothel.bedrooms) + ")\n\n"
 
         working_girls = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True))
         waitresses = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True) and girl.job == "waitress")

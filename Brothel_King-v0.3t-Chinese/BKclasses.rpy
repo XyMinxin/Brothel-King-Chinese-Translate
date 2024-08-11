@@ -3070,8 +3070,8 @@ init -2 python:
                 msg = "你昨天亏损了 " + event_color["bad"] % (str(round_int(self.net)) + " gold") + " 金币.\n"
 
             msg += "{size=-2}" + "- 收入: + " + event_color["good"] % str(round_int(self.gold_made)) + "\n"
-            msg += "- 女孩保养费 upkeep: - " + event_color["bad"] % str(round_int(self.upkeep)) + "\n"
-            msg += "- 净收入 costs: - " + event_color["bad"] % str(round_int(self.costs)) + "\n{/size}\n"
+            msg += "- 女孩保养费: - " + event_color["bad"] % str(round_int(self.upkeep)) + "\n"
+            msg += "- 净收入: - " + event_color["bad"] % str(round_int(self.costs)) + "\n{/size}\n"
 
             msg += str(self.cust) + " 个顾客" + plural(self.cust) + " 来到了青楼.\n"
             msg += "{size=-2}" + "- 被服务的" + plural(self.check("served")) + " 顾客总数: " + event_color["good"] % str(self.check("served")) + "/" + str(self.cust) + "\n"
