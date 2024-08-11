@@ -2025,7 +2025,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' from the previous
     elif act == "sex":
 
         $ inter.score = girl.get_stat(act) - reluctance
-        $ text1 = rand_choice(("rides your dick", "gets fucked in all positions", "gets fucked hard and deep", "gets a good pounding from your hard cock"))
+        $ text1 = rand_choice(("坐在你的肉棒上", "摆出各种姿势被操", "被大力猛干", "被你的肉棒干的神志不清"))
 
         play sound s_moans loop
 
