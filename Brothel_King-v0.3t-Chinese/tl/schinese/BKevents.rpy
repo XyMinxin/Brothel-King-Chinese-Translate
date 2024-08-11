@@ -784,25 +784,25 @@ translate schinese wood_intro_49655f52:
 translate schinese wood_intro_6c927173:
 
     # "Zan is a prime destination for trade from all over the known world, and its shipyard is always buzzing with activity from workmen, seamen, seagulls, moguls, bribe-givers, bribe-takers, bribe-agnostics, idlers and other riff-raff."
-    "泽恩是世界各地贸易的枢纽,它的船坞二十四小时都在运行,这里充满了工人、水手、海鸥、商人、行贿者、受贿者、不懂贿赂的人、游手好闲的人等等各类人群。"
+    "泽恩是世界贸易的枢纽,它的船坞二十四小时都在运行,这里充满了工人、水手、海鸥、商人、行贿者、受贿者、不懂贿赂的人、游手好闲的人等等各类人群。"
 
 # game/BKevents.rpy:2094
 translate schinese wood_intro_a456aa9e:
 
     # "On one side of the harbor, new ships are being built on drydocks. On the other side, old ships are being refurbished or taken apart."
-    "港口的一侧,新船正在干船坞建造。另一侧,旧船正在翻新或拆解。"
+    "港口的一侧,新船即将剪彩下水。而另一侧,旧船正在等待翻新或是拆解。"
 
 # game/BKevents.rpy:2096
 translate schinese wood_intro_c64fea32:
 
     # "Because of its ever-growing population, Zan has stripped most of the surrounding country of its timber. Therefore, wood is a valuable commodity, so instead of letting it go to waste, some enterprising people dismantle old boats to make new ones."
-    "由于人口不断增长,泽恩已经砍光了周围大部分的林木。因此木材是宝贵的商品,所以有一些有创业精神的人拆解旧船来制造新船,以免浪费木材。"
+    "由于人口不断增长带来的需求,泽恩已经砍光了周围大部分的林木。因此木材是宝贵的商品,所以有一些有商业头脑的人通过拆解旧船来制造新船,以节省木材。"
 
 # game/BKevents.rpy:2098
 translate schinese wood_intro_1caccc6f:
 
     # "You spend some time watching the workers as they go. It seems easy enough, although it takes some strength to rip away the rusty nails that hold the planks together."
-    "你花了一些时间观察工人的工作。看起来很简单,尽管要拆掉固定木板的生锈钉子需要一些力气。"
+    "你花了一些时间观察工人们的工作。看起来很简单,尽管要拆掉固定木板的生锈钉子需要一些力气。"
 
 # game/BKevents.rpy:2100
 translate schinese wood_intro_69c98287:
@@ -814,37 +814,37 @@ translate schinese wood_intro_69c98287:
 translate schinese wood_intro_5a611303:
 
     # "You may now collect {b}wood{/b} from the shipyard. Yield will depend on your {b}Strength{/b}."
-    "你现在可以从船坞收集{b}木材{/b}了。产量取决于你的{b}力量{/b}。"
+    "你现在可以从船坞收集{b}木材{/b}了。木材产量取决于你的{b}力量{/b}。"
 
 # game/BKevents.rpy:2114
 translate schinese dye_intro_8931657f:
 
     # "As you take a walk down the beach, you notice it's more than just a place for swimmers."
-    "当你沿着海滩散步时,你发现这里不仅仅是游泳的地方。"
+    "当你沿着海滩散步时,你发现这里不仅仅是供人游泳的地方。"
 
 # game/BKevents.rpy:2116
 translate schinese dye_intro_b84750e5:
 
     # "Some industry also takes place alongside the leisure."
-    "一些工业活动也在海滩附近进行。"
+    "一些作坊也分布在海滩附近。"
 
 # game/BKevents.rpy:2118
 translate schinese dye_intro_d198c8f0:
 
     # "Dye-making is a particularly fascinating one. The women herbalists use simple spells to turn seaweed, seashells and other refuse from the ocean into bright dyes of every conceivable color."
-    "制作染料尤其引人入胜。女性药草医师使用简单的法术,从海藻、海贝和其他海洋垃圾中提取出各种鲜艳的染料。"
+    "制作染料的过程尤其引人入胜。女性药草医师用简单的法术,从海藻、贝壳和其他海洋生物中提取出各种鲜艳的染料。"
 
 # game/BKevents.rpy:2120
 translate schinese dye_intro_8d4bac6c:
 
     # "You discuss the techniques with the eldest of the women, being particularly interested in how they make blue dye, a rarely occuring color in the natural world."
-    "你与这些女性药草医师中年纪最大的人探讨了这些技术,尤其对她们如何制造蓝色染料感兴趣,因为蓝色在自然界中是一种罕见的颜色。"
+    "你向这些女性药草医师中最年长的人学习了这项技术,你对她们如何制造蓝色染料十分感兴趣,因为蓝色在自然界中是一种罕见的颜色。"
 
 # game/BKevents.rpy:2122
 translate schinese dye_intro_c8c173bd:
 
     # you "I see... It's much easier than hunting a blue bear for its blood..."
-    you "我明白了...这比猎杀蓝熊来取它的血要容易多了..."
+    you "我明白了...这比猎杀蓝皮熊来取血要容易多了..."
 
 # game/BKevents.rpy:2126
 translate schinese dye_intro_635181cc:
@@ -856,7 +856,7 @@ translate schinese dye_intro_635181cc:
 translate schinese leather_intro_7468bc18:
 
     # "The stables are teeming with animals and people on any given day. Today, it's extra-crowded, given that a large party of foreign officials has just arrived in the city."
-    "马厩里总是人声鼎沸,充满了各种动物和人类。今天尤其拥挤,因为一大批外国官员刚刚抵达了这座城市。"
+    "马厩里总是人声鼎沸,充满了各行各业的人和他们的马匹。今天尤其拥挤,因为一大批外国官员刚刚抵达了这座城市。"
 
 # game/BKevents.rpy:2138
 translate schinese leather_intro_1b04bb48:
