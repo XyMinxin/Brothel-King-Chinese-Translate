@@ -76,7 +76,7 @@ label init_traits():
                       Trait("Charming", verb = "be", eff1 = Effect("boost", "charm gains", 0.25), archetype="The Fox"),
                       Trait("Elegant", verb = "be", eff1 = Effect("boost", "refinement gains", 0.25), archetype="The Courtesan"),
                       Trait("Slutty", verb = "be", eff1 = Effect("boost", "libido gains", 0.25), archetype="The Slut"),
-                      Trait("Athletic", verb = "be", eff1 = Effect("boost", "Aconstitution gains", 0.25), archetype="The Player"),
+                      Trait("Athletic", verb = "be", eff1 = Effect("boost", "aconstitution gains", 0.25), archetype="The Player"),
                       Trait("Sensitive", verb = "be", eff1 = Effect("boost", "sensitivity gains", 0.25), archetype="The Bride"),
                       Trait("Obedient", verb = "be", eff1 = Effect("boost", "obedience gains", 0.25), archetype="The Maid"),
 
