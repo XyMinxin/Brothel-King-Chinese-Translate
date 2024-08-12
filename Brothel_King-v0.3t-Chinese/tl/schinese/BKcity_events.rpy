@@ -1726,7 +1726,8 @@ translate schinese city_slave_34169bac:
 translate schinese city_slave_51a349cb:
 
     # "You have earned prestige. Some of your girls have increased their [act] stat."
-    "你获得了一些声望。你的一些女孩提高了他们的 [act] 。"
+    $ cntext = tl_cn(act, girl_related_dict)
+    "你获得了一些声望。你的一些女孩提高了他们的[cntext]。"
 
 # game/BKcity_events.rpy:1407
 translate schinese city_slave_50201891:

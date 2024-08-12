@@ -1901,13 +1901,13 @@ label districts_first_time:
 
 label districts_first_time_slums:
 
-    $ narrator("Choose a district.", interact = False)
+    $ narrator("选择一个区域。", interact = False)
 
     $ ui.interact()
 
     "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
 
-    if not renpy.call_screen("yes_no", "Do you really want to choose the Slums to open your new brothel?"):
+    if not renpy.call_screen("yes_no", "你确定要在贫民窟开设一家新青楼吗?"):
         jump districts_first_time_slums
 
     $ district_firstvisit = False
@@ -2044,7 +2044,7 @@ label brothel_first_time:
     show screen brothel()
     with dissolve
 
-    $ renpy.say(gio, "Which one of the common rooms do you want me to repair?", interact = False)
+    $ renpy.say(gio, "你想让我帮你修缮哪个场所?", interact = False)
 
     $ mychoice = ""
 
