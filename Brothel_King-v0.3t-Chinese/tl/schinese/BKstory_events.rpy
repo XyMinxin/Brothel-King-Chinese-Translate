@@ -922,7 +922,7 @@ translate schinese renza_friend3_6207af70:
 translate schinese renza_friend3_menu_2fb6ad36:
 
     # renza "Well... I was born right here, in Zan. Some say I was delivered in the temple of Shalia itself. It's not like I really remember, but I play along with the rumors."
-    renza "好吧...我就生在这里,在赞。有人说我是在沙利亚女神的庙里出生的。我可不太记得,不过我也随他们说。"
+    renza "好吧...我就生在这里,在赞。有人说我是在莎莉娅女神的庙里出生的。我可不太记得,不过我也随他们说。"
 
 # game/BKstory_events.rpy:542
 translate schinese renza_friend3_menu_50b21bea:
@@ -2890,7 +2890,7 @@ translate schinese renza_onsen3_fb4a5bf4:
 translate schinese renza_onsen3_24f923f1:
 
     # renza "It's a snake eating its own tail. It's an ancient symbol of Shalia."
-    renza "这是吞食自己尾巴的蛇,是沙利亚古老的象征符号。"
+    renza "这是吞食自己尾巴的蛇,是莎莉娅古老的象征符号。"
 
 # game/BKstory_events.rpy:1503
 translate schinese renza_onsen3_020cde39:
@@ -11164,7 +11164,7 @@ translate schinese stella_secret1_d552273c:
 translate schinese stella_secret1_59e28517:
 
     # blood2 "The fleet is gathering, only a few vessels at a time... We don't want Zan's spies to get suspicious."
-    blood2 "舰队正在集结,一次只有几艘船只....我们不想引起扎恩的间谍的怀疑。"
+    blood2 "舰队正在集结,一次只有几艘船只....我们不想引起泽恩的间谍的怀疑。"
 
 # game/BKstory_events.rpy:5752
 translate schinese stella_secret1_994e569c:
@@ -11176,7 +11176,7 @@ translate schinese stella_secret1_994e569c:
 translate schinese stella_secret1_cefab348:
 
     # blood1 "Is that enough to penetrate their defences? Zan's navy is not to be taken lightly..."
-    blood1 "这足以突破他们的防线了吗?扎恩的海军可不是好惹的..."
+    blood1 "这足以突破他们的防线了吗?泽恩的海军可不是好惹的..."
 
 # game/BKstory_events.rpy:5756
 translate schinese stella_secret1_7f1b1264:
@@ -11200,7 +11200,7 @@ translate schinese stella_secret1_520fe2b8:
 translate schinese stella_secret1_ecaa8c39:
 
     # stella "Zan's forces are mostly comprised of sellswords and mercenaries. We can buy them off or break their morale easily."
-    stella "扎恩的部队大多由雇佣兵和佣兵组成。我们可以收买他们或轻松击溃他们的士气。"
+    stella "泽恩的部队大多由雇佣兵和佣兵组成。我们可以收买他们或轻松击溃他们的士气。"
 
 # game/BKstory_events.rpy:5764
 translate schinese stella_secret1_eba046df:
@@ -20488,7 +20488,7 @@ translate schinese satella_letter_4a5bb74b:
 translate schinese satella_letter_01a0a0f9:
 
     # you "Oh... Satella is summoning me to Shalia's temple... It must be important."
-    you "哦...萨特拉让我去沙利亚神庙...一定是很重要的事。"
+    you "哦...萨特拉让我去莎莉娅神庙...一定是很重要的事。"
 
 # game/BKstory_events.rpy:10567
 translate schinese satella_letter_b5453155:
@@ -24526,7 +24526,7 @@ translate schinese shalia_visit_a577ad0e:
 translate schinese shalia_visit_3bd6dc01:
 
     # "Shalia's image blurs for a second, and a bright light forces you to close your eyes. When you open them again, Satella is standing beside you."
-    "沙利亚的模样一瞬间模糊了,一道强烈的光芒迫使你不得不闭上眼睛。当你再次睁开眼睛时,薩特拉正站在你身旁。"
+    "莎莉娅的模样一瞬间模糊了,一道强烈的光芒迫使你不得不闭上眼睛。当你再次睁开眼睛时,薩特拉正站在你身旁。"
 
 # game/BKstory_events.rpy:13064
 translate schinese shalia_visit_2cd1cb34:
@@ -26254,7 +26254,7 @@ translate schinese kosmo_returns2_c0b0c43e:
 translate schinese kosmo_returns2_7a903511:
 
     # you "Yeah, I'm not all up to date on the genealogy of Zan's noble inbreds..."
-    you "是啊,我对扎恩贵族家族的谱系了解得不是很详细..."
+    you "是啊,我对泽恩贵族家族的谱系了解得不是很详细..."
 
 # game/BKstory_events.rpy:13896
 translate schinese kosmo_returns2_abb4c7a0:
@@ -29074,7 +29074,7 @@ translate schinese meet_carpenter_55c319d6:
 translate schinese meet_carpenter_8be1a4c0:
 
     # carpenter "I'm Iulia, by the way... Who are ya?"
-    carpenter "我叫Iulia,你呢?"
+    carpenter "我叫露莉亚,你呢?"
 
 # game/BKstory_events.rpy:15408
 translate schinese meet_carpenter_b17c9af9:
@@ -29782,7 +29782,7 @@ translate schinese hire_carpenter_7a255f05:
 translate schinese hire_carpenter_1cb8a1a3:
 
     # "Iulia seems lost in her thoughts, giving your offer some consideration."
-    "伊乌利亚似乎沉浸在自己的思绪中,正在考虑你的提议。"
+    "露莉亚似乎沉浸在自己的思绪中,正在考虑你的提议。"
 
 # game/BKstory_events.rpy:15730
 translate schinese hire_carpenter_6beaac2f:
@@ -29854,7 +29854,7 @@ translate schinese hire_carpenter_345ee793:
 translate schinese hire_carpenter_6532b59a:
 
     # "Iulia has moved into your brothel. You may now build various types of furniture at the {b}carpenter's wagon{/b}."
-    "Iulia已搬入您的青楼。您现在可以在{b}木工车厢{/b}建造各种家具。"
+    "露莉亚已搬入您的青楼。您现在可以在{b}木工车厢{/b}建造各种家具。"
 
 # game/BKstory_events.rpy:15759
 translate schinese hire_carpenter_89e5214b:
@@ -29883,7 +29883,7 @@ translate schinese iulia1_e4d384a5:
 # game/BKstory_events.rpy:15782
 translate schinese iulia1_a338eebf:
 
-    # "Opening your back window, you see Iulia is hard at work on the furniture you ordered."
+    # "Opening your back window, you see 露莉亚 is hard at work on the furniture you ordered."
     "打开后窗,您看到Iulia正在努力工作,制作您订购的家具。"
 
 # game/BKstory_events.rpy:15790
@@ -29902,7 +29902,7 @@ translate schinese iulia1_238b2297_1:
 translate schinese iulia1_f53f3122:
 
     # "Iulia is banging on some rivets with a very large hammer, looking genuinely happy about her work."
-    "Iulia正在用一个很大的锤子敲打铆钉,看起来非常高兴她的工作。"
+    "露莉亚正在用一个很大的锤子敲打铆钉,看起来非常高兴她的工作。"
 
 # game/BKstory_events.rpy:15800
 translate schinese iulia1_b7b4c498:
@@ -29992,7 +29992,7 @@ translate schinese iulia1_8040c233:
 translate schinese iulia1_a4cd4ab6:
 
     # "You remember you promised Iulia never to molest her. Given her skill with a hammer, it's probably for the best."
-    "你记得曾向Iulia保证永远不会骚扰她。鉴于她操锤的熟练程度,这可能是件好事。"
+    "你记得曾向露莉亚保证永远不会骚扰她。鉴于她操锤的熟练程度,这可能是件好事。"
 
 # game/BKstory_events.rpy:15849
 translate schinese resource_exchange_intro_c3fa2d87:
@@ -34120,7 +34120,7 @@ translate schinese meet_riche_8e12a8a5:
 translate schinese meet_riche_5a1cc8b8:
 
     # riche "I am a mage. I was studying in Karkyr, up until last year. Top of my class..."
-    riche "我是个魔法师。我一直在卡尔基尔学习,直到去年。在班上名列前茅..."
+    riche "我是个魔法师。我一直在卡尔基学习,直到去年。在班上名列前茅..."
 
 # game/BKstory_events.rpy:17889
 translate schinese meet_riche_f2f7d4a8:
@@ -34132,7 +34132,7 @@ translate schinese meet_riche_f2f7d4a8:
 translate schinese meet_riche_d985817a:
 
     # you "Karkyr? What a coincidence! I was studying there too. I must have been a few years your senior..."
-    you "卡尔基尔?真巧!我也在那里学习。我可能比你大几年..."
+    you "卡尔基?真巧!我也在那里学习。我可能比你大几年..."
 
 # game/BKstory_events.rpy:17894
 translate schinese meet_riche_c30ae5fb:
@@ -34720,7 +34720,7 @@ translate schinese meet_katryn_bc53c655:
 translate schinese meet_giftgirl_f74a34a4:
 
     # "The emporium is one of the main attractions in Zan. There are many markets in the City of Jade, but the emporium, together with the sex slave market, is the most popular."
-    "商品批发中心是扎恩城里的主要景点之一。城里有很多市场,但商品批发中心和性奴隶市场最为热门。"
+    "商品批发中心是泽恩城里的主要景点之一。城里有很多市场,但商品批发中心和性奴隶市场最为热门。"
 
 # game/BKstory_events.rpy:18166
 translate schinese meet_giftgirl_439ec686:

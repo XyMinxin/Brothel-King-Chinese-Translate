@@ -138,7 +138,7 @@ translate schinese strings:
 
         # game/BKstart.rpy:478
     old "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."
-    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神沙利亚。"
+    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神莎莉娅。"
 
     # game/BKstart.rpy:478
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
