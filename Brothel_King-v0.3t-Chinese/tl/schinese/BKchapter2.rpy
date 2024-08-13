@@ -2416,7 +2416,7 @@ translate schinese c2_princess_visit1_d14ddfc1:
 translate schinese c2_princess_visit1_c6fe0e04:
 
     # knight "The palace foundations date back to Cimeria, the non-human civilization that settled the location where Zan now stands. It is said the center of their city lay right here on the highest hill."
-    knight "皇宫的基座可以追溯到赛美利亚时期,这个非人类文明在如今的泽恩所在地建立了居所。据说他们的城市中心就坐落在这处最高的丘陵上。"
+    knight "皇宫的基座可以追溯到席米亚时期,这个非人类文明在如今的泽恩所在地建立了居所。据说他们的城市中心就坐落在这处最高的丘陵上。"
 
 # game/BKchapter2.rpy:1421
 translate schinese c2_princess_visit1_8118f08b:

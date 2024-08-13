@@ -868,19 +868,19 @@ translate schinese leather_intro_1b04bb48:
 translate schinese leather_intro_0919d05e:
 
     # "A careless noble and his steed nearly crushed you. You decide it's best to slip inside one of the buildings to let the crowd pass."
-    "一个粗心的贵族和他的坐骑差点撞到你。你决定最好进到一栋建筑物里等人群散去。"
+    "一个粗心的贵族和他的坐骑差点撞到你。你决定先找个建筑物待着等人群散去。"
 
 # game/BKevents.rpy:2142
 translate schinese leather_intro_e71e585b:
 
     # you "Well, this is technically trespassing, but no one will mind if I just wait here a minute..."
-    you "好吧,这在技术上算是非法进入,但如果只是暂时等一下,应该没人会介意的..."
+    you "好吧,从理论上来说算是非法闯入,但如果只是暂时借用一下场地,应该没人会介意的..."
 
 # game/BKevents.rpy:2144
 translate schinese leather_intro_e545b3d6:
 
     # "A herd of cattle is already parked inside. The stink is almost unbearable, and you start looking for another way out."
-    "一群牛已经停放在里面了。臭味简直难以忍受,你开始寻找另一个出口。"
+    "一群牛挤在里面。臭味简直难以忍受,你开始寻找另一个出口。"
 
 # game/BKevents.rpy:2146
 translate schinese leather_intro_36b53701:
@@ -892,7 +892,7 @@ translate schinese leather_intro_36b53701:
 translate schinese leather_intro_8f9cf66f:
 
     # man "Arios be praised, you've come! You sure took your sweet time!" with vpunch
-    man "阿瑞欧斯保佑,终于来了!你可真是磨蹭了好久啊!" with vpunch
+    man "太阳神保佑,你终于来了!你可真是磨蹭了好久啊!" with vpunch
 
 # game/BKevents.rpy:2150
 translate schinese leather_intro_70317dea:
@@ -910,7 +910,7 @@ translate schinese leather_intro_9329eee9:
 translate schinese leather_intro_0fb774c6:
 
     # man "Don't you dare!"
-    man "你给我住手!"
+    man "喊谁老头呢!"
 
 # game/BKevents.rpy:2164
 translate schinese leather_intro_afc65f67:
@@ -922,43 +922,43 @@ translate schinese leather_intro_afc65f67:
 translate schinese leather_intro_59c44fd7:
 
     # "The geezer hits you again, and even though it's a weak strike, it still stings. For an instant, you wonder if you should fight back, but he's just a frail old man."
-    "那个老头又打了你一下,尽管力度不大,但还是很疼。一时间,你想是否应该还手,但他毕竟只是一个虚弱的老人。"
+    "那个老头又打了你一下,尽管力度不大,但还是很疼。一时间,你开始思考要不要还手,但他毕竟只是一个虚弱的老人。"
 
 # game/BKevents.rpy:2168
 translate schinese leather_intro_c49c6806:
 
     # man "Four hours I've been waiting! Four hours since I sent to the guild for help! While you were idling, no one was here to tend to the shop!"
-    man "我已经等了四个小时!自从我派人去工会求助以来就等了四个小时!而你却在闲逛,没有人来照看店铺!"
+    man "我已经等了四个小时!自从我派人去工会求助后我在这等了四个小时!而你却在闲逛,没有人来照看店铺!"
 
 # game/BKevents.rpy:2170
 translate schinese leather_intro_0024038c:
 
     # man "Stupid, unreliable guild officers... I told them there would be double payment today..."
-    man "该死的不靠谱的工会官员们...我告诉过他们今天会有双倍酬劳..."
+    man "该死的不靠谱的工会职员们...我告诉过他们今天会付双倍工资..."
 
 # game/BKevents.rpy:2172
 translate schinese leather_intro_cb38bbe3:
 
     # "He eyes you suspiciously through his nearly opaque glasses."
-    "他通过几乎不透明的眼镜盯着你,怀有戒心。"
+    "他通过几乎不透明的眼镜盯着你,满怀戒心。"
 
 # game/BKevents.rpy:2174
 translate schinese leather_intro_b0858f46:
 
     # man "Say, are you the same boy they usually send? You look tall for a 12-year old..."
-    man "喂,你是他们通常派来的那个小子吗?看起来挺高的,不像12岁的样子..."
+    man "喂,你是他们之前派来的那个小子吗?看起来挺高的,不像12岁的样子..."
 
 # game/BKevents.rpy:2176
 translate schinese leather_intro_2cfe6b3e:
 
     # you "Look, pal, I... Wait, did you say 'double payment'?"
-    you "听着,伙计,我...等等,你是说'双倍酬劳'吗?"
+    you "听着,伙计,我...等等,你是说'双倍工资'吗?"
 
 # game/BKevents.rpy:2178
 translate schinese leather_intro_66036300:
 
     # man "Yeah, if you finally haul your ass to work! The shop is that way!"
-    man "是啊,你终于来上班了!商店就在那边!"
+    man "是啊,你终于来上班了!铺子就在那边!"
 
 # game/BKevents.rpy:2180
 translate schinese leather_intro_0c35abb4:
@@ -970,7 +970,7 @@ translate schinese leather_intro_0c35abb4:
 translate schinese leather_intro_e479ae15:
 
     # "The strange man shoves you out towards the store, before limping towards the animals who are waiting for food and drink."
-    "那个奇怪的男人把你推向商店,然后一瘸一拐地走向等着食物和饮料的动物那里。"
+    "那个奇怪的男人把你推向商店,然后一瘸一拐地走向等着饲养的动物那里。"
 
 # game/BKevents.rpy:2184
 translate schinese leather_intro_8050e427:
@@ -982,7 +982,7 @@ translate schinese leather_intro_8050e427:
 translate schinese leather_intro_55b755fb:
 
     # "The old man's store is full of grumbling people, waiting for someone to show up. They immediately gather around you, voicing their complaints and orders all at the same time."
-    "老人的商店里挤满了埋怨的人,都在等着有人来。他们立刻围住你,同时大声抱怨并报订单。"
+    "老人的商店里挤满了埋怨的人,他们都在等着付钱。他们立刻围住你,同时大声喊叫着催你结账。"
 
 # game/BKevents.rpy:2190
 translate schinese leather_intro_8cd31e14:
@@ -1000,19 +1000,19 @@ translate schinese leather_intro_41eb158a:
 translate schinese leather_intro_477856ae:
 
     # "The old man is in charge of keeping animals safe for travellers who are set for a short stay in the city. Herding cattle around in the narrow streets of Zan is far from ideal."
-    "老人负责保护短暂路过这个城市的旅行者的动物。在扎恩狭窄的街道上赶牛群可不是什么容易的事。"
+    "老人负责看管暂时路过这个城市的旅行者的动物。在泽恩狭窄的街道上赶牛可不是什么容易的事。"
 
 # game/BKevents.rpy:2200
 translate schinese leather_intro_16eb8294:
 
     # "The store job is pretty easy, as you only need to match the right owner with the right animals and update the logbook, but managing impatient customers requires some wit."
-    "店里的工作还算轻松,只需要把动物配对给正确的主人,并更新记录本,但要应付焦急的顾客就需要点智慧了。"
+    "店里的工作还算轻松,只需要把动物配对给正确的主人,并记录在账本上,但要应付焦急的顾客就需要点智慧了。"
 
 # game/BKevents.rpy:2202
 translate schinese leather_intro_a26ec81c:
 
     # man "There you are, kiddo! I hope nothing is amiss in the logbook, or I'll whip your teenage ass!"
-    man "你在这儿啊,小子!希望记录本上没有任何问题,不然我就要抽你的屁股了!"
+    man "你在这儿啊,小子!希望账本不要出错,不然我就要抽你的屁股了!"
 
 # game/BKevents.rpy:2204
 translate schinese leather_intro_fb9251e1:
@@ -1024,7 +1024,7 @@ translate schinese leather_intro_fb9251e1:
 translate schinese leather_intro_45d98aaa:
 
     # you "(Can you even read anything in there?)"
-    you "(你能看懂里面写的东西吗?)"
+    you "(你真的能看懂里面写的东西吗?)"
 
 # game/BKevents.rpy:2208
 translate schinese leather_intro_363cf000:
@@ -1042,13 +1042,13 @@ translate schinese leather_intro_d1ba6a4b:
 translate schinese leather_intro_b9d66f2b:
 
     # you "What??? The payment is in leather?"
-    you "什么?报酬是皮革吗?"
+    you "什么?报酬是皮革?"
 
 # game/BKevents.rpy:2214
 translate schinese leather_intro_1551e79e:
 
     # man "Why yes, of course... The payment is leather skins, as negotiated with the tanner's guild. But you knew that, of course?"
-    man "是的,当然...报酬就是皮革,这是跟皮革工匠公会谈好的。你难道不知道吗?"
+    man "是的,当然...报酬不就是皮革么,这是跟皮革工匠公会谈好的。你难道不知道吗?"
 
 # game/BKevents.rpy:2216
 translate schinese leather_intro_017aa3b4:
@@ -1060,7 +1060,7 @@ translate schinese leather_intro_017aa3b4:
 translate schinese leather_intro_026086dc:
 
     # man "Well, I'm withholding your payment for today. That will teach you to show up late."
-    man "好吧,我今天要扣除你的报酬。让你迟到一次就是这个下场。"
+    man "好吧,不过我今天要扣你工资。让你记住迟到就是这个下场。"
 
 # game/BKevents.rpy:2220
 translate schinese leather_intro_980152ab:
@@ -1072,37 +1072,37 @@ translate schinese leather_intro_980152ab:
 translate schinese leather_intro_b4f21a82:
 
     # man "But tell you what, kiddo, I like the way you handle the customers. Truly remarkable, for a boy your age."
-    man "不过说实话,小子,我很喜欢你对待顾客的方式。对你这个年纪的孩子来说,真是不错。"
+    man "不过说实话,小子,我很喜欢你接待顾客的方式。对你这个年纪的孩子来说,真是不错。"
 
 # game/BKevents.rpy:2226
 translate schinese leather_intro_19076eb6:
 
     # man "If you show up again to help with the shop, I'll pay you properly."
-    man "如果你再来帮忙店里,我会给你适当的报酬的。"
+    man "如果你再来店里帮忙,我会给你适当的报酬的。"
 
 # game/BKevents.rpy:2231
 translate schinese leather_intro_563e60f5:
 
     # "You can now earn {b}leather{/b} from helping at the stables. Yield will depend on your {b}Charisma{/b}."
-    "你现在可以从帮助马厩赚取{b}皮革{/b}了。产量取决于你的{b}魅力{/b}。"
+    "你现在可以通过在马厩帮忙工作赚取{b}皮革{/b}了。产量取决于你的{b}魅力{/b}。"
 
 # game/BKevents.rpy:2242
 translate schinese marble_intro_ae1d66b1:
 
     # "The old ruins belonged to the non-human empire that first settled Zan's current location, Cimeria."
-    "那些古老的废墟属于第一个建立在扎恩(即赛美利亚)现址上的非人类帝国。"
+    "那些古老的废墟属于第一个建立在泽恩(即席米亚)现址上的非人类帝国。"
 
 # game/BKevents.rpy:2244
 translate schinese marble_intro_8cf674d5:
 
     # "How it was built or what it was used for is unknown to all but the most reclusive scholars."
-    "它是如何建造的,或者用于何种目的,只有最隐遁的学者们才知道。"
+    "它是如何建造的,或者用于何种目的,只有知识渊博的学者们才知道。"
 
 # game/BKevents.rpy:2246
 translate schinese marble_intro_07d37705:
 
     # "It's very easy to get lost in the maze of ruined structures, each very similar yet slightly different from the next."
-    "很容易在这些相似而又略有不同的废墟建筑物中迷路。"
+    "在这些布局极度相似的废墟中很容易迷路。"
 
 # game/BKevents.rpy:2248
 translate schinese marble_intro_0bef17f5:
@@ -1120,31 +1120,31 @@ translate schinese marble_intro_71ee01d6:
 translate schinese marble_intro_63c7aec4:
 
     # "Zan is always in need of new buildings, and the old ruins are so expansive that it never seems to run out of materials, no matter how many walls people dismantle."
-    "扎恩总是需要新的建筑,而废墟如此广阔,无论多少人拆卸墙壁,都似乎永远用不完。"
+    "泽恩总是需要建造新的建筑,而废墟如此广阔,无论拆解多少,都似乎取之不尽。"
 
 # game/BKevents.rpy:2254
 translate schinese marble_intro_53b15031:
 
     # "The old palaces are especially reknowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
-    "尤其是那些古老的宫殿,以其赛美利亚大理石而闻名,这种高档石材深受扎恩上流社会的青睐。"
+    "尤其是那些古老的宫殿,以其席米亚大理石的建材而闻名,这种高档石材深受泽恩上流社会的青睐。"
 
 # game/BKevents.rpy:2256
 translate schinese marble_intro_34df0699:
 
     # "The only problem is, the ancient Cimerians knew how to build flawless architecture that stands the test of time, and Cimerian marble is extremely tough."
-    "唯一的问题是,古老的西麦里人知道如何建造经得起时间考验的完美建筑,而西麦里大理石非常坚硬。"
+    "唯一的问题是,古老的席米亚人知道如何建造经得起时间考验的完美建筑,而席米亚大理石非常坚硬。"
 
 # game/BKevents.rpy:2258
 translate schinese marble_intro_cc2c9bd5:
 
     # "You watch a dozen men trying and failing to extract a block of marble from a weak-looking structure."
-    "你观看一群人试图从一个看起来很脆弱的结构中提取大理石块,但全都失败了。"
+    "你观看一群人试图从一个看起来很脆弱的结构中挖掘大理石块,但全都失败了。"
 
 # game/BKevents.rpy:2260
 translate schinese marble_intro_c929cac4:
 
     # "Only the strongest men can break their walls and extract that stone. Perhaps that's why the city still hasn't run out of Cimerian marble."
-    "只有最强壮的人才能打破他们的墙壁并提取出那些石头。也许这就是为什么这个城市还没有耗尽西麦里大理石的原因。"
+    "只有最强壮的人才能打破他们的墙壁并提取出那些石头。也许这就是为什么这个城市还有这么多席米亚大理石储备的原因。"
 
 # game/BKevents.rpy:2262
 translate schinese marble_intro_70aac154:
@@ -1156,7 +1156,7 @@ translate schinese marble_intro_70aac154:
 translate schinese marble_intro_7db28017:
 
     # you "Anyway. Those guys are doing it all wrong. I bet I could recover some of those marble slabs if I did this..."
-    you "总之,那些人都做错了。我猜,如果我这么做,我应该能回收一些这些大理石板。"
+    you "总之,那些人都做错了。我猜我能回收一些这些大理石板，只要我....."
 
 # game/BKevents.rpy:2268
 translate schinese marble_intro_b02f412c:
@@ -1168,7 +1168,7 @@ translate schinese marble_intro_b02f412c:
 translate schinese silk_intro_6a983f1a:
 
     # "The hanging gardens are a wonderful place, tended by the magic guild's airmancers and extending high above Zan. The view is magnificent from here."
-    "悬挂的花园是一个美丽的地方,由魔法公会的空气法师精心照料,高高地伸展在泽恩之上。在这里可以欣赏到壮丽的景色。"
+    "空中花园是一个美丽的地方,由魔法公会的风系法师精心照料,高高地悬浮在泽恩之上。在这里可以欣赏到壮丽的景色。"
 
 # game/BKevents.rpy:2281
 translate schinese silk_intro_19d11233:
@@ -1180,19 +1180,19 @@ translate schinese silk_intro_19d11233:
 translate schinese silk_intro_a0427549:
 
     # "Creeping along those vines is a unique animal Zan is known all around Xeros for: the Zanic silkworm."
-    "沿着那些藤蔓爬行的是泽恩著名的整个杰罗斯地区都闻名的独特动物:赞尼克蚕。"
+    "沿着那些藤蔓爬行的是泽恩著名的整个杰罗斯地区都闻名的独特动物:泽恩蚕。"
 
 # game/BKevents.rpy:2285
 translate schinese silk_intro_33b67048:
 
     # "A silkworm is a fat, white worm that is typically a foot long, although the biggest can be the size of a large dog."
-    "蚕是一种肥胖的白色蠕虫,通常长约一英尺,但最大的可以有大狗的大小。"
+    "蚕是一种肥胖的白色蠕虫,通常长约一英尺,但最大的听说可以和大型犬相比。"
 
 # game/BKevents.rpy:2287
 translate schinese silk_intro_e2bf4d4b:
 
     # "They are slow-paced, majestic animals. Silkworms are a delicacy for nobles around Zan, who like to eat a whole one roasted in butter for new year's eve, but very pricey."
-    "它们是缓慢而庄重的动物。蚕是泽恩周围贵族的美味佳肴,他们喜欢在除夕夜将一只整只烤熟在黄油中食用,但价格昂贵。"
+    "它们是缓慢而笨重的动物。蚕是泽恩周围贵族的美味佳肴,他们喜欢在除夕夜将一只整只烤熟在黄油中食用,但价格昂贵。"
 
 # game/BKevents.rpy:2289
 translate schinese silk_intro_91289a63:
@@ -1210,13 +1210,13 @@ translate schinese silk_intro_95203447:
 translate schinese silk_intro_096b7f43:
 
     # "You have figured out how to weave {b}silk{/b} from the hanging gardens. Yield will depend on your {b}Spirit{/b}."
-    "你已经学会了如何从悬挂的花园中织造{b}丝绸{/b}。产量取决于你的{b}精神{/b}。"
+    "你已经学会了如何从空中花园中织造{b}丝绸{/b}。产量取决于你的{b}精神{/b}。"
 
 # game/BKevents.rpy:2305
 translate schinese ore_intro_ebd6f897:
 
     # "The guild quarter hosts representatives from every possible trade in Zan, except for the Magic and Banking guilds that have their own separate quarter."
-    "工会区聚集了泽恩所有可能的行业代表,除了魔法和银行公会,它们有自己独立的区域。"
+    "公会大楼聚集了泽恩所有可能的行业代表,除了法师公会和金融业,它们有自己独立的区域。"
 
 # game/BKevents.rpy:2307
 translate schinese ore_intro_4b745e39:
@@ -1228,19 +1228,19 @@ translate schinese ore_intro_4b745e39:
 translate schinese ore_intro_536562de:
 
     # "The guild quarter is also where the mining activities are concentrated in Zan, as the guilds handle claims and stakes for the miners."
-    "工会区还是泽恩矿业活动集中的地方,公会负责管理矿工的权利和股份。"
+    "公会大楼同时也是泽恩矿业活动集中的地方,公会负责管理矿工的权利和股份。"
 
 # game/BKevents.rpy:2311
 translate schinese ore_intro_5049007a:
 
     # "It is technically forbidden for miners to mine outside of their official claimed territory, but claim-jumping is still extremely common."
-    "理论上来说,禁止矿工在官方领地之外进行开采,但非法越界采矿仍然非常普遍。"
+    "理论上来说,禁止矿工在官方许可的区域之外进行开采,但非法采矿的行为仍然非常普遍。"
 
 # game/BKevents.rpy:2313
 translate schinese ore_intro_2aa99504:
 
     # "As you walk by one of the large mines, you hear someone whisper to you."
-    "当你走过一处大矿坑时,你听到有人向你悄悄说话。"
+    "当你经过一处矿坑时,你听到有人向你小声搭话。"
 
 # game/BKevents.rpy:2315
 translate schinese ore_intro_47ac83a7:
@@ -1264,7 +1264,7 @@ translate schinese ore_intro_7af088ad:
 translate schinese ore_intro_b9e5b416:
 
     # "Guildmembers wear complex tattoos indicating their trade and level. The miner's guild has especially spectacular tattoos, mining officials inking their face so it is black as coal. They are pretty easy to spot."
-    "公会成员会戴有复杂的纹身,表示他们的工种和等级。矿工公会的纹身尤其壮观,矿业官员在脸上刺青,变得像煤炭一般黑。他们很容易认出来。"
+    "公会成员会刺有复杂的纹身,表示他们的工种和等级。矿工公会的纹身尤其壮观,矿业官员在脸上刺青,变得像煤炭一般黑。他们很容易认出来。"
 
 # game/BKevents.rpy:2323
 translate schinese ore_intro_5c317860:
@@ -1282,7 +1282,7 @@ translate schinese ore_intro_c27793fe:
 translate schinese ore_intro_54f45253:
 
     # you "Why? Are you in trouble with the guild?"
-    you "为什么?你和公会有什么麻烦?"
+    you "为什么这样问?你和公会之间有什么矛盾?"
 
 # game/BKevents.rpy:2329
 translate schinese ore_intro_0a68ea71:
@@ -1294,7 +1294,7 @@ translate schinese ore_intro_0a68ea71:
 translate schinese ore_intro_4f551cd3:
 
     # "Miner" "Shalia take 'em all! We work our asses off in the mine day and night, but at the end those bloody bureaucrats take a 70 percent cut just doin' nuthin'."
-    "Miner" "愿沙利亚诅咒所有人!我们日夜在矿井里辛苦工作,但最后这些该死的官僚却什么也不做就占走70%的利润。"
+    "Miner" "愿莎莉娅诅咒所有人!我们日夜在矿井里辛苦工作,但最后这些该死的官僚却什么也不做就占走70%的利润。"
 
 # game/BKevents.rpy:2333
 translate schinese ore_intro_1fb53abf:
@@ -1306,7 +1306,7 @@ translate schinese ore_intro_1fb53abf:
 translate schinese ore_intro_53bac5bc:
 
     # "Miner" "I wish... Some of the boys threatened to go on strike, so they had thugs beat 'em up and kick 'em out, only to replace 'em the next day."
-    "Miner" "我真希望能这么做...有些小伙子威胁要罢工,他们就派打手打断骨头扫出去,然后第二天再换人补上。"
+    "Miner" "我真希望能这么做...有些小伙子威胁要罢工,他们就派打手打断骨头丢出去,然后第二天再换人补上。"
 
 # game/BKevents.rpy:2337
 translate schinese ore_intro_eb899c56:
@@ -1336,7 +1336,7 @@ translate schinese ore_intro_93b85989:
 translate schinese ore_intro_97c99c6a:
 
     # "He gives you a cunning look."
-    "他给你一个狡猾的眼神。"
+    "他的双眼滴溜溜地转动，露出狡猾的笑容。"
 
 # game/BKevents.rpy:2347
 translate schinese ore_intro_c3694090:
@@ -1390,7 +1390,7 @@ translate schinese ore_intro_6706c383:
 translate schinese ore_intro_96821c89:
 
     # you "I see... And how do you know I won't just sell your ore and steal your money?"
-    you "我明白了...你怎么知道我不会卖掉你的矿石然后私吞钱款?"
+    you "我明白了...但你怎么知道我不会卖掉你的矿石然后私吞钱款?"
 
 # game/BKevents.rpy:2365
 translate schinese ore_intro_289165cb:
@@ -1414,7 +1414,7 @@ translate schinese ore_intro_6930cd31:
 translate schinese ore_intro_0a782f4d:
 
     # "Miner" "But we could get a good workin' relationship. Whadaya say? Friends?"
-    "Miner" "但我们其实可以建立良好的合作关系。你怎么说?我们做朋友怎么样?"
+    "Miner" "但我们其实可以建立良好的合作关系。怎么说?交个朋友如何?"
 
 # game/BKevents.rpy:2373
 translate schinese ore_intro_97d12466:
@@ -1438,13 +1438,13 @@ translate schinese ore_intro_e19eeae9:
 translate schinese ore_intro_d12a6e55:
 
     # "Miner" "Suit yerself, brother. Make up your mind quickly, though, before I offer the deal to someone else."
-    "Miner" "随你便,伙计。不过你最好快点决定,要不然我可能就把这笔生意卖给别人了。"
+    "Miner" "随你便,伙计。不过你最好快点决定,要不然我可能就要考虑和别人合作了。"
 
 # game/BKevents.rpy:2383
 translate schinese ore_intro_6e3d37b3:
 
     # "You have learnt how to help the miners smuggle {b}ore{/b} from the guild quarter. Yield will depend on your {b}Charisma{/b}."
-    "你学会了如何帮助矿工从工会区域偷运{b}矿石{/b}。产量取决于你的{b}魅力{/b}。"
+    "你知晓了如何帮助矿工从公会大楼旁的矿坑偷运{b}矿石{/b}。产量取决于你的{b}魅力{/b}。"
 
 # game/BKevents.rpy:2394
 translate schinese diamond_intro_d80ef30c:
@@ -1456,7 +1456,7 @@ translate schinese diamond_intro_d80ef30c:
 translate schinese diamond_intro_f4da045c:
 
     # you "S-Spooky... Are there ghosts here?"
-    you "好、好可怕啊...这里有鬼吗?"
+    you "好、好可怕啊...这里闹鬼吗?"
 
 # game/BKevents.rpy:2400
 translate schinese diamond_intro_caf34ba3:
@@ -1468,7 +1468,7 @@ translate schinese diamond_intro_caf34ba3:
 translate schinese diamond_intro_8ef6fd14:
 
     # "Old man" "Look alive, kid! This ain't no supernatural sound."
-    "Old man" "振作点,小子!这可不是什么超自然的声音。"
+    "老绅士" "振作点,小子!这可不是什么超自然的声音。"
 
 # game/BKevents.rpy:2404
 translate schinese diamond_intro_662a5aa3:
@@ -1480,7 +1480,7 @@ translate schinese diamond_intro_662a5aa3:
 translate schinese diamond_intro_30d0c355:
 
     # "Old man" "Hells no. It's just the wind running through the caves behind the waterfall."
-    "Old man" "当然不是。那只是从瀑布后面的洞穴里吹出来的风。"
+    "老绅士" "当然不是。那只是从瀑布后面的洞穴里吹出来的风。"
 
 # game/BKevents.rpy:2408
 translate schinese diamond_intro_f4dc0fa7:
@@ -1492,7 +1492,7 @@ translate schinese diamond_intro_f4dc0fa7:
 translate schinese diamond_intro_4d26ea10:
 
     # "Old man" "Oh, yes! There's a huge network of caves that starts there and runs through the whole mountain range. Some say it's many times bigger than Zan, and Zan is the largest city in the world!"
-    "Old man" "哦,是的!那里有一个巨大的洞穴网络,贯穿整个山脉。有人说它比泽恩还要大得多,而泽恩可是世界上最大的城市!"
+    "老绅士" "哦,是的!那里有一个巨大的洞穴网络,贯穿整个山脉。有人说它比泽恩还要大得多,而泽恩可是世界上最大的城市!"
 
 # game/BKevents.rpy:2412
 translate schinese diamond_intro_990f348e:
@@ -1510,7 +1510,7 @@ translate schinese diamond_intro_88bd6c62:
 translate schinese diamond_intro_7b8238a2:
 
     # "Old man" "Well, people get lost in there more often than not, and die alone in the darkness... Or not alone... But don't listen to those silly stories about the undead!"
-    "Old man" "人们在那里迷路的机会比生还的机会大得多,孤独地死在黑暗之中...或者不是独自一个人...但不要听信那些关于亡灵的愚蠢故事!"
+    "老绅士" "人们在那里迷路的机会比生还的机会大得多,孤独地死在黑暗之中...或者不是独自一个人...但不要听信那些关于亡灵的愚蠢故事!"
 
 # game/BKevents.rpy:2418
 translate schinese diamond_intro_69e34b9b:
@@ -1522,7 +1522,7 @@ translate schinese diamond_intro_69e34b9b:
 translate schinese diamond_intro_76e695f8:
 
     # "Old man" "Yeah, ghouls, vampires, and worse... That's just rumors. It's just giant blood-sucking bats if you ask me."
-    "Old man" "是的,食尸鬼、吸血鬼,还有更可怕的...那只是谣言。我看来只有巨型的吸血蝙蝙而已。"
+    "老绅士" "是的,食尸鬼、吸血鬼,还有更可怕的...那只是谣言。我看来只有巨型的吸血蝙蝙而已。"
 
 # game/BKevents.rpy:2422
 translate schinese diamond_intro_d8940c87:
@@ -1534,7 +1534,7 @@ translate schinese diamond_intro_d8940c87:
 translate schinese diamond_intro_41d744c3:
 
     # "Old man" "Oh, yes! Some are big as a pony!"
-    "Old man" "是的,有些大得像小马一样!"
+    "老绅士" "是的,有些大得像小马一样!"
 
 # game/BKevents.rpy:2426
 translate schinese diamond_intro_b520bee4:
@@ -1546,7 +1546,7 @@ translate schinese diamond_intro_b520bee4:
 translate schinese diamond_intro_fef2b347:
 
     # "Old man" "Why, for the diamonds of course."
-    "Old man" "当然是为了钻石。"
+    "老绅士" "当然是为了钻石。"
 
 # game/BKevents.rpy:2430
 translate schinese diamond_intro_0d0d38e8:
@@ -1558,7 +1558,7 @@ translate schinese diamond_intro_0d0d38e8:
 translate schinese diamond_intro_a7efe856:
 
     # "Old man" "Yes... There are places in the caves where you can just pick them right up from the mud. Many adventurers try their luck there."
-    "Old man" "是的...在洞穴里有些地方,你可以直接从泥里捡起钻石。很多冒险家都去那里试运气。"
+    "老绅士" "是的...在洞穴里有些地方,你可以直接从土里发现钻石。很多冒险家都去那里试运气。"
 
 # game/BKevents.rpy:2434
 translate schinese diamond_intro_724ebeec:
@@ -1570,19 +1570,19 @@ translate schinese diamond_intro_724ebeec:
 translate schinese diamond_intro_2e3e416b:
 
     # "Old man" "Oh, believe you me, they've tried! *chuckle* But it's no use sending an army in there, most passageways are only broad enough for a single man... And there are pockets with so little air to breathe, the large parties would just suffocate."
-    "Old man" "哦,相信我,他们已经试过了!*轻笑*但派军队进去是没有用的,大部分通道只够一个人通过...还有一些地方空气稀薄,大部队根本就会缺氧窒息。"
+    "老绅士" "哦,相信我,他们已经试过了!*轻笑*但派军队进去是没有用的,大部分通道只够一个人通过...还有一些地方空气稀薄,大部队会缺氧窒息。"
 
 # game/BKevents.rpy:2438
 translate schinese diamond_intro_28437bc6:
 
     # "Old man" "So they are content to just buy their diamonds from careless adventurers like the rest of us sensible folks do."
-    "Old man" "所以他们只能像我们普通人一样,从鲁莽的冒险家那里购买钻石。"
+    "老绅士" "所以他们只能像我们普通人一样,从鲁莽的冒险家那里购买钻石。"
 
 # game/BKevents.rpy:2440
 translate schinese diamond_intro_9cca1607:
 
     # "Old man" "Not that I'd have the means to buy any, mind you... Say, young one, care to spare a denar?"
-    "Old man" "当然,我也没有能力去买任何钻石...喂,小伙子,能给我一个银币吗?"
+    "老绅士" "当然,我也没有能力去买任何钻石...喂,小伙子,能给我一个银币吗?"
 
 # game/BKevents.rpy:2442
 translate schinese diamond_intro_9b9a5b26:
@@ -1594,7 +1594,7 @@ translate schinese diamond_intro_9b9a5b26:
 translate schinese diamond_intro_eac14305:
 
     # "You paid the old man 50 gold. You have discovered that you can sometimes find {b}diamonds{/b} in the caves behind the waterfall."
-    "你付给老人50枚金币。你发现在瀑布后面的洞穴里可以找到{b}钻石{/b}。"
+    "你付给老人50枚金币。你知晓了在瀑布后面的洞穴里可以找到{b}钻石{/b}。"
 
 # game/BKevents.rpy:2502
 translate schinese test_challenges_d320cc6e:
@@ -1630,7 +1630,7 @@ translate schinese shop_restock_intro_cccebaa7:
 translate schinese shop_restock_intro_ceadf0a1:
 
     # you "Well, yeah, sometimes I just don't find what I want..."
-    you "这不怪我，宝贝儿。有些我想要的东西你这里不一定卖..."
+    you "这不怪我，宝贝儿。有些我想要的东西你这里不卖..."
 
 # game/BKevents.rpy:2528
 translate schinese shop_restock_intro_558be043:
@@ -1762,7 +1762,7 @@ translate schinese thieves_guild_menu_15d6b866:
 translate schinese thieves_guild_menu_5e6ec244:
 
     # renza "Brilliant! Oh, and as long as we're dealing, you buy what's here at face value, and there is no refund. I don't wanna hear any complaints, ok?"
-    renza "太棒了!对了,只要我们还在做生意,你就要原价买下这里的东西,不能退货。我可不想听到任何抱怨,明白吗?"
+    renza "太棒了!对了,一旦成交,你就得按说好的价格买下这里的东西,不能退货。我可不想听到任何抱怨,明白吗?"
 
 # game/BKevents.rpy:2619
 translate schinese thieves_guild_menu_b84dc7d7:
@@ -1780,7 +1780,7 @@ translate schinese thieves_guild_menu_b1330478:
 translate schinese thieves_guild_menu_56716cb5:
 
     # renza "Oh, and don't forget... I am doing you a favour. I will expect it repaid some day."
-    renza "别忘了...我正在帮你个忙。总有一天你得回报我。"
+    renza "别忘了...我可是在帮你。总有一天你得回报我。"
 
 # game/BKevents.rpy:2625
 translate schinese thieves_guild_menu_846e86e7:
@@ -1792,19 +1792,19 @@ translate schinese thieves_guild_menu_846e86e7:
 translate schinese thieves_guild_loop_925b5292:
 
     # "As soon as you take the item from Renza's hands, however, you realize it's in very poor condition."
-    "当你从Renza手中拿到商品时,发现它的质量非常差。"
+    "当你从伦萨手中拿到商品时,发现它的质量非常差。"
 
 # game/BKevents.rpy:2668
 translate schinese thieves_guild_loop_611a0c38:
 
     # you "Renza, what's this..."
-    you "Renza,这是什么..."
+    you "伦萨,这是什么..."
 
 # game/BKevents.rpy:2670
 translate schinese thieves_guild_loop_d7f7fa6b:
 
     # renza "No refunds! You know that."
-    renza "没有退货!你明知道这一点。"
+    renza "货物售出，概不退换!你知道的。"
 
 # game/BKevents.rpy:2677
 translate schinese thieves_guild_loop_60d2662d:
@@ -1888,7 +1888,7 @@ translate schinese watchtower_menu_00d5992e:
 translate schinese watchtower_menu_16588167:
 
     # captain "My conditions are final, take it or leave it. You'll have to buy the stuff on offer at face value."
-    captain "我的条件是最终的,你要么接受要么拒绝。你必须按面值购买我提供的商品。"
+    captain "这是最后通牒,你要么接受要么拒绝。你必须按定价购买我提供的商品。"
 
 # game/BKevents.rpy:2750
 translate schinese watchtower_menu_89980ca0:
@@ -1900,7 +1900,7 @@ translate schinese watchtower_menu_89980ca0:
 translate schinese watchtower_loop_4d8d1215:
 
     # "As soon as you take the item from the vault to examine it closer, however, you realize it's in very poor condition."
-    "但是当你从宝库里拿出物品仔细检查时,你发现它的状况非常糟糕。"
+    "但是当你从宝库里拿出物品仔细检查时,你发现它的质量非常糟糕。"
 
 # game/BKevents.rpy:2793
 translate schinese watchtower_loop_8a8b91e0:
@@ -1912,7 +1912,7 @@ translate schinese watchtower_loop_8a8b91e0:
 translate schinese watchtower_loop_13051140:
 
     # captain "Hey, you break it, you own it. You know the rules"
-    captain "嘿,你把它弄坏了,就是你的了。你知道规矩的。"
+    captain "嘿,你把它弄坏了,东西在你手里坏的。你知道规矩的。"
 
 # game/BKevents.rpy:2802
 translate schinese watchtower_loop_60d2662d:
@@ -1924,7 +1924,7 @@ translate schinese watchtower_loop_60d2662d:
 translate schinese watchtower_loop_bd9a46e9:
 
     # "The captain purrs as she counts your gold."
-    "船长一边数着你的金币,一边咕噜咕噜地说。"
+    "上尉一边数着你的金币,一边咕噜咕噜地说。"
 
 # game/BKevents.rpy:2814
 translate schinese watchtower_loop_8ad6a5c4:
@@ -2038,7 +2038,7 @@ translate schinese visit_gina_f525d03b:
 translate schinese visit_gina_2dd36086:
 
     # you "I think you were looking for Cimerian artefacts. I have found this. Can you tell me how much it's worth?"
-    you "我想你在找西梅利亚文物。我找到了这个,你能告诉我它值多少钱吗?"
+    you "我想你在找席米亚文物。我找到了这个,你能告诉我它值多少钱吗?"
 
 # game/BKevents.rpy:2933
 translate schinese visit_gina_5da993fb:
@@ -2056,7 +2056,7 @@ translate schinese visit_gina_52f29610:
 translate schinese visit_gina_a1839600:
 
     # gina "I'll give you [price] gold for this [it.name]. Is that fair?"
-    gina "我会给你[price]金币买下这个[it.name]。这样公平吗?"
+    gina "我会给你[price]金币买下这个[it.name]。很不错的价格吧?"
 
 # game/BKevents.rpy:2963
 translate schinese visit_gina_a3fe0428:
@@ -2074,7 +2074,7 @@ translate schinese visit_gina_0b720346:
 translate schinese visit_gina_7e1e4906:
 
     # gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
-    gina "这是一件了不起的文物...你一定花了大价钱才弄到手的...你真是让我太高兴了。(*脸红*)"
+    gina "这是一件了不起的文物...你一定花了大价钱才弄到手的...真是让我太高兴了。(*脸红*)"
 
 # game/BKevents.rpy:2979
 translate schinese visit_gina_099cc97d:
@@ -2158,7 +2158,7 @@ translate schinese visit_gina_a1fd486a:
 translate schinese visit_gina_07c9de7e:
 
     # gina "It's in my inventory, you can buy it from me if you want. But I spent a lot of time researching this, so don't think I'll just give it away."
-    gina "在我这里,如果你想买的话随时来。不过我花了很多时间研究这个,所以可别指望我白送你。"
+    gina "我把它放在仓库里了,如果你想买的话随时来。不过我花了很多时间研究这个,所以可别指望我白送你。"
 
 # game/BKevents.rpy:3003
 translate schinese visit_gina_a8a078ef:
@@ -2200,13 +2200,13 @@ translate schinese visit_gina_109696d9:
 translate schinese visit_gina_aeddf3e8:
 
     # you "Is this... Cimerian script? You understand it, right?"
-    you "这是...西梅利亚文吗?你能看懂吗?"
+    you "这是...席米亚文吗?你能看懂吗?"
 
 # game/BKevents.rpy:3015
 translate schinese visit_gina_305b8c0d:
 
     # gina "Of course I do! Unfortunately, this one is completely indecipherable. It was written by a Cimerian doctor."
-    gina "当然可以!不过很不幸,这一个完全看不懂。是西梅利亚医生写的。"
+    gina "当然可以!不过很不幸,这一个完全看不懂。着肯定是席米亚的医生写的。"
 
 # game/BKevents.rpy:3016
 translate schinese visit_gina_d753d5f3:
@@ -2296,13 +2296,13 @@ translate schinese visit_gina_c645fe42:
 translate schinese visit_gina_4c90193f:
 
     # gina "Don't mock my scientific ambitions!!!" with vpunch
-    gina "不要嘲笑我的科学抱负!!!" with vpunch
+    gina "不要嘲笑我的科学梦!!!" with vpunch
 
 # game/BKevents.rpy:3036
 translate schinese visit_gina_43ae7c5d:
 
     # gina "Anyway. The device is in my inventory if you want to have a look. It's got lots of expensive parts, so expect to cough up a lot of gold for it."
-    gina "总之,这个设备在我的物品栏里,如果你想看看的话。它有很多昂贵的零件,所以你得掏出大量金币才能买到。"
+    gina "总之,这个设备在我的仓库里,如果你想看看的话。它有很多昂贵的零件,所以你得掏出大量金币才能买到。"
 
 # game/BKevents.rpy:3042
 translate schinese visit_gina_1ba56a67:
@@ -2320,13 +2320,13 @@ translate schinese visit_gina_a56eb94c:
 translate schinese visit_goldie_50d707f9:
 
     # goldie "Oh, [MC.name]! It's so nice to see you. How may I help you?" nointeract
-    goldie "噢,[MC.name]!好久不见你了。我能为您效劳吗?" nointeract
+    goldie "噢,[MC.name]!好久不见。需要我帮忙吗?" nointeract
 
 # game/BKevents.rpy:3074
 translate schinese goldie_chat_menu_c89a264e:
 
     # you "How's business?"
-    you "生意怎么样?"
+    you "最近生意怎么样?"
 
 # game/BKevents.rpy:3076
 translate schinese goldie_chat_menu_330333ae:
@@ -2356,7 +2356,7 @@ translate schinese goldie_chat_menu_ec8d58ff:
 translate schinese goldie_chat_menu_fb9d6224:
 
     # "You do not have any actions left for today."
-    "您今天已经没有任何剩余行动了。"
+    "你耗尽了今天的行动力。"
 
 # game/BKevents.rpy:3092
 translate schinese goldie_chat_menu_eda8ff50:
@@ -2404,13 +2404,13 @@ translate schinese add_vitals_scanner_2f2e428d:
 translate schinese add_vitals_scanner_cb812d72:
 
     # you "Hi, Iulia. I was wondering if you might take a look at this for me."
-    you "嗨,Iulia。我在想你能不能帮我看看这个。"
+    you "嗨,露莉亚。我在想你能不能帮我看看这个。"
 
 # game/BKevents.rpy:3151
 translate schinese add_vitals_scanner_c7e2ef30:
 
     # "You hand Iulia the mysterious blueprint."
-    "你把神秘的蓝图交给Iulia。"
+    "你把神秘的蓝图交给露莉亚。"
 
 # game/BKevents.rpy:3153
 translate schinese add_vitals_scanner_ed47c3c3:
@@ -2422,7 +2422,7 @@ translate schinese add_vitals_scanner_ed47c3c3:
 translate schinese add_vitals_scanner_166a5cdc:
 
     # you "I got it from Gina, the mad scientist from the junkyard. It's from an ancient civilization, or some such nonsense. What I want to know is if it's valuable..."
-    you "我是从Gina那里得到的,那个来自废品场的疯狂科学家。据说这是来自一个古老文明的东西。我想知道它值不值钱..."
+    you "我是从吉娜那里得到的,那个来自废品场的疯狂科学家。据说这是来自一个古老文明的东西。我想知道它值不值钱..."
 
 # game/BKevents.rpy:3157
 translate schinese add_vitals_scanner_27c27605:
@@ -2500,7 +2500,7 @@ translate schinese add_vitals_scanner_f2446966:
 translate schinese add_vitals_scanner_1777feac:
 
     # "You gave Iulia the ancient blueprint. You can now build a {b}Strange machine{/b} from the wagon menu."
-    "你把那个古老的蓝图给了Iulia。你现在可以从货车菜单中建造一台{b}奇怪的机器{/b}了。"
+    "你把那个古老的蓝图给了露莉亚。你现在可以在工匠菜单中建造一台{b}奇怪的机器{/b}了。"
 
 # game/BKevents.rpy:3200
 translate schinese vital_scanners_built_f8914a45:
@@ -2518,7 +2518,7 @@ translate schinese vital_scanners_built_a001fe14:
 translate schinese vital_scanners_built_809a0742:
 
     # "The machine looks very similar to the picture you saw on the ancient blueprint. However, it stands lifeless, its many knobs and quadrants unresponsive."
-    "这台机器和你在那个古老蓝图上看到的非常相似。不过它现在是静止的,上面的许多旋钮和部件都没有反应。"
+    "这台机器和你在那个古老蓝图上看到的非常相似。不过它现在是待机状态,上面的许多旋钮和部件都没有反应。"
 
 # game/BKevents.rpy:3210
 translate schinese vital_scanners_built_a077ed5d:
@@ -2596,25 +2596,25 @@ translate schinese vital_scanners_built_0d3016c8:
 translate schinese vital_scanners_built_ba487c05:
 
     # you "It's working! Thank you. That's nice of..."
-    you "它在工作!谢谢你。这真是很好..."
+    you "它在工作!谢谢你。你对我真好..."
 
 # game/BKevents.rpy:3254
 translate schinese vital_scanners_built_79e623d4:
 
     # gina "It doesn't come for free, of course!"
-    gina "当然,这不是白送的!"
+    gina "这可不是免费的!"
 
 # game/BKevents.rpy:3256
 translate schinese vital_scanners_built_737150bd:
 
     # you "Duh."
-    you "废话。"
+    you "当我没说。"
 
 # game/BKevents.rpy:3258
 translate schinese vital_scanners_built_980891a5:
 
     # gina "I am here to enlist your help. For science."
-    gina "我来找你们请求帮助。为了科学。"
+    gina "我来找你们帮我一个忙。为了科学。"
 
 # game/BKevents.rpy:3260
 translate schinese vital_scanners_built_767fb0c2:
@@ -2626,7 +2626,7 @@ translate schinese vital_scanners_built_767fb0c2:
 translate schinese vital_scanners_built_d4f6d808:
 
     # gina "Well, not exactly. I want to test this machine on your girls. It seems to be tuned for female organs..."
-    gina "不完全是。我想在你们的姑娘身上测试这台机器。它似乎专门针对女性器官..."
+    gina "不完全是。我想在你们的姑娘身上测试这台机器。它似乎专门针对女性的器官..."
 
 # game/BKevents.rpy:3264
 translate schinese vital_scanners_built_6f9f661e:
@@ -2668,7 +2668,7 @@ translate schinese vital_scanners_built_f1996997:
 translate schinese vital_scanners_built_782b956d:
 
     # carpenter "No way! I ain't gettin' paid to play guinea pig for your crazy-ass girlfriend."
-    carpenter "不可能!我可不是为了给你这个疯子女朋友当白鼠而来的。"
+    carpenter "不可能!我可不是为了给你这个疯子女朋友当小白鼠才来的。"
 
 # game/BKevents.rpy:3281
 translate schinese vital_scanners_built_bcf61c7a:
@@ -2692,19 +2692,19 @@ translate schinese vital_scanners_built_a647b18c:
 translate schinese vital_scanners_built_cbb024e8:
 
     # you "Ahem, I don't have any girls at the brothel right now..."
-    you "咳,我现在在青楼里没有任何姑娘..."
+    you "咳,现在在青楼里没有任何姑娘..."
 
 # game/BKevents.rpy:3294
 translate schinese vital_scanners_built_0f606445:
 
     # gina "What?!? What kind of brothel owner are you!"
-    gina "什么?!?你这种青楼老板是怎么回事!"
+    gina "什么?!?你这也能叫青楼老板？!"
 
 # game/BKevents.rpy:3296
 translate schinese vital_scanners_built_8051e8a0:
 
     # you "I'll, uh... I'll just pick two random girls up from the street, how does that sound?"
-    you "我,呃...我会从街上随便拉两个姑娘过来,怎么样?"
+    you "我,呃...我从街上随便拉两个姑娘过来,怎么样?"
 
 # game/BKevents.rpy:3298
 translate schinese vital_scanners_built_f4ed1567:
@@ -2776,7 +2776,7 @@ translate schinese vital_scanners_built_b7c1694d:
 translate schinese vital_scanners_built_29f57b9f:
 
     # you "[girl1.name] was hurt by your hellish contraption!"
-    you "[girl1.name]被你的可怕装置伤害了!"
+    you "[girl1.name]被你的可怕装置弄伤了!"
 
 # game/BKevents.rpy:3336
 translate schinese vital_scanners_built_d5140424:
@@ -2884,7 +2884,7 @@ translate schinese vital_scanners_built_587ab956:
 translate schinese vital_scanners_built_55833c87:
 
     # gina "We're almost there, [MC.name]! Just a few more tests, and..."
-    gina "我们快成功了,[MC.name]!再做几次实验就好了..."
+    gina "我们就快成功了,[MC.name]!再做几次实验就好了..."
 
 # game/BKevents.rpy:3379
 translate schinese vital_scanners_built_48a2c215:
@@ -2896,7 +2896,7 @@ translate schinese vital_scanners_built_48a2c215:
 translate schinese vital_scanners_built_33c49722:
 
     # "Gina tries her machine on all your girls, completely messing up their energy levels."
-    "吉娜把机器试验在你的所有女孩身上,彻底搞乱了她们的能量水平。"
+    "吉娜把机器试验在你的所有女孩身上,把她们的身体状况搞得一团糟。"
 
 # game/BKevents.rpy:3389
 translate schinese vital_scanners_built_02be0362:
@@ -2920,19 +2920,19 @@ translate schinese vital_scanners_built_4f3125c0:
 translate schinese vital_scanners_built_9359f4f9:
 
     # you "You... I really hope this is worth it!"
-    you "你...我真心希望这一切都值得。"
+    you "你...我真心希望这一切都是值得的。"
 
 # game/BKevents.rpy:3397
 translate schinese vital_scanners_built_e5efad61:
 
     # gina "Oh, ye of little faith! Let me show you."
-    gina "哦,你这个缺乏信念的人!让我来给你展示一下。"
+    gina "哦,你这个缺乏科研精神的人!让我来给你展示一下。"
 
 # game/BKevents.rpy:3401
 translate schinese vital_scanners_built_6a946f33:
 
     # gina "This knob lets you set up a value... And this part activates the scanner..."
-    gina "这个旋钮让你可以设置数值...而这一部分则是激活扫描仪..."
+    gina "这个旋钮让你可以设置数值...而这个按钮则是激活扫描仪..."
 
 # game/BKevents.rpy:3403
 translate schinese vital_scanners_built_4ef682b2:
@@ -2944,7 +2944,7 @@ translate schinese vital_scanners_built_4ef682b2:
 translate schinese vital_scanners_built_5f2f7421:
 
     # "You can now use the {b}autorest{/b} option from the {b}schedule screen{/b}."
-    "你现在可以在{b}日程安排界面{/b}使用{b}自动休息{/b}选项了。"
+    "你现在可以在{b}排班表{/b}使用{b}自动休息{/b}选项了。"
 
 # game/BKevents.rpy:3445
 translate schinese send_to_farm_990bf4a6:
@@ -2956,7 +2956,7 @@ translate schinese send_to_farm_990bf4a6:
 translate schinese send_to_farm_6182717d:
 
     # "There are no free pens in the farm right now."
-    "农场里现在没有空闲的牢房。"
+    "农场里现在没有闲置的牢房。"
 
 # game/BKevents.rpy:3457
 translate schinese send_to_farm_928b37a4:
@@ -2968,7 +2968,7 @@ translate schinese send_to_farm_928b37a4:
 translate schinese send_to_farm_7c2e174a:
 
     # gizel "There are no free pens in the farm right now. You cannot add any more pens to the farm for the time being."
-    gizel "农场里现在没有空闲的牢房。你暂时无法再添加新的牢房了。"
+    gizel "农场里现在没有闲置的牢房。你暂时无法再添加新的牢房了。"
 
 # game/BKevents.rpy:3472
 translate schinese send_to_farm_eb772d0c:
@@ -2986,7 +2986,7 @@ translate schinese send_to_farm_menu_09b7fafb:
 translate schinese send_to_farm_menu_fff596d2:
 
     # you "I'm the one in charge here. Get yourself ready. Gizel will pick you up shortly."
-    you "我才是这里的主人。准备好自己吧,吉泽很快就会来接你。"
+    you "我才是这里的主人。收拾好行李,吉泽很快就会来接你。"
 
 # game/BKevents.rpy:3545
 translate schinese send_to_farm_menu_a2f3ccdd:
@@ -3058,7 +3058,7 @@ translate schinese send_to_farm_menu_6329550c:
 translate schinese send_to_farm_menu_f0f21f79:
 
     # "Gizel didn't lift a finger to help you."
-    "吉泽丝毫没有伸出援手。"
+    "吉泽丝毫没有想要帮忙的意思。"
 
 # game/BKevents.rpy:3629
 translate schinese send_to_farm_menu_2d414750:
@@ -3088,31 +3088,31 @@ translate schinese farm_max_skill_ec9b24d8:
 translate schinese farm_max_skill_94d6c557:
 
     # gizel "Would you like to change [girl.fullname]'s training?" nointeract
-    gizel "你想要更改[girl.fullname]的训练吗?" nointeract
+    gizel "你想要更改[girl.fullname]的训练内容吗?" nointeract
 
 # game/BKevents.rpy:3697
 translate schinese farm_max_skill_7fa55369:
 
     # gizel "Fine. Visit the farm if you want to change it later."
-    gizel "好的。如果你想之后改变的话,可以去农场看看。"
+    gizel "好吧。如果你之后改主意了,可以去农场看看。"
 
 # game/BKevents.rpy:3710
 translate schinese farm_max_pref_9471933a:
 
     # gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
-    gizel normal "[girl.fullname]现在对{b}[cntext]{/b}着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
+    gizel normal "[girl.fullname]现在对{b}[cntext]{/b}十分着迷。不过我还可以继续训练她...这样会增加她的市场价值。"
 
 # game/BKevents.rpy:3715
 translate schinese farm_max_pref_94d6c557:
 
     # gizel "Would you like to change [girl.fullname]'s training?" nointeract
-    gizel "你想改变[girl.fullname]的训练吗?" nointeract
+    gizel "你想改变[girl.fullname]的训练内容吗?" nointeract
 
 # game/BKevents.rpy:3721
 translate schinese farm_max_pref_7fa55369:
 
     # gizel "Fine. Visit the farm if you want to change it later."
-    gizel "好的。如果你想之后改变的话,可以去农场看看。"
+    gizel "好吧。如果你之后改主意了,可以去农场看看。"
 
 # game/BKevents.rpy:3744
 translate schinese farm_discovered_weakness_f3aee85d:
@@ -3148,7 +3148,7 @@ translate schinese farm_discovered_weakness_d05c31d2:
 translate schinese farm_discovered_weakness_bc8e3af8:
 
     # gizel angry "What!! Is this how you thank me for all my efforts?"
-    gizel angry "什么!!这就是你对我所有努力的回报吗?"
+    gizel angry "什么!!这就是你对我努力的回报吗?"
 
 # game/BKevents.rpy:3769
 translate schinese farm_discovered_weakness_22d0f3f2:
@@ -3160,7 +3160,7 @@ translate schinese farm_discovered_weakness_22d0f3f2:
 translate schinese farm_resisted_da7c75e6:
 
     # "Gizel barges in early in the morning, slamming the door of your office open." with vpunch
-    "吉姿尔一大早就冲进来,猛地推开你办公室的门。" with vpunch
+    "吉泽一大早就冲进来,猛地推开你办公室的门。" with vpunch
 
 # game/BKevents.rpy:3803
 translate schinese farm_resisted_7985c7c4:
@@ -3178,19 +3178,19 @@ translate schinese farm_resisted_3d9eb8e4:
 translate schinese farm_resisted_b123bf2f:
 
     # gizel "When you find her, do me a favor, and rape that whore's ass with a tent pole!"
-    gizel "等你找到她,帮我个忙,用帐篷杆强奸那个婊子的屁股!"
+    gizel "等你找到她,帮我个忙,用帐篷杆捅那个婊子的屁股!"
 
 # game/BKevents.rpy:3809
 translate schinese farm_resisted_0dc58079:
 
     # you "Giz, calm down..."
-    you "吉姿尔,冷静下来..."
+    you "吉泽,冷静下来..."
 
 # game/BKevents.rpy:3814
 translate schinese farm_resisted_bc0cd827:
 
     # extend " She hurt my beautiful minion! I should flay her disgraceful skin and make a handbag!!!"
-    extend "她伤害了我漂亮的手下!我应该剥下她那令人不齿的皮肤,做成手袋!"
+    extend "她伤害了我漂亮的手下!我应该剥下她那令人不齿的皮肤,做成手提包!"
 
 # game/BKevents.rpy:3817
 translate schinese farm_resisted_ea2d02f5:
@@ -3202,19 +3202,19 @@ translate schinese farm_resisted_ea2d02f5:
 translate schinese farm_resisted_88c9cf16:
 
     # extend " She refused my direct orders! I had to beat some sense into her thick head!"
-    extend "她拒绝执行我的直接命令!我不得不打醒她那笨拙的脑袋!"
+    extend "她拒绝执行我的直接命令!我不得不敲打她那笨拙的脑袋!"
 
 # game/BKevents.rpy:3823
 translate schinese farm_resisted_325d5e39:
 
     # gizel upset "Look, {b}[girl.fullname]{/b} is a whiny little bitch, and refuses to train! You need to let me enforce harsher discipline with her..."
-    gizel upset "看吧,{b}[girl.fullname]{/b}就是个爱发牢骚的小婊子,拒绝训练!你得让我对她实施更严厉的管教..."
+    gizel upset "看吧,{b}[girl.fullname]{/b}就是个爱发牢骚的小婊子,她拒绝训练!你得让我对她实施更严厉的管教..."
 
 # game/BKevents.rpy:3826
 translate schinese farm_resisted_e95b4903:
 
     # gizel upset "{b}[girl.fullname]{/b} has the nerve to complain about my training... I'll kick her silly ass to Westmarch and back!"
-    gizel upset "{b}[girl.fullname]{/b}竟然敢抱怨我的训练...我要把她的屁股踢到西马奇去再踢回来!"
+    gizel upset "{b}[girl.fullname]{/b}竟然敢抱怨我的训练...我要把她的屁股踢到西境去再踢回来!"
 
 # game/BKevents.rpy:3831
 translate schinese farm_resisted_2bdc0d1b:
@@ -3226,13 +3226,13 @@ translate schinese farm_resisted_2bdc0d1b:
 translate schinese farm_resisted_b27ce32a:
 
     # gizel upset "What! You weakling! I should turn you into a toad and squash you with a deathroller!" with vpunch
-    gizel upset "什么!你这个懦夫!我应该把你变成一只青蛙,然后用死亡滚筒压扁你!" with vpunch
+    gizel upset "什么!你这个懦夫!我应该把你变成一只青蛙,然后用死亡滚木压扁你!" with vpunch
 
 # game/BKevents.rpy:3840
 translate schinese farm_resisted_e5fb90d1:
 
     # you "Gizel, we have a deal... Do as I say."
-    you "吉姿尔,我们有个协议...按我说的去做。"
+    you "吉泽,还记得我们签订的协议吗...按我说的去做。"
 
 # game/BKevents.rpy:3842
 translate schinese farm_resisted_f9573a8a:
@@ -3280,13 +3280,13 @@ translate schinese farm_resisted_e638b97e:
 translate schinese farm_resisted_f985883b:
 
     # gizel normal "Yes, don't worry. I have a reviving spell somewhere if things go too far."
-    gizel normal "是的,别担心。我有一个复活咒语,如果事情进展得太远的话。"
+    gizel normal "是的,别担心。我有一个复活咒语,如果事态变得严重起来的话。"
 
 # game/BKevents.rpy:3864
 translate schinese farm_resisted_47e9f3a7:
 
     # you "Just keep doing what you've been doing, and keep me out of it. Very well, now, shoo!"
-    you "继续你一直在做的,别卷进来。好了,现在快走吧!"
+    you "就像往常一样,别把我卷进去。好了,现在快走吧!"
 
 # game/BKevents.rpy:3866
 translate schinese farm_resisted_a73991b5:
@@ -3328,7 +3328,7 @@ translate schinese farm_change_training_mode_4d105c3f:
 translate schinese farm_change_training_mode_777372fe:
 
     # "You don't want to cause her too much distress. Gizel will separate [girl.name] from [girl.weakness]s whenever possible."
-    "你不想让她受太多痛苦。吉泽会尽可能把[girl.name]与她的[girl.weakness]分开。"
+    "你不想让她受太多痛苦。吉泽会尽可能把[girl.name]与[girl.weakness]分开。"
 
 # game/BKevents.rpy:3934
 translate schinese farm_take_out_60e465a4:
@@ -3346,7 +3346,7 @@ translate schinese farm_take_out_64cc7863:
 translate schinese farm_take_out_7f5e4217:
 
     # gizel normal "And just where do you think you can put that wench? Your brothel is full."
-    gizel normal "那你打算把那个婊子放在哪里?你的青楼已经满了。"
+    gizel normal "那你打算把那个婊子放在哪里?你的青楼已经住满了。"
 
 # game/BKevents.rpy:3968
 translate schinese exit_farm_3424b2db:
@@ -3364,13 +3364,13 @@ translate schinese exit_farm_223d04a9:
 translate schinese exit_farm_ec20b341:
 
     # gizel normal "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?"
-    gizel normal "[MC.name]! [girl.fullname]在农场服完期了。你想让我把她带回来吗?"
+    gizel normal "[MC.name]! [girl.fullname]在农场服完刑期了。你想让我把她带回来吗?"
 
 # game/BKevents.rpy:3979
 translate schinese exit_farm_77245fb1:
 
     # gizel "[MC.name]! [girl.fullname] has served her time at the farm. Would you like me to bring her back?" nointeract
-    gizel "[MC.name]! [girl.fullname]在农场服完期了。你想让我把她带回来吗?" nointeract
+    gizel "[MC.name]! [girl.fullname]在农场服完刑期了。你想让我把她带回来吗?" nointeract
 
 # game/BKevents.rpy:3986
 translate schinese exit_farm_5811b00a:
@@ -3400,7 +3400,7 @@ translate schinese exit_farm_3b88e6f6:
 translate schinese exit_farm_5ac095b6:
 
     # gizel "[MC.name], I can't train [girl.fullname] for [prog.target] acts, she won't train anymore. Perhaps if you allowed me to go {i}really{/i} hard on her..."
-    gizel "[MC.name],我无法继续训练[girl.fullname]去从事[prog.target]行为,她已经不愿意接受训练了。也许如果你允许我对她{i}更加{/i}严厉处置..."
+    gizel "[MC.name],我无法继续训练[girl.fullname]去接受[prog.target]行为,她已经不愿意接受训练了。也许如果你允许我对她{i}更加{/i}严厉处置..."
 
 # game/BKevents.rpy:4018
 translate schinese exit_farm_34067ce9:
@@ -3430,7 +3430,7 @@ translate schinese exit_farm_79c7b6ac_1:
 translate schinese exit_farm_6124d3eb:
 
     # gizel smirk "Finally, you see reason! I'll do that."
-    gizel smirk "终于,你明白过来了!我会这么做。"
+    gizel smirk "终于,你想明白了!我会这么做。"
 
 # game/BKevents.rpy:4042
 translate schinese exit_farm_fb272a3e:
@@ -3442,13 +3442,13 @@ translate schinese exit_farm_fb272a3e:
 translate schinese advertising_intro_38f9eecc:
 
     # sill happy "Master, you have used advertising girls for the first time! Would you like to know more about how advertising works?"
-    sill happy "主人,您第一次使用了广告女郎!您想了解更多广告工作的知识吗?"
+    sill happy "主人,这是您第一次使用广告女郎!您想了解更多广告的事情吗?"
 
 # game/BKevents.rpy:4065
 translate schinese advertising_intro_00da3dba:
 
     # sill "One more thing, Master, if I may. Right now, your advertising girls are only wearing plain clothes. This is not very attractive to customers, I'm afraid..."
-    sill "主人,还有一件事,如果您不介意的话。现在您的广告女郎只穿普通衣服。恐怕对客户不太有吸引力..."
+    sill "主人,还有一件事,如果您不介意的话。现在您的广告女郎只有普通制服穿。恐怕对客户不太有吸引力..."
 
 # game/BKevents.rpy:4067
 translate schinese advertising_intro_b837621c:
@@ -3460,25 +3460,25 @@ translate schinese advertising_intro_b837621c:
 translate schinese advertising_intro_e66ce8c5:
 
     # you "I see... They look... homey?"
-    you "我明白了...她们看起来...有些平凡?"
+    you "我明白了...她们看起来...有些庸俗?"
 
 # game/BKevents.rpy:4071
 translate schinese advertising_intro_1462fffa:
 
     # sill sad "Aw... (Is this all you've got to say...)"
-    sill sad "哦....(你就只有这么说吗...)"
+    sill sad "哦....(你就这样评价吗...)"
 
 # game/BKevents.rpy:4074
 translate schinese advertising_intro_a5ce9163:
 
     # sill "Okay then. Ask me later if you need a refresher."
-    sill "好的。以后如果需要复习,就再来问我吧。"
+    sill "好的。以后如果需要回顾,就再来问我吧。"
 
 # game/BKevents.rpy:4078
 translate schinese advertising_intro_3f7fe0d3:
 
     # "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
-    "你已经获得了广告女郎的服装,提高了{b}广告能力{/b}。未来也许能解锁更强大的服装。"
+    "你获得了一套广告女郎的服装,提高了{b}广告能力{/b}。未来也许能解锁更吸引人的服装。"
 
 # game/BKevents.rpy:4106
 translate schinese zodiac_intro_498425b4:
@@ -3490,7 +3490,7 @@ translate schinese zodiac_intro_498425b4:
 translate schinese zodiac_intro_0080067d:
 
     # sill "Wait! Master [MC.name]!"
-    sill "等等!主人[MC.name]!"
+    sill "等等![MC.name]!"
 
 # game/BKevents.rpy:4110
 translate schinese zodiac_intro_777d2b41:
@@ -3520,13 +3520,13 @@ translate schinese zodiac_intro_568873a4:
 translate schinese zodiac_intro_5f13322b:
 
     # sill happy "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?"
-    sill happy "关于八大传奇十二星座圣人!您想听我讲讲吗?"
+    sill happy "关于泽恩的八位传奇人物!您想听我讲讲吗?"
 
 # game/BKevents.rpy:4121
 translate schinese zodiac_intro_6e711f16:
 
     # sill "It's about the Eight legendary Zodiac saints! Would you like me to tell you about it?" nointeract
-    sill "关于八大传奇十二星座圣人!您想听我讲讲吗?" nointeract
+    sill "关于泽恩的八位传奇人物!您想听我讲讲吗?" nointeract
 
 # game/BKevents.rpy:4124
 translate schinese zodiac_intro_116cc7b1:
@@ -3544,13 +3544,13 @@ translate schinese zodiac_intro_e39ed1ad:
 translate schinese zodiac_intro_eaf14262:
 
     # sill "I think [leveled.fullname] is a little more experienced now. Maybe she's ready to learn a new zodiac sign, expand her cosmic mindset, open her chakras, you know?"
-    sill "我觉得[leveled.fullname]可能已经有些经验了。也许她已经准备好学习新的星座,拓展她的宇宙意识,打开她的chakras了,您知道的。"
+    sill "我觉得[leveled.fullname]可能已经有些经验了。也许她已经准备好学习新的天赋,拓展她的精神空间,打通她的经脉,反正就是那个意思。"
 
 # game/BKevents.rpy:4137
 translate schinese zodiac_intro_957f88d3:
 
     # you "Sill... You sound weird..."
-    you "希露...你听起来有点奇怪..."
+    you "希露...你听起来怎么这么兴奋..."
 
 # game/BKevents.rpy:4139
 translate schinese zodiac_intro_0a33cf01:
@@ -3580,13 +3580,13 @@ translate schinese zodiac_intro_4bcc9051:
 translate schinese add_billboard_887da878:
 
     # carpenter "Here you go, I've finished sewing up your girly suits... Not proper carpenter work, if you ask me."
-    carpenter "好了,我已经缝好你那些女仆装了...不过说实话这不太像木工活。"
+    carpenter "好了,我已经缝好你那些女仆装了...不过说实话这可不是木工活。"
 
 # game/BKevents.rpy:4172
 translate schinese add_billboard_a50d9c8a:
 
     # sill "That's great! Now, our advertising girls are sure to bring us some good business!"
-    sill "太棒了!这样我们的广告女郎一定能为我们带来生意!"
+    sill "太棒了!这样我们的广告女郎一定能为我们带来更多的客人!"
 
 # game/BKevents.rpy:4174
 translate schinese add_billboard_15b1210c:
@@ -3616,7 +3616,7 @@ translate schinese add_billboard_ab93572a:
 translate schinese add_billboard_5ce79c42:
 
     # "Iulia becomes animated."
-    "伊乌利亚变得很兴奋。"
+    "露莉亚变得很兴奋。"
 
 # game/BKevents.rpy:4186
 translate schinese add_billboard_45db4b1a:
@@ -3634,7 +3634,7 @@ translate schinese add_billboard_3bc36659:
 translate schinese add_billboard_86983c2a:
 
     # you "A mechanical billboard?"
-    you "一块机械广告牌?"
+    you "一块滚动广告牌?"
 
 # game/BKevents.rpy:4192
 translate schinese add_billboard_f8e6db33:
@@ -3646,7 +3646,7 @@ translate schinese add_billboard_f8e6db33:
 translate schinese add_billboard_00c4f177:
 
     # you "And... It's going to show boobs? Right?"
-    you "那...它会展示乳房?对吧?"
+    you "那...它会展示女孩的胸部?对吧?"
 
 # game/BKevents.rpy:4198
 translate schinese add_billboard_bac8e7be:
@@ -3658,19 +3658,19 @@ translate schinese add_billboard_bac8e7be:
 translate schinese add_billboard_07f20aff:
 
     # carpenter "Yes, I suppose we {i}could{/i} have it display some... boobs... *sigh*"
-    carpenter "是的,我想{i}也许{/i}可以让它显示一些...乳房...*叹息*"
+    carpenter "是的,我想{i}也许{/i}可以让它显示一些...胸部...*叹息*"
 
 # game/BKevents.rpy:4204
 translate schinese add_billboard_68133890:
 
     # you "That's {b}great{/b}! Make me a list of what you'll need, and we'll get this built in no time!"
-    you "太{b}棒{/b}了!给我列一份需求清单,我们会尽快建起来!"
+    you "太{b}棒{/b}了!把需要的材料整理成清单,我们必须尽快弄好它!"
 
 # game/BKevents.rpy:4208
 translate schinese add_billboard_e9034dc6:
 
     # "You can now build a {b}Clockwork Billboard{/b} from the wagon menu, to expand your advertising settings."
-    "你现在可以从马车菜单中建造一个{b}机械广告牌{/b},来扩展你的广告设置。"
+    "你现在可以从工匠菜单中建造一个{b}滚动广告牌{/b},来扩大你的广告效果。"
 
 # game/BKevents.rpy:4221
 translate schinese first_contract_7d12a542:
@@ -3682,13 +3682,13 @@ translate schinese first_contract_7d12a542:
 translate schinese first_contract_597c6843:
 
     # you "For you? Always... What is it?"
-    you "对你来说?随时都有。发生什么事了?"
+    you "如果是你问的话,随时都有。发生什么事了?"
 
 # game/BKevents.rpy:4225
 translate schinese first_contract_3768cf53:
 
     # jobgirl "I heard about your new license... Congrats!"
-    jobgirl "我听说你拿到新执照了...祝贺你!"
+    jobgirl "我听说你拿到新的营业执照了...祝贺你!"
 
 # game/BKevents.rpy:4227
 translate schinese first_contract_9ea2367e:
@@ -3718,7 +3718,7 @@ translate schinese first_contract_5bd945f6:
 translate schinese first_contract_f4a89bfe:
 
     # jobgirl "Now that you are legit, you can actually take on {b}Contracts{/b} from the rich and powerful."
-    jobgirl "既然你合法了,你就可以从富人和权贵那里接到{b}合约{/b}了。"
+    jobgirl "既然你现在做的是合法生意,那么你就可以从富人和权贵那里接到{b}合约{/b}订单了。"
 
 # game/BKevents.rpy:4239
 translate schinese first_contract_3442e17c:
@@ -3730,13 +3730,13 @@ translate schinese first_contract_3442e17c:
 translate schinese first_contract_eb0fc054:
 
     # jobgirl "Yup. They're like quests, except bigger."
-    jobgirl "对,就是任务,只不过规模更大。"
+    jobgirl "对,就像你之前接的委托任务,只不过需求和难度更大。"
 
 # game/BKevents.rpy:4243
 translate schinese first_contract_4df33074:
 
     # you "How does it work?"
-    you "它是怎么运作的?"
+    you "它具体是怎么个规矩?"
 
 # game/BKevents.rpy:4245
 translate schinese first_contract_88b1279e:
@@ -3748,7 +3748,7 @@ translate schinese first_contract_88b1279e:
 translate schinese first_contract_a7ed71b4:
 
     # you "My agent? Since wh..."
-    you "我的代理?从什么时候起..."
+    you "我的代理?什么时候..."
 
 # game/BKevents.rpy:4249
 translate schinese first_contract_7c476756:
@@ -3766,19 +3766,19 @@ translate schinese first_contract_0e006e76:
 translate schinese first_contract_e2d7cf91:
 
     # jobgirl "But you know, contracts are serious commitments. The slavers' guild is not an organization that tolerates failure."
-    jobgirl "不过你要知道,合约是一种严肃的承诺。奴隶工会可不会容忍失败。"
+    jobgirl "不过你要知道,合约是一种有法律效益的关系。奴隶工会可不会容忍失败。"
 
 # game/BKevents.rpy:4257
 translate schinese first_contract_2c6d7445:
 
     # you "Where have I heard that before..."
-    you "我听起来很耳熟..."
+    you "听起来很耳熟..."
 
 # game/BKevents.rpy:4259
 translate schinese first_contract_1a08b41a:
 
     # jobgirl "You are limited to one contract a month, guild rules for newbies. Also a good way to avoid too much competition for the guild elders, I guess."
-    jobgirl "作为新手,你每个月只能接一个合约。这也是为了避免与工会长老们产生过多竞争。"
+    jobgirl "作为新人,你每个月只能接一个合约。这也是为了避免与工会内的老家伙们产生过多竞争。"
 
 # game/BKevents.rpy:4261
 translate schinese first_contract_31174ccc:
@@ -3802,13 +3802,13 @@ translate schinese first_contract_378a7217:
 translate schinese first_contract_0f4a619f:
 
     # jobgirl "After picking a contract, you will have until the end of the month (the 28th) to prepare. When the month ends, you will be able to send one of your girls to complete the contract."
-    jobgirl "选定合约后,你将有一个月的时间(直到28日)进行准备。当月结束时,你就可以派出一名女孩来完成合约。"
+    jobgirl "选定合约后,你将有一个月的时间(直到每月28日)进行准备。到月底的时候,你就可以派出一名女孩来完成合约。"
 
 # game/BKevents.rpy:4269
 translate schinese first_contract_1c0eaf04:
 
     # jobgirl "The contracts offer big payouts... As well as reputation for you and your girl. The customers may also pay extra, if they're happy."
-    jobgirl "这些合约提供丰厚的回报...以及对你和女孩的声誉。如果客户满意,他们也可能会额外支付酬劳。"
+    jobgirl "这些合约会提供丰厚的回报...以及提高你和女孩的声望。如果客户满意,他们也可能会额外支付一些酬劳。"
 
 # game/BKevents.rpy:4271
 translate schinese first_contract_3dd84e45:
@@ -3820,7 +3820,7 @@ translate schinese first_contract_3dd84e45:
 translate schinese first_contract_4467d573:
 
     # jobgirl "Right away! Here are some leads I found this month. Pick one."
-    jobgirl "立刻开始!这里有本月找到的一些线索。请选一个。"
+    jobgirl "立刻开始!这里有本月找到的一些合约。选一个吧。"
 
 # game/BKevents.rpy:4282
 translate schinese first_contract_98e2d5c7:
@@ -3838,7 +3838,7 @@ translate schinese first_contract_94b6d651:
 translate schinese first_contract_1f53645f:
 
     # jobgirl "Okay. In that case, I'll come back this evening to get your answer."
-    jobgirl "好吧。那我晚上再来拿你的答复。"
+    jobgirl "好吧。那我晚上再来等你的答复。"
 
 # game/BKevents.rpy:4290
 translate schinese first_contract_db15017a:
@@ -3850,13 +3850,13 @@ translate schinese first_contract_db15017a:
 translate schinese first_contract_e27c2acb:
 
     # jobgirl "I see... Well, you could always buy a new one? You'd have one month to train her..."
-    jobgirl "我明白了...那你可以去买一个新的女孩?你有一个月的时间来训练她..."
+    jobgirl "我明白了...那你可以去买一个新的奴隶?你有一个月的时间来训练她..."
 
 # game/BKevents.rpy:4299
 translate schinese first_contract_ae62f35d:
 
     # jobgirl "All right. I'll be back tonight. But it's your last chance! You can't keep important customers waiting."
-    jobgirl "好吧。我晚上回来。但这是最后一次机会了!你可不能让重要的客户久等。"
+    jobgirl "好吧。我晚上再来。但这是最后一次机会了!你可不能让重要的客户久等。"
 
 # game/BKevents.rpy:4303
 translate schinese first_contract_05c8418a:
@@ -3892,7 +3892,7 @@ translate schinese contract_chosen_a0f900a7:
 translate schinese contract_chosen_f75506b2:
 
     # jobgirl "Yes, [result.base_value] gold. My {b}finder's fee{/b} for that contract."
-    jobgirl "是的,[result.base_value]金币。作为{b}中间人费{/b}。"
+    jobgirl "是的,[result.base_value]金币。作为{b}中介费{/b}。"
 
 # game/BKevents.rpy:4328
 translate schinese contract_chosen_10008941:
@@ -4078,13 +4078,13 @@ translate schinese run_contract_end_3d664e9d:
 translate schinese run_contract_end_6a99d81e:
 
     # you "I'm sorry. [girl.name] is not for sale."
-    you "对不起。[girl.name]不出售。"
+    you "对不起。[girl.name]是非卖品。"
 
 # game/BKevents.rpy:4649
 translate schinese run_contract_end_f6139c85:
 
     # "[girl.name] performed poorly, but as she met the organizer's bonus requirement, they reluctantly agreed to refund your contract fee ([con.base_value] gold).\nNevertheless, your reputation suffered."
-    "[girl.name]的表现很差,但由于她满足了组织者的奖金要求,他们勉强同意退还你的合约费([con.base_value]金币)。\n不过,你的声誉受到了损害。"
+    "[girl.name]的表现很差,但由于她满足了组织者的额外要求,他们勉强同意退还你的合约费([con.base_value]金币)。\n不过,你的声誉受到了损害。"
 
 # game/BKevents.rpy:4651
 translate schinese run_contract_end_c489819d:
@@ -4108,7 +4108,7 @@ translate schinese contract_MC_event_fe9503ca:
 translate schinese contract_MC_event_a89438e2:
 
     # con.char "Avast! Pirates! Pirates are attacking the boat!" with vpunch
-    con.char "啊哈!海盗!海盗在袭击船只!" with vpunch
+    con.char "哦不!是海盗!海盗在袭击船只!" with vpunch
 
 # game/BKevents.rpy:4688
 translate schinese contract_MC_event_0f77ef26:
@@ -4132,19 +4132,19 @@ translate schinese contract_MC_event_2dacfe3d:
 translate schinese contract_MC_event_b3404475:
 
     # "Inspired by your bravery, the defenders rally around you, and quickly recover the upper hand against the disorganised wretches."
-    "你的勇敢激励了防守者,他们很快就重新掌握了主动权,对付这些杂乱无章的家伙。"
+    "你的勇敢激励了防守者,他们很快就重新掌握了主动权,对付这些无组织无纪律的家伙。"
 
 # game/BKevents.rpy:4721
 translate schinese contract_MC_event_9643ef62:
 
     # "You try to defend against the onslaught, but are quickly outnumbered and surrounded."
-    "你试图抵御,但很快就被人数压倒,被包围了。"
+    "你试图抵御,但很快就被人数压倒,你被包围了。"
 
 # game/BKevents.rpy:4726
 translate schinese contract_MC_event_df508a07:
 
     # "Swinging from a rope, a pirate kicks you in the back, sending you tumbling down on the deck. His comrades disarm you, laughing."
-    "一位海盗摇晃着绳子,用脚猛击你的背部,让你在甲板上滚落下去。他的同伙们抢夺了你的武器,嘲笑着。"
+    "一位海盗摇晃着绳子,用脚猛击你的背部,让你在甲板上滚落下去。他的同伙夺走了你的武器,嘲笑着。"
 
 # game/BKevents.rpy:4730
 translate schinese contract_MC_event_d13126f2:
@@ -4168,7 +4168,7 @@ translate schinese contract_MC_event_f51c1bc5:
 translate schinese contract_MC_event_d02582eb:
 
     # "You cast a mind control spell on the pirates, convincing them that the deck is crawling with snakes."
-    "你对海盗们施展了精神控制术,让他们觉得甲板上布满了蛇。"
+    "你对海盗们施展了精神控制术,让他们觉得甲板上爬满了蛇。"
 
 # game/BKevents.rpy:4748
 translate schinese contract_MC_event_19a59283:
@@ -4180,7 +4180,7 @@ translate schinese contract_MC_event_19a59283:
 translate schinese contract_MC_event_897d7cc0:
 
     # "One by one, the spellbound pirates abandon ship, screaming, and the rest of the fiends quickly turn tail."
-    "被咒语控制的海盗们一个个惊恐地抛弃了船只,其余的恶徒也纷纷落荒而逃。"
+    "被咒语控制的海盗们一个接一个惊恐地抛弃了船只,其余的恶徒也纷纷落荒而逃。"
 
 # game/BKevents.rpy:4755
 translate schinese contract_MC_event_16556373:
@@ -4228,25 +4228,25 @@ translate schinese contract_MC_event_046cc0d0:
 translate schinese contract_MC_event_355650fa:
 
     # "As a reward, he gives you access to a secret stash in the back, where they keep the smuggling goods."
-    "作为报酬,他让你进入后方的秘密储藏室,那里保存着偷运的货物。"
+    "作为报酬,他让你进入船尾的秘密仓库,那里保存着走私的货物。"
 
 # game/BKevents.rpy:4776
 translate schinese contract_MC_event_450db258:
 
     # con.char "Spices from all over the world... This is some good shit, man. You can have a little. *inhale*"
-    con.char "来自世界各地的香料...这可真是好东西,孩子。你可以拿一点尝尝。*深吸一口*"
+    con.char "来自世界各地的香料...这可是好东西,孩子。你可以拿一点尝尝。*深吸一口*"
 
 # game/BKevents.rpy:4780
 translate schinese contract_MC_event_f8bfd2c2:
 
     # "You prudently pass on the more hardcore stuff, but take a bag of focus-inducing drugs to share with your girls."
-    "你谨慎地放弃了更猛烈的药品,却拿走了一袋提神剂,准备分给你的姑娘们。"
+    "你谨慎地放弃了猛烈的毒品,转而拿走了一袋无害的兴奋剂,准备分给你的姑娘们。"
 
 # game/BKevents.rpy:4785
 translate schinese contract_MC_event_c682a1fd:
 
     # "{b}Spice up{/b}: Your girls will receive double amounts of JP for a week."
-    "{b}激发活力{/b}:你的姑娘们将在一周内获得双倍的JP。"
+    "{b}激发活力{/b}:你的姑娘们将在一周内获得双倍的工作经验。"
 
 # game/BKevents.rpy:4791
 translate schinese contract_MC_event_d2c9e657:
@@ -4270,13 +4270,13 @@ translate schinese contract_MC_event_93be31d4:
 translate schinese contract_MC_event_f5c71f35:
 
     # "A drunk man is pursuing [girl.fullname]. He's holding a kitchen knife threateningly."
-    "一个醉汉正在追逐[girl.fullname],他手里拿着一把厨刀,威胁着她。"
+    "一个醉汉正在追逐[girl.fullname],他手里拿着一把菜刀,威胁着她。"
 
 # game/BKevents.rpy:4813
 translate schinese contract_MC_event_55a937c8:
 
     # "As the man stumbles towards [girl.name], you grab a bar stool and fling it at his back."
-    "当那个男人摇晃着走向[girl.name]时,你抓起一个酒吧凳子,朝他的背心扔了过去。"
+    "当那个男人摇晃着走向[girl.name]时,你抓起一个酒吧凳子,朝他扔了过去。"
 
 # game/BKevents.rpy:4816
 translate schinese contract_MC_event_cf168ab9:
@@ -4294,13 +4294,13 @@ translate schinese contract_MC_event_f007a16a:
 translate schinese contract_MC_event_fa6f233a:
 
     # "Your aim was clumsy, and the man surprisingly nimble in spite of his level of inebriation. You broke the ballroom mirror."
-    "你的瞄准很生疏,而那个醉汉尽管喝得烂醉如泥,却还是很灵活。你打破了宴会厅的镜子。"
+    "你的瞄准很生疏,而那个醉汉尽管喝得烂醉如泥,却还是很灵活。你打碎了宴会厅的镜子。"
 
 # game/BKevents.rpy:4832
 translate schinese contract_MC_event_9743cdd0:
 
     # "Drunkard" "Wha' the hell wuz that, you sneaky weasel!"
-    "Drunkard" "你这个卑鄙的野鼬,你干什么!"
+    "Drunkard" "你这个卑鄙的野鼬,你想干什么!"
 
 # game/BKevents.rpy:4834
 translate schinese contract_MC_event_9cdb99a5:
@@ -4312,19 +4312,19 @@ translate schinese contract_MC_event_9cdb99a5:
 translate schinese contract_MC_event_002f7de4:
 
     # "You have all the pain in the world to escape the drunk man's clumsy attempts to stab you while negotiating compensation for the damage with the angry woman."
-    "你不得不在躲避那个醉汉笨拙的刺击和与愤怒的女士商量赔偿损失之间艰难地穿梭。"
+    "你不得不在一边躲避那个醉汉笨拙的刺击，一边与愤怒的女士商量赔偿损失。"
 
 # game/BKevents.rpy:4840
 translate schinese contract_MC_event_572c6654:
 
     # "Putting yourself between the man and [girl.name], you stand tall and talk with a commanding voice."
-    "你挡在那个男人和[girl.name]之间,高声以有威慑力的语气进行交谈。"
+    "你挡在那个男人和[girl.name]之间,大声用充满威慑力的语气进行交谈。"
 
 # game/BKevents.rpy:4842
 translate schinese contract_MC_event_5becddd9:
 
     # you "Stop this at once! One more step, and you're a dead man!"
-    you "立即停下!再往前一步,你就完蛋了!"
+    you "立刻停下!再往前一步,我就要了你的狗命!"
 
 # game/BKevents.rpy:4848
 translate schinese contract_MC_event_3910600c:
@@ -4342,7 +4342,7 @@ translate schinese contract_MC_event_2018afb2:
 translate schinese contract_MC_event_c787a11c:
 
     # "Cowed, the man retreats in a corner, stumbling on a sofa. You can soon hear him snoring: danger averted."
-    "被吓得瑟瑟发抖的那人,退到角落里摔进沙发。不一会儿就传来了打鼾声:危险解除了。"
+    "被吓得瑟瑟发抖的醉汉,退到角落里摔进沙发。不一会儿就传来了打鼾声:危险解除了。"
 
 # game/BKevents.rpy:4855
 translate schinese contract_MC_event_5804e4d3:
@@ -4372,7 +4372,7 @@ translate schinese contract_MC_event_e81dfd74:
 translate schinese contract_MC_event_61c27206:
 
     # you "Listen, good men, we can come to an arrangement..."
-    you "听着,各位好人,我们可以达成协议..."
+    you "听着,各位好心人,我们可以和解..."
 
 # game/BKevents.rpy:4865
 translate schinese contract_MC_event_84376eb6:
@@ -4414,13 +4414,13 @@ translate schinese contract_MC_event_733f0558:
 translate schinese contract_MC_event_e24ccaa8:
 
     # con.char "Oh no, the Head Nun... She has been possessed!"
-    con.char "糟了,总修女...她被附身了!"
+    con.char "糟了,修女...她被附身了!"
 
 # game/BKevents.rpy:4899
 translate schinese contract_MC_event_5febeb5d:
 
     # "Unholy light bathes the scene as the head nun stands naked in a trance, singing a psalm in a foreign tongue."
-    "一股邪恶的光芒笼罩了全场,赤身裸体的总修女站在那里,用陌生的语言唱诵着圣咏。"
+    "一股邪恶的光芒笼罩了全场,赤身裸体的修女站在那里,用陌生的语言唱诵着咒语。"
 
 # game/BKevents.rpy:4907
 translate schinese contract_MC_event_43762a61:
@@ -4444,19 +4444,19 @@ translate schinese contract_MC_event_128725f0:
 translate schinese contract_MC_event_c7a56d53:
 
     # "Slicing off the tentacles in your way, you spot a heavy metal chandelier above the eye. You throw a dagger at the rope that holds it."
-    "砍断挡路的触手,你看到头顶有一盏沉重的水晶吊灯。你朝系着它的绳索投掷了一把匕首。"
+    "砍断挡路的触手,你看到头顶有一盏沉重的水晶吊灯。你朝固定吊灯的铁链投掷了一把匕首。"
 
 # game/BKevents.rpy:4941
 translate schinese contract_MC_event_fbdb7ec1:
 
     # "The beast roars with pain as the chandelier hits it square in the eye. The lights flicker, and the tentacles retreat between the cracks in the stone."
-    "怪物痛苦地怒吼,吊灯正中它的眼睛。灯光一闪一闪,触手从石头缝隙中缩了回去。"
+    "怪物痛苦地怒吼,吊灯坠落正中它的眼睛。灯光一闪一闪,触手从石头缝隙中缩了回去。"
 
 # game/BKevents.rpy:4950
 translate schinese contract_MC_event_4a1b3aeb:
 
     # "Before you can reach your goal, a large tentacle hits you sideways, you are flung into the wall and the world becomes dark..."
-    "就在你要达成目标时,一条大触手侧身击中了你,将你抛向了墙壁,世界陷入黑暗..."
+    "就在你要成功时,一条大触手侧身击中了你,将你抛向了墙壁,世界陷入黑暗..."
 
 # game/BKevents.rpy:4957
 translate schinese contract_MC_event_054e9ed3:
@@ -4480,7 +4480,7 @@ translate schinese contract_MC_event_c074fd88:
 translate schinese contract_MC_event_c10602c0:
 
     # you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\nC'm'on, lady, wake up!"
-    you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\n来,女士,醒醒!"
+    you "{font=SFBurlingtonScript.ttf}Nogephaii ahagl ymg', err...{/font}\n醒来,女士,醒醒!"
 
 # game/BKevents.rpy:4976
 translate schinese contract_MC_event_b8f3c672:
@@ -4498,7 +4498,7 @@ translate schinese contract_MC_event_3f8c3f5c:
 translate schinese contract_MC_event_9282cadd:
 
     # con.char "Thank all that is Holy, you have arrived just in time... Something went wrong during the ceremony..."
-    con.char "万能的神保佑,你及时赶到了...仪式出了点问题..."
+    con.char "万能的神保佑,幸好你及时赶到了...仪式出了点问题..."
 
 # game/BKevents.rpy:4987
 translate schinese contract_MC_event_e45e7b81:
@@ -4522,19 +4522,19 @@ translate schinese contract_MC_event_8de5420d:
 translate schinese contract_MC_event_ccf1cf47:
 
     # con.char "Well, she uses juices from her... Ahem, never mind. Just know that it will replenish your strength."
-    con.char "好吧,她用的是她自己的...咳,算了。总之知道它能恢复你的力量就行了。"
+    con.char "好吧,她用的是她自己的...咳,算了。你只要知道它能恢复你的力量就行了。"
 
 # game/BKevents.rpy:5004
 translate schinese contract_MC_event_7413be73:
 
     # "In spite of its doubtful origins, you nevertheless have the girls try the beverage back at the brothel. They actually like it, and receive a boost to their energy and morale."
-    "尽管来源可疑,你还是让姑娘们在青楼里试了试这种饮料。她们居然很喜欢,精神状态和士气都得到了提升。"
+    "尽管来源可疑,你还是让姑娘们在青楼里试了试这种饮料。她们居然给出了高度评价,大家的精神状态和士气都得到了提升。"
 
 # game/BKevents.rpy:5008
 translate schinese contract_MC_event_7124f3dc:
 
     # "When you come back to your senses, the monster roars in pain as the church knights are finally managing to fight it off."
-    "当你清醒过来时,教会的骑士们终于成功打退了那只怪物,它在痛苦中咆哮着。"
+    "当你清醒过来时,教会的骑士们终于成功击退了那只怪物,它在痛苦中咆哮着。"
 
 # game/BKevents.rpy:5010
 translate schinese contract_MC_event_e26292c5:
@@ -4660,7 +4660,7 @@ translate schinese contract_MC_event_01016507:
 translate schinese contract_MC_event_bf6812fc:
 
     # "Little by little, you get closer, and you can feel the animal ease up. After patting it gently on the forehead, you lead it back to its enclosure."
-    "渐渐地,你靠近了它,感觉它也放松了下来。轻轻抚摸它的额头后,你把它引回到它的牢房里。"
+    "渐渐地,你靠近了它,感觉它也放松了下来。轻轻抚摸它的额头后,你把它引回到它的兽栏里。"
 
 # game/BKevents.rpy:5123
 translate schinese contract_MC_event_2dc862f1:
@@ -4702,7 +4702,7 @@ translate schinese contract_MC_event_70f2e916:
 translate schinese contract_MC_event_c78d42ea:
 
     # con.char "You were very brave out there... Here, have this selection of prime food from the fair. It's all delicious!"
-    con.char "你出去真是太勇敢了...这里有从游乐场上精选的美味佳肴,全都非常好吃!"
+    con.char "你能挺身而出真是太勇敢了...这里有从游乐场上精选的美味佳肴,全都非常好吃!"
 
 # game/BKevents.rpy:5151
 translate schinese contract_MC_event_843abbbe:
@@ -4714,7 +4714,7 @@ translate schinese contract_MC_event_843abbbe:
 translate schinese contract_MC_event_55cb7edf:
 
     # "The horny beast easily overpowers the poor girl, ripping her dress apart."
-    "那只兽欲熏心,轻易地压制住了可怜的女孩,撕开了她的衣服。"
+    "那只野兽兽欲熏心,轻易地压制住了可怜的女孩,咬开了她的衣服。"
 
 # game/BKevents.rpy:5160
 translate schinese contract_MC_event_b2987c73:
@@ -4732,7 +4732,7 @@ translate schinese contract_MC_event_8e7c5ef9:
 translate schinese contract_MC_event_468ff89b:
 
     # "Before long, however, [girl.fullname] is moaning with pleasure, unable to control herself. It seems being raped by a beast turns her on..."
-    "但很快,[girl.fullname]就开始呻吟着,流露出快感,无法自制。看来被野兽强奸竟然让她兴奋起来了..."
+    "但很快,[girl.fullname]就开始呻吟,流露出快感,无法自制。看来被野兽强奸竟然让她兴奋起来了..."
 
 # game/BKevents.rpy:5179
 translate schinese contract_MC_event_344785be:
@@ -4762,13 +4762,13 @@ translate schinese contract_MC_event_0c65440f:
 translate schinese contract_MC_event_1b0dc178:
 
     # "The [con.venue] has been infiltrated by a shady thief. As soon as he is spotted, he takes out a dagger and holds [girl.fullname] hostage."
-    "一个可疑的小偷潜入了[con.venue]。一被发现,他立刻掏出了匕首,并将[girl.fullname]作为人质。"
+    "一个可疑的小偷潜入了[con.venue]。被发现后,他掏出了一把匕首,并将[girl.fullname]作为人质。"
 
 # game/BKevents.rpy:5199
 translate schinese contract_MC_event_82ba0670:
 
     # thug3 "Nobody moves, or I'll slit her throat!"
-    thug3 "谁也别动,否则我就割断她的喉咙!"
+    thug3 "全都别动,否则我就割断她的喉咙!"
 
 # game/BKevents.rpy:5201
 translate schinese contract_MC_event_69fb2c06:
@@ -4792,13 +4792,13 @@ translate schinese contract_MC_event_a876a586:
 translate schinese contract_MC_event_d5f894e8:
 
     # "However, the mount resists her unknown rider and is slowed by the weight of two people on its back. Meanwhile, you run like the wind, and soon manage to get side by side with the horse."
-    "不过,那匹马似乎对这个陌生的骑手有些抗拒,加上背负两个人的重量,速度也有所降低。与此同时,你像风一般疾跑,很快就追平了那匹马。"
+    "不过,那匹马似乎对这个陌生的骑手有些抗拒,加上背负两个人的重量,速度也有所降低。与此同时,你像风一般疾跑,很快就追上了那匹马。"
 
 # game/BKevents.rpy:5221
 translate schinese contract_MC_event_db0d8768:
 
     # thug3 "What kind of monster runner are you? Take that, you bastard!"
-    thug3 "你是什么怪物般的跑者?给你这个,混蛋!"
+    thug3 "你是什么怪物吗?接招吧,混蛋!"
 
 # game/BKevents.rpy:5225
 translate schinese contract_MC_event_badf13a8:
@@ -4822,7 +4822,7 @@ translate schinese contract_MC_event_cfa2449a:
 translate schinese contract_MC_event_d3a8cd4f:
 
     # "The mount struggles to pick up pace, and at some point it seems as though you could almost catch up, but the thug spurs it on and soon, it leaves you panting in the dust."
-    "那匹马疲于奔波,一度好像你就快要追上了,但那个小偷又鞭打它,很快就甩开了你,消失在尘土中。"
+    "那匹马疲于奔波,就差一点你就追上了,但那个小偷又鞭打它,很快就甩开了你,消失在尘土中。"
 
 # game/BKevents.rpy:5237
 translate schinese contract_MC_event_ca8fecce:
@@ -4852,31 +4852,31 @@ translate schinese contract_MC_event_ce611873:
 translate schinese contract_MC_event_1683009d:
 
     # thug3 "Why is this animal not moving? Faster, faster!"
-    thug3 "为什么这只动物不动?快点,快点!"
+    thug3 "为什么这头蠢货不动?快点,快点!"
 
 # game/BKevents.rpy:5255
 translate schinese contract_MC_event_c2727e46:
 
     # "As the thug struggles to understand why his mount is standing in place, you leisurely walk up to him and shoot a fireball in his face point blank."
-    "当流氓努力想弄清为什么他的马匹停在原地时,你悠然走到他身边,直接朝他的脸射出一团火球。"
+    "当小偷努力想弄清为什么他的马匹停在原地时,你悠然走到他身边,直接朝他的脸射出一团火球。"
 
 # game/BKevents.rpy:5264
 translate schinese contract_MC_event_f65847b2:
 
     # girl.char "Hey! You almost hit me!"
-    girl.char "嘿!差点打到我!"
+    girl.char "嘿!你差点打到我!"
 
 # game/BKevents.rpy:5266
 translate schinese contract_MC_event_d0273e4d:
 
     # "[girl.name]'s eyebrows are a little burnt, but otherwise she is none the worse for wear."
-    "[girl.name]的眉毛有点烧焦,但其他地方都没事。"
+    "[girl.name]的眉毛烧焦了一点,但其他地方都没事。"
 
 # game/BKevents.rpy:5271
 translate schinese contract_MC_event_708b3b2d:
 
     # "With not enough time to think clearly, you shoot a fireball at the running horse."
-    "没足够的时间清醒思考,你向奔跑的马匹射出一团火球。"
+    "没时间多想了,你向奔跑的马匹射出一团火球。"
 
 # game/BKevents.rpy:5273
 translate schinese contract_MC_event_648d4eb8:
@@ -4900,7 +4900,7 @@ translate schinese contract_MC_event_fd80ea53:
 translate schinese contract_MC_event_16446e8b:
 
     # "Afraid of fire, the horse gallops even faster, carrying [girl.fullname] and her captor away from you. She has been kidnapped!"
-    "害怕火焰,马儿加快奔跑速度,带着[girl.fullname]和她的劫匪远离了你。她被绑架了!"
+    "被火焰吓到,马儿加快了奔跑速度,带着[girl.fullname]和匪徒远离了你。她被绑架了!"
 
 # game/BKevents.rpy:5287
 translate schinese contract_MC_event_d8eb5e20:
@@ -4930,7 +4930,7 @@ translate schinese contract_MC_event_66a7a8fd:
 translate schinese contract_MC_event_539f3465:
 
     # "Angry Noble" "Your position on [con.venue] is unacceptable and an insult to my people! If you refuse to yield, then this means WAR!"
-    "Angry Noble" "你在[con.venue]的立场是不可接受的,这是对我们人民的侮辱!如果你拒绝退让,那就意味着战争!"
+    "愤怒的贵族" "你在[con.venue]上的要求是不可接受的,这是对我们人民的侮辱!如果你拒绝退让,那就开战吧!"
 
 # game/BKevents.rpy:5329
 translate schinese contract_MC_event_64eb1cb8:
@@ -4948,7 +4948,7 @@ translate schinese contract_MC_event_92e7f7de:
 translate schinese contract_MC_event_416ff456:
 
     # you "Ladies and Knights, please hear me out. This meeting has been convened in a spirit of friendship and cooperation. Surely we shall not let a last minute hurdle derail what we took months to build."
-    you "各位女士和骑士,请听我说。这次会议是在友谊与合作的精神下召开的。我们难道会让最后的障碍毁掉我们数月的努力成果吗?"
+    you "各位女士和骑士,请听我说。这次会议是在友谊与合作的精神下召开的。我们难道要让最后的障碍毁掉我们数月的努力成果吗?"
 
 # game/BKevents.rpy:5349
 translate schinese contract_MC_event_afd7d7ce:
@@ -4972,19 +4972,19 @@ translate schinese contract_MC_event_735a82a3:
 translate schinese contract_MC_event_7c6d5d0c:
 
     # "Angry Noble" "WHAT?!? Men! Seize that [MC.playerclass]!"
-    "Angry Noble" "什么?!?士兵们!抓住那个[MC.playerclass]!"
+    "愤怒的贵族" "什么?!?士兵!抓住那个[MC.playerclass]!"
 
 # game/BKevents.rpy:5358
 translate schinese contract_MC_event_79f61590:
 
     # "Rival Noble" "He's right about one thing, you're crazy! How dare you bring armed men in here. Guards!"
-    "Rival Noble" "他说得对你是疯子!你怎么敢带武装人员进来。卫兵!"
+    "Rival 的贵族" "他说得对你是疯子!你怎么能带武装人员进来。卫兵!"
 
 # game/BKevents.rpy:5360
 translate schinese contract_MC_event_00480968:
 
     # "Angry Noble" "So you had hidden men too? You snake!"
-    "Angry Noble" "原来你也隐藏了人手?你个小人!"
+    "愤怒的贵族" "原来你也带了人进来?你这个卑鄙小人!"
 
 # game/BKevents.rpy:5363
 translate schinese contract_MC_event_9462c652:
@@ -5008,7 +5008,7 @@ translate schinese contract_MC_event_a6531882:
 translate schinese contract_MC_event_13967608:
 
     # you "*whispering a secret formula*"
-    you "*神秘地低语公式*"
+    you "*神秘地低语吟唱*"
 
 # game/BKevents.rpy:5376
 translate schinese contract_MC_event_170b9314:
@@ -5020,7 +5020,7 @@ translate schinese contract_MC_event_170b9314:
 translate schinese contract_MC_event_64390db0:
 
     # "Angry Noble" "We will, uh... We will not stand, aaah... This aggression... Mmmh..."
-    "Angry Noble" "我们...我们不会容忍...啊...这种侵略...嗯..."
+    "愤怒的贵族" "我们...我们不会容忍...啊...这种侮辱...嗯..."
 
 # game/BKevents.rpy:5383
 translate schinese contract_MC_event_0fa8b0ca:
@@ -5032,7 +5032,7 @@ translate schinese contract_MC_event_0fa8b0ca:
 translate schinese contract_MC_event_b5ad83bc:
 
     # "Angry Noble" "I can't help it! I'm so horny... Someone fuck me, NOW!"
-    "Angry Noble" "我忍不住了！我好欲求不满...有人快来操我吧!"
+    "愤怒的贵族" "我忍不住了！我好想要...快来个男人操我吧!"
 
 # game/BKevents.rpy:5390
 translate schinese contract_MC_event_84244947:
@@ -5044,7 +5044,7 @@ translate schinese contract_MC_event_84244947:
 translate schinese contract_MC_event_b0b83ee0:
 
     # con.char "Well... That's an unorthodox way of solving conflicts if I ever saw one... But that worked, so... Well done?"
-    con.char "哇...这确实是一种解决纠纷的非常规方式...不过居然管用,所以...干得漂亮?"
+    con.char "哇...这是一种解决纠纷的非常规方式...不过确实很管用,所以...干得漂亮?"
 
 # game/BKevents.rpy:5396
 translate schinese contract_MC_event_7d1e0c8e:
@@ -5062,13 +5062,13 @@ translate schinese contract_MC_event_fc17bcd2:
 translate schinese contract_MC_event_8f6734c9:
 
     # "Angry Noble" "Somebody is trying to use magic in this very room! ASSASSIN! To me, soldiers! ATTAAAACK!!!"
-    "Angry Noble" "有人在这个房间里企图使用魔法!刺客!给我来人!攻击!!"
+    "愤怒的贵族" "有人在这个房间里企图使用魔法!有刺客!给我来人!攻击!!"
 
 # game/BKevents.rpy:5410
 translate schinese contract_MC_event_0455be72:
 
     # con.char "Ladies and Gentlemen... The food is fresh, the hookers are hot, why don't you go back to the negotiations after a good bit of fun?"
-    con.char "女士们先生们...食物新鲜,妓女火辣,何不在享乐后再回到谈判桌上?"
+    con.char "女士们先生们...食物新鲜,女人火辣,何不在享乐后再回到谈判桌上?"
 
 # game/BKevents.rpy:5413
 translate schinese contract_MC_event_f52e760b:
@@ -5086,7 +5086,7 @@ translate schinese contract_MC_event_aa745e08:
 translate schinese contract_MC_event_0e3f6e7f:
 
     # con.char "The crisis is averted, thanks to your quick thinking. You have done us a good turn. [con.organizer] shall not forget this."
-    con.char "多亏了你的反应迅速,危机得以化解。你为我们带来了好运。[con.organizer]不会忘记这一点。"
+    con.char "多亏了你的反应迅速,危机得以化解。你为我们带来了和平。[con.organizer]不会忘记这一点。"
 
 # game/BKevents.rpy:5422
 translate schinese contract_MC_event_5b41f096:
@@ -5098,7 +5098,7 @@ translate schinese contract_MC_event_5b41f096:
 translate schinese contract_MC_event_51b5c348:
 
     # "A big fight erupts, and you barely escape with your life."
-    "爆发了一场大战,你险些丧命。"
+    "这里爆发了一场大战,你险些丧命。"
 
 # game/BKevents.rpy:5431
 translate schinese contract_MC_event_986e6b5f:
@@ -5122,7 +5122,7 @@ translate schinese contract_MC_event_3f4cbee1:
 translate schinese contract_MC_event_52e92e11:
 
     # con.char "Oh no, those two were top of their class in Karkyr... They are extremely competitive..."
-    con.char "哦不,那两个人在卡尔基尔都是顶尖的学生...她们竞争非常激烈..."
+    con.char "哦不,那两个人在卡尔基都是顶尖的学生...她们竞争非常激烈..."
 
 # game/BKevents.rpy:5447
 translate schinese contract_MC_event_20344115:
@@ -5176,7 +5176,7 @@ translate schinese contract_MC_event_d55f51f5:
 translate schinese contract_MC_event_9e653509:
 
     # "Witches" "*together* WHO THE FUCK DARES INTERRUPT OUR FIGHT?!?" with vpunch
-    "Witches" "*一起* 是谁胆敢打断我们的战斗?!?" with vpunch
+    "Witches" "*齐声* 是谁胆敢打断我们的战斗?!?" with vpunch
 
 # game/BKevents.rpy:5486
 translate schinese contract_MC_event_40113a74:
@@ -5188,7 +5188,7 @@ translate schinese contract_MC_event_40113a74:
 translate schinese contract_MC_event_7aee8488:
 
     # "Witches" "*together* MAGIC BACKLASH!!!"
-    "Witches" "*一起* 魔法反噬!!!"
+    "Witches" "*齐声* 魔法反制!!!"
 
 # game/BKevents.rpy:5493
 translate schinese contract_MC_event_1f59a146:
@@ -5206,7 +5206,7 @@ translate schinese contract_MC_event_3119f3e6:
 translate schinese contract_MC_event_06bcf178:
 
     # "Blue witch" "What's with this interruption! Explain yourself."
-    "Blue witch" "这是什么打断!解释清楚。"
+    "蓝女巫" "为什么打断我们!解释清楚。"
 
 # game/BKevents.rpy:5499
 translate schinese contract_MC_event_63e1c2ed:
@@ -5218,25 +5218,25 @@ translate schinese contract_MC_event_63e1c2ed:
 translate schinese contract_MC_event_119ef155:
 
     # "Blue witch" "Are you mad? How could I befriend this slut? She couldn't even summon a minor demon to save her life, but she got ahead at school because she was fucking the Principal..."
-    "Blue witch" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先...."
+    "蓝女巫" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先...."
 
 # game/BKevents.rpy:5505
 translate schinese contract_MC_event_62dff14b:
 
     # "Red witch" "Whaat? And you, you got ahead... By giving head!"
-    "Red witch" "什么?那你呢,你是靠提供特殊服务而得到优势的吧!"
+    "红女巫" "什么?那你呢,你是靠提供特殊服务而得到优势的吧!"
 
 # game/BKevents.rpy:5507
 translate schinese contract_MC_event_9819cd59:
 
     # "Blue witch" "I'll slaughter you!"
-    "Blue witch" "我会杀了你的!"
+    "蓝女巫" "我要杀了你!"
 
 # game/BKevents.rpy:5509
 translate schinese contract_MC_event_16437626:
 
     # "Red witch" "Bring it, fat cow!"
-    "Red witch" "来吧,大肥婆!"
+    "红女巫" "来吧,肥婆!"
 
 # game/BKevents.rpy:5516
 translate schinese contract_MC_event_bbaab597:
@@ -5248,13 +5248,13 @@ translate schinese contract_MC_event_bbaab597:
 translate schinese contract_MC_event_ac23b85e:
 
     # "Blue witch" "Are you calling us... unattractive?"
-    "Blue witch" "你是在说我们...不漂亮吗?"
+    "蓝女巫" "你是在说我们...不漂亮吗?"
 
 # game/BKevents.rpy:5520
 translate schinese contract_MC_event_71945d7a:
 
     # "Red witch" "Yeah, you think we're too ugly to use our charms to get ahead? I {i}was{/i} fucking the Principal, I'll have you know!"
-    "Red witch" "是啊,你觉得我们长得太丑,所以才无法利用自己的魅力获得优势?我{i}就是{/i}跟校长睡觉的!"
+    "红女巫" "是啊,你觉得我们长得太丑,所以才无法利用自己的魅力获得优势?我{i}就是{/i}跟校长睡过!"
 
 # game/BKevents.rpy:5522
 translate schinese contract_MC_event_e8ad3f96:
@@ -5272,25 +5272,25 @@ translate schinese contract_MC_event_74d8d5e3:
 translate schinese contract_MC_event_0e07e557:
 
     # "Blue witch" "Tell us..."
-    "Blue witch" "告诉我们..."
+    "蓝女巫" "那就告诉我们..."
 
 # game/BKevents.rpy:5529
 translate schinese contract_MC_event_8f81fc70:
 
     # "Red witch" "...handsome one..."
-    "Red witch" "...英俊的先生..."
+    "红女巫" "...英俊的先生..."
 
 # game/BKevents.rpy:5531
 translate schinese contract_MC_event_8eae5957:
 
     # "Blue witch" "...which one of us..."
-    "Blue witch" "...在你看来..."
+    "蓝女巫" "...在你看来..."
 
 # game/BKevents.rpy:5533
 translate schinese contract_MC_event_4a81e468:
 
     # "Red witch" "...is the fairest?"
-    "Red witch" "...谁是最美的?"
+    "红女巫" "...谁是最美的?"
 
 # game/BKevents.rpy:5535
 translate schinese contract_MC_event_cdd9076e:
@@ -5302,13 +5302,13 @@ translate schinese contract_MC_event_cdd9076e:
 translate schinese contract_MC_event_8b5e2bae:
 
     # "Blue witch" "C'm'on, simple question!"
-    "Blue witch" "快说嘛,很简单的问题!"
+    "蓝女巫" "快说嘛,很简单的问题!"
 
 # game/BKevents.rpy:5539
 translate schinese contract_MC_event_2c80b816:
 
     # "Red witch" "Which one of us would you like to {b}bone{/b}!"
-    "Red witch" "你想{b}睡{/b}哪个?"
+    "红女巫" "你想{b}睡{/b}哪个?"
 
 # game/BKevents.rpy:5543
 translate schinese contract_MC_event_00409cc8:
@@ -5332,55 +5332,55 @@ translate schinese contract_MC_event_8169b720:
 translate schinese contract_MC_event_840abfa6:
 
     # "Blue witch" "In such a scenario, you would find me far superior!"
-    "Blue witch" "在这种情况下,你会发现我要远胜过你们!"
+    "蓝女巫" "既然你这么说,我会让你知道我比她强百倍!"
 
 # game/BKevents.rpy:5553
 translate schinese contract_MC_event_5d24430e:
 
     # "Red witch" "No way... I would give you the time of your life!"
-    "Red witch" "不可能...我会让你玩个够!"
+    "红女巫" "不可能...我会让你玩个够!"
 
 # game/BKevents.rpy:5555
 translate schinese contract_MC_event_f394583d:
 
     # "Blue witch" "Oh yeah? Bring it!"
-    "Blue witch" "哦是吗?那就来吧!"
+    "蓝女巫" "哦是吗?那就来吧!"
 
 # game/BKevents.rpy:5557
 translate schinese contract_MC_event_5cd3446e:
 
     # "Red witch" "I'll make you eat your words... You, come here!"
-    "Red witch" "我要让你吃下自己的话...你过来!"
+    "红女巫" "我要让你为自己的话后悔...你过来!"
 
 # game/BKevents.rpy:5566
 translate schinese contract_MC_event_8ca35f73:
 
     # "Blue witch" "Oh, aaah..."
-    "Blue witch" "哦,啊..."
+    "蓝女巫" "哦,啊..."
 
 # game/BKevents.rpy:5568
 translate schinese contract_MC_event_a00cf984:
 
     # "Red witch" "Oh yes, oh yes..."
-    "Red witch" "哦是的,哦是的..."
+    "红女巫" "哦是的,哦是的..."
 
 # game/BKevents.rpy:5570
 translate schinese contract_MC_event_0b0544f3:
 
     # "Blue witch" "Keep going... I'm almost..."
-    "Blue witch" "继续...我快..."
+    "蓝女巫" "继续...我快..."
 
 # game/BKevents.rpy:5572
 translate schinese contract_MC_event_536d18fc:
 
     # "Red witch" "Oh, yes, oh, yes, oooh!!!"
-    "Red witch" "哦,是的,哦,是的,哦哦哦!!!"
+    "红女巫" "哦,是的,哦,是的,哦哦哦!!!"
 
 # game/BKevents.rpy:5576
 translate schinese contract_MC_event_0c37367a:
 
     # "Witches" "*together* AAAAAAAH!!!"
-    "Witches" "*一起* 啊啊啊啊啊!!!"
+    "Witches" "*齐声* 啊啊啊啊啊!!!"
 
 # game/BKevents.rpy:5584
 translate schinese contract_MC_event_95d1b380:
@@ -5392,19 +5392,19 @@ translate schinese contract_MC_event_95d1b380:
 translate schinese contract_MC_event_f8a33027:
 
     # "Blue witch" "Well, uh... Who... Who won?"
-    "Blue witch" "哦,呃...那么,谁...谁赢了?"
+    "蓝女巫" "哦,呃...那么,谁...谁赢了?"
 
 # game/BKevents.rpy:5588
 translate schinese contract_MC_event_c796d623:
 
     # "Red witch" "It's, aah... It's a draw..."
-    "Red witch" "是,啊...是平手..."
+    "红女巫" "是,啊...是平手..."
 
 # game/BKevents.rpy:5590
 translate schinese contract_MC_event_bb1f783e:
 
     # "Blue witch" "No way..."
-    "Blue witch" "不可能..."
+    "蓝女巫" "不可能..."
 
 # game/BKevents.rpy:5592
 translate schinese contract_MC_event_99f027b8:
@@ -5416,25 +5416,25 @@ translate schinese contract_MC_event_99f027b8:
 translate schinese contract_MC_event_0142d2aa:
 
     # "Blue witch" "So that's why you interrupted our fight... Only a horny idiot that doesn't value his life could have done that... *thoughtful*"
-    "Blue witch" "原来如此,所以你才打断我们的战斗...只有傻子才会做出这种危险的事情... *思考中*"
+    "蓝女巫" "原来如此,所以你才打断我们的战斗...只有傻子才会做出这种危险的事情... *思考中*"
 
 # game/BKevents.rpy:5598
 translate schinese contract_MC_event_2132bcd3:
 
     # "Red witch" "Well, it is true that I wouldn't want to get a scar on my cute face... I just spent a week at the spa to get my skin smoother..."
-    "Red witch" "的确,我可不想在我那可爱的脸上留下伤疤...我刚刚在水疗中心花了一周时间让皮肤变得更滑顺..."
+    "红女巫" "的确,我可不想在我那可爱的脸上留下伤疤...我刚刚在水疗中心花了一周时间让皮肤变得更滑顺..."
 
 # game/BKevents.rpy:5600
 translate schinese contract_MC_event_7ceb305a:
 
     # "Blue witch" "Stranger, it just occurred to me that I am too good to waste my time fighting with half-wits or entertaining stupid interruptions by the general public. I'm leaving this dumb summit."
-    "Blue witch" "陌生人,我突然发现我实在是太好了,不应该浪费时间和白痴们战斗或接受普通大众的愚蠢打扰。我要离开这个愚蠢的会场了。"
+    "蓝女巫" "陌生人,我突然发现我实在是太好了,不应该浪费时间和白痴们战斗或接受普通大众的愚蠢打扰。我要离开这个愚蠢的会场了。"
 
 # game/BKevents.rpy:5602
 translate schinese contract_MC_event_ae2763a7:
 
     # "Red witch" "And {i}I{/i} just realized I had a priority appointment for a manicure. This is a much better use of my day than lowering myself to fight with the mentally-ill. I'm out!"
-    "Red witch" "而{i}我{/i}刚刚意识到我还有一个紧急的美甲预约。这比屈尊与精神有问题的人战斗要好得多。我走了!"
+    "红女巫" "而{i}我{/i}刚刚意识到我还有一个紧急的美甲预约。这比屈尊与精神有问题的人战斗要好得多。我得走了!"
 
 # game/BKevents.rpy:5604
 translate schinese contract_MC_event_6ce9e5a0:
@@ -5464,19 +5464,19 @@ translate schinese contract_MC_event_0ae2b47f:
 translate schinese contract_MC_event_2452d4ce:
 
     # "Blue witch" "Now..."
-    "Blue witch" "现在..."
+    "蓝女巫" "现在..."
 
 # game/BKevents.rpy:5615
 translate schinese contract_MC_event_d6052b0b:
 
     # "Red witch" "...you..."
-    "Red witch" "...你..."
+    "红女巫" "...你..."
 
 # game/BKevents.rpy:5617
 translate schinese contract_MC_event_429abe1c:
 
     # "Blue witch" "DIE!!!" with vpunch
-    "Blue witch" "去死!!!" with vpunch
+    "蓝女巫" "去死!!!" with vpunch
 
 # game/BKevents.rpy:5622
 translate schinese contract_MC_event_a5de4690:

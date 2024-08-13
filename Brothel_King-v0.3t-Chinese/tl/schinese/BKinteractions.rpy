@@ -5350,13 +5350,13 @@ translate schinese slave_story6_adb6bbb8:
 translate schinese slave_story6_948a280f:
 
     # girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
-    girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
+    girl.char "是的... 我的父亲曾是[girl.origin]的一位贵族, 在克塞罗斯很有名气，在宫廷里也很有影响力..."
 
 # game/BKinteractions.rpy:4886
 translate schinese slave_story6_9464a26a:
 
     # you "Really... You didn't look that well-off when I met you..."
-    you "真的....我见到你的时候，你看起来并不富裕...."
+    you "真的吗....我见到你的时候，你看起来并不富裕...."
 
 # game/BKinteractions.rpy:4887
 translate schinese slave_story6_41464af2:
@@ -5386,7 +5386,7 @@ translate schinese slave_story6_09824579:
 translate schinese slave_story6_9316a048:
 
     # you "Quite a long way from being a sex slave in [district.name]..."
-    you "Quite a long way from being a sex slave in [district.name]..."
+    you "确实和现在在[district.name]当性奴隶是天壤之别..."
 
 # game/BKinteractions.rpy:4899
 translate schinese slave_story6_8235cf51:
@@ -6634,7 +6634,7 @@ translate schinese slave_story7_5999b59f:
 translate schinese slave_story7_0bc7db9d:
 
     # "She laughs."
-    "She laughs."
+    "她笑了笑"
 
 # game/BKinteractions.rpy:5301
 translate schinese slave_story7_42b3ed1b:
@@ -6646,7 +6646,7 @@ translate schinese slave_story7_42b3ed1b:
 translate schinese slave_story7_1002acf4:
 
     # you "Yes... By the way, you didn't finish your story the other day... About how you got mixed up with the Arios church and their Templars?"
-    you "Yes... By the way, you didn't finish your story the other day... About how you got mixed up with the Arios church and their Templars?"
+    you "是的...对了，那天你的故事还没讲完...你是怎么跟太阳神教会和他们的圣殿骑士混在一起的?"
 
 # game/BKinteractions.rpy:5305
 translate schinese slave_story7_a0560252:
@@ -6658,13 +6658,13 @@ translate schinese slave_story7_a0560252:
 translate schinese slave_story7_82cae9fe:
 
     # girl.char "I didn't know what the Templars were at that time, you see. And I certainly had never heard anything about the newly founded Arios inquisition..."
-    girl.char "I didn't know what the Templars were at that time, you see. And I certainly had never heard anything about the newly founded Arios inquisition..."
+    girl.char "你知道，那时我还不知道圣殿骑士是什么。当然，我也从来没有听说过新成立的太阳神裁判所..."
 
 # game/BKinteractions.rpy:5309
 translate schinese slave_story7_5e4f0ad3:
 
     # girl.char "That man I saw that night, leading the Templars, he was one of them."
-    girl.char "That man I saw that night, leading the Templars, he was one of them."
+    girl.char "那晚我看到的那个人，领导着圣殿骑士，他是他们中的一员。"
 
 # game/BKinteractions.rpy:5311
 translate schinese slave_story7_ae9fe7b9:
@@ -6676,7 +6676,7 @@ translate schinese slave_story7_ae9fe7b9:
 translate schinese slave_story7_2c062cc8:
 
     # girl.char "After the Templars arrived, me and my [girl.story_guardian] were taken separately for 'questioning'..."
-    girl.char "After the Templars arrived, me and my [girl.story_guardian] were taken separately for 'questioning'..."
+    girl.char "在圣殿骑士到达之后,我和我的[girl.story_guardian]被单独带走“审问”..."
 
 # game/BKinteractions.rpy:5315
 translate schinese slave_story7_a637278f:
@@ -6694,7 +6694,7 @@ translate schinese slave_story7_0da899ba:
 translate schinese slave_story7_6a65e8ef:
 
     # girl.char "At first, they didn't even bother to ask me any question. Grim-faced Templars would come and go and torture me. Some were naturally sadistic, others were acting like it was just a job to them. I hated them all."
-    girl.char "At first, they didn't even bother to ask me any question. Grim-faced Templars would come and go and torture me. Some were naturally sadistic, others were acting like it was just a job to them. I hated them all."
+    girl.char "起初，他们甚至懒得问我任何问题。面色阴沉的圣殿骑士来来去去折磨我。有些人天生就是虐待狂，有些人表现得好像这只是他们的一份工作。我讨厌他们所有人。"
 
 # game/BKinteractions.rpy:5323
 translate schinese slave_story7_471f2d57:
@@ -6742,7 +6742,7 @@ translate schinese slave_story7_f5016a75:
 translate schinese slave_story7_a577ad0e:
 
     # you "What?"
-    you "What?"
+    you "什么?"
 
 # game/BKinteractions.rpy:5339
 translate schinese slave_story7_b06416d9:
@@ -6766,7 +6766,7 @@ translate schinese slave_story7_96381874:
 translate schinese slave_story7_9db9ba3b:
 
     # girl.char "I got a knot in my stomach, I knew something wasn't right."
-    girl.char "I got a knot in my stomach, I knew something wasn't right."
+    girl.char "我的胃里打结，我知道有些事情不对劲。"
 
 # game/BKinteractions.rpy:5347
 translate schinese slave_story7_cbd0f186:
@@ -6790,7 +6790,7 @@ translate schinese slave_story7_4aa6b02e:
 translate schinese slave_story7_3e26844e:
 
     # you "Oh..."
-    you "Oh..."
+    you "哦..."
 
 # game/BKinteractions.rpy:5355
 translate schinese slave_story7_3ddc8cdf:
@@ -6844,7 +6844,7 @@ translate schinese slave_story7_dae0ec55:
 translate schinese slave_story7_7c4fc8eb:
 
     # girl.char "So I did everything they asked of me. I renounced my god, I accused my [girl.story_guardian] of corruption and evil-doing, I confessed to everything they wanted me to."
-    girl.char "So I did everything they asked of me. I renounced my god, I accused my [girl.story_guardian] of corruption and evil-doing, I confessed to everything they wanted me to."
+    girl.char "所以我照他们说的做了。我对天发誓,我指责我的[girl.story_guardian]。腐败和邪恶，我承认了他们要我做的一切。"
 
 # game/BKinteractions.rpy:5374
 translate schinese slave_story7_20bbbcff:
@@ -6898,7 +6898,7 @@ translate schinese slave_story7_fb58656f:
 translate schinese slave_story7_31fe1d97:
 
     # you "Wow."
-    you "Wow."
+    you "哇哦。"
 
 # game/BKinteractions.rpy:5394
 translate schinese slave_story7_7f56e9cc:
@@ -6934,7 +6934,7 @@ translate schinese slave_story7_ccdb8237:
 translate schinese slave_story7_725f7aa8:
 
     # girl.char "You know what the strangest thing is... For days, I was treated worse than dirt by the Templars, they trashed my mind and body..."
-    girl.char "You know what the strangest thing is... For days, I was treated worse than dirt by the Templars, they trashed my mind and body..."
+    girl.char "你知道最奇怪的是什么吗?几天来，我被圣殿骑士对待得像粪土一样糟糕，他们摧残了我的身心..."
 
 # game/BKinteractions.rpy:5409
 translate schinese slave_story7_9bd80317:
@@ -6988,7 +6988,7 @@ translate schinese slave_story7_cab555c2:
 translate schinese slave_story7_79e11c3d:
 
     # girl.char "When you're branded a heretic, they throw the charred bones in a ditch... I saw it happen."
-    girl.char "When you're branded a heretic, they throw the charred bones in a ditch... I saw it happen."
+    girl.char "当你被贴上异端的标签时，他们会把烧焦的骨头扔进沟里...我亲眼所见。"
 
 # game/BKinteractions.rpy:5424
 translate schinese slave_story7_95570996:
@@ -7042,31 +7042,31 @@ translate schinese slave_story7_3e80261e:
 translate schinese slave_story7_5d63e99d_1:
 
     # girl.char "I have given up all my hopes and dreams. But you know what I truly regret?"
-    girl.char "I have given up all my hopes and dreams. But you know what I truly regret?"
+    girl.char "我已经放弃了所有的希望和梦想。但你知道我真正后悔的是什么吗?"
 
 # game/BKinteractions.rpy:5449
 translate schinese slave_story7_e55dd4cb_1:
 
     # girl.char "The more I think about it, the more it makes sense... I'm a bitch and a terrible person. I need to be punished..."
-    girl.char "The more I think about it, the more it makes sense... I'm a bitch and a terrible person. I need to be punished..."
+    girl.char "我越想越觉得有道理。我是个婊子，是个糟糕的人。我需要被惩罚..."
 
 # game/BKinteractions.rpy:5453
 translate schinese slave_story7_c23afdf8_1:
 
     # girl.char "I have been thinking of setting up an altar here. I will need some ingredients from the forest. Something to keep me occupied..."
-    girl.char "I have been thinking of setting up an altar here. I will need some ingredients from the forest. Something to keep me occupied..."
+    girl.char "我一直想在这里建一个圣坛。我需要一些森林里的食材。让我有事可做..."
 
 # game/BKinteractions.rpy:5454
 translate schinese slave_story7_dfd8f187_1:
 
     # girl.char "Maybe if I succeed, my god will forgive me, and turn his light back on me?"
-    girl.char "Maybe if I succeed, my god will forgive me, and turn his light back on me?"
+    girl.char "也许如果我成功了，我的上帝会原谅我，把他的光重新照在我身上?"
 
 # game/BKinteractions.rpy:5458
 translate schinese slave_story7_6d082254_1:
 
     # girl.char "I wish I could give my [girl.story_guardian] a real burial... Set our souls at peace."
-    girl.char "I wish I could give my [girl.story_guardian] a real burial... Set our souls at peace."
+    girl.char "我真想为我的[girl.story_guardian]举办一场正式的葬礼..让灵魂得到安息。"
 
 # game/BKinteractions.rpy:5462
 translate schinese slave_story7_fc70dd70:
@@ -7078,7 +7078,7 @@ translate schinese slave_story7_fc70dd70:
 translate schinese slave_story7_3e80261e_1:
 
     # girl.char "I don't want to pretend to believe in anything. Not with you, not with the girls, not with the customers..."
-    girl.char "I don't want to pretend to believe in anything. Not with you, not with the girls, not with the customers..."
+    girl.char "我不想假装相信任何事。不是和你，不是和女孩，不是和顾客..."
 
 # game/BKinteractions.rpy:5476
 translate schinese slave_story8_726bca15:
@@ -7216,7 +7216,7 @@ translate schinese slave_story8_54072934:
 translate schinese slave_story8_0bc7db9d:
 
     # "She laughs."
-    "She laughs."
+    "她笑了笑。"
 
 # game/BKinteractions.rpy:5525
 translate schinese slave_story8_48c07f22:
@@ -7900,7 +7900,7 @@ translate schinese slave_story8_f0c7f23f:
 translate schinese slave_story8_33c6fd3a:
 
     # you "Tell me."
-    you "Tell me."
+    you "告诉我。"
 
 # game/BKinteractions.rpy:5794
 translate schinese slave_story8_2ddc3804:

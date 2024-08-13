@@ -3595,7 +3595,7 @@ init python:
                                   ),
                           Contract(type="party", district="The Cathedra", archetypes = ["The Maid", "The Slut"],
                                    names=["刺激的派对", "彻夜不眠的教堂", "无遮大会", "不眠不休", "21点和幸运女郎", "伙计，我的马车呢？"],
-                                   organizers=["一位外国贵宾", "富有的贵族子弟", "公会的下属协会", "卡尔基尔高等法师访客", "国王的亲信", "富有的青楼老板", "兰尼斯特家族"],
+                                   organizers=["一位外国贵宾", "富有的贵族子弟", "公会的下属协会", "卡尔基高等法师访客", "国王的亲信", "富有的青楼老板", "兰尼斯特家族"],
                                    venues=["废弃的教堂", "知名的歌舞伎町", "华美的公馆", "肮脏的酒馆", "地下赌场"],
                                    character=party_girl,
                                    MC_event_pic="events/violent2.webp",
