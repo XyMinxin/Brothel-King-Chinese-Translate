@@ -361,6 +361,18 @@ translate schinese strings:
     old "                 Work/whore : "
     new "                 勾引客人 : "
 
+    old "No license"
+    new "无需执照"
+
+    old "Pimp license"
+    new "皮条客执照"
+
+    old "Whoremonger license"
+    new "妓女贩执照"
+    
+    old "Brothelmaster license"
+    new "青楼主执照"
+
     # game/BKscreens.rpy:3578
     old "\nrequired"
     new "\n要求"
@@ -626,7 +638,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6948
     old "Player "
-    new "玩家 "
+    new "玩家"
 
     # game/BKscreens.rpy:6949
     old "Active bonus: "

@@ -4,7 +4,8 @@
 translate schinese city_rape_28dc46b8:
 
     # "Making your way through the [loc], you suddenly hear something."
-    "在你路过[loc]的时候，你突然听到了一些奇怪的动静。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "在你路过[loc_cn]的时候，你突然听到了一些奇怪的动静。"
 
 # game/BKcity_events.rpy:24
 translate schinese city_rape_795cacf6:
@@ -418,7 +419,8 @@ translate schinese city_monster_menu_a9baabcd:
 translate schinese city_impress_daff885e:
 
     # "Walking through the [loc], you run into a party of women adventurers."
-    "经过[loc]时，你遇到了一群穿着性感的女冒险家。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "经过[loc_cn]时，你遇到了一群穿着性感的女冒险家。"
 
 # game/BKcity_events.rpy:446
 translate schinese city_impress_2ac65c34:
@@ -814,7 +816,8 @@ translate schinese city_impress_c55b17d5:
 translate schinese city_impress_a8fab31f:
 
     # "Before you have a chance to express agreement or disagreement, the woman shoves her clothing to the side and proceeds to milk you for all you're worth, right here in the [loc]."
-    "在你有机会表达意见前，女人把她的上衣扯开露出饱满的胸部，然后用胸部夹住你的老二，就在[loc]的角落里为你乳交。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "在你有机会表达意见前，女人把她的上衣扯开露出饱满的胸部，然后用胸部夹住你的老二，就在[loc_cn]的角落里为你乳交。"
 
 # game/BKcity_events.rpy:725
 translate schinese city_impress_58e8061b:
@@ -988,7 +991,8 @@ translate schinese city_impress_28cac617:
 translate schinese city_slave_98472443:
 
     # "Wandering around the [loc], you hear a familiar voice."
-    "漫步在[loc]，你听到一个熟悉的声音。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "漫步在[loc_cn]，你听到一个熟悉的声音。"
 
 # game/BKcity_events.rpy:900
 translate schinese city_slave_41f096b7:
@@ -1000,7 +1004,8 @@ translate schinese city_slave_41f096b7:
 translate schinese city_slave_d5c1bdf2:
 
     # you "Hey, you're the trainer from the slave market! What are you doing at the [loc]?"
-    you "嘿，你不是奴隶市场的调教师吗？你在[loc]做什么？"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    you "嘿，你不是奴隶市场的调教师吗？你在[loc_cn]做什么？"
 
 # game/BKcity_events.rpy:904
 translate schinese city_slave_ec6a122a:
@@ -1726,8 +1731,8 @@ translate schinese city_slave_34169bac:
 translate schinese city_slave_51a349cb:
 
     # "You have earned prestige. Some of your girls have increased their [act] stat."
-    $ cntext = tl_cn(act, girl_related_dict)
-    "你获得了一些声望。你的一些女孩提高了他们的[cntext]。"
+    $ act_cn = tl_cn(act.capitalize(), girl_related_dict)
+    "你获得了一些声望。你的一些女孩提高了他们的[act_cn]。"
 
 # game/BKcity_events.rpy:1407
 translate schinese city_slave_50201891:
@@ -1829,7 +1834,8 @@ translate schinese city_slave_c271f3ee:
 translate schinese city_gamble_7d17a49f:
 
     # "You are strolling around the [loc], daydreaming, when you hear someone call out to you."
-    "你正漫步在[loc]，路过一家赌坊时，你听到有人在喊你。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你正漫步在[loc_cn]，路过一家赌坊时，你听到有人在喊你。"
 
 # game/BKcity_events.rpy:1533
 translate schinese city_gamble_8d2c768a:
@@ -2357,7 +2363,8 @@ translate schinese city_gamble_dba13d1b:
 translate schinese city_thief_b71bafed:
 
     # "As you pass a group of people near the [loc], you suddenly hear a scream."
-    "当你穿过[loc]的人群时，你突然听到一声尖叫。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "当你穿过[loc_cn]的人群时，你突然听到一声尖叫。"
 
 # game/BKcity_events.rpy:1907
 translate schinese city_thief_280c7553:
@@ -2549,13 +2556,15 @@ translate schinese city_thief_a2a181ca:
 translate schinese city_thief_981f219b:
 
     # "You shrug and step back towards the [loc], the sound of the woman's distraught cries echoing in your ears."
-    "你耸了耸肩，继续朝着[loc]走去，那个女人悲痛欲绝的哭声在你耳边回荡。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你耸了耸肩，继续朝着[loc_cn]走去，那个女人悲痛欲绝的哭声在你耳边回荡。"
 
 # game/BKcity_events.rpy:2055
 translate schinese city_wrestle_72ab9f57:
 
     # "You meet a group of sellswords sitting around a few tables, in a dodgy corner of the [loc]."
-    "你感到口渴，于是走进了[loc]的一家酒馆里打算点上一杯麦芽酒。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你感到口渴，于是走进了[loc_cn]的一家酒馆里打算点上一杯麦芽酒。"
 
 # game/BKcity_events.rpy:2073
 translate schinese city_wrestle_c22c192b:
@@ -2795,7 +2804,8 @@ translate schinese city_wrestle_fb565e36:
 translate schinese city_wrestle_a6a9279d:
 
     # "The mercenaries scoff and jeer, calling you a coward and all sorts of unpleasant names as you pitifully make your way back to [dis]."
-    "冒险者们嘲笑你，嘲笑你是个懦夫，在你回[dis]的路上，他们用各种令人不快的名字辱骂你。"
+    $ dis_cn = tl_cn(dis.capitalize(), location_name_dict)
+    "冒险者们嘲笑你，嘲笑你是个懦夫，在你回[dis_cn]的路上，他们用各种令人不快的名字辱骂你。"
 
 # game/BKcity_events.rpy:2230
 translate schinese city_wrestle_5a884e0e:
@@ -2837,7 +2847,8 @@ translate schinese city_wrestle_04964a88:
 translate schinese city_cat_8af25751:
 
     # "While walking around the [loc], minding your own business, you hear a young woman call you."
-    "当你在[loc]散步时，一位美丽的女士焦急地拽住你的手。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "当你在[loc_cn]散步时，一位美丽的女士焦急地拽住你的手。"
 
 # game/BKcity_events.rpy:2299
 translate schinese city_cat_ea6e8d15:
@@ -3557,13 +3568,15 @@ translate schinese city_cat_c271f3ee:
 translate schinese city_cat_9ae56eb3:
 
     # "Sighing, you walk back towards the [loc], cursing the unfathomable stupidity of furry animals."
-    "你叹了口气，走回[loc]，咒骂着愚蠢的毛茸茸的动物。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你叹了口气，走回[loc_cn]，咒骂着愚蠢的毛茸茸的动物。"
 
 # game/BKcity_events.rpy:2837
 translate schinese city_secret_7a223c83:
 
     # "As you turn into an alley near the [loc], you notice a shady figure standing in a dark corner."
-    "当你拐进[loc]附近的小巷时，你发现黑暗的角落里有一个鬼鬼祟祟的人。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "当你拐进[loc_cn]附近的小巷时，你发现黑暗的角落里有一个鬼鬼祟祟的人。"
 
 # game/BKcity_events.rpy:2855
 translate schinese city_secret_2d86ee51:
@@ -3821,19 +3834,21 @@ translate schinese city_secret_ecda54b4:
 translate schinese city_secret_6a0019cd_1:
 
     # "You have received [item_name]."
-    "你得到了 [item_name]。"
+    "你得到了[item_name]。"
 
 # game/BKcity_events.rpy:3064
 translate schinese city_secret_e9413567:
 
     # "There's nothing more you can do. Grumbling, you head back towards the [loc]."
-    "你拿这扇暗门毫无办法。对着墙上踹了一脚，你回到了[loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你拿这扇暗门毫无办法。对着墙上踹了一脚，你回到了[loc_cn]。"
 
 # game/BKcity_events.rpy:3079
 translate schinese city_gypsy_133717b4:
 
     # "Strolling around the [loc], you meet a lone girl in exotic clothes, with a worried look on her face."
-    "漫步在[loc]，你看到一个独自一人的女孩，她穿着异国情调的服饰，面色愁容，乌云密布。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "漫步在[loc_cn]，你看到一个独自一人的女孩，她穿着异国情调的服饰，面色愁容，乌云密布。"
 
 # game/BKcity_events.rpy:3122
 translate schinese city_gypsy_81b477d7:
@@ -4043,7 +4058,8 @@ translate schinese city_gypsy_149b5791:
 translate schinese city_gypsy_85f3ffa9:
 
     # "You walk back to the main street near the [loc], and start telling people about the fortune teller."
-    "你来到靠近[loc]的街道上，四处宣传，给人们介绍占卜师。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你来到靠近[loc_cn]的街道上，四处宣传，给人们介绍占卜师。"
 
 # game/BKcity_events.rpy:3239
 translate schinese city_gypsy_f111166d:
@@ -4199,7 +4215,8 @@ translate schinese city_gypsy_ba785b70:
 translate schinese city_gypsy_930f560c:
 
     # "You go back to the [loc]."
-    "你回到[loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你回到[loc_cn]。"
 
 # game/BKcity_events.rpy:3343
 translate schinese city_gypsy_60b73731:
@@ -4337,7 +4354,8 @@ translate schinese city_gypsy_30be676f:
 translate schinese city_rob_22642a73:
 
     # "As you pass through one of the [loc]'s less reputable parts, you see a woman barring your way."
-    "当你经过[loc]的一个不太出名的地方时，你看到一个女人挡住了你的去路。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "当你经过[loc_cn]的一个不太出名的地方时，你看到一个女人挡住了你的去路。"
 
 # game/BKcity_events.rpy:3499
 translate schinese city_rob_ee0d4625:
@@ -4481,7 +4499,8 @@ translate schinese city_rob_39b396c2:
 translate schinese city_rob_efb96f01:
 
     # "You push past her and make your way back to the [loc]."
-    "你从她身边挤过去，然后回到[loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你从她身边挤过去，然后回到[loc_cn]。"
 
 # game/BKcity_events.rpy:3608
 translate schinese city_rob_2da2f8a4:
@@ -4703,7 +4722,8 @@ translate schinese city_rob_69cf745b:
 translate schinese city_rob_f02a6c95:
 
     # "You head back to the [loc] without incident."
-    "你平安地回到了 [loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你平安地回到了[loc_cn]。"
 
 # game/BKcity_events.rpy:3750
 translate schinese city_rob_3c8f2fe4:
@@ -4733,7 +4753,8 @@ translate schinese city_rob_88cdb07c:
 translate schinese city_rob_24965e94:
 
     # you "I haven't seen a girl so fair in this entire kingdom. My lady, you're the jewel of the [loc]."
-    you "我在这个国家从没见过像你这么漂亮的姑娘。我的小姐，你是 [loc] 的不可多得的宝石。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    you "我在这个国家从没见过像你这么漂亮的姑娘。我的小姐，你是[loc_cn]里不可多得的宝石。"
 
 # game/BKcity_events.rpy:3766
 translate schinese city_rob_3ae8a6e1:
@@ -4799,7 +4820,8 @@ translate schinese city_rob_5a0ab639:
 translate schinese city_rob_13cec699:
 
     # "Eventually, she smiles and sheathes her weapon. She takes your arm and you lead her away from the [loc]."
-    "最后，她笑了笑，收起武器。她挽着你的胳膊，你和她离开了 [loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "最后，她笑了笑，收起武器。她挽着你的胳膊，你和她离开了[loc_cn]。"
 
 # game/BKcity_events.rpy:3803
 translate schinese city_rob_e25d6411:
@@ -4907,7 +4929,8 @@ translate schinese city_rob_a9baabcd_1:
 translate schinese city_ambush_e2c1b18e:
 
     # "Walking through the [loc] looking for a shortcut, you suddenly get a sinking feeling in your stomach."
-    "当你走在[loc]的路上时，你突然感到一阵寒意。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "当你走在[loc_cn]的路上时，你突然感到一阵寒意。"
 
 # game/BKcity_events.rpy:3924
 translate schinese city_ambush_334cf4ff:
@@ -4967,7 +4990,8 @@ translate schinese city_ambush_608c2c15:
 translate schinese city_ambush_7e9b4a3d:
 
     # "You escape unscathed and reach the relative safety of the [loc]."
-    "你毫发无损地逃脱了，到达了相对安全的[loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你毫发无损地逃脱了，到达了相对安全的[loc_cn]。"
 
 # game/BKcity_events.rpy:4018
 translate schinese city_ambush_9bb797a1:
@@ -5063,7 +5087,8 @@ translate schinese city_ambush_1f90cc0b:
 translate schinese city_ambush_dc842bb3:
 
     # "You return to the [loc] without further incident."
-    "您返回 [loc] 时没有发生其他事件。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "您返回 [loc_cn] 时没有发生其他事件。"
 
 # game/BKcity_events.rpy:4120
 translate schinese city_ambush_06fdb63b:
@@ -5213,7 +5238,8 @@ translate schinese city_ambush_04964a88:
 translate schinese city_mob_533141a1:
 
     # "After an uneventful visit to the [loc], you find a large mob barring the road on your way back."
-    "在[loc]度过了一段无趣的时光之后，你发现一群人正在游行示威。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "在[loc_cn]度过了一段无趣的时光之后，你发现一群人正在游行示威。"
 
 # game/BKcity_events.rpy:4276
 translate schinese city_mob_cd39c36d:
@@ -5483,7 +5509,8 @@ translate schinese city_mob_00a55a35:
 translate schinese city_mob_56f56aa2:
 
     # "The man is unable to restore order. He gives you a murderous look. You wink at him and elbow your way out of the crowd, safely retreating towards the [loc]."
-    "他试图恢复秩序但这毫无作用。他恶狠狠地看了你一眼。你向他咧嘴，朝外挤出人群，安全地离开了[loc]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "他试图恢复秩序但这毫无作用。他恶狠狠地看了你一眼。你向他咧嘴，朝外挤出人群，安全地离开了[loc_cn]。"
 
 # game/BKcity_events.rpy:4434
 translate schinese city_mob_04964a88:
@@ -5513,7 +5540,8 @@ translate schinese city_mob_8874c0e7:
 translate schinese city_mob_ce040dd1:
 
     # "You retreat to the safety of the [loc]."
-    "你逃跑到[loc]的安全地带。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "你逃跑到[loc_cn]的安全地带。"
 
 # game/BKcity_events.rpy:4490
 translate schinese city_mob_a20e77e1:
@@ -5579,7 +5607,8 @@ translate schinese city_none_e589ac84:
 translate schinese city_gossip_c4c8a8d4:
 
     # "On your way through the [loc], you overhear [text1] from [actor]."
-    "在前往[loc]的路上，你无意中从[actor]听到[text1]。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "在前往[loc_cn]的路上，你无意中从[actor]听到[text1]。"
 
 # game/BKcity_events.rpy:4607
 translate schinese city_gossip_5b578f55:
@@ -5591,7 +5620,8 @@ translate schinese city_gossip_5b578f55:
 translate schinese city_luck_7fab135b:
 
     # "Strolling around the [loc], you notice something shiny on the ground."
-    "漫步在[loc]，你会注意到地上有什么东西闪闪发光。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    "漫步在[loc_cn]，你会注意到地上有什么东西闪闪发光。"
 
 # game/BKcity_events.rpy:4619
 translate schinese city_luck_6eae37c9:
@@ -5669,7 +5699,9 @@ translate schinese city_luck_d5448762:
 translate schinese slave_beach_event_f54a88e7:
 
     # "By the [loc] is a long stretch of white sand where the people of [dis] come to relax. As you pass by, you spot a familiar sight."
-    "[loc]旁有一片长长的白沙滩，[dis]的人们在这里放松。当你漫步在沙滩上时，你看到了一个熟悉的背影。"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    $ dis_cn = tl_cn(dis.capitalize(), location_name_dict)
+    "[loc_cn]旁有一片长长的白沙滩，[dis_cn]的人们在这里放松。当你漫步在沙滩上时，你看到了一个熟悉的背影。"
 
 # game/BKcity_events.rpy:4708
 translate schinese slave_beach_event_d8076f8d:
@@ -6461,7 +6493,8 @@ translate schinese slave_beach_event_5d3c6149:
 translate schinese slave_beach_event_9dfc76af:
 
     # you "Ladies and Gentlemen, I mean, mostly you Gentlemen, why don't you come and sample one of the best produce of [brothel.name], brought to you right here at the [loc]?"
-    you "女士们先生们，我的意思是，先生们，你们为什么不在 [loc] 试试 [brothel.name] 中最受人欢迎的解暑甜品？"
+    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    you "女士们先生们，我的意思是，先生们，你们为什么不在[loc_cn]试试 [brothel.name] 中最受人欢迎的解暑甜品？"
 
 # game/BKcity_events.rpy:5395
 translate schinese slave_beach_event_c42686a9:
