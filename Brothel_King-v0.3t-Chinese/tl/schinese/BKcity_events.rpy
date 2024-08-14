@@ -419,7 +419,7 @@ translate schinese city_monster_menu_a9baabcd:
 translate schinese city_impress_daff885e:
 
     # "Walking through the [loc], you run into a party of women adventurers."
-    $ loc_cn = tl_cn(loc.capitalize(), location_name_dict)
+    $ loc_cn = tl_cn(capitalize(loc), location_name_dict)
     "经过[loc_cn]时，你遇到了一群穿着性感的女冒险家。"
 
 # game/BKcity_events.rpy:446

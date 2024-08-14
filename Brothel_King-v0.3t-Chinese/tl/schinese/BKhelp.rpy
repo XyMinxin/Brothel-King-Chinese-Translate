@@ -604,7 +604,7 @@ translate schinese help_whores_a3048321:
 translate schinese help_whores_4a609ba6:
 
     # sill sad "But some brothel masters choose to use fear and coercion instead... Some even brutally rape their slaves into submission."
-    sill sad "但是一些brothel的主人选择使用恐吓和强制手段....甚至残酷地强奸她们使之服从。"
+    sill sad "但是一些青楼的主人选择使用恐吓和强制手段....甚至残酷地强奸她们使之服从。"
 
 # game/BKhelp.rpy:1100
 translate schinese help_whores_d6dcee3c:
@@ -1048,13 +1048,13 @@ translate schinese help_brothel_74043be9:
 translate schinese help_advertising_53898c4f:
 
     # sill "{b}Advertising{/b} helps grow the renown of your brothel and draws more and wealthier {b}customers{/b} to your brothel."
-    sill "{b}广告{/b}有助于提升brothel的声望,吸引更多更富裕的{b}客人{/b}到你的brothel。"
+    sill "{b}广告{/b}有助于提升青楼的声望,吸引更多更富裕的{b}客人{/b}到你的青楼。"
 
 # game/BKhelp.rpy:1372
 translate schinese help_advertising_714a1312:
 
     # sill "Advertising has three different effects: it boosts {b}brothel reputation{/b}, {b}customer attraction{/b} and {b}customer budgets{/b}."
-    sill "广告有三种不同的效果:它提升了{b}brothel声望{/b}、{b}客人吸引力{/b}和{b}客人预算{/b}。"
+    sill "广告有三种不同的效果:它提升了{b}青楼声望{/b}、{b}客人吸引力{/b}和{b}客人预算{/b}。"
 
 # game/BKhelp.rpy:1374
 translate schinese help_advertising_133d9e77:
@@ -1066,7 +1066,7 @@ translate schinese help_advertising_133d9e77:
 translate schinese help_advertising_menu_b463b8ec:
 
     # sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
-    sill "有些{b}客人{/b}每晚都会来你的brothel。至少会有一个来,但你的{b}brothel声望{/b}和{b}客人吸引力{/b}可以大大增加这个数量。"
+    sill "有些{b}客人{/b}每晚都会来你的青楼。至少会有一个来,但你的{b}青楼声望{/b}和{b}客人吸引力{/b}可以大大增加这个数量。"
 
 # game/BKhelp.rpy:1384
 translate schinese help_advertising_menu_c046054f:
@@ -1078,7 +1078,7 @@ translate schinese help_advertising_menu_c046054f:
 translate schinese help_advertising_menu_f889f1f4:
 
     # sill "You will mostly serve only {b}beggars{/b} at first, though. But as your brothel increases in rank and you reach higher districts, more customer populations will become available."
-    sill "一开始你主要会接待{b}乞丐{/b},但随着你的brothel等级提高,抵达更高等级的区域,会有更多的客人群体可供选择。"
+    sill "一开始你主要会接待{b}乞丐{/b},但随着你的青楼等级提高,抵达更高等级的区域,会有更多的客人群体可供选择。"
 
 # game/BKhelp.rpy:1388
 translate schinese help_advertising_menu_c9b423ad:
@@ -1090,25 +1090,25 @@ translate schinese help_advertising_menu_c9b423ad:
 translate schinese help_advertising_menu_e9a0c292:
 
     # sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
-    sill "更难对付的客人也有更高的{b}客人预算{/b}。随着brothel的发展,请记住这一点以获得最大收益。"
+    sill "更难对付的客人也有更高的{b}客人预算{/b}。随着青楼的发展,请记住这一点以获得最大收益。"
 
 # game/BKhelp.rpy:1394
 translate schinese help_advertising_menu_463efcf4:
 
     # sill "{b}Brothel reputation{/b} receives a boost from advertising every night. It is also affected negatively or positively by your {b}customers' satisfaction{/b}."
-    sill "{b}brothel声望{/b}每晚都会从广告中获得提升。它也会受到你{b}客人满意度{/b}的正负面影响。"
+    sill "{b}青楼声望{/b}每晚都会从广告中获得提升。它也会受到你{b}客人满意度{/b}的正负面影响。"
 
 # game/BKhelp.rpy:1396
 translate schinese help_advertising_menu_39ad60d5:
 
     # sill "{b}Brothel reputation{/b} is nice because it draws customers to your brothel for free, unlike advertising. It does {b}decay{/b} over time, though, especially in higher districts."
-    sill "{b}brothel声望{/b}很好,因为它可以免费吸引客人到你的brothel,不像广告。不过它会随时间而{b}衰减{/b},尤其是在更高等级的区域。"
+    sill "{b}青楼声望{/b}很好,因为它可以免费吸引客人到你的青楼,不像广告。不过它会随时间而{b}衰减{/b},尤其是在更高等级的区域。"
 
 # game/BKhelp.rpy:1398
 translate schinese help_advertising_menu_c166846a:
 
     # sill "Of course, it will cost more brothel reputation to attract higher rank customers than the usual riff-raff. If you need more customers than your current reputation allows, blocking some higher rank populations from coming in {b}customer options{/b} could be a way to do it."
-    sill "当然,要吸引更高等级的客人比吸引普通的流氓需要更多brothel声望。如果你需要比目前声望允许的更多客人,在{b}客人选项卡{/b}中屏蔽一些较高等级的群体可能是一种方法。"
+    sill "当然,要吸引更高等级的客人比吸引普通的流氓需要更多青楼声望。如果你需要比目前声望允许的更多客人,在{b}客人选项卡{/b}中屏蔽一些较高等级的群体可能是一种方法。"
 
 # game/BKhelp.rpy:1400
 translate schinese help_advertising_menu_fe19d71f:
@@ -1126,7 +1126,7 @@ translate schinese help_advertising_menu_60dc3fd0:
 translate schinese help_advertising_menu_39508306:
 
     # sill "If you lower advertising, though, you will lose those extra customers. This is the main difference between {b}brothel reputation{/b} and {b}customer attraction{/b}."
-    sill "不过,如果你减少广告,你就会失去这些额外客人。这是{b}brothel声望{/b}和{b}客人吸引力{/b}的主要区别。"
+    sill "不过,如果你减少广告,你就会失去这些额外客人。这是{b}青楼声望{/b}和{b}客人吸引力{/b}的主要区别。"
 
 # game/BKhelp.rpy:1408
 translate schinese help_advertising_menu_15a8ef4b:
@@ -1144,7 +1144,7 @@ translate schinese help_advertising_menu_2f8db18d:
 translate schinese help_advertising_menu_3a3136fa:
 
     # sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
-    sill "每个客人都有一个{b}最高预算{/b},他们愿意在你的brothel上花费的金额。"
+    sill "每个客人都有一个{b}最高预算{/b},他们愿意在你的青楼上花费的金额。"
 
 # game/BKhelp.rpy:1415
 translate schinese help_advertising_menu_cbb3a1de:

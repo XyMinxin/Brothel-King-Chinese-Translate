@@ -1876,7 +1876,7 @@ init python:
 
                        "cum shower description" : "被精液浇灌。",
                        "cum shower action" : "精子浴",
-                       "cum shower intro" : "服下从香料市场弄来的一种特殊的药丸，你的肉棒开始膨胀隆起，准备用大量的精液迸发。你让%s躺下准备接受你的种子。",
+                       "cum shower intro" : "服下从黑市弄来的一种特殊的药丸，你的肉棒开始膨胀隆起，准备用大量的精液迸发。你让%s躺下准备接受你的种子。",
                        "cum shower pos_reaction" : "你射了一次又一次直到她被白色粘稠的精液覆盖。她被这种感觉迷住了。",
                        "cum shower neg_reaction" : "当你在她身上射出一次又一次的精液时，她害怕地尖叫着、畏缩着，对气味和感觉感到厌恶。",
 

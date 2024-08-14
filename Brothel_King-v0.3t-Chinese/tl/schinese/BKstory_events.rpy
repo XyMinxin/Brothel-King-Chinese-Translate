@@ -3004,7 +3004,13 @@ translate schinese renza_onsen3_a9baabcd:
 translate schinese farm_meet_gizel_e8d92779:
 
     # "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
-    "在集市上四处寻找[text1],你注意到一个异域风情的身影正在附近的香料商那里看货。"
+    if text1 == "anti-rust lotion": 
+        $ cntext = "防锈洗剂"
+    if text1 == "magic herbs":
+        $ cntext = "魔法药草"
+    if text1 == "dragon feed":
+        $ cntext = "飞龙饲料"
+    "在集市上四处寻找[cntext],你注意到一个异域风情的身影正在附近的香料商那里看货。"
 
 # game/BKstory_events.rpy:1574
 translate schinese farm_meet_gizel_2f430e2d:
@@ -3208,7 +3214,7 @@ translate schinese farm_meet_gizel2_d61bef70:
 translate schinese farm_meet_gizel2_6c0262f9:
 
     # "The pale teenage elf you saw at the spice market is pacing up a narrow alley, walking up to one of the huts into which she promptly enters."
-    "你在香料市场看到的那个苍白的青春少女正在一条狭窄的小巷里来回踱步,走到一间小木屋门前,然后直接进去了。"
+    "你在黑市看到的那个苍白的青春少女正在一条狭窄的小巷里来回踱步,走到一间小木屋门前,然后直接进去了。"
 
 # game/BKstory_events.rpy:1704
 translate schinese farm_meet_gizel2_3eef808d:
@@ -31468,7 +31474,7 @@ translate schinese bast_informant_5b7ea1df:
 translate schinese bast_informant_f516bcac:
 
     # "The man stumbles away in a side street, heading towards the spice market."
-    "那个男人摇摇晃晃地走向一条小巷,朝香料市场的方向去了。"
+    "那个男人摇摇晃晃地走向一条小巷,朝黑市的方向去了。"
 
 # game/BKstory_events.rpy:16610
 translate schinese bast_informant_6a064b05:

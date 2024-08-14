@@ -1566,7 +1566,7 @@ label slave_train_obedience(girl):
 
     "You start with giving [girl.name] simple orders around the house."
 
-    $ MC.rand_say(("打扫阁楼，好吗？", "帮希尔做家务。", "换所有床单。", "拿着扫帚清理" + rand_choice(brothel.rooms.keys()) + "。",
+    $ MC.rand_say(("打扫阁楼，好吗？", "帮希露做家务。", "换所有床单。", "拿着扫帚清理" + rand_choice(brothel.rooms.keys()) + "。",
                   "去井里取些水。", "ar: 清理太阳神祭坛。", "确保墙上没有灰尘。", "为我们做点什么。", "ev: 把我的靴子擦得干干净净的。我不想看到一点灰尘，你听到了吗？",
                   "wr: 给我的武器上油。当然，我是指我的剑。", "tr: 喂德拉贡一只青蛙。别害羞，他很少咬人的手。", "wz: 擦一下我的法杖。我的魔法法杖。我是说....你知道的。"))
 
