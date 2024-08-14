@@ -322,7 +322,7 @@ translate schinese c1_meet_kosmo_74d375b2:
 translate schinese c1_meet_kosmo_f88e9a5c:
 
     # you "Sill! Wake Drogon, will you?"
-    you "希尔!去叫醒巨龙!"
+    you "希露!去叫醒巨龙!"
 
 # game/BKchapter1.rpy:212
 translate schinese c1_meet_kosmo_f2fd650a:
@@ -400,7 +400,7 @@ translate schinese c1_meet_kosmo_1a563e07:
 translate schinese c1_meet_kosmo_e9a9a234:
 
     # you "Hey! She's Sill. Back off."
-    you "喂!她叫希尔。别靠近她。"
+    you "喂!她叫希露。别靠近她。"
 
 # game/BKchapter1.rpy:254
 translate schinese c1_meet_kosmo_7dae0e55:
@@ -418,7 +418,7 @@ translate schinese c1_meet_kosmo_4c4f104a:
 translate schinese c1_meet_kosmo_7d73232a:
 
     # you "Sill is mine, and I'm not ever selling her."
-    you "希尔是我的,我永远不会把她卖掉。"
+    you "希露是我的,我永远不会把她卖掉。"
 
 # game/BKchapter1.rpy:265
 translate schinese c1_meet_kosmo_c92999d8:
@@ -568,7 +568,7 @@ translate schinese c1_meet_kosmo_41ecb0a8:
 translate schinese c1_ambush_4ccc267c:
 
     # "Sill was done with her work, so she decided to accompany you for a morning walk."
-    "希尔完成了手头上的工作,决定陪你一起去晨间散步。"
+    "希露完成了手头上的工作,决定陪你一起去晨间散步。"
 
 # game/BKchapter1.rpy:348
 translate schinese c1_ambush_2e654fa0:
@@ -652,7 +652,7 @@ translate schinese c1_ambush_143056f7:
 translate schinese c1_ambush_2a20b021:
 
     # you "Sill, get behind me! It's an ambush!" with vpunch
-    you "希尔,站到我身后!这是个陷阱!" with vpunch
+    you "希露,站到我身后!这是个陷阱!" with vpunch
 
 # game/BKchapter1.rpy:450
 translate schinese c1_ambush_c7ebd843:
@@ -706,7 +706,7 @@ translate schinese c1_ambush_e2972483:
 translate schinese c1_ambush_3fbcc058:
 
     # "You keep a protective amulet for emergencies. Clenching it, you cast a magic barrier around you and Sill."
-    "你为紧急情况准备了一枚护身符。你紧握着它,在你和希尔周围生成了一个球形魔法屏障。"
+    "你为紧急情况准备了一枚护身符。你紧握着它,在你和希露周围生成了一个球形魔法屏障。"
 
 # game/BKchapter1.rpy:493
 translate schinese c1_ambush_dccbc664:
@@ -742,7 +742,7 @@ translate schinese c1_ambush_1cc2c0cd:
 translate schinese c1_ambush_ce9e16a0:
 
     # you "Sill! Where is Drogon!"
-    you "希尔!巨龙在哪里!"
+    you "希露!巨龙在哪里!"
 
 # game/BKchapter1.rpy:510
 translate schinese c1_ambush_8033251a:
@@ -772,7 +772,7 @@ translate schinese c1_ambush_8f951435:
 translate schinese c1_ambush_439eebb0:
 
     # "Desperate, you climb from crate to crate, almost reaching the top. Sill is following you the best she can."
-    "绝望中,你从一个箱子爬到另一个箱子,就快到房顶了。希尔正竭尽全力跟上你。"
+    "绝望中,你从一个箱子爬到另一个箱子,就快到房顶了。希露正竭尽全力跟上你。"
 
 # game/BKchapter1.rpy:520
 translate schinese c1_ambush_a5f7b8d1:
@@ -784,13 +784,13 @@ translate schinese c1_ambush_a5f7b8d1:
 translate schinese c1_ambush_e6ceb7b1:
 
     # "However, as Sill reaches the last crate, you hear an ill-fated sound."
-    "然而,就在希尔踩到最后一个箱子时,你听到了令人绝望的声音。"
+    "然而,就在希露踩到最后一个箱子时,你听到了令人绝望的声音。"
 
 # game/BKchapter1.rpy:526
 translate schinese c1_ambush_b379d3b7:
 
     # "The crates give in, crumbling from under her. Sill falls back down into the street." with vpunch
-    "箱子承受不住压力,从她脚下崩塌。希尔跌落到街道上。" with vpunch
+    "箱子承受不住压力,从她脚下崩塌。希露跌落到街道上。" with vpunch
 
 # game/BKchapter1.rpy:530
 translate schinese c1_ambush_509710ea:
@@ -808,7 +808,7 @@ translate schinese c1_ambush_c234d17d:
 translate schinese c1_ambush_97f2b94b:
 
     # "Sill gets back up, but she has her back to the wall as the attackers close in and surround her. You watch helplessly from your precarious hideout."
-    "希尔跌倒又站了起来,但她已经被刺客包围。你只能从高处无助地看着。"
+    "希露跌倒又站了起来,但她已经被刺客包围。你只能从高处无助地看着。"
 
 # game/BKchapter1.rpy:538
 translate schinese c1_ambush_b6e6c22b:
@@ -1060,7 +1060,7 @@ translate schinese c1_ambush_3c41d93c:
 translate schinese c1_ambush_cabcba11:
 
     # "You and Sill make it back safely to the brothel. You give instructions to tighten security."
-    "你和希尔平安回到青楼。你下令加强了安全措施。"
+    "你和希露平安回到青楼。你下令加强了安全措施。"
 
 # game/BKchapter1.rpy:687
 translate schinese c1_reached_goal_d623bd65:
@@ -1930,13 +1930,13 @@ translate schinese c1_thieves_guild_tip_2729c117:
 translate schinese c1_thieves_guild_tip_4bfd5e22:
 
     # man "All right. Now listen up. There's this courier who acts as a proxy for the guild... Can be found at the spice market most days, shaking down spice dealers for protection money."
-    man "一个不少,听好了。有一个信使经常作为公会的代理人...通常可以在香料市场找到他,他向香料商勒索保护费。"
+    man "一个不少,听好了。有一个信使经常作为公会的代理人...通常可以在黑市找到他,他向香料商勒索保护费。"
 
 # game/BKchapter1.rpy:1218
 translate schinese c1_thieves_guild_tip_7389206c:
 
     # "Go to the {b}spice market{/b} to find the thieves guild courier."
-    "前往{b}香料市场{/b}寻找盗贼公会的信使。"
+    "前往{b}黑市{/b}寻找盗贼公会的信使。"
 
 # game/BKchapter1.rpy:1223
 translate schinese c1_thieves_guild_tip_2321c608:
@@ -1954,7 +1954,7 @@ translate schinese c1_thieves_guild_tip_8a262d27:
 translate schinese c1_spice_market_41a740ee:
 
     # "The Spice Market is the place where the more or less respectable citizens of Zan come to get their fix."
-    "香料市场是赞城里那些或多或少还算体面的公民来满足自己特殊需求的地方。"
+    "黑市是赞城里那些或多或少还算体面的公民来满足自己特殊需求的地方。"
 
 # game/BKchapter1.rpy:1254
 translate schinese c1_spice_market_bca7e831:
@@ -1978,7 +1978,7 @@ translate schinese c1_spice_market_c2282b6a:
 translate schinese c1_spice_market_e6203b6b:
 
     # "Wandering the busy alleys of the Spice Market, where the rebellious spawns of noble families rub elbows with street-dwelling junkies, you once again wonder about the corruption of the big city."
-    "在繁忙的香料市场的小巷中游荡,看着咯破的贵族子弟与瘾君子肩并肩,你再次认识到这个城市的腐败。"
+    "在繁忙的黑市的小巷中游荡,看着咯破的贵族子弟与瘾君子肩并肩,你再次认识到这个城市的腐败。"
 
 # game/BKchapter1.rpy:1267
 translate schinese c1_spice_market_92e3f3a1:
@@ -3556,7 +3556,7 @@ translate schinese c1_thieves_guild_found_c0525cb8:
 translate schinese c1_thieves_guild_found_1e92a449:
 
     # "A sweet perfume reaches your nostrils. You get a flashback from the spice market: this is the perfume of the stranger you ran into that day."
-    "一股甜美的香气钻进你的鼻子。这让你回想起香料市场的那天:这就是你撞到的那个神秘人的香味。"
+    "一股甜美的香气钻进你的鼻子。这让你回想起黑市的那天:这就是你撞到的那个神秘人的香味。"
 
 # game/BKchapter1.rpy:2279
 translate schinese c1_thieves_guild_found_8e0b1731:
@@ -13280,7 +13280,7 @@ translate schinese strings:
 
     # game/BKchapter1.rpy:258
     old "Sill's not for sale"
-    new "希尔是非卖品"
+    new "希露是非卖品"
 
     # game/BKchapter1.rpy:258
     old "I'm not selling to you"
