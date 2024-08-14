@@ -1516,7 +1516,7 @@ label c3_papa_cells():
             "Bring a whore to Papa with at least {b}75 in Sex, Charisma and Sensitivity{/b}."
 
             $ game.set_task("Bring a whore to Papa with at least {b}75 in Sex, Charisma and Sensitivity{/b}.", "special")
-            $ NPC_freak.flags["requirements"] = [("sex", 75), ("charisma", 75), ("sensitivity", 75)]
+            $ NPC_freak.flags["requirements"] = [("sex", 75), ("charm", 75), ("sensitivity", 75)]
 
         elif NPC_freak.flags["cells built"] == 2:
 
