@@ -2778,7 +2778,7 @@ init -1 python:
     add_dialogue("slave negative fixation refuse", ("superficial", "very extravert"), ("决不。那不是我，主人。", "哇你真的是认真的吗？那就超级尴尬了。决不！！", "嗯，哇....我很确定我们应该假装这次谈话从未发生过，然后继续前进。", "怎么样，比如，不？就像，不可能？", "嗯，我绝对不会做那样的事！"))
 
     add_dialogue("slave first visit", ("superficial", "very extravert"), ("你好，热门的东西...愿意告诉我到底发生了什么事吗？！"))
-    add_dialogue("MC kind promise", ("superficial", "very materialist", "very dom"), ["她自信地挺起胸膛。" , "g: 嗯，是的，{i}duh{/i}！我最好是这样！"], multiple=True, love=1, fear=-3)
+    add_dialogue("MC kind promise", ("superficial", "very materialist", "very dom"), ["她自信地挺起胸膛。" , "g: 嗯，是的，{i}对{/i}！我最好是这样！"], multiple=True, love=1, fear=-3)
     add_dialogue("MC fair promise", ("superficial", "very materialist"), ["她倾身向前，傻笑起来。" , "g: 我明白....只要你对我比对任何人都{i}更{/i}公平即可。 *眨眼*"], multiple=True, fear=-1)
     add_dialogue("MC no promise", ("superficial", "very materialist", "very dom"), ["她吃了一惊。" , "g: 什、什么？！我知道你怎么能这样对待其他女孩....但是，我？！"], multiple=True, love=-1, fear=1)
     add_dialogue("MC harsh promise", ("superficial", "very materialist", "very dom"), ("她咕哝着，轻蔑地看着你。"), love=-4, fear=3)

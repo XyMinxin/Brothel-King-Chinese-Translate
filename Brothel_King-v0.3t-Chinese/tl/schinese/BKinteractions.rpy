@@ -2662,7 +2662,7 @@ translate schinese slave_story2_c1da3d17:
 translate schinese slave_story2_4996b303:
 
     # girl.char "It's about my [girl.story_guardian], who is heavily in debt. I want to help repay it..."
-    girl.char "It's about my [girl.story_guardian], who is heavily in debt. I want to help repay it..."
+    girl.char "是为了我的[girl.story_guardian], 她身负巨债。我想帮她分担一些......"
 
 # game/BKinteractions.rpy:3698
 translate schinese slave_story2_748a5542:
@@ -4354,7 +4354,7 @@ translate schinese slave_story5_6c513c51:
 translate schinese slave_story5_1f8d7728:
 
     # you "Ahem-hem."
-    you "Ahem-hem。"
+    you "咳咳。"
 
 # game/BKinteractions.rpy:4485
 translate schinese slave_story5_363ccb90:

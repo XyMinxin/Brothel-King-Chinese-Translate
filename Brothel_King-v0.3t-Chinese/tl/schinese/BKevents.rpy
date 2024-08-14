@@ -40,7 +40,7 @@ translate schinese chapter2_1367ef10:
 translate schinese chapter2_7a1b9cbf:
 
     # sill happy "You can now move this operation to a larger brothel. Go to the {b}city{/b} tab to set up your new quarters."
-    sill happy "你现在可以搬到一个更好的位置扩大经营规模了。前往{b}城市{/b}标签页设置你的新产业。"
+    sill happy "你现在可以搬到一个更好的位置扩大经营规模了。点击{b}探索城市{/b}菜单设置你的新产业。"
 
 # game/BKevents.rpy:571
 translate schinese rank_message_c0db008a:

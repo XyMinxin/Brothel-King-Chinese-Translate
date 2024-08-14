@@ -850,7 +850,7 @@ label c1_visit_watchtower:
 
     $ calendar.set_alarm(calendar.time+1, Event(label = "c1_guards_visit"))
 
-    $ game.set_task("Wait for your license to be delivered.")
+    $ game.set_task("等待你的营业许可证送达。")
 
     return
 

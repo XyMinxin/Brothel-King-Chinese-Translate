@@ -2938,7 +2938,7 @@ translate schinese city_cat_9d607a1e:
 translate schinese city_cat_537ab76c:
 
     # you "Okaay... Right..."
-    you "Okaay....好吧...."
+    you "好....好吧...."
 
 # game/BKcity_events.rpy:2342
 translate schinese city_cat_c3b1c980:
@@ -3624,7 +3624,7 @@ translate schinese city_secret_8db41ea1:
 translate schinese city_secret_73032446:
 
     # you "Kyaaaah!!!"
-    you "Kyaaaah!!!"
+    you "呀啊啊啊啊啊!!!"
 
 # game/BKcity_events.rpy:2886
 translate schinese city_secret_243d4c23:
@@ -4421,7 +4421,7 @@ translate schinese city_rob_1cf9a909:
 translate schinese city_rob_281147bb:
 
     # woman "KYAAAAAAAAAAH!!!"
-    woman "闪电旋风劈!!!"
+    woman "呀啊啊啊啊!!!"
 
 # game/BKcity_events.rpy:3552
 translate schinese city_rob_9f0ea931:
