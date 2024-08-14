@@ -3823,9 +3823,9 @@ screen visit_location():
     key "K_LEFT" action (SetVariable('selected_location', _previous), Jump("visit_location"))
     key "K_RIGHT" action (SetVariable('selected_location', _next), Jump("visit_location"))
 
-    textbutton "<" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "Visit the previous location in this district (you can use arrow keys)."
+    textbutton "<" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "前往该地区的上一个地点(你也可以使用方向键)。"
 
-    textbutton ">" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "Visit the next location in this district (you can use arrow keys)."
+    textbutton ">" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "前往该地区的下一个地点(你也可以使用方向键)。"
 
     frame:
         background None # loc.get_pic(config.screen_width, int(config.screen_height*0.8))

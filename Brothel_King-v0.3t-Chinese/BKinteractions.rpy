@@ -462,9 +462,9 @@ label slave_chat_slave_life(girl): # D/S
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Tell me, how do you like your life as a slave?",
-                       "Are you happy about being a slave?",
-                       "How do you feel about being a slave?")))
+    $ you(rand_choice(("告诉我, 你觉得奴隶的生活怎么样?",
+                       "做奴隶感觉快乐吗?",
+                       "做奴隶有什么感觉?")))
 
     $ inter.score = girl.mood + girl.get_stat("obedience") / 5
 
@@ -600,9 +600,9 @@ label slave_chat_other_girls(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Are you getting along with the other girls?",
-                       "Do you like the other girls in the brothel?",
-                       "Do you have any friends here?")))
+    $ you(rand_choice(("你和其他女孩相处得如何?",
+                       "你喜欢青楼里的其他女孩吗?",
+                       "你在这有交到什么朋友吗?")))
 
     $ inter.score = girl.mood + girl.get_stat("charm")/5 + len(girl.friends)*10 - len(girl.rivals)*10
 
@@ -705,7 +705,7 @@ label slave_chat_well_being(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Is everything all right?", "How are you feeling?", "Is there anything wrong?")))
+    $ you(rand_choice(("一切都好吗?", "你感觉如何?", "没出什么问题吧??")))
 
     if girl.mood > -75:
         if girl.mood > 75:
@@ -2561,7 +2561,7 @@ label slave_reward_day(girl):
     return
 
 label slave_reward_sex(girl):
-    $ act = menu(get_act_menu(prompt="What do you want to reward her with?", extended=False, girl=girl))
+    $ act = menu(get_act_menu(prompt="你想怎么奖励她?", extended=False, girl=girl))
 
     if act == "back":
         $ inter.canceled = True
@@ -4004,9 +4004,9 @@ label slave_story3(girl):
     if girl.flags["story"] == 4:
 
         if girl.is_("dom"):
-            $ text1 = "It isn't like her."
+            $ text1 = "这不像她。"
         else:
-            $ text1 = "You wonder what it is this time."
+            $ text1 = "你想知道她怎么了。"
 
         "You find [girl.name] crying in her room. [text1]"
 

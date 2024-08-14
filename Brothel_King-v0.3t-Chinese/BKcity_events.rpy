@@ -3105,21 +3105,21 @@ label city_gypsy:
 
     if MC.playerclass == "战士":
 
-        $ nickname = "Big man"
+        $ nickname = "大个子"
 
-        $ nickname_l = "big man"
+        $ nickname_l = "大个子"
 
     elif MC.playerclass == "法师":
 
-        $ nickname = "Weird man"
+        $ nickname = "奇怪的家伙"
 
-        $ nickname_l = "weird man"
+        $ nickname_l = "奇怪的家伙"
 
     elif MC.playerclass == "奸商":
 
-        $ nickname = "Funny man"
+        $ nickname = "有趣的家伙"
 
-        $ nickname_l = "funny man"
+        $ nickname_l = "有趣的家伙"
 
     play sound s_surprise
 

@@ -6820,7 +6820,7 @@ translate schinese farm_exorcism_attempt_37db5c62:
 translate schinese farm_exorcism_attempt_6cda225a:
 
     # you "Yes. Meanwhile, keep your head up high."
-    you "是的。与此同时,坚持holdhead高。"
+    you "是的。现在，抬头挺胸。"
 
 # game/BKstory_events.rpy:3591
 translate schinese farm_exorcism_attempt_d54425a5:
@@ -13060,7 +13060,7 @@ translate schinese farm_meet_willow_48a2c215_1:
 translate schinese farm_meet_willow_eadd889a:
 
     # you "It's not worth going through all this trouble for a 50 denar trinket. I'm out of here."
-    you "为了一个50个denar的小饰品,经历这么多麻烦事可不值得。我要走了。"
+    you "为了一个50金币的地摊货,经历这么多麻烦事可不值得。我要走了。"
 
 # game/BKstory_events.rpy:6694
 translate schinese farm_meet_willow_183ae72b:
@@ -15010,7 +15010,7 @@ translate schinese willow_recovery_89cc50df:
 translate schinese willow_recovery_a09a3d32:
 
     # willow "Sill cleaned my clothes. They've never been so fresh! That girl's a miracle."
-    willow "希丽很好地洗了我的衣服。它们从未如此干净过!那个女孩真是个奇迹。"
+    willow "希露把我的衣服洗的很干净。它们从未如此干净过!那个女孩创造了奇迹。"
 
 # game/BKstory_events.rpy:7813
 translate schinese willow_recovery_546c3d43:
@@ -37965,7 +37965,7 @@ translate schinese farm_go_with_gizel_d908a64d:
 translate schinese farm_go_with_gizel_4b007283:
 
     # spirit "BWAAAH!!!" with vpunch
-    spirit "BWAAAH!!!" with vpunch
+    spirit "哇啊啊!!!" with vpunch
 
 # game/BKstory_events.rpy:3838
 translate schinese farm_go_with_gizel_dae0ec55:

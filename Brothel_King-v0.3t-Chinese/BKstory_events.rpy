@@ -1561,11 +1561,11 @@ label farm_meet_gizel(): # Location: spice market
     with fade
 
     if MC.playerclass == "战士":
-        $ text1 = "anti-rust lotion"
+        $ text1 = "防锈保养油"
     elif MC.playerclass == "法师":
-        $ text1 = "magic herbs"
+        $ text1 = "神奇的草药"
     elif MC.playerclass == "奸商":
-        $ text1 = "dragon feed"
+        $ text1 = "育龙饲料"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
 

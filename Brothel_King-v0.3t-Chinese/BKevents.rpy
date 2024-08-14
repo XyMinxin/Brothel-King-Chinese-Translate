@@ -7411,7 +7411,7 @@ label acquire_girl(girl, price=0, context="generic"):
         if len(MC.girls) < brothel.bedrooms:
             if price:
                 if MC.has_gold(price):
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy [girl.fullname] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要买下[girl.fullname]吗？这将花费[price]金币。")
                 else:
                     if context == "slavemarket":
                         slavegirl1 "Sorry Master, but you don't have enough gold to buy [girl.fullname]."

@@ -3406,7 +3406,7 @@ translate schinese c1_thieves_guild_found_01f3aa9a:
 translate schinese c1_thieves_guild_found_4a22b1b7:
 
     # "Without a word, the big man gives a quick nod to the door, and lets the stranger in."
-    "那个高大的男人一言不发地朝门点了点头,让那个陌生人进去了。"
+    "那个大个子一言不发地朝门点了点头,让那个陌生人进去了。"
 
 # game/BKchapter1.rpy:2204
 translate schinese c1_thieves_guild_found_23c45f7d:
