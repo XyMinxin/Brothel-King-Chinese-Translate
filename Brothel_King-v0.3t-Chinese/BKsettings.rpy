@@ -1101,16 +1101,16 @@ init -10 python:
 
     ## 女孩起源名称 ##
     origin_name_dict = {
-                          "Zan" : "泽恩",
-                          "the border with the Holy Lands" : "与圣地的边界",
-                          "the Blood Islands" : "血岛",
-                          "Karkyr" : "",
-                          "Westmarch" : "",
-                          "the desert of Hokoma" : "",
-                          "Borgo, the port city" : "",
-                          "the Goliath desolations" : "",
-                          "the Arik mountains" : "",
-                          }
+                        "Zan" : "泽恩",
+                        "the border with the Holy Lands" : "与圣地的边界",
+                        "the Blood Islands" : "血岛",
+                        "Karkyr" : "",
+                        "Westmarch" : "",
+                        "the desert of Hokoma" : "",
+                        "Borgo, the port city" : "",
+                        "the Goliath desolations" : "",
+                        "the Arik mountains" : "",
+                        }
 
 #### BALANCE / CHEATS ####
 
