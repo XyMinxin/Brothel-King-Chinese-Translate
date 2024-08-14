@@ -39337,7 +39337,7 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:16582
     old "接受提议(1000 gold)"
-    new "接受提议(1000 gold)"
+    new "接受提议(1000 金币)"
 
     # game/BKstory_events.rpy:16582
     old "拒绝请求"

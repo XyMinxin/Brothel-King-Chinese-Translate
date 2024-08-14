@@ -2686,7 +2686,8 @@ translate schinese slave_story2_4e3e3d2a:
 translate schinese slave_story2_c2a355ad:
 
     # girl.char "It all happened a long time ago, back in [girl.origin]..."
-    girl.char "这一切都发生在很久以前，在[girl.origin]里...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "这一切都发生在很久以前，在[origin_cn]里...."
 
 # game/BKinteractions.rpy:3711
 translate schinese slave_story2_7e0b1b13:
@@ -3154,7 +3155,8 @@ translate schinese slave_story3_c7542f25:
 translate schinese slave_story3_7a1a8533:
 
     # girl.char "I used to live a happy life in [girl.origin], where I enjoyed [girl.hobbies[0]] most days..."
-    girl.char "我过去在[girl.origin]里过着幸福的生活。起源，在那里我喜欢[girl.hobbies[0]]大多数日子里...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "我过去在[origin_cn]里过着幸福的生活。起源，在那里我喜欢[girl.hobbies[0]]大多数日子里...."
 
 # game/BKinteractions.rpy:3956
 translate schinese slave_story3_5886ce35:
@@ -3742,7 +3744,8 @@ translate schinese slave_story4_1b43fbf6:
 translate schinese slave_story4_b6fe2914:
 
     # girl.char "Yes... I was born in [girl.origin], in a very poor family..."
-    girl.char "是的....我出生在[girl.origin]。，出身于一个非常贫穷的家庭...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "是的....我出生在[origin_cn]。，出身于一个非常贫穷的家庭...."
 
 # game/BKinteractions.rpy:4213
 translate schinese slave_story4_4680cb4f:
@@ -4432,7 +4435,8 @@ translate schinese slave_story5_fef91995:
 translate schinese slave_story5_7ce7c857:
 
     # girl.char "It all started while I was living in [girl.origin] with my [girl.story_guardian]."
-    girl.char "这一切都始于我住在[girl.origin]的时候，和我的[girl.story_guardian]。"
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "这一切都始于我住在[origin_cn]的时候，和我的[girl.story_guardian]。"
 
 # game/BKinteractions.rpy:4525
 translate schinese slave_story5_54e6d272:
@@ -5350,7 +5354,8 @@ translate schinese slave_story6_adb6bbb8:
 translate schinese slave_story6_948a280f:
 
     # girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
-    girl.char "是的... 我的父亲曾是[girl.origin]的一位贵族, 在克塞罗斯很有名气，在宫廷里也很有影响力..."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "是的... 我的父亲曾是[origin_cn]的一位贵族, 在克塞罗斯很有名气，在宫廷里也很有影响力..."
 
 # game/BKinteractions.rpy:4886
 translate schinese slave_story6_9464a26a:
@@ -6268,7 +6273,8 @@ translate schinese slave_story7_78f547c1:
 translate schinese slave_story7_5b5bef6d:
 
     # girl.char "Believe it or not, when I was growing up in [girl.origin], it was perfectly normal to worship the Dweller. There was no holy war then..."
-    girl.char "信不信由你，当我在[girl.origin]长大的时候。，敬拜居民是完全正常的。那时没有圣战...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "信不信由你，当我在[origin_cn]长大的时候。，敬拜居民是完全正常的。那时没有圣战...."
 
 # game/BKinteractions.rpy:5167
 translate schinese slave_story7_1a07ef4a:
@@ -6466,7 +6472,8 @@ translate schinese slave_story7_d8a048e0:
 translate schinese slave_story7_74024fdb:
 
     # girl.char "Back then in [girl.origin], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
-    girl.char "回到[girl.origin]，所有和平的宗教都是受欢迎的。没有人谈论焚烧异教徒或折磨精灵间谍...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "回到[origin_cn]，所有和平的宗教都是受欢迎的。没有人谈论焚烧异教徒或折磨精灵间谍...."
 
 # game/BKinteractions.rpy:5235
 translate schinese slave_story7_25328452:
@@ -7336,7 +7343,8 @@ translate schinese slave_story8_a1918715:
 translate schinese slave_story8_f256ee5f:
 
     # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin]..."
-    girl.char "这一切都开始于不久前，当我住在[girl.story_home_article] [girl.origin]...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "这一切都开始于不久前，当我住在[girl.story_home_article] [origin_cn]...."
 
 # game/BKinteractions.rpy:5578
 translate schinese slave_story8_f2692a58:
@@ -7570,7 +7578,8 @@ translate schinese slave_story8_9d46dba6:
 translate schinese slave_story8_ce9564f7:
 
     # girl.char "Well... I told you about my time in [girl.origin], when I was looking for a magic teacher..."
-    girl.char "嗯....我告诉过你我在[girl.origin]的时光。当我在找一个魔法老师的时候...."
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "嗯....我告诉过你我在[origin_cn]的时光。当我在找一个魔法老师的时候...."
 
 # game/BKinteractions.rpy:5674
 translate schinese slave_story8_8b044c9c:
@@ -7906,7 +7915,8 @@ translate schinese slave_story8_33c6fd3a:
 translate schinese slave_story8_2ddc3804:
 
     # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin]."
-    girl.char "你记得吗，我说过我在[girl.origin]里为一个强大的女巫工作。"
+    $ origin_cn = tl_cn(girl.gorigin, origin_name_dict)
+    girl.char "你记得吗，我说过我在[origin_cn]里为一个强大的女巫工作。"
 
 # game/BKinteractions.rpy:5796
 translate schinese slave_story8_15d6b866:

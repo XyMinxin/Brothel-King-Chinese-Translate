@@ -1099,6 +1099,19 @@ init -10 python:
                           "Clockwork billboard" : "钟表广告牌",
                           }
 
+    ## 女孩起源名称 ##
+    origin_name_dict = {
+                          "Zan" : "泽恩",
+                          "the border with the Holy Lands" : "与圣地的边界",
+                          "the Blood Islands" : "血岛",
+                          "Karkyr" : "",
+                          "Westmarch" : "",
+                          "the desert of Hokoma" : "",
+                          "Borgo, the port city" : "",
+                          "the Goliath desolations" : "",
+                          "the Arik mountains" : "",
+                          }
+
 #### BALANCE / CHEATS ####
 
     debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
