@@ -1582,7 +1582,7 @@ translate schinese diamond_intro_28437bc6:
 translate schinese diamond_intro_9cca1607:
 
     # "Old man" "Not that I'd have the means to buy any, mind you... Say, young one, care to spare a denar?"
-    "老绅士" "当然,我也没有能力去买任何钻石...喂,小伙子,能给我一个银币吗?"
+    "老绅士" "当然,我也没有能力去买任何钻石...喂,小伙子,能给我一个金币吗?"
 
 # game/BKevents.rpy:2442
 translate schinese diamond_intro_9b9a5b26:
@@ -5104,7 +5104,7 @@ translate schinese contract_MC_event_51b5c348:
 translate schinese contract_MC_event_986e6b5f:
 
     # con.char "You! You ruined our perfectly prepared negotiations! We won't forget this! *mad*"
-    con.char "就是你!你毁掉了我们精心准备的谈判!这件事我们不会忘记!*愤怒*"
+    con.char "都怪你!你毁掉了我们精心准备的谈判!这件事不会就这么算了!*愤怒*"
 
 # game/BKevents.rpy:5435
 translate schinese contract_MC_event_51f206db:
@@ -5116,19 +5116,19 @@ translate schinese contract_MC_event_51f206db:
 translate schinese contract_MC_event_3f4cbee1:
 
     # "Two witches are arguing loudly about which school of magic is the best."
-    "两位女巫正在大声争论哪个魔法流派最好。"
+    "两位女巫正在大声争论谁的魔法流派最好。"
 
 # game/BKevents.rpy:5443
 translate schinese contract_MC_event_52e92e11:
 
     # con.char "Oh no, those two were top of their class in Karkyr... They are extremely competitive..."
-    con.char "哦不,那两个人在卡尔基都是顶尖的学生...她们竞争非常激烈..."
+    con.char "哦不,那两个人在卡尔基学院都是名列前茅的尖子生...她们的竞争非常激烈..."
 
 # game/BKevents.rpy:5447
 translate schinese contract_MC_event_20344115:
 
     # "The argument escalates further, and the witches start insulting each other, then casting spells and counterspells. Soon, magic bolts are flying around, and innocent bystanders are in danger of being hurt." with vpunch
-    "争论越演越烈,两位女巫开始互相侮辱,然后施法相互抵消。很快,魔法弹幕就开始飞舞,无辜旁观者也有遭殃的危险。" with vpunch
+    "争论越演越烈,两位女巫开始互相侮辱,然后施展法术对轰。很快,魔法弹幕四处飞溅,无辜的旁观者也有中招的风险。" with vpunch
 
 # game/BKevents.rpy:5452
 translate schinese contract_MC_event_0cb020a9:
@@ -5140,37 +5140,37 @@ translate schinese contract_MC_event_0cb020a9:
 translate schinese contract_MC_event_1ea574b6:
 
     # "Stepping up to the challenge, you prepare to battle two master sorceresses at once... By sneaking up on them."
-    "迎接挑战,你准备一次对付两位大魔法师...通过偷袭她们。"
+    "迎接挑战,你准备一次对付两位大法师...通过偷袭她们。"
 
 # game/BKevents.rpy:5468
 translate schinese contract_MC_event_588b6797:
 
     # you "By the secret last words of Archmage Azgathoros... SHUT THE FUCK UP, BITCHES!"
-    you "凭借大法师阿兹加索罗斯的最后秘密...闭嘴,婊子们!"
+    you "大法师阿兹加索罗斯的终极奥义...闭嘴,婊子们!"
 
 # game/BKevents.rpy:5471
 translate schinese contract_MC_event_28d1da02:
 
     # "The two women are too busy arguing to notice your silence spell until it's too late. Suddenly, their voices die down and they are prevented from causing further mayhem."
-    "那两个女人太忙于争吵,直到为时已晚才注意到你的沉默法术。突然,她们的声音消失了,无法继续制造混乱。"
+    "那两个女人吵得天昏地暗,直到中招时才注意到你的沉默法术。一瞬间,她们的声音消失了,无法继续制造混乱。"
 
 # game/BKevents.rpy:5473
 translate schinese contract_MC_event_8adda1bb:
 
     # "It takes more than that to stop their rivalry, however, and soon they step outside and start slapping each other, rolling down in the mud... All in complete silence."
-    "这还不足以终止她们的竞争,很快她们走到外面,在泥地里扭打成一团...全程保持沉默。"
+    "但这还不足以终止她们之间的争斗,她们走到外面,在泥地里扭打成一团...全程一语不发。"
 
 # game/BKevents.rpy:5475
 translate schinese contract_MC_event_1ac5cfbd:
 
     # con.char "Wow, look at them go... I'll fetch some pop-corn."
-    con.char "看看她们打得多厉害...我去拿些爆米花吧。"
+    con.char "看看她们打得多激烈...我去拿些爆米花来吧。"
 
 # game/BKevents.rpy:5479
 translate schinese contract_MC_event_d55f51f5:
 
     # you "(They are too busy fighting each other to notice me, I'm sure...)"
-    you "(她们太忙于互殴,我想她们肯定注意不到我...)"
+    you "(她们沉浸于战斗,我想她们肯定注意不到我...)"
 
 # game/BKevents.rpy:5482
 translate schinese contract_MC_event_9e653509:
@@ -5200,31 +5200,31 @@ translate schinese contract_MC_event_1f59a146:
 translate schinese contract_MC_event_3119f3e6:
 
     # "You spoke loudly, and the witches temporarily interrupt their yelling and hurling fireballs at each other to look at you. They seem none too pleased."
-    "你大声说话,两位女巫暂时停下尖叫和互相扔火球,看向你。她们似乎对这个插曲很不高兴。"
+    "你大声喊叫,两位女巫停止了用火球术对轰,扭头看向你。她们似乎对你这个第三者的插入感到很不高兴。"
 
 # game/BKevents.rpy:5497
 translate schinese contract_MC_event_06bcf178:
 
     # "Blue witch" "What's with this interruption! Explain yourself."
-    "蓝女巫" "为什么打断我们!解释清楚。"
+    "蓝女巫" "为什么插手打断我们!你最好解释清楚。"
 
 # game/BKevents.rpy:5499
 translate schinese contract_MC_event_63e1c2ed:
 
     # you "Why can't two beautiful and talented women like you work together to overcome your differences?"
-    you "为什么你们这样两个漂亮又才华横溢的女性就不能合作克服分歧呢?"
+    you "为什么你们这样美貌与智慧并存的美人不能和睦相处呢?"
 
 # game/BKevents.rpy:5501
 translate schinese contract_MC_event_119ef155:
 
     # "Blue witch" "Are you mad? How could I befriend this slut? She couldn't even summon a minor demon to save her life, but she got ahead at school because she was fucking the Principal..."
-    "蓝女巫" "你发疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校领先...."
+    "蓝女巫" "你疯了吗?我怎么可能和这个荡妇成为朋友?她连个小恶魔都召唤不出来,但是却因为跟校长睡觉而在学校排名靠前...."
 
 # game/BKevents.rpy:5505
 translate schinese contract_MC_event_62dff14b:
 
     # "Red witch" "Whaat? And you, you got ahead... By giving head!"
-    "红女巫" "什么?那你呢,你是靠提供特殊服务而得到优势的吧!"
+    "红女巫" "什么?那你呢,你不也是靠提供特殊服务而得到优势的吗!"
 
 # game/BKevents.rpy:5507
 translate schinese contract_MC_event_9819cd59:
@@ -5236,25 +5236,25 @@ translate schinese contract_MC_event_9819cd59:
 translate schinese contract_MC_event_16437626:
 
     # "Red witch" "Bring it, fat cow!"
-    "红女巫" "来吧,肥婆!"
+    "红女巫" "那就来啊,肥婆!"
 
 # game/BKevents.rpy:5516
 translate schinese contract_MC_event_bbaab597:
 
     # you "No, no, no, stop... You two are tremendously talented, everyone can see that... Your success was obviously because of your skills, not your looks!"
-    you "不,不,不,住手...你们两个都极其才华横溢,每个人都看得出来...你们的成功显然是因为你们的技能,而不是相貌!"
+    you "不,不,不,住手...你们两个都才华横溢,是个人都看得出来...你们的成功显然是因为你们的强大,而不是相貌!"
 
 # game/BKevents.rpy:5518
 translate schinese contract_MC_event_ac23b85e:
 
     # "Blue witch" "Are you calling us... unattractive?"
-    "蓝女巫" "你是在说我们...不漂亮吗?"
+    "蓝女巫" "你是说我们...不漂亮吗?"
 
 # game/BKevents.rpy:5520
 translate schinese contract_MC_event_71945d7a:
 
     # "Red witch" "Yeah, you think we're too ugly to use our charms to get ahead? I {i}was{/i} fucking the Principal, I'll have you know!"
-    "红女巫" "是啊,你觉得我们长得太丑,所以才无法利用自己的魅力获得优势?我{i}就是{/i}跟校长睡过!"
+    "红女巫" "是啊,你莫非是觉得我们不够漂亮,所以无法利用自己的魅力获得优势?我{i}就是{/i}跟校长睡过!"
 
 # game/BKevents.rpy:5522
 translate schinese contract_MC_event_e8ad3f96:
@@ -5290,7 +5290,7 @@ translate schinese contract_MC_event_8eae5957:
 translate schinese contract_MC_event_4a81e468:
 
     # "Red witch" "...is the fairest?"
-    "红女巫" "...谁是最美的?"
+    "红女巫" "...谁更美?"
 
 # game/BKevents.rpy:5535
 translate schinese contract_MC_event_cdd9076e:
@@ -5302,7 +5302,7 @@ translate schinese contract_MC_event_cdd9076e:
 translate schinese contract_MC_event_8b5e2bae:
 
     # "Blue witch" "C'm'on, simple question!"
-    "蓝女巫" "快说嘛,很简单的问题!"
+    "蓝女巫" "快说,这不是显而易见的吗!"
 
 # game/BKevents.rpy:5539
 translate schinese contract_MC_event_2c80b816:
@@ -5320,25 +5320,25 @@ translate schinese contract_MC_event_00409cc8:
 translate schinese contract_MC_event_9faebf3f:
 
     # "Witches" "*together* What kind of answer is that!" with vpunch
-    "Witches" "*一起* 这种回答算什么啊!" with vpunch
+    "Witches" "*齐声* 这种回答算什么啊!" with vpunch
 
 # game/BKevents.rpy:5549
 translate schinese contract_MC_event_8169b720:
 
     # you "Well, it's... It's the truth!"
-    you "好吧,这就是实话!"
+    you "但是,这就是我的肺腑之言!"
 
 # game/BKevents.rpy:5551
 translate schinese contract_MC_event_840abfa6:
 
     # "Blue witch" "In such a scenario, you would find me far superior!"
-    "蓝女巫" "既然你这么说,我会让你知道我比她强百倍!"
+    "蓝女巫" "既然你这么说,那我会让你知道我比她要强一百倍!"
 
 # game/BKevents.rpy:5553
 translate schinese contract_MC_event_5d24430e:
 
     # "Red witch" "No way... I would give you the time of your life!"
-    "红女巫" "不可能...我会让你玩个够!"
+    "红女巫" "不可能...我可以和你干个爽!"
 
 # game/BKevents.rpy:5555
 translate schinese contract_MC_event_f394583d:
@@ -5350,7 +5350,7 @@ translate schinese contract_MC_event_f394583d:
 translate schinese contract_MC_event_5cd3446e:
 
     # "Red witch" "I'll make you eat your words... You, come here!"
-    "红女巫" "我要让你为自己的话后悔...你过来!"
+    "红女巫" "我要让你后悔说这些话...给老娘过来!"
 
 # game/BKevents.rpy:5566
 translate schinese contract_MC_event_8ca35f73:
@@ -5386,7 +5386,7 @@ translate schinese contract_MC_event_0c37367a:
 translate schinese contract_MC_event_95d1b380:
 
     # "You cover both girls in sticky cum as they finally cum together."
-    "你把这两个女孩都弄得黏糊糊的,她们终于一起高潮了。"
+    "你把这两个女孩都弄得香汗淋漓,她们最终一起高潮了。"
 
 # game/BKevents.rpy:5586
 translate schinese contract_MC_event_f8a33027:
@@ -5404,7 +5404,7 @@ translate schinese contract_MC_event_c796d623:
 translate schinese contract_MC_event_bb1f783e:
 
     # "Blue witch" "No way..."
-    "蓝女巫" "不可能..."
+    "蓝女巫" "这不可能..."
 
 # game/BKevents.rpy:5592
 translate schinese contract_MC_event_99f027b8:
@@ -5416,49 +5416,49 @@ translate schinese contract_MC_event_99f027b8:
 translate schinese contract_MC_event_0142d2aa:
 
     # "Blue witch" "So that's why you interrupted our fight... Only a horny idiot that doesn't value his life could have done that... *thoughtful*"
-    "蓝女巫" "原来如此,所以你才打断我们的战斗...只有傻子才会做出这种危险的事情... *思考中*"
+    "蓝女巫" "原来如此,所以你才插手我们的战斗...只有傻子才会做出这种危险的事情... *思考中*"
 
 # game/BKevents.rpy:5598
 translate schinese contract_MC_event_2132bcd3:
 
     # "Red witch" "Well, it is true that I wouldn't want to get a scar on my cute face... I just spent a week at the spa to get my skin smoother..."
-    "红女巫" "的确,我可不想在我那可爱的脸上留下伤疤...我刚刚在水疗中心花了一周时间让皮肤变得更滑顺..."
+    "红女巫" "的确,我可不想在我那可爱的脸上留下伤疤...我才在水疗中心花了一周时间让皮肤变得更滑顺..."
 
 # game/BKevents.rpy:5600
 translate schinese contract_MC_event_7ceb305a:
 
     # "Blue witch" "Stranger, it just occurred to me that I am too good to waste my time fighting with half-wits or entertaining stupid interruptions by the general public. I'm leaving this dumb summit."
-    "蓝女巫" "陌生人,我突然发现我实在是太好了,不应该浪费时间和白痴们战斗或接受普通大众的愚蠢打扰。我要离开这个愚蠢的会场了。"
+    "蓝女巫" "陌生人,我突然觉得我还是太善良了,不应该浪费时间和白痴们战斗或接受普通大众的愚蠢打扰。我要离开这个愚蠢的会场了。"
 
 # game/BKevents.rpy:5602
 translate schinese contract_MC_event_ae2763a7:
 
     # "Red witch" "And {i}I{/i} just realized I had a priority appointment for a manicure. This is a much better use of my day than lowering myself to fight with the mentally-ill. I'm out!"
-    "红女巫" "而{i}我{/i}刚刚意识到我还有一个紧急的美甲预约。这比屈尊与精神有问题的人战斗要好得多。我得走了!"
+    "红女巫" "而{i}我{/i}刚刚想起来我还有一个紧急的美甲预约。这比屈尊与精神病战斗要重要得多。我也得走了!"
 
 # game/BKevents.rpy:5604
 translate schinese contract_MC_event_6ce9e5a0:
 
     # "Both witches leave the [con.venue] with their head up high. The party breathes a sigh of relief."
-    "两个女巫高傲地离开了[con.venue],现场的人都松了口气。"
+    "两个女巫高傲地离开了[con.venue],在场的人都松了口气。"
 
 # game/BKevents.rpy:5607
 translate schinese contract_MC_event_74664497:
 
     # you "No, listen... It doesn't matter if you were both high school sluts..."
-    you "不,听着...不管你们是不是高中时代的荡妇..."
+    you "不,听着...不管你们在高中时代有多淫荡..."
 
 # game/BKevents.rpy:5609
 translate schinese contract_MC_event_1ebc8545:
 
     # "Witches" "*together* WHAT DID YOU CALL US?" with vpunch
-    "Witches" "*一起* 你说我们什么?" with vpunch
+    "Witches" "*齐声* 你说什么?" with vpunch
 
 # game/BKevents.rpy:5611
 translate schinese contract_MC_event_0ae2b47f:
 
     # you "No, I meant... I was merely repeating..."
-    you "不,我的意思是...我只是在重复..."
+    you "不,我的意思是...我只是在重复你们说的话..."
 
 # game/BKevents.rpy:5613
 translate schinese contract_MC_event_2452d4ce:
@@ -5470,43 +5470,43 @@ translate schinese contract_MC_event_2452d4ce:
 translate schinese contract_MC_event_d6052b0b:
 
     # "Red witch" "...you..."
-    "红女巫" "...你..."
+    "红女巫" "...你这个臭虫..."
 
 # game/BKevents.rpy:5617
 translate schinese contract_MC_event_429abe1c:
 
     # "Blue witch" "DIE!!!" with vpunch
-    "蓝女巫" "去死!!!" with vpunch
+    "蓝女巫" "去死吧!!!" with vpunch
 
 # game/BKevents.rpy:5622
 translate schinese contract_MC_event_a5de4690:
 
     # con.char "Thank you, you stopped this feud before it started... Knowing those two, they probably would have burnt the [con.venue] down."
-    con.char "谢谢你,在这件事恶化之前就阻止了它...知道那两个人,他们可能会把[con.venue]给烧了。"
+    con.char "谢谢你,在这件事恶化之前就阻止了它...要知道那两个人,他们可能会把[con.venue]给烧了。"
 
 # game/BKevents.rpy:5624
 translate schinese contract_MC_event_4ed1f820:
 
     # con.char "As a reward, let me cast an 'energy' spell for you... This is a must with our older gentlemen customers, but I'm sure you will find it useful also."
-    con.char "作为奖励,让我给你施展一个'精力'法术吧...这对我们这些老客户非常有用,相信你也会觉得它很有帮助。"
+    con.char "作为奖励,让我对你施展一个'精力'法术吧...这对我们这些老客户非常有用,相信它也能帮到你。"
 
 # game/BKevents.rpy:5628
 translate schinese contract_MC_event_835e3adf:
 
     # "You have received some extra energy! This will last for 5 days."
-    "你获得了额外的精力!这将持续5天。"
+    "你获得了额外的精力!这个效果将持续5天。"
 
 # game/BKevents.rpy:5632
 translate schinese contract_MC_event_1ff85dd7:
 
     # con.char "I think this bulge in your pants means it's working... Teeheehee..."
-    con.char "我想你裤子里的那个鼓包说明它正在起作用...嘿嘿嘿..."
+    con.char "我想你顶起来的帐篷说明它很管用...嘿嘿嘿..."
 
 # game/BKevents.rpy:5640
 translate schinese contract_MC_event_80f013d0:
 
     # you "HYAAAAAAAH!!!" with vpunch
-    you "喵呜呜呜呜呜!!!" with vpunch
+    you "嘿呀啊啊啊啊!!!" with vpunch
 
 # game/BKevents.rpy:5644
 translate schinese contract_MC_event_2ecbd297:
@@ -5524,31 +5524,31 @@ translate schinese contract_MC_event_3633f9db:
 translate schinese contract_MC_event_69936372:
 
     # con.char "You'll be all right... The shakes should disappear in a couple of days... Probably."
-    con.char "你会没事的...这阵子会有些抖动,大概过几天就会好。"
+    con.char "会没事的...可能走路会有点不稳,大概过几天就会好。"
 
 # game/BKevents.rpy:5652
 translate schinese contract_MC_event_c3aa8100:
 
     # "Your nervous system has been nearly fried up. Your energy will be lower for the next 3 days."
-    "你的神经系统差点儿被烧坏了。未来3天你的精力会较低。"
+    "你的脑子差点儿被烧坏了。未来3天内你的精力将会降低。"
 
 # game/BKevents.rpy:5657
 translate schinese contract_MC_event_483726ff:
 
     # con.char "Oh, [MC.name], is that you? Thank Arios you're here, the orgy was just getting started!"
-    con.char "[MC.name],是你吗?感谢艾略斯你终于来了,淫乱派对正要开始!"
+    con.char "[MC.name],是你吗?感谢太阳神你终于来了,淫乱派对马上就要开始了!"
 
 # game/BKevents.rpy:5659
 translate schinese contract_MC_event_29f0bbae:
 
     # you "Well, I've come to pick up [girl.name]..."
-    you "我来接[girl.name]..."
+    you "我来接[girl.name]回去..."
 
 # game/BKevents.rpy:5661
 translate schinese contract_MC_event_e3560f68:
 
     # con.char "And [girl.name] needed a partner! Perfect! Take off your clothes, and join us!"
-    con.char "而[girl.name]还需要一个伙伴!太好了!脱掉衣服,加入我们吧!"
+    con.char "正好[girl.name]还需要一个伴!来得正好!脱掉衣服,加入我们吧!"
 
 # game/BKevents.rpy:5663
 translate schinese contract_MC_event_82dfdcaf:
@@ -5584,7 +5584,7 @@ translate schinese contract_MC_event_67a04339:
 translate schinese contract_MC_event_72b80a21:
 
     # "You kind of lose track of [girl.name] at some point during the orgy. When you finally find her, she is covered with a dozen men's cum."
-    "你在群交中不小心丢失了[girl.name],等你终于找到她的时候,她全身都是别人的精液."
+    "你在群交时和[girl.name]走散了,等你找到她的时候,她全身上下都是别人的精液."
 
 # game/BKevents.rpy:5725
 translate schinese contract_MC_event_4a53dfec:
@@ -5596,31 +5596,31 @@ translate schinese contract_MC_event_4a53dfec:
 translate schinese contract_MC_event_6db95300:
 
     # girl.char "Master [MC.name]..."
-    girl.char "主人[MC.name]..."
+    girl.char "[MC.name]..."
 
 # game/BKevents.rpy:5735
 translate schinese contract_MC_event_e5d0537b:
 
     # "[girl.fullname]'s [act] preference has raised significantly."
-    "[girl.fullname]的[act]偏好明显提高了."
+    "[girl.fullname]对[act]的偏好大幅提升。"
 
 # game/BKevents.rpy:5742
 translate schinese contract_warning_1week_1dacc5df:
 
     # jobgirl "Reminder: You have an upcoming contract ([calendar.active_contract.title]) in 7 days."
-    jobgirl "提醒:你有一个在7天后的合约([calendar.active_contract.title])."
+    jobgirl "注意:7天后就要履行合约了([calendar.active_contract.title])."
 
 # game/BKevents.rpy:5748
 translate schinese contract_warning_1day_352de91f:
 
     # jobgirl "Reminder: You have an upcoming contract ([calendar.active_contract.title]) tomorrow!"
-    jobgirl "提醒:你有一个明天的合约([calendar.active_contract.title])!"
+    jobgirl "注意:明天就要履行合约了([calendar.active_contract.title])!"
 
 # game/BKevents.rpy:5787
 translate schinese tax_intro_8ba518dc:
 
     # "One morning, you are busy going over last night's accounts with Sill when you receive an unexpected visit."
-    "有一天早上,你正在和Sill核查昨晚的账目,突然收到了一位意料之外的访客."
+    "一天早上,你正在和希露核查昨晚的账目,突然来了一位意料之外的访客。"
 
 # game/BKevents.rpy:5804
 translate schinese tax_intro_1ae739f9:
@@ -5637,20 +5637,20 @@ translate schinese tax_intro_81cb70af:
 # game/BKevents.rpy:5808
 translate schinese tax_intro_e3723821:
 
-    # "The strange woman takes her time detailing every feature in the room, before arresting her eyes on Sill."
-    "那位神秘的女士仔细端详了房间里的每一个细节,最终将目光落在了Sill身上."
+    # "The strange woman takes her time detailing every feature in the room, before arresting her eyes on 希露."
+    "那位神秘的女士仔细端详了房间里的每一个细节,最终将目光落在了希露身上。"
 
 # game/BKevents.rpy:5810
 translate schinese tax_intro_ac875509:
 
     # taxgirl "You. You're a slave, aren't you?"
-    taxgirl "你.你是个奴隶,对吗?"
+    taxgirl "你，是个奴隶,对吗?"
 
 # game/BKevents.rpy:5812
 translate schinese tax_intro_d34f02b5:
 
     # taxgirl "I can feel it in your magical aura. Yet you seem quite powerful for a mere whore..."
-    taxgirl "我能感觉到你身上的魔力气息.不过对一个小妓女来说,你的力量还真不小..."
+    taxgirl "我能感觉到你身上的魔力波动.不过对一个小妓女来说,你的魔力量还真不少..."
 
 # game/BKevents.rpy:5816
 translate schinese tax_intro_b701d852:
@@ -5662,49 +5662,49 @@ translate schinese tax_intro_b701d852:
 translate schinese tax_intro_33aac2de:
 
     # sill "I'm sir [MC.name]'s personal assistant, I'll have you know..."
-    sill "我是主人[MC.name]的私人助理,知道吗..."
+    sill "我是[MC.name]的私人助理,知道吗..."
 
 # game/BKevents.rpy:5820
 translate schinese tax_intro_00e67b51:
 
     # "The woman gives Sill an impassible look."
-    "女士给了Sill一个看不出任何情绪的眼神."
+    "女士给了希露一个看不出任何情绪的眼神。"
 
 # game/BKevents.rpy:5822
 translate schinese tax_intro_2e627952:
 
     # sill "Master! Tell this woman..."
-    sill "主人!告诉这个女士..."
+    sill "主人!告诉她..."
 
 # game/BKevents.rpy:5825
 translate schinese tax_intro_d507d40c:
 
     # you "Sill is..." nointeract
-    you "Sill是..." nointeract
+    you "希露是..." nointeract
 
 # game/BKevents.rpy:5829
 translate schinese tax_intro_b4005547:
 
     # you "It's true. Sill is my valuable assistant, and I trust her with all of my personal and business matters."
-    you "没错,Sill是我非常宝贵的助理,我将所有的私人和事务都托付给她."
+    you "没错,希露是我的得力助手,我把所有的私人事务都交给她负责。"
 
 # game/BKevents.rpy:5833
 translate schinese tax_intro_261c5433:
 
     # sill happy "Oh, Master! *blush*"
-    sill happy "主人!*脸红*"
+    sill happy "别这么说嘛!*脸红*"
 
 # game/BKevents.rpy:5835
 translate schinese tax_intro_754aff0c:
 
     # taxgirl "Really? Odd, a pimp getting sentimental about a sex slave... Well, it takes all kinds."
-    taxgirl "真的吗?一个皮条客竟然会对一个性奴产生sentime...呵,人各有不同."
+    taxgirl "真的吗?一个皮条客竟然会对一个性奴隶产生感情...呵,真是什么人都有。"
 
 # game/BKevents.rpy:5839
 translate schinese tax_intro_f4b25374:
 
     # you "It's true. Sill is no common whore, she is reserved for my personal use."
-    you "没错,Sill不是一般的妓女,她是为我个人使用的."
+    you "没错,希露不是普通的妓女,她是我的专属奴隶。"
 
 # game/BKevents.rpy:5842
 translate schinese tax_intro_26e27cbf:
@@ -5716,43 +5716,43 @@ translate schinese tax_intro_26e27cbf:
 translate schinese tax_intro_2cc3c47d:
 
     # taxgirl "A sex slave is a sex slave. You make her feel special one day, then sell her the next day to a gang bang joint down the street..."
-    taxgirl "性奴就是性奴,你今天让她觉得很特别,明天就把她卖给某个下流场所..."
+    taxgirl "性奴就是性奴,你今天可能让她觉得她很特别,明天就会把她卖给某个下流的场所..."
 
 # game/BKevents.rpy:5846
 translate schinese tax_intro_b4b0df99:
 
     # sill "No!"
-    sill "不是的!"
+    sill "不会的!"
 
 # game/BKevents.rpy:5852
 translate schinese tax_intro_f80ca6a9:
 
     # you "Sill is just one of my many cum dumps. Perhaps when I tire of her, I'll let some vagrants use her as they see fit..."
-    you "Sill只是我众多泄欲工具之一.也许等我腻了她,就随便让一些乞丐随意使用她..."
+    you "希露只是我众多泄欲的工具之一.也许等我玩腻了,就把她丢给流浪汉随便玩..."
 
 # game/BKevents.rpy:5854
 translate schinese tax_intro_2f64ec98:
 
     # "Sill's jaw drops, and she becomes livid."
-    "Sill的下巴掉了下来,她变得非常愤怒."
+    "希露惊得下巴都掉了,她变得非常愤怒。"
 
 # game/BKevents.rpy:5856
 translate schinese tax_intro_8bf635bd:
 
     # taxgirl "Cold... I wonder if you mean it."
-    taxgirl "太冷了...我不知道你是否真心的。"
+    taxgirl "太无情了...我不知道你是不是在装狠。"
 
 # game/BKevents.rpy:5858
 translate schinese tax_intro_303aea1a:
 
     # "The woman moves closer to Sill, her gaze unflinching."
-    "那个女人走近了Sill,目光坚定。"
+    "那个女人走近了希露,目光坚定。"
 
 # game/BKevents.rpy:5860
 translate schinese tax_intro_80f01e70:
 
     # sill "What do you..."
-    sill "你想要..."
+    sill "你想干嘛..."
 
 # game/BKevents.rpy:5864
 translate schinese tax_intro_5fde57c1:
@@ -5764,43 +5764,43 @@ translate schinese tax_intro_5fde57c1:
 translate schinese tax_intro_428167e9:
 
     # "The woman reaches under Sill's dress and squeezes her butt, hard."
-    "那个女人伸手到Sill的裙子下,狠狠捏住她的屁股。"
+    "那个女人把手伸到希露的裙子底下,狠狠捏了一把她的屁股。"
 
 # game/BKevents.rpy:5868
 translate schinese tax_intro_c3ac51c2:
 
     # taxgirl "Firm, yet supple... Good thighs, youthful breasts..."
-    taxgirl "结实而又柔软...大腿不错,年轻的乳房..."
+    taxgirl "结实而又柔软...大腿线条不错,挺拔的乳房..."
 
 # game/BKevents.rpy:5870
 translate schinese tax_intro_89e7a4a1:
 
     # taxgirl "It seems your wares are of better quality than this poor setting advertises."
-    taxgirl "看起来你的货比这穷酸的环境要好得多。"
+    taxgirl "看起来你的身体素质要比这间青楼的水平高得多。"
 
 # game/BKevents.rpy:5872
 translate schinese tax_intro_ece6eaec:
 
     # you "Enough! You barge in here, criticize my establishment, molest my, er, personal slave... Who are you, and what do you want?"
-    you "够了!你闯进来,批评我的店铺,骚扰我的,呃,私人奴隶...你是谁,你想要什么?"
+    you "够了!你不请自来,还大放厥词,骚扰我的,呃,私人奴隶...你是什么人,你是来做什么的?"
 
 # game/BKevents.rpy:5874
 translate schinese tax_intro_086b0765:
 
     # taxgirl "Of course. Forgive me for not introducing myself, I'm not a big fan of pointless social niceties."
-    taxgirl "当然。请原谅我没有自我介绍,我并不太喜欢无谓的社交礼节。"
+    taxgirl "当然。请原谅我还没有自我介绍,我并不太喜欢无用的社交礼节。"
 
 # game/BKevents.rpy:5876
 translate schinese tax_intro_16d11e02:
 
     # taxgirl "I'm the local liaison officer for the Slavers' Guild. I'm going to handle your account."
-    taxgirl "我是奴隶商贸公会的当地联络官。我会处理你的账目。"
+    taxgirl "我是奴隶商人公会的当地税务官。我会清点你的账目。"
 
 # game/BKevents.rpy:5880
 translate schinese tax_intro_51b1ba07:
 
     # you "Handle my... what? I don't understand..."
-    you "处理我的...什么?我不明白..."
+    you "清点我的...什么?我不明白..."
 
 # game/BKevents.rpy:5882
 translate schinese tax_intro_b408be08:
@@ -5812,19 +5812,19 @@ translate schinese tax_intro_b408be08:
 translate schinese tax_intro_6845225d:
 
     # taxgirl "Do you need me to explain everything?" nointeract
-    taxgirl "我需要给你解释一切吗?" nointeract
+    taxgirl "需要让我为你解释一下吗?" nointeract
 
 # game/BKevents.rpy:5892
 translate schinese tax_intro_d6da436c:
 
     # you "I get it. You'll come here on the 15th of every month, tell me how much money I owe, then come to collect on the 1st day of the next month. Oh joy."
-    you "我明白了。每月15号你都会来这里告诉我我欠了多少钱,然后在下个月的1号来收款。好极了。"
+    you "我明白了。每个月的15号你都会来告诉我要交多少税,然后在下个月的1号来收钱。很好理解。"
 
 # game/BKevents.rpy:5894
 translate schinese tax_intro_c9a0833d:
 
     # taxgirl "Seems like you know everything already. Very well. Our accountants tell me that this month's payment is going to be {b}[NPC_taxgirl.current_tax]{/b} denars. See you on the 1st."
-    taxgirl "看来你已经了解了一切。很好。我们的会计告诉我,这个月的交款是{b}[NPC_taxgirl.current_tax]{/b}金币。我会在1号见你。"
+    taxgirl "看来你已经了解了一切。很好。我们的会计告诉我,这个月的税款是{b}[NPC_taxgirl.current_tax]{/b}金币。我会在1号再来找你。"
 
 # game/BKevents.rpy:5901
 translate schinese tax_intro_5b8cbdb4:
@@ -5842,13 +5842,13 @@ translate schinese tax_intro_65dc13d5:
 translate schinese tax_intro_ab28eeb8:
 
     # you "Well, I suppose they're a necessary evil. Someone has to fund all the public services that we enjoy, such as the Court torturers and executioners..."
-    you "嗯,我想它们是一种必要的恶。总得有人为我们享有的公共服务,比如法庭刽子手和行刑官,提供资金支持。"
+    you "嗯,我想它们是一种必要的恶。总得有人为我们享有的公共服务,比如刽子手和行刑官,提供资金支持。"
 
 # game/BKevents.rpy:5910
 translate schinese tax_intro_d4e21d34:
 
     # taxgirl "How sheepish of you. Nevertheless, I'm sure you're not eager to line the King's coffers with your hard-earned gold..."
-    taxgirl "真是羞愧。不过,我相信你并不急于把你辛苦赚来的金币塞进国王的腰包..."
+    taxgirl "你还真好意思说啊。不过,我相信你也不想把你辛苦赚来的金币塞进国王的腰包..."
 
 # game/BKevents.rpy:5912
 translate schinese tax_intro_685847ec:
@@ -5860,13 +5860,13 @@ translate schinese tax_intro_685847ec:
 translate schinese tax_intro_72f042f7:
 
     # you "Taxes! Ha, I hate taxes! Who needs them? The thieving State, that's who!"
-    you "税收!哈,我恨税收!谁要它们?那些小偷一般的国家,就是不行!"
+    you "税收!哈,我恨税收!谁需要要它们?那些强盗一般的国家,就是不行!"
 
 # game/BKevents.rpy:5918
 translate schinese tax_intro_614ac67d:
 
     # taxgirl "Exactly! And what did the State ever do for us?"
-    taxgirl "正是!国家给我们带来了什么?"
+    taxgirl "说得对!国家都为我们做了什么?"
 
 # game/BKevents.rpy:5920
 translate schinese tax_intro_b16f2e07:
@@ -5878,13 +5878,13 @@ translate schinese tax_intro_b16f2e07:
 translate schinese tax_intro_93790edd:
 
     # sill "There's sanitation, medicine, education, foodbanks, public order, irrigation, roads, a fresh water system, public heal-"
-    sill "卫生设施、医疗、教育、食物银行、公共秩序、灌溉、道路、自来水系统、公共卫... "
+    sill "卫生设施、医疗、教育、食物储备、公共秩序、灌溉、道路、自来水系统、公共卫... "
 
 # game/BKevents.rpy:5924
 translate schinese tax_intro_8cda1bdc:
 
     # taxgirl "That's right, nothing! My point exactly!" with vpunch
-    taxgirl "没有,什么也没有!这正是我的观点!" with vpunch
+    taxgirl "没有,什么也没有!就像我说的那样!" with vpunch
 
 # game/BKevents.rpy:5926
 translate schinese tax_intro_2258de27:
@@ -5896,19 +5896,19 @@ translate schinese tax_intro_2258de27:
 translate schinese tax_intro_55a85432:
 
     # you "Taxes are... not the fucking point! What do you want?" with vpunch
-    you "税收!不是重点!你想要什么?" with vpunch
+    you "税收!这不是重点!你想要干什么?" with vpunch
 
 # game/BKevents.rpy:5931
 translate schinese tax_intro_ee58839c:
 
     # taxgirl "Easy. I have a proposal for you. A {i}business{/i} proposal."
-    taxgirl "简单。我有个提议给你。一个{i}生意{/i}提议。"
+    taxgirl "简单。我有个提议。一个关于{i}生意{/i}的提议。"
 
 # game/BKevents.rpy:5933
 translate schinese tax_intro_0554e33d:
 
     # taxgirl "See, you're just another upstart in this city, fresh off the boat with a brand new licence. But as soon as you start making any real money, the King's tax collectors are going to flock to you like vultures on a smelly carcass."
-    taxgirl "你只是这个城市里新冒头的一个家伙,刚拿到执照就来这里。但是一旦你开始赚大钱,国王的税务人员就像秃鹫一样会扑向你这个臭肉。"
+    taxgirl "你只是个初来乍到的家伙,一拿到执照就来这里。但是一旦你开始赚钱,官方的税务人员就像秃鹫一样会扑向你这块肥肉。"
 
 # game/BKevents.rpy:5935
 translate schinese tax_intro_e3b7704a:
@@ -5920,43 +5920,43 @@ translate schinese tax_intro_e3b7704a:
 translate schinese tax_intro_ddfceb23:
 
     # taxgirl "They'll drive you out of business in no time. But what if..."
-    taxgirl "他们肯定会迅速把你赶出这个行业。但是如果我告诉你有一种方法可以{i}避免{/i}国王的税费呢?"
+    taxgirl "他们肯定会迅速地把你赶出这个行业。但是如果我告诉你有一种方法可以{i}规避{/i}政府的税收呢?"
 
 # game/BKevents.rpy:5939
 translate schinese tax_intro_dce3c679:
 
     # taxgirl "What if I told you there was a way to {i}avoid{/i} the King's taxes entirely?"
-    taxgirl "如果我告诉你有一种方法可以{i}避免{/i}国王的税费呢?"
+    taxgirl "如果我告诉你有一种方法可以{i}规避{/i}政府的税收呢?"
 
 # game/BKevents.rpy:5941
 translate schinese tax_intro_d03d6bd7:
 
     # you "Uh? You've got my attention."
-    you "啊?你引起了我的注意。"
+    you "啊?这我确实很感兴趣。"
 
 # game/BKevents.rpy:5943
 translate schinese tax_intro_35921915:
 
     # taxgirl "As a sex slave owner, you are entitled to the protection of the Slavers' Guild. And we cast a long shadow in this city. Perhaps you've heard of our leader, Cloud?"
-    taxgirl "作为性奴隶的所有者,你有权获得奴隶公会的保护。我们在这个城市里影响力很大。也许你听说过我们的领导人Cloud?"
+    taxgirl "作为性奴隶的主人,你有权获得奴隶公会的保护。我们在这个城市里影响力很大。也许你听说过我们的领导人克劳德?"
 
 # game/BKevents.rpy:5945
 translate schinese tax_intro_29bd28e4:
 
     # you "Maybe. Who's that, precisely?"
-    you "也许吧。那个人是谁呢?"
+    you "有点耳熟。那个人是谁?"
 
 # game/BKevents.rpy:5947
 translate schinese tax_intro_24026821:
 
     # taxgirl "Well, even I don't know his exact identity. Cloud is a very discreet man... or woman."
-    taxgirl "嗯,连我都不知道他/她的真实身份。Cloud是个很低调的人...或者说女人。"
+    taxgirl "嗯,连我也不知道他/她的真实身份。克劳德是个很低调的人...或者说女人。"
 
 # game/BKevents.rpy:5949
 translate schinese tax_intro_adabf363:
 
     # taxgirl "But Cloud holds half the court under his or her thumb, and rumor has it, even the King himself. Enough to make all your tax worries disappear..."
-    taxgirl "但是Cloud掌控着半个皇廷,据说连国王也在他/她的控制之下。足以让你的所有税收烦恼都烟消云散..."
+    taxgirl "但是克劳德暗中掌控着半个国家,据说连国王也在他/她的控制之下。他的力量足以让你所有的税收烦恼都烟消云散..."
 
 # game/BKevents.rpy:5951
 translate schinese tax_intro_6394e86a:
@@ -5968,25 +5968,25 @@ translate schinese tax_intro_6394e86a:
 translate schinese tax_intro_d9197cd3:
 
     # taxgirl "...provided you pay us protection money."
-    taxgirl "...只要你支付我们的保护费。"
+    taxgirl "...只要你向我们交保护费。"
 
 # game/BKevents.rpy:5955
 translate schinese tax_intro_20896c97:
 
     # you "Doh!" with vpunch
-    you "真倒霉!" with vpunch
+    you "我就知道!" with vpunch
 
 # game/BKevents.rpy:5957
 translate schinese tax_intro_49f6fdcb:
 
     # you "Wait a minute... So in order to avoid the King's tax, I have to pay your Guild's... tax?"
-    you "等等...所以为了避免国王的税收,我必须支付你公会的...税收?"
+    you "等等...所以为了规避政府的税收,我就要支付给公会...税收?"
 
 # game/BKevents.rpy:5959
 translate schinese tax_intro_848533e4:
 
     # taxgirl "We really prefer the term 'progressive membership fee'. It gives you access to a range of services, such as the special business lounge at the harbor when waiting for your ship to arrive. There's lobster."
-    taxgirl "我们更喜欢称之为'渐进式会费'。它可以让你享受到一系列服务,比如在码头等待船只时使用特殊的商务休息室。那里有龙虾。"
+    taxgirl "我们更喜欢称之为'累计式会费'。它可以让你享受到一系列服务,比如在码头等待船只时享受特殊的商务休息室。你可以吃到免费的龙虾。"
 
 # game/BKevents.rpy:5963
 translate schinese tax_intro_e71459ee:
@@ -5998,55 +5998,55 @@ translate schinese tax_intro_e71459ee:
 translate schinese tax_intro_93e2878a:
 
     # taxgirl "But listen: unlike the King's lackeys, we're not about to bleed you dry. We like our members to thrive, after all."
-    taxgirl "但请听着:不像国王的爪牙,我们可不会榨干你的钱。毕竟,我们希望会员能够繁荣发展。"
+    taxgirl "但请听着:我们可不会像政府的爪牙一样把你吃干抹净。毕竟,我们也希望会员能够飞黄腾达。"
 
 # game/BKevents.rpy:5967
 translate schinese tax_intro_ae5bd5e8:
 
     # you "*sigh* There's no escaping swindlers in this town, I see. I suppose now you're going to say that it's 'an offer that I can't refuse', aren't you?"
-    you "*叹息*在这个城镇里,逃脱不了剥削者,我看到了。我想你现在要说这是'一个我无法拒绝的要约',对吗?"
+    you "*叹息*我意识到在这里你永远也无法躲避剥削和压榨。我想你现在要说这是'一个我无法拒绝的邀请',对吗?"
 
 # game/BKevents.rpy:5969
 translate schinese tax_intro_d60d586e:
 
     # taxgirl "It's an offer that you can't... Wait! That was my line."
-    taxgirl "这确实是一个你无法拒绝的要约。等等!那句台词是我的。"
+    taxgirl "这确实是一个你无法拒绝的邀请。等等!那句台词是我的。"
 
 # game/BKevents.rpy:5971
 translate schinese tax_intro_099d6fc9:
 
     # taxgirl "Anyway, only death and taxes are inevitable, my dear. And even so, we've got some very good necromancers these days... So maybe only taxes."
-    taxgirl "总之,只有死亡和税收是不可避免的,亲爱的。而即使如此,现在我们也有一些很优秀的死灵法师...所以也许只有税收是不可避免的。"
+    taxgirl "总之,只有死亡和税收是不可避免的,亲爱的。不过,现在我们手下也有一些很优秀的死灵法师...所以也许只有税收是不可避免的。"
 
 # game/BKevents.rpy:5973
 translate schinese tax_intro_0760ca71:
 
     # you "But wait... I have questions."
-    you "但等等...我有一些问题。"
+    you "等等...我还有一些问题。"
 
 # game/BKevents.rpy:5975
 translate schinese tax_intro_3ad7b2de:
 
     # taxgirl "Of course."
-    taxgirl "当然。"
+    taxgirl "请说。"
 
 # game/BKevents.rpy:5982
 translate schinese tax_intro_menu_b9d17dfd:
 
     # you "Okay, suppose I accept your deal. How would it work?"
-    you "好的,假设我接受了你的交易。它是怎么运作的?"
+    you "好的,假设我接受了你的提议。我该怎么做?"
 
 # game/BKevents.rpy:5984
 translate schinese tax_intro_menu_aa609d35:
 
     # taxgirl "It's very simple. We'll place a magic seal in your accounting books, which will tell us your net income at the end of every month."
-    taxgirl "非常简单。我们会在你的账簿上放置一个魔法印章,它可以在每个月底告诉我们你的净收入。"
+    taxgirl "非常简单。我们会在你的账簿上铭刻一个魔法印章,它可以在每个月底告诉我们你的净利润。"
 
 # game/BKevents.rpy:5986
 translate schinese tax_intro_menu_d0dda879:
 
     # taxgirl "Don't even think of tampering with it - it'll have a very powerful shrinking-dick curse attached with your name on it."
-    taxgirl "不要妄想去动它 - 它会附带一个非常强大的小鸡鸡缩小诅咒,上面还会有你的名字。"
+    taxgirl "不要妄想去动它 - 它附带着一个非常强大的小鸡鸡缩小诅咒,上面还会刻着你的名字。"
 
 # game/BKevents.rpy:5988
 translate schinese tax_intro_menu_8040c233:
@@ -6058,13 +6058,13 @@ translate schinese tax_intro_menu_8040c233:
 translate schinese tax_intro_menu_d9371b60:
 
     # taxgirl "I will announce the fee you owe us on the 15th of every month. It's a very simple formula involving 10 different progressive tax brackets, the district you're in, the weather over the last 47 days and in what mood I woke up on that particular morning."
-    taxgirl "我会在每月15日宣布你应该支付我们的费用。这是一个非常简单的公式,涉及10个不同的渐进税率,你所在的区域,过去47天的天气以及我当天的心情。"
+    taxgirl "我会在每月15日告诉你要支付多少费用。这是一个非常简单的公式,涉及10个不同的渐进税率,你所在的区域,过去47天的天气以及我当天的心情。"
 
 # game/BKevents.rpy:5992
 translate schinese tax_intro_menu_5ede5581:
 
     # taxgirl "Also, there is a little bit of membership fee inflation. {b}The membership fee may increase every month.{/b} But this progression will be reset every time you move to a new district."
-    taxgirl "另外,还有一点会费涨价。{b}会费每月可能会增加。{/b}但每次换区域时,这个递增会重置。"
+    taxgirl "另外,有关会费涨价。{b}会费每个月可能都会增加。{/b}但每当你到新的区域开始经营时,涨价的倍率会重置。"
 
 # game/BKevents.rpy:5994
 translate schinese tax_intro_menu_f32aae98:
@@ -6076,7 +6076,7 @@ translate schinese tax_intro_menu_f32aae98:
 translate schinese tax_intro_menu_02993caf:
 
     # taxgirl "Let's say it's a little nudge to keep you moving in the right direction. The guild takes an 'up or out' approach to its membership..."
-    taxgirl "可以说这是一种让你沿着正确方向前进的小小推动。公会采取'上升或淘汰'的会员政策..."
+    taxgirl "可以说这是一种让你沿着正确方向前进的小小动力。公会采取'末位淘汰制'的会员政策..."
 
 # game/BKevents.rpy:5998
 translate schinese tax_intro_menu_6adf3435:
@@ -6088,19 +6088,19 @@ translate schinese tax_intro_menu_6adf3435:
 translate schinese tax_intro_menu_bb29446b:
 
     # taxgirl "And also remember that {b}the more time passes in a district, the more it will cost{/b}. But don't worry, there's an upper limit we won't breach."
-    taxgirl "同时也要记住{b}在一个区域待的时间越长,费用也会越高{/b}。但别担心,我们不会突破上限。"
+    taxgirl "同时也要记住{b}在一个区域待的时间越长,费用也会越高{/b}。但别担心,这是有上限的。"
 
 # game/BKevents.rpy:6006
 translate schinese tax_intro_menu_843af735:
 
     # taxgirl "The fee will be announced on the 15th of every month."
-    taxgirl "费用会在每月15日公布。"
+    taxgirl "费用会在每月15日告诉你。"
 
 # game/BKevents.rpy:6008
 translate schinese tax_intro_menu_699d3d47:
 
     # taxgirl "I will come to collect on {b}the 1st of the next month{/b}. Ample time to prepare the adequate sum."
-    taxgirl "我会在下个月{b}1日{/b}来收款。这给你足够的时间准备足够的金额。"
+    taxgirl "我会在下个月{b}1日{/b}来收款。这会给你足够的时间准备足够的金额。"
 
 # game/BKevents.rpy:6010
 translate schinese tax_intro_menu_03ac3aec:
@@ -6124,31 +6124,31 @@ translate schinese tax_intro_menu_c68e0f7a:
 translate schinese tax_intro_menu_222b26a9:
 
     # taxgirl "But without protection money, it's possible that a squad of goons headed by a one-eyed ogre called 'Gutspill' will visit your brothel at night, set fire to the place, and chop your manhood off..."
-    taxgirl "但是没有保护费,可能会有一支由一只独眼食人魔'肠裂'率领的打手晚上来你的青楼,纵火烧毁,并砍掉你的下身..."
+    taxgirl "但是如果你不交保护费,可能会有一支由人称“裂肠者”的独眼食人魔率领的暴力团伙夜袭你的青楼,烧杀抢掠,并砍掉你的下半身..."
 
 # game/BKevents.rpy:6022
 translate schinese tax_intro_menu_daac11c7:
 
     # taxgirl "Unless of course the King's collectors find you first because of an anonymous tip that you're hoarding some treasure, and decide to torture you to know where you stashed your cash."
-    taxgirl "当然,如果国王的税收人员因为匿名举报你藏有宝藏而先找到你,也可能会折磨你,逼问你把钱藏在哪里。"
+    taxgirl "当然,如果政府的税收人员因为匿名举报说你藏有一大笔钱而先找到你,也可能会对你严刑逼供,问你把钱藏在哪里。"
 
 # game/BKevents.rpy:6024
 translate schinese tax_intro_menu_311e16fa:
 
     # taxgirl "Those are all hypotheticals, of course. We wouldn't know anything about that. *smirk*"
-    taxgirl "这些都只是假设罢了。我们并不知道具体情况。*邪笑*"
+    taxgirl "不过这些都只是假设罢了。谁知道会发生什么呢。*邪笑*"
 
 # game/BKevents.rpy:6027
 translate schinese tax_intro_menu_0ab67b2e:
 
     # you "Hmpf. I've seen worse in the war."
-    you "哼。我在战争中见过更糟的。"
+    you "哼。我在战争中见过更可怕的。"
 
 # game/BKevents.rpy:6029
 translate schinese tax_intro_menu_6c71a35a:
 
     # taxgirl "You may be a good fighter, but eventually you'll let your guard down... Everyone has to sleep..."
-    taxgirl "你可能是个很好的战士,但最终也会放松警惕...每个人都需要睡眠..."
+    taxgirl "你可能是个很优秀的战士,但人总会放松警惕...每个人都需要睡眠..."
 
 # game/BKevents.rpy:6032
 translate schinese tax_intro_menu_438297c0:
@@ -6160,43 +6160,43 @@ translate schinese tax_intro_menu_438297c0:
 translate schinese tax_intro_menu_e2d1ffce:
 
     # taxgirl "Did I mention we have access to some of the best sorcerers in the city? I'm sure you'd hate it if a zombified whore accidentally bit off your manhood..."
-    taxgirl "我有没有提过,我们有很多城里最好的法师?我敢肯定你会很讨厌一个被僵尸化的妓女意外咬掉你的下身..."
+    taxgirl "我有没有提过,我们手下有很多城里最好的法师?我敢肯定你会很讨厌一个被僵尸化的妓女意外咬掉你的下身..."
 
 # game/BKevents.rpy:6037
 translate schinese tax_intro_menu_f8a30259:
 
     # you "You think? I've got a pet dragon who might have a thing or two to say to that..."
-    you "你这么说?我有一条宠物龙,或许能对此作出一些回应..."
+    you "你这样想?我有一条宠物龙,或许能对此作出一些反击..."
 
 # game/BKevents.rpy:6039
 translate schinese tax_intro_menu_28185add:
 
     # taxgirl "You shouldn't boast about it too much. Dragonscale boots are all the rage with Zan nobility these days... And monster hunters are a dime a dozen."
-    taxgirl "你不应该太过吹嘘它。龙鳞靴可是最近尚达贵族的流行单品...而猎人也是比比皆是。"
+    taxgirl "你把它想得太万能了。龙鳞靴可是最近在泽恩贵族中流行的服饰...而猎龙人也是比比皆是。"
 
 # game/BKevents.rpy:6041
 translate schinese tax_intro_menu_1b4c41e0:
 
     # you "Grrr... You're leaving me no choice, are you?"
-    you "咆哮...看来你是逼着我别无选择了。"
+    you "咆哮...看来我别无选择了。"
 
 # game/BKevents.rpy:6043
 translate schinese tax_intro_menu_37fe7a03:
 
     # taxgirl "Everyone has a choice. You should just make the right one."
-    taxgirl "每个人都有选择。你应该做出正确的选择。"
+    taxgirl "每个人都能选择。而你应该做出正确的选择。"
 
 # game/BKevents.rpy:6049
 translate schinese tax_intro_menu_7be62fd3:
 
     # "Her eyes grow hard."
-    "她的眼神变得坚硬。"
+    "她的眼神变得坚毅。"
 
 # game/BKevents.rpy:6051
 translate schinese tax_intro_menu_d52c97dd:
 
     # taxgirl "Well, if you can't pay, bad things may happen. Exactly how bad will depend on my judgement."
-    taxgirl "好吧,如果你付不出钱,就可能发生一些不好的事。具体有多糟糕,要看我的判断了。"
+    taxgirl "好吧,如果你不付钱,可能会发生一些不好的事。具体有多糟糕,要看我的判断了。"
 
 # game/BKevents.rpy:6053
 translate schinese tax_intro_menu_b815b9cc:
@@ -6208,37 +6208,37 @@ translate schinese tax_intro_menu_b815b9cc:
 translate schinese tax_intro_menu_8d533bb7:
 
     # you "Fine. I'll pay your fee... *sigh*"
-    you "好吧,我会付你的费用...*叹气*"
+    you "好吧,我会付保护费的...*叹气*"
 
 # game/BKevents.rpy:6064
 translate schinese tax_intro_menu_1d414068:
 
     # "She smiles for the first time. A wolfish smile."
-    "她终于笑了,是一种狼一样的笑容。"
+    "她终于笑了,露出了像狼一样可怕的笑容。"
 
 # game/BKevents.rpy:6066
 translate schinese tax_intro_menu_e29b1c8e:
 
     # taxgirl "Very good. Then we're in business."
-    taxgirl "很好。那么我们就成交了。"
+    taxgirl "很好。那么就这么说定了。"
 
 # game/BKevents.rpy:6068
 translate schinese tax_intro_menu_2ab7d483:
 
     # taxgirl "Since your income is still very modest, we'll only require you to pay a token amount for now... Let's say {b}[NPC_taxgirl.current_tax] denars{/b}."
-    taxgirl "由于你的收入目前还很低,我们只要求你先付一点象征性的费用...不妨说{b}[NPC_taxgirl.current_tax]枚银币{/b}。"
+    taxgirl "由于你的收入目前还很低,我们只要求你先付一点象征性的费用...也就{b}[NPC_taxgirl.current_tax]枚金币{/b}。"
 
 # game/BKevents.rpy:6070
 translate schinese tax_intro_menu_936e21df:
 
     # you "{b}[NPC_taxgirl.current_tax] denars{/b}?"
-    you "{b}[NPC_taxgirl.current_tax]枚银币{/b}?"
+    you "{b}[NPC_taxgirl.current_tax]枚金币{/b}?"
 
 # game/BKevents.rpy:6072
 translate schinese tax_intro_menu_c045a0c6:
 
     # taxgirl "That's right."
-    taxgirl "就是这样。"
+    taxgirl "就这么多。"
 
 # game/BKevents.rpy:6076
 translate schinese tax_intro_menu_e192ca02:
@@ -6250,19 +6250,19 @@ translate schinese tax_intro_menu_e192ca02:
 translate schinese tax_intro_menu_08a40733:
 
     # "Tip" "You can check the Guild Fee amount at any time by hovering above the Gold counter."
-    "Tip" "你随时可以悬停在金钱计数器上,来查看公会费的金额。"
+    "Tip" "你可以通过把鼠标悬停在主界面的金币图标上,来查看保护费的金额。"
 
 # game/BKevents.rpy:6108
 translate schinese tax_check_a12738a4:
 
     # taxgirl "Well, it seems like you won't owe us any money for this month. How disappointing. See you next month, then."
-    taxgirl "看来这个月你不欠我们任何钱。真遗憾。那么下个月见吧。"
+    taxgirl "看来这个月你的收入少得可怜。真遗憾。那么下个月再见吧。"
 
 # game/BKevents.rpy:6133
 translate schinese tax_check_6481b205:
 
     # taxgirl "According to our accountants, you owe us {b}[tx] denars{/b} for last month. [text1]"
-    taxgirl "根据我们的会计记录,你上个月欠我们{b}[tx]枚银币{/b}。[text1]"
+    taxgirl "根据会计分析,你上个月需要缴纳的会费为{b}[tx]枚金币{/b}。[text1]"
 
 # game/BKevents.rpy:6137
 translate schinese tax_check_6b52e31e:
@@ -6274,13 +6274,13 @@ translate schinese tax_check_6b52e31e:
 translate schinese tax_payment_8a64ade7:
 
     # taxgirl "As a reminder, you owe us [NPC_taxgirl.current_tax] denars for last month."
-    taxgirl "提醒您,您上个月需要向我们交纳[NPC_taxgirl.current_tax]金币的税费。"
+    taxgirl "提醒您一句,您上个月需要向我们交纳[NPC_taxgirl.current_tax]金币的会费。"
 
 # game/BKevents.rpy:6172
 translate schinese tax_payment_6234fa9b:
 
     # you "Hmph. Here you go."
-    you "哼,这就给你。"
+    you "哼,拿去吧。"
 
 # game/BKevents.rpy:6178
 translate schinese tax_payment_a9d1d2f2:
@@ -6292,7 +6292,7 @@ translate schinese tax_payment_a9d1d2f2:
 translate schinese tax_payment_d6ad8f77:
 
     # sill happy "It's the 1st! Luckily, the nasty guild woman seems to have forgotten about us this month..."
-    sill happy "今天是1号!看来那个讨厌的工会女也忘记了我们这个月的税费..."
+    sill happy "今天是1号!看来那个讨厌的公会女职员忘记了我们这个月的会费..."
 
 # game/BKevents.rpy:6189
 translate schinese tax_payment_ab689b32:
@@ -6304,7 +6304,7 @@ translate schinese tax_payment_ab689b32:
 translate schinese tax_relationship_test_608e45ea:
 
     # "As you hand the gold over to the guild woman, you feel a jolt of electricity between you and she moans in surprise."
-    "当你把金币交给工会女时,你感受到了一股电流,她惊讶地呻吟了一声。"
+    "当你把金币交给公会女职员时,你感受到了一股电流,她惊讶地呻吟了一声。"
 
 # game/BKevents.rpy:6207
 translate schinese tax_relationship_test_e83b065b:
@@ -6328,31 +6328,31 @@ translate schinese tax_relationship_test_3ec54cd1:
 translate schinese tax_relationship_test_af62b0c0:
 
     # taxgirl "Sure... Give me a moment. It's just a side-effect..."
-    taxgirl "没事,给我一点时间。这只是副作用..."
+    taxgirl "没事,让我缓口气。这只是副作用..."
 
 # game/BKevents.rpy:6215
 translate schinese tax_relationship_test_8e8a75e0:
 
     # you "Side-effect? Of what?"
-    you "副作用?是什么?"
+    you "副作用?什么的副作用?"
 
 # game/BKevents.rpy:6217
 translate schinese tax_relationship_test_fe4a7f68:
 
     # taxgirl "The magic. The powers I use to keep your accounts in check, count the gold..."
-    taxgirl "魔法,我用来保管你的账目,数算金币的那种魔法。"
+    taxgirl "魔法,我用来监管你的账本,核算账目的那种魔法。"
 
 # game/BKevents.rpy:6219
 translate schinese tax_relationship_test_ed7f4b13:
 
     # taxgirl "You see, I wasn't born with the gift."
-    taxgirl "你看,我并非天生就拥有这种天赋。"
+    taxgirl "你看,我并非天生就拥有魔法天赋。"
 
 # game/BKevents.rpy:6222
 translate schinese tax_relationship_test_0c23888d:
 
     # you "Yes, I could feel it in your aura. You're a conduit, aren't you?"
-    you "我能感觉到你的灵气。你是个导魂体,对吗?"
+    you "我能感觉到你体内的灵气。你是某个魔法的魔导媒介,对吗?"
 
 # game/BKevents.rpy:6224
 translate schinese tax_relationship_test_7bfae725:
@@ -6364,55 +6364,55 @@ translate schinese tax_relationship_test_7bfae725:
 translate schinese tax_relationship_test_c6d1e66e:
 
     # taxgirl "When I was a kid, I was one of hundreds of street urchins that lurk in the dark alleys of the city."
-    taxgirl "我小时候是那个城市黑暗小巷中成群结队的流浪儿童之一。"
+    taxgirl "我小时候只是个住在脏臭巷子里的流浪儿，和其他坏孩子混在一起。"
 
 # game/BKevents.rpy:6228
 translate schinese tax_relationship_test_689540ac:
 
     # taxgirl "I was good at lifting purses... Until I got caught picking the pockets of a gentleman who turned out to be one of the Slavers' Guild's masters."
-    taxgirl "我擅长偷钱包...直到被抓住,偷了一个原来是奴隶工会首领的人的口袋。"
+    taxgirl "我擅长偷鸡摸狗...直到有一次我被抓住,我把手伸到了奴隶公会会长的口袋里。"
 
 # game/BKevents.rpy:6230
 translate schinese tax_relationship_test_b08c4c70:
 
     # taxgirl "By all rights, I should have ended up like them..."
-    taxgirl "本该有我这样的下场..."
+    taxgirl "我本来应该和她们一个下场..."
 
 # game/BKevents.rpy:6232
 translate schinese tax_relationship_test_1a15ca5d:
 
     # "She gestures towards the back rooms where your girls are preening themselves for the night."
-    "她向后室做了一个手势,那里你的姑娘们正在打扮自己准备今夜的工作。"
+    "她向后厅比了一个手势,你的姑娘们正在那里打扮自己准备今夜的工作。"
 
 # game/BKevents.rpy:6234
 translate schinese tax_relationship_test_d8c0646f:
 
     # taxgirl "...but the master took a liking to me. Thank Shalia, he saw that I was smart, capable and ruthless - good qualities for a debt collector."
-    taxgirl "...但那个首领看中了我。谢天谢地,他看出我聪明、有能力而且毫不留情 - 这些都是债务催收员的好品质。"
+    taxgirl "...但那个首领看中了我的天赋。谢天谢地,他看出我聪明、有能力而且冷血无情 - 这些都是收债人的优秀品质。"
 
 # game/BKevents.rpy:6236
 translate schinese tax_relationship_test_afc5419a:
 
     # taxgirl "So I rose through the ranks, and made it to senior by the time Cloud came along."
-    taxgirl "于是我一路升迁,到了Cloud来的时候已经成为了高级官员。"
+    taxgirl "于是我一路升迁,等到克劳德上位的时候我已经成为了高级职员。"
 
 # game/BKevents.rpy:6238
 translate schinese tax_relationship_test_06a773da:
 
     # you "Cloud? So he wasn't always the Guild master?"
-    you "Cloud?所以他并不是一直都是工会的大师?"
+    you "克劳德?所以他一开始并不是奴隶公会的会长?"
 
 # game/BKevents.rpy:6240
 translate schinese tax_relationship_test_7a8fc099:
 
     # taxgirl "Not at all. He or she came about just a couple of years ago, seemingly out of nowhere."
-    taxgirl "完全不是。他/她是两年前不知从哪冒出来的。"
+    taxgirl "完全不是。他/她是两年前不知从哪冒出来的家伙。"
 
 # game/BKevents.rpy:6242
 translate schinese tax_relationship_test_6b8d573d:
 
     # you "And he became Grand Master just like that? What of the other masters?"
-    you "就这样成为了大师?其他的首领呢?"
+    you "他就这样成为了会长?其他的高层呢?"
 
 # game/BKevents.rpy:6244
 translate schinese tax_relationship_test_1ed3370b:
@@ -6430,49 +6430,49 @@ translate schinese tax_relationship_test_b89f8643:
 translate schinese tax_relationship_test_dd54d440:
 
     # taxgirl "Anyway. When Cloud became Grand Master, we were told things would change. We were to use magic to speed up the Guild's growth - which worked out splendidly, in hindsight, even though it was met with fierce opposition at the time."
-    taxgirl "总之,当Cloud成为大师后,我们就被告知事情会有所改变。我们要用魔法来加快工会的发展 - 事实证明这很有效,尽管当时遭到了激烈反对。"
+    taxgirl "总之,当克劳德成为会长后,我们被告知公会要发生变革。我们要用魔法来促进公会的发展 - 事实证明这很有效,尽管当时遭到了激烈反对。"
 
 # game/BKevents.rpy:6250
 translate schinese tax_relationship_test_c421611f:
 
     # taxgirl "I volunteered to be made a conduit for Cloud's magical powers, as did most of the Guild's remaining senior officers."
-    taxgirl "我自愿成为Cloud魔法力量的导魂体,大部分资深官员也是如此。"
+    taxgirl "我自愿成为了克劳德魔法的魔导媒介,大部分高层官员也是如此。"
 
 # game/BKevents.rpy:6252
 translate schinese tax_relationship_test_0712dc1f:
 
     # you "Only the most powerful sorcerers can channel their magic through a conduit..."
-    you "只有最强大的法师才能通过导魂体施展魔法..."
+    you "只有最强大的法师才能通过魔导媒介施展魔法..."
 
 # game/BKevents.rpy:6254
 translate schinese tax_relationship_test_996d89dd:
 
     # taxgirl "Indeed. Let alone half-a-dozen. Cloud is by far the most powerful being I've ever met."
-    taxgirl "确实如此。更不用说几个人了。Cloud 无疑是我见过的最强大的存在。"
+    taxgirl "确实如此。更不用说同时施展五六个这样的法术了。克劳德无疑是我见过的最强大的存在。"
 
 # game/BKevents.rpy:6256
 translate schinese tax_relationship_test_33860755:
 
     # you "So you met him? Her? It?"
-    you "所以你见过他/她/它了吗?"
+    you "所以你见过他/她/它本人了吗?"
 
 # game/BKevents.rpy:6258
 translate schinese tax_relationship_test_072ddfc8:
 
     # taxgirl "I must have, I guess... I was put into a ritual trance, as Cloud bestowed new powers on me. Or something. I don't recall any of it."
-    taxgirl "我想我应该是见过的吧...我被引入了一种仪式性的催眠状态,Cloud 似乎赐予了我新的力量。或者别的什么。我完全记不清了。"
+    taxgirl "我想我应该是见过的吧...我被引入了一种仪式性的催眠状态,克劳德似乎赐予了我全新的力量。或者别的什么。我完全记不清了。"
 
 # game/BKevents.rpy:6260
 translate schinese tax_relationship_test_f96e5c5f:
 
     # taxgirl "But Cloud is known as something of a trickster, and all such gifts have strings attached. The magic comes with side-effects..."
-    taxgirl "但 Cloud 有一些欺骗性的特质,所有这种恩赐都必然会有牵线带子。魔法会带来副作用..."
+    taxgirl "但克劳德也没有全盘托出,这种魔力的恩赐必然需要魔力回路。魔法发动时会产生副作用..."
 
 # game/BKevents.rpy:6262
 translate schinese tax_relationship_test_2b964c92:
 
     # you "What side-effects exactly?"
-    you "到底会有什么副作用?"
+    you "那么会有什么副作用?"
 
 # game/BKevents.rpy:6264
 translate schinese tax_relationship_test_1d797bd6:
@@ -6484,7 +6484,7 @@ translate schinese tax_relationship_test_1d797bd6:
 translate schinese tax_relationship_test_9f495306:
 
     # taxgirl "Now, we've wasted enough time with idle chatting. I thank you for your contribution. See you in two weeks."
-    taxgirl "好了,我们聊得太久了。感谢你的贡献。两周后见。"
+    taxgirl "好了,我们聊得太久了。感谢你对公会的贡献。两周后见。"
 
 # game/BKevents.rpy:6268
 translate schinese tax_relationship_test_e53668db:
@@ -6514,7 +6514,7 @@ translate schinese tax_relationship_test_9200a051:
 translate schinese tax_relationship_test_f8d767c7:
 
     # "You can see beads of sweat running down her forehead. You can't help but enjoy her sweet smell and the feeling of her breasts rubbing against your arm."
-    "你能看到她额头上沁出的汗珠。你忍不住喜欢上了她的柔香,以及她胸部蹭在你手臂上的感觉。"
+    "你能看到她额头上沁出的汗珠。你开始逐渐喜欢上她的体香,以及她的胸部蹭在你手臂上的感觉。"
 
 # game/BKevents.rpy:6288
 translate schinese tax_relationship_test_6b82f143:
@@ -6532,13 +6532,13 @@ translate schinese tax_relationship_test_f91ea88e:
 translate schinese tax_relationship_test_dcb92a90:
 
     # you "Ah yes, the magic Cloud gave you, was it?"
-    you "啊是吗,是 Cloud 给你的魔法吗?"
+    you "啊是吗,是克劳德给你的魔法吗?"
 
 # game/BKevents.rpy:6294
 translate schinese tax_relationship_test_ae0bbef9:
 
     # you "Pity, I thought my gold had the power to turn you on... A power I might have wielded irresponsibly."
-    you "真遗憾,我还以为我的金币有让你兴奋的力量...那种力量我可能会不负责任地滥用。"
+    you "真遗憾,我还以为我的金币有让你兴奋的力量...要是有那种力量我可能会不负责任地滥用。"
 
 # game/BKevents.rpy:6296
 translate schinese tax_relationship_test_ecbdf233:
@@ -6550,13 +6550,13 @@ translate schinese tax_relationship_test_ecbdf233:
 translate schinese tax_relationship_test_dd110490:
 
     # "To your regret, she lets go of your arm and straightens up her dress, which was in imminent danger of a wardrobe malfunction."
-    "令你遗憾的是,她松开了你的手臂,整理起衣服,之前都快要露出来了。"
+    "令你遗憾的是,她很快便松开了你的手臂,整理起衣服,之前香肩和玉乳都快要露出来了。"
 
 # game/BKevents.rpy:6303
 translate schinese tax_relationship_test_9ce04fc8:
 
     # taxgirl "It's a trick on the part of my master, Cloud... A test of my resolve, if you will."
-    taxgirl "这是我的主人 Cloud 设下的一个障眼法...算是对我意志力的考验吧。"
+    taxgirl "这是我的主人克劳德设下的一个恶趣味...算是对我意志力的考验吧。"
 
 # game/BKevents.rpy:6305
 translate schinese tax_relationship_test_b9e1058d:
@@ -6568,13 +6568,13 @@ translate schinese tax_relationship_test_b9e1058d:
 translate schinese tax_relationship_test_7ee323f0:
 
     # taxgirl "*sigh* You see, Cloud's magic changed something in me... Now, I can only get aroused by gold - large quantities of it."
-    taxgirl "*叹气*你看,Cloud 的魔法改变了我的某些东西...现在,我只能被大量的金币所激动。"
+    taxgirl "*叹气*你看,克劳德的魔法改变了我的体质...现在,我只能被大量的金币所兴奋。"
 
 # game/BKevents.rpy:6311
 translate schinese tax_relationship_test_81a99997:
 
     # "She says that coldly and matter-of-factly, back to her usual collected self."
-    "她冷冰冰地说,态度又恢复了平常的从容。"
+    "她冷冰冰地说,语气又恢复了平常的从容。"
 
 # game/BKevents.rpy:6313
 translate schinese tax_relationship_test_67e86ab9:
@@ -6586,7 +6586,7 @@ translate schinese tax_relationship_test_67e86ab9:
 translate schinese tax_relationship_test_c77ae655:
 
     # taxgirl "My sex drive is gone. Instead, I can only get aroused by gold. I guess it's a subtle but effective way to make me work extra hard at my job... Ever since, it's true that I've been very focused."
-    taxgirl "我的性欲消失了。取而代之的是,只有金币才能激起我的欲望。我猜这是一种巧妙而有效的方式,让我更加专注于工作...自从那之后,我确实一直非常专注。"
+    taxgirl "我的性欲消失了。取而代之的是,只有金币才能激起我的欲望。我猜这是一种巧妙而有效的方式,让我更加专注于工作...自那之后,我确实一直非常专注。"
 
 # game/BKevents.rpy:6317
 translate schinese tax_relationship_test_1236a750:
@@ -6610,13 +6610,13 @@ translate schinese tax_relationship_test_e121218f:
 translate schinese tax_relationship_test_5cce3b0e:
 
     # taxgirl "Yes, well, that ship has sailed. I got used to it. At least I get a pleasant, tingling feeling when you pay me."
-    taxgirl "是的,那船已经远去了。我已经习惯了。至少当你付钱给我时,我还能感觉到一阵愉悦的刺激。"
+    taxgirl "算了,事已至此。我已经习惯了。至少当你付钱给我时,我还能感觉到一阵愉悦的刺激。"
 
 # game/BKevents.rpy:6325
 translate schinese tax_relationship_test_92f9daba:
 
     # you "I've known a lot of girls that were into money, but not {i}that{/i} into money..."
-    you "我认识很多对钱很感兴趣的女孩,但没有{i}那么{/i}感兴趣的..."
+    you "我认识很多对钱很感兴趣的女孩,但没有像你{i}那么{/i}感兴趣的..."
 
 # game/BKevents.rpy:6327
 translate schinese tax_relationship_test_7716f810:
@@ -6646,7 +6646,7 @@ translate schinese tax_relationship_test_c22ebb1c:
 translate schinese tax_relationship_test_00db4275:
 
     # "As you hand her a massive bag of gold, the guild lady drops into your arms, shivering and screaming."
-    "当你把一大袋黄金递给她时,女工会长惊慌失措,颤抖尖叫着倒进你的怀中。"
+    "当你把一大袋黄金递给她时,女职员惊慌失措,颤抖尖叫着倒进你的怀中。"
 
 # game/BKevents.rpy:6349
 translate schinese tax_relationship_test_8756e0fa:
@@ -6658,7 +6658,7 @@ translate schinese tax_relationship_test_8756e0fa:
 translate schinese tax_relationship_test_cabdf2cc:
 
     # "She clings to your neck as she lets the wave of pleasure pass. You feel her erect nipples rubbing against your chest through her dress, and your dick begins to stiffen."
-    "她紧紧环抱住你的脖子,一波快感渐渐平息下来。你能感受到她胸口的挺立乳头隔着衣服摩擦着你的胸膛,你的下体也开始硬挺起来。"
+    "她紧紧环抱住你的脖子,一波快感渐渐平息下来。你能感受到她胸口的挺立乳头隔着衣服摩擦着你的胸膛,你的下体也开始膨胀起来。"
 
 # game/BKevents.rpy:6355
 translate schinese tax_relationship_test_66314d41:
@@ -6670,7 +6670,7 @@ translate schinese tax_relationship_test_66314d41:
 translate schinese tax_relationship_test_a104154c:
 
     # "She stays in your arms for a minute, avoiding your gaze, catching her breath."
-    "她在你怀里呆了一分钟,躲避着你的目光,喘着气。"
+    "她在你怀里呆了一分钟,躲避着你的目光,喘着粗气。"
 
 # game/BKevents.rpy:6359
 translate schinese tax_relationship_test_691fdd98:
@@ -6682,7 +6682,7 @@ translate schinese tax_relationship_test_691fdd98:
 translate schinese tax_relationship_test_4e8ca0e3:
 
     # you "No problem. I didn't know the gold could cause such a large reaction..."
-    you "没关系。我不知道黄金会引发如此大的反应..."
+    you "没关系。我不知道金币会引发如此大的反应..."
 
 # game/BKevents.rpy:6363
 translate schinese tax_relationship_test_bb311803:
@@ -6706,7 +6706,7 @@ translate schinese tax_relationship_test_3b77ee48:
 translate schinese tax_relationship_test_8b09a095:
 
     # taxgirl "Is that what I think it is? Rubbing against my belly?"
-    taxgirl "那就是我所想的吗?正顶着我的小腹?"
+    taxgirl "是我想的那样吗?你的那里正顶着我的小腹?"
 
 # game/BKevents.rpy:6371
 translate schinese tax_relationship_test_00cedb5d:
@@ -6730,7 +6730,7 @@ translate schinese tax_relationship_test_cdd9076e:
 translate schinese tax_relationship_test_c27b9f45:
 
     # taxgirl "Help me. It's been so long since I experienced pleasure... But I think now, I could..."
-    taxgirl "帮帮我。好久没体验到快感了...但我想现在,我可能会..."
+    taxgirl "帮帮我。我好久没体验过快感了...但我想现在,我可能会..."
 
 # game/BKevents.rpy:6379
 translate schinese tax_relationship_test_4112623a:
@@ -6754,25 +6754,25 @@ translate schinese tax_relationship_test_9a9843e4:
 translate schinese tax_relationship_test_9cbc3580:
 
     # taxgirl "I want you to fuck my ass."
-    taxgirl "我想要你操我的屁股。"
+    taxgirl "我想让你操我的屁股。"
 
 # game/BKevents.rpy:6387
 translate schinese tax_relationship_test_0703c7c4:
 
     # "You feel a burst of hormones. Your cock gets so hard it threatens to pop out of your pants."
-    "一股激素冲动袭来。你的阴茎硬得几乎要从裤子里蹦出来。"
+    "一阵冲动袭来。你的阴茎硬得几乎要从裤子里蹦出来。"
 
 # game/BKevents.rpy:6389
 translate schinese tax_relationship_test_7f2dbdc7:
 
     # you "What? Come again?"
-    you "什么?再说一遍?"
+    you "什么?你再说一遍?"
 
 # game/BKevents.rpy:6391
 translate schinese tax_relationship_test_55b1ee26:
 
     # taxgirl "I can't... Unless you fuck my asshole."
-    taxgirl "我做不到...除非你操我的肛门。"
+    taxgirl "我没办法高潮...除非你操我的菊花。"
 
 # game/BKevents.rpy:6393
 translate schinese tax_relationship_test_32529af6:
@@ -6784,13 +6784,13 @@ translate schinese tax_relationship_test_32529af6:
 translate schinese tax_relationship_test_3d610df2:
 
     # taxgirl "I told you, I've tried many things to regain my libido... The closest I got was using my back hole."
-    taxgirl "我告诉过你,我尝试了很多方法来恢复性欲...最接近的就是用后面。"
+    taxgirl "我告诉过你,我尝试了很多方法来恢复性欲...最有用的就是用后面。"
 
 # game/BKevents.rpy:6397
 translate schinese tax_relationship_test_4d789917:
 
     # taxgirl "What can I say, I'm that kind of girl."
-    taxgirl "我就是这样的女孩。"
+    taxgirl "我就是这样下流的女孩。"
 
 # game/BKevents.rpy:6399
 translate schinese tax_relationship_test_3e26844e:
@@ -6802,19 +6802,19 @@ translate schinese tax_relationship_test_3e26844e:
 translate schinese tax_relationship_test_8735ccfc:
 
     # taxgirl "Will you do it?"
-    taxgirl "你愿意这么做吗?"
+    taxgirl "你愿意帮帮我吗?"
 
 # game/BKevents.rpy:6403
 translate schinese tax_relationship_test_06434bf4:
 
     # "Instead of answering, you flip her over and lower her panties, placing your hard cock against her butt."
-    "你没有回答,而是将她翻过来,拉下她的内裤,将你挺立的阴茎抵在她的屁股上。"
+    "你没有回答,而是将她翻过身来,一把扯下她的内裤,将你挺立的阴茎抵在她的屁股上。"
 
 # game/BKevents.rpy:6405
 translate schinese tax_relationship_test_2d0e8e84:
 
     # taxgirl "Hmmm... So you'll do it."
-    taxgirl "嗯....那你就去做吧。"
+    taxgirl "嗯....快插进来吧。"
 
 # game/BKevents.rpy:6419
 translate schinese tax_relationship_test_4c0f01d3:
@@ -6826,13 +6826,13 @@ translate schinese tax_relationship_test_4c0f01d3:
 translate schinese tax_relationship_test_31bc8b85:
 
     # "As you push a barrel of gold her way, the guild woman is hit by another strong orgasm, fainting on the spot."
-    "当你把一桶金送给她时,女士再次被强烈的高潮袭击,当场晕了过去。"
+    "当你把一桶金币放到她面前时,她突然被强烈的高潮刺激,当场晕了过去。"
 
 # game/BKevents.rpy:6427
 translate schinese tax_relationship_test_29bf3c29:
 
     # "You catch her before she hits the ground. You try and shake her, but she is completely out of it."
-    "你在她倒下前接住了她。你试着摇晃她,但她完全失去了知觉。"
+    "你在她倒下前接住了她。你晃了晃她的肩膀,但她已经失去了知觉。"
 
 # game/BKevents.rpy:6429
 translate schinese tax_relationship_test_8e6b800a:
@@ -6844,19 +6844,19 @@ translate schinese tax_relationship_test_8e6b800a:
 translate schinese tax_relationship_test_33e0b788:
 
     # "Picking her up, you bring her to a bed."
-    "你抱起她,把她带到一张床上。"
+    "你抱起她,把她放到一张床上。"
 
 # game/BKevents.rpy:6435
 translate schinese tax_relationship_test_f7d77590:
 
     # "You can feel her heart racing fast, and her breathing is heavy."
-    "你能感觉到她的心跳加速,呼吸沉重。"
+    "你能感觉到她的心跳加速,呼吸急促。"
 
 # game/BKevents.rpy:6437
 translate schinese tax_relationship_test_9ee11710:
 
     # you "Look at you... These magic side-effects really played a number on you."
-    you "看看你....这些魔法副作用真是对你造成了不小的影响。"
+    you "看看你....魔法的副作用真是对你造成了不小的影响。"
 
 # game/BKevents.rpy:6439
 translate schinese tax_relationship_test_ecf4de0d:
@@ -6868,13 +6868,13 @@ translate schinese tax_relationship_test_ecf4de0d:
 translate schinese tax_relationship_test_b6c531f5:
 
     # you "I better take these off, Sill will clean them..."
-    you "我最好把它脱下来,Sill会帮忙清洗的..."
+    you "我最好把它脱下来,希露会帮忙清洗的..."
 
 # game/BKevents.rpy:6443
 translate schinese tax_relationship_test_023e2484:
 
     # "The girl moans and moves unconsciously as you remove her panties. As she squirms, her heavy breasts pop out of her tight dress, giving you quite a spectacle."
-    "当你脱下她的内裤时,女孩呻吟着无意识地扭动身体。当她扭动时,她紧身连衣裙下的丰满乳房突了出来,给你留下了相当壮观的景象。"
+    "当你脱下她的内裤时,女孩呻吟着无意识地扭动身体。当她扭动时,她的紧身连衣裙下的丰满乳房弹了出来,给你留下了相当壮观的景象。"
 
 # game/BKevents.rpy:6445
 translate schinese tax_relationship_test_a24a30a3:
@@ -6892,7 +6892,7 @@ translate schinese tax_relationship_test_eb36714a:
 translate schinese tax_relationship_test_bafe4aed:
 
     # taxgirl "Do... Do me."
-    taxgirl "来....干我。"
+    taxgirl "快....快来干我。"
 
 # game/BKevents.rpy:6451
 translate schinese tax_relationship_test_cdd9076e_1:
@@ -6904,7 +6904,7 @@ translate schinese tax_relationship_test_cdd9076e_1:
 translate schinese tax_relationship_test_d17838fd:
 
     # taxgirl "Fuck me now, [MC.name]. Use my pussy, I don't care... I want it. Now."
-    taxgirl "现在就操我吧,[MC.name]。使用我的阴户,我不在乎....我想要。现在就要。"
+    taxgirl "干死我吧,[MC.name]。插进我的小穴里,我不管了....我想要。现在就要。"
 
 # game/BKevents.rpy:6455
 translate schinese tax_relationship_test_94889a7d:
@@ -6916,25 +6916,25 @@ translate schinese tax_relationship_test_94889a7d:
 translate schinese tax_relationship_test_6c1585f7:
 
     # you "Of course!!!" with vpunch
-    you "当然!!!" with vpunch
+    you "乐意至极!!!" with vpunch
 
 # game/BKevents.rpy:6461
 translate schinese tax_relationship_test_187e357d:
 
     # taxgirl "I suppose I should do something for you too. Look, about the membership fee..."
-    taxgirl "我想我也应该为你做些什么。关于会员费的事,这样如何..."
+    taxgirl "我想我也应该为你做些什么。关于会费的事,这样如何..."
 
 # game/BKevents.rpy:6463
 translate schinese tax_relationship_test_0319b8fc:
 
     # you "You're giving me free membership? Hurray!"
-    you "你免费给我会员资格?太棒了!"
+    you "你要免去我的会费?太棒了!"
 
 # game/BKevents.rpy:6465
 translate schinese tax_relationship_test_8fe31c4e:
 
     # taxgirl "Don't be silly. I can't do that. But I can make sure they remain reasonable."
-    taxgirl "别傻了。我不能那样做。但我可以确保会员费保持在合理的水平。"
+    taxgirl "别傻了。我不能那样做。但我可以确保会费保持在合理的水平。"
 
 # game/BKevents.rpy:6467
 translate schinese tax_relationship_test_638b2235:
@@ -6946,25 +6946,25 @@ translate schinese tax_relationship_test_638b2235:
 translate schinese tax_relationship_test_d6a5cdbd:
 
     # "Your guild membership has been reset, and you will no longer suffer from {b}fee inflation{/b}."
-    "你的公会会籍已重置,你将不再受到{b}会费膨胀{/b}的困扰。"
+    "你的公会会费已重置,会费将不再{b}膨胀{/b}。"
 
 # game/BKevents.rpy:6476
 translate schinese tax_relationship_test_4816b441:
 
     # taxgirl "I can also give you some more... 'personal' advice, if you want. Just make sure to take care of my needs every once in a while, all right?"
-    taxgirl "如果你想的话,我也可以给你一些更'私人'的建议。只要记得偶尔照顾一下我的需求就行了,好吗?"
+    taxgirl "如果你想的话,我也可以给你一些更'私人'的建议。只要记得偶尔满足一下我的需求就行了,好吗?"
 
 # game/BKevents.rpy:6478
 translate schinese tax_relationship_test_251be3be:
 
     # you "You got it..."
-    you "明白了..."
+    you "我明白了..."
 
 # game/BKevents.rpy:6484
 translate schinese tax_relationship_test_02a50411:
 
     # "The woman blushes bright red as you hand her the gold, and she doesn't even try to hide her pleasure as an orgasmic wave overcomes her."
-    "当你递给她黄金时,这位女士脸上泛起了红晕,她也毫不掩饰地享受着袭来的高潮快感。"
+    "当你把金币递给她时,她的脸上又泛起了红晕,她毫不掩饰地享受着袭来的高潮快感。"
 
 # game/BKevents.rpy:6488
 translate schinese tax_relationship_test_7831f659:
@@ -6982,73 +6982,73 @@ translate schinese tax_relationship_test_ba953364:
 translate schinese tax_relationship_test_635b6167:
 
     # taxgirl "Would you... Would you fuck me again?" nointeract
-    taxgirl "你能否....再次操我?" nointeract
+    taxgirl "能不能....再干人家一次?" nointeract
 
 # game/BKevents.rpy:6497
 translate schinese tax_relationship_test_0b71aca9:
 
     # you "I'm not one to turn down a plea for help..."
-    you "我从不会拒绝帮助的请求..."
+    you "对于美女的需求我向来是有求必应..."
 
 # game/BKevents.rpy:6503
 translate schinese tax_relationship_test_b935cfa7:
 
     # you "Of course, we'll do it your favorite way. Bend over!"
-    you "当然,我们会按你喜欢的方式进行。弯下腰吧!"
+    you "当然,就用你最喜欢的姿势来做。弯下腰吧!"
 
 # game/BKevents.rpy:6509
 translate schinese tax_relationship_test_061fe3dc:
 
     # you "Not today, sorry. I've got a lot on my plate."
-    you "今天恐怕不行,我有太多事要处理。"
+    you "今天恐怕不行,我还有很多事要处理。"
 
 # game/BKevents.rpy:6521
 translate schinese taxgirl_anal_15e82222:
 
     # "Pushing her dress aside, the guild woman says nothing as you grab her ass and spread her buttcheeks."
-    "你掀开女性的裙子,她一言不发地任由你抓住她的臀部并张开她的臀瓣。"
+    "你掀起她的裙子,她一言不发地任由你抓住她的臀部并掰开她的臀瓣。"
 
 # game/BKevents.rpy:6523
 translate schinese taxgirl_anal_beaf326e:
 
     # taxgirl "Hurry up, while I'm still aroused from the magic backlash..."
-    taxgirl "快点,趁我还被魔法反噬所激起的欲望未消..."
+    taxgirl "快点干我好哥哥,趁我被激起的欲望未没消退..."
 
 # game/BKevents.rpy:6525
 translate schinese taxgirl_anal_b1a991b9:
 
     # "Without further ado, you push your hard cock inside her. Her asshole welcomes you, betraying extensive use."
-    "你毫不犹豫地将硬挺的阳具插入她的肛门。她的肛门欢迎你,暴露出曾经被大量使用过的痕迹。"
+    "你毫不犹豫地将硬挺的肉棒插入她的嫩菊。她的菊穴没有一点抗拒,里面已经完全变成了你的形状了。"
 
 # game/BKevents.rpy:6531
 translate schinese taxgirl_anal_6fd01217:
 
     # taxgirl "Oh, yes..." with hpunch
-    taxgirl "噢,是的..." with hpunch
+    taxgirl "噢,塞满了..." with hpunch
 
 # game/BKevents.rpy:6535
 translate schinese taxgirl_anal_89db4859:
 
     # "As you start moving back and forth, she seems to concentrate hard on the feeling in her asshole."
-    "你开始前后移动,她似乎全神贯注地感受着肛门中的感觉。"
+    "你开始抽插,她似乎全神贯注地感受着菊花中的感觉。"
 
 # game/BKevents.rpy:6537
 translate schinese taxgirl_anal_58438976:
 
     # taxgirl "It's good, Oh... Keep going..."
-    taxgirl "好极了,噢...继续下去..."
+    taxgirl "好极了,噢...顶到那里了..."
 
 # game/BKevents.rpy:6539
 translate schinese taxgirl_anal_41a664da:
 
     # "Encouraged by her reaction, you spit in her crack to make it slippery, and increase your pace."
-    "被她的反应鼓舞,你在她的裂缝中吐了口唾沫以增加润滑,并加快了速度。"
+    "被她的反应刺激,你朝她紧致的洞口涂抹唾液充当润滑剂,并加快了速度。"
 
 # game/BKevents.rpy:6541
 translate schinese taxgirl_anal_dc5b7e9e:
 
     # "Her large tits bounce every time you slam your cock inside her."
-    "每当你猛烈地操进去,她丰满的乳房都会随之晃动。"
+    "每当你猛烈地捅进去,她丰满的巨乳都会随之晃动。"
 
 # game/BKevents.rpy:6543
 translate schinese taxgirl_anal_74de3eb0:
@@ -7060,37 +7060,37 @@ translate schinese taxgirl_anal_74de3eb0:
 translate schinese taxgirl_anal_1ce17b3b:
 
     # "Her trained asshole easily accommodates the full length of your shaft as you fuck her deeper."
-    "她训练有素的肛门轻易容纳了你整根阴茎,你把它操得更深。"
+    "她经验丰富的菊穴轻易地吞没了你的整根肉棒,你把它捅得更深。"
 
 # game/BKevents.rpy:6547
 translate schinese taxgirl_anal_bcaed309:
 
     # taxgirl "Oh yes... Faster... Faster!"
-    taxgirl "噢是的...更快...更快!"
+    taxgirl "噢是的...再快点...用力干我!"
 
 # game/BKevents.rpy:6549
 translate schinese taxgirl_anal_b8535803:
 
     # "She moans wildly as you increase your pace again, mercilessly pounding her butt."
-    "你再次加快速度,无情地操弄她的屁股,她发出狂乱的呻吟。"
+    "你再次加快速度,使劲地操弄她的屁股,她发出狂乱的呻吟。"
 
 # game/BKevents.rpy:6551
 translate schinese taxgirl_anal_21b7e8ae:
 
     # taxgirl "Oh, aah, aah... AAAAAH!!!" with hpunch
-    taxgirl "噢,啊,啊...AAAAAH!!!" with hpunch
+    taxgirl "噢,啊,啊...要泄了!!!" with hpunch
 
 # game/BKevents.rpy:6557
 translate schinese taxgirl_anal_89097515:
 
     # taxgirl "YYYESSS!!!"
-    taxgirl "YYYESS!!!"
+    taxgirl "要去了!!!"
 
 # game/BKevents.rpy:6561
 translate schinese taxgirl_anal_7cac6a63:
 
     # "You explode inside her ass, sending her over the edge. She trembles uncontrollably as your cock discharges inside her." with hpunch
-    "你在她的屁股里射了出来,推动她达到了顶峰。她不受控制地颤抖,你的阴茎在她体内喷发。" with hpunch
+    "你在她的屁股里射了出来,推动她达到了顶峰。她不受控制地颤抖,你的肉棒在她体内喷发。" with hpunch
 
 # game/BKevents.rpy:6565
 translate schinese taxgirl_anal_91cb937b:
@@ -7102,7 +7102,7 @@ translate schinese taxgirl_anal_91cb937b:
 translate schinese taxgirl_anal_12ddcaf3:
 
     # "Popping your cock out, you spurt the last of your cum on her sexy thighs."
-    "你拔出阴茎,将剩余的精液溅在她性感的大腿上。"
+    "你拔出肉棒,将剩余的精液涂抹在她性感的大腿上。"
 
 # game/BKevents.rpy:6571
 translate schinese taxgirl_anal_b31b338b:
@@ -7120,19 +7120,19 @@ translate schinese taxgirl_anal_2aebe9a3:
 translate schinese taxgirl_anal_e1a32a54:
 
     # "The woman uses a handkerchief to wipe herself, then quickly arranges her clothes back in order."
-    "女性用手帕擦拭自己,然后迅速整理好衣服。"
+    "女人用手帕擦拭干净,然后迅速整理好衣服。"
 
 # game/BKevents.rpy:6583
 translate schinese taxgirl_anal_86afe9fb:
 
     # "She is done in a moment, and it looks as if nothing at all happened."
-    "她瞬间恢复了正常,好像什么都没发生过。"
+    "她瞬间恢复了冷静,好像什么都没发生过。"
 
 # game/BKevents.rpy:6585
 translate schinese taxgirl_anal_bac8cfdf:
 
     # taxgirl "All right, I believe our business here is done... Thank you for the gold, and... your help with this... Other matter."
-    taxgirl "好了,我想我们的事情已经办完了...感谢你的金钱,以及你帮助我处理这件...其他事情。"
+    taxgirl "好了,我想我们的事情已经办完了...感谢你的金币,以及你帮助我处理我的私人...其他事情。"
 
 # game/BKevents.rpy:6587
 translate schinese taxgirl_anal_eac3f5dc:
@@ -7144,13 +7144,13 @@ translate schinese taxgirl_anal_eac3f5dc:
 translate schinese taxgirl_anal_d5a4be08:
 
     # taxgirl "I shall see you again in two weeks."
-    taxgirl "我在两周后会再次见到你。"
+    taxgirl "我在两周后会再登门拜访。"
 
 # game/BKevents.rpy:6601
 translate schinese taxgirl_sex_b11c6e2a:
 
     # "The guild woman spreads her legs and welcomes you, her pussy still dripping with love juice."
-    "女性分开双腿,欢迎你进入,她的阴道还在淌着爱液。"
+    "女性分开双腿,渴求你的肉棒,她的蜜穴分泌出许多爱液。"
 
 # game/BKevents.rpy:6605
 translate schinese taxgirl_sex_35e5d480:
@@ -7162,91 +7162,91 @@ translate schinese taxgirl_sex_35e5d480:
 translate schinese taxgirl_sex_de6090c4:
 
     # "You drive your cock inside her, and she moans softly as you do."
-    "你将阴茎插入她体内,她轻声呻吟着。"
+    "你将肉棒插入她体内,她轻声呻吟着。"
 
 # game/BKevents.rpy:6611
 translate schinese taxgirl_sex_e4e01918:
 
     # taxgirl "Ooh... It's been too long..."
-    taxgirl "哦...太久没有了..."
+    taxgirl "哦...久违的快感..."
 
 # game/BKevents.rpy:6613
 translate schinese taxgirl_sex_111f934d:
 
     # "She is surprisingly tight, considering how flexible you remember her asshole was, but her pussy is so wet that sliding inside her is no challenge at all."
-    "她的小穴出乎意料地紧致,尽管你记得她的后穴是多么柔软,但她的小穴湿润得令你无师自通地滑了进去。"
+    "她的小穴出乎意料地紧致,尽管你记得她的后穴是多么柔软,但她的小穴湿润得令你毫无阻碍地滑了进去。"
 
 # game/BKevents.rpy:6615
 translate schinese taxgirl_sex_6b7436e0:
 
     # taxgirl "Oh yes...." with hpunch
-    taxgirl "哦对..." with hpunch
+    taxgirl "哦就是那里..." with hpunch
 
 # game/BKevents.rpy:6617
 translate schinese taxgirl_sex_e4302bcd:
 
     # "You play with her tits and start sucking on her nipples as you fuck her, and she clings to you lovingly."
-    "你玩弄着她的乳房,一边吮吸她的乳头,一边继续抽插,她紧紧地抱住你。"
+    "你玩弄着她的乳房,一边吮吸她的乳头,一边大力抽插,她紧紧地抱住你。"
 
 # game/BKevents.rpy:6619
 translate schinese taxgirl_sex_3a82339d:
 
     # taxgirl "I like that... Oh... [emo_heart]"
-    taxgirl "我很喜欢那样...哦...[emo_heart]"
+    taxgirl "我喜欢这种感觉...哦...[emo_heart]"
 
 # game/BKevents.rpy:6621
 translate schinese taxgirl_sex_e419e97f:
 
     # taxgirl "Listen, today is a safe day... I want you to release it all inside..."
-    taxgirl "听着,今天是安全日...我想要你全部射进里面..."
+    taxgirl "听着,今天是我的安全日...我希望你能一滴不剩地全都射在里面..."
 
 # game/BKevents.rpy:6623
 translate schinese taxgirl_sex_21ca9d38:
 
     # "Your cock grows even harder, even though it hardly needed more stimulation."
-    "你的阳具变得更加坚硬,尽管它已经无需更多刺激。"
+    "你的肉棒变得更加坚硬,尽管它已经无需更多刺激。"
 
 # game/BKevents.rpy:6627
 translate schinese taxgirl_sex_b573a5fb:
 
     # taxgirl "Oh, yes! [emo_heart]" with hpunch
-    taxgirl "哦,是的![emo_heart]" with hpunch
+    taxgirl "哦,好深![emo_heart]" with hpunch
 
 # game/BKevents.rpy:6629
 translate schinese taxgirl_sex_ad9cc2d6:
 
     # "You are pounding her with abandon now, splashing love juice on the bedsheets, and she doesn't seem to mind at all."
-    "你现在正疯狂地撞击她,爱液溅满了床单,但她似乎完全不在意。"
+    "你疯狂地挺动腰肢干她,爱液打湿了床单,但她似乎完全不在意。"
 
 # game/BKevents.rpy:6631
 translate schinese taxgirl_sex_918426cb:
 
     # taxgirl "You are going so deep... Aaaah... Aaah!" with hpunch
-    taxgirl "你进入得如此之深...啊...啊!" with hpunch
+    taxgirl "要顶到子宫里去了...啊...啊!" with hpunch
 
 # game/BKevents.rpy:6633
 translate schinese taxgirl_sex_185ece59:
 
     # "In spite of the spell's backlash, or perhaps because of it, she seems extremely aroused. She arches her back as you pinch her nipples hard."
-    "尽管遭受了法术的反噬,或许正因如此,她似乎非常兴奋。当你猛捏她的乳头时,她弓起了背。"
+    "遭受了法术的反噬,或许正因如此,她似乎非常兴奋。当你揉捏她的乳头时,她弓起了背。"
 
 # game/BKevents.rpy:6635
 translate schinese taxgirl_sex_5186d01f:
 
     # taxgirl "Now! I'm, I'm..."
-    taxgirl "现在!我,我..."
+    taxgirl "呀!别玩弄那里,我..."
 
 # game/BKevents.rpy:6640
 translate schinese taxgirl_sex_aec85361:
 
     # taxgirl "AAAAHAAH!!!"
-    taxgirl "啊啊啊啊!!!"
+    taxgirl "我要没办法思考了!!!"
 
 # game/BKevents.rpy:6644
 translate schinese taxgirl_sex_5dd0e054:
 
     # "Her pussy clenches around your cock as she cums, sending you over the top. You burst your hot cum inside her."
-    "她的小穴紧紧地夹住你的阳具,她高潮了,这令你也达到了高潮。你在她体内喷射出热液。"
+    "她的小穴紧紧地夹住你的肉棒,她高潮了,你也跟着一起到了高潮。你在她体内喷射出大量的精液。"
 
 # game/BKevents.rpy:6648
 translate schinese taxgirl_sex_ed966972:
@@ -7258,19 +7258,19 @@ translate schinese taxgirl_sex_ed966972:
 translate schinese taxgirl_sex_95bedd49:
 
     # taxgirl "This feeling... Perfect..."
-    taxgirl "这种感觉...完美..."
+    taxgirl "这种快感...完美..."
 
 # game/BKevents.rpy:6652
 translate schinese taxgirl_sex_15f2cc69:
 
     # you "That was good..."
-    you "那很好..."
+    you "那可真不错..."
 
 # game/BKevents.rpy:6654
 translate schinese taxgirl_sex_2fbfd864:
 
     # taxgirl "Let's do it again. I can come again."
-    taxgirl "让我们再来一次。我可以再次高潮。"
+    taxgirl "再来。我还可以继续高潮。"
 
 # game/BKevents.rpy:6656
 translate schinese taxgirl_sex_cdd9076e:
@@ -7282,25 +7282,25 @@ translate schinese taxgirl_sex_cdd9076e:
 translate schinese taxgirl_sex_837552ef:
 
     # taxgirl "Please... Keep going!"
-    taxgirl "请...继续!"
+    taxgirl "请...用你的大肉棒继续操我吧!"
 
 # game/BKevents.rpy:6662
 translate schinese taxgirl_sex_5efcce1d:
 
     # "You both cum a couple more times before she is fully satisfied."
-    "在她完全满足之前,你们俩又高潮了几次。"
+    "在她完全满足之前,你们俩又大战了几个回合。"
 
 # game/BKevents.rpy:6667
 translate schinese taxgirl_sex_beb99f37:
 
     # taxgirl "Again! Aaaaah!!!"
-    taxgirl "再来!啊啊啊!!!"
+    taxgirl "再来!把我变成你的形状吧!!!"
 
 # game/BKevents.rpy:6671
 translate schinese taxgirl_sex_74eeb8f5:
 
     # "As you cum one last time inside her, filling her up to the brim with hot cum, she grabs the bedsheets tight, looking lost in her feelings."
-    "当你最后一次在她体内释放,填满她的时候,她紧抓着床单,看起来沉浸在自己的感受中。"
+    "当你最后一次在她体内释放,填满她的子宫的时候,她的双手紧紧抓着着床单,看起来沉浸在快感中无法自拔。"
 
 # game/BKevents.rpy:6675
 translate schinese taxgirl_sex_d25e2746:
@@ -7318,7 +7318,7 @@ translate schinese taxgirl_sex_22259700:
 translate schinese taxgirl_sex_368f6171:
 
     # "As you both lay in bed, she looks at the cum dripping out of her belly absent-mindedly."
-    "当你们双双躺在床上时,她若有所思地看着从她的腹部缓缓流出的精液。"
+    "当你们躺在床上四目相对时,她若有所思地看着从她的腹部缓缓流出的精液。"
 
 # game/BKevents.rpy:6681
 translate schinese taxgirl_sex_77c41f16:
@@ -7330,7 +7330,7 @@ translate schinese taxgirl_sex_77c41f16:
 translate schinese taxgirl_sex_2c79e7d8:
 
     # "You are taken aback as she gives you a bright smile, something you didn't think she was capable of."
-    "当她露出灿烂的笑容时,你感到有些惊讶,因为你从未想过她会有这样的表情。"
+    "当她露出甜美的笑容时,你一时愣住了,你从未想过她也会有这样的表情。"
 
 # game/BKevents.rpy:6685
 translate schinese taxgirl_sex_4d538870:
@@ -7342,7 +7342,7 @@ translate schinese taxgirl_sex_4d538870:
 translate schinese taxgirl_sex_a1b48317:
 
     # you "You're welcome. You know we can do this anytime..."
-    you "不客气。你知道我们随时都可以这样做..."
+    you "不客气。只要你想，我们随时都可以这样..."
 
 # game/BKevents.rpy:6694
 translate schinese tax_no_money_12ac502a:
@@ -7354,7 +7354,7 @@ translate schinese tax_no_money_12ac502a:
 translate schinese tax_no_money_a70792d4:
 
     # taxgirl "What's that? You haven't got the money?"
-    taxgirl "怎么回事?你没有钱?"
+    taxgirl "怎么回事?你的钱没带够?"
 
 # game/BKevents.rpy:6698
 translate schinese tax_no_money_f0d68b16:
@@ -7366,31 +7366,31 @@ translate schinese tax_no_money_f0d68b16:
 translate schinese tax_no_money_47f5a867:
 
     # taxgirl "All right, I'll give you a chance to make this right. I'll give you a week to come up with the sum..."
-    taxgirl "好吧,我会给你一个机会来纠正这件事。我会给你一个星期的时间来凑齐这笔钱..."
+    taxgirl "好吧,我会给你一次机会来弥补错误。我会宽限你一个星期的时间来凑齐这笔钱..."
 
 # game/BKevents.rpy:6707
 translate schinese tax_no_money_2c16daa4:
 
     # you "Thank y-"
-    you "非常感谢-"
+    you "非常感谢"
 
 # game/BKevents.rpy:6711
 translate schinese tax_no_money_4521a307:
 
     # taxgirl "...with a ten percent late penalty. You now owe us [NPC_taxgirl.current_tax] denars. Also, you'll have to sign this deed."
-    taxgirl "...并附加10%的逾期费。你现在欠我们[NPC_taxgirl.current_tax]金币。同时你还需要签署这份契约。"
+    taxgirl "...并附加10%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。同时你还需要签署这份合同。"
 
 # game/BKevents.rpy:6713
 translate schinese tax_no_money_3134ad47:
 
     # you "What deed?"
-    you "什么契约?"
+    you "什么合同?"
 
 # game/BKevents.rpy:6715
 translate schinese tax_no_money_5de537b1:
 
     # "She hands you a piece of paper that says that if you fail to pay your membership fee in the future, the Guild will repossess your brothel."
-    "她递给你一张纸,上面写着如果你将来不能支付会费,工会将没收你的青楼。"
+    "她递给你一张纸,上面写着如果你将来不能支付会费,公会将没收你的青楼。"
 
 # game/BKevents.rpy:6717
 translate schinese tax_no_money_8040c233:
@@ -7402,7 +7402,7 @@ translate schinese tax_no_money_8040c233:
 translate schinese tax_no_money_c2de92e3:
 
     # taxgirl "There is no other way."
-    taxgirl "别无他法。"
+    taxgirl "你没得选。"
 
 # game/BKevents.rpy:6721
 translate schinese tax_no_money_a5fcf9c6:
@@ -7414,7 +7414,7 @@ translate schinese tax_no_money_a5fcf9c6:
 translate schinese tax_no_money_4fb502ed:
 
     # taxgirl "I'll see you on the 8th. This better be the first and last time, though..."
-    taxgirl "我会在8号再见你。不过这最好是第一次也是最后一次..."
+    taxgirl "我会在8号再登门拜访。不过这最好是第一次也是最后一次..."
 
 # game/BKevents.rpy:6729
 translate schinese tax_no_money_0fda0db5:
@@ -7426,25 +7426,25 @@ translate schinese tax_no_money_0fda0db5:
 translate schinese tax_no_money_cd109d32:
 
     # taxgirl "I have given you a fair warning, but you've ignored it."
-    taxgirl "我已经给过你公平的警告,但你却无视了它。"
+    taxgirl "我已经给过你警告了,但你却无视了我的善意。"
 
 # game/BKevents.rpy:6734
 translate schinese tax_no_money_8a62c758:
 
     # taxgirl "It breaks my heart that it has come to this, but... I will not betray the guild."
-    taxgirl "我非常遗憾会走到这一步,但是...我不能背叛公会。"
+    taxgirl "很遗憾事情发展到这一步,但是...我不能背叛公会。"
 
 # game/BKevents.rpy:6737
 translate schinese tax_no_money_746bd096:
 
     # taxgirl "I'm sorry. I thought we had a good relationship going. But business is business."
-    taxgirl "对不起。我以为我们的关系还不错。但商业就是商业。"
+    taxgirl "对不起。虽然我们相处得很愉快。但公事公办。"
 
 # game/BKevents.rpy:6739
 translate schinese tax_no_money_92ba14dc:
 
     # taxgirl "You knew the stakes. Pack your stuff. We're keeping the brothel and the slaves."
-    taxgirl "你知道后果的。收拾好你的东西吧。青楼和奴隶都归我们了。"
+    taxgirl "你知道会有这么一天的。收拾好你的东西吧。你的青楼和奴隶现在都归我们了。"
 
 # game/BKevents.rpy:6741
 translate schinese tax_no_money_a34b2a16:
@@ -7462,7 +7462,7 @@ translate schinese tax_no_money_d83ba17e:
 translate schinese tax_no_money_9aa9f9ae:
 
     # taxgirl "Listen, you know I like you, but don't screw this up... Don't put me in an impossible situation. *cold*"
-    taxgirl "听着,你知道我喜欢你,但请不要搞砸了...不要把我置于不可能的处境。*冷淡*"
+    taxgirl "听着,就算我喜欢你,但也请你公私分明...不要把我置于糟糕的处境。*冷淡*"
 
 # game/BKevents.rpy:6754
 translate schinese tax_no_money_b7936645:
@@ -7474,31 +7474,31 @@ translate schinese tax_no_money_b7936645:
 translate schinese tax_no_money_f0923f26:
 
     # taxgirl "Okay, you've been a good boy so far, so I'm inclined to cut you some slack..."
-    taxgirl "好吧,你到目前为止表现不错,所以我倾向于给你一些宽容..."
+    taxgirl "好吧,你到目前为止的表现都不错,所以我倾向于再宽限你几天..."
 
 # game/BKevents.rpy:6762
 translate schinese tax_no_money_fdaeebbd:
 
     # taxgirl "I'll give you seven more days, but with a ten percent penalty. You now owe us [NPC_taxgirl.current_tax] denars. Don't screw this up."
-    taxgirl "我会再给你七天时间,但需要附加10%的罚款。你现在欠我们[NPC_taxgirl.current_tax]金币。不要搞砸了。"
+    taxgirl "我会再给你七天时间,但需要附加10%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。不要搞砸了。"
 
 # game/BKevents.rpy:6765
 translate schinese tax_no_money_3f35c094:
 
     # taxgirl "Perhaps I've been too nice to you. I'll give you seven more days to pay up, but with a twenty percent penalty. You now owe us [NPC_taxgirl.current_tax] denars."
-    taxgirl "也许我对你太好了。我会再给你七天时间来付款,但需要附加20%的罚款。你现在欠我们[NPC_taxgirl.current_tax]金币。"
+    taxgirl "也许我对你太仁慈了。我会再给你七天时间来筹钱,但需要附加20%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。"
 
 # game/BKevents.rpy:6769
 translate schinese tax_no_money_31778e92:
 
     # taxgirl "Don't make me regret this."
-    taxgirl "希望我不会后悔这样做。"
+    taxgirl "希望我不会为自己的决定后悔。"
 
 # game/BKevents.rpy:6789
 translate schinese summon_pet_ded22189:
 
     # "The portal crackles and wavers for a few seconds, before a form solidifies out of pure chaotic energy."
-    "传送门噼啪作响,摇曳不定,片刻后一个形体从纯粹的混乱能量中凝实成形。"
+    "传送门噼啪作响,摇摆不定,片刻后一片虚影从纯粹的混乱能量中凝聚成形。"
 
 # game/BKevents.rpy:6797
 translate schinese summon_pet_46a32442:
@@ -7516,13 +7516,13 @@ translate schinese summon_pet_b2d766be:
 translate schinese summon_pet_9083a85d:
 
     # gizel smirk "Really? You open a portal and you summon {i}that{/i}? Oh well... It is kind of cute."
-    gizel smirk "真的吗?你开启传送门,却召唤了{i}那个{/i}?不过也挺可爱的。"
+    gizel smirk "真的吗?你开启传送门,结果就召唤了{i}那玩意{/i}?不过也挺可爱的。"
 
 # game/BKevents.rpy:6810
 translate schinese summon_pet_e1548d35:
 
     # gizel surprise "That's... Just... Ew."
-    gizel surprise "那就是...太...不堪了。"
+    gizel surprise "它有点...有点...呕。"
 
 # game/BKevents.rpy:6813
 translate schinese summon_pet_feda2886:
@@ -7540,7 +7540,7 @@ translate schinese summon_pet_68fcf3c8:
 translate schinese summon_pet_f96b9fdb:
 
     # gizel surprise "Maybe, just maybe?"
-    gizel surprise "说不定,只是说不定?"
+    gizel surprise "也许,只是也许?"
 
 # game/BKevents.rpy:6824
 translate schinese summon_pet_a4ddb853:
@@ -7558,7 +7558,7 @@ translate schinese summon_pet_f3800c8e:
 translate schinese summon_pet_b4f22374:
 
     # gizel "Did you know this was coming? You had to guess..."
-    gizel "你知道这会发生吗?你应该去猜猜..."
+    gizel "你知道事情会变成这样吗?你自己猜吧..."
 
 # game/BKevents.rpy:6834
 translate schinese summon_pet_5705048a:
@@ -7576,13 +7576,13 @@ translate schinese summon_pet_c5a94d5e:
 translate schinese summon_pet_0084236f:
 
     # gizel "Ok, now this is getting ridiculous."
-    gizel "好了,这已经太过分了。"
+    gizel "好了,这有点过分了。"
 
 # game/BKevents.rpy:6847
 translate schinese summon_pet_45fdba2a:
 
     # centered "Intervention!!!{w=3.0}{nw}"
-    centered "干预!!!{w=3.0}{nw}"
+    centered "住手!!!{w=3.0}{nw}"
 
 # game/BKevents.rpy:6849
 translate schinese summon_pet_3fee5b7b:
@@ -7594,7 +7594,7 @@ translate schinese summon_pet_3fee5b7b:
 translate schinese summon_pet_5274e915:
 
     # programmer "You should know that if you proceed, this cute defenseless supernatural pet will die an excruciatingly painful death."
-    programmer "你应该知道,如果你继续下去,这只无辜的超自然宠物将遭受痛苦的死亡。"
+    programmer "你应该知道,如果你继续这么做,这只无辜的超自然宠物将遭受痛苦的死亡。"
 
 # game/BKevents.rpy:6854
 translate schinese summon_pet_b2c52094:
@@ -7606,13 +7606,13 @@ translate schinese summon_pet_b2c52094:
 translate schinese summon_pet_cb0722a8:
 
     # you "Get out of the way, and leave that fourth wall alone!"
-    you "让开,别来破坏第四面墙了!"
+    you "滚开,别破坏第四面墙了!"
 
 # game/BKevents.rpy:6866
 translate schinese summon_pet_2ec3dc24:
 
     # programmer "Does nobody care about the life of fictional pets anymore?"
-    programmer "难道没有人再关心虚构宠物的生命了吗?"
+    programmer "难道没有人关心电子宠物的生命吗?"
 
 # game/BKevents.rpy:6870
 translate schinese summon_pet_40b8281c:
@@ -7624,7 +7624,7 @@ translate schinese summon_pet_40b8281c:
 translate schinese summon_pet_54406867:
 
     # programmer "Fine, let us get that little critter to safety then... Oops, where did it go?"
-    programmer "好吧,那我们就把这只小东西安全带走吧...哎呀,它跑哪里去了?"
+    programmer "好吧,那我们就把这只小东西安全的带走吧...哎呀,它跑哪里去了?"
 
 # game/BKevents.rpy:6879
 translate schinese summon_pet_ba0ea8a7:
@@ -7642,7 +7642,7 @@ translate schinese summon_pet_9a7ae325:
 translate schinese summon_pet_45fdba2a_1:
 
     # centered "Intervention!!!{w=3.0}{nw}"
-    centered "干预!!!{w=3.0}{nw}"
+    centered "住手!!!{w=3.0}{nw}"
 
 # game/BKevents.rpy:6886
 translate schinese summon_pet_5652907e:
@@ -7666,7 +7666,7 @@ translate schinese summon_pet_12b01ff1:
 translate schinese summon_pet_549b2166:
 
     # programmer "I bet you get a hard-on watching that Bambi scene..."
-    programmer "我打赌你看到那个巴比的场景时会兴奋..."
+    programmer "我打赌你看到那个小鹿斑比的场景时会兴奋..."
 
 # game/BKevents.rpy:6948
 translate schinese pet_untimely_demise_b9a76b88:
@@ -7678,25 +7678,25 @@ translate schinese pet_untimely_demise_b9a76b88:
 translate schinese pet_armageddon_d8d3054a:
 
     # gizel surprise "Really, again? Come on, you know the usual will happen..."
-    gizel surprise "真的,又来了?拜托,你知道通常会发生什么..."
+    gizel surprise "真的,又来了?拜托,你知道会是什么结果的..."
 
 # game/BKevents.rpy:6958
 translate schinese pet_armageddon_39356072:
 
     # you "NO... NOT THIS TIME!" with vpunch
-    you "不...这次不行!" with vpunch
+    you "不...这次不一样!" with vpunch
 
 # game/BKevents.rpy:6963
 translate schinese pet_armageddon_9db72c03:
 
     # gizel shy "You're... looking all scary again..."
-    gizel shy "你...又变得很吓人了..."
+    gizel shy "你...又变得有点吓人了..."
 
 # game/BKevents.rpy:6968
 translate schinese pet_armageddon_8bb3012c:
 
     # you "THIS TIME WILL BE... BIGGER!" with vpunch
-    you "这次将会更加....大规模！" with vpunch
+    you "这次将会更....更大！" with vpunch
 
 # game/BKevents.rpy:6970
 translate schinese pet_armageddon_5ec970d0:
@@ -7708,19 +7708,19 @@ translate schinese pet_armageddon_5ec970d0:
 translate schinese pet_armageddon_2f6a0135:
 
     # "At first it seems like the portal isn't reacting, but everyone can feel their skin crawl as a massive well of dark energy builds up."
-    "一开始看起来传送门没有反应,但每个人都能感到皮肤发麻,因为一股强大的黑暗能量正在聚集。"
+    "一开始传送门没有任何反应,但每个人都能感到皮肤发麻,因为一股强大的黑暗能量正在聚集。"
 
 # game/BKevents.rpy:6976
 translate schinese pet_armageddon_6f52330d:
 
     # "Distant thunder echoes through the cellar. Gizel and [girl.name] exchange a worried look."
-    "远处传来隆隆的雷声回荡在地窖中。Gizel和[girl.name]交换了一个担心的眼神。"
+    "远处传来隆隆的雷声回荡在地窖中。吉泽和[girl.name]担心地对视。"
 
 # game/BKevents.rpy:6978
 translate schinese pet_armageddon_9c4478e9:
 
     # you "STEP OUTSIDE! NOW!" with vpunch
-    you "出去吧!现在就出去!" with vpunch
+    you "出去看看吧!立刻!" with vpunch
 
 # game/BKevents.rpy:6982
 translate schinese pet_armageddon_25ddae97:
@@ -7744,13 +7744,13 @@ translate schinese pet_armageddon_e5da5bdd:
 translate schinese pet_armageddon_be12874b:
 
     # "High above the clouds, you see the faint purple glow of a portal opening. Although it is very far, it still looks massive. What manner of beast will come out?"
-    "在云层之上,你看到了一个紫色微光的传送门正在缓缓打开。尽管很远,但它看起来还是很庞大。会是什么样的恶兽从那里出来?"
+    "在云层之上,你看到了一个紫色微光的传送门正在缓缓打开。尽管很远,但它看起来还是很庞大。会是什么样的怪物从那里出来?"
 
 # game/BKevents.rpy:7001
 translate schinese pet_armageddon_2353c28c:
 
     # "[girl.name] and Gizel shudder in shared horror next to you, but you watch on with glee."
-    "[girl.name]和Gizel在你身边颤抖着,充满恐惧,但你却兴奋地注视着。"
+    "[girl.name]和吉泽在你身边颤抖着,充满恐惧,但你却兴奋地注视着。"
 
 # game/BKevents.rpy:7006
 translate schinese pet_armageddon_7d71d2f5:
@@ -7762,13 +7762,13 @@ translate schinese pet_armageddon_7d71d2f5:
 translate schinese pet_armageddon_6e80e1cd:
 
     # "Out of thin air, dark shapes materialize near the portal, falling towards you. At first, you cannot distinguish their features, but soon..."
-    "从虚空中,黑暗的形状在传送门附近凝聚,向你坠落下来。起初你无法辨认它们的特征,但很快...."
+    "从虚空中,黑暗的虚影在传送门附近凝聚,向你坠落而来。起初你无法辨认它们的特征,但很快...."
 
 # game/BKevents.rpy:7019
 translate schinese pet_armageddon_054ba3b3:
 
     # gizel surprise "By the seven hells... Are these... "
-    gizel surprise "在七大地狱之中....这些是...."
+    gizel surprise "在七层地狱之中....它们是...."
 
 # game/BKevents.rpy:7021
 translate schinese pet_armageddon_ceb9d123:
@@ -7780,7 +7780,7 @@ translate schinese pet_armageddon_ceb9d123:
 translate schinese pet_armageddon_0f3ed71f:
 
     # girl.char "It's raining pets!"
-    girl.char "是下雨宠物!"
+    girl.char "天上在下宠物雨!"
 
 # game/BKevents.rpy:7027
 translate schinese pet_armageddon_3ba4ccdb:
@@ -7822,13 +7822,13 @@ translate schinese pet_armageddon_028d4276:
 translate schinese pet_armageddon_4c30a12d:
 
     # "Magical pet" "AYAYA!!!"
-    "Magical pet" "啊呀呀!"
+    "魔法宠物" "啊呀呀!"
 
 # game/BKevents.rpy:7054
 translate schinese pet_armageddon_d6d44756:
 
     # "Another magical pet" "AAAAARRRRH!!!"
-    "Another magical pet" "啊啊啊啊!"
+    "另一只魔法宠物" "啊啊哇哇!"
 
 # game/BKevents.rpy:7056
 translate schinese pet_armageddon_4de2aad1:
@@ -7846,7 +7846,7 @@ translate schinese pet_armageddon_539d79c1:
 translate schinese pet_armageddon_f680324b:
 
     # "The girls watch in horror as the burning pets plummet to their deaths, the few surviving ones meeting a gruesome end as they hit the ground."
-    "女孩们惊恐地看着被烧焦的宠物跌落到地面,幸存的也遭受了惨遭。"
+    "女孩们惊恐地看着被烧焦的宠物跌落到地面,幸存下来的在落地时也难逃一劫。"
 
 # game/BKevents.rpy:7073
 translate schinese pet_armageddon_bf08d270:
@@ -7858,7 +7858,7 @@ translate schinese pet_armageddon_bf08d270:
 translate schinese pet_armageddon_ea17a8d3:
 
     # "[girl.name] mercifully faints. Even Gizel is shaken, looking at you with something close to panic."
-    "[girl.name]幸运地晕了过去。就连Gizel也被震惊了,用恐慌的眼神看着你。"
+    "[girl.name]晕了过去。就连吉泽也被震惊了,用恐慌的眼神看着你。"
 
 # game/BKevents.rpy:7077
 translate schinese pet_armageddon_a7182ac8:
@@ -7870,7 +7870,7 @@ translate schinese pet_armageddon_a7182ac8:
 translate schinese pet_armageddon_521cf9c4:
 
     # you "That will teach them a lesson!"
-    you "这将会让他们长个教训!"
+    you "这会让他们长个教训!"
 
 # game/BKevents.rpy:7082
 translate schinese pet_armageddon_41862aff:
@@ -7888,7 +7888,7 @@ translate schinese pet_armageddon_d7140e45:
 translate schinese pet_armageddon_730347e3:
 
     # programmer "OK, FINE! We get it, you evil bastard! Here, take your evil points and stop it already!!!"
-    programmer "好吧,好吧!我们知道了,你这个邪恶的混蛋!来,拿着你的邪恶积分,够了别再来了!!!"
+    programmer "好吧,好吧!我们知道了,你这个邪恶的混蛋!来,拿着你的邪恶积分,别再这么做了!!!"
 
 # game/BKevents.rpy:7118
 translate schinese is_broken_82ecdcdc:
@@ -7912,25 +7912,25 @@ translate schinese is_broken_228883fb:
 translate schinese broken_explain_options_15fc1efb:
 
     # you "Please explain my options. Is there any way we could heal her mind?"
-    you "请解释一下我的选择。难道没有办法治愈她的心智吗?"
+    you "请仔细解释一下。难道没有办法恢复她的心智吗?"
 
 # game/BKevents.rpy:7142
 translate schinese broken_explain_options_5c6375d6:
 
     # gizel angry "Well, you could send her to a {b}lunatic asylum{/b}. That's what people do when their relatives go cuckoo. There's a small chance her mind will heal a little there, although it's just as likely they'll drive her even crazier. Either way, it's going to cost you a pretty denar."
-    gizel angry "嗯,你可以把她送到{b}疯人院{/b}。这就是人们在亲戚精神失常时会做的事。那里有可能让她的心智稍有好转,不过也有可能会彻底把她逼疯。不管怎样,这都要花不少银币。"
+    gizel angry "嗯,你可以把她送到{b}精神病院{/b}。这就是人们在亲戚精神失常时会做的事。那里可能会让她的心智有所好转,不过也有可能会彻底把她逼疯。不管怎样,这都要花不少金币。"
 
 # game/BKevents.rpy:7144
 translate schinese broken_explain_options_ad9af1ad:
 
     # gizel smirk "Is that dumb slut [girl.name] really worth this much to you?"
-    gizel smirk "这个愚蠢的婊子 [girl.name] 真的值得你这样做吗?"
+    gizel smirk "这个愚蠢的婊子[girl.name]真的值得你这样做吗?"
 
 # game/BKevents.rpy:7146
 translate schinese broken_explain_options_6bb4cbb0:
 
     # you "What are the other options?"
-    you "还有其他选择吗?"
+    you "我还有其他选择吗?"
 
 # game/BKevents.rpy:7148
 translate schinese broken_explain_options_2cdce2f0:
@@ -7942,19 +7942,19 @@ translate schinese broken_explain_options_2cdce2f0:
 translate schinese broken_explain_options_0d382c56:
 
     # gizel "Either way, she won't fetch a good price at all."
-    gizel "总之,她的价格一定不会很高。"
+    gizel "总之,她的售价一定不会很高。"
 
 # game/BKevents.rpy:7152
 translate schinese broken_explain_options_331580d0:
 
     # you "Anything else I could do?"
-    you "还有别的我能做的吗?"
+    you "还有别的什么我能做的吗?"
 
 # game/BKevents.rpy:7154
 translate schinese broken_explain_options_ad14525b:
 
     # gizel "Well, if you won't pay for her treatment or sell her, I guess you could just {b}put her on the street{/b}."
-    gizel "好吧,如果你不愿意为她的治疗付费或者把她卖掉,我想你就可以{b}把她丢到街上{/b}。"
+    gizel "好吧,如果你不愿意为她的治疗付费或者把她卖掉,我想你就可以就这样{b}把她丢到街上{/b}。"
 
 # game/BKevents.rpy:7156
 translate schinese broken_explain_options_63530dbf:
@@ -7972,19 +7972,19 @@ translate schinese broken_explain_options_155646ca:
 translate schinese broken_explain_options_0cbaa8ef:
 
     # gizel "She'll probably be pretty terrible as a street whore, but she'll have to do it to survive. And no one will know she works for you, so if she snaps or harms a customer, your reputation won't suffer."
-    gizel "她可能会很糟糕地做街头妓女,但为了生存她必须这么做。而且没人会知道她为我们工作,所以就算她发疯伤害了客人,我们的声誉也不会受影响。"
+    gizel "她可能会被迫做个街头妓女,为了生存她必须这么做。而且没人会知道她为我们工作,所以就算她发疯伤害了客人,我们的名声也不会受影响。"
 
 # game/BKevents.rpy:7162
 translate schinese broken_explain_options_a26a5b9e:
 
     # gizel "I can just have her stay in the old barn, far from the other girls, and give her some of the minion's feed."
-    gizel "我可以让她待在老谷仓里,远离其他女孩,给她一些小喽啰的饲料。"
+    gizel "我可以让她待在老谷仓里,远离其他女孩,给她吃一些仆从的饲料。"
 
 # game/BKevents.rpy:7166
 translate schinese broken_explain_options_09575e0f:
 
     # you "But I thought only licensed brothels were authorized in Zan?"
-    you "但是我以为只有持牌的青楼才被允许在泽恩内运营?"
+    you "但是我以为只有持牌的青楼才被允许在泽恩城内运营?"
 
 # game/BKevents.rpy:7168
 translate schinese broken_explain_options_49d55848:
@@ -8008,31 +8008,31 @@ translate schinese broken_explain_options_b0ecb5e5:
 translate schinese broken_explain_options_90a19130:
 
     # gizel smirk "So here are your options: paying for the asylum, selling her, or putting her on the streets. What will you choose?"
-    gizel smirk "所以你的选择有:送她去疯人院、把她卖掉,或者把她丢到街上。你会选哪个?"
+    gizel smirk "所以你的选择有:送她去精神病院、把她卖掉,或者把她丢到街上。你选哪个?"
 
 # game/BKevents.rpy:7188
 translate schinese broken_menu_40c269b1:
 
     # gizel angry "Fine, I'll have her sent there. Waste of money if you ask me, but it's your call."
-    gizel angry "好吧,我会让她被送去那里。如果你问我的意见,这钱花得太冤枉了,不过你做主吧。"
+    gizel angry "好吧,我会安排她住进去休养。如果你问我的意见,我会说这钱花得太冤枉了,不过你的钱你爱怎么花就怎么花。"
 
 # game/BKevents.rpy:7199
 translate schinese broken_menu_96277cb5:
 
     # "[girl.fullname] has been sent to the lunatic asylum for a month."
-    " [girl.fullname] 已被送往疯人院,为期一个月。"
+    " [girl.fullname]已被送往精神病院,为期一个月。"
 
 # game/BKevents.rpy:7216
 translate schinese broken_menu_cef2b70d:
 
     # gizel "Right, let's just get rid of her now. A little money is still better than nothing."
-    gizel "好了,现在就把她处理掉吧。虽然只能换来点钱,但总比什么都没有强。"
+    gizel "好了,现在就把她处理掉吧。虽然卖不了几个钱,但总比什么都没有强。"
 
 # game/BKevents.rpy:7222
 translate schinese broken_menu_b267e789:
 
     # "[girl.fullname] has been sold to the highest bidder."
-    " [girl.fullname] 已被卖给了出价最高的买家。"
+    " [girl.fullname]已被卖给了出价最高的买家。"
 
 # game/BKevents.rpy:7229
 translate schinese broken_menu_086b2c14:
@@ -8044,7 +8044,7 @@ translate schinese broken_menu_086b2c14:
 translate schinese asylum_return_d2682794:
 
     # "You received some news from the lunatic asylum."
-    "你从疯人院那里收到了一些消息。"
+    "你从精神病院那里得到了一些消息。"
 
 # game/BKevents.rpy:7250
 translate schinese asylum_return_527375cf:
@@ -8056,13 +8056,13 @@ translate schinese asylum_return_527375cf:
 translate schinese asylum_return_ad3fe14c:
 
     # "It seems [girl.fullname] is doing slightly better after spending some time in confinement. Her {b}{a=help:sanity}sanity{/a}{/b} has improved a little."
-    "看来[girl.fullname]在禁闭一段时间后状况有所好转。她的{b}{a=help:sanity}理智{/a}{/b}有些恢复了。"
+    "看来[girl.fullname]在禁闭一段时间后状况有所好转。她的{b}{a=help:sanity}理智{/a}{/b}恢复了一些。"
 
 # game/BKevents.rpy:7257
 translate schinese asylum_return_1ff6c49b:
 
     # nun "She is well-rested, but please be careful next time. Whatever ou have been doing to that poor slave, she was an inch from losing her mind."
-    nun "她休息得很好,但请务必下次小心。不知您对这个可怜的奴隶做了什么,她差点丧失理智。"
+    nun "她休养得很好,但请务必多加小心。不知道您对这个可怜的奴隶做了什么,她差点丧失理智。"
 
 # game/BKevents.rpy:7264
 translate schinese asylum_return_bec48310:
@@ -8074,25 +8074,25 @@ translate schinese asylum_return_bec48310:
 translate schinese asylum_return_a5e43b7f:
 
     # nun "I'm sorry, we've tried all of the usual techniques but her sanity hasn't recovered. Perhaps if we keep trying, we could heal her mind?"
-    nun "很抱歉,我们已经尝试了各种常规疗法,但她的理智却没有恢复。也许我们再努努力,就能治好她的心智?"
+    nun "很抱歉,我们已经尝试了各种常规的治疗方案,但她的理智却一点也没有恢复。也许我们再努努力,就能治好她的心智?"
 
 # game/BKevents.rpy:7277
 translate schinese asylum_return_75f3cb79:
 
     # nun "Fine, we'll keep her here to recover and heal. There are a few spells we could try..."
-    nun "好吧,我们会让她留在这里养伤和恢复。我们还有一些咒语可以尝试..."
+    nun "好吧,我们会让她留在这里休养和治疗。我们还有一些咒语可以尝试..."
 
 # game/BKevents.rpy:7284
 translate schinese asylum_return_83fa95a4:
 
     # "[girl.fullname] will be kept in the lunatic asylum for another month."
-    "[girl.fullname]将被留在疯人院再呆上一个月。"
+    "[girl.fullname]将被留在精神病院再呆上一个月。"
 
 # game/BKevents.rpy:7288
 translate schinese asylum_return_ee55a123:
 
     # nun "Well, it's your prerogative as her Master... I don't expect many people will want her in that state, though."
-    nun "好吧,这是您作为她主人的特权...不过我不认为现在的她会有多少人想要。"
+    nun "好吧,这是您作为奴隶主人的特权...不过我不认为现在的她会有多少人想要。"
 
 # game/BKevents.rpy:7302
 translate schinese asylum_return_b267e789:
@@ -8116,7 +8116,7 @@ translate schinese asylum_return_c0978ae6:
 translate schinese asylum_return_15f1b66b:
 
     # you "Not my problem. You're welcome to give her room and board for free, if you care so much."
-    you "不关我事。如果你在乎她的话,随时欢迎你来负责她的生活费。"
+    you "不关我事。如果你在乎她的话,不如你来负责出她的生活费？"
 
 # game/BKevents.rpy:7315
 translate schinese asylum_return_737f4bb2:
@@ -8128,7 +8128,7 @@ translate schinese asylum_return_737f4bb2:
 translate schinese asylum_return_d1a0415a:
 
     # "[girl.fullname] has been thrown onto the street. You won't hear about her any more."
-    "[girl.fullname]已被扔到街头。你以后就再也听不到她的消息了。"
+    "[girl.fullname]被扔到了街头。你以后再也听不到她的消息了。"
 
 # game/BKevents.rpy:7323
 translate schinese asylum_return_032ba469:
@@ -8140,13 +8140,13 @@ translate schinese asylum_return_032ba469:
 translate schinese asylum_return_3d57255b:
 
     # nun "That young lady has turned into one of the seven devils themselves! She has gone completely mad!"
-    nun "这个年轻女孩已经变成了七大魔王之一!她彻底疯了!"
+    nun "这个年轻女孩把自己当成了七大魔王之一!她彻底疯了!"
 
 # game/BKevents.rpy:7327
 translate schinese asylum_return_55806207:
 
     # you "She did; that's what I'm paying you for."
-    you "她确实这样了;这就是我付钱给你们的原因。"
+    you "如你所见;这就是我付钱给你们的原因。"
 
 # game/BKevents.rpy:7329
 translate schinese asylum_return_13b5cee6:
@@ -8158,7 +8158,7 @@ translate schinese asylum_return_13b5cee6:
 translate schinese asylum_return_2bb66e81:
 
     # nun "That's it, we're kicking her out. I'm sorry."
-    nun "好了,我们把她赶出去吧。很抱歉。"
+    nun "好吧,我们只能把她赶出去了。很抱歉。"
 
 # game/BKevents.rpy:7340
 translate schinese asylum_return_09814fdd:
@@ -8170,19 +8170,19 @@ translate schinese asylum_return_09814fdd:
 translate schinese asylum_no_room_42c4e9bc:
 
     # nun "I'm sorry but it seems you are unable to host her at the time. You could always extend her stay, but we will need you to cover the extra cost."
-    nun "很抱歉,但看来您现在没法接待她。您可以考虑延长她的留宿期,不过需要您承担额外费用。"
+    nun "很抱歉,但看来您现在没法接走她。您可以考虑延长她的留宿期,不过需要您承担额外费用。"
 
 # game/BKevents.rpy:7363
 translate schinese asylum_no_room_35eb5ed2:
 
     # you "Just let her go. I have no need for her anymore."
-    you "就让她走吧。我不需要她了。"
+    you "让她走吧。我不需要她了。"
 
 # game/BKevents.rpy:7382
 translate schinese asylum_return2_f889b588:
 
     # nun "Have you come to take [girl.fullname] off our hands?"
-    nun "你来接[girl.fullname]走了吗?"
+    nun "你来接[girl.fullname]回家吗?"
 
 # game/BKevents.rpy:7393
 translate schinese girl_disappeared_151bb5b4:
@@ -8212,13 +8212,13 @@ translate schinese acquire_girl_cbef6298:
 translate schinese acquire_girl_d4f4cfcb:
 
     # sill sad "Sorry Master, I'm afraid you don't have room in your brothel for another girl."
-    sill sad "很抱歉主人,看来您的青楼里没有多余的地方给她了。"
+    sill sad "很抱歉主人,青楼里没有多余的房间给她了。"
 
 # game/BKevents.rpy:7427
 translate schinese acquire_girl_1af223e0:
 
     # sill "Sorry Master, I'm afraid you don't have room in your brothel for another girl." nointeract
-    sill "很抱歉主人,我恐怕你的青楼里已经没有多余的地方收留另一个女孩了。" nointeract
+    sill "很抱歉主人,恐怕青楼里已经没有多余的房间收留另一个女孩了。" nointeract
 
 # game/BKevents.rpy:7471
 translate schinese acquire_girl_6660ebc4:
@@ -8230,13 +8230,13 @@ translate schinese acquire_girl_6660ebc4:
 translate schinese exhaust_girl_80579301:
 
     # "[girl.fullname] suddenly collapses from exhaustion."
-    "[girl.fullname]突然因过度劳累而倒下。"
+    "[girl.fullname]因过度劳累突然倒下。"
 
 # game/BKevents.rpy:7530
 translate schinese exhaust_girl_8138028e:
 
     # "{color=[c_red]}Unfortunately, she hurt herself in the fall, and will need to rest for [chg] days.{/color}"
-    "{color=[c_red]}不幸的是,她在摔倒的过程中受伤了,需要休息[chg]天。{/color}"
+    "{color=[c_red]}不幸的是,她在摔倒时受伤了,需要休息[chg]天。{/color}"
 
 translate schinese strings:
 
@@ -8250,7 +8250,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:173
     old "Yes, but warn me again"
-    new "是的,但再次提示我"
+    new "是的,但下次也要提示我"
 
     # game/BKevents.rpy:334
     old "Change your brothel settings"
@@ -8270,11 +8270,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:657
     old "You can now move to a larger brothel (maximum "
-    new "你现在可以搬到一个更大的青楼(最多 "
+    new "你现在可以经营一家更大的青楼(最多"
 
     # game/BKevents.rpy:657
     old " bedrooms).\nChoose a district to set up your new brothel."
-    new " 间房间)。\n选择一个区域来建立新的青楼。"
+    new "间房间)。\n选择一个区域来搬进新的青楼。"
 
     # game/BKevents.rpy:668
     old "\nYou will receive a free room of your choice."
@@ -8294,7 +8294,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:713
     old "New license available!"
-    new "新的许可证可用!"
+    new "新的经营许可证!"
 
     # game/BKevents.rpy:713
     old "You have received a brand new "
@@ -8318,15 +8318,15 @@ translate schinese strings:
 
     # game/BKevents.rpy:856
     old "The sisterhood of the night ([cost1] gold)"
-    new "夜之姐妹会([cost1] 金币)"
+    new "夜之姐妹会([cost1]金币)"
 
     # game/BKevents.rpy:856
     old "The slavers guild ([cost2] gold)"
-    new "奴隶交易公会([cost2] 金币)"
+    new "奴隶商人公会([cost2]金币)"
 
     # game/BKevents.rpy:856
     old "The city guard ([cost3] gold)"
-    new "城市警卫队([cost3] 金币)"
+    new "城市警卫队([cost3]金币)"
 
     # game/BKevents.rpy:856
     old "Change your mind and look for her yourself"
@@ -8342,7 +8342,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:985
     old "Sell her"
-    new "把她卖了"
+    new "把她卖掉"
 
     # game/BKevents.rpy:985
     old "Send her to the farm"
@@ -8350,7 +8350,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:1119
     old "Forget about her"
-    new "忘记她吧"
+    new "忘了她吧"
 
     # game/BKevents.rpy:1138
     old "Persuade her to come back."
@@ -8370,11 +8370,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:1138
     old "Leave her for now"
-    new "现在就让她走"
+    new "现在就抛弃她"
 
     # game/BKevents.rpy:1337
     old " is now "
-    new " 现在是 "
+    new "现在是"
 
     # game/BKevents.rpy:1349
     old "\n\n Skill level +1 {image=img_star}"
@@ -8386,7 +8386,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:1558
     old "[girl.fullname] is waiting for you in the bedroom for tonight's training."
-    new "[girl.fullname] 今晚在卧室等着你来训练。"
+    new "[girl.fullname]今晚在卧室接受你的私人指导。"
 
     # game/BKevents.rpy:1558
     old "Train her"
@@ -8406,7 +8406,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:1638
     old "Yes, set up a resource extractor Mk I in this location"
-    new "是的,在这里设置一个Mk I资源提取器"
+    new "是的,在这里设置一个Mk-I型资源提取器"
 
     # game/BKevents.rpy:1638
     old "No, collect resources instead"
@@ -8414,7 +8414,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:1654
     old "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-    new "这里有一个工作中的资源提取器。你要把它关闭吗{b}OFF{/b}?"
+    new "这里有一个运行中的资源提取器。你要{b}关掉{/b}它吗?"
 
     # game/BKevents.rpy:1654
     old "Turn it OFF"
@@ -8422,19 +8422,19 @@ translate schinese strings:
 
     # game/BKevents.rpy:1654
     old "Just collect resources"
-    new "只收集资源"
+    new "我只是来收集资源"
 
     # game/BKevents.rpy:1669
     old "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-    new "这里有一个停止运行的资源提取器。你要把它开启吗{b}ON{/b}?"
+    new "这里有一个停止运行的资源提取器。你要{b}启动{/b}它吗?"
 
     # game/BKevents.rpy:1669
     old "Turn it ON"
-    new "开启它"
+    new "启动它"
 
     # game/BKevents.rpy:1800
     old "Yes, set up a resource extractor Mk II in this location"
-    new "是的,在这里设置一个Mk II资源提取器"
+    new "是的,在这里设置一个Mk-II型资源提取器"
 
     # game/BKevents.rpy:2007
     old "Exchange resources"
@@ -8442,7 +8442,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:2007
     old "Fool around"
-    new "乱搞"
+    new "随便逛逛"
 
     # game/BKevents.rpy:2595
     old "Show me what you have"
@@ -8454,11 +8454,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:2731
     old "What can I get from you here, again?"
-    new "我这里能获得什么来着?"
+    new "我能从你这买到什么?"
 
     # game/BKevents.rpy:2826
     old "Another time"
-    new "另一次"
+    new "下次再说吧"
 
     # game/BKevents.rpy:2923
     old "What would you like to do?"
@@ -8466,7 +8466,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:2923
     old "Buy something"
-    new "买点东西"
+    new "买些东西"
 
     # game/BKevents.rpy:2923
     old "Show her what you found"
@@ -8474,15 +8474,15 @@ translate schinese strings:
 
     # game/BKevents.rpy:2958
     old "Give her as a present"
-    new "送给她作为礼物"
+    new "作为礼物送给她"
 
     # game/BKevents.rpy:3062
     old "Chat"
-    new "聊聊天"
+    new "闲聊"
 
     # game/BKevents.rpy:3072
     old "How are things?"
-    new "最近如何?"
+    new "最近过得怎么样?"
 
     # game/BKevents.rpy:3072
     old "Can I come in?"
@@ -8490,19 +8490,19 @@ translate schinese strings:
 
     # game/BKevents.rpy:3097
     old "What do you want to do? (costs 1 AP)"
-    new "你想做什么? (消耗 1 AP)"
+    new "你想做什么? (消耗1行动力)"
 
     # game/BKevents.rpy:3097
     old "Strip for me"
-    new "为我脱衣服"
+    new "脱光衣服"
 
     # game/BKevents.rpy:3097
     old "Give me a titjob"
-    new "给我做乳交"
+    new "给我乳交"
 
     # game/BKevents.rpy:3097
     old "Let's have sex"
-    new "我们做爱吧"
+    new "和我做爱"
 
     # game/BKevents.rpy:3537
     old "Spare her"
@@ -8510,11 +8510,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:3583
     old "[girl.fullname] is resisting. What do you do?"
-    new "[girl.fullname] 正在抵抗。你打算怎么做?"
+    new "[girl.fullname]拒绝服从。你打算怎么做?"
 
     # game/BKevents.rpy:3583
     old "Force her"
-    new "强迫她"
+    new "霸王硬上弓"
 
     # game/BKevents.rpy:3583
     old "Send her to rest instead"
@@ -8522,7 +8522,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3583
     old "Let her go with a warning"
-    new "给她一个警告后放她走"
+    new "警告她然后放她走"
 
     # game/BKevents.rpy:3656
     old "Follow her to the farm"
@@ -8546,7 +8546,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3750
     old "Yes, do that"
-    new "是的,这么做"
+    new "是的,就这么做"
 
     # game/BKevents.rpy:3750
     old "No, spare her"
@@ -8554,7 +8554,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3830
     old "Review her training"
-    new "检查她的训练"
+    new "检查她的训练内容"
 
     # game/BKevents.rpy:3830
     old "Change training mode (gentle)"
@@ -8574,7 +8574,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3894
     old "Change current training mode ([prog.mode])"
-    new "改变当前训练模式([prog.mode])"
+    new "改变当前的训练模式([prog.mode])"
 
     # game/BKevents.rpy:3894
     old "Use her weakness for [girl.weakness]s ([not_avoid])"
@@ -8594,7 +8594,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:3910
     old "Use it"
-    new "使用它"
+    new "利用它"
 
     # game/BKevents.rpy:3978
     old "No, you keep her"
@@ -8626,7 +8626,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:4284
     old "I need to check some things first"
-    new "我需要先检查一些事情"
+    new "我需要先检查一些东西"
 
     # game/BKevents.rpy:4284
     old "None of my girls has the skills for this."
@@ -8646,7 +8646,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:4406
     old "No, I'll skip on contracts this month"
-    new "不,这个月我会跳过合约"
+    new "不,这个月我不接合约"
 
     # game/BKevents.rpy:5665
     old "Choose what you want [girl.fullname] to do:"
@@ -8658,7 +8658,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:5665
     old "Regular sex"
-    new "正常性交"
+    new "性交"
 
     # game/BKevents.rpy:5665
     old "Butt sex"
@@ -8666,7 +8666,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:5665
     old "Kinky sex"
-    new "变态性交"
+    new "变态的玩法"
 
     # game/BKevents.rpy:5665
     old "Threesome"
@@ -8686,11 +8686,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:5824
     old "One of my cum dumps"
-    new "我的性爱对象之一"
+    new "我的炮友之一"
 
     # game/BKevents.rpy:5886
     old "Yes, explain yourself"
-    new "是的,解释一下"
+    new "是的,请你解释一下"
 
     # game/BKevents.rpy:5886
     old "No, I get it"
@@ -8698,35 +8698,35 @@ translate schinese strings:
 
     # game/BKevents.rpy:5903
     old "A necessary evil"
-    new "必要的邪恶"
+    new "这是必要之恶"
 
     # game/BKevents.rpy:5903
     old "An unacceptable powergrab"
-    new "不可接受的权力之争"
+    new "不可接受的上层剥削"
 
     # game/BKevents.rpy:5903
     old "Not the fucking point"
-    new "这不是重点"
+    new "这都不是重点"
 
     # game/BKevents.rpy:5979
     old "How much do I have to pay"
-    new "我需要支付多少金额"
+    new "我需要支付多少金币"
 
     # game/BKevents.rpy:5979
     old "When do I have to pay"
-    new "我需要什么时候支付"
+    new "什么时候支付会费"
 
     # game/BKevents.rpy:5979
     old "What if I refuse"
-    new "如果我拒绝会怎样"
+    new "如果我拒绝支付会怎么样"
 
     # game/BKevents.rpy:5979
     old "What happens if I can't pay"
-    new "如果我无法支付会发生什么"
+    new "如果我无法支付会发生什么事"
 
     # game/BKevents.rpy:5979
     old "Fine, I'll pay"
-    new "好吧,我会支付"
+    new "好吧,我会付钱的"
 
     # game/BKevents.rpy:6163
     old "Good evening."
@@ -8758,7 +8758,7 @@ translate schinese strings:
 
     # game/BKevents.rpy:6853
     old "I do, and don't call me Shirley"
-    new "我是的,别叫我雪莉"
+    new "是我,还有别叫我雪莉"
 
     # game/BKevents.rpy:6853
     old "Oh no"
@@ -8778,11 +8778,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:7182
     old "Explain my options again"
-    new "再解释一遍我的选择"
+    new "再解释一遍这些选项"
 
     # game/BKevents.rpy:7272
     old "Keep her at the asylum for another month (cost: {image=img_gold_24} [asylum_cost])"
-    new "继续让她在精神病院住一个月(费用:{image=img_gold_24}[asylum_cost])"
+    new "让她在精神病院再住一个月(费用:{image=img_gold_24}[asylum_cost])"
 
     # game/BKevents.rpy:7272
     old "Sell her cheap (starting price: {image=img_gold_24} [auction_min_price])"
