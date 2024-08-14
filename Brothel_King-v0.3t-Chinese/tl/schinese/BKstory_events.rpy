@@ -3006,9 +3006,9 @@ translate schinese farm_meet_gizel_e8d92779:
     # "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
     if text1 == "anti-rust lotion": 
         $ cntext = "防锈洗剂"
-    if text1 == "magic herbs":
+    elif text1 == "magic herbs":
         $ cntext = "魔法药草"
-    if text1 == "dragon feed":
+    elif text1 == "dragon feed":
         $ cntext = "飞龙饲料"
     "在集市上四处寻找[cntext],你注意到一个异域风情的身影正在附近的香料商那里看货。"
 
