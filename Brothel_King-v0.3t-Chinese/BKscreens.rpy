@@ -2002,7 +2002,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                 action (ToggleField(girl, "auto_upkeep"), SetField(girl, "upkeep_ratio", (girl.upkeep - girl.get_med_upkeep())/girl.rank), Play("sound", s_click))
                                 tooltip "{size=+2}" + text1 + __("\nWhen this is turned on, current upkeep balance will 'lock', and upkeep will rise and fall automatically.") + "{/size=+2}"
 
-                            text " " + str(round_int(girl.upkeep)) + " gold":
+                            text " " + str(round_int(girl.upkeep)) + " 金币":
                                 size res_font(14)
                                 if girl.get_upkeep_modifier() < 0:
                                     color c_red
@@ -3579,7 +3579,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
                     add ProportionalScale("UI/" + license_dict[0][1], *res_tb(50)) xalign 0.5
 
-                text tl_cn(license_dict[1][0], location_name_dict) + __("\nrequired") xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
+                text __(license_dict[1][0]) + __("\nrequired") xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["warehouse"], context) id "b2"
             use district_button(district_dict["docks"], context) id "b3"
@@ -6954,7 +6954,7 @@ screen challenge(name, diff, raw=False, bonus=0, opponent_bonus=0):
             frame background "#22222288" xfill True xsize xres(250) ysize yres(160) xpadding 10 ypadding 10:
 
                 vbox:
-                    text __("Player ") + __(chal.stat.capitalize()) + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size res_font(18)
+                    text __("Player ") + __(start_name_dict[chal.stat.capitalize()]) + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size res_font(18)
                     text __("Active bonus: ") + str_int(bonus + MC.get_stat(chal.stat, raw) - MC.get_stat(chal.stat, raw=True) + MC.get_effect("change", name + " challenges")) size int(config.screen_height*0.0222)
                     text ""
 
