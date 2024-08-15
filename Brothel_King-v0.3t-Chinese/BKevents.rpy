@@ -7133,7 +7133,7 @@ label is_broken(girl):
 
     gizel upset "It seems using her to conduct evil powers have cost her the last of her {a=help:sanity}sanity{/a}... She's good for nothing now. She'll only harm herself."
 
-    $ MC.rand_say(("gd: 哦,不……她真的走了吗?我们就不能做点什么吗?", "ne: 该死，那太糟糕了……我从没想过会这样结束...", "ev: 那个蠢女人!我现在怎样才能收回投资呢?"))
+    $ MC.rand_say(("gd: 哦,不......她真的走了吗?我们就不能做点什么吗?", "ne: 该死，那太糟糕了......我从没想过会这样结束...", "ev: 那个蠢女人!我现在怎样才能收回投资呢?"))
 
     gizel angry "Like I said, she's good for nothing at the brothel or even the farm in that state. You do have a few options, though."
 

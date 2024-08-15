@@ -34,7 +34,7 @@ translate schinese c3_suzume_hint_ec3923c2:
 translate schinese c3_suzume_hint_7eced502:
 
     # you "Why you... Grrr..."
-    you "你这个....咆哮…"
+    you "你这个....咆哮..."
 
 # game/BKchapter3.rpy:24
 translate schinese c3_suzume_hint_167239e1:
@@ -4726,13 +4726,13 @@ translate schinese homura_cowgirl_d391fafb:
 translate schinese homura_cowgirl_a84733ba:
 
     # you "Of course... If you want to."
-    you "当然…如果你愿意的话。"
+    you "当然...如果你愿意的话。"
 
 # game/BKchapter3.rpy:2446
 translate schinese homura_cowgirl_aa452180:
 
     # homura "I do! But this time... I'll be on top!"
-    homura "我愿意! 不过这次…我要在上面！"
+    homura "我愿意! 不过这次...我要在上面！"
 
 # game/BKchapter3.rpy:2448
 translate schinese homura_cowgirl_e6f9fb19:
@@ -4774,13 +4774,13 @@ translate schinese homura_cowgirl_356d562d:
 translate schinese homura_cowgirl_4c7fe850:
 
     # you "You're so forward today..."
-    you "你今天真主动啊…"
+    you "你今天真主动啊..."
 
 # game/BKchapter3.rpy:2464
 translate schinese homura_cowgirl_ac851f9d:
 
     # homura "Shut up... And get to it! *blush*"
-    homura "闭嘴…赶紧干我!*脸红*"
+    homura "闭嘴...赶紧干我!*脸红*"
 
 # game/BKchapter3.rpy:2470
 translate schinese homura_cowgirl_4b720b39:
@@ -4792,19 +4792,19 @@ translate schinese homura_cowgirl_4b720b39:
 translate schinese homura_cowgirl_658b5c6b:
 
     # homura "Oh! It's so deep... It hurts..."
-    homura "噢!好深…好痛…"
+    homura "噢!好深...好痛..."
 
 # game/BKchapter3.rpy:2474
 translate schinese homura_cowgirl_992a6206:
 
     # you "Slow down..."
-    you "慢点…"
+    you "慢点..."
 
 # game/BKchapter3.rpy:2476
 translate schinese homura_cowgirl_be118608:
 
     # homura "It's... Aw... Fine..."
-    homura "它…啊…可以了…"
+    homura "它...啊...可以了..."
 
 # game/BKchapter3.rpy:2478
 translate schinese homura_cowgirl_fefba78b:
@@ -4822,7 +4822,7 @@ translate schinese homura_cowgirl_eb8a18bf:
 translate schinese homura_cowgirl_a85d81fb:
 
     # homura "S-Sure. You can move now..."
-    homura "嗯…没事的,你可以动了…"
+    homura "嗯...没事的,你可以动了..."
 
 # game/BKchapter3.rpy:2484
 translate schinese homura_cowgirl_6971d982:
@@ -4834,7 +4834,7 @@ translate schinese homura_cowgirl_6971d982:
 translate schinese homura_cowgirl_db1c6745:
 
     # homura "Hmmm..."
-    homura "嗯…"
+    homura "嗯..."
 
 # game/BKchapter3.rpy:2488
 translate schinese homura_cowgirl_4c579940:
@@ -4846,7 +4846,7 @@ translate schinese homura_cowgirl_4c579940:
 translate schinese homura_cowgirl_6979a3f8:
 
     # homura "Oooh..."
-    homura "喔…"
+    homura "喔..."
 
 # game/BKchapter3.rpy:2492
 translate schinese homura_cowgirl_cfd37321:
@@ -4870,7 +4870,7 @@ translate schinese homura_cowgirl_7e2f89eb:
 translate schinese homura_cowgirl_484f8ca0:
 
     # you "Your tits. They're just the right size for my hands... I love them."
-    you "你的乳房。刚好可以握住…我好喜欢。"
+    you "你的乳房。刚好可以握住...我好喜欢。"
 
 # game/BKchapter3.rpy:2500
 translate schinese homura_cowgirl_bf5a193d:
@@ -4900,7 +4900,7 @@ translate schinese homura_cowgirl_7eb97b17:
 translate schinese homura_cowgirl_2adb54de:
 
     # homura "It's going deep... Deep..."
-    homura "好深…好深…"
+    homura "好深...好深..."
 
 # game/BKchapter3.rpy:2512
 translate schinese homura_cowgirl_b903fc2f:

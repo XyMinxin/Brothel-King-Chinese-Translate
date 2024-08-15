@@ -2320,7 +2320,7 @@ translate schinese renza_onsen3_6fe55c70:
 translate schinese renza_onsen3_4e7785c5:
 
     # renza "Why you..."
-    renza "你这是…"
+    renza "你这是..."
 
 # game/BKstory_events.rpy:1223
 translate schinese renza_onsen3_7fa8210b:
@@ -3154,7 +3154,7 @@ translate schinese farm_meet_gizel2_e493cc63:
 translate schinese farm_meet_gizel2_cbfa2317:
 
     # you "This silence... I'm not about to fall into another one of those stupid ambushes, am I?"
-    you "这静谧…我可不想再遭遇什么愚蠢的伏击了。"
+    you "这静谧...我可不想再遭遇什么愚蠢的伏击了。"
 
 # game/BKstory_events.rpy:1673
 translate schinese farm_meet_gizel2_bbfe90c5:
@@ -7042,7 +7042,7 @@ translate schinese farm_go_with_gizel_5717e606:
 translate schinese farm_go_with_gizel_c5ab2389:
 
     # spirit "Hey! Stay away from me! What... What are you doing?!?"
-    spirit "嘿!离我远点!你…你在做什么?!?"
+    spirit "嘿!离我远点!你...你在做什么?!?"
 
 # game/BKstory_events.rpy:3738
 translate schinese farm_go_with_gizel_86dfcf32:
@@ -7066,7 +7066,7 @@ translate schinese farm_go_with_gizel_30a2aff1:
 translate schinese farm_go_with_gizel_64a83187:
 
     # spirit "S... S... Stop it already! I said no!"
-    spirit "停…停下来!我说了不要!"
+    spirit "停...停下来!我说了不要!"
 
 # game/BKstory_events.rpy:3750
 translate schinese farm_go_with_gizel_5fdf01f1:
@@ -11386,7 +11386,7 @@ translate schinese stella_secret1_ee4e14a3:
 translate schinese stella_secret1_53b17113:
 
     # stella "Now, let's test this new Stallion XS... Let's get some man milk out of him."
-    stella "好了,让我们来试试这种新的'种马XS'…让我们从他这里挤出些男性乳汁吧。"
+    stella "好了,让我们来试试这种新的'种马XS'...让我们从他这里挤出些男性乳汁吧。"
 
 # game/BKstory_events.rpy:5838
 translate schinese stella_secret1_b1218885:
@@ -13456,7 +13456,7 @@ translate schinese farm_meet_willow_0ef52b60:
 translate schinese farm_meet_willow_62a677ae:
 
     # "You can almost hear it... Purring."
-    "你几乎能听到它…发出的咕噜声。"
+    "你几乎能听到它...发出的咕噜声。"
 
 # game/BKstory_events.rpy:6942
 translate schinese farm_meet_willow_65b6b898:
@@ -13480,7 +13480,7 @@ translate schinese farm_meet_willow_4b59e7ad:
 translate schinese farm_meet_willow_86665469:
 
     # willow "A slimochu is way too valuable these days... They are an endangered species!"
-    willow "这些天一只史莱姆皮卡丘可是非常珍稀…它们已经濒临灭绝了!"
+    willow "这些天一只史莱姆皮卡丘可是非常珍稀...它们已经濒临灭绝了!"
 
 # game/BKstory_events.rpy:6950
 translate schinese farm_meet_willow_fd1b35ed:
@@ -29860,7 +29860,7 @@ translate schinese hire_carpenter_345ee793:
 translate schinese hire_carpenter_6532b59a:
 
     # "Iulia has moved into your brothel. You may now build various types of furniture at the {b}carpenter's wagon{/b}."
-    "露莉亚已搬入您的青楼。您现在可以在{b}木工车厢{/b}建造各种家具。"
+    "露莉亚已搬入您的青楼。您现在可以在{b}工匠改造{/b}建造各种家具。"
 
 # game/BKstory_events.rpy:15759
 translate schinese hire_carpenter_89e5214b:

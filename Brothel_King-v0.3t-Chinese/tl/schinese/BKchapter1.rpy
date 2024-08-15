@@ -1066,7 +1066,7 @@ translate schinese c1_ambush_cabcba11:
 translate schinese c1_reached_goal_d623bd65:
 
     # sill happy "Master! Great news! We now have the necessary gold, and we..."
-    sill happy "主人！好消息!我们现在有足够的金币了,我们…"
+    sill happy "主人！好消息!我们现在有足够的金币了,我们..."
 
 # game/BKchapter1.rpy:689
 translate schinese c1_reached_goal_6f9b202d:
@@ -1078,7 +1078,7 @@ translate schinese c1_reached_goal_6f9b202d:
 translate schinese c1_reached_goal_f19c886a:
 
     # you "Gio! When did you..."
-    you "乔!你什么时候来的…"
+    you "乔!你什么时候来的..."
 
 # game/BKchapter1.rpy:695
 translate schinese c1_reached_goal_5879e8fc:
@@ -1096,19 +1096,19 @@ translate schinese c1_reached_goal_abe2937b:
 translate schinese c1_reached_goal_b62415ce:
 
     # you "Look, Gio... I would rather take care of this myself. What did you plan to do with this money?"
-    you "听着,乔…我想自己来处理。你打算怎么花这笔钱?"
+    you "听着,乔...我想自己来处理。你打算怎么花这笔钱?"
 
 # game/BKchapter1.rpy:701
 translate schinese c1_reached_goal_c5e24bc6:
 
     # gio "Well, err, I have a contact with the city guard... If we have the right amount, she promised to take care of the paperwork, so that we can get a real license and move into the city itself."
-    gio "哦,我有个军队里的熟人…如果我们给她足够的报酬,她答应会帮我们办理所有手续,这样我们就可以进城里做生意了。"
+    gio "哦,我有个军队里的熟人...如果我们给她足够的报酬,她答应会帮我们办理所有手续,这样我们就可以进城里做生意了。"
 
 # game/BKchapter1.rpy:704
 translate schinese c1_reached_goal_faf3f64f:
 
     # gio "You can see her for yourself, of course... I'll send word. *nervous*"
-    gio "你可以自己去找她…替我问好。*不安*"
+    gio "你可以自己去找她...替我问好。*不安*"
 
 # game/BKchapter1.rpy:706
 translate schinese c1_reached_goal_9a3dd74f:
@@ -1192,7 +1192,7 @@ translate schinese c1_visit_watchtower_ff186ec7:
 translate schinese c1_visit_watchtower_c1f4db66:
 
     # lieutenant "All right, I'll send word to the city office. This should take about 3 days to process... You can give me the gold now."
-    lieutenant "好的,我会通知城里的公务人员。这个过程大概需要3天…现在把钱给我。"
+    lieutenant "好的,我会通知城里的公务人员。这个过程大概需要3天...现在把钱给我。"
 
 # game/BKchapter1.rpy:776
 translate schinese c1_visit_watchtower_575e7aec:
@@ -4198,7 +4198,7 @@ translate schinese c1_ask_guild_for_help_e94809b8:
 translate schinese c1_ask_guild_for_help_2b090d47:
 
     # lieutenant "A small-time pimp from the slums. I have no idea what he's doing here, but I'm sure he's gonna tell us..."
-    lieutenant "来自贫民窟的年轻皮条客。我不知道他为什么会在这里,但我相信他很快就会告诉我们…"
+    lieutenant "来自贫民窟的年轻皮条客。我不知道他为什么会在这里,但我相信他很快就会告诉我们..."
 
 # game/BKchapter1.rpy:2617
 translate schinese c1_ask_guild_for_help_f884f801:
@@ -9256,7 +9256,7 @@ translate schinese c1_captain_meeting_277a6f2f:
 translate schinese c1_captain_meeting_6441c0ac:
 
     # captain "I will be able to let the gold run through my well-manicured hands for relaxation... Mmmmh..."
-    captain "我会让金币在我的掌间流淌,这样会让我感到放松....嗯....…"
+    captain "我会让金币在我的掌间流淌,这样会让我感到放松....嗯......."
 
 # game/BKchapter1.rpy:5104
 translate schinese c1_captain_meeting_829992d5:
@@ -10402,7 +10402,7 @@ translate schinese c1_trial_46fdd2f6:
 translate schinese c1_trial_d5c2757f:
 
     # captain "You are a part of this too? I knew you were hiding something from me... This is the day for traitors, I swear..."
-    captain "你也参与其中了?我就知道你对我隐瞒了什么…今天是叛徒的忌日,我发誓…"
+    captain "你也参与其中了?我就知道你对我隐瞒了什么...今天是叛徒的忌日,我发誓..."
 
 # game/BKchapter1.rpy:5678
 translate schinese c1_trial_a367a63a:
@@ -10468,7 +10468,7 @@ translate schinese c1_trial_5cd17928:
 translate schinese c1_trial_7862cba7:
 
     # you "People of Zan, I want you to listen... In fact, I am not the one who will be doing the talking."
-    you "泽恩的人民,我要你们听好…事实上,发言的人并不是我。"
+    you "泽恩的人民,我要你们听好...事实上,发言的人并不是我。"
 
 # game/BKchapter1.rpy:5710
 translate schinese c1_trial_586c5102:

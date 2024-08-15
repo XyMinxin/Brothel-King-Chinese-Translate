@@ -231,7 +231,7 @@ init -1 python:
     add_dialogue("MC take virginity", ("generic"), "你是我的第一个男人...", love=5)
 
     add_dialogue("free_play interested after", ("generic"), "我喜欢这样... *脸红*")
-    add_dialogue("free_play not interested after", ("generic"), "嗯…你现在满意了吗?")
+    add_dialogue("free_play not interested after", ("generic"), "嗯...你现在满意了吗?")
 
     add_dialogue("free_flirt_beauty", ("masochist"), "你的马屁拍错人了.", love=-1, max_cap=75)
     add_dialogue("free_flirt_beauty", ("rebel"), "哼, 你觉得我是那种很容易就被骗上床的女人?", love=-1, max_cap=75)
@@ -278,17 +278,17 @@ init -1 python:
 
     add_dialogue("free_flirt_sex_experience reply_been_around", ("very modest"), "好吧, 其实我不知道.", love=-1)
     add_dialogue("free_flirt_sex_experience reply_been_around", ("modest"), "噢...")
-    add_dialogue("free_flirt_sex_experience reply_been_around", ("lewd"), "我明白了…我相信我们可以一起学习...", love=1)
+    add_dialogue("free_flirt_sex_experience reply_been_around", ("lewd"), "我明白了...我相信我们可以一起学习...", love=1)
     add_dialogue("free_flirt_sex_experience reply_been_around", ("very lewd"), "啊，你的嘴还是这么甜!也许我们可以试试更刺激的...", love=2)
 
     add_dialogue("free_flirt_sex_experience reply_sex_god success", ("modest"), "噁, 你好恶心!", love=-1)
     add_dialogue("free_flirt_sex_experience reply_sex_god success", ("modest", "materialist"), "我希望你没说过这句话。但男人都是大猪蹄子，所以我想这也很正常.")
     add_dialogue("free_flirt_sex_experience reply_sex_god success", ("lewd"), "嘿，你就不怕得病？你这只狗... *嘲笑*", love=2)
-    add_dialogue("free_flirt_sex_experience reply_sex_god success", ("pervert"), "有趣…你在这方面真是天赋异禀...", love=3)
-    add_dialogue("free_flirt_sex_experience reply_sex_god failure", ("modest"), ["g: 哈哈。你....你在开玩笑吧?", "mc: 嗯…当然!"], multiple=True, love=1)
+    add_dialogue("free_flirt_sex_experience reply_sex_god success", ("pervert"), "有趣...你在这方面真是天赋异禀...", love=3)
+    add_dialogue("free_flirt_sex_experience reply_sex_god failure", ("modest"), ["g: 哈哈。你....你在开玩笑吧?", "mc: 嗯...当然!"], multiple=True, love=1)
     add_dialogue("free_flirt_sex_experience reply_sex_god failure", ("generic"), "大话连篇，但你能证明吗?我不这么想。", love=-1)
 
-    add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("modest", "idealist"), "我知道…我想这是意料之中的... *叹气*")
+    add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("modest", "idealist"), "我知道...我想这是意料之中的... *叹气*")
     add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("modest", "materialist"), "别对我脸做文章!我的男朋友是个皮条客已经够糟糕的了，不用你提醒我。", love=-1)
     add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("lewd"), "好吧，等你变得更加熟练后再来更好地满足我...", love=2)
     add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("very lewd"), "嗯，你应该一直努力在你的工作中做到最好，不是吗? *微笑*", love=3)
@@ -297,7 +297,7 @@ init -1 python:
     add_dialogue("free_flirt_sex_act very reluctant", "generic", ["她厌恶地看了你一眼.", "g: 这方面我知之甚少。还是讨论点别的吧."], multiple=True, love=-1)
     add_dialogue("free_flirt_sex_act reluctant", "generic", ["她皱眉.", "g: 这不是我最喜欢的。我知道有些人很喜欢，但是..."], multiple=True)
     add_dialogue("free_flirt_sex_act a little reluctant", "generic", ["她皱眉.", "g: 这不是我最喜欢的。我知道有些人很喜欢，但是..."], multiple=True)
-    add_dialogue("free_flirt_sex_act indifferent", "generic", ["她想了一会儿.", "g: 哦,好吧…我想我不介意..."], multiple=True, love=1)
+    add_dialogue("free_flirt_sex_act indifferent", "generic", ["她想了一会儿.", "g: 哦,好吧...我想我不介意..."], multiple=True, love=1)
     add_dialogue("free_flirt_sex_act a little interested", "generic", ["她脸色变红.", "g: Hmmm... 别谈这个，我会忍不住的..."], multiple=True, love=2)
     add_dialogue("free_flirt_sex_act interested", "generic", ["她脸色变红.", "g: Hmmm... 别谈这个，我会忍不住的..."], multiple=True, love=2)
     add_dialogue("free_flirt_sex_act very interested", "generic", ["她舔了舔嘴唇.", "g: 非得让我亲口说出来嘛，我喜欢....这是我最喜欢的事情之一."], multiple=True, love=3, sound=s_mmh)
@@ -314,7 +314,7 @@ init -1 python:
     add_dialogue("free_offer_job no_lie", ("generic"), ["她用新发现的决心看着你.", "g: 除了做妓女没别的路可走了吗...", "g: 我很高兴你告诉了我真相。让我思考一下。", "g: 你...我想我可以?"], multiple=True, love=1)
     add_dialogue("free_offer_job no_lie", ("masochist", "pervert", "very lewd"), ["她好奇地看了你一眼.", "g: 你一定认为我是个下流的婊子，对吗?", "mc: 哎呀...", "g: 也许你说的没错...Mmmh...", "她咬着嘴唇.", "g: 如果我在那里工作，我每天都要和不同的人上床，对吧?"], multiple=True, love=3)
 
-    add_dialogue("free_offer_job half_lie", ("masochist", "pervert"), ["g: 你之前不是说你是个...", "mc: 对不起我撒谎了...", "g: 这比我想象的有趣多了…你为什么瞒着我!!我讨厌欺骗...", "g: 所以如果我在你那里工作，我就可以整晚都和陌生人随便做爱，对吗? Hmm..."], multiple=True)
+    add_dialogue("free_offer_job half_lie", ("masochist", "pervert"), ["g: 你之前不是说你是个...", "mc: 对不起我撒谎了...", "g: 这比我想象的有趣多了...你为什么瞒着我!!我讨厌欺骗...", "g: 所以如果我在你那里工作，我就可以整晚都和陌生人随便做爱，对吗? Hmm..."], multiple=True)
     add_dialogue("free_offer_job half_lie", ("generic"), ["g: 你从没告诉过我你是做这个的!", "mc: 放轻松, 这并不重要...", "g: 那里的女孩们....他们....为了钱出卖自己的身体，是吗?"], multiple=True, love=-2)
 
     add_dialogue("free_offer_job lie", ("idealist"), ["g: 你说什么?", "g: 你这个该死的骗子!!! 我怎么会相信你!!! *哭喊*", "g: 哦，这太可怕了....我最后的希望破灭了....为你工作能有什么好处?", "mc: 好吧, 我会保护你，包吃包住还有可观的薪水...", "g: 我该怎么办?你没有骗我吗?"], multiple=True, love=-5)
@@ -336,7 +336,7 @@ init -1 python:
     add_dialogue("free_friend half_lie", ("very idealist", "rebel"), ["g: 一个 [MC.playerclass]? 哦, 太棒了!你可以教我一些把戏吗!", "mc: 没问题, 当然... 你呢，你是做什么的?", "她的情绪有点低落。", "g: 额, 就像你一样，我也在找工作..."], multiple=True, love=2)
     add_dialogue("free_friend half_lie", ("generic"), ["g: 原来如此。冒险家在这里很常见。", "mc: 那你呢，你是做什么的?", "g: 我吗?猜猜看,嗯哼..."], multiple=True)
 
-    add_dialogue("free_friend lie", ("very introvert"), ["她冷漠地看着你。", "g: 真的吗?奇怪。我从来没听说过你。你说的是实话吗?", "mc: 嗯,嗯…哦，天色不早了，哈哈!我真的得走了."], multiple=True, love=-5)
+    add_dialogue("free_friend lie", ("very introvert"), ["她冷漠地看着你。", "g: 真的吗?奇怪。我从来没听说过你。你说的是实话吗?", "mc: 嗯,嗯...哦，天色不早了，哈哈!我真的得走了."], multiple=True, love=-5)
     add_dialogue("free_friend lie", ("very extrovert"), ["g: 真的吗?这太棒了!这是一份好工作，不是吗?", "mc: 是的, 当然...", "g: 哦，也许你需要一位美女助手，你可以雇佣我! *眨眼*"], multiple=True, love=5)
     add_dialogue("free_friend lie", ("generic"), ["g: 一个... [lie]? 我知道了.", "mc: 哈哈, 当然... 你呢，你是做什么的?", "g: 哦，你知道的，这个那个..."], multiple=True)
 
@@ -356,7 +356,7 @@ init -1 python:
     add_dialogue("free_job_request", "very idealist", ["g: 哦, [MC.name]. 你知道有什么渠道能赚到些快钱吗*满头大汗*?", "mc: 嗯，可能有吧... 发生了什么事?", "g: 是学校。家里最近出了点问题，我必须想办法支付下学期的学费才能继续学习，但我所有的积蓄都用完了！*焦急*", "g: 如果我没办法支付学费，我就得辍学，失去接受教育的机会...", "她看起来很担心.", "mc: 可能有个工作... 工作时间很灵活。不过你可能不会喜欢.", "g: 拜托了，为了能继续学习我愿意做任何事。这对我来说非常重要！"], multiple=True, fear=-5)
     add_dialogue("free_job_request", "pervert", ["g: 天呐！大巴黎要离开了!", "mc: 什么...大什么??", "g: PXG！你不知道吗？他们是塞洛斯的一支著名球队!", "mc: 所以呢...", "g: 所以? 我是他们的狂热粉丝!!我曾经和前锋约会过，还有守门员，他们给了我大量的礼物和签名...", "mc: 嗯,嗯？什么?", "g: 抱歉，亲爱的，别往心里去，你很棒，但他们可是绝世好男人... 大巴黎有15名队员!!! 我到哪里去再找一批又有钱又好色的男人???", "mc: 这可真是..."], multiple=True, fear=-5)
     add_dialogue("free_job_request", "very dom", ["g: [MC.name]... 帮帮我, 求你了! *恐慌*", "mc: 怎么这么慌张?这不像你...", "g: 几周前我遇到了一个混混，他想强奸我，我踢了他的那里...几天后我就要受审了。他们会....他们会把我变成奴隶的!", "在泽恩, 如果你没有钱来赔偿受害者，法官有权利把你变成奴隶抵债...", "g: 我最后的一点钱都拿去付了保释金。但他们肯定会认定我有罪，那人的同伙会奴役我!他们会在我的余生里强奸和折磨我!", "g: 几万金币，如果赔不起我就得...", "mc: EMMMM... 你知道奴隶是不需要受审的吗?她犯的错误由主人承担。", "g: 但我不是奴隶....你的意思是?"], multiple=True, fear=-5)
-    add_dialogue("free_job_request", "very materialist", ["g: Oh, [MC.name]! 为什么每个人都想毁了我的生活!", "mc: 别想太多，亲爱的...发生了什么事?", "g: 是我父亲!他的遗产...自从他去世后....我只用它买了几件东西，几个手袋，六件裙子，神奇的内衣...", "g: 但是那个愚蠢的职员说钱不见了!都不见了!现在贪婪的高利贷者想要回我借的零用钱... *哭泣*", "她泪眼婆娑地看着你.", "g: 我负债累累!我该怎么办... *啜泣*", "mc: Mmmh... 好吧，也许有一种方法…你知道，奴隶不能负债?", "g: 唔?"], multiple=True, fear=-5)
+    add_dialogue("free_job_request", "very materialist", ["g: Oh, [MC.name]! 为什么每个人都想毁了我的生活!", "mc: 别想太多，亲爱的...发生了什么事?", "g: 是我父亲!他的遗产...自从他去世后....我只用它买了几件东西，几个手袋，六件裙子，神奇的内衣...", "g: 但是那个愚蠢的职员说钱不见了!都不见了!现在贪婪的高利贷者想要回我借的零用钱... *哭泣*", "她泪眼婆娑地看着你.", "g: 我负债累累!我该怎么办... *啜泣*", "mc: Mmmh... 好吧，也许有一种方法...你知道，奴隶不能负债?", "g: 唔?"], multiple=True, fear=-5)
     add_dialogue("free_job_request", "very introvert", ["g: 嗨, [MC.name].", "mc: Hi, [girl.name].", "g: 我可以为你工作吗?", "mc: 呃?", "g: 我说，我可以为你工作吗？我需要钱。这能有多难呢?", "mc: 嗯....这真是个意外的请求....让我想想."], multiple=True, fear=-5)
     add_dialogue("free_job_request", "masochist", ["g: ...", "mc: 怎么了, [girl.name]?", "g: 我不值得被人尊重。", "mc: 啊???", "g: 我是个淫荡的母狗。我想让你虐待我。我想被当成你的厕所使用。我想要...", "mc: 哇，我们确实有一些奇怪的客人，但是....这真前卫.", "g: 请帮我，让人捆住我，虐待我，我想成为性奴隶...", "mc: 既然如此，欢迎加入..."], multiple=True, fear=-5)
     add_dialogue("free_job_request", "very extravert", ["g: 你...你在脚踏两只船吗?", "mc: 嗯?", "g: 告诉我真相...哦，我知道了...我看到你和她在一起做那些事...我的心都要碎了!", "mc: 对不起...我...我会解释的...", "g: 没关系。就算你不爱我了，但我还是爱着你。我想永远在你身边。", "g: 我愿意做任何事来留在你身边。我也可以成为你的奴隶。", "g: 你会...抛弃我吗？求你了，请奴役我...我是你的女人!", "mc: 嗯...我...让我想想..."], multiple=True, fear=-5)
@@ -1631,7 +1631,7 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("rebel"), ["她很快脱掉衣服，将身体贴近你的身体。", "g: 我们玩得开心吧？是时候我们加强身体锻炼了。你想玩玩吗？", "她把手放在你的胯部，嘴唇放在你的唇上。当你们的舌头交融时，她抚摸着你抽动的阴茎。", "g: 哦...你已经很大了，不是吗？"], multiple=True)
     add_dialogue("free_girlfriend success naked", ("rebel"), ["她很快脱掉衣服，将身体贴近你的身体。", "g: 我终于摆脱了这些愚蠢的衣服。它们只是束缚你的另一个枷锁。我宁愿一直赤身裸体。","g: 我们玩得开心吧？是时候我们加强身体锻炼了。你想玩玩吗？", "她把手放在你的胯部，嘴唇放在你的唇上。当你们的舌头交融时，她抚摸着你抽动的阴茎。", "g: 哦...你已经很大了，不是吗？"], multiple=True)
 
-    add_dialogue("free_job_request", ("rebel", "very dom"), ["g: [MC.name]... 帮帮我, 求你了! *恐慌*", "mc: 寻求帮助？那听起来不像是你...", "g: 我…几周前我遇到过这个人…他想强奸我。几天后我就要受审了。他们会....他们会奴役我的!", "在泽恩，如果你没有钱来支付你的罪行，法官可以判你为奴隶...", "g: 我用我最后的一点钱支付了保释金....他们会判我有罪，然后那个人的兄弟会把我变成奴隶！他们会在我有生之年一直强奸和折磨我!", "g: 数以千计的迪纳....已经没有办法了....如果我能设法逃脱这场审判就好了...", "mc: Mmmh... 你知道奴隶是不能被审判的吗？只有自由人才可以?", "g: 但我不是一个奴隶....你在暗示什么?"], multiple=True)
+    add_dialogue("free_job_request", ("rebel", "very dom"), ["g: [MC.name]... 帮帮我, 求你了! *恐慌*", "mc: 寻求帮助？那听起来不像是你...", "g: 我...几周前我遇到过这个人...他想强奸我。几天后我就要受审了。他们会....他们会奴役我的!", "在泽恩，如果你没有钱来支付你的罪行，法官可以判你为奴隶...", "g: 我用我最后的一点钱支付了保释金....他们会判我有罪，然后那个人的兄弟会把我变成奴隶！他们会在我有生之年一直强奸和折磨我!", "g: 数以千计的迪纳....已经没有办法了....如果我能设法逃脱这场审判就好了...", "mc: Mmmh... 你知道奴隶是不能被审判的吗？只有自由人才可以?", "g: 但我不是一个奴隶....你在暗示什么?"], multiple=True)
     add_dialogue("gizel take girl to farm", ("rebel"), ("啊哈哈哈，新鲜奴肉！我很快就会让她失去斗志。"))
     add_dialogue("MC fight intro", ("very dom"), ["g: 不！！！你不能逼我！离我远点，你这个混蛋！", "她以惊人的力量与你战斗。"], multiple=True, sound=s_scream_loud)
 
@@ -2054,11 +2054,11 @@ init -1 python:
 
     add_dialogue("free_friend no_lie", ("nerd"), ["g: 哎呀...这不完全是一份理想的工作，不是吗？", "mc: *笑*你会感到惊讶的。有些人绝对会认为这是一份梦想的工作。", "g: 那些人都是妄想症。青楼可能听起来很有趣，但你我都知道它们吸引的是最糟糕的人。", "mc: 哦，我知道如何让他们保持一致。这对我的女儿们和我的顾客来说都是如此。那么你梦想的工作是什么？", "g: 嗯...我猜你已经找到我了。我真的没有一个..."], multiple=True, love=-6)
     add_dialogue("free_friend half_lie", ("nerd"), ["g: 嗯....我相信你在转行时会有很多选择。 [MC.playerclass] 的技能可以在各个方面发挥作用。", "mc: 是的，这就是我所希望的。你呢？", "g: 啊....我还没有真正找到我的才能的好用处。小时候我一直想成为一名图书管理员。但在泽恩呆了一段时间后，我不再那么确定了......"], multiple=True, love=2)
-    add_dialogue("free_friend lie", ("very introvert"), ["她冷冷地看着你.", "g: 是这样吗?奇怪。我从来没听说过你。你说的是实话吗?", "mc: 嗯,嗯…哦，看看时间，哈哈!我真的得走了."], multiple=True, love=2)
+    add_dialogue("free_friend lie", ("very introvert"), ["她冷冷地看着你.", "g: 是这样吗?奇怪。我从来没听说过你。你说的是实话吗?", "mc: 嗯,嗯...哦，看看时间，哈哈!我真的得走了."], multiple=True, love=2)
 
     add_dialogue("free_love_interest", ("nerd"), ["mc: 嗨，[girl.name]。你看起来闷闷不乐。一切都好吗？", "g: 啊，我没事....我想只是有点情绪化。", "g: 我正在读一个浪漫的故事。恋人们刚刚向对方表白了自己的真情....说起来我的心都在漏跳。", "g: 有一位英俊的王子....他爱上了一个平民，在经历了几章浪漫的紧张之后，他递给她一束鲜花并约她出去。", "mc: Is that so?"], multiple=True)
     add_dialogue("free_girl get_flowers", ("nerd"), ("这非常浪漫....它们很漂亮。"))
-    add_dialogue("free_ask_out", ("nerd"), ["mc: [girl.name]，我很想成为你的王子，让你在我身边。", "g: 你想让我…做你的女朋友?", "mc: 没有什么能让我更快乐。", "g: 哦，[MC.name]！我感觉自己好像在做梦。这真的发生了吗？我的意思是....是的！我的回答是，当然可以！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我现在得走了....不过很快就会见到你的，英俊的王子！ *眨眼*"], multiple=True)
+    add_dialogue("free_ask_out", ("nerd"), ["mc: [girl.name]，我很想成为你的王子，让你在我身边。", "g: 你想让我...做你的女朋友?", "mc: 没有什么能让我更快乐。", "g: 哦，[MC.name]！我感觉自己好像在做梦。这真的发生了吗？我的意思是....是的！我的回答是，当然可以！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我现在得走了....不过很快就会见到你的，英俊的王子！ *眨眼*"], multiple=True)
 
     add_dialogue("free_girlfriend intro", ("nerd"), ["g: 啊，[MC.name]！我有件事需要你帮忙...", "mc: 你好，[girl.name]。我能提供什么帮助吗？", "g: 我已经开始写这本小说了....但我被困在一个特定的场景中。我想如果我们能把它付诸实践，也许就能让想法流动起来。", "mc: 为什么，当然....是关于什么的。", "g: *咯咯笑*嗯，这是一个色情故事。有一个女孩疯狂地爱上了一位英俊的王子。", "g: 他们之间确实有联系。他们有很多共同点...比如...你能猜到吗？"], multiple=True)
     add_dialogue("free_girlfriend right", ("nerd"), ["g:  *眨眼* 完全正确。艺术模仿生活。", "g: 所以在故事的这一点上，女孩和王子之间存在着令人难以置信的性紧张。女孩决定采取行动。 *咧嘴笑*", "mc: 哦，我喜欢这样的发展方向。"], multiple=True, love=5)
@@ -2067,7 +2067,7 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("nerd"), ["[girl.name] 在你面前脱衣服。她的动作有些尴尬，但你还是会被它唤起。", "她显然非常紧张。她继续说着，脸就红了。", "g: *脸红*A-于是，女孩在她英俊的王子面前脱掉衣服。然后....呃....然后....", "她盯着你的腹股沟，发现你的鸡巴每一秒都变得更硬。", "g: *脸红*啊哈！我想我已经知道接下来会发生什么了。感谢您的帮助，[MC.name]。", "g: *脸红*F-从现在开始，我希望你们继续支持我探索各种风情场景。"], multiple=True)
     add_dialogue("free_girlfriend success naked", ("nerd"), ["[girl.name] 在你面前脱衣服。她的动作有些尴尬，但你还是会被它唤起。", "她显然非常紧张。她继续说着，脸就红了。", "g: 在家里，女孩其实已经习惯了一直赤身裸体。 *脸红*但这一次，英俊的王子看着她，情况有所不同。", "g: *脸红*A-于是，女孩在她英俊的王子面前脱掉衣服。然后....呃....然后....", "她盯着你的腹股沟，发现你的鸡巴每一秒都变得更硬。", "g: *脸红*啊哈！我想我已经知道接下来会发生什么了。感谢您的帮助，[MC.name]。", "g: *脸红*F-从现在开始，我希望你们继续支持我探索各种风情场景。"], multiple=True)
 
-    add_dialogue("free_job_request", ("very introvert"), ["g: 嗨, [MC.name].", "mc: 嗨, [girl.name].", "g: 我能为你工作吗?", "mc: 呃?", "g: 我说, 我能为你工作吗? 我需要钱。这能有多难呢?", "mc: 嗯…这是一个出乎意料的要求....让我想想."], multiple=True)
+    add_dialogue("free_job_request", ("very introvert"), ["g: 嗨, [MC.name].", "mc: 嗨, [girl.name].", "g: 我能为你工作吗?", "mc: 呃?", "g: 我说, 我能为你工作吗? 我需要钱。这能有多难呢?", "mc: 嗯...这是一个出乎意料的要求....让我想想."], multiple=True)
     add_dialogue("refuse farm", ("generic"), ["不！不要去农场！我清楚那里发生了什么事情....我拒绝去!", "我不想去农场！求你了，主人，不要!", "不！不要去农场！求你了...", "我不能去，主人....我不能....请饶了我..."])
     add_dialogue("gizel take girl to farm", ("nerd"), ("完美的！鲜血群岛种马迫切需要奴隶的小穴。"))
     add_dialogue("slave bullied", ("very idealist"), ["但、但是....", "嘿，等等...", "别、别这样...."])
@@ -2161,8 +2161,8 @@ init -1 python:
     add_dialogue("free_give_gold --", ("masochist", "meek", "creep", "cold"), ("..."), love=-1, max_cap=75)
 
     add_dialogue("free_offer_job no_lie", ("masochist", "pervert", "very lewd"), ["她好奇地看了你一眼.", "g: 你肯定觉得我是个肮脏的婊子，对吧?", "mc: 呃...", "g: 我没说你错...Mmmh...", "她咬了咬嘴唇.", "g: 如果我在那里工作，我就会整天被陌生人操，对吧?"], multiple=True, love=2)
-    add_dialogue("free_offer_job half_lie", ("masochist", "pervert"), ["g: 去他妈的!你之前可以提到的...", "mc: 我很抱歉...", "g: 这比我想象的有趣多了…你为什么瞒着我!!我很生气...", "g: 所以如果我在那里工作，我就可以整天和陌生人随便做爱，对吗? Hmm..."], multiple=True, love=3)
-    add_dialogue("free_offer_job lie", ("masochist"), ["g: 去他妈的!你之前可以提到的...", "mc: 我很抱歉...", "g: 这比我想象的有趣多了…你为什么瞒着我!!我很生气...", "g: 所以如果我在那里工作，我就可以整天和陌生人随便做爱，对吗? Hmm..."], multiple=True, love=3)
+    add_dialogue("free_offer_job half_lie", ("masochist", "pervert"), ["g: 去他妈的!你之前可以提到的...", "mc: 我很抱歉...", "g: 这比我想象的有趣多了...你为什么瞒着我!!我很生气...", "g: 所以如果我在那里工作，我就可以整天和陌生人随便做爱，对吗? Hmm..."], multiple=True, love=3)
+    add_dialogue("free_offer_job lie", ("masochist"), ["g: 去他妈的!你之前可以提到的...", "mc: 我很抱歉...", "g: 这比我想象的有趣多了...你为什么瞒着我!!我很生气...", "g: 所以如果我在那里工作，我就可以整天和陌生人随便做爱，对吗? Hmm..."], multiple=True, love=3)
     add_dialogue("free_offer_job success", ("masochist"), ["g: 我什至可以正式成为你的奴隶？这是一个很棒的优惠！我要买它。", "g: 你能保证当我不守规矩时惩罚我吗？ *笑*"], multiple=True)
     add_dialogue("free_offer_job thinking", ("masochist"), ["g: 我什至可以正式成为你的奴隶？这是一个很棒的优惠！我等不及了！", "g: 你能保证当我不守规矩时惩罚我吗？ *笑*", "g: 但是在我们签署文件之前，我需要处理一些事情....我会尽快处理的！尽快回复你。"], multiple=True)
     add_dialogue("free_offer_job failure lie", ("masochist"), ["她看起来很失望。", "g: 哦....只是临时合约？唔...", "g: 我需要一些时间考虑一下这个问题。你并没有让这听起来像我希望的那样有辱人格。", "她走开，看上去若有所思。"], multiple=True, love=-15)
@@ -2185,7 +2185,7 @@ init -1 python:
 
     add_dialogue("free_job_request", ("masochist"), ["g: ...", "mc: 怎么了, [girl.name]?", "g: 我一文不值.", "mc: 呃???", "g: 我是个没用的废物。我想让你虐待我。我想被像厕所一样利用。我想要...", "mc: 哇，我们有过一些古怪的时刻，但是....这真前卫.", "g: 帮帮我。让我跪下来。打我。我想成为一个奴隶...", "mc: 你现在知道了，是吗..."], multiple=True)
 
-    add_dialogue("accept farm", ("masochist", "pervert", "libido"), ["农场…我听说吉泽尔在那里干着很脏很脏的事... *脸红*", "这是否意味着....这是否意味着我会像动物一样被锁起来? *脸红*", "我知道我不该这么做，但是…不知为何我感到兴奋..."])
+    add_dialogue("accept farm", ("masochist", "pervert", "libido"), ["农场...我听说吉泽尔在那里干着很脏很脏的事... *脸红*", "这是否意味着....这是否意味着我会像动物一样被锁起来? *脸红*", "我知道我不该这么做，但是...不知为何我感到兴奋..."])
     add_dialogue("gizel take girl to farm", ("masochist"), ("过来吧，你这个愚蠢的垃圾。是时候向您介绍所有会强奸您的事物了。"))
     add_dialogue("slave chat tastes likes", ("masochist", "meek"), ("你为什么会对我最喜欢的[thing_cn]感兴趣？我感觉自己就像显微镜下的虫子。嗯...[best]，我猜？", "[thing_cn][best]还可以。我们可以谈谈别的事情吗？"), unlock="LM")
     add_dialogue("slave chat tastes dislikes", ("masochist", "loyal", "helper"), ("我是那些讨厌[thing_cn][worst]的女孩之一。", "不要因此而恨我，但我认为[worst]是一件可怕的[thing_cn]。"), unlock="LM")
@@ -2290,7 +2290,7 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("meek"), ["她一件一件地脱掉衣服。", "当她脱下内裤时，空气中悬挂着一串浓浓的阴液。", "g: 看到了吗？！每当我和你说话的时候都是这样！", "她张开她的阴唇，露出她闪闪发光的湿润小穴。果汁继续滴到地板上。", "当她把它放在你面前时，你会感觉到血液涌入你的阴茎。", "g: 啊看！ ....越来越难了！", "你们花了一点时间彼此更加熟悉。"], multiple=True)
     add_dialogue("free_girlfriend success naked", ("meek"), ["她一件一件地脱掉衣服。", "当她脱下内裤时，空气中悬挂着一串浓浓的阴液。", "g: 看到了吗？！每当我和你说话的时候都是这样！", "她张开她的阴唇，露出她闪闪发光的湿润小穴。果汁继续滴到地板上。", "当她把它放在你面前时，你会感觉到血液涌入你的阴茎。", "g: 啊看！ ....越来越难了！", "你们花了一点时间彼此更加熟悉。"], multiple=True)
 
-    add_dialogue("free_job_request", ("meek", "very sub"), ["g: 噢, [MC.name], 这太可怕了... *啜泣*", "mc: 宝贝，发生什么事了?", "g: 警卫…他们把我们赶出了房子。和母亲....她生病了…我的兄弟们告诉我，他们已经养不出一张嘴了...", "g: 我现在孤身一人了。我怎样才能赚到足够的钱来维持生活？肯定会饿死，不然就会被恶棍抓住，奸杀我！", "她突然哭了起来.", "mc: [girl.name] 冷静点，我们会找到解决办法的..."], multiple=True)
+    add_dialogue("free_job_request", ("meek", "very sub"), ["g: 噢, [MC.name], 这太可怕了... *啜泣*", "mc: 宝贝，发生什么事了?", "g: 警卫...他们把我们赶出了房子。和母亲....她生病了...我的兄弟们告诉我，他们已经养不出一张嘴了...", "g: 我现在孤身一人了。我怎样才能赚到足够的钱来维持生活？肯定会饿死，不然就会被恶棍抓住，奸杀我！", "她突然哭了起来.", "mc: [girl.name] 冷静点，我们会找到解决办法的..."], multiple=True)
 
     add_dialogue("accept farm", ("meek", "very sub"), ["我、如果这就是你想要的，主人....", "*抽泣*是-是的，主人...如果这就是你想要的。", "*抽泣*我明白了，主人。"])
     add_dialogue("accept farm fear", ("generic", "very introvert", "very idealist", "very modest", "very sub"), ["当吉泽尔向她走来时，她害怕得发抖，退缩了，但她不敢反抗.", "她用眼睛恳求不要去，但又不敢违抗你的命令.", "她太害怕了，不敢违抗你的命令."])
@@ -3044,7 +3044,7 @@ init -1 python:
 
     add_dialogue("free_flirt_sex_experience reply_not_many success", ("bimbo"), ("理论固然很好，但我更喜欢有实践经验的人。"))
     add_dialogue("free_flirt_sex_experience reply_not_many failure", ("bimbo"), ("*叹气*超时！这行不通....我们可以对彼此的性话题更加开放吗？"), love=-1)
-    add_dialogue("free_flirt_sex_experience reply_been_around", ("very lewd"), ("我明白了…我相信我们可以互相学习..."), love=1)
+    add_dialogue("free_flirt_sex_experience reply_been_around", ("very lewd"), ("我明白了...我相信我们可以互相学习..."), love=1)
     add_dialogue("free_flirt_sex_experience reply_sex_god success", ("very lewd"), ("嘿，小心疾病，你这只公狗... *嘲笑*"), love=5)
     add_dialogue("free_flirt_sex_experience reply_sex_god failure", ("bimbo"), ("*叹息*我们可以对彼此的性话题更加开放吗？"), love=1)
     add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("very lewd"), ("好吧，我相信你会积累足够的经验来更好地满足我..."), love=3)
@@ -3245,11 +3245,11 @@ init -1 python:
 
     add_dialogue("free_friend no_lie", ("helper"), ["g: 你就是这么做的吗？！", "g: 我很欣赏你的诚实态度。", "g: 说实话，我对那种地方里面的样子有点感兴趣！也许你可以找个时间带我看看那个地方？", "g: 也许我可以帮助你？", "g: 你需要做饭或者为女孩们做衣服方面的帮助吗？我确信我可以做{i}某事{/i}。", "mc: 你真是太好了，[girl.fullname]。", "mc: 女孩们经常没有衣服，我们有食物，但你还可以做其他工作......", "mc: ....但是因为我们才刚刚成为朋友，所以我首先需要更好地了解你....", "mc: ...并进一步评估您的技能...嗯...密切..."], multiple=True, love=3)
     add_dialogue("free_friend half_lie", ("helper"), ["g: 哦，我明白了。 [MC.playerclass] 听起来非常适合您！", "g: 我和一位好朋友聊天。她说不要相信那个人，[MC.name]。他看起来像个青楼老板！", "g: 我说，不可能！不是[MC.name]。他太善良了！我们只是好朋友。", "g: 有时我们只是闲聊，有时讨论一些深奥的事情，比如生命、宇宙和一切，尽管[MC.name]比我更理解。", "g: 有时他会给我钱，还开玩笑说我身材火辣。", "g: 这都是朋友做的事。", "g: 下次见到我的朋友时，我会告诉她你是[MC.playerclass]。那她就会相信我了！"], multiple=True)
-    add_dialogue("free_friend lie", ("helper"), ["g: A...[lie]？我应该相信你吗？", "g: 你让我对你很好奇。我可以告诉你的一件事是你没有[lie]。", "g: 我和一位好朋友聊天。她说不要相信那个人，[MC.name]。他看起来像个青楼老板！", "g: 我说，不可能！不是[MC.name]。他太好了，但我真的应该相信你是一个[lie]吗？ *皱眉*", "mc: 哈哈,肯定…你呢，你是做什么的?", "g: 哦，你知道的，这个那个..."], multiple=True, love=-3)
+    add_dialogue("free_friend lie", ("helper"), ["g: A...[lie]？我应该相信你吗？", "g: 你让我对你很好奇。我可以告诉你的一件事是你没有[lie]。", "g: 我和一位好朋友聊天。她说不要相信那个人，[MC.name]。他看起来像个青楼老板！", "g: 我说，不可能！不是[MC.name]。他太好了，但我真的应该相信你是一个[lie]吗？ *皱眉*", "mc: 哈哈,肯定...你呢，你是做什么的?", "g: 哦，你知道的，这个那个..."], multiple=True, love=-3)
 
     add_dialogue("free_love_interest", ("helper"), ["mc: Hi, [girl.name]. 出什么事了吗?", "g: 呃，我？不....几天前，在一个美丽的[season]日，我刚刚和我最好的朋友之一聊天....", "g: 一位非常和蔼可亲的年轻人来找她，还给她带来了一朵可爱的花。", "g: 我当然为她感到非常高兴....", "g: 但内心深处让我想知道，这种事会发生在我身上吗？我想可能不会。我什至还哭了一点。", "g: 但后来她说，也许那个你一直在谈论的男人[MC.name]会给你带来一个！", "g: 我想，Arios，也许这可能会发生！我觉得我们已经变得如此亲密，我发现与你交谈如此轻松。", "g: 当然不是为了给你带来任何压力！"], multiple=True)
     add_dialogue("free_girl get_flowers", ("helper"), ["g: 你真是太好了....但是有理由吗？！", "我很好奇你想要什么？"], multiple=True)
-    add_dialogue("free_ask_out", ("helper"), ["mc: [girl.name]，我喜欢你。但也许我们可以更接近....你知道，把这提升到一个新的水平吗？", "g: 你想让我…做你的女朋友?", "mc: 没错.", "g: 怎么，你终于问了！当然！我迫不及待地想把这件事告诉我所有的朋友！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我会尽一切努力留在你身边并完全属于你。"], multiple=True)
+    add_dialogue("free_ask_out", ("helper"), ["mc: [girl.name]，我喜欢你。但也许我们可以更接近....你知道，把这提升到一个新的水平吗？", "g: 你想让我...做你的女朋友?", "mc: 没错.", "g: 怎么，你终于问了！当然！我迫不及待地想把这件事告诉我所有的朋友！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我会尽一切努力留在你身边并完全属于你。"], multiple=True)
 
     add_dialogue("free_girlfriend intro", ("helper"), ["g: 哦，[MC.name]！来这里吧，亲爱的...", "mc: 嗨,我的爱人。你今天好吗??", "g: 我很好，亲爱的...你应该跟我一起去，我要给你看一些我想你已经想要了很长时间的东西...", "mc: 这么突然, 当然...", "g: 但首先，为了知道你真的关心我，而不是装模作样，我想问你一个问题。"], multiple=True)
     add_dialogue("free_girlfriend right", ("helper"), ["g: 你说得对，干得好！你显然很关心我，看起来像个坚强的男人，可以照顾我。一个我可以完全奉献自己的人！", "g: 我想永远靠近你。"], multiple=True, love=5)
@@ -3258,9 +3258,9 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("helper"), ["她把衣服扔在地上，凝视着你的眼睛.", "g: 既然你已经向我展示了你的关注和照顾我的能力....现在是你应该拥有我的时候了。", "g: 你喜欢你现在看到的吗?", "你可以感觉到你的鸡巴每一秒都变得更硬。她似乎注意到了这一点，并对你微笑。", "g: 也许我可以帮你....*脸红并微笑*"], multiple=True)
     add_dialogue("free_girlfriend success naked", ("helper"), ["当她脱下衣服时，你喘息着。", "g: 你不觉得对自己的身体感到舒适是一种美妙的感觉吗?", "g: 当我在家里裸体的时候，我总是觉得很舒服。我希望我能一直裸体!", "g: 但我当然不会光着身子在镇上转悠... *叹气* 我还没疯.", "g: 不过，我很高兴能向你展示真实的自己....你看起来也很开心! *咯咯笑*", "g: 也许我可以帮助你解决下面的问题... *眨眼*"], multiple=True)
 
-    add_dialogue("free_job_request", ("helper"), ["g: 你有…你有和其他女孩约会吗?", "mc: 呃?", "g: 告诉我真相....哦，我知道....我看到你和他们在一起....感觉我的心都要炸了!", "g: 我以为我能接受，但我就是不能！", "mc: 我很抱歉....我…我会解释的...", "g: 没关系。我知道你是谁。你不必爱我，但我爱你。我想永远靠近你。", "g: 我愿意做任何事留在你身边。即使你愿意，我也愿意做你的奴隶.", "g: 你愿意接受我吗？我求你了，请接受我....我是你的!", "mc: 呃... 我....让我想想..."], multiple=True)
+    add_dialogue("free_job_request", ("helper"), ["g: 你有...你有和其他女孩约会吗?", "mc: 呃?", "g: 告诉我真相....哦，我知道....我看到你和他们在一起....感觉我的心都要炸了!", "g: 我以为我能接受，但我就是不能！", "mc: 我很抱歉....我...我会解释的...", "g: 没关系。我知道你是谁。你不必爱我，但我爱你。我想永远靠近你。", "g: 我愿意做任何事留在你身边。即使你愿意，我也愿意做你的奴隶.", "g: 你愿意接受我吗？我求你了，请接受我....我是你的!", "mc: 呃... 我....让我想想..."], multiple=True)
 
-    add_dialogue("accept farm", ("helper"), ("我明白了…我一定不知怎么惹你不高兴了...", "哦，农场....如果我必须的话，主人...", "既然你这么说，主人.", "那我就走吧...", "我明白，主人."))
+    add_dialogue("accept farm", ("helper"), ("我明白了...我一定不知怎么惹你不高兴了...", "哦，农场....如果我必须的话，主人...", "既然你这么说，主人.", "那我就走吧...", "我明白，主人."))
     add_dialogue("gizel take girl to farm", ("helper"), ("快点吧，奴隶。奴才不会自己挤奶。"))
     add_dialogue("slave thanks", ("helper"), ("谢谢。", "谢谢主人。", "谢谢你，主人[MC.name]。", "谢谢主人。", "谢谢主人。我很感激。", "谢谢你，我很感激。"))
     add_dialogue("slave naked request permanent", ("helper"), ("谢谢您，主人....无论如何，衣服在这行工作中都是碍事的....*咯咯笑*"), love=2, fear=-1, sound=s_sigh)
@@ -3377,7 +3377,7 @@ init -1 python:
 
     add_dialogue("free_friend no_lie", ("holy"), ["g: 是这样吗？阿里奥不太喜欢这个行业，但我猜你有助于传播快乐。以你自己的方式...", "mc: 这当然是一种表达方式。你是做什么的？", "g: 我是太阳神教会一个分支的侍僧。不过最近感觉有些奇怪。但我们现在不谈这个......"], multiple=True, love=1)
     add_dialogue("free_friend half_lie", ("holy"), ["g: 哦，我明白了。这些天周围有很多冒险者。愿太阳神的祝福与你同在。", "mc: 谢谢。你是做什么的？", "g: 我是太阳神教会一个分支的侍僧。不过最近感觉有些奇怪。但我们现在不谈这个......"], multiple=True, love=1)
-    add_dialogue("free_friend lie", ("holy"), ["g: 奇怪....你没有表现出我所期望的[lie]的氛围。", "mc: 哈哈,肯定…你呢，你是做什么的?", "g: 我是太阳神教会一个分支的侍僧。不过最近感觉有些奇怪。但我们现在不谈这个......"], multiple=True)
+    add_dialogue("free_friend lie", ("holy"), ["g: 奇怪....你没有表现出我所期望的[lie]的氛围。", "mc: 哈哈,肯定...你呢，你是做什么的?", "g: 我是太阳神教会一个分支的侍僧。不过最近感觉有些奇怪。但我们现在不谈这个......"], multiple=True)
 
     add_dialogue("free_love_interest", ("holy"), ["mc: 嗨，[girl.name]。你现在不应该去参加仪式吗？", "g: 仪式？哦不....我完全陷入了沉思，完全忘记了时间。", "mc: 是什么让你忘记了仪式？阿里奥教堂不是你的生活吗？", "g: 你知道，有那对情侣手牵着手......", "g: 你知道吗，在太阳神教堂里，鲜花是永恒爱情的象征？如果你给我一些，太阳神一定会同意的....*脸红*", "g: 在阿里奥的光辉下，我必须走了。现在。仪式。是的。忘记它吧，好吗？再见！", "[girl.name]说着，脸色变得猩红，看也不看你一眼就跑开了。", "mc: 等等[girl.name]！教堂在另一个方向！ ... 花，嗯？很高兴知道。"], multiple=True)
     add_dialogue("free_girl get_flowers", ("holy"), ("在亚里欧斯的光芒下，它们很美丽。这意味着什么？"))
@@ -3558,12 +3558,12 @@ init -1 python:
     add_dialogue("free_flirt_sex_experience reply_waiting success", ("repressed", "holy"), ("我很为你感到骄傲！抵制诱惑。节制是一种美德！"), love=4)
     add_dialogue("free_flirt_sex_experience reply_waiting failure", ("very modest"), ("你以为我会相信吗?你一定觉得我很笨..."), love=-1)
 
-    add_dialogue("free_flirt_sex_experience reply_not_many success", ("very modest", "very idealist", "loyal"), ("啊…我想成为你唯一的女孩....但我会让你开心的!"), love=6)
+    add_dialogue("free_flirt_sex_experience reply_not_many success", ("very modest", "very idealist", "loyal"), ("啊...我想成为你唯一的女孩....但我会让你开心的!"), love=6)
     add_dialogue("free_flirt_sex_experience reply_not_many failure", ("very modest"), ("你以为我会相信吗?你一定觉得我很笨..."), love=2)
     add_dialogue("free_flirt_sex_experience reply_been_around", ("very modest"), ("嗯,没有。其实我不知道."), love=-1)
     add_dialogue("free_flirt_sex_experience reply_sex_god success", ("very modest"), ("噁,你真恶心!"))
     add_dialogue("free_flirt_sex_experience reply_sex_god failure", ("very modest"), ["g: 哈哈。你....你在开玩笑，对吧?", "mc: 呃... 当然!"], multiple=True, love=-1)
-    add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("very modest", "very idealist"), ("我知道…我想这是意料之中的... *叹气*"), love=1)
+    add_dialogue("free_flirt_sex_experience reply_brothel_owner", ("very modest", "very idealist"), ("我知道...我想这是意料之中的... *叹气*"), love=1)
 
     add_dialogue("free_flirt_sex_act refuses", ("repressed", "stubborn"), ("*巴掌*你怎么敢！"))
     add_dialogue("free_flirt_sex_act very reluctant", ("repressed", "stubborn"), ("我不会用答案来荣耀这个！"))
@@ -3589,7 +3589,7 @@ init -1 python:
     add_dialogue("free_offer_job failure lie", ("repressed"), ["泪水不断地从她的脸上滚落。她痛苦地哭泣。", "g:  *呜咽* 哇啊啊！！ *哭泣*", "mc: [girl.name]...我保证，事情并不像看起来那么糟糕！", "g:  *呜咽* 恩恩... *呜咽* 不！！离我远点，你这个骗子！", "mc: 请...想想这个，[girl.name]...", "g: *抽泣*不！！请别打扰我！ *哭泣*", "她开始猛烈攻击你。你决定暂时离开她。"], multiple=True, love=-15)
     add_dialogue("free_offer_job failure no_lie", ("repressed"), ["泪水不断地从她的脸上滚落。她痛苦地哭泣。", "g:  *呜咽* 哇啊啊！！ *哭泣*", "mc: [girl.name]...我保证，事情并不像看起来那么糟糕！", "g:  *呜咽* 恩恩... *呜咽* 不！！离我远点！", "mc: 请...想想这个，[girl.name]...", "g: *抽泣*不！！请别打扰我！ *哭泣*", "她开始猛烈攻击你。你决定暂时离开她。"], multiple=True, love=-15)
 
-    add_dialogue("free_friend no_lie", ("very modest"), ["g: 这个…这是一种可怕的生活方式!这是不对的!", "mc: 嗯，它能付账单…你是做什么的?", "g: Err, 呃..."], multiple=True, love=-5)
+    add_dialogue("free_friend no_lie", ("very modest"), ["g: 这个...这是一种可怕的生活方式!这是不对的!", "mc: 嗯，它能付账单...你是做什么的?", "g: Err, 呃..."], multiple=True, love=-5)
     add_dialogue("free_friend half_lie", ("repressed"), ["g: 哦，一个旅行者！我希望有一天我能看到这个世界。","mc: 你有什么事情吗？","g: 遗憾的是，没有...."], multiple=True, love=5)
     add_dialogue("free_friend lie", ("repressed"), ["g: 哦，[lie]！重要的事情！","mc: 你的职业是什么？","g: *微笑*嗯，我现在主要从事慈善工作...仍在寻找支付账单的方法..."], multiple=True)
 
@@ -4191,7 +4191,7 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("princess"), ["她把衣服扔在地上，凝视着你的眼睛.", "g: 你觉得我丰满的优美身材怎么样？", "你可以感觉到你的鸡巴在第二秒变得更硬。她似乎注意到了，并对你报以微笑.", "g: Hmmm..."], multiple=True)
     add_dialogue("free_girlfriend success naked", ("princess"), ["当她脱下衣服，双手捧起胸部，轻轻地抚摸着她的乳头时，你倒吸了一口气.", "g: 我一直以为像我这样高贵的身体，赤身裸体才是最优雅的", "g: 当我在家里裸体的时候，我总是觉得很舒服。我希望我能一直裸体!", "g: 但不幸的是，出于道德和习俗的考虑，我当然不会光着身子在城里走来走去....*叹气*我没有疯。", "g: 不过，我很高兴能向你展示真实的自己....你看起来也很开心! *咯咯笑*"], multiple=True)
 
-    add_dialogue("free_job_request", ("princess"), ["g: 哦，[MC.name]！为什么每个人都试图让我的生活变得如此糟糕！", "mc: 拜托，亲爱的，那不是真的…发生了什么事?", "g: 是我叔叔！他的遗产....自从他去世后....我只用了一些开支，几个手提包，六件衣服，神奇的内衣....", "g: 但是那个愚蠢的店员说钱没了！全没了！现在我借了一些小钱的贪婪的高利贷者想要回来。 *哭*", "她泪眼婆娑地看着你.", "g: 我负债累累!我该怎么办... *啜泣*", "mc: Mmmh...好吧，也许有一种方法…奴隶不能负债，你知道吗?", "g: 呃？你有什么建议？！"], multiple=True)
+    add_dialogue("free_job_request", ("princess"), ["g: 哦，[MC.name]！为什么每个人都试图让我的生活变得如此糟糕！", "mc: 拜托，亲爱的，那不是真的...发生了什么事?", "g: 是我叔叔！他的遗产....自从他去世后....我只用了一些开支，几个手提包，六件衣服，神奇的内衣....", "g: 但是那个愚蠢的店员说钱没了！全没了！现在我借了一些小钱的贪婪的高利贷者想要回来。 *哭*", "她泪眼婆娑地看着你.", "g: 我负债累累!我该怎么办... *啜泣*", "mc: Mmmh...好吧，也许有一种方法...奴隶不能负债，你知道吗?", "g: 呃？你有什么建议？！"], multiple=True)
     add_dialogue("gizel take girl to farm", ("princess"), ("哈！欢迎来到我的领域，你这个愚蠢的女人。我会把你鞭打成形状。"))
 
     add_dialogue("girl introduction", ("princess"), ["你好。我是[girl.fullname]。我希望你能善待我。", "嗨，我是[girl.fullname]。我希望在这个地方能得到很好的待遇..."])
@@ -4391,7 +4391,7 @@ init -1 python:
 
     add_dialogue("free_love_interest", ("pet"), ["mc: 嗨，[girl.name]。一切都好吗？", "g: [MC.name]！我真的很想念你...", "g: 我们应该出去玩。有什么我可以为您做的吗？", "g: 我可以给你喝一杯......或者我可以给你按摩......任何你喜欢的！", "g: 每当你离开的时候我真的很想念你...但幸好现在你又来了，我的生活就像春天来了一样！", "mc: 嘘，[girl.name]。你有点太强势了。从现在起你为什么不让我来领导呢？"], multiple=True)
     add_dialogue("free_girl get_flowers", ("pet"), ("你是最棒的，[MC.name]！我爱他们！"))
-    add_dialogue("free_ask_out", ("pet"), ["mc: [girl.name]，你对我很重要。我想你成为我生活的一部分。", "g: 你想让我…做你的女朋友?", "mc: 没错.", "g: 我非常爱你！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我得走了。我需要与大家分享这个好消息！"], multiple=True)
+    add_dialogue("free_ask_out", ("pet"), ["mc: [girl.name]，你对我很重要。我想你成为我生活的一部分。", "g: 你想让我...做你的女朋友?", "mc: 没错.", "g: 我非常爱你！", "她扑进你的怀抱，给你一个又长又深的吻.", "g: 我得走了。我需要与大家分享这个好消息！"], multiple=True)
 
     add_dialogue("free_girlfriend intro", ("pet"), ["g: [MC.name]！过来这里...", "mc: [girl.name]？怎么了？", "g: 嗯，我一直在想....你想让我给你脱衣服吗？", "mc: 当然，为什么不呢！", "g: *咯咯* 那么是时候进行小测验了。您必须首先回答以下出奇简单的问题！ *傻笑*"], multiple=True)
     add_dialogue("free_girlfriend right", ("pet"), ("出色的！现在，为了你的精美奖品....我！"), love=5)
@@ -5066,7 +5066,7 @@ init -1 python:
 
     add_dialogue("free_friend no_lie", ("stubborn"), ["g: 青楼老板？这太恶心了....我不喜欢从事肉体贸易的人。我对你印象很好。也许我错了？ ....我已经习惯了自己是对的。", "mc: 你是做什么的?", "g: ..."], multiple=True, love=-2)
     add_dialogue("free_friend half_lie", ("stubborn"), ["g: 冒险家，太酷了！我是一个很脚踏实地的女孩，但我不介意一点兴奋。 *眨眼*", "mc: 你是做什么的?", "g: Me? Oh, ahem..."], multiple=True, love=1)
-    add_dialogue("free_friend lie", ("stubborn"), ["g: A...[lie]？那太令人兴奋了！我只是一个普通的脚踏实地的女孩，尽我最大的努力在Zan取得成功。我从没想过我会遇到[lie]。哇！", "mc: 哈哈,肯定…你呢，你是做什么的?", "g: 哦，你知道的，这个那个..."], multiple=True, love=3)
+    add_dialogue("free_friend lie", ("stubborn"), ["g: A...[lie]？那太令人兴奋了！我只是一个普通的脚踏实地的女孩，尽我最大的努力在Zan取得成功。我从没想过我会遇到[lie]。哇！", "mc: 哈哈,肯定...你呢，你是做什么的?", "g: 哦，你知道的，这个那个..."], multiple=True, love=3)
 
     add_dialogue("free_love_interest", ("stubborn"), ["mc: Hi, [girl.name]. 出什么事了吗?", "g: 你知道吗...男孩给女孩送花是为了告诉她们喜欢她们。这是昙县的习俗。", "g: 我一直在想....是时候让我们的关系更上一层楼了。如果你能给我带来一朵花，我将非常感激，[MC.name]。", "g: 我通常不是一个愚蠢浪漫的女孩，但这是一个传统，我真的很喜欢！", "mc: Is that so?"], multiple=True)
     add_dialogue("free_girl get_flowers", ("stubborn"), ("哦，一朵花。正如我所要求的！现在，约我出去吧，[MC.name]！ *微笑*"))
@@ -5113,7 +5113,7 @@ init -1 python:
     add_dialogue("slave fear discipline", ("stubborn", "very dom"), ("你一巴掌打在她脸上。她咬着嘴唇。她现在因恐惧而颤抖，并压抑着愤怒。尝试与她交谈是没有用的。"), love=-2, fear=1)
 
     add_dialogue("slave naked request permanent", ("stubborn", "very dom"), ("我明白了....好吧，我会做的。裸体的感觉真好。我并不羞于分享我的观点，那么我为什么要羞于分享我的身体呢？", "好吧，我来做这个。我已经开始喜欢裸体了。让他们看看我的身体！", "好吧，为什么不呢？我享受我的身体。让昙的其他人也能享受到吧！"), fear=2, sound=s_sigh)
-    add_dialogue("slave naked request accept", ("stubborn", "very dom"), ("好吧，我就让大家看看我的身体。", "如果这是你的命令，我就会这么做。 *她嘀咕* … 这次。", "我会为你做这件事，[MC.name]。", "我并不羞于表达自己的观点。我为什么要对自己的身体感到害羞？", "好吧，主人，我会让那些顾客看到我的身体，但如果他们想碰，我就踢他们的屁股！", "我对此不太满意，但这到底是什么？当我照镜子时，我确实觉得我的身材很好。今天就让大家看看…"), sound=s_ahaa)
+    add_dialogue("slave naked request accept", ("stubborn", "very dom"), ("好吧，我就让大家看看我的身体。", "如果这是你的命令，我就会这么做。 *她嘀咕* ... 这次。", "我会为你做这件事，[MC.name]。", "我并不羞于表达自己的观点。我为什么要对自己的身体感到害羞？", "好吧，主人，我会让那些顾客看到我的身体，但如果他们想碰，我就踢他们的屁股！", "我对此不太满意，但这到底是什么？当我照镜子时，我确实觉得我的身材很好。今天就让大家看看..."), sound=s_ahaa)
     add_dialogue("slave train beg", ("stubborn", "very dom"), ("没办法，简直没办法！", "没办法，他妈的没办法！", "我愿意为你做很多事，但不是这样！", "我是一个与自己的情感相协调的女人，我对此感到不舒服！", "我不会这么做。别试图强迫我。", "不。", "今天你想让大家看到我的身体吗？也许还可以触摸它？！不要吧？！！", "没办法，我不想让全世界都看到我的身体。", "我宁愿不这样做。"), love=-2, fear=-3)
     add_dialogue("slave toggle naked on", ("very modest"), ("是的主人。如果我必须...", "我会让泽恩所有的人看到我的身体。"), love=-1)
     add_dialogue("slave toggle naked off", ("very modest"), ("谢谢主人。这太可耻了，我能感觉到每个人都在看着我....我不喜欢这样。", "很高兴衣服拿回来了..."), love=1)

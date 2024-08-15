@@ -54,7 +54,7 @@ translate schinese strings:
      new "响尾蛇机动！闪电也追不上你的脚后跟！"
 
 #     # game/BKspells.rpy:21
-     old "Man the battlestations! Err… Should it be 'Woman the battlestations'?"
+     old "Man the battlestations! Err... Should it be 'Woman the battlestations'?"
      new "青楼？这里更像是个军营，她们是训练有素的士兵，准确的说是一群女兵。"
 
 #     # game/BKspells.rpy:21
@@ -94,7 +94,7 @@ translate schinese strings:
      new "你可以只用舌头就让她们高潮，你的舌头能轻易地撬开神秘花园的大门。"
 
 #     # game/BKspells.rpy:21
-     old "You've been hit by, you've been struck by…"
+     old "You've been hit by, you've been struck by..."
      new "你可能会被击倒，但永远不会被逮到"
 
 #     # game/BKspells.rpy:21
@@ -102,7 +102,7 @@ translate schinese strings:
      new "我也不想贪啊，这些钱我是一分钱也没敢花啊，我祖上三代都是农民，穷怕了！"
 
 #     # game/BKspells.rpy:21
-     old "You're fast. You've got the ship that made the Westmarch Run in less than twelve parsecs… Somewhere."
+     old "You're fast. You've got the ship that made the Westmarch Run in less than twelve parsecs... Somewhere."
      new "这是你从忍者村里学到的不传之秘，你可以在暗影世界里瞬间移动数十米之远，形如鬼魅。"
 
 #     # game/BKspells.rpy:21
@@ -134,7 +134,7 @@ translate schinese strings:
      new "法力充沛如倾盆大雨！魔法万岁！"
 
      # game/BKspells.rpy:21
-     old "It's getting hot in here… This halo boosts your girls' libido."
+     old "It's getting hot in here... This halo boosts your girls' libido."
      new "你有没有觉得，有点热....*脱衣服*。这种光环可以增强女孩的性欲。"
 
 #     # game/BKspells.rpy:21
@@ -182,11 +182,11 @@ translate schinese strings:
      new "提问，你知道宇宙存在第五维度吗？可能还有第六个、第七个、第十三个？"
 
 #     # game/BKspells.rpy:21
-     old "I saw people sticking a needle into a voodoo doll, but never {i}there{/i}…"
+     old "I saw people sticking a needle into a voodoo doll, but never {i}there{/i}..."
      new "我知道有人会把针扎进娃娃诅咒别人，但从来没见过有人会扎它的{i}那里{/i}...."
 
 #     # game/BKspells.rpy:21
-     old "It's getting hot in here… This halo gives a large boost to your girls' libido."
+     old "It's getting hot in here... This halo gives a large boost to your girls' libido."
      new "空气变得燥热，内心也狂躁了起来，这个光环能大幅提高女孩的性欲。"
 
 #     # game/BKspells.rpy:21
@@ -222,7 +222,7 @@ translate schinese strings:
      new "人们看着你就仿佛在和一头巨龙对视。你可以用精神力来代替你的力量检定。"
 
 #     # game/BKspells.rpy:21
-     old "That's a kind of magic… Not the one your childhood fairy tales were referring to."
+     old "That's a kind of magic... Not the one your childhood fairy tales were referring to."
      new "这只是一种魔法....不是你童年童话里提到的那种。"
 
 #     # game/BKspells.rpy:21

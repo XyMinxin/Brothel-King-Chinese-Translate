@@ -886,7 +886,7 @@ translate schinese jobs_introduction_5374094c:
 translate schinese jobs_introduction_c8a8066e:
 
     # sill "Girls need to be trained before they will accept to be whores. Forcing them never gives good results. Girls with a high libido or obedience can be trained faster."
-    sill "女孩需要接受培训才能成为妓女。强扭的瓜不甜。性欲旺盛或者服从性强的女孩可以更快地接受培训。"
+    sill "女孩需要接受培训才能成为妓女。强扭的瓜不甜。性欲旺盛或者服从性强的女孩可以更容易地接受培训。"
 
 # game/BKhelp.rpy:1263
 translate schinese jobs_introduction_924e2632:
@@ -898,103 +898,103 @@ translate schinese jobs_introduction_924e2632:
 translate schinese jobs_introduction_cb224f7c:
 
     # sill "{b}Service{/b} includes all kinds of foreplay, including masturbation, handjobs and blowjobs. A good {b}service{/b} skill is required to perform service, of course, as well as good {b}sensitivity{/b}. {b}Charm{/b} and the {b}fetish{/b} skill also help."
-    sill "{b}侍奉{/b}包括各种前戏,包括手淫、手交和口交。当然,良好的{b}侍奉{/b}技能,以及{b}敏感度{/b}都是必需的。{b}魅力{/b}和{b}性癖{/b}也有帮助。"
+    sill "{b}侍奉{/b}包括各种前戏,例如手淫、手交和口交。当然,良好的{b}侍奉{/b}技能,以及{b}敏感{/b}都是必需的。{b}魅力{/b}和{b}调教{/b}属性也有帮助。"
 
 # game/BKhelp.rpy:1269
 translate schinese jobs_introduction_f4b64573:
 
     # sill "{b}Sex{/b} means vaginal intercourse, of course. A high {b}sex{/b} skill and {b}libido{/b} gives the best results. {b}Beauty{/b} and the {b}service{/b} skill also boost sex."
-    sill "{b}性行为{/b}当然指正常的阴道性交。高{b}性技能{/b}和{b}性欲{/b}会带来最佳效果。{b}美貌{/b}和{b}服务技能{/b}也有助于性行为。"
+    sill "{b}性交{/b}当然指正常的阴道性交。高{b}性交{/b}和{b}性欲{/b}会带来最佳效果。{b}美貌{/b}和{b}侍奉{/b}属性也有助于性行为。"
 
 # game/BKhelp.rpy:1271
 translate schinese jobs_introduction_ef2e62a3:
 
     # sill "{b}Anal{/b} means anal sex. A high {b}anal{/b} skill together with a good {b}constitution{/b} is a must. A good {b}body{/b} and the {b}sex{/b} skill also help."
-    sill "{b}肛交{/b}指肛门性交。高{b}肛交{/b}技能和良好的{b}体质{/b}是必需的。良好的{b}身材{/b}和{b}性行为{/b}技能也有帮助。"
+    sill "{b}肛交{/b}指用肛门性交。{b}肛交{/b}属性和良好的{b}体质{/b}是必需的。良好的{b}身材{/b}和{b}性交{/b}属性也有帮助。"
 
 # game/BKhelp.rpy:1273
 translate schinese jobs_introduction_f7b43498:
 
     # sill "{b}Fetish{/b} includes BDSM, spanking, fisting, and all the weirder sexual practices. A girl needs a good {b}fetish{/b} and {b}obedience{/b} skill to succeed. {b}Refinement{/b} and {b}anal{/b} skill also factor in fetish acts."
-    sill "{b}性癖好{/b}包括BDSM、打屁股、拳交以及所有更奇怪的性行为。女孩需要有良好的{b}性癖好{/b}和{b}顺从技能{/b}才能成功。{b}优雅{/b}和{b}肛交{/b}技能也是关键因素。"
+    sill "{b}调教{/b}包括BDSM、打屁股、拳交以及更加刺激的性行为。女孩需要有一定的{b}调教{/b}和{b}服从{/b}属性才能有所发挥。{b}优雅{/b}和{b}肛交{/b}属性也至关重要。"
 
 # game/BKhelp.rpy:1276
 translate schinese jobs_introduction_efdea71a:
 
     # sill "Later, you can also train your girls to accept {b}bisexual{/b} or {b}group{/b} sex."
-    sill "之后,你也可以培训你的女孩接受{b}双性{/b}或{b}群交{/b}。"
+    sill "之后,你还可以培训你的女孩接受{b}双飞{/b}或{b}群交{/b}玩法。"
 
 # game/BKhelp.rpy:1294
 translate schinese help_brothel_1858a842:
 
     # sill "{b}Your Brothel{/b}. This is where you can check your brothel information, buy new rooms, and hire freelancers." nointeract
-    sill "你的{b}青楼{/b}。这里你可以查看你的青楼信息,购买新的房间,雇佣自由职业者。" nointeract
+    sill "你的{b}青楼{/b}。在这里你可以查看你的青楼信息,扩建新的房间,雇佣外包人员。" nointeract
 
 # game/BKhelp.rpy:1298
 translate schinese help_brothel_54755cbb:
 
     # sill "The {b}Rooms{/b} you own are highlighted on the brothel tab. You can also see the number and type of bedrooms you have."
-    sill "你拥有的{b}房间{/b}在青楼选项卡上会高亮显示。你也可以看到你拥有的卧室数量和类型。"
+    sill "你拥有的{b}房间{/b}在青楼菜单上会高亮显示。你也可以看到你拥有的房间数量和等级。"
 
 # game/BKhelp.rpy:1300
 translate schinese help_brothel_e919f168:
 
     # sill "You can hover over the {b}Advertising{/b}, {b}Security{/b} and {b}Maintenance{/b} labels to learn more about your brothel's current state."
-    sill "您可以将鼠标悬停在{b}广告{/b}、{b}安保{/b}和{b}维护{/b}标签上,了解您的青楼当前的状态。"
+    sill "您可以将鼠标悬停在{b}广告{/b}、{b}安保{/b}和{b}清洁{/b}菜单上,了解您的青楼当前的状态。"
 
 # game/BKhelp.rpy:1304
 translate schinese help_brothel_678986c0:
 
     # sill "From the Brothel, you can also access the {b}Carpenter's Wagon{/b} and {b}Customer options{/b}."
-    sill "从青楼也可以访问{b}木匠马车{/b}和{b}顾客选项{/b}。"
+    sill "在青楼信息界面还可以点击{b}工匠改造{/b}和{b}经营策略{/b}。"
 
 # game/BKhelp.rpy:1308
 translate schinese help_brothel_08baf912:
 
     # sill "There are two types of rooms: bedrooms and common rooms."
-    sill "共有两种类型的房间:卧室和公共房间。"
+    sill "共有两种类型的房间:卧室和经营场所。"
 
 # game/BKhelp.rpy:1310
 translate schinese help_brothel_4a0fd479:
 
     # sill "Each girl must have her own {b}bedroom{/b}. They're not sharing! More comfortable bedrooms increase both girl mood and customer satisfaction."
-    sill "每个女孩都必须拥有自己的{b}卧室{/b}。她们是不会共享的!更舒适的卧室会提高女孩的情绪和顾客的满意度。"
+    sill "每个女孩都必须拥有属于自己的{b}卧室{/b}。她们是不会住在一起的!更舒适的卧室会提高女孩的情绪和顾客的满意度。"
 
 # game/BKhelp.rpy:1312
 translate schinese help_brothel_22ccf984:
 
     # sill "You can click on the bedroom {b}picture{/b} to increase the number of bedrooms. Keep in mind that space is limited by your brothel's size, however. Click on the {b}upgrade{/b} button to improve the quality of all of your bedrooms."
-    sill "你可以点击卧室{b}图片{/b}来增加卧室数量。但请记住,空间受你青楼大小的限制。点击{b}升级{/b}可以提升所有卧室的质量。"
+    sill "你可以通过点击卧室{b}图标{/b}来增加卧室数量。但请记住,青楼的空间有限，扩建也是有限度的。点击{b}升级{/b}可以同时提升所有卧室的等级。"
 
 # game/BKhelp.rpy:1315
 translate schinese help_brothel_5ce9b38c:
 
     # sill "{b}Common rooms{/b} are where your girls perform their jobs when they aren't whoring. You need a specific room for each job type. A common room can host any number of girls at the same time."
-    sill "{b}公共房间{/b}是你的女孩在不从事卖淫时工作的地方。你需要为每种工作类型准备一个特定的房间。一个公共房间可以同时容纳任意数量的女孩。"
+    sill "{b}经营场所{/b}是你的女孩进行普通工作的地方。你需要为每种工作类型准备一个特定的场地。一个经营场所可以同时容纳任意数量的女孩。"
 
 # game/BKhelp.rpy:1318
 translate schinese help_brothel_ced859d6:
 
     # sill "A word of warning: The more common rooms you build, the more expensive they get! Think before you buy. Contractors are so unreliable these days..."
-    sill "记住一点:你建造的公共房间越多,它们就越昂贵!在购买前三思而行。这些承包商可真是令人沮丧..."
+    sill "记住一点:你建造的经营场所越多,扩建的价格就越昂贵!在升级请前三思而行。这些承包商可真是得寸进尺..."
 
 # game/BKhelp.rpy:1322
 translate schinese help_brothel_a54ec990:
 
     # sill "You can hire {b}3 types of freelancers{/b} to help with your business: advertising girls, goons and cleaners."
-    sill "你可以雇佣{b}3种类型的自由职业者{/b}来帮助你的生意:广告女孩、打手和清洁工。"
+    sill "你可以雇佣{b}3种类型的自由职业者{/b}来帮助你的生意:广告宣发人员、保镖和清洁工。"
 
 # game/BKhelp.rpy:1324
 translate schinese help_brothel_83b488c6:
 
     # sill "{b}Advertising girls{/b} increase your brothel reputation, which in turn will bring in more customers every night."
-    sill "{b}广告女孩{/b}可以提升你的青楼声望,从而每晚吸引更多顾客。"
+    sill "{b}广告宣发{/b}可以提升你的青楼声望,从而每晚吸引更多顾客。"
 
 # game/BKhelp.rpy:1326
 translate schinese help_brothel_d834ccda:
 
     # sill "In addition, advertising can give a temporary boost to how many customers will come ({b}customer attraction{/b}), and increase {b}customer budget{/b}, allowing you to make the most of a customer's visit. You need advertising to get people to visit your brothel, at least at the beginning!"
-    sill "此外,广告还可以暂时提高每晚来访的顾客数量({b}顾客吸引力{/b}),并增加{b}顾客预算{/b},让你能够最大限度地利用顾客的到访。至少在开始时,你需要广告来让人们来访你的青楼!"
+    sill "此外,广告还可以暂时提高每晚来消费的顾客数量({b}顾客吸引力{/b}),并增加{b}顾客预算{/b},让你能够最大限度地榨干顾客的钱包。至少在前期,你需要打广告来让更多人来你的青楼消费!"
 
 # game/BKhelp.rpy:1331
 translate schinese help_brothel_3c23b7ef:
@@ -1006,7 +1006,7 @@ translate schinese help_brothel_3c23b7ef:
 translate schinese help_brothel_0cfa0c52:
 
     # sill "{b}Goons{/b} improve your brothel security by beating the unpleasantness out of rowdy customers. Trouble is sure to show up at your door some day, make sure to have a few of them handy!"
-    sill "{b}打手{/b}通过殴打喧闹的顾客来改善你的青楼安保。麻烦总有一天会找上门来,所以确保准备好几个打手!"
+    sill "{b}保镖{/b}通过镇住喧闹的顾客来改善你的青楼环境。麻烦总有一天会找上门来,所以准备好几个打手以防万一!"
 
 # game/BKhelp.rpy:1342
 translate schinese help_brothel_c09afa4d:
@@ -1018,79 +1018,79 @@ translate schinese help_brothel_c09afa4d:
 translate schinese help_brothel_9d160085:
 
     # sill "{b}Cleaners{/b} are maids that take care of the maintenance of your brothel. Low maintenance may cause your girls to fall sick and turn away customers."
-    sill "{b}清洁工{/b}是负责维护你的青楼的女佣。维护不善可能会导致你的女孩生病并拒绝接待顾客。"
+    sill "{b}清洁工{/b}是负责维护你的青楼的女佣。环境脏乱可能会导致你的女孩生病并拒绝接待顾客。"
 
 # game/BKhelp.rpy:1351
 translate schinese help_brothel_fce3bf44:
 
     # sill sad "Please hire some cleaners, I don't want to do all the dirty work alone!!!"
-    sill sad "请雇佣一些清洁工,我可不想一个人做所有的脏活!"
+    sill sad "请雇佣一些清洁工,我可不想一个人打扫所有的卫生!"
 
 # game/BKhelp.rpy:1353
 translate schinese help_brothel_92c4b3db:
 
     # sill happy "Please note that freelancers get more expensive as you move your operations to fancier city districts. But they are also more efficient."
-    sill happy "请注意,随着你的业务发展到更高级的城市区域,自由职业者的费用会越来越高。但他们的效率也会更高。"
+    sill happy "请注意,随着你的业务发展，搬到更高级的城市区域,自由职业者的费用会越来越高。但他们的效率也会提高。"
 
 # game/BKhelp.rpy:1357
 translate schinese help_brothel_6843404d:
 
     # sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls. Only one trainer can be active at all times."
-    sill "{b}训练师{/b}可以帮助你更有效地运营青楼!在泽恩,你可能会遇到一些有趣的人,他们能帮助你管理女孩们。一次只能有一名训练师处于激活状态。"
+    sill "{b}训练师{/b}可以帮助你更有效地运营青楼!在泽恩,你可能会遇到一些有趣的人,他们能帮助你管理女孩们。你只能激活一位训练师的效果。"
 
 # game/BKhelp.rpy:1360
 translate schinese help_brothel_74043be9:
 
     # sill "There is no right or wrong trainer, it all depends on your management style."
-    sill "没有正确或错误的训练师,这全看你的管理风格。"
+    sill "没有最好用或最无用的训练师,根据你的经营风格选择适合你的。"
 
 # game/BKhelp.rpy:1370
 translate schinese help_advertising_53898c4f:
 
     # sill "{b}Advertising{/b} helps grow the renown of your brothel and draws more and wealthier {b}customers{/b} to your brothel."
-    sill "{b}广告{/b}有助于提升青楼的声望,吸引更多更富裕的{b}客人{/b}到你的青楼。"
+    sill "{b}广告{/b}有助于提升青楼的声望,吸引更多更富裕的{b}客人{/b}到你的青楼消费。"
 
 # game/BKhelp.rpy:1372
 translate schinese help_advertising_714a1312:
 
     # sill "Advertising has three different effects: it boosts {b}brothel reputation{/b}, {b}customer attraction{/b} and {b}customer budgets{/b}."
-    sill "广告有三种不同的效果:它提升了{b}青楼声望{/b}、{b}客人吸引力{/b}和{b}客人预算{/b}。"
+    sill "广告有三种不同的效果:它能提升{b}青楼声望{/b}、{b}客户吸引力{/b}和{b}客户预算{/b}。"
 
 # game/BKhelp.rpy:1374
 translate schinese help_advertising_133d9e77:
 
     # sill "Each of these effects is strengthened by {b}advertising power{/b}."
-    sill "这些效果都受{b}广告力量{/b}的增强而得到加强。"
+    sill "这些效果都随{b}广告效果{/b}的增强而得到加强。"
 
 # game/BKhelp.rpy:1382
 translate schinese help_advertising_menu_b463b8ec:
 
     # sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
-    sill "有些{b}客人{/b}每晚都会来你的青楼。至少会有一个来,但你的{b}青楼声望{/b}和{b}客人吸引力{/b}可以大大增加这个数量。"
+    sill "有些{b}客人{/b}每晚都会来你的青楼。至少也会有一个,但你的{b}青楼声望{/b}和{b}客户吸引力{/b}可以大大增加客人的数量。"
 
 # game/BKhelp.rpy:1384
 translate schinese help_advertising_menu_c046054f:
 
     # sill "There are different {b}customer populations{/b} in Zan, each with a different level of difficulty and rewards, as well as some special effect."
-    sill "在泽恩有不同的{b}客人群体{/b},每个群体的难度和回报都不同,还有一些特殊效果。"
+    sill "在泽恩有不同的{b}客人群体{/b},每个群体的服务要求和消费水平都不同,还有一些顾客有特殊效果。"
 
 # game/BKhelp.rpy:1386
 translate schinese help_advertising_menu_f889f1f4:
 
     # sill "You will mostly serve only {b}beggars{/b} at first, though. But as your brothel increases in rank and you reach higher districts, more customer populations will become available."
-    sill "一开始你主要会接待{b}乞丐{/b},但随着你的青楼等级提高,抵达更高等级的区域,会有更多的客人群体可供选择。"
+    sill "一开始你接待的客人以{b}乞丐{/b}为主,但随着你的青楼等级提高,搬到更高等级的区域,会有更多的客户群体可供选择。"
 
 # game/BKhelp.rpy:1388
 translate schinese help_advertising_menu_c9b423ad:
 
     # sill "When that happens, you can choose which populations to attract in the {b}customer options{/b} tab. Not only that, but you can choose to allow or restrict customer populations on a girl by girl basis if you need to."
-    sill "当这种情况发生时,你可以在{b}客人选项卡{/b}里选择吸引哪些群体。不仅如此,如果需要,你还可以选择是否允许某些客人群体进入,这是针对每个女孩的。"
+    sill "当这种情况发生时,你可以在{b}经营策略{/b}里选择吸引哪些群体。不仅如此,如果需要,你还可以选择是否允许某些客人群体进入,这是针对每个女孩的选项调整。"
 
 # game/BKhelp.rpy:1390
 translate schinese help_advertising_menu_e9a0c292:
 
     # sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
-    sill "更难对付的客人也有更高的{b}客人预算{/b}。随着青楼的发展,请记住这一点以获得最大收益。"
+    sill "更难满足的客人也有更高的{b}客户预算{/b}。随着青楼的发展,请记住这一点以获得最大收益。"
 
 # game/BKhelp.rpy:1394
 translate schinese help_advertising_menu_463efcf4:
@@ -1102,61 +1102,61 @@ translate schinese help_advertising_menu_463efcf4:
 translate schinese help_advertising_menu_39ad60d5:
 
     # sill "{b}Brothel reputation{/b} is nice because it draws customers to your brothel for free, unlike advertising. It does {b}decay{/b} over time, though, especially in higher districts."
-    sill "{b}青楼声望{/b}很好,因为它可以免费吸引客人到你的青楼,不像广告。不过它会随时间而{b}衰减{/b},尤其是在更高等级的区域。"
+    sill "{b}青楼声望{/b}很重要,因为声望越高来青楼消费的客人越多,不像广告是临时的效果。不过它会随时间而{b}衰减{/b},尤其是在更高等级的区域。"
 
 # game/BKhelp.rpy:1398
 translate schinese help_advertising_menu_c166846a:
 
     # sill "Of course, it will cost more brothel reputation to attract higher rank customers than the usual riff-raff. If you need more customers than your current reputation allows, blocking some higher rank populations from coming in {b}customer options{/b} could be a way to do it."
-    sill "当然,要吸引更高等级的客人比吸引普通的流氓需要更多青楼声望。如果你需要比目前声望允许的更多客人,在{b}客人选项卡{/b}中屏蔽一些较高等级的群体可能是一种方法。"
+    sill "当然,吸引更高级的客人所需要的声望要比流氓乞丐更多。如果你想要客人的数量尽可能多一些,在{b}经营策略{/b}中屏蔽一些较高等级的客户群体可能会有用。"
 
 # game/BKhelp.rpy:1400
 translate schinese help_advertising_menu_fe19d71f:
 
     # sill "And a word of warning: {b}Unhappy customers{/b} may really drag your reputation down, especially at higher ranks. It is best to focus on drawing only as many customers as you can serve to the brothel to avoid grumbling."
-    sill "关于客人,还有一个警告:{b}不高兴的客人{/b}可能会严重拖累你的声望,尤其是在更高等级时。最好专注于吸引你能服务的客人数量,以避免他们抱怨。"
+    sill "关于客人,还有一件事要注意:{b}不高兴的客人{/b}可能会大幅降低你的声望,尤其是高等级的客人。最好专注于服务好和你能力相匹配的客人,以避免他们抱怨。"
 
 # game/BKhelp.rpy:1404
 translate schinese help_advertising_menu_60dc3fd0:
 
     # sill "{b}Customer attraction{/b} is a temporary boost your advertising girls will bring to the total number of customers that come to the brothel."
-    sill "{b}客人吸引力{/b}是你的广告女郎暂时带来的对总客人数的提升。"
+    sill "{b}客户吸引力{/b}是你的广告临时增加的客人数量。"
 
 # game/BKhelp.rpy:1406
 translate schinese help_advertising_menu_39508306:
 
     # sill "If you lower advertising, though, you will lose those extra customers. This is the main difference between {b}brothel reputation{/b} and {b}customer attraction{/b}."
-    sill "不过,如果你减少广告,你就会失去这些额外客人。这是{b}青楼声望{/b}和{b}客人吸引力{/b}的主要区别。"
+    sill "不过,如果你减少广告投放,你就会失去这些额外的客人。这就是{b}青楼声望{/b}和{b}客户吸引力{/b}的主要区别。"
 
 # game/BKhelp.rpy:1408
 translate schinese help_advertising_menu_15a8ef4b:
 
     # sill "Ultimately, if you want many customers to come, it is good to keep advertising high."
-    sill "总之,如果你想吸引大量客人,保持广告投放高是个好主意。"
+    sill "总之,如果你想吸引大量客人,保持大量的广告投放是个好主意。"
 
 # game/BKhelp.rpy:1410
 translate schinese help_advertising_menu_2f8db18d:
 
     # sill "One day, you may even be able to unlock a way to increase {b}customer attraction{/b}, at the expense of {b}customer budgets{/b}."
-    sill "有一天,你甚至可能解锁一种提高{b}客人吸引力{/b}的方式,代价是{b}客人预算{/b}。"
+    sill "有一天,你甚至可能解锁另一种提高{b}客户吸引力{/b}的方式,代价是降低{b}客户预算{/b}。"
 
 # game/BKhelp.rpy:1413
 translate schinese help_advertising_menu_3a3136fa:
 
     # sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
-    sill "每个客人都有一个{b}最高预算{/b},他们愿意在你的青楼上花费的金额。"
+    sill "每个客人都有一个{b}最高预算{/b},这是他们预计在你的青楼里消费的金额上限。"
 
 # game/BKhelp.rpy:1415
 translate schinese help_advertising_menu_cbb3a1de:
 
     # sill "Customers have a separate budget for {b}entertainment{/b}, such as hanging by the tavern or club, and {b}whoring{/b}. Their budget for whoring is higher, naturally. But if you want to get the most value out of a customer, entertaining him first is a good idea."
-    sill "客人有单独的{b}娱乐{/b}预算,如在酒馆或俱乐部闲逛,还有{b}卖淫{/b}预算。显然,他们的卖淫预算更高。但如果你想从一个客人那里获得最大价值,先招待他是个好主意。"
+    sill "客人还有单独的{b}娱乐{/b}预算,例如在酒吧喝酒或在舞厅闲逛,还有{b}性爱{/b}预算。显然,性爱预算的占比更高。但如果你想从一个客人赚到更多的钱,先招待他是个好主意。"
 
 # game/BKhelp.rpy:1418
 translate schinese help_advertising_menu_e75811ac:
 
     # sill "Advertising increases {b}customer budgets{/b}. In rare cases, it is also possible to convince customers to go over their allowance. Some girl perks help with that."
-    sill "广告会增加{b}客人预算{/b}。在极少数情况下,也有可能说服客人超出他们的预算。某些女孩的特权有助于此。"
+    sill "广告会增加{b}客户预算{/b}。在极少数情况下,也有可能让客人透支消费。某些女孩的天赋也可以产生这种效果。"
 
 # game/BKhelp.rpy:1420
 translate schinese help_advertising_menu_9ee4e8dd:
@@ -1168,25 +1168,25 @@ translate schinese help_advertising_menu_9ee4e8dd:
 translate schinese help_advertising_menu_6001b4b3:
 
     # sill "Ultimately, if you want customers to spend a lot, it is good to keep advertising high."
-    sill "总之,如果你想让客人多花钱,保持广告投放高是个好主意。"
+    sill "总之,如果你想让客人多花钱,保持大量的广告投放是个好主意。"
 
 # game/BKhelp.rpy:1424
 translate schinese help_advertising_menu_bb561c66:
 
     # sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
-    sill "未来也可能有方法提高{b}客人预算{/b},作为代价是{b}客人吸引力{/b}。"
+    sill "未来可能还有其他方法提高{b}客户预算{/b},作为代价要牺牲一些{b}客户吸引力{/b}。"
 
 # game/BKhelp.rpy:1428
 translate schinese help_advertising_menu_82913fb0:
 
     # sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
-    sill "{b}广告力量{/b}受到你的广告女郎当前{b}衣着{/b}的影响。"
+    sill "{b}广告效果{/b}受到你的广告女郎当前{b}穿着{/b}的影响。"
 
 # game/BKhelp.rpy:1430
 translate schinese help_advertising_menu_df2089fa:
 
     # sill "There may be a way to unlock new outfits in the future."
-    sill "未来也许会有解锁新服装的方法。"
+    sill "未来也许能解锁更多服装。"
 
 # game/BKhelp.rpy:1434
 translate schinese help_advertising_menu_0c9bddb4:
@@ -1198,73 +1198,73 @@ translate schinese help_advertising_menu_0c9bddb4:
 translate schinese help_wagon_bdaee514:
 
     # carpenter "This baby here is where I ply my trade, boss."
-    carpenter "这里就是我执行交易的地方,老板。"
+    carpenter "这里就是我干活的地方了,老板。"
 
 # game/BKhelp.rpy:1445
 translate schinese help_wagon_3ace83c3:
 
     # carpenter "{b}Furniture-making{/b}, of course. I also do decorations. Heck, I can even arrange a whole room real nice if you have the resources."
-    carpenter "当然是{b}制作家具{/b}了。我也做装饰品。事实上,如果你有资源,我还可以帮你布置整个房间。"
+    carpenter "当然是{b}制作家具{/b}了。我也会做些装饰品。事实上,如果你有材料,我还可以帮你装修整个房间。"
 
 # game/BKhelp.rpy:1447
 translate schinese help_wagon_7de54d46:
 
     # carpenter "I need {b}Resources{/b} to build stuff. That was our deal, remember?"
-    carpenter "我需要{b}资源{/b}来制作东西。这就是我们的交易,记得吗?"
+    carpenter "我需要{b}资源{/b}来制作东西。我们一开始就说好了,记得吗?"
 
 # game/BKhelp.rpy:1449
 translate schinese help_wagon_c1d74bcf:
 
     # carpenter "Resources can be found all over town, I hear."
-    carpenter "据说城镇各处都可以找到资源。"
+    carpenter "据说城里很多地方都可以弄到资源。"
 
 # game/BKhelp.rpy:1451
 translate schinese help_wagon_92544efd:
 
     # carpenter "When you give me a new task, I might take a few days to complete it. An' I don't like to be interrupted. Make sure to get yer priorities straight."
-    carpenter "当你给我一个新任务时,我可能需要几天才能完成。而且我不喜欢被打断。请务必理清你的优先事项。"
+    carpenter "当你派发一个新活时,我可能需要几天才能完成。而且我不喜欢被打断。请务必考虑好顺序。"
 
 # game/BKhelp.rpy:1453
 translate schinese help_wagon_a9e5dec2:
 
     # carpenter "After you build something, it cannot be undone. But some furniture will open new options for you, or even be switched on/off. Check the {b}Customer options{/b} tab to learn more."
-    carpenter "建造完东西就不能撤销了。但有些家具会为你开辟新的选择,甚至可以开关。请查看{b}顾客选项{/b}标签了解更多。"
+    carpenter "建造完就不能撤销了。但有些家具会为你提供新的功能选项,甚至可以启用或禁用效果。请查看{b}经营策略{/b}菜单了解更多信息。"
 
 # game/BKhelp.rpy:1459
 translate schinese help_customers_fa2a1a82:
 
     # carpenter "Heya boss, it's me."
-    carpenter "老板,是我。"
+    carpenter "嘿呀~老板,是我。"
 
 # game/BKhelp.rpy:1461
 translate schinese help_customers_b19eac2c:
 
     # carpenter "You might've noticed, building new furniture has opened new {b}Customer options{/b} for ya."
-    carpenter "你可能已经注意到,新家具的建造为你开启了新的{b}顾客选项{/b}。"
+    carpenter "你可能发现了,刚刚完成的家具为你提供了新的{b}经营策略{/b}。"
 
 # game/BKhelp.rpy:1463
 translate schinese help_customers_5ee181c4:
 
     # carpenter "It's real simple: choosing which furniture and decoration to display will attract different categories of customers."
-    carpenter "很简单:选择摆放哪些家具和装饰会吸引不同类型的顾客。"
+    carpenter "这很容易理解:摆放不同的家具和装饰会吸引不同类型的顾客。"
 
 # game/BKhelp.rpy:1465
 translate schinese help_customers_78e58e25:
 
     # carpenter "Customers come from one of the many populations in Zan, from the rabble to the high 'n' mighty. Check out their characteristics by hovering over their portrait: some might surprise you."
-    carpenter "顾客来自泽恩各种人群,从平民到权贵。将鼠标悬停在她们头像上可以看到她们的特点,有些可能会让你吃惊。"
+    carpenter "顾客来自泽恩的各种人群,从平民到权贵。将鼠标悬停在她们头像上可以看到他们的特点,有些可能会让你大吃一惊。"
 
 # game/BKhelp.rpy:1468
 translate schinese help_customers_8cb7b3c2:
 
     # carpenter "They also have different budgets and whatnot. Your pink-haired girlfriend tried to explain all this to me once, it made my head hurt."
-    carpenter "她们的预算等也各不相同。你那个粉发女友曾试图向我解释这些,结果我头都疼了。"
+    carpenter "他们的预算也各不相同。你那个粉毛女友曾试图向我解释这些,听的我头都疼了。"
 
 # game/BKhelp.rpy:1470
 translate schinese help_customers_d4095bcf:
 
     # carpenter "There are more subtle ways customers differ, though. Some just like different things for entertainment, in and out of the sack."
-    carpenter "不过顾客之间的差异还有更细微的地方。有些人就是喜欢不同的娱乐活动,包括卧室里的。"
+    carpenter "不过顾客之间的差异还体现在更加细微的地方。不同的群体喜欢不同的娱乐活动,包括床上的。"
 
 # game/BKhelp.rpy:1472
 translate schinese help_customers_1aa53b4a:
@@ -1276,31 +1276,31 @@ translate schinese help_customers_1aa53b4a:
 translate schinese help_customers_642f217c:
 
     # carpenter "Just remind 'em, though: the next one who tries to pinch my ass gets his skull split with a 10-pound hammer."
-    carpenter "不过要提醒她们,下一个敢摸我屁股的,我就拿10磅的锤子砸烂他的脑袋。"
+    carpenter "不过要提醒他们,要是谁还敢摸我的屁股,我就拿起10磅重的锤子砸烂他的脑袋。"
 
 # game/BKhelp.rpy:1484
 translate schinese help_districts_4ac14c86:
 
     # sill "This is {b}Zan{/b}, the City of Jade! From here, you can visit all of the districts you have unlocked." nointeract
-    sill "这里是{b}赞{/b}城,玉都之城!从这里你可以前往已解锁的各个区域。" nointeract
+    sill "这里是{b}泽恩{/b},玉之城!从这里你可以前往已解锁的各个区域。" nointeract
 
 # game/BKhelp.rpy:1488
 translate schinese help_districts_ec26eb9d:
 
     # sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
-    sill "泽恩共有{b}六大区域{/b},从城墙外的贫民窟到城内权力中心——国王所在的国王宫殿。"
+    sill "泽恩共有{b}六大区域{/b},从城墙外的贫民窟到城内权力中心——国王所在的宫殿。"
 
 # game/BKhelp.rpy:1490
 translate schinese help_districts_f9b2c1b2:
 
     # sill "You can visit the districts that are currently unlocked, in order to meet new people or pursue some private business."
-    sill "你现在可以前往已解锁的区域,以结识新朋友或处理一些私事。"
+    sill "你现在可以前往已解锁的区域,认识一些新朋友或处理一些私事。"
 
 # game/BKhelp.rpy:1492
 translate schinese help_districts_e68659ac:
 
     # sill "In time, you will be able to unlock new districts and relocate your brothel to fancier areas."
-    sill "随着游戏的进展,你将能够解锁新的区域,并把青楼迁移到更高档的地区。"
+    sill "随着游戏的进展,你将能够解锁更多的区域,并把青楼迁移到更高档的地区。"
 
 # game/BKhelp.rpy:1496
 translate schinese help_districts_12dc4af0:
@@ -1342,7 +1342,7 @@ translate schinese help_visit_location_c777e57b:
 translate schinese help_visit_location_6a49d4d9:
 
     # sill "There are many girls idling about in Zan. You know, in this economy..."
-    sill "泽恩到处都有游荡的女孩。你知道,这经济形势下..."
+    sill "泽恩到处都有闲逛的女孩。你知道的,经济不景气..."
 
 # game/BKhelp.rpy:1532
 translate schinese help_visit_location_75de1963:
@@ -1354,19 +1354,19 @@ translate schinese help_visit_location_75de1963:
 translate schinese help_visit_location_b67c19ba:
 
     # sill "But it will take some hard convincing. Or charms... And even then, there is no way to know in advance if the girl is any good. You might be pleasantly surprised, though."
-    sill "不过这需要你下大功夫说服。或者利用你的魅力...即便如此,也无法预知她们的能力。不过说不定你会有意外的收获。"
+    sill "不过这得花不少功夫。或者利用你的魅力...即便如此,你也无法提前知道她们的属性。不过说不定你会有意外的收获。"
 
 # game/BKhelp.rpy:1539
 translate schinese help_visit_location_0ee20028:
 
     # sill "Touring the area may allow you to learn some interesting rumors or meet new people..."
-    sill "在这里游览可能会让你获知一些有趣的流言,或者认识新朋友..."
+    sill "在这里闲逛可能会听到一些有趣的流言,或者认识一些新朋友..."
 
 # game/BKhelp.rpy:1541
 translate schinese help_visit_location_f311755a:
 
     # sill sad "But be careful, Master! The streets aren't safe, you know."
-    sill sad "不过当心啊,主人!这街道可不太安全,你知道的。"
+    sill sad "不过当心,主人!街道可不太安全,你知道的。"
 
 # game/BKhelp.rpy:1548
 translate schinese help_slavemarket_ecee1ea5:
@@ -1378,13 +1378,13 @@ translate schinese help_slavemarket_ecee1ea5:
 translate schinese help_slavemarket_e9b64117:
 
     # sill sad "I am in no hurry to go back there..."
-    sill sad "我可没什么太大的赶回去的迫切感..."
+    sill sad "我可不想回到这里..."
 
 # game/BKhelp.rpy:1552
 translate schinese help_slavemarket_e130cc8e:
 
     # sill happy "At the slavemarket, you can {b}buy{/b} new girls to work for you. Watch out for their stats and traits before you decide, however."
-    sill happy "在奴隶市场上,你可以{b}购买{/b}新女孩为你工作。不过在决定之前,请先观察她们的属性和特质。"
+    sill happy "在奴隶市场上,你可以{b}购买{/b}新的奴隶为你工作。不过在你决定之前,请先观察她们的属性和特质。"
 
 # game/BKhelp.rpy:1556
 translate schinese help_slavemarket_8d90cc80:
@@ -1396,61 +1396,61 @@ translate schinese help_slavemarket_8d90cc80:
 translate schinese help_slavemarket_d8d2e58e:
 
     # sill "Sexual experience... Well, you know... *blush*"
-    sill "性经验…嗯,你知道的…*脸红*"
+    sill "性经验...嗯,你知道的...*脸红*"
 
 # game/BKhelp.rpy:1570
 translate schinese help_slavemarket_a0887105:
 
     # sill "The slaves sold here are sex slaves. Most of them have seen some 'use' by the slavers, or their former masters. There is the odd virgin, though, but even then, she has often been 'used' in other ways..."
-    sill "这里出售的奴隶都是性奴隶。她们大多数已经被奴隶商或前主人'使用'过了。虽然也有少数处女,但即便如此,她们也常常被'以其他方式使用'过..."
+    sill "这里出售的奴隶都是性奴隶。她们大多数已经被奴隶贩子或前任主人'使用'过了。虽然也有少数是处女,但即便如此,她们也常常被'以其他方式使用'过..."
 
 # game/BKhelp.rpy:1573
 translate schinese help_slavemarket_a6731bb8:
 
     # sill "Experienced girls are more expensive. They might not have been trained the way you'd like, though."
-    sill "经验丰富的女孩价格更高。不过,她们可能没有被培养成你想要的样子。"
+    sill "经验丰富的女孩价格更高。不过,她们可能没有被调教成你想要的样子。"
 
 # game/BKhelp.rpy:1575
 translate schinese help_slavemarket_b6c2fe47:
 
     # sill "You can get a general idea about a slave's sexual training by looking at her experience level and stats."
-    sill "你可以通过查看奴隶的经验等级和属性,大概了解她的性培训情况。"
+    sill "你可以通过查看奴隶的经验等级和属性,大概了解她的训练情况。"
 
 # game/BKhelp.rpy:1581
 translate schinese help_slavemarket_7b0bc4af:
 
     # "You can use the shortcuts to sort market girls by name, level or sexual experience (right-click on a sort method to sort backwards)."
-    "你可以使用快捷方式按名称、等级或性经验对市场上的女孩进行排序(右击排序方式可反向排序)。"
+    "你可以使用快捷方式按名称、等级或训练等级对市场上的女孩进行排序(右击排序方式可反向排序)。"
 
 # game/BKhelp.rpy:1588
 translate schinese help_shop_035de95c:
 
     # sill happy "This is the {b}item shop{/b}! From here, you can buy anything you like for you or your girls."
-    sill happy "这是{b}道具商店{/b}!在这里,你可以买你或你的女孩想要的任何东西。"
+    sill happy "这里是{b}商店{/b}!在这里,你可以买到你需要的或女孩想要的大多数东西。"
 
 # game/BKhelp.rpy:1590
 translate schinese help_shop_88299ad9:
 
     # sill sad "I do not like that shopkeeper, though! She cannot keep her eyes off you..."
-    sill sad "不过,我不太喜欢那个店主!她总是一直盯着你看..."
+    sill sad "不过,我不太喜欢那个老板娘!她总是用奇怪的目光盯着你看..."
 
 # game/BKhelp.rpy:1592
 translate schinese help_shop_29aeabda:
 
     # sill happy "There are 3 types of items: {color=[c_steel]}personal items{/color}, {color=[c_pink]}girl items{/color}, and {color=[c_orange]}gifts{/color}. Watch for the color on the item profile. Hover your mouse on each item or click it to learn more."
-    sill happy "{color=[c_steel]}个人道具{/color}、{color=[c_pink]}女孩道具{/color}和{color=[c_orange]}礼物{/color}是三种不同类型的道具。查看道具详情时会标明类型。将鼠标悬停在每件道具上或点击它都可以了解更多信息。"
+    sill happy "物品分为{color=[c_steel]}主角物品{/color}、{color=[c_pink]}女孩物品{/color}和{color=[c_orange]}礼物{/color}这三类。查看道具详情时会标明类型。将鼠标悬停在每件道具上或点击它都可以了解更多信息。"
 
 # game/BKhelp.rpy:1595
 translate schinese help_shop_4bdd0c04:
 
     # sill "{b}{color=[c_steel]}Personal items{/color}{/b} are intended for your use."
-    sill "{b}{color=[c_steel]}个人道具{/color}{/b}是供你使用的。"
+    sill "{b}{color=[c_steel]}主角物品{/color}{/b}是供你使用的。"
 
 # game/BKhelp.rpy:1597
 translate schinese help_shop_9adaadcf:
 
     # sill "{b}{color=[c_pink]}Girl items{/color}{/b} are intended for your girls."
-    sill "{b}{color=[c_pink]}女孩道具{/color}{/b}是供你的女孩使用的。"
+    sill "{b}{color=[c_pink]}女孩物品{/color}{/b}是供你的女孩使用的。"
 
 # game/BKhelp.rpy:1599
 translate schinese help_shop_52090d2f:
@@ -1468,37 +1468,37 @@ translate schinese help_shop_4e75be8b:
 translate schinese help_postings_9be38b31:
 
     # sill "The {b}posting{/b} board. This is a good place to look for classes or quests!" nointeract
-    sill "{b}公告板{/b}。这里是寻找培训课程或任务的好地方!" nointeract
+    sill "{b}公告大厅{/b}。这里是寻找培训课程或委托任务的好地方!" nointeract
 
 # game/BKhelp.rpy:1617
 translate schinese help_postings_6e866826:
 
     # sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
-    sill "{b}培训课程{/b}可以提升你的女孩的{b}技能{/b},同时稍微提升她们的{b}声望{/b}和{b}经验{/b}。"
+    sill "{b}培训课程{/b}可以提升你的女孩的{b}属性{/b},同时稍微提升她们的{b}声望{/b}和{b}经验{/b}。"
 
 # game/BKhelp.rpy:1619
 translate schinese help_postings_a640924b:
 
     # sill "Committing to a class means that your girl will be away for a few days. Several girls can enroll in the same class, up to a maximum."
-    sill "参加培训课程意味着你的女孩将会离开一段时间。同一个课程最多可以同时有几个女孩报名。"
+    sill "参加培训课程意味着你的女孩将会离开一段时间。同一个课程可以同时培训好几个女孩。"
 
 # game/BKhelp.rpy:1621
 translate schinese help_postings_a6c2425f:
 
     # sill "Please be aware that classes can only improve a girl's skill up to a point. To raise her skills further, you might need more advanced classes."
-    sill "请注意,培训课程只能提升女孩的技能到一定程度。如果想要进一步提升她们的技能,你可能需要更高级的课程。"
+    sill "请注意,培训课程只能提升女孩的属性到一定程度。如果想要进一步提升她们的技能,你可能需要更高级的课程。"
 
 # game/BKhelp.rpy:1625
 translate schinese help_postings_db095dea:
 
     # sill "{b}Quests{/b} are special requests posted by locals that your girl can fulfill. Questing rewards include {b}gold{/b}, {b}skills{/b}, {b}experience{/b} and {b}reputation{/b}."
-    sill "{b}任务{/b}是当地人发布的特殊请求,你的女孩可以去完成。完成任务可以获得{b}金币{/b}、{b}技能{/b}、{b}经验{/b}和{b}声望{/b}。"
+    sill "{b}委托任务{/b}是当地人发布的特殊请求,你的女孩可以去完成委托。完成后可以获得{b}金币{/b}、{b}属性提升{/b}、{b}经验增长{/b}和{b}声望{/b}。"
 
 # game/BKhelp.rpy:1627
 translate schinese help_postings_633d6d8c:
 
     # sill sad "Some of those quests look quite dodgy! Committing to a quest means that your girl will be away for a few days."
-    sill sad "有些任务看起来确实很可疑!参与任务意味着你的女孩也将离开一段时间。"
+    sill sad "有些任务看起来确实很可疑!完成任务意味着你的女孩也将离开一段时间。"
 
 # game/BKhelp.rpy:1629
 translate schinese help_postings_f234ad6c:
@@ -1510,37 +1510,37 @@ translate schinese help_postings_f234ad6c:
 translate schinese help_postings_e90378a9:
 
     # sill "Watch for specific {b}traits{/b} that the customers love or hate. This might increase or decrease the reward for the quest by a large amount."
-    sill "留意客户喜欢或讨厌的特定{b}特质{/b},这可能会大幅增加或减少任务的回报。"
+    sill "留意客户喜欢或讨厌的特定{b}特质{/b},这可能会大幅增加或减少任务的报酬。"
 
 # game/BKhelp.rpy:1642
 translate schinese help_how_to_win_387a3310:
 
     # sill "To win the game, you must reach the last chapter. As the story of Brothel King develops, proper endings will be added to the game."
-    sill "要赢得游戏,你必须完成最后一章。随着《风俗之王》故事的发展,游戏将加入正式结局。"
+    sill "要通关游戏,你必须完成最后一章的主线任务。随着《青楼之王》故事的发展,游戏将抵达结局。"
 
 # game/BKhelp.rpy:1644
 translate schinese help_how_to_win_eb06c747:
 
     # sill "For each chapter, you may have to reach certain goals or complete elements of the story to advance."
-    sill "对于每一章,你可能需要达成某些目标或完成故事中的某些元素才能前进。"
+    sill "每个章节,你都需要达成某些目标或完成故事中的某些任务才能推进。"
 
 # game/BKhelp.rpy:1648
 translate schinese help_how_to_win_adcf0a29:
 
     # sill "Please hover on the bottom right message in the home screen to know your current goals."
-    sill "请将鼠标悬停在主界面右下角的消息上,了解您当前的目标。"
+    sill "请将鼠标悬停在主界面右下角的菜单上,了解您当前的目标。"
 
 # game/BKhelp.rpy:1659
 translate schinese help_about_game_54f1f4da:
 
     # sill "What would you like to know about this game?" nointeract
-    sill "你对这个游戏还有什么想知道的吗?" nointeract
+    sill "还想了解其他关于游戏的信息吗?" nointeract
 
 # game/BKhelp.rpy:1700
 translate schinese help_about_game_72bc183d:
 
     # "Thanks to all the people on the [URL] forum for their support and all the good ideas, girl packs and mods they contributed."
-    "[URL]论坛上的所有人,感谢你们的支持和所有优秀的创意、女孩套装和模组贡献。"
+    "[URL]论坛上的所有人,感谢你们的支持和所有优秀的创意、女孩包和模组贡献。"
 
 # game/BKhelp.rpy:1702
 translate schinese help_about_game_142a2cc1:
@@ -1564,43 +1564,43 @@ translate schinese help_about_game_fd2461a7:
 translate schinese help_night_events_3d6e67e7:
 
     # sill "{b}Night events{/b} are where the action is!" nointeract
-    sill "{b}夜间事件{/b}才是精彩所在!" nointeract
+    sill "{b}夜间事件{/b}才是游戏的核心玩法!" nointeract
 
 # game/BKhelp.rpy:1724
 translate schinese help_night_events_c5b22008:
 
     # sill "Every night, customers will flock to your brothel in the hope of getting some action, both in the form of entertainment and sex. How many customers actually show up depends on your {b}brothel reputation{/b}."
-    sill "每晚,顾客都会涌向你的青楼,希望获得娱乐和性方面的满足。实际到达的顾客数量取决于你的{b}青楼声望{/b}。"
+    sill "每晚,顾客都会涌向你的青楼,希望获得娱乐和性方面的满足。实际的顾客数量取决于你的{b}青楼声望{/b}。"
 
 # game/BKhelp.rpy:1727
 translate schinese help_night_events_afc703b9:
 
     # sill "Each customer has his own preferences in terms of entertainment and sexual practices. Meeting your customers expectations is key to their satisfaction."
-    sill "每位顾客都有自己对娱乐和性行为方式的偏好。满足顾客的期望是获得他们满意度的关键。"
+    sill "每位顾客都有对娱乐和性行为方式的偏好。满足顾客的期望是提升满意度的关键。"
 
 # game/BKhelp.rpy:1730
 translate schinese help_night_events_4914165e:
 
     # sill "Eventually, your brothel's reputation will rise or fall depending on how many customers have been entertained and sexually gratified."
-    sill "最终,你青楼的声望将根据已接待和性满足的顾客数量而上升或下降。"
+    sill "最终,你青楼的声望将根据已接待的和对性爱满足的顾客数量而变动。"
 
 # game/BKhelp.rpy:1732
 translate schinese help_night_events_a112b296:
 
     # sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home. You will still have to pay for upkeep and maintenance."
-    sill "如果某晚没有女孩工作,青楼将关闭。保安和广告女郎都会回家。你仍需支付保养费用。"
+    sill "如果没有女孩能够工作,青楼将暂停营业。保安和广告女郎都不会工作。但你仍需支付保养费用。"
 
 # game/BKhelp.rpy:1737
 translate schinese help_night_events_ce34d1be:
 
     # sill "{b}Advertising{/b} is pretty straightforward. Get a bunch of young, hot girls out there with signs, flyers or bodily tattoos with the brothel's name on it, and its reputation will increase. Reputation begets more customers."
-    sill "{b}广告{/b}非常直接。让一群年轻火辣的女孩在外面挥舞标语、发传单或纹身宣传青楼名字,这将提升青楼声望。声望会带来更多顾客。"
+    sill "{b}广告{/b}的效果非常直接。让一群年轻火辣的女孩在外面挥舞标语、发传单或纹身宣传青楼的名字,这将提升青楼声望。高声望会带来更多的顾客。"
 
 # game/BKhelp.rpy:1740
 translate schinese help_night_events_bb01cc54:
 
     # sill "If your {b}brothel security{/b} is insufficient, your brothel may suffer from attacks during the night. Attacks can deplete your money, hurt your girls and damage their mood, so watch out!"
-    sill "如果你的{b}青楼安保{/b}不足,青楼可能遭受夜间袭击。袭击会消耗你的金钱,伤害女孩并降低她们的情绪,所以要小心! "
+    sill "如果你的{b}青楼安保{/b}不足,青楼可能遭受夜间袭击。袭击会劫掠你的金币,伤害女孩并降低她们的情绪,所以要小心! "
 
 # game/BKhelp.rpy:1744
 translate schinese help_night_events_c09afa4d:
@@ -1612,43 +1612,43 @@ translate schinese help_night_events_c09afa4d:
 translate schinese help_night_events_a9c6adda:
 
     # sill "Customers are messy and will dirty up the place every night as they go about their business. {b}Maintenance{/b} is essential is you don't want your brothel to become a hotbed for disease. By the way, sex is dirtier than entertainment."
-    sill "顾客很邋遢,每晚做完事后都会弄脏整个地方。{b}维护{/b}是必需的,否则青楼会沦为疾病温床。顺带一提,性行为比娱乐还要脏乱。"
+    sill "顾客很邋遢,每晚离开后都会弄脏整个场地。{b}清洁{/b}是必需的,否则青楼会沦为疾病的温床。顺带一提,性行为比一般娱乐要更加脏乱。"
 
 # game/BKhelp.rpy:1754
 translate schinese help_night_events_a112b296_1:
 
     # sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home. You will still have to pay for upkeep and maintenance."
-    sill "如果某晚没有女孩工作,青楼将关闭。保安和广告女郎都会回家。你仍需支付保养费用。"
+    sill "如果没有女孩能够工作,青楼将暂停营业。保安和广告女郎都不会工作。但你仍需支付保养费用。"
 
 # game/BKhelp.rpy:1760
 translate schinese help_night_events_ab834815:
 
     # sill "Every night, the available working girls will {b}perform{/b} for the visiting customers."
-    sill "每晚,在职的女孩会为到访的顾客{b}表演{/b}。"
+    sill "每天晚上,工作的女孩会{b}服务{/b}前来消费的顾客。"
 
 # game/BKhelp.rpy:1762
 translate schinese help_night_events_37e4edbe:
 
     # sill "Some girls might rebel and go on strike. This happens when their mood and/or obedience is too low."
-    sill "有些女孩可能会罢工。这发生在她们的情绪和/或服从度太低的时候。"
+    sill "有些女孩可能会罢工。如果她们的情绪和/或服从度太低。"
 
 # game/BKhelp.rpy:1764
 translate schinese help_night_events_0ec7626f:
 
     # sill "The girls that do work will service the customers by doing their job or performing sex acts. Each customer will choose the form of entertainment and sex act that matches his tastes, if a girl is available."
-    sill "工作的女孩会为顾客提供服务,进行性行为。每位顾客都会选择符合自己品位的娱乐和性行为,前提是有女孩可供选择。"
+    sill "女孩会为顾客提供服务,或是性行为。每位顾客都会选择符合自己品位的娱乐和性行为,前提是有女孩可供选择。"
 
 # game/BKhelp.rpy:1767
 translate schinese help_night_events_f8681acd:
 
     # sill "Performance depends on a number of factors: customer difficulty (which is higher in fancier districts), girl skills and job level, bedroom quality, special items, and so on."
-    sill "表演取决于诸多因素:顾客难度(繁华区更高)、女孩技能和工作等级、卧室质量、特殊道具等。"
+    sill "服务质量取决于诸多因素:顾客的要求(顾客等级越高要求更高)、女孩的属性和职业等级、卧室等级、特殊道具等。"
 
 # game/BKhelp.rpy:1770
 translate schinese help_night_events_aa569c0f:
 
     # sill "A good performance will massively increase the rewards from the customers, especially the tipping."
-    sill "出色的表现将极大提高从顾客那里获得的回报,尤其是小费。"
+    sill "出色的表现将大幅提高从顾客那里获得的收入,尤其是小费。"
 
 # game/BKhelp.rpy:1780
 translate schinese security_introduction_7bf4aa11:
@@ -1660,43 +1660,43 @@ translate schinese security_introduction_7bf4aa11:
 translate schinese help_security_dcd77966:
 
     # sill happy "Security events happen when the {b}threat{/b} to your brothel is high, or when {b}crazy customers{/b} visit your brothel."
-    sill happy "当你的{b}威胁度{/b}较高,或{b}疯狂顾客{/b}来访时,就会发生安保事件。"
+    sill happy "当你的{b}威胁等级{/b}较高,或{b}疯狂的顾客{/b}来访时,就会发生安全事故。"
 
 # game/BKhelp.rpy:1796
 translate schinese help_security_ba7a2419:
 
     # sill "Brothel {b}Threat{/b} is based on your gold and the number of working girls in your brothel. Higher ranking girls attract more threat."
-    sill "青楼的{b}威胁度{/b}取决于你的金钱数量和在职女孩的数量。等级更高的女孩会吸引更多威胁。"
+    sill "青楼的{b}威胁等级{/b}取决于你的金钱总量和在职的女孩数量。等级更高的女孩会引来更多威胁。"
 
 # game/BKhelp.rpy:1798
 translate schinese help_security_acb38ad7:
 
     # sill "Security is based on your {b}available goons{/b}."
-    sill "安保取决于你的{b}可用打手{/b}。"
+    sill "安保等级取决于你的{b}保安数量{/b}。"
 
 # game/BKhelp.rpy:1800
 translate schinese help_security_987e3a23:
 
     # sill "Your {b}Strength{/b} counts too, but only if you have {b}remaining AP at the end of the day{/b}, or the 'Defender' talent."
-    sill "你的{b}力量{/b}也很重要,但前提是你{b}当天剩余行动点数{/b}足够,或拥有'守护者'天赋。"
+    sill "你的{b}力量{/b}属性也很重要,但前提是你当天还有足够的{b}剩余行动点数{/b},或者拥有'守护者'天赋。"
 
 # game/BKhelp.rpy:1802
 translate schinese help_security_b7f273ff:
 
     # sill "Threat builds up more or less quickly depending on your level of security. Over time, {b}security events{/b} will happen, although it will happen much less often if you have adequate security. A good level of security will help mitigate the results of security events as well."
-    sill "威胁的增长速度取决于你的安保水平。随着时间推移,会发生{b}安保事件{/b},不过如果安保足够,发生的频率会大大降低。良好的安保水平也有助于缓解安保事件的后果。"
+    sill "威胁等级的增长速度取决于你的安保水平。随着时间推移,会发生{b}安全事故{/b},不过如果安保力量足够,发生的频率会大大降低。良好的安保水平也有助于降低安全事故的损失。"
 
 # game/BKhelp.rpy:1804
 translate schinese help_security_e992cd18:
 
     # sill "Be careful! Security events may {b}escalate{/b} over time, until something really bad happens."
-    sill "小心!安保事件可能会{b}升级{/b},直到发生非常糟糕的事。"
+    sill "小心!安全事故可能会{b}升级{/b},直到发生非常糟糕的事。"
 
 # game/BKhelp.rpy:1806
 translate schinese help_security_413c41d6:
 
     # sill "Another risk to your brothel is {b}crazy customers{/b}. Crazy customers may attack your girls or brothel. Because they are customers, it's hard to prevent them from coming in, but your security level may help avoid negative consequences. Arming your girls is also a good option."
-    sill "另一个威胁是{b}疯狂顾客{/b}。他们可能攻击你的女孩或青楼。由于他们是顾客,很难阻止他们进入,但你的安保水平可能会避免负面后果。为女孩配备武器也是个不错的选择。"
+    sill "另一个威胁是{b}疯狂的顾客{/b}。他们可能袭击你的女孩或青楼。由于他们是顾客,你很难阻止他们进入,但你的安保水平可能会减少损失。为女孩配备防身的武器也是个不错的选择。"
 
 # game/BKhelp.rpy:1808
 translate schinese help_security_6304b56b:
@@ -1714,43 +1714,43 @@ translate schinese help_rank_introduction_3372946f:
 translate schinese help_rank_introduction_388fa8cc:
 
     # sill "In Zan, regular citizens are only allowed to own common sex slaves. Owning sex slaves of a higher rank requires a suitable brothel license. As you unlock better licenses, you will be able to upgrade your girls' rank further."
-    sill "在泽恩,普通公民只允许拥有普通等级的性奴。拥有更高等级的性奴需要合适的青楼许可证。随着你解锁更好的许可证,你就能进一步提升女孩的等级。"
+    sill "在泽恩,普通公民只允许拥有普通等级的性奴。拥有更高等级的性奴需要对应的青楼营业执照。随着你解锁更高级的营业执照,你才能进一步提升女孩的等级。"
 
 # game/BKhelp.rpy:1819
 translate schinese help_rank_introduction_6896bafd:
 
     # sill "Common slaves are known as rank 'C'. Better sex slaves can reach rank 'B', 'A', then 'S' for the most special sex slaves. Some say there is a even higher rank, accessible only to the most legendary sex slaves... But if it exists, it is a well-kept secret."
-    sill "普通奴隶被称为'C'等。更优秀的性奴可达到'B'、'A'等,最高为'S'等。有人说还有更高的等级,只有最传奇的性奴才能拥有...但如果真的存在,那是个秘密。"
+    sill "普通奴隶被称为'C'阶。更优秀的性奴可达到'B'、'A'阶,最高为'S'阶。有人说还有更高的等级,只有最传奇的性奴才能拥有...但如果真的存在,那也是不传之秘。"
 
 # game/BKhelp.rpy:1822
 translate schinese help_rank_introduction_30a168db:
 
     # sill "Reaching a new rank is difficult. First, a girl must have reached the {b}maximum level{/b} for her rank (for rank 'C', she must be level 5). She must also have a high enough {b}reputation{/b} with her customers."
-    sill "晋升新等级很困难。首先,女孩必须达到自身{b}最高等级{/b}(对于'C'等,必须达到5级)。她还需要在顾客中拥有足够高的{b}声望{/b}。"
+    sill "晋升阶级十分困难。首先,女孩必须达到自身的{b}等级上限{/b}(例如'C'阶,必须达到5级)。她还需要在顾客中拥有足够高的{b}声望{/b}。"
 
 # game/BKhelp.rpy:1825
 translate schinese help_rank_introduction_8f8ee891:
 
     # sill "Girls can earn reputation when performing well with customers, and when accomplishing special quests."
-    sill "女孩可通过与顾客出色的表现以及完成特殊任务来获得声望。"
+    sill "女孩可以通过服务中出色的表现以及完成特殊任务来获得声望。"
 
 # game/BKhelp.rpy:1827
 translate schinese help_rank_introduction_48fe6358:
 
     # sill "A higher rank allows you to train a girl's stats and job skills further, increase her level cap, and affects many other aspects of the game."
-    sill "等级越高,你就能进一步训练女孩的属性和工作技能,提高她们的等级上限,并影响游戏的许多其他方面。"
+    sill "阶级提升后,你将可以进一步提升她们的属性和职业等级,提高她们的等级上限,并影响游戏的许多其他方面。"
 
 # game/BKhelp.rpy:1829
 translate schinese help_rank_introduction_9c2c4486:
 
     # sill "But ranking up costs money, and higher rank girls are also more expensive to maintain. They are also more fickle: all this glory is getting to their head."
-    sill "但是提升等级需要金钱,维持更高等级的女孩也更加昂贵。她们也更加善变:这种荣耀已经冲昏了她们的头脑。"
+    sill "但是提升阶级需要花钱,阶级高的女孩保养费也更贵。她们也更加善变:荣耀已经冲昏了她们的头脑。"
 
 # game/BKhelp.rpy:1833
 translate schinese help_rank_introduction_a7b662e2:
 
     # sill "With your current license, you can train girls up to rank [rk]."
-    sill "根据您目前的营业执照,您可以将女孩训练至[rk]阶级。"
+    sill "根据您目前的营业执照,您可以将女孩训练至[rk]阶。"
 
 # game/BKhelp.rpy:1841
 translate schinese help_farm_question_4a71d5b9:
@@ -1762,7 +1762,7 @@ translate schinese help_farm_question_4a71d5b9:
 translate schinese help_farm_5c3737c1:
 
     # gizel normal "The 'farm' is the unoriginal name you stupid humans give this place."
-    gizel normal "所谓的'农场'是你们这些愚蠢的人类给这个地方起的乏味名字。"
+    gizel normal "所谓的'农场'是你们这些愚蠢的人类给这个地方起的愚蠢名字。"
 
 # game/BKhelp.rpy:1853
 translate schinese help_farm_9b6a2942:
@@ -2538,7 +2538,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1292
     old "Tell me about the Carpenter's Wagon and Customer options"
-    new "告诉我关于工匠改造和客户选项的信息"
+    new "告诉我关于工匠改造和经营策略的信息"
 
     # game/BKhelp.rpy:1377
     old "Tell me about..."

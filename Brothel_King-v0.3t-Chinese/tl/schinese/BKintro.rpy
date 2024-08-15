@@ -1480,7 +1480,7 @@ translate schinese resume_intro3_f7573d65:
 translate schinese resume_intro3_583cdedb:
 
     # gio "They're always acting all high and mighty during the day..."
-    gio "他们白天总是表现得十分端庄优雅…"
+    gio "他们白天总是表现得十分端庄优雅..."
 
 # game/BKintro.rpy:1076
 translate schinese resume_intro3_ba7fbcb4:

@@ -1846,7 +1846,7 @@ init -2 python:
             # Get random comment
 
             if self.base_rating == 0:
-                comment = rand_choice([__("我来这里是为了什么。"), __("我根本就没有参加。"), __("多么可耻的事情。我在这里浪费了很多时间。"), __("没有人给我服务。简直是浪费时间……")])
+                comment = rand_choice([__("我来这里是为了什么。"), __("我根本就没有参加。"), __("多么可耻的事情。我在这里浪费了很多时间。"), __("没有人给我服务。简直是浪费时间......")])
 
                 if chg < 0:
                     comment = event_color["bad"] % comment
@@ -1864,7 +1864,7 @@ init -2 python:
                     pos_comments += [__("我得到一些娱乐。"), __("我在等待中得到了乐趣。"), __("一个女孩为我表演。")]
                     neg_comments.append(__("这位艺人本可以演得更好。"))
                 else:
-                    neg_comments += [__("没有什么娱乐活动。"), __("我在等待时感到很无聊。"), __("没有娱乐,烦人……")]
+                    neg_comments += [__("没有什么娱乐活动。"), __("我在等待时感到很无聊。"), __("没有娱乐,烦人......")]
 
                 if self.service_dict["laid"] >= 2:
                     pos_comments.append(__("性爱真的很赞。"))
@@ -2846,7 +2846,7 @@ init -2 python:
                 if self.pic_index < 1:
                     self.pic_index = 7
 
-            debug_notify("循环中……" + str(self.pic_index))
+            debug_notify("循环中......" + str(self.pic_index))
 
             self.pic = self.get_pic(config.screen_width, int(config.screen_height*0.8))
 
@@ -3954,7 +3954,7 @@ init -2 python:
 
             if self.type == "reroll":
                 if text1:
-                    text1 += "再掷一次…… "
+                    text1 += "再掷一次...... "
                 else:
                     text1 += __("掷骰子")
 
