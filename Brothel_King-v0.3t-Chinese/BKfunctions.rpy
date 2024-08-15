@@ -2555,7 +2555,7 @@ init -3 python:
                 else:
 
                     if d == 1: # Obedience
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她 ") + __(s_des[s_act]) + "。"
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她") + __(s_des[s_act]) + "。"
 
                         r =  girl.get_stat("obedience") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2565,7 +2565,7 @@ init -3 python:
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += __("\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用 ") + __(s_des[s_act]) + " 来代替。{/color}"
+                                text1 += __("\n{color=[c_green]}由于她是一个处女，她温和地拒绝了客户的要求，并同意用") + __(s_des[s_act]) + "来代替。{/color}"
                             else:
                                 text1 += __("\n{color=[c_green]}她顺从地接受了客户的要求。{/color}")
 
@@ -2587,14 +2587,14 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位客户整晚都在和 ") + girl.name + __(" 调情。他试图让她 ") + __(s_des[s_act]) + "。"
+                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位客户整晚都在和") + girl.name + __(" 调情。他试图让她") + __(s_des[s_act]) + "。"
 
                         r = girl.get_stat("libido") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
                         if r > 0:
                             if girl.has_trait("Virgin") and s_act == "sex":
                                 s_act = weighted_choice([("service", 4), ("anal", 2), ("fetish", 1)])
-                                text1 += __("\n{color=[c_green]}为了保护她的童贞，她淫荡地同意 ") + __(s_des[s_act]) + __(" 来代替。{/color}")
+                                text1 += __("\n{color=[c_green]}为了保护她的童贞，她淫荡地同意") + __(s_des[s_act]) + __(" 来代替。{/color}")
                             else:
                                 text1 += __("\n{color=[c_green]}她觉得自己欲火中烧，而且喜欢这个客户，所以她同意了。{/color}")
                             extra_changes.append(("libido", girl.change_stat("libido", dice(3), silent=True)))

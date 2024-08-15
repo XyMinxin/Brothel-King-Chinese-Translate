@@ -3618,13 +3618,13 @@ translate schinese slave_story3_f24fbd54:
 translate schinese slave_story3_86b9e2f9_1:
 
     # girl.char "Whenever I think about it, I get so wet... I wish I had another chance... To do it in public with a stallion, with all eyes on me..."
-    girl.char "每当我想到它，我就浑身湿透……我希望我还有一次机会……在众目睽睽之下，和一匹种马在公共场合做爱..."
+    girl.char "每当我想到它，我就浑身湿透......我希望我还有一次机会......在众目睽睽之下，和一匹种马在公共场合做爱..."
 
 # game/BKinteractions.rpy:4152
 translate schinese slave_story3_1720783e_1:
 
     # girl.char "I have learnt that the son of a bitch who led that raiding party is in town right now... Spending the spoils of his misdeeds. If I could, I would kill him myself, but..."
-    girl.char "我听说那个领导突袭队的狗娘养的现在就在城里…挥霍他的战利品。如果可以，我会亲手杀了他，但是..."
+    girl.char "我听说那个领导突袭队的狗娘养的现在就在城里...挥霍他的战利品。如果可以，我会亲手杀了他，但是..."
 
 # game/BKinteractions.rpy:4156
 translate schinese slave_story3_6f5fc28f:
@@ -4808,7 +4808,7 @@ translate schinese slave_story5_a003ee03:
 translate schinese slave_story5_b0c1b103:
 
     # girl.char "We begged him, eventually we even told him to take all the jewels and let us be... But he just laughed it off, and his men took us away."
-    girl.char "我们恳求他，最后我们甚至告诉他拿走所有的珠宝，让我们自己……但他只是一笑置之，他的人就把我们带走了。"
+    girl.char "我们恳求他，最后我们甚至告诉他拿走所有的珠宝，让我们自己......但他只是一笑置之，他的人就把我们带走了。"
 
 # game/BKinteractions.rpy:4670
 translate schinese slave_story5_3a9e8f2b:
@@ -5150,7 +5150,7 @@ translate schinese slave_story5_e5196964_1:
 translate schinese slave_story5_43358bbd_1:
 
     # girl.char "I can't make up for what I did, I know... But at least I could set up an altar for him at the Cathedra. Maybe then, Arios could shine his Light on him, and on his loved ones..."
-    girl.char "我无法弥补我所做的，我知道…但至少我可以在大教堂为他建一个祭坛。也许到那时，阿里奥斯就能把他的光照耀在他身上，照耀在他所爱的人身上..."
+    girl.char "我无法弥补我所做的，我知道...但至少我可以在大教堂为他建一个祭坛。也许到那时，阿里奥斯就能把他的光照耀在他身上，照耀在他所爱的人身上..."
 
 # game/BKinteractions.rpy:4827
 translate schinese slave_story6_8a06ad2f:
@@ -5619,7 +5619,7 @@ translate schinese slave_story6_b0ecb5e5:
 translate schinese slave_story6_cf985093:
 
     # girl.char "The wedding was a sumptuous affair... Gallant people from all over Xeros came to see us wed, we held a feast for 3000 people... They had an orchestra playing, with crossbows and all, it was all good fun..."
-    girl.char "The wedding was a sumptuous affair... Gallant people from all over Xeros came to see us wed, we held a feast for 3000 people... They had an orchestra playing, with crossbows and all, it was all good fun..."
+    girl.char "婚礼办得很奢华。来自克塞罗斯各地的勇敢的人们来观看我们的婚礼，我们举行了3000人的盛宴...他们请了一个管弦乐队演奏，带着弩什么的，一切都很有趣..."
 
 # game/BKinteractions.rpy:4950
 translate schinese slave_story6_ce431bd8:
@@ -5637,7 +5637,7 @@ translate schinese slave_story6_f3c4c7b7:
 translate schinese slave_story6_f8253b1f:
 
     # girl.char "That night in our chamber, I was very surprised and confused when I saw my new husband naked for the first time, and he ordered me to get undressed."
-    girl.char "That night in our chamber, I was very surprised and confused when I saw my new husband naked for the first time, and he ordered me to get undressed."
+    girl.char "那天晚上，在我们的房间里，当我第一次看到我的新婚丈夫裸体时，我感到非常惊讶和困惑，他命令我脱掉衣服。"
 
 # game/BKinteractions.rpy:4954
 translate schinese slave_story6_a30d41de:
@@ -7597,13 +7597,13 @@ translate schinese slave_story8_cd1403d4:
 translate schinese slave_story8_0cac5be6:
 
     # girl.char "At first, I tried to join the local magic guild. But I had no formal training, no connections... They just laughed at me."
-    girl.char "起初，我试图加入当地的魔法公会。但我没有受过正式培训，没有人脉……他们只是嘲笑我。"
+    girl.char "起初，我试图加入当地的魔法公会。但我没有受过正式培训，没有人脉......他们只是嘲笑我。"
 
 # game/BKinteractions.rpy:5680
 translate schinese slave_story8_7fe6c9ed:
 
     # girl.char "But I was stubborn, so every day I went back, and begged... And every day, I was kicked out."
-    girl.char "但我很固执，所以每天我都回去，乞求……每天，我都被赶出去。"
+    girl.char "但我很固执，所以每天我都回去，乞求......每天，我都被赶出去。"
 
 # game/BKinteractions.rpy:5682
 translate schinese slave_story8_11578a16:
@@ -8282,13 +8282,13 @@ translate schinese slave_story8_a95d12af:
 translate schinese slave_story8_90069e2b_1:
 
     # girl.char "Oh, Master, I'm so afraid... Please help me!"
-    girl.char "哦，主人，我很害怕……请帮帮我!"
+    girl.char "哦，主人，我很害怕......请帮帮我!"
 
 # game/BKinteractions.rpy:5937
 translate schinese slave_story8_e5ef866b_1:
 
     # girl.char "I left my [girl.story_guardian] a long time ago, without saying anything... Everyone must be worried sick about me."
-    girl.char "很久以前我抛弃了[girl.story_guardian],我没有告诉任何人……大家一定都很担心我。"
+    girl.char "很久以前我抛弃了[girl.story_guardian],我没有告诉任何人......大家一定都很担心我。"
 
 # game/BKinteractions.rpy:5938
 translate schinese slave_story8_81c5ed68_1:
@@ -8300,7 +8300,7 @@ translate schinese slave_story8_81c5ed68_1:
 translate schinese slave_story8_66eb0c35_1:
 
     # girl.char "I never felt... I never found such bliss, than when I was being raped by that demon... I wish this could happen again..."
-    girl.char "我从来没有感觉到……当我被那个恶魔强奸时，我从来没有找到过这样的幸福……我希望这种事能再次发生..."
+    girl.char "我从来没有感觉到......当我被那个恶魔强奸时，我从来没有找到过这样的幸福......我希望这种事能再次发生..."
 
 # game/BKinteractions.rpy:5946
 translate schinese slave_story8_a95d12af_1:
@@ -8474,7 +8474,7 @@ translate schinese slave_story_help_88d4be98:
 translate schinese slave_story_help_8c997c00_1:
 
     # you "I know the kind of creature that you speak of... I might be able to 'arrange' a private meeting with one of them."
-    you "我知道你所说的那种生物……我也许可以“安排”与他们中的一位私下会面。"
+    you "我知道你所说的那种生物......我也许可以“安排”与他们中的一位私下会面。"
 
 # game/BKinteractions.rpy:6075
 translate schinese slave_story_help_0c2ae388_1:
@@ -9218,7 +9218,7 @@ translate schinese slave_story_help_981d5f8b:
 translate schinese slave_story_help_be9afa97_1:
 
     # girl.char "You really will? That's... Unexpected. I owe you thanks."
-    girl.char "你真的会吗?这是……意想不到的。我应该谢谢你。"
+    girl.char "你真的会吗?这是......意想不到的。我应该谢谢你。"
 
 # game/BKinteractions.rpy:6575
 translate schinese slave_story_help_0d1c8b3d_1:

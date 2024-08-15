@@ -5029,7 +5029,7 @@ label slave_story6(girl):
         girl.char "That night in our chamber, I was very surprised and confused when I saw my new husband naked for the first time, and he ordered me to get undressed."
         girl.char "His old member was limp, but after he sniffed a certain powder, it started growing long and hard. I was shocked to see the size of it as he started advancing towards me."
         girl.char "He started talking to me with an authoritarian tone, a long way from the affable front he was putting up earlier with my family. Then, he ordered me to lay on the bed and spread my legs."
-
+#汉化标签，纯爱战士要发力了！#
         if girl.has_trait("Virgin"):
             girl.char "Everything was so new and confusing to me, that I didn't even realize something was strange when instead of fucking me from the front, he pushed his dick inside my tight anus."
         else:
@@ -5041,7 +5041,7 @@ label slave_story6(girl):
 
         girl.char "But the future only brought me more of the same..."
         girl.char "Every night, the old lecher would take his secret spice, then fuck me mercilessly until he came inside."
-
+#汉化标签，纯爱战士要发力了！#
         if girl.has_trait("Virgin"):
             girl.char "For some reason, he would only fuck my ass. It seemed to be the only thing he really cared about."
         else:
@@ -5096,7 +5096,7 @@ label slave_story6(girl):
         girl.char "He said that I was a filthy slut who had defiled his noble bed, unworthy of the name of wife..."
         girl.char "... and that he was repudiating me then and there, as was his right, thereby appropriating all my titles and belongings."
         girl.char "Further, he said, I had to be punished for my betrayal."
-
+#汉化标签，纯爱战士要发力了！#
         if girl.free:
             girl.char "That's when he asked his private guards to move forward."
             girl.char "He ordered them... to fuck me, in front of everyone."
@@ -5908,7 +5908,7 @@ label slave_story8(girl):
         you "How... Unexpected..."
 
         girl.char "It seemed it had only one thing in mind: fuck my brains out!"
-
+#汉化标签，纯爱战士要发力了！#
         if girl.has_trait("Virgin"):
             girl.char "I don't know why though, but it was only interested in one thing: my ass..."
         else:

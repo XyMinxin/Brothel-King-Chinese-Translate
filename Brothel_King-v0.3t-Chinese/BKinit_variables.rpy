@@ -1361,11 +1361,11 @@ init python:
                             }
 
     experienced_description = {
-                               "very experienced" : "御人无数",
-                               "experienced" : "身经百战",
-                               "average" : "初窥门径",
-                               "inexperienced" : "初尝禁果",
-                               "very inexperienced" : "未经人事",
+                               "very experienced" : "训练有素",
+                               "experienced" : "高级",
+                               "average" : "中级",
+                               "inexperienced" : "初级",
+                               "very inexperienced" : "未经训练",
                                "very experienced ttip" : "{size=-1}{color=[c_orange]}她拥有多年的性奴隶经验，经手过几任主人，接受了各式各样的调教训练。{/color}",
                                "experienced ttip" : "{size=-1}{color=[c_green]}她已经做了好几个月的性奴，并接受了各种形式的培训。{/color}",
                                "average ttip" : "{size=-1}{color=[c_yellow]}她已经做了几个月的性奴隶，并接受了一些性训练。{/color}",
