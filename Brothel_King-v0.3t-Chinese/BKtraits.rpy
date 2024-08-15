@@ -107,7 +107,7 @@ label init_traits():
                       Trait("Sensual", verb = "be", eff1 = Effect("boost", "service jp gains", 0.1), eff2 = Effect("boost", "sex jp gains", 0.1), eff3 = Effect("personality", "pervert"), archetype="The Escort"),
                       Trait("Kinky", verb = "be", eff1 = Effect("boost", "anal jp gains", 0.1), eff2 = Effect("boost", "fetish jp gains", 0.1), eff3 = Effect("personality", "masochist"), archetype="The Player"),
                       Trait("Pervert", verb = "be a", eff1 = Effect("change", "sex act requirements", -10), eff2 = Effect("personality", "pervert"), archetype="The Slut"),
-                      Trait("Thief", verb = "be a", eff1 = Effect("special", "pickpocket", 1), archetype="The Fox", base_description = "她可能在引诱客户时从客户那里偷点钱。声誉可能会受到影响。"),
+                      Trait("Thief", verb = "be a", eff1 = Effect("special", "pickpocket", 1), archetype="The Fox", base_description = "她可能在引诱客户时从客户那里偷点钱。声望可能会受到影响。"),
                       Trait("Sane", verb = "be", eff1 = Effect("change", "sanity loss", -1), archetype="The Courtesan"),
                       Trait("Trusting", verb = "be", eff1 = Effect("change", "fear per day", -1, chance=0.25), archetype="The Maid"),
                       Trait("Loving", verb = "be", eff1 = Effect("change", "love per day", 1, chance=0.25), archetype="The Bride"),

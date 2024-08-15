@@ -936,13 +936,13 @@ label c1_guards_visit:
     guard "Well, this is all the proof we need. Serious violations of city edicts all over the place."
 
     if MC.playerclass == "战士":
-            $ text1 = "illegal weapon possession"
+            $ text1 = "非法持有武器"
 
     elif MC.playerclass == "法师":
-            $ text1 = "possession of hazardous magical drugs"
+            $ text1 = "私藏危险魔法药物"
 
     elif MC.playerclass == "奸商":
-            $ text1 = "illegally importing an exotic pet"
+            $ text1 = "非法进口异国宠物"
 
     show black as black2 with fade
 
@@ -5227,7 +5227,7 @@ label c1_captain_meeting:
 
             "That's the spirit! Let no one get between you and your sweet revenge. Let's go!"
 
-        "...to lie and manipulate people":
+        "...欺骗和操纵别人":
             $ renpy.block_rollback()
             $ NPC_renza.love -= 2
             $ MC.evil += 1

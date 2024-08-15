@@ -934,7 +934,7 @@ init -3 python:
 
             if nb:
                 if stat in ("rep", "reputation"):
-                    text_changes += __("声誉: ") + plus_text(nb, color_scheme="rep", decimals=1)
+                    text_changes += __("声望: ") + plus_text(nb, color_scheme="rep", decimals=1)
 
                 elif stat == "gold":
                     text_changes += __("金币: {image=img_gold} ") + plus_text(round_int(nb), color_scheme="gold")
@@ -2379,7 +2379,7 @@ init -3 python:
         # text_changes += stat_increase_dict["jp"] % str(round_int(jp_gains[girls[0]]))
 
             if rep_gains[girl] > 0:
-                change_log.add("{color=[c_softpurple]}声望{/color}：%i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "女孩声誉")
+                change_log.add("{color=[c_softpurple]}声望{/color}：%i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "女孩声望")
 
             change_log = get_log_changes(girl, change_log, stat_gains[girl], act)
 

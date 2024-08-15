@@ -363,7 +363,7 @@ label sill_checks(): # Returns False if the player doesn't proceed with 'end day
     return True
 
 
-label receive_item(it, msg="You have received %s.", use_article=True, equip=False, use_sound=True): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+label receive_item(it, msg="你获得了%s。", use_article=True, equip=False, use_sound=True): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
 
     $ MC.add_item(it, equip, use_sound=use_sound)
 
@@ -2059,7 +2059,7 @@ label visit_exchange():
             if not MC.has_resource(source, source_nb):
                 bast "You do not have [source_nb] [source] to buy this."
 
-            elif renpy.call_screen("yes_no", "Are you sure you want to exchange [source_nb] [source] for [target_nb] [target]?"):
+            elif renpy.call_screen("yes_no", "你确定要用[source_nb] [source]换取[target_nb] [target]吗?"):
                 $ x = 0 # this is for Bast events
                 if source == "gold":
                     $ MC.gold -= source_nb

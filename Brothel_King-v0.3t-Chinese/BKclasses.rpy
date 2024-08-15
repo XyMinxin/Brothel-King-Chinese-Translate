@@ -2221,8 +2221,8 @@ init -2 python:
 
             elif not furn.can_build():
                 if furn.built:
-                    renpy.say(carpenter, "你已经有了。我觉得你不需要第二个了。")
-                renpy.say(carpenter, "恐怕现在还造不出来。你需要一个更大的地方。")
+                    renpy.say(carpenter, "你已经有一个了。我觉得你不需要第二个了。")
+                renpy.say(carpenter, "恐怕现在没办法放下它。你需要一个更大的场地。")
                 return False
 
             for resource, amount in furn.cost:
@@ -2230,8 +2230,8 @@ init -2 python:
                     renpy.say(carpenter, "听着，老大，在我开始工作之前你得有足够的资源。")
                     break
             else:
-                renpy.say(carpenter, __("好的，看样子你已经拿到材料了，交给我。我马上就为 ") + __(furn.name) + __(" 开始准备。"))
-                if renpy.call_screen("yes_no", __("您确定要修建 ") + __(furn.name) + __("吗？这将花费") + __(furn.describe_cost()) + "。"):
+                renpy.say(carpenter, __("好的，看来你已经准备好材料了，交给我吧。我马上开始准备") + __(furn.name) + __("的工作。"))
+                if renpy.call_screen("yes_no", __("您确定要修建") + __(furn.name) + __("吗？这将消耗") + __(furn.describe_cost()) + "。"):
                     MC.spend_resources(furn.cost)
                     renpy.block_rollback()
                     furn.start_building()
@@ -3866,7 +3866,7 @@ init -2 python:
                     text1 = "能说服不情愿的顾客接受另一种性行为"
 
                 elif target == "pickpocket":
-                    text1 = "有机会从顾客那里偷取额外10%的小费，如果被抓住会降低声誉"
+                    text1 = "有机会从顾客那里偷取额外10%的小费，如果被抓住会降低声望"
 
                 elif target == "random item":
                     text1 = "顾客小概率“遗漏”随机物品"
@@ -4678,7 +4678,7 @@ init -2 python:
                 self.update_cust_limit(True)
 
             elif brothel.free_room:
-                if renpy.call_screen("yes_no", __("你确定要选 ") + __(self.name) + __(" 作为你的无需施工费的营业场所吗?")):
+                if renpy.call_screen("yes_no", __("你确定要选") + __(self.name) + __("作为你的初始营业场所吗?")):
                     renpy.play(s_spell, "sound")
                     self.level = 1
                     self.update_cust_limit()
@@ -4688,7 +4688,7 @@ init -2 python:
                 renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间。")
 
 
-            elif renpy.call_screen("yes_no", __("你想要建造一个 ") + __(self.name) + __(" 吗？这将花费 ") + str(self.get_price()) + " 金币"):
+            elif renpy.call_screen("yes_no", __("你想要建造一个") + __(self.name) + __(" 吗？这将花费") + str(self.get_price()) + "金币"):
                 MC.gold -= self.get_price()
                 brothel.total_value += self.get_price()
                 renpy.play(s_gold, "sound")
@@ -4703,7 +4703,7 @@ init -2 python:
                 self.update_cust_limit(True)
             elif self.get_price() >= MC.gold:
                 renpy.say(sill, "对不起主人, 你没有足够多的钱来升级这个房间。")
-            elif renpy.call_screen("yes_no", __("你想要升级 ") + __(self.name) + __(" 吗？这将花费 ") + str(self.get_price()) + " 金币"):
+            elif renpy.call_screen("yes_no", __("你想要升级") + __(self.name) + __("吗？这将花费") + str(self.get_price()) + "金币"):
                 MC.gold -= self.get_price()
                 brothel.total_value += self.get_price()
                 renpy.play(s_gold, "sound")
@@ -4732,27 +4732,27 @@ init -2 python:
         def get_description(self):
             if self.type == "master":
                 if self.level > 1:
-                    desc = "可以同时训练 {b}" + str(self.level) + " 个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b} 。"
+                    desc = "可以同时训练 {b}" + str(self.level) + "个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b} 。"
                 elif self.level == 1:
-                    desc = "可以训练 {b}1个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b}。"
+                    desc = "可以训练{b}1个女孩{/b}。女孩每晚都可以在你的私人卧室接受 {b}免费的训练{/b}。"
                 else:
                     desc = "你的私人卧室。现在还无法容纳更多女孩。"
 
                 if self.level < brothel.rank:
-                    desc += " 花费 {b}" + str(master_bedrooms[self.level+1].cost) + " 金币{/b} 来升级你的卧室。"
+                    desc += "花费 {b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}来升级你的卧室。"
                 elif self.level == 5:
-                    desc += " {i}你无法继续升级你的私人卧室了.{/i}"
+                    desc += "{i}你无法继续升级你的私人卧室了。{/i}"
 
                 return desc
 
             if brothel_firstvisit:
-                return "建造一个 {b}" + self.name + "{/b} 来提供一个 {b}" + girl_related_dict[self.job] + "{/b}岗位。"
+                return "建造一个{b}" + self.name + "{/b}来提供一个{b}" + girl_related_dict[self.job] + "{/b}岗位。"
             elif self.level == 0:
-                return "建造一个 {b}" + self.name + "{/b} 这将花费 {b}" + str(self.get_price()) + " 金币{/b}。"
+                return "建造一个{b}" + self.name + "{/b}这将花费{b}" + str(self.get_price()) + "金币{/b}。"
             elif self.level < district.rank:
-                return "  {b}" + self.name + "{/b} 每晚可以最多容纳" + str(self.cust_limit) + "位顾客。" + "花费 {b}" + str(self.get_price()) + " 金币{/b}扩建 "+ self.name + "才能接待更多人。 "
+                return "  {b}" + self.name + "{/b}每晚最多接待" + str(self.cust_limit) + "位顾客。" + "花费 {b}" + str(self.get_price()) + "金币{/b}扩建"+ self.name + "才能接待更多人。 "
             else:
-                return "  {b}" + self.name + "{/b} 每晚可以最多容纳" + str(self.cust_limit) + "位顾客。"
+                return "  {b}" + self.name + "{/b}每晚最多接待" + str(self.cust_limit) + "位顾客。"
 
         def update_cust_limit(self, silent=False): # Returns value if changed
             _old = self.cust_limit
@@ -4766,7 +4766,7 @@ init -2 python:
 
             if self.cust_limit != _old:
                 if not silent:
-                    renpy.say(sill, "现在最多有 " + str(self.cust_limit) + "名顾客可以在 " + self.name + "接受服务. {w=1.0}{nw}")
+                    renpy.say(sill, "现在最多有" + str(self.cust_limit) + "名顾客可以在" + self.name + "接受服务. {w=1.0}{nw}")
 
             return self.cust_limit - _old
 

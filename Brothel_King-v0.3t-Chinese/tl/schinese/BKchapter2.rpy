@@ -148,7 +148,7 @@ translate schinese sewer_girl_returns_menu_e6e14aff:
 translate schinese sewer_girl_returns_menu_aa4fb3f5:
 
     # "You have earned a lot of prestige."
-    "你获得了很多声誉。"
+    "你获得了很多声望。"
 
 # game/BKchapter2.rpy:120
 translate schinese sewer_girl_returns_menu_c14e3f7a:
@@ -178,7 +178,7 @@ translate schinese sewer_girl_returns_menu_7a924cd9:
 translate schinese sewer_girl_returns_menu_d9b70e3e:
 
     # "You have received 500 gold. You have earned a good amount of prestige."
-    "你获得了 500 金币和一些声誉。"
+    "你获得了 500 金币和一些声望。"
 
 # game/BKchapter2.rpy:144
 translate schinese sewer_girl_returns_menu_2bf10dd6:
@@ -736,7 +736,7 @@ translate schinese c2_intro_65a0d629:
 translate schinese c2_intro_5bb524ae:
 
     # katryn "My, my, Gurigura... You're such a bumpkin. This is just like any city..."
-    katryn "天哪,古丽古拉....你真是个乡巴佬。每个城市不都有这样的地方吗...."
+    katryn "天哪,古莉古拉....你真是个乡巴佬。每个城市不都有这样的地方吗...."
 
 # game/BKchapter2.rpy:462
 translate schinese c2_intro_107e2cfd:
@@ -1366,7 +1366,7 @@ translate schinese c2_intro_28958bea:
 translate schinese c2_princess_letter_4833dc91:
 
     # "Late in the morning, you come back to [brothel.name] from [activity] when you hear a sudden scream."
-    "接近中午,你从[activity]回到[brothel.name]时,突然听到一声尖叫。"
+    "接近中午的时候,你结束了[activity]后走进[brothel.name]时,突然听到一声尖叫。"
 
 # game/BKchapter2.rpy:881
 translate schinese c2_princess_letter_d143ae00:
@@ -3676,7 +3676,7 @@ translate schinese kurohime_conversation_menu_dae22a1b:
 translate schinese kurohime_conversation_menu_ff1ff38a:
 
     # kuro "If this comes out, it will be another stain on my father's reputation, another proof that he is weak. I cannot let that happen."
-    kuro "如果案件被曝光,将会再次损害我父王的声誉,证明他软弱无能。我不能让这种事发生。"
+    kuro "如果案件被曝光,将会再次损害我父王的声望,证明他软弱无能。我不能让这种事发生。"
 
 # game/BKchapter2.rpy:2007
 translate schinese kurohime_conversation_menu_be88649c:
@@ -5502,7 +5502,7 @@ translate schinese c2_suzume_forest1_0e9c8de4:
 translate schinese c2_suzume_forest1_c6ea39ad:
 
     # suzume "Oh, Mister! I think you found something good to plug it..."
-    suzume "哦,先生!我觉得你找到了一个很好的塞住它的东西..."
+    suzume "哦,先生!我觉得你找到了一个很好的塞子..."
 
 # game/BKchapter2.rpy:3042
 translate schinese c2_suzume_forest1_8ca533d8:

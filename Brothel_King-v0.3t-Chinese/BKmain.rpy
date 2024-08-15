@@ -280,14 +280,14 @@ label visit_location():
                             renpy.call("city_" + ev_type)
 
                 if district.rank >= 2 and renpy.random.random() <= 0.12: # 8% chance of getting a resource, 4% Cimerian
-                    $ renpy.say("", "While exploring the city, you found something useful.")
+                    $ renpy.say("", "在探索城市的过程中，你发现了一些有用的东西。")
                     $ d = dice(6)
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("席米亚科技产物")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
+                            call receive_item(search_items("席米亚科技产物")[0], msg="你获得了一个稀有的%s。", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("席米亚科技废料")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("席米亚科技废料")[0], msg="你获得了一块%s。", use_article=False) from _call_receive_item_1
 
                     else:
                         $ MC.gain_resource(number=dice(3), random=True)

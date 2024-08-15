@@ -8410,7 +8410,7 @@ screen auction_brothel(name, price):
         spacing 20
 
         add brothel.get_pic(*res_tb(320)) xalign 0.5
-        use increment_counter(0, price, _caption = __("Sold " + name + " for {b}%s{/b} {image=img_gold}"), _color = c_emerald)
+        use increment_counter(0, price, _caption = __("转让" + name + "获得了{b}%s{/b} {image=img_gold}"), _color = c_emerald)
         # text __("Sold %s for {b}%s{/b} {image=img_gold}") % (name, '{:,}'.format(price)) color c_emerald size res_font(16) xalign 0.5 yalign 0.5
 
 

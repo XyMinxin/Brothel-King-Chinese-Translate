@@ -2302,7 +2302,7 @@ translate schinese c3_hint_49e518c2:
 translate schinese c3_hint_43dba833:
 
     # carpenter "Well, sure... Get this: the Xotar Prison was not always a jail. In fact, it's built on top of a much, much older building."
-    carpenter "当然有...你听好:萨特监狱并不仅仅是个监狱。事实上,它建在一个更古老的建筑之上。"
+    carpenter "当然有...你听好:黑水监狱并不仅仅是个监狱。事实上,它建在一个更古老的建筑之上。"
 
 # game/BKchapter3.rpy:1135
 translate schinese c3_hint_17647e76:
@@ -2320,7 +2320,7 @@ translate schinese c3_hint_86dc7068:
 translate schinese c3_hint_957aebe9:
 
     # carpenter "No one knows that, Boss. The place is real {i}ancient{/i}. Summerians built it, or sumethin'."
-    carpenter "谁知道呢,老板。那地方真的 {i}太古老{/i} 了。可能是苏美尔人建的,或者别的什么人。"
+    carpenter "谁知道呢,老板。那地方真的 {i}太古老{/i} 了。可能是席米亚人建的,或者别的什么人。"
 
 # game/BKchapter3.rpy:1141
 translate schinese c3_hint_bc8a65cc:

@@ -138,7 +138,7 @@ translate schinese strings:
 
         # game/BKstart.rpy:478
     old "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."
-    new "贫民窟位于赞城的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神莎莉娅。"
+    new "贫民窟位于泽恩的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神莎莉娅。"
 
     # game/BKstart.rpy:478
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
@@ -146,7 +146,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:478
     old "The warehouse is the industrial part of Zan, where all kinds of craftsmen and day laborer come to look for work. Its streets are buzzing with trade and activities during the day, but dodgy at night."
-    new "城区是赞城的商业中心，各种各样的工匠和临时工都来这里找工作。白天，这里的街道上随处可见繁忙的贸易和活动，但到了晚上就变得危机四伏"
+    new "城区是泽恩的商业中心，各种各样的工匠和临时工都来这里找工作。白天，这里的街道上随处可见繁忙的贸易和活动，但到了晚上就变得危机四伏"
 
     # game/BKstart.rpy:478
     old "The gardens are where the magic-wielding locals gather to soak up mana after a long night of dangerous experiments. It is said some of those experiments occasionally escape..."
@@ -158,7 +158,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:478
     old "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware."
-    new "这里是赞城的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"# TODO: Translation updated at 2024-07-31 02:24
+    new "这里是泽恩的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"# TODO: Translation updated at 2024-07-31 02:24
 
 translate schinese strings:
 

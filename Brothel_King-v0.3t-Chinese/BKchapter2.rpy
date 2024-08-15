@@ -302,7 +302,7 @@ label c2_intro():
     # SHOPS #
 
     $ calendar.set_alarm(calendar.time+2, Event(label = "c2_princess_letter"))
-    $ game.set_task("Get started with your new brothel.", "story")
+    $ game.set_task("经营你的新青楼吧！", "story")
 
     scene black with fade
     show bg brothel1 at top with dissolve
@@ -868,11 +868,11 @@ label c2_princess_letter:
     with dissolve
 
     if MC.playerclass == "战士":
-        $ activity = "your early weapon training"
+        $ activity = "每日的晨练"
     elif MC.playerclass == "法师":
-        $ activity = "your usual meditation session"
+        $ activity = "日常的冥想"
     elif MC.playerclass == "奸商":
-        $ activity = "the daily farmer's market"
+        $ activity = "农贸市场的问价"
 
     "Late in the morning, you come back to [brothel.name] from [activity] when you hear a sudden scream."
 

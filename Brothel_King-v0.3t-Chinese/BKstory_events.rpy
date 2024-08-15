@@ -15348,7 +15348,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
+    $ text1 = season_text({"winter" : "以躲避冬日刺骨的寒风", "spring" : "以重温春日的愉悦心情", "summer" : "以躲避夏天的炎炎烈日", "fall" : ", 以躲开聒噪扰人的乌鸦"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 
@@ -15389,7 +15389,7 @@ label meet_carpenter():
 
     carpenter "He made me saw planks all day, and for what? It turns out he's making caskets for the prison guard. For the hangings!"
 
-    $ MC.say(["gd: That's terrible.", "ne: Well, that's unfortunate, but a job is a job, isn't it?", "ev: So what. What's your problem with that?"])
+    $ MC.say(["gd: 那太可怕了。", "ne: 那太不幸了，但工作就是工作，不是吗?", "ev: 那又怎么样呢。你有什么不满吗?"])
 
     carpenter "I won't be part of this! It's bad enough that the guard is harassing everyone and that justice is in the hands of corrupt puppets..."
 
@@ -15999,7 +15999,7 @@ label resource_exchange_menu():
             you "I see..."
 
             if MC.has_resource("wood", 5) and MC.has_resource("leather", 5) and MC.has_resource("dye", 5):
-                if renpy.call_screen("yes_no", "Do you want to get a basic builder license for 5 wood, 5 leather and 5 dye?"):
+                if renpy.call_screen("yes_no", "想获得初级建筑师执照吗，只要捐赠5块木材,5瓶染料和5张皮革就可以了。"):
                     $ MC.resources["wood"] -= 5
                     $ MC.resources["leather"] -= 5
                     $ MC.resources["dye"] -= 5
@@ -16064,7 +16064,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "想获得高级建筑师执照吗，只要捐赠5块大理石,5匹丝绸和5单位矿石就可以了。"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16087,7 +16087,7 @@ label new_builder_license():
                 bast "Yep. But diamond traders make the most money. Consider this an investment."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "想获得特级建筑师执照吗，只要捐赠2个钻石就可以了。"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16107,7 +16107,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "想获得高级建筑师执照吗，只要捐赠5块大理石,5匹丝绸和5单位矿石就可以了。"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16124,7 +16124,7 @@ label new_builder_license():
                 bast "It will cost you 2 diamonds. I don't wanna know how you get them..."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "想获得特级建筑师执照吗，只要捐赠2个钻石就可以了。"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16674,8 +16674,8 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "Love letter", message = "Dear Bill,\n\nI haven't slept or eaten since you've left me. I am so alone in this world.\nYou've left me with so many questions. Did you ever love me?\nI will be punished for what you did, but it's punishment I will gladly accept, because I love you. All I want is for you to give me a sign. I'll betray the Order if I have to. I'll steal for you if I must.\n\nDon't leave me, my love. I will do anything.",
-                          signature = "Yours forever, Bastia {font=[style.default.font]}{size=-18}")
+    call screen letter(header = "情  书 ", message = "亲爱的比尔\n\n你离开后我就茶不思饭不想。我在这个世界上是如此孤独。你给我留下了许多难题，你曾经爱过我吗?我会因为你的所作所为而受到惩罚，但我欣然接受，因为我爱你。我只想要你给我个提示。如果有必要，我可以违反合同。我还可以帮你偷东西。不要离开我，我的爱人。我愿意为你做任何事。",
+                          signature = "爱你的,巴斯特{font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
 
@@ -17595,7 +17595,7 @@ label meet_gurigura():
 
     gurigura "Here's a free sample! Enjoy!"
 
-    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg="Gurigura gives you a random %s from the open box.", use_article=False) from _call_receive_item_9
+    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg=" 古莉古拉从盒子里随便拿出一个%s给你。", use_article=False) from _call_receive_item_9
 
     you "(She's not going to make much money if she gives everything away for free...)"
 
@@ -18193,7 +18193,7 @@ label meet_giftgirl():
 
     giftgirl "Here, keep this. It's on the house. My gift to a new customer!"
 
-    call receive_item(get_rand_item(item_type=IT_Gift), "The woman gave you a free %s.", use_article=False) from _call_receive_item_13
+    call receive_item(get_rand_item(item_type=IT_Gift), "女孩送了你一个免费的%s。", use_article=False) from _call_receive_item_13
 
     $ exotic_emporium.action = True
     $ unlocked_shops.append(NPC_giftgirl)

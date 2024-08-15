@@ -205,7 +205,7 @@ init python:
                         Achievement("调教狂热", "让女孩进行皮绳愉虐 %s 次。", pic="ropes.webp", pic_path="items/toy/", target="perform fetish", level_nb=5, requirements={1 : 1, 2 : 10, 3 : 100, 4 : 1000, 5 : 10000}),
                         Achievement("双飞狂热", "让女孩进行双飞 %s 次。", pic="black dildo.webp", pic_path="items/toy/", target="perform bisexual", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 100, 5 : 250}),
                         Achievement("群交狂热", "让女孩进行群交 %s 次。", pic="beer keg.webp", pic_path="items/furniture/", target="perform group", level_nb=5, requirements={1 : 1, 2 : 5, 3 : 25, 4 : 100, 5 : 250}),
-                        Achievement("明日之星", "达到 %s 声誉.", pic="star.webp", pic_path="UI/", target="rep", level_nb=5, requirements={1 : 100, 2 : 1000, 3 : 5000, 4 : 10000, 5 : 30000}),
+                        Achievement("明日之星", "达到 %s 声望.", pic="star.webp", pic_path="UI/", target="rep", level_nb=5, requirements={1 : 100, 2 : 1000, 3 : 5000, 4 : 10000, 5 : 30000}),
                         Achievement("面面俱到", "在第 %s 章建造所有家具。", pic="steam jacuzzi.webp", pic_path="items/furniture/", target="furniture", level_nb=6, requirements={1 : 2, 2 : 3, 3 : 4, 4 : 5, 5 : 6, 6 : 7}),
                         Achievement("精益求精", "在第 %s 章建造所有升级。", pic="chapel.webp", pic_path="items/furniture/", target="upgrades", level_nb=7, requirements={1 : 1, 2 : 2, 3 : 3, 4 : 4, 5 : 5, 6 : 6, 7 : 7}),
                         Achievement("一尘不染", "在清洁上花费 %s 金币。", pic="broom.webp", pic_path="items/furniture/", target="gold clean", level_nb=5, requirements={1 : 250, 2 : 1000, 3 : 5000, 4 : 25000, 5 : 100000}),

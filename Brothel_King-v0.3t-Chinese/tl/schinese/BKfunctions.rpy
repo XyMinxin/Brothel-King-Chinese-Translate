@@ -4,8 +4,8 @@
 translate schinese strings:
 
     # game/BKfunctions.rpy:937
-    old "声誉: "
-    new "声誉: "
+    old "声望: "
+    new "声望: "
 
     # game/BKfunctions.rpy:940
     old "金币: {image=img_gold} "

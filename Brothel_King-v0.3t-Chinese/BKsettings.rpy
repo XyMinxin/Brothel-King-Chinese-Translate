@@ -67,8 +67,8 @@ init -10 python:
                         "Energy" : "精力",
                         "energy" : "精力",
 
-                        "Brothel reputation" : "青楼声誉",
-                        "brothel reputation" : "青楼声誉",
+                        "Brothel reputation" : "青楼声望",
+                        "brothel reputation" : "青楼声望",
 
                         ## 玩家属性 ##
                         "Strength" : "力量",
@@ -1102,14 +1102,14 @@ init -10 python:
     ## 女孩起源名称 ##
     origin_name_dict = {
                         "Zan" : "泽恩",
-                        "the border with the Holy Lands" : "与圣地的边界",
-                        "the Blood Islands" : "血岛",
-                        "Karkyr" : "",
-                        "Westmarch" : "",
-                        "the desert of Hokoma" : "",
-                        "Borgo, the port city" : "",
-                        "the Goliath desolations" : "",
-                        "the Arik mountains" : "",
+                        "the border with the Holy Lands" : "圣地边境",
+                        "the Blood Islands" : "鲜血群岛",
+                        "Karkyr" : "卡尔基",
+                        "Westmarch" : "西境",
+                        "the desert of Hokoma" : "荷科马大沙漠",
+                        "Borgo, the port city" : "博格-海港之城",
+                        "the Goliath desolations" : "歌利亚平原",
+                        "the Arik mountains" : "阿力克山脉",
                         }
 
 #### BALANCE / CHEATS ####

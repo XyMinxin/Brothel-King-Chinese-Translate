@@ -3280,7 +3280,7 @@ translate schinese city_cat_a266484b:
 translate schinese city_cat_6a0019cd:
 
     # "You have received [item_name]."
-    "您得到了一个 [item_name]。"
+    "您得到了一个[item_name]。"
 
 # game/BKcity_events.rpy:2616
 translate schinese city_cat_1a608fa9:
@@ -3756,7 +3756,7 @@ translate schinese city_secret_a09bde46:
 translate schinese city_secret_6a0019cd:
 
     # "You have received [item_name]."
-    "你得到了 [item_name]。"
+    "你得到了[item_name]。"
 
 # game/BKcity_events.rpy:3006
 translate schinese city_secret_8a1ad209:
@@ -4240,7 +4240,7 @@ translate schinese city_gypsy_16a968c2:
 translate schinese city_gypsy_6a0019cd:
 
     # "You have received [item_name]."
-    "你得到了 [item_name]。"
+    "你得到了[item_name]。"
 
 # game/BKcity_events.rpy:3366
 translate schinese city_gypsy_8c372b81:
@@ -4348,7 +4348,7 @@ translate schinese city_gypsy_dfdf7298:
 translate schinese city_gypsy_30be676f:
 
     # "You have received [item_name]. You have earned prestige."
-    "你得到了 [item_name]。你获得了一些声望。"
+    "你得到了[item_name]。你获得了一些声望。"
 
 # game/BKcity_events.rpy:3477
 translate schinese city_rob_22642a73:
