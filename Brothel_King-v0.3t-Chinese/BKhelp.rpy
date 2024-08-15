@@ -2537,7 +2537,7 @@ label cheat_menu():
                             $ val = int(renpy.input("Which rank will they need to reach?", default = 2))
                             $ target = renpy.input("How many girls will need to reach that rank?", default = 4)
 
-                        "提高青楼的声誉":
+                        "提高青楼的声望":
                             $ _type = "reputation"
                             $ val = int(renpy.input("How much reputation will you need to get?", default = 250))
                             $ target = 0

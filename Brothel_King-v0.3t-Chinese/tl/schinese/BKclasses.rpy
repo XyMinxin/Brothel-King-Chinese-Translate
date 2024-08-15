@@ -236,11 +236,11 @@ translate schinese strings:
 
     # game/BKclasses.rpy:2349
     old "你的顾客的平均 {b}娱乐预算{/b} 估计约为 {b}%s 金币{/b}"
-    new "顾客的平均 {b}娱乐预算{/b} 约为 {b}%s 金币{/b}"
+    new "顾客的平均{b}娱乐预算{/b}约为{b}%s金币{/b}"
 
     # game/BKclasses.rpy:2367
     old "\n你的顾客的平均 {b}嫖娼预算{/b} 估计约为 {b}%s 金币{/b}"
-    new "\n顾客的平均 {b}嫖娼预算{/b} 约为 {b}%s 金币{/b}"
+    new "\n顾客的平均{b}嫖娼预算{/b}约为{b}%s金币{/b}"
 
     # game/BKclasses.rpy:2376
     old "+%s 来自性行为"

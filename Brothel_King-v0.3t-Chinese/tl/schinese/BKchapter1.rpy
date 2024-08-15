@@ -268,7 +268,7 @@ translate schinese c1_meet_kosmo_c24e1f16:
 translate schinese c1_meet_kosmo_498b8490:
 
     # kosmo "I am the world-renowned chairman of 'HʘʘKERS', the largest, fastest-growing, highest-grossing brothel chain in Zan!"
-    kosmo "我就是著名的'妓你太美'公司董事长,这是赞城最大、发展最快、盈利最高的红灯区连锁企业!"
+    kosmo "我就是著名的'妓你太美'公司董事长,这是泽恩最大、发展最快、盈利最高的红灯区连锁企业!"
 
 # game/BKchapter1.rpy:178
 translate schinese c1_meet_kosmo_df028266:
@@ -280,7 +280,7 @@ translate schinese c1_meet_kosmo_df028266:
 translate schinese c1_meet_kosmo_20d48728:
 
     # kosmo "...and I was knighted by King Pharo the 1st in person! Everyone in Zan knows me, of course, but I shouldn't have expected anything else from a filthy foreigner."
-    kosmo "...法老王都亲自为我授勋!赞城的每个人都认识我,当然,我也不指望你这个肮脏的外地乡巴佬会知道。"
+    kosmo "...法老王都亲自为我授勋!泽恩的每个人都认识我,当然,我也不指望你这个肮脏的外地乡巴佬会知道。"
 
 # game/BKchapter1.rpy:182
 translate schinese c1_meet_kosmo_4fafefca:
@@ -304,7 +304,7 @@ translate schinese c1_meet_kosmo_232fda7a:
 translate schinese c1_meet_kosmo_352f5ea1:
 
     # kosmo angry "Hey! You're addressing a Zan Lord! Don't forget your place, worm..." with vpunch
-    kosmo angry "嘿!这就是你对一位赞城领主的态度!不要忘记你的身份,贱民..." with vpunch
+    kosmo angry "嘿!这就是你对一位泽恩领主的态度!不要忘记你的身份,贱民..." with vpunch
 
 # game/BKchapter1.rpy:202
 translate schinese c1_meet_kosmo_fa0a20c0:
@@ -1012,7 +1012,7 @@ translate schinese c1_ambush_5a85e245:
 translate schinese c1_ambush_0523890e:
 
     # maya "The streets of Zan are dangerous at the best of times. You should tread softly, and watch your back."
-    maya "在赞城的街道,你最好还是谨慎小心,留意身后。"
+    maya "在泽恩的街道,你最好还是谨慎小心,留意身后。"
 
 # game/BKchapter1.rpy:641
 translate schinese c1_ambush_df924ee8:
@@ -1420,7 +1420,7 @@ translate schinese c1_guards_visit_01e459fd:
 translate schinese c1_guards_visit_250682d3:
 
     # guard "We are the law in Zan. We do as we please. Do you want to hang, citizen?"
-    guard "在赞城,我们就是法律。我们想干什么就干什么。你想要被斩首吗,先生?"
+    guard "在泽恩,我们就是法律。我们想干什么就干什么。你想要被斩首吗,先生?"
 
 # game/BKchapter1.rpy:926
 translate schinese c1_guards_visit_26a2c93a:
@@ -1954,7 +1954,7 @@ translate schinese c1_thieves_guild_tip_8a262d27:
 translate schinese c1_spice_market_41a740ee:
 
     # "The Spice Market is the place where the more or less respectable citizens of Zan come to get their fix."
-    "黑市是赞城里那些或多或少还算体面的公民来满足自己特殊需求的地方。"
+    "黑市是泽恩里那些或多或少还算体面的公民来满足自己特殊需求的地方。"
 
 # game/BKchapter1.rpy:1254
 translate schinese c1_spice_market_bca7e831:
@@ -1966,7 +1966,7 @@ translate schinese c1_spice_market_bca7e831:
 translate schinese c1_spice_market_b7c02ba2:
 
     # "Of course, a lot of the spices one can find at the market are highly illegal in Zan. But here, far from the policed streets of the city inner districts, very few rules are actively enforced."
-    "当然,在市场上能找到的大多数香料在赞城都是非法的。但是在这里,远离市中心管控的街道,上面默许了这些生意。"
+    "当然,在市场上能找到的大多数香料在泽恩都是非法的。但是在这里,远离市中心管控的街道,上面默许了这些生意。"
 
 # game/BKchapter1.rpy:1260
 translate schinese c1_spice_market_c2282b6a:
@@ -2170,7 +2170,7 @@ translate schinese c1_spice_market_14daa06f:
 translate schinese c1_spice_market_1b980c86:
 
     # you "Oh, I'm an upstanding citizen of Zan, I was only doing my duty... You know. *grin*"
-    you "噢,我是赞城的正直公民,只是在尽我的义务...你知道的。*咧嘴一笑*"
+    you "噢,我是泽恩的正直公民,只是在尽我的义务...你知道的。*咧嘴一笑*"
 
 # game/BKchapter1.rpy:1413
 translate schinese c1_spice_market_4f86f417_1:
@@ -2230,13 +2230,13 @@ translate schinese c1_sewers_411d1222:
 translate schinese c1_sewers_4a7e73f9:
 
     # "Zan is renowned for its extensive sewer system, introduced nineteen centuries ago by the first non-human dwellers of the city."
-    "赞城以其复杂的下水道排水系统而闻名,这个排水系统是由最早居住在这座城市的非人类种族建造的,时间可追溯到19个世纪前。"
+    "泽恩以其复杂的下水道排水系统而闻名,这个排水系统是由最早居住在这座城市的非人类种族建造的,时间可追溯到19个世纪前。"
 
 # game/BKchapter1.rpy:1458
 translate schinese c1_sewers_edb5ec57:
 
     # "The non-human empire used magic to carve a complex maze of galleries deep under the current city level. Since then, the successive rulers of Zan have made random additions to the system while abandoning or condemning older galleries."
-    "当时的非人类帝国利用魔法在现有城市层面之下挖掘了一个复杂的迷宫。此后,赞城的统治者们一直在此基础上添加新的区域,同时弃用或封闭了废弃的通道。"
+    "当时的非人类帝国利用魔法在现有城市层面之下挖掘了一个复杂的迷宫。此后,泽恩的统治者们一直在此基础上添加新的区域,同时弃用或封闭了废弃的通道。"
 
 # game/BKchapter1.rpy:1461
 translate schinese c1_sewers_c81547bb:
@@ -3280,7 +3280,7 @@ translate schinese c1_sewers_rape_e2f72138:
 translate schinese c1_sewers_rape_7e4dc513:
 
     # man "The night is young, and tomorrow you'll sail for the slave pens of the Blood Islands. So relax honey, and enjoy your last stay in Zan..."
-    man "夜还很长,明天你就要被送往血岛的奴隶拍卖场。所以放松下,亲爱的,好好享受你在赞的最后时光吧..."
+    man "夜还很长,明天你就要被送往鲜血群岛的奴隶拍卖场。所以放松下,亲爱的,好好享受你在赞的最后时光吧..."
 
 # game/BKchapter1.rpy:2130
 translate schinese c1_sewers_rape_55111de3:
@@ -4090,13 +4090,13 @@ translate schinese c1_ask_guild_for_help_ba426b06:
 translate schinese c1_ask_guild_for_help_42a348ee:
 
     # lieutenant "I know! But we have the prisoners, surely we can use them to get some leverage. Captain Farah must have a weakness..."
-    lieutenant "我知道!但是我们有很多囚犯,我们可以利用他们来施加压力。法拉总督一定有弱点..."
+    lieutenant "我知道!但是我们有很多囚犯,我们可以利用他们来施加压力。法拉上尉一定有弱点..."
 
 # game/BKchapter1.rpy:2553
 translate schinese c1_ask_guild_for_help_f204e479:
 
     # you "(Are they plotting to take on the Guard captain? I can't hear well...)"
-    you "(他们在策划谋反总督吗?我听不太清楚...)"
+    you "(他们在策划谋反上尉吗?我听不太清楚...)"
 
 # game/BKchapter1.rpy:2555
 translate schinese c1_ask_guild_for_help_a0d56e67:
@@ -4288,7 +4288,7 @@ translate schinese c1_ask_guild_for_help_2b0f4305:
 translate schinese c1_ask_guild_for_help_020b991c:
 
     # lieutenant "The captain uses the city guard like a private army. The lion's share of the taxes and bribes goes to the captain's coffers, right under the King's nose."
-    lieutenant "总督把城防军当成私人军队使用,大部分税收和贿赂都进了她的腰包,连国王都不知情。"
+    lieutenant "上尉把城防军当成私人军队使用,大部分税收和贿赂都进了她的腰包,连国王都不知情。"
 
 # game/BKchapter1.rpy:2654
 translate schinese c1_ask_guild_for_help_3c58e188:
@@ -4318,7 +4318,7 @@ translate schinese c1_ask_guild_for_help_a7eceee9:
 translate schinese c1_ask_guild_for_help_bb655b4a:
 
     # lieutenant "Yes. Take down Captain Farah."
-    lieutenant "是的,要干掉法拉总督。"
+    lieutenant "是的,要干掉法拉上尉。"
 
 # game/BKchapter1.rpy:2669
 translate schinese c1_ask_guild_for_help_42a4e8f5:
@@ -4342,7 +4342,7 @@ translate schinese c1_ask_guild_for_help_aa64bbe3:
 translate schinese c1_ask_guild_for_help_2424fa80:
 
     # renza "And with a change of management at the top of the city guard, getting you your brothel license should be a piece of cake."
-    renza "而且在总督换人之后,你的青楼经营许可证也应该很容易办下来。"
+    renza "而且在上尉换人之后,你的青楼经营许可证也应该很容易办下来。"
 
 # game/BKchapter1.rpy:2679
 translate schinese c1_ask_guild_for_help_2c6e244d:
@@ -4360,7 +4360,7 @@ translate schinese c1_ask_guild_for_help_a0d81e6d:
 translate schinese c1_ask_guild_for_help_1087cab0:
 
     # you "You... You want to replace the Guard captain with one of your own? That's..."
-    you "你...你想用你自己的人替换总督?这太..."
+    you "你...你想用你自己的人替换上尉?这太..."
 
 # game/BKchapter1.rpy:2686
 translate schinese c1_ask_guild_for_help_51150973:
@@ -4714,7 +4714,7 @@ translate schinese c1_maya_interrogation_f5aec7e3:
 translate schinese c1_maya_interrogation_6c83771e:
 
     # you "The thieves have had enough with the Guard's harassment. They want to replace the current captain with one of their own."
-    you "盗贼们已经受够了军队的骚扰。他们想要用自己人取代现任总督。"
+    you "盗贼们已经受够了军队的骚扰。他们想要用自己人取代现任上尉。"
 
 # game/BKchapter1.rpy:2887
 translate schinese c1_maya_interrogation_a3504cf0:
@@ -4738,13 +4738,13 @@ translate schinese c1_maya_interrogation_70ddc422:
 translate schinese c1_maya_interrogation_90884327:
 
     # you "What do you mean? Are you supporting the captain now?"
-    you "你是什么意思?难道你现在站在总督那头吗?"
+    you "你是什么意思?难道你现在站在上尉那头吗?"
 
 # game/BKchapter1.rpy:2897
 translate schinese c1_maya_interrogation_2491f33c:
 
     # maya "Oh, Arios no. I know how bad things have become lately, and I know the Captain is behind this."
-    maya "哦,不,太阳神在上。我知道情况有多糟糕,总督就是罪恶的根源。"
+    maya "哦,不,太阳神在上。我知道情况有多糟糕,上尉就是罪恶的根源。"
 
 # game/BKchapter1.rpy:2899
 translate schinese c1_maya_interrogation_f61fb507:
@@ -4774,13 +4774,13 @@ translate schinese c1_maya_interrogation_758e4436:
 translate schinese c1_maya_interrogation_c50a5c64:
 
     # maya "Play along with the thieves as long as necessary. Do what you must to bring Captain Farah down."
-    maya "先配合盗贼公会。这样才能把法拉总督拉下水。"
+    maya "先配合盗贼公会。这样才能把法拉上尉拉下水。"
 
 # game/BKchapter1.rpy:2913
 translate schinese c1_maya_interrogation_899487e3:
 
     # maya "But when the time comes to choose a new captain, you must expose the lieutenant as a thief spy. Do not let her become the head of the city guard."
-    maya "但当新总督选举时,你必须揭露她是盗贼公会的卧底。不能让她成为军队的高层。"
+    maya "但当新上尉选举时,你必须揭露她是盗贼公会的卧底。不能让她成为军队的高层。"
 
 # game/BKchapter1.rpy:2916
 translate schinese c1_maya_interrogation_c6342493:
@@ -4852,7 +4852,7 @@ translate schinese c1_maya_interrogation_5dc92e4c:
 translate schinese c1_maya_interrogation_d30ee5d5:
 
     # you "Calm down, it's not like that... Anyway, there is little you or I can do. They want information about the Guard's dealings. They suspect the captain."
-    you "冷静下来,不是那样的...总之,你我都无能为力。他们想要获取关于军队腐败的情报。他们怀疑总督。"
+    you "冷静下来,不是那样的...总之,你我都无能为力。他们想要获取关于军队腐败的情报。他们怀疑上尉。"
 
 # game/BKchapter1.rpy:2946
 translate schinese c1_maya_interrogation_7382061b:
@@ -4876,7 +4876,7 @@ translate schinese c1_maya_interrogation_1d4c99ea:
 translate schinese c1_maya_interrogation_2f80cca2:
 
     # maya "Not like I care what happens to the damn captain."
-    maya "搞得好像我很在乎总督这个位子似的。"
+    maya "搞得好像我很在乎上尉这个位子似的。"
 
 # game/BKchapter1.rpy:2958
 translate schinese c1_maya_interrogation_05bc6d41:
@@ -4954,13 +4954,13 @@ translate schinese c1_maya_interrogation_fd423aa1:
 translate schinese c1_maya_interrogation_8e8794bc:
 
     # you "What about the captain?"
-    you "那么,关于总督呢?"
+    you "那么,关于上尉呢?"
 
 # game/BKchapter1.rpy:2994
 translate schinese c1_maya_interrogation_6ae635ab:
 
     # maya "The captain??? Why do you ask about the captain?"
-    maya "总督???你为什么问起这个?"
+    maya "上尉???你为什么问起这个?"
 
 # game/BKchapter1.rpy:2996
 translate schinese c1_maya_interrogation_3675594f:
@@ -5038,7 +5038,7 @@ translate schinese c1_maya_interrogation_37fb8b3d:
 translate schinese c1_maya_interrogation_d2a5c920:
 
     # you "The captain. Tell me what's going on. Now. Or I'll rape your cunt and your ass right here in this dank cell."
-    you "总督么。告诉我发生了什么。现在就说。否则我会在这个阴暗的囚室里干烂你的小穴和菊花。"
+    you "上尉么。告诉我发生了什么。现在就说。否则我会在这个阴暗的囚室里干烂你的小穴和菊花。"
 
 # game/BKchapter1.rpy:3036
 translate schinese c1_maya_interrogation_af682706:
@@ -5470,7 +5470,7 @@ translate schinese c1_maya_confession_3bd6a122:
 translate schinese c1_maya_confession_c165a040:
 
     # maya "The captain is lining out the Guard's coffers with tax and extortion money. A large number of the guards are dirty, and they work together with the captain and some corrupt officers to fill their pockets."
-    maya "总督用税收和敲诈勒索的钱填补军队的金库。很多高层都是腐败的,他们与总督和一些腐败的官员合作来为自己赚钱。"
+    maya "上尉用税收和敲诈勒索的钱填补军队的金库。很多高层都是腐败的,他们与上尉和一些腐败的官员合作来为自己赚钱。"
 
 # game/BKchapter1.rpy:3269
 translate schinese c1_maya_confession_21f41766:
@@ -5482,13 +5482,13 @@ translate schinese c1_maya_confession_21f41766:
 translate schinese c1_maya_confession_c32efe3e:
 
     # maya "I've been trying to expose the captain for some time and take my case to the Court, but I still lack hard evidence."
-    maya "我一直在试图检举总督的行为,把她告上法庭,但我仍然缺乏确凿的证据。"
+    maya "我一直在试图检举上尉的行为,把她告上法庭,但我仍然缺乏确凿的证据。"
 
 # game/BKchapter1.rpy:3274
 translate schinese c1_maya_confession_3756d23c:
 
     # maya "The captain doesn't like to be exposed, so dealings go through petty officers that work as accomplices, such as Sergeant Kashiv."
-    maya "总督不喜欢站到台前,所以交易是通过手下的低级军官进行的,比如卡希夫中士。"
+    maya "上尉不喜欢站到台前,所以交易是通过手下的低级军官进行的,比如卡希夫中士。"
 
 # game/BKchapter1.rpy:3276
 translate schinese c1_maya_confession_b7b36fd4:
@@ -5806,7 +5806,7 @@ translate schinese c1_interrogate_menu_8d70e6a0:
 translate schinese c1_interrogate_menu_4553c3a3:
 
     # you "You've been played for a fool, and you don't realize it. The captain set you up, you and the other officers."
-    you "你被耍了,却还不自知。总督设了圈套,骗了你和其他军官。"
+    you "你被耍了,却还不自知。上尉设了圈套,骗了你和其他军官。"
 
 # game/BKchapter1.rpy:3429
 translate schinese c1_interrogate_menu_5a38b011:
@@ -5836,13 +5836,13 @@ translate schinese c1_interrogate_menu_7588dcc5:
 translate schinese c1_interrogate_menu_1666dff0:
 
     # you "It's a purge, you idiot. The captain passed a deal with the thieves guild. They're going to work hand in hand from now on."
-    you "这是一次大清洗,笨蛋。总督和盗贼公会私下勾结。他们是一伙的。"
+    you "这是一次大清洗,笨蛋。上尉和盗贼公会私下勾结。他们是一伙的。"
 
 # game/BKchapter1.rpy:3439
 translate schinese c1_interrogate_menu_06f10210:
 
     # you "But some of the officers in the Guard stood in the way of the captain's complete domination... So you were set up. A pretty clever plan, I must say."
-    you "但是有些官员完全在总督的统治之下...所以你们被设计了。真是一个聪明的计划,我必须说。"
+    you "但是有些官员完全在上尉的统治之下...所以你们被设计了。真是一个聪明的计划,我必须说。"
 
 # game/BKchapter1.rpy:3441
 translate schinese c1_interrogate_menu_229b8edf:
@@ -5872,7 +5872,7 @@ translate schinese c1_interrogate_menu_544b81b8:
 translate schinese c1_interrogate_menu_65f5b9b4:
 
     # you "You were expendable, Kashiv. You always were. The captain thought nothing of betraying you, just like the others."
-    you "你是可替代的,卡希夫。一直都是。总督不在乎抛弃你,就像抛弃其他人一样。"
+    you "你是可替代的,卡希夫。一直都是。上尉不在乎抛弃你,就像抛弃其他人一样。"
 
 # game/BKchapter1.rpy:3453
 translate schinese c1_interrogate_menu_d7b25c13:
@@ -5890,7 +5890,7 @@ translate schinese c1_interrogate_menu_74ceb9fc:
 translate schinese c1_interrogate_menu_7626c549:
 
     # you "It's the captain who sent you on this 'errand', after the lieutenant, isn't it?"
-    you "是总督派你来跟踪中尉的,不是吗?"
+    you "是上尉派你来跟踪中尉的,不是吗?"
 
 # game/BKchapter1.rpy:3459
 translate schinese c1_interrogate_menu_83b9bf4d:
@@ -5902,7 +5902,7 @@ translate schinese c1_interrogate_menu_83b9bf4d:
 translate schinese c1_interrogate_menu_2256c6d6:
 
     # sergeant "I don't believe this... For years I was the captain's right hand... I thought..."
-    sergeant "我不敢相信...多年来我一直是总督的得力干将...我以为..."
+    sergeant "我不敢相信...多年来我一直是上尉的得力干将...我以为..."
 
 # game/BKchapter1.rpy:3463
 translate schinese c1_interrogate_menu_f0d86024:
@@ -5950,7 +5950,7 @@ translate schinese c1_interrogate_menu_561b7c54:
 translate schinese c1_interrogate_menu_60fde2ac:
 
     # you "Help me then. I'm looking for leverage against the Guard. Get some dirt on the captain, anything that could help."
-    you "那就帮我一把。我正在寻找总督的把柄。只要对她不利，什么情报都行。"
+    you "那就帮我一把。我正在寻找上尉的把柄。只要对她不利，什么情报都行。"
 
 # game/BKchapter1.rpy:3479
 translate schinese c1_interrogate_menu_e05eaa02:
@@ -5974,7 +5974,7 @@ translate schinese c1_interrogate_menu_8be3e3d5:
 translate schinese c1_interrogate_menu_8be71968:
 
     # you "Blackmail. Arm-twisting. Perhaps, removing the captain altogether."
-    you "勒索。施加压力。或者干脆除掉总督。"
+    you "勒索。施加压力。或者干脆除掉上尉。"
 
 # game/BKchapter1.rpy:3490
 translate schinese c1_interrogate_menu_96aaf86a:
@@ -5992,7 +5992,7 @@ translate schinese c1_interrogate_menu_a577ad0e:
 translate schinese c1_interrogate_menu_e4200337:
 
     # sergeant "Use this information to completely destroy the captain and the officers who betrayed me. Don't just kill them; drag their reputation through the mud, have their minds and their bodies broken, force them into slavery and hard labor..."
-    sergeant "用这些情报彻底摧毁总督和背叛我的上级。不仅要杀掉他们,还要玷污他们的名誉,折磨他们的身心,让他们沦为奴隶和苦力..."
+    sergeant "用这些情报彻底摧毁上尉和背叛我的上级。不仅要杀掉他们,还要玷污他们的名誉,折磨他们的身心,让他们沦为奴隶和苦力..."
 
 # game/BKchapter1.rpy:3496
 translate schinese c1_interrogate_menu_cbe2f481:
@@ -6340,7 +6340,7 @@ translate schinese c1_interrogate_menu_c76ff1a1:
 translate schinese c1_interrogate_menu_ae7b8855:
 
     # you "You are alone. You are trapped. No one can help you here, not even the captain. Nothing awaits you here, but pain, and death."
-    you "你独自一人。你被困住了。这里无人能助你一臂之力,连总督也无能为力。这里只有痛苦和死亡在等着你。"
+    you "你独自一人。你被困住了。这里无人能助你一臂之力,连上尉也无能为力。这里只有痛苦和死亡在等着你。"
 
 # game/BKchapter1.rpy:3718
 translate schinese c1_interrogate_menu_6fe8e12d:
@@ -6448,7 +6448,7 @@ translate schinese c1_interrogate_menu_747ef096:
 translate schinese c1_interrogate_menu_b3fa5978:
 
     # you "Now, tell me about the captain. Don't leave anything out."
-    you "现在,跟我说说总督的事。什么都不要隐瞒。"
+    you "现在,跟我说说上尉的事。什么都不要隐瞒。"
 
 # game/BKchapter1.rpy:3773
 translate schinese c1_interrogate_menu_c79df7ba:
@@ -6862,7 +6862,7 @@ translate schinese c1_interrogate_menu_1aa6d8c1:
 translate schinese c1_interrogate_menu_e8d32f42:
 
     # you "First, tell me about the captain."
-    you "首先,告诉我关于总督的事。"
+    you "首先,告诉我关于上尉的事。"
 
 # game/BKchapter1.rpy:3981
 translate schinese c1_interrogate_menu_ee746fcf:
@@ -6874,7 +6874,7 @@ translate schinese c1_interrogate_menu_ee746fcf:
 translate schinese c1_interrogate_menu_13538da8:
 
     # sergeant "The captain recruited me after I arrived in Zan, fleeing from the Westmarch principalities..."
-    sergeant "总督在我来到赞城时收留了我,我当时正从西马奇公国逃难出去..."
+    sergeant "上尉在我来到泽恩时收留了我,我当时正从西马奇公国逃难出去..."
 
 # game/BKchapter1.rpy:3985
 translate schinese c1_interrogate_menu_e3d8d30c:
@@ -6886,25 +6886,25 @@ translate schinese c1_interrogate_menu_e3d8d30c:
 translate schinese c1_interrogate_menu_a134e16d:
 
     # sergeant "The captain took care of me and I grew to become a trusted confidant... But I was never promoted from sergeant, because I needed to keep an eye on the men."
-    sergeant "总督照顾我,我成为了她信任的手下...但我从未升任中尉,因为我需要监视底层的那些士兵。"
+    sergeant "上尉照顾我,我成为了她信任的手下...但我从未升任中尉,因为我需要监视底层的那些士兵。"
 
 # game/BKchapter1.rpy:3991
 translate schinese c1_interrogate_menu_eb358810:
 
     # sergeant "Instead, that up and coming lieutenant slut grew to become her second in command... Pretending to be the captain's pet. But I knew I was the one that the captain really trusted."
-    sergeant "相反,那个风光的中尉婊子成为了她的副手...假装成为总督的亲信。但我知道我才是总督真正信任的人。"
+    sergeant "相反,那个风光的中尉婊子成为了她的副手...假装成为上尉的亲信。但我知道我才是上尉真正信任的人。"
 
 # game/BKchapter1.rpy:3994
 translate schinese c1_interrogate_menu_8f3741c6:
 
     # you "What kind of assignments did you carry out for the captain?"
-    you "你为总督做了哪些事?"
+    you "你为上尉做了哪些事?"
 
 # game/BKchapter1.rpy:3996
 translate schinese c1_interrogate_menu_add26fea:
 
     # sergeant "Assassinations, robberies, extortion, phony arrests... You name it. The captain had a precise plan to take over the slums, and do away with anyone who opposed the Guard."
-    sergeant "暗杀、抢劫、勒索、伪造逮捕令...什么都有。总督有准备了一个计划,她要控制贫民窟,消灭任何不满军队的人。"
+    sergeant "暗杀、抢劫、勒索、伪造逮捕令...什么都有。上尉有准备了一个计划,她要控制贫民窟,消灭任何不满军队的人。"
 
 # game/BKchapter1.rpy:3999
 translate schinese c1_interrogate_menu_f80a2e96:
@@ -6934,25 +6934,25 @@ translate schinese c1_interrogate_menu_36112253:
 translate schinese c1_interrogate_menu_502280a7:
 
     # you "But how does stealing my money further the captain's plans?"
-    you "但是,抢我的钱对总督的计划有什么好处?"
+    you "但是,抢我的钱对上尉的计划有什么好处?"
 
 # game/BKchapter1.rpy:4010
 translate schinese c1_interrogate_menu_1eceeedc:
 
     # sergeant "Oh, it doesn't. But one thing the captain can't resist is the lust for more gold."
-    sergeant "哦,你想多了,总督只是抗拒不了对金钱的贪念。"
+    sergeant "哦,你想多了,上尉只是抗拒不了对金钱的贪念。"
 
 # game/BKchapter1.rpy:4012
 translate schinese c1_interrogate_menu_6ef6ed41:
 
     # you "So... Do you have any hard evidence that implicates the captain?"
-    you "所以...你有任何证据来指认总督吗?"
+    you "所以...你有任何证据来指认上尉吗?"
 
 # game/BKchapter1.rpy:4014
 translate schinese c1_interrogate_menu_841d890c:
 
     # sergeant "None. Orders are always given orally. If anything happens, the captain can always claim it was seditious elements in the Guard that did it. Protect the last link of the chain."
-    sergeant "没有。命令永远是口头下达的。如果发生什么,总督总可以声称这是军队中的叛乱分子干的。她做的滴水不漏。"
+    sergeant "没有。命令永远是口头下达的。如果发生什么,上尉总可以声称这是军队中的叛乱分子干的。她做的滴水不漏。"
 
 # game/BKchapter1.rpy:4017
 translate schinese c1_interrogate_menu_8cd335b3:
@@ -6994,7 +6994,7 @@ translate schinese c1_interrogate_menu_07fbad6d:
 translate schinese c1_interrogate_menu_ee6fb2b5:
 
     # sergeant "Fine... I suspect someone higher up is giving the orders. The buck doesn't stop with the captain."
-    sergeant "好吧...我怀疑有更高层的人在背后指使。总督没有这么大的权力。"
+    sergeant "好吧...我怀疑有更高层的人在背后指使。上尉没有这么大的权力。"
 
 # game/BKchapter1.rpy:4031
 translate schinese c1_interrogate_menu_2c0bda6e:
@@ -7012,19 +7012,19 @@ translate schinese c1_interrogate_menu_b8f202b9:
 translate schinese c1_interrogate_menu_68dc0e55:
 
     # sergeant "But the captain is too smart to ever mention anything like this to me."
-    sergeant "不过总督太精明了,她从不和我聊这些事。"
+    sergeant "不过上尉太精明了,她从不和我聊这些事。"
 
 # game/BKchapter1.rpy:4038
 translate schinese c1_interrogate_menu_aef17199:
 
     # you "So... How can we frame this captain of yours?"
-    you "所以...我们怎样才能干掉那位总督呢?"
+    you "所以...我们怎样才能干掉那位上尉呢?"
 
 # game/BKchapter1.rpy:4040
 translate schinese c1_interrogate_menu_0cb294d7:
 
     # sergeant "You can't. The captain has no weaknesses, except loving gold, of course..."
-    sergeant "不行。总督几乎没有什么弱点,除了贪财...."
+    sergeant "不行。上尉几乎没有什么弱点,除了贪财...."
 
 # game/BKchapter1.rpy:4044
 translate schinese c1_interrogate_menu_c7110f38:
@@ -7054,7 +7054,7 @@ translate schinese c1_interrogate_menu_b75223dc:
 translate schinese c1_interrogate_menu_d542a773:
 
     # sergeant "Well... The captain gave the order to raid your house. I guess the money is in the Guard office vault by now."
-    sergeant "嗯...总督下令突袭了你的房子。我想那些钱应该已经被送到她的金库里了。"
+    sergeant "嗯...上尉下令突袭了你的房子。我想那些钱应该已经被送到她的金库里了。"
 
 # game/BKchapter1.rpy:4056
 translate schinese c1_interrogate_menu_975b2183:
@@ -7198,7 +7198,7 @@ translate schinese c1_interrogation_report_9067274b:
 translate schinese c1_interrogation_report_50ead870:
 
     # you "The captain has corrupted several officers and large swathes of the Guard..."
-    you "总督已经腐蚀了几名军官和大部分的士兵..."
+    you "上尉已经腐蚀了几名军官和大部分的士兵..."
 
 # game/BKchapter1.rpy:4140
 translate schinese c1_interrogation_report_53f3c873:
@@ -7222,7 +7222,7 @@ translate schinese c1_interrogation_report_d55869d6:
 translate schinese c1_interrogation_report_c234aa17:
 
     # you "All orders are processed through the corrupted officers. Nothing is written down, so that no one can incriminate the captain."
-    you "所有命令都是通过腐败的军官执行的。没有任何书面记录,这样就没有人可以把总督供出来。"
+    you "所有命令都是通过腐败的军官执行的。没有任何书面记录,这样就没有人可以把上尉供出来。"
 
 # game/BKchapter1.rpy:4148
 translate schinese c1_interrogation_report_e011b095:
@@ -7240,7 +7240,7 @@ translate schinese c1_interrogation_report_ddbcc031:
 translate schinese c1_interrogation_report_e9fa2dee:
 
     # you "Kashiv was tasked with carrying out the captain's dirty work, including requests from third parties, like wealthy citizens."
-    you "卡希夫负责完成总督的脏活,包括接受第三方的委托,比如富有的市民。"
+    you "卡希夫负责完成上尉的脏活,包括接受第三方的委托,比如富有的市民。"
 
 # game/BKchapter1.rpy:4156
 translate schinese c1_interrogation_report_70ac70c3:
@@ -7258,7 +7258,7 @@ translate schinese c1_interrogation_report_c77a8dd7:
 translate schinese c1_interrogation_report_541fca42:
 
     # you "Well, the money mostly... The captain loves money. But there might be someone pulling the strings at court."
-    you "嗯,主要是钱...总督非常爱钱。但可能还有上层贵族控制这一切。"
+    you "嗯,主要是钱...上尉非常爱钱。但可能还有上层贵族控制这一切。"
 
 # game/BKchapter1.rpy:4162
 translate schinese c1_interrogation_report_00fc9578:
@@ -7312,7 +7312,7 @@ translate schinese c1_interrogation_report_e8830b5b:
 translate schinese c1_interrogation_report_52b8c6f3:
 
     # renza "[MC.name]! You said the captain loves money, right?"
-    renza "[MC.name]!你不是说,总督喜欢钱吗?"
+    renza "[MC.name]!你不是说,上尉喜欢钱吗?"
 
 # game/BKchapter1.rpy:4182
 translate schinese c1_interrogation_report_105bc74f:
@@ -7336,7 +7336,7 @@ translate schinese c1_interrogation_report_39fadecd:
 translate schinese c1_interrogation_report_6bd15729:
 
     # renza "While you were gone, we went through the sergeant's stuff. I found her seal and some messages she must have prepared for the captain, although no name appears on it."
-    renza "当你不在的时候,我们搜查了中士的私人物品。我找到了她的印章以及一些可能是为总督准备的文件,不过上面没有署名。"
+    renza "当你不在的时候,我们搜查了中士的私人物品。我找到了她的印章以及一些可能是为上尉准备的文件,不过上面没有署名。"
 
 # game/BKchapter1.rpy:4191
 translate schinese c1_interrogation_report_5c3796bb:
@@ -7366,7 +7366,7 @@ translate schinese c1_interrogation_report_b20df633:
 translate schinese c1_interrogation_report_9a394c09:
 
     # you "Oh, great plan. I'll go and threaten the captain with revenge. Then I'll get locked up for the rest of my days for my trouble."
-    you "哦,好计划。我就去威胁总督说我要举报她。然后我就会因此被关一辈子。"
+    you "哦,好计划。我就去威胁上尉说我要举报她。然后我就会因此被关一辈子。"
 
 # game/BKchapter1.rpy:4201
 translate schinese c1_interrogation_report_f89be122:
@@ -7390,7 +7390,7 @@ translate schinese c1_interrogation_report_198588af:
 translate schinese c1_interrogation_report_5af4e5d6:
 
     # renza "You can then offer the captain a large sum to take care of your rival. For that amount of gold, you can demand a private audience..."
-    renza "然后你就可以向总督提供一大笔钱来对付你的竞争对手。凭借这笔金额,你可以要求单独会见..."
+    renza "然后你就可以向上尉提供一大笔钱来对付你的竞争对手。凭借这笔金额,你可以要求单独会见..."
 
 # game/BKchapter1.rpy:4211
 translate schinese c1_interrogation_report_9a9b8a31:
@@ -7426,7 +7426,7 @@ translate schinese c1_interrogation_report_774beecd:
 translate schinese c1_interrogation_report_f43508ad:
 
     # lieutenant "So [MC.name] gets a private audience. What good does it do to us? Do you want to send him as an assassin?"
-    lieutenant "那么[MC.name]就可以单独会见总督。这对我们有什么好处?你想派他去暗杀吗?"
+    lieutenant "那么[MC.name]就可以单独会见上尉。这对我们有什么好处?你想派他去暗杀吗?"
 
 # game/BKchapter1.rpy:4228
 translate schinese c1_interrogation_report_1dafdb8e:
@@ -7444,19 +7444,19 @@ translate schinese c1_interrogation_report_b2a9b2a8:
 translate schinese c1_interrogation_report_30de1a54:
 
     # renza "Let me finish. We know that the captain won't commit to anything in writing. But oral instructions, on the other hand..."
-    renza "让我说完。我们知道总督不会在任何文件上签字。只下口头命令,另一方面..."
+    renza "让我说完。我们知道上尉不会在任何文件上签字。只下口头命令,另一方面..."
 
 # game/BKchapter1.rpy:4236
 translate schinese c1_interrogation_report_cd21fa19:
 
     # lieutenant "But what good is it? It's gonna be [MC.name]'s word against the captain of the city guard. A foreigner and a pimp... (Sorry, [MC.name]). That's not going to cut it."
-    lieutenant "但这有什么用处?最终只会变成法庭上[MC.name]的证词和军队总督的证词对抗。一个外乡人和皮条客...(对不起,[MC.name])。这没用的。"
+    lieutenant "但这有什么用处?最终只会变成法庭上[MC.name]的证词和军队上尉的证词对抗。一个外乡人和皮条客...(对不起,[MC.name])。这没用的。"
 
 # game/BKchapter1.rpy:4239
 translate schinese c1_interrogation_report_c18f6a4e:
 
     # renza "I know. I am talking about much more direct evidence, that we could take directly to the public, and expose the captain's duplicity for all of Zan to see."
-    renza "我知道。我说的是更加直接的证据,我们可以直接拿到公众面前,暴露总督的本性,让整个赞城看个明白。"
+    renza "我知道。我说的是更加直接的证据,我们可以直接拿到公众面前,暴露上尉的本性,让整个泽恩看个明白。"
 
 # game/BKchapter1.rpy:4242
 translate schinese c1_interrogation_report_5c0c3490:
@@ -8020,7 +8020,7 @@ translate schinese c1_satella_intro_999a7fb3:
 translate schinese c1_satella_intro_ebc4c7c2:
 
     # renza "Err, [MC.name], my lady. He's only recently arrived in Zan..."
-    renza "呃,女王陛下,他叫[MC.name],最近才来到赞城..."
+    renza "呃,女王陛下,他叫[MC.name],最近才来到泽恩..."
 
 # game/BKchapter1.rpy:4526
 translate schinese c1_satella_intro_3ba8fb74:
@@ -8494,7 +8494,7 @@ translate schinese c1_satella_intro_c8d5d5c2:
 translate schinese c1_satella_intro_f8551443:
 
     # "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
-    "去{b}瞭望塔{/b},会见那个臭名昭著的总督。"
+    "去{b}瞭望塔{/b},会见那个臭名昭著的上尉。"
 
 # game/BKchapter1.rpy:4731
 translate schinese c1_captain_meeting_88e47283:
@@ -8542,7 +8542,7 @@ translate schinese c1_captain_meeting_7c2e9962:
 translate schinese c1_captain_meeting_418974d1:
 
     # you "I'll get that captain. And when I'm done, I'll take care of Kosmo..."
-    you "我会把总督拉下马。事后,我还要去处理科斯莫..."
+    you "我会把上尉拉下马。事后,我还要去处理科斯莫..."
 
 # game/BKchapter1.rpy:4762
 translate schinese c1_captain_meeting_bad583ab:
@@ -8590,19 +8590,19 @@ translate schinese c1_captain_meeting_c13cd8f0:
 translate schinese c1_captain_meeting_67b813e6:
 
     # lieutenant "The captain got the letter. It seems to be going along as planned."
-    lieutenant "总督收到了那封信。看来一切都在按计划进行。"
+    lieutenant "上尉收到了那封信。看来一切都在按计划进行。"
 
 # game/BKchapter1.rpy:4789
 translate schinese c1_captain_meeting_b71e5571:
 
     # lieutenant "A guard will take you upstairs. Good..."
-    lieutenant "一名守卫会带你上楼。good..."
+    lieutenant "一名守卫会带你上楼。Good..."
 
 # game/BKchapter1.rpy:4793
 translate schinese c1_captain_meeting_daa7a8f7:
 
     # "You do not hear her last word. It must have been 'luck'. Or it could have been 'riddance', you're just not sure which."
-    "你没有听清她最后说了什么。可能是\"good luck祝你好运\"。也可能是\"goodbye 永别了\",你不太确定。"
+    "你没有听清她最后说了什么。可能是\"Good luck祝你好运\"。也可能是\"Goodbye 永别了\",你不太确定。"
 
 # game/BKchapter1.rpy:4797
 translate schinese c1_captain_meeting_beb19c9e:
@@ -8614,13 +8614,13 @@ translate schinese c1_captain_meeting_beb19c9e:
 translate schinese c1_captain_meeting_96a5176d:
 
     # you "I am [MC.name]. I requested an audience with Captain Farah."
-    you "我是[MC.name]。我请求与法拉总督会面。"
+    you "我是[MC.name]。我请求与法拉上尉会面。"
 
 # game/BKchapter1.rpy:4803
 translate schinese c1_captain_meeting_eb22b676:
 
     # guard "Yes, I can see that you did, and it has been granted. I will take you to the captain office."
-    guard "是的,你确实有预约。我会带你去总督的办公室。"
+    guard "是的,你确实有预约。我会带你去上尉的办公室。"
 
 # game/BKchapter1.rpy:4807
 translate schinese c1_captain_meeting_e3ecd226:
@@ -8644,7 +8644,7 @@ translate schinese c1_captain_meeting_240c0768:
 translate schinese c1_captain_meeting_f2d5a8cc:
 
     # guard "This is the captain's quarters. You may enter, I will wait for you here. You have twenty minutes."
-    guard "这里是总督的办公室。你可以进去了,我会在这里等你。你有20分钟的时间。"
+    guard "这里是上尉的办公室。你可以进去了,我会在这里等你。你有20分钟的时间。"
 
 # game/BKchapter1.rpy:4815
 translate schinese c1_captain_meeting_653c51fe:
@@ -8668,7 +8668,7 @@ translate schinese c1_captain_meeting_ca5a2f7d:
 translate schinese c1_captain_meeting_bf8ff279:
 
     # you "Captain Farah?"
-    you "法拉总督?"
+    you "法拉上尉?"
 
 # game/BKchapter1.rpy:4839
 translate schinese c1_captain_meeting_e1911bb5:
@@ -8692,7 +8692,7 @@ translate schinese c1_captain_meeting_47013b27:
 translate schinese c1_captain_meeting_0ca23b17:
 
     # "Wow! You never expected this. The captain is a beautiful woman!"
-    "哇!你从未想过,总督竟是一位美丽的女性!"
+    "哇!你从未想过,上尉竟是一位美丽的女性!"
 
 # game/BKchapter1.rpy:4854
 translate schinese c1_captain_meeting_d8e73848:
@@ -8908,7 +8908,7 @@ translate schinese c1_captain_meeting_0dc037a5:
 translate schinese c1_captain_meeting_fdcc4312:
 
     # you "I have come to Zan to meet my uncle, a rich banker from the guild."
-    you "我来赞城是为了见我在公会里富有的叔叔。"
+    you "我来泽恩是为了见我在公会里富有的叔叔。"
 
 # game/BKchapter1.rpy:4942
 translate schinese c1_captain_meeting_59ec2c20:
@@ -8968,7 +8968,7 @@ translate schinese c1_captain_meeting_906a2155:
 translate schinese c1_captain_meeting_b295548d:
 
     # "You take out the forged documents that Renza made and hand them to the captain."
-    "你拿出了伦萨伪造的文件,递给了总督。"
+    "你拿出了伦萨伪造的文件,递给了上尉。"
 
 # game/BKchapter1.rpy:4966
 translate schinese c1_captain_meeting_3e40f82f:
@@ -9442,7 +9442,7 @@ translate schinese c1_captain_meeting_c5142ecc:
 translate schinese c1_captain_meeting_1d57c41b:
 
     # renza "Oh, that's more than perfect... Many big shots will be there. We can finally fulfill our objective, and get rid of the captain!"
-    renza "噢,这比我想象的还要完美......那里会有很多大人物。我们终于可以完成目标,除掉总督了!"
+    renza "噢,这比我想象的还要完美......那里会有很多大人物。我们终于可以完成目标,除掉上尉了!"
 
 # game/BKchapter1.rpy:5187
 translate schinese c1_captain_meeting_0a41e4f7:
@@ -9760,7 +9760,7 @@ translate schinese c1_trial_902351ce:
 translate schinese c1_trial_1c6d8979:
 
     # maya "Anyway, Roz roughed him up a little, and he told us about the guild's plan. Exposing the captain, replacing her with the lieutenant... We know everything."
-    maya "总之,罗兹打了他一顿,他告诉了我们公会的计划。揭露总督,让中尉接任...我们知道了一切。"
+    maya "总之,罗兹打了他一顿,他告诉了我们公会的计划。揭露上尉,让中尉接任...我们知道了一切。"
 
 # game/BKchapter1.rpy:5337
 translate schinese c1_trial_f3b8f51b:
@@ -9772,13 +9772,13 @@ translate schinese c1_trial_f3b8f51b:
 translate schinese c1_trial_bc6cc456:
 
     # maya "Please. I am appealing to your conscience here. The captain is the devil you know, but you don't know what the thieves guild is capable of."
-    maya "拜托。摸摸你的良心。总督是你所知的恶人,但你不知道盗贼公会还能做出什么。"
+    maya "拜托。摸摸你的良心。上尉是你所知的恶人,但你不知道盗贼公会还能做出什么。"
 
 # game/BKchapter1.rpy:5341
 translate schinese c1_trial_8358b39a:
 
     # maya "They may be less brutal than the captain, but just as ruthless and greedy. The slums would be trading a master for another, and the people wouldn't be better off."
-    maya "他们可能没有总督那么残暴,但他们同样无情和贪婪。贫民窟会在一个主人换成另一个主人,百姓并不会好过。"
+    maya "他们可能没有上尉那么残暴,但他们同样无情和贪婪。贫民窟会在一个主人换成另一个主人,百姓并不会好过。"
 
 # game/BKchapter1.rpy:5350
 translate schinese c1_trial_77de7452:
@@ -9886,7 +9886,7 @@ translate schinese c1_trial_05fe8a4a:
 translate schinese c1_trial_08a1e104:
 
     # "You spot the tribune where the high-ranking officials are seated. After showing your invitation to the guards, they let you climb the steps until you reach a seat next to the captain."
-    "你看到那个主席台,高级官员都坐在那里。你出示邀请函后,卫兵让你爬上台阶,在总督旁边找到一个座位。"
+    "你看到那个主席台,高级官员都坐在那里。你出示邀请函后,卫兵让你爬上台阶,在上尉旁边找到一个座位。"
 
 # game/BKchapter1.rpy:5412
 translate schinese c1_trial_c4dda43b:
@@ -9922,7 +9922,7 @@ translate schinese c1_trial_735875ee:
 translate schinese c1_trial_dcc2b901:
 
     # judge "People of Zan!" with vpunch
-    judge "赞城的人民!" with vpunch
+    judge "泽恩的人民!" with vpunch
 
 # game/BKchapter1.rpy:5430
 translate schinese c1_trial_b512b0db:
@@ -9958,7 +9958,7 @@ translate schinese c1_trial_3f597e69:
 translate schinese c1_trial_45e713cd:
 
     # "You reflect that many of the accused probably stand here because they happened to cross Captain Farah in one way or another."
-    "你陷入沉思,被告中的很多人之所以站在这里,可能只是因为他们不小心得罪了法拉总督。"
+    "你陷入沉思,被告中的很多人之所以站在这里,可能只是因为他们不小心得罪了法拉上尉。"
 
 # game/BKchapter1.rpy:5447
 translate schinese c1_trial_57b409f2:
@@ -9994,7 +9994,7 @@ translate schinese c1_trial_d0d35809:
 translate schinese c1_trial_849fd66e:
 
     # "A deathly silence falls over the crowd. No one hardly ever defends the condemned in Zan. They have been found guilty by gods and men, so surely they must deserve their punishment."
-    "人群陷入了死一般的沉默。在赞城很少有人为被定罪的人辩护。他们已经被神和律法定为有罪,所以他们肯定应该受到惩罚。"
+    "人群陷入了死一般的沉默。在泽恩很少有人为被定罪的人辩护。他们已经被神和律法定为有罪,所以他们肯定应该受到惩罚。"
 
 # game/BKchapter1.rpy:5469
 translate schinese c1_trial_f1106220:
@@ -10024,7 +10024,7 @@ translate schinese c1_trial_b43a2f9c:
 translate schinese c1_trial_b1fc22c0:
 
     # you "Let me speak. I have something to tell the people of Zan."
-    you "让我发言。我有话要对赞城的人民说。"
+    you "让我发言。我有话要对泽恩的人民说。"
 
 # game/BKchapter1.rpy:5483
 translate schinese c1_trial_d84f6703:
@@ -10036,13 +10036,13 @@ translate schinese c1_trial_d84f6703:
 translate schinese c1_trial_e6969a88:
 
     # "You turn to the captain, and flash her a mischevious smile."
-    "你转向法拉总督,露出一个坏坏的笑容。"
+    "你转向法拉上尉,露出一个坏坏的笑容。"
 
 # game/BKchapter1.rpy:5487
 translate schinese c1_trial_6270ae1b:
 
     # you "Ever heard of voice crystals, captain?"
-    you "听说过记录水晶吗,总督?"
+    you "听说过记录水晶吗,上尉?"
 
 # game/BKchapter1.rpy:5489
 translate schinese c1_trial_d857f555:
@@ -10072,7 +10072,7 @@ translate schinese c1_trial_94be2085:
 translate schinese c1_trial_a077b00e:
 
     # "The captain leaps to her feet, and desperately runs down the stairs to try and block your way."
-    "法拉总督跳了起来,冲下楼梯,想挡住你的路。"
+    "法拉上尉跳了起来,冲下楼梯,想挡住你的路。"
 
 # game/BKchapter1.rpy:5506
 translate schinese c1_trial_fcd85d3b:
@@ -10282,7 +10282,7 @@ translate schinese c1_trial_5c945bfd:
 translate schinese c1_trial_7c713a3b:
 
     # lieutenant "Captain? Don't... Don't listen to this man! He is a liar, and a fraud!"
-    lieutenant "总督?不要...不要相信这个人!他是个说谎者,是个骗子!"
+    lieutenant "上尉?不要...不要相信这个人!他是个说谎者,是个骗子!"
 
 # game/BKchapter1.rpy:5618
 translate schinese c1_trial_1abb54c6:
@@ -10318,7 +10318,7 @@ translate schinese c1_trial_be2c7f91:
 translate schinese c1_trial_ba78029c:
 
     # guard "Yes, captain!"
-    guard "是,总督!"
+    guard "是,上尉!"
 
 # game/BKchapter1.rpy:5634
 translate schinese c1_trial_c9f08a1e:
@@ -10336,7 +10336,7 @@ translate schinese c1_trial_0fb6812b:
 translate schinese c1_trial_81de5ddc:
 
     # guard "Yes, captain!" with vpunch
-    guard "是,总督!" with vpunch
+    guard "是,上尉!" with vpunch
 
 # game/BKchapter1.rpy:5642
 translate schinese c1_trial_6e2112bb:
@@ -10390,13 +10390,13 @@ translate schinese c1_trial_d5fb6640:
 translate schinese c1_trial_a0d6289f:
 
     # lieutenant "I've long waited for this day, captain..."
-    lieutenant "我等这一天很久了,总督..."
+    lieutenant "我等这一天很久了,上尉..."
 
 # game/BKchapter1.rpy:5674
 translate schinese c1_trial_46fdd2f6:
 
     # "She holds the dagger to the captain's gut."
-    "她将匕首抵在总督的腹部。"
+    "她将匕首抵在上尉的腹部。"
 
 # game/BKchapter1.rpy:5676
 translate schinese c1_trial_d5c2757f:
@@ -10438,7 +10438,7 @@ translate schinese c1_trial_0e55a904:
 translate schinese c1_trial_5313818a:
 
     # "Leaving the captain and the lieutenant to their stalemate, you step down to the front of the tribune."
-    "离开了总督和中尉僵持不下的局面,你走到台前。"
+    "离开了上尉和中尉僵持不下的局面,你走到台前。"
 
 # game/BKchapter1.rpy:5698
 translate schinese c1_trial_5f451b81:
@@ -10468,7 +10468,7 @@ translate schinese c1_trial_5cd17928:
 translate schinese c1_trial_7862cba7:
 
     # you "People of Zan, I want you to listen... In fact, I am not the one who will be doing the talking."
-    you "赞城的人民,我要你们听好…事实上,发言的人并不是我。"
+    you "泽恩的人民,我要你们听好…事实上,发言的人并不是我。"
 
 # game/BKchapter1.rpy:5710
 translate schinese c1_trial_586c5102:
@@ -10480,13 +10480,13 @@ translate schinese c1_trial_586c5102:
 translate schinese c1_trial_b436f7cf:
 
     # you "You are going to listen to the captain of the city guard, in her very own words."
-    you "你们将听到总督的发言。"
+    you "你们将听到上尉的发言。"
 
 # game/BKchapter1.rpy:5716
 translate schinese c1_trial_725c86fa:
 
     # "Taking out the crystal from your pouch, you rub the proper rune. The crystal starts glowing a very bright light as the voice of the captain fills the air."
-    "你从袋子里取出水晶,摩擦起正确的符文。水晶开始发出明亮的光,总督的声音充满了整个刑场。"
+    "你从袋子里取出水晶,摩擦起正确的符文。水晶开始发出明亮的光,上尉的声音充满了整个刑场。"
 
 # game/BKchapter1.rpy:5719
 translate schinese c1_trial_72f9c99a:
@@ -10498,7 +10498,7 @@ translate schinese c1_trial_72f9c99a:
 translate schinese c1_trial_976c66f6:
 
     # "You play back the conversation you and the captain were having the day before."
-    "你回放了你与总督前一天的对话。"
+    "你回放了你与上尉前一天的对话。"
 
 # game/BKchapter1.rpy:5723
 translate schinese c1_trial_7b00ca0e:
@@ -10540,7 +10540,7 @@ translate schinese c1_trial_40373b70:
 translate schinese c1_trial_ae9b1966:
 
     # "At first, most people were incredulous. But it is unmistakenly the captain's voice, recognizable from her multiple public appearances."
-    "起初,大多数人都不相信。但那无疑是总督的声音,从她公开露面的次数来看很容易辨认。"
+    "起初,大多数人都不相信。但那无疑是上尉的声音,从她公开露面的次数来看很容易辨认。"
 
 # game/BKchapter1.rpy:5739
 translate schinese c1_trial_1459b6e6:
@@ -10606,7 +10606,7 @@ translate schinese c1_trial_e75560d2:
 translate schinese c1_trial_bfd9ae41:
 
     # judge "Captain Farah, come forward."
-    judge "法拉总督,走上前来。"
+    judge "法拉上尉,走上前来。"
 
 # game/BKchapter1.rpy:5783
 translate schinese c1_trial_99f1bd0e:
@@ -10618,7 +10618,7 @@ translate schinese c1_trial_99f1bd0e:
 translate schinese c1_trial_6142326d:
 
     # judge "Captain Farah, do you deny that it was your voice that we could hear on that recording? Voice crystals always tell the truth."
-    judge "法拉总督,你是否承认我们在录音中听到的是你的声音?水晶不会骗人。"
+    judge "法拉上尉,你是否承认我们在录音中听到的是你的声音?水晶不会骗人。"
 
 # game/BKchapter1.rpy:5787
 translate schinese c1_trial_17cf3276:
@@ -10636,7 +10636,7 @@ translate schinese c1_trial_643c7475:
 translate schinese c1_trial_16fb0a95:
 
     # lieutenant "I can vouch for these accusations. I have witnessed the captain's corruption firsthand while working with the city guard. So have ten other guards, whose sworn testimony I hold at your honor's disposal."
-    lieutenant "我可以为这些指控作证。在军队里,我亲眼目睹了总督的腐败行为。还有其他十名士兵,他们的证词我都交到法官面前了。"
+    lieutenant "我可以为这些指控作证。在军队里,我亲眼目睹了上尉的腐败行为。还有其他十名士兵,他们的证词我都交到法官面前了。"
 
 # game/BKchapter1.rpy:5811
 translate schinese c1_trial_76f071eb:
@@ -10654,7 +10654,7 @@ translate schinese c1_trial_45c5976b:
 translate schinese c1_trial_4d89e338:
 
     # judge "Captain Farah, I am placing you under arrest, pending further inquiry. Men, seize her."
-    judge "法拉总督,我正式将你逮捕,待进一步调查。士兵们,抓住她。"
+    judge "法拉上尉,我正式将你逮捕,待进一步调查。士兵们,抓住她。"
 
 # game/BKchapter1.rpy:5829
 translate schinese c1_trial_06ca4659:
@@ -10678,7 +10678,7 @@ translate schinese c1_trial_61358834:
 translate schinese c1_trial_7aa77799:
 
     # "The captain pushes back the guards who tried to rein her in."
-    "总督推开试图拦住她的卫兵。"
+    "上尉推开试图拦住她的卫兵。"
 
 # game/BKchapter1.rpy:5848
 translate schinese c1_trial_543a7783:
@@ -10780,7 +10780,7 @@ translate schinese c1_trial_55302e9d:
 translate schinese c1_trial_8286cc1a:
 
     # kuro "And I thank you, young sir, for bringing this matter to the attention of the people of Zan."
-    kuro "谢谢你,年轻人,把这件事告诉了赞城的人民。"
+    kuro "谢谢你,年轻人,把这件事告诉了泽恩的人民。"
 
 # game/BKchapter1.rpy:5899
 translate schinese c1_trial_fa0fd70f:
@@ -10798,7 +10798,7 @@ translate schinese c1_trial_d728d641:
 translate schinese c1_trial_cab3289b:
 
     # judge "Let it be known that Captain Farah is hereby discharged, by order of the royal court. If no one objects, I therefore declare our faithful lieutenant Lydie the new captain of the city guard."
-    judge "我现在宣布,法拉总督由皇家法院免职。如无异议,我特此任命我们忠诚的中尉莉迪为新任城军队总督。"
+    judge "我现在宣布,法拉上尉由皇家法院免职。如无异议,我特此任命我们忠诚的中尉莉迪为新任城军队上尉。"
 
 # game/BKchapter1.rpy:5908
 translate schinese c1_trial_24c6a6d6:
@@ -10816,13 +10816,13 @@ translate schinese c1_trial_2ae8cdf1:
 translate schinese c1_trial_d6a1d4fe:
 
     # you "Nothing, Your Highness. Let us celebrate our new captain!!!"
-    you "没有,陛下。让我们为新任总督庆祝吧!!!"
+    you "没有,陛下。让我们为新任上尉庆祝吧!!!"
 
 # game/BKchapter1.rpy:5919
 translate schinese c1_trial_b2cbdd65:
 
     # "The crowd sings chants extolling the virtues of the new captain. You join the celebration with your new friends."
-    "人群中响起赞美新任总督美德的欢呼声。你和新朋友一起加入了庆祝活动。"
+    "人群中响起赞美新任上尉美德的欢呼声。你和新朋友一起加入了庆祝活动。"
 
 # game/BKchapter1.rpy:5923
 translate schinese c1_trial_ac89493c:
@@ -10906,13 +10906,13 @@ translate schinese c1_trial_9fbc9288:
 translate schinese c1_trial_c486ae6a:
 
     # maya "I have witnessed first-hand the treachery of both the Guard captain and lieutenant. In fact, she had me kidnapped by her friends in the guild. I don't know what cruel fate would have befell me if I didn't manage to escape in time."
-    maya "我亲眼目睹了护总督和中尉的背信弃义。事实上,她让盗贼公会的人绑架了我。如果我没能及时逃脱,我不知道会遭到什么样的侮辱。"
+    maya "我亲眼目睹了卫兵队长和中尉的背叛。事实上,她让盗贼公会的人绑架了我。如果我没能及时逃脱,我不知道会遭到什么样的侮辱。"
 
 # game/BKchapter1.rpy:5968
 translate schinese c1_trial_0d9e6191:
 
     # "The lieutenant hisses."
-    "中尉嘶声说道。"
+    "中尉嘶声吼道。"
 
 # game/BKchapter1.rpy:5970
 translate schinese c1_trial_4a388f10:
@@ -10954,7 +10954,7 @@ translate schinese c1_trial_fa2e3046:
 translate schinese c1_trial_b67dbdc6:
 
     # kuro "That is good. Judge, bear witness to my royal command: you will make Sergeant Maya the Captain of the Guard, by order of the Crown."
-    kuro "很好。法官,现在我代表王室下达命令:你要任命玛雅中士为新任军队总督,这就是我父亲的命令。"
+    kuro "很好。法官,现在我代表王室下达命令:你要任命玛雅中士为新任军队上尉,这就是我父亲的命令。"
 
 # game/BKchapter1.rpy:5986
 translate schinese c1_trial_f4545d67:
@@ -10966,7 +10966,7 @@ translate schinese c1_trial_f4545d67:
 translate schinese c1_trial_7fc41f7b:
 
     # kuro "Captain, you are to root out all corruption from the city guard's midst."
-    kuro "总督,你要彻底清查并根除城市军队内部的一切腐败行为。"
+    kuro "上尉,你要彻底清查并根除城市军队内部的一切腐败行为。"
 
 # game/BKchapter1.rpy:5990
 translate schinese c1_trial_1c8efe71:
@@ -10996,13 +10996,13 @@ translate schinese c1_trial_040bc795:
 translate schinese c1_trial_513a4214:
 
     # you "Long live the new captain!"
-    you "新任总督万岁!"
+    you "新任上尉万岁!"
 
 # game/BKchapter1.rpy:6011
 translate schinese c1_trial_ffc8be93:
 
     # "The crowd chants alongside you, cheering the new captain's promotion."
-    "人群与你一同欢呼着新任总督的晋升。"
+    "人群与你一同欢呼着新任上尉的晋升。"
 
 # game/BKchapter1.rpy:6013
 translate schinese c1_trial_056f5d0a:
@@ -11038,7 +11038,7 @@ translate schinese c1_ending_maya_9223a92c:
 translate schinese c1_ending_maya_ae181925:
 
     # you "Wow, you guys are enjoying yourself..."
-    you "哇,你们玩得很high啊..."
+    you "哇,你们玩得很嗨啊..."
 
 # game/BKchapter1.rpy:6087
 translate schinese c1_ending_maya_194cf6ad:
@@ -11056,7 +11056,7 @@ translate schinese c1_ending_maya_d5b20412:
 translate schinese c1_ending_maya_3d3a555d:
 
     # guard "It's Captain Maya to you, punk!"
-    guard "你怎么敢直呼总督名号!"
+    guard "你怎么敢直呼上尉名号!"
 
 # game/BKchapter1.rpy:6105
 translate schinese c1_ending_maya_0e3a1bef:
@@ -11092,7 +11092,7 @@ translate schinese c1_ending_maya_60398159:
 translate schinese c1_ending_maya_86ff4112:
 
     # roz "Listen, ahem... I'm sorry I misjudged you earlier, [MC.name]. That was one hell of a public spanking you gave Captain Farrah! BWAHAHAHA!"
-    roz "听着,咳咳...我之前对你的判断是错误的,[MC.name]。你在法拉总督面前那场公开处刑可真是精彩绝伦!哈哈哈哈!"
+    roz "听着,咳咳...我之前对你的判断是错误的,[MC.name]。你在法拉上尉面前那场公开处刑可真是精彩绝伦!哈哈哈哈!"
 
 # game/BKchapter1.rpy:6117
 translate schinese c1_ending_maya_daee8576:
@@ -11116,7 +11116,7 @@ translate schinese c1_ending_maya_f7f4d0e4:
 translate schinese c1_ending_maya_5ce8072b:
 
     # roz "Oh, I see... Maya isn't much for parties, anyway. I think she's up in the captain office, planning the city guard's future, or some other similarly boring stuff..."
-    roz "哦,我明白了...反正玛雅也不怎么喜欢参加派对。我想她现在应该在总督办公室里,策划着军队的未来,或者其他无聊的事情..."
+    roz "哦,我明白了...反正玛雅也不怎么喜欢参加派对。我想她现在应该在上尉办公室里,策划着军队的未来,或者其他无聊的事情..."
 
 # game/BKchapter1.rpy:6126
 translate schinese c1_ending_maya_ee49ba53:
@@ -11158,7 +11158,7 @@ translate schinese c1_ending_maya_d98e12b5:
 translate schinese c1_ending_maya_126c483f:
 
     # maya "Well, we fired all the officers and disciplined the men that were involved in the captain's schemes... Many of them had run away of their own, anyway."
-    maya "是的,我们解雇了所有的高层官员,并惩治了那些参与总督阴谋的士兵...其实很多人都自己逃走了。"
+    maya "是的,我们解雇了所有的高层官员,并惩治了那些参与上尉阴谋的士兵...其实很多人都自己逃走了。"
 
 # game/BKchapter1.rpy:6159
 translate schinese c1_ending_maya_406281c5:
@@ -11362,7 +11362,7 @@ translate schinese c1_ending_maya_89bb34b1:
 translate schinese c1_ending_maya_f479c23b:
 
     # roz "Maya, we've captured a spy! Shit, what a fury... Tie her up and bring her to the captain upstairs!"
-    roz "玛雅,我们抓到一个间谍了!妈的,真他妈凶狠...把她绑起来,带到总督那里去!"
+    roz "玛雅,我们抓到一个间谍了!妈的,真他妈凶狠...把她绑起来,带到上尉那里去!"
 
 # game/BKchapter1.rpy:6271
 translate schinese c1_ending_maya_fc4fd754:
@@ -11374,7 +11374,7 @@ translate schinese c1_ending_maya_fc4fd754:
 translate schinese c1_ending_maya_91e36d18:
 
     # guard "Captain! We have intercepted a spy as she was trying to reach your quarters."
-    guard "总督！我们抓到一个女间谍,她正试图接近您的住处。"
+    guard "上尉！我们抓到一个女间谍,她正试图接近您的住处。"
 
 # game/BKchapter1.rpy:6281
 translate schinese c1_ending_maya_381d4814:
@@ -11386,7 +11386,7 @@ translate schinese c1_ending_maya_381d4814:
 translate schinese c1_ending_maya_b01ea08e:
 
     # renza "Let me go, you brute! I'm just an admirer of the captain... I wanted to pay my respects..."
-    renza "放开我,你们这群野蛮人!我只是总督的崇拜者...我想来向您表达敬意..."
+    renza "放开我,你们这群野蛮人!我只是上尉的崇拜者...我想来向您表达敬意..."
 
 # game/BKchapter1.rpy:6292
 translate schinese c1_ending_maya_10f11ea2:
@@ -11416,7 +11416,7 @@ translate schinese c1_ending_maya_a2f8b290:
 translate schinese c1_ending_maya_40144f2d:
 
     # guard "But, Captain, Roz said..."
-    guard "但是,总督大人,罗兹中尉说..."
+    guard "但是,上尉大人,罗兹中尉说..."
 
 # game/BKchapter1.rpy:6302
 translate schinese c1_ending_maya_ac9c640a:
@@ -11428,7 +11428,7 @@ translate schinese c1_ending_maya_ac9c640a:
 translate schinese c1_ending_maya_2c71d790:
 
     # guard "Yes, my Lady."
-    guard "是,总督大人。"
+    guard "是,上尉大人。"
 
 # game/BKchapter1.rpy:6310
 translate schinese c1_ending_maya_a121c7c6:
@@ -11506,7 +11506,7 @@ translate schinese c1_ending_maya_4907547d:
 translate schinese c1_ending_maya_8609fa7f:
 
     # renza "Come on, Captain. You have me cornered. I only request a moment with [MC.name]."
-    renza "拜托,总督。你已经把我逼到绝境了。我只是请求能和[MC.name]说一会儿话。"
+    renza "拜托,上尉。你已经把我逼到绝境了。我只是请求能和[MC.name]说一会儿话。"
 
 # game/BKchapter1.rpy:6338
 translate schinese c1_ending_maya_3c1ad4b2:
@@ -11590,7 +11590,7 @@ translate schinese c1_ending_maya_902c3fae:
 translate schinese c1_ending_maya_0e66ba5d:
 
     # renza "Come on, don't flatter yourself, [MC.name]. I really came here to scout the captain's vault. I thought the party was a perfect occasion to infiltrate... Until I ran into this big, dumb guy."
-    renza "别自以为是了,[MC.name]。我来这里是为了撬开总督的金库。我认为这个派对是渗透的好机会......直到我遇到了这个又大又傻的家伙。"
+    renza "别自以为是了,[MC.name]。我来这里是为了撬开上尉的金库。我认为这个派对是渗透的好机会......直到我遇到了这个又大又傻的家伙。"
 
 # game/BKchapter1.rpy:6373
 translate schinese c1_ending_maya_abe9b8c6:
@@ -11836,7 +11836,7 @@ translate schinese c1_ending_maya_e35fad61:
 translate schinese c1_ending_maya_cd61cc23:
 
     # "You've managed to salvage a bit of your reputation with Renza and the thieves guild. Your reputation with the city guard has been damaged, however."
-    "你已经在一定程度上恢复了与伦萨和盗贼公会的名声。但是,你在军队中的声誉受损了。"
+    "你已经在一定程度上恢复了与伦萨和盗贼公会的名声。但是,你在军队中的声望受损了。"
 
 # game/BKchapter1.rpy:6499
 translate schinese c1_ending_maya_b48aacce:
@@ -11884,7 +11884,7 @@ translate schinese c1_ending_maya_bd7b0d9c:
 translate schinese c1_ending_maya_84e5bf9f:
 
     # "Your reputation with the city guard has increased. However, you have lost access to the thieves guild for good."
-    "你在军队中的声誉有所提高。然而,你永远丧失了进入盗贼公会的机会。"
+    "你在军队中的声望有所提高。然而,你永远丧失了进入盗贼公会的机会。"
 
 # game/BKchapter1.rpy:6552
 translate schinese c1_ending_lieutenant_8b9c3f2b:
@@ -11902,13 +11902,13 @@ translate schinese c1_ending_lieutenant_68590058:
 translate schinese c1_ending_lieutenant_32b6dad3:
 
     # you "Evening. I'm looking for lieuten... I mean, captain Lydie."
-    you "晚上好。我在找莉....我是说,莉迪总督。"
+    you "晚上好。我在找莉....我是说,莉迪上尉。"
 
 # game/BKchapter1.rpy:6559
 translate schinese c1_ending_lieutenant_655ef585:
 
     # guard "She's up in the captain suite, sampling some of Farah's fancy champagne reserve, no doubt!"
-    guard "她正在总督办公室里品尝法拉的名贵香槟,这一点毋庸置疑!"
+    guard "她正在上尉办公室里品尝法拉的名贵香槟,这一点毋庸置疑!"
 
 # game/BKchapter1.rpy:6561
 translate schinese c1_ending_lieutenant_cc263b82:
@@ -12076,7 +12076,7 @@ translate schinese c1_ending_lieutenant_225f9fa6:
 translate schinese c1_ending_lieutenant_c2866bb3:
 
     # lieutenant "Did I tell you that the good captain had a queen-size bed with a giant dodo feather mattress? It's ridiculously comfortable..."
-    lieutenant "我没告诉过你,这位好总督有一张特大号的床,铺着天鹅绒床垫吗?太舒服了..."
+    lieutenant "我没告诉过你,这位好上尉有一张特大号的床,铺着天鹅绒床垫吗?太舒服了..."
 
 # game/BKchapter1.rpy:6639
 translate schinese c1_ending_lieutenant_4b91e07a:
@@ -12112,7 +12112,7 @@ translate schinese c1_ending_lieutenant_97f04b16:
 translate schinese c1_ending_lieutenant_82dce0bc:
 
     # "The captain rubs her tits alongside your body, while tugging on your hard cock."
-    "总督用她的乳头剐蹭着你的身体,同时用手抚摸着你硬挺的肉棒。"
+    "上尉用她的乳头剐蹭着你的身体,同时用手抚摸着你硬挺的肉棒。"
 
 # game/BKchapter1.rpy:6659
 translate schinese c1_ending_lieutenant_1e90ed2a:
@@ -12190,7 +12190,7 @@ translate schinese c1_ending_captain_8b9e7a44:
 translate schinese c1_ending_captain_82798748:
 
     # "Second guard" "Leave him alone, man. He's with the captain."
-    "另一个守卫" "别管他,伙计。他是总督的人。"
+    "另一个守卫" "别管他,伙计。他是上尉的人。"
 
 # game/BKchapter1.rpy:6734
 translate schinese c1_ending_captain_adc8763d:
@@ -12202,7 +12202,7 @@ translate schinese c1_ending_captain_adc8763d:
 translate schinese c1_ending_captain_715f7fa0:
 
     # "Second guard" "He's a guest, coming to see the captain. She told us he was coming. Let him pass, or she'll get you flogged for your trouble."
-    "另一个守卫" "他是客人,来见总督的。她告诉我们他会来。让他进去,耽误了她会让你因此受罚。"
+    "另一个守卫" "他是客人,来见上尉的。她告诉我们他会来。让他进去,耽误了她会让你因此受罚。"
 
 # game/BKchapter1.rpy:6738
 translate schinese c1_ending_captain_c3c78241:
@@ -12220,7 +12220,7 @@ translate schinese c1_ending_captain_022d059c:
 translate schinese c1_ending_captain_b6dd8224:
 
     # you "Ha! That's more like it. Take me to the captain quarters."
-    you "哈!就该是这样。带我去总督的房间。"
+    you "哈!就该是这样。带我去上尉的房间。"
 
 # game/BKchapter1.rpy:6744
 translate schinese c1_ending_captain_4d09692f:
@@ -12244,7 +12244,7 @@ translate schinese c1_ending_captain_4d09692f_1:
 translate schinese c1_ending_captain_a8ad7751:
 
     # "Second guard" "Damn lucky bastard... Being summoned to the captain's chambers at this late hour, there can only be one reason..."
-    "另一个守卫" "真是个幸运色狼...在这么晚的时候被叫到总督的房间里,只能发生一件事..."
+    "另一个守卫" "真是个幸运色狼...在这么晚的时候被叫到上尉的房间里,只能发生一件事..."
 
 # game/BKchapter1.rpy:6773
 translate schinese c1_ending_captain_abd6ec05:
@@ -12442,7 +12442,7 @@ translate schinese c1_ending_captain_2060fe33:
 translate schinese c1_ending_captain_6b3a168d:
 
     # captain "Well, the city guard still doesn't have jurisdiction over the noble and royal quarters of Zan, of course... Those stuck-up aristocrats don't want us around, on account of us being low-born commoners."
-    captain "嗯,军队当然没有管辖权进入赞城的贵族内城和富人区...那些自以为是的贵族们不想让我们这些出身平民的人靠近，他们手里有大量的私人军队。"
+    captain "嗯,军队当然没有管辖权进入泽恩的贵族内城和富人区...那些自以为是的贵族们不想让我们这些出身平民的人靠近，他们手里有大量的私人军队。"
 
 # game/BKchapter1.rpy:6851
 translate schinese c1_ending_captain_8892c339:
@@ -12772,7 +12772,7 @@ translate schinese c1_ending_captain_38662d7b:
 translate schinese c1_ending_captain_b12cf13e:
 
     # "The captain is truly a hungry slut. She bounces on and off your cock, shoving it ever deeper inside her with every move."
-    "这位总督简直就是天生的魅魔,她扭动腰肢,每次都能让肉棒朝着更深的地方顶去。"
+    "这位上尉简直就是天生的魅魔,她扭动腰肢,每次都能让肉棒朝着更深的地方顶去。"
 
 # game/BKchapter1.rpy:6994
 translate schinese c1_ending_captain_5cff28fd:
@@ -12904,13 +12904,13 @@ translate schinese c1_ending_captain_63af4fea:
 translate schinese c1_ending_captain_54bb2b1f:
 
     # "You are now an ally of the city guard."
-    "你现在是军队的合作伙伴了。"
+    "你现在是军方的合作伙伴了。"
 
 # game/BKchapter1.rpy:7094
 translate schinese c1_captain_fate_c20eb056:
 
     # "Meanwhile, deep down inside the dungeons of Zan's infamous Xotar prison."
-    "与此同时,在赞城恶名昭著的Xotar监狱深处。"
+    "与此同时,在泽恩恶名昭著的黑水监狱深处。"
 
 # game/BKchapter1.rpy:7100
 translate schinese c1_captain_fate_cb895a12:
@@ -12922,7 +12922,7 @@ translate schinese c1_captain_fate_cb895a12:
 translate schinese c1_captain_fate_dbe60dd8:
 
     # guard "That's right, Captain Slutface... Massage my cock with your hungry pussy..."
-    guard "就是这样,大骚货总督...用你欲求不满的小穴来侍奉我的鸡巴吧..."
+    guard "就是这样,大骚货上尉...用你淫荡下贱的小穴来侍奉我的鸡巴吧..."
 
 # game/BKchapter1.rpy:7108
 translate schinese c1_captain_fate_3bacb072:
@@ -12964,7 +12964,7 @@ translate schinese c1_captain_fate_e4a7cdd3:
 translate schinese c1_captain_fate_f88989df:
 
     # "Young guard" "Aw, it's unfair... I've also been dying to fuck that whore captain since the first day she ordered me to do her chores... The bitch had me lashed for spilling one of her expensive skin products."
-    "年轻的守卫" "啊,真不公平...从那个女总督第一次命令我做杂活起,我就一直很想操她的小穴...那个贱人因为我弄洒了她一瓶价格不菲的护肤品而让我被鞭打。"
+    "年轻的守卫" "啊,真不公平...从那个女上尉第一次命令我做杂活起,我就一直很想操她的小穴...那个贱人因为我弄洒了她一瓶价格不菲的护肤品而让我被鞭打。"
 
 # game/BKchapter1.rpy:7127
 translate schinese c1_captain_fate_26c758db:
@@ -13304,7 +13304,7 @@ translate schinese strings:
 
     # game/BKchapter1.rpy:1343
     old "What do you do?"
-    new "你是干什么的?"
+    new "你想怎么做?"
 
     # game/BKchapter1.rpy:1343
     old "Let him pass"

@@ -1450,7 +1450,7 @@ translate schinese jobgirl_beach_4_a727a38e:
 translate schinese jobgirl_beach_4_eb0bd925:
 
     # anika "I know her since before we moved to Zan, so it's natural I care about her like a little sister."
-    anika "从她搬到赞城之前我就认识她,所以我自然也把她当成妹妹一样关心她。"
+    anika "从她搬到泽恩之前我就认识她,所以我自然也把她当成妹妹一样关心她。"
 
 # game/kite_jobgirl 2_beach.rpy:750
 translate schinese jobgirl_beach_4_5ba90e2a:

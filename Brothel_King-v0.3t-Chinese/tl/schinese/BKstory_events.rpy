@@ -3052,7 +3052,7 @@ translate schinese farm_meet_gizel_e90493bc:
 translate schinese farm_meet_gizel_2164b824:
 
     # "You ponder the meaning of this for a second. Elves are very rare in Zan, and much-maligned, because of their role in the ongoing war in the Holy Lands. To say that they are being frowned upon in the streets of Zan would be an understatement."
-    "你思考了一下这个发现的意义。在赞境内,精灵极为罕见,且因为在圣地战争中的角色而遭到贬斥。在赞城街头遭遇冷眼相待,可以说是再平常不过了。"
+    "你思考了一下这个发现的意义。在赞境内,精灵极为罕见,且因为在圣地战争中的角色而遭到贬斥。在泽恩街头遭遇冷眼相待,可以说是再平常不过了。"
 
 # game/BKstory_events.rpy:1590
 translate schinese farm_meet_gizel_8b5979ab:
@@ -3748,7 +3748,7 @@ translate schinese farm_meet_gizel2_e70dfbd4:
 translate schinese farm_meet_gizel2_b91c5da5:
 
     # gizel shy "Gizel is my name, sir, but I am no witch... I'm just a teenage beggar, come to Zan to make a few denars..."
-    gizel shy "我叫吉泽尔,先生,但我并不是女巫...我只是个来到赞城想赚几个代纳尔的少女乞丐..."
+    gizel shy "我叫吉泽尔,先生,但我并不是女巫...我只是个来到泽恩想赚几个代纳尔的少女乞丐..."
 
 # game/BKstory_events.rpy:1996
 translate schinese farm_meet_gizel2_f77721f2:
@@ -9406,7 +9406,7 @@ translate schinese farm_meet_stella_4b141e34:
 translate schinese farm_meet_stella_f10c59ae:
 
     # stella "Sir, I can assure you all our business here is perfectly legal. The treaty passed between the Blood Islands and King Pharo states that..."
-    stella "先生,我可以向您保证,我们这里所有的业务都是合法的。血岛和法老国王之间签订的条约中明确规定了..."
+    stella "先生,我可以向您保证,我们这里所有的业务都是合法的。鲜血群岛和法老国王之间签订的条约中明确规定了..."
 
 # game/BKstory_events.rpy:4866
 translate schinese farm_meet_stella_b1677587:
@@ -9550,7 +9550,7 @@ translate schinese farm_meet_stella_1b24ad86:
 translate schinese farm_meet_stella_6f555446:
 
     # stella "Can I help you? You don't look like you can afford a ten thousand denar custom sex slave..."
-    stella "我能为您效劳吗?您可看不起得起一个万金贵的定制性奴..."
+    stella "我能为您效劳吗?您看起来可不像买得起价格上万的奴隶的人..."
 
 # game/BKstory_events.rpy:4940
 translate schinese farm_meet_stella_aafea0c7:
@@ -9574,7 +9574,7 @@ translate schinese farm_meet_stella_7885d861:
 translate schinese farm_meet_stella_c284198a:
 
     # you "Well, you called your female slaves 'mares'... If I'm not mistaken, the Blood Islands also breed stallions? Male slaves with abnormally large dicks?"
-    you "您说的'母马'女奴,我不知道是否没有搞错。血岛上也有'种马'奴隶,那些阳具异常粗大的男奴?"
+    you "您说的'母马'女奴,我不知道是否没有搞错。鲜血群岛上也有'种马'奴隶,那些阳具异常粗大的男奴?"
 
 # game/BKstory_events.rpy:4948
 translate schinese farm_meet_stella_6b9e97b0:
@@ -10204,7 +10204,7 @@ translate schinese stella_reward2_b4c41dc8:
 translate schinese stella_reward2_2f273ffa:
 
     # stella "Here, have this. It's a Blood Islands fridge magnet."
-    stella "拿着这个吧,这是一枚血岛冰箱贴。"
+    stella "拿着这个吧,这是一枚鲜血群岛冰箱贴。"
 
 # game/BKstory_events.rpy:5252
 translate schinese stella_reward2_19e61de1:
@@ -18364,7 +18364,7 @@ translate schinese farm_first_beast_1d87e0e9:
 translate schinese farm_first_beast_0ef8fbe1:
 
     # "You didn't get any prestige, because you didn't want {b}{i}anyone{/i}{/b} to know you were turned into a giant toad."
-    "你没有获得任何声誉,因为你不想让{b}{i}任何人{/i}{/b}知道你被变成了一只巨大的蟾蜍。"
+    "你没有获得任何声望,因为你不想让{b}{i}任何人{/i}{/b}知道你被变成了一只巨大的蟾蜍。"
 
 # game/BKstory_events.rpy:9388
 translate schinese farm_first_monster_bd14abf4:
@@ -20122,7 +20122,7 @@ translate schinese farm_first_stallion_6f576d7e:
 translate schinese farm_first_stallion_6b594460:
 
     # you "'Welcoming your first stallion in the family, a friendly guide' from Blood Orange Inc., sponsored by the Blood Islands' Tourist Office."
-    you "来自血橙公司赞助,血岛旅游局出品的《迎接你家第一匹种马,友好指南》。"
+    you "来自血橙公司赞助,鲜血群岛旅游局出品的《迎接你家第一匹种马,友好指南》。"
 
 # game/BKstory_events.rpy:10332
 translate schinese farm_first_stallion_06b26405:
@@ -20158,7 +20158,7 @@ translate schinese farm_first_stallion_1c000cc4:
 translate schinese farm_first_stallion_ef483266:
 
     # "Fancy Brochure" "Stallions are raised in the safety of the Blood Islands' magic ranches, where they are free to roam around their eco-friendly metal cage."
-    "Fancy Brochure" "种马在血岛魔法牧场的安全环境中被培养,它们可以自由在环保的金属笼舍中漫游。"
+    "Fancy Brochure" "种马在鲜血群岛魔法牧场的安全环境中被培养,它们可以自由在环保的金属笼舍中漫游。"
 
 # game/BKstory_events.rpy:10352
 translate schinese farm_first_stallion_4be6f4ea:
@@ -20278,13 +20278,13 @@ translate schinese farm_first_stallion_1cd0ff95:
 translate schinese farm_first_stallion_754436c8:
 
     # "You give up on talking to Gizel for today. She's having way too much fun."
-    "你今天放弃了和Gizel交谈。她正玩得太high了。"
+    "你今天放弃了和吉泽交谈。她正玩得太high了。"
 
 # game/BKstory_events.rpy:10421
 translate schinese bitches_be_crazy_5f10a43d:
 
     # "This morning, you asked Sill to fetch your old Valyrian dictionary."
-    "今天早上,你让Sill去拿你的古老瓦雷利亚词典。"
+    "今天早上,你让希露去拿你的陈旧的瓦雷利亚语词典。"
 
 # game/BKstory_events.rpy:10425
 translate schinese bitches_be_crazy_0985b6df:
@@ -20326,7 +20326,7 @@ translate schinese bitches_be_crazy_96a70992:
 translate schinese bitches_be_crazy_d67dfdcf:
 
     # "It turns out the ancient Valyrians didn't usurp their reputation for great wisdom, after all."
-    "看来古老的瓦雷利亚人没有辜负他们卓越智慧的声誉。"
+    "看来古老的瓦雷利亚人没有辜负他们卓越智慧的声望。"
 
 # game/BKstory_events.rpy:10452
 translate schinese shop_bath_scene_4ff7e36a:
@@ -25432,7 +25432,7 @@ translate schinese kosmo_returns2_4cc443c4:
 translate schinese kosmo_returns2_26659a6c:
 
     # kosmo "I offered to pay for her scholarship in Zan, but didn't tell her I charge a 200 percent interest rate."
-    kosmo "我提出给她在赞城支付学费,但没告诉她利率有200\%。"
+    kosmo "我提出给她在泽恩支付学费,但没告诉她利率有200\%。"
 
 # game/BKstory_events.rpy:13532
 translate schinese kosmo_returns2_84a71ea6:
@@ -25924,7 +25924,7 @@ translate schinese kosmo_returns2_9906bd22:
 translate schinese kosmo_returns2_d289eed0:
 
     # kosmo "I posted an ad for a math and science teacher at the job posting corner in Zan..."
-    kosmo "我在赞城的工作招聘角落发布了一则数学和科学教师的广告..."
+    kosmo "我在泽恩的工作招聘角落发布了一则数学和科学教师的广告..."
 
 # game/BKstory_events.rpy:13721
 translate schinese kosmo_returns2_29e04527:
@@ -30394,7 +30394,7 @@ translate schinese resource_exchange_menu_7aeb1fa4:
 translate schinese resource_exchange_menu_92eea70d:
 
     # "You have received a {b}basic builder license{/b}."
-    "你已获得{b}基础建筑师执照{/b}。"
+    "你已获得{b}初级建筑师执照{/b}。"
 
 # game/BKstory_events.rpy:16012
 translate schinese resource_exchange_menu_84f274c1:
@@ -30520,7 +30520,7 @@ translate schinese new_builder_license_2107e539:
 translate schinese new_builder_license_d7b538e2:
 
     # "You have received a {b}master builder license{/b}."
-    "你已获得{b}大师级建筑师执照{/b}。"
+    "你已获得{b}特级建筑师执照{/b}。"
 
 # game/BKstory_events.rpy:16100
 translate schinese new_builder_license_3b458cf3:
@@ -30574,7 +30574,7 @@ translate schinese new_builder_license_2107e539_1:
 translate schinese new_builder_license_d7b538e2_1:
 
     # "You have received a {b}master builder license{/b}."
-    "你已获得{b}总建筑师执照{/b}。"
+    "你已获得{b}特级建筑师执照{/b}。"
 
 # game/BKstory_events.rpy:16137
 translate schinese new_builder_license_3b458cf3_1:
@@ -33418,7 +33418,7 @@ translate schinese meet_gurigura_997946e3:
 translate schinese meet_gurigura_3bee18f2:
 
     # "Old Priest" "Hello, my dear girl! What are you selling? *gentle smile*"
-    "Old Priest" "你好,亲爱的孩子!你在卖什么?*温和地微笑*"
+    "老牧师" "你好,亲爱的孩子!你在卖什么?*温和地微笑*"
 
 # game/BKstory_events.rpy:17540
 translate schinese meet_gurigura_e1ae02ad:
@@ -33430,7 +33430,7 @@ translate schinese meet_gurigura_e1ae02ad:
 translate schinese meet_gurigura_b1ab0584:
 
     # "Old Priest" "By Arios, that's nice! Maybe I'll buy a few for the children of the orphanage..."
-    "Old Priest" "依艾洛斯,真好!也许我能为孤儿院的孩子们买几件..."
+    "老牧师" "依艾洛斯,真好!也许我能为孤儿院的孩子们买几件..."
 
 # game/BKstory_events.rpy:17544
 translate schinese meet_gurigura_b846652a:
@@ -33442,7 +33442,7 @@ translate schinese meet_gurigura_b846652a:
 translate schinese meet_gurigura_dc513ab6:
 
     # "Old Priest" "Well, sure, child, oh, uhm..."
-    "Old Priest" "好吧,当然,孩子,呃,嗯..."
+    "老牧师" "好吧,当然,孩子,呃,嗯..."
 
 # game/BKstory_events.rpy:17548
 translate schinese meet_gurigura_267120c1:
@@ -33454,7 +33454,7 @@ translate schinese meet_gurigura_267120c1:
 translate schinese meet_gurigura_2b3f98a6:
 
     # "Old Priest" "What the..."
-    "Old Priest" "这是什么..."
+    "老牧师" "这是什么..."
 
 # game/BKstory_events.rpy:17552
 translate schinese meet_gurigura_5fc1ef0e:
@@ -33466,7 +33466,7 @@ translate schinese meet_gurigura_5fc1ef0e:
 translate schinese meet_gurigura_ecdf746c:
 
     # "Old Priest" "This is outrageous!!! What in Arios' name is this!!!"
-    "Old Priest" "这太离谱了!!!这到底是什么东西!!!"
+    "老牧师" "这太离谱了!!!这到底是什么东西!!!"
 
 # game/BKstory_events.rpy:17556
 translate schinese meet_gurigura_5ed99315:
@@ -33478,7 +33478,7 @@ translate schinese meet_gurigura_5ed99315:
 translate schinese meet_gurigura_b8501947:
 
     # "Old Priest" "GWAAAAAAAH!" with vpunch
-    "Old Priest" "啊啊啊啊啊啊!!!" with vpunch
+    "老牧师" "啊啊啊啊啊啊!!!" with vpunch
 
 # game/BKstory_events.rpy:17560
 translate schinese meet_gurigura_292c869c:
@@ -33490,13 +33490,13 @@ translate schinese meet_gurigura_292c869c:
 translate schinese meet_gurigura_88073ed4:
 
     # "Other passerby" "So that's what those ample robes are hiding..."
-    "Other passerby" "原来你那宽大的长袍下藏着这个啊..."
+    "路过的行人" "原来你那宽大的长袍下藏着这个啊..."
 
 # game/BKstory_events.rpy:17563
 translate schinese meet_gurigura_73201f68:
 
     # "Old Priest" "UWAAAAAAAAH!!!" with vpunch
-    "Old Priest" "啊啊啊啊啊啊!!!" with vpunch
+    "老牧师" "啊啊啊啊啊啊!!!" with vpunch
 
 # game/BKstory_events.rpy:17565
 translate schinese meet_gurigura_5332ff1f:
@@ -33532,7 +33532,7 @@ translate schinese meet_gurigura_6a5d1f46:
 translate schinese meet_gurigura_b88cdad3:
 
     # gurigura "I know you! We said 'hi' at the house where women lose!"
-    gurigura "我认识你!我们在那个女性失去的房子里打过招呼。"
+    gurigura "我记得你!我们在那个女性放松的地方打过招呼。"
 
 # game/BKstory_events.rpy:17582
 translate schinese meet_gurigura_fc28ec78:
@@ -34798,7 +34798,7 @@ translate schinese meet_giftgirl_bb9dc85b:
 translate schinese meet_twins_8512a8b0:
 
     # "Pilgrim Road is an iconic street in Zan, a long avenue that crosses the city all the way from the Slums to the magnificent Arios Cathedra."
-    "朝圣路是赞城中最著名的街道之一,一条横跨整个城市的大道,从贫民窟一直延伸到壮丽的亚力奥斯大教堂。"
+    "朝圣路是泽恩中最著名的街道之一,一条横跨整个城市的大道,从贫民窟一直延伸到壮丽的亚力奥斯大教堂。"
 
 # game/BKstory_events.rpy:18219
 translate schinese meet_twins_33c8d5e5:
@@ -39337,7 +39337,7 @@ translate schinese strings:
 
     # game/BKstory_events.rpy:16582
     old "接受提议(1000 gold)"
-    new "接受提议(1000 金币)"
+    new "接受提议(1000金币)"
 
     # game/BKstory_events.rpy:16582
     old "拒绝请求"

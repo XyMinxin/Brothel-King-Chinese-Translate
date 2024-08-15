@@ -2161,7 +2161,7 @@ init -2 python:
 
             if score >= (reversed_result_dict[rep_gains_dict[self.rank][relative_rank]] + self.get_effect("special", "score_to_rep")):
                 pos_rep *= dice(len(customers))
-                rep_ttip = "声誉提升：+%s" % str_dec(pos_rep, 1)
+                rep_ttip = "声望提升：+%s" % str_dec(pos_rep, 1)
                 # First customer effect
                 if first_customer:
                     first_rep_boost = self.get_effect("boost", "first customer rep")
@@ -2172,7 +2172,7 @@ init -2 python:
 
             elif score < (reversed_result_dict[rep_loss_dict[self.rank][relative_rank]] - self.get_effect("special", "score_to_rep")):
                 neg_rep *= dice(len(customers))
-                rep_ttip = "声誉下降：%s" % str_dec(neg_rep)
+                rep_ttip = "声望下降：%s" % str_dec(neg_rep)
                 return neg_rep, rep_ttip
 
             else:
@@ -3473,7 +3473,7 @@ init -2 python:
 
             self.rep += chg
 
-            if not silent: notify("声誉：%s" % plus_text(int(chg)), col="rep", pic=self.portrait)
+            if not silent: notify("声望：%s" % plus_text(int(chg)), col="rep", pic=self.portrait)
 
             return chg
 

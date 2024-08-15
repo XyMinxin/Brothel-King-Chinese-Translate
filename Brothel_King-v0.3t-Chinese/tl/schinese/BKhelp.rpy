@@ -1894,7 +1894,7 @@ translate schinese help_farm_menu_bf18b887:
 translate schinese help_farm_menu_887e01c7:
 
     # gizel "Stallions are magically brainwashed sex-slaves from the Blood Islands, bred selectively for their unnaturally large dicks..."
-    gizel "种马是从血岛带来的, 经过选择性培育的魔法洗脑性奴隶,拥有非自然的巨大阴茎...."
+    gizel "种马是从鲜血群岛带来的, 经过选择性培育的魔法洗脑性奴隶,拥有非自然的巨大阴茎...."
 
 # game/BKhelp.rpy:1911
 translate schinese help_farm_menu_0980844a:
@@ -3760,7 +3760,7 @@ translate schinese strings:
     new "晋升你的女孩们"
 
     # game/BKhelp.rpy:2526
-    old "提高青楼的声誉"
+    old "提高青楼的声望"
     new "提高青楼的声望"
 
     # game/BKhelp.rpy:2526

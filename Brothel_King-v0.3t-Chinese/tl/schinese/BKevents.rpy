@@ -4054,7 +4054,7 @@ translate schinese run_contract_cbdff8b2:
 translate schinese run_contract_end_9710ada1:
 
     # "Congratulations! You have received [gold] gold. The reputations of your brothel and [girl_names] have increased."
-    "恭喜!你获得了[gold]金币。你的青楼和[girl_names]的声誉都有所提升。"
+    "恭喜!你获得了[gold]金币。你的青楼和[girl_names]的声望都有所提升。"
 
 # game/BKevents.rpy:4614
 translate schinese run_contract_end_6a4d5da9:
@@ -4084,13 +4084,13 @@ translate schinese run_contract_end_6a99d81e:
 translate schinese run_contract_end_f6139c85:
 
     # "[girl.name] performed poorly, but as she met the organizer's bonus requirement, they reluctantly agreed to refund your contract fee ([con.base_value] gold).\nNevertheless, your reputation suffered."
-    "[girl.name]的表现很差,但由于她满足了组织者的额外要求,他们勉强同意退还你的合约费([con.base_value]金币)。\n不过,你的声誉受到了损害。"
+    "[girl.name]的表现很差,但由于她满足了组织者的额外要求,他们勉强同意退还你的合约费([con.base_value]金币)。\n不过,你的声望受到了损害。"
 
 # game/BKevents.rpy:4651
 translate schinese run_contract_end_c489819d:
 
     # "Because of [girl_names]'s poor performance, you have received no reward for this contract. Your brothel's reputation has suffered."
-    "由于[girl_names]的表现不佳,你没有得到任何奖励。你的青楼声誉受损。"
+    "由于[girl_names]的表现不佳,你没有得到任何奖励。你的青楼声望受损。"
 
 # game/BKevents.rpy:4673
 translate schinese contract_MC_event_83c87956:
@@ -5110,7 +5110,7 @@ translate schinese contract_MC_event_986e6b5f:
 translate schinese contract_MC_event_51f206db:
 
     # "Your reputation has suffered."
-    "你的声誉受到损害。"
+    "你的声望受到损害。"
 
 # game/BKevents.rpy:5441
 translate schinese contract_MC_event_3f4cbee1:

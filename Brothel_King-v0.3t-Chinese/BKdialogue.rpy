@@ -2069,7 +2069,7 @@ init -1 python:
 
     add_dialogue("free_job_request", ("very introvert"), ["g: 嗨, [MC.name].", "mc: 嗨, [girl.name].", "g: 我能为你工作吗?", "mc: 呃?", "g: 我说, 我能为你工作吗? 我需要钱。这能有多难呢?", "mc: 嗯…这是一个出乎意料的要求....让我想想."], multiple=True)
     add_dialogue("refuse farm", ("generic"), ["不！不要去农场！我清楚那里发生了什么事情....我拒绝去!", "我不想去农场！求你了，主人，不要!", "不！不要去农场！求你了...", "我不能去，主人....我不能....请饶了我..."])
-    add_dialogue("gizel take girl to farm", ("nerd"), ("完美的！血岛种马迫切需要奴隶的小穴。"))
+    add_dialogue("gizel take girl to farm", ("nerd"), ("完美的！鲜血群岛种马迫切需要奴隶的小穴。"))
     add_dialogue("slave bullied", ("very idealist"), ["但、但是....", "嘿，等等...", "别、别这样...."])
     add_dialogue("slave naked request permanent", ("nerd", "very modest"), ["g: 但-但是...我-我...我不能...*脸红*", "mc: 你必须这样做。我给你下了命令。", "g: 很好，那么...如果...如果我别无选择...*脸红*"], multiple=True, fear=1, sound=s_sigh)
     add_dialogue("slave train beg", ("generic"), ["[girl.name]跪下，开始含泪恳求你。", "g: 主人，求你了，不要！！！不是这样的....我求你了，请温柔点...."], multiple=True)
