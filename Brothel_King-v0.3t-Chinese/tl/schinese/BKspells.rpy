@@ -15,7 +15,7 @@ translate schinese strings:
 
      # game/BKspells.rpy:21
      old "The pain of discipline is nothing like the pain of disappointment."
-     new "训练的磨难远不如无法保护身边之人带来的痛苦。痛，太痛了。"
+     new "训练的磨难远不如无法保护身边之人带来的痛苦。"
 
      # game/BKspells.rpy:21
      old "You must see it through your mind's Eye."
@@ -31,11 +31,11 @@ translate schinese strings:
 
     # game/BKspells.rpy:21
      old "The more you sweat in training, the less you bleed in combat."
-     new "平时多流汗，战时少流血。在床上也可以少流点精。"
+     new "平时多流汗，战时少流血。"
 
     # game/BKspells.rpy:21
      old "From the battlefield to the whorehouse, you've never lost that edge."
-     new "不论是战场还是情场，都是你的主场，你富有磁性的声音让人无法抗拒。"
+     new "战场还是情场都是你的主场，你富有磁性的声音让人无法抗拒。"
 
     # game/BKspells.rpy:21
      old "Summons a magical bird whose soothing songs help your girls relax."
@@ -43,27 +43,27 @@ translate schinese strings:
 
     # game/BKspells.rpy:21
      old "ADRIAAAAAN!!!"
-     new "RUAAAAAA！你的怒吼能让敌人溃散而逃。"
+     new "RUAAAAAA！"
 
     # game/BKspells.rpy:21
      old "Summons a totemic beast that infuses your girls with supernatural power."
-     new "召唤一只灵兽，它的祝福能提升姑娘们床上的持久力。"
+     new "召唤一只灵兽，它的祝福能提高姑娘们在床上的持久力。"
 
     # game/BKspells.rpy:21
      old "Swift like a cobra."
-     new "响尾蛇机动！闪电也追不上你的脚后跟！"
+     new "响尾蛇机动！"
 
 #     # game/BKspells.rpy:21
      old "Man the battlestations! Err... Should it be 'Woman the battlestations'?"
-     new "青楼？这里更像是个军营，她们是训练有素的士兵，准确的说是一群女兵。"
+     new "严阵以待！士兵们。额...准确来说是女兵们。"
 
 #     # game/BKspells.rpy:21
      old "Every day I'm hustling."
-     new "偷鸡摸狗对你来说是家常便饭了。妙手空空可不是浪得虚名的。"
+     new "偷鸡摸狗对你来说是家常便饭了。"
 
 #     # game/BKspells.rpy:21
      old "'That's it. I'm walking away now...' Better prices for girls and items."
-     new "没得商量？那我走了，刚才那个小姑娘卖的好像比你便宜不少。"
+     new "没得商量？那就算了，刚才那个小姑娘卖的好像比你便宜不少。"
 
 #     # game/BKspells.rpy:21
      old "Trust is earned. Unless you know magic."
@@ -71,15 +71,15 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "The mean streets of Borgo have taught you all that there is to know about street fighting. Always stab from the back."
-     new "博尔戈混乱的街道教会了你战斗的秘诀，时刻小心背后偷袭，以及想尽办法偷袭别人。"
+     new "博格混乱的街道教会了你战斗的秘诀，时刻小心背后偷袭，以及想办法偷袭别人。"
 
 #     # game/BKspells.rpy:21
      old "Cool story bro."
-     new "真是个精彩的故事，老兄。再说个五块钱的。"
+     new "真是个精彩的故事，老兄。"
 
 #     # game/BKspells.rpy:21
      old "You don't always adventure far from your bed, but at least you look the part."
-     new "你并不经常出门冒险，但至少这次你看上去有模有样，看不出是个新手。"
+     new "你并不经常出门冒险，但至少你看上去有模有样，像个老练的冒险者。"
 
 #     # game/BKspells.rpy:21
      old "You're gorgeous, you don't need validation from anyone, but here, have this spell just in case."
@@ -91,27 +91,27 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "You can grab 'em by the pussy, you can do anything."
-     new "你可以只用舌头就让她们高潮，你的舌头能轻易地撬开神秘花园的大门。"
+     new "你用舌头就能让她们高潮，你的舌头无所不能。"
 
 #     # game/BKspells.rpy:21
      old "You've been hit by, you've been struck by..."
-     new "你可能会被击倒，但永远不会被逮到"
+     new "你能战胜我，但你永远抓不到我！"
 
 #     # game/BKspells.rpy:21
      old "Greed is good. At least my spellbook says so."
-     new "我也不想贪啊，这些钱我是一分钱也没敢花啊，我祖上三代都是农民，穷怕了！"
+     new "贪婪是一种美德！至少我的法术上是这么写的。"
 
 #     # game/BKspells.rpy:21
      old "You're fast. You've got the ship that made the Westmarch Run in less than twelve parsecs... Somewhere."
-     new "这是你从忍者村里学到的不传之秘，你可以在暗影世界里瞬间移动数十米之远，形如鬼魅。"
+     new "这是你从忍者村落里学到的不传之秘，你可以在暗影世界里瞬间移动数十米之远，形如鬼魅。"
 
 #     # game/BKspells.rpy:21
      old "Fame, makes a man take things over!"
-     new "大人物想要什么就会有人给你送到身前的！"
+     new "有了权力就拥有了一切！"
 
 #     # game/BKspells.rpy:21
      old "A beautiful mind. Pity about your face, though!"
-     new "美丽的心灵。不过可惜你的脸有点残念！"
+     new "美丽的心灵。不过可惜长得不太行！"
 
 #     # game/BKspells.rpy:21
      old "Looks aren't everything, but, hey, they sell. This aura makes your girls look nicer."
@@ -131,7 +131,7 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "It's raining mana! Hallelujah."
-     new "法力充沛如倾盆大雨！魔法万岁！"
+     new "天降魔雨！魔法万岁！"
 
      # game/BKspells.rpy:21
      old "It's getting hot in here... This halo boosts your girls' libido."
@@ -139,39 +139,39 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "Soft whispers echo into your girls' ears, making them shiver expectantly. Raises their sensitivity."
-     new "淫靡的轻声低语萦绕在耳边，每个毛孔的感觉都变得如此清晰。这种光环可以提高女孩的敏感。"
+     new "淫靡的轻声低语萦绕在耳边，每个毛孔的感觉都变得如此清晰。这种光环可以提高女孩的敏感度。"
 
 #     # game/BKspells.rpy:21
      old "It's like solid energy is seeping through the brisk, fragrant air. Boosts your girl's constitution."
-     new "这股清新的芳香浓郁得好像能凝结成滴，令人神清气爽。这种光环可以增强女孩的体质。"
+     new "这股清新的芳香浓郁得好像能凝成水滴，令人神清气爽。这种光环可以增强女孩的体质。"
 
 #     # game/BKspells.rpy:21
      old "This is payback for all those times they called you a 'Wise guy'."
-     new "智慧无价，不过你可以用你的智慧为你牟利。"
+     new "智慧是无价的，不过你可以用智慧为你牟利。"
 
 #     # game/BKspells.rpy:21
      old "In the fairy tales, they don't have the dancing dildo cabinet."
-     new "在童话故事中可没有会跳舞的自慰棒精灵。"
+     new "在童话故事中可没有会跳舞的牛子精灵。"
 
 #     # game/BKspells.rpy:21
      old "Medic! This mist has a chance to heal your girls fully."
-     new "圣疗术！这团神圣的雾气有概率令你的女孩完全康复。"
+     new "圣疗术！这团神圣的雾气有概率完全治愈你的女孩。"
 
 #     # game/BKspells.rpy:21
      old "Looks aren't everything, but, hey, they sell. This aura makes your girls look a lot nicer."
-     new "不能以貌取人，但是，美色是可以当饭吃的。这种光环会让你的女孩看起来美丽动人。"
+     new "不能以貌取人，但是，美女确实很下饭。这种光环会让你的女孩看起来美丽动人。"
 
 #     # game/BKspells.rpy:21
      old "Shake your money-maker. Now with magic. This aura enhances your girl's body greatly."
-     new "摇一摇你的摇钱树。魔法很神奇吧。这种气场大大增强了你女孩的身材。"
+     new "摇一摇你的摇钱树。魔法很神奇吧。这种光环能大幅度提高女孩的身材。"
 
 #     # game/BKspells.rpy:21
      old "The air of mystery around your girls keep the patrons coming back for more. This aura gives a major boost to your girls' charm."
-     new "你的女孩们身上的神秘气息会让顾客们流连于此。这种气场会大大提升你的女孩的魅力。"
+     new "你的女孩们身上的神秘气息会让顾客们流连于此。这种气场会大幅提高女孩的魅力。"
 
 #     # game/BKspells.rpy:21
      old "It takes a real magician to make uncouth slaves look sophisticated. This aura makes your girls a lot more refined."
-     new "只有神迹才能让一个粗鲁的女孩看起来像是个大家闺秀。这种光环能让你的女孩变得更加优雅。"
+     new "只有神迹才能让一个粗鲁的女孩看起来像是个大家闺秀。这种光环大幅提高女孩的优雅。"
 
 #     # game/BKspells.rpy:21
      old "Now, who would have thought of using a magic wand for that..."
@@ -179,11 +179,11 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "Now, did you know there is a 5th dimension? And a 6th, and a 7th, and a 13th?"
-     new "提问，你知道宇宙存在第五维度吗？可能还有第六个、第七个、第十三个？"
+     new "你知道宇宙存在第五维度吗？可能还有第六个、第七个、第十三个？"
 
 #     # game/BKspells.rpy:21
      old "I saw people sticking a needle into a voodoo doll, but never {i}there{/i}..."
-     new "我知道有人会把针扎进娃娃诅咒别人，但从来没见过有人会扎它的{i}那里{/i}...."
+     new "我知道有人会把针扎进娃娃诅咒别人，但从来没见过有人会扎在{i}那里{/i}...."
 
 #     # game/BKspells.rpy:21
      old "It's getting hot in here... This halo gives a large boost to your girls' libido."
@@ -231,7 +231,7 @@ translate schinese strings:
 
 #     # game/BKspells.rpy:21
      old "Learnt that trick from a guy named Sauron. A nice fella, if a bit obsessed about jewelry.\nHypnosis attempts will always succeed."
-     new "你从一个叫索伦的珠宝商人那里学到了这招。他是个不错的家伙，只是对财宝有点执着。你的催眠训练不会失手。"
+     new "你从一个叫索伦的珠宝商人那里学到了这招。他是个不错的家伙，只是对财宝有点执着。你的催眠训练不会失败。"
 
 #     # game/BKspells.rpy:21
      old "Learnt that trick from an old bum called Zobiwan. He was good at escorting druids, though."
