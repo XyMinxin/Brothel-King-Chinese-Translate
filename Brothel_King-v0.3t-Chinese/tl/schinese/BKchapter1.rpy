@@ -1168,7 +1168,7 @@ translate schinese c1_visit_watchtower_71309d87:
 translate schinese c1_visit_watchtower_d4477cbd:
 
     # lieutenant "All right, I ain't got all day, let's get on with this. Gio told me you want to apply for a pimp license?"
-    lieutenant "好了,我没那么多时间,有屁快放。乔告诉我,你想申请一个青楼执照?"
+    lieutenant "好了,我没那么多时间,有屁快放。乔告诉我,你想申请一个营业执照?"
 
 # game/BKchapter1.rpy:768
 translate schinese c1_visit_watchtower_15d6b866:
@@ -12532,7 +12532,7 @@ translate schinese c1_ending_captain_8255569a:
 translate schinese c1_ending_captain_8c8ee8ca:
 
     # captain "I made the arrangement for your brothel license to be delivered tomorrow. You see, I abide by our deal..."
-    captain "我已经安排好明天就颁发你的青楼执照了。你看,我是信守诺言的..."
+    captain "我已经安排好明天就颁发你的营业执照了。你看,我是信守诺言的..."
 
 # game/BKchapter1.rpy:6884
 translate schinese c1_ending_captain_c78d86d1:

@@ -1423,7 +1423,7 @@ label help_advertising_menu():
 
             sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
 
-        "广告宣发的作用":
+        "广告宣传的作用":
 
             sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
 

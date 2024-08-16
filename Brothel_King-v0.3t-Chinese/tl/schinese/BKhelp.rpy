@@ -982,13 +982,13 @@ translate schinese help_brothel_ced859d6:
 translate schinese help_brothel_a54ec990:
 
     # sill "You can hire {b}3 types of freelancers{/b} to help with your business: advertising girls, goons and cleaners."
-    sill "你可以雇佣{b}3种类型的自由职业者{/b}来帮助你的生意:广告宣发人员、保镖和清洁工。"
+    sill "你可以雇佣{b}3种类型的自由职业者{/b}来帮助你的生意:广告宣传人员、保镖和清洁工。"
 
 # game/BKhelp.rpy:1324
 translate schinese help_brothel_83b488c6:
 
     # sill "{b}Advertising girls{/b} increase your brothel reputation, which in turn will bring in more customers every night."
-    sill "{b}广告宣发{/b}可以提升你的青楼声望,从而每晚吸引更多顾客。"
+    sill "{b}广告宣传{/b}可以提升你的青楼声望,从而每晚吸引更多顾客。"
 
 # game/BKhelp.rpy:1326
 translate schinese help_brothel_d834ccda:
@@ -1762,31 +1762,31 @@ translate schinese help_farm_question_4a71d5b9:
 translate schinese help_farm_5c3737c1:
 
     # gizel normal "The 'farm' is the unoriginal name you stupid humans give this place."
-    gizel normal "所谓的'农场'是你们这些愚蠢的人类给这个地方起的愚蠢名字。"
+    gizel normal "所谓的'农场'不过是你们这些愚蠢的人类给这个地方起的愚蠢名字。"
 
 # game/BKhelp.rpy:1853
 translate schinese help_farm_9b6a2942:
 
     # gizel "Of course, it is much more than that. It is a shining place of power acting like a beacon through space and time, sitting on a whirlpool of dark magical energy..."
-    gizel "当然,这远不止如此。这是一个光辉灿烂的力量之地,如同一座位于时空漩涡之上的信号塔,镶嵌着黑暗魔法的能量...."
+    gizel "当然,这里不仅仅是个农场。这是一个光辉灿烂的力量之地,如同一座位于时空漩涡之上的灯塔,充满着黑暗魔法的能量...."
 
 # game/BKhelp.rpy:1855
 translate schinese help_farm_d99951a5:
 
     # you "Yeah yeah. To the point, Giz'."
-    you "是是是。让我们直奔主题吧,吉赛尔'。"
+    you "是是是。让我们直奔主题吧,吉泽'。"
 
 # game/BKhelp.rpy:1857
 translate schinese help_farm_99f22c61:
 
     # gizel upset "Hmpf! You're just a foolish barbarian. Anyway. I'll just stick to concepts you can easily understand."
-    gizel upset "哼!你不过是一个愚蠢的野蛮人。总之,我会用你们容易理解的概念来解释。"
+    gizel upset "哼!真是个愚蠢的野蛮人。总之,我会用你们容易理解的概念来解释。"
 
 # game/BKhelp.rpy:1859
 translate schinese help_farm_a03c3eaf:
 
     # you "*sigh* You do that..."
-    you "*叹息*你就这么做吧...."
+    you "*叹息*就按你说的来吧...."
 
 # game/BKhelp.rpy:1866
 translate schinese help_farm_menu_21bd3cff:
@@ -1798,19 +1798,19 @@ translate schinese help_farm_menu_21bd3cff:
 translate schinese help_farm_menu_5da4d4c8:
 
     # gizel "You can send girls here at the {b}farm{/b}, where they will remain in my care for a fixed duration, or until you want them back."
-    gizel "你可以将女孩们送到这里的{b}奴隶农场{/b},她们将由我照看一段时间,或者你想要她们提前回来。"
+    gizel "你可以将女孩们送到{b}奴隶农场{/b},她们将由我管教,除非你想让她们提前回去。"
 
 # game/BKhelp.rpy:1872
 translate schinese help_farm_menu_5d1c7953:
 
     # gizel "The girls will be held in {b}pens{/b} here with my animals and minions for company. While they're here, they won't be using their room in the brothel, so you are free to assign it to someone else."
-    gizel "女孩们将被关在这里的{b}牢房{/b}中,和我的宠物和仆从为伴。当她们在这里的时候,她们就没必要使用青楼里的房间,所以你可以把房间分配给别人。"
+    gizel "女孩们将被关在这里的{b}牢房{/b}中,和我的宠物和仆从为伴。当她们住在这里的时候,青楼里的房间就空出来了,所以你可以把房间分配给别人。"
 
 # game/BKhelp.rpy:1874
 translate schinese help_farm_menu_de6f9d87:
 
     # gizel "For training, I will use the farm {b}facilities{/b} and my sweet {b}minions{/b}. Each facility is suitable for only one type of minions."
-    gizel "为了训练她们,我将利用农场的{b}设施{/b}和我亲爱的{b}仆从{/b}。每一个设施都只适合某一类型的仆从。"
+    gizel "为了训练她们,我将利用农场的{b}设施{/b}和我亲爱的{b}仆从{/b}。每种仆从都有其对应的设施。"
 
 # game/BKhelp.rpy:1876
 translate schinese help_farm_menu_8076bef7:
@@ -1822,79 +1822,79 @@ translate schinese help_farm_menu_8076bef7:
 translate schinese help_farm_menu_4bd7aa9f:
 
     # gizel normal "Certainly. {b}Pens{/b} are where your girls are being kept while they are at the farm. {b}Facilities{/b} are where I host my beloved minions."
-    gizel normal "当然。{b}牢房{/b}就是你的女孩在农场期间被关押的地方。{b}设施{/b}则是我尊贵的仆从们的居所。"
+    gizel normal "当然。{b}牢房{/b}就是你的女孩在训练期间居住的地方。{b}设施{/b}则是我尊贵的仆从们的居所。"
 
 # game/BKhelp.rpy:1882
 translate schinese help_farm_menu_8892b641:
 
     # gizel "Because the farm was in such a state of disrepair when we got it, not all pens and facilities will be immediately available, however."
-    gizel "由于农场在我们获得它的时候状况很差,并不是所有的牢房和设施都会立即可用。"
+    gizel "我们接手农场的时候这里一片狼藉,并不是所有的牢房和设施都能立即投入使用。"
 
 # game/BKhelp.rpy:1884
 translate schinese help_farm_menu_76939fcc:
 
     # gizel "If you have the coin, you can build new {b}pens{/b} to hold more girls at the farm. The farm's {b}facilities{/b} can be also rebuilt and improved on, which will increase the number of minions they can hold."
-    gizel "如果你有钱,你可以建造新的{b}牢房{/b}来容纳更多的女孩。农场的{b}设施{/b}也可以重建和升级,这将增加它们能容纳的仆从数量。"
+    gizel "如果你有钱,你可以建造新的{b}牢房{/b}来容纳更多的女孩。农场的{b}设施{/b}也可以进行重建和升级,设施等级越高能容纳的仆从也就越多。"
 
 # game/BKhelp.rpy:1886
 translate schinese help_farm_menu_ee85818f:
 
     # gizel "Our activities here are a bit unusual, I guess, and might attract attention from the wrong crowd... Like those Arios-worshipping apes. So let's keep our little operation quiet."
-    gizel "我们在这里的活动有些不寻常,我想,可能会引起错误人群的注意....比如那些崇拜亚里奥斯的猴子们。所以让我们保持我们的小小运作的低调吧。"
+    gizel "我们在这里做的事非同寻常,我想,可能会引起其他人的注意....比如那些崇拜太阳神的猴子们。所以还是低调行事比较好。"
 
 # game/BKhelp.rpy:1890
 translate schinese help_farm_menu_cedb2a82:
 
     # gizel "Right now, we can build a maximum of [p] pens and improve our facilities up to level [district.rank], before the neighbors get suspicious."
-    gizel "现在,我们最多可以建造[p]个牢房,并将我们的设施提升至[district.rank]级,才不会引起附近居民的怀疑。"
+    gizel "现在,我们最多可以建造[p]个牢房,设施最高只能升到[district.rank]级,再扩张就要引起别人的怀疑了。"
 
 # game/BKhelp.rpy:1893
 translate schinese help_farm_menu_24fdfbf8:
 
     # extend " This is the farm's maximum capacity, so we cannot improve our facilities beyond that."
-    extend "这就是农场的最大容量,我们无法再进一步改善设施。"
+    extend "这已经达到农场的上限了,我们没办法继续升级设施了。"
 
 # game/BKhelp.rpy:1895
 translate schinese help_farm_menu_6c52d52b:
 
     # extend " We can develop the farm further if you obtain a higher brothel license and some protection in high places."
-    extend "如果你获得更高级的青楼执照,并在高层得到一些保护,我们就可以进一步开发农场。"
+    extend "如果你获得了更高级的营业执照,并得到高层的庇护,我们就可以进一步开发农场。"
 
 # game/BKhelp.rpy:1899
 translate schinese help_farm_menu_8dfec8f5:
 
     # gizel smirk "Ah, the minions! My little babies, my loves..."
-    gizel smirk "啊,仆从们!我的小宝贝们,我的挚爱...."
+    gizel smirk "啊,仆从们!我的小宝贝们,我的心头肉...."
 
 # game/BKhelp.rpy:1901
 translate schinese help_farm_menu_6413bebc:
 
     # gizel normal "There are various kinds of minions, using various facilities."
-    gizel normal "有各种各样的仆从,他们使用不同的设施。"
+    gizel normal "这里有各种各样的仆从,他们住在不同的设施。"
 
 # game/BKhelp.rpy:1903
 translate schinese help_farm_menu_3413667e:
 
     # gizel "Minions are useful for training. It takes at least one minion to train a girl, so make sure you have enough minions to do the work."
-    gizel "仆从们对训练很有用。至少需要一个仆从来训练一个女孩,所以要确保你有足够的仆从来完成工作。"
+    gizel "仆从们对训练很有用。一个女孩至少需要一个仆从辅助训练,所以请确保你有足够的仆从来进行训练。"
 
 # game/BKhelp.rpy:1905
 translate schinese help_farm_menu_548c97d0:
 
     # gizel "You can find new minions in town, I guess, but I'm not sure where. I don't go out much."
-    gizel "你可以在城里找到新的仆从,我想,但我不确定在哪里。我很少外出。"
+    gizel "我猜城里可以弄到新的仆从,但我也不确定具体在哪里。我不怎么出门。"
 
 # game/BKhelp.rpy:1907
 translate schinese help_farm_menu_bf18b887:
 
     # gizel "The {b}Stallions{/b}, such as my beloved Bob, are held in the {b}Stables{/b}, in the barn."
-    gizel "{b}种马{/b},比如我亲爱的鲍勃,被关在马厩里的{b}马棚{/b}。"
+    gizel "{b}种马{/b},比如我可爱的鲍勃,被关在马厩里的{b}马棚{/b}。"
 
 # game/BKhelp.rpy:1909
 translate schinese help_farm_menu_887e01c7:
 
     # gizel "Stallions are magically brainwashed sex-slaves from the Blood Islands, bred selectively for their unnaturally large dicks..."
-    gizel "种马是从鲜血群岛带来的, 经过选择性培育的魔法洗脑性奴隶,拥有非自然的巨大阴茎...."
+    gizel "种马是从鲜血群岛带来的, 经过选择性培育的，被魔法洗脑的性奴隶,拥有后天改造的巨大阴茎...."
 
 # game/BKhelp.rpy:1911
 translate schinese help_farm_menu_0980844a:
@@ -1912,25 +1912,25 @@ translate schinese help_farm_menu_3d1d6e8c:
 translate schinese help_farm_menu_1ac0e76c:
 
     # gizel "Beasts are simply animals, but I have fun messing around with their natural instincts with magic. They're not just pigs too: their structure is so basic I can morph them into different animals when the need arises."
-    gizel "野兽只是普通的动物,但我会用魔法玩弄它们的天性。它们并非只是猪,它们的构造太过简单,我可以在需要时把它们变成不同的动物。"
+    gizel "野兽只是普通的动物,但我会用魔法玩弄它们的天性。它们并非只是猪,它们的生理构造十分简单,我可以在需要的时候把它们变成各种各样的动物。"
 
 # game/BKhelp.rpy:1919
 translate schinese help_farm_menu_3ca9315d:
 
     # you "Cool..."
-    you "很酷..."
+    you "太酷啦..."
 
 # game/BKhelp.rpy:1922
 translate schinese help_farm_menu_c07ab10a:
 
     # gizel "There's an old pig stall in the courtyard... I guess we could use it to hold some {b}animals{/b}."
-    gizel "庭院里有一个旧猪圈...我想我们可以用它来关押一些{b}动物{/b}。"
+    gizel "院子里还有一个旧猪圈...我想我们可以用它来饲养一些{b}动物{/b}。"
 
 # game/BKhelp.rpy:1925
 translate schinese help_farm_menu_dd27cb3d:
 
     # gizel "The {b}Monsters{/b} dwell underground in the {b}Monster den{/b}, where else?"
-    gizel "{b}怪物{/b}住在地下的{b}怪物巢穴{/b},难道还能住在哪里吗?"
+    gizel "{b}怪物{/b}住在地下的{b}怪物巢穴{/b},不然你以为它们还能住在哪?"
 
 # game/BKhelp.rpy:1927
 translate schinese help_farm_menu_0e44a238:
@@ -1948,73 +1948,73 @@ translate schinese help_farm_menu_a4916498:
 translate schinese help_farm_menu_20a19d35:
 
     # gizel "I spotted the entrance to an old cellar in the back, which seems linked to an ancient and intricate cave network... A perfect place to breed {b}monsters{/b}, I should say."
-    gizel "我在后面发现了一个通往古老复杂地道网的老地窖入口... 这是培养{b}怪物{/b}的完美场所,我想说。"
+    gizel "我在后面发现了一个入口，里面有个地形复杂的地窖... 这简直就是培养{b}怪物{/b}的最佳场所,不得不说。"
 
 # game/BKhelp.rpy:1935
 translate schinese help_farm_menu_3697bc00:
 
     # gizel "Finally, there are the {b}Machines{/b}, which are kept in the {b}Workshop{/b} at the back."
-    gizel "最后,还有那些保存在后面{b}工坊{/b}里的{b}机器{/b}。"
+    gizel "最后,还有那些安置在{b}工坊{/b}里的{b}机器{/b}。"
 
 # game/BKhelp.rpy:1937
 translate schinese help_farm_menu_26f0bedf:
 
     # gizel "Those machines aren't the crude tools your backward species use either... They are artefacts of great magical power, designed with one thing in mind: pleasure. Or pain. What was the difference you people make between both, again? This always confused me!"
-    gizel "这些机器可不是你们这些落后物种使用的简陋工具...它们是拥有强大魔力的神器,设计初衷就是为了带来愉悦。或者痛苦。你们人类到底如何区分两者,我一直很困惑!"
+    gizel "这些机器可不是你们这些落后物种使用的简陋工具...它们是拥有强大魔力的神器,它们被设计出来就是为了提供快乐或痛苦。你们人类到底如何区分这两者,我一直很疑惑!"
 
 # game/BKhelp.rpy:1940
 translate schinese help_farm_menu_d4655048:
 
     # you "Nerdy..."
-    you "很书呆子..."
+    you "真是个书呆子..."
 
 # game/BKhelp.rpy:1942
 translate schinese help_farm_menu_7c84a6b7:
 
     # gizel "Finally, there's the old toolshed in the farmhouse, I could repurpose it to hold various artefacts and {b}machines{/b}... I have plenty of ideas..."
-    gizel "最后,还有农舍里的旧工具棚,我可以把它改造成存放各种神器和{b}机器{/b}的地方... 我有很多点子..."
+    gizel "最后,还有农舍里的老旧工具间,我可以把它改造成存放各种设备和{b}机器{/b}的储物间... 我还有很多计划..."
 
 # game/BKhelp.rpy:1944
 translate schinese help_farm_menu_0281c96a:
 
     # gizel smirk "My minions will take good care of your slaves! *smirk*"
-    gizel smirk "我的手下会好好照顾你的奴隶的! *得意地笑*"
+    gizel smirk "我的仆从会好好照顾你的奴隶的! *得意地笑*"
 
 # game/BKhelp.rpy:1946
 translate schinese help_farm_menu_7b73b7a4:
 
     # gizel normal "As they play around with your girls, minions will earn {b}experience{/b}. Eventually, they might become more powerful. And more power means one thing of course: BIGGER DICKS!!!"
-    gizel normal "当他们与你的女孩玩耍时,手下们会获得{b}经验{/b}。最终,他们可能会变得更强大。而更强大当然意味着一件事:更粗大的阴茎!!!"
+    gizel normal "当它们与你的女孩玩耍时,仆从们也会获得{b}经验{/b}。渐渐地,他们会越来越强大。而强大意味着:更粗更硬的生殖器!!!"
 
 # game/BKhelp.rpy:1950
 translate schinese help_farm_menu_28a79ba4:
 
     # gizel normal "But watch out for the minions and their health. If you take good care of them, and deliver them a steady flow of dumb sluts to play with, they will serve you better over time."
-    gizel normal "但要小心照顾好手下们的健康。如果你好好照应他们,给他们源源不断的愚蠢女孩去玩弄,他们就会为你更好地服务。"
+    gizel normal "但要注意仆从们的健康。如果你好好照顾它们,给它们源源不断的女孩玩弄,它们会更加服从于你。"
 
 # game/BKhelp.rpy:1953
 translate schinese help_farm_menu_22d27be2:
 
     # gizel "Finally, you should note that for {b}group sex training{/b}, I'll need more than one minion of the same type. But that's obvious, right?"
-    gizel "最后,你应该注意到,如果要进行{b}团体性训练{/b},我需要不止一个同类型的手下。这很显然,对吗?"
+    gizel "最后,你应该了解一下{b}群体性训练{/b},我需要不同类型的仆从帮助训练。这显而易见,不是吗?"
 
 # game/BKhelp.rpy:1957
 translate schinese help_farm_menu_3a1896f9:
 
     # gizel normal "Right, let's get to the main reason we're here. {b}Training{/b}."
-    gizel normal "好了,让我们来到我们来这里的主要目的。{b}训练{/b}。"
+    gizel normal "好了,让我们回到正题。{b}训练{/b}。"
 
 # game/BKhelp.rpy:1959
 translate schinese help_farm_menu_9abd1e8c:
 
     # gizel "Basically, there are two kinds of things I can do with your girls while they're at the farm."
-    gizel "基本上,我可以对你的女孩做两种事情,第一种是让她们在农场里接受训练。"
+    gizel "一般来说,我可以安排你的女孩做两种事,第一种是让她们在农场里接受训练。"
 
 # game/BKhelp.rpy:1961
 translate schinese help_farm_menu_9e185176:
 
     # gizel "First, I can simply keep them locked in a pen. This is what I call {b}holding{/b}. Nothing will happen to them then, however, so that's not FUN."
-    gizel "首先,我可以把她们单纯地关在笼子里。这就是我所说的{b}囚禁{/b}。在这种情况下,什么都不会发生,所以也不会很有趣。"
+    gizel "第一种,我可以把她们单纯地关在牢房里。也就是所谓的{b}囚禁{/b}。在这种情况下,什么都不会发生,所以也很无聊。"
 
 # game/BKhelp.rpy:1963
 translate schinese help_farm_menu_e29ab913:
@@ -2026,55 +2026,55 @@ translate schinese help_farm_menu_e29ab913:
 translate schinese help_farm_menu_ae465693:
 
     # gizel normal "Next, you can let my minions play with your girls to {b}train{/b} them."
-    gizel normal "第二种,我可以让仆从与你的女孩们{b}训练{/b}互动。"
+    gizel normal "第二种,我可以让仆从与你的女孩一起{b}训练{/b}。"
 
 # game/BKhelp.rpy:1969
 translate schinese help_farm_menu_14d39697:
 
     # gizel "I can train your girls for all kinds of sex acts with my minions here. Depending on the {b}rules{/b} you choose for their training, I can go soft or hard on the little bitches... But who doesn't like it hard?"
-    gizel "我可以训练你的女孩们去练习各种性行为。根据你选择的{b}训练强度{/b},我可以温和或严厉地对待这些小婊子...但谁不喜欢粗暴一些呢?"
+    gizel "我可以训练你的女孩们去练习各种性行为。根据你选择的{b}训练模式{/b},我可以温柔或强硬地对待这些小婊子...但谁不喜欢粗暴一些呢?"
 
 # game/BKhelp.rpy:1974
 translate schinese help_farm_menu_ecd045bd:
 
     # gizel "Because we work and play hard here at the farm, your girls will occasionally {b}get tired{/b}, being wimps and all."
-    gizel "因为要在这个农场上工作和努力练习,你的女孩们偶尔会{b}感到疲惫{/b},毕竟她们都是一些软弱的家伙。"
+    gizel "因为要在农场里工作和努力训练,你的女孩们偶尔会{b}感到疲惫{/b},毕竟她们都是一些软弱的家伙。"
 
 # game/BKhelp.rpy:2000
 translate schinese help_farm_rules_training_b1341e48:
 
     # gizel normal "{b}Training rules{/b} are very important. Most importantly, they affect the amount of FUN {b}I{/b} get while training your dumb sluts."
-    gizel normal "{b}训练强度{/b}非常重要。最重要的是,它们会影响到{b}我{/b}在训练你这群愚蠢婊子时获得的乐子。"
+    gizel normal "{b}训练模式{/b}非常重要。最重要的是,它们会影响到{b}我{/b}在训练你这群愚蠢婊子时获得的乐趣。"
 
 # game/BKhelp.rpy:2002
 translate schinese help_farm_rules_training_e1666289:
 
     # gizel "The most boring and useless option is to go '{b}soft{/b}' on the bitches. When going soft, I won't make them do anything they don't already agree to."
-    gizel "对这些婊子{b}温和{/b}对待是最无聊和无用的选项。采取温和方式时,我不会强迫她们做任何她们不愿做的事情。"
+    gizel "{b}温和{/b}对待这些婊子是最无聊和无用的选项。采用温和模式时,我不会强迫她们做任何她们不愿做的事情。"
 
 # game/BKhelp.rpy:2004
 translate schinese help_farm_rules_training_a954f985:
 
     # gizel upset "Can't you see how lame it is! LAME! Never choose this option, ever! *mad*"
-    gizel upset "难道你看不出这有多无聊吗!无聊透了!永远不要选择这个选项! *生气*"
+    gizel upset "难道你看不出这有多无聊吗!无聊透顶!永远不要选择这个选项! *生气*"
 
 # game/BKhelp.rpy:2006
 translate schinese help_farm_rules_training_1e1333da:
 
     # gizel normal "The second option is to go '{b}tough{/b}' on them. When being trained hard, I'll ignore most of the girls' complaints and threaten the dumb slaves into submission. I'll push them hard, but I won't go all out on them just yet, introducing them to harder sex acts gradually."
-    gizel normal "我也可以对她们{b}严格{/b}一些。在接受严格训练时,我会无视女孩们大部分的抱怨,并威胁这些愚蠢的奴隶屈服。我会狠狠地推动她们,但还不会把她们逼到底,而是循序渐进地引入更加极端的性行为。"
+    gizel normal "我也可以对她们{b}强硬{/b}一些。在接受强硬训练时,我会无视女孩们大部分的抱怨,并威胁这些愚蠢的奴隶屈服。我会狠狠地刺激她们,但不会把她们逼到绝路,循序渐进地引入更加极端的性行为。"
 
 # game/BKhelp.rpy:2009
 translate schinese help_farm_rules_training_8b201e22:
 
     # gizel "Finally, you can leave it all to me... This is what I call the '{b}hardcore{/b}', or most FUN, option."
-    gizel "如果这都不行,你可以把她完全交给我来负责...就是所谓的'{b}极限{/b}'也是最有趣的模式。"
+    gizel "如果这都不行,你可以把她完全交给我来负责...就是所谓的'{b}硬核{/b}模式'，最有趣的模式。"
 
 # game/BKhelp.rpy:2011
 translate schinese help_farm_rules_training_6e31ce98:
 
     # gizel smirk "In hardcore mode, I will ignore any and all complaints your girls have, even if they try to fight it, and inflict on them whatever hardcore sex act I wish on a whim. They will be harshly punished if they disobey."
-    gizel smirk "在极限模式下,我将无视你的女孩们的任何抱怨,即使她们试图反抗,我也会随心所欲地对她们实施任何极端的性行为。如果她们不服从,我会严惩不贷。"
+    gizel smirk "在硬核模式下,我将无视你的女孩们的所有抱怨,即使她们试图反抗,我也会随心所欲地让她们练习各种极端的性行为。如果她们不听话,我会严惩不贷。"
 
 # game/BKhelp.rpy:2013
 translate schinese help_farm_rules_training_e688a828:
@@ -2086,7 +2086,7 @@ translate schinese help_farm_rules_training_e688a828:
 translate schinese help_farm_rules_training_3e7fc5d7:
 
     # gizel upset "But let's be careful, because some hard-headed sluts might try to fight back... Make sure you disarm the bitches before sending them here, or we'll be in trouble."
-    gizel upset "不过我们还是要小心谨慎,因为有几个顽固的婊子可能会试图反击...确保在把她们送来之前就解除她们的武装,否则我们会陷入麻烦。"
+    gizel upset "不过我们还是要小心一点,有些顽固的婊子可能会试图反击...确保在把她们送来之前解除她们的武装,否则我们会陷入麻烦。"
 
 # game/BKhelp.rpy:2021
 translate schinese help_farm_rules_resting_0ca98645:
@@ -2098,25 +2098,25 @@ translate schinese help_farm_rules_resting_0ca98645:
 translate schinese help_farm_rules_resting_b54917fd:
 
     # gizel "But petty lifeforms like yours seem to need it, otherwise they just become exhausted or even injured. Lame."
-    gizel "但是像你这样微不足道的生命体似乎需要休息,否则就会筋疲力尽甚至受伤。真是软弱可怜。"
+    gizel "但是像你这样孱弱的生命体似乎需要休息,否则就会筋疲力尽甚至受伤。真是弱小。"
 
 # game/BKhelp.rpy:2025
 translate schinese help_farm_rules_resting_d7764556:
 
     # gizel "So if you want, I can keep an eye on your girls' level of {b}energy{/b}, and remove them from working or training if they become too weak."
-    gizel "所以如果你愿意的话,我可以随时关注你的女孩们的{b}精力{/b}水平,如果她们变得太虚弱的话就将她们从工作或训练中撤下。"
+    gizel "如果你需要的话,我可以时刻监视女孩们的{b}精力{/b}水平,如果她们变得太虚弱的话我将她们从工作或训练中撤下。"
 
 # game/BKhelp.rpy:2027
 translate schinese help_farm_rules_resting_9e02141f:
 
     # gizel "I'll set them to rest automatically before they become exhausted. Of course, I could always misjudge and injure a slave or two if I'm not paying attention, but who CARES!"
-    gizel "我会在她们筋疲力尽之前让她们去休息。当然,如果我不够注意的话,可能会误伤一两个奴隶,但是谁在乎呢!"
+    gizel "我会在她们筋疲力尽之前让她们去休息。当然,如果我粗心大意的话,可能会误伤一两个奴隶,但是谁在乎呢!"
 
 # game/BKhelp.rpy:2045
 translate schinese help_farm_rules_holding_10d01bcf:
 
     # gizel normal "While your girls are not in training, you can choose what you want them to do during their stay ({b}holding{/b})."
-    gizel normal "当你的女孩们不在训练时,你可以选择她们在({b}囚禁{/b})期间做什么。"
+    gizel normal "当女孩们不训练时,你可以让她们在({b}囚禁{/b})期间做些什么。"
 
 # game/BKhelp.rpy:2047
 translate schinese help_farm_rules_holding_f68194b4:
@@ -2128,7 +2128,7 @@ translate schinese help_farm_rules_holding_f68194b4:
 translate schinese help_farm_rules_holding_34be0daf:
 
     # gizel "While you keep them busy, their {b}skills{/b} will improve... But they will get tired, and whine. They always do."
-    gizel "在她们保持忙碌的同时,她们的{b}技能{/b}属性也会提高...但是她们会变得疲惫,并且会发牢骚。她们一直都这样。"
+    gizel "在她们保持忙碌的同时,她们的{b}属性{/b}也会提高...但是她们会变得疲惫,并且会发牢骚。她们总是这样。"
 
 # game/BKhelp.rpy:2051
 translate schinese help_farm_rules_holding_af6e58e4:
@@ -2140,43 +2140,43 @@ translate schinese help_farm_rules_holding_af6e58e4:
 translate schinese help_farm_rules_holding_e7b5dc08:
 
     # gizel upset "Why not give them a nice massage, and a pouch of gold too, why don't you? *hiss*"
-    gizel upset "你干脆再给她们做一次全身按摩,再发一袋金币好了?*嘶*"
+    gizel upset "你干脆再给她们做一次全身按摩,再发一袋金币得了? *嘶*"
 
 # game/BKhelp.rpy:2060
 translate schinese help_zodiac_da122e3e:
 
     # sill happy "I read a fascinating story... Astrology is very popular in Zan, and {b}Zodiac saints{/b} play a foremost role at every level of society."
-    sill happy "我了解到一些有趣的事...泽恩有很多传奇人物被人们称为圣人,{b}圣人{/b}在各行各业都引领着人们前进，包括奴隶。"
+    sill happy "我看了一个有趣的故事...泽恩有很多传奇人物被人们称为圣人,{b}圣人{/b}在各行各业都引领着人们前进，包括奴隶。"
 
 # game/BKhelp.rpy:2062
 translate schinese help_zodiac_f945b6dd:
 
     # sill "Different classes of people have different belief systems. They have hundreds of popular spirits and other minor deities to choose from..."
-    sill "不同的职业都有其领军人物。三百六十行，行行出状元，服务业里也出现过闻名天下的人..."
+    sill "每个行业都有其领军人物。三百六十行，行行出状元，服务业里也出现过闻名天下的人..."
 
 # game/BKhelp.rpy:2064
 translate schinese help_zodiac_31388708:
 
     # you "Oh, really? Does that sit well with the major religions?"
-    you "哦,真的吗?但宗教允许人们崇拜这些传奇吗?"
+    you "哦,真的吗?但宗教允许人们崇拜这些传奇人物吗?"
 
 # game/BKhelp.rpy:2066
 translate schinese help_zodiac_f10dd37b:
 
     # sill "Well, the established religions don't really bother with mere superstitions such as the Zodiac saints... They find a way to include the saints in their own particular pantheon, in one way or another."
-    sill "嗯,宗教其实不在意人们崇拜凡人...相反的，他们会设法将这些圣人归为神明赐福的信徒,这样也能扩大宗教的影响力。"
+    sill "嗯,宗教其实无所谓人们崇拜凡人...相反的，他们会设法将这些传奇归为神明赐福的信徒,这样也能扩大宗教的影响力。"
 
 # game/BKhelp.rpy:2068
 translate schinese help_zodiac_ebd70b3d:
 
     # sill "For instance, the women of Zan follow {b}the Eight{/b} for good fortune, especially slaves and whores. The Eight are saintly women-like figures that appear in the heavens when the conditions are right."
-    sill "就拿青楼来说,泽恩有八位{b}传奇{/b}女性圣人。那八位圣人被认为是帮助人类繁衍和存续的化身,她们在大陆上播撒欲望和幸福。"
+    sill "就拿青楼来说,泽恩有八位{b}传奇{/b}的女圣人。那八位圣人被认为是帮助人类繁衍和存续的化身,她们在大陆上播撒欲望和幸福。"
 
 # game/BKhelp.rpy:2070
 translate schinese help_zodiac_d2faaa6a:
 
     # sill "By dedicating ourselves to a particular {b}Zodiac saint{/b}, we believe that we can improve and be better at serving our purpose."
-    sill "通过效仿{b}八位圣人{/b}可以让姑娘们有所进步,她们相信自己可以变得更好,朝着圣人的方向努力。"
+    sill "通过信仰{b}八位传奇{/b}可以让姑娘们得到提升,她们坚信自己可以更进一步,朝着传奇的方向努力。"
 
 # game/BKhelp.rpy:2072
 translate schinese help_zodiac_5ca4478a:
@@ -2188,49 +2188,49 @@ translate schinese help_zodiac_5ca4478a:
 translate schinese help_zodiac_c16fe67f:
 
     # sill "Every slave girl and prostitute follows a few of those Saints. A new girl will usually follow one or two of those depending on her natural inclinations."
-    sill "每个女奴和妓女都信奉几个这样的圣人。女孩根据她的特质通常会和某个或某些圣人更契合。"
+    sill "每个女奴和妓女都信仰着几个这样的圣人。女孩的特质预示着她和对应的圣人十分契合。"
 
 # game/BKhelp.rpy:2076
 translate schinese help_zodiac_2e23e72b:
 
     # sill "With experience, girls can learn to pay their respects to different deities or deepen their relationship with one they already follow. The saints are rumored to grant {b}perks{/b} to their followers, each according to their own character."
-    sill "随着经验的增长,女孩们可以学习不同的圣人,或者加深对某一位的崇拜。据说每位圣人都会根据自己的特质,赐予其崇拜者{b}祝福{/b}。"
+    sill "随着等级的提高,女孩们可以效仿不同的圣人,或者加深对某一位的信仰。据说每位圣人都会根据自己的特质,赐予信徒{b}祝福{/b}。"
 
 # game/BKhelp.rpy:2078
 translate schinese help_zodiac_d5223255:
 
     # sill "No girl can get all the benefits of all zodiac signs at once, though. They have to carefully choose their path."
-    sill "不过,女孩们不可能同时获得所有的赐福。她们必须谨慎选择自己的信仰。"
+    sill "不过,女孩们不可能同时获得所有的祝福。她们必须谨慎选择自己的信仰。"
 
 # game/BKhelp.rpy:2080
 translate schinese help_zodiac_2de68c61:
 
     # "Every girl starts with {b}one or two zodiac signs{/b} unlocked according to her base traits."
-    "每个女孩一开始都会根据她的基本特质解锁{b}一两个天赋{/b}。"
+    "每个女孩一开始都会根据她的基本特质解锁一到两个{b}天赋{/b}。"
 
 # game/BKhelp.rpy:2082
 translate schinese help_zodiac_71de0118:
 
     # "If a girl has only one zodiac sign unlocked, she receives the first perk for that sign for free."
-    "如果一个女孩只解锁了一个天赋,她会自动激活这个天赋的第一个祝福。"
+    "如果一个女孩只解锁了一个天赋,她将会自动获得这个天赋的第一个祝福。"
 
 # game/BKhelp.rpy:2084
 translate schinese help_zodiac_8c4857ab:
 
     # "Every level, a girl receives {b}one or two perk points{/b}. Perk points can be used to unlock a new zodiac sign, or learn a new perk."
-    "每一次升级,一个女孩都会获得{b}一到两个天赋点{/b}。天赋点可以用于解锁一个新的祝福,或解锁一项新的天赋。"
+    "每升1级,女孩都会获得一到两个{b}天赋点{/b}。天赋点可以用于解锁新的祝福,或解锁一项新的天赋。"
 
 # game/BKhelp.rpy:2086
 translate schinese help_zodiac_05a4a2d6:
 
     # "Higher-end perks can only be bought after the girl improves her rank. To learn more, click on the level up or perks button in the girls tab."
-    "更高级的天赋只有在女孩提升阶级后才能激活。如需了解更多,请点击女孩页面上的升级或天赋按钮。"
+    "更高级的祝福只有在女孩提升阶级后才能激活。如果想了解详细信息,请点击女孩页面上的升级或天赋按钮查询。"
 
 # game/BKhelp.rpy:2099
 translate schinese cheat_menu_22b4f2e2:
 
     # sill "WARNING! These cheats are for testing purposes, and may easily break your game! Only call this menu from the Home screen." nointeract
-    sill "警告!这些作弊码仅用于测试目的,可能轻易破坏你的游戏!只能在主页面调用此菜单。" nointeract
+    sill "警告!这些作弊功能仅用于测试,这会破坏你的游戏体验!你只能在主页面使用作弊功能。" nointeract
 
 # game/BKhelp.rpy:2462
 translate schinese cheat_menu_43260813:
@@ -2698,7 +2698,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2194
     old "Set modifiers separately"
-    new "自由作弊修改"
+    new "自定义作弊修改"
 
     # game/BKhelp.rpy:2215
     old "Get 1,000 gold"
@@ -3201,7 +3201,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:777
     old "怎么切换我的肖像?"
-    new "怎么切换我的肖像?"
+    new "怎么切换我的立绘?"
 
     # game/BKhelp.rpy:777
     old "介绍一下声望和技能点"
@@ -3353,7 +3353,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1292
     old "如何查看青楼的信息?"
-    new "如何查看青楼的信息?"
+    new "如何查看青楼的现状?"
 
     # game/BKhelp.rpy:1292
     old "介绍一下青楼的房间"
@@ -3392,8 +3392,8 @@ translate schinese strings:
     new "关于顾客的预算"
 
     # game/BKhelp.rpy:1377
-    old "广告宣发的作用"
-    new "广告宣发的作用"
+    old "广告宣传的作用"
+    new "广告宣传的作用"
 
     # game/BKhelp.rpy:1377
     old "没有要问的了"
@@ -3421,15 +3421,15 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1554
     old "介绍一下女孩的职业内容"
-    new "介绍一下女孩的职业内容"
+    new "介绍一下女孩的职业"
 
     # game/BKhelp.rpy:1554
     old "介绍一下性培训经验等级"
-    new "介绍一下性培训经验等级"
+    new "介绍一下性训练等级"
 
     # game/BKhelp.rpy:1554
     old "不用了，没什么要问的"
-    new "不用了，没什么要问的"
+    new "我没什么要问的了"
 
     # game/BKhelp.rpy:1611
     old "关于培训课程"
@@ -3449,7 +3449,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1657
     old "如何支持游戏?"
-    new "如何支持游戏?"
+    new "我能通过什么方式支持游戏?"
 
     # game/BKhelp.rpy:1657
     old "特别鸣谢"
