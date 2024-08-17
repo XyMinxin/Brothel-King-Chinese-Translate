@@ -2276,7 +2276,7 @@ screen button_overlay(girl, context="girls"):
             xmargin 0.1
             xsize 0.3
             xfill True
-            ypos 0.16
+            ypos 0.14
             background None
 
             has hbox
