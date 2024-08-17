@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-06-04 17:00
+﻿# TODO: Translation updated at 2024-08-17 20:59
 
 # game/BKsecurity.rpy:66
 translate schinese security_488f4983:
@@ -1251,64 +1251,64 @@ translate schinese girl_come_back_e964c4d3:
 translate schinese strings:
 
     # game/BKsecurity.rpy:373
-    old "Charge into the fray (use Strength to fight the enemy)"
-    new "Charge into the fray (use Strength to fight the enemy)"
+    old "拿起剑加入战斗 (用武力对抗敌人)"
+    new "拿起剑加入战斗 (用武力对抗敌人)"
 
     # game/BKsecurity.rpy:373
-    old "Destroy their war machines (use Spirit to cast a spell on them)"
-    new "Destroy their war machines (use Spirit to cast a spell on them)"
+    old "摧毁他们的器械 (用魔力施展法术)"
+    new "摧毁他们的器械 (用魔力施展法术)"
 
     # game/BKsecurity.rpy:373
-    old "Lead from behind (use Charisma to improve your troops' morale)"
-    new "Lead from behind (use Charisma to improve your troops' morale)"
+    old "在后方指挥大局 (用魅力提高士气)"
+    new "在后方指挥大局 (用魅力提高士气)"
 
     # game/BKsecurity.rpy:373
-    old "Challenge their leader (use Strength to attack the [enemy_g])"
-    new "Challenge their leader (use Strength to attack the [enemy_g])"
+    old "挑战他们的首领 (用武器攻击 [enemy_g])"
+    new "挑战他们的首领 (用武器攻击 [enemy_g])"
 
     # game/BKsecurity.rpy:373
-    old "Challenge their leader (use Spirit to attack the [enemy_g])"
-    new "Challenge their leader (use Spirit to attack the [enemy_g])"
+    old "挑战他们的首领 (用法术攻击 [enemy_g])"
+    new "挑战他们的首领 (用法术攻击 [enemy_g])"
 
     # game/BKsecurity.rpy:730
-    old "Defend your girls (use Strength to fight the enemy)"
-    new "Defend your girls (use Strength to fight the enemy)"
+    old "保护你的女孩 (用武力解决敌人)"
+    new "保护你的女孩 (用武力解决敌人)"
 
     # game/BKsecurity.rpy:730
-    old "Protect your girls (use Spirit to shield some of your girls)"
-    new "Protect your girls (use Spirit to shield some of your girls)"
+    old "保护你的女孩 (用法术施加护盾)"
+    new "保护你的女孩 (用法术施加护盾)"
 
     # game/BKsecurity.rpy:730
-    old "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
-    new "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
+    old "激励女孩自卫 (用魅力提高士气)"
+    new "激励女孩自卫 (用魅力提高士气)"
 
     # game/BKsecurity.rpy:730
-    old "Intercept their leader (use Strength to attack the [enemy_g])"
-    new "Intercept their leader (use Strength to attack the [enemy_g])"
+    old "拦下他们的首领 (用武器攻击 [enemy_g])"
+    new "拦下他们的首领 (用武器攻击 [enemy_g])"
 
     # game/BKsecurity.rpy:730
-    old "Intercept their leader (use Spirit to attack the [enemy_g])"
-    new "Intercept their leader (use Spirit to attack the [enemy_g])"
+    old "拦下他们的首领 (用法术攻击 [enemy_g])"
+    new "拦下他们的首领 (用法术攻击 [enemy_g])"
 
     # game/BKsecurity.rpy:1051
     old "What do you want to do with her?"
     new "What do you want to do with her?"
 
     # game/BKsecurity.rpy:1051
-    old "Keep her as a slave"
-    new "Keep her as a slave"
+    old "把她收为自己的奴隶以弥补损失"
+    new "把她收为自己的奴隶以弥补损失"
 
     # game/BKsecurity.rpy:1051
-    old "Sell her as a slave for [price] gold"
-    new "Sell her as a slave for [price] gold"
+    old "把她卖给奴隶贩子换取[price]金币"
+    new "把她卖给奴隶贩子换取[price]金币"
 
     # game/BKsecurity.rpy:1051
-    old "Sell her as sacrifice fodder for the blood islands for [evil_price] gold"
-    new "Sell her as sacrifice fodder for the blood islands for [evil_price] gold"
+    old "把她卖给鲜血群岛换取[evil_price]金币"
+    new "把她卖给鲜血群岛换取[evil_price]金币"
 
     # game/BKsecurity.rpy:1051
-    old "Make her swear an oath never to cross you again and let her go"
-    new "Make her swear an oath never to cross you again and let her go"
+    old "让她发誓再也不会招惹你，然后放了她"
+    new "让她发誓再也不会招惹你，然后放了她"
 
     # game/BKsecurity.rpy:1183
     old "{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\nThey're in such good spirits that they accept to work for half the usual amount ({b}"
@@ -1451,8 +1451,8 @@ translate schinese strings:
     new "she wounded it badly and it ran off."
 
     # game/BKsecurity.rpy:1265
-    old "{color=[c_green]}Security alert! "
-    new "{color=[c_green]}Security alert! "
+    old "{color=[c_green]}安全警报！"
+    new "{color=[c_green]}安全警报！"
 
     # game/BKsecurity.rpy:1265
     old " defended herself.{/color}"
@@ -1467,12 +1467,12 @@ translate schinese strings:
     new ". {/color}\nYou manage to drive it away, but the girl is in shock."
 
     # game/BKsecurity.rpy:1283
-    old "{color=[c_red]}Security alert! "
-    new "{color=[c_red]}Security alert! "
+    old "{color=[c_red]}安全警报！"
+    new "{color=[c_red]}安全警报！"
 
     # game/BKsecurity.rpy:1283
-    old " was hurt.{/color}"
-    new " was hurt.{/color}"
+    old "受伤了。{/color}"
+    new "受伤了。{/color}"
 
     # game/BKsecurity.rpy:1285
     old " was raped.{/color}"
@@ -1763,8 +1763,8 @@ translate schinese strings:
     new " The rioting customers overwhelmed your security guards and started looting your brothel's supplies and assaulting your girls.\n"
 
     # game/BKsecurity.rpy:1512
-    old " were hurt.\n"
-    new " were hurt.\n"
+    old "受伤了。\n"
+    new "受伤了。\n"
 
     # game/BKsecurity.rpy:1512
     old "The brothel is just one big mess (+"
@@ -1931,120 +1931,8 @@ translate schinese strings:
     new "{color=[c_red]}Security alert! Brothel alert level and threat increased.{/color}"
 
     # game/BKsecurity.rpy:1641
-    old "All right (pay [price] gold)"
-    new "All right (pay [price] gold)"
-
-    # game/BKsecurity.rpy:1641
-    old "Maybe later (come back later)"
-    new "Maybe later (come back later)"
-
-    # game/BKsecurity.rpy:1641
-    old "Forget it ([girl.fullname] will be lost forever)"
-    new "Forget it ([girl.fullname] will be lost forever)"
-
-    # game/BKsecurity.rpy:1717
-    old "Do you want to try and rescue [girl.fullname] now?"
-    new "Do you want to try and rescue [girl.fullname] now?"
-
-    # game/BKsecurity.rpy:1942
-    old "You do not have enough room to welcome [girl.fullname] back to the brothel."
-    new "You do not have enough room to welcome [girl.fullname] back to the brothel."
-
-    # game/BKsecurity.rpy:1942
-    old "Let her stay in an inn until tomorrow for 50 gold"
-    new "Let her stay in an inn until tomorrow for 50 gold"
-
-    # game/BKsecurity.rpy:1942
-    old "Let her stay in an inn for a week for 250 gold"
-    new "Let her stay in an inn for a week for 250 gold"
-
-    # game/BKsecurity.rpy:1942
-    old "Sell her for [price] gold"
-    new "Sell her for [price] gold"
-
-    # game/BKsecurity.rpy:1995
-    old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
-    new "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
-
-# TODO: Translation updated at 2024-07-31 02:24
-
-translate schinese strings:
-
-    # game/BKsecurity.rpy:373
-    old "拿起剑加入战斗 (用武力对抗敌人)"
-    new "拿起剑加入战斗 (用武力对抗敌人)"
-
-    # game/BKsecurity.rpy:373
-    old "摧毁他们的器械 (用魔力施展法术)"
-    new "摧毁他们的器械 (用魔力施展法术)"
-
-    # game/BKsecurity.rpy:373
-    old "在后方指挥大局 (用魅力提高士气)"
-    new "在后方指挥大局 (用魅力提高士气)"
-
-    # game/BKsecurity.rpy:373
-    old "挑战他们的首领 (用武器攻击 [enemy_g])"
-    new "挑战他们的首领 (用武器攻击 [enemy_g])"
-
-    # game/BKsecurity.rpy:373
-    old "挑战他们的首领 (用法术攻击 [enemy_g])"
-    new "挑战他们的首领 (用法术攻击 [enemy_g])"
-
-    # game/BKsecurity.rpy:730
-    old "保护你的女孩 (用武力解决敌人)"
-    new "保护你的女孩 (用武力解决敌人)"
-
-    # game/BKsecurity.rpy:730
-    old "保护你的女孩 (用法术施加护盾)"
-    new "保护你的女孩 (用法术施加护盾)"
-
-    # game/BKsecurity.rpy:730
-    old "激励女孩自卫 (用魅力提高士气)"
-    new "激励女孩自卫 (用魅力提高士气)"
-
-    # game/BKsecurity.rpy:730
-    old "拦下他们的首领 (用武器攻击 [enemy_g])"
-    new "拦下他们的首领 (用武器攻击 [enemy_g])"
-
-    # game/BKsecurity.rpy:730
-    old "拦下他们的首领 (用法术攻击 [enemy_g])"
-    new "拦下他们的首领 (用法术攻击 [enemy_g])"
-
-    # game/BKsecurity.rpy:1051
-    old "把她收为自己的奴隶以弥补损失"
-    new "把她收为自己的奴隶以弥补损失"
-
-    # game/BKsecurity.rpy:1051
-    old "把她卖给奴隶贩子换取[price]金币"
-    new "把她卖给奴隶贩子换取[price]金币"
-
-    # game/BKsecurity.rpy:1051
-    old "把她卖给鲜血群岛换取[evil_price]金币"
-    new "把她卖给鲜血群岛换取[evil_price]金币"
-
-    # game/BKsecurity.rpy:1051
-    old "让她发誓再也不会招惹你，然后放了她"
-    new "让她发誓再也不会招惹你，然后放了她"
-
-    # game/BKsecurity.rpy:1265
-    old "{color=[c_green]}安全警报！"
-    new "{color=[c_green]}安全警报！"
-
-    # game/BKsecurity.rpy:1283
-    old "{color=[c_red]}安全警报！"
-    new "{color=[c_red]}安全警报！"
-
-    # game/BKsecurity.rpy:1283
-    old "受伤了。{/color}"
-    new "受伤了。{/color}"
-
-    # game/BKsecurity.rpy:1512
-    old "受伤了。\n"
-    new "受伤了。\n"
-
-    # game/BKsecurity.rpy:1641
-    old "那就成交 (支付[price]金币)"
-    new "那就成交 (支付[price]金币)"
+    old "那就成交(支付[price]金币)"
+    new "那就成交(支付[price]金币)"
 
     # game/BKsecurity.rpy:1641
     old "下次再说(以后再来)"
@@ -2053,6 +1941,18 @@ translate schinese strings:
     # game/BKsecurity.rpy:1641
     old "当我没说([girl.fullname]将永远消失)"
     new "当我没说([girl.fullname]将永远消失)"
+
+    # game/BKsecurity.rpy:1670
+    old "那就成交 (支付[price]金币)"
+    new "那就成交 (支付[price]金币)"
+
+    # game/BKsecurity.rpy:1717
+    old "Do you want to try and rescue [girl.fullname] now?"
+    new "Do you want to try and rescue [girl.fullname] now?"
+
+    # game/BKsecurity.rpy:1942
+    old "You do not have enough room to welcome [girl.fullname] back to the brothel."
+    new "You do not have enough room to welcome [girl.fullname] back to the brothel."
 
     # game/BKsecurity.rpy:1942
     old "给她50金币让她找间旅店住一夜"
@@ -2069,4 +1969,8 @@ translate schinese strings:
     # game/BKsecurity.rpy:1942
     old "放了她，还她自由之身"
     new "放了她，还她自由之身"
+
+    # game/BKsecurity.rpy:1995
+    old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
+    new "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
 
