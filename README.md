@@ -31,7 +31,7 @@
 
 ①下载工具：[下载工具本体](https://mega.nz/file/1fFWxKTL#5flUKm1fiR4uME_sNzOtFdWdMTAS3sAcphFSTyXhcPA)
 
-③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases)
+③安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20230820/TaggingTool-v2.8.14-Chinese.zip)
 
 [工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
 
