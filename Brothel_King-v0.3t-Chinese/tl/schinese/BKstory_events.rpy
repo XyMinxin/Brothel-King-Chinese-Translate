@@ -17422,7 +17422,7 @@ translate schinese farm_first_visit_8e9b7708:
 translate schinese farm_first_visit_0c098b24:
 
     # gizel "Finally, I should note that there is a limit to how much we can grow the farm without attracting too much attention. Things will get better once you obtain a higher brothel license, which will give you more influence."
-    gizel "最后,我想指出,如果我们不想引起太多关注,农场是有扩张上限的。等你获得更高级的青楼执照后,就会有更多影响力。"
+    gizel "最后,我想指出,如果我们不想引起太多关注,农场是有扩张上限的。等你获得更高级的营业执照后,就会有更多影响力。"
 
 # game/BKstory_events.rpy:8921
 translate schinese farm_first_visit_7acd2ace:
