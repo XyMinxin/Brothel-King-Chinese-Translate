@@ -4,13 +4,13 @@
 translate schinese jobgirl_beach_1_5c25899c:
 
     # "You wake up early this morning; it is a hot sunny day, and you are in desperate need of fresh air."
-    "你一早就醒了;灼热的晴天,你迫切地需要呼吸新鲜空气。"
+    "你一早就醒了;今天烈日当头,你迫切地需要呼吸新鲜空气。"
 
 # game/kite_jobgirl 2_beach.rpy:27
 translate schinese jobgirl_beach_1_3d14c82c:
 
     # you "It's a perfect day to go for a swim... I could go to the beach, watch girls in their hot swimsuits..."
-    you "去游泳是个绝佳的选择...我可以去海滩,看看美女们穿着性感泳衣..."
+    you "游泳可能是个好主意...我可以去海滩,欣赏穿着性感泳衣的美女..."
 
 # game/kite_jobgirl 2_beach.rpy:29
 translate schinese jobgirl_beach_1_668ea459:
@@ -22,19 +22,19 @@ translate schinese jobgirl_beach_1_668ea459:
 translate schinese jobgirl_beach_1_9eebc757:
 
     # you "Sill! Come over here!"
-    you "希露!过来这里!"
+    you "希露!到我这来!"
 
 # game/kite_jobgirl 2_beach.rpy:41
 translate schinese jobgirl_beach_1_008557ff:
 
     # sill sad "Master, *pant*, I'm making breakfast, what do you need? *pant*"
-    sill sad "主人,*喘息*,我正在做早餐,您需要什么吗?*喘息*"
+    sill sad "主人,*喘息*,我正在做早餐呢,您需要什么吗?*喘息*"
 
 # game/kite_jobgirl 2_beach.rpy:43
 translate schinese jobgirl_beach_1_d75d39bc:
 
     # you "Get your lazy ass in here. You remember that task I had for you? Follow that adventurer chick and find out where she goes swimming?"
-    you "快给我过来。你还记得我之前让你做的事吗?跟着那个冒险者姑娘,看看她去哪里游泳?"
+    you "快给我过来。你还记得我之前让你做的事吗?跟踪那个红发冒险者,看看她去哪里游泳?"
 
 # game/kite_jobgirl 2_beach.rpy:45
 translate schinese jobgirl_beach_1_b33464e5:
@@ -46,7 +46,7 @@ translate schinese jobgirl_beach_1_b33464e5:
 translate schinese jobgirl_beach_1_527bea44:
 
     # sill happy "You said you wanted to make sure she wasn't going to drown, right? Don't worry, she's an excellent swimmer."
-    sill happy "你说你想确保她不会溺水,对吧?别担心,她很会游。"
+    sill happy "你说你想防止她溺水,对吧?不用担心,她游泳技术很厉害。"
 
 # game/kite_jobgirl 2_beach.rpy:49
 translate schinese jobgirl_beach_1_9735274c:
@@ -58,7 +58,7 @@ translate schinese jobgirl_beach_1_9735274c:
 translate schinese jobgirl_beach_1_9e036067:
 
     # sill "Really, uh... Well, it was around here. Is that all, Master?"
-    sill "真的吗,呃...好像在这里附近。还有别的事吗,主人?"
+    sill "真的吗,呃...好像在这附近。还有别的事吗,主人?"
 
 # game/kite_jobgirl 2_beach.rpy:53
 translate schinese jobgirl_beach_1_e4769af2:
@@ -106,7 +106,7 @@ translate schinese jobgirl_beach_1_a577ad0e:
 translate schinese jobgirl_beach_1_7ba222e9:
 
     # sill "She's wearing very little! There's barely any fabric to protect her! Her skin is totally exposed... Her bikini is so tight that..."
-    sill "她穿得太少了!几乎没有布料去保护她!她的皮肤完全暴露了...她的比基尼太紧了,以至于..."
+    sill "她穿得太少了!几乎不着一缕!她的皮肤全都露在外面...她的比基尼太紧了,以至于..."
 
 # game/kite_jobgirl 2_beach.rpy:69
 translate schinese jobgirl_beach_1_bfd08253:
@@ -130,7 +130,7 @@ translate schinese jobgirl_beach_1_1be08bd5:
 translate schinese jobgirl_beach_1_aa594212:
 
     # sill happy "Still, it's nice to see Master [MC.name] cares so much about his lifeguard exam."
-    sill happy "不过,看到主人[MC.name]如此关心他的救生员考试也很不错。"
+    sill happy "不过,看到[MC.name]如此关心他的救生员考试也很不错。"
 
 # game/kite_jobgirl 2_beach.rpy:81
 translate schinese jobgirl_beach_1_ba73d4ce:
@@ -142,25 +142,25 @@ translate schinese jobgirl_beach_1_ba73d4ce:
 translate schinese jobgirl_beach_1_58ccc8f3:
 
     # "('Lifeguard' duty: Visit the {b}beach{/b} to track the adventurer.)"
-    "('救生员'职责:前往{b}海滩{/b}追踪冒险者。)"
+    "('救生员'的职责:前往{b}海滩{/b}追踪斯嘉丽。)"
 
 # game/kite_jobgirl 2_beach.rpy:124
 translate schinese jobgirl_beach_2_c8a0fc9a:
 
     # "You head for the location indicated by Sill. You don't know what to expect once there, but you start fantasizing about the redhead adventurer. You still have in mind how things went when she asked for your help with that stupid riddle."
-    "你朝希露所指的方向前去。你不知道在那里会发生什么,但你开始幻想那个红发冒险者。你还记得她请你帮忙解开那个愚蠢的谜题时的情景。"
+    "你赶去希露所指的地方。你不知道在那里会发生什么,你回忆起斯嘉丽和你共处的时光。你还记得她请你帮忙解开那个愚蠢的谜题时的情景。"
 
 # game/kite_jobgirl 2_beach.rpy:126
 translate schinese jobgirl_beach_2_09323470:
 
     # you "(A bit crazy and obviously not a genius, but damn she's smoking hot! Her cleavage and buttocks almost gave me nosebleeds last time!)"
-    you "(有点疯狂,并不聪明,但她真他妈性感!上次她的乳沟和翘臀让我流鼻血都要流出来了!)"
+    you "(有点偏执,不太聪明,但她太骚了!她的乳沟和臀缝让我血脉喷张!)"
 
 # game/kite_jobgirl 2_beach.rpy:128
 translate schinese jobgirl_beach_2_c5ed5cbf:
 
     # you "(Now, I'm going to surprise her at the beach. She's wearing a skimpy bikini...)"
-    you "(现在,我要去海滩上给她一个惊喜。她穿了一件暴露的比基尼...)"
+    you "(现在,我要去海滩上给她一个惊喜。她穿着一件暴露的比基尼...)"
 
 # game/kite_jobgirl 2_beach.rpy:130
 translate schinese jobgirl_beach_2_b8a37839:
@@ -172,13 +172,13 @@ translate schinese jobgirl_beach_2_b8a37839:
 translate schinese jobgirl_beach_2_b1993080:
 
     # "You think about her the whole time, until you arrive at the beach. You have to concentrate, otherwise you will not find the spot Sill showed you."
-    "你一路上一直在想她,直到抵达海滩。你必须集中注意力,否则就找不到希露指给你的那个地方。"
+    "你一路上一直在想她,直到抵达海滩。你必须集中注意力,否则就找不到希露指给你的那个地方了。"
 
 # game/kite_jobgirl 2_beach.rpy:134
 translate schinese jobgirl_beach_2_715bc24e:
 
     # "You start looking for the place where you expect to find the adventurer."
-    "你前往斯嘉丽可能会在的地方。"
+    "你前往红发冒险者可能会在的地方。"
 
 # game/kite_jobgirl 2_beach.rpy:136
 translate schinese jobgirl_beach_2_fd46cb7f:
@@ -226,7 +226,7 @@ translate schinese jobgirl_beach_2_672893ba:
 translate schinese jobgirl_beach_2_1dfd57dd:
 
     # jobgirl "Hey there! [MC.name]! My favourite soft-hearted pimp who helps damsels in distress! *wink*"
-    jobgirl "嗨![MC.name]!我最爱的那个软心肠的拉皮条客,拯救女性于危难之中!*眨眼*"
+    jobgirl "嗨![MC.name]!我亲爱的善良的青楼老板,他总是拯救女性于危难之中!*眨眼*"
 
 # game/kite_jobgirl 2_beach.rpy:159
 translate schinese jobgirl_beach_2_dbbe3256:
@@ -250,7 +250,7 @@ translate schinese jobgirl_beach_2_914cbfa1:
 translate schinese jobgirl_beach_2_2ee19163:
 
     # you "Smart girl. You know the answer, I've told you last time: you drive me crazy. No reason to hide it."
-    you "聪明的女孩。你知道为什么,我上次告诉过你:我倾心于你。没必要隐藏这一点。"
+    you "聪明的女孩。你知道为什么,我上次就告诉过你:你让我神魂颠倒。我不想掩藏自己的感情。"
 
 # game/kite_jobgirl 2_beach.rpy:166
 translate schinese jobgirl_beach_2_6312bad6:
@@ -268,43 +268,43 @@ translate schinese jobgirl_beach_2_9f140641:
 translate schinese jobgirl_beach_2_6076fbef:
 
     # jobgirl "Let me introduce you to my dear friend Anika. Anika, this is [MC.name], the one and only. *winks at you*"
-    jobgirl "让我给你介绍我亲爱的朋友阿妮卡吧。阿妮卡,这位就是[MC.name],独一无二的那个人。*对你眨眼*"
+    jobgirl "让我介绍一下我亲爱的朋友阿妮卡吧。阿妮卡,这位就是[MC.name],独一无二的那个人。*对你眨眼*"
 
 # game/kite_jobgirl 2_beach.rpy:176
 translate schinese jobgirl_beach_2_8450528e:
 
     # anika "Nice to meet you [MC.name], I was looking forward to see you in person, after all I've heard about you. *malicious smile*"
-    anika "很高兴认识你[MC.name],我一直很期待能亲自见到你,毕竟我听说了那么多关于你的事。*带有恶意的微笑*"
+    anika "很高兴认识你[MC.name],我一直很期待能亲自见到你,毕竟我听说了那么多关于你的事。*坏笑*"
 
 # game/kite_jobgirl 2_beach.rpy:178
 translate schinese jobgirl_beach_2_d4603072:
 
     # you "Really? I hope you only heard good stuff..."
-    you "真的吗?我希望你只听到好话..."
+    you "真的吗?我希望她说的都是好话..."
 
 # game/kite_jobgirl 2_beach.rpy:180
 translate schinese jobgirl_beach_2_2b6d4bd1:
 
     # anika "Yeah yeah, she wouldn't stop going on about you. How you're really smart and helpful, solved that ancient riddle in no time, and so on."
-    anika "是啊是啊,她从早到晚一直在聊你。说你真的很聪明很靠得住,一下子就解开了那个古老的谜题,诸如此类。"
+    anika "是啊是啊,她从早到晚一直在聊你。说你聪明绝顶，很靠得住,一下子就解开了那个古老的谜题,诸如此类。"
 
 # game/kite_jobgirl 2_beach.rpy:182
 translate schinese jobgirl_beach_2_0da2b9fc:
 
     # "The redhead girl blushes intensely, her cheeks getting almost as red as her hair."
-    "这个红发女孩脸颊通红,几乎和她的头发一样红。"
+    "红发少女脸颊通红,几乎和她的头发一样红。"
 
 # game/kite_jobgirl 2_beach.rpy:184
 translate schinese jobgirl_beach_2_3a6c996e:
 
     # you "That's... Good to know. Say, I wanted to ask you something: our friend here didn't tell me her true name yet, so I was wondering if you could solve {i}that{/i} riddle for me."
-    you "这...很高兴知道。那么,我想问你一件事:我们的朋友这里还没告诉我她真正的名字,所以我很想知道你能不能帮我解开{i}那个{/i}谜题。"
+    you "这...很高兴听你这么说。那么,我想请教一下:我们的朋友始终不愿告诉我她的芳名,所以你能帮我解开{i}那个{/i}谜题吗。"
 
 # game/kite_jobgirl 2_beach.rpy:186
 translate schinese jobgirl_beach_2_e85a5884:
 
     # anika "Her true name? Oh oh, I see, she didn't tell you, and I can guess why..."
-    anika "她的真名?哦哦,我明白了,她没告诉你,我猜也是有原因的..."
+    anika "她的真名?哦哦,我明白了,她没告诉你,我猜她有自己的打算..."
 
 # game/kite_jobgirl 2_beach.rpy:188
 translate schinese jobgirl_beach_2_53a3a2f5:
@@ -316,7 +316,7 @@ translate schinese jobgirl_beach_2_53a3a2f5:
 translate schinese jobgirl_beach_2_9e8813ed:
 
     # jobgirl "I won't tell you! Bleeeee! *makes a face*"
-    jobgirl "我不会告诉你的!噗!*做鬼脸*"
+    jobgirl "我才不会告诉你呐!噗!*做鬼脸*"
 
 # game/kite_jobgirl 2_beach.rpy:192
 translate schinese jobgirl_beach_2_528299fd:

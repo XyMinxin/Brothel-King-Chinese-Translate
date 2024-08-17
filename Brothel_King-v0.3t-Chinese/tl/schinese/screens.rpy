@@ -166,10 +166,6 @@ translate schinese strings:
     old "Sound Volume"
     new "音效音量"
 
-    # game/screens.rpy:687
-    #old "Test"
-    #new "测试"
-
     # game/screens.rpy:696
     old "Voice Volume"
     new "语音音量"
@@ -177,18 +173,6 @@ translate schinese strings:
     # game/screens.rpy:699
     old "Voice Sustain"
     new "语音持续"
-
-    # game/screens.rpy:761
-    #old "Yes"
-    #new "确定"
-
-    # game/screens.rpy:762
-    #old "No"
-    #new "取消"
-
-    # game/screens.rpy:790
-    #old "Back"
-    #new "回退"
 
     # game/screens.rpy:791
     old "Save"
@@ -268,17 +252,17 @@ translate schinese strings:
 
     # game/screens.rpy:689
     old "Test"
-    new "Test"
+    new "测试"
 
     # game/screens.rpy:763
     old "Yes"
-    new "Yes"
+    new "确定"
 
     # game/screens.rpy:764
     old "No"
-    new "No"
+    new "取消"
 
     # game/screens.rpy:792
     old "Back"
-    new "Back"
+    new "返回"
 
