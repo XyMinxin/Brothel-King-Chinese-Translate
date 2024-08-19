@@ -4,397 +4,397 @@
 translate schinese security_488f4983:
 
     # security "{color=[c_red]}[brothel.name] is being raided by [attackers]!{/color}\nYou rush outside with the defenders."
-    security "{color=[c_red]}[brothel.name] is being raided by [attackers]!{/color}\nYou rush outside with the defenders."
+    security "{color=[c_red]}[brothel.name]正在被[attackers]!{/color}\n你和保安一起冲出去。"
 
 # game/BKsecurity.rpy:72
 translate schinese security_56178303:
 
     # security "Your first assault breaks their line and they quickly scatter. That's when you hear a scream."
-    security "Your first assault breaks their line and they quickly scatter. That's when you hear a scream."
+    security "你的第一次进攻冲乱了他们的阵型，他们很快就被冲散了。这时你听到一声尖叫。"
 
 # game/BKsecurity.rpy:75
 translate schinese security_e458fe67:
 
     # ev_girl1 "EEEEK!" with vpunch
-    ev_girl1 "EEEEK!" with vpunch
+    ev_girl1 "呀啊啊!" with vpunch
 
 # game/BKsecurity.rpy:81
 translate schinese security_af6afeb1:
 
     # security "Some of the attackers have sneaked out the back of [brothel.name] while the security guards were distracted! You rush back to the brothel to help.\n{color=[c_red]}[girl_nb] of your girls are under attack, but you can only help one!{/color}"
-    security "Some of the attackers have sneaked out the back of [brothel.name] while the security guards were distracted! You rush back to the brothel to help.\n{color=[c_red]}[girl_nb] of your girls are under attack, but you can only help one!{/color}"
+    security "一些袭击者趁保安分神的时候从[brothel.name]的后门溜了出来!你冲回青楼支援。\n{color=[c_red]}[girl_nb]个姑娘被袭击了, 但你只能救一个!{/color}"
 
 # game/BKsecurity.rpy:104
 translate schinese security_80691383:
 
     # girl.char "EEEEK!!! Master, help me!" with vpunch
-    girl.char "EEEEK!!! Master, help me!" with vpunch
+    girl.char "呀啊啊!!! 主人，救命!" with vpunch
 
 # game/BKsecurity.rpy:124
 translate schinese security_bba71714:
 
     # "You reach [girl.fullname] just in time to confront her attacker."
-    "You reach [girl.fullname] just in time to confront her attacker."
+    "你及时赶到[girl.fullname]身边，直面袭击者。"
 
 # game/BKsecurity.rpy:157
 translate schinese security_29f7943f:
 
     # "With righteous fury, you cut down your opponent before he has a chance to react.\n{color=[c_green]}[girl.name] is safe.{/color}"
-    "With righteous fury, you cut down your opponent before he has a chance to react.\n{color=[c_green]}[girl.name] is safe.{/color}"
+    "满怀正义的愤怒，你在对手有机会做出反应之前就把他砍倒了。\n{color=[c_green]}[girl.name]安全了。{/color}"
 
 # game/BKsecurity.rpy:164
 translate schinese security_3a5817a1:
 
     # "Your opponent strikes the air out of you with a mighty blow from [hit]. You are sent flying backwards. Your head hits something hard."
-    "Your opponent strikes the air out of you with a mighty blow from [hit]. You are sent flying backwards. Your head hits something hard."
+    "你的对手用一记[hit]把你打飞。你向后退去。你的头撞到了什么东西。"
 
 # game/BKsecurity.rpy:186
 translate schinese security_f2d17201:
 
     # "The assailant is pulverized by a mighty bolt of lightning from your staff. {color=[c_green]}[girl.name] is safe.{/color}"
-    "The assailant is pulverized by a mighty bolt of lightning from your staff. {color=[c_green]}[girl.name] is safe.{/color}"
+    "袭击者被你的法杖射出的一道强大的闪电击碎。{color=[c_green]}[girl.name]安全了。{/color}"
 
 # game/BKsecurity.rpy:191
 translate schinese security_9f42b6fb:
 
     # "As you try to cast a spell, you realize too late your opponent is protected by a magic ward. He hits you hard with [hit], sending you crumbling on the floor."
-    "As you try to cast a spell, you realize too late your opponent is protected by a magic ward. He hits you hard with [hit], sending you crumbling on the floor."
+    "当你试图施法时，你意识到你的对手被魔法屏障保护着，但为时已晚。他对着你用力[hit], 把你打倒在地。"
 
 # game/BKsecurity.rpy:212
 translate schinese security_873ed07b:
 
     # "[girl.fullname] is left alone, but her magic shield blinded her attacker and protected her from harm."
-    "[girl.fullname] is left alone, but her magic shield blinded her attacker and protected her from harm."
+    "[girl.fullname]独自一人, 但她的魔法护盾挡住了袭击者，保护她免受伤害。"
 
 # game/BKsecurity.rpy:232
 translate schinese security_67702c78:
 
     # "[girl.fullname] is left to fend alone for herself, but she is far from defenseless. Attacking from behind while your opponent is busy pummeling you, she stabs him in the back repeatedly, and he runs away squealing."
-    "[girl.fullname] is left to fend alone for herself, but she is far from defenseless. Attacking from behind while your opponent is busy pummeling you, she stabs him in the back repeatedly, and he runs away squealing."
+    "[girl.fullname]孤立无援, 但她也不是泛泛之辈。当歹徒全神贯注地对付你时，她从背后偷袭，她在歹徒的背后反复刺他，他尖叫着跑开了。"
 
 # game/BKsecurity.rpy:252
 translate schinese security_11843d26:
 
     # "[girl.fullname] is left to fend alone for herself. She tries to grab a stick for defense, but her opponent swipes it away effortlessly."
-    "[girl.fullname] is left to fend alone for herself. She tries to grab a stick for defense, but her opponent swipes it away effortlessly."
+    "[girl.fullname]孤立无援。她试图抓住一根棍子来防御，但袭击者毫不费力地把它夺走了。"
 
 # game/BKsecurity.rpy:254
 translate schinese security_f884565c:
 
     # girl.char "Nooo!!!" with vpunch
-    girl.char "Nooo!!!" with vpunch
+    girl.char "不~!!!" with vpunch
 
 # game/BKsecurity.rpy:355
 translate schinese security_5b9e38f3:
 
     # "You're standing on the doorstep of your brothel, ready to greet customers. Long minutes pass... But still, no one comes. You have a bad feeling about this."
-    "You're standing on the doorstep of your brothel, ready to greet customers. Long minutes pass... But still, no one comes. You have a bad feeling about this."
+    "你站在青楼的大门外，准备迎接顾客。过了很久...但是，一个客人也没有。你有种不好的预感。"
 
 # game/BKsecurity.rpy:359
 translate schinese security_4b056c75:
 
     # sill sad "Master! Look!"
-    sill sad "Master! Look!"
+    sill sad "主人! 快看!"
 
 # game/BKsecurity.rpy:365
 translate schinese security_9941483a:
 
     # "First a couple silhouettes emerge on the horizon, then three, then four, and suddenly a large force of soldiers and monsters is massing in the streets facing your brothel."
-    "First a couple silhouettes emerge on the horizon, then three, then four, and suddenly a large force of soldiers and monsters is massing in the streets facing your brothel."
+    "远处先是出现两个模糊的身影，然后三个，四个...突然一有大群士兵和怪物聚集在你青楼所在的街道上。"
 
 # game/BKsecurity.rpy:367
 translate schinese security_40d05f1c:
 
     # "A security guard comes running towards you as if firehounds from the seven hells were on his heels."
-    "A security guard comes running towards you as if firehounds from the seven hells were on his heels."
+    "一名保安向你跑来，就好像被地狱三头犬追着一样。"
 
 # game/BKsecurity.rpy:369
 translate schinese security_6a73366b:
 
     # guard "Boss! I counted [enemies] of them. And they also have [war_machines] war machines! They are led by [enemy_general.fullname], a renowned [enemy_g]."
-    guard "Boss! I counted [enemies] of them. And they also have [war_machines] war machines! They are led by [enemy_general.fullname], a renowned [enemy_g]."
+    guard "老板! 我估算了一下[enemies]的数量。他们甚至有[war_machines]这样的攻城器械! 他们是[enemy_general.fullname]的手下,那个臭名昭著的[enemy_g]."
 
 # game/BKsecurity.rpy:371
 translate schinese security_d7897846:
 
     # you "Damn it, mercenaries! They're besieging us! Quick, get the girls inside, gather everyone, and get in battle formation!"
-    you "Damn it, mercenaries! They're besieging us! Quick, get the girls inside, gather everyone, and get in battle formation!"
+    you "该死，雇佣兵!他们打算围攻我们!快，把姑娘们带进去，所有人集合，排成战斗队形!"
 
 # game/BKsecurity.rpy:374
 translate schinese security_9296ec4b:
 
     # security "{b}Battle Phase 1{/b}\nYou must defend the Brothel! What do you do?" nointeract
-    security "{b}Battle Phase 1{/b}\nYou must defend the Brothel! What do you do?" nointeract
+    security "{b}战斗的第一阶段{/b}\n你必须守住你的青楼! 你打算怎么做?" nointeract
 
 # game/BKsecurity.rpy:379
 translate schinese security_f144d3fa:
 
     # you "To battle!!!" with vpunch
-    you "To battle!!!" with vpunch
+    you "战无不胜!!!" with vpunch
 
 # game/BKsecurity.rpy:387
 translate schinese security_3ec535f6:
 
     # you "C'm'on baby, light my fire!"
-    you "C'm'on baby, light my fire!"
+    you "来吧你们这群混账, 给我烧起来!"
 
 # game/BKsecurity.rpy:389
 translate schinese security_cdc6eb7a:
 
     # you "Let's see how well those machines burn!"
-    you "Let's see how well those machines burn!"
+    you "让我看看这些器械烧起来有多漂亮"
 
 # game/BKsecurity.rpy:405
 translate schinese security_2266e5fc:
 
     # "Your speech galvanizes your troops and they raise their swords as one in defiance. Their morale is {b}very high{/b}."
-    "Your speech galvanizes your troops and they raise their swords as one in defiance. Their morale is {b}very high{/b}."
+    "你的演讲激励了你的军队，他们举起剑来反抗。他们的士气{b}爆棚{/b}。"
 
 # game/BKsecurity.rpy:408
 translate schinese security_fe6499fb:
 
     # "Your troops are energized by your speech. Their morale is {b}high{/b}."
-    "Your troops are energized by your speech. Their morale is {b}high{/b}."
+    "你的演讲鼓舞了你的军队。他们的士气{b}高涨{/b}。"
 
 # game/BKsecurity.rpy:411
 translate schinese security_30d80a11:
 
     # "Your speech helps a little, but you can see your troops are nervous in the face of battle. Morale improved slightly."
-    "Your speech helps a little, but you can see your troops are nervous in the face of battle. Morale improved slightly."
+    "你的演讲起了一点作用，但你可以看到你的军队在面对战斗时很紧张。士气略微提高。"
 
 # game/BKsecurity.rpy:418
 translate schinese security_f19c5383:
 
     # you "Leave their general to me... I will end this!" with vpunch
-    you "Leave their general to me... I will end this!" with vpunch
+    you "把他们的头头留给我...我要亲手结束这一切!" with vpunch
 
 # game/BKsecurity.rpy:424
 translate schinese security_df5fe76e:
 
     # you "Leave the magic user to me... I will deal with her!" with vpunch
-    you "Leave the magic user to me... I will deal with her!" with vpunch
+    you "把那个施法者留给我...我来对付她!" with vpunch
 
 # game/BKsecurity.rpy:430
 translate schinese security_771685c0:
 
     # "Rushing up the stairs, you run for the brothel battlements."
-    "Rushing up the stairs, you run for the brothel battlements."
+    "你冲上楼梯，奔向青楼的护墙。"
 
 # game/BKsecurity.rpy:432
 translate schinese security_157c264f:
 
     # you "To say they called me crazy when I insisted the brothel needed battlements! Ha!"
-    you "To say they called me crazy when I insisted the brothel needed battlements! Ha!"
+    you "当初他们都说我疯了，因为我坚持在青楼外面修一层城墙!哈!"
 
 # game/BKsecurity.rpy:434
 translate schinese security_61bb90fa:
 
     # "Reaching atop the battlements, you get a field view of the battle. The siege engines are getting ready to fire at your troops. You lift your staff into the air and ready a spell."
-    "Reaching atop the battlements, you get a field view of the battle. The siege engines are getting ready to fire at your troops. You lift your staff into the air and ready a spell."
+    "登上护墙，你可以看到战场的全景。攻城机准备向你的部队开火了。你把魔杖举到空中，准备好吟唱咒语。"
 
 # game/BKsecurity.rpy:438
 translate schinese security_d8ac240c:
 
     # you "Burn, burn, yes ya gonna burn!"
-    you "Burn, burn, yes ya gonna burn!"
+    you "烧吧, 烧吧,让火焰净化一切!"
 
 # game/BKsecurity.rpy:440
 translate schinese security_10fa092a:
 
     # you "You think you're safe uphill? Ha! PYROBLAST!" with vpunch
-    you "You think you're safe uphill? Ha! PYROBLAST!" with vpunch
+    you "你以为你在坡上就安全了？哈！烈焰爆破" with vpunch
 
 # game/BKsecurity.rpy:450
 translate schinese security_733ed97b:
 
     # security_breach "Your fireball hits the ground near the war machines and sets fire to the grass. However, some of the mercenaries stand ready with water buckets and they quickly extinguish the fire."
-    security_breach "Your fireball hits the ground near the war machines and sets fire to the grass. However, some of the mercenaries stand ready with water buckets and they quickly extinguish the fire."
+    security_breach "你的火球击中了攻城器械附近的地面，点燃了草地。然而，一些雇佣兵早就准备好了水桶，他们迅速扑灭了火势。"
 
 # game/BKsecurity.rpy:452
 translate schinese security_f0beac49:
 
     # you "Damn!"
-    you "Damn!"
+    you "该死!"
 
 # game/BKsecurity.rpy:454
 translate schinese security_c112ec25:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
+    security_breach "{b}战斗的第二阶段{/b}\n敌人的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:467
 translate schinese security_52ddb799:
 
     # security "Your fireball hits right into the midst of the war machines, sending [destroyed] of them up in flames."
-    security "Your fireball hits right into the midst of the war machines, sending [destroyed] of them up in flames."
+    security "你的火球正好击中了攻城器械, 让其中一架[destroyed]当场报废。"
 
 # game/BKsecurity.rpy:470
 translate schinese security_311bad63:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe remaining war machines get ready to fire."
-    security_breach "{b}Battle Phase 2{/b}\nThe remaining war machines get ready to fire."
+    security_breach "{b}战斗的第二阶段{/b}\n敌人剩余的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:472
 translate schinese security_5363af40:
 
     # security "{b}Battle Phase 2{/b}\nNo war machines are left to fire."
-    security "{b}Battle Phase 2{/b}\nNo war machines are left to fire."
+    security "{b}战斗的第二阶段{/b}\n敌人已经没有攻城器械可以使用了。"
 
 # game/BKsecurity.rpy:475
 translate schinese security_c112ec25_1:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
+    security_breach "{b}战斗的第二阶段{/b}\n敌人的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:494
 translate schinese security_447932b3:
 
     # security_breach "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
-    security_breach "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
+    security_breach "{b}战斗的第三阶段{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
 
 # game/BKsecurity.rpy:498
 translate schinese security_5fc315f2:
 
     # enemy_general.char "CHAAAARGE!!!"
-    enemy_general.char "CHAAAARGE!!!"
+    enemy_general.char "冲  锋!!!"
 
 # game/BKsecurity.rpy:501
 translate schinese security_cee97817:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. You have the advantage, and their lines seem to falter."
-    security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. You have the advantage, and their lines seem to falter."
+    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人面对剩余[allies]个守卫。你占据了优势，他们的阵线要崩溃了。"
 
 # game/BKsecurity.rpy:505
 translate schinese security_410ac7d0:
 
     # you "CHAAAARGE!!!"
-    you "CHAAAARGE!!!"
+    you "冲  锋!!!"
 
 # game/BKsecurity.rpy:507
 translate schinese security_c12de197:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. Your forces are evenly matched."
-    security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. Your forces are evenly matched."
+    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人面对剩余[allies]个守卫。你们势均力敌。"
 
 # game/BKsecurity.rpy:510
 translate schinese security_0ee3ac03:
 
     # guard "CHAAAARGE!!!"
-    guard "CHAAAARGE!!!"
+    guard "冲  锋!!!"
 
 # game/BKsecurity.rpy:520
 translate schinese security_512177f8:
 
     # "The first lines of battle crash together. Ignoring the fighting around you, you force your way towards the enemy general."
-    "The first lines of battle crash together. Ignoring the fighting around you, you force your way towards the enemy general."
+    "战斗一触即发。你无视了周围的杂兵，径直冲向敌军头目。"
 
 # game/BKsecurity.rpy:531
 translate schinese security_b6ff1c89:
 
     # "She appears before you, and you yell a challenge."
-    "She appears before you, and you yell a challenge."
+    "她出现在你面前，你大声地叫阵挑战她。"
 
 # game/BKsecurity.rpy:533
 translate schinese security_dada2aba:
 
     # you "You! [enemy_general.name]! Prepare to be defeated!"
-    you "You! [enemy_general.name]! Prepare to be defeated!"
+    you "听好了! [enemy_general.name]! 准备受死吧!"
 
 # game/BKsecurity.rpy:537
 translate schinese security_e36b1a5f:
 
     # enemy_general.char "Ha! Fancy yourself a fighter, pimp boy?"
-    enemy_general.char "Ha! Fancy yourself a fighter, pimp boy?"
+    enemy_general.char "哈! 你以为你很能打, 小皮条客?"
 
 # game/BKsecurity.rpy:542
 translate schinese security_fcfef7de:
 
     # "The mercenary draws out her weapon and rises to meet you."
-    "The mercenary draws out her weapon and rises to meet you."
+    "雇佣兵拔出武器，准备迎战。"
 
 # game/BKsecurity.rpy:549
 translate schinese security_a7e30abb:
 
     # "You first hit bashes her shield hard, splitting it. She defends against your furious onslaught, parrying with her sword, but it is clear she is outmatched."
-    "You first hit bashes her shield hard, splitting it. She defends against your furious onslaught, parrying with her sword, but it is clear she is outmatched."
+    "你一击就击碎了盾牌，把它劈成两半。她用她的剑抵挡你猛烈的攻击，但很明显她落入下风。"
 
 # game/BKsecurity.rpy:551
 translate schinese security_775bf7e7:
 
     # enemy_general.char "Men! Help me!"
-    enemy_general.char "Men! Help me!"
+    enemy_general.char "小的们! 快来帮我!"
 
 # game/BKsecurity.rpy:558
 translate schinese security_923be87f:
 
     # "Two of her bodyguards leap to her defense, but before long, they lay inert at your feet. The [enemy_g] took advantage of the distraction to run away."
-    "Two of her bodyguards leap to her defense, but before long, they lay inert at your feet. The [enemy_g] took advantage of the distraction to run away."
+    "她的两个护卫冲过来保护她，但没过多久，他们也躺在你的脚下。敌人乘机逃跑了。"
 
 # game/BKsecurity.rpy:569
 translate schinese security_d3fc0c30:
 
     # "She answers your attacks blow for blow, and you feel she is no small time fighter. Little by little, you lose ground."
-    "She answers your attacks blow for blow, and you feel she is no small time fighter. Little by little, you lose ground."
+    "她招架住了你的攻击，看来她战斗经验丰富。渐渐地，你落入了下风。"
 
 # game/BKsecurity.rpy:571
 translate schinese security_1430511d:
 
     # you "Damn, she's strong. Men! To me!"
-    you "Damn, she's strong. Men! To me!"
+    you "该死, 她太猛了。 士兵们! 掩护我!"
 
 # game/BKsecurity.rpy:578
 translate schinese security_6cb0d445:
 
     # "Two of your guards intervene, but she quickly disposes of them. Before you have a chance to attack her again, you are engulfed into the fray of battle."
-    "Two of your guards intervene, but she quickly disposes of them. Before you have a chance to attack her again, you are engulfed into the fray of battle."
+    "你的两名守卫赶来助阵，但她很快就把他们解决掉了。在你有机会再次攻击她之前，你已经被卷入了人群的混战中。"
 
 # game/BKsecurity.rpy:583
 translate schinese security_cc0b9b6b:
 
     # "The sorceress begins an incantation. You must stop her, fast!"
-    "The sorceress begins an incantation. You must stop her, fast!"
+    "女巫开始吟唱咒语了。你必须阻止她，快!"
 
 # game/BKsecurity.rpy:590
 translate schinese security_84c1c8b2:
 
     # "You easily dispel her magic barrier, and raise your weapon to hit her. She barely has time to raise her staff in defense, and you break it in two."
-    "You easily dispel her magic barrier, and raise your weapon to hit her. She barely has time to raise her staff in defense, and you break it in two."
+    "你轻松地驱散掉她的魔法屏障，举起武器攻击她。她还没来得及举起法杖，你就把它掰成两半。"
 
 # game/BKsecurity.rpy:592
 translate schinese security_c4910e23:
 
     # enemy_general.char "Demons! Familiar! Help me!"
-    enemy_general.char "Demons! Familiar! Help me!"
+    enemy_general.char "魔鬼! 这不公平! 救我!"
 
 # game/BKsecurity.rpy:599
 translate schinese security_d3b597d8:
 
     # "A couple of strange, impish creatures leap to her defense, but you fry them with a firebolt. When the smoke dissipates, the [enemy_g] has retreated out of your reach."
-    "A couple of strange, impish creatures leap to her defense, but you fry them with a firebolt. When the smoke dissipates, the [enemy_g] has retreated out of your reach."
+    "几个奇怪的小鬼跳起来保护她，但你用火球术把他们炸飞了。当烟雾消散时，[enemy_g]已经撤退到你的射程之外了。"
 
 # game/BKsecurity.rpy:608
 translate schinese security_5bc9732b:
 
     # "A bolt of lightning hits at your feet, sending you flying backwards. When you come back to your senses, the sorceress is looming over you, muttering a spell, ready to deal the killing blow."
-    "A bolt of lightning hits at your feet, sending you flying backwards. When you come back to your senses, the sorceress is looming over you, muttering a spell, ready to deal the killing blow."
+    "一道闪电击中你的脚，将你击飞。当你恢复知觉时，女巫正在逼近你，喃喃地念着咒语，准备给你致命一击。"
 
 # game/BKsecurity.rpy:610
 translate schinese security_9b6f07b2:
 
     # you "Men! Attack her! Quick! *frantic*"
-    you "Men! Attack her! Quick! *frantic*"
+    you "士兵们! 集火她!快! *慌乱*"
 
 # game/BKsecurity.rpy:612
 translate schinese security_3f5ed950:
 
     # "A couple of your guards run at her, but she blows them to smithereens with her spell. Using the distraction, you crawl back behind your line of battle before she has a chance to ready an attack again."
-    "A couple of your guards run at her, but she blows them to smithereens with her spell. Using the distraction, you crawl back behind your line of battle before she has a chance to ready an attack again."
+    "几个守卫冲向她，但她用法术把他们撕成碎片。趁她没注意，你逃回队伍后方，她准备再次攻击。"
 
 # game/BKsecurity.rpy:618
 translate schinese security_25471562:
 
     # "The first lines of battle crash together. You stand at the forefront, slashing at enemies left and right."
-    "The first lines of battle crash together. You stand at the forefront, slashing at enemies left and right."
+    "战场乱作一团。你冲在最前线，拼命砍杀敌人。"
 
 # game/BKsecurity.rpy:628
 translate schinese security_13f7a93e:
@@ -1860,7 +1860,7 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1557
     old ", you notice something odd.\n"
-    new ", you notice something odd.\n"
+    new ", 你察觉到有什么地方不对劲。\n"
 
     # game/BKsecurity.rpy:1562
     old "A hooded silhouette is standing in the distance, watching your brothel, unmoving. "
@@ -1880,55 +1880,55 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1562
     old "disappears into the night."
-    new "disappears into the night."
+    new "消失在夜色之中。"
 
     # game/BKsecurity.rpy:1569
     old "An inert body is lying on the pavement. You flip it around, and recognize one of your guards, "
-    new "An inert body is lying on the pavement. You flip it around, and recognize one of your guards, "
+    new "人行道上躺着一具尸体。你把它翻了过来，你认出他是你的一个保安，"
 
     # game/BKsecurity.rpy:1569
     old "a dagger stuck inside his neck."
-    new "a dagger stuck inside his neck."
+    new "一把匕首插进了他的脖子。"
 
     # game/BKsecurity.rpy:1569
     old "a shuriken protuding from his forehead."
-    new "a shuriken protuding from his forehead."
+    new "他的额头上插着一把飞刀。"
 
     # game/BKsecurity.rpy:1569
     old "a knife lodged between his shoulders."
-    new "a knife lodged between his shoulders."
+    new "一把刀插在他的两肩之间。"
 
     # game/BKsecurity.rpy:1569
     old "his face grinning in a mortal rictus caused by an unknown poison"
-    new "his face grinning in a mortal rictus caused by an unknown poison"
+    new "他的脸因一种未知的毒药而露出致命的笑容"
 
     # game/BKsecurity.rpy:1569
     old "his body charred by a nasty spell"
-    new "his body charred by a nasty spell"
+    new "他的身体被恶毒的法术烧焦了"
 
     # game/BKsecurity.rpy:1569
     old "his face blue from suffocating with a grocery bag placed over his head"
-    new "his face blue from suffocating with a grocery bag placed over his head"
+    new "他的脸因为被亚麻袋套在头上而窒息发青"
 
     # game/BKsecurity.rpy:1569
     old "his head split open with a candlestick, in the library."
-    new "his head split open with a candlestick, in the library."
+    new "在书房里，他的头被烛台砸烂了。"
 
     # game/BKsecurity.rpy:1569
     old "The poor henchman is stone-cold dead. You will have him replaced by tomorrow, of course, but you wonder what evil is afoot."
-    new "The poor henchman is stone-cold dead. You will have him replaced by tomorrow, of course, but you wonder what evil is afoot."
+    new "那个可怜的心腹已经死了。当然，你明天就会找人换掉他，但你想知道有什么邪恶计划正在酝酿之中。"
 
     # game/BKsecurity.rpy:1573
     old "This is a bad sign of things to come. "
-    new "This is a bad sign of things to come. "
+    new "这是个不好的征兆。"
 
     # game/BKsecurity.rpy:1573
     old "The {b}threat{/b} to [brothel.name] has escalated."
-    new "The {b}threat{/b} to [brothel.name] has escalated."
+    new "[brothel.name]的{b}威胁{/b}已经提高了。"
 
     # game/BKsecurity.rpy:1577
     old "{color=[c_red]}Security alert! Brothel alert level and threat increased.{/color}"
-    new "{color=[c_red]}Security alert! Brothel alert level and threat increased.{/color}"
+    new "{color=[c_red]}安全警报! 青楼的威胁等级和警戒等级提高了。{/color}"
 
     # game/BKsecurity.rpy:1641
     old "那就成交(支付[price]金币)"
@@ -1948,11 +1948,11 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1717
     old "Do you want to try and rescue [girl.fullname] now?"
-    new "Do you want to try and rescue [girl.fullname] now?"
+    new "你想立刻尝试营救[girl.fullname]吗?"
 
     # game/BKsecurity.rpy:1942
     old "You do not have enough room to welcome [girl.fullname] back to the brothel."
-    new "You do not have enough room to welcome [girl.fullname] back to the brothel."
+    new "青楼里没有足够多的房间让[girl.fullname]回来住了。"
 
     # game/BKsecurity.rpy:1942
     old "给她50金币让她找间旅店住一夜"
@@ -1960,11 +1960,11 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1942
     old "给她250金币让她找间旅店住一周"
-    new "给她250金币让她找间旅店住一周"
+    new "给她250金币让她找间旅店暂住一周"
 
     # game/BKsecurity.rpy:1942
     old "以 [price] 金币的价格把她卖掉"
-    new "以 [price] 金币的价格把她卖掉"
+    new "以[price]金币的价格把她卖掉"
 
     # game/BKsecurity.rpy:1942
     old "放了她，还她自由之身"
@@ -1972,5 +1972,5 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1995
     old "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
-    new "[girl.fullname] returns today. You do not have enough room to welcome her back to the brothel."
+    new "[girl.fullname]今天要回来了。但是青楼里没有多余的房间安排她住下。"
 
