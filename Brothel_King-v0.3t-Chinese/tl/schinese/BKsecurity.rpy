@@ -112,13 +112,13 @@ translate schinese security_40d05f1c:
 translate schinese security_6a73366b:
 
     # guard "Boss! I counted [enemies] of them. And they also have [war_machines] war machines! They are led by [enemy_general.fullname], a renowned [enemy_g]."
-    guard "老板! 我估算了一下[enemies]的数量。他们甚至有[war_machines]这样的攻城器械! 他们是[enemy_general.fullname]的手下,那个臭名昭著的[enemy_g]."
+    guard "老板! 我估算了一下[enemies]的数量。他们甚至有[war_machines]这样的攻城器械! 他们是[enemy_general.fullname]的手下,那个臭名昭著的[enemy_g]。"
 
 # game/BKsecurity.rpy:371
 translate schinese security_d7897846:
 
     # you "Damn it, mercenaries! They're besieging us! Quick, get the girls inside, gather everyone, and get in battle formation!"
-    you "该死，雇佣兵!他们打算围攻我们!快，把姑娘们带进去，所有人集合，排成战斗队形!"
+    you "该死，是雇佣兵!他们打算围攻我们!快，把姑娘们带进去，所有人集合，排成战斗队形!"
 
 # game/BKsecurity.rpy:374
 translate schinese security_9296ec4b:
@@ -148,19 +148,19 @@ translate schinese security_cdc6eb7a:
 translate schinese security_2266e5fc:
 
     # "Your speech galvanizes your troops and they raise their swords as one in defiance. Their morale is {b}very high{/b}."
-    "你的演讲激励了你的军队，他们举起剑来反抗。他们的士气{b}爆棚{/b}。"
+    "你的演讲激励了你的部下，他们举起剑来反抗。他们的士气{b}爆棚{/b}。"
 
 # game/BKsecurity.rpy:408
 translate schinese security_fe6499fb:
 
     # "Your troops are energized by your speech. Their morale is {b}high{/b}."
-    "你的演讲鼓舞了你的军队。他们的士气{b}高涨{/b}。"
+    "你的演讲鼓舞了你的部下。他们的士气{b}高涨{/b}。"
 
 # game/BKsecurity.rpy:411
 translate schinese security_30d80a11:
 
     # "Your speech helps a little, but you can see your troops are nervous in the face of battle. Morale improved slightly."
-    "你的演讲起了一点作用，但你可以看到你的军队在面对战斗时很紧张。士气略微提高。"
+    "你的演讲起了一点作用，但你可以看到你的部下在面对战斗时很紧张。士气略微提高。"
 
 # game/BKsecurity.rpy:418
 translate schinese security_f19c5383:
@@ -184,13 +184,13 @@ translate schinese security_771685c0:
 translate schinese security_157c264f:
 
     # you "To say they called me crazy when I insisted the brothel needed battlements! Ha!"
-    you "当初他们都说我疯了，因为我坚持在青楼外面修一层城墙!哈!"
+    you "当初他们都说我疯了，因为我坚持在青楼外面修一层护墙!哈!"
 
 # game/BKsecurity.rpy:434
 translate schinese security_61bb90fa:
 
     # "Reaching atop the battlements, you get a field view of the battle. The siege engines are getting ready to fire at your troops. You lift your staff into the air and ready a spell."
-    "登上护墙，你可以看到战场的全景。攻城机准备向你的部队开火了。你把魔杖举到空中，准备好吟唱咒语。"
+    "登上护墙，你可以看清战场的全景。攻城机准备向你的部队开火了。你把魔杖举到空中，准备好吟唱咒语。"
 
 # game/BKsecurity.rpy:438
 translate schinese security_d8ac240c:
@@ -202,7 +202,7 @@ translate schinese security_d8ac240c:
 translate schinese security_10fa092a:
 
     # you "You think you're safe uphill? Ha! PYROBLAST!" with vpunch
-    you "你以为你在坡上就安全了？哈！烈焰爆破" with vpunch
+    you "你以为你躲在坡上就安全了？哈！烈焰爆破" with vpunch
 
 # game/BKsecurity.rpy:450
 translate schinese security_733ed97b:
@@ -250,37 +250,37 @@ translate schinese security_c112ec25_1:
 translate schinese security_447932b3:
 
     # security_breach "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
-    security_breach "{b}战斗的第三阶段{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. They have the advantage, and they know it."
+    security_breach "{b}战斗的第三阶段{/b}\n还有[enemies]个敌人和你的[allies]个守卫交战。他们占据了优势。"
 
 # game/BKsecurity.rpy:498
 translate schinese security_5fc315f2:
 
     # enemy_general.char "CHAAAARGE!!!"
-    enemy_general.char "冲  锋!!!"
+    enemy_general.char "冲-锋!!!"
 
 # game/BKsecurity.rpy:501
 translate schinese security_cee97817:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. You have the advantage, and their lines seem to falter."
-    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人面对剩余[allies]个守卫。你占据了优势，他们的阵线要崩溃了。"
+    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人和你的[allies]个守卫交战。你占据了优势，他们的阵线要崩溃了。"
 
 # game/BKsecurity.rpy:505
 translate schinese security_410ac7d0:
 
     # you "CHAAAARGE!!!"
-    you "冲  锋!!!"
+    you "冲-锋!!!"
 
 # game/BKsecurity.rpy:507
 translate schinese security_c12de197:
 
     # security "{b}Battle Phase 3{/b}\nThere are [enemies] enemies facing your [allies] remaining guards. Your forces are evenly matched."
-    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人面对剩余[allies]个守卫。你们势均力敌。"
+    security "{b}战斗的第三阶段{/b}\n还剩下[enemies]个敌人和你的[allies]个守卫交战。你们势均力敌。"
 
 # game/BKsecurity.rpy:510
 translate schinese security_0ee3ac03:
 
     # guard "CHAAAARGE!!!"
-    guard "冲  锋!!!"
+    guard "冲-锋!!!"
 
 # game/BKsecurity.rpy:520
 translate schinese security_512177f8:
