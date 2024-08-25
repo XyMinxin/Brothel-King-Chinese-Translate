@@ -1873,6 +1873,7 @@ init -10 python:
 
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
-    URL = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate{/color}{/a}"
+    URL = "{a=https://henthighschool.net/brothel-king}{color=#9933FF}https://henthighschool.net/brothel-king{/color}{/a}"
+    URLcn = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate{/color}{/a}"
 
 #### END OF BK SETTINGS ####
