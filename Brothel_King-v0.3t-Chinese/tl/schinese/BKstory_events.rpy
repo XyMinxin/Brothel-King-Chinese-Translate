@@ -1828,7 +1828,7 @@ translate schinese renza_onsen2_5a1fe722:
 translate schinese renza_onsen2_94c98a09:
 
     # sill "Y-Yes, Master [MC.name]..."
-    sill "是、是的,主人[MC.name]..."
+    sill "是、是的,[MC.name]主人..."
 
 # game/BKstory_events.rpy:970
 translate schinese renza_onsen2_ce853948:
@@ -26746,7 +26746,7 @@ translate schinese no_money_97eec849:
 translate schinese no_money_72e86c82:
 
     # banker "Ah, you must be the owner, [MC.name], isn't it?"
-    banker "啊,你一定就是主人[MC.name]了吧?"
+    banker "啊,你一定就是[MC.name]主人了吧?"
 
 # game/BKstory_events.rpy:14138
 translate schinese no_money_c7b74812:

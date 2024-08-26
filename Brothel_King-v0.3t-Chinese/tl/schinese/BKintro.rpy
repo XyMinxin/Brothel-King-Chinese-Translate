@@ -2236,7 +2236,7 @@ translate schinese resume_intro4_187c78f5:
 translate schinese resume_intro4_2e8a9f9d:
 
     # maid "Master [MC.name]... is so hard!"
-    maid "主人[MC.name]....大鸡巴好烫!"
+    maid "[MC.name]主人....大鸡巴好烫!"
 
 # game/BKintro.rpy:1580
 translate schinese resume_intro4_cbdd44d1:
@@ -2314,7 +2314,7 @@ translate schinese maid_fuck_b95940b1:
 translate schinese maid_fuck_f275574b:
 
     # maid "Oh yes, master [MC.name]! Do it like this..."
-    maid "哦是的,主人[MC.name]!用力肏我"
+    maid "哦是的,[MC.name]主人!用力肏我"
 
 # game/BKintro.rpy:1628
 translate schinese maid_fuck_1be05301:

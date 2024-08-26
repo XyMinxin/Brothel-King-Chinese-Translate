@@ -358,7 +358,7 @@ translate schinese c1_meet_kosmo_5d4d0e43:
 translate schinese c1_meet_kosmo_85576e86:
 
     # sill "Master [MC.name]! Are you all right?"
-    sill "主人[MC.name]!你还好吗?"
+    sill "[MC.name]主人!你还好吗?"
 
 # game/BKchapter1.rpy:238
 translate schinese c1_meet_kosmo_79f93bac:

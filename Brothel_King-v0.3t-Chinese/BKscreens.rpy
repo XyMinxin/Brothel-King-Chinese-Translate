@@ -7869,7 +7869,7 @@ screen h_content(): # H preferences and various player settings
 
             textbutton "保留名字：%s" % switch_caption[persistent.keep_firstname] text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_firstname")
             textbutton "保留姓氏：%s" % switch_caption[persistent.keep_lastname] text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "keep_lastname")
-            textbutton "使用_BK.ini.ini名称设定（如果可用）：%s" % switch_caption[persistent.gp_name_customization] text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "gp_name_customization")
+            textbutton "使用_BK.ini名称设定（如果可用）：%s" % switch_caption[persistent.gp_name_customization] text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleField(persistent, "gp_name_customization")
 
             # End of menu
 
