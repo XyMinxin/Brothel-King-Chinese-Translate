@@ -160,7 +160,7 @@ translate schinese random_morning_events_c915bc1b:
 translate schinese random_morning_events_17121eba:
 
     # girl.char "Good day to you, Master [MC.name]... Can I be of service?"
-    girl.char "您好，主人[MC.name]....我能为您效劳吗？"
+    girl.char "您好，[MC.name]主人....我能为您效劳吗？"
 
 # game/BKday_events.rpy:119
 translate schinese random_morning_events_61edaaa4:
@@ -196,7 +196,7 @@ translate schinese random_morning_events_4f14f7db:
 translate schinese random_morning_events_f84bbc5a:
 
     # girl.char "It is my pleasure, Master [MC.name]..."
-    girl.char "这是我的荣幸，主人[MC.name]...."
+    girl.char "这是我的荣幸，[MC.name]主人...."
 
 # game/BKday_events.rpy:140
 translate schinese random_morning_events_6ea7c9b5:
@@ -346,7 +346,7 @@ translate schinese random_morning_events_a83cea3c:
 translate schinese random_morning_events_4190c9bb:
 
     # girl.char "Thank you, Master [MC.name]. I'm always happy to serve..."
-    girl.char "谢谢你，主人[MC.name]。我很乐意为您服务...."
+    girl.char "谢谢你，[MC.name]主人。我很乐意为您服务...."
 
 # game/BKday_events.rpy:224
 translate schinese random_morning_events_df2843e0:
@@ -970,7 +970,7 @@ translate schinese random_night_girl_event_f472198b:
 translate schinese random_night_girl_event_92c1421a:
 
     # girl.char "Oh, Master [MC.name]... How nice of you to come by... {font=1.ttf}❤{/font}"
-    girl.char "哦，主人[MC.name]....你能来真是太好了....{font=1.ttf}❤{/font}"
+    girl.char "哦，[MC.name]主人....你能来真是太好了....{font=1.ttf}❤{/font}"
 
 # game/BKday_events.rpy:677
 translate schinese random_night_girl_event_65271728:
@@ -1468,7 +1468,7 @@ translate schinese random_night_girl_event_27ccad93:
 translate schinese random_night_girl_event_462004fb:
 
     # girl.char "Thank you, Master [MC.name]."
-    girl.char "谢谢你，主人[MC.name]。"
+    girl.char "谢谢你，[MC.name]主人。"
 
 # game/BKday_events.rpy:1027
 translate schinese random_night_girl_event_d818e765:
@@ -1762,7 +1762,7 @@ translate schinese random_night_girl_event_5cbe49b5:
 translate schinese random_night_girl_event_811dbfd0:
 
     # girl.char "Oh, Master [MC.name], thanks..."
-    girl.char "噢，主人[MC.name]，谢谢...."
+    girl.char "噢，[MC.name]主人，谢谢...."
 
 # game/BKday_events.rpy:1244
 translate schinese random_night_girl_event_3ea8dcb9:
@@ -2404,7 +2404,7 @@ translate schinese random_night_girl_event_d04eb7f0:
 translate schinese random_night_girl_event_5032488d:
 
     # girl.char "Master [MC.name]? Wh... What's going on?"
-    girl.char "主人[MC.name]？这....这是怎么呢"
+    girl.char "[MC.name]主人？这....这是怎么呢"
 
 # game/BKday_events.rpy:1692
 translate schinese random_night_girl_event_ec02dde0:
@@ -3814,7 +3814,7 @@ translate schinese onsen_night_event_wake_up_716c42c3:
 translate schinese onsen_night_event_wake_up_91296546:
 
     # man "Some boast, here, Master [MC.name]! What are those girls of yours capable of that we haven't seen before?"
-    man "有些人在这里吹牛，主人[MC.name]！你的那些姑娘有什么我们以前没见过的本事？"
+    man "有些人在这里吹牛，[MC.name]主人！你的那些姑娘有什么我们以前没见过的本事？"
 
 # game/BKday_events.rpy:2592
 translate schinese onsen_night_event_wake_up_685847ec:
@@ -7432,7 +7432,7 @@ translate schinese night_girl_perform_f2ff0e4a:
 translate schinese night_girl_perform_7e761bcf:
 
     # girl.char "Of course, Master [MC.name]."
-    girl.char "当然，主人[MC.name]。"
+    girl.char "当然，[MC.name]主人。"
 
 # game/BKday_events.rpy:4966
 translate schinese night_girl_perform_19920d33:
@@ -8254,7 +8254,7 @@ translate schinese night_girl_perform_e9951e12:
 translate schinese night_girl_perform_6b319a7f:
 
     # girl.char "Oh, Master [MC.name]... I'm so lucky you chose to nurture my skin with your precious semen..."
-    girl.char "哦，主人[MC.name]....我很幸运你用你珍贵的精液滋养了我的皮肤...."
+    girl.char "哦，[MC.name]主人....我很幸运你用你珍贵的精液滋养了我的皮肤...."
 
 # game/BKday_events.rpy:5455
 translate schinese night_girl_perform_6f9952dd:
@@ -8572,7 +8572,7 @@ translate schinese night_girl_perform_c1debfcf:
 translate schinese night_girl_perform_23d0d47e:
 
     # girl.char "Aaah!!! It's so good... Fuck me, Master [MC.name]!!!"
-    girl.char "啊！！！这么好....操我妈的，主人[MC.name]！！"
+    girl.char "啊！！！这么好....操我妈的，[MC.name]主人！！"
 
 # game/BKday_events.rpy:5676
 translate schinese night_girl_perform_3ea3d019:
@@ -8770,7 +8770,7 @@ translate schinese night_girl_perform_a8f30e72:
 translate schinese night_girl_perform_8bbdfd37:
 
     # girl.char "Master [MC.name]... Cum for me..."
-    girl.char "主人[MC.name]....插我...."
+    girl.char "[MC.name]主人....插我...."
 
 # game/BKday_events.rpy:5808
 translate schinese night_girl_perform_4575bd62:
@@ -9334,7 +9334,7 @@ translate schinese night_girl_perform_e7ec0033:
 translate schinese night_girl_perform_4bdfe5ae:
 
     # girl.char "Aaah! Master [MC.name] is inside me... I feel so good..."
-    girl.char "啊！主人[MC.name]就在我心里....我感觉很好...."
+    girl.char "啊！[MC.name]主人就在我心里....我感觉很好...."
 
 # game/BKday_events.rpy:6131
 translate schinese night_girl_perform_4a53dfec_1:
@@ -9436,7 +9436,7 @@ translate schinese night_girl_perform_fa39c2ac:
 translate schinese night_girl_perform_d3e6f432:
 
     # girl.char "Master [MC.name]! I'm so close... Ah, ah, aah..."
-    girl.char "主人[MC.name]！我这么近....啊，啊，啊...."
+    girl.char "[MC.name]主人！我这么近....啊，啊，啊...."
 
 # game/BKday_events.rpy:6184
 translate schinese night_girl_perform_b8813e87_6:
@@ -9778,7 +9778,7 @@ translate schinese night_girl_perform_ed06b652:
 translate schinese night_girl_perform_ca87f8cb:
 
     # girl.char "Master [MC.name]! You came all over my hair! Uwah!"
-    girl.char "主人[MC.name]！你弄得我满头都是！哇啊！"
+    girl.char "[MC.name]主人！你弄得我满头都是！哇啊！"
 
 # game/BKday_events.rpy:6368
 translate schinese night_girl_perform_d889958c:
@@ -10186,7 +10186,7 @@ translate schinese night_girl_perform_972d6d7c:
 translate schinese night_girl_perform_ed2bfb12:
 
     # girl.char "Master [MC.name]... Ish that you?"
-    girl.char "主人[MC.name]....是你吗？"
+    girl.char "[MC.name]主人....是你吗？"
 
 # game/BKday_events.rpy:6581
 translate schinese night_girl_perform_a2aca047:
@@ -11422,7 +11422,7 @@ translate schinese night_girl_perform_f857cc27:
 translate schinese night_girl_perform_cdf3047e:
 
     # "Customer" "Sorry, Master [MC.name], but I believe you left out a part of the story."
-    "客户" "对不起，主人[MC.name]，但我相信您漏掉了故事的一部分。"
+    "客户" "对不起，[MC.name]主人，但我相信您漏掉了故事的一部分。"
 
 # game/BKday_events.rpy:7271
 translate schinese night_girl_perform_c26fffe1:

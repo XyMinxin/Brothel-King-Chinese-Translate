@@ -4828,7 +4828,7 @@ translate schinese contract_MC_event_d3a8cd4f:
 translate schinese contract_MC_event_ca8fecce:
 
     # girl.char "No, let me go!!! Master [MC.name]..."
-    girl.char "不要,放开我!!!主人[MC.name]..."
+    girl.char "不要,放开我!!![MC.name]主人..."
 
 # game/BKevents.rpy:5239
 translate schinese contract_MC_event_07da0fe6:

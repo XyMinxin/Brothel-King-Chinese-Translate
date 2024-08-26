@@ -1750,7 +1750,7 @@ translate schinese c2_princess_letter_1ad4bc9e:
 translate schinese c2_princess_letter_9b50768e:
 
     # girl.char "Yes, Master [MC.name]?"
-    girl.char "您叫我们,主人[MC.name]?"
+    girl.char "您叫我们,[MC.name]主人?"
 
 # game/BKchapter2.rpy:1086
 translate schinese c2_princess_letter_7e399740:
@@ -15564,7 +15564,7 @@ translate schinese c2_palace_visit1_93e77161:
 translate schinese c2_palace_visit1_54d0b7fc:
 
     # sill "Master [MC.name], a carriage came with the messenger. They're waiting outside."
-    sill "主人[MC.name],有辆马车随信使一起来了,正在外面等着。"
+    sill "[MC.name]主人,有辆马车随信使一起来了,正在外面等着。"
 
 # game/BKchapter2.rpy:8023
 translate schinese c2_palace_visit1_247cb9ca:
