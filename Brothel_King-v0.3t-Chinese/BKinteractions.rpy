@@ -1598,7 +1598,7 @@ label slave_train_obedience(girl):
 
         $ inter.result = "bad"
 
-        $ girl.track_event("bad result", (__("poor"), __("chores")))
+        $ girl.track_event("bad result", (_("poor"), _("chores")))
 
     menu:
 
@@ -1663,7 +1663,7 @@ label slave_train_constitution(girl):
 
         $ inter.result = "bad"
 
-        $ girl.track_event("bad result", (__("poor"), __("out")))
+        $ girl.track_event("bad result", (_("poor"), _("out")))
 
     menu:
 
