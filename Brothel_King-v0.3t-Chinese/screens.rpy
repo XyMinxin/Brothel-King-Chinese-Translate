@@ -241,7 +241,7 @@ screen main_menu():
         vbox xalign 0.99 yalign 0.01:
             text "[renpy.version_string]" xalign 1.0 size res_font(12)
             text "BK [config.version]" xalign 1.0 size res_font(12)
-            text "汉化 v20240826" xalign 1.0 size res_font(12)
+            text "汉化 v20240828" xalign 1.0 size res_font(12)
 
         if debug:
             text mod_traceback xalign 0.01 yalign 0.01 size res_font(18)

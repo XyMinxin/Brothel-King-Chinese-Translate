@@ -8,11 +8,11 @@
 
 目前游戏版本：0.3t（2023/09/23）
 
-目前汉化版本：20240826
+目前汉化版本：20240828
 
 ①下载本体：[下载游戏本体](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20240712/Brothel_King.v0.3t.zip)
 
-②安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20240826/Brothel_King-v0.3t-Chinese.zip)
+②安装汉化：[下载汉化覆盖](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/releases/download/20240828/Brothel_King-v0.3t-Chinese.zip)
 
 **[BUG报错请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=BUG&template=BFR.yml)** | 
 **[剧情漏翻请点我](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues/new?assignees=&labels=%E7%BF%BB%E8%AF%91%E5%8F%8D%E9%A6%88&template=TFR.yml)**
