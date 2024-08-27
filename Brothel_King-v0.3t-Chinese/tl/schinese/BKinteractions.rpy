@@ -10398,13 +10398,13 @@ translate schinese strings:
     old " 有了一些进步。"
     new " 有了一些进步。"
 
-    # game/BKinteractions.rpy:1600
-    old "poor"
-    new "孱弱"
+    # # game/BKinteractions.rpy:1600
+    # old "poor"
+    # new "孱弱"
 
-    # game/BKinteractions.rpy:1600
-    old "chores"
-    new "家务"
+    # # game/BKinteractions.rpy:1600
+    # old "chores"
+    # new "家务"
 
     # game/BKinteractions.rpy:1602
     old "告诫她"
