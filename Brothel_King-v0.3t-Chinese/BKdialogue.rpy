@@ -3497,7 +3497,7 @@ init -1 python:
     add_dialogue("free_girlfriend success", ("creep", "yandere"), ["当她把衣服扔到地上时，各种刀具从她的口袋里掉到地板上。", "g: 我的身体就是你的身体，所以我会好好照顾它。", "g: 我的小穴太湿了，我无法再思考了。拜托....我希望你用我的身体来满足你的每一个愿望。"], multiple=True)
     add_dialogue("free_girlfriend success naked", ("creep", "yandere"), ["当她把衣服扔到地上时，各种刀具从她的口袋里掉到地板上。", "g: 我的身体就是你的身体，所以我会好好照顾它。", "g: 我的小穴太湿了，我无法再思考了。拜托....我希望你用我的身体来满足你的每一个愿望。", "g: 一旦我成为你的妻子，我发誓我再也不会穿衣服了。容易接近。"], multiple=True)
 
-    add_dialogue("free_job_request", ("creep"), ["g: 哦，[MC.name]！我-我犯了一个可怕的错误...*抽泣*", "mc: 发生什么事了？告诉我，[女孩的名字]。", "g: 我父亲...他告诉我我们要搬家...*抽泣*然后我...", "g: *抽泣*我只是无法忍受离开你的想法...*抽泣*", "g: 所以我抓起我的刀，然后...*抽泣*然后...", "她突然哭了起来.", "mc: [girl.name]...你做了什么？", "g: 我不能再回家了...*抽泣*我不能...我不能...", "mc: 现在冷静点，[girl.name]。我们将为您找到一个新家。"], multiple=True)
+    add_dialogue("free_job_request", ("creep"), ["g: 哦，[MC.name]！我-我犯了一个可怕的错误...*抽泣*", "mc: 发生什么事了？告诉我，[girl.name]。", "g: 我父亲...他告诉我我们要搬家...*抽泣*然后我...", "g: *抽泣*我只是无法忍受离开你的想法...*抽泣*", "g: 所以我抓起我的刀，然后...*抽泣*然后...", "她突然哭了起来.", "mc: [girl.name]...你做了什么？", "g: 我不能再回家了...*抽泣*我不能...我不能...", "mc: 现在冷静点，[girl.name]。我们将为您找到一个新家。"], multiple=True)
     add_dialogue("gizel take girl to farm", ("creep"), ("*叹气*我已经知道这将是少数。你肯定知道如何挑选它们......"))
     add_dialogue("slave hit", ("creep", "very dom"), ["哎哟!好痛..."])
     add_dialogue("slave chat tastes likes", ("creep"), ("*低语*别吓跑他，[girl.name]。 *咳咳*你不同意[best]是一件美妙的[thing_cn]吗？", "我知道你喜欢[best]。这是一件很棒的事情，不是吗？", "我非常喜欢和你说话。我可以和你谈论任何事情。即使是像[thing_cn][best]这样的小事。"), unlock="LM")
