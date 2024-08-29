@@ -114,10 +114,10 @@
 <details>
   <summary>为什么游戏版本跟作者论坛版本不一样？</summary>
   <p>
-    游戏版本是大版本和补丁日期组成。<br>
-    <code>0.3t(2023/09/23)</code> 是大版本 <code>v0.3 Test version (gameplay only)</code> ，加上汉化工作开始前最新的补丁日期。<br>
-    <code>2023/09/23</code> 是 <code>v0.3 Test version (gameplay only)</code> 最后一个补丁的日期。<br>
-    后来又发布了一个版本也叫<code>v0.3 Test Version</code>，有新剧情、新功能，有修bug，也有新bug，不要搞混咯。
+    游戏版本是本体版本和补丁日期组成。<br>
+    <code>0.3t(2023/09/23)</code> 是由 <code>v0.3 Test version (gameplay only)</code> 的缩写 <code>0.3t</code> 加上汉化工作开始前最新的补丁日期。<br>
+    而 <code>2023/09/23</code> 是 <code>v0.3 Test version (gameplay only)</code> 最后一个补丁的发布日期。<br>
+    后来又发布了一个版本也叫 <code>v0.3 Test Version</code> ，有新剧情、新功能，有修bug，也有新bug，不要搞混咯。
   </p>
   <p>
     汉化版本是汉化工作进行到一定程度后，集中更新发布的一个版本，通常由日期组成。<br>
