@@ -21,9 +21,11 @@
 
 ### **注意：游戏本体没有人物包，需要另外下载**
 
-[作者论坛链接](https://henthighschool.net/brothel-king/) | [国外基础人物](https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file) | [国外人物表格](https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808)
+**以下链接除了作者论坛外，都需要翻墙**
 
-**建议前往国外人物表格进行查找下载**
+<a href="https://henthighschool.net/brothel-king">作者论坛链接</a> | <a href="https://www.mediafire.com/file/ms86oyaehplz6pn/basic-girl-pack-020.zip/file">国外基础人物</a> | <a href="https://docs.google.com/spreadsheets/d/1tGydEbO0FRsl9eF4SQOYN8r4UwjD1AhtY0DcKFFvuHg/edit#gid=538575808">国外人物表格</a>
+
+建议前往国外人物表格进行查找下载
 
 <details>
   <summary>表格使用方法</summary>
@@ -74,7 +76,7 @@
 
 ### 工具原贴链接
 
-[工具原贴链接](https://henthighschool.net/brothel-king/picturenamer/)
+<a href="https://henthighschool.net/brothel-king/picturenamer">工具原贴链接</a>
 
 ---
 
@@ -84,7 +86,7 @@
   <summary>安装汉化后不是中文的怎么办？ / 安装汉化后进不去游戏了怎么办？</summary>
   <p>
     汉化补丁会让默认中文，如果还是英文，可能你安装操作有误，导致并没有正确安装补丁。<br>
-    正确安装顺序是：①下载本体解压②下载汉化覆盖进<code>game</code>文件夹。
+    正确安装顺序是：1.下载本体解压2.下载汉化覆盖进 <code>game</code> 文件夹。
   </p>
 </details>
 
@@ -125,9 +127,9 @@
 
 ---
 
-**问题反馈或意见请用 [GitHub Issue](https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues)**
+**问题反馈或意见请用 <a href="https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues">GitHub Issue</a>**
 
-**或者添加QQ群 [BK交流反馈群](https://qm.qq.com/q/jSozA9ZIqs)**
+**或者添加QQ群 <a href="https://qm.qq.com/q/jSozA9ZIqs">BK交流反馈群</a>**
 
 **未经允许禁止转售**
 
