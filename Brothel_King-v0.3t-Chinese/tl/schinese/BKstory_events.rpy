@@ -27640,7 +27640,7 @@ translate schinese visit_bank_2db40c8f:
 translate schinese visit_bank_4aeac39b:
 
     # banker "If you can make it, I will give you your money back with ten percent interest, as well as five diamonds..."
-    banker "如果你做到了,我会把你的钱连同10%的利息以及5颗钻石还给你..."
+    banker "如果你做到了,我会把你的钱连同10\%的利息以及5颗钻石还给你..."
 
 # game/BKstory_events.rpy:14590
 translate schinese visit_bank_545de205:
@@ -27880,7 +27880,7 @@ translate schinese tjb_special_a1424400:
 translate schinese tjb_special_246303c7:
 
     # banker "First, you get all your money back, with 10 per cent interest."
-    banker "首先,我会把你的本金还给你,并加上10%的利息。"
+    banker "首先,我会把你的本金还给你,并加上10\%的利息。"
 
 # game/BKstory_events.rpy:14721
 translate schinese tjb_special_9d2a0b17:

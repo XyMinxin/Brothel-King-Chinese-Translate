@@ -1716,7 +1716,7 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1430
     old "she has received the 'Naked' perk"
-    new "她获得了'Naked'的特质。"
+    new "她获得了'裸体'的特质。"
 
     # game/BKsecurity.rpy:1449
     old "A brawl erupted in the "
