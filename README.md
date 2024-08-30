@@ -29,31 +29,23 @@
 
 <details>
   <summary>表格使用方法</summary>
-  <p><code>Girl Name</code>：人物名字<br>
-  如果角色本来是英文名字如2B，则直接使用搜索本名。<br>
-  如果是日本名字的角色，则使用罗马音搜索。</p>
-  
-  <p><code>Girl Source</code>：人物来源<br>
-  比如 <code>Anime</code> 动漫、3DCG、<code>Video Game</code> 电子游戏……</p>
-  
-  <p><code>Warning Tags</code>：警告标签<br>
-  比如 <code>Loli</code> 萝莉、<code>Furry</code> 福瑞什么的。</p>
-  
-  <p><code>Image Count</code>：图片数量<br>
-  评级由标记工具创建，对标记覆盖率而不是图像质量进行评分。<br>
-  A-F表示存在多少个可能的标签，+或-表示每个主标签有多少张图像。<br>
-  机翻表格上面的备注。</p>
-  
-  <p><code>Has _BK.ini?</code>：是否含有_BK.ini<br>
-  _BK.ini是一个可选文件，用于定义/指导女孩的性格、特征和其他通常随机生成的因素。<br>
-  机翻表格上面的备注。</p>
-  
-  <p><code>BK Version made for</code>：依照哪个BK版本做的</p>
-  
-  <p><code>Pack Download Link</code>：人物包下载链接<br>
-  下载人物包点这里就行。</p>
-  
-  <p><code>Timestamp</code>：人物包日期</p>
+  <p>
+    1.点击A列 2.点击上面数据 3.对工作表排序A-Z<br>
+    这样第一行的筛选按钮就可以点开了<br>
+    如果想要特定角色的人物包，点击 <code>Girl Name</code> 的筛选按钮，取消全选，输入角色的名字，英文以外的名字输入罗马音，然后勾选需要的名字；<br>
+    如果想要特定类型的人物包，点击 <code>Warning Tags</code> 的筛选按钮，取消全选，输入类型英文，如 <code>Loli</code> <code>Furry</code>等，然后勾选需要的类型；<br>
+    如果想要特定版本的人物包，点击 <code>BK Version made for</code> 的筛选按钮，取消全选，输入需要的版本，如 <code>0.15</code> <code>0.2</code>，，然后勾选需要的版本；<br>
+  </p>
+  <p>
+    <code>Girl Name</code>：人物名字<br>
+    <code>Girl Source</code>：人物来源<br>
+    <code>Warning Tags</code>：警告标签<br>
+    <code>Image Count</code>：图片数量<br>
+    <code>Has _BK.ini?</code>：是否含有_BK.ini<br>
+    <code>BK Version made for</code>：依照哪个BK版本做的</p>
+    <code>Pack Download Link</code>：人物包下载链接<br>
+    <code>Timestamp</code>：人物包日期
+  </p>
 </details>
     
 ---
@@ -63,7 +55,7 @@
 ### **注意：标签工具未更新，不保证能否在0.3t正常使用**
 
 **该版本尚未支持0.3t的新标签新特质**  
-**如您发现使用该工具后部分情况缺少图片，且特质与0.3t内特质名不一致属正常情况**  
+**如您发现使用该工具后部分情况缺少图片，且特质与0.3t内的汉化名不一致属正常情况**  
 **如有需要可手动添加标签或特质，或者等待下个版本发布**
 
 <img src="https://i.ibb.co/HzJHR8z/Tagging-Tool-v2-8-14.png" alt="image" border="0" width="70%">
@@ -85,8 +77,8 @@
 <details>
   <summary>安装汉化后不是中文的怎么办？ / 安装汉化后进不去游戏了怎么办？</summary>
   <p>
-    汉化补丁会让默认中文，如果还是英文，可能你安装操作有误，导致并没有正确安装补丁。<br>
-    正确安装顺序是：1.下载本体解压2.下载汉化覆盖进 <code>game</code> 文件夹。
+    安装汉化后会默认中文，如果还是英文，可能你安装操作有误，导致并没有正确安装补丁。<br>
+    正确安装顺序是：1.下载本体解压  2.下载汉化覆盖进 <code>game</code> 文件夹。
   </p>
 </details>
 
