@@ -4192,7 +4192,7 @@ init -2 python:
             target = "种马经验" if target == "stallion xp" else target
             target = "精力恢复" if target == "energy" else target
             target = "经验" if target == "xp" else target
-            target = "天赋点" if target == "skill points" else target
+            target = "属性点" if target == "skill points" else target
             target = "玩家声望" if target == "prestige" else target
             target = "天赋点" if target == "perk" else target
             target = "结交新朋友" if target == "making friends" else target
