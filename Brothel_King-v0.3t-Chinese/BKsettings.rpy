@@ -67,6 +67,9 @@ init -10 python:
                         "Energy" : "精力",
                         "energy" : "精力",
 
+                        "Libido+" : "性欲+",
+                        "libido+" : "性欲+",
+
                         "Brothel reputation" : "青楼声望",
                         "brothel reputation" : "青楼声望",
 
