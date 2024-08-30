@@ -1294,7 +1294,7 @@ translate schinese ore_intro_0a68ea71:
 translate schinese ore_intro_4f551cd3:
 
     # "Miner" "Shalia take 'em all! We work our asses off in the mine day and night, but at the end those bloody bureaucrats take a 70 percent cut just doin' nuthin'."
-    "Miner" "愿莎莉娅诅咒所有人!我们日夜在矿井里辛苦工作,但最后这些该死的官僚却什么也不做就占走70%的利润。"
+    "Miner" "愿莎莉娅诅咒所有人!我们日夜在矿井里辛苦工作,但最后这些该死的官僚却什么也不做就占走70\%的利润。"
 
 # game/BKevents.rpy:2333
 translate schinese ore_intro_1fb53abf:
@@ -7378,7 +7378,7 @@ translate schinese tax_no_money_2c16daa4:
 translate schinese tax_no_money_4521a307:
 
     # taxgirl "...with a ten percent late penalty. You now owe us [NPC_taxgirl.current_tax] denars. Also, you'll have to sign this deed."
-    taxgirl "...并附加10%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。同时你还需要签署这份合同。"
+    taxgirl "...并附加10\%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。同时你还需要签署这份合同。"
 
 # game/BKevents.rpy:6713
 translate schinese tax_no_money_3134ad47:
@@ -7480,13 +7480,13 @@ translate schinese tax_no_money_f0923f26:
 translate schinese tax_no_money_fdaeebbd:
 
     # taxgirl "I'll give you seven more days, but with a ten percent penalty. You now owe us [NPC_taxgirl.current_tax] denars. Don't screw this up."
-    taxgirl "我会再给你七天时间,但需要附加10%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。不要搞砸了。"
+    taxgirl "我会再给你七天时间,但需要附加10\%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。不要搞砸了。"
 
 # game/BKevents.rpy:6765
 translate schinese tax_no_money_3f35c094:
 
     # taxgirl "Perhaps I've been too nice to you. I'll give you seven more days to pay up, but with a twenty percent penalty. You now owe us [NPC_taxgirl.current_tax] denars."
-    taxgirl "也许我对你太仁慈了。我会再给你七天时间来筹钱,但需要附加20%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。"
+    taxgirl "也许我对你太仁慈了。我会再给你七天时间来筹钱,但需要附加20\%的滞纳金。你现在欠我们[NPC_taxgirl.current_tax]金币。"
 
 # game/BKevents.rpy:6769
 translate schinese tax_no_money_31778e92:
