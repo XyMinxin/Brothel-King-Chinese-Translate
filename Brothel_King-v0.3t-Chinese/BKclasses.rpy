@@ -1935,10 +1935,10 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle job" or act in all_jobs:
-                return self.name + __(" 进来青楼。%s希望得到%s和喜欢{b}%s{/b}的人的招待。%s更喜欢 %s 的女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(trait_name_dict[self.fetish]))
+                return self.name + __(" 进来青楼。%s希望得到%s和喜欢{b}%s{/b}的人的招待。%s更喜欢 %s 的女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(tl_cn(self.fetish, trait_name_dict)))
 
             elif act == "idle whore":
-                return self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
+                return self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(tl_cn(self.fetish, trait_name_dict)))
 
             # elif act in all_jobs:
             #     desc += self.name + __(" came in.%s\n%s wanted to be entertained by a {b}%s{/b}") % (crz_text, __(pronoun), __(self.wants_entertainment))
@@ -1947,7 +1947,7 @@ init -2 python:
             #     return desc
 
             elif act in all_sex_acts:
-                desc += self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
+                desc += self.name + __("%s%s喜欢{b}%s{/b}。%s完美的 %s 女孩。") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(tl_cn(self.fetish, trait_name_dict)))
                 if self.wants_sex_act != act:
                     desc += __("，但还是将就了{b}%s{/b}") % girl_related_dict[act]
                 if self.group:
@@ -2012,13 +2012,13 @@ init -2 python:
                     girl_score += 250
 
                     if trait_dict[self.fetish].verb == "be":
-                        reason = __(":cust:来寻找 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
+                        reason = __(":cust:来寻找 ") + __(tl_cn(self.fetish, trait_name_dict)) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "be a":
-                        reason = __(":cust:来寻找 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
+                        reason = __(":cust:来寻找 ") + __(tl_cn(self.fetish, trait_name_dict)) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "have":
-                        reason = __(":cust:来寻找有 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
+                        reason = __(":cust:来寻找有 ") + __(tl_cn(self.fetish, trait_name_dict)) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
                     elif trait_dict[self.fetish].verb == "have a":
-                        reason = __(":cust:来寻找有 ") + __(trait_name_dict[self.fetish]) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
+                        reason = __(":cust:来寻找有 ") + __(tl_cn(self.fetish, trait_name_dict)) + __(" 的女孩服务他。:pron::verb:欣喜遇见了:girl:。")
 
                 # 2. The customer looks for a particular stat
 
