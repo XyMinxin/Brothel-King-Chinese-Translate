@@ -186,7 +186,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "Mysterious letter", message = "Know, O prince, that between the years when the oceans drank Atlantis \n and the gleaming cities, and the years of the rise of the Sons of Xeros \n hither came the one who shall stand on fours under the rising sun \n the one who shall stand on two under the zenith light \n the one who shall stand on three under the many stars... \n Thou shalt name the one to succeed.")
+    call screen letter(header = "神秘来信", message = "你知道吗,我的王子, 在海洋吞噬亚特兰蒂斯\n和闪闪发光的城市的年代到克塞罗斯之子崛起的年代之间出现了一种 \n 日出时四只脚\n正午时分两只脚\n晚上三只脚的生物... \n请告诉我它是什么。")
 
     play sound s_dress
 
@@ -216,7 +216,7 @@ label jobgirl_1():
 
     you "Ok, let's see then..."
 
-    $ answer = renpy.display_menu([("Give the answer for free", 1),("Ask for gold", 2),("Make fun of her... just a bit", 3)])
+    $ answer = renpy.display_menu([("免费告诉她答案", 1),("有偿告诉她答案", 2),("逗逗她... 就一下", 3)])
 
     $ renpy.block_rollback()
 
@@ -294,7 +294,7 @@ label jobgirl_1():
 
     while riddle_loop == 1:
 
-        $ solution = renpy.display_menu([("A Protoceratops", 1),("Molise", 2),("Man", 3)])
+        $ solution = renpy.display_menu([("原角龙", 1),("莫利塞", 2),("人类", 3)])
 
         if solution == 1:
 
@@ -372,7 +372,7 @@ label jobgirl_1():
 
     "You look at her beautiful blue eyes, down to her pink lips and white skinned neck, until you stare at her cleavage. Can't avoid to look at her breasts since the feeling of them pushing on your chest is raising your heartbeat."
 
-    $ hug_action = renpy.display_menu([("What do you want to do now?", None), ("Be romantic", 1),("Comment on her cleavage", 2),("Wait for her reaction", 3)])
+    $ hug_action = renpy.display_menu([("现在你想做什么?", None), ("浪漫地回复", 1),("赞扬她的身材", 2),("等待她的回应", 3)])
 
     if hug_action == 1:
 
