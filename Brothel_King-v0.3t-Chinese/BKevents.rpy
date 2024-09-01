@@ -6104,7 +6104,7 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         show taxgirl with dissolve
 
-        $ text1 = rand_choice(["Hello, [MC.name], remember me?", "Hi [MC.name]. It's that time of the month.", "Hi, it's your friendly neighborhood slaver guilder.", "Hello, dear.", "Hi. It's time to pay.", "Good morning."])
+        $ text1 = rand_choice(["好久不见, [MC.name],还记得我吗?", "嗨[MC.name]。又到了每个月的这个时候了。", "嗨,你友好的邻居奴隶公会又来问候你了。", "早上好，亲爱的。", "嗨，又到了交钱的时候了。", "早安。"])
 
         $ taxgirl(text1)
 
@@ -6114,24 +6114,24 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         else:
             if tx < 1000:
-                $ text1 = "A trifle."
+                $ text1 = "一块小蛋糕。"
             elif tx < 5000:
-                $ text1 = "A token contribution, as a show of goodwill."
+                $ text1 = "象征性的贡献，一种善意的表达。"
             elif tx < 25000:
-                $ text1 = "A modest show of support for our collective welfare."
+                $ text1 = "这是对我们集体利益的小小支持。"
             elif tx < 50000:
-                $ text1 = "A decent effort, I hope you keep this going."
+                $ text1 = "很不错的努力，希望你能坚持下去。"
             elif tx < 100000:
-                $ text1 = "A sizeable donation, for which the guild will be grateful."
+                $ text1 = "一笔可观的捐款，公会会很感激的。"
                 $ NPC_taxgirl.love += 1
             elif tx < 250000:
-                $ text1 = "A valuable contribution to the greater good, for which I will be personally thankful."
+                $ text1 = "为更大的利益做出了宝贵的贡献，对此我个人表示感谢。"
                 $ NPC_taxgirl.love += 3
             elif tx < 500000:
-                $ text1 = "A great effort for our cause, which will place you among our top three contributors."
+                $ text1 = "你为我们的事业付出了巨大的努力，这将使你成为我们的三大捐助者之一。"
                 $ NPC_taxgirl.love += 6
             else:
-                $ text1 = "A King's ransom! No one is a bigger benefactor of the Guild than you. I will be very impressed if you pull this off."
+                $ text1 = "你富可敌国!你恐怕是公会最大的收入来源了。如果你能成功，我会很佩服你的。"
                 $ NPC_taxgirl.love += 12
 
             taxgirl "According to our accountants, you owe us {b}[tx] denars{/b} for last month. [text1]"

@@ -1402,7 +1402,7 @@ label undervalued_interact(girl):
                         if d <= 3:
                             "As you slip [bribecost] gold into his pocket, he leans forward and volunteers some information."
 
-                            "Slave Trader" "[girl.name]? We only know her as [girl.fullnickname]. She is on the blacklist under that name."
+                            "奴隶商人" "[girl.name]? We only know her as [girl.fullnickname]. She is on the blacklist under that name."
 
                             "And with that the slaver takes his leave."
 
@@ -1415,15 +1415,15 @@ label undervalued_interact(girl):
 
                             "The slaver grins from ear to ear after you hand him a bribe of [bribecost] gold."
 
-                            "Slave Trader" "Ah, I love the sound of gold entering my pockets. Doubly so if it comes at the expense of a fellow slaver such as yourself."
+                            "奴隶商人" "Ah, I love the sound of gold entering my pockets. Doubly so if it comes at the expense of a fellow slaver such as yourself."
 
                             you "Alright already, I can already tell you've got some bad news for me. Just tell me what I need to know."
 
-                            "Slave Trader" "You've bought a real gutter rat this time. I don't think you'll see a big return on her."
+                            "奴隶商人" "You've bought a real gutter rat this time. I don't think you'll see a big return on her."
 
                             you "Damn! Do her problems with the slavers guild run that deep?"
 
-                            "Slave Trader" "Slavers guild? The guild has nothing to do with it. She's just a stinker, that's all. You should really be exercising due diligence."
+                            "奴隶商人" "Slavers guild? The guild has nothing to do with it. She's just a stinker, that's all. You should really be exercising due diligence."
 
                             you "Yeah yeah, spare me the lecture. My day is bad enough as it is. Just fill me in on the details..."
 
@@ -1433,21 +1433,21 @@ label undervalued_interact(girl):
 
                             "You hand over [bribecost] gold to the slaver, who seems in good spirits."
 
-                            "Slave Trader" "That's the easiest money I've ever made. I'm sorry to say you have been misinformed, [MC.name]."
+                            "奴隶商人" "That's the easiest money I've ever made. I'm sorry to say you have been misinformed, [MC.name]."
 
                             you "How so?"
 
-                            "Slave Trader" "I have never heard of this [girl.lastname] girl. Heaven knows why you'd think that the slavers guild would hold some sort of grudge against her."
+                            "奴隶商人" "I have never heard of this [girl.lastname] girl. Heaven knows why you'd think that the slavers guild would hold some sort of grudge against her."
 
                             you "Are you sure? Her reduced rate at the slavemarket has made me very suspicious about this investment."
 
-                            "Slave Trader" "I'm glad I could ease your mind then, there's nothing fishy about this girl and I'm sure you could make a sizeable profit whenever you decide to sell her on."
+                            "奴隶商人" "I'm glad I could ease your mind then, there's nothing fishy about this girl and I'm sure you could make a sizeable profit whenever you decide to sell her on."
 
-                            "Slave Trader" "Today is a good day, [MC.name]! Let's have a drink to celebrate our good fortune."
+                            "奴隶商人" "Today is a good day, [MC.name]! Let's have a drink to celebrate our good fortune."
 
                             you "Cheers! About that [bribecost] gold though..."
 
-                            "Slave Trader" "Yes [MC.name], many thanks for filling my purse. Glad I could be of help!"
+                            "奴隶商人" "Yes [MC.name], many thanks for filling my purse. Glad I could be of help!"
 
                             jump .undervalued_end_3
 
@@ -1644,7 +1644,7 @@ label undervalued_interact(girl):
 
                 "I'm sure the slavers will have a good laugh as well if I officially change [girl.name]'s name."
 
-                "She might not like it, but it's worth a shot if it can get us past this issue."
+                "她可能不喜欢，但如果能解决这个问题，就值得一试。"
                 
                 hide screen show_event
                 scene black with fade
@@ -1652,7 +1652,7 @@ label undervalued_interact(girl):
                 menu:
                     "我现在该如何称呼[girl.fullname]?"
 
-                    "[girl.name] the [noun]":
+                    "[noun]的[girl.name]":
 
                         python:
                             girl.lastname = "the " + noun
@@ -1666,10 +1666,10 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
-                    "[girl.name] the [trait]":
+                    "[girl.name][trait]":
 
                         python:
                             girl.lastname = "the " + trait
@@ -1683,7 +1683,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
                     "[trait] [girl.lastname]":
 
@@ -1699,7 +1699,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
                     "[adjective] [girl.name] [girl.lastname]":
@@ -1716,7 +1716,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
                     "[trait] [girl.name] the [noun]":
@@ -1734,7 +1734,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
                     "[trait] [noun]":
@@ -1752,7 +1752,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
                     "[adjective] [trait] [noun]":
@@ -1770,98 +1770,98 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
+                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
                             return
 
-                    "On second thought, she doesn't deserve this":
+                    "思考片刻, 不值得为她付出这么多":
 
                         jump .undervalued_solution
 
-            "Send her off to serve the slavers guild for a week":
+            "让她去奴隶公会提供服务一周":
 
-                "A brothel owner like myself can't afford to get on the slavers guild's bad side."
+                "像我这样的妓院老板可惹不起奴隶公会。"
 
                 "Let's settle this quickly by sending [girl.name] on a redemption quest."
 
-                "I'll head straight to the guild to strike a deal."
+                "我直接去公会谈条件比较好。"
 
                 hide screen show_event
                 scene black with fade
                 show bg tavern_man at truecenter with dissolve
 
-                "Slave Trader" "Greetings, [noun] peddling [MC.name]. State your business."
+                "奴隶商人" "贵安, [noun] peddling [MC.name]. 请说明你的来意。"
 
-                you "I'm here to talk about [girl.name]."
+                you "我是来和你谈谈关于[girl.name]的事的。"
 
-                "Slave Trader" "Why would we be interested in such [adjective] goods."
+                "奴隶商人" "我们为什么会对这种[adjective]的货感兴趣。"
 
-                "Slave Trader" "That [trait] girl has nothing to offer us besides disappointment. There's no profit in disappointment."
+                "奴隶商人" "那个[trait]的姑娘除了让人失望一无是处。 让我们失望可没好下场。"
 
-                you "No profit? Then how about this: As a gesture of goodwill, I'm willing to tank my own profits so that you can give this girl another chance."
+                you "没有利润?那这样吧:作为善意的表示，我愿意牺牲我自己的利润，这样你能否再给这个女孩一次机会呢。"
 
-                "Slave Trader" "Keep talking..."
+                "奴隶商人" "洗耳恭听..."
 
-                you "You can make use of her services for the upcoming week. And I'll replace her usual fee on the contract with a token amount."
+                you "你可以在接下来的一周让她提供服务。我会用一笔象征性的金额代替合同上的常规费用。"
 
-                you "What you do with her is your business, and any profits gained from it are yours to keep."
+                you "你对她做什么是你的事，从中获得的任何利润都是你的。"
 
-                "Slave Trader" "Hmm..."
+                "奴隶商人" "Hmm..."
 
-                "Slave Trader" "You know the way to a slaver's heart is through enlarging his coinpurse. We have a deal."
+                "奴隶商人" "看来你知道要打动一个奴隶贩子的心，就得给出足够吸引人的条件。那就一言为定。"
 
-                "Slave Trader" "In exchange, we'll reconsider our reservations towards [girl.name] the [trait]."
+                "奴隶商人" "作为交换，我们会重新考虑对[girl.name][trait]的评价。"
 
-                "Slave Trader" "I'll take her with me right away."
+                "奴隶商人" "我现在就把她带走。"
 
                 call take_leave(girl, 7)
 
                 jump .undervalued_end_1
 
-            "Reach a settlement with the slavers guild" if MC.gold >= settlementcost:
+            "与奴隶公会达成和解" if MC.gold >= settlementcost:
 
-                "The slaver guild's mind can easily be swayed with the right amount of gold."
+                "奴隶公会的决策很容易被适量的金钱所左右。"
 
-                "Let's pay them a visit."
+                "我们去拜访他们吧。"
 
                 hide screen show_event
                 scene black with fade
                 show bg tavern_man at truecenter with dissolve
 
-                "Slave Trader" "Well, if it isn't [MC.name]! Your dubious investments have been a topic of conversation at the slavers guild lately."
+                "奴隶商人" "可以......如果你不是[MC.name]的话! 你可疑的投资最近成了奴隶公会的话题。"
 
-                "Slave Trader" "Are you here to get rid of your [trait] [noun] by chance? If so, we are not interested in those damaged goods."
+                "奴隶商人" "你是想趁机脱手[trait]的[noun]? 如果是这样，我们对损坏的货物不感兴趣。"
 
-                you "No actually, I stand by that investment."
+                you "不，实际上，我支持这笔投资。"
 
-                "Slave Trader" "Oh?"
+                "奴隶商人" "哦?"
 
-                you "I wish to make a fair exchange to clear her name. I'm sure we can agree that everything has a price."
+                you "我想做个公平的交易，为她正名。我相信没有什么问题是钱不能解决的。"
 
-                "Slave Trader" "That's a certainty."
+                "奴隶商人" "说的一点没错。"
 
-                "Slave Trader" "I can smooth things over for her, but it'll cost you..."
+                "奴隶商人" "我可以帮她把事情摆平，但你得付出代价..."
 
                 menu:
 
-                    "Slave Trader" "I can do as you ask for [settlementcost] gold."
+                    "奴隶商人" "我可以满足你的要求，只要[settlementcost]金币。"
 
-                    "We have a deal!":
+                    "成交!":
                         play sound s_gold
                         $ MC.gold -= settlementcost
 
-                        "Slave Trader" "Pleasure doing business!"   
+                        "奴隶商人" "合作愉快!"   
 
                         jump .undervalued_end_1
 
-                    "I'm not willing to pay that price":
+                    "我觉得这买卖不划算":
 
-                        "Slave Trader" "Then stop wasting my time and get out."
+                        "奴隶商人" "那就别浪费我的时间，滚出去！"
 
                         return
 
-            "Perhaps some other time":
+            "也许下次吧":
 
-                "You decide to ignore the situation for now and return to it at a later date."
+                "你决定暂时忽略这个问题，以后再来处理它。"
 
                 return
 
@@ -1876,8 +1876,8 @@ label .undervalued_end_1: #slavers guild
 
     $ pasttense = girl.nickname["trait"].get_past_tense()
 
-    "You have understood that [girl.name] was known as [girl.fullnickname] because she [pasttense]."
-    "She is no longer blacklisted by the slavers guild."
+    "你理解了为什么[girl.name]被称为[girl.fullnickname]了。因为她[pasttense]。"
+    "她不再被奴隶公会列入黑名单。"
 
     python:
         for trait in girl.traits:
@@ -1919,8 +1919,8 @@ label .undervalued_end_2: #negative trait
                 newtrait = weighted_choice(trait_list)
                 add_trait_perkless(girl, newtrait)
 
-    "There's something you've failed to notice about [girl.name] until this moment: [newtrait.base_description]"
-    "That also explains why she was not in high demand at the slavemarket."
+    "直到现在你才注意到[girl.name]还有这样的特质: [newtrait.base_description]"
+    "这也解释了为什么她在奴隶市场上不受欢迎。"
 
     $ girl.nickname = {"adjective" : None, "trait" : None, "noun" : None, "story" : None, "reason1" : None, "reason2" : None, "flag1" : False, "flag2" : False}
     $ girl.fullnickname = None
@@ -1934,7 +1934,7 @@ label .undervalued_end_3: #no trait
     hide screen show_event
     scene black with fade
 
-    "You've understood that there is nothing wrong with [girl.name] and you're well within your right to demand a higher fee for her at the slavemarket."
+    "你明白[girl.name]没有任何错，你完全有权利在奴隶市场为她要求更高的价钱。"
 
     python:
         for trait in girl.traits:
@@ -1962,16 +1962,16 @@ label fix_neg_interact(girl, trait = trait):
     $ renpy.show(room, at_list = [top])
     with dissolve
 
-    "Although [girl.name] has come a long way, there is still one weakness that she hasn't been able to overcome."
+    "尽管[girl.name]已经努力了很久,但她还有一个弱点没能克服。"
 
     "[trait.base_description]"
 
-    "Lately she has been telling you that she really wants to try to [description]"
+    "最近她一直跟你说她真的想试试[description]"
 
     menu:
-        "Would you like to help her?"
+        "你想帮她一把吗?"
 
-        "Training: [training]":
+        "训练: [training]":
 
             scene black with fade
             hide screen show_event
@@ -2028,7 +2028,7 @@ label fix_neg_interact(girl, trait = trait):
                 
             return
 
-        "Perhaps some other time":
+        "也许下次再说吧":
         
             return
             
@@ -2040,7 +2040,7 @@ label freedom_interact(girl):
 
     $ renpy.show(brothel.bedroom_type.get_bg(), at_list = [top]) 
     
-    "As you make your rounds through the brothel, you bump into [girl.name] clutching some paperwork."
+    "当你在青楼里转悠的时候, 你碰到了拿着几份文件的[girl.name]。"
 
     show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
     with dissolve
@@ -2052,21 +2052,21 @@ label freedom_interact(girl):
 
     girl.char "我一直在想..."
 
-    $ reason_intro = rand_choice(["The way things are going, I'm really enjoying my life as a slave.", "Being a slave is so much more fun than I ever thought it would be.", "I absolutely love working in a brothel like this.", "I think I could truly make a career out of this profession.", "Slavery gets a bad rep. It isn't as terrible as they say.", "Life is much simpler this way, knowing that my Master will take care of me."])
-    $ reason_problem = rand_choice(["Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast.", "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level.", "To further my career, I must be willing to take bold risks.", "If life has taught me anything, it's that being a slave can get you places.", "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."])
-    $ reason_solution = rand_choice(["That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?", "That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is.", "That's why I would like to start negotiations regarding this contract...", "That's why... Well, just have a look at this contract!"])
+    $ reason_intro = rand_choice(["照这样下去，我越来越享受做奴隶的生活了。", "当奴隶比我想象的有趣多了。", "我非常喜欢在这样的妓院工作。", "我想我真的可以在这个行业中成就一番事业。", "奴隶制名声不好，但也并不像他们说的那么可怕。", "这样生活就简单多了，我知道主人会照顾我。"])
+    $ reason_problem = rand_choice(["不幸的是，作为一个自由的女孩，我往往在所有错误的方式得到特殊待遇。我将永远是一个被遗弃的人。", "但我意识到，只有在你愿意帮助我更进一步的情况下，我才能迈出下一步。", "为了事业的发展，我必须敢于冒险。", "如果生活教会了我什么，那就是做一个奴隶可以让你出人头地。", "我迫不及待地想采取下一步行动。我认真考虑了很久，最好的办法就是让你来掌控我的命运。"])
+    $ reason_solution = rand_choice(["这就是我为你准备这份合同的原因。如果一次性付款，我愿意签字放弃我的自由。你说呢?", "所以我决定正式成为你的奴隶。如果你对我的服务感兴趣的话。", "这就是为什么我想就这份合同进行谈判...", "这就是为什么... 算了, 仔细看看这份合同吧!"])
     
     if girl.personality.name == "sweet":
 
         $ renpy.say(girl.char, reason_intro)
 
-        "But our current agreement is only valid for a limited time... I want to commit the rest of my life to you, so that our time together may never end."
+        "但是我们目前的合同是有期限的。我想把我的余生都献给你，这样我们在一起的美好时光就永远不会结束。"
 
         $ renpy.say(girl.char, reason_solution)    
 
-        "She hands you an official document detailing conditions for transference of ownership."
+        "她递给你一份官方文件，详细说明了所有权转让的条件。"
     
-        girl.char "Look, I know I'm already your {i}temporary{/i} slave as it stands... It would just really ease my mind if we could make this permanent! I really want to spend the rest of my life at your side!"
+        girl.char "瞧，我知道我已经是你的{i}临时{/i}奴隶了...但如果我们能让这种关系长久下去，我就更安心了!我真的很想和你共度余生!"
     
     else:
     
@@ -2074,11 +2074,11 @@ label freedom_interact(girl):
         $ renpy.say(girl.char, reason_problem)
         $ renpy.say(girl.char, reason_solution)    
 
-        "She hands you an official document detailing conditions for transference of ownership."
+        "她递给你一份官方文件，详细说明了所有权转让的条件。"
 
-        girl.char "I know I'm already your {i}temporary{/i} slave as it stands... I just really want to continue doing this even after my spell at [brothel.name] ends."
+        girl.char "我知道我已经是你的{i}临时{/i}奴隶了... 即使合约到期了，我也想继续在[brothel.name]工作。"
     
-    "It seems like she has a very limited understanding about the contents and implications of this contract. She would be enslaved for the rest of her life if she were to sign it."
+    "看来她对这份合同的内容和含义的理解非常有限。如果她签了字，她的余生都将被你奴役。"
 
     $ price_modifier = max(0.6, min(5 , 0.4 + sum([t for o, t in girl.jp.items()]) / 600))
     $ price = int(round(girl.get_price("sell") * random.uniform(0.6, 2.2)*price_modifier,-2))
@@ -2089,7 +2089,7 @@ label freedom_interact(girl):
 
     if price_modifier >= 1.5: 
     
-        "It looks like she'll drive a hard bargain. That inflated price tag clearly takes her extensive experience into account."
+        "看来她要讨价还价了。这个虚高的价格显然考虑到了她丰富的经验。"
     
     if MC.playerclass == "Trader":
         
@@ -2097,7 +2097,7 @@ label freedom_interact(girl):
         
     elif MC.get_alignment() == "evil": 
     
-        "You consider what price she could fetch if you were to sell her on immediately after signing this contract..."
+        "你考虑了一下，如果你在签完这份合同后马上把她卖掉，她能卖多少钱..."
         "With a bit more work, she would probably be valued around [value_str] gold at the slavemarket."
         
     elif MC.get_alignment() == "good" or price_modifier <= 1: 
