@@ -1292,8 +1292,8 @@ label c2_princess_letter:
     you "A meeting with the Princess of Zan, uh? When did I become so fancy..."
 
     $ story_add_event("c2_princess_visit1")
-    $ game.set_task("Meet Gio at the stables on Saturday.")
-    $ game.set_task("Advance through the story to unlock the next chapter.", "advance2")
+    $ game.set_task("周六和乔在马厩碰头。")
+    $ game.set_task("通过推进主线剧情解锁下一章。", "advance2")
 
     return
 
@@ -1461,7 +1461,7 @@ label c2_princess_visit1:
     "The Palace will send someone to pick you up {b}next Monday{/b}."
 
     $ story_add_event("c2_princess_visit2")
-    $ game.set_task("Wait for someone to pick you up on Monday.")
+    $ game.set_task("等待星期一那天来接你的人。")
 
     return
 
@@ -2384,7 +2384,7 @@ label c2_palace_intrusion:
 
     "You must investigate the murders in town."
 
-    $ game.set_task("Find out more about the murders of high-ranking officials.")
+    $ game.set_task("了解更多关于高层官员谋杀案的信息。")
     $ calendar.set_alarm(calendar.time+1, Event(label = "c2_gio_message"))
 
     return
@@ -2488,7 +2488,7 @@ label c2_gio_message():
 
     "Meet Gio by the {b}Plaza{/b} in the warehouse district."
 
-    $ game.set_task("Meet Gio at the plaza.")
+    $ game.set_task("在广场和乔碰头。")
     $ story_add_event("c2_gio_meeting")
 
     return
@@ -2727,7 +2727,7 @@ label c2_gio_meeting():
 
     you "Well, let's not worry too much about it. Gio is usually full of crap, so his intel is probably garbage... *nervous*"
 
-    $ game.set_task("Wait for the Kunoichi to show up, and... Murder you?")
+    $ game.set_task("等待女忍者出现, 然后... 刺杀你?")
     $ temp_gossip += chapter_gossip["c2_kunoichi"]
 
     $ calendar.set_alarm(calendar.time + 2, StoryEvent("c2_suzume_invitation"))
@@ -2833,7 +2833,7 @@ label c2_suzume_invitation():
 
     "Visit the farm to return the panties to their rightful wearer."
 
-    $ game.set_task("Visit the {b}farm{/b} to return the missing panties.")
+    $ game.set_task("前往{b}农场{/b}归还遗失的内裤。")
     $ story_add_event("c2_suzume_forest1")
 
     return
@@ -3189,7 +3189,7 @@ label c2_suzume_forest1():
     "You have spent all your actions for today."
 
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_report1", type = "morning"))
-    $ game.set_task(__("Wait for events to unfold."))
+    $ game.set_task(__("等待事件推进。"))
 
     return
 
@@ -3239,7 +3239,7 @@ label c2_suzume_report1:
 
     scene black with fade
     $ story_add_event("c2_suzume_arena")
-    $ game.set_task(__("Keep exploring the city districts for clues."))
+    $ game.set_task(__("继续探索城市寻找线索。"))
 
     return
 
@@ -3309,7 +3309,7 @@ label c2_suzume_arena(): # Arena
     "Go to the {b}farm{/b} again to meet with Suzume."
 
     $ story_add_event("c2_suzume_forest2")
-    $ game.set_task("Meet the strange girl again at the {b}farm{/b}.")
+    $ game.set_task("在{b}农场{/b}和那个古怪的女孩再见一面。")
 
     return
 
@@ -3548,7 +3548,7 @@ label c2_suzume_forest2():
     $ MC.interactions = 0
     "You have lost your remaining actions for the day."
 
-    $ game.set_task("Wait for events to unfold.")
+    $ game.set_task("等待事件推进。")
     $ MC.change_prestige(2)
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_report2", type = "morning"))
 
@@ -3659,7 +3659,7 @@ label c2_suzume_invitation2():
 
     "Visit the {b}Seafront{/b} to enjoy your free night at the Dark Serpent."
 
-    $ game.set_task("Visit the upscale hostess club by the {b}Seafront{/b}.")
+    $ game.set_task("前往{b}海滨{/b}附近的高档hostess俱乐部。")
     $ story_add_event("c2_suzume_brothel")
 
     return
@@ -4031,7 +4031,7 @@ label c2_suzume_brothel():
     "You have spent all of your actions for the night."
 
     $ calendar.set_alarm(calendar.time+1, StoryEvent("c2_suzume_morning_visit", type = "morning"))
-    $ game.set_task("Wait for Suzume to come back.")
+    $ game.set_task("等待云雀归来。")
 
     return
 
@@ -4952,7 +4952,7 @@ label c2_suzume_morning_visit_menu():
 
     "Suzume is gone, like the wind..."
 
-    $ game.set_task("Get the onsen, and wait for Suzume.")
+    $ game.set_task("到青楼的温泉里,等待云雀。")
     $ daily_events.append(StoryEvent(label = "c2_suzume_onsen", chapter=2, room="onsen", date=calendar.time + 3))
 
     return
@@ -5312,7 +5312,7 @@ label c2_suzume_onsen(): # Happens at night when the player has an onsen and at 
     scene black with fade
 
     $ MC.change_prestige(2)
-    $ game.set_task("Go hunt ninjas in the city.")
+    $ game.set_task("追捕潜藏在城里的忍者。")
 
     # Init ninja hunt
     $ init_ninja_game()
@@ -5414,9 +5414,9 @@ label ninja_hunt_intro(): # Runs only once
     "Hit the Kunoichi {b}three times{/b} within the time limit to stop her."
 
     $ story_flags["ninja hunt seen intro"] = True
-    $ game.set_task("Meet the Earth Kunoichi.", "story")
-    $ game.set_task("Meet the Water Kunoichi.", "story2")
-    $ game.set_task("Meet the Void Kunoichi.", "story3")
+    $ game.set_task("与土之忍者见面。", "story")
+    $ game.set_task("与水之忍者见面。", "story2")
+    $ game.set_task("与虚空忍者见面。", "story3")
 
     return
 
@@ -5510,17 +5510,17 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
 
         if special == "fast":
             $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
-            $ game.set_task("The Void Kunoichi: TO BE CONTINUED", "story3", 7)
+            $ game.set_task("虚空忍者: 未完待续", "story3", 7)
             # $ game.set_task("Find a way to overcome the Void Kunoichi's uncanny speed.", "story3", 3)
 
         elif special == "rain":
             $ text1 = "It's a damn storm out here! I can't see a thing!"
-            $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", 7)
+            $ game.set_task("水之忍者: 未完待续", "story2", 7)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
 
         elif special == "quake":
             $ text1 = "My legs are giving out, and the district is about to crumble..."
-            $ game.set_task("The Earth Kunoichi: TO BE CONTINUED", "story", 7)
+            $ game.set_task("土之忍者: 未完待续", "story", 7)
             # $ game.set_task("Find a way to overcome the Earth Kunoichi's earthquake defense.", "story", 3)
 
         if not story_flags["c3 brothel unlocked"] and selected_district.rank == 2 and district.name != selected_district.name:
@@ -5757,7 +5757,7 @@ label intercept_narika():
 
         suzume doubt "She got the drop on us this time... But we'll run into her again. She's too bold to go into hiding."
 
-        $ game.set_task("Meet the Void Kunoichi again.", "story3", 3)
+        $ game.set_task("再见一次虚空忍者。", "story3", 3)
 
         scene black with fade
 
@@ -6169,7 +6169,7 @@ label intercept_narika():
 
         $ story_add_event("c2_narika_H1")
 
-        $ game.set_task("Meet at the brothel with Suzume tonight.", "story3")
+        $ game.set_task("今晚和云雀在青楼碰头。", "story3")
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -6546,7 +6546,7 @@ label c2_narika_H1():
 
         suzume "Aw..."
 
-    $ game.set_task("Meet the Void Kunoichi, yet again.", "story3", 3)
+    $ game.set_task("与虚空忍者会面,再一次。", "story3", 3)
 
     return
 
@@ -6693,7 +6693,7 @@ label intercept_mizuki():
 
         suzume "Well... We should keep patrolling around the district. She has a strong affinity with water... I'm sure we'll see her again, eventually."
 
-        $ game.set_task("Meet the Water Kunoichi again.", "story2", 3)
+        $ game.set_task("再见一次水之忍者。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -7005,7 +7005,7 @@ label intercept_mizuki():
         else:
             you "It's already out of reach. Damn, how can we catch someone that disappears at will?"
 
-        $ game.set_task("Meet the Water Kunoichi, yet again.", "story2", 3)
+        $ game.set_task("与水之忍者会面,再一次。", "story2", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -7481,7 +7481,7 @@ label intercept_haruka():
 
         suzume doubt "Well, we lost for today... But she'll be back to the district eventually, the prison seems to be her target. Let's come back on another day."
 
-        $ game.set_task("Meet the Earth Kunoichi again.", "story", 3)
+        $ game.set_task("再见一次土之忍者。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 2:
         scene black with fade
@@ -7989,7 +7989,7 @@ label intercept_haruka():
 
         you "She might be the link to our masked murderer! We must catch her!"
 
-        $ game.set_task("Meet the Earth Kunoichi, yet again.", "story", 3)
+        $ game.set_task("与土之忍者会面,再一次。", "story", 3)
 
     elif ninja.flags["hunt stage"] == 4: # Stage 3 is unlocked through the story
         scene black with fade
@@ -9905,7 +9905,7 @@ label c2_meet_papa_freak():
 
     "When you are ready, visit the {b}[_loc.name]{/b} to bring Papa Freak the girl of his dreams."
 
-    $ game.set_task("Bring a whore with {b}at least 50 in Beauty, Body, Refinement and Charm{/b} to Papa Freak, by the [_loc.name].", "advance2")
+    $ game.set_task("给怪老爹送去一个{b}至少50美貌, 身材, 优雅和魅力{/b}的妓女, 就在[_loc.name]边上。", "advance2")
 
     return
 
@@ -10065,7 +10065,7 @@ label visit_papa():
                 $ gallows.action = False
                 $ plaza.action = False
                 $ story_flags["c3_advance"] = True
-                $ game.set_task("Gather " + str(cost) + " gold to advance to the next chapter.", "advance2", 3)
+                $ game.set_task("收集" + str(cost) + "金币推进到下一个章节。", "advance2", 3)
 
             else:
                 girl.char "Wait, what? Spend the night with this old man? No way!"
