@@ -1012,7 +1012,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3310
     old "{b}Away{/b}"
-    new "{b}外出{/b}"
+    new "{b}外派{/b}"
 
     # game/BKscreens.rpy:3322
     old "{b}On strike{/b}"

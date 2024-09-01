@@ -469,13 +469,13 @@ label performance_reward(girl):
     
     "[girl_state_comment]"
 
-    girl.char "Master! You wanted to see me?"
+    girl.char "主人! 你找我吗?"
     
-    you "With good reason, [girl.name]. I came here to dish out some praise."
+    you "喊你来是好事 [girl.name]。我是来表扬你的。"
     
     call dialogue(girl, "slave positive reaction")
     
-    you "I've just been over the numbers from last month. You've managed to outperform the other girls. Well done!"
+    you "我刚看了上个月的账本。你的表现已经超过了其他女孩。做得好!"
     
     call dialogue(girl, "slave thanks")
     
@@ -486,16 +486,16 @@ label performance_reward(girl):
     menu: 
         girl.char "So where do we go from here?"
 
-        "Keep improving yourself": # improve self
+        "继续努力": # improve self
     
-            you "There is still some room for improvement. That's why I've got some advice for you."
+            you "你还有一些进步的空间。这就是为什么我要给你一些建议。"
         
             menu:
-                girl.char "Yes, Master?"
+                girl.char "请说, 主人?"
                 
-                "Work as hard as you can" if MC.speed > 4: # capacity boost
+                "尽全力工作" if MC.speed > 4: # capacity boost
 
-                    you "I believe you can work even harder. Try to serve more customers every shift."
+                    you "我相信你可以更加努力。服务更多的顾客。"
                     
                     if girl.is_("very extravert"):
                         girl.char "Ooh fantastic! I'll try to beat my personal record!"
@@ -512,7 +512,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job customer capacity", int(3*modifier))] 
                     $ effect_comment = "she will try to serve more customers while working"
                     
-                "Hoard as much semen as you can" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
+                "多收集精液" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
 
                     you "The market price for a gallon of semen has skyrocketed recently. Lord knows why the Elder Circle of Karkyr requires so much of it." 
                     
@@ -533,7 +533,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "whore customer capacity", int(2*modifier))]
                     $ effect_comment = "she will attempt to serve more customers while whoring"
 
-                "Focus on the whales" if MC.charisma > 4: # chance tip boost
+                "多服务大款" if MC.charisma > 4: # chance tip boost
 
                     you "You need to spend your time wisely. Try to find the patrons that have the most money to spend and make sure to fully satisfy them. Let the other girls worry about our other customers."
 
@@ -552,7 +552,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("special", "ignore budgets"), Effect("boost", "tip", 0.2, chance=0.25*modifier),Effect("change", "whore customer capacity", -1), Effect("change", "job customer capacity", -2)] 
                     $ effect_comment = "she will serve less customers but acquire bigger tips"
                     
-                "Keep doing what you're doing": # Rep boost
+                "继续保持吧": # Rep boost
 
                     you "You're heading in the right direction. If you keep up your current level of performance the customers will be chanting your name in no time."
 
@@ -571,7 +571,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "reputation gains", 0.1*modifier)] 
                     $ effect_comment = "her reputation will improve more rapidly"
                     
-                "Stand up for yourself" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
+                "为自己辩护" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
                         
                     you "Don't let anybody push you around. Don't be afraid to fight if you're driven into a corner." 
 
@@ -590,7 +590,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "defense", int(2*modifier))] 
                     $ effect_comment = "she will be on her guard"
 
-                "Focus on training": # Lower train obedience targets
+                "专心训练": # Lower train obedience targets
 
                     you "You've been doing well, but without more training you'll end up wasting away in the gutters of Zan. Pay more attention to my instructions from now on!"
                     
@@ -609,7 +609,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "train obedience target", int(-25*modifier))] 
                     $ effect_comment = "she will be more willing to undergo training"
                     
-                "Serve the customer, no matter what they request" if MC.spirit > 4: # Lower job/whore obedience targets
+                "满足客人一切要求" if MC.spirit > 4: # Lower job/whore obedience targets
 
                     you "Remember that this is a brothel, not some kind of wellness retreat for you to lounge around in. There's no sense in struggling. The customer is king and if he's asking for something then you should provide whatever he needs."
 
@@ -628,7 +628,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job obedience target", int(-25*modifier)), Effect("change", "whore obedience target", int(-25*modifier))]
                     $ effect_comment = "she will be less apprehensive about working or whoring"
                     
-                "Gain more experience": # boost xp/jp/rep
+                "获得更多经验": # boost xp/jp/rep
 
                     you "You should remain critical of yourself and keep improving!"
 
@@ -647,7 +647,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "xp gains", 0.1*modifier), Effect("boost", "all jp gains", 0.1*modifier)] 
                     $ effect_comment = "she will gain more experience and job proficiency"
 
-                "Consider a spell at the farm" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
+                "考虑一下去农场" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
 
                     you "Do you like working with animals?"
                     girl.char "I guess so... Why are you asking?"
@@ -670,14 +670,14 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.5*modifier)] 
                     $ effect_comment = "she will be more susceptible to the training methods used at the farm"
     
-        "Help the brothel": # improve brothel
+        "为青楼做贡献": # improve brothel
         
             you "With such an outstanding performance you deserve to take on a few more responsibilities. I will be counting on your help to further improve the brothel."
     
             menu:
                 girl.char "Is there anything in particular I can help you with?"
  
-                "Bring in more customers": # rep/customers boost (scope = brothel)
+                "招揽更多客人": # rep/customers boost (scope = brothel)
                 
                     you "I have a new advertising campaign in mind for [brothel.name]. For the next few weeks I want you to run a lap through the streets of Zan every night, right before we open our doors."
                     
@@ -700,7 +700,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "customers", int(4 * modifier), scope="brothel")]
                     $ effect_comment = "more customers will visit the brothel"
                     
-                "Prep for quests and classes" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
+                "为任务和培训做准备" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
 
                     you "I want you to thoroughly research the quests and classes our girls attend. Properly brief them beforehand!"
 
@@ -719,7 +719,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "quest rewards", 0.5*modifier, scope="brothel"), Effect("boost", "class results", 1*modifier, scope="brothel")]
                     $ effect_comment = "quests and classes will yield better rewards"
                     
-                "Act as a floor manager" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
+                "担任大堂经理" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
                 
                     you "The other girls respect and look up to you. You should use this opportunity to take the lead and make sure everything in the brothel runs smoothly."
 
@@ -738,7 +738,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job customer capacity", int(2*modifier), scope="brothel")]
                     $ effect_comment = "your girls (excluding whores) will be able to serve more customers"
                     
-                "Help me with my errands" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
+                "帮我跑腿" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
 
                     you "I want you to accompany me whenever I go to the city. You can help me gather resources for the brothel."
 
@@ -757,7 +757,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "city rewards", 1*modifier, scope="brothel"), Effect("change", "city rewards", 1+int(1*modifier), scope="brothel"), Effect("boost", "resource extraction", 1*modifier, scope="brothel")]                
                     $ effect_comment = "city rewards and resource extraction rates are improved"
                     
-                "Punish the other girls" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
+                "惩罚其他女孩" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
 
                     you "The other girls need to get it into their skulls that if they don't perform like you did, it's a one way trip to the slavemarket. Take this whip and force them to work harder than they've ever worked before."
 
@@ -777,7 +777,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "fear gains", 0.25*modifier, scope="brothel")]
                     $ effect_comment = "fear will increase faster"
                     
-                "Protect the other girls from harm" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
+                "保护其他女孩" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
 
                     you "I'm counting on you to step in if any of our girls get into trouble."
 
@@ -796,7 +796,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "defense", int(1*modifier), scope="brothel")]
                     $ effect_comment = "girls in the brothel will be able to defend themselves better"
                     
-                "Help me with my enchantments" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
+                "协助我施法" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
 
                     you "Your performance has been quite admirable. Can you show the same dedication in helping me with my spells?"
 
@@ -815,7 +815,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "mana", int(2*modifier), scope="brothel")]
                     $ effect_comment = "your available mana will increase"
                     
-                "Decorate the brothel" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
+                "装饰青楼" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
 
                     you "This place looks like a dump. Spruce it up for me."
 
@@ -834,7 +834,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "love gains", 0.25*modifier, scope="brothel"),Effect("boost", "prestige", 0.1*modifier, scope="brothel")]
                     $ effect_comment = "your girls' love and your brothel's prestige will improve more rapidly"
                            
-                "Make sure all the girls exercise regularly" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
+                "确保所有人都按时锻炼" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
 
                     you "Some of the girls can't quite keep up with you. You're in charge of their physical training routine. Make sure they're fit and ready to put in the work."
 
@@ -854,7 +854,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "energy use", -0.1*modifier, scope="brothel")]
                     $ effect_comment = "your girls will use their energy more efficiently"                
                     
-                "Make sure our farm creatures are well trained" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
+                "确保农场的动物训练有素" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
 
                     you "Gizel has told me that some of our farm creatures are losing their edge. I want you to visit the farm daily and pleasure the animals. But make sure they do not climax!"
 
@@ -873,7 +873,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.25*modifier, scope="farm")]
                     $ effect_comment = "the farm as a whole will be more effective"
 
-                "Be subservient to the other girls" if MC.gold > 10000: # boost brothel income
+                "对其他女孩顺从一些" if MC.gold > 10000: # boost brothel income
 
                     you "You're too selfish. Stop trying so hard to make a name for yourself and instead just do your best to help the other girls."
 
@@ -887,11 +887,11 @@ label performance_reward(girl):
                         girl.char "I'll try my best... But even so, I want to be the best I can be!" 
 
                     $ extra_effects = [Effect("boost", "income", 0.01*modifier, scope="brothel")] 
-                    $ effect_comment = "your brothel's profits should improve slightly"
+                    $ effect_comment = "青楼的利润应该会有所提高"
     
     hide screen show_event
     
-    "If all goes well, in the upcoming week [effect_comment]."
+    "如果一切顺利,接下来的一周 [effect_comment]。"
 
     python:
     
@@ -1237,11 +1237,11 @@ label undervalued_interact(girl):
                 show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
-                girl.char "You wanted to speak to me, master?"
+                girl.char "你找我吗, 主人?"
 
                 menu:
 
-                    "Ask her about [girl.fullnickname]" if girl.nickname["flag1"] == True:
+                    "问她关于[girl.fullnickname]的情况" if girl.nickname["flag1"] == True:
 
                         you "I've heard some of the slavers refer to you as [girl.fullnickname]. Care to explain?"
 
@@ -1257,7 +1257,7 @@ label undervalued_interact(girl):
 
                         you "That explains things. Resume your duties, I'll have to think of a way for you to clear your name with the slavers guild."
 
-                        girl.char "Yes master, thank you master!"
+                        girl.char "好的, 谢谢您!"
 
                         $ girl.nickname["flag1"] = True
                         $ girl.nickname["flag2"] = True
@@ -1266,7 +1266,7 @@ label undervalued_interact(girl):
                         
                         return
 
-                    "Bring it up in casual conversation" if girl.nickname["flag1"] == False:
+                    "不经意间提起这件事" if girl.nickname["flag1"] == False:
 
                         you "Hello [girl.name], good to see you. Is everything going well?"
 
@@ -1317,7 +1317,7 @@ label undervalued_interact(girl):
 
                             return
 
-                    "Intimidate her" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil" or MC.strength >= 4:
+                    "恐吓她" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil" or MC.strength >= 4:
 
                         you "[girl.name], I've got some bad news."
 
@@ -1368,7 +1368,7 @@ label undervalued_interact(girl):
 
                             jump .undervalued_end_2
 
-                    "No, I've changed my mind": 
+                    "算了，我改主意了": 
 
                         girl.char "Oh... Okay?"
                         
@@ -1376,7 +1376,7 @@ label undervalued_interact(girl):
 
                         jump .undervalued_explanation
 
-            "Bribe a slaver for information" if MC.gold >= bribebase * 1.35 and girl.nickname["flag1"] == False:
+            "贿赂奴隶贩子获取情报" if MC.gold >= bribebase * 1.35 and girl.nickname["flag1"] == False:
 
                 $ bribecost = int(round(bribebase * random.uniform(0.7, 1.3),-1))
                 
@@ -1386,7 +1386,7 @@ label undervalued_interact(girl):
 
                     "You estimate a slaver would ask for around [bribebase] gold in exchange for information. Proceed?"
 
-                    "Yes":
+                    "是":
                     
                         scene black with fade
                         show bg tavern_man at truecenter with dissolve
@@ -1451,13 +1451,13 @@ label undervalued_interact(girl):
 
                             jump .undervalued_end_3
 
-                    "No":
+                    "否":
                     
                         hide screen show_event
                     
                         jump .undervalued_explanation
 
-            "Analyze her behavior carefully" if girl.nickname["flag1"] == False and MC.interactions >= 2: 
+            "仔细分析她的行为" if girl.nickname["flag1"] == False and MC.interactions >= 2: 
 
                 "There must be something about [girl.name] that is making the slavers disinterested."
 
@@ -1513,7 +1513,7 @@ label undervalued_interact(girl):
                     return
 
 
-            "Leave her be": 
+            "先不管她了": 
 
                 "You decide to leave this situation alone for now and return to it at a later date."
                 
@@ -1650,7 +1650,7 @@ label undervalued_interact(girl):
                 scene black with fade
 
                 menu:
-                    "What should I call [girl.fullname] from now on?"
+                    "我现在该如何称呼[girl.fullname]?"
 
                     "[girl.name] the [noun]":
 
@@ -1658,7 +1658,7 @@ label undervalued_interact(girl):
                             girl.lastname = "the " + noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1675,7 +1675,7 @@ label undervalued_interact(girl):
                             girl.lastname = "the " + trait
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1691,7 +1691,7 @@ label undervalued_interact(girl):
                             girl.name = trait
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1708,7 +1708,7 @@ label undervalued_interact(girl):
                             girl.name = adjective + " " + girl.name
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1726,7 +1726,7 @@ label undervalued_interact(girl):
                             girl.lastname = "the " + noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1744,7 +1744,7 @@ label undervalued_interact(girl):
                             girl.lastname = noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -1762,7 +1762,7 @@ label undervalued_interact(girl):
                             girl.lastname = noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "She is now known as [girl.fullname]."
+                        "她现在被称为[girl.fullname]。"
 
                         if dice (6) >= 3:
 
@@ -2045,12 +2045,12 @@ label freedom_interact(girl):
     show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
     with dissolve
 
-    girl.char "Master, can we have a word?"
+    girl.char "主人，我们能聊聊吗?"
     
-    $ mc_response = rand_choice(["What is it, " + girl.name + "?", "Of course, " + girl.name + ". Speak your mind.", "Naturally. Make it quick.", "What's the matter, " + girl.name + "?"])
+    $ mc_response = rand_choice(["怎么了, " + girl.name + "?", "当然可以, " + girl.name + "。畅所欲言吧。", "行，长话短说。", "出什么事了, " + girl.name + "?"])
     $ renpy.say(you, mc_response)
 
-    girl.char "I've been thinking..."
+    girl.char "我一直在想..."
 
     $ reason_intro = rand_choice(["The way things are going, I'm really enjoying my life as a slave.", "Being a slave is so much more fun than I ever thought it would be.", "I absolutely love working in a brothel like this.", "I think I could truly make a career out of this profession.", "Slavery gets a bad rep. It isn't as terrible as they say.", "Life is much simpler this way, knowing that my Master will take care of me."])
     $ reason_problem = rand_choice(["Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast.", "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level.", "To further my career, I must be willing to take bold risks.", "If life has taught me anything, it's that being a slave can get you places.", "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."])
@@ -2118,11 +2118,11 @@ label freedom_interact(girl):
     
     menu:
     
-        "Agree to the terms ([price_str] gold)" if MC.gold >= price:
+        "接受出价([price_str]金币)" if MC.gold >= price:
         
             jump .freedom_end_1
 
-        "Try to haggle her down":
+        "和她讨价还价":
         
             you "I can't agree to that price. Would you be willing to come down a bit?"
         
@@ -2158,7 +2158,7 @@ label freedom_interact(girl):
             
                 return
 
-        "Refuse her offer":
+        "拒绝她的好意":
         
             you "I appreciate your offer, but I'm afraid it doesn't align with my interests. Perhaps some other time."
             
@@ -2271,7 +2271,7 @@ label ext_holiday_newyear:
     scene black with fade
     show expression bg_bro at top with dissolve
     
-    "Today marks the beginning of a {b}{color=[c_orange]}new year{/color}{/b}. People all over Xeros busy themselves exchanging friendly greetings with one another. {i}You're not expecting many customers tonight.{/i}"
+    "今天是{b}{color=[c_orange]}新年{/color}{/b}的第一天， 克塞罗斯各地的人们忙着互相友好地打招呼。 {i}你估计今晚没多少顾客了。{/i}"
     $ MC.add_effects(Effect("change", "customers", -4, scope="brothel", scales_with="district"), expires = calendar.time + 1)
     
     python:
@@ -2287,8 +2287,8 @@ label ext_holiday_valentines:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "It's {b}{color=[c_orange]}Valentine's Day{/color}{/b}, a celebration of romance and love. Gestures of affection are especially effective today."
-    "Lovestruck people of Xeros take this opportunity to openly profess their adoration to the ones they love."
+    "{b}{color=[c_orange]}情人节{/color}{/b}到了, 浪漫和爱情的庆典。在今天，表达爱意的手势尤其有效。"
+    "克塞罗斯的热恋中的人利用这个机会向他们所爱的人公开倾诉爱意。"
 
     $ MC.add_effects(Effect("boost", "love gains", 2, scope="world"), expires = calendar.time + 1)
     
@@ -2299,7 +2299,7 @@ label ext_holiday_valentines:
                 if not holiday_pic:
                     holiday_pic = girl.get_pic("profile", and_tags="happy", naked_filter=True, soft=True)
 
-                approach = [girl.name + " rushes towards you with flushed red cheeks.","You notice " + girl.name + " rushing towards you.",girl.name + " wishes to speak to you.", "You're stopped by " + girl.name + ", who wants to talk to you.", "You're held up by " + girl.name + ", who has something on her mind.", girl.name + " tugs on your arm, eager to say something.", "You run into " + girl.name + ", who candidly speaks her mind.", "You hear " + girl.name + " shouting your name as she runs up to you.", "You hear " + girl.name + " calling for you, eager to express what's on her mind.", "You're surprised by " + girl.name + ", who urgently wishes to speak with you."]
+                approach = [girl.name + "红着脸向你奔来。","你发现" + girl.name + "向你跑来。",girl.name + "想对你倾诉。", "你被" + girl.name + "拦了下来, 她想和你说些什么。", "你被" + girl.name + "拽住袖子, 她看起来有话要说。", girl.name + "拽着你的胳膊，想说点什么。", "你遇到了" + girl.name + ", 她想表达心中的感情。", "你听到" + girl.name + "喊着你的名字向你跑来。", "你听到" + girl.name + "喊着你的名字,渴望向你表达爱意。", "你惊讶的发现" + girl.name + "想和你说话。"]
                 
                 renpy.say("",rand_choice(approach))
                 
@@ -2321,20 +2321,20 @@ label ext_holiday_salvation:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "Today marks the {b}{color=[c_orange]}Day of Salvation{/color}{/b}. The church of Arios celebrates the kindling of Arios, the god of Light."
-    "Followers of Arios traditionally light a candle in their homes on this day. The most devout among them then carry that candle to the Cathedra to recieve Arios' blessings."
+    "今天是{b}{color=[c_orange]}赎罪日{/color}{/b}。太阳神教堂庆祝光明之神阿里奥斯的点火仪式。"
+    "太阳神的信徒遵循传统，今天在家里点一支蜡烛。他们中最虔诚的人会拿着蜡烛去大教堂接受太阳神的祝福。"
 
     if MC.god == "Arios":
-        "You order your girls to kneel and pray as you light a candle for each of them. You then instruct them to carry their candles to the Cathedra."
+        "你命令女孩们跪下来祈祷。你为她们每人点燃一支蜡烛。然后你指示他们把蜡烛带到大教堂。"
         $ MC.good += 3
         $ MC.add_effects(Effect("boost", "all jp gains", 1.0, scope="brothel"), expires = calendar.time + 1)
         $ MC.add_effects(Effect("boost", "energy use", 0.25, scope="brothel"), expires = calendar.time + 1)
     elif MC.god == "Shalia":
-        "As a follower of Shalia, you despise today's celebrations. You order your girls snuff out any candle they come across. {i}This slightly increase your brothel's threat build up.{/i}"
+        "作为伊斯兰教的信徒，你鄙视今天的庆祝活动。你命令你的姑娘们把遇到的蜡烛都掐灭。 {i}这稍微增加了青楼的威胁等级。{/i}"
         $ MC.evil += 3
         $ MC.add_effects(Effect("boost", "threat build up", 0.5, scope="brothel"), expires = calendar.time + 1)
     else:
-        "Although you do not follow the teachings of Arios, you decide to light a candle regardless for tradition's sake."
+        "虽然你不遵循太阳神教的教义，但你决定不顾传统，点燃一支蜡烛。"
         $ MC.good += 1
         $ MC.add_effects(Effect("boost", "all jp gains", 0.25, scope="brothel"), expires = calendar.time + 1)
 
@@ -2398,9 +2398,9 @@ label ext_holiday_ascension:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "Today the people of Xeros celebrate {b}{color=[c_orange]}Ascension{/color}{/b}."
-    "The church of Arios encourages the masses to see people in a different light, preaching kindness and compassion towards strangers. Shalia worshippers take this opportunity to swindle and deceive those who have fallen for the church's message."
-    "{i}Some free girls in the city of Zan may have become more interested in you thanks to today's festivities.{/i}"
+    "今天克塞罗斯的人们庆祝{b}{color=[c_orange]}耶稣升天{/color}{/b}。"
+    "太阳神教会鼓励大众以不同的眼光看待他人，宣扬对陌生人的善良和同情。伊斯兰教法信徒利用这个机会欺骗和欺骗那些相信教会信息的人。"
+    "{i}由于今天的庆典活动，泽恩的一些自由女孩可能对你更感兴趣了。{/i}"
     
     python:
     
@@ -2428,8 +2428,8 @@ label ext_holiday_night:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "Tonight followers of Shalia celebrate Her descent into darkness during the {b}{color=[c_orange]}Night of Nights{/color}{/b}."
-    "Worshippers of Shalia are encouraged to carry out plots against non-believers. {i}Fear gains receive a significant boost on this day{/i}."
+    "今晚，沙利亚的信徒庆祝她在{b}{color=[c_orange]}夜色之暗{/color}{/b}期间与黑夜融为一体。"
+    "伊斯兰教法的信徒被鼓励对非信徒实施阴谋。 {i}恐惧收益在这一天得到显著提升{/i}。"
 
     $ MC.add_effects(Effect("boost", "fear gains", 2, scope="world"), expires = calendar.time + 1)
 
@@ -2456,9 +2456,9 @@ label ext_holiday_hmas: # Winter Solstice, hmas eve
     scene black with fade
     show expression bg_bro at top with dissolve
     
-    "On this day Xeros experiences the winter solstice, a day with the shortest period of daylight."
-    "Followers of Shalia rejoice as they experience the longest night of the year. Arios worshippers take solace in the thought that from here on, the days become longer as the Light of Arios burns brightly once more."
-    "{i}Customers will pay a premium to get served tonight.{/i} Tomorrow families will unite to celebrate {b}{color=[c_orange]}Hmas{/color}{/b} together. Have you been naughty or nice?"
+    "在这一天，克赛罗斯经历了冬至，这是白昼最短的一天。"
+    "伊斯兰教法的信徒们欢欣鼓舞，因为他们经历了一年中最长的夜晚。太阳神的信徒们从这里得到安慰，因为太阳神之光再次明亮地燃烧，日子会变得更长。"
+    "{i}顾客们将为今晚的服务支付额外费用。{/i} 明天，家家户户将聚在一起庆祝{b}{color=[c_orange]}圣诞{/color}{/b}。你是乖孩子吗?"
 
     $ MC.add_effects(Effect("boost", "income", 0.25, scope="brothel"), expires = calendar.time + 1)
 
@@ -2487,7 +2487,7 @@ label ext_birthday(girl): # girl's birthday
     show expression bg_bro at top with dissolve
 
     python:
-        renpy.say("","It's {b}{color=[c_orange]}" + girl.name + "'s birthday{/color}{/b} today. {i}Love and fear can be influenced much more effectively on a girl's birthday.{/i}")
+        renpy.say("","今天是 {b}{color=[c_orange]}" + girl.name + "的生日{/color}{/b}。 {i}在女孩的生日那天，好感和恐惧更容易受到影响。{/i}")
         girl.add_effects(Effect("boost", "love gains", 2), expires = calendar.time + 1)
         girl.add_effects(Effect("boost", "fear gains", 2), expires = calendar.time + 1)
     
