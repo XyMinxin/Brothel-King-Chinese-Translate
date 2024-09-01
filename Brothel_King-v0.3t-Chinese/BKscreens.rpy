@@ -1910,7 +1910,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                                 $ ttip = trait.get_description(context)
 
-                                textbutton trait_name_dict[trait.name]:
+                                textbutton tl_cn(trait.name, trait_name_dict):
 
                                     background None
                                     xalign 0.0
@@ -3094,7 +3094,7 @@ screen trait_details(girl):
             for trait in girl.traits:
                 hbox:
                     frame background None ypadding 0 xsize xres(150) xfill True xalign 0.0 yalign 0.0:
-                        text trait_name_dict[trait.name] xmaximum xres(150) yalign 0.0 size res_font(14) bold True:
+                        text tl_cn(trait.name, trait_name_dict) xmaximum xres(150) yalign 0.0 size res_font(14) bold True:
                             if trait in gold_traits:
                                 color c_orange
                             elif trait in pos_traits:
@@ -6082,13 +6082,13 @@ screen postings(qlist):
 
                                 text "令人满意" size res_font(18) color c_prune
 
-                                text trait_name_dict[selected_quest.pos_traits[0].name] + "，" + trait_name_dict[selected_quest.pos_traits[1].name] size res_font(14) color c_emerald
+                                text tl_cn(selected_quest.pos_traits[0].name, trait_name_dict) + "，" + tl_cn(selected_quest.pos_traits[1].name, trait_name_dict) size res_font(14) color c_emerald
 
                                 text "" size res_font(18)
 
                                 text "不受欢迎" size res_font(18) color c_prune
 
-                                text trait_name_dict[selected_quest.neg_trait.name] size res_font(14) color c_crimson
+                                text tl_cn(selected_quest.neg_trait.name, trait_name_dict) size res_font(14) color c_crimson
 
                 else:
                     text "目前没有任何任务可用。" italic True color c_brown size res_font(18)

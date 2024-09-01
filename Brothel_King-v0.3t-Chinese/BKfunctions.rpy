@@ -2475,7 +2475,7 @@ init -3 python:
                 if s_act == "naked":
 
                     if d == 1: # Obedience
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("顾客开始叫嚷着要 ") + girl.name + __(" 脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来。")
+                        text1 = __("顾客开始叫嚷着要 ") + girl.name + __(" 脱光衣服。很快，她发现自己被一群好色的客户团团围住，想把她的衣服扯下来。")
 
                         r = girl.get_stat("obedience") - dice(250)
 
@@ -2499,7 +2499,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个好色的顾客开始在 ") + __(cnjob_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做。") % girl.name
+                        text1 = __("一个好色的顾客开始在 ") + __(cnjob_room_dict[girl.job]) + __(". 中间脱衣服。他鼓励%s也这么做。") % girl.name
 
                         r = girl.get_stat("libido") - dice(250)
 
@@ -2522,7 +2522,7 @@ init -3 python:
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。") % girl.name
+                        text1 = __("一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。") % girl.name
 
                         r = girl.get_stat("sensitivity") - dice(250)
 
@@ -2555,7 +2555,7 @@ init -3 python:
                 else:
 
                     if d == 1: # Obedience
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她") + __(s_des[s_act]) + "。"
+                        text1 = __("一个顾客点了") + girl.name + __(" 期待能得到额外的服务。他希望她") + __(s_des[s_act]) + "。"
 
                         r =  girl.get_stat("obedience") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2587,7 +2587,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位客户整晚都在和") + girl.name + __(" 调情。他试图让她") + __(s_des[s_act]) + "。"
+                        text1 = __("一位客户整晚都在和") + girl.name + __(" 调情。他试图让她") + __(s_des[s_act]) + "。"
 
                         r = girl.get_stat("libido") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
@@ -2614,7 +2614,7 @@ init -3 python:
                             extra_changes.append(("brothel reputation", brothel.change_rep(-1*customers[0].rank)))
 
                     elif d == 3: # Sensitivity
-                        text1 = "{size=" + str(res_font(18)) + "}" + __("一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意 ") + __(s_des[s_act]) + __("，来帮助他忘记悲伤。")
+                        text1 = __("一位顾客向她讲述了一个非常悲伤和感人的故事。他问她是否愿意 ") + __(s_des[s_act]) + __("，来帮助他忘记悲伤。")
 
                         r = girl.get_stat("sensitivity") - dice(100) - preference_modifier[girl.get_preference(s_act)] # Reminder: preference modifier is between 150 (refuses) and -75 (fascinated)
 
