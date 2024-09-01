@@ -109,9 +109,9 @@ label c3_update_hint_goals():
                 ninja.flags["hints"] = 0
 
             if ninja.flags["hints"] < 3:
-                game.set_task("Collect 3 hints on " + ninja.name + " (%s/3)." % str(ninja.flags["hints"]), channel, max_chapter=6) #! Change max_chapter
+                game.set_task("收集关于" + ninja.name + "的3个线索(%s/3)。" % str(ninja.flags["hints"]), channel, max_chapter=6) #! Change max_chapter
             else:
-                game.set_task("Talk to Suzume again about %s." % ninja.name, channel, max_chapter=6) #! Change max_chapter
+                game.set_task("和云雀再聊聊关于%s的事。" % ninja.name, channel, max_chapter=6) #! Change max_chapter
 
     return
 
@@ -1496,7 +1496,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Service, Beauty and Libido{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least {b}75 in Service, Beauty and Libido{/b}.", "special")
+            $ game.set_task("给怪老爹送去一个至少{b}75侍奉,外貌和性欲{/b}的妓女。", "special")
             $ NPC_freak.flags["requirements"] = [("service", 75), ("beauty", 75), ("libido", 75)]
 
         elif NPC_freak.flags["cells built"] == 1:
@@ -1515,7 +1515,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Sex, Charisma and Sensitivity{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least {b}75 in Sex, Charisma and Sensitivity{/b}.", "special")
+            $ game.set_task("给怪老爹送去一个至少{b}75性交,魅力和敏感{/b}的妓女。", "special")
             $ NPC_freak.flags["requirements"] = [("sex", 75), ("charm", 75), ("sensitivity", 75)]
 
         elif NPC_freak.flags["cells built"] == 2:
@@ -1534,7 +1534,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Anal, Body and Obedience{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least {b}75 in Anal, Body and Obedience{/b}.", "special")
+            $ game.set_task("给怪老爹送去一个至少{b}75肛交,身材和服从{/b}的妓女。", "special")
             $ NPC_freak.flags["requirements"] = [("anal", 75), ("body", 75), ("obedience", 75)]
 
         elif NPC_freak.flags["cells built"] == 3:
@@ -1553,7 +1553,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Fetish, Refinement and Constitution{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least {b}75 in Fetish, Refinement and Constitution{/b}.", "special")
+            $ game.set_task("给怪老爹送去一个至少{b}75调教,优雅和体质{/b}的妓女。", "special")
             $ NPC_freak.flags["requirements"] = [("fetish", 75), ("refinement", 75), ("constitution", 75)]
 
         return

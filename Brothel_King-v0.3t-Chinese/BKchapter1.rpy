@@ -709,7 +709,7 @@ label c1_reached_goal:
 
     "Go to the {b}watchtower{/b} and meet with the lieutenant."
 
-    $ game.set_task(__("Bring %s gold to the lieutenant at the {b}watchtower{/b}.") % game.goals[0].value)
+    $ game.set_task(__("带 %s 金币到{b}瞭望塔{/b}交给中尉。") % game.goals[0].value)
 
     $ story_flags["c1_goal_reached"] = True
 
@@ -1135,7 +1135,7 @@ label c1_guards_visit:
 
     "Go to the city to find the {b}thieves guild{/b}."
 
-    $ game.set_task("Go to the city to find the {b}thieves guild{/b}.")
+    $ game.set_task("到城市里寻找{b}盗贼公会{/b}。")
     $ story_flags["c1_robbed"] = True
 
     return
@@ -2838,7 +2838,7 @@ label c1_ask_guild_for_help:
 
     "和伦萨在{b}盗贼公会{/b}会合。"
 
-    $ game.set_task("Rendezvous with Renza at the {b}thieves guild{/b}.")
+    $ game.set_task("和伦萨在{b}盗贼公会{/b}会合。")
     return
 
 
@@ -4713,7 +4713,7 @@ label c1_satella_intro():
 
     "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
 
-    $ game.set_task("Go to the {b}watchtower{/b} and confront the infamous captain of the city guard.")
+    $ game.set_task("到{b}瞭望塔{/b}直面臭名昭著的上尉。")
 
     return
 

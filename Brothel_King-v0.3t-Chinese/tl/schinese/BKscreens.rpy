@@ -984,7 +984,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3252
     old "{b}Gold{/b}"
-    new "{b}金币{/b}"
+    new "{b}盈利{/b}"
 
     # game/BKscreens.rpy:3273
     old "{b}XP{/b}"
@@ -992,11 +992,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3277
     old "{b}JP{/b}"
-    new "{b}技能点{/b}"
+    new "{b}工作经验{/b}"
 
     # game/BKscreens.rpy:3281
     old "{b}Reputation{/b}"
-    new "{b}风评{/b}"
+    new "{b}声望{/b}"
 
     # game/BKscreens.rpy:3286
     old "Activity"
@@ -1012,7 +1012,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3310
     old "{b}Away{/b}"
-    new "{b}离开{/b}"
+    new "{b}外出{/b}"
 
     # game/BKscreens.rpy:3322
     old "{b}On strike{/b}"
@@ -2273,7 +2273,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2608
     old "熟练度"
-    new "熟练度"
+    new "职业"
 
     # game/BKscreens.rpy:3991
     old "d){/size}"
