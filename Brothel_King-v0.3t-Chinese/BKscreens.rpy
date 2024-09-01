@@ -374,7 +374,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip (__("%s\n今天是%s, 第%i年 第%i月 第%i天." % (moons[calendar.month].short_description, setting_name_dict[calendar.get_weekday()], calendar.year, calendar.month, calendar.day)))
+            tooltip (__("%s\n今天是%s, 第%i年 第%i月 第%i天." % (tl_cn(moons[calendar.month].short_description.lower(), moon_name_dict), setting_name_dict[calendar.get_weekday()], calendar.year, calendar.month, calendar.day)))
 
             hbox:
                 spacing 8
@@ -395,7 +395,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
             button background None xalign 0.0 yalign 0.5 action NullAction():
                 if game.chapter > 1:
-                    tooltip "你持有的金币数量. 其他资源数量:"
+                    tooltip "你持有的金币数量. 其他资源数量："
                     hovered (Show("resource_tab", x=0.625, y=0.025), Show("tax_tooltip", transition=Dissolve(0.15)))
                     unhovered (Hide("resource_tab"), Hide("tax_tooltip", transition=Dissolve(0.15)))
                 else:
@@ -1231,7 +1231,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training" or farm.programs[girl].holding != "rest":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "训练模式:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会违背女孩意愿强迫她们训练."
+                            textbutton "训练模式：" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会违背女孩意愿强迫她们训练."
                             textbutton farm.programs[girl].mode.capitalize() style "inv_no_padding" text_size res_font(14) yalign 0.5 text_bold True action NullAction() tooltip farm_ttip[farm.programs[girl].mode]
 
                             if farm.programs[girl].mode == "tough":
@@ -1241,7 +1241,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "训练设施:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "确定使用哪个设施对她进行训练 (如果可用)."
+                            textbutton "训练设施：" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "确定使用哪个设施对她进行训练 (如果可用)."
                             textbutton farm.programs[girl].installation_name.capitalize() style "inv_no_padding" yalign 0.5 text_size res_font(14) text_bold True action NullAction():
                                 if farm.programs[girl].installation:
                                     tooltip farm.programs[girl].installation.get_tooltip()
@@ -1262,12 +1262,12 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                         if farm.knows["weakness"][girl]:
                             hbox xalign 0.5 spacing xres(10):
-                                textbutton "针对弱点:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会利用她已知的弱点来对付她."
+                                textbutton "针对弱点：" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "决定吉泽尔是否会利用她已知的弱点来对付她."
                                 text {True: "否", False: "是"}[farm.programs[girl].avoid_weakness] size res_font(14) bold True
 
                     else:
                         hbox xalign 0.5 spacing 10:
-                            textbutton "当前状态:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩在不训练的时候做什么 (工作或休息).")
+                            textbutton "当前状态：" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("决定女孩在不训练的时候做什么 (工作或休息).")
                             text farm.programs[girl].holding.capitalize() size res_font(14) bold True
 
                     # hbox xalign 0.5 spacing 10:
@@ -6058,7 +6058,7 @@ screen postings(qlist):
                                     else:
                                         $ t = "+"
 
-                                    text tl_cn("[stat!t]", girl_related_dict) + " " + t size res_font(14) color c_brown
+                                    text tl_cn(stat, girl_related_dict) + " " + t size res_font(14) color c_brown
 
                                 textbutton "\n最高技能: " + str(selected_quest.stat_cap) text_size res_font(14) text_color c_brown xalign 0.0 yalign 0.5 xpadding 0 ypadding 0 background None:
                                     tooltip "课程可能导致女孩的技能超过等级上限。"
@@ -6076,7 +6076,7 @@ screen postings(qlist):
 
                                 for stat, val in selected_quest.requirements:
 
-                                    text tl_cn("[stat!t]", stat_name_dict) + " " + str(val) size res_font(14) color c_brown
+                                    text tl_cn(stat, stat_name_dict) + " " + str(val) size res_font(14) color c_brown
 
                                 text "" size res_font(18)
 

@@ -3397,7 +3397,7 @@ init -3 python:
             elif act in girl.neg_acts:
                 return " (%s)" % emo_lightning
             else:
-                return ""
+                return "    "
         else:
             return " (?)"
 
@@ -3409,7 +3409,7 @@ init -3 python:
             elif fix_name in [fix.name for fix in girl.neg_fixations]:
                 return " (%s)" % emo_lightning
             else:
-                return ""
+                return "    "
         else:
             return " (?)"
 

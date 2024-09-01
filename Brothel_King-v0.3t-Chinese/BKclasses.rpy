@@ -230,7 +230,7 @@ init -2 python:
             for name, mod in detected_mods.items():
                 if mod.active:
                     if name not in self.active_mods.keys():
-                        if renpy.call_screen("yes_no", "一个新Mod已经被激活: " + mod.full_name + ". 你想为这个游戏激活这个mod吗?"):
+                        if renpy.call_screen("yes_no", "一个新Mod已经被激活：" + mod.full_name + ". 你想为这个游戏激活这个mod吗?"):
                             self.activate_mod(mod)
 
             updated_games[self] = True # To do: Check if it works or needs a function
@@ -280,7 +280,7 @@ init -2 python:
             for g in self.free_girls:
                 l.append(g.name)
 
-            return "自由女孩: " + and_text(l)
+            return "自由女孩：" + and_text(l)
 
         def get_available_locations(self):
             loc_list = []
@@ -1685,7 +1685,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + setting_name_dict[self.name.capitalize()] + "{/b}（接待难度: " + self.get_difficulty() + "）: " + get_description(base_description, effects)
+            self.description = "{b}" + setting_name_dict[self.name.capitalize()] + "{/b}（接待难度：" + self.get_difficulty() + "）：" + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -2579,20 +2579,20 @@ init -2 python:
             msg = ""
 
             if short:
-                msg += __("宣传效果: ") + brothel.count_customers_description(short=True)
+                msg += __("宣传效果：") + brothel.count_customers_description(short=True)
 
                 msg += __("\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=False) + "。"
 
-                msg += __("\n卫生情况: ") + __(maintenance_desc[self.get_cleanliness()])
+                msg += __("\n卫生情况：") + __(maintenance_desc[self.get_cleanliness()])
 
                 msg += "\n({i}快捷键: {u}B{/u}{/i})"
 
             else:
-                msg += __("宣传效果: ") + brothel.count_customers_description()
+                msg += __("宣传效果：") + brothel.count_customers_description()
 
                 msg += __(".\n\n安全等级: 威胁级别为 ") + self.estimate_threat_level(contrast=True) + "。"
 
-                msg += __("\n\n卫生情况: ") + __(maintenance_desc[self.get_cleanliness()])
+                msg += __("\n\n卫生情况：") + __(maintenance_desc[self.get_cleanliness()])
 
             return msg
 
@@ -6663,7 +6663,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text2 += "\n" + __(setting_name_dict[s.capitalize()]) + "：" + shown
+                    text2 += "\n" + tl_cn(s.capitalize(), setting_name_dict) + "：" + shown
 
                     if s in ("mood", "love", "fear"):
                         if s=="mood":
@@ -6674,7 +6674,7 @@ init -2 python:
                             s="恐惧"
                         text1 = "{b}" + s + "{/b}"
                     else:
-                        text1 = "{b}" + girl_related_dict[s] + "技能" + "{/b}"
+                        text1 = "{b}" + tl_cn(s, girl_related_dict) + "{/b}"
 
                     if c >= 5:
                         renpy.say("", girl.name + "的" + text1 + "增加了很多。")
@@ -6703,12 +6703,12 @@ init -2 python:
                     else:
                         shown = get_plus_rating(brk[a], "pref")
 
-                    text1 += "\n" + __(a.capitalize()) + " 喜好: " + shown
+                    text1 += "\n" + tl_cn(a.capitalize(), girl_related_dict) + " 喜好: " + shown
                 else:
                     raise AssertionError("Unexpected breaking value for " + a + ". Please report this bug.")
 
             if inter:
-                text1 += "\n女孩的互动关系: " + str(inter)
+                text1 += "\n女孩的互动关系：" + str(inter)
                 girl.interactions += inter
 
             if virgin:
@@ -6732,14 +6732,14 @@ init -2 python:
 
             if debug_mode:
                 if gd:
-                    text2 += "\n善良: " + str(gd)
+                    text2 += "\n善良：" + str(gd)
                 if ne:
-                    text2 += "\n中立: " + str(ne)
+                    text2 += "\n中立：" + str(ne)
                 if ev:
-                    text2 += "\n邪恶: " + str(ev)
+                    text2 += "\n邪恶：" + str(ev)
             if p:
                 MC.change_prestige(p)
-                text1 += "\n声望: " + str(p)
+                text1 += "\n声望：" + str(p)
 
             if not text2:
                 text2 = "没有变化"
@@ -7049,7 +7049,7 @@ init -2 python:
             self.duration = duration
             if effects == None: effects = []
             self.effects = effects
-            self.description = "{b}" + self.name + "{/b}" + ": " + get_description(base_description, effects)
+            self.description = "{b}" + self.name + "{/b}" + "：" + get_description(base_description, effects)
             self.upgrade = upgrade
             self.built = False
             self.can_deactivate = can_deactivate
@@ -7145,7 +7145,7 @@ init -2 python:
             self.tb = ProportionalScale("backgrounds/moons/%s tb.webp" % name, *res_tb(25))
             if effects == None: effects = []
             self.effects = effects
-            self.short_description = get_description("%s" % self.name, self.effects, separator=": ")
+            self.short_description = get_description("%s" % self.name, self.effects, separator="：")
             self.description = get_description(description, self.effects)
             self.sound = sound
 
@@ -7495,19 +7495,19 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}特质{/b}: " + and_text([trait_name_dict[t.name] for t in target], " 或 ")
+                return "{b}特质{/b}：" + and_text([trait_name_dict[t.name] for t in target], " 或 ")
 
             elif spe == "perk":
-                return "{b}奖励{/b}: " + target.name
+                return "{b}奖励{/b}：" + target.name
 
             elif spe == "fix":
-                return "{b}正面癖好{/b}: " + and_text([girl_related_dict[f.name.capitalize()] for f in target], " 或 ")
+                return "{b}正面癖好{/b}：" + and_text([girl_related_dict[f.name.capitalize()] for f in target], " 或 ")
 
             elif spe == "farm":
-                return "{b}农场弱点{/b}: " + farm_related_dict[target.capitalize()]
+                return "{b}农场弱点{/b}：" + farm_related_dict[target.capitalize()]
 
             elif spe == "item":
-                return "{b}必要穿着{/b}: " + setting_name_dict[target.name]
+                return "{b}必要穿着{/b}：" + setting_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外付费)"
@@ -7702,7 +7702,7 @@ init -2 python:
                 elif req.startswith("skill"):
                     r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b} 或者更好的")
                 elif req.startswith("pref"):
-                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + " 性癖: " + girl_related_dict[self.limits[req].capitalize()] + "{/b} 或者更好的")
+                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + " 性癖：" + girl_related_dict[self.limits[req].capitalize()] + "{/b} 或者更好的")
 
             return r
 

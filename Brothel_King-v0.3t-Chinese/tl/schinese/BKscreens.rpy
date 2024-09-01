@@ -822,19 +822,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1234
     old "Training mode:"
-    new "训练模式:"
+    new "训练模式："
 
     # game/BKscreens.rpy:1244
     old "Training facility:"
-    new "训练设施:"
+    new "训练设施："
 
     # game/BKscreens.rpy:1265
     old "Use Weakness:"
-    new "针对弱点:"
+    new "针对弱点："
 
     # game/BKscreens.rpy:1270
     old "Holding mode:"
-    new "当前状态:"
+    new "当前状态："
 
     # game/BKscreens.rpy:1278
     old "Change program"
@@ -948,7 +948,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2895
     old "Available points:"
-    new "可用点数:"
+    new "可用点数："
 
     # game/BKscreens.rpy:3043
     old "Unlock\n{size=-6}(costs 2 perk points){/size}"
@@ -1048,7 +1048,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3479
     old "Hints collected:"
-    new "收集到的情报:"
+    new "收集到的情报："
 
     # game/BKscreens.rpy:3544
     old "The Chase"
@@ -1385,7 +1385,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5832
     old "Active:"
-    new "当前:"
+    new "当前："
 
     # game/BKscreens.rpy:5847
     old "%s's Spellbook"
@@ -2000,7 +2000,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8150
     old "Next unlock:"
-    new "下一个解锁:"
+    new "下一个解锁："
 
     # game/BKscreens.rpy:8156
     old "Reset achievements"
@@ -2060,19 +2060,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8458
     old "Mojo cost:"
-    new "魔力消耗:"
+    new "魔力消耗："
 
     # game/BKscreens.rpy:8472
     old "Sanity cost:"
-    new "理智消耗:"
+    new "理智消耗："
 
     # game/BKscreens.rpy:8477
     old "Target:"
-    new "目标:"
+    new "目标："
 
     # game/BKscreens.rpy:8482
     old "Duration:"
-    new "持续时间:"
+    new "持续时间："
 
     # game/BKscreens.rpy:8483
     old "[pow.duration] days"

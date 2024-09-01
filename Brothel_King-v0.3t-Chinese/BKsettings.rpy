@@ -1115,6 +1115,31 @@ init -10 python:
                         "the Arik mountains" : "阿力克山脉",
                         }
 
+    ## 月相名称 ##
+    moon_name_dict = {
+        "Gold" : "",
+        "gold" : "",
+        "Wolf" : "",
+        "wolf" : "",
+        "Blue" : "",
+        "blue" : "",
+        "Blood" : "",
+        "blood" : "",
+        "Honey" : "",
+        "honey" : "",
+        "Dry" : "",
+        "dry" : "",
+        "Hunter" : "",
+        "hunter" : "",
+        "Silver" : "",
+        "silver" : "",
+        "Wet" : "",
+        "wet" : "",
+        "Hallow" : "",
+        "hallow" : "",
+        "Dark" : "",
+        "dark" : "",
+    }
 #### BALANCE / CHEATS ####
 
     debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
