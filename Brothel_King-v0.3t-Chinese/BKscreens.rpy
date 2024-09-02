@@ -2855,9 +2855,9 @@ screen autorest():
         text "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it" italic True size res_font(14) color c_brown xsize xres(360)
         text "" size res_font(18)
         if autorest_limit == 0:
-            $ text1 = "Autorest OFF"
+            $ text1 = "自动休息 关闭"
         else:
-            $ text1 = "Autorest ON - Limit: " + str(autorest_limit) + " energy"
+            $ text1 = "自动休息 开启 - 阈值: " + str(autorest_limit) + "精力"
 
         textbutton text1 action Function(change_autorest, "+") alternate Function(change_autorest, "-") xalign 0.5 xsize xres(360) ysize yres(40) text_size res_font(18)
         text "" size res_font(18)
