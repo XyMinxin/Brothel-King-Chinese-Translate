@@ -1312,15 +1312,15 @@ translate schinese strings:
 
     # game/BKsecurity.rpy:1183
     old "{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\nThey're in such good spirits that they accept to work for half the usual amount ({b}"
-    new "{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\nThey're in such good spirits that they accept to work for half the usual amount ({b}"
+    new "{color=[c_green]}你的保安当场抓住了一个小偷!{/color} 他们整晚都在折磨她作为惩罚。\n他们心情很好，愿意只拿平时一半的薪水工作({b}。"
 
     # game/BKsecurity.rpy:1185
     old "{color=[c_green]}Security alert! No gold lost. "
-    new "{color=[c_green]}Security alert! No gold lost. "
+    new "{color=[c_green]}安全警报!无金币损失。 "
 
     # game/BKsecurity.rpy:1191
     old "{color=[c_green]}As you were patrolling, you caught a thief red-handed!{/color} She begged you to release her, so you came to an arrangement.\nYou let her go after a night of 'fun' in your basement. You have earned {b}prestige{/b}."
-    new "{color=[c_green]}As you were patrolling, you caught a thief red-handed!{/color} She begged you to release her, so you came to an arrangement.\nYou let her go after a night of 'fun' in your basement. You have earned {b}prestige{/b}."
+    new "{color=[c_green]}你在巡逻时，当场抓住了一个小偷!{/color}她恳求你放了她，你有了个好主意。\n你在地下室玩了她一夜后放她走了。你获得了一些{b}声望{/b}。"
 
     # game/BKsecurity.rpy:1197
     old "{color=[c_lightgreen]}A "
