@@ -249,7 +249,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2525
     old "一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人."
-    new "一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是Zan中最幸福的人。"
+    new "一个醉酒的顾客告诉%s他爱着她，如果她能给他看她的天堂般的身体，他将是泽恩中最幸福的人。"
 
     # game/BKfunctions.rpy:2530
     old "\n{color=[c_green]}所有的顾客都开始央求她，所以%s觉得自己无法拒绝.{/color}"

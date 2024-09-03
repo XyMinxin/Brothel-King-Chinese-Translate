@@ -1144,11 +1144,11 @@ label girls_loop():
 
             if girl.away or girl.hurt > 0 or girl.exhausted:
                 if girl.away:
-                    $ renpy.notify("%s is away and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("%s 不在，目前不能分配新工作。" % girl.name)
                 elif girl.hurt > 0:
-                    $ renpy.notify("%s is hurt and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("%s 受伤了，目前不能分配新工作。" % girl.name)
                 elif girl.exhausted:
-                    $ renpy.notify("%s is exhausted and cannot be assigned a new job at the moment." % girl.name)
+                    $ renpy.notify("%s 筋疲力尽，目前不能分配新工作。" % girl.name)
                 jump girls_loop
 
             $ exit = False

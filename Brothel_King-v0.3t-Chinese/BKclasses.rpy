@@ -4252,10 +4252,10 @@ init -2 python:
             target = "双飞倾向" if target == "bisexual preference" else target
             target = "所有性行为倾向" if target == "all sex acts preference" else target
             target = "满意度" if target == "satisfaction" else target
+            target = "每日爱情" if target == "love per day" else target
             target = "每日恐惧" if target == "fear per day" else target
             target = "丧失理智" if target == "sanity loss" else target
-            target = "" if target == "" else target
-            target = "" if target == "" else target
+            target = "魔力消耗" if target == "mojo cost" else target
             target = "" if target == "" else target
 
             text1 += target

@@ -1394,7 +1394,7 @@ label end_day:
 
         python:
             for girl2, stats in changes:
-                text1 += girl2.fullname + "：" + (and_text([event_color["good"] % ("+" + s) for s in stats], separator = "、"))
+                text1 += girl2.fullname + "：" + (and_text([event_color["good"] % ("+" + tl_cn(s, girl_related_dict)) for s in stats], separator = "、"))
 
         girl.char "[text1]){/size}"
 
