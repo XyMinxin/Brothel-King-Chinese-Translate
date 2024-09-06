@@ -1587,41 +1587,13 @@ translate schinese strings:
     old "Girl interactions"
     new "女孩互动"
 
-    # game/BKscreens.rpy:7569
-    #old "Talk"
-    #new "对话"
-
-    # game/BKscreens.rpy:7547
-    #old "Train"
-    #new "训练"
-
-    # game/BKscreens.rpy:7547
-    #old "Magic"
-    #new "催眠"
-
-    # game/BKscreens.rpy:7547
-    #old "React"
-    #new "奖惩"
-
-    # game/BKscreens.rpy:7547
-    #old "Misc"
-    #new "其他"
-
-    # game/BKscreens.rpy:7599
-    #old "Advanced"
-    #new "进阶"
-
-    # game/BKscreens.rpy:7636
-    #old "OTHER"
-    #new "其他"
-
     # game/BKscreens.rpy:7690
     old "\nActivate or deactivate objectionable content (won't affect story scenes)"
     new "\n启用或禁用令人反感的内容（不会影响剧情）"
 
     # game/BKscreens.rpy:7731
     old "\nChoose the behavior of stock (default) pictures and girl pack pictures"
-    new "\n选择默认图片和女孩包图片的行为"
+    new "\n选择默认图片和女孩包图片的设置"
 
     old "When a picture is missing:\nUse stock pictures"
     new "找不到可用图片时：使用默认图片库"
@@ -1630,22 +1602,22 @@ translate schinese strings:
     new "找不到可用图片时：随机一位女孩图片包"
 
     old "When the picture count is low:\nMix stock and girl pack pictures"
-    new "当图片数量太少时：混合使用图库和女孩图片包"
+    new "当图片数量太少时：混合使用备用图库和女孩图片包"
 
     old "When the picture count is low:\nOnly use girl pack pictures"
     new "当图片数量太少时：只使用该女孩图片包"
 
     # game/BKscreens.rpy:7748
     old "\nChoose the behavior of advanced training pictures"
-    new "\n选择高级培养图片的行为"
+    new "\n选择进阶训练图片的行为"
 
     # game/BKscreens.rpy:7750
     old "Advanced training pictures: Better variety"
-    new "高级培养图片：更好的多样性"
+    new "进阶训练图片：更好的多样性"
 
     # game/BKscreens.rpy:7752
     old "Advanced training pictures: Better accuracy"
-    new "高级培养图片：更高的准确性"
+    new "进阶训练图片：更高的准确性"
 
     # game/BKscreens.rpy:7756
     old "\nChoose the behavior of group and bisexual pictures"
