@@ -427,89 +427,89 @@ label traitking_init:
 
                 # Vanilla reworked
 
-                Trait("Fascinating", verb="be", eff1 = Effect("change", "job customer capacity", 2), eff2 = Effect("special", "job prestige", 1), archetype="The Courtesan", base_description = __("She is always the center of attention.")),
-                Trait("Magnetic", verb="be", effects=[Effect("boost", "prestige", 0.25, scales_with = "rank"), Effect("boost", "income", 0.01, scales_with = "rank"), Effect("change", "valuation", +100)], archetype="The Model", base_description = __("There is something about her that makes her unforgettable.")),
+                Trait(_("Fascinating"), verb="be", eff1 = Effect("change", "job customer capacity", 2), eff2 = Effect("special", "job prestige", 1), archetype="The Courtesan", base_description = __("She is always the center of attention.")),
+                Trait(_("Magnetic"), verb="be", effects=[Effect("boost", "prestige", 0.25, scales_with = "rank"), Effect("boost", "income", 0.01, scales_with = "rank"), Effect("change", "valuation", +100)], archetype="The Model", base_description = __("There is something about her that makes her unforgettable.")),
 
-                Trait("Provocative", verb="be", effects=[Effect("boost", "dress", 1.0), Effect("gain", "positive fixation", "cosplay")], archetype="The Model", base_description = __("She has an eye for fashion and knows how to dress to impress.")),
-                Trait("Fashionista", verb="be a", effects=[Effect("boost", "accessory", 0.1, scales_with = "rank"), Effect("boost", "necklace", 0.1, scales_with = "rank"), Effect("boost", "ring", 0.1, scales_with = "rank")], archetype="The Model", base_description = __("She is a trendsetter when it comes to fashion and jewelers all over Xeros would love to be worn by her.")),
+                Trait(_("Provocative"), verb="be", effects=[Effect("boost", "dress", 1.0), Effect("gain", "positive fixation", "cosplay")], archetype="The Model", base_description = __("She has an eye for fashion and knows how to dress to impress.")),
+                Trait(_("Fashionista"), verb="be a", effects=[Effect("boost", "accessory", 0.1, scales_with = "rank"), Effect("boost", "necklace", 0.1, scales_with = "rank"), Effect("boost", "ring", 0.1, scales_with = "rank")], archetype="The Model", base_description = __("She is a trendsetter when it comes to fashion and jewelers all over Xeros would love to be worn by her.")),
 
-                Trait("Perfectionist", verb="be a", eff1=Effect("increase satisfaction", "all jobs", 1, chance=0.5), eff2=Effect("personality", "class president"), archetype="The Courtesan", base_description = __("She is unable to accept failure, always striving for perfection.")),
-                Trait("Gifted", verb="be", effects=[Effect("increase satisfaction", "all sex acts", 1, chance=0.5), Effect("change", "valuation", +100)], archetype="The Bride", base_description = __("She knows some amazing tricks that will make any sexual encounter more pleasurable.")),
+                Trait(_("Perfectionist"), verb="be a", eff1=Effect("increase satisfaction", "all jobs", 1, chance=0.5), eff2=Effect("personality", "class president"), archetype="The Courtesan", base_description = __("She is unable to accept failure, always striving for perfection.")),
+                Trait(_("Gifted"), verb="be", effects=[Effect("increase satisfaction", "all sex acts", 1, chance=0.5), Effect("change", "valuation", +100)], archetype="The Bride", base_description = __("She knows some amazing tricks that will make any sexual encounter more pleasurable.")),
 
                 # Trait King originals
 
-                Trait("Genius", verb="be a", effects=[Effect("boost", "xp gains", 0.5), Effect("boost", "class results", 2.0), Effect("boost", "all skill gains", 0.25, scales_with = "rank")], archetype="The Escort", base_description = __("She has an exceptionally sharp mind.")),
+                Trait(_("Genius"), verb="be a", effects=[Effect("boost", "xp gains", 0.5), Effect("boost", "class results", 2.0), Effect("boost", "all skill gains", 0.25, scales_with = "rank")], archetype="The Escort", base_description = __("She has an exceptionally sharp mind.")),
 
-                Trait("Famously beautiful", verb = "be", effects = [Effect("change", "beauty", 40), Effect("gain", "reputation", 20), Effect("change", "customers", 4, dice=True, scope="brothel", scales_with="rank"), Effect("change", "valuation", +150)], archetype="The Model", base_description = __("She is known throughout the realm as one of Zan's crown jewels.")),
+                Trait(_("Famously beautiful"), verb = "be", effects = [Effect("change", "beauty", 40), Effect("gain", "reputation", 20), Effect("change", "customers", 4, dice=True, scope="brothel", scales_with="rank"), Effect("change", "valuation", +150)], archetype="The Model", base_description = __("She is known throughout the realm as one of Zan's crown jewels.")),
 
-                Trait("Princess", verb = "be a", effects=[Effect("boost", "prestige", 1.0, scales_with = "rank"), Effect("boost", "job customer budget", 1.0), Effect("boost", "whore customer budget", 1.0), Effect("change", "refinement", 15, scales_with = "rank"), Effect("boost", "upkeep", 4.0), Effect("change", "job obedience target", 80), Effect("change", "whore obedience target", 200), Effect("change", "train obedience target", 50), Effect("personality", "princess"), Effect("gain", "reputation", 100), Effect("change", "valuation", +1000)], archetype="The Courtesan", base_description = __("They say she has royal blood flowing through her veins.")),
-                Trait("Royal Concubine", verb = "be a", effects=[Effect("boost", "prestige", 1), Effect("boost", "refinement gains", 0.5), Effect("change", "whore obedience target", -50), Effect("change", "train obedience target", -50), Effect("boost", "tip", 0.25), Effect("boost", "upkeep", 1.0), Effect("gain", "reputation", 25), Effect("change", "valuation", +250)], archetype="The Courtesan", base_description = __("Rumour has it she once served as one of the King's concubines.")),
+                Trait(_("Princess"), verb = "be a", effects=[Effect("boost", "prestige", 1.0, scales_with = "rank"), Effect("boost", "job customer budget", 1.0), Effect("boost", "whore customer budget", 1.0), Effect("change", "refinement", 15, scales_with = "rank"), Effect("boost", "upkeep", 4.0), Effect("change", "job obedience target", 80), Effect("change", "whore obedience target", 200), Effect("change", "train obedience target", 50), Effect("personality", "princess"), Effect("gain", "reputation", 100), Effect("change", "valuation", +1000)], archetype="The Courtesan", base_description = __("They say she has royal blood flowing through her veins.")),
+                Trait(_("Royal Concubine"), verb = "be a", effects=[Effect("boost", "prestige", 1), Effect("boost", "refinement gains", 0.5), Effect("change", "whore obedience target", -50), Effect("change", "train obedience target", -50), Effect("boost", "tip", 0.25), Effect("boost", "upkeep", 1.0), Effect("gain", "reputation", 25), Effect("change", "valuation", +250)], archetype="The Courtesan", base_description = __("Rumour has it she once served as one of the King's concubines.")),
 
-                Trait("Ambitious", verb = "be", eff1 = Effect("boost", "reputation gains", 0.5), eff2=Effect("boost", "quest results", 1.0), eff3 = Effect("change", "all skill max", 10), archetype="The Player", base_description = __("She is filled with determination to succeed and climb the social ladder.")),
+                Trait(_("Ambitious"), verb = "be", eff1 = Effect("boost", "reputation gains", 0.5), eff2=Effect("boost", "quest results", 1.0), eff3 = Effect("change", "all skill max", 10), archetype="The Player", base_description = __("She is filled with determination to succeed and climb the social ladder.")),
 
-                Trait("Exhibitionist", verb="be an", effects=[Effect("boost", "naked bonus", 0.1, scales_with = "rank"), Effect("boost", "libido gains", 0.25), Effect("change", "valuation", +50)], archetype="The Player", base_description = __("She loves showing her naked body, especially to strangers.")),
+                Trait(_("Exhibitionist"), verb="be an", effects=[Effect("boost", "naked bonus", 0.1, scales_with = "rank"), Effect("boost", "libido gains", 0.25), Effect("change", "valuation", +50)], archetype="The Player", base_description = __("She loves showing her naked body, especially to strangers.")),
 
-                Trait("Karkyrian Hymen", verb = "have a", effects=[Effect("boost", "sex preference increase", -0.75)], base_description = __("She is equipped with a self-repairing hymen which perpetually rips and bleeds during intercourse.")),
+                Trait(_("Karkyrian Hymen"), verb = "have a", effects=[Effect("boost", "sex preference increase", -0.75)], base_description = __("She is equipped with a self-repairing hymen which perpetually rips and bleeds during intercourse.")),
 
-                Trait("Idol", verb = "be an", effects=[Effect("change", "customers", 8, dice=True, scope="brothel"), Effect("boost", "job customer budget", 0.1, scales_with = "cust nb")], base_description = __("She has lots of adoring fans."))
+                Trait(_("Idol"), verb = "be an", effects=[Effect("change", "customers", 8, dice=True, scope="brothel"), Effect("boost", "job customer budget", 0.1, scales_with = "cust nb")], base_description = __("She has lots of adoring fans."))
         ]
 
         traitking_gold_a = [
 
                 # Vanilla reworked
 
-                Trait("Naughty", verb="be", eff1 = Effect("boost", "tip", 0.1), eff2 = Effect("special", "temptress", 0.33), eff3=Effect("personality", "pervert"), archetype="The Slut", base_description = __("She enjoys recieving dirty requests.")),
-                Trait("Lust", verb="have", eff1=Effect("change", "whore customer capacity", 1), eff2=Effect("change", "libido", 25), archetype="The Escort", base_description = __("She has a limitless desire for sex.")),
-                Trait("Warrior", verb="be a", effects=[Effect("change", "defense", 1, scales_with = "rank"), Effect("change", "security", 1, scope = "brothel", scales_with = "rank"), Effect("personality", "rebel")], base_description = __("She is a trained warrior who knows how to defend herself.")),
+                Trait(_("Naughty"), verb="be", eff1 = Effect("boost", "tip", 0.1), eff2 = Effect("special", "temptress", 0.33), eff3=Effect("personality", "pervert"), archetype="The Slut", base_description = __("She enjoys recieving dirty requests.")),
+                Trait(_("Lust"), verb="have", eff1=Effect("change", "whore customer capacity", 1), eff2=Effect("change", "libido", 25), archetype="The Escort", base_description = __("She has a limitless desire for sex.")),
+                Trait(_("Warrior"), verb="be a", effects=[Effect("change", "defense", 1, scales_with = "rank"), Effect("change", "security", 1, scope = "brothel", scales_with = "rank"), Effect("personality", "rebel")], base_description = __("She is a trained warrior who knows how to defend herself.")),
 
-                Trait("Fast learner", verb="be a", effects=[Effect("boost", "xp gains", 0.25), Effect("boost", "all jp gains", 0.25), Effect("boost", "class results", 1.0), Effect("personality", "class president")], archetype="The Courtesan", base_description = __("She is an exemplary student with an insatiable thirst for knowledge.")),
+                Trait(_("Fast learner"), verb="be a", effects=[Effect("boost", "xp gains", 0.25), Effect("boost", "all jp gains", 0.25), Effect("boost", "class results", 1.0), Effect("personality", "class president")], archetype="The Courtesan", base_description = __("She is an exemplary student with an insatiable thirst for knowledge.")),
 
-                Trait("Caster", verb="be a", effects= [Effect("change", "mana", 2, scope="brothel"), Effect("special", "rest shield", 1), Effect("special", "shield", 1), Effect("change", "valuation", +100)], archetype="The Bride", base_description = __("She is educated in the spiritual arts.")),
+                Trait(_("Caster"), verb="be a", effects= [Effect("change", "mana", 2, scope="brothel"), Effect("special", "rest shield", 1), Effect("special", "shield", 1), Effect("change", "valuation", +100)], archetype="The Bride", base_description = __("She is educated in the spiritual arts.")),
 
-                Trait("Driven", verb="be", eff1=Effect("boost", "max energy", 0.3), eff2=Effect("boost", "energy", 0.2), eff3=Effect("boost", "quest results", 0.25), archetype="The Player", base_description = __("She works tirelessly to improve herself.")),
+                Trait(_("Driven"), verb="be", eff1=Effect("boost", "max energy", 0.3), eff2=Effect("boost", "energy", 0.2), eff3=Effect("boost", "quest results", 0.25), archetype="The Player", base_description = __("She works tirelessly to improve herself.")),
 
-                Trait("Noble", verb="be a", effects=[Effect("boost", "prestige", 2), Effect("boost", "upkeep", 2.0), Effect("change", "job obedience target", 50), Effect("change", "whore obedience target", 50), Effect("change", "train obedience target", 25), Effect("change", "valuation", +500), Effect("personality", "prude")], opposite = "Humble", archetype="The Courtesan", base_description = __("Supposedly she belongs to a well-known noble family.")),
-                Trait("Elite", verb="be", effects=[Effect("special", "ignore budgets", 1), Effect("personality", "princess"), Effect("change", "valuation", +200), Effect("change", "brothel reputation", 5, chance=0.25, scope="brothel")], archetype="The Courtesan", base_description = __("She is perceived to have noble connections. Customers consider time spent with her as an investment and are willing to overspend.")),
+                Trait(_("Noble"), verb="be a", effects=[Effect("boost", "prestige", 2), Effect("boost", "upkeep", 2.0), Effect("change", "job obedience target", 50), Effect("change", "whore obedience target", 50), Effect("change", "train obedience target", 25), Effect("change", "valuation", +500), Effect("personality", "prude")], opposite = "Humble", archetype="The Courtesan", base_description = __("Supposedly she belongs to a well-known noble family.")),
+                Trait(_("Elite"), verb="be", effects=[Effect("special", "ignore budgets", 1), Effect("personality", "princess"), Effect("change", "valuation", +200), Effect("change", "brothel reputation", 5, chance=0.25, scope="brothel")], archetype="The Courtesan", base_description = __("She is perceived to have noble connections. Customers consider time spent with her as an investment and are willing to overspend.")),
 
-                Trait("Naturist", verb="be a", effects = [Effect("boost", "naked bonus", 0.2), Effect("change", "valuation", +25), Effect("special", "naked", 1)], archetype="The Player", base_description = __("She prefers to do everything in the nude.")),
+                Trait(_("Naturist"), verb="be a", effects = [Effect("boost", "naked bonus", 0.2), Effect("change", "valuation", +25), Effect("special", "naked", 1)], archetype="The Player", base_description = __("She prefers to do everything in the nude.")),
 
                 # Trait King originals
 
-                Trait("Ferocious", verb="be", effects=[Effect("change", "all sex skills", 5, scales_with="rank"), Effect("boost", "constitution", 0.25)], archetype="The Escort", base_description = __("She turns into an wild beast in the bedroom, filled with primal sexual energy.")),
+                Trait(_("Ferocious"), verb="be", effects=[Effect("change", "all sex skills", 5, scales_with="rank"), Effect("boost", "constitution", 0.25)], archetype="The Escort", base_description = __("She turns into an wild beast in the bedroom, filled with primal sexual energy.")),
 
-                Trait("Empyreal", verb = "be", effects=[Effect("special", "immune", 1), Effect("resist", "hurt", 3)], base_description = __("She is under the effects of a powerful spell that makes her immune to physical violence.")),
+                Trait(_("Empyreal"), verb = "be", effects=[Effect("special", "immune", 1), Effect("resist", "hurt", 3)], base_description = __("She is under the effects of a powerful spell that makes her immune to physical violence.")),
 
-                Trait("Nurse", verb = "be a", effects=[Effect("change", "heal", 1, chance=0.25, scope="brothel"), Effect("increase satisfaction", "masseuse", 1)], base_description = __("She has some experience as a medical specialist.")),
+                Trait(_("Nurse"), verb = "be a", effects=[Effect("change", "heal", 1, chance=0.25, scope="brothel"), Effect("increase satisfaction", "masseuse", 1)], base_description = __("She has some experience as a medical specialist.")),
 
-                Trait("Porter", verb = "be a", effects=[Effect("boost", "city rewards", 0.05, scales_with = "rank", scope="brothel"), Effect("boost", "resource extraction", 0.25, scope="brothel")], base_description = __("She carries more baggage than any girl you know.")),
+                Trait(_("Porter"), verb = "be a", effects=[Effect("boost", "city rewards", 0.05, scales_with = "rank", scope="brothel"), Effect("boost", "resource extraction", 0.25, scope="brothel")], base_description = __("She carries more baggage than any girl you know.")),
 
-                Trait("Mentor", verb = "be a", effects=[Effect("special", "skill catch up", 1), Effect("change", "making friends", 1)], base_description = __("She gets along famously with other girls.")),
+                Trait(_("Mentor"), verb = "be a", effects=[Effect("special", "skill catch up", 1), Effect("change", "making friends", 1)], base_description = __("She gets along famously with other girls.")),
 
-                Trait("Hustler", verb = "be a", effects=[Effect("special", "workwhore", 1), Effect("boost", "service preference increase", 0.5), Effect("special", "deep throat", 1), Effect("personality", "schemer")], base_description = __("She doesn't mind earning some extra cash on the side through special services.")),
+                Trait(_("Hustler"), verb = "be a", effects=[Effect("special", "workwhore", 1), Effect("boost", "service preference increase", 0.5), Effect("special", "deep throat", 1), Effect("personality", "schemer")], base_description = __("She doesn't mind earning some extra cash on the side through special services.")),
 
-                Trait("Prodigy", verb = "be a", effects=[Effect("change", "valuation", +20, scales_with = "rank")], base_description = __("She has great potential.")),
+                Trait(_("Prodigy"), verb = "be a", effects=[Effect("change", "valuation", +20, scales_with = "rank")], base_description = __("She has great potential.")),
         ]
 
         traitking_gold_b = [
 
                 # Vanilla reworked
 
-                Trait("Skilled tongue", verb="have a", effects=[Effect("increase satisfaction", "service", 1), Effect("increase satisfaction", "bisexual", 1)], archetype="The Fox", base_description = __("She is exceptionally skilled at oral sex acts.")),
-                Trait("Always wet", verb="be", effects=[Effect("increase satisfaction", "group", 1), Effect("increase satisfaction", "sex", 1)], archetype="The Escort", base_description = __("She is always ready to have sex. No foreplay required.")),
-                Trait("Tight ass", verb="have a", eff1=Effect("increase satisfaction", "anal", 1), eff2=Effect("increase satisfaction", "fetish", 1), base_description = __("Her rectum is nice and tight.")),
+                Trait(_("Skilled tongue"), verb="have a", effects=[Effect("increase satisfaction", "service", 1), Effect("increase satisfaction", "bisexual", 1)], archetype="The Fox", base_description = __("She is exceptionally skilled at oral sex acts.")),
+                Trait(_("Always wet"), verb="be", effects=[Effect("increase satisfaction", "group", 1), Effect("increase satisfaction", "sex", 1)], archetype="The Escort", base_description = __("She is always ready to have sex. No foreplay required.")),
+                Trait(_("Tight ass"), verb="have a", eff1=Effect("increase satisfaction", "anal", 1), eff2=Effect("increase satisfaction", "fetish", 1), base_description = __("Her rectum is nice and tight.")),
 
-                Trait("Country girl", verb="be a", eff1=Effect("special", "all farm weaknesses", 1), eff2=Effect("boost", "farm preference increase", 1.0), eff3=Effect("change", "valuation", -50), archetype="The Maid", base_description = __("She loves working with animals. Not the human kind.")),
+                Trait(_("Country girl"), verb="be a", eff1=Effect("special", "all farm weaknesses", 1), eff2=Effect("boost", "farm preference increase", 1.0), eff3=Effect("change", "valuation", -50), archetype="The Maid", base_description = __("She loves working with animals. Not the human kind.")),
 
-                Trait("Vicious", verb="be", effects=[Effect("change", "sex", 20), Effect("change", "anal", 20), Effect("change", "fetish", 20), Effect("personality", "bimbo")], archetype="The Escort", base_description = __("She leads a depraved life filled with debauchery.")),
+                Trait(_("Vicious"), verb="be", effects=[Effect("change", "sex", 20), Effect("change", "anal", 20), Effect("change", "fetish", 20), Effect("personality", "bimbo")], archetype="The Escort", base_description = __("She leads a depraved life filled with debauchery.")),
 
                 # Trait King originals
 
-                Trait("Nymphomaniac", verb = "be a", effects=[Effect("boost", "libido gains", 0.5), Effect("change", "sex", 25), Effect("change", "sex act requirements", -25), Effect("change", "whore obedience target", -25)], archetype="The Slut", base_description = __("She posesses an uncontrollable sexual desire.")),
+                Trait(_("Nymphomaniac"), verb = "be a", effects=[Effect("boost", "libido gains", 0.5), Effect("change", "sex", 25), Effect("change", "sex act requirements", -25), Effect("change", "whore obedience target", -25)], archetype="The Slut", base_description = __("She posesses an uncontrollable sexual desire.")),
 
-                Trait("Enchanting", verb="be", effects=[Effect("increase satisfaction", "geisha", 1), Effect("gain", "reputation", 25), Effect("change", "refinement", 10), Effect("change", "valuation", +50)], archetype="The Fox", base_description = __("She carries a captivating aura with her.")),
-                Trait("Eye-catching", verb = "be", effects=[Effect("increase satisfaction", "dancer", 1), Effect("change", "advertising", 1, scope="brothel", scales_with = "rank")], archetype="The Player", base_description = __("She has an incredible body that demands your attention.")),
+                Trait(_("Enchanting"), verb="be", effects=[Effect("increase satisfaction", "geisha", 1), Effect("gain", "reputation", 25), Effect("change", "refinement", 10), Effect("change", "valuation", +50)], archetype="The Fox", base_description = __("She carries a captivating aura with her.")),
+                Trait(_("Eye-catching"), verb = "be", effects=[Effect("increase satisfaction", "dancer", 1), Effect("change", "advertising", 1, scope="brothel", scales_with = "rank")], archetype="The Player", base_description = __("She has an incredible body that demands your attention.")),
 
-                Trait("Insatiable", verb = "be", effects=[Effect("change", "libido", 25), Effect("increase satisfaction", "group", 1), Effect("increase satisfaction", "bisexual", 1)], archetype="The Slut", base_description = __("She enjoys the thrill of satisfying multiple people at once.")),
+                Trait(_("Insatiable"), verb = "be", effects=[Effect("change", "libido", 25), Effect("increase satisfaction", "group", 1), Effect("increase satisfaction", "bisexual", 1)], archetype="The Slut", base_description = __("She enjoys the thrill of satisfying multiple people at once.")),
                 
                 # ? - Kemono (fairy-folk with animal characteristics)
         ]
@@ -518,27 +518,27 @@ label traitking_init:
 
                 # Vanilla reworked
 
-                Trait("Playful", verb="be", effects=[Effect("boost", "service preference increase", 0.25), Effect("boost", "bisexual preference increase", 0.25), Effect("boost", "service jp gains", 1.0), Effect("boost", "waitress jp gains", 1.0)], archetype="The Player", base_description = __("She likes to have fun and play around.")),
-                Trait("Wild", verb="be", effects=[Effect("boost", "sex preference increase", 0.05, scales_with = "rank"), Effect("boost", "group preference increase", 0.05, scales_with = "rank"), Effect("change", "defense", 1)], archetype="The Slut", base_description = __("She is an adventurous type.")),
-                Trait("Dirty mind", verb="have a", effects=[Effect("boost", "anal preference increase", 0.05, scales_with = "rank"), Effect("boost", "fetish preference increase", 0.05, scales_with = "rank")], archetype="The Fox", base_description = __("She gets a kick out of crossing boundaries and performing taboo sex acts.")),
+                Trait(_("Playful"), verb="be", effects=[Effect("boost", "service preference increase", 0.25), Effect("boost", "bisexual preference increase", 0.25), Effect("boost", "service jp gains", 1.0), Effect("boost", "waitress jp gains", 1.0)], archetype="The Player", base_description = __("She likes to have fun and play around.")),
+                Trait(_("Wild"), verb="be", effects=[Effect("boost", "sex preference increase", 0.05, scales_with = "rank"), Effect("boost", "group preference increase", 0.05, scales_with = "rank"), Effect("change", "defense", 1)], archetype="The Slut", base_description = __("She is an adventurous type.")),
+                Trait(_("Dirty mind"), verb="have a", effects=[Effect("boost", "anal preference increase", 0.05, scales_with = "rank"), Effect("boost", "fetish preference increase", 0.05, scales_with = "rank")], archetype="The Fox", base_description = __("She gets a kick out of crossing boundaries and performing taboo sex acts.")),
 
-                Trait("Loose", verb="be", effects=[Effect("change", "train obedience target", -40), Effect("change", "valuation", -40), Effect("personality", "pet")], archetype="The Player", base_description = __("She does not mind trying out new things with her master, making her very easy to train.")),
-                Trait("Dedicated", verb="be", effects=[Effect("change", "job obedience target", -25), Effect("change", "valuation", -25), Effect("personality", "loyal")], archetype="The Maid", base_description = __("She likes to make herself useful.")),
+                Trait(_("Loose"), verb="be", effects=[Effect("change", "train obedience target", -40), Effect("change", "valuation", -40), Effect("personality", "pet")], archetype="The Player", base_description = __("She does not mind trying out new things with her master, making her very easy to train.")),
+                Trait(_("Dedicated"), verb="be", effects=[Effect("change", "job obedience target", -25), Effect("change", "valuation", -25), Effect("personality", "loyal")], archetype="The Maid", base_description = __("She likes to make herself useful.")),
                 
                 ### NEW IN 0.3
-                Trait("Conduct", verb = "be a", eff1 = Effect("change", "mojo cost", -1), archetype="The Fox"), #? Subject to change
+                Trait(_("Conduct"), verb = "be a", eff1 = Effect("change", "mojo cost", -1), archetype="The Fox"), #? Subject to change
                 
                 # Trait King originals
 
-                Trait("Angelic", verb = "be", effects=[Effect("boost", "reputation gains", 0.5), Effect("special", "effect chance", 0.25), Effect("change", "valuation", +60)], opposite = "Godless", archetype="The Fox", base_description = __("She has a saint-like aura about her.")),
-                Trait("Irresistable", verb = "be", effects=[Effect("change", "charm", 10, scales_with = "rank"), Effect("boost", "reputation gains", 0.1, scales_with = "rank"), Effect("personality", "superficial")], archetype="The Fox", base_description = __("She has an incredible allure that fills hearts with desire.")),
+                Trait(_("Angelic"), verb = "be", effects=[Effect("boost", "reputation gains", 0.5), Effect("special", "effect chance", 0.25), Effect("change", "valuation", +60)], opposite = "Godless", archetype="The Fox", base_description = __("She has a saint-like aura about her.")),
+                Trait(_("Irresistable"), verb = "be", effects=[Effect("change", "charm", 10, scales_with = "rank"), Effect("boost", "reputation gains", 0.1, scales_with = "rank"), Effect("personality", "superficial")], archetype="The Fox", base_description = __("She has an incredible allure that fills hearts with desire.")),
 
-                Trait("Erudite", verb = "be", effects=[Effect("change", "refinement", 30), Effect("boost", "class results", 0.5), Effect("boost", "xp gains", 0.5)], archetype="The Courtesan", base_description = __("She is cultured and well-educated.")),
+                Trait(_("Erudite"), verb = "be", effects=[Effect("change", "refinement", 30), Effect("boost", "class results", 0.5), Effect("boost", "xp gains", 0.5)], archetype="The Courtesan", base_description = __("She is cultured and well-educated.")),
 
-                Trait("Caretaker", verb = "be a", effects=[Effect("change", "maintenance", 1, scope="brothel", scales_with = "rank"), Effect("increase satisfaction", "waitress", 1)], archetype="The Maid", base_description = __("She has the qualities of an ideal maid.")),
+                Trait(_("Caretaker"), verb = "be a", effects=[Effect("change", "maintenance", 1, scope="brothel", scales_with = "rank"), Effect("increase satisfaction", "waitress", 1)], archetype="The Maid", base_description = __("She has the qualities of an ideal maid.")),
 
-                Trait("Anal slut", verb="be an", effects=[Effect("increase satisfaction", "anal", 1), Effect("boost", "anal preference increase", 0.5), Effect("boost", "anal jp gains", 1.0)], archetype="The Slut", base_description = __("She prefers using the back door.")),
-                Trait("Uninhibited", verb="be", effects=[Effect("increase satisfaction", "fetish", 1), Effect("boost", "fetish preference increase", 0.5)], archetype="The Slut", base_description = __("She knows no boundaries and outperforms other girls during extreme sex acts.")),
+                Trait(_("Anal slut"), verb="be an", effects=[Effect("increase satisfaction", "anal", 1), Effect("boost", "anal preference increase", 0.5), Effect("boost", "anal jp gains", 1.0)], archetype="The Slut", base_description = __("She prefers using the back door.")),
+                Trait(_("Uninhibited"), verb="be", effects=[Effect("increase satisfaction", "fetish", 1), Effect("boost", "fetish preference increase", 0.5)], archetype="The Slut", base_description = __("She knows no boundaries and outperforms other girls during extreme sex acts.")),
         ]
 
         traitking_gold_special = [
@@ -547,7 +547,7 @@ label traitking_init:
 
                 # Trait King originals
 
-                Trait("In demand", verb = "be", eff1 = Effect("change", "valuation", +200), base_description = __("She's a hot commodity and would fetch a pretty price on the slave market."))
+                Trait(_("In demand"), verb = "be", eff1 = Effect("change", "valuation", +200), base_description = __("She's a hot commodity and would fetch a pretty price on the slave market."))
 
         ]
         
@@ -562,46 +562,46 @@ label traitking_init:
 
                 # Trait King originals
 
-                Trait("Tight pussy", verb="have a", effects = [Effect("increase satisfaction", "sex", 1, chance=0.75), Effect("change", "sensitivity", 5, scales_with = "rank")], archetype="The Slut", base_description = __("She has a young, tight pussy that feels absolutely amazing.")),
+                Trait(_("Tight pussy"), verb="have a", effects = [Effect("increase satisfaction", "sex", 1, chance=0.75), Effect("change", "sensitivity", 5, scales_with = "rank")], archetype="The Slut", base_description = __("She has a young, tight pussy that feels absolutely amazing.")),
 
-                Trait("Submissive", verb="be", effects = [Effect("increase satisfaction", "fetish", 1, chance = 0.5), Effect("change", "obedience", 30),  Effect("personality", "masochist"), Effect("change", "valuation", +20)], archetype="The Slut", base_description = __("She likes to be dominated.")),
-                Trait("Good Kisser", verb="be a", effects = [Effect("change", "libido", 20), Effect("increase satisfaction", "bisexual", 1, chance = 0.75)], archetype="The Escort", base_description = __("She is a great kisser.")),
-                Trait("Bisexual", verb="be", effects = [Effect("increase satisfaction", "bisexual", 1), Effect("boost", "bisexual chance", 0.25), Effect("change", "valuation", +25)], base_description = __("She likes to pleasure the ladies just as much as the men.")),
-                Trait("Orgy girl", verb="be an", effects = [Effect("increase satisfaction", "group", 1), Effect("boost", "group chance", 0.25), Effect("change", "valuation", +30)], archetype="The Slut", base_description = __("She would like to pleasure you and all of your friends.")),
+                Trait(_("Submissive"), verb="be", effects = [Effect("increase satisfaction", "fetish", 1, chance = 0.5), Effect("change", "obedience", 30),  Effect("personality", "masochist"), Effect("change", "valuation", +20)], archetype="The Slut", base_description = __("She likes to be dominated.")),
+                Trait(_("Good Kisser"), verb="be a", effects = [Effect("change", "libido", 20), Effect("increase satisfaction", "bisexual", 1, chance = 0.75)], archetype="The Escort", base_description = __("She is a great kisser.")),
+                Trait(_("Bisexual"), verb="be", effects = [Effect("increase satisfaction", "bisexual", 1), Effect("boost", "bisexual chance", 0.25), Effect("change", "valuation", +25)], base_description = __("She likes to pleasure the ladies just as much as the men.")),
+                Trait(_("Orgy girl"), verb="be an", effects = [Effect("increase satisfaction", "group", 1), Effect("boost", "group chance", 0.25), Effect("change", "valuation", +30)], archetype="The Slut", base_description = __("She would like to pleasure you and all of your friends.")),
 
-                Trait("Happy-Go-Lucky", verb="be", effects = [Effect("change", "mood", 4), Effect("personality", "sweet")], archetype="The Bride", base_description = __("Nothing ever gets her down")),
-                Trait("Trendy", verb="be", effects = [Effect("boost", "dress", 0.1), Effect("boost", "accessory", 0.1), Effect("boost", "necklace", 0.1), Effect("boost", "ring", 0.1)], archetype="The Escort", base_description = __("She dresses fashionably.")),
-                Trait("Passionate", verb="be", effects = [Effect("reroll", "job critical failure", 1, chance=0.5)], archetype="The Maid", base_description = __("She takes pride in her work and sets a high bar for herself.")),
-                Trait("Persuasive", verb="be", effects = [Effect("boost", "customer penalties", -0.5)], archetype="The Bride", base_description = __("She knows how to get her way.")),
+                Trait(_("Happy-Go-Lucky"), verb="be", effects = [Effect("change", "mood", 4), Effect("personality", "sweet")], archetype="The Bride", base_description = __("Nothing ever gets her down")),
+                Trait(_("Trendy"), verb="be", effects = [Effect("boost", "dress", 0.1), Effect("boost", "accessory", 0.1), Effect("boost", "necklace", 0.1), Effect("boost", "ring", 0.1)], archetype="The Escort", base_description = __("She dresses fashionably.")),
+                Trait(_("Passionate"), verb="be", effects = [Effect("reroll", "job critical failure", 1, chance=0.5)], archetype="The Maid", base_description = __("She takes pride in her work and sets a high bar for herself.")),
+                Trait(_("Persuasive"), verb="be", effects = [Effect("boost", "customer penalties", -0.5)], archetype="The Bride", base_description = __("She knows how to get her way.")),
         ]
 
         traitking_pos_a = [
 
                 # Vanilla reworked
 
-                Trait("Athletic", verb = "be", eff1 = Effect("boost", "constitution gains", 1.0), eff2 = Effect("increase satisfaction", "dancer", 1, chance=0.5), eff3=Effect("change", "valuation", +10), archetype="The Escort", base_description = __("She has an athletic body and is very healthy.")),
-                Trait("Sensitive", verb = "be", eff1 = Effect("boost", "sensitivity gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("increase satisfaction", "geisha", 1, chance=0.5), archetype="The Bride", base_description = __("She has a great capacity for empathy.")),
-                Trait("Deft", verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.25), eff2 = Effect("boost", "masseuse jp gains", 0.5), eff3 = Effect("increase satisfaction", "masseuse", 1, chance=0.5), archetype="The Maid", base_description = __("She has dexterous hands.")),
+                Trait(_("Athletic"), verb = "be", eff1 = Effect("boost", "constitution gains", 1.0), eff2 = Effect("increase satisfaction", "dancer", 1, chance=0.5), eff3=Effect("change", "valuation", +10), archetype="The Escort", base_description = __("She has an athletic body and is very healthy.")),
+                Trait(_("Sensitive"), verb = "be", eff1 = Effect("boost", "sensitivity gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("increase satisfaction", "geisha", 1, chance=0.5), archetype="The Bride", base_description = __("She has a great capacity for empathy.")),
+                Trait(_("Deft"), verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.25), eff2 = Effect("boost", "masseuse jp gains", 0.5), eff3 = Effect("increase satisfaction", "masseuse", 1, chance=0.5), archetype="The Maid", base_description = __("She has dexterous hands.")),
 
-                Trait("Energetic", verb = "be", eff1 = Effect("boost", "max energy", 0.25), eff2=Effect("change", "valuation", +10), archetype="The Player", base_description = __("She is always bursting with energy.")),
+                Trait(_("Energetic"), verb = "be", eff1 = Effect("boost", "max energy", 0.25), eff2=Effect("change", "valuation", +10), archetype="The Player", base_description = __("She is always bursting with energy.")),
 
-                Trait("Strong", verb = "be", eff1 = Effect("change", "defense", 2), eff2=Effect("change", "security", 2, scope = "brothel"), archetype="The Bride", base_description = __("She could probably beat you in an armwrestling contest.")),
+                Trait(_("Strong"), verb = "be", eff1 = Effect("change", "defense", 2), eff2=Effect("change", "security", 2, scope = "brothel"), archetype="The Bride", base_description = __("She could probably beat you in an armwrestling contest.")),
 
-                Trait("Sensual", verb="be", effects = [Effect("change", "beauty", 10), Effect("change", "sensitivity", 10), Effect("change", "customers", 1, dice=False, scope="brothel", scales_with="rank"), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], archetype="The Model", base_description = __("She likes to cuddle.")),
-                Trait("Kinky", verb = "be", effects = [Effect("increase satisfaction", "fetish", 1), Effect("increase satisfaction", "group", 1), Effect("personality", "masochist"), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], base_description = __("She won't mind if you bring out the whip."), archetype="The Slut"),
+                Trait(_("Sensual"), verb="be", effects = [Effect("change", "beauty", 10), Effect("change", "sensitivity", 10), Effect("change", "customers", 1, dice=False, scope="brothel", scales_with="rank"), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], archetype="The Model", base_description = __("She likes to cuddle.")),
+                Trait(_("Kinky"), verb = "be", effects = [Effect("increase satisfaction", "fetish", 1), Effect("increase satisfaction", "group", 1), Effect("personality", "masochist"), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], base_description = __("She won't mind if you bring out the whip."), archetype="The Slut"),
 
                 # Trait King originals
 
-                Trait("Groomed", verb="be", effects = [Effect("change", "refinement", 5, scales_with = "rank"), Effect("change", "all main skills", 10), Effect("gain", "reputation", 10), Effect("change", "valuation", +40)], opposite = "Uncouth", archetype="The Courtesan", base_description = __("She has been educated in mannerisms befitting a Lady of the Court.")),
+                Trait(_("Groomed"), verb="be", effects = [Effect("change", "refinement", 5, scales_with = "rank"), Effect("change", "all main skills", 10), Effect("gain", "reputation", 10), Effect("change", "valuation", +40)], opposite = "Uncouth", archetype="The Courtesan", base_description = __("She has been educated in mannerisms befitting a Lady of the Court.")),
 
-                Trait("Flasher", verb="be a", effects = [Effect("special", "flasher", 1), Effect("increase satisfaction", "waitress", 1, chance=0.5), Effect("boost", "reputation gains", 0.25)], archetype="The Player", base_description = __("She may lift her top up when you least expect it, so don't blink.")),
-                Trait("Contortionist", verb="be a", effects = [Effect("increase satisfaction", "dancer", 1, chance=0.5), Effect("change", "advertising", 1, scope = "brothel"), Effect("change", "valuation", +20)], archetype="The Player", base_description = __("Her body is flexible enough to build a circus act around it.")),
-                Trait("Tantric masseuse", verb="be a", effects = [Effect("increase satisfaction", "masseuse", 1,chance=0.5), Effect("change", "advertising", 1, scope = "brothel")], archetype="The Model", base_description = __("She can unlock your latent sexual energy through massages.")),
-                Trait("Multilingual", verb="be", effects = [Effect("increase satisfaction", "geisha", 1, chance=0.5), Effect("change", "advertising", 1, scope = "brothel")], archetype="The Courtesan", base_description = __("She speaks several languages.")),
+                Trait(_("Flasher"), verb="be a", effects = [Effect("special", "flasher", 1), Effect("increase satisfaction", "waitress", 1, chance=0.5), Effect("boost", "reputation gains", 0.25)], archetype="The Player", base_description = __("She may lift her top up when you least expect it, so don't blink.")),
+                Trait(_("Contortionist"), verb="be a", effects = [Effect("increase satisfaction", "dancer", 1, chance=0.5), Effect("change", "advertising", 1, scope = "brothel"), Effect("change", "valuation", +20)], archetype="The Player", base_description = __("Her body is flexible enough to build a circus act around it.")),
+                Trait(_("Tantric masseuse"), verb="be a", effects = [Effect("increase satisfaction", "masseuse", 1,chance=0.5), Effect("change", "advertising", 1, scope = "brothel")], archetype="The Model", base_description = __("She can unlock your latent sexual energy through massages.")),
+                Trait(_("Multilingual"), verb="be", effects = [Effect("increase satisfaction", "geisha", 1, chance=0.5), Effect("change", "advertising", 1, scope = "brothel")], archetype="The Courtesan", base_description = __("She speaks several languages.")),
 
-                Trait("Diligent", verb = "be", effects=[Effect("boost", "max energy", 0.1), Effect("boost", "energy", 0.1), Effect("boost", "customer penalties", -0.25)], archetype="The Maid", base_description = __("She approaches her work with great care.")),  
+                Trait(_("Diligent"), verb = "be", effects=[Effect("boost", "max energy", 0.1), Effect("boost", "energy", 0.1), Effect("boost", "customer penalties", -0.25)], archetype="The Maid", base_description = __("She approaches her work with great care.")),  
 
-                Trait("Fake Orgasms", verb="have", effects = [Effect("increase satisfaction", "sex", 1, chance=0.5), Effect("change", "sex", 20), Effect("change", "valuation", -15, scales_with = "rank")], archetype="The Escort", base_description = __("Her moans make it seem as if you're penetrating her soul. Most people like it, but not everyone is convinced.")),
+                Trait(_("Fake Orgasms"), verb="have", effects = [Effect("increase satisfaction", "sex", 1, chance=0.5), Effect("change", "sex", 20), Effect("change", "valuation", -15, scales_with = "rank")], archetype="The Escort", base_description = __("Her moans make it seem as if you're penetrating her soul. Most people like it, but not everyone is convinced.")),
 
 
         ]
@@ -610,45 +610,45 @@ label traitking_init:
 
                 # Vanilla reworked
 
-                Trait("Cute", verb = "be", eff1 = Effect("change", "beauty", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Player", base_description = __("She's just so damn cute.")),
-                Trait("Nice boobs", verb = "have", eff1 = Effect("change", "body", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Escort", base_description = __("She is blessed with a great set of tits.")),
-                Trait("Feminine", verb = "be", eff1 = Effect("change", "refinement", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Model", base_description = __("She is characteristically female.")),
-                Trait("Horny", verb = "be", eff1 = Effect("change", "libido", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), archetype="The Slut", base_description = __("She easily gets turned on.")),
+                Trait(_("Cute"), verb = "be", eff1 = Effect("change", "beauty", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Player", base_description = __("She's just so damn cute.")),
+                Trait(_("Nice boobs"), verb = "have", eff1 = Effect("change", "body", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Escort", base_description = __("She is blessed with a great set of tits.")),
+                Trait(_("Feminine"), verb = "be", eff1 = Effect("change", "refinement", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 5), archetype="The Model", base_description = __("She is characteristically female.")),
+                Trait(_("Horny"), verb = "be", eff1 = Effect("change", "libido", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), archetype="The Slut", base_description = __("She easily gets turned on.")),
 
-                Trait("Juicy ass", verb = "have a", effects = [Effect("increase satisfaction", "anal", 1, chance=0.25)], archetype="The Model", base_description = __("Playing with her ass is one of life's greatest pleasures.")),
+                Trait(_("Juicy ass"), verb = "have a", effects = [Effect("increase satisfaction", "anal", 1, chance=0.25)], archetype="The Model", base_description = __("Playing with her ass is one of life's greatest pleasures.")),
 
-                Trait("Exotic", verb = "be", eff1 = Effect("change", "charm", 20), eff2 = Effect("gain", "reputation", 10), eff3 = Effect("change", "valuation", +100), archetype="The Fox", base_description = __("She does not look like a Xeros native.")),
+                Trait(_("Exotic"), verb = "be", eff1 = Effect("change", "charm", 20), eff2 = Effect("gain", "reputation", 10), eff3 = Effect("change", "valuation", +100), archetype="The Fox", base_description = __("She does not look like a Xeros native.")),
 
-                Trait("Pretty eyes", verb = "have", eff1 = Effect("change", "beauty", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20), archetype="The Model", base_description = __("She has eyes that twinkle like the stars above Karkyr.")),
-                Trait("Firm tits", verb = "have", eff1 = Effect("change", "body", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20), archetype="The Player", base_description = __("She has unusually firm tits. Some say that's because her tits have been magically enhanced to deter evil. Her boobs are a force for good.")),
-                Trait("Graceful", verb = "be", eff1 = Effect("change", "refinement", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +30), archetype="The Courtesan", base_description = __("She moves with grace, like a princess.")),
-                Trait("Seductive", verb = "be", effects=[Effect("change", "charm", 5, scales_with = "rank"), Effect("change", "valuation", +10, scales_with = "rank"), Effect("personality", "superficial")], archetype="The Fox", base_description = __("She likes to take the initiative.")),
+                Trait(_("Pretty eyes"), verb = "have", eff1 = Effect("change", "beauty", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20), archetype="The Model", base_description = __("She has eyes that twinkle like the stars above Karkyr.")),
+                Trait(_("Firm tits"), verb = "have", eff1 = Effect("change", "body", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20), archetype="The Player", base_description = __("She has unusually firm tits. Some say that's because her tits have been magically enhanced to deter evil. Her boobs are a force for good.")),
+                Trait(_("Graceful"), verb = "be", eff1 = Effect("change", "refinement", 5, scales_with = "rank"), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +30), archetype="The Courtesan", base_description = __("She moves with grace, like a princess.")),
+                Trait(_("Seductive"), verb = "be", effects=[Effect("change", "charm", 5, scales_with = "rank"), Effect("change", "valuation", +10, scales_with = "rank"), Effect("personality", "superficial")], archetype="The Fox", base_description = __("She likes to take the initiative.")),
 
-                Trait("Beautiful", verb = "be", eff1 = Effect("boost", "beauty gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20, scales_with = "rank"), archetype="The Model", base_description = __("She is gorgeous to look at.")),
+                Trait(_("Beautiful"), verb = "be", eff1 = Effect("boost", "beauty gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +20, scales_with = "rank"), archetype="The Model", base_description = __("She is gorgeous to look at.")),
 
-                Trait("Slutty", verb="be", effects = [Effect("change", "libido", 20), Effect("boost", "reputation gains", 0.25), Effect("change", "valuation", +5, scales_with = "rank")], archetype="The Slut", base_description = __("She likes to sleep around.")),
+                Trait(_("Slutty"), verb="be", effects = [Effect("change", "libido", 20), Effect("boost", "reputation gains", 0.25), Effect("change", "valuation", +5, scales_with = "rank")], archetype="The Slut", base_description = __("She likes to sleep around.")),
 
-                Trait("Lucky", verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = __("Her life is filled with good surprises.")), 
+                Trait(_("Lucky"), verb = "be", eff1 = Effect("special", "lucky", 1), archetype="The Fox", base_description = __("Her life is filled with good surprises.")), 
 
-                Trait("Brisk", verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.5), eff2 = Effect("boost", "dancer jp gains", 0.25), eff3 = Effect("boost", "tip", 0.05), archetype="The Player", base_description = __("She's quick and lively.")),
+                Trait(_("Brisk"), verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.5), eff2 = Effect("boost", "dancer jp gains", 0.25), eff3 = Effect("boost", "tip", 0.05), archetype="The Player", base_description = __("She's quick and lively.")),
 
-                Trait("Rowdy", verb = "be", effects = [Effect("boost", "waitress jp gains", 0.5), Effect("increase satisfaction", "waitress", 1, chance=0.5), Effect("increase satisfaction", "geisha", -2)], opposite=['Modest', 'Unhurried'], archetype="The Player", base_description = __("She likes it when things are a bit chaotic.")),
-                Trait("Powerful", verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("increase satisfaction", "dancer", 1, chance=0.5), Effect("increase satisfaction", "masseuse", -2), Effect("change", "defense", 1)], opposite=['Modest', 'Unhurried'], archetype="The Bride", base_description = __("She tends to underestimate her own strength.")),
-                Trait("Unhurried", verb = "be", effects = [Effect("boost", "masseuse jp gains", 0.5), Effect("increase satisfaction", "masseuse", 1, chance=0.5), Effect("increase satisfaction", "waitress", -2)], opposite=['Powerful', 'Rowdy'], archetype="The Escort", base_description = __("She can give you all of her attention.")),
-                Trait("Modest", verb = "be", effects = [Effect("boost", "geisha jp gains", 0.5), Effect("increase satisfaction", "geisha", 1, chance=0.5), Effect("increase satisfaction", "dancer", -2), Effect("personality", "meek")], opposite=['Rowdy', 'Powerful'], archetype="The Fox", base_description = __("An air of decency surrounds her.")),
+                Trait(_("Rowdy"), verb = "be", effects = [Effect("boost", "waitress jp gains", 0.5), Effect("increase satisfaction", "waitress", 1, chance=0.5), Effect("increase satisfaction", "geisha", -2)], opposite=['Modest', 'Unhurried'], archetype="The Player", base_description = __("She likes it when things are a bit chaotic.")),
+                Trait(_("Powerful"), verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("increase satisfaction", "dancer", 1, chance=0.5), Effect("increase satisfaction", "masseuse", -2), Effect("change", "defense", 1)], opposite=['Modest', 'Unhurried'], archetype="The Bride", base_description = __("She tends to underestimate her own strength.")),
+                Trait(_("Unhurried"), verb = "be", effects = [Effect("boost", "masseuse jp gains", 0.5), Effect("increase satisfaction", "masseuse", 1, chance=0.5), Effect("increase satisfaction", "waitress", -2)], opposite=['Powerful', 'Rowdy'], archetype="The Escort", base_description = __("She can give you all of her attention.")),
+                Trait(_("Modest"), verb = "be", effects = [Effect("boost", "geisha jp gains", 0.5), Effect("increase satisfaction", "geisha", 1, chance=0.5), Effect("increase satisfaction", "dancer", -2), Effect("personality", "meek")], opposite=['Rowdy', 'Powerful'], archetype="The Fox", base_description = __("An air of decency surrounds her.")),
 
-                Trait("Pervert", verb = "be a", effects = [Effect("change", "sex act requirements", -30), Effect("personality", "pervert"), Effect("change", "valuation", +20)], archetype="The Slut", base_description = __("She can't stop thinking about sex.")),
+                Trait(_("Pervert"), verb = "be a", effects = [Effect("change", "sex act requirements", -30), Effect("personality", "pervert"), Effect("change", "valuation", +20)], archetype="The Slut", base_description = __("She can't stop thinking about sex.")),
 
                 # Trait King originals
 
-                Trait("Sexually curious", verb = "be", effects = [Effect("boost", "service jp gains", 0.5), Effect("boost", "sex jp gains", 0.5), Effect("change", "all sex skills", 10), Effect("change", "valuation", +40)], archetype="The Escort", base_description = __("She likes to gain more experiences in the bedroom.")),
+                Trait(_("Sexually curious"), verb = "be", effects = [Effect("boost", "service jp gains", 0.5), Effect("boost", "sex jp gains", 0.5), Effect("change", "all sex skills", 10), Effect("change", "valuation", +40)], archetype="The Escort", base_description = __("She likes to gain more experiences in the bedroom.")),
 
-                Trait("Dedicated", verb="be", eff1=Effect("change", "job obedience target", -50), eff2=Effect("change", "valuation", +10, scales_with = "rank"), archetype="The Maid", base_description = __("She likes to make herself useful.")),
-                Trait("Open-minded", verb = "be", effects = [Effect("change", "sex act requirements", -50), Effect("boost", "anal jp gains", 0.5), Effect("boost", "fetish jp gains", 0.5)], archetype="The Escort", base_description = __("She is not quick to judge others and open to new experiences.")),
+                Trait(_("Dedicated"), verb="be", eff1=Effect("change", "job obedience target", -50), eff2=Effect("change", "valuation", +10, scales_with = "rank"), archetype="The Maid", base_description = __("She likes to make herself useful.")),
+                Trait(_("Open-minded"), verb = "be", effects = [Effect("change", "sex act requirements", -50), Effect("boost", "anal jp gains", 0.5), Effect("boost", "fetish jp gains", 0.5)], archetype="The Escort", base_description = __("She is not quick to judge others and open to new experiences.")),
 
-                Trait("Fast Orgasms", verb = "be", effects = [Effect("boost", "libido gains", 1.0), Effect("increase satisfaction", "sex", 1), Effect("increase satisfaction", "group", 1), Effect("boost", "tiredness", 0.2)], archetype="The Slut", base_description = __("She reaches climax very easily.")),
+                Trait(_("Fast Orgasms"), verb = "be", effects = [Effect("boost", "libido gains", 1.0), Effect("increase satisfaction", "sex", 1), Effect("increase satisfaction", "group", 1), Effect("boost", "tiredness", 0.2)], archetype="The Slut", base_description = __("She reaches climax very easily.")),
 
-                Trait("Housekeeper", verb="be a", effects = [Effect("change", "obedience", 20), Effect("change", "maintenance", 2, scope="brothel")], archetype="The Maid", base_description = __("She enjoys doing household tasks.")),
+                Trait(_("Housekeeper"), verb="be a", effects = [Effect("change", "obedience", 20), Effect("change", "maintenance", 2, scope="brothel")], archetype="The Maid", base_description = __("She enjoys doing household tasks.")),
 
 
         ]
@@ -657,63 +657,63 @@ label traitking_init:
 
                 # Vanilla reworked
 
-                Trait("Long legs", verb = "have", eff1 = Effect("change", "body", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Model", base_description = __("She has beautiful long legs.")),
-                Trait("Sweet", verb = "be", eff1 = Effect("change", "charm", 20), eff2 = Effect("gain", "reputation", 5), eff3 = Effect("personality", "sweet"), archetype="The Bride", base_description = __("She is just a very nice girl.")),
-                Trait("Polite", verb = "be", eff1 = Effect("change", "refinement", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Courtesan", base_description = __("She has great manners.")),
-                Trait("Resilient", verb = "be", eff1 = Effect("change", "constitution", 20), archetype="The Maid", base_description = __("She seems to be a hardy girl.")),
-                Trait("Delicate", verb = "be", eff1 = Effect("change", "sensitivity", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Bride", base_description = __("She revels in intimate physical contact.")),
-                Trait("Meek", verb = "be", eff1 = Effect("change", "obedience", 20), eff2 = Effect("personality", "meek"), archetype="The Maid", base_description = __("She is a gentle and docile girl.")),
+                Trait(_("Long legs"), verb = "have", eff1 = Effect("change", "body", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Model", base_description = __("She has beautiful long legs.")),
+                Trait(_("Sweet"), verb = "be", eff1 = Effect("change", "charm", 20), eff2 = Effect("gain", "reputation", 5), eff3 = Effect("personality", "sweet"), archetype="The Bride", base_description = __("She is just a very nice girl.")),
+                Trait(_("Polite"), verb = "be", eff1 = Effect("change", "refinement", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Courtesan", base_description = __("She has great manners.")),
+                Trait(_("Resilient"), verb = "be", eff1 = Effect("change", "constitution", 20), archetype="The Maid", base_description = __("She seems to be a hardy girl.")),
+                Trait(_("Delicate"), verb = "be", eff1 = Effect("change", "sensitivity", 20), eff2 = Effect("gain", "reputation", 5), archetype="The Bride", base_description = __("She revels in intimate physical contact.")),
+                Trait(_("Meek"), verb = "be", eff1 = Effect("change", "obedience", 20), eff2 = Effect("personality", "meek"), archetype="The Maid", base_description = __("She is a gentle and docile girl.")),
 
-                Trait("Fit", verb = "be", eff1 = Effect("boost", "body gains", 1.0), eff2 = Effect("boost", "constitution gains", 0.5), eff3=Effect("change", "valuation", +20), archetype="The Player", base_description = __("She is a healthy girl.")),
-                Trait("Charming", verb = "be", eff1 = Effect("boost", "charm gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +10), archetype="The Fox", base_description = __("She is pleasant to talk to.")),
-                Trait("Elegant", verb = "be", eff1 = Effect("boost", "refinement gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +40), archetype="The Courtesan", base_description = __("She moves with grace.")),  
+                Trait(_("Fit"), verb = "be", eff1 = Effect("boost", "body gains", 1.0), eff2 = Effect("boost", "constitution gains", 0.5), eff3=Effect("change", "valuation", +20), archetype="The Player", base_description = __("She is a healthy girl.")),
+                Trait(_("Charming"), verb = "be", eff1 = Effect("boost", "charm gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +10), archetype="The Fox", base_description = __("She is pleasant to talk to.")),
+                Trait(_("Elegant"), verb = "be", eff1 = Effect("boost", "refinement gains", 1.0), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +40), archetype="The Courtesan", base_description = __("She moves with grace.")),  
 
-                Trait("Obedient", verb = "be", eff1 = Effect("boost", "obedience gains", 1.0), eff2=Effect("change", "train obedience target", -20), eff3 = Effect("change", "obedience", 10), archetype="The Maid", base_description = __("She likes following orders.")),
+                Trait(_("Obedient"), verb = "be", eff1 = Effect("boost", "obedience gains", 1.0), eff2=Effect("change", "train obedience target", -20), eff3 = Effect("change", "obedience", 10), archetype="The Maid", base_description = __("She likes following orders.")),
 
-                Trait("Tough", verb = "be", eff1 = Effect("boost", "hurt", -0.5), archetype="The Maid", base_description = __("She recovers from injuries faster than most.")),
+                Trait(_("Tough"), verb = "be", eff1 = Effect("boost", "hurt", -0.5), archetype="The Maid", base_description = __("She recovers from injuries faster than most.")),
 
-                Trait("Sexy", verb = "be", eff1 = Effect("boost", "reputation gains", 0.5), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +40), archetype="The Escort", base_description = __("She is a hot piece of ass.")),
-                Trait("Humble", verb = "be", eff1 = Effect("boost", "upkeep", -0.5), archetype="The Maid", base_description = __("She is not concerned with living in luxury.")),
+                Trait(_("Sexy"), verb = "be", eff1 = Effect("boost", "reputation gains", 0.5), eff2 = Effect("gain", "reputation", 10), eff3=Effect("change", "valuation", +40), archetype="The Escort", base_description = __("She is a hot piece of ass.")),
+                Trait(_("Humble"), verb = "be", eff1 = Effect("boost", "upkeep", -0.5), archetype="The Maid", base_description = __("She is not concerned with living in luxury.")),
 
-                Trait("Sharp", verb = "be", eff1 = Effect("boost", "xp gains", 0.5), eff2 = Effect("personality", "nerd"), archetype="The Fox", base_description = __("She is quick-witted.")),
-                Trait("Loyal", verb = "be", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("change", "obedience", 5, scales_with = "rank"), eff3=Effect("change", "valuation", +20), archetype="The Bride", base_description = __("She is faithful to her master.")),
-                Trait("Brave", verb = "be", eff1 = Effect("boost", "fear", -0.5), eff2 = Effect("change", "security", 1, scope = "brothel"), archetype="The Escort", base_description = __("She does not scare easily.")),
+                Trait(_("Sharp"), verb = "be", eff1 = Effect("boost", "xp gains", 0.5), eff2 = Effect("personality", "nerd"), archetype="The Fox", base_description = __("She is quick-witted.")),
+                Trait(_("Loyal"), verb = "be", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("change", "obedience", 5, scales_with = "rank"), eff3=Effect("change", "valuation", +20), archetype="The Bride", base_description = __("She is faithful to her master.")),
+                Trait(_("Brave"), verb = "be", eff1 = Effect("boost", "fear", -0.5), eff2 = Effect("change", "security", 1, scope = "brothel"), archetype="The Escort", base_description = __("She does not scare easily.")),
 
-                Trait("Nimble", verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("boost", "geisha jp gains", 0.25)], archetype="The Courtesan", base_description = __("She always stays on her feet.")),
-                Trait("Soft skin", verb = "have", eff1 = Effect("change", "beauty", 10), eff2 = Effect("change", "refinement", 10), archetype="The Courtesan", base_description = __("She has unblemished skin.")),
+                Trait(_("Nimble"), verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("boost", "geisha jp gains", 0.25)], archetype="The Courtesan", base_description = __("She always stays on her feet.")),
+                Trait(_("Soft skin"), verb = "have", eff1 = Effect("change", "beauty", 10), eff2 = Effect("change", "refinement", 10), archetype="The Courtesan", base_description = __("She has unblemished skin.")),
 
-                Trait("Bright", verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.25), eff2 = Effect("boost", "geisha jp gains", 0.5), archetype="The Fox", base_description = __("She has an uplifting outlook on life.")),
-                Trait("Agile", verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("boost", "masseuse jp gains", 0.25)], archetype="The Escort", base_description = __("She has great coordination.")),
+                Trait(_("Bright"), verb = "be", eff1 = Effect("boost", "waitress jp gains", 0.25), eff2 = Effect("boost", "geisha jp gains", 0.5), archetype="The Fox", base_description = __("She has an uplifting outlook on life.")),
+                Trait(_("Agile"), verb = "be", effects = [Effect("boost", "dancer jp gains", 0.5), Effect("boost", "masseuse jp gains", 0.25)], archetype="The Escort", base_description = __("She has great coordination.")),
 
-                Trait("Thief", verb = "be a", eff1 = Effect("special", "pickpocket", 1), eff2=Effect("change", "valuation", -25), eff3 = Effect("boost", "income", -0.01, scales_with = "rank"), archetype="The Fox", base_description = __("Customers tend to leave items in her possession.")),
+                Trait(_("Thief"), verb = "be a", eff1 = Effect("special", "pickpocket", 1), eff2=Effect("change", "valuation", -25), eff3 = Effect("boost", "income", -0.01, scales_with = "rank"), archetype="The Fox", base_description = __("Customers tend to leave items in her possession.")),
 
                 ### NEW IN 0.3
-                Trait("Sane", verb = "be", eff1 = Effect("change", "sanity loss", -1), archetype="The Courtesan"),
-                Trait("Trusting", verb = "be", eff1 = Effect("change", "fear per day", -1, chance=0.25), archetype="The Maid"),
-                Trait("Loving", verb = "be", eff1 = Effect("change", "love per day", 1, chance=0.25), archetype="The Bride"),
+                Trait(_("Sane"), verb = "be", eff1 = Effect("change", "sanity loss", -1), archetype="The Courtesan"),
+                Trait(_("Trusting"), verb = "be", eff1 = Effect("change", "fear per day", -1, chance=0.25), archetype="The Maid"),
+                Trait(_("Loving"), verb = "be", eff1 = Effect("change", "love per day", 1, chance=0.25), archetype="The Bride"),
 
                 # Trait King originals
 
-                Trait("Mind Fucked", verb="be", effects = [Effect("change", "obedience", 250), Effect("change", "job obedience target", -250), Effect("change", "whore obedience target", -250), Effect("change", "train obedience target", -250), Effect("change", "all main skills", -15, scales_with="rank")], archetype="The Slut", base_description = __("She has been completely brainwashed and will never question her master's orders.")),
+                Trait(_("Mind Fucked"), verb="be", effects = [Effect("change", "obedience", 250), Effect("change", "job obedience target", -250), Effect("change", "whore obedience target", -250), Effect("change", "train obedience target", -250), Effect("change", "all main skills", -15, scales_with="rank")], archetype="The Slut", base_description = __("She has been completely brainwashed and will never question her master's orders.")),
 
-                Trait("Subservient", verb = "be", effects=[Effect("boost", "obedience gains", 0.25), Effect("change", "train obedience target", -100), Effect("change", "tip", -10, scales_with="cust nb")], archetype="The Model", base_description = __("She enjoys serving her master and would prefer to be at his side and tending to his needs at all times.")), 
+                Trait(_("Subservient"), verb = "be", effects=[Effect("boost", "obedience gains", 0.25), Effect("change", "train obedience target", -100), Effect("change", "tip", -10, scales_with="cust nb")], archetype="The Model", base_description = __("She enjoys serving her master and would prefer to be at his side and tending to his needs at all times.")), 
 
-                Trait("Cum Addict", verb="be a", effects = [Effect("boost", "service jp gains", 0.5), Effect("boost", "service preference increase", 0.2, scales_with = "rank")], archetype="The Slut", base_description = __("She prefers blowjobs over ice-cream smoothies.")),
+                Trait(_("Cum Addict"), verb="be a", effects = [Effect("boost", "service jp gains", 0.5), Effect("boost", "service preference increase", 0.2, scales_with = "rank")], archetype="The Slut", base_description = __("She prefers blowjobs over ice-cream smoothies.")),
 
-                Trait("Innocent", verb = "be", effects = [Effect("change", "charm", 10, scales_with = "rank"), Effect("change", "libido", -25), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], archetype="The Player", base_description = __("She is a pure and kindhearted girl.")),
-                Trait("Great Figure", verb = "have a", effects=[Effect("change", "body", 20), Effect("gain", "reputation", 10), Effect("change", "valuation", +10)], archetype="The Model", base_description = __("She has a lovely body.")), 
-                Trait("Adorable", verb = "be", effects = [Effect("change", "beauty", 20), Effect("boost", "max energy", -0.1), Effect("gain", "reputation", 10), Effect("change", "valuation", +5, scales_with = "rank")], archetype="The Model", base_description = __("She has a charm about her that makes you fall in love with her.")),
+                Trait(_("Innocent"), verb = "be", effects = [Effect("change", "charm", 10, scales_with = "rank"), Effect("change", "libido", -25), Effect("gain", "reputation", 10), Effect("change", "valuation", +20)], archetype="The Player", base_description = __("She is a pure and kindhearted girl.")),
+                Trait(_("Great Figure"), verb = "have a", effects=[Effect("change", "body", 20), Effect("gain", "reputation", 10), Effect("change", "valuation", +10)], archetype="The Model", base_description = __("She has a lovely body.")), 
+                Trait(_("Adorable"), verb = "be", effects = [Effect("change", "beauty", 20), Effect("boost", "max energy", -0.1), Effect("gain", "reputation", 10), Effect("change", "valuation", +5, scales_with = "rank")], archetype="The Model", base_description = __("She has a charm about her that makes you fall in love with her.")),
 
-                Trait("for Public use", verb="be", effects = [Effect("boost", "group chance", 0.25), Effect("boost", "tiredness", -0.25), Effect("boost", "tip", -0.15, scales_with="rank"), Effect("change", "whore obedience target", -100), Effect("increase satisfaction", "all jobs", -1)], archetype="The Slut", base_description = __("She wouldn't mind being used by everyone in the room.")),
+                Trait(_("for Public use"), verb="be", effects = [Effect("boost", "group chance", 0.25), Effect("boost", "tiredness", -0.25), Effect("boost", "tip", -0.15, scales_with="rank"), Effect("change", "whore obedience target", -100), Effect("increase satisfaction", "all jobs", -1)], archetype="The Slut", base_description = __("She wouldn't mind being used by everyone in the room.")),
 
-                Trait("Beauty Mark", verb="have a", effects = [Effect("change", "beauty", 20)], archetype="The Courtesan", base_description = __("She has a unique birthmark on her face.")),
-                Trait("Tattoo", verb="have a", effects = [Effect("change", "beauty", 10), Effect("change", "charm", 5)], archetype="The Slut", base_description = __("She has a nice tattoo. I won't tell where, that's for you to find out.")),
-                Trait("Exotic Tattoo", verb="have an", effects = [Effect("change", "beauty", 10), Effect("change", "charm", 10), Effect("change", "valuation", +40)], archetype="The Escort", base_description = __("She has a unique tattoo, one they only make in foreign lands.")),
-                Trait("Pierced Clit", verb="have a", effects = [Effect("boost", "sex preference increase", 0.2), Effect("change", "sensitivity", 10), Effect("change", "libido", 10)], archetype="The Slut", base_description = __("Her clitoris is pierced.")),
-                Trait("Pierced Navel", verb="have a", effects = [Effect("boost", "dancer jp gains", 0.5)], archetype="The Model", base_description = __("She likes to expose her midriff to show off her naval piercing.")),
-                Trait("Pierced Nipples", verb="have", effects = [Effect("boost", "service preference increase", 0.25), Effect("change", "sensitivity", 10), Effect("change", "libido", 10)], archetype="The Escort", base_description = __("Her nipples are pierced.")),
+                Trait(_("Beauty Mark"), verb="have a", effects = [Effect("change", "beauty", 20)], archetype="The Courtesan", base_description = __("She has a unique birthmark on her face.")),
+                Trait(_("Tattoo"), verb="have a", effects = [Effect("change", "beauty", 10), Effect("change", "charm", 5)], archetype="The Slut", base_description = __("She has a nice tattoo. I won't tell where, that's for you to find out.")),
+                Trait(_("Exotic Tattoo"), verb="have an", effects = [Effect("change", "beauty", 10), Effect("change", "charm", 10), Effect("change", "valuation", +40)], archetype="The Escort", base_description = __("She has a unique tattoo, one they only make in foreign lands.")),
+                Trait(_("Pierced Clit"), verb="have a", effects = [Effect("boost", "sex preference increase", 0.2), Effect("change", "sensitivity", 10), Effect("change", "libido", 10)], archetype="The Slut", base_description = __("Her clitoris is pierced.")),
+                Trait(_("Pierced Navel"), verb="have a", effects = [Effect("boost", "dancer jp gains", 0.5)], archetype="The Model", base_description = __("She likes to expose her midriff to show off her naval piercing.")),
+                Trait(_("Pierced Nipples"), verb="have", effects = [Effect("boost", "service preference increase", 0.25), Effect("change", "sensitivity", 10), Effect("change", "libido", 10)], archetype="The Escort", base_description = __("Her nipples are pierced.")),
 
-                Trait("Tomboy", verb = "be a", effects = [Effect("change", "constitution", 30), Effect("change", "obedience", -20), Effect("change", "valuation", -20)], archetype="The Bride", base_description = __("She's an energetic girl with boyish hobbies.")),
+                Trait(_("Tomboy"), verb = "be a", effects = [Effect("change", "constitution", 30), Effect("change", "obedience", -20), Effect("change", "valuation", -20)], archetype="The Bride", base_description = __("She's an energetic girl with boyish hobbies.")),
 
         ]
 
@@ -721,11 +721,11 @@ label traitking_init:
 
                 # Vanilla reworked
 
-                Trait("Virgin", verb = "be a", effects=[Effect("special", "virgin", 1), Effect("change", "sensitivity", 10), Effect("change", "sex act requirements", 40), Effect("gain", "reputation", 10, scales_with = "rank"), Effect("change", "valuation", +50, scales_with = "rank")], archetype="The Bride", base_description = __("She has never experienced vaginal intercourse.")), # Special trait, goes away after 1st sex
+                Trait(_("Virgin"), verb = "be a", effects=[Effect("special", "virgin", 1), Effect("change", "sensitivity", 10), Effect("change", "sex act requirements", 40), Effect("gain", "reputation", 10, scales_with = "rank"), Effect("change", "valuation", +50, scales_with = "rank")], archetype="The Bride", base_description = __("She has never experienced vaginal intercourse.")), # Special trait, goes away after 1st sex
 
                 # Trait King originals
                 
-                Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = __("This girl is hiding something from you."))
+                Trait(_("Unknown"), verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = __("This girl is hiding something from you."))
 
         ]
 
@@ -736,90 +736,90 @@ label traitking_init:
         traitking_neg_traits = [
 
                 # Vanilla reworked 
-                Trait("Plain", verb = "be", eff1 = Effect("change", "beauty", -10, scales_with = "rank"), opposite = "Cute", base_description = __("She's a bit too ordinary.")),
-                Trait("Scars", verb = "have", eff1 = Effect("change", "body", -10, scales_with = "rank"), opposite = "Nice boobs", base_description = __("She has some nasty scars.")),
-                Trait("Mean", verb = "be", eff1 = Effect("change", "charm", -10, scales_with = "rank"), opposite = "Sweet", base_description = __("She can be a bit of a bitch.")),
-                Trait("Rude", verb = "be", eff1 = Effect("change", "refinement", -10, scales_with = "rank"), opposite = "Polite", base_description = __("She can be very impolite.")),
-                Trait("Cold", verb = "be", eff1 = Effect("change", "libido", -10, scales_with = "rank"), eff2 = Effect("personality", "cold"), opposite = "Horny", base_description = __("She doesn't like showing affection.")), # needs evolution desc
-                Trait("Weak", verb = "be", eff1 = Effect("change", "constitution", -10, scales_with = "rank"), eff2=Effect("change", "valuation", -20), opposite = "Resilient", base_description = __("She's a bit of a pushover.")),
-                Trait("Rough", verb = "be", eff1 = Effect("change", "sensitivity", -10, scales_with = "rank"), opposite = "Delicate", base_description = __("She doesn't consider other people's feelings.")),
-                Trait("Defiant", verb = "be", eff1 = Effect("change", "obedience", -10, scales_with = "rank"), eff2=Effect("change", "valuation", -40), opposite = "Meek", base_description = __("She doesn't always listen.")),
+                Trait(_("Plain"), verb = "be", eff1 = Effect("change", "beauty", -10, scales_with = "rank"), opposite = "Cute", base_description = __("She's a bit too ordinary.")),
+                Trait(_("Scars"), verb = "have", eff1 = Effect("change", "body", -10, scales_with = "rank"), opposite = "Nice boobs", base_description = __("She has some nasty scars.")),
+                Trait(_("Mean"), verb = "be", eff1 = Effect("change", "charm", -10, scales_with = "rank"), opposite = "Sweet", base_description = __("She can be a bit of a bitch.")),
+                Trait(_("Rude"), verb = "be", eff1 = Effect("change", "refinement", -10, scales_with = "rank"), opposite = "Polite", base_description = __("She can be very impolite.")),
+                Trait(_("Cold"), verb = "be", eff1 = Effect("change", "libido", -10, scales_with = "rank"), eff2 = Effect("personality", "cold"), opposite = "Horny", base_description = __("She doesn't like showing affection.")), # needs evolution desc
+                Trait(_("Weak"), verb = "be", eff1 = Effect("change", "constitution", -10, scales_with = "rank"), eff2=Effect("change", "valuation", -20), opposite = "Resilient", base_description = __("She's a bit of a pushover.")),
+                Trait(_("Rough"), verb = "be", eff1 = Effect("change", "sensitivity", -10, scales_with = "rank"), opposite = "Delicate", base_description = __("She doesn't consider other people's feelings.")),
+                Trait(_("Defiant"), verb = "be", eff1 = Effect("change", "obedience", -10, scales_with = "rank"), eff2=Effect("change", "valuation", -40), opposite = "Meek", base_description = __("She doesn't always listen.")),
                 
-                Trait("Timid", verb = "be", eff1 = Effect("boost", "charm gains", -0.5), opposite = "charming", base_description = __("She's a bit too passive.")),
-                Trait("Plump", verb = "be", eff1 = Effect("boost", "body gains", -0.5), opposite = "Fit", base_description = __("She's fat.")),
-                Trait("Scruffy", verb = "be", eff1 = Effect("boost", "beauty gains", -0.5), opposite = "Beautiful", base_description = __("She doesn't present herself well.")),
-                Trait("Vulgar", verb = "be", eff1 = Effect("boost", "refinement gains", -0.5), opposite = "Elegant", base_description = __("She can swear like a sailor.")),
-                Trait("Tame", verb = "be", eff1 = Effect("boost", "libido gains", -0.5), eff2=Effect("change", "valuation", -20), opposite = "Slutty", base_description = __("She's not very imaginative.")),
-                Trait("Frail", verb = "be", eff1 = Effect("boost", "constitution gains", -0.5), eff2=Effect("change", "valuation", -20), opposite = "Athletic", base_description = __("She's easily winded.")),
-                Trait("Rebellious", verb = "be", eff1 = Effect("boost", "obedience gains", -0.5), eff2 = Effect("personality", "rebel"), eff3=Effect("change", "valuation", -50), opposite = "Obedient", base_description = __("She likes to fight authority.")),
-                Trait("Jaded", verb = "be", eff1 = Effect("boost", "sensitivity gains", -0.5), eff2 = Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Sensitive", base_description = __("She hates this job.")), # needs evolution desc
+                Trait(_("Timid"), verb = "be", eff1 = Effect("boost", "charm gains", -0.5), opposite = "charming", base_description = __("She's a bit too passive.")),
+                Trait(_("Plump"), verb = "be", eff1 = Effect("boost", "body gains", -0.5), opposite = "Fit", base_description = __("She's fat.")),
+                Trait(_("Scruffy"), verb = "be", eff1 = Effect("boost", "beauty gains", -0.5), opposite = "Beautiful", base_description = __("She doesn't present herself well.")),
+                Trait(_("Vulgar"), verb = "be", eff1 = Effect("boost", "refinement gains", -0.5), opposite = "Elegant", base_description = __("She can swear like a sailor.")),
+                Trait(_("Tame"), verb = "be", eff1 = Effect("boost", "libido gains", -0.5), eff2=Effect("change", "valuation", -20), opposite = "Slutty", base_description = __("She's not very imaginative.")),
+                Trait(_("Frail"), verb = "be", eff1 = Effect("boost", "constitution gains", -0.5), eff2=Effect("change", "valuation", -20), opposite = "Athletic", base_description = __("She's easily winded.")),
+                Trait(_("Rebellious"), verb = "be", eff1 = Effect("boost", "obedience gains", -0.5), eff2 = Effect("personality", "rebel"), eff3=Effect("change", "valuation", -50), opposite = "Obedient", base_description = __("She likes to fight authority.")),
+                Trait(_("Jaded"), verb = "be", eff1 = Effect("boost", "sensitivity gains", -0.5), eff2 = Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Sensitive", base_description = __("She hates this job.")), # needs evolution desc
                 
-                Trait("Lazy", verb = "be", eff1 = Effect("boost", "max energy", -0.20), opposite = ["Energetic", "Driven"], base_description = __("She would prefer to lie in bed all day.")),
-                Trait("Sickly", verb = "be", eff1 = Effect("boost", "hurt", +2), eff2=Effect("change", "valuation", -40), opposite = "Tough", base_description = __("She may have some disease.")), # needs evolution desc
+                Trait(_("Lazy"), verb = "be", eff1 = Effect("boost", "max energy", -0.20), opposite = ["Energetic", "Driven"], base_description = __("She would prefer to lie in bed all day.")),
+                Trait(_("Sickly"), verb = "be", eff1 = Effect("boost", "hurt", +2), eff2=Effect("change", "valuation", -40), opposite = "Tough", base_description = __("She may have some disease.")), # needs evolution desc
                 
-                Trait("Homely", verb = "be", eff1 = Effect("boost", "reputation gains", -0.25), opposite = "Sexy", base_description = __("She is not very attractive.")),
-                Trait("Expensive", verb = "be", eff1 = Effect("boost", "upkeep", 1.0), eff2=Effect("change", "valuation", +25), opposite = "Humble", base_description = __("She wants to be treated like a princess.")),
-                Trait("Slow", verb = "be", eff1 = Effect("boost", "xp gains", -0.5), eff2 = Effect("boost", "class results", -0.5), opposite = ["Fast learner", "Sharp", "Genius"], base_description = __("Her brain does not work as well as it should.")),
-                Trait("Distrustful", verb = "be", eff1 = Effect("boost", "love gains", -0.5), opposite = "Loyal", base_description = __("She's an independant girl.")),
-                Trait("Fearful", verb = "be", eff1 = Effect("boost", "fear", 0.5), opposite = "Brave", base_description = __("She's easily frightened.")),
-                Trait("Vulnerable", verb = "be", eff1 = Effect("change", "defense", -4), opposite = ["Strong", "Warrior"], base_description = __("She is an easy target.")),
+                Trait(_("Homely"), verb = "be", eff1 = Effect("boost", "reputation gains", -0.25), opposite = "Sexy", base_description = __("She is not very attractive.")),
+                Trait(_("Expensive"), verb = "be", eff1 = Effect("boost", "upkeep", 1.0), eff2=Effect("change", "valuation", +25), opposite = "Humble", base_description = __("She wants to be treated like a princess.")),
+                Trait(_("Slow"), verb = "be", eff1 = Effect("boost", "xp gains", -0.5), eff2 = Effect("boost", "class results", -0.5), opposite = ["Fast learner", "Sharp", "Genius"], base_description = __("Her brain does not work as well as it should.")),
+                Trait(_("Distrustful"), verb = "be", eff1 = Effect("boost", "love gains", -0.5), opposite = "Loyal", base_description = __("She's an independant girl.")),
+                Trait(_("Fearful"), verb = "be", eff1 = Effect("boost", "fear", 0.5), opposite = "Brave", base_description = __("She's easily frightened.")),
+                Trait(_("Vulnerable"), verb = "be", eff1 = Effect("change", "defense", -4), opposite = ["Strong", "Warrior"], base_description = __("She is an easy target.")),
                 
-                Trait("Unlucky", verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = __("She shouldn't have broken that magic mirror... She has some terrible luck."), opposite = "Lucky"),  # needs evolution desc
+                Trait(_("Unlucky"), verb = "be", eff1 = Effect("special", "unlucky", 1), base_description = __("She shouldn't have broken that magic mirror... She has some terrible luck."), opposite = "Lucky"),  # needs evolution desc
                 
-                Trait("All thumbs", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("increase satisfaction", "waitress", -1), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy'], base_description = __("She's a bit useless.")),
-                Trait("Awkward", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("increase satisfaction", "dancer", -1), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful'], base_description = __("She lacks tact.")),
-                Trait("Brutal", verb = "be", eff1 = Effect("boost", "masseuse jp gains", -0.5), eff2 = Effect("increase satisfaction", "masseuse", -1), opposite=['Deft', 'Soft skin', 'Agile', 'Unhurried'], base_description = __("She underestimates her own strength.")),
-                Trait("Dumb", verb = "be", effects = [Effect("boost", "geisha jp gains", -0.5), Effect("increase satisfaction", "geisha", -1), Effect("boost", "jp gains", -0.5)], opposite=['Nimble', 'Soft skin', 'Bright', 'Modest'], base_description = __("She's stupid.")),
-                Trait("Oafish", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("boost", "geisha jp gains", -0.5), opposite=['Nimble', 'Agile', 'Brisk', 'Soft skin', 'Bright'], base_description = __("She lacks manners and grace.")),
-                Trait("Clumsy", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("boost", "masseuse jp gains", -0.5), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy', 'Soft skin', 'Agile'], base_description = __("She lacks basic coordination.")),
+                Trait(_("All thumbs"), verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("increase satisfaction", "waitress", -1), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy'], base_description = __("She's a bit useless.")),
+                Trait(_("Awkward"), verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("increase satisfaction", "dancer", -1), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful'], base_description = __("She lacks tact.")),
+                Trait(_("Brutal"), verb = "be", eff1 = Effect("boost", "masseuse jp gains", -0.5), eff2 = Effect("increase satisfaction", "masseuse", -1), opposite=['Deft', 'Soft skin', 'Agile', 'Unhurried'], base_description = __("She underestimates her own strength.")),
+                Trait(_("Dumb"), verb = "be", effects = [Effect("boost", "geisha jp gains", -0.5), Effect("increase satisfaction", "geisha", -1), Effect("boost", "jp gains", -0.5)], opposite=['Nimble', 'Soft skin', 'Bright', 'Modest'], base_description = __("She's stupid.")),
+                Trait(_("Oafish"), verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.5), eff2 = Effect("boost", "geisha jp gains", -0.5), opposite=['Nimble', 'Agile', 'Brisk', 'Soft skin', 'Bright'], base_description = __("She lacks manners and grace.")),
+                Trait(_("Clumsy"), verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.5), eff2 = Effect("boost", "masseuse jp gains", -0.5), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy', 'Soft skin', 'Agile'], base_description = __("She lacks basic coordination.")),
                 
-                Trait("Prude", verb = "be", eff1 = Effect("boost", "service jp gains", -0.5), eff2 = Effect("boost", "sex jp gains", -0.5), eff3=Effect("change", "valuation", -25), opposite = "Naughty", base_description = __("She lacks sexual desire.")),
-                Trait("Naive", verb = "be", eff1 = Effect("boost", "anal jp gains", -0.5), eff2 = Effect("boost", "fetish jp gains", -0.5), eff3=Effect("change", "valuation", +10), opposite = "Kinky", base_description = __("She does not do the weird stuff.")),
-                Trait("Square", verb = "be", eff1 = Effect("change", "sex act requirements", 50), opposite = "Pervert", base_description = __("She's not very adventurous.")),
+                Trait(_("Prude"), verb = "be", eff1 = Effect("boost", "service jp gains", -0.5), eff2 = Effect("boost", "sex jp gains", -0.5), eff3=Effect("change", "valuation", -25), opposite = "Naughty", base_description = __("She lacks sexual desire.")),
+                Trait(_("Naive"), verb = "be", eff1 = Effect("boost", "anal jp gains", -0.5), eff2 = Effect("boost", "fetish jp gains", -0.5), eff3=Effect("change", "valuation", +10), opposite = "Kinky", base_description = __("She does not do the weird stuff.")),
+                Trait(_("Square"), verb = "be", eff1 = Effect("change", "sex act requirements", 50), opposite = "Pervert", base_description = __("She's not very adventurous.")),
 
                 ### NEW IN 0.3
-                Trait("Insane", verb = "be", eff1 = Effect("change", "sanity loss", 1), opposite = "Sane"),
+                Trait(_("Insane"), verb = "be", eff1 = Effect("change", "sanity loss", 1), opposite = "Sane"),
 
-                Trait("Distrustful", verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting"),
-                Trait("Spiteful", verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving"),
+                Trait(_("Distrustful"), verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting"),
+                Trait(_("Spiteful"), verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving"),
 
                 # Trait King originals
 
-                Trait("Slave Brand", verb="have a", effects = [Effect("boost", "prestige", 1), Effect("change", "valuation", -100)], archetype="The Bride", base_description = __("She has a tattoo that says {i}'Property of Kosmo. If found, please return to rightful owner.'{/i}.")), 
-                Trait("Lesbian", verb = "be a", eff1=Effect("increase satisfaction", "all sex acts", -1), eff2=Effect("increase satisfaction", "bisexual", 2), archetype="The Courtesan", base_description = __("She does not get aroused by men.")), 
+                Trait(_("Slave Brand"), verb="have a", effects = [Effect("boost", "prestige", 1), Effect("change", "valuation", -100)], archetype="The Bride", base_description = __("She has a tattoo that says {i}'Property of Kosmo. If found, please return to rightful owner.'{/i}.")), 
+                Trait(_("Lesbian"), verb = "be a", eff1=Effect("increase satisfaction", "all sex acts", -1), eff2=Effect("increase satisfaction", "bisexual", 2), archetype="The Courtesan", base_description = __("She does not get aroused by men.")), 
                 
-                Trait("City girl", verb="be a", eff1=Effect("boost", "farm preference increase", -1.0), eff2=Effect("change", "valuation", +40), archetype="The Escort", base_description = __("Living in the city is all she knows. She would despise living in the countryside.")), 
-                Trait("Circumcised", verb = "be", effects = [Effect("change", "libido", -50), Effect("change", "sensitivity", -50), Effect("change", "whore obedience target", 100), Effect("change", "valuation", -60)], base_description = __("Her genitalia have been mutilated.")),  
-                Trait("Deceitful", verb = "be", eff1=Effect("boost", "income", -0.01, scales_with = "rank"), eff2=Effect("change", "valuation", +25), base_description = __("She only cares about herself.")), 
-                Trait("Inbred", verb = "be an", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("boost", "all jp gains", -0.5), eff3=Effect("change", "valuation", -60), base_description = __("Her father and mother were closely related by blood.")), 
-                Trait("Depressed", verb="be", eff1=Effect("change", "mood", -4), eff2=Effect("boost", "tiredness", 0.2), eff3=Effect("change", "valuation", -50), base_description = __("She gains no joy from life.")), 
+                Trait(_("City girl"), verb="be a", eff1=Effect("boost", "farm preference increase", -1.0), eff2=Effect("change", "valuation", +40), archetype="The Escort", base_description = __("Living in the city is all she knows. She would despise living in the countryside.")), 
+                Trait(_("Circumcised"), verb = "be", effects = [Effect("change", "libido", -50), Effect("change", "sensitivity", -50), Effect("change", "whore obedience target", 100), Effect("change", "valuation", -60)], base_description = __("Her genitalia have been mutilated.")),  
+                Trait(_("Deceitful"), verb = "be", eff1=Effect("boost", "income", -0.01, scales_with = "rank"), eff2=Effect("change", "valuation", +25), base_description = __("She only cares about herself.")), 
+                Trait(_("Inbred"), verb = "be an", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("boost", "all jp gains", -0.5), eff3=Effect("change", "valuation", -60), base_description = __("Her father and mother were closely related by blood.")), 
+                Trait(_("Depressed"), verb="be", eff1=Effect("change", "mood", -4), eff2=Effect("boost", "tiredness", 0.2), eff3=Effect("change", "valuation", -50), base_description = __("She gains no joy from life.")), 
 
-                Trait("Chaste", verb = "be", eff1 = Effect("change", "sex act requirements", 50), eff2 = Effect("change", "whore obedience target", 50), eff3=Effect("change", "valuation", -40), opposite = "Pervert", base_description = __("She thinks sex outside of marriage is immoral.")), 
-                Trait("Disfigured", verb = "be", eff1 = Effect("boost", "naked bonus", -0.25), eff2 = Effect("change", "beauty", -10, scales_with = "rank"), eff3=Effect("change", "valuation", -50), opposite = "Nice boobs", base_description = __("She has been in a nasty accident.")),
+                Trait(_("Chaste"), verb = "be", eff1 = Effect("change", "sex act requirements", 50), eff2 = Effect("change", "whore obedience target", 50), eff3=Effect("change", "valuation", -40), opposite = "Pervert", base_description = __("She thinks sex outside of marriage is immoral.")), 
+                Trait(_("Disfigured"), verb = "be", eff1 = Effect("boost", "naked bonus", -0.25), eff2 = Effect("change", "beauty", -10, scales_with = "rank"), eff3=Effect("change", "valuation", -50), opposite = "Nice boobs", base_description = __("She has been in a nasty accident.")),
 
-                Trait("Drunkard", verb="be a", eff1=Effect("change", "obedience", -10, scales_with = "rank"), eff2= Effect("boost", "reputation gains", -0.25), eff3=Effect("change", "valuation", -30), base_description = __("She likes drinking herself into a stupor.")), 
-                # Trait("Kidnapped", verb = "be", eff1=Effect("change", "obedience", -40), eff2 = Effect("personality", "rebel"), eff3=Effect("change", "valuation", -20), base_description = __("She was kidnapped and desires to go home.")), # needs evolution desc
+                Trait(_("Drunkard"), verb="be a", eff1=Effect("change", "obedience", -10, scales_with = "rank"), eff2= Effect("boost", "reputation gains", -0.25), eff3=Effect("change", "valuation", -30), base_description = __("She likes drinking herself into a stupor.")), 
+                # Trait(_("Kidnapped", verb = "be", eff1=Effect("change", "obedience", -40), eff2 = Effect("personality", "rebel"), eff3=Effect("change", "valuation", -20), base_description = __("She was kidnapped and desires to go home.")), # needs evolution desc
 
-                Trait("Frigid", verb = "be", eff1 = Effect("change", "libido", -10, scales_with = "rank"), eff2 = Effect("personality", "cold"), eff3=Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Horny", base_description = __("She hates showing affection.")), 
-                Trait("Asexual", verb = "be", effects = [Effect("change", "libido", -50), Effect("change", "valuation", -50), Effect("increase satisfaction", "all sex acts", -1)], opposite = "Pervert", base_description = __("She has little to no interest in intimacy.")), 
+                Trait(_("Frigid"), verb = "be", eff1 = Effect("change", "libido", -10, scales_with = "rank"), eff2 = Effect("personality", "cold"), eff3=Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Horny", base_description = __("She hates showing affection.")), 
+                Trait(_("Asexual"), verb = "be", effects = [Effect("change", "libido", -50), Effect("change", "valuation", -50), Effect("increase satisfaction", "all sex acts", -1)], opposite = "Pervert", base_description = __("She has little to no interest in intimacy.")), 
 
-                Trait("Dull", verb = "be", eff1 = Effect("special", "effect chance", -0.5), opposite = ["Brisk", "Energetic", "Wild"], base_description = __("Nothing interesting ever happens to her.")),
-                Trait("Gluttonous", verb = "be", eff1 = Effect("change", "constitution", -30), eff2=Effect("change", "valuation", -5, scales_with = "rank"), base_description = __("She likes eating a bit too much.")),
-                Trait("Uncouth", verb="be", eff1=Effect("change", "refinement", -40), eff2= Effect("boost", "reputation gains", -0.1), opposite = "Groomed", base_description = __("She has absolutely no manners.")),
-                Trait("Deaf", verb = "be", eff1 = Effect("change", "obedience", -20), eff2 = Effect("boost", "waitress jp gains", -0.5), eff3=Effect("change", "valuation", -20), base_description = __("She's hard of hearing.")),
+                Trait(_("Dull"), verb = "be", eff1 = Effect("special", "effect chance", -0.5), opposite = ["Brisk", "Energetic", "Wild"], base_description = __("Nothing interesting ever happens to her.")),
+                Trait(_("Gluttonous"), verb = "be", eff1 = Effect("change", "constitution", -30), eff2=Effect("change", "valuation", -5, scales_with = "rank"), base_description = __("She likes eating a bit too much.")),
+                Trait(_("Uncouth"), verb="be", eff1=Effect("change", "refinement", -40), eff2= Effect("boost", "reputation gains", -0.1), opposite = "Groomed", base_description = __("She has absolutely no manners.")),
+                Trait(_("Deaf"), verb = "be", eff1 = Effect("change", "obedience", -20), eff2 = Effect("boost", "waitress jp gains", -0.5), eff3=Effect("change", "valuation", -20), base_description = __("She's hard of hearing.")),
  
-                Trait("Paranoid", verb = "be", effects=[Effect("boost", "fear gains", 2.0), Effect("change", "defense", 1), Effect("boost", "love gains", -0.25)], base_description = __("She thinks someone's out to get her.")),
-                Trait("Strong Gag Reflex", verb = "have a", eff1 = Effect("increase satisfaction", "service", -1), base_description = __("She has vomited and choked on plenty of dicks.")),
+                Trait(_("Paranoid"), verb = "be", effects=[Effect("boost", "fear gains", 2.0), Effect("change", "defense", 1), Effect("boost", "love gains", -0.25)], base_description = __("She thinks someone's out to get her.")),
+                Trait(_("Strong Gag Reflex"), verb = "have a", eff1 = Effect("increase satisfaction", "service", -1), base_description = __("She has vomited and choked on plenty of dicks.")),
 
-                Trait("Arrogant", verb = "be", eff1 = Effect("boost", "all jp gains", -0.5), opposite = "Humble", base_description = __("She mistakenly thinks the world revolves around her.")),
-                Trait("Stubborn", verb = "be", eff1 = Effect("boost", "xp gains", -0.25), eff2 = Effect("boost", "all jp gains", -0.25 ), base_description = __("She does not listen to advice.")),
-                Trait("Blind", verb = "be", eff1 = Effect("change", "defense", -4), eff2 = Effect("change", "sensitivity", 10), eff3=Effect("change", "valuation", -20), base_description = __("Her eyes don't work very well.")),
-                Trait("Greedy", verb = "be", eff1 = Effect("boost", "upkeep", 2), eff2 = Effect("special", "random item", 1, chance=0.02), opposite = "Humble", base_description = __("She demands more than her fair share.")),
+                Trait(_("Arrogant"), verb = "be", eff1 = Effect("boost", "all jp gains", -0.5), opposite = "Humble", base_description = __("She mistakenly thinks the world revolves around her.")),
+                Trait(_("Stubborn"), verb = "be", eff1 = Effect("boost", "xp gains", -0.25), eff2 = Effect("boost", "all jp gains", -0.25 ), base_description = __("She does not listen to advice.")),
+                Trait(_("Blind"), verb = "be", eff1 = Effect("change", "defense", -4), eff2 = Effect("change", "sensitivity", 10), eff3=Effect("change", "valuation", -20), base_description = __("Her eyes don't work very well.")),
+                Trait(_("Greedy"), verb = "be", eff1 = Effect("boost", "upkeep", 2), eff2 = Effect("special", "random item", 1, chance=0.02), opposite = "Humble", base_description = __("She demands more than her fair share.")),
 
-                Trait("Bloodslut", verb = "be a", effects=[Effect("change", "whore obedience target", -250), Effect("change", "valuation", -20, scales_with = "rank"), Effect("change", "brothel reputation", -10, scales_with = "rank", chance=0.1, scope="brothel"), Effect("change", "customers", -2, scales_with = "rank", scope="brothel"), Effect("personality", "creep")], opposite = "Virgin", base_description = __("She is discriminated against because she has served time as a meatsleeve on the Blood Islands.")), 
-                Trait("Half-elf", verb = "be a", effects=[Effect("boost", "tiredness", -0.1), Effect("boost", "perfect result tip", -0.75)], base_description = __("She is discriminated against because she has elven blood running through her veins.")), 
-                Trait("Monsterkin", verb = "be a", effects=[Effect("special", "immune", 1), Effect("change", "security", -1, scales_with = "rank", scope = "brothel"), Effect("change", "valuation", -10, scales_with = "rank")], base_description = __("She is discriminated against because people believe she was birthed by a monster.")), 
-                Trait("Vivified", verb = "be", effects=[Effect("change", "constitution", -15, scales_with = "rank"), Effect("change", "valuation", +100)], base_description = __("People believe that she is an unnatural being, conjured up by a magician.")), 
+                Trait(_("Bloodslut"), verb = "be a", effects=[Effect("change", "whore obedience target", -250), Effect("change", "valuation", -20, scales_with = "rank"), Effect("change", "brothel reputation", -10, scales_with = "rank", chance=0.1, scope="brothel"), Effect("change", "customers", -2, scales_with = "rank", scope="brothel"), Effect("personality", "creep")], opposite = "Virgin", base_description = __("She is discriminated against because she has served time as a meatsleeve on the Blood Islands.")), 
+                Trait(_("Half-elf"), verb = "be a", effects=[Effect("boost", "tiredness", -0.1), Effect("boost", "perfect result tip", -0.75)], base_description = __("She is discriminated against because she has elven blood running through her veins.")), 
+                Trait(_("Monsterkin"), verb = "be a", effects=[Effect("special", "immune", 1), Effect("change", "security", -1, scales_with = "rank", scope = "brothel"), Effect("change", "valuation", -10, scales_with = "rank")], base_description = __("She is discriminated against because people believe she was birthed by a monster.")), 
+                Trait(_("Vivified"), verb = "be", effects=[Effect("change", "constitution", -15, scales_with = "rank"), Effect("change", "valuation", +100)], base_description = __("People believe that she is an unnatural being, conjured up by a magician.")), 
                 
                 # ? - Desert Pox (debilitating disease with expensive spice addiction)
                 
