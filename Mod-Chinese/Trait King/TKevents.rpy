@@ -79,9 +79,9 @@ label traitking_morning: # morning: triggers as first thing in the day
                 
             net_list.sort(reverse=True, key=lambda y: y[1])
             
-            profitable_desc = rand_choice([__("proven to be your most lucrative asset"), __("brought in the most coin"), __("brought in the most profit"), ("been a smash hit"), ("proven to be your most popular girl"), __("been a favorite among your customers"), __("led your stable"), __("earned her keep like no other"), __("taken the crown")])
+            profitable_desc = rand_choice(["proven to be your most lucrative asset", "brought in the most coin", "brought in the most profit", "been a smash hit", "proven to be your most popular girl", "been a favorite among your customers", "led your stable", "earned her keep like no other", "taken the crown"])
             
-            renpy.say("", __("Over the past month, {b}{color=[c_orange]}") + net_list[0][0] + __("{/color}{/b} has ") + profitable_desc +  __(" (bringing in ") + str(net_list[0][1]) + __(" gold), followed by {b}") + net_list[1][0] + __("{/b} and {b}") + net_list[2][0] + __("{/b}."))
+            renpy.say("","Over the past month, {b}{color=[c_orange]}" + net_list[0][0] + "{/color}{/b} has " + profitable_desc +  " (bringing in " + str(net_list[0][1]) + " gold), followed by {b}" + net_list[1][0] + "{/b} and {b}" + net_list[2][0] + "{/b}.")
             
             # friendship/rivalry: other girls become jealous or start admiring the top earner
             if best_net > 2000:
@@ -120,9 +120,9 @@ label traitking_day: # day: triggers after morning, but still before player can 
             
                 if girl.nickname["flag2"] == False and not len(girl.traits) > 5:
                     if renpy.random.random() <= 0.02: # 2% chance of discovering the unknown trait per workday
-                        add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = __("This girl is hiding something from you.")))
+                        add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = "This girl is hiding something from you."))
 
-                        renpy.say("",__("You suspect that ") + girl.name + __(" is trying to hide something from you."))
+                        renpy.say("","You suspect that " + girl.name + " is trying to hide something from you.")
         
             if girl.has_trait("Karkyrian Hymen"): # Karkyrian Hymen trait
             
@@ -469,13 +469,13 @@ label performance_reward(girl):
     
     "[girl_state_comment]"
 
-    girl.char "主人! 你找我吗?"
+    girl.char "Master! You wanted to see me?"
     
-    you "喊你来是好事 [girl.name]。我是来表扬你的。"
+    you "With good reason, [girl.name]. I came here to dish out some praise."
     
     call dialogue(girl, "slave positive reaction")
     
-    you "我刚看了上个月的账本。你的表现已经超过了其他女孩。做得好!"
+    you "I've just been over the numbers from last month. You've managed to outperform the other girls. Well done!"
     
     call dialogue(girl, "slave thanks")
     
@@ -486,16 +486,16 @@ label performance_reward(girl):
     menu: 
         girl.char "So where do we go from here?"
 
-        "继续努力": # improve self
+        "Keep improving yourself": # improve self
     
-            you "你还有一些进步的空间。这就是为什么我要给你一些建议。"
+            you "There is still some room for improvement. That's why I've got some advice for you."
         
             menu:
-                girl.char "请说, 主人?"
+                girl.char "Yes, Master?"
                 
-                "尽全力工作" if MC.speed > 4: # capacity boost
+                "Work as hard as you can" if MC.speed > 4: # capacity boost
 
-                    you "我相信你可以更加努力。服务更多的顾客。"
+                    you "I believe you can work even harder. Try to serve more customers every shift."
                     
                     if girl.is_("very extravert"):
                         girl.char "Ooh fantastic! I'll try to beat my personal record!"
@@ -512,7 +512,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job customer capacity", int(3*modifier))] 
                     $ effect_comment = "she will try to serve more customers while working"
                     
-                "多收集精液" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
+                "Hoard as much semen as you can" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
 
                     you "The market price for a gallon of semen has skyrocketed recently. Lord knows why the Elder Circle of Karkyr requires so much of it." 
                     
@@ -533,7 +533,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "whore customer capacity", int(2*modifier))]
                     $ effect_comment = "she will attempt to serve more customers while whoring"
 
-                "多服务大款" if MC.charisma > 4: # chance tip boost
+                "Focus on the whales" if MC.charisma > 4: # chance tip boost
 
                     you "You need to spend your time wisely. Try to find the patrons that have the most money to spend and make sure to fully satisfy them. Let the other girls worry about our other customers."
 
@@ -552,7 +552,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("special", "ignore budgets"), Effect("boost", "tip", 0.2, chance=0.25*modifier),Effect("change", "whore customer capacity", -1), Effect("change", "job customer capacity", -2)] 
                     $ effect_comment = "she will serve less customers but acquire bigger tips"
                     
-                "继续保持吧": # Rep boost
+                "Keep doing what you're doing": # Rep boost
 
                     you "You're heading in the right direction. If you keep up your current level of performance the customers will be chanting your name in no time."
 
@@ -571,7 +571,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "reputation gains", 0.1*modifier)] 
                     $ effect_comment = "her reputation will improve more rapidly"
                     
-                "为自己辩护" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
+                "Stand up for yourself" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
                         
                     you "Don't let anybody push you around. Don't be afraid to fight if you're driven into a corner." 
 
@@ -590,7 +590,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "defense", int(2*modifier))] 
                     $ effect_comment = "she will be on her guard"
 
-                "专心训练": # Lower train obedience targets
+                "Focus on training": # Lower train obedience targets
 
                     you "You've been doing well, but without more training you'll end up wasting away in the gutters of Zan. Pay more attention to my instructions from now on!"
                     
@@ -609,7 +609,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "train obedience target", int(-25*modifier))] 
                     $ effect_comment = "she will be more willing to undergo training"
                     
-                "满足客人一切要求" if MC.spirit > 4: # Lower job/whore obedience targets
+                "Serve the customer, no matter what they request" if MC.spirit > 4: # Lower job/whore obedience targets
 
                     you "Remember that this is a brothel, not some kind of wellness retreat for you to lounge around in. There's no sense in struggling. The customer is king and if he's asking for something then you should provide whatever he needs."
 
@@ -628,7 +628,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job obedience target", int(-25*modifier)), Effect("change", "whore obedience target", int(-25*modifier))]
                     $ effect_comment = "she will be less apprehensive about working or whoring"
                     
-                "获得更多经验": # boost xp/jp/rep
+                "Gain more experience": # boost xp/jp/rep
 
                     you "You should remain critical of yourself and keep improving!"
 
@@ -647,7 +647,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "xp gains", 0.1*modifier), Effect("boost", "all jp gains", 0.1*modifier)] 
                     $ effect_comment = "she will gain more experience and job proficiency"
 
-                "考虑一下去农场" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
+                "Consider a spell at the farm" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
 
                     you "Do you like working with animals?"
                     girl.char "I guess so... Why are you asking?"
@@ -670,14 +670,14 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.5*modifier)] 
                     $ effect_comment = "she will be more susceptible to the training methods used at the farm"
     
-        "为青楼做贡献": # improve brothel
+        "Help the brothel": # improve brothel
         
             you "With such an outstanding performance you deserve to take on a few more responsibilities. I will be counting on your help to further improve the brothel."
     
             menu:
                 girl.char "Is there anything in particular I can help you with?"
  
-                "招揽更多客人": # rep/customers boost (scope = brothel)
+                "Bring in more customers": # rep/customers boost (scope = brothel)
                 
                     you "I have a new advertising campaign in mind for [brothel.name]. For the next few weeks I want you to run a lap through the streets of Zan every night, right before we open our doors."
                     
@@ -700,7 +700,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "customers", int(4 * modifier), scope="brothel")]
                     $ effect_comment = "more customers will visit the brothel"
                     
-                "为任务和培训做准备" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
+                "Prep for quests and classes" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
 
                     you "I want you to thoroughly research the quests and classes our girls attend. Properly brief them beforehand!"
 
@@ -719,7 +719,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "quest rewards", 0.5*modifier, scope="brothel"), Effect("boost", "class results", 1*modifier, scope="brothel")]
                     $ effect_comment = "quests and classes will yield better rewards"
                     
-                "担任大堂经理" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
+                "Act as a floor manager" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
                 
                     you "The other girls respect and look up to you. You should use this opportunity to take the lead and make sure everything in the brothel runs smoothly."
 
@@ -738,7 +738,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "job customer capacity", int(2*modifier), scope="brothel")]
                     $ effect_comment = "your girls (excluding whores) will be able to serve more customers"
                     
-                "帮我跑腿" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
+                "Help me with my errands" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
 
                     you "I want you to accompany me whenever I go to the city. You can help me gather resources for the brothel."
 
@@ -757,7 +757,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "city rewards", 1*modifier, scope="brothel"), Effect("change", "city rewards", 1+int(1*modifier), scope="brothel"), Effect("boost", "resource extraction", 1*modifier, scope="brothel")]                
                     $ effect_comment = "city rewards and resource extraction rates are improved"
                     
-                "惩罚其他女孩" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
+                "Punish the other girls" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
 
                     you "The other girls need to get it into their skulls that if they don't perform like you did, it's a one way trip to the slavemarket. Take this whip and force them to work harder than they've ever worked before."
 
@@ -777,7 +777,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "fear gains", 0.25*modifier, scope="brothel")]
                     $ effect_comment = "fear will increase faster"
                     
-                "保护其他女孩" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
+                "Protect the other girls from harm" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
 
                     you "I'm counting on you to step in if any of our girls get into trouble."
 
@@ -796,7 +796,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "defense", int(1*modifier), scope="brothel")]
                     $ effect_comment = "girls in the brothel will be able to defend themselves better"
                     
-                "协助我施法" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
+                "Help me with my enchantments" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
 
                     you "Your performance has been quite admirable. Can you show the same dedication in helping me with my spells?"
 
@@ -815,7 +815,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("change", "mana", int(2*modifier), scope="brothel")]
                     $ effect_comment = "your available mana will increase"
                     
-                "装饰青楼" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
+                "Decorate the brothel" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
 
                     you "This place looks like a dump. Spruce it up for me."
 
@@ -834,7 +834,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "love gains", 0.25*modifier, scope="brothel"),Effect("boost", "prestige", 0.1*modifier, scope="brothel")]
                     $ effect_comment = "your girls' love and your brothel's prestige will improve more rapidly"
                            
-                "确保所有人都按时锻炼" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
+                "Make sure all the girls exercise regularly" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
 
                     you "Some of the girls can't quite keep up with you. You're in charge of their physical training routine. Make sure they're fit and ready to put in the work."
 
@@ -854,7 +854,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "energy use", -0.1*modifier, scope="brothel")]
                     $ effect_comment = "your girls will use their energy more efficiently"                
                     
-                "确保农场的动物训练有素" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
+                "Make sure our farm creatures are well trained" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
 
                     you "Gizel has told me that some of our farm creatures are losing their edge. I want you to visit the farm daily and pleasure the animals. But make sure they do not climax!"
 
@@ -873,7 +873,7 @@ label performance_reward(girl):
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.25*modifier, scope="farm")]
                     $ effect_comment = "the farm as a whole will be more effective"
 
-                "对其他女孩顺从一些" if MC.gold > 10000: # boost brothel income
+                "Be subservient to the other girls" if MC.gold > 10000: # boost brothel income
 
                     you "You're too selfish. Stop trying so hard to make a name for yourself and instead just do your best to help the other girls."
 
@@ -887,11 +887,11 @@ label performance_reward(girl):
                         girl.char "I'll try my best... But even so, I want to be the best I can be!" 
 
                     $ extra_effects = [Effect("boost", "income", 0.01*modifier, scope="brothel")] 
-                    $ effect_comment = "青楼的利润应该会有所提高"
+                    $ effect_comment = "your brothel's profits should improve slightly"
     
     hide screen show_event
     
-    "如果一切顺利,接下来的一周 [effect_comment]。"
+    "If all goes well, in the upcoming week [effect_comment]."
 
     python:
     
@@ -1237,11 +1237,11 @@ label undervalued_interact(girl):
                 show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                 with dissolve
 
-                girl.char "你找我吗, 主人?"
+                girl.char "You wanted to speak to me, master?"
 
                 menu:
 
-                    "问她关于[girl.fullnickname]的情况" if girl.nickname["flag1"] == True:
+                    "Ask her about [girl.fullnickname]" if girl.nickname["flag1"] == True:
 
                         you "I've heard some of the slavers refer to you as [girl.fullnickname]. Care to explain?"
 
@@ -1257,7 +1257,7 @@ label undervalued_interact(girl):
 
                         you "That explains things. Resume your duties, I'll have to think of a way for you to clear your name with the slavers guild."
 
-                        girl.char "好的, 谢谢您!"
+                        girl.char "Yes master, thank you master!"
 
                         $ girl.nickname["flag1"] = True
                         $ girl.nickname["flag2"] = True
@@ -1266,7 +1266,7 @@ label undervalued_interact(girl):
                         
                         return
 
-                    "不经意间提起这件事" if girl.nickname["flag1"] == False:
+                    "Bring it up in casual conversation" if girl.nickname["flag1"] == False:
 
                         you "Hello [girl.name], good to see you. Is everything going well?"
 
@@ -1317,7 +1317,7 @@ label undervalued_interact(girl):
 
                             return
 
-                    "恐吓她" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil" or MC.strength >= 4:
+                    "Intimidate her" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil" or MC.strength >= 4:
 
                         you "[girl.name], I've got some bad news."
 
@@ -1368,7 +1368,7 @@ label undervalued_interact(girl):
 
                             jump .undervalued_end_2
 
-                    "算了，我改主意了": 
+                    "No, I've changed my mind": 
 
                         girl.char "Oh... Okay?"
                         
@@ -1376,7 +1376,7 @@ label undervalued_interact(girl):
 
                         jump .undervalued_explanation
 
-            "贿赂奴隶贩子获取情报" if MC.gold >= bribebase * 1.35 and girl.nickname["flag1"] == False:
+            "Bribe a slaver for information" if MC.gold >= bribebase * 1.35 and girl.nickname["flag1"] == False:
 
                 $ bribecost = int(round(bribebase * random.uniform(0.7, 1.3),-1))
                 
@@ -1386,7 +1386,7 @@ label undervalued_interact(girl):
 
                     "You estimate a slaver would ask for around [bribebase] gold in exchange for information. Proceed?"
 
-                    "是":
+                    "Yes":
                     
                         scene black with fade
                         show bg tavern_man at truecenter with dissolve
@@ -1402,7 +1402,7 @@ label undervalued_interact(girl):
                         if d <= 3:
                             "As you slip [bribecost] gold into his pocket, he leans forward and volunteers some information."
 
-                            "奴隶商人" "[girl.name]? We only know her as [girl.fullnickname]. She is on the blacklist under that name."
+                            "Slave Trader" "[girl.name]? We only know her as [girl.fullnickname]. She is on the blacklist under that name."
 
                             "And with that the slaver takes his leave."
 
@@ -1415,15 +1415,15 @@ label undervalued_interact(girl):
 
                             "The slaver grins from ear to ear after you hand him a bribe of [bribecost] gold."
 
-                            "奴隶商人" "Ah, I love the sound of gold entering my pockets. Doubly so if it comes at the expense of a fellow slaver such as yourself."
+                            "Slave Trader" "Ah, I love the sound of gold entering my pockets. Doubly so if it comes at the expense of a fellow slaver such as yourself."
 
                             you "Alright already, I can already tell you've got some bad news for me. Just tell me what I need to know."
 
-                            "奴隶商人" "You've bought a real gutter rat this time. I don't think you'll see a big return on her."
+                            "Slave Trader" "You've bought a real gutter rat this time. I don't think you'll see a big return on her."
 
                             you "Damn! Do her problems with the slavers guild run that deep?"
 
-                            "奴隶商人" "Slavers guild? The guild has nothing to do with it. She's just a stinker, that's all. You should really be exercising due diligence."
+                            "Slave Trader" "Slavers guild? The guild has nothing to do with it. She's just a stinker, that's all. You should really be exercising due diligence."
 
                             you "Yeah yeah, spare me the lecture. My day is bad enough as it is. Just fill me in on the details..."
 
@@ -1433,31 +1433,31 @@ label undervalued_interact(girl):
 
                             "You hand over [bribecost] gold to the slaver, who seems in good spirits."
 
-                            "奴隶商人" "That's the easiest money I've ever made. I'm sorry to say you have been misinformed, [MC.name]."
+                            "Slave Trader" "That's the easiest money I've ever made. I'm sorry to say you have been misinformed, [MC.name]."
 
                             you "How so?"
 
-                            "奴隶商人" "I have never heard of this [girl.lastname] girl. Heaven knows why you'd think that the slavers guild would hold some sort of grudge against her."
+                            "Slave Trader" "I have never heard of this [girl.lastname] girl. Heaven knows why you'd think that the slavers guild would hold some sort of grudge against her."
 
                             you "Are you sure? Her reduced rate at the slavemarket has made me very suspicious about this investment."
 
-                            "奴隶商人" "I'm glad I could ease your mind then, there's nothing fishy about this girl and I'm sure you could make a sizeable profit whenever you decide to sell her on."
+                            "Slave Trader" "I'm glad I could ease your mind then, there's nothing fishy about this girl and I'm sure you could make a sizeable profit whenever you decide to sell her on."
 
-                            "奴隶商人" "Today is a good day, [MC.name]! Let's have a drink to celebrate our good fortune."
+                            "Slave Trader" "Today is a good day, [MC.name]! Let's have a drink to celebrate our good fortune."
 
                             you "Cheers! About that [bribecost] gold though..."
 
-                            "奴隶商人" "Yes [MC.name], many thanks for filling my purse. Glad I could be of help!"
+                            "Slave Trader" "Yes [MC.name], many thanks for filling my purse. Glad I could be of help!"
 
                             jump .undervalued_end_3
 
-                    "否":
+                    "No":
                     
                         hide screen show_event
                     
                         jump .undervalued_explanation
 
-            "仔细分析她的行为" if girl.nickname["flag1"] == False and MC.interactions >= 2: 
+            "Analyze her behavior carefully" if girl.nickname["flag1"] == False and MC.interactions >= 2: 
 
                 "There must be something about [girl.name] that is making the slavers disinterested."
 
@@ -1513,7 +1513,7 @@ label undervalued_interact(girl):
                     return
 
 
-            "先不管她了": 
+            "Leave her be": 
 
                 "You decide to leave this situation alone for now and return to it at a later date."
                 
@@ -1607,15 +1607,15 @@ label undervalued_interact(girl):
 
                 show screen show_event(girl.get_pic("profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
-                girl.char "你确定这个能起作用吗?"
+                girl.char "Are you sure this will work?"
 
-                you "药水会起作用的。但这是否会解决你与奴隶公会的冲突是另一回事。"
+                you "The potion will have its effect. Whether that will solve your conflict with the slavers guild is another matter."
 
-                you "有效成分难以下咽，所以我用了一些辣酱来中和它的味道。"
+                you "The acting components are not very palatable, so I've used some fiends cum to enhance its flavor."
 
-                girl.char "呕... 让我们赶快结束这一切吧。"
+                girl.char "Yikes... Let's just get this over with."
 
-                "[girl.name]捏了捏她的鼻子，迅速地喝下了调制好的东西。"
+                "[girl.name] pinches her nose and swiftly drinks down the concoction."
 
                 play sound s_spell
                 $ girl.add_effects(Effect("change", "valuation", +30), expires = calendar.time + 3)
@@ -1623,42 +1623,42 @@ label undervalued_interact(girl):
                 hide screen show_event
                 scene black with fade
 
-                "在接下来的几天里，[girl.name]在市场上的售价将提高。"
+                "For the next few days, [girl.name] will temporarily fetch a higher price on the market."
 
                 if dice(6) <= 3:
 
-                    "最重要的是，奴隶贩子已经注意到并重新评估了[girl.name]的价值!"
+                    "On top of that, the slavers have taken notice and reevaluated [girl.name]'s base value!"
 
                     jump .undervalued_end_1
 
                 else:
 
-                    "然而，她与奴隶公会的问题似乎仍然存在。"
+                    "However it appears that her problems with the slavers guild remain."
 
                     return
 
 
-            "接受她的外号":
+            "Embrace her nickname":
 
-                "我要反客为主，用它来讨好[brothel.name]的顾客!"
+                "I'll turn this situation on its head and use it to endear her to [brothel.name]'s customers!"
 
-                "我相信如果我为[girl.name]正名，奴隶贩子们也会笑得很开心的。"
+                "I'm sure the slavers will have a good laugh as well if I officially change [girl.name]'s name."
 
-                "她可能不喜欢，但如果能解决这个问题，就值得一试。"
+                "She might not like it, but it's worth a shot if it can get us past this issue."
                 
                 hide screen show_event
                 scene black with fade
 
                 menu:
-                    "我现在该如何称呼[girl.fullname]?"
+                    "What should I call [girl.fullname] from now on?"
 
-                    "[noun]的[girl.name]":
+                    "[girl.name] the [noun]":
 
                         python:
                             girl.lastname = "the " + noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1666,16 +1666,16 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
-                    "[girl.name][trait]":
+                    "[girl.name] the [trait]":
 
                         python:
                             girl.lastname = "the " + trait
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1683,7 +1683,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
                     "[trait] [girl.lastname]":
 
@@ -1691,7 +1691,7 @@ label undervalued_interact(girl):
                             girl.name = trait
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1699,7 +1699,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
                     "[adjective] [girl.name] [girl.lastname]":
@@ -1708,7 +1708,7 @@ label undervalued_interact(girl):
                             girl.name = adjective + " " + girl.name
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1716,7 +1716,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
                     "[trait] [girl.name] the [noun]":
@@ -1726,7 +1726,7 @@ label undervalued_interact(girl):
                             girl.lastname = "the " + noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1734,7 +1734,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
                     "[trait] [noun]":
@@ -1744,7 +1744,7 @@ label undervalued_interact(girl):
                             girl.lastname = noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1752,7 +1752,7 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
                     "[adjective] [trait] [noun]":
@@ -1762,7 +1762,7 @@ label undervalued_interact(girl):
                             girl.lastname = noun
                             girl.fullname = girl.name + " " + girl.lastname
 
-                        "她现在被称为[girl.fullname]。"
+                        "She is now known as [girl.fullname]."
 
                         if dice (6) >= 3:
 
@@ -1770,98 +1770,98 @@ label undervalued_interact(girl):
 
                         else:
 
-                            "尽管如此，奴隶公会丝毫不为所动，她的污名仍未洗脱。"
+                            "Despite this, the slavers guild hasn't budged an inch and her name is still not cleared."
                             return
 
-                    "思考片刻, 不值得为她付出这么多":
+                    "On second thought, she doesn't deserve this":
 
                         jump .undervalued_solution
 
-            "让她去奴隶公会提供服务一周":
+            "Send her off to serve the slavers guild for a week":
 
-                "像我这样的妓院老板可惹不起奴隶公会。"
+                "A brothel owner like myself can't afford to get on the slavers guild's bad side."
 
                 "Let's settle this quickly by sending [girl.name] on a redemption quest."
 
-                "我直接去公会谈条件比较好。"
+                "I'll head straight to the guild to strike a deal."
 
                 hide screen show_event
                 scene black with fade
                 show bg tavern_man at truecenter with dissolve
 
-                "奴隶商人" "贵安, [noun] peddling [MC.name]. 请说明你的来意。"
+                "Slave Trader" "Greetings, [noun] peddling [MC.name]. State your business."
 
-                you "我是来和你谈谈关于[girl.name]的事的。"
+                you "I'm here to talk about [girl.name]."
 
-                "奴隶商人" "我们为什么会对这种[adjective]的货感兴趣。"
+                "Slave Trader" "Why would we be interested in such [adjective] goods."
 
-                "奴隶商人" "那个[trait]的姑娘除了让人失望一无是处。 让我们失望可没好下场。"
+                "Slave Trader" "That [trait] girl has nothing to offer us besides disappointment. There's no profit in disappointment."
 
-                you "没有利润?那这样吧:作为善意的表示，我愿意牺牲我自己的利润，这样你能否再给这个女孩一次机会呢。"
+                you "No profit? Then how about this: As a gesture of goodwill, I'm willing to tank my own profits so that you can give this girl another chance."
 
-                "奴隶商人" "洗耳恭听..."
+                "Slave Trader" "Keep talking..."
 
-                you "你可以在接下来的一周让她提供服务。我会用一笔象征性的金额代替合同上的常规费用。"
+                you "You can make use of her services for the upcoming week. And I'll replace her usual fee on the contract with a token amount."
 
-                you "你对她做什么是你的事，从中获得的任何利润都是你的。"
+                you "What you do with her is your business, and any profits gained from it are yours to keep."
 
-                "奴隶商人" "Hmm..."
+                "Slave Trader" "Hmm..."
 
-                "奴隶商人" "看来你知道要打动一个奴隶贩子的心，就得给出足够吸引人的条件。那就一言为定。"
+                "Slave Trader" "You know the way to a slaver's heart is through enlarging his coinpurse. We have a deal."
 
-                "奴隶商人" "作为交换，我们会重新考虑对[girl.name][trait]的评价。"
+                "Slave Trader" "In exchange, we'll reconsider our reservations towards [girl.name] the [trait]."
 
-                "奴隶商人" "我现在就把她带走。"
+                "Slave Trader" "I'll take her with me right away."
 
                 call take_leave(girl, 7)
 
                 jump .undervalued_end_1
 
-            "与奴隶公会达成和解" if MC.gold >= settlementcost:
+            "Reach a settlement with the slavers guild" if MC.gold >= settlementcost:
 
-                "奴隶公会的决策很容易被适量的金钱所左右。"
+                "The slaver guild's mind can easily be swayed with the right amount of gold."
 
-                "我们去拜访他们吧。"
+                "Let's pay them a visit."
 
                 hide screen show_event
                 scene black with fade
                 show bg tavern_man at truecenter with dissolve
 
-                "奴隶商人" "可以......如果你不是[MC.name]的话! 你可疑的投资最近成了奴隶公会的话题。"
+                "Slave Trader" "Well, if it isn't [MC.name]! Your dubious investments have been a topic of conversation at the slavers guild lately."
 
-                "奴隶商人" "你是想趁机脱手[trait]的[noun]? 如果是这样，我们对损坏的货物不感兴趣。"
+                "Slave Trader" "Are you here to get rid of your [trait] [noun] by chance? If so, we are not interested in those damaged goods."
 
-                you "不，实际上，我支持这笔投资。"
+                you "No actually, I stand by that investment."
 
-                "奴隶商人" "哦?"
+                "Slave Trader" "Oh?"
 
-                you "我想做个公平的交易，为她正名。我相信没有什么问题是钱不能解决的。"
+                you "I wish to make a fair exchange to clear her name. I'm sure we can agree that everything has a price."
 
-                "奴隶商人" "说的一点没错。"
+                "Slave Trader" "That's a certainty."
 
-                "奴隶商人" "我可以帮她把事情摆平，但你得付出代价..."
+                "Slave Trader" "I can smooth things over for her, but it'll cost you..."
 
                 menu:
 
-                    "奴隶商人" "我可以满足你的要求，只要[settlementcost]金币。"
+                    "Slave Trader" "I can do as you ask for [settlementcost] gold."
 
-                    "成交!":
+                    "We have a deal!":
                         play sound s_gold
                         $ MC.gold -= settlementcost
 
-                        "奴隶商人" "合作愉快!"   
+                        "Slave Trader" "Pleasure doing business!"   
 
                         jump .undervalued_end_1
 
-                    "我觉得这买卖不划算":
+                    "I'm not willing to pay that price":
 
-                        "奴隶商人" "那就别浪费我的时间，滚出去！"
+                        "Slave Trader" "Then stop wasting my time and get out."
 
                         return
 
-            "也许下次吧":
+            "Perhaps some other time":
 
-                "你决定暂时忽略这个问题，以后再来处理它。"
+                "You decide to ignore the situation for now and return to it at a later date."
 
                 return
 
@@ -1876,8 +1876,8 @@ label .undervalued_end_1: #slavers guild
 
     $ pasttense = girl.nickname["trait"].get_past_tense()
 
-    "你理解了为什么[girl.name]被称为[girl.fullnickname]了。因为她[pasttense]。"
-    "她不再被奴隶公会列入黑名单。"
+    "You have understood that [girl.name] was known as [girl.fullnickname] because she [pasttense]."
+    "She is no longer blacklisted by the slavers guild."
 
     python:
         for trait in girl.traits:
@@ -1919,8 +1919,8 @@ label .undervalued_end_2: #negative trait
                 newtrait = weighted_choice(trait_list)
                 add_trait_perkless(girl, newtrait)
 
-    "直到现在你才注意到[girl.name]还有这样的特质: [newtrait.base_description]"
-    "这也解释了为什么她在奴隶市场上不受欢迎。"
+    "There's something you've failed to notice about [girl.name] until this moment: [newtrait.base_description]"
+    "That also explains why she was not in high demand at the slavemarket."
 
     $ girl.nickname = {"adjective" : None, "trait" : None, "noun" : None, "story" : None, "reason1" : None, "reason2" : None, "flag1" : False, "flag2" : False}
     $ girl.fullnickname = None
@@ -1934,7 +1934,7 @@ label .undervalued_end_3: #no trait
     hide screen show_event
     scene black with fade
 
-    "你明白[girl.name]没有任何错，你完全有权利在奴隶市场为她要求更高的价钱。"
+    "You've understood that there is nothing wrong with [girl.name] and you're well within your right to demand a higher fee for her at the slavemarket."
 
     python:
         for trait in girl.traits:
@@ -1962,21 +1962,21 @@ label fix_neg_interact(girl, trait = trait):
     $ renpy.show(room, at_list = [top])
     with dissolve
 
-    "尽管[girl.name]已经努力了很久,但她还有一个弱点没能克服。"
+    "Although [girl.name] has come a long way, there is still one weakness that she hasn't been able to overcome."
 
     "[trait.base_description]"
 
-    "最近她一直跟你说她真的想试试[description]"
+    "Lately she has been telling you that she really wants to try to [description]"
 
     menu:
-        "你想帮她一把吗?"
+        "Would you like to help her?"
 
-        "训练: [training]":
+        "Training: [training]":
 
             scene black with fade
             hide screen show_event
 
-            "也许这个缺点无法完全改正，但你愿意和她一起努力，充分利用这个缺点。"
+            "It might not be possible to completely fix this weakness, but you're willing to work with her to make the most of it."
 
             python:
                 tag = traitking_neg_evolved_desc[trait.name + " pic"]
@@ -2004,23 +2004,23 @@ label fix_neg_interact(girl, trait = trait):
 
             if girl.neg_fix_counter == 0:
 
-                "如果她想提高自己，她还有很长的路要走。"
+                "She still has a long way to go if she wants to improve herself."
 
             elif girl.neg_fix_counter == 1:
 
-                "她在解决这一弱点方面取得了一些进展。"
+                "She has made some progress towards fixing this weakness."
 
             elif girl.neg_fix_counter == 2:
 
-                "她已快完成训练了。你怀疑这一切结束后, [new_description]"
+                "She has nearly completed her training. You suspect that when this is all over, [new_description]"
 
             elif girl.neg_fix_counter >= 3:
 
-                "[girl.name]终于克服了她的弱点!"
+                "[girl.name] has finally overcome her weakness!"
 
-                "你以前常跟顾客说[old_description]"
+                "You used to tell customers that [old_description]"
 
-                "然而，从那时起，她努力工作，成长了很多。现在[new_description]"
+                "However, she has worked hard and grown a lot since then. Now [new_description]"
 
                 $ girl.remove_trait(trait)
                 $ add_trait_perkless(girl, newtrait)
@@ -2028,7 +2028,7 @@ label fix_neg_interact(girl, trait = trait):
                 
             return
 
-        "也许下次再说吧":
+        "Perhaps some other time":
         
             return
             
@@ -2040,33 +2040,33 @@ label freedom_interact(girl):
 
     $ renpy.show(brothel.bedroom_type.get_bg(), at_list = [top]) 
     
-    "当你在青楼里转悠的时候, 你碰到了拿着几份文件的[girl.name]。"
+    "As you make your rounds through the brothel, you bump into [girl.name] clutching some paperwork."
 
     show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
     with dissolve
 
-    girl.char "主人，我们能聊聊吗?"
+    girl.char "Master, can we have a word?"
     
-    $ mc_response = rand_choice(["怎么了, " + girl.name + "?", "当然可以, " + girl.name + "。畅所欲言吧。", "行，长话短说。", "出什么事了, " + girl.name + "?"])
+    $ mc_response = rand_choice(["What is it, " + girl.name + "?", "Of course, " + girl.name + ". Speak your mind.", "Naturally. Make it quick.", "What's the matter, " + girl.name + "?"])
     $ renpy.say(you, mc_response)
 
-    girl.char "我一直在想..."
+    girl.char "I've been thinking..."
 
-    $ reason_intro = rand_choice(["照这样下去，我越来越享受做奴隶的生活了。", "当奴隶比我想象的有趣多了。", "我非常喜欢在这样的妓院工作。", "我想我真的可以在这个行业中成就一番事业。", "奴隶制名声不好，但也并不像他们说的那么可怕。", "这样生活就简单多了，我知道主人会照顾我。"])
-    $ reason_problem = rand_choice(["不幸的是，作为一个自由的女孩，我往往在所有错误的方式得到特殊待遇。我将永远是一个被遗弃的人。", "但我意识到，只有在你愿意帮助我更进一步的情况下，我才能迈出下一步。", "为了事业的发展，我必须敢于冒险。", "如果生活教会了我什么，那就是做一个奴隶可以让你出人头地。", "我迫不及待地想采取下一步行动。我认真考虑了很久，最好的办法就是让你来掌控我的命运。"])
-    $ reason_solution = rand_choice(["这就是我为你准备这份合同的原因。如果一次性付款，我愿意签字放弃我的自由。你说呢?", "所以我决定正式成为你的奴隶。如果你对我的服务感兴趣的话。", "这就是为什么我想就这份合同进行谈判...", "这就是为什么... 算了, 仔细看看这份合同吧!"])
+    $ reason_intro = rand_choice(["The way things are going, I'm really enjoying my life as a slave.", "Being a slave is so much more fun than I ever thought it would be.", "I absolutely love working in a brothel like this.", "I think I could truly make a career out of this profession.", "Slavery gets a bad rep. It isn't as terrible as they say.", "Life is much simpler this way, knowing that my Master will take care of me."])
+    $ reason_problem = rand_choice(["Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast.", "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level.", "To further my career, I must be willing to take bold risks.", "If life has taught me anything, it's that being a slave can get you places.", "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."])
+    $ reason_solution = rand_choice(["That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?", "That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is.", "That's why I would like to start negotiations regarding this contract...", "That's why... Well, just have a look at this contract!"])
     
     if girl.personality.name == "sweet":
 
         $ renpy.say(girl.char, reason_intro)
 
-        "但是我们目前的合同是有期限的。我想把我的余生都献给你，这样我们在一起的美好时光就永远不会结束。"
+        "But our current agreement is only valid for a limited time... I want to commit the rest of my life to you, so that our time together may never end."
 
         $ renpy.say(girl.char, reason_solution)    
 
-        "她递给你一份官方文件，详细说明了所有权转让的条件。"
+        "She hands you an official document detailing conditions for transference of ownership."
     
-        girl.char "瞧，我知道我已经是你的{i}临时{/i}奴隶了...但如果我们能让这种关系长久下去，我就更安心了!我真的很想和你共度余生!"
+        girl.char "Look, I know I'm already your {i}temporary{/i} slave as it stands... It would just really ease my mind if we could make this permanent! I really want to spend the rest of my life at your side!"
     
     else:
     
@@ -2074,57 +2074,57 @@ label freedom_interact(girl):
         $ renpy.say(girl.char, reason_problem)
         $ renpy.say(girl.char, reason_solution)    
 
-        "她递给你一份官方文件，详细说明了所有权转让的条件。"
+        "She hands you an official document detailing conditions for transference of ownership."
 
-        girl.char "我知道我已经是你的{i}临时{/i}奴隶了... 即使合约到期了，我也想继续在[brothel.name]工作。"
+        girl.char "I know I'm already your {i}temporary{/i} slave as it stands... I just really want to continue doing this even after my spell at [brothel.name] ends."
     
-    "看来她对这份合同的内容和含义的理解非常有限。如果她签了字，她的余生都将被你奴役。"
+    "It seems like she has a very limited understanding about the contents and implications of this contract. She would be enslaved for the rest of her life if she were to sign it."
 
     $ price_modifier = max(0.6, min(5 , 0.4 + sum([t for o, t in girl.jp.items()]) / 600))
     $ price = int(round(girl.get_price("sell") * random.uniform(0.6, 2.2)*price_modifier,-2))
     $ price_str = str(price)
     $ value_str = str(int(round(girl.get_price("sell")*random.uniform(0.8,1.2),-1)))
 
-    "只要[price_str]金币,她就将抛弃自己的自由和权利，成为你的所有物。"
+    "For a fee of [price_str] gold, she would be willing to sign away her freedoms indefinitely and become your property."
 
     if price_modifier >= 1.5: 
     
-        "看来她要讨价还价了。这个虚高的价格显然考虑到了她丰富的经验。"
+        "It looks like she'll drive a hard bargain. That inflated price tag clearly takes her extensive experience into account."
     
     if MC.playerclass == "Trader":
         
-        "你估算了一下她的市场价，大概在[value_str]金币。"
+        "You estimate her current market value to be around [value_str] gold."
         
     elif MC.get_alignment() == "evil": 
     
-        "你考虑了一下，如果你在签完这份合同后马上把她卖掉，她能卖多少钱..."
-        "稍加改造, 她大概可以在奴隶市场卖到[value_str]金币。"
+        "You consider what price she could fetch if you were to sell her on immediately after signing this contract..."
+        "With a bit more work, she would probably be valued around [value_str] gold at the slavemarket."
         
     elif MC.get_alignment() == "good" or price_modifier <= 1: 
     
-        you "你确定要这么做吗, [girl.name]? 你知不知道这份合同意味着什么?"
+        you "Are you sure this is a good idea, [girl.name]? Do you understand what this contract is about?"
         
-        girl.char "当-当然, 你看... 有位客人曾告诉我..."
+        girl.char "W-well,  you see... I was talking to one of our customers..."
         
-        girl.char "他说魔法花园附近有个地方很需要像我这样的专业人员。"
+        girl.char "He says there's this establishment near the Magic Gardens where someone with my expertise is highly sought after."
 
-        girl.char "但据他所说，他们有一项政策，那里只雇用签订合同的女孩... 所以我在想...我可能需要这个来继续我在[brothel.name]的工作, 不是吗?"
+        girl.char "But according to him, they have a policy to only employ girls who have filled in this form... So that's what got me thinking... I probably need this to continue working after my spell at [brothel.name], don't I?"
 
-    "她显然是昏了头。这份合同允许你把她的灵魂卖给出价最高的人，所有的利润都归你所有。"
+    "She's clearly in way over her head. This contract would empower you to sell her soul to the highest bidder and keep all the profits to yourself."
     
-    "不过话又说回来，这也不是你第一次利用女孩的无知来谋取私利了。"
+    "Then again, it wouldn't be the first time you've taken advantage of a girl's naivety for personal gain."
     
-    girl.char "好-好吧?你怎么想?"
+    girl.char "W-well? What do you think?"
     
     menu:
     
-        "接受出价([price_str]金币)" if MC.gold >= price:
+        "Agree to the terms ([price_str] gold)" if MC.gold >= price:
         
             jump .freedom_end_1
 
-        "和她讨价还价":
+        "Try to haggle her down":
         
-            you "这价格我接受不了。你就不能再便宜点?"
+            you "I can't agree to that price. Would you be willing to come down a bit?"
         
             $ new_price = int(round(girl.get_price("sell") * random.uniform(0.5, 2.0)*price_modifier,-1))
             
@@ -2133,23 +2133,23 @@ label freedom_interact(girl):
                 $ price = new_price
                 $ price_str = str(price)
                 
-                girl.char "*撅嘴* 你可真会砍价... [price_str]金币! 这是我的底线了!"
+                girl.char "*pout* You're too good at this... [price_str] gold! That's my final offer!"
             
                 menu:
                     
-                    "成交([price_str]金币)" if MC.gold >= price:
+                    "We have a deal ([price_str] gold)" if MC.gold >= price:
                     
                         jump .freedom_end_1
                 
-                    "不太满意":
+                    "Not good enough":
                     
-                        you "我很高兴你来找我，但恐怕我对这个不感兴趣。也许改天吧。"
+                        you "I appreciate your offer, but I'm afraid it doesn't sufficiently align with my interests. Perhaps some other time."
                         
                         hide screen show_event
                     
             else:       
             
-                girl.char "这价格还不够划算吗! *噘嘴* 算了!也许我应该把自己卖给{i}欣赏{/i}我的其他人。"
+                girl.char "But my original offer is a bargain! *pout* Never mind, then! Perhaps I should sell myself to some other Master who {i}does{/i} appreciate what I bring to the table."
                 
                 $ girl.change_love(-10)
                 $ girl.change_mood(-10)
@@ -2158,9 +2158,9 @@ label freedom_interact(girl):
             
                 return
 
-        "拒绝她的好意":
+        "Refuse her offer":
         
-            you "我很高兴你来找我，但恐怕我对这个不感兴趣。也许改天吧。"
+            you "I appreciate your offer, but I'm afraid it doesn't align with my interests. Perhaps some other time."
             
             hide screen show_event
             
@@ -2170,7 +2170,7 @@ label freedom_interact(girl):
             
 label .freedom_end_1: #free to slave (on girl's own initiative)
 
-    you "成交。等我把钱凑齐，这样我们就可以马上签合同了。"
+    you "We have a deal. Let me gather the coin so we can sign this contract at once."
 
     call dialogue(girl, "slave effusive thanks")
     
@@ -2178,7 +2178,7 @@ label .freedom_end_1: #free to slave (on girl's own initiative)
     $ girl.original_price = price
     $ girl.free = False
     
-    "[girl.fullname]成为了[MC.name]的所有物。"
+    "[girl.fullname] has become property of [MC.name]."
     
     hide screen show_event
 
@@ -2201,7 +2201,7 @@ label ext_party(girl):
 
         renpy.show("brothel" + str(brothel.pic_index), at_list = [top])
 
-        party_intro = rand_choice([girl.name + "邀请了一些朋友来" + brothel.name + "狂欢。",girl.name + "为她的朋友们举办了一场派对。",girl.name + "的朋友们对她今天的邀请表示诧异。"])
+        party_intro = rand_choice([girl.name + " has invited some friends over to visit " + brothel.name + ".",girl.name + " is throwing a party for her friends.",girl.name + "'s friends have surprised her with a visit today."])
 
         party_personality_comment = {
 
@@ -2231,15 +2231,15 @@ label ext_party(girl):
         party_bonus = ""
         
         if girl.is_("very idealist") and dice(6) <= 4:
-            party_bonus += rand_choice(["其中一位客人送给你一份礼物以表示对" + brothel.name + "举办的派对的谢意。", "临走之前," + girl.name + "的朋友们对你在这难忘的一天里所做的一切表示感谢。"]) + " 你收到一束花。"
+            party_bonus += rand_choice(["One of the visitors hands you a gift to thank " + brothel.name + " for hosting the party.", "Before they leave, " + girl.name + "'s friends come up to you to thank you for your part in an unforgettable day."]) + " You receive a bouquet of flowers. "
             MC.items.append(get_rand_item(item_types = ["Flower"]))
 
         if girl.is_("very extravert") or dice(6) <= 3:
-            party_bonus += rand_choice(["姑娘们在" + brothel.name + "里度过了一段快乐的时光。", "不久客人们就离开了。美好的时光总是短暂的。", "过了一会儿，聚会结束了。 " + girl.name + "的朋友们面带笑容的离开了这里。"]) + " "
+            party_bonus += rand_choice(["The girls really enjoy their time in " + brothel.name + ".", "Before long the visitors take their leave. Time flies by when you're having fun.", "After a while the party comes to an end. " + girl.name + "'s friends leave with smiles on their faces."]) + " "
             brothel.change_rep(girl.rank*2)
 
         if girl.is_("very introvert") and dice(6) <= 4:
-            party_bonus += rand_choice(["派对结束后，他们小心翼翼地收拾残局。", "他们尽最大努力把场地打扫干净。", "他们一定得把这个地方打扫干净。"]) + " "
+            party_bonus += rand_choice(["As the party winds down, they take great care to clean up their mess.", "They do their utmost to clean up after themselves.", "They make sure to tidy the place up."]) + " "
             brothel.change_dirt(-girl.rank*2)
             
         renpy.say("",party_bonus)
@@ -2255,9 +2255,9 @@ label ext_party(girl):
             renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             party_bonus_gold = max(40 + dice(60), int(round(girl.rank * random.uniform(20.0, 100.0))))
-            party_bonus = rand_choice(["在她的朋友离开后, " + girl.name + "来和你分享战利品。", "当访客离场后，" + girl.name + "带着一个礼物来到你身边。"])
-            party_bonus_comment = rand_choice(["如果我们把这里弄乱了，我很抱歉。我们会支付一些金币来表示我们对" + brothel.name + "的歉意。", "我向姑娘们收了" + brothel.name + "的入场费。你应该得到其中的大部分，这样才对。", "对不起，主人。也许我应该先征得你的同意。我希望你能原谅我。"])
-            renpy.say("",party_bonus + "她递给你" + str(party_bonus_gold) + "金币。")
+            party_bonus = rand_choice(["After her friends are gone, " + girl.name + " comes up to you to share some of the spoils.", "When the visitors have come and gone, " + girl.name + " approaches you with a gift."])
+            party_bonus_comment = rand_choice(["I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards " + brothel.name + ".", "I charged the girls a fee to enter " + brothel.name + ". It's only right that you should recieve most of that.", "I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me."])
+            renpy.say("",party_bonus + " She hands you " + str(party_bonus_gold) + " gold.")
             renpy.play(s_gold, "sound")
             MC.gold += party_bonus_gold
             renpy.say(girl.char,party_bonus_comment)
@@ -2271,7 +2271,7 @@ label ext_holiday_newyear:
     scene black with fade
     show expression bg_bro at top with dissolve
     
-    "今天是{b}{color=[c_orange]}新年{/color}{/b}的第一天， 克塞罗斯各地的人们忙着互相友好地打招呼。 {i}你估计今晚没多少顾客了。{/i}"
+    "Today marks the beginning of a {b}{color=[c_orange]}new year{/color}{/b}. People all over Xeros busy themselves exchanging friendly greetings with one another. {i}You're not expecting many customers tonight.{/i}"
     $ MC.add_effects(Effect("change", "customers", -4, scope="brothel", scales_with="district"), expires = calendar.time + 1)
     
     python:
@@ -2287,8 +2287,8 @@ label ext_holiday_valentines:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "{b}{color=[c_orange]}情人节{/color}{/b}到了, 浪漫和爱情的庆典。在今天，表达爱意的手势尤其有效。"
-    "克塞罗斯的热恋中的人利用这个机会向他们所爱的人公开倾诉爱意。"
+    "It's {b}{color=[c_orange]}Valentine's Day{/color}{/b}, a celebration of romance and love. Gestures of affection are especially effective today."
+    "Lovestruck people of Xeros take this opportunity to openly profess their adoration to the ones they love."
 
     $ MC.add_effects(Effect("boost", "love gains", 2, scope="world"), expires = calendar.time + 1)
     
@@ -2299,7 +2299,7 @@ label ext_holiday_valentines:
                 if not holiday_pic:
                     holiday_pic = girl.get_pic("profile", and_tags="happy", naked_filter=True, soft=True)
 
-                approach = [girl.name + "红着脸向你奔来。","你发现" + girl.name + "向你跑来。",girl.name + "想对你倾诉。", "你被" + girl.name + "拦了下来, 她想和你说些什么。", "你被" + girl.name + "拽住袖子, 她看起来有话要说。", girl.name + "拽着你的胳膊，想说点什么。", "你遇到了" + girl.name + ", 她想表达心中的感情。", "你听到" + girl.name + "喊着你的名字向你跑来。", "你听到" + girl.name + "喊着你的名字,渴望向你表达爱意。", "你惊讶的发现" + girl.name + "想和你说话。"]
+                approach = [girl.name + " rushes towards you with flushed red cheeks.","You notice " + girl.name + " rushing towards you.",girl.name + " wishes to speak to you.", "You're stopped by " + girl.name + ", who wants to talk to you.", "You're held up by " + girl.name + ", who has something on her mind.", girl.name + " tugs on your arm, eager to say something.", "You run into " + girl.name + ", who candidly speaks her mind.", "You hear " + girl.name + " shouting your name as she runs up to you.", "You hear " + girl.name + " calling for you, eager to express what's on her mind.", "You're surprised by " + girl.name + ", who urgently wishes to speak with you."]
                 
                 renpy.say("",rand_choice(approach))
                 
@@ -2321,20 +2321,20 @@ label ext_holiday_salvation:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "今天是{b}{color=[c_orange]}赎罪日{/color}{/b}。太阳神教堂庆祝光明之神阿里奥斯的点火仪式。"
-    "太阳神的信徒遵循传统，今天在家里点一支蜡烛。他们中最虔诚的人会拿着蜡烛去大教堂接受太阳神的祝福。"
+    "Today marks the {b}{color=[c_orange]}Day of Salvation{/color}{/b}. The church of Arios celebrates the kindling of Arios, the god of Light."
+    "Followers of Arios traditionally light a candle in their homes on this day. The most devout among them then carry that candle to the Cathedra to recieve Arios' blessings."
 
     if MC.god == "Arios":
-        "你命令女孩们跪下来祈祷。你为她们每人点燃一支蜡烛。然后你指示他们把蜡烛带到大教堂。"
+        "You order your girls to kneel and pray as you light a candle for each of them. You then instruct them to carry their candles to the Cathedra."
         $ MC.good += 3
         $ MC.add_effects(Effect("boost", "all jp gains", 1.0, scope="brothel"), expires = calendar.time + 1)
         $ MC.add_effects(Effect("boost", "energy use", 0.25, scope="brothel"), expires = calendar.time + 1)
     elif MC.god == "Shalia":
-        "作为伊斯兰教的信徒，你鄙视今天的庆祝活动。你命令你的姑娘们把遇到的蜡烛都掐灭。 {i}青楼的威胁等级略微提升了。{/i}"
+        "As a follower of Shalia, you despise today's celebrations. You order your girls snuff out any candle they come across. {i}This slightly increase your brothel's threat build up.{/i}"
         $ MC.evil += 3
         $ MC.add_effects(Effect("boost", "threat build up", 0.5, scope="brothel"), expires = calendar.time + 1)
     else:
-        "虽然你不遵循太阳神教的教义，但你决定无视传统，点燃一支蜡烛。"
+        "Although you do not follow the teachings of Arios, you decide to light a candle regardless for tradition's sake."
         $ MC.good += 1
         $ MC.add_effects(Effect("boost", "all jp gains", 0.25, scope="brothel"), expires = calendar.time + 1)
 
@@ -2398,9 +2398,9 @@ label ext_holiday_ascension:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "今天克塞罗斯的人们庆祝{b}{color=[c_orange]}耶稣升天{/color}{/b}。"
-    "太阳神教会鼓励大众以不同的眼光看待他人，宣扬对陌生人的善良和同情。伊斯兰教法信徒利用这个机会欺骗和欺骗那些相信教会信息的人。"
-    "{i}由于今天的庆典活动，泽恩的一些自由女孩可能对你更感兴趣了。{/i}"
+    "Today the people of Xeros celebrate {b}{color=[c_orange]}Ascension{/color}{/b}."
+    "The church of Arios encourages the masses to see people in a different light, preaching kindness and compassion towards strangers. Shalia worshippers take this opportunity to swindle and deceive those who have fallen for the church's message."
+    "{i}Some free girls in the city of Zan may have become more interested in you thanks to today's festivities.{/i}"
     
     python:
     
@@ -2428,16 +2428,16 @@ label ext_holiday_night:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "今晚，莎莉娅的信徒庆祝她在{b}{color=[c_orange]}夜色之暗{/color}{/b}期间与黑夜融为一体。"
-    "伊斯兰教法的信徒被鼓励对非信徒实施阴谋。 {i}恐惧收益在这一天得到显著提升{/i}。"
+    "Tonight followers of Shalia celebrate Her descent into darkness during the {b}{color=[c_orange]}Night of Nights{/color}{/b}."
+    "Worshippers of Shalia are encouraged to carry out plots against non-believers. {i}Fear gains receive a significant boost on this day{/i}."
 
     $ MC.add_effects(Effect("boost", "fear gains", 2, scope="world"), expires = calendar.time + 1)
 
     if MC.god == "Arios":
-        "因为你信奉太阳神, 在这一天{i}威胁等级显著提高了{/i}。"
+        "As you worship Arios, {i}threats to your brothel will build up much faster{/i} on this day."
         $ MC.add_effects(Effect("boost", "threat build up", 3, scope="brothel"), expires = calendar.time + 1)
     elif not MC.god:
-        "因为你不信封莎莉娅, 在这一天{i}威胁等级显著提高了{/i}。"
+        "As you do not worship Shalia, {i}threats to your brothel will build up faster{/i} on this day."
         $ MC.add_effects(Effect("boost", "threat build up", 1, scope="brothel"), expires = calendar.time + 1)
         
     $ girl = rand_choice(MC.girls)
@@ -2456,9 +2456,9 @@ label ext_holiday_hmas: # Winter Solstice, hmas eve
     scene black with fade
     show expression bg_bro at top with dissolve
     
-    "在这一天，克赛罗斯经历了冬至，这是白昼最短的一天。"
-    "伊斯兰教法的信徒们欢欣鼓舞，因为他们经历了一年中最长的夜晚。太阳神的信徒们从这里得到安慰，因为太阳神之光再次明亮地燃烧，日子会变得更长。"
-    "{i}顾客们将为今晚的服务支付额外费用。{/i} 明天，家家户户将聚在一起庆祝{b}{color=[c_orange]}圣诞{/color}{/b}。你是乖孩子吗?"
+    "On this day Xeros experiences the winter solstice, a day with the shortest period of daylight."
+    "Followers of Shalia rejoice as they experience the longest night of the year. Arios worshippers take solace in the thought that from here on, the days become longer as the Light of Arios burns brightly once more."
+    "{i}Customers will pay a premium to get served tonight.{/i} Tomorrow families will unite to celebrate {b}{color=[c_orange]}Hmas{/color}{/b} together. Have you been naughty or nice?"
 
     $ MC.add_effects(Effect("boost", "income", 0.25, scope="brothel"), expires = calendar.time + 1)
 
@@ -2487,7 +2487,7 @@ label ext_birthday(girl): # girl's birthday
     show expression bg_bro at top with dissolve
 
     python:
-        renpy.say("","今天是 {b}{color=[c_orange]}" + girl.name + "的生日{/color}{/b}。 {i}在女孩的生日那天，好感和恐惧更容易受到影响。{/i}")
+        renpy.say("","It's {b}{color=[c_orange]}" + girl.name + "'s birthday{/color}{/b} today. {i}Love and fear can be influenced much more effectively on a girl's birthday.{/i}")
         girl.add_effects(Effect("boost", "love gains", 2), expires = calendar.time + 1)
         girl.add_effects(Effect("boost", "fear gains", 2), expires = calendar.time + 1)
     

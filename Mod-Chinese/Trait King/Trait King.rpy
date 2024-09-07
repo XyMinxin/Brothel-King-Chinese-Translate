@@ -1079,7 +1079,7 @@ label traitking_init:
                    "Brutal pic" : "fight",
                    "Brutal and_tag" : "",
 
-                   "Dumb description" : "讲一个有趣的笑话。",
+                   "Dumb description" : "tell a clever joke.",
                    "Dumb training" : "Tell a joke",
                    "Dumb intro" : "You tell her to give it her best shot.",
                    "Dumb pos_reaction" : "She tells you a joke: '{i}" + rand_choice(jokes["harmless"]) + "{/i}'",
@@ -1175,7 +1175,7 @@ label traitking_init:
                    "Cold pic" : "sensitivity",
                    "Cold and_tag" : "embar",
 
-                   "Jaded description" : "别紧张。",
+                   "Jaded description" : "take it easy.",
                    "Jaded training" : "Supervise the other girls",
                    "Jaded intro" : "You recommend that she practices taking on a supervisory role to support the younger girls.",
                    "Jaded pos_reaction" : "The girls respond remarkably well to her guidance.",
@@ -1347,9 +1347,9 @@ label traitking_init:
         ## Evolved negative traits
         
         traitking_neg_evolved = { 
-                "Godless" : Trait("Devout", verb = "be", eff1 = Effect("boost", "reputation gains", 0.1), base_description = "她曾经迷茫过，但现在忠实地侍奉她的神明。"),
-                "Trauma" : Trait("Stoic", verb="be", effects = [Effect("boost", "love", -0.2), Effect("boost", "fear", -0.4)], base_description = "尽管她违背自己的意愿失去了贞操，但她情绪稳定。"),
-                "Dull" : Trait("Curious", verb = "be", eff1 = Effect("special", "effect chance", 0.1), base_description = "她曾经过着备受关怀的日子，但现在将体验全新的生活。"),
+                "Godless" : Trait("Devout", verb = "be", eff1 = Effect("boost", "reputation gains", 0.1), base_description = "She once was lost, but now faithfully serves her God."),
+                "Trauma" : Trait("Stoic", verb="be", effects = [Effect("boost", "love", -0.2), Effect("boost", "fear", -0.4)], base_description = "She is emotionally stable despite losing her virginity against her will."),
+                "Dull" : Trait("Curious", verb = "be", eff1 = Effect("special", "effect chance", 0.1), base_description = "She once led a sheltered life, but now invites new experiences into her life."),
                 "Mean" : Trait("Reserved", verb = "be", eff1 = Effect("change", "charm", -5, scales_with = "rank"), eff2 = Effect("change", "refinement", 10), base_description = "She has a mean streak, but tries not to speak her mind whenever it is filled with negativity."),
                 "Scars" : Trait("Marks", verb = "be", eff1 = Effect("change", "body", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "She carries herself with such confidence that you barely notice her nasty scars."),
                 "Plain" : Trait("Odd", verb = "be", eff1 = Effect("change", "beauty", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "She's looks like an ordinary girl, but makes up for it with her unique personality."),
@@ -1477,22 +1477,22 @@ label traitking_init:
         # Adding special traits to trait dict (but not to pos/neg traits)
         godless_trait = trait_dict["Godless"] = Trait("Godless", verb = "be", eff1 = Effect("boost", "reputation gains", -0.2))
 
-        housebroken_trait = trait_dict["Housebroken"] = Trait("Housebroken", verb="be", effects = [Effect("change", "job obedience target", -10), Effect("change", "whore obedience target", -10), Effect("change", "refinement", -10, scales_with = "rank")], base_description = "她只知道她在青楼失身于某个嫖客。")
-        t_pet_trait = trait_dict["Teacher's pet"] = Trait("Teacher's pet", verb="be a", effects = [Effect("change", "train obedience target", -20), Effect("boost", "love", 0.25), Effect("change", "mood", -0.25, scales_with="cust nb")], base_description = "她的第一次属于我，我对她来说很特别。")
-        trauma_trait = trait_dict["Trauma"] = Trait("Trauma", verb="have a", effects = [Effect("change", "obedience", 20), Effect("gain", "negative fixation", 2), Effect("boost", "fear", 0.5)], base_description = "她被迫失去了处女，她不得不忍受这种创伤。")
-        farmgirl_trait = trait_dict["Farmgirl"] = Trait("Farmgirl", verb="be a", effects = [Effect("change", "fetish", 20), Effect("boost", "farm preference increase", 0.25), Effect("boost", "customer penalties", 0.1)], base_description = "她在农场里像一只肮脏的动物一样失去了贞操。")
+        housebroken_trait = trait_dict["Housebroken"] = Trait("Housebroken", verb="be", effects = [Effect("change", "job obedience target", -10), Effect("change", "whore obedience target", -10), Effect("change", "refinement", -10, scales_with = "rank")], base_description = "She lost her virginity in a brothel with a customer. This is all she knows.")
+        t_pet_trait = trait_dict["Teacher's pet"] = Trait("Teacher's pet", verb="be a", effects = [Effect("change", "train obedience target", -20), Effect("boost", "love", 0.25), Effect("change", "mood", -0.25, scales_with="cust nb")], base_description = "Her first time was with me. I'm special to her.")
+        trauma_trait = trait_dict["Trauma"] = Trait("Trauma", verb="have a", effects = [Effect("change", "obedience", 20), Effect("gain", "negative fixation", 2), Effect("boost", "fear", 0.5)], base_description = "She lost her virginity against her will, and has to live with the trauma.")
+        farmgirl_trait = trait_dict["Farmgirl"] = Trait("Farmgirl", verb="be a", effects = [Effect("change", "fetish", 20), Effect("boost", "farm preference increase", 0.25), Effect("boost", "customer penalties", 0.1)], base_description = "She has lost her virginity in the farm like a filthy animal.")
 
         ## STORY GIRLS TRAITS ##
 
-        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "燃烧着炽热的能量。")
-        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "虽然她看起来是个萝莉，但她已经成年了。有些顾客就喜欢她这样的。")
-        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "她是幽灵，寻常手段无法伤害到她。")
-        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "不管她做什么，她都会比其他人更努力地训练。")
+        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "Burns with fiery energy.")
+        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she does - and some customers love that.")
+        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "She is a ghost, and cannot be hurt by any normal means.")
+        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "It doesn't matter what she does, she'll train harder than anyone else.")
 
-        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。但对其他人来说是致命的。")
-        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。但对其他人来说是致命的。")
-        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。但对其他人来说是致命的。")
-        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "不会攻击你。但对其他人来说是致命的。")
+        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
+        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
+        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
+        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
         
         # schedule initializing operations
         #calendar.set_alarm(calendar.time, StoryEvent(label="traitking_refresh_girls", type="morning"))
@@ -1514,11 +1514,11 @@ label traitking_activate:
             
     if traitking_activated == True:
     
-        "特质之王已被激活。"
+        "Trait King is already activated."
         
     else:
         
-        "激活特质之王。"
+        "Activating Trait King."
         call traitking_init
         
     return
@@ -1527,17 +1527,17 @@ label traitking_revert: # This process could be made a bit less 'destructive' bu
             
     if traitking_activated != True:
     
-        "特质之王已被禁用。您可以安全地删除Mod并继续当前的游戏。"
+        "Trait King is not active. You can safely remove the mod and continue your current playthrough."
         
     else:
         
-        "虽然不建议在游戏过程中停用特质之王，但这个操作允许你这样做。"
+        "Although deactivating Trait King during an active playthrough is not recommended, this operation allows you to do so."
         
-        "与此Mod相关的所有特征和变化将从游戏中删除，包括从所有现有女孩中清除它们。确定吗?"
+        "All traits and changes associated with this mod will be removed from the game, including purging them from all existing girls. Continue?"
         
     menu: 
 
-        "是":
+        "Yes":
         
             python:
             
@@ -1589,9 +1589,9 @@ label traitking_revert: # This process could be made a bit less 'destructive' bu
                 
                 traitking_activated = False
             
-            "特质之王已被停用。"
+            "Trait King has been deactivated."
                     
-        "否":
+        "No":
         
             return
 
