@@ -79,9 +79,9 @@ label traitking_morning: # morning: triggers as first thing in the day
                 
             net_list.sort(reverse=True, key=lambda y: y[1])
             
-            profitable_desc = rand_choice(["proven to be your most lucrative asset", "brought in the most coin", "brought in the most profit", "been a smash hit", "proven to be your most popular girl", "been a favorite among your customers", "led your stable", "earned her keep like no other", "taken the crown"])
+            profitable_desc = rand_choice([__("proven to be your most lucrative asset"), __("brought in the most coin"), __("brought in the most profit"), __("been a smash hit"), __("proven to be your most popular girl"), __("been a favorite among your customers"), __("led your stable"), __("earned her keep like no other"), __("taken the crown")])
             
-            renpy.say("","Over the past month, {b}{color=[c_orange]}" + net_list[0][0] + "{/color}{/b} has " + profitable_desc +  " (bringing in " + str(net_list[0][1]) + " gold), followed by {b}" + net_list[1][0] + "{/b} and {b}" + net_list[2][0] + "{/b}.")
+            renpy.say("",__("Over the past month, {b}{color=[c_orange]}") + net_list[0][0] + __("{/color}{/b} has ") + profitable_desc +  __(" (bringing in ") + str(net_list[0][1]) + __(" gold), followed by {b}") + net_list[1][0] + __("{/b} and {b}") + net_list[2][0] + "{/b}.")
             
             # friendship/rivalry: other girls become jealous or start admiring the top earner
             if best_net > 2000:
@@ -122,7 +122,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                     if renpy.random.random() <= 0.02: # 2% chance of discovering the unknown trait per workday
                         add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = "This girl is hiding something from you."))
 
-                        renpy.say("","You suspect that " + girl.name + " is trying to hide something from you.")
+                        renpy.say("",__("You suspect that ") + girl.name + __(" is trying to hide something from you."))
         
             if girl.has_trait("Karkyrian Hymen"): # Karkyrian Hymen trait
             
@@ -130,7 +130,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                 
                     add_trait_perkless(girl, trait_dict["Virgin"])
                     
-                    renpy.say("","Thanks to her Karkyrian Hymen, " + girl.name + "'s virginity has been restored.")
+                    renpy.say("",__("Thanks to her Karkyrian Hymen, ") + girl.name + __("'s virginity has been restored."))
 
                     for trait in girl.traits:
                     
@@ -150,21 +150,21 @@ label traitking_day: # day: triggers after morning, but still before player can 
                     bedroom_pic = brothel.bedroom_type.get_bg()
                     
                     if girl.has_trait("Genius") and (girl.perk_points + len(girl.perks)) <= 4 + (girl.level // 2):
-                        result_comment = "an extra perk point."
+                        result_comment = __("an extra perk point.")
                         girl.perk_points += 1
                    
                     elif sum([t for o, t in girl.jp.items()]) <= 1000:
                         result_target = rand_choice(girl.jp.items())
-                        result_comment = "increased familiarity with " + result_target[0] + " tasks."
+                        result_comment = __("increased familiarity with ") + result_target[0] + __(" tasks.")
                         girl.jp[result_target[0]] += 25
                         
                     else:
                         result_target = rand_choice(girl.jp.items())
-                        result_comment = "increased familiarity with " + result_target[0] + " tasks."
+                        result_comment = __("increased familiarity with ") + result_target[0] + __(" tasks.")
                         girl.jp[result_target[0]] += 10
                         
                     renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=bedroom_pic)
-                    renpy.say("",girl.name + " has been studying vigorously in her leisure time, resulting in " + result_comment)
+                    renpy.say("",girl.name + __(" has been studying vigorously in her leisure time, resulting in ") + result_comment)
                     renpy.hide_screen("show_event")
                     
             if girl.has_trait("Prodigy"): # Prodigy trait
@@ -177,7 +177,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
             
                         if i == 0:
                         
-                            renpy.say("",girl.name + " is a true prodigy. It's as if the tricks of the trade come naturally to her.")
+                            renpy.say("",girl.name + __(" is a true prodigy. It's as if the tricks of the trade come naturally to her."))
 
                         i += 1                     
                         girl.unlock_archetype(archetype)
@@ -187,13 +187,13 @@ label traitking_day: # day: triggers after morning, but still before player can 
 
                 girl.remove_trait(trait_dict["In demand"])
                 
-                renpy.say("","Slavers are no longer willing to pay a premium for " + girl.name + ".")
+                renpy.say("",__("Slavers are no longer willing to pay a premium for ") + girl.name + ".")
 
             if renpy.random.random() <= 0.06 and not girl.free: # In demand trait (add)
             
                 add_trait_perkless(girl, trait_dict["In demand"])
                 
-                renpy.say("","Recently a lot of slavers have been inquiring about " + girl.name + ". It would seem that she is {b}{color=[c_orange]}in high demand{/color}{/b}. If you were willing to part with her, it could prove to be very lucrative.")
+                renpy.say("",__("Recently a lot of slavers have been inquiring about ") + girl.name + __(". It would seem that she is {b}{color=[c_orange]}in high demand{/color}{/b}. If you were willing to part with her, it could prove to be very lucrative."))
                 
             if renpy.random.random() <= 0.06:
             
@@ -357,7 +357,7 @@ label performance_reward(girl):
             location = brothel.bedroom_type.name
             girl_state = "rest"
             girl_pic = girl.get_pic("rest", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her relaxing in her room.","She's resting in her room.", "she is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice([__("You find her relaxing in her room."),__("She's resting in her room."), __("she is enjoying a well-earned rest in her room."), __("She's recuperating in her room.")])
             
         elif d < 30:
         
@@ -369,20 +369,20 @@ label performance_reward(girl):
 
             girl_state = "profile"
             girl_pic = girl.get_pic("profile", "portrait", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her hanging around the brothel.","She's relaxing in the brothel.", "She's enjoying a moment's rest in the brothel.", "she hums a cheerful tune as she skips through the brothel."])
+            girl_state_comment = rand_choice([__("You find her hanging around the brothel."),__("She's relaxing in the brothel."), __("She's enjoying a moment's rest in the brothel."), __("she hums a cheerful tune as she skips through the brothel.")])
             
         elif d < 35:
         
             location = brothel.bedroom_type.get_bg()
             girl_state = "naked"
             girl_pic = girl.get_pic("naked", "profile", and_tags=["embar"], not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her in her room.","She's staying in her room this morning.", "She is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice([__("You find her in her room."),__("She's staying in her room this morning."), __("She is enjoying a well-earned rest in her room."), __("She's recuperating in her room.")])
             
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She's naked, as usual.", " The sight of her breasts brightens up your morning.", " Naturally, she's naked as the day she was born.", ""])
+                girl_state_comment += rand_choice([__(" She's naked, as usual."), __(" The sight of her breasts brightens up your morning."), __(" Naturally, she's naked as the day she was born."), ""])
                 
             else:
-                girl_state_comment += rand_choice([" You find her in a compromising situation.", " She's undressed for one reason or another.", " To your surprise, she's not wearing any clothes.", " What a pleasant sight! She happens to be undressed."])
+                girl_state_comment += rand_choice([__(" You find her in a compromising situation."), __(" She's undressed for one reason or another."), __(" To your surprise, she's not wearing any clothes."), __(" What a pleasant sight! She happens to be undressed.")])
             
 
         elif d < 45:
@@ -390,33 +390,33 @@ label performance_reward(girl):
             location = brothel.bedroom_type.get_bg()
             girl_state = "naked rest"
             girl_pic = girl.get_pic("naked", "rest", not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her resting in her room.","She's resting in her room.", "She is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice([__("You find her resting in her room."),__("She's resting in her room."), __("She is enjoying a well-earned rest in her room."), __("She's recuperating in her room.")])
             
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She's naked, as usual.", " The sight of her breasts brightens up your morning.", " Naturally, she's naked as the day she was born.", ""])
+                girl_state_comment += rand_choice([__(" She's naked, as usual."), __(" The sight of her breasts brightens up your morning."), __(" Naturally, she's naked as the day she was born."), ""])
                 
             else:
-                girl_state_comment += rand_choice([" It looks like she wasn't expecting you, judging from her state of undress.", " She's undressed for one reason or another.", " To your surprise, she's not wearing any clothes.", " What a pleasant sight! She happens to be undressed."])
+                girl_state_comment += rand_choice([__(" It looks like she wasn't expecting you, judging from her state of undress."), __(" She's undressed for one reason or another."), __(" To your surprise, she's not wearing any clothes."), __(" What a pleasant sight! She happens to be undressed.")])
 
         elif d < 50:
 
             location = brothel.bedroom_type.get_bg()
             girl_state = "mast"
             girl_pic = girl.get_pic("mast", and_tags=["embar"], not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her masturbating in her room.","She's pleasuring herself in her room.", "she is enjoying some self-service in her room.", "She's having some fun in her room."])
+            girl_state_comment = rand_choice([__("You find her masturbating in her room."),__("She's pleasuring herself in her room."), __("she is enjoying some self-service in her room."), __("She's having some fun in her room.")])
 
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She must be looking forward to serving more customers.", " Her moans can be heard from the hallway.", " She's screaming your name as she climaxes."])
+                girl_state_comment += rand_choice([__(" She must be looking forward to serving more customers."), __(" Her moans can be heard from the hallway."), __(" She's screaming your name as she climaxes.")])
                 
             else:
-                girl_state_comment += rand_choice([" She scampers to cover herself as you enter the room.", " When your eyes meet, she freezes up as if caught in a spell.", " She attemts to hide under the bedsheets as you call her name."])
+                girl_state_comment += rand_choice([__(" She scampers to cover herself as you enter the room."), __(" When your eyes meet, she freezes up as if caught in a spell."), __(" She attemts to hide under the bedsheets as you call her name.")])
 
         elif d < 60:
         
             location = brothel.bedroom_type.get_bg()
             girl_state = "study"
             girl_pic = girl.get_pic("study", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She is hard at work, studying to further improve her performance.","She's studying some literature, immersed in thought.", "She is using her downtime productively by studying."])
+            girl_state_comment = rand_choice([__("She is hard at work, studying to further improve her performance."),__("She's studying some literature, immersed in thought."), __("She is using her downtime productively by studying.")])
 
         elif d < 80:
         
@@ -428,7 +428,7 @@ label performance_reward(girl):
 
             girl_state = "friend"
             girl_pic = girl.get_pic("friend", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She has invited a friend over.","She's socialising with one of her friends.", "One of her friends has come to visit the brothel. They're like two peas in a pod.", "She has invited one of her friends over. They seem to be getting along well."])
+            girl_state_comment = rand_choice([__("She has invited a friend over."),__("She's socialising with one of her friends."), __("One of her friends has come to visit the brothel. They're like two peas in a pod."), __("She has invited one of her friends over. They seem to be getting along well.")])
 
         else:
         
@@ -440,7 +440,7 @@ label performance_reward(girl):
 
             girl_state = "party"
             girl_pic = girl.get_pic("party", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She has invited a few of her friends over.","She's socialising with some of her friends, who are visiting the brothel.", "Some of her friends have come to visit the brothel.", "She has invited her friends over for a party."])
+            girl_state_comment = rand_choice([__("She has invited a few of her friends over."),__("She's socialising with some of her friends, who are visiting the brothel."), __("Some of her friends have come to visit the brothel."), __("She has invited her friends over for a party.")])
 
         if not girl_pic:
     
@@ -452,8 +452,8 @@ label performance_reward(girl):
 
             girl_state = "profile"
             girl_pic = girl.get_pic("profile", "portrait", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her hanging around in the brothel.","She's relaxing in the brothel.", "She's enjoying a moment's rest in the brothel.", "She hums a cheerful tune as she skips through the brothel."])
-        
+            girl_state_comment = rand_choice([__("You find her hanging around in the brothel."),__("She's relaxing in the brothel."), __("She's enjoying a moment's rest in the brothel."), __("She hums a cheerful tune as she skips through the brothel.")])
+
     scene black
     with dissolve
 
@@ -1136,46 +1136,46 @@ label undervalued_interact(girl):
 
             # Well, the truth is... (reasons for undervalue)
             undervalued_reason1 = { "Fighter" : [
-                                    "He tried to force himself onto me and I resisted.",
-                                    "I stuck a knife between his ribs when attempted to abuse me in my sleep. Sadly he survived.",
-                                    "He physically abused me one too many times and I... I decided to fight back and bit his ear off.",
-                                    "I laughed in his face when he said he wanted to keep me all to himself.",
+                                    __("He tried to force himself onto me and I resisted."),
+                                    __("I stuck a knife between his ribs when attempted to abuse me in my sleep. Sadly he survived."),
+                                    __("He physically abused me one too many times and I... I decided to fight back and bit his ear off."),
+                                    __("I laughed in his face when he said he wanted to keep me all to himself."),
                                     ],
                                     "Lover" : [
-                                    "Him and I used to be a lot closer. Very close actually. But eventually we broke up.",
-                                    "He was actually my lover for a little while, but it didn't work out and he never got over it.",
-                                    "We had a very intimate relationship at one point... Until he found out I also had an intimate relationship with his brother.",
-                                    "I loved him. Then one day I begged him to not let me serve any more customers, so I could be there just for him... He refused..."
+                                    __("Him and I used to be a lot closer. Very close actually. But eventually we broke up."),
+                                    __("He was actually my lover for a little while, but it didn't work out and he never got over it."),
+                                    __("We had a very intimate relationship at one point... Until he found out I also had an intimate relationship with his brother."),
+                                    __("I loved him. Then one day I begged him to not let me serve any more customers, so I could be there just for him... He refused...")
                                     ],
                                     "Choker" : [
-                                    "He brought me along to an orgy at the slavers guild. I choked and vomited on the guildmaster's cock.",
-                                    "He was very fond of me and invited me to a party at the slavers guild. I guess I broke the slavers code by sneaking into a bedroom with one of his rivals.",
-                                    "We were pretty daring. I once sucked his cock during a funeral procession. It became a big scandal and he was kicked out of the slavers guild.",
-                                    "The slavers guild revoked his membership after I became involved in a sex scandal with dozens of supposedly celibate religious figureheads." 
+                                    __("He brought me along to an orgy at the slavers guild. I choked and vomited on the guildmaster's cock."),
+                                    __("He was very fond of me and invited me to a party at the slavers guild. I guess I broke the slavers code by sneaking into a bedroom with one of his rivals."),
+                                    __("We were pretty daring. I once sucked his cock during a funeral procession. It became a big scandal and he was kicked out of the slavers guild."),
+                                    __("The slavers guild revoked his membership after I became involved in a sex scandal with dozens of supposedly celibate religious figureheads.") 
                                     ],
                                     "Believer" : [
-                                    "He thinks I might be cursed. I lost my virginity on a quest by performing what later turned out to be a demonic sex ritual.",
-                                    "One day he made me stand on an ominous pentagram and started chanting. For some reason the spell he tried to perform did not work, and he blamed me for it.",
-                                    "One day the preacher invited into the inner sanctum, where we had a little fun. Someone saw us and it caused an uproar because we desecrated the church.",
-                                    "It's quite a silly story... He is a pious man, and at some point I got caught shoving a Holy Cross up my ass. He did not like that."
+                                    __("He thinks I might be cursed. I lost my virginity on a quest by performing what later turned out to be a demonic sex ritual."),
+                                    __("One day he made me stand on an ominous pentagram and started chanting. For some reason the spell he tried to perform did not work, and he blamed me for it."),
+                                    __("One day the preacher invited into the inner sanctum, where we had a little fun. Someone saw us and it caused an uproar because we desecrated the church."),
+                                    __("It's quite a silly story... He is a pious man, and at some point I got caught shoving a Holy Cross up my ass. He did not like that.")
                                     ]
                                     }
 
-            undervalued_reason2 = ["After that he gave me the nickname " + adjective + " " + trait + " " + noun + ". I guess that name must have spread like wildfire.",
-                                    "And then he wrote a song about me, 'The Ballad of " + trait + " " + noun + "', it wasn't very flattering to say the least.",
-                                    "Word must have spead quickly. The next day we suddenly had more visitors than usual. They were all looking and pointing in my direction.",
-                                    "For the next few weeks he made me walk around town with a sign around my neck that read '" + adjective + " " + trait + " " + noun + "! SHAME!'",
-                                    "Things escalated... The aftermath somehow made people call me " + trait + ". That's all you really need to know.",
-                                    "Ever since that day he has held some sort of grudge against " + trait + " girls and he seems to be influencing the other slavers.",
-                                    "Then everyone started calling me " + trait + " behind my back... Does that make me worthless? The slavers seem to think so.",
-                                    "He still tells humiliating stories about it to this day.",
-                                    "After that I became the butt of many jokes within the slavers guild.",
-                                    "I had to endure some torture after that. Thankfully my circumstances have improved since then.",
-                                    "Suddenly I became known around town as the " + adjective + " " + trait + " " + noun + ".",
-                                    "The next day everyone was talking about it, spreading a heavily exaggerated story.",
-                                    "Some days later I visited the church, where a Chaplain spat in my face and called me a " + adjective + " " + noun + ". Now everyone hates me.",
-                                    "The following day the towncrier had a popular story to tell about 'The " + adjective + " " + trait + " " + noun + "' and people seem to remember that to this day.",
-                                    "He must have some very powerful friends in the slavers guild, because they now want nothing to do with me."
+            undervalued_reason2 = [__("After that he gave me the nickname ") + adjective + " " + trait + " " + noun + __(". I guess that name must have spread like wildfire."),
+                                    __("And then he wrote a song about me, 'The Ballad of ") + trait + " " + noun + __("', it wasn't very flattering to say the least."),
+                                    __("Word must have spead quickly. The next day we suddenly had more visitors than usual. They were all looking and pointing in my direction."),
+                                    __("For the next few weeks he made me walk around town with a sign around my neck that read '") + adjective + " " + trait + " " + noun + __("! SHAME!'"),
+                                    __("Things escalated... The aftermath somehow made people call me ") + trait + __(". That's all you really need to know."),
+                                    __("Ever since that day he has held some sort of grudge against ") + trait + __(" girls and he seems to be influencing the other slavers."),
+                                    __("Then everyone started calling me ") + trait + __(" behind my back... Does that make me worthless? The slavers seem to think so."),
+                                    __("He still tells humiliating stories about it to this day."),
+                                    __("After that I became the butt of many jokes within the slavers guild."),
+                                    __("I had to endure some torture after that. Thankfully my circumstances have improved since then."),
+                                    __("Suddenly I became known around town as the ") + adjective + " " + trait + " " + noun + ".",
+                                    __("The next day everyone was talking about it, spreading a heavily exaggerated story."),
+                                    __("Some days later I visited the church, where a Chaplain spat in my face and called me a ") + adjective + " " + noun + __(". Now everyone hates me."),
+                                    __("The following day the towncrier had a popular story to tell about 'The ") + adjective + " " + trait + " " + noun + __("' and people seem to remember that to this day."),
+                                    __("He must have some very powerful friends in the slavers guild, because they now want nothing to do with me.")
                                     ]
             
             girl.nickname["reason1"] = random.choice(undervalued_reason1[girl.nickname["story"]])
@@ -1565,7 +1565,7 @@ label undervalued_interact(girl):
                         if traits.name != "Unknown":
                             text1 += traits.base_description + " "
 
-                    text1 += "And that's just scratching the surface!"
+                    text1 += __("And that's just scratching the surface!")
 
                 you "She's a fantastic girl with so many different qualities."
 
@@ -2052,9 +2052,9 @@ label freedom_interact(girl):
 
     girl.char "I've been thinking..."
 
-    $ reason_intro = rand_choice(["The way things are going, I'm really enjoying my life as a slave.", "Being a slave is so much more fun than I ever thought it would be.", "I absolutely love working in a brothel like this.", "I think I could truly make a career out of this profession.", "Slavery gets a bad rep. It isn't as terrible as they say.", "Life is much simpler this way, knowing that my Master will take care of me."])
-    $ reason_problem = rand_choice(["Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast.", "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level.", "To further my career, I must be willing to take bold risks.", "If life has taught me anything, it's that being a slave can get you places.", "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."])
-    $ reason_solution = rand_choice(["That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?", "That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is.", "That's why I would like to start negotiations regarding this contract...", "That's why... Well, just have a look at this contract!"])
+    $ reason_intro = rand_choice([__("The way things are going, I'm really enjoying my life as a slave."), __("Being a slave is so much more fun than I ever thought it would be."), __("I absolutely love working in a brothel like this."), __("I think I could truly make a career out of this profession."), __("Slavery gets a bad rep. It isn't as terrible as they say."), __("Life is much simpler this way, knowing that my Master will take care of me.")])
+    $ reason_problem = rand_choice([__("Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast."), __("But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level."), __("To further my career, I must be willing to take bold risks."), __("If life has taught me anything, it's that being a slave can get you places."), __("I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny.")])
+    $ reason_solution = rand_choice([__("That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?"), __("That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is."), __("That's why I would like to start negotiations regarding this contract..."), __("That's why... Well, just have a look at this contract!")])
     
     if girl.personality.name == "sweet":
 
@@ -2205,21 +2205,21 @@ label ext_party(girl):
 
         party_personality_comment = {
 
-            "very extravert" : ["They're a rowdy bunch.", "Their excited yelps liven up the brothel.", "They run through the halls of the brothel as if they own the place.", "They want to hear all about the customers from " + girl.name + ".", "They seem eager to get to know you.", "They like to compete for each other's attention."],
+            "very extravert" : [__("They're a rowdy bunch."), __("Their excited yelps liven up the brothel."), __("They run through the halls of the brothel as if they own the place."), __("They want to hear all about the customers from ") + girl.name + ".", __("They seem eager to get to know you."), __("They like to compete for each other's attention.")],
 
-            "very introvert" : ["They don't seem very talkative.","It's a timid affair.","They listen attentively as " + girl.name + " sums up her day-to-day.","They don't seem very interested in a tour around the brothel.","They seem very supportive of her.","They look happy to be invited.", "They seem very fond of " + girl.name + "."],
+            "very introvert" : [__("They don't seem very talkative."),__("It's a timid affair."),__("They listen attentively as ") + girl.name + __(" sums up her day-to-day."),__("They don't seem very interested in a tour around the brothel."),__("They seem very supportive of her."),__("They look happy to be invited."), __("They seem very fond of ") + girl.name + "."],
 
-            "very materialist" : ["They fervently inspect " + girl.name + "'s wardrobe.", "They are particularly interested in her earnings.", "They exchange makeup tips with one another.", "They show off their jewelry to one another.", "They seem keen to impress " + girl.name + ".", "They happily spend time gossiping."],
+            "very materialist" : [__("They fervently inspect ") + girl.name + __("'s wardrobe."), __("They are particularly interested in her earnings."), __("They exchange makeup tips with one another."), __("They show off their jewelry to one another."), __("They seem keen to impress ") + girl.name + ".", __("They happily spend time gossiping.")],
 
-            "very idealist" : ["They talk politics with one another.", "They seem very polite and well mannered.", "They really enjoy each other's company.", "They affectionately greet " + girl.name + " with a hug.", "They seem very fond of " + girl.name + ".", "One of them has brought lots of sweets. She offers some to the guards."],
+            "very idealist" : [__("They talk politics with one another."), __("They seem very polite and well mannered."), __("They really enjoy each other's company."), __("They affectionately greet ") + girl.name + __(" with a hug."), __("They seem very fond of ") + girl.name + ".", __("One of them has brought lots of sweets. She offers some to the guards.")],
 
-            "very lewd" : ["They seem excited to be here.","They look excited.","They're very curious about the brothel.","They're fascinated about every aspect of the brothel.", "They her you to show them all of her sex toys.","They listen carefully as " + girl.name + " tells stories about her life in the brothel."],
+            "very lewd" : [__("They seem excited to be here."),__("They look excited."),__("They're very curious about the brothel."),__("They're fascinated about every aspect of the brothel."), __("They her you to show them all of her sex toys."),__("They listen carefully as ") + girl.name + __(" tells stories about her life in the brothel.")],
 
-            "very modest" : ["They look appalled.","They are shocked by her living conditions.","They plead with " + girl.name + " to take the party elsewhere.","They don't seem happy to be here.","They're a bit overdressed for the occasion.","They politely greet you as they pass by."],
+            "very modest" : [__("They look appalled."),__("They are shocked by her living conditions."),__("They plead with ") + girl.name + __(" to take the party elsewhere."),__("They don't seem happy to be here."),__("They're a bit overdressed for the occasion."),__("They politely greet you as they pass by.")],
 
-            "very dom" : ["They feign interest.", "They're bickering amongst themselves.", "They don't seem to get along very well.", "They exude confidence.","They seem to feel right at home.","They chat up one of the guards.", "They strike up a conversation with the guards.", "The mood is timid, as if " + girl.name + " and her friends have just had an argument."],
+            "very dom" : [__("They feign interest."), __("They're bickering amongst themselves."), __("They don't seem to get along very well."), __("They exude confidence."),__("They seem to feel right at home."),__("They chat up one of the guards."), __("They strike up a conversation with the guards."), __("The mood is timid, as if ") + girl.name + __(" and her friends have just had an argument.")],
 
-            "very sub" : ["They follow " + girl.name + "'s lead as she guides them through the brothel.", "They enthousiastically sing songs together.", "Some of them bow for you as they pass.", "They seem enthralled as " + girl.name + " tells stories about her life here."],
+            "very sub" : [__("They follow ") + girl.name + __("'s lead as she guides them through the brothel."), __("They enthousiastically sing songs together."), __("Some of them bow for you as they pass."), __("They seem enthralled as ") + girl.name + __(" tells stories about her life here.")],
 
             }
             
@@ -2231,15 +2231,15 @@ label ext_party(girl):
         party_bonus = ""
         
         if girl.is_("very idealist") and dice(6) <= 4:
-            party_bonus += rand_choice(["One of the visitors hands you a gift to thank " + brothel.name + " for hosting the party.", "Before they leave, " + girl.name + "'s friends come up to you to thank you for your part in an unforgettable day."]) + " You receive a bouquet of flowers. "
+            party_bonus += rand_choice([__("One of the visitors hands you a gift to thank ") + brothel.name + __(" for hosting the party.", "Before they leave, ") + girl.name + __("'s friends come up to you to thank you for your part in an unforgettable day.")]) + __(" You receive a bouquet of flowers. ")
             MC.items.append(get_rand_item(item_types = ["Flower"]))
 
         if girl.is_("very extravert") or dice(6) <= 3:
-            party_bonus += rand_choice(["The girls really enjoy their time in " + brothel.name + ".", "Before long the visitors take their leave. Time flies by when you're having fun.", "After a while the party comes to an end. " + girl.name + "'s friends leave with smiles on their faces."]) + " "
+            party_bonus += rand_choice([__("The girls really enjoy their time in ") + brothel.name + ".", __("Before long the visitors take their leave. Time flies by when you're having fun."), __("After a while the party comes to an end. ") + girl.name + __("'s friends leave with smiles on their faces.")]) + " "
             brothel.change_rep(girl.rank*2)
 
         if girl.is_("very introvert") and dice(6) <= 4:
-            party_bonus += rand_choice(["As the party winds down, they take great care to clean up their mess.", "They do their utmost to clean up after themselves.", "They make sure to tidy the place up."]) + " "
+            party_bonus += rand_choice([__("As the party winds down, they take great care to clean up their mess."), __("They do their utmost to clean up after themselves."), __("They make sure to tidy the place up.")]) + " "
             brothel.change_dirt(-girl.rank*2)
             
         renpy.say("",party_bonus)
@@ -2255,8 +2255,8 @@ label ext_party(girl):
             renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             party_bonus_gold = max(40 + dice(60), int(round(girl.rank * random.uniform(20.0, 100.0))))
-            party_bonus = rand_choice(["After her friends are gone, " + girl.name + " comes up to you to share some of the spoils.", "When the visitors have come and gone, " + girl.name + " approaches you with a gift."])
-            party_bonus_comment = rand_choice(["I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards " + brothel.name + ".", "I charged the girls a fee to enter " + brothel.name + ". It's only right that you should recieve most of that.", "I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me."])
+            party_bonus = rand_choice([__("After her friends are gone, ") + girl.name + __(" comes up to you to share some of the spoils.", "When the visitors have come and gone, ") + girl.name + __(" approaches you with a gift.")])
+            party_bonus_comment = rand_choice([__("I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards ") + brothel.name + ".", __("I charged the girls a fee to enter ") + brothel.name + __(". It's only right that you should recieve most of that."), __("I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me.")])
             renpy.say("",party_bonus + " She hands you " + str(party_bonus_gold) + " gold.")
             renpy.play(s_gold, "sound")
             MC.gold += party_bonus_gold
@@ -2299,7 +2299,7 @@ label ext_holiday_valentines:
                 if not holiday_pic:
                     holiday_pic = girl.get_pic("profile", and_tags="happy", naked_filter=True, soft=True)
 
-                approach = [girl.name + " rushes towards you with flushed red cheeks.","You notice " + girl.name + " rushing towards you.",girl.name + " wishes to speak to you.", "You're stopped by " + girl.name + ", who wants to talk to you.", "You're held up by " + girl.name + ", who has something on her mind.", girl.name + " tugs on your arm, eager to say something.", "You run into " + girl.name + ", who candidly speaks her mind.", "You hear " + girl.name + " shouting your name as she runs up to you.", "You hear " + girl.name + " calling for you, eager to express what's on her mind.", "You're surprised by " + girl.name + ", who urgently wishes to speak with you."]
+                approach = [girl.name + __(" rushes towards you with flushed red cheeks."),__("You notice ") + girl.name + __(" rushing towards you."),girl.name + __(" wishes to speak to you."), __("You're stopped by ") + girl.name + __(", who wants to talk to you."), __("You're held up by ") + girl.name + __(", who has something on her mind."), girl.name + __(" tugs on your arm, eager to say something."), __("You run into ") + girl.name + __(", who candidly speaks her mind."), __("You hear ") + girl.name + __(" shouting your name as she runs up to you."), __("You hear ") + girl.name + __(" calling for you, eager to express what's on her mind."), __("You're surprised by ") + girl.name + __(", who urgently wishes to speak with you.")]
                 
                 renpy.say("",rand_choice(approach))
                 
