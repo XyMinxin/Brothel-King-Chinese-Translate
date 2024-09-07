@@ -7601,9 +7601,9 @@ screen girl_interact(girl, free=False):
                             $ pos_reaction, neg_reaction = girl.test_weakness(topic.act)
 
                             if not (pos_reaction or neg_reaction):
-                                $ ttip = event_color["a little bad"] % "Advanced training is available, but she isn't particularly sensitive to this sex act."
+                                $ ttip = event_color["a little bad"] % "进阶训练已启用，但她对这种性行为并不敏感。"
                             else:
-                                $ ttip = "You can use advanced training to find out more about her fixations and use them for faster training."
+                                $ ttip = "你可以使用进阶训练来发现更多关于她的性癖，并利用它们来提高训练效率。"
 
                             textbutton "进阶" background None text_size res_font(13):
                                 if topic.is_available(girl, "advanced", free)[0]:
@@ -7699,9 +7699,9 @@ screen h_content(): # H preferences and various player settings
             text "\nActivate or deactivate objectionable content (won't affect story scenes)" color c_brown italic True size res_font(16)
 
             if "beast" in persistent.forbidden_tags:
-                $ text1 = "OFF"
+                $ text1 = "禁用"
             else:
-                $ text1 = "ON"
+                $ text1 = "开启"
 
             textbutton _("兽交：" + text1) text_size res_font(18) xalign 0.0 xsize 0.8 xfill True:
                 if "beast" in persistent.forbidden_tags:
@@ -7710,9 +7710,9 @@ screen h_content(): # H preferences and various player settings
                     action AddToSet(persistent.forbidden_tags, "beast")
 
             if "monster" in persistent.forbidden_tags:
-                $ text1 = "OFF"
+                $ text1 = "禁用"
             else:
-                $ text1 = "ON"
+                $ text1 = "开启"
 
             textbutton _("怪物/触手：" + text1) text_size res_font(18) xalign 0.0 xsize 0.8 xfill True:
                 if "monster" in persistent.forbidden_tags:
@@ -7721,9 +7721,9 @@ screen h_content(): # H preferences and various player settings
                     action AddToSet(persistent.forbidden_tags, "monster")
 
             if "machine" in persistent.forbidden_tags:
-                $ text1 = "OFF"
+                $ text1 = "禁用"
             else:
-                $ text1 = "ON"
+                $ text1 = "开启"
 
             textbutton _("机器：" + text1) text_size res_font(18) xalign 0.0 xsize 0.8 xfill True:
                 if "machine" in persistent.forbidden_tags:
@@ -7740,14 +7740,14 @@ screen h_content(): # H preferences and various player settings
             text "\nChoose the behavior of stock (default) pictures and girl pack pictures" color c_brown italic True size res_font(16)
 
             if persistent.use_stock_pictures["missing"]:
-                $ text1 = "When a picture is missing:\nUse stock pictures"
+                $ text1 = "当缺少对应图片时:\n使用游戏备用的通用图片"
             else:
-                $ text1 = "When a picture is missing:\nUse another picture from the girl pack"
+                $ text1 = "当缺少对应图片时:\n使用女孩包内的另一张图片代替"
 
             if persistent.use_stock_pictures["low"]:
-                $ text2 = "When the picture count is low:\nMix stock and girl pack pictures"
+                $ text2 = "当图片数量较少时:\n混合使用通用图片与女孩包图片"
             else:
-                $ text2 = "When the picture count is low:\nOnly use girl pack pictures"
+                $ text2 = "当图片数量较少时:\n仅使用女孩包内的图片"
 
             textbutton text1 text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleDict(persistent.use_stock_pictures, "missing")
             textbutton text2 text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleDict(persistent.use_stock_pictures, "low")
@@ -7848,9 +7848,9 @@ screen h_content(): # H preferences and various player settings
                     $ text1 += "事件"
 
                 if persistent.skipped_events[ev_type]:
-                   $ text1 += ": OFF"
+                   $ text1 += ": 关闭"
                 else:
-                   $ text1 += ": ON"
+                   $ text1 += ": 开启"
 
                 textbutton _(text1) text_size res_font(18) xalign 0.0 xsize 0.8 xfill True action ToggleDict(persistent.skipped_events, ev_type)
 

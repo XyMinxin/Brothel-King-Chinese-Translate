@@ -1607,15 +1607,15 @@ label undervalued_interact(girl):
 
                 show screen show_event(girl.get_pic("profile", naked_filter=True, soft=True), x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
-                girl.char "Are you sure this will work?"
+                girl.char "你确定这个能起作用吗?"
 
-                you "The potion will have its effect. Whether that will solve your conflict with the slavers guild is another matter."
+                you "药水会起作用的。但这是否会解决你与奴隶公会的冲突是另一回事。"
 
-                you "The acting components are not very palatable, so I've used some fiends cum to enhance its flavor."
+                you "有效成分难以下咽，所以我用了一些辣酱来中和它的味道。"
 
-                girl.char "Yikes... Let's just get this over with."
+                girl.char "呕... 让我们赶快结束这一切吧。"
 
-                "[girl.name] pinches her nose and swiftly drinks down the concoction."
+                "[girl.name]捏了捏她的鼻子，迅速地喝下了调制好的东西。"
 
                 play sound s_spell
                 $ girl.add_effects(Effect("change", "valuation", +30), expires = calendar.time + 3)
@@ -1623,26 +1623,26 @@ label undervalued_interact(girl):
                 hide screen show_event
                 scene black with fade
 
-                "For the next few days, [girl.name] will temporarily fetch a higher price on the market."
+                "在接下来的几天里，[girl.name]在市场上的售价将提高。"
 
                 if dice(6) <= 3:
 
-                    "On top of that, the slavers have taken notice and reevaluated [girl.name]'s base value!"
+                    "最重要的是，奴隶贩子已经注意到并重新评估了[girl.name]的价值!"
 
                     jump .undervalued_end_1
 
                 else:
 
-                    "However it appears that her problems with the slavers guild remain."
+                    "然而，她与奴隶公会的问题似乎仍然存在。"
 
                     return
 
 
-            "Embrace her nickname":
+            "接受她的外号":
 
-                "I'll turn this situation on its head and use it to endear her to [brothel.name]'s customers!"
+                "我要反客为主，用它来讨好[brothel.name]的顾客!"
 
-                "I'm sure the slavers will have a good laugh as well if I officially change [girl.name]'s name."
+                "我相信如果我为[girl.name]正名，奴隶贩子们也会笑得很开心的。"
 
                 "她可能不喜欢，但如果能解决这个问题，就值得一试。"
                 
@@ -1976,7 +1976,7 @@ label fix_neg_interact(girl, trait = trait):
             scene black with fade
             hide screen show_event
 
-            "It might not be possible to completely fix this weakness, but you're willing to work with her to make the most of it."
+            "也许这个缺点无法完全改正，但你愿意和她一起努力，充分利用这个缺点。"
 
             python:
                 tag = traitking_neg_evolved_desc[trait.name + " pic"]
@@ -2004,23 +2004,23 @@ label fix_neg_interact(girl, trait = trait):
 
             if girl.neg_fix_counter == 0:
 
-                "She still has a long way to go if she wants to improve herself."
+                "如果她想提高自己，她还有很长的路要走。"
 
             elif girl.neg_fix_counter == 1:
 
-                "She has made some progress towards fixing this weakness."
+                "她在解决这一弱点方面取得了一些进展。"
 
             elif girl.neg_fix_counter == 2:
 
-                "She has nearly completed her training. You suspect that when this is all over, [new_description]"
+                "她已快完成训练了。你怀疑这一切结束后, [new_description]"
 
             elif girl.neg_fix_counter >= 3:
 
-                "[girl.name] has finally overcome her weakness!"
+                "[girl.name]终于克服了她的弱点!"
 
-                "You used to tell customers that [old_description]"
+                "你以前常跟顾客说[old_description]"
 
-                "However, she has worked hard and grown a lot since then. Now [new_description]"
+                "然而，从那时起，她努力工作，成长了很多。现在[new_description]"
 
                 $ girl.remove_trait(trait)
                 $ add_trait_perkless(girl, newtrait)
@@ -2085,7 +2085,7 @@ label freedom_interact(girl):
     $ price_str = str(price)
     $ value_str = str(int(round(girl.get_price("sell")*random.uniform(0.8,1.2),-1)))
 
-    "For a fee of [price_str] gold, she would be willing to sign away her freedoms indefinitely and become your property."
+    "只要[price_str]金币,她就将抛弃自己的自由和权利，成为你的所有物。"
 
     if price_modifier >= 1.5: 
     
@@ -2093,28 +2093,28 @@ label freedom_interact(girl):
     
     if MC.playerclass == "Trader":
         
-        "You estimate her current market value to be around [value_str] gold."
+        "你估算了一下她的市场价，大概在[value_str]金币。"
         
     elif MC.get_alignment() == "evil": 
     
         "你考虑了一下，如果你在签完这份合同后马上把她卖掉，她能卖多少钱..."
-        "With a bit more work, she would probably be valued around [value_str] gold at the slavemarket."
+        "稍加改造, 她大概可以在奴隶市场卖到[value_str]金币。"
         
     elif MC.get_alignment() == "good" or price_modifier <= 1: 
     
-        you "Are you sure this is a good idea, [girl.name]? Do you understand what this contract is about?"
+        you "你确定要这么做吗, [girl.name]? 你知不知道这份合同意味着什么?"
         
-        girl.char "W-well,  you see... I was talking to one of our customers..."
+        girl.char "当-当然, 你看... 有位客人曾告诉我..."
         
-        girl.char "He says there's this establishment near the Magic Gardens where someone with my expertise is highly sought after."
+        girl.char "他说魔法花园附近有个地方很需要像我这样的专业人员。"
 
-        girl.char "But according to him, they have a policy to only employ girls who have filled in this form... So that's what got me thinking... I probably need this to continue working after my spell at [brothel.name], don't I?"
+        girl.char "但据他所说，他们有一项政策，那里只雇用签订合同的女孩... 所以我在想...我可能需要这个来继续我在[brothel.name]的工作, 不是吗?"
 
-    "She's clearly in way over her head. This contract would empower you to sell her soul to the highest bidder and keep all the profits to yourself."
+    "她显然是昏了头。这份合同允许你把她的灵魂卖给出价最高的人，所有的利润都归你所有。"
     
-    "Then again, it wouldn't be the first time you've taken advantage of a girl's naivety for personal gain."
+    "不过话又说回来，这也不是你第一次利用女孩的无知来谋取私利了。"
     
-    girl.char "W-well? What do you think?"
+    girl.char "好-好吧?你怎么想?"
     
     menu:
     
@@ -2124,7 +2124,7 @@ label freedom_interact(girl):
 
         "和她讨价还价":
         
-            you "I can't agree to that price. Would you be willing to come down a bit?"
+            you "这价格我接受不了。你就不能再便宜点?"
         
             $ new_price = int(round(girl.get_price("sell") * random.uniform(0.5, 2.0)*price_modifier,-1))
             
@@ -2133,23 +2133,23 @@ label freedom_interact(girl):
                 $ price = new_price
                 $ price_str = str(price)
                 
-                girl.char "*pout* You're too good at this... [price_str] gold! That's my final offer!"
+                girl.char "*撅嘴* 你可真会砍价... [price_str]金币! 这是我的底线了!"
             
                 menu:
                     
-                    "We have a deal ([price_str] gold)" if MC.gold >= price:
+                    "成交([price_str]金币)" if MC.gold >= price:
                     
                         jump .freedom_end_1
                 
-                    "Not good enough":
+                    "不太满意":
                     
-                        you "I appreciate your offer, but I'm afraid it doesn't sufficiently align with my interests. Perhaps some other time."
+                        you "我很高兴你来找我，但恐怕我对这个不感兴趣。也许改天吧。"
                         
                         hide screen show_event
                     
             else:       
             
-                girl.char "But my original offer is a bargain! *pout* Never mind, then! Perhaps I should sell myself to some other Master who {i}does{/i} appreciate what I bring to the table."
+                girl.char "这价格还不够划算吗! *噘嘴* 算了!也许我应该把自己卖给{i}欣赏{/i}我的其他人。"
                 
                 $ girl.change_love(-10)
                 $ girl.change_mood(-10)
@@ -2160,7 +2160,7 @@ label freedom_interact(girl):
 
         "拒绝她的好意":
         
-            you "I appreciate your offer, but I'm afraid it doesn't align with my interests. Perhaps some other time."
+            you "我很高兴你来找我，但恐怕我对这个不感兴趣。也许改天吧。"
             
             hide screen show_event
             
@@ -2170,7 +2170,7 @@ label freedom_interact(girl):
             
 label .freedom_end_1: #free to slave (on girl's own initiative)
 
-    you "We have a deal. Let me gather the coin so we can sign this contract at once."
+    you "成交。等我把钱凑齐，这样我们就可以马上签合同了。"
 
     call dialogue(girl, "slave effusive thanks")
     
@@ -2178,7 +2178,7 @@ label .freedom_end_1: #free to slave (on girl's own initiative)
     $ girl.original_price = price
     $ girl.free = False
     
-    "[girl.fullname] has become property of [MC.name]."
+    "[girl.fullname]成为了[MC.name]的所有物。"
     
     hide screen show_event
 
@@ -2201,7 +2201,7 @@ label ext_party(girl):
 
         renpy.show("brothel" + str(brothel.pic_index), at_list = [top])
 
-        party_intro = rand_choice([girl.name + " has invited some friends over to visit " + brothel.name + ".",girl.name + " is throwing a party for her friends.",girl.name + "'s friends have surprised her with a visit today."])
+        party_intro = rand_choice([girl.name + "邀请了一些朋友来" + brothel.name + "狂欢。",girl.name + "为她的朋友们举办了一场派对。",girl.name + "的朋友们对她今天的邀请表示诧异。"])
 
         party_personality_comment = {
 
@@ -2231,15 +2231,15 @@ label ext_party(girl):
         party_bonus = ""
         
         if girl.is_("very idealist") and dice(6) <= 4:
-            party_bonus += rand_choice(["One of the visitors hands you a gift to thank " + brothel.name + " for hosting the party.", "Before they leave, " + girl.name + "'s friends come up to you to thank you for your part in an unforgettable day."]) + " You receive a bouquet of flowers. "
+            party_bonus += rand_choice(["其中一位客人送给你一份礼物以表示对" + brothel.name + "举办的派对的谢意。", "临走之前," + girl.name + "的朋友们对你在这难忘的一天里所做的一切表示感谢。"]) + " 你收到一束花。"
             MC.items.append(get_rand_item(item_types = ["Flower"]))
 
         if girl.is_("very extravert") or dice(6) <= 3:
-            party_bonus += rand_choice(["The girls really enjoy their time in " + brothel.name + ".", "Before long the visitors take their leave. Time flies by when you're having fun.", "After a while the party comes to an end. " + girl.name + "'s friends leave with smiles on their faces."]) + " "
+            party_bonus += rand_choice(["姑娘们在" + brothel.name + "里度过了一段快乐的时光。", "不久客人们就离开了。美好的时光总是短暂的。", "过了一会儿，聚会结束了。 " + girl.name + "的朋友们面带笑容的离开了这里。"]) + " "
             brothel.change_rep(girl.rank*2)
 
         if girl.is_("very introvert") and dice(6) <= 4:
-            party_bonus += rand_choice(["As the party winds down, they take great care to clean up their mess.", "They do their utmost to clean up after themselves.", "They make sure to tidy the place up."]) + " "
+            party_bonus += rand_choice(["派对结束后，他们小心翼翼地收拾残局。", "他们尽最大努力把场地打扫干净。", "他们一定得把这个地方打扫干净。"]) + " "
             brothel.change_dirt(-girl.rank*2)
             
         renpy.say("",party_bonus)
@@ -2255,9 +2255,9 @@ label ext_party(girl):
             renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             party_bonus_gold = max(40 + dice(60), int(round(girl.rank * random.uniform(20.0, 100.0))))
-            party_bonus = rand_choice(["After her friends are gone, " + girl.name + " comes up to you to share some of the spoils.", "When the visitors have come and gone, " + girl.name + " approaches you with a gift."])
-            party_bonus_comment = rand_choice(["I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards " + brothel.name + ".", "I charged the girls a fee to enter " + brothel.name + ". It's only right that you should recieve most of that.", "I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me."])
-            renpy.say("",party_bonus + " She hands you " + str(party_bonus_gold) + " gold.")
+            party_bonus = rand_choice(["在她的朋友离开后, " + girl.name + "来和你分享战利品。", "当访客离场后，" + girl.name + "带着一个礼物来到你身边。"])
+            party_bonus_comment = rand_choice(["如果我们把这里弄乱了，我很抱歉。我们会支付一些金币来表示我们对" + brothel.name + "的歉意。", "我向姑娘们收了" + brothel.name + "的入场费。你应该得到其中的大部分，这样才对。", "对不起，主人。也许我应该先征得你的同意。我希望你能原谅我。"])
+            renpy.say("",party_bonus + "她递给你" + str(party_bonus_gold) + "金币。")
             renpy.play(s_gold, "sound")
             MC.gold += party_bonus_gold
             renpy.say(girl.char,party_bonus_comment)
@@ -2330,11 +2330,11 @@ label ext_holiday_salvation:
         $ MC.add_effects(Effect("boost", "all jp gains", 1.0, scope="brothel"), expires = calendar.time + 1)
         $ MC.add_effects(Effect("boost", "energy use", 0.25, scope="brothel"), expires = calendar.time + 1)
     elif MC.god == "Shalia":
-        "作为伊斯兰教的信徒，你鄙视今天的庆祝活动。你命令你的姑娘们把遇到的蜡烛都掐灭。 {i}这稍微增加了青楼的威胁等级。{/i}"
+        "作为伊斯兰教的信徒，你鄙视今天的庆祝活动。你命令你的姑娘们把遇到的蜡烛都掐灭。 {i}青楼的威胁等级略微提升了。{/i}"
         $ MC.evil += 3
         $ MC.add_effects(Effect("boost", "threat build up", 0.5, scope="brothel"), expires = calendar.time + 1)
     else:
-        "虽然你不遵循太阳神教的教义，但你决定不顾传统，点燃一支蜡烛。"
+        "虽然你不遵循太阳神教的教义，但你决定无视传统，点燃一支蜡烛。"
         $ MC.good += 1
         $ MC.add_effects(Effect("boost", "all jp gains", 0.25, scope="brothel"), expires = calendar.time + 1)
 
@@ -2428,16 +2428,16 @@ label ext_holiday_night:
     scene black with fade
     show expression bg_bro at top with dissolve
 
-    "今晚，沙利亚的信徒庆祝她在{b}{color=[c_orange]}夜色之暗{/color}{/b}期间与黑夜融为一体。"
+    "今晚，莎莉娅的信徒庆祝她在{b}{color=[c_orange]}夜色之暗{/color}{/b}期间与黑夜融为一体。"
     "伊斯兰教法的信徒被鼓励对非信徒实施阴谋。 {i}恐惧收益在这一天得到显著提升{/i}。"
 
     $ MC.add_effects(Effect("boost", "fear gains", 2, scope="world"), expires = calendar.time + 1)
 
     if MC.god == "Arios":
-        "As you worship Arios, {i}threats to your brothel will build up much faster{/i} on this day."
+        "因为你信奉太阳神, 在这一天{i}威胁等级显著提高了{/i}。"
         $ MC.add_effects(Effect("boost", "threat build up", 3, scope="brothel"), expires = calendar.time + 1)
     elif not MC.god:
-        "As you do not worship Shalia, {i}threats to your brothel will build up faster{/i} on this day."
+        "因为你不信封莎莉娅, 在这一天{i}威胁等级显著提高了{/i}。"
         $ MC.add_effects(Effect("boost", "threat build up", 1, scope="brothel"), expires = calendar.time + 1)
         
     $ girl = rand_choice(MC.girls)
