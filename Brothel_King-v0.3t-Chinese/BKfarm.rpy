@@ -253,9 +253,9 @@ init -2 python:
 
             if self.hurt:
                 if self.type == "machine":
-                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " 已经损坏，我得花 " + str(self.hurt) + " 天来修复它 ")
+                    des += event_color["bad"] % ("\n" + self.name + " 已经损坏，我得花 " + str(self.hurt) + " 天来修复它 ")
                 else:
-                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " 严重受伤，它得休息 " + str(self.hurt) + " 天来养伤 ")
+                    des += event_color["bad"] % ("\n" + self.name + " 严重受伤，它得休息 " + str(self.hurt) + " 天来养伤 ")
 
             return des
 
