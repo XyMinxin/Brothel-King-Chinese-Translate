@@ -1696,7 +1696,7 @@ translate schinese fix_neg_interact_1ef63dc0:
 translate schinese fix_neg_interact_bdcd7fd7:
 
     # "[intro]"
-    "[intro]"
+    "[简介]"
 
 # game/Mods/Trait King/TKevents.rpy:1993
 translate schinese fix_neg_interact_ec8894bc:
@@ -1708,7 +1708,7 @@ translate schinese fix_neg_interact_ec8894bc:
 translate schinese fix_neg_interact_95c06c44:
 
     # "[neg_reaction]"
-    "[neg_reaction]"
+    "[否定反应]"
 
 # game/Mods/Trait King/TKevents.rpy:2007
 translate schinese fix_neg_interact_b96dfb7b:
@@ -2025,1074 +2025,1074 @@ translate schinese ext_holiday_hmas_60f2abf6:
 translate schinese strings:
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "proven to be your most lucrative asset"
+    old "事实证明是您最有利可图的资产"
     new "事实证明是您最有利可图的资产"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "brought in the most coin"
+    old "带来最多的硬币"
     new "带来最多的硬币"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "brought in the most profit"
+    old "带来了最多的利润"
     new "带来了最多的利润"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "been a smash hit"
+    old "红极一时"
     new "红极一时"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "proven to be your most popular girl"
+    old "事实证明是你最受欢迎的女孩"
     new "事实证明是你最受欢迎的女孩"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "been a favorite among your customers"
+    old "深受客户喜爱"
     new "深受客户喜爱"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "led your stable"
+    old "带领你的马厩"
     new "带领你的马厩"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "earned her keep like no other"
+    old "为她赢得了无与伦比的保住权"
     new "为她赢得了无与伦比的保住权"
 
     # game/Mods/Trait King/TKevents.rpy:82
-    old "taken the crown"
+    old "夺得桂冠"
     new "夺得桂冠"
 
     # game/Mods/Trait King/TKevents.rpy:84
-    old "Over the past month, {b}{color=[c_orange]}"
+    old "过去一个月，{b}{color=[c_orange]}"
     new "过去一个月，{b}{color=[c_orange]}"
 
     # game/Mods/Trait King/TKevents.rpy:84
-    old "{/color}{/b} has "
+    old "{/color}{/b} 有 "
     new "{/color}{/b} 有 "
 
     # game/Mods/Trait King/TKevents.rpy:84
-    old " (bringing in "
+    old " （引入 "
     new " （引入 "
 
     # game/Mods/Trait King/TKevents.rpy:84
-    old " gold), followed by {b}"
+    old " 金），然后是 {b}"
     new " 金），然后是 {b}"
 
     # game/Mods/Trait King/TKevents.rpy:84
-    old "{/b} and {b}"
+    old "{/b} 和 {b}"
     new "{/b} 和 {b}"
 
     # game/Mods/Trait King/TKevents.rpy:125
-    old "You suspect that "
+    old "你怀疑 "
     new "你怀疑 "
 
     # game/Mods/Trait King/TKevents.rpy:125
-    old " is trying to hide something from you."
+    old " 试图向您隐瞒某些事情。"
     new " 试图向您隐瞒某些事情。"
 
     # game/Mods/Trait King/TKevents.rpy:133
-    old "Thanks to her Karkyrian Hymen, "
+    old "感谢她的卡基里安处女膜， "
     new "感谢她的卡基里安处女膜， "
 
     # game/Mods/Trait King/TKevents.rpy:133
-    old "'s virginity has been restored."
+    old "的童贞已经恢复了。"
     new "的童贞已经恢复了。"
 
     # game/Mods/Trait King/TKevents.rpy:153
-    old "an extra perk point."
+    old "额外的奖励点。"
     new "额外的奖励点。"
 
     # game/Mods/Trait King/TKevents.rpy:158
-    old "increased familiarity with "
+    old "增加熟悉度 "
     new "增加熟悉度 "
 
     # game/Mods/Trait King/TKevents.rpy:158
-    old " tasks."
+    old " 任务。"
     new " 任务。"
 
     # game/Mods/Trait King/TKevents.rpy:167
-    old " has been studying vigorously in her leisure time, resulting in "
+    old " 闲暇之余一直刻苦学习， "
     new " 闲暇之余一直刻苦学习， "
 
     # game/Mods/Trait King/TKevents.rpy:180
-    old " is a true prodigy. It's as if the tricks of the trade come naturally to her."
+    old " 是一个真正的神童。就好像这个行业的技巧对她来说是天生的。"
     new " 是一个真正的神童。就好像这个行业的技巧对她来说是天生的。"
 
     # game/Mods/Trait King/TKevents.rpy:190
-    old "Slavers are no longer willing to pay a premium for "
+    old "奴隶主不再愿意支付溢价 "
     new "奴隶主不再愿意支付溢价 "
 
     # game/Mods/Trait King/TKevents.rpy:196
-    old "Recently a lot of slavers have been inquiring about "
+    old "最近有不少小贩询问 "
     new "最近有不少小贩询问 "
 
     # game/Mods/Trait King/TKevents.rpy:196
-    old ". It would seem that she is {b}{color=[c_orange]}in high demand{/color}{/b}. If you were willing to part with her, it could prove to be very lucrative."
+    old "。看来她{b}{color=[c_orange]}的需求量很大{/color}{/b}。如果你愿意和她分开，这可能会非常有利可图。"
     new "。看来她{b}{color=[c_orange]}的需求量很大{/color}{/b}。如果你愿意和她分开，这可能会非常有利可图。"
 
     # game/Mods/Trait King/TKevents.rpy:360
-    old "You find her relaxing in her room."
+    old "你发现她在房间里放松。"
     new "你发现她在房间里放松。"
 
     # game/Mods/Trait King/TKevents.rpy:360
-    old "She's resting in her room."
+    old "她正在自己的房间里休息。"
     new "她正在自己的房间里休息。"
 
     # game/Mods/Trait King/TKevents.rpy:360
-    old "she is enjoying a well-earned rest in her room."
+    old "她正在自己的房间里享受应有的休息。"
     new "她正在自己的房间里享受应有的休息。"
 
     # game/Mods/Trait King/TKevents.rpy:360
-    old "She's recuperating in her room."
+    old "她正在自己的房间里康复。"
     new "她正在自己的房间里康复。"
 
     # game/Mods/Trait King/TKevents.rpy:372
-    old "You find her hanging around the brothel."
+    old "你发现她在妓院里闲逛。"
     new "你发现她在妓院里闲逛。"
 
     # game/Mods/Trait King/TKevents.rpy:372
-    old "She's relaxing in the brothel."
+    old "她在妓院里放松。"
     new "她在妓院里放松。"
 
     # game/Mods/Trait King/TKevents.rpy:372
-    old "She's enjoying a moment's rest in the brothel."
+    old "她正在妓院里享受片刻的休息。"
     new "她正在妓院里享受片刻的休息。"
 
     # game/Mods/Trait King/TKevents.rpy:372
-    old "she hums a cheerful tune as she skips through the brothel."
+    old "她一边哼着欢快的曲调，一边蹦蹦跳跳地穿过妓院。"
     new "她一边哼着欢快的曲调，一边蹦蹦跳跳地穿过妓院。"
 
     # game/Mods/Trait King/TKevents.rpy:379
-    old "You find her in her room."
+    old "你在她的房间里找到她。"
     new "你在她的房间里找到她。"
 
     # game/Mods/Trait King/TKevents.rpy:379
-    old "She's staying in her room this morning."
+    old "今天早上她待在自己的房间里。"
     new "今天早上她待在自己的房间里。"
 
     # game/Mods/Trait King/TKevents.rpy:379
-    old "She is enjoying a well-earned rest in her room."
+    old "她正在自己的房间里享受应有的休息。"
     new "她正在自己的房间里享受应有的休息。"
 
     # game/Mods/Trait King/TKevents.rpy:382
-    old " She's naked, as usual."
+    old " 她像往常一样赤身裸体。"
     new " 她像往常一样赤身裸体。"
 
     # game/Mods/Trait King/TKevents.rpy:382
-    old " The sight of her breasts brightens up your morning."
+    old " 她的乳房让你的早晨充满阳光。"
     new " 她的乳房让你的早晨充满阳光。"
 
     # game/Mods/Trait King/TKevents.rpy:382
-    old " Naturally, she's naked as the day she was born."
+    old " 当然，她和出生那天一样是赤裸的。"
     new " 当然，她和出生那天一样是赤裸的。"
 
     # game/Mods/Trait King/TKevents.rpy:385
-    old " You find her in a compromising situation."
+    old " 你发现她处于一种妥协的境地。"
     new " 你发现她处于一种妥协的境地。"
 
     # game/Mods/Trait King/TKevents.rpy:385
-    old " She's undressed for one reason or another."
+    old " 她因为某种原因脱光了衣服。"
     new " 她因为某种原因脱光了衣服。"
 
     # game/Mods/Trait King/TKevents.rpy:385
-    old " To your surprise, she's not wearing any clothes."
+    old " 令你惊讶的是，她没有穿任何衣服。"
     new " 令你惊讶的是，她没有穿任何衣服。"
 
     # game/Mods/Trait King/TKevents.rpy:385
-    old " What a pleasant sight! She happens to be undressed."
+    old "多么令人愉快的景象啊！她恰好脱光了衣服。"
     new "多么令人愉快的景象啊！她恰好脱光了衣服。"
 
     # game/Mods/Trait King/TKevents.rpy:393
-    old "You find her resting in her room."
+    old "你发现她正在房间里休息。"
     new "你发现她正在房间里休息。"
 
     # game/Mods/Trait King/TKevents.rpy:399
-    old " It looks like she wasn't expecting you, judging from her state of undress."
+    old " 从她脱衣服的样子来看，她似乎并没有在等你。"
     new " 从她脱衣服的样子来看，她似乎并没有在等你。"
 
     # game/Mods/Trait King/TKevents.rpy:406
-    old "You find her masturbating in her room."
+    old "你发现她在她的房间里自慰。"
     new "你发现她在她的房间里自慰。"
 
     # game/Mods/Trait King/TKevents.rpy:406
-    old "She's pleasuring herself in her room."
+    old "她在自己的房间里自得其乐。"
     new "她在自己的房间里自得其乐。"
 
     # game/Mods/Trait King/TKevents.rpy:406
-    old "she is enjoying some self-service in her room."
+    old "她正在房间里享受自助服务。"
     new "她正在房间里享受自助服务。"
 
     # game/Mods/Trait King/TKevents.rpy:406
-    old "She's having some fun in her room."
+    old "她在自己的房间里玩得很开心。"
     new "她在自己的房间里玩得很开心。"
 
     # game/Mods/Trait King/TKevents.rpy:409
-    old " She must be looking forward to serving more customers."
+    old " 她一定期待着为更多的顾客服务。"
     new " 她一定期待着为更多的顾客服务。"
 
     # game/Mods/Trait King/TKevents.rpy:409
-    old " Her moans can be heard from the hallway."
+    old " 走廊里都能听到她的呻吟声。"
     new " 走廊里都能听到她的呻吟声。"
 
     # game/Mods/Trait King/TKevents.rpy:409
-    old " She's screaming your name as she climaxes."
+    old " 她在高潮时尖叫着你的名字。"
     new " 她在高潮时尖叫着你的名字。"
 
     # game/Mods/Trait King/TKevents.rpy:412
-    old " She scampers to cover herself as you enter the room."
+    old " 当你进入房间时，她跑来掩饰自己。"
     new " 当你进入房间时，她跑来掩饰自己。"
 
     # game/Mods/Trait King/TKevents.rpy:412
-    old " When your eyes meet, she freezes up as if caught in a spell."
+    old " 当你们四目相对时，她就像中了咒语一样僵住了。"
     new " 当你们四目相对时，她就像中了咒语一样僵住了。"
 
     # game/Mods/Trait King/TKevents.rpy:412
-    old " She attemts to hide under the bedsheets as you call her name."
+    old " 当你叫她的名字时，她试图躲在床单下面。"
     new " 当你叫她的名字时，她试图躲在床单下面。"
 
     # game/Mods/Trait King/TKevents.rpy:419
-    old "She is hard at work, studying to further improve her performance."
+    old "她努力工作、学习，以进一步提高自己的表现。"
     new "她努力工作、学习，以进一步提高自己的表现。"
 
     # game/Mods/Trait King/TKevents.rpy:419
-    old "She's studying some literature, immersed in thought."
+    old "她正在研究一些文学作品，沉浸在思考之中。"
     new "她正在研究一些文学作品，沉浸在思考之中。"
 
     # game/Mods/Trait King/TKevents.rpy:419
-    old "She is using her downtime productively by studying."
+    old "她通过学习有效地利用了休息时间。"
     new "她通过学习有效地利用了休息时间。"
 
     # game/Mods/Trait King/TKevents.rpy:431
-    old "She has invited a friend over."
+    old "她邀请了一位朋友过来。"
     new "她邀请了一位朋友过来。"
 
     # game/Mods/Trait King/TKevents.rpy:431
-    old "She's socialising with one of her friends."
+    old "她正在和她的一位朋友交往。"
     new "她正在和她的一位朋友交往。"
 
     # game/Mods/Trait King/TKevents.rpy:431
-    old "One of her friends has come to visit the brothel. They're like two peas in a pod."
+    old "她的一位朋友来妓院参观。它们就像豆荚里的两颗豌豆。"
     new "她的一位朋友来妓院参观。它们就像豆荚里的两颗豌豆。"
 
     # game/Mods/Trait King/TKevents.rpy:431
-    old "She has invited one of her friends over. They seem to be getting along well."
+    old "她邀请了她的一位朋友过来。他们似乎相处得很好。"
     new "她邀请了她的一位朋友过来。他们似乎相处得很好。"
 
     # game/Mods/Trait King/TKevents.rpy:443
-    old "She has invited a few of her friends over."
+    old "她邀请了她的几个朋友过来。"
     new "她邀请了她的几个朋友过来。"
 
     # game/Mods/Trait King/TKevents.rpy:443
-    old "She's socialising with some of her friends, who are visiting the brothel."
+    old "她正在和一些去妓院的朋友交往。"
     new "她正在和一些去妓院的朋友交往。"
 
     # game/Mods/Trait King/TKevents.rpy:443
-    old "Some of her friends have come to visit the brothel."
+    old "她的一些朋友来妓院参观。"
     new "她的一些朋友来妓院参观。"
 
     # game/Mods/Trait King/TKevents.rpy:443
-    old "She has invited her friends over for a party."
+    old "她邀请了她的朋友来参加一个聚会。"
     new "她邀请了她的朋友来参加一个聚会。"
 
     # game/Mods/Trait King/TKevents.rpy:455
-    old "You find her hanging around in the brothel."
+    old "你发现她在妓院闲逛。"
     new "你发现她在妓院闲逛。"
 
     # game/Mods/Trait King/TKevents.rpy:455
-    old "She hums a cheerful tune as she skips through the brothel."
+    old "她一边哼着欢快的曲调，一边蹦蹦跳跳地穿过妓院。"
     new "她一边哼着欢快的曲调，一边蹦蹦跳跳地穿过妓院。"
 
     # game/Mods/Trait King/TKevents.rpy:486
-    old "Keep improving yourself"
+    old "不断提升自己"
     new "不断提升自己"
 
     # game/Mods/Trait King/TKevents.rpy:486
-    old "Help the brothel"
+    old "帮助妓院"
     new "帮助妓院"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Work as hard as you can"
+    old "尽你所能努力工作"
     new "尽你所能努力工作"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Hoard as much semen as you can"
+    old "尽可能多地储存精液"
     new "尽可能多地储存精液"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Focus on the whales"
+    old "专注于鲸鱼"
     new "专注于鲸鱼"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Keep doing what you're doing"
+    old "继续做你正在做的事情"
     new "继续做你正在做的事情"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Stand up for yourself"
+    old "为自己挺身而出"
     new "为自己挺身而出"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Focus on training"
+    old "注重培训"
     new "注重培训"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Serve the customer, no matter what they request"
+    old "服务客户，无论他们有什么要求"
     new "服务客户，无论他们有什么要求"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Gain more experience"
+    old "获得更多经验"
     new "获得更多经验"
 
     # game/Mods/Trait King/TKevents.rpy:493
-    old "Consider a spell at the farm"
+    old "考虑在农场度过一段时光"
     new "考虑在农场度过一段时光"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Bring in more customers"
+    old "吸引更多客户"
     new "吸引更多客户"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Prep for quests and classes"
+    old "为任务和课程做准备"
     new "为任务和课程做准备"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Act as a floor manager"
+    old "担任楼层经理"
     new "担任楼层经理"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Help me with my errands"
+    old "帮我办事"
     new "帮我办事"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Punish the other girls"
+    old "惩罚其他女孩"
     new "惩罚其他女孩"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Protect the other girls from harm"
+    old "保护其他女孩免受伤害"
     new "保护其他女孩免受伤害"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Help me with my enchantments"
+    old "帮助我施展我的魔法"
     new "帮助我施展我的魔法"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Decorate the brothel"
+    old "装饰妓院"
     new "装饰妓院"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Make sure all the girls exercise regularly"
+    old "确保所有女孩定期锻炼"
     new "确保所有女孩定期锻炼"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Make sure our farm creatures are well trained"
+    old "确保我们的农场动物训练有素"
     new "确保我们的农场动物训练有素"
 
     # game/Mods/Trait King/TKevents.rpy:677
-    old "Be subservient to the other girls"
+    old "服从其他女孩"
     new "服从其他女孩"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He tried to force himself onto me and I resisted."
+    old "他试图强迫自己压在我身上，但我反抗了。"
     new "他试图强迫自己压在我身上，但我反抗了。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "I stuck a knife between his ribs when attempted to abuse me in my sleep. Sadly he survived."
+    old "当我试图在睡梦中虐待我时，我把刀插在他的肋骨之间。不幸的是他活了下来。"
     new "当我试图在睡梦中虐待我时，我把刀插在他的肋骨之间。不幸的是他活了下来。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He physically abused me one too many times and I... I decided to fight back and bit his ear off."
+    old "他多次对我进行身体虐待，而我……我决定反击并咬掉了他的耳朵。"
     new "他多次对我进行身体虐待，而我……我决定反击并咬掉了他的耳朵。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "I laughed in his face when he said he wanted to keep me all to himself."
+    old "当他说他想让我独自一人时，我当着他的面笑了。"
     new "当他说他想让我独自一人时，我当着他的面笑了。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "Him and I used to be a lot closer. Very close actually. But eventually we broke up."
+    old "他和我曾经很亲密。实际上非常接近。但最终我们还是分手了。"
     new "他和我曾经很亲密。实际上非常接近。但最终我们还是分手了。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He was actually my lover for a little while, but it didn't work out and he never got over it."
+    old "他实际上是我的爱人有一段时间了，但没有成功，他也一直无法释怀。"
     new "他实际上是我的爱人有一段时间了，但没有成功，他也一直无法释怀。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "We had a very intimate relationship at one point... Until he found out I also had an intimate relationship with his brother."
+    old "我们曾经有过非常亲密的关系……直到他发现我和他的兄弟也有亲密的关系。"
     new "我们曾经有过非常亲密的关系……直到他发现我和他的兄弟也有亲密的关系。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "I loved him. Then one day I begged him to not let me serve any more customers, so I could be there just for him... He refused..."
+    old "我爱他。然后有一天，我求他不要让我再为顾客服务，这样我就可以专门为他服务……他拒绝了……"
     new "我爱他。然后有一天，我求他不要让我再为顾客服务，这样我就可以专门为他服务……他拒绝了……"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He brought me along to an orgy at the slavers guild. I choked and vomited on the guildmaster's cock."
+    old "他带我去参加奴隶商行会的一场狂欢。我被噎住了，吐在了公会长的阴茎上。"
     new "他带我去参加奴隶商行会的一场狂欢。我被噎住了，吐在了公会长的阴茎上。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He was very fond of me and invited me to a party at the slavers guild. I guess I broke the slavers code by sneaking into a bedroom with one of his rivals."
+    old "他非常喜欢我并邀请我参加奴隶商行会的聚会。我想我和他的一个对手偷偷溜进一间卧室就打破了奴隶贩子的守则。"
     new "他非常喜欢我并邀请我参加奴隶商行会的聚会。我想我和他的一个对手偷偷溜进一间卧室就打破了奴隶贩子的守则。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "We were pretty daring. I once sucked his cock during a funeral procession. It became a big scandal and he was kicked out of the slavers guild."
+    old "我们非常大胆。我曾经在送葬队伍中吸过他的鸡巴。这成为了一场大丑闻，他被赶出了奴隶商行会。"
     new "我们非常大胆。我曾经在送葬队伍中吸过他的鸡巴。这成为了一场大丑闻，他被赶出了奴隶商行会。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "The slavers guild revoked his membership after I became involved in a sex scandal with dozens of supposedly celibate religious figureheads."
+    old "在我卷入与数十名所谓独身宗教领袖的性丑闻后，奴隶商会取消了他的会员资格。"
     new "在我卷入与数十名所谓独身宗教领袖的性丑闻后，奴隶商会取消了他的会员资格。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "He thinks I might be cursed. I lost my virginity on a quest by performing what later turned out to be a demonic sex ritual."
+    old "他认为我可能被诅咒了。我在一次探索中通过执行后来证明是恶魔的性仪式而失去了童贞。"
     new "他认为我可能被诅咒了。我在一次探索中通过执行后来证明是恶魔的性仪式而失去了童贞。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "One day he made me stand on an ominous pentagram and started chanting. For some reason the spell he tried to perform did not work, and he blamed me for it."
+    old "有一天，他让我站在一个不祥的五角星上并开始念诵。由于某种原因，他尝试施展的咒语没有起作用，他为此责备了我。"
     new "有一天，他让我站在一个不祥的五角星上并开始念诵。由于某种原因，他尝试施展的咒语没有起作用，他为此责备了我。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "One day the preacher invited into the inner sanctum, where we had a little fun. Someone saw us and it caused an uproar because we desecrated the church."
+    old "有一天，牧师邀请我们进入内殿，我们在那里玩得很开心。有人看到我们，引起轩然大波，因为我们亵渎了教堂。"
     new "有一天，牧师邀请我们进入内殿，我们在那里玩得很开心。有人看到我们，引起轩然大波，因为我们亵渎了教堂。"
 
     # game/Mods/Trait King/TKevents.rpy:1138
-    old "It's quite a silly story... He is a pious man, and at some point I got caught shoving a Holy Cross up my ass. He did not like that."
+    old "这是一个相当愚蠢的故事……他是一个虔诚的人，在某个时候我被抓到把一个神圣的十字架塞进我的屁股里。他不喜欢那样。"
     new "这是一个相当愚蠢的故事……他是一个虔诚的人，在某个时候我被抓到把一个神圣的十字架塞进我的屁股里。他不喜欢那样。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "After that he gave me the nickname "
+    old "后来他给了我这个昵称 "
     new "后来他给了我这个昵称 "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old ". I guess that name must have spread like wildfire."
+    old "。我想这个名字一定像野火一样传播开来。"
     new "。我想这个名字一定像野火一样传播开来。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "And then he wrote a song about me, 'The Ballad of "
+    old "然后他写了一首关于我的歌“The Ballad of” "
     new "然后他写了一首关于我的歌“The Ballad of” "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "', it wasn't very flattering to say the least."
+    old "’，至少可以说这并不是很讨人喜欢。"
     new "’，至少可以说这并不是很讨人喜欢。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Word must have spead quickly. The next day we suddenly had more visitors than usual. They were all looking and pointing in my direction."
+    old "消息一定传得很快。第二天，我们的访客突然比平时多了。他们都看着我，并指着我的方向。"
     new "消息一定传得很快。第二天，我们的访客突然比平时多了。他们都看着我，并指着我的方向。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "For the next few weeks he made me walk around town with a sign around my neck that read '"
+    old "在接下来的几周里，他让我在脖子上挂着一块牌子在城里散步，上面写着“"
     new "在接下来的几周里，他让我在脖子上挂着一块牌子在城里散步，上面写着“"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "! SHAME!'"
+    old "！耻辱！\'"
     new "！耻辱！\'"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Things escalated... The aftermath somehow made people call me "
+    old "事情升级了……不知何故，人们打电话给我 "
     new "事情升级了……不知何故，人们打电话给我 "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old ". That's all you really need to know."
+    old "。这就是您真正需要知道的一切。"
     new "。这就是您真正需要知道的一切。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Ever since that day he has held some sort of grudge against "
+    old "从那天起他就对这个人怀有某种怨恨 "
     new "从那天起他就对这个人怀有某种怨恨 "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old " girls and he seems to be influencing the other slavers."
+    old " 女孩们，他似乎正在影响其他奴隶贩子。"
     new " 女孩们，他似乎正在影响其他奴隶贩子。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Then everyone started calling me "
+    old "然后每个人都开始打电话给我 "
     new "然后每个人都开始打电话给我 "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old " behind my back... Does that make me worthless? The slavers seem to think so."
+    old " 在我背后……这会让我变得一文不值吗？奴隶贩子似乎也是这么认为的。"
     new " 在我背后……这会让我变得一文不值吗？奴隶贩子似乎也是这么认为的。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "He still tells humiliating stories about it to this day."
+    old "直到今天，他仍然讲述着有关此事的羞辱故事。"
     new "直到今天，他仍然讲述着有关此事的羞辱故事。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "After that I became the butt of many jokes within the slavers guild."
+    old "从那以后，我成了奴隶商行会里许多笑话的笑柄。"
     new "从那以后，我成了奴隶商行会里许多笑话的笑柄。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "I had to endure some torture after that. Thankfully my circumstances have improved since then."
+    old "之后我不得不忍受一些折磨。值得庆幸的是，从那时起我的情况有所改善。"
     new "之后我不得不忍受一些折磨。值得庆幸的是，从那时起我的情况有所改善。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Suddenly I became known around town as the "
+    old "突然我在镇上被称为 "
     new "突然我在镇上被称为 "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "The next day everyone was talking about it, spreading a heavily exaggerated story."
+    old "第二天大家都在议论纷纷，流传着一个极其夸张的故事。"
     new "第二天大家都在议论纷纷，流传着一个极其夸张的故事。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "Some days later I visited the church, where a Chaplain spat in my face and called me a "
+    old "几天后，我参观了教堂，一位牧师向我脸上吐口水，并称我为“ "
     new "几天后，我参观了教堂，一位牧师向我脸上吐口水，并称我为“ "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old ". Now everyone hates me."
+    old "。现在每个人都讨厌我。"
     new "。现在每个人都讨厌我。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "The following day the towncrier had a popular story to tell about 'The "
+    old "第二天，镇民讲述了一个关于“ "
     new "第二天，镇民讲述了一个关于“ "
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "' and people seem to remember that to this day."
+    old "’人们似乎至今还记得这一点。"
     new "’人们似乎至今还记得这一点。"
 
     # game/Mods/Trait King/TKevents.rpy:1164
-    old "He must have some very powerful friends in the slavers guild, because they now want nothing to do with me."
+    old "他一定在奴隶行会里有一些非常有权势的朋友，因为他们现在不想和我有任何关系。"
     new "他一定在奴隶行会里有一些非常有权势的朋友，因为他们现在不想和我有任何关系。"
 
     # game/Mods/Trait King/TKevents.rpy:1218
-    old "What should you do?"
+    old "你应该做什么？"
     new "你应该做什么？"
 
     # game/Mods/Trait King/TKevents.rpy:1218
-    old "Bribe a slaver for information"
+    old "贿赂奴隶贩子以获取信息"
     new "贿赂奴隶贩子以获取信息"
 
     # game/Mods/Trait King/TKevents.rpy:1218
-    old "Analyze her behavior carefully"
+    old "仔细分析她的行为"
     new "仔细分析她的行为"
 
     # game/Mods/Trait King/TKevents.rpy:1218
-    old "Leave her be"
+    old "让她随心所欲"
     new "让她随心所欲"
 
     # game/Mods/Trait King/TKevents.rpy:1242
-    old "Ask her about [girl.fullnickname]"
+    old "向她询问 [girl.fullnickname]"
     new "向她询问 [girl.fullnickname]"
 
     # game/Mods/Trait King/TKevents.rpy:1242
-    old "Bring it up in casual conversation"
+    old "在随意的谈话中提起它"
     new "在随意的谈话中提起它"
 
     # game/Mods/Trait King/TKevents.rpy:1242
-    old "Intimidate her"
+    old "恐吓她"
     new "恐吓她"
 
     # game/Mods/Trait King/TKevents.rpy:1242
-    old "No, I've changed my mind"
+    old "不，我改变主意了"
     new "不，我改变主意了"
 
     # game/Mods/Trait King/TKevents.rpy:1385
-    old "You estimate a slaver would ask for around [bribebase] gold in exchange for information. Proceed?"
+    old "你估计奴隶贩子会索要大约[贿赂]黄金来换取信息。继续？"
     new "你估计奴隶贩子会索要大约[贿赂]黄金来换取信息。继续？"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "How can I resolve this situation?"
+    old "我该如何解决这种情况？"
     new "我该如何解决这种情况？"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Shower her with praise on stage"
+    old "在舞台上对她大加赞扬"
     new "在舞台上对她大加赞扬"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Use a spell to boost her appeal"
+    old "使用咒语来增强她的吸引力"
     new "使用咒语来增强她的吸引力"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Embrace her nickname"
+    old "拥抱她的昵称"
     new "拥抱她的昵称"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Send her off to serve the slavers guild for a week"
+    old "送她去奴隶行会服务一周"
     new "送她去奴隶行会服务一周"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Reach a settlement with the slavers guild"
+    old "与奴隶商行会达成和解"
     new "与奴隶商行会达成和解"
 
     # game/Mods/Trait King/TKevents.rpy:1530
-    old "Perhaps some other time"
+    old "也许其他时间"
     new "也许其他时间"
 
     # game/Mods/Trait King/TKevents.rpy:1568
-    old "And that's just scratching the surface!"
+    old "这只是表面现象！"
     new "这只是表面现象！"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "What should I call [girl.fullname] from now on?"
+    old "从现在开始我应该怎么称呼[girl.fullname]？"
     new "从现在开始我应该怎么称呼[girl.fullname]？"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[girl.name] the [noun]"
+    old "[女孩名字] [名词]"
     new "[女孩名字] [名词]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[girl.name] the [trait]"
+    old "[女孩名称] [特质]"
     new "[女孩名称] [特质]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[trait] [girl.lastname]"
+    old "[特质] [女孩.姓氏]"
     new "[特质] [女孩.姓氏]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[adjective] [girl.name] [girl.lastname]"
+    old "[形容词] [女孩名字] [女孩姓氏]"
     new "[形容词] [女孩名字] [女孩姓氏]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[trait] [girl.name] the [noun]"
+    old "[特质] [女孩名字] [名词]"
     new "[特质] [女孩名字] [名词]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[trait] [noun]"
+    old "[特征] [名词]"
     new "[特征] [名词]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "[adjective] [trait] [noun]"
+    old "[形容词] [特质] [名词]"
     new "[形容词] [特质] [名词]"
 
     # game/Mods/Trait King/TKevents.rpy:1652
-    old "On second thought, she doesn't deserve this"
+    old "转念一想，她不值得这样"
     new "转念一想，她不值得这样"
 
     # game/Mods/Trait King/TKevents.rpy:1844
-    old "We have a deal!"
+    old "我们达成协议！"
     new "我们达成协议！"
 
     # game/Mods/Trait King/TKevents.rpy:1844
-    old "I'm not willing to pay that price"
+    old "我不愿意付出这个代价"
     new "我不愿意付出这个代价"
 
     # game/Mods/Trait King/TKevents.rpy:1971
-    old "Would you like to help her?"
+    old "你愿意帮助她吗？"
     new "你愿意帮助她吗？"
 
     # game/Mods/Trait King/TKevents.rpy:1971
-    old "Training: [training]"
+    old "培训：[培训]"
     new "培训：[培训]"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "The way things are going, I'm really enjoying my life as a slave."
+    old "就目前的情况来看，我真的很享受奴隶的生活。"
     new "就目前的情况来看，我真的很享受奴隶的生活。"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "Being a slave is so much more fun than I ever thought it would be."
+    old "成为奴隶比我想象的有趣得多。"
     new "成为奴隶比我想象的有趣得多。"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "I absolutely love working in a brothel like this."
+    old "我非常喜欢在这样的妓院工作。"
     new "我非常喜欢在这样的妓院工作。"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "I think I could truly make a career out of this profession."
+    old "我认为我可以真正以这个职业为职业。"
     new "我认为我可以真正以这个职业为职业。"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "Slavery gets a bad rep. It isn't as terrible as they say."
+    old "奴隶制名声不好。事情并不像他们说的那么可怕。"
     new "奴隶制名声不好。事情并不像他们说的那么可怕。"
 
     # game/Mods/Trait King/TKevents.rpy:2055
-    old "Life is much simpler this way, knowing that my Master will take care of me."
+    old "这样生活就简单多了，因为我知道我的师父会照顾我。"
     new "这样生活就简单多了，因为我知道我的师父会照顾我。"
 
     # game/Mods/Trait King/TKevents.rpy:2056
-    old "Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast."
+    old "不幸的是，作为一个自由的女孩，我往往会以各种错误的方式受到特殊对待。我将永远是一个被遗弃的人。"
     new "不幸的是，作为一个自由的女孩，我往往会以各种错误的方式受到特殊对待。我将永远是一个被遗弃的人。"
 
     # game/Mods/Trait King/TKevents.rpy:2056
-    old "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level."
+    old "但我意识到，只有当你有动力帮助我达到下一个水平时，才能在这条道路上迈出下一步。"
     new "但我意识到，只有当你有动力帮助我达到下一个水平时，才能在这条道路上迈出下一步。"
 
     # game/Mods/Trait King/TKevents.rpy:2056
-    old "To further my career, I must be willing to take bold risks."
+    old "为了进一步发展我的职业生涯，我必须愿意承担大胆的风险。"
     new "为了进一步发展我的职业生涯，我必须愿意承担大胆的风险。"
 
     # game/Mods/Trait King/TKevents.rpy:2056
-    old "If life has taught me anything, it's that being a slave can get you places."
+    old "如果说生活教会了我什么的话，那就是成为奴隶可以让你获得地位。"
     new "如果说生活教会了我什么的话，那就是成为奴隶可以让你获得地位。"
 
     # game/Mods/Trait King/TKevents.rpy:2056
-    old "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."
+    old "我渴望采取下一步行动。我认真思考了很久，最好的做法就是让你掌控我的命运。"
     new "我渴望采取下一步行动。我认真思考了很久，最好的做法就是让你掌控我的命运。"
 
     # game/Mods/Trait King/TKevents.rpy:2057
-    old "That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?"
+    old "这就是为什么我为你准备了这份合同。为了一笔钱，我愿意放弃我的自由。你怎么说？"
     new "这就是为什么我为你准备了这份合同。为了一笔钱，我愿意放弃我的自由。你怎么说？"
 
     # game/Mods/Trait King/TKevents.rpy:2057
-    old "That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is."
+    old "所以我决定以正式奴隶的身份献给您。如果您对我的服务感兴趣，那就是。"
     new "所以我决定以正式奴隶的身份献给您。如果您对我的服务感兴趣，那就是。"
 
     # game/Mods/Trait King/TKevents.rpy:2057
-    old "That's why I would like to start negotiations regarding this contract..."
+    old "这就是为什么我想开始关于这份合同的谈判......"
     new "这就是为什么我想开始关于这份合同的谈判......"
 
     # game/Mods/Trait King/TKevents.rpy:2057
-    old "That's why... Well, just have a look at this contract!"
+    old "所以……好吧，你看一下这份合同！"
     new "所以……好吧，你看一下这份合同！"
 
     # game/Mods/Trait King/TKevents.rpy:2119
-    old "Agree to the terms ([price_str] gold)"
+    old "同意条款（[price_str] gold）"
     new "同意条款（[price_str] gold）"
 
     # game/Mods/Trait King/TKevents.rpy:2119
-    old "Try to haggle her down"
+    old "尝试讨价还价"
     new "尝试讨价还价"
 
     # game/Mods/Trait King/TKevents.rpy:2119
-    old "Refuse her offer"
+    old "拒绝她的提议"
     new "拒绝她的提议"
 
     # game/Mods/Trait King/TKevents.rpy:2138
-    old "We have a deal ([price_str] gold)"
+    old "我们达成交易（[price_str] gold）"
     new "我们达成交易（[price_str] gold）"
 
     # game/Mods/Trait King/TKevents.rpy:2138
-    old "Not good enough"
+    old "不够好"
     new "不够好"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They're a rowdy bunch."
+    old "他们是一群吵闹的人。"
     new "他们是一群吵闹的人。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "Their excited yelps liven up the brothel."
+    old "他们兴奋的叫喊声让妓院里热闹起来。"
     new "他们兴奋的叫喊声让妓院里热闹起来。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They run through the halls of the brothel as if they own the place."
+    old "他们在妓院的大厅里跑来跑去，仿佛这地方是他们的。"
     new "他们在妓院的大厅里跑来跑去，仿佛这地方是他们的。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They want to hear all about the customers from "
+    old "他们希望听到有关客户的所有信息 "
     new "他们希望听到有关客户的所有信息 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem eager to get to know you."
+    old "他们似乎很想认识你。"
     new "他们似乎很想认识你。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They like to compete for each other's attention."
+    old "他们喜欢争夺彼此的注意力。"
     new "他们喜欢争夺彼此的注意力。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They don't seem very talkative."
+    old "他们看起来不太爱说话。"
     new "他们看起来不太爱说话。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "It's a timid affair."
+    old "这是一件胆怯的事情。"
     new "这是一件胆怯的事情。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They listen attentively as "
+    old "他们聚精会神地听 "
     new "他们聚精会神地听 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " sums up her day-to-day."
+    old " 总结了她的日常。"
     new " 总结了她的日常。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They don't seem very interested in a tour around the brothel."
+    old "他们似乎对参观妓院不太感兴趣。"
     new "他们似乎对参观妓院不太感兴趣。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem very supportive of her."
+    old "他们似乎非常支持她。"
     new "他们似乎非常支持她。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They look happy to be invited."
+    old "他们看起来很高兴被邀请。"
     new "他们看起来很高兴被邀请。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem very fond of "
+    old "他们看起来非常喜欢 "
     new "他们看起来非常喜欢 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They fervently inspect "
+    old "他们热心检查 "
     new "他们热心检查 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "'s wardrobe."
+    old "的衣柜。"
     new "的衣柜。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They are particularly interested in her earnings."
+    old "他们对她的收入特别感兴趣。"
     new "他们对她的收入特别感兴趣。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They exchange makeup tips with one another."
+    old "他们互相交流化妆技巧。"
     new "他们互相交流化妆技巧。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They show off their jewelry to one another."
+    old "他们互相炫耀自己的珠宝。"
     new "他们互相炫耀自己的珠宝。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem keen to impress "
+    old "他们似乎热衷于给人留下深刻印象 "
     new "他们似乎热衷于给人留下深刻印象 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They happily spend time gossiping."
+    old "他们很高兴地花时间闲聊。"
     new "他们很高兴地花时间闲聊。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They talk politics with one another."
+    old "他们互相谈论政治。"
     new "他们互相谈论政治。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem very polite and well mannered."
+    old "他们看起来很有礼貌，很有礼貌。"
     new "他们看起来很有礼貌，很有礼貌。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They really enjoy each other's company."
+    old "他们真的很享受彼此的陪伴。"
     new "他们真的很享受彼此的陪伴。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They affectionately greet "
+    old "他们亲切地打招呼 "
     new "他们亲切地打招呼 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " with a hug."
+    old " 一个拥抱。"
     new " 一个拥抱。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "One of them has brought lots of sweets. She offers some to the guards."
+    old "其中一个带来了很多糖果。她给了警卫一些。"
     new "其中一个带来了很多糖果。她给了警卫一些。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem excited to be here."
+    old "他们似乎很高兴来到这里。"
     new "他们似乎很高兴来到这里。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They look excited."
+    old "他们看起来很兴奋。"
     new "他们看起来很兴奋。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They're very curious about the brothel."
+    old "他们对妓院很好奇。"
     new "他们对妓院很好奇。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They're fascinated about every aspect of the brothel."
+    old "他们对妓院的方方面面都着迷。"
     new "他们对妓院的方方面面都着迷。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They her you to show them all of her sex toys."
+    old "他们让你向他们展示她所有的性玩具。"
     new "他们让你向他们展示她所有的性玩具。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They listen carefully as "
+    old "他们仔细聆听 "
     new "他们仔细聆听 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " tells stories about her life in the brothel."
+    old " 讲述了她在妓院的生活故事。"
     new " 讲述了她在妓院的生活故事。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They look appalled."
+    old "他们看起来很震惊。"
     new "他们看起来很震惊。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They are shocked by her living conditions."
+    old "他们对她的生活条件感到震惊。"
     new "他们对她的生活条件感到震惊。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They plead with "
+    old "他们恳求 "
     new "他们恳求 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " to take the party elsewhere."
+    old " 把聚会带到别处。"
     new " 把聚会带到别处。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They don't seem happy to be here."
+    old "他们似乎不高兴来到这里。"
     new "他们似乎不高兴来到这里。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They're a bit overdressed for the occasion."
+    old "他们在这个场合穿得有点过分了。"
     new "他们在这个场合穿得有点过分了。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They politely greet you as they pass by."
+    old "当他们经过时，他们会礼貌地向你打招呼。"
     new "当他们经过时，他们会礼貌地向你打招呼。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They feign interest."
+    old "他们假装感兴趣。"
     new "他们假装感兴趣。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They're bickering amongst themselves."
+    old "他们互相争吵。"
     new "他们互相争吵。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They don't seem to get along very well."
+    old "他们似乎相处得不太好。"
     new "他们似乎相处得不太好。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They exude confidence."
+    old "他们散发着自信。"
     new "他们散发着自信。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem to feel right at home."
+    old "他们似乎有宾至如归的感觉。"
     new "他们似乎有宾至如归的感觉。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They chat up one of the guards."
+    old "他们与一名警卫攀谈起来。"
     new "他们与一名警卫攀谈起来。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They strike up a conversation with the guards."
+    old "他们与警卫进行了交谈。"
     new "他们与警卫进行了交谈。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "The mood is timid, as if "
+    old "心情是胆怯的，仿佛 "
     new "心情是胆怯的，仿佛 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " and her friends have just had an argument."
+    old " 和她的朋友刚刚发生了争执。"
     new " 和她的朋友刚刚发生了争执。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They follow "
+    old "他们跟随 "
     new "他们跟随 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "'s lead as she guides them through the brothel."
+    old "她带领他们穿过妓院。"
     new "她带领他们穿过妓院。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They enthousiastically sing songs together."
+    old "他们一起热情地唱歌。"
     new "他们一起热情地唱歌。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "Some of them bow for you as they pass."
+    old "他们中的一些人经过时向你鞠躬。"
     new "他们中的一些人经过时向你鞠躬。"
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old "They seem enthralled as "
+    old "他们似乎着迷于 "
     new "他们似乎着迷于 "
 
     # game/Mods/Trait King/TKevents.rpy:2206
-    old " tells stories about her life here."
+    old " 讲述她在这里的生活故事。"
     new " 讲述她在这里的生活故事。"
 
     # game/Mods/Trait King/TKevents.rpy:2234
-    old "One of the visitors hands you a gift to thank "
+    old "一位访客递给您一份礼物以表谢意 "
     new "一位访客递给您一份礼物以表谢意 "
 
     # game/Mods/Trait King/TKevents.rpy:2234
-    old "'s friends come up to you to thank you for your part in an unforgettable day."
+    old "的朋友来找您，感谢您度过了难忘的一天。"
     new "的朋友来找您，感谢您度过了难忘的一天。"
 
     # game/Mods/Trait King/TKevents.rpy:2234
-    old " You receive a bouquet of flowers. "
+    old " 您收到一束鲜花。 "
     new " 您收到一束鲜花。 "
 
     # game/Mods/Trait King/TKevents.rpy:2238
-    old "The girls really enjoy their time in "
+    old "女孩们真的很享受在这里度过的时光 "
     new "女孩们真的很享受在这里度过的时光 "
 
     # game/Mods/Trait King/TKevents.rpy:2238
-    old "Before long the visitors take their leave. Time flies by when you're having fun."
+    old "不久，游客们纷纷告辞。当你玩得开心的时候，时间过得真快。"
     new "不久，游客们纷纷告辞。当你玩得开心的时候，时间过得真快。"
 
     # game/Mods/Trait King/TKevents.rpy:2238
-    old "After a while the party comes to an end. "
+    old "过了一会儿，聚会就结束了。 "
     new "过了一会儿，聚会就结束了。 "
 
     # game/Mods/Trait King/TKevents.rpy:2238
-    old "'s friends leave with smiles on their faces."
+    old "朋友们离开时脸上都带着笑容。"
     new "朋友们离开时脸上都带着笑容。"
 
     # game/Mods/Trait King/TKevents.rpy:2242
-    old "As the party winds down, they take great care to clean up their mess."
+    old "聚会结束后，他们会非常小心地收拾残局。"
     new "聚会结束后，他们会非常小心地收拾残局。"
 
     # game/Mods/Trait King/TKevents.rpy:2242
-    old "They do their utmost to clean up after themselves."
+    old "他们尽最大努力自行清理。"
     new "他们尽最大努力自行清理。"
 
     # game/Mods/Trait King/TKevents.rpy:2242
-    old "They make sure to tidy the place up."
+    old "他们确保把这个地方收拾干净。"
     new "他们确保把这个地方收拾干净。"
 
     # game/Mods/Trait King/TKevents.rpy:2258
-    old "After her friends are gone, "
+    old "朋友们离开后， "
     new "朋友们离开后， "
 
     # game/Mods/Trait King/TKevents.rpy:2258
-    old " approaches you with a gift."
+    old " 带着礼物接近你。"
     new " 带着礼物接近你。"
 
     # game/Mods/Trait King/TKevents.rpy:2259
-    old "I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards "
+    old "如果我们搞砸了一点，我很抱歉。我们都捐了一些金子来表达我们的感激之情 "
     new "如果我们搞砸了一点，我很抱歉。我们都捐了一些金子来表达我们的感激之情 "
 
     # game/Mods/Trait King/TKevents.rpy:2259
-    old "I charged the girls a fee to enter "
+    old "我向女孩们收取了入场费 "
     new "我向女孩们收取了入场费 "
 
     # game/Mods/Trait King/TKevents.rpy:2259
-    old ". It's only right that you should recieve most of that."
+    old "。你应该收到其中的大部分，这是正确的。"
     new "。你应该收到其中的大部分，这是正确的。"
 
     # game/Mods/Trait King/TKevents.rpy:2259
-    old "I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me."
+    old "对不起，师父。也许我应该先征求你的许可。我希望你能原谅我。"
     new "对不起，师父。也许我应该先征求你的许可。我希望你能原谅我。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " rushes towards you with flushed red cheeks."
+    old " 红着脸朝你冲过来。"
     new " 红着脸朝你冲过来。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You notice "
+    old "你注意到 "
     new "你注意到 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " rushing towards you."
+    old " 正向你冲来。"
     new " 正向你冲来。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " wishes to speak to you."
+    old " 希望与您交谈。"
     new " 希望与您交谈。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You're stopped by "
+    old "你被拦住了 "
     new "你被拦住了 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old ", who wants to talk to you."
+    old "，谁想和你说话。"
     new "，谁想和你说话。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You're held up by "
+    old "你被拦住了 "
     new "你被拦住了 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old ", who has something on her mind."
+    old "，她心里有事。"
     new "，她心里有事。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " tugs on your arm, eager to say something."
+    old " 拉着你的手臂，急于说些什么。"
     new " 拉着你的手臂，急于说些什么。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You run into "
+    old "你遇到 "
     new "你遇到 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old ", who candidly speaks her mind."
+    old "，她坦诚地说出了自己的想法。"
     new "，她坦诚地说出了自己的想法。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You hear "
+    old "你听到 "
     new "你听到 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " shouting your name as she runs up to you."
+    old " 当她跑向你时喊着你的名字。"
     new " 当她跑向你时喊着你的名字。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old " calling for you, eager to express what's on her mind."
+    old " 打电话给你，渴望表达她的想法。"
     new " 打电话给你，渴望表达她的想法。"
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old "You're surprised by "
+    old "你感到惊讶的是 "
     new "你感到惊讶的是 "
 
     # game/Mods/Trait King/TKevents.rpy:2302
-    old ", who urgently wishes to speak with you."
+    old "，他迫切希望与您交谈。"
     new "，他迫切希望与您交谈。"
 

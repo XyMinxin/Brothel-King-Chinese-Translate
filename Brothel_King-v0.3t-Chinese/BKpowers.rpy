@@ -699,7 +699,7 @@ label power_use(pow, girl, girl2):
         $ neg_fix = [fix for fix in girl.neg_fixations if (girl.personality_unlock[fix.name])]
 
         if neg_fix:
-            $ fix = menu([("Choose negative fixation to remove", None)] + [(f.name.capitalize(), f) for f in neg_fix] + [("Cancel", "back")])
+            $ fix = menu([("选择要移除的负面癖好", None)] + [(f.name.capitalize(), f) for f in neg_fix] + [("取消", "返回")])
 
             if fix == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -998,7 +998,7 @@ label power_use(pow, girl, girl2):
 
         "[girl.fullname] lies on the cold floor in a state of daze. Focusing your mind on the farm, you choose the target of your next power."
 
-        $ mn_type = menu([("Choose minion type", None)] + [(mt.capitalize() + "s", mt) for mt in all_minion_types if farm.get_minions(mt)] + [("Cancel", "back")])
+        $ mn_type = menu([("选择单位种类", None)] + [(mt.capitalize() + "s", mt) for mt in all_minion_types if farm.get_minions(mt)] + [("取消", "返回")])
 
         if mn_type == "back":
             $ MC.refund_mojo(spent_mojo)
@@ -1017,7 +1017,7 @@ label power_use(pow, girl, girl2):
                         renpy.notify(text1)
 
         else:
-            $ mn = menu([("Choose minion", None)] + [(m.name.capitalize(), m) for m in farm.get_minions(mn_type)] + [("Cancel", "back")])
+            $ mn = menu([("选择具体单位", None)] + [(m.name.capitalize(), m) for m in farm.get_minions(mn_type)] + [("取消", "返回")])
 
             if mn == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1039,7 +1039,7 @@ label power_use(pow, girl, girl2):
         $ eff = Effect("boost", "room capacity", 0.5, scope="brothel") # Effect is generated dynamically for this power
 
         if not pow.super: # Choose one room
-            $ room = menu([("Choose a common room", None)] + [(r.name.capitalize(), r) for r in brothel.rooms.values()] + [("Cancel", "back")])
+            $ room = menu([("选择一个经营场所", None)] + [(r.name.capitalize(), r) for r in brothel.rooms.values()] + [("取消", "返回")])
 
             if room == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1080,13 +1080,13 @@ label power_use(pow, girl, girl2):
         $ girl.love = 0
 
         if pow.target == "location":
-            $ dis = menu([("Choose target district", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("Cancel", "back")])
+            $ dis = menu([("选择目标地点", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("取消", "返回")])
 
             if dis == "back":
                 $ MC.refund_mojo(spent_mojo)
                 return
 
-            $ loc = menu([("Choose target location", None)] + [(l.name, l) for l in location_dict[dis.name]] + [("Cancel", "back")])
+            $ loc = menu([("选择具体位置", None)] + [(l.name, l) for l in location_dict[dis.name]] + [("取消", "返回")])
 
             if loc == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1098,7 +1098,7 @@ label power_use(pow, girl, girl2):
                         g.change_love(renpy.random.randint(round_down(0.15*love), round_up(0.3*love)))
 
         elif pow.target == "district":
-            $ dis = menu([("Choose target district", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("Cancel", "back")])
+            $ dis = menu([("选择目标地点", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("取消", "返回")])
 
             if dis == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1222,7 +1222,7 @@ label power_use(pow, girl, girl2):
 
         if pow.super:
             $ menu_list = [(t.name, t) for t, w in trait_list[:3]] # Lists the first three traits
-            $ new_neg = menu([("Choose a new trait to replace %s:" % old_neg.name, None)] + menu_list)
+            $ new_neg = menu([("选择一个新特质来替代 %s:" % old_neg.name, None)] + menu_list)
         else:
             $ new_neg = weighted_choice(trait_list)
 

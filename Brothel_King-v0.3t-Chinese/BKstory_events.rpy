@@ -11409,7 +11409,7 @@ label satella_game(game_type="the guessing game"):
                                 $ answers += "\nThe total is above " + str(r-1) + ". "
 
                         "你掷出的点数是...":
-                            $ r = menu([("Did you roll a...", None), ("One", 1), ("Two", 2), ("Three", 3), ("Four", 4), ("Five", 5), ("Six", 6)])
+                            $ r = menu([("点数是...", None), ("一", 1), ("二", 2), ("三", 3), ("四", 4), ("五", 5), ("六", 6)])
 
                             if d1 == r or d2 == r:
                                 satella "Yes!"
