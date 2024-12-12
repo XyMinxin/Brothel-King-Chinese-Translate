@@ -6,6 +6,10 @@
 
 # $ calendar.set_alarm(calendar.time + delay, Event(label = "label_to_call"))
 
+## Add event to the city
+
+# $ add_event("label_to_call", chance = 1.0, type="city", location = "location_name_lowercase", once = True, AP_cost = 1)
+
 ## Show current brothel as background
 
 #    scene black with fade
@@ -63,6 +67,19 @@
 ## GAME UTILITY EVENTS
 
 label before_main_menu(): # Will show before main menu (standard Ren'py label)
+
+    window hide
+
+    scene black
+    centered "Loading...{nw}"
+
+    #### GIRLS ####
+
+    # TRAITS & PERKS #
+    # Placed here so that mods have a change to update traits and perks for ongoing games
+
+    call init_traits() from _call_init_traits
+    call init_perks() from _call_init_perks
 
     ## MODS ##
 
@@ -129,8 +146,8 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
         gpinfo_dict = {}
         for gp in gpacks:
             gpinfo_dict[gp] = {"creator" : read_init_file_field(GirlFilesDict.get_ini(gp), "identity", "creator", _default="Unknown", skip_checks=True),
-                               "version" : read_init_file_field(GirlFilesDict.get_ini(gp), "identity", "version", _default="-", skip_checks=True),
-                               "description" : read_init_file_field(GirlFilesDict.get_ini(gp), "identity", "description", _default="No description.", skip_checks=True),}
+                                "version" : read_init_file_field(GirlFilesDict.get_ini(gp), "identity", "version", _default="-", skip_checks=True),
+                                "description" : read_init_file_field(GirlFilesDict.get_ini(gp), "identity", "description", _default="No description.", skip_checks=True),}
 
     if not persistent.girl_mix["default"]:
         $ persistent.girl_mix["default"] = list(gpacks)
@@ -158,33 +175,51 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
     return
 
 label after_load: # Happens after a game state is loaded
-    # if debug: #!
-    #     call init_moons ()
 
-    if not hasattr(game, 'version'):
-        $ game.version = "Unknown"
 
-    if not hasattr(game, 'goal_channels'):
-        $ game.goal_channels = goal_channels
+    if hasattr(store, 'game'):
+        #! TEMP FIXES - Clean up for release
+        python:
+            for g in game.goals:
+                if not hasattr(g, 'blocking'):
+                    g.blocking = True
 
-    # $ story_mode = True #!
-
-    if game.version != config.version:
-        menu:
-            "{b}{color=[c_red]}WARNING{/color}{/b}: This saved game was created with another version of the game ([game.version]). You are running version [config.version]. Using older saved games with a new version of BK might cause unexpected crashes or game-breaking bugs. Are you sure you want to continue?"
-
-            "Yes, and deactivate future warnings for this game/this version":
-                $ game.version = config.version # quick and dirty
-
-                $ game.version = config.version
-            "Yes, but warn me again":
+            try:
+                for q in quest_board.quests:
+                    if not hasattr(q, 'commit_label'):
+                        q.commit_label = None
+                    if not hasattr(q, 'return_label'):
+                        q.return_label = None
+            except:
                 pass
 
-            "No":
-                show screen load
-                $ renpy.full_restart()
+            if not hasattr(MC, 'resource_tab_active'):
+                MC.resource_tab_active = True
 
-        call screen OK_screen("Loading old saved game", "You have chosen to continue with your old saved game.\nIf you encounter bugs, {b}please do not report them on the BK forum{/b}.")
+        #!
+
+        if not hasattr(game, 'version'):
+            $ game.version = "Unknown"
+
+        if not hasattr(game, 'goal_channels'):
+            $ game.goal_channels = goal_channels
+
+        if game.version != config.version:
+            menu:
+                "{b}{color=[c_red]}WARNING{/color}{/b}: This saved game was created with another version of the game ([game.version]). You are running version [config.version]. Using older saved games with a new version of BK might cause unexpected crashes or game-breaking bugs. Are you sure you want to continue?"
+
+                "Yes, and deactivate future warnings for this game/this version":
+                    $ game.version = config.version # quick and dirty
+
+                    $ game.version = config.version
+                "Yes, but warn me again":
+                    pass
+
+                "No":
+                    show screen load
+                    $ renpy.full_restart()
+
+            call screen OK_screen("Loading old saved game", "You have chosen to continue with your old saved game.\nIf you encounter bugs, {b}please do not report them on the BK forum{/b}.")
 
     return
 
@@ -363,18 +398,53 @@ label sill_checks(): # Returns False if the player doesn't proceed with 'end day
     return True
 
 
-label receive_item(it, msg="你获得了%s。", use_article=True, equip=False, use_sound=True): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+label receive_item(it, msg="You have received %s.", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+
+    if not it:
+        $ debug_notify("Couldn't receive item %s" % str(it))
+        return
+
+    if isinstance(it, Item): # Generates ItemInstance object if not given
+        $ it = it.get_instance()
 
     $ MC.add_item(it, equip, use_sound=use_sound)
 
     if use_article:
-        $ msg = msg % article("{b}" + it.name + "{/b}")
+        $ msg = msg % article("{b}" + it.name + "{/b}", definite_article)
     else:
         $ msg = msg % ("{b}" + it.name + "{/b}")
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     show screen receive_item(it, msg)
+    with dissolve
+
+    pause
+
+    hide screen receive_item
+    with dissolve
+
+    return
+
+
+label remove_item(it, msg="%s has been removed from your inventory.", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+
+    if not isinstance(it, ItemInstance):
+        $ renpy.say(bk_error, "Warning: This item cannot be removed, it is not instantiated (%s)." % it.name)
+
+    if it not in MC.items:
+        $ notify("%s wasn't found in MC's inventory and couldn't be removed.", col=c_red)
+
+    $ MC.remove_item(it, use_sound=use_sound)
+
+    if use_article:
+        $ msg = msg % article("{b}" + it.name + "{/b}", definite_article)
+    else:
+        $ msg = msg % ("{b}" + it.name + "{/b}")
+
+    $ norollback()
+
+    show screen receive_item(it, capitalize(msg), col=c_lightred)
     with dissolve
 
     pause
@@ -395,117 +465,58 @@ label latest_customer_satisfaction:
     return
 
 
-## DIFFICULTY
-
-label choose_difficulty():
-    scene black with fade
-    play music m_suspense fadein 3.0
-
-    # Sanity check - Remove unavalaible girl mixes
-
-    while True:
-        show screen quick_start
-        $ r = ui.interact()
-
-        if r:
-            hide screen quick_start
-            if r == "edit mix":
-                call girlpack_menu() from _call_girlpack_menu_1
-
-            else: # CONFIRM
-                $ unlocking_extras(final=True)
-
-                if game.starting_gold:
-                    $ MC.gold = int(game.starting_gold)
-
-                $ game.init_mixes()
-
-                stop music fadeout 3.0
-                return
-
-
 ## CHAPTER TRANSITIONS
 
-label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter intro with text1 as chapter number and text2 as chapter title
+label chapter(chapter = None, silent=False): ## Shows the chapter intro with text1 as chapter number and text2 as chapter title. Keep game logic out of this label (use advance_to_chapter instead)
 
     python:
-        if not chapter:
-            chapter = game.chapter
-        else:
-            game.chapter = chapter
-        game.set_max_girl_level()
-
-        if chapter <= 1:
-            bg_bro = "bg brothel1"
-            unlock_pic(bg_bro)
-
-        elif 2 <= chapter <= 6:
-
-            game.set_goals(chapter_goals[chapter])
-            game.seen_goal_message = False
-
-        elif chapter >= 7:
-
-            game.set_goals(chapter_goals[chapter])
-
-            if game.diff in ("normal", "hard", "insane"):
-                unlock_achievement("win " + game.diff)
-
-        lbl = None
-
-
         if game.chapter == 0:
 
-            text1 = '序章'
+            text1 = 'Prelude'
 
-            text2 = "阴暗之地行阴暗之事"
+            text2 = "Dark streets, dark deeds"
 
         elif game.chapter == 1:
 
-            text1 = "第一章"
+            text1 = "Chapter One"
 
-            text2 = "新起点"
+            text2 = "Small beginnings"
 
         elif game.chapter == 2:
 
-            text1 = "第二章"
+            text1 = "Chapter Two"
 
-            text2 = "暮色之刃"
-
-            lbl = "chapter2"
+            text2 = "Blades in the night"
 
         elif game.chapter == 3:
 
-            text1 = "第三章"
+            text1 = "Chapter Three"
 
-            text2 = "危机四伏"
-
-            if story_mode:
-                lbl = "c3_homura_okiya3"
+            text2 = "Fire at dawn"
 
         elif game.chapter == 4:
 
-            text1 = "第四章"
+            text1 = "Chapter Four"
 
-            text2 = "攀权附贵"
+            text2 = "Work in progress"
 
         elif game.chapter == 5:
 
-            text1 = "第五章"
+            text1 = "Chapter Five"
 
-            text2 = "加官进爵"
+            text2 = "Work in progress"
 
         elif game.chapter == 6:
 
-            text1 = "第六章"
+            text1 = "Chapter Six"
 
-            text2 = "青楼之王"
+            text2 = "Work in progress"
 
         else:
 
-            text1 = "尾声"
+            text1 = "Epilogue"
 
-            text2 = "后日谈"
+            text2 = "Work in progress"
 
     call hide_everything() from _call_hide_everything_38
     scene black with fade
@@ -516,7 +527,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
 
         $ text1 = Text((text1), size=50, yalign=0.4, xpos=0.5, drop_shadow=(2,2))
 
-        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "DejaVuSans.ttf")
+        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "VIVALDII.TTF")
 
         show expression text1
         with easeinleft
@@ -536,10 +547,7 @@ label chapter(chapter = None, silent=False, forced=False): ## Shows the chapter 
         hide expression text2
         with easeoutright
 
-    $ renpy.block_rollback()
-
-    if lbl:
-        $ renpy.call(lbl)
+    $ norollback()
 
     return
 
@@ -564,33 +572,33 @@ label chapter2:
     return
 
 
-label rank_message:
+# label rank_message:
 
-    if game.chapter == 2 and not debug_mode:
+#     if game.chapter == 2 and not debug_mode:
 
-        sill "You now hold a proper pimp license! It is time I told you about your girls' ranks and reputation."
+#         sill "You now hold a proper pimp license! It is time I told you about your girls' ranks and reputation."
 
-        menu:
-            sill "Would you like to learn about girl ranks and reputation?"
+#         menu:
+#             sill "Would you like to learn about girl ranks and reputation?"
 
-            "Yes":
-                call help_rank_introduction from _call_help_rank_introduction_1
+#             "Yes":
+#                 call help_rank_introduction from _call_help_rank_introduction_1
 
-            "No":
-                pass
+#             "No":
+#                 pass
 
-    elif game.chapter in (4, 6, 7):
+#     elif game.chapter in (4, 6, 7):
 
-        if game.chapter == 4:
-            call got_license(2) from _call_got_license_1
-        elif game.chapter == 6:
-            call got_license(3) from _call_got_license_2
+#         if game.chapter == 4:
+#             call got_license(2) from _call_got_license_1
+#         elif game.chapter == 6:
+#             call got_license(3) from _call_got_license_2
 
-        $ rk = rank_name[district.rank]
+#         $ rk = rank_name[district.rank]
 
-        "Your girls may now reach rank [rk]."
+#         "Your girls may now reach rank [rk]."
 
-    return
+#     return
 
 
 label reached_goal():
@@ -608,110 +616,364 @@ label reached_goal():
 
     return
 
-label advance_to_chapter(chapter, silent=False, free=False):
+label advance_to_chapter(chapter, silent=False, free=False, start=False): # All chapter logic should be handled here. 'start' is used when jumping directly to a given chapter.
 
     hide screen home
 
-    # Calculates auction price
-    $ old_brothel_name = brothel.name
-    $ old_brothel_auction_price = brothel.get_auction_value()
+## 1. Basic chapter Set-up
 
+    # Define chapter
+    python:
+        if not chapter:
+            chapter = game.chapter
+        else:
+            game.chapter = chapter
+        
+        if not 0 < chapter <= 7:
+            raise AssertionError("Trying to load invalid chapter (%i)" % chapter)
+
+    # Reset chapter values
+        temp_gossip = []
+        NPC_taxgirl.time_pressure_modifier = 0.0
+
+
+    # Chapter splashscreen
     $ renpy.call("chapter", chapter, silent)
 
-    # Resets temp gossip
-    $ temp_gossip = []
+## M0 - Mods early init
 
-    # Resets time pressure from taxes
-    $ NPC_taxgirl.time_pressure_modifier = 0.0
+    # START - Start mods
+    if start:
+        $ game.start_mods(early=True)
 
-    if chapter >= 7:
-        call auction_brothel() from _call_auction_brothel_1
-        $ change_district(endless_district, free)
-        $ change_brothel()
-        $ renpy.block_rollback()
+## 2. District choice
 
-        call rank_message from _call_rank_message
+    # START - Blocked districts (dirty, will add duplicates to the blocked list)
+    if start:
+        $ district = None
+        $ game.blocked_districts = []
 
-        if not debug_mode:
-            menu:
-                sill "Do you want to rename your brothel for the occasion?"
+    if game.chapter >= 2:
+        $ game.blocked_districts.append(district_dict["slum"])
+    if game.chapter >= 4:
+        $ game.blocked_districts += [district_dict["warehouse"], district_dict["docks"]]
+    if game.chapter >= 6:
+        $ game.blocked_districts += [district_dict["gardens"], district_dict["cathedra"]]
 
-                "Yes":
-                    $ brothel.name = renpy.input("Change name:", default = brothel.name, length = 40)
-                "No":
-                    pass
-
-        $ persistent.new_game_plus = True
-
-        return
-
-    else:
+    # Choose target district
+    if chapter <= 1:
+        $ change_district(district_dict["slum"], free, start)
+    
+    elif 1 < chapter < 7:
         show screen districts(context = "relocate")
 
-        while True:
+        $ loop = True
 
-            $ renpy.block_rollback()
+        while loop:
+
+            $ norollback()
 
             $ chosen_district = None
 
-            $ sill(__("You can now move to a larger brothel (maximum ")+ str(blist[chapter].get_maxbedrooms()) + __(" bedrooms).\nChoose a district to set up your new brothel."), interact = False)
+            if not start:
+                $ sill(__("You can now move to a larger brothel (maximum ")+ str(blist[chapter].get_maxbedrooms()) + __(" bedrooms).\nChoose a district to set up your new brothel."), interact = False)
+            else:
+                $ sill(__("Choose the district you want to start at (maximum ")+ str(blist[chapter].get_maxbedrooms()) + __(" bedrooms)."), interact = False)
 
             $ chosen_district = ui.interact()
 
             if isinstance(chosen_district, District):
-                if chosen_district.name == district.name:
+                if district and chosen_district.name == district.name:
                     "[chosen_district.name] is the district where you are currently established. Please choose a different district."
-
                 else:
-                    "[chosen_district.description]"
+                    # "[chosen_district.description]"
                     if chosen_district.room == "free":
                         $ free_room_text = __("\nYou will receive a free room of your choice.")
 
                     elif chosen_district.room != []:
-                        $ free_room_text =  __("\nYou will receive a {b}free ") + __(location_name_dict[chosen_district.room[0]]) + "{/b}."
+                        $ free_room_text =  __("\nYou will receive a {b}free ") + __(chosen_district.room[0]) + "{/b}.\n\n{image=img_%s}" % chosen_district.room[0]
 
                     else:
                         $ free_room_text = ""
 
-                    $ textcn = location_name_dict[chosen_district.name]
-                    if renpy.call_screen("yes_no", __("Do you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.") + __(free_room_text)):
-                        $ change_district(chosen_district, free)
-                        $ renpy.block_rollback()
+                    if renpy.call_screen("yes_no", __("{i}[chosen_district.description]{/i}\n\nDo you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.") + __(free_room_text)):
+                        $ change_district(chosen_district, free, start)
+                        $ norollback()
 
                         hide screen districts
                         with Fade(0.15, 0.3, 0.15)
+                        $ loop = False
+            else:
+                return
 
-                        if game.chapter > 2 or (game.chapter == 2 and not story_mode):
-                            call auction_brothel() from _call_auction_brothel_2 # Chapter 2's auction is part of the intro event
-                            $ change_brothel()
-                        elif story_mode:
-                            call c2_intro() from _call_c2_intro
+    else:
+        $ change_district(endless_district, free, start)
+        $ norollback()
 
-                        call rank_message from _call_rank_message_1
-                        call screen OK_screen(__("You have received a new goal"), __(game.get_goal_description(channel="advance")), pic = Picture(path="UI/goal.webp"))
+## 3. Brothel relocation
 
-                        if game.chapter == 2 and (debug_mode or not story_mode):
-                            $ NPC_carpenter.active = True
-                            $ unlocked_shops.append(NPC_stella)
+    # Create new brothel
+    $ newbrothel = copy.deepcopy(blist[game.chapter])
 
-                        if not debug_mode:
-                            menu:
-                                sill "Do you want to rename your brothel for the occasion?"
+    if start:
+    # START - Set-up base name and furniture
+        $ brothel = newbrothel
+        $ brothel.setup("The Rose Garden", free_room=district.room)
+        $ get_starting_furniture(chapter)
 
-                                "Yes":
-                                    $ brothel.name = renpy.input("Change name:", default = brothel.name, length = 40)
-                                "No":
-                                    pass
+        $ old_brothel_name = "The Rose Garden"
+        $ old_brothel_pic = brothel.pic
+        $ old_brothel_auction_price = 0
 
-                        hide screen districts
-                        return
+        if not NPC_sill in MC.trainers:
+            $ MC.trainers.append(NPC_sill)
+        
+        $ MC.current_trainer = NPC_sill
 
+    else:
+    # CONTINUE - Carry name and furniture over to the new brothel
+        $ newbrothel.setup(brothel.name, brothel.furniture, brothel.current_building, brothel.started_building, brothel.master_bedroom.girls, free_room=district.room)
+
+        $ old_brothel_name = brothel.name
+        $ old_brothel_pic = brothel.pic
+        $ old_brothel_auction_price = brothel.get_auction_value()
+
+        # Switch to new brothel
+        $ brothel = newbrothel
+
+    # CONTINUE - Auction off old brothel
+        if game.chapter != 2 or not story_mode:
+            call auction_brothel() from _call_auction_brothel_1
+
+    # Set BG for events
+    $ bg_bro = "bg brothel" + str(game.chapter)
+    $ unlock_pic(bg_bro)
+
+    # Choose free room
+
+    if debug_mode != "quick" and chapter in (1, 6) and not silent:
+
+        menu:
+            "What will you use as a front for your business?"
+
+            "A tavern":
+                $ brothel.add_room("tavern", forced=True)
+
+            "A dance club":
+                $ brothel.add_room("strip club", forced=True)
+
+            "A bath house":
+                $ brothel.add_room("onsen", forced=True)
+
+            "An okiya (geisha house)":
+                $ brothel.add_room("okiya", forced=True)
+
+        $ brothel.free_room = False
+
+    # Rename brothel
+
+    if not start and not debug_mode:
+        menu:
+            sill "Do you want to rename your brothel for the occasion?"
+
+            "Yes":
+                $ brothel.name = renpy.input("Change name:", default = brothel.name, length = 40)
+            "No":
+                pass
+
+    # Refresh max level, calendar and NewGame+ settings
+    $ game.set_max_girl_level()
+    $ calendar.updates(change_district=not start) # change_district disables quest and resource market updates
+
+## /!\ Commit NGP settings
+    # START - Commit NewGame+ settings. Moved here to avoid issues with brothel generation
+    if start: # For debugging: deactivate MC spells when advancing
+        $ commit_start_settings()
+
+## 4. Girls set-up
+
+    python:
+        reset_girl_jobs()
+        update_effects("brothel")
+
+        if debug_mode:
+            for girl in MC.girls:
+                girl.debug_auto_level(chapter)
+
+## 5. Story events/unlocks
+
+    # # Common unlocks
+    # $ unlocking_extras()
+
+    # START - Initialize story events
+    if start:
+        call init_events(chapter) from _call_init_events_1
+
+    # START - Story catch-up
+
+    if start:
+        if not story_mode or (chapter > 1 and debug_mode == "quick"):
+            $ story_flags["c1_path"] = "neutral"
+            $ thieves_guild.secret = False
+            $ thieves_guild.action = True
+            $ watchtower.action = True
+            $ renza_name = "Renza"
+            $ captain_name = "Farah"
+
+        elif chapter > 1:
+            $ thieves_guild.secret = False
+            $ renza_name = "Renza"
+            $ captain_name = "Farah"
+
+            menu:
+                "At the end of Chapter 1, which faction did you side with?"
+
+                "Farah, the corrupt guard captain":
+                    $ story_flags["c1_path"] = "evil"
+                    $ thieves_guild.action = False
+                    $ watchtower.action = True
+
+                "Renza, the leader of the thieves' guild":
+                    $ story_flags["c1_path"] = "neutral"
+                    $ thieves_guild.action = True
+                    $ watchtower.action = False
+
+                "Maya, the honest guard sergeant":
+                    $ story_flags["c1_path"] = "good"
+                    $ thieves_guild.action = False
+                    $ watchtower.action = False
+
+        if chapter > 2:
+            $ story_add_event("c3_suzume_hint", "daily")
+
+            # Ninja hunt flags
+            $ init_ninja_game()
+            $ story_flags["ninja hunt"] = True
+            $ story_flags["ninja hunt seen intro"] = True
+            $ story_flags["c3 brothel unlocked"] = True
+            $ story_flags["first ninja met"] = True
+            $ story_flags["all ninjas met"] = True
+            $ story_flags["all ninjas met twice"] = True
+            $ story_flags["first ninja stuck"] = True
+
+            # Homura story
+            $ homura_name = "Homura"
+            $ NPC_homura.flags["divulged assignment"] = True #!
+            $ NPC_homura.flags["drunk sex"] = False #!
+
+            # Narika story
+            $ narika_name = "Narika"
+            $ NPC_narika.flags["boyfriend question"] = True
+            $ NPC_narika.flags["locked"] = True
+            $ NPC_narika.flags["hunt stage"] = 2
+            $ NPC_narika.love = 5
+            $ game.set_task("The Void Kunoichi: Gather hints from your contacts", "story3", 3)
+
+            # Mizuki story
+            $ mizuki_name = "Mizuki"
+            $ NPC_mizuki.flags["onsen"] = True
+            $ NPC_mizuki.flags["locked"] = True
+            $ NPC_mizuki.flags["hunt stage"] = 2
+            $ NPC_mizuki.love = 5
+            $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", blocking=False)
+
+            # Haruka story
+            $ haruka_name = "Haruka"
+            $ NPC_haruka.flags["locked"] = True
+            $ NPC_haruka.flags["hunt stage"] = 2
+            $ NPC_haruka.love = 5
+            $ game.set_task("The Earth Kunoichi: Gather hints from your contacts", "story", 3)
+
+            # Others
+            $ story_flags["no kosmo"] = True
+            $ kenshin_name = "Uesugi"
+            $ suzume_name = "Suzume"
+            $ NPC_kuro.flags["occupation"] = "half-lie"
+            $ MC.noble = False
+
+    # Chapter 2 intro
+    if story_mode and game.chapter == 2: # Includes the auction_brothel event as part of the story
+        call c2_intro() from _call_c2_intro
+        call chapter2 from _call_chapter2
+
+    if story_mode and game.chapter == 3:
+        call c3_homura_okiya3 from _call_c3_homura_okiya3
+
+## M1. Mods
+
+    # START - Start mods
+    if start:
+        $ game.start_mods()
+
+    # Mod-specific chapter intro
+    python:
+        mod_labels = []
+        for mod in game.active_mods.values():
+            if mod.chapter_labels[game.chapter]:
+                if renpy.has_label(mod.chapter_labels[game.chapter]):
+                    mod_labels.append(mod.chapter_labels[game.chapter])
+                else:
+                    raise AssertionError("%s mod error (chapter labels): %s is not a recognized label (check for spelling mistakes)." % (mod.name, mod.chapter_labels[game.chapter]))
+
+    while mod_labels: # Because ren'py calls don't play nice with python 'for' loops
+        $ lbl = mod_labels.pop(0)
+        call expression lbl from _call_expression_8
+        $ norollback()
+
+
+## 6. License, Rank and Goals updates
+    # License and rank messages
+    if not silent and not debug_mode:
+        if game.chapter == 2 and not debug_mode:
+            sill "You now hold a proper pimp license! It is time I told you about your girls' ranks and reputation."
+
+            menu:
+                sill "Would you like to learn about girl ranks and reputation?"
+
+                "Yes":
+                    call help_rank_introduction from _call_help_rank_introduction_1
+
+                "No":
+                    pass
+
+        elif game.chapter in (4, 6, 7):
+            if game.chapter == 4:
+                call got_license(2) from _call_got_license_1
+            elif game.chapter == 6:
+                call got_license(3) from _call_got_license_2
+
+            $ rk = rank_name[district.rank]
+
+            "Your girls may now reach rank [rk]."
+
+    # Set goals
+    $ game.set_goals(chapter_goals[chapter])
+    if not silent:
+        call screen OK_screen(__("You have received a new goal"), __(game.get_goal_description(channel="advance")), pic = Picture(path="UI/goal.webp"))
+
+
+## 7. End game
+
+    if game.chapter == 7:
+        if game.diff in ("normal", "hard", "insane"):
+            $ unlock_achievement("win " + game.diff)
+
+        if NGP_settings_dict["free girl challenge"].get():
+            $ unlock_achievement("free girl challenge")
+
+        if NGP_settings_dict["training challenge"].get():
+            $ unlock_achievement("training challenge")
+
+        if not persistent.new_game_plus:
+            call NGPintro() from _call_NGPintro
+
+    return
 
 label got_license(level):
 
     $ lic_name, lic_pic = license_dict[level]
 
-    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(location_name_dict[lic_name]) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
+    call screen OK_screen(__("New license available!"), __("You have received a brand new ") + __(lic_name) + __(". Good work!"), pic = Picture(lic_pic, "UI/" + lic_pic))
 
     return
 
@@ -744,7 +1006,7 @@ label display_events(ev_list):
     return
 
 
-label show_night_event(ev, save=False):
+label show_night_event(ev, _save=False):
 
     if persistent.skipped_events[ev.type]:
         $ renpy.notify("Skipping event...")
@@ -764,33 +1026,41 @@ label show_night_event(ev, save=False):
     if ev.with_st:
         with ev.with_st
 
-    if ev.char:
-        if count_lines(ev.text, 85) > 5:
-            $ txt_sz = int(config.screen_height*0.0222)
-        else:
-            $ txt_sz = int(config.screen_height*0.025)
-    else:
-        if count_lines(ev.text, 100) > 5:
-            $ txt_sz = int(config.screen_height*0.025)
-        else:
-            $ txt_sz = int(config.screen_height*0.0277)
+    # python: # Python blocks mess up with Renpy rollback and break down events: AVOID
+        # if ev.char:
+        #     if count_lines(ev.text, 85) > 5:
+        #         txt_sz = int(config.screen_height*0.0222)
+        #     else:
+        #         txt_sz = int(config.screen_height*0.025)
+        # else:
+        #     if count_lines(ev.text, 100) > 5:
+        #         txt_sz = int(config.screen_height*0.025)
+        #     else:
+        #         txt_sz = int(config.screen_height*0.0277)
+        #
+        # txt_sz = max(10, txt_sz)
 
-    $ txt_sz = max(10, txt_sz)
+        # text_descript = ev.text # "{size=%i}%s{/size}" % (txt_sz, ev.text)
+        #
+        # debug_night_text.append([ev.char, text_descript])
+        # debug_night_text.append(ev.changes)
+        #
+        # try:
+        #     renpy.say(ev.char, text_descript)
+        # except:
+        #     if debug_night_text:
+        #         debug_notify("Error displaying text: %s. Night text debug log: %s" % (text_descript, str(debug_night_text)))
+        #     else:
+        #         debug_notify("Error displaying text: %s. Night text debug log: %s" % (text_descript, ""))
 
-    $ text_descript = "{size=%i}%s{/size}" % (txt_sz, ev.text)
+    if not is_string(ev.text):
+        $ debug_notify("Error displaying text: %s." % ev.text)
 
-    $ debug_night_text.append([ev.char, text_descript])
-    $ debug_night_text.append(ev.changes)
+    $ renpy.say(ev.char, "{size=%i}%s{/size}" % (int(config.screen_height*0.025), ev.text))
 
-    python:
-        try:
-            renpy.say(ev.char, text_descript)
-        except:
-            raise AssertionError("Error displaying text: %s. Farm debug log: %s" % (text_descript, str(debug_night_text)))
-
-    if save:
+    if _save:
         $ renpy.force_autosave(take_screenshot=True, block=True)
-        $ renpy.block_rollback()
+        $ norollback()
 
     hide screen show_img
     hide screen night
@@ -820,7 +1090,7 @@ label debug_night_messages(i=0):
 
 label run_away(girl):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     sill sad "Master! [girl.fullname] has escaped!!!"
 
@@ -865,7 +1135,7 @@ label run_away(girl):
                     $ hunters = "sisters"
                     $ hunt_delay = dice(2)
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     play sound s_gold
 
@@ -878,7 +1148,7 @@ label run_away(girl):
                     $ hunters = "slavers"
                     $ hunt_delay = dice(3)+1
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     play sound s_gold
 
@@ -891,7 +1161,7 @@ label run_away(girl):
                     $ hunters = "guards"
                     $ hunt_delay = dice(3)+3
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     play sound s_gold
 
@@ -902,7 +1172,7 @@ label run_away(girl):
                     $ hunters = "you"
                     $ hunt_delay = dice(6)
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     you "I will look for her myself."
 
@@ -914,7 +1184,7 @@ label run_away(girl):
             $ hunters = "you"
             $ hunt_delay = dice(6)
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "I will look for her myself."
 
@@ -934,7 +1204,7 @@ label run_away(girl):
 
 label found_runaway_girl(obj):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ girl, hunters = obj
 
@@ -1035,7 +1305,7 @@ label found_runaway_girl(obj):
 
 label found_runaway_girl_come_back(obj):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ girl, hunters = obj
 
@@ -1097,7 +1367,7 @@ label found_runaway_girl_come_back(obj):
 
 label found_escaped_girl(girl):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if MC.interactions > 0:
 
@@ -1142,7 +1412,7 @@ label found_escaped_girl(girl):
 
             "Persuade her to come back.":
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 you "[girl.name]... It's me. Look, I know life at the brothel can be hard, but you should come back. We miss you."
 
@@ -1184,7 +1454,7 @@ label found_escaped_girl(girl):
 
             "Threaten her.":
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 you "There you are! Look at you... You're a wreck. At this rate, you will starve before the end of the week. You better come back, or else..."
 
@@ -1232,7 +1502,7 @@ label found_escaped_girl(girl):
 
             "Force her to come back.":
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 "Not saying anything, you approach her from behind, and grab her firmly by her hair."
 
@@ -1314,7 +1584,10 @@ label return_from_leave(girl, silent=False):
 
 label return_from_quest(girl, quest):
 
-    $ renpy.block_rollback()
+    $ norollback()
+
+    if quest.return_label:
+        call expression quest.return_label pass (girl)
 
     python:
         girl.return_from(quest)
@@ -1631,25 +1904,28 @@ label furniture_built(furn):
 
     return
 
-label collect_wood():
+label set_up_extractor(resource): # returns True if extractor has been set-up or action is cancelled
 
-    $ resource = "wood"
+    if resource_dict[resource].rank == 2:
+        $ ext = "Extractor Mk I"
+    elif resource_dict[resource].rank == 3:
+        $ ext = "Extractor Mk II"
 
-    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
+    if MC.get_items(name=ext, strict=True) and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
         menu:
             "Do you want to set up a resource extractor in this location (cannot be undone)?"
 
-            "Yes, set up a resource extractor Mk I in this location":
+            "Yes, set up a resource [ext] in this location":
                 play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
+                $ MC.items.remove(MC.get_items(name=ext, strict=True)[0])
+                $ resource_dict[resource].activate_extractor(first=True)
+                return True
 
-            "No, collect resources instead":
-                pass
+            "No, collect [resource] by hand instead":
+                return False
 
             "Cancel":
-                return
+                return True
 
     if auto_extractors[resource + " ON"]: # When an extractor is ON
         menu:
@@ -1657,14 +1933,14 @@ label collect_wood():
 
             "Turn it OFF":
                 play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
+                $ resource_dict[resource].deactivate_extractor(final=False)
+                return True
 
-            "Just collect resources":
-                pass
+            "Just collect [resource]":
+                return False
 
             "Cancel":
-                return
+                return True
 
     elif auto_extractors[resource]: # When an extractor is OFF
         menu:
@@ -1672,14 +1948,25 @@ label collect_wood():
 
             "Turn it ON":
                 play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
+                $ resource_dict[resource].activate_extractor(first=False)
+                return True
 
-            "Just collect resources":
-                pass
+            "Just collect [resource]":
+                return False
 
             "Cancel":
-                return
+                return True
+
+    return False
+
+label collect_wood():
+
+    $ resource = "wood"
+
+    call set_up_extractor(resource) from _call_set_up_extractor
+
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot collect wood more than once per day."
@@ -1689,51 +1976,10 @@ label collect_leather():
 
     $ resource = "leather"
 
-    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
-        menu:
-            "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    call set_up_extractor(resource) from _call_set_up_extractor_1
 
-            "Yes, set up a resource extractor Mk I in this location":
-                play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
-
-            "No, collect resources instead":
-                pass
-
-            "Cancel":
-                return
-
-    if auto_extractors[resource + " ON"]: # When an extractor is ON
-        menu:
-            "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-
-            "Turn it OFF":
-                play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
-
-    elif auto_extractors[resource]: # When an extractor is OFF
-        menu:
-            "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-
-            "Turn it ON":
-                play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot trade leather more than once per day."
@@ -1743,51 +1989,10 @@ label collect_dye():
 
     $ resource = "dye"
 
-    if MC.get_items(name="采集者MkI型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
-        menu:
-            "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    call set_up_extractor(resource) from _call_set_up_extractor_2
 
-            "Yes, set up a resource extractor Mk I in this location":
-                play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkI型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
-
-            "No, collect resources instead":
-                pass
-
-            "Cancel":
-                return
-
-    if auto_extractors[resource + " ON"]: # When an extractor is ON
-        menu:
-            "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-
-            "Turn it OFF":
-                play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
-
-    elif auto_extractors[resource]: # When an extractor is OFF
-        menu:
-            "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-
-            "Turn it ON":
-                play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot brew dye more than once per day."
@@ -1797,51 +2002,10 @@ label collect_marble():
 
     $ resource = "marble"
 
-    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
-        menu:
-            "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    call set_up_extractor(resource) from _call_set_up_extractor_3
 
-            "Yes, set up a resource extractor Mk II in this location":
-                play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
-
-            "No, collect resources instead":
-                pass
-
-            "Cancel":
-                return
-
-    if auto_extractors[resource + " ON"]: # When an extractor is ON
-        menu:
-            "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-
-            "Turn it OFF":
-                play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
-
-    elif auto_extractors[resource]: # When an extractor is OFF
-        menu:
-            "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-
-            "Turn it ON":
-                play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot mine marble more than once per day."
@@ -1851,51 +2015,10 @@ label collect_ore():
 
     $ resource = "ore"
 
-    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
-        menu:
-            "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    call set_up_extractor(resource) from _call_set_up_extractor_4
 
-            "Yes, set up a resource extractor Mk II in this location":
-                play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
-
-            "No, collect resources instead":
-                pass
-
-            "Cancel":
-                return
-
-    if auto_extractors[resource + " ON"]: # When an extractor is ON
-        menu:
-            "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-
-            "Turn it OFF":
-                play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
-
-    elif auto_extractors[resource]: # When an extractor is OFF
-        menu:
-            "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-
-            "Turn it ON":
-                play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot negotiate ore more than once per day."
@@ -1905,51 +2028,10 @@ label collect_silk():
 
     $ resource = "silk"
 
-    if MC.get_items(name="采集者MkII型") and not auto_extractors[resource]: # When the player has an extractor in inventory and the location has none
-        menu:
-            "Do you want to set up a resource extractor in this location (cannot be undone)?"
+    call set_up_extractor(resource) from _call_set_up_extractor_5
 
-            "Yes, set up a resource extractor Mk II in this location":
-                play sound resource_dict[resource].sound
-                $ MC.items.remove(MC.get_items(name="采集者MkII型")[0])
-                $ resource_dict[resource].activate_extractor()
-                return
-
-            "No, collect resources instead":
-                pass
-
-            "Cancel":
-                return
-
-    if auto_extractors[resource + " ON"]: # When an extractor is ON
-        menu:
-            "You have an active resource extractor in this location. Do you want to turn if {b}OFF{/b}?"
-
-            "Turn it OFF":
-                play sound s_fiz
-                $ auto_extractors[resource + " ON"] = False
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
-
-    elif auto_extractors[resource]: # When an extractor is OFF
-        menu:
-            "You have an inactive resource extractor in this location. Do you want to turn if {b}ON{/b}?"
-
-            "Turn it ON":
-                play sound resource_dict[resource].sound
-                $ auto_extractors[resource + " ON"] = True
-                return
-
-            "Just collect resources":
-                pass
-
-            "Cancel":
-                return
+    if _return:
+        return
 
     if MC.collect_resource(resource) == "KO":
         "You cannot weave silk more than once per day."
@@ -1965,9 +2047,9 @@ label break_extractor(resource):
     play sound s_crash
     with vpunch
     "Your [resource] extractor has broken down."
-    $ resource_dict[resource].deactivate_extractor()
+    $ resource_dict[resource].deactivate_extractor(final=True)
 
-    call receive_item(item_dict["席米亚科技废料"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
+    call receive_item(item_dict["Cimerian scrap"], msg="You were able to scavenge a piece of %s from the wreck.", use_article=False) from _call_receive_item_16
 
     return
 
@@ -2045,7 +2127,7 @@ label visit_exchange():
 
     while True:
 
-        $ renpy.block_rollback() # Adding block_rollback everywhere to hopefully get rid of the double spend bug
+        $ norollback() # Adding block_rollback everywhere to hopefully get rid of the double spend bug
 
         $ result = ui.interact()
 
@@ -2059,14 +2141,14 @@ label visit_exchange():
             if not MC.has_resource(source, source_nb):
                 bast "You do not have [source_nb] [source] to buy this."
 
-            elif renpy.call_screen("yes_no", "你确定要用[source_nb] [source]换取[target_nb] [target]吗?"):
+            elif renpy.call_screen("yes_no", "Are you sure you want to exchange [source_nb] [source] for [target_nb] [target]?"):
                 $ x = 0 # this is for Bast events
                 if source == "gold":
                     $ MC.gold -= source_nb
                 else:
                     $ MC.resources[source] -= source_nb
                     $ x = source_nb
-                $ renpy.block_rollback()
+                $ norollback()
 
                 if target == "gold":
                     play sound s_gold
@@ -2075,7 +2157,7 @@ label visit_exchange():
                     if target_nb > x:
                         $ x = target_nb
                 $ MC.gain_resource(target, target_nb, message=False)
-                $ renpy.block_rollback()
+                $ norollback()
 
                 call trade_x_resources(x) from _call_trade_x_resources
 
@@ -2252,7 +2334,7 @@ label marble_intro:
 
     "Zan is always in need of new buildings, and the old ruins are so expansive that it never seems to run out of materials, no matter how many walls people dismantle."
 
-    "The old palaces are especially reknowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
+    "The old palaces are especially renowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
 
     "The only problem is, the ancient Cimerians knew how to build flawless architecture that stands the test of time, and Cimerian marble is extremely tough."
 
@@ -2466,27 +2548,43 @@ label challenge(name, diff, score=False, raw=False, bonus=0, opponent_bonus=0, _
     if MC.challenges[name].estimate_diff(diff=diff+score_limit, score=score, raw=raw, bonus=bonus, opponent_bonus=opponent_bonus, forced=forced) != "Safe":
         call screen challenge(name, diff+score_limit, raw=raw, bonus=bonus, opponent_bonus=opponent_bonus)
 
-    $ define.move_transitions("easeol", 0.8, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp, layers=["myoverlay"])
-
     if (result and not score) or (result >= score_limit and score) or forced:
-        if _sound:
-            play sound s_success
-
-        show success onlayer myoverlay with easeolinleft
-        pause 0.5
-        hide success onlayer myoverlay with easeoloutright
+        call success(_sound=_sound)
 
     else:
-        if _sound:
-            play sound s_crash
-
-        show failure onlayer myoverlay with easeolinleft
-        pause 0.5
-        hide failure onlayer myoverlay with easeoloutright
+        call failure(_sound=_sound)
 
     hide screen tool
 
+    $ norollback()
+
     return result
+
+label success(_sound=True):
+    $ define.move_transitions("easeol", 0.8, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp, layers=["myoverlay"])
+
+    if _sound:
+        play sound s_success
+
+    show success onlayer myoverlay
+    with easeolinleft
+    pause 0.5
+    hide success onlayer myoverlay
+    with easeoloutright
+
+    return
+
+label failure(_sound=True):
+    $ define.move_transitions("easeol", 0.8, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp, layers=["myoverlay"])
+
+    if _sound:
+        play sound s_crash
+
+    show failure onlayer myoverlay with easeolinleft
+    pause 0.5
+    hide failure onlayer myoverlay with easeoloutright
+
+    return
 
 label test_challenges():
 
@@ -2610,12 +2708,12 @@ label visit_thieves_guild:
                 renza "But you must understand and accept my rules"
 
                 renza "You are never to tell anyone about me, or the location of this place. You mustn't brag about your connection to us,
-                       or otherwise reveal it to anyone. The penalty for betrayal is... a dagger to the neck. Are we clear?"
+                or otherwise reveal it to anyone. The penalty for betrayal is... a dagger to the neck. Are we clear?"
 
                 you "Yes."
 
                 renza "Brilliant! Oh, and as long as we're dealing, you buy what's here at face value, and there is no refund.
-                       I don't wanna hear any complaints, ok?"
+                I don't wanna hear any complaints, ok?"
 
                 you "Fine."
 
@@ -2641,7 +2739,7 @@ label thieves_guild_loop:
 
         while True:
 
-            $ renza("这是本周的特价商品，是专为你准备的。", interact = False)
+            $ renza("Here's what I have on sale this week, at a special price just for you.", interact = False)
 
             $ result = ui.interact()
 
@@ -2651,7 +2749,7 @@ label thieves_guild_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "你确定要花[price]金币购买[it.name]吗？")
+                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
 
                     if result == True:
                         # $ MC.buy(NPC_renza, it, price)
@@ -2664,34 +2762,34 @@ label thieves_guild_loop:
 
                         if dice(6) == 1:
 
-                            "然而，当你从伦萨手中接过这件物品时，你立刻意识到它的质量非常糟糕。"
+                            "As soon as you take the item from Renza's hands, however, you realize it's in very poor condition."
 
-                            you "伦萨，这是什么..."
+                            you "Renza, what's this..."
 
-                            renza "货物售出概不退换!你知道规矩的。"
+                            renza "No refunds! You know that."
 
                             hide screen overlay
                             scene black with fade
 
                             if it.rank == it.min_rank:
 
-                                "你被宰了。这东西一带回家就散架了。这是假货。"
+                                "You have been ripped off. The item falls apart as soon as you bring it home. It was fake."
                                 $ MC.items.remove(it)
                             else:
-                                $ it.transform(it.min_rank)
-                                $ renpy.say("", "你被宰了。这不过是个" + article(it.name) + "。")
+                                $ it = it.transform(it.parent.min_rank)
+                                $ renpy.say("", "You have been ripped off. This item is just " + article(it.name) + ".")
 
                             return
 
                         else:
-                            renza "很高兴和你做买卖。"
+                            renza "A pleasure doing business with you."
                     else:
                         jump thieves_guild_loop
 
                 else:
                     hide screen item_profile
-                    you "该死，我现在没这么多钱..."
-                    renza "兄弟，别浪费我的时间。"
+                    you "Damn, I don't have the money right now..."
+                    renza "Buddy, don't waste my time."
 
                 hide screen overlay
                 scene black with fade
@@ -2699,14 +2797,14 @@ label thieves_guild_loop:
 
             elif result == "leave":
                 hide screen item_profile
-                renza "哦，那真是太遗憾了，回见!"
+                renza "Well, that's too bad then. See ya!"
 
                 hide screen overlay
                 scene black with fade
                 return
 
     else:
-        renza "本周我没有其他东西能卖给你了。你为什么不下周再来呢?货物到时候会从货车上掉下来的!"
+        renza "I have no extra items to sell this week. Why don't you come back next week? Items fall off merchant wagons all the time!"
 
         scene black with fade
         return
@@ -2721,33 +2819,34 @@ label visit_watchtower:
 
     show captain at right with dissolve
 
-    captain "嗨, [MC.name]! 你是来找我谈生意的，还是说想....找点乐子？"
+    captain "Hi, [MC.name]! Have you come here for business, or... pleasure?"
 
-    "她打招呼的同时，她那对漂亮的奶子在自然地跳动着。"
+    "Her gorgeous tits are bouncing in an hypnotic way as she says that."
 
-    "你试着集中注意力。"
+    "You try and snap out of it."
 
     label watchtower_menu:
 
         menu:
 
-            captain "它会是什么呢？"
+            captain "So what will it be?"
 
-            "让我看看你的货":
+            "Show me what you have":
 
                 jump watchtower_loop
 
-            "我能从你这儿得到什么呢，又一次？":
+            "What can I get from you here, again?":
 
-                captain "为什么不呢，我的合作伙伴？*眨眼*"
+                captain "Why, pleasant company, of course! *wink*"
 
-                captain "这是我的金库，存放着我从贫民窟里不守规矩的苦工那里没收来的所有好东西。"
+                captain "This is my vault, where I store all the goodies I confiscate from the unruly peons in the slums."
 
-                captain "我会保留金子和闪闪发光的东西，但偶尔，一些不寻常的东西也会被没收。这个...对我没什么用。我可以给你一个优惠价。"
+                captain "I get to keep the gold and the shiny bits, but every once in a while, some unusual item is confiscated that
+                I don't have a use for. In that case, I'll offer it to you for a good price."
 
-                captain "这就是我的最终定价了，要不要随你。一分钱一分货。"
+                captain "My conditions are final, take it or leave it. You'll have to buy the stuff on offer at face value."
 
-                captain "另外，我每周只能允许你买一样东西，不能再多了。我不能让你整天在我的金库里进进出出。"
+                captain "Also, I can get you one item per week, no more. I can't have you coming and going into my vault all day."
 
                 jump watchtower_menu
 
@@ -2757,6 +2856,8 @@ label visit_watchtower:
 label watchtower_loop:
 
     if NPC_captain.items:
+        $ owner = NPC_renza
+        $ counterpart = MC
 
         show bg vault at top with dissolve
         show screen item_profile(NPC_captain.items[0])
@@ -2765,7 +2866,7 @@ label watchtower_loop:
 
         while True:
 
-            $ captain("这是本周的特价商品，是专为你准备的。", interact = False)
+            $ captain("Here's what I have on sale this week, at a special price just for you.", interact = False)
 
             $ result = ui.interact()
 
@@ -2775,7 +2876,7 @@ label watchtower_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "你确定要花[price]金币购买[it.name]吗？")
+                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
 
                     if result == True:
                         $ MC.buy(NPC_captain, it, price)
@@ -2788,43 +2889,43 @@ label watchtower_loop:
 
                         if d == 1:
 
-                            "然而，当你从法拉手中接过这件物品时，你立刻意识到它的质量非常糟糕。"
+                            "As soon as you take the item from the vault to examine it closer, however, you realize it's in very poor condition."
 
-                            you "法拉, 这是怎么一回事..."
+                            you "Farah, what's this..."
 
-                            captain "嘿，你自己弄坏的，真是可惜。你知道规矩的。"
+                            captain "Hey, you break it, you own it. You know the rules"
 
                             hide screen overlay
                             scene black with fade
 
                             if it.rank == it.min_rank:
 
-                                "你被宰了。这东西一带回家就散架了。这是假货。"
+                                "You have been ripped off. The item falls apart as soon as you bring it home. It was fake."
                                 $ MC.items.remove(it)
                             else:
-                                $ it.transform(it.min_rank)
-                                $ renpy.say("", "你被宰了。这东西不过是个" + article(it.name) + "。")
+                                $ it = it.transform(it.parent.min_rank)
+                                $ renpy.say("", "You have been ripped off. This item is just " + article(it.name) + ".")
 
                             return
 
                         elif d == 6:
 
-                            "上尉数你的金币数的都要睡着了。"
+                            "The captain purrs as she counts your gold."
 
-                            captain "感谢惠顾..."
+                            captain "Thank for your purchase..."
 
                             play sound s_laugh
 
-                            "她用奇怪的眼神看着你。"
+                            "She is giving you a strange look."
 
-                            captain "[MC.name], 我可以给你展示它的另一种有趣的用法..."
+                            captain "[MC.name], I think I can show you a fun way to use this..."
 
-                            "她把双手放在你的胸前，诱人地咬她的嘴唇。"
+                            "She puts her hands on your chest and bites her lip seductively."
 
-                            captain "为什么不去我的房间呢？"
+                            captain "Why don't you follow me into my chamber?"
 
                             menu:
-                                "当然":
+                                "Sure":
                                     call hide_everything() from _call_hide_everything_46
 
                                     show bg captain_office at top with dissolve
@@ -2862,21 +2963,21 @@ label watchtower_loop:
 
                                     $ MC.change_prestige(1)
 
-                                "下次吧":
-                                    you "对不起法拉,我得走了。"
+                                "Another time":
+                                    you "Sorry Farah, I gotta go."
 
-                                    captain "哦，你是说...我想我得让我的一个奴隶帮你挠挠痒了..."
+                                    captain "Aw, aren't you mean... I guess I'll have to order one of my slaves to scratch that itch..."
 
                         else:
-                            captain "感谢惠顾。现在，你该离开了。"
+                            captain "Thank you for your purchase. Now, scram."
 
                     else:
                         jump watchtower_loop
 
                 else:
                     hide screen item_profile
-                    you "该死，我没有那么多钱..."
-                    captain "什么？没钱？没钱装什么大爷!!!"
+                    you "Damn, I don't have the money right now..."
+                    captain "What? No money? Get out!!!"
 
                 hide screen overlay
                 scene black with fade
@@ -2884,14 +2985,14 @@ label watchtower_loop:
 
             elif result == "leave":
                 hide screen item_profile
-                captain "好吧, 别再浪费我的时间了，滚吧。"
+                captain "Well, stop wasting my time, then. Bye now."
 
                 hide screen overlay
                 scene black with fade
                 return
 
     else:
-        captain "该死的[MC.name], 你把这当成菜市场一样每天想来就来想走就走？下周再来!"
+        captain "Damn it [MC.name], I can't have you coming and going in my apartments all the time like it's the fucking spice market. Come back next week!"
 
         scene black with fade
         return
@@ -2912,21 +3013,21 @@ label visit_willow():
 
 label visit_gina():
 
-    if MC.get_items(name="席米亚"):
+    if MC.get_items(name="Cimerian"):
         scene black
         show expression selected_location.get_pic(config.screen_width, int(config.screen_height*0.8)) at top
         with fade
         show gina with dissolve
 
-        gina "哦, [MC.name]。你帮我找到什么好东西了吗？"
+        gina "Oh, [MC.name]. Have you found anything good for me?"
 
         menu:
             "What would you like to do?"
 
-            "买东西":
+            "Buy something":
                 pass
 
-            "给她看你的发现":
+            "Show her what you found":
 
                 you "I think you were looking for Cimerian artefacts. I have found this. Can you tell me how much it's worth?"
 
@@ -2939,11 +3040,11 @@ label visit_gina():
                 python:
                     ev_list = []
 
-                    for it in MC.get_items(name="席米亚"):
-                        if it.name == "席米亚科技废料":
+                    for it in MC.get_items(name="Cimerian"):
+                        if it.name == "Cimerian scrap":
                             price = 350
                             rv = 1
-                        elif it.name == "席米亚科技产物":
+                        elif it.name == "Cimerian artefact":
                             price = 1500
                             rv = 5
 
@@ -2958,13 +3059,13 @@ label visit_gina():
                     menu:
                         extend ""
 
-                        "接受":
+                        "Accept":
                             play sound s_gold
                             gina "There you go."
                             $ MC.items.remove(it)
                             $ MC.gold += price
 
-                        "送给她":
+                        "Give her as a present":
                             $ renpy.play(s_surprise, "sound")
 
                             gina "For me, really, for free? I... I don't know what to say... *blush*"
@@ -2972,10 +3073,10 @@ label visit_gina():
                             $ NPC_gina.love += rv
                             $ MC.items.remove(it)
 
-                            if it.name == "席米亚科技产物":
+                            if it.name == "Cimerian artefact":
                                 gina "This is an amazing artefact... It must have cost you a fortune to get it... You really made my day. *blush*"
 
-                        "拒绝":
+                        "Refuse":
                             you "No thanks."
                             $ rv = 0
 
@@ -3004,7 +3105,7 @@ label visit_gina():
                     gina "{i}Antique{/i} junk!" with vpunch
 
                     $ NPC_gina.flags["extractor1 unlock"] = True
-                    $ NPC_gina.items.append(extractor_items["extractor1"])
+                    $ NPC_gina.items.append(extractor_items["extractor1"].get_instance())
 
                 elif NPC_gina.flags["research"] >= 8 and not (blueprint_item in MC.items or vitals_scanner in all_furniture):
                     gina "Wait a minute... I'm pretty sure I've seen a similar symbol somewhere..."
@@ -3036,7 +3137,7 @@ label visit_gina():
                     gina "Anyway. The device is in my inventory if you want to have a look. It's got lots of expensive parts, so expect to cough up a lot of gold for it."
 
                     $ NPC_gina.flags["extractor2 unlock"] = True
-                    $ NPC_gina.items.append(extractor_items["extractor2"])
+                    $ NPC_gina.items.append(extractor_items["extractor2"].get_instance())
 
                 else:
                     gina "Is this all?"
@@ -3435,7 +3536,7 @@ label visit_twins():
 
 ## FARM EVENTS
 
-label send_to_farm(girl, duration=None, can_beg=True, can_cancel=True):
+label send_to_farm(girl, duration=None, can_beg=True, can_cancel=True, can_follow=True):
 
     $ girl2 = None
 
@@ -3542,7 +3643,7 @@ label send_to_farm_menu():
 
                     play sound s_screams
 
-                    girl.char "No, Master, noooo!!!"
+                    girl.char "No, noooo!!!"
 
                     $ MC.good -= 1
                     $ girl.change_love(-3)
@@ -3617,7 +3718,7 @@ label send_to_farm_menu():
 
         # May resist MC
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if forced:
             call fight_attempt(girl, 3) from _call_fight_attempt_19
@@ -3646,20 +3747,21 @@ label send_to_farm_menu():
             play sound s_rooster
 
         $ farm.send_girl(girl, prog)
+        $ update_girl_status(girl_status_dict, girl)
 
         if girl2:
             call farm_take_out(girl2, check_room=False, context="swap") from _call_farm_take_out_2
             "[girl.fullname] has been taken away to the farm, while [girl2.fullname] has been sent to [brothel.name]."
 
-        $ farm.change_program(girl, prog)
+        if can_follow:
+            menu:
+                "Follow her to the farm":
+                    $ selected_destination = "farm"
+                    $ sent_success = True
+                    jump teleport
 
-        menu:
-            "Follow her to the farm":
-                $ selected_destination = "farm"
-                jump teleport
-
-            "Stay here":
-                pass
+                "Stay here":
+                    pass
 
     $ sent_success = True
 
@@ -3683,12 +3785,10 @@ label farm_max_skill(girl, skill):
     else:
         $ room = "black"
 
-    $ cntext = girl_related_dict[skill]
     gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
-        $ cntext = girl_related_dict[skill]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -3709,12 +3809,10 @@ label farm_max_pref(girl, act):
     else:
         $ room = "black"
 
-    $ cntext = girl_related_dict[act]
     gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
-        $ cntext = girl_related_dict[act]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -3929,16 +4027,17 @@ label farm_change_training_mode(girl):
 
     return
 
-label farm_take_out(girl, check_room=True, context="normal"): # Context can be 'normal', 'check' or 'swap'
+label farm_take_out(_girl, check_room=True, context="normal"): # Context can be 'normal', 'check' or 'swap'
 
-    $ prog = farm.programs[girl]
+    $ prog = farm.programs[_girl]
+    $ girl_status_dict = load_girl_status(MC.girls + farm.girls)
 
-    if girl in farm.girls:
+    if _girl in farm.girls:
         if prog.duration > 1 and prog.fixed_duration:
-            gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for another [prog.duration] days, remember?"
+            gizel smirk "You can't take [_girl.fullname] out of the farm for now. She is to be disciplined for another [prog.duration] days, remember?"
 
         elif prog.duration > 0 and prog.fixed_duration:
-            gizel smirk "You can't take [girl.fullname] out of the farm for now. She is to be disciplined for 1 more day, remember?"
+            gizel smirk "You can't take [_girl.fullname] out of the farm for now. She is to be disciplined for 1 more day, remember?"
 
         elif check_room and len(MC.girls) >= brothel.bedrooms:
             gizel normal "And just where do you think you can put that wench? Your brothel is full."
@@ -3946,17 +4045,26 @@ label farm_take_out(girl, check_room=True, context="normal"): # Context can be '
         elif context == "check":
             return True
 
-        elif context == "swap" or (context == "normal" and renpy.call_screen("yes_no", "Do you want to send [girl.fullname] back to the brothel?")):
+        elif context == "swap" or (context == "normal" and renpy.call_screen("yes_no", "Do you want to send [_girl.fullname] back to the brothel?")):
             hide screen girl_stats
             hide screen girl_profile
             hide screen button_overlay
-            $ farm.remove_girl(girl)
-            $ girl_status_dict = load_girl_status(MC.girls + farm.girls)
+            $ farm.remove_girl(_girl)
+
+            if context == "normal":
+                show screen dark_filter(False)
+                menu:
+                    "Follow her to the brothel":
+                        hide screen dark_filter
+                        jump girls
+
+                    "Stay here":
+                        hide screen dark_filter
 
             return True
 
     else:
-        $ raise AssertionError(girl.fullname + " is not a farm girl.")
+        $ raise AssertionError(_girl.fullname + " is not a farm girl.")
 
     return False
 
@@ -4077,9 +4185,9 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("基础着装", "你从希露那里得到了供宣传人员换装用的 {b}基础着装{/b} 。 这是用 '%s' 剩下的布料缝制的凡品，但总比没有好。" % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
-        "你得到了一套宣传人员可以替换的衣服, 这增加了青楼的 {b}advertising power{/b} 。以后肯定还有办法弄到更加吸引人的装束。"
+        "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
 
         $ story_remove_event("advertising_intro", "daily")
 
@@ -4398,7 +4506,7 @@ label new_contract():
     elif last_contract_result == "failure":
         jobgirl "I heard that last contract was a failure. Too bad... I hope you'll do better next time!"
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     jobgirl "Here are some new contract opportunities. Take a look!"
 
@@ -4502,6 +4610,7 @@ label run_contract_continue:
     python:
         for girl in girls:
             girl.away = True
+            girl.return_date = calendar.time
             add_event("return_from_leave", call_args = [girl, True], date = calendar.time)
 
     show expression con.bg at top with dissolve
@@ -4695,7 +4804,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight them off", "fight", district.rank+2), ("Cast a control spell", "control", district.rank+1)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "fight":
             play sound s_sheath
@@ -4811,7 +4920,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Kick his ass", "force", district.rank+1), ("Threaten him", "bluff", district.rank+2)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "force":
             "As the man stumbles towards [girl.name], you grab a bar stool and fling it at his back."
@@ -4904,7 +5013,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 
         play sound s_mystery
 
-        "Demonic Voice" "{font=SFBurlingtonScript.ttf}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
+        "Demonic Voice" "{font=SFBurlingtonScript.TTF}Yog-Sothoth mgah'ehye n'ghftdrnn hup mgepogg fa'ch ymg' nilgh'ri...{/font}"
 
         play sound s_roar
 
@@ -4918,7 +5027,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Stab the eye", "fight", district.rank+1), ("Dispel the magic", "cast", district.rank+2)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "fight":
 
@@ -5057,7 +5166,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Provoke the beast", "stamina", district.rank+2), ("Soothe the wild animal", "rally", district.rank+1)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "stamina":
 
@@ -5147,8 +5256,8 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 
             con.char "You were very brave out there... Here, have this selection of prime food from the fair. It's all delicious!"
 
-            $ it = [get_rand_item("rare", item_types="Food"), get_rand_item("common", item_types="Food"), get_rand_item("common", item_types="Food"), get_rand_item("common", item_types="Food")]
-            $ MC.items += it
+            $ it_list = [get_rand_item("rare", item_types="Food"), get_rand_item("common", item_types="Food"), get_rand_item("common", item_types="Food"), get_rand_item("common", item_types="Food")]
+            $ MC.items += [it for it in it_list if it != False]
 
             scene black with fade
 
@@ -5208,7 +5317,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Run after him", "stamina", district.rank+2), ("Cast a spell", "cast", district.rank+1)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "stamina":
 
@@ -5303,8 +5412,8 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
                 log.add_report("{color=[c_red]}Security alert! {b}" + kidnapped_girls[0].fullname + " was kidnapped!{/b}{/color}")
                 MC.girls.remove(girl)
                 game.kidnapped.append(girl)
-                girl.kidnapper = "一个危险的小偷"
-                girl.track_event("kidnapped", arg = "一个危险的小偷")
+                girl.kidnapper = "a dangerous thief"
+                girl.track_event("kidnapped", arg = "a dangerous thief.")
 
             security_breach "There is nothing you could do. Maybe someone in town can help you find out her whereabouts?"
 
@@ -5320,7 +5429,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
 #     - Spell battle: Spi/Cha
 #     - Join fun
 
-#汉化标签，待汉化的合同内容，对应描述在BKdialouge line378#
+
 #     - Context: Boat cruise (JP), Lavish Party (gold), Religious ceremony (mood+energy), School festival (skill), Private Date (items),
 #                Official Meeting (rep), Magic conference (double AP), Orgy (pref increase)
 
@@ -5336,7 +5445,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Avert conflict", "rally", district.rank+1), ("Use a mind control trick", "control", district.rank+2)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "rally":
 
@@ -5459,7 +5568,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         $ tt = show_tt("top_right")
         $ chal = renpy.call_screen("challenge_menu", challenges=[("Cast a silence spell", "detect", district.rank+2), ("Defuse their feud", "charm", district.rank+1)])
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if chal == "detect":
 
@@ -5734,7 +5843,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
         scene black
         with fade
 
-        $ girl.raise_preference(act, bonus=3)
+        $ girl.raise_preference(act, bonus=3, context="misc")
 
         "[girl.fullname]'s [act] preference has raised significantly."
 
@@ -5755,13 +5864,13 @@ label contract_warning_1day():
 
 ## AUCTION ##
 
-label auction_brothel(): # Where resource is a string
+label auction_brothel(): # old_brothel_auction_price is et in advance_chapter
 
     $ MC.gold += old_brothel_auction_price
-    $ renpy.block_rollback()
+    $ norollback()
 
     play sound s_gold
-    show screen auction_brothel(old_brothel_name, old_brothel_auction_price)
+    show screen auction_brothel(old_brothel_name, old_brothel_pic, old_brothel_auction_price)
     with dissolve
 
     pause
@@ -6027,12 +6136,12 @@ label tax_intro_menu():
 
             taxgirl "Those are all hypotheticals, of course. We wouldn't know anything about that. *smirk*"
 
-            if MC.playerclass == "战士":
+            if MC.playerclass == "Warrior":
                 you "Hmpf. I've seen worse in the war."
 
                 taxgirl "You may be a good fighter, but eventually you'll let your guard down... Everyone has to sleep..."
 
-            elif MC.playerclass == "法师":
+            elif MC.playerclass == "Wizard":
                 you "Oh really? I've got a range of spells I could use to prevent that..."
 
                 taxgirl "Did I mention we have access to some of the best sorcerers in the city? I'm sure you'd hate it if a zombified whore accidentally bit off your manhood..."
@@ -6090,8 +6199,9 @@ label tax_intro_menu():
 
 label tax_check(): # Happens on the morning of the 15th of every month starting from district rank 2. Taxgirl announces the tax amount
 
+    $ income = int(NPC_taxgirl.MC_income / brothel.get_effect("boost", "taxable net income")) # Calculates full income
     $ tx = calculate_tax(NPC_taxgirl.MC_income)
-    $ renpy.block_rollback()
+    $ norollback()
 
     if not NPC_taxgirl.active:
         if tx > 0:
@@ -6104,7 +6214,7 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         show taxgirl with dissolve
 
-        $ text1 = rand_choice(["好久不见, [MC.name],还记得我吗?", "嗨[MC.name]。又到了每个月的这个时候了。", "嗨,你友好的邻居奴隶公会又来问候你了。", "早上好，亲爱的。", "嗨，又到了交钱的时候了。", "早安。"])
+        $ text1 = rand_choice(["Hello, [MC.name], remember me?", "Hi [MC.name]. It's that time of the month.", "Hi, it's your friendly neighborhood slaver guilder.", "Hello, dear.", "Hi. It's time to pay.", "Good morning."])
 
         $ taxgirl(text1)
 
@@ -6114,27 +6224,29 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         else:
             if tx < 1000:
-                $ text1 = "一块小蛋糕。"
+                $ text1 = "A trifle."
             elif tx < 5000:
-                $ text1 = "象征性的贡献，一种善意的表达。"
+                $ text1 = "A token contribution, as a show of goodwill."
             elif tx < 25000:
-                $ text1 = "这是对我们集体利益的小小支持。"
+                $ text1 = "A modest show of support for our collective welfare."
             elif tx < 50000:
-                $ text1 = "很不错的努力，希望你能坚持下去。"
+                $ text1 = "A decent effort, I hope you keep this going."
             elif tx < 100000:
-                $ text1 = "一笔可观的捐款，公会会很感激的。"
+                $ text1 = "A sizeable donation, for which the guild will be grateful."
                 $ NPC_taxgirl.love += 1
             elif tx < 250000:
-                $ text1 = "为更大的利益做出了宝贵的贡献，对此我个人表示感谢。"
+                $ text1 = "A valuable contribution to the greater good, for which I will be personally thankful."
                 $ NPC_taxgirl.love += 3
             elif tx < 500000:
-                $ text1 = "你为我们的事业付出了巨大的努力，这将使你成为我们的三大捐助者之一。"
+                $ text1 = "A great effort for our cause, which will place you among our top three contributors."
                 $ NPC_taxgirl.love += 6
             else:
-                $ text1 = "你富可敌国!你恐怕是公会最大的收入来源了。如果你能成功，我会很佩服你的。"
+                $ text1 = "A King's ransom! No one is a bigger benefactor of the Guild than you. I will be very impressed if you pull this off."
                 $ NPC_taxgirl.love += 12
 
-            taxgirl "According to our accountants, you owe us {b}[tx] denars{/b} for last month. [text1]"
+            $ renpy.block_rollback()
+
+            taxgirl "According to our accountants, you have made [income] denars last month, so you owe us {b}[tx] denars{/b}. [text1]"
 
             call fade_tax_amount() from _call_fade_tax_amount_1
 
@@ -6164,7 +6276,7 @@ label tax_payment(): # Happens in the evening of the 1st each month if taxes are
 
             show taxgirl with dissolve
 
-            $ text1 = rand_choice([__("Good evening."), __("Hello, ") + MC.name +"。", __("Hi, dear."), __("Knock knock."), __("Hey, ") + MC.name + "。", __("Hi.")])
+            $ text1 = rand_choice([__("Good evening."), __("Hello, ") + MC.name +".", __("Hi, dear."), __("Knock knock."), __("Hey, ") + MC.name + ".", __("Hi.")])
             $ text1 += " " + __(rand_choice(["Here comes the guild collection.", "Your friendly neighborhood tax collector is here.", "Your guild membership fees are due.", "I hope you have my... the Guild's money ready.", "It's time to pay your dues.", "It's time for the slavers' guild to collect its due.", "I hope you have gathered enough money for protection."]))
 
             taxgirl "[text1!t]"
@@ -6172,13 +6284,13 @@ label tax_payment(): # Happens in the evening of the 1st each month if taxes are
             taxgirl "As a reminder, you owe us [NPC_taxgirl.current_tax] denars for last month."
 
             if pay_tax():
-                $ renpy.block_rollback()
+                $ norollback()
                 you "Hmph. Here you go."
 
                 call tax_relationship_test from _call_tax_relationship_test
 
             else:
-                $ renpy.block_rollback()
+                $ norollback()
                 you "Here is the... Oh."
 
                 call tax_no_money from _call_tax_no_money
@@ -6222,7 +6334,7 @@ label tax_relationship_test():
 
         taxgirl "You see, I wasn't born with the gift."
 
-        if MC.playerclass == "法师":
+        if MC.playerclass == "Wizard":
             you "Yes, I could feel it in your aura. You're a conduit, aren't you?"
 
             taxgirl "Yes."
@@ -7118,7 +7230,6 @@ label is_broken(girl):
     if not girl in MC.girls + farm.girls: # Avoids this event proc-ing several times (just in case)
         return
 
-
     "Gizel asked for you to come to the farm this morning. She said you'd better hurry."
 
     scene black with fade
@@ -7131,9 +7242,11 @@ label is_broken(girl):
 
     call dialogue(girl, "sanity broken") from _call_dialogue_254
 
+    $ game.track("broken")
+
     gizel upset "It seems using her to conduct evil powers have cost her the last of her {a=help:sanity}sanity{/a}... She's good for nothing now. She'll only harm herself."
 
-    $ MC.rand_say(("gd: 哦,不......她真的走了吗?我们就不能做点什么吗?", "ne: 该死，那太糟糕了......我从没想过会这样结束...", "ev: 那个蠢女人!我现在怎样才能收回投资呢?"))
+    $ MC.rand_say(("gd: Oh no... Is she really gone? Isn't there something we can do?", "ne: Damn, that sucks... I never intended it to end that way...", "ev: That stupid cunt! How am I to recoup my investment now?"))
 
     gizel angry "Like I said, she's good for nothing at the brothel or even the farm in that state. You do have a few options, though."
 
@@ -7165,7 +7278,7 @@ label is_broken(girl):
 
             gizel "I can just have her stay in the old barn, far from the other girls, and give her some of the minion's feed."
 
-            $ MC.rand_say(("gd: 好没人性...", "ne: 太狠了, 不过... 我想我能看到进步。", "ev: 哈哈！完美！"))
+            $ MC.rand_say(("gd: Cold...", "ne: Tough, but... I guess I can see the advantages.", "ev: Ha! Perfect."))
 
             you "But I thought only licensed brothels were authorized in Zan?"
 
@@ -7189,6 +7302,8 @@ label is_broken(girl):
             "Send her to the asylum for 1 month (cost: {image=img_gold_24}[asylum_cost])":
                 if renpy.call_screen("yes_no", "Do you want to send her to the lunatic asylum (small chance of recovering some sanity) for one month at the cost of %i gold?" % asylum_cost):
 
+                    $ unlock_achievement("broken girl asylum")
+
                     gizel angry "Fine, I'll have her sent there. Waste of money if you ask me, but it's your call."
 
                     play sound s_gold
@@ -7207,13 +7322,15 @@ label is_broken(girl):
             "Sell her to the highest bidder (auction starting price: {image=img_gold_24}[auction_min_price])":
                 if renpy.call_screen("yes_no", "Are you sure you want to sell her (starting auction price: %i gold)?" % auction_min_price):
 
+                    $ unlock_achievement("broken girl auction")
+
                     $ gain = renpy.random.randrange(auction_min_price, auction_min_price*3)
                     $ MC.gold += gain
                     $ relinquish_girl(girl)
                     $ bidder = rand_choice(["a lonely drifter", "a spice addict", "a cruel slavedriver", "a perverted old man", "a down-on-his-luck nobleman", "a monstrous half-orc", "a stern priest", "a merciless pimp", "a shady criminal", "a fearful barbarian", "a disfigured soldier"])
                     $ motive = rand_choice(["He said he would have her live from scraps in his backyard.", "He gave you a dangerous look when you asked him what he intended to do with her.", "He said he would use her as a human toilet.", "He had madness in his eyes.", "He said she was a present for his dog.", "He said it was 'for a friend'.", "He said he would sedate her and use her in orgies.", "He laughed cruelly when you asked what he intended to do with her.", "He said she would be a slave to his other slaves.", "He said she was needed for 'an experiment'", "He said he would get her stuck in his wall, whatever that means.", "He said he wouldn't need her long anyway."])
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     call screen increment_display("Auction girl", "You sold " + girl.fullname + " to " + bidder + " for %s gold.\n" + motive, "bg slave market11", "side slavegirl1", startv=auction_min_price, stopv = gain)
 
@@ -7229,6 +7346,8 @@ label is_broken(girl):
 
             "Keep her as a street whore (small daily income)":
                 if renpy.call_screen("yes_no", "Are you sure you want to turn her into a street whore? (she will live in the farm barn, generating a small daily income and no longer counting as one of your girls)"):
+
+                    $ game.track("broken girl street")
 
                     gizel "Fine. I'll keep her in the barn where she can't disturb anyone, for as long as she is able to work."
 
@@ -7256,11 +7375,13 @@ label asylum_return(girl, score):
         $ girl.full_rest()
         $ girl.sanity += dice(6, 2)
 
+        $ unlock_achievement("broken girl healed")
+
         "It seems [girl.fullname] is doing slightly better after spending some time in confinement. Her {b}{a=help:sanity}sanity{/a}{/b} has improved a little."
 
         nun "She is well-rested, but please be careful next time. Whatever ou have been doing to that poor slave, she was an inch from losing her mind."
 
-        $ MC.rand_say(["ev: 好吧... *耸肩*", "gd: 我很抱歉。我会好好照顾她的。", "ne: 知道了。我们现在可以走了吗?"])
+        $ MC.rand_say(["ev: Hmph... *shrug*", "gd: I'm sorry. I will take good care of her.", "ne: Noted. Can we go, now?"])
 
         call acquire_girl(girl, context = "asylum") from _call_acquire_girl
 
@@ -7288,14 +7409,13 @@ label asylum_return(girl, score):
                 "[girl.fullname] will be kept in the lunatic asylum for another month."
 
             "Sell her cheap (starting price: {image=img_gold_24} [auction_min_price])":
-
                 nun "Well, it's your prerogative as her Master... I don't expect many people will want her in that state, though."
 
                 $ gain = renpy.random.randrange(auction_min_price, auction_min_price*3)
                 $ MC.gold += gain
                 $ bidder = rand_choice(["a lonely drifter", "a spice addict", "a cruel slavedriver", "a perverted old man", "a down-on-his-luck nobleman", "a monstrous half-orc", "a stern priest", "a merciless pimp", "a shady criminal", "a fearful barbarian", "a disfigured soldier"])
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 call screen increment_display("Auction girl", "You sold " + girl.fullname + " to " + bidder + " for %s gold.", "bg slave market11", "side slavegirl1", startv=auction_min_price, stopv = gain)
 
@@ -7305,7 +7425,7 @@ label asylum_return(girl, score):
 
                 "[girl.fullname] has been sold to the highest bidder."
 
-            "Free her":
+            "Kick her out":
                 you "Just let her go. I have no need for her anymore."
 
                 nun "But Sir... In that state, she will be a danger to herself and others..."
@@ -7392,7 +7512,7 @@ label asylum_return2(girl):
 label girl_disappeared(girl):
 
     $ MC.street_girls.remove(girl)
-    $ excuse = rand_choice(["she was abducted by an ogre party, or so I'm told.", "she was a spice addict and couldn't keep her habit in check.", "she was arrested by the guard and thrown into a dank cell to rot.", "she bought passage onto on a ship, never to return again.", "she dove into the sea, screaming. Her body was never found.", "she fell into a rip in spacetime.", "a horny demon abducted her into another dimension.", "she was last seen boarding the carriage of an excentric noble, never to be seen again", "she was kidnapped by a foreign diplomat who took her home with him.", "she joined a mysterious cult and vanished", "she had monstrous debt, and got kidnapped by the mob.", "she was taken by a group of thugs, who dragged her into the sewers.", "she bought a weapon and left on a quest.", "she won the royal lottery.", "she ran naked into the woods, never to be seen again.", "she roughed up a priest, and was taken away by Arios Knights.", "she stabbed a rich guy, and was thrown in jail for life.", "she became a nun and joined the crusade.", "she married a poor fool.", "a jealous sorceress turned her into a toad.", "she was abducted by imps, courtesy of some mage.", "she got in league with the wrong people.", "she was accused of seddition and conspiring against the crown.", "she was taken in by relatives.", "she got jumped by rogue slavers who rebranded her.", "she left Zan for good to bring her trade to a different city.", "she became a brothel owner of her own."])
+    $ excuse = rand_choice(["she was abducted by an ogre party, or so I'm told", "she was a spice addict and couldn't keep her habit in check", "she was arrested by the guard and thrown into a dank cell to rot", "she bought passage onto on a ship, never to return again", "she dove into the sea, screaming. Her body was never found", "she fell into a rip in spacetime", "a horny demon abducted her into another dimension", "she was last seen boarding the carriage of an excentric noble, never to be seen again", "she was kidnapped by a foreign diplomat who took her home with him", "she joined a mysterious cult and vanished", "she had monstrous debt, and got kidnapped by the mob", "she was taken by a group of thugs, who dragged her into the sewers", "she bought a weapon and left on a quest", "she won the royal lottery", "she ran naked into the woods, never to be seen again", "she roughed up a priest, and was taken away by Arios Knights", "she stabbed a rich guy, and was thrown in jail for life", "she became a nun and joined the crusade", "she married a poor fool", "a jealous sorceress turned her into a toad", "she was abducted by imps, courtesy of some mage", "she got in league with the wrong people", "she was accused of seddition and conspiring against the crown", "she was taken in by relatives", "she got jumped by rogue slavers who rebranded her", "she left Zan for good to bring her trade to a different city", "she became a brothel owner of her own"])
 
     gizel normal "The street whore [girl.fullname] has disappeared tonight. It seems [excuse]. I guess we won't see her ever again."
 
@@ -7411,7 +7531,7 @@ label acquire_girl(girl, price=0, context="generic"):
         if len(MC.girls) < brothel.bedrooms:
             if price:
                 if MC.has_gold(price):
-                    $ result = renpy.call_screen("yes_no", "你确定要买下[girl.fullname]吗？这将花费[price]金币。")
+                    $ result = renpy.call_screen("yes_no", "Do you really want to buy [girl.fullname] for [price] gold?")
                 else:
                     if context == "slavemarket":
                         slavegirl1 "Sorry Master, but you don't have enough gold to buy [girl.fullname]."
@@ -7430,14 +7550,14 @@ label acquire_girl(girl, price=0, context="generic"):
                 menu:
                     sill "Sorry Master, I'm afraid you don't have room in your brothel for another girl."
 
-                    "Add a new room to your brothel ([price1] gold)" if brothel.bedrooms < brothel.get_maxbedrooms():
+                    "Add a new room to your brothel ([price1] gold)" if brothel.bedrooms < brothel.get_maxbedrooms() and MC.gold >= (price + price1):
                         if brothel.add_room():
                             $ result = True
 
                     "Send her to the farm" if farm.active and farm.has_room():
                         $ result = "farm"
 
-                    "Add a new pen to your farm ([price2] gold)" if farm.active and farm.pens < farm.get_pen_limit() and not farm.has_room():
+                    "Add a new pen to your farm ([price2] gold)" if farm.active and not farm.has_room() and farm.pens < farm.get_pen_limit() and MC.gold >= (price + price2):
                         $ res, text1 = farm.add_pen()
 
                         if res:
@@ -7476,7 +7596,7 @@ label acquire_girl(girl, price=0, context="generic"):
 
             call dialogue(girl, "bought") from _call_dialogue_90
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         if result == "farm":
             $ farm.programs[girl] = FarmProgram(girl)
@@ -7486,19 +7606,11 @@ label acquire_girl(girl, price=0, context="generic"):
         hide screen girl_stats
         hide screen button_overlay
 
-        python:
-            girl.location = None
-            girl.set_job(None)
-            girl.set_workdays()
-            girl.refresh_pictures()
-
-            girl.log["acquired"] = calendar.time
-            girl.track_event("acquired", arg=girl.name)
-
+        $ girl.init_after_acquire()
         $ test_achievements(["free girl acquired", "originals", "slaves", "naked", "rank B", "rank A", "rank S", "rank X"])
 
         $ selected_girl=None
-        $ renpy.block_rollback()
+        $ norollback()
 
     if not result and context == "asylum":
         call asylum_no_room(girl) from _call_asylum_no_room
@@ -7532,6 +7644,95 @@ label exhaust_girl(girl, super, hurt_chance=1):
 
             if chg:
                 "{color=[c_red]}Unfortunately, she hurt herself in the fall, and will need to rest for [chg] days.{/color}"
+
+    return
+
+
+# New Game + Events
+
+label free_girl_challenge():
+    $ base_level = (district.rank-1)*5
+
+    if game.chapter in (3, 5):
+        $ level = base_level + 2 + dice(2)
+    else:
+        $ level = base_level + dice(2)
+
+    $ girl = get_girl(free=True, level_range=[level, level])
+
+    $ calendar.set_alarm(calendar.time + 28, "free_girl_challenge")
+
+    $ renpy.block_rollback()
+
+    play sound s_chimes
+
+    sill happy "Master! A young lady has come to introduce herself. She is looking for work."
+
+    $ tt = show_tt("top_right")
+    show screen girl_stats(girl)
+    show screen girl_profile(girl)
+    with dissolve
+
+    girl.char "Hello Sir. I heard you had some job openings... Would you have anything for me?"
+
+    menu:
+        "Yes":
+            hide screen girl_stats
+            hide screen girl_profile
+            with dissolve
+
+            you "Sure thing, come on in."
+
+            call acquire_girl(girl) from _call_acquire_girl_8
+
+            if _return:
+                "[girl.fullname] has joined your brothel."
+
+                return
+
+            else:
+                pass
+
+        "No":
+            pass
+
+    hide screen girl_stats
+    hide screen girl_profile
+    with dissolve
+
+    you "Sorry, we're fully staffed at the moment."
+
+    girl.char "Oh, that's a shame..."
+
+    "The girl leaves."
+
+    return
+
+label dispense_item(setting):
+
+    if setting == "free girl":
+        call receive_item(seduction_potion) from _call_receive_item_37
+
+    elif setting == "virginity":
+        call receive_item(restoration_balm) from _call_receive_item_38
+
+    elif setting == "sanity":
+        call receive_item(bliss_incense) from _call_receive_item_39
+
+    elif setting == "interactions":
+        call receive_item(magic_powder) from _call_receive_item_40
+
+    elif setting == "perks":
+        call receive_item(wyvern_egg) from _call_receive_item_41
+
+    else:
+        bk_error "[setting] setting unrecognized."
+
+    if NGP_settings_dict[setting].get() == "weekly":
+        $ calendar.set_alarm(calendar.time + 7, StoryEvent("dispense_item", arg=setting))
+
+    elif NGP_settings_dict[setting].get() == "monthly":
+        $ calendar.set_alarm(calendar.time + 28, StoryEvent("dispense_item", arg=setting))
 
     return
 

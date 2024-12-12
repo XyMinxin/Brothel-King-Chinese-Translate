@@ -14,7 +14,7 @@ init -2 python:
 
 label hmas:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     stop music fadeout 2.0
 
@@ -35,7 +35,7 @@ label hmas:
     you "Uh? Did someone say 'Hoes'?"
 
     "Looking around you, you find nothing out of place in your room. Sill is sleeping naked on her cot at the foot of your bed, exhausted after the vicious
-     pounding you gave her last night."
+    pounding you gave her last night."
 
     you "Did I just dream this? It sounded so... strange..."
 
@@ -130,10 +130,10 @@ label hmas:
         menu:
             "Choose your present"
 
-            "干她的小穴":
+            "Fuck her pussy":
                 call hmas_sex("sex") from _call_hmas_sex_1
 
-            "干她的菊穴":
+            "Fuck her ass":
                 call hmas_sex("anal") from _call_hmas_sex_2
 
     else:
@@ -146,7 +146,7 @@ label hmas:
         you "*gulp*"
 
         "She has long, sharp ears, which place her as an elf or a member of the fairy people. However, you also notice that she has... horns. That's definitely
-         not an elven feature."
+        not an elven feature."
 
         you "Wh... Who are you? How do you know me?"
 
@@ -212,7 +212,7 @@ label hmas:
 
 label hmas_sex(act):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     show bg hmas2 at top with fade
 
@@ -263,7 +263,7 @@ label hmas_sex(act):
         hmas_girl "Aaaha..."
 
         "Giving her no time to rest, you forcefully pump in and out of her eager cunt, holding her in place with a hand on her ass,
-         the other digging in her breast."
+        the other digging in her breast."
 
         play sound s_moans_short
 
@@ -342,7 +342,7 @@ label hmas_sex(act):
         hmas_girl "Aaah! You're fucking me so deep! Aaaah!!!" with vpunch
 
         "Every time you slam your hard dick into her asshole, you also rub along the length of her pussy. You can feel her slowly losing her mind over
-         the sensation."
+        the sensation."
 
         play sound s_moans
 
@@ -409,9 +409,9 @@ label renza_friend1: # L >= 5 and dice(6) = 6
 
     menu:
 
-        "确实如此":
+        "Maybe I do":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Well, maybe I do..."
 
@@ -425,9 +425,9 @@ label renza_friend1: # L >= 5 and dice(6) = 6
 
             $ NPC_renza.love += 1
 
-        "你记错了":
+        "You're mistaken":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Nah, I'm only here to check your junk... Wait. That came out wrong."
 
@@ -535,7 +535,7 @@ label renza_friend3_menu:
 
     menu:
 
-        "你是怎么走上这一行的?" if not NPC_renza.flags["told_origin_story1"]:
+        "How did you become a thief?" if not NPC_renza.flags["told_origin_story1"]:
 
             renza "Well... I was born right here, in Zan. Some say I was delivered in the temple of Shalia itself. It's not like I really remember, but I play along with the rumors."
 
@@ -553,7 +553,7 @@ label renza_friend3_menu:
 
             $ NPC_renza.flags["told_origin_story1"] = True
 
-        "你是怎么爬到首领的地位的?" if NPC_renza.flags["told_origin_story1"] and not NPC_renza.flags["told_origin_story2"]:
+        "How did you become the guild leader?" if NPC_renza.flags["told_origin_story1"] and not NPC_renza.flags["told_origin_story2"]:
 
             "A shadow comes across her face. She turns her head."
 
@@ -631,7 +631,7 @@ label renza_friend3_menu:
 
             $ NPC_renza.flags["told_origin_story2"] = True
 
-        "发生什么事了?" if  NPC_renza.flags["told_origin_story2"] and not NPC_renza.flags["told_origin_story3"]:
+        "What happened to you?" if  NPC_renza.flags["told_origin_story2"] and not NPC_renza.flags["told_origin_story3"]:
 
             you "How... How did you escape the gang that killed your mother?"
 
@@ -703,7 +703,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story3"] = True
 
-        "你的母亲是...?" if not  NPC_renza.flags["told_origin_story4"]:
+        "Who was your mother?" if not  NPC_renza.flags["told_origin_story4"]:
 
             renza "My mother... My mother was magnificent."
 
@@ -729,7 +729,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story4"] = True
 
-        "那你的父亲呢?" if NPC_renza.flags["told_origin_story4"]:
+        "What about your father?" if NPC_renza.flags["told_origin_story4"]:
 
             renza "My father? Oh, my father was a brave man..."
 
@@ -743,7 +743,7 @@ label renza_friend3_menu:
 
             $  NPC_renza.flags["told_origin_story5"] = True
 
-        "介意我问一下你的纹身吗?":
+        "Can I ask about your tattoo?":
 
             "You look at her tattoo, trying to pretend you're only interested in the artful drawing and not the juicy, fleshy hip underneath."
 
@@ -821,20 +821,20 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
 
         "You think to yourself."
 
-        "我应该取悦我的合作伙伴":
-            $ renpy.block_rollback()
+        "My friends should be treated well":
+            $ norollback()
             $ MC.good += 1
 
             you "(I'm happy Renza came. I want her to be comfortable. Plus, she's hot.)"
 
-        "这对我的生意很有帮助":
-            $ renpy.block_rollback()
+        "It's good for business":
+            $ norollback()
             $ MC.neutral += 1
 
             you "(Having the infamous leader of the thieves guild as a guest will surely drive business up. Plus, she's hot.)"
 
-        "我只是想大饱眼福":
-            $ renpy.block_rollback()
+        "I'm only doing this because I want to peep":
+            $ norollback()
             $ MC.good -= 1
 
             you "(Just you wait. I'm going to get an eyeful...)"
@@ -851,10 +851,10 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
 
         "What do you do?"
 
-        "偷窥伦萨":
+        "Peep on Renza":
             jump renza_onsen2
 
-        "不偷窥":
+        "Don't peep":
 
             you "This isn't right. Renza's my friend. A very hot friend, for sure..."
 
@@ -863,13 +863,13 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
             "You swallow hard."
 
             menu:
-                "偷窥伦萨":
+                "Peep on Renza":
                     jump renza_onsen2
 
-                "不，还是算了":
+                "No, don't peep":
                     you "I must be strong. I'm an upstanding citizen."
 
-                    if MC.god == "太阳神":
+                    if MC.god == "Arios":
 
                         you "Remember what Arios says. 'Temptation is a dark tit'... Pit. Pit, I meant pit."
 
@@ -880,10 +880,10 @@ label renza_onsen1: # NPC_renza.flags[story2] + L=25 + not NPC_renza.flags[story
                     show screen invisible_button
 
                     menu:
-                        "偷窥伦萨":
+                        "Peep on Renza":
                             pass
 
-                        "绝对不能偷看":
+                        "Definitely don't peep":
                             "You have decided not to peep on Renza."
                             "Or..."
                             "Or have you? You are feeling a little confused right now."
@@ -1105,14 +1105,13 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
     renza "Come over here... Don't be shy."
 
-    "You settle for a spot a few yards apart from her. You two start chatting, barely seeing each other through the mist. You gradually ease into the situation, even though you are doing your best to conceal
-     a raging hard-on under the steamy water."
+    "You settle for a spot a few yards apart from her. You two start chatting, barely seeing each other through the mist. You gradually ease into the situation, even though you are doing your best to conceal a raging hard-on under the steamy water."
 
     you "So, you've had a rough night too?"
 
     renza "I did... Survived another assassination attempt, from a close associate... Then I had to go into the city to break a couple of my men out of jail...
-           And on the way back, I hit a rich
-           merchant's house. Just for the fun of it."
+            And on the way back, I hit a rich
+            merchant's house. Just for the fun of it."
 
     you "Wow... Your life isn't lacking for excitement..."
 
@@ -1143,8 +1142,8 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
     you "..."
 
     menu:
-        "大家可都指望着你":
-            $ renpy.block_rollback()
+        "You have people counting on you":
+            $ norollback()
             $ MC.good += 1
 
             you "You don't have to be alone and miserable. You have people counting on you, people who care about you..."
@@ -1157,8 +1156,8 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             you "It's not... You're a great person. Don't let one mistake define you."
 
-        "你可以纪念她":
-            $ renpy.block_rollback()
+        "You can honor her memory":
+            $ norollback()
             $ MC.good += 1
 
             if MC.god:
@@ -1172,12 +1171,12 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             renza "She raised me as a fighter. So I will fight on. To preserve her legacy to the guild."
 
-        "过去的事就让它过去吧":
-            $ renpy.block_rollback()
+        "You have to let it go":
+            $ norollback()
             $ MC.neutral += 1
 
             you "You cannot live your life fully until you let go. Your mother is gone, she won't come back.
-                 The sooner you accept it, the sooner you can do something meaningful with your life."
+                The sooner you accept it, the sooner you can do something meaningful with your life."
 
             renza "..."
 
@@ -1188,12 +1187,12 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
             renza "Thank you. I understand."
 
 
-        "没必要沉浸在过去的伤痛中":
-            $ renpy.block_rollback()
+        "You could set yourself free":
+            $ norollback()
             $ MC.neutral += 1
 
             you "The responsibilities of a guild leader are smothering you. This is not the life you'd have chosen for yourself.
-                 Why don't you free yourself from this?"
+                Why don't you free yourself from this?"
 
             renza "But my mom... She worked so hard, to achieve so much... I can't just let that fall apart."
 
@@ -1207,14 +1206,14 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
             renza "Thank you, [MC.name]..."
 
-        "停下你无谓的抱怨吧":
-            $ renpy.block_rollback()
+        "You could stop whining":
+            $ norollback()
             $ MC.evil += 1
 
             you "Oh come on, when did you become such a crybaby?"
 
             you "Your mom's dead, and she isn't coming back. Yes, it's your fault. No, you can't do anything about it. So just suck it up,
-                 and show some sand for Shalia's sake!"
+                and show some sand for Shalia's sake!"
 
             renza "Why you..."
 
@@ -1240,43 +1239,43 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
 
     menu:
 
-        "为了扬名立万，出人头地":
+        "To make a name for myself":
             $ MC.neutral += 1
 
             you "I want to rise in Zan and make a name for myself. I want to become as famous as the King himself."
 
-        "为了富甲天下，酒池肉林":
+        "To become rich and live in luxury":
             $ MC.neutral += 1
 
             you "I want to become filthy rich, and live a lavish lifestyle..."
 
-        "为了权倾朝野，掌控一切":
+        "To get absolute power":
             $ MC.evil += 1
 
             you "I want to be all powerful, to force the world to do my bidding..."
 
-        "为我的朋友两肋插刀":
+        "To do right by my friends":
             $ MC.good += 1
 
             you "I want to do right by my friends, and remain loyal."
 
-        "让我的敌人一败涂地":
+        "To crush my enemies":
             $ MC.evil += 1
 
             you "I want to crush my enemies, see them driven before me, and hear the lamentation of their women... While I fuck them!"
 
             you "While I fuck the women, I mean, not the enemies... Unless the enemies are women... But then, uh... Err..."
 
-        "我要和所有美女做爱":
+        "To fuck as many girls as possible":
             $ MC.neutral += 1
 
             you "I want to fuck all the girls in Zan. It's a tough job, but someone's got to do it."
 
-        "我喜欢走一步算一步":
+        "There is no goal to life":
 
             you "There's no such thing as a goal in life. We're only here for a fleeting instant... So all we can do is enjoy the ride. And I intend to enjoy it."
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     play sound s_laugh
 
@@ -1331,7 +1330,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
     you "Renza..."
 
     "Before you know what is happening, her slender hand is running the length of your shaft. She starts toying with the tip of your cock,
-     squeezing it between her fingers."
+    squeezing it between her fingers."
 
     play sound s_mmmh
 
@@ -1412,7 +1411,7 @@ label renza_onsen3: # NPC_renza.flags[story3] and L=35 and not NPC_renza.flags[s
     renza "It can't be helped, then, I must take responsibility for this... Aaaah..."
 
     "Slowly sliding into her, you are surprised at how tight she is. Your foreplay left her very wet and willing, however, and her pussy soon expands to accommodate
-     the whole length of your cock."
+    the whole length of your cock."
 
     renza "I could get used to this... It's nicely filling me up..."
 
@@ -1560,11 +1559,11 @@ label farm_meet_gizel(): # Location: spice market
 
     with fade
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         $ text1 = "anti-rust lotion"
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
         $ text1 = "magic herbs"
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
         $ text1 = "dragon feed"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
@@ -1578,14 +1577,14 @@ label farm_meet_gizel(): # Location: spice market
     "There's something odd about her. Her hair is bleached blond, almost white, and her skin is extremely pale."
 
     "She cuts an unusal figure even here in the slums, where
-     all nations and races rub elbows - as well as other body parts."
+    all nations and races rub elbows - as well as other body parts."
 
     gizel "And whatever is this? Fireroot, perhaps? Hmm, no..."
 
     "Staring at the slender young girl, it finally hits you: she is not a human, but an elf. That would explain her exotic looks and mysterious behavior."
 
     "You ponder the meaning of this for a second. Elves are very rare in Zan, and much-maligned, because of their role in the ongoing war in the Holy Lands.
-     To say that they are being frowned upon in the streets of Zan would be an understatement."
+    To say that they are being frowned upon in the streets of Zan would be an understatement."
 
     you "Well, I suppose there's all sorts of people living in the slums... I wonder where this young elf came from? And what of her kin? Is she by herself?"
 
@@ -1608,16 +1607,16 @@ label farm_meet_gizel(): # Location: spice market
     menu:
         "How do you feel about elves?"
 
-        "我和他们无冤无仇":
-            $ MC.rand_say(("我不讨厌他们。战争时常发生，并不是他们挑起了这场战争...", "ar: 虽然太阳神教会谴责精灵，但我不认为他们是坏人。他们可以重获光明。", "wr: 我在战场上与许多精灵交过手，所以我尊重他们的勇气和能力。他们是值得尊敬的对手。", "wz: 我确实喜欢时不时地和精灵好好聊一聊。他们知道很多秘密，虽然他们不太愿意分享。"))
+        "I bear them no grudge":
+            $ MC.rand_say(("I don't hate them. Wars come and go, and it wasn't they who started this one...", "ar: Although the Arios church denounces the elves, I do not think they are bad. They can be brought back to the light.", "wr: I have fought enough elves on the battlefield to respect their grit and abilities. They are worthy opponents.", "wz: I do enjoy a good conversation with an elf from time to time. They know a great deal of secrets, though they don't share them very willingly."))
             $ story_flags["elves"] = "like"
 
-        "我恨他们":
-            $ MC.rand_say(("我鄙视这些尖耳朵的老鼠。唯一的好精灵是死去的精灵，我总是这么说。", "ar: 那些地狱的后代不尊重真光，违背人类和神的意愿占领圣地。我讨厌他们。", "wr: 那些该死的精灵在战场上夺去了我许多战友的生命。我不会原谅他们的。"))
+        "I hate them":
+            $ MC.rand_say(("I despise these pointy-eared rats. The only good elf is a dead elf, I always say.", "ar: Those spawns of hell show no respect to the true Light, and occupy the Holy Lands against the will of men and Gods. I hate them.", "wr: The damn elves took the lives of many of my comrades on the battlefield. I shan't forgive them."))
             $ story_flags["elves"] = "dislike"
 
-        "我也不知道":
-            $ MC.rand_say(("我不能说我遇到过很多精灵，更不用说和他们交谈了。所以我保留我的判断。", "ng: 我真的不知道。我猜阿里奥斯教会讨厌他们，但我没时间管假神和他们的爪牙。", "wz: 精灵懂得很多东西，我相信一个人可以从他们身上学到很多东西......如果他们不喜欢在你靠近他们的时候用毒箭射你的话。", "tr: 我过去和精灵们做过不少交易。我想他们很信守诺言，尽管他们不会赢得任何热门的比赛。"))
+        "I don't really know":
+            $ MC.rand_say(("I can't say I have met many elves, much less talked to them. So I reserve my judgement.", "ng: I don't really know. The Arios Church hates them I guess, but I have no time for phony gods and their minions.", "wz: Elves know many things, and I'm sure one could learn a lot from them... If they weren't like to pelt you with poison arrows whenever you come near them.", "tr: I've traded with elves quite a bit in the past. They are good on their word, I guess, although they won't win any popularity contest."))
             $ story_flags["elves"] = "neutral"
 
     man "Make way!"
@@ -1673,15 +1672,15 @@ label farm_meet_gizel2():
     "The junkyard is located in the lowest part of the slums. It seems almost empty today."
 
     "You know for a fact that you aren't alone here, however, as crumbling shanty houses line the scrapyard. They're populated with all sorts of
-     rabble and outcasts, who make a living sorting through other people's trash, or simply hiding from the law."
+    rabble and outcasts, who make a living sorting through other people's trash, or simply hiding from the law."
 
     you "I guess the guard patrols are too scared of the smell and diseases to come down here..."
 
     "Still, today is an unusually quiet day. Perhaps it's the harsh sun, which mercilessly sheds its burning light on this shadowless place,
-     or some vague sense of menace in the air? But what could be fouler than the normal smell of this place?"
+    or some vague sense of menace in the air? But what could be fouler than the normal smell of this place?"
 
     "Sitting on the top of a large trash hill, you look around you, trying to peer into some of the roughly built shacks, hoping to get a peek into the
-     everyday life of its inhabitants."
+    everyday life of its inhabitants."
 
     you "..."
 
@@ -1736,10 +1735,10 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "警告那个女精灵":
+            "Warn the elf girl":
                 $ result = "warn"
                 $ MC.good += 1
-            "袖手旁观吃瓜看戏":
+            "Wait and see":
                 $ result = "wait"
                 $ MC.good -= 1
 
@@ -1751,10 +1750,10 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "检举精灵的藏身之处":
+            "Denounce the elf's hiding place":
                 $ result = "denounce"
                 $ MC.evil += 1
-            "袖手旁观吃瓜看戏":
+            "Wait and see":
                 $ result = "wait"
                 $ MC.neutral -= 1
 
@@ -1763,17 +1762,17 @@ label farm_meet_gizel2():
 
         menu:
             "What do you do?"
-            "警告那个女精灵":
+            "Warn the elf girl":
                 $ result = "warn"
                 $ MC.good += 1
-            "检举精灵的藏身之处":
+            "Denounce the elf's hiding place":
                 $ result = "denounce"
                 $ MC.evil += 1
-            "袖手旁观吃瓜看戏":
+            "Wait and see":
                 $ result = "wait"
                 $ MC.neutral += 1
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if result == "warn":
 
@@ -2046,7 +2045,7 @@ label farm_meet_gizel2():
         menu:
             "What do you do?"
 
-            "正当防卫" if result == "warn":
+            "Defend yourself" if result == "warn":
                 $ reaction = "fight"
 
                 you "You think I'd fall to a bunch of braindead bigots like you? I can crush you with my bare hands!"
@@ -2062,12 +2061,12 @@ label farm_meet_gizel2():
                 pause 0.1
                 play sound2 s_sheath
 
-            "袖手旁观"  if result == "warn":
+            "Wait and see"  if result == "warn":
                 $ reaction = "wait"
 
                 you "Damn, I'm unarmed and defenseless... There's nothing I can do for now..."
 
-            "掩护她" if not result == "warn":
+            "Defend the girl" if not result == "warn":
                 $ reaction = "fight"
                 $ MC.good += 1
 
@@ -2099,21 +2098,21 @@ label farm_meet_gizel2():
 
                 you "Uh-oh."
 
-            "继续观察" if not result == "warn":
+            "Keep watching" if not result == "warn":
                 $ reaction = "wait"
                 $ MC.neutral += 1
                 you "There doesn't seem to be anything I can do. After all, discretion is the better part of valor. Let us see how it all unfolds..."
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if reaction == "fight":
         menu:
             "What will you do?"
 
-            "与他们正面对抗":
+            "Fight them head-on":
                 jump templar_fight
 
-            "用魔法攻击他们":
+            "Use magic":
                 jump templar_magic
 
     else:
@@ -2121,7 +2120,7 @@ label farm_meet_gizel2():
 
 label templar_fight:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if result == "warn":
         $ diff = 6
@@ -2161,7 +2160,7 @@ label templar_fight:
         hide initiate1 with pixellate
 
         "Aiming with fearful precision at the joints in the initiate armors, you use the stolen weapon to sever the tendons of a couple of them,
-         sending them crumbling into the dust with pathetic cries."
+        sending them crumbling into the dust with pathetic cries."
 
         templar "Damn this man, he fights with the strength of a demon! Get him!"
 
@@ -2241,7 +2240,7 @@ label templar_fight:
 
 label templar_magic:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if result == "warn":
         $ raw = True
@@ -2583,7 +2582,7 @@ label gizel_rape():
     play sound s_moans_quiet
 
     "In spite of her situation, Gizel is blushing visibly. Her pussy and ass seem to expand to accommodate the men's dicks without any problems too,
-     although she is so thin, you can see a bump in her belly every time the cock in her pussy thrusts forward."
+    although she is so thin, you can see a bump in her belly every time the cock in her pussy thrusts forward."
 
     you "This must be the legendary sex drive of the fairy people..."
 
@@ -2605,7 +2604,7 @@ label gizel_rape():
     with flash
 
     "The templar explodes into the young girl's mouth, shooting a huge load of sticky cum. With his dick firmly lodged deep down her throat,
-     Gizel has no choice but to gulp it all down."
+    Gizel has no choice but to gulp it all down."
 
     gizel "NGGGH... NGAH... *cough* *cough*"
 
@@ -2755,8 +2754,7 @@ label gizel_attack():
     gizel smirk "Ah, a survivor... What should I do with this one?"
 
     if result == "warn":
-        gizel "You're the one who tried to warn me, aren't you? You're not one of those Arios bigots.
-                      Your heart was bleeding for a poor little elf, was it?"
+        gizel "You're the one who tried to warn me, aren't you? You're not one of those Arios bigots. Your heart was bleeding for a poor little elf, was it?"
 
         you "Well, uh, yes... I was only trying to help..."
 
@@ -2816,13 +2814,13 @@ label gizel_attack():
     menu:
         you "Because..."
 
-        "你不会想和我战斗的":
+        "You don't want to fight me":
 
             you "My name is [MC.name]. I'm a lot tougher than those clowns out there. You don't want to start a fight you can't win."
 
-            $ MC.rand_say(("wr: 在我成为妓院老板之前，我是战争中的一名士兵。我杀了数不清的精灵法师。",
-                           "wz: 我不只是妓院老板，我还是一个强大的法师，在卡吉尔是我班上的佼佼者。你不会在这场战斗中占上风的。",
-                           "tr: 我不只是个卑鄙的皮条客，好吗?我有一条宠物龙。这是真的。他大概有20英尺高。"))
+            $ MC.rand_say(("wr: Before I was a brothel owner, I was a soldier in the war. I killed more elven mages than I can count.",
+                            "wz: I'm not just a brothel owner, I'm also a powerful mage, top of my class in Karkyr. You won't have the upper hand in this fight.",
+                            "tr: I'm not just a lowlife pimp, okay? I've got a pet dragon. That's right. And he's like, twenty feet tall."))
 
             if NPC_gizel.raped:
                 if reaction == "fight":
@@ -2859,7 +2857,7 @@ label gizel_attack():
 
                 gizel upset "But what do I have to gain from an alliance with you!"
 
-        "我对你还有些用处":
+        "I can be useful to you":
 
             you "Look, I can be useful to you. I am not one of those Arios bigots. My name is [MC.name], I'm a business man, I own a brothel in town..."
 
@@ -2923,7 +2921,7 @@ label gizel_attack():
 
             label gizel_questions_menu():
                 menu:
-                    "还未请教姑娘芳名?":
+                    "Who are you?":
 
                         you "Who are you?"
 
@@ -2966,24 +2964,23 @@ label gizel_attack():
                         gizel smirk "Ha! You should see the look on your face!"
 
                         gizel normal "Come on, I'm fucking with you. Do you know how {i}{b}rare{/b}{/i} real virgins are in Xeros?
-                                     I wouldn't have lasted a year at this rate."
+                                    I wouldn't have lasted a year at this rate."
 
                         jump gizel_questions_menu
 
-                    "你在泽恩做什么?":
+                    "What are you doing in Zan?":
 
                         you "What are you doing here in Zan?"
 
                         gizel normal "For centuries, I stuck to the wilderness outside of city walls, and it suited me just fine...
-                                      After all, my kin used to live high in what you call the Arik mountains, and it was pretty much inaccessible."
+                                    After all, my kin used to live high in what you call the Arik mountains, and it was pretty much inaccessible."
 
                         gizel "But I didn't stay there long. I had my reasons... Anyway."
 
                         gizel angry "After the fall of the old races, humans began to multiply and spread like roaches... It was harder and harder to find a
-                               quiet place to live and feed."
+                                    quiet place to live and feed."
 
-                        gizel upset "And now, there's the damn war. Arios bigot crusaders swarm the land, eager to find elves to string up and villages to loot on the way to the front line,
-                               trying to delay real fighting for as long as possible..."
+                        gizel upset "And now, there's the damn war. Arios bigot crusaders swarm the land, eager to find elves to string up and villages to loot on the way to the   front line, trying to delay real fighting for as long as possible..."
 
                         gizel normal "Life in the country went from being hard to impossible. I thought I might as well hide in plain sight, in the big city..."
 
@@ -2991,7 +2988,7 @@ label gizel_attack():
 
                         jump gizel_questions_menu
 
-                    "你对他们做了什么?":
+                    "What did you do to those men?":
 
                         you "What... What did you just do to those men out there?"
 
@@ -3017,7 +3014,7 @@ label gizel_attack():
                             gizel angry "I know better than to kill my prey from exhaustion, unless I want to."
 
                             gizel blush "I drained those assholes empty because it served my ends... But I could just as easily have taken only a little bit of energy from them,
-                                          and they wouldn't have noticed a thing."
+                                        and they wouldn't have noticed a thing."
 
                             gizel "I've got centuries of practice."
 
@@ -3055,7 +3052,7 @@ label gizel_attack():
 
                             jump gizel_questions_menu
 
-                    "没有要问的了":
+                    "No more questions":
                         pass
 
         "Fine":
@@ -3251,7 +3248,7 @@ label farm_meet_goldie_menu():
 
         goldie "What is it?"
 
-        "你的弟弟为什么离开了?":
+        "Why is your brother leaving?":
 
             you "Why is your brother leaving?"
 
@@ -3265,7 +3262,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["curse"] = True
 
-        "你不能雇佣帮工吗?":
+        "Can't you hire help?":
 
             you "Can't you just hire more people?"
 
@@ -3281,7 +3278,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["curse"] = True
 
-        "你的动物为什么会死?":
+        "Why are your animals dying?":
 
             you "Your animals are dying? Why?"
 
@@ -3303,7 +3300,7 @@ label farm_meet_goldie_menu():
 
             $ menu_answers["farm"] = True
 
-        "诅咒?" if menu_answers["curse"]:
+        "A curse?" if menu_answers["curse"]:
 
             you "What was that about a curse?"
 
@@ -3331,8 +3328,7 @@ label farm_meet_goldie_menu():
 
             goldie "Foul magic at work, for sure. Since then, the few that have dared enter it haven't returned, or came out frightened out of their mind."
 
-            goldie "We would have been content to leave this cursed place alone like we did before... But {i}{b}something{/b}{/i} stirred when my brother cracked it open... And it's been
-                    a blight on the crops and cattle around the farm ever since."
+            goldie "We would have been content to leave this cursed place alone like we did before... But {i}{b}something{/b}{/i} stirred when my brother cracked it open... And it's been a blight on the crops and cattle around the farm ever since."
 
             goldie "Even humans fall victims to it. The night terrors, the hallucinations..."
 
@@ -3349,7 +3345,7 @@ label farm_meet_goldie_menu():
             $ menu_answers["farm"] = True
             $ menu_answers["help"] = True
 
-        "这间农场怎么了?" if menu_answers["farm"]:
+        "What about this 'farm'?" if menu_answers["farm"]:
 
             you "What is this 'farm' you speak of?"
 
@@ -3371,7 +3367,7 @@ label farm_meet_goldie_menu():
 
             you "Hmm."
 
-        "也许我可以帮到你?" if menu_answers["help"]:
+        "What if I helped you?" if menu_answers["help"]:
 
             you "What if I helped you lift this curse?"
 
@@ -3410,9 +3406,9 @@ label farm_meet_goldie_menu():
 
             goldie "Anyway, how do you expect to solve the mystery of this place?"
 
-            $ MC.rand_say(("wr: 我总是说，用几英寸的铁器插进肚子，没有什么是解决不了的。让我来处理吧。",
-                           "wz: 我在卡尔基大学上过一门“诅咒和debuff管理”的课，那是以前的事了......我对这些事很在行。",
-                           "tr: 我随时都能应付棘手的情况。如果农场里有什么东西，也许我能跟它做个交易?"))
+            $ MC.rand_say(("wr: There's nothing that can't be solved with a few inches of steel in the gut, I always say. Let me take care of it.",
+                            "wz: I took a class in 'curse and debuff management' at Karkyr University, back in the day... I know my way around these things.",
+                            "tr: I talk my way around tricky situations all day... If there's something in that farm, perhaps I can cut a deal with it?"))
 
             goldie "I hope you're right..."
 
@@ -3496,7 +3492,7 @@ label farm_exorcism_attempt():
     menu:
         "What do you do?"
 
-        "拿出武器攻击它":
+        "Attack him with your weapon":
 
             play sound s_sheath
 
@@ -3516,7 +3512,7 @@ label farm_exorcism_attempt():
 
             spirit "Muhahaha, worm! You can't hope to defeat me with your petty mortal weapons!"
 
-        "吟唱咒语攻击它":
+        "Attack him with a spell":
 
             play sound s_spell
 
@@ -3528,7 +3524,7 @@ label farm_exorcism_attempt():
 
             spirit "Fool! I exist in an ethereal plane that you cannot hope to reach with your amateurish powers..."
 
-    $ MC.rand_say(("sh: 莎莉娅庇佑着我...", "ar: 太阳神啊, 指引我向光明前进...", "ng: 真是操了。"))
+    $ MC.rand_say(("sh: Shalia guard me...", "ar: Arios, guide me into the light...", "ng: Fuck."))
 
     play sound s_maniacal_laugh
 
@@ -3580,7 +3576,7 @@ label farm_exorcism_attempt():
 
     you "I promise, ok?"
 
-    $ MC.rand_say(("gd: 我会回来救你的。", "ev: 我现在{i}{b}更想要{/b}{/i}那间农场了。", "ne: 一言为定。我会帮你的。"))
+    $ MC.rand_say(("gd: I'll come back to save you.", "ev: I {i}{b}want{/b}{/i} that farm even more, now.", "ne: A deal is a deal. I'll help."))
 
     goldie "Really?"
 
@@ -4268,7 +4264,7 @@ label farm_meet_gina():
     "The junkyard. A foul place, where all the refuse from the mean streets of Zan gets piled up, to be burned or forgotten."
 
     "Seen from here, the City of Jade seems to be more worthy of the name 'City of rubbish'. As the largest city in the whole of Xeros,
-     it produces enough waste every day to create a landscape of garbage mounds, spreading as far as the eye can see."
+    it produces enough waste every day to create a landscape of garbage mounds, spreading as far as the eye can see."
 
     if MC.god:
         $ text1 = MC.god + " forsaken"
@@ -4278,7 +4274,7 @@ label farm_meet_gina():
     you "Remind me again, why the hell did I come to that [text1] place? I have trouble understanding my own decisions, sometimes..."
 
     "As you ponder your own fickleness, your eye is caught by a shiny reflection. It came from the top of the highest garbage pile in the junkyard,
-     a monstrous column standing a good thirty feet tall."
+    a monstrous column standing a good thirty feet tall."
 
     you "Wait, what's that? There's something there."
 
@@ -4301,7 +4297,7 @@ label farm_meet_gina():
     menu:
         "What do you do?"
 
-        "伸出援手":
+        "Save her":
             $ MC.good += 1
 
             you "Lady, wait!!!"
@@ -4345,7 +4341,7 @@ label farm_meet_gina():
 
             you "Ahhh..."
 
-        "袖手旁观":
+        "Stay out of this":
             $ MC.good -= 1
 
             you "I would help her, I would. But it's too damn far."
@@ -4615,7 +4611,7 @@ label gina_research():
 
     you "Uh..."
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
         you "(Didn't they teach us to stay clear of this in Conjuring 101? Damn, I don't know, I was too busy checking out the teacher's cleavage...)"
 
     gina "Go to page 666 and find my notes. You must read me the exact words as I handle Test Subject #1 with care."
@@ -4645,7 +4641,7 @@ label gina_research():
     gina "Uwaah!" with vpunch
 
     scene black with fade
-    scene bg gina research1 at top with dissolve
+    show bg gina research1 at top with dissolve
 
     "Gina is surprised as a large appendage separates from the monster's bulk and starts wiggling around."
 
@@ -4699,9 +4695,9 @@ label gina_research():
 
     gina "EEEEK!!!"
 
-    you "<...it is ready for extraction.>"
-
     show bg gina research2 at top with doubleflash
+
+    you "<...it is ready for extraction.>"
 
     play sound s_surprise
 
@@ -5405,15 +5401,15 @@ label stella_reward3(): # Activates when the player has spent another 1000 denar
     menu:
         stella "What do you choose?"
 
-        "用你的小手撸我的肉棒":
+        "Get a handjob":
             scene black with fade
             call stella_handjob from _call_stella_handjob
 
-        "趴在那里掰开你的小穴":
+        "Have sex":
             scene black with fade
             call stella_sex from _call_stella_sex
 
-        "火速逃离这里":
+        "Escape":
             you "Look behind you! A three-headed monkey!!!"
 
             stella "What?!?" with vpunch
@@ -5443,7 +5439,7 @@ label stella_invitation():
 
     "Strange glyphs are written on the envelope. There is no recognizable name or address."
 
-    $ MC.rand_say(("gd: 我真不该打听，但如果我不打开它，我就不能把它送到它的主人那里。", "ev: 太棒了!希望我能用这个敲诈别人。", "ne: 好吧，如果有人要打开这个，拿走里面的内容，那最好是我..."))
+    $ MC.rand_say(("gd: I really shouldn't pry, but if I don't open it, I won't be able to bring it to its rightful recipient.", "ev: Great! Hopefully, I can use this to blackmail somebody.", "ne: Well, if someone is going to open this and make away with the content, it might as well be me..."))
 
     "Slicing the envelope open with your dagger, you are somewhat disappointed to find only a small piece of paper tucked inside, alongside a small charm amulet. It's the cheap kind you can find for a denar a dozen on Pilgrim Road."
 
@@ -5451,8 +5447,7 @@ label stella_invitation():
 
     play sound s_dress
 
-    call screen letter(header = "Burn after reading", message = "The merchandise is brought to the guild quarter on the first Tuesday of every month. Look for a private club called 'Mania', and show them the amulet.\n\nDon't expect any more intel from me, this is getting too dangerous. My cover is nearly blown, I'm out.",
-                          signature = "DT")
+    call screen letter(header = "Burn after reading", message = "The merchandise is brought to the guild quarter on the first Tuesday of every month. Look for a private club called 'Mania', and show them the amulet.\n\nDon't expect any more intel from me, this is getting too dangerous. My cover is nearly blown, I'm out.", signature = "DT")
 
     you "How mysterious... Merchandise? A private club? A cheesy charm? Who wrote this..."
 
@@ -6022,7 +6017,7 @@ label stella_secret2():
     menu:
         "Stumble towards..."
 
-        "Ka将军":
+        "General Ka":
             "Trying to remain zombie-like, you stumble towards the lady-in-red."
 
             blood1 "Hey! The scrawny one is coming at me... Creepy!"
@@ -6036,7 +6031,7 @@ label stella_secret2():
             call blood1_bj from _call_blood1_bj
             $ unlock_achievement("h ka")
 
-        " Zee上将":
+        "Admiral Zee":
             "Pretending to be drifting aimlessly, you bump into Admiral Zee."
 
             play sound s_horn
@@ -6056,7 +6051,7 @@ label stella_secret2():
             call blood2_tj from _call_blood2_tj
             $ unlock_achievement("h zee")
 
-        "斯特拉中尉":
+        "Lieutenant Stella":
             "You gravitate little by little towards Stella."
 
             stella "Shhh! Bad boy! Go away!"
@@ -6095,7 +6090,7 @@ label stella_secret2():
 label blood1_bj():
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
     show bg ka1 at top with dissolve
@@ -6219,7 +6214,7 @@ label blood1_bj():
 label blood2_tj():
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -6318,7 +6313,7 @@ label blood2_tj():
 label stella_bj():
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -6521,7 +6516,7 @@ label farm_meet_willow():
     menu:
         sill "Master, please, can I have it?"
 
-        "当然了(50金币)":
+        "Sure (50 gold)":
             you "All right, I guess with all your hard work, you deserve a present from time to time."
             $ MC.good += 1
             $ NPC_sill.love += 1
@@ -6532,7 +6527,7 @@ label farm_meet_willow():
             $ bought = True
 
 
-        "你得自己买单":
+        "Only if you pay for it":
             you "You can buy it with your own pocket money. I'm not your boyfriend."
             $ MC.neutral += 1
 
@@ -6546,7 +6541,7 @@ label farm_meet_willow():
 
             $ bought = True
 
-        "当然不行了":
+        "Absolutely not":
             you "Absolutely not. As a slave, you don't get to choose what you wear. I do."
             $ MC.evil += 1
             $ NPC_sill.love -= 1
@@ -6557,7 +6552,7 @@ label farm_meet_willow():
 
             $ bought = False
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     if bought:
 
@@ -6677,7 +6672,7 @@ label farm_meet_willow():
 
     show bg inner_sewers at top with Pixellate(2.0, 5)
 
-    $ MC.rand_say(("ev: 都是希露的错!", "ne: 我想帮忙，活该。", "gd: 希露有时候还是很笨拙的..."))
+    $ MC.rand_say(("ev: It's all Sill's damn fault!", "ne: Serves me right for trying to help.", "gd: Sill can be so clumsy sometimes..."))
 
     "After you came down into the sewers, you couldn't find the armlet close by after all."
 
@@ -6728,7 +6723,7 @@ label farm_meet_willow():
     menu:
         "The monster seems poised to attack you. It's time to defend yourself."
 
-        "和怪物战斗":
+        "Fight the monster":
             show sewer_monster as sewer_monster2 at truecenter:
                 xoffset -xres(100) yoffset yres(75)
             play sound s_sheath
@@ -6764,7 +6759,7 @@ label farm_meet_willow():
 
             "Both halves regroup and reform as a whole."
 
-        "念动咒语":
+        "Cast a spell":
 
             play sound s_spell
 
@@ -6794,7 +6789,7 @@ label farm_meet_willow():
 
             $ story_flags["willow fight cast fire"] = True
 
-        "调头就跑":
+        "Run":
 
             you "I'm not about to risk my life for a bloody trinket. I'm out of here!"
 
@@ -7047,10 +7042,10 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
     menu:
         "What do you do?"
 
-        "循迹而行":
+        "Follow the traces":
             you "I wonder where this leads..."
 
-        "无视它们":
+        "Ignore them":
             you "Yeah, no."
 
             return
@@ -7179,7 +7174,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
         play sound s_dodge
         hide willow with easeoutleft
 
-        $ MC.rand_say(["再来一次？你确定？", "哦不，别再来了...", "再来!你到底{i}是{/i}哪门子的怪物猎人?!?"])
+        $ MC.rand_say(["Again? Really?", "Oh no, not again...", "Again! What kind of monster hunter {i}are{/i} you?!?"])
 
     "Effortlessly, the monster lifts Willow in the air, with her head upside down and her skirt overturned. You catch a good view of her panties."
 
@@ -7198,7 +7193,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
     menu:
         "What do you do?"
 
-        "火速支援":
+        "Rush to help":
             $ MC.evil -= 1
 
             you "Damsel in distress! I got this!"
@@ -7450,7 +7445,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
 
                 $ NPC_willow.love += 1
 
-        "吃瓜看戏":
+        "Watch on":
             $ MC.good -= 1
             $ see_ev = True
 
@@ -7458,9 +7453,9 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
                 menu:
                     "Skip event? (monster)"
 
-                    "是":
+                    "Yes":
                         $ see_ev = False
-                    "否":
+                    "No":
                         pass
 
             if see_ev:
@@ -8250,7 +8245,7 @@ label willow_relative():
     you "This will pay for itself... With a body like this, she'll be dragging in a bunch of customers."
 
     # Willow's relative will come back in one month
-    $ calendar.set_alarm(calendar.time + 28, Event("willow_relative_returns"))
+    $ calendar.set_alarm(calendar.time + 28, Event(label="willow_relative_returns"))
 
 return
 
@@ -8269,7 +8264,7 @@ label willow_relative_returns():
     menu:
         you "Should I go talk to her?"
 
-        "和她打招呼":
+        "Greet her":
 
             if not NPC_willow.flags["chat relative"]:
 
@@ -8317,7 +8312,7 @@ label willow_relative_returns():
 
                 relative "It was a lot easier before that stupid war started. The so-called 'Holy war' spread distrust and ill-will between our people."
 
-                if MC.god == "太阳神":
+                if MC.god == "Arios":
                     you "Well, surely you cannot blame Arios the all-mighty for these troubles? A righteous light must be shone on the Pagans..."
 
                     "She shakes a head disapprovingly."
@@ -8332,7 +8327,7 @@ label willow_relative_returns():
 
                     return
 
-                elif MC.god == "莎莉娅":
+                elif MC.god == "Shalia":
 
                     you "Yeah, I get you. Arios and his followers are a nuisance. I prefer the Goddess of the night..."
 
@@ -8506,12 +8501,12 @@ label willow_relative_returns():
                 relative "Goodbye..."
 
 
-        "没空搭讪":
+        "No time":
 
             you "Nah, I'm too busy."
 
     # Willow's relative will come back in one month (unless the MC is an Arios-worshipper: She doesn't like that.)
-    $ calendar.set_alarm(calendar.time + 28, Event("willow_relative_returns"))
+    $ calendar.set_alarm(calendar.time + 28, Event(label="willow_relative_returns"))
 
     return
 
@@ -8733,14 +8728,14 @@ label farm_gizel_introduction():
     gizel "On the surface, human females seem completely useless, much more fragile than beast people, much less sensitive than elves..."
 
     gizel smirk "But after extensive research, I have become convinced that there is more to human females than meets the dick.
-                 In fact, I believe their sexual compatibility is highest among all the races..."
+                In fact, I believe their sexual compatibility is highest among all the races..."
 
     gizel normal "They would just need proper training."
 
     you "Training?"
 
     gizel "That's right. In particular, I think they should be exposed to various creatures, both natural and supernatural. This would go a long way towards
-           unlocking their potential."
+            unlocking their potential."
 
     you "And you're telling me all this, because...?"
 
@@ -8785,7 +8780,7 @@ label farm_gizel_introduction():
     you "B... Bred?"
 
     gizel smirk "That's right. The mages there are truly evil... I love it. They raise stallions as sex slaves from birth, breeding them selectively for their
-                 unnaturally large cocks."
+                unnaturally large cocks."
 
     gizel "Using spells and coercion, they help them grow into hulking sex beasts by the time they reach adulthood... Ready to serve their masters blindly."
 
@@ -8869,10 +8864,10 @@ label farm_first_visit():
     menu:
         gizel "I guess I should explain to you how things work around here, right?"
 
-        "请告诉我":
+        "Sure":
             pass
 
-        "没有必要":
+        "No need":
             gizel "All right then. Call me if you need me."
             "Click on Gizel's portrait if you need help with the farm."
             return
@@ -8915,8 +8910,7 @@ label farm_first_visit():
 
     gizel "Facilities are where my minions dwell. Build or improve facilities to improve the number and variety of minions the farm can hold."
 
-    gizel "Finally, I should note that there is a limit to how much we can grow the farm without attracting too much attention. Things will get better once
-           you obtain a higher brothel license, which will give you more influence."
+    gizel "Finally, I should note that there is a limit to how much we can grow the farm without attracting too much attention. Things will get better once you obtain a higher brothel license, which will give you more influence."
 
     "Click on Gizel's portrait if you need more help with the farm."
 
@@ -8935,9 +8929,9 @@ label farm_first_beast():
         menu:
             "Skip event? (bestiality)"
 
-            "是":
+            "Yes":
                 return
-            "否":
+            "No":
                 pass
 
     play sound s_rooster
@@ -9047,13 +9041,13 @@ label farm_first_beast():
     you "Oh..."
 
     menu:
-        "对不起，夫人，还没自我介绍呢":
+        "I'm sorry, my lady, we haven't been introduced":
             pass
 
-        "别介意，我刚才在打盹。":
+        "Don't mind me. I was just taking a nap.":
             pass
 
-        "嘿,宝贝。想不想和我到床上打滚呢?":
+        "Hey, babe. Care to join me for a roll in the hay?":
             pass
 
     you "Rrr..."
@@ -9077,11 +9071,11 @@ label farm_first_beast():
     you "(Pet?)"
 
     menu:
-        "你一定是弄错了...":
+        "You must be mistaken...":
             you "Ribbit..." with vpunch
-        "我可不是畜生！你瞎了吗?":
+        "I'm not a pet! Are you blind?":
             you "Ribbit!!! Ribbit?" with vpunch
-        "你管谁叫动物呢，小丫头?":
+        "Who are you calling a pet, wench?":
             you "Ribbibbibibit?" with vpunch
 
     "Come to think of it, the sounds you are making sound awfully animalistic."
@@ -9138,16 +9132,16 @@ label farm_first_beast():
     scene black with fade
     milkmaid "EEEEK!" with vpunch
 
-    scene bg gizel_toad1 with fade
+    scene bg gizel_toad1 with dissolve
 
     "Your mind blanks for a second. When you come back to your senses, you are laying on top of the milk girl, crushing her under your weight."
 
     menu:
-        "哦，对不起!":
+        "Oh, sorry!":
             you "Ri, ribbit!"
-        "我不是故意的...":
+        "I didn't mean it...":
             you "Ribbbit..."
-        "呱~呱~呱!":
+        "RIBBIT!":
             you "I'm awfully sorry..."
             play sound s_scream
             milkmaid "It... It spoke!" with vpunch
@@ -9391,9 +9385,9 @@ label farm_first_monster():
         menu:
             "Skip event? (monster)"
 
-            "是":
+            "Yes":
                 return
-            "否":
+            "No":
                 pass
 
     play sound s_rooster
@@ -9454,8 +9448,8 @@ label farm_first_monster():
     gizel "No, not until I get a sense of its weaknesses and I am sure I can control it. Believe me, I know these things..."
 
     menu:
-        "同意她的观点":
-            $ renpy.block_rollback()
+        "Agree with her":
+            $ norollback()
             you "Well... I guess it's better to be safe than sorry."
 
             gizel angry "Yeah, yeah. Spare me the wise guy bullshit."
@@ -9491,8 +9485,8 @@ label farm_first_monster():
 
             return
 
-        "不同意她的观点":
-            $ renpy.block_rollback()
+        "Disagree with her":
+            $ norollback()
             you "Come on, I thought you were a powerful witch and all! The wicked witch of the North or some such nonsense."
 
             gizel angry "Shut up!"
@@ -9517,7 +9511,7 @@ label farm_first_monster():
 
             "Blind with fury, Gizel rushes to strangle you."
 
-            if MC.playerclass == "战士":
+            if MC.playerclass == "Warrior":
                 "You take a step aside, easily dodging her attack."
                 gizel "Hey!"
                 "Flipping around, Gizel gets ready to leap at your throat."
@@ -9532,7 +9526,7 @@ label farm_first_monster():
 
                 gizel upset "OUCH!" with vpunch
 
-            elif MC.playerclass == "法师":
+            elif MC.playerclass == "Wizard":
                 "Reaching two fingers to her forehead, you cast a calming spell before she can reach you."
 
                 "She seems to lose all aggressivity and stumbles on her knees."
@@ -9557,7 +9551,7 @@ label farm_first_monster():
 
                 gizel upset "OUCH!" with vpunch
 
-            elif MC.playerclass == "奸商":
+            elif MC.playerclass == "Trader":
 
                 "You yell, pointing at something behind her."
 
@@ -9581,8 +9575,8 @@ label farm_first_monster():
 
                 gizel "Eeek!" with vpunch
 
-        "把她推下去":
-            $ renpy.block_rollback()
+        "Push her down the hole":
+            $ norollback()
             $ MC.evil += 1
             you "Oh my... What's that?"
 
@@ -9752,8 +9746,8 @@ label farm_first_monster():
     "Gizel cannot even stand up and walk. You'll have to help her up."
 
     menu:
-        "帮助她":
-            $ renpy.block_rollback()
+        "Help her":
+            $ norollback()
 
             "Carefully going around the resting monster, you reach Gizel and help her up."
 
@@ -9802,8 +9796,8 @@ label farm_first_monster():
 
             scene black with fade
 
-        "甩下她":
-            $ renpy.block_rollback()
+        "Leave her":
+            $ norollback()
             $ MC.evil += 1
 
             you "What's this? I thought I heard something."
@@ -9857,10 +9851,10 @@ label farm_second_monster():
         menu:
             "Skip event? (monster)"
 
-            "是":
+            "Yes":
                 hide bg with dissolve
                 return
-            "否":
+            "No":
                 pass
 
     you "Hi, Gizel! Gizel? Where are you?"
@@ -10017,9 +10011,9 @@ label farm_first_machine():
         menu:
             "Skip event? (machine)"
 
-            "是":
+            "Yes":
                 return
-            "否":
+            "No":
                 pass
 
     play sound s_rooster
@@ -10559,8 +10553,7 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nIt's been a while since you last visited me. I'm disappointed. After all, you and I are best friends, aren't we?\nDon't {b}disappoint{/b} me. That makes me angry.\nWhen I'm angry, I break things. And people.\nPlease visit me soon, I have, uh, something urgent to tell you.\n\nCome! It will be fun!",
-                          signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}[emo_heart]")
+        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nIt's been a while since you last visited me. I'm disappointed. After all, you and I are best friends, aren't we?\nDon't {b}disappoint{/b} me. That makes me angry.\nWhen I'm angry, I break things. And people.\nPlease visit me soon, I have, uh, something urgent to tell you.\n\nCome! It will be fun!", signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}[emo_heart]")
 
         you "Oh... Satella is summoning me to Shalia's temple... It must be important."
 
@@ -10589,8 +10582,7 @@ label satella_letter(): # Occurs some time after Chapter 1 is complete. Then occ
 
         play sound s_dress
 
-        call screen letter(header = "紧急事态", message = "亲爱的 " + MC.name + ",\n\n我需要马上见到你。事实上，你昨天就该来我这了。\n你昨天跑去哪鬼混了???\n不要背信弃义，叛徒往往都没有好下场。\n立刻来公会见我。",
-                          signature = "你的秘密情人 Satella {font=[style.default.font]}{size=-18}[emo_heart]")
+        call screen letter(header = "Urgent invitation", message = "Dear " + MC.name + ",\n\nI have to see you urgently. In fact, you should have been here yesterday.\nWhere WERE you yesterday???\nDon't be a bad friend. Bad friends die young.\nCome visit me.", signature = "Night Mistress Satella {font=[style.default.font]}{size=-18}[emo_heart]")
 
         you "I've got a bad feeling about this."
 
@@ -11053,7 +11045,7 @@ label satella_first_visit(): # Happens when visiting the thieves guild after the
     $ story_remove_event("satella_first_visit")
     $ calendar.set_alarm(calendar.time+14, StoryEvent(label = "satella_letter", type = "morning"))
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia2", type = "morning"))
 
     return
@@ -11317,7 +11309,7 @@ label satella_game(game_type="the guessing game"):
             menu:
                 extend ""
 
-                "来玩两把吧":
+                "Let's play":
                     satella "Very well, I shall roll the dice... Hmmpf!"
 
                     play sound s_dice
@@ -11329,11 +11321,11 @@ label satella_game(game_type="the guessing game"):
 
                     satella "Okay! We've got a number. Remember, you've got three questions!"
 
-                "如果我赢了会我能得到什么?":
+                "What happens if I win?":
                     satella "Well... I have some junk items in the back. I can let you have one of them, if you guess right."
                     jump satella_game_guess_menu
 
-                "如果我输了会发生什么事?":
+                "What happens if I lose?":
                     play sound s_evil_laugh
                     satella "Bwahaha!!! I'll fry your guts, just like all the other losers! How do you think I got all those items in the first place?"
                     you "*gulp*"
@@ -11343,7 +11335,7 @@ label satella_game(game_type="the guessing game"):
 
                 label satella_game_guess_loop():
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     if tries == 1:
                         satella "This is your first question. Go ahead."
@@ -11357,7 +11349,7 @@ label satella_game(game_type="the guessing game"):
                     menu:
                         extend "\n{i}[answers]{/i}"
 
-                        "数字大于...":
+                        "Is the total above...":
                             $ r = renpy.input("Is the number above...", default="7")
 
                             python:
@@ -11383,7 +11375,7 @@ label satella_game(game_type="the guessing game"):
                                 $ answers += "\nThe total is below " + str(r+1) + ". "
 
 
-                        "数字小于...":
+                        "Is the total below...":
                             $ r = renpy.input("Is the number below...", default="7")
 
                             python:
@@ -11408,8 +11400,8 @@ label satella_game(game_type="the guessing game"):
 
                                 $ answers += "\nThe total is above " + str(r-1) + ". "
 
-                        "你掷出的点数是...":
-                            $ r = menu([("点数是...", None), ("一", 1), ("二", 2), ("三", 3), ("四", 4), ("五", 5), ("六", 6)])
+                        "Did you roll a...":
+                            $ r = menu([("Did you roll a...", None), ("One", 1), ("Two", 2), ("Three", 3), ("Four", 4), ("Five", 5), ("Six", 6)])
 
                             if d1 == r or d2 == r:
                                 satella "Yes!"
@@ -11421,7 +11413,7 @@ label satella_game(game_type="the guessing game"):
 
                                 $ answers += "\nSatella didn't roll a " + str(r) + ". "
 
-                        "两个骰子点数相同吗？":
+                        "Did you roll twice the same number?":
 
                             if d1 == d2:
                                 satella "I did! Aw, you're good!"
@@ -11430,7 +11422,7 @@ label satella_game(game_type="the guessing game"):
                                 satella "Haha, no!"
                                 $ answers += "\nSatella rolled different numbers. "
 
-                        "骰子点数之和是奇数吗？":
+                        "Is the total an odd number?":
 
                             if (d1+d2) % 2 != 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
@@ -11440,7 +11432,7 @@ label satella_game(game_type="the guessing game"):
                                 satella "Wrong... [emo_heart]"
                                 $ answers += "\nSatella rolled an even number. "
 
-                        "骰子点数之和是偶数吗？":
+                        "Is the total an even number?":
 
                             if (d1+d2) % 2 == 0:
                                 satella "That's right! Aw, I hope you didn't peek..."
@@ -11557,16 +11549,16 @@ label satella_game(game_type="the guessing game"):
             menu:
                 extend ""
 
-                "布!":
+                "Paper!":
                     $ r = "paper"
 
-                "剪刀!":
+                "Scissor!":
                     $ r = "scissor"
 
-                "石头!":
+                "Rock!":
                     $ r = "rock"
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             if r == her_choice:
                 $ you(r.capitalize() + "!")
@@ -11685,16 +11677,16 @@ label satella_thunderbolt():
 
     $ reaction = False
 
-    if MC.get_items(name="避雷针") or MC.get_spirit() > 5:
+    if MC.get_items(name="Lightning Rod") or MC.get_spirit() > 5:
         menu:
-            "使用避雷针" if MC.get_items(name="避雷针"):
+            "Use the lightning rod" if MC.get_items(name="Lightning Rod"):
                 you "I knew this day would come... {i}Lightning rod{/i}! Lend me your power!"
 
                 "Holding the lightning rod by the rubbery part, you brandish it as Satella completes her casting."
 
                 $ reaction = True
 
-            "使用反击咒语" if MC.get_spirit() > 5:
+            "Use a counterspell" if MC.get_spirit() > 5:
                 $ r = MC.get_spirit() + dice(6)
 
                 if r >= 10:
@@ -11711,10 +11703,10 @@ label satella_thunderbolt():
 
                     "Unfortunately, you forgot -again- that metal is conductive to electricity. You really shouldn't have skipped all those physics classes."
 
-            "坐以待毙":
+            "Do nothing":
                 pass
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     with flash
     play sound s_thunder
@@ -11887,7 +11879,7 @@ label satella_won():
         else:
             $ NPC_satella.love = 25
 
-            if MC.god == "莎莉娅" and not story_flags["shalia3"]:
+            if MC.god == "Shalia" and not story_flags["shalia3"]:
                 $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia3", type = "morning"))
 
             you "Come on, it's just a little massage... Let yourself go..."
@@ -12066,7 +12058,7 @@ label satella_lost():
     if NPC_satella.love < 25:
         $ NPC_satella.love = 25
 
-        if MC.god == "莎莉娅" and not story_flags["shalia3"]:
+        if MC.god == "Shalia" and not story_flags["shalia3"]:
             $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia3", type = "morning"))
 
         "You feel like you have come a bit too far already. You leave before Satella has a chance to recover and fry your balls."
@@ -12181,7 +12173,7 @@ label satella_virgin_sex():
 
     "You have earned prestige."
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia4", type = "morning"))
 
     $ NPC_satella.unlock_trainer()
@@ -12283,7 +12275,7 @@ label satella_sex():
 
     "You have earned prestige."
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         $ calendar.set_alarm(calendar.time+3, StoryEvent(label = "shalia_visit", type = "morning"))
 
     return
@@ -12348,7 +12340,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     you "Shalia!" with vpunch
 
-    $ shalia_name = "莎莉娅"
+    $ shalia_name = "Shalia"
 
     "She is the Goddess herself. You are awestruck. You try to bow or take a knee, only to fail embarrassingly, as you are just a disembodied spirit floating in space."
 
@@ -12547,7 +12539,7 @@ label shalia3(): # Happens in the morning the day after Satella's love reaches 2
 
     you "*gasp* A dragon?"
 
-    if MC.playerclass == "奸商":
+    if MC.playerclass == "Trader":
         shalia "Yes, a dragon. Not a common worm like your pet Drogon, no offense, but one of the old ones. One of the oldest. Axiom was his name."
     else:
         shalia "Yes, one of the oldest, born before the continents spread apart. Axiom was his name."
@@ -12555,14 +12547,14 @@ label shalia3(): # Happens in the morning the day after Satella's love reaches 2
     menu:
         extend ""
 
-        "史黛拉是龙的后裔?":
+        "Satella was born from a dragon?":
             you "A human, born from a dragon?"
 
             shalia "Not a human, not quite... But the old dragons were shapeshifters. There's a lot more to that story."
 
             shalia "Suffice to say that Satella grew up without a mother."
 
-        "等等，你上了一头龙?":
+        "Wait, did you fuck a dragon?":
             you "Wait a minute... Satella is your daughter..."
 
             you "You... You had sex with a dragon?!?" with vpunch
@@ -12991,11 +12983,11 @@ label shalia_visit(): # Happens in the morning a week after Satella's love reach
 
     "You look around you in complete amazement. You are standing there with your own mortal body, breathing the air and stomping the grass of another dimension."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         you "This is unnatural... I must be dreaming..."
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
         you "Fascinating... I only read about that place in books..."
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
         you "Wow... No one is going to believe {i}that{/i} tale."
 
     play sound s_spell
@@ -13548,7 +13540,7 @@ label kosmo_returns2(): # Happens every 7-9 days (yes, Kosmo IS annoying)
 
             kosmo "This one tried to take my life, can you believe it? But my security is top notch. I have 20 guards in my bedroom alone."
 
-            $ MC.rand_say(("是的，我确定你喜欢在20个男人面前打飞机...", "酷。当你在你儿子的鸡巴上跳来跳去的时候，这应该能给你带来你需要的观众。"))
+            $ MC.rand_say(("Yes, I'm sure you love to jerk off in front of 20 dudes...", "Cool. That should give you the audience you need when you're bouncing on your boy's dick."))
 
             kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
 
@@ -14475,17 +14467,17 @@ label visit_bank():
         menu:
             banker "Would you like to repay your loan early?"
 
-            "是的，我想现在就结清[MC.loan.amount]金币的债务。":
+            "Yes. Repay [MC.loan.amount] gold right now and settle your account":
                 if MC.repay_in_full():
                     play sound s_gold
                     "You have repaid your loan in full. You are now free to take a new loan."
 
                 jump visit_bank
 
-            "不，我要继续贷款，继续支付利息":
+            "No. Keep your loan and keep paying interest":
                 pass
 
-            "不，我宁愿和你到床上谈业务" if NPC_banker.flags["sex"]:
+            "No. I'd rather get laid" if NPC_banker.flags["sex"]:
 
                 banker "Hungry for more, are you? I must say I was looking forward to it, too. Give me a second."
 
@@ -14760,7 +14752,7 @@ label loan_repaid():
     menu:
         extend ""
 
-        "TJB会员卡是什么?":
+        "What's a TJB card?":
             you "A TJB card? What is that?"
 
             banker "It's a customer loyalty card. As soon as you complete 5 loans with our bank, you will get a special service that we only offer our best customers at TJB."
@@ -14773,7 +14765,7 @@ label loan_repaid():
 
             you "T-J-B... TJ... Nope. I really don't see what this could stand for."
 
-        "太棒了!":
+        "Nice!":
             you "Yay! Being in debt is fun!"
 
             banker "That's the spirit."
@@ -14842,11 +14834,11 @@ label banker_special1():
 
     banker "It's strong and salty... My favorite! [emo_heart]"
 
-    "Before long, she starts sucking on your cock, all the while massaging your dick energtically with her tits."
+    "Before long, she starts sucking on your cock, all the while massaging your dick energetically with her tits."
 
     banker "Ngggh... It'sh sho good..."
 
-    "Her technique is amazing, reminding you that forest people are reknowned for their sexual prowess."
+    "Her technique is amazing, reminding you that forest people are renowned for their sexual prowess."
 
     banker "I can feel it grow bigger in my mouth... It'sh burning hot..."
 
@@ -15013,6 +15005,7 @@ label banker_special2():
 
     "You have spent all of your, err, capital, and actions, for the day."
     $ MC.interactions = 0
+    $ unlock_achievement("h banker")
 
     if not NPC_banker.flags["sex"]:
         "You can now have sex with the banker."
@@ -15036,6 +15029,9 @@ label game_over_bank():
     sill sad "Please! Be merciful!"
 
     banker "No way! You know the rules! The bank always wins... *frown*"
+
+    if debug_mode:
+        return
 
     call game_over("Banker") from _call_game_over
 
@@ -15062,7 +15058,7 @@ label game_over(antagonist):
 
     play music m_theme
 
-    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="DejaVuSans.ttf")
+    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="MATURASC.TTF")
 
     show expression title #Note: Find a way to make the zoom slower and the title cooler
     with zoomin
@@ -15245,7 +15241,7 @@ label treasure_girl_sex(who, pic):
 
         "{color=[col]}Girl{/color}" "My p-pussy... Feels strange... Ahaa..."
 
-        "The girl is looking at her obscene reflexion in the mirror as you keep grinding your dick between her pussy lips. Her pussy is getting really wet."
+        "The girl is looking at her obscene reflection in the mirror as you keep grinding your dick between her pussy lips. Her pussy is getting really wet."
 
         play sound s_surprise
 
@@ -15348,7 +15344,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "以躲避冬日刺骨的寒风", "spring" : "以重温春日的愉悦心情", "summer" : "以躲避夏天的炎炎烈日", "fall" : ", 以躲开聒噪扰人的乌鸦"})
+    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 
@@ -15389,7 +15385,7 @@ label meet_carpenter():
 
     carpenter "He made me saw planks all day, and for what? It turns out he's making caskets for the prison guard. For the hangings!"
 
-    $ MC.say(["gd: 那太可怕了。", "ne: 那太不幸了，但工作就是工作，不是吗?", "ev: 那又怎么样呢。你有什么不满吗?"])
+    $ MC.say(["gd: That's terrible.", "ne: Well, that's unfortunate, but a job is a job, isn't it?", "ev: So what. What's your problem with that?"])
 
     carpenter "I won't be part of this! It's bad enough that the guard is harassing everyone and that justice is in the hands of corrupt puppets..."
 
@@ -15874,7 +15870,7 @@ label resource_exchange_intro():
 
     bast "Yes? Are you a trader? This is break time, come back in one hour..."
 
-    if MC.playerclass == "奸商":
+    if MC.playerclass == "Trader":
         "She goes back to her paperwork, thinking you are one more merchant to be dealt with later."
 
         you "Sorry to interrupt, really. I had a few questions."
@@ -15895,7 +15891,7 @@ label resource_exchange_menu():
     menu:
         bast "What do you want?"
 
-        "你是什么人?":
+        "Who are you?":
             you "Who are you?"
 
             bast "I'm Bast. I'm the quartermaster here. Or, quartermistress. Whichever floats your boat."
@@ -15940,7 +15936,7 @@ label resource_exchange_menu():
 
             bast "Anyway, you didn't come here only to chat?"
 
-        "这里是什么地方?":
+        "What is this place?":
 
             bast "This is the resource exchange! The biggest one of its kind in Zan, and maybe the world. I wouldn't know about that."
 
@@ -15968,7 +15964,7 @@ label resource_exchange_menu():
 
             bast "Is that all?"
 
-        "我可以在这里和别人交易吗?" if not story_flags["builder license"]:
+        "Can I trade here?" if not story_flags["builder license"]:
 
             you "I want to trade resources here. Can I?"
 
@@ -15999,7 +15995,7 @@ label resource_exchange_menu():
             you "I see..."
 
             if MC.has_resource("wood", 5) and MC.has_resource("leather", 5) and MC.has_resource("dye", 5):
-                if renpy.call_screen("yes_no", "想获得初级建筑师执照吗，只要捐赠5块木材,5瓶染料和5张皮革就可以了。"):
+                if renpy.call_screen("yes_no", "Do you want to get a basic builder license for 5 wood, 5 leather and 5 dye?"):
                     $ MC.resources["wood"] -= 5
                     $ MC.resources["leather"] -= 5
                     $ MC.resources["dye"] -= 5
@@ -16013,7 +16009,7 @@ label resource_exchange_menu():
             else:
                 bast "It doesn't seem like you have those resources with you now. Come back later, maybe?"
 
-        "没事了":
+        "Never mind":
             you "Ok, I'll leave you to... whatever it is you're doing."
 
             bast "Yeah. See ya."
@@ -16050,7 +16046,7 @@ label new_builder_license():
     menu:
         bast "Do you want an upgraded builder license?"
 
-        "告诉我详细信息":
+        "Tell me more":
             you "Upgrade my license? What for?"
 
             if story_flags["builder license"] == 2:
@@ -16064,7 +16060,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "想获得高级建筑师执照吗，只要捐赠5块大理石,5匹丝绸和5单位矿石就可以了。"):
+                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16087,7 +16083,7 @@ label new_builder_license():
                 bast "Yep. But diamond traders make the most money. Consider this an investment."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "想获得特级建筑师执照吗，只要捐赠2个钻石就可以了。"):
+                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16099,7 +16095,7 @@ label new_builder_license():
 
                         bast "You can now trade diamonds at the resource exchange."
 
-        "我确实很想":
+        "I do":
             you "I want to upgrade my license."
 
             if story_flags["builder license"] == 2:
@@ -16107,7 +16103,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "想获得高级建筑师执照吗，只要捐赠5块大理石,5匹丝绸和5单位矿石就可以了。"):
+                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16124,7 +16120,7 @@ label new_builder_license():
                 bast "It will cost you 2 diamonds. I don't wanna know how you get them..."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "想获得特级建筑师执照吗，只要捐赠2个钻石就可以了。"):
+                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16137,7 +16133,7 @@ label new_builder_license():
                         bast "You can now trade diamonds at the resource exchange."
 
 
-        "不必了，我只是来做交易的":
+        "No, I just want to trade":
             pass
 
     return
@@ -16179,8 +16175,8 @@ label trade_10_resources():
     bast "Good to see you are using your license."
 
     menu:
-        "赞美她":
-            $ renpy.block_rollback()
+        "Compliment her":
+            $ norollback()
 
             you "Well, to be honest, I mostly come here to see you..."
 
@@ -16196,8 +16192,8 @@ label trade_10_resources():
 
             $ NPC_bast.love -= 1
 
-        "问一些私人话题":
-            $ renpy.block_rollback()
+        "Ask a personal question":
+            $ norollback()
 
             you "You said you were a Holy Builder, correct?"
 
@@ -16213,8 +16209,8 @@ label trade_10_resources():
 
             $ NPC_bast.love += 1
 
-        "请求优惠":
-            $ renpy.block_rollback()
+        "Ask for a rebate":
+            $ norollback()
 
             you "So, I've been a good customer, eh..."
 
@@ -16251,8 +16247,8 @@ label trade_25_resources():
     you "I think I deserve a reward."
 
     menu:
-        "让她给你一个香吻":
-            $ renpy.block_rollback()
+        "Ask for a kiss":
+            $ norollback()
 
             you "Why not give me a big kiss to celebrate our friendship? Come to daddy..."
 
@@ -16262,8 +16258,8 @@ label trade_25_resources():
 
             $ NPC_bast.love -= 1
 
-        "让她说说她的过往":
-            $ renpy.block_rollback()
+        "Ask for a story":
+            $ norollback()
 
             you "Look, I know you don't like to talk about your past..."
 
@@ -16305,8 +16301,8 @@ label trade_25_resources():
 
             $ NPC_bast.love += 2
 
-        "获得一些免费物资":
-            $ renpy.block_rollback()
+        "Ask for free stuff":
+            $ norollback()
 
             you "As I am such a good customer, perhaps I should be rewarded?"
 
@@ -16334,8 +16330,8 @@ label trade_50_resources:
 
     menu:
 
-        "约她出去":
-            $ renpy.block_rollback()
+        "Ask her on a date":
+            $ norollback()
 
             you "I think we should celebrate. Why don't you take some time off and join me for drinks, or dinner?"
 
@@ -16469,8 +16465,8 @@ label trade_50_resources:
                 $ NPC_bast.love += 1
 
 
-        "摸摸她的胸部":
-            $ renpy.block_rollback()
+        "Ask to touch her boobs":
+            $ norollback()
 
             you "As my reward, I choose... Fondling your juicy boobies!"
 
@@ -16504,8 +16500,8 @@ label trade_50_resources:
 
             $ NPC_bast.love -= 1
 
-        "免费的高级物资":
-            $ renpy.block_rollback()
+        "Ask for advanced resources":
+            $ norollback()
 
             you "I'd like some advanced resources as a reward. I'm sure you can spare some."
 
@@ -16582,8 +16578,8 @@ label bast_informant():
     menu:
         "What do you do?"
 
-        "接受提议(1000 gold)":
-            $ renpy.block_rollback()
+        "Accept the offer (1000 gold)":
+            $ norollback()
             $ MC.gold -= 1000
 
             play sound s_gold
@@ -16613,8 +16609,8 @@ label bast_informant():
             else:
                 you "Dirty dog. I should have cut his arm off."
 
-        "拒绝请求":
-            $ renpy.block_rollback()
+        "Refuse the offer":
+            $ norollback()
 
             you "Whatever information you think you have, I won't pay you."
 
@@ -16635,8 +16631,8 @@ label bast_informant():
 
             return
 
-        "杀人灭口":
-            $ renpy.block_rollback()
+        "Kill him":
+            $ norollback()
             $ MC.evil += 3
 
             you "All right then."
@@ -16674,8 +16670,7 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "情  书 ", message = "亲爱的比尔\n\n你离开后我就茶不思饭不想。我在这个世界上是如此孤独。你给我留下了许多难题，你曾经爱过我吗?我会因为你的所作所为而受到惩罚，但我欣然接受，因为我爱你。我只想要你给我个提示。如果有必要，我可以违反合同。我还可以帮你偷东西。不要离开我，我的爱人。我愿意为你做任何事。",
-                          signature = "爱你的,巴斯特{font=[style.default.font]}{size=-18}")
+    call screen letter(header = "Love letter", message = "Dear Bill,\n\nI haven't slept or eaten since you've left me. I am so alone in this world.\nYou've left me with so many questions. Did you ever love me?\nI will be punished for what you did, but it's punishment I will gladly accept, because I love you. All I want is for you to give me a sign. I'll betray the Order if I have to. I'll steal for you if I must.\n\nDon't leave me, my love. I will do anything.", signature = "Yours forever, Bastia {font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
 
@@ -16739,8 +16734,8 @@ label return_to_bast():
     menu:
         extend ""
 
-        "不要求报酬":
-            $ renpy.block_rollback()
+        "Nothing":
+            $ norollback()
             $ MC.good += 1
 
             you "You misunderstood me. I will give it back to you."
@@ -16767,7 +16762,7 @@ label return_to_bast():
 
             $ NPC_bast.love += 2
 
-        "我想要1000金币":
+        "I want 1000 gold":
             $ MC.neutral += 1
 
             you "Well, considering the guy I got it from wanted 1000 gold for it, it's only fair that you compensate me I think..."
@@ -16787,8 +16782,8 @@ label return_to_bast():
 
             $ NPC_bast.love += 1
 
-        "我想要2000金币":
-            $ renpy.block_rollback()
+        "I want 2000 gold":
+            $ norollback()
             $ MC.good -= 1
 
             you "I'm sure this letter is worth a lot to you... Am I right?"
@@ -16816,8 +16811,8 @@ label return_to_bast():
 
             $ NPC_bast.love -= 2
 
-        "我想要点别的奖励...":
-            $ renpy.block_rollback()
+        "I want something else...":
+            $ norollback()
             $ MC.evil += 1
 
             you "You seem to want this letter very badly... Am I right?"
@@ -16898,8 +16893,8 @@ label return_to_bast():
     menu:
         "What do you tell her?"
 
-        "他还活着(坦白)" if not NPC_bast.flags["killed_bast_ex"]:
-            $ renpy.block_rollback()
+        "He's alive (truth)" if not NPC_bast.flags["killed_bast_ex"]:
+            $ norollback()
 
             you "He's alive. He's not... doing so well. It is best you don't seek him out."
 
@@ -16907,8 +16902,8 @@ label return_to_bast():
 
             "She says nothing, but you wonder if telling her was the right choice."
 
-        "他还活着(撒谎)" if NPC_bast.flags["killed_bast_ex"]:
-            $ renpy.block_rollback()
+        "He's alive (lie)" if NPC_bast.flags["killed_bast_ex"]:
+            $ norollback()
 
             you "He's uh, just fine and dandy, you know! I think he went... On an adventure! To a far, far away land, upstate..."
 
@@ -16920,8 +16915,8 @@ label return_to_bast():
 
             $ NPC_bast.love -= 1
 
-        "他已经死了 (坦白)" if NPC_bast.flags["killed_bast_ex"]:
-            $ renpy.block_rollback()
+        "He's dead (truth)" if NPC_bast.flags["killed_bast_ex"]:
+            $ norollback()
 
             you "He's dead."
 
@@ -16933,8 +16928,8 @@ label return_to_bast():
 
             bast "I suppose it was his fate... Maybe it means I can finally move on..."
 
-        "他已经死了 (撒谎)" if not NPC_bast.flags["killed_bast_ex"]:
-            $ renpy.block_rollback()
+        "He's dead (lie)" if not NPC_bast.flags["killed_bast_ex"]:
+            $ norollback()
 
             you "He's dead. Definitely. Yup."
 
@@ -16948,8 +16943,8 @@ label return_to_bast():
 
             "You wonder if lying was the right course, but you hope it can give her closure."
 
-        "我也不知道 (半真半假)":
-            $ renpy.block_rollback()
+        "I don't know (half-lie)":
+            $ norollback()
 
             you "Well... I don't know."
 
@@ -17044,13 +17039,13 @@ label trade_100_resources():
         menu:
             you "Well..."
 
-            "当然!":
+            "Of course!":
                 you "Of course!"
 
-            "那还用说!":
+            "You bet!":
                 you "You bet!"
 
-            "太棒了!":
+            "Fuck yeah!":
                 you "FUCK YEAH!!!"
 
         play sound s_dress
@@ -17595,7 +17590,7 @@ label meet_gurigura():
 
     gurigura "Here's a free sample! Enjoy!"
 
-    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg=" 古莉古拉从盒子里随便拿出一个%s给你。", use_article=False) from _call_receive_item_9
+    call receive_item(get_rand_item(item_type=IT_Toy, quality="common"), msg="Gurigura gives you a random %s from the open box.", use_article=False) from _call_receive_item_9
 
     you "(She's not going to make much money if she gives everything away for free...)"
 
@@ -17766,7 +17761,7 @@ label meet_ramias():
 
         you " Your wares, of course, haha..."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         ramias "You look familiar... And you have the build of a soldier. Have I met you somewhere in battle?"
 
@@ -17888,7 +17883,7 @@ label meet_riche():
 
     riche "But I was tired of being sheltered, so after I graduated, I decided to join the war effort."
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
         you "Karkyr? What a coincidence! I was studying there too. I must have been a few years your senior..."
 
         you "I was also top of my class, what a coincidence... I mean, definitely in the top 50, at least..."
@@ -17927,7 +17922,7 @@ label meet_riche():
     riche "But what I saw during the war still haunts me. I want to be a force for good."
 
     menu:
-        "你真是心地善良":
+        "You're nice":
             you "It's nice of you to place others before yourself."
 
             riche "Well... It's the least I can do..."
@@ -17938,7 +17933,7 @@ label meet_riche():
 
             $ MC.good += 1
 
-        "你真是蠢到家了":
+        "You're stupid":
             you "It's stupid. In this world, trying to alleviate other people's suffering is a fool's errand. You're better off thinking about yourself."
 
             "She blushes."
@@ -17949,7 +17944,7 @@ label meet_riche():
 
             $ MC.evil += 1
 
-        "你真是太性感了":
+        "You're hot":
             you "Baby, just laying eyes on your sweet body is enough to nurse a dying man back to health..."
 
             "She blushes bright red and is at a loss for words."
@@ -18130,11 +18125,12 @@ label meet_katryn():
 
     call receive_item(get_rand_item(item_type=IT_Necklace), "Katryn gave you a slightly burnt %s.", use_article=False) from _call_receive_item_12
 
-    you "Why did you set up your operation in the Great Library, of all places?"
+    you "Why did you set up your operation in the university's library, of all places?"
 
     katryn "This place has got all the books I need to complete my experiments! It's a lot more efficient this way."
 
-    katryn "Until someone invents a way to share knowledge over long distance using some kind of personal terminals that can compute data or something, this has to be the best way."
+    katryn "Until someone invents a way to share knowledge over long distance using some kind of personal terminals that can compute data or something,
+            this has to be the best way."
 
     katryn "But everyone knows this is just a pipe dream: the second you'd invent that, it would be overloaded with porn and penis enlargement ads...."
 
@@ -18142,12 +18138,12 @@ label meet_katryn():
 
     katryn "I have a lot of work here, so I'd appreciate it if you scrammed. Come back when the assembly line is working, and I may sell you more trinkets."
 
-    $ library.action = True
+    $ magic_university.action = True
     $ unlocked_shops.append(NPC_katryn)
 
     scene black with fade
 
-    "You may now buy trinkets from Katryn at the {b}Library{/b}."
+    "You may now buy trinkets from Katryn at the {b}Magic university{/b}."
     $ unlock_achievement("merchant katryn")
 
     return
@@ -18193,7 +18189,7 @@ label meet_giftgirl():
 
     giftgirl "Here, keep this. It's on the house. My gift to a new customer!"
 
-    call receive_item(get_rand_item(item_type=IT_Gift), "女孩送了你一个免费的%s。", use_article=False) from _call_receive_item_13
+    call receive_item(get_rand_item(item_type=IT_Gift), "The woman gave you a free %s.", use_article=False) from _call_receive_item_13
 
     $ exotic_emporium.action = True
     $ unlocked_shops.append(NPC_giftgirl)
@@ -18217,7 +18213,7 @@ label meet_twins():
 
     "Incessant flows of pilgrims come up and down the road, some of them walking the whole way on their knees and elbows, other walking backwards or blindfolded as a sign of worship. {nw}"
 
-    if MC.god == "太阳神":
+    if MC.god == "Arios":
         extend "Although you empathize with their fervor, it is no less annoying to have to dodge clumsy pilgrims every step of the way."
     else:
         extend "You are annoyed at the Arios fanatics that threaten to bump into you every step of the way."
@@ -18367,7 +18363,7 @@ label ninja_guest1: # Warrior event
 
     hokoma_warrior "I see you're wielding a hammer. You came here to challenge me? To cross sword with the elite captain of the Gwanaian tribe?"
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         "You know that Hokoma's tribes have fierce female warriors, all following a myriad local traditions and superstitions that allow them to recognize each other, while being impenetrable to outsiders."
 
     you "N-No, that's a mistake, my Lady, I didn't mean to hit you..."
@@ -18552,7 +18548,7 @@ label ninja_guest2: # Magician event
 
     you "A Faustian..."
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
         you "So you were trying to summon something from another plane, but now you are the one who will be sent away to some other dimension?"
     else:
         you "I don't know... It means you screwed up bad?"
@@ -18581,7 +18577,7 @@ label ninja_guest2: # Magician event
 
     magical_girl "A-All right... I was trying to summon an incubus..."
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
         you "An incubus? Wait a second... That is a sexual demon! What did you want to do with that?"
 
         magical_girl "This is, err, ehm... Private business..."
@@ -18761,7 +18757,7 @@ label ninja_guest3: # Scientist event
     # "Guest event Scientist"
 
     scene black with fade
-    show bg_rooftop at top with dissolve
+    show bg rooftop at top with dissolve
 
     you "Now... I gotcha!!!"
 
@@ -19044,29 +19040,29 @@ label chaos_update():
 label chaos_update_menu():
 
     menu:
-        "Choose which girls to share with Chaos. This will cost them some enery and sanity (and possibly their virginity)."
+        "Choose which girls to share with Chaos. This will cost them some energy and sanity (and possibly their virginity)."
 
-        "给他一个处女 (完全充能)" if virgins:
+        "Give him a virgin (full charge)" if virgins:
             $ prompt = "Choose a girl for Chaos (she will lose her virginity)"
             $ girl_list = virgins
             $ girl_nb = 1
 
-        "给他四个女孩 (完全充能)" if len(MC.girls + farm.girls) >= 4:
+        "Give him 4 girls (full charge)" if len(MC.girls + farm.girls) >= 4:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 4
 
-        "给他三个女孩 (能量充足)" if len(MC.girls + farm.girls) >= 3:
+        "Give him 3 girls (high charge)" if len(MC.girls + farm.girls) >= 3:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 3
 
-        "给他两个女孩 (能量不足)" if len(MC.girls + farm.girls) >= 2:
+        "Give him 2 girls (low charge)" if len(MC.girls + farm.girls) >= 2:
             $ prompt = "Choose girls for Chaos (costs energy and sanity)"
             $ girl_list = MC.girls + farm.girls
             $ girl_nb = 2
 
-        "这个月不行":
+        "Not this month":
             scene black
             show bg chaos no girl
             with dissolve
@@ -19186,13 +19182,15 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "I... I have AWOKEN!!!" with doubleflash
 
+    play music m_chaos fadein 3.0
+
     you "A talking sword... Fancy that."
 
     chaos "Who is this? Ah, a mortal cultist, I see..."
 
-    chaos "Untie me, cultist, so I can run my dark blade through your puny human heart and feast in your blood..."
+    chaos "Untie me, cultist, so I can rip your puny human heart from your rib cage and feast in your blood..."
 
-    you "No thanks."
+    you "You what? Ew, no thanks."
 
     chaos "What did you say, cultist???"
 
@@ -19205,7 +19203,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
     else:
         you "God? I bow down to no god, you fool. And last time I checked, {i}I{/i} was the one who summoned you in the first place."
 
-    you "I'm [MC.name], by the way. And I am no cultist of yours"
+    you "I'm [MC.name], by the way. And I am no cultist of yours."
 
     chaos "You arrogant little insect! I SHALL DEVOUR YOUR SOUL RAW, WITH JALAPENOS ON THE SIDE!!!" with vpunch
 
@@ -19263,7 +19261,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     play sound s_maniacal_laugh
 
-    chaos "FUFUFUFUFU!!! I AM NOW FREE! LET ME REPAY YOU WITH DEATH, PEASANT!" with vpunch
+    chaos "FUFUFUFUFU!!! I AM NOW FREE! LET ME REPAY YOU WITH A GRUESOME DEATH, PEASANT!" with vpunch
 
     chaos "..."
 
@@ -19285,9 +19283,9 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "But it seems your mind is resisting me. And you don't even seem like you're putting in much effort."
 
-    you "I'm not."
+    you "I'm not. All I feel is a little tingling."
 
-    chaos "I don't understand... I may be a little out of practice, but I should overcome your willpower with ease... Are you a mere mortal, peasant?"
+    chaos "I don't understand... I may be a little out of practice, but I should overcome your willpower with ease... Are you truly a mere mortal, peasant?"
 
     you "Look, sorry to interrupt your incoherent rambling, but you are in no position to dictate anything to me."
 
@@ -19299,11 +19297,11 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "HA! You fool! I would soon be picked up by a random scavenger, and possess him. Then I'll come for you, and cut off your nose, ears and balls!"
 
-    you "Okay, then I'll just take a rowboat and throw you down in the harbor. Happy?"
+    you "Riiight... Okay, then I'll just take a rowboat and throw you down deep into the harbor. Happy?"
 
     chaos "What... You..."
 
-    chaos "(Wait, being stuck in that stupid sword body for centuries... again? At the bottom of the ocean? I hate salty water, it makes me all rusty...)"
+    chaos "(Wait, being stuck in that stupid sword body for centuries... again? At the bottom of the ocean? And I hate salty water, it makes me all rusty...)"
 
     chaos "Okay, okay, mortal, you've made your point. Perhaps we can strike a bargain."
 
@@ -19311,13 +19309,15 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "{i}If{/i} I were to enter into a... {i}partnership{/i}, with you, what would it entail?"
 
-    $ MC.rand_say(["wa: 在战斗中有把神剑总是好的。我想你有超能力吧?", "wz: 我想研究超自然生物总是很有趣的。我猜你是黑魔法大师吧?", "tr: 我肯定能卖个好价钱，除非你有更好的东西给我?"])
+    $ MC.rand_say(["wa: Well, a magic sword's always nice to have in a fight. I assume you have powers?", "wz: It's always interesting to study supernatural beings, I guess. I assume you are a master in dark magic?", "tr: Well I'm sure I could sell you for a pretty penny, unless of course you have something better to offer me?"])
 
     chaos "Of course! I am very capable, believe me. But there is one thing... To replenish my power, I need to feast. And you shall help me with that."
 
     you "Whoah, feast on blood and souls? You want me to slay people to fill your lust?"
 
-    chaos "Ugh, blood and souls, come on, these are much too common... No, I want something truly rare... I want virgins!"
+    chaos "Ugh, blood and souls, come on, these are much too common... No, I want something truly rare..."
+    
+    chaos "I want virgins!" with vpunch
 
     you "Beg your pardon?"
 
@@ -19335,13 +19335,13 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     "You gesture vaguely at where you guess the sword's crotch is."
 
-    chaos "That's none of your damn business, okay! I can manage perfectly fine!" with vpunch
+    chaos "That's none of your damn business, alright! I can manage perfectly fine!" with vpunch
 
     chaos "*silent sob*"
 
     you "Okay, okay..."
 
-    chaos "So? Do you think this can be arranged? I need to replenish my powers, on a monthly basis."
+    chaos "So? Do you think this can be arranged? I need to replenish my powers, on every new moon."
 
     you "Well... I guess it shouldn't be too hard. After all, I am a brothel owner..."
 
@@ -19349,17 +19349,19 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "You can get me my monthly dose of sweet girls, and I can help you defend yourself among other benefits..."
 
-    you "Well, these girls are hardly virgins, just so you know..."
+    you "Well, these girls are hardly virgins, just so you know."
 
-    chaos "Oh well. Virgins are better, but if all you've got are loose women, so be it."
+    chaos "Oh well... Virgins are better, but if all you've got are loose women, so be it. Fufufufu..."
 
-    chaos "(Nice catch, a brothel owner! He can send plenty of chicks my way, and I will hardly need to work at all! After all, how dangerous can a brothel owner's life be?)"
+    chaos "(Nice catch, a brothel owner! He can send plenty of chicks my way, and I will hardly need to work at all! After all, how dangerous can a brothel owner's life be? It's going to be like a nice vacation!)"
 
     you "I can hear you when you're mumbling, you know."
 
     chaos "*clears metaphorical throat*, ahem, I believe we have a deal. For this month, I'll just power myself using this wench's energy."
 
     "The sword's three eyes focus on [girl.name]."
+
+    stop music fadeout 3.0
 
     scene black with fade
 
@@ -19371,6 +19373,796 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     return
 
+
+label MU_jobgirl():
+    play music m_magicu fadein 3.0
+
+    scene black with fade
+
+    show bg magicU at top with dissolve:
+        yalign 0.0
+
+    $ renpy.pause(0.25, hard=True)
+
+    show bg magicU at top with dissolve:
+        linear 1.25 yalign 1.0
+
+    $ renpy.pause(1.25, hard=True)
+
+    jobgirl magic "[MC.name]! [MC.name]!"
+
+    show jobgirl magic with dissolve
+
+    you "(Do I know her? She looks a bit like...)"
+
+    jobgirl magic "[MC.name]... *pant*"
+
+    play sound s_horn
+
+    show jobgirl magic:
+        ease 0.5 zoom 2.5 yoffset yres(600)
+        pause 0.5
+        ease 0.5 zoom 1.0 xoffset 0 yoffset 0
+
+    you "Hello. Err... Are you [jobgirl_name]'s... 'Big' sister?"
+
+    jobgirl "Big sister? What are you talking about, it's me, Scarlet!"
+
+    you "Riiight... Look, I know Scarlet, and she doesn't have your, err... Size..."
+
+    jobgirl "Hey!" with vpunch
+
+    jobgirl "It's not my fault! I was taking this beginner's class on magic, you know, and I fumbled the spell a bit."
+
+    you "A spell?"
+
+    jobgirl "I wanted to cast a body reinforcement spell, to fight monsters better."
+
+    jobgirl "But, erm, I don't think it reinforced the {i}right{/i} parts of my body..."
+
+    you "Well, it's all in the eye of the beholder... I think it worked fine, really."
+
+    jobgirl "You can't mean that! My clothes are about to burst! Please do something!"
+
+    you "Who, me? But, uh... What about your teacher?"
+
+    jobgirl "Well, I... May have 'borrowed' her magic staff for a moment, because I wasn't able to cast such a high-level spell..."
+
+    jobgirl "So, I would rather she doesn't find out. Please, can you help me?"
+
+    menu:
+        extend ""
+
+        "Dispell the spell" if MC.playerclass == "Wizard":
+
+            you "*sigh* Hand over that staff."
+
+            play sound s_dress
+
+            you "{i}Yayum gamjee, yayum shrink boo bee!{/i}"
+
+            play sound s_spell
+
+            $ r = "you"
+
+        "Pray to Shalia" if MC.god == "Shalia":
+
+            "You immediately recognize the staff as a Shalia artifact."
+
+            you "Well, I think it's a little curse placed on you by the Lady of the Night."
+
+            jobgirl "The Lady of... You mean Shalia?"
+
+            you "Yes. It might not be that your spell succeeded at all, but you probably shouldn't have touched that staff."
+
+            jobgirl "But what's the point of a curse that gives large... You know?"
+
+            you "Good question... They are inordinately large, uh... *drool*"
+
+            you "Erm, sorry."
+
+            jobgirl "Come to think of it, the professor also had a huge rack..."
+
+            jobgirl "Maybe this is no curse at all! Maybe she uses the staff to grow her own boobs! So when I touched it, this happened to me!"
+
+            you "Yeah, yeah. Another fascinating mystery solved..."
+
+            jobgirl "But what can I do?"
+
+            you "First, stop holding that staff!" with vpunch
+
+            jobgirl "Right..."
+
+            "She tosses the staff into a nearby bush."
+
+            you "Look, if this is Shalia's doing, I know a simple prayer. Shalia is known to like a little prank, but she can recognise when they have gone on too long. Usually."
+
+            jobgirl "Okay..."
+
+            you "*mumble a prayer*"
+
+            "Either from your prayer, or from unhanding the staff, Scarlet's 'assets' slowly shrink back to normal."
+
+            jobgirl "It's working! Oh, that's a relief..."
+
+            $ r = "you"
+
+        "Ask Sill for help" if MC.playerclass != "Wizard":
+
+            you "Look, I'm no magician..."
+
+            jobgirl "Oh no..."
+
+            you "But I know someone who may be able to help you."
+
+            jobgirl "Really?"
+
+            you "Sure! Remember my slave Sill?"
+
+            you "Before her parents lost their fortunes and sold her to me, she received some magic training."
+
+            you "She said she was quite good. I put an end to this nonsense of course, but she may still remember something from that time."
+
+            jobgirl "Does she know how to lift that nasty spell?"
+
+            you "Maybe, maybe not. Let's find out."
+
+            with fade
+            show jobgirl magic at left with move
+            show sill at right with dissolve
+
+            sill "Yes, Master?"
+
+            you "Could you take a look at my good friend Scarlet here? She's misused her magic staff, and as a result she is fast outgrowing her clothes."
+
+            sill "Oh, really? Please give me the staff, I'll see if I can cure you."
+
+            sill "Hmmm... Let's see if I can remember that counterspell..."
+
+            sill "{i}Titillating twins, now shrink away, to leave this body with a lighter weight!{/i}"
+
+            play sound s_spell
+
+            $ r = "sill"
+
+        "Tease her":
+
+            you "Oh my, this is terrible... Let me take a good look, see if I can find a solution..."
+
+            jobgirl magic blush "Errm..."
+
+            play sound s_horn
+
+            show jobgirl magic blush:
+                ease 0.5 zoom 2.5 yoffset yres(600)
+                pause 0.5
+                ease 0.5 zoom 1.0 xoffset 0 yoffset 0
+
+            you "I must look closer, to make sure I can see every angle of the problem... *drool*"
+
+            jobgirl "Is this really necessary..."
+
+            you "Oh yes."
+
+            "You point at her enormous boobs, poking the fabric of her top, which seems about to burst."
+
+            you "It seems we have here a surge in, ahem, mammary inflation..."
+
+            you "*more magical mumbo-jumbo*"
+
+            jobgirl "You... really know what you are talking about, right?"
+
+            you "Of, course, my dear. Turn around."
+
+            "*POKE*"
+
+            play sound s_surprise
+
+            jobgirl "AAAH!" with vpunch
+
+            you "It seems the adiposity of the lower backside has increased by... A voluptuacious modiquantum..."
+
+            jobgirl "You mean... My butt..."
+
+            you "... Has grown much larger, yes. In fact, it makes your shorts look like a thong."
+
+            you "I'm afraid this situation is desperate."
+
+            jobgirl "WHAAAT???" with vpunch
+
+            you "Without proper treatment, your juicy... I mean, sensitive parts will grow, and grow, until they pop out like balloons. This could prove fatal."
+
+            play sound s_scream
+
+            jobgirl "Nooooo!!! What should I do?" with vpunch
+
+            you "Well, you're in luck. I know a secret esoteric massage that can relieve your precious parts."
+
+            jobgirl "An erotic massage??? No way!" with vpunch
+
+            you "E-SO-TE-ric massage, my dear."
+
+            jobgirl "R-Right, what was I thinking... *blush*"
+
+            you "There is no time to waste! Let's get started."
+
+            jobgirl "W-Wait, here?"
+
+            you "We can find a more secluded place if you want; but time is of the essence, let us hurry."
+
+            scene black with fade
+            show bg bedroom at top with dissolve
+
+            "You both sneak into an empty room in the students' dorm."
+
+            show jobgirl magic blush with dissolve
+
+            jobgirl "W-What do you want me to do?"
+
+            you "Well, just stand still. Let me handle it."
+
+            "You place a hand on her breast."
+
+            play sound s_surprise
+
+            jobgirl "*squeal*" with vpunch
+
+            you "Hush, don't move. It's a delicate procedure, I must concentrate. Just trust me."
+
+            jobgirl "O-Okay..."
+
+            "Moving your palm in circles, you elicit a sigh from Scarlet. You place your other hand on her other breast, repeating the movement."
+
+            play sound s_mmh
+
+            jobgirl "Why are you... Hmmm... Massaging my breasts..."
+
+            you "It's good for you. Obviously, you can't treat mammary inflation without addressing the, err, mammary area."
+
+            jobgirl "*heavy breathing*"
+
+            you "Your clothing is getting in the way. We need a more direct approach. Let me massage you underneath it."
+
+            jobgirl "N-No! That's too... Intimate..." with vpunch
+
+            you "Then I'm afraid your tits might burst any moment now..."
+
+            jobgirl "No!!! O-okay, please do it! Save me!" with vpunch
+
+            you "Sure, sure... Hehehehe..."
+
+            "Sliding your hands under her top, you feel her large, puffy nipples under your palm."
+
+            play sound s_ahaa
+
+            jobgirl "Oh, aaah..."
+
+            you "Interesting... Were they always like this, or is it the spell?"
+
+            jobgirl "Hmmm..."
+
+            "Her nipples are stiff and hard under your touch. It seems your ministrations had an effect."
+
+            "You squeeze her nipples between your fingers."
+
+            play sound s_aaah
+
+            jobgirl "AAAH!!! What are you doing..." with vpunch
+
+            "This time, she doesn't seem to really be waiting for an answer, so you just continue."
+
+            "Her breasts are so large that you can't hope to hold them in your hand, so you just sink your hands into the flesh, bouncing them up and down."
+
+            jobgirl "Ohh!!! Do... Do you have to jiggle them this much?"
+
+            you "It's necessary. Every part must be stimulated for the magic to drain properly."
+
+            jobgirl "O-Okay..."
+
+            "Going in for the kill, you pull her closer, placing your hands on her overgrown ass."
+
+            jobgirl "*pant* *pant*"
+
+            "She doesn't even think to protest this time. Your hard-on is pressing against her short pants, but she doesn't seem to notice or care."
+
+            "You feel that she's ready for the next phase of your plan."
+
+            stop music fadeout 3.0
+
+            scene black with fade
+
+            you "Alright, the massage is over. It's time to giev you the magic medicine."
+
+            play sound s_ahaa
+
+            jobgirl "Ahaa... What... What do you mean..."
+
+            you "No time to explain, it's really complicated. But here is the syringe."
+
+            play sound s_dodge
+            "*WOOP*" with vpunch
+
+            jobgirl "Oh! What a large... Syringe..."
+
+            show bg jobgirl magic sex1 at top with dissolve
+
+            you "We need to lubricate it well before we insert it. You can help with that."
+
+            play sound s_mmh
+
+            jobgirl "Mhm..."
+
+            play sound2 s_sucking
+
+            you "Make sure it is well lubricated. You must lick every inch of it..."
+
+            "Scarlet doesn't say anything, but she takes your whole shaft in her mouth like she means it."
+
+            play sound s_aah
+            jobgirl "Ngh... Ngh..."
+
+            you "All right, I think it's ready. Let's move on to the injection."
+
+            you "Brace yourself, it may sting a little."
+
+            show bg jobgirl magic sex2 at top with dissolve
+            play sound s_scream
+
+            jobgirl "Aaah!" with vpunch
+
+
+            jobgirl "*pant* W-What are you..."
+
+            "With one smooth motion, you thrust the syringe in her wet pussy."
+
+            "Scarlet doesn't do anything to stop you, except clinging to you as you push your member inside."
+
+            you "Man, look at these big udders... Looks like they're even spurting milk now!"
+            "You squeeze her swollen, leaking breasts."
+
+            play sound s_moans
+
+            jobgirl "Oh, aaah, hmmm..." with vpunch
+
+            "She moans as you start pumping the 'syringe' in and out of her pussy."
+
+            "She clings to you tighter as you make her ride your cock."
+
+            jobgirl "AAH!" with vpunch
+
+            "Her love juices are flowing freely, covering your shaft in sticky fluid."
+
+            jobgirl "Ooh, oooh..." with vpunch
+
+            "You push your dick deeper and deeper, making sure to fill her up completely."
+
+            jobgirl "Oh no! It's too much... I'm going to..."
+
+            "You squeeze her breasts as her body stiffens and you ram your cock all the way in."
+
+            show bg jobgirl magic sex3 at top with flash
+
+            jobgirl "AAAAAAAAH!!!" with vpunch
+
+            with doubleflash
+
+            "As she cums from your assault, she squirts love juice all over the bed."
+
+            play sound s_orgasm
+
+            jobgirl "Haaa, haaa..."
+
+            jobgirl "Aaaaah!!!" with vpunch
+
+            "You are not there yet, so you keep fucking her sensitive pussy."
+
+            jobgirl "Ohh... Aaah... Did you... Did you cure me?"
+
+            you "Not yet, we need to inject the full dosage."
+
+            "Increasing your pace, you feel your own climax approaching."
+
+            jobgirl "AAH! This feeling... Not again! AAAAH!!!!" with vpunch
+
+            you "It's time for the final injection! Get ready!"
+
+            "Holding her tightly, you press on her belly, increasing the feeling of your hard cock ramming into her."
+
+            jobgirl "Ohh, aaaah, AAAAAAH!!!" with vpunch
+
+            play sound s_orgasm
+
+            show bg jobgirl magic sex4 at top with flash
+
+            "Cumming in a torrent, you pump her womb full of 'magical medicine', making her scream."
+
+            with doubleflash
+
+            "She squirts again, and her milk starts shooting from her tits, hitting the floor."
+
+            with flash
+
+            jobgirl "Aaaah..."
+
+            you "Man... Someone's going to hate having to clean up their room..."
+
+            "You both collapse onto the floor, exhausted from the exercise."
+
+            jobgirl "So... Am I cured now?"
+
+            you "Well..."
+
+            scene black with fade
+
+            show bg bedroom at top with dissolve
+
+            "{i}Moments later...{/i}"
+
+            play sound s_shatter
+
+            jobgirl "WHAAAT??? This didn't work at all!" with vpunch
+
+            jobgirl "MOTHER F..."
+
+            you "(Time to run!!!)" with vpunch
+
+            play sound s_steps
+
+            scene black with fade
+
+            "You barely escape with your life. The next day, Scarlet had to go and apologize to the professor before she was restored to normal."
+
+            $ NPC_jobgirl.corruption += 10
+            $ MC.change_prestige(3)
+
+            return
+
+    scene black with fade
+    show bg magicU at top with dissolve:
+        yalign 1.0
+    show jobgirl normal with dissolve
+
+    if r == "you":
+
+        jobgirl "You did it! You're my hero!"
+
+        "She jumps in your arms and give you a warm hug. You don't break it for a long moment."
+
+        jobgirl "Thank you so much, [MC.name], you always have my back."
+
+        menu:
+            extend ""
+
+            "My pleasure":
+                you "My pleasure, really."
+
+                jobgirl "But I want to reward you. Here, I know: the next class you take will be on me. How about that?"
+
+                you "Wow, thanks. I just wanted to help you."
+
+                jobgirl "You're very sweet... I don't know, I..."
+
+                "She blushes bright red."
+
+                jobgirl "I... I have to go! Thanks, [MC.name]!"
+
+                play sound s_steps
+                hide jobgirl with moveoutleft
+
+                you "What's with her? She ran away like a demon was on her tail..."
+
+                scene black with fade
+
+                "The next time you {b}register a girl for a class{/b}, it will be free of charge."
+
+                $ NPC_jobgirl.love += 5
+                $ story_flags["postings free class"] = True
+
+            "How about a little kiss?":
+                you "Your hero deserves a little kiss, don't you think?"
+
+                jobgirl "Oh, uhm..."
+
+                "She blushes and hesitates for a moment."
+
+                "Just when you start to think your bluff failed, she leans closer, and places her lips over yours."
+
+                you "Hmm!"
+
+                "You are startled, not expecting her to be so bold."
+
+                play sound s_sigh
+
+                "She pulls back from the embrace, and give you a faint smile."
+
+                jobgirl "There. Are you happy with your reward?"
+
+                you "Erm, ahem... Sure..."
+
+                "She looks into your eyes intently for a moment. Then she turns away."
+
+                you "Hey, wait!"
+
+                jobgirl "I have to go! Bye, [MC.name]!"
+
+                hide jobgirl with dissolve
+
+                you "*sigh* I'm not sure I get that girl..."
+
+                scene black with fade
+
+                $ NPC_jobgirl.love += 3
+                $ NPC_jobgirl.corruption += 3
+
+            "Sure, I have your back (squeeze it)":
+                you "I'll have your back alright..."
+
+                play sound s_boing
+
+                "*SQUEEZE*" with vpunch
+
+                play sound s_surprise
+
+                jobgirl "!!!"
+
+                if NPC_jobgirl.corruption >= 15:
+
+                    "You grab Scarlet's ass, and at first you worry she's going to kick you in the nuts."
+
+                    "But instead, she remains frozen in place, like a deer in a magical headlight. Her grasp tightening on your shoulders is the only indication that she registered your move."
+
+                    jobgirl "... *blush*"
+
+                    "Pushing your luck, you start fondling her butt some more."
+
+                    play sound s_ahaa
+
+                    jobgirl "Ngh... *heavy breathing*"
+
+                    "Finally, you move your hands down, brushing against the exposed skin of her underbutt."
+
+                    play sound s_surprise
+
+                    jobgirl "!!!" with vpunch
+
+                    "It seems to break the spell, and Scarlet suddenly pushes you away."
+
+                    jobgirl "No! Not... Not like that..."
+
+                    play sound s_steps
+                    hide jobgirl with moveoutright
+
+                    "Not looking you in the eye, she pulls back and runs away from you."
+
+                    "You wonder if you went too far."
+
+                else:
+
+                    jobgirl "WHAT DO YOU THINK YOU'RE DOING???" with vpunch
+
+                    play sound s_punch
+
+                    "*SMACK*" with vpunch
+
+                    "Scarlet's knee strikes you right in the sensitive parts, and you crumble to the side, sobbing."
+
+                    jobgirl "How dare you! You Arios damned pervert!"
+
+                    hide jobgirl with dissolve
+
+                    "Scarlet leaves, blushing and furious."
+
+                $ NPC_jobgirl.corruption += 5
+
+                scene black with fade
+
+
+    elif r == "sill":
+
+        jobgirl "Thank you, Sill! You are amazing!"
+
+        sill happy "You're welcome, Scarlet."
+
+        you "Well, erm, am I not amazing too? Sill is my slave, so her achievements are my achievements..."
+
+        jobgirl "Yeah, yeah, you both really helped me out."
+
+        jobgirl "Look, let me do you a favor in return. The next class you take is on me, okay?"
+
+        you "Really? Why, thanks."
+
+        scene black with fade
+
+        "The next time you {b}register a girl for a class{/b}, it will be free of charge."
+
+        $ NPC_jobgirl.love += 3
+        $ story_flags["postings free class"] = True
+
+    return
+
+# NEWGAME+ EVENTS #
+
+label NGPintro():
+
+    scene black with fade
+
+    play sound s_meow
+    "*goro goro*"
+
+    play sound s_meow
+
+    "*goro goro*!"
+
+    play sound s_meow
+
+    "*goro goro*?"
+
+    you "What the..."
+
+    play sound s_dodge
+
+    show mike:
+        xalign 0.5 yalign 0.7
+    with easeintop
+
+    show mike at bounce
+
+    play sound s_meow
+
+    "???" "Oh, hello there, *goro goro*!"
+
+    "???" "Congratulations on finishing your first run of BK!"
+
+    you "Uh? Who the fuck are you?"
+
+    play sound s_meow
+    show mike at bounce
+
+    "???" "My apologies, *goro goro*!"
+
+    "???" "My full name is Maiku Toranzaku-Chan, but you can call me Mike."
+
+    "Mike" "Now that you have successfully completed the game, I have grand news!"
+
+    "Mike" "You can now play NewGame+™."
+
+    $ persistent.new_game_plus = True
+
+    "Mike" "In NewGame+™, you can tweak your starting game settings to your liking, and experiment the game in sandbox mode!"
+
+    "Mike" "In order to bring you the best possible experience, our Board of executives has held numerous meetings and focus groups based on the latest benchmarks and best practices in the industry."
+
+    "Mike" "So now we can give you what you've always dreamed of!"
+
+    play sound s_spell
+    play music m_kids fadein 3.0
+
+    show micro_transac_rain behind mike
+    show mike:
+        xalign 0.05
+    with move
+
+    show screen micro_transac
+    with easeintop
+
+    "Mike" "The in-game store!!!" with flash
+
+    you "What the fuck is that???" with vpunch
+
+    "Mike" "In the in-game store, you can finally spend real money to buy our fabulous 'Purchase-to-Wow' crystals, or P2W!"
+
+    "Mike" "Our marketing department informs us that you've been dying to sink all your hard-earned money into the game, so why not start by purchasing a few thousand crystals at bargain price?"
+
+    "Mike" "We accept all forms of payments and currencies: Slavemastercard, Jizza, SprayPal, Buttcoin, your soul..."
+
+    "Mike" "Why not buy an O.P. character that ruins the game's balance and requires no skill at all?"
+
+    "Mike" "Do you feel like your life is meaningless and hollow unless you can show your avatar dressed in useless tacky cosmetics to your virtual friends! Then we've got you covered!"
+
+    "Mike" "Or are you tired of having to actually play the game? Buy the idler package! As a bonus you can pay extra to completely uninstall the game, and we'll play it for you..."
+
+    play sound s_meow
+    show mike at bounce
+
+    "Mike" "SPEND SPEND SPEND!!!" with vpunch
+
+    stop music fadeout 3.0
+    play sound s_dodge
+
+    hide micro_transac_rain with dissolve
+    hide screen micro_transac
+    with easeouttop
+
+    show mike:
+        xalign 0.5
+    with move
+
+    "Mike" "Behold, the wonders of the in-game store!!!"
+
+    "Mike" "What say you, dear suck-, err, adventurer? *goro goro*"
+
+    you "..."
+
+    you "......"
+
+    play sound s_meow
+
+    "Mike" "Goro?"
+
+    you "........."
+
+    if MC.playerclass == "Warrior":
+
+        play sound3 s_sheath
+
+        pause 0.6
+
+        play sound s_sheath
+
+        pause 0.3
+
+        play sound2 s_sheath
+
+        pause 0.1
+
+        play sound3 s_sheath
+
+        "*SLASH*" with flash
+
+    elif MC.playerclass == "Wizard":
+
+        play sound s_fire
+
+        "*BLAST*" with flash
+
+    elif MC.playerclass == "Trader":
+
+        play sound s_roar
+
+        "*ROAR*" with vpunch
+
+    play sound s_splat
+
+    hide mike
+    show explode:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.7
+
+    "*SPLAT*" with vpunch
+
+    if MC.playerclass == "Trader":
+        you "Thank you, Drogo."
+
+    play sound s_fanfare
+
+    "You have slain Maiku Toransaku-Chan and put an end to his villainy. You found 10G."
+
+    $ MC.change_gold(10)
+
+    you "Hmph..."
+
+    you "An in-game store? What a ridiculous idea! Like anyone would fall for that!"
+
+    you "Now that we got rid of this annoying bastard, I'll just help myself to some of these crystals... As a reward for my 'achievements', shall we say?"
+
+    $ unlock_achievement("newgame+")
+
+    scene black with fade
+
+    "In {b}NewGame+{/b}, you can buy new starting conditions with {b}crystals{/b}."
+
+    "You earn crystals every time you unlock an in-game {b}achievements{/b}. The more crystals you have, the more starting combinations you can play around with."
+
+    $ c = count_achievements()
+
+    "You currently have [c] crystals from the various achievements you've unlocked. Not bad!"
+
+    "You can check the current state of your achievements from the {b}Preferences{/b} menu (right-click from the Home menu or press 'Esc')."
+
+    "You can now continue playing in {b}Endless Mode{/b}! And if you decide to start a new game, NewGame+ is waiting for you."
+
+    return
 
 
 

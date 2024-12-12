@@ -10,8 +10,8 @@ label intro:
 
     $ persistent.seen_intro = True
 
-    $ text1 = Text(('很久很久以前'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
-    $ text2 = Text(('在一个遥远的王国中'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
+    $ text1 = Text(('Once upon a time'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
+    $ text2 = Text(('In a far away realm'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
 
     show expression text1
     with easeinleft
@@ -76,7 +76,7 @@ label intro:
     "It seems your long trip across Xeros is coming to an end."
 
     "On the other side of this valley is the city of Zan, jewel of the Eastern coast."
-    "Already the most powerful city in Xeros by far, Zan grows by the day with the arrival of travelers and migrants from all of Xeros and beyond."
+    "Already the most powerful city in Xeros by far, Zan grows by the day with the arrival of travelers and migrants from all over the continent, and beyond."
 
     "You are one of them, lured by stories of the riches and pleasures that can only be had in the 'City of Jade'..."
     "But you didn't set out to become just another faceless adventurer lost in the mean streets of the city-state."
@@ -85,7 +85,7 @@ label intro:
 
     play music m_theme
 
-    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="DejaVuSans.ttf")
+    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="MATURASC.TTF")
 
     show expression title #Note: Find a way to make the zoom slower and the title cooler
     with zoomin
@@ -110,7 +110,9 @@ label intro:
 
     play music m_suspense
 
-    scene bg sill sold with fade
+    hide sill
+    show bg sill sold
+    with fade
 
     "Her parents sold her to you with their last good horse to repay a gambling debt."
 
@@ -127,41 +129,41 @@ label intro:
     menu:
         you "Why did I keep her already?"
 
-        "我挺喜欢她的":
+        "I'm kind of fond of the girl.":
             $ MC.good += 1
             $ NPC_sill.love += 1
-            $ renpy.block_rollback()
+            $ norollback()
             you "Well, she is more than a simple slave. Roaming this land wouldn't be the same without her."
 
-        "她是一笔投资":
+        "She's an investment.":
             $ MC.neutral += 1
-            $ renpy.block_rollback()
+            $ norollback()
             you "Sell her and what, do my own laundry? Obedient slaves are so hard to come by these days..."
 
-        "她就是个废物":
+        "Beats me. She's a waste of space.":
             $ MC.evil += 1
             $ NPC_sill.love -= 1
-            $ renpy.block_rollback()
+            $ norollback()
             you "Never cared for the little brat. But someone has to drive the carriage when I'm sleeping..."
 
     menu:
         you "Besides, we have some good memories... Like that time..."
 
-        "第一次训练她的那个晚上":
+        "The first night I trained her":
             $ MC.good += 1
             $ NPC_sill.love += 1
-            $ renpy.block_rollback()
+            $ norollback()
             jump sill_first_time
 
-        "我们在大庭广众之下做爱":
+        "The time we did it in public":
             $ MC.neutral += 1
-            $ renpy.block_rollback()
+            $ norollback()
             jump sill_public
 
-        "我把她给干成了一个白痴":
+        "I spanked her silly":
             $ MC.evil += 1
             $ NPC_sill.love -= 1
-            $ renpy.block_rollback()
+            $ norollback()
             jump sill_spank
 
 
@@ -183,7 +185,7 @@ label sill_first_time:
 
     sill "Oh, aaaah! Maaaster..."
 
-    sill "Master, aaaah... I'm... I'm comiiiiing!!!"
+    sill "Master, aaaah... I'm... I'm cumiiiiing!!!"
 
     play sound s_orgasm
 
@@ -260,7 +262,7 @@ label resume_intro:
 
     show sill happy with dissolve
 
-    pause 0.5
+    sill "..."
 
     sill sad "Master? Were you listening?"
 
@@ -300,16 +302,16 @@ label resume_intro:
     menu:
         you "I am..."
 
-        "一名战士":
-            $ MC.set_playerclass("战士")
-            $ renpy.block_rollback()
+        "A warrior":
+            $ MC.set_playerclass("Warrior")
+            $ norollback()
 
             you "I am a fighter from the Northern armies."
 
             hide guard
             show bg battleground at top with fade
             "For years you have battled hordes of humans and monsters, far away North in the Holy Lands."
-            "You fought side by side with great knights and dirty sellswords. In the heat of battle, peasants and highborns were comrades."
+            "You fought side by side with great knights and lowly sellswords. In the heat of battle, peasants and highborns were comrades."
             "Battles were won, and battles were lost, always at a dear cost. Most of your friends ended up dead or missing."
             "You have grown tired of the constant fighting and senseless bloodshed. This is not your calling anymore."
             "Still, your set of skills is always in demand in Xeros. Time will tell if life in Zan will allow you to put your swords down for good..."
@@ -318,14 +320,15 @@ label resume_intro:
             show guard with dissolve
 
             guard "We have great respect for veterans here, Sir."
-            guard "But do mind your manners while in town. Our quiet urban community is not to be mistaken for a battleground."
+            guard "But do mind your manners while in town. Our quiet urban community is not to be 
+                mistaken for a battleground."
 
             jump resume_intro2
 
 
-        "一位法师":
-            $ MC.set_playerclass("法师")
-            $ renpy.block_rollback()
+        "A wizard":
+            $ MC.set_playerclass("Wizard")
+            $ norollback()
 
             you "I am a court mage from the Westmarch Principalities."
 
@@ -334,7 +337,7 @@ label resume_intro:
 
             "Educated with the best minds of Karkyr to become a battlemage, you used the gold from an inheritance to buy off your years of service, and set out for the Western territories for fame and fortune."
             "There, you found your place as the court wizard of one Prince Arkin, a powerful border lord."
-            "The hundred warring Princes in Westmarch are always in need of a wizard for counsel, enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of life and death are woven into the fabric of magic itself, and a potent spellcaster can easily wield both."
+            "The hundred warring Princes in Westmarch are always in need of a wizard for counsel enchants, and healing. And sometimes, for more underhanded duties as well... For the powers of life and death are woven into the fabric of magic itself, and a potent spellcaster can easily wield both."
             "The Prince had a beautiful wife... And a jealous, suspicious mind."
             "Somehow, he got it into his thick head that you had been sleeping with his wife, using spells to bypass the guards posted by her chambers."
             "You got word of this madness a few hours before he planned to have you arrested and burnt at the stake. You escaped swiftly with Sill and what little valuables you could carry."
@@ -353,9 +356,9 @@ label resume_intro:
 
             jump resume_intro2
 
-        "一个商人":
-            $ MC.set_playerclass("奸商")
-            $ renpy.block_rollback()
+        "A rogue trader":
+            $ MC.set_playerclass("Trader")
+            $ norollback()
 
             you "I am a proud member of the Xeros Traveling Merchant Guild."
 
@@ -368,15 +371,19 @@ label resume_intro:
             "Your party had set out for the legendary Southern land of Hokoma, roaming through scorching desert and sweltering jungles."
             "Your aim was to negotiate with native tribes for the rarest spices and magical ingredients, to exchange for cheap trinkets."
             "Amazingly, you made it to Hokoma with only a few casualties, and most of your wares still intact."
-            "But on the way back through the jungles, as you were busy dreaming of the riches you were sure to obtain back in Borgo, your party got ambushed and slaughtered by a ferocious headhunting tribe."
+            "But on the way back through the jungles, as you were busy dreaming of the riches you 
+            were sure to obtain back in Borgo, your party got ambushed and slaughtered by a ferocious headhunting tribe."
             "You and Sill barely made it out with your lives, losing all of your stock while escaping."
-            "Returning to Borgo empty-handed to face your creditors didn't seem like the brightest idea. So instead, you decided to head for Zan, and use your business acumen to  rebuild from there."
+            "Returning to Borgo empty-handed to face your creditors didn't seem like the brightest idea. So instead, you decided to head for Zan, and use your business acumen to 
+            rebuild from there."
 
             show bg outer gate with fade
             show guard with dissolve
 
-            guard "A peddler, eh? You don't seem to have a lot of goods about. Seen better luck, haven't you?"
-            guard "Well, any man can make it in the City of Jade, or so they say. But stay on the right side of the law, merchant, or you will have to deal with me."
+            guard "A peddler, eh? You don't seem to have a lot of goods about. Seen better
+                luck, haven't you?"
+            guard "Well, any man can make it in the City of Jade, or so they say. But stay on the right
+                side of the law, merchant, or you will have to deal with me."
 
             jump resume_intro2
 
@@ -387,24 +394,26 @@ label resume_intro2:
     menu:
         you "Me?"
 
-        "我信奉光明与力量的象征——太阳神":
-            $ MC.set_god("太阳神")
+        "I am a servant of Arios, god of Light and Strength":
+            $ MC.set_god("Arios")
             $ MC.good += 1
-            $ renpy.block_rollback()
+            $ norollback()
             guard "That is good, brother. I hope to see you often at the Cathedra to pray."
 
-        "我信奉暗影与睿智的象征——莎莉娅":
-            $ MC.set_god("莎莉娅")
+        "I worship Shalia, goddess of Shadows and Cunning":
+            $ MC.set_god("Shalia")
             $ MC.evil += 1
-            $ renpy.block_rollback()
+            $ norollback()
             "He spits on the ground."
-            guard "I knew you had that sneaky look about you... There are many shrines dedicated to the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
+            guard "I knew you had that sneaky look about you... There are many shrines dedicated to
+                the dark goddess in Zan, but I'm not the one to tell you where they are. Decent folks shouldn't meddle with the cursed one."
 
-        "我是个无神论者，求人不如求己":
+        "I serve none but myself":
             $ MC.set_god(None)
             $ MC.neutral += 1
-            $ renpy.block_rollback()
-            guard "What have we here, a free thinker? You must think oh so highly of yourself, not needing the protection of gods and all?"
+            $ norollback()
+            guard "What have we here, a free thinker? You must think oh so highly of yourself, not
+                needing the protection of gods and all?"
 
     "Please take a moment to review your choices now. You won't be able to change them after this point."
 
@@ -441,7 +450,8 @@ label resume_intro2:
 
     sill sad "Yes Master, *pants*, I'm doing the best I can... *pants*"
 
-    "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly crumbling under its weight."
+    "Sill is carrying all your equipment and luggage. She's never been too strong, so she is nearly
+    crumbling under its weight."
 
     you "Hurry up now will you... What's that?"
 
@@ -453,17 +463,19 @@ label resume_intro2:
 
     kuro "Help me!"
 
-    "In a dark alley on the side of the plaza, a woman is standing with her back to the wall. Two men are blocking her way out."
+    "In a dark alley on the side of the plaza, a woman is standing with her back to the wall. Two
+    men are blocking her way out."
 
     menu:
         "What do you do?"
 
-        "伸出援手":
+        "Run to her rescue":
 
             $ MC.good += 1
-            $ renpy.block_rollback()
+            $ norollback()
 
-            "Charging in the back alley without a moment of hesitation, you reach the men just as they're closing in on the helpless woman."
+            "Charging in the back alley without a moment of hesitation, you reach the men just as
+            they're closing in on the helpless woman."
 
             you "What's going on here?"
 
@@ -481,11 +493,13 @@ label resume_intro2:
                 yalign 1.0
 
 
-            thug1 "Now, now, citizen, don't you listen to that lying bitch. We're here on... official business."
+            thug1 "Now, now, citizen, don't you listen to that lying bitch. We're here on...
+                official business."
             thug2 "Yeah, orficial..."
             thug1 "'n we're just takin' her to be... interrogated."
             thug2 "Yeah, in taro gated..."
-            thug1 "So no cause for alarm, here, you see... Now be on your way, citizen, for your own sake."
+            thug1 "So no cause for alarm, here, you see... Now be on your way, citizen, for your
+                own sake."
             thug2 "Yeah, that's none of yer business! So back off, will ye."
 
             you "..."
@@ -495,10 +509,10 @@ label resume_intro2:
             jump resume_intro3
 
 
-        "嘲讽歹徒":
+        "Taunt her attackers":
 
             $ MC.neutral +=1
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Well, what do we have here?"
 
@@ -535,10 +549,10 @@ label resume_intro2:
             jump resume_intro3
 
 
-        "视若无睹":
+        "Ignore her plea":
 
             $ MC.evil += 1
-            $ renpy.block_rollback()
+            $ norollback()
 
             show kuro at right with dissolve:
                 zoom 0.9
@@ -571,13 +585,15 @@ label resume_intro2:
 
             thug2 "What were they droppin', cousin?"
 
-            thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know what the boss said... No witnesses."
+            thug1 "Eavesdropping you idiot! It means they've been listening to us, and you know
+                what the boss said... No witnesses."
 
             thug2 "Oh, that's right..."
 
             thug2 "Hey, cousin, did you see that lil' hotty, with the pink hair?"
 
-            thug2 "I'm gonna have me some fun with her! After we're through with the noble bitch..."
+            thug2 "I'm gonna have me some fun with her! After we're through with the noble
+                bitch..."
 
             you "..."
 
@@ -592,13 +608,13 @@ label resume_intro3:
 
     thug1 "All right, then... You just dug your own grave, you nosy bastard!"
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         you "Sill, fetch my swords."
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
         you "Sill, hand me the staff."
 
-    if MC.playerclass == "奸商":
+    if MC.playerclass == "Trader":
         you "Sill, you know what to do."
 
     sill "Yes Master!"
@@ -615,7 +631,7 @@ label resume_intro3:
     thug2 "You..."
     thug1 "DIE!"
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         you "Haa!"
 
@@ -629,7 +645,8 @@ label resume_intro3:
         with flash
 
 
-        "You dodge the first thug and shove him to the side, before slicing up and severing the arm of the second thug clean off."
+        "You dodge the first thug and shove him to the side, before slicing up and severing the arm
+        of the second thug clean off."
 
         play sound s_wscream
         thug2 "Aaaaargh!!!"
@@ -647,7 +664,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
 
         you "Shazam!"
 
@@ -665,7 +682,8 @@ label resume_intro3:
         thug2 "AAAAAAAAARRRRRRRRHHHHHHHHH!!!"
         play sound s_wscream
 
-        "A bolt of lightning thunders down from the dark skies, striking one thug and blinding the other one."
+        "A bolt of lightning thunders down from the dark skies, striking one thug and
+        blinding the other one."
 
         thug1 "Cou... cousin?"
 
@@ -675,7 +693,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "奸商": ##TO DO : have Drogon hover around
+    elif MC.playerclass == "Trader": ##TO DO : have Drogon hover around
 
         play sound s_wings
 
@@ -710,9 +728,11 @@ label resume_intro3:
 
         thug1 "A pet... Dragon???"
 
-        you "Yes, a pet dragon! I acquired this one in the far East, all the way across the Blood Sea, when he was but an egg."
+        you "Yes, a pet dragon! I acquired this one in the far East, all the way across the Blood
+            Sea, when he was but an egg."
 
-        you "I retrieved it from the funeral pyre of some petty nomad king, incinerated with his western bride and a slave witch, if you can believe it. But long story short..."
+        you "I retrieved it from the funeral pyre of some petty nomad king, incinerated with his
+            western bride and a slave witch, if you can believe it. But long story short..."
 
         you "Do you want to be his next snack so badly?"
 
@@ -745,7 +765,7 @@ label resume_intro3:
 
     kuro "Thank you, my champion, you fought bravely."
 
-    if MC.playerclass == "奸商":
+    if MC.playerclass == "Trader":
 
         show sill drogon at left with dissolve
 
@@ -769,7 +789,8 @@ label resume_intro3:
 
     kuro "Thank you, from the bottom of my heart."
 
-    kuro "Forgive me though, but I have to leave now. Others like them are on my trail, and I must make it to safety as quickly as I can."
+    kuro "Forgive me though, but I have to leave now. Others like them are on my trail, and I
+        must make it to safety as quickly as I can."
 
     kuro "But you have saved my life, and my honor. I am in your debt."
     kuro "Seek the house of master Gio. He is a friend of my family, and he will reward you."
@@ -779,7 +800,8 @@ label resume_intro3:
     hide kuro with dissolve
 #    play sound s_steps fadein 0.5 fadeout 0.5
 
-    "Without a word, the lady bows politely, and bolts past you and Sill, disappearing into the night."
+    "Without a word, the lady bows politely, and bolts past you and Sill, disappearing into the
+    night."
 
     sill "I hope she'll be ok..."
 
@@ -843,17 +865,20 @@ label resume_intro3:
 
     you "Greetings, master Gio. My name is..."
 
-    gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among friends."
+    gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among
+        friends."
 
     you "Wait... How?"
 
     gio "I am Gio Fratello, or Shady Gio, as they call me."
 
-    gio "One of my jobs is to know about anyone unusual who comes and goes in this city. And that alone is a lot of work..."
+    gio "One of my jobs is to know about anyone unusual who comes and goes in this city. And that alone is a lot
+        of work..."
 
     you "I see. Gio, I apologize for the late hour..."
 
-    gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at night, anyway."
+    gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at
+        night, anyway."
 
     $ kuro_name = "Princess"
 
@@ -863,7 +888,8 @@ label resume_intro3:
 
     gio "You're from a faraway land, I forgot..."
 
-    gio "Well, I'm not going to spoil the surprise here. I'm sure you'll meet her properly when the time is right."
+    gio "Well, I'm not going to spoil the surprise here. I'm sure you'll meet her properly when the
+        time is right."
 
     sill sad "Wait! Don't leave us hanging there!"
 
@@ -881,11 +907,13 @@ label resume_intro3:
 
     you "*frown*"
 
-    gio "But wait... It is my understanding that you have come to the city to strike it rich, am I right?"
+    gio "But wait... It is my understanding that you have come to the city to strike it rich, am I
+        right?"
 
     you "..."
 
-    gio "So I am ready to offer you something a lot better than petty cash... And of similar value to the reward the Princess wanted me to give you."
+    gio "So I am ready to offer you something a lot better than petty cash... And of similar value to
+        the reward the Princess wanted me to give you."
 
     you "Go on."
 
@@ -897,13 +925,13 @@ label resume_intro3:
 
     you "Hmm."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         you "Power... hangs at the tip of a sword."
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
         you "Power resides in magic."
 
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
         you "Money is power."
 
     gio "Haha, it is true to some extent, my friend."
@@ -928,18 +956,19 @@ label resume_intro3:
 
     you "Fascinating lecture, professor, but can we move on to the part about my reward?"
 
-    gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you think pulls the strings of our stupid king and his clique?"
+    gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you
+        think pulls the strings of our stupid king and his clique?"
 
     menu:
         "Who?"
 
-        "光明教会?":
+        "The illuminati guild?":
             gio "*roll eyes*"
 
-        "凯撒大帝?":
+        "Kaizer Sauze?":
             gio "*roll eyes*"
 
-        "你的妈妈?":
+        "Yo mamma?":
             gio "*facepalm*"
 
     gio "No! It's the {b}brothel masters{/b}."
@@ -1051,7 +1080,7 @@ label resume_intro3:
 
     scene black with fade
 
-    show princess fucked at top with dissolve:
+    show princess fucked at top with dissolve
 
     gio "That is why they need the brothel masters."
 
@@ -1076,9 +1105,11 @@ label resume_intro3:
     show princess fucked:
         alpha 0.8
 
-    gio "They are men and women who work in the shadows, procuring nobles and rich citizens alike the vices they crave."
+    gio "They are men and women who work in the shadows, procuring nobles and rich citizens alike the
+    vices they crave."
 
-    gio "They can provide any kind of 'entertainment' if you have the gold: women, fairies, animals, even monsters... They can indulge your every possible fantasy."
+    gio "They can provide any kind of 'entertainment' if you have the gold: women, fairies, animals,
+        even monsters... They can indulge your every possible fantasy."
 
     gio "This gives them {b}true{/b} power. They know every one of their customers' dirty secrets..."
 
@@ -1088,7 +1119,8 @@ label resume_intro3:
 
     hide princess with dissolve
 
-    gio "They say even King Pharo I is the pawn of a powerful brothel master, a fellow by the name of 'Cloud'. {i}I{/i} have never met him, however. And I know {i}everyone{/i} in Zan. Almost."
+    gio "They say even King Pharo I is the pawn of a powerful brothel master, a fellow by the
+    name of 'Cloud'. {i}I{/i} have never met him, however. And I know {i}everyone{/i} in Zan. Almost."
 
     stop music fadeout 5.0
 
@@ -1117,22 +1149,24 @@ label shortcut:
 
     gio "All the girls left, but the house is still in order."
 
-    gio "I've decided I'm not good at this racket, but you... You can take over the whorehouse if you want."
+    gio "I've decided I'm not good at this racket, but you... You can take over the whorehouse if
+        you want."
 
-    gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you get a place to stay and conduct your business. What do you think?"
+    gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you
+        get a place to stay and conduct your business. What do you think?"
 
     menu:
         "Well..."
 
-        "那太好了!":
+        "Of course!":
             $ text1 = "Of course"
             jump resume_intro4
 
-        "再好不过!":
+        "Sure!":
             $ text1 = "Well, sure"
             jump resume_intro4
 
-        "真他妈爽!":
+        "Fuck yeah!":
             $ text1 = "Fuck yeah"
             jump resume_intro4
 
@@ -1160,7 +1194,8 @@ label resume_intro4:
 
     sill "Ma... Master?"
 
-    gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very devoted little bitch, that one."
+    gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very
+         devoted little bitch, that one."
 
     play sound s_surprise
 
@@ -1171,11 +1206,11 @@ label resume_intro4:
     menu:
         sill "He's... He's touching my butt!"
 
-        "把你的脏手拿开!":
+        "Stop it already!":
             $ gio_fucked_sill = False
             $ NPC_sill.love += 1
             $ MC.good += 1
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Stop it Gio! She's mine."
 
@@ -1199,7 +1234,8 @@ label resume_intro4:
 
             "His voice is cold."
 
-            gio "And come to my bedchambers after that, bringing the SM equipment. I need to blow off some steam."
+            gio "And come to my bedchambers after that, bringing the SM equipment. I need
+                to blow off some steam."
 
             maid blush "Understood, Master."
 
@@ -1297,11 +1333,11 @@ label resume_intro4:
             jump day1
 
 
-        "下次再说吧，乔...":
+        "Maybe another time, Gio...":
             $ gio_fucked_sill = ""
             $ MC.neutral += 1
             $ NPC_sill.love -= 1
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Look, Gio, it's tempting... But we're all tired."
 
@@ -1331,7 +1367,8 @@ label resume_intro4:
 
             maid "Right here, Master."
 
-            gio "Take our guests to their room, will you. Then, meet me in my room with the 'toybox'."
+            gio "Take our guests to their room, will you. Then, meet me in my room with the
+                'toybox'."
 
             maid "Yes, Master."
 
@@ -1351,7 +1388,8 @@ label resume_intro4:
 
             sill sad "Whaaat?"
 
-            you "You need to learn to respect my wishes, Sill. You are my slave, and I'm the one calling the shots."
+            you "You need to learn to respect my wishes, Sill. You are my slave, and I'm the
+                one calling the shots."
 
             sill "..."
 
@@ -1384,11 +1422,11 @@ label resume_intro4:
             jump day1
 
 
-        "你开心就好":
+        "Sure, why not?":
             $ gio_fucked_sill = True
             $ MC.evil += 1
             $ NPC_sill.love -= 2
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Sounds fun! You can have her."
 
@@ -1445,9 +1483,9 @@ label resume_intro4:
 
             menu:
 
-                "让她跪下用嘴为你口交":
+                "Ask for a blowjob":
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     maid "Of course my lord, please allow me to make you feel good..."
 
@@ -1472,7 +1510,8 @@ label resume_intro4:
 
                     show bg gioblow3 with dissolve
 
-                    "You come all over her face and hair. She engulfs your shaft in her mouth as you keep cumming, trying to make sure to drink some of it."
+                    "You come all over her face and hair. She engulfs your shaft in her mouth as
+                    you keep cumming, trying to make sure to drink some of it."
 
                     "She makes wet noises, swallowing your hot cum eagerly."
 
@@ -1483,9 +1522,9 @@ label resume_intro4:
                     jump maid_fuck
 
 
-                "让她趴在床上撅起屁股":
+                "Fuck her where she stands":
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     "Instead of answering, you push her hard against the wall."
 
@@ -1505,7 +1544,8 @@ label resume_intro4:
 
                     maid "You're... drilling me!!!"
 
-                    "Even though you've just started shoving your dick in her, she is already completely wet."
+                    "Even though you've just started shoving your dick in her, she is already
+                     completely wet."
 
                     you "You're already wet, aren't you, you little slut?"
 
@@ -1545,7 +1585,8 @@ label maid_fuck:
 
     maid blush "Ooooh my lord... You're so... big..."
 
-    "It's hard to believe how wet she is. You can slide in and out of her with ease, even though she is very tight."
+    "It's hard to believe how wet she is. You can slide in and out of her with ease, even though
+     she is very tight."
 
     maid "Oh yes, master [MC.name]! Do it like this..."
 
@@ -1620,14 +1661,15 @@ label maid_fuck:
 
     jump day1
 
-#汉化标签，参照这里的格式修改图片出现的数量#
+
 label day1:
 
     scene black with fade
 
     pause 0.5
-
-    $ renpy.call("chapter", 1)
+    
+    if starting_chapter <= 1:
+        $ renpy.call("chapter", 1)
 
     gio "Behold!"
 
@@ -1639,19 +1681,23 @@ label day1:
 
     show bg slave market2 at top with fade
 
-    "For centuries, slave traders from all of Xeros have converged on Zan to buy and sell the finest slaves on the continent."
+    "For centuries, slave traders from all of Xeros have converged on Zan to buy and sell the finest
+     slaves on the continent."
 
     show bg slave market3 at top with fade
 
-    "They are used for most everyday tasks and are expected to provide all kinds of services... They are what their masters want them to be."
+    "They are used for most everyday tasks and are expected to provide all kinds of
+     services... They are what their masters want them to be."
 
     show bg slave market9 at top with fade
 
-    "Slaves cannot address free people unless spoken to. And, most importantly, slaves can never raise a hand against their betters. This is a very grave offense."
+    "Slaves cannot address free people unless spoken to. And, most importantly, slaves can
+     never raise a hand against their betters. This is a very grave offense."
 
     show bg slave market10 at top with fade
 
-    "Which is why warriors are usually free men and women, except for some of the pitfighters who fight against monsters or other slaves."
+    "Which is why warriors are usually free men and women, except for some of the pitfighters
+     who fight against monsters or other slaves."
 
     show bg slave market5 at top with fade
 
@@ -1659,7 +1705,8 @@ label day1:
 
     show bg slave market4 at top with fade
 
-    "Girls from all over Xeros born, sold, or coerced into slavery, are trained to become perfect sex kittens."
+    "Girls from all over Xeros born, sold, or coerced into slavery, are trained to
+     become perfect sex kittens."
 
     scene black with fade
     show bg slave market6 at topleft with dissolve:
@@ -1671,7 +1718,6 @@ label day1:
     show bg slave market7 as bg2 with dissolve:
         xalign 0.9
         yalign 0.0
-
 
     extend "\nOthers learn to love their life as a slave, begging for their Master's attention."
 
@@ -1707,22 +1753,34 @@ label day1:
 
     you "What!!! Why you... [starting_gold] denars! It was worth at least twice that!!!"
 
-    gio "Oh, well, these are hard times... I'm afraid slaves are not the best quality at that price, but your training will make all the difference, I'm sure. Hehehe..."
+    gio "Oh, well, these are hard times... I'm afraid slaves are not the best quality at that price, but your training will make all the
+         difference, I'm sure. Hehehe..."
 
-    # SET UP CALENDAR
-    $ calendar.updates()
-
-    # Create enemy general for the siege security event
-
-    if dice(2) == 1:
-        $ enemy_general = get_girls(1, free=True, p_traits=["Warrior"])[0]
+    if starting_chapter == 1:
+        call advance_to_chapter(starting_chapter, silent=True, start=True) from _call_advance_to_chapter_2
     else:
-        $ enemy_general = get_girls(1, free=True, p_traits=["Caster"])[0]
+        $ slavemarket_firstvisit = False
+        $ brothel_firstvisit = False
+        $ girls_firstvisit = False
 
-    $ enemy_general.love = -50
+        call advance_to_chapter(starting_chapter, silent=False, start=True)
 
-    if starting_chapter > 1:
-        call debug_load_chapter(starting_chapter) from _call_debug_load_chapter_1
+        jump main
+
+    # # SET UP CALENDAR
+    # $ calendar.updates()
+
+    # # Create enemy general for the siege security event
+
+    # if dice(2) == 1:
+    #     $ enemy_general = get_girls(1, free=True, p_traits=["Warrior"])[0]
+    # else:
+    #     $ enemy_general = get_girls(1, free=True, p_traits=["Caster"])[0]
+
+    # $ enemy_general.love = -50
+
+    # if starting_chapter > 1:
+    #     call debug_load_chapter(starting_chapter) from _call_debug_load_chapter_1
 
     jump slavemarket
 
@@ -1752,10 +1810,12 @@ label slavemarket_first_time:
     if MC.get_alignment() == "good":
         you "No, Sill is my personal slave and I don't want to share her with all of Zan."
     elif MC.get_alignment() == "evil":
-        you "She is a dumb slut, but her skills are lacking. Maybe I'll use her later, as a cum dump for unsatisfied customers."
+        you "She is a dumb slut, but her skills are lacking. Maybe I'll use her later, as a cum
+             dump for unsatisfied customers."
         sill "Noooooo!!!"
     else:
-        you "No, Sill will help with other tasks. I need someone to handle the reception, the accounting, the laundry, the groceries, the cooking, the cleaning..."
+        you "No, Sill will help with other tasks. I need someone to handle the reception,
+             the accounting, the laundry, the groceries, the cooking, the cleaning..."
         "The list goes on and on and Sill looks aghast."
 
     ## TO DO: Implement Sill as a functioning working girl?
@@ -1773,7 +1833,8 @@ label slavemarket_first_time:
     if girl.get_stat("body") >= 20:
         gio "This girl has a good body. Look at those juicy boobs... Mmmmh."
     elif girl.get_stat("beauty") >= 20:
-        gio "This girl is not bad looking. Even if she's useless in bed, she will still attract customers who want to fuck a pretty slut."
+        gio "This girl is not bad looking. Even if she's useless in bed, she will still attract
+             customers who want to fuck a pretty slut."
     elif girl.get_stat("charm") >= 20:
         "[girl.name] slaps Gio's hands off."
         girl.char "Come on now, keep your hands to yourself, granpa."
@@ -1792,34 +1853,6 @@ label slavemarket_first_time:
     gio "Yes, well..."
 
     $ slavemarket_firstvisit = False
-
-    if starting_chapter > 1:
-        call debug_load_chapter(starting_chapter) from _call_debug_load_chapter_2
-        call chapter(starting_chapter, forced=True) from _call_chapter
-
-        if starting_chapter in (1, 6):
-
-            menu:
-                "What will you use as a front for your business?"
-
-                "零点酒吧":
-                    $ brothel.add_room("tavern", forced=True)
-
-                "激情夜店":
-                    $ brothel.add_room("strip club", forced=True)
-
-                "露天温泉":
-                    $ brothel.add_room("onsen", forced=True)
-
-                "艺妓置屋":
-                    $ brothel.add_room("okiya", forced=True)
-
-            $ brothel.free_room = False
-
-        $ district_firstvisit = False
-        $ brothel_firstvisit = False
-
-        jump main_first_time
 
     jump districts_first_time
 
@@ -1878,7 +1911,7 @@ label districts_first_time:
 
     gio "So, while I didn't succeed in making the brothel business take off, I'm sure you will find a way to turn a profit. My instinct tells me so..."
 
-    if MC.playerclass == "奸商":
+    if MC.playerclass == "Trader":
         you "Well, I will have to rely on my legendary business acumen..."
 
     else:
@@ -1901,17 +1934,19 @@ label districts_first_time:
 
 label districts_first_time_slums:
 
-    $ narrator("选择一个区域。", interact = False)
+    $ narrator("Choose a district.", interact = False)
 
     $ ui.interact()
 
-    "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
+    "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the
+     Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host
+     the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
 
-    if not renpy.call_screen("yes_no", "你确定要在贫民窟开设一家新青楼吗?"):
+    if not renpy.call_screen("yes_no", "Do you really want to choose the Slums to open your new brothel?"):
         jump districts_first_time_slums
 
     $ district_firstvisit = False
-    $ renpy.block_rollback()
+    $ norollback()
 
     stop music fadeout 3.0
 
@@ -1942,7 +1977,7 @@ label brothel_first_time:
 
     you "..."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         you "I'll rip your head off..."
 
@@ -1980,15 +2015,15 @@ label brothel_first_time:
 
     you "*hardcore evil stare*"
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         "Gio looks nervous as you start fiddling with your scabbard."
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
 
         "Gio looks nervous as you start muttering a curse."
 
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
 
         "Gio looks nervous as you start eyeing your pet dragon."
 
@@ -2006,7 +2041,6 @@ label brothel_first_time:
     gio "Waitresses with good {b}charm{/b} will keep the customers entertained."
 
     gio "With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
-
 
     show bg stripper at top with fade
 
@@ -2044,7 +2078,7 @@ label brothel_first_time:
     show screen brothel()
     with dissolve
 
-    $ renpy.say(gio, "你想让我帮你修缮哪个场所?", interact = False)
+    $ renpy.say(gio, "Which one of the common rooms do you want me to repair?", interact = False)
 
     $ mychoice = ""
 
@@ -2087,16 +2121,19 @@ label main_first_time:
 
     $ room = rand_choice(brothel.get_common_rooms())
 
-    $ renpy.show("bg " + bgroom_pics[room.name], at_list = [top])
+    $ renpy.show("bg " + room.name, at_list = [top])
     with dissolve
 
     gio "Tadaaa!"
 
     gio "The [room.name] is in order now."
 
-    gio "I'll leave you to it then. Don't forget to assign your girl to work there for the big opening tonight."
+    gio "I'll leave you to it then. Don't forget to assign your girl to work there for the big
+    opening tonight."
 
     $ unlock_achievement("intro")
+
+    call chapter(1) from _call_chapter
 
     show sill happy with fade
 
@@ -2127,7 +2164,8 @@ label main_first_time:
 
     sill happy "While the workers were busy, I went over the old accounting books."
 
-    sill "The old geezer was as bad as he said he was at managing the business, but I think I got a rough idea of how things work."
+    sill "The old geezer was as bad as he said he was at managing the business, but I think I got a rough
+          idea of how things work."
 
     sill "Let us visit your girl, and I will explain."
 

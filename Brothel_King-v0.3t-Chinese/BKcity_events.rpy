@@ -2,7 +2,7 @@
 
 label city_rape:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -40,10 +40,10 @@ label city_rape:
 
     # Challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("攻击它", "fight", selected_district.rank), ("驱逐它", "control", selected_district.rank)], cancel=("逃跑", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight it", "fight", selected_district.rank), ("Banish it", "control", selected_district.rank)], cancel=("Run away", False))
 
     if chal == "fight":
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You ready your weapon."
 
@@ -174,7 +174,7 @@ label city_rape:
 
     elif chal == "control":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You lift your staff high in the air."
 
@@ -306,7 +306,7 @@ label city_rape:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "The beast has now noticed you, and glares at you with murderous eyes..."
 
@@ -336,7 +336,7 @@ label city_monster_menu():
     menu:
         you "Now, this knocked out monster... What should I do with it?"
 
-        "在农场饲养它":
+        "Keep it at the farm":
 
             you "How would you like to get room and board, pal, and fuck some girls all day?"
 
@@ -357,7 +357,7 @@ label city_monster_menu():
 
             "After sending the girl off, you drag the submissive monster to the farm. This consumes all your remaining actions."
 
-        "把它卖给薇儿" if sewers.action:
+        "Sell it to Willow" if sewers.action:
             you "I know someone who can take care of it, making me some money in the process..."
 
             hide screen show_event
@@ -378,7 +378,7 @@ label city_monster_menu():
             $ story_add_event("willow fight", type="city", duplicates=False)
 
 
-        "了结它的生命":
+        "Finish it off":
             $ MC.good -= 1
 
             you "Your days of happily roaming around and randomly banging innocent girls are over, monster. Prepare to die."
@@ -397,7 +397,7 @@ label city_monster_menu():
             scene black
             with dissolve
 
-        "仁慈地放了它":
+        "Spare it":
             $ MC.good += 1
 
             "You can't bring yourself to kill off a wounded opponent."
@@ -421,7 +421,7 @@ label city_monster_menu():
 
 label city_impress:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -457,12 +457,12 @@ label city_impress:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("炫耀身体", "stamina", 4), ("与女孩调情", "charm", 4)], cancel=("无视他们", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Show off", "stamina", 4), ("Flirt with the girls", "charm", 4)], cancel=("Ignore them", False))
     hide screen tool
 
     if chal == "stamina":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Of course I am! Watch and enjoy the show, ladies!"
 
@@ -586,7 +586,7 @@ label city_impress:
 
     elif chal == "charm":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Well, hello, ladies! I'm always one to party..."
 
@@ -680,7 +680,7 @@ label city_impress:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Sorry ladies, I have a schedule to keep."
 
@@ -873,21 +873,16 @@ label city_impress:
         ev_girl1 "You can have it. This will be a nice souvenir..."
 
         if game.chapter >= 3 and dice(6) >= 5:
-            $ MC.items.append(search_items("席米亚科技产物")[0])
-            play sound s_vibro
-            "You have received a rare {b}Cimerian artefact{/b}."
-
+            call receive_item(item_dict["Cimerian artefact"], msg="You have received a rare %s.", use_article=False) from _call_receive_item_30
         else:
-            $ MC.items.append(search_items("席米亚科技废料")[0])
-            play sound s_vibro
-            "You have received a piece of {b}Cimerian scrap{/b}."
+            call receive_item(item_dict["Cimerian scrap"], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_31
 
     return
 
 
 label city_slave:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -929,12 +924,12 @@ label city_slave:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("与她交谈", "rally", 4), ("催眠她", "control", 3)], cancel=("与我无关", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Talk to her", "rally", 4), ("Hypnotize her", "control", 3)], cancel=("Not my concern", False))
     hide screen tool
 
     if chal == "rally":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Let me see if I can talk some sense into her."
 
@@ -1026,7 +1021,7 @@ label city_slave:
 
     elif chal == "control":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I could try an obedience spell."
 
@@ -1140,7 +1135,7 @@ label city_slave:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Sorry, but I can't help you."
 
@@ -1205,25 +1200,25 @@ label city_slave:
 
             "Let me..."
 
-            "插她的喉咙":
+            "Fuck her mouth":
 
                 $ act = "service"
 
-            "干她的小穴":
+            "Fuck her pussy":
 
                 $ act = "sex"
 
-            "操她的菊穴":
+            "Fuck her ass":
 
                 $ act = "anal"
 
-            "做点其他的":
+            "Do something else":
 
                 $ act = "fetish"
 
-            "我没时间浪费在她身上":
+            "I don't have time for this":
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 slavegirl1 "I see, that's too bad then."
 
@@ -1237,7 +1232,7 @@ label city_slave:
 
                 return
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         slavegirl1 "This is a great choice! Let's get to it. *smile*"
 
@@ -1508,7 +1503,7 @@ label city_slave:
 
 label city_gamble:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -1540,9 +1535,9 @@ label city_gamble:
 
         "What will you do?"
 
-        "接受赌局":
+        "Accept":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "A game? Sounds exciting!"
 
@@ -1573,7 +1568,7 @@ label city_gamble:
 
             # Pick challenge
             $ tt = show_tt("top_right")
-            $ chal = renpy.call_screen("challenge_menu", challenges=[("继续", "bluff", selected_district.rank + 2), ("作弊", "cast", selected_district.rank+3)], cancel=("止损", False))
+            $ chal = renpy.call_screen("challenge_menu", challenges=[("Call her out", "bluff", selected_district.rank + 2), ("Cheat", "cast", selected_district.rank+3)], cancel=("Cut your losses", False))
             hide screen tool
 
             if chal == "bluff":
@@ -1582,7 +1577,7 @@ label city_gamble:
                 call challenge(chal, selected_district.rank + 2) from _call_challenge_14 # result is stored in the _return variable
                 $ r = _return
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 if r:
 
@@ -1630,7 +1625,7 @@ label city_gamble:
                 call challenge(chal, selected_district.rank + 3) from _call_challenge_15 # result is stored in the _return variable
                 $ r = _return
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 if r:
 
@@ -1697,7 +1692,7 @@ label city_gamble:
 
             else:
 
-                $ renpy.block_rollback()
+                $ norollback()
 
                 you "It's been a fun game, but it's getting late. I'll play you another time."
 
@@ -1863,9 +1858,9 @@ label city_gamble:
 
 
 
-        "我不赌博":
+        "Refuse":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Sorry, but I'm not one to waste time playing games."
 
@@ -1880,7 +1875,7 @@ label city_gamble:
 
 label city_thief:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -1912,7 +1907,7 @@ label city_thief:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("追捕小偷", "stamina", selected_district.rank + 3), ("诱捕小偷", "cast", selected_district.rank + 3)], cancel=("不理她", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Run after the thief", "stamina", selected_district.rank + 3), ("Ensnare the thief", "cast", selected_district.rank + 3)], cancel=("Ignore her", False))
     hide screen tool
 
     if chal == "stamina":
@@ -1995,7 +1990,7 @@ label city_thief:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "This is none of my concern, really."
 
@@ -2050,7 +2045,7 @@ label city_thief:
 
 label city_wrestle:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -2083,12 +2078,12 @@ label city_wrestle:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("面对他", "force", selected_district.rank + 3), ("运用你的智慧", "bluff", selected_district.rank+2)], cancel=("不理他", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Face him", "force", selected_district.rank + 3), ("Use your wits", "bluff", selected_district.rank+2)], cancel=("Ignore him", False))
     hide screen tool
 
     if chal == "force":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Let's see about that!"
 
@@ -2143,7 +2138,7 @@ label city_wrestle:
 
     elif chal == "bluff":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Oh, a fight with a monkey. I hear they're strong, if a little intellectually-challenged."
 
@@ -2205,7 +2200,7 @@ label city_wrestle:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I can't, I have... stuff to do."
 
@@ -2274,7 +2269,7 @@ label city_wrestle:
 
 label city_cat:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -2334,12 +2329,12 @@ label city_cat:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("寻找她的猫", "charm", selected_district.rank + 3), ("用法术追踪它", "detect", selected_district.rank+3)], cancel=("留下她独自一人", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Look for her cat", "charm", selected_district.rank + 3), ("Track it with a spell", "detect", selected_district.rank+3)], cancel=("Leave her alone", False))
     hide screen tool
 
     if chal == "charm":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Very well, then. I'll help you find her."
 
@@ -2422,7 +2417,7 @@ label city_cat:
 
     elif chal == "detect":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I could locate your 'friend' using a spell. That might work."
 
@@ -2565,7 +2560,7 @@ label city_cat:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Ahem, I don't have time to look for your pet. Anyway, I'm sure she's fine."
 
@@ -2603,13 +2598,13 @@ label city_cat:
 
         with dissolve
 
-        $ it = get_rand_item(rank=0 + brothel.get_effect("change", "city rewards"))
+        $ _rank = 0 + brothel.get_effect("change", "city rewards")
+        $ it = get_rand_item(rank=_rank)
 
-        $ item_name = "{b}" + article(it.name.lower()) + "{/b}"
-
-        "You have received [item_name]."
-
-        $ MC.items.append(it)
+        if it:
+            call receive_item(it) from _call_receive_item_32
+        else:
+            bk_error "Couldn't generate Item for rank [_rank]"
 
         if result > 1:
 
@@ -2834,7 +2829,7 @@ label city_cat:
 
 label city_secret:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -2874,12 +2869,12 @@ label city_secret:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("用蛮力打开", "force", selected_district.rank + 3), ("用魔法打开", "detect", selected_district.rank+3)], cancel=("离开", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Force the door open", "force", selected_district.rank + 3), ("Reveal with magic", "detect", selected_district.rank+3)], cancel=("Walk away", False))
     hide screen tool
 
 
     if chal == "force":
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "There's nothing that can't be solved with a little violence."
 
@@ -2915,7 +2910,7 @@ label city_secret:
 
     elif chal == "detect":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "Stepping back, you take a pouch from your belt."
 
@@ -2954,7 +2949,7 @@ label city_secret:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You don't see any easy way to open it."
 
@@ -2967,7 +2962,7 @@ label city_secret:
         return
 
 
-    if r:
+    if r: # 33% * 50% chance of yielding a Wyvern egg (1 in 6)
 
         with fade
 
@@ -2995,13 +2990,13 @@ label city_secret:
 
             with dissolve
 
-            $ it = get_rand_item(rank = selected_district.rank + brothel.get_effect("change", "city rewards"))
+            $ _rank = selected_district.rank + brothel.get_effect("change", "city rewards")
+            $ it = get_rand_item(rank=_rank)
 
-            $ item_name = "{b}" + article(it.name.lower()) + "{/b}"
-
-            "You have received [item_name]."
-
-            $ MC.items.append(it)
+            if it:
+                call receive_item(it) from _call_receive_item_33
+            else:
+                bk_error "Couldn't generate Item for rank [_rank]"
 
         else:
 
@@ -3041,7 +3036,7 @@ label city_secret:
 
             "She reaches a quiet orgasm as you watch, apparently the latest in a long series."
 
-            "You notice something, shoved into one of the girl's slutty holes."
+            "You notice something unexpected, shoved into one of the girl's slutty holes."
 
             you "Do you mind?"
 
@@ -3055,13 +3050,17 @@ label city_secret:
 
             with dissolve
 
-            $ it = get_rand_item(rank = selected_district.rank + brothel.get_effect("change", "city rewards"))
+            $ _rank = selected_district.rank + brothel.get_effect("change", "city rewards")
 
-            $ item_name = "{b}" + article(it.name.lower()) + "{/b}"
+            if _rank >= 3 and dice(6 >= 4):
+                $ it = wyvern_egg
+            else:
+                $ it = get_rand_item(rank=_rank)
 
-            "You have received [item_name]."
-
-            $ MC.items.append(it)
+            if it:
+                call receive_item(it) from _call_receive_item_34
+            else:
+                bk_error "Couldn't generate Item for rank [_rank]"
 
     else:
 
@@ -3076,7 +3075,7 @@ label city_secret:
 
 label city_gypsy:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -3103,23 +3102,23 @@ label city_gypsy:
     show image gypsy at center
     with dissolve
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
-        $ nickname = "大个子"
+        $ nickname = "Big man"
 
-        $ nickname_l = "大个子"
+        $ nickname_l = "big man"
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
 
-        $ nickname = "奇怪的家伙"
+        $ nickname = "Weird man"
 
-        $ nickname_l = "奇怪的家伙"
+        $ nickname_l = "weird man"
 
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
 
-        $ nickname = "有趣的家伙"
+        $ nickname = "Funny man"
 
-        $ nickname_l = "有趣的家伙"
+        $ nickname_l = "funny man"
 
     play sound s_surprise
 
@@ -3147,12 +3146,12 @@ label city_gypsy:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("修复马车", "force", selected_district.rank + 3), ("带来一些客户", "rally", selected_district.rank+3)], cancel=("拒绝帮助", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fix the wagon", "force", selected_district.rank + 3), ("Bring some customers", "rally", selected_district.rank+3)], cancel=("Decline to help", False))
     hide screen tool
 
     if chal == "force":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I could always try to fix your ride... Let me have a look."
 
@@ -3228,7 +3227,7 @@ label city_gypsy:
 
     elif chal == "rally":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I can go to the main street, and tell people about your services. Word of mouth could help."
 
@@ -3316,7 +3315,7 @@ label city_gypsy:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "I'm sorry, but I can't do anything about it. Best of luck with your problem."
 
@@ -3356,13 +3355,13 @@ label city_gypsy:
 
         with dissolve
 
-        $ it = get_rand_item(rank = selected_district.rank + brothel.get_effect("change", "city rewards"))
+        $ _rank = selected_district.rank + brothel.get_effect("change", "city rewards")
+        $ it = get_rand_item(rank=_rank)
 
-        $ item_name = "{b}" + article(it.name.lower()) + "{/b}"
-
-        "You have received [item_name]."
-
-        $ MC.items.append(it)
+        if it:
+            call receive_item(it) from _call_receive_item_35
+        else:
+            bk_error "Couldn't generate Item for rank [_rank]"
 
 
     elif result == 2:
@@ -3458,13 +3457,13 @@ label city_gypsy:
 
         with dissolve
 
-        $ it = get_rand_item(rank = selected_district.rank + brothel.get_effect("change", "city rewards"))
+        $ _rank = selected_district.rank + brothel.get_effect("change", "city rewards")
+        $ it = get_rand_item(rank=_rank)
 
-        $ item_name = "{b}" + article(it.name.lower()) + "{/b}"
-
-        "You have received [item_name]. You have earned prestige."
-
-        $ MC.items.append(it)
+        if it:
+            call receive_item(it) from _call_receive_item_36
+        else:
+            bk_error "Couldn't generate Item for rank [_rank]"
 
         $ MC.change_prestige(selected_district.rank * brothel.get_effect("boost", "city rewards"))
 
@@ -3474,7 +3473,7 @@ label city_gypsy:
 
 label city_rob:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -3516,12 +3515,12 @@ label city_rob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("保护自己", "fight", girl_def), ("魅惑她", "charm", girl_def)], cancel=("给她金币", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Defend yourself", "fight", girl_def), ("Charm her", "charm", girl_def)], cancel=("Give her some gold", False))
     hide screen tool
 
     if chal == "fight":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You are not going to let yourself be pushed over by a girl."
 
@@ -3658,7 +3657,7 @@ label city_rob:
 
     elif chal == "charm":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You decide to charm your way out of this."
 
@@ -3803,7 +3802,7 @@ label city_rob:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You decide it's best to avoid a confrontation."
 
@@ -3902,7 +3901,7 @@ label city_rob:
 
 label city_ambush:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -3940,11 +3939,11 @@ label city_ambush:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("反击", "fight", ambush_attack), ("施展法术", "cast", ambush_attack+1)], cancel=("逃跑", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight back", "fight", ambush_attack), ("Cast a spell", "cast", ambush_attack+1)], cancel=("Run for your life", False))
     hide screen tool
 
     if chal == "fight":
-        $ renpy.block_rollback()
+        $ norollback()
 
         "You won't give up without a fight."
 
@@ -4065,7 +4064,7 @@ label city_ambush:
 
     elif chal == "cast":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Come on, punk, make my day."
 
@@ -4207,7 +4206,7 @@ label city_ambush:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Aaaaaah!!!!"
 
@@ -4256,7 +4255,7 @@ label city_ambush:
 
 label city_mob:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -4304,12 +4303,12 @@ label city_mob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("施加控制法术", "control", mob_power), ("发表演讲", "rally", mob_power)], cancel=("用金币转移注意力", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("Cast a control spell", "control", mob_power), ("Make a speech", "rally", mob_power)], cancel=("Divert attention with gold", False))
     hide screen tool
 
     if chal == "control":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         man "You! Confess! You're a devil worshipper, aren't you! A mage, a witch! Maybe even a druid!"
 
@@ -4344,7 +4343,7 @@ label city_mob:
 
     elif chal == "rally":
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         "Stepping on a nearby crate, you turn to face the angry crowd."
 
@@ -4406,7 +4405,7 @@ label city_mob:
 
     else:
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         you "Oh, wait! What's this?"
 
@@ -4554,38 +4553,38 @@ label city_mob:
 
 label city_none:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
-    $ choices = ["你在%s漫步。没有什么有意思的事情发生。", "在%s愉快地走了一圈后，你决定是时候回家了。",
-                 "今天的%s很平静。你散步很愉快。", "你花了些许时间，浏览了%s附近路过的商人兜售的商品。但是你没有找到喜欢的东西。",
-                 "你坐在%s附近的长椅上，看着人们来来往往，对着漂亮的女孩吹口哨，度过了一段美好的时光。然而没有什么人注意到你。",
-                 "在%s附近散步，你没有看到什么特别的东西。浪费时间。"]
+    $ choices = ["You take a stroll through the %s. Nothing meaningful happens.", "After a pleasant walk around the %s, you decide it's time to head home.",
+                 "The %s is peaceful today. You have a pleasant walk.", "You spend time browsing the wares of some passing merchants near the %s. In the end, you don't find anything you like.",
+                 "You have a nice time sitting on a bench near the %s, watching people come and go and whistling at pretty girls. None pay you any attention, however.",
+                 "Walking around the %s, you see nothing special. A waste of time."]
 
     if MC.get_alignment() == "good":
 
-        $ choices.append("你走在%s的人群中间。在这样一个美好的日子里，每个人看起来都很友好.")
+        $ choices.append("You walk among the good people of the %s. Everyone looks friendly on such a beautiful day.")
 
     elif MC.get_alignment() == "neutral":
 
-        $ choices.append("看着%s人来人往，你想知道如何能从他们的努力中获利.")
+        $ choices.append("Watching people come and go through the %s, you wonder how you could profit from their endeavors.")
 
     elif MC.get_alignment() == "evil":
 
-        $ choices.append("%s是一群可悲的、恶毒的人，就像其他地方一样。你挤过这群失败者，你鄙视他们所有人.")
+        $ choices.append("The people of the %s are a wretched and vicious bunch, just like anywhere else. Elbowing your way through this crowd of losers, you despise them all.")
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
 
-        $ choices.append("在%s的角落和阴影中，你看到了谨慎但明确无误的崇拜莎莉娅的迹象。你赞许地点点头.")
+        $ choices.append("In the nooks and shadows of the %s, you see discreet but unmistakable signs of Shalia worship. You nod approvingly.")
 
-    elif MC.god == "太阳神":
+    elif MC.god == "Arios":
 
-        $ choices.append("看着一群游荡在%s的朝圣者，你看到一些张扬的、直言不讳的太阳神崇拜者，把他们的信仰放在袖子上。其他人则比较谦逊，在默默的祈祷中跟随偶像。你想知道哪些人是真正的信徒.")
+        $ choices.append("Looking at a group of pilgrims crossing the %s, you see some flamboyant, outspoken worshippers of Arios, wearing their faith on their sleeves. Others are more humble, and follow the idols in silent prayer. You wonder which ones are the true faithful.")
 
     else:
 
-        $ choices.append("各种各样的宗教狂人正带着狂热的目光穿过%s，声称要听从某个神的命令。你告诉自己，“人民的香料”，你不相信地摇着头.")
+        $ choices.append("All sorts of religious nuts are travelling through the %s with feverish eyes, claiming to do the bidding of one god or another. 'Spice of the people', you tell yourself, shaking your head in disbelief.")
 
     $ text1 = rand_choice(choices) % loc
 
@@ -4596,11 +4595,11 @@ label city_none:
 
 label city_gossip(gossip=None):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
-    $ text1 = rand_choice(("一些有趣的八卦", "一个令人不安的谣言", "一个奇怪的故事", "一个有趣的传言", "一句告诫"),)
+    $ text1 = rand_choice(("some juicy gossip", "a disturbing rumor", "a curious story", "an interesting tale", "a word of warning"),)
 
     $ actor = article(__(selected_district.get_rand_pop().get_rand_name()))
 
@@ -4628,7 +4627,7 @@ label city_luck():
     "You have received %(gain)d gold."
 
     if dice(6) == 6:
-        $ npc = rand_choice(["男人", "女人", "男生", "女生", "老爷爷", "老婆婆"])
+        $ npc = rand_choice(["Man", "Woman", "Young man", "Young woman", "Old man", "Old woman"])
         npc "Oh no... Where is it? It must be around here..."
 
         "Someone seems to be looking for their lost belongings."
@@ -4638,7 +4637,7 @@ label city_luck():
         menu:
             "What do you do?"
 
-            "私吞金币":
+            "Keep the gold":
 
                 $ MC.good -= 1
 
@@ -4650,7 +4649,7 @@ label city_luck():
 
                 npc "Aw..."
 
-            "归还失物":
+            "Give back the gold":
 
                 $ MC.good += 1
 
@@ -4683,6 +4682,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
     $ girl = rand_choice(get_resting_girls())
 
     if not girl:
+        $ debug_notify("no girl available for beach event")
         return
 
     # Only girls with a suitable pic may trigger this event
@@ -4691,6 +4691,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
     if not beach_pic:
         $ beach_pic = girl.get_pic("beach", "swimsuit", naked_filter=False, soft=True, strict=True)
         if not beach_pic:
+            $ debug_notify("no beach pic available for beach event")
             return
     # Not naked since she's hanging in the beach with her swimsuit.
     # Shouldnt have wet tag since it can mess with the oil rub event.
@@ -4737,7 +4738,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
     menu:
         extend ""
 
-        "你想不想涂点防晒油?[s1]":
+        "Would you like some tanning oil?[s1]":
             you "The sun is getting high, I wouldn't want you to get sunburnt. Let me help you..."
 
             $ result = False
@@ -4787,23 +4788,23 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 menu:
                     extend ""
 
-                    "抚摸她的臀部[s1]":
+                    "Grope her ass[s1]":
                         $ fix = "groping her ass"
 
-                    "揉捏她的胸部[s2]":
+                    "Fondle her boobs[s2]":
                         $ fix = "fondling her boobs"
 
-                    "用手指挑逗她[s3]":
+                    "Finger her[s3]":
                         $ fix = "fingering"
 
-                    "就到此为止吧":
+                    "Leave it at that":
                         $ fix = None
 
                 if fix:
                     if girl.personality_unlock[fix] and girl.check_fix(fix) == "pos":
-                        $ narrator("你记得[girl.name]喜欢%s，并决定利用她的弱点." % fix_description[fix + " description"][:-1])
+                        $ narrator("You remember [girl.name] likes %s, and decide to exploit her weakness." % fix_description[fix + " description"][:-1])
                     elif girl.personality_unlock[fix] and girl.check_fix(fix) == "neg":
-                        $ narrator("你清楚[girl.name]不喜欢%s，但你还是决定去做." % fix_description[fix + " description"][:-1])
+                        $ narrator("You remember [girl.name] dislikes %s, but you decide to go for it anyway." % fix_description[fix + " description"][:-1])
 
                     if fix == "groping her ass":
                         "Pretending you're still massaging her, you bring your hands closer and closer to her buttocks. She says nothing, although you can feel some tension build up."
@@ -4875,7 +4876,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         $ s1 = get_fix_weakness_symbol(girl, "denied orgasm")
 
                         menu:
-                            "让她高潮":
+                            "Make her come":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["orgasm"] + fix_dict[fix].tag_list[0], not_tags=["cumshot", "sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                 if not pic:
                                     $ pic = girl.get_pic(["orgasm"] + fix_dict[fix].tag_list[0], strict=True, not_tags=["sex", "anal", "group", "bisexual"], hide_farm=True)
@@ -4896,7 +4897,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                                 $ stat1 = "libido"
                                 $ stat2 = rand_choice(["obedience", "sensitivity"])
 
-                            "禁止高潮[s1]":
+                            "Deny her orgasm[s1]":
                                 $ pic = girl.get_pic("beach", "swimsuit", "wet", and_tags=["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
                                 if not pic:
                                     $ pic = girl.get_pic(["denied"], not_tags=["sex", "anal", "group", "bisexual"], strict=True, hide_farm=True)
@@ -4954,7 +4955,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 "Disappointed, you take your leave."
 
 
-        "和我云雨一番":
+        "Have sex with me":
 
             you "I'm feeling horny right now. Let's fuck."
 
@@ -4965,7 +4966,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             $ s1 = get_fix_weakness_symbol(girl, "public acts")
 
             menu:
-                "让我们在众目睽睽之下做吧[s1]":
+                "Let's do it in plain sight[s1]":
                     you "Yes, here! I don't care who's watching... Let's do it!"
 
                     if girl.check_fix("public acts") == "neg" and girl.get_stat("obedience") <= 150:
@@ -4994,7 +4995,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                         "She darts away from you, leaving you looking stupid with a useless boner."
 
 
-                "让我们找个没人的地方做吧":
+                "Let's hide":
                     you "Let us hide behind some rocks..."
 
                     if girl.check_fix("public acts") != "neg" and girl.is_("lewd") and girl.get_stat("libido") > 150:
@@ -5037,7 +5038,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 menu:
                     "What will you have her do?"
 
-                    "吮吸你的肉棒[s1]":
+                    "Suck your dick[s1]":
                         $ act = "service"
                         $ fix = "oral"
 
@@ -5052,7 +5053,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         you "Open your mouth and look me in the eyes..."
 
-                    "让她给你乳交[s2]":
+                    "Give you a titjob[s2]":
                         $ act = "service"
                         $ fix = "titjobs"
 
@@ -5066,7 +5067,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         you "I've got my eyes on your titties for some time... Why don't you use them to pleasure me?"
 
-                    "掰开她的小穴[s3]":
+                    "Have sex[s3]":
                         $ act = "sex"
                         $ fix = None
 
@@ -5327,7 +5328,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             else:
                 "Disappointed, you go back to your other business."
 
-        "准备好服务客人":
+        "Get ready to serve some customers":
             $ MC.good -= 1
             you "Well, I hope you enjoyed your time off - because it's over now."
 
@@ -5343,7 +5344,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             call dialogue(girl, "beach whoring request") from _call_dialogue_249
 
             menu:
-                "付她双倍的工资":
+                "Pay double her upkeep":
                     $ upk = round_int(girl.upkeep * girl.get_effect("boost", "total upkeep") * 2)
                     $ MC.good += 0.5
                     you "Listen, I'll give you... double your regular upkeep. How does that sound?"
@@ -5355,14 +5356,14 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                     else:
                         $ target -= 25
 
-                "付她正常的工资":
+                "Pay her regular upkeep":
                     $ upk = round_int(girl.upkeep * girl.get_effect("boost", "total upkeep"))
                     $ MC.neutral += 1
                     you "I'll pay your normal upkeep, of course. It's only fair..."
 
                     girl.char "..."
 
-                "她应该无偿劳动":
+                "Don't pay her":
                     $ upk = 0
                     $ MC.evil += 1
                     you "I own you, so why should I care about your opinion? Get your ass to work!"
@@ -5425,19 +5426,19 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
             menu:
                 "Choose what [girl.name] will do."
 
-                "侍奉[s1]":
+                "Service[s1]":
                     $ act = "service"
                     you "You there, get yourself ready. [girl.name] will take good care of you..."
 
-                "做爱[s2]":
+                "Sex[s2]":
                     $ act = "sex"
                     you "One of you lucky bastards can get laid today... You! Step forward."
 
-                "肛交[s3]":
+                "Anal sex[s3]":
                     $ act = "anal"
                     you "Did someone say 'anal sex'? You've come to the right place!"
 
-                "群交[s4]":
+                "Group sex[s4]":
                     $ act = "group"
                     you "Chill, guys, there's no need to fight: [girl.fullname] will serve all of you today!"
 
@@ -5494,7 +5495,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 elif act == "sex":
                     "The man starts fucking [girl.name] wildly and she does her best to give him a good time."
 
-                    if pop_virginity():
+                    if girl.pop_virginity():
                         "She yelps with pain as he enters her, forcing her hymen open. She is no longer a virgin."
                         $ base_tip_change = 100
 
@@ -5509,7 +5510,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                     if pic.has_tag("sex"):
                         "The men fuck her eagerly, and she does her best to make sure all of them are having fun."
 
-                        if pop_virginity():
+                        if girl.pop_virginity():
                             man "Oh, man, look at that! She was a virgin, hahaha..."
 
                             passerby "Unbelievable!"
@@ -5603,18 +5604,18 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                     if act == "group":
                         act = "sex"
                         nb += 2
-                        tip = girl.get_tip(act, "good", [Customer(selected_district.get_rand_pop()), Customer(selected_district.get_rand_pop())], base_tip_change)
+                        tip = girl.get_tip(act, "good", [Customer(selected_district.get_rand_pop()), Customer(selected_district.get_rand_pop())], base_tip_change)[0]
                         en = 10 # Energy loss is more generous for that event
                     else:
                         nb += 1
-                        tip = girl.get_tip(act, "good", [Customer(selected_district.get_rand_pop())], base_tip_change)
+                        tip = girl.get_tip(act, "good", [Customer(selected_district.get_rand_pop())], base_tip_change)[0]
                         en = 5 # Energy loss is more generous for that event
 
                 "She ends up serving a total of [nb] customers."
 
                 python:
                     for i in range(nb):
-                        tip += girl.get_tip(act, "average", [Customer(selected_district.get_rand_pop())])
+                        tip += girl.get_tip(act, "average", [Customer(selected_district.get_rand_pop())])[0]
                         en += 5
 
                 $ MC.gold += tip - upk
@@ -5635,24 +5636,24 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                 girl.char "What? No, I'm not going to do that with this guy!"
 
                 menu:
-                    "你怎么敢!":
-                        $ MC.rand_say(("我是你的主人。你将会服从我。", "你要按我说的去做！因为这就是板上钉钉的!!!",
-                            "ev: 闭嘴，婊子。我制定的规则！", "gd: 我的耐心已经到了极限。这次你别想逃过去."))
+                    "How dare you!":
+                        $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
+                            "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with this this time."))
 
                         call fight_attempt(girl, act, 2, outside=True) from _call_fight_attempt_21
 
                         if _return:
-                            you "该死的你!你就等着我再抓到你..."
+                            you "Damn you! Just you wait until I catch you again..."
                         else:
-                            you "嗯，你根本不值得我这么麻烦....下次你最好照我说的做!"
+                            you "Hmph, you're not even worth the trouble... You'd better do what I tell you next time!"
 
-                            "你知道她现在的状态不适合接待顾客。你很沮丧，让她收拾东西回青楼去."
+                            "You realize she is in no shape to serve customers now. Frustrated, you tell her to pack her things and go back to the brothel."
 
                             $ girl.change_stat("obedience", 2)
 
-                    "放弃计划":
-                        $ MC.rand_say(("好吧... 用你的方式吧。", "我不能相信这些天的奴隶... 很好！", "ne: 哼哼。我这次就放你一马。你欠我个人情。",
-                                        "gd: 好吧，好吧。我不打算强迫你做你讨厌的事情。", "ev: 操，这次我让你....但也请你不要考验我的耐心。"))
+                    "Give up":
+                        $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
+                                        "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)
@@ -5661,7 +5662,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                         return
 
-        "什么也不做 (离开)":
+        "Nothing (Leave)":
             you "All right, I'll see you at [brothel.name]."
 
     hide screen show_event

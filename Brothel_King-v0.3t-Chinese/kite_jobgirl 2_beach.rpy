@@ -135,7 +135,9 @@ label jobgirl_beach_2():
 
     you "(There she is... Oh, gods...)"
 
-    show beach_arrival at top with fade
+    hide bg
+    show beach_arrival at top
+    with fade
 
     you "(This is definitely my lucky day!)"
 
@@ -213,7 +215,7 @@ label jobgirl_beach_2():
 
     "You follow them to have a good time in the water."
 
-    scene beach_friend_2 at top with dissolve
+    show beach_friend_2 at top with dissolve
 
     play sound s_splash
 
@@ -228,9 +230,9 @@ label jobgirl_beach_2():
 
     anika "Payback time! Here comes the tickling!"
 
-    jobgirl "Oh no! I hate it! NNuoahahah! Pleaseeahah stop! uhnaaahahah!! EEk! I'm losing my top!"
+    jobgirl "Oh no! I hate it! NNuoahahah! Pleaseeahah stop! uhnaaahahah!! Eek! I'm losing my top!" with vpunch
 
-    you "(*huge nosebleed*)"
+    you "*huge nosebleed*"
 
     scene black with fade
 
@@ -289,7 +291,7 @@ label jobgirl_beach_3():
     "You take your coin purse and head towards the direction Anika indicated."
     "The kiosk for cool drinks is not so far; you order two cocktails for the girls."
 
-    $ chosen_drink = menu([("你想来杯什么饮料?", None), ("高浓度麦芽酒", 1),("和她们一样", 2),("鲜榨果汁", 3)])
+    $ chosen_drink = menu([("What do you want to get for yourself?", None), ("A strong ale", 1),("Same as the girls", 2),("A fruit juice", 3)])
 
     you "It's nice and fresh! Man, ice magic is really awesome..."
 
@@ -349,7 +351,7 @@ label jobgirl_beach_3():
 
     "You have spent all your actions for the day."
 
-    "(Keep visiting the {b}beach{/b} after some time to meet the girls again.)"
+    "Keep visiting the {b}beach{/b} after some time to meet the girls again."
 
     $ NPC_jobgirl.flags["stage"] = 4
 
@@ -404,11 +406,11 @@ label jobgirl_beach_4():
     "If not for her swimsuit, you could clearly see her cunt. You realize that she's teasing you, but you're not sure if she really wants it, or she's testing you. Maybe she's got ulterior motives."
 
     menu:
-        "为什么, 那还用问？ 我想和她上床":
+        "Why, yes, I'd like to fuck her":
 
             you "Damn right I wanna fuck her, she's so hot! Are you going to help me or put a stick in my wheel?"
 
-        "谁, 我? 不可能的!":
+        "Who, me? Nope!":
 
             you "I'm not so mean. I don't want to do what you said. Nor am I looking to do 'naughty things' right now. For now I just want to know her better."
 
@@ -456,7 +458,7 @@ label jobgirl_beach_4():
 
     menu:
 
-        "掏出肉棒":
+        "Pull out your cock":
 
             $ NPC_jobgirl.flags["anika_sex"] = True
 
@@ -594,7 +596,7 @@ label jobgirl_beach_4():
 
             menu:
 
-                "射在里面":
+                "Cum inside":
 
                     anika "Are you going to fill me with your semen?"
 
@@ -608,7 +610,7 @@ label jobgirl_beach_4():
 
                     anika "I... aaah... came again..."
 
-                "拔出来":
+                "Pull out":
 
                     "A few instants before you ejaculate, you pull your cock out of her, then shoot your load on her buttocks."
 
@@ -707,7 +709,7 @@ label jobgirl_beach_4():
             play sound s_door_close
 
 
-        "拒绝她":
+        "Don't indulge her":
 
             you "Are you serious? We barely know each other!"
 
@@ -785,7 +787,7 @@ label jobgirl_beach_5():
 
     show bg beach at top
 
-  ## if MC fucked Anika in part 4
+    ## if MC fucked Anika in part 4
 
     if NPC_jobgirl.flags["anika_sex"]:
 
@@ -809,7 +811,7 @@ label jobgirl_beach_5():
 
         jobgirl "Hey what's up? Are you disappointed? I'm the one who should be! You screwed my best friend practically in front of me - well, figuratively speaking, since I wasn't there, but it doesn't matter!"
 
-        you "Ookay, you're right, but now try to calm down a little-"
+        you "Okay, you're right, but now try to calm down a little-"
 
         hide beach_sit
 
@@ -870,7 +872,7 @@ label jobgirl_beach_5():
 
         $ NPC_jobgirl.corruption += 5
 
-  ## if in part 3 MC didn't have sex with Anika
+    ## if in part 3 MC didn't have sex with Anika
 
     else:
 

@@ -5,7 +5,7 @@ label c1_gio_is_back:
     if debug_mode:
         return
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     play music m_gio fadein 3.0
 
@@ -38,7 +38,7 @@ label c1_gio_is_back:
 
     you "Go on..."
 
-    gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[game.goals[0].value] denars{/b},
+    gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[blist[2].cost] denars{/b},
          we should be able to afford a new place and bribe the city guard for our first license."
 
     sill "That's... That's a lot of money!"
@@ -69,7 +69,7 @@ label c1_gio_is_back:
 
 label c1_meet_kosmo:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     hide screen home
     hide screen tool
@@ -112,17 +112,17 @@ label c1_meet_kosmo:
 
     menu:
 
-        "阁下是?":
+        "Who are you?":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Who the hell are you?"
 
             kosmo "Oh, it speaks our language..."
 
-        "滚出去！":
+        "Get out.":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Hey, you!  Get the hell out of my property!"
 
@@ -132,9 +132,9 @@ label c1_meet_kosmo:
 
             you "What? What do you mean???"
 
-        "草泥马!":
+        "Yo mamma!":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Well, this filthy hovel was good enough for your mamma... We made a killing yesterday thanks to her."
 
@@ -185,27 +185,27 @@ label c1_meet_kosmo:
 
     menu:
 
-        "给我滚开！":
+        "Piss off":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "You've had your fun. Now fuck off. And don't come back."
 
             kosmo angry "Hey! You're addressing a Zan Lord! Don't forget your place, worm..." with vpunch
 
-        "我要狠狠地教训你":
+        "I'll kick your ass":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
-            if MC.playerclass == "战士":
+            if MC.playerclass == "Warrior":
 
                 you "Good one. I wonder if you'll laugh as much with five inches of steel in your belly."
 
-            elif MC.playerclass == "法师":
+            elif MC.playerclass == "Wizard":
 
                 you "Ok, now... Toad, or slug? Which one would you prefer I turn you into?"
 
-            elif MC.playerclass == "奸商":
+            elif MC.playerclass == "Trader":
 
                 you "Sill! Wake Drogon, will you?"
 
@@ -213,9 +213,9 @@ label c1_meet_kosmo:
 
                 show kosmo angry
 
-        "草泥马的":
+        "Yo mamma":
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             you "Now, if you'll excuse me... Talking about pigs and sows, it's time to feed your mamma."
 
@@ -257,23 +257,23 @@ label c1_meet_kosmo:
 
     menu:
 
-        "希露是非卖品":
-            $ renpy.block_rollback()
+        "Sill's not for sale":
+            $ norollback()
             $ MC.good += 1
             $ NPC_sill.love += 1
             you "Sill is mine, and I'm not ever selling her."
             sill happy "Oh, Master!"
             kosmo angry "Oh, really? We'll see about that."
 
-        "卖给谁也不会卖给你的":
-            $ renpy.block_rollback()
+        "I'm not selling to you":
+            $ norollback()
             $ MC.neutral += 1
             you "Whatever, I'm not selling anyone or anything to the likes of you."
             sill "Please, don't sell me!"
             kosmo angry "Such arrogance!!!" with vpunch
 
-        "五千金币拒绝还价":
-            $ renpy.block_rollback()
+        "How about 5000 gold":
+            $ norollback()
             $ MC.evil += 1
             $ NPC_sill.love -= 1
             you "5000 gold will do."
@@ -335,7 +335,7 @@ label c1_ambush:
 
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -449,7 +449,7 @@ label c1_ambush:
 
     "Half-a-dozen masked men are rushing towards you. Others are coming from the back. They are blocking all escape routes."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         play sound s_sword_sheath
 
@@ -475,7 +475,7 @@ label c1_ambush:
 
         you "These men are no small-time thugs... They have training... *sweat*"
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
 
 
         play sound s_spell
@@ -503,7 +503,7 @@ label c1_ambush:
 
         "On a nearby roof, an attacker is arming a crossbow. Your barrier is starting to yield, and you know it won't be enough to stop bolts from passing through."
 
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
 
         you "Sill! Where is Drogon!"
 
@@ -675,7 +675,7 @@ label c1_reached_goal:
 
     stop music fadeout 2.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     play music m_gio
 
@@ -709,7 +709,7 @@ label c1_reached_goal:
 
     "Go to the {b}watchtower{/b} and meet with the lieutenant."
 
-    $ game.set_task(__("带 %s 金币到{b}瞭望塔{/b}交给中尉。") % game.goals[0].value)
+    $ game.set_task(__("Bring %s gold to the lieutenant at the {b}watchtower{/b}.") % blist[2].cost)
 
     $ story_flags["c1_goal_reached"] = True
 
@@ -722,7 +722,7 @@ label c1_visit_watchtower:
 
     ## Happens automatically when c1 goal reached and visiting location watchtower with 1000 gold
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -850,19 +850,19 @@ label c1_visit_watchtower:
 
     $ calendar.set_alarm(calendar.time+1, Event(label = "c1_guards_visit"))
 
-    $ game.set_task("等待你的营业许可证送达。")
+    $ game.set_task("Wait for your license to be delivered.")
 
     return
 
 
 label c1_guards_visit:
 
-    if MC.gold < game.goals[0].value:
+    if MC.gold < blist[2].cost:
         sill happy "Today is the day we get our new license! You've got the gold, right?"
 
         you "Well, it's embarrassing... I seem to have misplaced it."
 
-        sill sad "What??? We need that [game.goals[0].value] gold, fast!"
+        sill sad "What??? We need that [blist[2].cost] gold, fast!"
 
         $ calendar.set_alarm(calendar.time+1, Event(label = "c1_guards_visit"))
 
@@ -870,7 +870,7 @@ label c1_guards_visit:
 
     ## Happens after visiting watchtower
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -935,14 +935,14 @@ label c1_guards_visit:
 
     guard "Well, this is all the proof we need. Serious violations of city edicts all over the place."
 
-    if MC.playerclass == "战士":
-            $ text1 = "非法持有武器"
+    if MC.playerclass == "Warrior":
+            $ text1 = "illegal weapon possession"
 
-    elif MC.playerclass == "法师":
-            $ text1 = "私藏危险魔法药物"
+    elif MC.playerclass == "Wizard":
+            $ text1 = "possession of hazardous magical drugs"
 
-    elif MC.playerclass == "奸商":
-            $ text1 = "非法进口异国宠物"
+    elif MC.playerclass == "Trader":
+            $ text1 = "illegally importing an exotic pet"
 
     show black as black2 with fade
 
@@ -962,9 +962,9 @@ label c1_guards_visit:
 
     you "Wait! We have a pending registration at the city office... The lieutenant said..."
 
-    guard "Yeah, sure! They all say that... All right, time to pay for your crimes. It will be [game.goals[0].value] gold."
+    guard "Yeah, sure! They all say that... All right, time to pay for your crimes. It will be [blist[2].cost] gold."
 
-    sill "[game.goals[0].value] gold! But we need that money..." with vpunch
+    sill "[blist[2].cost] gold! But we need that money..." with vpunch
 
     guard "Shut up, slave! Pay now, or come with us to the dungeon. You choose."
 
@@ -977,7 +977,7 @@ label c1_guards_visit:
     "You end up paying the guards. They leave eventually, after turning [brothel.name] upside down, and roughing up some of your girls."
 
     $ MC.gold -= blist[2].cost
-    "You have lost [game.goals[0].value] gold."
+    "You have lost [blist[2].cost] gold."
 
     with fade
 
@@ -1135,7 +1135,7 @@ label c1_guards_visit:
 
     "Go to the city to find the {b}thieves guild{/b}."
 
-    $ game.set_task("到城市里寻找{b}盗贼公会{/b}。")
+    $ game.set_task("Go to the city to find the {b}thieves guild{/b}.")
     $ story_flags["c1_robbed"] = True
 
     return
@@ -1145,7 +1145,7 @@ label c1_thieves_guild_tip:
 
     # 25% chance of happening any location any time during chapter1, disappears after spice market
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ loc = selected_location.name.lower()
 
@@ -1189,8 +1189,8 @@ label c1_thieves_guild_tip:
 
     menu:
         extend ""
-        "当然":
-            $ renpy.block_rollback()
+        "Sure":
+            $ norollback()
             you "Sure, I want that information."
 
             if MC.gold < 50:
@@ -1217,8 +1217,8 @@ label c1_thieves_guild_tip:
 
             "Go to the {b}spice market{/b} to find the thieves guild courier."
 
-        "我不感兴趣":
-            $ renpy.block_rollback()
+        "Not interested":
+            $ norollback()
 
             you "50 gold is a bit steep for a piece of gossip. And I don't care about that guild, anyway."
 
@@ -1241,7 +1241,7 @@ label c1_spice_market:
 
     ## 25% chance of happening at location spice market (100% if tipped)
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -1344,13 +1344,13 @@ label c1_spice_market:
 
         "What do you do?"
 
-        "放他走":
-            $ renpy.block_rollback()
+        "Let him pass":
+            $ norollback()
             $ MC.neutral += 1
             "Crossing your arms, you let the mysterious stranger run past you in a gust of dust and spice."
 
-        "拦住他":
-            $ renpy.block_rollback()
+        "Bar his way":
+            $ norollback()
 
             you "Wait a minute!"
 
@@ -1394,8 +1394,8 @@ label c1_spice_market:
         menu:
             guard "Thank you for trying to stop that criminal, citizen. A good deed is rare in these parts. Why did you do it?"
 
-            "我应该做正确的事(真心话)":
-                $ renpy.block_rollback()
+            "I wanted to do the right thing (Truth)":
+                $ norollback()
                 $ MC.good += 1
 
                 you "I wanted to do the right thing. I don't like criminals any more than you do."
@@ -1404,8 +1404,8 @@ label c1_spice_market:
 
                 guard "Well, that's good to hear. Stay on the right side of the law, citizen."
 
-            "我应该做正确的事(欺骗她)":
-                $ renpy.block_rollback()
+            "I wanted to do the right thing (Lie)":
+                $ norollback()
                 $ MC.evil += 1
 
                 you "Oh, I'm an upstanding citizen of Zan, I was only doing my duty... You know. *grin*"
@@ -1445,7 +1445,7 @@ label c1_sewers:
 
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -1509,8 +1509,8 @@ label c1_sewers:
     menu:
         "What do you do?"
 
-        "循声而去":
-            $ renpy.block_rollback()
+        "Follow the screams":
+            $ norollback()
             "Hastening pace, you step into the tunnel from which the screams came. You have to bend your back to avoid scraping your head on the ceiling."
 
             play sound s_scream_loud
@@ -1561,7 +1561,7 @@ label c1_sewers:
             hide screen tool
 
             if chal:
-                $ renpy.block_rollback()
+                $ norollback()
                 $ MC.good +=3
 
                 you "I'm the good guy coming to the rescue, that's who. I can't let you hurt this poor girl."
@@ -1748,7 +1748,7 @@ label c1_sewers:
                         return
 
             else:
-                $ renpy.block_rollback()
+                $ norollback()
                 $ MC.evil += 1
 
                 you "Oh, don't mind me. I was actually just passing by... I'll show myself out."
@@ -1770,9 +1770,9 @@ label c1_sewers:
                     menu:
                         you "Well..."
 
-                        "不用谢":
+                        "No thanks":
 
-                            $ renpy.block_rollback()
+                            $ norollback()
 
                             you "That's very generous of you, but I have other business to attend to... I don't even know why I came here, hahahaha..."
 
@@ -1786,9 +1786,9 @@ label c1_sewers:
 
                             play sound s_screams
 
-                        "太棒了":
+                        "Hell yeah":
                             $ MC.evil += 5
-                            $ renpy.block_rollback()
+                            $ norollback()
 
                             you "I was hoping you'd say that."
 
@@ -1844,8 +1844,8 @@ label c1_sewers:
                     return
 
 
-        "放任不管":
-            $ renpy.block_rollback()
+        "Ignore them":
+            $ norollback()
             $ MC.neutral += 1
             you "Whatever it is, this isn't in the right direction. I must stay focused."
 
@@ -1857,7 +1857,7 @@ label c1_sewers_return:
 
     stop music fadeout 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black
     show bg inner_sewers at top
@@ -1947,7 +1947,7 @@ label c1_sewers_girl_protected():
 
     you "Now, let's go back on track."
 
-    $ story_add_event("c2_sewer_girl_returns", type="day")
+    $ story_add_event("c2_sewer_girl_returns", type="daily")
 
     return
 
@@ -2166,7 +2166,7 @@ label c1_thieves_guild_found:
 
     play music m_suspense fadein 3.0
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     scene black with fade
 
@@ -2229,8 +2229,8 @@ label c1_thieves_guild_found:
     menu:
         "What do you do?"
 
-        "教训他一顿":
-            $ renpy.block_rollback()
+        "Kick his ass":
+            $ norollback()
             you "All right, I see you're thicker than this oak door. Maybe after I mop the floor with your sorry ass,
                  you'll be more accommodating?"
 
@@ -2238,8 +2238,8 @@ label c1_thieves_guild_found:
 
             "The man rises and looms menacingly as you reach for your weapon."
 
-        "用魔法消灭他":
-            $ renpy.block_rollback()
+        "Neutralize him with magic":
+            $ norollback()
             you "I'll be going, then... I guess I was mistaken, hahahaha..."
 
             "You walk a few steps down the alley, then swiftly turn around."
@@ -2248,8 +2248,8 @@ label c1_thieves_guild_found:
 
             "Your eyes burn bright as you prepare the words."
 
-        "和他谈判":
-            $ renpy.block_rollback()
+        "Negotiate":
+            $ norollback()
             you "Friend, it seems we got off on the wrong foot here."
 
             you "Let me explain how we could make this situation work to our mutual advantage."
@@ -2338,13 +2338,13 @@ label c1_thieves_guild_found:
 
     "She takes a closer look at you."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
 
         renza "A strong build, various scars, a keen eye for weapons..."
 
         renza "You're a warrior, aren't you?"
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
 
         renza "Dandy manners, hands that look like they've never gotten dirty, the smell of sulfur on your clothes..."
 
@@ -2442,7 +2442,7 @@ label c1_ask_guild_for_help:
 
     # 100% chance of happening at location if goal reached
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     play music m_suspense fadein 3.0
 
@@ -2458,8 +2458,8 @@ label c1_ask_guild_for_help:
     menu:
         you "How should I go on about this?"
 
-        "破门而入":
-            $ renpy.block_rollback()
+        "Force it open":
+            $ norollback()
             you "To hell with discretion, I need answers."
 
             $ sneak = False
@@ -2480,8 +2480,8 @@ label c1_ask_guild_for_help:
 
             "With all the racket you made, you'd be surprised if no one heard you coming. You step in."
 
-        "另寻他路":
-            $ renpy.block_rollback()
+        "Sneak your way in":
+            $ norollback()
             you "Running inside weapons blazing seems like a bad idea. Let's look for another entrance."
 
             $ sneak = True
@@ -2745,8 +2745,8 @@ label c1_ask_guild_for_help:
     menu:
         renza "What?"
 
-        "我认识玛雅，她是清白的":
-            $ renpy.block_rollback()
+        "I know Maya, she's clean":
+            $ norollback()
             you "I know Maya. No need to interrogate her. She's not involved in the Guard's corruption."
 
             $ MC.good += 1
@@ -2767,8 +2767,8 @@ label c1_ask_guild_for_help:
 
             lieutenant "Use whatever means necessary to get Sergeant Kashiv to confess. We don't have time."
 
-        "额，没什么":
-            $ renpy.block_rollback()
+        "Uh, nothing":
+            $ norollback()
             $ maya_protected = False
 
             renza "All right, it's settled, then. Go and question those bitch guards."
@@ -2797,7 +2797,7 @@ label c1_ask_guild_for_help:
     menu:
         "What will you do first?"
 
-        "去见玛雅" if maya_protected:
+        "Visit Maya" if maya_protected:
             call c1_maya_interrogation from _call_c1_maya_interrogation
 
             scene black with fade
@@ -2809,7 +2809,7 @@ label c1_ask_guild_for_help:
             call c1_sergeant_interrogation from _call_c1_sergeant_interrogation
 
 
-        "审问玛雅" if not maya_protected:
+        "Interrogate Maya" if not maya_protected:
             call c1_maya_interrogation from _call_c1_maya_interrogation_1
 
             scene black with fade
@@ -2820,7 +2820,7 @@ label c1_ask_guild_for_help:
 
             call c1_sergeant_interrogation from _call_c1_sergeant_interrogation_1
 
-        "审问卡希夫":
+        "Interrogate Kashiv":
 
             call c1_sergeant_interrogation from _call_c1_sergeant_interrogation_2
 
@@ -2836,15 +2836,15 @@ label c1_ask_guild_for_help:
 
     $ story_add_event("c1_satella_intro")
 
-    "和伦萨在{b}盗贼公会{/b}会合。"
+    "Rendezvous with Renza at the {b}thieves guild{/b}."
 
-    $ game.set_task("和伦萨在{b}盗贼公会{/b}会合。")
+    $ game.set_task("Rendezvous with Renza at the {b}thieves guild{/b}.")
     return
 
 
 label c1_maya_interrogation:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     "You tell the guard that you will visit Maya. He opens the door for you."
 
@@ -2878,8 +2878,8 @@ label c1_maya_interrogation:
         maya "A corrupted guard? What are you talking about? What do the thieves care about corruption?"
 
         menu:
-            "说实话":
-                $ renpy.block_rollback()
+            "Tell the truth":
+                $ norollback()
                 $ MC.good += 1
 
                 you "The thieves have had enough with the Guard's harassment. They want to replace the current captain with one of their own."
@@ -2933,8 +2933,8 @@ label c1_maya_interrogation:
 
                 you "Fine. Stay put."
 
-            "含糊其辞":
-                $ renpy.block_rollback()
+            "Stay vague":
+                $ norollback()
                 $ MC.neutral += 1
 
                 you "Well... They didn't say. But they want to expose the corruption in the Guard, so I'm sure you could find some common ground with them, if you tried."
@@ -2978,9 +2978,9 @@ label c1_maya_interrogation:
         maya "R... Rape me?"
 
         menu:
-            "当然不":
+            "Of course not":
                 $ MC.neutral += 1
-                $ renpy.block_rollback()
+                $ norollback()
                 you "Don't be so melodramatic. I just want a little chat."
 
                 "She looks relieved, but still wary."
@@ -3010,8 +3010,8 @@ label c1_maya_interrogation:
                 call c1_maya_confession from _call_c1_maya_confession_2
 
 
-            "强上你? Mmmh...":
-                $ renpy.block_rollback()
+            "Rape you? Mmmh...":
+                $ norollback()
                 $ MC.evil += 1
                 "You move in closer."
 
@@ -3050,15 +3050,15 @@ label c1_maya_interrogation:
                 maya "I told you everything! Now leave me alone!"
 
                 menu:
-                    "让她一个人待着":
-                        $ renpy.block_rollback()
+                    "Leave her alone":
+                        $ norollback()
                         $ MC.neutral += 1
                         you "All right, all right. Thank you for your help. I will give Sergeant Kashiv your regards."
 
                         maya "I don't care about that bitch! She can rot in the seven hells!"
 
-                    "强奸她":
-                        $ renpy.block_rollback()
+                    "Rape her anyway":
+                        $ norollback()
                         $ MC.evil += 5
                         $ MC.good -= 5
                         $ MC.change_prestige(1)
@@ -3284,7 +3284,7 @@ label c1_maya_confession:
 
 label c1_sergeant_interrogation:
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     "You nod to the jailer to open the second cell."
 
@@ -3309,14 +3309,14 @@ label c1_sergeant_interrogation:
     sergeant "Who are you really, and what do you want?"
 
     menu:
-        "我是 [MC.name]":
-            $ renpy.block_rollback()
+        "I'm [MC.name]":
+            $ norollback()
             you "I'm [MC.name], a [MC.playerclass] from out of town. I have a small brothel operating here in the slums."
 
             you "What I don't have, is a lot of patience."
 
-        "你不必知道":
-            $ renpy.block_rollback()
+        "You don't need to know":
+            $ norollback()
             you "And here I thought I was the one asking questions."
 
             you "My patience runs thin... So don't test me{nw}"
@@ -3327,8 +3327,8 @@ label c1_sergeant_interrogation:
                 extend ", bitch."
 
 
-        "你最可怕的梦魇":
-            $ renpy.block_rollback()
+        "Your worst nightmare":
+            $ norollback()
             you "Who am I? Your worst nightmare. What do I want? Answers."
 
     "She sneers."
@@ -3404,8 +3404,8 @@ label c1_interrogate_menu:
 
         "What will you do to get the truth out of her?"
 
-        "运用你的智慧" if use_wits:
-            $ renpy.block_rollback()
+        "Use your wits" if use_wits:
+            $ norollback()
             you "Come on, no need to lose your temper here... I'm sure we can come to an agreement."
 
             sergeant "Drop dead."
@@ -3518,8 +3518,8 @@ label c1_interrogate_menu:
 
 
 
-        "严刑拷打威胁她" if use_strength:
-            $ renpy.block_rollback()
+        "Beat her up" if use_strength:
+            $ norollback()
             you "You're a piece of work, you know that? I'll have to make an example out of you."
 
             sergeant "I'm not scared of you! Bring it on!"
@@ -3679,8 +3679,8 @@ label c1_interrogate_menu:
 
                 jump c1_interrogate_menu
 
-        "用魔法咒语催眠她" if use_magic:
-            $ renpy.block_rollback()
+        "Hypnotize her with a spell" if use_magic:
+            $ norollback()
             you "You think you're tough, I get it. But I don't need to face you in a fight. I can simply melt your brains from where I stand."
 
             sergeant "..."
@@ -3828,8 +3828,8 @@ label c1_interrogate_menu:
                 jump c1_interrogate_menu
 
 
-        "强奸她":
-            $ renpy.block_rollback()
+        "Rape her":
+            $ norollback()
             $ MC.evil += 3
             $ MC.change_prestige(1)
 
@@ -4047,7 +4047,7 @@ label c1_interrogate_menu:
 
     sergeant "W... What?"
 
-    you "My money. The [game.goals[0].value] gold I saved to obtain a brothel license."
+    you "My money. The [blist[2].cost] gold I saved to obtain a brothel license."
 
     you "Where is it???" with vpunch
 
@@ -4243,7 +4243,7 @@ label c1_interrogation_report:
 
     lieutenant "A voice crystal?"
 
-    if MC.playerclass == "法师":
+    if MC.playerclass == "Wizard":
 
         you "Wow, hold on a second. Voice crystals are very powerful magical devices. Only the ancient races knew how to make them."
 
@@ -4283,7 +4283,7 @@ label c1_interrogation_report:
 
     you "Shalia? Goddess of darkness and deceit? I know her, of course."
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         you "I am one of her worshippers. What about her?"
 
     else:
@@ -4522,7 +4522,7 @@ label c1_satella_intro():
 
     renza "Err, [MC.name], my lady. He's only recently arrived in Zan..."
 
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         satella "Ah, [MC.name], yes, we know of him."
 
     satella "It's {b}so{/b} nice of you to come here. We were getting a bit lonely... Shall we offer you some tea?"
@@ -4708,12 +4708,12 @@ label c1_satella_intro():
     scene black with fade
 
     $ story_add_event("c1_captain_meeting")
-    if MC.god == "莎莉娅":
+    if MC.god == "Shalia":
         $ calendar.set_alarm(calendar.time+1, StoryEvent(label = "shalia1", type = "morning"))
 
     "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
 
-    $ game.set_task("到{b}瞭望塔{/b}直面臭名昭著的上尉。")
+    $ game.set_task("Go to the {b}watchtower{/b} and confront the infamous captain of the city guard.")
 
     return
 
@@ -4739,32 +4739,32 @@ label c1_captain_meeting:
     menu:
         "You had your own reasons."
 
-        "把钱还给我！":
-            $ renpy.block_rollback()
+        "I want my money":
+            $ norollback()
             $ MC.neutral += 1
 
             you "I worked my ass off... Well, the girls' asses off, to get that money."
 
             you "It is mine by right, and I will get it back."
 
-        "以牙还牙，十倍奉还":
-            $ renpy.block_rollback()
+        "I want revenge":
+            $ norollback()
             $ MC.evil += 1
 
             you "No one crosses me and lives to tell the tale."
 
             you "I'll get that captain. And when I'm done, I'll take care of Kosmo..."
 
-        "我要审判你！":
-            $ renpy.block_rollback()
+        "I want justice":
+            $ norollback()
             $ MC.good += 1
 
             you "The city guard is a menace, not just to myself but to all the slums' citizens."
 
             you "But today, I'm going to stop this. For justice!"
 
-        "我简直要发疯了":
-            $ renpy.block_rollback()
+        "I'm firebatshit crazy":
+            $ norollback()
             you "I have no idea why I agreed to this, but I don't care. I love risking it all on a whim!"
 
             you "And it looks like it's gonna be a fun ride..."
@@ -4898,13 +4898,13 @@ label c1_captain_meeting:
 
     you "You are asking for a lot... But I can afford it."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         you "Restoring my honor is more important to me than money."
 
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
         you "I can't let myself be outsmarted by a petty schemer from the city."
 
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
         you "It's an investment. I will recoup it once I take over this man's business."
 
     captain "Oh, really?"
@@ -5190,8 +5190,8 @@ label c1_captain_meeting:
         you "I'm ready..."
 
 
-        "...赴汤蹈火在所不辞, 伦萨":
-            $ renpy.block_rollback()
+        "...to do anything for you, Renza":
+            $ norollback()
             $ NPC_renza.love += 2
 
             you "You know I can't refuse you anything, Renza."
@@ -5200,8 +5200,8 @@ label c1_captain_meeting:
 
             renza "Oh, [MC.name]... Was that a compliment? Anyway, let's get ready!"
 
-        "...做正确的事":
-            $ renpy.block_rollback()
+        "...to do the right thing":
+            $ norollback()
             $ MC.good += 1
             you "I'm ready to do the right thing."
 
@@ -5209,8 +5209,8 @@ label c1_captain_meeting:
 
             renza "Uh, yeah, sure. Whatever you call it. Now, get ready."
 
-        "...拿回我的钱":
-            $ renpy.block_rollback()
+        "...to get my money back":
+            $ norollback()
             $ MC.neutral += 1
             you "I'm ready to do what it takes to get my fucking money back."
 
@@ -5218,8 +5218,8 @@ label c1_captain_meeting:
 
             renza "Always the pragmatist. Very well then, get yourself ready."
 
-        "...大闹一场吧":
-            $ renpy.block_rollback()
+        "...to kick some ass":
+            $ norollback()
             $ MC.neutral += 1
             you "I'm ready! Let's show those guard punks not to cross us!"
 
@@ -5227,8 +5227,8 @@ label c1_captain_meeting:
 
             "That's the spirit! Let no one get between you and your sweet revenge. Let's go!"
 
-        "...欺骗和操纵别人":
-            $ renpy.block_rollback()
+        "...to lie and manipulate people":
+            $ norollback()
             $ NPC_renza.love -= 2
             $ MC.evil += 1
 
@@ -5252,11 +5252,11 @@ label c1_trial:
 
     you "Damn, I'm nervous."
 
-    if MC.playerclass == "战士":
+    if MC.playerclass == "Warrior":
         you "I hate these cloak and dagger intrigues. I long for a good head-on fight."
-    elif MC.playerclass == "法师":
+    elif MC.playerclass == "Wizard":
         you "Usually, when I dabble into politics, I don't risk ending with a rope around my neck."
-    elif MC.playerclass == "奸商":
+    elif MC.playerclass == "Trader":
         you "I'm a businessman. I like to have other people handle the dirty business, not me!"
 
     if NPC_maya.raped:
@@ -5344,22 +5344,22 @@ label c1_trial:
         menu:
             you "..."
 
-            "你说得对":
-                $ renpy.block_rollback()
+            "You're right":
+                $ norollback()
                 $ MC.good += 1
                 you "You're right. The way the people of the slums have been treated so far is unacceptable. I'm not going to pass this opportunity
                      to make things right."
 
-            "大错特错":
+            "You're wrong":
                 $ MC.neutral += 1
-                $ renpy.block_rollback()
+                $ norollback()
                 you "You're dreaming. The slums are the way they are because that's how the world works. It's not the thieves' fault if money trumps all."
 
                 you "At least, the people of the slums will be robbed by just one gang instead of two."
 
-            "关我屁事":
+            "I don't care":
                 $ MC.evil += 1
-                $ renpy.block_rollback()
+                $ norollback()
                 you "I don't have to explain myself to you. I'll do whatever I want."
 
                 roz "The hell you will!" with vpunch
@@ -5547,8 +5547,8 @@ label c1_trial:
 
         you "Mmh..."
 
-        "成交":
-            $ renpy.block_rollback()
+        "All right":
+            $ norollback()
             $ story_flags["c1_path"] = "evil"
 
             you "Fine. But I want my gold back, and the pimp license I required. Delivered by next morning."
@@ -5644,8 +5644,8 @@ label c1_trial:
             hide captain with dissolve
 
 
-        "不可能":
-            $ renpy.block_rollback()
+        "Not gonna happen":
+            $ norollback()
             you "I'm sorry, Farah. But your reign of terror ends here."
 
             play sound s_scream
@@ -5922,8 +5922,8 @@ label c1_trial:
                 menu:
                     you "Well..."
 
-                    "揭露中尉的真实身份":
-                        $ renpy.block_rollback()
+                    "Tell the truth about the lieutenant":
+                        $ norollback()
                         $ story_flags["c1_path"] = "good"
 
                         you "There is one more thing."
@@ -6002,8 +6002,8 @@ label c1_trial:
 
                         with fade
 
-                    "无动于衷":
-                        $ renpy.block_rollback()
+                    "Nothing":
+                        $ norollback()
                         $ story_flags["c1_path"] = "neutral"
 
                         you "Long live the new captain!"
@@ -6078,7 +6078,7 @@ label c1_ending_maya:
 
     play music m_disco fadein 15.0
 
-    show guard party as guard2 at right with dissolve
+    show guard party as guard2 at totheright with dissolve
 
     guard "Came to join the party?"
 
@@ -6199,7 +6199,7 @@ label c1_ending_maya:
 
     you "Thanks, that's great!"
 
-    "You have got your [game.goals[0].value] gold back."
+    "You have got your [blist[2].cost] gold back."
 
     you "Say, can't you throw in a little extra? Like, giving me access to the noble quarters, and the court?"
 
@@ -6412,8 +6412,8 @@ label c1_ending_maya:
     menu:
         you "..."
 
-        "帮助她":
-            $ renpy.block_rollback()
+        "Help her":
+            $ norollback()
             you "Well, I suppose I owe you for trashing up your plans. But don't go backstabbing me for my trouble later on, okay?"
 
             play sound s_laugh
@@ -6494,8 +6494,8 @@ label c1_ending_maya:
             $ NPC_maya.love -= 15
 
 
-        "不管她":
-            $ renpy.block_rollback()
+        "Don't help her":
+            $ norollback()
             you "Sorry Renza. I'll sleep better knowing you're behind bars."
 
             play sound s_scream
@@ -6620,7 +6620,7 @@ label c1_ending_lieutenant:
     play sound s_gold
     $ MC.gold += blist[2].cost
 
-    "You have received [game.goals[0].value] gold."
+    "You have received [blist[2].cost] gold."
 
     you "Thank you. After all I've been through, I was hoping for a little more..."
 
@@ -6814,7 +6814,7 @@ label c1_ending_captain:
 
     captain "That should compensate you for the gold you lost."
 
-    "You have received [game.goals[0].value] gold."
+    "You have received [blist[2].cost] gold."
 
     $ MC.gold += blist[2].cost
 

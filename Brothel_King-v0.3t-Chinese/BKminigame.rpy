@@ -15,8 +15,10 @@ init -2 python:
 
     def shuffle_ninja_location(ninja):
         dis = get_ninja_district(ninja)
-        ninja.used_loc.append(ninja.loc)
-        ninja.loc = rand_choice([l for l in location_dict[dis] if l not in ninja.used_loc])
+        ninja.used_loc.append(ninja.location)
+        if len(ninja.used_loc) >= 6:
+            ninja.used_loc = []
+        ninja.location = rand_choice([l for l in location_dict[dis] if l not in ninja.used_loc])
         for loc in location_dict[dis]:
             if loc not in ninja.used_loc:
                 story_flags["ninja hunt hide " + loc.name] = False
@@ -32,9 +34,9 @@ init -2 python:
         NPC_haruka.sprite = "ninja3"
 
         # First location is set, then it's randomized
-        NPC_narika.loc = thieves_guild
-        NPC_mizuki.loc = beach
-        NPC_haruka.loc = prison
+        NPC_narika.location = thieves_guild
+        NPC_mizuki.location = beach
+        NPC_haruka.location = prison
 
         # used_loc init
 
@@ -51,7 +53,7 @@ init -2 python:
 
         story_flags["ninja hunt"] = "start"
 
-        shop.items += [makibishi] # Adds a single makibishi to the shop (more will be generated each week)
+        shop.items += [makibishi.get_instance()] # Adds a single makibishi to the shop (more will be generated each week)
 
     def show_countdown(st, at):
         if st >= njgame.countdown:
@@ -192,7 +194,7 @@ screen score():
     frame xalign 0.0 yalign 1.0 xpadding 40 ypadding 40 xmargin 20 ymargin 20 background c_ui_darker:
         has hbox spacing 50
 
-        text "{b}Hits{/b} %s" % ("X"*njgame.hits + " "*(3-njgame.hits)) color c_steel
+        text "{b}Hits{/b} %s" % ("X"*njgame.hits + " "*(3-njgame.hits)) color c_main
 
         text "{b}Misses{/b} %s" % ("X"*njgame.misses + " "*(3-njgame.misses)) color c_lightred
 
@@ -203,7 +205,11 @@ label ninja_game(ninja): # Where ninja is an NPC object
     if not story_flags["ninja hunt seen intro"]:
         play music m_suzume fadein 3.0
 
-    suzume shrewd "Wait, [MC.name]... I sense something." with vpunch
+    if ninja.flags["hunt stage"] < 4:
+        suzume shrewd "Wait, [MC.name]... I sense something." with vpunch
+    else:
+        play music m_suzume fadein 3.0
+        suzume normal "All right! The stuck-up bitch is going down!" with vpunch
 
     python:
         house_templates = ["house1", "house2", "house3", "house4", "house5", "house6", "house7", "house8", ]
@@ -223,7 +229,10 @@ label ninja_game(ninja): # Where ninja is an NPC object
     hide expression njgame.get_pic() with easeoutleft
     hide speed_effect with dissolve
 
-    call run_ninja_game(njgame) from _call_run_ninja_game
+    if game.chapter >= 3 and ninja != NPC_mizuki: #! Add mizuki later
+        call expression "c3_" + ninja.name.lower() + "_final_intercept" from _call_expression_9
+    else:
+        call run_ninja_game(njgame) from _call_run_ninja_game
 
     if njgame.special:
         $ centered(event_color["bad"] % "\n\n{b}INTERCEPT FAILED...{/b}")
@@ -278,16 +287,17 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
 
     $ centered(event_color["special"] % "\n\n{b}Ninja hunt started\nROUND " + stage_name + "{/b}")
 
-    if MC.has_item("撒菱"):
+    if MC.has_item("makibishi"):
         if not njgame.special:
             menu:
                 "Do you want to use your makibishi to automatically catch your target?"
 
-                "是的 (消耗1个撒菱)":
+                "Yes (spend 1 makibishi)":
                     play sound s_dice
                     $ njgame.hits = 3
-                    $ MC.items.remove(makibishi)
-                "不用":
+                    $ it = MC.get_items(name="Makibishi")[0]
+                    $ MC.items.remove(it)
+                "No":
                     pass
 
     hide expression njgame.sprite with blinds
@@ -301,17 +311,27 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
         xalign 0.5
         yalign 0.95
 
+    $ no_ninja_gen = 0
+
     while njgame.hits < 3 and njgame.misses < 3 and not njgame.over:
-        $ renpy.block_rollback()
+        $ norollback()
         $ njgame.reset_positions()
 
-        $ but_list = [(njgame.sprite, "Hit!!!", njgame.rand_house_move()), ("passerby1", "Miss...", njgame.rand_house_move()), ("passerby2", "Miss...", njgame.rand_house_move()), ("passerby3", "Miss...", njgame.rand_house_move()), ("passerby4", "Miss...", njgame.rand_house_move()), ("passerby5", "Miss...", njgame.rand_house_move()), ("passerby6", "Miss...", njgame.rand_house_move()), ("passerby7", "Miss...", njgame.rand_house_move()), ("passerby8", "Miss...", njgame.rand_house_move()), ("passerby9", "Miss...", njgame.rand_house_move())]
+        $ full_but_list = [(njgame.sprite, "Hit!!!", njgame.rand_house_move()), ("passerby1", "Miss...", njgame.rand_house_move()), ("passerby2", "Miss...", njgame.rand_house_move()), ("passerby3", "Miss...", njgame.rand_house_move()), ("passerby4", "Miss...", njgame.rand_house_move()), ("passerby5", "Miss...", njgame.rand_house_move()), ("passerby6", "Miss...", njgame.rand_house_move()), ("passerby7", "Miss...", njgame.rand_house_move()), ("passerby8", "Miss...", njgame.rand_house_move()), ("passerby9", "Miss...", njgame.rand_house_move())]
 
         if njgame.guest:
-            $ but_list.append((njgame.guest, "Uh?!?", njgame.rand_house_move()))
+            $ full_but_list.append((njgame.guest, "Uh?!?", njgame.rand_house_move()))
 
         # Randomizes buttons
-        $ but_list = rand_choice(but_list, 5)
+        $ but_list = rand_choice(full_but_list, 5)
+
+        if full_but_list[0] not in but_list:
+            $ no_ninja_gen += 1
+
+        if no_ninja_gen >= 3: # Forces ninja in list if she hasn't shown up twice in a row
+            $ but_list[0] = full_but_list[0]
+            $ no_ninja_gen = 0
+
 
         # Activates effects
         if njgame.special == "rain" and renpy.random.random() > 0.3:

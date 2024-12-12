@@ -10,131 +10,131 @@ init python:
         global evil_card_size
 
         evpower_list =  [
-                            EvilPower(name='Summon cuddly pet', type='Platinum', power='chaos', target='MC', short_description='召唤一只非常可爱，十分正常和安全的宠物', mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=2),
-                            EvilPower(name='Ritual orgy', type='Platinum', power='ritual orgy', target='brothel', short_description='让青楼一夜暴富, 消耗大量理智', mojo_cost=[('green', 1), ('blue', 2), ('red', 2), ('yellow', 1)], sanity_cost=6),
-                            EvilPower(name='Ritual bondage', type='Platinum', power='ritual bondage', target='all girls', effects=[Effect("gain", "obedience", 6, dice=1), Effect("gain", "libido", 6, dice=1)], short_description='消耗大量理智，立刻提升所有女孩的服从和性欲属性', mojo_cost=[('green', 2), ('blue', 1), ('red', 1), ('yellow', 2)], sanity_cost=6),
-                            EvilPower(name='Ritual violence', type='Platinum', power='ritual violence', target='all girls', effects=[Effect("gain", "fear", 4, dice=1)], short_description='消耗大量理智，立刻提升所有女孩的恐惧值产出', mojo_cost=[('red', 6)], sanity_cost=6),
-                            EvilPower(name='Forget', type='Platinum', power='perks', target='conduit', short_description='重置所有C阶及以上女孩的天赋', mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4),
-                            EvilPower(name='Horror visions', type='Gold', power='fear boost', target='all girls', effects=[Effect("boost", "fear gains", 0.25, scope="brothel")], short_description='所有女孩的恐惧值增长更快', mojo_cost=[('yellow', 5)], sanity_cost=4, duration=5),
-                            EvilPower(name='Soul change', type='Gold', power='personality', target='conduit', short_description='随机改变她的性格', mojo_cost=[('blue', 5)], sanity_cost=4),
-                            EvilPower(name='Unholy stamina', type='Gold', power='customer capacity', target='brothel', effects=[Effect("change", "job customer capacity", 2, scope="brothel"), Effect("change", "whore customer capacity", 1, scope="brothel")], short_description='提升所有岗位的女孩服务客人的能力', mojo_cost=[('green', 5)], sanity_cost=3, duration=5),
-                            EvilPower(name='Weak point', type='Gold', power='negative trait', target='conduit', short_description='把女孩的负面特质换成一个新的随机特质', mojo_cost=[('blue', 5)], sanity_cost=3),
-                            EvilPower(name='Brand', type='Gold', power='slave', target='conduit', short_description='把她变成奴隶(仅能对自由女孩使用)', mojo_cost=[('green', 3)], sanity_cost=4),
-                            EvilPower(name='Satisfaction guaranteed', type='Gold', power='customer satisfaction', target='brothel', effects=[Effect("increase satisfaction", "all jobs", 1, scope="brothel"), Effect("increase satisfaction", "all sex acts", 1, scope="brothel")], short_description="所有顾客满意度+1", mojo_cost=[('green', 1), ('blue', 1), ('red', 1), ("yellow", 1)], sanity_cost=4, duration=4),
-                            EvilPower(name='Dynamo', type='Gold', power='energy', target='brothel', short_description='消耗她的精力来为所有妓院女孩恢复一些精力，', mojo_cost=[('red', 4)], sanity_cost=3),
-                            EvilPower(name='Pain is the lesson', type='Gold', power='postings', target='conduit', effects=[Effect("boost", "quest rewards", 0.5), Effect("boost", "class results", 0.5)], short_description='她能从任务和培训课程中得到更多收益', mojo_cost=[('red', 1), ('yellow', 2)], sanity_cost=3, duration=7, activation_limit="girl"),
-                            EvilPower(name='Frenzy', type='Silver', power='frenzy', target='conduit', effects=[Effect("special", "ignore energy", 1)], short_description='她可以不消耗精力工作一段时间，随后立刻精疲力竭', mojo_cost=[('green', 4)], sanity_cost=2, duration=3, activation_limit="girl"),
-                            EvilPower(name='Warp farm', type='Silver', power='farm', target='conduit', effects=[Effect("boost", "farm preference increase", 1.0), Effect("boost", "farm fear generation", 1.0)], short_description='提高她的农场训练和恐惧产出效果', mojo_cost=[('green', 1), ('blue', 1), ('red', 1), ('yellow', 1)], sanity_cost=2, duration=7, activation_limit="girl"),
-                            EvilPower(name='Leech reputation', type='Silver', power='leech rep', target='other girl', short_description='她的一些声望会转移到另一个阶级相同或更低的女孩身上', mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
-                            EvilPower(name='Stigmata', type='Silver', power='hurt', target='other girl', short_description='让她来承受另一个女孩的伤痛并治愈她', mojo_cost=[('red', 3)], sanity_cost=3),
-                            EvilPower(name='Dark fantasy: Bisexual', type='Silver', power='bisexual', target='conduit', short_description='增加她对双飞的接受能力', mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=2),
-                            EvilPower(name='Dark fantasy: Group', type='Silver', power='group', target='conduit', short_description='增加她对群交的接受能力', mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
-                            EvilPower(name='Blind obedience', type='Silver', power='obedience', target='conduit', effects=[Effect("change", "obedience target", -30), Effect("change", "sex acts requirements", -15)], short_description='她将更愿意接受工作和训练的安排', mojo_cost=[('yellow', 3)], sanity_cost=3, duration=3, activation_limit="girl"),
-                            EvilPower(name='Leech xp', type='Silver', power='leech xp', target='all girls', short_description='把经验分给所有比她等级低的人', mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=2),
-                            EvilPower(name='Leech jp', type='Silver', power='leech jp', target='all girls', short_description='把职业经验分给所有比她职业等级低的人', mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
-                            EvilPower(name='Bad memories', type='Bronze', power='punish', target='all girls', effects=[Effect("boost", "punishment efficiency", 1, scope="brothel")], short_description='惩罚对其他女孩效果更好了', mojo_cost=[('yellow', 3)], sanity_cost=3, duration=7),
-                            EvilPower(name='Apathy', type='Bronze', power='normalize fear', target='conduit', short_description='降低好感度和恐惧值等级，无论正负', mojo_cost=[('blue', 1), ('red', 1), ('yellow', 1)], sanity_cost=2),
-                            EvilPower(name='Abduction', type='Bronze', power='kidnap', target='city girl', short_description='让她尝试绑架一个自由的女孩，她可能会在过程中受伤', description='She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level.', mojo_cost=[('yellow', 3)], sanity_cost=2),
-                            EvilPower(name='Spread the love', type='Bronze', power='city love', target='location', short_description='抽取她所有的好感度，并提升特定地区的所有女孩的好感度', mojo_cost=[('blue', 3)], sanity_cost=2),
-                            EvilPower(name='Change fixation', type='Bronze', power='negative fixation', target='conduit', short_description='将她的负面特质转化为另一个随机的负面特质', mojo_cost=[('yellow', 3)], sanity_cost=2),
-                            EvilPower(name='Summon incubus', type='Bronze', power='prestige', target='conduit', short_description='召唤下级恶魔强奸她,随机提升一项性技能, 获得声望和经验值', mojo_cost=[('blue', 2)], sanity_cost=3),
-                            EvilPower(name='Non Euclidean space', type='Bronze', power='room capacity', target='brothel', short_description='青楼的营业场所可以容纳更多的顾客', mojo_cost=[('red', 3)], sanity_cost=2, duration=5), # Effect is changed dynamically
-                            EvilPower(name='Nature calls', type='Bronze', power='force naked', target='conduit', effects=[Effect("special", "naked", 1)], short_description='她将一直保持裸体', mojo_cost=[('green', 3)], sanity_cost=2, duration=5, activation_limit="girl"),
-                            EvilPower(name='Vampire smile', type='Bronze', power='charisma', target='MC', effects=[Effect("change", "charisma", 1)], short_description='玩家魅力+1', mojo_cost=[('green', 3)], sanity_cost=2, duration=7),
-                            EvilPower(name='Vampire swiftness', type='Bronze', power='speed', target='MC', effects=[Effect("change", "speed", 1)], short_description='玩家速度+1', mojo_cost=[('blue', 3)], sanity_cost=2, duration=7),
-                            EvilPower(name='Vampire vigor', type='Bronze', power='strength', target='MC', effects=[Effect("change", "strength", 1)], short_description='玩家力量+1', mojo_cost=[('red', 3)], sanity_cost=2, duration=7),
-                            EvilPower(name='Vampire mind', type='Bronze', power='spirit', target='MC', effects=[Effect("change", "spirit", 1)], short_description='玩家精神+1', mojo_cost=[('yellow', 3)], sanity_cost=2, duration=7),
-                            EvilPower(name='Even out', type='Bronze', power='normalize skills BBCR', target='conduit', short_description="均匀分配她的部分属性 (外貌, 身材, 魅力和优雅)", description="Beauty, Body, Charm and Refinement skills converge on their average value", mojo_cost=[('green', 3)], sanity_cost=2),
-                            EvilPower(name='Even out', type='Bronze', power='normalize skills LOCS', target='conduit', short_description="均匀分配她的部分属性 (性欲, 服从, 体质和敏感)", description="Libido, Obedience, Constitution and Sensitivity converge on their average value", mojo_cost=[('blue', 3)], sanity_cost=2),
-                            EvilPower(name='Shuffle', type='Bronze', power='shuffle skills BBCR', target='conduit', short_description="随机分配她的部分属性 (外貌, 身材, 魅力和优雅)", description="Beauty, Body, Charm and Refinement skill values are shuffled randomly", mojo_cost=[('yellow', 3)], sanity_cost=2),
-                            EvilPower(name='Shuffle', type='Bronze', power='shuffle skills LOCS', target='conduit', short_description="随机分配她的部分属性 (性欲, 服从, 体质和敏感)", description="Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly", mojo_cost=[('red', 3)], sanity_cost=2),
-                            EvilPower(name='Mulligan', type='Bronze', power='mulligan', target='MC', short_description='重新抽取能力卡', mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=1),
-                            EvilPower(name='Mojo surge (yellow)', type='Regular', power='mojo yellow', target='MC', short_description='消耗大量理智换取2~6黄色魔力', mojo_cost=[('green', 1)], sanity_cost=3),
-                            EvilPower(name='Mojo surge (red)', type='Regular', power='mojo red', target='MC', short_description='消耗大量理智换取2~6红色魔力', mojo_cost=[('yellow', 1)], sanity_cost=3),
-                            EvilPower(name='Mojo surge (blue)', type='Regular', power='mojo blue', target='MC', short_description='消耗大量理智换取2~6蓝色魔力', mojo_cost=[('red', 1)], sanity_cost=3),
-                            EvilPower(name='Mojo surge (green)', type='Regular', power='mojo green', target='MC', short_description='消耗大量理智换取2~6绿色魔力', mojo_cost=[('blue', 1)], sanity_cost=3),
-                            EvilPower(name='Leech skills', type='Regular', power='leech service sex', target='other girl', short_description="将她的部分(侍奉和性交)经验转移给另一个女孩", description='Leeches some of her service and sex skills and transfers them to a girl of equal or lower rank', mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=2),
-                            EvilPower(name='Leech skills', type='Regular', power='leech anal fetish', target='other girl', short_description="将她的部分(肛交和调教)经验转移给另一个女孩", description='Leeches some of her anal and fetish skills and transfers them to a girl of equal or lower rank', mojo_cost=[('red', 1), ('yellow', 1)], sanity_cost=2),
-                            EvilPower(name='Dark fantasy: Service', type='Regular', power='service', target='conduit', short_description='增加她对侍奉的接受能力', mojo_cost=[('green', 2)], sanity_cost=1),
-                            EvilPower(name='Dark fantasy: Sex', type='Regular', power='sex', target='conduit', short_description='增加她对性交的接受能力', mojo_cost=[('blue', 2)], sanity_cost=1),
-                            EvilPower(name='Dark fantasy: Anal', type='Regular', power='anal', target='conduit', short_description='增加她对肛交的接受能力', mojo_cost=[('red', 2)], sanity_cost=1),
-                            EvilPower(name='Dark fantasy: Fetish', type='Regular', power='fetish', target='conduit', short_description='增加她对调教的接受能力', mojo_cost=[('yellow', 2)], sanity_cost=1),
-                            EvilPower(name='Minion training', type='Regular', power='minion', target='minion', short_description='把经验分享给另一个人', mojo_cost=[('red', 1)], sanity_cost=1),
-                            EvilPower(name='Connected minds', type='Regular', power='obedience link', target='other girl', short_description='选择一个女孩。降低她拒绝服从命令的概率', mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=1, duration=5),
-                            EvilPower(name='Leech skills', type='Regular', power='leech beauty body', target='other girl', short_description="将她的部分(外貌和身材)属性转移给另一个女孩", description='Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank', mojo_cost=[('blue', 1), ('red', 1)], sanity_cost=1),
-                            EvilPower(name='Leech skills', type='Regular', power='leech charm refinement', target='other girl', short_description="将她的部分(魅力和优雅)属性转移给另一个女孩", description='Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank', mojo_cost=[('green', 1), ('yellow', 1)], sanity_cost=1),
-                            EvilPower(name='Leech skills', type='Regular', power='leech sensitivity constitution', target='other girl', short_description="将她的部分(敏感和体质)属性转移给另一个女孩", description='Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank', mojo_cost=[('green', 1), ('red', 1)], sanity_cost=1),
-                            EvilPower(name='Leech skills', type='Regular', power='leech libido obedience', target='other girl', short_description="将她的部分(性欲和服从)属性转移给另一个女孩", description='Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank', mojo_cost=[('blue', 1), ('yellow', 1)], sanity_cost=1),
-                            EvilPower(name='Hallucination', type='Regular', power='hypnosis', target='conduit', effects=[Effect("change", "hypnosis", 3)], short_description='提高对她催眠的成功率', mojo_cost=[('yellow', 1)], sanity_cost=1, duration=5, activation_limit="girl"),
-                            EvilPower(name='Fearful trade', type='Regular', power='mojo trade', target='MC', short_description='以2：1的比例将其他颜色魔力转换为紫色魔力', mojo_cost=[('green', 1)], sanity_cost=1),
-                            EvilPower(name='Dark fantasy: Naked', type='Regular', power='naked', target='conduit', short_description='她会更容易接受裸体', mojo_cost=[('green', 1)], sanity_cost=1),
-                            EvilPower(name='Oni', type='Regular', power='security', target='brothel', effects=[Effect("special", "demon security", 1, scope="brothel"), Effect("change", "security", 1, scope="brothel")], short_description='提升青楼安保效果', mojo_cost=[('red', 1)], sanity_cost=1, duration=5),
-                            EvilPower(name='Haniwa', type='Regular', power='maintenance', target='brothel', effects=[Effect("special", "demon maintenance", 1, scope="brothel"), Effect("change", "maintenance", 1, scope="brothel")], short_description='提升青楼清洁效果', mojo_cost=[('yellow', 1)], sanity_cost=1, duration=5),
-                            EvilPower(name='Demonette', type='Regular', power='advertising', target='brothel', effects=[Effect("special", "demon advertising", 1, scope="brothel"), Effect("change", "advertising", 1, scope="brothel")], short_description='提升青楼广告效果', mojo_cost=[('green', 1)], sanity_cost=1, duration=5),
+                            EvilPower(name=_('Summon cuddly pet'), type='Platinum', power='chaos', target='MC', short_description=__('Summon this very cute, totally normal and safe pet'), mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=2),
+                            EvilPower(name=_('Ritual orgy'), type='Platinum', power='ritual orgy', target='brothel', short_description=__('Instant gold generation for the brothel, high sanity cost'), mojo_cost=[('green', 1), ('blue', 2), ('red', 2), ('yellow', 1)], sanity_cost=6),
+                            EvilPower(name=_('Ritual bondage'), type='Platinum', power='ritual bondage', target='all girls', effects=[Effect("gain", "obedience", 6, dice=1), Effect("gain", "libido", 6, dice=1)], short_description=__('Instant gain of Obedience and Libido for all girls, high sanity cost'), mojo_cost=[('green', 2), ('blue', 1), ('red', 1), ('yellow', 2)], sanity_cost=6),
+                            EvilPower(name=_('Ritual violence'), type='Platinum', power='ritual violence', target='all girls', effects=[Effect("gain", "fear", 4, dice=1)], short_description=__('Instant fear generation for all girls, high sanity cost'), mojo_cost=[('red', 6)], sanity_cost=6),
+                            EvilPower(name=_('Forget'), type='Platinum', power='perks', target='conduit', short_description=__('Resets all perks rank C or above'), mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4),
+                            EvilPower(name=_('Horror visions'), type='Gold', power='fear boost', target='all girls', effects=[Effect("boost", "fear gains", 0.25, scope="brothel")], short_description=__('Fear raises faster for all girls'), mojo_cost=[('yellow', 5)], sanity_cost=4, duration=5),
+                            EvilPower(name=_('Soul change'), type='Gold', power='personality', target='conduit', short_description=__('Alters her personality randomly'), mojo_cost=[('blue', 5)], sanity_cost=4),
+                            EvilPower(name=_('Unholy stamina'), type='Gold', power='customer capacity', target='brothel', effects=[Effect("change", "job customer capacity", 2, scope="brothel"), Effect("change", "whore customer capacity", 1, scope="brothel")], short_description=__('Raises customer capacity for all working and whoring girls'), mojo_cost=[('green', 5)], sanity_cost=3, duration=5),
+                            EvilPower(name=_('Weak point'), type='Gold', power='negative trait', target='conduit', short_description=__('Girl swaps her negative Trait for a new random one'), mojo_cost=[('blue', 5)], sanity_cost=3),
+                            EvilPower(name=_('Brand'), type='Gold', power='slave', target='conduit', short_description=__('Turn girl into a slave (free girls only)'), mojo_cost=[('green', 3)], sanity_cost=4),
+                            EvilPower(name=_('Satisfaction guaranteed'), type='Gold', power='customer satisfaction', target='brothel', effects=[Effect("increase satisfaction", "all jobs", 1, scope="brothel"), Effect("increase satisfaction", "all sex acts", 1, scope="brothel")], short_description=__("+1 satisfaction for all customers"), mojo_cost=[('green', 1), ('blue', 1), ('red', 1), ("yellow", 1)], sanity_cost=4, duration=4),
+                            EvilPower(name=_('Dynamo'), type='Gold', power='energy', target='brothel', short_description=__('Restores some energy for all brothel girls, depletes her energy'), mojo_cost=[('red', 4)], sanity_cost=3),
+                            EvilPower(name=_('Pain is the lesson'), type='Gold', power='postings', target='conduit', effects=[Effect("boost", "quest rewards", 0.5), Effect("boost", "class results", 0.5)], short_description=__('She will receive more gains from classes and quests'), mojo_cost=[('red', 1), ('yellow', 2)], sanity_cost=3, duration=7, activation_limit="girl"),
+                            EvilPower(name=_('Frenzy'), type='Silver', power='frenzy', target='conduit', effects=[Effect("special", "ignore energy", 1)], short_description=__('She will be able to work without losing energy for a while, then get automatically exhausted'), mojo_cost=[('green', 4)], sanity_cost=2, duration=3, activation_limit="girl"),
+                            EvilPower(name=_('Warp farm'), type='Silver', power='farm', target='conduit', effects=[Effect("boost", "farm preference increase", 1.0), Effect("boost", "farm fear generation", 1.0)], short_description=__('Farm training and fear generation will be more efficient for her'), mojo_cost=[('green', 1), ('blue', 1), ('red', 1), ('yellow', 1)], sanity_cost=2, duration=7, activation_limit="girl"),
+                            EvilPower(name=_('Leech reputation'), type='Silver', power='leech rep', target='other girl', short_description=__('Some of her reputation will be transferred to another girl of equal or lower rank'), mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
+                            EvilPower(name=_('Stigmata'), type='Silver', power='hurt', target='other girl', short_description=__('She will absorb the wounds from another girl and heal her'), mojo_cost=[('red', 3)], sanity_cost=3),
+                            EvilPower(name=_('Dark fantasy: Bisexual'), type='Silver', power='bisexual', target='conduit', short_description=__('Her Bisexual preference will increase'), mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=2),
+                            EvilPower(name=_('Dark fantasy: Group'), type='Silver', power='group', target='conduit', short_description=__('Her Group preference will increase'), mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
+                            EvilPower(name=_('Blind obedience'), type='Silver', power='obedience', target='conduit', effects=[Effect("change", "obedience target", -30), Effect("change", "all sex acts requirements", -15)], short_description=__('She is less likely to refuse working or training'), mojo_cost=[('yellow', 3)], sanity_cost=3, duration=3, activation_limit="girl"),
+                            EvilPower(name=_('Leech xp'), type='Silver', power='leech xp', target='all girls', short_description=__('Share some XP with all girls of lesser level'), mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=2),
+                            EvilPower(name=_('Leech jp'), type='Silver', power='leech jp', target='all girls', short_description=__('Share some JP with all girls of lesser job level'), mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=2),
+                            EvilPower(name=_('Bad memories'), type='Bronze', power='punish', target='all girls', effects=[Effect("boost", "punishment efficiency", 1, scope="brothel")], short_description=__('Punishment is more efficient on all girls'), mojo_cost=[('yellow', 3)], sanity_cost=3, duration=7),
+                            EvilPower(name=_('Apathy'), type='Bronze', power='normalize fear', target='conduit', short_description=__('Love/Hate and Fear/Trust levels are reduced'), mojo_cost=[('blue', 1), ('red', 1), ('yellow', 1)], sanity_cost=2),
+                            EvilPower(name=_('Abduction'), type='Bronze', power='kidnap', target='city girl', short_description=__('Attempts to kidnap a free girl, may get hurt in the process'), description=__('She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level.'), mojo_cost=[('yellow', 3)], sanity_cost=2),
+                            EvilPower(name=_('Spread the love'), type='Bronze', power='city love', target='location', short_description=__('Leeches all of her Love and raises Love for all girls in a given district'), mojo_cost=[('blue', 3)], sanity_cost=2),
+                            EvilPower(name=_('Change fixation'), type='Bronze', power='negative fixation', target='conduit', short_description=__('Changes a negative fixation to a random one'), mojo_cost=[('yellow', 3)], sanity_cost=2),
+                            EvilPower(name=_('Summon incubus'), type='Bronze', power='prestige', target='conduit', short_description=__('Summon lesser demon to fuck her, boosting a random sex skill, prestige and girl XP'), mojo_cost=[('blue', 2)], sanity_cost=3),
+                            EvilPower(name=_('Non Euclidean space'), type='Bronze', power='room capacity', target='brothel', short_description=__('Common rooms in the brothel can accomodate more customers'), mojo_cost=[('red', 3)], sanity_cost=2, duration=5), # Effect is changed dynamically
+                            EvilPower(name=_('Nature calls'), type='Bronze', power='force naked', target='conduit', effects=[Effect("special", "naked", 1)], short_description=__('She will remain naked at all times'), mojo_cost=[('green', 3)], sanity_cost=2, duration=5, activation_limit="girl"),
+                            EvilPower(name=_('Vampire smile'), type='Bronze', power='charisma', target='MC', effects=[Effect("change", "charisma", 1)], short_description=__('+1 to Main Character Charisma'), mojo_cost=[('green', 3)], sanity_cost=2, duration=7),
+                            EvilPower(name=_('Vampire swiftness'), type='Bronze', power='speed', target='MC', effects=[Effect("change", "speed", 1)], short_description=__('+1 to Main Character Speed'), mojo_cost=[('blue', 3)], sanity_cost=2, duration=7),
+                            EvilPower(name=_('Vampire vigor'), type='Bronze', power='strength', target='MC', effects=[Effect("change", "strength", 1)], short_description=__('+1 to Main Character Strength'), mojo_cost=[('red', 3)], sanity_cost=2, duration=7),
+                            EvilPower(name=_('Vampire mind'), type='Bronze', power='spirit', target='MC', effects=[Effect("change", "spirit", 1)], short_description=__('+1 to Main Character Spirit'), mojo_cost=[('yellow', 3)], sanity_cost=2, duration=7),
+                            EvilPower(name=_('Even out'), type='Bronze', power='normalize skills BBCR', target='conduit', short_description=__("Averages out some of her skills (Beauty, Body, Charm & Refinement)"), description=__("Beauty, Body, Charm and Refinement skills converge on their average value"), mojo_cost=[('green', 3)], sanity_cost=2),
+                            EvilPower(name=_('Even out'), type='Bronze', power='normalize skills LOCS', target='conduit', short_description=__("Averages out some of her skills (Libido, Obedience, Constitution, Sensitivity)"), description=__("Libido, Obedience, Constitution and Sensitivity converge on their average value"), mojo_cost=[('blue', 3)], sanity_cost=2),
+                            EvilPower(name=_('Shuffle'), type='Bronze', power='shuffle skills BBCR', target='conduit', short_description=__("Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement)"), description=__("Beauty, Body, Charm and Refinement skill values are shuffled randomly"), mojo_cost=[('yellow', 3)], sanity_cost=2),
+                            EvilPower(name=_('Shuffle'), type='Bronze', power='shuffle skills LOCS', target='conduit', short_description=__("Randomly shuffles the value of some of her skills (Libido, Obedience, Constitution, Sensitivity)"), description=__("Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly"), mojo_cost=[('red', 3)], sanity_cost=2),
+                            EvilPower(name=_('Mulligan'), type='Bronze', power='mulligan', target='MC', short_description=__('Discard hand and redraw power cards'), mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=1),
+                            EvilPower(name=_('Mojo surge (yellow)'), type='Regular', power='mojo yellow', target='MC', short_description=__('Receive 2-6 Yellow Mojo, high sanity cost'), mojo_cost=[('green', 1)], sanity_cost=3),
+                            EvilPower(name=_('Mojo surge (red)'), type='Regular', power='mojo red', target='MC', short_description=__('Receive 2-6 Red Mojo, high sanity cost'), mojo_cost=[('yellow', 1)], sanity_cost=3),
+                            EvilPower(name=_('Mojo surge (blue)'), type='Regular', power='mojo blue', target='MC', short_description=__('Receive 2-6 Blue Mojo, high sanity cost'), mojo_cost=[('red', 1)], sanity_cost=3),
+                            EvilPower(name=_('Mojo surge (green)'), type='Regular', power='mojo green', target='MC', short_description=__('Receive 2-6 Green Mojo, high sanity cost'), mojo_cost=[('blue', 1)], sanity_cost=3),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech service sex', target='other girl', short_description=__("Leeches some of her skills (Service & Sex) to another girl"), description=__('Leeches some of her service and sex skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=2),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech anal fetish', target='other girl', short_description=__("Leeches some of her skills (Anal & Fetish) to another girl"), description=__('Leeches some of her anal and fetish skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('red', 1), ('yellow', 1)], sanity_cost=2),
+                            EvilPower(name=_('Dark fantasy: Service'), type='Regular', power='service', target='conduit', short_description=__('Her Service preference will increase'), mojo_cost=[('green', 2)], sanity_cost=1),
+                            EvilPower(name=_('Dark fantasy: Sex'), type='Regular', power='sex', target='conduit', short_description=__('Her Sex preference will increase'), mojo_cost=[('blue', 2)], sanity_cost=1),
+                            EvilPower(name=_('Dark fantasy: Anal'), type='Regular', power='anal', target='conduit', short_description=__('Her Anal preference will increase'), mojo_cost=[('red', 2)], sanity_cost=1),
+                            EvilPower(name=_('Dark fantasy: Fetish'), type='Regular', power='fetish', target='conduit', short_description=__('Her Fetish preference will increase'), mojo_cost=[('yellow', 2)], sanity_cost=1),
+                            EvilPower(name=_('Minion training'), type='Regular', power='minion', target='minion', short_description=__('Shares some XP with a minion'), mojo_cost=[('red', 1)], sanity_cost=1),
+                            EvilPower(name=_('Connected minds'), type='Regular', power='obedience link', target='other girl', short_description=__('Target another girl. Reduces her chances of refusing acts the conduit accepts'), mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=1, duration=5),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech beauty body', target='other girl', short_description=__("Leeches some of her skills (Beauty & Body) to another girl"), description=__('Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('blue', 1), ('red', 1)], sanity_cost=1),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech charm refinement', target='other girl', short_description=__("Leeches some of her skills (Charm & Refinement) to another girl"), description=__('Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('green', 1), ('yellow', 1)], sanity_cost=1),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech sensitivity constitution', target='other girl', short_description=__("Leeches some of her skills (Sensitivity & Constitution) to another girl"), description=__('Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('green', 1), ('red', 1)], sanity_cost=1),
+                            EvilPower(name=_('Leech skills'), type='Regular', power='leech libido obedience', target='other girl', short_description=__("Leeches some of her skills (Libido & Obedience) to another girl"), description=__('Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('blue', 1), ('yellow', 1)], sanity_cost=1),
+                            EvilPower(name=_('Hallucination'), type='Regular', power='hypnosis', target='conduit', effects=[Effect("change", "hypnosis", 3)], short_description=__('All hypnosis attempts on this girl are more likely to succeed'), mojo_cost=[('yellow', 1)], sanity_cost=1, duration=5, activation_limit="girl"),
+                            EvilPower(name=_('Fearful trade'), type='Regular', power='mojo trade', target='MC', short_description=__('Swaps colored mojo to purple mojo at a rate of 2 for 1'), mojo_cost=[('green', 1)], sanity_cost=1),
+                            EvilPower(name=_('Dark fantasy: Naked'), type='Regular', power='naked', target='conduit', short_description=__('Her Naked preference will increase'), mojo_cost=[('green', 1)], sanity_cost=1),
+                            EvilPower(name=_('Oni'), type='Regular', power='security', target='brothel', effects=[Effect("special", "demon security", 1, scope="brothel"), Effect("change", "security", 1, scope="brothel")], short_description=__('Raises brothel security'), mojo_cost=[('red', 1)], sanity_cost=1, duration=5),
+                            EvilPower(name=_('Haniwa'), type='Regular', power='maintenance', target='brothel', effects=[Effect("special", "demon maintenance", 1, scope="brothel"), Effect("change", "maintenance", 1, scope="brothel")], short_description=__('Raises brothel maintenance'), mojo_cost=[('yellow', 1)], sanity_cost=1, duration=5),
+                            EvilPower(name=_('Demonette'), type='Regular', power='advertising', target='brothel', effects=[Effect("special", "demon advertising", 1, scope="brothel"), Effect("change", "advertising", 1, scope="brothel")], short_description=__('Raises brothel advertising'), mojo_cost=[('green', 1)], sanity_cost=1, duration=5),
                         ]
 
         evpower_super_list = [
-                                EvilSuperPower(name='Summon cuddly pet', type='Platinum', power='chaos', target='MC', short_description='Summon this absolutely adorable and utterly HARMLESS not-at-all evil pet. Pinky swear.', mojo_cost=[('green', 5), ('blue', 5), ('red', 5), ('yellow', 5)], sanity_cost=666),
-                                EvilSuperPower(name='Ritual orgy', type='Platinum', power='ritual orgy', target='brothel', short_description='Large gold generation for the brothel, instant loss of sanity.', mojo_cost=[('green', 2), ('blue', 3), ('red', 3), ('yellow', 2)], sanity_cost=666),
-                                EvilSuperPower(name='Ritual bondage', type='Platinum', power='ritual bondage', target='all girls', effects=[Effect("gain", "obedience", 6, dice=2), Effect("gain", "libido", 6, dice=2)], short_description='Large gain of Obedience and Libido for all girls, instant loss of sanity.', mojo_cost=[('green', 3), ('blue', 2), ('red', 2), ('yellow', 3)], sanity_cost=666),
-                                EvilSuperPower(name='Ritual violence', type='Platinum', power='ritual violence', target='all girls', effects=[Effect("gain", "fear", 4, dice=2)], short_description='Fear generation for all girls with a large mojo yield, instant loss of sanity.', mojo_cost=[('red', 10)], sanity_cost=666),
-                                EvilSuperPower(name='Forget', type='Platinum', power='perks', target='conduit', short_description='Reset all perks and perk trees.', mojo_cost=[('green', 4), ('blue', 4), ('red', 4), ('yellow', 4)], sanity_cost=6),
-                                EvilSuperPower(name='Horror visions', type='Gold', power='fear boost', target='all girls', effects=[Effect("boost", "fear gains", 0.25, scope="brothel"), Effect("special", "fear interactions", 1, scope="brothel")], short_description='Regular MC interactions generate Fear. Fear raises faster for all girls. Lasts 10 days.', mojo_cost=[('yellow', 10)], sanity_cost=5, duration=10),
-                                EvilSuperPower(name='Soul change', type='Gold', power='personality', target='conduit', short_description='Alters her personality, you can influence the outcome.', mojo_cost=[('blue', 10)], sanity_cost=5),
-                                EvilSuperPower(name='Unholy stamina', type='Gold', power='customer capacity', target='brothel', effects=[Effect("change", "job customer capacity", 2, scope="brothel"), Effect("change", "whore customer capacity", 1, scope="brothel")], short_description='Raises customer capacity for all working and whoring girls', mojo_cost=[('green', 10)], sanity_cost=5, duration=10),
-                                EvilSuperPower(name='Weak point', type='Gold', power='negative trait', target='conduit', short_description='Girl swaps her negative Trait for a new one, you can influence the outcome', mojo_cost=[('blue', 10)], sanity_cost=5),
-                                EvilSuperPower(name='Brand', type='Gold', power='slave', target='all girls', short_description='Turn all free girls in the brothel or farm into slaves', mojo_cost=[('green', 9)], sanity_cost=6),
-                                EvilSuperPower(name='Satisfaction guaranteed', type='Gold', power='customer satisfaction', target='brothel', effects=[Effect("increase satisfaction", "all jobs", 2, scope="brothel"), Effect("increase satisfaction", "all sex acts", 2, scope="brothel")], short_description='+2 satisfaction for all customers', mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=5, duration=7),
-                                EvilSuperPower(name='Dynamo', type='Gold', power='energy', target='brothel', short_description='Restores her max energy level to all brothel girls, exhausts and hurts her', mojo_cost=[('red', 8)], sanity_cost=5),
-                                EvilSuperPower(name='Pain is the lesson', type='Gold', power='postings', target='all girls', effects=[Effect("boost", "quest rewards", 0.5, scope="brothel"), Effect("boost", "class results", 0.5, scope="brothel")], short_description='All girls will receive more gains from classes and quests', mojo_cost=[('red', 2), ('yellow', 4)], sanity_cost=6, duration=7),
-                                EvilSuperPower(name='Frenzy', type='Silver', power='frenzy', target='conduit', effects=[Effect("special", "ignore energy", 1)], short_description='She will be able to work without losing energy for a while, then get automatically exhausted', mojo_cost=[('green', 8)], sanity_cost=4, duration=7, activation_limit="girl"),
-                                EvilSuperPower(name='Warp farm', type='Silver', power='farm', target='all girls', effects=[Effect("boost", "farm preference increase", 1.0, scope="farm"), Effect("boost", "farm fear generation", 1.0, scope="farm")], short_description='Farm training and fear generation will be more efficient for all girls', mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4, duration=7),
-                                EvilSuperPower(name='Leech reputation', type='Silver', power='leech rep', target='other girl', short_description='All of her reputation will be transferred to another girl of lower or similar rank', mojo_cost=[('blue', 4), ('red', 4)], sanity_cost=4),
-                                EvilSuperPower(name='Stigmata', type='Silver', power='hurt', target='all girls', short_description='She will absorb wounds from all girls and heal them', mojo_cost=[('red', 7)], sanity_cost=5),
-                                EvilSuperPower(name='Dark fantasy: Bisexual', type='Silver', power='bisexual', target='conduit', short_description='Her Bisexual preference will increase (larger effect)', mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
-                                EvilSuperPower(name='Dark fantasy: Group', type='Silver', power='group', target='conduit', short_description='Her Group preference will increase (larger effect)', mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
-                                EvilSuperPower(name='Blind obedience', type='Silver', power='obedience', target='conduit', effects=[Effect("change", "obedience target", -70), Effect("change", "sex acts requirements", -35), Effect("special", "minimum preference", "very reluctant")], short_description='She is a lot less likely to refuse working, training or whoring', mojo_cost=[('yellow', 6)], sanity_cost=5, duration=3, activation_limit="girl"),
-                                EvilSuperPower(name='Leech xp', type='Silver', power='leech xp', target='all girls', short_description='Share more XP with all girls of lesser level', mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
-                                EvilSuperPower(name='Leech jp', type='Silver', power='leech jp', target='all girls', short_description='Share more JP with all girls of lesser job level', mojo_cost=[('blue', 4), ('red', 4)], sanity_cost=3),
-                                EvilSuperPower(name='Worse memories', type='Bronze', power='punish', target='all girls', effects=[Effect("boost", "punishment efficiency", 3, scope="brothel")], short_description='Punishment is a lot more efficient on all girls.', mojo_cost=[('red', 3), ('yellow', 3)], sanity_cost=4, duration=7),
-                                EvilSuperPower(name='Apathy', type='Bronze', power='normalize fear', target='conduit', short_description='Love/Hate and Fear/Trust levels are set back to zero', mojo_cost=[('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4),
-                                EvilSuperPower(name='Abduction', type='Bronze', power='kidnap', target='city girl', short_description='Attempts to kidnap a free girl, may get hurt in the process. Higher success chances', description='She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level (supercharged: higher chance of success).', mojo_cost=[('yellow', 6)], sanity_cost=4),
-                                EvilSuperPower(name='Spread the love', type='Bronze', power='city love', target='district', short_description='Leeches all of her Love and raises Love for all girls in the city', mojo_cost=[('blue', 6)], sanity_cost=4),
-                                EvilSuperPower(name='Remove fixation', type='Bronze', power='negative fixation', target='conduit', short_description='Removes her negative fixation instantly. Exhausts her', mojo_cost=[('blue', 3), ('red', 3), ('yellow', 3)], sanity_cost=4),
-                                EvilSuperPower(name='Summon incubus', type='Bronze', power='prestige', target='conduit', short_description='Summon large demon to fuck her, boosting two random sex skills, prestige and girl XP even more', mojo_cost=[('blue', 5)], sanity_cost=6),
-                                EvilSuperPower(name='Non Euclidean space', type='Bronze', power='room capacity', target='brothel', short_description='Common rooms in the brothel can accomodate a lot more customers', mojo_cost=[('red', 6)], sanity_cost=4, duration=5),
-                                EvilSuperPower(name='Nature calls', type='Bronze', power='force naked', target='conduit', effects=[Effect("special", "naked", 1), Effect("change", "beauty", 5), Effect("change", "body", 5), Effect("change", "charm", 5), Effect("change", "refinement", 5)], short_description='She will remain naked at all times. Temporary boost to main skills', mojo_cost=[('green', 6)], sanity_cost=3, duration=10, activation_limit="girl"),
-                                EvilSuperPower(name='Vampire smile', type='Bronze', power='charisma', target='MC', effects=[Effect("change", "charisma", 2)], short_description='+2 to Main Character Charisma', mojo_cost=[('green', 6)], sanity_cost=3, duration=7),
-                                EvilSuperPower(name='Vampire swiftness', type='Bronze', power='speed', target='MC', effects=[Effect("change", "speed", 2)], short_description='+2 to Main Character Speed', mojo_cost=[('blue', 6)], sanity_cost=3, duration=7),
-                                EvilSuperPower(name='Vampire vigor', type='Bronze', power='strength', target='MC', effects=[Effect("change", "strength", 2)], short_description='+2 to Main Character Strength', mojo_cost=[('red', 6)], sanity_cost=3, duration=7),
-                                EvilSuperPower(name='Vampire mind', type='Bronze', power='spirit', target='MC', effects=[Effect("change", "spirit", 2)], short_description='+2 to Main Character Spirit', mojo_cost=[('yellow', 6)], sanity_cost=3, duration=7),
-                                EvilSuperPower(name='Even out', type='Bronze', power='normalize skills BBCR', target='conduit', short_description="Averages out some of her skills (Beauty, Body, Charm & Refinement), then receive a permanent skill boost", description="Beauty, Body, Charm and Refinement skills converge on their average value, then receive a permanent boost.", mojo_cost=[('green', 6)], sanity_cost=2),
-                                EvilSuperPower(name='Even out', type='Bronze', power='normalize skills LOCS', target='conduit', short_description="Averages out some of her skills (Libido, Obedience, Constitution, Sensitivity), then receive a permanent skill boost", description="Libido, Obedience, Constitution and Sensitivity skills converge on their average value, then receive a permanent boost.", mojo_cost=[('blue', 6)], sanity_cost=2),
-                                EvilSuperPower(name='Shuffle', type='Bronze', power='shuffle skills BBCR', target='conduit', short_description="Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement), receiving a permanent boost", description="Beauty, Body, Charm and Refinement skill values are shuffled randomly, receiving a permanent boost", mojo_cost=[('yellow', 6)], sanity_cost=2),
-                                EvilSuperPower(name='Shuffle', type='Bronze', power='shuffle skills LOCS', target='conduit', short_description="Randomly shuffles the value of some of her skills (Libido, Obedience, Constitution, Sensitivity), receiving a permanent boost", description="Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly, receiving a permanent boost", mojo_cost=[('red', 6)], sanity_cost=2),
-                                EvilSuperPower(name='Mulligan', type='Bronze', power='mulligan', target='MC', effects=[Effect("change", "evil power cards", 2)], short_description='Redraw all power cards + 2 extra cards', mojo_cost=[('green', 3), ('blue', 3)], sanity_cost=2),
-                                EvilSuperPower(name='Mojo surge (yellow)', type='Regular', power='mojo yellow', target='MC', short_description='Receive 4-12 Yellow Mojo, very high sanity cost', mojo_cost=[('green', 2)], sanity_cost=5),
-                                EvilSuperPower(name='Mojo surge (red)', type='Regular', power='mojo red', target='MC', short_description='Receive 4-12 Red Mojo, very high sanity cost', mojo_cost=[('yellow', 2)], sanity_cost=5),
-                                EvilSuperPower(name='Mojo surge (blue)', type='Regular', power='mojo blue', target='MC', short_description='Receive 4-12 Blue Mojo, very high sanity cost', mojo_cost=[('red', 2)], sanity_cost=5),
-                                EvilSuperPower(name='Mojo surge (green)', type='Regular', power='mojo green', target='MC', short_description='Receive 4-12 Green Mojo, very high sanity cost', mojo_cost=[('blue', 2)], sanity_cost=5),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech service sex', target='other girl', short_description="Leeches some of her skills (Service & Sex) to another girl (larger effect)", description='Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank', mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=3),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech anal fetish', target='other girl', short_description="Leeches some of her skills (Anal & Service) to another girl (larger effect)", description='Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank', mojo_cost=[("red", 2), ('yellow', 2)], sanity_cost=3),
-                                EvilSuperPower(name='Dark fantasy: Service', type='Regular', power='service', target='conduit', short_description='Her Service preference will increase (larger effect)', mojo_cost=[('green', 4)], sanity_cost=2),
-                                EvilSuperPower(name='Dark fantasy: Sex', type='Regular', power='sex', target='conduit', short_description='Her Sex preference will increase (larger effect)', mojo_cost=[('blue', 4)], sanity_cost=2),
-                                EvilSuperPower(name='Dark fantasy: Anal', type='Regular', power='anal', target='conduit', short_description='Her Anal preference will increase (larger effect)', mojo_cost=[('red', 4)], sanity_cost=2),
-                                EvilSuperPower(name='Dark fantasy: Fetish', type='Regular', power='fetish', target='conduit', short_description='Her Fetish preference will increase (larger effect)', mojo_cost=[('yellow', 4)], sanity_cost=2),
-                                EvilSuperPower(name='Minion training', type='Regular', power='minion', target='minion type', short_description='Shares XP with all minions of the same type', mojo_cost=[('blue', 1), ('red', 2)], sanity_cost=4),
-                                EvilSuperPower(name='Connected minds', type='Regular', power='obedience link', target='other girl', short_description='Target another girl. She will have the same chances of accepting acts the conduit accepts', mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=1, duration=5),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech beauty body', target='other girl', short_description="Leeches some of her skills (Beauty & Body) to another girl (larger effect)", description='Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank', mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=1),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech charm refinement', target='other girl', short_description="Leeches some of her skills (Charm & Refinement) to another girl (larger effect)", description='Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank', mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=1),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech sensitivity constitution', target='other girl', short_description="Leeches some of her skills (Sensitivity & Constitution) to another girl", description='Leeches more of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank (larger effect)', mojo_cost=[('green', 2), ('red', 2)], sanity_cost=1),
-                                EvilSuperPower(name='Leech skills', type='Regular', power='leech libido obedience', target='other girl', short_description="Leeches some of her skills (Libido & Obedience) to another girl (larger effect)", description='Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank', mojo_cost=[('blue', 2), ('yellow', 2)], sanity_cost=1),
-                                EvilSuperPower(name='Hallucination', type='Regular', power='hypnosis', target='all girls', effects=[Effect("change", "hypnosis", 3, scope="brothel")], short_description='All hypnosis attempts on all girls are more likely to succeed', mojo_cost=[('yellow', 3)], sanity_cost=2, duration=5),
-                                EvilSuperPower(name='Fearful trade', type='Regular', power='mojo trade', target='MC', short_description='Swaps colored mojo to purple mojo at a rate of 3 for 2', mojo_cost=[('green', 3)], sanity_cost=2),
-                                EvilSuperPower(name='Dark fantasy: Naked', type='Regular', power='naked', target='conduit', short_description='Her Naked preference will increase (larger effect)', mojo_cost=[('green', 2)], sanity_cost=2),
-                                EvilSuperPower(name='Oni', type='Regular', power='security', target='brothel', effects=[Effect("special", "demon security", 1, scope="brothel"), Effect("change", "security", 1, scope="brothel")], short_description='Raises brothel security', mojo_cost=[('blue', 1), ('red', 1)], sanity_cost=2, duration=10),
-                                EvilSuperPower(name='Haniwa', type='Regular', power='maintenance', target='brothel', effects=[Effect("special", "demon maintenance", 1, scope="brothel"), Effect("change", "maintenance", 1, scope="brothel")], short_description='Raises brothel maintenance', mojo_cost=[('blue', 1), ('yellow', 1)], sanity_cost=2, duration=10),
-                                EvilSuperPower(name='Demonette', type='Regular', power='advertising', target='brothel', effects=[Effect("special", "demon advertising", 1, scope="brothel"), Effect("change", "advertising", 1, scope="brothel")], short_description='Raises brothel advertising', mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=2, duration=10),
+                                EvilSuperPower(name=_('Summon cuddly pet'), type='Platinum', power='chaos', target='MC', short_description=__('Summon this absolutely adorable and utterly HARMLESS not-at-all evil pet. Pinky swear.'), mojo_cost=[('green', 5), ('blue', 5), ('red', 5), ('yellow', 5)], sanity_cost=666),
+                                EvilSuperPower(name=_('Ritual orgy'), type='Platinum', power='ritual orgy', target='brothel', short_description=__('Large gold generation for the brothel, instant loss of sanity.'), mojo_cost=[('green', 2), ('blue', 3), ('red', 3), ('yellow', 2)], sanity_cost=666),
+                                EvilSuperPower(name=_('Ritual bondage'), type='Platinum', power='ritual bondage', target='all girls', effects=[Effect("gain", "obedience", 6, dice=2), Effect("gain", "libido", 6, dice=2)], short_description=__('Large gain of Obedience and Libido for all girls, instant loss of sanity.'), mojo_cost=[('green', 3), ('blue', 2), ('red', 2), ('yellow', 3)], sanity_cost=666),
+                                EvilSuperPower(name=_('Ritual violence'), type='Platinum', power='ritual violence', target='all girls', effects=[Effect("gain", "fear", 4, dice=2)], short_description=__('Fear generation for all girls with a large mojo yield, instant loss of sanity.'), mojo_cost=[('red', 10)], sanity_cost=666),
+                                EvilSuperPower(name=_('Forget'), type='Platinum', power='perks', target='conduit', short_description=__('Reset all perks and perk trees.'), mojo_cost=[('green', 4), ('blue', 4), ('red', 4), ('yellow', 4)], sanity_cost=6),
+                                EvilSuperPower(name=_('Horror visions'), type='Gold', power='fear boost', target='all girls', effects=[Effect("boost", "fear gains", 0.25, scope="brothel"), Effect("special", "fear interactions", 1, scope="brothel")], short_description=__('Regular MC interactions generate Fear. Fear raises faster for all girls. Lasts 10 days.'), mojo_cost=[('yellow', 10)], sanity_cost=5, duration=10),
+                                EvilSuperPower(name=_('Soul change'), type='Gold', power='personality', target='conduit', short_description=__('Alters her personality, you can influence the outcome.'), mojo_cost=[('blue', 10)], sanity_cost=5),
+                                EvilSuperPower(name=_('Unholy stamina'), type='Gold', power='customer capacity', target='brothel', effects=[Effect("change", "job customer capacity", 2, scope="brothel"), Effect("change", "whore customer capacity", 1, scope="brothel")], short_description=__('Raises customer capacity for all working and whoring girls'), mojo_cost=[('green', 10)], sanity_cost=5, duration=10),
+                                EvilSuperPower(name=_('Weak point'), type='Gold', power='negative trait', target='conduit', short_description=__('Girl swaps her negative Trait for a new one, you can influence the outcome'), mojo_cost=[('blue', 10)], sanity_cost=5),
+                                EvilSuperPower(name=_('Brand'), type='Gold', power='slave', target='all girls', short_description=__('Turn all free girls in the brothel or farm into slaves'), mojo_cost=[('green', 9)], sanity_cost=6),
+                                EvilSuperPower(name=_('Satisfaction guaranteed'), type='Gold', power='customer satisfaction', target='brothel', effects=[Effect("increase satisfaction", "all jobs", 2, scope="brothel"), Effect("increase satisfaction", "all sex acts", 2, scope="brothel")], short_description=__('+2 satisfaction for all customers'), mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=5, duration=7),
+                                EvilSuperPower(name=_('Dynamo'), type='Gold', power='energy', target='brothel', short_description=__('Restores her max energy level to all brothel girls, exhausts and hurts her'), mojo_cost=[('red', 8)], sanity_cost=5),
+                                EvilSuperPower(name=_('Pain is the lesson'), type='Gold', power='postings', target='all girls', effects=[Effect("boost", "quest rewards", 0.5, scope="brothel"), Effect("boost", "class results", 0.5, scope="brothel")], short_description=__('All girls will receive more gains from classes and quests'), mojo_cost=[('red', 2), ('yellow', 4)], sanity_cost=6, duration=7),
+                                EvilSuperPower(name=_('Frenzy'), type='Silver', power='frenzy', target='conduit', effects=[Effect("special", "ignore energy", 1)], short_description=__('She will be able to work without losing energy for a while, then get automatically exhausted'), mojo_cost=[('green', 8)], sanity_cost=4, duration=7, activation_limit="girl"),
+                                EvilSuperPower(name=_('Warp farm'), type='Silver', power='farm', target='all girls', effects=[Effect("boost", "farm preference increase", 1.0, scope="farm"), Effect("boost", "farm fear generation", 1.0, scope="farm")], short_description=__('Farm training and fear generation will be more efficient for all girls'), mojo_cost=[('green', 2), ('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4, duration=7),
+                                EvilSuperPower(name=_('Leech reputation'), type='Silver', power='leech rep', target='other girl', short_description=__('All of her reputation will be transferred to another girl of lower or similar rank'), mojo_cost=[('blue', 4), ('red', 4)], sanity_cost=4),
+                                EvilSuperPower(name=_('Stigmata'), type='Silver', power='hurt', target='all girls', short_description=__('She will absorb wounds from all girls and heal them'), mojo_cost=[('red', 7)], sanity_cost=5),
+                                EvilSuperPower(name=_('Dark fantasy: Bisexual'), type='Silver', power='bisexual', target='conduit', short_description=__('Her Bisexual preference will increase (larger effect)'), mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
+                                EvilSuperPower(name=_('Dark fantasy: Group'), type='Silver', power='group', target='conduit', short_description=__('Her Group preference will increase (larger effect)'), mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
+                                EvilSuperPower(name=_('Blind obedience'), type='Silver', power='obedience', target='conduit', effects=[Effect("change", "obedience target", -70), Effect("change", "all sex acts requirements", -35), Effect("special", "minimum preference", "very reluctant")], short_description=__('She is a lot less likely to refuse working, training or whoring'), mojo_cost=[('yellow', 6)], sanity_cost=5, duration=3, activation_limit="girl"),
+                                EvilSuperPower(name=_('Leech xp'), type='Silver', power='leech xp', target='all girls', short_description=__('Share more XP with all girls of lesser level'), mojo_cost=[('green', 4), ('yellow', 4)], sanity_cost=3),
+                                EvilSuperPower(name=_('Leech jp'), type='Silver', power='leech jp', target='all girls', short_description=__('Share more JP with all girls of lesser job level'), mojo_cost=[('blue', 4), ('red', 4)], sanity_cost=3),
+                                EvilSuperPower(name=_('Worse memories'), type='Bronze', power='punish', target='all girls', effects=[Effect("boost", "punishment efficiency", 3, scope="brothel")], short_description=__('Punishment is a lot more efficient on all girls.'), mojo_cost=[('red', 3), ('yellow', 3)], sanity_cost=4, duration=7),
+                                EvilSuperPower(name=_('Apathy'), type='Bronze', power='normalize fear', target='conduit', short_description=__('Love/Hate and Fear/Trust levels are set back to zero'), mojo_cost=[('blue', 2), ('red', 2), ('yellow', 2)], sanity_cost=4),
+                                EvilSuperPower(name=_('Abduction'), type='Bronze', power='kidnap', target='city girl', short_description=__('Attempts to kidnap a free girl, may get hurt in the process. Higher success chances'), description=__('She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level (supercharged: higher chance of success).'), mojo_cost=[('yellow', 6)], sanity_cost=4),
+                                EvilSuperPower(name=_('Spread the love'), type='Bronze', power='city love', target='district', short_description=__('Leeches all of her Love and raises Love for all girls in the city'), mojo_cost=[('blue', 6)], sanity_cost=4),
+                                EvilSuperPower(name=_('Remove fixation'), type='Bronze', power='negative fixation', target='conduit', short_description=__('Removes her negative fixation instantly. Exhausts her'), mojo_cost=[('blue', 3), ('red', 3), ('yellow', 3)], sanity_cost=4),
+                                EvilSuperPower(name=_('Summon incubus'), type='Bronze', power='prestige', target='conduit', short_description=__('Summon large demon to fuck her, boosting two random sex skills, prestige and girl XP even more'), mojo_cost=[('blue', 5)], sanity_cost=6),
+                                EvilSuperPower(name=_('Non Euclidean space'), type='Bronze', power='room capacity', target='brothel', short_description=__('Common rooms in the brothel can accomodate a lot more customers'), mojo_cost=[('red', 6)], sanity_cost=4, duration=5),
+                                EvilSuperPower(name=_('Nature calls'), type='Bronze', power='force naked', target='conduit', effects=[Effect("special", "naked", 1), Effect("change", "beauty", 5), Effect("change", "body", 5), Effect("change", "charm", 5), Effect("change", "refinement", 5)], short_description=__('She will remain naked at all times. Temporary boost to main skills'), mojo_cost=[('green', 6)], sanity_cost=3, duration=10, activation_limit="girl"),
+                                EvilSuperPower(name=_('Vampire smile'), type='Bronze', power='charisma', target='MC', effects=[Effect("change", "charisma", 2)], short_description=__('+2 to Main Character Charisma'), mojo_cost=[('green', 6)], sanity_cost=3, duration=7),
+                                EvilSuperPower(name=_('Vampire swiftness'), type='Bronze', power='speed', target='MC', effects=[Effect("change", "speed", 2)], short_description=__('+2 to Main Character Speed'), mojo_cost=[('blue', 6)], sanity_cost=3, duration=7),
+                                EvilSuperPower(name=_('Vampire vigor'), type='Bronze', power='strength', target='MC', effects=[Effect("change", "strength", 2)], short_description=__('+2 to Main Character Strength'), mojo_cost=[('red', 6)], sanity_cost=3, duration=7),
+                                EvilSuperPower(name=_('Vampire mind'), type='Bronze', power='spirit', target='MC', effects=[Effect("change", "spirit", 2)], short_description=__('+2 to Main Character Spirit'), mojo_cost=[('yellow', 6)], sanity_cost=3, duration=7),
+                                EvilSuperPower(name=_('Even out'), type='Bronze', power='normalize skills BBCR', target='conduit', short_description=__("Averages out Beauty, Body, Charm & Refinement skills + permanent skill boost"), description=__("Beauty, Body, Charm and Refinement skills converge on their average value, then receive a permanent boost."), mojo_cost=[('green', 6)], sanity_cost=2),
+                                EvilSuperPower(name=_('Even out'), type='Bronze', power='normalize skills LOCS', target='conduit', short_description=__("Averages out Libido, Obedience, Constitution, Sensitivity skills + permanent skill boost"), description=__("Libido, Obedience, Constitution and Sensitivity skills converge on their average value, then receive a permanent boost."), mojo_cost=[('blue', 6)], sanity_cost=2),
+                                EvilSuperPower(name=_('Shuffle'), type='Bronze', power='shuffle skills BBCR', target='conduit', short_description=__("Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement), receiving a permanent boost"), description=__("Beauty, Body, Charm and Refinement skill values are shuffled randomly, receiving a permanent boost"), mojo_cost=[('yellow', 6)], sanity_cost=2),
+                                EvilSuperPower(name=_('Shuffle'), type='Bronze', power='shuffle skills LOCS', target='conduit', short_description=__("Randomly shuffles the value of some of her skills (Libido, Obedience, Constitution, Sensitivity), receiving a permanent boost"), description=__("Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly, receiving a permanent boost"), mojo_cost=[('red', 6)], sanity_cost=2),
+                                EvilSuperPower(name=_('Mulligan'), type='Bronze', power='mulligan', target='MC', effects=[Effect("change", "evil power cards", 2)], short_description=__('Discard hand and redraw with +2 extra cards'), mojo_cost=[('green', 3), ('blue', 3)], sanity_cost=2),
+                                EvilSuperPower(name=_('Mojo surge (yellow)'), type='Regular', power='mojo yellow', target='MC', short_description=__('Receive 4-12 Yellow Mojo, very high sanity cost'), mojo_cost=[('green', 2)], sanity_cost=5),
+                                EvilSuperPower(name=_('Mojo surge (red)'), type='Regular', power='mojo red', target='MC', short_description=__('Receive 4-12 Red Mojo, very high sanity cost'), mojo_cost=[('yellow', 2)], sanity_cost=5),
+                                EvilSuperPower(name=_('Mojo surge (blue)'), type='Regular', power='mojo blue', target='MC', short_description=__('Receive 4-12 Blue Mojo, very high sanity cost'), mojo_cost=[('red', 2)], sanity_cost=5),
+                                EvilSuperPower(name=_('Mojo surge (green)'), type='Regular', power='mojo green', target='MC', short_description=__('Receive 4-12 Green Mojo, very high sanity cost'), mojo_cost=[('blue', 2)], sanity_cost=5),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech service sex', target='other girl', short_description=__("Leeches some of her skills (Service & Sex) to another girl (larger effect)"), description=__('Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=3),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech anal fetish', target='other girl', short_description=__("Leeches some of her skills (Anal & Service) to another girl (larger effect)"), description=__('Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank'), mojo_cost=[("red", 2), ('yellow', 2)], sanity_cost=3),
+                                EvilSuperPower(name=_('Dark fantasy: Service'), type='Regular', power='service', target='conduit', short_description=__('Her Service preference will increase (larger effect)'), mojo_cost=[('green', 4)], sanity_cost=2),
+                                EvilSuperPower(name=_('Dark fantasy: Sex'), type='Regular', power='sex', target='conduit', short_description=__('Her Sex preference will increase (larger effect)'), mojo_cost=[('blue', 4)], sanity_cost=2),
+                                EvilSuperPower(name=_('Dark fantasy: Anal'), type='Regular', power='anal', target='conduit', short_description=__('Her Anal preference will increase (larger effect)'), mojo_cost=[('red', 4)], sanity_cost=2),
+                                EvilSuperPower(name=_('Dark fantasy: Fetish'), type='Regular', power='fetish', target='conduit', short_description=__('Her Fetish preference will increase (larger effect)'), mojo_cost=[('yellow', 4)], sanity_cost=2),
+                                EvilSuperPower(name=_('Minion training'), type='Regular', power='minion', target='minion type', short_description=__('Shares XP with all minions of the same type'), mojo_cost=[('blue', 1), ('red', 2)], sanity_cost=4),
+                                EvilSuperPower(name=_('Connected minds'), type='Regular', power='obedience link', target='other girl', short_description=__('Target another girl. She will have the same chances of accepting acts the conduit accepts'), mojo_cost=[('green', 2), ('blue', 2)], sanity_cost=1, duration=5),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech beauty body', target='other girl', short_description=__("Leeches some of her skills (Beauty & Body) to another girl (larger effect)"), description=__('Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('blue', 2), ('red', 2)], sanity_cost=1),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech charm refinement', target='other girl', short_description=__("Leeches some of her skills (Charm & Refinement) to another girl (larger effect)"), description=__('Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('green', 2), ('yellow', 2)], sanity_cost=1),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech sensitivity constitution', target='other girl', short_description=__("Leeches some of her skills (Sensitivity & Constitution) to another girl"), description=__('Leeches more of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank (larger effect)'), mojo_cost=[('green', 2), ('red', 2)], sanity_cost=1),
+                                EvilSuperPower(name=_('Leech skills'), type='Regular', power='leech libido obedience', target='other girl', short_description=__("Leeches some of her skills (Libido & Obedience) to another girl (larger effect)"), description=__('Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank'), mojo_cost=[('blue', 2), ('yellow', 2)], sanity_cost=1),
+                                EvilSuperPower(name=_('Hallucination'), type='Regular', power='hypnosis', target='all girls', effects=[Effect("change", "hypnosis", 3, scope="brothel")], short_description=__('All hypnosis attempts on all girls are more likely to succeed'), mojo_cost=[('yellow', 3)], sanity_cost=2, duration=5),
+                                EvilSuperPower(name=_('Fearful trade'), type='Regular', power='mojo trade', target='MC', short_description=__('Swaps colored mojo to purple mojo at a rate of 3 for 2'), mojo_cost=[('green', 3)], sanity_cost=2),
+                                EvilSuperPower(name=_('Dark fantasy: Naked'), type='Regular', power='naked', target='conduit', short_description=__('Her Naked preference will increase (larger effect)'), mojo_cost=[('green', 2)], sanity_cost=2),
+                                EvilSuperPower(name=_('Oni'), type='Regular', power='security', target='brothel', effects=[Effect("special", "demon security", 1, scope="brothel"), Effect("change", "security", 1, scope="brothel")], short_description=__('Raises brothel security'), mojo_cost=[('blue', 1), ('red', 1)], sanity_cost=2, duration=10),
+                                EvilSuperPower(name=_('Haniwa'), type='Regular', power='maintenance', target='brothel', effects=[Effect("special", "demon maintenance", 1, scope="brothel"), Effect("change", "maintenance", 1, scope="brothel")], short_description=__('Raises brothel maintenance'), mojo_cost=[('blue', 1), ('yellow', 1)], sanity_cost=2, duration=10),
+                                EvilSuperPower(name=_('Demonette'), type='Regular', power='advertising', target='brothel', effects=[Effect("special", "demon advertising", 1, scope="brothel"), Effect("change", "advertising", 1, scope="brothel")], short_description=__('Raises brothel advertising'), mojo_cost=[('green', 1), ('blue', 1)], sanity_cost=2, duration=10),
                             ]
 
         evpower_dict = {pow.power : pow for pow in evpower_list}
@@ -257,12 +257,17 @@ init python:
             self.powers = evpower_list
             self.super_powers = evpower_super_list
             self.draw_limit = 5
-            self.update()
+            self.update(raw=True)
 
-        def update(self):
+        def update(self, raw=False):
             self.can_draw = True
             self.hand = []
-            self.hand_size = self.draw_limit + MC.get_effect("change", "evil power cards")
+            self.hand_size = self.draw_limit
+            if not raw:
+                self.hand_size += MC.get_effect("change", "evil power cards")
+
+        def get_card(self, pow): # provide name of power to force it into your hand (debugging)
+            self.hand.append(evpower_dict[pow])
 
         def draw_powers(self):
 
@@ -286,6 +291,13 @@ init python:
 
 
 ## POWERS LABELS ##
+
+label debug_powers():
+    $ farm.powers = True
+
+    python:
+        for col in ["purple", "red", "yellow", "blue", "green"]:
+            MC.raise_mojo(col, 50)
 
 label farm_powers_init():
     $ farm.powers = "intro"
@@ -361,8 +373,8 @@ label burn_card(selected_power):
 
     return
 
-label deactivate_power(pow):
-    $ pow.deactivate()
+label deactivate_power(_pow):
+    $ _pow.deactivate()
     return
 
 # POWER LOOP
@@ -398,7 +410,7 @@ label farm_powers(): # The main game loop is handled here, the less logic we put
 
 label farm_powers_loop():
 
-    # $ renpy.block_rollback()
+    # $ norollback()
 
     # STEP 1: CHOOSE POWER
     $ selected_power = conduit = other_girl = None
@@ -408,8 +420,9 @@ label farm_powers_loop():
     if not evpower_deck.can_draw: # Shows hand if drawing is unavailable
         show screen power_hand(evpower_deck.hand)
 
+    $ renpy.start_predict("supercharge")
+
     while True: # This loops until a card, conduit etc. are picked and casting is confirmed
-        $ renpy.start_predict("supercharge")
 
         $ r = ui.interact() # This captures every return value from the current context
 
@@ -423,13 +436,8 @@ label farm_powers_loop():
 
         # TOGGLING SUPERCHARGE
         elif r == "supercharge":
-            $ renpy.restart_interaction()
-            # "{nw}"
-            show supercharge
-
-            pause 0.8
-
-            hide supercharge
+            pass
+            # call supercharge_anim #! Disabled because it breaks the while loop. investigate.
 
         # SELECTING POWER
         elif isinstance(r, EvilPower):
@@ -448,7 +456,7 @@ label farm_powers_loop():
 
             $ selected_power = r
 
-            $ renpy.block_rollback()
+            $ norollback()
 
             # STEP 2: CHOOSE CONDUIT AND TARGET
 
@@ -468,13 +476,13 @@ label farm_powers_loop():
 
                     # STEP 3: CONFIRM CASTING
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     if renpy.call_screen("mojo_payment", pow=selected_power, conduit=conduit, other_girl=other_girl):
                         $ spent_mojo = evpower_deck.play(selected_power, conduit)
 
                         if not debug_mode:
-                            $ renpy.block_rollback()
+                            $ norollback()
 
                         call burn_card(selected_power) from _call_burn_card
 
@@ -486,7 +494,19 @@ label farm_powers_loop():
                         jump farm_powers_loop
 
 
-label power_use(pow, girl, girl2):
+label supercharge_anim():
+    $ renpy.restart_interaction()
+    # "{nw}"
+
+    show supercharge
+
+    pause 0.8
+
+    hide supercharge
+
+    return
+
+label power_use(_pow, girl, girl2):
 
     #### This label is where powers and their effects are activated ####
 
@@ -498,13 +518,13 @@ label power_use(pow, girl, girl2):
 
     ## 2. Activate power
 
-    play sound pow.sound
-    $ pow.activate(conduit=girl)
+    play sound _pow.sound
+    $ _pow.activate(conduit=girl)
 
     # Rituals
 
-    if pow.power == "chaos":
-        if pow.super:
+    if _pow.power == "chaos":
+        if _pow.super:
             if story_flags["chaos"] == False:
                 call chaos(girl) from _call_chaos
             else:
@@ -514,13 +534,13 @@ label power_use(pow, girl, girl2):
         else:
             call summon_pet(girl) from _call_summon_pet
 
-    elif pow.power.startswith("ritual"):
+    elif _pow.power.startswith("ritual"):
 
         "Today, you arranged for Gizel to gather some of her minions, and organize a unique show for some of your most select customers. Some of your girls are attending as well. You want that to be a lesson."
 
         $ witness = rand_choice(MC.girls)
 
-        if pow.power.endswith("orgy"):
+        if _pow.power.endswith("orgy"):
             play sound s_screams
             $ pic = girl.get_pic("group", and_tags=["big"])
             show screen show_img(pic, bg="black")
@@ -533,12 +553,12 @@ label power_use(pow, girl, girl2):
             $ pop = {1 : laborer, 2 : craftsman, 3 : patrician, 4 : aristocrat, 5 : royal}[girl.rank]
             $ cust_nb = girl.get_max_interactions()
 
-            if pow.super:
+            if _pow.super:
                 $ cust_nb *= 2
 
             $ MC.change_gold(girl.get_tip("sex", "very good", [Customer(pop)]*cust_nb)[0])
 
-        elif pow.power.endswith("bondage"):
+        elif _pow.power.endswith("bondage"):
             play sound s_surprise
             $ pic = girl.get_fix_pic("fetish", "bondage", and_tags=["monster"])
             show screen show_img(pic, bg="black")
@@ -548,16 +568,16 @@ label power_use(pow, girl, girl2):
 
             "[girl.fullname] struggles against her bonds, but only manages to make them tighter. Your customers laugh at her increasingly panicked attempts."
 
-            if pow.super:
+            if _pow.super:
                 "Gizel has filled the room with fearsome-looking utensils: the perverted customers will get to torture her all night with them."
 
             python:
                 for g in MC.girls + farm.girls:
-                    add_effects(g, pow.effects)
+                    add_effects(g, _pow.effects)
 
                 notify("All girls: Libido and Obedience increased")
 
-        elif pow.power.endswith("violence"):
+        elif _pow.power.endswith("violence"):
             play sound s_scream_loud
             $ pic = girl.get_pic("hurt", "fetish", and_tags=["sad", "beast"], and_priority=False)
             show screen show_img(pic, bg="black")
@@ -569,15 +589,15 @@ label power_use(pow, girl, girl2):
 
             python:
                 for g in MC.girls + farm.girls:
-                    add_effects(g, pow.effects)
+                    add_effects(g, _pow.effects)
 
                 notify("All girls: Fear increased")
 
         "[witness.fullname] cannot avert her eyes."
 
-        call dialogue(witness, "slave witness " + pow.power) from _call_dialogue_258
+        call dialogue(witness, "slave witness " + _pow.power) from _call_dialogue_258
 
-        if pow.super:
+        if _pow.super:
             $ brothel.change_rep(50)
         else:
             $ brothel.change_rep(20)
@@ -586,7 +606,7 @@ label power_use(pow, girl, girl2):
 
     # Demon helpers
 
-    elif pow.power == "advertising":
+    elif _pow.power == "advertising":
 
         "A minor female demon steps out of the portal."
 
@@ -600,11 +620,11 @@ label power_use(pow, girl, girl2):
 
         $ impact = round_int(0.15*brothel.max_help)
 
-        "The demonette and her sisters will raise your brothel advertising by [impact] for [pow.duration] days."
+        "The demonette and her sisters will raise your brothel advertising by [impact] for [_pow.duration] days."
 
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
 
-    elif pow.power == "security":
+    elif _pow.power == "security":
 
         "A towering figure rises from the portal in a puff of dark smoke."
 
@@ -612,11 +632,11 @@ label power_use(pow, girl, girl2):
 
         $ impact = round_int(0.15*brothel.max_help)
 
-        "The Demon will raise your brothel security by [impact] for [pow.duration] days."
+        "The Demon will raise your brothel security by [impact] for [_pow.duration] days."
 
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
 
-    elif pow.power == "hannies":
+    elif _pow.power == "hannies":
 
         "A bunch of small figures leap out of the portal, stumbling over themselves."
 
@@ -624,18 +644,18 @@ label power_use(pow, girl, girl2):
 
         $ impact = round_int(0.15*brothel.max_help)
 
-        "The hannies will raise your brothel maintenance by [impact] for [pow.duration] days."
+        "The hannies will raise your brothel maintenance by [impact] for [_pow.duration] days."
 
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
 
-    elif pow.power == "prestige":
+    elif _pow.power == "prestige":
 
         $ possible_acts = list(all_sex_acts)
 
         if girl.has_trait("Virgin"):
             $ possible_acts.remove("sex")
 
-        if pow.super:
+        if _pow.super:
             $ acts = rand_choice(possible_acts, 2)
             $ mod = 10
         else:
@@ -651,20 +671,20 @@ label power_use(pow, girl, girl2):
 
             MC.prestige += mod // 2
 
-        call incubus_scene(girl, large_demon=pow.super) from _call_incubus_scene
+        call incubus_scene(girl, large_demon=_pow.super) from _call_incubus_scene
 
     # Preference raising
 
-    elif pow.power in extended_sex_acts:
-        if pow.super:
-            $ chg, new_pref = girl.raise_preference(pow.power, type="fear", bonus = 5, status_change=True, use_effects=False)
+    elif _pow.power in extended_sex_acts:
+        if _pow.super:
+            $ chg, new_pref = girl.raise_preference(_pow.power, type="fear", bonus = 5, status_change=True, use_effects=False, context="brothel")
         else:
-            $ chg, new_pref = girl.raise_preference(pow.power, type="fear", bonus = 2.5, status_change=True, use_effects=False)
+            $ chg, new_pref = girl.raise_preference(_pow.power, type="fear", bonus = 2.5, status_change=True, use_effects=False, context="brothel")
 
         # Changing preference text
 
         python:
-            text_changes = __(pow.power.capitalize()) + ": "
+            text_changes = __(_pow.power.capitalize()) + ": "
 
             if chg > 0:
                 text_changes += "{color=[c_green]}"
@@ -675,31 +695,31 @@ label power_use(pow, girl, girl2):
 
             if new_pref and new_pref != "refuses":
                 if girl.is_("lewd"):
-                    text1 = pref_response["lewd " + new_pref] % long_act_description[pow.power]
+                    text1 = pref_response["lewd " + new_pref] % long_act_description[_pow.power]
                 else:
-                    text1 = pref_response["modest " + new_pref] % long_act_description[pow.power]
+                    text1 = pref_response["modest " + new_pref] % long_act_description[_pow.power]
             else:
-                text1 = "Her %s preference has moderately increased." % pow.power
+                text1 = "Her %s preference has moderately increased." % _pow.power
 
         $ pic = girl.get_pic("rest", and_tags = ["libido"])
 
         if new_pref and new_pref != "refuses":
             call show_night_event(Event(pic, char = girl.char, text = text1, changes = text_changes, sound = s_ahaa, type = "special")) from _call_show_night_event_9
-            $ text1 = girl.fullname + " is now " + preference_color[new_pref] % new_pref + " with " + pow.power + " acts."
+            $ text1 = girl.fullname + " is now " + preference_color[new_pref] % new_pref + " with " + _pow.power + " acts."
 
         call show_night_event(Event(pic, char = narrator, text = text1, changes = text_changes, type = "special")) from _call_show_night_event_10
 
-    elif pow.power == "force naked":
+    elif _pow.power == "force naked":
         "Following your command, she absent-mindedly sheds all of her clothing until she stands naked before you. She doesn't seem to fully register the change."
-        $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
+        $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
         $ girl.naked = True
         $ girl.refresh_pictures()
 
-    elif pow.power == "negative fixation":
+    elif _pow.power == "negative fixation":
         $ neg_fix = [fix for fix in girl.neg_fixations if (girl.personality_unlock[fix.name])]
 
         if neg_fix:
-            $ fix = menu([("选择要移除的负面癖好", None)] + [(f.name.capitalize(), f) for f in neg_fix] + [("取消", "返回")])
+            $ fix = menu([("Choose negative fixation to remove", None)] + [(f.name.capitalize(), f) for f in neg_fix] + [("Cancel", "back")])
 
             if fix == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -707,7 +727,7 @@ label power_use(pow, girl, girl2):
 
             else:
                 $ text1 = ""
-                if not pow.super:
+                if not _pow.super:
                     $ new_fix = girl.add_random_fixation(type="neg")[0] # Adding the new fixation first ensures the old one will not be randomly chosen
                     $ girl.personality_unlock[new_fix] = False
                     $ text1 = " She has received a new negative fixation."
@@ -716,8 +736,8 @@ label power_use(pow, girl, girl2):
 
                 "[girl.fullname] is no longer uncomfortable with [fix.name].[text1]"
 
-                if pow.super:
-                    call exhaust_girl(girl)
+                if _pow.super:
+                    call exhaust_girl(girl) from _call_exhaust_girl_1
 
         else:
             "You must have discovered at least one of [girl.fullname]'s negative fixations before you can use this power."
@@ -726,9 +746,9 @@ label power_use(pow, girl, girl2):
 
     # Mojo and fear
 
-    elif pow.power.startswith("mojo"):
-            if pow.power == "mojo trade":
-                if pow.super:
+    elif _pow.power.startswith("mojo"):
+            if _pow.power == "mojo trade":
+                if _pow.super:
                     $ r = renpy.call_screen("mojo_trade", 3, 2)
                 else:
                     $ r = renpy.call_screen("mojo_trade", 2, 1)
@@ -744,8 +764,8 @@ label power_use(pow, girl, girl2):
                             MC.mojo[mcolor] += chg
 
             else:
-                $ mojo_color = pow.power[5:]
-                if pow.super:
+                $ mojo_color = _pow.power[5:]
+                if _pow.super:
                     $ points = dice(3, 4) # 4d3 points
                 else:
                     $ points = dice(3, 2) # 2d3 points
@@ -757,60 +777,60 @@ label power_use(pow, girl, girl2):
                 $ notify("+%i" % points, pic = "mojo_" + mojo_color)
 
                 while points:
-                    $ MC.raise_mojo(mojo_color)
+                    $ MC.raise_mojo(mojo_color, raw=True)
                     $ points -= 1
                     pause t
 
-    elif pow.power == "fear boost":
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
-        $ add_effects(farm, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "fear boost":
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
+        $ add_effects(farm, _pow.effects, expires=calendar.time + _pow.duration)
 
         "An evil aura forms around you, putting fear in your girls' hearts."
 
     # Spells and hypnosis
 
-    elif pow.power == "hypnosis":
-        if pow.super:
+    elif _pow.power == "hypnosis":
+        if _pow.super:
             "You sap her will, strengthening your hypnotic powers for the next few days."
-            $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+            $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
         else:
             "You weaken her mind for the next few days, making her more receptive to suggestion."
-            $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
+            $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
 
-    elif pow.power in all_MC_stats:
-        "You absorb some of her life energy, temporarily boosting your [pow.power]."
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power in all_MC_stats:
+        "You absorb some of her life energy, temporarily boosting your [_pow.power]."
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
 
     # Skill manipulation
 
-    elif pow.power.startswith("normalize skills"):
-        if pow.power.endswith("BBCR"):
+    elif _pow.power.startswith("normalize skills"):
+        if _pow.power.endswith("BBCR"):
             $ sk_list = gstats_main[:4]
-        elif pow.power.endswith("LOCS"):
+        elif _pow.power.endswith("LOCS"):
             $ sk_list = gstats_main[4:]
 
-        if pow.super:
+        if _pow.super:
             $ mod = 1.2
         else:
             $ mod = 1.0
 
         $ girl.average_skills(sk_list, mod)
 
-    elif pow.power.startswith("shuffle skills"):
-        if pow.power.endswith("BBCR"):
+    elif _pow.power.startswith("shuffle skills"):
+        if _pow.power.endswith("BBCR"):
             $ sk_list = gstats_main[:4]
-        elif pow.power.endswith("LOCS"):
+        elif _pow.power.endswith("LOCS"):
             $ sk_list = gstats_main[4:]
 
-        if pow.super:
+        if _pow.super:
             $ mod = 1.2
         else:
             $ mod = 1.0
 
         $ girl.shuffle_skills(sk_list, mod)
 
-    elif pow.power == "normalize fear":
-        if pow.super:
+    elif _pow.power == "normalize fear":
+        if _pow.super:
             $ girl.love = 0
             $ girl.fear = 0
             "[girl.fullname] has forgotten all the feelings she had about you, positive or negative."
@@ -821,20 +841,20 @@ label power_use(pow, girl, girl2):
 
     # Punishment
 
-    elif pow.power == "punish":
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "punish":
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
 
         "Drawing power from [girl.fullname]'s past traumas, you inprint a healthy fear of punishment in all of your girls' mind."
 
     # Hurt/Tired
 
-    elif pow.power == "frenzy":
-        $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
-        $ calendar.set_alarm(calendar.time + pow.duration, StoryEvent(label="exhaust_girl", type="morning", order=2, call_args=[girl, pow.super, 4]))
+    elif _pow.power == "frenzy":
+        $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
+        $ calendar.set_alarm(calendar.time + _pow.duration, StoryEvent(label="exhaust_girl", type="morning", order=2, call_args=[girl, _pow.super, 4]))
         "[girl.fullname] suddenly rises up, bursting with dark energy. Without a word, she heads back to the farm and starts working on her chores."
 
-    elif pow.power == "hurt":
-        if pow.super:
+    elif _pow.power == "hurt":
+        if _pow.super:
             python:
                 for girl2 in (MC.girls + farm.girls):
                     h = min(6, girl2.hurt) # Caps at 6 hurt
@@ -845,10 +865,10 @@ label power_use(pow, girl, girl2):
             $ girl.get_hurt(h)
             $ girl2.heal(h)
 
-    elif pow.power == "energy":
+    elif _pow.power == "energy":
         "Drawing on your dark powers, you siphon as much energy out of [girl.fullname] as you dare."
 
-        if pow.super:
+        if _pow.super:
             $ en = girl.get_stat_minmax("energy")[1] # conduit's max energy
         else:
             $ en = int(0.2 * girl.energy)
@@ -857,13 +877,13 @@ label power_use(pow, girl, girl2):
             for g in MC.girls + farm.girls:
                 g.change_energy(en)
 
-        call exhaust_girl(girl, pow.super) from _call_exhaust_girl
+        call exhaust_girl(girl, _pow.super) from _call_exhaust_girl
 
     # Leech effects
 
-    elif pow.power.startswith("leech"):
+    elif _pow.power.startswith("leech"):
 
-        $ targets = pow.power[6:].split() # Returns a list of skills or stats to leech
+        $ targets = _pow.power[6:].split() # Returns a list of skills or stats to leech
 
         while targets:
             $ target = targets.pop(0)
@@ -879,7 +899,7 @@ label power_use(pow, girl, girl2):
                 $ rep = girl.rep - rep_to_rank[girl.rank-1]
                 $ _max = rep_to_rank[girl.rank] - rep_to_rank[girl.rank-1]
 
-                if not pow.super:
+                if not _pow.super:
                     $ _max /= 2
 
                 $ rep = min(rep, _max)
@@ -908,7 +928,7 @@ label power_use(pow, girl, girl2):
 
                 "You use the dark powers at your disposal to leech [girl.name]'s life memories, sharing them with your less experienced slaves."
 
-                if pow.super:
+                if _pow.super:
                     $ total_xp = girl.xp // 2
                 else:
                     $ total_xp = girl.xp // 4
@@ -929,7 +949,7 @@ label power_use(pow, girl, girl2):
                         receiving_girls = [g for g in MC.girls + farm.girls if g != girl and g.job_level[job] <= girl.job_level[job]]
 
                         if receiving_girls:
-                            if pow.super:
+                            if _pow.super:
                                 total_jp = girl.jp[job] // 2
                             else:
                                 total_jp = girl.jp[job] // 4
@@ -953,7 +973,7 @@ label power_use(pow, girl, girl2):
                 "[changes]"
 
             else: # Leeches a skill
-                if pow.super:
+                if _pow.super:
                     $ chg = girl.get_stat(target, True) // 2
                 else:
                     $ chg = girl.get_stat(target, True) // 4
@@ -970,25 +990,25 @@ label power_use(pow, girl, girl2):
 
     # Obedience
 
-    elif pow.power == "obedience":
-        $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "obedience":
+        $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
         "[girl.fullname] has become temporarily more obedient."
 
-    elif pow.power == "obedience link":
-        $ add_effects(girl2, Effect("special", "link obedience", (girl, pow.super)), expires=calendar.time + pow.duration)
+    elif _pow.power == "obedience link":
+        $ add_effects(girl2, Effect("special", "link obedience", (girl, _pow.super)), expires=calendar.time + _pow.duration)
         "As your conduit falls into a trance, you focus the dark energies on your other girls, and quickly find your mark: [girl2.fullname]. Unbeknownst to her, she now shares a bond with [girl.fullname] and will be affected by her obedience and loyalty."
 
     # Farm powers
 
-    elif pow.power == "farm":
-        if pow.super:
-            $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "farm":
+        if _pow.super:
+            $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
             "All girls will be more receptive to farm training for some time."
         else:
-            $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
+            $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
             "[girl.fullname] will be more receptive to farm training for some time."
 
-    elif pow.power == "minion":
+    elif _pow.power == "minion":
 
         if girl.xp < 50:
             "This girl's XP is too low to cast that power."
@@ -998,7 +1018,7 @@ label power_use(pow, girl, girl2):
 
         "[girl.fullname] lies on the cold floor in a state of daze. Focusing your mind on the farm, you choose the target of your next power."
 
-        $ mn_type = menu([("选择单位种类", None)] + [(mt.capitalize() + "s", mt) for mt in all_minion_types if farm.get_minions(mt)] + [("取消", "返回")])
+        $ mn_type = menu([("Choose minion type", None)] + [(mt.capitalize() + "s", mt) for mt in all_minion_types if farm.get_minions(mt)] + [("Cancel", "back")])
 
         if mn_type == "back":
             $ MC.refund_mojo(spent_mojo)
@@ -1006,18 +1026,18 @@ label power_use(pow, girl, girl2):
 
         $ girl.xp -= 50
 
-        if pow.super:
+        if _pow.super:
             play sound s_spell
             python:
                 for mn in farm.get_minions(mn_type):
                     mn.xp += girl.rank*5
                     if mn.level_up():
-                        text1 = "仆从升级: %s (等级 " + str(mn.level) + ")" % mn.name
-                        change_log.add(text1, color="special")
+                        text1 = "MINION LEVEL UP: %s (level " + str(mn.level) + ")" % mn.name
+                        change_log.add(text1, col="special")
                         renpy.notify(text1)
 
         else:
-            $ mn = menu([("选择具体单位", None)] + [(m.name.capitalize(), m) for m in farm.get_minions(mn_type)] + [("取消", "返回")])
+            $ mn = menu([("Choose minion", None)] + [(m.name.capitalize(), m) for m in farm.get_minions(mn_type)] + [("Cancel", "back")])
 
             if mn == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1028,49 +1048,49 @@ label power_use(pow, girl, girl2):
 
     # Mulligan
 
-    elif pow.power == "mulligan":
-        if pow.super:
-            $ add_effects(MC, pow.effects, expires=calendar.time + 1)
+    elif _pow.power == "mulligan":
+        if _pow.super:
+            $ add_effects(MC, _pow.effects, expires=calendar.time + 1)
         $ evpower_deck.update()
 
     # Customers and rooms
 
-    elif pow.power == "room capacity":
+    elif _pow.power == "room capacity":
         $ eff = Effect("boost", "room capacity", 0.5, scope="brothel") # Effect is generated dynamically for this power
 
-        if not pow.super: # Choose one room
-            $ room = menu([("选择一个经营场所", None)] + [(r.name.capitalize(), r) for r in brothel.rooms.values()] + [("取消", "返回")])
+        if not _pow.super: # Choose one room
+            $ room = menu([("Choose a common room", None)] + [(r.name.capitalize(), r) for r in brothel.rooms.values()] + [("Cancel", "back")])
 
             if room == "back":
                 $ MC.refund_mojo(spent_mojo)
                 return
 
             $ eff.target = room.name + " room capacity"
-            $ add_effects(MC, eff, expires=calendar.time + pow.duration)
+            $ add_effects(MC, eff, expires=calendar.time + _pow.duration)
             $ _val = room.update_cust_limit(silent=True)
 
             "The [room.name] can now accomodate [_val] more customers."
         else:
-            $ add_effects(MC, eff, expires=calendar.time + pow.duration)
+            $ add_effects(MC, eff, expires=calendar.time + _pow.duration)
             python:
                 for room in brothel.rooms.values():
                     _val = room.update_cust_limit(silent=True) # _val will be the same for each room
             "All common rooms in your brothel can now accomodate [_val] more customers."
 
-        $ add_effects(MC, eff, expires=calendar.time + pow.duration)
-        $ calendar.set_alarm(calendar.time + pow.duration, StoryEvent("reset_room_capacity", order=1))
+        $ add_effects(MC, eff, expires=calendar.time + _pow.duration)
+        $ calendar.set_alarm(calendar.time + _pow.duration, StoryEvent("reset_room_capacity", order=1))
 
-    elif pow.power == "customer satisfaction":
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "customer satisfaction":
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
         "Her mind is now entirely focused on giving customers a good time."
 
-    elif pow.power == "customer capacity":
-        $ add_effects(MC, pow.effects, expires=calendar.time + pow.duration)
+    elif _pow.power == "customer capacity":
+        $ add_effects(MC, _pow.effects, expires=calendar.time + _pow.duration)
         "Some of her life energy will be used to sustain the other girls while they serve customers."
 
     # City powers
 
-    elif pow.power == "city love":
+    elif _pow.power == "city love":
         if girl.get_love() <= 6:
             "[girl.fullname] doesn't love you enough to use that power."
             $ MC.refund_mojo(spent_mojo)
@@ -1079,14 +1099,14 @@ label power_use(pow, girl, girl2):
         $ love = girl.get_love() # Each girl will receive 15-30% of her love value
         $ girl.love = 0
 
-        if pow.target == "location":
-            $ dis = menu([("选择目标地点", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("取消", "返回")])
+        if _pow.target == "location":
+            $ dis = menu([("Choose target district", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("Cancel", "back")])
 
             if dis == "back":
                 $ MC.refund_mojo(spent_mojo)
                 return
 
-            $ loc = menu([("选择具体位置", None)] + [(l.name, l) for l in location_dict[dis.name]] + [("取消", "返回")])
+            $ loc = menu([("Choose target location", None)] + [(l.name, l) for l in location_dict[dis.name]] + [("Cancel", "back")])
 
             if loc == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1097,8 +1117,8 @@ label power_use(pow, girl, girl2):
                     if g.location == loc.name:
                         g.change_love(renpy.random.randint(round_down(0.15*love), round_up(0.3*love)))
 
-        elif pow.target == "district":
-            $ dis = menu([("选择目标地点", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("取消", "返回")])
+        elif _pow.target == "district":
+            $ dis = menu([("Choose target district", None)] + [(d.name, d) for d in all_districts if d.chapter <= game.chapter] + [("Cancel", "back")])
 
             if dis == "back":
                 $ MC.refund_mojo(spent_mojo)
@@ -1110,7 +1130,7 @@ label power_use(pow, girl, girl2):
                         g.change_love(renpy.random.randint(round_down(0.15*love), round_up(0.3*love)))
 
 
-        elif pow.target == "city":
+        elif _pow.target == "city":
             python:
                 for g in game.free_girls:
                     g.change_love(renpy.random.randint(round_down(0.15*love), round_up(0.3*love)))
@@ -1119,9 +1139,9 @@ label power_use(pow, girl, girl2):
 
         play sound s_spell
 
-        "The girls in the [pow.target] now love you more."
+        "The girls in the [_pow.target] now love you more."
 
-    elif pow.power == "kidnap":
+    elif _pow.power == "kidnap":
         "Using your powers, you place [girl.fullname] into a trance, until she is ready to obey your commands."
 
         you "Go to the city, and find [girl2.fullname]. Fly, my pretty!"
@@ -1132,10 +1152,10 @@ label power_use(pow, girl, girl2):
         $ girl.away = True
         $ girl.return_date = calendar.time + 1
 
-        $ calendar.set_alarm(calendar.time + 1, StoryEvent(label="kidnap_return", type="morning", order=2, call_args=[girl, girl2, pow.super]))
+        $ calendar.set_alarm(calendar.time + 1, StoryEvent(label="kidnap_return", type="morning", order=2, call_args=[girl, girl2, _pow.super]))
 
-    elif pow.power == "slave":
-        if pow.super:
+    elif _pow.power == "slave":
+        if _pow.super:
             python:
                 for g in MC.girls + farm.girls:
                     if g.free:
@@ -1152,16 +1172,16 @@ label power_use(pow, girl, girl2):
 
     # Postings
 
-    elif pow.power == "postings":
-        $ add_effects(girl, pow.effects, expires=calendar.time + pow.duration)
-        if pow.super:
+    elif _pow.power == "postings":
+        $ add_effects(girl, _pow.effects, expires=calendar.time + _pow.duration)
+        if _pow.super:
             "Quests and classes will bring more rewards to all girls."
         else:
             "Quests and classes will bring more rewards to her."
 
     # Personality, Traits and Perks
 
-    elif pow.power == "personality":
+    elif _pow.power == "personality":
 
         python:
             attr_change_list = []
@@ -1170,7 +1190,7 @@ label power_use(pow, girl, girl2):
                 if girl.is_(a1): attr_change_list.append(a2)
                 if girl.is_(a2): attr_change_list.append(a1)
 
-        if pow.super:
+        if _pow.super:
             $ attempt = 1
             $ changes = []
 
@@ -1198,7 +1218,7 @@ label power_use(pow, girl, girl2):
         $ narrator("[girl.fullname] has become more %s and %s." % (changes[0], changes[1]))
 
 
-    elif pow.power == "negative trait":
+    elif _pow.power == "negative trait":
         python:
             trait_list = [] # A list of possible negative traits with a weight
             for trait in neg_traits:
@@ -1218,11 +1238,12 @@ label power_use(pow, girl, girl2):
                         else:
                             trait_list.append((trait, 2))
 
+            renpy.random.shuffle(trait_list)
             trait_list.sort(key=lambda tup: tup[1], reverse=True) # Sorts list of tuples by their second element (weight)
 
-        if pow.super:
-            $ menu_list = [(t.name, t) for t, w in trait_list[:3]] # Lists the first three traits
-            $ new_neg = menu([("选择一个新特质来替代 %s:" % old_neg.name, None)] + menu_list)
+        if _pow.super:
+            $ menu_list = [(t.name + ": " + t.get_description(), t) for t, w in trait_list[:3]] # Lists the first three traits
+            $ new_neg = menu([("Choose a new trait to replace %s:" % old_neg.name, None)] + menu_list)
         else:
             $ new_neg = weighted_choice(trait_list)
 
@@ -1231,8 +1252,8 @@ label power_use(pow, girl, girl2):
 
         "[girl.fullname] has received a new negative trait, replacing [old_neg.name]."
 
-    elif pow.power == "perks":
-        if pow.super:
+    elif _pow.power == "perks":
+        if _pow.super:
             $ r = girl.refund_perks(0)
 
         else:
@@ -1247,23 +1268,25 @@ label power_use(pow, girl, girl2):
 
     ## 3. Backlash on conduit
 
-    if pow.power != "kidnap":
-        call sanity_backlash(girl, pow)
+    $ game.track("powers")
+
+    if _pow.power != "kidnap":
+        call sanity_backlash(girl, _pow) from _call_sanity_backlash
 
     return
 
-label sanity_backlash(girl, pow):
+label sanity_backlash(girl, _pow):
 
-    $ narrator(girl.lose_sanity(pow.sanity_cost)) # Describes the state of her current sanity
-
-    if pow.sanity_cost > 6:
+    if _pow.sanity_cost > 6:
         $ MC.evil += 3
-    elif pow.sanity_cost > 3:
+    elif _pow.sanity_cost > 3:
         $ MC.evil += 2
-    elif pow.sanity_cost > 1:
+    elif _pow.sanity_cost > 1:
         $ MC.evil += 1
 
     $ girl.last_power = calendar.time # Girls can only conduct powers once per day
+
+    $ narrator(girl.lose_sanity(_pow.sanity_cost)) # Describes the state of her current sanity
 
     return
 
@@ -1305,9 +1328,9 @@ label kidnap_return(girl, girl2, _super):
 
     if _super:
         $ mod -= 2
-        $ pow = evpower_super_dict["kidnap"]
+        $ _pow = evpower_super_dict["kidnap"]
     else:
-        $ pow = evpower_dict["kidnap"]
+        $ _pow = evpower_dict["kidnap"]
 
     if fight(girl, girl2, def_bonus=mod):
 
@@ -1364,7 +1387,7 @@ label kidnap_return(girl, girl2, _super):
 
         "[girl.fullname]'s attempt to abduct [girl2.fullname] failed.[text1]"
 
-    call sanity_backlash(girl, pow) # Backlash happens after the kidnapping attempt
+    call sanity_backlash(girl, _pow) from _call_sanity_backlash_1 # Backlash happens after the kidnapping attempt
 
     hide screen show_event
     with dissolve
@@ -1431,7 +1454,7 @@ label powers_intro():
 
     gizel "Yes! You are the cause of this!" with vpunch
 
-    $ MC.rand_say(["wz: 但我没有施任何咒语?我什么都没做!", "这怎么可能呢?"])
+    $ MC.rand_say(["wz: But I didn't cast any spell? I didn't do anything!", "How is that even possible?"])
 
     gizel normal "I've been wondering about that myself, and I have a theory."
 

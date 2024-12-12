@@ -60,13 +60,13 @@ label slavemarket:
     $ girl_status_dict = load_girl_status(slavemarket.girls)
     $ focus_vp(slavemarket.girls)
 
-    $ renpy.block_rollback()
+    $ norollback()
 
 ############ Jman - Headhunter Mod ############
     if game.has_active_mod("Headhunter Mod"):
         if not slavemarket_firstvisit and slavemarket_firstvisit3:
             $ slavemarket_firstvisit3 = False
-            if renpy.call_screen("yes_no", "去看看这些关于合约的计划是怎么回事？"):
+            if renpy.call_screen("yes_no", "Go and see what all this hoopla about contracts is about?"):
                 jump headhunter_main
 ############ Jman - Headhunter Mod End ########
 
@@ -189,7 +189,7 @@ label visit_district:
 
             if selected_location.secret:
 
-                "你还没有解锁这个地区。"
+                "You have not discovered this location yet."
 
             else:
 
@@ -228,7 +228,7 @@ label visit_location():
         $ persistent.seen_list.append(selected_location.pic)
 
     while True:
-        $ renpy.block_rollback()
+        $ norollback()
 
         $ result = None
 
@@ -280,17 +280,17 @@ label visit_location():
                             renpy.call("city_" + ev_type)
 
                 if district.rank >= 2 and renpy.random.random() <= 0.12: # 8% chance of getting a resource, 4% Cimerian
-                    $ renpy.say("", "在探索城市的过程中，你发现了一些有用的东西。")
+                    $ renpy.say("", "While exploring the city, you found something useful.")
                     $ d = dice(6)
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("席米亚科技产物")[0], msg="你获得了一个稀有的%s。", use_article=False) from _call_receive_item
+                            call receive_item(search_items("Cimerian artefact")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("席米亚科技废料")[0], msg="你获得了一块%s。", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("Cimerian scrap")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
 
                     else:
-                        $ MC.gain_resource(number=dice(3), random=True)
+                        $ MC.gain_resource(number=dice(3), _random=True)
 
 
             jump visit_location
@@ -344,6 +344,10 @@ label brothel():
 
     $ brothel.update_customer_count()
 
+    if brothel_secondvisit:
+        call help_brothel_intro() from _call_help_brothel_intro
+        $ brothel_secondvisit = False
+
 label brothel_loop():
 
     while True:
@@ -372,13 +376,13 @@ label brothel_loop():
 
             menu:
                 "Choose what to do"
-                "彻底清洁 (花费[full_cost]金币)":
+                "Full clean-up ([full_cost] gold)":
                     $ result = brothel.clean_up()
                     sill sad "*pant* *pant* It is done, Master... I'm so tired... *pant*"
-                "部分清洁 (花费[half_cost]金币)":
+                "Partial clean-up ([half_cost] gold)":
                     $ result = brothel.clean_up(0.5)
                     sill happy "Yes Master, I will get some supplies and work on it right away!"
-                "取消":
+                "Cancel":
                     $ result = False
 
         elif operation == "change name":
@@ -437,7 +441,7 @@ label furniture():
 
         elif isinstance(result, Furniture):
             $ brothel.buy_furniture(result)
-            $ renpy.block_rollback()
+            $ norollback()
 
 ## FARM SCREEN ##
 
@@ -469,21 +473,21 @@ label farm_loop():
         python:
             menu_list = [(str(len(hurt)) + " minion" + plural(len(hurt)) + " are hurt. What do you want to do?", None)]
 
-            if MC.get_items(target="minion", name="愈合粉"):
+            if MC.get_items(target="minion", name="Healing powder"):
                 for mn in hurt:
-                    menu_list.append(("使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn)))
+                    menu_list.append(("Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn)))
 
             for mn in hurt:
-                menu_list.append(("退役 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("retire", mn)))
+                menu_list.append(("Retire [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("retire", mn)))
 
-            menu_list.append(("暂时忽略它", ("ignore", None)))
+            menu_list.append(("Ignore it for now", ("ignore", None)))
 
         $ res, mn = menu(menu_list)
 
         if res == "heal":
             gizel normal "Fine, let's use this to get the poor bastard back on its feet. Or tentacles. Whatever."
 
-            $ MC.use_item(MC.get_items(target="minion", name="愈合粉")[0])
+            $ MC.use_item(MC.get_items(target="minion", name="Healing powder")[0])
             $ mn.heal()
 
             play sound s_spell
@@ -574,14 +578,14 @@ label farm_loop():
             menu:
                 "Do you want to invert her first and last name?"
 
-                "是的":
+                "Yes":
                     $ girl.init_dict["identity/inverted_name"] = True
-                "算了":
+                "No":
                     $ girl.init_dict["identity/inverted_name"] = False
 
             $ girl.set_fullname()
 
-            $ renpy.block_rollback()
+            $ norollback()
 
         elif res == "rules": # This calls up the rules label
             call farm_set_default() from _call_farm_set_default
@@ -606,9 +610,9 @@ label farm_loop():
 
                     # Healing powder
 
-                    if MC.get_items(target="minion", name="愈合粉") and farm.get_hurt_minions():
+                    if MC.get_items(target="minion", name="Healing powder") and farm.get_hurt_minions():
                         for mn in farm.get_hurt_minions():
-                            menu_list.append(["使用愈合粉治疗 [mn.name] (等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + ")", ("heal", mn, MC.get_items(target="minion", name="愈合粉")[0])])
+                            menu_list.append(["Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn, MC.get_items(target="minion", name="Healing powder")[0])])
 
                     # XP items
 
@@ -616,25 +620,25 @@ label farm_loop():
                         minions = farm.get_minions("stallion")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="stallion xp"):
                             xp_bonus = it.get_effect("gain", "stallion xp") // len(minions)
-                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 种马经验", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per stallion", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="beast xp") and farm.get_minions("beast"):
                         minions = farm.get_minions("beast")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="beast xp"):
                             xp_bonus = it.get_effect("gain", "beast xp") // len(minions)
-                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 野兽经验", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per beast", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="monster xp") and farm.get_minions("monster"):
                         minions = farm.get_minions("monster")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="monster xp"):
                             xp_bonus = it.get_effect("gain", "monster xp") // len(minions)
-                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 怪兽经验", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per monster", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="machine xp") and farm.get_minions("machine"):
                         minions = farm.get_minions("machine")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="machine xp"):
                             xp_bonus = it.get_effect("gain", "machine xp") // len(minions)
-                            menu_list.append(["使用 " + it.name.lower() + " (+" + str(xp_bonus) + " 机械经验", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per machine", ("gain xp", minions, it, xp_bonus)])
 
                     menu_list.append(["Forget it", ("back")])
 
@@ -660,7 +664,7 @@ label farm_loop():
 
                     play sound s_spell
 
-                    $ renpy.say("", "你的 " + minions[0].type + plural(len(minions)) + " 获得了经验.")
+                    $ renpy.say("", "Your " + minions[0].type + plural(len(minions)) + " earned XP.")
 
                     $ MC.use_item(it)
 
@@ -674,7 +678,7 @@ label farm_loop():
 
                     while levelup:
                         $ mn = levelup.pop()
-                        $ renpy.say(gizel, mn.name + "现在是一个等级 " + str(mn.level) + " 的" + farm_related_dict[mn.type] + "了.")
+                        $ renpy.say(gizel, mn.name + " is now a level " + str(mn.level) + " " + mn.type + ".")
 
                 hide screen dark_filter
 
@@ -850,7 +854,7 @@ label farm_loop():
         elif res == "badge":
             call screen girl_pick_badge(obj)
 
-        $ renpy.block_rollback()
+        $ norollback()
 
     jump farm_loop
 
@@ -859,16 +863,19 @@ label farm_loop():
 
 label main():
 
+    scene black with Dissolve(0.15)
+
+    if brothel.get_common_rooms():
+        $ room = brothel.get_random_room_pic()
+    else:
+        $ room = "black"
+
     if refresh_memory_on_home_screen:
         $ renpy.free_memory() # Included here after Jman's request
 
-    # <Chris12 PredictImages - Predict just the portraits.
+    # <Chris12 PredictImages - Predict just the portraits. Note: Breaks down after 8.0. Removed for now (Goldo).
     # Profiles are not needed immediately on entering the girls screen. />
-    $ predict_images(MC.girls + slavemarket.girls, predict_profiles = False)
-
-#    $ renpy.start_predict_screen("girls", MC.girls, "girls")
-
-    scene black with Dissolve(0.15)
+    # $ predict_images(MC.girls + slavemarket.girls, predict_profiles = False)
 
     # Update mods (runs once per game session or after a mod has been activated/deactivated)
 
@@ -883,20 +890,15 @@ label main():
         $ lbl = update_list.pop(0)
         call expression lbl from _call_expression_5
 
+    $ renpy.start_predict_screen("home")
+
     if not renpy.music.is_playing(channel='music'):
 
         $ newmusic = rand_choice(playlist)
 
         play music [m_silence, newmusic] fadein 3.0 fadeout 10.0 noloop
 
-    $ renpy.start_predict_screen("home")
-
     $ calendar.play_alarms() # Also triggers "day" conditional events
-
-    if brothel.get_common_rooms():
-        $ room = brothel.get_random_room_pic_path()
-    else:
-        $ room = "black"
 
     show expression room at top
     with Dissolve(0.15)
@@ -904,7 +906,8 @@ label main():
     $ test_achievements(["gold"])
     $ brothel.update_customer_count()
 
-    $ renpy.block_rollback()
+    $ norollback()
+    $ renpy.retain_after_load()
 
     show screen home()
 
@@ -957,6 +960,9 @@ label main_wait_for_input:
 
 label girls_first_time:
 
+    if not girls_firstvisit:
+        jump girls
+
 #    $ renpy.start_predict_screen("girls", MC.girls, "girls")
 
     call hide_everything() from _call_hide_everything_39
@@ -973,7 +979,7 @@ label girls_first_time:
     show screen girls(MC.girls, "girls")
     $ tt = show_tt("top_right")
 
-    $ renpy.block_rollback()
+    $ norollback()
 
 ############ Jman - Headhunter Mod ############
     if game.has_active_mod("Headhunter Mod"):
@@ -1007,28 +1013,28 @@ label girls_first_time:
 
                 girl.char "What do you want me to do, Master?"
 
-                "暂时先休息吧":
+                "Rest":
                     $ girl.set_job(None)
-                    $ renpy.block_rollback()
+                    $ norollback()
 
-                "去做女服务员" if brothel.has_room("tavern"):
+                "Work as a waitress" if brothel.has_room("tavern"):
                     $ girl.set_job("waitress")
-                    $ renpy.block_rollback()
+                    $ norollback()
 
-                "去做脱衣舞娘" if brothel.has_room("strip club"):
+                "Work as a dancer" if brothel.has_room("strip club"):
                     $ girl.set_job("dancer")
-                    $ renpy.block_rollback()
+                    $ norollback()
 
-                "去做按摩技师" if brothel.has_room("onsen"):
+                "Work as a masseuse" if brothel.has_room("onsen"):
                     $ girl.set_job("masseuse")
-                    $ renpy.block_rollback()
+                    $ norollback()
 
-                "去做表演艺伎" if brothel.has_room("okiya"):
+                "Work as a geisha" if brothel.has_room("okiya"):
                     $ girl.set_job("geisha")
-                    $ renpy.block_rollback()
+                    $ norollback()
 
-                "勾引客人上床":
-                    $ renpy.block_rollback()
+                "Work as a whore":
+                    $ norollback()
 
                     if girl.will_do("whore"):
                         $ girl.set_job("whore")
@@ -1036,17 +1042,18 @@ label girls_first_time:
                     else:
                         call dialogue(girl, "refuse whoring") from _call_dialogue_91
 
-                        sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
+                        sill sad "You cannot make her a whore in her current state, you know. She'll run
+                                  away or harm a customer."
 
                         if help_tips["whore"]:
                             sill happy "Would you like to learn more about training your girls to become whores?"
 
                             menu:
-                                "告诉我":
+                                "Yes":
                                     call help_whores() from _call_help_whores
-                                "不用了":
+                                "No":
                                     pass
-                                "别再问了":
+                                "Don't ask me again":
                                     $ help_tips["whore"] = False
                                     "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
@@ -1072,8 +1079,8 @@ label girls_first_time:
 
 label girls():
 
-    #<Chris12 PredictImages>
-    $ predict_images(MC.girls, predict_portraits = False) # Portraits will be loaded directly, anyway. Also, they already get predicted in label main.
+    #<Chris12 PredictImages> # Disabled after 8.1 because it causes graphical glitches (Goldo)
+    # $ predict_images(MC.girls, predict_portraits = False) # Portraits will be loaded directly, anyway. Also, they already get predicted in label main.
     #</Chris12 PredictImages>
 
 #    $ renpy.start_predict_screen("girls", MC.girls, "girls")
@@ -1082,6 +1089,11 @@ label girls():
 
     scene black
     show expression brothel.bedroom_type.get_bg() at top
+
+    # update can_perk to keep Jman happy ;)
+    python:
+        for g in MC.girls:
+            g.update_can_perk()
 
     if selected_girl not in MC.girls and MC.girls:
         $ selected_girl = MC.girls[0]
@@ -1096,7 +1108,7 @@ label girls():
 
 #    $ renpy.start_predict_screen("perks")
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     $ result = ""
 
@@ -1127,14 +1139,14 @@ label girls_loop():
             menu:
                 "Do you want to invert her first and last name?"
 
-                "是的":
+                "Yes":
                     $ girl.init_dict["identity/inverted_name"] = True
-                "算了":
+                "No":
                     $ girl.init_dict["identity/inverted_name"] = False
 
             $ girl.set_fullname()
 
-            $ renpy.block_rollback()
+            $ norollback()
 
         elif result == "assign":
             if not renpy.predicting():
@@ -1144,11 +1156,11 @@ label girls_loop():
 
             if girl.away or girl.hurt > 0 or girl.exhausted:
                 if girl.away:
-                    $ renpy.notify("%s 不在，目前不能分配新工作。" % girl.name)
+                    $ renpy.notify("%s is away and cannot be assigned a new job at the moment." % girl.name)
                 elif girl.hurt > 0:
-                    $ renpy.notify("%s 受伤了，目前不能分配新工作。" % girl.name)
+                    $ renpy.notify("%s is hurt and cannot be assigned a new job at the moment." % girl.name)
                 elif girl.exhausted:
-                    $ renpy.notify("%s 筋疲力尽，目前不能分配新工作。" % girl.name)
+                    $ renpy.notify("%s is exhausted and cannot be assigned a new job at the moment." % girl.name)
                 jump girls_loop
 
             $ exit = False
@@ -1156,7 +1168,7 @@ label girls_loop():
             show screen assign_job(girl) with Dissolve(0.15)
 
             while True:
-                $ renpy.block_rollback()
+                $ norollback()
 
                 $ r = ui.interact()
 
@@ -1182,18 +1194,19 @@ label girls_loop():
                         with Dissolve(0.15)
                         call dialogue(girl, "refuse whoring") from _call_dialogue_94
 
-                        sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
+                        sill sad "You cannot make her a whore in her current state, you know. She'll run
+                                  away or harm a customer."
 
                         if help_tips["whore"]:
 
                             sill happy "Would you like to learn more about training your girls to become whores?"
 
                             menu:
-                                "告诉我":
+                                "Yes":
                                     call help_whores() from _call_help_whores_5
-                                "不用了":
+                                "No":
                                     pass
-                                "别再问了":
+                                "Don't tell me again":
                                     $ help_tips["whore"] = False
                                     "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
@@ -1244,35 +1257,36 @@ label girls_loop():
                 with Dissolve(0.15)
 
                 if exit != "silent":
+                    $ girl.work_whore = False
                     if girl.job in all_jobs and girl.get_effect("special", "workwhore"):
                         menu:
                             "Ask [girl.name] to work and whore at the same time?"
 
-                            "是的":
+                            "Yes":
                                 if not girl.will_do("whore"):
                                     call dialogue(girl, "refuse whoring") from _call_dialogue_95
 
-                                    sill sad "You cannot make her a whore in her current state, you know. She'll run away or harm a customer."
+                                    sill sad "You cannot make her a whore in her current state, you know. She'll run
+                                                away or harm a customer."
 
                                     if help_tips["whore"]:
 
                                         sill happy "Would you like to learn more about training your girls to become whores?"
 
                                         menu:
-                                            "告诉我":
+                                            "Yes":
                                                 call help_whores() from _call_help_whores_7
-                                            "不用了":
+                                            "No":
                                                 pass
-                                            "别再问了":
+                                            "Don't tell me again":
                                                 $ help_tips["whore"] = False
                                                 "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
 
                                 else:
                                     $ girl.work_whore = True
 
-                            "算了":
-                                $ girl.work_whore = False
-
+                            "No":
+                                pass
 
                     if girl.hurt > 0 and girl.job:
                         sill sad "Master, [girl.name] is still too weak and needs more rest. She will resume work as a {b}[girl.job]{/b} when she recovers."
@@ -1339,7 +1353,7 @@ label girls_loop():
 
 #               $ girl.check_combo_perks()
 
-            $ renpy.block_rollback()
+            $ norollback()
 
         elif result == "perks":
 
@@ -1474,6 +1488,24 @@ label girls_loop():
                         $ counterpart.equip(it)
                         play sound it.sound
 
+                elif act == "collect all":
+                    python:
+                        nb = 0
+                        collected_from = []
+                        for g in MC.girls:
+                            if g != left_focus:
+                                collected = [it for it in g.items if not it.equipped]
+                                left_focus.items += collected
+                                g.items = [it for it in g.items if it.equipped]
+                                nb += len(collected)
+                                if collected:
+                                    collected_from.append(g.fullname)
+                    if nb:
+                        $ notify("%s collected %i items from %s." % (left_focus.name, nb, and_text(collected_from)))
+                    else:
+                        $ notify("No items were found in other girls' inventories.")
+                    
+
                 elif act == "equip":
                     $ owner.equip(it)
                     play sound it.sound
@@ -1531,7 +1563,7 @@ label girls_loop():
 
                     $ newrank = rank_name[girl.rank]
 
-                    $ renpy.block_rollback()
+                    $ norollback()
 
                     call dialogue(girl, "rank up") from _call_dialogue_99
                     $ test_achievements(["rank B", "rank A", "rank S", "rank X"])
@@ -1581,7 +1613,7 @@ label girls_loop():
                     stat.value = v
 
 
-        $ renpy.block_rollback()
+        $ norollback()
         $ brothel.update_customer_count()
 
 
@@ -1597,15 +1629,15 @@ label perks(): # girl is passed by the previous label (girls)
     with Dissolve(0.15)
 
     while True:
-        $ result, obj = ui.interact() # bj is an archetype or perk
+        $ result, obj = ui.interact() # obj is an archetype or perk
 
         if result == "unlock":
-            if renpy.call_screen("yes_no", "你确定要花费2点天赋点解锁 {b}" + archetype_name_dict[obj] + "{/b}的天赋分支？"):
+            if renpy.call_screen("yes_no", "Are you sure you want to unlock {b}" + obj + "{/b} zodiac for 2 perk points?"):
 
                 play sound s_spell
-                $ girl.unlock_archetype(obj)
                 $ perk_points -= 2
                 $ girl.perk_points -= 2
+                $ girl.unlock_archetype(obj)
 
         elif result == "add":
             play sound s_spell
@@ -1673,9 +1705,11 @@ label shop:
 
         shopgirl "Oh, a new customer! Lovely! And handsome at that, too..."
 
-        shopgirl "Old man Gio told me you'd be coming soon. You and I are going to become the best of friends, I'm sure... *wink*"
+        shopgirl "Old man Gio told me you'd be coming soon. You and I are going to become the best of friends,
+        I'm sure... *wink*"
 
-        shopgirl "We sell all kinds of mundane and rare items here, from all over Xeros. Come back often, we have regular arrivals."
+        shopgirl "We sell all kinds of mundane and rare items here, from all over Xeros. Come back
+        often, we have regular arrivals."
 
         $ shop_firstvisit = False
 
@@ -1727,7 +1761,7 @@ label visit_merchant(merc):
     $ right_focus = merc
 
     $ left_party = [MC] + MC.girls
-    $ right_party = unlocked_shops
+    $ right_party = [shop] + [m for m in (minion_merchants + city_merchants) if m in unlocked_shops] # Sorts unlocked shops in the same order
 
     if merc == shop:
         $ context = "shop"
@@ -1743,6 +1777,12 @@ label visit_merchant(merc):
 
 label visit_merchant_loop():
 
+    #! Temporary check for debugging
+    python:
+        for it in left_focus.items + right_focus.items:
+            if isinstance(it, Item):
+                raise AssertionError("Warning! %s is not a valid item instance. Please report this as a bug. You may ignore this error but the item is likely to be bugged." % it.name)
+
     while True:
         if left_focus.type == "MC":
             $ game.sort(left_focus.items, context = "MC items")
@@ -1752,7 +1792,7 @@ label visit_merchant_loop():
 
         call update_item_context() from _call_update_item_context_2
 
-        $ renpy.block_rollback()
+        $ norollback()
 
         $ result = ui.interact()
 
@@ -1797,6 +1837,8 @@ label visit_merchant_loop():
 
                     show screen item_tab(context, left_party, right_party)
                     with Dissolve(0.15)
+
+                    jump visit_merchant_loop
 
             elif act == "restock":
                 if it:
@@ -1845,7 +1887,7 @@ label visit_merchant_loop():
                             play sound s_cash
                             hide screen item_profile
                             with Dissolve(0.15)
-                            $ renpy.block_rollback()
+                            $ norollback()
 
                             "[text1]"
                             $ test_achievements(["minions"])
@@ -1876,7 +1918,7 @@ label visit_merchant_loop():
 
                         play sound s_cash
 
-                        $ renpy.block_rollback()
+                        $ norollback()
 
                         $ right_focus.char(merchant_greetings[merc.name + " bought something"])
 
@@ -1909,17 +1951,17 @@ label visit_merchant_loop():
                 if it:
                     $ chapter, cost, upgrade = shop_upgrades[right_focus.upgrade_level + 1]
 
-                    if renpy.call_screen("yes_no", "你确定要消耗 %s %s 升级商店的货架吗？" % (str(cost[1]), cost[0])):
+                    if renpy.call_screen("yes_no", "Are you sure you want to upgrade this shop for %s %s?" % (str(cost[1]), cost[0])):
                         $ right_focus.upgrade_shop(cost, upgrade)
 
                         $ right_focus.char(shopgirl_comment[cost[0]])
 
-                        $ right_focus.char("很好。下次进货后我就会有更多的货供你挑选了。")
+                        $ right_focus.char("Very good. I will have more items for you after the next inventory restock.")
 
                         if right_focus.can_upgrade():
-                            $ right_focus.char("如果你能给我带来更多的材料，也许我能再次扩大我的货架。继续加油！")
+                            $ right_focus.char("If you bring me more materials, I may be able to expand my inventory again. Keep it up!")
                 else:
-                    $ right_focus.char("看来你的材料不够。{w=0.8}{nw}")
+                    $ right_focus.char("You do not have the necessary resources with you.{w=0.8}{nw}")
 
             elif act == "back":
                 # Stella reward events
@@ -1971,7 +2013,7 @@ label main_character:
 
 #    $ MC.update_spells()
 
-    $ renpy.block_rollback()
+    $ norollback()
     $ test_achievements(["good", "neutral", "evil"])
 
     while True:
@@ -1986,9 +2028,9 @@ label main_character:
 
         if result == "change_name":
 
-            $ MC.name = renpy.input("你想取个新名字吗?", default = MC.name, length = 20)
+            $ MC.name = renpy.input("Do you want to change your name?", default = MC.name, length = 20)
 
-            $ renpy.block_rollback()
+            $ norollback()
 
         elif result == "previous_pic":
 
@@ -2093,6 +2135,7 @@ label postings:
 
     elif game.chapter >= 2 and not NPC_jobgirl.flags["stage"]: # jobgirl stage advances with every successive event
         call jobgirl_0() from _call_jobgirl_0
+        $ add_event("MU_jobgirl", chance = 1.0, type="city", location = "magic university", once = True, AP_cost = 1)
         $ quest_board.updated = False
 
     elif game.chapter >= 3 and NPC_jobgirl.flags["stage"] == 1: # jobgirl stage advances with every successive event
@@ -2112,7 +2155,14 @@ label postings:
 
     $ selected_quest = None
 
-    $ qlist = quest_board.quests
+    $ qlist = quest_board.quests #?
+
+    # Chapter 3 - Mizuki quests
+    if NPC_mizuki.flags["quest K"] == "available" and mizuki_questK not in quest_board.quests:
+        $ quest_board.quests.append(mizuki_questK)
+    if NPC_mizuki.flags["quest W"] == "available" and mizuki_questW not in quest_board.quests:
+        $ quest_board.quests.append(mizuki_questW)
+    # End of Mizuki quests
 
     $ available_girls = MC.girls
 
@@ -2125,7 +2175,7 @@ label postings:
     with Dissolve(0.15)
     $ tt = show_tt("top_right")
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     while True:
 
@@ -2150,17 +2200,21 @@ label postings:
             $ selected_girl, available_girls = refresh_quest_girls(selected_girl, selected_quest)
             $ renpy.restart_interaction()
 
-        elif result == "commit":
+        elif selected_quest and result == "commit":
             if selected_quest.type == "class":
-                $ t = __("Are you sure you want to register ") + selected_girl.name + __(" for this class? It will cost you ") + str_int(selected_quest.gold) + __(" gold. She will be away for ") + str_int(selected_quest.duration) + __(" days.")
+                if story_flags["postings free class"]:
+                    $ t = __("Are you sure you want to register ") + selected_girl.name + __(" for this class {b}for free{/b}? She will be away for ") + str_int(selected_quest.duration) + __(" days.")
+                else:
+                    $ t = __("Are you sure you want to register ") + selected_girl.name + __(" for this class? It will cost you ") + str_int(selected_quest.gold) + __(" gold. She will be away for ") + str_int(selected_quest.duration) + __(" days.")
             else:
                 $ t = __("Are you sure you want to send ") + selected_girl.name + __(" on this assignment? She will be away for ") + str_int(selected_quest.duration) + __(" days.")
 
-            $ r = renpy.call_screen("yes_no", t)
-
-            if r:
+            if renpy.call_screen("yes_no", t):
                 call dialogue(selected_girl, "leave for " + selected_quest.type) from _call_dialogue_101
                 $ selected_girl.commit(selected_quest)
+
+                if selected_quest.commit_label:
+                    call expression selected_quest.commit_label pass (selected_girl)
 
                 if selected_quest.type == "quest":
                     $ quest_board.quests.remove(selected_quest)
@@ -2171,7 +2225,10 @@ label postings:
                     $ selected_girl, available_girls = refresh_quest_girls(selected_girl, selected_quest)
 
                 elif selected_quest.type == "class":
-                    $ MC.gold -= selected_quest.gold
+                    if story_flags["postings free class"]:
+                        $ story_flags["postings free class"] = False
+                    else:
+                        $ MC.change_gold(-selected_quest.gold)
 
                     if len(selected_quest.enrolled) >= selected_quest.capacity:
                         $ quest_board.classes.remove(selected_quest)
@@ -2183,6 +2240,8 @@ label postings:
                         $ unlock_achievement("filled class")
 
                 $ selected_girl, available_girls = refresh_quest_girls(selected_girl, selected_quest)
+
+                # $ debug_notify("committed")
 
                 $ renpy.restart_interaction()
 

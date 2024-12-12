@@ -26,29 +26,29 @@ init python:
 
         renpy.show_screen("help_screen", keyword = keyword)
         renpy.restart_interaction()
-        renpy.block_rollback()
+        norollback()
 
 
     config.hyperlink_handlers['help'] = help_hyperlink
 
     def get_help_menu_topics(scr): # Creates the help menu
-        help_menu_topics = [("当前页面各种功能的介绍", "help_" + scr), ("青楼经营指南", "brokipedia"), ("如何赢得胜利", "help_how_to_win"), ("再次显示上一个获得的成就", "achievements"), ("图片管理器", "pictures"), ("关于本游戏", "help_about_game")]
+        help_menu_topics = [("Help with the current screen", "help_" + scr), ("Brokipedia", "brokipedia"), ("How to win", "help_how_to_win"), ("Replay last achievements", "achievements"), ("Picture management", "pictures"), ("About this game", "help_about_game")]
 
         if scr == "main":
-            help_menu_topics.insert(1, ("告诉我有关夜间事件的事", "help_night_events"))
+            help_menu_topics.insert(1, ("Tell me about night events", "help_night_events"))
 
         if debug_mode:
-            help_menu_topics.append(("调试菜单", "debug"))
-            help_menu_topics.append(("作弊菜单", "cheats"))
+            help_menu_topics.append(("Debug menu", "debug"))
+            help_menu_topics.append(("Cheat menu", "cheats"))
         elif game.cheats and scr == "main":
-            help_menu_topics.append(("作弊菜单 只能在主界面使用", "cheats"))
+            help_menu_topics.append(("Cheat menu - Main Screen only", "cheats"))
         elif not game.cheats:
-            help_menu_topics.append(("作弊菜单 (将禁用成就)", "cheats"))
+            help_menu_topics.append(("Activate cheats (disable achievements)", "cheats"))
 
         if game.active_mods:
             help_menu_topics.append(("Mods", "mods"))
 
-        help_menu_topics.append(("没事了", "back"))
+        help_menu_topics.append(("Never mind", "back"))
 
         return help_menu_topics
 
@@ -243,15 +243,15 @@ init python:
 
                             "Main Character information" : "Your character is first defined by his class (Warrior, Wizard or Rogue trader).\n\nYour class determines your available spells and your starting level in each of the four Main Character skills: strength, spirit, charisma and speed. All skills can reach a maximum of 10 (before bonuses), regardless of your class.\n\nYou are currently level [MC.level]/25. You can level up with prestige. Each new level will grant you a skill point which you may use to boost your skills.\n\nFinally, you can find information about your beliefs (set at character creation) and alignment (determined by your actions in and out of the brothel).",
 
-                            "战士" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
-                            "法师" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "Warrior" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "Wizard" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
                             "Rogue trader" : "The {b}Rogue trader{/b} is one of the three Main Character classes. He is good at bartering and trading favorably, and has learned the skills to survive in the mean streets of Borgo, even acquiring a $fearsome baby dragon as his protector. As he would rather sell books than read them, he is not very good with magic, though.\n\nMain skill: charisma.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
 
                             "strength" : "{b}Strength{/b} is one of the four Main Character skills. It affects how well you perform physical tasks and hold your own in close combat.\n\nWhenever you have unspent *AP at the end of the day, Strength gives a free boost to your brothel security and may twart negative outcomes from security events and runaway attempts.\n\nYou may use skill points to increase your strength, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
                             "spirit" : "{b}Spirit{/b} is one of the four Main Character skills. It affects how well you can sense magic and cast spells.\n\nSpirit increases your available mana to cast spells, and helps with hypnotic training.\n\nYou may use skill points to increase your spirit, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
                             "charisma" : "{b}Charisma{/b} is one of the four Main Character skills. It affects your social skills and other people's reactions to dialog choices, including your girls.\n\nCharisma boosts both the love and fear impacts of your actions.\n\nYou may use skill points to increase your charisma, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
                             "speed" : "{b}Speed{/b} is one of the four Main Character skills. Every point in Speed gives you one additional *AP every day. It has no other impact on the game.\n\nYou may use skill points to increase your speed, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
-                            "items" : "{b}Items{/b} are easy! Just click on the item you want to use, and select 'use' or 'equip'. You can unequip an item in the same way. Please note that you can only use items that are intended {color=[c_steel]}{b}for you{/b}{/color} and not {color=[c_pink]}{b}for your girls{/b}{/color}. Watch for the color in the item tab.",
+                            "items" : "{b}Items{/b} are easy! Just click on the item you want to use, and select 'use' or 'equip'. You can unequip an item in the same way. Please note that you can only use items that are intended {color=[c_main]}{b}for you{/b}{/color} and not {color=[c_pink]}{b}for your girls{/b}{/color}. Watch for the color in the item tab.",
                             "spells" : "You can learn new {b}Spells{/b} and {b}Talents{/b} from your character class when increasing your level.\n\nSpells must be cast and cost mana. After you learn a spell, you can use it any time from the spellbook.\n\nTalents are passive abilities that you always benefit from. You can review your unlocked talents in the spellbook.\n\nOnly one spell of a given type can be active every day. For instance, wizards can only have one active aura at any given time. Some spells are only active for one night, and some last until a specific event occurs.",
                             "spellbook" : "The {b}Spellbook{/b} contains all known spells and talents. It can be accessed from the Main Character screen.\n\nAfter you learn a spell, you can use it any time from the Spellbook. Press 'K' for fast access to the Spellbook.\n\nLeft click on a spell in the spells tab to cast it. Right click on a spell in the spells tab to autocast it. You can choose between auto-casting at night or in the morning by right-clicking again.\n\nHover over a spell to see its description.",
                             "mana" : "{b}Mana Points{/b} (MP) are used to cast spells and depend on your Spirit skill. They are replenished every day.",
@@ -422,20 +422,20 @@ screen help_menu(scr):
 
         frame background None xsize 0.8 yalign 0.0:
 
-            has vbox spacing yres(10)
+            has vbox
 
             hbox spacing xres(20):
                 add "side sill" yalign 0.5 zoom 0.5
                 text "How can I help you?" yalign 0.5
 
             for top in get_help_menu_topics(scr):
-                textbutton top[0] action Return(top[1]) xfill True text_size res_font(22)
+                textbutton top[0] style "navigation_button" action Return(top[1]) xfill True text_size res_font(22)
 
 
 
 label help(scr):
 
-    $ renpy.block_rollback()
+    $ norollback()
 
     show screen help_menu(scr)
 
@@ -457,7 +457,7 @@ label help(scr):
 
     elif r == "debug":
         menu:
-            "重置食物效果":
+            "Reset food effects":
                 python:
                     for girl in game.get_all_girls():
                         girl.current_food_effect = defaultdict(bool)
@@ -472,10 +472,10 @@ label help(scr):
                     menu:
                         "Would you like to reset all existing counters to zero?"
 
-                        "是的":
+                        "Yes":
                             $ persistent.debug_pic_counter_dict = defaultdict(int)
 
-                        "算了":
+                        "No":
                             pass
 
             "Deactivate picture count in gallery" if persistent.debug_pic_counter:
@@ -483,7 +483,7 @@ label help(scr):
 
                 "Girl pack pictures will no longer be counted."
 
-            "取消":
+            "Cancel":
                 pass
 
     elif r == "cheats":
@@ -524,21 +524,21 @@ label help(scr):
         menu:
             "Choose an option"
 
-            "管理忽略的图片":
+            "Manage ignored pictures":
                 $ nb = len(persistent.pic_ignore_list)
                 "You can ask the game to {b}ignore{/b} a specific picture from a girlpack by hitting the 'DELETE' key while it is displayed.\n[nb] picture(s) are currently ignored."
 
                 menu:
                     "Pictures will be removed from the picture set on your next restart or by using the refresh option below."
 
-                    "刷新图片":
+                    "Refresh pictures":
                         python:
                             globalFilesDict.reload_files()
                             for girl in game.get_all_girls():
                                 girl.load_pics()
                                 girl.refresh_pictures()
                                 girl.create_char()
-                    "编辑忽略的图片":
+                    "Edit ignored pictures":
                         $ fil = "" # renpy.input("Picture path contains\n(leave empty to see all):")
 
                         label edit_ignored:
@@ -549,16 +549,16 @@ label help(scr):
                                 if renpy.call_screen("yes_no", "Do you want to remove this picture from the 'IGNORE' list?"):
                                     $ toggle_ignore_pic(r)
                                     jump edit_ignored
-                    "清楚忽略的图片":
+                    "Clear ignored pictures":
                         if renpy.call_screen("yes_no", "This will reset the 'IGNORE' list and restore all girl packs to default. Would you like to proceed?"):
                             $ persistent.pic_ignore_list = []
-                    "将忽略的图片整理列出":
+                    "Print list of ignored pictures to file":
                         if renpy.call_screen("yes_no", "This will create a file named 'ignored_pictures.txt' in your 'game/' directory containing the list of ignored pictures so that you can edit or delete them. Would you like to proceed?"):
                             $ print_ignore_list()
-                    "取消":
+                    "Cancel":
                         pass
 
-            "修复女孩/主角图片": #! Broken
+            "Repair girl/MC pictures": #! Broken
                 if renpy.call_screen("yes_no", "This will reset all girl and MC pictures (useful if you changed some pictures outside of the game or renamed them). Would you like to proceed?"):
 
                     python:
@@ -778,27 +778,27 @@ label help_MC():
 
         sill "{b}The Character tab{/b}. This is you, Master! From here, you can see your personal information, change your portrait, manage your items and your spells."
 
-        "我可以重命名主角吗?":
+        "Can I rename my character?":
 
             sill "Sure thing! Just click on your name, and choose a new one. Oh, I'm curious!!! What's it gonna be?"
 
-        "介绍一下主角的职业和技能":
+        "Tell me about my character and skills":
 
             sill "First, let me tell you about your character class. Your class affects events in the game, your available spells and starting skills."
 
-            if MC.playerclass == "战士":
+            if MC.playerclass == "Warrior":
 
                 sill "You are a warrior, a skilled fighter with a tough spirit. Your social skills are a bit lacking, though, if I may say so."
 
                 you "Grumph."
 
-            elif MC.playerclass == "法师":
+            elif MC.playerclass == "Wizard":
 
                 sill "You are a wizard, skilled in spellcasting and with some wits to match. Don't get into close combat, though, this is not your style."
 
                 you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
 
-            elif MC.playerclass == "奸商":
+            elif MC.playerclass == "Trader":
 
                 sill "You are good at barter and trade, and have learned the skills to survive in the streets. Magic is not your forte, however."
 
@@ -822,14 +822,14 @@ label help_MC():
                   This is impacted by the actions you take, and used during dialog and story events."
 
 
-        "怎么切换我的肖像?":
+        "How can I change my portrait?":
 
             sill "Just click on the arrows to select your portrait. This is just for flavor and doesn't affect the game in any other way."
 
             sill "By the way, if you don't like those, did you know you can add more portraits in the {b}game\\MC\\{/b} folder?"
 
 
-        "介绍一下声望和技能点":
+        "Tell me about prestige and skill points":
 
             sill "{b}Prestige{/b} reflects your character's renown in Zan. Earning prestige allows you to level up and get skill points."
 
@@ -838,15 +838,15 @@ label help_MC():
             sill "You may use {b}Skill points{/b} to increase your {b}Strength{/b}, {b}Spirit{/b}, {b}Charisma{/b}, and {b}Speed{/b}, up to a maximum of 10."
 
 
-        "介绍一下如何使用道具":
+        "Tell me how to use items":
 
             sill "It's easy! Just click on the item you want to use, and select 'use' or 'equip'. You can unequip an item in the same way."
 
-            sill "Please note that you can only use items that are intended {color=[c_steel]}{b}for you{/b}{/color} and not
+            sill "Please note that you can only use items that are intended {color=[c_main]}{b}for you{/b}{/color} and not
                   {color=[c_pink]}{b}for your girls{/b}{/color}. Watch for the color in the item tab."
 
 
-        "介绍一下如何学习并使用法术":
+        "Tell me how to learn and use spells":
 
             sill "You can learn new {b}Spells{/b} and {b}Talents{/b} from your character class when increasing your level."
 
@@ -869,7 +869,7 @@ label help_MC():
             sill "Some spells are only active for one night, and some last until a specific event occurs. {b}Hover{/b} over a spell to see its description."
 
 
-        "没事了":
+        "Never mind":
 
             return
 
@@ -884,7 +884,7 @@ label help_girls():
 
         sill "{b}The Girls' rooms{/b}. This is where you can check your girls' information, interact with them, choose their job and schedule, and more."
 
-        "我可以修改女孩的名字吗?":
+        "Can I change a girl's name?":
 
             sill happy "You sure can! This is your privilege as the slave's master."
 
@@ -898,7 +898,7 @@ label help_girls():
             sill sad "B-But..."
 
             menu:
-                "把她的名字改为'希露'" if sill_name != "Sill":
+                "Rename her 'Sill'" if sill_name != "Sill":
                     $ sill_name = "Sill"
 
                     you "Go back to Sill."
@@ -909,23 +909,23 @@ label help_girls():
 
                     jump help_girls
 
-                "把她的名字改为'露丝'":
+                "Rename her 'Rose'":
                     $ new_name = "Rose"
 
-                "把她的名字改为'萝莉'":
+                "Rename her 'Lolita'":
                     $ new_name = "Lolita"
 
-                "把她的名字改为'粉毛'":
+                "Rename her 'Pinky'":
                     $ new_name = "Pinky"
 
 
-                "把她的名字改为'母狗'":
+                "Rename her 'Peggy'":
                     $ new_name = "Peggy"
 
-                "把她的名字改为'婊子'":
+                "Rename her 'Bitch'":
                     $ new_name = "Bitch"
 
-                "不修改她的名字":
+                "Don't rename her":
                     jump help_girls
 
             you "Your new name is... [new_name]"
@@ -980,13 +980,13 @@ label help_girls():
 
                 sill "What are you interested in?"
 
-                "阶级和声望":
+                "Rank and reputation":
 
                     call help_rank_introduction from _call_help_rank_introduction
 
                     "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
 
-                "等级和经验":
+                "Leveling and experience":
 
                     sill "As your girl works, goes on quests or attends classes she will become more experienced. Once she has enough {b}experience{/b} (XP),
                           she will be ready to reach a new level."
@@ -997,11 +997,11 @@ label help_girls():
 
                     sill "The maximum level a girl can reach is capped by her current {b}rank{/b}, however. Don't forget to rank up!"
 
-                "佐迪亚克标志和天赋":
+                "Zodiac signs and perks":
 
                     call help_zodiac() from _call_help_zodiac
 
-                "职业技能和技能点":
+                "Job skill and job points":
 
                     sill "Every time your girl accomplishes a specific job or sex act, she will receive {b}job points{/b} (JP). Job points will allow her to automatically
                           increase her job level."
@@ -1012,7 +1012,7 @@ label help_girls():
 
                     "You can use the shortcuts to sort your girls by name, job, level or rank (right-click on a sort method to sort backwards)."
 
-                "返回":
+                "Back":
 
                     jump help_girls
 
@@ -1022,51 +1022,51 @@ label help_girls():
             menu:
                 sill "What do you want to know about?"
 
-                "如何更换女孩的工作":
+                "Changing a girl's job":
 
                     sill "The first button is the {b}job{/b} button. It allows you to change a girl's job. Keep in mind that she may refuse to be a whore if her obedience and/or libido is too low."
 
                     sill sad "You cannot change a girl's job while she is away, hurt, sick or exhausted. Sorry."
 
-                "如何修改女孩的排班":
+                "Changing a girl's schedule":
 
                     sill "You can set a weekly schedule for your girls using the {b}schedule{/b} button."
 
                     sill "Girls cannot work every day, or they will deplete their energy and become sick. A girl can work a half shift on certain days
                           if you want to spare some of her energy."
 
-                "如何与女孩互动":
+                "Interacting with a girl":
 
                     sill "The {b}interact{/b} button allows you to visit your girl and talk to her. You might find it useful to know your girls better, and maybe try to influence their behavior."
 
-                "如何装备和使用道具":
+                "Equipping and using items":
 
                     sill "Use the {b}equip{/b} button to have a girl take, give, use or equip items. Some effects are permanent: think carefully before you use an item!"
 
-                "如何出售女孩":
+                "Selling a girl":
 
                     sill "Oh, that one is easy. Just click the {b}sell{/b} button to get rid of a girl. But not me, of course."
 
-                "天赋，等级和升阶":
+                "Perks, leveling and ranking up":
 
                     sill "The {b}level up{/b} or {b}rank up{/b} buttons become available once your girl is ready to advance. Otherwise, you can use the {b}perks{/b} button to check
                           on your girl's current perks"
 
-                "如何查看女孩的近期表现":
+                "Tracking a girl's performance":
 
                     sill "The {b}stats{/b} button is handy if you want to keep track of the latest information about your girl's performance."
 
-                "返回":
+                "Back":
 
                     jump help_girls
 
-        "介绍一下女孩的技能和天赋":
+        "Tell me about girl skills and traits":
 
             call skills_introduction from _call_skills_introduction
 
             jump help_girls
 
-        "介绍一下女孩的职业":
+        "Tell me more about jobs":
 
             call jobs_introduction from _call_jobs_introduction
 
@@ -1074,11 +1074,11 @@ label help_girls():
 
             jump help_girls
 
-        "如何训练女孩成为妓女?":
+        "How can I train a girl to become a whore?":
             call help_whores from _call_help_whores_6
 
 
-        "没事了":
+        "Never mind":
 
             return
 
@@ -1128,7 +1128,7 @@ label skills_introduction():
     menu:
         sill "What are you interested in?"
 
-        "介绍一下技能":
+        "Tell me about skills":
 
             sill "There are two types of skills for your girls: main skills and sex skills. Working jobs may increase, and sometimes decrease, specific stats."
 
@@ -1143,21 +1143,21 @@ label skills_introduction():
 
             sill "The maximum skill a girl can have is limited by her current rank, however. Be sure to rank up your girls!"
 
-        "介绍一下特质":
+        "Tell me about traits":
 
             sill "Every girl has {b}3 traits{/b} that she is born with. You cannot change those."
 
             sill "Some traits can have powerful effects on your girl, but beware! No one is perfect, so your girls will usually have a
                   negative trait as well."
 
-        "介绍一下保养费":
+        "Tell me about upkeep":
 
             sill "You can freely adjust {b}upkeep{/b}. Upkeep covers how much money you spend every night keeping your girl suitably fed and groomed."
 
             sill "Slave or not, your girls have some expensive tastes, you know! Giving your girls extra money will keep them content.
                   Watch that you don't let their upkeep sink too low, however! They will be mad at you."
 
-        "返回":
+        "Back":
 
             return
 
@@ -1170,7 +1170,7 @@ label bis_introduction(unlock=True):
 
     menu:
         sill "Would you like to learn more about how {b}bisexual{/b} whores work?"
-        "当然，告诉我":
+        "Yes, fill me in":
             sill "Bisexual girls are able to have a threesome with a customer. For that, you will need {b}at least two bisexual whores{/b} active at the same time."
 
             $ bonus = percent_text(tip_act_modifier["bisexual bonus"] * 2)[1:]
@@ -1183,7 +1183,7 @@ label bis_introduction(unlock=True):
 
             you "I see. Thanks!"
 
-        "不用了":
+        "No thanks":
             sill "All right."
 
     return
@@ -1195,7 +1195,7 @@ label group_introduction(unlock=True):
 
     menu:
         sill "Would you like to learn more about how {b}group{/b} works for whores?"
-        "当然，告诉我":
+        "Yes, fill me in":
             sill "Group girls are able to have orgies with several customers. For that, you will need {b}at least two willing customers{/b} that want the same sex act."
 
             $ bonus = percent_text(tip_act_modifier["group bonus"])[1:]
@@ -1210,7 +1210,7 @@ label group_introduction(unlock=True):
 
             you "I'll keep that in mind. Thanks!"
 
-        "不用了":
+        "No thanks":
             sill "Okay. Call me if you need anything..."
 
     return
@@ -1224,7 +1224,7 @@ label jobs_introduction():
 
         sill "What job do you want to know about?"
 
-        "女服务员":
+        "Waitress":
 
             sill "The {b}tavern{/b} will allow you to train your girl as a {b}waitress{/b}. With time, they will start wearing sexy uniforms
                   and providing all kinds of 'entertainment' to the customers."
@@ -1232,7 +1232,7 @@ label jobs_introduction():
             sill "Waitresses need {b}charm{/b} to keep the customers entertained. They also need a strong {b}constitution{/b}: working tables is not easy, you know!
                   Finally, it cannot hurt if they are {b}beautiful{/b}, and have a good {b}body{/b}."
 
-        "脱衣舞娘":
+        "Dancer":
 
             sill "The {b}strip club{/b} will allow you to train her as a {b}dancer{/b}. With time, they will remove more and more clothing, and
                   take the customers to a room for a 'private dance'."
@@ -1240,7 +1240,7 @@ label jobs_introduction():
             sill "You should pick girls with a good {b}body{/b} to be dancers. A {b}libidinous{/b} girl is always better, the customers can sense it.
                  {b}Refinement{/b} and {b}charm{/b} are also good qualities for a dancer."
 
-        "按摩技师":
+        "Masseuse":
 
             sill "The {b}onsen{/b} will allow you to train her as a {b}masseuse{/b}. With time, they will provide more erotic massages
                   to the customers, and eventually give them 'full service'"
@@ -1248,7 +1248,7 @@ label jobs_introduction():
             sill "Masseuses should be {b}beautiful{/b} girls, to attract customers to the onsen. {b}Sensitive{/b} girls fare better as they can
                   make the customer more comfortable. A good {b}body{/b} and a little {b}refinement{/b} are also important."
 
-        "表演艺伎":
+        "Geisha":
 
             sill "The {b}okiya{/b} will allow you to train her as a {b}geisha{/b}. With time, they'll learn a thousand ways to please their
                   customers, and how to take care of their more 'special' requests."
@@ -1256,7 +1256,7 @@ label jobs_introduction():
             sill "Geishas should be {b}refined{/b} girls. {b}Obedience{/b} is a prized quality, to make the customers feel important. {b}Beauty{/b} and {b}charm{/b} also help
                   make a perfect geisha."
 
-        "卖淫妓女":
+        "Whore":
 
             sill "Girls need to be trained before they will accept to be whores. Forcing them never gives good results. Girls with a high libido or obedience can be trained faster."
 
@@ -1285,6 +1285,27 @@ label jobs_introduction():
     return
 
 
+label help_brothel_intro():
+    sill "Welcome to your brothel! Here you can manage your brothel options, buy new rooms and hire freelancers."
+
+    if not debug_mode and story_mode:
+        menu:
+            sill "Would you like to learn more about your brothel?"
+
+            "Yes":
+                call help_brothel() from _call_help_brothel
+            "No":
+                pass
+
+        sill "One more thing: If you know anyone with special skills, you can appoint them as a trainer for your girls. They will apply a special bonus to the whole brothel at once."
+
+        sill "Here, since you don't know anyone in town yet, I can be your first trainer."
+
+        sill "My special bonus means you won't have to pay upkeep for a girl every night. Useful to get you started making some money."
+
+    return
+
+
 label help_brothel():
 
     sill happy "{nw}"
@@ -1293,7 +1314,7 @@ label help_brothel():
 
         sill "{b}Your Brothel{/b}. This is where you can check your brothel information, buy new rooms, and hire freelancers."
 
-        "如何查看青楼的信息?":
+        "How can I check my brothel's information?":
 
             sill "The {b}Rooms{/b} you own are highlighted on the brothel tab. You can also see the number and type of bedrooms you have."
 
@@ -1303,7 +1324,7 @@ label help_brothel():
 
                 sill "From the Brothel, you can also access the {b}Carpenter's Wagon{/b} and {b}Customer options{/b}."
 
-        "介绍一下青楼的房间":
+        "Tell me more about rooms":
 
             sill "There are two types of rooms: bedrooms and common rooms."
 
@@ -1317,7 +1338,7 @@ label help_brothel():
 
             sill "A word of warning: The more common rooms you build, the more expensive they get! Think before you buy. Contractors are so unreliable these days..."
 
-        "介绍一下外包人员":
+        "Tell me more about freelancers":
 
             sill "You can hire {b}3 types of freelancers{/b} to help with your business: advertising girls, goons and cleaners."
 
@@ -1330,9 +1351,9 @@ label help_brothel():
             menu:
                 sill "Would you like to know more about advertising?"
 
-                "是的":
+                "Yes":
                     call help_advertising() from _call_help_advertising_1
-                "不了":
+                "No":
                     pass
 
             sill "{b}Goons{/b} improve your brothel security by beating the unpleasantness out of rowdy customers. Trouble is sure to show up at your door
@@ -1341,9 +1362,9 @@ label help_brothel():
             menu:
                 sill "Would you like to know more about security?"
 
-                "是的":
+                "Yes":
                     call help_security() from _call_help_security
-                "不了":
+                "No":
                     pass
 
             sill "{b}Cleaners{/b} are maids that take care of the maintenance of your brothel. Low maintenance may cause your girls to fall sick and turn away customers."
@@ -1352,7 +1373,7 @@ label help_brothel():
 
             sill happy "Please note that freelancers get more expensive as you move your operations to fancier city districts. But they are also more efficient."
 
-        "关于调教师":
+        "Tell me about trainers":
 
             sill "{b}Trainers{/b} can help run your brothel more efficiently! You may meet some interesting people in Zan, which will be able to help managing your girls.
                   Only one trainer can be active at all times."
@@ -1375,9 +1396,9 @@ label help_advertising():
 
 label help_advertising_menu():
     menu:
-        "我想要知道..."
+        "Tell me about..."
 
-        "关于顾客":
+        "Customers":
 
             sill "Some {b}customers{/b} will come to your brothel every night. At least one will show up no matter what, but your {b}brothel reputation{/b} and {b}customer attraction{/b} can increase that manyfold."
 
@@ -1389,7 +1410,7 @@ label help_advertising_menu():
 
             sill "Harder customers also have a higher {b}customer budget{/b}. Keep that in mind as your brothel grows to make the most money out of it."
 
-        "关于青楼的评价":
+        "Brothel reputation":
 
             sill "{b}Brothel reputation{/b} receives a boost from advertising every night. It is also affected negatively or positively by your {b}customers' satisfaction{/b}."
 
@@ -1399,7 +1420,7 @@ label help_advertising_menu():
 
             sill "And a word of warning: {b}Unhappy customers{/b} may really drag your reputation down, especially at higher ranks. It is best to focus on drawing only as many customers as you can serve to the brothel to avoid grumbling."
 
-        "关于顾客的吸引力":
+        "Customer attraction":
 
             sill "{b}Customer attraction{/b} is a temporary boost your advertising girls will bring to the total number of customers that come to the brothel."
 
@@ -1409,7 +1430,7 @@ label help_advertising_menu():
 
             sill "One day, you may even be able to unlock a way to increase {b}customer attraction{/b}, at the expense of {b}customer budgets{/b}."
 
-        "关于顾客的预算":
+        "Customer budgets":
             sill "Each customer has a {b}maximum budget{/b} he's ready to spend on activities at your brothel."
 
             sill "Customers have a separate budget for {b}entertainment{/b}, such as hanging by the tavern or club, and {b}whoring{/b}. Their budget for whoring is higher, naturally.
@@ -1423,15 +1444,15 @@ label help_advertising_menu():
 
             sill "One day, you may even be able to unlock a way to increase {b}customer budgets{/b}, at the expense of {b}customer attraction{/b}."
 
-        "广告宣传的作用":
+        "Advertising power":
 
             sill "{b}Advertising power{/b} is influenced by your advertising girls' current {b}outfits{/b}."
 
             sill "There may be a way to unlock new outfits in the future."
 
-        "没有要问的了":
+        "Nothing":
 
-            you "我知道了, 谢谢你。"
+            you "I'm good now, thanks."
 
             return
 
@@ -1483,7 +1504,7 @@ label help_districts():
 
         sill "This is {b}Zan{/b}, the City of Jade! From here, you can visit all of the districts you have unlocked."
 
-        "关于城市里的地区":
+        "Tell me about districts":
 
             sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
 
@@ -1491,7 +1512,7 @@ label help_districts():
 
             sill "In time, you will be able to unlock new districts and relocate your brothel to fancier areas."
 
-        "如何解锁新的地区":
+        "Tell me about unlocking new districts":
 
             sill "You need a proper brothel {b}license{/b} to move out of the Slums. Accessing the more upscale districts requires an even higher license."
 
@@ -1501,7 +1522,7 @@ label help_districts():
 
             sill "New licenses and brothel relocation will become available as you advance in the game."
 
-        "没有要问的了":
+        "Never mind":
 
             return
 
@@ -1523,7 +1544,7 @@ label help_visit_location():
 
         sill "You are visiting the {b}[selected_location.name]{/b}. From here, you can meet and chat with people, or take a random tour of the area."
 
-        "如何邂逅陌生女孩":
+        "Tell me about meeting girls":
 
             sill sad "Aw, Master, you're such a playboy!!!"
 
@@ -1534,7 +1555,7 @@ label help_visit_location():
             sill "But it will take some hard convincing. Or charms... And even then, there is no way to know in advance if the girl is any good.
                   You might be pleasantly surprised, though."
 
-        "如何探索城市地区":
+        "Tell me about looking around":
 
             sill "Touring the area may allow you to learn some interesting rumors or meet new people..."
 
@@ -1555,15 +1576,15 @@ label help_slavemarket():
 
         sill "Do you want to know more?"
 
-        "介绍一下女孩的技能和特质":
+        "Tell me about girl skills and traits":
 
             call skills_introduction from _call_skills_introduction_1
 
-        "介绍一下女孩的职业内容":
+        "Tell me more about jobs":
 
             call jobs_introduction from _call_jobs_introduction_1
 
-        "介绍一下性培训经验等级":
+        "Tell me about sexual experience":
 
             sill "Sexual experience... Well, you know... *blush*"
 
@@ -1574,7 +1595,7 @@ label help_slavemarket():
 
             sill "You can get a general idea about a slave's sexual training by looking at her experience level and stats."
 
-        "不用了，没什么要问的":
+        "No, I'm good":
 
             return
 
@@ -1589,10 +1610,10 @@ label help_shop:
 
     sill sad "I do not like that shopkeeper, though! She cannot keep her eyes off you..."
 
-    sill happy "There are 3 types of items: {color=[c_steel]}personal items{/color}, {color=[c_pink]}girl items{/color}, and {color=[c_orange]}gifts{/color}. Watch for the color on the item profile.
+    sill happy "There are 3 types of items: {color=[c_main]}personal items{/color}, {color=[c_pink]}girl items{/color}, and {color=[c_orange]}gifts{/color}. Watch for the color on the item profile.
                 Hover your mouse on each item or click it to learn more."
 
-    sill "{b}{color=[c_steel]}Personal items{/color}{/b} are intended for your use."
+    sill "{b}{color=[c_main]}Personal items{/color}{/b} are intended for your use."
 
     sill "{b}{color=[c_pink]}Girl items{/color}{/b} are intended for your girls."
 
@@ -1612,7 +1633,7 @@ label help_postings():
 
         sill "The {b}posting{/b} board. This is a good place to look for classes or quests!"
 
-        "关于培训课程":
+        "Tell me about classes":
 
             sill "{b}Classes{/b} can improve your girls' {b}skills{/b} as well as slightly raise their {b}reputation{/b} and {b}experience{/b}."
 
@@ -1620,7 +1641,7 @@ label help_postings():
 
             sill "Please be aware that classes can only improve a girl's skill up to a point. To raise her skills further, you might need more advanced classes."
 
-        "关于委托任务":
+        "Tell me about quests":
 
             sill "{b}Quests{/b} are special requests posted by locals that your girl can fulfill. Questing rewards include {b}gold{/b}, {b}skills{/b}, {b}experience{/b} and {b}reputation{/b}."
 
@@ -1630,7 +1651,7 @@ label help_postings():
 
             sill "Watch for specific {b}traits{/b} that the customers love or hate. This might increase or decrease the reward for the quest by a large amount."
 
-        "没有要问的了":
+        "Never mind":
 
             return
 
@@ -1658,7 +1679,7 @@ label help_about_game:
 
         sill "What would you like to know about this game?"
 
-        "免责声明":
+        "DISCLAIMER":
 
             $ text1 = """This is a hobby project, if someone wants you to pay for it, you are being scammed. I do not own any of the images, music and sound effects used in this game. I wish I could credit the rightful authors for all of them, but most of it had been sitting on my hard drive for a long, long time, and I've forgotten where it came from.\nIf you are the author of any of this material and you feel that this game is infringing on your rights in any way,
             please contact me on the [URL] forum and I'll drop it from the game.\n\nPlease contact me at [URL] for feedback, criticism, bug reports, etc."""
@@ -1666,7 +1687,7 @@ label help_about_game:
             call screen OK_screen("DISCLAIMER", text1)
 
 
-        "这是个什么样的游戏?":
+        "What is this game?":
 
             $ text1 = """As a fan of the original Sim Brothel and some of the games it inspired, as well as games like Slave Maker, I have wanted for a long time to 'make it my own', and try my hand at coding.
 
@@ -1690,13 +1711,13 @@ Please contact me at [URL] for feedback, criticism, bug reports, etc.
             call screen OK_screen("What is this game? (3/3)", text3)
 
 
-        "如何支持游戏?":
+        "How can I help?":
 
             $ text1 = """Play the game! By now I've spent so much time working on this game that I have genuinely zero idea if it's any good. If you spot a bug, a typo (I am not a native speaker), have some ideas to improve gameplay, game balance or fun, please speak up, this will help me enormously.\n\nI am always looking for {b}writers{/b}, as writing events is the most time-consuming part of developing the game. So far they have a tendency to disappear into thin air, but if you're willing, please drop me a PM at [URL].\n\nAlthough I won't rework all game mechanics from scratch, I am expecting to make a lot of adjustments to make the game more balanced and fun, so all your suggestions will be read and welcome.\n\nIf you're an experienced programmer and want to look under the hood or tinker with the game, by all means, do it!\n\nFinally, if you have some art to recommend such as good hentai series or music that fit the flavor of the game, by all means, do so.\n\nContact me at [URL] for feedback, criticism, bug reports, etc."""
 
             call screen OK_screen("How can I help?", text1)
 
-        "特别鸣谢":
+        "Special thanks":
             "Thanks to all the people on the [URL] forum for their support and all the good ideas, girl packs and mods they contributed."
 
             "Special thanks to OhWee for making some great screens (including the load/save screen and the input screen), and Deimos96 for making the cool Evil Power cards' UI."
@@ -1707,7 +1728,7 @@ Please contact me at [URL] for feedback, criticism, bug reports, etc.
             "Contact me at [URL] for feedback, criticism, bug reports, etc."
 
 
-        "没事了":
+        "Never mind":
             return
 
     jump help_about_game
@@ -1719,7 +1740,7 @@ label help_night_events:
 
         sill "{b}Night events{/b} are where the action is!"
 
-        "介绍一下青楼的名声和顾客":
+        "Tell me about brothel reputation and customers":
 
             sill "Every night, customers will flock to your brothel in the hope of getting some action, both in the form of entertainment and sex.
                   How many customers actually show up depends on your {b}brothel reputation{/b}."
@@ -1732,7 +1753,7 @@ label help_night_events:
             sill "If no girls are working at the brothel on a given night, the brothel will close. Security and advertising babes will go home.
                  You will still have to pay for upkeep and maintenance."
 
-        "介绍一下广告，保安和清洁工":
+        "Tell me about advertising, security and maintenance":
 
             sill "{b}Advertising{/b} is pretty straightforward. Get a bunch of young, hot girls out there with signs, flyers or bodily tattoos with the brothel's name on it,
                  and its reputation will increase. Reputation begets more customers."
@@ -1743,9 +1764,9 @@ label help_night_events:
             menu:
                 sill "Would you like to know more about security?"
 
-                "是的":
+                "Yes":
                     call help_security from _call_help_security_1
-                "不了":
+                "No":
                     pass
 
             sill "Customers are messy and will dirty up the place every night as they go about their business. {b}Maintenance{/b} is essential is you don't want your brothel to become a hotbed
@@ -1755,7 +1776,7 @@ label help_night_events:
                  You will still have to pay for upkeep and maintenance."
 
 
-        "介绍一下女孩的表现":
+        "Tell me about girl performances":
 
             sill "Every night, the available working girls will {b}perform{/b} for the visiting customers."
 
@@ -1769,7 +1790,7 @@ label help_night_events:
 
             sill "A good performance will massively increase the rewards from the customers, especially the tipping."
 
-        "没什么要问的了":
+        "Never mind":
 
             return
 
@@ -1782,9 +1803,9 @@ label security_introduction:
     menu:
         "You've just had your first security event. Would you like to learn more about security events?"
 
-        "好的":
+        "Yes":
             call help_security from _call_help_security_2
-        "不了":
+        "No":
             pass
 
     return
@@ -1837,13 +1858,19 @@ label help_rank_introduction:
 ## FARM HELP ##
 
 label help_farm_question():
+
     menu:
         gizel "Do you need some help with the farm?"
 
-        "是的":
+        "Yes":
             call help_farm() from _call_help_farm_2
-        "不了":
+        "No":
             pass
+
+        "Recover a girl from Gizel" if NPC_gizel.flags["held_girl"]:
+            $ girl = NPC_gizel.flags["held_girl"]
+
+            call acquire_ninja(girl) from _call_acquire_ninja_2
 
     return
 
@@ -1865,7 +1892,7 @@ label help_farm_menu():
     menu:
         gizel "What do you want to know, then?"
 
-        "介绍一下农场":
+        "Tell me about the farm":
 
             gizel "You can send girls here at the {b}farm{/b}, where they will remain in my care for a fixed duration, or until you want them back."
 
@@ -1875,7 +1902,7 @@ label help_farm_menu():
 
             "You can use the shortcuts to sort your girls by name, level or rank (right-click on a sort method to sort backwards)."
 
-        "介绍一下牢房和设施":
+        "Tell me about pens and facilities":
 
             gizel normal "Certainly. {b}Pens{/b} are where your girls are being kept while they are at the farm. {b}Facilities{/b} are where I host my beloved minions."
 
@@ -1894,7 +1921,7 @@ label help_farm_menu():
             else:
                 extend " We can develop the farm further if you obtain a higher brothel license and some protection in high places."
 
-        "介绍一下仆从和设施":
+        "Tell me about minions and facilities":
 
             gizel smirk "Ah, the minions! My little babies, my loves..."
 
@@ -1952,7 +1979,7 @@ label help_farm_menu():
 
             gizel "Finally, you should note that for {b}group sex training{/b}, I'll need more than one minion of the same type. But that's obvious, right?"
 
-        "介绍一下女孩训练的规则":
+        "Tell me about girl training and rules":
 
             gizel normal "Right, let's get to the main reason we're here. {b}Training{/b}."
 
@@ -2096,7 +2123,7 @@ label cheat_menu():
 
     menu:
 
-        sill "警告! 作弊功能只是用于测试, 否则会毁了你的游戏体验! 只有在主界面才能使用作弊按钮。"
+        sill "WARNING! These cheats are for testing purposes, and may easily break your game! Only call this menu from the Home screen."
 
 #        "Test line counting" if debug_mode:
 
@@ -2145,21 +2172,27 @@ label cheat_menu():
 #                    renpy.say("exceptional", and_text([it.name for it in dis.items["exceptional"]]))
 
 
-        "测试游戏事件" if debug_mode:
+        "Test event" if debug_mode:
 
             $ test_event_name = renpy.input("Event name", default=test_event_name)
 
-            $ selected_district = district_dict["slum"]
-            $ selected_location = rand_choice(all_locations)
+            if not renpy.has_label(test_event_name):
+                bk_error "Not a valid label."
 
-            hide screen home
-            hide screen tool
+            else:
+                $ selected_district = district_dict["slum"]
+                $ selected_location = rand_choice(all_locations)
 
-            scene black with fade
+                $ renpy.retain_after_load()
 
-            $ renpy.call("display_events", [StoryEvent(label=test_event_name)])
+                hide screen home
+                hide screen tool
 
-            $ renpy.pop_call()
+                scene black with fade
+
+                $ renpy.call("display_events", [StoryEvent(label=test_event_name)])
+
+                $ renpy.pop_call()
 
             jump main
 
@@ -2189,19 +2222,19 @@ label cheat_menu():
 
 #            return
 
-        "调整游戏难度":
+        "Cheat modifier":
 
             menu:
                 "The cheat modifier is a float number affecting stat gains, xp, jp, reputation and gold earned by your girls. Use it to adjust the difficulty level (e.g.: a modifier of 1.5 gives your girl a 50\% increase); a modifier of 0.75 decreases gains by 25\%)"
 
-                "调整全局的难度系数":
+                "Set global cheat modifier":
                     $ global_cheat_modifier = float(renpy.input("Cheat modifier", default = 1.0))
 
                     python:
                         for cheat in cheat_modifier.keys():
                             cheat_modifier[cheat] = global_cheat_modifier
 
-                "自定义各项数值系数":
+                "Set modifiers separately":
                     $ cheat_modifier["gold"] = float(renpy.input("Gold cheat modifier", default = cheat_modifier["gold"]))
                     $ cheat_modifier["xp"] = float(renpy.input("XP cheat modifier", default = cheat_modifier["xp"]))
                     $ cheat_modifier["jp"] = float(renpy.input("JP cheat modifier", default = cheat_modifier["jp"]))
@@ -2210,40 +2243,40 @@ label cheat_menu():
                     $ cheat_modifier["prestige"] = float(renpy.input("Prestige cheat modifier", default = cheat_modifier["prestige"]))
 
 
-        "获得大量金币":
+        "Gold":
 
             menu:
 
-                "获得一千金币":
+                "Get 1,000 gold":
                     $ MC.gold += 1000
 
-                "获得一万金币":
+                "Get 10,000 gold":
                     $ MC.gold += 10000
 
-                "获得十万金币":
+                "Get 100,000 gold":
                     $ MC.gold += 100000
 
-                "获得自定义数量金币":
+                "Custom amount":
                     $ MC.gold += int(renpy.input("How much?"))
 
-                "返回上一级":
+                "Back":
                     jump cheat_menu
 
 
-        "修改主角属性":
+        "Main character":
 
             menu:
-                "提升主角等级":
+                "Level MC":
                     python:
                         nb = int(renpy.input("How many levels?", default = "1"))
 
                         for i in range(nb):
                             MC.level_up(forced = True)
 
-                "重置互动次数":
+                "Reset interactions":
                     $ MC.reset_interactions()
 
-                "检查增益效果":
+                "Check MC effects":
 
                     python:
 
@@ -2252,29 +2285,30 @@ label cheat_menu():
                             renpy.say("", eff.target + " " + str(eff.value))
 
 
-                "返回上一级":
+                "Back":
 
                     jump cheat_menu
 
 
-        "修改青楼女孩们的属性":
+        "Girls":
 
             menu:
-                "让所有的女孩都脱光衣服":
+                "Get naked":
                     python:
                         for girl in MC.girls:
                             girl.naked=True
                             girl.refresh_pictures()
 
-                "让所有女孩获得天赋点数":
+                "Give girls perk points":
 
                     $ nb = int(renpy.input("Perk points", default = "1"))
 
                     python:
                         for girl in MC.girls:
                             girl.perk_points += nb
+                            girl.update_can_perk()
 
-                "让所有女孩获得属性点数":
+                "Give girls upgrade points":
 
                     $ nb = int(renpy.input("Upgrade points", default = "10"))
 
@@ -2282,52 +2316,52 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.upgrade_points += nb
 
-                "晋升所有女孩的角色阶级":
+                "Rank girls up":
                     $ nb = int(renpy.input("How many ranks", default = "1"))
                     python:
                         for girl in MC.girls:
                             for i in range(nb):
                                 girl.rank_up(forced = True)
 
-                "提升所有女孩的角色等级":
+                "Level girls up":
                     python:
                         for girl in MC.girls:
                             girl.level_up(forced = True)
 
-                "提高所有女孩的职业等级":
+                "Job skill up":
                     $ job = renpy.input("Choose skill to improve", default = "waitress").lower()
 
                     python:
                         for girl in MC.girls:
                             girl.job_up(job, forced = True)
 
-                "提高女孩们的性欲和服从" if debug:
+                "Raise libido and obedience" if debug:
                     $ val = int(renpy.input("Raise libido/obedience", default = 50))
                     python:
                         for girl in MC.girls:
                             girl.change_stat("obedience", val)
                             girl.change_stat("libido", val)
 
-                "提高所有女孩性行为倾向" if debug:
+                "Raise sexual preferences" if debug:
                     $ val = int(renpy.input("Raise all sexual preferences", default = 1000))
                     python:
                         for girl in MC.girls:
                             for s in extended_sex_acts:
                                 girl.change_preference(s, val)
 
-                "让所有人停止工作去休息":
+                "Set all girls to rest":
                     python:
                         for girl in MC.girls:
                             girl.set_job(None, forced=True)
 
-                "出售掉青楼里所有的女孩":
+                "Sell all girls":
                     python:
                         for girl in MC.girls:
                             MC.gold += girl.get_price("sell")
                         MC.girls = []
                     play sound s_gold
 
-                "给所有人一份随机的工作":
+                "Give all girls a random job":
                     python:
                         for girl in MC.girls:
                             if girl.will_do("whore"):
@@ -2335,18 +2369,18 @@ label cheat_menu():
                             else:
                                 girl.set_job(rand_choice(all_jobs))
 
-                "让女孩们得到充分的休息":
+                "Fully rest girls":
                     python:
                         for girl in MC.girls:
                             girl.change_energy(250)
                             girl.heal(99)
 
-                "重置所有女孩的互动次数":
+                "Reset girl interactions":
                     python:
                         for girl in MC.girls:
                             girl.reset_interactions()
 
-                "修改所有女孩的好感数值":
+                "Change love":
 
                     $ nb = int(renpy.input("Change", default = "10"))
 
@@ -2354,7 +2388,7 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.change_love(nb)
 
-                "修改所有女孩的恐惧数值":
+                "Change fear":
 
                     $ nb = int(renpy.input("Change", default = "10"))
 
@@ -2362,64 +2396,64 @@ label cheat_menu():
                         for girl in MC.girls:
                             girl.change_fear(nb)
 
-                "强制让某个女孩逃出青楼" if debug_mode:
+                "Force girl to run away" if debug_mode:
                     call run_away(MC.girls[0]) from _call_run_away_2
 
 
-                "返回上一级菜单":
+                "Back":
                     jump cheat_menu
 
-        "调整城市里的陌生女孩":
+        "Free girls":
 
             menu:
 
-                "补充新的陌生女孩":
+                "Get new free girls":
                     $ game.free_girls = []
                     $ update_free_girls()
                     $ cycle_free_girls()
                     $ renpy.restart_interaction()
 
-                "刷新新的陌生女孩":
+                "Update free girls":
                     $ update_free_girls()
                     $ renpy.restart_interaction()
 
-                "轮换一批陌生女孩":
+                "Cycle free girls":
                     $ cycle_free_girls()
                     $ renpy.restart_interaction()
 
-                "重置陌生女孩互动":
+                "Reset girl interactions":
                     python:
                         for girl in game.free_girls:
                             girl.reset_interactions()
 
-                "列出所有陌生女孩":
+                "List free girls":
                     python:
                         l = []
                         for g in game.free_girls:
                             l.append(g.fullname + " (id: " + str(g.id) + ")")
                         renpy.say("", "Free girls: " + and_text(l))
 
-                "返回上一级菜单":
+                "Back":
                     jump cheat_menu
 
-        "刷新商店及获得道具":
+        "Items":
 
             menu:
 
-                "刷新商店货架":
+                "Refresh shops":
 
                     $ update_shops()
 
 
-                "获得所有道具":
+                "Get all items":
 
                     python:
 
                         for it in all_items + list(extractor_items.values()):
 
-                            MC.items.append(copy.deepcopy(it))
+                            MC.items.append(it.get_instance())
 
-                "获得指定道具":
+                "Get item":
 
                     $ name = renpy.input("Item name contains")
 
@@ -2429,35 +2463,35 @@ label cheat_menu():
 
                             if name in it.name:
 
-                                MC.items.append(copy.deepcopy(it))
+                                MC.items.append(it.get_instance())
 
-                "清空所有道具":
+                "Clear items":
 
                     $ MC.items = []
 
-                "完成所有改造":
+                "Build all furniture":
                     python:
                         for furn in all_furniture:
                             furn.build(message=False)
                         all_furniture.append(vitals_scanner)
                         all_furniture.append(billboard)
 
-                "返回上一级菜单":
+                "Back":
                     jump cheat_menu
 
-        "检查图片标签":
+        "Tags":
             menu:
-                "检查缺失的图片 (main)":
+                "Check girls for missing pictures (main)":
 
                     call check_missing_pictures("main") from _call_check_missing_pictures
 
-                "检查缺失的图片 (optional)":
+                "Check girls for missing pictures (optional)":
 
                     call check_missing_pictures("optional") from _call_check_missing_pictures_1
 
 
 
-                "检查没有标签的图片":
+                "Check untagged girl pics":
 
                     "This allows you to check if some girl pics have no usable tags (excluding the 'unused' tag)."
 
@@ -2468,19 +2502,46 @@ label cheat_menu():
                         else:
                             "No picture found missing a tag"
 
-                "检查有无重复的标签":
+                "Check tags for duplicates":
                     python:
                         for tag in tag_dict.keys():
                             for tag2 in tag_dict.keys():
                                 if tag in tag2 and tag != tag2:
-                                    renpy.say("", "Warning: " + tag + " is in " + tag2 + "。")
-                "返回上一级菜单":
-                    jump cheat_menu
-        "其他作弊功能":
+                                    renpy.say("", "Warning: " + tag + " is in " + tag2 + ".")
+
+        "Farm":
+            menu:
+                "Get mojo":
+                    $ MC.raise_mojo("purple", 50, True)
+                
+
+                "Add minion" if debug_mode:
+                    menu:
+                        "Stables":
+                            $ farm.installations["pig stall"].minions.append(Minion("stallion"))
+                        "Pig stall":
+                            $ farm.installations["pig stall"].minions.append(Minion("beast"))
+                        "Monster den":
+                            $ farm.installations["pig stall"].minions.append(Minion("monster"))
+                        "Workshop":
+                            $ farm.installations["pig stall"].minions.append(Minion("machine"))
+
+                "Wound minions":
+                    python:
+                        for mn in farm.get_minions("stallion"):
+                            mn.hurt = True
+
+#                "Set alarms":
+#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "test1"))
+#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "test2"))
+#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "collect_wood"))
+
+
+        "Others":
 
             menu:
 
-                "测试青楼事件" if debug_mode:
+                "Test brothel events" if debug_mode:
                     python:
                         ev_list = []
                         for key, pic_list in security_pics.items():
@@ -2492,14 +2553,14 @@ label cheat_menu():
 
                         call show_night_event(ev) from _call_show_night_event_4
 
-                "改变青楼声望":
+                "Change brothel reputation":
                     $ brothel.rep = int(renpy.input("Brothel reputation", default = brothel.rep))
 
-                "刷新奴隶市场":
+                "Refresh slave market":
                     $ update_slaves()
                     jump slavemarket
 
-                "刷新公告大厅":
+                "Refresh postings":
 
                     $ update_quests()
                     $ selected_girl, available_girls = refresh_quest_girls(selected_girl, selected_quest)
@@ -2507,42 +2568,42 @@ label cheat_menu():
                 "Toggle secret locations":
                     call toggle_secrets from _call_toggle_secrets
 
-                "跳过指定天数":
+                "Skip time":
 
                     $ t = int(renpy.input("How many days do you want to skip", default = 1))
 
                     $ calendar.newday(t)
 
-                "跳转主线章节":
+                "Advance to chapter":
 
                     $ c = int(renpy.input("Advance to chapter", default = game.chapter + 1))
 
-                    $ renpy.call("advance_to_chapter", c, silent=True, free=True)
+                    $ renpy.call("advance_to_chapter", c, silent=True, free=True, start=True)
 
                     jump brothel
 
-                "改变游戏目标":
+                "Change goal":
 
                     menu:
 
-                        "你想在游戏中达成什么样的目标?"
+                        "What type of goal are you going to achieve?"
 
-                        "赚到足够多的钱":
+                        "Raise gold":
                             $ _type = "gold"
                             $ val = int(renpy.input("How much gold will you need?", default = 2500))
                             $ target = 0
 
-                        "晋升你的女孩们":
+                        "Rank up your girls":
                             $ _type = "ranked"
                             $ val = int(renpy.input("Which rank will they need to reach?", default = 2))
                             $ target = renpy.input("How many girls will need to reach that rank?", default = 4)
 
-                        "提高青楼的声望":
+                        "Raise brothel reputation":
                             $ _type = "reputation"
                             $ val = int(renpy.input("How much reputation will you need to get?", default = 250))
                             $ target = 0
 
-                        "提高主角的声望":
+                        "Raise player prestige":
                             $ _type = "prestige"
                             $ val = int(renpy.input("How much prestige will you need to collect?", default = 1000))
                             $ target = 0
@@ -2550,7 +2611,7 @@ label cheat_menu():
                     $ game.goals = (Goal(_type, val, target, channel="advance"),)
                     $ renpy.say(sill, game.get_goal_description(channel="advance"))
 
-                "检查游戏目标" if debug_mode:
+                "Check goals" if debug_mode:
 
                     $ text1 = ""
 
@@ -2570,53 +2631,33 @@ label cheat_menu():
 #                     call repair_safes() from _call_repair_safes
 
 
-                "列出所有可用的剧情事件":
+                "List available story events":
 
                     $ renpy.say("", and_text([ev.label for ev in city_events]))
 
-                "检查激活的青楼增益效果" if debug_mode:
+                "Check active brothel effects" if debug_mode:
                     python:
                         for eff_list in brothel.effect_dict.values():
                             for eff in eff_list:
                                 renpy.say("", eff.type + ", " + eff.target + ", " + str(eff.value))
 
-                "添加指定种类的仆从" if debug_mode:
-                    menu:
-                        "Stables":
-                            $ farm.installations["pig stall"].minions.append(Minion("stallion"))
-                        "Pig stall":
-                            $ farm.installations["pig stall"].minions.append(Minion("beast"))
-                        "Monster den":
-                            $ farm.installations["pig stall"].minions.append(Minion("monster"))
-                        "Workshop":
-                            $ farm.installations["pig stall"].minions.append(Minion("machine"))
 
 
-                "获得指定数量的资源":
+                "Get resources":
                     python:
                         nb = int(renpy.input("How many?", 50))
                         for resource in build_resources:
                             MC.gain_resource(resource, nb, message=False)
 
-                "让你的仆从受伤":
-                    python:
-                        for mn in farm.get_minions("stallion"):
-                            mn.hurt = True
+                "Test special characters":
+                    "✓ [emo_heart] [emo_lightning]"
 
-#                "Set alarms":
-#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "test1"))
-#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "test2"))
-#                    $ calendar.set_alarm(calendar.time + 1, Event(label = "collect_wood"))
-
-                "测试特殊的角色":
-                    "{font=[gui.fuhao]}✓{/font} [emo_heart] [emo_lightning]"
-
-                "返回上一级":
+                "Back":
                     jump cheat_menu
 
             return
 
-        "返回游戏界面":
+        "Nothing":
 
             return
 
@@ -2631,12 +2672,12 @@ label check_missing_pictures(type):
             girl.randomize(force_original=True)
 
     menu:
-        "选择一个选项"
+        "Choose an option"
 
-        "检查所有的女孩图包":
+        "Check all girl packs":
             pass
 
-        "检查特定的女孩图包":
+        "Check a specific girl pack":
             $ girl = long_menu("Select a girl pack", [(" ".join(get_name(girl.path)), girl) for girl in template_girls])
             $ template_girls = [girl]
 
@@ -2748,56 +2789,53 @@ label check_missing_pictures(type):
     return
 
 
-label debug_load_chapter(chapter, c1_path="good"):
+# label debug_load_chapter(chapter, c1_path="good"):
 
-    if not 0 < chapter <= 7:
-        return
+#     python:
+#         if chapter > 6:
+#             district = endless_district
+#             game.blocked_districts = all_districts
+#         else:
+#             district = all_districts[chapter-1]
+#             game.blocked_districts = all_districts[:chapter-1]
 
-    python:
-        if chapter > 6:
-            district = endless_district
-            game.blocked_districts = all_districts
-        else:
-            district = all_districts[chapter-1]
-            game.blocked_districts = all_districts[:chapter-1]
+#         if chapter > 1:
+#             story_flags["c1_path"] = c1_path
+#             extras_dict["locations"] = True
+#             extras_dict["farm"] = True
 
-        if chapter > 1:
-            story_flags["c1_path"] = c1_path
-            extras_dict["locations"] = True
-            extras_dict["farm"] = True
+#             if chapter > 2:
+#                 extras_dict["carpenter"] = True
 
-            if chapter > 2:
-                extras_dict["carpenter"] = True
+#                 if chapter > 6:
+#                     extras_dict["shops"] = 6
+#                     extras_dict["resources"] = 6
+#                 elif chapter > 4:
+#                     extras_dict["shops"] = 4
+#                     extras_dict["resources"] = 4
+#                 else:
+#                     extras_dict["shops"] = 2
+#                     extras_dict["resources"] = 2
+#             else:
+#                 extras_dict["shops"] = 1
+#                 extras_dict["resources"] = 1
 
-                if chapter > 6:
-                    extras_dict["shops"] = 6
-                    extras_dict["resources"] = 6
-                elif chapter > 4:
-                    extras_dict["shops"] = 4
-                    extras_dict["resources"] = 4
-                else:
-                    extras_dict["shops"] = 2
-                    extras_dict["resources"] = 2
-            else:
-                extras_dict["shops"] = 1
-                extras_dict["resources"] = 1
+#             unlocking_extras()
 
-            unlocking_extras()
-
-        bg_bro = "bg brothel" + str(chapter)
-        brothel = copy.deepcopy(blist[chapter])
-        brothel.setup("My Brothel", free_room=district.room)
-        get_starting_furniture(chapter)
+#         bg_bro = "bg brothel" + str(chapter)
+#         brothel = copy.deepcopy(blist[chapter])
+#         brothel.setup("My Brothel", free_room=district.room)
+#         get_starting_furniture(chapter)
 
 
-        for girl in MC.girls:
-            girl.debug_auto_level(chapter)
+#         for girl in MC.girls:
+#             girl.debug_auto_level(chapter)
 
-        calendar.updates()
-        refresh_available_locations()
-        reset_girl_jobs()
+#         calendar.updates()
+#         refresh_available_locations()
+#         reset_girl_jobs()
 
-    return
+#     return
 
 
 label invoke_packstate_log():
@@ -2891,19 +2929,19 @@ label test_perks_menu:
     menu:
         "Testing perks: [perk_text]"
 
-        "女孩: [girl_nb]":
+        "Girls: [girl_nb]":
             $ girl_nb = int(renpy.input("Girl nb", default=girl_nb))
 
-        "持续: [duration] months":
+        "Duration: [duration] months":
             $ duration = int(renpy.input("Duration", default=duration))
 
-        "职业: [jobs]":
+        "Job: [jobs]":
             $ jobs = menu([("Whore", "whore"), ("Waitress", "waitress"), ("Dancer", "dancer"), ("Masseuse", "masseuse"), ("Geisha", "geisha"), ("Cycle jobs", "cycle jobs"), ("Cycle all", "cycle all")])
 
-        "展示事件: [show_ev]":
+        "Show events: [show_ev]":
             $ show_ev = not show_ev
 
-        "开始测试":
+        "GO":
             jump test_perks_launch
 
     jump test_perks_menu
@@ -3000,7 +3038,7 @@ label test_perks_launch:
                             else:
                                 c = Customer(endless_district)
                             cust_list.append(c)
-                            log.add_report(c.name + " came to the brothel. He wants to be attended to by a " + c.wants_entertainment + " and likes " + c.wants_sex_act + "。")
+                            log.add_report(c.name + " came to the brothel. He wants to be attended to by a " + c.wants_entertainment + " and likes " + c.wants_sex_act + ".")
 
                         if girl.job in all_jobs:
                             event_list += perform(girl.job, (girl,), cust_list)
