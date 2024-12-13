@@ -4,7 +4,7 @@
 translate schinese end_day_98ad9d3d:
 
     # "System" "Label: {color=[c_red]}[lbl]{/color} doesn't exist (Custom girl: {color=[c_red]}[girl.path]{/color})."
-    "System" "Label: {color=[c_red]}[lbl]{/color} doesn't exist (Custom girl: {color=[c_red]}[girl.path]{/color})."
+    "系统" "标签: {color=[c_red]}[lbl]{/color} 不存在 (Custom girl: {color=[c_red]}[girl.path]{/color})."
 
 # game/BKendday.rpy:1391
 translate schinese end_day_ea7f72a4:
@@ -16,7 +16,7 @@ translate schinese end_day_ea7f72a4:
 translate schinese end_day_38728340:
 
     # centered "Loading...{nw}"
-    centered "Loading...{nw}"
+    centered "加载中...{nw}"
 
 translate schinese strings:
 
@@ -34,19 +34,19 @@ translate schinese strings:
 
     # game/BKendday.rpy:619
     old " refused to work!{/color} "
-    new " refused to work!{/color} "
+    new " 拒绝工作!{/color} "
 
     # game/BKendday.rpy:620
     old " refused to work!{/color}"
-    new " refused to work!{/color}"
+    new " 拒绝工作!{/color}"
 
     # game/BKendday.rpy:645
     old "The brothel was closed tonight."
-    new "The brothel was closed tonight."
+    new "青楼今晚暂停营业。"
 
     # game/BKendday.rpy:646
     old " was closed tonight, because none of your girls were working.\n"
-    new " was closed tonight, because none of your girls were working.\n"
+    new "今晚暂停营业, 因为没有女孩在工作。\n"
 
     # game/BKendday.rpy:808
     old "All %s customers were attended to while waiting."
