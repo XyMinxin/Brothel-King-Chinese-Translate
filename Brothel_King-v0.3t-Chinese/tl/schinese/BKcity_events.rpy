@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-12-12 18:13
+﻿# TODO: Translation updated at 2024-12-13 16:19
 
 # game/BKcity_events.rpy:9
 translate schinese city_rape_28dc46b8:

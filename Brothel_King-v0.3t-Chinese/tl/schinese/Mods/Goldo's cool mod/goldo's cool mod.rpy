@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-06-04 17:00
+﻿# TODO: Translation updated at 2024-12-13 16:19
 
 # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:37
 translate schinese my_mod_init_be771431:
@@ -132,25 +132,25 @@ translate schinese mymod_justice_b488caad:
     # maya "Here, I think this is yours."
     maya "Here, I think this is yours."
 
-# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:180
+# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:181
 translate schinese mymod_justice_a3753ebb:
 
     # you "Thanks!"
     you "Thanks!"
 
-# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:182
+# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:183
 translate schinese mymod_justice_d24b84d4:
 
     # maya "By the way, she had this on her. Hope you enjoy yourself."
     maya "By the way, she had this on her. Hope you enjoy yourself."
 
-# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:188
+# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:189
 translate schinese mymod_justice_df534ab7:
 
     # "This concludes [mymod.full_name]"
     "This concludes [mymod.full_name]"
 
-# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:190
+# game/Mods/Goldo's cool mod/goldo's cool mod.rpy:191
 translate schinese mymod_justice_98240390:
 
     # "THE END."

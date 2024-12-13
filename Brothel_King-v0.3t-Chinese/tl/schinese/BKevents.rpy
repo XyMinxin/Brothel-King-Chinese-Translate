@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-12-12 18:13
+﻿# TODO: Translation updated at 2024-12-13 16:19
 
 # game/BKevents.rpy:74
 translate schinese before_main_menu_38728340:

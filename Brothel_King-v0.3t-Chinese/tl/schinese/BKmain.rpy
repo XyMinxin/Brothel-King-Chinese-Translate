@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-12-12 18:13
+﻿# TODO: Translation updated at 2024-12-13 16:19
 
 # game/BKmain.rpy:23
 translate schinese slavemarket_0b3d827c:

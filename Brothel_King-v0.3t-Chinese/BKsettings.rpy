@@ -55,7 +55,7 @@ init -10 python:
 
 #### BALANCE / CHEATS ####
 
-    debug = False # Replace this with 'True' for additional cheats and information (recommended for testing)
+    debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)
 
     cheat_modifier = { # Set it at 1.0 for normal play
                         "gold" : 1.0,
