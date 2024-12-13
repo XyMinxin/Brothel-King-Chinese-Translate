@@ -10,8 +10,8 @@ label intro:
 
     $ persistent.seen_intro = True
 
-    $ text1 = Text(('Once upon a time'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
-    $ text2 = Text(('In a far away realm'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="MATURASC.TTF")
+    $ text1 = Text(('Once upon a time'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
+    $ text2 = Text(('In a far away realm'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
 
     show expression text1
     with easeinleft
@@ -85,7 +85,7 @@ label intro:
 
     play music m_theme
 
-    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="MATURASC.TTF")
+    $ title = Text(("Brothel King"), size=80, yalign=0.4, xpos=0.5, drop_shadow=(3,3), font="bk.ttf")
 
     show expression title #Note: Find a way to make the zoom slower and the title cooler
     with zoomin

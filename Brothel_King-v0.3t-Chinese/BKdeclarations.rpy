@@ -19,9 +19,9 @@
 define bk_error = Character("ERROR", color=c_red)
 
 # Special emoji characters not supported by the new font
-define emo_heart = "{font=DejaVuSans.ttf}❤{/font}"
-define emo_lightning = "{font=DejaVuSans.ttf}⚡{/font}"
-define emo_yang = "{font=DejaVuSans.ttf}☯{/font}"
+define emo_heart = "{font=1.ttf}❤{/font}"
+define emo_lightning = "{font=1.ttf}⚡{/font}"
+define emo_yang = "{font=1.ttf}☯{/font}"
 
 ## MC ##
 define you = DynamicCharacter("MC.name", color=c_main)

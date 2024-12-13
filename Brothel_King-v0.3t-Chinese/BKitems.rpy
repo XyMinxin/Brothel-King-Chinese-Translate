@@ -1059,7 +1059,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset-previous), SetLocalVariable("page", page_offset))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "1.ttf"
 
                     for p in range(start, finish):
                         textbutton str(p+1) style "UI_button":
@@ -1082,7 +1082,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             ysize yres(22)
                             action (SetLocalVariable("page_offset", page_offset+next), SetLocalVariable("page", page_offset+next+1))
                             text_size res_font(14)
-                            text_font "DejaVuSans.TTF"
+                            text_font "1.ttf"
 
 
 screen item_profile(it):

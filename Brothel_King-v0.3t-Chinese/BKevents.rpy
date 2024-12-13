@@ -527,7 +527,7 @@ label chapter(chapter = None, silent=False): ## Shows the chapter intro with tex
 
         $ text1 = Text((text1), size=50, yalign=0.4, xpos=0.5, drop_shadow=(2,2))
 
-        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "VIVALDII.TTF")
+        $ text2 = Text((text2), size=64, yalign=0.6, xpos=0.5, drop_shadow=(2,2), font = "DejaVuSans.ttf")
 
         show expression text1
         with easeinleft

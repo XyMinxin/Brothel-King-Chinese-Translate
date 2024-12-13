@@ -474,7 +474,7 @@ screen main_menu():
 
         background "black"
         add gui.main_menu_background
-        text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (xres(2), yres(2)) font "MATURASC.TTF" color c_darkorange
+        text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (xres(2), yres(2)) font "bk.ttf" color c_darkorange
 
         text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(14)
 
@@ -1729,7 +1729,7 @@ style skip_text:
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
     ## glyph in it.
-    font "DejaVuSans.ttf"
+    font "1.ttf"
 
 
 ## Notify screen ###############################################################

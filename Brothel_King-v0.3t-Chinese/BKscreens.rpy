@@ -637,7 +637,7 @@ screen girl_tab(girls, context="girls"):
                 use sorting_tab(context, girls, sorters = all_skills, use_stats=True, small=True)
 
                 frame xsize yres(30) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                    textbutton "↑" text_font "DejaVuSans.TTF" text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(12) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(30) ysize yres(20) idle_background None action SetLocalVariable("sort_view", "normal") tooltip "Go back to other filters."
+                    textbutton "↑" text_font "1.ttf" text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(12) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(30) ysize yres(20) idle_background None action SetLocalVariable("sort_view", "normal") tooltip "Go back to other filters."
 
 
 
@@ -773,7 +773,7 @@ screen girl_tab(girls, context="girls"):
                                     ysize yres(22)
                                     action (SetLocalVariable("page_offset", page_offset-previous), SetLocalVariable("current_page", page_offset))
                                     text_size res_font(14)
-                                    text_font "DejaVuSans.TTF"
+                                    text_font "1.ttf"
 
                             for p in range(start, finish):
                                 textbutton str(p+1) style "UI_button":
@@ -793,7 +793,7 @@ screen girl_tab(girls, context="girls"):
                                     ysize yres(22)
                                     action (SetLocalVariable("page_offset", page_offset+next), SetLocalVariable("current_page", page_offset+next+1))
                                     text_size res_font(14)
-                                    text_font "DejaVuSans.TTF"
+                                    text_font "1.ttf"
 
             else:
                 text "{i}  No girl available  {/i}" size res_font(18) color c_brown
@@ -1125,7 +1125,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 $ text3 = "?"
 
 
-            text text3 size res_font(16) drop_shadow (1, 1) font "maturasc.TTF" xalign 0.05:
+            text text3 size res_font(16) drop_shadow (1, 1) font "DejaVuSans.ttf" xalign 0.05:
                 if girl.original:
                     color c_yellow
 
@@ -1268,7 +1268,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 else:
                     $ text3 = "?"
 
-                text text3 drop_shadow (1, 1) font "maturasc.TTF":
+                text text3 drop_shadow (1, 1) font "DejaVuSans.ttf":
                     if girl.original:
                         color c_yellow
 
@@ -1673,7 +1673,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         background None
                         text_color c_white
                         text_size res_font(20)
-                        text_font "maturasc.TTF"
+                        text_font "DejaVuSans.ttf"
 
                         if context == "girls":
                             action (SetVariable("selected_girl", girl), Return("change_name"))
@@ -2000,7 +2000,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             button xpadding 0 ypadding 0 xmargin 0 ymargin 0 yalign 1.0 background None action NullAction() hovered Show("sex_details", girl=girl) unhovered Hide("sex_details"):
                                 hbox spacing 5:
                                     textbutton text1:
-                                        text_font "DejaVuSans.ttf"
+                                        text_font "1.ttf"
                                         text_size res_font(12)
                                         xsize yres(35)
                                         ysize yres(20)
@@ -2071,7 +2071,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                                         button xpadding 0 ypadding 0 xmargin 0 ymargin 0 background None action NullAction() hovered (Show("sex_details", girl=girl)) unhovered Hide("sex_details"):
                                             tooltip ttip
                                             textbutton text1:
-                                                text_font "DejaVuSans.ttf"
+                                                text_font "1.ttf"
                                                 text_size res_font(12)
                                                 xsize int(config.screen_height*0.0341)
                                                 ysize yres(20)
@@ -2360,10 +2360,10 @@ screen girl_stats_light(girl, x=0.5, y=0.85, panel="left"): # Used to display a 
                     xalign 1.0
 
                 if panel == "left":
-                    text "⟸" font "DejaVuSans.TTF" color c_darkorange bold True
+                    text "⟸" font "1.ttf" color c_darkorange bold True
                 text girl.fullname color c_darkorange bold True
                 if panel == "right":
-                    text "⟹" font "DejaVuSans.TTF" color c_darkorange
+                    text "⟹" font "1.ttf" color c_darkorange
 
             hbox spacing 10 xalign 0.5:
                 grid 3 8:
@@ -2397,7 +2397,7 @@ screen girl_stats_light(girl, x=0.5, y=0.85, panel="left"): # Used to display a 
                                 bold True
 
                         if change:
-                            text "  {font=DejaVuSans.TTF}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14) bold True:
+                            text "  {font=1.ttf}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14) bold True:
                                 if change >= 0:
                                     color c_emerald
                                 else:
@@ -2428,7 +2428,7 @@ screen girl_stats_light(girl, x=0.5, y=0.85, panel="left"): # Used to display a 
                                 bold True
 
                         if change:
-                            text "  {font=DejaVuSans.TTF}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14):
+                            text "  {font=1.ttf}➔{/font}  " + str_int(girl.get_stat(stat.name) + change) size res_font(14):
                                 if change > 0:
                                     color c_emerald
                                 else:
@@ -4236,7 +4236,7 @@ screen brothel():
             $ text1 = "???"
 
         if game.chapter >= 2 or NPC_carpenter.active:
-            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "DejaVuSans.TTF" tooltip "Build furniture to unlock various upgrades for the brothel."
+            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "1.ttf" tooltip "Build furniture to unlock various upgrades for the brothel."
 
         if game.chapter >= 2:
             textbutton __("Customer {u}o{/u}ptions") text_size res_font(18) ysize yres(40) xfill True action Return("open options") tooltip __("Fine-tune your brothel for various customer populations and preferences.")
@@ -4454,7 +4454,7 @@ screen brothel():
                         text "{b}Bedrooms{/b}" size res_font(18) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
                         $ ttip = __("Upgrade all your bedrooms for ") + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + __(" gold. Upgraded bedrooms are more comfortable for girls and customers alike.")
-                        textbutton "▲{image=img_gold}" text_font "DejaVuSans.ttf" ysize yres(24):
+                        textbutton "▲{image=img_gold}" text_font "1.ttf" ysize yres(24):
                             xalign 0.5
                             yalign 0.5
                             text_size res_font(14)
@@ -5162,7 +5162,7 @@ screen home():
                 selected_background Frame("darkorange_button")
 
                 if always_show_brothel_report:
-                    text "✓" font "DejaVuSans.ttf" size res_font(14) xalign 0.5 yalign 0.5
+                    text "✓" font "1.ttf" size res_font(14) xalign 0.5 yalign 0.5
                 else:
                     text " " size res_font(14) xalign 0.5
             text "Show brothel report" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
@@ -6937,7 +6937,7 @@ screen farm_tab():
                                         has hbox spacing xres(3)
                                         add mn.get_pic(*res_tb(20))
                                         text mn.name + ", Lv. " + str(mn.level) size res_font(14) color c_red yalign 0.5
-                                        text "{color=[c_red]}✙{/color}" size res_font(14) font "DejaVuSans.ttf" yalign 0.5
+                                        text "{color=[c_red]}✙{/color}" size res_font(14) font "1.ttf" yalign 0.5
 
                         else:
                             text "Nothing to report." size res_font(14)
@@ -7014,7 +7014,7 @@ screen farm_tab():
                                     if mn.hurt:
                                         color c_red
                                 if mn.hurt:
-                                    text "{color=[c_red]}✙{/color}" size res_font(14) font "DejaVuSans.ttf" yalign 0.5
+                                    text "{color=[c_red]}✙{/color}" size res_font(14) font "1.ttf" yalign 0.5
 
 
 screen mood_details(girl):
@@ -7341,19 +7341,19 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         yfill True
 
         hbox xfill True yalign 0.1:
-            text header xalign 0.0 size res_font(32) font "MATURASC.TTF" color c_black
+            text header xalign 0.0 size res_font(32) font "DejaVuSans.ttf" color c_black
             fixed fit_first True xalign 1.0 yalign 0.5:
                 use close(act=Return(True), name = "close")
 
         text ""
         text ""
 
-        text message size res_font(40) font "SFBurlingtonScript.TTF" color c_black yalign 0.5
+        text message size res_font(40) font "DejaVuSans.ttf" color c_black yalign 0.5
 
         text ""
         text ""
 
-        text signature size res_font(44) font "SFBurlingtonScript.TTF" xalign 1.0 color c_black yalign 0.9
+        text signature size res_font(44) font "DejaVuSans.ttf" xalign 1.0 color c_black yalign 0.9
 
 
 #### RESOURCES ####
@@ -7445,7 +7445,7 @@ screen resource_exchange():
                         button background None action NullAction() tooltip __("There is a shortage of ") + r.capitalize() + __(" this week. Value is going up."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "DejaVuSans.TTF"
+                            text "▲" size res_font(16) color c_emerald yalign 0.5 font "1.ttf"
 
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
@@ -7453,7 +7453,7 @@ screen resource_exchange():
                         button background None action NullAction() tooltip r.capitalize() + __(" is plentiful this week. Value is going down."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
-                            text "▼" size res_font(16) color c_red yalign 0.5 font "DejaVuSans.TTF"
+                            text "▼" size res_font(16) color c_red yalign 0.5 font "1.ttf"
 
 
 
@@ -7488,9 +7488,9 @@ screen resource_exchange():
                             hbox spacing 3:
                                 text resource.name.capitalize() size res_font(18)
                                 if r in calendar.discounted:
-                                    text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.TTF"
+                                    text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
-                                    text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.TTF"
+                                    text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                             hbox spacing 6 xfill True:
                                 text "In storage: " size res_font(14) yalign 1.0
                                 text str(MC.resources[resource.name]) xalign 1.0 size res_font(16)
@@ -7541,9 +7541,9 @@ screen resource_exchange():
                                     hbox spacing 3:
                                         text resource.name.capitalize() size res_font(18)
                                         if r in calendar.discounted:
-                                            text "▼" size res_font(14) yalign 0.5 font "DejaVuSans.TTF"
+                                            text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                         elif r in calendar.scarce:
-                                            text "▲" size res_font(14) yalign 0.5 font "DejaVuSans.TTF"
+                                            text "▲" size res_font(14) yalign 0.5 font "1.ttf"
                                     if resource != source:
                                         hbox spacing 6:
                                             $ rate = get_exchange_rate(source, resource)
@@ -7595,7 +7595,7 @@ screen resource_exchange():
                         color c_red
 
 
-                text "➜" size 54 xalign 0.5 yalign 0.5 font "DejaVuSans.TTF"
+                text "➜" size 54 xalign 0.5 yalign 0.5 font "1.ttf"
 
                 text "[target_nb]" size res_font(32) color c_white xalign 1.0 yalign 0.5
 
@@ -8154,7 +8154,7 @@ screen girl_mix(show_rating=False):
         frame xsize 0.7 yfill True:
             has vbox
 
-            text "Girl Mix" bold True drop_shadow (1, 1) font "maturasc.TTF" xpos xres(6)
+            text "Girl Mix" bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
 
             hbox box_wrap True:
                 for mix_name in sorted(persistent.girl_mix):
@@ -8206,7 +8206,7 @@ screen girl_mix(show_rating=False):
                                         add fast_portrait(gp, *res_tb(70)) xalign 0.5 yalign 0.5
 
                                     vbox xsize xres(360) yalign 0.5:
-                                        text pack_name drop_shadow (1, 1) font "maturasc.TTF" size res_font(18)
+                                        text pack_name drop_shadow (1, 1) font "bk.ttf" size res_font(18)
                                         text "by " + gpinfo_dict[gp]["creator"] drop_shadow (1, 1) size res_font(14) italic True
                                         if show_rating:
                                             text "{size=14}Rating: {/size}" + rating size res_font(18) drop_shadow (1, 1) # drop_shadow_color c_white
@@ -8251,18 +8251,18 @@ screen achievement_notification(achievement_list, replay=False):
 
                 vbox yalign 0.5:
                     hbox spacing xres(6) ysize yres(24):
-                        text achv.get_title(force_level=level) xalign 0.0 size res_font(20) bold True color c_prune # font "vivaldii.TTF"
+                        text achv.get_title(force_level=level) xalign 0.0 size res_font(20) bold True color c_prune # font "DejaVuSans.ttf"
                         null width xres(10)
                         if persistent.new_game_plus:
                             use crystal_display(achv.multi, sz = 18)
-                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                    text achv.get_description(force_level=level) xalign 0.0 size res_font(20) font "DejaVuSans.ttf" color c_brown
     timer 6.5 action Hide("achievement_notification")
 
 screen crystal_display(v, sz=24, prefix=" x "):
 
     hbox yalign 0.5 ysize yres(sz):
         add "misc" fit "contain" yalign 0.0
-        text "{color=#fff}%s{/color}%s" % (prefix, str(v)) size res_font(sz) color c_purple yalign 1.0 bold True font "DejaVuSans.ttf"
+        text "{color=#fff}%s{/color}%s" % (prefix, str(v)) size res_font(sz) color c_purple yalign 1.0 bold True font "1.ttf"
 
 screen achievements(main=False):
 
@@ -8289,12 +8289,12 @@ screen achievements(main=False):
                             if persistent.new_game_plus:
                                 use crystal_display(selected_achievement.multi)
                             text selected_achievement.get_title() xalign 0.0 size res_font(20) bold True color c_prune
-                            text selected_achievement.get_description() xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                            text selected_achievement.get_description() xalign 0.0 size res_font(20) font "DejaVuSans.ttf" color c_brown
 
                         if selected_achievement.level < selected_achievement.level_nb:
                             vbox yalign 0.5:
                                 text "Next unlock:" italic True size res_font(20)
-                                text selected_achievement.get_description(_next=True) xalign 0.0 size res_font(20) font "vivaldii.TTF" color c_brown
+                                text selected_achievement.get_description(_next=True) xalign 0.0 size res_font(20) font "DejaVuSans.ttf" color c_brown
 
             vbox xalign 1.0 yalign 0.0:
                 hbox:
@@ -8384,8 +8384,8 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "The " + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
-                text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
+                text "The " + contract.location.name drop_shadow (1, 1) font "bk.ttf" color c_brown
+                text contract.title drop_shadow (1, 1) font "bk.ttf" color c_prune
 
             vbox spacing 3:
                 add contract.location.get_pic(xres(200), yres(140)) insensitive_alpha 0.33 idle_alpha 0.66 hover_alpha 1.0
@@ -8433,8 +8433,8 @@ screen contract_result(contract, x=450):
         has vbox spacing 12
 
         vbox spacing 3:
-            text "The " + contract.location.name drop_shadow (1, 1) font "maturasc.TTF" color c_brown
-            text contract.title drop_shadow (1, 1) font "maturasc.TTF" color c_prune
+            text "The " + contract.location.name drop_shadow (1, 1) font "bk.ttf" color c_brown
+            text contract.title drop_shadow (1, 1) font "bk.ttf" color c_prune
 
         vbox spacing 3:
             add contract.location.get_pic(xres(200), yres(140)) insensitive_alpha 0.33 idle_alpha 0.66 hover_alpha 1.0
@@ -9088,9 +9088,9 @@ screen micro_transac():
                                 add "misc" xalign 0.5
                                 text "Losers'\nchoice!" align 0.5, 0.5 outlines [(1, "#000", 0, 0)] size res_font(24) at blink(0.5, 0.5)
                             null height yres(10)
-                            text "x100 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "DejaVuSans.ttf"
+                            text "x100 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "1.ttf"
                         frame xfill True yalign 0.9 ysize yres(60) background Frame("orange_button", borders=gui.button_borders):
-                            text "$14.99" font "DejaVuSans.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
+                            text "$14.99" font "1.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
 
                 button xsize xres(200) yfill True action NullAction():
                     vbox xfill True yfill True:
@@ -9100,9 +9100,9 @@ screen micro_transac():
                                 add "misc" xalign 0.75 ypos 0.1
                                 text "Popular\nchoice!!" align 0.5, 0.5 outlines [(1, "#000", 0, 0)] size res_font(24) at shake
                             null height yres(10)
-                            text "x1,000 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "DejaVuSans.ttf"
+                            text "x1,000 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "1.ttf"
                         frame xfill True yalign 0.9 ysize yres(60) background Frame("orange_button", borders=gui.button_borders):
-                            text "$59.99" font "DejaVuSans.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
+                            text "$59.99" font "1.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
 
                 button xsize xres(200) yfill True action NullAction():
                     vbox xfill True yfill True:
@@ -9113,9 +9113,9 @@ screen micro_transac():
                                 add "misc" xalign 0.85 ypos 0.2
                                 text "Best\nvalue!!!" align 0.5, 0.5 outlines [(1, "#000", 0, 0)] size res_font(24) at jitter
                             null height yres(10)
-                            text "x5,000 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "DejaVuSans.ttf"
+                            text "x5,000 P2W Crystals" xalign 0.5 yalign 0.5 bold True font "1.ttf"
                         frame xfill True yalign 0.9 ysize yres(60) background Frame("orange_button", borders=gui.button_borders):
-                            text "$149.99" font "DejaVuSans.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
+                            text "$149.99" font "1.ttf" align 0.5, 0.5 size res_font(32) bold True at repeat_bounce
 
 
     timer 0.001 repeat True:
