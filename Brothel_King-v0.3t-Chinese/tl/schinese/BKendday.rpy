@@ -22,15 +22,15 @@ translate schinese strings:
 
     # game/BKendday.rpy:553
     old "Your brothel's reputation remains stable ("
-    new "Your brothel's reputation remains stable ("
+    new "你的青楼名声没有发生变化 ("
 
     # game/BKendday.rpy:581
     old "{color=[c_pink]}'Mister! Would you like to come and have a look at our wares? *giggles*'{/color}\n"
-    new "{color=[c_pink]}'Mister! Would you like to come and have a look at our wares? *giggles*'{/color}\n"
+    new "{color=[c_pink]}'先生们!欢迎光临，要不要试试我们店里的特色~ *咯咯*'{/color}\n"
 
     # game/BKendday.rpy:607
     old " is working today as a "
-    new " is working today as a "
+    new "今天的工作是"
 
     # game/BKendday.rpy:619
     old " refused to work!{/color} "
@@ -50,73 +50,73 @@ translate schinese strings:
 
     # game/BKendday.rpy:808
     old "All %s customers were attended to while waiting."
-    new "All %s customers were attended to while waiting."
+    new "%s位顾客全都被招待的很到位。"
 
     # game/BKendday.rpy:811
     old "%s customers didn't get attended to and got bored."
-    new "%s customers didn't get attended to and got bored."
+    new "%s位顾客被晾在一旁，十分不爽。"
 
     # game/BKendday.rpy:913
     old "%s customers couldn't get laid and left disappointed."
-    new "%s customers couldn't get laid and left disappointed."
+    new "%s名顾客没人伺候，失望地离开了。"
 
     # game/BKendday.rpy:1017
     old "\nShe refused to use the "
-    new "\nShe refused to use the "
+    new "\n她拒绝使用"
 
     # game/BKendday.rpy:1265
     old "You paid "
-    new "You paid "
+    new "你支付了"
 
     # game/BKendday.rpy:1265
     old " upkeep for your girls"
-    new " upkeep for your girls"
+    new "金币作为女孩的薪水。"
 
     # game/BKendday.rpy:1268
     old " (free upkeep: "
-    new " (free upkeep: "
+    new " (免费保养:"
 
     # game/BKendday.rpy:1272
     old ".\nYou paid "
-    new ".\nYou paid "
+    new "。\n你支付了"
 
     # game/BKendday.rpy:1272
     old " for your brothel services."
-    new " for your brothel services."
+    new "金币作为员工工资。"
 
     # game/BKendday.rpy:1276
     old " was closed, so you sent the security and advertising crews home. You paid "
-    new " was closed, so you sent the security and advertising crews home. You paid "
+    new "暂停营业，所以你让保安和宣传人员回去了。你支付了"
 
     # game/BKendday.rpy:1276
     old " for maintenance."
-    new " for maintenance."
+    new "金币作为青楼的日常开销。"
 
     # game/BKendday.rpy:1291
     old "\nYour girls brought in {image=img_gold_24} "
-    new "\nYour girls brought in {image=img_gold_24} "
+    new "\n你的女孩赚到了{image=img_gold_24} "
 
     # game/BKendday.rpy:1294
     old "income bonus: {image=img_gold_24} "
-    new "income bonus: {image=img_gold_24} "
+    new "盈利: {image=img_gold_24} "
 
     # game/BKendday.rpy:1296
     old "income penalty: {image=img_gold_24} "
-    new "income penalty: {image=img_gold_24} "
+    new "亏损: {image=img_gold_24} "
 
     # game/BKendday.rpy:1314
     old " and "
-    new " and "
+    new "和"
 
     # game/BKendday.rpy:1354
     old ", netting you a profit of {image=img_gold_24} {b}"
-    new ", netting you a profit of {image=img_gold_24} {b}"
+    new ", 获得利润{image=img_gold_24} {b}"
 
     # game/BKendday.rpy:1356
     old ", failing to make a profit. You lost {image=img_gold_24} {b}"
-    new ", failing to make a profit. You lost {image=img_gold_24} {b}"
+    new ", 入不敷出。你亏损了{image=img_gold_24} {b}"
 
     # game/BKendday.rpy:1358
     old ", breaking even. You made {image=img_gold_24} {b}0{/b}."
-    new ", breaking even. You made {image=img_gold_24} {b}0{/b}."
+    new "，收支平衡。你盈利了{image=img_gold_24} {b}0{/b}."
 
