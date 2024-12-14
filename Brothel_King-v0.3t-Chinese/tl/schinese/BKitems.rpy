@@ -260,7 +260,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:312
     old "Butt pump"
-    new "打气筒"
+    new "灌肠器"
 
     # game/BKitems.rpy:312
     old "Anal dildo"
@@ -313,6 +313,8 @@ translate schinese strings:
     # game/BKitems.rpy:312
     old "Lucky charm"
     new "幸运兔脚"
+    old "lucky charm"
+    new "幸运兔脚"
 
     # game/BKitems.rpy:312
     old "It is said to bring luck to its owner. The rabbit it belonged to might disagree..."
@@ -321,21 +323,31 @@ translate schinese strings:
     # game/BKitems.rpy:312
     old "Leather choker"
     new "皮革项圈"
+    old "leather choker"
+    new "皮革项圈"
 
     # game/BKitems.rpy:312
     old "Bronze amulet"
+    new "青铜护身符"
+    old "bronze amulet"
     new "青铜护身符"
 
     # game/BKitems.rpy:312
     old "Silver amulet"
     new "秘银护身符"
+    old "silver amulet"
+    new "秘银护身符"
 
     # game/BKitems.rpy:312
     old "Gold amulet"
     new "黄金护身符"
+    old "gold amulet"
+    new "黄金护身符"
 
     # game/BKitems.rpy:312
     old "Monster pearl necklace"
+    new "魔兽核项链"
+    old "monster pearl necklace"
     new "魔兽核项链"
 
     # game/BKitems.rpy:312
@@ -389,33 +401,49 @@ translate schinese strings:
     # game/BKitems.rpy:312
     old "Bunny ears"
     new "兔耳发饰"
+    old "bunny ears"
+    new "兔耳发饰"
 
     # game/BKitems.rpy:312
     old "Hairpin"
+    new "发簪"
+    old "hairpin"
     new "发簪"
 
     # game/BKitems.rpy:312
     old "Nun veil"
     new "修女面纱"
+    old "nun veil"
+    new "修女面纱"
 
     # game/BKitems.rpy:312
     old "Noh mask"
+    new "艺伎面具"
+    old "noh mask"
     new "艺伎面具"
 
     # game/BKitems.rpy:312
     old "Cat ears"
     new "猫耳发饰"
+    old "cat ears"
+    new "猫耳发饰"
 
     # game/BKitems.rpy:312
     old "Nurse hat"
+    new "护士帽"
+    old "nurse hat"
     new "护士帽"
 
     # game/BKitems.rpy:312
     old "Leather cap"
     new "皮革帽"
+    old "leather cap"
+    new "皮革帽"
 
     # game/BKitems.rpy:312
     old "Maid hat"
+    new "女仆头带"
+    old "maid hat"
     new "女仆头带"
 
     # game/BKitems.rpy:312
@@ -428,7 +456,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:312
     old "Healing powder"
-    new "愈合粉"
+    new "治疗药粉"
 
     # game/BKitems.rpy:312
     old "This mysterious powder from the East will heal a minion's wounds or repair a magical artefact. Side effects may include dizziness, horniness, tentacles sprouting all over body."
@@ -628,11 +656,11 @@ translate schinese strings:
 
     # game/BKitems.rpy:462
     old "M.U. registration scroll"
-    new "魔法学院登记卷轴"
+    new "魔法学院通行证"
 
     # game/BKitems.rpy:462
     old "This scroll gives you access to the Magic University for a week."
-    new "这个卷轴可以让你获得一周进入魔法学院的权限。"
+    new "这个通行证可以让你获得一周访问魔法学院的权限。"
 
     # game/BKitems.rpy:466
     old "Full Power Chaos"
@@ -668,11 +696,11 @@ translate schinese strings:
 
     # game/BKitems.rpy:473
     old "Potion of Seduction"
-    new "诱惑药水"
+    new "魅惑药水"
 
     # game/BKitems.rpy:473
     old "This potion raises the relationship level with any free girl in the city to the next step."
-    new "这个药剂可以提升你与城市中任何自由女孩的关系等级。"
+    new "这瓶药水可以增进你与城中任何一个单身女孩的感情。"
 
     # game/BKitems.rpy:474
     old "Balm of Restoration"
@@ -768,7 +796,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "A subtle drink made of distilled flower petals."
-    new "一种由蒸馏花瓣制成的微妙的饮料。"
+    new "一种由萃取花瓣成分制成的微妙的饮料。"
 
     # game/BKitems.rpy:482
     old "Sexy high heels"
@@ -776,7 +804,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Some women would kill to get their hands on those shoes. Actually,  they're a little blood spattered."
-    new "有些女人会不顾一切得到这双鞋。说实话，它们有点血迹斑斑。"
+    new "有些女人会不顾一切得到这双鞋。说实话，这双鞋上满是女人的血与泪。"
 
     # game/BKitems.rpy:482
     old "Champagne"
@@ -784,7 +812,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "'Le Nouveau Riche': A strong drink; also, a statement that you can afford it."
-    new "'暴发户': 一种烈性酒;这是一种声明，证明你买得起。"
+    new "'暴发户': 一种烈性酒，同时也是一种身份象征，适合高消费人群。"
 
     # game/BKitems.rpy:482
     old "Aphrodisiac"
@@ -797,69 +825,103 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Pretty ring"
     new "精美戒指"
+    old "pretty ring"
+    new "精美戒指"
 
     # game/BKitems.rpy:482
     old "Bronze ring"
+    new "青铜戒指"
+    old "bronze ring"
     new "青铜戒指"
 
     # game/BKitems.rpy:482
     old "Zanic ring"
     new "财富之戒"
+    old "zanic ring"
+    new "财富之戒"
 
     # game/BKitems.rpy:482
     old "Silver ring"
+    new "秘银戒指"
+    old "silver ring"
     new "秘银戒指"
 
     # game/BKitems.rpy:482
     old "Gold ring"
     new "黄金戒指"
+    old "gold ring"
+    new "黄金戒指"
 
     # game/BKitems.rpy:482
     old "Marine ring"
+    new "海风指环"
+    old "marine ring"
     new "海风指环"
 
     # game/BKitems.rpy:482
     old "Iron ring"
     new "精钢指环"
+    old "iron ring"
+    new "精钢指环"
 
     # game/BKitems.rpy:482
     old "Wooden ring"
+    new "橡木指环"
+    old "wooden ring"
     new "橡木指环"
 
     # game/BKitems.rpy:482
     old "Blue ribbon"
     new "蓝色丝带"
+    old "blue ribbon"
+    new "蓝色丝带"
 
     # game/BKitems.rpy:482
     old "Pearl necklace"
+    new "珍珠项链"
+    old "pearl necklace"
     new "珍珠项链"
 
     # game/BKitems.rpy:482
     old "Moon necklace"
     new "新月项链"
+    old "moon necklace"
+    new "新月项链"
 
     # game/BKitems.rpy:482
     old "Ivory necklace"
+    new "象牙项链"
+    old "ivory necklace"
     new "象牙项链"
 
     # game/BKitems.rpy:482
     old "Choker necklace"
     new "奴隶项圈"
+    old "choker necklace"
+    new "奴隶项圈"
 
     # game/BKitems.rpy:482
     old "Dog collar"
+    new "母狗项圈"
+    old "dog collar"
     new "母狗项圈"
 
     # game/BKitems.rpy:482
     old "Silver chain"
     new "银制项圈"
+    old "silver chain"
+    new "银制项圈"
 
     # game/BKitems.rpy:482
     old "Dagger necklace"
     new "兄弟会项链"
+    old "dagger necklace"
+    new "兄弟会项链"
 
     # game/BKitems.rpy:482
     old "Gold bag"
+    new "金币袋"
+    old "gold bag"
     new "金币袋"
 
     # game/BKitems.rpy:482
@@ -869,6 +931,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Jewel bag"
     new "珠宝袋"
+    old "jewel bag"
+    new "珠宝袋"
 
     # game/BKitems.rpy:482
     old "Get extra skill points."
@@ -876,6 +940,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Knowledge scroll"
+    new "知识卷轴"
+    old "knowledge scroll"
     new "知识卷轴"
 
     # game/BKitems.rpy:482
@@ -885,17 +951,25 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Medicine bag"
     new "医疗包"
+    old "medicine bag"
+    new "医疗包"
 
     # game/BKitems.rpy:482
     old "Tonic"
+    new "营养品"
+    old "tonic"
     new "营养品"
 
     # game/BKitems.rpy:482
     old "Wine"
     new "葡萄酒"
+    old "wine"
+    new "葡萄酒"
 
     # game/BKitems.rpy:482
     old "Apple"
+    new "苹果"
+    old "apple"
     new "苹果"
 
     # game/BKitems.rpy:482
@@ -905,29 +979,43 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Pear"
     new "梨子"
+    old "pear"
+    new "梨子"
 
     # game/BKitems.rpy:482
     old "Peach"
+    new "桃子"
+    old "peach"
     new "桃子"
 
     # game/BKitems.rpy:482
     old "Grapes"
     new "葡萄"
+    old "grapes"
+    new "葡萄"
 
     # game/BKitems.rpy:482
     old "Sausage"
+    new "香肠"
+    old "sausage"
     new "香肠"
 
     # game/BKitems.rpy:482
     old "Cheese"
     new "奶酪"
+    old "cheese"
+    new "奶酪"
 
     # game/BKitems.rpy:482
     old "Chicken"
     new "烤鸡"
+    old "chicken"
+    new "烤鸡"
 
     # game/BKitems.rpy:482
     old "Roastbeef"
+    new "烤肉"
+    old "roastbeef"
     new "烤肉"
 
     # game/BKitems.rpy:482
@@ -949,173 +1037,259 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Pink panties"
     new "粉色内裤"
+    old "pink panties"
+    new "粉色内裤"
 
     # game/BKitems.rpy:482
     old "Hot pants"
+    new "超短热裤"
+    old "hot pants"
     new "超短热裤"
 
     # game/BKitems.rpy:482
     old "Lowcut panties"
     new "低腰内裤"
+    old "lowcut panties"
+    new "低腰内裤"
 
     # game/BKitems.rpy:482
     old "Lace panties"
+    new "蕾丝内裤"
+    old "lace panties"
     new "蕾丝内裤"
 
     # game/BKitems.rpy:482
     old "Sexy panties"
     new "情趣内裤"
+    old "sexy panties"
+    new "情趣内裤"
 
     # game/BKitems.rpy:482
     old "Seethrough panties"
+    new "透明内裤"
+    old "seethrough panties"
     new "透明内裤"
 
     # game/BKitems.rpy:482
     old "Chastity belt"
     new "贞操带"
+    old "chastity belt"
+    new "贞操带"
 
     # game/BKitems.rpy:482
     old "Thong"
+    new "丁字裤"
+    old "thong"
     new "丁字裤"
 
     # game/BKitems.rpy:482
     old "Bunny suit"
     new "兔女郎"
+    old "bunny suit"
+    new "兔女郎"
 
     # game/BKitems.rpy:482
     old "Guard uniform"
+    new "女警制服"
+    old "guard uniform"
     new "女警制服"
 
     # game/BKitems.rpy:482
     old "School uniform"
     new "水手服"
+    old "school uniform"
+    new "水手服"
 
     # game/BKitems.rpy:482
     old "bikini"
+    new "比基尼"
+    old "Bikini"
     new "比基尼"
 
     # game/BKitems.rpy:482
     old "Kimono"
     new "和服"
+    old "kimono"
+    new "和服"
 
     # game/BKitems.rpy:482
     old "Swimsuit"
+    new "泳衣"
+    old "swimsuit"
     new "泳衣"
 
     # game/BKitems.rpy:482
     old "Frilly dress"
     new "褶边礼裙"
+    old "frilly dress"
+    new "褶边礼裙"
 
     # game/BKitems.rpy:482
     old "Leather dress"
+    new "紧身皮衣"
+    old "leather dress"
     new "紧身皮衣"
 
     # game/BKitems.rpy:482
     old "Evening gown"
     new "晚礼服"
+    old "evening gown"
+    new "晚礼服"
 
     # game/BKitems.rpy:482
     old "Silk dress"
+    new "丝绸礼裙"
+    old "silk dress"
     new "丝绸礼裙"
 
     # game/BKitems.rpy:482
     old "Pompom uniform"
     new "拉拉队服"
+    old "pompom uniform"
+    new "拉拉队服"
 
     # game/BKitems.rpy:482
     old "Knight uniform"
+    new "女骑士装束"
+    old "knight uniform"
     new "女骑士装束"
 
     # game/BKitems.rpy:482
     old "Black slavekini"
     new "黑色奴隶泳装"
+    old "black slavekini"
+    new "黑色奴隶泳装"
 
     # game/BKitems.rpy:482
     old "Blue slavekini"
+    new "蓝色奴隶泳装"
+    old "blue slavekini"
     new "蓝色奴隶泳装"
 
     # game/BKitems.rpy:482
     old "red slavekini"
     new "红色奴隶泳装"
+    old "Red slavekini"
+    new "红色奴隶泳装"
 
     # game/BKitems.rpy:482
     old "Sunny dress"
+    new "透亮的裙子"
+    old "sunny dress"
     new "透亮的裙子"
 
     # game/BKitems.rpy:482
     old "Revealing dress"
     new "暴露的裙子"
+    old "revealing dress"
+    new "暴露的裙子"
 
     # game/BKitems.rpy:482
     old "Exotic dress"
+    new "花俏的裙子"
+    old "exotic dress"
     new "花俏的裙子"
 
     # game/BKitems.rpy:482
     old "Priestess robe"
     new "教会长袍"
+    old "priestess robe"
+    new "教会长袍"
 
     # game/BKitems.rpy:482
     old "Slutty dress"
+    new "放荡的裙子"
+    old "slutty dress"
     new "放荡的裙子"
 
     # game/BKitems.rpy:482
     old "Seethrough dress"
     new "透明的裙子"
+    old "seethrough dress"
+    new "透明的裙子"
 
     # game/BKitems.rpy:482
     old "Maid uniform"
+    new "女仆装"
+    old "maid uniform"
     new "女仆装"
 
     # game/BKitems.rpy:482
     old "Gym uniform"
     new "体操服"
+    old "gym uniform"
+    new "体操服"
 
     # game/BKitems.rpy:482
     old "Emerald ring"
+    new "祖母绿戒指"
+    old "emerald ring"
     new "祖母绿戒指"
 
     # game/BKitems.rpy:482
     old "Ruby ring"
     new "红宝石戒指"
+    old "ruby ring"
+    new "红宝石戒指"
 
     # game/BKitems.rpy:482
     old "Amber ring"
+    new "黄琥珀戒指"
+    old "amber ring"
     new "黄琥珀戒指"
 
     # game/BKitems.rpy:482
     old "Sapphire ring"
     new "蓝宝石戒指"
+    old "sapphire ring"
+    new "蓝宝石戒指"
 
     # game/BKitems.rpy:482
     old "Scroll of bartending"
+    new "调酒秘方卷轴"
+    old "scroll of bartending"
     new "调酒秘方卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of whirling"
     new "舞蹈窍门卷轴"
+    old "scroll of whirling"
+    new "舞蹈窍门卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of rubbing"
+    new "按摩技法卷轴"
+    old "scroll of rubbing"
     new "按摩技法卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of etiquette"
     new "礼仪之道卷轴"
+    old "scroll of etiquette"
+    new "礼仪之道卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of Onan"
+    new "推油妙诀卷轴"
+    old "scroll of Onan"
     new "推油妙诀卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of Eros"
     new "厄洛斯之卷轴"
+    old "scroll of Eros"
+    new "厄洛斯之卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of Sodom"
     new "索多玛之卷轴"
+    old "scroll of Sodom"
+    new "索多玛之卷轴"
 
     # game/BKitems.rpy:482
     old "Scroll of Gomorrah"
+    new "蛾摩拉之卷轴"
+    old "scroll of Gomorrah"
     new "蛾摩拉之卷轴"
 
     # game/BKitems.rpy:482
@@ -1552,7 +1726,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:595
     old "Devastating Altar of Mana"
-    new "死亡祭坛"
+    new "献祭祭坛"
 
     # game/BKitems.rpy:595
     old "Weapon rack"
@@ -1636,7 +1810,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:909
     old "Click to sort by "
-    new "点击按照 "
+    new "排序规则："
 
     # game/BKitems.rpy:975
     old "\n{i}Equipped{/i}"
