@@ -23106,3 +23106,287 @@ translate schinese strings:
     old "Cum in her mouth"
     new "射在她的嘴里"
 
+# TODO: Translation updated at 2024-12-16 00:33
+
+# game/BKchapter2.rpy:779
+translate schinese c2_intro_c324a089:
+
+    # katryn "We are. But we should split. I have to find the great Magic University, and resume my studies of the dark and forbidden secrets of my order..."
+    katryn "We are. But we should split. I have to find the great Magic University, and resume my studies of the dark and forbidden secrets of my order..."
+
+# game/BKchapter2.rpy:4705
+translate schinese c2_suzume_morning_visit_menu_67b8be09:
+
+    # suzume normal "Honestly, that job was pretty lame. Not a big challenge at all. Any street hoe could give a seventy-year-old court official a heart attack. No offense to your pensioners, of course..."
+    suzume normal "Honestly, that job was pretty lame. Not a big challenge at all. Any street hoe could give a seventy-year-old court official a heart attack. No offense to your pensioners, of course..."
+
+# game/BKchapter2.rpy:5609
+translate schinese intercept_narika_1370103f:
+
+    # narika happy "But you're welcome to join the lo-o-ong line of my admirers. Maybe one day I'll let you shine my boots, if you're a good boy."
+    narika happy "But you're welcome to join the lo-o-ong line of my admirers. Maybe one day I'll let you shine my boots, if you're a good boy."
+
+# game/BKchapter2.rpy:5677
+translate schinese intercept_narika_e95df9bf:
+
+    # narika "I've had, uh... Sexy time... With many men! Sexy time like you wouldn't believe!"
+    narika "I've had, uh... Sexy time... With many men! Sexy time like you wouldn't believe!"
+
+# game/BKchapter2.rpy:5754
+translate schinese intercept_narika_f37377f3:
+
+    # "When you come back to your senses, the Kunoichi is gone. Only the scent of Sakura flowers reminds you of her presence."
+    "When you come back to your senses, the Kunoichi is gone. Only the scent of Sakura flowers reminds you of her presence."
+
+# game/BKchapter2.rpy:6007
+translate schinese intercept_narika_c879b417:
+
+    # narika sad "Why, it's obvious, isn't it? Why do you think these second-rate Kunoichi are heading to this dump of a city..."
+    narika sad "Why, it's obvious, isn't it? Why do you think these second-rate Kunoichi are heading to this dump of a city..."
+
+# game/BKchapter2.rpy:6133
+translate schinese intercept_narika_6969a550:
+
+    # "Narika zooms past you both, laughing like a schoolgirl as she quickly disappears into the distance, leaving only the faint scent of Sakura flowers behind."
+    "Narika zooms past you both, laughing like a schoolgirl as she quickly disappears into the distance, leaving only the faint scent of Sakura flowers behind."
+
+# game/BKchapter2.rpy:6523
+translate schinese c2_narika_H1_fb38562b:
+
+    # narika blush "Where did I hide that damn thing... Ah, here."
+    narika blush "Where did I hide that damn thing... Ah, here."
+
+# game/BKchapter2.rpy:6720
+translate schinese intercept_mizuki_8a75c9d4:
+
+    # mizuki "So. I'm waiting. What's your business with me?"
+    mizuki "So. I'm waiting. What's your business with me?"
+
+# game/BKchapter2.rpy:6731
+translate schinese intercept_mizuki_a38b4424:
+
+    # you "Look, you're a legendary ninja, renowned for your cunning and subtlety..."
+    you "Look, you're a legendary ninja, renowned for your cunning and subtlety..."
+
+# game/BKchapter2.rpy:6773
+translate schinese intercept_mizuki_24b4786f:
+
+    # mizuki happy "A world of trouble? Oh, my dear boy... I've been courting trouble for longer than any man alive can know."
+    mizuki happy "A world of trouble? Oh, my dear boy... I've been courting trouble for longer than any man alive can know."
+
+# game/BKchapter2.rpy:6800
+translate schinese intercept_mizuki_b595698e:
+
+    # mizuki angry "Go now, before I decide keeping you breathing is a waste of my time."
+    mizuki angry "Go now, before I decide keeping you breathing is a waste of my time."
+
+# game/BKchapter2.rpy:6865
+translate schinese intercept_mizuki_a0101987:
+
+    # you "A few decades? How old are you, exactly? You can't be over forty."
+    you "A few decades? How old are you, exactly? You can't be over forty."
+
+# game/BKchapter2.rpy:6957
+translate schinese intercept_mizuki_e2dbe57f:
+
+    # mizuki normal "You don't need to know the details. But know that some people - or rather a certain family - have badly wronged me. And I am here to repay them with extreme prejudice."
+    mizuki normal "You don't need to know the details. But know that some people - or rather a certain family - have badly wronged me. And I am here to repay them with extreme prejudice."
+
+# game/BKchapter2.rpy:6961
+translate schinese intercept_mizuki_c8c4c242:
+
+    # mizuki "Let's leave it at that. I'm only going to tell you this: do not get in my way."
+    mizuki "Let's leave it at that. I'm only going to tell you this: do not get in my way."
+
+# game/BKchapter2.rpy:6963
+translate schinese intercept_mizuki_950de858:
+
+    # mizuki "These people {i}will{/i} die, no matter what you do. Collateral damage be damned."
+    mizuki "These people {i}will{/i} die, no matter what you do. Collateral damage be damned."
+
+# game/BKchapter2.rpy:6972
+translate schinese intercept_mizuki_08056e91:
+
+    # suzume "What?"
+    suzume "What?"
+
+# game/BKchapter2.rpy:7014
+translate schinese intercept_mizuki_82f14ab0:
+
+    # mizuki happy "Fufufu... Magic isn't everything, dear boy..."
+    mizuki happy "Fufufu... Magic isn't everything, dear boy..."
+
+# game/BKchapter2.rpy:7052
+translate schinese intercept_mizuki_59567e90:
+
+    # suzume "Nah... It's already floating away, and I don't do swimming, meow..."
+    suzume "Nah... It's already floating away, and I don't do swimming, meow..."
+
+# game/BKchapter2.rpy:7137
+translate schinese intercept_mizuki_7620ffd6:
+
+    # suzume "Hey! I'm a ninja, not a nurse. I've only seen it in ero mangas."
+    suzume "Hey! I'm a ninja, not a nurse. I've only seen it in ero mangas."
+
+# game/BKchapter2.rpy:7299
+translate schinese mizuki_onsen_a2a3d5c1:
+
+    # mizuki "Or make a penis explode. Pow!"
+    mizuki "Or make a penis explode. Pow!"
+
+# game/BKchapter2.rpy:7303
+translate schinese mizuki_onsen_bd665847:
+
+    # mizuki "So. Now that I have your attention."
+    mizuki "So. Now that I have your attention."
+
+# game/BKchapter2.rpy:7315
+translate schinese mizuki_onsen_ff9df906:
+
+    # mizuki "Well. It was expedient at the time, and expediency is what keeps ninjas alive... But now I want it back."
+    mizuki "Well. It was expedient at the time, and expediency is what keeps ninjas alive... But now I want it back."
+
+# game/BKchapter2.rpy:7321
+translate schinese mizuki_onsen_b0921333:
+
+    # "She squeezes your dick a little harder. You swear that this should stop the blood flow, but instead your cock grows painfully larger."
+    "She squeezes your dick a little harder. You swear that this should stop the blood flow, but instead your cock grows painfully larger."
+
+# game/BKchapter2.rpy:7408
+translate schinese mizuki_onsen_52e222ed:
+
+    # mizuki "Did you know that semen is 99 per cent water? And I'm a master of water magic..."
+    mizuki "Did you know that semen is 99 per cent water? And I'm a master of water magic..."
+
+# game/BKchapter2.rpy:7485
+translate schinese mizuki_onsen_498da1de:
+
+    # "With Sill yelling and raging, you make a prudent escape to your room - trying hard to ignore the customers' strange looks as you cross the brothel butt-naked."
+    "With Sill yelling and raging, you make a prudent escape to your room - trying hard to ignore the customers' strange looks as you cross the brothel butt-naked."
+
+# game/BKchapter2.rpy:9179
+translate schinese c2_palace_visit2_a11a7f03:
+
+    # kuro "Indeed. But there is another possibility... Lady Uesugi, her mother."
+    kuro "Indeed. But there is another possibility... Lady Uesugi, her mother."
+
+# game/BKchapter2.rpy:9183
+translate schinese c2_palace_visit2_48c9582c:
+
+    # kuro "She passed a few years ago. She raised Kenshin all by herself. Her father, Lord Commander Mitsuhide, was... killed, when she was just a child."
+    kuro "She passed a few years ago. She raised Kenshin all by herself. Her father, Lord Commander Mitsuhide, was... killed, when she was just a child."
+
+# game/BKchapter2.rpy:9472
+translate schinese luncheon2_kenshin_menu_f6289877:
+
+    # kenshin normal "The great Lord Commander Mitsuhide Maru abandoned duty and family one night, and just vanished."
+    kenshin normal "The great Lord Commander Mitsuhide Maru abandoned duty and family one night, and just vanished."
+
+# game/BKchapter2.rpy:9486
+translate schinese luncheon2_kenshin_menu_5538eff3:
+
+    # kenshin "Really? Maybe. I don't care. A man can be weak. But a knight? This is unforgivable."
+    kenshin "Really? Maybe. I don't care. A man can be weak. But a knight? This is unforgivable."
+
+# game/BKchapter2.rpy:9490
+translate schinese luncheon2_kenshin_menu_db6fa323:
+
+    # kenshin "Out there? Oh no, he's not."
+    kenshin "Out there? Oh no, he's not."
+
+# game/BKchapter2.rpy:9496
+translate schinese luncheon2_kenshin_menu_8be19ca6:
+
+    # kenshin "Apparently he had been mauled by wild beasts. A fitting end for an animal."
+    kenshin "Apparently he had been mauled by wild beasts. A fitting end for an animal."
+
+# game/BKchapter2.rpy:9502
+translate schinese luncheon2_kenshin_menu_34dc94fe:
+
+    # "Her eyes get shiny."
+    "Her eyes get shiny."
+
+# game/BKchapter2.rpy:9508
+translate schinese luncheon2_kenshin_menu_08f06d01:
+
+    # kenshin "Sorry? Why would you be sorry? You didn't make my father into a filthy coward, he just was like that. I'm better off without him."
+    kenshin "Sorry? Why would you be sorry? You didn't make my father into a filthy coward, he just was like that. I'm better off without him."
+
+# game/BKchapter2.rpy:9516
+translate schinese luncheon2_kenshin_menu_1ab4dda5:
+
+    # kenshin "I won't let his stain on the honor of my mother... My family... stand, even if I have to dedicate my whole life to atone for his sins."
+    kenshin "I won't let his stain on the honor of my mother... My family... stand, even if I have to dedicate my whole life to atone for his sins."
+
+# game/BKchapter2.rpy:9552
+translate schinese luncheon2_kenshin_menu_8c6e74af:
+
+    # kenshin "But she never got to see him again. After we learned of his fate, she was never the same again."
+    kenshin "But she never got to see him again. After we learned of his fate, she was never the same again."
+
+# game/BKchapter2.rpy:9880
+translate schinese c2_unlock_next_brothel_5cf11edd:
+
+    # "After coursing the ninja all the way into [dis_name] district, you follow her a large, empty house, only for her to escape again."
+    "After coursing the ninja all the way into [dis_name] district, you follow her a large, empty house, only for her to escape again."
+
+# game/BKchapter2.rpy:9930
+translate schinese c2_unlock_next_brothel_1a8d7a90:
+
+    # you "It's a pity a nice place like that is in such disrepair. Look at those cobwebs! I don't want to meet the spider that did that... *shiver*"
+    you "It's a pity a nice place like that is in such disrepair. Look at those cobwebs! I don't want to meet the spider that did that... *shiver*"
+
+# game/BKchapter2.rpy:9937
+translate schinese c2_unlock_next_brothel_60ffdfb1:
+
+    # "You head back outside, into the busy streets of [dis_name]."
+    "You head back outside, into the busy streets of [dis_name]."
+
+# game/BKchapter2.rpy:9956
+translate schinese c2_unlock_next_brothel_d5e1f37a:
+
+    # gina "Papa Freak is a brilliant inventor! Not a genius like me, of course, but he knows more about old Cimerian machines than anyone in the city."
+    gina "Papa Freak is a brilliant inventor! Not a genius like me, of course, but he knows more about old Cimerian machines than anyone in the city."
+
+# game/BKchapter2.rpy:9997
+translate schinese c2_meet_papa_freak_9a21bc96:
+
+    # papa_apprentice "Oh no... You're right, the polar compensator will melt... *embarrassed*"
+    papa_apprentice "Oh no... You're right, the polar compensator will melt... *embarrassed*"
+
+# game/BKchapter2.rpy:10010
+translate schinese c2_meet_papa_freak_d0a802e0:
+
+    # you "By the way, you should try and use a soul-charged deviator. That's how we did it at the Karkyr Academy."
+    you "By the way, you should try and use a soul-charged deviator. That's how we did it at the Karkyr Academy."
+
+# game/BKchapter2.rpy:10012
+translate schinese c2_meet_papa_freak_53b22975:
+
+    # papa_apprentice "A deviator... Of course! Why didn't I think about that?"
+    papa_apprentice "A deviator... Of course! Why didn't I think about that?"
+
+# game/BKchapter2.rpy:10022
+translate schinese c2_meet_papa_freak_0f16ee74:
+
+    # papa "That is what we try to do here, me and my apprentice. Keep a bit of the old Cimerian civilization alive, so to say."
+    papa "That is what we try to do here, me and my apprentice. Keep a bit of the old Cimerian civilization alive, so to say."
+
+# game/BKchapter2.rpy:10024
+translate schinese c2_meet_papa_freak_452a263e:
+
+    # you "So the Cimerians are an ancient civilization?"
+    you "So the Cimerians are an ancient civilization?"
+
+# game/BKchapter2.rpy:10184
+translate schinese c2_meet_papa_freak_3a022827:
+
+    # "When you are ready, visit the {b}[NPC_freak.location.name]{/b} to bring Papa Freak the girl of his dreams."
+    "When you are ready, visit the {b}[NPC_freak.location.name]{/b} to bring Papa Freak the girl of his dreams."
+
+# game/BKchapter2.rpy:10533
+translate schinese c3_homura_okiya3_dbe0cfb6:
+
+    # homura "You and me, traveling around the world, facing insurmountable odds... I like that!"
+    homura "You and me, traveling around the world, facing insurmountable odds... I like that!"
+
