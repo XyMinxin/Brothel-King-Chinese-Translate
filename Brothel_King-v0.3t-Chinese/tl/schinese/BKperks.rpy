@@ -222,15 +222,3 @@ translate schinese strings:
     old "The Virgin Whore"
     new "The Virgin Whore"
 
-    # game/BKperks.rpy:151
-    old "Ponygirl"
-    new "Ponygirl"
-
-    # game/BKperks.rpy:153
-    old "Group"
-    new "Group"
-
-    # game/BKperks.rpy:154
-    old "Orgy"
-    new "Orgy"
-

@@ -147,11 +147,11 @@ label init_perks():
 
         ## SPECIAL PERKS ##
 
-        naked_perk = Perk(_("Naturist"), type="sex", effects = [Effect("special", "naked", 1)])
-        pony_perk = Perk(_("Ponygirl"), type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
-        bis_perk = Perk(_("Bisexual"), type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
-        group_perk = Perk(_("Group"), type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
-        orgy_perk = Perk(_("Orgy"), type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
+        naked_perk = Perk("Naturist", type="sex", effects = [Effect("special", "naked", 1)])
+        pony_perk = Perk("Ponygirl", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
+        bis_perk = Perk("Bisexual", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
+        group_perk = Perk("Group", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
+        orgy_perk = Perk("Orgy", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
 
 
 
