@@ -210,3 +210,71 @@ translate schinese strings:
     old "bisexual fetish"
     new "bisexual fetish"
 
+# TODO: Translation updated at 2024-12-15 22:44
+
+translate schinese strings:
+
+    # game/BKinit_variables.rpy:498
+    old "wood"
+    new "wood"
+
+    # game/BKinit_variables.rpy:498
+    old "leather"
+    new "leather"
+
+    # game/BKinit_variables.rpy:498
+    old "dye"
+    new "dye"
+
+    # game/BKinit_variables.rpy:498
+    old "marble"
+    new "marble"
+
+    # game/BKinit_variables.rpy:498
+    old "ore"
+    new "ore"
+
+    # game/BKinit_variables.rpy:498
+    old "silk"
+    new "silk"
+
+    # game/BKinit_variables.rpy:498
+    old "diamond"
+    new "diamond"
+
+    # game/BKinit_variables.rpy:2277
+    old "Zan"
+    new "Zan"
+
+    # game/BKinit_variables.rpy:2277
+    old "the border with the Holy Lands"
+    new "the border with the Holy Lands"
+
+    # game/BKinit_variables.rpy:2277
+    old "the Blood Islands"
+    new "the Blood Islands"
+
+    # game/BKinit_variables.rpy:2277
+    old "Karkyr"
+    new "Karkyr"
+
+    # game/BKinit_variables.rpy:2277
+    old "Westmarch"
+    new "Westmarch"
+
+    # game/BKinit_variables.rpy:2277
+    old "the desert of Hokoma"
+    new "the desert of Hokoma"
+
+    # game/BKinit_variables.rpy:2277
+    old "Borgo, the port city"
+    new "Borgo, the port city"
+
+    # game/BKinit_variables.rpy:2277
+    old "the Goliath desolations"
+    new "the Goliath desolations"
+
+    # game/BKinit_variables.rpy:2277
+    old "the Arik mountains"
+    new "the Arik mountains"
+

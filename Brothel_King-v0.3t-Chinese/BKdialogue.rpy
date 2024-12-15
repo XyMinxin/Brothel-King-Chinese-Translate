@@ -11,6 +11,8 @@
 label dialogue(char, topic, key="generic", custom_arg=False, nw=False, narrator_mode=False): # for Girl objects only. custom_arg is broken for now
     # In narrator_mode, dialogue will be said by the narrator instead of the girl char
     if isinstance(char, Girl):
+        $ char.job_cn = tl_cn(char.job, girl_related_dict)
+        $ MCplayerclass_cn = tl_cn(MC.playerclass, misc_name_dict)
         $ char.say(topic, custom_arg=custom_arg, nw=nw, narrator_mode=narrator_mode) # No key is provided for girls, it is instead generated according to personality and other filters
     else:
         $ pick_dialogue(topic, key=key).say(char, nw=nw)

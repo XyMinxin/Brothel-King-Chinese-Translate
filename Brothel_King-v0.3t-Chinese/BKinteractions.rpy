@@ -1264,7 +1264,7 @@ label slave_train_sex_acts(girl, mode):
 
                 if act not in girl.has_trained:
                     $ girl.has_trained.append(act)
-                    $ girl.track_event("new act", arg=act)
+                    $ girl.track_event("new act", arg=tl_cn(act, long_act_description))
 
                 call slave_train(girl, act, inter.response, mode) from _call_slave_train
 
@@ -1297,7 +1297,7 @@ label slave_train_sex_acts(girl, mode):
             else:
                 "She refuses you."
 
-                $ girl.track_event("refused", arg=act)
+                $ girl.track_event("refused", arg=tl_cn(act, girl_related_dict))
 
                 call dialogue(girl, "slave train refused") from _call_dialogue_168
 

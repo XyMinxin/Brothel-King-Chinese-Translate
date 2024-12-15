@@ -1824,3 +1824,15 @@ translate schinese strings:
     old "Show %s items."
     new "展示 %s 物品。"
 
+# TODO: Translation updated at 2024-12-15 20:54
+
+translate schinese strings:
+
+    # game/BKitems.rpy:312
+    old "Sensual perfume"
+    new "Sensual perfume"
+
+    # game/BKitems.rpy:482
+    old "So you're into these, eh?"
+    new "So you're into these, eh?"
+
