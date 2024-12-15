@@ -15,29 +15,6 @@ label traitking_holidays: # runs yearly, schedules holidays for the year
     $ calendar.set_alarm(calendar.time + (12*28 + 1) -1, StoryEvent(label="traitking_holidays", order = 0, type="morning"))
     
     return
-    
-label traitking_refresh_girls:
-
-    python:
-
-        ## Refresh generated girls
-        game.free_girls = []
-        refresh_available_locations()
-        update_free_girls()
-        cycle_free_girls()
-        update_slaves()
-        update_quests()
-        update_effects()
-        
-        if dice(2) == 1:
-            enemy_general = get_girls(1, free=True, p_traits=["Warrior"])[0]
-        else:
-            enemy_general = get_girls(1, free=True, p_traits=["Caster"])[0]
-
-        enemy_general.love = -50
-    
-    return
-    
 
 label traitking_morning: # morning: triggers as first thing in the day
 # Triggers monthly
@@ -120,11 +97,11 @@ label traitking_day: # day: triggers after morning, but still before player can 
             
                 if girl.nickname["flag2"] == False and not len(girl.traits) > 5:
                     if renpy.random.random() <= 0.02: # 2% chance of discovering the unknown trait per workday
-                        add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = "This girl is hiding something from you."))
+                        add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = _("This girl is hiding something from you.")))
 
                         renpy.say("",__("You suspect that ") + girl.name + __(" is trying to hide something from you."))
         
-            if girl.has_trait("Karkyrian Hymen"): # Karkyrian Hymen trait
+            if girl.has_trait("Karkyrian hymen"): # Karkyrian Hymen trait
             
                 if not girl.has_trait("Virgin"):
                 
@@ -178,6 +155,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                         if i == 0:
                         
                             renpy.say("",girl.name + __(" is a true prodigy. It's as if the tricks of the trade come naturally to her."))
+                            renpy.say("",_("She has intuitively unlocked the perk tree for ") + archetype + _("."))
 
                         i += 1                     
                         girl.unlock_archetype(archetype)
@@ -189,7 +167,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                 
                 renpy.say("",__("Slavers are no longer willing to pay a premium for ") + girl.name + ".")
 
-            if renpy.random.random() <= 0.06 and not girl.free: # In demand trait (add)
+            if renpy.random.random() <= 0.06 and not girl.free: # In demand trait (add) # todo: implement "Fan favorite"
             
                 add_trait_perkless(girl, trait_dict["In demand"])
                 
@@ -1051,7 +1029,7 @@ label undervalued_interact(girl):
 
                                 "Ferocious" : "Ravenous",
                                 "Uninhibited" : "Unleashed",
-                                "Cum Addict" : "Thirsty",
+                                "Cum addict" : "Thirsty",
                                 "Bimbo" : "Slut",
                                 "Pervert" : "Wet",
                                 "for Public use" : "Public",
@@ -1060,7 +1038,7 @@ label undervalued_interact(girl):
                                 "Uncouth" : "Cheap",
                                 "Scruffy" : "Run-down",
                                 "Vulgar" : "Fucking",
-                                "Strong Gag Reflex" : "Choking",
+                                "Strong gag reflex" : "Choking",
                                 "Clumsy" : "Shit",
                                 "Sickly" : "Dead",
                                 "Unlucky" : "Black",
@@ -1074,8 +1052,8 @@ label undervalued_interact(girl):
                                 "Naughty" : "Foxy",
                                 "Submissive" : "Sheepish",
                                 "Meek" : "Shy",
-                                "Fast Orgasms" : "Cum Comet",
-                                "Exotic Tattoo" : "Canvas",
+                                "Fast orgasms" : "Cum comet",
+                                "Exotic tattoo" : "Canvas",
                                 "Disfigured" : "Defaced",
                                 "Frail" : "Broken",
                                 "Paranoid" : "Insane",
@@ -1086,7 +1064,7 @@ label undervalued_interact(girl):
                                 "Trauma" : "Used",
                                 "Scars" : "Struck",
                                 
-                                "Slave Brand" : "Kosmo's",
+                                "Slave brand" : "Kosmo's",
                                 "Lesbian" : "Carpetmunching",
                                 "City girl" : "Gutter",
                                 "Circumcised" : "Cut", 
