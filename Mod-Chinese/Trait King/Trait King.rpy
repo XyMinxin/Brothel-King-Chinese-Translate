@@ -481,10 +481,10 @@ label traitking_early_init:
                 ### NEW IN 0.3
                 Trait(_("Conduct"), verb = "be a", eff1 = Effect("change", "mojo cost", -1), archetype="The Fox", base_description = __("Her body is unusually attuned to mojo.")), #?
 
-                Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "She burns with a fiery energy.", public=False),
-                Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she is - and some customers love that.", public=False),
-                Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "She is a ghost, and cannot be hurt by any normal means.", public=False),
-                Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "It doesn't matter what she does, she'll train harder than anyone else.", public=False),
+                Trait(_("Dynamo"), verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = _("She burns with a fiery energy."), public=False),
+                Trait(_("Lolita"), verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = _("She isn't actually underage, but looks like she is - and some customers love that."), public=False),
+                Trait(_("Ghost"), verb = "be a", effects = [Effect("special", "immune", 1)], base_description = _("She is a ghost, and cannot be hurt by any normal means."), public=False),
+                Trait(_("Stalwart"), verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = _("It doesn't matter what she does, she'll train harder than anyone else."), public=False),
                 
                 # Trait King originals
 
@@ -506,7 +506,7 @@ label traitking_early_init:
                 # Trait King originals
 
                 Trait(_("In demand"), verb = "be", eff1 = Effect("change", "valuation", +200), base_description = __("She's a hot commodity and would fetch a pretty price on the slave market."), public=False),
-                Trait("Fan favorite", verb = "be a", eff1 = Effect("change", "valuation", +350), base_description = "She's extremely popular right now and would fetch a superb price on the slave market.", public=False)
+                Trait(_("Fan favorite"), verb = "be a", eff1 = Effect("change", "valuation", +350), base_description = _("She's extremely popular right now and would fetch a superb price on the slave market."), public=False)
 
         ]
         
@@ -740,13 +740,13 @@ label traitking_early_init:
                 ### NEW IN 0.3
                 Trait(_("Insane"), verb = "be", eff1 = Effect("change", "sanity loss", 1), opposite = "Sane", base_description = __("She's mentally deranged.")),
 
-                Trait("Distrustful", verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting", base_description = "She's unable to trust anyone."),
-                Trait("Spiteful", verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving", base_description = "She has an insatiable desire to hurt those around her."),
+                Trait(_("Distrustful"), verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting", base_description = _("She's unable to trust anyone.")),
+                Trait(_("Spiteful"), verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving", base_description = _("She has an insatiable desire to hurt those around her.")),
 
-                Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
-                Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
-                Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
-                Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
+                Trait(_("Earthbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = _("Will not attack you. Deadly to everyone else."), public=False),
+                Trait(_("Waterbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = _("Will not attack you. Deadly to everyone else."), public=False),
+                Trait(_("Voidbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = _("Will not attack you. Deadly to everyone else."), public=False),
+                Trait(_("Firebound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = _("Will not attack you. Deadly to everyone else."), public=False),
 
                 # Trait King originals
 
