@@ -4,13 +4,13 @@ translate schinese strings:
 
     # game/BKgirlclass.rpy:275
     old "Broken"
-    new "Broken"
+    new "精神崩溃"
 
     # game/BKgirlclass.rpy:278
     old "Nearly broken"
-    new "Nearly broken"
+    new "神志不清"
 
     # game/BKgirlclass.rpy:281
     old "Very frail"
-    new "Very frail"
+    new "非常虚弱"
 
