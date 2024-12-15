@@ -246,20 +246,23 @@ init -4 python:
 
                 }
 
-init -1 python:
+init python:
     
     traitking_template = Mod(
         
                 ## Basic mod information (Important: Version is used to check for new versions of the mod. Failure to update the version number may lead to broken mods and saved games)
-                name = "Trait King",
+                name = "traitking",
                 folder = "Trait King",
                 creator = "_neronero",
-                version = 0.22, # Build 2024-08-27, for BK 0.3t
+                version = 0.25, # Build 2024-09-13, for BK 0.3t
                 pic = "title.webm",
                 description = "Trait King adds more traits and various other features surrounding traits.",
                 
                 ## Mod option menu (access through the Help (click on '?') menu)
                 #help_prompts = [("Activate","traitking_activate"),("Deactivate (experimental)","traitking_revert")],
+                
+                ## Early init label: This will run after the game is started, before the district and brothel is set-up.
+                early_label="traitking_early_init",
                                 
                 ## Init label: This will run when the mod is activated, allowing you to set some variables and events if necessary
                 init_label = "traitking_init",
@@ -352,75 +355,25 @@ init -1 python:
                 if t.name in trait.opposite:
                     return False
 
-        if pos:
-            self.traits.insert(pos, trait)
+        if _pos:
+            self.traits.insert(_pos, trait)
         else:
             self.traits.append(trait)
 
         self.add_effects(trait.effects)
 
         return True
-        
+
+       
 ## This label runs when the mod version number is changed
 label traitking_update:
 
     return
     
-## This label runs when the mod is activated
-label traitking_init:
+label traitking_early_init:
 
     python:
-        try:
-            if traitking_activated == True:
-                
-                renpy.say("","{b}{color=[c_crimson]}Something has gone horribly wrong. Trait King thinks it's already activated, which means you have somehow improperly deactivated it during an active game.{/color}{/b}")
-                
-                renpy.say("","{b}{color=[c_crimson]}Please reload your save and press NO when the game asks you if you want to 'reset this mod'.{/color}{/b}")
-                    
-        except:
-            pass
-            
-        ## Important! It is necessary to copy the mod template to a variable upon initializing it if you would like mod variables to save together with the player's saved game (ie. most cases)
-        traitking = traitking_template
-       
-        ## GIRL GENERATION TRAIT DISTRIBUTIONS
-        ## Original girls will recieve +1 gold traits on top of this. Positive values must be at least gold values + 1
-        
-        traitking_t1_chance = 99 # 1% chance
-        traitking_t1_gold = 2
-        traitking_t1_positive = 3
-        traitking_t1_regular = 0
-
-        traitking_t2_chance = 95 # 4% chance
-        traitking_t2_gold = 1
-        traitking_t2_positive = 3
-        traitking_t2_regular = 0
-                           
-        traitking_t3_chance = 85 # 10% chance
-        traitking_t3_gold = 0
-        traitking_t3_positive = 1
-        traitking_t3_regular = 2
-       
-        traitking_t4_chance = 75 # 10% chance
-        traitking_t4_gold = 0
-        traitking_t4_positive = 3
-        traitking_t4_regular = 0
-       
-        traitking_t5_chance = 55 # 20% chance
-        traitking_t5_gold = 0
-        traitking_t5_positive = 2
-        traitking_t5_regular = 0
-       
-        traitking_t6_chance = 35 # 20% chance
-        traitking_t6_gold = 0
-        traitking_t6_positive = 3
-        traitking_t6_regular = 1
-       
-        traitking_t7_gold = 0 # 35% chance    
-        traitking_t7_positive = 2
-        traitking_t7_regular = 1
-                
-        
+    
         ## GOLD TRAITS
         
         traitking_gold_s = [
@@ -527,6 +480,11 @@ label traitking_init:
                 
                 ### NEW IN 0.3
                 Trait(_("Conduct"), verb = "be a", eff1 = Effect("change", "mojo cost", -1), archetype="The Fox"), #? Subject to change
+
+                Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "She burns with a fiery energy.", public=False),
+                Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she is - and some customers love that.", public=False),
+                Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "She is a ghost, and cannot be hurt by any normal means.", public=False),
+                Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "It doesn't matter what she does, she'll train harder than anyone else.", public=False),
                 
                 # Trait King originals
 
@@ -548,6 +506,7 @@ label traitking_init:
                 # Trait King originals
 
                 Trait(_("In demand"), verb = "be", eff1 = Effect("change", "valuation", +200), base_description = __("She's a hot commodity and would fetch a pretty price on the slave market."))
+                Trait("Fan favorite", verb = "be a", eff1 = Effect("change", "valuation", +350), base_description = "She's extremely popular right now and would fetch a superb price on the slave market.", public=False)
 
         ]
         
@@ -730,6 +689,7 @@ label traitking_init:
         ]
 
         traitking_pos_traits = traitking_pos_s + traitking_pos_a + traitking_pos_b + traitking_pos_c + traitking_pos_special
+        
 
         ## NEGATIVE TRAITS
         
@@ -780,8 +740,13 @@ label traitking_init:
                 ### NEW IN 0.3
                 Trait(_("Insane"), verb = "be", eff1 = Effect("change", "sanity loss", 1), opposite = "Sane"),
 
-                Trait(_("Distrustful"), verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting"),
-                Trait(_("Spiteful"), verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving"),
+                Trait("Distrustful", verb = "be", eff1 = Effect("change", "fear per day", 1, chance=0.25), opposite = "Trusting", base_description = "She's unable to trust anyone."),
+                Trait("Spiteful", verb = "be", eff1 = Effect("change", "love per day", -1, chance=0.25), opposite = "Loving", base_description = "She has an insatiable desire to hurt those around her."),
+
+                Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
+                Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
+                Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
+                Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 6)], base_description = "Will not attack you. Deadly to everyone else.", public=False),
 
                 # Trait King originals
 
@@ -1413,7 +1378,7 @@ label traitking_init:
                 "Vivified" : Trait(_("Awakened"), verb = "be", effects=[Effect("change", "constitution", -20), Effect("change", "valuation", +600)], base_description = __("People believe that she is an unnatural being, conjured up by a magician. Collectors from all over Xeros are interested in obtaining and studying her.")),
 
                         }
-        
+
         neg_traits_fixable = []
         
         for trait in traitking_neg_traits:
@@ -1421,55 +1386,18 @@ label traitking_init:
                 neg_traits_fixable += [trait]
 
         neg_traits_fix = [t for o, t in traitking_neg_evolved.items()]
-
-        trait_dict = {}
-
-        for trait in gold_traits + pos_traits + neg_traits + neg_traits_fix:
-            trait_dict[trait.name] = trait
         
-        removed_gold_trait_dict = []
-        removed_pos_trait_dict = []
-        removed_neg_trait_dict = []
-
         for trait in traitking_gold_traits:
-
-            # Check if new traits are replacing existing traits that should be removed first       
-            if trait.name in gold_traits:       
-
-                removed_gold_trait_dict[trait.name] = gold_traits[trait] # Store trait to make deactivating mod possible 
-                gold_trait_dict.pop(trait.name) # Remove trait from gold dictionary        
-                trait_dict.pop(trait.name) # Remove trait from general dictionary
-                
-            # Add new trait to dictionaries
-            gold_trait_dict[trait.name] = trait
-            gold_traits += [trait]
-            trait_dict[trait.name] = trait
+            register_trait(trait, type="gold")
         
         for trait in traitking_pos_traits:
+            register_trait(trait, type="pos")
 
-            # Check if new traits are replacing existing traits that should be removed first       
-            if trait.name in pos_traits:       
-
-                removed_pos_trait_dict[trait.name] = pos_traits[trait] # Store trait to make deactivating mod possible 
-                pos_traits.pop(trait.name) # Remove trait from pos dictionary        
-                trait_dict.pop(trait.name) # Remove trait from general dictionary
-                
-            # Add new trait to dictionaries
-            pos_traits += [trait]
-            trait_dict[trait.name] = trait
-            
         for trait in traitking_neg_traits:
+            register_trait(trait, type="neg")
 
-            # Check if new traits are replacing existing traits that should be removed first       
-            if trait.name in neg_traits:       
-
-                removed_neg_trait_dict[trait.name] = neg_traits[trait] # Store trait to make deactivating mod possible 
-                neg_traits.pop(trait.name) # Remove trait from neg dictionary        
-                trait_dict.pop(trait.name) # Remove trait from general dictionary
-                
-            # Add new trait to dictionaries
-            neg_traits += [trait]
-            trait_dict[trait.name] = trait
+        for trait in neg_traits_fix:
+            register_trait(trait, type="neg")
             
         expensive_trait = trait_dict["Expensive"]
         clumsy_trait = trait_dict["Clumsy"]
@@ -1482,20 +1410,45 @@ label traitking_init:
         trauma_trait = trait_dict["Trauma"] = Trait(_("Trauma"), verb="have a", effects = [Effect("change", "obedience", 20), Effect("gain", "negative fixation", 2), Effect("boost", "fear", 0.5)], base_description = __("She lost her virginity against her will, and has to live with the trauma."))
         farmgirl_trait = trait_dict["Farmgirl"] = Trait(_("Farmgirl"), verb="be a", effects = [Effect("change", "fetish", 20), Effect("boost", "farm preference increase", 0.25), Effect("boost", "customer penalties", 0.1)], base_description = __("She has lost her virginity in the farm like a filthy animal."))
 
-        ## STORY GIRLS TRAITS ##
-
-        trait_dict["Dynamo"] = Trait(_("Dynamo"), verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = __("Burns with fiery energy."))
-        trait_dict["Lolita"] = Trait(_("Lolita"), verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = __("She isn't actually underage, but looks like she does - and some customers love that."))
-        trait_dict["Ghost"] = Trait(_("Ghost"), verb = "be a", effects = [Effect("special", "immune", 1)], base_description = __("She is a ghost, and cannot be hurt by any normal means."))
-        trait_dict["Stalwart"] = Trait(_("Stalwart"), verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = __("It doesn't matter what she does, she'll train harder than anyone else."))
-
-        trait_dict["Firebound"] = Trait(_("Firebound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = __("Will not attack you. Deadly to everyone else."))
-        trait_dict["Voidbound"] = Trait(_("Voidbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = __("Will not attack you. Deadly to everyone else."))
-        trait_dict["Waterbound"] = Trait(_("Waterbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = __("Will not attack you. Deadly to everyone else."))
-        trait_dict["Earthbound"] = Trait(_("Earthbound"), verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = __("Will not attack you. Deadly to everyone else."))
+        ## Important! It is necessary to copy the mod template to a variable upon initializing it if you would like mod variables to save together with the player's saved game (ie. most cases)
+        traitking = traitking_template
+       
+        ## GIRL GENERATION TRAIT DISTRIBUTIONS
+        ## Original girls will recieve +1 gold traits on top of this. Positive values must be at least gold values + 1
         
-        # schedule initializing operations
-        #calendar.set_alarm(calendar.time, StoryEvent(label="traitking_refresh_girls", type="morning"))
+        traitking_t1_chance = 99 # 1% chance
+        traitking_t1_gold = 2
+        traitking_t1_positive = 3
+        traitking_t1_regular = 0
+
+        traitking_t2_chance = 95 # 4% chance
+        traitking_t2_gold = 1
+        traitking_t2_positive = 3
+        traitking_t2_regular = 0
+                           
+        traitking_t3_chance = 85 # 10% chance
+        traitking_t3_gold = 0
+        traitking_t3_positive = 1
+        traitking_t3_regular = 2
+       
+        traitking_t4_chance = 75 # 10% chance
+        traitking_t4_gold = 0
+        traitking_t4_positive = 3
+        traitking_t4_regular = 0
+       
+        traitking_t5_chance = 55 # 20% chance
+        traitking_t5_gold = 0
+        traitking_t5_positive = 2
+        traitking_t5_regular = 0
+       
+        traitking_t6_chance = 35 # 20% chance
+        traitking_t6_gold = 0
+        traitking_t6_positive = 3
+        traitking_t6_regular = 1
+       
+        traitking_t7_gold = 0 # 35% chance    
+        traitking_t7_positive = 2
+        traitking_t7_regular = 1
 
         # schedule recurring trait king events
         calendar.set_alarm(calendar.time + 28, StoryEvent(label="traitking_morning", type="morning"))
@@ -1505,95 +1458,10 @@ label traitking_init:
         # schedule holidays
         renpy.call("traitking_holidays")        
 
-        traitking_activated = True
-        
     return
-            
-            
-label traitking_activate:
-            
-    if traitking_activated == True:
     
-        "Trait King is already activated."
-        
-    else:
-        
-        "Activating Trait King."
-        call traitking_init
-        
-    return
-        
-label traitking_revert: # This process could be made a bit less 'destructive' but it's not a priority for now.
-            
-    if traitking_activated != True:
-    
-        "Trait King is not active. You can safely remove the mod and continue your current playthrough."
-        
-    else:
-        
-        "Although deactivating Trait King during an active playthrough is not recommended, this operation allows you to do so."
-        
-        "All traits and changes associated with this mod will be removed from the game, including purging them from all existing girls. Continue?"
-        
-    menu: 
 
-        "Yes":
-        
-            python:
-            
-                # Remove Trait King traits and restore removed vanilla traits
-                
-                trait_dict = [traits for traits in gold_traits + pos_traits + neg_traits if traits not in traitking_gold_traits + traitking_pos_traits + traitking_neg_traits]
-
-                gold_traits = [traits for traits in gold_traits if traits not in traitking_gold_traits]
-                
-                for trait in removed_gold_trait_dict:
-
-                        gold_trait_dict[trait.name] = trait
-                        trait_dict[trait.name] = trait
-
-                pos_traits = [traits for traits in pos_traits if traits not in traitking_pos_traits]
-
-                for trait in removed_pos_trait_dict:
-                
-                        # pos_trait_dict[trait.name] = trait
-                        trait_dict[trait.name] = trait
-
-                neg_traits = [traits for traits in neg_traits if traits not in traitking_neg_traits]
-
-                for trait in removed_neg_trait_dict:
-                
-                        # neg_trait_dict[trait.name] = trait
-                        trait_dict[trait.name] = trait
-
-
-                # Purge removed traits from existing girls
-
-                girl_list = MC.girls + slavemarket.girls + game.free_girls + MC.escaped_girls + farm.girls
-                if isinstance(enemy_general, Girl):
-                    girl_list += [enemy_general]
-
-                for girl in girl_list:
-
-                    for trait in girl.traits:
-                    
-                        if trait not in trait_dict:
-                        
-                            girl.remove_trait(trait)
-                            
-                            continue
-                            
-                # init_traits()
-                # update_quests()
-                # update_effects()
-                
-                traitking_activated = False
-            
-            "Trait King has been deactivated."
-                    
-        "No":
-        
-            return
+label traitking_init:
 
     return
     
