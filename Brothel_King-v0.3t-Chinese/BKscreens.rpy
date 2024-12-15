@@ -5821,7 +5821,7 @@ screen quick_start(def_panel = "MC"):
                             for stat in all_MC_stats:
                                 button background None action NullAction() tooltip MC_stat_description[stat]:
                                     vbox xsize xres(100):
-                                        text MC_stat_color[stat] % __(stat.capitalize()) size res_font(18) xalign 1.0
+                                        text MC_stat_color[stat] % __(tl_cn(stat.capitalize(), misc_name_dict)) size res_font(18) xalign 1.0
                                         text MC_stat_color[stat] % int(MC.get_stat(stat, raw=True) + NGP_settings_dict[stat].get()) size res_font(24) xalign 1.0
 
                 # hbox spacing 20 xalign 0.5:
@@ -6017,7 +6017,7 @@ screen quick_start(def_panel = "MC"):
                 add Picture(path=god_pics[MC.god]).get(*res_tb(50)) xalign 0.0 yalign 0.5
 
                 vbox spacing 10 xalign 0.5 yalign 0.5:
-                    text __("{b}%s, %s{/b} ({b}%s{/b}) - {b}%s{/b} difficulty") % (MC.name, __(MC.playerclass), str(MC.god), __(game.diff.capitalize())) color c_prune size res_font(18)
+                    text __("{b}%s, %s{/b} ({b}%s{/b}) - {b}%s{/b} difficulty") % (MC.name, __(tl_cn(MC.playerclass, misc_name_dict)), tl_cn(str(MC.god), misc_name_dict), __(tl_cn(game.diff.capitalize(), misc_name_dict))) color c_prune size res_font(18)
                     if game.achievements:
                         text "Achievements will be enabled for this game." italic True color c_emerald size res_font(18)
                     else:

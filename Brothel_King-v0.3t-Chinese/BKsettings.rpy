@@ -514,7 +514,7 @@ init -10 python:
                         "Necklace" : "项链",
                         "necklace" : "项链",
 
-                    ## 难度 ##
+                    ## 游戏难度 ##
                         "Very easy" : "非常容易",
                         "very easy" : "非常容易",
                         "Easy" : "容易",
@@ -527,6 +527,15 @@ init -10 python:
                         "lnsane" : "疯狂",
                         "Custom" : "自定义",
                         "custom" : "自定义",                     
+
+                    ## 玩家职业 ##
+                        "Warrior" : "战士",
+                        "Wizard" : "法师",
+                        "Trader" : "商人",
+
+                    ## 玩家信仰 ##
+                        "Arios" : "太阳神",
+                        "Shalia" : "莎莉娅",
 
                     ## 玩家属性 ##
                         "Strength" : "力量",
@@ -642,16 +651,6 @@ init -10 python:
                         "nobles" : "贵族阶级",
                         "Royals" : "皇亲国戚",
                         "royals" : "皇亲国戚",
-
-                    ## 天赋树名称 ##
-                        "The Maid" : "女仆",
-                        "The Player" : "优伶",
-                        "The Model" : "模特",
-                        "The Courtesan" : "花魁",
-                        "The Escort" : "伴游",
-                        "The Fox" : "狐娘",
-                        "The Slut" : "荡妇",
-                        "The Bride" : "新娘",
 
                     ## 资源名称 ##
                         "Gold" : "金币",
