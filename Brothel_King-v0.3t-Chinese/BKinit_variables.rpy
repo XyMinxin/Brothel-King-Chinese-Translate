@@ -2678,13 +2678,11 @@ init -4 python:
     ## PRICES ##
 
     special_quest_description = {
-                                "Cheap" : "This class is cheap. Enroll now and benefit from better prices!",
-                                "Masterclass" : "This class is taught by a master. Stats will increase faster than normal.",
-                                "High reward" : "The rewards for this quest are more important than usual.",
-                                "Notorious" : "This quest will bring extra reputation when completed.",
-                                "Story" : "Complete this quest to advance the story.",
-                                "story" : "Complete this quest to advance the story.",
-                                }
+                                 "折扣价" : "新人注册享受优惠。千万别错过!",
+                                 "大师班" : "大师亲自指导。一节更比七节强！",
+                                 "高报酬" : "完成这个委托将获得更多的报酬！",
+                                 "高难度" : "完成这个委托将获得更多的声望！"
+                                 }
 
     quest_base_gold = { # This the gold value per stat point of requirement and per day
                         "normal" : 1,
