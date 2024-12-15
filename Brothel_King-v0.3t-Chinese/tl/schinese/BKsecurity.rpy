@@ -42,7 +42,7 @@ translate schinese security_29f7943f:
     # "With righteous fury, you cut down your opponent before he has a chance to react.\n{color=[c_green]}[girl.name] is safe.{/color}"
     "满怀正义的愤怒，你在对手有机会做出反应之前就把他砍倒了。\n{color=[c_green]}[girl.name]安全了。{/color}"
 
-# game/BKsecurity.rpy:165
+# game/BKsecurity.rpy:166
 translate schinese security_3a5817a1:
 
     # "Your opponent strikes the air out of you with a mighty blow from [hit]. You are sent flying backwards. Your head hits something hard."
@@ -484,7 +484,7 @@ translate schinese security_8b6e18d7:
 translate schinese security_e1290c35:
 
     # "Your men found something [enemy_general.fullname], the enemy general left behind."
-    "Your men found something [enemy_general.fullname], the enemy general left behind."
+    "你的部下发现了[enemy_general.fullname]，她没能及时撤退。"
 
 # game/BKsecurity.rpy:741
 translate schinese security_11fdb519:
@@ -780,109 +780,109 @@ translate schinese enemy_general_captured_17421a6e:
     # you "Well well... A woman with such spirit would be a perfect sacrifice for the demon lords of the blood islands..."
     you "好吧，好吧... 一个充满魔力的女人是鲜血群岛的恶魔领主的完美祭品..."
 
-# game/BKsecurity.rpy:1101
+# game/BKsecurity.rpy:1088
 translate schinese enemy_general_captured_ef0515a5:
 
     # enemy_general.char "No!!! You can't be serious! *panic*"
     enemy_general.char "不要!!! 你一定是在开玩笑! *惊恐*"
 
-# game/BKsecurity.rpy:1103
+# game/BKsecurity.rpy:1090
 translate schinese enemy_general_captured_16619f94:
 
     # you "Oh, but I am. Sill, take her to the blood slavers' galley. I never want to hear from that bitch again."
     you "哦，这可不是开玩笑。希露，把她关进奴隶贩子的笼子。我不想再听到那个贱人的声音了。"
 
-# game/BKsecurity.rpy:1111
+# game/BKsecurity.rpy:1098
 translate schinese enemy_general_captured_07b66ad2:
 
     # you "I'll let you go with a warning: leave town, and never come back."
     you "我可以放你走，但你给我记住了:滚出这里，永远不要回来。"
 
-# game/BKsecurity.rpy:1115
+# game/BKsecurity.rpy:1102
 translate schinese enemy_general_captured_0ef42837:
 
     # enemy_general.char "You... Really? Can I go?"
     enemy_general.char "你... 你说的是真的?你愿意放我走?"
 
-# game/BKsecurity.rpy:1117
+# game/BKsecurity.rpy:1104
 translate schinese enemy_general_captured_6f7bc476:
 
     # you "Yes, if you promise not to cause more trouble."
     you "是的，如果你承诺以后不会再犯。"
 
-# game/BKsecurity.rpy:1119
+# game/BKsecurity.rpy:1106
 translate schinese enemy_general_captured_64d9bf4f:
 
     # enemy_general.char "Very well, then, you have my word. I will leave Zan."
     enemy_general.char "太好了,一言为定。 我马上就收拾东西滚出泽恩。"
 
-# game/BKsecurity.rpy:1632
+# game/BKsecurity.rpy:1622
 translate schinese kidnap_tip_0b240c9e:
 
     # man "Psst, Captain!"
     man "嘘，船长!"
 
-# game/BKsecurity.rpy:1634
+# game/BKsecurity.rpy:1624
 translate schinese kidnap_tip_0b778190:
 
     # "A dodgy man is calling you from the shadows of the tavern where you stopped to get a quick drink."
     "你在酒馆没有光亮的阴影处点了一杯酒解渴，一个狡猾的家伙朝你示意。"
 
-# game/BKsecurity.rpy:1636
+# game/BKsecurity.rpy:1626
 translate schinese kidnap_tip_4671fbd2:
 
     # you "Sorry mate, I'm not recruiting... Not the likes of you, anyway."
     you "抱歉，伙计，我不招人...至少不招你这样的人。"
 
-# game/BKsecurity.rpy:1638
+# game/BKsecurity.rpy:1628
 translate schinese kidnap_tip_4db04105:
 
     # man "Arr, but ye'll be sorry if ye don't listen. Remember sweet little [girl.fullname]?"
     man "啊，不听你可能会后悔的。还记得可爱的小[girl.fullname]吗?"
 
-# game/BKsecurity.rpy:1640
+# game/BKsecurity.rpy:1630
 translate schinese kidnap_tip_f4fadbf1:
 
     # "You stop in your tracks and give him a chilling look."
     "你停下脚步，冷冷地看了他一眼。"
 
-# game/BKsecurity.rpy:1642
+# game/BKsecurity.rpy:1632
 translate schinese kidnap_tip_89c009f7:
 
     # man "Hey, no need to give me {i}that{/i} look. I ain't with the fellas that took her."
     man "嘿, 别用{i}那种{/i}眼神看我。我和绑架她的人不是一伙的。"
 
-# game/BKsecurity.rpy:1644
+# game/BKsecurity.rpy:1634
 translate schinese kidnap_tip_9c6e503b:
 
     # you "Good for you... Speak then, if you know something."
     you "你最好不是... 说吧, 你都知道些什么。"
 
-# game/BKsecurity.rpy:1646
+# game/BKsecurity.rpy:1636
 translate schinese kidnap_tip_b311a25b:
 
     # man "I will, I will, but there's this terrible thirst in my throat... Plus this small coin I owe the red sea pirates, a trifle really, but they's pretty pissed about it..."
     man "我会的，我会的，但是现在喉咙好干好渴啊...再加上我欠血海海盗一点小钱，就一点点，但他们很生气..."
 
-# game/BKsecurity.rpy:1648
+# game/BKsecurity.rpy:1638
 translate schinese kidnap_tip_fa9b38dc:
 
     # you "*sigh* How much?"
     you "*叹气* 你要多少钱?"
 
-# game/BKsecurity.rpy:1650
+# game/BKsecurity.rpy:1640
 translate schinese kidnap_tip_24238d43:
 
     # man "Well, we's talking about a rank [rk] chick here... Let's say [price] denars. A bargain for such information."
     man "好吧, 关于我提到的这个[rk]阶的小妞... [price]金币如何。作为情报费来说已经很优惠了。"
 
-# game/BKsecurity.rpy:1652
+# game/BKsecurity.rpy:1642
 translate schinese kidnap_tip_11fdb519:
 
     # extend "" nointeract
     extend "" nointeract
 
-# game/BKsecurity.rpy:1654
+# game/BKsecurity.rpy:1644
 translate schinese kidnap_tip_4643fa54:
 
     # "Frowning, you throw the shady man a bag of coins."
@@ -894,355 +894,355 @@ translate schinese kidnap_tip_93086ceb:
     # you "I don't have the coin right now. Stay put."
     you "我身上没带这么多钱，在这等着我。"
 
-# game/BKsecurity.rpy:1664
+# game/BKsecurity.rpy:1654
 translate schinese kidnap_tip_67de6d2d:
 
     # man "Well... You know where to find me."
     man "没问题... 你知道在哪能找到我。"
 
-# game/BKsecurity.rpy:1669
+# game/BKsecurity.rpy:1659
 translate schinese kidnap_tip_d9494cbc:
 
     # man "Well, I wouldn't count on that... Have it your way, friend."
     man "嗯，我可不指望...随你的便，朋友。"
 
-# game/BKsecurity.rpy:1679
+# game/BKsecurity.rpy:1669
 translate schinese kidnap_tip_f7939efc:
 
     # man "I have information about [girl.fullname] for [price] gold. Interested?"
     man "我有关于[girl.fullname]的情报，只要[price]金币。 有兴趣吗?"
 
-# game/BKsecurity.rpy:1681
+# game/BKsecurity.rpy:1671
 translate schinese kidnap_tip_11fdb519_1:
 
     # extend "" nointeract
     extend "" nointeract
 
-# game/BKsecurity.rpy:1684
+# game/BKsecurity.rpy:1674
 translate schinese kidnap_tip_4643fa54_1:
 
     # "Frowning, you throw the shady man a bag of coins."
     "你皱着眉头，扔给那个阴影中的人一袋钱。"
 
-# game/BKsecurity.rpy:1692
+# game/BKsecurity.rpy:1682
 translate schinese kidnap_tip_93086ceb_1:
 
     # you "I don't have the coin right now. Stay put."
     you "我身上没带这么多钱，在这等着我。"
 
-# game/BKsecurity.rpy:1694
+# game/BKsecurity.rpy:1684
 translate schinese kidnap_tip_67de6d2d_1:
 
     # man "Well... You know where to find me."
     man "没问题... 你知道在哪能找到我。"
 
-# game/BKsecurity.rpy:1699
+# game/BKsecurity.rpy:1689
 translate schinese kidnap_tip_d9494cbc_1:
 
     # man "Well, I wouldn't count on that... Have it your way, friend."
     man "嗯，我可不指望...随你的便，朋友。"
 
-# game/BKsecurity.rpy:1707
+# game/BKsecurity.rpy:1697
 translate schinese kidnap_tip_cd15ccdf:
 
     # man "Thank you, kind sir!"
     man "太感谢了,您可真大方!"
 
-# game/BKsecurity.rpy:1709
+# game/BKsecurity.rpy:1699
 translate schinese kidnap_tip_4afd0488:
 
     # man "Right then. [girl.name] was captured by [girl.kidnapper]. I know where their lair is..."
     man "说回正题。 [girl.name]被[girl.kidnapper]抓走了。我知道他们的地牢在哪..."
 
-# game/BKsecurity.rpy:1716
+# game/BKsecurity.rpy:1706
 translate schinese kidnap_tip_7423ebaa:
 
     # "The man showed you where to find [girl.fullname] near the {b}[loc.name]{/b}."
     "男人指出[girl.fullname]被关押在{b}[loc.name]{/b}附近。"
 
-# game/BKsecurity.rpy:1725
+# game/BKsecurity.rpy:1715
 translate schinese kidnap_rescue_62968ca6:
 
     # "You reach the [loc]. This is where [girl.fullname] is being held."
     "你火速前往[loc]。这里就是[girl.fullname]被关押的地方。"
 
-# game/BKsecurity.rpy:1736
+# game/BKsecurity.rpy:1727
 translate schinese kidnap_rescue_5c5d18ea:
 
     # "Following your informer's directions, you start looking for the entrance of the lair where [girl.fullname] is being held."
     "按照情报贩子的指示，你开始寻找[girl.fullname]被关押的地牢的入口。"
 
-# game/BKsecurity.rpy:1752
+# game/BKsecurity.rpy:1743
 translate schinese kidnap_rescue_28e3b707:
 
     # "Hearing a muffled woman voice, you head towards the source of the moans."
     "听到一阵低沉的女人的声音，你朝呻吟的源头走去。"
 
-# game/BKsecurity.rpy:1756
+# game/BKsecurity.rpy:1747
 translate schinese kidnap_rescue_021d2cee:
 
     # "Sneaking in the shadows, you arrive in front of a locked door. The muffled cries are coming from the other side of the door."
     "你在阴暗处缓慢前行，你来到了一扇锁着的门前。低沉的哭声从门的另一边传来。"
 
-# game/BKsecurity.rpy:1758
+# game/BKsecurity.rpy:1749
 translate schinese kidnap_rescue_34d59230:
 
     # "Approaching the door, you take a look through the keyhole."
     "走近门，你从钥匙孔往里看。"
 
-# game/BKsecurity.rpy:1770
+# game/BKsecurity.rpy:1761
 translate schinese kidnap_rescue_1ce9ffeb:
 
     # "An ogre is fucking [girl.fullname] mercilessly, his huge cock messing up her insides."
     "一个食人魔在无情地操[girl.fullname]，他的巨大的肉棒把她里面顶的天翻地覆。"
 
-# game/BKsecurity.rpy:1779
+# game/BKsecurity.rpy:1770
 translate schinese kidnap_rescue_922e8855:
 
     # "A revolting demon is fucking [girl.fullname] in the ass, spurting gooey monster semen in her back hole."
     "一个令人作呕的恶魔在操[girl.fullname]的屁股，把黏糊糊的怪物精液喷到她的后庭里。"
 
-# game/BKsecurity.rpy:1788
+# game/BKsecurity.rpy:1779
 translate schinese kidnap_rescue_807b0341:
 
     # "A guard is laughing and taunting [girl.fullname] as she is being teased and fucked by a strange apparatus."
     "一个警卫在嘲弄着[girl.fullname]，她被绑在奇怪的装置上调教抽插。"
 
-# game/BKsecurity.rpy:1792
+# game/BKsecurity.rpy:1783
 translate schinese kidnap_rescue_2e9ba7a2:
 
     # "The enemy is distracted. If you can get past that door, you have a chance of ending this quickly."
     "敌人没注意到你。如果你能打开这扇门，你就有机会尽快结束这一切。"
 
-# game/BKsecurity.rpy:1810
+# game/BKsecurity.rpy:1801
 translate schinese kidnap_rescue_82ab3d83:
 
     # "Taking a step back you charge and bash open the door with a well-placed kick."
     "后撤一步，你向前冲去，一脚踹开了铁门。"
 
-# game/BKsecurity.rpy:1815
+# game/BKsecurity.rpy:1806
 translate schinese kidnap_rescue_90ddb2bf:
 
     # "Ogre" "Duh?"
     "兽人" "昂?"
 
-# game/BKsecurity.rpy:1822
+# game/BKsecurity.rpy:1813
 translate schinese kidnap_rescue_3057cbf5:
 
     # "Bursting throught the door, you impale the ogre on your sword, slashing through his innards. His eyes have a look of dumbfound surprise as he loudly falls backwards in the dust, dead."
     "你破门而入，用剑刺穿食人魔，划破他的内脏。他的眼睛里露出惊讶的表情，他大叫一声地向后倒下，死透了。"
 
-# game/BKsecurity.rpy:1825
+# game/BKsecurity.rpy:1816
 translate schinese kidnap_rescue_2577cb10:
 
     # "Monster" "Grrr..."
     "怪物" "咕噜噜..."
 
-# game/BKsecurity.rpy:1834
+# game/BKsecurity.rpy:1825
 translate schinese kidnap_rescue_37a4cbde:
 
     # "Slicing left and right, you hack at the monster until it lies defeated at your feet."
     "左砍右切，你把怪物砍成了碎片，直到它躺在你的脚下。"
 
-# game/BKsecurity.rpy:1837
+# game/BKsecurity.rpy:1828
 translate schinese kidnap_rescue_5414534b:
 
     # man "What?!?"
     man "什么人?!?"
 
-# game/BKsecurity.rpy:1844
+# game/BKsecurity.rpy:1835
 translate schinese kidnap_rescue_3b0d7b3a:
 
     # "Striking from behind, you stab the thug in the neck, throwing his lifeless corpse to the side as you rush to free [girl.name] from her bonds."
     "从背后偷袭，你割开匪徒的脖子，把他的尸体扔到一边，你赶忙把[girl.name]从束缚中解放出来。"
 
-# game/BKsecurity.rpy:1849
+# game/BKsecurity.rpy:1840
 translate schinese kidnap_rescue_56eb5a18:
 
     # "You slam at the door but only manage to hurt your shoulder. The noise alerted your enemies, and you can hear muffled screams as [girl.fullname] is being dragged away."
     "你用力摔门，但只换得肩膀上的疼痛。声响惊动了匪徒，你只能听到她的尖叫声渐行渐远。[girl.fullname]被带走了。"
 
-# game/BKsecurity.rpy:1857
+# game/BKsecurity.rpy:1848
 translate schinese kidnap_rescue_84d8f40d:
 
     # "Using a lockpicking spell, you silently open the door, placing yourself behind your opponent."
     "使用开锁咒语，你悄悄地打开门，摸到匪徒身后。"
 
-# game/BKsecurity.rpy:1859
+# game/BKsecurity.rpy:1850
 translate schinese kidnap_rescue_608c23f3:
 
     # you "Booh."
     you "BOOM！"
 
-# game/BKsecurity.rpy:1862
+# game/BKsecurity.rpy:1853
 translate schinese kidnap_rescue_e0fc9b8b:
 
     # "Ogre" "Uh?"
     "兽人" "昂?"
 
-# game/BKsecurity.rpy:1869
+# game/BKsecurity.rpy:1860
 translate schinese kidnap_rescue_13a83ec7:
 
     # "You strike the ogre with a bolt of lightning, briefly seeing the outline of his skeleton as he is fried dead. You girl escapes just in time, her hair standing on end from static electricity."
     "一道闪电击中了食人魔，一瞬间你仿佛能看到它全身的骨架，他被烧死了。女孩逃得很及时，她的头发都被静电竖起来了。"
 
-# game/BKsecurity.rpy:1872
+# game/BKsecurity.rpy:1863
 translate schinese kidnap_rescue_d949bfa6:
 
     # "Monster" "Rrrh!!!"
     "怪物" "哇啊啊!!!"
 
-# game/BKsecurity.rpy:1879
+# game/BKsecurity.rpy:1870
 translate schinese kidnap_rescue_c43cbf0e:
 
     # "You cast a fireball at what you guess is the creature's head, roasting it good. The monster falls lifeless in the dust."
     "你把一个火球扔向你猜是怪物头部的地方，把它烤得熟透了。怪物倒在尘土里，毫无生气。"
 
-# game/BKsecurity.rpy:1882
+# game/BKsecurity.rpy:1873
 translate schinese kidnap_rescue_88142c53:
 
     # man "*whistle* Uh?"
     man "*吹口哨* 昂?"
 
-# game/BKsecurity.rpy:1889
+# game/BKsecurity.rpy:1880
 translate schinese kidnap_rescue_ee6958e7:
 
     # "You casually strike down the guard with a lightning spell, turning him into an arty lamppost for a few seconds. He falls to ashes as you deliver [girl.name] from her bonds."
     "你轻松的用闪电箭击倒了守卫，把他变成了一个闪烁几秒的灯柱。当你把[girl.name]从束缚中解放出来时，他化为了一摊灰烬。"
 
-# game/BKsecurity.rpy:1894
+# game/BKsecurity.rpy:1885
 translate schinese kidnap_rescue_0d84744f:
 
     # "Your spell fizzles, and you fiddle with the lock desperate to find another way to open the door."
     "你的咒语失败了，你拨弄着锁头，不顾一切地想找到另一种打开门的方法。"
 
-# game/BKsecurity.rpy:1898
+# game/BKsecurity.rpy:1889
 translate schinese kidnap_rescue_3a714312:
 
     # "You have been discovered! A large ogre roars as he spots you. You run for your life as [girl.fullname] is being dragged away."
     "你暴露了! 当一个巨大的食人魔发现你时，他发出咆哮。你不得不撤离，只能放任[girl.fullname]被拖走。"
 
-# game/BKsecurity.rpy:1902
+# game/BKsecurity.rpy:1893
 translate schinese kidnap_rescue_67179ae3:
 
     # "The monster has sensed your presence! You hear [girl.fullname]'s screams as she is being taken away."
     "怪物感应到了你的存在!你听到[girl.fullname]被带走时的尖叫声。"
 
-# game/BKsecurity.rpy:1907
+# game/BKsecurity.rpy:1898
 translate schinese kidnap_rescue_72a4c715:
 
     # man "Intruder! Get him!" with vpunch
     man "有入侵者! 抓住他!" with vpunch
 
-# game/BKsecurity.rpy:1909
+# game/BKsecurity.rpy:1900
 translate schinese kidnap_rescue_a1062ed2:
 
     # "You have been found! You run away from the guard patrol. Gods know where they'll be taking [girl.fullname] now."
     "你被发现了!你从守卫那里逃跑了。天知道他们会把[girl.fullname]带到哪里去。"
 
-# game/BKsecurity.rpy:1914
+# game/BKsecurity.rpy:1905
 translate schinese kidnap_rescue_37d3058f:
 
     # "You will come back when you are ready. Sorry, [girl.name]..."
     "等你准备就绪的时候再来吧。对不起了, [girl.name]..."
 
-# game/BKsecurity.rpy:1924
+# game/BKsecurity.rpy:1915
 translate schinese kidnap_rescue_6d81a86f:
 
     # girl.char "Master [MC.name]! It's you!!!"
     girl.char "[MC.name]! 是你吗!!!"
 
-# game/BKsecurity.rpy:1926
+# game/BKsecurity.rpy:1917
 translate schinese kidnap_rescue_cc0732b4:
 
     # "She sobs in your arms."
     "她依偎在你的怀抱里哭泣"
 
-# game/BKsecurity.rpy:1928
+# game/BKsecurity.rpy:1919
 translate schinese kidnap_rescue_b276b909:
 
     # girl.char "Oh, Master... Thank you, thank you..."
     girl.char "哦, 主人... 谢谢你, 谢谢你..."
 
-# game/BKsecurity.rpy:1933
+# game/BKsecurity.rpy:1924
 translate schinese kidnap_rescue_b381e675:
 
     # "[girl.name] is overjoyed that her trial is over. She is very grateful to you."
     "[girl.name]因苦难结束而欣喜若狂。她对你感激不尽。"
 
-# game/BKsecurity.rpy:1937
+# game/BKsecurity.rpy:1928
 translate schinese kidnap_rescue_7682a280:
 
     # "[girl.name] has been raped repeatedly by her captors and is no longer a virgin."
     "[girl.name]被抓走她的人强奸，不再是处女了。"
 
-# game/BKsecurity.rpy:1945
+# game/BKsecurity.rpy:1936
 translate schinese kidnap_rescue_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
     "{b}[girl.fullname]{/b}已经被送去农场。"
 
-# game/BKsecurity.rpy:1947
+# game/BKsecurity.rpy:1938
 translate schinese kidnap_rescue_866a79ae:
 
     # "{b}[girl.name] is back to [brothel.name].{/b}"
     "{b}[girl.name]返回了[brothel.name]。{/b}"
 
-# game/BKsecurity.rpy:1974
+# game/BKsecurity.rpy:1965
 translate schinese kidnap_rescue_c3e4feb2:
 
     # you "I shall free you now. You have been through a lot."
     you "你自由了。这段时间不好受吧。"
 
-# game/BKsecurity.rpy:1976
+# game/BKsecurity.rpy:1967
 translate schinese kidnap_rescue_e0fd2bd0:
 
     # girl.char "Really? Oh, Master!!!"
     girl.char "真的吗? 哦,主人!!!"
 
-# game/BKsecurity.rpy:1978
+# game/BKsecurity.rpy:1969
 translate schinese kidnap_rescue_e964c4d3:
 
     # "{b}[girl.name] has been freed.{/b}"
     "{b}[girl.name]得到了自由。{/b}"
 
-# game/BKsecurity.rpy:1986
+# game/BKsecurity.rpy:1977
 translate schinese kidnap_rescue_6afa5430:
 
     # "{b}[girl.fullname] has been abducted to a different location.{/b}"
     "{b}[girl.fullname]被绑去了另一处地方。{/b}"
 
-# game/BKsecurity.rpy:1993
+# game/BKsecurity.rpy:1984
 translate schinese girl_come_back_e2a70efb:
 
     # "[girl.fullname] returned to [brothel.name] as you ordered."
     "[girl.fullname]按照你的指示返回了[brothel.name]。"
 
-# game/BKsecurity.rpy:1998
+# game/BKsecurity.rpy:1989
 translate schinese girl_come_back_4b57f1f5:
 
     # "{b}[girl.fullname]{/b} has been sent to the farm."
     "{b}[girl.fullname]{/b}已经被送去了农场。"
 
-# game/BKsecurity.rpy:2000
+# game/BKsecurity.rpy:1991
 translate schinese girl_come_back_94285fc8:
 
     # "There is now room for [girl.fullname] in your brothel.\n{b}[girl.name] is back to [brothel.name].{/b}"
     "青楼里现在有房间给[girl.fullname]住了。\n{b}[girl.name]回到了[brothel.name]。{/b}"
 
-# game/BKsecurity.rpy:2027
+# game/BKsecurity.rpy:2018
 translate schinese girl_come_back_c3e4feb2:
 
     # you "I shall free you now. You have been through a lot."
     you "我现在就放你自由。你已经吃了足够多的苦头了。"
 
-# game/BKsecurity.rpy:2029
+# game/BKsecurity.rpy:2020
 translate schinese girl_come_back_e0fd2bd0:
 
     # girl.char "Really? Oh, Master!!!"
     girl.char "真的吗? 哦, 主人!!!"
 
-# game/BKsecurity.rpy:2031
+# game/BKsecurity.rpy:2022
 translate schinese girl_come_back_e964c4d3:
 
     # "{b}[girl.name] has been freed.{/b}"
@@ -1250,503 +1250,503 @@ translate schinese girl_come_back_e964c4d3:
 
 translate schinese strings:
 
-    # game/BKsecurity.rpy:383
+    # game/BKsecurity.rpy:373
     old "Charge into the fray (use Strength to fight the enemy)"
     new "拿起剑加入战斗 (用武力对抗敌人)"
 
-    # game/BKsecurity.rpy:383
+    # game/BKsecurity.rpy:373
     old "Destroy their war machines (use Spirit to cast a spell on them)"
     new "摧毁他们的器械 (用魔力施展法术)"
 
-    # game/BKsecurity.rpy:383
+    # game/BKsecurity.rpy:373
     old "Lead from behind (use Charisma to improve your troops' morale)"
     new "在后方指挥大局 (用魅力提高士气)"
 
-    # game/BKsecurity.rpy:383
+    # game/BKsecurity.rpy:373
     old "Challenge their leader (use Strength to attack the [enemy_g])"
     new "挑战他们的首领 (用武器攻击 [enemy_g])"
 
-    # game/BKsecurity.rpy:383
+    # game/BKsecurity.rpy:373
     old "Challenge their leader (use Spirit to attack the [enemy_g])"
     new "挑战他们的首领 (用法术攻击 [enemy_g])"
 
-    # game/BKsecurity.rpy:740
+    # game/BKsecurity.rpy:730
     old "Defend your girls (use Strength to fight the enemy)"
     new "保护你的女孩 (用武力解决敌人)"
 
-    # game/BKsecurity.rpy:740
+    # game/BKsecurity.rpy:730
     old "Protect your girls (use Spirit to shield some of your girls)"
     new "保护你的女孩 (用法术施加护盾)"
 
-    # game/BKsecurity.rpy:740
+    # game/BKsecurity.rpy:730
     old "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)"
     new "激励女孩自卫 (用魅力提高士气)"
 
-    # game/BKsecurity.rpy:740
+    # game/BKsecurity.rpy:730
     old "Intercept their leader (use Strength to attack the [enemy_g])"
     new "拦下他们的首领 (用武器攻击 [enemy_g])"
 
-    # game/BKsecurity.rpy:740
+    # game/BKsecurity.rpy:730
     old "Intercept their leader (use Spirit to attack the [enemy_g])"
     new "拦下他们的首领 (用法术攻击 [enemy_g])"
 
-    # game/BKsecurity.rpy:1064
+    # game/BKsecurity.rpy:1051
     old "What do you want to do with her?"
     new "你想怎么处置她?"
 
-    # game/BKsecurity.rpy:1064
+    # game/BKsecurity.rpy:1051
     old "Keep her as a slave"
     new "把她收为自己的奴隶以弥补损失"
 
-    # game/BKsecurity.rpy:1064
+    # game/BKsecurity.rpy:1051
     old "Sell her as a slave for [price] gold"
     new "把她卖给奴隶贩子换取[price]金币"
 
-    # game/BKsecurity.rpy:1064
+    # game/BKsecurity.rpy:1051
     old "Sell her as sacrifice fodder for the blood islands for [evil_price] gold"
     new "把她卖给鲜血群岛换取[evil_price]金币"
 
-    # game/BKsecurity.rpy:1064
+    # game/BKsecurity.rpy:1051
     old "Make her swear an oath never to cross you again and let her go"
     new "让她发誓再也不会招惹你，然后放了她"
 
-    # game/BKsecurity.rpy:1192
+    # game/BKsecurity.rpy:1183
     old "{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\nThey're in such good spirits that they accept to work for half the usual amount ({b}"
-    new "{color=[c_green]}Your guards caught a thief red-handed!{/color} They have their way with her all night as punishment.\nThey're in such good spirits that they accept to work for half the usual amount ({b}"
+    new "{color=[c_green]}你的卫兵当场抓住了一个女贼!{/color} 他们整晚都在玩弄她作为惩罚。\n他们心情很好，愿意只拿平时一半的薪水工作 ({b}"
 
-    # game/BKsecurity.rpy:1194
+    # game/BKsecurity.rpy:1185
     old "{color=[c_green]}Security alert! No gold lost. "
-    new "{color=[c_green]}Security alert! No gold lost. "
+    new "{color=[c_green]}安全警报! 没有财产损失。 "
 
-    # game/BKsecurity.rpy:1200
+    # game/BKsecurity.rpy:1191
     old "{color=[c_green]}As you were patrolling, you caught a thief red-handed!{/color} She begged you to release her, so you came to an arrangement.\nYou let her go after a night of 'fun' in your basement. You have earned {b}prestige{/b}."
-    new "{color=[c_green]}As you were patrolling, you caught a thief red-handed!{/color} She begged you to release her, so you came to an arrangement.\nYou let her go after a night of 'fun' in your basement. You have earned {b}prestige{/b}."
+    new "{color=[c_green]}你在巡逻时，当场抓住了一个小偷!{/color} 她恳求你放过她，不过你另有安排。\n你在地下室玩了她一夜之后放她离开了。 你获得了一些{b}声望{/b}。"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "{color=[c_lightgreen]}A "
     new "{color=[c_lightgreen]}一个"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "bold"
     new "冒失的"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "sneaky"
     new "鬼鬼祟祟的"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "dirty"
     new "肮脏的"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "notorious"
     new "臭名昭著的"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old "skilled"
     new "熟练的"
 
-    # game/BKsecurity.rpy:1206
+    # game/BKsecurity.rpy:1197
     old " thief showed up, but your guards drove her away!{/color} You didn't lose any money."
     new " 小偷潜入进来,但是你的保安把她赶走了!{/color} 你一分钱也没丢。"
 
-    # game/BKsecurity.rpy:1215
+    # game/BKsecurity.rpy:1206
     old "{color=[c_red]}A "
     new "{color=[c_red]}一个"
 
-    # game/BKsecurity.rpy:1215
+    # game/BKsecurity.rpy:1206
     old " thief managed to infiltrate your brothel and make away with {b}"
     new "小偷潜入了你的青楼偷走了{b}"
 
-    # game/BKsecurity.rpy:1230
+    # game/BKsecurity.rpy:1221
     old "{color=[c_green]}One of your guard slew a night beast they found lurking in a dark corner.{/color}\nYour girls are relieved."
     new "{color=[c_green]}你的一个守卫击杀了一只潜伏在黑暗角落里的野兽。{/color}\n你的女孩们安全了。"
 
-    # game/BKsecurity.rpy:1239
+    # game/BKsecurity.rpy:1230
     old "{color=[c_green]}A monster leapt at your girls from a dark corner!{/color} Your quick combat reflexes saved you. The beast now lies lifeless at your feet. Your girls are impressed."
     new "{color=[c_green]}一个怪物从黑暗的角落里扑向女孩们!{/color}你快速的战斗本能救了你。野兽毫无生气地躺在你的脚下。女孩们被你帅气的身手迷住了。"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old "A vile"
     new "一个卑鄙的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old "An ugly"
     new "一个丑陋的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old "A dirty"
     new "一个肮脏的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old "A filthy"
     new "一个下流的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old " A scary"
     new "一个骇人的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old "A disgusting"
     new "一个恶心的"
 
-    # game/BKsecurity.rpy:1245
+    # game/BKsecurity.rpy:1236
     old " monster crawled in from the shadows, but your guards drove it away!{/color} Fortunately, no one got hurt."
     new "怪物从阴影中爬了进来,不过你的保安把它赶了出去!{/color}所幸,没人受伤。"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old "A scary"
     new "一个骇人的"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old " night creature crawled in from "
     new "夜行生物从"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old "the shadows"
     new "的阴影中爬了进来"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old "a window"
     new "一扇窗户"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old "the sewers"
     new "下水道"
 
-    # game/BKsecurity.rpy:1253
+    # game/BKsecurity.rpy:1244
     old "the roof"
     new "屋顶"
 
-    # game/BKsecurity.rpy:1259
+    # game/BKsecurity.rpy:1250
     old " and attacked "
     new "袭击了"
 
-    # game/BKsecurity.rpy:1259
+    # game/BKsecurity.rpy:1250
     old "{/color}, but {color=[c_lightgreen]}a {b}magic shield{/b} protected her from harm{/color} and the beast ran away."
     new "{/color},但是{color=[c_lightgreen]}{b}魔法护盾{/b}发出强烈的光芒保护了她{/color}，野兽落荒而逃。"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "{/color}, but\n"
     new "{/color}, 但是\n"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "she kicked the critter's scaly ass and sent it packing."
     new "她一脚踢在那东西长满鳞片的屁股上，把它赶走了。"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "she was ready to defend herself and butchered it."
     new "她准备好保护自己，消灭怪物。"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "her combat training paid off."
     new "她平日的格斗训练没有白费。"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "she had a weapon ready and scared it off."
     new "她拔出武器把它吓跑了。"
 
-    # game/BKsecurity.rpy:1272
+    # game/BKsecurity.rpy:1263
     old "she wounded it badly and it ran off."
     new "她受了很严重的伤，怪物逃走了。"
 
-    # game/BKsecurity.rpy:1274
+    # game/BKsecurity.rpy:1265
     old "{color=[c_green]}Security alert! "
     new "{color=[c_green]}安全警报！"
 
-    # game/BKsecurity.rpy:1274
+    # game/BKsecurity.rpy:1265
     old " defended herself.{/color}"
     new "保护了她自己。{/color}"
 
-    # game/BKsecurity.rpy:1285
+    # game/BKsecurity.rpy:1276
     old " and raped "
     new "还强暴了"
 
-    # game/BKsecurity.rpy:1285
+    # game/BKsecurity.rpy:1276
     old ". {/color}\nYou manage to drive it away, but the girl is in shock."
     new "。{/color}\n你设法把它赶走了，但她还是受到了不小的惊吓。"
 
-    # game/BKsecurity.rpy:1292
+    # game/BKsecurity.rpy:1283
     old "{color=[c_red]}Security alert! "
     new "{color=[c_red]}安全警报！"
 
-    # game/BKsecurity.rpy:1292
+    # game/BKsecurity.rpy:1283
     old " was hurt.{/color}"
     new "受伤了。{/color}"
 
-    # game/BKsecurity.rpy:1294
+    # game/BKsecurity.rpy:1285
     old " was raped.{/color}"
     new "被强暴了。{/color}"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "A "
     new "一个"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "shady"
     new "阴暗的"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "deadly"
     new "致命的"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "mysterious"
     new "神秘的"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "rogue"
     new "暴戾的"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "vicious"
     new "凶恶的"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old " ninja made an attempt on "
     new "忍者试图取走"
 
-    # game/BKsecurity.rpy:1305
+    # game/BKsecurity.rpy:1296
     old "'s life! "
     new "的小命! "
 
-    # game/BKsecurity.rpy:1313
+    # game/BKsecurity.rpy:1304
     old "Fortunately, your security was on hand, and forced the scoundrel to run away. "
     new "幸运的是，你的保安就在一旁，迫使刺客逃跑了。"
 
-    # game/BKsecurity.rpy:1315
+    # game/BKsecurity.rpy:1306
     old "{color=[c_green]}Security alert! No was one hurt.{/color}"
     new "{color=[c_green]}安全警报!无人受伤。{/color}"
 
-    # game/BKsecurity.rpy:1328
+    # game/BKsecurity.rpy:1319
     old "wa: Fortunately, you were right next to her and parried the attack, unsheathing your sword right on time with cobra-like reflexes."
     new "wa: 幸运的是，你就在她旁边，挡住了她的攻击，以眼镜蛇般的反应及时的拔出了你的剑。"
 
-    # game/BKsecurity.rpy:1328
+    # game/BKsecurity.rpy:1319
     old "wi: Fortunately, you blocked the attack at the last second with a magical barrier."
     new "wi: 幸运的是，你在最后一秒用魔法屏障挡住了攻击。"
 
-    # game/BKsecurity.rpy:1328
+    # game/BKsecurity.rpy:1319
     old "tr: Fortunately, your pet dragon Drogon smelled the bastard and swooped right at him roaring before he had a chance to attack."
     new "tr: 幸运的是，你的宠物龙闻到了这个混蛋的味道，在他攻击之前就向他猛扑过来。"
 
-    # game/BKsecurity.rpy:1328
+    # game/BKsecurity.rpy:1319
     old " The assassin ran away."
     new "刺客逃离了。"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old "Fortunately, your security was on hand. "
     new "幸运的是，你的保安就在旁边。"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old "A guard threw himself into harm's way and took the hit.\n"
     new "一名守卫冒着生命危险挨了一击。\n"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old "You gave the brave soul "
     new "你为他的勇敢行径打赏了"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old " gold for his trouble."
     new "金币去处理伤势。"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old "You gave the poor sod's family "
     new "你给了那户贫困人家"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old " gold and thanks for his loyal services."
     new "金币以感谢他的忠诚。"
 
-    # game/BKsecurity.rpy:1340
+    # game/BKsecurity.rpy:1331
     old " gold for the courageous man medical expenses."
     new "金币作为医药费。"
 
-    # game/BKsecurity.rpy:1343
+    # game/BKsecurity.rpy:1334
     old " gold lost.{/color}"
     new "金币被支出了。{/color}"
 
-    # game/BKsecurity.rpy:1352
+    # game/BKsecurity.rpy:1343
     old "\nFortunately, she was protected by a {b}magic shield{/b} and escaped harm."
     new "\n还好, 她被{b}魔法护盾{/b}保护免受伤害。"
 
-    # game/BKsecurity.rpy:1354
+    # game/BKsecurity.rpy:1345
     old "{color=[c_green]}Security alert! Shield protected "
     new "{color=[c_green]}安全警报!护盾触发"
 
-    # game/BKsecurity.rpy:1360
+    # game/BKsecurity.rpy:1351
     old "\nFortunately, she is {b}immune{/b} to physical damage and escaped harm."
     new "\n还好, 她能够{b}免疫{/b}物理伤害。"
 
-    # game/BKsecurity.rpy:1362
+    # game/BKsecurity.rpy:1353
     old "{color=[c_green]}Security alert! Immunity protected "
     new "{color=[c_green]}安全警报!免疫保护"
 
-    # game/BKsecurity.rpy:1373
+    # game/BKsecurity.rpy:1364
     old "\nYour girl used her weapons to defend herself and escaped unscathed by a thread."
     new "\n你的女孩用她的武器自卫，毫发无损。"
 
-    # game/BKsecurity.rpy:1386
+    # game/BKsecurity.rpy:1377
     old "She was only grazed by the assassin dagger, but she immediately lost consciousness."
     new "她只是被刺客的匕首擦伤了一下，就立刻失去了知觉。"
 
-    # game/BKsecurity.rpy:1386
+    # game/BKsecurity.rpy:1377
     old "She was hit in the arm, she's bleeding and looks feverish."
     new "她的手臂被击中了，血流不止，看起来浑身发热。"
 
-    # game/BKsecurity.rpy:1386
+    # game/BKsecurity.rpy:1377
     old "Her thigh got slashed and she is in pain."
     new "她的大腿被割伤了，疼痛不已。"
 
-    # game/BKsecurity.rpy:1386
+    # game/BKsecurity.rpy:1377
     old "She caught a dart in her chest, you worry it might be poisoned."
     new "她胸口被飞镖射中，你担心箭头可能涂了毒。"
 
-    # game/BKsecurity.rpy:1387
+    # game/BKsecurity.rpy:1378
     old "\nYou bring the unconscious girl inside and take a look at the damage. It doesn't look life threatening, but some green substance is seeping from the wound. "
     new "\n你把昏迷的女孩带进去房间，查看她的伤势。看起来没有生命危险，但有绿色物质从伤口中渗出。 "
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she wakes up, her face is covered with ugly pimples. They should go away with the right ointment, but it will take a long time.\n"
     new "当她醒来时，她的脸上长满了难看的粉刺。用合适的药膏就能治好，但要花很长时间。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her beauty has decreased by %s permanently."
     new "她需要静养%s天, 她的美貌永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "You notice something disturbing. Her boobs and ass seem noticeably smaller. Such a cruel poison! Curse the bastards!\n"
     new "你注意到一些令人不安的事情。她的胸和屁股明显变小了。多么残忍的毒药!该死的混蛋!\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her body has decreased by %s permanently."
     new "她需要静养%s天, 她的身材永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she comes to her senses, she seems aloof and behaves strangely, altogether not like herself.\n"
     new "当她清醒过来时，她显得冷漠，举止怪异，完全不像她自己。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her charm has decreased by %s permanently."
     new "她需要静养%s天, 她的魅力永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she finally wakes up, she starts giggling and looks at you as if she didn't understand the situation she's in. It seems her mind wandered and she is acting all childish.\n"
     new "当她清醒过来时, 她开始傻笑，看着你，她似乎不明白自己的处境。她好像走神了，表现得很孩子气。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her refinement has decreased by %s permanently."
     new "她需要静养%s天, 她的优雅永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she wakes up, she shivers and cowers from you. 'I'm s-s-so cold...', she says.\n"
     new "当她清醒过来时, 浑身发抖 '我-我-我好-好冷...', 她颤抖地吐字。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her libido has decreased by %s permanently."
     new "她需要静养%s天, 她的性欲永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "After struggling between life and death for a few hours, her fever eventually recesses, and it looks like she will survive. She is still very weak, however.\n"
     new "在生与死之间挣扎了几个小时后，她的高烧终于消退了，看起来她会活下来。然而，她仍然很虚弱。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her constitution has decreased by %s permanently."
     new "她需要静养%s天, 她的体质永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she comes through, she seems wild, almost feral. She nearly bites you when you come near. You hope the effect will recess with time.\n"
     new "当她醒来的时候，她看起来充满野性，几乎像头野兽。你走近她时，她差点咬了你一口。你希望毒药的效果会随着时间的推移而消退。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her obedience has decreased by %s permanently."
     new "她需要静养%s天, 她的服从永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she opens her eyes, she whispers faintly 'Master, I... I can't feel my limbs...'. She fights against paralysis all night, and without Sill's advanced alchimist skills, she would have become crippled. When she is finally able to get up, she still feels numb."
     new "当她睁开眼睛时，她轻声说:“主人，我...我的四肢没有知觉了...”她整晚都在与瘫痪作斗争，如果没有希露先进的炼金术，她可能已经残疾了。当她终于能勉强站起来时，她感到四肢麻木。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her sensitivity has decreased by %s permanently."
     new "她需要静养%s天, 她的敏感永久的减少了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she wakes up, she looks feverish, with a strange look in her eye. 'Master... Come over here...', she whispers. As you approach her bed, she grabs your dick and starts fondling it. 'Master's dick... Aaah...', she moans.\n"
     new "当她苏醒时, 她看上去有些发热，眼睛里露出奇怪的神情。“主人...到我身边来...她低声说。当你走近她的床，她抓住你的鸡巴，开始抚摸它。“主人的肉棒...啊...她呻吟道。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days"
     new "她需要静养%s天"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old ", but "
     new ",不过"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "her libido has increased by %s permanently."
     new "她的性欲永久的增加了%s。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old " You wonder if you should thank the mysterious love ninja."
     new "你不知道该不该感谢这位神秘的爱情忍者。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "When she finally gets up, she looks like a different person. 'W-Who are you?'. It seems like she hit her head or something.\n"
     new "当她苏醒过来时，她好像变了个人似的 '你-你是谁?'。她好像撞到了头。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "She is hurt for %s days, and her {b}personality{/b} has changed. Her {b}love{/b} and {b}fear{/b} have been reset."
     new "她需要静养%s天。她的{b}个性{/b}发生了变化。她的{b}好感度{/b}和{b}恐惧值{/b}被重置了。"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old "After a while, she opens her eyes and slowly comes to her senses. Suddenly, she shrieks, and throws the linen sheet to the side. 'No! It burns my skin!', she yells. It seems she has developped a phobia for cloth of any kind.\n"
     new "过了一会儿，她睁开眼睛，慢慢地恢复了知觉。突然，她尖叫起来，把床单扔到一边。“不!它烧伤了我的皮肤!她喊道。她似乎对每种布料都产生了恐惧。\n"
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old ", and "
     new ","
 
-    # game/BKsecurity.rpy:1398
+    # game/BKsecurity.rpy:1389
     old " You guess it could really be worse."
     new "你猜想情况可能还要更糟。"
 
-    # game/BKsecurity.rpy:1437
+    # game/BKsecurity.rpy:1428
     old "must remain naked at all times"
     new "必须时刻保持裸体。"
 
-    # game/BKsecurity.rpy:1439
+    # game/BKsecurity.rpy:1430
     old "she has received the 'Naked' perk"
     new "她获得了'裸体'的特质。"
 
-    # game/BKsecurity.rpy:1458
+    # game/BKsecurity.rpy:1449
     old "A brawl erupted in the "
     new "一阵喧闹的动静出现在"
 
-    # game/BKsecurity.rpy:1458
+    # game/BKsecurity.rpy:1449
     old " after "
     new "原来是因为"
 
-    # game/BKsecurity.rpy:1481
+    # game/BKsecurity.rpy:1472
     old "\nFortunately, your guards were ready, and they threw the troublemakers out before they had a chance to do any serious damage."
     new "\n幸运的是，你的保安严阵以待，他们在闹事者造成严重破坏之前就把他们赶了出去。"
 
-    # game/BKsecurity.rpy:1493
+    # game/BKsecurity.rpy:1484
     old "wa: \nFortunately, you were around and promptly beat some sense into the worst offenders. The others quickly went quiet."
     new "wa: \n幸好，你就在现场，及时地让那些闹事的家伙清醒过来。其他人很快就安静了下来。"
 
-    # game/BKsecurity.rpy:1493
+    # game/BKsecurity.rpy:1484
     old "wi: \nIn order to quell the riot, you cast a spell and turned the worst troublemakers into chicken. After that, the rest went back to their business. The charm should wear off in a few hours, and the cursed customers should be no worse off for their trouble, unless they ended up in the kitchen before then, of course."
     new "wi: \n为了平息暴乱，你施展了一个咒语，把闹得最凶的人变成了一只鸡。在那之后，所有人都回到了自己的座位上。咒语效果会在几个小时内消失，被诅咒的顾客不会因为他们惹的麻烦而受到伤害，当然，除非他们在那之前不小心走进了厨房。"
 
-    # game/BKsecurity.rpy:1493
+    # game/BKsecurity.rpy:1484
     old "tr: \nKnowing how to work the crowd, you offered everyone a free drink, and you and your guards beat up the few remaining troublemakers."
     new "tr: \n你知道如何对付他们，你给每个人提供免费的饮料，和保安殴打剩下的几个闹事分子。"
 
-    # game/BKsecurity.rpy:1504
+    # game/BKsecurity.rpy:1495
     old "\nChaos and confusion ensued as your guards joined the fray. Thankfully, after an hour of fighting and with great difficulty, they managed to protect your girls and quell the riot.\n"
     new "\n当守卫加入战斗时，场面乱成一团。谢天谢地，经过一个小时的艰苦战斗，他们保护了你的女孩，平息了暴乱。\n"
 
-    # game/BKsecurity.rpy:1504
+    # game/BKsecurity.rpy:1495
     old "Unfortunately, the brothel is now littered with trash (+"
     new "不幸的是，青楼现在到处都是垃圾 (+"
 
