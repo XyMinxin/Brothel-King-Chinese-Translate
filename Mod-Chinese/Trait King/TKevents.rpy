@@ -165,7 +165,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
 
                 girl.remove_trait(trait_dict["In demand"])
                 
-                renpy.say("",__("Slavers are no longer willing to pay a premium for ") + girl.name + ".")
+                renpy.say("",__("Slavers are no longer willing to pay a premium for ") + girl.name + _("."))
 
             if renpy.random.random() <= 0.06 and not girl.free: # In demand trait (add) # todo: implement "Fan favorite"
             
@@ -488,7 +488,7 @@ label performance_reward(girl):
                         girl.char "That makes sense. I'll do my best to follow your advice."
                         
                     $ extra_effects = [Effect("change", "job customer capacity", int(3*modifier))] 
-                    $ effect_comment = "she will try to serve more customers while working"
+                    $ effect_comment = _("she will try to serve more customers while working")
                     
                 "Hoard as much semen as you can" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
 
@@ -509,7 +509,7 @@ label performance_reward(girl):
                         girl.char "Very well... I'll do what I can."
                     
                     $ extra_effects = [Effect("change", "whore customer capacity", int(2*modifier))]
-                    $ effect_comment = "she will attempt to serve more customers while whoring"
+                    $ effect_comment = _("she will attempt to serve more customers while whoring")
 
                 "Focus on the whales" if MC.charisma > 4: # chance tip boost
 
@@ -528,7 +528,7 @@ label performance_reward(girl):
                         girl.char "All right, master. I hope I can improve."
                     
                     $ extra_effects = [Effect("special", "ignore budgets"), Effect("boost", "tip", 0.2, chance=0.25*modifier),Effect("change", "whore customer capacity", -1), Effect("change", "job customer capacity", -2)] 
-                    $ effect_comment = "she will serve less customers but acquire bigger tips"
+                    $ effect_comment = _("she will serve less customers but acquire bigger tips")
                     
                 "Keep doing what you're doing": # Rep boost
 
@@ -547,7 +547,7 @@ label performance_reward(girl):
                         girl.char "Just give me some time. I really want to become an important part of [brothel.name]."
                         
                     $ extra_effects = [Effect("boost", "reputation gains", 0.1*modifier)] 
-                    $ effect_comment = "her reputation will improve more rapidly"
+                    $ effect_comment = _("her reputation will improve more rapidly")
                     
                 "Stand up for yourself" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
                         
@@ -566,7 +566,7 @@ label performance_reward(girl):
                         girl.char "That sounds daunting, but I'll try my best."
                         
                     $ extra_effects = [Effect("change", "defense", int(2*modifier))] 
-                    $ effect_comment = "she will be on her guard"
+                    $ effect_comment = _("she will be on her guard")
 
                 "Focus on training": # Lower train obedience targets
 
@@ -585,7 +585,7 @@ label performance_reward(girl):
                         girl.char "Y-yes [MC.name], I understand I have to improve."
                         
                     $ extra_effects = [Effect("change", "train obedience target", int(-25*modifier))] 
-                    $ effect_comment = "she will be more willing to undergo training"
+                    $ effect_comment = _("she will be more willing to undergo training")
                     
                 "Serve the customer, no matter what they request" if MC.spirit > 4: # Lower job/whore obedience targets
 
@@ -604,7 +604,7 @@ label performance_reward(girl):
                         girl.char "Please be patient with me, [MC.name]. I need to get used to all of this."
                         
                     $ extra_effects = [Effect("change", "job obedience target", int(-25*modifier)), Effect("change", "whore obedience target", int(-25*modifier))]
-                    $ effect_comment = "she will be less apprehensive about working or whoring"
+                    $ effect_comment = _("she will be less apprehensive about working or whoring")
                     
                 "Gain more experience": # boost xp/jp/rep
 
@@ -623,7 +623,7 @@ label performance_reward(girl):
                         girl.char "I'm sorry... I don't think I'm cut out for this..."
                         
                     $ extra_effects = [Effect("boost", "xp gains", 0.1*modifier), Effect("boost", "all jp gains", 0.1*modifier)] 
-                    $ effect_comment = "she will gain more experience and job proficiency"
+                    $ effect_comment = _("she will gain more experience and job proficiency")
 
                 "Consider a spell at the farm" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
 
@@ -646,7 +646,7 @@ label performance_reward(girl):
                         girl.char "That's awful! ...D-do you really think it'll help?"
                         
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.5*modifier)] 
-                    $ effect_comment = "she will be more susceptible to the training methods used at the farm"
+                    $ effect_comment = _("she will be more susceptible to the training methods used at the farm")
     
         "Help the brothel": # improve brothel
         
@@ -676,7 +676,7 @@ label performance_reward(girl):
                         girl.char "Ugh... Fine, if you think it will help [brothel.name]..."
                       
                     $ extra_effects = [Effect("change", "customers", int(4 * modifier), scope="brothel")]
-                    $ effect_comment = "more customers will visit the brothel"
+                    $ effect_comment = _("more customers will visit the brothel")
                     
                 "Prep for quests and classes" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
 
@@ -695,7 +695,7 @@ label performance_reward(girl):
                         girl.char "Okay..."
 
                     $ extra_effects = [Effect("boost", "quest rewards", 0.5*modifier, scope="brothel"), Effect("boost", "class results", 1*modifier, scope="brothel")]
-                    $ effect_comment = "quests and classes will yield better rewards"
+                    $ effect_comment = _("quests and classes will yield better rewards")
                     
                 "Act as a floor manager" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
                 
@@ -714,7 +714,7 @@ label performance_reward(girl):
                         girl.char "I'll try my best to set an example to follow."
 
                     $ extra_effects = [Effect("change", "job customer capacity", int(2*modifier), scope="brothel")]
-                    $ effect_comment = "your girls (excluding whores) will be able to serve more customers"
+                    $ effect_comment = _("your girls (excluding whores) will be able to serve more customers")
                     
                 "Help me with my errands" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
 
@@ -733,7 +733,7 @@ label performance_reward(girl):
                         girl.char "As you wish."
 
                     $ extra_effects = [Effect("boost", "city rewards", 1*modifier, scope="brothel"), Effect("change", "city rewards", 1+int(1*modifier), scope="brothel"), Effect("boost", "resource extraction", 1*modifier, scope="brothel")]                
-                    $ effect_comment = "city rewards and resource extraction rates are improved"
+                    $ effect_comment = _("city rewards and resource extraction rates are improved")
                     
                 "Punish the other girls" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
 
@@ -753,7 +753,7 @@ label performance_reward(girl):
                         girl.char "O-okay, if you think it will help..."
                     
                     $ extra_effects = [Effect("boost", "fear gains", 0.25*modifier, scope="brothel")]
-                    $ effect_comment = "fear will increase faster"
+                    $ effect_comment = _("fear will increase faster")
                     
                 "Protect the other girls from harm" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
 
@@ -772,7 +772,7 @@ label performance_reward(girl):
                         girl.char "Yes, master."
                     
                     $ extra_effects = [Effect("change", "defense", int(1*modifier), scope="brothel")]
-                    $ effect_comment = "girls in the brothel will be able to defend themselves better"
+                    $ effect_comment = _("girls in the brothel will be able to defend themselves better")
                     
                 "Help me with my enchantments" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
 
@@ -791,7 +791,7 @@ label performance_reward(girl):
                         girl.char "Of course! Just let me know what I can do."
                     
                     $ extra_effects = [Effect("change", "mana", int(2*modifier), scope="brothel")]
-                    $ effect_comment = "your available mana will increase"
+                    $ effect_comment = _("your available mana will increase")
                     
                 "Decorate the brothel" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
 
@@ -810,7 +810,7 @@ label performance_reward(girl):
                         girl.char "Well, [brothel.name] is our home after all. I'll try to make it look presentable."
                            
                     $ extra_effects = [Effect("boost", "love gains", 0.25*modifier, scope="brothel"),Effect("boost", "prestige", 0.1*modifier, scope="brothel")]
-                    $ effect_comment = "your girls' love and your brothel's prestige will improve more rapidly"
+                    $ effect_comment = _("your girls' love and your brothel's prestige will improve more rapidly")
                            
                 "Make sure all the girls exercise regularly" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
 
@@ -830,7 +830,7 @@ label performance_reward(girl):
                         girl.char "I'll make sure the girls of [brothel.name] are fit and ready to serve every night."
                     
                     $ extra_effects = [Effect("boost", "energy use", -0.1*modifier, scope="brothel")]
-                    $ effect_comment = "your girls will use their energy more efficiently"                
+                    $ effect_comment = _("your girls will use their energy more efficiently"          )      
                     
                 "Make sure our farm creatures are well trained" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
 
@@ -849,7 +849,7 @@ label performance_reward(girl):
                         girl.char "Sure, I don't mind."
                     
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.25*modifier, scope="farm")]
-                    $ effect_comment = "the farm as a whole will be more effective"
+                    $ effect_comment = _("the farm as a whole will be more effective")
 
                 "Be subservient to the other girls" if MC.gold > 10000: # boost brothel income
 
@@ -865,7 +865,7 @@ label performance_reward(girl):
                         girl.char "I'll try my best... But even so, I want to be the best I can be!" 
 
                     $ extra_effects = [Effect("boost", "income", 0.01*modifier, scope="brothel")] 
-                    $ effect_comment = "your brothel's profits should improve slightly"
+                    $ effect_comment = _("your brothel's profits should improve slightly")
     
     hide screen show_event
     
@@ -1149,7 +1149,7 @@ label undervalued_interact(girl):
                                     __("He still tells humiliating stories about it to this day."),
                                     __("After that I became the butt of many jokes within the slavers guild."),
                                     __("I had to endure some torture after that. Thankfully my circumstances have improved since then."),
-                                    __("Suddenly I became known around town as the ") + adjective + " " + trait + " " + noun + ".",
+                                    __("Suddenly I became known around town as the ") + adjective + " " + trait + " " + noun + _("."),
                                     __("The next day everyone was talking about it, spreading a heavily exaggerated story."),
                                     __("Some days later I visited the church, where a Chaplain spat in my face and called me a ") + adjective + " " + noun + __(". Now everyone hates me."),
                                     __("The following day the towncrier had a popular story to tell about 'The ") + adjective + " " + trait + " " + noun + __("' and people seem to remember that to this day."),
@@ -2025,7 +2025,7 @@ label freedom_interact(girl):
 
     girl.char "Master, can we have a word?"
     
-    $ mc_response = rand_choice(["What is it, " + girl.name + "?", "Of course, " + girl.name + ". Speak your mind.", "Naturally. Make it quick.", "What's the matter, " + girl.name + "?"])
+    $ mc_response = rand_choice([_("What is it, ") + girl.name + _("?"), _("Of course, ") + girl.name + _(". Speak your mind."), _("Naturally. Make it quick."), _("What's the matter, ") + girl.name + _("?")])
     $ renpy.say(you, mc_response)
 
     girl.char "I've been thinking..."
@@ -2179,17 +2179,17 @@ label ext_party(girl):
 
         renpy.show("brothel" + str(brothel.pic_index), at_list = [top])
 
-        party_intro = rand_choice([girl.name + " has invited some friends over to visit " + brothel.name + ".",girl.name + " is throwing a party for her friends.",girl.name + "'s friends have surprised her with a visit today."])
+        party_intro = rand_choice([girl.name + _(" has invited some friends over to visit ") + brothel.name + _("."),girl.name + _(" is throwing a party for her friends."),girl.name + _("'s friends have surprised her with a visit today.")])
 
         party_personality_comment = {
 
-            "very extravert" : [__("They're a rowdy bunch."), __("Their excited yelps liven up the brothel."), __("They run through the halls of the brothel as if they own the place."), __("They want to hear all about the customers from ") + girl.name + ".", __("They seem eager to get to know you."), __("They like to compete for each other's attention.")],
+            "very extravert" : [__("They're a rowdy bunch."), __("Their excited yelps liven up the brothel."), __("They run through the halls of the brothel as if they own the place."), __("They want to hear all about the customers from ") + girl.name + _("."), __("They seem eager to get to know you."), __("They like to compete for each other's attention.")],
 
-            "very introvert" : [__("They don't seem very talkative."),__("It's a timid affair."),__("They listen attentively as ") + girl.name + __(" sums up her day-to-day."),__("They don't seem very interested in a tour around the brothel."),__("They seem very supportive of her."),__("They look happy to be invited."), __("They seem very fond of ") + girl.name + "."],
+            "very introvert" : [__("They don't seem very talkative."),__("It's a timid affair."),__("They listen attentively as ") + girl.name + __(" sums up her day-to-day."),__("They don't seem very interested in a tour around the brothel."),__("They seem very supportive of her."),__("They look happy to be invited."), __("They seem very fond of ") + girl.name + _(".")],
 
-            "very materialist" : [__("They fervently inspect ") + girl.name + __("'s wardrobe."), __("They are particularly interested in her earnings."), __("They exchange makeup tips with one another."), __("They show off their jewelry to one another."), __("They seem keen to impress ") + girl.name + ".", __("They happily spend time gossiping.")],
+            "very materialist" : [__("They fervently inspect ") + girl.name + __("'s wardrobe."), __("They are particularly interested in her earnings."), __("They exchange makeup tips with one another."), __("They show off their jewelry to one another."), __("They seem keen to impress ") + girl.name + _("."), __("They happily spend time gossiping.")],
 
-            "very idealist" : [__("They talk politics with one another."), __("They seem very polite and well mannered."), __("They really enjoy each other's company."), __("They affectionately greet ") + girl.name + __(" with a hug."), __("They seem very fond of ") + girl.name + ".", __("One of them has brought lots of sweets. She offers some to the guards.")],
+            "very idealist" : [__("They talk politics with one another."), __("They seem very polite and well mannered."), __("They really enjoy each other's company."), __("They affectionately greet ") + girl.name + __(" with a hug."), __("They seem very fond of ") + girl.name + _("."), __("One of them has brought lots of sweets. She offers some to the guards.")],
 
             "very lewd" : [__("They seem excited to be here."),__("They look excited."),__("They're very curious about the brothel."),__("They're fascinated about every aspect of the brothel."), __("They her you to show them all of her sex toys."),__("They listen carefully as ") + girl.name + __(" tells stories about her life in the brothel.")],
 
@@ -2213,7 +2213,7 @@ label ext_party(girl):
             MC.items.append(get_rand_item(item_types = ["Flower"]))
 
         if girl.is_("very extravert") or dice(6) <= 3:
-            party_bonus += rand_choice([__("The girls really enjoy their time in ") + brothel.name + ".", __("Before long the visitors take their leave. Time flies by when you're having fun."), __("After a while the party comes to an end. ") + girl.name + __("'s friends leave with smiles on their faces.")]) + " "
+            party_bonus += rand_choice([__("The girls really enjoy their time in ") + brothel.name + _("."), __("Before long the visitors take their leave. Time flies by when you're having fun."), __("After a while the party comes to an end. ") + girl.name + __("'s friends leave with smiles on their faces.")]) + " "
             brothel.change_rep(girl.rank*2)
 
         if girl.is_("very introvert") and dice(6) <= 4:
@@ -2234,8 +2234,8 @@ label ext_party(girl):
 
             party_bonus_gold = max(40 + dice(60), int(round(girl.rank * random.uniform(20.0, 100.0))))
             party_bonus = rand_choice([__("After her friends are gone, ") + girl.name + __(" comes up to you to share some of the spoils.", "When the visitors have come and gone, ") + girl.name + __(" approaches you with a gift.")])
-            party_bonus_comment = rand_choice([__("I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards ") + brothel.name + ".", __("I charged the girls a fee to enter ") + brothel.name + __(". It's only right that you should recieve most of that."), __("I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me.")])
-            renpy.say("",party_bonus + " She hands you " + str(party_bonus_gold) + " gold.")
+            party_bonus_comment = rand_choice([__("I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards ") + brothel.name + _("."), __("I charged the girls a fee to enter ") + brothel.name + __(". It's only right that you should recieve most of that."), __("I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me.")])
+            renpy.say("",party_bonus + _(" She hands you ") + str(party_bonus_gold) + _(" gold."))
             renpy.play(s_gold, "sound")
             MC.gold += party_bonus_gold
             renpy.say(girl.char,party_bonus_comment)
@@ -2465,7 +2465,7 @@ label ext_birthday(girl): # girl's birthday
     show expression bg_bro at top with dissolve
 
     python:
-        renpy.say("","It's {b}{color=[c_orange]}" + girl.name + "'s birthday{/color}{/b} today. {i}Love and fear can be influenced much more effectively on a girl's birthday.{/i}")
+        renpy.say("",_("It's {b}{color=[c_orange]}") + girl.name + _("'s birthday{/color}{/b} today. {i}Love and fear can be influenced much more effectively on a girl's birthday.{/i}"))
         girl.add_effects(Effect("boost", "love gains", 2), expires = calendar.time + 1)
         girl.add_effects(Effect("boost", "fear gains", 2), expires = calendar.time + 1)
     
