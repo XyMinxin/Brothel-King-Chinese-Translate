@@ -284,7 +284,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:301
     old "Today"
-    new "今朝""
+    new "今朝"
 
     # game/BKstart.rpy:302
     old "Stella"
