@@ -2749,10 +2749,10 @@ init -3 python:
             girl.add_log(act + "_rep", rep_gains[girl])
 
             if result in ("very bad", "bad"):
-                girl.track_event("bad result", arg=(__(result), __(act)))
+                girl.track_event("bad result", arg=(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
             elif result in ("good", "very good", "perfect"):
-                girl.track_event("good result", arg=(__(result), __(act)))
+                girl.track_event("good result", arg(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
 
         return events
@@ -5642,5 +5642,22 @@ init -3 python:
         if debug_mode:
             renpy.block_rollback()
 
+## 中文翻译函数 ##
+
+    def tl_cn(text, translation_dicts, default_value=None):
+        if isinstance(translation_dicts, dict):
+            # 如果 translation_dicts 是单个字典
+            if text in translation_dicts:
+                return translation_dicts[text]
+        else:
+            # 如果 translation_dicts 是字典列表
+            for translation_dict in translation_dicts:
+                if text in translation_dict:
+                    return translation_dict[text]
+        
+        if default_value is not None:
+            return default_value
+        else:
+            return text
 
 #### END OF BK FUNCTIONS FILE ####

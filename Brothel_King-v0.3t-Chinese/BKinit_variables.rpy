@@ -166,35 +166,35 @@ init -3 python:
     diff_settings = ["stats", "xp", "jp", "pref", "rep", "gold", "budget", "rewards", "resources", "prestige", "tax rate", "satisfaction", "security"] # A list is needed to show the values in order
 
     diff_setting_name = {
-                         "gold" : "青楼收入倍率",
-                         "budget" : "顾客预算倍率",
-                         "rewards" : "报酬培训倍率",
-                         "resources" : "资源丰富程度",
-                         "stats" : "女孩技能成长",
-                         "pref" : "性技培训速度",
-                         "xp" : "等级经验倍率",
-                         "jp" : "职业经验倍率",
-                         "rep" : "女孩声望倍率",
-                         "prestige" : "主角声望倍率",
-                         "tax rate" : "公会税款倍率",
-                         "satisfaction" : "顾客的满意度",
-                         "security" : "事件周期长度",
+                        "gold" : "青楼收入倍率",
+                        "budget" : "顾客预算倍率",
+                        "rewards" : "报酬培训倍率",
+                        "resources" : "资源丰富程度",
+                        "stats" : "女孩技能成长",
+                        "pref" : "性技培训速度",
+                        "xp" : "等级经验倍率",
+                        "jp" : "职业经验倍率",
+                        "rep" : "女孩声望倍率",
+                        "prestige" : "主角声望倍率",
+                        "tax rate" : "公会税款倍率",
+                        "satisfaction" : "顾客的满意度",
+                        "security" : "事件周期长度",
                         }
 
     diff_setting_description = {
-                         "gold" : "调整青楼的{b}}收入{/b}倍率。",
-                         "budget" : "调整客户消费的{b}预算{/b}上限。",
-                         "rewards" : "调整{b}任务、培训和合约{/b}的奖励倍率。",
-                         "resources" : "调整单次收集和交易{b}资源{/b}的数量。",
-                         "stats" : "调整女孩{b}属性{/b}的增长速度。",
-                         "pref" : "调整女孩{b}性倾向{/b}的增长速度。",
-                         "xp" : "调整女孩{b}等级经验{/b}的增长速度。",
-                         "jp" : "调整女孩{b}职业经验{/b}的增长速度。",
-                         "rep" : "调整女孩{b}声望{/b}的增长速度。",
-                         "prestige" : "影响主角 {b}声望{/b}的增长。",
-                         "tax rate" : "增加或减少交给公会的 {b}税款{/b}。",
-                         "satisfaction" : "改变客户{b}满意度{/b}的增长速度。",
-                         "security" : "调整每次安全事件之间的间隔时间。",
+                        "gold" : "调整青楼的{b}}收入{/b}倍率。",
+                        "budget" : "调整客户消费的{b}预算{/b}上限。",
+                        "rewards" : "调整{b}任务、培训和合约{/b}的奖励倍率。",
+                        "resources" : "调整单次收集和交易{b}资源{/b}的数量。",
+                        "stats" : "调整女孩{b}属性{/b}的增长速度。",
+                        "pref" : "调整女孩{b}性倾向{/b}的增长速度。",
+                        "xp" : "调整女孩{b}等级经验{/b}的增长速度。",
+                        "jp" : "调整女孩{b}职业经验{/b}的增长速度。",
+                        "rep" : "调整女孩{b}声望{/b}的增长速度。",
+                        "prestige" : "影响主角 {b}声望{/b}的增长。",
+                        "tax rate" : "增加或减少交给公会的 {b}税款{/b}。",
+                        "satisfaction" : "改变客户{b}满意度{/b}的增长速度。",
+                        "security" : "调整每次安全事件之间的间隔时间。",
                         }
 
     diff_settings_range = {
@@ -419,20 +419,20 @@ init -3 python:
     all_MC_stats = ["strength", "spirit", "charisma", "speed"]
 
     MC_playerclass_description = {
-                                  "战士" : "你是一个战士。虽然你看起来很年轻，但你已历经沙场磨难。你善于战斗，可以轻松保护他人。",
-                                  "法师" : "你是一个法师。凡人臣服于你的魔法。你可以使用各种各样强大的咒语，催眠别人也不错。",
-                                  "奸商" : "你是一个商人。你从小就接触经商。你可以和有钱人做大买卖，在购买东西时讨价还价。"
-                                  }
+                                "Warrior" : "你是一个战士。虽然你看起来很年轻，但你已历经沙场磨难。你善于战斗，可以轻松保护他人。",
+                                "Wizard" : "你是一个法师。凡人臣服于你的魔法。你可以使用各种各样强大的咒语，催眠别人也不错。",
+                                "Trader" : "你是一个商人。你从小就接触经商。你可以和有钱人做大买卖，在购买东西时讨价还价。"
+                                }
     MC_stat_description = {
-                        }
                             "strength" : "这是你的力量值。力量越高，你的战斗能力和防御能力就越强。",
                             "spirit" : "这是你的精神力。精神力是你法力的来源，精神力越高你的法术就越强。",
                             "charisma" : "魅力是性格、外表和言行的综合。魅力越高你在互动中取得的效果就越好。",
                             "speed" : "这是你的行动力。行动力决定了你在一天内可以执行多少次操作."
+                        }
 
     god_description = {
-                        "太阳神" : "你信仰太阳神，他是光明之神和天使之主。你的力量+1。",
-                        "莎莉娅" : "你信仰莎莉娅，她是暗影和黑夜的统治者。你的精神+1。",
+                        "Arios" : "你信仰太阳神，他是光明之神和天使之主。你的力量+1。",
+                        "Shalia" : "你信仰莎莉娅，她是暗影和黑夜的统治者。你的精神+1。",
                         None : "你是个无神论者，比起神明你更喜欢大自然。你的魅力+1。"
                         }
 
@@ -470,6 +470,13 @@ init -3 python:
                 }
 
     sorter_dict = { # [Caption, attribute, tooltip, reverse order]
+                    "alpha" : ["首字母", "name", "名字", False],
+                    "badge" : ["徽章", "badge", "徽章", True],
+                    "price" : ["价值", "price", "价值", False],
+                    "type" : ["种类", "filter", "物品类型", False],
+                    "level" : ["等级", "level", "女孩的等级", True],
+                    "rank" : ["阶级", "rank", "女孩的阶级", True],
+                    "job" : ["职业", "job_sort_value", "女孩的工作", False],
                     "beauty" : ["Bea.", "beauty", "Beauty", True],
                     "body" : ["Bod.", "body", "Body", True],
                     "charm" : ["Cha.", "charm", "Charm", True],
@@ -483,19 +490,12 @@ init -3 python:
                     "anal" : ["Anal", "anal", "Anal skill", True],
                     "fetish" : ["Fet.", "fetish", "Fetish skill", True],
                     "energy" : ["En.", "energy", "energy", False],
-                }
-                    "alpha" : ["首字母", "name", "名字", False],
-                    "badge" : ["徽章", "badge", "徽章", True],
-                    "price" : ["价值", "price", "价值", False],
-                    "type" : ["种类", "filter", "物品类型", False],
-                    "level" : ["等级", "level", "女孩的等级", True],
-                    "rank" : ["阶级", "rank", "女孩的阶级", True],
-                    "job" : ["职业", "job_sort_value", "女孩的工作", False],
                     "experience" : ["性能力", "training_value", "性训练水平", True],
+                }
 
     ## RESOURCES ##
 
-    build_resources = ["wood", "leather", "dye", "marble", "ore", "silk", "diamond"]
+    build_resources = [_("wood"), _("leather"), _("dye"), _("marble"), _("ore"), _("silk"), _("diamond")]
 
     # Exchange rates are stored as fractions for display in the resource market tab
 
@@ -653,11 +653,12 @@ init -4 python:
                     5: 750
                 }
 
-    minion_description = {"stallion" : "种马是来自鲜血群岛培养的的男性奴隶，他们被魔法洗脑，他们拥有异常粗大的肉棒....",
-                         "beast" : "吉泽尔在农场饲养了各种各样的野兽。与其说这里是农场倒不如说是动物园，我说真的.",
-                         "monster" : "这些是塞洛斯黑暗的洞穴里人工培育的恶魔。它们有很多种形态，但有触手的是最受欢迎的.",
-                         "machine" : "机器或机械有很多用途，但在吉泽尔的工房里，它们似乎只被用于一个用途:性."
-                         }
+    minion_description = {
+                        "stallion" : "种马是来自鲜血群岛培养的的男性奴隶，他们被魔法洗脑，他们拥有异常粗大的肉棒....",
+                        "beast" : "吉泽尔在农场饲养了各种各样的野兽。与其说这里是农场倒不如说是动物园，我说真的.",
+                        "monster" : "这些是塞洛斯黑暗的洞穴里人工培育的恶魔。它们有很多种形态，但有触手的是最受欢迎的.",
+                        "machine" : "机器或机械有很多用途，但在吉泽尔的工房里，它们似乎只被用于一个用途:性."
+                        }
 
     all_minion_types = ["stallion", "beast", "monster", "machine"]
 
@@ -668,12 +669,12 @@ init -4 python:
                 "machine" : [],
                 }
 
-                        }
     farm_holding_dict = {"libido" : "照看奴仆 (+性欲)",
                             "sensitivity" : "服侍吉泽尔 (+敏感)",
                             "obedience" : "打扫农场 (+服从)",
                             "constitution" : "外出工作 (+体格)",
                             "rest": "休息",
+                        }
 
     farm_ttip =         {
                         "libido" : "她会照顾农场的生物(提高性欲，消耗精力).",
@@ -789,11 +790,12 @@ init -4 python:
                     "lewd fascinated": "哦....我要去了！啊, %s 最棒！高潮了!!!这已经是第几次了 *喷射*",
                     }
 
-    minion_adjectives = {"stallion" : ["阴茎勃起的", "流着口水的", "好色的", "体态健美的", "喘着粗气的", "笨重的", "嘶鸣着的", "猥琐的"],
-                         "beast" : ["流着口水的", "好色的", "满身污秽的", "肮脏的", "粗暴的", "兴奋的", "肥胖的"],
-                         "monster" : ["好色的", "黏糊糊的", "满身污秽的", "肮脏的", "庞大的", "扭动的", "不可思议的", "怪异的", "猥琐的"],
-                         "machine" : ["嗡嗡做响的", "怪异的", "不可思议的", "匪夷所思的", "着魔的", "复杂的", "隆起的"],
-                         }
+    minion_adjectives = {
+                        "stallion" : ["阴茎勃起的", "流着口水的", "好色的", "体态健美的", "喘着粗气的", "笨重的", "嘶鸣着的", "猥琐的"],
+                        "beast" : ["流着口水的", "好色的", "满身污秽的", "肮脏的", "粗暴的", "兴奋的", "肥胖的"],
+                        "monster" : ["好色的", "黏糊糊的", "满身污秽的", "肮脏的", "庞大的", "扭动的", "不可思议的", "怪异的", "猥琐的"],
+                        "machine" : ["嗡嗡做响的", "怪异的", "不可思议的", "匪夷所思的", "着魔的", "复杂的", "隆起的"],
+                        }
 
     minion_name_dict = {
                         "consonants" : ["q", "w", "r", "t", "p", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"],
@@ -836,9 +838,10 @@ init -4 python:
 
     merchant_dict = {"Stella" : "stallion", "Goldie" : "beast", "Willow" : "monster", "Gina" : "machine"}
 
-    merchant_title = {  "Stella" : "性感火辣的种马商人", "Goldie" : "空虚寂寞的农场女孩", "Willow" : "英姿飒爽的怪物猎人", "Gina" : "诡异古怪的科学狂人",
-                        "Riche" : "穿着暴露的花店老板", "Ramias" : "前凸后翘的武器商人", "Gurigura" : "童颜巨乳的古莉古拉", "Katryn" : "凹凸有致的饰品商人", "Gift Shop Girl" : "可爱迷人的礼品女孩", "Today" : "清凉暴露的裁缝姐妹", "shop" : "风韵犹存的老板娘",
-                        }
+    merchant_title = {
+                    "Stella" : "性感火辣的种马商人", "Goldie" : "空虚寂寞的农场女孩", "Willow" : "英姿飒爽的怪物猎人", "Gina" : "诡异古怪的科学狂人",
+                    "Riche" : "穿着暴露的花店老板", "Ramias" : "前凸后翘的武器商人", "Gurigura" : "童颜巨乳的古莉古拉", "Katryn" : "凹凸有致的饰品商人", "Gift Shop Girl" : "可爱迷人的礼品女孩", "Today" : "清凉暴露的裁缝姐妹", "shop" : "风韵犹存的老板娘",
+                    }
 
     merchant_greetings = {
                         "shop greeting" : "Hi, handsome! Please take a look at my wares... *wink*",
@@ -1060,11 +1063,11 @@ init -4 python:
                     }
 
     gstats_descript = {
-                       "beauty" : "一个外貌迷人的姑娘",
-                       "body" : "一个身材火辣的姑娘",
-                       "charm" : "一个充满魅力的姑娘",
-                       "refinement" : "一个举止优雅的女孩",
-                      }
+                    "beauty" : "一个外貌迷人的姑娘",
+                    "body" : "一个身材火辣的姑娘",
+                    "charm" : "一个充满魅力的姑娘",
+                    "refinement" : "一个举止优雅的女孩",
+                    }
 
     gstat_job_skill = {
                     "Beauty" : "masseuse",
@@ -1253,7 +1256,7 @@ init python:
                         "yandere" : Personality(name="yandere", attributes=("very lewd", "very dom"), rarely_stories = ["slave_story3","slave_story7"], description="热情和神经质的程度非常高。充满爱心和奉献精神，但也是个疯子。为了得到她的男人并扼杀竞争对手，她准备做任何事情，包括....真正扼杀他们。"),
                         "masochist2" : Personality(name="masochist", attributes=("very lewd", "very sub"), description="地位越低越好。她喜欢在底层，享受各种强加在她身上的肮脏事情。礼物和爱的姿态让她恼火，她觉得自己不配拥有这些东西。"),
                         "stubborn" : Personality(name="stubborn", attributes=("very modest", "very dom"), description="不喜欢不认同她的原则和道德价值观的人，也不喜欢闹矛盾。她在派对上很有趣，如果你喜欢以酒馆斗殴结束的派对的话。"),
-                     }
+                    }
 
     reserved_personality_names = gpersonalities.keys()
 
@@ -1291,11 +1294,11 @@ init python:
                                 # Rewardable events
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
-                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", discipline=False),
+                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}%s{/color}技能。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}(%s)。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
-                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
+                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了%s训练{/color}。", discipline=False),
                                 "helped" : GirlRecentEvent(type="helped", action="帮助朋友", base_description="", discipline=False), # Not implemented
 
 
@@ -1308,12 +1311,12 @@ init python:
 
                                 # Punishable events
                                 "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了。", encourage=False),
-                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]的形式工作{/color}。", encourage=False),
+                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以%s的形式工作{/color}。", encourage=False),
                                 "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人%s{/color}。", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[result_name_dict[%s]]{/color}([girl_related_dict[%s]])。", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}%s{/color}(%s)。", encourage=False),
                                 "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
                                 "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
-                                "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练([girl_related_dict[%s]]){/color}。", encourage=False),
+                                "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练(%s){/color}。", encourage=False),
                                 "argued" : GirlRecentEvent(type="argued", action="与对手争执", base_description="", encourage=False), # Not implemented
 
                                 # Passive events (cannot be punished or rewarded=)
@@ -1367,17 +1370,17 @@ init python:
                         }
 
     experienced_description = {
-                               "very experienced" : "训练有素",
-                               "experienced" : "高级",
-                               "average" : "中级",
-                               "inexperienced" : "初级",
-                               "very inexperienced" : "未经训练",
-                               "very experienced ttip" : "{size=-1}{color=[c_orange]}她拥有多年的性奴隶经验，经手过几任主人，接受了各式各样的调教训练。{/color}",
-                               "experienced ttip" : "{size=-1}{color=[c_green]}她已经做了好几个月的性奴，并接受了各种形式的培训。{/color}",
-                               "average ttip" : "{size=-1}{color=[c_yellow]}她已经做了几个月的性奴隶，并接受了一些性训练。{/color}",
-                               "inexperienced ttip" : "{color=[c_lightred]}她最近才成为性奴隶，还有很多东西要学。{/color}",
-                               "very inexperienced ttip" : "{color=[c_red]}她刚被奴隶商队带来，她从未接受过性训练。天知道她会有什么反应？{/color}",
-                              }
+                            "very experienced" : "训练有素",
+                            "experienced" : "高级",
+                            "average" : "中级",
+                            "inexperienced" : "初级",
+                            "very inexperienced" : "未经训练",
+                            "very experienced ttip" : "{size=-1}{color=[c_orange]}她拥有多年的性奴隶经验，经手过几任主人，接受了各式各样的调教训练。{/color}",
+                            "experienced ttip" : "{size=-1}{color=[c_green]}她已经做了好几个月的性奴，并接受了各种形式的培训。{/color}",
+                            "average ttip" : "{size=-1}{color=[c_yellow]}她已经做了几个月的性奴隶，并接受了一些性训练。{/color}",
+                            "inexperienced ttip" : "{color=[c_lightred]}她最近才成为性奴隶，还有很多东西要学。{/color}",
+                            "very inexperienced ttip" : "{color=[c_red]}她刚被奴隶商队带来，她从未接受过性训练。天知道她会有什么反应？{/color}",
+                            }
 
     experienced_modifiers = {
                             "very experienced" : [250, 150, 75],
@@ -1475,7 +1478,7 @@ init python:
                                         GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
                     "{size=+8}特别训练{/size}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_train_free_form", condition = "free-form"),
-                                          GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
+                                        GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
                     "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
@@ -1599,335 +1602,335 @@ init python:
                     }
 
     fix_description = {
-                       "public acts description" : "在公共场合做",
-                       "public acts action" : "公开play",
-                       "public acts intro" : "你把青楼里的所有人都叫来: 女孩、帮手、路人....你告诉%s，她必须在公开场合做。",
-                       "public acts pos_reaction" : "她脸红了，你可以看到她的乳头在她的上衣下微微颤动。一想到要在公共场合做，她就兴奋不已。",
-                       "public acts neg_reaction" : "她愤愤不平，抱怨说被人们看着时，她什么也做不了。你无视了她的抱怨。",
+                        "public acts description" : "在公共场合做",
+                        "public acts action" : "公开play",
+                        "public acts intro" : "你把青楼里的所有人都叫来: 女孩、帮手、路人....你告诉%s，她必须在公开场合做。",
+                        "public acts pos_reaction" : "她脸红了，你可以看到她的乳头在她的上衣下微微颤动。一想到要在公共场合做，她就兴奋不已。",
+                        "public acts neg_reaction" : "她愤愤不平，抱怨说被人们看着时，她什么也做不了。你无视了她的抱怨。",
 
-                       "cosplay description" : "穿上性感暴露的cosplay服装",
-                       "cosplay action" : "穿着cosplay服装",
-                       "cosplay intro" : "你让%s选择她穿的cosplay服装。",
-                       "cosplay pos_reaction" : "她咬着嘴唇，看起来很俏皮。她选择了一件开档露乳，看起来超淫荡的制服。",
-                       "cosplay neg_reaction" : "她选择了一套相当保守和乏味的制服。她不喜欢不得不穿上它。",
+                        "cosplay description" : "穿上性感暴露的cosplay服装",
+                        "cosplay action" : "穿着cosplay服装",
+                        "cosplay intro" : "你让%s选择她穿的cosplay服装。",
+                        "cosplay pos_reaction" : "她咬着嘴唇，看起来很俏皮。她选择了一件开档露乳，看起来超淫荡的制服。",
+                        "cosplay neg_reaction" : "她选择了一套相当保守和乏味的制服。她不喜欢不得不穿上它。",
 
-                       "dildos description" : "在做爱时使用性玩具",
-                       "dildos action" : "使用假阳具",
-                       "dildos intro" : "你告诉%s在你操她的时候在她的另一个洞里塞上假阳具。",
-                       "dildos pos_reaction" : "她很容易就把假阳具塞到了合适的地方。这看起来像是她经常做的事情。",
-                       "dildos neg_reaction" : "她讨厌这样做，因为她不得不痛苦地把假阳具强行塞进去。她一点都不享受。",
+                        "dildos description" : "在做爱时使用性玩具",
+                        "dildos action" : "使用假阳具",
+                        "dildos intro" : "你告诉%s在你操她的时候在她的另一个洞里塞上假阳具。",
+                        "dildos pos_reaction" : "她很容易就把假阳具塞到了合适的地方。这看起来像是她经常做的事情。",
+                        "dildos neg_reaction" : "她讨厌这样做，因为她不得不痛苦地把假阳具强行塞进去。她一点都不享受。",
 
-                       "vibrators description" : "跳蛋",
-                       "vibrators action" : "使用跳蛋",
-                       "vibrators intro" : "你告诉%s在做的时候要使用跳蛋。",
-                       "vibrators pos_reaction" : "她在勃起的阴蒂上迅速地压下跳蛋，使自己处于一种强烈的兴奋状态。",
-                       "vibrators neg_reaction" : "她用跳蛋时很敏感，极其不舒服，一直在抱怨那感觉怪怪的。",
+                        "vibrators description" : "跳蛋",
+                        "vibrators action" : "使用跳蛋",
+                        "vibrators intro" : "你告诉%s在做的时候要使用跳蛋。",
+                        "vibrators pos_reaction" : "她在勃起的阴蒂上迅速地压下跳蛋，使自己处于一种强烈的兴奋状态。",
+                        "vibrators neg_reaction" : "她用跳蛋时很敏感，极其不舒服，一直在抱怨那感觉怪怪的。",
 
-                       "dirty sex description" : "肮脏的性爱",
-                       "dirty sex action" : "就地性交",
-                       "dirty sex intro" : "你告诉%s让她直接躺在烂泥里，准备接受你的“惩罚”。",
-                       "dirty sex pos_reaction" : "她似乎很高兴直接躺在地上，像个下流的婊子。",
-                       "dirty sex neg_reaction" : "她讨厌身上沾上灰尘，一直抱怨这样做不健康。",
+                        "dirty sex description" : "肮脏的性爱",
+                        "dirty sex action" : "就地性交",
+                        "dirty sex intro" : "你告诉%s让她直接躺在烂泥里，准备接受你的“惩罚”。",
+                        "dirty sex pos_reaction" : "她似乎很高兴直接躺在地上，像个下流的婊子。",
+                        "dirty sex neg_reaction" : "她讨厌身上沾上灰尘，一直抱怨这样做不健康。",
 
-                       "penis worship description" : "崇拜肉棒，尤其是大屌",
-                       "penis worship action" : "服侍肉棒",
-                       "penis worship intro" : "你告诉%s她必须在你的阴茎上擦油并给予适当的尊重。",
-                       "penis worship pos_reaction" : "她仔细看了看你那硕大的、跳动的阴茎，似乎很高兴、很兴奋，因为她马上就能和它一起玩。她轻轻的在上面吻了一下。",
-                       "penis worship neg_reaction" : "她把目光从你勃起的大屌上移开，仍然不习惯于直接面对一个男人的阴茎。",
+                        "penis worship description" : "崇拜肉棒，尤其是大屌",
+                        "penis worship action" : "服侍肉棒",
+                        "penis worship intro" : "你告诉%s她必须在你的阴茎上擦油并给予适当的尊重。",
+                        "penis worship pos_reaction" : "她仔细看了看你那硕大的、跳动的阴茎，似乎很高兴、很兴奋，因为她马上就能和它一起玩。她轻轻的在上面吻了一下。",
+                        "penis worship neg_reaction" : "她把目光从你勃起的大屌上移开，仍然不习惯于直接面对一个男人的阴茎。",
 
-                       "bondage description" : "捆绑游戏",
-                       "bondage action" : "麻绳束缚",
-                       "bondage intro" : "使用粗劣的麻绳加上你作为奴隶主的专业的束缚知识，你将%s绑成一个极度羞耻和尴尬的姿势。",
-                       "bondage pos_reaction" : "当你把她捆起来时，她高兴地呻吟着，尤其喜欢那种麻绳摩擦皮肤的感觉。",
-                       "bondage neg_reaction" : "当你把她捆起来时，她又哭又闹，看上去非常不舒服。",
+                        "bondage description" : "捆绑游戏",
+                        "bondage action" : "麻绳束缚",
+                        "bondage intro" : "使用粗劣的麻绳加上你作为奴隶主的专业的束缚知识，你将%s绑成一个极度羞耻和尴尬的姿势。",
+                        "bondage pos_reaction" : "当你把她捆起来时，她高兴地呻吟着，尤其喜欢那种麻绳摩擦皮肤的感觉。",
+                        "bondage neg_reaction" : "当你把她捆起来时，她又哭又闹，看上去非常不舒服。",
 
-                       "oil description" : "让身上涂上油",
-                       "oil action" : "精油按摩",
-                       "oil intro" : "你给了%s一瓶精油，坚持要她涂满全身。",
-                       "oil pos_reaction" : "她在身体的每一个角落都涂上了油，供你取乐，在你的注视下，俏皮地按摩着她晶莹的皮肤。",
-                       "oil neg_reaction" : "她对滑溜溜、油乎乎的东西感到不舒服，抱怨说它很臭，感觉很反感。",
+                        "oil description" : "让身上涂上油",
+                        "oil action" : "精油按摩",
+                        "oil intro" : "你给了%s一瓶精油，坚持要她涂满全身。",
+                        "oil pos_reaction" : "她在身体的每一个角落都涂上了油，供你取乐，在你的注视下，俏皮地按摩着她晶莹的皮肤。",
+                        "oil neg_reaction" : "她对滑溜溜、油乎乎的东西感到不舒服，抱怨说它很臭，感觉很反感。",
 
-                       "wet description" : "泼水弄湿她",
-                       "wet action" : "弄湿她",
-                       "wet intro" : "你让希露给你拿一桶冷水，直接倒在%s的身上。",
-                       "wet pos_reaction" : "她喜欢湿淋淋的，当她的手滑过全身时，嘴里轻轻地呻吟着。",
-                       "wet neg_reaction" : "她看起来又沮丧又痛苦，像只落水猫咪。她讨厌水。",
+                        "wet description" : "泼水弄湿她",
+                        "wet action" : "弄湿她",
+                        "wet intro" : "你让希露给你拿一桶冷水，直接倒在%s的身上。",
+                        "wet pos_reaction" : "她喜欢湿淋淋的，当她的手滑过全身时，嘴里轻轻地呻吟着。",
+                        "wet neg_reaction" : "她看起来又沮丧又痛苦，像只落水猫咪。她讨厌水。",
 
-                       "submission description" : "丢人现眼的姿势",
-                       "submission action" : "羞辱她",
-                       "submission intro" : "你让%s跪下来乞求即将发生的事情。",
-                       "submission pos_reaction" : "她热切地服从你的命令，不顾一切地求你虐待她。",
-                       "submission neg_reaction" : "她拒绝乞求，并抱怨说这是对她的侮辱。",
+                        "submission description" : "丢人现眼的姿势",
+                        "submission action" : "羞辱她",
+                        "submission intro" : "你让%s跪下来乞求即将发生的事情。",
+                        "submission pos_reaction" : "她热切地服从你的命令，不顾一切地求你虐待她。",
+                        "submission neg_reaction" : "她拒绝乞求，并抱怨说这是对她的侮辱。",
 
-                       "femdom description" : "表现得像占主导地位的伙伴",
-                       "femdom action" : "让她主导",
-                       "femdom intro" : "你告诉%s这次由她去主导和支配。",
-                       "femdom pos_reaction" : "她很高兴被赋予主导地位的角色。她反常地喜欢发号施令和支配她的伴侣。",
-                       "femdom neg_reaction" : "她犹豫了一下，然后尴尬地试图用不太令人信服的声音下达一个命令。她几乎马上就改口道歉了。她一点也不喜欢在这种事情上作为主导。",
+                        "femdom description" : "表现得像占主导地位的伙伴",
+                        "femdom action" : "让她主导",
+                        "femdom intro" : "你告诉%s这次由她去主导和支配。",
+                        "femdom pos_reaction" : "她很高兴被赋予主导地位的角色。她反常地喜欢发号施令和支配她的伴侣。",
+                        "femdom neg_reaction" : "她犹豫了一下，然后尴尬地试图用不太令人信服的声音下达一个命令。她几乎马上就改口道歉了。她一点也不喜欢在这种事情上作为主导。",
 
-                       "gags description" : "做爱时被塞住嘴",
-                       "gags action" : "戴上口球",
-                       "gags intro" : "你命令%s戴上一个大的球型口塞，使她的嘴一直张着难以说话。",
-                       "gags pos_reaction" : "当她戴上口塞时给你一个羞涩的眼神，似乎很奇怪，她看起来既高兴又兴奋。",
-                       "gags neg_reaction" : "她控制不住地流口水，几乎说不出话来，愤怒地看着你。她似乎很讨厌这样。",
+                        "gags description" : "做爱时被塞住嘴",
+                        "gags action" : "戴上口球",
+                        "gags intro" : "你命令%s戴上一个大的球型口塞，使她的嘴一直张着难以说话。",
+                        "gags pos_reaction" : "当她戴上口塞时给你一个羞涩的眼神，似乎很奇怪，她看起来既高兴又兴奋。",
+                        "gags neg_reaction" : "她控制不住地流口水，几乎说不出话来，愤怒地看着你。她似乎很讨厌这样。",
 
-                       "strap-ons description" : "戴上假阴茎去干其他女孩",
-                       "strap-ons action" : "戴上假阴茎",
-                       "strap-ons intro" : "你让%s戴上假阳具干希露。",
-                       "strap-ons pos_reaction" : "她戴上一个巨大的黑色带状假阳具, 一头插在她的小穴，另一头在她面前晃来晃去的时候，她看起来很得意。希露喘着粗气看着那个东西。",
-                       "strap-ons neg_reaction" : "她一边穿一边抱怨自己为什么不是个男人。",
+                        "strap-ons description" : "戴上假阴茎去干其他女孩",
+                        "strap-ons action" : "戴上假阴茎",
+                        "strap-ons intro" : "你让%s戴上假阳具干希露。",
+                        "strap-ons pos_reaction" : "她戴上一个巨大的黑色带状假阳具, 一头插在她的小穴，另一头在她面前晃来晃去的时候，她看起来很得意。希露喘着粗气看着那个东西。",
+                        "strap-ons neg_reaction" : "她一边穿一边抱怨自己为什么不是个男人。",
 
-                       "roleplay description" : "在做爱的时候扮演一个角色",
-                       "roleplay action" : "玩角色扮演",
-                       "roleplay intro" : "你告诉%s将扮演的角色: 你是城市卫兵，她是一个被捕的小偷。",
-                       "roleplay pos_reaction" : "她喜欢角色扮演这个玩法，并努力表现出一个面带忏悔的好色小偷的样子。",
-                       "roleplay neg_reaction" : "她认为这很愚蠢，很容易分心，根本就不参与其中。",
+                        "roleplay description" : "在做爱的时候扮演一个角色",
+                        "roleplay action" : "玩角色扮演",
+                        "roleplay intro" : "你告诉%s将扮演的角色: 你是城市卫兵，她是一个被捕的小偷。",
+                        "roleplay pos_reaction" : "她喜欢角色扮演这个玩法，并努力表现出一个面带忏悔的好色小偷的样子。",
+                        "roleplay neg_reaction" : "她认为这很愚蠢，很容易分心，根本就不参与其中。",
 
-                       "plugs description" : "在她屁眼里塞上肛塞",
-                       "plugs action" : "用肛塞",
-                       "plugs intro" : "拿出一个大的、闪闪发光的橡胶塞，你告诉%s把它插入她的屁股里。",
-                       "plugs pos_reaction" : "她高兴地将肛塞推入她准备好的屁眼深处时，发出了诱人地呻吟声。",
-                       "plugs neg_reaction" : "她非常艰难地插入肛塞，感到异常羞愧和痛苦。这让她感到非常不自在。",
+                        "plugs description" : "在她屁眼里塞上肛塞",
+                        "plugs action" : "用肛塞",
+                        "plugs intro" : "拿出一个大的、闪闪发光的橡胶塞，你告诉%s把它插入她的屁股里。",
+                        "plugs pos_reaction" : "她高兴地将肛塞推入她准备好的屁眼深处时，发出了诱人地呻吟声。",
+                        "plugs neg_reaction" : "她非常艰难地插入肛塞，感到异常羞愧和痛苦。这让她感到非常不自在。",
 
-                       "enemas description" : "进行灌肠。",
-                       "enemas action" : "灌肠",
-                       "enemas intro" : "你告诉%s是时候清理了。",
-                       "enemas pos_reaction" : "当你把灌肠器插进她的屁眼里，开始往她身上灌满水时，她求你把水量再加大些。很快，她的肚子像气球一样鼓起来了。",
-                       "enemas neg_reaction" : "当你把清水灌满她的肚子时，她因羞愧和恐惧而哭泣不止。她恳求你停下来。",
+                        "enemas description" : "进行灌肠。",
+                        "enemas action" : "灌肠",
+                        "enemas intro" : "你告诉%s是时候清理了。",
+                        "enemas pos_reaction" : "当你把灌肠器插进她的屁眼里，开始往她身上灌满水时，她求你把水量再加大些。很快，她的肚子像气球一样鼓起来了。",
+                        "enemas neg_reaction" : "当你把清水灌满她的肚子时，她因羞愧和恐惧而哭泣不止。她恳求你停下来。",
 
-                       "beads description" : "使用肛门拉珠。",
-                       "beads action" : "使用肛门拉珠",
-                       "beads intro" : "你给%s一条好像巨大珠子串成的项链，并告诉她该怎么用。",
-                       "beads pos_reaction" : "她把珠子一个接一个地塞进她的屁眼里，你在看的时候她一直在呻吟，显然很享受。",
-                       "beads neg_reaction" : "当她痛苦地往屁股里塞进一两颗珠子的时候，她皱起眉头并轻声抽泣着。她告诉你她讨厌这样。",
+                        "beads description" : "使用肛门拉珠。",
+                        "beads action" : "使用肛门拉珠",
+                        "beads intro" : "你给%s一条好像巨大珠子串成的项链，并告诉她该怎么用。",
+                        "beads pos_reaction" : "她把珠子一个接一个地塞进她的屁眼里，你在看的时候她一直在呻吟，显然很享受。",
+                        "beads neg_reaction" : "当她痛苦地往屁股里塞进一两颗珠子的时候，她皱起眉头并轻声抽泣着。她告诉你她讨厌这样。",
 
-                       "masturbation description" : "让她手淫。",
-                       "masturbation action" : "自慰",
-                       "masturbation intro" : "你告诉%s在做这件事的时候自己玩。",
-                       "masturbation pos_reaction" : "当你看着她时，她开始狂热地玩弄她的阴蒂，用手指抚弄她的阴户。",
-                       "masturbation neg_reaction" : "她假装在自慰，但其实什么也没做。她一点也不喜欢这样。",
+                        "masturbation description" : "让她手淫。",
+                        "masturbation action" : "自慰",
+                        "masturbation intro" : "你告诉%s在做这件事的时候自己玩。",
+                        "masturbation pos_reaction" : "当你看着她时，她开始狂热地玩弄她的阴蒂，用手指抚弄她的阴户。",
+                        "masturbation neg_reaction" : "她假装在自慰，但其实什么也没做。她一点也不喜欢这样。",
 
-                       "fingering description" : "把手指插进她体内。",
-                       "fingering action" : "手指插入",
-                       "fingering intro" : "你告诉%s你会把手指放进她体内。",
-                       "fingering pos_reaction" : "当你的手指滑入的时候，她的阴道迎合着你的动作，一根，两根，然后三根手指都轻松地放到了里面。当你加快抽插速度，淫水满覆你的手指时，她高兴地大声呻吟着。",
-                       "fingering neg_reaction" : "当你很艰难地把一根手指插进去的时候，她的阴道剧烈收缩似乎想把你的手指挤出去。眼泪从她脸上流下来: 她一点也不喜欢这样。",
+                        "fingering description" : "把手指插进她体内。",
+                        "fingering action" : "手指插入",
+                        "fingering intro" : "你告诉%s你会把手指放进她体内。",
+                        "fingering pos_reaction" : "当你的手指滑入的时候，她的阴道迎合着你的动作，一根，两根，然后三根手指都轻松地放到了里面。当你加快抽插速度，淫水满覆你的手指时，她高兴地大声呻吟着。",
+                        "fingering neg_reaction" : "当你很艰难地把一根手指插进去的时候，她的阴道剧烈收缩似乎想把你的手指挤出去。眼泪从她脸上流下来: 她一点也不喜欢这样。",
 
-                       "handjobs description" : "让她为我打手枪。",
-                       "handjobs action" : "手交",
-                       "handjobs intro" : "你命令%s为你来一次美好撸管体验。",
-                       "handjobs pos_reaction" : "她喜欢用手在你的鸡巴上下摩擦撸动，看着你跳动着，充满吸引力的坚硬的鸡巴。",
-                       "handjobs neg_reaction" : "她机械呆板，缺乏热情。她不喜欢做手交。",
+                        "handjobs description" : "让她为我打手枪。",
+                        "handjobs action" : "手交",
+                        "handjobs intro" : "你命令%s为你来一次美好撸管体验。",
+                        "handjobs pos_reaction" : "她喜欢用手在你的鸡巴上下摩擦撸动，看着你跳动着，充满吸引力的坚硬的鸡巴。",
+                        "handjobs neg_reaction" : "她机械呆板，缺乏热情。她不喜欢做手交。",
 
-                       "cunnilingus description" : "舔阴",
-                       "cunnilingus action" : "舔阴",
-                       "cunnilingus intro" : "你走到%s的两腿之间，分开她的'花瓣'。",
-                       "cunnilingus pos_reaction" : "当你的舌头深入她的体内时，感觉到与平时不一样的触感让她止不住地呻吟起来。随着爱液从小穴喷涌而出，她感到了极致的快感。",
-                       "cunnilingus neg_reaction" : "她皱着眉头，试图闭上双腿，这并没有让她产生什么感觉。似乎对于私处的按摩不是她的弱点。",
+                        "cunnilingus description" : "舔阴",
+                        "cunnilingus action" : "舔阴",
+                        "cunnilingus intro" : "你走到%s的两腿之间，分开她的'花瓣'。",
+                        "cunnilingus pos_reaction" : "当你的舌头深入她的体内时，感觉到与平时不一样的触感让她止不住地呻吟起来。随着爱液从小穴喷涌而出，她感到了极致的快感。",
+                        "cunnilingus neg_reaction" : "她皱着眉头，试图闭上双腿，这并没有让她产生什么感觉。似乎对于私处的按摩不是她的弱点。",
 
-                       "oral description" : "口交",
-                       "oral action" : "口交",
-                       "oral intro" : "你告诉%s用她的舌头和嘴来增加快感。",
-                       "oral pos_reaction" : "她喜欢舔弄和吮吸她的伴侣，她在做的时候一直保持和你有眼神交流。",
-                       "oral neg_reaction" : "她对这种味道感到非常恶心，看上去很生气。她不喜欢口交。",
+                        "oral description" : "口交",
+                        "oral action" : "口交",
+                        "oral intro" : "你告诉%s用她的舌头和嘴来增加快感。",
+                        "oral pos_reaction" : "她喜欢舔弄和吮吸她的伴侣，她在做的时候一直保持和你有眼神交流。",
+                        "oral neg_reaction" : "她对这种味道感到非常恶心，看上去很生气。她不喜欢口交。",
 
-                       "irrumatio description" : "强制口交",
-                       "irrumatio action" : "强制口交",
-                       "irrumatio intro" : "命令%s仰躺在床上把头靠在床边，你决定狠狠地操她的嘴。",
-                       "irrumatio pos_reaction" : "你把坚硬的鸡巴尽可能深地往她的嘴里塞，她很配合地几乎把它全吞进去了，似乎很享受她的喉咙被强奸。",
-                       "irrumatio neg_reaction" : "她恶心、咳嗽、哭泣、扭动，讨厌它，但你还是强行把鸡巴插进她的喉咙里。",
+                        "irrumatio description" : "强制口交",
+                        "irrumatio action" : "强制口交",
+                        "irrumatio intro" : "命令%s仰躺在床上把头靠在床边，你决定狠狠地操她的嘴。",
+                        "irrumatio pos_reaction" : "你把坚硬的鸡巴尽可能深地往她的嘴里塞，她很配合地几乎把它全吞进去了，似乎很享受她的喉咙被强奸。",
+                        "irrumatio neg_reaction" : "她恶心、咳嗽、哭泣、扭动，讨厌它，但你还是强行把鸡巴插进她的喉咙里。",
 
-                       "deep throat description" : "深喉。",
-                       "deep throat action" : "深喉",
-                       "deep throat intro" : "你告诉%s准备好为你提供深喉服务。",
-                       "deep throat pos_reaction" : "她没有呕吐反应，喜欢尽可能地把你的鸡巴吸进喉咙里。",
-                       "deep throat neg_reaction" : "她不停哭闹着，差点吐了出来，求你停下来。你没理她。",
+                        "deep throat description" : "深喉。",
+                        "deep throat action" : "深喉",
+                        "deep throat intro" : "你告诉%s准备好为你提供深喉服务。",
+                        "deep throat pos_reaction" : "她没有呕吐反应，喜欢尽可能地把你的鸡巴吸进喉咙里。",
+                        "deep throat neg_reaction" : "她不停哭闹着，差点吐了出来，求你停下来。你没理她。",
 
-                       "titjobs description" : "乳交",
-                       "titjobs action" : "乳交",
-                       "titjobs intro" : "你命令%s用她的奶子来取悦你。",
-                       "titjobs pos_reaction" : "她把你的大鸡巴完全裹在她漂亮的奶子中间，一边伸出舌头舔弄着肉棒顶端，一边把用奶子使劲地上下撸动。",
-                       "titjobs neg_reaction" : "她笨拙地试图用乳房摩擦你的鸡巴，但她始终笨手笨脚的，显得很不耐烦。",
+                        "titjobs description" : "乳交",
+                        "titjobs action" : "乳交",
+                        "titjobs intro" : "你命令%s用她的奶子来取悦你。",
+                        "titjobs pos_reaction" : "她把你的大鸡巴完全裹在她漂亮的奶子中间，一边伸出舌头舔弄着肉棒顶端，一边把用奶子使劲地上下撸动。",
+                        "titjobs neg_reaction" : "她笨拙地试图用乳房摩擦你的鸡巴，但她始终笨手笨脚的，显得很不耐烦。",
 
-                       "footjobs description" : "来一次足交",
-                       "footjobs action" : "足交",
-                       "footjobs intro" : "你命令%s用她的腿和脚来摩擦你的鸡巴。",
-                       "footjobs pos_reaction" : "她喜欢用她的脚玩你的鸡巴，当她把你带到你的极限时，给了你一个很好的裙底视角。",
-                       "footjobs neg_reaction" : "她讨厌这样，只是笨拙用她的脚踩了踩你的肉棒。你叫她停下来。",
+                        "footjobs description" : "来一次足交",
+                        "footjobs action" : "足交",
+                        "footjobs intro" : "你命令%s用她的腿和脚来摩擦你的鸡巴。",
+                        "footjobs pos_reaction" : "她喜欢用她的脚玩你的鸡巴，当她把你带到你的极限时，给了你一个很好的裙底视角。",
+                        "footjobs neg_reaction" : "她讨厌这样，只是笨拙用她的脚踩了踩你的肉棒。你叫她停下来。",
 
-                       "double penetration description" : "两个洞同时插入",
-                       "double penetration action" : "双穴插入",
-                       "double penetration intro" : "你要求你的一个保安加入你和%s，告诉他干她的屁股，因为你在前面干她。",
-                       "double penetration pos_reaction" : "她疯狂地大声尖叫着，因为她前后两个洞都插入了一根大鸡巴。她喜欢这样。",
-                       "double penetration neg_reaction" : "她心烦意乱，因为她身上同时有两个鸡巴。对她来说似乎太多了。",
+                        "double penetration description" : "两个洞同时插入",
+                        "double penetration action" : "双穴插入",
+                        "double penetration intro" : "你要求你的一个保安加入你和%s，告诉他干她的屁股，因为你在前面干她。",
+                        "double penetration pos_reaction" : "她疯狂地大声尖叫着，因为她前后两个洞都插入了一根大鸡巴。她喜欢这样。",
+                        "double penetration neg_reaction" : "她心烦意乱，因为她身上同时有两个鸡巴。对她来说似乎太多了。",
 
-                       "fisting description" : "拳交",
-                       "fisting action" : "拳交",
-                       "fisting intro" : "告诉%s不要动，你决定用拳头插她的阴部。",
-                       "fisting pos_reaction" : "当你用拳头强奸她湿漉漉的阴部时，她高兴地尖叫着，最终让她达到了巨大的喷射性高潮。",
-                       "fisting neg_reaction" : "她痛苦地尖叫，乞求你停止，因为你的拳头用极不自然的方式插进了她的阴道里。她讨厌这个。",
+                        "fisting description" : "拳交",
+                        "fisting action" : "拳交",
+                        "fisting intro" : "告诉%s不要动，你决定用拳头插她的阴部。",
+                        "fisting pos_reaction" : "当你用拳头强奸她湿漉漉的阴部时，她高兴地尖叫着，最终让她达到了巨大的喷射性高潮。",
+                        "fisting neg_reaction" : "她痛苦地尖叫，乞求你停止，因为你的拳头用极不自然的方式插进了她的阴道里。她讨厌这个。",
 
-                       "insults description" : "用语言侮辱她",
-                       "insults action" : "语言侮辱",
-                       "insults intro" : "当你强迫她表演时，你用能让一个妓女脸红的语言叫着%s的名字。",
-                       "insults pos_reaction" : "她似乎很喜欢被人欺辱，仅仅一分钟后，你就发现她浑身湿透了。",
-                       "insults neg_reaction" : "她对你的话感到震惊和不安，无法集中精力在她正在做的事情上。这完全没用。",
+                        "insults description" : "用语言侮辱她",
+                        "insults action" : "语言侮辱",
+                        "insults intro" : "当你强迫她表演时，你用能让一个妓女脸红的语言叫着%s的名字。",
+                        "insults pos_reaction" : "她似乎很喜欢被人欺辱，仅仅一分钟后，你就发现她浑身湿透了。",
+                        "insults neg_reaction" : "她对你的话感到震惊和不安，无法集中精力在她正在做的事情上。这完全没用。",
 
-                       "69 description" : "69式相互口交",
-                       "69 action" : "69",
-                       "69 intro" : "你让%s摆出69式互相口交的姿势。",
-                       "69 pos_reaction" : "她喜欢69式口交并非常享受其带来的快感，当她照顾她的伴侣的肉棒时，她也享受着私处被舔的感觉。",
-                       "69 neg_reaction" : "她看起来很不高兴，因为她似乎很鄙视这种体位。整个过程对双方来说都是不愉快的。",
+                        "69 description" : "69式相互口交",
+                        "69 action" : "69",
+                        "69 intro" : "你让%s摆出69式互相口交的姿势。",
+                        "69 pos_reaction" : "她喜欢69式口交并非常享受其带来的快感，当她照顾她的伴侣的肉棒时，她也享受着私处被舔的感觉。",
+                        "69 neg_reaction" : "她看起来很不高兴，因为她似乎很鄙视这种体位。整个过程对双方来说都是不愉快的。",
 
-                       "watersports description" : "尿浴。",
-                       "watersports action" : "尿浴",
-                       "watersports intro" : "你告诉%s准备好接受圣水洗礼。",
-                       "watersports pos_reaction" : "她喜欢在人前撒尿和被人撒尿。她不觉得这有什么可耻的。",
-                       "watersports neg_reaction" : "她对尿液感到厌恶，一想到这些就感到恐惧。",
+                        "watersports description" : "尿浴。",
+                        "watersports action" : "尿浴",
+                        "watersports intro" : "你告诉%s准备好接受圣水洗礼。",
+                        "watersports pos_reaction" : "她喜欢在人前撒尿和被人撒尿。她不觉得这有什么可耻的。",
+                        "watersports neg_reaction" : "她对尿液感到厌恶，一想到这些就感到恐惧。",
 
-                       "ass-to-mouth description" : "肛交后口交",
-                       "ass-to-mouth action" : "肛交后口交",
-                       "ass-to-mouth intro" : "你决定先干%s的屁股再干她的嘴。",
-                       "ass-to-mouth pos_reaction" : "她欣然接受了你的肉棒，并为你舔得干干净净，丝毫不顾它一秒钟前还在她的屁股里。",
-                       "ass-to-mouth neg_reaction" : "当你把你的鸡巴塞进她的嘴里时，她感到反胃，抱怨说这是肮脏和恶心的。",
+                        "ass-to-mouth description" : "肛交后口交",
+                        "ass-to-mouth action" : "肛交后口交",
+                        "ass-to-mouth intro" : "你决定先干%s的屁股再干她的嘴。",
+                        "ass-to-mouth pos_reaction" : "她欣然接受了你的肉棒，并为你舔得干干净净，丝毫不顾它一秒钟前还在她的屁股里。",
+                        "ass-to-mouth neg_reaction" : "当你把你的鸡巴塞进她的嘴里时，她感到反胃，抱怨说这是肮脏和恶心的。",
 
-                       "kissing description" : "接吻",
-                       "kissing action" : "亲吻她",
-                       "kissing intro" : "你开始亲吻%s。",
-                       "kissing pos_reaction" : "她热情地回应你的吻，将她的舌头与你的舌头交缠在一起。她直到最后才松口。",
-                       "kissing neg_reaction" : "她试图避开你，似乎根本不喜欢接吻。当你放过她时，她松了一口气。",
+                        "kissing description" : "接吻",
+                        "kissing action" : "亲吻她",
+                        "kissing intro" : "你开始亲吻%s。",
+                        "kissing pos_reaction" : "她热情地回应你的吻，将她的舌头与你的舌头交缠在一起。她直到最后才松口。",
+                        "kissing neg_reaction" : "她试图避开你，似乎根本不喜欢接吻。当你放过她时，她松了一口气。",
 
-                       "spanking description" : "打屁股",
-                       "spanking action" : "打她屁股",
-                       "spanking intro" : "你告诉%s她是个坏女孩，她会被狠狠打一顿。",
-                       "spanking pos_reaction" : "当你在操她的时候狠狠地鞭打着她的屁股，她痛苦并快乐地尖叫着，眼中泛着幸福的眼泪。",
-                       "spanking neg_reaction" : "你一边打她的屁股一边操她。她扭动着身体，试图摆脱你，痛苦地呻吟着。她不喜欢这样做。",
+                        "spanking description" : "打屁股",
+                        "spanking action" : "打她屁股",
+                        "spanking intro" : "你告诉%s她是个坏女孩，她会被狠狠打一顿。",
+                        "spanking pos_reaction" : "当你在操她的时候狠狠地鞭打着她的屁股，她痛苦并快乐地尖叫着，眼中泛着幸福的眼泪。",
+                        "spanking neg_reaction" : "你一边打她的屁股一边操她。她扭动着身体，试图摆脱你，痛苦地呻吟着。她不喜欢这样做。",
 
-                       "rimming description" : "毒龙钻",
-                       "rimming action" : "毒龙钻",
-                       "rimming intro" : "你告诉%s要彻底舔你的屁眼。",
-                       "rimming pos_reaction" : "她非常认真地把你舔干净，当把她的舌头伸进你的屁股里的时候，手上也没停下来一直在撸动着你的鸡巴。",
-                       "rimming neg_reaction" : "她讨厌这种行为，只是怯懦地舔着你的屁眼。有点痒痒的，但感觉一点也不好。",
+                        "rimming description" : "毒龙钻",
+                        "rimming action" : "毒龙钻",
+                        "rimming intro" : "你告诉%s要彻底舔你的屁眼。",
+                        "rimming pos_reaction" : "她非常认真地把你舔干净，当把她的舌头伸进你的屁股里的时候，手上也没停下来一直在撸动着你的鸡巴。",
+                        "rimming neg_reaction" : "她讨厌这种行为，只是怯懦地舔着你的屁眼。有点痒痒的，但感觉一点也不好。",
 
-                       "fondling her boobs description" : "被抚摸",
-                       "fondling her boobs action" : "抚摸胸部",
-                       "fondling her boobs intro" : "你抚摸%s的胸部，玩弄她的乳头。",
-                       "fondling her boobs pos_reaction" : "她喜欢你捏她的奶子，当你揉搓她勃起的乳头时会发出性感的呻吟。",
-                       "fondling her boobs neg_reaction" : "她不喜欢在那里被碰触，紧张的情绪使训练变得不那么愉快。",
+                        "fondling her boobs description" : "被抚摸",
+                        "fondling her boobs action" : "抚摸胸部",
+                        "fondling her boobs intro" : "你抚摸%s的胸部，玩弄她的乳头。",
+                        "fondling her boobs pos_reaction" : "她喜欢你捏她的奶子，当你揉搓她勃起的乳头时会发出性感的呻吟。",
+                        "fondling her boobs neg_reaction" : "她不喜欢在那里被碰触，紧张的情绪使训练变得不那么愉快。",
 
-                       "groping her ass description" : "被人摸来摸去",
-                       "groping her ass action" : "抚摸她的屁股",
-                       "groping her ass intro" : "你摸着%s的屁股，开始用手指抚弄她的屁眼。",
-                       "groping her ass pos_reaction" : "她喜欢被抚摸，当你把两根手指塞进她的屁眼时，她会兴奋地呻吟。",
-                       "groping her ass neg_reaction" : "她不喜欢在那里被触碰，紧张的情绪使训练变得不那么愉快。",
+                        "groping her ass description" : "被人摸来摸去",
+                        "groping her ass action" : "抚摸她的屁股",
+                        "groping her ass intro" : "你摸着%s的屁股，开始用手指抚弄她的屁眼。",
+                        "groping her ass pos_reaction" : "她喜欢被抚摸，当你把两根手指塞进她的屁眼时，她会兴奋地呻吟。",
+                        "groping her ass neg_reaction" : "她不喜欢在那里被触碰，紧张的情绪使训练变得不那么愉快。",
 
-                       "lactation description" : "强制泌乳",
-                       "lactation action" : "强制泌乳",
-                       "lactation intro" : "摸着%s乳房，你拿出一个装满奇怪液体的注射器插入了她的乳头。",
-                       "lactation pos_reaction" : "她惊讶地喘息着，因为她的乳房越来越大了。很快她开始不受控制地泌乳，当你把她的大乳房挤得满满的时候，她发出了呻吟。",
-                       "lactation neg_reaction" : "当她的胸部越来越重，越来越大时，她大喊大叫，痛哭流涕。这一经历太过痛苦了，她没能给你分泌出任何东西出来。",
+                        "lactation description" : "强制泌乳",
+                        "lactation action" : "强制泌乳",
+                        "lactation intro" : "摸着%s乳房，你拿出一个装满奇怪液体的注射器插入了她的乳头。",
+                        "lactation pos_reaction" : "她惊讶地喘息着，因为她的乳房越来越大了。很快她开始不受控制地泌乳，当你把她的大乳房挤得满满的时候，她发出了呻吟。",
+                        "lactation neg_reaction" : "当她的胸部越来越重，越来越大时，她大喊大叫，痛哭流涕。这一经历太过痛苦了，她没能给你分泌出任何东西出来。",
 
-                       "doggy style description" : "后背位",
-                       "doggy style action" : "后背位",
-                       "doggy style intro" : "把她推倒，四肢着地，接着你开始从后面干%s。",
-                       "doggy style pos_reaction" : "当你的阴茎长度沿着她最敏感的部位抽动时，她发出了愉悦的呻吟。她对这种体位爱不释手。",
-                       "doggy style neg_reaction" : "她一边磨牙一边等着你的做完。她一点也不喜欢这个体位。",
+                        "doggy style description" : "后背位",
+                        "doggy style action" : "后背位",
+                        "doggy style intro" : "把她推倒，四肢着地，接着你开始从后面干%s。",
+                        "doggy style pos_reaction" : "当你的阴茎长度沿着她最敏感的部位抽动时，她发出了愉悦的呻吟。她对这种体位爱不释手。",
+                        "doggy style neg_reaction" : "她一边磨牙一边等着你的做完。她一点也不喜欢这个体位。",
 
-                       "cowgirl description" : "骑乘位",
-                       "cowgirl action" : "骑乘位",
-                       "cowgirl intro" : "你让%s骑在你的身上。",
-                       "cowgirl pos_reaction" : "她喜欢在上面，爱不忍释地在你的阴茎上上下抽动着，直到你们都筋疲力尽。",
-                       "cowgirl neg_reaction" : "她不喜欢在上面，在你从下面操她时保持被动。",
+                        "cowgirl description" : "骑乘位",
+                        "cowgirl action" : "骑乘位",
+                        "cowgirl intro" : "你让%s骑在你的身上。",
+                        "cowgirl pos_reaction" : "她喜欢在上面，爱不忍释地在你的阴茎上上下抽动着，直到你们都筋疲力尽。",
+                        "cowgirl neg_reaction" : "她不喜欢在上面，在你从下面操她时保持被动。",
 
-                       "piledriver description" : "抬单腿后背位",
-                       "piledriver action" : "抬单腿后背位",
-                       "piledriver intro" : "从背后把%s推倒并抬起她的腿，你把你坚硬的阴茎插入她的体内。",
-                       "piledriver pos_reaction" : "当你无情地猛烈抽插她的时候，她被欲望和快乐完全淹没了。",
-                       "piledriver neg_reaction" : "她对这个新体位感到困惑和烦恼，告诉你她一点也不喜欢。",
+                        "piledriver description" : "抬单腿后背位",
+                        "piledriver action" : "抬单腿后背位",
+                        "piledriver intro" : "从背后把%s推倒并抬起她的腿，你把你坚硬的阴茎插入她的体内。",
+                        "piledriver pos_reaction" : "当你无情地猛烈抽插她的时候，她被欲望和快乐完全淹没了。",
+                        "piledriver neg_reaction" : "她对这个新体位感到困惑和烦恼，告诉你她一点也不喜欢。",
 
-                       "spooning description" : "侧身位",
-                       "spooning action" : "侧身位",
-                       "spooning intro" : "从后面抱着%s，你的阴茎从侧面慢慢滑入她的小穴，时不时挑逗着她的身体。",
-                       "spooning pos_reaction" : "她喜欢被人抱的同时被人干。她完全放松下来，轻轻地呻吟着，很快就准备好达到高潮。",
-                       "spooning neg_reaction" : "当你从后面操她时，她一直不为所动，看起来很厌烦。",
+                        "spooning description" : "侧身位",
+                        "spooning action" : "侧身位",
+                        "spooning intro" : "从后面抱着%s，你的阴茎从侧面慢慢滑入她的小穴，时不时挑逗着她的身体。",
+                        "spooning pos_reaction" : "她喜欢被人抱的同时被人干。她完全放松下来，轻轻地呻吟着，很快就准备好达到高潮。",
+                        "spooning neg_reaction" : "当你从后面操她时，她一直不为所动，看起来很厌烦。",
 
-                       "bukkake description" : "多人颜射",
-                       "bukkake action" : "多人颜射",
-                       "bukkake intro" : "召集一群保安，让他们看着你和希露干%s。他们开始边看边打手枪。当你达到极限时，你把肉棒抽出来射在了她的脸上，其他男人也纷纷射到她的脸上。",
-                       "bukkake pos_reaction" : "当她脸上、头发上和身体上经历了一场精液淋浴时，她在迎来激烈的高潮中颤抖。她大口大口地吃着每个人肉棒上剩余的精液。",
-                       "bukkake neg_reaction" : "她哀嚎着试图躲避，因为每个人都在她脸上和头发上喷射着精液。她痛苦地抱怨着那种恶心的气味和味道。",
+                        "bukkake description" : "多人颜射",
+                        "bukkake action" : "多人颜射",
+                        "bukkake intro" : "召集一群保安，让他们看着你和希露干%s。他们开始边看边打手枪。当你达到极限时，你把肉棒抽出来射在了她的脸上，其他男人也纷纷射到她的脸上。",
+                        "bukkake pos_reaction" : "当她脸上、头发上和身体上经历了一场精液淋浴时，她在迎来激烈的高潮中颤抖。她大口大口地吃着每个人肉棒上剩余的精液。",
+                        "bukkake neg_reaction" : "她哀嚎着试图躲避，因为每个人都在她脸上和头发上喷射着精液。她痛苦地抱怨着那种恶心的气味和味道。",
 
-                       "cum in mouth description" : "在她嘴里射精",
-                       "cum in mouth action" : "口暴",
-                       "cum in mouth intro" : "你决定用%s的嘴来结束。",
-                       "cum in mouth pos_reaction" : "当你把一大团滚烫精液射到她准备好的嘴里时，她看起来很陶醉。她用舌头玩弄着它，享受它的味道和质地。",
-                       "cum in mouth neg_reaction" : "你在她的嘴里射了很多，这让她在旁边一阵咳嗽。她把这些东西都吐出来，不停地抱怨着。",
+                        "cum in mouth description" : "在她嘴里射精",
+                        "cum in mouth action" : "口暴",
+                        "cum in mouth intro" : "你决定用%s的嘴来结束。",
+                        "cum in mouth pos_reaction" : "当你把一大团滚烫精液射到她准备好的嘴里时，她看起来很陶醉。她用舌头玩弄着它，享受它的味道和质地。",
+                        "cum in mouth neg_reaction" : "你在她的嘴里射了很多，这让她在旁边一阵咳嗽。她把这些东西都吐出来，不停地抱怨着。",
 
-                       "cum on face description" : "颜射",
-                       "cum on face action" : "颜射",
-                       "cum on face intro" : "你把精液射在%s的脸上。",
-                       "cum on face pos_reaction" : "当她接受你的精液时，她用手把精液缓缓涂抹在脸上，然后吮吸着手指上的剩余精液，问到浓厚精液的味道她高兴地喘息着。",
-                       "cum on face neg_reaction" : "当你试图在她脸上喷射时，她厌恶地撇过脸去。完事后她连忙拿一块湿布来试图马上擦干净。",
+                        "cum on face description" : "颜射",
+                        "cum on face action" : "颜射",
+                        "cum on face intro" : "你把精液射在%s的脸上。",
+                        "cum on face pos_reaction" : "当她接受你的精液时，她用手把精液缓缓涂抹在脸上，然后吮吸着手指上的剩余精液，问到浓厚精液的味道她高兴地喘息着。",
+                        "cum on face neg_reaction" : "当你试图在她脸上喷射时，她厌恶地撇过脸去。完事后她连忙拿一块湿布来试图马上擦干净。",
 
-                       "cum in hair description" : "射到头发上",
-                       "cum in hair action" : "射到头发上",
-                       "cum in hair intro" : "你决定射在%s柔软如丝的头发上。",
-                       "cum in hair pos_reaction" : "当你把她的头发缠在你的鸡巴上，在她的头皮上挤压最后一滴时，她呻吟起来。她喜欢被当作一个肮脏的精液垃圾桶。",
-                       "cum in hair neg_reaction" : "当你把精液射在她的头发上时，她大喊大叫，抱怨说要花很长时间才能把它弄下来。",
+                        "cum in hair description" : "射到头发上",
+                        "cum in hair action" : "射到头发上",
+                        "cum in hair intro" : "你决定射在%s柔软如丝的头发上。",
+                        "cum in hair pos_reaction" : "当你把她的头发缠在你的鸡巴上，在她的头皮上挤压最后一滴时，她呻吟起来。她喜欢被当作一个肮脏的精液垃圾桶。",
+                        "cum in hair neg_reaction" : "当你把精液射在她的头发上时，她大喊大叫，抱怨说要花很长时间才能把它弄下来。",
 
-                       "cum on body description" : "射在她身上",
-                       "cum on body action" : "射到身上",
-                       "cum on body intro" : "你决定射在%s的身上。",
-                       "cum on body pos_reaction" : "她达到了高潮，你拿出你的鸡巴，把白色的精液洒在她柔软的皮肤上。",
-                       "cum on body neg_reaction" : "当你把满满的精液射在她的身体时，她扭动身体试图躲开，抱怨说这黏糊糊的还带有一股恶心的气味。",
+                        "cum on body description" : "射在她身上",
+                        "cum on body action" : "射到身上",
+                        "cum on body intro" : "你决定射在%s的身上。",
+                        "cum on body pos_reaction" : "她达到了高潮，你拿出你的鸡巴，把白色的精液洒在她柔软的皮肤上。",
+                        "cum on body neg_reaction" : "当你把满满的精液射在她的身体时，她扭动身体试图躲开，抱怨说这黏糊糊的还带有一股恶心的气味。",
 
-                       "cum shower description" : "被精液浇灌。",
-                       "cum shower action" : "精子浴",
-                       "cum shower intro" : "服下从黑市弄来的一种特殊的药丸，你的肉棒开始膨胀隆起，准备用大量的精液迸发。你让%s躺下准备接受你的种子。",
-                       "cum shower pos_reaction" : "你射了一次又一次直到她被白色粘稠的精液覆盖。她被这种感觉迷住了。",
-                       "cum shower neg_reaction" : "当你在她身上射出一次又一次的精液时，她害怕地尖叫着、畏缩着，对气味和感觉感到厌恶。",
+                        "cum shower description" : "被精液浇灌。",
+                        "cum shower action" : "精子浴",
+                        "cum shower intro" : "服下从黑市弄来的一种特殊的药丸，你的肉棒开始膨胀隆起，准备用大量的精液迸发。你让%s躺下准备接受你的种子。",
+                        "cum shower pos_reaction" : "你射了一次又一次直到她被白色粘稠的精液覆盖。她被这种感觉迷住了。",
+                        "cum shower neg_reaction" : "当你在她身上射出一次又一次的精液时，她害怕地尖叫着、畏缩着，对气味和感觉感到厌恶。",
 
-                       "swallowing description" : "深喉射",
-                       "swallowing action" : "深喉射",
-                       "swallowing intro" : "你把你的肉棒深深地塞进%s的嘴里，为了能更爽，你把大量的精液射到她的喉咙深处。",
-                       "swallowing pos_reaction" : "她大口大口地吞咽着，从你悸动的阴茎中挤出每一滴精液。当你完事后，她性感地舔着嘴唇。",
-                       "swallowing neg_reaction" : "她泪流满面，在你一次又一次的射精中试图把它全部吐出来。她只是吐出来一点，而且看起来对不得不喝酒感到不高兴。",
+                        "swallowing description" : "深喉射",
+                        "swallowing action" : "深喉射",
+                        "swallowing intro" : "你把你的肉棒深深地塞进%s的嘴里，为了能更爽，你把大量的精液射到她的喉咙深处。",
+                        "swallowing pos_reaction" : "她大口大口地吞咽着，从你悸动的阴茎中挤出每一滴精液。当你完事后，她性感地舔着嘴唇。",
+                        "swallowing neg_reaction" : "她泪流满面，在你一次又一次的射精中试图把它全部吐出来。她只是吐出来一点，而且看起来对不得不喝酒感到不高兴。",
 
-                       "creampie description" : "外射",
-                       "creampie action" : "外射",
-                       "creampie intro" : "把你的鸡巴慢慢地从%s身体里拿出来，把你那浓浓的白色精液射在她的屁股和阴部。",
-                       "creampie pos_reaction" : "当你把精液喷洒在她的洞里时，她在巨大的高潮中颤抖。她似乎很喜欢这样。",
-                       "creampie neg_reaction" : "她捂着脸，求你停下来，说这是令人毛骨悚然和恶心的。",
+                        "creampie description" : "外射",
+                        "creampie action" : "外射",
+                        "creampie intro" : "把你的鸡巴慢慢地从%s身体里拿出来，把你那浓浓的白色精液射在她的屁股和阴部。",
+                        "creampie pos_reaction" : "当你把精液喷洒在她的洞里时，她在巨大的高潮中颤抖。她似乎很喜欢这样。",
+                        "creampie neg_reaction" : "她捂着脸，求你停下来，说这是令人毛骨悚然和恶心的。",
 
-                       "cum inside description" : "在她体内射精",
-                       "cum inside action" : "内射",
-                       "cum inside intro" : "不顾后果，你决定在%s深处射精。",
-                       "cum inside pos_reaction" : "她达到了令人炫目的高潮，当你在她体内射出一股股浓厚的精液时，她疯狂地呻吟着。",
-                       "cum inside neg_reaction" : "她尖叫着拔你出去，但你没有理会她，用粘稠的精液填满她的深处。她因羞愧和厌恶而哭泣不止。",
+                        "cum inside description" : "在她体内射精",
+                        "cum inside action" : "内射",
+                        "cum inside intro" : "不顾后果，你决定在%s深处射精。",
+                        "cum inside pos_reaction" : "她达到了令人炫目的高潮，当你在她体内射出一股股浓厚的精液时，她疯狂地呻吟着。",
+                        "cum inside neg_reaction" : "她尖叫着拔你出去，但你没有理会她，用粘稠的精液填满她的深处。她因羞愧和厌恶而哭泣不止。",
 
-                       "multiple orgasms description" : "多重高潮",
-                       "multiple orgasms action" : "多重高潮",
-                       "multiple orgasms intro" : "你有节奏的揉搓着她的阴蒂，阴蒂带来的刺激不断让着%s的身体因反复的高潮而颤抖着。为了不让她有休息的时间，你手一直不断的刺激着，直到她一次又一次的高潮。",
-                       "multiple orgasms pos_reaction" : "她喜欢这样子完全失去了理智的感觉，在你停下手的动作后，她看起来只是一个顺从、崇拜、幸福的奴隶。",
-                       "multiple orgasms neg_reaction" : "她感到过于敏感乞求你停手，几乎因为过度的高潮而痛苦晕倒过去。她不喜欢这样做。",
+                        "multiple orgasms description" : "多重高潮",
+                        "multiple orgasms action" : "多重高潮",
+                        "multiple orgasms intro" : "你有节奏的揉搓着她的阴蒂，阴蒂带来的刺激不断让着%s的身体因反复的高潮而颤抖着。为了不让她有休息的时间，你手一直不断的刺激着，直到她一次又一次的高潮。",
+                        "multiple orgasms pos_reaction" : "她喜欢这样子完全失去了理智的感觉，在你停下手的动作后，她看起来只是一个顺从、崇拜、幸福的奴隶。",
+                        "multiple orgasms neg_reaction" : "她感到过于敏感乞求你停手，几乎因为过度的高潮而痛苦晕倒过去。她不喜欢这样做。",
 
-                       "denied orgasm description" : "被拒绝的高潮",
-                       "denied orgasm action" : "禁止高潮",
-                       "denied orgasm intro" : "你决定逗%s到极限，不让她达到高潮。",
-                       "denied orgasm pos_reaction" : "她似乎喜欢被挑逗又无法达到高潮的感觉，随着时间的推移，她变得无比饥渴和敏感。",
-                       "denied orgasm neg_reaction" : "她痛苦地尖叫着，乞求你让她达到高潮。她很不高兴你不让她去。",
+                        "denied orgasm description" : "被拒绝的高潮",
+                        "denied orgasm action" : "禁止高潮",
+                        "denied orgasm intro" : "你决定逗%s到极限，不让她达到高潮。",
+                        "denied orgasm pos_reaction" : "她似乎喜欢被挑逗又无法达到高潮的感觉，随着时间的推移，她变得无比饥渴和敏感。",
+                        "denied orgasm neg_reaction" : "她痛苦地尖叫着，乞求你让她达到高潮。她很不高兴你不让她去。",
 
-                       "squirting description" : "潮吹",
-                       "squirting action" : "潮吹",
-                       "squirting intro" : "你把手指插进%s的阴部，开始摩擦她的阴道的内壁，并寻找着她那敏感的G点。她似乎被这种感觉征服了。",
-                       "squirting pos_reaction" : "她强烈的潮吹了，把淫水弄得房间里到处都是。她的高潮是如此强烈，以至于之后都动弹不得了。",
-                       "squirting neg_reaction" : "她觉得很奇怪很恶心，求你把手拿开。她根本就不喜欢。",
+                        "squirting description" : "潮吹",
+                        "squirting action" : "潮吹",
+                        "squirting intro" : "你把手指插进%s的阴部，开始摩擦她的阴道的内壁，并寻找着她那敏感的G点。她似乎被这种感觉征服了。",
+                        "squirting pos_reaction" : "她强烈的潮吹了，把淫水弄得房间里到处都是。她的高潮是如此强烈，以至于之后都动弹不得了。",
+                        "squirting neg_reaction" : "她觉得很奇怪很恶心，求你把手拿开。她根本就不喜欢。",
 
-                       "stripping description" : "脱光",
-                       "stripping action" : "让她脱衣服",
-                       "stripping intro" : "告诉%s慢慢地、性感地自己脱掉衣服，你看着她按要求脱。",
-                       "stripping pos_reaction" : "当她感受到衣服与她柔软的皮肤摩擦的爱抚时，她呻吟起来。她看着你的眼睛，一点一点地慢慢脱下她的内衣，确保给你一个好的展示。",
-                       "stripping neg_reaction" : "抱怨和发牢骚，她不情愿地脱下衣服，尴尬地隐藏自己的私处。她看起来很生气很羞愧。",
+                        "stripping description" : "脱光",
+                        "stripping action" : "让她脱衣服",
+                        "stripping intro" : "告诉%s慢慢地、性感地自己脱掉衣服，你看着她按要求脱。",
+                        "stripping pos_reaction" : "当她感受到衣服与她柔软的皮肤摩擦的爱抚时，她呻吟起来。她看着你的眼睛，一点一点地慢慢脱下她的内衣，确保给你一个好的展示。",
+                        "stripping neg_reaction" : "抱怨和发牢骚，她不情愿地脱下衣服，尴尬地隐藏自己的私处。她看起来很生气很羞愧。",
 
                     }
 
@@ -2118,8 +2121,8 @@ init -4 python:
                             "有人说，盗贼的行为很有组织，很像行会。我不相信这种无稽之谈。你见过一个小偷，除了动脑筋，什么都不懂？",
                             "这里的人们喜欢把他们所有的痛苦都归咎于一个秘密的莎莉娅阴谋集团，但是让我的眼睛告诉你:现在是我们热爱太阳神的好队长在抢劫我们！",
                             "我一直听说城外有一家新青楼。有机会真的得去看看。",
-                          ],
-                      2 : [
+                        ],
+                    2 : [
                             "这个城市最近发生了一连串的谋杀案。不只是普通的乌合之众，他们还干掉了一些大人物。",
                             "人们说夜晚的街道不安全，雇佣刀锋四处游荡....如果没有伴游，很多富贵人家的孩子就不会出去了。",
                             "有人一直在一个接一个地消灭贵族....是时候有人开始为这座城市的正义而战了！",
@@ -2132,34 +2135,34 @@ init -4 python:
                             "女忍者是一个渗透到赞的嗜血刺客的秘密组织。至少我听说是这样。",
                             "为什么有人会威胁公主的生命？她是唯一一个不希望我们在这个皇家毒蛇巢中患病的人。",
                             "在最近的谋杀浪潮中，贵族家庭付出了沉重的代价。也许这场所谓的革命终究还是会到来？",
-                            ],
-                      3 : [],
-                      4 : [],
-                      5 : [],
-                      6 : [],
-                      7 : [
-                          "你听说过传说中的青楼老板[MC.name]吗？我打赌他能把你妹妹变成一个性欲旺盛的女神。",
-                          "[MC.name]是最好中的最好。在整个瓒城，没有比这更好的青楼老板了，以后也不会有了。",
-                          "你知道国王的事吗？我是说，青楼之王？他是[MC.name],传说中的[brothel.name]老板....",
-                          "镇上最好的青楼？你到底从哪里来？当然是[brothel.name]了！它比任何其他青楼都要先进好几法里。竞争者们都已经放弃了。",
-                          ],
+                        ],
+                    3 : [],
+                    4 : [],
+                    5 : [],
+                    6 : [],
+                    7 : [
+                            "你听说过传说中的青楼老板[MC.name]吗？我打赌他能把你妹妹变成一个性欲旺盛的女神。",
+                            "[MC.name]是最好中的最好。在整个瓒城，没有比这更好的青楼老板了，以后也不会有了。",
+                            "你知道国王的事吗？我是说，青楼之王？他是[MC.name],传说中的[brothel.name]老板....",
+                            "镇上最好的青楼？你到底从哪里来？当然是[brothel.name]了！它比任何其他青楼都要先进好几法里。竞争者们都已经放弃了。",
+                        ],
 
-                      # The following are added by the story
+                        # The following are added by the story
 
-                      "c1_good" :   [
+                    "c1_good" :   [
                                     "玛雅队长真是天赐之物。相信我，她马上就会纠正守卫的行为的。",
                                     "前几天我被守卫拦住了。我以为他们会像往常一样抢劫我，但他们只是很有礼貌例行检查完就放了我。太令人惊讶了。",
                                     "最近许多老守卫被开除出警队。看来这位新队长是认真在打击腐败。",
                                     "别告诉他是我说的，但很明显罗兹喜欢玛雅。那个大笨蛋一点希望都没有....",
                                     ],
-                      "c1_neutral" :[
+                    "c1_neutral" :[
                                     "新队长比老队长好吗？不管谁来负责，这里的一切都不会改变。",
                                     "莉迪队长看起来和老队长一样精明，但至少她保持低调。激战对生意不好。",
                                     "听说贫民窟附近有个秘密巢穴....小偷和强盗的避风港。我一想到它就不寒而栗。",
                                     "这些天小偷越来越大胆了。真让人绝望啊。听说守卫们好像什么都不想做。",
                                     "有人说，盗贼的行为很有组织，很像行会。我不相信这种无稽之谈。你见过一个小偷，除了动脑筋，什么都不懂？",
                                     ],
-                      "c1_evil" : [
+                    "c1_evil" : [
                                     "你看到新的护卫制服了吗？他们用精美的丝绸装饰盔甲，而我们却在挨饿....",
                                     "法拉队长是个贪婪的婊子。她的人昨天来拜访我的一个朋友。每个人都讨厌她，但他们说她在高层得到了保护。",
                                     "守卫队长是法拉上尉。 如果你需要我的建议，最好留意他们。 征税和税收都是卫兵所关心的。 如果你问我，他们只是在他们去的时候补上。",
@@ -2169,9 +2172,9 @@ init -4 python:
                                     "这里的人们喜欢把他们所有的痛苦都归咎于一个秘密的莎莉娅阴谋集团，但是让我的眼睛告诉你:现在是我们热爱太阳神的好队长在抢劫我们！",
                                     "法拉队长在贫民窟中比以往任何时候都更强大。 她现在完全无人反对，我们唯一的选择是付她的亲信。 你想死吗？？",
                                     "我原以为守卫的情况不会更糟，但事实确实如此。他们抢劫了我的商店，强奸了我的妻子和女儿。没有人敢动他们一根手指....",
-                                  ],
+                                ],
 
-                      "c2_kunoichi" :[
+                    "c2_kunoichi" :[
                                     "听说过女忍者吗？一个由女忍者组成的秘密组织....这真是太热了！",
                                     "我希望他们能抓住那些女魔头，即女忍者。我听说他们与恶魔交媾。",
                                     "不要相信你所听到的关于女忍者的消息。他们是纯洁和高尚的战士。",
@@ -2179,9 +2182,9 @@ init -4 python:
                                     "女忍者？我敢打赌，他们穿的衣服布料一定很少....嗯....",
                                     "我读过一个关于女忍者的故事，她们只用阴道就能杀人....我知道这很疯狂。",
                                     "当一个婴儿被遗弃时，有时一个女忍者家族会收养她....这是我所听说的。",
-                                  ],
+                                ],
 
-                      "c2_kunoichi_hunt" :[
+                    "c2_kunoichi_hunt" :[
                                     "{b}盗贼公会{/b}已经是个垃圾场了。而现在那里也有女忍者？",
                                     "女忍者在{b}盗贼公会{/b}....流氓们不会喜欢这个的。",
                                     "我告诉你，我在{b}盗贼公会{/b}看到一个孩子....我本来想帮忙的，但后来我看到她有一个巨大的女忍者星，所以我想还是算了。",
@@ -2196,63 +2199,64 @@ init -4 python:
                                     "这是最奇特的事情，女孩打了个响指，就引起了一阵颤动！{b}监狱{/b}的看守们一屁股坐在了地上。",
                                     "女忍者为什么要跟踪{b}监狱{/b}？任何罪犯都知道要避开我们善良的国王的监狱！",
                                     "别说了，根本就没有女忍者在{b}监狱{/b}上面飞的事情！现在去清理你的房间！",
-                                  ],
+                                ],
 
-                     }
+                    }
 
-    district_gossip = {"The Slums" : [
-                                        "贫民窟里到处都是小偷，而守卫更可怕。我迫不及待地想离开这个地方。其他地方不可能有这么糟糕的情况！",
-                                        "贫民窟最糟糕的事情是臭气熏天。或者说第二糟糕的事情。更糟的是，你可能因为一两银子而被割喉，再也闻不到任何东西。",
-                                        "瓒城的人民是邪恶的、堕落的和退化的，但他们肯定是勤奋的。城市日渐壮大！贫民窟是她的软肋。",
-                                        "我在下水道里看到一个奇怪的女孩，她独自一人在那里。我告诉她周围有怪物，但她只是微笑着说'我知道'",
-                                        "下水道里充满了肮脏的小动物和怪物....有些人甚至以猎杀它们为生。",
-                                        "你见过那个奇怪的女孩吗，薇洛？她的耳朵很奇怪，我想知道她是否是人类。尽管她很可爱。",
-                                        "农田里闹鬼。不要去那里。",
-                                        "国内总是有一些奇怪的事情发生。我甚至听说有些女孩在那里与动物做爱。",
-                                        "你在农场见过戈尔迪吗？她是个可爱的年轻女子。太悲哀了，她的家人发生了什么事。",
-                                        "我通常会去农场向戈尔迪买牛奶。她从她的奶牛那里得到的，但我更愿意给她挤奶，如果你明白我的意思....",
-                                        "如果我想买动物，我当然会去农场买。但我听说有些人的行为很奇怪。",
-                                        "垃圾场里有个疯丫头，在垃圾堆里翻找{i}太阳神{/i}。我试图对她说些道理，但她根本不听我的。",
-                                        "上周我做了一笔好买卖，把一个没用的旧玩意卖给了废品站的搞笑女孩。",
-                                        "你见过吉娜吗？垃圾场里的古怪科学家？她购买和出售一些奇怪的机械。让我起鸡皮疙瘩。",
-                                        "贫民窟里的盗贼行会？无稽之谈。守卫队长决不会允许的。"
-                                     ],
-                       "The Docks" : ["冒险者联盟位于港口附近的某处。腐烂的鱼腥味对于那些流氓来说并不反感。",
-                                      "为什么海边有这么多青楼？是因为这里更潮湿吗？",
-                                      "为什么码头上有这么多青楼？是因为听起来像“Dicks”吗？",
-                                      "哪里有水手，哪里就有妓女。这是就是现实生活。",
-                                      "有一个女人在海边卖礼物。她有一对巨大的....",
-                                      "你见过那个穿红衣服在海边卖礼物的女人吗？她有很多礼物，一对超大的秘咪咪....",
-                                      "他们在港口卖掉那些奇怪的奴隶，有一种长着马阳具的没有自我意识的奴隶....我的女朋友认为这很酷，但我发现那东西太令人毛骨悚然。",
-                                      "港口附近的血群岛上有一些奴隶贩子。他们对待人就像对待牛一样。这肯定超有意思。",
-                                      "*耳语*时髦的女士去港口买一些非常特殊的奴隶....我听说他们服从每个命令，他们有巨大的....* *耳语"
-                                      "你见过港口边那个可怕的奴隶贩子吗？她让我神魂颠倒....",
-                                     ],
-                       "The Warehouse" : [],
-                       "The Magic Gardens" : [],
-                       "The Cathedra" : [
-                                        "大教堂是赞的骄傲，是克塞洛斯王冠上的宝石。所有人都在太阳神的光辉中欢欣鼓舞！",
-                                        "教堂是一个安静沉思和祈祷的地方，但是现在，每天都有肮脏的朝圣者涌入，我不想再去那里了。",
-                                        "毫无疑问，前往教堂的朝圣者的浪潮对生意是有好处的。",
-                                        "从大教堂的狂热来看，你会认为太阳神是唯一的神....我们很多人都不是太阳神的追随者;他们似乎太容易忘记这一点了。",
+    district_gossip = {
+                        "The Slums" : [
+                                    "贫民窟里到处都是小偷，而守卫更可怕。我迫不及待地想离开这个地方。其他地方不可能有这么糟糕的情况！",
+                                    "贫民窟最糟糕的事情是臭气熏天。或者说第二糟糕的事情。更糟的是，你可能因为一两银子而被割喉，再也闻不到任何东西。",
+                                    "瓒城的人民是邪恶的、堕落的和退化的，但他们肯定是勤奋的。城市日渐壮大！贫民窟是她的软肋。",
+                                    "我在下水道里看到一个奇怪的女孩，她独自一人在那里。我告诉她周围有怪物，但她只是微笑着说'我知道'",
+                                    "下水道里充满了肮脏的小动物和怪物....有些人甚至以猎杀它们为生。",
+                                    "你见过那个奇怪的女孩吗，薇洛？她的耳朵很奇怪，我想知道她是否是人类。尽管她很可爱。",
+                                    "农田里闹鬼。不要去那里。",
+                                    "国内总是有一些奇怪的事情发生。我甚至听说有些女孩在那里与动物做爱。",
+                                    "你在农场见过戈尔迪吗？她是个可爱的年轻女子。太悲哀了，她的家人发生了什么事。",
+                                    "我通常会去农场向戈尔迪买牛奶。她从她的奶牛那里得到的，但我更愿意给她挤奶，如果你明白我的意思....",
+                                    "如果我想买动物，我当然会去农场买。但我听说有些人的行为很奇怪。",
+                                    "垃圾场里有个疯丫头，在垃圾堆里翻找{i}太阳神{/i}。我试图对她说些道理，但她根本不听我的。",
+                                    "上周我做了一笔好买卖，把一个没用的旧玩意卖给了废品站的搞笑女孩。",
+                                    "你见过吉娜吗？垃圾场里的古怪科学家？她购买和出售一些奇怪的机械。让我起鸡皮疙瘩。",
+                                    "贫民窟里的盗贼行会？无稽之谈。守卫队长决不会允许的。"
+                                ],
+                        "The Docks" : [
+                                    "冒险者联盟位于港口附近的某处。腐烂的鱼腥味对于那些流氓来说并不反感。",
+                                    "为什么海边有这么多青楼？是因为这里更潮湿吗？",
+                                    "为什么码头上有这么多青楼？是因为听起来像“Dicks”吗？",
+                                    "哪里有水手，哪里就有妓女。这是就是现实生活。",
+                                    "有一个女人在海边卖礼物。她有一对巨大的....",
+                                    "你见过那个穿红衣服在海边卖礼物的女人吗？她有很多礼物，一对超大的秘咪咪....",
+                                    "他们在港口卖掉那些奇怪的奴隶，有一种长着马阳具的没有自我意识的奴隶....我的女朋友认为这很酷，但我发现那东西太令人毛骨悚然。",
+                                    "港口附近的血群岛上有一些奴隶贩子。他们对待人就像对待牛一样。这肯定超有意思。",
+                                    "*耳语*时髦的女士去港口买一些非常特殊的奴隶....我听说他们服从每个命令，他们有巨大的....* *耳语"
+                                    "你见过港口边那个可怕的奴隶贩子吗？她让我神魂颠倒....",
                                         ],
-                       "The King's Hold" : [
-                                            "宫殿里的骑士都是爱唱咏叹调的好人。那温暖了我的心。",
-                                            "我听说国王学校有一个换妻俱乐部，成员们通宵狂欢交换妻子和女儿....",
-                                            "贵族们在国王的城堡里漫步，就像一群秃鹰在空中盘旋，等待着下一顿美餐。他们都认为自己可以生养下一个继承人，或者在国王去世后通过其他方式掌权....",
-                                            ],
-                       }
-
+                        "The Warehouse" : [],
+                        "The Magic Gardens" : [],
+                        "The Cathedra" : [
+                                    "大教堂是赞的骄傲，是克塞洛斯王冠上的宝石。所有人都在太阳神的光辉中欢欣鼓舞！",
+                                    "教堂是一个安静沉思和祈祷的地方，但是现在，每天都有肮脏的朝圣者涌入，我不想再去那里了。",
+                                    "毫无疑问，前往教堂的朝圣者的浪潮对生意是有好处的。",
+                                    "从大教堂的狂热来看，你会认为太阳神是唯一的神....我们很多人都不是太阳神的追随者;他们似乎太容易忘记这一点了。",
+                                ],
+                        "The King's Hold" : [
+                                    "宫殿里的骑士都是爱唱咏叹调的好人。那温暖了我的心。",
+                                    "我听说国王学校有一个换妻俱乐部，成员们通宵狂欢交换妻子和女儿....",
+                                    "贵族们在国王的城堡里漫步，就像一群秃鹰在空中盘旋，等待着下一顿美餐。他们都认为自己可以生养下一个继承人，或者在国王去世后通过其他方式掌权....",
+                                ],
+                        }
 
 
 
     ## JOKES ##
 
     jokes = {
-             "harmless" : ("当卫兵最难的是什么?告诉你父母你是同性恋!", "我的狗过去总是追着每个骑马的人。情况变得很糟糕，我不得不把他的马牵走.", "雪人和女雪人有什么区别?雪球!", "你是怎么抓住胸罩的?用恶作剧."),
-             "sex" : ("为什么卢斯老师被捕了？因为猥亵未成年...", "法庭和娘娘腔有什么共同之处?一个口误，你就惨了.", "知道我在花园里做什么吗?把我的锄头弄脏.", "鸡巴周围没用的那部分叫什么?一个男人!", "妻子和工作有什么区别?5年后，你的工作还是很糟糕."),
-             "dark" : ("你怎么能让一个女孩尖叫两次？先操她的屁股，然后在她的窗帘上擦你的鸡巴!", "我喜欢我的女人喜欢我的酒...锁在地窖里!", "一位医生对他的病人说:“对不起，你的生命只剩下10了.'\n患者: “什么10？月？周？”'\n医生:'9, 8...'", "和28岁的孩子做爱最好的部分是什么?一共有20个!", "需要多少大男子主义才能给灯加油?一个也没有。让她在黑暗中洗碗."),
-             "mean" : ("我喜欢你。人们说我没有品味，但我喜欢你.", "妈的，你很性感，但如果你闭嘴，你会更性感.", "我喜欢我的女人既有魅力，又蠢又贱。你看起来很符合要求.", "我也想雇你当妓女，但我的姑娘们很有教养...")
+            "harmless" : ("当卫兵最难的是什么?告诉你父母你是同性恋!", "我的狗过去总是追着每个骑马的人。情况变得很糟糕，我不得不把他的马牵走.", "雪人和女雪人有什么区别?雪球!", "你是怎么抓住胸罩的?用恶作剧."),
+            "sex" : ("为什么卢斯老师被捕了？因为猥亵未成年...", "法庭和娘娘腔有什么共同之处?一个口误，你就惨了.", "知道我在花园里做什么吗?把我的锄头弄脏.", "鸡巴周围没用的那部分叫什么?一个男人!", "妻子和工作有什么区别?5年后，你的工作还是很糟糕."),
+            "dark" : ("你怎么能让一个女孩尖叫两次？先操她的屁股，然后在她的窗帘上擦你的鸡巴!", "我喜欢我的女人喜欢我的酒...锁在地窖里!", "一位医生对他的病人说:“对不起，你的生命只剩下10了.'\n患者: “什么10？月？周？”'\n医生:'9, 8...'", "和28岁的孩子做爱最好的部分是什么?一共有20个!", "需要多少大男子主义才能给灯加油?一个也没有。让她在黑暗中洗碗."),
+            "mean" : ("我喜欢你。人们说我没有品味，但我喜欢你.", "妈的，你很性感，但如果你闭嘴，你会更性感.", "我喜欢我的女人既有魅力，又蠢又贱。你看起来很符合要求.", "我也想雇你当妓女，但我的姑娘们很有教养...")
             }
 
 
@@ -2270,7 +2274,7 @@ init -4 python:
 
     slave_stories = ["slave_story1", "slave_story2", "slave_story3", "slave_story4", "slave_story5", "slave_story6", "slave_story7", "slave_story8"]
 
-    origins = ["Zan", "the border with the Holy Lands", "the Blood Islands", "Karkyr", "Westmarch", "the desert of Hokoma", "Borgo, the port city", "the Goliath desolations", "the Arik mountains"]
+    origins = [_("Zan"), _("the border with the Holy Lands"), _("the Blood Islands"), _("Karkyr"), _("Westmarch"), _("the desert of Hokoma"), _("Borgo, the port city"), _("the Goliath desolations"), _("the Arik mountains")]
 
 #     origin_description = {
 #                           "Zan" : "I know the old streets of Zan like the back of my hand... I used to walk to the market with my %s, wondering what the strange houses with the red lanterns were... Now I know... *blush*",
@@ -2572,15 +2576,15 @@ init -4 python:
                         }
 
     attraction_dict = {
-                       "beauty_good" : "让这群色鬼口水直流",
-                       "body_good" : "拥有魔鬼般的身材",
-                       "charm_good" : "抛一个媚眼就能让人神魂颠倒",
-                       "refinement_good" : "的举止就像是大家闺秀",
-                       "beauty_bad" : "让人看了就恶心反胃",
-                       "body_bad" : "的身材就像飞机场一样平",
-                       "charm_bad" : "让人看到她直接阳痿",
-                       "refinement_bad" : "粗鄙的像个乡巴佬"
-                      }
+                        "beauty_good" : "让这群色鬼口水直流",
+                        "body_good" : "拥有魔鬼般的身材",
+                        "charm_good" : "抛一个媚眼就能让人神魂颠倒",
+                        "refinement_good" : "的举止就像是大家闺秀",
+                        "beauty_bad" : "让人看了就恶心反胃",
+                        "body_bad" : "的身材就像飞机场一样平",
+                        "charm_bad" : "让人看到她直接阳痿",
+                        "refinement_bad" : "粗鄙的像个乡巴佬"
+                        }
 
     #### BROTHEL SERVICES ####
 
@@ -2601,42 +2605,42 @@ init -4 python:
     #### ITEMS ####
 
     quality_prefix = {
-                      "dress_0" : "破旧的",
-                      "dress_1" : "二手的",
-                      "dress_2" : "朴素的",
-                      "dress_3" : "好看的",
-                      "dress_4" : "华美的",
-                      "dress_5" : "附魔的",
-                      "dress_6" : "量身定做的",
+                        "dress_0" : "破旧的",
+                        "dress_1" : "二手的",
+                        "dress_2" : "朴素的",
+                        "dress_3" : "好看的",
+                        "dress_4" : "华美的",
+                        "dress_5" : "附魔的",
+                        "dress_6" : "量身定做的",
 
-                      "necklace_0" : "残次的",
-                      "necklace_1" : "破旧的",
-                      "necklace_2" : "廉价的",
-                      "necklace_3" : "昂贵的",
-                      "necklace_4" : "限量的",
-                      "necklace_5" : "附魔的",
-                      "necklace_6" : "顶级的",
+                        "necklace_0" : "残次的",
+                        "necklace_1" : "破旧的",
+                        "necklace_2" : "廉价的",
+                        "necklace_3" : "昂贵的",
+                        "necklace_4" : "限量的",
+                        "necklace_5" : "附魔的",
+                        "necklace_6" : "顶级的",
 
-                      "ring_0" : "生锈的",
-                      "ring_1" : "高仿的",
-                      "ring_2" : "廉价的",
-                      "ring_3" : "昂贵的",
-                      "ring_4" : "限量的",
-                      "ring_5" : "附魔的",
-                      "ring_6" : "顶级的",
+                        "ring_0" : "生锈的",
+                        "ring_1" : "高仿的",
+                        "ring_2" : "廉价的",
+                        "ring_3" : "昂贵的",
+                        "ring_4" : "限量的",
+                        "ring_5" : "附魔的",
+                        "ring_6" : "顶级的",
 
 #                      "gift_1" : "Cheap ",
 #                      "gift_2" : "Common ",
 #                      "gift_3" : "Fine ",
 #                      "gift_4" : "Rare ",
 
-                      "food_0" : "过期的",
-                      "food_1" : "辛辣的",
-                      "food_2" : "可口的",
-                      "food_3" : "多汁的",
-                      "food_4" : "低脂的",
-                      "food_5" : "蕴含魔力的",
-                      "food_6" : "顶级的",
+                        "food_0" : "过期的",
+                        "food_1" : "辛辣的",
+                        "food_2" : "可口的",
+                        "food_3" : "多汁的",
+                        "food_4" : "低脂的",
+                        "food_5" : "蕴含魔力的",
+                        "food_6" : "顶级的",
 
 #                      "accessory_1" : "Worn ",
 #                      "accessory_2" : "Simple ",
@@ -2644,20 +2648,20 @@ init -4 python:
 #                      "accessory_4" : "Fancy ",
 #                      "accessory_5" : "Enchanted ",
 
-                      "scroll_0" : "入门级",
-                      "scroll_1" : "老版的",
-                      "scroll_2" : "最新版",
-                      "scroll_3" : "进阶级",
-                      "scroll_4" : "专业级",
-                      "scroll_5" : "大师级",
+                        "scroll_0" : "入门级",
+                        "scroll_1" : "老版的",
+                        "scroll_2" : "最新版",
+                        "scroll_3" : "进阶级",
+                        "scroll_4" : "专业级",
+                        "scroll_5" : "大师级",
 
-                      "misc_0" : "毫无价值的",
-                      "misc_1" : "廉价的",
-                      "misc_2" : "普通的",
-                      "misc_3" : "昂贵的",
-                      "misc_4" : "稀有的",
-                      "misc_5" : "蕴含魔力的",
-                      "misc_6" : "顶级的"
+                        "misc_0" : "毫无价值的",
+                        "misc_1" : "廉价的",
+                        "misc_2" : "普通的",
+                        "misc_3" : "昂贵的",
+                        "misc_4" : "稀有的",
+                        "misc_5" : "蕴含魔力的",
+                        "misc_6" : "顶级的"
 
                     }
 
@@ -2678,11 +2682,13 @@ init -4 python:
     ## PRICES ##
 
     special_quest_description = {
-                                 "折扣价" : "新人注册享受优惠。千万别错过!",
-                                 "大师班" : "大师亲自指导。一节更比七节强！",
-                                 "高报酬" : "完成这个委托将获得更多的报酬！",
-                                 "高难度" : "完成这个委托将获得更多的声望！"
-                                 }
+                                "Cheap" : "新人注册享受优惠。千万别错过!",
+                                "Masterclass" : "大师亲自指导。一节更比七节强！",
+                                "High reward" : "完成这个委托将获得更多的报酬！",
+                                "Notorious" : "完成这个委托将获得更多的声望！",
+                                "Story" : "完成此任务以推进故事。",
+                                "story" : "完成此任务以推进故事。",
+                                }
 
     quest_base_gold = { # This the gold value per stat point of requirement and per day
                         "normal" : 1,
@@ -2803,60 +2809,60 @@ init -4 python:
     # Rank names #
 
     rank_name = {
-                 1 : "C", #"{color=[c_white]}C{/color}",
-                 2 : "B", #"{color=[c_yellow]}B{/color}",
-                 3 : "A", #"{color=[c_lightblue]}A{/color}",
-                 4 : "S", #"{color=[c_purple]}S{/color}",
-                 5 : "X", #"{color=[c_gold]}X{/color}",
-                 "waitress0": "女服务员LV0",
-                 "waitress1": "女服务员LV1",
-                 "waitress2": "女服务员LV2",
-                 "waitress3": "女服务员LV3",
-                 "waitress4": "女服务员LV4",
-                 "waitress5": "女服务员LV5",
-                 "dancer0": "脱衣舞娘LV0",
-                 "dancer1": "脱衣舞娘LV1",
-                 "dancer2": "脱衣舞娘LV2",
-                 "dancer3": "脱衣舞娘LV3",
-                 "dancer4": "脱衣舞娘LV4",
-                 "dancer5": "脱衣舞娘LV5",
-                 "masseuse0": "按摩技师LV0",
-                 "masseuse1": "按摩技师LV1",
-                 "masseuse2": "按摩技师LV2",
-                 "masseuse3": "按摩技师LV3",
-                 "masseuse4": "按摩技师LV4",
-                 "masseuse5": "按摩技师LV5",
-                 "geisha0": "表演艺妓LV0",
-                 "geisha1": "表演艺妓LV1",
-                 "geisha2": "表演艺妓LV2",
-                 "geisha3": "表演艺妓LV3",
-                 "geisha4": "表演艺妓LV4",
-                 "geisha5": "表演艺妓LV5",
-                 "sex0" : "妓女LV0",
-                 "sex1" : "妓女LV1",
-                 "sex2" : "妓女LV2",
-                 "sex3" : "妓女LV3",
-                 "sex4" : "妓女LV4",
-                 "sex5" : "妓女LV5",
-                 "service0" : "侍奉LV0",
-                 "service1" : "侍奉LV1",
-                 "service2" : "侍奉LV2",
-                 "service3" : "侍奉LV3",
-                 "service4" : "侍奉LV4",
-                 "service5" : "侍奉LV5",
-                 "anal0" : "肛交LV0",
-                 "anal1" : "肛交LV1",
-                 "anal2" : "肛交LV2",
-                 "anal3" : "肛交LV3",
-                 "anal4" : "肛交LV4",
-                 "anal5" : "肛交LV5",
-                 "fetish0" : "调教LV0",
-                 "fetish1" : "调教LV1",
-                 "fetish2" : "调教LV2",
-                 "fetish3" : "调教LV3",
-                 "fetish4" : "调教LV4",
-                 "fetish5" : "调教LV5"
-                 }
+                1 : "C", #"{color=[c_white]}C{/color}",
+                2 : "B", #"{color=[c_yellow]}B{/color}",
+                3 : "A", #"{color=[c_lightblue]}A{/color}",
+                4 : "S", #"{color=[c_purple]}S{/color}",
+                5 : "X", #"{color=[c_gold]}X{/color}",
+                "waitress0": "女服务员LV0",
+                "waitress1": "女服务员LV1",
+                "waitress2": "女服务员LV2",
+                "waitress3": "女服务员LV3",
+                "waitress4": "女服务员LV4",
+                "waitress5": "女服务员LV5",
+                "dancer0": "脱衣舞娘LV0",
+                "dancer1": "脱衣舞娘LV1",
+                "dancer2": "脱衣舞娘LV2",
+                "dancer3": "脱衣舞娘LV3",
+                "dancer4": "脱衣舞娘LV4",
+                "dancer5": "脱衣舞娘LV5",
+                "masseuse0": "按摩技师LV0",
+                "masseuse1": "按摩技师LV1",
+                "masseuse2": "按摩技师LV2",
+                "masseuse3": "按摩技师LV3",
+                "masseuse4": "按摩技师LV4",
+                "masseuse5": "按摩技师LV5",
+                "geisha0": "表演艺妓LV0",
+                "geisha1": "表演艺妓LV1",
+                "geisha2": "表演艺妓LV2",
+                "geisha3": "表演艺妓LV3",
+                "geisha4": "表演艺妓LV4",
+                "geisha5": "表演艺妓LV5",
+                "sex0" : "妓女LV0",
+                "sex1" : "妓女LV1",
+                "sex2" : "妓女LV2",
+                "sex3" : "妓女LV3",
+                "sex4" : "妓女LV4",
+                "sex5" : "妓女LV5",
+                "service0" : "侍奉LV0",
+                "service1" : "侍奉LV1",
+                "service2" : "侍奉LV2",
+                "service3" : "侍奉LV3",
+                "service4" : "侍奉LV4",
+                "service5" : "侍奉LV5",
+                "anal0" : "肛交LV0",
+                "anal1" : "肛交LV1",
+                "anal2" : "肛交LV2",
+                "anal3" : "肛交LV3",
+                "anal4" : "肛交LV4",
+                "anal5" : "肛交LV5",
+                "fetish0" : "调教LV0",
+                "fetish1" : "调教LV1",
+                "fetish2" : "调教LV2",
+                "fetish3" : "调教LV3",
+                "fetish4" : "调教LV4",
+                "fetish5" : "调教LV5"
+                }
 
 
     jp_to_level = {

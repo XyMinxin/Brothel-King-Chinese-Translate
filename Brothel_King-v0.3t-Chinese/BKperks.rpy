@@ -4,15 +4,15 @@
 init python:
     ## PERK ARCHETYPES ##
     archetype_dict = {
-                    "The Maid" : PerkArchetype("The Maid", "the maid.webp"),
-                    "The Player" : PerkArchetype("The Player", "the player.webp"),
-                    "The Model" : PerkArchetype("The Model", "the model.webp"),
-                    "The Courtesan" : PerkArchetype("The Courtesan", "the courtesan.webp"),
+                    "The Maid" : PerkArchetype(_("The Maid"), "the maid.webp"),
+                    "The Player" : PerkArchetype(_("The Player"), "the player.webp"),
+                    "The Model" : PerkArchetype(_("The Model"), "the model.webp"),
+                    "The Courtesan" : PerkArchetype(_("The Courtesan"), "the courtesan.webp"),
 
-                    "The Escort" : PerkArchetype("The Escort", "the escort.webp"),
-                    "The Fox" : PerkArchetype("The Fox", "the fox.webp"),
-                    "The Slut" : PerkArchetype("The Slut", "the slut.webp"),
-                    "The Bride" : PerkArchetype("The Bride", "the bride.webp"),
+                    "The Escort" : PerkArchetype(_("The Escort"), "the escort.webp"),
+                    "The Fox" : PerkArchetype(_("The Fox"), "the fox.webp"),
+                    "The Slut" : PerkArchetype(_("The Slut"), "the slut.webp"),
+                    "The Bride" : PerkArchetype(_("The Bride"), "the bride.webp"),
                     }
 
 label init_perks():
