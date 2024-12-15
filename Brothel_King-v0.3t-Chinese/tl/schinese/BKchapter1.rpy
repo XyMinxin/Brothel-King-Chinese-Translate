@@ -52,7 +52,7 @@ translate schinese c1_gio_is_back_acb90c7e:
 translate schinese c1_gio_is_back_3f15cc41:
 
     # gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[blist[2].cost] denars{/b}, we should be able to afford a new place and bribe the city guard for our first license."
-    gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[blist[2].cost] denars{/b}, we should be able to afford a new place and bribe the city guard for our first license."
+    gio "这并不容易，不过我认识一个哥们，如果你能给他 {b}[[blist[2].cost]金币{/b},我们就能买下一个城里的门面，打点好守卫，拿到营业执照。"
 
 # game/BKchapter1.rpy:44
 translate schinese c1_gio_is_back_6f230e60:
@@ -1378,7 +1378,7 @@ translate schinese c1_guards_visit_5c1d3d32:
 translate schinese c1_guards_visit_de188c36:
 
     # sill sad "What??? We need that [blist[2].cost] gold, fast!"
-    sill sad "What??? We need that [blist[2].cost] gold, fast!"
+    sill sad "什么???我们需要[blist[2].cost]金币,很急!"
 
 # game/BKchapter1.rpy:883
 translate schinese c1_guards_visit_4cc5803e:
@@ -1510,13 +1510,13 @@ translate schinese c1_guards_visit_0d259e4e:
 translate schinese c1_guards_visit_40fcc2f1:
 
     # guard "Yeah, sure! They all say that... All right, time to pay for your crimes. It will be [blist[2].cost] gold."
-    guard "Yeah, sure! They all say that... All right, time to pay for your crimes. It will be [blist[2].cost] gold."
+    guard "是啊,当然!他们都这么说...好了,是时候为你的罪行付出代价了。[blist[2].cost]金币的罚单。"
 
 # game/BKchapter1.rpy:967
 translate schinese c1_guards_visit_aa2faa74:
 
     # sill "[blist[2].cost] gold! But we need that money..." with vpunch
-    sill "[blist[2].cost] gold! But we need that money..." with vpunch
+    sill "[blist[2].cost]金币!但是我们需要那笔钱..." with vpunch
 
 # game/BKchapter1.rpy:969
 translate schinese c1_guards_visit_0a7c2f7f:
@@ -1540,7 +1540,7 @@ translate schinese c1_guards_visit_b864636b:
 translate schinese c1_guards_visit_dd40d913:
 
     # "You have lost [blist[2].cost] gold."
-    "You have lost [blist[2].cost] gold."
+    "你损失了[blist[2].cost]金币。"
 
 # game/BKchapter1.rpy:994
 translate schinese c1_guards_visit_ad689f72:
@@ -7264,7 +7264,7 @@ translate schinese c1_interrogate_menu_55695349:
 translate schinese c1_interrogate_menu_c6860acf:
 
     # you "My money. The [blist[2].cost] gold I saved to obtain a brothel license."
-    you "My money. The [blist[2].cost] gold I saved to obtain a brothel license."
+    you "我的钱。就是那[blist[2].cost]金币,我攒钱想要弄到的青楼营业执照。"
 
 # game/BKchapter1.rpy:4052
 translate schinese c1_interrogate_menu_b75223dc:
@@ -11620,7 +11620,7 @@ translate schinese c1_ending_maya_29da074f:
 translate schinese c1_ending_maya_1682cbed:
 
     # "You have got your [blist[2].cost] gold back."
-    "You have got your [blist[2].cost] gold back."
+    "你拿回了[blist[2].cost]金币。"
 
 # game/BKchapter1.rpy:6204
 translate schinese c1_ending_maya_1f430069:
@@ -12412,7 +12412,7 @@ translate schinese c1_ending_lieutenant_7cc0ce01:
 translate schinese c1_ending_lieutenant_29d14c1b:
 
     # "You have received [blist[2].cost] gold."
-    "You have received [blist[2].cost] gold."
+    "你获得了[blist[2].cost]枚金币。"
 
 # game/BKchapter1.rpy:6625
 translate schinese c1_ending_lieutenant_f0558a7b:
@@ -12742,7 +12742,7 @@ translate schinese c1_ending_captain_0fbe41a2:
 translate schinese c1_ending_captain_29d14c1b:
 
     # "You have received [blist[2].cost] gold."
-    "You have received [blist[2].cost] gold."
+    "你获得了[blist[2].cost]金币。"
 
 # game/BKchapter1.rpy:6821
 translate schinese c1_ending_captain_5ecf0b3b:
