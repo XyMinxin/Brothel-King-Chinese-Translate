@@ -198,3 +198,19 @@ translate schinese strings:
     old "We've got more tools than a hardware store, more beasts than the palace zoo... And by the time we're finished, they're all gonna fit inside of her!"
     new "We've got more tools than a hardware store, more beasts than the palace zoo... And by the time we're finished, they're all gonna fit inside of her!"
 
+# TODO: Translation updated at 2024-12-15 23:09
+
+translate schinese strings:
+
+    # game/BKpostings.rpy:27
+    old "Waitress{#1}"
+    new "Waitress{#1}"
+
+    # game/BKpostings.rpy:27
+    old "Geisha{#1}"
+    new "Geisha{#1}"
+
+    # game/BKpostings.rpy:27
+    old "Hardcore{#2}"
+    new "Hardcore{#2}"
+
