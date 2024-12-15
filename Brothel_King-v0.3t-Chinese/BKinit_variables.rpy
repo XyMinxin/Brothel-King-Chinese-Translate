@@ -419,11 +419,10 @@ init -3 python:
     all_MC_stats = ["strength", "spirit", "charisma", "speed"]
 
     MC_playerclass_description = {
-                                "Warrior" : "You are a Warrior. You might be young, but you have seen more than your share of bloody battles. You are stronger in fights and for protecting the brothel.",
-                                "Wizard" : "You are a Wizard. People bend to your will, and your magic. You have access to the most spells.",
-                                "Trader" : "You are a Rogue Trader. You've been hustling since you were a young street rat. You can make better deals and fetch the best prices."
-                            }
-
+                                  "战士" : "你是一个战士。虽然你看起来很年轻，但你已历经沙场磨难。你善于战斗，可以轻松保护他人。",
+                                  "法师" : "你是一个法师。凡人臣服于你的魔法。你可以使用各种各样强大的咒语，催眠别人也不错。",
+                                  "奸商" : "你是一个商人。你从小就接触经商。你可以和有钱人做大买卖，在购买东西时讨价还价。"
+                                  }
     MC_stat_description = {
                         }
                             "strength" : "这是你的力量值。力量越高，你的战斗能力和防御能力就越强。",
@@ -432,9 +431,9 @@ init -3 python:
                             "speed" : "这是你的行动力。行动力决定了你在一天内可以执行多少次操作."
 
     god_description = {
-                        "Arios" : "You worship Arios, god of Light and lord of the Angels. +1 to Strength.",
-                        "Shalia" : "You worship Shalia, goddess of Shadows and ruler of the Night. +1 to Spirit.",
-                        None : "You do not worship any god, and delight instead in the wonders of the natural world. +1 to Charisma."
+                        "太阳神" : "你信仰太阳神，他是光明之神和天使之主。你的力量+1。",
+                        "莎莉娅" : "你信仰莎莉娅，她是暗影和黑夜的统治者。你的精神+1。",
+                        None : "你是个无神论者，比起神明你更喜欢大自然。你的魅力+1。"
                         }
 
     alignment_description = {
