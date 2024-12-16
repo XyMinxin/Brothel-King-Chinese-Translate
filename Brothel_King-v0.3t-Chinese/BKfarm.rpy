@@ -22,12 +22,12 @@ init -2 python:
 
             if self.can_upgrade():
                 if self.rank > 0:
-                    ttip += "Click here to upgrade the capacity of this facility for " + str(self.get_price()) + " gold."
+                    ttip += "点击此处花费" + str(self.get_price()) + "金币升级此设施的容量。"
                 else:
-                    ttip += "Click here to build this facility for " + str(self.get_price()) + " gold."
+                    ttip += "点击此处花费" + str(self.get_price()) + "金币建立这个设施。"
 
             elif self.rank < 5:
-                ttip += "You cannot improve this facility until you get a higher brothel license."
+                ttip += "在你拿到更高等级的营业执照之前你无法升级这个设施。"
 
             else:
                 "You cannot improve this facility further."
@@ -588,7 +588,7 @@ init -2 python:
                         if girl.get_effect("special", "all farm weaknesses"):
                             descript += " Gizel knows " + girl.name + " is " + event_color["fear"] % "weak against all farm minions" + ", and uses that against her."
                         else:
-                            descript += " Gizel knows " + girl.name + " is especially " + event_color["fear"] % ("weak against " + girl.weakness + "s") + ", and uses that against her."
+                            descript += " Gizel knows " + girl.name + " is especially " + event_color["fear"] % ("weak against " + girl.weakness + " ") + ", and uses that against her." #删去了名词后缀复数s的文本
                 else:
                     weak = False
 

@@ -433,7 +433,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
                 yalign 0.5
 
             button background None xalign 0.0 yalign 0.5 action NullAction():
-                tooltip "Your available gold."
+                tooltip "您当前持有的金币数量"
                 if game.chapter > 1:
                     hovered (Show("tax_tooltip", transition=Dissolve(0.15)))
                     unhovered (Hide("tax_tooltip", transition=Dissolve(0.15)))
@@ -465,7 +465,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         null width xres(200)
 
-        textbutton "帮助" tooltip "Learn more about the current screen.":
+        textbutton "帮助" tooltip "了解更多关于这个界面的信息":
 
             style "button"
             xalign 1.0
@@ -4267,7 +4267,7 @@ screen brothel():
                     $ text1 += " and {b}" + '{:,}'.format(farm_upk) + "{/b} gold for the girls in the farm"
                 $ text1 += __(" (not accounting for special effects).")
 
-                textbutton __("每日开销: ") + '{:,}'.format(bro_costs + bro_upk + farm_upk) + " gold" text_size res_font(18) text_xalign 0.0 xalign 0.0 background c_ui_dark xsize xres(300) ysize yres(36) action NullAction() tooltip text1
+                textbutton __("每日开销: ") + '{:,}'.format(bro_costs + bro_upk + farm_upk) + "金币" text_size res_font(18) text_xalign 0.0 xalign 0.0 background c_ui_dark xsize xres(300) ysize yres(36) action NullAction() tooltip text1
 
                 textbutton brothel.name text_size res_font(24) xalign 0.5 ysize yres(40) action Return("change name") tooltip __("Click to change your brothel's name.")
 
@@ -4276,7 +4276,7 @@ screen brothel():
                 xfill True
 
                 vbox spacing 10 xalign 0.0:
-                    text "{b}Trainer{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                    text "{b}协助者{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                     frame:
                         xsize xres(360)
@@ -4295,9 +4295,9 @@ screen brothel():
                                         add MC.current_trainer.portrait zoom 1.0 xalign 0.5 yalign 0.5
 
                                     if len(MC.trainers) == 1:
-                                        $ text1 = "No other trainer available"
+                                        $ text1 = "没有其他的协助者了"
                                     else:
-                                        $ text1 = "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+                                        $ text1 = "协助者能够提供许多增益效果。通过与泽恩的NPC建立友谊来获得更多协助者的帮助!"
 
                                     button xmargin 0 xpadding 0 xsize xres(156) background None action NullAction() hovered tt.Action(text1):
 
@@ -4306,12 +4306,12 @@ screen brothel():
                                         textbutton "<" xsize xres(75) xalign 0.0:
                                             if len(MC.trainers) > 1:
                                                 action Function(MC.cycle_trainers, reverse = True)
-                                                tooltip "Change trainer."
+                                                tooltip "上一个协助者"
 
                                         textbutton ">" xsize xres(75) xalign 1.0:
                                             if len(MC.trainers) > 1:
                                                 action Function(MC.cycle_trainers)
-                                                tooltip "Change trainer."
+                                                tooltip "下一个协助者"
 
                                 vbox:
                                     text "{b}" + MC.current_trainer.name + "{/b}" size res_font(18) xalign 0.5
@@ -4323,7 +4323,7 @@ screen brothel():
                                 text "{i}Recruit a trainer to help your girls.{/i}" size res_font(14)
 
                 vbox spacing 10 xalign 1.0:
-                    text "{b}Helpers{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                    text "{b}外包人员{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                     frame:
                         xsize xres(580)
@@ -4412,20 +4412,20 @@ screen brothel():
                         hbox xfill True spacing 10:
 
                             vbox spacing 6 xsize xres(180):
-                                text "Estimated customers" size res_font(14)
+                                text "客流量" size res_font(14)
                                 textbutton "{image=img_cust} %i" % brothel.customer_count style "inv_no_padding" action NullAction() tooltip brothel.count_customers_description()
 
                             vbox spacing 6 xsize xres(150):
-                                text "Threat level" size res_font(14)
-                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "Your brothel's current threat level is " + brothel.estimate_threat_level() + ". Brothel threat is affected by brothel security and your Strength skill."
+                                text "威胁等级" size res_font(14)
+                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + "。威胁等级受青楼安保人员数量和你的力量属性影响。"
 
                             vbox spacing 6 xsize xres(200):
                                 hbox spacing 10:
-                                    text "Dirt level" size res_font(14)
+                                    text "卫生情况" size res_font(14)
                                     textbutton "彻底清洁" xmargin 10 ymargin 0 ypadding 6 text_size res_font(14):
                                         if brothel.get_clean_up_cost() > 0:
                                             action Return(("clean up", ""))
-                                        tooltip "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)." % str(brothel.get_clean_up_cost())
+                                        tooltip "购买清洁用品，叫希露和保洁把你的青楼清洁干净 (彻底清洁需要花费: %s 金币)" % str(brothel.get_clean_up_cost())
                                 textbutton str(round_int(brothel.dirt)) + " {size=-4}(-" + str_int(brothel.get_maintenance()) + ")" style "inv_no_padding" action NullAction() tooltip maintenance_desc[brothel.get_cleanliness()] yoffset -12
 
 
@@ -4451,7 +4451,7 @@ screen brothel():
                     has vbox spacing 6
 
                     hbox spacing xres(6):
-                        text "{b}Bedrooms{/b}" size res_font(18) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
+                        text "{b}女孩卧室{/b}" size res_font(18) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
                         $ ttip = __("Upgrade all your bedrooms for ") + str(brothel.get_room_upgrade_price(brothel.bedrooms)) + __(" gold. Upgraded bedrooms are more comfortable for girls and customers alike.")
                         textbutton "▲{image=img_gold}" text_font "1.ttf" ysize yres(24):
@@ -4508,7 +4508,7 @@ screen brothel():
 
                     has vbox spacing 6
 
-                    text "{b}Master Bedroom{/b}" size res_font(18) xalign 0.0 drop_shadow (2, 2)
+                    text "{b}私人卧室{/b}" size res_font(18) xalign 0.0 drop_shadow (2, 2)
 
                     frame background c_ui_dark:
 
@@ -4559,7 +4559,7 @@ screen brothel():
                 has vbox
                 spacing 6
 
-                text "{b}Common Rooms{/b}" size res_font(18) xalign 0.0 drop_shadow (2, 2)
+                text "{b}营业场所{/b}" size res_font(18) xalign 0.0 drop_shadow (2, 2)
 
                 frame:
                     background c_ui_dark
@@ -5165,7 +5165,7 @@ screen home():
                     text "✓" font "1.ttf" size res_font(14) xalign 0.5 yalign 0.5
                 else:
                     text " " size res_font(14) xalign 0.5
-            text "Show brothel report" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
+            text "显示营业报告" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
 
 screen brothel_report():
@@ -5174,16 +5174,16 @@ screen brothel_report():
 
     if brothel.get_cleanliness() in ("disgusting", "fire"):
         default side_pic = "side sill sad"
-        default shown_tip = "Master!!! " + brothel.name + " is very dirty... Please do something!"
+        default shown_tip = "主人!!! " + brothel.name + "简直臭不可闻...快想想办法!"
     elif calendar.time == 1:
         default side_pic = "side sill happy"
-        default shown_tip = "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
+        default shown_tip = "欢迎回家, 主人! 你一定能赚到大钱的!"
     elif logs[calendar.time-1] and logs[calendar.time-1].net < 0:
         default side_pic = "side sill sad"
-        default shown_tip = "Master!!! " + brothel.name + " is losing money... What's going on?"
+        default shown_tip = "主人!!! " + brothel.name + "正在亏损...我们该怎么办?"
     else:
         default side_pic = "side sill happy"
-        default shown_tip = "{color=[c_lightblue]}Did you know? {/color}%s" % daily_tip
+        default shown_tip = "{color=[c_lightblue]}你知道吗? {/color}%s" % daily_tip
 
     frame:
         xanchor 1.0
@@ -5204,7 +5204,7 @@ screen brothel_report():
             add side_pic zoom 0.5 xalign 0.0 
             textbutton "下一个提示" text_size 18 xalign 0.0 yalign 0.5:
                 if always_show_brothel_report:
-                    action SetLocalVariable("shown_tip", "{color=[c_lightblue]}Did you know? {/color}%s" % rand_choice(random_tips))
+                    action SetLocalVariable("shown_tip", "{color=[c_lightblue]}你知道吗? {/color}%s" % rand_choice(random_tips))
             text shown_tip xalign 0.0 yalign 0.5 size res_font(18) justify True italic True xsize 0.8 color c_brown
             #? Why does the textbutton 'dance' around when changing tips? Investigate
 
@@ -5536,7 +5536,7 @@ screen shortcuts():
 
 ## Close button
 
-screen close(act, name="back", ttip="Click to go back (or use right-click)."):
+screen close(act, name="返回", ttip="点击返回(或直接单击右键)"):
 
     textbutton name:
 

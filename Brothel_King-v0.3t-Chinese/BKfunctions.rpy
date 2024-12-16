@@ -1372,7 +1372,7 @@ init -3 python:
 
         return txt + ("\n" + txt).join(li)
 
-    def plural(nb, ending = "s", singular=""):
+    def plural(nb, ending = "", singular=""): #删去了名词复数后缀加S的文本
 
         if nb == 1:
             return singular
@@ -2676,7 +2676,7 @@ init -3 python:
 
                 if len(customers) > 1:
                     s_act = "group"
-                    plur = "s"
+                    plur = "们"
                 elif len(girls) > 1:
                     s_act = "bisexual"
                     plur = ""

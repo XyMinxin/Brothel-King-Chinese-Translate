@@ -279,7 +279,7 @@ screen right_menu_city():
 
         textbutton "探索城市" style_group "rm":
             action Return("districts")
-            tooltip "Visit the {b}city{/b} of Zan and explore its various locations."
+            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅"
 
 
 ################
@@ -378,7 +378,7 @@ screen right_menu_endday():
 
         textbutton "开始营业" style_group "rm":
             action Return("end_day")
-            tooltip "Click here to {b}end the day{/b} and move on with the night's events."
+            tooltip "点击这个按钮进入深夜，开始营业"
 
 ################
 ## Home - Right menu - Display Advance button

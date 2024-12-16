@@ -4504,20 +4504,20 @@ init -2 python:
                     desc = "Your bachelor pad. No room for a bachelorette yet."
 
                 if self.level < brothel.rank:
-                    desc += " Improve this room for {b}" + str(master_bedrooms[self.level+1].cost) + " gold{/b}."
+                    desc += " Improve this room for {b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}。"
                 elif self.level == 5:
                     desc += " {i}You cannot improve the master bedroom further.{/i}"
 
                 return desc
 
             if brothel_firstvisit:
-                return "Build the {b}" + self.name + "{/b} to train a {b}" + self.job + "{/b}."
+                return "修建一个{b}" + self.name + "{/b}让{b}" + self.job + "{/b}服务客人。"
             elif self.level == 0:
-                return "Build the {b}" + self.name + "{/b} for {b}" + str(self.get_price()) + " gold{/b}."
+                return "修建一个{b}" + self.name + "{/b}需要花费{b}" + str(self.get_price()) + "金币{/b}。"
             elif self.level < district.rank:
-                return "The {b}" + self.name + "{/b} can host " + str(self.cust_limit) + " customers every night. Upgrade the " + self.name + " for {b}" + str(self.get_price()) + " gold{/b} to accommodate more customers."
+                return "现在{b}" + self.name + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。扩建" + self.name + "需要花费{b}" + str(self.get_price()) + "金币{/b}以容纳更多顾客。"
             else:
-                return "The {b}" + self.name + "{/b} can host " + str(self.cust_limit) + " customers every night."
+                return "现在{b}" + self.name + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。"
 
         def update_cust_limit(self, silent=False): # Returns value if changed
             _old = self.cust_limit

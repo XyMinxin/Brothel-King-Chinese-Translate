@@ -470,9 +470,9 @@ init -3 python:
                 }
 
     sorter_dict = { # [Caption, attribute, tooltip, reverse order]
-                    "alpha" : ["首字母", "name", "名字", False],
+                    "alpha" : ["名称", "name", "首字母", False],
                     "badge" : ["徽章", "badge", "徽章", True],
-                    "price" : ["价值", "price", "价值", False],
+                    "price" : ["价值", "price", "价值高低", False],
                     "type" : ["种类", "filter", "物品类型", False],
                     "level" : ["等级", "level", "女孩的等级", True],
                     "rank" : ["阶级", "rank", "女孩的阶级", True],
@@ -1451,7 +1451,7 @@ init python:
     # The dictionary uses nested lists to retain choices order
 
     interact_dict = {
-                    "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
+                    "闲聊" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
                     "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
                                         GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
@@ -1465,7 +1465,7 @@ init python:
                                     ],
                     "{size=+8}女孩故事{/size}" : [GirlInteractionTopic("chat", "story", "再次聆听她的故事", "slave_chat_story", AP_cost=0, condition = "story")],
 
-                    "train" : ["{size=+8}技能训练{/size}", "{size=+8}性技训练{/size}", "{size=+8}特别训练{/size}"],
+                    "训练" : ["{size=+8}技能训练{/size}", "{size=+8}性技训练{/size}", "{size=+8}特别训练{/size}"],
                     "{size=+8}技能训练{/size}" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
                                         GirlInteractionTopic("train", "train", "体格训练", "slave_train_constitution", act="constitution")],
                     "{size=+8}性技训练{/size}" : [
@@ -1480,7 +1480,7 @@ init python:
                     "{size=+8}特别训练{/size}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_train_free_form", condition = "free-form"),
                                         GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
 
-                    "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
+                    "催眠" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
                     "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
                     "{size=+8}催眠暗示{/size}" : [
                                                 GirlInteractionTopic("magic", "train", "提高服从　", "slave_magic", act="obedience", gold_cost=20),
@@ -1497,7 +1497,7 @@ init python:
                                                 GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
-                    "react" : ["{size=+8}鼓励{/size}", "{size=+8}惩罚{/size}"],
+                    "奖惩" : ["{size=+8}鼓励{/size}", "{size=+8}惩罚{/size}"],
                     "{size=+8}鼓励{/size}" : [
                                     GirlInteractionTopic("react", "reward", "称赞她　　　　", "slave_reward_praise"),
                                     GirlInteractionTopic("react", "reward", "发奖金　　　　", "slave_reward_gold"),
@@ -1514,7 +1514,7 @@ init python:
                                     GirlInteractionTopic("react", "discipline", "粗暴地强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送去奴隶农场　　", "slave_punish_farm", condition="farm"),
                                     ],
-                    "misc" : ["{size=+8}穿着{/size}", "{size=+8}工作{/size}", "{size=+8}私人指导{/size}", "{size=+8}DEBUG{/size}"],
+                    "其他" : ["{size=+8}穿着{/size}", "{size=+8}工作{/size}", "{size=+8}私人指导{/size}", "{size=+8}DEBUG{/size}"],
                     "{size=+8}穿着{/size}" : [
                                     GirlInteractionTopic("misc", None, "让她保持裸体　　　　　　　　　", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
                                     GirlInteractionTopic("misc", None, "让她穿好衣服　　　　　　　　　", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
@@ -1536,7 +1536,7 @@ init python:
 
 
     free_interact_dict = {
-                            "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "DEBUG"],
+                            "聊天" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "DEBUG"],
                             "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "闲聊　　　", "free_chat_small_talk"),
                                                 GirlInteractionTopic("chat", "chat", "八卦　　　", "free_chat_gossip"),
                                                 GirlInteractionTopic("chat", "chat", "生命　　　", "free_chat_life"),# love_test=5),
@@ -1548,7 +1548,7 @@ init python:
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她讨厌什么　", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "fun" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
+                            "取悦" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
                             "{size=+8}笑话{/size}" : [
                                         GirlInteractionTopic("fun", "joke", "普通笑话　　　", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "黄色段子　　　", "free_joke_adult", love_test=15),
@@ -1569,7 +1569,7 @@ init python:
                                         GirlInteractionTopic("fun", "play", "让她和你肛交　", "free_play", act="anal", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "让她和你玩SM　", "free_play", act="fetish", relationship_level=4),
                                         ],
-                            "flirt" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
+                            "调情" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
 
                             "{size=+8}赞美{/size}" : [
                                         GirlInteractionTopic("flirt", "compliment", "赞扬她的美貌", "free_flirt_beauty", relationship_level=1),
@@ -1588,7 +1588,7 @@ init python:
                                                 GirlInteractionTopic("flirt", "chat about sex", "双飞　　　", "free_flirt_sex_act", act="bisexual", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "群交　　　", "free_flirt_sex_act", act="group", love_test=55),
                                                 ],
-                            "give" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
+                            "赠礼" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
                             "{size=+8}赠礼{/size}" : [
                                         GirlInteractionTopic("give", "gift", "送她礼物　　", "free_give_gift", love_test=20),
                                         GirlInteractionTopic("give", "gold", "给她金币　　", "free_give_gold", love_test=20),
