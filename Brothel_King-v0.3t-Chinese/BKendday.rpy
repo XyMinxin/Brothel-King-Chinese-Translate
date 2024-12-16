@@ -180,10 +180,10 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
                     if has_log:
 
                         if show_log:
-                            $ text1 = "Hide log"
+                            $ text1 = "隐藏报告"
 
                         else:
-                            $ text1 = "Show log"
+                            $ text1 = "显示报告"
 
                         textbutton text1 ymargin 10:
                             xalign 0.5
@@ -290,10 +290,10 @@ screen night_old(event_pic = None, event_bg = None, changes = "", has_log = True
                 if has_log:
 
                     if show_log:
-                        $ text1 = "Hide log"
+                        $ text1 = "隐藏报告"
 
                     else:
-                        $ text1 = "Show log"
+                        $ text1 = "显示报告"
 
                     textbutton text1 ymargin 10:
                         xalign 0.5

@@ -1187,7 +1187,7 @@ screen item_profile(it):
                                 unhovered SetScreenVariable("focused_char", owner)
 
                 if "bargain" in acts:
-                    textbutton __("Skip") action Return("leave") xalign 0.5
+                    textbutton __("跳过") action Return("leave") xalign 0.5
 
     if isinstance(it, ItemInstance) and focused_char and (it.can_wear("girl") or it.can_use("girl")):
         if focused_char == left_focus:
