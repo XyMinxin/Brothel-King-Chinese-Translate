@@ -1715,7 +1715,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
 
             $ max_page = (len(gal.blist)-1) // shown_pics
 
-            text "第" + str(page+1) + "/" + str(max_page+1) size int(config.screen_height*0.02) + "页"
+            text "第" + str(page+1) + "/" + str(max_page+1) + "页" size int(config.screen_height*0.02) 
 
             frame background None xsize 0.8 xalign 1.0:
     #            textbutton "Start Slideshow" action gal.ToggleSlideshow()
