@@ -1395,7 +1395,7 @@ init -2 python:
 
     # Lists all tabs and keys/buttons in the Game CG gallery as (tab, buttons) tuples
 
-    ev_gallery_list = ["Characters", "Story", "Backgrounds", "Misc"]
+    ev_gallery_list = ["角色立绘", "剧情CG", "背景图片", "其他图片"]
 
 #     ev_gallery_list = [
 #                        ("Characters", ["sill", "kurohime", "maid", "gio", "kosmo", "kosmo girls", "gizel",
@@ -1715,7 +1715,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
 
             $ max_page = (len(gal.blist)-1) // shown_pics
 
-            text "Page " + str(page+1) + "/" + str(max_page+1) size int(config.screen_height*0.02)
+            text "第" + str(page+1) + "/" + str(max_page+1) size int(config.screen_height*0.02) + "页"
 
             frame background None xsize 0.8 xalign 1.0:
     #            textbutton "Start Slideshow" action gal.ToggleSlideshow()
