@@ -750,3 +750,1939 @@ translate schinese strings:
     old "It is recommended that you backup your girls folder and run a simulation beforehand. There is no Undo operation!{fast}{nw}"
     new "建议您先备份女孩文件夹并运行模拟。没有撤消操作!{fast}{nw}"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKscreens.rpy:436
+    old "Your available gold."
+    new "Your available gold."
+
+    # game/BKscreens.rpy:468
+    old "Learn more about the current screen."
+    new "Learn more about the current screen."
+
+    # game/BKscreens.rpy:618
+    old "Sk."
+    new "Sk."
+
+    # game/BKscreens.rpy:618
+    old "Sort girls by specific skills."
+    new "Sort girls by specific skills."
+
+    # game/BKscreens.rpy:626
+    old "Click to change view mode"
+    new "Click to change view mode"
+
+    # game/BKscreens.rpy:629
+    old "L.Up"
+    new "L.Up"
+
+    # game/BKscreens.rpy:631
+    old "Filter girls that are ready to level up (filter ON)"
+    new "Filter girls that are ready to level up (filter ON)"
+
+    # game/BKscreens.rpy:633
+    old "Filter girls that are ready to level up (filter OFF)"
+    new "Filter girls that are ready to level up (filter OFF)"
+
+    # game/BKscreens.rpy:640
+    old "Go back to other filters."
+    new "Go back to other filters."
+
+    # game/BKscreens.rpy:787
+    old "Use mousewheel to cycle girls' pages."
+    new "Use mousewheel to cycle girls' pages."
+
+    # game/BKscreens.rpy:799
+    old "{i}  No girl available  {/i}"
+    new "{i}  No girl available  {/i}"
+
+    # game/BKscreens.rpy:812
+    old "Choose a badge for [girl.fullname]"
+    new "Choose a badge for [girl.fullname]"
+
+    # game/BKscreens.rpy:827
+    old "No badge"
+    new "No badge"
+
+    # game/BKscreens.rpy:830
+    old "Pick this badge"
+    new "Pick this badge"
+
+    # game/BKscreens.rpy:839
+    old "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience."
+    new "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience."
+
+    # game/BKscreens.rpy:846
+    old "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl."
+    new "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl."
+
+    # game/BKscreens.rpy:862
+    old "No job"
+    new "No job"
+
+    # game/BKscreens.rpy:870
+    old " is currently at the "
+    new " is currently at the "
+
+    # game/BKscreens.rpy:872
+    old "You haven't met this girl before."
+    new "You haven't met this girl before."
+
+    # game/BKscreens.rpy:878
+    old "{/b} is training ("
+    new "{/b} is training ("
+
+    # game/BKscreens.rpy:882
+    old "{/b} is being held ("
+    new "{/b} is being held ("
+
+    # game/BKscreens.rpy:1325
+    old "Click to allow "
+    new "Click to allow "
+
+    # game/BKscreens.rpy:1328
+    old "Click to block "
+    new "Click to block "
+
+    # game/BKscreens.rpy:1381
+    old "Gizel thinks she will accept this training without causing trouble."
+    new "Gizel thinks she will accept this training without causing trouble."
+
+    # game/BKscreens.rpy:1383
+    old "Gizel thinks she will be reluctant to train this act and will take a little convincing (tough mode needed)."
+    new "Gizel thinks she will be reluctant to train this act and will take a little convincing (tough mode needed)."
+
+    # game/BKscreens.rpy:1385
+    old "Gizel thinks she will refuse this act unless she is beaten into submission (hardcore mode needed)."
+    new "Gizel thinks she will refuse this act unless she is beaten into submission (hardcore mode needed)."
+
+    # game/BKscreens.rpy:1388
+    old "Gizel isn't sure how "
+    new "Gizel isn't sure how "
+
+    # game/BKscreens.rpy:1388
+    old " will react to this training."
+    new " will react to this training."
+
+    # game/BKscreens.rpy:1391
+    old "[girl.name] will never resist this."
+    new "[girl.name] will never resist this."
+
+    # game/BKscreens.rpy:1399
+    old "Training mode:"
+    new "Training mode:"
+
+    # game/BKscreens.rpy:1399
+    old "Decide if Gizel will force girls to train against their will."
+    new "Decide if Gizel will force girls to train against their will."
+
+    # game/BKscreens.rpy:1409
+    old "Training facility:"
+    new "Training facility:"
+
+    # game/BKscreens.rpy:1409
+    old "Define which facility to use for her training (if any)."
+    new "Define which facility to use for her training (if any)."
+
+    # game/BKscreens.rpy:1414
+    old "Gizel will choose an available facility automatically for her training."
+    new "Gizel will choose an available facility automatically for her training."
+
+    # game/BKscreens.rpy:1424
+    old ", Lv. "
+    new ", Lv. "
+
+    # game/BKscreens.rpy:1430
+    old "Use Weakness:"
+    new "Use Weakness:"
+
+    # game/BKscreens.rpy:1430
+    old "Determines if Gizel will use her known weakness against her."
+    new "Determines if Gizel will use her known weakness against her."
+
+    # game/BKscreens.rpy:1435
+    old "Holding mode:"
+    new "Holding mode:"
+
+    # game/BKscreens.rpy:1435
+    old "Decide what the girl will do when not in training (work or rest)."
+    new "Decide what the girl will do when not in training (work or rest)."
+
+    # game/BKscreens.rpy:1443
+    old "Change program"
+    new "Change program"
+
+    # game/BKscreens.rpy:1443
+    old "Change "
+    new "Change "
+
+    # game/BKscreens.rpy:1443
+    old "'s current training program."
+    new "'s current training program."
+
+    # game/BKscreens.rpy:1461
+    old "Open %s's entry in your magical notebook (shortcut: {u}n{/u})"
+    new "Open %s's entry in your magical notebook (shortcut: {u}n{/u})"
+
+    # game/BKscreens.rpy:1481
+    old "Girl rating ("
+    new "Girl rating ("
+
+    # game/BKscreens.rpy:1759
+    old "Sanity: "
+    new "Sanity: "
+
+    # game/BKscreens.rpy:1811
+    old "Away"
+    new "Away"
+
+    # game/BKscreens.rpy:1817
+    old "Hurt (%id)"
+    new "Hurt (%id)"
+
+    # game/BKscreens.rpy:1823
+    old "Resting"
+    new "Resting"
+
+    # game/BKscreens.rpy:1837
+    old "Holding"
+    new "Holding"
+
+    # game/BKscreens.rpy:1839
+    old "Training"
+    new "Training"
+
+    # game/BKscreens.rpy:1870
+    old "Main skills"
+    new "Main skills"
+
+    # game/BKscreens.rpy:1969
+    old "You need to become her friend to see her level for this skill."
+    new "You need to become her friend to see her level for this skill."
+
+    # game/BKscreens.rpy:1989
+    old "Sex skills"
+    new "Sex skills"
+
+    # game/BKscreens.rpy:2011
+    old " acts{/b} for this girl. At least one regular sex act muct be active as well."
+    new " acts{/b} for this girl. At least one regular sex act muct be active as well."
+
+    # game/BKscreens.rpy:2098
+    old "You need to become her lover to see her level for this skill."
+    new "You need to become her lover to see her level for this skill."
+
+    # game/BKscreens.rpy:2116
+    old "Traits"
+    new "Traits"
+
+    # game/BKscreens.rpy:2165
+    old "You need to become her boyfriend to see her traits."
+    new "You need to become her boyfriend to see her traits."
+
+    # game/BKscreens.rpy:2172
+    old "Upkeep: "
+    new "Upkeep: "
+
+    # game/BKscreens.rpy:2187
+    old "Her upkeep is currently withdrawn."
+    new "Her upkeep is currently withdrawn."
+
+    # game/BKscreens.rpy:2213
+    old "You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy."
+    new "You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy."
+
+    # game/BKscreens.rpy:2221
+    old "Decrease her upkeep."
+    new "Decrease her upkeep."
+
+    # game/BKscreens.rpy:2229
+    old "Increase her upkeep."
+    new "Increase her upkeep."
+
+    # game/BKscreens.rpy:2249
+    old "Upkeep"
+    new "Upkeep"
+
+    # game/BKscreens.rpy:2256
+    old " gold (fixed)"
+    new " gold (fixed)"
+
+    # game/BKscreens.rpy:2326
+    old "Auto-train "
+    new "Auto-train "
+
+    # game/BKscreens.rpy:2329
+    old "(ON)"
+    new "(ON)"
+
+    # game/BKscreens.rpy:2332
+    old "(OFF)"
+    new "(OFF)"
+
+    # game/BKscreens.rpy:2527
+    old "Bu{u}y{/u}"
+    new "Bu{u}y{/u}"
+
+    # game/BKscreens.rpy:2565
+    old "Hurt"
+    new "Hurt"
+
+    # game/BKscreens.rpy:2572
+    old "Tired"
+    new "Tired"
+
+    # game/BKscreens.rpy:2580
+    old "No {u}j{/u}ob"
+    new "No {u}j{/u}ob"
+
+    # game/BKscreens.rpy:2598
+    old "Half-Shift"
+    new "Half-Shift"
+
+    # game/BKscreens.rpy:2600
+    old "Full shift"
+    new "Full shift"
+
+    # game/BKscreens.rpy:2605
+    old "Sche{u}d{/u}ule"
+    new "Sche{u}d{/u}ule"
+
+    # game/BKscreens.rpy:2606
+    old "{i}Current schedule: %s{/i}.\nClick to open %s's schedule."
+    new "{i}Current schedule: %s{/i}.\nClick to open %s's schedule."
+
+    # game/BKscreens.rpy:2613
+    old "{u}I{/u}nteract"
+    new "{u}I{/u}nteract"
+
+    # game/BKscreens.rpy:2616
+    old "Interact with your girl. Costs actions."
+    new "Interact with your girl. Costs actions."
+
+    # game/BKscreens.rpy:2627
+    old "You cannot take any more actions today."
+    new "You cannot take any more actions today."
+
+    # game/BKscreens.rpy:2630
+    old "You cannot interact with %s as she is away."
+    new "You cannot interact with %s as she is away."
+
+    # game/BKscreens.rpy:2632
+    old "I{u}t{/u}ems"
+    new "I{u}t{/u}ems"
+
+    # game/BKscreens.rpy:2646
+    old "Dismiss"
+    new "Dismiss"
+
+    # game/BKscreens.rpy:2651
+    old "Release this girl from your custody. ({i}shortcut: {u}Backspace{/u}{/i})"
+    new "Release this girl from your custody. ({i}shortcut: {u}Backspace{/u}{/i})"
+
+    # game/BKscreens.rpy:2654
+    old "Sell"
+    new "Sell"
+
+    # game/BKscreens.rpy:2665
+    old "Level {u}u{/u}p"
+    new "Level {u}u{/u}p"
+
+    # game/BKscreens.rpy:2676
+    old "Per{u}k{/u}s"
+    new "Per{u}k{/u}s"
+
+    # game/BKscreens.rpy:2681
+    old "Check her current perks"
+    new "Check her current perks"
+
+    # game/BKscreens.rpy:2689
+    old "{u}R{/u}ank up"
+    new "{u}R{/u}ank up"
+
+    # game/BKscreens.rpy:2694
+    old "St{u}a{/u}ts"
+    new "St{u}a{/u}ts"
+
+    # game/BKscreens.rpy:2698
+    old "Click here for useful stats about your girl."
+    new "Click here for useful stats about your girl."
+
+    # game/BKscreens.rpy:2701
+    old "Pics"
+    new "Pics"
+
+    # game/BKscreens.rpy:2701
+    old "Test girl pack with the game's picture generation."
+    new "Test girl pack with the game's picture generation."
+
+    # game/BKscreens.rpy:2719
+    old "Acquaintance"
+    new "Acquaintance"
+
+    # game/BKscreens.rpy:2721
+    old "Friend"
+    new "Friend"
+
+    # game/BKscreens.rpy:2723
+    old "Love interest"
+    new "Love interest"
+
+    # game/BKscreens.rpy:2725
+    old "Girlfriend"
+    new "Girlfriend"
+
+    # game/BKscreens.rpy:2727
+    old "Lover"
+    new "Lover"
+
+    # game/BKscreens.rpy:2729
+    old "Current relationship: "
+    new "Current relationship: "
+
+    # game/BKscreens.rpy:2766
+    old "Le{u}a{/u}ve farm"
+    new "Le{u}a{/u}ve farm"
+
+    # game/BKscreens.rpy:2766
+    old " back to the brothel."
+    new " back to the brothel."
+
+    # game/BKscreens.rpy:2815
+    old " {size=12} (max){/size}"
+    new " {size=12} (max){/size}"
+
+    # game/BKscreens.rpy:2839
+    old "JP"
+    new "JP"
+
+    # game/BKscreens.rpy:2900
+    old "Girl Schedule"
+    new "Girl Schedule"
+
+    # game/BKscreens.rpy:2934
+    old "Click here to check "
+    new "Click here to check "
+
+    # game/BKscreens.rpy:2934
+    old "'s profile."
+    new "'s profile."
+
+    # game/BKscreens.rpy:2956
+    old "Exhausted"
+    new "Exhausted"
+
+    # game/BKscreens.rpy:2958
+    old "Hurt ("
+    new "Hurt ("
+
+    # game/BKscreens.rpy:2958
+    old " days)"
+    new " days)"
+
+    # game/BKscreens.rpy:2986
+    old "She will work to the maximum of her abilities."
+    new "She will work to the maximum of her abilities."
+
+    # game/BKscreens.rpy:2989
+    old "She will receive half the usual number of clients, saving some energy."
+    new "She will receive half the usual number of clients, saving some energy."
+
+    # game/BKscreens.rpy:2992
+    old "She will rest and recover some energy."
+    new "She will rest and recover some energy."
+
+    # game/BKscreens.rpy:2994
+    old "\n{i}Right-click to reverse cycle order.{/i}"
+    new "\n{i}Right-click to reverse cycle order.{/i}"
+
+    # game/BKscreens.rpy:3001
+    old "You cannot change her schedule as you gave her a day off."
+    new "You cannot change her schedule as you gave her a day off."
+
+    # game/BKscreens.rpy:3006
+    old "Click here to save %s's schedule."
+    new "Click here to save %s's schedule."
+
+    # game/BKscreens.rpy:3007
+    old "Click here to load a schedule for %s."
+    new "Click here to load a schedule for %s."
+
+    # game/BKscreens.rpy:3013
+    old "Autorest options"
+    new "Autorest options"
+
+    # game/BKscreens.rpy:3025
+    old "Save %s's schedule"
+    new "Save %s's schedule"
+
+    # game/BKscreens.rpy:3050
+    old "Load a schedule for %s"
+    new "Load a schedule for %s"
+
+    # game/BKscreens.rpy:3081
+    old "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it"
+    new "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it"
+
+    # game/BKscreens.rpy:3084
+    old "Autorest OFF"
+    new "Autorest OFF"
+
+    # game/BKscreens.rpy:3086
+    old "Autorest ON - Limit: "
+    new "Autorest ON - Limit: "
+
+    # game/BKscreens.rpy:3086
+    old " energy"
+    new " energy"
+
+    # game/BKscreens.rpy:3090
+    old "OK"
+    new "OK"
+
+    # game/BKscreens.rpy:3125
+    old "Available points:"
+    new "Available points:"
+
+    # game/BKscreens.rpy:3238
+    old "This perk has already been unlocked."
+    new "This perk has already been unlocked."
+
+    # game/BKscreens.rpy:3247
+    old "Acquire "
+    new "Acquire "
+
+    # game/BKscreens.rpy:3247
+    old " for 1 perk point."
+    new " for 1 perk point."
+
+    # game/BKscreens.rpy:3282
+    old "Unlock\n{size=-6}(costs 2 perk points){/size}"
+    new "Unlock\n{size=-6}(costs 2 perk points){/size}"
+
+    # game/BKscreens.rpy:3293
+    old "Confirm"
+    new "Confirm"
+
+    # game/BKscreens.rpy:3439
+    old "Yesterday"
+    new "Yesterday"
+
+    # game/BKscreens.rpy:3441
+    old "Last 7 days"
+    new "Last 7 days"
+
+    # game/BKscreens.rpy:3443
+    old "Last 28 days"
+    new "Last 28 days"
+
+    # game/BKscreens.rpy:3445
+    old "All time"
+    new "All time"
+
+    # game/BKscreens.rpy:4239
+    old "Build furniture to unlock various upgrades for the brothel."
+    new "Build furniture to unlock various upgrades for the brothel."
+
+    # game/BKscreens.rpy:4267
+    old " and {b}"
+    new " and {b}"
+
+    # game/BKscreens.rpy:4267
+    old "{/b} gold for the girls in the farm"
+    new "{/b} gold for the girls in the farm"
+
+    # game/BKscreens.rpy:4279
+    old "{b}Trainer{/b}"
+    new "{b}Trainer{/b}"
+
+    # game/BKscreens.rpy:4294
+    old "Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!"
+    new "Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!"
+
+    # game/BKscreens.rpy:4298
+    old "No other trainer available"
+    new "No other trainer available"
+
+    # game/BKscreens.rpy:4300
+    old "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+    new "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+
+    # game/BKscreens.rpy:4323
+    old "{i}Recruit a trainer to help your girls.{/i}"
+    new "{i}Recruit a trainer to help your girls.{/i}"
+
+    # game/BKscreens.rpy:4338
+    old "Your brothel's current reputation is {b}"
+    new "Your brothel's current reputation is {b}"
+
+    # game/BKscreens.rpy:4340
+    old "Advertising"
+    new "Advertising"
+
+    # game/BKscreens.rpy:4351
+    old "Pay hot chicks with revealing clothing to hang around your brothel, and tell would-be patrons about your establishment."
+    new "Pay hot chicks with revealing clothing to hang around your brothel, and tell would-be patrons about your establishment."
+
+    # game/BKscreens.rpy:4362
+    old "Your brothel's current threat level is "
+    new "Your brothel's current threat level is "
+
+    # game/BKscreens.rpy:4364
+    old "Security"
+    new "Security"
+
+    # game/BKscreens.rpy:4375
+    old "Pay some sellswords to keep unruly patrons and competitors at bay."
+    new "Pay some sellswords to keep unruly patrons and competitors at bay."
+
+    # game/BKscreens.rpy:4388
+    old "Your brothel's current dirt level is {b}"
+    new "Your brothel's current dirt level is {b}"
+
+    # game/BKscreens.rpy:4390
+    old "Maintenance"
+    new "Maintenance"
+
+    # game/BKscreens.rpy:4401
+    old "Pay a maintenance team to clean up your brothel. And boy, does it get messy in there..."
+    new "Pay a maintenance team to clean up your brothel. And boy, does it get messy in there..."
+
+    # game/BKscreens.rpy:4415
+    old "Estimated customers"
+    new "Estimated customers"
+
+    # game/BKscreens.rpy:4420
+    old ". Brothel threat is affected by brothel security and your Strength skill."
+    new ". Brothel threat is affected by brothel security and your Strength skill."
+
+    # game/BKscreens.rpy:4424
+    old "Dirt level"
+    new "Dirt level"
+
+    # game/BKscreens.rpy:4425
+    old "Clean up"
+    new "Clean up"
+
+    # game/BKscreens.rpy:4428
+    old "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)."
+    new "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)."
+
+    # game/BKscreens.rpy:4454
+    old "{b}Bedrooms{/b}"
+    new "{b}Bedrooms{/b}"
+
+    # game/BKscreens.rpy:4470
+    old "Add a new bedroom to your brothel for {b}"
+    new "Add a new bedroom to your brothel for {b}"
+
+    # game/BKscreens.rpy:4470
+    old " gold{/b}. This brothel can only have a maximum of {b}"
+    new " gold{/b}. This brothel can only have a maximum of {b}"
+
+    # game/BKscreens.rpy:4470
+    old " bedrooms{/b}."
+    new " bedrooms{/b}."
+
+    # game/BKscreens.rpy:4472
+    old "You cannot add any more bedrooms until you move to another brothel."
+    new "You cannot add any more bedrooms until you move to another brothel."
+
+    # game/BKscreens.rpy:4474
+    old "You have reached the maximum number of bedrooms."
+    new "You have reached the maximum number of bedrooms."
+
+    # game/BKscreens.rpy:4511
+    old "{b}Master Bedroom{/b}"
+    new "{b}Master Bedroom{/b}"
+
+    # game/BKscreens.rpy:4541
+    old " is currently assigned to the master bedroom."
+    new " is currently assigned to the master bedroom."
+
+    # game/BKscreens.rpy:4562
+    old "{b}Common Rooms{/b}"
+    new "{b}Common Rooms{/b}"
+
+    # game/BKscreens.rpy:4623
+    old "Carpenter's Wagon"
+    new "Carpenter's Wagon"
+
+    # game/BKscreens.rpy:4636
+    old "Available resources"
+    new "Available resources"
+
+    # game/BKscreens.rpy:4641
+    old "Building Queue"
+    new "Building Queue"
+
+    # game/BKscreens.rpy:4647
+    old " day(s) to complete."
+    new " day(s) to complete."
+
+    # game/BKscreens.rpy:4651
+    old "No building in progress."
+    new "No building in progress."
+
+    # game/BKscreens.rpy:4662
+    old "Build templates"
+    new "Build templates"
+
+    # game/BKscreens.rpy:4722
+    old "{b}Customer populations{/b}"
+    new "{b}Customer populations{/b}"
+
+    # game/BKscreens.rpy:4726
+    old "Choose customer populations to attract to your brothel (build decoration to attract more)"
+    new "Choose customer populations to attract to your brothel (build decoration to attract more)"
+
+    # game/BKscreens.rpy:4738
+    old "You must build new decoration at the Carpenter's Wagon to attract this population."
+    new "You must build new decoration at the Carpenter's Wagon to attract this population."
+
+    # game/BKscreens.rpy:4746
+    old "Average budget: %s gold"
+    new "Average budget: %s gold"
+
+    # game/BKscreens.rpy:4746
+    old "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)"
+    new "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)"
+
+    # game/BKscreens.rpy:4748
+    old "{b}Customer preferences{/b}"
+    new "{b}Customer preferences{/b}"
+
+    # game/BKscreens.rpy:4751
+    old "Influence customer preferences for entertainment and sexual acts (build furnishing to get bigger boosts)"
+    new "Influence customer preferences for entertainment and sexual acts (build furnishing to get bigger boosts)"
+
+    # game/BKscreens.rpy:4763
+    old "Use this setting to change your customers' preference for "
+    new "Use this setting to change your customers' preference for "
+
+    # game/BKscreens.rpy:4763
+    old " up to +"
+    new " up to +"
+
+    # game/BKscreens.rpy:4767
+    old "You must build new furnishing at the Carpenter's Wagon to change "
+    new "You must build new furnishing at the Carpenter's Wagon to change "
+
+    # game/BKscreens.rpy:4767
+    old " preference."
+    new " preference."
+
+    # game/BKscreens.rpy:4779
+    old "{b}Matching preferences{/b}"
+    new "{b}Matching preferences{/b}"
+
+    # game/BKscreens.rpy:4784
+    old "Choose how incoming customers will be matched with your girls."
+    new "Choose how incoming customers will be matched with your girls."
+
+    # game/BKscreens.rpy:4787
+    old "When possible, customers will be matched with girls of the same rank."
+    new "When possible, customers will be matched with girls of the same rank."
+
+    # game/BKscreens.rpy:4789
+    old "When possible, customers will be matched with girls that allow their preferred job or sex act."
+    new "When possible, customers will be matched with girls that allow their preferred job or sex act."
+
+    # game/BKscreens.rpy:4791
+    old "By %s"
+    new "By %s"
+
+    # game/BKscreens.rpy:4799
+    old "{b}Special options{/b}"
+    new "{b}Special options{/b}"
+
+    # game/BKscreens.rpy:4802
+    old "Activate or deactivate special brothel furniture."
+    new "Activate or deactivate special brothel furniture."
+
+    # game/BKscreens.rpy:4807
+    old "Click here to activate or deactivate %s.\n%s ({b}%s{/b})"
+    new "Click here to activate or deactivate %s.\n%s ({b}%s{/b})"
+
+    # game/BKscreens.rpy:4817
+    old "{b}Advanced settings{/b}"
+    new "{b}Advanced settings{/b}"
+
+    # game/BKscreens.rpy:4822
+    old "In addition to improving your brothel reputation, advertising girls will increase customer attraction and customer budget based on advertising power (create new outfits to increase advertising power)."
+    new "In addition to improving your brothel reputation, advertising girls will increase customer attraction and customer budget based on advertising power (create new outfits to increase advertising power)."
+
+    # game/BKscreens.rpy:4828
+    old "Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend)."
+    new "Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend)."
+
+    # game/BKscreens.rpy:4830
+    old "Budget"
+    new "Budget"
+
+    # game/BKscreens.rpy:4832
+    old " to customer budget"
+    new " to customer budget"
+
+    # game/BKscreens.rpy:4835
+    old "{b}Forecast{/b}"
+    new "{b}Forecast{/b}"
+
+    # game/BKscreens.rpy:4862
+    old " (matching...)"
+    new " (matching...)"
+
+    # game/BKscreens.rpy:4880
+    old "Entertainment Phase"
+    new "Entertainment Phase"
+
+    # game/BKscreens.rpy:4882
+    old "Whoring Phase"
+    new "Whoring Phase"
+
+    # game/BKscreens.rpy:4901
+    old "All customers have been assigned."
+    new "All customers have been assigned."
+
+    # game/BKscreens.rpy:4912
+    old "No customers."
+    new "No customers."
+
+    # game/BKscreens.rpy:4941
+    old " (capacity: %s/%s).{/b}"
+    new " (capacity: %s/%s).{/b}"
+
+    # game/BKscreens.rpy:4968
+    old " (interactions: %s/%s).{/b}"
+    new " (interactions: %s/%s).{/b}"
+
+    # game/BKscreens.rpy:5121
+    old "Headhunter"
+    new "Headhunter"
+
+    # game/BKscreens.rpy:5122
+    old "The headhunter is back with your prize!"
+    new "The headhunter is back with your prize!"
+
+    # game/BKscreens.rpy:5134
+    old "Headhunter: [game.headhunter_time] days"
+    new "Headhunter: [game.headhunter_time] days"
+
+    # game/BKscreens.rpy:5135
+    old "The headhunter will be back in [headhunter_time] days."
+    new "The headhunter will be back in [headhunter_time] days."
+
+    # game/BKscreens.rpy:5152
+    old "Click to keep the brothel report showing at all times."
+    new "Click to keep the brothel report showing at all times."
+
+    # game/BKscreens.rpy:5156
+    old "Click to hide the brothel report."
+    new "Click to hide the brothel report."
+
+    # game/BKscreens.rpy:5168
+    old "Show brothel report"
+    new "Show brothel report"
+
+    # game/BKscreens.rpy:5177
+    old "Master!!! "
+    new "Master!!! "
+
+    # game/BKscreens.rpy:5177
+    old " is very dirty... Please do something!"
+    new " is very dirty... Please do something!"
+
+    # game/BKscreens.rpy:5180
+    old "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
+    new "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
+
+    # game/BKscreens.rpy:5183
+    old " is losing money... What's going on?"
+    new " is losing money... What's going on?"
+
+    # game/BKscreens.rpy:5186
+    old "{color=[c_lightblue]}Did you know? {/color}%s"
+    new "{color=[c_lightblue]}Did you know? {/color}%s"
+
+    # game/BKscreens.rpy:5205
+    old "Next\ntip"
+    new "Next\ntip"
+
+    # game/BKscreens.rpy:5225
+    old "Show last night's log"
+    new "Show last night's log"
+
+    # game/BKscreens.rpy:5228
+    old "Show satisfaction report"
+    new "Show satisfaction report"
+
+    # game/BKscreens.rpy:5233
+    old "Nothing to report"
+    new "Nothing to report"
+
+    # game/BKscreens.rpy:5539
+    old "Click to go back (or use right-click)."
+    new "Click to go back (or use right-click)."
+
+    # game/BKscreens.rpy:5736
+    old "{i}No girls are available for this task{/i}"
+    new "{i}No girls are available for this task{/i}"
+
+    # game/BKscreens.rpy:5756
+    old "Character"
+    new "Character"
+
+    # game/BKscreens.rpy:5756
+    old "Create your Main Character."
+    new "Create your Main Character."
+
+    # game/BKscreens.rpy:5758
+    old "Difficulty"
+    new "Difficulty"
+
+    # game/BKscreens.rpy:5758
+    old "Change difficulty settings."
+    new "Change difficulty settings."
+
+    # game/BKscreens.rpy:5760
+    old "Choose your girl mixes."
+    new "Choose your girl mixes."
+
+    # game/BKscreens.rpy:5763
+    old "NewGame+"
+    new "NewGame+"
+
+    # game/BKscreens.rpy:5763
+    old "Access NewGame+ settings."
+    new "Access NewGame+ settings."
+
+    # game/BKscreens.rpy:5777
+    old "Name: "
+    new "Name: "
+
+    # game/BKscreens.rpy:5786
+    old "Class"
+    new "Class"
+
+    # game/BKscreens.rpy:5804
+    old "Religion"
+    new "Religion"
+
+    # game/BKscreens.rpy:5834
+    old "Change your Main Character's picture."
+    new "Change your Main Character's picture."
+
+    # game/BKscreens.rpy:5876
+    old "{b}Warning{/b}: Your choice of active girl mixes cannot be changed after starting a game, although you can still add or remove girl packs from mixes."
+    new "{b}Warning{/b}: Your choice of active girl mixes cannot be changed after starting a game, although you can still add or remove girl packs from mixes."
+
+    # game/BKscreens.rpy:5878
+    old "Click on a girl mix to add or remove it from this game (you must choose at least one)."
+    new "Click on a girl mix to add or remove it from this game (you must choose at least one)."
+
+    # game/BKscreens.rpy:5900
+    old "Edit girl mixes"
+    new "Edit girl mixes"
+
+    # game/BKscreens.rpy:5900
+    old "Click here to edit your girl mixes."
+    new "Click here to edit your girl mixes."
+
+    # game/BKscreens.rpy:5906
+    old "{i} by %s{/i} (%s)"
+    new "{i} by %s{/i} (%s)"
+
+    # game/BKscreens.rpy:5914
+    old "Achievement crystals: "
+    new "Achievement crystals: "
+
+    # game/BKscreens.rpy:5917
+    old "Use crystals to unlock extra options for the game. You can earn crystals by unlocking achievements."
+    new "Use crystals to unlock extra options for the game. You can earn crystals by unlocking achievements."
+
+    # game/BKscreens.rpy:5936
+    old "Activate"
+    new "Activate"
+
+    # game/BKscreens.rpy:5936
+    old "Deactivate"
+    new "Deactivate"
+
+    # game/BKscreens.rpy:5959
+    old "Reset NG+ settings"
+    new "Reset NG+ settings"
+
+    # game/BKscreens.rpy:5959
+    old "Reset all settings to default value"
+    new "Reset all settings to default value"
+
+    # game/BKscreens.rpy:6022
+    old "Achievements will be enabled for this game."
+    new "Achievements will be enabled for this game."
+
+    # game/BKscreens.rpy:6024
+    old "Achievements will be disabled for this game."
+    new "Achievements will be disabled for this game."
+
+    # game/BKscreens.rpy:6026
+    old "CONFIRM"
+    new "CONFIRM"
+
+    # game/BKscreens.rpy:6026
+    old "Start a new game with these settings."
+    new "Start a new game with these settings."
+
+    # game/BKscreens.rpy:6050
+    old "Click here to change your character's name"
+    new "Click here to change your character's name"
+
+    # game/BKscreens.rpy:6051
+    old "You need "
+    new "You need "
+
+    # game/BKscreens.rpy:6079
+    old "Use a skill point to raise this attribute (max %i)"
+    new "Use a skill point to raise this attribute (max %i)"
+
+    # game/BKscreens.rpy:6101
+    old "You get 1 skill point for every new level."
+    new "You get 1 skill point for every new level."
+
+    # game/BKscreens.rpy:6135
+    old "Change your character's picture."
+    new "Change your character's picture."
+
+    # game/BKscreens.rpy:6182
+    old "Right-click on a spell to set-up auto-cast"
+    new "Right-click on a spell to set-up auto-cast"
+
+    # game/BKscreens.rpy:6205
+    old "(Auto-cast: "
+    new "(Auto-cast: "
+
+    # game/BKscreens.rpy:6205
+    old ")\n(Active)"
+    new ")\n(Active)"
+
+    # game/BKscreens.rpy:6213
+    old "(Active)"
+    new "(Active)"
+
+    # game/BKscreens.rpy:6255
+    old "/night"
+    new "/night"
+
+    # game/BKscreens.rpy:6269
+    old "{i}You do not know any spells yet. You must increase your level.{/i}"
+    new "{i}You do not know any spells yet. You must increase your level.{/i}"
+
+    # game/BKscreens.rpy:6346
+    old "Duration"
+    new "Duration"
+
+    # game/BKscreens.rpy:6354
+    old "Cost"
+    new "Cost"
+
+    # game/BKscreens.rpy:6359
+    old "FREE"
+    new "FREE"
+
+    # game/BKscreens.rpy:6363
+    old "Enrolled"
+    new "Enrolled"
+
+    # game/BKscreens.rpy:6369
+    old "Gains"
+    new "Gains"
+
+    # game/BKscreens.rpy:6384
+    old "\nMax skill: "
+    new "\nMax skill: "
+
+    # game/BKscreens.rpy:6385
+    old "Classes may cause a girl's skills to exceed their level cap."
+    new "Classes may cause a girl's skills to exceed their level cap."
+
+    # game/BKscreens.rpy:6390
+    old "Reward"
+    new "Reward"
+
+    # game/BKscreens.rpy:6396
+    old "Requirements"
+    new "Requirements"
+
+    # game/BKscreens.rpy:6406
+    old "Desirable"
+    new "Desirable"
+
+    # game/BKscreens.rpy:6414
+    old "Undesirable"
+    new "Undesirable"
+
+    # game/BKscreens.rpy:6419
+    old "No task is currently available."
+    new "No task is currently available."
+
+    # game/BKscreens.rpy:6457
+    old "Quests"
+    new "Quests"
+
+    # game/BKscreens.rpy:6458
+    old "Classes"
+    new "Classes"
+
+    # game/BKscreens.rpy:6518
+    old "Active contract"
+    new "Active contract"
+
+    # game/BKscreens.rpy:6554
+    old "Pers. "
+    new "Pers. "
+
+    # game/BKscreens.rpy:6555
+    old "Tastes"
+    new "Tastes"
+
+    # game/BKscreens.rpy:6556
+    old "Sex. "
+    new "Sex. "
+
+    # game/BKscreens.rpy:6557
+    old "Events"
+    new "Events"
+
+    # game/BKscreens.rpy:6618
+    old "Farm Training Menu"
+    new "Farm Training Menu"
+
+    # game/BKscreens.rpy:6628
+    old " will {b}Rest{/b} in her cell."
+    new " will {b}Rest{/b} in her cell."
+
+    # game/BKscreens.rpy:6632
+    old " will improve her {b}"
+    new " will improve her {b}"
+
+    # game/BKscreens.rpy:6632
+    old "{/b} from doing chores."
+    new "{/b} from doing chores."
+
+    # game/BKscreens.rpy:6635
+    old " will receive {b}automatic training{/b}"
+    new " will receive {b}automatic training{/b}"
+
+    # game/BKscreens.rpy:6637
+    old " will receive {b}"
+    new " will receive {b}"
+
+    # game/BKscreens.rpy:6637
+    old " training{/b}"
+    new " training{/b}"
+
+    # game/BKscreens.rpy:6640
+    old ".\nI will assign her an {b}automatic facility{/b}, if there is room."
+    new ".\nI will assign her an {b}automatic facility{/b}, if there is room."
+
+    # game/BKscreens.rpy:6642
+    old "There might not be enough free minions to take care of her in all your facilities."
+    new "There might not be enough free minions to take care of her in all your facilities."
+
+    # game/BKscreens.rpy:6651
+    old " at the {b}"
+    new " at the {b}"
+
+    # game/BKscreens.rpy:6651
+    old "{/b}."
+    new "{/b}."
+
+    # game/BKscreens.rpy:6658
+    old "There may not be enough valid minions for group training. I may assign her to a different facility if other minions are available."
+    new "There may not be enough valid minions for group training. I may assign her to a different facility if other minions are available."
+
+    # game/BKscreens.rpy:6660
+    old "There are not enough valid minions in the %s, I may have to rotate this girl in and out of the facility."
+    new "There are not enough valid minions in the %s, I may have to rotate this girl in and out of the facility."
+
+    # game/BKscreens.rpy:6664
+    old "\n{b}Warning{/b}: "
+    new "\n{b}Warning{/b}: "
+
+    # game/BKscreens.rpy:6680
+    old "Farm activities"
+    new "Farm activities"
+
+    # game/BKscreens.rpy:6680
+    old "Work for Gizel on the farm. These activities do no require minions."
+    new "Work for Gizel on the farm. These activities do no require minions."
+
+    # game/BKscreens.rpy:6682
+    old "She will simply rest in her pen."
+    new "She will simply rest in her pen."
+
+    # game/BKscreens.rpy:6697
+    old "Sexual Training"
+    new "Sexual Training"
+
+    # game/BKscreens.rpy:6697
+    old "Go through Gizel's special training program. Sexual training requires available minions."
+    new "Go through Gizel's special training program. Sexual training requires available minions."
+
+    # game/BKscreens.rpy:6701
+    old "Gizel will train her in %s acts using minions."
+    new "Gizel will train her in %s acts using minions."
+
+    # game/BKscreens.rpy:6704
+    old "\nRequires 2 or 3 free minions at the same facility."
+    new "\nRequires 2 or 3 free minions at the same facility."
+
+    # game/BKscreens.rpy:6718
+    old "Everything (%s)"
+    new "Everything (%s)"
+
+    # game/BKscreens.rpy:6720
+    old "She will be assigned sex acts automatically until she is at least %s."
+    new "She will be assigned sex acts automatically until she is at least %s."
+
+    # game/BKscreens.rpy:6724
+    old "Facility"
+    new "Facility"
+
+    # game/BKscreens.rpy:6724
+    old "Pick a facility with minions for training (sexual training only)."
+    new "Pick a facility with minions for training (sexual training only)."
+
+    # game/BKscreens.rpy:6729
+    old "She will be held in her pen for this activity."
+    new "She will be held in her pen for this activity."
+
+    # game/BKscreens.rpy:6736
+    old "Farm pen"
+    new "Farm pen"
+
+    # game/BKscreens.rpy:6744
+    old "Let Gizel assign a free minion to her automatically."
+    new "Let Gizel assign a free minion to her automatically."
+
+    # game/BKscreens.rpy:6751
+    old "Auto."
+    new "Auto."
+
+    # game/BKscreens.rpy:6756
+    old "It has %i healthy minion%s available."
+    new "It has %i healthy minion%s available."
+
+    # game/BKscreens.rpy:6761
+    old "\nShe is weak to "
+    new "\nShe is weak to "
+
+    # game/BKscreens.rpy:6761
+    old "s. Training will be more efficient, but doing it against her will will increase fear and decrease mood faster."
+    new "s. Training will be more efficient, but doing it against her will will increase fear and decrease mood faster."
+
+    # game/BKscreens.rpy:6763
+    old "\nThere are no available minions in this facility."
+    new "\nThere are no available minions in this facility."
+
+    # game/BKscreens.rpy:6794
+    old "She will be assigned to this facility. "
+    new "She will be assigned to this facility. "
+
+    # game/BKscreens.rpy:6796
+    old "%s currently assigned to this facility. "
+    new "%s currently assigned to this facility. "
+
+    # game/BKscreens.rpy:6801
+    old "Hold her (rest)"
+    new "Hold her (rest)"
+
+    # game/BKscreens.rpy:6801
+    old "Send her to the farm to rest in a pen."
+    new "Send her to the farm to rest in a pen."
+
+    # game/BKscreens.rpy:6806
+    old "Train her (%s)"
+    new "Train her (%s)"
+
+    # game/BKscreens.rpy:6844
+    old "Ah, [MC.name]! Came to check on my pets?"
+    new "Ah, [MC.name]! Came to check on my pets?"
+
+    # game/BKscreens.rpy:6847
+    old "My minions are bored... When are you going to send them some new playmates?"
+    new "My minions are bored... When are you going to send them some new playmates?"
+
+    # game/BKscreens.rpy:6851
+    old "\n\n%i street whores are currently housed in the barn."
+    new "\n\n%i street whores are currently housed in the barn."
+
+    # game/BKscreens.rpy:6856
+    old "[MC.name], come! There is something you must see."
+    new "[MC.name], come! There is something you must see."
+
+    # game/BKscreens.rpy:6866
+    old "Click here to head where Gizel is calling you."
+    new "Click here to head where Gizel is calling you."
+
+    # game/BKscreens.rpy:6869
+    old "New cards are available! Click here to access the {b}Power Deck{/b}."
+    new "New cards are available! Click here to access the {b}Power Deck{/b}."
+
+    # game/BKscreens.rpy:6872
+    old "Click here to access the {b}Power Deck{/b}."
+    new "Click here to access the {b}Power Deck{/b}."
+
+    # game/BKscreens.rpy:6874
+    old "Ask Gizel for help about the farm."
+    new "Ask Gizel for help about the farm."
+
+    # game/BKscreens.rpy:6880
+    old "Click here for help on using the farm."
+    new "Click here for help on using the farm."
+
+    # game/BKscreens.rpy:6894
+    old "{b}Girl pens{/b}"
+    new "{b}Girl pens{/b}"
+
+    # game/BKscreens.rpy:6902
+    old "The farm can host one girl per pen."
+    new "The farm can host one girl per pen."
+
+    # game/BKscreens.rpy:6905
+    old "\nClick here to add a new pen for "
+    new "\nClick here to add a new pen for "
+
+    # game/BKscreens.rpy:6905
+    old " gold."
+    new " gold."
+
+    # game/BKscreens.rpy:6907
+    old "You cannot build any more pens."
+    new "You cannot build any more pens."
+
+    # game/BKscreens.rpy:6909
+    old "Upgrade your brothel to be able to add more pens."
+    new "Upgrade your brothel to be able to add more pens."
+
+    # game/BKscreens.rpy:6911
+    old "\n(Currently available pens: "
+    new "\n(Currently available pens: "
+
+    # game/BKscreens.rpy:6928
+    old "{b}Farm status{/b}"
+    new "{b}Farm status{/b}"
+
+    # game/BKscreens.rpy:6933
+    old "Hurt minions: "
+    new "Hurt minions: "
+
+    # game/BKscreens.rpy:6943
+    old "Nothing to report."
+    new "Nothing to report."
+
+    # game/BKscreens.rpy:6948
+    old "{b}Facilities & Minions{/b}"
+    new "{b}Facilities & Minions{/b}"
+
+    # game/BKscreens.rpy:6949
+    old "{u}U{/u}se item"
+    new "{u}U{/u}se item"
+
+    # game/BKscreens.rpy:6949
+    old "Use an item on your minions."
+    new "Use an item on your minions."
+
+    # game/BKscreens.rpy:7059
+    old "Current sanity: "
+    new "Current sanity: "
+
+    # game/BKscreens.rpy:7153
+    old "Unknown"
+    new "Unknown"
+
+    # game/BKscreens.rpy:7440
+    old "Weekly trade information"
+    new "Weekly trade information"
+
+    # game/BKscreens.rpy:7467
+    old "Your resources"
+    new "Your resources"
+
+    # game/BKscreens.rpy:7469
+    old "Use your gold to buy resources"
+    new "Use your gold to buy resources"
+
+    # game/BKscreens.rpy:7483
+    old "Trade your "
+    new "Trade your "
+
+    # game/BKscreens.rpy:7483
+    old " for other resources"
+    new " for other resources"
+
+    # game/BKscreens.rpy:7495
+    old "In storage: "
+    new "In storage: "
+
+    # game/BKscreens.rpy:7505
+    old "Market resources"
+    new "Market resources"
+
+    # game/BKscreens.rpy:7510
+    old "Sell your "
+    new "Sell your "
+
+    # game/BKscreens.rpy:7510
+    old " for gold"
+    new " for gold"
+
+    # game/BKscreens.rpy:7521
+    old "Get 1 for "
+    new "Get 1 for "
+
+    # game/BKscreens.rpy:7523
+    old "Get "
+    new "Get "
+
+    # game/BKscreens.rpy:7523
+    old " for 1"
+    new " for 1"
+
+    # game/BKscreens.rpy:7536
+    old "Trade "
+    new "Trade "
+
+    # game/BKscreens.rpy:7536
+    old " in exchange for your "
+    new " in exchange for your "
+
+    # game/BKscreens.rpy:7616
+    old "Buy"
+    new "Buy"
+
+    # game/BKscreens.rpy:7618
+    old "Trade"
+    new "Trade"
+
+    # game/BKscreens.rpy:7623
+    old "Buy "
+    new "Buy "
+
+    # game/BKscreens.rpy:7646
+    old "Your precious keyboard can't save you now!"
+    new "Your precious keyboard can't save you now!"
+
+    # game/BKscreens.rpy:7692
+    old "Mod List"
+    new "Mod List"
+
+    # game/BKscreens.rpy:7717
+    old "(Inactive)"
+    new "(Inactive)"
+
+    # game/BKscreens.rpy:7736
+    old "Deactivate Mod"
+    new "Deactivate Mod"
+
+    # game/BKscreens.rpy:7738
+    old "Activate Mod"
+    new "Activate Mod"
+
+    # game/BKscreens.rpy:7776
+    old "City girl interactions"
+    new "City girl interactions"
+
+    # game/BKscreens.rpy:7867
+    old "Girl interactions"
+    new "Girl interactions"
+
+    # game/BKscreens.rpy:7905
+    old "Talk"
+    new "Talk"
+
+    # game/BKscreens.rpy:7920
+    old "{image=img_AP} and "
+    new "{image=img_AP} and "
+
+    # game/BKscreens.rpy:7931
+    old "Advanced training is available, but she isn't particularly sensitive to this sex act."
+    new "Advanced training is available, but she isn't particularly sensitive to this sex act."
+
+    # game/BKscreens.rpy:7933
+    old "You can use advanced training to find out more about her fixations and use them for faster training."
+    new "You can use advanced training to find out more about her fixations and use them for faster training."
+
+    # game/BKscreens.rpy:7935
+    old "Advanced"
+    new "Advanced"
+
+    # game/BKscreens.rpy:7940
+    old "\nCosts "
+    new "\nCosts "
+
+    # game/BKscreens.rpy:7972
+    old "OTHER"
+    new "OTHER"
+
+    # game/BKscreens.rpy:8018
+    old "SOFT"
+    new "SOFT"
+
+    # game/BKscreens.rpy:8019
+    old "HARD"
+    new "HARD"
+
+    # game/BKscreens.rpy:8020
+    old "FARM"
+    new "FARM"
+
+    # game/BKscreens.rpy:8021
+    old "FIX"
+    new "FIX"
+
+    # game/BKscreens.rpy:8032
+    old "Portrait"
+    new "Portrait"
+
+    # game/BKscreens.rpy:8033
+    old "Portrait Naked"
+    new "Portrait Naked"
+
+    # game/BKscreens.rpy:8034
+    old "Profile"
+    new "Profile"
+
+    # game/BKscreens.rpy:8035
+    old "Profile Naked"
+    new "Profile Naked"
+
+    # game/BKscreens.rpy:8038
+    old "Rest Naked"
+    new "Rest Naked"
+
+    # game/BKscreens.rpy:8040
+    old "Waitress Naked"
+    new "Waitress Naked"
+
+    # game/BKscreens.rpy:8042
+    old "Dancer Naked"
+    new "Dancer Naked"
+
+    # game/BKscreens.rpy:8044
+    old "Masseuse Naked"
+    new "Masseuse Naked"
+
+    # game/BKscreens.rpy:8046
+    old "Geisha Naked"
+    new "Geisha Naked"
+
+    # game/BKscreens.rpy:8053
+    old "Naked"
+    new "Naked"
+
+    # game/BKscreens.rpy:8054
+    old "Service"
+    new "Service"
+
+    # game/BKscreens.rpy:8055
+    old "Sex"
+    new "Sex"
+
+    # game/BKscreens.rpy:8056
+    old "Anal"
+    new "Anal"
+
+    # game/BKscreens.rpy:8057
+    old "Fetish"
+    new "Fetish"
+
+    # game/BKscreens.rpy:8058
+    old "Bisexual Service"
+    new "Bisexual Service"
+
+    # game/BKscreens.rpy:8059
+    old "Bisexual Sex"
+    new "Bisexual Sex"
+
+    # game/BKscreens.rpy:8060
+    old "Bisexual Anal"
+    new "Bisexual Anal"
+
+    # game/BKscreens.rpy:8061
+    old "Bisexual Fetish"
+    new "Bisexual Fetish"
+
+    # game/BKscreens.rpy:8062
+    old "Group Service"
+    new "Group Service"
+
+    # game/BKscreens.rpy:8063
+    old "Group Sex"
+    new "Group Sex"
+
+    # game/BKscreens.rpy:8064
+    old "Group Anal"
+    new "Group Anal"
+
+    # game/BKscreens.rpy:8065
+    old "Group Fetish"
+    new "Group Fetish"
+
+    # game/BKscreens.rpy:8069
+    old "Stallion Naked"
+    new "Stallion Naked"
+
+    # game/BKscreens.rpy:8070
+    old "Stallion Service"
+    new "Stallion Service"
+
+    # game/BKscreens.rpy:8071
+    old "Stallion Sex"
+    new "Stallion Sex"
+
+    # game/BKscreens.rpy:8072
+    old "Stallion Anal"
+    new "Stallion Anal"
+
+    # game/BKscreens.rpy:8073
+    old "Stallion Fetish"
+    new "Stallion Fetish"
+
+    # game/BKscreens.rpy:8074
+    old "Stallion Bisexual"
+    new "Stallion Bisexual"
+
+    # game/BKscreens.rpy:8075
+    old "Stallion Group"
+    new "Stallion Group"
+
+    # game/BKscreens.rpy:8077
+    old "Beast Naked"
+    new "Beast Naked"
+
+    # game/BKscreens.rpy:8078
+    old "Beast Service"
+    new "Beast Service"
+
+    # game/BKscreens.rpy:8079
+    old "Beast Sex"
+    new "Beast Sex"
+
+    # game/BKscreens.rpy:8080
+    old "Beast Anal"
+    new "Beast Anal"
+
+    # game/BKscreens.rpy:8081
+    old "Beast Fetish"
+    new "Beast Fetish"
+
+    # game/BKscreens.rpy:8082
+    old "Beast Bisexual"
+    new "Beast Bisexual"
+
+    # game/BKscreens.rpy:8083
+    old "Beast Group"
+    new "Beast Group"
+
+    # game/BKscreens.rpy:8085
+    old "Monster Naked"
+    new "Monster Naked"
+
+    # game/BKscreens.rpy:8086
+    old "Monster Service"
+    new "Monster Service"
+
+    # game/BKscreens.rpy:8087
+    old "Monster Sex"
+    new "Monster Sex"
+
+    # game/BKscreens.rpy:8088
+    old "Monster Anal"
+    new "Monster Anal"
+
+    # game/BKscreens.rpy:8089
+    old "Monster Fetish"
+    new "Monster Fetish"
+
+    # game/BKscreens.rpy:8090
+    old "Monster Bisexual"
+    new "Monster Bisexual"
+
+    # game/BKscreens.rpy:8091
+    old "Monster Group"
+    new "Monster Group"
+
+    # game/BKscreens.rpy:8093
+    old "Machine Naked"
+    new "Machine Naked"
+
+    # game/BKscreens.rpy:8094
+    old "Machine Service"
+    new "Machine Service"
+
+    # game/BKscreens.rpy:8095
+    old "Machine Sex"
+    new "Machine Sex"
+
+    # game/BKscreens.rpy:8096
+    old "Machine Anal"
+    new "Machine Anal"
+
+    # game/BKscreens.rpy:8097
+    old "Machine Fetish"
+    new "Machine Fetish"
+
+    # game/BKscreens.rpy:8098
+    old "Machine Bisexual"
+    new "Machine Bisexual"
+
+    # game/BKscreens.rpy:8099
+    old "Machine Group"
+    new "Machine Group"
+
+    # game/BKscreens.rpy:8157
+    old "Girl Mix"
+    new "Girl Mix"
+
+    # game/BKscreens.rpy:8161
+    old "Click here to see the %s girl mix."
+    new "Click here to see the %s girl mix."
+
+    # game/BKscreens.rpy:8162
+    old "Click here to create a new girl mix."
+    new "Click here to create a new girl mix."
+
+    # game/BKscreens.rpy:8165
+    old "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
+    new "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
+
+    # game/BKscreens.rpy:8187
+    old "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"
+    new "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"
+
+    # game/BKscreens.rpy:8198
+    old "{i}Click to remove this girl pack from the mix.{/i}"
+    new "{i}Click to remove this girl pack from the mix.{/i}"
+
+    # game/BKscreens.rpy:8202
+    old "{i}Click to add this girl pack to the mix.{/i}"
+    new "{i}Click to add this girl pack to the mix.{/i}"
+
+    # game/BKscreens.rpy:8210
+    old "by "
+    new "by "
+
+    # game/BKscreens.rpy:8212
+    old "{size=14}Rating: {/size}"
+    new "{size=14}Rating: {/size}"
+
+    # game/BKscreens.rpy:8218
+    old "Delete mix"
+    new "Delete mix"
+
+    # game/BKscreens.rpy:8221
+    old "Add all"
+    new "Add all"
+
+    # game/BKscreens.rpy:8222
+    old "Remove all"
+    new "Remove all"
+
+    # game/BKscreens.rpy:8250
+    old "Not found"
+    new "Not found"
+
+    # game/BKscreens.rpy:8296
+    old "Next unlock:"
+    new "Next unlock:"
+
+    # game/BKscreens.rpy:8305
+    old "Reset achievements"
+    new "Reset achievements"
+
+    # game/BKscreens.rpy:8308
+    old "Reset achievements (%s)"
+    new "Reset achievements (%s)"
+
+    # game/BKscreens.rpy:8353
+    old "Choose a contract"
+    new "Choose a contract"
+
+    # game/BKscreens.rpy:8362
+    old "Fee: %s gold."
+    new "Fee: %s gold."
+
+    # game/BKscreens.rpy:8387
+    old "The "
+    new "The "
+
+    # game/BKscreens.rpy:8398
+    old "Tasks"
+    new "Tasks"
+
+    # game/BKscreens.rpy:8407
+    old "Bonus requirement"
+    new "Bonus requirement"
+
+    # game/BKscreens.rpy:8411
+    old "Reward: "
+    new "Reward: "
+
+    # game/BKscreens.rpy:8423
+    old "Send"
+    new "Send"
+
+    # game/BKscreens.rpy:8459
+    old "{color=[c_red]}{i}Failed{/i}{/color}"
+    new "{color=[c_red]}{i}Failed{/i}{/color}"
+
+    # game/BKscreens.rpy:8469
+    old "{i}Missing{/i}"
+    new "{i}Missing{/i}"
+
+    # game/BKscreens.rpy:8472
+    old "Score"
+    new "Score"
+
+    # game/BKscreens.rpy:8484
+    old "%s gold"
+    new "%s gold"
+
+    # game/BKscreens.rpy:8570
+    old "{image=tb goal} Chapter %i - Your Goals"
+    new "{image=tb goal} Chapter %i - Your Goals"
+
+    # game/BKscreens.rpy:8616
+    old "Mojo cost:"
+    new "Mojo cost:"
+
+    # game/BKscreens.rpy:8630
+    old "Sanity cost:"
+    new "Sanity cost:"
+
+    # game/BKscreens.rpy:8635
+    old "Target:"
+    new "Target:"
+
+    # game/BKscreens.rpy:8640
+    old "Duration:"
+    new "Duration:"
+
+    # game/BKscreens.rpy:8653
+    old "Draw a card"
+    new "Draw a card"
+
+    # game/BKscreens.rpy:8680
+    old "You have used all of your powers this week."
+    new "You have used all of your powers this week."
+
+    # game/BKscreens.rpy:8702
+    old "Click or hold shift to deactivate supercharge (boost powers for more mojo and sanity)"
+    new "Click or hold shift to deactivate supercharge (boost powers for more mojo and sanity)"
+
+    # game/BKscreens.rpy:8706
+    old "Click or hold shift to activate supercharge (boost powers for more mojo and sanity)"
+    new "Click or hold shift to activate supercharge (boost powers for more mojo and sanity)"
+
+    # game/BKscreens.rpy:8834
+    old "This girl already conducted a power today."
+    new "This girl already conducted a power today."
+
+    # game/BKscreens.rpy:8837
+    old "This girl's sanity is broken."
+    new "This girl's sanity is broken."
+
+    # game/BKscreens.rpy:8841
+    old "Conduit: "
+    new "Conduit: "
+
+    # game/BKscreens.rpy:8849
+    old "Target: "
+    new "Target: "
+
+    # game/BKscreens.rpy:8854
+    old "Herself"
+    new "Herself"
+
+    # game/BKscreens.rpy:8865
+    old "You cannot choose the conduit as the target."
+    new "You cannot choose the conduit as the target."
+
+    # game/BKscreens.rpy:8886
+    old "Choose a conduit for your power first."
+    new "Choose a conduit for your power first."
+
+    # game/BKscreens.rpy:8889
+    old "Choose a target for your power first."
+    new "Choose a target for your power first."
+
+    # game/BKscreens.rpy:8919
+    old "No girls are available."
+    new "No girls are available."
+
+    # game/BKscreens.rpy:8952
+    old "Supercharge: "
+    new "Supercharge: "
+
+    # game/BKscreens.rpy:8953
+    old "Conduit: : "
+    new "Conduit: : "
+
+    # game/BKscreens.rpy:8957
+    old "Payment: "
+    new "Payment: "
+
+    # game/BKscreens.rpy:8960
+    old "ON"
+    new "ON"
+
+    # game/BKscreens.rpy:8960
+    old "OFF"
+    new "OFF"
+
+    # game/BKscreens.rpy:8990
+    old "Cast"
+    new "Cast"
+
+    # game/BKscreens.rpy:9016
+    old "Current rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
+    new "Current rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
+
+    # game/BKscreens.rpy:9060
+    old "{b}Clear{/b}"
+    new "{b}Clear{/b}"
+
+    # game/BKscreens.rpy:9061
+    old "{b}Commit{/b}"
+    new "{b}Commit{/b}"
+
+    # game/BKscreens.rpy:9081
+    old "                                                                                                  Buy Sill's 'Slutty Schoolgirl' outfit for only $29.99...                                                   Get the ultimate 'Hung like a horse' armor for just $149.99 (2 minutes remaining)...                                                 *SEXY* Recruit the exciting new character 'Lara Crotch' for only $49.99...                                                 *SPECIAL SALE* Don't miss out on our latest season pass 'Summer of a cocksucker' for only $69.99 (valid for 7 days)...                                                                                                                                                                                    "
+    new "                                                                                                  Buy Sill's 'Slutty Schoolgirl' outfit for only $29.99...                                                   Get the ultimate 'Hung like a horse' armor for just $149.99 (2 minutes remaining)...                                                 *SEXY* Recruit the exciting new character 'Lara Crotch' for only $49.99...                                                 *SPECIAL SALE* Don't miss out on our latest season pass 'Summer of a cocksucker' for only $69.99 (valid for 7 days)...                                                                                                                                                                                    "
+
+    # game/BKscreens.rpy:9089
+    old "Losers'\nchoice!"
+    new "Losers'\nchoice!"
+
+    # game/BKscreens.rpy:9091
+    old "x100 P2W Crystals"
+    new "x100 P2W Crystals"
+
+    # game/BKscreens.rpy:9101
+    old "Popular\nchoice!!"
+    new "Popular\nchoice!!"
+
+    # game/BKscreens.rpy:9103
+    old "x1,000 P2W Crystals"
+    new "x1,000 P2W Crystals"
+
+    # game/BKscreens.rpy:9114
+    old "Best\nvalue!!!"
+    new "Best\nvalue!!!"
+
+    # game/BKscreens.rpy:9116
+    old "x5,000 P2W Crystals"
+    new "x5,000 P2W Crystals"
+

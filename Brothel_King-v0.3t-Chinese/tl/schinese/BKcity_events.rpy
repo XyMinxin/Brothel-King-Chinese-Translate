@@ -6982,3 +6982,17 @@ translate schinese strings:
     old "How dare you!"
     new "你好大的胆子!"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+# game/BKcity_events.rpy:131
+translate schinese city_rape_bac50fb6:
+
+    # ev_girl1 "Thank, you saved me... *sob* I will tell everyone what you did for me..."
+    ev_girl1 "Thank, you saved me... *sob* I will tell everyone what you did for me..."
+
+# game/BKcity_events.rpy:271
+translate schinese city_rape_f234f69e_1:
+
+    # ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
+    ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
+

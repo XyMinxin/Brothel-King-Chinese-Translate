@@ -1836,3 +1836,71 @@ translate schinese strings:
     old "So you're into these, eh?"
     new "So you're into these, eh?"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKitems.rpy:760
+    old "Collect all items"
+    new "Collect all items"
+
+    # game/BKitems.rpy:760
+    old "This will collect non-equipped items from all girls and store them in the left character's inventory."
+    new "This will collect non-equipped items from all girls and store them in the left character's inventory."
+
+    # game/BKitems.rpy:773
+    old "Search"
+    new "Search"
+
+    # game/BKitems.rpy:805
+    old "Use shift + left/right arrow keys to change the focused character."
+    new "Use shift + left/right arrow keys to change the focused character."
+
+    # game/BKitems.rpy:807
+    old "Use left/right arrow keys to change the focused character."
+    new "Use left/right arrow keys to change the focused character."
+
+    # game/BKitems.rpy:836
+    old " level "
+    new " level "
+
+    # game/BKitems.rpy:944
+    old "Search: "
+    new "Search: "
+
+    # game/BKitems.rpy:981
+    old " gold"
+    new " gold"
+
+    # game/BKitems.rpy:990
+    old "No items available (filters are on)."
+    new "No items available (filters are on)."
+
+    # game/BKitems.rpy:992
+    old "No items available."
+    new "No items available."
+
+    # game/BKitems.rpy:1074
+    old "Use shift + up/down arrows or mousewheel to cycle item pages."
+    new "Use shift + up/down arrows or mousewheel to cycle item pages."
+
+    # game/BKitems.rpy:1076
+    old "Use up/down arrows or mousewheel to cycle item pages."
+    new "Use up/down arrows or mousewheel to cycle item pages."
+
+    # game/BKitems.rpy:1176
+    old "Unsellable"
+    new "Unsellable"
+
+    # game/BKitems.rpy:1225
+    old "Empty"
+    new "Empty"
+
+    # game/BKitems.rpy:1227
+    old "No item is equipped to this slot."
+    new "No item is equipped to this slot."
+
+    # game/BKitems.rpy:1252
+    old "Show all items."
+    new "Show all items."
+
