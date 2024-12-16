@@ -32,7 +32,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:169
     old "no active spells"
-    new "没有激活的法术"
+    new "0个激活的法术"
 
     # game/BKscreen_home.rpy:172
     old " auto-cast spell"
@@ -44,7 +44,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:222
     old "{/b}{/color} in your brothel (max "
-    new " 个女孩{/b}{/color}在青楼 (最多 "
+    new "{/b}{/color}在青楼 (最多 "
 
     # game/BKscreen_home.rpy:294
     old "New slaves are available at the market."
@@ -56,7 +56,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:307
     old "{/b}{/color} for sale."
-    new "个奴隶{/b}{/color}待售。"
+    new "{/b}{/color}待售。"
 
     # game/BKscreen_home.rpy:318
     old "New items are available."
