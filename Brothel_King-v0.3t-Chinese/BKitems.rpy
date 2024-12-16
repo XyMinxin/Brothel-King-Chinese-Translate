@@ -757,7 +757,7 @@ screen item_tab(context, left_party, right_party): # Where X_party are a list of
             use restock_button(right_focus)
 
     elif context == "girls":
-        textbutton "Collect all items" text_size res_font(16) xalign 0.5 yalign 0.1 tooltip "This will collect non-equipped items from all girls and store them in the left character's inventory." action Return("collect all")
+        textbutton __("Collect all items") text_size res_font(16) xalign 0.5 yalign 0.1 tooltip __("This will collect non-equipped items from all girls and store them in the left character's inventory.") action Return("collect all")
 
     key "mouseup_3" action (Return("back"))
     use close(Return("back"))
@@ -770,7 +770,7 @@ screen item_tab(context, left_party, right_party): # Where X_party are a list of
                     use universal_selector(party=left_party, current=left_focus, var="left_focus", avoid=right_focus, sc_prefix="shift_") id "sel1"
                 hbox spacing xres(6) xalign 0.0:
                     frame xsize xres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                        textbutton {True: "Hide", False: "Search"}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
+                        textbutton {True: _("Hide"), False: _("Search")}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
                     use sorting_tab(context + " items", sort_target=left_focus.items, sorters=["type", "price", "alpha"]) id "st1"
                 hbox xalign 0.0:
                     use item_list(items=left_focus.items, owner=left_focus, counterpart=right_focus, sc_prefix="shift_", search=show_search_left) id "il1"
@@ -802,9 +802,9 @@ screen universal_selector:
         textbutton "<" ysize yres(80) xalign 0.0 yalign 0.5:
             action (SetVariable(var, previous), Return((var, "cycle_left")))
             if sc_prefix == "shift_":
-                tooltip "Use shift + left/right arrow keys to change the focused character."
+                tooltip __("Use shift + left/right arrow keys to change the focused character.")
             else:
-                tooltip "Use left/right arrow keys to change the focused character."
+                tooltip __("Use left/right arrow keys to change the focused character.")
 
         key sc_prefix + "K_LEFT" action (SetVariable(var, previous), Return((var, "cycle_left")))
 
@@ -833,7 +833,7 @@ screen universal_selector:
                         add ProportionalScale(badge, *res_tb(30)) xalign 0.9 yalign 0.1
 
         if current.type == "MC":
-            $ text1 = "{b}%s{/b}\n" % current.name + MC.playerclass + " level " + str(current.level)
+            $ text1 = "{b}%s{/b}\n" % current.name + MC.playerclass + _(" level ") + str(current.level)
             $ col = c_main
             $ sz = 20
 
@@ -875,9 +875,9 @@ screen universal_selector:
         textbutton ">" ysize yres(80) xalign 1.0 yalign 0.5:
             action (SetVariable(var, next), Return((var, "cycle_right")))
             if sc_prefix == "shift_":
-                tooltip "Use shift + left/right arrow keys to change the focused character."
+                tooltip __("Use shift + left/right arrow keys to change the focused character.")
             else:
-                tooltip "Use left/right arrow keys to change the focused character."
+                tooltip __("Use left/right arrow keys to change the focused character.")
 
 
 screen sorting_tab(context, sort_target=None, sorters=[], use_stats=False, small=False): # Sorters are defined in BKinit_variables.rpy
@@ -941,7 +941,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
 
             if search:
                 hbox:
-                    text "Search: " size res_font(16) color c_brown
+                    text __("Search: ") size res_font(16) color c_brown
                     input size res_font(16) color c_darkorange changed(MC.add_text_filter)
 
             if items:
@@ -978,18 +978,18 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                                         $ text1 +=  __("\nLevel ") + str(it.level)
 
                                     if "sell" in acts:
-                                        $ text1 += "\n" + str(it.get_price("sell")) + " gold"
+                                        $ text1 += "\n" + str(it.get_price("sell")) + _(" gold")
 
                                     if "buy" in acts:
-                                        $ text1 += "\n" + str(it.get_price("buy")) + " gold"
+                                        $ text1 += "\n" + str(it.get_price("buy")) + _(" gold")
 
                                     text __(text1) size res_font(14)
 
             else:
                 if MC.active_inv_filter:
-                    text "No items available (filters are on)." size res_font(14) color c_brown
+                    text __("No items available (filters are on).") size res_font(14) color c_brown
                 else:
-                    text "No items available." size res_font(14) color c_brown
+                    text __("No items available.") size res_font(14) color c_brown
 
         if items:
             $ start = page_offset
@@ -1071,9 +1071,9 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             text_selected_bold True
 
                             if sc_prefix == "shift_":
-                                tooltip "Use shift + up/down arrows or mousewheel to cycle item pages."
+                                tooltip __("Use shift + up/down arrows or mousewheel to cycle item pages.")
                             else:
-                                tooltip "Use up/down arrows or mousewheel to cycle item pages."
+                                tooltip __("Use up/down arrows or mousewheel to cycle item pages.")
 
                     if next:
                         textbutton "↓" style "UI_button":
@@ -1161,19 +1161,19 @@ screen item_profile(it):
             text ""
 
             if "buy" in acts:
-                text str(it.get_price("buy")) + " gold" xalign 0.5
+                text str(it.get_price("buy")) + _(" gold") xalign 0.5
                 text ""
 
             if "bargain" in acts:
-                text str(it.get_price("bargain")) + " gold" xalign 0.5
+                text str(it.get_price("bargain")) + _(" gold") xalign 0.5
                 text ""
 
             if "sell" in acts:
-                text str(it.get_price("sell")) + " gold" xalign 0.5
+                text str(it.get_price("sell")) + _(" gold") xalign 0.5
                 text ""
 
             if isinstance(it, ItemInstance) and it in MC.items and not it.sellable:
-                text "Unsellable" italic True xalign 0.5
+                text __("Unsellable") italic True xalign 0.5
                 text ""
 
             hbox spacing 10 xalign 0.5:
@@ -1222,9 +1222,9 @@ screen inventory(char, counterpart=None):
                             action (Show("item_profile", it=eq, transition = dissolve), SetVariable("owner", char), SetVariable("counterpart", counterpart), SetVariable("selected_item", eq), SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip __(eq.description)
                         else:
-                            text "Empty" size res_font(12) italic True xalign 0.5 yalign 0.5
+                            text __("Empty") size res_font(12) italic True xalign 0.5 yalign 0.5
                             action (SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
-                            tooltip "No item is equipped to this slot."
+                            tooltip __("No item is equipped to this slot.")
 
 
 screen item_filter(filters=inventory_filters["base"]):
@@ -1249,7 +1249,7 @@ screen item_filter(filters=inventory_filters["base"]):
                         add "filter_all" xalign 0.5 yalign 0.5
                     else:
                         add "filter_all_unselect" xalign 0.5 yalign 0.5
-                    tooltip "Show all items."
+                    tooltip __("Show all items.")
 
 
 #### END OF BK ITEMS FILE ####

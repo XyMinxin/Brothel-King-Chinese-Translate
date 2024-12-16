@@ -1600,13 +1600,13 @@ screen galleries():
     frame xalign 0.5 yalign 0.5:
         has vbox spacing 10 box_wrap True
 
-        textbutton "CG - Game" action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton __("CG - Game") action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
-        textbutton "CG - Girl packs" action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton __("CG - Girl packs") action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
         # textbutton "Achievements" action ShowMenu("achievements") text_size res_font(24) xsize int(config.screen_width*0.1851)
 
-        textbutton "Main Menu" action Function(renpy.full_restart) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton __("Main Menu") action Function(renpy.full_restart) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
 
 screen gallery_left_menu(gal_type, gal):
@@ -1710,7 +1710,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                                 if pic in persistent.pic_ignore_list:
                                     text "IGNORED" align (0.5, 0.5) color c_red size res_font(16) drop_shadow (2, 2)
                                 if persistent.debug_pic_counter and gal_type == "gp":
-                                    text _("Used %s times" % persistent.debug_pic_counter_dict[pic]) align (0.5, 1.0) size int(config.screen_height*0.02) #?
+                                    text __("Used %s times" % persistent.debug_pic_counter_dict[pic]) align (0.5, 1.0) size int(config.screen_height*0.02) #?
 
 
             $ max_page = (len(gal.blist)-1) // shown_pics
@@ -1722,19 +1722,19 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
 
                 has hbox:
                     
-                    textbutton "Show less":
+                    textbutton __("Show less"):
                         if shown_pics > list(but_sizes.keys())[0]:
                             action SetScreenVariable("shown_pics", cycle_list(list(but_sizes.keys()), shown_pics, -1))
-                    textbutton "Show more":
+                    textbutton __("Show more"):
                         if shown_pics < list(but_sizes.keys())[-1]:
                             action SetScreenVariable("shown_pics", cycle_list(list(but_sizes.keys()), shown_pics))
 
                     if page > 0:
                         key ["K_LEFT", "repeat_K_LEFT", "mousedown_4"]  action SetScreenVariable("page", page-1)
-                        textbutton "Previous" action SetScreenVariable("page", page-1) xalign 0.05
+                        textbutton __("Previous") action SetScreenVariable("page", page-1) xalign 0.05
                     if page < max_page:
                         key ["K_RIGHT", "repeat_K_RIGHT", "mousedown_5"] action SetScreenVariable("page", page+1)
-                        textbutton "Next" action SetScreenVariable("page", page+1) xalign 0.9
+                        textbutton __("Next") action SetScreenVariable("page", page+1) xalign 0.9
                     if page < max_page - 10:
                         key "K_PAGEDOWN" action SetScreenVariable("page", page+10)
                     else:
@@ -1748,14 +1748,14 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                     key "K_HOME" action SetScreenVariable("page", 0)
                     key "K_END" action SetScreenVariable("page", max_page)
 
-                    textbutton "Return" action ShowMenu("galleries") xalign 0.5
+                    textbutton __("Return") action ShowMenu("galleries") xalign 0.5
 
 
 screen _gallery:
 
     if locked:
         add "#000"
-        text _("Image [index] of [count] locked.") align (0.5, 0.5)
+        text __("Image [index] of [count] locked.") align (0.5, 0.5)
     else:
         add "#000"
 
@@ -1763,7 +1763,7 @@ screen _gallery:
             add d xalign 0.5 yalign 1.0 fit "contain"
 
             if gallery_type == "gp" and d.child.children[0].imgname in persistent.pic_ignore_list:
-                text "IGNORED" align (0.5, 0.5) color c_red size res_font(48) drop_shadow (4, 4)
+                text __("IGNORED") align (0.5, 0.5) color c_red size res_font(48) drop_shadow (4, 4)
 
     if gallery.slideshow:
         timer gallery.slideshow_delay action Return("next") repeat True
@@ -1797,12 +1797,12 @@ screen gallery_navigation:
             key ['K_DELETE'] action Function(toggle_ignore_pic, d.child.children[0])
 
         if gallery_type == "ev":
-            textbutton _("prev") action gallery.Previous(unlocked=True)
-            textbutton _("next") action gallery.Next(unlocked=True)
-            textbutton _("slideshow") action gallery.ToggleSlideshow()
+            textbutton __("prev") action gallery.Previous(unlocked=True)
+            textbutton __("next") action gallery.Next(unlocked=True)
+            textbutton __("slideshow") action gallery.ToggleSlideshow()
         else:
             text str(d.child.children[0].imgname) size res_font(14)
-        textbutton _("return") action gallery.Return()
+        textbutton __("return") action gallery.Return()
 
     python:
         style.gallery = Style(style.default)
