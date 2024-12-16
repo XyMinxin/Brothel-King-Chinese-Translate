@@ -2792,7 +2792,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2124
     old "Farm"
-    new "修改农场仆从"
+    new "农场"
 
     # game/BKhelp.rpy:2124
     old "Others"

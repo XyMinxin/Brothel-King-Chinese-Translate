@@ -126,7 +126,7 @@ default hm_settings = {
             HMSetting("home_screen_notifications", ["通知闪烁", "不闪烁", "不通知"], ttips=["Display a flashing notification until you hover the mouse over it (default).", "Display a static notification.", "Display no notification."], range=3, values=range(3)),
 
             "使用可滚动屏幕或编号标签浏览“女孩”屏幕（标签可能会提高性能）。",
-            HMSetting("girls_display_mode", ["Scroll girls", "Use tabs"], ttips=["Display girls on a signle scrollable screen (legacy mode: may decrease performance).", "Display girls with numbered tabs (may improve performance)."], range=2, values=["vp", "pages"]),
+            HMSetting("girls_display_mode", ["滚屏显示", "使用标签"], ttips=["在一个可滚动的屏幕上显示女孩 (传统模式: 可能会导致游戏卡顿)。", "用编号标签显示女孩 (可以提高游戏流畅度)."], range=2, values=["vp", "pages"]),
 
             "显示女孩档案的女孩包评级",
             HMSetting("show_girlpack_rating", ["永不显示", "仅在奴隶市场显示", "在奴隶市场和城市中显示", "始终显示"], ttips=["Never display girlpack rating on profile.", "Display rating on profile in slavemarket only.", "Display rating on profile in slavemarket and city.", "Always display rating on profile."], values = [None, "In slavemarket", "In market and city", "Everywhere"], range=4),
@@ -156,7 +156,7 @@ default hm_settings = {
             "为非原创女孩（“克隆人”）定义姓名选项。",
             HMSetting("keep_firstname", ["随机角色名字", "保留角色名字"], ttips=["First name will be randomized for non-original girls.", "First name will be remain the same as the original for non-original girls."]),
             HMSetting("keep_lastname", ["随机角色姓氏", "保留角色姓氏"], ttips=["Last name will be randomized for non-original girls.", "Last name will be remain the same as the original for non-original girls."]),
-            HMSetting("gp_name_customization", ["优先考虑女孩包设置", "优先考虑游戏设置"], ttips=["The girlpack's _BK.ini settings will take precedence over the settings above.", "The settings above will take precedence over the girlpack's _BK.ini settings."]),
+            HMSetting("gp_name_customization", ["优先考虑女孩包自定义设置", "优先考虑游戏姓名设置"], ttips=["The girlpack's _BK.ini settings will take precedence over the settings above.", "The settings above will take precedence over the girlpack's _BK.ini settings."]),
         ]
         }
 
@@ -164,7 +164,7 @@ default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "mac
 
 default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现负面性癖"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
 
-default hm_night_events = [("Normal", "Normal events"), ("Matchmaking", "Matchmaking reports"), ("Customer", "Customer special events"), ("Level/Job/Rank up", "Level up, Job up and Rank up notifications"), ("Health/Security", "Health and security events"), ("Satisfaction", "Customer satisfaction report"), ("Farm", "Farm events"), ("Rest", "Resting events")]
+default hm_night_events = [("常规事件", "常规事件"), ("顾客入座", "匹配报告"), ("顾客", "特殊顾客事件"), ("升级提示", "升级/职业等级提升/升阶提示"), ("安全事件", "安全事件"), ("顾客满意度", "顾客满意度报告"), ("农场事件", "农场事件"), ("休息事件", "休息事件")]
 
 #### Game Settings Screen ####
 
