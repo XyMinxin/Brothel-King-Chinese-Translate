@@ -1867,7 +1867,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 ## SKILLS LISTING
 
-                text "Main skills" size res_font(18)
+                text "主要属性" size res_font(18)
 
                 vbox:
                     spacing 0
@@ -2233,7 +2233,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                             else:
                                 $ text1 = __("Auto upkeep setting is {b}{color=[c_red]}off{/color}{/b} {i}(shortcut: {u}Shift+a{/u}){/i}")
 
-                            textbutton "A":
+                            textbutton "自动":
                                 if girl.auto_upkeep:
                                     text_bold True
                                     background Frame("lightblue_button", borders=gui.button_borders)
