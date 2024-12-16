@@ -1451,7 +1451,7 @@ init python:
     # The dictionary uses nested lists to retain choices order
 
     interact_dict = {
-                    "闲聊" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
+                    "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
                     "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
                                         GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
                                         GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
@@ -1465,7 +1465,7 @@ init python:
                                     ],
                     "{size=+8}女孩故事{/size}" : [GirlInteractionTopic("chat", "story", "再次聆听她的故事", "slave_chat_story", AP_cost=0, condition = "story")],
 
-                    "训练" : ["{size=+8}技能训练{/size}", "{size=+8}性技训练{/size}", "{size=+8}特别训练{/size}"],
+                    "train" : ["{size=+8}技能训练{/size}", "{size=+8}性技训练{/size}", "{size=+8}特别训练{/size}"],
                     "{size=+8}技能训练{/size}" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
                                         GirlInteractionTopic("train", "train", "体格训练", "slave_train_constitution", act="constitution")],
                     "{size=+8}性技训练{/size}" : [
@@ -1480,7 +1480,7 @@ init python:
                     "{size=+8}特别训练{/size}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_train_free_form", condition = "free-form"),
                                         GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
 
-                    "催眠" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
+                    "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
                     "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
                     "{size=+8}催眠暗示{/size}" : [
                                                 GirlInteractionTopic("magic", "train", "提高服从　", "slave_magic", act="obedience", gold_cost=20),
@@ -1497,7 +1497,7 @@ init python:
                                                 GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
-                    "奖惩" : ["{size=+8}鼓励{/size}", "{size=+8}惩罚{/size}"],
+                    "react" : ["{size=+8}鼓励{/size}", "{size=+8}惩罚{/size}"],
                     "{size=+8}鼓励{/size}" : [
                                     GirlInteractionTopic("react", "reward", "称赞她　　　　", "slave_reward_praise"),
                                     GirlInteractionTopic("react", "reward", "发奖金　　　　", "slave_reward_gold"),
@@ -1514,7 +1514,7 @@ init python:
                                     GirlInteractionTopic("react", "discipline", "粗暴地强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送去奴隶农场　　", "slave_punish_farm", condition="farm"),
                                     ],
-                    "其他" : ["{size=+8}穿着{/size}", "{size=+8}工作{/size}", "{size=+8}私人指导{/size}", "{size=+8}DEBUG{/size}"],
+                    "misc" : ["{size=+8}穿着{/size}", "{size=+8}工作{/size}", "{size=+8}私人指导{/size}", "{size=+8}DEBUG{/size}"],
                     "{size=+8}穿着{/size}" : [
                                     GirlInteractionTopic("misc", None, "让她保持裸体　　　　　　　　　", "slave_clothing_naked", AP_cost=0, condition = "dressed"),
                                     GirlInteractionTopic("misc", None, "让她穿好衣服　　　　　　　　　", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
@@ -1536,7 +1536,7 @@ init python:
 
 
     free_interact_dict = {
-                            "聊天" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "DEBUG"],
+                            "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "DEBUG"],
                             "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "闲聊　　　", "free_chat_small_talk"),
                                                 GirlInteractionTopic("chat", "chat", "八卦　　　", "free_chat_gossip"),
                                                 GirlInteractionTopic("chat", "chat", "生命　　　", "free_chat_life"),# love_test=5),
