@@ -4,25 +4,25 @@
 translate schinese my_mod_init_be771431:
 
     # "You have just installed [mymod.name]. Don't let the name fool you: It's pretty lame."
-    "You have just installed [mymod.name]. Don't let the name fool you: It's pretty lame."
+    "你刚刚安装了[mymod.name]。 别被名字骗了: 这太逊了。"
 
 # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:39
 translate schinese my_mod_init_5c695d47:
 
     # "The dialog you see now is part of the mod 'init' label. This label allows you to set up some variables and events for the mod upon activation."
-    "The dialog you see now is part of the mod 'init' label. This label allows you to set up some variables and events for the mod upon activation."
+    "你现在看到的对话框是mod ‘init’标签的一部分。这个标签允许您在激活时为mod设置一些变量和事件。"
 
 # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:41
 translate schinese my_mod_init_d9b41606:
 
     # "For instance, please tell me the name of your nemesis."
-    "For instance, please tell me the name of your nemesis."
+    "例如，请告诉我你的敌人的名字。"
 
 # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:45
 translate schinese my_mod_init_bc6f8a3c:
 
     # mymod.nemesis "Hey, that's not very nice!"
-    mymod.nemesis "Hey, that's not very nice!"
+    mymod.nemesis "嘿，这可不太好!"
 
 # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:47
 translate schinese my_mod_init_3687a358:
@@ -154,23 +154,23 @@ translate schinese mymod_justice_df534ab7:
 translate schinese mymod_justice_98240390:
 
     # "THE END."
-    "THE END."
+    "结束。"
 
 translate schinese strings:
 
     # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:51
     old "What kind of girls do you like?"
-    new "What kind of girls do you like?"
+    new "你喜欢什么样的女孩?"
 
     # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:51
     old "Blondes"
-    new "Blondes"
+    new "金发"
 
     # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:51
     old "Redheads"
-    new "Redheads"
+    new "红发"
 
     # game/Mods/Goldo's cool mod/goldo's cool mod.rpy:51
     old "Blue-haired"
-    new "Blue-haired"
+    new "蓝发"
 
