@@ -91,78 +91,78 @@ init python:
 
 
 default hm_sections = ["content", "pictures", "UI", "misc"]
-default hm_section_titles = {"content": "Content settings", "pictures": "Picture settings", "UI": "UI settings", "misc": "Other"}
+default hm_section_titles = {"content": "内容设置", "pictures": "图片设置", "UI": "UI设置", "misc": "其他设置"}
 
 # HM settings will be displayed in order for each section
 default hm_settings = {
     "content" : [
-            "Activate or deactivate objectionable content (won't affect story scenes).",
+            "激活或关闭不良内容（不会影响故事场景）。",
             HMSetting("forbidden_tags", special=True),
         ], 
         "pictures" : [
-            "Choose what to do when a girlpack is missing pictures with a given tag.",
+            "选择当一个女孩包缺少带有给定标签的图片时是否使用默认图片。",
             HMSetting("use_stock_pictures_missing", captions=["使用角色包中的其他图片", "使用默认图片"], ttips=["The game will pick a picture from the same girlpack with the closest possible tag (e.g. 'service' instead of 'handjob').", "The game will pick a default picture with the proper tag."]),
 
-            "Choose what to do when a girlpack has low picture variety on a given tag (less than %s)." % stock_picture_threshold,
+            "当一个女孩包在给定标签上的图片多样性低时，是否使用游戏预设图片 (少于 %s 张)。" % stock_picture_threshold,
             HMSetting("use_stock_pictures_low", captions=["只使用角色包内的图片", "将角色包图片与游戏预设图片混合"], ttips=["The game will use only the girlpack pictures that are in the pool, at the risk of repetition.", "The game will add some default pictures to the pool for variety."]),
 
-            "Choose the priorities when generating pictures for advanced training.",
+            "在为高级培训生成图片时选择优先级。",
             HMSetting("fix_pic_balance", ["多样性高于准确性", "准确性高于多样性"], ttips=["The game will prioritize picture variety over accurate tagging.", "The game will prioritize accurate tagging over picture variety."], values=[fix_pic_balance_variety, fix_pic_balance_accuracy]),
 
-            "Choose the behavior of group and bisexual pictures",
+            "选择双飞和群交恋图片的范围",
             HMSetting("mix_group_pictures", ["群交: 只使用含有群交标签的图片", "将群交图片与常规图片混合"], ttips=["The game will only pick pictures featuring a group.", "The game will sometimes pick normal pictures for variety."]),
             HMSetting("mix_bis_pictures", ["兽交: 只使用含有兽交标签的图片", "将兽交图片与常规图片混合"], ttips=["The game will only pick pictures featuring a group.", "The game will sometimes pick normal pictures for variety."]),
 
-            "Choose the behavior of profile pictures outside of the 'Girls' tab.",
+            "选择“女孩”选项卡之外的立绘图片设置。",
             HMSetting("naked_girls_in_slavemarket", ["奴隶市场: 不使用裸体标签图片作为立绘", "奴隶市场: 可以使用裸体标签图片作为立绘"], ttips=["The slavemarket may not display naked profile pictures.", "The slavemarket may display naked pictures."]),
             HMSetting("naked_girls_in_town", ["城市内: 不使用裸体标签图片作为立绘", "城市内: 可以使用裸体标签图片作为立绘"], ttips=["Free girls may not display naked profile pictures.", "Free girls may display naked pictures ('Naturist' trait)."]),
 
-            "Allow extended tags for jobs and sex acts.",
+            "允许扩展工作和性行为标签的图片。",
             HMSetting("fuzzy_tagging_jobs", ["工作图片: 精准符合标签", "工作图片: 模糊符合标签"], ttips=["Job pictures will only look for accurate tags (e.g. 'masseuse' for masseuse).", "Job pictures will extend the search to 'close enough' tags (e.g. 'swimsuit' for masseuse)."]),
             HMSetting("fuzzy_tagging_acts", ["性爱图片: 精准符合标签", "性爱图片: 模糊符合标签"], ttips=["Sex pictures will only look for accurate tags (e.g. 'toy' for fetish).", "Job pictures will extend the search to 'close enough' tags (e.g. 'machine' for fetish)."]),
         ], 
         "UI" : [
-            "Display 'news' notifications next the home screen's buttons.",
-            HMSetting("home_screen_notifications", ["通知闪烁", "不闪烁", "No notifications"], ttips=["Display a flashing notification until you hover the mouse over it (default).", "Display a static notification.", "Display no notification."], range=3, values=range(3)),
+            "在主界面按钮旁边显示“新闻”通知。",
+            HMSetting("home_screen_notifications", ["通知闪烁", "不闪烁", "不通知"], ttips=["Display a flashing notification until you hover the mouse over it (default).", "Display a static notification.", "Display no notification."], range=3, values=range(3)),
 
-            "Use a scrollable screen or numbered tabs to browse the 'Girls' screen (tabs may improve performance).",
+            "使用可滚动屏幕或编号标签浏览“女孩”屏幕（标签可能会提高性能）。",
             HMSetting("girls_display_mode", ["Scroll girls", "Use tabs"], ttips=["Display girls on a signle scrollable screen (legacy mode: may decrease performance).", "Display girls with numbered tabs (may improve performance)."], range=2, values=["vp", "pages"]),
 
-            "Display girlpack rating on girl profiles",
+            "显示女孩档案的女孩包评级",
             HMSetting("show_girlpack_rating", ["永不显示", "仅在奴隶市场显示", "在奴隶市场和城市中显示", "始终显示"], ttips=["Never display girlpack rating on profile.", "Display rating on profile in slavemarket only.", "Display rating on profile in slavemarket and city.", "Always display rating on profile."], values = [None, "In slavemarket", "In market and city", "Everywhere"], range=4),
 
-            "Display optional status icons on girl portraits.",
+            "在女孩立绘上显示可选的状态图标。",
             HMSetting("show_girl_status", special=True),
 
-            "Display sanity with a girl's mood.",
-            HMSetting("sanity_display", ["仅在农场中降低", "随时降低"], ttips=["Sanity will only display when a girl is at the farm.", "Sanity will be displayed on the 'Mood' recap."]),
+            "在女孩的心情属性上显示理智。",
+            HMSetting("sanity_display", ["仅在农场中显示", "始终显示"], ttips=["Sanity will only display when a girl is at the farm.", "Sanity will be displayed on the 'Mood' recap."]),
 
-            "Choose how to edit badge settings for your girls.",
+            "选择如何为你的女孩编辑徽章设置。",
             HMSetting("badges_on_portraits", ["只在头像上显示", "在立绘和头像上都显示"], ["Click on a badge in the girl's profile to change it.", "Click on a badge in the girl's profile or portrait to change it."]),
 
-            "Hide events during the 'End Day' loop.",
+            "在“经营事件”循环中隐藏事件。",
             HMSetting("skipped_events", special=True),
 
-            "Allow skipping during the 'End Day' loop.",
+            "允许在“经营事件”循环中跳过。",
             HMSetting("can_skip_reports", ["报告: 不可跳过", "报告: 可以跳过"], ttips=["Skipping matchmaking and satisfaction reports with 'Ctrl' is not possible.", "Skipping matchmaking and satisfaction reports with 'Ctrl' is possible."]),
             HMSetting("can_skip_night_recap", ["每晚回顾：不可跳过", "每晚回顾：可以跳过"], ttips=["Skipping the nightly recap with 'Ctrl' is not possible.", "Skipping the nightly recap with 'Ctrl' is possible."]),
 
-            "Choose display mode for 'End Day' events (WIP).",
-            HMSetting("dark_night_UI", ["轻松风格", "黑暗风格"], ttips=["End day events are presented in light mode.", "End day events are presented in dark mode."]),
+            "选择“经营事件”事件（WIP）的显示模式。",
+            HMSetting("dark_night_UI", ["明亮风格", "深色风格"], ttips=["End day events are presented in light mode.", "End day events are presented in dark mode."]),
 
 
         ], 
         "misc" : [
-            "Define naming options for non-original girls ('clones').",
+            "为非原创女孩（“克隆人”）定义姓名选项。",
             HMSetting("keep_firstname", ["随机角色名字", "保留角色名字"], ttips=["First name will be randomized for non-original girls.", "First name will be remain the same as the original for non-original girls."]),
             HMSetting("keep_lastname", ["随机角色姓氏", "保留角色姓氏"], ttips=["Last name will be randomized for non-original girls.", "Last name will be remain the same as the original for non-original girls."]),
-            HMSetting("gp_name_customization", ["Prioritize girlpack settings", "Prioritize in-game settings"], ttips=["The girlpack's _BK.ini settings will take precedence over the settings above.", "The settings above will take precedence over the girlpack's _BK.ini settings."]),
+            HMSetting("gp_name_customization", ["优先考虑女孩包设置", "优先考虑游戏设置"], ttips=["The girlpack's _BK.ini settings will take precedence over the settings above.", "The settings above will take precedence over the girlpack's _BK.ini settings."]),
         ]
         }
 
-default hm_tag_captions = {"beast" : "Bestiality", "monster" : "Monsters/Tentacles", "machine" : "Machines"}
+default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "machine" : "机械"}
 
-default hm_girl_status_list = [("away", "away.webp", "Away on a class or quest."), ("farm", "farm.webp", "Training/Resting at the farm."), ("rest", "rest.webp", "Resting"), ("scheduled", "scheduled.webp", "Scheduled to rest."), ("half-shift", "half.webp", "On a half-shift."), ("master bedroom", "master.webp", "Training in the Master's bedroom."), ("negative fixation", "negfix.webp", "Negative fixation discovered."), ("naked", "naked.webp", "Currently naked."), ("not naked", "not_naked.webp", "Currently not naked."), ("work&whore", "ww.webp", "Set to work and whore."), ("not work&whore", "not_ww.webp", "Not set to work and whore")]
+default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现负面性癖"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
 
 default hm_night_events = [("Normal", "Normal events"), ("Matchmaking", "Matchmaking reports"), ("Customer", "Customer special events"), ("Level/Job/Rank up", "Level up, Job up and Rank up notifications"), ("Health/Security", "Health and security events"), ("Satisfaction", "Customer satisfaction report"), ("Farm", "Farm events"), ("Rest", "Resting events")]
 
@@ -184,10 +184,10 @@ screen hm_forbidden_tags():
 
                 if _tag in persistent.forbidden_tags:
                     action (RemoveFromSet(persistent.forbidden_tags, _tag), SelectedIf(False))
-                    tooltip "The game will attempt not to display such pictures (Warning: This may not be 100% successful and doesn't change story events that use these fetishes.)"
+                    tooltip "游戏将尽量不显示这样的图片 (警告：这可能不是100%生效，也不会改变使用这些调教的故事事件。)"
                 else:
                     action (AddToSet(persistent.forbidden_tags, _tag), SelectedIf(True))
-                    tooltip "The game will display such pictures."
+                    tooltip "游戏会显示这样的图片。"
 
 screen hm_girl_statuses():
     default current_status = ""
@@ -208,7 +208,7 @@ screen hm_girl_statuses():
 screen hm_skip_night_events():
     hbox box_wrap True:
         for ev_type, ttip in hm_night_events:
-            textbutton _(ev_type) style "hm_button2" text_size res_font(16) xalign 0.0 action (ToggleDict(persistent.skipped_events, ev_type), SelectedIf(not persistent.skipped_events[ev_type])) tooltip ttip + {False: " will be shown.", True: " will be hidden."}[persistent.skipped_events[ev_type]]
+            textbutton _(ev_type) style "hm_button2" text_size res_font(16) xalign 0.0 action (ToggleDict(persistent.skipped_events, ev_type), SelectedIf(not persistent.skipped_events[ev_type])) tooltip ttip + {False: "将显示。", True: "将隐藏。"}[persistent.skipped_events[ev_type]]
 
 
 screen h_content(): # H preferences and various game settings

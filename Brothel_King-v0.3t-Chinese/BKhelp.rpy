@@ -406,7 +406,7 @@ screen help_menu(scr):
 
     key "mouseup_3" action Return("back") capture True
 
-    button style "inv_no_padding" tooltip "Click here or right-click to close the help menu." action Return("back"):
+    button style "inv_no_padding" tooltip "点击此处或右键关闭帮助菜单" action Return("back"):
         xsize 0.05
         ysize 0.1
         xalign 1.0
