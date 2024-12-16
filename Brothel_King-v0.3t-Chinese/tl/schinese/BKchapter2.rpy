@@ -20269,9 +20269,9 @@ translate schinese c2_meet_papa_freak_64bfe301:
     you "没关系。"
 
 # game/BKchapter2.rpy:9729
-translate schinese c2_meet_papa_freak_a3ee7a6e:
+translate schinese c2_meet_papa_freak_d0a802e0:
 
-    # you "By the way, you should try and use a soul-charged derivator. That's how we did it at the Karkyr Academy."
+    # you "By the way, you should try and use a soul-charged deivator. That's how we did it at the Karkyr Academy."
     you "顺便说一句,你可以试试用一个灵魂充能导电器代替。我们在卡尔基学院都是这么做的。"
 
 # game/BKchapter2.rpy:9731
