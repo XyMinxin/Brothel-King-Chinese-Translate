@@ -1104,7 +1104,7 @@ label c2_princess_letter:
 
             gio "You're... MEAN!!!" with vpunch
 
-            $ MC.rand_say(["gd: I don't think you're any of the girls' type, anyway. Sorry.", "ne: Boohoo. Cry me a river.", "ev: Damn right I'm mean! Now give me this letter before I show you just how bad I am."])
+            $ MC.rand_say(["gd: 反正我觉得你不是女生喜欢的类型。对不起。", "ne: 放声大哭，泪流满面。", "ev: 没错，我很刻薄！在我向你展示我有多坏之前把这封信给我。"])
 
             $ NPC_gio.love -= 2
             $ girl = None
@@ -1347,7 +1347,7 @@ label c2_princess_visit1:
 
     gio "Arios worshippers are so insecure about their faith, they need to constantly rub it into everyone's face..."
 
-    $ MC.rand_say(["sh: Yeah, sounds like them all right... Tsk.", "ar: Watch it! I won't suffer insults to the name of Arios!", "ng: No separation of church and state, uh... How primitive."])
+    $ MC.rand_say(["sh: 是啊，听起来还不错...啧啧。", "ar: 小心!我不会容忍对太阳神之名的侮辱!", "ng: 没有政教分离，呃...原始的方式。"])
 
     gio "Anyway. That's why this road is known as Pilgrim's Road. It's still the fastest way to get to the Palace, if you don't mind bumping into the tourists."
 

@@ -492,7 +492,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4197
     old "customers came to "
-    new "位顾客来到"
+    new "位顾客来到了"
 
     # game/BKfunctions.rpy:4225
     old " came to the brothel. He wants to be attended to by a "
@@ -500,5 +500,5 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4225
     old " and likes "
-    new "并且喜欢"
+    new "并且想要"
 

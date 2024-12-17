@@ -2035,10 +2035,10 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle job" or act in all_jobs:
-                return self.name + __(" came in.%s %s wanted to be entertained by a {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(trait_name_dict[self.fetish]))
+                return self.name + __(" came in.%s %s wanted to be entertained by a {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(self.fetish))
 
             elif act == "idle whore":
-                return self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
+                return self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(self.fetish))
 
             # elif act in all_jobs:
             #     desc += self.name + __(" came in.%s\n%s wanted to be entertained by a {b}%s{/b}") % (crz_text, __(pronoun), __(self.wants_entertainment))
@@ -2047,7 +2047,7 @@ init -2 python:
             #     return desc
 
             elif act in all_sex_acts:
-                desc += self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
+                desc += self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(self.fetish))
                 if self.wants_sex_act != act:
                     desc += __(", but settled for {b}%s{/b}") % __(girl_related_dict[act])
                 if self.group:
@@ -3892,25 +3892,25 @@ init -2 python:
             if self.type in ("special", "personality"):
 
                 if target == "naked":
-                    text1 = "Accepts nudity"
+                    text1 = "十分乐意裸体"
 
                 elif target == "level":
-                    text1 = "+1 level (max level: " + str(val) + ")"
+                    text1 = "+1等级 (最高等级: " + str(val) + ")"
 
                 elif target == "advertising power":
-                    text1 = "Increases the power of your advertising girls (higher bonuses to brothel reputation, customer attraction and customer budget)."
+                    text1 = "提高广告的效果 (提高青楼的声望增速,客流量和顾客的预算)。"
 
                 elif target == "heal minion":
-                    text1 = "Heals a wounded minion."
+                    text1 = "治疗一个受伤的单位。"
 
                 elif target == "workwhore":
-                    text1 = "she may work a half-shift, then whore a half-shift."
+                    text1 = "她可以一边正常的工作，一边勾引客人上床。"
 
                 elif target == "lucky":
-                    text1 = "higher chance of critical success when working or whoring (does not stack)"
+                    text1 = "工作或卖淫时提高判定大成功的概率 (效果无法叠加)"
 
                 elif target == "unlucky":
-                    text1 = "higher chance of critical failure when working or whoring"
+                    text1 = "工作或卖淫时提高判定大失败的概率"
 
                 elif target == "temptress":
                     text1 = "may talk an unwilling customer into accepting a different sex act"
@@ -3943,7 +3943,7 @@ init -2 python:
                     text1 += "you can defend the brothel even when you are out of AP"
 
                 elif target == "snake eyes":
-                    text1 += "hypnosis never fails"
+                    text1 += "催眠永远不会失败"
 
                 elif target == "safe":
                     text1 += "excludes up to " + str(val) + " gold from the brothel threat level"
@@ -3955,10 +3955,10 @@ init -2 python:
                     text1 += "when resting, may cast a magic shield on herself or a friend to protect from attacks"
 
                 elif target == "ignore budgets":
-                    text1 += "ignores customer budget limitations"
+                    text1 += "无视顾客的预算限制"
 
                 elif target == "ignore energy":
-                    text1 += "Chance of ignoring energy loss during each interaction"
+                    text1 += "每次互动都有概率无视精力损耗"
 
                 return __(text1)
 
@@ -4718,7 +4718,7 @@ init -2 python:
 
                     for stat, _min, _max in self.bonuses:
                         if girl.get_stat(stat, raw=True) < self.stat_cap:
-                            return (True, "Register %s for the selected class." % girl.fullname)
+                            return (True, "为%s报名这个培训班。" % girl.fullname)
 
                     return (False, "Your girl's skills are too high to learn anything from this class.")
 
@@ -7273,7 +7273,7 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}特质{/b}: " + and_text([trait_name_dict[t.name] for t in target], "或")
+                return "{b}特质{/b}: " + and_text([t.name for t in target], "或")
 
             elif spe == "perk":
                 return "{b}天赋{/b}: " + target.name

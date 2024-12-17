@@ -1627,9 +1627,9 @@ label slave_train_constitution(girl):
 
     "You ask [girl.name] to do a few simple exercises."
 
-    $ MC.rand_say((str(10 + dice(40)) + __(" push-ups. Go!"), "Run up and down the stairs. Count your steps.", "Carry this bucket of water four times around the yard.",
-                   __("Lift this log about ") + str(5 + dice(15)) + __(" times."), "Run around the neighbourhood for half an hour.", "wr: Train a little with a practice sword.",
-                   "tr: Take Drogon out for a walk. Try to keep up!", "wz: Go fetch my magical supplies. It's a large, metal chest."))
+    $ MC.rand_say((str(10 + dice(40)) + "十组俯卧撑，快!", "在楼梯上下往返。记得数你的步数。", "提着这桶水绕院子四圈。",
+                   "抬起这根木头" + str(5 + dice(15)) + "次。", "绕着青楼半个小时。", "wr: 挥舞木剑100次。",
+                   "tr: 带小龙出去散步。别跟丢了!", "wz: 去把我的魔法道具搬来。那是一个很大的金属箱子。"))
 
     $ pic = girl.get_pic("constitution", "dancer", "profile", naked_filter=True, soft=True)
 

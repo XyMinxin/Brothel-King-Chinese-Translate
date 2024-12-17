@@ -1613,7 +1613,7 @@ init -3 python:
 
         cust_diff = mean_int(c.diff for c in customers) # // len(customers)
 
-        change_log.add("Difficulty: %s" % cust_diff_description(cust_diff), "header", ttip = "Difficulty is related to customer population and averaged among all targeted customers.", ttip_title="Difficulty", separator="\n")
+        change_log.add("难度: %s" % cust_diff_description(cust_diff), "header", ttip = "难度与客户数量和所有目标客户的平均属性有关。", ttip_title="Difficulty", separator="\n")
 
 
         ## STEP 2: Get customer satisfaction
@@ -1629,7 +1629,7 @@ init -3 python:
             ttip += "Base modifier: %s" % plus_text(int(base_entertainment_bonus))
 
             if unsat:
-                ttip += " (%i wanted to do something else)" % unsat
+                ttip += " (%i想要做别的事)" % unsat
 
             # Lowering malus with effects such as the Party Girl perk
             entertainment_bonus = base_entertainment_bonus * girls[0].get_effect("boost", "customer penalties")
@@ -1845,7 +1845,7 @@ init -3 python:
         ## STEP 3: Calculate stat bonus
 
         stat_bonus = mean_int(girl.test_stats(perform_job_dict[act + "_stats"], cust_diff) for girl in girls) # // len(girls)
-        ttip = "属性提高 (%s)：%s ({i}%s{/i})" % (girl_related_dict[act], plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], "、"))
+        ttip = "属性加成 (%s)：%s ({i}%s{/i})" % (girl_related_dict[act], plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], "、"))
 
         sensitivity_bonus = 0
         if act in all_sex_acts:
@@ -1876,14 +1876,14 @@ init -3 python:
         ## STEP 4: Get job level bonus
 
         job_bonus = mean_int(girl.job_level[act] for girl in girls) # // len(girls)
-        ttip += "\n工作等级加成 (%s)：%s" % (girl_related_dict[act], plus_text(job_bonus))
+        ttip += "\n职业等级加成 (%s)：%s" % (girl_related_dict[act], plus_text(job_bonus))
 
-        change_log.add("女孩技能：%s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
+        change_log.add("属性加成：%s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
 
         ## STEP 5: roll dice
 
         d = dice(6)
-        ttip = "表示她在给定交互中的表现。她丢出了%i点" % d
+        ttip = "表示她在工作的表现。她掷出了%i点" % d
 
         # re-rolls (traits/perks)
 
@@ -1895,7 +1895,7 @@ init -3 python:
                 d = dice(6)
                 specials.append("reroll")
 
-                ttip += " (" + event_color["bad"] % "大失败" + ")。她摇了%i" % d
+                ttip += " (" + event_color["bad"] % "大失败" + ")。她掷出了%i点" % d
 
         if d == 2:
             if girls[0].get_effect("special", "unlucky"):
@@ -1918,7 +1918,7 @@ init -3 python:
         # A roll of 6 will bypass budget restrictions
 
         if d == 6:
-            ttip += " (" + event_color["good"] % "critical success" + "). She may ignore customer budget limits."
+            ttip += " (" + event_color["good"] % "critical success" + ")。 她可以让顾客为她消费超出预算的金币。"
             ignore_budget = 1
 
         roll_changes = __("Roll: ") + "{image=" + "img_dice" + str(d) + "}"
@@ -1926,7 +1926,7 @@ init -3 python:
             roll_changes += __(" (Reroll)")
             ev_sound = s_dice
 
-        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="Dice roll")
+        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="判定")
 
         ## STEP 6: Misc. bonuses
 
@@ -2006,26 +2006,26 @@ init -3 python:
                     cust.entertainment_score = score
         #</Chris Job Mod>
 
-        change_log.add(__("{b}Final result{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + " result (%i){/color}" % score, ttip=result_reference)
+        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + " result (%i){/color}" % score, ttip=result_reference)
 
         if act in all_jobs:
-            change_log.add("Customers entertained: %i/%i" % (cust.service_dict["entertained"], len(customers)))
+            change_log.add("满意的顾客: %i/%i" % (cust.service_dict["entertained"], len(customers)))
 
         elif act in all_sex_acts:
-            change_log.add("Customers served: %i/%i" % (cust.service_dict["laid"], len(customers)))
+            change_log.add("满足的顾客: %i/%i" % (cust.service_dict["laid"], len(customers)))
 
         # Get tip, xp, jp and rep
 
-        budget_ttip = "Customer budget is the cumulated amount they are willing to spend on this interaction.\n"
+        budget_ttip = "客户预算是他们愿意在青楼花费的金额。\n"
         if act in all_jobs:
             total_budget = sum(c.ent_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n顾客默认预算: %s (%s customers)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "job customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和其他效果: %s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2033,11 +2033,11 @@ init -3 python:
             total_budget = sum(c.wh_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n顾客默认预算: %s (%s customers)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "whore customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和其他效果: %s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2358,7 +2358,7 @@ init -3 python:
             elif act in all_sex_acts:
                 job_ttip = list_text([(girl_related_dict[a.capitalize()] + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级%i的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
+            change_log.add("%s 属性变化" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个%i级的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -4015,13 +4015,13 @@ init -3 python:
 
     def get_day_report(_log):
         if _log.net >= 0:
-            msg = "You made " + event_color["good"] % (str(round_int(_log.net)) + " gold") + " last night.\n"
+            msg = "你昨晚挣了" + event_color["good"] % (str(round_int(_log.net)) + "金币") + "。\n"
         else:
-            msg = "You lost " + event_color["bad"] % (str(round_int(_log.net)) + " gold") + " last night.\n"
+            msg = "你昨晚亏损了" + event_color["bad"] % (str(round_int(_log.net)) + "金币") + "。\n"
 
-        msg += "{size=-2}" + "- Gold made: + " + event_color["good"] % str(round_int(_log.gold_made)) + "\n"
-        msg += "- Girls upkeep: - " + event_color["bad"] % str(round_int(_log.upkeep)) + "\n"
-        msg += "- Brothel costs: - " + event_color["bad"] % str(round_int(_log.costs)) + "\n{/size}\n"
+        msg += "{size=-2}" + "- 营业额: + " + event_color["good"] % str(round_int(_log.gold_made)) + "\n"
+        msg += "- 支付工资: - " + event_color["bad"] % str(round_int(_log.upkeep)) + "\n"
+        msg += "- 青楼支出: - " + event_color["bad"] % str(round_int(_log.costs)) + "\n{/size}\n"
 
         msg += str(_log.cust) + "名顾客" + plural(_log.cust) + "光顾了青楼。\n"
         msg += "{size=-2}" + "- 顾客" + plural(_log.check("served")) + "被接待(常规): " + event_color["good"] % str(_log.check("served")) + "/" + str(_log.cust) + "人\n"
@@ -4197,17 +4197,17 @@ init -3 python:
         cust_text = str(cust_nb) + " " + __("customers came to ") + brothel.name + "."
         log.add_report(event_color["good"] % cust_text)
 
-        cust_text += "\nBase customers: %s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
+        cust_text += "\n顾客数量: %s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
 
         # if cust_nb_dict["advertising"] and cust_nb_dict["special"]:
         #     # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising and +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
         #     cust_text += "\nAdvertising: %s\nSpecial effects: %s" % (plus_text(cust_nb_dict["advertising"]), plus_text(cust_nb_dict["special"]))
         if cust_nb_dict["advertising"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising)")
-            cust_text += "\nAdvertising: %s" % (plus_text(cust_nb_dict["advertising"]))
+            cust_text += "\n广告引流: %s" % (plus_text(cust_nb_dict["advertising"]))
         elif cust_nb_dict["special"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
-            cust_text += "\nSpecial effects: %s" % (plus_text(cust_nb_dict["special"]))
+            cust_text += "\n特殊增益: %s" % (plus_text(cust_nb_dict["special"]))
 
         log.cust = cust_nb
 
@@ -4222,7 +4222,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + __(" came to the brothel. He wants to be attended to by a ") + __(girl_related_dict[c.wants_entertainment]) + __(" and likes ") + __(girl_related_dict[c.wants_sex_act]) + ".")
+            log.add_report(c.name + "光顾了青楼。他想要由" + __(girl_related_dict[c.wants_entertainment]) + "接待，并想要有人为他提供" + __(girl_related_dict[c.wants_sex_act]) + "服务")
 
         return cust_list, cust_text, cust_nb_dict
 

@@ -953,9 +953,9 @@ init -1 python:
     add_dialogue("slave train obedience", "sub", "是的主人。")
 
     add_dialogue("slave train constitution", "very introvert", "哦，真的，锻炼吗？我就不能看书吗？ *抱怨*")
-    add_dialogue("slave train constitution", "introvert", "如果你这么说，主人.")
-    add_dialogue("slave train constitution", "very extravert", "是的先生！锻炼对于健康的身体和精神很重要。")
-    add_dialogue("slave train constitution", "extravert", "是的主人。我想我可以做一点运动。")
+    add_dialogue("slave train constitution", "introvert", "如果你要求的话，主人.")
+    add_dialogue("slave train constitution", "very extravert", "你说的对，主人！锻炼对于健康的身体和精神很重要。")
+    add_dialogue("slave train constitution", "extravert", "好的主人。我想我可以做一点运动。")
 
     add_dialogue("slave train refuses", "lewd", "她对 [act_desc] 的想法感到非常羞愧，甚至无法说话。她的脸是鲜红的。", sound=s_screams)
     add_dialogue("slave train refuses", "modest", "她似乎对 [act_desc] 的想法感到厌恶。她给你一个害怕的表情。", sound=s_screams)
@@ -3629,7 +3629,7 @@ init -1 python:
     add_dialogue("slave chat origins 1", ("repressed", "stubborn", "prude"), ("我是在[girl.origin]长大的，不像这个城市污水坑里的大多数女孩。", "我在[girl.origin]出生和长大。", "我的家人在 [girl.origin] 附近过着舒适的生活。"), unlock="EI")
     add_dialogue("slave lecture fear", ("very modest"), ("她害怕你。"))
     add_dialogue("slave train obedience", ("repressed", "very sub"), ("当然，主人。我会立即着手处理。"))
-    add_dialogue("slave train constitution", ("repressed", "very extravert"), ("是的先生！锻炼对于健康的身体和精神很重要。"))
+    add_dialogue("slave train constitution", ("repressed", "very extravert"), ("你说的对，主人！锻炼对于健康的身体和精神很重要。"))
     add_dialogue("slave magic sensitivity success", ("generic"), ("嗯....我是取悦诸神的容器...."), sound=s_mmh)
     add_dialogue("slave magic failure", ("repressed", "very dom"), ("什...你到底在做什么？嘿，你在对我尝试一些肮脏的魔法！哎呀！走开！！！"), sound=s_scream, unlock="DS")
 

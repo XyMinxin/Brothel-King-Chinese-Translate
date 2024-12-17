@@ -2570,11 +2570,11 @@ init -2 python:
         def rest(self, context=None, mod=1):
 
             if context == "farm":
-                resting_changes = NightChangeLog(title="Holding")
-                resting_text = self.fullname + " rested in her pen today."
+                resting_changes = NightChangeLog(title="农场地牢")
+                resting_text = self.fullname + "今晚在她的牢房里休息。"
             else:
-                resting_changes = NightChangeLog(title="Resting")
-                resting_text = self.fullname + " rested in her room today."
+                resting_changes = NightChangeLog(title="私人卧室")
+                resting_text = self.fullname + "今晚在她的房间里休息。"
 
             if self.hurt > 0:
                 r, case = self.heal(1)

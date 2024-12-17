@@ -1628,7 +1628,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5736
     old "{i}No girls are available for this task{/i}"
-    new "{i}No girls are available for this task{/i}"
+    new "{i}没有能够完成这项委托的女孩{/i}"
 
     # game/BKscreens.rpy:5756
     old "Character"
@@ -1636,7 +1636,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5756
     old "Create your Main Character."
-    new "Create your Main Character."
+    new "创建你的主角。"
 
     # game/BKscreens.rpy:5758
     old "Difficulty"
@@ -1644,7 +1644,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5758
     old "Change difficulty settings."
-    new "Change difficulty settings."
+    new "更改难度设置。"
 
     # game/BKscreens.rpy:5760
     old "Choose your girl mixes."
@@ -1652,7 +1652,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5763
     old "NewGame+"
-    new "NewGame+"
+    new "新周目"
 
     # game/BKscreens.rpy:5763
     old "Access NewGame+ settings."
@@ -1780,51 +1780,51 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6346
     old "Duration"
-    new "Duration"
+    new "消耗天数"
 
     # game/BKscreens.rpy:6354
     old "Cost"
-    new "Cost"
+    new "学费"
 
     # game/BKscreens.rpy:6359
     old "FREE"
-    new "FREE"
+    new "免费"
 
     # game/BKscreens.rpy:6363
     old "Enrolled"
-    new "Enrolled"
+    new "空缺席位"
 
     # game/BKscreens.rpy:6369
     old "Gains"
-    new "Gains"
+    new "属性提升"
 
     # game/BKscreens.rpy:6384
     old "\nMax skill: "
-    new "\nMax skill: "
+    new "\n属性最多提升至: "
 
     # game/BKscreens.rpy:6385
     old "Classes may cause a girl's skills to exceed their level cap."
-    new "Classes may cause a girl's skills to exceed their level cap."
+    new "培训课程也许可以让女孩的属性超过上限。"
 
     # game/BKscreens.rpy:6390
     old "Reward"
-    new "Reward"
+    new "报酬"
 
     # game/BKscreens.rpy:6396
     old "Requirements"
-    new "Requirements"
+    new "任务要求"
 
     # game/BKscreens.rpy:6406
     old "Desirable"
-    new "Desirable"
+    new "有利特质"
 
     # game/BKscreens.rpy:6414
     old "Undesirable"
-    new "Undesirable"
+    new "不利特质"
 
     # game/BKscreens.rpy:6419
     old "No task is currently available."
-    new "No task is currently available."
+    new "现在没有可以接取的委托。"
 
     # game/BKscreens.rpy:6457
     old "Quests"

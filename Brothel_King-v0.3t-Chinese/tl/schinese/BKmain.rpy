@@ -472,7 +472,7 @@ translate schinese postings_a9866580:
 translate schinese postings_1fa51d9f:
 
     # jobgirl "Oh, it's you! Look, there are new tasks available."
-    jobgirl "哦,是你!看,这里有新的任务。"
+    jobgirl "哦,你来啦!瞧,又有人发布了新的委托。"
 
 # game/BKmain.rpy:2112
 translate schinese postings_75b55ded:

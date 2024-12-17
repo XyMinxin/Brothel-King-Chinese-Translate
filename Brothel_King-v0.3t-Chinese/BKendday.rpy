@@ -388,7 +388,7 @@ label end_day:
 
     ## Prepare
 
-    $ night_early = NightChangeLog(title="Dusk", col=c_lightorange)
+    $ night_early = NightChangeLog(title="夜幕降临", col=c_lightorange)
 
     python:
         if not logs[calendar.time]:
@@ -552,7 +552,7 @@ label end_day:
             else:
                 rep_text = __("Your brothel's reputation remains stable (") + '{:,}'.format(round_int(brothel.rep)) + ")."
 
-            night_early.add("Brothel reputation:\n%s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), plus_text(chg, color_scheme="rep")), "header", ttip_title = "Brothel report", ttip = rep_text)
+            night_early.add("青楼声望:\n%s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), plus_text(chg, color_scheme="rep")), "header", ttip_title = "青楼声望变化", ttip = rep_text)
 
             night_early.add("Advertising: +%s" % str_dec(raw_rep))
             if bonus_rep >= 1:
@@ -599,33 +599,33 @@ label end_day:
 
 
         if working_girls:
-            line = event_color["a little good"] % ("Working: %s" % len(working_girls))
+            line = event_color["a little good"] % ("在岗员工: %s" % len(working_girls))
             ttip = list_text([g.fullname for g in working_girls])
-            night_early.add(line, ttip=ttip, ttip_title = event_color["a little good"] % "Working today")
+            night_early.add(line, ttip=ttip, ttip_title = event_color["a little good"] % "今天工作的员工")
 
             for girl in working_girls:
-                log.add_report(girl.fullname + __(" is working today as a ") + __(girl_related_dict[girl.job]) + "。")
+                log.add_report(girl.fullname + "今晚将作为" + __(girl_related_dict[girl.job]) + "服务客人。")
 
         if sick_girls:
-            line = event_color["bad"] % ("Sick girls: %s" % len(sick_girls))
+            line = event_color["bad"] % ("生病的员工: %s" % len(sick_girls))
             ttip = list_text([g.fullname for g in sick_girls])
-            night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "Got sick")
+            night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "生病了")
 
         if striking_girls:
-            line = event_color["bad"] % ("Refused to work: %s" % len(striking_girls))
+            line = event_color["bad"] % ("罢工的员工: %s" % len(striking_girls))
             ttip = list_text([g.fullname for g in striking_girls])
-            night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "Refused to work")
+            night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "拒绝工作")
 
             night_text += "\n{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color} ")
             log.add_report("{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color}"))
 
         if resting_girls:
-            line = event_color["normal"] % ("Resting: %s" % len(resting_girls))
+            line = event_color["normal"] % ("休息的员工: %s" % len(resting_girls))
             ttip = list_text([g.fullname for g in resting_girls])
-            night_early.add(line, ttip=ttip, ttip_title = "Resting")
+            night_early.add(line, ttip=ttip, ttip_title = "休息的员工")
 
         if away_girls:
-            line = event_color["normal"] % ("Away: %s" % len(away_girls))
+            line = event_color["normal"] % ("外出的员工: %s" % len(away_girls))
             ttip = list_text([g.fullname for g in away_girls])
             night_early.add(line, ttip=ttip, ttip_title = "Away")
 
@@ -896,8 +896,8 @@ label end_day:
             log.add_report(event_color["good"] % ("All %s customers were able to sleep with a whore." % str_int(len(customers))))
 
         else:
-            night_no_girls = NightChangeLog(title="Late night", col=c_lightorange)
-            night_no_girls.add("Unattended customers", "header", col="bad")
+            night_no_girls = NightChangeLog(title="月下树梢", col=c_lightorange)
+            night_no_girls.add("失望的顾客", "header", col="bad")
             night_no_girls.add(get_customer_population_count(leftover_customers))
 
             if len(leftover_customers) == len(customers):
@@ -907,10 +907,10 @@ label end_day:
 
             pic = rand_choice(no_girls_pics)
 
-            ev = Event(Picture(pic, "events/" + pic), text = text1 + "girls were available for sex and %s customers left disappointed." % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
+            ev = Event(Picture(pic, "events/" + pic), text = text1 + "名女孩可以提供性服务， %s名顾客失望的离开了。" % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
             perform_events.append(ev)
 
-            log.add_report(event_color["bad"] % (__("%s customers couldn't get laid and left disappointed.") % str(len(leftover_customers))))
+            log.add_report(event_color["bad"] % (__("%s名顾客不能发泄性欲，失望地离开了。") % str(len(leftover_customers))))
 
 
     # Predict image for first event in Perform list
@@ -1072,7 +1072,7 @@ label end_day:
     ## Change Brothel Rep
 
     python:
-        night_late = NightChangeLog("Night recap", col=c_lightorange)
+        night_late = NightChangeLog("今日总结", col=c_lightorange)
         night_late.add("Y%i M%i D%i %s" % (calendar.year, calendar.month, calendar.day, __(calendar.get_weekday())), "header")
         old_rep = brothel.rep
 
@@ -1081,18 +1081,18 @@ label end_day:
         laid = sum(1 for c in customers if c.got_sex_act)
         satisfied = sum(1 for c in customers if c.got_sex_act == c.wants_sex_act)
 
-        night_late.add("Total customers: %i" % len(customers), "header")
-        night_late.add("Entertainment (served): %s" % (event_color["average"] % served), ttip="%i customers were entertained out of %i waiting customers" % (served, len(customers)))
-        night_late.add("Whoring (served): %s" % (event_color["average"] % laid), ttip="%i customers were tended to by a whore out of %i waiting customers" % (laid, len(customers)))
-        night_late.add("Entertainment (satisfied): %s" % (event_color["a little good"] % entertained), ttip="%i customers were satisfied out of %i entertained customers" % (entertained, served))
-        night_late.add("Whoring (satisfied): %s" % (event_color["a little good"] % satisfied), ttip="%i customers were satisfied out of %i whoring customers" % (satisfied, laid))
+        night_late.add("客流量: %i人" % len(customers), "header")
+        night_late.add("接客量: %s人" % (event_color["average"] % served), ttip="%i位光顾的顾客中有%i位得到了服务" % (len(customers), served))#中英互译倒装，所以对调了变量顺序。
+        night_late.add("接待的嫖客: %s人" % (event_color["average"] % laid), ttip="%i位光顾的嫖客中有%i位得到了性服务" % (len(customers), laid))#中英互译倒装，所以对调了变量顺序。
+        night_late.add("满意的顾客: %s人" % (event_color["a little good"] % entertained), ttip="%i位服务的顾客中有%i位感到满意" % (served, entertained))#中英互译倒装，所以对调了变量顺序。
+        night_late.add("满意的嫖客: %s" % (event_color["a little good"] % satisfied), ttip="%i位嫖妓的嫖客中有%i位感到满足" % (laid, satisfied))#中英互译倒装，所以对调了变量顺序。
 
         log.add_report(event_color["good"] % (str(len(customers)) + " customer" + plural(len(customers)) + " came to your brothel. " + str(served) + " got attended (" + str(entertained) + " entertained), " + str(laid) + " got laid (" + str(satisfied) + " satisfied)."))
 
         rep_chg = sum(c.get_reputation_change() for c in customers)
         rep_chg = brothel.change_rep(rep_chg)
 
-        night_late.add("Reputation: %s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), event_color["rep"] % (plus_text(rep_chg))), "header", ttip=plus_text(rep_chg) + " reputation increase from satisfied customers.")
+        night_late.add("青楼名声: %s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), event_color["rep"] % (plus_text(rep_chg))), "header", ttip=plus_text(rep_chg) + "声望，满意的顾客越多增长得就越快。")
 
         log.add_report(event_color["rep"] % ("Brothel reputation changed from %i to %i (%s)" % (old_rep, brothel.rep, plus_text(round_int(rep_chg)))))
 
@@ -1107,7 +1107,7 @@ label end_day:
 
     $ customers.sort(key=lambda x: x.reputation_change, reverse=True)
 
-    $ renpy.say("", "End of whoring phase", interact=False)
+    $ renpy.say("", "嫖客们一个接一个地离开了青楼", interact=False)
 
     $ latest_sat_report = [copy.copy(customers), old_rep, rep_chg]
 
@@ -1238,9 +1238,9 @@ label end_day:
 
         chg = brothel.change_dirt(-1 * brothel.get_maintenance())
 
-        night_late.add("Cleanliness: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + brothel.get_cleanliness())
-        night_late.add("Dirt: %s" % plus_text(log.dirt))
-        night_late.add("Maintenance: %s" % plus_text(chg))
+        night_late.add("青楼卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + brothel.get_cleanliness())
+        night_late.add("垃圾堆积: %s" % plus_text(log.dirt))
+        night_late.add("卫生清洁: %s" % plus_text(chg))
 
     ## Pay the rent
 
@@ -1279,9 +1279,9 @@ label end_day:
 
         if loan_payment:
             log.costs += loan_payment
-            gold_text += "\nYou paid {image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + " to the bank for your loan."
+            gold_text += "\n您支付了{image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + "来偿还银行的贷款利息。"
 
-        gold_recap = "You paid {image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + " in brothel costs."
+        gold_recap = "您支付了{image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + "作为青楼开销。"
 
     ## Katchiiing
 
@@ -1324,28 +1324,28 @@ label end_day:
 
         ## Log changes for the right recap
 
-        night_late.add("Income: " + "{image=img_gold_20} %s" % plus_text(log.net, "gold"), "header")
+        night_late.add("青楼收入: " + "{image=img_gold_20} %s" % plus_text(log.net, "gold"), "header")
 
-        night_late.add("Girls income: " + event_color["a little good"] % plus_text(log.gold_made-street_gold), ttip_title="Girl income", ttip=list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.get_log("total_gold", "today"))) for g in working_girls]))
+        night_late.add("青楼流水: " + event_color["a little good"] % plus_text(log.gold_made-street_gold), ttip_title="女孩们辛苦挣来的金币", ttip=list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.get_log("total_gold", "today"))) for g in working_girls]))
         if street_gold:
-            night_late.add("Street whores: " + event_color["a little good"] %  plus_text(street_gold), ttip_title="Street whores income", ttip=list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.today_street_tip)) for g in MC.street_girls]))
+            night_late.add("站街妓女: " + event_color["a little good"] %  plus_text(street_gold), ttip_title="站街卖淫挣来的金币", ttip=list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.today_street_tip)) for g in MC.street_girls]))
 
-        night_late.add("Costs: "  + event_color["bad"] % str_int(-log.upkeep - log.costs), ttip = gold_text)
+        night_late.add("支出: "  + event_color["bad"] % str_int(-log.upkeep - log.costs), ttip = gold_text)
 
-        night_late.add("* Upkeep: %i" % -log.upkeep, col="bad", ttip = list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.get_log("upkeep", "today"))) for g in (MC.girls+farm.girls)]))
+        night_late.add("* 员工工资: %i" % -log.upkeep, col="bad", ttip = list_text(["%s: %s" % (capitalize(g.fullname), plus_text(g.get_log("upkeep", "today"))) for g in (MC.girls+farm.girls)]))
 
         if working_girls:
-            night_late.add("* Advertising: %i" % -brothel.get_adv_cost(), col="bad", ttip="%i advertising girls x %i = {image=img_gold} %i" % (brothel.advertising, helper_cost[district.rank], brothel.get_adv_cost()))
+            night_late.add("* 广告费用: %i" % -brothel.get_adv_cost(), col="bad", ttip="%i advertising girls x %i = {image=img_gold} %i" % (brothel.advertising, helper_cost[district.rank], brothel.get_adv_cost()))
 
-            night_late.add("* Security: %i" % -brothel.get_sec_cost(), col="bad", ttip="%i goons x %i = {image=img_gold} %i" % (brothel.security, helper_cost[district.rank], brothel.get_sec_cost()))
+            night_late.add("* 保安工资: %i" % -brothel.get_sec_cost(), col="bad", ttip="%i goons x %i = {image=img_gold} %i" % (brothel.security, helper_cost[district.rank], brothel.get_sec_cost()))
 
-        night_late.add("* Maintenance: %i" % -brothel.get_maintenance_cost(), col="bad", ttip="%i maids x {image=img_gold} %i = {image=img_gold} %i" % (brothel.maintenance, helper_cost[district.rank], brothel.get_maintenance_cost()))
+        night_late.add("* 家政工资: %i" % -brothel.get_maintenance_cost(), col="bad", ttip="%i maids x {image=img_gold} %i = {image=img_gold} %i" % (brothel.maintenance, helper_cost[district.rank], brothel.get_maintenance_cost()))
 
         if loan_payment:
-            night_late.add("* Loan payment: %i" % loan_payment, col="bad")
+            night_late.add("* 贷款利息: %i" % loan_payment, col="bad")
 
         if bonus:
-            night_late.add("Perks and special effects: %s" % plus_text(bonus, "standard"))
+            night_late.add("天赋和其他效果加成: %s" % plus_text(bonus, "standard"))
 
         MC.gold += log.net
         NPC_taxgirl.MC_income += (log.net * brothel.get_effect("boost", "taxable net income"))
