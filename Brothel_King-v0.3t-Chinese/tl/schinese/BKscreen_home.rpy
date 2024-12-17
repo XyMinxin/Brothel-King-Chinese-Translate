@@ -28,11 +28,11 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:167
     old " active spell"
-    new "个激活的法术"
+    new "个法术"
 
     # game/BKscreen_home.rpy:169
     old "no active spells"
-    new "0个激活的法术"
+    new "0个法术"
 
     # game/BKscreen_home.rpy:172
     old " auto-cast spell"
@@ -80,7 +80,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:346
     old "es"
-    new "."
+    new ""
 
     # game/BKscreen_home.rpy:346
     old "{/b}{/color} and {color=[c_orange_pink]}{b}"

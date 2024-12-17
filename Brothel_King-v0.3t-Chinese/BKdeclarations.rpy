@@ -1395,7 +1395,7 @@ init -2 python:
 
     # Lists all tabs and keys/buttons in the Game CG gallery as (tab, buttons) tuples
 
-    ev_gallery_list = ["Characters", "Story", "Backgrounds", "Misc"]
+    ev_gallery_list = ["角色立绘", "剧情CG", "背景图片", "其他图片"]
 
 #     ev_gallery_list = [
 #                        ("Characters", ["sill", "kurohime", "maid", "gio", "kosmo", "kosmo girls", "gizel",
@@ -1600,13 +1600,13 @@ screen galleries():
     frame xalign 0.5 yalign 0.5:
         has vbox spacing 10 box_wrap True
 
-        textbutton __("CG - Game") action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton "剧情CG" action (ShowMenu("gallery", gal_type="ev"), SetVariable("gallery_type", "ev")) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
-        textbutton __("CG - Girl packs") action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton "女孩包CG" action (ShowMenu("gallery", gal_type="gp"), SetVariable("gallery_type", "gp")) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
         # textbutton "Achievements" action ShowMenu("achievements") text_size res_font(24) xsize int(config.screen_width*0.1851)
 
-        textbutton __("Main Menu") action Function(renpy.full_restart) text_size res_font(24) xsize int(config.screen_width*0.1851)
+        textbutton "主菜单" action Function(renpy.full_restart) text_size res_font(24) xsize int(config.screen_width*0.1851)
 
 
 screen gallery_left_menu(gal_type, gal):
@@ -1715,26 +1715,26 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
 
             $ max_page = (len(gal.blist)-1) // shown_pics
 
-            text "Page " + str(page+1) + "/" + str(max_page+1) size int(config.screen_height*0.02)
+            text "第" + str(page+1) + "/" + str(max_page+1) + "页" size int(config.screen_height*0.02) 
 
             frame background None xsize 0.8 xalign 1.0:
     #            textbutton "Start Slideshow" action gal.ToggleSlideshow()
 
                 has hbox:
                     
-                    textbutton __("Show less"):
+                    textbutton "放大图片":
                         if shown_pics > list(but_sizes.keys())[0]:
                             action SetScreenVariable("shown_pics", cycle_list(list(but_sizes.keys()), shown_pics, -1))
-                    textbutton __("Show more"):
+                    textbutton "缩小图片":
                         if shown_pics < list(but_sizes.keys())[-1]:
                             action SetScreenVariable("shown_pics", cycle_list(list(but_sizes.keys()), shown_pics))
 
                     if page > 0:
                         key ["K_LEFT", "repeat_K_LEFT", "mousedown_4"]  action SetScreenVariable("page", page-1)
-                        textbutton __("Previous") action SetScreenVariable("page", page-1) xalign 0.05
+                        textbutton "上一页" action SetScreenVariable("page", page-1) xalign 0.05
                     if page < max_page:
                         key ["K_RIGHT", "repeat_K_RIGHT", "mousedown_5"] action SetScreenVariable("page", page+1)
-                        textbutton __("Next") action SetScreenVariable("page", page+1) xalign 0.9
+                        textbutton "下一页" action SetScreenVariable("page", page+1) xalign 0.9
                     if page < max_page - 10:
                         key "K_PAGEDOWN" action SetScreenVariable("page", page+10)
                     else:
@@ -1748,7 +1748,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                     key "K_HOME" action SetScreenVariable("page", 0)
                     key "K_END" action SetScreenVariable("page", max_page)
 
-                    textbutton __("Return") action ShowMenu("galleries") xalign 0.5
+                    textbutton "返回" action ShowMenu("galleries") xalign 0.5
 
 
 screen _gallery:

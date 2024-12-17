@@ -757,7 +757,7 @@ screen item_tab(context, left_party, right_party): # Where X_party are a list of
             use restock_button(right_focus)
 
     elif context == "girls":
-        textbutton __("Collect all items") text_size res_font(16) xalign 0.5 yalign 0.1 tooltip __("This will collect non-equipped items from all girls and store them in the left character's inventory.") action Return("collect all")
+        textbutton "收集所有物品" text_size res_font(16) xalign 0.5 yalign 0.1 tooltip "这将收集所有女孩的非装备物品，并将它们存储在左侧角色的库存中。" action Return("collect all")
 
     key "mouseup_3" action (Return("back"))
     use close(Return("back"))
@@ -802,9 +802,9 @@ screen universal_selector:
         textbutton "<" ysize yres(80) xalign 0.0 yalign 0.5:
             action (SetVariable(var, previous), Return((var, "cycle_left")))
             if sc_prefix == "shift_":
-                tooltip __("Use shift + left/right arrow keys to change the focused character.")
+                tooltip "使用shift +左/右方向键来改变选择的角色。"
             else:
-                tooltip __("Use left/right arrow keys to change the focused character.")
+                tooltip "使用左/右方向键来改变选择的角色。"
 
         key sc_prefix + "K_LEFT" action (SetVariable(var, previous), Return((var, "cycle_left")))
 
@@ -875,9 +875,9 @@ screen universal_selector:
         textbutton ">" ysize yres(80) xalign 1.0 yalign 0.5:
             action (SetVariable(var, next), Return((var, "cycle_right")))
             if sc_prefix == "shift_":
-                tooltip __("Use shift + left/right arrow keys to change the focused character.")
+                tooltip "使用shift +左/右方向键来改变选择的角色。"
             else:
-                tooltip __("Use left/right arrow keys to change the focused character.")
+                tooltip "使用左/右方向键来改变选择的角色。"
 
 
 screen sorting_tab(context, sort_target=None, sorters=[], use_stats=False, small=False): # Sorters are defined in BKinit_variables.rpy
@@ -1071,9 +1071,9 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
                             text_selected_bold True
 
                             if sc_prefix == "shift_":
-                                tooltip __("Use shift + up/down arrows or mousewheel to cycle item pages.")
+                                tooltip "使用shift +上下方向键或鼠标滚轮来循环道具页面。"
                             else:
-                                tooltip __("Use up/down arrows or mousewheel to cycle item pages.")
+                                tooltip "使用上下方向键或鼠标滚轮来循环道具页面。"
 
                     if next:
                         textbutton "↓" style "UI_button":
@@ -1187,7 +1187,7 @@ screen item_profile(it):
                                 unhovered SetScreenVariable("focused_char", owner)
 
                 if "bargain" in acts:
-                    textbutton __("Skip") action Return("leave") xalign 0.5
+                    textbutton __("跳过") action Return("leave") xalign 0.5
 
     if isinstance(it, ItemInstance) and focused_char and (it.can_wear("girl") or it.can_use("girl")):
         if focused_char == left_focus:
@@ -1224,7 +1224,7 @@ screen inventory(char, counterpart=None):
                         else:
                             text __("Empty") size res_font(12) italic True xalign 0.5 yalign 0.5
                             action (SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
-                            tooltip __("No item is equipped to this slot.")
+                            tooltip "这个槽位没有装备道具。"
 
 
 screen item_filter(filters=inventory_filters["base"]):
@@ -1249,7 +1249,7 @@ screen item_filter(filters=inventory_filters["base"]):
                         add "filter_all" xalign 0.5 yalign 0.5
                     else:
                         add "filter_all_unselect" xalign 0.5 yalign 0.5
-                    tooltip __("Show all items.")
+                    tooltip "显示所有道具。"
 
 
 #### END OF BK ITEMS FILE ####

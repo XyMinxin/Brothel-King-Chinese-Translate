@@ -1372,7 +1372,7 @@ init -3 python:
 
         return txt + ("\n" + txt).join(li)
 
-    def plural(nb, ending = "s", singular=""):
+    def plural(nb, ending = "", singular=""): #删去了名词复数后缀加S的文本
 
         if nb == 1:
             return singular
@@ -2676,7 +2676,7 @@ init -3 python:
 
                 if len(customers) > 1:
                     s_act = "group"
-                    plur = "s"
+                    plur = "们"
                 elif len(girls) > 1:
                     s_act = "bisexual"
                     plur = ""
@@ -4023,18 +4023,18 @@ init -3 python:
         msg += "- Girls upkeep: - " + event_color["bad"] % str(round_int(_log.upkeep)) + "\n"
         msg += "- Brothel costs: - " + event_color["bad"] % str(round_int(_log.costs)) + "\n{/size}\n"
 
-        msg += str(_log.cust) + " customer" + plural(_log.cust) + " came to the brothel.\n"
-        msg += "{size=-2}" + "- Customer" + plural(_log.check("served")) + " served (job): " + event_color["good"] % str(_log.check("served")) + "/" + str(_log.cust) + "\n"
-        msg += "- Customer" + plural(_log.check("entertained")) + " entertained (job): " + event_color["good"] % str(_log.check("entertained")) + "/" + str(_log.check("served")) + "\n"
-        msg += "- Customer" + plural(_log.check("laid")) + " served (sex): " + event_color["good"] % str(_log.check("laid")) + "/" + str(_log.cust) + "\n"
-        msg += "- Customer" + plural(_log.check("satisfied")) + " satisfied (sex): " + event_color["good"] % str(_log.check("satisfied")) + "/" + str(_log.check("laid")) + "\n{/size}\n"
+        msg += str(_log.cust) + "名顾客" + plural(_log.cust) + "光顾了青楼。\n"
+        msg += "{size=-2}" + "- 顾客" + plural(_log.check("served")) + "被接待(常规): " + event_color["good"] % str(_log.check("served")) + "/" + str(_log.cust) + "人\n"
+        msg += "- 顾客" + plural(_log.check("entertained")) + "招待周到(常规): " + event_color["good"] % str(_log.check("entertained")) + "/" + str(_log.check("served")) + "人\n"
+        msg += "- 嫖客" + plural(_log.check("laid")) + "被接待(性爱): " + event_color["good"] % str(_log.check("laid")) + "/" + str(_log.cust) + "人\n"
+        msg += "- 嫖客" + plural(_log.check("satisfied")) + "十分满意(性爱): " + event_color["good"] % str(_log.check("satisfied")) + "/" + str(_log.check("laid")) + "人\n{/size}\n"
 
-        msg += str(_log.check("work_days")) + " girl" + plural(_log.check("work_days")) + " worked in the brothel. "
+        msg += str(_log.check("work_days")) + "个女孩" + plural(_log.check("work_days")) + "在青楼工作。"
 
         if _log.check("strike_days"):
-            msg += event_color["bad"] % (str(_log.check("strike_days")) + " girl" + plural(_log.check("strike_days")) + " went on strike. ")
+            msg += event_color["bad"] % (str(_log.check("strike_days")) + "个女孩" + plural(_log.check("strike_days")) + "被袭击了。")
         if _log.check("run_away"):
-                msg += event_color["bad"] % (str(_log.check("run_away")) + " girl" + plural(_log.check("run_away")) + " ran away from the brothel.")
+                msg += event_color["bad"] % (str(_log.check("run_away")) + "个女孩" + plural(_log.check("run_away")) + "从青楼里逃跑了。")
 
         msg += "\n{size=-2}" + "- Waitress: " + event_color["good"] % str(_log.check("waitress_days")) + "\n"
         msg += "- Dancer: " + event_color["good"] % str(_log.check("dancer_days")) + "\n"

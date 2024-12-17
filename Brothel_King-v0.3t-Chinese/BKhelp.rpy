@@ -377,7 +377,7 @@ screen help_screen(keyword, idx = None):
                         textbutton ">>" xsize xres(80) ysize yres(45):
                             if next_index < len(help_history):
                                 action Show("help_screen", keyword=help_history[next_index], idx = next_index)
-                    textbutton __("Close") xalign 1.0 xsize xres(120) ysize(45) action Hide()
+                    textbutton "关闭" xalign 1.0 xsize xres(120) ysize(45) action Hide()
 
                 hbox spacing xres(20):
                     if get_help_center_pic(keyword):
@@ -406,7 +406,7 @@ screen help_menu(scr):
 
     key "mouseup_3" action Return("back") capture True
 
-    button style "inv_no_padding" tooltip _("Click here or right-click to close the help menu.") action Return("back"):
+    button style "inv_no_padding" tooltip "点击此处或右键关闭帮助菜单" action Return("back"):
         xsize 0.05
         ysize 0.1
         xalign 1.0
@@ -3245,9 +3245,9 @@ screen perk_test_results(days, girls, girls2, girl_stats):
             text ""
 
         hbox:
-            textbutton __("RESTART") action (Return(), Jump("test_perks_launch"))
-            textbutton __("NEW TEST") action (Return(), Jump("test_perks"))
-            textbutton __("STOP") action Return()
+            textbutton "重启" action (Return(), Jump("test_perks_launch"))
+            textbutton "新测试" action (Return(), Jump("test_perks"))
+            textbutton "停止" action Return()
 
 
 init python:

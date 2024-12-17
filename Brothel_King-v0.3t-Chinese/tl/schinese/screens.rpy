@@ -124,7 +124,7 @@ translate schinese strings:
 
     # game/screens.rpy:791
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
-    new "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
+    new "由{a=https://www.renpy.org/}Ren'Py{/a}引擎制作 [renpy.version_only].\n\n[renpy.license!t]"
 
     # game/screens.rpy:828
     old "Previous"
@@ -140,11 +140,11 @@ translate schinese strings:
 
     # game/screens.rpy:870
     old "empty slot"
-    new "empty slot"
+    new "空存档位"
 
     # game/screens.rpy:891
     old "Quick"
-    new "Quick"
+    new "快速存档"
 
     # game/screens.rpy:934
     old "Load"

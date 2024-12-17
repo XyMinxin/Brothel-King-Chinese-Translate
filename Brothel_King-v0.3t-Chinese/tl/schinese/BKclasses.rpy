@@ -260,7 +260,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:2682
     old "Advertising: "
-    new "宣传效果: "
+    new "客人数量: "
 
     # game/BKclasses.rpy:2684
     old "\nSecurity: The threat level is "

@@ -113,7 +113,7 @@ screen right_menu():
 
                 if mod_menu:
                     null height 20
-                    textbutton __("Mods") action Show("mod_menu_display", mod_menu=mod_menu) tooltip __("Access options from your active mods (%s).") % and_text([event_color["special"] % m.name for m in game.active_mods.values()])  text_size res_font(20) style_group "rm" xalign 1.0
+                    textbutton "模组" action Show("mod_menu_display", mod_menu=mod_menu) tooltip "Access options from your active mods (%s)." % and_text([event_color["special"] % m.name for m in game.active_mods.values()])  text_size res_font(20) style_group "rm" xalign 1.0
 
                 null height 20
 
@@ -133,7 +133,7 @@ screen right_menu():
                     xsize 0.125
                 else:
                     xsize 0.2
-                textbutton __("{b}Current goal{/b}\n{i}{size=-2}") + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
+                textbutton "{b}当前目标{/b}\n{i}{size=-2}" + game.get_first_goal() style "invisible_no_padding" text_size res_font(14) text_color c_brown xalign 0.5 text_align 0.5:
                     action NullAction()
                     hovered Show("goal_ttip", transition=Dissolve(0.15))
                     unhovered Hide("goal_ttip", transition=Dissolve(0.15))
@@ -173,7 +173,7 @@ screen right_menu_mc():
         else:
             $ ttip += "."
 
-        textbutton __("{u}C{/u}haracter") style_group "rm":
+        textbutton "主角状态" style_group "rm":
             text_size res_font(20)
 
             action Return("main_character")
@@ -223,7 +223,7 @@ screen right_menu_girls():
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
         $ ttip += str(working_girls) + __(" girl") + plural(working_girls) + __(" will be working tonight.")
 
-        textbutton __("{u}G{/u}irls") style_group "rm":
+        textbutton "青楼宿舍" style_group "rm":
             text_size res_font(20)
 
             action Return("girls")
@@ -246,7 +246,7 @@ screen right_menu_brothel():
         else:
             text ""
 
-        textbutton __("{u}B{/u}rothel") style_group "rm":
+        textbutton "青楼设置" style_group "rm":
             action Return("brothel")
             tooltip __(brothel.get_ASM_report(short=True))
 
@@ -257,7 +257,7 @@ screen right_menu_brothel():
 screen right_menu_farm():
     hbox xalign 1.0 spacing 20:
         text ""
-        textbutton __("{u}F{/u}arm") style_group "rm":
+        textbutton "奴隶农场" style_group "rm":
             action Return("farm")
             tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + _(" girl") + plural(len(farm.girls)) + _("{/b}{/color} and {color=[c_softpurple]}{b}") + str(farm.count_minions()) + _(" minion") + plural(farm.count_minions()) + _("{/b}{/color} at the farm.")
 
@@ -277,9 +277,9 @@ screen right_menu_city():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton __("{u}V{/u}isit City") style_group "rm":
+        textbutton "探索城市" style_group "rm":
             action Return("districts")
-            tooltip __("Visit the {b}city{/b} of Zan and explore its various locations.")
+            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅"
 
 
 ################
@@ -298,7 +298,7 @@ screen right_menu_slavemarket():
         else:
             text ""
 
-        textbutton __("Slave {u}M{/u}arket") style_group "rm":
+        textbutton "奴隶市场" style_group "rm":
             if screen_is_wide:
                 text_size res_font(20)
             else:
@@ -322,7 +322,7 @@ screen right_menu_shop():
         else:
             text ""
 
-        textbutton __("{u}S{/u}hop") style_group "rm":
+        textbutton "杂货商店" style_group "rm":
             action Return("shop")
             tooltip __("Visit the {b}shop{/b} to buy useful items.\nThe shop currently has {color=[c_yellow]}{b}") + str(len(shop.items)) + __(" item") + plural(len(shop.items)) + __("{/b}{/color} for sale.")
 
@@ -341,7 +341,7 @@ screen right_menu_postings():
         else:
             text ""
 
-        textbutton __("Pos{u}t{/u}ings") style_group "rm":
+        textbutton "公告大厅" style_group "rm":
             action Return("postings")
             tooltip __("See available classes and quests.\n{color=[c_orange_pink]}{b}") + str(len(quest_board.classes)) + __(" class") + plural(len(quest_board.quests), __("es")) + __("{/b}{/color} and {color=[c_orange_pink]}{b}") + str(len(quest_board.quests)) + __(" quest") + plural(len(quest_board.quests)) + __("{/b}{/color} are currently available.")
 
@@ -376,9 +376,9 @@ screen right_menu_endday():
     hbox xalign 1.0 spacing 20:
         text ""
 
-        textbutton __("{u}E{/u}nd Day") style_group "rm":
+        textbutton "开始营业" style_group "rm":
             action Return("end_day")
-            tooltip __("Click here to {b}end the day{/b} and move on with the night's events.")
+            tooltip "点击这个按钮进入深夜，开始营业"
 
 ################
 ## Home - Right menu - Display Advance button
@@ -391,7 +391,7 @@ screen right_menu_advance():
             hbox xalign 1.0 spacing 20:
                 text ""
 
-                textbutton __("Advance") text_size res_font(20) style_group "rm":
+                textbutton "推进剧情" text_size res_font(20) style_group "rm":
 
                     xalign 1.0
 

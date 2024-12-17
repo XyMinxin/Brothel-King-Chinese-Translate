@@ -470,26 +470,26 @@ init -3 python:
                 }
 
     sorter_dict = { # [Caption, attribute, tooltip, reverse order]
-                    "alpha" : ["首字母", "name", "名字", False],
+                    "alpha" : ["名称", "name", "首字母", False],
                     "badge" : ["徽章", "badge", "徽章", True],
-                    "price" : ["价值", "price", "价值", False],
+                    "price" : ["价值", "price", "价值高低", False],
                     "type" : ["种类", "filter", "物品类型", False],
                     "level" : ["等级", "level", "女孩的等级", True],
                     "rank" : ["阶级", "rank", "女孩的阶级", True],
                     "job" : ["职业", "job_sort_value", "女孩的工作", False],
-                    "beauty" : ["Bea.", "beauty", "Beauty", True],
-                    "body" : ["Bod.", "body", "Body", True],
-                    "charm" : ["Cha.", "charm", "Charm", True],
-                    "refinement" : ["Ref.", "refinement", "Refinement", True],
-                    "libido" : ["Lib.", "libido", "Libido", True],
-                    "obedience" : ["Obe.", "obedience", "Obedience", True],
-                    "sensitivity" : ["Sen.", "sensitivity", "Sensitivity", True],
-                    "constitution" : ["Con.", "constitution", "Constitution", True],
-                    "service" : ["Serv.", "service", "Service skill", True],
-                    "sex" : ["Sex", "sex", "Sex skill", True],
-                    "anal" : ["Anal", "anal", "Anal skill", True],
-                    "fetish" : ["Fet.", "fetish", "Fetish skill", True],
-                    "energy" : ["En.", "energy", "energy", False],
+                    "beauty" : ["外貌", "beauty", "女孩的外貌", True],
+                    "body" : ["身材", "body", "女孩的身材", True],
+                    "charm" : ["魅力", "charm", "女孩的魅力", True],
+                    "refinement" : ["优雅", "refinement", "女孩的优雅", True],
+                    "libido" : ["性欲", "libido", "女孩的性欲", True],
+                    "obedience" : ["服从", "obedience", "女孩的服从", True],
+                    "sensitivity" : ["敏感", "sensitivity", "女孩的敏感", True],
+                    "constitution" : ["体质", "constitution", "女孩的体质", True],
+                    "service" : ["侍奉", "service", "女孩的侍奉水平", True],
+                    "sex" : ["性交", "sex", "女孩的性交水平", True],
+                    "anal" : ["肛交", "anal", "女孩的肛交水平", True],
+                    "fetish" : ["调教", "fetish", "女孩的调教水平", True],
+                    "energy" : ["精力", "energy", "女孩的精力", False],
                     "experience" : ["性能力", "training_value", "性训练水平", True],
                 }
 
@@ -1548,7 +1548,7 @@ init python:
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她讨厌什么　", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "fun" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
+                            "取悦" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
                             "{size=+8}笑话{/size}" : [
                                         GirlInteractionTopic("fun", "joke", "普通笑话　　　", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "黄色段子　　　", "free_joke_adult", love_test=15),
@@ -1569,7 +1569,7 @@ init python:
                                         GirlInteractionTopic("fun", "play", "让她和你肛交　", "free_play", act="anal", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "让她和你玩SM　", "free_play", act="fetish", relationship_level=4),
                                         ],
-                            "flirt" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
+                            "调情" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
 
                             "{size=+8}赞美{/size}" : [
                                         GirlInteractionTopic("flirt", "compliment", "赞扬她的美貌", "free_flirt_beauty", relationship_level=1),
@@ -1588,7 +1588,7 @@ init python:
                                                 GirlInteractionTopic("flirt", "chat about sex", "双飞　　　", "free_flirt_sex_act", act="bisexual", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "群交　　　", "free_flirt_sex_act", act="group", love_test=55),
                                                 ],
-                            "give" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
+                            "赠礼" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
                             "{size=+8}赠礼{/size}" : [
                                         GirlInteractionTopic("give", "gift", "送她礼物　　", "free_give_gift", love_test=20),
                                         GirlInteractionTopic("give", "gold", "给她金币　　", "free_give_gold", love_test=20),
