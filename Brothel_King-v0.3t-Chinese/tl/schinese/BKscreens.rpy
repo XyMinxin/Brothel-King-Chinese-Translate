@@ -252,7 +252,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2589
     old "Change this girl's job or let her rest."
-    new "Change this girl's job or let her rest."
+    new "更换她的工作，或让她休息。"
 
     # game/BKscreens.rpy:2356
     old " ({i}shortcut: {u}j{/u}{/i})"
@@ -956,15 +956,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1870
     old "Main skills"
-    new "Main skills"
+    new "主要属性"
 
     # game/BKscreens.rpy:1969
     old "You need to become her friend to see her level for this skill."
-    new "You need to become her friend to see her level for this skill."
+    new "只有和她成为朋友之后才能看到她的这项属性。"
 
     # game/BKscreens.rpy:1989
     old "Sex skills"
-    new "Sex skills"
+    new "性技熟练度"
 
     # game/BKscreens.rpy:2011
     old " acts{/b} for this girl. At least one regular sex act muct be active as well."
@@ -972,91 +972,91 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2098
     old "You need to become her lover to see her level for this skill."
-    new "You need to become her lover to see her level for this skill."
+    new "只有和她成为知己之后才能看到她的这项属性。"
 
     # game/BKscreens.rpy:2116
     old "Traits"
-    new "Traits"
+    new "特质"
 
     # game/BKscreens.rpy:2165
     old "You need to become her boyfriend to see her traits."
-    new "You need to become her boyfriend to see her traits."
+    new "只有和她成为情侣之后才能看到她的这项属性。"
 
     # game/BKscreens.rpy:2172
     old "Upkeep: "
-    new "Upkeep: "
+    new "工资: "
 
     # game/BKscreens.rpy:2187
     old "Her upkeep is currently withdrawn."
-    new "Her upkeep is currently withdrawn."
+    new "她的工资已撤销。"
 
     # game/BKscreens.rpy:2213
     old "You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy."
-    new "You must pay upkeep every day. Higher-end girls will require higher upkeep. Keep it high to keep your girl happy."
+    new "你每天都要支付工资。一分钱一分货，女孩的属性越高需要的工资也就越多。充足的工资才能让女孩们满意。"
 
     # game/BKscreens.rpy:2221
     old "Decrease her upkeep."
-    new "Decrease her upkeep."
+    new "降低工资。"
 
     # game/BKscreens.rpy:2229
     old "Increase her upkeep."
-    new "Increase her upkeep."
+    new "给她加薪。"
 
     # game/BKscreens.rpy:2249
     old "Upkeep"
-    new "Upkeep"
+    new "工资"
 
     # game/BKscreens.rpy:2256
     old " gold (fixed)"
-    new " gold (fixed)"
+    new "金币(固定)"
 
     # game/BKscreens.rpy:2326
     old "Auto-train "
-    new "Auto-train "
+    new "自动训练"
 
     # game/BKscreens.rpy:2329
     old "(ON)"
-    new "(ON)"
+    new "(开启)"
 
     # game/BKscreens.rpy:2332
     old "(OFF)"
-    new "(OFF)"
+    new "(关闭)"
 
     # game/BKscreens.rpy:2527
     old "Bu{u}y{/u}"
-    new "Bu{u}y{/u}"
+    new "购买"
 
     # game/BKscreens.rpy:2565
     old "Hurt"
-    new "Hurt"
+    new "受伤"
 
     # game/BKscreens.rpy:2572
     old "Tired"
-    new "Tired"
+    new "疲惫"
 
     # game/BKscreens.rpy:2580
     old "No {u}j{/u}ob"
-    new "No {u}j{/u}ob"
+    new "无工作"
 
     # game/BKscreens.rpy:2598
     old "Half-Shift"
-    new "Half-Shift"
+    new "半勤"
 
     # game/BKscreens.rpy:2600
     old "Full shift"
-    new "Full shift"
+    new "全勤"
 
     # game/BKscreens.rpy:2605
     old "Sche{u}d{/u}ule"
-    new "Sche{u}d{/u}ule"
+    new "排班表"
 
     # game/BKscreens.rpy:2606
     old "{i}Current schedule: %s{/i}.\nClick to open %s's schedule."
-    new "{i}Current schedule: %s{/i}.\nClick to open %s's schedule."
+    new "{i}今天的排班: %s{/i}。\n点击打开%s的排班表。"
 
     # game/BKscreens.rpy:2613
     old "{u}I{/u}nteract"
-    new "{u}I{/u}nteract"
+    new "互动"
 
     # game/BKscreens.rpy:2616
     old "Interact with your girl. Costs actions."
@@ -1072,11 +1072,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2632
     old "I{u}t{/u}ems"
-    new "I{u}t{/u}ems"
+    new "物品"
 
     # game/BKscreens.rpy:2646
     old "Dismiss"
-    new "Dismiss"
+    new "解雇"
 
     # game/BKscreens.rpy:2651
     old "Release this girl from your custody. ({i}shortcut: {u}Backspace{/u}{/i})"
@@ -1084,35 +1084,35 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2654
     old "Sell"
-    new "Sell"
+    new "出售"
 
     # game/BKscreens.rpy:2665
     old "Level {u}u{/u}p"
-    new "Level {u}u{/u}p"
+    new "升级"
 
     # game/BKscreens.rpy:2676
     old "Per{u}k{/u}s"
-    new "Per{u}k{/u}s"
+    new "天赋"
 
     # game/BKscreens.rpy:2681
     old "Check her current perks"
-    new "Check her current perks"
+    new "查看她的天赋"
 
     # game/BKscreens.rpy:2689
     old "{u}R{/u}ank up"
-    new "{u}R{/u}ank up"
+    new "升阶"
 
     # game/BKscreens.rpy:2694
     old "St{u}a{/u}ts"
-    new "St{u}a{/u}ts"
+    new "状态"
 
     # game/BKscreens.rpy:2698
     old "Click here for useful stats about your girl."
-    new "Click here for useful stats about your girl."
+    new "点击查看她的相关信息。"
 
     # game/BKscreens.rpy:2701
     old "Pics"
-    new "Pics"
+    new "图片"
 
     # game/BKscreens.rpy:2701
     old "Test girl pack with the game's picture generation."
@@ -1124,31 +1124,31 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2721
     old "Friend"
-    new "Friend"
+    new "朋友"
 
     # game/BKscreens.rpy:2723
     old "Love interest"
-    new "Love interest"
+    new "知己"
 
     # game/BKscreens.rpy:2725
     old "Girlfriend"
-    new "Girlfriend"
+    new "情侣"
 
     # game/BKscreens.rpy:2727
     old "Lover"
-    new "Lover"
+    new "爱人"
 
     # game/BKscreens.rpy:2729
     old "Current relationship: "
-    new "Current relationship: "
+    new "现在的关系: "
 
     # game/BKscreens.rpy:2766
     old "Le{u}a{/u}ve farm"
-    new "Le{u}a{/u}ve farm"
+    new "离开农场"
 
     # game/BKscreens.rpy:2766
     old " back to the brothel."
-    new " back to the brothel."
+    new "回到青楼"
 
     # game/BKscreens.rpy:2815
     old " {size=12} (max){/size}"
@@ -1156,7 +1156,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2839
     old "JP"
-    new "JP"
+    new "工作经验"
 
     # game/BKscreens.rpy:2900
     old "Girl Schedule"
@@ -1164,11 +1164,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2934
     old "Click here to check "
-    new "Click here to check "
+    new "点击查看"
 
     # game/BKscreens.rpy:2934
     old "'s profile."
-    new "'s profile."
+    new "的立绘。"
 
     # game/BKscreens.rpy:2956
     old "Exhausted"
@@ -1176,11 +1176,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2958
     old "Hurt ("
-    new "Hurt ("
+    new "受伤 ("
 
     # game/BKscreens.rpy:2958
     old " days)"
-    new " days)"
+    new "天)"
 
     # game/BKscreens.rpy:2986
     old "She will work to the maximum of her abilities."
@@ -1212,7 +1212,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3013
     old "Autorest options"
-    new "Autorest options"
+    new "自动休息设置"
 
     # game/BKscreens.rpy:3025
     old "Save %s's schedule"
@@ -1268,19 +1268,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3439
     old "Yesterday"
-    new "Yesterday"
+    new "昨天"
 
     # game/BKscreens.rpy:3441
     old "Last 7 days"
-    new "Last 7 days"
+    new "上周"
 
     # game/BKscreens.rpy:3443
     old "Last 28 days"
-    new "Last 28 days"
+    new "上个月"
 
     # game/BKscreens.rpy:3445
     old "All time"
-    new "All time"
+    new "总计"
 
     # game/BKscreens.rpy:4239
     old "Build furniture to unlock various upgrades for the brothel."
@@ -1288,7 +1288,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4267
     old " and {b}"
-    new " and {b}"
+    new "和{b}"
 
     # game/BKscreens.rpy:4267
     old "{/b} gold for the girls in the farm"
@@ -1296,7 +1296,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4279
     old "{b}Trainer{/b}"
-    new "{b}Trainer{/b}"
+    new "{b}协助者{/b}"
 
     # game/BKscreens.rpy:4294
     old "Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!"
@@ -2500,19 +2500,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8305
     old "Reset achievements"
-    new "Reset achievements"
+    new "重置成就"
 
     # game/BKscreens.rpy:8308
     old "Reset achievements (%s)"
-    new "Reset achievements (%s)"
+    new "重置成就(%s)"
 
     # game/BKscreens.rpy:8353
     old "Choose a contract"
-    new "Choose a contract"
+    new "选择一份合约"
 
     # game/BKscreens.rpy:8362
     old "Fee: %s gold."
-    new "Fee: %s gold."
+    new "报酬: %s金币。"
 
     # game/BKscreens.rpy:8387
     old "The "
@@ -2520,7 +2520,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8398
     old "Tasks"
-    new "Tasks"
+    new "任务"
 
     # game/BKscreens.rpy:8407
     old "Bonus requirement"
@@ -2548,7 +2548,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8484
     old "%s gold"
-    new "%s gold"
+    new "%s金币"
 
     # game/BKscreens.rpy:8570
     old "{image=tb goal} Chapter %i - Your Goals"
@@ -2556,11 +2556,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8616
     old "Mojo cost:"
-    new "Mojo cost:"
+    new "魔力消耗:"
 
     # game/BKscreens.rpy:8630
     old "Sanity cost:"
-    new "Sanity cost:"
+    new "理智消耗:"
 
     # game/BKscreens.rpy:8635
     old "Target:"
@@ -2572,7 +2572,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8653
     old "Draw a card"
-    new "Draw a card"
+    new "抽一张牌"
 
     # game/BKscreens.rpy:8680
     old "You have used all of your powers this week."
@@ -2604,7 +2604,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8854
     old "Herself"
-    new "Herself"
+    new "她自己"
 
     # game/BKscreens.rpy:8865
     old "You cannot choose the conduit as the target."
@@ -2636,11 +2636,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8960
     old "ON"
-    new "ON"
+    new "开启"
 
     # game/BKscreens.rpy:8960
     old "OFF"
-    new "OFF"
+    new "关闭"
 
     # game/BKscreens.rpy:8990
     old "Cast"
