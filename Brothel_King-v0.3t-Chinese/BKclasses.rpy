@@ -6447,7 +6447,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text1 += "\n" + __(setting_name_dict[s.capitalize()]) + ": " + shown
+                    text1 += "\n" + __(s.capitalize()) + ": " + shown
 
             text1 += "\n"
 
