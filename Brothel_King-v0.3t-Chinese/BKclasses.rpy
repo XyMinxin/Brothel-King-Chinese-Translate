@@ -2035,10 +2035,10 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle job" or act in all_jobs:
-                return self.name + __(" came in.%s %s wanted to be entertained by a {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(self.wants_entertainment), __(pronoun), __(self.fetish.lower()))
+                return self.name + __(" came in.%s %s wanted to be entertained by a {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_entertainment]), __(pronoun), __(trait_name_dict[self.fetish]))
 
             elif act == "idle whore":
-                return self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(self.wants_sex_act), __(pronoun), __(self.fetish.lower()))
+                return self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
 
             # elif act in all_jobs:
             #     desc += self.name + __(" came in.%s\n%s wanted to be entertained by a {b}%s{/b}") % (crz_text, __(pronoun), __(self.wants_entertainment))
@@ -2047,21 +2047,21 @@ init -2 python:
             #     return desc
 
             elif act in all_sex_acts:
-                desc += self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(self.wants_sex_act), __(pronoun), __(self.fetish.lower()))
+                desc += self.name + __("%s %s likes {b}%s{/b}. %s prefers %s girls.") % (crz_text, __(pronoun), __(girl_related_dict[self.wants_sex_act]), __(pronoun), __(trait_name_dict[self.fetish]))
                 if self.wants_sex_act != act:
-                    desc += __(", but settled for {b}%s{/b}") % __(act)
+                    desc += __(", but settled for {b}%s{/b}") % __(girl_related_dict[act])
                 if self.group:
                     desc += __(". %s joined a {color=" + c_purple + "}{b}group of %s{/b}{/color}") % (pronoun, self.group)
                 return desc + "." + crz_text
 
             elif act == "end":
-                desc += self.name + " wanted to be entertained by a {b}%s{/b}, " % self.wants_entertainment
+                desc += self.name + " wanted to be entertained by a {b}%s{/b}, " % girl_related_dict[self.wants_entertainment]
                 if self.got_entertainment:
-                    desc += "and got {b}%s{/b}. " % self.got_entertainment
+                    desc += "and got {b}%s{/b}. " % girl_related_dict[self.got_entertainment]
                 else:
                     desc += "but was left unattended. "
 
-                desc += "%s wanted {b}%s{/b}, " % (pronoun, self.wants_sex_act)
+                desc += "%s wanted {b}%s{/b}, " % (pronoun, girl_related_dict[self.wants_sex_act])
                 if self.got_sex_act:
                     desc += "and got {b}%s{/b}. " % self.got_sex_act
                 else:
@@ -4511,7 +4511,7 @@ init -2 python:
                 return desc
 
             if brothel_firstvisit:
-                return "修建一个{b}" + self.name + "{/b}让{b}" + self.job + "{/b}服务客人。"
+                return "修建一个{b}" + self.name + "{/b}让{b}" + girl_related_dict[self.job] + "{/b}服务客人。"
             elif self.level == 0:
                 return "修建一个{b}" + self.name + "{/b}需要花费{b}" + str(self.get_price()) + "金币{/b}。"
             elif self.level < district.rank:
@@ -4809,7 +4809,7 @@ init -2 python:
 
                 boost *= girl.get_effect("boost", "class results") * game.get_diff_setting("rewards")
 
-                changes = [(stat, round_int(girl.change_stat(stat, renpy.random.randint(_min, _max)*boost, custom_cap = self.stat_cap))) for stat, _min, _max in self.bonuses]
+                changes = [(girl_related_dict[stat], round_int(girl.change_stat(stat, renpy.random.randint(_min, _max)*boost, custom_cap = self.stat_cap))) for stat, _min, _max in self.bonuses]
 
             elif self.type == "quest":
 
@@ -5314,9 +5314,9 @@ init -2 python:
                                     break
                                 if text1:
                                     text1 += __(" or ")
-                                text1 += __(cond) + " (" + __(pref) + ")"
+                                text1 += girl_related_dict[cond] + " (" + girl_related_dict[pref] + ")"
                             else:
-                                return False, __("You cannot train ") + __(self.act) + __(" yet. Requirements: ") + text1
+                                return False, __("You cannot train ") + girl_related_dict[self.act] + __(" yet. Requirements: ") + text1
 
                     elif self.type == "magic":
                         if magic_training_test_dict[self.act]:
@@ -5325,42 +5325,42 @@ init -2 python:
                                     break
                                 if text1:
                                     text1 += __(" or ")
-                                text1 += __(cond) + " (" + __(pref) + ")"
+                                text1 += girl_related_dict[cond] + " (" + girl_related_dict[pref] + ")"
                             else:
-                                return False, __("You cannot train ") + __(self.act) + __(" yet. Requirements: ") + text1
+                                return False, __("You cannot train ") + girl_related_dict[self.act] + __(" yet. Requirements: ") + text1
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "You do not have enough interactions left for advanced training."
+                            return False, "你的行动力不足以展开高级培训。"
 
                         if not girl.personality_unlock[self.act]:
                             return False, __("You need to train a girl at least once before you can access advanced training.")
 
                 elif mode == "master_bedroom_add":
                     if not brothel.master_bedroom.can_have_girl():
-                        return False, "The master bedroom is already full."
+                        return False, "私人指导名额已经满了。"
 
             if MC.interactions < 1 and self.AP_cost > 0 and not free:
-                return False, "You have no interactions left for today."
+                return False, "你今天没有行动次数了。"
             elif MC.interactions < self.AP_cost and not free:
-                return False, "You do not have enough interactions left for this."
+                return False, "你没有足够的行动力来做这个。"
             elif self.get_gold_cost() and MC.gold < self.get_gold_cost():
-                return False, "You do not have enough money to pay for this training (" + str(self.get_gold_cost()) + "{image=img_gold})."
+                return False, "你没有足够的钱来报名培训 (" + str(self.get_gold_cost()) + "{image=img_gold})."
             elif self.group == "train" and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot train a girl more than once per day."
+                return False, "一天只能训练一个女孩一次。"
             elif self.group in ("reward", "discipline") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot reward or discipline a girl more than once per day."
+                return False, "一天只能奖励或惩罚一个女孩一次。"
             elif self.group in ("gold", "gift", "sex_reward", "rape", "offer") and girl.MC_interact_counters[self.group] >= 1:
-                return False, "You cannot do that more than once per day."
+                return False, "一天只能做一次。"
             elif self.group == "offer" and len(MC.girls) >= brothel.bedrooms:
-                return False, "You don't have room in your brothel for another girl."
+                return False, "你的青楼满了，容不下另一个女孩。"
             elif self.group and girl.MC_interact_counters[self.group] >= 3:
-                return False, "You cannot " + self.group + " more than 3 times a day with a girl."
+                return False, "一天最多和一个女孩" + self.group + "3次。"
             elif self.label == "slave_master_bedroom_add" and not brothel.master_bedroom.can_have_girl():
-                return False, "The master bedroom is already full."
+                return False, "私人指导名额已经满了。"
 
             if self.condition == "free-form":
-                return True, "In free-form training, you will be able to switch between different sex acts she is comfortable with. Only the {b}last chosen sex act{/b} will actually be trained."
+                return True, "在自由形式的训练中，你将能够在她感到舒服的不同的性行为之间切换。只有{b}最后选择的性行为{/b}才会真正接受训练。"
 
             return True, ""
 
@@ -6447,7 +6447,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text1 += "\n" + __(s.capitalize()) + ": " + shown
+                    text1 += "\n" + __(setting_name_dict[s.capitalize()]) + ": " + shown
 
             text1 += "\n"
 
@@ -6458,16 +6458,16 @@ init -2 python:
                     else:
                         shown = get_plus_rating(brk[a], "pref")
 
-                    text1 += "\n" + __(a.capitalize()) + " preference: " + shown
+                    text1 += "\n" + __(a.capitalize()) + "喜好: " + shown
                 else:
                     raise AssertionError("Unexpected breaking value for " + a + ". Please report this bug.")
 
             if inter:
-                text1 += "\nGirl interactions: " + str(inter)
+                text1 += "\n女孩的互动: " + str(inter)
                 girl.interactions += inter
 
             if virgin:
-                text1 += "\n" + girl.fullname + " has lost her virginity with you."
+                text1 += "\n" + girl.fullname + "把她的处女献给了你。"
 
             text1 += "\n"
 
@@ -6480,18 +6480,18 @@ init -2 python:
 
             if debug_mode:
                 if gd:
-                    text1 += "\nGood: " + str(gd)
+                    text1 += "\n善良: " + str(gd)
                 if ne:
-                    text1 += "\nNeutral: " + str(ne)
+                    text1 += "\n中立: " + str(ne)
                 if ev:
-                    text1 += "\nEvil: " + str(ev)
+                    text1 += "\n邪恶: " + str(ev)
             if p:
                 MC.change_prestige(p)
-                text1 += "\nPrestige: " + str(p)
+                text1 += "\n声望: " + str(p)
 
             if not text2:
-                text1 = "No changes"
-            renpy.call_screen("OK_screen", __("[girl.fullname] - Interaction results"), text1, dark=True, pic=girl.portrait, always_scrollbar=True)
+                text1 = "没有变化"
+            renpy.call_screen("OK_screen", __("[girl.fullname] - 互动结果"), text1, dark=True, pic=girl.portrait, always_scrollbar=True)
 
             return
 
@@ -7273,22 +7273,22 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}Traits{/b}: " + and_text([t.name for t in target], " or ")
+                return "{b}特质{/b}: " + and_text([trait_name_dict[t.name] for t in target], "或")
 
             elif spe == "perk":
-                return "{b}Perks{/b}: " + target.name
+                return "{b}天赋{/b}: " + target.name
 
             elif spe == "fix":
-                return "{b}Positive fixations{/b}: " + and_text([f.name.capitalize() for f in target], " or ")
+                return "{b}正面癖好{/b}: " + and_text([girl_related_dict[f.name.capitalize()] for f in target], " or ")
 
             elif spe == "farm":
-                return "{b}Weakness{/b}: " + target.capitalize()
+                return "{b}弱点{/b}: " + farm_related_dict[target.capitalize()]
 
             elif spe == "item":
-                return "{b}Must wear{/b}: " + target.name
+                return "{b}衣着要求{/b}: " + setting_name_dict[target.name]
 
             elif spe == "girls":
-                return "{b}Send two girls{/b} (extra pay)"
+                return "{b}派遣两个女孩{/b} (额外报酬)"
 
         def get_value(self, raw=False, no_special=False):
             r = self.base_value + sum(tsk.value for tsk in self.tasks)
@@ -7476,11 +7476,11 @@ init -2 python:
 
             for req in self.requirements:
                 if req.startswith("job"):
-                    r.append("{b}"+ __(req[4:].capitalize()) + "{/b} %s or better" % ("{image=img_star}" * self.limits[req]))
+                    r.append("{b}"+ __(girl_related_dict[req[4:].capitalize()]) + "{/b} %s 或更好的" % ("{image=img_star}" * self.limits[req]))
                 elif req.startswith("skill"):
-                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b} or better")
+                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b}或更好的")
                 elif req.startswith("pref"):
-                    r.append("{b}" + __(req[5:].capitalize()) + " preference: " + self.limits[req].capitalize() + "{/b} or better")
+                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + "性癖: " + girl_related_dict[self.limits[req].capitalize()] + "{/b}或更好的")
 
             return r
 

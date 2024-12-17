@@ -757,7 +757,7 @@ init -2 python:
 
                     if self.get_stat(stat) < target:
                         if use_desc:
-                            return False, sex_act.capitalize() + " cannot be activated.\n" + event_color["a little bad"] % ("Her {b}" + stat.lower() + "{/b} is too low (min: " + str(target) + ").")
+                            return False, girl_related_dict[sex_act.capitalize()] + " 无法激活。\n" + event_color["a little bad"] % ("她的 {b}" + girl_related_dict[stat.lower()] + "{/b} 属性太低了 (最低：" + str(target) + ")。")
                         return False
 
             if self.get_effect("special", "minimum preference", raw=True):
@@ -767,7 +767,7 @@ init -2 python:
 
             if not compare_preference(self, sex_act, min_pref): # Means the girl is very reluctant or worse
                 if use_desc:
-                    return False, sex_act.capitalize() + " cannot be activated.\n" + event_color["a little bad"] % ("Her preference for {b}" + sex_act.lower() + "{/b} acts is too low. She requires more training.")
+                    return False, girl_related_dict[sex_act.capitalize()] + " 无法激活。\n" + event_color["a little bad"] % ("她对 {b}" + girl_related_dict[sex_act.lower()] + "{/b} 的接受能力太低了。她需要训练来适应。")
                 return False
 
             if use_desc:
@@ -859,7 +859,7 @@ init -2 python:
             for sex_act in all_sex_acts:
                 if self.does[sex_act] and not self.will_do_sex_act(sex_act):
                     self.does[sex_act] = False
-                    notify(self.fullname + " can no longer do " + sex_act + ".", pic=self.portrait)
+                    notify(self.fullname + " 不能再继续" + girl_related_dict[sex_act] + "了。", pic=self.portrait)
 
 
         def activate_sex_act(self, sex_act):
@@ -1371,7 +1371,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_aaah, "sound")
-                            renpy.say("", "You have discovered " + self.name + "'s fixation with " + name + ".")
+                            renpy.say("", "你发现 " + self.name + "对 " + girl_related_dict[name] + "有些迷恋。")
                 return "pos"
             elif r == "neg":
                 if unlock:
@@ -1379,7 +1379,7 @@ init -2 python:
                         self.personality_unlock[name] = True
                         if feedback:
                             renpy.play(s_surprise, "sound")
-                            renpy.say("", "You have discovered " + self.name + "'s disgust for " + name + ".")
+                            renpy.say("", "你发现 " + self.name + "对 " + girl_related_dict[name] + "有些厌恶。")
                 return "neg"
             else:
                 return False
@@ -2582,13 +2582,13 @@ init -2 python:
                 resting_changes.add("\n{color=[c_green]}Health{/color}: %s" % plus_text(r, color_scheme="standard"))
 
                 if case == "healthy":
-                    resting_changes.add("(full recovery)", "header", col="good", separator="\n")
+                    resting_changes.add("(完全康复)", "header", col="good", separator="\n")
                     if context == "farm":
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and can go back to work or training.{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，可以回去工作或者接受训练了.{/color}"
                     elif self.job:
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and can go back to work as a " + self.job + ".{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，可以继续作为 " + girl_related_dict[self.job] + "工作了.{/color}"
                     else:
-                        resting_text += "\n{color=[c_emerald]}She is now fully recovered and went back to resting.{/color}"
+                        resting_text += "\n{color=[c_emerald]}她已经完全康复，并继续在房间里休息.{/color}"
 
             x = (25 + self.get_stat("constitution")/4) * self.get_effect("boost", "energy when resting") + self.get_effect("change", "energy when resting")
 
@@ -2617,11 +2617,11 @@ init -2 python:
             if case == "recovered":
                 resting_changes.add("(fully rested)", "header", col="good", separator="\n")
                 if context == "farm":
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and can go back to her training.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，可以继续训练了.{/color}"
                 elif self.job:
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and can go back to work as a " + self.job + ".{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，可以继续作为" + girl_related_dict[self.job] + "工作了.{/color}"
                 else:
-                    resting_text += "\n{color=[c_emerald]}She is now fully rested and is waiting for a job assignment.{/color}"
+                    resting_text += "\n{color=[c_emerald]}她已经完全休息好了，正在等待分配工作.{/color}"
 
             return resting_text, resting_changes
 
@@ -3264,7 +3264,7 @@ init -2 python:
             while self.ready_to_job_up(job):
                 self.job_up(job, announcement_delay=announcement_delay)
 
-            if change and not silent: notify(job.capitalize() + " JP: %s" % plus_text(change, color_scheme="jp"), pic=self.portrait) # Experimental
+            if change and not silent: notify(girl_related_dict[job.capitalize()] + " 职业经验：%s" % plus_text(change, color_scheme="jp"), pic=self.portrait) # Experimental
 
             return change
 
@@ -4197,7 +4197,7 @@ init -2 python:
                             self.acquire_perk(orgy_perk, forced=True)
 
             if not silent:
-                debug_notify("Changing " + act + " preference (%s), value: %i" % (self.fullname, nb), pic=self.portrait)
+                debug_notify("改变" + girl_related_dict[act] + "偏好(%s)，值：%i" % (self.fullname, nb), pic=self.portrait)
 
             return nb
 
@@ -5126,15 +5126,15 @@ init -2 python:
                 neg_unlocked = []
 
                 for act in self.pos_acts:
-                    if act in self.notebook_unlocks:
-                        if act in self.neg_acts: # Ambivalent acts
-                            amb_unlocked.append(act)
+                    if self.personality_unlock[act] or always_show_personality[self]:
+                        if act in self.neg_acts:
+                            amb_unlocked.append(girl_related_dict[act])
                         else:
-                            pos_unlocked.append(act)
+                            pos_unlocked.append(girl_related_dict[act])
 
                 for act in self.neg_acts:
-                    if act in self.notebook_unlocks and act not in self.pos_acts:
-                        neg_unlocked.append(act)
+                    if (self.personality_unlock[act] and act not in self.pos_acts) or always_show_personality[self]:
+                        neg_unlocked.append(girl_related_dict[act])
 
                 if pos_unlocked:
                     sex_text += "She has a weakness for {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} acts"
@@ -5155,8 +5155,8 @@ init -2 python:
                 if sex_text:
                     sex_text += "\n\n"
 
-                pos_fix = [fix.name for fix in self.pos_fixations if fix.name in self.notebook_unlocks]
-                neg_fix = [fix.name for fix in self.neg_fixations if fix.name in self.notebook_unlocks]
+                pos_fix = [girl_related_dict[fix.name] for fix in self.pos_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
+                neg_fix = [girl_related_dict[fix.name] for fix in self.neg_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
 
                 if pos_fix:
                     sex_text += "She is especially fascinated by {color=[c_emerald]}" + and_text(pos_fix) + "{/color}. "

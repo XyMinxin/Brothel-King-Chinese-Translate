@@ -917,13 +917,13 @@ init -3 python:
             stat, nb = c
 
             if stat in ("rep", "reputation"):
-                change_log.add("Reputation: %i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
+                change_log.add("声望：%i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
 
             elif stat == "gold":
-                change_log.add("Gold: {image=img_gold} %s" % plus_text(int(nb), "gold"))
+                change_log.add("金币：{image=img_gold} %s" % plus_text(int(nb), "gold"))
 
             else:
-                change_log.add("%s: %i/%i (%s)" % ((__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
+                change_log.add("%s: %i/%i (%s)" % ((__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s技能变化" % girl_related_dict[act.capitalize()])
 
         return change_log
 
@@ -1345,10 +1345,10 @@ init -3 python:
         elif nb < 0:
             return event_color[neg_color] % (neg_marker + nb_txt)
 
-    def and_text(li, txt=" and ", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
+    def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
 
         if prune_empty:
-            li = [x for x in li if x]
+            li = [tl_cn(x, [girl_related_dict, farm_related_dict]) for x in li if x]
 
         if not li:
             return if_none
@@ -1840,12 +1840,12 @@ init -3 python:
                         pickpocket_boost = 0.1
                         caught_chance = 0.15
 
-        change_log.add("Customer satisfaction: %s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="Customer satisfaction")
+        change_log.add("顾客满意度：%s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="顾客满意度")
 
         ## STEP 3: Calculate stat bonus
 
         stat_bonus = mean_int(girl.test_stats(perform_job_dict[act + "_stats"], cust_diff) for girl in girls) # // len(girls)
-        ttip = "Skill modifier (%s): %s ({i}%s{/i})" % (act, plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], ", "))
+        ttip = "属性提高 (%s)：%s ({i}%s{/i})" % (girl_related_dict[act], plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], "、"))
 
         sensitivity_bonus = 0
         if act in all_sex_acts:
@@ -1870,48 +1870,48 @@ init -3 python:
 
 
         if sensitivity_bonus:
-            ttip += "\nSensitivity modifier: %s" % plus_text(sensitivity_bonus)
+            ttip += "\n敏感加成：%s" % plus_text(sensitivity_bonus)
 
 
         ## STEP 4: Get job level bonus
 
         job_bonus = mean_int(girl.job_level[act] for girl in girls) # // len(girls)
-        ttip += "\nJob level modifier (%s): %s" % (act, plus_text(job_bonus))
+        ttip += "\n工作等级加成 (%s)：%s" % (girl_related_dict[act], plus_text(job_bonus))
 
-        change_log.add("Girl skills: %s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="Skill bonuses")
+        change_log.add("女孩技能：%s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
 
         ## STEP 5: roll dice
 
         d = dice(6)
-        ttip = "Represents her performance on a given interaction. She rolled a %i" % d
+        ttip = "表示她在给定交互中的表现。她丢出了%i点" % d
 
         # re-rolls (traits/perks)
 
         if d == 1:
-            ttip += " (" + event_color["bad"] % "critical failure" + ")"
+            ttip += " (" + event_color["bad"] % "大失败" + ")"
 
             #Reroll chance
             if girls[0].get_effect("reroll", "critical failure") > 0 or (girls[0].get_effect("reroll", "job critical failure") > 0 and act in all_jobs) or (girls[0].get_effect("reroll", "whore critical failure") > 0 and act in all_sex_acts):
                 d = dice(6)
                 specials.append("reroll")
 
-                ttip += " (" + event_color["bad"] % "critical failure" + "). She rerolled a %i" % d
+                ttip += " (" + event_color["bad"] % "大失败" + ")。她摇了%i" % d
 
         if d == 2:
             if girls[0].get_effect("special", "unlucky"):
                 d = 1
                 specials.append("unlucky")
 
-                ttip += ", but it turned to a 1 because she is unlucky (" + event_color["bad"] % "critical failure" + ")"
+                ttip += "，但是因为她运气不好，点数变成了1 (" + event_color["bad"] % "大失败" + ")"
 
         if d == 5:
             if girls[0].get_effect("special", "lucky"):
                 d = 6
                 specials.append("lucky")
 
-                ttip += ", but it turned to a 6 because she is lucky"
+                ttip += "，因为她很幸运，点数变成了6"
 
-        ttip += "."
+        ttip += "。"
 
         roll = roll_dict[d]
 
@@ -2354,11 +2354,11 @@ init -3 python:
 
         for girl in girls:
             if act in all_jobs:
-                job_ttip = list_text([(j.capitalize() + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
+                job_ttip = list_text([(girl_related_dict[j.capitalize()] + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
             elif act in all_sex_acts:
-                job_ttip = list_text([(a.capitalize() + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
+                job_ttip = list_text([(girl_related_dict[a.capitalize()] + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s changes" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s is a level %i %s.\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
+            change_log.add("%s 今夜收获" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个等级%i的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2368,7 +2368,7 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("LEVEL UP", col="good", ttip = girl.fullname + " is ready to level up (%i -> %i)" % (girl.level, girl.level+1))
+                change_log.add("等级提升", col="good", ttip = girl.fullname + " 准备升级 (%i -> %i)" % (girl.level, girl.level+1))
 
             change_log.add("{color=[c_lightgreen]}XP{/color}: %i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "Experience")
 
@@ -2380,7 +2380,7 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("JOB SKILL UP", "header", col=c_orange)
+                change_log.add("工作技能等级提升", "header", col=c_orange)
 
             change_log.add("{color=[c_orange]}JP{/color}: %i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "Job points")
 
@@ -2696,7 +2696,7 @@ init -3 python:
                         text1 += girl.name + __(" blushes bright red and looks very uncomfortable with ") + __(long_act_description[s_act]) + __(". However, her nipples are erect and she becomes noticeably wet. {color=[c_yellow]}It's like she both loves and hates it.{/color}")
                         ev_sound = s_sigh
                         log.add_report(girl.name + __(" is {color=[c_darkgold]}ambivalent{/color} about ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Ambivalent act discovered:\n%s{/color}" % (c_yellow, s_act.capitalize())
+                        chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, girl_related_dict[s_act])
 
                     elif pos_reaction:
                         if act == "service":
@@ -2709,13 +2709,13 @@ init -3 python:
                         text1 += __("\n{color=[c_green]}It seems that she loves ") + __(long_act_description[s_act]) + ".{/color}"
                         ev_sound = s_mmmh
                         log.add_report(girl.name + __(" is {color=[c_green]}sensitive{/color} to ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Positive act discovered:\n%s{/color}" % (c_green, s_act.capitalize())
+                        chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, girl_related_dict[s_act])
 
                     elif neg_reaction:
                         text1 += girl.name + __(" acts very uncomfortable around the customer") + plur + __(", something is bothering her. {color=[c_red]}She seems to dislike ") + __(long_act_description[act]) + ".{/color}"
                         ev_sound = s_surprise
                         log.add_report(girl.name + __(" is {color=[c_red]}uncomfortable{/color} with ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Negative act discovered:\n%s{/color}" % (c_red, s_act.capitalize())
+                        chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, girl_related_dict[s_act])
 
                     if pos_reaction or neg_reaction:
                         events.append(Event(pic = work_pic, char = girl.char, text = text1, changes=chg, sound = ev_sound, type = ev_type))
@@ -4222,7 +4222,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + __(" came to the brothel. He wants to be attended to by a ") + __(c.wants_entertainment) + __(" and likes ") + __(c.wants_sex_act) + ".")
+            log.add_report(c.name + __(" came to the brothel. He wants to be attended to by a ") + __(girl_related_dict[c.wants_entertainment]) + __(" and likes ") + __(girl_related_dict[c.wants_sex_act]) + ".")
 
         return cust_list, cust_text, cust_nb_dict
 
