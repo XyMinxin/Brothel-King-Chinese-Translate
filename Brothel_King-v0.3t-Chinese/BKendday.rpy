@@ -194,7 +194,7 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
                     if isinstance(changes, NightChangeLog):
                         use night_right(changes)
                     else:
-                        text "Results"
+                        text __("Results")
                         text changes size res_font(18)
 
 
@@ -262,10 +262,10 @@ screen night_old(event_pic = None, event_bg = None, changes = "", has_log = True
                     if debug_mode and renpy.get_screen("say"):
                         frame background c_ui_dark:
                             has vbox
-                            text "Attempt: " + str(game.last_pic["attempts"]) size res_font(14)
-                            text "Search tags: " + and_text(game.last_pic["tags"]) size res_font(14)
-                            text "AND tags: " + and_text(game.last_pic["and_tags"]) size res_font(14)
-                            text "AND NOT tags: " + and_text(game.last_pic["not_tags"]) size res_font(14)
+                            text __("Attempt: ") + str(game.last_pic["attempts"]) size res_font(14)
+                            text __("Search tags: ") + and_text(game.last_pic["tags"]) size res_font(14)
+                            text __("AND tags: ") + and_text(game.last_pic["and_tags"]) size res_font(14)
+                            text __("AND NOT tags: ") + and_text(game.last_pic["not_tags"]) size res_font(14)
 
         if renpy.get_screen("say"):
             frame:
@@ -304,7 +304,7 @@ screen night_old(event_pic = None, event_bg = None, changes = "", has_log = True
                 if isinstance(changes, NightChangeLog):
                     use night_right(changes)
                 else:
-                    text "Results"
+                    text __("Results")
                     text changes size res_font(18)
 
 screen night_log(log, use_filter=False):
@@ -316,7 +316,7 @@ screen night_log(log, use_filter=False):
         if use_filter:
             frame background c_ui_light xfill True:
                 has hbox
-                text "Filter: " size res_font(22) color c_brown
+                text __("Filter: ") size res_font(22) color c_brown
                 input size res_font(22) color c_darkorange changed(log.filter)
         viewport:
             mousewheel True

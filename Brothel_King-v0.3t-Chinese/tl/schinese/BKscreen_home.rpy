@@ -98,3 +98,99 @@ translate schinese strings:
     old "Advance to the next game chapter, at the cost of %s gold."
     new "花费 %s 金币,推进到下一章."
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKscreen_home.rpy:116
+    old "Access options from your active mods (%s)."
+    new "Access options from your active mods (%s)."
+
+    # game/BKscreen_home.rpy:151
+    old "Your character is ready to level up."
+    new "Your character is ready to level up."
+
+    # game/BKscreen_home.rpy:176
+    old "{u}C{/u}haracter"
+    new "{u}C{/u}haracter"
+
+    # game/BKscreen_home.rpy:207
+    old "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
+    new "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
+
+    # game/BKscreen_home.rpy:213
+    old "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
+    new "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
+
+    # game/BKscreen_home.rpy:226
+    old "{u}G{/u}irls"
+    new "{u}G{/u}irls"
+
+    # game/BKscreen_home.rpy:241
+    old "The carpenter stands ready to build new furniture for you."
+    new "The carpenter stands ready to build new furniture for you."
+
+    # game/BKscreen_home.rpy:249
+    old "{u}B{/u}rothel"
+    new "{u}B{/u}rothel"
+
+    # game/BKscreen_home.rpy:260
+    old "{u}F{/u}arm"
+    new "{u}F{/u}arm"
+
+    # game/BKscreen_home.rpy:262
+    old "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}"
+    new "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}"
+
+    # game/BKscreen_home.rpy:262
+    old "{/b}{/color} and {color=[c_softpurple]}{b}"
+    new "{/b}{/color} and {color=[c_softpurple]}{b}"
+
+    # game/BKscreen_home.rpy:262
+    old " minion"
+    new " minion"
+
+    # game/BKscreen_home.rpy:262
+    old "{/b}{/color} at the farm."
+    new "{/b}{/color} at the farm."
+
+    # game/BKscreen_home.rpy:280
+    old "{u}V{/u}isit City"
+    new "{u}V{/u}isit City"
+
+    # game/BKscreen_home.rpy:282
+    old "Visit the {b}city{/b} of Zan and explore its various locations."
+    new "Visit the {b}city{/b} of Zan and explore its various locations."
+
+    # game/BKscreen_home.rpy:301
+    old "Slave {u}M{/u}arket"
+    new "Slave {u}M{/u}arket"
+
+    # game/BKscreen_home.rpy:325
+    old "{u}S{/u}hop"
+    new "{u}S{/u}hop"
+
+    # game/BKscreen_home.rpy:337
+    old "New classes and tasks are available."
+    new "New classes and tasks are available."
+
+    # game/BKscreen_home.rpy:344
+    old "Pos{u}t{/u}ings"
+    new "Pos{u}t{/u}ings"
+
+    # game/BKscreen_home.rpy:379
+    old "{u}E{/u}nd Day"
+    new "{u}E{/u}nd Day"
+
+    # game/BKscreen_home.rpy:381
+    old "Click here to {b}end the day{/b} and move on with the night's events."
+    new "Click here to {b}end the day{/b} and move on with the night's events."
+
+    # game/BKscreen_home.rpy:394
+    old "Advance"
+    new "Advance"
+
+    # game/BKscreen_home.rpy:403
+    old "You do not have enough gold to advance."
+    new "You do not have enough gold to advance."
+

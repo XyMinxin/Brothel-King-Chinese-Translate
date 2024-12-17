@@ -1710,7 +1710,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                                 if pic in persistent.pic_ignore_list:
                                     text "IGNORED" align (0.5, 0.5) color c_red size res_font(16) drop_shadow (2, 2)
                                 if persistent.debug_pic_counter and gal_type == "gp":
-                                    text _("Used %s times" % persistent.debug_pic_counter_dict[pic]) align (0.5, 1.0) size int(config.screen_height*0.02) #?
+                                    text __("Used %s times" % persistent.debug_pic_counter_dict[pic]) align (0.5, 1.0) size int(config.screen_height*0.02) #?
 
 
             $ max_page = (len(gal.blist)-1) // shown_pics
@@ -1755,7 +1755,7 @@ screen _gallery:
 
     if locked:
         add "#000"
-        text _("Image [index] of [count] locked.") align (0.5, 0.5)
+        text __("Image [index] of [count] locked.") align (0.5, 0.5)
     else:
         add "#000"
 
@@ -1763,7 +1763,7 @@ screen _gallery:
             add d xalign 0.5 yalign 1.0 fit "contain"
 
             if gallery_type == "gp" and d.child.children[0].imgname in persistent.pic_ignore_list:
-                text "IGNORED" align (0.5, 0.5) color c_red size res_font(48) drop_shadow (4, 4)
+                text __("IGNORED") align (0.5, 0.5) color c_red size res_font(48) drop_shadow (4, 4)
 
     if gallery.slideshow:
         timer gallery.slideshow_delay action Return("next") repeat True
@@ -1797,12 +1797,12 @@ screen gallery_navigation:
             key ['K_DELETE'] action Function(toggle_ignore_pic, d.child.children[0])
 
         if gallery_type == "ev":
-            textbutton _("prev") action gallery.Previous(unlocked=True)
-            textbutton _("next") action gallery.Next(unlocked=True)
-            textbutton _("slideshow") action gallery.ToggleSlideshow()
+            textbutton __("prev") action gallery.Previous(unlocked=True)
+            textbutton __("next") action gallery.Next(unlocked=True)
+            textbutton __("slideshow") action gallery.ToggleSlideshow()
         else:
             text str(d.child.children[0].imgname) size res_font(14)
-        textbutton _("return") action gallery.Return()
+        textbutton __("return") action gallery.Return()
 
     python:
         style.gallery = Style(style.default)

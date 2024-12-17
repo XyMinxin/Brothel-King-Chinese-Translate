@@ -222,3 +222,11 @@ translate schinese strings:
     old "The Virgin Whore"
     new "The Virgin Whore"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKperks.rpy:88
+    old "Exhibitionist"
+    new "Exhibitionist"
+

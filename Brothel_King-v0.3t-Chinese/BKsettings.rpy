@@ -481,7 +481,7 @@ init -10 python:
                         "Misc" : "其他",
                         "misc" : "其他",
                         
-                    ## 日期
+                    ## 日期 ##
                         "Monday" : "星期一",
                         "Tuesday" : "星期二",
                         "Wednesday" : "星期三",

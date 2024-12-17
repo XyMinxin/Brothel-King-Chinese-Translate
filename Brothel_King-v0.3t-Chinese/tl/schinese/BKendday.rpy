@@ -120,3 +120,39 @@ translate schinese strings:
     old ", breaking even. You made {image=img_gold_24} {b}0{/b}."
     new "，收支平衡。你盈利了{image=img_gold_24} {b}0{/b}."
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKendday.rpy:183
+    old "Hide log"
+    new "Hide log"
+
+    # game/BKendday.rpy:186
+    old "Show log"
+    new "Show log"
+
+    # game/BKendday.rpy:197
+    old "Results"
+    new "Results"
+
+    # game/BKendday.rpy:265
+    old "Attempt: "
+    new "Attempt: "
+
+    # game/BKendday.rpy:266
+    old "Search tags: "
+    new "Search tags: "
+
+    # game/BKendday.rpy:267
+    old "AND tags: "
+    new "AND tags: "
+
+    # game/BKendday.rpy:268
+    old "AND NOT tags: "
+    new "AND NOT tags: "
+
+    # game/BKendday.rpy:319
+    old "Filter: "
+    new "Filter: "
+

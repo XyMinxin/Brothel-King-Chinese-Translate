@@ -22,3 +22,27 @@ translate schinese strings:
     old "return"
     new "返回"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKdeclarations.rpy:1603
+    old "CG - Game"
+    new "CG - Game"
+
+    # game/BKdeclarations.rpy:1605
+    old "CG - Girl packs"
+    new "CG - Girl packs"
+
+    # game/BKdeclarations.rpy:1725
+    old "Show less"
+    new "Show less"
+
+    # game/BKdeclarations.rpy:1728
+    old "Show more"
+    new "Show more"
+
+    # game/BKdeclarations.rpy:1766
+    old "IGNORED"
+    new "IGNORED"
+

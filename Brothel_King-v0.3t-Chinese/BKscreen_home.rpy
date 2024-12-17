@@ -148,7 +148,7 @@ screen right_menu_mc():
         # Display alert for level up
         if MC.skill_points > 0 and persistent.home_screen_notifications != 2:
 
-            button style "rm_alert" action NullAction() tooltip "Your character is ready to level up." hovered SetDict(seen_alerts, "MC", True):
+            button style "rm_alert" action NullAction() tooltip __("Your character is ready to level up.") hovered SetDict(seen_alerts, "MC", True):
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
 
                 if not seen_alerts["MC"] and persistent.home_screen_notifications == 0:
@@ -204,13 +204,13 @@ screen right_menu_girls():
     hbox xalign 1.0 spacing 20:
 
         if b:
-            $ ttip = "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
+            $ ttip = _("One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}.")
             button style "rm_alert" action NullAction() tooltip ttip hovered (SetDict(seen_alerts, "girls", True)):
                 add ProportionalScale("UI/status/levelup.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["girls"] and persistent.home_screen_notifications == 0:
                     at blink
         elif r:
-            $ ttip = "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
+            $ ttip = _("One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}")
             button style "rm_alert" action NullAction() tooltip ttip hovered (SetDict(seen_alerts, "girls", True)):
                 add ProportionalScale("UI/status/rankup.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["girls"] and persistent.home_screen_notifications == 0:
@@ -238,7 +238,7 @@ screen right_menu_brothel():
     hbox xalign 1.0 spacing 20:
 
         if NPC_carpenter.active and not brothel.current_building and brothel.can_build_anything() and persistent.home_screen_notifications != 2:
-            button style "rm_alert" action NullAction() tooltip "The carpenter stands ready to build new furniture for you." hovered (SetDict(seen_alerts, "carpenter", True)):
+            button style "rm_alert" action NullAction() tooltip __("The carpenter stands ready to build new furniture for you.") hovered (SetDict(seen_alerts, "carpenter", True)):
                 add ProportionalScale("UI/carpenter.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["carpenter"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -259,7 +259,7 @@ screen right_menu_farm():
         text ""
         textbutton "奴隶农场" style_group "rm":
             action Return("farm")
-            tooltip "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}" + str(len(farm.girls)) + " girl" + plural(len(farm.girls)) + "{/b}{/color} and {color=[c_softpurple]}{b}" + str(farm.count_minions()) + " minion" + plural(farm.count_minions()) + "{/b}{/color} at the farm."
+            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + _(" girl") + plural(len(farm.girls)) + _("{/b}{/color} and {color=[c_softpurple]}{b}") + str(farm.count_minions()) + _(" minion") + plural(farm.count_minions()) + _("{/b}{/color} at the farm.")
 
 
 ################
@@ -334,7 +334,7 @@ screen right_menu_postings():
 
     hbox xalign 1.0 spacing 20:
         if quest_board.updated and persistent.home_screen_notifications != 2:
-            button style "rm_alert" action NullAction() tooltip "New classes and tasks are available." hovered SetDict(seen_alerts, "postings", True):
+            button style "rm_alert" action NullAction() tooltip __("New classes and tasks are available.") hovered SetDict(seen_alerts, "postings", True):
                 add ProportionalScale("UI/news.webp", *res_tb(25)) xalign 1.0
                 if not seen_alerts["postings"] and persistent.home_screen_notifications == 0:
                     at blink
@@ -400,7 +400,7 @@ screen right_menu_advance():
                     if MC.has_gold(blist[game.chapter+1].cost):
                         action Return("advance")
                     else:
-                        action Function(renpy.notify, "You do not have enough gold to advance.")
+                        action Function(renpy.notify, _("You do not have enough gold to advance."))
 
                     tooltip __("Advance to the next game chapter, at the cost of %s gold.") % '{:,}'.format(blist[game.chapter+1].cost)
 

@@ -3086,3 +3086,91 @@ translate schinese strings:
     old "GO"
     new "开始测试"
 
+# TODO: Translation updated at 2024-12-16 19:33
+
+translate schinese strings:
+
+    # game/BKhelp.rpy:360
+    old "BROKIPEDIA"
+    new "BROKIPEDIA"
+
+    # game/BKhelp.rpy:380
+    old "Close"
+    new "Close"
+
+    # game/BKhelp.rpy:409
+    old "Click here or right-click to close the help menu."
+    new "Click here or right-click to close the help menu."
+
+    # game/BKhelp.rpy:420
+    old "Previous notifications"
+    new "Previous notifications"
+
+    # game/BKhelp.rpy:429
+    old "How can I help you?"
+    new "How can I help you?"
+
+    # game/BKhelp.rpy:3108
+    old "Test results - "
+    new "Test results - "
+
+    # game/BKhelp.rpy:3128
+    old "Gold made-Test"
+    new "Gold made-Test"
+
+    # game/BKhelp.rpy:3138
+    old "Gold made-Ctrl"
+    new "Gold made-Ctrl"
+
+    # game/BKhelp.rpy:3148
+    old "Gold adv."
+    new "Gold adv."
+
+    # game/BKhelp.rpy:3157
+    old "Stats-Test"
+    new "Stats-Test"
+
+    # game/BKhelp.rpy:3166
+    old "Stats-Ctrl"
+    new "Stats-Ctrl"
+
+    # game/BKhelp.rpy:3175
+    old "Stat adv."
+    new "Stat adv."
+
+    # game/BKhelp.rpy:3183
+    old "Level-Test"
+    new "Level-Test"
+
+    # game/BKhelp.rpy:3192
+    old "Level-Ctrl"
+    new "Level-Ctrl"
+
+    # game/BKhelp.rpy:3205
+    old "Rank-Test"
+    new "Rank-Test"
+
+    # game/BKhelp.rpy:3214
+    old "Rank-Ctrl"
+    new "Rank-Ctrl"
+
+    # game/BKhelp.rpy:3227
+    old "Rep-Test"
+    new "Rep-Test"
+
+    # game/BKhelp.rpy:3236
+    old "Rep-Ctrl"
+    new "Rep-Ctrl"
+
+    # game/BKhelp.rpy:3248
+    old "RESTART"
+    new "RESTART"
+
+    # game/BKhelp.rpy:3249
+    old "NEW TEST"
+    new "NEW TEST"
+
+    # game/BKhelp.rpy:3250
+    old "STOP"
+    new "STOP"
+
