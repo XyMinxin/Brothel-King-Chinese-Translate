@@ -433,7 +433,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
                 yalign 0.5
 
             button background None xalign 0.0 yalign 0.5 action NullAction():
-                tooltip "您当前持有的金币数量"
+                tooltip "Your available gold."
                 if game.chapter > 1:
                     hovered (Show("tax_tooltip", transition=Dissolve(0.15)))
                     unhovered (Hide("tax_tooltip", transition=Dissolve(0.15)))
@@ -465,7 +465,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         null width xres(200)
 
-        textbutton "帮助" tooltip "了解更多关于这个界面的信息":
+        textbutton "帮助" tooltip "Learn more about the current screen.":
 
             style "button"
             xalign 1.0
@@ -615,7 +615,7 @@ screen girl_tab(girls, context="girls"):
                 use sorting_tab(context, girls, sorters)
 
                 frame xsize yres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                    textbutton "属性" text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(38) ysize yres(20) idle_background None action SetLocalVariable("sort_view", "advanced") tooltip "Sort girls by specific skills."
+                    textbutton "Sk." text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(38) ysize yres(20) idle_background None action SetLocalVariable("sort_view", "advanced") tooltip "Sort girls by specific skills."
 
                 if view_modes:
                     $ _next = get_next(view_modes, selected_view_mode, True)
@@ -623,10 +623,10 @@ screen girl_tab(girls, context="girls"):
                     frame xsize yres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                         textbutton selected_view_mode text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(38) ysize yres(20) idle_background None:
                             action SetVariable("selected_view_mode", _next)
-                            tooltip "点击切换视图"
+                            tooltip "Click to change view mode"
                 
                 frame xsize yres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                    textbutton "升级" text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(38) ysize yres(20) idle_background None action ToggleLocalVariable("lup_filter"):
+                    textbutton "L.Up" text_italic True text_color c_darkbrown text_selected_color c_emerald text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize yres(38) ysize yres(20) idle_background None action ToggleLocalVariable("lup_filter"):
                         if lup_filter:
                             tooltip __("Filter girls that are ready to level up (filter ON)")
                         else:
@@ -1396,7 +1396,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training" or farm.programs[girl].holding != "rest":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "训练模式:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Decide if Gizel will force girls to train against their will."
+                            textbutton "Training mode:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Decide if Gizel will force girls to train against their will."
                             textbutton farm.programs[girl].mode.capitalize() style "inv_no_padding" text_size res_font(14) yalign 0.5 text_bold True action NullAction() tooltip farm_ttip[farm.programs[girl].mode]
 
                             if farm.programs[girl].mode == "tough":
@@ -1406,7 +1406,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                     if farm.programs[girl].target != "no training":
                         hbox xalign 0.5 spacing xres(10):
-                            textbutton "训练设施:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Define which facility to use for her training (if any)."
+                            textbutton "Training facility:" xsize xres(100) yalign 0.5 text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Define which facility to use for her training (if any)."
                             textbutton farm.programs[girl].installation_name.capitalize() style "inv_no_padding" yalign 0.5 text_size res_font(14) text_bold True action NullAction():
                                 if farm.programs[girl].installation:
                                     tooltip farm.programs[girl].installation.get_tooltip()
@@ -1427,12 +1427,12 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
 
                         if farm.knows["weakness"][girl]:
                             hbox xalign 0.5 spacing xres(10):
-                                textbutton "利用弱点:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Determines if Gizel will use her known weakness against her."
+                                textbutton "Use Weakness:" xsize xres(100) text_xalign 0.0 text_size res_font(14) background None text_color c_white action NullAction() tooltip "Determines if Gizel will use her known weakness against her."
                                 text {True: "No", False: "Yes"}[farm.programs[girl].avoid_weakness] size res_font(14) bold True
 
                     else:
                         hbox xalign 0.5 spacing 10:
-                            textbutton "持续模式:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("Decide what the girl will do when not in training (work or rest).")
+                            textbutton "Holding mode:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("Decide what the girl will do when not in training (work or rest).")
                             text farm.programs[girl].holding.capitalize() size res_font(14) bold True
 
                     # hbox xalign 0.5 spacing 10:
@@ -1440,7 +1440,7 @@ screen girl_profile(girl, context = None): # context can be girls, slavemarket, 
                     #         textbutton "Duration:" xsize 0.5 xfill True text_xalign 0 text_size res_font(14) background None text_color c_white xpadding 0 xmargin 0.05 ypadding 0 ymargin 0 action NullAction() hovered tt.Action("The duration of her stay.")
                     #         text str(farm.programs[girl].duration) + " days" size res_font(14) bold True
 
-                    textbutton "变更项目" text_size res_font(16) xalign 0.5 action Return(("change program", girl)) tooltip "Change " + girl.name + "'s current training program."
+                    textbutton "Change program" text_size res_font(16) xalign 0.5 action Return(("change program", girl)) tooltip "Change " + girl.name + "'s current training program."
 
                     text "" size res_font(18)
 
@@ -1867,7 +1867,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 ## SKILLS LISTING
 
-                text "主要属性" size res_font(18)
+                text "Main skills" size res_font(18)
 
                 vbox:
                     spacing 0
@@ -4295,9 +4295,9 @@ screen brothel():
                                         add MC.current_trainer.portrait zoom 1.0 xalign 0.5 yalign 0.5
 
                                     if len(MC.trainers) == 1:
-                                        $ text1 = "没有其他的协助者了"
+                                        $ text1 = "No other trainer available"
                                     else:
-                                        $ text1 = "协助者能够提供许多增益效果。通过与泽恩的NPC建立友谊来获得更多协助者的帮助!"
+                                        $ text1 = "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
 
                                     button xmargin 0 xpadding 0 xsize xres(156) background None action NullAction() hovered tt.Action(text1):
 
@@ -4412,17 +4412,17 @@ screen brothel():
                         hbox xfill True spacing 10:
 
                             vbox spacing 6 xsize xres(180):
-                                text "客流量" size res_font(14)
+                                text "Estimated customers" size res_font(14)
                                 textbutton "{image=img_cust} %i" % brothel.customer_count style "inv_no_padding" action NullAction() tooltip brothel.count_customers_description()
 
                             vbox spacing 6 xsize xres(150):
                                 text "威胁等级" size res_font(14)
-                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + "。威胁等级受青楼安保人员数量和你的力量属性影响。"
+                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + ". Brothel threat is affected by brothel security and your Strength skill."
 
                             vbox spacing 6 xsize xres(200):
                                 hbox spacing 10:
-                                    text "卫生情况" size res_font(14)
-                                    textbutton "彻底清洁" xmargin 10 ymargin 0 ypadding 6 text_size res_font(14):
+                                    text "Dirt level" size res_font(14)
+                                    textbutton "Clean up" xmargin 10 ymargin 0 ypadding 6 text_size res_font(14):
                                         if brothel.get_clean_up_cost() > 0:
                                             action Return(("clean up", ""))
                                         tooltip "购买清洁用品，叫希露和保洁把你的青楼清洁干净 (彻底清洁需要花费: %s 金币)" % str(brothel.get_clean_up_cost())
@@ -5165,7 +5165,7 @@ screen home():
                     text "✓" font "1.ttf" size res_font(14) xalign 0.5 yalign 0.5
                 else:
                     text " " size res_font(14) xalign 0.5
-            text "显示营业报告" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
+            text "Show brothel report" size res_font(14) xalign 0.0 yalign 0.5 drop_shadow (2, 2)
 
 
 screen brothel_report():
@@ -5174,13 +5174,13 @@ screen brothel_report():
 
     if brothel.get_cleanliness() in ("disgusting", "fire"):
         default side_pic = "side sill sad"
-        default shown_tip = "主人!!! " + brothel.name + "简直臭不可闻...快想想办法!"
+        default shown_tip = "Master!!! " + brothel.name + " is very dirty... Please do something!"
     elif calendar.time == 1:
         default side_pic = "side sill happy"
-        default shown_tip = "欢迎回家, 主人! 你一定能赚到大钱的!"
+        default shown_tip = "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
     elif logs[calendar.time-1] and logs[calendar.time-1].net < 0:
         default side_pic = "side sill sad"
-        default shown_tip = "主人!!! " + brothel.name + "正在亏损...我们该怎么办?"
+        default shown_tip = "主人!!! " + brothel.name + " is losing money... What's going on?"
     else:
         default side_pic = "side sill happy"
         default shown_tip = "{color=[c_lightblue]}你知道吗? {/color}%s" % daily_tip
@@ -5536,7 +5536,7 @@ screen shortcuts():
 
 ## Close button
 
-screen close(act, name="返回", ttip="点击返回(或直接单击右键)"):
+screen close(act, name="返回", ttip="Click to go back (or use right-click)."):
 
     textbutton name:
 

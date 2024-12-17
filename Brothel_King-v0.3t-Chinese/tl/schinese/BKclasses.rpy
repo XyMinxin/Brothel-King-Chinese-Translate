@@ -68,27 +68,27 @@ translate schinese strings:
 
     # game/BKclasses.rpy:1964
     old "I got some entertainment."
-    new "服务的质量还不错。"
+    new "服务态度还不错。"
 
     # game/BKclasses.rpy:1964
     old "I was entertained while waiting."
-    new "我在等待时找到了点乐子。"
+    new "也算是没白等了。"
 
     # game/BKclasses.rpy:1964
     old "A girl performed for me."
-    new "有一个女孩在我面前表演。"
+    new "有个小姑娘热情地招待了我。"
 
     # game/BKclasses.rpy:1965
     old "The entertainer could have been better."
-    new "那个女孩还有很大的进步空间。"
+    new "那个小姑娘还有的学呢。"
 
     # game/BKclasses.rpy:1967
     old "There was no entertainment."
-    new "没什么有意思的项目。"
+    new "都是些老掉牙的把戏。"
 
     # game/BKclasses.rpy:1967
     old "I was bored while waiting."
-    new "我在等待时感到很无聊。"
+    new "这真是浪费我的时间。"
 
     # game/BKclasses.rpy:1967
     old "No entertainment. Boooring..."
@@ -104,11 +104,11 @@ translate schinese strings:
 
     # game/BKclasses.rpy:1972
     old "A whore took care of me."
-    new "我把她干到求饶。"
+    new "我和那个小姑娘干到天昏地暗。"
 
     # game/BKclasses.rpy:1972
     old "I had %s."
-    new " %s 真爽啊。"
+    new "%s真爽啊~"
 
     # game/BKclasses.rpy:1973
     old "The sex could have been better."
@@ -116,7 +116,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:1975
     old "No whores! What kind of brothel is this?"
-    new "没个妓女你开什么青楼？消遣我呢！"
+    new "没妓女你还开什么青楼？趁早关门吧！"
 
     # game/BKclasses.rpy:1975
     old "I couldn't find a whore. So frustrating."

@@ -3784,11 +3784,12 @@ label farm_max_skill(girl, skill):
         $ room = brothel.get_random_room_pic_path()
     else:
         $ room = "black"
-
+    $ cntext = girl_related_dict[skill]
     gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
-
+       
+        $ cntext = girl_related_dict[skill]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -3809,10 +3810,12 @@ label farm_max_pref(girl, act):
     else:
         $ room = "black"
 
+    $ cntext = girl_related_dict[act]
     gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
+        $ cntext = girl_related_dict[act]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 

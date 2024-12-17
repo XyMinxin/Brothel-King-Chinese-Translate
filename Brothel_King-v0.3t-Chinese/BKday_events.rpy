@@ -606,7 +606,7 @@ label random_morning_events():
                 $ girl.change_fear(f)
 
             $ girl.change_stat(ev_type, dice(6))
-
+            $ cntext = girl_related_dict[ev_type]
             "[girl.fullname]'s [ev_type] has increased."
 
             $ debug_notify("daily event")

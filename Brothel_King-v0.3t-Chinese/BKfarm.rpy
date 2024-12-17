@@ -618,7 +618,7 @@ init -2 python:
                         girl.personality_unlock[self.act] = True
                         farm.knows["pos_acts"][girl].append(self.act)
                     else:
-                        descript += " " + girl.name + " is turned on by " + self.act + " acts, so she enjoyed it despite herself."
+                        descript += " " + girl.name + " is turned on by " + girl_related_dict[self.act] + " acts, so she enjoyed it despite herself."
                     training_modifier += 1
 
                 elif self.act in girl.neg_acts: # Negative act
@@ -632,7 +632,7 @@ init -2 python:
                         girl.personality_unlock[self.act] = True
                         farm.knows["neg_acts"][girl].append(self.act)
                     else:
-                        descript += " " + girl.name + " doesn't enjoy " + self.act + " acts, so she remained tense and unwilling."
+                        descript += " " + girl.name + " doesn't enjoy " + girl_related_dict[self.act] + " acts, so she remained tense and unwilling."
 
                     training_modifier -= 1
 
@@ -804,7 +804,7 @@ init -2 python:
 
                 ## Adds main event
 
-                log.add_report(girl.fullname + " has trained " + self.act + " acts in the " + self.installation.name + ".")
+                log.add_report(girl.fullname + "在" + farm_related_dict[self.installation.name] + "中训练了" + girl_related_dict[self.act] + "。")
 
                 farm_events.append(Event(pic, background = pic_bg, char = girl.char, text = descript, changes = change_log, sound = ev_sound, type = "Farm"))
 
@@ -818,7 +818,7 @@ init -2 python:
 
                     farm_events.append(Event(pic, background = pic_bg, char = girl.char, text = (pref_response[text1 + " " + new_pref] % long_act_description[self.act]), changes = change_log, sound = s_ahaa, type = "special"))
 
-                    text1 = girl.fullname + " is now " + preference_color[new_pref] % new_pref + " with " + self.act + " acts."
+                    text1 = girl.fullname + "现在对" + girl_related_dict[self.act] + "行为一副" + preference_color[new_pref] % girl_related_dict[new_pref] + " 的模样。"
                     log.add_report(text1)
 
                     farm_events.append(Event(pic, background = pic_bg, char = narrator, text = "\n" + text1, changes = change_log, sound = s_spell, type = "special"))
@@ -929,7 +929,7 @@ init -2 python:
                     brk, new_pref = girl.raise_preference(act, status_change=True, context="farm")
                     pic = girl.get_pic(act, not_tags=all_sex_acts+["group"])
                     descript += farm_description["holding " + self.holding + " good"] % girl.name
-                    text_changes = __(act.capitalize()) + ": "
+                    text_changes = __(girl_related_dict[act.capitalize()]) + ": "
 
                     if brk > 0:
                         text_changes += "{color=[c_green]}"
@@ -1002,7 +1002,7 @@ init -2 python:
                     changes[stat] = girl.change_stat(stat, chg)
 
                 if stat not in ("mood", "fear", "love"):
-                    change_log.add("%s: %i/%i (%s)" % (__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(changes[stat], color_scheme="standard")))
+                    change_log.add("%s: %i/%i (%s)" % (__(girl_related_dict[stat.capitalize()]), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(changes[stat], color_scheme="standard")))
 
             return change_log
 
