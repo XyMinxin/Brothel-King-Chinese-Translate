@@ -2752,7 +2752,7 @@ init -3 python:
                 girl.track_event("bad result", arg=(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
             elif result in ("good", "very good", "perfect"):
-                girl.track_event("good result", arg(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
+                girl.track_event("good result", arg=(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
 
         return events
