@@ -756,27 +756,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:436
     old "Your available gold."
-    new "Your available gold."
+    new "您当前持有的金币数量"
 
     # game/BKscreens.rpy:468
     old "Learn more about the current screen."
-    new "Learn more about the current screen."
+    new "了解更多关于这个界面的信息"
 
     # game/BKscreens.rpy:618
     old "Sk."
-    new "Sk."
+    new "属性"
 
     # game/BKscreens.rpy:618
     old "Sort girls by specific skills."
-    new "Sort girls by specific skills."
+    new "按照指定属性进行排序"
 
     # game/BKscreens.rpy:626
     old "Click to change view mode"
-    new "Click to change view mode"
+    new "点击切换视图"
 
     # game/BKscreens.rpy:629
     old "L.Up"
-    new "L.Up"
+    new "升级"
 
     # game/BKscreens.rpy:631
     old "Filter girls that are ready to level up (filter ON)"
@@ -872,7 +872,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1399
     old "Training mode:"
-    new "Training mode:"
+    new "训练模式:"
 
     # game/BKscreens.rpy:1399
     old "Decide if Gizel will force girls to train against their will."
@@ -880,7 +880,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1409
     old "Training facility:"
-    new "Training facility:"
+    new "训练设施:"
 
     # game/BKscreens.rpy:1409
     old "Define which facility to use for her training (if any)."
@@ -896,7 +896,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1430
     old "Use Weakness:"
-    new "Use Weakness:"
+    new "利用弱点:"
 
     # game/BKscreens.rpy:1430
     old "Determines if Gizel will use her known weakness against her."
@@ -904,7 +904,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1435
     old "Holding mode:"
-    new "Holding mode:"
+    new "持续模式:"
 
     # game/BKscreens.rpy:1435
     old "Decide what the girl will do when not in training (work or rest)."
@@ -912,7 +912,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1443
     old "Change program"
-    new "Change program"
+    new "变更项目"
 
     # game/BKscreens.rpy:1443
     old "Change "
@@ -1304,11 +1304,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4298
     old "No other trainer available"
-    new "No other trainer available"
+    new "没有其他的协助者了"
 
     # game/BKscreens.rpy:4300
     old "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
-    new "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+    new "协助者能够提供许多增益效果。通过与泽恩的NPC建立友谊来获得更多协助者的帮助!"
 
     # game/BKscreens.rpy:4323
     old "{i}Recruit a trainer to help your girls.{/i}"
@@ -1352,19 +1352,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4415
     old "Estimated customers"
-    new "Estimated customers"
+    new "客流量"
 
     # game/BKscreens.rpy:4420
     old ". Brothel threat is affected by brothel security and your Strength skill."
-    new ". Brothel threat is affected by brothel security and your Strength skill."
+    new "。威胁等级受青楼安保人员数量和你的力量属性影响。"
 
     # game/BKscreens.rpy:4424
     old "Dirt level"
-    new "Dirt level"
+    new "卫生情况"
 
     # game/BKscreens.rpy:4425
     old "Clean up"
-    new "Clean up"
+    new "彻底清洁"
 
     # game/BKscreens.rpy:4428
     old "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)."
@@ -1584,23 +1584,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5168
     old "Show brothel report"
-    new "Show brothel report"
+    new "显示营业报告"
 
     # game/BKscreens.rpy:5177
     old "Master!!! "
-    new "Master!!! "
+    new "主人!!! "
 
     # game/BKscreens.rpy:5177
     old " is very dirty... Please do something!"
-    new " is very dirty... Please do something!"
+    new "简直臭不可闻...快想想办法!"
 
     # game/BKscreens.rpy:5180
     old "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
-    new "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
+    new "欢迎回家, 主人! 你一定能赚到大钱的!"
 
     # game/BKscreens.rpy:5183
     old " is losing money... What's going on?"
-    new " is losing money... What's going on?"
+    new "正在亏损...我们该怎么办?"
 
     # game/BKscreens.rpy:5186
     old "{color=[c_lightblue]}Did you know? {/color}%s"
@@ -1624,7 +1624,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5539
     old "Click to go back (or use right-click)."
-    new "Click to go back (or use right-click)."
+    new "点击返回(或直接单击右键)"
 
     # game/BKscreens.rpy:5736
     old "{i}No girls are available for this task{/i}"
