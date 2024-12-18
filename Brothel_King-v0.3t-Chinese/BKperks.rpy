@@ -133,7 +133,7 @@ label init_perks():
                         "Teaser" : Perk(name=_("搔首弄姿"), type="level", perk_level=0, archetype="The Slut", effects=[Effect("change", "libido", 5), Effect("gain", "positive fixation", 1)], pic = "slut0.webp"),
                         "Open mind" : Perk(name=_("思想开放"), type="level", perk_level=1, archetype="The Slut", effects=[Effect("gain", "all sexual preferences", 250)], pic = "slut1_1.webp"),
                         "Bedroom Eyes" : Perk(name=_("情迷意乱"), type="level", perk_level=1, archetype="The Slut", effects=[Effect("boost", "service jp bonus", 0.25), Effect("boost", "sex jp bonus", 0.25), Effect("boost", "anal jp bonus", 0.25), Effect("boost", "fetish jp bonus", 0.25)], pic = "slut1_2.webp"),
-                        "Next" : Perk(name=_("Next"), type="如狼似虎", perk_level=2, archetype="The Slut", effects=[Effect("change", "whore customer capacity", 1)], pic = "escort1_2.webp"),
+                        "Next" : Perk(name=_("如狼似虎"), type="level", perk_level=2, archetype="The Slut", effects=[Effect("change", "whore customer capacity", 1)], pic = "escort1_2.webp"),
                         "Work and Whore" : Perk(name=_("巧舌如簧"), type="level", perk_level=2, archetype="The Slut", effects=[Effect("special", "workwhore", 1)], pic = "slut3.webp"),
                         "Me So Horny" : Perk(name=_("一心二用"), type="level", perk_level=3, archetype="The Slut", effects=[Effect("boost", "tiredness", -0.1)], pic = "escort2_2.webp"),
 
