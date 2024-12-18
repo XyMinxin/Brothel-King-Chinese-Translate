@@ -78,9 +78,9 @@ label init_perks():
 
                              "裸体主义" : "这是...人体彩绘吗？能清楚的看到挺立的乳头和湿润的蜜穴，这只会让她更加兴奋",
                              "雌牝母犬" : "她的身上只有项圈和尾巴. 尾巴是怎么固定住的... 可以起到免费的宣传效果",
-                             "左拥右抱" : "有时会和另一个姑娘在客人面前互相舔弄. 让客人更加满足，给更多小费, 还能缓解疲劳.",
-                             "前后夹击" : "三人行她也能搞定。可能会消耗额外的体力与最多两个客户发生性关系。",
-                             "性欲旺盛" : "真是个婊子!看来她想把每个洞都塞满。可能与最多三个顾客发生性关系，这将消耗更多的体力。",
+                             "绝代双骄" : "有时会和另一个姑娘在客人面前互相舔弄. 让客人更加满足，给更多小费, 还能缓解疲劳.",
+                             "左搂右抱" : "三人行她也能搞定。可能会消耗额外的体力与最多两个客户发生性关系。",
+                             "欲女心经" : "真是个婊子!看来她想把每个洞都塞满。可能与最多三个顾客发生性关系，这将消耗更多的体力。",
                              }
 
         ## REGULAR PERKS ##
@@ -147,11 +147,11 @@ label init_perks():
 
         ## SPECIAL PERKS ##
 
-        naked_perk = Perk("Naturist", type="sex", effects = [Effect("special", "naked", 1)])
-        pony_perk = Perk("Ponygirl", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
-        bis_perk = Perk("Bisexual", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
-        group_perk = Perk("Group", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
-        orgy_perk = Perk("Orgy", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
+        naked_perk = Perk("裸体主义", type="sex", effects = [Effect("special", "naked", 1)])
+        pony_perk = Perk("雌牝母犬", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
+        bis_perk = Perk("绝代双骄", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
+        group_perk = Perk("左搂右抱", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
+        orgy_perk = Perk("欲女心经", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
 
 
 
