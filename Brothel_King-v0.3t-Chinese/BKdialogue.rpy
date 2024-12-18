@@ -955,7 +955,7 @@ init -1 python:
     add_dialogue("slave train constitution", "very introvert", "哦，真的，锻炼吗？我就不能看书吗？ *抱怨*")
     add_dialogue("slave train constitution", "introvert", "如果你要求的话，主人.")
     add_dialogue("slave train constitution", "very extravert", "你说的对，主人！锻炼对于健康的身体和精神很重要。")
-    add_dialogue("slave train constitution", "extravert", "好的主人。我想我可以做一点运动。")
+    add_dialogue("slave train constitution", "extravert", "好的主人。我会努力锻炼的。")
 
     add_dialogue("slave train refuses", "lewd", "她对 [act_desc] 的想法感到非常羞愧，甚至无法说话。她的脸是鲜红的。", sound=s_screams)
     add_dialogue("slave train refuses", "modest", "她似乎对 [act_desc] 的想法感到厌恶。她给你一个害怕的表情。", sound=s_screams)
@@ -1214,7 +1214,7 @@ init -1 python:
     add_dialogue("free_chat_origins", ("pervert", "very lewd", "bimbo"), ("我在[girl.origin]的一家青楼旁边长大。", "我在[girl.origin]长大。那里太无聊了！", "呃，[girl.origin]。泽恩好多了！"), love=1, max_cap=40)
     add_dialogue("free_chat_hobbies", ("pervert", "rebel", "easy"), ("我{i}热爱{/i}[hobby]。", "大多数爱好都很无聊，但[hobby]还可以。", "最近我看到了一类性奴隶[hobby]的裸体。它让我湿透了。泽恩不奇怪吗？"), max_cap=40)
     add_dialogue("free_chat_likes", ("pervert", "bimbo", "easy", "tsundere"), ("我{i}最喜欢{/i}[best]。这是最好的。吸它，任何其他[thing_cn]！ *傻笑*", "我很确定每个人都同意最好的[thing_cn]就是[best]。"), love=2, max_cap=40)
-    add_dialogue("free_chat_dislikes", ("pervert", "creep"), ("让我超级沮丧的一件事是[worst]。哎呀！", "我唯一比禁欲更讨厌的是[thing_cn][worst]。"), love=1, max_cap=40)
+    add_dialogue("free_chat_dislikes", ("pervert", "creep"), ("让我超级沮丧的一件事是[worst]。哎呀！", "比禁欲还让我讨厌的是[thing_cn][worst]。"), love=1, max_cap=40)
 
     add_dialogue("free_joke_harmless", ("pervert", "superficial", "rebel"), ("呃，你太无聊了...."), love=-1, max_cap=50)
     add_dialogue("free_joke_adult", ("pervert", "very extravert", "loyal", "superficial"), ("哦，太淘气了...*咯咯*"), love=5, max_cap=50)
@@ -1408,7 +1408,7 @@ init -1 python:
     add_dialogue("slave chat feelings obedient", ("pervert", "very lewd"), ("我一直认为有关你性能力的故事有些夸张，但你确实是一个值得尊重的男人。"), unlock="DS")
     add_dialogue("slave chat feelings very obedient", ("generic", "very extravert", "very idealist", "very materialist", "very modest", "very dom"), ("您是我所希望的一切，甚至更多，主人。我很荣幸能为您服务，并希望我能在您身边度过余生。"), unlock="DS")
     add_dialogue("slave chat tastes likes", ("pervert", "very extravert"), ("我{i}最喜欢{/i}[best]。这是最好的。吸它，任何其他[thing_cn]！ *傻笑*", "我很确定每个人都同意最好的[thing_cn]就是[best]。"), unlock="LM")
-    add_dialogue("slave chat tastes dislikes", ("pervert", "very extravert"), ("让我超级沮丧的一件事是[worst]。哎呀！", "我唯一比禁欲更讨厌的是[thing_cn][worst]。"), unlock="LM")
+    add_dialogue("slave chat tastes dislikes", ("pervert", "very extravert"), ("让我超级沮丧的一件事是[worst]。哎呀！", "比禁欲还让我讨厌的是[thing_cn][worst]。"), unlock="LM")
     add_dialogue("slave chat tastes loves +", ("pervert", "very lewd"), ("我{i}喜欢{/i}[thing_cn]。 *咯咯*看看我的手臂，光是谈论它就让我起鸡皮疙瘩。", "我已经有一段时间没有被赋予[thing_cn]了。我真的很想念他们。", "这听起来可能很奇怪，但[thing_cn]让我很湿。"), unlock="LM")
     add_dialogue("slave chat tastes loves -", ("generic", "very extravert", "very introvert", "very idealist", "very materialist", "very modest", "very dom"), ("小时候我经常收集[thing_cn]。现在看来已经是很久以前的事了。", "我对大多数礼物都不感兴趣。不过，我确实喜欢[thing_cn]。"), unlock="LM")
     add_dialogue("slave chat tastes no loves", ("pervert", "rebel", "stubborn", "bimbo", "schemer", "tsundere"), ("别费心给我送什么礼物了。我不喜欢那些浪漫的举动。"), unlock="LM")
@@ -3107,7 +3107,7 @@ init -1 python:
     add_dialogue("slave lecture very interested", ("very lewd"), ("我喜欢 [act_desc]...这让我感觉非常好...嗯。"), sound=s_mmh)
     add_dialogue("slave lecture fascinated", ("very lewd"), ("哦，[act_desc] 是最好的！我可以做一整天！主人，为什么不让我给你看呢？"), sound=s_aah)
 
-    add_dialogue("slave train constitution", ("bimbo", "very extravert"), ("是的主人。我想我可以做一点运动。"))
+    add_dialogue("slave train constitution", ("bimbo", "very extravert"), ("是的主人。我会努力锻炼的。"))
     add_dialogue("slave train refuses", ("very lewd"), ("她对 [act_desc] 的想法感到非常羞愧，甚至无法说话。她的脸是鲜红的。"), sound=s_screams)
     add_dialogue("slave train very reluctant", ("very lewd"), ["我不喜欢这样......为什么我必须继续这样做？啊！！！", "呃，[act_desc]？你让我这么做，尽管这很变态....哇...."], sound=s_scream)
     add_dialogue("slave train reluctant", ("very lewd"), ("你知道我不喜欢这样...别看我...啊哈！"), sound=s_scream)

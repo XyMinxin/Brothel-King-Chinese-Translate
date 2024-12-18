@@ -4540,33 +4540,33 @@ init -2 python:
             if self in farm.girls:
                 if farm.programs[self].target == "no training" and farm.programs[self].holding == "rest":
                     mood_change += 1
-                    mood_factors += "+1: She is resting at the farm.\n"
+                    mood_factors += "+1: 她在农场地牢中休息\n"
                 else:
                     mood_change -= 1
-                    mood_factors += "-1: She is being kept at the farm.\n"
+                    mood_factors += "-1: 她被关押在农场地牢中\n"
 
             else: # Working girls
                 w = 0
                 if self.works_today():
                     if self.job == "whore" and self.get_effect("special", "whore mood modifier"):
                         w += 1
-                        mood_factors += "+1: She works as a whore and she loves it.\n"
+                        mood_factors += "+1: 她性欲高涨并将作为妓女工作\n"
                     elif self.workdays[calendar.get_weekday()] == 100:
                         w = -1
-                        mood_factors += "-1: She is working today.\n"
+                        mood_factors += "-1: 她今晚要全勤工作\n"
                     else: # Half shift
                         w = -0.5
-                        mood_factors += "-0.5: She is working a half-shift today.\n"
+                        mood_factors += "-0.5: 她今晚要半勤工作\n"
                 elif self.assignment:
                     if self.assignment.type == "quest":
                         w = -1
-                        mood_factors += "-1: She is working on a quest today.\n"
+                        mood_factors += "-1: 她今天要去完成委托\n"
                     else: # Classes
                         w = -0.5
-                        mood_factors += "-0.5: She is attending a class today.\n"
+                        mood_factors += "-0.5: 她今天正在参加培训\n"
                 else:
                     w = 2
-                    mood_factors += "+2: She is resting today.\n"
+                    mood_factors += "+2: 她今天可以睡个懒觉了\n"
 
                 up = self.get_upkeep_modifier()
                 fr = (len(self.friends) - len(self.rivals)) * self.get_effect("boost", "mood gains from friendship")
@@ -4576,39 +4576,39 @@ init -2 python:
                 mood_change += up + roo + bro + w + fr
 
                 if up > 0:
-                    mood_factors += "+" + str(up) + ": She feels her allowance is generous.\n"
+                    mood_factors += "+" + str(up) + ": 她觉得她的薪水很优渥\n"
 
                 elif up < 0:
-                    mood_factors += str(up) + ": She isn't happy with her allowance.\n"
+                    mood_factors += str(up) + ": 她对她的薪水很不满意\n"
 
                 if fr > 0:
-                    mood_factors += "+" + str(round_best(fr)) + ": She has friends.\n"
+                    mood_factors += "+" + str(round_best(fr)) + ": 她有好闺蜜陪伴\n"
                 elif fr < 0:
-                    mood_factors += str(round_best(fr)) + ": She has rivals.\n"
+                    mood_factors += str(round_best(fr)) + ": 她有个冤家\n"
 
                 if roo > 4:
-                    mood_factors += "+" + str(round_best(roo)) + ": She loves her accommodations.\n"
+                    mood_factors += "+" + str(round_best(roo)) + ": 她对她的房间很满意\n"
                 elif roo > 0:
-                    mood_factors += "+" + str(round_best(roo)) + ": She likes her accommodations.\n"
+                    mood_factors += "+" + str(round_best(roo)) + ": 她喜欢她的房间\n"
                 elif roo < -4:
-                    mood_factors += str(round_best(roo)) + ": She hates her accommodations.\n"
+                    mood_factors += str(round_best(roo)) + ": 她有些嫌弃她的房间\n"
                 elif roo < 0:
-                    mood_factors += str(round_best(roo)) + ": She doesn't like her accommodations.\n"
+                    mood_factors += str(round_best(roo)) + ": 她的房间令她作呕\n"
 
                 # Change this later if more mood gain effects are added
                 if bro > 1:
-                    mood_factors += "+" + str(bro) + ": Other girls helped her relax.\n"
+                    mood_factors += "+" + str(bro) + ": 和好姐妹们在一起让她感到舒适\n"
                 elif bro > 0:
-                    mood_factors += "+" + str(bro) + ": Another girl helped her relax.\n"
+                    mood_factors += "+" + str(bro) + ": 和好姐妹在一起让她感到舒适\n"
 
             # Life of Luxury perk
             mood_eff = self.get_effect("change", "mood")
             if mood_eff:
                 mood_change += mood_eff
                 if self.has_perk("Life of Luxury"):
-                    mood_factors += plus_minus(mood_eff) + ": She loves her outfit (Life of Luxury).\n"
+                    mood_factors += plus_minus(mood_eff) + ": 她喜欢她的衣服(奢侈的生活)\n"
                 else:
-                    mood_factors += plus_minus(mood_eff) + ": Other effects.\n"
+                    mood_factors += plus_minus(mood_eff) + ": 其他效果影响\n"
 
 
             if description:

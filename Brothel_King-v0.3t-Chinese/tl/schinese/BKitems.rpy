@@ -1810,7 +1810,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:909
     old "Click to sort by "
-    new "排序规则："
+    new "根据"
 
     # game/BKitems.rpy:975
     old "\n{i}Equipped{/i}"

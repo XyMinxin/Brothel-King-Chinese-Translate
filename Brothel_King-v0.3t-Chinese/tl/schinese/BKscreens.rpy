@@ -296,7 +296,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2959
     old "%s's perks"
-    new "%s的天赋树"
+    new "%s的天赋"
 
     # game/BKscreens.rpy:3051
     old "Perk points: "
@@ -780,11 +780,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:631
     old "Filter girls that are ready to level up (filter ON)"
-    new "Filter girls that are ready to level up (filter ON)"
+    new "筛选出可以升级的女孩 (筛选过滤)"
 
     # game/BKscreens.rpy:633
     old "Filter girls that are ready to level up (filter OFF)"
-    new "Filter girls that are ready to level up (filter OFF)"
+    new "筛选出可以升级的女孩 (不过滤)"
 
     # game/BKscreens.rpy:640
     old "Go back to other filters."
@@ -792,23 +792,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:787
     old "Use mousewheel to cycle girls' pages."
-    new "Use mousewheel to cycle girls' pages."
+    new "使用鼠标滚轮来循环女孩界面。"
 
     # game/BKscreens.rpy:799
     old "{i}  No girl available  {/i}"
-    new "{i}  No girl available  {/i}"
+    new "{i}  没有可用的女孩  {/i}"
 
     # game/BKscreens.rpy:812
     old "Choose a badge for [girl.fullname]"
-    new "Choose a badge for [girl.fullname]"
+    new "为[girl.fullname]添加一个图标"
 
     # game/BKscreens.rpy:827
     old "No badge"
-    new "No badge"
+    new "无图标"
 
     # game/BKscreens.rpy:830
     old "Pick this badge"
-    new "Pick this badge"
+    new "选择这个图标"
 
     # game/BKscreens.rpy:839
     old "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience."
@@ -816,11 +816,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:846
     old "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl."
-    new "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl."
+    new "当前图标: {b}%s{/b}.\n点击切换她的图标"
 
     # game/BKscreens.rpy:862
     old "No job"
-    new "No job"
+    new "无工作"
 
     # game/BKscreens.rpy:870
     old " is currently at the "
@@ -924,7 +924,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1461
     old "Open %s's entry in your magical notebook (shortcut: {u}n{/u})"
-    new "Open %s's entry in your magical notebook (shortcut: {u}n{/u})"
+    new "在魔法笔记中查看%s的信息 (快捷键: {u}N{/u})"
 
     # game/BKscreens.rpy:1481
     old "Girl rating ("
