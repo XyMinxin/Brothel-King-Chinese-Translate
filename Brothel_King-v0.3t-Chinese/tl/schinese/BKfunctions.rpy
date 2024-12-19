@@ -356,7 +356,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2658
     old "\n{color=[c_red]}She coldly told the customer off, threatening to call security.{/color}\nHe was upset and left grumbling."
-    new "\n{color=[c_red]}她无情地拒绝了顾客，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。"
+    new "\n{color=[c_red]}她冷漠地拒绝了顾客，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。"
 
     # game/BKfunctions.rpy:2663
     old "\nShe ignored your order to stay away from customers."

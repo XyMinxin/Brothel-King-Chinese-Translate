@@ -5061,34 +5061,34 @@ init -2 python:
                 taste_text = ""
 
                 if "fav_color" in self.notebook_unlocks:
-                    taste_text += "Her favourite color is {b}" + self.likes["color"] + "{/b}. "
+                    taste_text += "她最喜欢的颜色是{b}" + self.likes["color"] + "{/b}。"
 
                 if "fav_food" in self.notebook_unlocks:
-                    taste_text += "Her favourite food is {b}" + self.likes["food"] + "{/b}. "
+                    taste_text += "她最喜欢的食物是{b}" + self.likes["food"] + "{/b}。"
 
                 if "fav_drink" in self.notebook_unlocks:
-                    taste_text += "Her favourite drink is {b}" + self.likes["drink"] + "{/b}. "
+                    taste_text += "她最喜欢的饮品是{b}" + self.likes["drink"] + "{/b}。"
 
                 if ("hobby_" + self.hobbies[0]) in self.notebook_unlocks and ("hobby_" + self.hobbies[1]) in self.notebook_unlocks:
-                    taste_text += "She likes {b}" + self.hobbies[0] + " and " + self.hobbies[1] + "{/b}. "
+                    taste_text += "她喜欢{b}" + self.hobbies[0] + " and " + self.hobbies[1] + "{/b}。"
 
                 elif ("hobby_" + self.hobbies[0]) in self.notebook_unlocks:
-                    taste_text += "She likes {b}" + self.hobbies[0] + "{/b}. "
+                    taste_text += "她喜欢{b}" + self.hobbies[0] + "{/b}。"
 
                 elif ("hobby_" + self.hobbies[1]) in self.notebook_unlocks:
-                    taste_text += "She likes {b}" + self.hobbies[1] + "{/b}. "
+                    taste_text += "她喜欢{b}" + self.hobbies[1] + "{/b}。"
 
                 if taste_text:
                     taste_text += "\n\n"
 
                 if "dis_color" in self.notebook_unlocks:
-                    taste_text += "Her least favourite color is {b}" + self.dislikes["color"] + "{/b}. "
+                    taste_text += "她最讨厌的颜色是{b}" + self.dislikes["color"] + "{/b}。"
 
                 if "dis_food" in self.notebook_unlocks:
-                    taste_text += "Her least favourite food is {b}" + self.dislikes["food"] + "{/b}. "
+                    taste_text += "她最讨厌的食物是{b}" + self.dislikes["food"] + "{/b}。"
 
                 if "dis_drink" in self.notebook_unlocks:
-                    taste_text += "Her least favourite drink is {b}" + self.dislikes["drink"] + "{/b}. "
+                    taste_text += "她最讨厌的饮品是{b}" + self.dislikes["drink"] + "{/b}。"
 
 
                 if taste_text:

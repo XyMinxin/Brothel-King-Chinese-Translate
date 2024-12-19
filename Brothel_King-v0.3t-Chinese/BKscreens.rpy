@@ -422,9 +422,9 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
                 null
 
-                text "Year: [calendar.year]" size res_font(18) yalign 0.5
-                text "Month: [calendar.month]" size res_font(18) yalign 0.5
-                text (__("Day: [calendar.day] (") + __(calendar.get_weekday())[:3] + ")") size res_font(18) yalign 0.5
+                text "时间: 第[calendar.year]年" size res_font(18) yalign 0.5
+                text " [calendar.month]月" size res_font(18) yalign 0.5
+                text (" [calendar.day]日 (" + __(calendar.get_weekday())[:3] + ")") size res_font(18) yalign 0.5
 
         hbox xalign 1.0 spacing xres(6):
             if MC.resource_tab_active:
@@ -6838,7 +6838,7 @@ screen farm_tab():
 
             has vbox xalign 0.5
 
-            text "Gizel's Farm" drop_shadow (2, 2) bold True xalign 0
+            text "吉泽尔的奴隶农场" drop_shadow (2, 2) bold True xalign 0
 
             if farm.girls:
                 $ text1 = __("Ah, [MC.name]! Came to check on my pets?")

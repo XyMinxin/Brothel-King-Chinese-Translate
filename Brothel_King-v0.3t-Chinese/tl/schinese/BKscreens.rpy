@@ -2024,15 +2024,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6874
     old "Ask Gizel for help about the farm."
-    new "Ask Gizel for help about the farm."
+    new "询问吉泽尔有关奴隶农场的事宜。"
 
     # game/BKscreens.rpy:6880
     old "Click here for help on using the farm."
-    new "Click here for help on using the farm."
+    new "点击此处了解奴隶农场的运作机制。"
 
     # game/BKscreens.rpy:6894
     old "{b}Girl pens{/b}"
-    new "{b}Girl pens{/b}"
+    new "{b}农场地牢{/b}"
 
     # game/BKscreens.rpy:6902
     old "The farm can host one girl per pen."
@@ -2040,27 +2040,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6905
     old "\nClick here to add a new pen for "
-    new "\nClick here to add a new pen for "
+    new "\n点击此处花费"
 
     # game/BKscreens.rpy:6905
     old " gold."
-    new " gold."
+    new "金币扩建一个地牢。"
 
     # game/BKscreens.rpy:6907
     old "You cannot build any more pens."
-    new "You cannot build any more pens."
+    new "农场无法扩建更多的地牢了。"
 
     # game/BKscreens.rpy:6909
     old "Upgrade your brothel to be able to add more pens."
-    new "Upgrade your brothel to be able to add more pens."
+    new "升级你的青楼，这样才能修建更多的地牢。"
 
     # game/BKscreens.rpy:6911
     old "\n(Currently available pens: "
-    new "\n(Currently available pens: "
+    new "\n(目前闲置的地牢数量: "
 
     # game/BKscreens.rpy:6928
     old "{b}Farm status{/b}"
-    new "{b}Farm status{/b}"
+    new "{b}农场日志{/b}"
 
     # game/BKscreens.rpy:6933
     old "Hurt minions: "
@@ -2068,7 +2068,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6948
     old "{b}Facilities & Minions{/b}"
-    new "{b}Facilities & Minions{/b}"
+    new "{b}训练设施与&仆从{/b}"
 
     # game/BKscreens.rpy:6949
     old "{u}U{/u}se item"

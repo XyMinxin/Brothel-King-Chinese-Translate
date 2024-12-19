@@ -1920,7 +1920,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:1176
     old "Unsellable"
-    new "Unsellable"
+    new "无法出售"
 
     # game/BKitems.rpy:1225
     old "Empty"

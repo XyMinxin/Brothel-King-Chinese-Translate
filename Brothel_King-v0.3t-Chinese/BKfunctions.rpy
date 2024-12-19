@@ -2486,7 +2486,7 @@ init -3 python:
                 else:
                     s_act = "naked"
 
-                s_des = {"naked" : "strip naked for him", "service" : "take care of his cock", "sex" : "have sex with him", "anal" : "let him fuck her ass", "fetish" : "do kinky stuff with him"}
+                s_des = {"naked" : "让他欣赏她美丽的胴体", "service" : "安慰一下他的老二", "sex" : "和他到隐蔽的角落里做爱", "anal" : "尝尝她后庭的滋味", "fetish" : "陪他玩些刺激的玩法"}
 
                 d = dice(3)
 
