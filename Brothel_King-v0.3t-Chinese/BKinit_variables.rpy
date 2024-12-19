@@ -490,7 +490,7 @@ init -3 python:
                     "anal" : ["肛交", "anal", "女孩的肛交水平排序", True],
                     "fetish" : ["调教", "fetish", "女孩的调教水平排序", True],
                     "energy" : ["精力", "energy", "女孩的精力排序", False],
-                    "experience" : ["性能力", "training_value", "性训练水平排序", True],
+                    "experience" : ["性技", "training_value", "性训练水平排序", True],
                 }
 
     ## RESOURCES ##
