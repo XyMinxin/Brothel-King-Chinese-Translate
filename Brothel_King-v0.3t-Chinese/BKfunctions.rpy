@@ -917,13 +917,13 @@ init -3 python:
             stat, nb = c
 
             if stat in ("rep", "reputation"):
-                change_log.add("Reputation: %i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
+                change_log.add("声望：%i/%i (%s)" % (girl.rep, girl.get_stat_max("rep"), plus_text(int(nb), "rep")))
 
             elif stat == "gold":
-                change_log.add("Gold: {image=img_gold} %s" % plus_text(int(nb), "gold"))
+                change_log.add("金币：{image=img_gold} %s" % plus_text(int(nb), "gold"))
 
             else:
-                change_log.add("%s: %i/%i (%s)" % ((__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s skill changes" % act.capitalize())
+                change_log.add("%s: %i/%i (%s)" % ((__(stat.capitalize()), girl.get_stat(stat), girl.get_stat_max(stat), plus_text(int(nb), "stat"))), ttip = describe_leveled_stats(act), ttip_title = "%s技能变化" % girl_related_dict[act.capitalize()])
 
         return change_log
 
@@ -1345,10 +1345,10 @@ init -3 python:
         elif nb < 0:
             return event_color[neg_color] % (neg_marker + nb_txt)
 
-    def and_text(li, txt=" and ", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
+    def and_text(li, txt="和", prune_empty=True, if_none=event_color["bad"] % "#ERROR# No list", separator=", "): # prune_empty removes empty entries from the list
 
         if prune_empty:
-            li = [x for x in li if x]
+            li = [tl_cn(x, [girl_related_dict, farm_related_dict]) for x in li if x]
 
         if not li:
             return if_none
@@ -1613,7 +1613,7 @@ init -3 python:
 
         cust_diff = mean_int(c.diff for c in customers) # // len(customers)
 
-        change_log.add("Difficulty: %s" % cust_diff_description(cust_diff), "header", ttip = "Difficulty is related to customer population and averaged among all targeted customers.", ttip_title="Difficulty", separator="\n")
+        change_log.add("难度: %s" % cust_diff_description(cust_diff), "header", ttip = "难度与客户数量和所有目标客户的平均属性有关。", ttip_title="Difficulty", separator="\n")
 
 
         ## STEP 2: Get customer satisfaction
@@ -1629,7 +1629,7 @@ init -3 python:
             ttip += "Base modifier: %s" % plus_text(int(base_entertainment_bonus))
 
             if unsat:
-                ttip += " (%i wanted to do something else)" % unsat
+                ttip += " (%i想要做别的事)" % unsat
 
             # Lowering malus with effects such as the Party Girl perk
             entertainment_bonus = base_entertainment_bonus * girls[0].get_effect("boost", "customer penalties")
@@ -1840,12 +1840,12 @@ init -3 python:
                         pickpocket_boost = 0.1
                         caught_chance = 0.15
 
-        change_log.add("Customer satisfaction: %s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="Customer satisfaction")
+        change_log.add("顾客满意度：%s" % plus_text(cust_bonus, "normal"), ttip=ttip, ttip_title="顾客满意度")
 
         ## STEP 3: Calculate stat bonus
 
         stat_bonus = mean_int(girl.test_stats(perform_job_dict[act + "_stats"], cust_diff) for girl in girls) # // len(girls)
-        ttip = "Skill modifier (%s): %s ({i}%s{/i})" % (act, plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], ", "))
+        ttip = "属性加成 (%s)：%s ({i}%s{/i})" % (girl_related_dict[act], plus_text(stat_bonus), and_text([s[0] for s in perform_job_dict[act + "_stats"]], "、"))
 
         sensitivity_bonus = 0
         if act in all_sex_acts:
@@ -1870,55 +1870,55 @@ init -3 python:
 
 
         if sensitivity_bonus:
-            ttip += "\nSensitivity modifier: %s" % plus_text(sensitivity_bonus)
+            ttip += "\n敏感加成：%s" % plus_text(sensitivity_bonus)
 
 
         ## STEP 4: Get job level bonus
 
         job_bonus = mean_int(girl.job_level[act] for girl in girls) # // len(girls)
-        ttip += "\nJob level modifier (%s): %s" % (act, plus_text(job_bonus))
+        ttip += "\n职业等级加成 (%s)：%s" % (girl_related_dict[act], plus_text(job_bonus))
 
-        change_log.add("Girl skills: %s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="Skill bonuses")
+        change_log.add("属性加成：%s" % plus_text(stat_bonus + job_bonus, "normal"), ttip = ttip, ttip_title="技能属性奖励")
 
         ## STEP 5: roll dice
 
         d = dice(6)
-        ttip = "Represents her performance on a given interaction. She rolled a %i" % d
+        ttip = "表示她在工作的表现。她掷出了%i点" % d
 
         # re-rolls (traits/perks)
 
         if d == 1:
-            ttip += " (" + event_color["bad"] % "critical failure" + ")"
+            ttip += " (" + event_color["bad"] % "大失败" + ")"
 
             #Reroll chance
             if girls[0].get_effect("reroll", "critical failure") > 0 or (girls[0].get_effect("reroll", "job critical failure") > 0 and act in all_jobs) or (girls[0].get_effect("reroll", "whore critical failure") > 0 and act in all_sex_acts):
                 d = dice(6)
                 specials.append("reroll")
 
-                ttip += " (" + event_color["bad"] % "critical failure" + "). She rerolled a %i" % d
+                ttip += " (" + event_color["bad"] % "大失败" + ")。她掷出了%i点" % d
 
         if d == 2:
             if girls[0].get_effect("special", "unlucky"):
                 d = 1
                 specials.append("unlucky")
 
-                ttip += ", but it turned to a 1 because she is unlucky (" + event_color["bad"] % "critical failure" + ")"
+                ttip += "，但是因为她运气不好，点数变成了1 (" + event_color["bad"] % "大失败" + ")"
 
         if d == 5:
             if girls[0].get_effect("special", "lucky"):
                 d = 6
                 specials.append("lucky")
 
-                ttip += ", but it turned to a 6 because she is lucky"
+                ttip += "，因为她很幸运，点数变成了6"
 
-        ttip += "."
+        ttip += "。"
 
         roll = roll_dict[d]
 
         # A roll of 6 will bypass budget restrictions
 
         if d == 6:
-            ttip += " (" + event_color["good"] % "critical success" + "). She may ignore customer budget limits."
+            ttip += " (" + event_color["good"] % "critical success" + ")。 她可以让顾客为她消费超出预算的金币。"
             ignore_budget = 1
 
         roll_changes = __("Roll: ") + "{image=" + "img_dice" + str(d) + "}"
@@ -1926,7 +1926,7 @@ init -3 python:
             roll_changes += __(" (Reroll)")
             ev_sound = s_dice
 
-        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="Dice roll")
+        change_log.add(roll_changes, "header", ttip = ttip, ttip_title="判定")
 
         ## STEP 6: Misc. bonuses
 
@@ -2006,26 +2006,26 @@ init -3 python:
                     cust.entertainment_score = score
         #</Chris Job Mod>
 
-        change_log.add(__("{b}Final result{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + " result (%i){/color}" % score, ttip=result_reference)
+        change_log.add(__("{b}最终结果{/b}: %i\n" % score) + result_star_dict[result], "header", ttip_title="{color=" + result_colors[result] + "}" + __(result.capitalize()) + " result (%i){/color}" % score, ttip=result_reference)
 
         if act in all_jobs:
-            change_log.add("Customers entertained: %i/%i" % (cust.service_dict["entertained"], len(customers)))
+            change_log.add("满意的顾客: %i/%i" % (cust.service_dict["entertained"], len(customers)))
 
         elif act in all_sex_acts:
-            change_log.add("Customers served: %i/%i" % (cust.service_dict["laid"], len(customers)))
+            change_log.add("满足的顾客: %i/%i" % (cust.service_dict["laid"], len(customers)))
 
         # Get tip, xp, jp and rep
 
-        budget_ttip = "Customer budget is the cumulated amount they are willing to spend on this interaction.\n"
+        budget_ttip = "客户预算是他们愿意在青楼花费的金额。\n"
         if act in all_jobs:
             total_budget = sum(c.ent_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n顾客默认预算: %s (%s customers)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "job customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和其他效果: %s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2033,11 +2033,11 @@ init -3 python:
             total_budget = sum(c.wh_budget for c in customers)
             if not ignore_budget:
                 budget_boost = 1.0
-                budget_ttip += "\nCustomer initial budget: %s (%s customers)" % (total_budget, len(customers))
+                budget_ttip += "\n顾客默认预算: %s (%s customers)" % (total_budget, len(customers))
                 for girl in girls:
                     budget_boost *= girl.get_effect("boost", "whore customer budget")
                 if budget_boost != 1.0:
-                    budget_ttip += "\nPerks and special effects: %s" % percent_text(budget_boost - 1.0)
+                    budget_ttip += "\n天赋和其他效果: %s" % percent_text(budget_boost - 1.0)
 
                     total_budget *= budget_boost
 
@@ -2354,11 +2354,11 @@ init -3 python:
 
         for girl in girls:
             if act in all_jobs:
-                job_ttip = list_text([(j.capitalize() + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
+                job_ttip = list_text([(girl_related_dict[j.capitalize()] + " " + str(girl.job_level[j]) + " {image=img_star}") for j in all_jobs])
             elif act in all_sex_acts:
-                job_ttip = list_text([(a.capitalize() + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
+                job_ttip = list_text([(girl_related_dict[a.capitalize()] + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s changes" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s is a level %i %s.\n\n%s" % (girl.name, girl.level, girl.job, job_ttip))
+            change_log.add("%s 属性变化" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个%i级的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2368,7 +2368,7 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("LEVEL UP", col="good", ttip = girl.fullname + " is ready to level up (%i -> %i)" % (girl.level, girl.level+1))
+                change_log.add("等级提升", col="good", ttip = girl.fullname + " 准备升级 (%i -> %i)" % (girl.level, girl.level+1))
 
             change_log.add("{color=[c_lightgreen]}XP{/color}: %i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "Experience")
 
@@ -2380,7 +2380,7 @@ init -3 python:
                 # if len(girls) > 1:
                 #     text_changes += " {size=14}(" + girl.name + "){/size}" # Adds girl name for disambiguation if there are several
 
-                change_log.add("JOB SKILL UP", "header", col=c_orange)
+                change_log.add("工作技能等级提升", "header", col=c_orange)
 
             change_log.add("{color=[c_orange]}JP{/color}: %i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "Job points")
 
@@ -2486,7 +2486,7 @@ init -3 python:
                 else:
                     s_act = "naked"
 
-                s_des = {"naked" : "strip naked for him", "service" : "take care of his cock", "sex" : "have sex with him", "anal" : "let him fuck her ass", "fetish" : "do kinky stuff with him"}
+                s_des = {"naked" : "让他欣赏她美丽的胴体", "service" : "安慰一下他的老二", "sex" : "和他到隐蔽的角落里做爱", "anal" : "尝尝她后庭的滋味", "fetish" : "陪他玩些刺激的玩法"}
 
                 d = dice(3)
 
@@ -2696,7 +2696,7 @@ init -3 python:
                         text1 += girl.name + __(" blushes bright red and looks very uncomfortable with ") + __(long_act_description[s_act]) + __(". However, her nipples are erect and she becomes noticeably wet. {color=[c_yellow]}It's like she both loves and hates it.{/color}")
                         ev_sound = s_sigh
                         log.add_report(girl.name + __(" is {color=[c_darkgold]}ambivalent{/color} about ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Ambivalent act discovered:\n%s{/color}" % (c_yellow, s_act.capitalize())
+                        chg = "{color=%s}发现矛盾的性行为:\n%s{/color}" % (c_yellow, girl_related_dict[s_act])
 
                     elif pos_reaction:
                         if act == "service":
@@ -2709,13 +2709,13 @@ init -3 python:
                         text1 += __("\n{color=[c_green]}It seems that she loves ") + __(long_act_description[s_act]) + ".{/color}"
                         ev_sound = s_mmmh
                         log.add_report(girl.name + __(" is {color=[c_green]}sensitive{/color} to ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Positive act discovered:\n%s{/color}" % (c_green, s_act.capitalize())
+                        chg = "{color=%s}发现喜欢的性行为:\n%s{/color}" % (c_green, girl_related_dict[s_act])
 
                     elif neg_reaction:
                         text1 += girl.name + __(" acts very uncomfortable around the customer") + plur + __(", something is bothering her. {color=[c_red]}She seems to dislike ") + __(long_act_description[act]) + ".{/color}"
                         ev_sound = s_surprise
                         log.add_report(girl.name + __(" is {color=[c_red]}uncomfortable{/color} with ") + __(long_act_description[s_act]) + ".")
-                        chg = "{color=%s}Negative act discovered:\n%s{/color}" % (c_red, s_act.capitalize())
+                        chg = "{color=%s}发现讨厌的性行为:\n%s{/color}" % (c_red, girl_related_dict[s_act])
 
                     if pos_reaction or neg_reaction:
                         events.append(Event(pic = work_pic, char = girl.char, text = text1, changes=chg, sound = ev_sound, type = ev_type))
@@ -2752,7 +2752,7 @@ init -3 python:
                 girl.track_event("bad result", arg=(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
             elif result in ("good", "very good", "perfect"):
-                girl.track_event("good result", arg(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
+                girl.track_event("good result", arg=(tl_cn(result, misc_name_dict), tl_cn(act, girl_related_dict)))
 
 
         return events
@@ -4015,13 +4015,13 @@ init -3 python:
 
     def get_day_report(_log):
         if _log.net >= 0:
-            msg = "You made " + event_color["good"] % (str(round_int(_log.net)) + " gold") + " last night.\n"
+            msg = "你昨晚挣了" + event_color["good"] % (str(round_int(_log.net)) + "金币") + "。\n"
         else:
-            msg = "You lost " + event_color["bad"] % (str(round_int(_log.net)) + " gold") + " last night.\n"
+            msg = "你昨晚亏损了" + event_color["bad"] % (str(round_int(_log.net)) + "金币") + "。\n"
 
-        msg += "{size=-2}" + "- Gold made: + " + event_color["good"] % str(round_int(_log.gold_made)) + "\n"
-        msg += "- Girls upkeep: - " + event_color["bad"] % str(round_int(_log.upkeep)) + "\n"
-        msg += "- Brothel costs: - " + event_color["bad"] % str(round_int(_log.costs)) + "\n{/size}\n"
+        msg += "{size=-2}" + "- 营业额: + " + event_color["good"] % str(round_int(_log.gold_made)) + "\n"
+        msg += "- 支付工资: - " + event_color["bad"] % str(round_int(_log.upkeep)) + "\n"
+        msg += "- 青楼支出: - " + event_color["bad"] % str(round_int(_log.costs)) + "\n{/size}\n"
 
         msg += str(_log.cust) + "名顾客" + plural(_log.cust) + "光顾了青楼。\n"
         msg += "{size=-2}" + "- 顾客" + plural(_log.check("served")) + "被接待(常规): " + event_color["good"] % str(_log.check("served")) + "/" + str(_log.cust) + "人\n"
@@ -4036,55 +4036,55 @@ init -3 python:
         if _log.check("run_away"):
                 msg += event_color["bad"] % (str(_log.check("run_away")) + "个女孩" + plural(_log.check("run_away")) + "从青楼里逃跑了。")
 
-        msg += "\n{size=-2}" + "- Waitress: " + event_color["good"] % str(_log.check("waitress_days")) + "\n"
-        msg += "- Dancer: " + event_color["good"] % str(_log.check("dancer_days")) + "\n"
-        msg += "- Masseuse: " + event_color["good"] % str(_log.check("masseuse_days")) + "\n"
-        msg += "- Geisha: " + event_color["good"] % str(_log.check("geisha_days")) + "\n"
-        msg += "- Whore: " + event_color["good"] % str(_log.check("whore_days")) + "\n{/size}\n"
+        msg += "\n{size=-2}" + "- 女服务员: " + event_color["good"] % str(_log.check("waitress_days")) + "\n"
+        msg += "- 脱衣舞娘: " + event_color["good"] % str(_log.check("dancer_days")) + "\n"
+        msg += "- 按摩技师: " + event_color["good"] % str(_log.check("masseuse_days")) + "\n"
+        msg += "- 表演艺伎: " + event_color["good"] % str(_log.check("geisha_days")) + "\n"
+        msg += "- 妓　　女: " + event_color["good"] % str(_log.check("whore_days")) + "\n{/size}\n"
 
         if _log.check("rest_days") > 1:
-            msg += str(_log.check("rest_days")) + " girls were resting at the brothel. "
+            msg += str(_log.check("rest_days")) + "个女孩昨晚在房间里休息"
         elif _log.check("rest_days") > 0:
-            msg += str(_log.check("rest_days")) + " girl was resting at the brothel. "
+            msg += str(_log.check("rest_days")) + "个女孩昨晚在房间里休息"
 
         if _log.check("hurt_days") > 1:
-            msg += event_color["bad"] % (str(_log.check("hurt_days")) + " girls were hurt while working. ")
+            msg += event_color["bad"] % (str(_log.check("hurt_days")) + "个女孩在工作中受伤")
         elif _log.check("hurt_days") > 0:
-            msg += event_color["bad"] % (str(_log.check("hurt_days")) + " girl was hurt while working. ")
+            msg += event_color["bad"] % (str(_log.check("hurt_days")) + "个女孩在工作中受伤")
 
         if _log.check("exhausted"):
-            msg += event_color["bad"] % (str(_log.check("exhausted")) + " girl" + plural(_log.check("exhausted")) + " became exhausted while working. ")
+            msg += event_color["bad"] % (str(_log.check("exhausted")) + "个女孩" + plural(_log.check("exhausted")) + "在工作后筋疲力尽")
 
         msg += "\n"
 
         if farm.active:
-            msg += str(_log.check("farm_days") + _log.check("farm_rest_days")) + " girls were at the farm last night. "
+            msg += str(_log.check("farm_days") + _log.check("farm_rest_days")) + "个女孩昨晚在农场休息"
 
             if _log.check("farm_resisted_training"):
-                msg += event_color["bad"] % (str(_log.check("farm_resisted_training")) + " girl" + plural(_log.check("farm_resisted_training")) + " resisted training. ")
+                msg += event_color["bad"] % (str(_log.check("farm_resisted_training")) + "个女孩" + plural(_log.check("farm_resisted_training")) + "拒绝训练")
 
             if _log.check("farm_run_away"):
-                msg += event_color["bad"] % (str(_log.check("farm_run_away")) + " girl" + plural(_log.check("farm_run_away")) + " ran away from the farm.")
+                msg += event_color["bad"] % (str(_log.check("farm_run_away")) + "个女孩" + plural(_log.check("farm_run_away")) + "逃离了农场")
 
             if _log.check("farm_hurt"):
-                msg += event_color["bad"] % (str(_log.check("farm_hurt")) + " girl" + plural(_log.check("farm_hurt")) + " got hurt while resisting.")
+                msg += event_color["bad"] % (str(_log.check("farm_hurt")) + "个女孩" + plural(_log.check("farm_hurt")) + "在抵抗中受伤")
 
             if _log.check("minion_hurt"):
-                msg += event_color["bad"] % (str(_log.check("minion_hurt")) + " minion" + plural(_log.check("minion_hurt")) + " got hurt in the fighting.")
+                msg += event_color["bad"] % (str(_log.check("minion_hurt")) + "个单位" + plural(_log.check("minion_hurt")) + "在搏斗中受伤")
 
-            msg += "\n{size=-2}" + "- In training: " + event_color["good"] % str(_log.check("farm_training_days")) + "\n"
-            msg += "- In holding: " + event_color["good"] % str(_log.check("farm_holding_days")) + "{/size}\n"
+            msg += "\n{size=-2}" + "- 训练中: " + event_color["good"] % str(_log.check("farm_training_days")) + "\n"
+            msg += "- 关押中: " + event_color["good"] % str(_log.check("farm_holding_days")) + "{/size}\n"
 
             if _log.check("farm_rest_days") > 1:
-                msg += str(_log.check("farm_rest_days")) + " girls were resting at the farm. "
+                msg += str(_log.check("farm_rest_days")) + "个女孩在农场休息"
             elif _log.check("farm_rest_days") > 0:
-                msg += str(_log.check("farm_rest_days")) + " girl was resting at the farm. "
+                msg += str(_log.check("farm_rest_days")) + "个女孩在农场休息"
 
         return msg
 
     def get_next_day_report(): # Compiles Yesterday's report for the Brothel screen
 
-        msg = __("You have ") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __(" in your brothel (max ") + str(brothel.bedrooms) + ").\n\n"
+        msg = __("You have ") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __(" in your brothel (max ") + str(brothel.bedrooms) + "个)\n\n"
 
         working_girls = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True))
         waitresses = sum(1 for girl in MC.girls if girl.works_today(check_autorest=True) and girl.job == "waitress")
@@ -4197,17 +4197,17 @@ init -3 python:
         cust_text = str(cust_nb) + " " + __("customers came to ") + brothel.name + "."
         log.add_report(event_color["good"] % cust_text)
 
-        cust_text += "\nBase customers: %s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
+        cust_text += "\n顾客数量: %s" % plus_text(cust_nb - cust_nb_dict["advertising"] - cust_nb_dict["special"])
 
         # if cust_nb_dict["advertising"] and cust_nb_dict["special"]:
         #     # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising and +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
         #     cust_text += "\nAdvertising: %s\nSpecial effects: %s" % (plus_text(cust_nb_dict["advertising"]), plus_text(cust_nb_dict["special"]))
         if cust_nb_dict["advertising"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["advertising"]) + __(" from advertising)")
-            cust_text += "\nAdvertising: %s" % (plus_text(cust_nb_dict["advertising"]))
+            cust_text += "\n广告引流: %s" % (plus_text(cust_nb_dict["advertising"]))
         elif cust_nb_dict["special"]:
             # cust_text += __(" (including +") + str_int(cust_nb_dict["special"]) + __(" from special effects)")
-            cust_text += "\nSpecial effects: %s" % (plus_text(cust_nb_dict["special"]))
+            cust_text += "\n特殊增益: %s" % (plus_text(cust_nb_dict["special"]))
 
         log.cust = cust_nb
 
@@ -4222,7 +4222,7 @@ init -3 python:
         renpy.random.shuffle(cust_list)
 
         for c in cust_list:
-            log.add_report(c.name + __(" came to the brothel. He wants to be attended to by a ") + __(c.wants_entertainment) + __(" and likes ") + __(c.wants_sex_act) + ".")
+            log.add_report(c.name + "光顾了青楼。他想要由" + __(girl_related_dict[c.wants_entertainment]) + "接待，并想要有人为他提供" + __(girl_related_dict[c.wants_sex_act]) + "服务")
 
         return cust_list, cust_text, cust_nb_dict
 

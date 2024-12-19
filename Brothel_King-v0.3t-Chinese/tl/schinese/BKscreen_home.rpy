@@ -60,7 +60,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:318
     old "New items are available."
-    new "新品上市。"
+    new "新品上市，快来看看吧。"
 
     # game/BKscreen_home.rpy:327
     old "Visit the {b}shop{/b} to buy useful items.\nThe shop currently has {color=[c_yellow]}{b}"
@@ -140,19 +140,19 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:262
     old "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}"
-    new "Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}"
+    new "前往农场，在那里训练奴隶。吉泽尔现在管理着{color=[c_hotpink]}{b}"
 
     # game/BKscreen_home.rpy:262
     old "{/b}{/color} and {color=[c_softpurple]}{b}"
-    new "{/b}{/color} and {color=[c_softpurple]}{b}"
+    new "{/b}{/color}和{color=[c_softpurple]}{b}"
 
     # game/BKscreen_home.rpy:262
     old " minion"
-    new " minion"
+    new "个单位"
 
     # game/BKscreen_home.rpy:262
     old "{/b}{/color} at the farm."
-    new "{/b}{/color} at the farm."
+    new "{/b}{/color}。"
 
     # game/BKscreen_home.rpy:280
     old "{u}V{/u}isit City"
@@ -172,7 +172,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:337
     old "New classes and tasks are available."
-    new "New classes and tasks are available."
+    new "新的委托和培训课程发布了。"
 
     # game/BKscreen_home.rpy:344
     old "Pos{u}t{/u}ings"

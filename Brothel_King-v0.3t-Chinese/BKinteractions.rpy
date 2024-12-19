@@ -940,6 +940,8 @@ label slave_chat_tastes(girl):
 
             $ thing, best = girl.talk_tastes("likes")
 
+            $ thing_cn = tl_cn(thing, girl_related_dict)
+
             call dialogue(girl, "slave chat tastes likes") from _call_dialogue_150
 
             $ girl.personality_unlock["fav_" + thing] = True
@@ -947,6 +949,8 @@ label slave_chat_tastes(girl):
         elif result == "dislikes":
 
             $ thing, worst = girl.talk_tastes("dislikes")
+
+            $ thing_cn = tl_cn(thing, girl_related_dict)
 
             call dialogue(girl, "slave chat tastes dislikes") from _call_dialogue_151
 
@@ -1022,7 +1026,7 @@ label slave_chat_tastes(girl):
             "She tells you that she loves [fix_desc]"
 
             if not girl.personality_unlock[fix.name]:
-
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered [girl.name]'s fixation with [fix.name]."
 
                 $ girl.personality_unlock[fix.name] = True
@@ -1038,7 +1042,7 @@ label slave_chat_tastes(girl):
                 "She tells you that she really hates [fix_desc] It creeps her out."
 
                 if not girl.personality_unlock[fix.name]:
-
+                    $ cntext = girl_related_dict[fix.name]
                     "You have discovered [girl.name]'s disgust for [fix.name]."
 
                     $ girl.personality_unlock[fix.name] = True
@@ -1327,8 +1331,8 @@ label slave_remove_fixation(girl):
 
         if len(neg_fix) == 1:
             fix = neg_fix[0]
-
-            renpy.say(you, "Today, I want you to overcome your disgust for [fix.short_name].")
+            cnttxt = tl_cn(fix.short_name, girl_related_dict)
+            renpy.say(you, "今天，我希望你能克服对[fix.short_name]恐惧。")
 
         else:
             menu_list = [] #[("Choose a fixation to work on", None)]
@@ -1338,7 +1342,7 @@ label slave_remove_fixation(girl):
                 else:
                     menu_list.append((__(fix.name.capitalize()), fix))
 
-            menu_list.append(("Go back", "back"))
+            menu_list.append(("返回", "back"))
             renpy.say(you, "Today, I want you to overcome your disgust for...", interact=False)
             fix = menu(menu_list) # renpy.display_menu(menu_list)
 
@@ -1347,6 +1351,7 @@ label slave_remove_fixation(girl):
         return
 
     elif fix.name in girl.locked_fix:
+        $ cntext = girl_related_dict[fix.name]
         "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
         $ inter.canceled=True
         return
@@ -1622,9 +1627,9 @@ label slave_train_constitution(girl):
 
     "You ask [girl.name] to do a few simple exercises."
 
-    $ MC.rand_say((str(10 + dice(40)) + __(" push-ups. Go!"), "Run up and down the stairs. Count your steps.", "Carry this bucket of water four times around the yard.",
-                   __("Lift this log about ") + str(5 + dice(15)) + __(" times."), "Run around the neighbourhood for half an hour.", "wr: Train a little with a practice sword.",
-                   "tr: Take Drogon out for a walk. Try to keep up!", "wz: Go fetch my magical supplies. It's a large, metal chest."))
+    $ MC.rand_say((str(10 + dice(40)) + "十组俯卧撑，快!", "在楼梯上下往返。记得数你的步数。", "提着这桶水绕院子四圈。",
+                   "抬起这根木头" + str(5 + dice(15)) + "次。", "绕着青楼跑半个小时。", "wr: 挥舞木剑100次。",
+                   "tr: 带小龙出去散步。别跟丢了!", "wz: 去把我的魔法道具搬来。那是一个很大的金属箱子。"))
 
     $ pic = girl.get_pic("constitution", "dancer", "profile", naked_filter=True, soft=True)
 
@@ -1865,10 +1870,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, 50)
 
             if not girl.personality_unlock[fix.name]:
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s fixations: {b}[fix.name]{/b}. You can use it to accelerate her training."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("pos fixations")
             else:
+                $ cntext = girl_related_dict[fix.name]
                 "Because [girl.name] loves {b}[fix.name]{/b}, she has progressed faster."
 
         elif fix.name in [f.name for f in girl.neg_fixations]:
@@ -1888,10 +1895,12 @@ label slave_advanced_training(girl, act, step):
             $ girl.change_preference(act, -75)
 
             if not girl.personality_unlock[fix.name]:
+                $ cntext = girl_related_dict[fix.name]
                 "You have discovered one of [girl.fullname]'s phobias: {b}[fix.name]{/b}. Perhaps you can put that information to good use."
                 $ girl.personality_unlock[fix.name] = True
                 $ test_achievement("neg fixations")
             else:
+                $ cntext = girl_related_dict[fix.name]
                 "Because [girl.name] hates {b}[fix.name]{/b}, her progress has been slowed."
 
         else:
@@ -3093,6 +3102,8 @@ label slave_rape(girl, act): # If girl refused and was forced
             $ reaction = ""
 
         if reaction:
+            $ cntext = girl_related_dict[act]
+            $ cntext2 = girl_related_dict[reaction]
             menu:
                 "You know that [girl.name] has [reaction] for [act] acts. Do you want to try to use it against her?"
 

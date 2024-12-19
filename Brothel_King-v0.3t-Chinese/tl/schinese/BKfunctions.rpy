@@ -216,11 +216,11 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2345
     old " {color=[c_green]}The customer%s spent all of %s budget on %s.{/color}"
-    new " {color=[c_green]}顾客 %s 把 %s 的预算全都花在 %s 身上。{/color}"
+    new " {color=[c_green]}顾客 %s 把 %s 的预算全都花在了%s身上。{/color}"
 
     # game/BKfunctions.rpy:2349
     old " {color=[c_gold]}The customer%s went over %s budget on %s (+%s gold).{/color}"
-    new " {color=[c_gold]}顾客 把 %s 的预算全都花在 %s 身上 (+%s 金币)。{/color}"
+    new " {color=[c_gold]}顾客把%s预算全都花在 %s 身上 (+%s 金币)。{/color}"
 
     # game/BKfunctions.rpy:2497
     old "Customers started clamoring for "
@@ -356,7 +356,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2658
     old "\n{color=[c_red]}She coldly told the customer off, threatening to call security.{/color}\nHe was upset and left grumbling."
-    new "\n{color=[c_red]}她无情地拒绝了顾客，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。"
+    new "\n{color=[c_red]}她冷漠地拒绝了顾客，威胁要呼叫保安。{/color}\n他很不高兴，怨声载道地离开了。"
 
     # game/BKfunctions.rpy:2663
     old "\nShe ignored your order to stay away from customers."
@@ -492,7 +492,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4197
     old "customers came to "
-    new "位顾客来到"
+    new "位顾客来到了"
 
     # game/BKfunctions.rpy:4225
     old " came to the brothel. He wants to be attended to by a "
@@ -500,5 +500,5 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4225
     old " and likes "
-    new "并且喜欢"
+    new "并且想要"
 

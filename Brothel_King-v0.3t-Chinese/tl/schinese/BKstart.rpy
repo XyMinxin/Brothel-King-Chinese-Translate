@@ -774,7 +774,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "The chapter you will start the game at. Not compatible with challenges such as the free girl challenge."
-    new "The chapter you will start the game at. Not compatible with challenges such as the free girl challenge."
+    new "在第几章节开始游戏。这将禁用挑战，如照单全收的挑战。"
 
     # game/BKstart.rpy:793
     old "starting gold"
@@ -782,7 +782,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "The amount of money you will start the game with (default: {image=img_gold} [starting_gold])."
-    new "The amount of money you will start the game with (default: {image=img_gold} [starting_gold])."
+    new "游戏开始时的初始资金 (默认: {image=img_gold} [starting_gold])."
 
     # game/BKstart.rpy:793
     old "starting resources"

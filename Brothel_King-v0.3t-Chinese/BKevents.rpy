@@ -472,33 +472,33 @@ label chapter(chapter = None, silent=False): ## Shows the chapter intro with tex
     python:
         if game.chapter == 0:
 
-            text1 = 'Prelude'
+            text1 = '序章'
 
-            text2 = "Dark streets, dark deeds"
+            text2 = "月黑风高夜"
 
         elif game.chapter == 1:
 
-            text1 = "Chapter One"
+            text1 = "第一章"
 
-            text2 = "Small beginnings"
+            text2 = "扬帆起航"
 
         elif game.chapter == 2:
 
-            text1 = "Chapter Two"
+            text1 = "第二章"
 
-            text2 = "Blades in the night"
+            text2 = "夜色之刃"
 
         elif game.chapter == 3:
 
-            text1 = "Chapter Three"
+            text1 = "第三章"
 
-            text2 = "Fire at dawn"
+            text2 = "黎明之火"
 
         elif game.chapter == 4:
 
-            text1 = "Chapter Four"
+            text1 = "第四章"
 
-            text2 = "Work in progress"
+            text2 = "正在制作中"
 
         elif game.chapter == 5:
 
@@ -3784,11 +3784,12 @@ label farm_max_skill(girl, skill):
         $ room = brothel.get_random_room_pic_path()
     else:
         $ room = "black"
-
+    $ cntext = girl_related_dict[skill]
     gizel normal "I have trained [girl.fullname]'s {b}[skill]{/b} skill to her current maximum."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
-
+       
+        $ cntext = girl_related_dict[skill]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 
@@ -3809,10 +3810,12 @@ label farm_max_pref(girl, act):
     else:
         $ room = "black"
 
+    $ cntext = girl_related_dict[act]
     gizel normal "[girl.fullname] is now fascinated with {b}[act]{/b}. I can still train her a bit more, though... It would still increase her market value."
 
     if girl in farm.girls and farm.programs[girl].act == act: # Will not ask if program was changed
 
+        $ cntext = girl_related_dict[act]
         menu:
             gizel "Would you like to change [girl.fullname]'s training?"
 

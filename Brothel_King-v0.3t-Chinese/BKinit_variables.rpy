@@ -470,27 +470,27 @@ init -3 python:
                 }
 
     sorter_dict = { # [Caption, attribute, tooltip, reverse order]
-                    "alpha" : ["名称", "name", "首字母", False],
-                    "badge" : ["徽章", "badge", "徽章", True],
-                    "price" : ["价值", "price", "价值高低", False],
-                    "type" : ["种类", "filter", "物品类型", False],
-                    "level" : ["等级", "level", "女孩的等级", True],
-                    "rank" : ["阶级", "rank", "女孩的阶级", True],
-                    "job" : ["职业", "job_sort_value", "女孩的工作", False],
-                    "beauty" : ["外貌", "beauty", "女孩的外貌", True],
-                    "body" : ["身材", "body", "女孩的身材", True],
-                    "charm" : ["魅力", "charm", "女孩的魅力", True],
-                    "refinement" : ["优雅", "refinement", "女孩的优雅", True],
-                    "libido" : ["性欲", "libido", "女孩的性欲", True],
-                    "obedience" : ["服从", "obedience", "女孩的服从", True],
-                    "sensitivity" : ["敏感", "sensitivity", "女孩的敏感", True],
-                    "constitution" : ["体质", "constitution", "女孩的体质", True],
-                    "service" : ["侍奉", "service", "女孩的侍奉水平", True],
-                    "sex" : ["性交", "sex", "女孩的性交水平", True],
-                    "anal" : ["肛交", "anal", "女孩的肛交水平", True],
-                    "fetish" : ["调教", "fetish", "女孩的调教水平", True],
-                    "energy" : ["精力", "energy", "女孩的精力", False],
-                    "experience" : ["性能力", "training_value", "性训练水平", True],
+                    "alpha" : ["名称", "name", "首字母排序", False],
+                    "badge" : ["徽章", "badge", "徽章排序", True],
+                    "price" : ["价值", "price", "价值高低排序", False],
+                    "type" : ["种类", "filter", "物品类型排序", False],
+                    "level" : ["等级", "level", "女孩的等级排序", True],
+                    "rank" : ["阶级", "rank", "女孩的阶级排序", True],
+                    "job" : ["职业", "job_sort_value", "女孩的工作排序", False],
+                    "beauty" : ["外貌", "beauty", "女孩的外貌排序", True],
+                    "body" : ["身材", "body", "女孩的身材排序", True],
+                    "charm" : ["魅力", "charm", "女孩的魅力排序", True],
+                    "refinement" : ["优雅", "refinement", "女孩的优雅排序", True],
+                    "libido" : ["性欲", "libido", "女孩的性欲排序", True],
+                    "obedience" : ["服从", "obedience", "女孩的服从排序", True],
+                    "sensitivity" : ["敏感", "sensitivity", "女孩的敏感排序", True],
+                    "constitution" : ["体质", "constitution", "女孩的体质排序", True],
+                    "service" : ["侍奉", "service", "女孩的侍奉水平排序", True],
+                    "sex" : ["性交", "sex", "女孩的性交水平排序", True],
+                    "anal" : ["肛交", "anal", "女孩的肛交水平排序", True],
+                    "fetish" : ["调教", "fetish", "女孩的调教水平排序", True],
+                    "energy" : ["精力", "energy", "女孩的精力排序", False],
+                    "experience" : ["性技", "training_value", "性训练水平排序", True],
                 }
 
     ## RESOURCES ##
@@ -1114,27 +1114,27 @@ init -4 python:
                     }
 
     mood_description = {
-                        "++++++" : "她感到十分幸福。她的心情{b}欣喜若狂{/b}。",
-                        "+++++" : "她的心情{b}十分高兴{/b}。",
-                        "++++" : "她的心情{b}倍感舒畅{/b}。",
-                        "+++" : "她的心情{b}轻松愉悦{/b}。",
-                        "++" : "她的心情{b}较为满意{/b}。",
-                        "+" : "她的心情{b}差强人意{/b}。",
-                        "0" : "她的心情{b}较为平静{/b}。",
-                        "-" : "她的心情{b}有些不满{/b}。",
-                        "--" : "她的心情{b}很不满意{/b}。",
-                        "---" : "她的心情{b}很不高兴{/b}。",
-                        "----" : "她的心情{b}十分不爽{/b}。",
-                        "-----" : "她的心情{b}糟糕透顶{/b}。",
-                        "------" : "她的生活简直是地狱。她的心情{b}生不如死{/b}。",
+                        "++++++" : "她感到十分幸福。她现在{b}欣喜若狂{/b}。",
+                        "+++++" : "她现在{b}十分高兴{/b}。",
+                        "++++" : "她现在{b}倍感舒畅{/b}。",
+                        "+++" : "她现在{b}轻松愉悦{/b}。",
+                        "++" : "她现在{b}较为满意{/b}。",
+                        "+" : "她现在{b}差强人意{/b}。",
+                        "0" : "她现在{b}较为平静{/b}。",
+                        "-" : "她现在{b}有些不满{/b}。",
+                        "--" : "她现在{b}很不满意{/b}。",
+                        "---" : "她现在{b}很不高兴{/b}。",
+                        "----" : "她现在{b}十分不爽{/b}。",
+                        "-----" : "她现在{b}糟糕透顶{/b}。",
+                        "------" : "她的生活简直是地狱。她现在{b}生不如死{/b}。",
 
-                        "change +++" : "她的心情{b}迅速好转{/b}",
-                        "change ++" : "她的心情{b}有所改善{/b}",
-                        "change +" : "她的心情{b}开始好转{/b}",
-                        "no change" : "她的心情{b}十分稳定{/b}",
-                        "change -" : "她的心情{b}开始恶化{/b}",
-                        "change --" : "她的心情{b}正在恶化{/b}",
-                        "change ---" : "她的心情{b}迅速恶化{/b}",
+                        "change +++" : "她现在{b}迅速好转{/b}",
+                        "change ++" : "她现在{b}有所改善{/b}",
+                        "change +" : "她现在{b}开始好转{/b}",
+                        "no change" : "她现在{b}十分稳定{/b}",
+                        "change -" : "她现在{b}开始恶化{/b}",
+                        "change --" : "她现在{b}正在恶化{/b}",
+                        "change ---" : "她现在{b}迅速恶化{/b}",
                         }
 
     love_description = {
@@ -1294,11 +1294,11 @@ init python:
                                 # Rewardable events
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
-                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}%s{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}(%s)。", discipline=False),
+                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[%s]{/color}([girl_related_dict[%s]])。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
-                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了%s训练{/color}。", discipline=False),
+                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
                                 "helped" : GirlRecentEvent(type="helped", action="帮助朋友", base_description="", discipline=False), # Not implemented
 
 
@@ -1311,12 +1311,12 @@ init python:
 
                                 # Punishable events
                                 "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了。", encourage=False),
-                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以%s的形式工作{/color}。", encourage=False),
+                                "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]的形式工作{/color}。", encourage=False),
                                 "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人%s{/color}。", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}%s{/color}(%s)。", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[%s]{/color}([girl_related_dict[%s]])。", encourage=False),
                                 "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
                                 "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
-                                "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练(%s){/color}。", encourage=False),
+                                "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练([girl_related_dict[%s]]){/color}。", encourage=False),
                                 "argued" : GirlRecentEvent(type="argued", action="与对手争执", base_description="", encourage=False), # Not implemented
 
                                 # Passive events (cannot be punished or rewarded=)

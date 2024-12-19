@@ -906,7 +906,7 @@ screen sorting_tab(context, sort_target=None, sorters=[], use_stats=False, small
                         action (Function(sort_target.sort, key=lambda x, s=_attr: x.get_stat(s), reverse=_reverse), SetDict(game.sorting_dict, context, [_caption, _attr, _ttip, _reverse, True]))
                     else:
                         action (Function(sort_target.sort, key=lambda x, s=_attr: getattr(x, s), reverse=_reverse), SetDict(game.sorting_dict, context, [_caption, _attr, _ttip, _reverse, False]))
-                    tooltip __("Click to sort by ") + __(_ttip) +"."
+                    tooltip __("Click to sort by ") + __(_ttip) +"进行排序"
 
 screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also accept Minions as 'items'
 
@@ -941,7 +941,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
 
             if search:
                 hbox:
-                    text __("Search: ") size res_font(16) color c_brown
+                    text "搜索: " size res_font(16) color c_brown
                     input size res_font(16) color c_darkorange changed(MC.add_text_filter)
 
             if items:
