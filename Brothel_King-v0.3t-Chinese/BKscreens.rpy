@@ -413,7 +413,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip (__("%s\nToday is %s, Y%i M%i D%i." % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day)))
+            tooltip ("%s\n今天是%s, 第%i年%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
 
             hbox:
                 spacing xres(8)
@@ -5230,7 +5230,7 @@ screen brothel_report():
                             action Call("latest_customer_satisfaction")
 
                 else:
-                    text __("Nothing to report") size res_font(14) italic True color c_brown
+                    text "没有可报告的事件" size res_font(14) italic True color c_brown
 
             viewport:
                 mousewheel True
@@ -5911,10 +5911,10 @@ screen quick_start(def_panel = "MC"):
 
                 vbox xfill True spacing yres(20):
                     hbox xalign 0.05 spacing xres(12):
-                        label _("Achievement crystals: ") text_size res_font(24) text_color c_purple yalign 1.0
+                        label "成就水晶:" text_size res_font(24) text_color c_purple yalign 1.0
                         use crystal_display(" %i/%i" % (spent_crystals, total_crystals), sz=24, prefix="")
                         null
-                        text __("Use crystals to unlock extra options for the game. You can earn crystals by unlocking achievements.") yalign 1.0 size res_font(14) italic True color c_purple
+                        text "使用水晶解锁游戏中的额外增幅。你可以通过解锁成就来获得水晶。" yalign 1.0 size res_font(14) italic True color c_purple
 
                     vbox spacing yres(12) box_wrap True xsize 0.7:
                         for s in ngps:
@@ -6940,7 +6940,7 @@ screen farm_tab():
                                         text "{color=[c_red]}✙{/color}" size res_font(14) font "1.ttf" yalign 0.5
 
                         else:
-                            text __("Nothing to report.") size res_font(14)
+                            text "没有可报告的事件" size res_font(14)
 
             text ""
 

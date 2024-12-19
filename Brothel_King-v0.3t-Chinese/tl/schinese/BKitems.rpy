@@ -737,6 +737,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Stolen underwear"
     new "原味内裤"
+    old "stolen underwear"
+    new "原味内裤"
 
     # game/BKitems.rpy:482
     old "so you're into these, eh?"
@@ -744,6 +746,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Romantic novel"
+    new "言情小说"
+    old "romantic novel"
     new "言情小说"
 
     # game/BKitems.rpy:482
@@ -753,6 +757,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Erotic manual"
     new "工口读物"
+    old "erotic manual"
+    new "工口读物"
 
     # game/BKitems.rpy:482
     old "50 positions that you can only achieve using black magic."
@@ -760,6 +766,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Goldleaf book"
+    new "金箔笔记"
+    old "goldleaf book"
     new "金箔笔记"
 
     # game/BKitems.rpy:482
@@ -769,6 +777,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Book of magical cocktails"
     new "魔药大全"
+    old "book of magical cocktails"
+    new "魔药大全"
 
     # game/BKitems.rpy:482
     old "Warning: consuming those potions may result in loss of memory. Also,  dignity."
@@ -776,6 +786,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Pet"
+    new "可爱萌宠"
+    old "pet"
     new "可爱萌宠"
 
     # game/BKitems.rpy:482
@@ -785,6 +797,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Silky nighties"
     new "轻纱睡衣"
+    old "silky nighties"
+    new "轻纱睡衣"
 
     # game/BKitems.rpy:482
     old "Smooth and sexy."
@@ -792,6 +806,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Sakura liquor"
+    new "樱花清酒"
+    old "sakura liquor"
     new "樱花清酒"
 
     # game/BKitems.rpy:482
@@ -801,6 +817,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Sexy high heels"
     new "高跟鞋"
+    old "sexy high heels"
+    new "高跟鞋"
 
     # game/BKitems.rpy:482
     old "Some women would kill to get their hands on those shoes. Actually,  they're a little blood spattered."
@@ -809,6 +827,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Champagne"
     new "皇家礼炮"
+    old "champagne"
+    new "皇家礼炮"
 
     # game/BKitems.rpy:482
     old "'Le Nouveau Riche': A strong drink; also, a statement that you can afford it."
@@ -816,6 +836,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Aphrodisiac"
+    new "催情粉末"
+    old "aphrodisiac"
     new "催情粉末"
 
     # game/BKitems.rpy:482
@@ -1295,6 +1317,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Elvish-made penis enlarger"
     new "精灵制造的阴茎放大器"
+    old "elvish-made penis enlarger"
+    new "精灵制造的阴茎放大器"
 
     # game/BKitems.rpy:482
     old "That's not mine. This sort of thing ain't my bag, baby!"
@@ -1302,6 +1326,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Machine lubricant"
+    new "机器润滑油"
+    old "machine lubricant"
     new "机器润滑油"
 
     # game/BKitems.rpy:482
@@ -1311,6 +1337,8 @@ translate schinese strings:
     # game/BKitems.rpy:482
     old "Strange feed"
     new "奇怪的饲料"
+    old "strange feed"
+    new "奇怪的饲料"
 
     # game/BKitems.rpy:482
     old "Like it when they hold onto your leg and rubs themselves up and down? Because this feed sure makes them wanna do that."
@@ -1318,6 +1346,8 @@ translate schinese strings:
 
     # game/BKitems.rpy:482
     old "Monster cookie"
+    new "怪物饼干"
+    old "monster cookie"
     new "怪物饼干"
 
     # game/BKitems.rpy:482

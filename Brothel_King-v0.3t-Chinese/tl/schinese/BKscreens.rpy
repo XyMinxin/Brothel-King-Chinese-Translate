@@ -1618,10 +1618,6 @@ translate schinese strings:
     old "Show satisfaction report"
     new "Show satisfaction report"
 
-    # game/BKscreens.rpy:5233
-    old "Nothing to report"
-    new "Nothing to report"
-
     # game/BKscreens.rpy:5539
     old "Click to go back (or use right-click)."
     new "点击返回(或直接单击右键)"
@@ -1648,7 +1644,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5760
     old "Choose your girl mixes."
-    new "Choose your girl mixes."
+    new "选择你的女孩包组合。"
 
     # game/BKscreens.rpy:5763
     old "NewGame+"
@@ -1656,119 +1652,111 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5763
     old "Access NewGame+ settings."
-    new "Access NewGame+ settings."
+    new "进入新周目设置。"
 
     # game/BKscreens.rpy:5777
     old "Name: "
-    new "Name: "
+    new "玩家昵称"
 
     # game/BKscreens.rpy:5786
     old "Class"
-    new "Class"
+    new "职业"
 
     # game/BKscreens.rpy:5804
     old "Religion"
-    new "Religion"
+    new "信仰"
 
     # game/BKscreens.rpy:5834
     old "Change your Main Character's picture."
-    new "Change your Main Character's picture."
+    new "切换你的主角立绘。"
 
     # game/BKscreens.rpy:5876
     old "{b}Warning{/b}: Your choice of active girl mixes cannot be changed after starting a game, although you can still add or remove girl packs from mixes."
-    new "{b}Warning{/b}: Your choice of active girl mixes cannot be changed after starting a game, although you can still add or remove girl packs from mixes."
+    new "{b}警告{/b}:你激活的女孩组合无法在开始游戏后改变，但你仍然可以添加或删除女孩包。"
 
     # game/BKscreens.rpy:5878
     old "Click on a girl mix to add or remove it from this game (you must choose at least one)."
-    new "Click on a girl mix to add or remove it from this game (you must choose at least one)."
+    new "点击一个女孩组合来添加或把它删除（你必须选择至少一个）。"
 
     # game/BKscreens.rpy:5900
     old "Edit girl mixes"
-    new "Edit girl mixes"
+    new "编辑女孩组合"
 
     # game/BKscreens.rpy:5900
     old "Click here to edit your girl mixes."
-    new "Click here to edit your girl mixes."
+    new "点击这里编辑你的女孩组合包。"
 
     # game/BKscreens.rpy:5906
     old "{i} by %s{/i} (%s)"
     new "{i} by %s{/i} (%s)"
 
-    # game/BKscreens.rpy:5914
-    old "Achievement crystals: "
-    new "Achievement crystals: "
-
-    # game/BKscreens.rpy:5917
-    old "Use crystals to unlock extra options for the game. You can earn crystals by unlocking achievements."
-    new "Use crystals to unlock extra options for the game. You can earn crystals by unlocking achievements."
-
     # game/BKscreens.rpy:5936
     old "Activate"
-    new "Activate"
+    new "激活"
 
     # game/BKscreens.rpy:5936
     old "Deactivate"
-    new "Deactivate"
+    new "关闭"
 
     # game/BKscreens.rpy:5959
     old "Reset NG+ settings"
-    new "Reset NG+ settings"
+    new "重置新周目选项"
 
     # game/BKscreens.rpy:5959
     old "Reset all settings to default value"
-    new "Reset all settings to default value"
+    new "将所有设置重置为默认值"
 
     # game/BKscreens.rpy:6022
     old "Achievements will be enabled for this game."
-    new "Achievements will be enabled for this game."
+    new "本局游戏将启用成就系统。"
 
     # game/BKscreens.rpy:6024
     old "Achievements will be disabled for this game."
-    new "Achievements will be disabled for this game."
+    new "本局游戏将禁用成就系统。"
 
     # game/BKscreens.rpy:6026
     old "CONFIRM"
-    new "CONFIRM"
+    new "确认"
 
     # game/BKscreens.rpy:6026
     old "Start a new game with these settings."
-    new "Start a new game with these settings."
+    new "按照当前设置开始新的一局游戏。"
 
     # game/BKscreens.rpy:6050
     old "Click here to change your character's name"
-    new "Click here to change your character's name"
+    new "点击此处修改玩家昵称"
 
     # game/BKscreens.rpy:6051
     old "You need "
-    new "You need "
+    new "你需要"
 
     # game/BKscreens.rpy:6079
     old "Use a skill point to raise this attribute (max %i)"
-    new "Use a skill point to raise this attribute (max %i)"
+    new "使用技能点提升此属性 (上限 %i)"
 
     # game/BKscreens.rpy:6101
     old "You get 1 skill point for every new level."
-    new "You get 1 skill point for every new level."
+    new "你每升一级都会获得1点技能点。"
 
     # game/BKscreens.rpy:6135
     old "Change your character's picture."
-    new "Change your character's picture."
+    new "切换主角立绘。"
 
     # game/BKscreens.rpy:6182
     old "Right-click on a spell to set-up auto-cast"
-    new "Right-click on a spell to set-up auto-cast"
+    new "右键单击法术可以自动释放它"
 
     # game/BKscreens.rpy:6205
     old "(Auto-cast: "
-    new "(Auto-cast: "
+    new "(自动施法: "
 
     # game/BKscreens.rpy:6205
     old ")\n(Active)"
-    new ")\n(Active)"
+    new ")\n(激活)"
 
     # game/BKscreens.rpy:6213
     old "(Active)"
-    new "(Active)"
+    new "(激活)"
 
     # game/BKscreens.rpy:6255
     old "/night"
@@ -1776,7 +1764,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6269
     old "{i}You do not know any spells yet. You must increase your level.{/i}"
-    new "{i}You do not know any spells yet. You must increase your level.{/i}"
+    new "{i}你还没有掌握任何咒语。请提高你的等级。{/i}"
 
     # game/BKscreens.rpy:6346
     old "Duration"
@@ -2077,10 +2065,6 @@ translate schinese strings:
     # game/BKscreens.rpy:6933
     old "Hurt minions: "
     new "Hurt minions: "
-
-    # game/BKscreens.rpy:6943
-    old "Nothing to report."
-    new "Nothing to report."
 
     # game/BKscreens.rpy:6948
     old "{b}Facilities & Minions{/b}"

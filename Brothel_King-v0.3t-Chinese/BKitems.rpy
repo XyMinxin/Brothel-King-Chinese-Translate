@@ -941,7 +941,7 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
 
             if search:
                 hbox:
-                    text __("Search: ") size res_font(16) color c_brown
+                    text "搜索: " size res_font(16) color c_brown
                     input size res_font(16) color c_darkorange changed(MC.add_text_filter)
 
             if items:

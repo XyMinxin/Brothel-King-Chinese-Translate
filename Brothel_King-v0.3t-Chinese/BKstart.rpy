@@ -789,62 +789,62 @@ label init_game(quick=False):
 
 
     # NG+ Settings init
-
+#NGPSETTING名无法识别，故修改原文件
     $ NGP_settings = [ # Types: gold, resources, int, bool, plus, boost, dispenser, item, pref, girl
-        NGPSetting(_("starting chapter"), "int", label="Headstart", values = range(1, 8), cost=[10*i for i in range(2, 8)], ttip=__("The chapter you will start the game at. Not compatible with challenges such as the free girl challenge.")),
+        NGPSetting("starting chapter", "int", label="旅途起点", values = range(1, 8), cost=[10*i for i in range(2, 8)], ttip=__("The chapter you will start the game at. Not compatible with challenges such as the free girl challenge.")),
 
-        NGPSetting(_("starting gold"), "gold", label="Savings", values = [5, 15, 100, 999], cost = [2, 3, 4, 5], ttip=__("The amount of money you will start the game with (default: {image=img_gold} [starting_gold]).")),
-        NGPSetting(_("starting resources"), "resources", label="Resourceful", values= [20, 10, 5], cost = [15, 20, 25], ttip=__("Start the game with extra resources.")),
-        NGPSetting(_("extractors Mk I"), "int", label="Capitalist I", values= range(1, 4), cost = [25, 50, 75], ttip=__("Start the game with resource extractors Mk I.")),
-        NGPSetting(_("extractors Mk II"), "int", label="Capitalist II", values= range(1, 4), cost = [35, 70, 105], ttip=__("Start the game with resource extractors Mk II.")),
+        NGPSetting("starting gold", "gold", label="私人金库", values = [5, 15, 100, 999], cost = [2, 3, 4, 5], ttip=__("The amount of money you will start the game with (default: {image=img_gold} [starting_gold]).")),
+        NGPSetting("starting resources", "resources", label="Resourceful", values= [20, 10, 5], cost = [15, 20, 25], ttip=__("Start the game with extra resources.")),
+        NGPSetting("extractors Mk I", "int", label="甩手掌柜", values= range(1, 4), cost = [25, 50, 75], ttip=__("Start the game with resource extractors Mk I.")),
+        NGPSetting("extractors Mk II", "int", label="不劳而获", values= range(1, 4), cost = [35, 70, 105], ttip=__("Start the game with resource extractors Mk II.")),
 
-        NGPSetting(_("farm"), "bool", label="Farm key", cost = 10, ttip=__("Unlock Gizel and the Farm from the beginning of the game.")),
-        NGPSetting(_("carpenter"), "bool", label="Carpenter wagon", cost = 10, ttip=__("Unlock Iulia the Carpenter from the beginning of the game.")),
-        NGPSetting(_("minion merchants"), "bool", label="Merchant connections (minions)", cost = 25, ttip=__("Unlock Stella, Goldie, Willow and Gina from the beginning of the game.")),
-        NGPSetting(_("item merchants"), "bool", label="Merchant connections (items)", cost = 100, ttip=__("Unlock Riche, Ramias, Gurigura, Katryn, the twins and the Giftshop girl from the beginning of the game.")),
-        NGPSetting(_("all trainers"), "bool", label="All trainers", cost = 100, ttip=__("Unlock all trainers from the beginning of the game.")),
+        NGPSetting("farm", "bool", label="垦辟荒野", cost = 10, ttip=__("Unlock Gizel and the Farm from the beginning of the game.")),
+        NGPSetting("carpenter", "bool", label="趁热打铁", cost = 10, ttip=__("Unlock Iulia the Carpenter from the beginning of the game.")),
+        NGPSetting("minion merchants", "bool", label="野性之心(仆从商店)", cost = 25, ttip=__("Unlock Stella, Goldie, Willow and Gina from the beginning of the game.")),
+        NGPSetting("item merchants", "bool", label="广结善缘(道具商店)", cost = 100, ttip=__("Unlock Riche, Ramias, Gurigura, Katryn, the twins and the Giftshop girl from the beginning of the game.")),
+        NGPSetting("all trainers", "bool", label="高朋满座", cost = 100, ttip=__("Unlock all trainers from the beginning of the game.")),
 
-        NGPSetting(_("strength"), "plus", label="Strong", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Strength and Strength maximum beyond its base value (up to +3).")),
-        NGPSetting(_("spirit"), "plus", label="Wise", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Spirit and Spirit maximum beyond its base value (up to +3).")),
-        NGPSetting(_("charisma"), "plus", label="Funny", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Charisma and Charisma maximum beyond its base value (up to +3).")),
-        NGPSetting(_("speed"), "plus", label="Quick", values= [1, 2, 3], cost = [30, 60, 90], ttip=__("Increase your character's Speed and Speed maximum beyond its base value (up to +3).")),
+        NGPSetting("strength", "plus", label="力大无穷", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Strength and Strength maximum beyond its base value (up to +3).")),
+        NGPSetting("spirit", "plus", label="法师血统", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Spirit and Spirit maximum beyond its base value (up to +3).")),
+        NGPSetting("charisma", "plus", label="貌若潘安", values= [1, 2, 3], cost = [15, 30, 45], ttip=__("Increase your character's Charisma and Charisma maximum beyond its base value (up to +3).")),
+        NGPSetting("speed", "plus", label="脚下生风", values= [1, 2, 3], cost = [30, 60, 90], ttip=__("Increase your character's Speed and Speed maximum beyond its base value (up to +3).")),
 
-        NGPSetting(_("good alignment"), "bool", label="Nice guy", cost = 5, ttip=__("Start the game as a good person.")),
-        NGPSetting(_("evil alignment"), "bool", label="Bad boy", cost = 5, ttip=__("Start the game as an evil person.")),
-        # NGPSetting(_("polytheist"), "bool", label="Polytheist", cost = 15, ttip=__("Unlock all deities and atheist story lines.")),
-        # NGPSetting(_("multiclass"))
-        # NGPSetting(_("new events"))
+        NGPSetting("good alignment", "bool", label="温良恭俭", cost = 5, ttip=__("Start the game as a good person.")),
+        NGPSetting("evil alignment", "bool", label="恶贯满盈", cost = 5, ttip=__("Start the game as an evil person.")),
+        # NGPSetting("polytheist"), "bool", label="Polytheist", cost = 15, ttip=__("Unlock all deities and atheist story lines.")),
+        # NGPSetting("multiclass")
+        # NGPSetting("new events")
 
-        NGPSetting(_("love generation"), "boost", label="Gangster of love", values= [0.25, 0.5, 1.0], cost = [10, 25, 50], ttip=__("Gain love faster with slaves and free girls. Some people call you 'Maurice'.")),
-        NGPSetting(_("fear generation"), "boost", label="Actual gangster", values= [0.25, 0.5, 1.0], cost = [5, 15, 30], ttip=__("Gain fear faster with slaves.")),
-        NGPSetting(_("xp generation"), "boost", label="XP trainer", values= [0.25, 0.5, 1.0], cost = [5, 15, 45], ttip=__("Girls will gain XP faster.")),
-        NGPSetting(_("jp generation"), "boost", label="JP trainer", values= [0.25, 0.5, 1.0], cost = [5, 10, 30], ttip=__("Girls will gain JP faster.")),
-        NGPSetting(_("prestige generation"), "boost", label="Prestigious", values= [0.25, 0.5, 1.0], cost = [5, 15, 45], ttip=__("MC will earn Prestige faster.")),
-        NGPSetting(_("training efficiency"), "boost", label="Experienced", values= [0.5, 1.0, 2.0], cost = [15, 30, 60], ttip=__("Train your girls significantly faster.")),
+        NGPSetting("love generation", "boost", label="罗曼蒂克", values= [0.25, 0.5, 1.0], cost = [10, 25, 50], ttip=__("Gain love faster with slaves and free girls. Some people call you 'Maurice'.")),
+        NGPSetting("fear generation", "boost", label="凶神恶煞", values= [0.25, 0.5, 1.0], cost = [5, 15, 30], ttip=__("Gain fear faster with slaves.")),
+        NGPSetting("xp generation", "boost", label="训练大师", values= [0.25, 0.5, 1.0], cost = [5, 15, 45], ttip=__("Girls will gain XP faster.")),
+        NGPSetting("jp generation", "boost", label="职场达人", values= [0.25, 0.5, 1.0], cost = [5, 10, 30], ttip=__("Girls will gain JP faster.")),
+        NGPSetting("prestige generation", "boost", label="一鸣惊人", values= [0.25, 0.5, 1.0], cost = [5, 15, 45], ttip=__("MC will earn Prestige faster.")),
+        NGPSetting("training efficiency", "boost", label="因材施教", values= [0.5, 1.0, 2.0], cost = [15, 30, 60], ttip=__("Train your girls significantly faster.")),
 
-        NGPSetting(_("tax reduction"), "boost", label="Tax evasion", values= [0.15, 0.3, 0.5], cost = [50, 100, 150], ttip=__("Reduce your taxes thanks to the judicious application of offshore finance, political donations and elaborate voodoo curses.")),
+        NGPSetting("tax reduction", "boost", label="合法避税", values= [0.15, 0.3, 0.5], cost = [50, 100, 150], ttip=__("Reduce your taxes thanks to the judicious application of offshore finance, political donations and elaborate voodoo curses.")),
 
-        NGPSetting(_("free girl"), "dispenser", label="Young chemist", cost = [5, 20, 40], ttip=__("Produce Potions of Seduction (raises the relationship level with any free girl by one step).")),
-        NGPSetting(_("virginity"), "dispenser", label="Young surgeon", cost = [10, 50, 100], ttip=__("Produce Balms of Restoration (restores a girl's virginity).")),
-        NGPSetting(_("sanity"), "dispenser", label="Young therapist", cost = [10, 50, 100], ttip=__("Produce Incense of Bliss (restores some of a girl's sanity).")),
-        NGPSetting(_("interactions"), "dispenser", label="Young drug lord", cost = [5, 20, 40], ttip=__("Produce Magic Powder (regain all AP).")),
-        NGPSetting(_("perks"), "dispenser", label="Wyvern nest", cost = [25, 100, 250], ttip=__("Produce Wyvern eggs (+1 Perk points).")),
+        NGPSetting("free girl", "dispenser", label="炼金大师", cost = [5, 20, 40], ttip=__("Produce Potions of Seduction (raises the relationship level with any free girl by one step).")),
+        NGPSetting("virginity", "dispenser", label="修旧如新", cost = [10, 50, 100], ttip=__("Produce Balms of Restoration (restores a girl's virginity).")),
+        NGPSetting("sanity", "dispenser", label="极乐世界", cost = [10, 50, 100], ttip=__("Produce Incense of Bliss (restores some of a girl's sanity).")),
+        NGPSetting("interactions", "dispenser", label="金枪不倒", cost = [5, 20, 40], ttip=__("Produce Magic Powder (regain all AP).")),
+        NGPSetting("perks", "dispenser", label="飞龙巢穴", cost = [25, 100, 250], ttip=__("Produce Wyvern eggs (+1 Perk points).")),
 
-        NGPSetting(_("autorest"), "bool", label="Autorest", cost = 10, ttip=__("Receive a Vitals Scanner from the beginning of the game, allowing you to use autorest.")),
-        NGPSetting(_("personality"), "item", label="Personality reader", cost = [10, 20], ttip=__("Receive additional information on a girl's personality in your journal.")),
-        NGPSetting(_("taste"), "item", label="Taste reader", cost = [5, 15], ttip=__("Receive additional information on a girl's tastes in your journal.")),
-        NGPSetting(_("fixation"), "item", label="Fixation reader", cost = [5, 25], ttip=__("Receive additional information on a girl's sexual preferences in your journal.")),
+        NGPSetting("autorest", "bool", label="睡个好觉", cost = 10, ttip=__("Receive a Vitals Scanner from the beginning of the game, allowing you to use autorest.")),
+        NGPSetting("personality", "item", label="情报达人", cost = [10, 20], ttip=__("Receive additional information on a girl's personality in your journal.")),
+        NGPSetting("taste", "item", label="沟通技巧", cost = [5, 15], ttip=__("Receive additional information on a girl's tastes in your journal.")),
+        NGPSetting("fixation", "item", label="情报专家", cost = [5, 25], ttip=__("Receive additional information on a girl's sexual preferences in your journal.")),
 
-        NGPSetting(_("naturist frequency"), "boost", label="Hippie", values= [8, 16, 32], cost = [5, 10, 20], ttip=__("Increase the frequency of the 'Naturist' trait for all girls.")),
-        # NGPSetting(_("portal"), "special", label="Portal", cost = 0, ttip=__("Unlock the girl portal early.")),
-        NGPSetting(_("preferences1"), "pref", label="Naked/Service preferences", values= [125, 250, 500], cost = [5, 15, 30], ttip=__("Increase base sexual preferences for Naked and Service for all girls.")),
-        NGPSetting(_("preferences2"), "pref", label="Sex/Anal preferences", values= [125, 250, 500], cost = [10, 25, 50], ttip=__("Increase base sexual preferences for Sex and Anal for all girls.")),
-        NGPSetting(_("preferences3"), "pref", label="Fetish/Bisexual/Group preferences", values= [125, 250, 500], cost = [15, 35, 70], ttip=__("Increase base sexual preferences for Fetish, Bisexual and Group for all girls.")),
+        NGPSetting("naturist frequency", "boost", label="裸体主义", values= [8, 16, 32], cost = [5, 10, 20], ttip=__("Increase the frequency of the 'Naturist' trait for all girls.")),
+        # NGPSetting("portal", "special", label="Portal", cost = 0, ttip=__("Unlock the girl portal early.")),
+        NGPSetting("preferences1", "pref", label="坦诚相待", values= [125, 250, 500], cost = [5, 15, 30], ttip=__("Increase base sexual preferences for Naked and Service for all girls.")),
+        NGPSetting("preferences2", "pref", label="双管齐下", values= [125, 250, 500], cost = [10, 25, 50], ttip=__("Increase base sexual preferences for Sex and Anal for all girls.")),
+        NGPSetting("preferences3", "pref", label="女中色鬼", values= [125, 250, 500], cost = [15, 35, 70], ttip=__("Increase base sexual preferences for Fetish, Bisexual and Group for all girls.")),
 
-        NGPSetting(_("girl"), "girl rank", label="Starting girl", values= [2, 3, 4], cost = [50, 100, 200], ttip=__("Receive a free girl at the start with random stats.")),
+        NGPSetting("girl", "girl rank", label="佳人相伴", values= [2, 3, 4], cost = [50, 100, 200], ttip=__("Receive a free girl at the start with random stats.")),
 
-        NGPSetting(_("free girl challenge"), "bool", label="Free girl challenge", cost = 50, ttip=__("Receive a new girl at the start of each month. The slavemarket will become inaccessible. Worth 100 crystals if you complete the game.")),
-        NGPSetting(_("training challenge"), "bool", label="No training challenge", cost = 50, ttip=__("The Farm becomes much more efficient, but you can no longer personally train your girls. Worth 200 crystals if you complete the game.")),
+        NGPSetting("free girl challenge", "bool", label="来者不拒", cost = 50, ttip=__("Receive a new girl at the start of each month. The slavemarket will become inaccessible. Worth 100 crystals if you complete the game.")),
+        NGPSetting("training challenge", "bool", label="放任自流", cost = 50, ttip=__("The Farm becomes much more efficient, but you can no longer personally train your girls. Worth 200 crystals if you complete the game.")),
         ]
 
     $ NGP_settings_dict = {v.name : v for v in NGP_settings}
