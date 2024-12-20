@@ -413,7 +413,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip ("%s\n今天是%s, 第%i年%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
+            tooltip ("%s\n今天是%s, 第%i年的%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
 
             hbox:
                 spacing xres(8)
@@ -4417,7 +4417,7 @@ screen brothel():
 
                             vbox spacing 6 xsize xres(150):
                                 text "威胁等级" size res_font(14)
-                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + ". Brothel threat is affected by brothel security and your Strength skill."
+                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + "。威胁等级受保安和你的力量属性影响。"
 
                             vbox spacing 6 xsize xres(200):
                                 hbox spacing 10:
@@ -4620,7 +4620,7 @@ screen furniture():
 
         has vbox spacing 10
 
-        text __("Carpenter's Wagon") bold True xalign 0 yalign 0
+        text "工匠的马车" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize yres(120):
             add "side carpenter" zoom 0.8 yalign 0.5
@@ -4633,12 +4633,12 @@ screen furniture():
             text text1 xsize 0.4 yalign 0.5 size res_font(18) justify True italic True
 
             vbox xsize 0.4 yfill True xalign 1.0:
-                text __("Available resources") drop_shadow (2, 2) size res_font(18)
+                text "资源储备" drop_shadow (2, 2) size res_font(18)
                 frame xfill True yfill True background c_ui_brown xpadding 0 ypadding 0:
                     use resource_tab(y=0.0, sz=24)
 
             vbox xsize 0.6 yfill True xalign 1.0:
-                text __("Building Queue") drop_shadow (2, 2) size res_font(18)
+                text "建筑序列" drop_shadow (2, 2) size res_font(18)
                 frame xfill True yfill True background c_ui_brown:
                     if brothel.current_building:
                         $ dur = brothel.current_building.duration - (calendar.time - brothel.started_building)
@@ -4648,7 +4648,7 @@ screen furniture():
                             add brothel.current_building.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
                             text str(dur) + __("d") xalign 1.0 yalign 0.0 size res_font(18)
                     else:
-                        text __("No building in progress.") italic True size res_font(14)
+                        text "没有正在建造或升级的设施。" italic True size res_font(14)
 
         text brothel.name + __("'s Decoration and Furniture") drop_shadow (2, 2) size res_font(18)
 
@@ -4659,7 +4659,7 @@ screen furniture():
                     button background c_ui_brown action NullAction() tooltip furn.description xsize xres(52) ysize yres(44) xpadding 0 ypadding 0:
                         add furn.pic.get(xres(48), yres(40)) xalign 0.5 yalign 0.5
 
-        text __("Build templates") drop_shadow (2, 2) size res_font(18)
+        text "设施界面" drop_shadow (2, 2) size res_font(18)
 
         frame background c_ui_dark:
             viewport:

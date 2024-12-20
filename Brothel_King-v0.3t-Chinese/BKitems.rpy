@@ -22,14 +22,14 @@ init -2 python:
 ## FURNITURE TYPES ##
 # A tuple (type, description)
 
-    furniture_types = [("Decoration", "Attracts new kinds of customers to your brothel"),
-                        ("Furnishing", "Unlocks more options for attracting customers"),
-                        ("Utility", "Help with advertising, security and maintenance"),
-                        ("Comfort", "Help your girls feel more comfortable in the brothel"),
-                        ("Windows", "Influences your girl's preferences"),
-                        ("Altars", "Pray here and get results, for once"),
-                        ("Arcane", "Helps with dark rituals"),
-                        ("Gizmos", "Strange artefacts from a bygone technological age")
+    furniture_types = [("Decoration", "吸引不同阶级的顾客光顾你的青楼"),
+                        ("Furnishing", "解锁更多吸引顾客的设施"),
+                        ("Utility", "改良宣传效果, 安保能力以及清洁能力"),
+                        ("Comfort", "让大家都更加舒服一些吧"),
+                        ("Windows", "影响女孩们的设置"),
+                        ("Altars", "在这里祈祷并得到回应,仅限一次"),
+                        ("Arcane", "这对黑暗仪式有所帮助"),
+                        ("Gizmos", "来自过去科技时代的古怪造物")
                         ]
 
 

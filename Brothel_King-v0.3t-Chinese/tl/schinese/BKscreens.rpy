@@ -1406,29 +1406,9 @@ translate schinese strings:
     old "{b}Common Rooms{/b}"
     new "{b}Common Rooms{/b}"
 
-    # game/BKscreens.rpy:4623
-    old "Carpenter's Wagon"
-    new "Carpenter's Wagon"
-
-    # game/BKscreens.rpy:4636
-    old "Available resources"
-    new "Available resources"
-
-    # game/BKscreens.rpy:4641
-    old "Building Queue"
-    new "Building Queue"
-
     # game/BKscreens.rpy:4647
     old " day(s) to complete."
     new " day(s) to complete."
-
-    # game/BKscreens.rpy:4651
-    old "No building in progress."
-    new "No building in progress."
-
-    # game/BKscreens.rpy:4662
-    old "Build templates"
-    new "Build templates"
 
     # game/BKscreens.rpy:4722
     old "{b}Customer populations{/b}"
