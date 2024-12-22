@@ -844,60 +844,60 @@ init -4 python:
                     }
 
     merchant_greetings = {
-                        "shop greeting" : "Hi, handsome! Please take a look at my wares... *wink*",
-                        "shop caravan" : "A caravan has arrived, and we have new items. Check it out!",
-                        "shop bought something" : "You just bought the [it.name]. I'm sure you will put it to good use.{w=2.0}{nw}",
-                        "shop no money" : "I'm sorry, but you don't have enough gold...",
+                        "shop greeting" : "帅哥，欢迎光临！*眨眼*",
+                        "shop caravan" : "这可是最新上市的好东西，走过路过不要错过哦！*抛媚眼*",
+                        "shop bought something" : "这是你的 [it.name]，帮你打包好了，今晚有兴趣来陪我吗？*不经意露出乳沟*。{w=2.0}{nw}",
+                        "shop no money" : "抱歉，小本经营概不赊账...*嫌弃的眼神*",
 
-                        "Stella greeting" : "Hmpf, look who's come here. I hope you're not going to waste my time.",
-                        "Stella bought something" : "Fine, give me the gold, and it's yours. Now go, unless you're buying something else.{w=2.0}{nw}",
-                        "Stella no money" : "You ain't got the coin, pal. Get out of here.",
+                        "Stella greeting" : "呦！瞧瞧谁来了。希望你别浪费我的时间。",
+                        "Stella bought something" : "一手交钱一手交货，买完了就快滚，还是说你想和我深入交流一下？*舔舌头*。{w=2.0}{nw}",
+                        "Stella no money" : "没钱装什么大爷，赶紧滚蛋。",
 
-                        "Goldie greeting" : "How can I help you?",
-                        "Goldie bought something" : "Thank you! Please treat it with care.{w=2.0}{nw}",
-                        "Goldie no money" : "I'm sorry, but you don't seem to have enough money right now.",
+                        "Goldie greeting" : "有什么我可以帮到你的吗?还是说你是来...*脸红*",
+                        "Goldie bought something" : "拿好。呀！我不是让你拿这两个蜜瓜！*脸红*。{w=2.0}{nw}",
+                        "Goldie no money" : "抱歉，就算是我们之间也得明算账。",
 
-                        "Willow greeting" : "Hey, if it isn't my friendly neighbor! You'll be amazed to see what I just caught.",
-                        "Willow bought something" : "Deal, just take it... You're gonna have fun!{w=2.0}{nw}",
-                        "Willow no money" : "Aw, you meanie, are you trying to take advantage of me? Your pouch is empty!",
+                        "Willow greeting" : "嘿，瞧瞧我刚抓来的小可爱.*香汗淋漓，贴身的衣服变得透明*",
+                        "Willow bought something" : "成交, 就这样... 它很好用!你问我怎么知道的？*脸红*{w=2.0}{nw}",
+                        "Willow no money" : "想空手套白狼？!别逼我动手。",
 
-                        "Gina greeting" : "Mmh, what if I adjusted this button... No, that's not it... Sorry. How can I help you?",
-                        "Gina bought something" : "Sure, I didn't need this anyway...{w=2.0}{nw}",
-                        "Gina no money" : "Sorry, but this is expensive equipment. Don't touch it unless you have the coin to buy it.",
+                        "Gina greeting" : "嗯, 如果我按下这个按钮... 噫！...怎么这时候来了客人...*两腿夹紧，浑身颤抖*",
+                        "Gina bought something" : "东西收好，啊不对，那个遥控器不是和它一起卖的，别按！...啊啊！*大腿上有不明液体流下*~{w=2.0}{nw}",
+                        "Gina no money" : "穷鬼，弄坏了你赔得起吗。买不起就别摸。",
 
-                        "Riche greeting" : "Oh, hello. *smile*",
-                        "Riche bought something" : "Thank you! Come again soon!{w=2.0}{nw}",
-                        "Riche no money" : "Oh, sorry... But you haven't got the gold.",
+                        "Riche greeting" : "来看一看吧.我的花可是用特殊的营养水培育的 *脸红*",
+                        "Riche bought something" : "哇！你真大方!真羡慕收到花的女孩 *扭动屁股*{w=2.0}{nw}",
+                        "Riche no money" : "哦,对不起，但你的钱好像不够。",
 
-                        "Ramias greeting" : "Oh, it's you... Greetings.",
-                        "Ramias bought something" : "Thank you. You will not be disappointed.{w=2.0}{nw}",
-                        "Ramias no money" : "Hmm... It doesn't look like you have enough gold.",
+                        "Ramias greeting" : "哦, 是你呀。来选一件趁手的兵器吧。",
+                        "Ramias bought something" : "眼光不错！接好！哦！*不小心划破衣服* 快闭上眼睛！。{w=2.0}{nw}",
+                        "Ramias no money" : "没钱就去努力赚钱吧。",
 
-                        "Gurigura greeting" : "Hiii!!! *smile*",
-                        "Gurigura bought something" : "Thaaank yooou! Teehee.{w=2.0}{nw}",
-                        "Gurigura no money" : "Hey, wait a minute... You don't have enough gold, mister!",
+                        "Gurigura greeting" : "嗨!!!又见面了！ *乳摇*",
+                        "Gurigura bought something" : "有了这些钱我又可以喝很多牛奶了*跳起来* 可惜只长那里不长个子.{w=2.0}{nw}",
+                        "Gurigura no money" : "嘿，等一下...先生，你的钱不够!",
 
-                        "Katryn greeting" : "Oh, hi. I hope you're not going to waste my time.",
-                        "Katryn bought something" : "Give me the money first... Good.{w=2.0}{nw}",
-                        "Katryn no money" : "What the... You haven't got the gold, stupid!",
+                        "Katryn greeting" : "你好，客人。把握不准的话可以帮我戴上上看看效果 *舔嘴唇*。",
+                        "Katryn bought something" : "把钱放到这里就好... *稍微敞开领口露出乳沟*。{w=2.0}{nw}",
+                        "Katryn no money" : "什么...这点钱也想买...，笨蛋!",
 
-                        "Gift Shop Girl greeting" : "Oh, hello. *smile*{w=2.0}{nw}",
-                        "Gift Shop Girl bought something" : "Thank you, dear sir.{w=2.0}{nw}",
-                        "Gift Shop Girl no money" : "Sorry sir... But you haven't got the gold.",
+                        "Gift Shop Girl greeting" : "嘿,帅哥.来挑选你想要的礼物吧！ *抛媚眼*{w=2.0}{nw}",
+                        "Gift Shop Girl bought something" : "多谢惠顾 *用胸部在你的手臂上蹭了一下*。{w=2.0}{nw}",
+                        "Gift Shop Girl no money" : "对不起,先生...但你的钱好像不够。",
 
-                        "Today greeting" : "Hi there, big bro! What can we help you with? *smile*",
-                        "Yesterday greeting" : "Ah... Hello... *blush*",
-                        "Today bought something" : "Thank you, big bro! *wink*{w=2.0}{nw}",
-                        "Yesterday bought something" : "Thanks.{w=2.0}{nw}",
-                        "Today no money" : "Hold it, bro. You don't have the gold to pay for this.",
+                        "Today greeting" : "嗨，大哥哥！想买衣服，还是让我们帮你量尺寸?那里的尺寸得用嘴量才准... *脸红* ",
+                        "Yesterday greeting" : "啊...大哥哥，这次你想用哪里帮你量尺寸... *脸红*",
+                        "Today bought something" : "你眼光真好，大哥哥! 我就原谅你对我的骚扰吧！ *眨眼*{w=2.0}{nw}",
+                        "Yesterday bought something" : "感谢惠顾，大哥哥，呀！别摸那里.{w=2.0}{nw}",
+                        "Today no money" : "等等，大哥哥。你的钱好像不够哦。",
                         }
 
 
     shopgirl_comment = {
-                        "wood" : "New shelf, perfect!", "leather" : "Great! This leather basket will fit nicely in the entrance.",
-                        "dye" : "Nice! This freshly painted display looks sweet.", "marble" : "Ooh, a marble counter! That's going to make all the other shopkeepers jealous, yay!",
-                        "ore" : "Copper-plated counter shelves are sure to draw some attention. Very nice.", "silk" : "Ah, finally, some soft, smooth silk to hold the fragile items... And rub my face into!",
-                        "diamond" : "A girl's best friends... You've got style, handsome! And so does my new diamond-encrusted display... [emo_heart]"
+                        "wood" : "新的货架，太好了!", "leather" : "太棒了!这个皮制购物篮正好可以放在门口。",
+                        "dye" : "很好！这幅画看起来很不错。", "marble" : "哦，大理石柜台！其他店主要羡慕死我了，耶!",
+                        "ore" : "镀铜的柜台肯定能吸引路人的注意。闪闪发亮。", "silk" : "啊，终于可以用光滑柔顺的丝绸来包裹易碎物品了....真是奢华!",
+                        "diamond" : "女孩最好的朋友....你很有品味，很帅！新镶钻广告牌更帅... [emo_heart]"
                         }
 
 
@@ -943,7 +943,7 @@ init -4 python:
                         5 : 1000,
                         }
 
-    attract_pop_dict = {0 : "一毛不拔 ", 1 : "抠抠搜搜 ", 2: "爽快大方  ", 3 : "一掷千金  ", 4 : "一分不剩 ", 5 : "透支消费 "}
+    attract_pop_dict = {0 : "避之不及", 1 : "稀  客", 2: "常  客", 3 : "熟  客", 4 : "流连忘返", 5 : "趋之若鹜"}
 
     # Encounters are tuples with label (used with prefix "city_") and probability. Tuples can be used with multiple labels
 
@@ -1056,10 +1056,10 @@ init -4 python:
                     "Sensitivity" : "属性越高她的身体越敏感。影响她作为{b}按摩技师{/b}时的表现,{b}侍奉{/b}时的技术以及提升更多的 {b}顾客满意度{/b}。",
                     "Constitution" : "属性越高她的身体越健壮。影响她作为{b}女服务员{/b}时的表现,{b}肛交{/b}时的技术,提高她的 {b}体力{/b}上限并且能够接待 {b}更多顾客{/b}。",
                     "Obedience" : "属性越高她的服从性越强。影响她作为{b}表演艺伎{/b}时的表现,{b}调教{/b}时的技术以及对 {b}工作{/b}或{b}训练{/b}的接受程度。",
-                    "Service" : "属性越高她的手交、足交、口交等侍奉技术越好。",
-                    "Sex" : "属性越高她的性交技术越好。",
-                    "Anal" : "属性越高她的肛交技术越好。",
-                    "Fetish" : "属性越高她的捆绑、SM等调教技术越好。"
+                    "Service" : "熟练度越高她的手交、足交、口交等侍奉技术越好。",
+                    "Sex" : "熟练度越高她的性交技术越好。",
+                    "Anal" : "熟练度越高她的肛交技术越好。",
+                    "Fetish" : "熟练度越高她的捆绑、SM等调教技术越好。"
                     }
 
     gstats_descript = {

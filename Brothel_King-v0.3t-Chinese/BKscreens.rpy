@@ -6841,10 +6841,10 @@ screen farm_tab():
             text "吉泽尔的奴隶农场" drop_shadow (2, 2) bold True xalign 0
 
             if farm.girls:
-                $ text1 = __("Ah, [MC.name]! Came to check on my pets?")
+                $ text1 = "啊, [MC.name]! 要不要来看看我的宠物?"
                 $ pic = "side gizel"
             else:
-                $ text1 = __("My minions are bored... When are you going to send them some new playmates?")
+                $ text1 = "我的仆从们感到无聊...你打算什么时候给他们送来一些新的玩伴？"
                 $ pic = "side gizel upset"
 
             if MC.street_girls:
@@ -8567,7 +8567,7 @@ screen goal_ttip():
 
     frame xalign 0.5 yalign 0.5 xsize 0.5 xpadding xres(20) ypadding yres(20) background c_ui_darkblue:
         has vbox spacing yres(10)
-        text __("{image=tb goal} Chapter %i - Your Goals") % game.chapter size res_font(28) color c_white bold True xalign 0.5
+        text "{image=tb goal} 第%i章 - 主线目标" % game.chapter size res_font(28) color c_white bold True xalign 0.5
         text "" size res_font(14)
 
         for cat, goal_desc, tb in game.get_goals():
@@ -8613,7 +8613,7 @@ screen power_detail(pow):
             text pow.name + {True : " (S)", False : ""}[pow.super] size res_font(24) bold True
             text pow.description size res_font(14)
 
-            text __("Mojo cost:") size res_font(18) bold True
+            text "魔力消耗:" size res_font(18) bold True
             hbox spacing xres(6):
                 if conduit:
                     $ mod = conduit.get_effect("change", "mojo cost")
@@ -8627,17 +8627,17 @@ screen power_detail(pow):
                                 if mod:
                                     color c_green
 
-            text __("Sanity cost:") size res_font(18) bold True
+            text "理智消耗:" size res_font(18) bold True
             hbox spacing xres(3):
                 add "UI/Powers/sanity_cost_[pow.sanity_lvl].webp" zoom 1.2
                 text "[pow.sanity_lvl]" size res_font(14) yalign 0.4
 
-            text __("Target:") size res_font(18) bold True
+            text "目标:" size res_font(18) bold True
             $ target = pow.target.capitalize()
             text target.capitalize() size res_font(14)
 
             if pow.duration:
-                text __("Duration:") size res_font(18) bold True
+                text "持续时间:" size res_font(18) bold True
                 text "[pow.duration] days" size res_font(14)
 
 
@@ -8650,7 +8650,7 @@ screen power_draw(x=0.505, y=0.425): # Check if deck can be drawn must happen be
     button style "inv_no_padding" xsize yres(200) ysize yres(200) align (x, y):
         action (Return("draw"), Hide())
 
-        text __("Draw a card") color c_white drop_shadow (2, 2) align (0.5, 0.5) at blink(_duration=0.5, _pause=0.5)
+        text "抽一张牌" color c_white drop_shadow (2, 2) align (0.5, 0.5) at blink(_duration=0.5, _pause=0.5)
 
 # Card hand
 screen power_hand(hand, context="idle", start_at = 0, x=0.5, y=0.75):

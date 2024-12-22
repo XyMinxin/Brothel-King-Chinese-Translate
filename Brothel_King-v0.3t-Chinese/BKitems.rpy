@@ -987,9 +987,9 @@ screen item_list(items, owner, counterpart, sc_prefix, search=False): # May also
 
             else:
                 if MC.active_inv_filter:
-                    text __("No items available (filters are on).") size res_font(14) color c_brown
+                    text "没有合适的商品（筛选已开启）。" size res_font(14) color c_brown
                 else:
-                    text __("No items available.") size res_font(14) color c_brown
+                    text "没有合适的商品。" size res_font(14) color c_brown
 
         if items:
             $ start = page_offset

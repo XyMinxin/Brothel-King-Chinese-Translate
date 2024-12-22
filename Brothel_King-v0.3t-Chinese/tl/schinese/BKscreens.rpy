@@ -1978,10 +1978,6 @@ translate schinese strings:
     old "Ah, [MC.name]! Came to check on my pets?"
     new "Ah, [MC.name]! Came to check on my pets?"
 
-    # game/BKscreens.rpy:6847
-    old "My minions are bored... When are you going to send them some new playmates?"
-    new "My minions are bored... When are you going to send them some new playmates?"
-
     # game/BKscreens.rpy:6851
     old "\n\n%i street whores are currently housed in the barn."
     new "\n\n%i street whores are currently housed in the barn."
@@ -2505,26 +2501,6 @@ translate schinese strings:
     # game/BKscreens.rpy:8484
     old "%s gold"
     new "%s金币"
-
-    # game/BKscreens.rpy:8570
-    old "{image=tb goal} Chapter %i - Your Goals"
-    new "{image=tb goal} Chapter %i - Your Goals"
-
-    # game/BKscreens.rpy:8616
-    old "Mojo cost:"
-    new "魔力消耗:"
-
-    # game/BKscreens.rpy:8630
-    old "Sanity cost:"
-    new "理智消耗:"
-
-    # game/BKscreens.rpy:8635
-    old "Target:"
-    new "Target:"
-
-    # game/BKscreens.rpy:8640
-    old "Duration:"
-    new "Duration:"
 
     # game/BKscreens.rpy:8653
     old "Draw a card"

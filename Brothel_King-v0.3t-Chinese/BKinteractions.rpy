@@ -461,9 +461,9 @@ label slave_chat_slave_life(girl): # D/S
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Tell me, how do you like your life as a slave?",
-                       "Are you happy about being a slave?",
-                       "How do you feel about being a slave?")))
+    $ you(rand_choice(("告诉我,作为奴隶的生活感觉如何?",
+                       "做个奴隶开心吗?",
+                       "变成奴隶你有什么感觉?")))
 
     $ inter.score = girl.mood + girl.get_stat("obedience") / 5
 
@@ -504,9 +504,9 @@ label slave_chat_brothel(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("How do you like life in the brothel?",
-                       "Is life in the brothel ok for you?",
-                       "Are you happy working here?")))
+    $ you(rand_choice(("青楼里的生活感觉如何?",
+                       "还习惯青楼里的生活吗?",
+                       "工作开心吗?")))
 
     $ inter.score = girl.mood + girl.get_stat("libido") / 5
 
@@ -555,9 +555,9 @@ label slave_chat_customers(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Are you getting along with the customers?",
-                       "How are the customers treating you?",
-                       "Are you happy working with the customers?")))
+    $ you(rand_choice(("和顾客相处的怎么样?",
+                       "客人们对你怎么样?",
+                       "服务那些客人感觉如何?")))
 
     $ inter.score = girl.mood + girl.get_stat("sensitivity") / 5
 
@@ -599,9 +599,9 @@ label slave_chat_other_girls(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Are you getting along with the other girls?",
-                       "Do you like the other girls in the brothel?",
-                       "Do you have any friends here?")))
+    $ you(rand_choice(("你和其他女孩相处得如何?",
+                       "你喜欢青楼里的其他女孩吗?",
+                       "在这里有没有交到朋友?")))
 
     $ inter.score = girl.mood + girl.get_stat("charm")/5 + len(girl.friends)*10 - len(girl.rivals)*10
 
@@ -704,7 +704,7 @@ label slave_chat_well_being(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Is everything all right?", "How are you feeling?", "Is there anything wrong?")))
+    $ you(rand_choice(("一切都顺利吗?", "你感觉怎么样?", "有遇到什么麻烦吗?")))
 
     if girl.mood > -75:
         if girl.mood > 75:
@@ -907,7 +907,7 @@ label slave_chat_tastes(girl):
 
     elif inter.score <= 30:
         "She is more relaxed around you now. She tells you a little about her tastes."
-        $ result = rand_choice(("likes", "dislikes"))
+        $ result = rand_choice(("喜欢", "不喜欢"))
         $ girl.change_love(1)
         $ girl.change_fear(-1)
 
@@ -1562,9 +1562,9 @@ label slave_train_obedience(girl):
 
     "You start with giving [girl.name] simple orders around the house."
 
-    $ MC.rand_say(("Clean up the attic, will you?", "Help Sill with her chores.", "Change all the bedsheets.", __("Take a broom and clean up the ") + __(rand_choice(brothel.rooms.keys())) + ".",
-                  "Fetch some water at the well.", "ar: Clean up the Arios altar.", "Make sure there is no dust on the walls.", "Cook something for us.", "ev: Shine my boots real good. I don't want a speck of dirt on them, you hear me?",
-                  "wr: Oil my weapons. I mean my swords, of course.", "tr: Feed Drogon a frog. Don't be shy, he very rarely bites people's hand off.", "wz: Wipe my staff. My magic staff. I mean... Well, you know."))
+    $ MC.rand_say(("请你把阁楼打扫一下好吗?", "帮希露分担一些家务。", "把脏床单都换掉", "拿上扫帚去清理" + __(rand_choice(brothel.rooms.keys())) + "。",
+                  "从井里打些水来。", "ar: 清理太阳神祭坛。", "确保墙壁上没有灰尘。", "给我们做点吃的。", "ev: 把我的靴子擦干净。我不想让他们沾上一点脏东西，听到了吗？",
+                  "wr: 润滑一下我的武器，当然, 我说的是我的长剑。", "tr: 给小龙喂些青蛙。别紧张，它很少咬人的手。", "wz: 擦擦我的杖。我是说我的法杖。我的意思是...嗯，你懂我意思。"))
 
     $ pic = girl.get_pic("obedience", "maid", "waitress", "profile", naked_filter=True, soft=True)
 
@@ -1922,8 +1922,8 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     if act == "naked":
 
         $ inter.score = girl.get_stat("libido") - reluctance
-        $ text1 = rand_choice(("pinch her nipples", "fondle her breasts", "inspect her juicy body", "pat her butt", "caress her soft skin", "inspect every inch of her body",
-                  "check out her generous curves", "give her a thorough physical exam", "just stand there, looking at her naked body"))
+        $ text1 = rand_choice(("捏她的乳头", "握住她的奶子", "欣赏她多汁的身体", "拍她的翘臀", "抚摸她柔软的皮肤", "检查她身体的每一寸",
+                  "欣赏她优美的曲线", "给她做个全面的身体检查", "站在那里,欣赏她的裸体"))
 
         "Taking off her clothes, she stands completely nude for your attention."
 
