@@ -1544,23 +1544,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5122
     old "The headhunter is back with your prize!"
-    new "The headhunter is back with your prize!"
+    new "猎头带着你的战利品回来了!"
 
     # game/BKscreens.rpy:5134
     old "Headhunter: [game.headhunter_time] days"
-    new "Headhunter: [game.headhunter_time] days"
+    new "Headhunter: [game.headhunter_time]天"
 
     # game/BKscreens.rpy:5135
     old "The headhunter will be back in [headhunter_time] days."
-    new "The headhunter will be back in [headhunter_time] days."
+    new "猎头将在[headhunter_time]天后归来。"
 
     # game/BKscreens.rpy:5152
     old "Click to keep the brothel report showing at all times."
-    new "Click to keep the brothel report showing at all times."
+    new "点击常驻显示经营报告。"
 
     # game/BKscreens.rpy:5156
     old "Click to hide the brothel report."
-    new "Click to hide the brothel report."
+    new "点击隐藏经营报告。"
 
     # game/BKscreens.rpy:5168
     old "Show brothel report"
@@ -1584,7 +1584,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5186
     old "{color=[c_lightblue]}Did you know? {/color}%s"
-    new "{color=[c_lightblue]}Did you know? {/color}%s"
+    new "{color=[c_lightblue]}你知道吗? {/color}%s"
 
     # game/BKscreens.rpy:5205
     old "Next\ntip"
@@ -2406,10 +2406,6 @@ translate schinese strings:
     old "Machine Group"
     new "Machine Group"
 
-    # game/BKscreens.rpy:8157
-    old "Girl Mix"
-    new "Girl Mix"
-
     # game/BKscreens.rpy:8161
     old "Click here to see the %s girl mix."
     new "Click here to see the %s girl mix."
@@ -2417,10 +2413,6 @@ translate schinese strings:
     # game/BKscreens.rpy:8162
     old "Click here to create a new girl mix."
     new "Click here to create a new girl mix."
-
-    # game/BKscreens.rpy:8165
-    old "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
-    new "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
 
     # game/BKscreens.rpy:8187
     old "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"

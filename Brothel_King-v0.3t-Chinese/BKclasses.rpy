@@ -6600,7 +6600,7 @@ init -2 python:
             return False
 
         def activate(self):
-            if renpy.call_screen("yes_no", "Do you want to activate " + self.full_name + "?"):
+            if renpy.call_screen("yes_no", "你想要激活" + self.full_name + "模组吗？"):
                 if not self.active or not persistent.mods[self.name]["active"]:
                     self.active = True
                     persistent.mods[self.name]["active"] = True

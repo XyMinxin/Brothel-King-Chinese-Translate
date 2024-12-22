@@ -279,7 +279,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
-                text "No guild fee is due." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
+                text "无需缴纳公会费用。" xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
 
 
 screen tax_tab(fade=False):
@@ -308,7 +308,7 @@ screen tax_tab(fade=False):
                 $ due_date = "in %s days" % (8-calendar.day)
 
             vbox:
-                text "Guild Fee" bold True size res_font(14)
+                text "公会费" bold True size res_font(14)
                 text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
 
 
@@ -951,10 +951,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(11)  drop_shadow (1, 1)
+                    text "阶级" size res_font(11)  drop_shadow (1, 1)
                     text rank_name[girl.rank] size res_font(14) bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(11)  drop_shadow (1, 1)
+                    text "等级" size res_font(11)  drop_shadow (1, 1)
                     text str(girl.level) size res_font(14) bold True drop_shadow (1, 1)
 
             frame:
@@ -1039,10 +1039,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(12)  drop_shadow (1, 1)
+                    text "阶级" size res_font(12)  drop_shadow (1, 1)
                     text rank_name[girl.rank] size res_font(16) bold True  drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(12)  drop_shadow (1, 1)
+                    text "等级" size res_font(12)  drop_shadow (1, 1)
                     text str(girl.level) size res_font(16) bold True  drop_shadow (1, 1)
 
             frame:
@@ -1140,10 +1140,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 yalign 0.25
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(11)
+                    text "阶级" size res_font(11)
                     text rank_name[girl.rank] size res_font(14) bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(11)
+                    text "等级" size res_font(11)
                     text str(girl.level) size res_font(14) bold True drop_shadow (1, 1)
 
             frame:
@@ -1257,10 +1257,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         yalign 0.6
 
                         hbox spacing 6:
-                            text "Rank" size res_font(14)
+                            text "阶级" size res_font(14)
                             text rank_name[girl.rank] bold True drop_shadow (1, 1)
                         hbox spacing 6:
-                            text "Level" size res_font(14)
+                            text "等级" size res_font(14)
                             text str(girl.level) bold True drop_shadow (1, 1)
 
                 if context != "free" or girl.MC_interact:
@@ -1867,7 +1867,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 ## SKILLS LISTING
 
-                text "Main skills" size res_font(18)
+                text "主要属性" size res_font(18)
 
                 vbox:
                     spacing 0
@@ -3033,7 +3033,7 @@ screen save_schedule(girl):
                                 for j in range(7):
                                     textbutton weekdays[j][0] xalign 0.5 background workshift_color[game.saved_schedules[i][j]]
                         else:
-                            text "Empty" italic True size res_font(18)
+                            text "空" italic True size res_font(18)
 
             null height yres(10)
             textbutton "取消" action Hide("save_schedule", transition=Dissolve(0.15)) xalign 1.0
@@ -3060,7 +3060,7 @@ screen load_schedule(girl):
                                 for j in range(7):
                                     textbutton weekdays[j][0] xalign 0.5 background workshift_color[game.saved_schedules[i][j]]
                         else:
-                            text "Empty" italic True size res_font(18)
+                            text "空" italic True size res_font(18)
 
             null height yres(10)
             textbutton "取消" action Hide("load_schedule", transition=Dissolve(0.15)) xalign 1.0
@@ -3536,17 +3536,17 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}Worked{/b}" color c_orange size small xalign 0.5
+                                    text "{b}工作{/b}" color c_orange size small xalign 0.5
 
                                     $ ttip = __("Waitress: ") + str_int(log_dict["waitress_days"][days]) + __("              Dancer: ") + str_int(log_dict["waitress_days"][days]) + __("\nMasseuse: ") + str_int(log_dict["masseuse_days"][days]) + __("            Geisha: ") + str_int(log_dict["geisha_days"][days]) + __("\nWhore: ") + str_int(log_dict["whore_days"][days]) + __("                 Work/whore : ") + str_int(log_dict["work_whore_days"][days])
 
                                     textbutton str_int(log_dict["work_days"][days]) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_brown xalign 0.5 action NullAction() hovered tt.Action(ttip)
 
-                                    text "{b}Rested{/b}" color c_green size small xalign 0.5
+                                    text "{b}休息{/b}" color c_green size small xalign 0.5
 
                                     text str_int(log_dict["rest_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Away{/b}" color c_blue size small xalign 0.5
+                                    text "{b}外出{/b}" color c_blue size small xalign 0.5
 
                                     text str_int(log_dict["away_days"][days] + log_dict["farm_days"][days]) size average color c_brown xalign 0.5
 
@@ -3558,11 +3558,11 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}On strike{/b}" color c_red size small xalign 0.5
+                                    text "{b}遇袭{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["strike_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Hurt/Sick{/b}" color c_red size small xalign 0.5
+                                    text "{b}受伤/生病{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["hurt_days"][days] + log_dict["sick_days"][days]) size average color c_brown xalign 0.5
 
@@ -3594,7 +3594,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         text "{b}Reputation{/b}" color c_purple size small xalign 0.5
 
-                        text "{b}Av. score{/b}" color c_crimson size small xalign 0.5
+                        text "{b}平均得分{/b}" color c_crimson size small xalign 0.5
 
                         for job in all_jobs:
 
@@ -8154,7 +8154,7 @@ screen girl_mix(show_rating=False):
         frame xsize 0.7 yfill True:
             has vbox
 
-            text __("Girl Mix") bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
+            text "女孩包列表" bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
 
             hbox box_wrap True:
                 for mix_name in sorted(persistent.girl_mix):
@@ -8162,7 +8162,7 @@ screen girl_mix(show_rating=False):
                 textbutton "+" action renpy.curried_invoke_in_new_context(add_mix) text_size res_font(18) tooltip __("Click here to create a new girl mix.")
 
             text "" size res_font(12)
-            text __("Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'") size res_font(14) color c_brown xpos xres(6)
+            text "点击一个女孩的立绘来添加或删除这个女孩包。\n你可以通过点击“+”创建一个新的女孩包组合。" size res_font(14) color c_brown xpos xres(6)
 
             text "" size res_font(12)
 

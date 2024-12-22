@@ -1710,7 +1710,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                                 if pic in persistent.pic_ignore_list:
                                     text "IGNORED" align (0.5, 0.5) color c_red size res_font(16) drop_shadow (2, 2)
                                 if persistent.debug_pic_counter and gal_type == "gp":
-                                    text __("Used %s times" % persistent.debug_pic_counter_dict[pic]) align (0.5, 1.0) size int(config.screen_height*0.02) #?
+                                    text "使用%s次" % persistent.debug_pic_counter_dict[pic] align (0.5, 1.0) size int(config.screen_height*0.02) #?
 
 
             $ max_page = (len(gal.blist)-1) // shown_pics

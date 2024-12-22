@@ -3920,7 +3920,7 @@ init -3 python:
 
         global mod_traceback
 
-        mod_traceback += "Updating mods... "
+        mod_traceback += "更新MODS中... "
 
         # Checks if existing/active mods have been disabled
 
@@ -4349,13 +4349,13 @@ init -3 python:
         elif d["main diversity average"] < 3:
             rating += "-"
 
-        ttip = "Girlpack rating: %s, " % rating
+        ttip = "女孩包评级: %s, " % rating
         #<Chris12 PackState>
         #ttip += "\nPictures: " + str(len(girl.pics))
-        ttip += "Pictures: " + str(len(GirlFilesDict.get_pics(girl.path)))
+        ttip += "图片数量: " + str(len(GirlFilesDict.get_pics(girl.path)))
         #</Chris12 PackState>
-        ttip += "\nMain tags score: " + str(round_int(d["main cover score"]*100)) + "% (" + str(round(d["main diversity average"], 1)) + " picture/existing tag)"
-        ttip += "\nOptional tags score: " + str(round_int(d["optional cover score"]*100)) + "% (" + str(round(d["optional diversity average"], 1)) + " picture/existing tag)"
+        ttip += "\n主要标签得分: " + str(round_int(d["main cover score"]*100)) + "% (" + str(round(d["main diversity average"], 1)) + "平均每个已有的标签对应的图片数量"
+        ttip += "\n可选标签得分: " + str(round_int(d["optional cover score"]*100)) + "% (" + str(round(d["optional diversity average"], 1)) + "平均每个已有的标签对应的图片数量"
 
         return event_color[col] % rating, ttip
 
