@@ -1292,12 +1292,12 @@ init python:
     recent_event_templates = {  # Girl events given to the player for rewarding/punishing
 
                                 # Rewardable events
-                                "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
-                                "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
-                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[%s]{/color}([girl_related_dict[%s]])。", discipline=False),
-                                "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
-                                "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
+                                "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更加熟练了({color=[c_emerald]}%s级{/color})。", discipline=False),
+                                "rank up" : GirlRecentEvent(type="rank up", action="她的阶级提升了", base_description="她已经提升为{color=[c_emerald]}%s阶{/color}。", discipline=False),
+                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她提升了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="在工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[%s]{/color}([girl_related_dict[%s]])。", discipline=False),
+                                "quest good result" : GirlRecentEvent(type="quest good result", action="在任务中表现良好", base_description="%s", discipline=False),
+                                "class good result" : GirlRecentEvent(type="class good result", action="在培训中学习努力", base_description="%s", discipline=False),
                                 "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
                                 "helped" : GirlRecentEvent(type="helped", action="帮助朋友", base_description="", discipline=False), # Not implemented
 
@@ -1320,7 +1320,7 @@ init python:
                                 "argued" : GirlRecentEvent(type="argued", action="与对手争执", base_description="", encourage=False), # Not implemented
 
                                 # Passive events (cannot be punished or rewarded=)
-                                "acquired" : GirlRecentEvent(type="acquired", base_description="你已经获得了%s。", encourage=False, discipline=False),
+                                "acquired" : GirlRecentEvent(type="acquired", base_description="你买下了%s。", encourage=False, discipline=False),
                                 "MC met" : GirlRecentEvent(type="MC met", base_description="你已经见过%s了。", encourage=False, discipline=False),
                                 "MC friend" : GirlRecentEvent(type="MC friend", base_description="你和%s成为了好朋友。", encourage=False, discipline=False),
                                 "MC flower" : GirlRecentEvent(type="MC flower", base_description="你现在可以给%s送花了。", encourage=False, discipline=False),

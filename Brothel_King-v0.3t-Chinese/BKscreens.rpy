@@ -931,7 +931,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                     if hovered_action:
                         hovered hovered_action
 
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
 
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
@@ -1020,7 +1020,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action #! Does not work for girls that have the same exact name. Investigate.
                     # if unhovered_action:
                     #     unhovered unhovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1106,7 +1106,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 button style "inv_no_padding" action but_action yalign 1.0:
                     if hovered_action:
                         hovered hovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1209,7 +1209,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         button style "inv_no_padding" action but_action xalign 1.0 yalign 1.0:
                             if hovered_action:
                                 hovered hovered_action
-                            tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                            tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                             vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                                 thumb None
                                 thumb_offset 0
@@ -4357,7 +4357,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_adv_cost()
 
-                            textbutton __("[brothel.advertising]  babes") + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
+                            textbutton "[brothel.advertising]  babes" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
 
                             $ ttip = __("Your brothel's current threat level is ") + brothel.estimate_threat_level() + "."
 
@@ -4381,7 +4381,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_sec_cost()
 
-                            textbutton __("[brothel.security]  goons") + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
+                            textbutton "[brothel.security]  goons" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
 
 
 

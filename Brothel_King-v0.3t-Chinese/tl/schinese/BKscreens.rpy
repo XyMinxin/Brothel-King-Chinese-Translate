@@ -76,11 +76,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:776
     old "She has "
-    new "她还有"
+    new "她当前的精力值为"
 
     # game/BKscreens.rpy:776
     old " energy left out of "
-    new " 点体力剩余，总共"
+    new "，上限为"
 
     # game/BKscreens.rpy:1134
     old "Open%s's schedule"
@@ -812,7 +812,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:839
     old "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience."
-    new "Add a custom badge to this girl. Custom badges do not do anything, they are for your own convenience."
+    new "给她添加一个自定义的徽章。徽章没有任何作用，只是为了更好的分类筛选。"
 
     # game/BKscreens.rpy:846
     old "Current badge: {b}%s{/b}.\nClick to change the custom badge for this girl."
@@ -876,7 +876,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1399
     old "Decide if Gizel will force girls to train against their will."
-    new "Decide if Gizel will force girls to train against their will."
+    new "决定吉泽尔是否会强迫女孩接受她们抗拒的训练。"
 
     # game/BKscreens.rpy:1409
     old "Training facility:"
@@ -884,15 +884,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1409
     old "Define which facility to use for her training (if any)."
-    new "Define which facility to use for her training (if any)."
+    new "确定使用哪个设施进行培训（如果有的话）。"
 
     # game/BKscreens.rpy:1414
     old "Gizel will choose an available facility automatically for her training."
-    new "Gizel will choose an available facility automatically for her training."
+    new "吉泽尔将自动选择一个可用的设施进行训练。"
 
     # game/BKscreens.rpy:1424
     old ", Lv. "
-    new ", Lv. "
+    new ", 等级 "
 
     # game/BKscreens.rpy:1430
     old "Use Weakness:"
@@ -900,7 +900,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1430
     old "Determines if Gizel will use her known weakness against her."
-    new "Determines if Gizel will use her known weakness against her."
+    new "决定吉泽尔是否会利用女孩的弱点来针对性训练。"
 
     # game/BKscreens.rpy:1435
     old "Holding mode:"
@@ -908,7 +908,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1435
     old "Decide what the girl will do when not in training (work or rest)."
-    new "Decide what the girl will do when not in training (work or rest)."
+    new "决定女孩在不训练的时候会做什么（工作或休息）。"
 
     # game/BKscreens.rpy:1443
     old "Change program"
@@ -916,11 +916,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1443
     old "Change "
-    new "Change "
+    new "变更"
 
     # game/BKscreens.rpy:1443
     old "'s current training program."
-    new "'s current training program."
+    new "现在的训练内容。"
 
     # game/BKscreens.rpy:1461
     old "Open %s's entry in your magical notebook (shortcut: {u}n{/u})"
@@ -928,31 +928,31 @@ translate schinese strings:
 
     # game/BKscreens.rpy:1481
     old "Girl rating ("
-    new "Girl rating ("
+    new "女孩阶级 ("
 
     # game/BKscreens.rpy:1759
     old "Sanity: "
-    new "Sanity: "
+    new "理智: "
 
     # game/BKscreens.rpy:1811
     old "Away"
-    new "Away"
+    new "外出"
 
     # game/BKscreens.rpy:1817
     old "Hurt (%id)"
-    new "Hurt (%id)"
+    new "受伤 (%i天)"
 
     # game/BKscreens.rpy:1823
     old "Resting"
-    new "Resting"
+    new "休息中"
 
     # game/BKscreens.rpy:1837
     old "Holding"
-    new "Holding"
+    new "关押中"
 
     # game/BKscreens.rpy:1839
     old "Training"
-    new "Training"
+    new "训练中"
 
     # game/BKscreens.rpy:1870
     old "Main skills"
@@ -1060,15 +1060,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2616
     old "Interact with your girl. Costs actions."
-    new "Interact with your girl. Costs actions."
+    new "与女孩互动，这将消耗行动点。"
 
     # game/BKscreens.rpy:2627
     old "You cannot take any more actions today."
-    new "You cannot take any more actions today."
+    new "你已经耗尽了今天的行动力。"
 
     # game/BKscreens.rpy:2630
     old "You cannot interact with %s as she is away."
-    new "You cannot interact with %s as she is away."
+    new "你无法在%s外出时与她互动。"
 
     # game/BKscreens.rpy:2632
     old "I{u}t{/u}ems"
@@ -1080,7 +1080,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2651
     old "Release this girl from your custody. ({i}shortcut: {u}Backspace{/u}{/i})"
-    new "Release this girl from your custody. ({i}shortcut: {u}Backspace{/u}{/i})"
+    new "把这个女孩从你的监管中释放出来。 ({i}快捷键: {u}退格键{/u}{/i})"
 
     # game/BKscreens.rpy:2654
     old "Sell"
@@ -1116,27 +1116,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2701
     old "Test girl pack with the game's picture generation."
-    new "Test girl pack with the game's picture generation."
+    new "用游戏生成的图片测试女孩包。"
 
     # game/BKscreens.rpy:2719
     old "Acquaintance"
-    new "Acquaintance"
+    new "一面之缘"
 
     # game/BKscreens.rpy:2721
     old "Friend"
-    new "朋友"
+    new "泛泛之交"
 
     # game/BKscreens.rpy:2723
     old "Love interest"
-    new "知己"
+    new "红颜知己"
 
     # game/BKscreens.rpy:2725
     old "Girlfriend"
-    new "情侣"
+    new "亲密情侣"
 
     # game/BKscreens.rpy:2727
     old "Lover"
-    new "爱人"
+    new "至死不渝"
 
     # game/BKscreens.rpy:2729
     old "Current relationship: "
@@ -1160,7 +1160,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2900
     old "Girl Schedule"
-    new "Girl Schedule"
+    new "排班表"
 
     # game/BKscreens.rpy:2934
     old "Click here to check "
@@ -1172,7 +1172,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2956
     old "Exhausted"
-    new "Exhausted"
+    new "精疲力竭"
 
     # game/BKscreens.rpy:2958
     old "Hurt ("
@@ -1216,11 +1216,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3025
     old "Save %s's schedule"
-    new "Save %s's schedule"
+    new "保存%s的排班表"
 
     # game/BKscreens.rpy:3050
     old "Load a schedule for %s"
-    new "Load a schedule for %s"
+    new "套用%s的排班表"
 
     # game/BKscreens.rpy:3081
     old "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it"
@@ -1228,43 +1228,43 @@ translate schinese strings:
 
     # game/BKscreens.rpy:3084
     old "Autorest OFF"
-    new "Autorest OFF"
+    new "自动休息 关闭"
 
     # game/BKscreens.rpy:3086
     old "Autorest ON - Limit: "
-    new "Autorest ON - Limit: "
+    new "自动休息 开启 - 阈值:低于"
 
     # game/BKscreens.rpy:3086
     old " energy"
-    new " energy"
+    new "精力时休息"
 
     # game/BKscreens.rpy:3090
     old "OK"
-    new "OK"
+    new "好的"
 
     # game/BKscreens.rpy:3125
     old "Available points:"
-    new "Available points:"
+    new "剩余未使用天赋点:"
 
     # game/BKscreens.rpy:3238
     old "This perk has already been unlocked."
-    new "This perk has already been unlocked."
+    new "这个天赋已经被解锁了。"
 
     # game/BKscreens.rpy:3247
     old "Acquire "
-    new "Acquire "
+    new "解锁 "
 
     # game/BKscreens.rpy:3247
     old " for 1 perk point."
-    new " for 1 perk point."
+    new " 需要1点天赋点。"
 
     # game/BKscreens.rpy:3282
     old "Unlock\n{size=-6}(costs 2 perk points){/size}"
-    new "Unlock\n{size=-6}(costs 2 perk points){/size}"
+    new "解锁\n{size=-6}(消耗2点天赋点){/size}"
 
     # game/BKscreens.rpy:3293
     old "Confirm"
-    new "Confirm"
+    new "确认"
 
     # game/BKscreens.rpy:3439
     old "Yesterday"
@@ -1284,7 +1284,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4239
     old "Build furniture to unlock various upgrades for the brothel."
-    new "Build furniture to unlock various upgrades for the brothel."
+    new "建造设施以解锁青楼的各种升级。"
 
     # game/BKscreens.rpy:4267
     old " and {b}"
@@ -1300,7 +1300,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4294
     old "Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!"
-    new "Trainers help your girls learn new skills. Discover new trainers by meeting the people of Zan!"
+    new "协助者能够提供许多增益效果。通过与泽恩的NPC建立友谊来获得更多协助者的帮助!"
 
     # game/BKscreens.rpy:4298
     old "No other trainer available"
@@ -1312,43 +1312,31 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4323
     old "{i}Recruit a trainer to help your girls.{/i}"
-    new "{i}Recruit a trainer to help your girls.{/i}"
+    new "{i}找一个协助者来帮助你的女孩。{/i}"
 
     # game/BKscreens.rpy:4338
     old "Your brothel's current reputation is {b}"
-    new "Your brothel's current reputation is {b}"
-
-    # game/BKscreens.rpy:4340
-    old "Advertising"
-    new "Advertising"
+    new "你的青楼现在的名声为{b}"
 
     # game/BKscreens.rpy:4351
     old "Pay hot chicks with revealing clothing to hang around your brothel, and tell would-be patrons about your establishment."
-    new "Pay hot chicks with revealing clothing to hang around your brothel, and tell would-be patrons about your establishment."
+    new "雇佣暴露性感的辣妹，让她们在你的青楼周边闲逛，并引导潜在的顾客光临你的青楼。"
 
     # game/BKscreens.rpy:4362
     old "Your brothel's current threat level is "
-    new "Your brothel's current threat level is "
-
-    # game/BKscreens.rpy:4364
-    old "Security"
-    new "Security"
+    new "你的青楼现在的威胁等级为"
 
     # game/BKscreens.rpy:4375
     old "Pay some sellswords to keep unruly patrons and competitors at bay."
-    new "Pay some sellswords to keep unruly patrons and competitors at bay."
+    new "雇佣一些佣兵来阻止不守规矩的顾客和竞争者。"
 
     # game/BKscreens.rpy:4388
     old "Your brothel's current dirt level is {b}"
-    new "Your brothel's current dirt level is {b}"
-
-    # game/BKscreens.rpy:4390
-    old "Maintenance"
-    new "Maintenance"
+    new "你的青楼现在的卫生情况为{b}"
 
     # game/BKscreens.rpy:4401
     old "Pay a maintenance team to clean up your brothel. And boy, does it get messy in there..."
-    new "Pay a maintenance team to clean up your brothel. And boy, does it get messy in there..."
+    new "请专业的家政人员来清理你的青楼。天啊，这里真是一团糟..."
 
     # game/BKscreens.rpy:4415
     old "Estimated customers"
@@ -1366,45 +1354,29 @@ translate schinese strings:
     old "Clean up"
     new "彻底清洁"
 
-    # game/BKscreens.rpy:4428
-    old "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)."
-    new "Buy cleaning material and have Sill and the servants scrub your brothel clean (full clean-up cost: %s gold)."
-
-    # game/BKscreens.rpy:4454
-    old "{b}Bedrooms{/b}"
-    new "{b}Bedrooms{/b}"
-
     # game/BKscreens.rpy:4470
     old "Add a new bedroom to your brothel for {b}"
-    new "Add a new bedroom to your brothel for {b}"
+    new "花费{b}"
 
     # game/BKscreens.rpy:4470
     old " gold{/b}. This brothel can only have a maximum of {b}"
-    new " gold{/b}. This brothel can only have a maximum of {b}"
+    new "金币扩建一间卧室{/b}。你的青楼现在最多可以容纳{b}"
 
     # game/BKscreens.rpy:4470
     old " bedrooms{/b}."
-    new " bedrooms{/b}."
+    new "间卧室{/b}。"
 
     # game/BKscreens.rpy:4472
     old "You cannot add any more bedrooms until you move to another brothel."
-    new "You cannot add any more bedrooms until you move to another brothel."
+    new "把青楼搬到更大的地方才能扩建更多的卧室。"
 
     # game/BKscreens.rpy:4474
     old "You have reached the maximum number of bedrooms."
-    new "You have reached the maximum number of bedrooms."
-
-    # game/BKscreens.rpy:4511
-    old "{b}Master Bedroom{/b}"
-    new "{b}Master Bedroom{/b}"
+    new "青楼里的卧室数量已到达上限。"
 
     # game/BKscreens.rpy:4541
     old " is currently assigned to the master bedroom."
-    new " is currently assigned to the master bedroom."
-
-    # game/BKscreens.rpy:4562
-    old "{b}Common Rooms{/b}"
-    new "{b}Common Rooms{/b}"
+    new "被安排接受你的私人指导。"
 
     # game/BKscreens.rpy:4647
     old " day(s) to complete."
