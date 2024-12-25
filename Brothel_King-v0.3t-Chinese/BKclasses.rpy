@@ -7285,7 +7285,7 @@ init -2 python:
                 return "{b}弱点{/b}: " + farm_related_dict[target.capitalize()]
 
             elif spe == "item":
-                return "{b}衣着要求{/b}: " + target.name
+                return "{b}衣着要求{/b}: " + misc_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外报酬)"
