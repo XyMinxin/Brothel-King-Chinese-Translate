@@ -1902,14 +1902,6 @@ translate schinese strings:
     old " gold"
     new " gold"
 
-    # game/BKitems.rpy:990
-    old "No items available (filters are on)."
-    new "No items available (filters are on)."
-
-    # game/BKitems.rpy:992
-    old "No items available."
-    new "No items available."
-
     # game/BKitems.rpy:1074
     old "Use shift + up/down arrows or mousewheel to cycle item pages."
     new "Use shift + up/down arrows or mousewheel to cycle item pages."

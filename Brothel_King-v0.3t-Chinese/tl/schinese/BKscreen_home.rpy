@@ -128,7 +128,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:241
     old "The carpenter stands ready to build new furniture for you."
-    new "The carpenter stands ready to build new furniture for you."
+    new "工匠随时都可以开始工作。"
 
     # game/BKscreen_home.rpy:249
     old "{u}B{/u}rothel"

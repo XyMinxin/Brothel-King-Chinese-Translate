@@ -194,9 +194,9 @@ screen score():
     frame xalign 0.0 yalign 1.0 xpadding 40 ypadding 40 xmargin 20 ymargin 20 background c_ui_darker:
         has hbox spacing 50
 
-        text "{b}Hits{/b} %s" % ("X"*njgame.hits + " "*(3-njgame.hits)) color c_main
+        text "{b}击中{/b} %s" % ("X"*njgame.hits + " "*(3-njgame.hits)) color c_main
 
-        text "{b}Misses{/b} %s" % ("X"*njgame.misses + " "*(3-njgame.misses)) color c_lightred
+        text "{b}失手{/b} %s" % ("X"*njgame.misses + " "*(3-njgame.misses)) color c_lightred
 
 # The game starts here.
 

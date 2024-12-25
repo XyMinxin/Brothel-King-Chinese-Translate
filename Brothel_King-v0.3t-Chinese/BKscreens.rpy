@@ -279,7 +279,7 @@ screen tax_tooltip():
 
                 add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
-                text "No guild fee is due." xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
+                text "无需缴纳公会费用。" xalign 0.0 yalign 0.5 size res_font(14) color c_emerald
 
 
 screen tax_tab(fade=False):
@@ -308,7 +308,7 @@ screen tax_tab(fade=False):
                 $ due_date = "in %s days" % (8-calendar.day)
 
             vbox:
-                text "Guild Fee" bold True size res_font(14)
+                text "公会费" bold True size res_font(14)
                 text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
 
 
@@ -413,7 +413,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip ("%s\n今天是%s, 第%i年%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
+            tooltip ("%s\n今天是%s, 第%i年的%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
 
             hbox:
                 spacing xres(8)
@@ -951,10 +951,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(11)  drop_shadow (1, 1)
+                    text "阶级" size res_font(11)  drop_shadow (1, 1)
                     text rank_name[girl.rank] size res_font(14) bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(11)  drop_shadow (1, 1)
+                    text "等级" size res_font(11)  drop_shadow (1, 1)
                     text str(girl.level) size res_font(14) bold True drop_shadow (1, 1)
 
             frame:
@@ -1039,10 +1039,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 xalign 0.05
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(12)  drop_shadow (1, 1)
+                    text "阶级" size res_font(12)  drop_shadow (1, 1)
                     text rank_name[girl.rank] size res_font(16) bold True  drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(12)  drop_shadow (1, 1)
+                    text "等级" size res_font(12)  drop_shadow (1, 1)
                     text str(girl.level) size res_font(16) bold True  drop_shadow (1, 1)
 
             frame:
@@ -1140,10 +1140,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 yalign 0.25
 
                 hbox spacing 3 xalign 1.0:
-                    text "Rk" size res_font(11)
+                    text "阶级" size res_font(11)
                     text rank_name[girl.rank] size res_font(14) bold True drop_shadow (1, 1)
                 hbox spacing 3 xalign 1.0:
-                    text "Lv" size res_font(11)
+                    text "等级" size res_font(11)
                     text str(girl.level) size res_font(14) bold True drop_shadow (1, 1)
 
             frame:
@@ -1257,10 +1257,10 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         yalign 0.6
 
                         hbox spacing 6:
-                            text "Rank" size res_font(14)
+                            text "阶级" size res_font(14)
                             text rank_name[girl.rank] bold True drop_shadow (1, 1)
                         hbox spacing 6:
-                            text "Level" size res_font(14)
+                            text "等级" size res_font(14)
                             text str(girl.level) bold True drop_shadow (1, 1)
 
                 if context != "free" or girl.MC_interact:
@@ -1867,7 +1867,7 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
 
                 ## SKILLS LISTING
 
-                text "Main skills" size res_font(18)
+                text "主要属性" size res_font(18)
 
                 vbox:
                     spacing 0
@@ -3033,7 +3033,7 @@ screen save_schedule(girl):
                                 for j in range(7):
                                     textbutton weekdays[j][0] xalign 0.5 background workshift_color[game.saved_schedules[i][j]]
                         else:
-                            text "Empty" italic True size res_font(18)
+                            text "空" italic True size res_font(18)
 
             null height yres(10)
             textbutton "取消" action Hide("save_schedule", transition=Dissolve(0.15)) xalign 1.0
@@ -3060,7 +3060,7 @@ screen load_schedule(girl):
                                 for j in range(7):
                                     textbutton weekdays[j][0] xalign 0.5 background workshift_color[game.saved_schedules[i][j]]
                         else:
-                            text "Empty" italic True size res_font(18)
+                            text "空" italic True size res_font(18)
 
             null height yres(10)
             textbutton "取消" action Hide("load_schedule", transition=Dissolve(0.15)) xalign 1.0
@@ -3536,17 +3536,17 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}Worked{/b}" color c_orange size small xalign 0.5
+                                    text "{b}工作{/b}" color c_orange size small xalign 0.5
 
                                     $ ttip = __("Waitress: ") + str_int(log_dict["waitress_days"][days]) + __("              Dancer: ") + str_int(log_dict["waitress_days"][days]) + __("\nMasseuse: ") + str_int(log_dict["masseuse_days"][days]) + __("            Geisha: ") + str_int(log_dict["geisha_days"][days]) + __("\nWhore: ") + str_int(log_dict["whore_days"][days]) + __("                 Work/whore : ") + str_int(log_dict["work_whore_days"][days])
 
                                     textbutton str_int(log_dict["work_days"][days]) background None xpadding 0 ypadding 0 xmargin 0 ymargin 0 text_size average text_color c_brown xalign 0.5 action NullAction() hovered tt.Action(ttip)
 
-                                    text "{b}Rested{/b}" color c_green size small xalign 0.5
+                                    text "{b}休息{/b}" color c_green size small xalign 0.5
 
                                     text str_int(log_dict["rest_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Away{/b}" color c_blue size small xalign 0.5
+                                    text "{b}外出{/b}" color c_blue size small xalign 0.5
 
                                     text str_int(log_dict["away_days"][days] + log_dict["farm_days"][days]) size average color c_brown xalign 0.5
 
@@ -3558,11 +3558,11 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                                     text "{b}Days{/b}" color c_darkgrey size small xalign 0.5
 
-                                    text "{b}On strike{/b}" color c_red size small xalign 0.5
+                                    text "{b}遇袭{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["strike_days"][days]) size average color c_brown xalign 0.5
 
-                                    text "{b}Hurt/Sick{/b}" color c_red size small xalign 0.5
+                                    text "{b}受伤/生病{/b}" color c_red size small xalign 0.5
 
                                     text str_int(log_dict["hurt_days"][days] + log_dict["sick_days"][days]) size average color c_brown xalign 0.5
 
@@ -3594,7 +3594,7 @@ screen girl_log(): # Reminder: selected_girl is a Global variable that holds the
 
                         text "{b}Reputation{/b}" color c_purple size small xalign 0.5
 
-                        text "{b}Av. score{/b}" color c_crimson size small xalign 0.5
+                        text "{b}平均得分{/b}" color c_crimson size small xalign 0.5
 
                         for job in all_jobs:
 
@@ -4417,7 +4417,7 @@ screen brothel():
 
                             vbox spacing 6 xsize xres(150):
                                 text "威胁等级" size res_font(14)
-                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + ". Brothel threat is affected by brothel security and your Strength skill."
+                                textbutton brothel.estimate_threat_level(caps=True) style "inv_no_padding" action NullAction() tooltip "青楼当前的威胁等级为" + brothel.estimate_threat_level() + "。威胁等级受保安和你的力量属性影响。"
 
                             vbox spacing 6 xsize xres(200):
                                 hbox spacing 10:
@@ -4620,7 +4620,7 @@ screen furniture():
 
         has vbox spacing 10
 
-        text __("Carpenter's Wagon") bold True xalign 0 yalign 0
+        text "工匠的马车" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize yres(120):
             add "side carpenter" zoom 0.8 yalign 0.5
@@ -4633,12 +4633,12 @@ screen furniture():
             text text1 xsize 0.4 yalign 0.5 size res_font(18) justify True italic True
 
             vbox xsize 0.4 yfill True xalign 1.0:
-                text __("Available resources") drop_shadow (2, 2) size res_font(18)
+                text "资源储备" drop_shadow (2, 2) size res_font(18)
                 frame xfill True yfill True background c_ui_brown xpadding 0 ypadding 0:
                     use resource_tab(y=0.0, sz=24)
 
             vbox xsize 0.6 yfill True xalign 1.0:
-                text __("Building Queue") drop_shadow (2, 2) size res_font(18)
+                text "建筑序列" drop_shadow (2, 2) size res_font(18)
                 frame xfill True yfill True background c_ui_brown:
                     if brothel.current_building:
                         $ dur = brothel.current_building.duration - (calendar.time - brothel.started_building)
@@ -4648,7 +4648,7 @@ screen furniture():
                             add brothel.current_building.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
                             text str(dur) + __("d") xalign 1.0 yalign 0.0 size res_font(18)
                     else:
-                        text __("No building in progress.") italic True size res_font(14)
+                        text "没有正在建造或升级的设施。" italic True size res_font(14)
 
         text brothel.name + __("'s Decoration and Furniture") drop_shadow (2, 2) size res_font(18)
 
@@ -4659,7 +4659,7 @@ screen furniture():
                     button background c_ui_brown action NullAction() tooltip furn.description xsize xres(52) ysize yres(44) xpadding 0 ypadding 0:
                         add furn.pic.get(xres(48), yres(40)) xalign 0.5 yalign 0.5
 
-        text __("Build templates") drop_shadow (2, 2) size res_font(18)
+        text "设施界面" drop_shadow (2, 2) size res_font(18)
 
         frame background c_ui_dark:
             viewport:
@@ -6841,10 +6841,10 @@ screen farm_tab():
             text "吉泽尔的奴隶农场" drop_shadow (2, 2) bold True xalign 0
 
             if farm.girls:
-                $ text1 = __("Ah, [MC.name]! Came to check on my pets?")
+                $ text1 = "啊, [MC.name]! 要不要来看看我的宠物?"
                 $ pic = "side gizel"
             else:
-                $ text1 = __("My minions are bored... When are you going to send them some new playmates?")
+                $ text1 = "我的仆从们感到无聊...你打算什么时候给他们送来一些新的玩伴？"
                 $ pic = "side gizel upset"
 
             if MC.street_girls:
@@ -8154,7 +8154,7 @@ screen girl_mix(show_rating=False):
         frame xsize 0.7 yfill True:
             has vbox
 
-            text __("Girl Mix") bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
+            text "女孩包列表" bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
 
             hbox box_wrap True:
                 for mix_name in sorted(persistent.girl_mix):
@@ -8162,7 +8162,7 @@ screen girl_mix(show_rating=False):
                 textbutton "+" action renpy.curried_invoke_in_new_context(add_mix) text_size res_font(18) tooltip __("Click here to create a new girl mix.")
 
             text "" size res_font(12)
-            text __("Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'") size res_font(14) color c_brown xpos xres(6)
+            text "点击一个女孩的立绘来添加或删除这个女孩包。\n你可以通过点击“+”创建一个新的女孩包组合。" size res_font(14) color c_brown xpos xres(6)
 
             text "" size res_font(12)
 
@@ -8567,7 +8567,7 @@ screen goal_ttip():
 
     frame xalign 0.5 yalign 0.5 xsize 0.5 xpadding xres(20) ypadding yres(20) background c_ui_darkblue:
         has vbox spacing yres(10)
-        text __("{image=tb goal} Chapter %i - Your Goals") % game.chapter size res_font(28) color c_white bold True xalign 0.5
+        text "{image=tb goal} 第%i章 - 主线目标" % game.chapter size res_font(28) color c_white bold True xalign 0.5
         text "" size res_font(14)
 
         for cat, goal_desc, tb in game.get_goals():
@@ -8613,7 +8613,7 @@ screen power_detail(pow):
             text pow.name + {True : " (S)", False : ""}[pow.super] size res_font(24) bold True
             text pow.description size res_font(14)
 
-            text __("Mojo cost:") size res_font(18) bold True
+            text "魔力消耗:" size res_font(18) bold True
             hbox spacing xres(6):
                 if conduit:
                     $ mod = conduit.get_effect("change", "mojo cost")
@@ -8627,17 +8627,17 @@ screen power_detail(pow):
                                 if mod:
                                     color c_green
 
-            text __("Sanity cost:") size res_font(18) bold True
+            text "理智消耗:" size res_font(18) bold True
             hbox spacing xres(3):
                 add "UI/Powers/sanity_cost_[pow.sanity_lvl].webp" zoom 1.2
                 text "[pow.sanity_lvl]" size res_font(14) yalign 0.4
 
-            text __("Target:") size res_font(18) bold True
+            text "目标:" size res_font(18) bold True
             $ target = pow.target.capitalize()
             text target.capitalize() size res_font(14)
 
             if pow.duration:
-                text __("Duration:") size res_font(18) bold True
+                text "持续时间:" size res_font(18) bold True
                 text "[pow.duration] days" size res_font(14)
 
 
@@ -8650,7 +8650,7 @@ screen power_draw(x=0.505, y=0.425): # Check if deck can be drawn must happen be
     button style "inv_no_padding" xsize yres(200) ysize yres(200) align (x, y):
         action (Return("draw"), Hide())
 
-        text __("Draw a card") color c_white drop_shadow (2, 2) align (0.5, 0.5) at blink(_duration=0.5, _pause=0.5)
+        text "抽一张牌" color c_white drop_shadow (2, 2) align (0.5, 0.5) at blink(_duration=0.5, _pause=0.5)
 
 # Card hand
 screen power_hand(hand, context="idle", start_at = 0, x=0.5, y=0.75):

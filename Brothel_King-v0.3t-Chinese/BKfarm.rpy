@@ -18,7 +18,7 @@ init -2 python:
 
         def get_tooltip(self):
 
-            ttip = "The %s can hold %i minion%s (currently: %i). " % (self.name, self.rank, plural(self.rank), len(self.minions))
+            ttip = " %s现在可以容纳%i个仆从，%s (已收容: %i个)。" % (self.name, self.rank, plural(self.rank), len(self.minions))
 
             if self.can_upgrade():
                 if self.rank > 0:

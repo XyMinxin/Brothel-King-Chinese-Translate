@@ -1406,29 +1406,9 @@ translate schinese strings:
     old "{b}Common Rooms{/b}"
     new "{b}Common Rooms{/b}"
 
-    # game/BKscreens.rpy:4623
-    old "Carpenter's Wagon"
-    new "Carpenter's Wagon"
-
-    # game/BKscreens.rpy:4636
-    old "Available resources"
-    new "Available resources"
-
-    # game/BKscreens.rpy:4641
-    old "Building Queue"
-    new "Building Queue"
-
     # game/BKscreens.rpy:4647
     old " day(s) to complete."
     new " day(s) to complete."
-
-    # game/BKscreens.rpy:4651
-    old "No building in progress."
-    new "No building in progress."
-
-    # game/BKscreens.rpy:4662
-    old "Build templates"
-    new "Build templates"
 
     # game/BKscreens.rpy:4722
     old "{b}Customer populations{/b}"
@@ -1564,23 +1544,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5122
     old "The headhunter is back with your prize!"
-    new "The headhunter is back with your prize!"
+    new "猎头带着你的战利品回来了!"
 
     # game/BKscreens.rpy:5134
     old "Headhunter: [game.headhunter_time] days"
-    new "Headhunter: [game.headhunter_time] days"
+    new "Headhunter: [game.headhunter_time]天"
 
     # game/BKscreens.rpy:5135
     old "The headhunter will be back in [headhunter_time] days."
-    new "The headhunter will be back in [headhunter_time] days."
+    new "猎头将在[headhunter_time]天后归来。"
 
     # game/BKscreens.rpy:5152
     old "Click to keep the brothel report showing at all times."
-    new "Click to keep the brothel report showing at all times."
+    new "点击常驻显示经营报告。"
 
     # game/BKscreens.rpy:5156
     old "Click to hide the brothel report."
-    new "Click to hide the brothel report."
+    new "点击隐藏经营报告。"
 
     # game/BKscreens.rpy:5168
     old "Show brothel report"
@@ -1604,7 +1584,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5186
     old "{color=[c_lightblue]}Did you know? {/color}%s"
-    new "{color=[c_lightblue]}Did you know? {/color}%s"
+    new "{color=[c_lightblue]}你知道吗? {/color}%s"
 
     # game/BKscreens.rpy:5205
     old "Next\ntip"
@@ -1997,10 +1977,6 @@ translate schinese strings:
     # game/BKscreens.rpy:6844
     old "Ah, [MC.name]! Came to check on my pets?"
     new "Ah, [MC.name]! Came to check on my pets?"
-
-    # game/BKscreens.rpy:6847
-    old "My minions are bored... When are you going to send them some new playmates?"
-    new "My minions are bored... When are you going to send them some new playmates?"
 
     # game/BKscreens.rpy:6851
     old "\n\n%i street whores are currently housed in the barn."
@@ -2426,10 +2402,6 @@ translate schinese strings:
     old "Machine Group"
     new "Machine Group"
 
-    # game/BKscreens.rpy:8157
-    old "Girl Mix"
-    new "Girl Mix"
-
     # game/BKscreens.rpy:8161
     old "Click here to see the %s girl mix."
     new "Click here to see the %s girl mix."
@@ -2437,10 +2409,6 @@ translate schinese strings:
     # game/BKscreens.rpy:8162
     old "Click here to create a new girl mix."
     new "Click here to create a new girl mix."
-
-    # game/BKscreens.rpy:8165
-    old "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
-    new "Click on a girl's profile to add or remove this girl from the mix.\nYou can create a new mix by clicking '+'"
 
     # game/BKscreens.rpy:8187
     old "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"
@@ -2533,26 +2501,6 @@ translate schinese strings:
     # game/BKscreens.rpy:8484
     old "%s gold"
     new "%s金币"
-
-    # game/BKscreens.rpy:8570
-    old "{image=tb goal} Chapter %i - Your Goals"
-    new "{image=tb goal} Chapter %i - Your Goals"
-
-    # game/BKscreens.rpy:8616
-    old "Mojo cost:"
-    new "魔力消耗:"
-
-    # game/BKscreens.rpy:8630
-    old "Sanity cost:"
-    new "理智消耗:"
-
-    # game/BKscreens.rpy:8635
-    old "Target:"
-    new "Target:"
-
-    # game/BKscreens.rpy:8640
-    old "Duration:"
-    new "Duration:"
 
     # game/BKscreens.rpy:8653
     old "Draw a card"

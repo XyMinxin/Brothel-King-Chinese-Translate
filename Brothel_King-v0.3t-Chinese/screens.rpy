@@ -474,9 +474,9 @@ screen main_menu():
 
         background "black"
         add gui.main_menu_background
-        text "Brothel King" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (xres(2), yres(2)) font "bk.ttf" color c_darkorange
+        text "青楼之王" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (xres(2), yres(2)) font "bk.ttf" color c_darkorange
 
-        text "For updates, bug reports, and discussion: [URL]" xalign 0.5 yalign 0.96 size res_font(14)
+        text "更新、bug报告和讨论请前往: [URL]" xalign 0.5 yalign 0.96 size res_font(14)
 
         vbox xalign 0.99 yalign 0.01:
             text "[renpy.version_string]" xalign 1.0 size res_font(12)

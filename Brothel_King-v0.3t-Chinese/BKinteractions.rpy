@@ -461,9 +461,9 @@ label slave_chat_slave_life(girl): # D/S
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Tell me, how do you like your life as a slave?",
-                       "Are you happy about being a slave?",
-                       "How do you feel about being a slave?")))
+    $ you(rand_choice(("告诉我,作为奴隶的生活感觉如何?",
+                       "做个奴隶开心吗?",
+                       "变成奴隶你有什么感觉?")))
 
     $ inter.score = girl.mood + girl.get_stat("obedience") / 5
 
@@ -504,9 +504,9 @@ label slave_chat_brothel(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("How do you like life in the brothel?",
-                       "Is life in the brothel ok for you?",
-                       "Are you happy working here?")))
+    $ you(rand_choice(("青楼里的生活感觉如何?",
+                       "还习惯青楼里的生活吗?",
+                       "工作开心吗?")))
 
     $ inter.score = girl.mood + girl.get_stat("libido") / 5
 
@@ -555,9 +555,9 @@ label slave_chat_customers(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Are you getting along with the customers?",
-                       "How are the customers treating you?",
-                       "Are you happy working with the customers?")))
+    $ you(rand_choice(("和顾客相处的怎么样?",
+                       "客人们对你怎么样?",
+                       "服务那些客人感觉如何?")))
 
     $ inter.score = girl.mood + girl.get_stat("sensitivity") / 5
 
@@ -599,9 +599,9 @@ label slave_chat_other_girls(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Are you getting along with the other girls?",
-                       "Do you like the other girls in the brothel?",
-                       "Do you have any friends here?")))
+    $ you(rand_choice(("你和其他女孩相处得如何?",
+                       "你喜欢青楼里的其他女孩吗?",
+                       "在这里有没有交到朋友?")))
 
     $ inter.score = girl.mood + girl.get_stat("charm")/5 + len(girl.friends)*10 - len(girl.rivals)*10
 
@@ -704,7 +704,7 @@ label slave_chat_well_being(girl):
     if inter.response == "afraid":
         return
 
-    $ you(rand_choice(("Is everything all right?", "How are you feeling?", "Is there anything wrong?")))
+    $ you(rand_choice(("一切都顺利吗?", "你感觉怎么样?", "有遇到什么麻烦吗?")))
 
     if girl.mood > -75:
         if girl.mood > 75:
@@ -907,7 +907,7 @@ label slave_chat_tastes(girl):
 
     elif inter.score <= 30:
         "She is more relaxed around you now. She tells you a little about her tastes."
-        $ result = rand_choice(("likes", "dislikes"))
+        $ result = rand_choice(("喜欢", "不喜欢"))
         $ girl.change_love(1)
         $ girl.change_fear(-1)
 
@@ -1562,9 +1562,9 @@ label slave_train_obedience(girl):
 
     "You start with giving [girl.name] simple orders around the house."
 
-    $ MC.rand_say(("Clean up the attic, will you?", "Help Sill with her chores.", "Change all the bedsheets.", __("Take a broom and clean up the ") + __(rand_choice(brothel.rooms.keys())) + ".",
-                  "Fetch some water at the well.", "ar: Clean up the Arios altar.", "Make sure there is no dust on the walls.", "Cook something for us.", "ev: Shine my boots real good. I don't want a speck of dirt on them, you hear me?",
-                  "wr: Oil my weapons. I mean my swords, of course.", "tr: Feed Drogon a frog. Don't be shy, he very rarely bites people's hand off.", "wz: Wipe my staff. My magic staff. I mean... Well, you know."))
+    $ MC.rand_say(("请你把阁楼打扫一下好吗?", "帮希露分担一些家务。", "把脏床单都换掉", "拿上扫帚去清理" + __(rand_choice(brothel.rooms.keys())) + "。",
+                  "从井里打些水来。", "ar: 清理太阳神祭坛。", "确保墙壁上没有灰尘。", "给我们做点吃的。", "ev: 把我的靴子擦干净。我不想让他们沾上一点脏东西，听到了吗？",
+                  "wr: 润滑一下我的武器，当然, 我说的是我的长剑。", "tr: 给小龙喂些青蛙。别紧张，它很少咬人的手。", "wz: 擦擦我的杖。我是说我的法杖。我的意思是...嗯，你懂我意思。"))
 
     $ pic = girl.get_pic("obedience", "maid", "waitress", "profile", naked_filter=True, soft=True)
 
@@ -1922,8 +1922,8 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     if act == "naked":
 
         $ inter.score = girl.get_stat("libido") - reluctance
-        $ text1 = rand_choice(("pinch her nipples", "fondle her breasts", "inspect her juicy body", "pat her butt", "caress her soft skin", "inspect every inch of her body",
-                  "check out her generous curves", "give her a thorough physical exam", "just stand there, looking at her naked body"))
+        $ text1 = rand_choice(("捏她的乳头", "握住她的奶子", "欣赏她多汁的身体", "拍她的翘臀", "抚摸她柔软的皮肤", "检查她身体的每一寸",
+                  "欣赏她优美的曲线", "给她做个全面的身体检查", "站在那里,欣赏她的裸体"))
 
         "Taking off her clothes, she stands completely nude for your attention."
 
@@ -1968,23 +1968,23 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
         play sound s_sucking loop
 
         if pic.has_tag("oral"):
-            $ text1 = rand_choice(("sucks your dick", "licks your shaft and balls"))
+            $ text1 = rand_choice(("舔你的老二", "嗦你的蛋蛋"))
             "You push your dick into her mouth, making her service you with her mouth and tongue."
 
         elif pic.has_tag("handjob"):
-            $ text1 = rand_choice(("plays with your dick", "jerks your cock with her soft hands"))
+            $ text1 = rand_choice(("帮你撸出来", "用她柔软的手包裹住你的肉棒"))
             "You ask her to use her hands to massage and service your dick."
 
         elif pic.has_tag("titjob"):
-            $ text1 = rand_choice(("plays with your dick", "rubs your cock with her oiled tits"))
+            $ text1 = rand_choice(("帮你撸出来", "用她涂了油的胸部夹住你的肉棒"))
             "You ask her to use her naughty tits to service your dick."
 
         elif pic.has_tag("mast"):
-            $ text1 = rand_choice(("fingers her wet pussy", "plays with her clit"))
+            $ text1 = rand_choice(("用手指戳进她湿漉漉的小穴", "拨弄她的阴蒂"))
             "You ask her to masturbate and give you a good show while you do the same."
 
         else:
-            $ text1 = "gives you service"
+            $ text1 = "侍奉你"
             "You ask her to service you with her body."
 
         if inter.score < -50:
@@ -2021,7 +2021,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     elif act == "sex":
 
         $ inter.score = girl.get_stat(act) - reluctance
-        $ text1 = rand_choice(("rides your dick", "gets fucked in all positions", "gets fucked hard and deep", "gets a good pounding from your hard cock"))
+        $ text1 = rand_choice(("骑在你的腰上", "摆出各种姿势挨操", "被狠狠地操", "被你的肉棒狠狠地教训"))
 
         play sound s_moans loop
 
@@ -2063,7 +2063,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     elif act == "anal":
 
         $ inter.score = girl.get_stat(act) - reluctance
-        $ text1 = rand_choice(("fuck her tight asshole", "lift her legs in the air and fuck her butt", "slap her ass as you give it a good fucking", "violate her ass"))
+        $ text1 = rand_choice(("操她紧致的菊花", "把她的腿抬起来操她的菊花", "拍拍她的屁股，慢慢地插进去", "干她的屁股"))
 
         play sound s_moans loop
 
@@ -2103,7 +2103,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     elif act == "fetish":
 
         $ inter.score = girl.get_stat(act) - reluctance
-        $ text1 = rand_choice(("use your favorite toys on her", "rape her with some of your new toys", "violate her holes with cruel and unusual tools", "tie her to a bizarre contraption and fuck her brains out"))
+        $ text1 = rand_choice(("用你最喜欢的玩具调教她", "用你的新玩具调教她", "用残忍和不寻常的工具插她的肉洞", "把她绑在一个奇怪的装置上，然后干死她"))
 
         "You open your toolbox."
 
@@ -2149,7 +2149,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     elif act == "bisexual":
 
         $ inter.score = (girl.get_stat("service") + girl.get_stat("sex"))/2  - reluctance
-        $ text1 = rand_choice(("licking the love juice from Sill's cunt", "fucking Sill with a black rubber strap-on", "rubbing her clit hard against Sill's pussy", "kissing Sill passionately while she plays with herself"))
+        $ text1 = rand_choice(("舔着希露的阴部的爱液", "装上黑色的假鸡巴猛操希露", "用她的阴蒂使劲摩擦希露的阴部", "在她自慰的时候热情地亲吻希露"))
 
         play sound s_moans loop
 
@@ -2192,7 +2192,7 @@ label slave_do(girl, act, context="generic"): # Receives 'pic' and 'reluctance' 
     elif act == "group":
 
         $ inter.score = (girl.get_stat("service") + girl.get_stat("sex") + girl.get_stat("anal"))/3  - reluctance
-        $ text1 = rand_choice(("fuck her hard while she sucks the other guy off", "fuck her while the other guy does her ass", "use her holes to satisfy yourself and the random guy", "make her deepthroat your dick while the other guy rams her"))
+        $ text1 = rand_choice(("在她给另一个男人口交的时候使劲操她", "在她被另一个男人玩弄菊花的时候使劲操她", "利用她的洞来满足你自己和其他男人", "在她被另一个男人爆操的时候把肉棒插到她的喉咙里"))
 
         play sound s_moans loop
         play sound2 s_moans_short loop
@@ -2319,9 +2319,9 @@ label slave_magic(girl, mode="train"):
 
     $ text1 += ", I command thee, "
 
-    $ text1 += rand_choice(("follow my voice into the labyrinth...", "bid farewell to the limits of the physical world...",
-                           "fall into a deep, deep slumber...", "do not fight the power of the ethereal dream...", "embark on the seas of oblivion...",
-                           "forget who you are and where you lay...", "hear my stories and forget yourself..."))
+    $ text1 += rand_choice(("跟着我的声音进入迷宫...", "脱离物质世界的禁锢...",
+                           "进入深深的沉睡...", "不要抵抗梦境的侵蚀...", "踏上遗忘之海的旅程...",
+                           "忘记你是谁，忘记你躺在哪里...", "你是我故事中的角色..."))
 
     play sound s_spell
 
@@ -2477,9 +2477,9 @@ label slave_reward_praise(girl):
             you "You are classy and stylish. People envy you."
 
     else:
-        $ MC.rand_say(("You are working hard, and I appreciate that.", "This place wouldn't be the same without you. Thank you.", "gd: Thanks for all your efforts. I am very happy about you.",
-                    "ev: You're one of my most efficient servants. Don't get complacent, though.", "ne: You're a good slave, it's getting rare these days.",
-                    "ar: Arios loves you, and He will reward your spirit.", "sh: The Goddess says: She who toils in the shadows will reap the rewards ten-fold.", "ng: I don't believe in gods, but you might be an angel *wink*."))
+        $ MC.rand_say(("你很努力，我很感激。", "没有你，这个地方就不一样了。谢谢你。", "gd: 感谢你付出的努力。我对你非常满意。",
+                    "ev: 你是我最有效率的仆人之一。不过不要变得自满。", "ne: 你是一个好奴隶，像你这样的好货色越来越少了。",
+                    "ar: 太阳神在上，他会祝福你的。", "sh: 女神大人说：在阴影中劳作的人将获得十倍的回报。", "ng: 我不相信什么神，但你可能是一个天使*眨眼*。"))
 
     $ success_factor = 1
     call slave_reward(girl, "praise") from _call_slave_reward
@@ -2613,8 +2613,8 @@ label slave_reward_sex(girl):
                 $ inter.MC_reaction = "proceed"
 
             "Give up":
-                $ MC.rand_say((__("Fine... Have it your way."), __("I can't believe slaves these days... Fine!"), __("ne: Humph. I'll let you off the hook this one time. You owe me now."),
-                                    __("gd: All right, I'm not going to force you to do something you don't like."), __("ev: Fuck, I'll let you be this time... But don't test my patience.")))
+                $ MC.rand_say(("好吧...随你的便。", "真不敢相信现在的奴隶...好吧！", "ne: 哼，这次就先放过你，但是下次...",
+                                    "gd: 好吧，我不会强迫你做你不喜欢的事情。", "ev: 操，这一次我就放过你了....但是不要考验我的耐心。"))
 
                 $ inter.MC_reaction = "give up"
 
@@ -2639,8 +2639,8 @@ label slave_reward_sex(girl):
                 return
 
             "Give up":
-                $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
-                                "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
+                $ MC.rand_say(("好吧....按你说的做。", "我简直不敢相信现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                                "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你....但不要考验我的耐心。"))
 
                 $ inter.MC_reaction = "give up"
 
@@ -2798,20 +2798,20 @@ label slave_punish_scold(girl):
                     counter = girl.get_stat(stat)
 
         if my_stat == "beauty":
-            $ MC.rand_say(("gd: You are not taking care of your appearance. You should do better.", "ne: Customers won't like you if you neglect yourself like you do.",
-                           "ev: You're just an ugly cow. Work on it!"))
+            $ MC.rand_say(("gd: 你没有好好照顾自己的外表。你应该做得更好。", "ne: 如果你像你现在这样忽视自己，顾客是不会喜欢你的。",
+                           "ev: 你只是一头丑牛。努力吧！"))
         elif my_stat == "body":
-            $ MC.rand_say(("gd: Please, won't you work out a bit? You must get in shape to be attractive.", "ne: If you don't try harder to be sexy, people won't like you. And that means less money for me.",
-                           "ev: Look at how fat you are. You're disgusting."))
+            $ MC.rand_say(("gd: 请你锻炼一下？你必须变得有吸引力。", "ne: 如果你不努力变得性感，人们就不会喜欢你。这意味着对我来说钱会更少。",
+                           "ev: 看看你有多胖。你很恶心。"))
         elif my_stat == "charm":
-            $ MC.rand_say(("gd: Can't you be a little more charming? You can be pretty rude sometimes.", "ne: There's no two ways around this, you're just bad with people.", "ev: You are a rude and arrogant bitch. Take it down a notch, or else..."))
+            $ MC.rand_say(("gd: 你能不能更有魅力一点？你有时候可以很粗鲁。", "ne: 没有两种方法，你只是不会与人相处。", "ev: 你是一个粗鲁和傲慢的婊子。降低一点，否则...."))
         elif my_stat == "refinement":
-            $ MC.rand_say(("gd: Please make an effort and be more classy. This is a high-class whorehouse, not the fish market.", "ne: Do you really have to show everyone how ignorant and unsophisticated you are?", "ev: I swear, you're dumber than a door-knob. You better learn manners, or I will make you."))
+            $ MC.rand_say(("gd: 请努力变得更有品位。这是一个高档的青楼，不是鱼市场。", "ne: 你真的必须向每个人展示你是多么无知和不成熟吗？", "ev: 我发誓，你比门把手还笨。你最好学习礼仪，否则我会让你学习。"))
 
     else:
-        $ MC.rand_say(("ar: For the love of Arios, can't you make an effort and behave?", "sh: I swear, there isn't a lazier slave under all the shadows Shalia casts!",
-                       "ng: I'd send you to meet your maker, if you had one!", "gd: You're not doing your best, and it's hurting all of us.", "ne: You're lazy and arrogant. You must do better.", "ev: You disrespect me, you better be ready to face the consequences."
-                       "Why don't you try harder for a change?", "You must do better, for your own sake."))
+        $ MC.rand_say(("ar: 为了太阳神的爱，你能不能努力表现一下？", "sh: 我发誓，在莎莉娅的阴影下没有比你更懒惰的奴隶了！",
+                       "ng: 如果你有一个造物主，我会让你去见他！", "gd: 你没有尽你的最大努力，这伤害了我们所有人。", "ne: 你懒惰又傲慢。你必须做得更好。", "ev: 你不尊重我，你最好准备好面对后果。"
+                       "为什么不试着更努力一点呢？", "你必须做得更好，为了你自己的利益。"))
 
     call slave_punish(girl, "scold") from _call_slave_punish
     return
@@ -2846,7 +2846,7 @@ label slave_punish_naked(girl):
     return
 
 label slave_punish_beat(girl): # To do: add a special reaction if she loves/hates spanking
-    $ MC.rand_say(("I'm afraid you leave me no choice.", "If obedience doesn't come to you naturally, I'm going to have to make an example of you.", "ev: You dumb, good for nothing slut!!! If servility doesn't sit well with you, I'll beat it into your thick skull!"))
+    $ MC.rand_say(("恐怕你别无选择。", "如果服从不是你的天性，那就后天培养。", "ev: 你这个笨蛋，一无是处的婊子！！！如果你听不懂人话，我就把它钉进你那空空如也的脑袋里！"))
     "Grabbing a long metal ruler, you order her to lower her skirt."
     call slave_punish(girl, "beat") from _call_slave_punish_3
     return
@@ -2879,8 +2879,8 @@ label slave_punish_rape(girl):
     return
 
 label slave_punish_farm(girl):
-    $ MC.rand_say(("ar: Very well, maybe a trip to the farm will help you clear your conscience.", "ne: What am I to do with you? Oh, I know someone who can help... My friend Gizel.",
-                "ev: Let's see how you enjoy a little stint at the farm. Muhahaha...", "gd: I don't like Gizel's methods, but they have their use. I'll send you off to the farm then.", "Off to the farm with you."))
+    $ MC.rand_say(("ar: 很好，也许在农场的地牢里你能认清自己的身份。", "ne: 我该怎么办？哦，我知道谁可以帮我...我的朋友吉泽尔。",
+                "ev: 既然你不喜欢在这待着，那就去农场的地牢里睡吧", "gd: 我不喜欢吉泽尔的方法，但确实有用。那么我就把你送到农场去吧。", "滚去农场待几天吧。"))
     call slave_punish(girl, "farm") from _call_slave_punish_5
     return
 
@@ -3266,13 +3266,13 @@ label slave_rape(girl, act): # If girl refused and was forced
 
     if act == "service":
         if pic.has_tag("oral"):
-            $ text1 = rand_choice(("Eventually, you blow a load of cum into her throat, sending her into a fit of coughing.",
-                "You suddenly withdraw your dick from her mouth, shooting a load of cum onto her face and hair."))
+            $ text1 = rand_choice(("最后，你往她喉咙里喷了许多精液，她咳嗽不止。",
+                "你突然从她嘴里抽出你的鸡巴，把一大堆精液射到她的脸上和头发上。"))
             "[text1]"
 
         elif pic.has_tags(("handjob", "titjob")):
-            $ text1 = rand_choice(("You decide to use her sexy, soft tits to finish yourself off. You blow your load all over her tits and face.",
-                                   "You make her jerk you off until you blow your load. Her hands are covered with your thick cum."))
+            $ text1 = rand_choice(("你决定用她性感柔软的奶子来接住精液。你在她的奶子和脸上喷满了牛奶。",
+                                   "你让她给你撸，直到你射出来。她的手上沾满了你粘稠的精液。"))
 
         elif pic.has_tag("mast"):
             "She has to keep masturbating while you watch and jerk off. Eventually, you bring your cock up to her and blow your load right in her face."
@@ -3532,7 +3532,7 @@ label slave_story1(girl):
 
         girl.char "I was barely a teenager when I met him."
 
-        $ activity = rand_choice(("fetching water", "running an errand", "going to school", "cleaning outside", "playing outside with my sister"))
+        $ activity = rand_choice(("打水", "跑腿", "上学的路上", "打扫", "和我妹妹在外面玩"))
 
         girl.char "I ran into him one day while I was [activity]."
 
