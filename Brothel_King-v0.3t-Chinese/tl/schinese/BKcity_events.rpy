@@ -5578,7 +5578,7 @@ translate schinese city_gossip_5b578f55:
 translate schinese city_luck_7fab135b:
 
     # "Strolling around the [loc], you notice something shiny on the ground."
-    "漫步在[loc]，你会注意到地上有什么东西闪闪发光。"
+    "漫步在[loc]，你注意到地上有什么东西闪闪发光。"
 
 # game/BKcity_events.rpy:4619
 translate schinese city_luck_6eae37c9:

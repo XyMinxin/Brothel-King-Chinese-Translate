@@ -1708,7 +1708,7 @@ translate schinese random_night_girl_event_48aab748:
 translate schinese random_night_girl_event_5735e80e:
 
     # "You notice a dodgy, lecherous drunkard, with his hand down [girl.fullname]'s panties. She tells him to stop."
-    "你会注意到一个狡猾、好色的醉汉，手放在[girl.fullname]的内裤上。她让他停下来。"
+    "你注意到一个狡猾、好色的醉汉，手放在[girl.fullname]的内裤上。她让他停下来。"
 
 # game/BKday_events.rpy:1217
 translate schinese random_night_girl_event_b9ca7b9f:
@@ -1804,7 +1804,7 @@ translate schinese random_night_girl_event_b7656250:
 translate schinese random_night_girl_event_15acab5a:
 
     # "Even though he looks unassuming, you notice the harasser is lean and well-built. With surprising speed and technique, he escapes your grip."
-    "尽管他看起来很谦逊，但你会注意到骚扰者身材瘦削，体格健壮。以惊人的速度和技巧，他逃脱了你的控制。"
+    "尽管他看起来很谦逊，但你注意到骚扰者身材瘦削，体格健壮。以惊人的速度和技巧，他逃脱了你的控制。"
 
 # game/BKday_events.rpy:1273
 translate schinese random_night_girl_event_0ac8d013:

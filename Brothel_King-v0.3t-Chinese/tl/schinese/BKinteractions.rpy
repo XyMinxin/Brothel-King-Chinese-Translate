@@ -6185,7 +6185,7 @@ translate schinese slave_story7_39d68949:
 translate schinese slave_story7_7fa8be44:
 
     # "Looking back at the wall above [girl.name]'s bed, you notice a blank space and the holes left by nails, where the symbol used to hang."
-    "回头看看[girl.name]床上方的墙壁，你会注意到一个空白区域和钉留下的洞，那个徽章曾经挂在那里。"
+    "回头看看[girl.name]床上方的墙壁，你注意到一个空白区域和钉留下的洞，那个徽章曾经挂在那里。"
 
 # game/BKinteractions.rpy:5133
 translate schinese slave_story7_ff78afa7:
