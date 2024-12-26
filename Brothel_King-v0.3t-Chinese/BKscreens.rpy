@@ -3898,7 +3898,7 @@ screen district_button(dis, context):
         if game.chapter >= dis.chapter:
             if context != "relocate":
                 action Return(dis)
-                tooltip "Visit %s (press %s to visit this district)." % (dis.name, str(all_districts.index(dis) + 1))
+                tooltip "前往%s (按数字键 %s 前往此地点)。" % (dis.name, str(all_districts.index(dis) + 1))
             elif dis not in game.blocked_districts and district != dis:
                 action Return(dis)
                 tooltip "Choose %s to relocate your brothel." % dis.name
