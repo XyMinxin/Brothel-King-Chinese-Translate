@@ -1222,7 +1222,7 @@ screen inventory(char, counterpart=None):
                             action (Show("item_profile", it=eq, transition = dissolve), SetVariable("owner", char), SetVariable("counterpart", counterpart), SetVariable("selected_item", eq), SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip __(eq.description)
                         else:
-                            text __("Empty") size res_font(12) italic True xalign 0.5 yalign 0.5
+                            text "空" size res_font(12) italic True xalign 0.5 yalign 0.5
                             action (SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip "这个槽位没有装备道具。"
 
@@ -1249,7 +1249,7 @@ screen item_filter(filters=inventory_filters["base"]):
                         add "filter_all" xalign 0.5 yalign 0.5
                     else:
                         add "filter_all_unselect" xalign 0.5 yalign 0.5
-                    tooltip "显示所有道具。"
+                    tooltip "显示所有物品。"
 
 
 #### END OF BK ITEMS FILE ####

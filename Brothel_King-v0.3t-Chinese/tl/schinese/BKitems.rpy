@@ -1852,7 +1852,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:1246
     old "Show %s items."
-    new "展示 %s 物品。"
+    new "只显示%s类物品。"
 
 # TODO: Translation updated at 2024-12-15 20:54
 
@@ -1900,7 +1900,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:981
     old " gold"
-    new " gold"
+    new "金币"
 
     # game/BKitems.rpy:1074
     old "Use shift + up/down arrows or mousewheel to cycle item pages."
@@ -1913,14 +1913,6 @@ translate schinese strings:
     # game/BKitems.rpy:1176
     old "Unsellable"
     new "无法出售"
-
-    # game/BKitems.rpy:1225
-    old "Empty"
-    new "Empty"
-
-    # game/BKitems.rpy:1227
-    old "No item is equipped to this slot."
-    new "No item is equipped to this slot."
 
     # game/BKitems.rpy:1252
     old "Show all items."

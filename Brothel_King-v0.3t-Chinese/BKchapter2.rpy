@@ -302,7 +302,7 @@ label c2_intro():
     # SHOPS #
 
     $ calendar.set_alarm(calendar.time+2, Event(label = "c2_princess_letter"))
-    $ game.set_task("Get started with your new brothel.", "story")
+    $ game.set_task("好好经营你的新青楼吧！", "story")
 
     scene black with fade
     show bg brothel1 at top with dissolve

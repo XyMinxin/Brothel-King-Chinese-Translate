@@ -734,7 +734,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
-    new "码头是吵闹的水手和狡猾的海盗的家，他们躲避危险的浪涛，等到风平浪静再出海。这里到处都是水手，难怪港口附近的廉价的卖淫生意这么好。"
+    new "码头是吵闹的水手和狡猾的海盗的家，他们躲避危险的浪涛，等到风平浪静再出海。这里到处都是水手，难怪港口附近的妓院生意都这么好。"
 
     # game/BKstart.rpy:483
     old "The Warehouse"

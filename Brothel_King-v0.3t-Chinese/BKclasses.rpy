@@ -4497,16 +4497,16 @@ init -2 python:
         def get_description(self):
             if self.type == "master":
                 if self.level > 1:
-                    desc = "Can host up to {b}" + str(self.level) + " girls{/b} for training. Girls in the master bedroom receive {b}free training{/b} every night."
+                    desc = "可以容纳最多{b}" + str(self.level) + "个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 elif self.level == 1:
-                    desc = "Can host up to {b}1 girl{/b} for training. Girls in the master bedroom receive {b}free training{/b} every night."
+                    desc = "只能容纳{b}一个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 else:
-                    desc = "Your bachelor pad. No room for a bachelorette yet."
+                    desc = "你的房间没有足够的空间让女孩挤进来。"
 
                 if self.level < brothel.rank:
-                    desc += " Improve this room for {b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}。"
+                    desc += "花费{b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}扩建你的卧室。"
                 elif self.level == 5:
-                    desc += " {i}You cannot improve the master bedroom further.{/i}"
+                    desc += " {i}你的卧室已经达到了最高等级{/i}"
 
                 return desc
 
@@ -4926,7 +4926,7 @@ init -10 python:
         def get_description(self):
             if not self.description:
                 if self.type == "gold":
-                    self.description = __("you must collect ") + str(int(self.value)) + " gold"
+                    self.description = __("you must collect ") + str(int(self.value)) + "金币"
 
                 elif self.type == "ranked":
                     self.description = str(self.target) + __(" of your girls must reach rank ") + rank_name[self.value]
