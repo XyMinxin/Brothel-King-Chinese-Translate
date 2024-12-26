@@ -3651,7 +3651,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\nUnlocks {b}") + __(misc_name_dict[self.archetype]) + __("{/b} zodiac sign.")
+                        des += __("\nUnlocks {b}") + __(self.archetype) + __("{/b} zodiac sign.")
 
                 return des
 
