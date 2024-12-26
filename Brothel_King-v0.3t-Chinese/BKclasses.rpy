@@ -1785,7 +1785,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + self.name.capitalize() + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -3151,7 +3151,7 @@ init -2 python:
             self.upkeep = 0
             self.costs = 0
             self.net = 0
-            self.date = calendar.get_weekday() + ", Y" + str(calendar.year) + " M" + str(calendar.month) + " D" + str(calendar.day)
+            self.date = misc_name_dict[calendar.get_weekday()] + ", Y" + str(calendar.year) + " M" + str(calendar.month) + " D" + str(calendar.day)
             self.report = ""
             self.events = []
             self.changes = ""
@@ -3651,7 +3651,7 @@ init -2 python:
 
                 if context in ("slavemarket", "free"):
                     if self.archetype:
-                        des += __("\nUnlocks {b}") + __(self.archetype) + __("{/b} zodiac sign.")
+                        des += __("\nUnlocks {b}") + __(misc_name_dict[self.archetype]) + __("{/b} zodiac sign.")
 
                 return des
 
@@ -3968,14 +3968,14 @@ init -2 python:
             if self.type == "set":
                 text1 += "set " + target + __(" to ") + str(val)
                 if self.scope:
-                    text1 += " (%s)" % self.scope
+                    text1 += " (%s)" % misc_name_dict[self.scope]
                 return text1
 
             if self.type == "allow":
                 if target.endswith("preference"):
                     text1 += "Allows you to increase customers' " + target + " by up to +" + str(50*val) + "%."
                 else:
-                    text1 += "Allows " + target + " to visit your brothel."
+                    text1 += "Allows " + misc_name_dict[target] + " to visit your brothel."
 
                 return text1
 
@@ -6447,7 +6447,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text1 += "\n" + __(s.capitalize()) + ": " + shown
+                    text1 += "\n" + __(misc_name_dict[s.capitalize()]) + ": " + shown
 
             text1 += "\n"
 
@@ -6901,7 +6901,7 @@ init -2 python:
                 self.activate()
 
         def describe_cost(self):
-            dlist = [(str(amount) + " " + __(resource)) for resource, amount in self.cost]
+            dlist = [(str(amount) + " " + __(misc_name_dict[resource])) for resource, amount in self.cost]
 
             return and_text(dlist)
 

@@ -2184,7 +2184,7 @@ init -2 python:
             jp += jp_job_level_modifier[self.job_level[act]] + jp_customer_rank_modifier[cust_rank] + jp_result_modifier[result]
 
             jp_ttip += "\nGirl rank vs Customer rank: %s\n" % plus_text(jp_job_level_modifier[self.job_level[act]] + jp_customer_rank_modifier[cust_rank], color_scheme="jp")
-            jp_ttip += result.capitalize() + " result: %s" % plus_text(jp_result_modifier[result], color_scheme="jp")
+            jp_ttip += misc_name_dict[result.capitalize()] + " result: %s" % plus_text(jp_result_modifier[result], color_scheme="jp")
 
             # Result boost effect
             boost = self.get_effect("boost", result + " result jp")
@@ -3442,7 +3442,7 @@ init -2 python:
             message = ""
 
             if not self.archetypes[perk.archetype].unlocked:
-                message += perk.archetype + " is locked for now.\n"
+                message += tl_cn(perk.archetype, misc_name_dict) + " is locked for now.\n"
             elif val < perk.value:
                 message += str(perk.value) + " more perk" + plural(perk.value) + " must be unlocked first.\n"
             elif self.rank < perk.min_rank:

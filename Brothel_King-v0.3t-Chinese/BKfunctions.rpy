@@ -1320,7 +1320,7 @@ init -3 python:
 
         for pop in all_populations:
             if pop_count[pop]:
-                ttip += "%s: %i\n" % (pop.name.capitalize(), pop_count[pop])
+                ttip += "%s: %i\n" % (misc_name_dict[pop.name.capitalize()], pop_count[pop])
 
         return ttip
 

@@ -1295,7 +1295,7 @@ init python:
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更加熟练了({color=[c_emerald]}%s级{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="她的阶级提升了", base_description="她已经提升为{color=[c_emerald]}%s阶{/color}。", discipline=False),
                                 "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她提升了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}技能。", discipline=False),
-                                "good result" : GirlRecentEvent(type="good result", action="在工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[%s]{/color}([girl_related_dict[%s]])。", discipline=False),
+                                "good result" : GirlRecentEvent(type="good result", action="在工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}[misc_name_dict[%s]]{/color}([girl_related_dict[%s]])。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="在任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="在培训中学习努力", base_description="%s", discipline=False),
                                 "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了[long_act_description[%s]]训练{/color}。", discipline=False),
@@ -1313,7 +1313,7 @@ init python:
                                 "ran away" : GirlRecentEvent(type="ran away", action="曾经逃跑", base_description="她逃跑了，但你把她抓回来了。", encourage=False),
                                 "disobey" : GirlRecentEvent(type="disobey", action="不服从你", base_description="她{color=[c_crimson]}拒绝以[girl_related_dict[%s]]的形式工作{/color}。", encourage=False),
                                 "fooled around" : GirlRecentEvent(type="fooled around", action="与客人胡闹", base_description="她{color=[c_crimson]}违背了你的意愿，与客人%s{/color}。", encourage=False),
-                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[%s]{/color}([girl_related_dict[%s]])。", encourage=False),
+                                "bad result" : GirlRecentEvent(type="bad result", action="工作中表现不佳", base_description="她在工作时表现{color=[c_crimson]}[misc_name_dict[%s]]{/color}([girl_related_dict[%s]])。", encourage=False),
                                 "quest bad result" : GirlRecentEvent(type="quest bad result", action="任务中表现不佳", base_description="%s", encourage=False),
                                 "class bad result" : GirlRecentEvent(type="class bad result", action="培训中注意力不集中", base_description="%s", encourage=False),
                                 "refused" : GirlRecentEvent(type="refused", action="拒绝训练", base_description="她{color=[c_crimson]}拒绝训练([girl_related_dict[%s]]){/color}。", encourage=False),
@@ -1548,7 +1548,7 @@ init python:
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她讨厌什么　", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "取悦" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
+                            "fun" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
                             "{size=+8}笑话{/size}" : [
                                         GirlInteractionTopic("fun", "joke", "普通笑话　　　", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "黄色段子　　　", "free_joke_adult", love_test=15),
@@ -1569,7 +1569,7 @@ init python:
                                         GirlInteractionTopic("fun", "play", "让她和你肛交　", "free_play", act="anal", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "让她和你玩SM　", "free_play", act="fetish", relationship_level=4),
                                         ],
-                            "调情" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
+                            "flirt" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
 
                             "{size=+8}赞美{/size}" : [
                                         GirlInteractionTopic("flirt", "compliment", "赞扬她的美貌", "free_flirt_beauty", relationship_level=1),
@@ -1588,7 +1588,7 @@ init python:
                                                 GirlInteractionTopic("flirt", "chat about sex", "双飞　　　", "free_flirt_sex_act", act="bisexual", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "群交　　　", "free_flirt_sex_act", act="group", love_test=55),
                                                 ],
-                            "赠礼" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
+                            "give" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
                             "{size=+8}赠礼{/size}" : [
                                         GirlInteractionTopic("give", "gift", "送她礼物　　", "free_give_gift", love_test=20),
                                         GirlInteractionTopic("give", "gold", "给她金币　　", "free_give_gold", love_test=20),

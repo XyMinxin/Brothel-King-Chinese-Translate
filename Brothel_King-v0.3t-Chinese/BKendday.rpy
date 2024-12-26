@@ -706,7 +706,7 @@ label end_day:
 
             for pop in all_populations:
                 if cust_nb_dict[pop.name]:
-                    night_early.add(capitalize(pop.name) + ": " + str_int(cust_nb_dict[pop.name]), ttip = "%i %s came to %s" % (cust_nb_dict[pop.name], pop.name, brothel.name))
+                    night_early.add(misc_name_dict[capitalize(pop.name)] + ": " + str_int(cust_nb_dict[pop.name]), ttip = "%i %s came to %s" % (cust_nb_dict[pop.name], misc_name_dict[pop.name], brothel.name))
 
         night_text += maint_text
 
@@ -1073,7 +1073,7 @@ label end_day:
 
     python:
         night_late = NightChangeLog("今日总结", col=c_lightorange)
-        night_late.add("Y%i M%i D%i %s" % (calendar.year, calendar.month, calendar.day, __(calendar.get_weekday())), "header")
+        night_late.add("Y%i M%i D%i %s" % (calendar.year, calendar.month, calendar.day, __(misc_name_dict[calendar.get_weekday()])), "header")
         old_rep = brothel.rep
 
         served = sum(1 for c in customers if c.got_entertainment)
@@ -1238,7 +1238,7 @@ label end_day:
 
         chg = brothel.change_dirt(-1 * brothel.get_maintenance())
 
-        night_late.add("青楼卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + brothel.get_cleanliness())
+        night_late.add("青楼卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + misc_name_dict[brothel.get_cleanliness()])
         night_late.add("垃圾堆积: %s" % plus_text(log.dirt))
         night_late.add("卫生清洁: %s" % plus_text(chg))
 
