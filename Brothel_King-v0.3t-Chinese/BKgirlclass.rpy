@@ -3442,7 +3442,7 @@ init -2 python:
             message = ""
 
             if not self.archetypes[perk.archetype].unlocked:
-                message += tl_cn(perk.archetype, misc_name_dict) + " is locked for now.\n"
+                message += perk.archetype + " is locked for now.\n"
             elif val < perk.value:
                 message += str(perk.value) + " more perk" + plural(perk.value) + " must be unlocked first.\n"
             elif self.rank < perk.min_rank:

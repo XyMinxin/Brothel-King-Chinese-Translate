@@ -3208,7 +3208,7 @@ screen perks(girl):
                                 add girl.archetypes[archetype].get_pic(portrait=True).get(*res_tb(75)) alpha alpha_dict[archetype] at desaturate
                                 add "img_lock"  zoom 0.7 xalign 0.5 yalign 0.5 alpha alpha_dict[archetype]
 
-                        text tl_cn(archetype, misc_name_dict) size res_font(12) selected_bold True color c_darkgrey selected_color c_black
+                        text archetype size res_font(12) selected_bold True color c_darkgrey selected_color c_black
 
         frame background c_ui_dark xalign 0.5 yalign 0.5 ypadding 0 xpadding 0 xmargin 0:
             fixed fit_first True:
