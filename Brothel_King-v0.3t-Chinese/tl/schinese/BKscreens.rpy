@@ -2402,18 +2402,6 @@ translate schinese strings:
     old "{size=14}Rating: {/size}"
     new "{size=14}Rating: {/size}"
 
-    # game/BKscreens.rpy:8218
-    old "Delete mix"
-    new "Delete mix"
-
-    # game/BKscreens.rpy:8221
-    old "Add all"
-    new "Add all"
-
-    # game/BKscreens.rpy:8222
-    old "Remove all"
-    new "Remove all"
-
     # game/BKscreens.rpy:8250
     old "Not found"
     new "Not found"
@@ -2440,7 +2428,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8387
     old "The "
-    new "The "
+    new " "
 
     # game/BKscreens.rpy:8398
     old "Tasks"
@@ -2454,10 +2442,6 @@ translate schinese strings:
     old "Reward: "
     new "Reward: "
 
-    # game/BKscreens.rpy:8423
-    old "Send"
-    new "Send"
-
     # game/BKscreens.rpy:8459
     old "{color=[c_red]}{i}Failed{/i}{/color}"
     new "{color=[c_red]}{i}Failed{/i}{/color}"
@@ -2468,7 +2452,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8472
     old "Score"
-    new "Score"
+    new "得分"
 
     # game/BKscreens.rpy:8484
     old "%s gold"
@@ -2480,23 +2464,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8680
     old "You have used all of your powers this week."
-    new "You have used all of your powers this week."
+    new "你已经用尽了本周的力量。"
 
     # game/BKscreens.rpy:8702
     old "Click or hold shift to deactivate supercharge (boost powers for more mojo and sanity)"
-    new "Click or hold shift to deactivate supercharge (boost powers for more mojo and sanity)"
+    new "点击或按住shift以取消过载（增强能量以获得更多的魔力和理智）"
 
     # game/BKscreens.rpy:8706
     old "Click or hold shift to activate supercharge (boost powers for more mojo and sanity)"
-    new "Click or hold shift to activate supercharge (boost powers for more mojo and sanity)"
+    new "点击或按住shift来激活过载（增强能量以获得更多的魔力和理智）"
 
     # game/BKscreens.rpy:8834
     old "This girl already conducted a power today."
-    new "This girl already conducted a power today."
+    new "这个女孩今天已经做了一次手术。"
 
     # game/BKscreens.rpy:8837
     old "This girl's sanity is broken."
-    new "This girl's sanity is broken."
+    new "这个女孩的精神崩溃了。"
 
     # game/BKscreens.rpy:8841
     old "Conduit: "
@@ -2504,7 +2488,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8849
     old "Target: "
-    new "Target: "
+    new "目标: "
 
     # game/BKscreens.rpy:8854
     old "Herself"
@@ -2512,23 +2496,23 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8865
     old "You cannot choose the conduit as the target."
-    new "You cannot choose the conduit as the target."
+    new "你不能选择导管作为目标。"
 
     # game/BKscreens.rpy:8886
     old "Choose a conduit for your power first."
-    new "Choose a conduit for your power first."
+    new "首先为你的力量选择一个管道。"
 
     # game/BKscreens.rpy:8889
     old "Choose a target for your power first."
-    new "Choose a target for your power first."
+    new "首先为你的力量选择一个目标。"
 
     # game/BKscreens.rpy:8919
     old "No girls are available."
-    new "No girls are available."
+    new "无可用女孩。"
 
     # game/BKscreens.rpy:8952
     old "Supercharge: "
-    new "Supercharge: "
+    new "过载: "
 
     # game/BKscreens.rpy:8953
     old "Conduit: : "
@@ -2552,7 +2536,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:9016
     old "Current rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
-    new "Current rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
+    new "当前 rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
 
     # game/BKscreens.rpy:9060
     old "{b}Clear{/b}"
@@ -2564,29 +2548,29 @@ translate schinese strings:
 
     # game/BKscreens.rpy:9081
     old "                                                                                                  Buy Sill's 'Slutty Schoolgirl' outfit for only $29.99...                                                   Get the ultimate 'Hung like a horse' armor for just $149.99 (2 minutes remaining)...                                                 *SEXY* Recruit the exciting new character 'Lara Crotch' for only $49.99...                                                 *SPECIAL SALE* Don't miss out on our latest season pass 'Summer of a cocksucker' for only $69.99 (valid for 7 days)...                                                                                                                                                                                    "
-    new "                                                                                                  Buy Sill's 'Slutty Schoolgirl' outfit for only $29.99...                                                   Get the ultimate 'Hung like a horse' armor for just $149.99 (2 minutes remaining)...                                                 *SEXY* Recruit the exciting new character 'Lara Crotch' for only $49.99...                                                 *SPECIAL SALE* Don't miss out on our latest season pass 'Summer of a cocksucker' for only $69.99 (valid for 7 days)...                                                                                                                                                                                    "
+    new "                                                                                                  只要29.99美元就能买到希露的“淫乱女学生”套装...                                                   只需149.99美元，就能获得终极的“像马一样挂起来”的盔甲（还剩2分钟）...                                                 *血脉喷张* 招募令人兴奋的新角色“劳拉·克劳馥”只需要49.99美元...                                                 *特别商品* 不要错过我们最新的季卡“肉棒之夏”，只需69.99美元（有效期7天）。...                                                                                                                                                                                    "
 
     # game/BKscreens.rpy:9089
     old "Losers'\nchoice!"
-    new "Losers'\nchoice!"
+    new "失败者的\n选择!"
 
     # game/BKscreens.rpy:9091
     old "x100 P2W Crystals"
-    new "x100 P2W Crystals"
+    new "x100 氪金水晶"
 
     # game/BKscreens.rpy:9101
     old "Popular\nchoice!!"
-    new "Popular\nchoice!!"
+    new "主流的\n选择!!"
 
     # game/BKscreens.rpy:9103
     old "x1,000 P2W Crystals"
-    new "x1,000 P2W Crystals"
+    new "x1,000 氪金水晶"
 
     # game/BKscreens.rpy:9114
     old "Best\nvalue!!!"
-    new "Best\nvalue!!!"
+    new "极致的\n性价比!!!"
 
     # game/BKscreens.rpy:9116
     old "x5,000 P2W Crystals"
-    new "x5,000 P2W Crystals"
+    new "x5,000 氪金水晶"
 
