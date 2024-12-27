@@ -568,7 +568,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:438
     old "Royal Commendation"
-    new "皇室嘉奖令"
+    new "王室嘉奖令"
 
     # game/BKitems.rpy:438
     old "This honorific scroll bears the seal of the Pharo royal family. Proudly displayed in a girl's room, it is sure to get people's attention."

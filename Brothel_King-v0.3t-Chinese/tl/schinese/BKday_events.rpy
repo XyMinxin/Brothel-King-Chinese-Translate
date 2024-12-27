@@ -5260,7 +5260,7 @@ translate schinese night_girl_perform_df28a25c:
 translate schinese night_girl_perform_ca7ba4cb:
 
     # man "What a slut! Look how easily I can enter that bitch's pussy."
-    man "什么一个荡妇！看看我能轻易进入那婊子的阴户。"
+    man "什么一个荡妇！看看我能轻易进入那婊子的小穴。"
 
 # game/BKday_events.rpy:3654
 translate schinese night_girl_perform_bd459a74:
@@ -5296,7 +5296,7 @@ translate schinese night_girl_perform_6f667078:
 translate schinese night_girl_perform_48627054:
 
     # "It isn't long until the customer reaches his limit, cumming hard inside her wet pussy."
-    "没过多久，这位顾客就达到了他的极限，在她湿漉漉的阴户里使劲地塞东西。"
+    "没过多久，这位顾客就达到了他的极限，在她湿漉漉的小穴里使劲地塞东西。"
 
 # game/BKday_events.rpy:3681
 translate schinese night_girl_perform_1af08aba:
@@ -6916,7 +6916,7 @@ translate schinese night_girl_perform_538cc15d:
 translate schinese night_girl_perform_6005f152:
 
     # "Both men start to fuck her simultaneously, coming in and out of her pussy and ass like well-oiled pistons."
-    "两个男人开始同时操她，在她的阴户和屁股里进进出出，就像上好了油的活塞。"
+    "两个男人开始同时操她，在她的小穴和屁股里进进出出，就像上好了油的活塞。"
 
 # game/BKday_events.rpy:4637
 translate schinese night_girl_perform_a472072f:

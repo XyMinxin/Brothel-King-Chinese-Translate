@@ -2152,7 +2152,7 @@ translate schinese c2_princess_letter_3245a8ba:
 translate schinese c2_princess_letter_df3528ff:
 
     # gio "She's certainly eager to escape her royal shackles."
-    gio "她渴望逃离皇室这座牢笼。"
+    gio "她渴望逃离王室这座牢笼。"
 
 # game/BKchapter2.rpy:1277
 translate schinese c2_princess_letter_e53668db:
@@ -2470,7 +2470,7 @@ translate schinese c2_princess_visit1_c0c12aed:
 translate schinese c2_princess_visit1_73620926:
 
     # knight "In the name of Arios, I can't fathom why the royal family kept such pagan ruins intact right under their palace. But the cowardly builders argued their chisels couldn't even dent the damn stones, so they got away with it."
-    knight "以太阳神的名义,我真不明白为什么皇室会让这样的异教古迹就这样矗立在皇宫之下。但是这些懦弱的工匠辩称他们的凿子根本无法凿碎这些该死的石头,所以遗迹被保留了下来。"
+    knight "以太阳神的名义,我真不明白为什么王室会让这样的异教古迹就这样矗立在皇宫之下。但是这些懦弱的工匠辩称他们的凿子根本无法凿碎这些该死的石头,所以遗迹被保留了下来。"
 
 # game/BKchapter2.rpy:1427
 translate schinese c2_princess_visit1_5ba94eca:
@@ -8296,13 +8296,13 @@ translate schinese c2_homura_okiya1_e0901a38:
 translate schinese c2_homura_okiya1_f15a704c:
 
     # homura "So it was about her duties! Did she request your help? How strange, given your occupation..."
-    homura "所以这与皇室有关!她请你帮忙调查吗?但你明明是个...这确实有些奇怪..."
+    homura "所以这与王室有关!她请你帮忙调查吗?但你明明是个...这确实有些奇怪..."
 
 # game/BKchapter2.rpy:4324
 translate schinese c2_homura_okiya1_da2954a2:
 
     # homura "You know, if it's something about the court, I'm sure I can help you! I know everyone, and every bit of gossip..."
-    homura "你知道,如果是关于皇室的事情,我肯定能帮到你!我认识所有人,还了解很多小道消息..."
+    homura "你知道,如果是关于王室的事情,我肯定能帮到你!我认识所有人,还了解很多小道消息..."
 
 # game/BKchapter2.rpy:4331
 translate schinese c2_homura_okiya1_f970c3b7:
@@ -16618,7 +16618,7 @@ translate schinese c2_palace_visit1_565c54c4:
 translate schinese c2_palace_visit1_a2661bfc:
 
     # kenshin "Your Highness, this luncheon is reserved for knights and nobility..."
-    kenshin "公主殿下,皇室午宴只对骑士和贵族开放..."
+    kenshin "公主殿下,王室午宴只对骑士和贵族开放..."
 
 # game/BKchapter2.rpy:8114
 translate schinese c2_palace_visit1_b1a49696:
@@ -22604,7 +22604,7 @@ translate schinese strings:
 
     # game/BKchapter2.rpy:1131
     old "A Royal Invitation"
-    new "皇室邀请函"
+    new "王室邀请函"
 
     # game/BKchapter2.rpy:1131
     old "Dear "

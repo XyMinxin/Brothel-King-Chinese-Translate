@@ -3274,7 +3274,7 @@ translate schinese farm_resisted_325d5e39:
 translate schinese farm_resisted_e95b4903:
 
     # gizel upset "{b}[girl.fullname]{/b} has the nerve to complain about my training... I'll kick her silly ass to Westmarch and back!"
-    gizel upset "{b}[girl.fullname]{/b}竟然敢抱怨我的训练...我要把她的屁股踢到西境去再踢回来!"
+    gizel upset "{b}[girl.fullname]{/b}竟然敢抱怨我的训练...我要把她的屁股踢到西域去再踢回来!"
 
 # game/BKevents.rpy:3831
 translate schinese farm_resisted_2bdc0d1b:

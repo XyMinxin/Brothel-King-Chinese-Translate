@@ -526,7 +526,7 @@ translate schinese security_2dbeec63_1:
 translate schinese security_8a1d79af:
 
     # "The enemy is battering on the brothel's door, and it almost looks as it will hold. However, after long seconds of anxious waiting, a massive hit blasts the doors open."
-    "敌人正在猛攻妓院大门，看起来它能够抵御进攻。然而，在许久的焦虑过后，一声巨响把门炸开了。"
+    "敌人正在猛攻青楼大门，看起来它能够抵御进攻。然而，在许久的焦虑过后，一声巨响把门炸开了。"
 
 # game/BKsecurity.rpy:812
 translate schinese security_6d51d383:
@@ -556,7 +556,7 @@ translate schinese security_ab4c5041:
 translate schinese security_7bb9cd2a:
 
     # "The [enemies] remaining enemies run past you into the brothel and engage your girls."
-    "剩余的[enemies]名敌人从你身边跑进妓院，与你的姑娘战斗。"
+    "剩余的[enemies]名敌人从你身边跑进青楼，与你的姑娘战斗。"
 
 # game/BKsecurity.rpy:853
 translate schinese security_747c5042:
@@ -568,7 +568,7 @@ translate schinese security_747c5042:
 translate schinese security_889d4328:
 
     # "The enemies pour into the brothel and engage your girls."
-    "敌人涌入妓院，和你的女孩交战。"
+    "敌人涌入青楼，和你的女孩交战。"
 
 # game/BKsecurity.rpy:861
 translate schinese security_a56bb971:
@@ -706,7 +706,7 @@ translate schinese security_eaac5125:
 translate schinese security_49edadd6:
 
     # "Detecting you before you have a chance to strike, she casts a firewall spell between you and her, cutting you off from the brothel and the battle. You can only watch, helpless, as the attack on [brothel.name] continues."
-    "在你偷袭得手之前她就发现了你，她在你和她之间燃起了一层火墙，切断了你与妓院和战场的联系。你只能眼睁睁地看着敌人继续攻击[brothel.name]。"
+    "在你偷袭得手之前她就发现了你，她在你和她之间燃起了一层火墙，切断了你与青楼和战场的联系。你只能眼睁睁地看着敌人继续攻击[brothel.name]。"
 
 # game/BKsecurity.rpy:1026
 translate schinese security_afc1f367:

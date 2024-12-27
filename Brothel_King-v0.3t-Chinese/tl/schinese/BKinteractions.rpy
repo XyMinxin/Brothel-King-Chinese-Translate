@@ -2831,7 +2831,7 @@ translate schinese slave_story2_87b6b3a1:
 translate schinese slave_story2_af0e18a7:
 
     # girl.char "He said I was his 'cum toilet', and he insisted to fuck me then and there whenever he had an urge... Which was often. Several times per day, in fact."
-    girl.char "他说我是他的“精液便所”，他坚持要在他有尿意的时候和我做爱……这是常有的事。事实上，每天要来好几次。"
+    girl.char "他说我是他的“精液便所”，他坚持要在他有尿意的时候和我做爱...这是常有的事。事实上，每天要来好几次。"
 
 # game/BKinteractions.rpy:3779
 translate schinese slave_story2_8ecbbad6:

@@ -6322,7 +6322,7 @@ translate schinese slave_beach_event_a4604e4c:
 translate schinese slave_beach_event_2e26bc9b:
 
     # "You withdraw as you feel about to cum, spurting white semen all over her gaping pussy."
-    "当你快要坚持不住的时候，你向外拔出，白色的精液灌满了她张开的阴户外缘。"
+    "当你快要坚持不住的时候，你向外拔出，白色的精液灌满了她张开的小穴外缘。"
 
 # game/BKcity_events.rpy:5286
 translate schinese slave_beach_event_6e03b3c5_1:
@@ -6334,7 +6334,7 @@ translate schinese slave_beach_event_6e03b3c5_1:
 translate schinese slave_beach_event_bc93318d:
 
     # "She watches in a daze as hot cum flows out of her pussy."
-    "她茫然地看着滚烫的精液从她的阴户中流出。"
+    "她茫然地看着滚烫的精液从她的小穴中流出。"
 
 # game/BKcity_events.rpy:5294
 translate schinese slave_beach_event_9d3f5943:

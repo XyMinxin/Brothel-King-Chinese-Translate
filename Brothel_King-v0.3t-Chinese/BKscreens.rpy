@@ -2763,7 +2763,7 @@ screen button_overlay(girl, context="girls"):
 
                 hovered tt.Action(_("Change this girl's equipment."))
 
-            textbutton "离开农场" text_size res_font(14) action Return(("take out", girl)) hovered tt.Action("把 " + girl.name + " 送回妓院。")
+            textbutton "离开农场" text_size res_font(14) action Return(("take out", girl)) hovered tt.Action("把 " + girl.name + " 送回青楼。")
 
             if girl.free:
                 textbutton "解雇":

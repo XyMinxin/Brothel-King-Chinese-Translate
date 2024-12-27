@@ -486,7 +486,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:370
     old "royals"
-    new "皇室成员"
+    new "王室成员"
 
     # game/BKstart.rpy:370
     old "People say royals are jaded, undeserving narcissistic parasites. No one gives them credit for how generous they are with their subjects' money. Sad."
@@ -734,7 +734,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
-    new "码头是吵闹的水手和狡猾的海盗的家，他们躲避危险的浪涛，等到风平浪静再出海。这里到处都是水手，难怪港口附近的妓院生意都这么好。"
+    new "码头是吵闹的水手和狡猾的海盗的家，他们躲避危险的浪涛，等到风平浪静再出海。这里到处都是水手，难怪港口附近的青楼生意都这么好。"
 
     # game/BKstart.rpy:483
     old "The Warehouse"

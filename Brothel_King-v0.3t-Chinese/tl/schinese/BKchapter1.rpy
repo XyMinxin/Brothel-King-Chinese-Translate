@@ -12928,7 +12928,7 @@ translate schinese c1_ending_captain_c78d86d1:
 translate schinese c1_ending_captain_c8a6fdce:
 
     # captain "This will only allow you to operate in the commoner districts, however... To make it to the noble or royal quarters, I'm afraid you'll have to screw a princess or two."
-    captain "不过这只能让你在平民区域经营。要想进入贵族或皇室区域,恐怕你得去勾引那个公主才行了。"
+    captain "不过这只能让你在平民区域经营。要想进入贵族或王室区域,恐怕你得去勾引那个公主才行了。"
 
 # game/BKchapter1.rpy:6889
 translate schinese c1_ending_captain_9d2ec487:
