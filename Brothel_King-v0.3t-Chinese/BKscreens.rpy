@@ -413,7 +413,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         button background None xalign 0.0 yalign 0.5 action NullAction():
 
-            tooltip ("%s\n今天是%s, 第%i年的%i月%i日" % (moons[calendar.month].short_description, calendar.get_weekday(), calendar.year, calendar.month, calendar.day))
+            tooltip ("%s\n今天是%s, 第%i年的%i月%i日" % (tl_cn(moons[calendar.month].short_description, moon_name_dict), tl_cn(calendar.get_weekday(), misc_name_dict), calendar.year, calendar.month, calendar.day))
 
             hbox:
                 spacing xres(8)
@@ -424,7 +424,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
                 text "时间: 第[calendar.year]年" size res_font(18) yalign 0.5
                 text " [calendar.month]月" size res_font(18) yalign 0.5
-                text (" [calendar.day]日 (" + __(calendar.get_weekday())[:3] + ")") size res_font(18) yalign 0.5
+                text (" [calendar.day]日 (" + __(tl_cn(calendar.get_weekday(), misc_name_dict))[:3] + ")") size res_font(18) yalign 0.5
 
         hbox xalign 1.0 spacing xres(6):
             if MC.resource_tab_active:
