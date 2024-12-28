@@ -13294,7 +13294,7 @@ translate schinese c1_ending_captain_54bb2b1f:
 translate schinese c1_captain_fate_c20eb056:
 
     # "Meanwhile, deep down inside the dungeons of Zan's infamous Xotar prison."
-    "与此同时,在泽恩恶名昭著的黑水监狱深处。"
+    "与此同时,在泽恩恶名昭著的索塔尔监狱深处。"
 
 # game/BKchapter1.rpy:7100
 translate schinese c1_captain_fate_cb895a12:

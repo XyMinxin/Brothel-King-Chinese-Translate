@@ -8482,7 +8482,7 @@ translate schinese night_girl_perform_54640176:
 translate schinese night_girl_perform_b7dd0051:
 
     # girl.char "Ooh... Master, your dick feels so hot... Will this fit inside my ass?"
-    girl.char "哦....师父，你的老二好热....这个能塞进我的屁屁里吗？"
+    girl.char "哦....主人，你的老二好热....这个能塞进我的屁屁里吗？"
 
 # game/BKday_events.rpy:5622
 translate schinese night_girl_perform_4d4025d3:
@@ -8884,7 +8884,7 @@ translate schinese night_girl_perform_c205d03b:
 translate schinese night_girl_perform_dd53d391:
 
     # girl.char "Thank you so much, Master! I'm always happy to be of service."
-    girl.char "非常感谢，师父！我总是很乐意为您服务。"
+    girl.char "非常感谢，主人！我总是很乐意为您服务。"
 
 # game/BKday_events.rpy:5873
 translate schinese night_girl_perform_ecaee461:

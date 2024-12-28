@@ -970,7 +970,7 @@ translate schinese c3_hint_fec1fe3c:
 translate schinese c3_hint_92038ed9:
 
     # renza "They wanted to lay their hands on a unique magic item, with top-notch protection spells. I'm not sure where it was being held, they wouldn't tell me until I accepted the job."
-    renza "他们想要一件独特的魔法物品。我什至不确定它存放在哪里，我只知道上面的东西有很多道保护咒语。"
+    renza "他们想要一件独特的魔法物品。我甚至不确定它存放在哪里，我只知道上面的东西有很多道保护咒语。"
 
 # game/BKchapter3.rpy:577
 translate schinese c3_hint_ea0d382b:
@@ -2152,7 +2152,7 @@ translate schinese c3_hint_93022f0b:
 translate schinese c3_hint_3d3e9f19:
 
     # kenshin "You're wasting your time. Zan's prison, Xotar, is operated by the Knights, and it has the best security conditions in Xeros."
-    kenshin "在浪费时间。萨特监狱是泽恩最大的监狱，由骑士团负责警卫，拥有泽恩最好的安全条件。"
+    kenshin "在浪费时间。索塔尔监狱是泽恩最大的监狱，由骑士团负责警卫，拥有泽恩最好的安全条件。"
 
 # game/BKchapter3.rpy:1040
 translate schinese c3_hint_333c3fe8:
@@ -2410,7 +2410,7 @@ translate schinese c3_hint_49e518c2:
 translate schinese c3_hint_43dba833:
 
     # carpenter "Well, sure... Get this: the Xotar Prison was not always a jail. In fact, it's built on top of a much, much older building."
-    carpenter "当然有...你听好：黑水监狱并不仅仅是一个监狱。事实上，它建在一座更古老的建筑之上。"
+    carpenter "当然有...你听好：索塔尔监狱并不仅仅是一个监狱。事实上，它建在一座更古老的建筑之上。"
 
 # game/BKchapter3.rpy:1135
 translate schinese c3_hint_17647e76:
@@ -2446,7 +2446,7 @@ translate schinese c3_hint_a1bb5cc3:
 translate schinese c3_hint_53ecb66b:
 
     # carpenter "That's where that weird name, 'Xotar' comes from. Means 'the Hub', or sumethin', in their Arios-forsaken language."
-    carpenter "\'萨特\'这个名字就是来源于此。在那个被废弃的古代用语中，意思是\'枢纽\'或者类似的东西。"
+    carpenter "'索塔尔'这个名字就是来源于此。在那个被废弃的古代用语中，意思是\'枢纽\'或者类似的东西。"
 
 # game/BKchapter3.rpy:1147
 translate schinese c3_hint_7d16f67f:
@@ -2848,7 +2848,7 @@ translate schinese c3_hint_685847ec_2:
 translate schinese c3_hint_bf9c2d24:
 
     # lieutenant "Let's cut to the chase. You mentioned a certain wounded Kunoichi, and how she was sent to Xotar Prison. I think I know something about that."
-    lieutenant "让我们直接切入主题。你说有一个负伤的女忍者，她被送进了萨特监狱。我可能知道一些相关的情况。"
+    lieutenant "让我们直接切入主题。你说有一个负伤的女忍者，她被送进了索塔尔监狱。我可能知道一些相关的情况。"
 
 # game/BKchapter3.rpy:1302
 translate schinese c3_hint_40bc22d8_1:
@@ -5758,7 +5758,7 @@ translate schinese homura_river_cce82d0f:
 translate schinese homura_river_37626a82:
 
     # homura "I've always liked walking in nature. I've got fond memories of these woods. I even..."
-    homura "我一直很喜欢在行动中散步。这里的树林里有我美好的回忆。我什至......"
+    homura "我一直很喜欢在行动中散步。这里的树林里有我美好的回忆。我甚至......"
 
 # game/BKchapter3.rpy:2614
 translate schinese homura_river_e7791deb:
@@ -9418,7 +9418,7 @@ translate schinese c3_narika_MU_class_4d73711a:
 translate schinese c3_narika_MU_class_b0c02b0e:
 
     # sill glasses "Oh, Master! [emo_heart]" with vpunch
-    sill glasses "哦，主人！ [情绪心]" with vpunch
+    sill glasses "哦，主人！ [emo_heart]" with vpunch
 
 # game/BKchapter3.rpy:4702
 translate schinese c3_narika_MU_class_0af23fc6:
@@ -12838,7 +12838,7 @@ translate schinese c3_narika_MU_class_e226cc27:
 translate schinese c3_narika_MU_class_0ebff21d:
 
     # you "I didn't even step in the vault..."
-    you "我什至没有踏进金库..."
+    you "我甚至没有踏进金库..."
 
 # game/BKchapter3.rpy:6299
 translate schinese c3_narika_MU_class_5e0c3793:
@@ -16522,7 +16522,7 @@ translate schinese narika_masseuse_6b12a324:
 translate schinese narika_masseuse_4c1f738d:
 
     # you "Oh yeah? You think you can keep up?"
-    you "哦，是吗？你认为你能跟上吗？"
+    you "哦，是吗？你还能跟得上吗？"
 
 # game/BKchapter3.rpy:8070
 translate schinese narika_masseuse_a83c1eaa:
@@ -16534,13 +16534,13 @@ translate schinese narika_masseuse_a83c1eaa:
 translate schinese narika_masseuse_b029a192:
 
     # "She grits her teeth, but her eyes defy you to go further."
-    "她咬紧牙关，但她的眼神却让你无法继续前进。"
+    "她咬紧牙关，但她的眼神却让你更加兴奋。"
 
 # game/BKchapter3.rpy:8074
 translate schinese narika_masseuse_fb2392d2:
 
     # "You push on, enjoying the way her pussy muscles struggle to expel you as you pump your shaft inside her."
-    "你继续推进，享受着当你将你的阴茎抽入她体内时，她的阴部肌肉努力将你排出体外的样子。"
+    "你继续推进，享受着当你将你的阴茎抽入她体内时，小穴肉壁努力将你排出体外的样子。"
 
 # game/BKchapter3.rpy:8078
 translate schinese narika_masseuse_4a4af0f8:
@@ -16552,55 +16552,55 @@ translate schinese narika_masseuse_4a4af0f8:
 translate schinese narika_masseuse_5a0084be:
 
     # "In spite of her inexperience, Narika seems determined to keep up. She even starts to rock her hips slightly, slowly matching your rhythm."
-    "尽管缺乏经验，鸣香似乎决心跟上。她甚至开始轻轻摇动臀部，慢慢配合你的节奏。"
+    "尽管缺乏经验，但鸣香决心坚持下去。她甚至开始轻轻摇动臀部，慢慢配合你的节奏。"
 
 # game/BKchapter3.rpy:8082
 translate schinese narika_masseuse_5aa65681:
 
     # you "Hmmm, that's more like it!"
-    you "嗯嗯，这更像了！"
+    you "嗯嗯，就像这样！"
 
 # game/BKchapter3.rpy:8084
 translate schinese narika_masseuse_43c1222d:
 
     # "You hear some noise coming from the corridor. It seems some early customers are already beginning to show up."
-    "你听到走廊里传来一些噪音。似乎一些早期客户已经开始出现。"
+    "你听到走廊里传来一些噪音。似乎一些赶早的客户已经入场了。"
 
 # game/BKchapter3.rpy:8086
 translate schinese narika_masseuse_06698cbf:
 
     # you "Hear that? I think some customers may be on the verge of walking in on us."
-    you "听到了吗？我认为有些顾客可能即将闯入我们的行列。"
+    you "听到了吗？我想有些顾客可能会发现我们。"
 
 # game/BKchapter3.rpy:8092
 translate schinese narika_masseuse_2a1aacb9:
 
     # narika "N-No! They can't see me... Like that!"
-    narika "不、不！他们看不到我...就像这样！"
+    narika "不、不！不能让他们看到...我这副模样！"
 
 # game/BKchapter3.rpy:8094
 translate schinese narika_masseuse_fc1fdce9:
 
     # you "And why not? I told you it would do you good to show more skin. It's kind of an extreme version of that."
-    you "为什么不呢？我告诉过你，露出更多的皮肤会对你有好处。这是一种极端的版本。"
+    you "为什么不呢？我告诉过你，露出更多的皮肤会对你有好处。这不过是露的多一点罢了。"
 
 # game/BKchapter3.rpy:8096
 translate schinese narika_masseuse_1bdd1c89:
 
     # narika shy "B-B-But... We're... Making love!"
-    narika shy "B-B-但是...我们正在...做爱！"
+    narika shy "但-但-但是...我们正在...做爱！"
 
 # game/BKchapter3.rpy:8098
 translate schinese narika_masseuse_95702dc3:
 
     # you "Hahahah, we're just fucking, Narika, it's different."
-    you "哈哈哈，我们只是他妈的，Narika，这是不同的。"
+    you "哈哈哈，我们只是在交配，鸣香，这是不同的。"
 
 # game/BKchapter3.rpy:8100
 translate schinese narika_masseuse_51325503:
 
     # narika "F-Fucking?"
-    narika "他妈的？"
+    narika "交-交配？"
 
 # game/BKchapter3.rpy:8102
 translate schinese narika_masseuse_24c2438c:
@@ -16612,7 +16612,7 @@ translate schinese narika_masseuse_24c2438c:
 translate schinese narika_masseuse_84de11f8:
 
     # narika "B-B-But, isn't it something only lovers do?"
-    narika "但、但、但是，这不是只有恋人才会做的事吗？"
+    narika "但、但、但是，这不是只有恋人才可以做的事吗？"
 
 # game/BKchapter3.rpy:8106
 translate schinese narika_masseuse_2bff98d2:
@@ -16624,19 +16624,19 @@ translate schinese narika_masseuse_2bff98d2:
 translate schinese narika_masseuse_0047db3f:
 
     # narika "S-So... We're not... Lovers?"
-    narika "是、所以...我们不是...恋人？"
+    narika "所、所以...我们不是...恋人？"
 
 # game/BKchapter3.rpy:8110
 translate schinese narika_masseuse_77484ee5:
 
     # you "Of sorts, if you want to call it that... But first and foremost, we're just having fun."
-    you "某种程度上，如果你想这样称呼它...但首先也是最重要的是，我们只是玩得开心。"
+    you "某种程度上可以这么说，如果你想这样称呼...但首先也是最重要的是，我们只是在享受肉欲。"
 
 # game/BKchapter3.rpy:8112
 translate schinese narika_masseuse_fa5864fc:
 
     # narika blush "I-I'm not... Aaaah!" with vpunch
-    narika blush "我、我不是...啊啊啊！" with vpunch
+    narika blush "我、我没有...啊啊啊！" with vpunch
 
 # game/BKchapter3.rpy:8114
 translate schinese narika_masseuse_f749b025:
@@ -16654,13 +16654,13 @@ translate schinese narika_masseuse_e3aac8b1:
 translate schinese narika_masseuse_95c62bf5:
 
     # "Her pussy is gushing juices now, as she tries to match your pace."
-    "她的小穴现在正在喷出汁液，因为她试图跟上你的步伐。"
+    "她的小穴现在正在喷出汁液，但她还是试图跟上你的步伐。"
 
 # game/BKchapter3.rpy:8122
 translate schinese narika_masseuse_966fd942:
 
     # you "Don't even bother denying it, your body is craving for more."
-    you "甚至不用否认，你的身体渴望更多。"
+    you "别骗自己了，你的身体渴望更多的肉棒。"
 
 # game/BKchapter3.rpy:8124
 translate schinese narika_masseuse_fd6f86b0_2:
@@ -16672,7 +16672,7 @@ translate schinese narika_masseuse_fd6f86b0_2:
 translate schinese narika_masseuse_be5202de:
 
     # you "You know, the first time I saw you, I knew you were hiding your true feelings behind a cold facade. I knew you had to a lot going on under the surface."
-    you "你知道吗，我第一次见到你的时候，我就知道你在冷漠的外表下隐藏着你的真情。我知道你在表面之下必须经历很多事情。"
+    you "你知道吗，我第一次见到你的时候，我就知道你在冷漠的外表下隐藏着你的另一面。你一定是一个充满故事的人。"
 
 # game/BKchapter3.rpy:8128
 translate schinese narika_masseuse_8e89cf16:
@@ -16684,7 +16684,7 @@ translate schinese narika_masseuse_8e89cf16:
 translate schinese narika_masseuse_844f3923:
 
     # "You pound Narika's pussy as you continue your monologue."
-    "你一边敲打鸣香的小穴，一边继续你的独白。"
+    "你一边冲击鸣香的小穴，一边继续你的独白。"
 
 # game/BKchapter3.rpy:8132
 translate schinese narika_masseuse_d10cafd8:
@@ -16702,13 +16702,13 @@ translate schinese narika_masseuse_7d53203b:
 translate schinese narika_masseuse_b5306aeb:
 
     # "You feel Narika's pussy clenching harder, signaling that she's close to climax."
-    "你感觉到鸣香的小穴更加紧握，这表明她即将达到高潮。"
+    "你感觉到鸣香的小穴更加紧缩，这表明她即将达到高潮。"
 
 # game/BKchapter3.rpy:8138
 translate schinese narika_masseuse_ffc15322:
 
     # you "Oh, look, I think the customers are coming in!"
-    you "哦，看，我想顾客进来了！"
+    you "哦，看，我想顾客们要进来了！"
 
 # game/BKchapter3.rpy:8140
 translate schinese narika_masseuse_8407ab55:
@@ -16720,19 +16720,19 @@ translate schinese narika_masseuse_8407ab55:
 translate schinese narika_masseuse_69efb2f1:
 
     # "Narika struggles to regain control of herself, but her body betrays her as the mere thought of being found out sends her over the edge."
-    "鸣香努力重新控制自己，但她的身体却背叛了她，一想到被发现就会让她崩溃。"
+    "鸣香努力重新控制自己，但她的身体却背叛了她，一想到会被发现就让她精神崩溃。"
 
 # game/BKchapter3.rpy:8150
 translate schinese narika_masseuse_a2c4319d:
 
     # "Narika moans loudly, her pussy tightening around your cock in a series of spasms, sending you over the edge as well."
-    "鸣香大声地呻吟着，她的小穴在你的阴茎周围不断痉挛地收紧，把你也推到了边缘。"
+    "鸣香大声地呻吟着，她的小穴在你的阴茎周围不断痉挛收紧，把你也推到了高潮边缘。"
 
 # game/BKchapter3.rpy:8154
 translate schinese narika_masseuse_9eed362c:
 
     # you "Bwahaha, just kidding, it was only Sill who's checking if the rooms are clean..."
-    you "哇哈哈，开个玩笑，只有希露在检查房间是否干净..."
+    you "哇哈哈，只是开个玩笑，不过是希露在检查房间卫生的动静..."
 
 # game/BKchapter3.rpy:8156
 translate schinese narika_masseuse_66d101c6:
@@ -16744,19 +16744,19 @@ translate schinese narika_masseuse_66d101c6:
 translate schinese narika_masseuse_03118e30:
 
     # sill sad "M-Master??? What are you doing? I just washed that bench less than an hour ago!!!" with vpunch
-    sill sad "M大师？？？你在干什么？我不到一个小时前刚刚洗了那条凳子！" with vpunch
+    sill sad "主-主人？？？你在干什么？我不到一个小时前才擦了那条凳子！" with vpunch
 
 # game/BKchapter3.rpy:8160
 translate schinese narika_masseuse_5025bf1a:
 
     # you "Well, it's good you got some practice, because you need to do it all over again!"
-    you "好吧，你有一些练习是件好事，因为你需要重新做一遍！"
+    you "好吧，练习一下也是好的，因为你需要重新做一遍！"
 
 # game/BKchapter3.rpy:8162
 translate schinese narika_masseuse_df3cf067:
 
     # you "And on the double. Customers will pour in any minute now."
-    you "还有双倍的。现在顾客随时都会涌入。"
+    you "更重要的是，现在顾客随时都会入场。"
 
 # game/BKchapter3.rpy:8164
 translate schinese narika_masseuse_aaec5a21:
@@ -16768,19 +16768,19 @@ translate schinese narika_masseuse_aaec5a21:
 translate schinese narika_masseuse_86318089:
 
     # you "Narika here? Oh no, she's been through enough for today. Leave her be."
-    you "鸣香在吗？哦不，她今天已经受够了。让她去吧。"
+    you "鸣香吗？哦不，她今天已经累坏了。让她去休息吧。"
 
 # game/BKchapter3.rpy:8168
 translate schinese narika_masseuse_59891658:
 
     # "You remove your cock from Narika's pussy, gently laying her down on the bench before leaving."
-    "你将鸡巴从鸣香的小穴中取出，轻轻地将她放在长凳上，然后离开。"
+    "你将鸡巴从鸣香的小穴中拔出，温柔地将她放在长凳上，然后离开。"
 
 # game/BKchapter3.rpy:8170
 translate schinese narika_masseuse_8f42b79e:
 
     # sill "Eeewww! And now there's cum leaking all over the place!" with vpunch
-    sill "哎呀www！现在精液流得到处都是！" with vpunch
+    sill "哎呀！精液流得到处都是！" with vpunch
 
 # game/BKchapter3.rpy:8176
 translate schinese narika_masseuse_86c42d47:
@@ -16798,43 +16798,43 @@ translate schinese narika_geisha_63248e29:
 translate schinese narika_geisha_bc36e90b:
 
     # narika "Please follow me to the chashitsu, the tea house... The tea ceremony will start shortly."
-    narika "请跟我去茶室...茶道马上就要开始了。"
+    narika "请跟我去茶室...茶道表演马上就要开始了。"
 
 # game/BKchapter3.rpy:8187
 translate schinese narika_geisha_5f25a89a:
 
     # "Ruffian" "Oy! I don't care about your stupid ceremony, kid! Shalia spit on it!"
-    "痞子" "哎哟！我不在乎你那愚蠢的仪式，孩子！莎莉亚向它吐口水！"
+    "痞子" "哎哟！我才不在乎你那愚蠢的仪式，小鬼！黑暗女神见了都得吐口水！"
 
 # game/BKchapter3.rpy:8193
 translate schinese narika_geisha_54446ba1:
 
     # "Ruffian" "Is this a whorehouse or what? Are you just here to serve tea and give flowery speeches?"
-    "痞子" "这是青楼还是什么？你只是来奉茶、说华丽辞藻的吗？"
+    "痞子" "这是青楼还是什么？你是来奉茶、说些华丽辞藻的吗？"
 
 # game/BKchapter3.rpy:8197
 translate schinese narika_geisha_79826da2:
 
     # narika blush "S-Sir, what are you doing??"
-    narika blush "S先生，你在做什么？？"
+    narika blush "先-先生，您在做什么？？"
 
 # game/BKchapter3.rpy:8199
 translate schinese narika_geisha_438a9c57:
 
     # "Ruffian" "What's it look like I'm doing? Checking the quality of the goods, that's what!"
-    "痞子" "我看起来像在做什么？检查货物质量，就是这样！"
+    "痞子" "我看起来像在做什么？检查服务质量，就这样！"
 
 # game/BKchapter3.rpy:8201
 translate schinese narika_geisha_6b70cb57:
 
     # narika "B-But, I'm just a maiko in training... We have a no-touching policy..."
-    narika "但、但是，我只是一个正在接受训练的舞妓...我们有禁止接触的政策..."
+    narika "但、但是，我只是一个正在接受训练的舞妓...我们有禁止与客人接触的规定..."
 
 # game/BKchapter3.rpy:8203
 translate schinese narika_geisha_7abfd21a:
 
     # "Ruffian" "Yeah, fuck that. You think that means anything in a place like that?"
-    "痞子" "是的，他妈的。你认为在那样的地方这意味着什么吗？"
+    "痞子" "是的，他妈的。你以为规矩在这种地方真的管用？"
 
 # game/BKchapter3.rpy:8205
 translate schinese narika_geisha_8377273c:
@@ -16846,7 +16846,7 @@ translate schinese narika_geisha_8377273c:
 translate schinese narika_geisha_37b962c1:
 
     # "Ruffian" "Shut the fuck up, you little slut! You don't want me to hurt your pretty little face, do you?"
-    "痞子" "闭嘴，你这个小荡妇！你不想让我伤害你漂亮的小脸吧？"
+    "痞子" "闭嘴，你这个小荡妇！你也不想让我伤害你漂亮的小脸蛋吧？"
 
 # game/BKchapter3.rpy:8209
 translate schinese narika_geisha_fd6f86b0:
@@ -16858,19 +16858,19 @@ translate schinese narika_geisha_fd6f86b0:
 translate schinese narika_geisha_28b6d587:
 
     # narika "(Damn, I could snap that fool's neck in a split second... But I need to behave, I'm only just starting to find my footing here...)"
-    narika "（该死，我可以在一瞬间扭断那个傻瓜的脖子...但我需要表现得好，我才刚刚开始在这里站稳脚跟...）"
+    narika "（该死，我可以在一瞬间扭断那个傻瓜的脖子...但我得哄着他，我才刚刚开始在这里站稳脚跟...）"
 
 # game/BKchapter3.rpy:8215
 translate schinese narika_geisha_f17ba052:
 
     # "Ruffian" "Eheheh, I like them small titties..."
-    "痞子" "诶嘿嘿，我就喜欢小奶子..."
+    "痞子" "诶嘿嘿，我就喜欢小巧玲珑的奶子..."
 
 # game/BKchapter3.rpy:8217
 translate schinese narika_geisha_5bfffbb4:
 
     # narika "(I just have to endure this for now... At least he's not...)"
-    narika "（我现在只能忍受了...至少他不是...）"
+    narika "（现在只能忍了...至少他还没...）"
 
 # game/BKchapter3.rpy:8225
 translate schinese narika_geisha_257cae03:
@@ -16882,25 +16882,25 @@ translate schinese narika_geisha_257cae03:
 translate schinese narika_geisha_bafa085e:
 
     # "Ruffian" "Ah yes, show me more..."
-    "痞子" "啊，是的，让我看看更多..."
+    "痞子" "啊，对，让我看看..."
 
 # game/BKchapter3.rpy:8229
 translate schinese narika_geisha_d2286816:
 
     # narika "S-Sir!"
-    narika "先生！"
+    narika "先-先生！"
 
 # game/BKchapter3.rpy:8231
 translate schinese narika_geisha_90707e4f:
 
     # "The gruffy customer tugs at her kimono, exposing her underwear. His grabby hands resume fondling Narika."
-    "粗暴的顾客拉扯她的和服，露出她的内衣。他的双手继续抚摸鸣香。"
+    "顾客粗暴地拉扯她的和服，露出里面的内衣。他的双手继续抚摸着鸣香的身体。"
 
 # game/BKchapter3.rpy:8233
 translate schinese narika_geisha_4288bc90:
 
     # narika "(This is bad... That guy is trouble...)"
-    narika "（这可糟了...那家伙真是麻烦...）"
+    narika "（真恶心...那这家伙真麻烦...）"
 
 # game/BKchapter3.rpy:8235
 translate schinese narika_geisha_72645261:
@@ -16918,19 +16918,19 @@ translate schinese narika_geisha_1825e5b1:
 translate schinese narika_geisha_124a272b:
 
     # "Ruffian" "Whatev's, girly... I'm enjoying touching your hot body just the same..."
-    "痞子" "怎么样，女孩子...我还是很享受抚摸你火辣的身体..."
+    "痞子" "怎么样，小姑娘...你火辣的身体摸起来真爽啊..."
 
 # game/BKchapter3.rpy:8243
 translate schinese narika_geisha_e590b217:
 
     # narika "(W-Why is it that I can't shake that guy's off? I can kill a dozen ninja in a fight, but when big strong hands are on me... I feel powerless to stop it?)"
-    narika "（为、为什么我无法摆脱那个家伙？我可以在战斗中杀死十几名忍者，但当大手放在我身上时...我感觉无力阻止？）"
+    narika "（为、为什么我无法挣脱那个家伙？我可以在战斗中杀死十几名忍者，但当他的手放在我身上时...我感觉一点力气也没有？）"
 
 # game/BKchapter3.rpy:8245
 translate schinese narika_geisha_6dfe59c9:
 
     # "Ruffian" "Your nipples are perking through your bra... Eheh, aren't you a sensitive little kitty?"
-    "痞子" "你的乳头从胸罩里露出来了...呃，你不是一只敏感的小猫咪吗？"
+    "痞子" "你的乳头都从胸罩里露出来了...呃，难道你不是一只敏感的小猫咪吗？"
 
 # game/BKchapter3.rpy:8247
 translate schinese narika_geisha_ac659c93:
@@ -16954,31 +16954,31 @@ translate schinese narika_geisha_16f4b296:
 translate schinese narika_geisha_0f9c654c:
 
     # "Ruffian" "Oh come on, don't be such a buzzkill, Miss! You knew this was coming..."
-    "痞子" "哦，拜托，别这么丧气，小姐！你知道这即将到来......"
+    "痞子" "哦，拜托，别这么扫兴，小姐！你知道会变成这样的......"
 
 # game/BKchapter3.rpy:8261
 translate schinese narika_geisha_1517ed79:
 
     # narika "(This is really bad... I need to do something before this escalates any further...)"
-    narika "（这真的很糟糕......我需要在事情进一步升级之前做点什么......）"
+    narika "（这真的很糟糕......我需要在事态进一步升级之前做点什么......）"
 
 # game/BKchapter3.rpy:8263
 translate schinese narika_geisha_1df00456:
 
     # "Ruffian" "We gots all the time in the world... I'm 'a make you a real woman."
-    "痞子" "我们拥有世界上所有的时间...我会让你成为一个真正的女人。"
+    "痞子" "现在就只有我们二人...我会让你成为一个真正的女人。"
 
 # game/BKchapter3.rpy:8265
 translate schinese narika_geisha_fb6c4934:
 
     # narika "(I've always refused to use {i}that kind{/i} of Kunoichi techniques, but... This is a force majeur...)"
-    narika "（我一直拒绝使用{i}那种{/i}的女忍技术，但是...这是不可抗力的...）"
+    narika "（我一直拒绝使用{i}那种{/i}女忍者技术，但是...这是不可抗力的...）"
 
 # game/BKchapter3.rpy:8267
 translate schinese narika_geisha_113f52b6:
 
     # "Slowly, deliberately, Narika contracts her pussy, her lips clenching the ruffian's dick through the panties' fabric."
-    "鸣香慢慢地、故意地收缩她的小穴，她的嘴唇隔着内裤的布料紧紧地捏住歹徒的阴茎。"
+    "鸣香慢慢地、故意地收缩她的小穴，她的阴唇隔着内裤的布料紧紧地捏住痞子的阴茎。"
 
 # game/BKchapter3.rpy:8269
 translate schinese narika_geisha_0e40c0cb:
@@ -16990,19 +16990,19 @@ translate schinese narika_geisha_0e40c0cb:
 translate schinese narika_geisha_848d12cb:
 
     # "Ruffian" "How are you even doing that? I must have underestimated you..."
-    "痞子" "你到底是怎么做到的？我一定是低估了你..."
+    "痞子" "你到底是怎么做到的？看来我低估了你..."
 
 # game/BKchapter3.rpy:8273
 translate schinese narika_geisha_a4f6fef3:
 
     # narika "(So... My instructor told me I could use this to deliver the finishing blow... It was all just theory, though, I've never even used such a technique...)"
-    narika "（所以...我的教练告诉我我可以用这个来进行最后一击...这只是理论，不过，我从来没有使用过这样的技术...）"
+    narika "（所以...我的老师告诉我可以用这个来进行最后一击...这只是理论上的，不过，我从来没有使用过这样的技术...）"
 
 # game/BKchapter3.rpy:8275
 translate schinese narika_geisha_23589ed6:
 
     # narika "(Forgive me, Master [MC.name], for what I'm about to do, but I must end this now...)"
-    narika "（请原谅我，主人[MC.name]，我即将要做的事情，但我现在必须结束这一切......）"
+    narika "（请原谅我，[MC.name]，对于我即将要做的事情，但我现在必须结束这一切......）"
 
 # game/BKchapter3.rpy:8277
 translate schinese narika_geisha_9b7fa1f7:
@@ -17026,43 +17026,43 @@ translate schinese narika_geisha_615803b2:
 translate schinese narika_geisha_1e7be9c2:
 
     # "The customer's dick erupts like a geyser, smearing Narika's legs and panties with thick semen."
-    "顾客的阴茎像间歇泉一样喷出，浓稠的精液沾满了鸣香的腿和内裤。"
+    "顾客的阴茎像喷泉一样涌出，浓稠的精液沾满了鸣香的腿和内裤。"
 
 # game/BKchapter3.rpy:8293
 translate schinese narika_geisha_ad8ccd9b:
 
     # "Ruffian" "In-In..."
-    "痞子" "进进出..."
+    "痞子" "太-太..."
 
 # game/BKchapter3.rpy:8295
 translate schinese narika_geisha_4de280c6:
 
     # "Ruffian" "INCREDIBLE!!!"
-    "痞子" "极好的！！！"
+    "痞子" "太棒了！！！"
 
 # game/BKchapter3.rpy:8297
 translate schinese narika_geisha_0783c2e6:
 
     # "Ruffian" "I've never felt anything like this! I thought I was about to die, and then it was so good!"
-    "痞子" "我从未有过这样的感觉！我以为我快要死了，然后那太好了！"
+    "痞子" "我从未有过这样的感觉！我以为我快要死了，然后是前所未有的畅快！"
 
 # game/BKchapter3.rpy:8301
 translate schinese narika_geisha_1c8cf67f:
 
     # narika "(Oh no... Did I mess up that technique? Or did I misunderstand the instructor when she told us it would 'finish' him?)"
-    narika "（哦，不...我是否搞砸了这项技术？或者当教练告诉我们这会“结束”他时，我是否误解了她？）"
+    narika "（哦，不...我是不是搞砸了？或者老师说的“结束”，是另一个意思？）"
 
 # game/BKchapter3.rpy:8303
 translate schinese narika_geisha_da8c6811:
 
     # "Ruffian" "Ohohoh, I'm in heaven now..."
-    "痞子" "呵呵，我现在已经在天堂了..."
+    "痞子" "哦哦，我现在爽的好像在天堂一样..."
 
 # game/BKchapter3.rpy:8305
 translate schinese narika_geisha_c023ed69:
 
     # narika "D-Dear customer, I'm glad you had your... fun. Now, I need to wash, can you please let me-"
-    narika "D-亲爱的顾客，我很高兴您玩得...开心。现在，我需要洗澡，你能让我-"
+    narika "亲-亲爱的顾客，我很高兴您玩得...开心。现在，我要去清洁一下，你能让我-"
 
 # game/BKchapter3.rpy:8315
 translate schinese narika_geisha_65d39786:
@@ -17074,43 +17074,43 @@ translate schinese narika_geisha_65d39786:
 translate schinese narika_geisha_5d7dc471:
 
     # "The customer's callous hands rip off her panties and bra."
-    "顾客冷酷无情的手撕下了她的内裤和胸罩。"
+    "顾客冷酷无情的手扯下了她的内裤和胸罩。"
 
 # game/BKchapter3.rpy:8319
 translate schinese narika_geisha_b74ad457:
 
     # "Ruffian" "Oh no, we're just getting started... You're all mine now! I'm going to enjoy that bewitching pussy night and day from now on!"
-    "痞子" "哦不，我们才刚刚开始......你现在都是我的了！从现在开始我要日日夜夜地享受那迷人的小穴！"
+    "痞子" "哦不，我们才刚刚开始......你现在是我的人了！从现在开始我要日日夜夜享受你那迷人的小穴！"
 
 # game/BKchapter3.rpy:8321
 translate schinese narika_geisha_414479bf:
 
     # narika "N-No, stop it! I will call my... My boss..."
-    narika "不、不，停下来！我会打电话给我的...我的老板..."
+    narika "不、不，停下来！我要叫人了...我的老板..."
 
 # game/BKchapter3.rpy:8324
 translate schinese narika_geisha_4aa9d0a6:
 
     # "Ruffian" "What, that loser, the old washed-up veteran? I can take ten guys like him any day! I bet he's never even been in a real fight."
-    "痞子" "什么，那个失败者，那个没落的老兵？我一天可以带十个像他这样的人！我敢打赌他从来没有参加过真正的战斗。"
+    "痞子" "什么，那个失败者，那个退伍的老兵？我一天可以干翻十个像他这样的人！我敢打赌他从来没有参加过真正的战斗。"
 
 # game/BKchapter3.rpy:8327
 translate schinese narika_geisha_67d34314:
 
     # "Ruffian" "That effeminate loser with his robes and his walking stick? You think I'm scared of the tacky magic tricks he uses to impress the simple-minded morons?"
-    "痞子" "那个穿着长袍、拄着拐杖、女性化的失败者？你以为我害怕他用那些俗气的魔术来取悦那些头脑简单的白痴吗？"
+    "痞子" "那个穿着长袍、拄着拐杖、像个娘们一样的失败者？你以为我会害怕他用那些庸俗的魔法来取悦那些头脑简单的白痴吗？"
 
 # game/BKchapter3.rpy:8330
 translate schinese narika_geisha_fa8110b3:
 
     # "Ruffian" "What, that chatty braggart and his pet lizard? He reminds me of a loser kid I was bullying, I pushed him down into the latrines and nailed his pet to the door..."
-    "痞子" "什么，那个健谈的吹牛者和他的宠物蜥蜴？他让我想起了一个被我欺负的失败者，我把他推到厕所里，把他的宠物钉在门上..."
+    "痞子" "什么，那个健谈的吹牛大王和他的宠物蜥蜴？他让我想起了一个被我欺负的失败者，我把他推到厕所里，把他的宠物钉在门上..."
 
 # game/BKchapter3.rpy:8333
 translate schinese narika_geisha_fdd54511:
 
     # "Ruffian" "If he dares to interrupt, I'll give him the hiding of his life. I'll screw down his head and shit down his neck. I'll-"
-    "痞子" "如果他敢打扰，我就把他的性命都给他藏起来。我会拧下他的头，然后往他脖子上拉屎。患病的-"
+    "痞子" "如果他敢打扰我们，我就了结他的生命。我会拧下他的头，然后朝他脖子上拉屎。我要-"
 
 # game/BKchapter3.rpy:8337
 translate schinese narika_geisha_9726a952:
@@ -17128,13 +17128,13 @@ translate schinese narika_geisha_615105b9:
 translate schinese narika_geisha_d5fc6bf7:
 
     # you "Get your filthy hands of my girl. The sign says 'NO TOUCHING'..."
-    you "把你的脏手拿开我的女孩。标牌上写着“禁止触摸”..."
+    you "把你的脏手从我的女人身上拿开。标牌上写着“禁止触摸”..."
 
 # game/BKchapter3.rpy:8345
 translate schinese narika_geisha_617724ea:
 
     # "*PUNCH*" with vpunch
-    "*冲床*" with vpunch
+    "*拳击*" with vpunch
 
 # game/BKchapter3.rpy:8346
 translate schinese narika_geisha_d269bb08:
@@ -17164,37 +17164,37 @@ translate schinese narika_geisha_0d40b163:
 translate schinese narika_geisha_d2dc330d:
 
     # "Ruffian" "G-G-Get that thing away from me!!!"
-    "痞子" "G-G-把那东西从我身上拿开！！！"
+    "痞子" "快-快-把那东西从我身上拿开！！！"
 
 # game/BKchapter3.rpy:8358
 translate schinese narika_geisha_33d84b6d:
 
     # you "... without paying. It says, 'NO TOUCHING {i}without paying{/i}'."
-    you "...无需付费。上面写着“未经付款，不得触摸”。"
+    you "...如果没有付钱。上面写着“未经付款，不得触摸”。"
 
 # game/BKchapter3.rpy:8360
 translate schinese narika_geisha_b19bee46:
 
     # "Ruffian" "GRRR... So you wanna dance, motherfucker?"
-    "痞子" "GRRR...所以你想跳舞吗，混蛋？"
+    "痞子" "咬牙...所以你想在我面前跳舞吗，混蛋？"
 
 # game/BKchapter3.rpy:8364
 translate schinese narika_geisha_f627d27e:
 
     # "The customer takes out a nasty looking knife from Arios-knows-where."
-    "顾客从阿里奥不知在哪里拿出了一把看起来很恶心的刀。"
+    "天知道顾客从哪里掏出了一把看起来很恶心的刀。"
 
 # game/BKchapter3.rpy:8366
 translate schinese narika_geisha_a6981f0c:
 
     # you "Narika, please."
-    you "鸣香，请。"
+    you "鸣香，动手。"
 
 # game/BKchapter3.rpy:8368
 translate schinese narika_geisha_fb207093:
 
     # narika "W-With pleasure, Master..."
-    narika "呜、很荣幸，主人..."
+    narika "我、我很荣幸，主人..."
 
 # game/BKchapter3.rpy:8385
 translate schinese narika_geisha_396a32a6:
@@ -17206,13 +17206,13 @@ translate schinese narika_geisha_396a32a6:
 translate schinese narika_geisha_3566c60a:
 
     # "Ruffian" "AAAAAAAAaaaaaaaaaaa{size=-4}aaaaaa{size=-4}aaaaaa{size=-4}aaaaaahhh" with vpunch
-    "痞子" "啊啊啊啊啊啊啊啊啊啊{size=-4}aaaaaa{size=-4}aaaaaa{size=-4}aaaaaahhh" with vpunch
+    "痞子" "啊啊啊啊啊啊啊啊啊啊{size=-4}呃啊{size=-4}啊啊啊{size=-4}嗷嗷" with vpunch
 
 # game/BKchapter3.rpy:8391
 translate schinese narika_geisha_8cc50f3f:
 
     # "The customer is kicked high above the rooftops, disappearing into the distance until he is just one tiny spot among the night's stars."
-    "顾客被踢到屋顶的高处，消失在远处，直到他成为夜晚星星中的一个小点。"
+    "顾客被踢飞到屋顶上，径直消失在天边，直到他成为夜晚中的一颗星星。"
 
 # game/BKchapter3.rpy:8393
 translate schinese narika_geisha_dc7084ad:
@@ -17230,13 +17230,13 @@ translate schinese narika_geisha_fd6f86b0_1:
 translate schinese narika_geisha_480e697e:
 
     # narika "That nasty man... He touched me, he... did his thing... It felt so gross, and weird..."
-    narika "那个讨厌的男人...他碰了我，他...做了他的事...感觉很恶心，很奇怪..."
+    narika "那个讨厌的男人...他碰了我，他...做了那种事...我感觉很恶心，很奇怪..."
 
 # game/BKchapter3.rpy:8399
 translate schinese narika_geisha_0918aa73:
 
     # narika shy "I... I even peed myself... *voice breaks*"
-    narika shy "我...我什至尿了自己...*声音中断*"
+    narika shy "我...我甚至失禁了...*声音中断*"
 
 # game/BKchapter3.rpy:8401
 translate schinese narika_geisha_6f4cb910:
@@ -17248,13 +17248,13 @@ translate schinese narika_geisha_6f4cb910:
 translate schinese narika_geisha_81a7aa38:
 
     # "You insert an expert finger inside her exposed snatch, scooping up a bunch of love juice."
-    "你将一根熟练的手指插入她裸露的私处，舀起一堆爱的汁液。"
+    "你将一根熟练的手指插入她裸露的私处，勾起一滩爱液。"
 
 # game/BKchapter3.rpy:8405
 translate schinese narika_geisha_4a12bdc1:
 
     # you "I can't believe you... Did being assaulted turn you on, or giving is it beating this guy to a pulp?"
-    you "我不敢相信你...是被攻击让你兴奋，还是把这家伙打得稀巴烂？"
+    you "难以置信...是被猥亵让你兴奋，还是把这家伙打得稀巴烂让你爽到了？"
 
 # game/BKchapter3.rpy:8407
 translate schinese narika_geisha_8ec7c1ec:
@@ -17266,19 +17266,19 @@ translate schinese narika_geisha_8ec7c1ec:
 translate schinese narika_geisha_013c2878:
 
     # narika "Both..."
-    narika "两个都..."
+    narika "两个都有点..."
 
 # game/BKchapter3.rpy:8411
 translate schinese narika_geisha_2f8d8985:
 
     # you "Hahaha, at least you're honest."
-    you "哈哈哈，至少你是诚实的。"
+    you "哈哈哈，至少你很诚实。"
 
 # game/BKchapter3.rpy:8413
 translate schinese narika_geisha_72e2a608:
 
     # you "I can't really leave you like this, though, can I?"
-    you "但我真的不能就这样离开你，不是吗？"
+    you "但我就这样把你丢在这不管，不是吗？"
 
 # game/BKchapter3.rpy:8415
 translate schinese narika_geisha_fd6f86b0_2:
@@ -17296,13 +17296,13 @@ translate schinese narika_geisha_0e6fde19:
 translate schinese narika_geisha_682285be:
 
     # narika "Oh, Master..."
-    narika "噢，师父..."
+    narika "噢，主人..."
 
 # game/BKchapter3.rpy:8425
 translate schinese narika_geisha_5a84fbed:
 
     # you "I think you're getting the hand of this place, Narika."
-    you "我想你已经掌控了这个地方，鸣香。"
+    you "我想你已经习惯了这个地方，鸣香。"
 
 # game/BKchapter3.rpy:8427
 translate schinese narika_geisha_5f4adaee:
@@ -17314,31 +17314,31 @@ translate schinese narika_geisha_5f4adaee:
 translate schinese narika_geisha_d02d4f68:
 
     # you "And yet look at you, you're moving your hips in rythm with mine..."
-    you "然而看看你，你的臀部和我的有节奏地移动......"
+    you "然而看看你，你的屁股在我的腰上有节奏地移动......"
 
 # game/BKchapter3.rpy:8431
 translate schinese narika_geisha_d1145ca9:
 
     # narika "I c-can't help it, it's like there's this fire inside me... I don't understand it..."
-    narika "我无法控制，就像我内心有一团火...我不明白..."
+    narika "我控制不住我自己，彷佛我内心有一团火...我不明白..."
 
 # game/BKchapter3.rpy:8433
 translate schinese narika_geisha_edd523a2:
 
     # you "You like sex, Narika, it's only natural. It's the most pleasurable thing in the world. I can guide you down the right path."
-    you "你喜欢性，鸣香，这是很自然的。这是世界上最令人愉快的事情。我可以引导你走上正确的道路。"
+    you "你喜欢性爱，鸣香，这是很自然的。这是世界上最令人愉快的事情。我可以引导你走上正确的道路。"
 
 # game/BKchapter3.rpy:8435
 translate schinese narika_geisha_eb578580:
 
     # narika "I-Is it like... Kunoichi training?"
-    narika "这、这就像...女忍训练吗？"
+    narika "这、这就像...女忍者的训练吗？"
 
 # game/BKchapter3.rpy:8437
 translate schinese narika_geisha_ac33348c:
 
     # you "Oh, it's a lot more fun than that."
-    you "哦，这比那有趣多了。"
+    you "哦，这比那有意思多了。"
 
 # game/BKchapter3.rpy:8439
 translate schinese narika_geisha_fd6f86b0_3:
@@ -17350,7 +17350,7 @@ translate schinese narika_geisha_fd6f86b0_3:
 translate schinese narika_geisha_a2275527:
 
     # "Increasing your pace, you keep fucking her tight pussy, and she hangs onto you for dear life."
-    "加快你的步伐，继续操弄她紧致的小穴，她会紧紧抓住你。"
+    "加快你的速度，继续操弄她紧致的小穴，她紧紧地抱住你。"
 
 # game/BKchapter3.rpy:8447
 translate schinese narika_geisha_9ed9280b:
@@ -17362,13 +17362,13 @@ translate schinese narika_geisha_9ed9280b:
 translate schinese narika_geisha_3f5150ba:
 
     # narika "Oh yes, yes... That's the spot... [emo_heart]"
-    narika "哦，是的，是的...那就是那个地方...[emo_heart]"
+    narika "哦，是的，对..那就是那里...[emo_heart]"
 
 # game/BKchapter3.rpy:8453
 translate schinese narika_geisha_900e7a57:
 
     # "Spreading her legs wider, you find just the right angle, sending shivers down her spine every time you pound into her."
-    "将她的双腿张开，找到合适的角度，每次你猛击她时，都会让她的脊椎发抖。"
+    "将双腿张开，找到合适的角度，每次你挺入她时，都会让她浑身发抖。"
 
 # game/BKchapter3.rpy:8455
 translate schinese narika_geisha_05289def:
@@ -17380,7 +17380,7 @@ translate schinese narika_geisha_05289def:
 translate schinese narika_geisha_1db415e1:
 
     # narika "Oh no!!! If you do that, I will..."
-    narika "哦不！如果你这样做，我就..."
+    narika "哦不！如果你那样做，我会..."
 
 # game/BKchapter3.rpy:8463
 translate schinese narika_geisha_3068879a:
@@ -17392,7 +17392,7 @@ translate schinese narika_geisha_3068879a:
 translate schinese narika_geisha_701fa4b8:
 
     # narika "You both cum at the same time, Narika clinging to you as you spurt your warm seed inside her."
-    narika "你们同时射精，当你将温暖的种子喷入她体内时，鸣香紧贴着你。"
+    narika "你们同时高潮，当你将温暖的种子喷入她体内时，鸣香的身体紧贴着你。"
 
 # game/BKchapter3.rpy:8471
 translate schinese narika_geisha_4baf9f03:
@@ -17410,7 +17410,7 @@ translate schinese narika_geisha_192def4f:
 translate schinese narika_geisha_b42a2dd1:
 
     # narika "I didn't know... There was such a... feeling..."
-    narika "我不知道...有一种...感觉..."
+    narika "我不知道...有一种...奇怪的感觉..."
 
 # game/BKchapter3.rpy:8477
 translate schinese narika_geisha_63496648:
@@ -17428,25 +17428,25 @@ translate schinese narika_geisha_fda51af3:
 translate schinese narika_geisha_13ec01cf:
 
     # "It looks like Narika passed out in the middle of your lecture."
-    "看起来鸣香在你的演讲中途昏倒了。"
+    "看起来鸣香在你的说明中途昏倒了。"
 
 # game/BKchapter3.rpy:8483
 translate schinese narika_geisha_c3c0b7de:
 
     # "You are relieved to hear her snore, though. It's just fatigue."
-    "不过，听到她的鼾声，你会松一口气。这只是疲劳而已。"
+    "不过，听到她的呼噜声，你松了一口气。她只是太累了而已。"
 
 # game/BKchapter3.rpy:8485
 translate schinese narika_geisha_5256d560:
 
     # "Carrying her back to her room, you reflect back on her progress since you brought her here."
-    "你把她抱回自己的房间，回顾了自从带她来这里以来她的进步。"
+    "你把她抱回自己的房间，回顾了这些天她的表现。"
 
 # game/BKchapter3.rpy:8487
 translate schinese narika_geisha_0647e8f6:
 
     # you "I'm surprised how well she's adjusting. She really is a quick learner."
-    you "我很惊讶她的适应能力有多好。她确实学得很快。"
+    you "她的适应力让我大吃一惊。她确实学得很快。"
 
 # game/BKchapter3.rpy:8493
 translate schinese narika_geisha_86c42d47:
@@ -17464,7 +17464,7 @@ translate schinese narika_dancer_4c00e080:
 translate schinese narika_dancer_4e3d201c:
 
     # narika school "Thank you, thank you..."
-    narika school "谢谢你，谢谢你..."
+    narika school "谢谢你们，谢谢大家的掌声..."
 
 # game/BKchapter3.rpy:8506
 translate schinese narika_dancer_e3187a0b:
@@ -17482,79 +17482,79 @@ translate schinese narika_dancer_15e6ffc6:
 translate schinese narika_dancer_41041369:
 
     # "The customers really enjoyed Narika's dance show."
-    "顾客们非常喜欢Narika的舞蹈表演。"
+    "顾客们非常喜欢鸣香的舞蹈表演。"
 
 # game/BKchapter3.rpy:8512
 translate schinese narika_dancer_85e500cd:
 
     # narika "Fufufu, thank you, my adoring fans! *blush*"
-    narika "呼呼呼，谢谢你们，我崇拜的粉丝们！ *脸红*"
+    narika "呼呼呼，谢谢你们，我亲爱的粉丝们！ *脸红*"
 
 # game/BKchapter3.rpy:8514
 translate schinese narika_dancer_a2fb19c4:
 
     # narika "(I really am getting quite popular now...)"
-    narika "（我现在真的是越来越红了...）"
+    narika "（我现在真的是越来越出名了...）"
 
 # game/BKchapter3.rpy:8516
 translate schinese narika_dancer_67841a07:
 
     # narika "(I've been here for a while already. I hear there are customers that come just for me...)"
-    narika "（我来这里已经有一段时间了。听说有顾客专程来找我...）"
+    narika "（我来这里已经有一段时间了。听说有甚至顾客专程来找我...）"
 
 # game/BKchapter3.rpy:8518
 translate schinese narika_dancer_41485251:
 
     # narika "(Why does it make me feel so... Tingly?)"
-    narika "（为什么让我感觉那么...刺痛？）"
+    narika "（为什么让我感觉那么...激动？）"
 
 # game/BKchapter3.rpy:8520
 translate schinese narika_dancer_f33feeee:
 
     # man2 "Here, Narika-chan! I brought you flowers!"
-    man2 "来了，鸣香酱！我给你带来了花！"
+    man2 "看我，鸣香酱！我给你带来了鲜花！"
 
 # game/BKchapter3.rpy:8522
 translate schinese narika_dancer_8950760c:
 
     # narika "Flowers? For me? Oh, thank you... *swoons*"
-    narika "花朵？为我？哦，谢谢你...*晕倒*"
+    narika "花朵？给我的吗？哦，谢谢你...*脸红*"
 
 # game/BKchapter3.rpy:8524
 translate schinese narika_dancer_33be81cb:
 
     # man "Can I get your autograph?"
-    man "我可以得到你的签名吗？"
+    man "可以给我签个名吗？"
 
 # game/BKchapter3.rpy:8526
 translate schinese narika_dancer_40b268c4:
 
     # "Third man" "I'll buy your used underwear! Name your price!"
-    "第三人" "我买你用过的内衣！说出你的价格！"
+    "另一个粉丝" "我想买你穿过的内衣！开个价吧！"
 
 # game/BKchapter3.rpy:8528
 translate schinese narika_dancer_ac701d57:
 
     # narika "(Gee, I have never been this popular with boys, not even in school... It's intoxicating...)"
-    narika "（哎呀，从来没有这么受男生欢迎过，在学校也没有...真是醉人了...）"
+    narika "（哎呀，我从来没有这么受男生欢迎过，在学校也没有...真是太爽了...）"
 
 # game/BKchapter3.rpy:8530
 translate schinese narika_dancer_a0c7fa2e:
 
     # "Fans" "Narika-chan, we are your biggest fans! *together*"
-    "粉丝" "Narika-chan，我们是你最大的粉丝！ *一起*"
+    "粉丝" "鸣香酱，我们是你最大的粉丝团！ *一起*"
 
 # game/BKchapter3.rpy:8532
 translate schinese narika_dancer_b48b7483:
 
     # narika "Ahaha... Would you like me to give you a tour backstage?"
-    narika "啊哈哈...要不要我带你参观一下后台？"
+    narika "啊哈哈...要不要我带你们参观一下后台？"
 
 # game/BKchapter3.rpy:8534
 translate schinese narika_dancer_e07e04ea:
 
     # "Fans" "YES!!!" with vpunch
-    "粉丝" "是的！！！" with vpunch
+    "粉丝" "好耶！！！" with vpunch
 
 # game/BKchapter3.rpy:8536
 translate schinese narika_dancer_71de6ffb:
@@ -17572,7 +17572,7 @@ translate schinese narika_dancer_4ba3a01a:
 translate schinese narika_dancer_fe0c9fe4:
 
     # "Narika led the three guys to the changing room. She didn't know what to make of the growing tingling sensation that was coursing through her body."
-    "鸣香带着三个人去了更衣室。她不知道该如何应对席卷全身的越来越强烈的刺痛感。"
+    "鸣香带着这三个人去了更衣室。她不知道该如何应对席卷全身的越来越强烈的刺痛感。"
 
 # game/BKchapter3.rpy:8544
 translate schinese narika_dancer_9a2d8bde:
@@ -17584,25 +17584,25 @@ translate schinese narika_dancer_9a2d8bde:
 translate schinese narika_dancer_9ca54f90:
 
     # narika "Sure, sure, ask me anything, I'd be nothing without my fans..."
-    narika "当然，当然，问我任何事情，没有我的粉丝我什么都不是......"
+    narika "当然，当然，任何问题都可以，没有我的粉丝我什么都不是......"
 
 # game/BKchapter3.rpy:8548
 translate schinese narika_dancer_370d89b4:
 
     # narika "(Why am I saying these corny idol lines all of a sudden?)"
-    narika "（为什么突然要说这些老生常谈的偶像台词？）"
+    narika "（为什么我突然要说这些老生常谈的偶像台词？）"
 
 # game/BKchapter3.rpy:8550
 translate schinese narika_dancer_76db90da:
 
     # man "Can you sign your autograph on my skin? You know, like a tattoo that comes from Narika-chan?"
-    man "你能在我的皮肤上签名吗？你知道吗，比如来自 Narika-chan 的纹身？"
+    man "你能在我的皮肤上签个名吗？你知道吗，比如鸣香酱的狗？"
 
 # game/BKchapter3.rpy:8552
 translate schinese narika_dancer_26ca432d:
 
     # narika "Oh, well, why not. Let me find a pen..."
-    narika "哦，好吧，为什么不呢。让我找一支笔..."
+    narika "哦，好吧，为什么不呢。让我找支笔来..."
 
 # game/BKchapter3.rpy:8558
 translate schinese narika_dancer_e29eff06:
@@ -17614,13 +17614,13 @@ translate schinese narika_dancer_e29eff06:
 translate schinese narika_dancer_3ed44881:
 
     # man "You said you would sign your autograph on my body, right? I want it here."
-    man "你不是说过要在我身上签名吗？我想要这里。"
+    man "你不是说过要在我身上签名吗？我想要签在这里。"
 
 # game/BKchapter3.rpy:8562
 translate schinese narika_dancer_43d5dd7f:
 
     # "Other men" "Do it, Narika-chan! Do it!"
-    "其他男人" "做吧，鸣香酱！做吧！"
+    "其他人" "签吧，鸣香酱！签吧！"
 
 # game/BKchapter3.rpy:8564
 translate schinese narika_dancer_9b9e1811:
@@ -17632,25 +17632,25 @@ translate schinese narika_dancer_9b9e1811:
 translate schinese narika_dancer_284b2679:
 
     # man "Oh, right!"
-    man "哦，对了！"
+    man "哦，没错！"
 
 # game/BKchapter3.rpy:8568
 translate schinese narika_dancer_4e562281:
 
     # man "You need to help me get it harder first."
-    man "你需要先帮我让事情变得更难。"
+    man "你得先帮我硬起来。"
 
 # game/BKchapter3.rpy:8570
 translate schinese narika_dancer_75cf86eb:
 
     # "The man guides Narika's hand towards his cock. She is surprised at his boldness, but also aroused."
-    "男人将鸣香的手引向他的阴茎。她对他的大胆感到惊讶，但也兴奋不已。"
+    "男人将鸣香的手拽向他的阴茎。她对他的大胆感到惊讶，但同时也兴奋不已。"
 
 # game/BKchapter3.rpy:8572
 translate schinese narika_dancer_7cc27bb4:
 
     # narika "W-Well, I suppose I can help out a fan..."
-    narika "嗯，我想我可以帮助粉丝......"
+    narika "嗯，我想我应该帮助粉丝......"
 
 # game/BKchapter3.rpy:8574
 translate schinese narika_dancer_74b9db12:
@@ -17668,19 +17668,19 @@ translate schinese narika_dancer_45272fdb:
 translate schinese narika_dancer_38bc23e3:
 
     # man "This is so good! Aah!!!" with vpunch
-    man "这太好了！啊啊！！！" with vpunch
+    man "这太爽了！啊啊！！！" with vpunch
 
 # game/BKchapter3.rpy:8582
 translate schinese narika_dancer_327fbb9a:
 
     # "Acting even more bold, the man pushes his cock in Narika's face, brushing the head against her lips."
-    "男人表现得更加大胆，将他的鸡巴推到鸣香的脸上，用头部擦过她的嘴唇。"
+    "男人开始得寸进尺，他将鸡巴推到鸣香的脸上，用龟头擦过她的嘴唇。"
 
 # game/BKchapter3.rpy:8584
 translate schinese narika_dancer_ca6cb22d:
 
     # narika "!!!" with vpunch
-    narika "!!!" with vpunch
+    narika "唔!!!" with vpunch
 
 # game/BKchapter3.rpy:8586
 translate schinese narika_dancer_f7fd5222:
@@ -17692,31 +17692,31 @@ translate schinese narika_dancer_f7fd5222:
 translate schinese narika_dancer_23faacd6:
 
     # narika "(This is getting out of hand... Literally...)"
-    narika "（这已经失控了......字面意思......）"
+    narika "（事态已经失控了......字面意思......）"
 
 # game/BKchapter3.rpy:8590
 translate schinese narika_dancer_bc5aa41b:
 
     # "In spite of herself, Narika soon finds herself licking the tip of the man's dick, tasting his sweat and pre-cum."
-    "鸣香很快就不由自主地舔着男人的阴茎尖，品尝着他的汗水和精液。"
+    "鸣香很快就不由自主地舔着男人的龟头，品尝着他的汗水和精液。"
 
 # game/BKchapter3.rpy:8592
 translate schinese narika_dancer_3749126a:
 
     # narika "(W-Why do I allow myself to be debased by these fans? And why does it feel so... hot?)"
-    narika "（为、为什么我要让自己被这些粉丝贬低？为什么感觉这么...热？）"
+    narika "（为、为什么我要让自己被这些粉丝糟践？为什么感觉这么...热？）"
 
 # game/BKchapter3.rpy:8594
 translate schinese narika_dancer_67e522a7:
 
     # man2 "Look at that!!! Narika-chan is really doing it!"
-    man2 "看看那个！鸣香酱真的很会做！"
+    man2 "看啊！鸣香酱真的很会！"
 
 # game/BKchapter3.rpy:8596
 translate schinese narika_dancer_c1f43e38:
 
     # "Third man" "Oh no, am I dead? Am I in heaven?"
-    "第三人" "哦不，我死了吗？我是在天堂吗？"
+    "第三个粉丝" "哦，我死了吗？我是在天堂吗？"
 
 # game/BKchapter3.rpy:8598
 translate schinese narika_dancer_b1c226c9:
@@ -17734,7 +17734,7 @@ translate schinese narika_dancer_4d7c8ac7:
 translate schinese narika_dancer_91725c75:
 
     # "As Narika wraps the man's cock with her lips, he cums suddenly, spilling a wad of salty cum in her mouth."
-    "当鸣香用嘴唇包裹住男人的阴茎时，他突然射精，一团咸味的精液洒在她的嘴里。"
+    "当鸣香用嘴唇包裹住男人的阴茎时，他突然射了出来，一团咸咸的精液喷洒在她的嘴里。"
 
 # game/BKchapter3.rpy:8608
 translate schinese narika_dancer_ccd66133:
@@ -17764,67 +17764,67 @@ translate schinese narika_dancer_54acd33c:
 translate schinese narika_dancer_41ae0c8c:
 
     # man2 "What about us? It's our turn now!"
-    man2 "那我们呢？现在轮到我们了！"
+    man2 "那我们呢？现在该轮到我们了！"
 
 # game/BKchapter3.rpy:8622
 translate schinese narika_dancer_17d4626a:
 
     # "Third man" "Yes! It wouldn't be fair to do it just for them!"
-    "第三人" "是的！只为他们做这件事是不公平的！"
+    "第三个粉丝" "是的！只给他做太不公平了！"
 
 # game/BKchapter3.rpy:8624
 translate schinese narika_dancer_fbfbfada:
 
     # narika "(I... I can't be seen playing favorites with my fans, it would be a bad look...)"
-    narika "（我...不能被人看见和我的粉丝玩最爱的，那太不好看了...）"
+    narika "（我...不能被人看见和我的粉丝玩口交的，那对形象很不好...）"
 
 # game/BKchapter3.rpy:8626
 translate schinese narika_dancer_6aaeae73:
 
     # narika "F-Fine... Just wait in line, or something..."
-    narika "好吧...就排队等吧，或者什么的..."
+    narika "好吧...那就排队吧，或者其他什么顺序..."
 
 # game/BKchapter3.rpy:8628
 translate schinese narika_dancer_a2d48b66:
 
     # man2 "Me first!" with vpunch
-    man2 "我先！" with vpunch
+    man2 "我先来！" with vpunch
 
 # game/BKchapter3.rpy:8630
 translate schinese narika_dancer_41dcda3a:
 
     # "Third man" "No, me!!!" with vpunch
-    "第三人" "不，是我！！！" with vpunch
+    "第三个粉丝" "不，是我先来！！！" with vpunch
 
 # game/BKchapter3.rpy:8632
 translate schinese narika_dancer_94b13536:
 
     # narika "Gee, calm down, boys... I've got two hands, I'll do my best to help you both..."
-    narika "哎呀，冷静点，孩子们...我有两只手，我会尽力帮助你们俩..."
+    narika "哎呀，冷静点，先生们...我有两只手，我可以同时帮助你们俩..."
 
 # game/BKchapter3.rpy:8636
 translate schinese narika_dancer_2ffe5c50:
 
     # narika "Here, happy now?"
-    narika "来了，现在幸福吗？"
+    narika "你看，现在满意了吗？"
 
 # game/BKchapter3.rpy:8638
 translate schinese narika_dancer_50e9c1a5:
 
     # man2 "Oooh, this is good!!!"
-    man2 "哦哦，这个不错！！！"
+    man2 "哦哦，这个也不错！！！"
 
 # game/BKchapter3.rpy:8640
 translate schinese narika_dancer_0ebf6958:
 
     # "Third man" "I don't believe it! This is even better than the time I got the special edition calendar of BK48!"
-    "第三人" "我不相信！这比我拿到BK48特别版日历的时候还要好！"
+    "第三个粉丝" "真不敢相信！这比我拿到AKB48特别版日历的时候还要刺激！"
 
 # game/BKchapter3.rpy:8642
 translate schinese narika_dancer_9abd396e:
 
     # man "I'm ready to go again! Show me something to get me started."
-    man "我准备再出发了！给我展示一些让我开始的东西。"
+    man "我已经休息好了！来点更让人激动的奖励。"
 
 # game/BKchapter3.rpy:8648
 translate schinese narika_dancer_c17949d1:
@@ -17836,25 +17836,25 @@ translate schinese narika_dancer_c17949d1:
 translate schinese narika_dancer_ab7dbf07:
 
     # narika "Please, dear fans... Look at my body... And enjoy yourselves..."
-    narika "拜托，亲爱的粉丝们...看看我的身体...尽情享受吧..."
+    narika "拜托，亲爱的粉丝们...看着我的身体...尽情享受吧..."
 
 # game/BKchapter3.rpy:8652
 translate schinese narika_dancer_54311958:
 
     # man2 "Oh, Narika-chan, your tits are beautiful!!!"
-    man2 "哦，成里香，你的奶子好漂亮！！！"
+    man2 "哦，鸣香，你的奶子好漂亮！！！"
 
 # game/BKchapter3.rpy:8654
 translate schinese narika_dancer_faf81cfa:
 
     # "Third man" "She's licking it! I'll never wash my dick again!!!"
-    "第三人" "她正在舔它！我再也不会洗我的鸡巴了！！！"
+    "第三个粉丝" "她正在舔它！我再也不会清洁我的鸡巴了！！！"
 
 # game/BKchapter3.rpy:8656
 translate schinese narika_dancer_c0c00d57:
 
     # "The fire in Narika's body is now in full heat, and she doesn't resist the turn of events."
-    "鸣香体内的火焰现在已经达到了最高点，她没有抗拒事态的发展。"
+    "鸣香体内的欲火现在已经达到了最高点，她没有抗拒事态的发展。"
 
 # game/BKchapter3.rpy:8658
 translate schinese narika_dancer_c941136f:
@@ -17872,7 +17872,7 @@ translate schinese narika_dancer_74588fb1:
 translate schinese narika_dancer_f01730d2:
 
     # "As Narika licks and sucks the customers, they release their cum on her face and chest."
-    "当鸣香舔舐和吸吮顾客时，他们将精液释放到她的脸上和胸部。"
+    "当鸣香舔舐和吸吮顾客时，他们将精液喷洒到她的脸上和胸部上。"
 
 # game/BKchapter3.rpy:8668
 translate schinese narika_dancer_6c50cb3e:
@@ -17884,19 +17884,19 @@ translate schinese narika_dancer_6c50cb3e:
 translate schinese narika_dancer_03399605:
 
     # "Third man" "I could watch this forever! I'll burn my eyes out after they have been so blessed!!!"
-    "第三人" "我可以看一辈子！在他们受到如此祝福后，我会烧瞎我的眼睛！"
+    "第三个粉丝" "我可以看一辈子！这一幕简直能烧坏我的眼睛！"
 
 # game/BKchapter3.rpy:8672
 translate schinese narika_dancer_dc255806:
 
     # narika "Please don't..."
-    narika "请不要..."
+    narika "别这么说..."
 
 # game/BKchapter3.rpy:8674
 translate schinese narika_dancer_c74e7575:
 
     # man "I can't take it anymore! Narika-chan, I'll..."
-    man "我再也受不了了！鸣香酱，我会..."
+    man "我再也受不了了！鸣香酱，我忍不住了..."
 
 # game/BKchapter3.rpy:8678
 translate schinese narika_dancer_892f9e4e:
@@ -17908,43 +17908,43 @@ translate schinese narika_dancer_892f9e4e:
 translate schinese narika_dancer_6acf4db7:
 
     # "As the cum drips down Narika's body, she feels a sense of liberation, of letting go of her inhibitions."
-    "当精液滴下鸣香的身体时，她感到一种解放的感觉，一种摆脱压抑的感觉。"
+    "当精液顺着鸣香的身体流下时，她感到一种自由的感觉，一种挣脱束缚的感觉。"
 
 # game/BKchapter3.rpy:8684
 translate schinese narika_dancer_8029a390:
 
     # narika "(I think Master [MC.name] was right, I needed to be shown the way... But now that I am on the path, I can keep walking it on my own.)"
-    narika "（我认为师父[MC.name]是对的，我需要为我指明道路...但现在我已经在路上了，我可以自己继续走下去。）"
+    narika "（我想[MC.name]是对的，我需要有人指引...但现在我已经在正确的方向上了，我可以自己继续走下去。）"
 
 # game/BKchapter3.rpy:8686
 translate schinese narika_dancer_a834a11f:
 
     # "Narika's journey of self-discovery has only begun, and she's ready for more."
-    "鸣香的自我发现之旅才刚刚开始，她已经准备好迎接更多。"
+    "鸣香的自我探索之旅才刚刚开始，她已经准备好迎接更多挑战。"
 
 # game/BKchapter3.rpy:8688
 translate schinese narika_dancer_3d714b11:
 
     # narika "(So far I've used my body for fighting and strength... But it can also bring joy and pleasure, to me and to others.)"
-    narika "（到目前为止，我已经用我的身体来战斗和力量......但它也可以给我和其他人带来欢乐和愉悦。）"
+    narika "（到目前为止，我一直在用我的身体来战斗......但它也可以给我和其他人带来欢乐和愉悦。）"
 
 # game/BKchapter3.rpy:8690
 translate schinese narika_dancer_9b903b1d:
 
     # narika "(Isn't that a better calling?)"
-    narika "（这不是更好的称呼吗？）"
+    narika "（这不是力量更好的使用方式吗？）"
 
 # game/BKchapter3.rpy:8696
 translate schinese narika_dancer_bc49b5f6:
 
     # "Narika is now fully trained in all jobs. Please wait for events to unfold."
-    "Narika 现在已接受了所有工作的全面培训。请等待事件的展开。"
+    "鸣香现在已接受了工作的全面培训。请等待事件的展开。"
 
 # game/BKchapter3.rpy:8714
 translate schinese narika_fans_return_dfbcf120:
 
     # "Narika was just ending her dancing shift when she heard a familiar voice call out her name."
-    "鸣香刚刚结束她的舞蹈班，就听到一个熟悉的声音喊她的名字。"
+    "鸣香刚刚结束她的舞蹈，就听到一个熟悉的声音在喊她的名字。"
 
 # game/BKchapter3.rpy:8716
 translate schinese narika_fans_return_3b780916:
@@ -17962,7 +17962,7 @@ translate schinese narika_fans_return_c2a5a06c:
 translate schinese narika_fans_return_61d8d6d7:
 
     # man2 "It's us!!! Your biggest fans! Do you remember us?"
-    man2 "是我们！！！你最大的粉丝！你还记得我们吗？"
+    man2 "是我们！！！你最大的粉丝团！你还记得我们吗？"
 
 # game/BKchapter3.rpy:8722
 translate schinese narika_fans_return_01eff173:
@@ -17974,7 +17974,7 @@ translate schinese narika_fans_return_01eff173:
 translate schinese narika_fans_return_fe3c53d0:
 
     # "Third man" "You showed us around backstage! You gave us, erm... Special service!"
-    "第三人" "你带我们参观了后台！您给了我们，呃...特殊服务！"
+    "第三个粉丝" "你带我们参观了后台！您给了我们，呃...特殊服务！"
 
 # game/BKchapter3.rpy:8726
 translate schinese narika_fans_return_6d9db2b2:
@@ -17992,37 +17992,37 @@ translate schinese narika_fans_return_824f7133:
 translate schinese narika_fans_return_a2123168:
 
     # man "It was awesome, Narika-chan! I haven't slept for weeks, daydreaming about this!"
-    man "太棒了，鸣香酱！我已经好几个星期没有睡觉了，一直在做白日梦！"
+    man "太棒了，鸣香酱！我已经好几个星期没有睡觉了，一直在做春梦！"
 
 # game/BKchapter3.rpy:8735
 translate schinese narika_fans_return_a558d865:
 
     # man2 "I masturbate every day thinking about it! I even made a clay figure of you, and..."
-    man2 "我每天都会自慰，想着它！我什至给你做了一个泥人，然后..."
+    man2 "我每天都会自慰，想着那一天！我甚至给你做了一个手办，然后..."
 
 # game/BKchapter3.rpy:8737
 translate schinese narika_fans_return_8c50e2fe:
 
     # narika "Enough, enough! (Gee, you idol fans are still as creepy as ever...)"
-    narika "够了，够了！ （哎呀，你们这些偶像粉丝还是一如既往的毛骨悚然...）"
+    narika "够了，够了！ （哎呀，你们这些狂热粉丝还是一如既往的让人毛骨悚然...）"
 
 # game/BKchapter3.rpy:8739
 translate schinese narika_fans_return_159b668f:
 
     # "Third man" "Would you show us around backstage today? Pretty please?"
-    "第三人" "今天你能带我们参观一下后台吗？请问漂亮吗？"
+    "第三个粉丝" "今天你能带我们参观一下后台吗？求你了？"
 
 # game/BKchapter3.rpy:8741
 translate schinese narika_fans_return_5ad110f1:
 
     # man "We'll pay extra!"
-    man "我们将额外付费！"
+    man "我们会付钱的！"
 
 # game/BKchapter3.rpy:8743
 translate schinese narika_fans_return_21d9420a:
 
     # narika "Well..."
-    narika "出色地..."
+    narika "好吧..."
 
 # game/BKchapter3.rpy:8745
 translate schinese narika_fans_return_2d488c20:
@@ -18034,19 +18034,19 @@ translate schinese narika_fans_return_2d488c20:
 translate schinese narika_fans_return_a4befce8:
 
     # narika "*sigh* All right, fine... Just follow me. But no inappropriate touching, okay?"
-    narika "*叹气*好吧，好吧...跟我来吧。但不要有不恰当的触摸，好吗？"
+    narika "*叹气*好吧，好吧...跟我来吧。但不要有非分之想，好吗？"
 
 # game/BKchapter3.rpy:8753
 translate schinese narika_fans_return_7afa4303:
 
     # narika blush "Eeeek!!! It's in my hair!"
-    narika blush "哎哟！！！它在我的头发里！"
+    narika blush "哎哟！！！我的头发里全都是！"
 
 # game/BKchapter3.rpy:8755
 translate schinese narika_fans_return_60a9ce10:
 
     # narika "So much for me saying 'no touching'..."
-    narika "我就说了这么多“不许碰”..."
+    narika "我都说了这么多次“不许碰”..."
 
 # game/BKchapter3.rpy:8761
 translate schinese narika_fans_return_ba64c1b7:
@@ -18064,7 +18064,7 @@ translate schinese narika_fans_return_69942086:
 translate schinese narika_fans_return_7bdba0e3:
 
     # "Third man" "But, Narika-chan..."
-    "第三人" "但是，鸣香酱..."
+    "第三个粉丝" "但是，鸣香酱..."
 
 # game/BKchapter3.rpy:8767
 translate schinese narika_fans_return_d82ed29b:
@@ -18076,7 +18076,7 @@ translate schinese narika_fans_return_d82ed29b:
 translate schinese narika_fans_return_d26479b8:
 
     # "Third man" "I heard the idols from BK48, they let their fans go all the way you know..."
-    "第三人" "我听说BK48的偶像们，他们让粉丝们一路走下去..."
+    "第三个粉丝" "我听说ABK48的偶像们，他们让粉丝们做到底..."
 
 # game/BKchapter3.rpy:8771
 translate schinese narika_fans_return_9defe54f:
@@ -18088,19 +18088,19 @@ translate schinese narika_fans_return_9defe54f:
 translate schinese narika_fans_return_014a4737:
 
     # man2 "Friends, don't you dare to compare Narika-chan to these BK48 sows..."
-    man2 "朋友们，你们敢不敢把Narika-chan和这些BK48母猪进行比较..."
+    man2 "朋友们，你们怎么敢把鸣香酱和那些ABK48的母猪进行比较..."
 
 # game/BKchapter3.rpy:8775
 translate schinese narika_fans_return_c71139ca:
 
     # narika "All the way? Hmph, do they think it makes them better or something? I bet they just lie there like a dead tuna..."
-    narika "一路走来？哼，他们认为这会让他们变得更好还是什么？我敢打赌它们就像一条死金枪鱼一样躺在那里......"
+    narika "做到最后？哼，他们认为这会让他们变得更好还是什么？我敢打赌它们就像一条死金枪鱼一样躺在那里......"
 
 # game/BKchapter3.rpy:8777
 translate schinese narika_fans_return_a01760df:
 
     # man "You're right, you don't have to do it to be awesome!"
-    man "你是对的，你不必这样做才能变得很棒！"
+    man "你是对的，你不必这样做也可以变得很棒！"
 
 # game/BKchapter3.rpy:8779
 translate schinese narika_fans_return_ef770fac:
@@ -18112,7 +18112,7 @@ translate schinese narika_fans_return_ef770fac:
 translate schinese narika_fans_return_a8d68fc0:
 
     # "Third man" "Sure, I mean... BK48 is something else, it's not a fair comparison..."
-    "第三人" "当然，我的意思是... BK48 是另一回事，这不是一个公平的比较..."
+    "第三个粉丝" "当然，我的意思是... ABK48 是另一回事，这不是一个公平的较量..."
 
 # game/BKchapter3.rpy:8783
 translate schinese narika_fans_return_79d3c2a4:
@@ -18124,13 +18124,13 @@ translate schinese narika_fans_return_79d3c2a4:
 translate schinese narika_fans_return_092c4e45:
 
     # narika "You lowly worms think I'm not on par with these fat vulgar bitches from BK48?!?" with vpunch
-    narika "你们这些卑鄙的虫子以为我比不上BK48的那些又胖又粗俗的母狗吗？！？" with vpunch
+    narika "你们这些卑鄙的虫子以为我比不上ABK48的那些又胖又粗俗的母狗吗？！？" with vpunch
 
 # game/BKchapter3.rpy:8787
 translate schinese narika_fans_return_f3e53f11:
 
     # man "N-N-No..."
-    man "N-N-不..."
+    man "不-不-不..."
 
 # game/BKchapter3.rpy:8789
 translate schinese narika_fans_return_d69d679a:
@@ -18142,43 +18142,43 @@ translate schinese narika_fans_return_d69d679a:
 translate schinese narika_fans_return_82cae2e1:
 
     # "Third man" "I think we're going to now... (She's scary!!!)"
-    "第三人" "我想我们现在要......（她很可怕！！！）"
+    "第三个粉丝" "我想我们现在该溜了......（她很可怕！！！）"
 
 # game/BKchapter3.rpy:8793
 translate schinese narika_fans_return_ed54a013:
 
     # narika "YOU THREE STAY RIGHT HERE!!!"
-    narika "你们三个留在这里！"
+    narika "你们三个给我留在这儿！"
 
 # game/BKchapter3.rpy:8799
 translate schinese narika_fans_return_ecbe669e:
 
     # man "N-Narika-chan, you don't have to force yourself..."
-    man "成、鸣香酱，你不用勉强自己..."
+    man "鸣、鸣香酱，你不用勉强自己..."
 
 # game/BKchapter3.rpy:8801
 translate schinese narika_fans_return_28b31005:
 
     # narika "Hmph. I'm not forcing myself, I'm just doing my duty as an idol. You can't leave here thinking someone else gives better fan service."
-    narika "哼。我没有强迫自己，只是尽到作为偶像的责任。你不能离开这里以为其他人会提供更好的粉丝服务。"
+    narika "哼。我没有勉强自己，这只不过是尽到作为偶像的责任。你不能夸着别的偶像就这么一走了之。"
 
 # game/BKchapter3.rpy:8803
 translate schinese narika_fans_return_f0b3676f:
 
     # man2 "Narika-chan, you're so cool! [emo_heart]"
-    man2 "鸣香酱，你太棒了！ [情绪心]"
+    man2 "鸣香酱，你太体贴了！ [emo_heart]"
 
 # game/BKchapter3.rpy:8805
 translate schinese narika_fans_return_6cee5454:
 
     # "Third man" "Ooooh, Narika-chan, my heart is going to beat out of my chest!!"
-    "第三人" "哎哟，Narika酱，我的心快要跳出胸口了！！"
+    "第三个粉丝" "哎哟，鸣香酱，我的心都快要跳出胸口了！！"
 
 # game/BKchapter3.rpy:8807
 translate schinese narika_fans_return_e2c2e326:
 
     # narika "Please, dear fans, look at me and only me! Your... Queen."
-    narika "亲爱的粉丝们，请看着我，只看着我！你的...女王。"
+    narika "亲爱的粉丝们，请看着我，只看着我！你们的...女王。"
 
 # game/BKchapter3.rpy:8809
 translate schinese narika_fans_return_a403855c:
@@ -18202,13 +18202,13 @@ translate schinese narika_fans_return_9a68b256:
 translate schinese narika_fans_return_730c70ed:
 
     # "Third man" "Aaaah, I'm going to faint!"
-    "第三人" "啊啊啊我要晕了！"
+    "第三个粉丝" "啊啊啊我要晕了！"
 
 # game/BKchapter3.rpy:8819
 translate schinese narika_fans_return_1fe81f28:
 
     # "Narika slowly lowers herself on the customer, his cock disappearing inside her wet pussy."
-    "鸣香慢慢地将自己压在顾客身上，他的阴茎消失在她湿漉漉的小穴里。"
+    "鸣香慢慢地将自己压在顾客身上，他的阴茎瞬间消失在她湿漉漉的小穴里。"
 
 # game/BKchapter3.rpy:8821
 translate schinese narika_fans_return_687b8c0c:
@@ -18220,25 +18220,25 @@ translate schinese narika_fans_return_687b8c0c:
 translate schinese narika_fans_return_6875de0d:
 
     # "Third man" "I can't believe my eyes! Narika-chan is truly a goddess!!!"
-    "第三人" "我简直不敢相信自己的眼睛！娜里卡真的是女神啊！！！"
+    "第三个粉丝" "我简直不敢相信自己的眼睛！鸣香真的是女神下凡啊！！！"
 
 # game/BKchapter3.rpy:8825
 translate schinese narika_fans_return_22647734:
 
     # narika "Ah, ahh! Don't start moving until I tell you to!"
-    narika "啊啊啊！在我告诉你之前不要开始移动！"
+    narika "啊啊啊！在我说可以之前不要乱动！"
 
 # game/BKchapter3.rpy:8827
 translate schinese narika_fans_return_1ced2f32:
 
     # man "Y-Yes, my Queen! I will obey!"
-    man "是、是的，我的女王！我会服从的！"
+    man "是、是的，我的女王！我会听你的安排！"
 
 # game/BKchapter3.rpy:8829
 translate schinese narika_fans_return_080a93ee:
 
     # narika "That's right, you will obey me! Now thrust your hips! Hard!"
-    narika "没错，你就听从我的安排吧！现在挺起你的臀部！难的！"
+    narika "没错，你就听从我的安排吧！现在挺起你的臀部！用力挺！"
 
 # game/BKchapter3.rpy:8831
 translate schinese narika_fans_return_29122ef7:
@@ -18256,43 +18256,43 @@ translate schinese narika_fans_return_9c411e76:
 translate schinese narika_fans_return_c1408742:
 
     # "The man starts pounding Narika who bounces up and down his cock, while the others look at her with fascination."
-    "男人开始殴打鸣香，鸣香在他的阴茎上上下弹跳，而其他人则着迷地看着她。"
+    "男人开始顶鸣香，鸣香在他的阴茎上来回晃动，而其他人则着迷地看着她。"
 
 # game/BKchapter3.rpy:8842
 translate schinese narika_fans_return_a95cce65:
 
     # narika "(I could get used to this...) Fufufu..."
-    narika "（我可以习惯这个...）呼呼呼..."
+    narika "（我已经习惯了这样做...）呼呼呼..."
 
 # game/BKchapter3.rpy:8843
 translate schinese narika_fans_return_db0a0f9b:
 
     # man "I'm in heaven... I... Ugnh..."
-    man "我在天堂...我...呃..."
+    man "我要升天了...我...呃..."
 
 # game/BKchapter3.rpy:8849
 translate schinese narika_fans_return_083217c7:
 
     # narika "AAAAH!!! [emo_heart]" with vpunch
-    narika "啊啊！！！ [情绪心]" with vpunch
+    narika "啊啊！！！ [emo_heart]" with vpunch
 
 # game/BKchapter3.rpy:8851
 translate schinese narika_fans_return_fe6f57f5:
 
     # "The man cums suddenly, filling Narika's pussy with his seed."
-    "男人突然射精，精液充满了鸣香的小穴。"
+    "男人突然射精，精液灌满了鸣香的小穴。"
 
 # game/BKchapter3.rpy:8853
 translate schinese narika_fans_return_ea8762eb:
 
     # man2 "It's so hot!!! I can't hold it any longer!"
-    man2 "太热了！！！我再也坚持不住了！"
+    man2 "太热了！！！我再也憋不住了！"
 
 # game/BKchapter3.rpy:8855
 translate schinese narika_fans_return_bb365632:
 
     # "Third man" "Me neither! This is beyond my wildest dreams!!!"
-    "第三人" "我也不！这超出了我最疯狂的梦想！"
+    "第三个粉丝" "我也憋不住！这比我梦里还要疯狂！"
 
 # game/BKchapter3.rpy:8859
 translate schinese narika_fans_return_21487946:
@@ -18304,19 +18304,19 @@ translate schinese narika_fans_return_21487946:
 translate schinese narika_fans_return_4ef36a5e:
 
     # "Third man" "Aaaarh!"
-    "第三人" "啊啊！"
+    "第三个粉丝" "啊啊！"
 
 # game/BKchapter3.rpy:8863
 translate schinese narika_fans_return_0836c0e9:
 
     # "The men all cum together on Narika's body and face."
-    "男人们都一起射在鸣香的身体和脸上。"
+    "男人们一起射在鸣香的身体和脸上。"
 
 # game/BKchapter3.rpy:8867
 translate schinese narika_fans_return_16cbc948:
 
     # narika "Aaaaah, you guys came so much!"
-    narika "啊啊啊你们来得真多啊！"
+    narika "啊啊啊你们射得真多啊！"
 
 # game/BKchapter3.rpy:8869
 translate schinese narika_fans_return_1fa1f513:
@@ -18340,13 +18340,13 @@ translate schinese narika_fans_return_31ff374f:
 translate schinese narika_fans_return_dd51e981:
 
     # man2 "I-I'm spent..."
-    man2 "我、我已经耗尽了..."
+    man2 "我、我已经一滴都没有了..."
 
 # game/BKchapter3.rpy:8877
 translate schinese narika_fans_return_49af114d:
 
     # "Third man" "But it's not fair! How come he got to cum inside you, when I didn't?"
-    "第三人" "但这不公平！为什么他能射到你体内，而我却没有？"
+    "第三个粉丝" "但这不公平！为什么他能射到你体内，而我却不行？"
 
 # game/BKchapter3.rpy:8879
 translate schinese narika_fans_return_d494096a:
@@ -18358,25 +18358,25 @@ translate schinese narika_fans_return_d494096a:
 translate schinese narika_fans_return_95bf079d:
 
     # "Third man" "But what about me?"
-    "第三人" "但我呢？"
+    "第三个粉丝" "那我呢？"
 
 # game/BKchapter3.rpy:8883
 translate schinese narika_fans_return_be63236f:
 
     # narika "He's passed out now, you're going to have to wait for him to wake up..."
-    narika "他现在已经昏过去了，你得等他醒来..."
+    narika "他现在已经昏过去了，你得等他醒过来..."
 
 # game/BKchapter3.rpy:8885
 translate schinese narika_fans_return_a1f86cf6:
 
     # narika "His dick is still stuck inside me."
-    narika "他的鸡鸡还插在我体内。"
+    narika "他的肉棒还插在我体内。"
 
 # game/BKchapter3.rpy:8887
 translate schinese narika_fans_return_15c12020:
 
     # "Third man" "But I don't want to wait another second! I'm hard as fuck, Queen, it's painful!"
-    "第三人" "但我不想再等了！我他妈的太硬了，女王，太痛苦了！"
+    "第三个粉丝" "但我不想再等了！我的肉棒涨得要爆炸了，女王，我太痛苦了！"
 
 # game/BKchapter3.rpy:8889
 translate schinese narika_fans_return_3fd6eb2d:
@@ -18394,19 +18394,19 @@ translate schinese narika_fans_return_a61995b2:
 translate schinese narika_fans_return_b7d2aa26:
 
     # narika "Y-You bastard... You just put it in my asshole with even asking..."
-    narika "你-你这个混蛋...你问了就直接把它塞进我的屁眼里..."
+    narika "你-你这个混蛋...你问都不问就直接把它塞进我的屁眼里..."
 
 # game/BKchapter3.rpy:8901
 translate schinese narika_fans_return_0d8cd7d6:
 
     # "Third man" "I-I'm sorry, I don't know what came over me, Queen..."
-    "第三人" "我-我很抱歉，我不知道我怎么了，女王......"
+    "第三个粉丝" "我-我很抱歉，我不知道我怎么了，女王......"
 
 # game/BKchapter3.rpy:8903
 translate schinese narika_fans_return_3305ae86:
 
     # "Third man" "I'll come out right away... This was so inappropriate, I don't know how you can forgive me..."
-    "第三人" "我马上就出来...这太不合适了，我不知道你怎么才能原谅我..."
+    "第三个粉丝" "我马上就拔出来...请原谅我的无礼，我不知道怎么做你才愿意原谅我..."
 
 # game/BKchapter3.rpy:8905
 translate schinese narika_fans_return_80075add:
@@ -18418,55 +18418,55 @@ translate schinese narika_fans_return_80075add:
 translate schinese narika_fans_return_53e8d6fb:
 
     # "Narika moans as he tries to remove his dick."
-    "鸣香（Narika）一边试图拔掉他的鸡巴，一边呻吟着。"
+    "鸣香一边试图拔掉他的鸡巴，一边呻吟着。"
 
 # game/BKchapter3.rpy:8909
 translate schinese narika_fans_return_7557fdc9:
 
     # "Third man" "Q-Queen? I can't remove my dick? It's too tight!"
-    "第三人" "Q女王？我不能把我的鸡巴拔掉吗？它太紧！"
+    "第三个粉丝" "女-女王？你不想让我把鸡巴拔出来吗？它太紧了！"
 
 # game/BKchapter3.rpy:8913
 translate schinese narika_fans_return_258a55f6:
 
     # narika "That's right. Because I won't let you."
-    narika "这是正确的。因为我不会让你。"
+    narika "回答正确。因为我不允许你拔出来。"
 
 # game/BKchapter3.rpy:8915
 translate schinese narika_fans_return_7d840142:
 
     # "Narika is using the muscles of her ass to clench onto the man's dick."
-    "鸣香用她屁股的肌肉紧紧抓住男人的鸡巴。"
+    "鸣香用她肠子的肌肉紧紧包住男人的鸡巴。"
 
 # game/BKchapter3.rpy:8917
 translate schinese narika_fans_return_83c51dee:
 
     # narika "I have yet to be satisfied, as that other chump came too early."
-    narika "我还没有满意，因为那个笨蛋来得太早了。"
+    narika "我还没有满足，因为那个笨蛋泄得太早了。"
 
 # game/BKchapter3.rpy:8919
 translate schinese narika_fans_return_c56e3b53:
 
     # narika "So you're going to make me cum now..."
-    narika "所以你现在要让我射精..."
+    narika "所以你有义务让我高潮..."
 
 # game/BKchapter3.rpy:8922
 translate schinese narika_fans_return_817341fa:
 
     # "Third man" "I-I'll do anything for you, Queen Narika! Just tell me what I can do!"
-    "第三人" "我、我会为你做任何事，鸣香女王！只要告诉我我能做什么！"
+    "第三个粉丝" "我、我会为你做任何事，鸣香女王！告诉我我能做什么！"
 
 # game/BKchapter3.rpy:8924
 translate schinese narika_fans_return_721ba096:
 
     # narika "I want you to fuck me in the ass. Do it now!"
-    narika "我要你操我的屁股。现在就做吧！"
+    narika "我要你操我的屁股。就现在！"
 
 # game/BKchapter3.rpy:8926
 translate schinese narika_fans_return_a22a2828:
 
     # "Third man" "Yes, my Queen! As you wish!" with vpunch
-    "第三人" "是的，我的女王！如你所愿！" with vpunch
+    "第三个粉丝" "是的，我的女王！如你所愿！" with vpunch
 
 # game/BKchapter3.rpy:8932
 translate schinese narika_fans_return_80c60671:
@@ -18484,25 +18484,25 @@ translate schinese narika_fans_return_af1a7838:
 translate schinese narika_fans_return_d9fd952d:
 
     # "She scoops some cum off her body and licks it off her fingers as she looks back at the customer."
-    "她从身上舀出一些精液，然后把它从手指上舔掉，同时回头看着顾客。"
+    "她从身上抹了一些精液，然后把它从手指上舔掉，同时回头看着顾客。"
 
 # game/BKchapter3.rpy:8942
 translate schinese narika_fans_return_3baf95b7:
 
     # man2 "A-Amazing!!! This is the power of a true idol!!!"
-    man2 "太棒了！！！这就是真正偶像的力量！！！"
+    man2 "太棒了！！！这才是真正的偶像的力量！！！"
 
 # game/BKchapter3.rpy:8944
 translate schinese narika_fans_return_3dda6ed2:
 
     # "Third man" "O-Of course! No one in the world can compare to Narika-chan!"
-    "第三人" "噢——当然！世界上没有人可以与Narika-chan相比！"
+    "第三个粉丝" "噢——当然！世界上没有人可以与鸣香酱相比！"
 
 # game/BKchapter3.rpy:8946
 translate schinese narika_fans_return_1b30cca5:
 
     # "Third man" "OOOOOOH!!!!" with vpunch
-    "第三人" "噢噢噢！！！" with vpunch
+    "第三个粉丝" "噢噢噢！！！" with vpunch
 
 # game/BKchapter3.rpy:8952
 translate schinese narika_fans_return_4856f89b:
@@ -18514,13 +18514,13 @@ translate schinese narika_fans_return_4856f89b:
 translate schinese narika_fans_return_984fb09f:
 
     # "The customer cums, releasing his seed inside Narika's ass, while she reaches her climax as well."
-    "顾客射精，将精液释放到鸣香的屁股内，而她也达到了高潮。"
+    "粉丝射精，将精液释放到鸣香的屁股内，而她也同时达到了高潮。"
 
 # game/BKchapter3.rpy:8958
 translate schinese narika_fans_return_615c8e3f:
 
     # "Third man" "*pant, pant*"
-    "第三人" "*裤子，裤子*"
+    "第三个粉丝" "*喘气，斯哈*"
 
 # game/BKchapter3.rpy:8960
 translate schinese narika_fans_return_92990ec5:
@@ -18538,7 +18538,7 @@ translate schinese narika_fans_return_6a091e5f:
 translate schinese narika_fans_return_d5f47706:
 
     # narika "(I can please any number of men... Nothing is beyond my power now...)"
-    narika "（我可以取悦任何数量的男人......现在没有什么是我力所能及的......）"
+    narika "（我可以取悦任何男人......现在没有什么是我做不到的......）"
 
 # game/BKchapter3.rpy:8966
 translate schinese narika_fans_return_e51497cf:
@@ -18562,49 +18562,49 @@ translate schinese narika_fans_return_45ff0e1a:
 translate schinese narika_broken_e36d335a:
 
     # narika "Master, you wanted to see me?"
-    narika "主人，您想见我吗？"
+    narika "主人，您找我吗？"
 
 # game/BKchapter3.rpy:8995
 translate schinese narika_broken_54e381b9:
 
     # you "Yes, I wanted to congratulate you on your progress so far. I think you are now ready to join us."
-    you "是的，我想祝贺你迄今为止所取得的进步。我想你现在已经准备好加入我们了。"
+    you "是的，我亲眼见证了你这些天的进步。我想你现在已经准备好加入我们了。"
 
 # game/BKchapter3.rpy:8997
 translate schinese narika_broken_d975318f:
 
     # narika blush "Well, I didn't know what to expect at first... But I think I can hold my own."
-    narika blush "好吧，一开始我不知道会发生什么...但我想我可以坚持自己的想法。"
+    narika blush "好吧，一开始我不知道会发生什么...但我想现在我可以走下去了。"
 
 # game/BKchapter3.rpy:8999
 translate schinese narika_broken_5a080bf8:
 
     # you "You sure can. The girls said you've been good help."
-    you "你当然可以。女孩们说你帮了大忙。"
+    you "当然可以。女孩们都说你帮了大忙。"
 
 # game/BKchapter3.rpy:9001
 translate schinese narika_broken_f8f1763b:
 
     # narika "Well, I've tried all the side jobs... but I can't just be a supporting actress. I need to lead!"
-    narika "嗯，我尝试过所有的副业...但我不能只当女配角。我需要领导！"
+    narika "嗯，我尝试过所有的工作...但我不能只当女配角。我要做主角！"
 
 # game/BKchapter3.rpy:9003
 translate schinese narika_broken_59dd6a34:
 
     # you "Meaning?"
-    you "意义？"
+    you "也就是说？"
 
 # game/BKchapter3.rpy:9005
 translate schinese narika_broken_b765dc29:
 
     # narika "There's one last job I haven't tried... The real stuff. You know."
-    narika "还有最后一项工作我还没有尝试过...真正的东西。你知道。"
+    narika "还有最后一项工作我还没有尝试过...真正的体验。你懂我意思。"
 
 # game/BKchapter3.rpy:9007
 translate schinese narika_broken_b2bd00d2:
 
     # you "Right."
-    you "正确的。"
+    you "没错。"
 
 # game/BKchapter3.rpy:9010
 translate schinese narika_broken_9846c7cc:
@@ -18616,13 +18616,13 @@ translate schinese narika_broken_9846c7cc:
 translate schinese narika_broken_54e47eec:
 
     # you "You're going to welcome me as if I was a customer, and give me the best service you're capable of."
-    you "您将像对待顾客一样欢迎我，并为我提供您力所能及的最好的服务。"
+    you "你要像对待顾客一样欢迎我，并为我提供你能做到的最好的服务。"
 
 # game/BKchapter3.rpy:9018
 translate schinese narika_broken_189bbe3f:
 
     # you "If I am satisfied with you, I will let you join [brothel.name]."
-    you "如果我对你满意，我会让你加入[brothel.name]。"
+    you "如果我对你感到满意，我就会让你加入[brothel.name]。"
 
 # game/BKchapter3.rpy:9020
 translate schinese narika_broken_d4e8b446:
@@ -18634,7 +18634,7 @@ translate schinese narika_broken_d4e8b446:
 translate schinese narika_broken_9718b313:
 
     # narika blush "W-Welcome, dear customer..."
-    narika blush "W-欢迎您，亲爱的顾客..."
+    narika blush "欢-欢迎您，亲爱的顾客..."
 
 # game/BKchapter3.rpy:9027
 translate schinese narika_broken_3ddcaaae:
@@ -18646,13 +18646,13 @@ translate schinese narika_broken_3ddcaaae:
 translate schinese narika_broken_70ec7609:
 
     # narika "D-Daddy? Why?"
-    narika "D-爸爸？为什么？"
+    narika "爸-爸爸？为什么？"
 
 # game/BKchapter3.rpy:9031
 translate schinese narika_broken_a08728da:
 
     # you "Many customers ask for this. Don't you know step-relations are all the rage now in smutty dime novels?"
-    you "很多顾客都有这样的要求。你难道不知道现在色情小说里流行的是继父关系吗？"
+    you "很多顾客都有这样的要求。你难道不知道现在色情小说里流行的是鬼父题材吗？"
 
 # game/BKchapter3.rpy:9033
 translate schinese narika_broken_979e079a:
@@ -18664,13 +18664,13 @@ translate schinese narika_broken_979e079a:
 translate schinese narika_broken_d24071c1:
 
     # you "Still not wearing a bra... I like that."
-    you "还是没穿胸罩...我喜欢这样。"
+    you "还是真空上阵...我喜欢这样。"
 
 # game/BKchapter3.rpy:9037
 translate schinese narika_broken_37767079:
 
     # narika "Do you like my titties, Daddy?"
-    narika "爸爸，你喜欢我的奶子吗？"
+    narika "爸爸，你喜欢我的胸部吗？"
 
 # game/BKchapter3.rpy:9039
 translate schinese narika_broken_d06ced68:
@@ -18682,7 +18682,7 @@ translate schinese narika_broken_d06ced68:
 translate schinese narika_broken_6b735f74:
 
     # "You pinch her nipples."
-    "你捏她的乳头。"
+    "你捏了捏她的乳头。"
 
 # game/BKchapter3.rpy:9043
 translate schinese narika_broken_257cae03:
@@ -18694,25 +18694,25 @@ translate schinese narika_broken_257cae03:
 translate schinese narika_broken_5d2a7951:
 
     # you "Perky as always... Let's check what else you have for me."
-    you "一如既往的活泼...让我们看看你还有什么给我的。"
+    you "一如既往的Q弹...让我们看看你还有什么本事。"
 
 # game/BKchapter3.rpy:9051
 translate schinese narika_broken_9d04f8d2:
 
     # "You remove her panties, spreading her knees apart to get a good view of her pussy."
-    "你脱掉她的内裤，分开她的膝盖，以便清楚地看到她的阴部。"
+    "你脱掉她的内裤，分开她的膝盖，以便清楚地看到她的小穴。"
 
 # game/BKchapter3.rpy:9053
 translate schinese narika_broken_63d6441b:
 
     # "Her pussy is already wet."
-    "她的阴部已经湿了。"
+    "她的小穴已经湿了。"
 
 # game/BKchapter3.rpy:9055
 translate schinese narika_broken_6909c949:
 
     # you "It looks like you've been a naughty daughter..."
-    you "看来你真是个调皮的女儿啊..."
+    you "你真是个淫荡的女儿啊..."
 
 # game/BKchapter3.rpy:9057
 translate schinese narika_broken_76cd37c9:
@@ -18724,13 +18724,13 @@ translate schinese narika_broken_76cd37c9:
 translate schinese narika_broken_3fe73d35:
 
     # narika "S-Sorry, Daddy... I was thinking about you all day, and got turned on..."
-    narika "对不起，爸爸...我一整天都在想你，然后就兴奋了..."
+    narika "对不起，爸爸...我一整天都在想你，然后就兴奋地湿了..."
 
 # game/BKchapter3.rpy:9061
 translate schinese narika_broken_2916ffb5:
 
     # "Narika spreads her legs wider, inviting you to get closer."
-    "Narika 将双腿张开，邀请您靠近。"
+    "鸣香将双腿张开，邀请您靠近。"
 
 # game/BKchapter3.rpy:9063
 translate schinese narika_broken_8dfcc2aa:
@@ -18742,7 +18742,7 @@ translate schinese narika_broken_8dfcc2aa:
 translate schinese narika_broken_d405b31b:
 
     # you "Hehehe, what a dirty daughter. I'm going to have to punish you."
-    you "呵呵，真是个肮脏的女儿。我必须惩罚你。"
+    you "呵呵，真是个下流的女儿。我必须惩罚你。"
 
 # game/BKchapter3.rpy:9067
 translate schinese narika_broken_f121516d:
@@ -18754,13 +18754,13 @@ translate schinese narika_broken_f121516d:
 translate schinese narika_broken_c501145f:
 
     # narika "Aaaaah!!! [emo_heart]" with vpunch
-    narika "啊啊啊！！！ [情绪心]" with vpunch
+    narika "啊啊啊！！！ [emo_heart]" with vpunch
 
 # game/BKchapter3.rpy:9073
 translate schinese narika_broken_9bb49300:
 
     # you "Just as I thought, you're leaking all over the place, you dirty girl!"
-    you "和我想的一样，你尿得到处都是，你这个肮脏的女人！"
+    you "和我想的一样，你尿得到处都是，你这个下流的女人！"
 
 # game/BKchapter3.rpy:9075
 translate schinese narika_broken_3a5df3d4:
@@ -18778,7 +18778,7 @@ translate schinese narika_broken_a5a3a89c:
 translate schinese narika_broken_7f7c91f6:
 
     # narika "I-I mean, it's my first time... As a... A..."
-    narika "我-我是说，这是我第一次...作为一个...A..."
+    narika "我-我是说，这是我第一次...作为一个...一个..."
 
 # game/BKchapter3.rpy:9081
 translate schinese narika_broken_b9f03b8c:
@@ -18808,7 +18808,7 @@ translate schinese narika_broken_d7579776:
 translate schinese narika_broken_efb18dd0:
 
     # you "I like the new you... Let me show you my appreciation."
-    you "我喜欢新的你...让我向你表示我的欣赏。"
+    you "我喜欢重生之后的你...让我向你表示我的赞美。"
 
 # game/BKchapter3.rpy:9095
 translate schinese narika_broken_6ed31594:
@@ -18820,13 +18820,13 @@ translate schinese narika_broken_6ed31594:
 translate schinese narika_broken_afc724ae:
 
     # "You resume licking her pussy, while she leans back and grabs the sheets with her hands."
-    "你继续舔她的阴部，而她向后靠去，用手抓住床单。"
+    "你继续舔她的小穴，而她向后挺腰，双手用力抓住床单。"
 
 # game/BKchapter3.rpy:9099
 translate schinese narika_broken_b87d3c84:
 
     # "Spreading her pussy lips apart, you push your tongue inside, tasting her sweet love juice."
-    "张开她的阴唇，将舌头伸进去，品尝她甜蜜的爱汁。"
+    "分开她的阴唇，将舌头伸进去，品尝她甜蜜的爱液。"
 
 # game/BKchapter3.rpy:9101
 translate schinese narika_broken_45fca2c1:
@@ -18850,7 +18850,7 @@ translate schinese narika_broken_fa6e0943:
 translate schinese narika_broken_c354b016:
 
     # you "Let's not rush to the finish line..."
-    you "我们先别急着冲向终点..."
+    you "先别急着高潮..."
 
 # game/BKchapter3.rpy:9111
 translate schinese narika_broken_5413adf1:
@@ -18868,37 +18868,37 @@ translate schinese narika_broken_ec840f37:
 translate schinese narika_broken_83ace22b:
 
     # you "I think my slutty daughter's pussy is ready to take my dick..."
-    you "我觉得我放荡女儿的阴部已经准备好接受我的鸡鸡了......"
+    you "我觉得我放荡女儿的下流小穴已经准备好接受我的肉棒了......"
 
 # game/BKchapter3.rpy:9119
 translate schinese narika_broken_98b57aff:
 
     # narika "Y-Yes, Daddy! Please use me as you like!"
-    narika "是、是的，爸爸！请随意使用我！"
+    narika "是、是的，爸爸！请把我当成你的飞机杯吧！"
 
 # game/BKchapter3.rpy:9123
 translate schinese narika_broken_bdddf061:
 
     # "You pull out your cock and it springs to attention."
-    "你拔出你的鸡巴，它就会引起注意。"
+    "你拔出你的肉棒，鸣香的眼神随着肉棒甩动而晃动。"
 
 # game/BKchapter3.rpy:9125
 translate schinese narika_broken_92eb8f45:
 
     # you "Make sure to satisfy me fully, and you will have a place of honor among my girls."
-    you "一定要让我完全满意，这样你就会在我的女儿们中占有一席之地。"
+    you "一定要让我感到满意，这样你才能在我的女儿们中占有一席之地。"
 
 # game/BKchapter3.rpy:9127
 translate schinese narika_broken_9ab711c1:
 
     # narika "S-Sure, Daddy. I'll do my best."
-    narika "当然，爸爸。我会尽力的。"
+    narika "当然，爸爸。我会全力以赴的。"
 
 # game/BKchapter3.rpy:9129
 translate schinese narika_broken_c6a753ff:
 
     # "You put your cock between her legs and start thrusting."
-    "你把你的鸡巴放在她的双腿之间并开始抽插。"
+    "你把你的鸡巴放在她的双腿之间开始抽插。"
 
 # game/BKchapter3.rpy:9135
 translate schinese narika_broken_457870a6:
@@ -18910,25 +18910,25 @@ translate schinese narika_broken_457870a6:
 translate schinese narika_broken_f0585d35:
 
     # you "Your pussy is so tight, and yet so easy to move into..."
-    you "你的阴部是如此紧绷，却又如此容易进入..."
+    you "你的小穴好紧，却又如此容易插入..."
 
 # game/BKchapter3.rpy:9139
 translate schinese narika_broken_c84eea2c:
 
     # "You grab her ass, pulling her towards you as you lodge your cock deeper inside."
-    "你抓住她的屁股，将她拉向你，同时将你的阴茎插得更深。"
+    "你抓住她的腰，将她拽向你，同时将你的阴茎插得更深。"
 
 # game/BKchapter3.rpy:9145
 translate schinese narika_broken_e3da2649:
 
     # narika "Oh, Daddy... You're so big..."
-    narika "哦，爸爸...你这么大了..."
+    narika "哦，爸爸...你的肉棒好大..."
 
 # game/BKchapter3.rpy:9147
 translate schinese narika_broken_c5d0ea70:
 
     # "Her pussy is clenching around you as she bites her lips."
-    "当她咬住嘴唇时，她的小穴紧紧地围绕着你。"
+    "她咬住嘴唇，小穴紧紧地缠绕着着你。"
 
 # game/BKchapter3.rpy:9151
 translate schinese narika_broken_6157d22b:
@@ -18940,25 +18940,25 @@ translate schinese narika_broken_6157d22b:
 translate schinese narika_broken_e37cdd3a:
 
     # you "Narika, my slutty daughter... You feel so good!"
-    you "Narika，我的放荡女儿...你感觉真好！"
+    you "鸣香，我的宝贝女儿...你里面真爽啊！"
 
 # game/BKchapter3.rpy:9155
 translate schinese narika_broken_7ba99160:
 
     # you "I'm going to have to fuck your pussy now... Don't mind me if I'm being rough."
-    you "我现在要操你的阴部了...如果我粗暴的话请不要介意。"
+    you "我现在要操你的菊花了...如果我粗暴的话请不要介意。"
 
 # game/BKchapter3.rpy:9157
 translate schinese narika_broken_1a7e3349:
 
     # narika "Daddy, I want it rough..."
-    narika "爸爸，我想要粗暴的..."
+    narika "爸爸，人家就喜欢粗暴的..."
 
 # game/BKchapter3.rpy:9159
 translate schinese narika_broken_2e6a934e:
 
     # "You start fucking her in earnest, pushing your cock in and out of her pussy."
-    "你开始认真地操她，将你的鸡巴推入又推出她的小穴。"
+    "你开始用力地操她，将你的鸡巴推入又推出她的屁股。"
 
 # game/BKchapter3.rpy:9165
 translate schinese narika_broken_302150ec:
@@ -18982,37 +18982,37 @@ translate schinese narika_broken_4ecd0e44:
 translate schinese narika_broken_0bb30b2f:
 
     # narika "(It feels so good, but... Why is he holding back?)"
-    narika "（感觉很好，但是...为什么他要忍住？）"
+    narika "（感觉很好，但是...为什么他要停下？）"
 
 # game/BKchapter3.rpy:9173
 translate schinese narika_broken_448dcb4a:
 
     # "She looks at you and realizes what she has to do."
-    "她看着你，意识到她必须做什么。"
+    "她看着你，意识到她必须做些什么。"
 
 # game/BKchapter3.rpy:9175
 translate schinese narika_broken_ad2ca133:
 
     # narika "Daddy, you're teasing me... Please don't hold back on me..."
-    narika "爸爸，你在逗我...请不要阻止我..."
+    narika "爸爸，别挑逗我了...请不要让我难受..."
 
 # game/BKchapter3.rpy:9177
 translate schinese narika_broken_80b2c253:
 
     # you "You can do better than that... Don't just take it."
-    you "你可以做得更好...不要只是接受它。"
+    you "你可以做得更好...不要只是被动地享受。"
 
 # game/BKchapter3.rpy:9179
 translate schinese narika_broken_71d779c3:
 
     # you "You're a whore now, remember? Act like it!"
-    you "你现在是个妓女了，还记得吗？就这样行动吧！"
+    you "你现在是个妓女了，还记得吗？做你该做的！"
 
 # game/BKchapter3.rpy:9181
 translate schinese narika_broken_35dbabbf:
 
     # "You pick up the pace again, making her moan harder."
-    "你又加快了脚步，让她呻吟得更厉害。"
+    "你又加快了速度，让她呻吟得更厉害。"
 
 # game/BKchapter3.rpy:9183
 translate schinese narika_broken_392b5279:
@@ -19024,25 +19024,25 @@ translate schinese narika_broken_392b5279:
 translate schinese narika_broken_1e6b7337:
 
     # "She starts rocking her hips back and forth, making your cock hit her deeper regions every time you push into her."
-    "她开始前后摇动她的臀部，每次你推入她时，你的鸡巴都会击中她更深的部位。"
+    "她开始前后摇动她的臀部，每当你插入时，你的鸡巴都会顶到更深的部位。"
 
 # game/BKchapter3.rpy:9187
 translate schinese narika_broken_c8b7390c:
 
     # narika "Take me, Daddy! Fuck me hard!" with vpunch
-    narika "带我走吧，爸爸！狠狠地操我！" with vpunch
+    narika "玩坏我吧，爸爸！狠狠地操我！" with vpunch
 
 # game/BKchapter3.rpy:9189
 translate schinese narika_broken_53539801:
 
     # "You start feeling the onset of your orgasm."
-    "您开始感觉到性高潮的到来。"
+    "您开始感觉到高潮的到来。"
 
 # game/BKchapter3.rpy:9191
 translate schinese narika_broken_b747864f:
 
     # you "I'm getting close, Narika. Do you want to be filled by my cum?"
-    you "我已经很接近了，鸣香。你想被我的精液充满吗？"
+    you "我要射了，鸣香。你想怀上爸爸的小宝宝吗？"
 
 # game/BKchapter3.rpy:9193
 translate schinese narika_broken_c6d651f8:
@@ -19054,19 +19054,19 @@ translate schinese narika_broken_c6d651f8:
 translate schinese narika_broken_8c5b451f:
 
     # you "Then you have to deserve it. Your move."
-    you "那么你必须应得的。你的举动。"
+    you "这是你的奖励。动起来。"
 
 # game/BKchapter3.rpy:9197
 translate schinese narika_broken_dd0318ea:
 
     # "You stop pounding her, waiting with your dick buried halfway in."
-    "你停止殴打她，把你的鸡巴埋进一半等待。"
+    "你停止抽插，将鸡巴拔出了一半长度。"
 
 # game/BKchapter3.rpy:9199
 translate schinese narika_broken_d1a79cf7:
 
     # "Narika takes a few moments to collect herself, then starts fucking you on her own."
-    "鸣香花了一些时间冷静下来，然后开始独自操你。"
+    "鸣香花了一些时间缓过神来，然后开始吞没你的肉棒。"
 
 # game/BKchapter3.rpy:9203
 translate schinese narika_broken_ab498b01:
@@ -19078,19 +19078,19 @@ translate schinese narika_broken_ab498b01:
 translate schinese narika_broken_0a876aa6:
 
     # "She slams her ass against your crotch, taking your dick deeper every time."
-    "她用屁股猛击你的胯部，每次都把你的鸡巴插得更深。"
+    "她用屁股猛击你的裆部，每次都令你的鸡巴顶到更深的地方。"
 
 # game/BKchapter3.rpy:9207
 translate schinese narika_broken_5afc8bf9:
 
     # "She uses all of her muscles to make you feel good. You can feel her pussy walls tightening around your shaft."
-    "她用尽全身的肌肉让你感觉良好。你可以感觉到她的小穴壁在你的阴茎周围收紧。"
+    "她用尽全身的肌肉让你感觉良好。你可以感觉到她的小穴肉壁在你的阴茎周围裹紧。"
 
 # game/BKchapter3.rpy:9211
 translate schinese narika_broken_00bb2af4:
 
     # narika "Oh, Daddy! I'm gonna cum!" with vpunch
-    narika "哦，爸爸！我要射精了！" with vpunch
+    narika "哦，爸爸！我要去了！" with vpunch
 
 # game/BKchapter3.rpy:9217
 translate schinese narika_broken_fc44e502:
@@ -19102,37 +19102,37 @@ translate schinese narika_broken_fc44e502:
 translate schinese narika_broken_5b997da9:
 
     # you "Here it comes, Narika... Take it all!"
-    you "它来了，鸣香...全部拿走！"
+    you "接好了，鸣香...一滴也不许浪费！"
 
 # game/BKchapter3.rpy:9223
 translate schinese narika_broken_72b37a5f:
 
     # "You spray your seed inside her pussy, reaching her deepest places."
-    "你将种子喷入她的阴部，到达她最深处。"
+    "你将种子喷入她的小穴，到达花心深处。"
 
 # game/BKchapter3.rpy:9227
 translate schinese narika_broken_2f8ba784:
 
     # "The sensation of your hot cum makes Narika orgasm again, milking every drop out of you."
-    "你的热精液的感觉让鸣香再次达到高潮，榨干你的每一滴精液。"
+    "滚烫的精液让鸣香再次达到高潮，她想要榨干你的每一滴精液。"
 
 # game/BKchapter3.rpy:9233
 translate schinese narika_broken_d47c775d:
 
     # narika "I came... Twice..."
-    narika "我来过...两次..."
+    narika "我高潮了...两次..."
 
 # game/BKchapter3.rpy:9235
 translate schinese narika_broken_571403fd:
 
     # you "On your first day as a whore..."
-    you "当你当妓女的第一天..."
+    you "这是你当妓女的第一天..."
 
 # game/BKchapter3.rpy:9243
 translate schinese narika_broken_41c3649c:
 
     # you "Your test will involve real customers. are you ready for it?"
-    you "您的测试将涉及真实的客户。你准备好了吗？"
+    you "接下来要挑战和顾客做。你准备好了吗？"
 
 # game/BKchapter3.rpy:9245
 translate schinese narika_broken_fd6f86b0:
@@ -19144,13 +19144,13 @@ translate schinese narika_broken_fd6f86b0:
 translate schinese narika_broken_f015d9ba:
 
     # narika blush "Yes, I am."
-    narika blush "我是。"
+    narika blush "我准备好了。"
 
 # game/BKchapter3.rpy:9249
 translate schinese narika_broken_4a1af8b5:
 
     # you "Alright. Let me fetch some."
-    you "好吧。让我去拿一些。"
+    you "好吧。让我找几个人来。"
 
 # game/BKchapter3.rpy:9253
 translate schinese narika_broken_173f297e:
@@ -19162,13 +19162,13 @@ translate schinese narika_broken_173f297e:
 translate schinese narika_broken_f28d5124:
 
     # sill "Okay, Master [MC.name], but... Why?"
-    sill "好的，主人[MC.name]，但是...为什么？"
+    sill "好的，[MC.name]，但是...为什么？"
 
 # game/BKchapter3.rpy:9257
 translate schinese narika_broken_d9c7c27e:
 
     # you "I want to make sure that former spoiled little princess is ready to serve anyone."
-    you "我想确保这位以前被宠坏的小公主准备好为任何人服务。"
+    you "我想确保这位以前被宠坏的小公主已经准备好为任何人服务了。"
 
 # game/BKchapter3.rpy:9259
 translate schinese narika_broken_8d76d503:
@@ -19192,13 +19192,13 @@ translate schinese narika_broken_bcbd6fe4:
 translate schinese narika_broken_744f20ca:
 
     # narika "Ooh, aah, aaah! Mister, you're so rough!!!" with vpunch
-    narika "哦啊啊啊啊！楼主你太狠了！！！" with vpunch
+    narika "哦啊啊啊啊！主人你太无情了！！！" with vpunch
 
 # game/BKchapter3.rpy:9272
 translate schinese narika_broken_e5255937:
 
     # "[cust]" "Osh, I like how you move, you little shlut!"
-    "[客户]" "噢什，我喜欢你的动作，你这个小贱人！"
+    "[cust]" "噢，我喜欢你的动作，你这个小贱人！"
 
 # game/BKchapter3.rpy:9274
 translate schinese narika_broken_31fd6278:
@@ -19210,49 +19210,49 @@ translate schinese narika_broken_31fd6278:
 translate schinese narika_broken_2908180f:
 
     # narika "(And he fucks me like I'm a dirty street hooker...)"
-    narika "（他操我就像我是一个肮脏的街头妓女......）"
+    narika "（他弄得好像我是一个肮脏的街头妓女......）"
 
 # game/BKchapter3.rpy:9278
 translate schinese narika_broken_91eb2ffd:
 
     # narika "(Why am I getting so turned on by this???)" with vpunch
-    narika "（为什么我对此如此兴奋？？？）" with vpunch
+    narika "（为什么我却更加兴奋了？？？）" with vpunch
 
 # game/BKchapter3.rpy:9280
 translate schinese narika_broken_cfb646a3:
 
     # "[cust]" "Kish me you bitshh!"
-    "[客户]" "给我你个比特啊！"
+    "[cust]" "把舌头伸出来你这个贱货！"
 
 # game/BKchapter3.rpy:9282
 translate schinese narika_broken_1a96bba7:
 
     # "The customer licks the outside of Narika's mouth with his slithering tongue."
-    "顾客用他滑行的舌头舔着鸣香嘴的外侧。"
+    "顾客用他粗糙的舌头舔着鸣香嘴唇的外侧。"
 
 # game/BKchapter3.rpy:9284
 translate schinese narika_broken_7e16972a:
 
     # narika "(Oh gosh, his breath smells like cheap alcohol and clove cigarettes... Disgusting...)"
-    narika "（天哪，他的呼吸闻起来像廉价酒精和丁香香烟...恶心...）"
+    narika "（天哪，他的呼吸闻起来像廉价酒精和香烟的混合...恶心...）"
 
 # game/BKchapter3.rpy:9286
 translate schinese narika_broken_225bf34b:
 
     # "Narika leans into the kiss, intertwining her tongue with the customer's, swallowing his dirty saliva."
-    "鸣香倾身亲吻，将舌头与顾客的舌头纠缠在一起，吞咽着他肮脏的唾液。"
+    "鸣香倾身亲吻，将舌头与顾客的舌头纠缠在一起，吞咽着他恶臭的唾液。"
 
 # game/BKchapter3.rpy:9288
 translate schinese narika_broken_08b2a642:
 
     # "She gets turned on by this humiliating act, and starts rocking her hips back and forth faster."
-    "她对这种羞辱性的行为感到兴奋，并开始更快地前后摇动臀部。"
+    "她对这种羞辱性的行为感到兴奋，并开始更快地前后晃动屁股。"
 
 # game/BKchapter3.rpy:9290
 translate schinese narika_broken_50010df9:
 
     # "[cust]" "Oh, nishe... I really enjoy when you squeeje my cock like thish..."
-    "[客户]" "哦，完成...当你像这样挤压我的鸡巴时我真的很喜欢..."
+    "[cust]" "哦，漂亮...我喜欢你夹住我肉棒的力道..."
 
 # game/BKchapter3.rpy:9294
 translate schinese narika_broken_7d03283f:
@@ -19270,19 +19270,19 @@ translate schinese narika_broken_9f585b6a:
 translate schinese narika_broken_49f716f0:
 
     # "She gets more and more aroused as the customer fucks her like a piece of meat."
-    "当顾客像一块肉一样操她时，她变得越来越兴奋。"
+    "当顾客像操飞机杯一样操她时，她变得越来越兴奋。"
 
 # game/BKchapter3.rpy:9300
 translate schinese narika_broken_ded7730b:
 
     # "[cust]" "You like the bells I put on your nippies? It jingles every time I shlam my cock into you, hahaha!"
-    "[客户]" "你喜欢我给你的奶嘴戴上的铃铛吗？每次我把鸡巴猛击你的时候，它都会叮当作响，哈哈哈！"
+    "[cust]" "喜欢我给你的奶头戴上的铃铛吗？每次我把鸡巴猛击你的时候，它都会叮当作响，哈哈哈！"
 
 # game/BKchapter3.rpy:9302
 translate schinese narika_broken_ea975ffa:
 
     # "Narika's face is red, and she is breathing heavily as he fucks her like a wild animal."
-    "鸣香的脸涨红了，当他像野兽一样操弄她时，她呼吸粗重。"
+    "鸣香的脸涨红了，当他像野兽一样操弄她时，她的呼吸变得沉重。"
 
 # game/BKchapter3.rpy:9306
 translate schinese narika_broken_b692a20b:
@@ -19294,7 +19294,7 @@ translate schinese narika_broken_b692a20b:
 translate schinese narika_broken_ad6de395:
 
     # "Other customer" "Oy! The big man said I was gonna get a turn too! I'm still waiting!"
-    "其他客户" "哎哟！大佬说我也要轮到我了！我还在等呢！"
+    "其他客户" "哎哟！大哥说该轮到我了！我还在等呢！"
 
 # game/BKchapter3.rpy:9310
 translate schinese narika_broken_b1d2f1a3:
@@ -19306,7 +19306,7 @@ translate schinese narika_broken_b1d2f1a3:
 translate schinese narika_broken_295d128d:
 
     # "Other customer" "I ain't gonna wait forever. Ready or not, here I come!"
-    "其他客户" "我不会永远等待。不管你准备好没，我来了！"
+    "其他客户" "我不会傻等着。不管你准备好了没，我要来了！"
 
 # game/BKchapter3.rpy:9318
 translate schinese narika_broken_ea9d4b03:
@@ -19318,25 +19318,25 @@ translate schinese narika_broken_ea9d4b03:
 translate schinese narika_broken_83282778:
 
     # "Other customer" "Oy, I'm coming in. don't mind me, eheheheh..."
-    "其他客户" "哎呀，我进来了，别介意我，嘿嘿嘿..."
+    "其他客户" "哎呀，我插个队，别介意，嘿嘿嘿..."
 
 # game/BKchapter3.rpy:9322
 translate schinese narika_broken_21fbc787:
 
     # "The second man pushes his cock against her asshole, forcing his way inside."
-    "第二个男人将他的阴茎推向她的肛门，强行进入。"
+    "第二个男人将他的阴茎推向她的菊花，强行插入。"
 
 # game/BKchapter3.rpy:9324
 translate schinese narika_broken_28ca4b60:
 
     # "The first man doesn't let it stop him, however, as he keeps pounding her pussy."
-    "然而，第一个男人并没有让它阻止他，因为他不断地敲打着她的小穴。"
+    "然而，第一个男人并没有阻止他，他不断地敲打着她的小穴。"
 
 # game/BKchapter3.rpy:9326
 translate schinese narika_broken_e0f501f1:
 
     # narika "(This man is a pig just like the other one... But his dick... is so big...)"
-    narika "（这个男人和另一个一样是猪...不过他的鸡巴...太大了...）"
+    narika "（这个男人和另一个一样是头蠢猪...不过他的鸡巴...真是太大了...）"
 
 # game/BKchapter3.rpy:9328
 translate schinese narika_broken_0010e1f8:
@@ -19348,13 +19348,13 @@ translate schinese narika_broken_0010e1f8:
 translate schinese narika_broken_f802549f:
 
     # "The second man's dick is so large that it struggles to enter her asshole."
-    "第二个男人的鸡巴太大了，很难进入她的屁眼。"
+    "第二个男人的鸡巴太大了，很难捅进她的屁眼。"
 
 # game/BKchapter3.rpy:9334
 translate schinese narika_broken_61eeb47e:
 
     # "Finally, it gives way, and Narika is almost torn apart as the large man enters her from behind."
-    "最后，它屈服了，当那个大个子从后面进入鸣香时，她几乎被撕裂了。"
+    "最后，它进来了，当那个大个子从后面进入鸣香时，她的括约肌几乎要被撕裂了。"
 
 # game/BKchapter3.rpy:9338
 translate schinese narika_broken_35a8e867:
@@ -19366,7 +19366,7 @@ translate schinese narika_broken_35a8e867:
 translate schinese narika_broken_cf18ddda:
 
     # "The force of the insertion makes the bells on her nipples ring out loud."
-    "插入的力量使她乳头上的铃铛响亮起来。"
+    "剧烈的晃动使她乳头上的铃铛响了起来。"
 
 # game/BKchapter3.rpy:9348
 translate schinese narika_broken_75fcd35c:
@@ -19384,13 +19384,13 @@ translate schinese narika_broken_0b05db55:
 translate schinese narika_broken_195f485e:
 
     # "The two men start thrusting their cocks inside her, one filling up her pussy while the other is pushing its way inside her ass."
-    "两个男人开始将他们的阴茎插入她的体内，其中一个充满了她的小穴，而另一个则插入了她的肛门。"
+    "两个男人开始将他们的阴茎插入她的体内，其中一个塞满了她的小穴，而另一个则插入了她的肛门。"
 
 # game/BKchapter3.rpy:9356
 translate schinese narika_broken_ec14fe4c:
 
     # "She can't keep up with the pleasure she is feeling, and her moans of apin and pleasure start filling the air."
-    "她无法跟上她所感受到的快乐，空气中开始充满她的呻吟和快乐。"
+    "她无法跟上她所感受到的快乐，空气中充满了她的呻吟和快感。"
 
 # game/BKchapter3.rpy:9358
 translate schinese narika_broken_2d177ed5:
@@ -19402,7 +19402,7 @@ translate schinese narika_broken_2d177ed5:
 translate schinese narika_broken_d04051f9:
 
     # "[cust]" "I'm going to fill you up with semen. You could father my child, you lucky shlut! Eheheh..."
-    "[客户]" "我要用精液填满你。你可以成为我孩子的父亲，你这个幸运的贱人！诶嘿嘿..."
+    "[cust]" "我要用精液填满你。你可以帮我生个孩子，你这个幸运的贱人！诶嘿嘿..."
 
 # game/BKchapter3.rpy:9362
 translate schinese narika_broken_295e997c:
@@ -19414,25 +19414,25 @@ translate schinese narika_broken_295e997c:
 translate schinese narika_broken_7686e9eb:
 
     # "Other customer" "I'm going to make your ass pregnant too, hahahaha!"
-    "其他客户" "我也要让你怀孕，哈哈哈哈！"
+    "其他客户" "也帮我们生一个，哈哈哈哈！"
 
 # game/BKchapter3.rpy:9366
 translate schinese narika_broken_e5a0e355:
 
     # narika "(Ow... They're as dumb as they are ugly...)"
-    narika "（哎呀...他们又蠢又丑...）"
+    narika "（哎...他们又蠢又丑...）"
 
 # game/BKchapter3.rpy:9368
 translate schinese narika_broken_aee31c75:
 
     # narika "(I'm being treated like a broken fucktoy by these disgusting men... And yet...)"
-    narika "（我被这些恶心的男人当作一个坏掉的性玩具......然而......）"
+    narika "（我被这些恶心的男人当成一个坏掉的飞机杯......可是......）"
 
 # game/BKchapter3.rpy:9372
 translate schinese narika_broken_668dfcdd:
 
     # narika "I'm enjoying this... So much!" with vpunch
-    narika "我很享受这个...太棒了！" with vpunch
+    narika "我很享受这种感觉...太棒了！" with vpunch
 
 # game/BKchapter3.rpy:9374
 translate schinese narika_broken_84fcc972:
@@ -19444,13 +19444,13 @@ translate schinese narika_broken_84fcc972:
 translate schinese narika_broken_649edeb6:
 
     # "[cust]" "Yesh!!! Time for the big finissh!" with vpunch
-    "[客户]" "是的！！！是时候大干一场了！" with vpunch
+    "[cust]" "是的！！！是时候大干一场了！" with vpunch
 
 # game/BKchapter3.rpy:9380
 translate schinese narika_broken_b8e0d92e:
 
     # "[cust]" "UUUGH!!!"
-    "[客户]" "呃呃！！！"
+    "[cust]" "呃呃！！！"
 
 # game/BKchapter3.rpy:9382
 translate schinese narika_broken_9adc89f3:
@@ -19474,13 +19474,13 @@ translate schinese narika_broken_518f2648:
 translate schinese narika_broken_0d78aab6:
 
     # "Her orgasm makes her pussy squeeze the dick inside her, making the pig man cum harder."
-    "她的性高潮让她的小穴挤压她体内的鸡巴，让猪人射得更猛烈。"
+    "高潮让她的小穴紧紧裹住她体内的鸡巴，让他们射得更猛烈。"
 
 # game/BKchapter3.rpy:9392
 translate schinese narika_broken_1ab7fa96:
 
     # "The two men's faces are red from the strain, their smelly breath hot on Narika's neck."
-    "两个男人的脸都因紧张而红了，他们恶臭的呼吸喷在鸣香的脖子上，很烫。"
+    "两个男人的脸用力过度而变红，他们恶臭的吐息喷在鸣香的脖子上。"
 
 # game/BKchapter3.rpy:9396
 translate schinese narika_broken_234447c3:
@@ -19498,37 +19498,37 @@ translate schinese narika_broken_eab1b333:
 translate schinese narika_broken_a9548551:
 
     # narika "(It's so warm, so disgusting... I love it...)"
-    narika "（好温暖，好恶心...我喜欢...）"
+    narika "（好热，好恶心...但是我喜欢...）"
 
 # game/BKchapter3.rpy:9402
 translate schinese narika_broken_9154892c:
 
     # "[cust]" "I've been with a lot of whorjes in my day... In fact, I've only been with whorjes."
-    "[客户]" "我这一天和很多妓女在一起...事实上，我只和妓女在一起过。"
+    "[cust]" "我整天都和妓女混在一起...事实上，我只和妓女在一起玩。"
 
 # game/BKchapter3.rpy:9404
 translate schinese narika_broken_6360b6b0:
 
     # "[cust]" "But you're the real shtuff."
-    "[客户]" "但你才是真正的废物。"
+    "[cust]" "但你才是真正的骚货。"
 
 # game/BKchapter3.rpy:9406
 translate schinese narika_broken_5dfda322:
 
     # "Other customer" "Yeah, you're really a natural-born cum dumpster."
-    "其他客户" "是啊，你真是个天生的垃圾箱。"
+    "其他客户" "是啊，你简直是个魅魔。"
 
 # game/BKchapter3.rpy:9408
 translate schinese narika_broken_4887de6f:
 
     # narika "(How rude... But...)"
-    narika "（多么粗鲁...但是...）"
+    narika "（好粗鄙的形容...但是...）"
 
 # game/BKchapter3.rpy:9410
 translate schinese narika_broken_b1adf4fc:
 
     # narika "(Could it be true?)"
-    narika "（这可能是真的吗？）"
+    narika "（这是真的吗？）"
 
 # game/BKchapter3.rpy:9422
 translate schinese narika_broken_6eda461f:
@@ -19540,7 +19540,7 @@ translate schinese narika_broken_6eda461f:
 translate schinese narika_broken_aefd02e3:
 
     # narika "I always do, but... It's nothing like Kunoichi training. This one made me feel... Hmmm."
-    narika "我总是这么做，但是...这和女忍的训练完全不同。这让我感觉...嗯。"
+    narika "我只是像往常一样，但是...这和女忍者的训练完全不同。这让我感觉有点...嗯。"
 
 # game/BKchapter3.rpy:9426
 translate schinese narika_broken_ea31622f:
@@ -19552,25 +19552,25 @@ translate schinese narika_broken_ea31622f:
 translate schinese narika_broken_635eccff:
 
     # narika "It's not?"
-    narika "它不是？"
+    narika "还有别的？"
 
 # game/BKchapter3.rpy:9430
 translate schinese narika_broken_767a2c7e:
 
     # you "You were able to adapt to any situation to please a customer. And to find your own joy in doing so."
-    you "您能够适应任何情况来取悦客户。并从中找到自己的乐趣。"
+    you "要适应任何情况来取悦客户。并从中自娱自乐。"
 
 # game/BKchapter3.rpy:9432
 translate schinese narika_broken_83a303d5:
 
     # you "That's what separates the best whores from the amateurs."
-    you "这就是最好的妓女和业余妓女的区别。"
+    you "这就是专业的妓女和业余妓女的区别。"
 
 # game/BKchapter3.rpy:9434
 translate schinese narika_broken_9866d01d:
 
     # narika "I see it now..."
-    narika "我现在看到了..."
+    narika "我想我明白了..."
 
 # game/BKchapter3.rpy:9436
 translate schinese narika_broken_6f810656:
@@ -19582,13 +19582,13 @@ translate schinese narika_broken_6f810656:
 translate schinese narika_broken_907410da:
 
     # narika "I always wanted to prove my superiority as a fighter. But the truth is, I wasn't really the best, because my heart wasn't into it..."
-    narika "我一直想证明自己作为一名战士的优越性。但事实是，我并不是最好的，因为我的心不喜欢它......"
+    narika "我一直想证明自己是一名强大的斗士。但事实是，我并不是最好的，因为我内心并不喜欢它......"
 
 # game/BKchapter3.rpy:9440
 translate schinese narika_broken_8e28ccf2:
 
     # narika "What I always craved was the admiration of others. But killing and stealing couldn't get me that."
-    narika "我一直渴望得到别人的钦佩。但杀戮和偷窃却无法让我得到这些。"
+    narika "我一直渴望得到别人的赞美。但杀戮和偷窃却无法让我得到这些。"
 
 # game/BKchapter3.rpy:9442
 translate schinese narika_broken_30a84e21:
@@ -19606,43 +19606,43 @@ translate schinese narika_broken_378421b2:
 translate schinese narika_broken_615065ef:
 
     # narika "And enjoy myself in the process."
-    narika "并在这个过程中享受自己。"
+    narika "并在这个过程中得到满足。"
 
 # game/BKchapter3.rpy:9448
 translate schinese narika_broken_a86ce903:
 
     # you "Narika, I am impressed. You're more than ready."
-    you "鸣香，我印象深刻。你已经准备好了。"
+    you "鸣香，你让我刮目相看。你已经有了相当高的觉悟。"
 
 # game/BKchapter3.rpy:9450
 translate schinese narika_broken_2ea16357:
 
     # narika "Of course I am! I shall be the number one whore in all of Xeros!"
-    narika "我当然是！我要成为全Xeros第一妓女！"
+    narika "当然！我要成为克塞洛斯最伟大的妓女！"
 
 # game/BKchapter3.rpy:9452
 translate schinese narika_broken_1f80e50b:
 
     # you "Haha, still competitive, I see! That's the spirit!"
-    you "哈哈，还是有竞争力的，我明白了！这就是精神！"
+    you "哈哈，那你还是有很多竞争对手的，不过我欣赏你！这就是奋斗精神！"
 
 # game/BKchapter3.rpy:9455
 translate schinese narika_broken_6e263539:
 
     # "Narika Shihoudou is now ready to join your brothel."
-    "Narika Shihoudou 现在已准备好加入你的青楼。"
+    "四方堂-鸣香现在可以加入你的青楼了。"
 
 # game/BKchapter3.rpy:9466
 translate schinese c3_narika_arrested_374ba697:
 
     # "Suzume came back to report."
-    "苏梅回来报告。"
+    "云雀回来报告。"
 
 # game/BKchapter3.rpy:9473
 translate schinese c3_narika_arrested_8448417b:
 
     # suzume "Good news; that brat Narika is now in royal custody."
-    suzume "好消息；那小子鸣香现在被皇家拘留。"
+    suzume "好消息；鸣香现在被王室的人带走了。"
 
 # game/BKchapter3.rpy:9475
 translate schinese c3_narika_arrested_cebbe940:
@@ -19654,55 +19654,55 @@ translate schinese c3_narika_arrested_cebbe940:
 translate schinese c3_narika_arrested_a0d7ca77:
 
     # suzume "Her interrogators whisked her away for questioning. From the look of things, I don't think we're likely to hear from her again."
-    suzume "审讯她的人把她带走审问。从目前的情况来看，我认为我们不太可能再收到她的消息了。"
+    suzume "审讯她的人把她带走审问。从目前的情况来看，我认为我们不太可能再听到她的消息了。"
 
 # game/BKchapter3.rpy:9479
 translate schinese c3_narika_arrested_cdb988c2:
 
     # suzume "The Princess was more worried about the Mages' Guild than that Kunoichi girl, though. I'm not sure Narika was our mark."
-    suzume "不过比起女忍少女来说，公主更担心的是魔法师公会。我不确定鸣香是我们的目标。"
+    suzume "不过比起美少女忍者来说，公主更担心的是法师公会。我不确定鸣香是不是我们的目标。"
 
 # game/BKchapter3.rpy:9481
 translate schinese c3_narika_arrested_1a43f487:
 
     # you "Oh well. At least we got a nice reward."
-    you "那好吧。至少我们得到了不错的回报。"
+    you "好吧。至少我们得到了不菲的报酬。"
 
 # game/BKchapter3.rpy:9489
 translate schinese c3_narika_arrested_6806383b:
 
     # "You have received a reward for capturing Narika Shihoudou."
-    "您因捕获狮王堂鸣香而获得奖励。"
+    "您因捕获了四方堂鸣香而获得奖励。"
 
 # game/BKchapter3.rpy:9509
 translate schinese c3_haruka_guards_b44954bf:
 
     # you "So... How do we go about this?"
-    you "那么...我们该怎么做呢？"
+    you "那么...我们接下来该怎么做呢？"
 
 # game/BKchapter3.rpy:9511
 translate schinese c3_haruka_guards_2e9f7bf3:
 
     # suzume "We could ask Kenshin to introduce us to prison's brass..."
-    suzume "我们可以请剑心给我们介绍一下监狱的高层..."
+    suzume "我们可以请剑心给我们介绍一下监狱的管理人员..."
 
 # game/BKchapter3.rpy:9513
 translate schinese c3_haruka_guards_69d85f11:
 
     # you "But what if she's in league with the abducters?"
-    you "但如果她与绑架者勾结怎么办？"
+    you "但如果她与绑架犯勾结怎么办？"
 
 # game/BKchapter3.rpy:9515
 translate schinese c3_haruka_guards_704daf50:
 
     # suzume "Then we don't tell her everything."
-    suzume "然后我们就不告诉她一切。"
+    suzume "那我们就保持沉默。"
 
 # game/BKchapter3.rpy:9517
 translate schinese c3_haruka_guards_4c0f24ff:
 
     # suzume "Or... We could just wing it. Talk our way inside the Prison."
-    suzume "或者...我们可以即兴发挥。谈谈我们在监狱里的情况。"
+    suzume "或者...我们可以即兴发挥。谈谈我们在监狱里打听到的情况。"
 
 # game/BKchapter3.rpy:9519
 translate schinese c3_haruka_guards_c663ca23:
@@ -19714,7 +19714,7 @@ translate schinese c3_haruka_guards_c663ca23:
 translate schinese c3_haruka_guards_75d5892a:
 
     # suzume "Come on! It'll be fun."
-    suzume "快点！会很有趣的。"
+    suzume "别这么说嘛！会很有趣的。"
 
 # game/BKchapter3.rpy:9523
 translate schinese c3_haruka_guards_c235a220:
@@ -19726,25 +19726,25 @@ translate schinese c3_haruka_guards_c235a220:
 translate schinese c3_haruka_guards_4357afda:
 
     # you "All right, let's visit Kenshin. As the Captain of the Knights, she's our best bet."
-    you "好吧，我们去拜访一下剑心吧。作为骑士团的队长，她是我们最好的选择。"
+    you "好吧，我们去拜访一下剑心吧。作为骑士团的团长，她是不二人选。"
 
 # game/BKchapter3.rpy:9538
 translate schinese c3_haruka_guards_6e73eab4:
 
     # kenshin "You want to do {i}what{/i}?"
-    kenshin "您想做什么？"
+    kenshin "你想做什么？"
 
 # game/BKchapter3.rpy:9540
 translate schinese c3_haruka_guards_3ca4c9ea:
 
     # you "Inspect the prison. Talk to the knights in charge. I have information of interest to them."
-    you "检查监狱。与负责的骑士交谈。我有他们感兴趣的信息。"
+    you "检查监狱。与负责看守的骑士交谈。我有他们感兴趣的信息。"
 
 # game/BKchapter3.rpy:9542
 translate schinese c3_haruka_guards_bbecd69c:
 
     # kenshin "Then why don't you tell me that information immediately then? I can talk to them."
-    kenshin "那你为什么不立即告诉我这个信息呢？我可以和他们交谈。"
+    kenshin "那你为什么不立即告诉我这个信息呢？我可以和他们谈。"
 
 # game/BKchapter3.rpy:9544
 translate schinese c3_haruka_guards_73ff2084:
@@ -19756,13 +19756,13 @@ translate schinese c3_haruka_guards_73ff2084:
 translate schinese c3_haruka_guards_67da7017:
 
     # kenshin annoyed "Again with that assignment! I'm the Princess's most loyal servant! There's no need to hide anything from me!" with vpunch
-    kenshin annoyed "再次执行该任务！我是公主最忠诚的仆人！没有必要对我隐瞒什么！" with vpunch
+    kenshin annoyed "又是该死的任务！我才是公主最忠诚的仆人！她没有必要对我隐瞒什么！" with vpunch
 
 # game/BKchapter3.rpy:9548
 translate schinese c3_haruka_guards_993d603f:
 
     # "Kenshin's eyes spark with fury."
-    "剑心的眼睛里闪烁着愤怒的光芒。"
+    "剑心的眼睛里闪烁着愤怒的怒火。"
 
 # game/BKchapter3.rpy:9550
 translate schinese c3_haruka_guards_3aa18a1d:
@@ -19774,13 +19774,13 @@ translate schinese c3_haruka_guards_3aa18a1d:
 translate schinese c3_haruka_guards_e50afecb:
 
     # kenshin "Grrr..."
-    kenshin "咕噜..."
+    kenshin "咬牙..."
 
 # game/BKchapter3.rpy:9554
 translate schinese c3_haruka_guards_41d54eca:
 
     # you "So, will you help me or not?"
-    you "那么，你会帮我还是不帮我？"
+    you "那么，你到底帮不帮我？"
 
 # game/BKchapter3.rpy:9556
 translate schinese c3_haruka_guards_83e084e4:
@@ -19792,49 +19792,49 @@ translate schinese c3_haruka_guards_83e084e4:
 translate schinese c3_haruka_guards_0e8198e6:
 
     # kenshin normal "Fine, go talk to them, whatever. They'll give me a report afterwards anyway."
-    kenshin normal "好吧，去跟他们谈谈，无论如何。无论如何，他们之后会给我一份报告。"
+    kenshin normal "好吧，去跟他们谈谈，无论如何。反正，他们之后会给我一份报告。"
 
 # game/BKchapter3.rpy:9562
 translate schinese c3_haruka_guards_9b98686a:
 
     # you "Thank you. I assume you will give me a safe-conduct then?"
-    you "谢谢。我想你会给我安全通行证吧？"
+    you "谢谢。我想你会给我一份推荐信吧？"
 
 # game/BKchapter3.rpy:9564
 translate schinese c3_haruka_guards_e4ee662b:
 
     # kenshin "Hmph, see that with my scribe. But one more thing, [MC.name]..."
-    kenshin "哼，和我的抄写员一起看看吧。但还有一件事，[MC.name]..."
+    kenshin "哼，去找我的文员要吧。但还有一件事，[MC.name]..."
 
 # game/BKchapter3.rpy:9566
 translate schinese c3_haruka_guards_b9f03b8c:
 
     # you "Yes?"
-    you "是的？"
+    you "什么事？"
 
 # game/BKchapter3.rpy:9568
 translate schinese c3_haruka_guards_3dcef296:
 
     # kenshin "You are not allowed to enter the maximum security area of the Prison, got it?"
-    kenshin "你不可以进入监狱的最高安全区域，明白吗？"
+    kenshin "你不可以进入监狱的禁区，明白吗？"
 
 # game/BKchapter3.rpy:9570
 translate schinese c3_haruka_guards_4a693d16:
 
     # you "Why not?"
-    you "为什么不呢？"
+    you "为什么不可以呢？"
 
 # game/BKchapter3.rpy:9572
 translate schinese c3_haruka_guards_ba4da0ad:
 
     # kenshin "{i}Because{/i} we have there the most dangerous criminals in all of Xeros, and I don't want you to go around and stir trouble!"
-    kenshin "{i}因为{/i}我们这里有全 Xeros 中最危险的罪犯，我不想让你到处惹事生非！"
+    kenshin "{i}因为{/i}那里关押有全克塞洛斯最危险的罪犯，我不想让你到处惹事生非！"
 
 # game/BKchapter3.rpy:9574
 translate schinese c3_haruka_guards_94666dd1:
 
     # you "Aw, you don't me to get hurt... That melts my heart a little..."
-    you "噢，你不让我受伤...这让我的心有点融化..."
+    you "噢，你舍不得让我受伤...这让我受宠若惊..."
 
 # game/BKchapter3.rpy:9576
 translate schinese c3_haruka_guards_16472569:
@@ -19852,7 +19852,7 @@ translate schinese c3_haruka_guards_9dceb864:
 translate schinese c3_haruka_guards_88192a87:
 
     # kenshin annoyed "GO AWAY! NOW! *mad*" with vpunch
-    kenshin annoyed "离开！现在！ *疯狂的*" with vpunch
+    kenshin annoyed "离开！现在！ *发怒*" with vpunch
 
 # game/BKchapter3.rpy:9584
 translate schinese c3_haruka_guards_96c4d05e:
@@ -19864,31 +19864,31 @@ translate schinese c3_haruka_guards_96c4d05e:
 translate schinese c3_haruka_guards_f5f55841:
 
     # scribe "Here is your letter of conduct. Show it to the Prison Warden and he'll know you came with orders from Lady Kenshin."
-    scribe "这是您的行为信函。把它拿给监狱长看，他就会知道你是奉剑心夫人的命令而来的。"
+    scribe "这是您的推荐信。把它拿给监狱长看，他就会知道你是奉剑心团长的命令而来的。"
 
 # game/BKchapter3.rpy:9595
 translate schinese c3_haruka_guards_3430eb0e:
 
     # "Joined by Suzume, you head back to the lower city to visit the Prison."
-    "在铃目的陪伴下，你回到下城区参观监狱。"
+    "在云雀的陪伴下，你回到下城区去参观监狱。"
 
 # game/BKchapter3.rpy:9599
 translate schinese c3_haruka_guards_222be20f:
 
     # knight "These are not visiting hours, citizen. State your business or leave."
-    knight "公民，现在不是探视时间。说明你的事或离开。"
+    knight "公民，现在不是探视时间。说明你的来意或离开。"
 
 # game/BKchapter3.rpy:9601
 translate schinese c3_haruka_guards_f98b7945:
 
     # you "Here, we have a letter of conduct from the Lady Commander."
-    you "这里，我们有一封来自女指挥官的行为信。"
+    you "你看，我们有一封来自女团长的推荐信。"
 
 # game/BKchapter3.rpy:9603
 translate schinese c3_haruka_guards_544d47af:
 
     # knight "Let me see it... Hmm... Everything looks to be in order."
-    knight "让我看看...嗯...一切看起来都很顺利。"
+    knight "让我看看...嗯...一切看起来都很正常。"
 
 # game/BKchapter3.rpy:9605
 translate schinese c3_haruka_guards_7d67d2ab:
@@ -19906,13 +19906,13 @@ translate schinese c3_haruka_guards_2791bc30:
 translate schinese c3_haruka_guards_e0baeafb:
 
     # warden "Hmm, yes? Who might you be?"
-    warden "嗯，是吗？你可能是谁？"
+    warden "嗯，你是？你是谁？"
 
 # game/BKchapter3.rpy:9614
 translate schinese c3_haruka_guards_fc0ac366:
 
     # you "I'm [MC.name], Sir. I work with Lady Kenshin on a royal investigation. And this is my... Bodyguard, Suzume."
-    you "我是[MC.name]，先生。我与剑心夫人一起进行王室调查。这是我的...保镖，铃目。"
+    you "我是[MC.name]，先生。我与剑心团长一起负责王室的调查任务。这是我的...保镖，云雀。"
 
 # game/BKchapter3.rpy:9616
 translate schinese c3_haruka_guards_099cd7c8:
@@ -19924,13 +19924,13 @@ translate schinese c3_haruka_guards_099cd7c8:
 translate schinese c3_haruka_guards_cf45a533:
 
     # "The Warden takes one bored look at your papers, and nods towards a couple of chairs by his desk."
-    "典狱长无聊地看了一眼你的文件，朝办公桌旁的几把椅子点了点头。"
+    "典狱长无聊地看了一眼你的文件，朝办公桌旁坐着的几个人点了点头。"
 
 # game/BKchapter3.rpy:9620
 translate schinese c3_haruka_guards_9cf1d9ea:
 
     # you "Sir, I have grave news. The Prison is in danger of a security breach, and... Sir?"
-    you "先生，我有一个重大消息。监狱面临安全漏洞的危险，而且...先生？"
+    you "先生，我有一个重大情报。监狱有一个严重的安全漏洞，而且...先生？"
 
 # game/BKchapter3.rpy:9622
 translate schinese c3_haruka_guards_b3011a4d:
@@ -19942,7 +19942,7 @@ translate schinese c3_haruka_guards_b3011a4d:
 translate schinese c3_haruka_guards_1289fe45:
 
     # warden "Hmm Hmm... *whistle*"
-    warden "嗯嗯...*口哨*"
+    warden "哼哼...*口哨*"
 
 # game/BKchapter3.rpy:9626
 translate schinese c3_haruka_guards_7ec41a5c:
@@ -19960,31 +19960,31 @@ translate schinese c3_haruka_guards_ea74bb6e:
 translate schinese c3_haruka_guards_72dffe85:
 
     # warden "Oh, of course they are. *sigh*"
-    warden "哦，当然是。 *叹*"
+    warden "哦，当然了。 *叹*"
 
 # game/BKchapter3.rpy:9632
 translate schinese c3_haruka_guards_aef6d86e:
 
     # warden "Come on, my boy, not a day goes by without a foolish wench trying to break her lover out of the prison yard by throwing herself at a guard..."
-    warden "来吧，我的孩子，每天都有一个愚蠢的姑娘试图通过向警卫投掷自己来将她的情人从监狱院子里救出来......"
+    warden "淡定，我的孩子，每天都会有一个愚蠢的姑娘试图通过向警卫献身来将她的情人从监狱里救出来......"
 
 # game/BKchapter3.rpy:9634
 translate schinese c3_haruka_guards_c2ce92a2:
 
     # warden "And we have riots every other week... I have to hang a dozen inmates to restore order, every time."
-    warden "我们每隔一周就会发生骚乱...每次我都必须绞死十几个囚犯才能恢复秩序。"
+    warden "每隔一周监狱里就会发生骚乱...每次我都必须绞死十几个囚犯才能恢复秩序。"
 
 # game/BKchapter3.rpy:9636
 translate schinese c3_haruka_guards_dddfea8c:
 
     # warden "None of this is worth my time, or, might I say, Lady Kenshin's... No one ever escaped the Xotar Prison."
-    warden "这些都不值得我花时间，或者，我可以说，肯辛夫人的...没有人能逃出索塔尔监狱。"
+    warden "这些都不值得我花时间，或者说，剑心团长的时间...没有人能逃出索塔尔监狱。"
 
 # game/BKchapter3.rpy:9638
 translate schinese c3_haruka_guards_be4fa93f:
 
     # suzume "But it's not just any threat, though... It's a highly trained killer!"
-    suzume "但这不仅仅是任何威胁...它是一个训练有素的杀手！"
+    suzume "但这不次不是普通人...是一个训练有素的杀手！"
 
 # game/BKchapter3.rpy:9640
 translate schinese c3_haruka_guards_84a2fea4:
@@ -20008,7 +20008,7 @@ translate schinese c3_haruka_guards_ae13782c:
 translate schinese c3_haruka_guards_6eb64174:
 
     # warden "The maximum security area? Well, you should have mentioned it immediately, my boy."
-    warden "最大安全区域？好吧，你应该立即提到它，我的孩子。"
+    warden "底层禁区？好吧，你一开始就该提到它，年轻人。"
 
 # game/BKchapter3.rpy:9648
 translate schinese c3_haruka_guards_8b2675fe:
@@ -20020,7 +20020,7 @@ translate schinese c3_haruka_guards_8b2675fe:
 translate schinese c3_haruka_guards_19486e4b:
 
     # warden "As it happens, under the security arrangement mandated by the King, I am only in charge of the upper levels of the Prison."
-    warden "碰巧的是，根据国王授权的安全安排，我只负责监狱的上层。"
+    warden "很不凑巧，根据国王授权的岗位职责，我只负责管理监狱的上层区域。"
 
 # game/BKchapter3.rpy:9652
 translate schinese c3_haruka_guards_2cb9907b:
@@ -20032,25 +20032,25 @@ translate schinese c3_haruka_guards_2cb9907b:
 translate schinese c3_haruka_guards_364b544a:
 
     # warden "Well, no. We changed that recently. But it suits me fine."
-    warden "嗯，不。我们最近改变了这一点。但它很适合我。"
+    warden "嗯，不。我们最近改变了工作内容。但它很适合我。"
 
 # game/BKchapter3.rpy:9656
 translate schinese c3_haruka_guards_6756c5c9:
 
     # warden "When I bought this office, I didn't really want to handle the wild beasts we keep downstairs anyway."
-    warden "当我买下这间办公室时，我其实并不想处理我们楼下养的野兽。"
+    warden "当我买下这间办公室时，我其实并不想处理那些楼下圈养的野兽。"
 
 # game/BKchapter3.rpy:9658
 translate schinese c3_haruka_guards_89513e8a:
 
     # suzume "You {i}bought{/i} this office?"
-    suzume "您{i}买了{/i}这间办公室？"
+    suzume "您{i}买下了{/i}这间办公室？"
 
 # game/BKchapter3.rpy:9660
 translate schinese c3_haruka_guards_481e92aa:
 
     # warden "Why, sure, how else do you think people get commissioned to high office? On merit? Bwahahaha!"
-    warden "当然，除此之外，你认为人们如何被任命担任高级职位呢？论功绩？哇哈哈！"
+    warden "当然，除此之外，你以为人们如何被任命担任高级职位呢？靠功绩？哇哈哈！"
 
 # game/BKchapter3.rpy:9662
 translate schinese c3_haruka_guards_e8f146e2:
@@ -20710,7 +20710,7 @@ translate schinese c3_meet_hound_knights_44acbb9d:
 translate schinese c3_meet_hound_knights_6a58a2a4:
 
     # "The other knight grabs you and Suzume, and shoves you both in the corridor."
-    "另一个骑士抓住你和铃目，把你们俩推到走廊里。"
+    "另一个骑士抓住你和云雀，把你们俩推到走廊里。"
 
 # game/BKchapter3.rpy:9954
 translate schinese c3_meet_hound_knights_350e3857:
@@ -20758,7 +20758,7 @@ translate schinese c3_haruka_guards_success_b6afcf13:
 translate schinese c3_haruka_guards_success_11391a70:
 
     # "He nods towards Suzume."
-    "他向苏梅点点头。"
+    "他向云雀点点头。"
 
 # game/BKchapter3.rpy:9983
 translate schinese c3_haruka_guards_success_d9512387:
@@ -20770,7 +20770,7 @@ translate schinese c3_haruka_guards_success_d9512387:
 translate schinese c3_haruka_guards_success_c042ca97:
 
     # "Disappointed, Suzume sits back down on her chair."
-    "苏梅失望地坐回椅子上。"
+    "云雀失望地坐回椅子上。"
 
 # game/BKchapter3.rpy:9989
 translate schinese c3_haruka_guards_success_7df74e7f:
@@ -21190,7 +21190,7 @@ translate schinese c3_haruka_guards_success_6472f08f:
 translate schinese c3_haruka_guards_success_24d9a3f1:
 
     # "Going back to the office, you meet back with Suzume, who raises an eyebrow, wondering what took you so long."
-    "回到办公室，你遇到了铃目，他扬起一边眉毛，想知道你怎么花了这么长时间。"
+    "回到办公室，你遇到了云雀，他扬起一边眉毛，想知道你怎么花了这么长时间。"
 
 # game/BKchapter3.rpy:10171
 translate schinese c3_haruka_guards_success_c06f9992:
@@ -22024,7 +22024,7 @@ translate schinese c3_capture_haruka_68ce33bb:
 translate schinese c3_capture_haruka_f54d7e5e:
 
     # "You give a knowing look to Suzume."
-    "你给了苏梅一个会意的眼神。"
+    "你给了云雀一个会意的眼神。"
 
 # game/BKchapter3.rpy:10586
 translate schinese c3_capture_haruka_28704f54:
@@ -22162,7 +22162,7 @@ translate schinese c3_haruka_negotiate_1e4995f0:
 translate schinese c3_haruka_negotiate_825d9f6a:
 
     # you "Okay. But we'll do things my way. And Suzume is coming with us."
-    you "好的。但我们会按照我的方式做事。苏苏梅也跟着我们一起去。"
+    you "好的。但我们会按照我的方式做事。苏云雀也跟着我们一起去。"
 
 # game/BKchapter3.rpy:10655
 translate schinese c3_haruka_negotiate_776a8b40:
@@ -22492,7 +22492,7 @@ translate schinese c3_haruka_sewers_4777262b:
 translate schinese c3_haruka_sewers_c775fd19:
 
     # "You and Suzume give her a puzzled look."
-    "你和铃目一脸疑惑地看着她。"
+    "你和云雀一脸疑惑地看着她。"
 
 # game/BKchapter3.rpy:10827
 translate schinese c3_haruka_sewers_c3a2c14c:
@@ -22612,7 +22612,7 @@ translate schinese c3_haruka_sewers_3f5d490f:
 translate schinese c3_haruka_sewers_26a4f9ed:
 
     # "Suzume grins, and whispers her plan in your ear."
-    "苏梅微笑着，在你耳边低声讲述她的计划。"
+    "云雀微笑着，在你耳边低声讲述她的计划。"
 
 # game/BKchapter3.rpy:10873
 translate schinese c3_haruka_sewers_048d8266:
@@ -22660,7 +22660,7 @@ translate schinese c3_haruka_sewers_2495b7e6:
 translate schinese c3_haruka_sewers_9725c1d6:
 
     # you "Suzume, hide the body and meet us at the rendezvous point."
-    you "铃目，把尸体藏起来，到集合点来接我们。"
+    you "云雀，把尸体藏起来，到集合点来接我们。"
 
 # game/BKchapter3.rpy:10894
 translate schinese c3_haruka_sewers_4a0f1cab:
@@ -23626,7 +23626,7 @@ translate schinese c3_haruka_rescue_e3161885:
 translate schinese c3_free_subaru_5155ea07:
 
     # "You manage to make your way back to another sewer exit, where you previously set up a rendezvous with Suzume."
-    "你设法回到另一个下水道出口，你之前在那里与铃目约定了会面。"
+    "你设法回到另一个下水道出口，你之前在那里与云雀约定了会面。"
 
 # game/BKchapter3.rpy:11506
 translate schinese c3_free_subaru_9bf5868d:
@@ -23704,7 +23704,7 @@ translate schinese c3_free_subaru_9263e56d:
 translate schinese c3_free_subaru_33a53d8f:
 
     # you "But someone has been taking out important officials. They have links to a Kunoichi clan. Surely you know more?"
-    you "但有人一直在除掉重要官员。他们与女野市氏族有联系。你肯定知道更多吧？"
+    you "但有人一直在除掉重要官员。他们与女忍者氏族有联系。你肯定知道更多吧？"
 
 # game/BKchapter3.rpy:11539
 translate schinese c3_free_subaru_e301ba40:
@@ -23836,7 +23836,7 @@ translate schinese c3_haruka_fondle_d3511dc6:
 translate schinese c3_haruka_fondle_db887f70:
 
     # you "(It's like Suzume said, we need to get the guard's attention away from that door.)"
-    you "（就像铃目所说，我们需要让守卫的注意力从那扇门上移开。）"
+    you "（就像云雀所说，我们需要让守卫的注意力从那扇门上移开。）"
 
 # game/BKchapter3.rpy:11609
 translate schinese c3_haruka_fondle_05bb8dcd:
@@ -24232,7 +24232,7 @@ translate schinese c3_haruka_fondle_b06c5102:
 translate schinese c3_haruka_trap_e6bff286:
 
     # "You and Suzume wait until nightfall before meeting with Haruka."
-    "你和铃目等到夜幕降临才与遥见面。"
+    "你和云雀等到夜幕降临才与遥见面。"
 
 # game/BKchapter3.rpy:11788
 translate schinese c3_haruka_trap_da84eae5:
@@ -25120,7 +25120,7 @@ translate schinese c3_haruka_demon_subaru_c33ffe9a:
 translate schinese c3_haruka_arrested_374ba697:
 
     # "Suzume came back to report."
-    "苏梅回来报告。"
+    "云雀回来报告。"
 
 # game/BKchapter3.rpy:12223
 translate schinese c3_haruka_arrested_a3e648a2:
@@ -27238,19 +27238,19 @@ translate schinese haruka_farm_d3ceeb4f:
 translate schinese haruka_broken_391eb897:
 
     # gizel "Good news, [MC.name]! All my hard work on Haruka has paid off."
-    gizel "好消息，[MC.name]！我对 Haruka 的所有努力都得到了回报。"
+    gizel "好消息，[MC.name]！我对遥的所有管教都得到了回报。"
 
 # game/BKchapter3.rpy:13392
 translate schinese haruka_broken_858aedb5:
 
     # haruka blush "Hello, Master [MC.name]."
-    haruka blush "你好，大师[MC.name]。"
+    haruka blush "你好，[MC.name]。"
 
 # game/BKchapter3.rpy:13394
 translate schinese haruka_broken_a744318f:
 
     # gizel smirk "Tell him what you told me."
-    gizel smirk "告诉他你告诉我的话。"
+    gizel smirk "告诉他你对我说的话。"
 
 # game/BKchapter3.rpy:13396
 translate schinese haruka_broken_db20bee9:
@@ -27268,7 +27268,7 @@ translate schinese haruka_broken_67b4092f:
 translate schinese haruka_broken_dd6ccb88:
 
     # haruka sad "Yes. Master, I..."
-    haruka sad "是的。师父，我..."
+    haruka sad "是的。主人，我..."
 
 # game/BKchapter3.rpy:13402
 translate schinese haruka_broken_653de92c:
@@ -27292,13 +27292,13 @@ translate schinese haruka_broken_9a32a31a:
 translate schinese haruka_broken_18bbe6b2:
 
     # haruka "I don't even know if I'm worthy of being a whore..."
-    haruka "我什至不知道我是否值得当妓女......"
+    haruka "我甚至不知道我是否可以做好一个妓女......"
 
 # game/BKchapter3.rpy:13410
 translate schinese haruka_broken_bf228e7b:
 
     # haruka "But if I need to use my weak body to please others, to atone for my sins, it is a fate I will accept."
-    haruka "但如果我需要用我弱小的身体来取悦别人，来赎罪，那是我接受的命运。"
+    haruka "但如果我需要用我弱小的身体来取悦别人，来赎罪，这就是我的命运。"
 
 # game/BKchapter3.rpy:13412
 translate schinese haruka_broken_89f0389e:
@@ -27316,7 +27316,7 @@ translate schinese haruka_broken_33b8c4cf:
 translate schinese haruka_broken_c65076da:
 
     # gizel normal "Now that we took care of the small matter of breaking the girl's pride, let's think about the next step. [MC.name]?"
-    gizel normal "既然我们已经解决了破坏女孩自尊心的小事，那么我们就考虑下一步吧。 [主持人姓名]？"
+    gizel normal "既然我们已经解决了女孩自尊心的小事，那么我们就考虑下一步吧。 [MC.name]？"
 
 # game/BKchapter3.rpy:13419
 translate schinese haruka_broken_11fdb519:
@@ -27328,19 +27328,19 @@ translate schinese haruka_broken_11fdb519:
 translate schinese haruka_broken_1b01c07f:
 
     # you "Well, I was waiting for that day! Bring her to the brothel, I will personally make sure she's ready."
-    you "嗯，我一直在等待这一天！带她去青楼，我会亲自确保她准备好。"
+    you "嗯，我一直在等待这一天！带她去青楼，我会亲自确保她合格了。"
 
 # game/BKchapter3.rpy:13431
 translate schinese haruka_broken_3700d6ce:
 
     # haruka blush "M-Master... What do you want me to do..."
-    haruka blush "师父...你要我做什么..."
+    haruka blush "主人...需要我做什么..."
 
 # game/BKchapter3.rpy:13433
 translate schinese haruka_broken_44f64b38:
 
     # you "I want you to treat me like a VIP customer. Show me what you have learned."
-    you "我希望你像对待 VIP 客户一样对待我。告诉我你学到了什么。"
+    you "我希望你像对待 VIP 客户一样对待我。让我看看你都学到了什么。"
 
 # game/BKchapter3.rpy:13435
 translate schinese haruka_broken_fe3cba34:
@@ -27352,49 +27352,49 @@ translate schinese haruka_broken_fe3cba34:
 translate schinese haruka_broken_c0198e3f:
 
     # you "Take the lead. I will be evaluating your performance."
-    you "率先。我会评估你的表现。"
+    you "来吧。我会评估你的表现。"
 
 # game/BKchapter3.rpy:13439
 translate schinese haruka_broken_0fb2ac38:
 
     # haruka "Yes Master..."
-    haruka "是的师父..."
+    haruka "是的主人..."
 
 # game/BKchapter3.rpy:13444
 translate schinese haruka_broken_7dd685c3:
 
     # haruka "H-Hello Sir, welcome to [brothel.name]."
-    haruka "H-您好先生，欢迎来到[brothel.name]。"
+    haruka "您-您好先生，欢迎来到[brothel.name]。"
 
 # game/BKchapter3.rpy:13446
 translate schinese haruka_broken_57a859d9:
 
     # haruka "My name is Haruka, and I am here to... Serve all your needs today..."
-    haruka "我的名字是 Haruka，我来这里是为了...满足您今天的所有需求..."
+    haruka "我的名字是遥，我来这里是为了...满足您今天的所有需求..."
 
 # game/BKchapter3.rpy:13450
 translate schinese haruka_broken_c3b6ebe3:
 
     # haruka blush "I hope... Mmh... My filthy body can make you happy... Hmmm..."
-    haruka blush "我希望...嗯...我肮脏的身体能让你幸福...嗯..."
+    haruka blush "希望...嗯...我下流的身体能让你满意...嗯..."
 
 # game/BKchapter3.rpy:13452
 translate schinese haruka_broken_1bf98645:
 
     # you "Don't mumble. Some customers enjoy a shy girl, but you are expected to take the lead, remember?"
-    you "别嘟囔。有些顾客喜欢害羞的女孩，但你应该带头，还记得吗？"
+    you "别支支吾吾的。有些顾客喜欢害羞的女孩，但你应该起个好头，还记得吗？"
 
 # game/BKchapter3.rpy:13454
 translate schinese haruka_broken_3560703e:
 
     # haruka "Ahem, yes Master."
-    haruka "咳咳，是的，师父。"
+    haruka "咳咳，是的，主人。"
 
 # game/BKchapter3.rpy:13456
 translate schinese haruka_broken_6806f276:
 
     # haruka "Would you like to touch my breasts? I am told they're the best part of my body."
-    haruka "你想摸摸我的胸部吗？有人告诉我它们是我身体最好的部分。"
+    haruka "你想摸摸我的胸部吗？有人告诉我它们是我身体最诱人的部分。"
 
 # game/BKchapter3.rpy:13462
 translate schinese haruka_broken_51d24df2:
@@ -27406,43 +27406,43 @@ translate schinese haruka_broken_51d24df2:
 translate schinese haruka_broken_9dcf46ce:
 
     # you "Not bad, Haruka. But look at me, down there. Can't you see I need something?"
-    you "不错啊，遥。但看看下面的我。你没看到我需要一些东西吗？"
+    you "不错啊，遥。但看看我。你没看发现我需要一些服务吗？"
 
 # game/BKchapter3.rpy:13466
 translate schinese haruka_broken_e2318edf:
 
     # haruka "Oh! Oh my, Sir, you are already rock-hard...I-It makes me happy..."
-    haruka "哦！天哪，先生，你已经硬如磐石了...我、这让我很高兴..."
+    haruka "哦！天哪，先生，你已经硬得不行了...我、这让我受宠若惊..."
 
 # game/BKchapter3.rpy:13468
 translate schinese haruka_broken_b716d51d:
 
     # haruka "Here, would you like to rub your penis inside my body suit?"
-    haruka "在这里，你想在我的紧身衣里摩擦你的阴茎吗？"
+    haruka "来，你想在我的紧身衣里摩擦你的阴茎吗？"
 
 # game/BKchapter3.rpy:13472
 translate schinese haruka_broken_a2988528:
 
     # you "Hmmm... That's kinky..."
-    you "嗯...这太变态了..."
+    you "嗯...这确实很刺激..."
 
 # game/BKchapter3.rpy:13474
 translate schinese haruka_broken_de6f7fc8:
 
     # haruka "Something smells good... I think you're leaking pre-cum already."
-    haruka "有些东西闻起来很香...我想你已经在漏精液了。"
+    haruka "好香的味道...我想你的肉棒已经吐出一些精液了。"
 
 # game/BKchapter3.rpy:13478
 translate schinese haruka_broken_9e44ff3b:
 
     # haruka "It's making me wet... Haaa..."
-    haruka "弄得我湿透了...哈哈哈..."
+    haruka "光是闻到味道我就已经湿透了...哈哈哈..."
 
 # game/BKchapter3.rpy:13480
 translate schinese haruka_broken_251e9910:
 
     # you "That's nice, Haruka. Keep the dirty talk coming."
-    you "太好了，遥。继续说脏话。"
+    you "太好了，遥。继续说下流的话。"
 
 # game/BKchapter3.rpy:13484
 translate schinese haruka_broken_5b00a679:
@@ -27460,13 +27460,13 @@ translate schinese haruka_broken_152f2c84:
 translate schinese haruka_broken_fe54857b:
 
     # haruka "My dirty pussy is all wet now... I need s-something... Inside me..."
-    haruka "我肮脏的小穴现在全湿了...我需要一些东西...在我体内..."
+    haruka "我淫贱的小穴现在湿透了...我需要一些东西...填满它..."
 
 # game/BKchapter3.rpy:13490
 translate schinese haruka_broken_5a6b4202:
 
     # you "Then what are you waiting for? Take matters into your own hands!"
-    you "那你还等什么？把事情掌握在自己手中！"
+    you "那你还等什么？自己动手！"
 
 # game/BKchapter3.rpy:13494
 translate schinese haruka_broken_5576cdc3:
@@ -27478,13 +27478,13 @@ translate schinese haruka_broken_5576cdc3:
 translate schinese haruka_broken_84ff5b00:
 
     # "Guiding your dick with her soft hand, Haruka pushes it inside her."
-    "遥用柔软的手引导你的阴茎，将它推入体内。"
+    "遥用温柔的动作引导你的肉棒，将它推入体内。"
 
 # game/BKchapter3.rpy:13498
 translate schinese haruka_broken_eabed3f7:
 
     # "She is already completely wet, and her pussy engulfs your shaft easily."
-    "她已经完全湿透了，她的小穴很容易吞没你的阴茎。"
+    "她已经完全湿透了，她的小穴可以整根吞没你的肉棒。"
 
 # game/BKchapter3.rpy:13502
 translate schinese haruka_broken_5470f7a2:
@@ -27496,13 +27496,13 @@ translate schinese haruka_broken_5470f7a2:
 translate schinese haruka_broken_a78c11e5:
 
     # haruka "Oh, Mister, you're so big... I am so lucky to serve you..."
-    haruka "哦，先生，你这么大了...我很幸运能为你服务..."
+    haruka "哦，先生，你的肉棒都这么硬了...我很高兴能为你服务..."
 
 # game/BKchapter3.rpy:13506
 translate schinese haruka_broken_1e01b649:
 
     # "She starts grinding her hips, pleasantly stimulating your dick."
-    "她开始磨她的臀部，愉快地刺激你的鸡巴。"
+    "她开始厮磨她的美缝，愉快地摩擦着你的鸡巴。"
 
 # game/BKchapter3.rpy:13508
 translate schinese haruka_broken_1f372030:
@@ -27514,25 +27514,25 @@ translate schinese haruka_broken_1f372030:
 translate schinese haruka_broken_56e957dc:
 
     # haruka "Y-Yes, I do... I like a huge dick stretching my pussy to the limit..."
-    haruka "是-是的，我愿意...我喜欢一个巨大的鸡巴将我的阴部伸展到极限..."
+    haruka "是-是的，我愿意...我渴望一个巨大的鸡巴把我的小穴扩张到极限..."
 
 # game/BKchapter3.rpy:13512
 translate schinese haruka_broken_a3d93c6f:
 
     # you "Don't forget that not all customers are well-endowed. You don't want to make the little ones feel bad..."
-    you "不要忘记，并非所有客户都富有。你不想让小孩子们感到难过..."
+    you "别忘了，并非所有客户都是富有的。你也不想让小孩子们感到难过..."
 
 # game/BKchapter3.rpy:13514
 translate schinese haruka_broken_218c2d23:
 
     # haruka "Oh, that's right... Of course, Master, I won't tell them that... Unless I mean it."
-    haruka "哦，对了...当然，Master，我不会告诉他们...除非我是认真的。"
+    haruka "哦，对了...当然，主人，我不会告诉他们...除非我想。"
 
 # game/BKchapter3.rpy:13516
 translate schinese haruka_broken_d8fb3c0e:
 
     # you "Good. Keep moving."
-    you "好的。继续前进。"
+    you "很好。继续动。"
 
 # game/BKchapter3.rpy:13520
 translate schinese haruka_broken_f12c7374:
@@ -27544,7 +27544,7 @@ translate schinese haruka_broken_f12c7374:
 translate schinese haruka_broken_d397bffa:
 
     # "You lay back and enjoy the show, as Haruka is doing all the work."
-    "你可以躺下来享受表演，因为 Haruka 正在做所有的工作。"
+    "你躺下来享受表演，因为遥正在做所有的工作。"
 
 # game/BKchapter3.rpy:13526
 translate schinese haruka_broken_1aae359d:
@@ -27556,7 +27556,7 @@ translate schinese haruka_broken_1aae359d:
 translate schinese haruka_broken_beaac0ae:
 
     # "Even though you are barely doing anything, Haruka seems to enjoy herself well enough."
-    "尽管你几乎什么都不做，遥似乎也很享受。"
+    "尽管你一动不动，遥似乎也很享受。"
 
 # game/BKchapter3.rpy:13532
 translate schinese haruka_broken_5b1107c2:
@@ -27568,31 +27568,31 @@ translate schinese haruka_broken_5b1107c2:
 translate schinese haruka_broken_17e8a961:
 
     # "Her pace is increasing, and it seems like she may be able to bring herself off by herself."
-    "她的步伐越来越快，看来她一个人就能摆脱困境了。"
+    "她的速度越来越快，看来她一个人就能掌握节奏了。"
 
 # game/BKchapter3.rpy:13536
 translate schinese haruka_broken_2318f3d2:
 
     # you "Hey, talk to me. Don't focus on yourself, focus on the customer."
-    you "嘿，跟我说话吧。不要只关注自己，而要关注客户。"
+    you "嘿，和我聊聊天。不要只关注自己，要多关注客户。"
 
 # game/BKchapter3.rpy:13538
 translate schinese haruka_broken_3b3c9ac6:
 
     # haruka "Right... S-Sorry, Master."
-    haruka "对了...对不起，主人。"
+    haruka "对...对不起，主人。"
 
 # game/BKchapter3.rpy:13540
 translate schinese haruka_broken_82f9fece:
 
     # "She clenches her pussy around your shaft with surprising strength."
-    "她以惊人的力量紧紧地握住你的小穴。"
+    "她以惊人的力量紧紧地缠绕住你的小穴。"
 
 # game/BKchapter3.rpy:13542
 translate schinese haruka_broken_aefce10b:
 
     # haruka "Do you like... That..?"
-    haruka "你喜欢...那个...吗？"
+    haruka "你喜欢...这样...吗？"
 
 # game/BKchapter3.rpy:13544
 translate schinese haruka_broken_6908213b:
@@ -27604,7 +27604,7 @@ translate schinese haruka_broken_6908213b:
 translate schinese haruka_broken_86e01318:
 
     # haruka "Let me massage your cock with my slave pussy. Master- I mean, Sir."
-    haruka "让我用我的奴隶小穴按摩你的鸡巴。师父——我的意思是，先生。"
+    haruka "让我用我的奴隶小穴帮您的鸡巴放松一下。主人——我的意思是，先生。"
 
 # game/BKchapter3.rpy:13550
 translate schinese haruka_broken_dd025997:
@@ -27616,7 +27616,7 @@ translate schinese haruka_broken_dd025997:
 translate schinese haruka_broken_e8bd6764:
 
     # "She is bouncing off your dick hard now, and you can't help but feel your excitement building up."
-    "她现在正用力地从你的鸡巴上弹跳，你情不自禁地感到自己越来越兴奋。"
+    "她坐在你的腰上，用力摆动着腰肢，你感到越来越兴奋。"
 
 # game/BKchapter3.rpy:13554
 translate schinese haruka_broken_442cda9a:
@@ -27628,13 +27628,13 @@ translate schinese haruka_broken_442cda9a:
 translate schinese haruka_broken_52667251:
 
     # "Your cock hits her cervix repeatedly, making her moan even deeper."
-    "你的阴茎反复撞击她的子宫颈，让她的呻吟声更深。"
+    "你的阴茎反复撞击她的花心，让她的呻吟声更加放浪。"
 
 # game/BKchapter3.rpy:13560
 translate schinese haruka_broken_e8dc2099:
 
     # you "I want to cum inside you, Haruka."
-    you "我想射在你体内，遥。"
+    you "我想射在你里面，遥。"
 
 # game/BKchapter3.rpy:13562
 translate schinese haruka_broken_2d11790f:
@@ -27646,19 +27646,19 @@ translate schinese haruka_broken_2d11790f:
 translate schinese haruka_broken_74b01ecf:
 
     # haruka "Today is not a safe day, but... I am taking magic contraception, so don't worry."
-    haruka "今天不是安全的一天，但是...我正在服用神奇避孕药，所以不用担心。"
+    haruka "今天不是我的安全日，但是...我喝了避子汤，所以不用担心。"
 
 # game/BKchapter3.rpy:13566
 translate schinese haruka_broken_bc813c86:
 
     # you "Like I care about that! Get ready, I'm going to creampie you."
-    you "就像我关心这个一样！准备好，我要射你了。"
+    you "说的好像我关心这个一样！准备好，我要射了。"
 
 # game/BKchapter3.rpy:13570
 translate schinese haruka_broken_d7da41be:
 
     # haruka "Y-Yes, Sir... Mmmmh..." with vpunch
-    haruka "是-是的，先生...嗯..." with vpunch
+    haruka "好-好的，先生...嗯..." with vpunch
 
 # game/BKchapter3.rpy:13574
 translate schinese haruka_broken_eba3b498:
@@ -27676,19 +27676,19 @@ translate schinese haruka_broken_a57231d2:
 translate schinese haruka_broken_6d3a3a06:
 
     # "Haruka cums at the same time as you, crying out loud as you fill her with creamy semen."
-    "遥和你同时射精，当你用奶油般的精液充满她时，她大声哭泣。"
+    "遥和你同时高潮，当你用奶油般的精液涂满她的身体时，她放声大哭。"
 
 # game/BKchapter3.rpy:13588
 translate schinese haruka_broken_e70e8e0e:
 
     # haruka "Ooooh... Master [MC.name]..."
-    haruka "噢...大师[MC.name]..."
+    haruka "噢...[MC.name]主人..."
 
 # game/BKchapter3.rpy:13590
 translate schinese haruka_broken_35faeb4e:
 
     # you "Hmmm... It was good... But stay in character."
-    you "嗯...很好...但要保持性格。"
+    you "嗯...很好...但要保持人设。"
 
 # game/BKchapter3.rpy:13592
 translate schinese haruka_broken_36fb128c:
@@ -27700,7 +27700,7 @@ translate schinese haruka_broken_36fb128c:
 translate schinese haruka_broken_e10f2c1f:
 
     # "She keeps rubbing her hips against you for a while longer, still basking in the feeling of her orgasm."
-    "她继续用臀部摩擦你一段时间，仍然沉浸在高潮的感觉中。"
+    "她继续用臀瓣摩擦着你，仍然沉浸在高潮的余韵中。"
 
 # game/BKchapter3.rpy:13596
 translate schinese haruka_broken_a96cfcaa:
@@ -27718,19 +27718,19 @@ translate schinese haruka_broken_f48085b7:
 translate schinese haruka_broken_4efb0b0c:
 
     # "Giving you an inviting smile, she scoops up some of your love juice with her finger."
-    "她给你一个诱人的微笑，用手指舀起一些你的爱汁。"
+    "她回给你一个诱人的微笑，用手指舀起一些你的精液。"
 
 # game/BKchapter3.rpy:13604
 translate schinese haruka_broken_da4e1f85:
 
     # "She places it in her mouth, and starts sucking on it suggestively."
-    "她把它放进嘴里，并开始暗示性地吸吮它。"
+    "她把它放进嘴里，并开始慢慢地吸吮它。"
 
 # game/BKchapter3.rpy:13606
 translate schinese haruka_broken_6bcca9bf:
 
     # you "Hmm, that's a nice touch."
-    you "嗯，这是一个很好的接触。"
+    you "嗯，这是一个不错的尝试。"
 
 # game/BKchapter3.rpy:13608
 translate schinese haruka_broken_f68480c9:
@@ -27760,7 +27760,7 @@ translate schinese haruka_broken_08e56715:
 translate schinese haruka_broken_5af98aca:
 
     # "They were intrigued by the perspective of getting it on with one of the infamous kunoichi."
-    "他们对与臭名昭著的女忍者之一相处的观点很感兴趣。"
+    "他们对与臭名昭著的女忍者相处的观点很感兴趣。"
 
 # game/BKchapter3.rpy:13630
 translate schinese haruka_broken_5bf82a8f:
@@ -27772,7 +27772,7 @@ translate schinese haruka_broken_5bf82a8f:
 translate schinese haruka_broken_7108dee1:
 
     # "[cust!c]" "Wow, she's super hot!"
-    "[cust!c]" "哇，她超级热！"
+    "[cust!c]" "哇，她超级性感！"
 
 # game/BKchapter3.rpy:13634
 translate schinese haruka_broken_fc9f60bc:
@@ -27784,13 +27784,13 @@ translate schinese haruka_broken_fc9f60bc:
 translate schinese haruka_broken_216fdfc7:
 
     # haruka "Thank you Sir, you are very kind..."
-    haruka "谢谢您，先生，您真是太好了..."
+    haruka "谢谢您，先生，您真会说话..."
 
 # game/BKchapter3.rpy:13638
 translate schinese haruka_broken_44e35e2f:
 
     # "[cust!c]" "And check that ass..."
-    "[cust!c]" "并检查那个屁股..."
+    "[cust!c]" "让我来体验一下这个翘臀..."
 
 # game/BKchapter3.rpy:13642
 translate schinese haruka_broken_077ce420:
@@ -27802,7 +27802,7 @@ translate schinese haruka_broken_077ce420:
 translate schinese haruka_broken_09387e16:
 
     # "The customer slaps Haruka's ass. For a split second, you worry she's going to strike him back, but she just blushes."
-    "顾客拍了遥的屁股。有那么一瞬间，你担心她会反击他，但她只是脸红了。"
+    "顾客拍了拍遥的屁股。有那么一瞬间，你担心她会原地反击，但她只是脸红了。"
 
 # game/BKchapter3.rpy:13646
 translate schinese haruka_broken_e77bca01:
@@ -27814,7 +27814,7 @@ translate schinese haruka_broken_e77bca01:
 translate schinese haruka_broken_31bfb7e1:
 
     # "[cust!c]" "Hmmm... So that's the taste of Kunoichi sweat..."
-    "[cust!c]" "嗯...这就是女野市汗水的味道..."
+    "[cust!c]" "嗯...这就是女忍者汗水的味道..."
 
 # game/BKchapter3.rpy:13655
 translate schinese haruka_broken_9673cdf6:
@@ -27826,19 +27826,19 @@ translate schinese haruka_broken_9673cdf6:
 translate schinese haruka_broken_fd2c90b7:
 
     # "The [cust] is playing with Haruka in the sauna, while his buddies leer and jeer."
-    "[cust]正在桑拿房里和遥一起玩，而他的伙伴们则在斜视和嘲笑。"
+    "[cust]正在桑拿房里和遥一起玩，而他的伙伴们则在围观和嘲笑。"
 
 # game/BKchapter3.rpy:13659
 translate schinese haruka_broken_046e1a22:
 
     # haruka "Mister, if you keep touching me all over... Aaaah..."
-    haruka "先生，如果你一直碰我的话...啊啊啊..."
+    haruka "先生，如果你一直碰我那里的话...啊啊啊..."
 
 # game/BKchapter3.rpy:13661
 translate schinese haruka_broken_12c706c2:
 
     # "[cust!c]" "What's that? I don't understand... *squish*"
-    "[cust!c]" "那是什么？我不明白...*压扁*"
+    "[cust!c]" "哪里？我不明白...*压扁*"
 
 # game/BKchapter3.rpy:13667
 translate schinese haruka_broken_ebfe0a52:
@@ -27850,13 +27850,13 @@ translate schinese haruka_broken_ebfe0a52:
 translate schinese haruka_broken_a5991566:
 
     # "The customer rubs himself against Haruka's butt, caressing her inner thigh. She is getting visibly wet."
-    "顾客在遥的屁股上蹭来蹭去，爱抚着她的大腿内侧。她明显湿透了。"
+    "顾客在遥的屁股上蹭来蹭去，爱抚着她的大腿内侧。她的私处湿透了。"
 
 # game/BKchapter3.rpy:13671
 translate schinese haruka_broken_0f3d2187:
 
     # "[cust!c]" "Ain't you a sensitive thing? I only started touching you, and you're in the mood already..."
-    "[cust!c]" "你不是个敏感的人吗？我才刚开始触碰你，你就已经有心情了..."
+    "[cust!c]" "你这么敏感吗？我才刚碰到你，你就已经起性欲了..."
 
 # game/BKchapter3.rpy:13673
 translate schinese haruka_broken_84d89d00:
@@ -27868,7 +27868,7 @@ translate schinese haruka_broken_84d89d00:
 translate schinese haruka_broken_7522fc29:
 
     # "[cust!c]" "Of course you are! [MC.name] knows how to pick them."
-    "[cust!c]" "当然是！ [MC.name] 知道如何挑选它们。"
+    "[cust!c]" "当然了！[MC.name]知道如何挑选合适的人才。"
 
 # game/BKchapter3.rpy:13679
 translate schinese haruka_broken_3549bd39:
@@ -27886,7 +27886,7 @@ translate schinese haruka_broken_5d1aecb3:
 translate schinese haruka_broken_1e7c237a:
 
     # "More customers" "And don't forget about us too!"
-    "更多客户" "并且不要忘记我们！"
+    "更多客户" "也别要忘了我们！"
 
 # game/BKchapter3.rpy:13689
 translate schinese haruka_broken_a4c7eb0b:
@@ -27904,7 +27904,7 @@ translate schinese haruka_broken_f90cce4f:
 translate schinese haruka_broken_a8a33b94:
 
     # "[cust!c]" "Yeah, show us the goods!"
-    "[cust!c]" "是啊，给我们看看货物！"
+    "[cust!c]" "是啊，给我们看看！"
 
 # game/BKchapter3.rpy:13695
 translate schinese haruka_broken_a97563a9:
@@ -27958,25 +27958,25 @@ translate schinese haruka_broken_655793c3:
 translate schinese haruka_broken_d8bb3e7f:
 
     # "The customer is tugging at her nipples, eliciting painful moans from Haruka."
-    "顾客拉扯她的乳头，引得遥发出痛苦的呻吟声。"
+    "顾客拉扯着她的乳头，引得遥发出痛苦的呻吟声。"
 
 # game/BKchapter3.rpy:13725
 translate schinese haruka_broken_f7dfe698:
 
     # "[cust!c]" "I've heard so much about the Kunoichi, but it seems that they are a joke..."
-    "[cust!c]" "我听说过很多关于女忍者的事，但似乎他们只是一个笑话......"
+    "[cust!c]" "我听说过很多关于女忍者的事，但似乎他们只是一群小丑......"
 
 # game/BKchapter3.rpy:13727
 translate schinese haruka_broken_90ca7cde:
 
     # haruka "N-No... The Kunoichi are not a joke... But I am not worthy of them."
-    haruka "不、不...女忍者不是开玩笑...但我配不上他们。"
+    haruka "不、不...女忍者不是小丑...但我已经配不上这个名号了。"
 
 # game/BKchapter3.rpy:13729
 translate schinese haruka_broken_f2b8aa75:
 
     # "Other customer" "You're just a slut, then, only good for taking cock? Am I right?"
-    "其他客户" "那么你只是个荡妇，只擅长做鸡巴？我说得对吗？"
+    "其他客户" "所以你只是个荡妇，只擅长侍奉鸡巴？我说得对吗？"
 
 # game/BKchapter3.rpy:13733
 translate schinese haruka_broken_e03953f4:
@@ -27988,25 +27988,25 @@ translate schinese haruka_broken_e03953f4:
 translate schinese haruka_broken_9697357c:
 
     # "[cust!c]" "Then enough fooling around! Get ready."
-    "[cust!c]" "那么就够鬼混了！准备。"
+    "[cust!c]" "那就足够了！准备好。"
 
 # game/BKchapter3.rpy:13741
 translate schinese haruka_broken_e15ce136:
 
     # haruka blush "Hmmm... Sir... Do you like this position?"
-    haruka blush "嗯...先生...您喜欢这个职位吗？"
+    haruka blush "嗯...先生...您喜欢这个姿势吗？"
 
 # game/BKchapter3.rpy:13743
 translate schinese haruka_broken_3d60f230:
 
     # "[cust!c]" "Damn right I do! Make sure to give my mates a great view!"
-    "[cust!c]" "我他妈的没错！一定要给我的朋友们一个很棒的视野！"
+    "[cust!c]" "那他妈不是废话！我要给我的朋友们上演一出精彩的表演！"
 
 # game/BKchapter3.rpy:13745
 translate schinese haruka_broken_e3b88e36:
 
     # "The [cust] spreads Haruka's legs apart, rubbing his manhood against her clit."
-    "[cust]将遥的双腿分开，用他的男子气概摩擦着她的阴蒂。"
+    "[cust]将遥的双腿分开，用他的老二摩擦着她的阴蒂。"
 
 # game/BKchapter3.rpy:13749
 translate schinese haruka_broken_67ec51e1:
@@ -28018,13 +28018,13 @@ translate schinese haruka_broken_67ec51e1:
 translate schinese haruka_broken_5d68bde7:
 
     # "It isn't long before he is rock-hard."
-    "没过多久，他就变得坚如磐​​石。"
+    "没过多久，他就涨得发硬。"
 
 # game/BKchapter3.rpy:13753
 translate schinese haruka_broken_b6bf9113:
 
     # "[cust!c]" "Enough waiting! I'm going in!"
-    "[cust!c]" "等够了！我要进去了！"
+    "[cust!c]" "我受够了！让我进去！"
 
 # game/BKchapter3.rpy:13755
 translate schinese haruka_broken_edbbaf5a:
@@ -28042,13 +28042,13 @@ translate schinese haruka_broken_0aadf9c9:
 translate schinese haruka_broken_7e92bc32:
 
     # "[cust!c]" "Oh, your pussy's good! Feels like you were expecting me."
-    "[cust!c]" "哦，你的阴部很好！感觉就像你在等我。"
+    "[cust!c]" "哦，你的小穴很好！感觉就像我俩是天生一对。"
 
 # game/BKchapter3.rpy:13763
 translate schinese haruka_broken_3cad8d64:
 
     # haruka "Oh... It's my first for today... Mistress Gizel never left me that long without... Well..."
-    haruka "哦...这是我今天的第一次...吉泽尔女士从来没有离开我那么久而没有...好吧..."
+    haruka "哦...这是我今天的第一次...吉泽尔女士从来没有让我一个人...好吧..."
 
 # game/BKchapter3.rpy:13765
 translate schinese haruka_broken_d6fad6a9:
@@ -28066,7 +28066,7 @@ translate schinese haruka_broken_b0afe26d:
 translate schinese haruka_broken_186970a7:
 
     # "Moving her hips, Haruka starts fucking the customer enthusiastically, barely aware that she's being watched by the group."
-    "遥扭动着臀部，开始热情地操顾客，几乎没有意识到她正在被这群人注视着。"
+    "遥扭动着臀部，开始热情地吞吐顾客的鸡巴，完全没有意识到她正在被众人注视着。"
 
 # game/BKchapter3.rpy:13771
 translate schinese haruka_broken_58c14941:
@@ -28084,7 +28084,7 @@ translate schinese haruka_broken_eff05b27:
 translate schinese haruka_broken_668458ba:
 
     # "[cust!c]" "Oh, Shalia, she's strong! OH!!!"
-    "[cust!c]" "哦，莎莉亚，她很坚强！哦！！！"
+    "[cust!c]" "哦，莎莉亚啊，她很强壮！哦！！！"
 
 # game/BKchapter3.rpy:13781
 translate schinese haruka_broken_b365af12:
@@ -28096,7 +28096,7 @@ translate schinese haruka_broken_b365af12:
 translate schinese haruka_broken_9cad28b2:
 
     # "Unable to resist, the [cust] explodes inside Haruka's pussy, smearing it with smelly cum."
-    "由于无法抗拒，[cust]在遥的小穴内爆炸，沾满了恶臭的精液。"
+    "由于无法抗拒，[cust]在遥的小穴内爆射，沾满了恶臭的精液。"
 
 # game/BKchapter3.rpy:13791
 translate schinese haruka_broken_b70ff00b:
@@ -28108,7 +28108,7 @@ translate schinese haruka_broken_b70ff00b:
 translate schinese haruka_broken_31a271f0:
 
     # "Other customer" "Bwahaha, you barely held in there for a minute!"
-    "其他客户" "哇哈哈，你几乎没有坚持一分钟！"
+    "其他客户" "哇哈哈，你连一分钟都没坚持住！"
 
 # game/BKchapter3.rpy:13795
 translate schinese haruka_broken_c548257c:
@@ -28126,19 +28126,19 @@ translate schinese haruka_broken_a15c50a8:
 translate schinese haruka_broken_3112b560:
 
     # haruka "Mister, you really came a lot... I'm happy..."
-    haruka "先生，你真的来了很多次...我很高兴..."
+    haruka "先生，你真的射了很多次...我很高兴..."
 
 # game/BKchapter3.rpy:13807
 translate schinese haruka_broken_30518cf9:
 
     # "[cust!c]" "Here's a tip... I'm gonna need a moment to recover... Ooooh..."
-    "[cust!c]" "这是一个提示...我需要一点时间来恢复...哦..."
+    "[cust!c]" "这是一个小技巧...我需要一点时间来恢复...哦..."
 
 # game/BKchapter3.rpy:13809
 translate schinese haruka_broken_a3d4bf6f:
 
     # "Other customer" "Then it's my turn! Yeehah!"
-    "其他客户" "那么就轮到我了！是啊！"
+    "其他客户" "看来轮到我了！耶！"
 
 # game/BKchapter3.rpy:13815
 translate schinese haruka_broken_c73deec1:
@@ -28162,7 +28162,7 @@ translate schinese haruka_broken_45b9eff1:
 translate schinese haruka_broken_0dd4da05:
 
     # haruka "You're stirring up my insides..."
-    haruka "你正在搅动我的内心..."
+    haruka "你把我里面搅得天翻地覆..."
 
 # game/BKchapter3.rpy:13823
 translate schinese haruka_broken_51032bf2:
@@ -28174,7 +28174,7 @@ translate schinese haruka_broken_51032bf2:
 translate schinese haruka_broken_904dc4e8:
 
     # "Other customer" "Come on, squeeze my dick like you did for him! Show me that Kunoichi power!"
-    "其他客户" "来吧，像你为他做的那样挤压我的鸡巴！让我看看女忍的力量吧！"
+    "其他客户" "来吧，像你为他做的那样吸住我的鸡巴！让我看看女忍者的力量吧！"
 
 # game/BKchapter3.rpy:13827
 translate schinese haruka_broken_b9c76796:
@@ -28186,7 +28186,7 @@ translate schinese haruka_broken_b9c76796:
 translate schinese haruka_broken_8a0be4fa:
 
     # "Suddenly, Haruka tenses up, and you can almost see a shockwave riding out from her pussy, hitting the customer's dick."
-    "突然，遥紧张起来，你几乎可以看到一股冲击波从她的小穴中传出，击中了顾客的阴茎。"
+    "突然，遥颤抖起来，你可以看到一股冲击波从她的小穴中传出，击中了顾客的阴茎。"
 
 # game/BKchapter3.rpy:13831
 translate schinese haruka_broken_bb38f185:
@@ -28204,7 +28204,7 @@ translate schinese haruka_broken_522528c5:
 translate schinese haruka_broken_d3004eca:
 
     # "[cust!c]" "See? I told you, she's something else!"
-    "[cust!c]" "看？我告诉过你，她是另外一个人！"
+    "[cust!c]" "看？我告诉过你，她不是一般货色！"
 
 # game/BKchapter3.rpy:13841
 translate schinese haruka_broken_a2e4b9d3:
@@ -28216,7 +28216,7 @@ translate schinese haruka_broken_a2e4b9d3:
 translate schinese haruka_broken_a3818ee6:
 
     # "Other customer" "Man... That was incredible... T-Take that, I think I'm gonna pass out..."
-    "其他客户" "伙计...这太不可思议了...接受、接受吧，我想我要昏过去了..."
+    "其他客户" "伙计...这太不可思议了...受-受不了了，我想我要昏过去了..."
 
 # game/BKchapter3.rpy:13849
 translate schinese haruka_broken_1d822956:
@@ -28234,7 +28234,7 @@ translate schinese haruka_broken_73cb8e80:
 translate schinese haruka_broken_29b35f90:
 
     # "[cust!c]" "Just get in line! I'm the one who got you in, so I get dibs on ninja pussy!"
-    "[cust!c]" "就排队吧！我是让你进来的人，所以我有忍者猫的权利！"
+    "[cust!c]" "那就排队吧！我是带你进来的人，所以我有独享女忍者屁股的权利！"
 
 # game/BKchapter3.rpy:13857
 translate schinese haruka_broken_ba0938de:
@@ -28246,13 +28246,13 @@ translate schinese haruka_broken_ba0938de:
 translate schinese haruka_broken_f4aa1a95:
 
     # "Customer" "Shut up! Hold my dick!"
-    "顾客" "住口！握住我的鸡巴！"
+    "顾客" "闭嘴！握住我的鸡巴！"
 
 # game/BKchapter3.rpy:13861
 translate schinese haruka_broken_d2a89cde:
 
     # "[cust!c]" "I'm hard again! Do your worst, Kunoichi!"
-    "[cust!c]" "我又硬了！尽你所能吧，女野一！"
+    "[cust!c]" "我又硬了！尽你所能吧，女忍者！"
 
 # game/BKchapter3.rpy:13867
 translate schinese haruka_broken_993ae00c:
@@ -28270,19 +28270,19 @@ translate schinese haruka_broken_26d03281:
 translate schinese haruka_broken_25c52be6:
 
     # "[cust!c]" "Oh, yeah... It's even better the second time!"
-    "[cust!c]" "哦，是啊...第二次就更好了！"
+    "[cust!c]" "哦，耶...第二次更紧了！"
 
 # game/BKchapter3.rpy:13873
 translate schinese haruka_broken_b5661adb:
 
     # "Other customer" "I'm done waiting. Why don't I use her other hole?"
-    "其他客户" "我已经等完了我为什么不利用她的另一个洞呢？"
+    "其他客户" "我不想干等了，我为什么用她的另一个洞呢？"
 
 # game/BKchapter3.rpy:13875
 translate schinese haruka_broken_7d195df5:
 
     # haruka "M-Mister..."
-    haruka "M、先生..."
+    haruka "先、先生..."
 
 # game/BKchapter3.rpy:13879
 translate schinese haruka_broken_e0fab295:
@@ -28300,37 +28300,37 @@ translate schinese haruka_broken_9e2019c6:
 translate schinese haruka_broken_24faa589:
 
     # haruka "P-Please, Sir! I haven't had much training with this hole yet!"
-    haruka "拜、拜托，先生！我还没有对这个洞进行太多训练！"
+    haruka "拜、拜托，先生！我还没有对这个地方进行太多训练！"
 
 # game/BKchapter3.rpy:13885
 translate schinese haruka_broken_0f7bb920:
 
     # "Other customer" "Perfect! Then I'll help you get more experience."
-    "其他客户" "完美的！然后我会帮助你获得更多经验。"
+    "其他客户" "漂亮！我会帮助你学会更多姿势。"
 
 # game/BKchapter3.rpy:13891
 translate schinese haruka_broken_fe3ddd20:
 
     # "Ignoring her resistance, the fat man forces his cock deeper inside her ass."
-    "胖子无视她的反抗，将他的鸡巴深深地插入她的肛门。"
+    "胖子无视了她的反抗，将他的鸡巴深深地插入她的肛门。"
 
 # game/BKchapter3.rpy:13895
 translate schinese haruka_broken_9d3b510e:
 
     # haruka "Oh, I'm being fucked from both sides... Aaaah..." with vpunch
-    haruka "哦，我被两边操了...啊啊啊..." with vpunch
+    haruka "哦，两边都插进来了...啊啊啊..." with vpunch
 
 # game/BKchapter3.rpy:13897
 translate schinese haruka_broken_699affed:
 
     # "Both guys start fucking Haruka's holes in rythm, while she does her best jerking off the other customers with her hands."
-    "两个男人都开始操弄遥的节奏漏洞，而她则竭尽全力用手给其他顾客手淫。"
+    "两个男人都开始操弄遥的肉穴，而她则竭尽全力用手给其他顾客手淫。"
 
 # game/BKchapter3.rpy:13899
 translate schinese haruka_broken_f66ef80d:
 
     # "[cust!c]" "C'm'on, Kunoichi, use your secret powers! Make us cum!"
-    "[cust!c]" "来吧，女野市，使用你的秘密力量吧！让我们射精！"
+    "[cust!c]" "放马过来吧，女忍者，使用你的秘技吧！让我们射精！"
 
 # game/BKchapter3.rpy:13901
 translate schinese haruka_broken_cb89e5d1:
@@ -28354,7 +28354,7 @@ translate schinese haruka_broken_a10b0090:
 translate schinese haruka_broken_38e98d36:
 
     # haruka "A-As you wish... I will now use my whole body... To pleasure you..."
-    haruka "、如你所愿...我现在就用我的整个身体...来取悦你..."
+    haruka "如-如你所愿...我现在就用我的整个身体...来取悦你..."
 
 # game/BKchapter3.rpy:13909
 translate schinese haruka_broken_e6a0b459:
@@ -28372,7 +28372,7 @@ translate schinese haruka_broken_62b2f34c:
 translate schinese haruka_broken_93d33e6a:
 
     # "[cust!c]" "I think it's a Kunoichi battlecry or som-"
-    "[cust!c]" "我认为这是女忍者的战吼或者某种——"
+    "[cust!c]" "我猜这是女忍者的战歌或者某种——"
 
 # game/BKchapter3.rpy:13917
 translate schinese haruka_broken_e7936d39:
@@ -28384,7 +28384,7 @@ translate schinese haruka_broken_e7936d39:
 translate schinese haruka_broken_0f683378:
 
     # "Haruka's entire body tenses up, and waves of energy radiate from her naked form as she squeezes the many dicks around her."
-    "遥的整个身体都绷紧了，当她挤压周围的许多阴茎时，能量波从她赤裸的身体中散发出来。"
+    "遥的整个身体都绷紧了，当她撸动周围的肉棒时，能量波动从她赤裸的身体中散发出来。"
 
 # game/BKchapter3.rpy:13925
 translate schinese haruka_broken_d3dacde8:
@@ -28414,7 +28414,7 @@ translate schinese haruka_broken_97f524c9:
 translate schinese haruka_broken_b65101f3:
 
     # "All the customers cum one by one, showering Haruka with hot cum and creampying both her holes."
-    "所有的顾客都一一高潮，用滚烫的精液沐浴遥，并在她的两个洞里射精。"
+    "所有的顾客都达到高潮，用滚烫的精液给遥洗了个精子浴，把她身上的洞都灌满了精液。"
 
 # game/BKchapter3.rpy:13941
 translate schinese haruka_broken_4a1522ea:
@@ -28432,13 +28432,13 @@ translate schinese haruka_broken_6a3742ed:
 translate schinese haruka_broken_8849b4ac:
 
     # haruka "I am lucky to receive your precious cum..."
-    haruka "我很幸运能收到你珍贵的精液..."
+    haruka "我很幸运能收到你们珍贵的精液..."
 
 # game/BKchapter3.rpy:13949
 translate schinese haruka_broken_e8dafd89:
 
     # haruka "Please... Come again to [brothel.name]..."
-    haruka "请...再次来到[brothel.name]..."
+    haruka "欢迎...再次光临[brothel.name]..."
 
 # game/BKchapter3.rpy:13957
 translate schinese haruka_broken_7e1d45c8:
@@ -28450,13 +28450,13 @@ translate schinese haruka_broken_7e1d45c8:
 translate schinese haruka_broken_36f5c0e8:
 
     # haruka blush "T-Thank you, Master."
-    haruka blush "谢谢，师父。"
+    haruka blush "谢谢，主人。"
 
 # game/BKchapter3.rpy:13961
 translate schinese haruka_broken_2d10e56c:
 
     # you "I must say, I was worried about how you'd do... But you handled it like a pro."
-    you "我必须说，我很担心你会怎么做...但你处理得像个专业人士。"
+    you "不得不说，我很担心你的处理方式...但你处理得像个专业人士。"
 
 # game/BKchapter3.rpy:13963
 translate schinese haruka_broken_db20bee9_1:
@@ -28468,31 +28468,31 @@ translate schinese haruka_broken_db20bee9_1:
 translate schinese haruka_broken_62b00dc1:
 
     # you "Very good. Welcome to the team! You can start working tonight."
-    you "非常好。欢迎加入团队！今晚你就可以开始工作了。"
+    you "非常好。欢迎加入我们！今晚你就可以开始工作了。"
 
 # game/BKchapter3.rpy:13967
 translate schinese haruka_broken_a8ef4bc3:
 
     # haruka blush "S-Sure. Thank you for having me."
-    haruka blush "当然。谢谢你有我。"
+    haruka blush "当然。谢谢你帮我。"
 
 # game/BKchapter3.rpy:13969
 translate schinese haruka_broken_9f0a3688:
 
     # haruka sad "(So this is my life, now... I wonder if I can get used to it.)"
-    haruka sad "（所以这就是我的生活，现在......我不知道我是否能习惯它。）"
+    haruka sad "（所以这就是我今后的生活，现在......我不知道我是否能习惯它。）"
 
 # game/BKchapter3.rpy:13985
 translate schinese acquire_ninja_50abf3d7:
 
     # girl.char "B-But Master! There is no room in the brothel for me..."
-    girl.char "但、但是主人！青楼已经没有地方容我了..."
+    girl.char "但、但是主人！青楼已经没有房间给我住了..."
 
 # game/BKchapter3.rpy:13988
 translate schinese acquire_ninja_94f24145:
 
     # you "You should go to a pen at the farm."
-    you "你应该去农场的围栏。"
+    you "你应该去农场的地牢。"
 
 # game/BKchapter3.rpy:13990
 translate schinese acquire_ninja_6f025e90:
@@ -28504,13 +28504,13 @@ translate schinese acquire_ninja_6f025e90:
 translate schinese acquire_ninja_d65a119e:
 
     # you "Damn, the farm's pens are full at the moment..."
-    you "妈的，现在农场的围栏都满了..."
+    you "妈的，现在农场的地牢都满了..."
 
 # game/BKchapter3.rpy:14004
 translate schinese acquire_ninja_21a047c9:
 
     # gizel "I'll keep her around to do chores. Talk to me when you are ready to accomodate her."
-    gizel "我会让她留在身边做家务。当你准备好接待她时就跟我说话。"
+    gizel "我可以把她留在身边做家务。当你准备好收留她时就来找我。"
 
 # game/BKchapter3.rpy:14008
 translate schinese acquire_ninja_55a53406:
@@ -28522,7 +28522,7 @@ translate schinese acquire_ninja_55a53406:
 translate schinese acquire_ninja_98be9142:
 
     # "[girl.name] has joined [brothel.name]."
-    "[girl.name]已加入[brothel.name]。"
+    "[girl.name]已加入了[brothel.name]。"
 
 translate schinese strings:
 
