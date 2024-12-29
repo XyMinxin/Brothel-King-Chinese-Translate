@@ -1785,7 +1785,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + self.name.capitalize() + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -4788,16 +4788,16 @@ init -2 python:
         def get_description(self):
             if self.type == "master":
                 if self.level > 1:
-                    desc = "Can host up to {b}" + str(self.level) + " girls{/b} for training. Girls in the master bedroom receive {b}free training{/b} every night."
+                    desc = "可以容纳最多{b}" + str(self.level) + "个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 elif self.level == 1:
-                    desc = "Can host up to {b}1 girl{/b} for training. Girls in the master bedroom receive {b}free training{/b} every night."
+                    desc = "只能容纳{b}一个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 else:
-                    desc = "Your bachelor pad. No room for a bachelorette yet."
+                    desc = "你的房间没有足够的空间让女孩挤进来。"
 
                 if self.level < brothel.rank:
-                    desc += " Improve this room for {b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}。"
+                    desc += "花费{b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}扩建你的卧室。"
                 elif self.level == 5:
-                    desc += " {i}You cannot improve the master bedroom further.{/i}"
+                    desc += " {i}你的卧室已经达到了最高等级{/i}"
 
                 return desc
 
@@ -5217,7 +5217,7 @@ init -10 python:
         def get_description(self):
             if not self.description:
                 if self.type == "gold":
-                    self.description = __("you must collect ") + str(int(self.value)) + " gold"
+                    self.description = __("you must collect ") + str(int(self.value)) + "金币"
 
                 elif self.type == "ranked":
                     self.description = str(self.target) + __(" of your girls must reach rank ") + rank_name[self.value]
@@ -6738,7 +6738,7 @@ init -2 python:
                     shown = str(round_int(c))
 
                 if v != 0 and c != 0:
-                    text1 += "\n" + __(s.capitalize()) + ": " + shown
+                    text1 += "\n" + __(misc_name_dict[s.capitalize()]) + ": " + shown
 
             text1 += "\n"
 
@@ -7192,7 +7192,7 @@ init -2 python:
                 self.activate()
 
         def describe_cost(self):
-            dlist = [(str(amount) + " " + __(resource)) for resource, amount in self.cost]
+            dlist = [(str(amount) + " " + __(misc_name_dict[resource])) for resource, amount in self.cost]
 
             return and_text(dlist)
 

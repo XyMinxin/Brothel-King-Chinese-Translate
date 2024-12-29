@@ -1151,7 +1151,7 @@ screen item_profile(it):
             if isinstance(type, ItemType):
                 text "{color=[col]}" + __(it.type.name) + "{/color}" xalign 0.5 size res_font(18)
             else:
-                text "{color=[col]}" + __(it.target.capitalize()) + "{/color}" xalign 0.5 size res_font(18)
+                text "{color=[col]}" + __(misc_name_dict[it.target.capitalize()]) + "{/color}" xalign 0.5 size res_font(18)
 
             if isinstance(it, ItemInstance):
                 text __(it.base_description) size res_font(14) xalign 0.5 italic True
@@ -1178,7 +1178,7 @@ screen item_profile(it):
 
             hbox spacing 10 xalign 0.5:
                 for act in acts:
-                    textbutton __(capitalize(act)) action Return((it, act)) xalign 0.5:
+                    textbutton __(misc_name_dict[capitalize(act)]) action Return((it, act)) xalign 0.5:
                         if owner.type == "girl" and act in ("equip", "unequip", "use"):
                             hovered SetScreenVariable("focused_char", owner)
                         elif counterpart and counterpart.type == "girl":
@@ -1213,7 +1213,7 @@ screen inventory(char, counterpart=None):
                         $ acts = it.get_acts(char, counterpart)
 
                 vbox:
-                    text slot.capitalize() size res_font(14) xalign 0.5 color c_brown
+                    text misc_name_dict[slot.capitalize()] size res_font(14) xalign 0.5 color c_brown
 
                     button xsize yres(60) ysize yres(60) xfill True yfill True xalign 0.5:
                         style "girlbutton_blue"
@@ -1222,7 +1222,7 @@ screen inventory(char, counterpart=None):
                             action (Show("item_profile", it=eq, transition = dissolve), SetVariable("owner", char), SetVariable("counterpart", counterpart), SetVariable("selected_item", eq), SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip __(eq.description)
                         else:
-                            text __("Empty") size res_font(12) italic True xalign 0.5 yalign 0.5
+                            text "空" size res_font(12) italic True xalign 0.5 yalign 0.5
                             action (SetField(MC, "active_inv_filter", [slot]), SelectedIf(slot in MC.active_inv_filter))
                             tooltip "这个槽位没有装备道具。"
 
@@ -1243,13 +1243,13 @@ screen item_filter(filters=inventory_filters["base"]):
                         add "filter_" + filter xalign 0.5 yalign 0.5
                     else:
                         add "filter_" + filter + "_unselect" xalign 0.5 yalign 0.5
-                    tooltip __("Show %s items.") % __(filter)
+                    tooltip __("Show %s items.") % __(misc_name_dict[filter])
                 else:
                     if not MC.active_inv_filter:
                         add "filter_all" xalign 0.5 yalign 0.5
                     else:
                         add "filter_all_unselect" xalign 0.5 yalign 0.5
-                    tooltip "显示所有道具。"
+                    tooltip "显示所有物品。"
 
 
 #### END OF BK ITEMS FILE ####

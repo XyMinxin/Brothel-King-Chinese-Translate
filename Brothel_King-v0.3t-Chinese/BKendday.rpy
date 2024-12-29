@@ -1238,7 +1238,7 @@ label end_day:
 
         chg = brothel.change_dirt(-1 * brothel.get_maintenance())
 
-        night_late.add("青楼卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + brothel.get_cleanliness())
+        night_late.add("青楼卫生情况: %i (%s)" % (int(brothel.dirt), plus_text(log.dirt + chg)), "header", ttip="Your brothel is " + misc_name_dict[brothel.get_cleanliness()])
         night_late.add("垃圾堆积: %s" % plus_text(log.dirt))
         night_late.add("卫生清洁: %s" % plus_text(chg))
 

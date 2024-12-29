@@ -364,7 +364,7 @@ translate schinese hmas_sex_ed3f36a4:
 translate schinese hmas_sex_20b9fa63:
 
     # hmas_girl "Rub this hard dick of yours... Mmmmh... On my pussy..."
-    hmas_girl "用你这根硬邦邦的东西摩擦...嗯...在我的阴户上..."
+    hmas_girl "用你这根硬邦邦的东西摩擦...嗯...在我的小穴上..."
 
 # game/BKstory_events.rpy:233
 translate schinese hmas_sex_4903f4cf:
@@ -4894,7 +4894,7 @@ translate schinese gizel_rape_afdf195d:
 translate schinese gizel_rape_a3e01d6c:
 
     # "An initiate positions himself under her, another one on top of her. Together, they take turns running their shafts along the silky fabric of her panties, rubbing her pussy in the process."
-    "一个新人把自己放在她的下面,另一个人在她上面。他们一起轮流沿着她内裤上的丝绸面料摩擦,揉捏她的阴户。"
+    "一个新人把自己放在她的下面,另一个人在她上面。他们一起轮流沿着她内裤上的丝绸面料摩擦,揉捏她的小穴。"
 
 # game/BKstory_events.rpy:2537
 translate schinese gizel_rape_a2a4dfb6:
@@ -8086,7 +8086,7 @@ translate schinese goldie_titjob_e4624daa:
 translate schinese goldie_sex_0c6beb6b:
 
     # "Pushing Goldie on all fours, you lower her panties, taking a good look at her naughty pussy."
-    "你把高蒂推倒在地,将她的内裤拉下,仔细欣赏她淫荡的阴户。"
+    "你把高蒂推倒在地,将她的内裤拉下,仔细欣赏她淫荡的小穴。"
 
 # game/BKstory_events.rpy:4166
 translate schinese goldie_sex_8c336b87:
@@ -10498,7 +10498,7 @@ translate schinese stella_sex_8be61cc8:
 translate schinese stella_sex_513b57f7:
 
     # "Shoving her panties to the side, Stella starts rubbing her already dripping pussy on your shaft."
-    "掀开内裤,Stella开始在你的阴茎上摩擦她已经湿润的阴户。"
+    "掀开内裤,Stella开始在你的阴茎上摩擦她已经湿润的小穴。"
 
 # game/BKstory_events.rpy:5282
 translate schinese stella_sex_3f49652b:
@@ -10582,7 +10582,7 @@ translate schinese stella_sex_a935a522:
 translate schinese stella_sex_9d26b730:
 
     # "In spite of your predicament, your dick is feeling rock hard and enjoys slamming inside her wet pussy. Soon, both of you are moaning like wild animals."
-    "尽管处于如此处境,你的老二仍硬如磐石,大力撞击她湿润的阴户。很快,你们两人都发出野兽般的呻吟。"
+    "尽管处于如此处境,你的老二仍硬如磐石,大力撞击她湿润的小穴。很快,你们两人都发出野兽般的呻吟。"
 
 # game/BKstory_events.rpy:5322
 translate schinese stella_sex_fd35c3de:
@@ -14668,7 +14668,7 @@ translate schinese willow_fight_aa5c92f0:
 translate schinese willow_fight_2c24e0a4:
 
     # "The tendril makes a wet noise as it rubs over her mound. Willow is starting to lose it."
-    "藤蔓发出湿润的声音,在她的阴户上摩擦。柳儿开始失控了。"
+    "藤蔓发出湿润的声音,在她的小穴上摩擦。柳儿开始失控了。"
 
 # game/BKstory_events.rpy:7516
 translate schinese willow_fight_530a7fc4:
@@ -17230,7 +17230,7 @@ translate schinese farm_gizel_introduction_3a49b8d2:
 translate schinese farm_gizel_introduction_788cb45d:
 
     # "The giant shoots bucket after bucket of cum inside Gizel's wide open pussy, splashing semen all over her lower body."
-    "巨大的生物向吉泽尔的宽敞的阴户射出一桶又一桶的精液,溅到了她下半身的各处。"
+    "巨大的生物向吉泽尔的宽敞的小穴射出一桶又一桶的精液,溅到了她下半身的各处。"
 
 # game/BKstory_events.rpy:8679
 translate schinese farm_gizel_introduction_700725d2:
@@ -19348,7 +19348,7 @@ translate schinese farm_first_monster_d956829a:
 translate schinese farm_first_monster_f6ec4111:
 
     # "With a flip of its tentacle, the monster rips away her tiny panties, revealing her wet cunt."
-    "怪物用一次触手的秀猛烈地撕开了她的小内裤,露出了她湿润的阴户。"
+    "怪物用一次触手的秀猛烈地撕开了她的小内裤,露出了她湿润的小穴。"
 
 # game/BKstory_events.rpy:9661
 translate schinese farm_first_monster_0cfce900:
@@ -25384,7 +25384,7 @@ translate schinese shalia_visit_cb5f751f:
 translate schinese shalia_visit_85dde1cd:
 
     # "You can feel her pussy pressing against your cock, already very wet. Her body is incredibly sensitive."
-    "你可以感受到她的阴户紧贴你的阴茎,已经非常湿润。她的身体异常敏感。"
+    "你可以感受到她的小穴紧贴你的阴茎,已经非常湿润。她的身体异常敏感。"
 
 # game/BKstory_events.rpy:13133
 translate schinese shalia_visit_f97f2ba4:
@@ -25420,7 +25420,7 @@ translate schinese shalia_visit_8cded9fe:
 translate schinese shalia_visit_25d0f79b:
 
     # "You keep grinding back and forth against satella's clit and pussy, releasing more and more of her love juice, until your dick is well lubricated."
-    "你不断在Satella的阴蒂和阴户上摩擦,释放出越来越多的爱液,直到你的阴茎被完全润滑。"
+    "你不断在Satella的阴蒂和小穴上摩擦,释放出越来越多的爱液,直到你的阴茎被完全润滑。"
 
 # game/BKstory_events.rpy:13147
 translate schinese shalia_visit_fa2c377a:
@@ -27106,7 +27106,7 @@ translate schinese kosmo_returns2_87bb4029:
 translate schinese kosmo_returns2_80a50fc4:
 
     # kosmo "Don't you get it? She's almost royalty! She is 657th in line for the throne!!!"
-    kosmo "你不明白吗?她几乎算是皇室成员! 她是王位第657顺位的继承人!!!"
+    kosmo "你不明白吗?她几乎算是王室成员! 她是王位第657顺位的继承人!!!"
 
 # game/BKstory_events.rpy:13914
 translate schinese kosmo_returns2_176ef93a:
@@ -29098,7 +29098,7 @@ translate schinese banker_special2_b0d6ee06:
 translate schinese banker_special2_b0475b33:
 
     # "Her pussy is becoming visibly moist under your gaze, and your hard cock sticks out."
-    "在你的注视下,她的阴户变得湿润可见,你的硬挺直挺挺地突出。"
+    "在你的注视下,她的小穴变得湿润可见,你的硬挺直挺挺地突出。"
 
 # game/BKstory_events.rpy:14925
 translate schinese banker_special2_039a4ffa:
@@ -29110,7 +29110,7 @@ translate schinese banker_special2_039a4ffa:
 translate schinese banker_special2_61cef2c0:
 
     # "Freeing your dick from your pants, you let him loom over the banker's pussy. She licks her lips expectantly."
-    "你从裤子里释放出你的阴茎,让它俯视在银行家的阴户上。她期待地舔了舔嘴唇。"
+    "你从裤子里释放出你的阴茎,让它俯视在银行家的小穴上。她期待地舔了舔嘴唇。"
 
 # game/BKstory_events.rpy:14929
 translate schinese banker_special2_9524d8a2:
@@ -29134,7 +29134,7 @@ translate schinese banker_special2_0dfa99fb:
 translate schinese banker_special2_125e03d5:
 
     # "She opens up her legs even more. Her pussy is dripping with love juice now as she devours your cock with her eyes."
-    "她更大地张开双腿。她的阴户现在正在滴着爱液,她用眼神吞噬着你的阴茎。"
+    "她更大地张开双腿。她的小穴现在正在滴着爱液,她用眼神吞噬着你的阴茎。"
 
 # game/BKstory_events.rpy:14937
 translate schinese banker_special2_50567a0f:
@@ -29158,7 +29158,7 @@ translate schinese banker_special2_bd8f6187:
 translate schinese banker_special2_767f28fc:
 
     # "Unable to resist financial foreplay, you plunge your erect cock straight into her gaping pussy. She takes it all in stride, welcoming your hot shaft inside her."
-    "无法抗拒这种金融前戏,你直接将勃起的阴茎插入她张开的阴户。她一点也不在意,欣然迎接你炽热的阴茎进入她体内。"
+    "无法抗拒这种金融前戏,你直接将勃起的阴茎插入她张开的小穴。她一点也不在意,欣然迎接你炽热的阴茎进入她体内。"
 
 # game/BKstory_events.rpy:14951
 translate schinese banker_special2_baaea294:
@@ -29170,7 +29170,7 @@ translate schinese banker_special2_baaea294:
 translate schinese banker_special2_8d547087:
 
     # "Her pussy is twitching. It seems to have a mind of its own as it wraps tightly around your cock. The sensation is quite new to you."
-    "她的阴户在抽搐。它似乎有自主意识,紧紧地包裹住你的阴茎。这种感觉对你来说是全新的。"
+    "她的小穴在抽搐。它似乎有自主意识,紧紧地包裹住你的阴茎。这种感觉对你来说是全新的。"
 
 # game/BKstory_events.rpy:14955
 translate schinese banker_special2_23f42554:
@@ -29200,13 +29200,13 @@ translate schinese banker_special2_42f62068:
 translate schinese banker_special2_059555ac:
 
     # "Her pussy feels amazing, and you cannot help but increase your pace."
-    "她的阴户感觉太棒了,你忍不住加快了速度。"
+    "她的小穴感觉太棒了,你忍不住加快了速度。"
 
 # game/BKstory_events.rpy:14965
 translate schinese banker_special2_3b44619f:
 
     # "She is very wet, however, and her pussy has no problem swallowing you whole."
-    "她非常湿润,但她的阴户完全吞没了你。"
+    "她非常湿润,但她的小穴完全吞没了你。"
 
 # game/BKstory_events.rpy:14967
 translate schinese banker_special2_3ff178cf:
@@ -29224,7 +29224,7 @@ translate schinese banker_special2_a428d8f3:
 translate schinese banker_special2_3a2f5b37:
 
     # "Even though you hammer down her pussy harder and harder, nailing her to the bed, she doesn't seem to mind it at all. In fact, her love juice is splashing around in large quantities, and she moans in your ear as she holds you even closer."
-    "尽管你越来越用力地撞击她的阴户,将她钉在床上,但她似乎完全不介意。事实上,她的爱液四溅,她紧紧抱住你,在你耳边呻吟。"
+    "尽管你越来越用力地撞击她的小穴,将她钉在床上,但她似乎完全不介意。事实上,她的爱液四溅,她紧紧抱住你,在你耳边呻吟。"
 
 # game/BKstory_events.rpy:14973
 translate schinese banker_special2_8a0db1bb:
@@ -29236,7 +29236,7 @@ translate schinese banker_special2_8a0db1bb:
 translate schinese banker_special2_92f4bee8:
 
     # "Her pussy contracts against the length of your cock, inviting you even deeper inside her. As you squeeze her boobs hard, she cums with a scream."
-    "她的阴户紧紧地包裹住你的阴茎,邀请你进入更深处。当你用力挤压她的乳房时,她尖叫着达到高潮。"
+    "她的小穴紧紧地包裹住你的阴茎,邀请你进入更深处。当你用力挤压她的乳房时,她尖叫着达到高潮。"
 
 # game/BKstory_events.rpy:14982
 translate schinese banker_special2_dd02c185:
@@ -34180,7 +34180,7 @@ translate schinese bast_sex_3dd49dd8:
 translate schinese bast_sex_fbb33f71:
 
     # you "Such a hungry pussy... It's like it was waiting for me all this time."
-    you "真是饥渴的阴户....好像一直在等待我。"
+    you "真是饥渴的小穴....好像一直在等待我。"
 
 # game/BKstory_events.rpy:17427
 translate schinese bast_sex_dfbe4479:
@@ -34204,7 +34204,7 @@ translate schinese bast_sex_42f576eb:
 translate schinese bast_sex_7b718bcf:
 
     # "Your dirty talk seems to have an effect, and love juice is now gushing out of her pussy, making your dick extra-slippery."
-    "你下流的话语似乎产生了效果,爱液从她的阴户喷涌而出,让你的阴茎变得更加润滑。"
+    "你下流的话语似乎产生了效果,爱液从她的小穴喷涌而出,让你的阴茎变得更加润滑。"
 
 # game/BKstory_events.rpy:17437
 translate schinese bast_sex_268c3606:
@@ -34270,7 +34270,7 @@ translate schinese bast_sex_0ccf7b2b:
 translate schinese bast_sex_b1480fa1:
 
     # "Cum slowly gushes out of her gaping pussy, giving you the magnificent spectacle of a perfect creampie."
-    "缓缓流出的精液从她张开的阴户给你呈现出了一幅完美的内射景象。"
+    "缓缓流出的精液从她张开的小穴给你呈现出了一幅完美的内射景象。"
 
 # game/BKstory_events.rpy:17470
 translate schinese bast_sex_dae0ec55:

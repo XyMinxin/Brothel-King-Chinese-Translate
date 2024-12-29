@@ -1320,7 +1320,7 @@ init python:
                                 "argued" : GirlRecentEvent(type="argued", action="与对手争执", base_description="", encourage=False), # Not implemented
 
                                 # Passive events (cannot be punished or rewarded=)
-                                "acquired" : GirlRecentEvent(type="acquired", base_description="你已经获得了%s。", encourage=False, discipline=False),
+                                "acquired" : GirlRecentEvent(type="acquired", base_description="你买下了%s。", encourage=False, discipline=False),
                                 "MC met" : GirlRecentEvent(type="MC met", base_description="你已经见过%s了。", encourage=False, discipline=False),
                                 "MC friend" : GirlRecentEvent(type="MC friend", base_description="你和%s成为了好朋友。", encourage=False, discipline=False),
                                 "MC flower" : GirlRecentEvent(type="MC flower", base_description="你现在可以给%s送花了。", encourage=False, discipline=False),
@@ -1548,7 +1548,7 @@ init python:
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她讨厌什么　", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "取悦" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
+                            "fun" : ["{size=+8}笑话{/size}", "{size=+8}肢体接触{/size}", "{size=+8}调情{/size}"],
                             "{size=+8}笑话{/size}" : [
                                         GirlInteractionTopic("fun", "joke", "普通笑话　　　", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "黄色段子　　　", "free_joke_adult", love_test=15),
@@ -1569,7 +1569,7 @@ init python:
                                         GirlInteractionTopic("fun", "play", "让她和你肛交　", "free_play", act="anal", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "让她和你玩SM　", "free_play", act="fetish", relationship_level=4),
                                         ],
-                            "调情" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
+                            "flirt" : ["{size=+8}赞美{/size}", "{size=+8}关于性的话题{/size}"],
 
                             "{size=+8}赞美{/size}" : [
                                         GirlInteractionTopic("flirt", "compliment", "赞扬她的美貌", "free_flirt_beauty", relationship_level=1),
@@ -1588,7 +1588,7 @@ init python:
                                                 GirlInteractionTopic("flirt", "chat about sex", "双飞　　　", "free_flirt_sex_act", act="bisexual", love_test=55),
                                                 GirlInteractionTopic("flirt", "chat about sex", "群交　　　", "free_flirt_sex_act", act="group", love_test=55),
                                                 ],
-                            "赠礼" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
+                            "give" : ["{size=+8}赠礼{/size}", "{size=+8}提议{/size}"],
                             "{size=+8}赠礼{/size}" : [
                                         GirlInteractionTopic("give", "gift", "送她礼物　　", "free_give_gift", love_test=20),
                                         GirlInteractionTopic("give", "gold", "给她金币　　", "free_give_gold", love_test=20),
@@ -1707,7 +1707,7 @@ init python:
                         "masturbation description" : "让她手淫。",
                         "masturbation action" : "自慰",
                         "masturbation intro" : "你告诉%s在做这件事的时候自己玩。",
-                        "masturbation pos_reaction" : "当你看着她时，她开始狂热地玩弄她的阴蒂，用手指抚弄她的阴户。",
+                        "masturbation pos_reaction" : "当你看着她时，她开始狂热地玩弄她的阴蒂，用手指抚弄她的小穴。",
                         "masturbation neg_reaction" : "她假装在自慰，但其实什么也没做。她一点也不喜欢这样。",
 
                         "fingering description" : "把手指插进她体内。",
@@ -2018,7 +2018,7 @@ init -4 python:
                         "对大米、谷物、蔬菜、肉类征税....很快他们就要对水坑里的水征税了！男人能吃的还剩什么？",
                         "从我记忆中起，瓒城就一直被欲望、贪婪和腐败所吞噬，但这些天我们似乎又跌到了新低。",
                         "不是所有的护卫都是十足的混蛋。我认识一个不错的人。尽管如此，他们还是少之又少。",
-                        "皇室成员都高高在上，离我们很远。他们让卫兵盲目地抢劫我们，但当一个小偷出现时，她从来没有被抓住过。正义何在？",
+                        "王室成员都高高在上，离我们很远。他们让卫兵盲目地抢劫我们，但当一个小偷出现时，她从来没有被抓住过。正义何在？",
                         "你以为小偷会放过我们这样的穷人吗？不，先生，如果你什么都没有，他们还是会从你冰冷的死手上撬开的。",
                         "卫兵从我们这些可怜的人身上偷了那么多东西，几乎没给小偷留下什么。",
                         "*降低声调*听说过黑暗女神莎莉娅吗？他们说她在这个城市的贫民窟里有一座寺庙。它让我毛骨悚然。",

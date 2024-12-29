@@ -1708,7 +1708,7 @@ translate schinese random_night_girl_event_48aab748:
 translate schinese random_night_girl_event_5735e80e:
 
     # "You notice a dodgy, lecherous drunkard, with his hand down [girl.fullname]'s panties. She tells him to stop."
-    "你会注意到一个狡猾、好色的醉汉，手放在[girl.fullname]的内裤上。她让他停下来。"
+    "你注意到一个狡猾、好色的醉汉，手放在[girl.fullname]的内裤上。她让他停下来。"
 
 # game/BKday_events.rpy:1217
 translate schinese random_night_girl_event_b9ca7b9f:
@@ -1804,7 +1804,7 @@ translate schinese random_night_girl_event_b7656250:
 translate schinese random_night_girl_event_15acab5a:
 
     # "Even though he looks unassuming, you notice the harasser is lean and well-built. With surprising speed and technique, he escapes your grip."
-    "尽管他看起来很谦逊，但你会注意到骚扰者身材瘦削，体格健壮。以惊人的速度和技巧，他逃脱了你的控制。"
+    "尽管他看起来很谦逊，但你注意到骚扰者身材瘦削，体格健壮。以惊人的速度和技巧，他逃脱了你的控制。"
 
 # game/BKday_events.rpy:1273
 translate schinese random_night_girl_event_0ac8d013:
@@ -5260,7 +5260,7 @@ translate schinese night_girl_perform_df28a25c:
 translate schinese night_girl_perform_ca7ba4cb:
 
     # man "What a slut! Look how easily I can enter that bitch's pussy."
-    man "什么一个荡妇！看看我能轻易进入那婊子的阴户。"
+    man "什么一个荡妇！看看我能轻易进入那婊子的小穴。"
 
 # game/BKday_events.rpy:3654
 translate schinese night_girl_perform_bd459a74:
@@ -5296,7 +5296,7 @@ translate schinese night_girl_perform_6f667078:
 translate schinese night_girl_perform_48627054:
 
     # "It isn't long until the customer reaches his limit, cumming hard inside her wet pussy."
-    "没过多久，这位顾客就达到了他的极限，在她湿漉漉的阴户里使劲地塞东西。"
+    "没过多久，这位顾客就达到了他的极限，在她湿漉漉的小穴里使劲地塞东西。"
 
 # game/BKday_events.rpy:3681
 translate schinese night_girl_perform_1af08aba:
@@ -6916,7 +6916,7 @@ translate schinese night_girl_perform_538cc15d:
 translate schinese night_girl_perform_6005f152:
 
     # "Both men start to fuck her simultaneously, coming in and out of her pussy and ass like well-oiled pistons."
-    "两个男人开始同时操她，在她的阴户和屁股里进进出出，就像上好了油的活塞。"
+    "两个男人开始同时操她，在她的小穴和屁股里进进出出，就像上好了油的活塞。"
 
 # game/BKday_events.rpy:4637
 translate schinese night_girl_perform_a472072f:
@@ -8482,7 +8482,7 @@ translate schinese night_girl_perform_54640176:
 translate schinese night_girl_perform_b7dd0051:
 
     # girl.char "Ooh... Master, your dick feels so hot... Will this fit inside my ass?"
-    girl.char "哦....师父，你的老二好热....这个能塞进我的屁屁里吗？"
+    girl.char "哦....主人，你的老二好热....这个能塞进我的屁屁里吗？"
 
 # game/BKday_events.rpy:5622
 translate schinese night_girl_perform_4d4025d3:
@@ -8884,7 +8884,7 @@ translate schinese night_girl_perform_c205d03b:
 translate schinese night_girl_perform_dd53d391:
 
     # girl.char "Thank you so much, Master! I'm always happy to be of service."
-    girl.char "非常感谢，师父！我总是很乐意为您服务。"
+    girl.char "非常感谢，主人！我总是很乐意为您服务。"
 
 # game/BKday_events.rpy:5873
 translate schinese night_girl_perform_ecaee461:

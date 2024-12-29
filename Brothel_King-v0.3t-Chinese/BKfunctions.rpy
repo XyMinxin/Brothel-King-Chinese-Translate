@@ -1320,7 +1320,7 @@ init -3 python:
 
         for pop in all_populations:
             if pop_count[pop]:
-                ttip += "%s: %i\n" % (pop.name.capitalize(), pop_count[pop])
+                ttip += "%s: %i\n" % (misc_name_dict[pop.name.capitalize()], pop_count[pop])
 
         return ttip
 
@@ -4166,14 +4166,14 @@ init -3 python:
         ready_to_perk = sum(1 for girl in MC.girls if girl.perk_points > 0)
 
         if ready_to_level > 1:
-            msg += event_color["good"] % (str(ready_to_level) + " girls have unspent skill points.\n")
+            msg += event_color["good"] % (str(ready_to_level) + "个女孩有未分配的技能点。\n")
         elif ready_to_level > 0:
-            msg += event_color["good"] % (str(ready_to_level) + " girl has unspent skill points.\n")
+            msg += event_color["good"] % (str(ready_to_level) + "个女孩有未分配的技能点。\n")
 
         if ready_to_perk > 1:
-            msg += event_color["good"] % (str(ready_to_perk) + " girls have unspent perk points.\n")
+            msg += event_color["good"] % (str(ready_to_perk) + "个女孩有未分配的天赋点。\n")
         elif ready_to_perk > 0:
-            msg += event_color["good"] % (str(ready_to_perk) + " girl has unspent perk points.\n")
+            msg += event_color["good"] % (str(ready_to_perk) + "个女孩有未分配的天赋点。\n")
 
         if shop.updated:
             msg += __("The Shop has received new items.\n\n")

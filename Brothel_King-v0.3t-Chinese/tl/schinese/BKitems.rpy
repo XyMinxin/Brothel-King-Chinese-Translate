@@ -571,7 +571,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:438
     old "Royal Commendation"
-    new "皇室嘉奖令"
+    new "王室嘉奖令"
 
     # game/BKitems.rpy:438
     old "This honorific scroll bears the seal of the Pharo royal family. Proudly displayed in a girl's room, it is sure to get people's attention."
@@ -1857,7 +1857,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:1246
     old "Show %s items."
-    new "展示 %s 物品。"
+    new "只显示%s类物品。"
 
 # TODO: Translation updated at 2024-12-16 19:33
 
@@ -1893,7 +1893,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:981
     old " gold"
-    new " gold"
+    new "金币"
 
     # game/BKitems.rpy:1074
     old "Use shift + up/down arrows or mousewheel to cycle item pages."
@@ -1906,14 +1906,6 @@ translate schinese strings:
     # game/BKitems.rpy:1176
     old "Unsellable"
     new "无法出售"
-
-    # game/BKitems.rpy:1225
-    old "Empty"
-    new "Empty"
-
-    # game/BKitems.rpy:1227
-    old "No item is equipped to this slot."
-    new "No item is equipped to this slot."
 
     # game/BKitems.rpy:1252
     old "Show all items."

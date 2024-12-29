@@ -536,7 +536,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:265
     old "She lost her virginity in a brothel. This is all she knows."
-    new "她在妓院失去了童贞。她只知道这些。"
+    new "她在青楼失去了童贞。她只知道这些。"
 
     # game/BKtraits.rpy:267
     old "Teacher's pet"

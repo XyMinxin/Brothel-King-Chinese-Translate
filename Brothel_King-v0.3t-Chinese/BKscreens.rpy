@@ -931,7 +931,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                     if hovered_action:
                         hovered hovered_action
 
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
 
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
@@ -1020,7 +1020,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         hovered hovered_action #! Does not work for girls that have the same exact name. Investigate.
                     # if unhovered_action:
                     #     unhovered unhovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                     vbar value girl.energy+1 range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1106,7 +1106,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                 button style "inv_no_padding" action but_action yalign 1.0:
                     if hovered_action:
                         hovered hovered_action
-                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                    tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                     vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                         thumb None
                         thumb_offset 0
@@ -1209,7 +1209,7 @@ screen girl_button(girl, bsize="x4", status_list=[], context="girls", extra_acti
                         button style "inv_no_padding" action but_action xalign 1.0 yalign 1.0:
                             if hovered_action:
                                 hovered hovered_action
-                            tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "."
+                            tooltip __("She has ") + str_int(girl.energy) + __(" energy left out of ") + str(int(girl.get_stat_minmax("energy")[1])) + "点"
                             vbar value girl.energy range girl.get_stat_minmax("energy")[1]:
                                 thumb None
                                 thumb_offset 0
@@ -2763,7 +2763,7 @@ screen button_overlay(girl, context="girls"):
 
                 hovered tt.Action(_("Change this girl's equipment."))
 
-            textbutton "离开农场" text_size res_font(14) action Return(("take out", girl)) hovered tt.Action("把 " + girl.name + " 送回妓院。")
+            textbutton "离开农场" text_size res_font(14) action Return(("take out", girl)) hovered tt.Action("把 " + girl.name + " 送回青楼。")
 
             if girl.free:
                 textbutton "解雇":
@@ -2902,7 +2902,7 @@ screen schedule(glist):
             for day in weekdays:
 
                 frame xsize xres(88) ysize yres(20)  yalign 1.0 background None:
-                    text day size res_font(14) xalign 0.5 color c_brown xsize xres(90):
+                    text misc_name_dict[day] size res_font(14) xalign 0.5 color c_brown xsize xres(90):
                         if day == calendar.get_weekday():
                             bold True
 
@@ -2993,7 +2993,7 @@ screen schedule(glist):
 
                         $ ttip += _("\n{i}Right-click to reverse cycle order.{/i}")
 
-                        textbutton workshift_dict[girl.workdays[day]] text_size res_font(14) xsize xres(90) ysize yres(40) yalign 0.5 tooltip ttip idle_background workshift_color[girl.workdays[day]] hover_background c_darkbrown + "CC":
+                        textbutton misc_name_dict[workshift_dict[girl.workdays[day]]] text_size res_font(14) xsize xres(90) ysize yres(40) yalign 0.5 tooltip ttip idle_background workshift_color[girl.workdays[day]] hover_background c_darkbrown + "CC":
                             if girl.block_schedule != day:
                                 action Function(girl.cycle_workday, day) # renpy.curried_invoke_in_new_context(girl.cycle_workday, day)
                                 alternate Function(girl.cycle_workday, day, True)
@@ -3269,7 +3269,7 @@ screen perks(girl):
                                     $ text2 = selected_perk.get_description()
 
                                 else:
-                                    $ title = selected_archetype
+                                    $ title = misc_name_dict[selected_archetype]
                                     $ pic = archetype_dict[selected_archetype].get_pic()
                                     $ text1 = ""
                                     $ text2 = archetype_description[selected_archetype]
@@ -3898,7 +3898,7 @@ screen district_button(dis, context):
         if game.chapter >= dis.chapter:
             if context != "relocate":
                 action Return(dis)
-                tooltip "Visit %s (press %s to visit this district)." % (dis.name, str(all_districts.index(dis) + 1))
+                tooltip "前往%s (按数字键 %s 前往此地点)。" % (dis.name, str(all_districts.index(dis) + 1))
             elif dis not in game.blocked_districts and district != dis:
                 action Return(dis)
                 tooltip "Choose %s to relocate your brothel." % dis.name
@@ -4357,7 +4357,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_adv_cost()
 
-                            textbutton __("[brothel.advertising]  babes") + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
+                            textbutton "[brothel.advertising]  babes" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
 
                             $ ttip = __("Your brothel's current threat level is ") + brothel.estimate_threat_level() + "."
 
@@ -4381,7 +4381,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_sec_cost()
 
-                            textbutton __("[brothel.security]  goons") + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
+                            textbutton "[brothel.security]  goons" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
 
 
 
@@ -4675,7 +4675,7 @@ screen furniture():
                     $ builds = [f for f in all_furniture if f.type == type and f.can_build()]
 
                     if builds:
-                        text "{b}" + __(type.capitalize()) + "{/b} - {i}" + __(description) size res_font(14)
+                        text "{b}" + __(misc_name_dict[type.capitalize()]) + "{/b} - {i}" + __(description) size res_font(14)
                         frame xfill True background c_ui_brown:
                             hbox spacing 6 box_wrap True:
                                 for furn in builds:
@@ -4743,7 +4743,7 @@ screen brothel_options():
                                         hbox spacing 6 xalign 0.0:
                                             bar thumb Frame("tb empty", xsize=xres(9), ysize=yres(18)) xsize xres(100) ysize yres(18) yalign 0.0 value FieldValue(pop, "weight", 5, action=Function(brothel.update_customer_count))
                                             text attract_pop_dict[pop.weight] color c_brown size res_font(14) yalign 1.0
-                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (pop.name, ent_budget, wh_budget)
+                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
             vbox xsize xres(320):
                 text __("{b}Customer preferences{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
                 frame xfill True xpadding xres(10) ypadding yres(10):
@@ -4788,7 +4788,7 @@ screen brothel_options():
                     elif game.matching_priority == "act":
                         $ text1 = __("When possible, customers will be matched with girls that allow their preferred job or sex act.")
 
-                    textbutton "根据 %s 匹配" % game.matching_priority text_size res_font(18) xsize xres(100) action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
+                    textbutton "根据 %s 匹配" % misc_name_dict[game.matching_priority] text_size res_font(18) xsize xres(100) action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
                     text text1 size res_font(14) color c_prune
 
@@ -5633,7 +5633,7 @@ screen inventory_filter(filters=inventory_filters["base"]):
                             add "filter_" + filter
                         else:
                             add "filter_" + filter + "_unselect"
-                        tooltip __("Show %s items.") % __(filter)
+                        tooltip __("Show %s items.") % __(misc_name_dict[filter])
                     else:
                         if filter == MC.active_inv_filter:
                             add "filter_all"
@@ -7282,7 +7282,7 @@ screen challenge(name, diff, raw=False, bonus=0, opponent_bonus=0):
             frame background "#22222288" xfill True xsize xres(250) ysize yres(160) xpadding 10 ypadding 10:
 
                 vbox:
-                    text __("Player ") + __(chal.stat.capitalize()) + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size res_font(18)
+                    text __("Player ") + __(misc_name_dict[chal.stat.capitalize()]) + ": " + str_int(MC.get_stat(chal.stat, raw=True)) size res_font(18)
                     text __("Active bonus: ") + str_int(bonus + MC.get_stat(chal.stat, raw) - MC.get_stat(chal.stat, raw=True) + MC.get_effect("change", name + " challenges")) size int(config.screen_height*0.0222)
                     text ""
 
@@ -7367,7 +7367,7 @@ screen resource_tab(rlist="MC", sz = yres(15), sp = 3, x=0.0, y=0.0, bg=None): #
             for resource in [resource_dict[r] for r in build_resources]:
 
                 if MC.resources[resource.name]>0:
-                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(resource.name) + __(" in store.")) xpadding sp ypadding sp:
+                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(misc_name_dict[resource.name]) + __(" in store.")) xpadding sp ypadding sp:
                         has hbox spacing sp*2 yalign 0.5
                         add resource.pic.get(sz, sz) yalign 0.5
                         if MC.resources[resource.name] < 100:
@@ -7442,7 +7442,7 @@ screen resource_exchange():
                 for r in calendar.scarce:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip __("There is a shortage of ") + r.capitalize() + __(" this week. Value is going up."):
+                        button background None action NullAction() tooltip __("There is a shortage of ") + misc_name_dict[r.capitalize()] + __(" this week. Value is going up."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
                             text "▲" size res_font(16) color c_emerald yalign 0.5 font "1.ttf"
@@ -7450,7 +7450,7 @@ screen resource_exchange():
                 for r in calendar.discounted:
                     $ resource = resource_dict[r]
                     if resource.rank <= story_flags["builder license"]:
-                        button background None action NullAction() tooltip r.capitalize() + __(" is plentiful this week. Value is going down."):
+                        button background None action NullAction() tooltip misc_name_dict[r.capitalize()] + __(" is plentiful this week. Value is going down."):
                             has hbox spacing 3
                             add resource.pic.get(*res_tb(20)) yalign 0.5
                             text "▼" size res_font(16) color c_red yalign 0.5 font "1.ttf"
@@ -7480,13 +7480,13 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip (__("Trade your ") + r + __(" for other resources")):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip (__("Trade your ") + misc_name_dict[r] + __(" for other resources")):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text resource.name.capitalize() size res_font(18)
+                                text misc_dict[resource.name.capitalize()] size res_font(18)
                                 if r in calendar.discounted:
                                     text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
@@ -7781,7 +7781,7 @@ screen free_girl_interact(girl):
             $ choices = ["chat", "give", "flirt", "fun"]
 
             for cap in choices:
-                textbutton cap.capitalize() action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size res_font(14) xpadding 6 ypadding 6 text_selected_bold True xsize xres(60)
+                textbutton misc_name_dict[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size res_font(14) xpadding 6 ypadding 6 text_selected_bold True xsize xres(60)
 
         for cat in free_interact_dict[menu_choice]:
 

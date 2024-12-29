@@ -224,7 +224,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "You have peeped on Narika's secret intimate session."
-    new "你偷看了成香的自慰秀。"
+    new "你偷看了鸣香的自慰秀。"
 
     # game/BKachievements.rpy:21
     old "Treasure hunter: Blondie"

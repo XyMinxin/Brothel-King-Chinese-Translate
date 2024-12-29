@@ -116,11 +116,11 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:207
     old "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
-    new "One of your girls is ready to {color=[c_yellow]}{b}level up{/b}{/color}."
+    new "有女孩可以{color=[c_yellow]}{b}升级{/b}{/color}！"
 
     # game/BKscreen_home.rpy:213
     old "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
-    new "One of your girls is ready to {color=[c_yellow]}{b}rank up.{/b}{/color}"
+    new "有女孩可以{color=[c_yellow]}{b}升阶{/b}{/color}"
 
     # game/BKscreen_home.rpy:226
     old "{u}G{/u}irls"
