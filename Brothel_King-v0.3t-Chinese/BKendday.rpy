@@ -706,7 +706,7 @@ label end_day:
 
             for pop in all_populations:
                 if cust_nb_dict[pop.name]:
-                    night_early.add(misc_name_dict[capitalize(pop.name)] + ": " + str_int(cust_nb_dict[pop.name]), ttip = "%i %s came to %s" % (cust_nb_dict[pop.name], misc_name_dict[pop.name], brothel.name))
+                    night_early.add(tl_cn(capitalize(pop.name), misc_name_dict) + ": " + str_int(cust_nb_dict[pop.name]), ttip = "%i%s来到了%s" % (cust_nb_dict[pop.name], tl_cn(pop.name, misc_name_dict), brothel.name))
 
         night_text += maint_text
 
@@ -1073,7 +1073,7 @@ label end_day:
 
     python:
         night_late = NightChangeLog("今日总结", col=c_lightorange)
-        night_late.add("Y%i M%i D%i %s" % (calendar.year, calendar.month, calendar.day, __(misc_name_dict[calendar.get_weekday()])), "header")
+        night_late.add("%i年 %i月 %i日 %s" % (calendar.year, calendar.month, calendar.day, __(tl_cn(calendar.get_weekday(), misc_name_dict))), "header")
         old_rep = brothel.rep
 
         served = sum(1 for c in customers if c.got_entertainment)
