@@ -725,6 +725,62 @@ init -10 python:
                     None : "(misc_name_dict)没有值"
                     }
 
+    ## 月相翻译 ##
+    moon_name_dict = {
+                    "Gold" : "财富之月",
+                    "gold" : "财富之月",
+                    "Wolf" : "狼群之月",
+                    "wolf" : "狼群之月",
+                    "Blue" : "忧郁之月",
+                    "blue" : "忧郁之月",
+                    "Blood" : "猩红之月",
+                    "blood" : "猩红之月",
+                    "Honey" : "甜蜜之月",
+                    "honey" : "甜蜜之月",
+                    "Dry" : "黯淡之月",
+                    "dry" : "黯淡之月",
+                    "Hunter" : "狩猎之月",
+                    "hunter" : "狩猎之月",
+                    "Silver" : "魔力之月",
+                    "silver" : "魔力之月",
+                    "Wet" : "潮汐之月",
+                    "wet" : "潮汐之月",
+                    "Hallow" : "神圣之月",
+                    "hallow" : "神圣之月",
+                    "Dark" : "无光之月",
+                    "dark" : "无光之月",
+
+                    None : "(moon_name_dict)没有值",
+                    }
+
+    ## 资源翻译 ##
+    resource_name_dict = {
+                        "Gold" : "金币",
+                        "gold" : "金币",
+                        "Prestige" : "声望",
+                        "prestige" : "声望",
+                        "Action" : "行动力",
+                        "action" : "行动力",
+                        "Mana" : "魔法值",
+                        "mana" : "魔法值",
+                        "Wood" : "木头",
+                        "wood" : "木头",
+                        "Leather" : "皮革",
+                        "leather" : "皮革",
+                        "Dye" : "染料",
+                        "dye" : "染料",
+                        "Marble" : "大理石",
+                        "marble" : "大理石",
+                        "Ore" : "矿石",
+                        "ore" : "矿石",
+                        "Silk" : "丝绸",
+                        "silk" : "丝绸",
+                        "Diamond" : "钻石",
+                        "diamond" : "钻石",
+
+                        None : "(resource_name_dict)没有值",
+                        }
+
 #### BALANCE / CHEATS ####
 
     debug = True # Replace this with 'True' for additional cheats and information (recommended for testing)

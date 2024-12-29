@@ -244,37 +244,37 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:2277
     old "Zan"
-    new "Zan"
+    new "泽恩"
 
     # game/BKinit_variables.rpy:2277
     old "the border with the Holy Lands"
-    new "the border with the Holy Lands"
+    new "圣地边境"
 
     # game/BKinit_variables.rpy:2277
     old "the Blood Islands"
-    new "the Blood Islands"
+    new "鲜血群岛"
 
     # game/BKinit_variables.rpy:2277
     old "Karkyr"
-    new "Karkyr"
+    new "卡尔基"
 
     # game/BKinit_variables.rpy:2277
     old "Westmarch"
-    new "Westmarch"
+    new "西境"
 
     # game/BKinit_variables.rpy:2277
     old "the desert of Hokoma"
-    new "the desert of Hokoma"
+    new "荷科马大沙漠"
 
     # game/BKinit_variables.rpy:2277
     old "Borgo, the port city"
-    new "Borgo, the port city"
+    new "博格-海港之城"
 
     # game/BKinit_variables.rpy:2277
     old "the Goliath desolations"
-    new "the Goliath desolations"
+    new "歌利亚平原"
 
     # game/BKinit_variables.rpy:2277
     old "the Arik mountains"
-    new "the Arik mountains"
+    new "阿力克山脉"
 

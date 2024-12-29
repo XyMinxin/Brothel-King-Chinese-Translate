@@ -375,6 +375,9 @@ translate schinese strings:
     new "折扇"
 
     # game/BKitems.rpy:312
+    # game/BKitems.rpy:312
+    old "Sensual perfume"
+    new "秘制香水"
     old "sensual perfume"
     new "秘制香水"
 
@@ -741,6 +744,8 @@ translate schinese strings:
     new "原味内裤"
 
     # game/BKitems.rpy:482
+    old "So you're into these, eh?"
+    new "原来你喜欢别人穿过的内裤？"
     old "so you're into these, eh?"
     new "原来你喜欢别人穿过的内裤？"
 
@@ -1853,18 +1858,6 @@ translate schinese strings:
     # game/BKitems.rpy:1246
     old "Show %s items."
     new "只显示%s类物品。"
-
-# TODO: Translation updated at 2024-12-15 20:54
-
-translate schinese strings:
-
-    # game/BKitems.rpy:312
-    old "Sensual perfume"
-    new "Sensual perfume"
-
-    # game/BKitems.rpy:482
-    old "So you're into these, eh?"
-    new "So you're into these, eh?"
 
 # TODO: Translation updated at 2024-12-16 19:33
 
