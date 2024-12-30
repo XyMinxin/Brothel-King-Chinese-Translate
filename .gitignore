@@ -4,3 +4,5 @@
 /TaggingTool-v2.8.14-Chinese/.vscode/*
 *.zip
 *.7z
+*.pyc
+*.rpyc
