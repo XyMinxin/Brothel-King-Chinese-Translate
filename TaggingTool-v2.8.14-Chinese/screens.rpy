@@ -622,8 +622,9 @@ screen show_pic(context="edit"):
             $ ibg = img_bg
         else:
             $ ibg = None
-        frame background ibg  xalign 0.45  yalign 0.5  padding (0,0)  margin (0,0) :
-            add selected_pic.get_std_displayable() xalign 0.5 yalign 0.5
+        frame background ibg  xalign 0.45 yalign 0.2 padding (0,0)  margin (0,0) :
+            # add selected_pic.get_std_displayable() xalign 0.5 yalign 0.3
+            add ProportionalScale(selected_pic.file, 720, 540) xalign 0.5 yalign 0.2
     elif context == "edit":
         text "没有找到图片。" xalign 0.5 yalign 0.5
     elif context == "browse":
@@ -635,8 +636,34 @@ screen show_pic(context="edit"):
 
     if show_ui:
         use pic_ui(context)
+        use pic_carousel(context)
+        
+screen pic_button(pic, context):
+    default tt = Tooltip("pic_button")
+    button:
+        xalign 0.5
+        ycenter 0.5
+        xpadding 9
+        ypadding 9
+        xsize 220
+        action Return("tips") hovered tt.Action("test") 
+        vbox:
+            spacing 10
+            text pic.file_name xalign 0.5 yalign 0.5
+            add ProportionalScale(pic.file, 180, 135) xalign 0.5 yalign 0.5
 
-
+screen pic_carousel(context):
+    $ global filtered_pics
+    $ global selected_index
+    $ global selected_pic
+    
+    default tt = Tooltip("pic_carousel")
+    frame yalign 0.85 xfill True xalign 0.22 xsize 700 background None:
+        has hbox spacing 20
+        hbox:
+            $ pics = filtered_pics[selected_index:selected_index+5]
+            for pic in pics:
+                use pic_button(pic, context)
 
 screen pic_ui(context):
 #    key "mouseup_3" action Hide("pic_ui")
@@ -671,7 +698,6 @@ screen pic_ui(context):
 #    text str(selected_pic.has_tag("inside")) color "#000000" xalign 0.5 yalign 0.5 xsize 0.5
 
     frame background None xsize 0.5 xalign 0.3:
-
         if context == "edit":
             $ text1 = "编辑"
             $ text2 = ""
@@ -680,8 +706,6 @@ screen pic_ui(context):
 
         default tt = Tooltip("[text1] [girl.dir]")
         text tt.value size 16
-
-
 
     frame yalign 0.93 xfill True xalign 0.45 xsize 800 background None:
         has hbox spacing 20
@@ -1028,7 +1052,7 @@ screen rating_tips():
 
 screen input_button(context):
 
-    hbox spacing 15 xpos 0.22 ypos 0.09 xsize 0.64 xfill True:
+    hbox spacing 15 xpos 0.22 ypos 0.05 xsize 0.64 xfill True:
 
         textbutton "搜索" text_size 18:
             action Return("search")

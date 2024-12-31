@@ -273,8 +273,6 @@ init -2 python:
         def predict_files(self):
             return self.image.predict_files()
 
-
-
     class Girl(object):
         '''The object to which a girl pack pictures are attached.'''
         def __init__(self, dir):
@@ -282,6 +280,12 @@ init -2 python:
             self.path = "images\\" + dir
             self.pics = []
             self.ignore_pics = [] # <Chris12 PackState />
+            global selected_index
+            global selected_pic
+            global filtered_pics
+            filtered_pics = []
+            selected_index = 0
+            selected_pic = None
 
         def add_pic(self, file_name, file):
             pic = Pic(self.path, file_name, file)
@@ -338,12 +342,16 @@ init -2 python:
                     li = [x for x in self.pics if (x == selected_pic) or x in li]
             else:
                 li = self.pics
-
+            
             if len(li) == 0:
                 return
 
             global selected_pic
-
+            global filtered_pics
+            global selected_index
+            
+            filtered_pics = li
+            
             def increment_idx(idx) :
                 if (idx + nb) >= len(li):
                     if idx == len(li)-1:
@@ -359,8 +367,10 @@ init -2 python:
                 idx = increment_idx(idx)
             else:
                 idx = 0
+            selected_index = idx
             selected_pic = li[idx]
-
+            
+            # 预取下一张图片
             idx = increment_idx(idx)
             next_img = li[idx]
             if not next_img.video :
@@ -371,10 +381,12 @@ init -2 python:
             return len(self.get_filtered_pics(filters, include_bk_autoadds))
 
         def get_filtered_pics(self, filters, include_bk_autoadds = False):
+            global filtered_pics
             if filters:
-                return [p for p in self.pics if p.matches(filters, include_bk_autoadds)]
+                filtered_pics = [p for p in self.pics if p.matches(filters, include_bk_autoadds)]
             else:
-                return self.pics
+                filtered_pics = self.pics
+            return filtered_pics
 
         def evaluate_girlpack(self): # Evaluate girl pack metrics to use for the girl pack rating
 
