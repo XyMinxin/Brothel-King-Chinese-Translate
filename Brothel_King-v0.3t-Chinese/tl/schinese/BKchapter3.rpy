@@ -2560,7 +2560,7 @@ translate schinese c3_hint_b25057b1:
 translate schinese c3_hint_28b81d56:
 
     # ramias "Finally, there's the basement floor, or floors. It's the maximum security area. Who knows what goes on in there."
-    ramias "最后，地下室层或者几层，那里是最高等级的禁区。里面发生了什么，谁也不知道。"
+    ramias "最后，地下室层或者几层，那里是最高等级的禁地。里面发生了什么，谁也不知道。"
 
 # game/BKchapter3.rpy:1192
 translate schinese c3_hint_b96d1e99:
@@ -19816,7 +19816,7 @@ translate schinese c3_haruka_guards_b9f03b8c:
 translate schinese c3_haruka_guards_3dcef296:
 
     # kenshin "You are not allowed to enter the maximum security area of the Prison, got it?"
-    kenshin "你不可以进入监狱的禁区，明白吗？"
+    kenshin "你不可以进入监狱的禁地，明白吗？"
 
 # game/BKchapter3.rpy:9570
 translate schinese c3_haruka_guards_4a693d16:
@@ -20008,7 +20008,7 @@ translate schinese c3_haruka_guards_ae13782c:
 translate schinese c3_haruka_guards_6eb64174:
 
     # warden "The maximum security area? Well, you should have mentioned it immediately, my boy."
-    warden "底层禁区？好吧，你一开始就该提到它，年轻人。"
+    warden "底层禁地？好吧，你一开始就该提到它，年轻人。"
 
 # game/BKchapter3.rpy:9648
 translate schinese c3_haruka_guards_8b2675fe:
@@ -20044,25 +20044,25 @@ translate schinese c3_haruka_guards_6756c5c9:
 translate schinese c3_haruka_guards_89513e8a:
 
     # suzume "You {i}bought{/i} this office?"
-    suzume "您{i}买下了{/i}这间办公室？"
+    suzume "你说{i}买下{/i}这间办公室？"
 
 # game/BKchapter3.rpy:9660
 translate schinese c3_haruka_guards_481e92aa:
 
     # warden "Why, sure, how else do you think people get commissioned to high office? On merit? Bwahahaha!"
-    warden "当然，除此之外，你以为人们如何被任命担任高级职位呢？靠功绩？哇哈哈！"
+    warden "当然，除此之外，你以为人们如何升官呢？难道靠功绩？哇哈哈！"
 
 # game/BKchapter3.rpy:9662
 translate schinese c3_haruka_guards_e8f146e2:
 
     # warden "I have certain dealings that work best with access to the Prison population, and... Anyway. You needn't concern yourself with that."
-    warden "我有一些最适合接触监狱人口的交易，而且...无论如何。你不必担心这个。"
+    warden "我经营着最适合接触监狱人员的生意，而且...总之，那不是你需要了解的。"
 
 # game/BKchapter3.rpy:9664
 translate schinese c3_haruka_guards_affb795a:
 
     # warden "The maximum security area below the penitenciary is the private domain of the King, and only the Knights of the Flaming Hound stand guard down there."
-    warden "监狱下方最安全的区域是国王的私人领地，只有火焰猎犬骑士团在下面守卫。"
+    warden "监狱底层最严密的区域是国王的私人领地，只有火焰猎犬骑士团在下面镇守。"
 
 # game/BKchapter3.rpy:9666
 translate schinese c3_haruka_guards_9f26113e:
@@ -20074,19 +20074,19 @@ translate schinese c3_haruka_guards_9f26113e:
 translate schinese c3_haruka_guards_74ecc30e:
 
     # warden "The flaming Hounds. They're a Knight Order of the first Circle, fanatically devoted to the Royal family..."
-    warden "火焰猎犬。他们是第一环骑士团的成员，狂热地效忠于王室..."
+    warden "火焰猎犬。他们是第一骑士团的成员，狂热地效忠于王室..."
 
 # game/BKchapter3.rpy:9670
 translate schinese c3_haruka_guards_ab36c008:
 
     # warden "I try to leave them to their own devices. They're a frightening bunch, if you ask me."
-    warden "我试着让他们自行其是。如果你问我的话，他们是一群可怕的人。"
+    warden "我尽量让他们自行其是。如果你问我的话，他们是一群可怕的人。"
 
 # game/BKchapter3.rpy:9672
 translate schinese c3_haruka_guards_9ff2fe87:
 
     # warden "It cannot be easy to deal with the worst scum in Xeros, every day. The people we have up here are just petty thieves or murderers. They have it far worse."
-    warden "每天与 Xeros 中最糟糕的败类打交道并不容易。我们这里的人只是小偷或杀人犯。他们的情况更糟。"
+    warden "每天与克塞洛斯中最糟糕的败类打交道并不容易。我们这里关的只是小偷或杀人犯。他们的情况更糟。"
 
 # game/BKchapter3.rpy:9674
 translate schinese c3_haruka_guards_d9cfec39:
@@ -20110,19 +20110,19 @@ translate schinese c3_haruka_guards_74f656bb:
 translate schinese c3_haruka_guards_c57add41:
 
     # suzume "Uhuh. Sure thing. She said, 'Go right ahead!'."
-    suzume "呃。当然可以。她说，“继续前进！”。"
+    suzume "呃。当然可以。她说，“自由行动！”。"
 
 # game/BKchapter3.rpy:9682
 translate schinese c3_haruka_guards_b53f2f9d:
 
     # you "Yup. I believe these were her exact words."
-    you "是的。我相信这就是她原话。"
+    you "是的。我相信这就是她的意思。"
 
 # game/BKchapter3.rpy:9684
 translate schinese c3_haruka_guards_2465f5d4:
 
     # warden "Do as you please, then... And don't bother coming back, I'm very busy. The knights will show you out."
-    warden "那就随你的便吧...别费心回来了，我很忙。骑士们会带你出去的。"
+    warden "那就随你的便吧...别回来烦我了，我很忙。骑士们会带你出去的。"
 
 # game/BKchapter3.rpy:9688
 translate schinese c3_haruka_guards_591c03fe:
@@ -20146,19 +20146,19 @@ translate schinese c3_haruka_guards_29d66e77:
 translate schinese c3_haruka_guards_bb683af0:
 
     # you "I knock? On the door of the largest prison in Xeros?"
-    you "我敲？克罗斯最大监狱的门口？"
+    you "我敲？敲克罗斯最大监狱的门？"
 
 # game/BKchapter3.rpy:9705
 translate schinese c3_haruka_guards_37122480:
 
     # suzume "Sure. It's not like you're going to damage it."
-    suzume "当然。这不像你会损坏它。"
+    suzume "当然。难道你能敲坏它？"
 
 # game/BKchapter3.rpy:9707
 translate schinese c3_haruka_guards_c3f682ab:
 
     # you "Why am I even listening to you... *sigh*"
-    you "为什么我要听你说话......*叹气*"
+    you "为什么我要照你说的做......*叹气*"
 
 # game/BKchapter3.rpy:9713
 translate schinese c3_haruka_guards_5ec62c56:
@@ -20176,43 +20176,43 @@ translate schinese c3_haruka_guards_ebabf604:
 translate schinese c3_haruka_guards_222be20f_1:
 
     # knight "These are not visiting hours, citizen. State your business or leave."
-    knight "公民，现在不是探视时间。说明你的事或离开。"
+    knight "公民，现在不是探视时间。说明来意或离开。"
 
 # game/BKchapter3.rpy:9721
 translate schinese c3_haruka_guards_ea42d7f9:
 
     # you "I, err, want to talk to the manager..."
-    you "我，呃，想和经理谈谈......"
+    you "我，呃，想和典狱长谈谈......"
 
 # game/BKchapter3.rpy:9723
 translate schinese c3_haruka_guards_bf44dc66:
 
     # knight "The mana... The Warden? Are you out of your mind? This is the Xotar penitenciary here, not a cursed tavern!"
-    knight "法力...典狱长？你疯了吗？这里是索塔尔监狱，不是被诅咒的酒馆！"
+    knight "玛娜...典狱长？你疯了吗？这里是索塔尔监狱，不是什么被诅咒的酒馆！"
 
 # game/BKchapter3.rpy:9725
 translate schinese c3_haruka_guards_6ac4e635:
 
     # you "Listen. I have crucial information regarding the security of the Prison. Somebody is trying to break in."
-    you "听。我有关于监狱安全的重要信息。有人试图闯入。"
+    you "听着。我有关于监狱安全的重要消息。有人试图闯入这里。"
 
 # game/BKchapter3.rpy:9727
 translate schinese c3_haruka_guards_cb3e7853:
 
     # knight "Break {i}in{/i}? That's a first. People usually try to break out of prison!"
-    knight "闯入？这是第一次。人们通常会尝试越狱！"
+    knight "闯入？这还是头一回听说。人们通常只会想往外逃！"
 
 # game/BKchapter3.rpy:9729
 translate schinese c3_haruka_guards_84a9216e:
 
     # knight "Now, if you're done wasting my time..."
-    knight "现在，如果你不再浪费我的时间了..."
+    knight "现在，别再浪费我的时间了..."
 
 # game/BKchapter3.rpy:9731
 translate schinese c3_haruka_guards_f2ceb448:
 
     # suzume "Wait! They {i}are{/i} trying to break in then break someone out... They're Kunoichi, you see, and..."
-    suzume "等待！他们{i}正在{/i}试图闯入然后将某人带出去......他们是女忍者，你看，而且......"
+    suzume "等等！他们{i}策划{/i}闯入然后将某人带出去......他们是女忍者，你看，而且......"
 
 # game/BKchapter3.rpy:9733
 translate schinese c3_haruka_guards_2e054b79:
@@ -20224,13 +20224,13 @@ translate schinese c3_haruka_guards_2e054b79:
 translate schinese c3_haruka_guards_0b48ab91:
 
     # you "Kunoichi. It's a kind of ninja..."
-    you "女忍一。这是忍者的一种..."
+    you "女忍者。这是忍者的一种..."
 
 # game/BKchapter3.rpy:9737
 translate schinese c3_haruka_guards_d1e8f26f:
 
     # knight "Oh, I {i}know{/i} what a Kunoichi is."
-    knight "哦，我{我}知道{/i}什么是女忍者。"
+    knight "哦，我{我}知道{/i}女忍者是什么人。"
 
 # game/BKchapter3.rpy:9739
 translate schinese c3_haruka_guards_46a21cc1:
@@ -20242,7 +20242,7 @@ translate schinese c3_haruka_guards_46a21cc1:
 translate schinese c3_haruka_guards_0edc7dc3:
 
     # knight "I think we need to have a little chat, after all... Come in, you two."
-    knight "我想我们需要聊聊，毕竟...请进，你们两个。"
+    knight "我想我们需要聊聊，毕竟...请进，两位。"
 
 # game/BKchapter3.rpy:9745
 translate schinese c3_haruka_guards_da2227c2:
@@ -20260,19 +20260,19 @@ translate schinese c3_haruka_guards_82682103:
 translate schinese c3_meet_hound_knights_5e223973:
 
     # "You follow the knight across the Prison yard."
-    "你跟随骑士穿过监狱院子。"
+    "你跟随骑士穿过前厅。"
 
 # game/BKchapter3.rpy:9762
 translate schinese c3_meet_hound_knights_641644b9:
 
     # "The place is dark and decrepit, and you can make out hundreds of people living in squalor in the various levels of the Prison."
-    "这个地方黑暗而破旧，你可以看到数百人生活在监狱的各个级别的肮脏环境中。"
+    "这个地方又黑又破，你可以看到数百人生活在监狱的各个级别的肮脏牢房中。"
 
 # game/BKchapter3.rpy:9764
 translate schinese c3_meet_hound_knights_b2bd0f15:
 
     # "Screams of fear and pain regularily echo against the cold stone walls. You shiver and try not to pay attention to them."
-    "恐惧和痛苦的尖叫声经常在冰冷的石墙上回响。你颤抖着，尽量不去注意他们。"
+    "恐惧和痛苦的尖叫声经常在冰冷的石墙上回响。你颤抖着，尽量不去在意他们。"
 
 # game/BKchapter3.rpy:9768
 translate schinese c3_meet_hound_knights_d06cbe67:
@@ -20284,43 +20284,43 @@ translate schinese c3_meet_hound_knights_d06cbe67:
 translate schinese c3_meet_hound_knights_410f835e:
 
     # "You take a good look at the knight for the first time. He's like any other, but he bears an unusual red marking on his chestplate, resembling a scar. It could be a trick of the light, but the marking looks as if it is glowing from the inside."
-    "你第一次仔细观察骑士。他和其他人一样，但他的胸甲上有一个不寻常的红色标记，就像一道疤痕。这可能是光线的把戏，但标记看起来好像是从内部发光的。"
+    "你这才有空仔细观察骑士。他和其他人一样，但他的胸甲上有一个不寻常的红色印记，就像一道疤痕。这可能是光线导致的，但印记看起来好像是从内部发光的。"
 
 # game/BKchapter3.rpy:9774
 translate schinese c3_meet_hound_knights_1cabbfd6:
 
     # knight "Wait here."
-    knight "在这里等一下。"
+    knight "稍等片刻。"
 
 # game/BKchapter3.rpy:9778
 translate schinese c3_meet_hound_knights_23375778:
 
     # "The knight leaves the room. You can't help but notice he locked the door behind him. Something feels off."
-    "骑士离开房间。你情不自禁地注意到他把门锁在了身后。感觉有些不对劲。"
+    "骑士离开房间。你不由得注意到他把门顺手锁上了。感觉有些不对劲。"
 
 # game/BKchapter3.rpy:9782
 translate schinese c3_meet_hound_knights_dc0d29a9:
 
     # you "Looks like we're in."
-    you "看来我们已经进去了"
+    you "看来我们已经进来了"
 
 # game/BKchapter3.rpy:9784
 translate schinese c3_meet_hound_knights_f1fd0ef5:
 
     # suzume "Told ya! Winging it was the way to go."
-    suzume "告诉你了！随风而行是正确的选择。"
+    suzume "我就说吧！随风而行是正确的选择。"
 
 # game/BKchapter3.rpy:9786
 translate schinese c3_meet_hound_knights_068fa51f:
 
     # you "No one knows that we're here though. We could disappear now and no one would be the wiser."
-    you "但没有人知道我们在这里。我们现在可能会消失，没有人会更明智。"
+    you "但没有人知道我们在这里。我们现在可能会消失，没有人能发现我们。"
 
 # game/BKchapter3.rpy:9788
 translate schinese c3_meet_hound_knights_d5aee6e5:
 
     # you "I didn't like the look of that k-..."
-    you "我不喜欢那个k的样子..."
+    you "我不喜欢那个骑士的打扮..."
 
 # game/BKchapter3.rpy:9791
 translate schinese c3_meet_hound_knights_a5951d3a:
@@ -20338,37 +20338,37 @@ translate schinese c3_meet_hound_knights_8d2a9029:
 translate schinese c3_meet_hound_knights_943dc4aa:
 
     # you "I noticed. Lots of fishy business involving knights, don't you think?"
-    you "我注意到了。有很多涉及骑士的可疑交易，你不觉得吗？"
+    you "我注意到了。有很多涉及骑士团的可疑交易，你不觉得吗？"
 
 # game/BKchapter3.rpy:9799
 translate schinese c3_meet_hound_knights_e7a1f44e:
 
     # "You interrupt yourself as you hear the lock opens."
-    "当你听到锁打开的声音时，你打断了自己。"
+    "当你听到锁打开的声音时，你闭上了嘴。"
 
 # game/BKchapter3.rpy:9808
 translate schinese c3_meet_hound_knights_ccd25162:
 
     # "The knight you met ushers in another knight, who looks like small giant. You can tell he is an officer of sorts."
-    "你遇到的骑士迎来了另一位骑士，他看起来像小巨人。你可以看出他是一名军官。"
+    "你遇到的骑士带来了另一位骑士，他看起来像个小巨人。你可以看出他是一名军官。"
 
 # game/BKchapter3.rpy:9810
 translate schinese c3_meet_hound_knights_0b691726:
 
     # hound_knight "Well, what do we have here? Who are these civilians?"
-    hound_knight "那么，我们这里有什么？这些平民是谁？"
+    hound_knight "那么，发生什么事了？这些平民是谁？"
 
 # game/BKchapter3.rpy:9813
 translate schinese c3_meet_hound_knights_9e33aa25:
 
     # knight "They say they possess information about a potential intruder. A {i}kunoichi{/i}, Sir."
-    knight "他们说他们拥有有关潜在入侵者的信息。先生，{i}kunoichi{/i}。"
+    knight "他们说他们要汇报有关密谋的入侵者的信息。长官，是{i}女忍者{/i}。"
 
 # game/BKchapter3.rpy:9815
 translate schinese c3_meet_hound_knights_57732b66:
 
     # knight "I took the liberty to bring them in for you to interrogate."
-    knight "我冒昧地把他们带进来给你审问。"
+    knight "所以我就擅自做主把他们带进来给你审问。"
 
 # game/BKchapter3.rpy:9817
 translate schinese c3_meet_hound_knights_a43325ad:
@@ -20380,85 +20380,85 @@ translate schinese c3_meet_hound_knights_a43325ad:
 translate schinese c3_meet_hound_knights_d98e285b:
 
     # knight "The Warden sent them. On a mission for Lady Kenshin, apparently."
-    knight "典狱长派他们来的。显然是在为剑心夫人执行任务。"
+    knight "典狱长派他们来的。他们显然是在执行剑心的任务。"
 
 # game/BKchapter3.rpy:9822
 translate schinese c3_meet_hound_knights_66bd221d:
 
     # hound_knight "Hmph. We don't have time to entertain idle chat with guests, but if it suits Her Ladyship... *snark*"
-    hound_knight "哼。我们没有时间与客人闲聊，但如果这适合夫人的话...*讽刺*"
+    hound_knight "哼。我们可没有时间与客人闲聊，但如果是剑心派你们来的话...*讽刺*"
 
 # game/BKchapter3.rpy:9824
 translate schinese c3_meet_hound_knights_150ff371:
 
     # hound_knight "What business do you have with the Flaming Hounds?"
-    hound_knight "你和火焰猎犬有什么关系？"
+    hound_knight "你和火焰猎犬骑士团有什么关系？"
 
 # game/BKchapter3.rpy:9826
 translate schinese c3_meet_hound_knights_eb31d943:
 
     # you "Well, you are in charge of the maximum security area of the Prison, correct?"
-    you "嗯，监狱的最高警戒区域是你负责的，对吗？"
+    you "嗯，监狱的禁地是你负责看管的，对吗？"
 
 # game/BKchapter3.rpy:9828
 translate schinese c3_meet_hound_knights_1219fb13:
 
     # hound_knight "Aye. The prisoners here are the worst scum in all of Xeros, but we keep them in check. Using any means necessary."
-    hound_knight "是啊。这里的囚犯是所有 Xeros 中最糟糕的败类，但我们控制着他们。使用任何必要的手段。"
+    hound_knight "是啊。这里的囚犯是所有克塞洛斯中最糟糕的败类，但我们控制着他们。使用任何必要的手段。"
 
 # game/BKchapter3.rpy:9830
 translate schinese c3_meet_hound_knights_f9462646:
 
     # you "We got word of a plot to free one of the prisoners..."
-    you "我们得到消息称有人密谋释放一名囚犯..."
+    you "我们得到消息，有人密谋解救一名囚犯..."
 
 # game/BKchapter3.rpy:9832
 translate schinese c3_meet_hound_knights_dd7da28f:
 
     # you "Are you the one in charge of the maximum security part of the prison?"
-    you "你是监狱最高安全部分的负责人吗？"
+    you "你是监狱禁地的负责人吗？"
 
 # game/BKchapter3.rpy:9835
 translate schinese c3_meet_hound_knights_91a706e8:
 
     # hound_knight "{i}We{/i} are in charge here. Ever since the incident, the Order of the Flaming Hound is the only force allowed in the bowels of Xotar prison."
-    hound_knight "{i}我们{/i}负责这里。自事件发生以来，火焰猎犬教团就成为了索塔尔监狱内部唯一被允许的力量。"
+    hound_knight "{i}我们{/i}负责看守这里。自意外事件发生以来，火焰猎犬骑士团就成为了索塔尔监狱内部唯一合法的部队。"
 
 # game/BKchapter3.rpy:9837
 translate schinese c3_meet_hound_knights_5f838948:
 
     # you "The incident?"
-    you "事件发生？"
+    you "意外事件？"
 
 # game/BKchapter3.rpy:9839
 translate schinese c3_meet_hound_knights_ffdf7817:
 
     # hound_knight "A maximum security prisoner had an unfortunate accident recently. Some corrupt guard officer. That's what you get, when you leave high security to amateurs."
-    hound_knight "一名最高安全级别的囚犯最近遭遇了不幸的事故。一些腐败的警卫官员。当您将高度安全性留给业余爱好者时，这就是您所得到的。"
+    hound_knight "一名禁地的囚犯最近遭遇了不幸的事故。一些腐败的警卫官员。要是你指望这些业余的安保人员，这就是下场。"
 
 # game/BKchapter3.rpy:9842
 translate schinese c3_meet_hound_knights_c79891e5:
 
     # hound_knight "{i}We{/i}, the knights of the Flaming Hound, are in charge here."
-    hound_knight "{i}我们{/i}，火焰猎犬的骑士，负责这里的事务。"
+    hound_knight "{i}我们{/i}，火焰猎犬骑士团的骑士，确保这里万无一失。"
 
 # game/BKchapter3.rpy:9844
 translate schinese c3_meet_hound_knights_918d3bbf:
 
     # hound_knight "There used to be a small detachment of the Warden's incompetent guards, but they got scared and they left off."
-    hound_knight "典狱长的无能卫兵中曾经有一小队，但他们因为害怕而离开了。"
+    hound_knight "典狱长无能的卫兵中曾经有一支小队，但他们因为害怕而离开了。"
 
 # game/BKchapter3.rpy:9846
 translate schinese c3_meet_hound_knights_10fc7388:
 
     # hound_knight "But no one scares us. That's why they're only too happy to handle the scum down here."
-    hound_knight "但没有人吓到我们。这就是为什么他们非常乐意处理这里的败类。"
+    hound_knight "但我们无所畏惧。这就是为什么他们非常乐意处理这里的败类。"
 
 # game/BKchapter3.rpy:9848
 translate schinese c3_meet_hound_knights_870ed3ce:
 
     # you "I have never heard of your order before. Are you Kenshin's men?"
-    you "我以前从未听说过你的订单。你们是剑心的手下吗？"
+    you "我以前从未听说过你的事迹。你们是剑心大人的部下吗？"
 
 # game/BKchapter3.rpy:9850
 translate schinese c3_meet_hound_knights_5cb0879c:
@@ -20470,13 +20470,13 @@ translate schinese c3_meet_hound_knights_5cb0879c:
 translate schinese c3_meet_hound_knights_6643044b:
 
     # hound_knight "Of course you haven't. Our order favors discretion, among other things."
-    hound_knight "当然你还没有。除其他事项外，我们的命令有利于自由裁量权。"
+    hound_knight "你当然不可能听说过。与普通的任务不同，我们执行的都是上层直接指挥的特殊行动。"
 
 # game/BKchapter3.rpy:9854
 translate schinese c3_meet_hound_knights_7a9871c3:
 
     # hound_knight "We are of course loyal to the Crown and Her Ladyship, as the Commander of all knight orders of the first circle."
-    hound_knight "作为第一圈所有骑士团的指挥官，我们当然忠于王冠和夫人。"
+    hound_knight "作为第一骑士团的指挥官，我们当然忠于国王和王后。"
 
 # game/BKchapter3.rpy:9856
 translate schinese c3_meet_hound_knights_b0ecb5e5:
@@ -20488,97 +20488,97 @@ translate schinese c3_meet_hound_knights_b0ecb5e5:
 translate schinese c3_meet_hound_knights_195402fb:
 
     # hound_knight "Now that your curiosity has been sated, you will indulge mine. What is this plot you came to warn us about?"
-    hound_knight "现在你的好奇心已经满足了，你就满足我的好奇心吧。你来警告我们的阴谋是什么？"
+    hound_knight "现在你的好奇心已经满足了，该满足我的好奇心了。你说的阴谋是什么？"
 
 # game/BKchapter3.rpy:9860
 translate schinese c3_meet_hound_knights_685847ec:
 
     # you "Well..."
-    you "出色地..."
+    you "容我娓娓道来..."
 
 # game/BKchapter3.rpy:9862
 translate schinese c3_meet_hound_knights_2f03758c:
 
     # hound_knight "A word of warning, first. The Knights of the Flaming Hound are not renowned for their patience."
-    hound_knight "首先警告一句。火焰猎犬骑士团并不以耐心而闻名。"
+    hound_knight "首先警告一句。火焰猎犬骑士团并没有多少耐心。"
 
 # game/BKchapter3.rpy:9864
 translate schinese c3_meet_hound_knights_8a4c8af7:
 
     # "He leans forward towards you, bringing his helmet only a few inches from your face."
-    "他向前倾身向你，头盔离你的脸只有几英寸。"
+    "他向前倾身向你，头盔离你的脸只有几厘米。"
 
 # game/BKchapter3.rpy:9867
 translate schinese c3_meet_hound_knights_4869eb46:
 
     # hound_knight "Tell me, young lad, what was this about a {i}kunoichi{/i}?"
-    hound_knight "告诉我，小伙子，{i}kunoichi{/i} 是怎么回事？"
+    hound_knight "告诉我，年轻人，那些该死的{i}女忍者{/i}是怎么回事？"
 
 # game/BKchapter3.rpy:9870
 translate schinese c3_meet_hound_knights_aa961ffc:
 
     # hound_knight "Let us hear more about this {i}plot{/i} against our prison."
-    hound_knight "让我们详细了解这个针对我们监狱的{i}阴谋{/i}。"
+    hound_knight "详细解释一下这个针对我们监狱的{i}阴谋{/i}。"
 
 # game/BKchapter3.rpy:9878
 translate schinese c3_meet_hound_knights_1356d51f:
 
     # "You came here to discuss the Earth kunoichi, so it's time to get down to business."
-    "你来这里是为了讨论地球女忍，所以该开始正题了。"
+    "你来这里是为了得到土之忍者的情报，所以该开始进入正题了。"
 
 # game/BKchapter3.rpy:9880
 translate schinese c3_meet_hound_knights_3deac785:
 
     # you "Her name is Haruka. She a kunoichi from the Earth school. She's been skulking around the prison for some time."
-    you "她的名字叫遥。她是地球学派的女忍者。她已经在监狱里躲藏了一段时间了。"
+    you "她的名字叫鹰守遥。她是掌握土元素力量的女忍者。她已经在监狱里潜伏了一段时间了。"
 
 # game/BKchapter3.rpy:9882
 translate schinese c3_meet_hound_knights_b0837df7:
 
     # "The knight straigthens up."
-    "骑士直起身子。"
+    "骑士挺直腰板。"
 
 # game/BKchapter3.rpy:9884
 translate schinese c3_meet_hound_knights_81cd7d92:
 
     # hound_knight "Ah yes, we did know that, but thanks for confirming her identity. She's been poking around our defenses. Do you know her motives as well?"
-    hound_knight "啊，是的，我们确实知道这一点，但感谢您确认她的身份。她一直在刺探我们的防御。你也知道她的动机吗？"
+    hound_knight "啊，是的，我们也发现了这一点，但感谢您提供了她的身份信息。她一直在试探我们的防御。你知道她的动机吗？"
 
 # game/BKchapter3.rpy:9886
 translate schinese c3_meet_hound_knights_a995594c:
 
     # you "She's looking for her mentor, Subaru. The word is she's locked up in the maximum security area of this prison."
-    you "她正在寻找她的导师昴。据说她被关在这座监狱的最高安全区域。"
+    you "她正在寻找她的忍者导师昴。据说她被关在这座监狱的禁地。"
 
 # game/BKchapter3.rpy:9888
 translate schinese c3_meet_hound_knights_4e542a11:
 
     # hound_knight "Is that so..."
-    hound_knight "是这样吗..."
+    hound_knight "原来如此..."
 
 # game/BKchapter3.rpy:9890
 translate schinese c3_meet_hound_knights_7c4b866f:
 
     # "The head knight doesn't seem surprised."
-    "骑士团长似乎并不感到惊讶。"
+    "骑士团长似乎并不惊讶。"
 
 # game/BKchapter3.rpy:9896
 translate schinese c3_meet_hound_knights_e655a810:
 
     # "You decide to explore what they know about Subaru, the missing kunoichi."
-    "你决定探索他们对失踪女忍者昴的了解。"
+    "你决定打听一下关于失踪的女忍者昴的情报。"
 
 # game/BKchapter3.rpy:9898
 translate schinese c3_meet_hound_knights_a2976dab:
 
     # you "It's about a kunoichi called Subaru. She is believed to be in the city right now..."
-    you "这是关于一个叫昴的女忍者的故事。据信她现在在城里..."
+    you "那是一个叫昴的女忍者。据可靠消息称她现在就在泽恩..."
 
 # game/BKchapter3.rpy:9900
 translate schinese c3_meet_hound_knights_da5cc078:
 
     # "The knight doesn't flinch. He says nothing, waiting for you to continue."
-    "骑士没有退缩。他什么也没说，等着你继续。"
+    "骑士没有打断你。他什么也没说，等着你继续。"
 
 # game/BKchapter3.rpy:9902
 translate schinese c3_meet_hound_knights_d54c340f:
@@ -20590,7 +20590,7 @@ translate schinese c3_meet_hound_knights_d54c340f:
 translate schinese c3_meet_hound_knights_55eed6d9:
 
     # hound_knight "Pointless speculation. We know all the prisoners here. We have not registered anyone called 'Subaru'."
-    hound_knight "无意义的猜测。我们认识这里所有的囚犯。我们还没有注册任何名为“斯巴鲁”的人。"
+    hound_knight "毫无根据的猜测。我们认识这里所有的囚犯。这里没有任何名为“昴”的人。"
 
 # game/BKchapter3.rpy:9906
 translate schinese c3_meet_hound_knights_eeeec1d7:
@@ -20602,7 +20602,7 @@ translate schinese c3_meet_hound_knights_eeeec1d7:
 translate schinese c3_meet_hound_knights_af7482bd:
 
     # hound_knight "I don't see the need to continue this conversation."
-    hound_knight "我认为没有必要继续这个对话。"
+    hound_knight "我认为对话没有必要继续下去了。"
 
 # game/BKchapter3.rpy:9910
 translate schinese c3_meet_hound_knights_d635d7fb:
@@ -20614,19 +20614,19 @@ translate schinese c3_meet_hound_knights_d635d7fb:
 translate schinese c3_meet_hound_knights_e4a870a3:
 
     # you "Wait! Your man, here, reacted earlier when we mentioned a kunoichi. It cannot just be a coincidence..."
-    you "等待！当我们提到女忍者时，你的男人早些时候就做出了反应。这不可能只是巧合..."
+    you "等等！当我们提到女忍者时，你的手下立刻就有了反应。这不可能只是巧合..."
 
 # game/BKchapter3.rpy:9915
 translate schinese c3_meet_hound_knights_691214da:
 
     # hound_knight "Did he, now?"
-    hound_knight "他现在有吗？"
+    hound_knight "他现在有反应吗？"
 
 # game/BKchapter3.rpy:9917
 translate schinese c3_meet_hound_knights_c88e3763:
 
     # "You can see the smaller knight cower a little, but the head knight quickly returns his attention to you."
-    "你可以看到较小的骑士有点畏缩，但首席骑士很快就把注意力转向你。"
+    "你可以看到体型较小的骑士畏畏缩缩，但骑士团长很快就把注意力转向你。"
 
 # game/BKchapter3.rpy:9922
 translate schinese c3_meet_hound_knights_543cd00d:
