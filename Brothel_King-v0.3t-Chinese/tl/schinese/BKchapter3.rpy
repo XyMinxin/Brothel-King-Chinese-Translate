@@ -3466,7 +3466,7 @@ translate schinese c3_unlock_narika_479d6db4:
 translate schinese c3_unlock_narika_bfd9ab0b:
 
     # suzume "And put her in one of the Cimerian-built cells the perverted old man mentioned."
-    suzume "然后把她关进变态老头提到的西梅里安建造的一间牢房里。"
+    suzume "然后把她关进变态老头提到的席米亚建造的一间牢房里。"
 
 # game/BKchapter3.rpy:1703
 translate schinese c3_unlock_narika_6da4fbfd:
@@ -22804,37 +22804,37 @@ translate schinese c3_haruka_sewers_086ef755:
 translate schinese c3_haruka_sewers_0d7f4e4e:
 
     # haruka "(Let's wait until they're out of hearing range. Then we move.)"
-    haruka "（让我们等到他们超出听力范围。然后我们移动。）"
+    haruka "（等到他们走远了。然后我们再行动。）"
 
 # game/BKchapter3.rpy:10968
 translate schinese c3_haruka_sewers_8e43af99:
 
     # "You turn your attention back to the knight and his wretched prisoners, blinded by hoods."
-    "你把注意力转回到骑士和他那些被头巾蒙蔽的可怜囚犯身上。"
+    "你把注意力转回到骑士和他那些被头巾盖住的可怜囚犯身上。"
 
 # game/BKchapter3.rpy:10970
 translate schinese c3_haruka_sewers_4ca5fe3a:
 
     # "Elder prisoner" "Please, Sir! Where are you taking us? I-I can't walk much longer..."
-    "年长的囚犯" "拜托了，先生！你要带我们去哪里？我、我走不了多久了..."
+    "年长的囚犯" "拜托了，先生！你要带我们去哪里？我、我走不动了..."
 
 # game/BKchapter3.rpy:10972
 translate schinese c3_haruka_sewers_1d674723:
 
     # knight "Save your breath, old man. Or I'll be more than happy to give you the same treatment I gave that stupid guard."
-    knight "省点口气吧，老伙计。或者我会非常乐意给你和我对待那个愚蠢守卫一样的待遇。"
+    knight "省点口气吧，老东西。或者和那个愚蠢的守卫得到一样的待遇？"
 
 # game/BKchapter3.rpy:10974
 translate schinese c3_haruka_sewers_336ee60c:
 
     # "The knight places his hand on the wall and does something."
-    "骑士将手放在墙上，做了一些事情。"
+    "骑士将手放在墙上，鼓捣了一番。"
 
 # game/BKchapter3.rpy:10979
 translate schinese c3_haruka_sewers_ec117104:
 
     # "You can feel the rumble of stone as the wall slowly moves to reveal an entrance."
-    "当墙壁慢慢移动并露出入口时，您可以感受到石头的隆隆声。"
+    "当墙壁缓慢移动并露出入口时，你感受到岩壁的震动声。"
 
 # game/BKchapter3.rpy:10981
 translate schinese c3_haruka_sewers_90ef5ce6:
@@ -22846,13 +22846,13 @@ translate schinese c3_haruka_sewers_90ef5ce6:
 translate schinese c3_haruka_sewers_db40b5b4:
 
     # haruka "(We strike, now!)"
-    haruka "（我们罢工，现在！）"
+    haruka "（就是现在，行动！）"
 
 # game/BKchapter3.rpy:11002
 translate schinese c3_haruka_sewers_a35a0c9c:
 
     # "One second Haruka is besides you, the next she is leaping across the tunnel, closing the gap with the knight at a terrifying speed."
-    "前一秒遥还在你身边，下一秒她就跃过隧道，以可怕的速度缩小了与骑士的差距。"
+    "前一秒遥还在你身边，下一秒她就跃过了隧道，以可怕的速度逼近了骑士。"
 
 # game/BKchapter3.rpy:11006
 translate schinese c3_haruka_sewers_4e783466:
@@ -22864,7 +22864,7 @@ translate schinese c3_haruka_sewers_4e783466:
 translate schinese c3_haruka_sewers_32a35395:
 
     # "The knight doesn't have a chance to turn around before Haruka plunges her dagger in his neck, striking at the gap between his armor and helmet."
-    "骑士还没来得及转身，遥就将匕首插进他的脖子，击中了他盔甲和头盔之间的缝隙。"
+    "骑士还没来得及转身，遥就将匕首插进他的脖子，插进了盔甲和头盔之间的缝隙。"
 
 # game/BKchapter3.rpy:11016
 translate schinese c3_haruka_sewers_25d79d32:
@@ -22882,13 +22882,13 @@ translate schinese c3_haruka_sewers_e5639f63:
 translate schinese c3_haruka_sewers_017b03ff:
 
     # "The hooded prisoners start panicking, unable to see what just happened. Haruka snaps out of her daze."
-    "蒙面囚犯开始惊慌，无法看到刚刚发生的事情。遥从茫然中回过神来。"
+    "蒙面囚犯开始惊慌，他们无法看到刚刚发生的事情。遥从茫然中回过神来。"
 
 # game/BKchapter3.rpy:11022
 translate schinese c3_haruka_sewers_c393d72c:
 
     # haruka angry "Quick, [MC.name], come with me! We need to go get her!"
-    haruka angry "快，[MC.name]，跟我来！我们得去找她！"
+    haruka angry "快，[MC.name]，跟我来！我们得去救她！"
 
 # game/BKchapter3.rpy:11024
 translate schinese c3_haruka_sewers_db578ed0:
@@ -22906,25 +22906,25 @@ translate schinese c3_haruka_sewers_5c96ef6f:
 translate schinese c3_haruka_sewers_084428c6:
 
     # haruka "What about them? We have no time, [MC.name]!"
-    haruka "他们呢？我们没有时间，[MC.name]！"
+    haruka "你还有工夫管他们？我们没有时间浪费了，[MC.name]！"
 
 # game/BKchapter3.rpy:11034
 translate schinese c3_haruka_sewers_65b858ca:
 
     # you "I just can't leave them here..."
-    you "我就是不能把他们留在这里..."
+    you "可我不能把他们留在这里..."
 
 # game/BKchapter3.rpy:11036
 translate schinese c3_haruka_sewers_749fb348:
 
     # "Haruka sighs with exasperation as you remove the hooded sacks from their heads. She helps you snap their bounds open with her steel."
-    "当你从他们头上取下带兜帽的麻袋时，遥恼怒地叹了口气。她可以帮助你用她的钢铁打破他们的界限。"
+    "当你从他们头上取下带兜帽的麻袋时，遥恼怒地叹了口气。她帮你粉碎了他们的镣铐。"
 
 # game/BKchapter3.rpy:11038
 translate schinese c3_haruka_sewers_daeb6ffe:
 
     # "The prisoners are an old man and his teenage daughter, whom on better days look like they might have been part of good society."
-    "囚犯是一位老人和他十几岁的女儿，在美好的日子里，他们看起来可能是上流社会的一部分。"
+    "囚犯是一位老人和他十几岁的女儿，在还未被逮捕时，他们可能是什么上流人士。"
 
 # game/BKchapter3.rpy:11040
 translate schinese c3_haruka_sewers_caf7b185:
@@ -22936,7 +22936,7 @@ translate schinese c3_haruka_sewers_caf7b185:
 translate schinese c3_haruka_sewers_6b971bc9:
 
     # haruka defiant "Here, happy now? Now, let's go!"
-    haruka defiant "来了，现在幸福吗？现在，我们走吧！"
+    haruka defiant "来了，现在满意了吗？快点，我们走吧！"
 
 # game/BKchapter3.rpy:11051
 translate schinese c3_haruka_sewers_5e9f6f6b:
@@ -22948,7 +22948,7 @@ translate schinese c3_haruka_sewers_5e9f6f6b:
 translate schinese c3_haruka_sewers_c8fdad92:
 
     # "Haruka charges recklessly inside the Prison through the secret entrance, barely giving you time to follow."
-    "遥从秘密入口鲁莽地冲进监狱，几乎不给你跟上的时间。"
+    "遥从秘密入口鲁莽地冲进监狱，几乎不给你反应的时间。"
 
 # game/BKchapter3.rpy:11062
 translate schinese c3_haruka_rescue_7bbed873:
@@ -22960,37 +22960,37 @@ translate schinese c3_haruka_rescue_7bbed873:
 translate schinese c3_haruka_rescue_0e712770:
 
     # "Haruka stops, looking uncertain."
-    "遥停了下来，看上去有些不确定。"
+    "遥停了下来，看上去有些犹豫。"
 
 # game/BKchapter3.rpy:11066
 translate schinese c3_haruka_rescue_527013c3:
 
     # haruka surprise "The vibrations, I can't feel them any more. I can't locate Subaru!"
-    haruka surprise "振动，我再也感觉不到了。我找不到昴！"
+    haruka surprise "共鸣，我再也感觉不到了。我找不到昴了！"
 
 # game/BKchapter3.rpy:11068
 translate schinese c3_haruka_rescue_49b7dca0:
 
     # you "These walls are Cimerian-built. I think they have wards against magic."
-    you "这些墙是西梅里安人建造的。我认为他们有魔法防护装置。"
+    you "这些墙是席米亚人建造的。我认为里面有魔法防护装置。"
 
 # game/BKchapter3.rpy:11070
 translate schinese c3_haruka_rescue_e64b0df3:
 
     # haruka angry "Damn it!"
-    haruka angry "该死的！"
+    haruka angry "该死！"
 
 # game/BKchapter3.rpy:11073
 translate schinese c3_haruka_rescue_005f039b:
 
     # you "Wait, I recognize this corridor... We're close to Subaru now!"
-    you "等等，我认得这条走廊...我们已经接近昴了！"
+    you "等等，我认得这条走廊...我们已经很接近昴了！"
 
 # game/BKchapter3.rpy:11075
 translate schinese c3_haruka_rescue_f2fe45a1:
 
     # you "It seems like we are already in the deepest part of the Prison... She can't be very far now, can she?"
-    you "看来已经到了监狱的最深处...她现在不可能走得太远吧？"
+    you "看来我们已经到了监狱的最深处...她现在不可能走得太远吧？"
 
 # game/BKchapter3.rpy:11077
 translate schinese c3_haruka_rescue_6060c2a7:
@@ -23002,43 +23002,43 @@ translate schinese c3_haruka_rescue_6060c2a7:
 translate schinese c3_haruka_rescue_73619529:
 
     # "Haruka shows you some markings on the wall. To you, they look like a series of random scratches."
-    "Haruka 向你展示了墙上的一些标记。对你来说，它们看起来像是一系列随机的划痕。"
+    "遥向你展示了墙上的一些标记。对你来说，它们看起来像是一系列随机的划痕。"
 
 # game/BKchapter3.rpy:11081
 translate schinese c3_haruka_rescue_ce3366f7:
 
     # haruka "I recognize this, this is a code from the Earth school. Subaru must have found a way to leave this alongside the way, behind her captors' back."
-    haruka "我认得，这是地球学派的密码。昴肯定找到了一种方法，可以把这一切留在路边，背着她的绑架者。"
+    haruka "我认得，这是大地氏族的暗号。昴肯定找到了一种方法，在守卫没注意到的时候留下了这些记号。"
 
 # game/BKchapter3.rpy:11083
 translate schinese c3_haruka_rescue_59c03581:
 
     # haruka "This should lead her to her cell!"
-    haruka "这应该会引导她到她的牢房！"
+    haruka "这应该会引导我们找到她的牢房！"
 
 # game/BKchapter3.rpy:11086
 translate schinese c3_haruka_rescue_eaebe435:
 
     # "After just a few turns, you finally reach the cells."
-    "经过几个转弯后，你终于到达了牢房。"
+    "转了好几个弯后，你终于到达了牢房。"
 
 # game/BKchapter3.rpy:11090
 translate schinese c3_haruka_rescue_8df7973b:
 
     # haruka "The trail ends here!"
-    haruka "步道到这里就结束了！"
+    haruka "这里就是尽头了！"
 
 # game/BKchapter3.rpy:11092
 translate schinese c3_haruka_rescue_40a200c3:
 
     # you "There are no guards..."
-    you "没有守卫..."
+    you "这里居然没有守卫..."
 
 # game/BKchapter3.rpy:11094
 translate schinese c3_haruka_rescue_5861b412:
 
     # haruka "We've been lucky! Look, it's her cell! Quick, let's break her out!"
-    haruka "我们很幸运！看，这是她的手机！快点，让我们把她救出来！"
+    haruka "我们很幸运！看，这是她的牢房！快点，让我们把她救出来！"
 
 # game/BKchapter3.rpy:11096
 translate schinese c3_haruka_rescue_e30c566a:
@@ -23050,7 +23050,7 @@ translate schinese c3_haruka_rescue_e30c566a:
 translate schinese c3_haruka_rescue_8e4e291f:
 
     # "Without listening to you, Haruka throws a ninja bomb at the cell's door, blowing it open." with vpunch
-    "遥不听你的话，向牢房的门扔了一枚忍者炸弹，将牢房的门炸开了。" with vpunch
+    "遥无视了你，向牢房的门口扔了一枚忍者特制炸弹，将牢房的门炸开了。" with vpunch
 
 # game/BKchapter3.rpy:11103
 translate schinese c3_haruka_rescue_ab65055f:
@@ -23068,13 +23068,13 @@ translate schinese c3_haruka_rescue_289db849:
 translate schinese c3_haruka_rescue_87025a6b:
 
     # subaru "Haruka? Is that you?"
-    subaru "遥？那是你吗？"
+    subaru "遥？是你吗？"
 
 # game/BKchapter3.rpy:11109
 translate schinese c3_haruka_rescue_cd0bb754:
 
     # haruka "It' me, Sensei! We're breaking you out!"
-    haruka "是我，老师！我们要让你出去！"
+    haruka "是我，老师！我们来救你出去！"
 
 # game/BKchapter3.rpy:11113
 translate schinese c3_haruka_rescue_a662e7fd:
@@ -23086,43 +23086,43 @@ translate schinese c3_haruka_rescue_a662e7fd:
 translate schinese c3_haruka_rescue_9fd5deff:
 
     # subaru "We? Who's with you?"
-    subaru "我们？谁和你在一起？"
+    subaru "我们？你和谁在一起？"
 
 # game/BKchapter3.rpy:11120
 translate schinese c3_haruka_rescue_e648c242:
 
     # haruka "This is [MC.name]. He can be trusted. We need to make our way out, now. Can you walk?"
-    haruka "这是[MC.name]。他是值得信赖的。我们现在需要出去。你能走路吗？"
+    haruka "这是[MC.name]。他值得信赖。我们现在要想办法出去。你还走得动吗？"
 
 # game/BKchapter3.rpy:11123
 translate schinese c3_haruka_rescue_70d80b0b:
 
     # subaru "This man... This man..."
-    subaru "这个男人...这个男人..."
+    subaru "这个家伙...这个家伙..."
 
 # game/BKchapter3.rpy:11125
 translate schinese c3_haruka_rescue_fb5757fb:
 
     # haruka "What is it, Subaru?"
-    haruka "这是什么，昴？"
+    haruka "他怎么了，昴？"
 
 # game/BKchapter3.rpy:11127
 translate schinese c3_haruka_rescue_680fbb35:
 
     # subaru "He's with them!"
-    subaru "他和他们在一起！"
+    subaru "他和他们是一伙的！"
 
 # game/BKchapter3.rpy:11135
 translate schinese c3_haruka_rescue_f42734c5:
 
     # "Faster than your eyes can hope to follow, Subaru leaps at you, plunging her blade through your heart."
-    "昴以比你的眼睛所能追随的速度更快的速度向你扑来，将她的剑刺入你的心脏。"
+    "昴用你无法捕捉到的速度向你扑来，将她手里的剑刺入你的心脏。"
 
 # game/BKchapter3.rpy:11137
 translate schinese c3_haruka_rescue_3af955bf:
 
     # subaru "Die, monster..."
-    subaru "去死吧，怪物..."
+    subaru "去死吧，畜生..."
 
 # game/BKchapter3.rpy:11141
 translate schinese c3_haruka_rescue_6567f73d:
@@ -23140,7 +23140,7 @@ translate schinese c3_haruka_rescue_e5a7681a:
 translate schinese c3_haruka_rescue_32b7e4cb:
 
     # subaru "Yes, don't worry about me. Lead the way."
-    subaru "是的，不用担心我。带路。"
+    subaru "是的，不用担心我。带路吧。"
 
 # game/BKchapter3.rpy:11156
 translate schinese c3_haruka_rescue_2adb7e3d:
@@ -23152,7 +23152,7 @@ translate schinese c3_haruka_rescue_2adb7e3d:
 translate schinese c3_haruka_rescue_9c9a7bd2:
 
     # hound_knight "Look what the hound dragged in... Haruka, the bitch ninja's own little whelp."
-    hound_knight "看看猎犬拖进来的是什么...遥，母狗忍者自己的小崽子。"
+    hound_knight "看看猎犬拖进来的是什么...遥，母狗忍者培养的小崽子。"
 
 # game/BKchapter3.rpy:11184
 translate schinese c3_haruka_rescue_ad4bdb6d:
@@ -23170,73 +23170,73 @@ translate schinese c3_haruka_rescue_1e1dac3a:
 translate schinese c3_haruka_rescue_e786ecd3:
 
     # haruka angry "What the hell are you saying! I've never met you in my life" with vpunch
-    haruka angry "你到底在说什么啊！我一生中从未见过你" with vpunch
+    haruka angry "你在说什么啊！我从来没见过你" with vpunch
 
 # game/BKchapter3.rpy:11190
 translate schinese c3_haruka_rescue_715480a5:
 
     # hound_knight "Oh, but you have..."
-    hound_knight "哦，但是你有..."
+    hound_knight "哦，看来你忘了..."
 
 # game/BKchapter3.rpy:11217
 translate schinese c3_haruka_rescue_2fb39cc8:
 
     # noroi_leader "Haven't you?"
-    noroi_leader "你没有吗？"
+    noroi_leader "我们没见过吗？"
 
 # game/BKchapter3.rpy:11219
 translate schinese c3_haruka_rescue_f49ac211:
 
     # haruka "No! No! It's impossible..."
-    haruka "不！不！这是不可能的..."
+    haruka "不！不！这不可能..."
 
 # game/BKchapter3.rpy:11221
 translate schinese c3_haruka_rescue_7a8c3662:
 
     # subaru "These knights. They're Noroi, Haruka."
-    subaru "这些骑士。他们是诺罗伊、遥。"
+    subaru "这些骑士。他们是诺罗伊魔族，遥。"
 
 # game/BKchapter3.rpy:11223
 translate schinese c3_haruka_rescue_60c99589:
 
     # you "What in the Seven Hells is this?"
-    you "这是七层地狱里的什么？"
+    you "这到底是什么见鬼的情况？"
 
 # game/BKchapter3.rpy:11226
 translate schinese c3_haruka_rescue_5eb4d106:
 
     # "Noroi Leader" "And here is our little interloper... The Princess's own errand boy."
-    "诺罗伊领袖" "这是我们的小闯入者...公主自己的跑腿。"
+    "诺罗伊首领" "这位则是我们的小入侵者...公主的狗腿子。"
 
 # game/BKchapter3.rpy:11228
 translate schinese c3_haruka_rescue_279060e1:
 
     # "Noroi Leader" "And who is that fool?"
-    "诺罗伊领袖" "那个傻瓜是谁？"
+    "诺罗伊首领" "那个傻瓜是谁？"
 
 # game/BKchapter3.rpy:11230
 translate schinese c3_haruka_rescue_68622b80:
 
     # noroi_leader "No matter, just kill him. And get the girls alive. Cut off their limbs if you have, to but don't let them die!"
-    noroi_leader "没关系，杀了他就行了。并让女孩们活下去。如果有的话就砍掉他们的四肢，但不要让他们死！"
+    noroi_leader "没关系，杀了他。让这些雌性活下去。如果需要的话就砍掉他们的四肢，但别让他们死了！"
 
 # game/BKchapter3.rpy:11232
 translate schinese c3_haruka_rescue_1254aa4d:
 
     # "Norois" "Yes, boss!!!" with vpunch
-    "诺鲁瓦" "是的，老大！！！" with vpunch
+    "诺鲁瓦" "遵命，首领！！！" with vpunch
 
 # game/BKchapter3.rpy:11237
 translate schinese c3_haruka_rescue_2d6e96e2:
 
     # "Clutching your sword, you empty your mind, ready to enter the fray."
-    "你握紧你的剑，清空你的思绪，准备投入战斗。"
+    "你握紧你的剑，理清思绪，准备投入战斗。"
 
 # game/BKchapter3.rpy:11239
 translate schinese c3_haruka_rescue_a93db0aa:
 
     # "Unable to use your spells, you are at a serious disadvantage. You will have to think quick."
-    "无法使用你的法术，你处于严重的劣势。你必须快速思考。"
+    "你无法在这里使用法术，你现在处于下风。你必须快速思考。"
 
 # game/BKchapter3.rpy:11242
 translate schinese c3_haruka_rescue_e7e56548:
@@ -23248,55 +23248,55 @@ translate schinese c3_haruka_rescue_e7e56548:
 translate schinese c3_haruka_rescue_745c1cd9:
 
     # "A loud roar echoes through the corridors. You know your pet dragon has been following you the whole time, and he is now rushing to help."
-    "一声巨响在走廊里回荡。你知道你的宠物龙一直跟着你，现在他正冲过来帮忙。"
+    "一声巨响在走廊里回荡。你知道你的宠物龙一直跟着你，现在它正冲过来帮忙。"
 
 # game/BKchapter3.rpy:11258
 translate schinese c3_haruka_rescue_e97f8631:
 
     # "The first Noroi comes clawing at you, mistaking you for an easy target."
-    "第一个诺罗伊来抓你，误以为你是一个容易攻击的目标。"
+    "一个魔族来抓你，他以为你是一个很好解决的目标。"
 
 # game/BKchapter3.rpy:11265
 translate schinese c3_haruka_rescue_7c477f45:
 
     # "Your blade slashes through him like butter, and he gives you a dumbfounded look as his body is sliced cleanly in halves."
-    "你的刀刃像黄油一样切过他，他的身体被干净利落地切成两半，你一脸愕然。"
+    "你的刀刃像切黄油一样切过他，他的身体被干净利落地切成两半，你一脸愕然。"
 
 # game/BKchapter3.rpy:11270
 translate schinese c3_haruka_rescue_48bc8fba:
 
     # "Reduced to using your staff as a mace, you hit the charging demon in the face, eliciting a painful grunt."
-    "你只能用你的法杖作为狼牙棒，击中冲锋恶魔的脸，引发痛苦的咕噜声。"
+    "你只能用你的法杖作为物理武器攻击，你击中了冲锋的恶魔的脸，引起一阵痛苦的咕噜声。"
 
 # game/BKchapter3.rpy:11274
 translate schinese c3_haruka_rescue_48d51025:
 
     # "Before he can recover, you grab your staff with both hands and bring it down on his skull, hearing a statisfying crunch."
-    "在他恢复过来之前，你用双手抓住你的手杖，将其放在他的头骨上，听到令人满足的嘎吱声。"
+    "在他恢复过来之前，你用双手抓住你的法杖，锤在他的头骨上，传来一阵令人满足的嘎吱声。"
 
 # game/BKchapter3.rpy:11280
 translate schinese c3_haruka_rescue_6b35a3d6:
 
     # "His cry of triumph becomes a scream as Drogon swoops in and locks his neck between his jaws, crushing it."
-    "当卓耿猛扑过来，将他的脖子锁在下巴之间，将其压碎时，他胜利的呼喊变成了尖叫。"
+    "当龙猛扑过来，把他的脖子扭在下巴之间，将其压碎时，他胜利的呼喊变成了尖叫。"
 
 # game/BKchapter3.rpy:11284
 translate schinese c3_haruka_rescue_d16cabf3:
 
     # "Demon blood splashes around as Drogon increases the pressure, while the demon jerks around helplessly. It isn't long before he stops moving."
-    "随着卓耿增加压力，恶魔的血液四处飞溅，而恶魔则无助地扭动着。没过多久他就停止了动作。"
+    "随着龙增加力道，恶魔的血液四处飞溅，他无助地扭动着。没过多久他就停止了呼吸。"
 
 # game/BKchapter3.rpy:11291
 translate schinese c3_haruka_rescue_caf96a67:
 
     # "A shriek of pain comes from the next Noroi as Subaru severs his arm at shoulder level, before swirling and taking his head off."
-    "下一个诺罗伊发出一声痛苦的尖叫，昴在肩膀处切断了他的手臂，然后旋转并砍下了他的头。"
+    "下一个魔族发出一声痛苦的尖叫，昴在肩膀处切断了他的手臂，然后旋转并砍下了他的头。"
 
 # game/BKchapter3.rpy:11301
 translate schinese c3_haruka_rescue_c480189b:
 
     # "Haruka also found her mark, sticking two kunais in the chest of her victim before extending her arms outwards and ripping it open."
-    "遥也发现了她的痕迹，将两颗苦无刺入受害者的胸口，然后向外伸出双臂，将其撕开。"
+    "遥也选择了她的目标，她将两颗苦无刺入胸口，然后向外伸出双臂，将其撕开。"
 
 # game/BKchapter3.rpy:11303
 translate schinese c3_haruka_rescue_cd2de33d:
@@ -23308,43 +23308,43 @@ translate schinese c3_haruka_rescue_cd2de33d:
 translate schinese c3_haruka_rescue_7938b911:
 
     # "The last Noroi soldier hesitates just a bit too long before a kunai thrown by Haruka hits his throat. He dies in a gurgle."
-    "最后一名诺罗伊士兵犹豫了太久，遥扔出的苦无击中了他的喉咙。他在咯咯声中死去。"
+    "最后一名魔族士兵犹豫了许久，遥扔出的苦无击中了他的喉咙。他在咯咯声中死去。"
 
 # game/BKchapter3.rpy:11313
 translate schinese c3_haruka_rescue_a458e766:
 
     # subaru "It's just you, now, demon!"
-    subaru "现在只有你了，恶魔！"
+    subaru "现在就剩你了，恶魔！"
 
 # game/BKchapter3.rpy:11315
 translate schinese c3_haruka_rescue_45acc948:
 
     # noroi_leader "You will not get past me! I should have killed you a long time after all, but now I won't make that mistake!"
-    noroi_leader "你不会超越我的！我本来早就该杀了你的，但现在我不会再犯这样的错误了！"
+    noroi_leader "你无法击败我！我本来早就该杀了你的，但现在我不会再犯这样的错误了！"
 
 # game/BKchapter3.rpy:11322
 translate schinese c3_haruka_rescue_d77bafb4:
 
     # "Dark energy swirls around the Noroi as he seems to feed on the remains of his dead comrades. He ends up towering above all of you, large as an ogre."
-    "黑暗能量在诺罗伊人周围盘旋，他似乎正在以死去战友的遗体为食。他最终比你们所有人都高大，像食人魔一样高大。"
+    "黑暗能量在魔族周围盘旋，他似乎正在以死去战友的遗体为养料。他的体型变得越来越大，像食人魔一样高大。"
 
 # game/BKchapter3.rpy:11326
 translate schinese c3_haruka_rescue_9121f97a:
 
     # noroi_leader "Hyaaaaahahaha, POWER!!!"
-    noroi_leader "哈哈哈哈，力量！！！"
+    noroi_leader "哈哈哈哈，我充满了力量！！！"
 
 # game/BKchapter3.rpy:11328
 translate schinese c3_haruka_rescue_91b0617a:
 
     # noroi_leader "Now you DIE!"
-    noroi_leader "现在你死了！"
+    noroi_leader "全都去死吧！"
 
 # game/BKchapter3.rpy:11333
 translate schinese c3_haruka_rescue_c1a843dd:
 
     # "Charging at you with surprising speed, you barely have time to avoid the demon's strike but the shock sends you flying into the wall, hitting your head hard."
-    "以惊人的速度向你冲来，你几乎没有时间躲避恶魔的攻击，但冲击力却让你飞到墙上，重重地撞到你的头。"
+    "他以惊人的速度向你冲来，你来不及躲避恶魔的攻击，冲击力让你飞到墙上，你的头受到了猛烈的撞击。"
 
 # game/BKchapter3.rpy:11335
 translate schinese c3_haruka_rescue_b7151261:
@@ -23356,19 +23356,19 @@ translate schinese c3_haruka_rescue_b7151261:
 translate schinese c3_haruka_rescue_f6f358d8:
 
     # "Subaru and Haruka dodged away, but he is on them in an instant. Subaru can barely parry his flurry of attacks with her good arm, while Haruka struggles to find an opening."
-    "昴和遥躲开了，但他立刻就追上了他们。昴无法用她完好的手臂来抵挡他的一连串攻击，而遥则努力寻找突破口。"
+    "昴和遥躲开了，但他立刻就追上了他们。昴无法只用独臂来抵挡他的连续攻击，而遥则努力寻找突破口。"
 
 # game/BKchapter3.rpy:11339
 translate schinese c3_haruka_rescue_bae04b3b:
 
     # noroi_leader "Your temple is over! Your people is over!"
-    noroi_leader "你的寺庙完蛋了！你的人完了！"
+    noroi_leader "你的神社已经被毁灭了！你的族人也完了！"
 
 # game/BKchapter3.rpy:11343
 translate schinese c3_haruka_rescue_8afcc9f1:
 
     # noroi_leader "With every life you lose, you grow weaker, but we feed on death! We are unstoppable!"
-    noroi_leader "每失去一个生命，你就会变得更加虚弱，但我们却以死亡为食！我们势不可挡！"
+    noroi_leader "每失去一个生命，你就会变得更加虚弱，而我们却以死亡为食！我们势不可挡！"
 
 # game/BKchapter3.rpy:11347
 translate schinese c3_haruka_rescue_95ac7267:
@@ -23386,7 +23386,7 @@ translate schinese c3_haruka_rescue_57abdde9:
 translate schinese c3_haruka_rescue_6f30d585:
 
     # "Seeing a fleeting opening in his guard, Subaru kicks him right in the chin, sending his head flinging backwards."
-    "昴看到他的防备稍稍被突破，一脚踢在他的下巴上，把他的头向后甩了出去。"
+    "昴看到他露出了一丝破绽，一脚踢在他的下巴上，把他的头向后甩了出去。"
 
 # game/BKchapter3.rpy:11356
 translate schinese c3_haruka_rescue_d7c8125d:
@@ -23398,13 +23398,13 @@ translate schinese c3_haruka_rescue_d7c8125d:
 translate schinese c3_haruka_rescue_9b5f9fe9:
 
     # "Stumbling blindly forward, trying to grab her, the Noroi ogre fails to see Subaru is already sliding between his legs, slashing at the back of both his knees."
-    "诺罗伊食人魔盲目地向前跌跌撞撞，试图抓住她，却没有看到昴已经在他的双腿之间滑动，划伤了他的双膝后面。"
+    "魔族视野受限跌跌撞撞，试图抓住她，却没有看到昴已经在他的双腿之间滑动，划伤了他的双膝。"
 
 # game/BKchapter3.rpy:11361
 translate schinese c3_haruka_rescue_32cea6c1:
 
     # "*SLASH*"
-    "*削减*"
+    "*斩击*"
 
 # game/BKchapter3.rpy:11364
 translate schinese c3_haruka_rescue_74b56890:
@@ -23416,7 +23416,7 @@ translate schinese c3_haruka_rescue_74b56890:
 translate schinese c3_haruka_rescue_2507392a:
 
     # "The demon flips around. He nearly crushes Subaru's head with his weapon, but Haruka blocks it at the last moment."
-    "恶魔翻身。他差点用武器砸碎昴的头，但遥在最后一刻挡住了它。"
+    "恶魔转过身来。他差点用武器砸碎昴的头，但遥在最后一刻挡住了它。"
 
 # game/BKchapter3.rpy:11372
 translate schinese c3_haruka_rescue_3046a2d7:
@@ -23440,13 +23440,13 @@ translate schinese c3_haruka_rescue_3c0e3db3:
 translate schinese c3_haruka_rescue_a1f753b3:
 
     # you "(It's my chance!)"
-    you "（这是我的机会！）"
+    you "（好机会！）"
 
 # game/BKchapter3.rpy:11380
 translate schinese c3_haruka_rescue_e7b839a0:
 
     # "Having regained your footing, you take advantage of the giant's inattention."
-    "重新站稳脚跟后，你利用了巨人的疏忽。"
+    "稳住身形后，你利用了巨人的疏忽。"
 
 # game/BKchapter3.rpy:11382
 translate schinese c3_haruka_rescue_248fda6d:
@@ -23470,13 +23470,13 @@ translate schinese c3_haruka_rescue_4e7aba2c:
 translate schinese c3_haruka_rescue_875c8025:
 
     # "The monster trashes around as dark blood spurts from his neck, trying to shake you off. Eventually, he manages to fling you off, turning around to face you."
-    "怪物四处乱窜，黑色的血液从他的脖子上喷涌而出，试图将你甩开。最终，他成功地把你甩开，转身面对你。"
+    "他四处冲撞，黑色的血液从他的脖子上喷涌而出，他试图将你甩开。最终，他成功地把你甩开，转身面对你。"
 
 # game/BKchapter3.rpy:11395
 translate schinese c3_haruka_rescue_7c8f4ea5:
 
     # noroi_leader "YOU WORM! ANY LAST WORDS?!?" with vpunch
-    noroi_leader "你这个蠕虫！最后一句话？！？" with vpunch
+    noroi_leader "你这个蠕虫！还有什么遗言要说吗？！？" with vpunch
 
 # game/BKchapter3.rpy:11404
 translate schinese c3_haruka_rescue_856b7835:
@@ -23494,19 +23494,19 @@ translate schinese c3_haruka_rescue_62b13028:
 translate schinese c3_haruka_rescue_bc757986:
 
     # "As his lifeless body crashes to the ground, you can see Subaru standing behind him, her blade covered in gore."
-    "当他毫无生气的身体倒在地上时，你可以看到昴站在他身后，她的剑上沾满了血迹。"
+    "当他毫无生机的身体倒在地上时，你看到昴站在他身后，她的剑上沾满了血迹。"
 
 # game/BKchapter3.rpy:11435
 translate schinese c3_haruka_rescue_68cb7756:
 
     # subaru "Phew. Thanks, you guys. It nearly got the best of us."
-    subaru "唷。谢谢你们。它几乎打败了我们最好的人。"
+    subaru "呼。谢谢你们。它差点就杀了我们最强的人。"
 
 # game/BKchapter3.rpy:11437
 translate schinese c3_haruka_rescue_5488107c:
 
     # subaru "I'm really badly out of shape."
-    subaru "我的身材真的很差。"
+    subaru "我的身体大不如前了。"
 
 # game/BKchapter3.rpy:11442
 translate schinese c3_haruka_rescue_7a75e712:
@@ -23530,13 +23530,13 @@ translate schinese c3_haruka_rescue_eedb6de6:
 translate schinese c3_haruka_rescue_a7f5bc7d:
 
     # you "Ladies, shall we get out of here? I think we've overstayed our welcome."
-    you "女士们，我们要离开这里吗？我认为我们已经超出了我们的欢迎范围。"
+    you "女士们，我们要离开这里吗？我认为我们已经不受欢迎了。"
 
 # game/BKchapter3.rpy:11450
 translate schinese c3_haruka_rescue_f2511b56:
 
     # subaru "I for one would love to leave this place behind. Lead the way."
-    subaru "我很想离开这个地方。带路。"
+    subaru "我也很想离开这个地方。带路吧。"
 
 # game/BKchapter3.rpy:11454
 translate schinese c3_haruka_rescue_13d734ce:
@@ -23548,7 +23548,7 @@ translate schinese c3_haruka_rescue_13d734ce:
 translate schinese c3_haruka_rescue_66900265:
 
     # "Running like the wind, Haruka leads you and Subaru back through the maze of corridors. You're glad that she has memorized the way perfectly, as it is easy to get lost in the dimly-lit prison."
-    "遥像风一样奔跑，带领着你和昴穿过迷宫般的走廊。你很高兴她把路记住得很好，因为在光线昏暗的监狱里很容易迷路。"
+    "遥像风一样奔跑，带领着你和昴穿过迷宫般的走廊。你很高兴她完全记住了路线，因为在光线昏暗的监狱里很容易迷路。"
 
 # game/BKchapter3.rpy:11468
 translate schinese c3_haruka_rescue_0737222c:
@@ -23578,13 +23578,13 @@ translate schinese c3_haruka_rescue_f1139507:
 translate schinese c3_haruka_rescue_34b8e680:
 
     # "With horror, you realize you stumbled on a mangled corpse. Although its features are barely recognizeable, you realize it's one of the shackled prisoners from earlier."
-    "你惊恐地发现自己无意中发现了一具血肉模糊的尸体。虽然它的面容几乎无法辨认，但你意识到它是之前被戴上镣铐的囚犯之一。"
+    "你惊恐地发现自己无意间撞到了一具血肉模糊的尸体。虽然它的面容几乎无法辨认，但你意识到它是之前被戴上镣铐的囚犯之一。"
 
 # game/BKchapter3.rpy:11480
 translate schinese c3_haruka_rescue_c7c51704:
 
     # "The body of the other prisoner is further away in the sewer, missing some limbs."
-    "另一名囚犯的尸体在距离下水道较远的地方，失去了一些四肢。"
+    "另一名囚犯的尸体在距离下水道较远的地方，失去了一些肢体。"
 
 # game/BKchapter3.rpy:11482
 translate schinese c3_haruka_rescue_cdb0ce9e:
@@ -23596,7 +23596,7 @@ translate schinese c3_haruka_rescue_cdb0ce9e:
 translate schinese c3_haruka_rescue_5622a77f:
 
     # haruka sad "Seems like some sewer monster got to them while they were left here..."
-    haruka sad "好像他们被留在这里的时候，有什么下水道怪物袭击了他们..."
+    haruka sad "好像他们被留在这里的时候，有什么下水道里的怪物袭击了他们..."
 
 # game/BKchapter3.rpy:11486
 translate schinese c3_haruka_rescue_305da459:
@@ -23608,13 +23608,13 @@ translate schinese c3_haruka_rescue_305da459:
 translate schinese c3_haruka_rescue_dfa790be:
 
     # haruka "I'm sorry. What's done is done."
-    haruka "对不起。已经完成的事情已经完成了。"
+    haruka "对不起。但已经无法挽回了。"
 
 # game/BKchapter3.rpy:11490
 translate schinese c3_haruka_rescue_4b05228b:
 
     # subaru "Let's leave before the Noroi catch up to us... Or this 'thing' comes back for seconds."
-    subaru "让我们在诺罗伊人追上我们之前离开吧...否则这个“东西”会回来几秒钟。"
+    subaru "让我们在诺罗伊魔族追上我们之前离开吧...否则这个“东西”随时可能会出现。"
 
 # game/BKchapter3.rpy:11493
 translate schinese c3_haruka_rescue_e3161885:
@@ -23626,49 +23626,49 @@ translate schinese c3_haruka_rescue_e3161885:
 translate schinese c3_free_subaru_5155ea07:
 
     # "You manage to make your way back to another sewer exit, where you previously set up a rendezvous with Suzume."
-    "你设法回到另一个下水道出口，你之前在那里与云雀约定了会面。"
+    "你设法回到另一个下水道出口，你与云雀事先约好在那里会合。"
 
 # game/BKchapter3.rpy:11506
 translate schinese c3_free_subaru_9bf5868d:
 
     # subaru "Hmmmm... Finally, some fresh air!"
-    subaru "嗯...终于呼吸到新鲜空气了！"
+    subaru "嗯...终于能呼吸到新鲜空气了！"
 
 # game/BKchapter3.rpy:11508
 translate schinese c3_free_subaru_a3767793:
 
     # subaru "I didn't think I was ever going to see the night sky again."
-    subaru "我以为我再也见不到夜空了。"
+    subaru "我以为我再也见不到天空了。"
 
 # game/BKchapter3.rpy:11514
 translate schinese c3_free_subaru_fee4fc11:
 
     # suzume "Kukukukuku, you made it!!! Subaru, I presume?"
-    suzume "库库库库库，你成功了！！！我猜是昴？"
+    suzume "库库库库库，你成功了！！！我猜这位就是昴？"
 
 # game/BKchapter3.rpy:11516
 translate schinese c3_free_subaru_5850da27:
 
     # subaru "Oh, another kunoichi? That's quite the rescue operation... I'm flattered..."
-    subaru "哦，又一个女忍？这真是一场救援行动...我受宠若惊..."
+    subaru "哦，又一个女忍者？这真是一场大规模的救援行动...我受宠若惊..."
 
 # game/BKchapter3.rpy:11518
 translate schinese c3_free_subaru_a7582f9e:
 
     # subaru "Haruka, you need to tell me how you managed to make so many useful allies."
-    subaru "遥，你需要告诉我你是如何结交这么多有用的盟友的。"
+    subaru "遥，告诉我你是如何结交这么多有用的盟友的。"
 
 # game/BKchapter3.rpy:11523
 translate schinese c3_free_subaru_e05afde4:
 
     # haruka blush "I... I didn't. It's all thanks to [MC.name]. He chose to help me."
-    haruka blush "我...我没有。这一切都归功于[MC.name]。他选择帮助我。"
+    haruka blush "我...我没有。这一切都归功于[MC.name]。他主动帮助的我。"
 
 # game/BKchapter3.rpy:11525
 translate schinese c3_free_subaru_c846abea:
 
     # subaru "Well then, thank you, [MC.name]. Haruka and I are forever in your debt."
-    subaru "那么，谢谢你，[MC.name]。我和遥永远欠你的情。"
+    subaru "那么，谢谢你，[MC.name]。我和遥永远欠你一个人情。"
 
 # game/BKchapter3.rpy:11527
 translate schinese c3_free_subaru_cce318ef:
@@ -23680,19 +23680,19 @@ translate schinese c3_free_subaru_cce318ef:
 translate schinese c3_free_subaru_7b65cebe:
 
     # subaru "On my honor, I shall repay this favor to you. If you need anything..."
-    subaru "以我的名誉，我将报答你的这份恩情。如果你需要什么..."
+    subaru "以我的名誉担保，我将报答你的这份恩情。如果你需要什么..."
 
 # game/BKchapter3.rpy:11531
 translate schinese c3_free_subaru_cf47a5cf:
 
     # you "Well, the first thing I need if for Haruka to honor our deal. No more assassinations in the city, and I need to know everything you know about the kunoichi murders in the city."
-    you "好吧，我首先需要做的是让遥履行我们的协议。城里不再有暗杀事件，我需要知道你所知道的关于城里女忍者谋杀案的一切。"
+    you "好吧，我首先需要做的是让遥履行我们的协议。城里不能再发生暗杀事件了，我需要知道你所知道的关于城里女忍者谋杀案的一切。"
 
 # game/BKchapter3.rpy:11533
 translate schinese c3_free_subaru_ee18cf64:
 
     # subaru "Hold on, hold on. Haruka, what is he talking about?"
-    subaru "坚持住，坚持住。遥，他在说什么？"
+    subaru "慢着，慢着。遥，他在说什么？"
 
 # game/BKchapter3.rpy:11535
 translate schinese c3_free_subaru_9263e56d:
@@ -23704,25 +23704,25 @@ translate schinese c3_free_subaru_9263e56d:
 translate schinese c3_free_subaru_33a53d8f:
 
     # you "But someone has been taking out important officials. They have links to a Kunoichi clan. Surely you know more?"
-    you "但有人一直在除掉重要官员。他们与女忍者氏族有联系。你肯定知道更多吧？"
+    you "但有人一直在刺杀高层官员。他们与女忍者有联系。你肯定知道些什么吧？"
 
 # game/BKchapter3.rpy:11539
 translate schinese c3_free_subaru_e301ba40:
 
     # haruka "Well, I have some suspicions. Whatever this demon cult is doing infiltrating the Knights, it must be related somehow."
-    haruka "嗯，我有一些怀疑。无论这个邪教渗透到骑士团中做什么，都一定有某种关联。"
+    haruka "嗯，我有一些怀疑对象。无论这个邪教渗透到骑士团中做什么，都一定有某种联系。"
 
 # game/BKchapter3.rpy:11541
 translate schinese c3_free_subaru_e8f6b56f:
 
     # subaru "The least we can do is help you look into what's going on with the Noroi. It aligns well with our goals, too."
-    subaru "我们至少能做的就是帮助您调查诺罗伊人的情况。它也与我们的目标非常吻合。"
+    subaru "我们至少能帮助您调查诺罗伊人的情况。它也与我们的目标非常吻合。"
 
 # game/BKchapter3.rpy:11543
 translate schinese c3_free_subaru_3d2a243f:
 
     # you "Thank you. That would be helpful."
-    you "谢谢。那会有帮助的。"
+    you "谢谢。帮大忙了。"
 
 # game/BKchapter3.rpy:11545
 translate schinese c3_free_subaru_453c3dee:
@@ -23734,13 +23734,13 @@ translate schinese c3_free_subaru_453c3dee:
 translate schinese c3_free_subaru_d00d6f28:
 
     # subaru "You've got it."
-    subaru "你已经明白了。"
+    subaru "合作愉快。"
 
 # game/BKchapter3.rpy:11549
 translate schinese c3_free_subaru_2b930603:
 
     # haruka "Sensei, you're very tired... We must go."
-    haruka "老师，你很累了...我们该走了。"
+    haruka "老师，你很虚弱...我们该走了。"
 
 # game/BKchapter3.rpy:11553
 translate schinese c3_free_subaru_a2724ce1:
@@ -23752,19 +23752,19 @@ translate schinese c3_free_subaru_a2724ce1:
 translate schinese c3_free_subaru_1abb8c36:
 
     # subaru "We need to go, [MC.name]. We'll talk more after we've had a chance to rest."
-    subaru "我们得走了，[MC.name]。等我们有机会休息之后再聊更多。"
+    subaru "我们得走了，[MC.name]。等我们有回去休整之后再聊聊吧。"
 
 # game/BKchapter3.rpy:11557
 translate schinese c3_free_subaru_7a114219:
 
     # subaru "Thank you again."
-    subaru "再次感谢您。"
+    subaru "再次感谢您的帮助。"
 
 # game/BKchapter3.rpy:11559
 translate schinese c3_free_subaru_141abb2c:
 
     # haruka happy "Thank you, [MC.name], from the bottom of my heart."
-    haruka happy "谢谢你，[MC.name]，我从心底里感谢你。"
+    haruka happy "谢谢你，[MC.name]，我打从心底里感谢你。"
 
 # game/BKchapter3.rpy:11569
 translate schinese c3_free_subaru_126b36fd:
@@ -23776,13 +23776,13 @@ translate schinese c3_free_subaru_126b36fd:
 translate schinese c3_free_subaru_4613f9c5:
 
     # suzume "So this is Subaru, the legend, uh? She's only got the one arm, but she seems cool."
-    suzume "这就是传说中的昴吧？虽然只有一只手臂，但看起来很酷。"
+    suzume "那位就是传说中的昴吧？虽然只有一只手臂，但看起来很酷。"
 
 # game/BKchapter3.rpy:11575
 translate schinese c3_free_subaru_ac1ec90c:
 
     # you "Do you think we can trust these two?"
-    you "你认为我们可以相信这两个人吗？"
+    you "你认为我们可以相信这她们吗？"
 
 # game/BKchapter3.rpy:11577
 translate schinese c3_free_subaru_6af6f393:
@@ -23806,25 +23806,25 @@ translate schinese c3_haruka_fondle_bb6c919f:
 translate schinese c3_haruka_fondle_5a7c6676:
 
     # you "*shout* Hey! Come here, little girlie! Let me have some fun!"
-    you "*喊*嘿！过来吧，小姑娘！让我玩点乐子吧！"
+    you "*喊*嘿！过来吧，小姑娘！让我找点乐子！"
 
 # game/BKchapter3.rpy:11597
 translate schinese c3_haruka_fondle_88dbf4b4:
 
     # haruka blush "EEEEK! Help!!!" with vpunch
-    haruka blush "哎呀！帮助！！！" with vpunch
+    haruka blush "哎呀！救命！！！" with vpunch
 
 # game/BKchapter3.rpy:11599
 translate schinese c3_haruka_fondle_82db6eb3:
 
     # you "*in character* HEHEHE, Missus, I'm going to have some fun with ya! *hiccup*"
-    you "*就性格而言*呵呵，太太，我要和你一起玩得开心！ *打嗝*"
+    you "*角色扮演* 呵呵，小姐，和我一起爽一爽吧！ *打嗝*"
 
 # game/BKchapter3.rpy:11603
 translate schinese c3_haruka_fondle_8905b777:
 
     # haruka "*in character* I'm, err, in distress!!! Help!" with vpunch
-    haruka "*就性格而言*我，呃，很痛苦！帮助！" with vpunch
+    haruka "*角色扮演* 我，呃，很痛苦！救救我！" with vpunch
 
 # game/BKchapter3.rpy:11605
 translate schinese c3_haruka_fondle_d3511dc6:
@@ -23842,13 +23842,13 @@ translate schinese c3_haruka_fondle_db887f70:
 translate schinese c3_haruka_fondle_05bb8dcd:
 
     # haruka "(B-But, you're really touching me!!!)"
-    haruka "（但、但是，你真的很感动我！！！）"
+    haruka "（但、但是，你怎么真上手了！！！）"
 
 # game/BKchapter3.rpy:11611
 translate schinese c3_haruka_fondle_09610c45:
 
     # you "(It has to look genuine... Play along!"
-    you "（它必须看起来是真的......一起玩！"
+    you "（做戏要做全套......忍一忍！"
 
 # game/BKchapter3.rpy:11615
 translate schinese c3_haruka_fondle_0cd0f9ff:
@@ -23860,19 +23860,19 @@ translate schinese c3_haruka_fondle_0cd0f9ff:
 translate schinese c3_haruka_fondle_b18bfb7c:
 
     # "You squeeze her breast encouraginly."
-    "你鼓励地挤压她的乳房。"
+    "你用力地挤压她的乳房。"
 
 # game/BKchapter3.rpy:11619
 translate schinese c3_haruka_fondle_08a3ea29:
 
     # haruka "D-Don't do that! Stop!"
-    haruka "D、别那样做！停止！"
+    haruka "别、别揉那里！快停下！"
 
 # game/BKchapter3.rpy:11621
 translate schinese c3_haruka_fondle_26cef549:
 
     # you "(Yes, that's it, play along.)"
-    you "（是的，就是这样，一起玩吧。）"
+    you "（是的，就是这样，享受一下。）"
 
 # game/BKchapter3.rpy:11627
 translate schinese c3_haruka_fondle_93e02617:
@@ -25198,13 +25198,13 @@ translate schinese c3_haruka_captured_805ae4a2:
 translate schinese c3_haruka_captured_c5106445:
 
     # gizel smirk "I took the liberty of preparing her a little."
-    gizel smirk "我冒昧地让她做了一点准备。"
+    gizel smirk "我擅作主张地让她做了一点准备。"
 
 # game/BKchapter3.rpy:12266
 translate schinese c3_haruka_captured_78151fc2:
 
     # you "Wow, that's some serious knot-work. Is she still out?"
-    you "哇，这是一些严肃的打结工作。她还在外面吗？"
+    you "哇，这些绳结打得可真结实。她还没清醒过来吗？"
 
 # game/BKchapter3.rpy:12268
 translate schinese c3_haruka_captured_9bfb0606:
@@ -25240,49 +25240,49 @@ translate schinese c3_haruka_captured_30eeb0db:
 translate schinese c3_haruka_captured_ffb1c2b0:
 
     # haruka "M-My magic... I can't feel it, it's gone..."
-    haruka "我、我的魔法...我感觉不到它了，它消失了..."
+    haruka "我、我的魔力...我感觉不到它了，它消失了..."
 
 # game/BKchapter3.rpy:12288
 translate schinese c3_haruka_captured_ef446347:
 
     # you "Relax, Haruka. It's no use panicking."
-    you "放松点，遥。惊慌是没有用的。"
+    you "放松点，遥。慌也没有用。"
 
 # game/BKchapter3.rpy:12290
 translate schinese c3_haruka_captured_e6762b34:
 
     # you "After all, you'll be with us for a big long while."
-    you "毕竟，你会和我们在一起很长一段时间。"
+    you "毕竟，你会和我们在一起待上很长一段时间。"
 
 # game/BKchapter3.rpy:12292
 translate schinese c3_haruka_captured_8ae58e3f:
 
     # "You take out her blindfold."
-    "你把她的眼罩拿下来。"
+    "你把她的眼罩取了下来。"
 
 # game/BKchapter3.rpy:12298
 translate schinese c3_haruka_captured_ecbba38c:
 
     # haruka "It's you! You monster! I should have killed you when I had the chance..."
-    haruka "是你！你这个怪物！当我有机会的时候我应该杀了你..."
+    haruka "是你！你这个畜生！当时我就应该杀了你..."
 
 # game/BKchapter3.rpy:12300
 translate schinese c3_haruka_captured_95c0e219:
 
     # haruka angry "Where am I? Where's Subaru? Tell me!" with vpunch
-    haruka angry "我在哪里？昴在哪里？告诉我！" with vpunch
+    haruka angry "我在哪里？昴在哪里？快告诉我！" with vpunch
 
 # game/BKchapter3.rpy:12302
 translate schinese c3_haruka_captured_d6a90ede:
 
     # you "Forget about Subaru. She's beyond your ability to help."
-    you "忘记昴吧。她超出了你的能力范围，无法提供帮助。"
+    you "忘记昴吧。你的力量不足以解决昴的问题。"
 
 # game/BKchapter3.rpy:12306
 translate schinese c3_haruka_captured_c1975a15:
 
     # gizel "You should worry more about yourself, for now. Because your training is about to start... And I will be in charge."
-    gizel "现在你应该多担心一下自己。因为你们的训练即将开始...而我来负责。"
+    gizel "现在你应该多担心一下自己。因为你的训练即将开始...由我来负责。"
 
 # game/BKchapter3.rpy:12308
 translate schinese c3_haruka_captured_4b253818:
@@ -25294,19 +25294,19 @@ translate schinese c3_haruka_captured_4b253818:
 translate schinese c3_haruka_captured_2f798de3:
 
     # haruka blush "And w-why am I... Naked..."
-    haruka blush "还有为什么我...赤身裸体..."
+    haruka blush "还有为什么我...一丝不挂..."
 
 # game/BKchapter3.rpy:12312
 translate schinese c3_haruka_captured_a6c27a5d:
 
     # gizel "Well, I'm sure you can take a good guess, can't you? You've been there before, haven't you?"
-    gizel "好吧，我相信你能猜到，不是吗？你以前去过那里，不是吗？"
+    gizel "为什么呢，我相信你能猜到，不是吗？你以前去过那里，不是吗？"
 
 # game/BKchapter3.rpy:12318
 translate schinese c3_haruka_captured_09b1b2b2:
 
     # haruka "No, wait, don't do anything to me... I'll just go, I'll leave you in peace, but stop..."
-    haruka "不，等等，别对我做任何事...我会走，我会让你安静，但是停下来..."
+    haruka "不，等等，别伤害我...放我走吧，我什么都不会说出去的，请你不要再..."
 
 # game/BKchapter3.rpy:12323
 translate schinese c3_haruka_captured_9ef19977:
@@ -25324,13 +25324,13 @@ translate schinese c3_haruka_captured_f7fdf7a9:
 translate schinese c3_haruka_captured_d97e5656:
 
     # gizel upset "Shut up now, slave! It's time you begin to learn your place."
-    gizel upset "现在闭嘴吧，奴隶！是时候你开始了解自己的位置了。"
+    gizel upset "现在闭嘴吧，奴隶！是时候摆正自己的位置了。"
 
 # game/BKchapter3.rpy:12333
 translate schinese c3_haruka_captured_e9c22980:
 
     # gizel "First of all, [MC.name] here is 'Master' to you, and I am Mistress Gizel."
-    gizel "首先，[MC.name]对你们来说是“主人”，我是吉泽尔女士。"
+    gizel "首先，[MC.name]对你来说是“主人”，叫我吉泽尔女士。"
 
 # game/BKchapter3.rpy:12335
 translate schinese c3_haruka_captured_2812eb4e:
@@ -25378,13 +25378,13 @@ translate schinese c3_haruka_captured_cb82e728:
 translate schinese c3_haruka_captured_db9c8351:
 
     # haruka "M-Mistress Gizel... M-M-Master [MC.name]..."
-    haruka "M-M-Mistress Gizel...M-M-Master [MC.name]..."
+    haruka "吉泽尔夫-夫-夫人...[MC.name]主-主-主人..."
 
 # game/BKchapter3.rpy:12364
 translate schinese c3_haruka_captured_343f183d:
 
     # gizel normal "Good."
-    gizel normal "好的。"
+    gizel normal "很好。"
 
 # game/BKchapter3.rpy:12369
 translate schinese c3_haruka_captured_9ef19977_2:
@@ -25402,19 +25402,19 @@ translate schinese c3_haruka_captured_116b20da:
 translate schinese c3_haruka_captured_92383cb2:
 
     # haruka "What did you that for? M-Mistress Gizel..."
-    haruka "你这么做是为了什么？ M、吉泽尔大人..."
+    haruka "为什么要打我？ 吉泽尔夫-夫人..."
 
 # game/BKchapter3.rpy:12379
 translate schinese c3_haruka_captured_f003b9b9:
 
     # gizel smirk "Oh, nothing. I just felt like it."
-    gizel smirk "哦，没什么。我只是觉得喜欢。"
+    gizel smirk "哦，没什么理由。我只是单纯想打一下。"
 
 # game/BKchapter3.rpy:12381
 translate schinese c3_haruka_captured_2a64ebe6:
 
     # gizel "Over time, you will discover that pain is one of the best forms of pleasure. But we'll go step by step."
-    gizel "随着时间的推移，你会发现痛苦是最好的快乐形式之一。但我们会一步一步来。"
+    gizel "随着时间的推移，你会发现痛苦就是最好的快乐。但我们会一步一步来。"
 
 # game/BKchapter3.rpy:12383
 translate schinese c3_haruka_captured_a042496b:
@@ -25426,19 +25426,19 @@ translate schinese c3_haruka_captured_a042496b:
 translate schinese c3_haruka_captured_3ef61ae4:
 
     # "Her outfit is so skimpy, you really wonder where she keeps all these things."
-    "她的衣服太简陋了，你真的想知道她把这些东西放在哪里。"
+    "她的衣服太暴露了，你很好奇她平时都把这些东西藏在哪里。"
 
 # game/BKchapter3.rpy:12387
 translate schinese c3_haruka_captured_02cb3ddc:
 
     # gizel normal "Let's not dance around the bush: your best feature is that huge pair of knockers. We need to make sure they're sensitive enough to pleasure our guests."
-    gizel normal "我们不要拐弯抹角了：你最好的特征是那对巨大的门环。我们需要确保它们足够敏感以使我们的客人满意。"
+    gizel normal "不要拐弯抹角了：你最强大的武器是那对下流的奶牛巨乳。我们需要确保它们足够敏感以使我们的客人满意。"
 
 # game/BKchapter3.rpy:12389
 translate schinese c3_haruka_captured_e872a778:
 
     # haruka "G-Guests?"
-    haruka "G-客人？"
+    haruka "客-客人？"
 
 # game/BKchapter3.rpy:12395
 translate schinese c3_haruka_captured_fe270bb6:
@@ -25450,19 +25450,19 @@ translate schinese c3_haruka_captured_fe270bb6:
 translate schinese c3_haruka_captured_fada08e7:
 
     # gizel "Very nice! Not only is this going to stretch your nipples properly, but it will teach you that pleasure and pain mix well together."
-    gizel "很不错！这不仅能正确拉伸您的乳头，还能教会您快乐和痛苦完美地融合在一起。"
+    gizel "很不错！这不仅能最大程度的拉伸你的乳头，还能让你明白痛苦和快乐的真谛。"
 
 # game/BKchapter3.rpy:12399
 translate schinese c3_haruka_captured_04dd3c3f:
 
     # gizel "Maybe I'll leave you like this all night. This would be a teachable moment."
-    gizel "也许我会就这样离开你一整晚。这将是一个受教的时刻。"
+    gizel "也许我会让你一整晚就这样吊着。这将是难忘的一课。"
 
 # game/BKchapter3.rpy:12403
 translate schinese c3_haruka_captured_40c9963e:
 
     # haruka "No! You can't do that to me! Help!!!" with vpunch
-    haruka "不！你不能这样对我！帮助！！！" with vpunch
+    haruka "不！你不能这样对我！救命！！！" with vpunch
 
 # game/BKchapter3.rpy:12410
 translate schinese c3_haruka_captured_e76b206b_1:
@@ -25492,7 +25492,7 @@ translate schinese c3_haruka_captured_3acf1432:
 translate schinese c3_haruka_captured_f1316fbe:
 
     # gizel normal "You're still defiant, but that is to be expected from a new slave. We'll break you soon enough."
-    gizel normal "你仍然目中无人，但这对于一个新奴隶来说是理所当然的。我们很快就会打破你的。"
+    gizel normal "你太目中无人了，但这对于一个新奴隶来说是理所当然的。我们很快就会打破你自尊心。"
 
 # game/BKchapter3.rpy:12424
 translate schinese c3_haruka_captured_b91cfe5b:
@@ -25504,19 +25504,19 @@ translate schinese c3_haruka_captured_b91cfe5b:
 translate schinese c3_haruka_captured_ff86f783:
 
     # gizel smirk "Oh, just that you belong to [MC.name] now. I had you magically branded at the black market while you were passed out."
-    gizel smirk "哦，只是你现在属于[MC.name]。当你昏倒的时候，我在黑市上神奇地给你打上了烙印。"
+    gizel smirk "哦，你现在是[MC.name]的奴隶了。当你昏倒的时候，我在黑市上给你打上了奴隶烙印。"
 
 # game/BKchapter3.rpy:12428
 translate schinese c3_haruka_captured_d3bd4608:
 
     # gizel "It's all too easy to kidnap a girl like you. It cost me next to nothing to grease the Slavers' Guild paws to look the other way."
-    gizel "绑架像你这样的女孩太容易了。我几乎不需要花任何代价就可以让奴隶主公会睁一只眼闭一只眼。"
+    gizel "绑架像你这样的女孩太容易了。我几乎不需要花任何代价就可以让奴隶商人公会睁一只眼闭一只眼。"
 
 # game/BKchapter3.rpy:12430
 translate schinese c3_haruka_captured_dd08b0a7:
 
     # gizel normal "No one knows you in Zan, no one cares for you here. All you have left is to work for us... I mean for [MC.name]."
-    gizel normal "在赞没有人认识你，这里没有人关心你。你剩下的就是为我们工作...我是说为[MC.name]。"
+    gizel normal "在泽恩没有人认识你，这里没有人关心你。你唯一能做的就是为我们工作...我是说为[MC.name]。"
 
 # game/BKchapter3.rpy:12432
 translate schinese c3_haruka_captured_729fd832:
@@ -25528,13 +25528,13 @@ translate schinese c3_haruka_captured_729fd832:
 translate schinese c3_haruka_captured_b77511f6:
 
     # haruka surprise "A brothel owner!" with vpunch
-    haruka surprise "青楼老板！" with vpunch
+    haruka surprise "一个青楼老板！" with vpunch
 
 # game/BKchapter3.rpy:12438
 translate schinese c3_haruka_captured_b59f4212:
 
     # gizel "You're finally catching up, aren't you?"
-    gizel "你终于追上了，不是吗？"
+    gizel "你终于理解了，不是吗？"
 
 # game/BKchapter3.rpy:12440
 translate schinese c3_haruka_captured_4940411e:
@@ -25546,19 +25546,19 @@ translate schinese c3_haruka_captured_4940411e:
 translate schinese c3_haruka_captured_aaeaf96f:
 
     # gizel smirk "Anyway. I think we've dilly-dallied long enough."
-    gizel smirk "反正。我想我们已经磨蹭够久了。"
+    gizel smirk "总之。我想我们已经磨蹭够久了。"
 
 # game/BKchapter3.rpy:12446
 translate schinese c3_haruka_captured_5936eaa9:
 
     # gizel "[MC.name], will you do the honors?"
-    gizel "[MC.name]，您愿意吗？"
+    gizel "[MC.name]，你要亲自动手吗？"
 
 # game/BKchapter3.rpy:12450
 translate schinese c3_haruka_captured_111ecf99:
 
     # you "My pleasure."
-    you "我的荣幸。"
+    you "我很荣幸。"
 
 # game/BKchapter3.rpy:12452
 translate schinese c3_haruka_captured_e93b0392:
@@ -25660,13 +25660,13 @@ translate schinese c3_haruka_captured_393232f2:
 translate schinese c3_haruka_captured_23aaf359:
 
     # "You have gone on for long enough, and decide it's time to let yourself go. You will have plenty of other opportunities to use this pussy later."
-    "你已经坚持了足够长的时间，并决定是时候放手了。以后你会有很多其他机会使用这个小穴。"
+    "你已经坚持了足够长的时间，并决定是时候释放了。以后你还会有很多机会使用这个小穴。"
 
 # game/BKchapter3.rpy:12497
 translate schinese c3_haruka_captured_c7ac4dad:
 
     # you "Ooh, omph... Take that, Haruka!"
-    you "哦哦哦...接住吧，遥！"
+    you "哦哦哦...接好了，遥！"
 
 # game/BKchapter3.rpy:12501
 translate schinese c3_haruka_captured_139ef290:
@@ -25678,25 +25678,25 @@ translate schinese c3_haruka_captured_139ef290:
 translate schinese c3_haruka_captured_911c631a:
 
     # "Shooting your load deep inside Haruka's pussy, you fill her to the brim with hot cum."
-    "将你的精液射入遥的小穴深处，让她充满滚烫的精液。"
+    "将你的精液射入遥的小穴深处，让她被滚烫的精液填满。"
 
 # game/BKchapter3.rpy:12511
 translate schinese c3_haruka_captured_3c5a37cb:
 
     # haruka "Oooh... Aaaah... You did... Inside..."
-    haruka "哦...啊啊...你做了...里面..."
+    haruka "哦...啊啊...你射在了...里面..."
 
 # game/BKchapter3.rpy:12513
 translate schinese c3_haruka_captured_ca792f32:
 
     # gizel "My, my, that's a great creampie if I ever saw one!"
-    gizel "天哪，天哪，如果我见过的话，那真是很棒的内射！"
+    gizel "天哪，天哪，那是我见过的最棒的内射！"
 
 # game/BKchapter3.rpy:12515
 translate schinese c3_haruka_captured_c5045b26:
 
     # gizel "To think we are only getting started... I'm salivating."
-    gizel "想到我们才刚刚开始......我垂涎欲滴。"
+    gizel "想到我们才刚刚开始......我迫不及待了。"
 
 # game/BKchapter3.rpy:12517
 translate schinese c3_haruka_captured_40607b7a:
@@ -25708,7 +25708,7 @@ translate schinese c3_haruka_captured_40607b7a:
 translate schinese c3_haruka_captured_a7dac0f5:
 
     # "Haruka cannot hear Gizel's taunts, as she just passed out."
-    "遥听不到吉泽尔的嘲讽，因为她刚刚昏倒了。"
+    "遥听不到吉泽尔的嘲讽，因为她已经昏倒了。"
 
 # game/BKchapter3.rpy:12523
 translate schinese c3_haruka_captured_6506b75c:
@@ -25720,13 +25720,13 @@ translate schinese c3_haruka_captured_6506b75c:
 translate schinese c3_haruka_captured_917a5125:
 
     # gizel normal "Listen, I'll take over her training for now. We need to make sure she is completely broken before we let her around any customer."
-    gizel normal "听着，我现在会接管她的训练。在让她接触任何顾客之前，我们需要确保她完全崩溃了。"
+    gizel normal "听着，现在开始我会接管她的训练。在让她接触任何顾客之前，我们需要确保她完全堕落。"
 
 # game/BKchapter3.rpy:12527
 translate schinese c3_haruka_captured_7a0e008c:
 
     # gizel "I'll use my minions at the farm. Make sure I have all of the minion types available. I will need to experiment with different approaches..."
-    gizel "我会在农场使用我的爪牙。确保我拥有所有可用的随从类型。我需要尝试不同的方法......"
+    gizel "我会在农场使用我的仆从。确保我拥有所有可用的仆从类型。我需要尝试不同的方法......"
 
 # game/BKchapter3.rpy:12529
 translate schinese c3_haruka_captured_cc11b66f:
@@ -25744,37 +25744,37 @@ translate schinese c3_haruka_captured_10146f07:
 translate schinese c3_haruka_captured_8ebb7565:
 
     # "Gizel will train Haruka at the Farm with the help of her minions. Make sure she has {b}every type of minion available{/b} for this."
-    "吉泽尔将在她的爪牙的帮助下在农场训练遥。确保她有{b}可用的所有类型的随从{/b}。"
+    "吉泽尔将在她的仆从的帮助下在农场训练遥。确保她有{b}可用的所有类型的随从{/b}。"
 
 # game/BKchapter3.rpy:12582
 translate schinese haruka_break_test_2be06455:
 
     # "You congratulate Gizel on her progress with Haruka. You look forward to the next part of her training."
-    "你祝贺吉泽尔与遥的进步。您期待她的下一部分训练。"
+    "你对吉泽尔与遥的进步表示祝贺。期待她的下一部分训练。"
 
 # game/BKchapter3.rpy:12605
 translate schinese haruka_farm_17ec7a2a:
 
     # "Gizel called you to the farm, to check on the progress of her pensioner."
-    "吉泽尔叫你去农场，检查她养老金领取者的进展情况。"
+    "吉泽尔叫你去农场，检查她训练的进展情况。"
 
 # game/BKchapter3.rpy:12607
 translate schinese haruka_farm_0a882050:
 
     # gizel normal "Hey, [MC.name]. Haruka has been training hard lately. I thought you'd like to see the results."
-    gizel normal "嘿，[MC.name]。 Haruka最近一直在努力训练。我以为你想看看结果。"
+    gizel normal "嘿，[MC.name]。遥最近一直在努力训练。我猜你想看看成果。"
 
 # game/BKchapter3.rpy:12611
 translate schinese haruka_farm_3aef2cfb:
 
     # gizel "Now is the time for her morning stretch... [_min] is helping her."
-    gizel "现在是她晨间伸展运动的时间了...[_min] 正在帮助她。"
+    gizel "现在是她晨间伸展运动的时间了...[_min]正在帮助她。"
 
 # game/BKchapter3.rpy:12615
 translate schinese haruka_farm_ef57eb8f:
 
     # _min "[_min] going to stretch strong girl pussy. [_min] likes!"
-    _min "[_min] 要去伸展坚强的女孩阴部。 [_min] 喜欢！"
+    _min "[_min]要去扩张坚强的女孩阴部。 [_min]喜欢这样做！"
 
 # game/BKchapter3.rpy:12619
 translate schinese haruka_farm_f08f94e0:
@@ -25786,13 +25786,13 @@ translate schinese haruka_farm_f08f94e0:
 translate schinese haruka_farm_c662ab3e:
 
     # _min "Strong girl tied up good... Cannot punch [_min] like last time. That made [_min] sad..."
-    _min "坚强的女孩绑得很好...不能像上次那样打[_min]。这让[_min]伤心..."
+    _min "坚强的女孩绑得很好...不能像上次那样打[_min]。那会让[_min]伤心..."
 
 # game/BKchapter3.rpy:12623
 translate schinese haruka_farm_aff1a51b:
 
     # haruka "Stop! Or, or..."
-    haruka "停止！或者，或者..."
+    haruka "停止！否则，否则..."
 
 # game/BKchapter3.rpy:12627
 translate schinese haruka_farm_8e370eae:
@@ -25804,13 +25804,13 @@ translate schinese haruka_farm_8e370eae:
 translate schinese haruka_farm_ddba2ba4:
 
     # gizel smirk "Oh, my... I always forget [_min] gets that big when they fight back... He likes it."
-    gizel smirk "哦，天哪...我总是忘记[_min]在他们反击时变得那么大...他喜欢这样。"
+    gizel smirk "哦，天哪...我总是忘记[_min]的鸡巴会在他们反击时变得那么大...他喜欢这样。"
 
 # game/BKchapter3.rpy:12633
 translate schinese haruka_farm_17311e0a:
 
     # haruka blush "No, go away, you animal... Not again..."
-    haruka blush "不，走开，你这个动物...别再这样了..."
+    haruka blush "不，走开，你这个畜生...别再这样了..."
 
 # game/BKchapter3.rpy:12635
 translate schinese haruka_farm_7823103d:
@@ -25828,7 +25828,7 @@ translate schinese haruka_farm_90087217:
 translate schinese haruka_farm_a1d29858:
 
     # _min "Oh, strong girl pussy stretching good..."
-    _min "哦，坚强的女孩阴部伸展得很好......"
+    _min "哦，坚强的女孩小穴扩张得很好......"
 
 # game/BKchapter3.rpy:12644
 translate schinese haruka_farm_f63a5221:
@@ -25840,19 +25840,19 @@ translate schinese haruka_farm_f63a5221:
 translate schinese haruka_farm_f5b74081:
 
     # "[_min] is not done, though. Somehow he pushes his fat dick even deeper."
-    "不过，[_min] 还没有完成。不知何故，他把他的肥鸡巴推得更深了。"
+    "不过，[_min] 还没有完成。不知何故，他把他的大鸡巴推得更深了。"
 
 # game/BKchapter3.rpy:12653
 translate schinese haruka_farm_2405ce91:
 
     # haruka "AAAAH!!! It's going to break me in half!" with vpunch
-    haruka "啊啊！！！它会把我劈成两半！" with vpunch
+    haruka "啊啊！！！它会把我撕成两半！" with vpunch
 
 # game/BKchapter3.rpy:12655
 translate schinese haruka_farm_91eddf51:
 
     # gizel "Don't be ridiculous. You know you can take it."
-    gizel "别开玩笑了。你知道你可以接受它。"
+    gizel "别开玩笑了。你知道你可以承受它。"
 
 # game/BKchapter3.rpy:12659
 translate schinese haruka_farm_94512cfd:
@@ -25918,7 +25918,7 @@ translate schinese haruka_farm_dd3cb6a8:
 translate schinese haruka_farm_1c04eb4e:
 
     # you "Woah, she came in spite of herself... And it hasn't even been five minutes!"
-    you "哇哦，她不由自主的就来了...而且还不到五分钟！"
+    you "哇哦，她不由自主的就泄了...而且还不到五分钟！"
 
 # game/BKchapter3.rpy:12699
 translate schinese haruka_farm_76bd1d42:
@@ -25930,13 +25930,13 @@ translate schinese haruka_farm_76bd1d42:
 translate schinese haruka_farm_4efe69ce:
 
     # haruka surprise "No! It's a lie!"
-    haruka surprise "不！这是一个谎言！"
+    haruka surprise "不！她在胡说！"
 
 # game/BKchapter3.rpy:12706
 translate schinese haruka_farm_a5067955:
 
     # gizel "Hmph, don't be such a killjoy. [_min], help her stretch a bit more."
-    gizel "哼，别这么扫兴。 [_min]，帮助她伸展一下。"
+    gizel "哼，别这么扫兴。 [_min]，帮她伸展一下。"
 
 # game/BKchapter3.rpy:12710
 translate schinese haruka_farm_22a81295:
@@ -25972,19 +25972,19 @@ translate schinese haruka_farm_06bc6049:
 translate schinese haruka_farm_06442e0c:
 
     # gizel "You can feel it, now, Haruka? Being raped by a fat dick is the best, isn't it?"
-    gizel "现在你能感觉到了吗，遥？被大屌强暴是最好的不是吗？"
+    gizel "现在你能感觉到了吗，遥？被大屌强暴是最爽的不是吗？"
 
 # game/BKchapter3.rpy:12726
 translate schinese haruka_farm_cb91885b:
 
     # haruka "S-Stop... Aah!!!" with vpunch
-    haruka "停、停...啊！！！" with vpunch
+    haruka "停、停下...啊！！！" with vpunch
 
 # game/BKchapter3.rpy:12728
 translate schinese haruka_farm_00af1897:
 
     # "Haruka's voice has become weak, it's like she's no longer there..."
-    "遥的声音变得微弱，就好像她已经不在了..."
+    "遥的声音变得微弱，就好像她已经失去了意识..."
 
 # game/BKchapter3.rpy:12730
 translate schinese haruka_farm_5d09623d:
@@ -26002,13 +26002,13 @@ translate schinese haruka_farm_d08cd0ea:
 translate schinese haruka_farm_33595435:
 
     # gizel "Look, at that, [MC.name]! [_min] is going to cum again, and I can tell it's going to be a big one!"
-    gizel "看看那个，[MC.name]！ [_min] 又要射精了，我敢说这会是一场大射精！"
+    gizel "看看那个，[MC.name]！ [_min]又要射精了，我敢说这会是一场大爆发！"
 
 # game/BKchapter3.rpy:12738
 translate schinese haruka_farm_e3784410:
 
     # gizel "Say, it's your choice now: Where do you want it?"
-    gizel "说吧，现在是你的选择了：你想要它在哪里？"
+    gizel "说吧，你自己选：你想要在哪里？"
 
 # game/BKchapter3.rpy:12741
 translate schinese haruka_farm_11fdb519:
@@ -26038,7 +26038,7 @@ translate schinese haruka_farm_a28a0610:
 translate schinese haruka_farm_9c09629b:
 
     # "[_min] shoots an enormous load inside Haruka's pussy, stretching her belly full of thick cum."
-    "[_min] 在 Haruka 的小穴内射出巨大的液体，伸展她的腹部，充满浓稠的精液。"
+    "[_min] 在遥的小穴内射出巨量的液体，扩张她的腹部，充满浓稠的精液。"
 
 # game/BKchapter3.rpy:12762
 translate schinese haruka_farm_b6c2d925:
@@ -26050,31 +26050,31 @@ translate schinese haruka_farm_b6c2d925:
 translate schinese haruka_farm_2ea416a4:
 
     # "She cums more loudly this time."
-    "这次她射得更大声了。"
+    "这次她叫得更大声了。"
 
 # game/BKchapter3.rpy:12768
 translate schinese haruka_farm_f43bfcec:
 
     # gizel "Wow, would you look at that... It's like you're pregnant with cum..."
-    gizel "哇，你能看一下吗...就像你怀孕了一样..."
+    gizel "哇，你来看看...就像怀孕了一样..."
 
 # game/BKchapter3.rpy:12770
 translate schinese haruka_farm_179bcd85:
 
     # haruka "What... What's happening... to me..."
-    haruka "什么...发生了什么事...对我来说..."
+    haruka "什么...发生了什么事...我的肚子..."
 
 # game/BKchapter3.rpy:12772
 translate schinese haruka_farm_9873b564:
 
     # gizel "Wait! I think there's some more left!"
-    gizel "等待！我觉得还剩下一些！"
+    gizel "等等！我觉得还剩下一些！"
 
 # game/BKchapter3.rpy:12776
 translate schinese haruka_farm_d147d084:
 
     # haruka "No, you c-can't be serious... NGH!"
-    haruka "不，你不可能是认真的...NGH！"
+    haruka "不，你是在开玩笑吧...啊！"
 
 # game/BKchapter3.rpy:12780
 translate schinese haruka_farm_bb247c03:
@@ -26086,7 +26086,7 @@ translate schinese haruka_farm_bb247c03:
 translate schinese haruka_farm_e435f80f:
 
     # gizel "That's my big boy!"
-    gizel "这就是我的大男孩啊！"
+    gizel "真不愧是我的好孩子！"
 
 # game/BKchapter3.rpy:12789
 translate schinese haruka_farm_9b2f8d3c:
@@ -26098,7 +26098,7 @@ translate schinese haruka_farm_9b2f8d3c:
 translate schinese haruka_farm_6f88f91d:
 
     # gizel "[_min], it's time for her morning shower!"
-    gizel "[_min]，她早上洗澡的时间到了！"
+    gizel "[_min]，她的淋浴时间到了！"
 
 # game/BKchapter3.rpy:12797
 translate schinese haruka_farm_4cc0866b:
@@ -26110,7 +26110,7 @@ translate schinese haruka_farm_4cc0866b:
 translate schinese haruka_farm_22b0c285:
 
     # "[_min] obediently takes out his cock, shooting an enormous load all over her."
-    "[_min] 顺从地拿出他的鸡巴，将巨大的精液射到她身上。"
+    "[_min]温柔地拔出他的鸡巴，将巨量的精液射到她身上。"
 
 # game/BKchapter3.rpy:12806
 translate schinese haruka_farm_042d1fd6:
@@ -26164,7 +26164,7 @@ translate schinese haruka_farm_2891e915:
 translate schinese haruka_farm_41f9b57f:
 
     # haruka "I 'm cold..."
-    haruka "我很冷..."
+    haruka "我好冷..."
 
 # game/BKchapter3.rpy:12837
 translate schinese haruka_farm_182048b4:
@@ -26176,7 +26176,7 @@ translate schinese haruka_farm_182048b4:
 translate schinese haruka_farm_a6234c86:
 
     # "That won't do, you need something to warm you up."
-    "那是不行的，你需要一些东西来温暖你的身体。"
+    "那可不行，你需要一些东西来温暖你的身体。"
 
 # game/BKchapter3.rpy:12841
 translate schinese haruka_farm_ae196009:
@@ -26194,19 +26194,19 @@ translate schinese haruka_farm_b92f3e4a:
 translate schinese haruka_farm_d35b6309:
 
     # gizel "*whistle* [_min], come over here, you adorable critter!"
-    gizel "*吹口哨* [_min]，过来吧，你这个可爱的小动物！"
+    gizel "*吹口哨* [_min]，过来吧，你这个可爱的小家伙！"
 
 # game/BKchapter3.rpy:12849
 translate schinese haruka_farm_2cbb4e45:
 
     # haruka surprise "N-No, not [_min] again!" with vpunch
-    haruka surprise "N-不，不再是[_min]！" with vpunch
+    haruka surprise "不-不，别再找[_min]了！" with vpunch
 
 # game/BKchapter3.rpy:12855
 translate schinese haruka_farm_05d84011:
 
     # "Running from the bushes, [_min] arrives on the scene, not hesitating a moment before climbing over Haruka."
-    "[_min]从灌木丛中跑出，到达现场，毫不犹豫地爬过遥。"
+    "[_min]从灌木丛中跑出，到达现场，毫不犹豫地爬到遥身上。"
 
 # game/BKchapter3.rpy:12859
 translate schinese haruka_farm_0bf5d5b9:
@@ -26218,7 +26218,7 @@ translate schinese haruka_farm_0bf5d5b9:
 translate schinese haruka_farm_52c300fe:
 
     # "With consumate skill, [_min] pushes Haruka's panties aside with his beastly dick, before shoving it inside her."
-    "[_min]凭借精湛的技巧，用他那野兽般的鸡巴将遥的内裤推到一边，然后将其塞进她体内。"
+    "[_min]凭借精湛的技巧，用他那野兽般的鸡巴将遥的内裤推到一边，然后塞进她体内。"
 
 # game/BKchapter3.rpy:12863
 translate schinese haruka_farm_0aadf9c9:
@@ -26230,7 +26230,7 @@ translate schinese haruka_farm_0aadf9c9:
 translate schinese haruka_farm_bf02b505:
 
     # gizel "Come on, Haruka, your pussy should used to all sorts of animal dicks by now... Just focus on giving [MC.name] a good show."
-    gizel "来吧，Haruka，你的小穴现在应该已经习惯了各种动物的鸡巴......只要专注于给[MC.name]一场精彩的表演。"
+    gizel "来吧，遥，你的小穴现在应该已经习惯了各种动物的鸡巴......只要专注于给[MC.name]献上一场精彩的表演。"
 
 # game/BKchapter3.rpy:12869
 translate schinese haruka_farm_436aa34a:
@@ -26248,7 +26248,7 @@ translate schinese haruka_farm_6610277c:
 translate schinese haruka_farm_61b3046f:
 
     # gizel "You might think his dick is a bit small, but in reality it's swelling inside her, so it gets really thick."
-    gizel "你可能认为他的鸡鸡有点小，但实际上它在她体内肿胀，所以变得非常粗。"
+    gizel "你可能认为他的鸡鸡有点小，但实际上它在她体内慢慢肿胀，会变得非常粗。"
 
 # game/BKchapter3.rpy:12875
 translate schinese haruka_farm_57409c00:
@@ -26266,7 +26266,7 @@ translate schinese haruka_farm_546f3544:
 translate schinese haruka_farm_4d9d82dd:
 
     # gizel "Pain is pleasure, I thought we had this covered by now."
-    gizel "痛苦就是快乐，我想我们现在已经解决了这个问题。"
+    gizel "痛苦就是快乐，我想我们现在已经证明了这个等式。"
 
 # game/BKchapter3.rpy:12883
 translate schinese haruka_farm_f6d6aada:
@@ -26278,13 +26278,13 @@ translate schinese haruka_farm_f6d6aada:
 translate schinese haruka_farm_c87605c9:
 
     # haruka "It's... N-No... I'm so ashamed..."
-    haruka "这是...不、不...我很羞耻..."
+    haruka "这是...不、不...好羞耻啊..."
 
 # game/BKchapter3.rpy:12891
 translate schinese haruka_farm_b26faf75:
 
     # "The beast increases its pace, frantically fucking Haruka with its weird dick."
-    "这头野兽加快了步伐，用它奇怪的鸡巴疯狂地操着遥。"
+    "这头野兽加快了步伐，用它奇怪的生殖器疯狂地操着遥。"
 
 # game/BKchapter3.rpy:12895
 translate schinese haruka_farm_0aadf9c9_1:
@@ -26296,13 +26296,13 @@ translate schinese haruka_farm_0aadf9c9_1:
 translate schinese haruka_farm_e6e543de:
 
     # gizel upset "Don't be impertinent. You know I have no patience for that. Answer my question!"
-    gizel upset "别无礼。你知道我对此没有耐心。回答我的问题！"
+    gizel upset "别这么无礼。你知道我对此没有耐心。回答我的问题！"
 
 # game/BKchapter3.rpy:12899
 translate schinese haruka_farm_61843dba:
 
     # haruka blush "I-It's growing inside me... Like an inflatable balloon..."
-    haruka blush "我-它在我体内生长...就像一个充气气球..."
+    haruka blush "我-它在我体内膨胀...就像一个充气气球..."
 
 # game/BKchapter3.rpy:12901
 translate schinese haruka_farm_94f493a7:
@@ -26314,7 +26314,7 @@ translate schinese haruka_farm_94f493a7:
 translate schinese haruka_farm_7cdbfbe7:
 
     # haruka "S-Strange... I don't know... Aaaah..."
-    haruka "奇怪...我不知道...啊啊啊..."
+    haruka "好奇怪...我不知道...啊啊啊..."
 
 # game/BKchapter3.rpy:12907
 translate schinese haruka_farm_1607b8c2:
@@ -26326,19 +26326,19 @@ translate schinese haruka_farm_1607b8c2:
 translate schinese haruka_farm_d2c83416:
 
     # gizel "Not only does she love being raped, but the more you ravage her pussy, the happier she gets."
-    gizel "她不仅喜欢被强奸，而且你越是蹂躏她的阴部，她就越高兴。"
+    gizel "她不仅喜欢被强奸，而且你越是蹂躏她的小穴，她就越兴奋。"
 
 # game/BKchapter3.rpy:12915
 translate schinese haruka_farm_0427671e:
 
     # haruka "That's not tr... AAAAAH!!!" with vpunch
-    haruka "这不是...啊啊啊！！！" with vpunch
+    haruka "我没有...啊啊啊！！！" with vpunch
 
 # game/BKchapter3.rpy:12917
 translate schinese haruka_farm_73fd583a:
 
     # gizel smirk "Oh yeah? Then you wouldn't like it if one of the stallions joined in?"
-    gizel smirk "哦，是吗？如果其中一匹种马加入的话你会不喜欢吗？"
+    gizel smirk "哦，是吗？如果其中一头种马加入的话你会喜欢吗？"
 
 # game/BKchapter3.rpy:12921
 translate schinese haruka_farm_0e491239:
@@ -26356,7 +26356,7 @@ translate schinese haruka_farm_5c645e69:
 translate schinese haruka_farm_cd26b212:
 
     # "Another minion joins the fray, poking his large dick on Haruka's face."
-    "另一个小黄人也加入了战斗，用他的大鸡巴戳着遥的脸。"
+    "另一个种马也加入了战斗，用他的大鸡巴戳着遥的脸。"
 
 # game/BKchapter3.rpy:12933
 translate schinese haruka_farm_34eebcc5:
@@ -26368,7 +26368,7 @@ translate schinese haruka_farm_34eebcc5:
 translate schinese haruka_farm_748b9f30:
 
     # "The beast keeps pounding her from behind, while pre-cum from the stallion's dick leaks on her face and body."
-    "野兽不断地从后面猛击她，而公马鸡巴的前液则流到她的脸上和身体上。"
+    "野兽不断地从后面冲撞她，而公马生殖器的前列腺液则流到她的脸和身体上。"
 
 # game/BKchapter3.rpy:12937
 translate schinese haruka_farm_c8d8a0b5:
@@ -26380,7 +26380,7 @@ translate schinese haruka_farm_c8d8a0b5:
 translate schinese haruka_farm_0abfdd49:
 
     # "She looks lost within herself, overwhelmed by the strong smell of bodily fluids."
-    "她看起来迷失了自己，被强烈的体液气味淹没了。"
+    "她看起来已经迷失了自己，被强烈的气味淹没了。"
 
 # game/BKchapter3.rpy:12941
 translate schinese haruka_farm_81b56452:
@@ -26398,13 +26398,13 @@ translate schinese haruka_farm_11fdb519_1:
 translate schinese haruka_farm_a8bf4c61:
 
     # you "You, the drooling moron, don't just stand there, use her mouth!"
-    you "你这个流口水的白痴，别站在那里，用她的嘴！"
+    you "你这个流口水的白痴，别傻站在那里，用她的嘴！"
 
 # game/BKchapter3.rpy:12952
 translate schinese haruka_farm_5a59fb0f:
 
     # "Obediently, the stallion starts fucking her face, shoving his dick deep inside her throat."
-    "公马顺从地开始操她的脸，将他的鸡巴深深地塞进她的喉咙里。"
+    "公马温柔地开始操她的口穴，将他的鸡巴深深地塞进她的喉咙里。"
 
 # game/BKchapter3.rpy:12955
 translate schinese haruka_farm_eda648d7:
@@ -26416,7 +26416,7 @@ translate schinese haruka_farm_eda648d7:
 translate schinese haruka_farm_b42be70d:
 
     # "Haruka is doing her best to take his dick in, seemingly turned by being skewered from both sides."
-    "遥正竭尽全力地吸纳他的鸡巴，似乎是被两侧的刺穿而转动了一样。"
+    "遥正竭尽全力地吞咽他的鸡巴，她的嘴巴鼓得像是被塞满了。"
 
 # game/BKchapter3.rpy:12961
 translate schinese haruka_farm_4de2b0ca:
@@ -26428,7 +26428,7 @@ translate schinese haruka_farm_4de2b0ca:
 translate schinese haruka_farm_1945838b:
 
     # "Meanwhile, the beast is fucking Haruka even faster. You can tell it is close to the big finish."
-    "与此同时，野兽更快地操着遥。你可以看出它已经接近大结局了。"
+    "与此同时，野兽更快地操着遥。你可以看出它已经接近极限了。"
 
 # game/BKchapter3.rpy:12965
 translate schinese haruka_farm_e50f72c2:
@@ -26440,7 +26440,7 @@ translate schinese haruka_farm_e50f72c2:
 translate schinese haruka_farm_bece7bb6:
 
     # "Haruka moans as the stallion pushes his monstrous dick all the way down her throat. He is about to explode as well."
-    "当公马将他巨大的鸡巴一直推入她的喉咙时，遥发出呻吟声。他也快要爆炸了。"
+    "当公马将他巨大的鸡巴一直推入她的喉咙时，遥发出呻吟声。他也快要高潮了。"
 
 # game/BKchapter3.rpy:12971
 translate schinese haruka_farm_d3dacde8:
@@ -26470,25 +26470,25 @@ translate schinese haruka_farm_bb52c402:
 translate schinese haruka_farm_92ce334d:
 
     # "It isn't long before [_min] cums as well, making Haruka erupt into an orgasm."
-    "不久之后，[_min] 也射精了，让 Haruka 爆发出高潮。"
+    "不久之后，[_min] 也射精了，让遥爆发出高潮。"
 
 # game/BKchapter3.rpy:12992
 translate schinese haruka_farm_3344f543:
 
     # haruka "Oh no... I came..."
-    haruka "哦不...我来了..."
+    haruka "哦不...我要去了..."
 
 # game/BKchapter3.rpy:12998
 translate schinese haruka_farm_75dd356c:
 
     # haruka "What have I... Become... Aaaah..."
-    haruka "我...变成了什么...啊啊..."
+    haruka "我...变成了什么模样...啊啊..."
 
 # game/BKchapter3.rpy:13003
 translate schinese haruka_farm_12eee4f4:
 
     # you "You, there, move it. I need to pee. Let's see how she likes that."
-    you "你，在那里，移动它。我需要撒尿。让我们看看她有多喜欢这个。"
+    you "你，蹲在那，张开嘴。我要尿尿。让我们看看她有多喜欢这个。"
 
 # game/BKchapter3.rpy:13007
 translate schinese haruka_farm_f7c9ea3b:
@@ -26512,19 +26512,19 @@ translate schinese haruka_farm_ab657cf4:
 translate schinese haruka_farm_596bad27:
 
     # gizel "Look at that! She took it like a pro... Just like a real bitch in heat."
-    gizel "看看那个！她像专业人士一样对待它...就像一个发情的真正的母狗一样。"
+    gizel "瞧啊！她像专业妓女一样侍奉它...就像一个发情的母狗一样。"
 
 # game/BKchapter3.rpy:13023
 translate schinese haruka_farm_e06a594f:
 
     # haruka blush "D-Don't say... That... I am no... Animal..."
-    haruka blush "别、别说...那个...我不是...动物..."
+    haruka blush "别、别这样说...我...我才不是...母狗..."
 
 # game/BKchapter3.rpy:13025
 translate schinese haruka_farm_64bb3228:
 
     # gizel "Oh really? You're just to prideful to admit to your true nature. But we'll do something about that."
-    gizel "哦真的吗？你只是太骄傲了，承认自己的真实本性。但我们会为此做点什么。"
+    gizel "哦真的吗？你只是太傲慢了，承认自己的真实本性吧。我们会为此做点什么。"
 
 # game/BKchapter3.rpy:13027
 translate schinese haruka_farm_234778f1:
@@ -26566,13 +26566,13 @@ translate schinese haruka_farm_7699dd38:
 translate schinese haruka_farm_41581139:
 
     # you "Phew, I feel better. Seems like she'd make a good human toilet."
-    you "唷，我感觉好多了。看来她会做一个很好的人类厕所。"
+    you "唷，我感觉好多了。看来她会做一个很好的肉便器。"
 
 # game/BKchapter3.rpy:13049
 translate schinese haruka_farm_5bc8b737:
 
     # gizel normal "That's an interesting idea. Maybe I'll have her sleep in the pigsty, as well."
-    gizel normal "这是一个有趣的想法。也许我也会让她睡在猪圈里。"
+    gizel normal "这是一个有趣的想法。也许我会让她睡在猪圈里。"
 
 # game/BKchapter3.rpy:13051
 translate schinese haruka_farm_ddc1e9da:
@@ -26596,25 +26596,25 @@ translate schinese haruka_farm_0029dd3c:
 translate schinese haruka_farm_404477ea:
 
     # gizel smirk "I think I'll let her play with [_min] for today. *grin*"
-    gizel smirk "我想今天我会让她和 [_min] 一起玩。 *咧嘴笑*"
+    gizel smirk "我想今天我会让她和[_min] 一起玩。 *咧嘴笑*"
 
 # game/BKchapter3.rpy:13062
 translate schinese haruka_farm_ca051bf9:
 
     # you "G-Gizel? What's this?"
-    you "G-吉泽尔？这是什么？"
+    you "吉-吉泽尔？这是什么？"
 
 # game/BKchapter3.rpy:13064
 translate schinese haruka_farm_1436bb6b:
 
     # "You give an uneasy look to the bulbous 'thing' occupying the middle of Haruka's cell."
-    "你不安地看着占据遥牢房中央的球状“东西”。"
+    "你不安地看着占据遥牢房中央的球状“生物”。"
 
 # game/BKchapter3.rpy:13066
 translate schinese haruka_farm_6d2eb2f7:
 
     # gizel smirk "Oh, don't worry, it's just [_min]. Say hi, [_min]."
-    gizel smirk "哦，别担心，这只是[_min]。打个招呼，[_min]。"
+    gizel smirk "哦，别担心，这只是个[_min]。打个招呼吧，[_min]。"
 
 # game/BKchapter3.rpy:13070
 translate schinese haruka_farm_dac47bbe:
@@ -26632,13 +26632,13 @@ translate schinese haruka_farm_986028e0:
 translate schinese haruka_farm_36a18dee:
 
     # gizel "Oh, she's here, all right."
-    gizel "哦，她在这里，好吧。"
+    gizel "哦，她就在这里，好吧。"
 
 # game/BKchapter3.rpy:13076
 translate schinese haruka_farm_252346be:
 
     # gizel "[_min], show him."
-    gizel "[_min]，给他看。"
+    gizel "[_min]，给他看看。"
 
 # game/BKchapter3.rpy:13081
 translate schinese haruka_farm_081aed6d:
@@ -26650,19 +26650,19 @@ translate schinese haruka_farm_081aed6d:
 translate schinese haruka_farm_399fb02d:
 
     # "The monster spreads its 'jaws' apart, revealing the exposed body of Haruka, floating on a wriggling mass of slimy tendrils."
-    "怪物张开了它的“下巴”，露出了遥裸露的身体，漂浮在一堆蠕动的粘糊糊的卷须上。"
+    "怪物张开了它的“下巴”，露出了遥裸露的身体，漂浮在一堆蠕动的粘糊糊的触手上。"
 
 # game/BKchapter3.rpy:13085
 translate schinese haruka_farm_dc4d5e9f:
 
     # gizel "Haruka's been in there for a couple of hours already. Look how wet she is."
-    gizel "Haruka 已经在那里呆了几个小时了。看看她多湿。"
+    gizel "遥已经在那里呆了几个小时了。看看她多湿。"
 
 # game/BKchapter3.rpy:13087
 translate schinese haruka_farm_dd84c8ca:
 
     # gizel "Who knows how many orgasms she's had while she was inside? [_min]'s juices are strong aphrodisiacs."
-    gizel "谁知道她在里面时经历了多少次高潮？ [_min] 的果汁是很强的春药。"
+    gizel "谁知道她在里面经历了多少次高潮？ [_min] 的体液是效果很强的春药。"
 
 # game/BKchapter3.rpy:13091
 translate schinese haruka_farm_d2f17c8c:
@@ -26674,19 +26674,19 @@ translate schinese haruka_farm_d2f17c8c:
 translate schinese haruka_farm_a8391de9:
 
     # gizel "Her body is super sensitive right now. She could cum from anything."
-    gizel "她现在的身体非常敏感。她可以从任何东西中射精。"
+    gizel "她现在的身体非常敏感。她可以被任何东西刺激高潮。"
 
 # game/BKchapter3.rpy:13097
 translate schinese haruka_farm_23772deb:
 
     # haruka "Nggh... I... Can't... Think... Straight..."
-    haruka "呃...我...不能...思考...直接..."
+    haruka "呃...我...无法...思考...了..."
 
 # game/BKchapter3.rpy:13099
 translate schinese haruka_farm_5cb7ed4e:
 
     # gizel "Look, I'll show you something fun."
-    gizel "听着，我给你看一些有趣的东西。"
+    gizel "听着，让我给你看一些有趣的东西。"
 
 # game/BKchapter3.rpy:13103
 translate schinese haruka_farm_56057c49:
@@ -26704,13 +26704,13 @@ translate schinese haruka_farm_13ef84a1:
 translate schinese haruka_farm_fb4ecbe8:
 
     # gizel "Ready? On your mark, get set..."
-    gizel "准备好？各就各位，准备好..."
+    gizel "准备好？各就各位，三，二..."
 
 # game/BKchapter3.rpy:13110
 translate schinese haruka_farm_d665d9cc:
 
     # gizel "GO!!!"
-    gizel "去！！！"
+    gizel "拉！！！"
 
 # game/BKchapter3.rpy:13114
 translate schinese haruka_farm_aa1cf7cb:
@@ -26722,7 +26722,7 @@ translate schinese haruka_farm_aa1cf7cb:
 translate schinese haruka_farm_be0f19bc:
 
     # "You both pull on the strings at the same time, painfully stretching Haruka's nipples."
-    "你们同时拉动琴弦，拉扯遥的乳头，感到很痛苦。"
+    "你们同时拉动绳子，拉扯遥的乳头，她感到很痛苦。"
 
 # game/BKchapter3.rpy:13120
 translate schinese haruka_farm_1af11fa7:
@@ -26734,25 +26734,25 @@ translate schinese haruka_farm_1af11fa7:
 translate schinese haruka_farm_accf72a8:
 
     # "Haruka cums immediately, and she even starts squirting, splashing love juice all around."
-    "遥立即射精，她甚至开始喷出，将爱情汁液溅得到处都是。"
+    "遥立即喷了出来，她甚至像个喷泉，将爱液溅得到处都是。"
 
 # game/BKchapter3.rpy:13124
 translate schinese haruka_farm_e10cdbd4:
 
     # "[_min] looks pleased, inasmuch as you can tell for something that doesn't sport a face."
-    "[_min] 看起来很高兴，因为你可以看出一些没有面孔的东西。"
+    "尽管它的脸部是一块平整的金属，但你还是能感受到[_min]很高兴。"
 
 # game/BKchapter3.rpy:13128
 translate schinese haruka_farm_d64db5a8:
 
     # haruka "M-Make it stop... I keep... Cumming... It's too strong..."
-    haruka "M-让它停止...我一直...卡明...太强烈了..."
+    haruka "M让-让它停下...我一直...在高潮...太强烈了..."
 
 # game/BKchapter3.rpy:13130
 translate schinese haruka_farm_c32816a0:
 
     # gizel "Hmph, you don't know what's good for you..."
-    gizel "哼，你不知道什么对你有好处..."
+    gizel "哼，你不知道这对你有多大的好处..."
 
 # game/BKchapter3.rpy:13134
 translate schinese haruka_farm_c55a5a4e:
@@ -26764,13 +26764,13 @@ translate schinese haruka_farm_c55a5a4e:
 translate schinese haruka_farm_1dd16ab4:
 
     # haruka "I can't take any more..."
-    haruka "我再也受不了了..."
+    haruka "我受不了了..."
 
 # game/BKchapter3.rpy:13138
 translate schinese haruka_farm_f0acea5f:
 
     # gizel "Fufufu, you think we're done already?"
-    gizel "呼呼呼，你以为我们已经结束了吗？"
+    gizel "呼呼呼，你以为这就结束了吗？"
 
 # game/BKchapter3.rpy:13140
 translate schinese haruka_farm_0d420144:
@@ -26788,13 +26788,13 @@ translate schinese haruka_farm_482a16c7:
 translate schinese haruka_farm_6bad56e3:
 
     # gizel "I've made sure to give Haruka's pussy plenty of training in the last days..."
-    gizel "在过去的几天里，我确保对遥的小穴进行了充分的训练......"
+    gizel "在过去的几天里，我确保对她的小穴进行了充分的训练......"
 
 # game/BKchapter3.rpy:13146
 translate schinese haruka_farm_b1b4e656:
 
     # gizel "... But her asshole's been kind of neglected."
-    gizel "......但她的混蛋有点被忽视了。"
+    gizel "......但她的屁眼有点缺乏训练。"
 
 # game/BKchapter3.rpy:13148
 translate schinese haruka_farm_f9de20b7:
@@ -26806,19 +26806,19 @@ translate schinese haruka_farm_f9de20b7:
 translate schinese haruka_farm_251cf5cf:
 
     # you "Say no more."
-    you "不多说了。"
+    you "无需多言。"
 
 # game/BKchapter3.rpy:13154
 translate schinese haruka_farm_a1a11510:
 
     # "*unzip*"
-    "*解压*"
+    "*解开*"
 
 # game/BKchapter3.rpy:13156
 translate schinese haruka_farm_913b08e7:
 
     # haruka "What... What are you..."
-    haruka "什么...你是什么..."
+    haruka "什么...你要..."
 
 # game/BKchapter3.rpy:13162
 translate schinese haruka_farm_0aadf9c9_2:
@@ -26830,19 +26830,19 @@ translate schinese haruka_farm_0aadf9c9_2:
 translate schinese haruka_farm_31739856:
 
     # "Haruka's asshole is slippery with all the fluids covering her, so you can slide your cock inside her easily."
-    "Haruka 的肛门很滑，所有液体都覆盖在她身上，因此您可以轻松地将阴茎滑入她体内。"
+    "遥的肛门很润，她分泌出了许多爱液，你轻而易举地就将阴茎插入她体内。"
 
 # game/BKchapter3.rpy:13168
 translate schinese haruka_farm_26b07af6:
 
     # haruka "My ass! You went all in... You're going to break it!"
-    haruka "我的屁股！你全力以赴......你会打破它！"
+    haruka "我的屁股！整根都插进来了......它要裂开了！"
 
 # game/BKchapter3.rpy:13172
 translate schinese haruka_farm_5cf96464:
 
     # "Even as she says that, Haruka can't control her moans. You can see her getting wetter with every thrust of your cock into her stretched asshole."
-    "话虽这么说，遥却无法控制自己的呻吟声。你可以看到，随着你的鸡巴每次插入她伸展的肛门，她都会变得越来越湿。"
+    "话虽这么说，遥却无法控制自己的呻吟声。你可以看到，随着你的鸡巴每次插入她扩张的肛门，她都会分泌出越来越多的爱液。"
 
 # game/BKchapter3.rpy:13174
 translate schinese haruka_farm_d2a7b8e8:
@@ -26854,7 +26854,7 @@ translate schinese haruka_farm_d2a7b8e8:
 translate schinese haruka_farm_7dbf009e:
 
     # "Moving your lubricated dick inside Haruka's butt is easy, and you increase your pace. Her hips start moving in tythm with your dick."
-    "将润滑过的鸡巴移入 Haruka 的屁股内很容易，而且你可以加快速度。她的臀部开始随着你的鸡巴一起移动。"
+    "将润滑过的鸡巴插入遥的屁股里很容易，而且你可以加快速度。她的臀部开始随着你的鸡巴一起甩动。"
 
 # game/BKchapter3.rpy:13178
 translate schinese haruka_farm_ff9877cd:
@@ -26866,13 +26866,13 @@ translate schinese haruka_farm_ff9877cd:
 translate schinese haruka_farm_dcb642b9:
 
     # haruka "Why does it feel so good... Aaah..." with vpunch
-    haruka "为什么感觉这么好...啊啊..." with vpunch
+    haruka "为什么感觉这么爽...啊啊..." with vpunch
 
 # game/BKchapter3.rpy:13184
 translate schinese haruka_farm_16669e12:
 
     # "Tendrils tickle your balls, making you feel weird. Haruka's ass clenches around your dick, and you can tell she is in for another orgasm."
-    "卷须让你的睾丸发痒，让你感觉很奇怪。遥的屁股紧握着你的鸡巴，你可以看出她即将迎来另一次高潮。"
+    "触手让你的睾丸发痒，让你感觉很奇怪。遥的屁股紧紧地夹着你的鸡巴，你可以看出她即将迎来另一次高潮。"
 
 # game/BKchapter3.rpy:13188
 translate schinese haruka_farm_e4498aa4:
@@ -26884,31 +26884,31 @@ translate schinese haruka_farm_e4498aa4:
 translate schinese haruka_farm_d47d4036:
 
     # "Hearing Haruka moan sexily as you fuck her lusty ass proves too much for you."
-    "当你操她精力充沛的屁股时，听到遥性感地呻吟，这对你来说太过分了。"
+    "当你操她紧致的屁股时，听到遥性感地呻吟，这对你来说太刺激了。"
 
 # game/BKchapter3.rpy:13196
 translate schinese haruka_farm_4df0cc80:
 
     # haruka "AAAAH! C-C-CUMIIIIIING!!!!"
-    haruka "啊啊啊！ C-C-CUMIIIIIIING！！！"
+    haruka "啊啊啊！ 要-要-要————去了！！！"
 
 # game/BKchapter3.rpy:13202
 translate schinese haruka_farm_a762bb41:
 
     # "You cum hard inside Haruka's butt, filling her up with your spunk."
-    "你用力射进遥的屁股里，让她充满了你的勇气。"
+    "你用力射进遥的屁股里，让她里面充满了你的种子。"
 
 # game/BKchapter3.rpy:13206
 translate schinese haruka_farm_a5c11e29:
 
     # "The tentacle around her belly decides to squeeze it hard, making her squirt sperm out of her asshole."
-    "她腹部周围的触手决定用力挤压，让她从屁眼里喷出精子。"
+    "她腹部周围的触手用力挤压，让她从屁眼里喷出精子。"
 
 # game/BKchapter3.rpy:13208
 translate schinese haruka_farm_257e3c28:
 
     # haruka "Oh no... I came so hard..."
-    haruka "哦不...我来得太辛苦了..."
+    haruka "哦不...我又要去了..."
 
 # game/BKchapter3.rpy:13212
 translate schinese haruka_farm_88a4129e:
@@ -26920,25 +26920,25 @@ translate schinese haruka_farm_88a4129e:
 translate schinese haruka_farm_661462be:
 
     # "Taking out your cock, you wipe it in Haruka's hair for good measure... But she doesn't notice it, as she is already passed out from multiple orgasms."
-    "你拿出你的鸡巴，在遥的头发上擦拭...但她没有注意到，因为她已经从多次高潮中昏倒了。"
+    "你掏出鸡巴，在遥的头发上擦拭...但她没有注意到，她已经从多次高潮中脱力了。"
 
 # game/BKchapter3.rpy:13219
 translate schinese haruka_farm_30eaf29d:
 
     # gizel "She's in the middle of a training session with [_min]. I set its programming to hardcore..."
-    gizel "她正在与 [_min] 进行训练。我将其编程设置为硬核..."
+    gizel "她正在与[_min]进行训练。我将它的模式设置为硬核..."
 
 # game/BKchapter3.rpy:13224
 translate schinese haruka_farm_d782f9b6:
 
     # "You find Haruka in the basement, riding a strange contraption that you recognize as [_min]."
-    "你在地下室发现 Haruka，骑着一个奇怪的装置，你认出它是 [_min]。"
+    "你在地下室发现了遥，她骑在一个奇怪的装置上，你认出这是[_min]。"
 
 # game/BKchapter3.rpy:13226
 translate schinese haruka_farm_f4374a3f:
 
     # haruka blush "M-Master... [MC.name]... Aaaah..."
-    haruka blush "M-Master... [MC.name]... 啊啊啊..."
+    haruka blush "主-主人... [MC.name]... 啊啊啊..."
 
 # game/BKchapter3.rpy:13228
 translate schinese haruka_farm_6f91049d:
@@ -26950,7 +26950,7 @@ translate schinese haruka_farm_6f91049d:
 translate schinese haruka_farm_10469374:
 
     # gizel "She's been here for half an hour already. [_min] has been working her nice and slow..."
-    gizel "她已经在这里呆了半个小时了。 [_min] 一直在缓慢而愉快地工作......"
+    gizel "她已经在这里呆了半个小时了。 [_min]一直在缓慢而愉快地工作......"
 
 # game/BKchapter3.rpy:13234
 translate schinese haruka_farm_efaa2d09:
@@ -26962,7 +26962,7 @@ translate schinese haruka_farm_efaa2d09:
 translate schinese haruka_farm_b00e757f:
 
     # gizel "Haruka, would you be a doll and describe to your master here what [_min] is doing to you?"
-    gizel "Haruka，你愿意成为一个洋娃娃，向你的主人描述[_min]对你做了什么吗？"
+    gizel "遥，你愿意像一个听话的人偶那样，向你的主人描述[_min]对你做了什么吗？"
 
 # game/BKchapter3.rpy:13240
 translate schinese haruka_farm_aa79f75e:
@@ -26980,19 +26980,19 @@ translate schinese haruka_farm_e51a65df:
 translate schinese haruka_farm_785d1a23:
 
     # haruka "And another one... In my ass..."
-    haruka "还有一个...在我屁股里..."
+    haruka "还有一个...在我屁眼里..."
 
 # game/BKchapter3.rpy:13246
 translate schinese haruka_farm_797998be:
 
     # gizel "Good girl! Here, let me give you a small reward."
-    gizel "好姑娘！在这里，我给你一个小小的奖励。"
+    gizel "好姑娘！过来，我要给你一个小小的奖励。"
 
 # game/BKchapter3.rpy:13251
 translate schinese haruka_farm_cff7bddc:
 
     # "Gizel turns up the vibration speed on [_min]."
-    "Gizel 将振动速度调高 [_min]。"
+    "吉泽尔调高了[_min]的输出频率。"
 
 # game/BKchapter3.rpy:13255
 translate schinese haruka_farm_56057c49_1:
@@ -27004,25 +27004,25 @@ translate schinese haruka_farm_56057c49_1:
 translate schinese haruka_farm_b087b680:
 
     # gizel normal "I am currently training her to resist orgasm, because she has become a little too slutty lately."
-    gizel normal "我目前正在训练她抵抗性高潮，因为她最近变得有点太放荡了。"
+    gizel normal "我目前正在训练她忍耐高潮，因为她最近变得有点太放荡了。"
 
 # game/BKchapter3.rpy:13259
 translate schinese haruka_farm_f6acd78e:
 
     # you "Too slutty? Is there any such thing as 'too slutty'?"
-    you "太放荡了？有没有‘太淫荡’之类的事？"
+    you "太放荡了？例如什么事？"
 
 # game/BKchapter3.rpy:13261
 translate schinese haruka_farm_204d7b9c:
 
     # gizel "Well, you don't want her to be unable to control herself around customers, do you?"
-    gizel "好吧，你不希望她在顾客面前无法控制自己，是吗？"
+    gizel "好吧，你也不希望她在顾客面前无法控制自己，不是吗？"
 
 # game/BKchapter3.rpy:13263
 translate schinese haruka_farm_9fa5e668:
 
     # gizel "It's a normal part of training of a sex slave to learn to restrain your urges..."
-    gizel "训练性奴隶时学会克制自己的冲动是很正常的一部分......"
+    gizel "训练性奴隶学会克制自己的冲动是很正常的一部分......"
 
 # game/BKchapter3.rpy:13268
 translate schinese haruka_farm_494bc305:
@@ -27034,25 +27034,25 @@ translate schinese haruka_farm_494bc305:
 translate schinese haruka_farm_1d5a3c3f:
 
     # "This time, the words 'sex slave' rolled off her tongue more easily. Could it be the beginning of... Acceptance?"
-    "这一次，“性奴隶”这个词更容易从她嘴里脱口而出。难道这就是...接受的开始？"
+    "这一次，“性奴隶”这个词轻松就从她嘴里说了出来。难道这就是...接受的开始？"
 
 # game/BKchapter3.rpy:13272
 translate schinese haruka_farm_e773b66c:
 
     # you "What's keeping her from cumming?"
-    you "是什么阻止她射精？"
+    you "是什么阻止她高潮？"
 
 # game/BKchapter3.rpy:13274
 translate schinese haruka_farm_4c6e89f2:
 
     # gizel smirk "Fufufu... It's one of my better tricks."
-    gizel smirk "呼呼呼...这是我最好的伎俩之一。"
+    gizel smirk "呼呼呼...这是我最好用的手段之一。"
 
 # game/BKchapter3.rpy:13276
 translate schinese haruka_farm_235306a4:
 
     # gizel "Haruka spent the whole night milking stallions, feeling a large vat full of cum."
-    gizel "遥花了一整夜的时间给种马挤奶，感觉一大缸里装满了精液。"
+    gizel "遥花了一整夜的时间给种马挤奶，这一缸里装满了精液。"
 
 # game/BKchapter3.rpy:13280
 translate schinese haruka_farm_edba22fe:
@@ -27064,13 +27064,13 @@ translate schinese haruka_farm_edba22fe:
 translate schinese haruka_farm_0f5cbf3a:
 
     # gizel "The vat is right underneath the contraption. If she cums, [_min] is programmed to open a valve, and her precious holes will be filled up with pressured cum."
-    gizel "桶就在这个装置的正下方。如果她射精，[_min] 就会被编程为打开一个阀门，她珍贵的孔将被高压精液填满。"
+    gizel "桶就在这个装置的正下方。如果她高潮了，[_min]就会打开一个阀门，她可爱的洞将被高浓度的精液填满。"
 
 # game/BKchapter3.rpy:13284
 translate schinese haruka_farm_e4e3c2c3:
 
     # gizel "It will really mess up her insides. So she'd better not cum, or else..."
-    gizel "这真的会弄乱她的内心。所以她最好不要射精，否则..."
+    gizel "这真的会弄乱她的心态。所以她最好不要喷出来，否则..."
 
 # game/BKchapter3.rpy:13286
 translate schinese haruka_farm_eb00c943:
@@ -27082,19 +27082,19 @@ translate schinese haruka_farm_eb00c943:
 translate schinese haruka_farm_94d0a398:
 
     # gizel "You're not about to let it slip, now, sugar?"
-    gizel "现在你不会让它溜走吧，甜心？"
+    gizel "你不会憋不住吧，甜心？"
 
 # game/BKchapter3.rpy:13290
 translate schinese haruka_farm_e3f7f9ff:
 
     # gizel "Think of all the hot cum that would enter your pussy and ass... It would mess you up forever..."
-    gizel "想想那些会进入你的小穴和屁股的热精液...它会让你永远一团糟..."
+    gizel "想想那些即将进入你的小穴和屁股的灼热精液...它会让你失去思考能力..."
 
 # game/BKchapter3.rpy:13294
 translate schinese haruka_farm_4c002109:
 
     # haruka "N-Nggh..." with vpunch
-    haruka "尼-尼格..." with vpunch
+    haruka "嗯-啊..." with vpunch
 
 # game/BKchapter3.rpy:13298
 translate schinese haruka_farm_c32313d1:
@@ -27106,7 +27106,7 @@ translate schinese haruka_farm_c32313d1:
 translate schinese haruka_farm_2ba77f51:
 
     # haruka surprise "N-No! Don't!!! I can't resist that much..."
-    haruka surprise "不、不！不！！！我实在无法抗拒那么多..."
+    haruka surprise "不、不！不！！！我实在无法承受那么多..."
 
 # game/BKchapter3.rpy:13304
 translate schinese haruka_farm_17c233f5:
@@ -27118,13 +27118,13 @@ translate schinese haruka_farm_17c233f5:
 translate schinese haruka_farm_5468765e:
 
     # gizel "You know, even though the pain would be unbearable, I bet you would cum so hard if that happened..."
-    gizel "你知道，尽管疼痛难以忍受，但我敢打赌，如果发生这种情况，你一定会射得很厉害......"
+    gizel "你知道，尽管疼痛难以忍受，但我敢打赌，如果发生这种情况，你一定会喷得很厉害......"
 
 # game/BKchapter3.rpy:13310
 translate schinese haruka_farm_15dc30f7:
 
     # gizel "Think of all that sweet cum... Just waiting to fill you up..." with vpunch
-    gizel "想想那些甜蜜的精液......只是等待填满你......" with vpunch
+    gizel "想想那些甜蜜的精液......它们待会就要填满你......" with vpunch
 
 # game/BKchapter3.rpy:13314
 translate schinese haruka_farm_014b96ea:
@@ -27136,13 +27136,13 @@ translate schinese haruka_farm_014b96ea:
 translate schinese haruka_farm_c60b9fb1:
 
     # "Haruka blushes bright red. She clenches har teeth, but you can tell she is losing this fight."
-    "遥的脸涨得通红。她咬紧牙关，但你可以看出她正在输掉这场战斗。"
+    "遥的脸涨得通红。她咬紧牙关，但你可以看出她正在节节败退。"
 
 # game/BKchapter3.rpy:13320
 translate schinese haruka_farm_20c51f49:
 
     # haruka "Gallons of c-cum... Shooting... Inside... Me..."
-    haruka "加仑的精液...射击...在我体内..."
+    haruka "一升的精液...射...在我肚子里..."
 
 # game/BKchapter3.rpy:13326
 translate schinese haruka_farm_f9a2bb9b:
@@ -27154,43 +27154,43 @@ translate schinese haruka_farm_f9a2bb9b:
 translate schinese haruka_farm_760aa749:
 
     # "Unable to resist, Haruka finally cums. Within a split second, [_min] opens the valve and highly pressured cum starts erupting through."
-    "遥无法抗拒，终于射了出来。瞬间，[_min] 打开阀门，高压精液开始喷涌而出。"
+    "遥无法忍受，终于喷了出来。与此同时，[_min]打开阀门，高压精液喷涌而出。"
 
 # game/BKchapter3.rpy:13335
 translate schinese haruka_farm_4077463e:
 
     # haruka "AAAAH!!! It's filling me up! I can't take iiit!!" with doubleflash
-    haruka "啊啊！！！它让我充满了！我受不了了！！" with doubleflash
+    haruka "啊啊！！！我被灌满了精液！我受不了了！！" with doubleflash
 
 # game/BKchapter3.rpy:13339
 translate schinese haruka_farm_5b9e8a6d:
 
     # gizel "Oh my, you've really done it this time!"
-    gizel "哎呀，这次你真的做到了！"
+    gizel "哎呀，你又做到了！"
 
 # game/BKchapter3.rpy:13341
 translate schinese haruka_farm_8ccc66bb:
 
     # gizel "It went all in! Look, she's about to burst with cum."
-    gizel "全部投入了！看，她快要射精了。"
+    gizel "全部都进去了！看，她快要憋不住了。"
 
 # game/BKchapter3.rpy:13345
 translate schinese haruka_farm_21093454:
 
     # haruka "My belly... My insides... What's happening to me..."
-    haruka "我的肚子...我的内脏...我发生了什么事..."
+    haruka "我的肚子...我的身体...我这是怎么了..."
 
 # game/BKchapter3.rpy:13347
 translate schinese haruka_farm_e83de906:
 
     # gizel "You know what, let's turn the vibrations up to eleven. She really deserves it."
-    gizel "你知道吗，让我们把振动调到十一。她真的值得。"
+    gizel "你知道的，试试把振动调到十一档。她可以做到的。"
 
 # game/BKchapter3.rpy:13349
 translate schinese haruka_farm_c5f0a432:
 
     # haruka surprise "Wait, that wasn't the maximum?"
-    haruka surprise "等等，这还不是最大值？"
+    haruka surprise "等等，刚才那还不是最大档？"
 
 # game/BKchapter3.rpy:13353
 translate schinese haruka_farm_683baa2a:
@@ -27202,13 +27202,13 @@ translate schinese haruka_farm_683baa2a:
 translate schinese haruka_farm_2f51852b:
 
     # haruka "Oh no!!! I'm... I'm cumming again!!!"
-    haruka "哦不！我...我又射了！！！"
+    haruka "哦不！我...我又要去了！！！"
 
 # game/BKchapter3.rpy:13361
 translate schinese haruka_farm_4889f455:
 
     # "*SPLASH* *SPLASH*"
-    "*飞溅* *飞溅*"
+    "*飞溅* *喷射*"
 
 # game/BKchapter3.rpy:13365
 translate schinese haruka_farm_8b823eeb:
@@ -27220,31 +27220,31 @@ translate schinese haruka_farm_8b823eeb:
 translate schinese haruka_farm_8c479d2f:
 
     # "Cumming hard, Haruka squirts semen everywhere as it splashes out of her cunt and asshole."
-    "遥用力射精，精液从她的小穴和肛门喷溅得到处都是。"
+    "遥一泻千里，精液从她的小穴和肛门喷溅得到处都是。"
 
 # game/BKchapter3.rpy:13371
 translate schinese haruka_farm_8e4398b9:
 
     # gizel "Phew, that was a good lesson. I doubt she'll be able to walk for a while after this, but it was worth it."
-    gizel "唷，这是一个很好的教训。我怀疑她在这之后还能走路一段时间，但这是值得的。"
+    gizel "呋呋，这是一次不错的体验。我怀疑她在这之后要有一段时间走不动道了，但这是值得的。"
 
 # game/BKchapter3.rpy:13373
 translate schinese haruka_farm_d3ceeb4f:
 
     # haruka sad "Aaaah... I'm filled with cum... And I came so hard... I'm such a degenerate now..."
-    haruka sad "啊啊啊...我已经充满了精液...而且我射得太猛了...我现在真是一个堕落的人..."
+    haruka sad "啊啊啊...我浑身都是精液...我高潮得脑子都坏掉了...我堕落了..."
 
 # game/BKchapter3.rpy:13387
 translate schinese haruka_broken_391eb897:
 
     # gizel "Good news, [MC.name]! All my hard work on Haruka has paid off."
-    gizel "好消息，[MC.name]！我对遥的所有管教都得到了回报。"
+    gizel "好消息，[MC.name]！我对遥的调教大功告成了。"
 
 # game/BKchapter3.rpy:13392
 translate schinese haruka_broken_858aedb5:
 
     # haruka blush "Hello, Master [MC.name]."
-    haruka blush "你好，[MC.name]。"
+    haruka blush "您好，[MC.name]主人。"
 
 # game/BKchapter3.rpy:13394
 translate schinese haruka_broken_a744318f:
@@ -27274,19 +27274,19 @@ translate schinese haruka_broken_dd6ccb88:
 translate schinese haruka_broken_653de92c:
 
     # haruka "I'm sorry. I was blinded by my pride, but I now realize..."
-    haruka "对不起。我被我的骄傲蒙蔽了双眼，但现在我意识到......"
+    haruka "对不起。我被我的傲慢蒙蔽了双眼，但现在我意识到......"
 
 # game/BKchapter3.rpy:13404
 translate schinese haruka_broken_28e7af4c:
 
     # haruka "I have no skill as a ninja, and I failed my mentor and my friends. I am worthless."
-    haruka "我没有忍者的本领，辜负了我的导师和我的朋友们。我一文不值。"
+    haruka "我没有忍者的天赋，我辜负了我的导师和我的朋友们。我一文不值。"
 
 # game/BKchapter3.rpy:13406
 translate schinese haruka_broken_9a32a31a:
 
     # haruka "Every time I tried to take matters into my own hands, I ended up failing completely. I am not fit to live a free life."
-    haruka "每次我试图把事情掌握在自己手中时，我都以彻底失败告终。我不适合过自由的生活。"
+    haruka "每当我以为一切尽在掌握中时，结果都以彻底失败而告终。我不适合过自由的生活。"
 
 # game/BKchapter3.rpy:13408
 translate schinese haruka_broken_18bbe6b2:
@@ -27298,13 +27298,13 @@ translate schinese haruka_broken_18bbe6b2:
 translate schinese haruka_broken_bf228e7b:
 
     # haruka "But if I need to use my weak body to please others, to atone for my sins, it is a fate I will accept."
-    haruka "但如果我需要用我弱小的身体来取悦别人，来赎罪，这就是我的命运。"
+    haruka "但如果我能要用我弱小的身体来取悦别人，来赎罪，这就是我的宿命。"
 
 # game/BKchapter3.rpy:13412
 translate schinese haruka_broken_89f0389e:
 
     # gizel smirk "There. That wasn't so hard, wasn't it? You're a slut that loves to be raped. There's no shame in that."
-    gizel smirk "那里。那并不难，不是吗？你是一个喜欢被强奸的荡妇。这并没有什么可耻的。"
+    gizel smirk "是啊。那并不难，不是吗？你是一个喜欢被强奸的小婊子。这并没有什么可耻的。"
 
 # game/BKchapter3.rpy:13414
 translate schinese haruka_broken_33b8c4cf:
@@ -27316,7 +27316,7 @@ translate schinese haruka_broken_33b8c4cf:
 translate schinese haruka_broken_c65076da:
 
     # gizel normal "Now that we took care of the small matter of breaking the girl's pride, let's think about the next step. [MC.name]?"
-    gizel normal "既然我们已经解决了女孩自尊心的小事，那么我们就考虑下一步吧。 [MC.name]？"
+    gizel normal "既然我们已经解决了女孩自尊心的小问题，那么就让我们进入下一个环节吧。 [MC.name]？"
 
 # game/BKchapter3.rpy:13419
 translate schinese haruka_broken_11fdb519:
@@ -27328,7 +27328,7 @@ translate schinese haruka_broken_11fdb519:
 translate schinese haruka_broken_1b01c07f:
 
     # you "Well, I was waiting for that day! Bring her to the brothel, I will personally make sure she's ready."
-    you "嗯，我一直在等待这一天！带她去青楼，我会亲自确保她合格了。"
+    you "嗯，我一直在等待这一天！带她去青楼，我会亲自证明她合格了。"
 
 # game/BKchapter3.rpy:13431
 translate schinese haruka_broken_3700d6ce:
@@ -27352,7 +27352,7 @@ translate schinese haruka_broken_fe3cba34:
 translate schinese haruka_broken_c0198e3f:
 
     # you "Take the lead. I will be evaluating your performance."
-    you "来吧。我会评估你的表现。"
+    you "来吧。我会给你的表现打分。"
 
 # game/BKchapter3.rpy:13439
 translate schinese haruka_broken_0fb2ac38:
@@ -27526,7 +27526,7 @@ translate schinese haruka_broken_a3d93c6f:
 translate schinese haruka_broken_218c2d23:
 
     # haruka "Oh, that's right... Of course, Master, I won't tell them that... Unless I mean it."
-    haruka "哦，对了...当然，主人，我不会告诉他们...除非我想。"
+    haruka "哦，对了...当然，主人，我不会告诉他们...除非我故意。"
 
 # game/BKchapter3.rpy:13516
 translate schinese haruka_broken_d8fb3c0e:
@@ -27544,7 +27544,7 @@ translate schinese haruka_broken_f12c7374:
 translate schinese haruka_broken_d397bffa:
 
     # "You lay back and enjoy the show, as Haruka is doing all the work."
-    "你躺下来享受表演，因为遥正在做所有的工作。"
+    "你躺下来享受表演，让遥自己动。"
 
 # game/BKchapter3.rpy:13526
 translate schinese haruka_broken_1aae359d:
@@ -27634,13 +27634,13 @@ translate schinese haruka_broken_52667251:
 translate schinese haruka_broken_e8dc2099:
 
     # you "I want to cum inside you, Haruka."
-    you "我想射在你里面，遥。"
+    you "我要射在你里面，遥。"
 
 # game/BKchapter3.rpy:13562
 translate schinese haruka_broken_2d11790f:
 
     # haruka "O-Of course, Sir..."
-    haruka "噢，当然，先生..."
+    haruka "噢，请，先生..."
 
 # game/BKchapter3.rpy:13564
 translate schinese haruka_broken_74b01ecf:
@@ -27676,7 +27676,7 @@ translate schinese haruka_broken_a57231d2:
 translate schinese haruka_broken_6d3a3a06:
 
     # "Haruka cums at the same time as you, crying out loud as you fill her with creamy semen."
-    "遥和你同时高潮，当你用奶油般的精液涂满她的身体时，她放声大哭。"
+    "遥和你同时高潮，当你用奶油般的精液涂满她的身体时，她放声浪叫。"
 
 # game/BKchapter3.rpy:13588
 translate schinese haruka_broken_e70e8e0e:
@@ -27718,13 +27718,13 @@ translate schinese haruka_broken_f48085b7:
 translate schinese haruka_broken_4efb0b0c:
 
     # "Giving you an inviting smile, she scoops up some of your love juice with her finger."
-    "她回给你一个诱人的微笑，用手指舀起一些你的精液。"
+    "她回给你一个诱人的微笑，用手指勾起一丝你的精液。"
 
 # game/BKchapter3.rpy:13604
 translate schinese haruka_broken_da4e1f85:
 
     # "She places it in her mouth, and starts sucking on it suggestively."
-    "她把它放进嘴里，并开始慢慢地吸吮它。"
+    "她把它放进嘴里，并开始慢慢地舔舐它。"
 
 # game/BKchapter3.rpy:13606
 translate schinese haruka_broken_6bcca9bf:
@@ -27802,7 +27802,7 @@ translate schinese haruka_broken_077ce420:
 translate schinese haruka_broken_09387e16:
 
     # "The customer slaps Haruka's ass. For a split second, you worry she's going to strike him back, but she just blushes."
-    "顾客拍了拍遥的屁股。有那么一瞬间，你担心她会原地反击，但她只是脸红了。"
+    "顾客拍了拍遥的屁股。有那么一瞬间，你担心她会原地反击，但她只是脸色微微发红。"
 
 # game/BKchapter3.rpy:13646
 translate schinese haruka_broken_e77bca01:
@@ -27826,19 +27826,19 @@ translate schinese haruka_broken_9673cdf6:
 translate schinese haruka_broken_fd2c90b7:
 
     # "The [cust] is playing with Haruka in the sauna, while his buddies leer and jeer."
-    "[cust]正在桑拿房里和遥一起玩，而他的伙伴们则在围观和嘲笑。"
+    "[cust]正在桑拿房里和遥一起嬉戏，而他的同伴们则在围观和嘲笑。"
 
 # game/BKchapter3.rpy:13659
 translate schinese haruka_broken_046e1a22:
 
     # haruka "Mister, if you keep touching me all over... Aaaah..."
-    haruka "先生，如果你一直碰我那里的话...啊啊啊..."
+    haruka "先生，如果你一直蹭我那里的话...啊啊啊..."
 
 # game/BKchapter3.rpy:13661
 translate schinese haruka_broken_12c706c2:
 
     # "[cust!c]" "What's that? I don't understand... *squish*"
-    "[cust!c]" "哪里？我不明白...*压扁*"
+    "[cust!c]" "哪里？我不明白...*抚摸*"
 
 # game/BKchapter3.rpy:13667
 translate schinese haruka_broken_ebfe0a52:
@@ -27862,19 +27862,19 @@ translate schinese haruka_broken_0f3d2187:
 translate schinese haruka_broken_84d89d00:
 
     # haruka "I'm afraid so... I am a dirty whore..."
-    haruka "恐怕是这样...我是一个肮脏的妓女..."
+    haruka "我很抱歉...我是一个淫荡的婊子..."
 
 # game/BKchapter3.rpy:13675
 translate schinese haruka_broken_7522fc29:
 
     # "[cust!c]" "Of course you are! [MC.name] knows how to pick them."
-    "[cust!c]" "当然了！[MC.name]知道如何挑选合适的人才。"
+    "[cust!c]" "当然了！[MC.name]真是慧眼识珠。"
 
 # game/BKchapter3.rpy:13679
 translate schinese haruka_broken_3549bd39:
 
     # "Other customer" "Man, you're having all the fun! Just looking at these titties, I get hard as fuck."
-    "其他客户" "伙计，你玩得很开心！光是看着这些奶子，我就他妈的硬了。"
+    "其他客户" "伙计，你玩得很开心！光是看着这对奶子，我就他妈的硬了。"
 
 # game/BKchapter3.rpy:13681
 translate schinese haruka_broken_5d1aecb3:
@@ -27886,7 +27886,7 @@ translate schinese haruka_broken_5d1aecb3:
 translate schinese haruka_broken_1e7c237a:
 
     # "More customers" "And don't forget about us too!"
-    "更多客户" "也别要忘了我们！"
+    "更多客户" "别忘了我们！"
 
 # game/BKchapter3.rpy:13689
 translate schinese haruka_broken_a4c7eb0b:
@@ -27898,7 +27898,7 @@ translate schinese haruka_broken_a4c7eb0b:
 translate schinese haruka_broken_f90cce4f:
 
     # "Other customer" "I wanna see those titties!"
-    "其他客户" "我想看看那些奶子！"
+    "其他客户" "我想看看那对奶子！"
 
 # game/BKchapter3.rpy:13693
 translate schinese haruka_broken_a8a33b94:
@@ -27910,7 +27910,7 @@ translate schinese haruka_broken_a8a33b94:
 translate schinese haruka_broken_a97563a9:
 
     # haruka "O-Okay... Will you give me a little tip?"
-    haruka "哦-好吧...你能给我一点小费吗？"
+    haruka "哦-好吧...你们能打赏给我一点小费吗？"
 
 # game/BKchapter3.rpy:13697
 translate schinese haruka_broken_c20d137b:
@@ -27970,13 +27970,13 @@ translate schinese haruka_broken_f7dfe698:
 translate schinese haruka_broken_90ca7cde:
 
     # haruka "N-No... The Kunoichi are not a joke... But I am not worthy of them."
-    haruka "不、不...女忍者不是小丑...但我已经配不上这个名号了。"
+    haruka "不、不...女忍者才不是小丑...虽然我也已经配不上这个名号了。"
 
 # game/BKchapter3.rpy:13729
 translate schinese haruka_broken_f2b8aa75:
 
     # "Other customer" "You're just a slut, then, only good for taking cock? Am I right?"
-    "其他客户" "所以你只是个荡妇，只擅长侍奉鸡巴？我说得对吗？"
+    "其他客户" "所以你只是个荡妇，只知道侍奉鸡巴？我说得对吗？"
 
 # game/BKchapter3.rpy:13733
 translate schinese haruka_broken_e03953f4:
@@ -28270,7 +28270,7 @@ translate schinese haruka_broken_26d03281:
 translate schinese haruka_broken_25c52be6:
 
     # "[cust!c]" "Oh, yeah... It's even better the second time!"
-    "[cust!c]" "哦，耶...第二次更紧了！"
+    "[cust!c]" "哦，耶...第二次里面更紧了！"
 
 # game/BKchapter3.rpy:13873
 translate schinese haruka_broken_b5661adb:
@@ -28336,7 +28336,7 @@ translate schinese haruka_broken_f66ef80d:
 translate schinese haruka_broken_cb89e5d1:
 
     # "Other customer" "Yeah, you can go all out!"
-    "其他客户" "是的，你可以全力以赴！"
+    "其他客户" "是的，有什么花样都使出来吧！"
 
 # game/BKchapter3.rpy:13903
 translate schinese haruka_broken_a9a2ceb6:
@@ -28354,7 +28354,7 @@ translate schinese haruka_broken_a10b0090:
 translate schinese haruka_broken_38e98d36:
 
     # haruka "A-As you wish... I will now use my whole body... To pleasure you..."
-    haruka "如-如你所愿...我现在就用我的整个身体...来取悦你..."
+    haruka "如-如你所愿...我现在就用我身体的每一处...来侍奉你..."
 
 # game/BKchapter3.rpy:13909
 translate schinese haruka_broken_e6a0b459:
@@ -28456,7 +28456,7 @@ translate schinese haruka_broken_36f5c0e8:
 translate schinese haruka_broken_2d10e56c:
 
     # you "I must say, I was worried about how you'd do... But you handled it like a pro."
-    you "不得不说，我很担心你的处理方式...但你处理得像个专业人士。"
+    you "不得不说，我之前很担心你的处理方式...但你处理得像个专业人士。"
 
 # game/BKchapter3.rpy:13963
 translate schinese haruka_broken_db20bee9_1:
@@ -28556,7 +28556,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:214
     old "Ask about the elemental-proof cells"
-    new "询问有关元素增强密室的信息"
+    new "询问有关元素增幅密室的信息"
 
     # game/BKchapter3.rpy:331
     old "Sure (pay 1,000 gold)"
@@ -28576,7 +28576,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:609
     old "Don't give her"
-    new "暂时不给"
+    new "先不给她"
 
     # game/BKchapter3.rpy:751
     old "Okay (pay 1,000 gold)"
@@ -28584,7 +28584,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:751
     old "Okay (give 2 Cimerian scrap)"
-    new "成交 (给她2个席米亚)"
+    new "成交 (给她2个席米亚废料)"
 
     # game/BKchapter3.rpy:751
     old "What about this? (give Cimerian artefact)"
@@ -28636,7 +28636,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:1726
     old "Let's warn the guards she's coming"
-    new "得知守卫她要潜入"
+    new "警告守卫有人要潜入"
 
     # game/BKchapter3.rpy:1959
     old "Force success"
@@ -28644,19 +28644,19 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:2049
     old "Build me a cell with a Void ward"
-    new "帮助我建造了一道能照亮虚空元素的密室"
+    new "帮我修建一间能增幅虚空元素的密室"
 
     # game/BKchapter3.rpy:2049
     old "Build me a cell with a Water ward"
-    new "帮助我建造了一道能发光水元素的密室"
+    new "帮我修建一间能增幅水元素的密室"
 
     # game/BKchapter3.rpy:2049
     old "Build me a cell with an Earth ward"
-    new "帮助我建造了一道能照亮土元素的密室"
+    new "帮我修建一间能增幅土元素的密室"
 
     # game/BKchapter3.rpy:2049
     old "Build me the cell with a ward against Air and Fire"
-    new "帮助我建造了一道能闪电风和火之元素的密室"
+    new "帮我修建一间能增幅风元素和火元素的密室"
 
     # game/BKchapter3.rpy:2195
     old "Tell her you're not like that"
@@ -28712,11 +28712,11 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:2591
     old "I want to see you masturbate"
-    new "我想看你的自慰"
+    new "我想看你的自慰秀"
 
     # game/BKchapter3.rpy:2591
     old "I want a blowjob"
-    new "我让你为我口交"
+    new "我想让你为我口交"
 
     # game/BKchapter3.rpy:2591
     old "Let's do 69"
@@ -28724,11 +28724,11 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:2591
     old "Let's have sex (missionary)"
-    new "闲爱吧(后入式)"
+    new "来一发吧吧(后入式)"
 
     # game/BKchapter3.rpy:2591
     old "Let's have sex (cowgirl)"
-    new "闲爱吧(骑乘式)"
+    new "来一发吧(骑乘式)"
 
     # game/BKchapter3.rpy:2591
     old "Let's go outside"
@@ -28764,11 +28764,11 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:3665
     old "Tell me about the university"
-    new "我想学习这所学院"
+    new "我想了解这所学院"
 
     # game/BKchapter3.rpy:3665
     old "Why did you call me a Court agent?"
-    new "你为什么叫我皇家的走狗？"
+    new "你为什么叫我王室的走狗？"
 
     # game/BKchapter3.rpy:3665
     old "What is this charter you speak of?"
@@ -28868,7 +28868,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:9009
     old "I will try you out myself"
-    new "我优先出马"
+    new "我一个人就能解决你"
 
     # game/BKchapter3.rpy:9009
     old "I will summon some customers"
@@ -28900,7 +28900,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:9872
     old "Don't tell him"
-    new "秘密"
+    new "保守秘密"
 
     # game/BKchapter3.rpy:10021
     old "I'm not sure"
@@ -28908,11 +28908,11 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:10135
     old "Accept his offer"
-    new "接受他的建议"
+    new "接受他的提议"
 
     # game/BKchapter3.rpy:10135
     old "Decline his offer"
-    new "拒绝他的建议"
+    new "拒绝他的提议"
 
     # game/BKchapter3.rpy:10273
     old "Tell her Haruka is fine"
@@ -28944,7 +28944,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:10667
     old "What do you tell Haruka?"
-    new "你要跟遥说什么？"
+    new "你打算怎么和遥说？"
 
     # game/BKchapter3.rpy:10667
     old "Tell her about the true secret passage"
@@ -28980,7 +28980,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:13418
     old "Try her for yourself"
-    new "亲自尝试一下她"
+    new "亲自品尝一下她"
 
     # game/BKchapter3.rpy:13418
     old "Test her with customers"
