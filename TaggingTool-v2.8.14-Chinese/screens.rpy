@@ -608,12 +608,15 @@ init -2:
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
-
-
+        
+    style carousel_button:
+        selected_color "#3908"
+        selected_hover_color "#3f0"
 
 screen show_pic(context="edit"):
 
     default show_ui = True
+    default tt = Tooltip("[text1] [girl.dir]")
 
     key "mouseup_3" action (ToggleScreenVariable("show_ui"), SetVariable("cancelAction", True))
 
@@ -635,37 +638,44 @@ screen show_pic(context="edit"):
             text "X" xalign 0.5 yalign 0.5 color "#FF003366" size 526
 
     if show_ui:
-        use pic_ui(context)
-        use pic_carousel(context)
+        use pic_ui(context, tt)
+        use pic_carousel(context, tt)
         
-screen pic_button(pic, context):
-    default tt = Tooltip("pic_button")
+screen pic_button(pic, tt):
+    $ pic_name = " ".join([tag_button2_dict.get(x, x) for x in pic.file_name.split(" ")])
+    $ global selected_pic_list
+    $ select_text = " (已选择)" if pic in selected_pic_list else ""
     button:
-        xalign 0.5
-        ycenter 0.5
-        xpadding 9
-        ypadding 9
-        xsize 220
-        action Return("tips") hovered tt.Action("test") 
-        vbox:
+        style "carousel_button"
+        xalign 0.5 ycenter 0.5 xpadding 9 ypadding 9
+        xsize 220 ysize 190
+        action Return(("carousel_show", pic))
+        selected (pic in selected_pic_list)
+        key "K_SPACE" action Return(("carousel_toggle", pic))
+        hovered tt.Action(pic_name + "%s\n左键: 显示图片，空格: 切换选中状态" % select_text)
+        vbox xalign 0.5:
             spacing 10
-            text pic.file_name xalign 0.5 yalign 0.5
-            add ProportionalScale(pic.file, 180, 135) xalign 0.5 yalign 0.5
+            text pic_name + select_text size 12
+            fixed xalign 0.5:
+                fit_first True
+                if pic.video:
+                    add Movie(play=pic.file, size=[180,135]) xalign 0.5
+                else:
+                    add ProportionalScale(pic.file, 180, 135) xalign 0.5
 
-screen pic_carousel(context):
+screen pic_carousel(context, tt):
     $ global filtered_pics
     $ global selected_index
     $ global selected_pic
     
-    default tt = Tooltip("pic_carousel")
-    frame yalign 0.85 xfill True xalign 0.22 xsize 700 background None:
+    frame yalign 0.85 xfill True xpos 0.14 xanchor 0 xsize 1100 background None:
         has hbox spacing 20
         hbox:
             $ pics = filtered_pics[selected_index:selected_index+5]
             for pic in pics:
-                use pic_button(pic, context)
+                use pic_button(pic, tt)
 
-screen pic_ui(context):
+screen pic_ui(context, tt):
 #    key "mouseup_3" action Hide("pic_ui")
     key "K_LEFT" action Return("cycle_previous")
     key "shift_K_LEFT" action Return("cycle_previous_10")
@@ -704,9 +714,8 @@ screen pic_ui(context):
         elif context == "browse":
             $ text1 = "浏览"
 
-        default tt = Tooltip("[text1] [girl.dir]")
         text tt.value size 16
-
+        
     frame yalign 0.93 xfill True xalign 0.45 xsize 800 background None:
         has hbox spacing 20
 
@@ -1005,7 +1014,6 @@ screen pack_stats(girl):
             hbox spacing 20 xalign 0.9:
                 textbutton "提示" action Return("tips")
                 textbutton "退出" action Return("quit") xalign 0.9
-
 
 screen change_log:
 
