@@ -625,9 +625,9 @@ screen show_pic(context="edit"):
             $ ibg = img_bg
         else:
             $ ibg = None
-        frame background ibg  xalign 0.45 yalign 0.2 padding (0,0)  margin (0,0) :
+        frame background ibg  xalign 0.45 yalign 0.15 padding (0,0)  margin (0,0) :
             # add selected_pic.get_std_displayable() xalign 0.5 yalign 0.3
-            add ProportionalScale(selected_pic.file, 720, 540) xalign 0.5 yalign 0.2
+            add ProportionalScale(selected_pic.file, 480, 360) xalign 0.5 yalign 0
     elif context == "edit":
         text "没有找到图片。" xalign 0.5 yalign 0.5
     elif context == "browse":
@@ -668,10 +668,9 @@ screen pic_carousel(context, tt):
     $ global selected_index
     $ global selected_pic
     
-    frame yalign 0.85 xfill True xpos 0.14 xanchor 0 xsize 1100 background None:
-        has hbox spacing 20
-        hbox:
-            $ pics = filtered_pics[selected_index:selected_index+5]
+    frame yalign 0.75 xfill True xpos 0.14 xanchor 0 xsize 1100 background None:
+        grid 5 2 spacing 6:
+            $ pics = filtered_pics[selected_index:selected_index+10]
             for pic in pics:
                 use pic_button(pic, tt)
 
