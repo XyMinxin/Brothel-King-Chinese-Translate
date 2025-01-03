@@ -3550,7 +3550,7 @@ translate schinese advertising_intro_a5ce9163:
 translate schinese advertising_intro_3f7fe0d3:
 
     # "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
-    "你获得了一套广告女郎的服装,提高了{b}广告能力{/b}。未来也许能解锁更吸引人的服装。"
+    "你获得了一套广告女郎的服装,提高了{b}宣传效果{/b}。未来还可以解锁更加吸人眼球的服装。"
 
 # game/BKevents.rpy:4106
 translate schinese zodiac_intro_498425b4:

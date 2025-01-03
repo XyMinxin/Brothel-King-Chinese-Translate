@@ -4188,7 +4188,7 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("Basic Outfits", "你从希露那里得到了一套给广告女郎穿的{b}基础服装{/b}。 衣服上简单的缝了 '%s' 几个小字作为宣传。" % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
         "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
 

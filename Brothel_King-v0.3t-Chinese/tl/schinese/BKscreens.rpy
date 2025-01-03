@@ -448,11 +448,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4384
     old "I'm still working on that "
-    new "手头的活还没做完呢"
+    new "我还在忙着弄"
 
     # game/BKscreens.rpy:4384
     old ". You should come back later."
-    new ". 过段时间再来看看吧。"
+    new "呢。等我弄好了再来吧~"
 
     # game/BKscreens.rpy:4406
     old "'s Decoration and Furniture"
@@ -1221,10 +1221,6 @@ translate schinese strings:
     # game/BKscreens.rpy:3050
     old "Load a schedule for %s"
     new "套用%s的排班表"
-
-    # game/BKscreens.rpy:3081
-    old "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it"
-    new "This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it"
 
     # game/BKscreens.rpy:3084
     old "Autorest OFF"

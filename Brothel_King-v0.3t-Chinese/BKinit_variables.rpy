@@ -1517,8 +1517,8 @@ init python:
                                     ],
                     "{size=+8}惩罚{/size}" : [
                                     GirlInteractionTopic("react", "discipline", "批评辱骂她　　　", "slave_punish_scold"),
-                                    GirlInteractionTopic("react", "discipline", "让她脱掉内衣　　", "slave_punish_upkeep"),
-                                    GirlInteractionTopic("react", "discipline", "扒光所有衣服　　", "slave_punish_naked"),
+                                    GirlInteractionTopic("react", "discipline", "停发她的薪水　　", "slave_punish_upkeep"),
+                                    GirlInteractionTopic("react", "discipline", "让她一丝不挂　　", "slave_punish_naked"),
                                     GirlInteractionTopic("react", "discipline", "对她拳打脚踢　　", "slave_punish_beat"),
                                     GirlInteractionTopic("react", "discipline", "粗暴地强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送去奴隶农场　　", "slave_punish_farm", condition="farm"),

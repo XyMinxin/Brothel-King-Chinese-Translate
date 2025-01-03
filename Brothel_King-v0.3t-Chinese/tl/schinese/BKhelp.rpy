@@ -2732,7 +2732,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1803
     old "You've just had your first security event. Would you like to learn more about security events?"
-    new "You've just had your first security event. Would you like to learn more about security events?"
+    new "你刚刚经历了第一次安全事件。您想了解更多有关安全事件的信息吗？"
 
     # game/BKhelp.rpy:1862
     old "Recover a girl from Gizel"

@@ -9443,15 +9443,15 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:19
     old "I will be kind"
-    new "我会善良的对待你"
+    new "我会温柔的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will be fair"
-    new "我会公平的对待你"
+    new "我会公正的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will do as I please"
-    new "我会为所欲为"
+    new "我会对你为所欲为"
 
     # game/BKinteractions.rpy:164
     old "Reassure her"
@@ -9459,11 +9459,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked at all times"
-    new "告诉她仍然要一直保持裸体"
+    new "告诉她今后也要一直保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked for the rest of the day"
-    new "告诉她仍然要在剩下的一天里保持裸体"
+    new "告诉她今天要一直保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Do nothing"
@@ -9471,7 +9471,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:268
     old "She's crying uncontrollably, she seems very upset. What do you do?"
-    new "她哭得控制不住，看起来很伤心。你是做什么的？"
+    new "她泪流不止，看起来很伤心。你打算怎么办？"
 
     # game/BKinteractions.rpy:268
     old "Ignore her and proceed"
@@ -9487,7 +9487,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:483
     old "Stop bitching"
-    new "停止唠叨"
+    new "别抱怨了"
 
     # game/BKinteractions.rpy:531
     old "I appreciate your efforts"
@@ -9503,7 +9503,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:577
     old "Just shut up"
-    new "闭嘴"
+    new "给我闭嘴"
 
     # game/BKinteractions.rpy:659
     old "I see."
