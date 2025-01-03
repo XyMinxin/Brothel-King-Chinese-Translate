@@ -4987,17 +4987,17 @@ init -2 python:
                 background_des += ". "
 
                 if self.flags["story"] < 10:
-                    background_des += "You do not know her story."
+                    background_des += "你不了解她的背景。"
                 elif self.flags["story"] < 20:
-                    background_des += "You know a few things about her story."
+                    background_des += "你对她的身世有了一些了解。"
                 elif self.flags["story"] < 50:
-                    background_des += "You know some things about her story."
+                    background_des += "你听她讲述了一些发生在她身上的事。"
                 elif self.flags["story"] < 100:
-                    background_des += "She has told you her story, but you haven't done anything about it yet."
+                    background_des += "你对她知根知底，但你并没有对此作出回应。"
                 elif self.flags["MC refused story"]:
-                    background_des += "You know about her story."
+                    background_des += "你对她知根知底。"
                 else:
-                    background_des += "You know about her story, and did something about it."
+                    background_des += "你对她知根知底,并对此作出了回应。"
 
                 background_des += "\n\n"
 
@@ -5009,9 +5009,9 @@ init -2 python:
 
                 if "EI" in self.notebook_unlocks:
                     if self.is_("very extravert"):
-                        pers_des += "She is very {b}lively and outgoing{/b}.\n"
+                        pers_des += "她十分{b}活泼外向{/b}。\n"
                     elif self.is_("extravert"):
-                        pers_des += "She is quite {b}sociable{/b}.\n"
+                        pers_des += "她是个{b}社交达人{/b}。\n"
                     elif self.is_("very introvert"):
                         pers_des += "She is {b}quiet and very shy{/b}.\n"
                     elif self.is_("introvert"):
@@ -5048,7 +5048,7 @@ init -2 python:
                         pers_des += "She's {b}open-minded and relaxed{/b} about morals.\n"
 
                 if not pers_des:
-                    pers_des += "You don't know her personality very well."
+                    pers_des += "你对她的性格一无所知。"
 
                 des += pers_des
 
@@ -5095,25 +5095,25 @@ init -2 python:
                     taste_text += "\n\n"
 
                 if "loves" in self.notebook_unlocks and self.personality_unlock["loves"]:
-                    taste_text += "She loves {color=[c_emerald]}" + and_text([gift_description[luv] for luv in self.personality_unlock["loves"]]) + "{/color}. "
-                    prior = "also "
-                    prior2 = "However, she "
+                    taste_text += "她喜欢{color=[c_emerald]}" + and_text([gift_description[luv] for luv in self.personality_unlock["loves"]]) + "{/color}。"
+                    prior = "也"
+                    prior2 = "但是,她"
 
                 else:
                     prior = ""
-                    prior2 = "She "
+                    prior2 = "她"
 
                 if "likes" in self.notebook_unlocks and self.personality_unlock["likes"]:
-                    taste_text += "She " + prior + "likes {color=[c_orange]}" + and_text([gift_description[lik] for lik in self.personality_unlock["likes"]]) + "{/color}. "
-                    prior2 = "However, she "
+                    taste_text += "她" + prior + "喜欢{color=[c_orange]}" + and_text([gift_description[lik] for lik in self.personality_unlock["likes"]]) + "{/color}。"
+                    prior2 = "但是，她"
 
                 if "hates" in self.notebook_unlocks and self.personality_unlock["hates"]:
-                    taste_text += prior2 + "hates {color=[c_crimson]}" + and_text([gift_description[hat] for hat in self.personality_unlock["hates"]]) + "{/color}. "
+                    taste_text += prior2 + "讨厌{color=[c_crimson]}" + and_text([gift_description[hat] for hat in self.personality_unlock["hates"]]) + "{/color}。"
 
                 if taste_text:
                     des += taste_text
                 else:
-                    des += "You don't know anything about her tastes."
+                    des += "你对她的品味一无所知。"
 
             elif show == "sexual":
 
@@ -5166,7 +5166,7 @@ init -2 python:
                 if sex_text:
                     des += sex_text
                 else:
-                    des += "You do not know her sexual tastes very well."
+                    des += "你不太了解她的性癖。"
 
                 if farm.knows["weakness"][self]:
                     des+= "\nShe is vulnerable to farm %ss." % self.weakness

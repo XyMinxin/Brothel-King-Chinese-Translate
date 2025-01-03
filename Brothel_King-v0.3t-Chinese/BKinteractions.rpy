@@ -1627,9 +1627,9 @@ label slave_train_constitution(girl):
 
     "You ask [girl.name] to do a few simple exercises."
 
-    $ MC.rand_say((str(10 + dice(40)) + "十组俯卧撑，快!", "在楼梯上下往返。记得数你的步数。", "提着这桶水绕院子四圈。",
+    $ MC.rand_say((str(10 + dice(40)) + "个俯卧撑，快!", "在楼梯折返跑，同时记录你的配速。", "提着这桶水绕院子四圈。",
                    "抬起这根木头" + str(5 + dice(15)) + "次。", "绕着青楼跑半个小时。", "wr: 挥舞木剑100次。",
-                   "tr: 带小龙出去散步。别跟丢了!", "wz: 去把我的魔法道具搬来。那是一个很大的金属箱子。"))
+                   "tr: 带小龙出去散散步。别跟丢了!", "wz: 去把我的魔法道具搬来。它们装在一个很大的箱子里。"))
 
     $ pic = girl.get_pic("constitution", "dancer", "profile", naked_filter=True, soft=True)
 
@@ -2817,7 +2817,7 @@ label slave_punish_scold(girl):
     return
 
 label slave_punish_upkeep(girl):
-    $ MC.rand_say(("I see you are getting too comfortable. So I'll just cut your upkeep to zero tomorrow. We'll see how you like working on an empty stomach.", "I guess if I keep spoiling you, you're just going to get fat and lazy. You'll get no money for your upkeep tomorrow."))
+    $ MC.rand_say(("我看你是最近好日子过久了。明天我就停发你的薪水。看看你喜不喜欢空着肚子上班。", "我想如果我一直宠着你，你只会变得又胖又懒。明天你的薪水别想要了。"))
 
     if girl.upkeep == 0:
 

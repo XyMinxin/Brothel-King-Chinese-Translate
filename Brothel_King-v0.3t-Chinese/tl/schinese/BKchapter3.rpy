@@ -82,37 +82,37 @@ translate schinese c3_suzume_hint_142afc01:
 translate schinese c3_suzume_hint_4a6429c1:
 
     # you "Their ninja powers are messing with us. There has to be a way to circumvent them."
-    you "她们的忍术弄得我们晕头转向。肯定有办法不能出行。"
+    you "她们的忍术弄得我们晕头转向。一定有什么办法抓住她们。"
 
 # game/BKchapter3.rpy:43
 translate schinese c3_suzume_hint_c87d5f30:
 
     # suzume normal "We should ask around for hints. You've made a few contacts through the city, haven't you? Why not ask them for clues?"
-    suzume normal "我们应该四处打听线索。你在城里认识了一些红颜知己，对吧？也许他们有主意？"
+    suzume normal "我们应该四处打听线索。你在城里认识了很多女人，对吧？也许她们有些情报？"
 
 # game/BKchapter3.rpy:45
 translate schinese c3_suzume_hint_ac895d1b:
 
     # you "I don't know. Most of them are freaks and dullards. Some are hot girls, though."
-    you "我不知道。她们大多都是怪人和呆瓜。不过颜值倒是不错，身材也很不错。"
+    you "我不知道。她们大多都是怪人和呆瓜。不过长得确实很标致，身材也很不错。"
 
 # game/BKchapter3.rpy:47
 translate schinese c3_suzume_hint_b92ff820:
 
     # suzume bend "What about this noble little lady you've been dating? Perhaps she knows something we don't?"
-    suzume bend "那你和你估的千金大小姐呢？她肯定有些秘密情报吧？"
+    suzume bend "那你正在泡的千金大小姐呢？她肯定有些秘密情报吧？"
 
 # game/BKchapter3.rpy:49
 translate schinese c3_suzume_hint_22e7ce5c:
 
     # you "Hey! We're not da-"
-    you "嘿！我们又没信心了..."
+    you "嘿！我们才没在..."
 
 # game/BKchapter3.rpy:51
 translate schinese c3_suzume_hint_1165910e:
 
     # you "Why am I justifying myself to you?" with vpunch
-    you "我为什么要给你解释？" with vpunch
+    you "我为什么要和你解释？" with vpunch
 
 # game/BKchapter3.rpy:51
 translate schinese c3_suzume_hint_6bebb97e:
@@ -124,7 +124,7 @@ translate schinese c3_suzume_hint_6bebb97e:
 translate schinese c3_suzume_hint_7492958a:
 
     # suzume "But just so you know, I could use a little boning. I am getting rusty, you know!"
-    suzume "你知道，我也需要安慰。我在那里很久没有被滋养了，你知道的！"
+    suzume "你知道，我也需要安慰。我的那里很久没有被滋养了，你知道的！"
 
 # game/BKchapter3.rpy:55
 translate schinese c3_suzume_hint_417c0cee:
@@ -136,7 +136,7 @@ translate schinese c3_suzume_hint_417c0cee:
 translate schinese c3_suzume_hint_bf694dfe:
 
     # you "Wait. Actually, it's been a while. Come here."
-    you "等等其实，确实有好一会了。过来趴下。"
+    you "等等，确实有好一会了。过来趴下吧。"
 
 # game/BKchapter3.rpy:63
 translate schinese c3_suzume_hint_1e512692:
@@ -154,7 +154,7 @@ translate schinese c3_suzume_hint_074bca08:
 translate schinese c3_suzume_hint_b4865ace:
 
     # suzume "Oh my... Look at the mess you've made..."
-    suzume "哎呀...你弄得到处都是..."
+    suzume "哎呀...你又弄得到处都是..."
 
 # game/BKchapter3.rpy:74
 translate schinese c3_suzume_hint_1b4a1ddf:
@@ -166,7 +166,7 @@ translate schinese c3_suzume_hint_1b4a1ddf:
 translate schinese c3_suzume_hint_732bb425:
 
     # suzume "You didn't even spare my ass this time! Looks like we've found a new way to have fun..."
-    suzume "你连我的屁股都不放过！看来你又出现了新的性倾向..."
+    suzume "你连我的屁股都不放过！看来你又有了新的性癖..."
 
 # game/BKchapter3.rpy:84
 translate schinese c3_suzume_hint_e1341609:
@@ -178,13 +178,13 @@ translate schinese c3_suzume_hint_e1341609:
 translate schinese c3_suzume_hint_4e952b73:
 
     # you "Yes. But this doesn't bring us any closer to catching those pesky ninjas."
-    you "你是舒服了。可那些忍者依然逍遥法外，她们可爽多了。"
+    you "你是舒服了。可那些忍者依然逍遥法外，她们可比你爽多了。"
 
 # game/BKchapter3.rpy:88
 translate schinese c3_suzume_hint_ee11d255:
 
     # suzume "Well, like I said, you can investigate with your contacts in the city. Or you can hit your noble girlfriend."
-    suzume "好吧，就像我说的，你可以询问你的红颜知己来调查。或者你也可以找到那位大小姐。"
+    suzume "好吧，就像我说的，你可以询问你的女性朋友调查。或者你也可以找到那位大小姐。"
 
 # game/BKchapter3.rpy:90
 translate schinese c3_suzume_hint_4bdbeba6:
@@ -202,19 +202,19 @@ translate schinese c3_suzume_hint_b1e1713f:
 translate schinese c3_suzume_hint_23e7613a:
 
     # "You could also ask Homura for more hints, by summoning her from the {b}Plaza{/b}."
-    "你也可以在{b}自由广场{/b}巡视荧光灯，让她告诉你一些情报。"
+    "你也可以在{b}自由广场{/b}与焰碰面，让她告诉你一些情报。"
 
 # game/BKchapter3.rpy:97
 translate schinese c3_suzume_hint_41f4edc5:
 
     # "Homura also mentioned that she can help you if you tie her ribbon to a pole in the {b}Plaza{/b}, but you'll need an okiya first."
-    "焰还提到过，如果你把她的丝带系在{b}广场{/b}的辫子上，她就会来见你，不过你的青楼录音室艺妓置屋。"
+    "焰还提到过，如果你把她的丝带系在{b}广场{/b}的柱子上，她就会来见你，不过你的青楼得准备好一间艺妓置屋让她歇脚。"
 
 # game/BKchapter3.rpy:196
 translate schinese c3_interrogate_contacts_04fbc7aa:
 
     # "<PLACEHOLDER> Sorry, this part of the story is not ready yet. Wait for a future update..."
-    "<PLACEHOLDER> 抱歉，这部分故事还没有准备好。等待未来的更新..."
+    "<PLACEHOLDER> 抱歉，这部分故事还没有完成。敬请期待未来的更新..."
 
 # game/BKchapter3.rpy:199
 translate schinese c3_interrogate_contacts_e8747eaf:
@@ -226,25 +226,25 @@ translate schinese c3_interrogate_contacts_e8747eaf:
 translate schinese c3_interrogate_contacts_a1c86e4f:
 
     # suzume normal "I don't have specific hints about individual Kunoichi, but I'm sure other people will."
-    suzume normal "我没有那些女忍者的消息，但我相信其他人会有。"
+    suzume normal "我没有那些女忍者的消息，但我相信其他人知道些什么。"
 
 # game/BKchapter3.rpy:203
 translate schinese c3_interrogate_contacts_b2d3ca31:
 
     # suzume "If you can collect {b}three hints{/b} about one of them, talk to me again. We should be able to devise a plan."
-    suzume "如果您能收集关于她的线索的{b}三个{/b}，我们就可以分析出她的行动规律。"
+    suzume "如果您能收集{b}三个{/b}关于她的线索，我们就可以分析出她的行动规律。"
 
 # game/BKchapter3.rpy:205
 translate schinese c3_interrogate_contacts_5f15e4f8:
 
     # "Talk to Suzume after you've gathered {b}three hints{/b} on a Kunoichi."
-    "当你收集到{b}三个{/b}女忍者的线索后，前往云雀吧。"
+    "当你收集到{b}三个{/b}女忍者的线索后，就去联络云雀吧。"
 
 # game/BKchapter3.rpy:218
 translate schinese c3_interrogate_contacts_15c12661:
 
     # "You tell [npc.name] about {b}Narika{/b}, the Kunoichi you are looking for, and what she's been up to."
-    "您向 [npc.name] 讲述您正在寻找的女忍者 {b}Narika{/b}，以及她最近在做什么。"
+    "你向[npc.name]讲述您正在寻找的女忍者{b}Narika{/b}，以及她最近在做什么。"
 
 # game/BKchapter3.rpy:175
 translate schinese c3_interrogate_contacts_ee7da785:
@@ -262,25 +262,25 @@ translate schinese c3_interrogate_contacts_fca2e4c7:
 translate schinese c3_interrogate_contacts_048a323c:
 
     # "You talk to {b}Papa Freak{/b} about the secret magic-proof cells in your building again."
-    "你之前去参观过{b}弗莱迪老爹{/b}探讨关于宅子里那个能够闪耀魔法的密室的事情。"
+    "你之前去参观过{b}弗莱迪老爹{/b}探讨关于宅子里那个能够增幅魔力的密室的事情。"
 
 # game/BKchapter3.rpy:258
 translate schinese c3_interrogate_contacts_6490b2c3:
 
     # willow "Hey, [MC.name], wanna see something cool?"
-    willow "[MC.name]，想看看很酷的东西吗？"
+    willow "[MC.name]，想不想看看很酷的东西？"
 
 # game/BKchapter3.rpy:260
 translate schinese c3_interrogate_contacts_7ed62b1e:
 
     # you "Depends. Does it involve going into the sewers again? Because I hate going down in the sewers. Washing the smell away takes days..."
-    you "除了什么？不会又去下水道吧？我真的不想再去了，洗掉那股味道需要好几天。"
+    you "这次是什么？不会又要去下水道吧？我真的不想再去了，洗掉那股味道需要好几天。"
 
 # game/BKchapter3.rpy:262
 translate schinese c3_interrogate_contacts_ac72fe82:
 
     # willow "Nope, it's a fire rune. You can engrave it on a weapon, and fight fire with fire. Isn't it cool?"
-    willow "这是火焰符文。你可以把它刻在武器上，你的剑可以挥舞出火焰。很酷吧？"
+    willow "这是火焰符文。你可以把它镶嵌在武器上，你的剑可以挥舞出火焰。很酷吧？"
 
 # game/BKchapter3.rpy:264
 translate schinese c3_interrogate_contacts_4b4ad2b3:
@@ -292,7 +292,7 @@ translate schinese c3_interrogate_contacts_4b4ad2b3:
 translate schinese c3_interrogate_contacts_2b4490a9:
 
     # willow "But you could get it, you know, just in case? For 100,000 gold?"
-    willow "你还是可以买一个，万一？10万金币怎么样？"
+    willow "你还是可以买一个，以防万一？10万金币怎么样？"
 
 # game/BKchapter3.rpy:268
 translate schinese c3_interrogate_contacts_bf712700:

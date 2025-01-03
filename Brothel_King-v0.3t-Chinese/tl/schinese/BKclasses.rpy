@@ -392,7 +392,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:4747
     old " has returned from her "
-    new " has returned from her "
+    new "结束了她的"
 
     # game/BKclasses.rpy:4773
     old "She studied very hard and made exceptional progress."
