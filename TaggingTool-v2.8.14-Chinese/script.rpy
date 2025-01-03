@@ -283,7 +283,9 @@ init -2 python:
             global selected_index
             global selected_pic
             global filtered_pics
+            global selected_pic_list
             filtered_pics = []
+            selected_pic_list = []
             selected_index = 0
             selected_pic = None
 
@@ -309,6 +311,9 @@ init -2 python:
                 return
 
             global selected_pic
+            global filtered_pics
+            global selected_index
+            filtered_pics = li
 
             def decrement_idx(idx) :
                 if (idx - nb) < 0:
@@ -325,6 +330,7 @@ init -2 python:
                 idx = decrement_idx(idx)
             else:
                 idx = 0
+            selected_index = idx
             selected_pic = li[idx]
 
             idx = decrement_idx(idx)
@@ -468,6 +474,15 @@ init -2 python:
                     pic.rename_file(pic.file_name.replace(_from, _to))
 
             bk(str(i) + " 已进行更改。")
+            
+        def replace_batch(self, _from, _to):
+            i = 0
+            global selected_pic_list
+            for pic in selected_pic_list:
+                if _from in pic.file_name:
+                    i += 1
+                    pic.rename_file(pic.file_name.replace(_from, _to))
+            bk(str(i) + " 张图片已批量更改. ")
 
 
     ending_pattern = re.compile(r"(\(\d*\))?(\.\w{3,4})+$") # Chris12: can match (and remove) the last part of a filename '(00001).jpg'.
@@ -524,8 +539,6 @@ init -2 python:
 #                if tag in self.file_name.lower():
 #                    for new_tag in make_tuple(tag_dict[tag]):
 #                        self.add_tag(new_tag, init=True)
-
-
 
         def update_tags(self):
             global debug_update_tags
@@ -1096,7 +1109,6 @@ label replace_in_files():
 
     else:
         python:
-
             for girl in girl_list:
                 if girl.path == persistent.girl:
                     break
@@ -1303,8 +1315,24 @@ label edit_shortcut():
 
         elif result[0] == "tag":
             $ tag = result[1]
-            $ selected_pic.toggle_tag(tag)
-
+            if len(selected_pic_list) == 0:
+                $ selected_pic.toggle_tag(tag)
+            else:
+                python:
+                    for pic in selected_pic_list:
+                        pic.toggle_tag(tag)
+        
+        elif result[0] == "carousel_show":
+            $ selected_pic = result[1]
+        elif result[0] == "carousel_toggle":
+            python:
+                global selected_pic_list
+                pic = result[1]
+                if pic in selected_pic_list:
+                    selected_pic_list.remove(pic)
+                else:
+                    selected_pic_list.append(pic)
+        
 label select_girl_pack():
 
     $ total_pics = sum(len(g.pics) for g in girl_list)
@@ -1450,8 +1478,17 @@ label browse_shortcut():
                 $ selected_pic = None
             else:
                 $ selected_pic = pic_list[0]
-
-
+        
+        elif result[0] == "carousel_show":
+            $ selected_pic = result[1] 
+        elif result[0] == "carousel_toggle":
+            python:
+                global selected_pic_list
+                pic = result[1]
+                if pic in selected_pic_list:
+                    selected_pic_list.remove(pic)
+                else:
+                    selected_pic_list.append(pic)
     return
 
 
