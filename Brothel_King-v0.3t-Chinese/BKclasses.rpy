@@ -3956,14 +3956,16 @@ init -2 python:
 
                 elif target == "ignore budgets":
                     text1 += "无视顾客的预算限制"
+
+                elif target == "ignore energy":
+                    text1 += "每次互动都有概率无视精力损耗"
+
                 text1 = "在作为妓女工作时接受群交行为" if target == "group" else text1
                 text1 = "在作为妓女工作时接受双飞行为" if target == "bisexual" else text1
                 text1 = "在任何时候包括平时都保持裸体" if target == "naked" else text1
                 text1 = "在作为妓女工作时接受激烈的多人群交" if target == "orgy" else text1
                 text1 = "在作为妓女工作时戴上装饰扮演兽耳娘" if target == "ponygirl" else text1
 
-                elif target == "ignore energy":
-                    text1 += "每次互动都有概率无视精力损耗"
 
                 return __(text1)
 
