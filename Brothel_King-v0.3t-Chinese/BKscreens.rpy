@@ -423,8 +423,8 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
                 null
 
                 text "时间: 第[calendar.year]年" size res_font(18) yalign 0.5
-                text " [calendar.month]月" size res_font(18) yalign 0.5
-                text (" [calendar.day]日 (" + __(tl_cn(calendar.get_weekday(), misc_name_dict))[:3] + ")") size res_font(18) yalign 0.5
+                text "[calendar.month]月" size res_font(18) yalign 0.5
+                text ("[calendar.day]日 (" + __(tl_cn(calendar.get_weekday(), misc_name_dict))[:3] + ")") size res_font(18) yalign 0.5
 
         hbox xalign 1.0 spacing xres(6):
             if MC.resource_tab_active:
@@ -3797,7 +3797,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
                             add "side suzume" xalign 0.5 yalign 0.5 fit "contain"
 
             else:
-                text "No license\nrequired" xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
+                text "无照经营" xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["slum"], context) id "b1"
 
@@ -3822,7 +3822,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
                     add ProportionalScale("UI/" + license_dict[0][1], *res_tb(50)) xalign 0.5
 
-                text __(license_dict[1][0]) + __("\nrequired") xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
+                text __(license_dict[1][0]) + "\n需要" xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["warehouse"], context) id "b2"
             use district_button(district_dict["docks"], context) id "b3"
@@ -3848,7 +3848,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
                     add ProportionalScale("UI/" + license_dict[0][1], *res_tb(50))
 
-                text __(license_dict[2][0]) + __("\nrequired") xalign 0.5 yalign 0.0 xsize xres(160) size res_font(14) text_align 0.5 color c_darkgrey
+                text __(license_dict[2][0]) + "\n需要" xalign 0.5 yalign 0.0 xsize xres(160) size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["gardens"], context)  id "b4"
             use district_button(district_dict["cathedra"], context)  id "b5"
@@ -3873,7 +3873,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
                     add ProportionalScale("UI/" + license_dict[0][1], *res_tb(50))
 
-                text __(license_dict[3][0]) + __("\nrequired") xalign 0.5 yalign 0.0 xsize xres(150) size res_font(14) text_align 0.5 color c_darkgrey
+                text __(license_dict[3][0]) + "\n需要" xalign 0.5 yalign 0.0 xsize xres(150) size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["hold"], context)  id "b6"
 
@@ -4065,9 +4065,9 @@ screen visit_location():
     key "K_LEFT" action (SetVariable('selected_location', _previous), Jump("visit_location"))
     key "K_RIGHT" action (SetVariable('selected_location', _next), Jump("visit_location"))
 
-    textbutton "<" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "Visit the previous location in this district (you can use arrow keys)."
+    textbutton "<" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _previous), Jump("visit_location")) tooltip "前往上一个区域 (也可以用左方向键切换)。"
 
-    textbutton ">" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "Visit the next location in this district (you can use arrow keys)."
+    textbutton ">" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_location', _next), Jump("visit_location")) tooltip "前往下一个区域 (也可以用右方向键切换)。"
 
     frame:
         background None # loc.get_pic(config.screen_width, int(config.screen_height*0.8))
@@ -4100,9 +4100,9 @@ screen visit_location():
                     at alpha_transform
 
                     if girl.MC_interact:
-                        tooltip __("Talk to ") + girl.fullname + "."
+                        tooltip "和" + girl.fullname + "打招呼。"
                     else:
-                        tooltip "Talk to this unknown girl. Costs 1 {image=img_AP}."
+                        tooltip "和这个陌生女孩搭讪，消耗 1 {image=img_AP}。"
 
                     vbox:
 
@@ -4153,7 +4153,7 @@ screen visit_location():
                     tooltip "Explore this location. Costs 1 {image=img_AP}."
 
                 hbox xalign 0.5 yalign 0.5:
-                    text "Take a look around (1 " size res_font(18)
+                    text "四处闲逛 (1 " size res_font(18)
                     text "{image=img_AP}" xalign 0.0 yalign 0.5
                     text ")" xalign 0.0 yalign 1.0 size res_font(18)
 
@@ -4719,11 +4719,11 @@ screen brothel_options():
 
         if NPC_carpenter.active:
             vbox xsize xres(320):
-                text __("{b}Customer populations{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                text "{b}顾客占比{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                 frame xpadding xres(10) ypadding yres(10) xfill True yfill True:
                     has vbox
-                    text __("Choose customer populations to attract to your brothel (build decoration to attract more)") size res_font(14) italic True color c_brown
+                    text "选择来青楼消费的顾客群体占比 (增加青楼的装饰吸引更多种类的客人)" size res_font(14) italic True color c_brown
                     null height yres(6)
                     vbox spacing yres(6):
                         for pop in all_populations:
@@ -4745,10 +4745,10 @@ screen brothel_options():
                                             text attract_pop_dict[pop.weight] color c_brown size res_font(14) yalign 1.0
                                         textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
             vbox xsize xres(320):
-                text __("{b}Customer preferences{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                text "{b}顾客设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
                 frame xfill True xpadding xres(10) ypadding yres(10):
                     has vbox
-                    text __("Influence customer preferences for entertainment and sexual acts (build furnishing to get bigger boosts)") size res_font(14) italic True color c_brown
+                    text "改变客户对娱乐和性行为的偏好（升级更多设施以提升影响效果）" size res_font(14) italic True color c_brown
                     null height yres(6)
 
                     vbox spacing yres(6):
@@ -4776,17 +4776,17 @@ screen brothel_options():
                                                 text "" size res_font(14) yalign 0.5
 
                 text "" size res_font(22)
-                text __("{b}Matching preferences{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                text "{b}匹配设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                 frame ysize yres(150) xpadding xres(10) ypadding yres(10) xfill True:
                     has vbox spacing 6
 
-                    text __("Choose how incoming customers will be matched with your girls.") size res_font(14) italic True color c_brown
+                    text "选择女孩与顾客的匹配策略。" size res_font(14) italic True color c_brown
 
                     if game.matching_priority == "rank":
-                        $ text1 = __("When possible, customers will be matched with girls of the same rank.")
+                        $ text1 = "顾客会尽可能地由符合他身份地位的女孩服务。"
                     elif game.matching_priority == "act":
-                        $ text1 = __("When possible, customers will be matched with girls that allow their preferred job or sex act.")
+                        $ text1 = "顾客会尽可能地由符合他兴趣或性癖的女孩服务。"
 
                     textbutton "根据 %s 匹配" % misc_name_dict[game.matching_priority] text_size res_font(18) xsize xres(100) action ToggleField(game, "matching_priority", true_value="rank", false_value="act")
 
@@ -4796,10 +4796,10 @@ screen brothel_options():
             vbox xsize xres(320):
 
                 if [f for f in brothel.furniture if f.can_deactivate]:
-                    text __("{b}Special options{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                    text "{b}特殊设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                     frame ysize yres(200) xpadding xres(10) ypadding yres(10) xfill True:
-                        text __("Activate or deactivate special brothel furniture.") size res_font(14) italic True color c_brown
+                        text "激活或关闭设施的特殊效果" size res_font(14) italic True color c_brown
 
                         hbox box_wrap True:
                             for furn in [f for f in brothel.furniture if f.can_deactivate]:
@@ -4814,25 +4814,25 @@ screen brothel_options():
 
                 # This will unlock with the 'billboard' upgrade
                 if brothel.get_effect("special", "advanced advertising"):
-                    text __("{b}Advanced settings{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                    text "{b}广告设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
 
                     frame ysize yres(200) xpadding xres(10) ypadding yres(10) xfill True:
                         has vbox
 
-                        text __("In addition to improving your brothel reputation, advertising girls will increase customer attraction and customer budget based on advertising power (create new outfits to increase advertising power).") size res_font(14) italic True color c_brown
+                        text "除了提高你的青楼声誉，广告女郎还能增加客流量和消费预算（收集更多服装，可以提高宣传效果）。" size res_font(14) italic True color c_brown
                         null height yres(6)
                         hbox spacing xres(3):
                             vbox xsize xres(100):
-                                text __("Customers") size res_font(14) bold True color c_brown yalign 1.0
+                                text "顾客" size res_font(14) bold True color c_brown yalign 1.0
                                 text percent_text(brothel.get_adv_setting("attraction")) + " to customer attraction" size res_font(14) color c_brown
                             bar thumb "tb empty" xsize xres(100) xpos 0 yalign 0.0 value FieldValue(brothel, "advertising_setting", range=4, offset=-2, action=Function(brothel.update_customer_count)) tooltip __("Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend).")
                             vbox xsize xres(100):
-                                text __("Budget") size res_font(14) bold True color c_brown yalign 1.0
+                                text "预算" size res_font(14) bold True color c_brown yalign 1.0
                                 #text str(brothel.advertising_setting)
                                 text percent_text(brothel.get_adv_setting("budget") / brothel.max_help) + __(" to customer budget") size res_font(14) color c_brown
                     text "" size res_font(22)
 
-                text __("{b}Forecast{/b}") size res_font(18) yalign 0.0 drop_shadow (2, 2)
+                text "{b}市场分析{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
                 frame xfill True xpadding xres(10) ypadding yres(10):
                     has vbox spacing 12
                     text brothel.count_customers_description() color c_prune size res_font(14)

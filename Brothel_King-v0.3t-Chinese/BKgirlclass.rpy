@@ -1923,61 +1923,61 @@ init -2 python:
                 try:
                     if farm.programs[self].target == "no training":
                         if farm.programs[self].holding == "rest":
-                            status_list.append(["rest.webp", self.fullname + " is {b}resting{/b} in her pen today."])
+                            status_list.append(["rest.webp", self.fullname + "今天在她的牢房里{b}休息{/b}。"])
                         else:
-                            status_list.append(["farm.webp", self.fullname + " is being trained at the {b}farm{/b} (" + farm.programs[self].holding + " training)."])
+                            status_list.append(["farm.webp", self.fullname + "正在{b}奴隶农场{/b}接受训练 (" + farm.programs[self].holding + "训练)。"])
                     else:
-                        status_list.append(["farm.webp", self.fullname + " is being trained at the {b}farm{/b} (" + farm.programs[self].target + " training)."])
+                        status_list.append(["farm.webp", self.fullname + "正在{b}奴隶农场{/b}接受训练 (" + farm.programs[self].target + "训练)。"])
                 except:
                     farm.programs[self] = FarmProgram(self)
 
             elif (self.resting or not self.job or not self.works_today()) and not self.exhausted:
                 if self.workdays[calendar.get_weekday()] > 0 and persistent.show_girl_status["scheduled"]:
-                    status_list.append(["scheduled.webp", self.fullname + " is {b}resting{/b} today as scheduled."])
+                    status_list.append(["scheduled.webp", self.fullname + "今天按照排班正在{b}休息{/b}。"])
                 elif persistent.show_girl_status["rest"]:
-                    status_list.append(["rest.webp", self.fullname + " is {b}resting{/b} today."])
+                    status_list.append(["rest.webp", self.fullname + "今天{b}休息{/b}。"])
 
             elif self.energy < autorest_limit and self.energy < self.get_stat_max("energy"):
-                status_list.append(["autorest.webp", self.fullname + " 's energy is low. She will be automatically sent to {b}rest{/b} today."])
+                status_list.append(["autorest.webp", self.fullname + "的精力很低。她今天将自动{b}休息{/b}。"])
 
             elif self.works_today() == 50 and persistent.show_girl_status["half-shift"]:
-                status_list.append(["half.webp", self.fullname + " is working a {b}half-shift{/b} today."])
+                status_list.append(["half.webp", self.fullname + "今天将{b}半勤{/b}。"])
 
             if self in brothel.master_bedroom.girls and persistent.show_girl_status["master bedroom"]:
-                status_list.append(["master.webp", self.fullname + " is set to train in the {b}master bedroom{/b}."])
+                status_list.append(["master.webp", self.fullname + "今晚将接受你的{b}私人指导{/b}。"])
 
             if self.ready_to_rank():
-                status_list.append(["rankup.webp", self.fullname + " is ready to {b}rank up{/b}."])
+                status_list.append(["rankup.webp", self.fullname + "可以{b}提升阶级{/b}了。"])
 
             if self.can_perk or self.can_spend_upgrade_points():
-                status_list.append(["levelup.webp", self.fullname + " is ready to {b}level up{/b}."])
+                status_list.append(["levelup.webp", self.fullname + "可以{b}提升等级{/b}了。"])
 
             if self.hurt > 0:
                 if self.hurt <= 1:
-                    status_list.append(["hurt.webp", self.fullname + " is {b}hurt or sick{/b} and will need to rest for 1 more day before she can do anything."])
+                    status_list.append(["hurt.webp", self.fullname + "{b}受伤或生病{/b}了，在修养一天后她才能正常活动。"])
                 else:
-                    status_list.append(["hurt.webp", self.fullname + " is {b}hurt or sick{/b} and will need to rest for " + str(round_int(self.hurt)) + " more days until she can do anything."])
+                    status_list.append(["hurt.webp", self.fullname + "{b}受伤或生病{/b}了，在修养" + str(round_int(self.hurt)) + "天后她才能正常活动。"])
 
             elif self.exhausted:
-                status_list.append(["tired.webp", self.fullname + " is {b}tired{/b} and needs to be fully rested until she can work again."]) # Replaced exhausted.webp
+                status_list.append(["tired.webp", self.fullname + " {b}精疲力竭{/b}，需要彻底休息后才能正常工作。"]) # Replaced exhausted.webp
 
             if persistent.show_girl_status["work&whore"] and self.works_today() and self.work_whore and self in MC.girls:
-                status_list.append(["ww.webp", self.fullname + " is {b}working and whoring{/b} today."])
+                status_list.append(["ww.webp", self.fullname + "今天将{b}一边正常工作一边勾引客人上床{/b}。"])
 
             if persistent.show_girl_status["not work&whore"] and self.works_today() and not self.work_whore and self in MC.girls:
-                status_list.append(["not_ww.webp", self.fullname + " is not {b}working and whoring{/b}."])
+                status_list.append(["not_ww.webp", self.fullname + "现在专心{b}只做一种工作{/b}."])
 
             if self.naked and persistent.show_girl_status["naked"]:
                 if self.get_effect("special", "naked"):
-                    status_list.append(["naked.webp", self.fullname + " will remain {b}naked{/b} at all times."])
+                    status_list.append(["naked.webp", self.fullname + "将一直保持{b}一丝不挂{/b}。"])
                 else:
-                    status_list.append(["naked2.webp", self.fullname + " will remain {b}naked{/b} today."])
+                    status_list.append(["naked2.webp", self.fullname + "今天将{b}一丝不挂{/b}。"])
 
             if not self.naked and persistent.show_girl_status["not naked"]:
-                status_list.append(["not_naked.webp", self.fullname + " is not {b}naked{/b} (and that's a problem for you, apparently)."])
+                status_list.append(["not_naked.webp", self.fullname + "好好地{b}穿着衣服{/b} (显然，这对你来说是个问题)。"])
 
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]] and persistent.show_girl_status["negative fixation"]:
-                status_list.append(["negfix.webp", "You know that " + self.fullname + " has a {b}negative fixation{/b}."])
+                status_list.append(["negfix.webp", "你发现" + self.fullname + "有一个{b}抵触的性行为{/b}。"])
 
             return status_list
 

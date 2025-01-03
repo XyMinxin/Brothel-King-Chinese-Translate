@@ -259,7 +259,7 @@ screen right_menu_farm():
         text ""
         textbutton "奴隶农场" style_group "rm":
             action Return("farm")
-            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + _(" girl") + plural(len(farm.girls)) + _("{/b}{/color} and {color=[c_softpurple]}{b}") + str(farm.count_minions()) + _(" minion") + plural(farm.count_minions()) + _("{/b}{/color} at the farm.")
+            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + "个女孩" + plural(len(farm.girls)) + "{/b}{/color}和{color=[c_softpurple]}{b}" + str(farm.count_minions()) + "个仆从" + plural(farm.count_minions()) + "{/b}{/color}。"
 
 
 ################

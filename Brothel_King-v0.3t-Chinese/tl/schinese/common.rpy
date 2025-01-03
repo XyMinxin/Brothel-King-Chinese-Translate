@@ -468,7 +468,7 @@ translate schinese strings:
 
     # renpy/common/00gui.rpy:452
     old "Are you sure you want to quit?"
-    new "您确定要退出吗？"
+    new "您确定要退出游戏吗？请确保保存了游戏进度。"
 
     # renpy/common/00gui.rpy:453
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
