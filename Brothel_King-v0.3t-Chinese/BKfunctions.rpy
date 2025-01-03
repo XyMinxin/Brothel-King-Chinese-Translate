@@ -5182,63 +5182,63 @@ init -3 python:
         for stat in all_MC_stats:
             if NGP_settings_dict[stat].get():
                 pic = {"strength" : "bear.webp", "spirit" : "sorcerer.webp", "charisma" : "ghost.webp", "speed" : "speed.webp"}[stat]
-                MC.learn(Spell(NGP_settings_dict[stat].label, pic, type="passive", level=1, effects=[Effect("gain", stat, NGP_settings_dict[stat].get()), Effect("change", stat + " max", NGP_settings_dict[stat].get())], description="Gain %i to MC's %s and %s maximum." % (NGP_settings_dict[stat].get(), stat.capitalize(), stat.capitalize())))
+                MC.learn(Spell(NGP_settings_dict[stat].label, pic, type="passive", level=1, effects=[Effect("gain", stat, NGP_settings_dict[stat].get()), Effect("change", stat + " max", NGP_settings_dict[stat].get())], description="增加%i点主角的%s属性以及%s点上限。" % (NGP_settings_dict[stat].get(), stat.capitalize(), stat.capitalize())))
                 # MC.change_stat(stat, NGP_settings_dict[stat].get(), False, ignore_ceil=True)
 
         if NGP_settings_dict["love generation"].get():
-            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="Boosts love gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["love generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="提高%i %的好感度提升速度(新周目增益效果)。" % (100*NGP_settings_dict["love generation"].get())))
 
         if NGP_settings_dict["fear generation"].get():
-            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="Boosts fear gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["fear generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="提高%i %的恐惧值提升速度 (新周目增益效果)。" % (100*NGP_settings_dict["fear generation"].get())))
 
         if NGP_settings_dict["xp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="Boosts your girl's XP gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["xp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="提高女孩%i %的经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["xp generation"].get())))
 
         if NGP_settings_dict["jp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="Boosts your girl's JP gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["jp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="提高女孩%i %的职业经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["jp generation"].get())))
 
         if NGP_settings_dict["prestige generation"].get():
-            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="Boosts your prestige gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["prestige generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="提高%i %的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["prestige generation"].get())))
 
         if NGP_settings_dict["training efficiency"].get():
-            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="Boosts your prestige gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["training efficiency"].get())))
+            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="提高%i %的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["training efficiency"].get())))
 
         if NGP_settings_dict["tax reduction"].get():
-            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="Reduces your total taxes by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["tax reduction"].get())))
+            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="减少%i %的纳税额 (新周目增益效果)。" % (100*NGP_settings_dict["tax reduction"].get())))
 
         # Item dispensers
         if NGP_settings_dict["free girl"].get():
             if NGP_settings_dict["free girl"].get() == "once":
                 MC.add_item(seduction_potion.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["free girl"].label + " kit", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="Receive a %s Potion of Seduction." % NGP_settings_dict["free girl"].get()).build()
+                Furniture(NGP_settings_dict["free girl"].label + " kit", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="获得一瓶魅惑药水（ %s ）。" % NGP_settings_dict["free girl"].get()).build()
 
         if NGP_settings_dict["virginity"].get():
             if NGP_settings_dict["virginity"].get() == "once":
                 MC.add_item(restoration_balm.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["virginity"].label + " kit", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="Receive a %s Balm of Restoration." % NGP_settings_dict["virginity"].get()).build()
+                Furniture(NGP_settings_dict["virginity"].label + " kit", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="获得一盒修补软膏（ %s ）。" % NGP_settings_dict["virginity"].get()).build()
 
         if NGP_settings_dict["sanity"].get():
             if NGP_settings_dict["sanity"].get() == "once":
                 MC.add_item(bliss_incense.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["sanity"].label + " kit", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="Receive a %s Incense of Bliss." % NGP_settings_dict["sanity"].get()).build()
+                Furniture(NGP_settings_dict["sanity"].label + " kit", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="获得一包极乐香（ %s ）。" % NGP_settings_dict["sanity"].get()).build()
 
         if NGP_settings_dict["interactions"].get():
             if NGP_settings_dict["interactions"].get() == "once":
                 MC.add_item(magic_powder.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["interactions"].label + " kit", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="Receive a %s Magic Powder." % NGP_settings_dict["interactions"].get()).build()
+                Furniture(NGP_settings_dict["interactions"].label + " kit", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="获得一袋魔法药粉（ %s ）。" % NGP_settings_dict["interactions"].get()).build()
 
         if NGP_settings_dict["perks"].get():
             if NGP_settings_dict["perks"].get() == "once":
                 MC.add_item(wyvern_egg.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["perks"].label, type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "perks")], hidden_effect=True, base_description="Receive a %s Wyvern egg." % NGP_settings_dict["perks"].get()).build()
+                Furniture(NGP_settings_dict["perks"].label, type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "perks")], hidden_effect=True, base_description="获得一个飞龙蛋（ %s ）。" % NGP_settings_dict["perks"].get()).build()
 
         if NGP_settings_dict["autorest"].get():
-            vitals_scanner.description += " Allows autorest to be set up from the Schedule screen."
+            vitals_scanner.description += "可以在排班表界面使用自动休息功能了。"
             vitals_scanner.build()
 
         if NGP_settings_dict["girl"].get():
@@ -5253,11 +5253,11 @@ init -3 python:
         if NGP_settings_dict["free girl challenge"].get():
             calendar.set_alarm(1, "free_girl_challenge")
             slavemarket.active = False
-            MC.learn(Spell(NGP_settings_dict["free girl challenge"].label, 'girl.webp', type="passive", level=1, description="Slavemarket is disabled. You receive a new girl at the start of each month. (NewGame+ effect)."))
+            MC.learn(Spell(NGP_settings_dict["free girl challenge"].label, 'girl.webp', type="passive", level=1, description="奴隶市场将不再对你开放。每个月你都会得到一个新的免费的奴隶 (新周目挑战)。"))
 
         if NGP_settings_dict["training challenge"].get():
             MC.training = False
-            MC.learn(Spell(NGP_settings_dict["training challenge"].label, 'militia.webp', type="passive", level=1, effects=[Effect("boost", "farm training", 1.0)], description="The Farm becomes much more efficient, but you can no longer personally train your girls. (NewGame+ effect)."))
+            MC.learn(Spell(NGP_settings_dict["training challenge"].label, 'militia.webp', type="passive", level=1, effects=[Effect("boost", "farm training", 1.0)], description="奴隶农场的训练将更有效率, 但你将无法自己训练女孩 (新周目挑战)。"))
 
         # naturist frequency is handled in BKgirlclass.rpy generate_traits()
 

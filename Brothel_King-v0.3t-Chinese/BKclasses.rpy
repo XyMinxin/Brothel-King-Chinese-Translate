@@ -2478,7 +2478,7 @@ init -2 python:
                     des += event_color["bad"] % (__("%s from sex acts") % int(self.customer_budget_dict["wh acts"]))
                 des += ")"
 
-            des += "."
+            des += "。"
 
             return des
 
@@ -2492,7 +2492,7 @@ init -2 python:
                 base_cust_nb = self.customer_count - self.customer_count_dict["advertising"] - self.customer_count_dict["special"]
 
             if short:
-                des = __("{color=" + col + "}{b}%i customer%s{/b}{/color} expected") % (self.customer_count, plural(self.customer_count))
+                des = __("{color=" + col + "}{b}%i customer%s{/b}{/color}今晚会来") % (self.customer_count, plural(self.customer_count))
             else:
                 des = __("{b}%i customer%s{/b} are expected to come to the brothel tonight") % (self.customer_count, plural(self.customer_count))
 
@@ -2514,7 +2514,7 @@ init -2 python:
 
                 des += ")"
 
-            return des + "."
+            return des + "。"
 
         def get_advertising(self, boost=True):
 
@@ -5234,7 +5234,7 @@ init -10 python:
                     self.description = self.value # value for story events must be text
 
                 else:
-                    self.description = "You are now in endless mode, enjoy continuing the game!"
+                    self.description = "你已经开启了无尽模式, 尽情享受吧!"
 
             return self.description
 

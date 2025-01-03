@@ -8534,19 +8534,19 @@ translate schinese strings:
 
     # game/BKevents.rpy:828
     old "At the end of Chapter 1, which faction did you side with?"
-    new "在第一章,你站在谁那边?"
+    new "在第一章的故事结尾,你选择支持谁?"
 
     # game/BKevents.rpy:828
     old "Farah, the corrupt guard captain"
-    new "法拉,腐败的上尉"
+    new "法拉——贪污腐败的上尉"
 
     # game/BKevents.rpy:828
     old "Renza, the leader of the thieves' guild"
-    new "伦萨, 盗贼公会的领袖"
+    new "伦萨——盗贼公会的领袖"
 
     # game/BKevents.rpy:828
     old "Maya, the honest guard sergeant"
-    new "玛雅,清廉的中士"
+    new "玛雅——刚正不阿的中士"
 
     # game/BKevents.rpy:952
     old "You have received a new goal"
