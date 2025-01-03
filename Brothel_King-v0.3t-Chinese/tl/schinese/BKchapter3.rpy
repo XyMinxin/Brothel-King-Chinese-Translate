@@ -2350,7 +2350,7 @@ translate schinese c3_hint_47ea0c88:
 translate schinese c3_hint_e2f08cc8:
 
     # you "Really? You do? Were you in jail?"
-    you "真的吗？你知道吗？你进过监狱吗？"
+    you "真的？你真了解吗？难道你蹲过号子？"
 
 # game/BKchapter3.rpy:1115
 translate schinese c3_hint_d39f931a:
