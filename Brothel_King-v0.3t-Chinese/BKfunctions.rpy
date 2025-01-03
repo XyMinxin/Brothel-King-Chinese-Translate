@@ -5186,25 +5186,25 @@ init -3 python:
                 # MC.change_stat(stat, NGP_settings_dict[stat].get(), False, ignore_ceil=True)
 
         if NGP_settings_dict["love generation"].get():
-            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="提高%i %的好感度提升速度(新周目增益效果)。" % (100*NGP_settings_dict["love generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="提高百分之%i的好感度提升速度(新周目增益效果)。" % (100*NGP_settings_dict["love generation"].get())))
 
         if NGP_settings_dict["fear generation"].get():
-            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="提高%i %的恐惧值提升速度 (新周目增益效果)。" % (100*NGP_settings_dict["fear generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="提高百分之%i的恐惧值提升速度 (新周目增益效果)。" % (100*NGP_settings_dict["fear generation"].get())))
 
         if NGP_settings_dict["xp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="提高女孩%i %的经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["xp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="提高女孩百分之%i的经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["xp generation"].get())))
 
         if NGP_settings_dict["jp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="提高女孩%i %的职业经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["jp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="提高女孩百分之%i的职业经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["jp generation"].get())))
 
         if NGP_settings_dict["prestige generation"].get():
-            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="提高%i %的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["prestige generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="提高百分之%i的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["prestige generation"].get())))
 
         if NGP_settings_dict["training efficiency"].get():
-            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="提高%i %的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["training efficiency"].get())))
+            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="提高百分之%i的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["training efficiency"].get())))
 
         if NGP_settings_dict["tax reduction"].get():
-            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="减少%i %的纳税额 (新周目增益效果)。" % (100*NGP_settings_dict["tax reduction"].get())))
+            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="减少百分之%i的纳税额 (新周目增益效果)。" % (100*NGP_settings_dict["tax reduction"].get())))
 
         # Item dispensers
         if NGP_settings_dict["free girl"].get():

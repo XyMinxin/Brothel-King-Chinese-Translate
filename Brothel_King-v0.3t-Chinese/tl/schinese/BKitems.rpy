@@ -711,7 +711,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:474
     old "This balm is prized by the nobility. It restores a girl's virginity (in appearance, anyway)."
-    new "这种软膏深受贵族青睐。它能修复一个女孩的处女膜（至少看不出来）。"
+    new "这种软膏深受贵族青睐。它能修复一个女孩的处女膜（至少别人看不出来）。"
 
     # game/BKitems.rpy:475
     old "Incense of Bliss"
@@ -719,7 +719,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:475
     old "This exotic drug helps forget even the worst traumas."
-    new "这种奇异的药物甚至可以帮助忘记最严重的创伤。"
+    new "这种奇异的药物甚至可以帮助人们忘记最严重的创伤。"
 
     # game/BKitems.rpy:476
     old "Magic Powder"
@@ -727,7 +727,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:476
     old "Snort some to recover all of your AP and Mana. It's completely legal. Maybe."
-    new "吸一些来恢复你所有的行动力和法力。这是完全合法的。也许吧。"
+    new "吸食一些来恢复所有的行动力和魔力。这是完全合法的，我猜。"
 
     # game/BKitems.rpy:477
     old "Wyvern egg"

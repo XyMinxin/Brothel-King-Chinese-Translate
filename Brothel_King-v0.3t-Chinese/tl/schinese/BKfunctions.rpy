@@ -420,7 +420,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4098
     old " will be working tonight."
-    new "今晚将工作。"
+    new "今晚上班。"
 
     # game/BKfunctions.rpy:4100
     old "- Waitress: "

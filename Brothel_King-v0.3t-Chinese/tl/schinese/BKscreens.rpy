@@ -512,7 +512,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5337
     old "Restock this shop's inventory for %s gold (available once a day)."
-    new "用 %s 金币刷新商品(一天限一次)。"
+    new "用 %s 金币刷新商店(一天限一次)。"
 
     # game/BKscreens.rpy:5610
     old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
