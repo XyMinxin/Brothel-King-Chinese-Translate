@@ -28,7 +28,7 @@ translate schinese new_moon_efdf9933:
 translate schinese sill_checks_5f55122b:
 
     # sill sad "Master [MC.name]!\n{color=[c_red]}The threat to [brothel.name] is high or worse!{/color} You should hire more security.\nDo you want to end the day anyway?" (interact=False)
-    sill sad "[MC.name]!\n{color=[c_red]}对[brothel.name]的威胁很高或更糟!{/color}你应该雇佣更多安保人员。\n你要保持现在的设置直接开始营业吗?" (interact=False)
+    sill sad "[MC.name]!\n{color=[c_red]}[brothel.name]的威胁等级很高!{/color}你应该雇佣更多安保人员来保护青楼。\n你要保持现在的设置直接开始营业吗?" (interact=False)
 
 # game/BKevents.rpy:345
 translate schinese sill_checks_ce64d60a:

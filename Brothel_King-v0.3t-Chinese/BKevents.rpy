@@ -398,7 +398,7 @@ label sill_checks(): # Returns False if the player doesn't proceed with 'end day
     return True
 
 
-label receive_item(it, msg="You have received %s.", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+label receive_item(it, msg="你获得了 %s。", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
 
     if not it:
         $ debug_notify("Couldn't receive item %s" % str(it))
