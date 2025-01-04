@@ -684,7 +684,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7573
     old " acts (soft).\nCosts "
-    new "行为(温和)的优点。\n成本 "
+    new "行为(温和)的优点。\n消耗 "
 
     # game/BKscreens.rpy:7584
     old "Train [girl.name] for "
@@ -692,7 +692,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7584
     old " acts.\nCosts "
-    new "行为。\n成本 "
+    new "行为。\n消耗 "
 
     # game/BKscreens.rpy:7983
     old "Girl pack mix"

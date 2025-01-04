@@ -1461,10 +1461,10 @@ init python:
 
     interact_dict = {
                     "chat" : ["{size=+8}一般话题{/size}", "{size=+8}私人话题{/size}", "{size=+8}女孩故事{/size}"],
-                    "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的生活", "slave_chat_slave_life"),
-                                        GirlInteractionTopic("chat", "chat", "在青楼里的生活", "slave_chat_brothel", condition="has_worked"),
-                                        GirlInteractionTopic("chat", "chat", "与客户友好相处", "slave_chat_customers", condition="has_worked"),
-                                        GirlInteractionTopic("chat", "chat", "与其他女孩相处", "slave_chat_other_girls", condition="other_girls"),
+                    "{size=+8}一般话题{/size}" : [GirlInteractionTopic("chat", "chat", "作为奴隶的感觉", "slave_chat_slave_life"),
+                                        GirlInteractionTopic("chat", "chat", "青楼的生活如何", "slave_chat_brothel", condition="has_worked"),
+                                        GirlInteractionTopic("chat", "chat", "与顾客相处如何", "slave_chat_customers", condition="has_worked"),
+                                        GirlInteractionTopic("chat", "chat", "与其他人的关系", "slave_chat_other_girls", condition="other_girls"),
                                         ],
                     "{size=+8}私人话题{/size}" : [
                                         GirlInteractionTopic("chat", "chat", "她的生活怎样　", "slave_chat_well_being"),
@@ -1490,7 +1490,7 @@ init python:
                                         GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
-                    "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的方法", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
+                    "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的模式", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
                     "{size=+8}催眠暗示{/size}" : [
                                                 GirlInteractionTopic("magic", "train", "提高服从　", "slave_magic", act="obedience", gold_cost=20),
                                                 GirlInteractionTopic("magic", "train", "提高敏感　", "slave_magic", act="sensitivity", gold_cost=20),

@@ -9499,7 +9499,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:577
     old "You're a big help"
-    new "你帮了我很大的忙"
+    new "你表现的很好"
 
     # game/BKinteractions.rpy:577
     old "Just shut up"
