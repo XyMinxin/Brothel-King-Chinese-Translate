@@ -810,8 +810,8 @@ label slave_chat_feelings(girl):
     if inter.response == "afraid":
         return
 
-    $ MC.rand_say(("Come on, tell me the truth now. What do you think about me?", "How do you feel about me?", "Have I been a good master to you?",
-                   "ev: What do you think of your Lord and Master? Answer me!", "ne: Just between you and me. How am I doing?", "gd: Am I doing right by you? Give it to me straight."))
+    $ MC.rand_say(("别紧张, 实话实说。你是怎么看待我的?", "你觉得我人怎么样?", "在你心目中我是个好主人吗?",
+                   "ev: 你对你的主人有什么意见吗?回答我!", "ne: 只告诉我一个人，你觉得我怎么样?", "gd: 我对你怎么样?畅所欲言吧。"))
 
     girl.char "Well..."
 

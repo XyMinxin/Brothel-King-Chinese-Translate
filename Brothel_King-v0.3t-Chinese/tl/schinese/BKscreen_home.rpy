@@ -56,7 +56,7 @@ translate schinese strings:
 
     # game/BKscreen_home.rpy:307
     old "{/b}{/color} for sale."
-    new "{/b}{/color}待售。\n({i}快捷键: {u}M{/u}{/i})"
+    new "{/b}{/color}待售。"
 
     # game/BKscreen_home.rpy:318
     old "New items are available."
