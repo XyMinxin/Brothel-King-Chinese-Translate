@@ -5180,7 +5180,7 @@ screen brothel_report():
         default shown_tip = "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
     elif logs[calendar.time-1] and logs[calendar.time-1].net < 0:
         default side_pic = "side sill sad"
-        default shown_tip = "主人!!! " + brothel.name + " is losing money... What's going on?"
+        default shown_tip = "主人!!! " + brothel.name + "正在亏损...我们该怎么办?"
     else:
         default side_pic = "side sill happy"
         default shown_tip = "{color=[c_lightblue]}你知道吗? {/color}%s" % daily_tip

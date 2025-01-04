@@ -219,7 +219,7 @@ screen right_menu_girls():
         else:
             text ""
 
-        $ ttip = __("Interact with the girls in your brothel.\nYou have {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __("{/b}{/color} in your brothel (max ") + str(brothel.bedrooms) + ").\n"
+        $ ttip = __("Interact with the girls in your brothel.\nYou have {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __("{/b}{/color} in your brothel (max ") + str(brothel.bedrooms) + "个)。\n({i}快捷键: {u}G{/u}{/i})"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
         $ ttip += str(working_girls) + __(" girl") + plural(working_girls) + __(" will be working tonight.")
 
@@ -259,7 +259,7 @@ screen right_menu_farm():
         text ""
         textbutton "奴隶农场" style_group "rm":
             action Return("farm")
-            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + "个女孩" + plural(len(farm.girls)) + "{/b}{/color}和{color=[c_softpurple]}{b}" + str(farm.count_minions()) + "个仆从" + plural(farm.count_minions()) + "{/b}{/color}。"
+            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + "个女孩" + plural(len(farm.girls)) + "{/b}{/color}和{color=[c_softpurple]}{b}" + str(farm.count_minions()) + "个仆从" + plural(farm.count_minions()) + "{/b}{/color}。\n({i}快捷键: {u}F{/u}{/i})"
 
 
 ################
@@ -279,7 +279,7 @@ screen right_menu_city():
 
         textbutton "探索城市" style_group "rm":
             action Return("districts")
-            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅"
+            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅\n({i}快捷键: {u}V{/u}{/i})"
 
 
 ################

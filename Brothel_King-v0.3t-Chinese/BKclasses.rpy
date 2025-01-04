@@ -2492,23 +2492,23 @@ init -2 python:
                 base_cust_nb = self.customer_count - self.customer_count_dict["advertising"] - self.customer_count_dict["special"]
 
             if short:
-                des = __("{color=" + col + "}{b}%i customer%s{/b}{/color}今晚会来") % (self.customer_count, plural(self.customer_count))
+                des = __("{color=" + col + "}{b}%i位顾客%s{/b}{/color}今晚会来消费") % (self.customer_count, plural(self.customer_count))
             else:
-                des = __("{b}%i customer%s{/b} are expected to come to the brothel tonight") % (self.customer_count, plural(self.customer_count))
+                des = __("{b}%i位顾客%s{/b}今晚会来消费") % (self.customer_count, plural(self.customer_count))
 
             if self.customer_count != base_cust_nb:
                 des += " ("
 
                 if self.customer_count_dict["advertising"]:
                     if short:
-                        des += event_color["good"] % ("Ads: +%s" % str_int(self.customer_count_dict["advertising"]))
+                        des += event_color["good"] % ("广告: +%s" % str_int(self.customer_count_dict["advertising"]))
                     else:
-                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["advertising"]) + " from advertising")
+                        des += event_color["good"] % ("有" + str_int(self.customer_count_dict["advertising"]) + "个顾客是被广告吸引而来")
                     if self.customer_count_dict["special"]:
                         des += ", "
                 if self.customer_count_dict["special"]:
                     if short:
-                        des += event_color["good"] % ("Other: +%s" % str_int(self.customer_count_dict["special"]))
+                        des += event_color["good"] % ("其他: +%s" % str_int(self.customer_count_dict["special"]))
                     else:
                         des += event_color["good"] % ("+" + str_int(self.customer_count_dict["special"]) + " from girls and brothel effects")
 
