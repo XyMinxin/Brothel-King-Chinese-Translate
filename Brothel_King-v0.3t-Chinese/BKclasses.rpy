@@ -5219,22 +5219,22 @@ init -10 python:
         def get_description(self):
             if not self.description:
                 if self.type == "gold":
-                    self.description = __("you must collect ") + str(int(self.value)) + "金币"
+                    self.description = "你需要积攒" + str(int(self.value)) + "金币"
 
                 elif self.type == "ranked":
-                    self.description = str(self.target) + __(" of your girls must reach rank ") + rank_name[self.value]
+                    self.description = "你需要拥有至少" + str(self.target) + "个" + rank_name[self.value] + "阶的奴隶" #修改了源代码使翻译通畅
 
                 elif self.type == "reputation":
-                    self.description = __("your brothel must reach ") + str(int(self.value)) + __(" reputation")
+                    self.description = "你的青楼需要拥有" + str(int(self.value)) + "点声望"
 
                 elif self.type == "prestige":
-                    self.description = __("you must gather ") + str(int(self.value)) + __(" prestige")
+                    self.description = "你的角色需要拥有" + str(int(self.value)) + "点声望"
 
                 elif self.type == "story":
                     self.description = self.value # value for story events must be text
 
                 else:
-                    self.description = "你已经开启了无尽模式, 尽情享受吧!"
+                    self.description = "你已经进入了无尽模式, 请尽情享受游戏吧!"
 
             return self.description
 
