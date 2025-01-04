@@ -378,7 +378,7 @@ screen right_menu_endday():
 
         textbutton "开始营业" style_group "rm":
             action Return("end_day")
-            tooltip "点击这个按钮进入深夜，开始营业"
+            tooltip "点击按钮让时间来到深夜，开始营业\n({i}快捷键: {u}E{/u}{/i})"
 
 ################
 ## Home - Right menu - Display Advance button

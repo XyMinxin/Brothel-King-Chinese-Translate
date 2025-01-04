@@ -4,7 +4,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:312
     old "{size=-1}To advance to the next chapter, "
-    new "{size=-1}进入下一章, "
+    new "{size=-1}要进入下一章, "
 
     # game/BKclasses.rpy:882
     old " has learnt a new talent.\n\n"
