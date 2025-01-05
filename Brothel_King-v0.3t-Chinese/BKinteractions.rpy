@@ -964,12 +964,14 @@ label slave_chat_tastes(girl):
                 if item_type not in girl.personality_unlock["loves"]:
                     $ girl.personality_unlock["loves"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = tl_cn(thing, girl_related_dict)
                 call dialogue(girl, "slave chat tastes loves +") from _call_dialogue_152
 
             elif verb == "likes":
                 if item_type not in girl.personality_unlock["likes"]:
                     $ girl.personality_unlock["likes"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = tl_cn(thing, girl_related_dict)
                 call dialogue(girl, "slave chat tastes loves -") from _call_dialogue_153
 
             elif verb == "indifferent":
@@ -983,6 +985,7 @@ label slave_chat_tastes(girl):
                 if item_type not in girl.personality_unlock["hates"]:
                     $ girl.personality_unlock["hates"].append(item_type)
                 $ thing = gift_description[item_type]
+                $ thing_cn = tl_cn(thing, girl_related_dict)
                 call dialogue(girl, "slave chat tastes hates") from _call_dialogue_155
 
             elif verb == "indifferent":
