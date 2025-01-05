@@ -220,7 +220,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2349
     old " {color=[c_gold]}The customer%s went over %s budget on %s (+%s gold).{/color}"
-    new "{color=[c_gold]}%s把%s金币预算全都花在了%s身上 (+%s金币)。{/color}"
+    new "{color=[c_gold]}顾客%s把%s金币预算全都花在了%s身上 (+%s金币)。{/color}"
 
     # game/BKfunctions.rpy:2497
     old "Customers started clamoring for "

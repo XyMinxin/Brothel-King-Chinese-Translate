@@ -2679,7 +2679,7 @@ init -3 python:
                     plur = "们"
                 elif len(girls) > 1:
                     s_act = "bisexual"
-                    plur = ""
+                    plur = "们"
                 else:
                     s_act = act
                     plur = ""
