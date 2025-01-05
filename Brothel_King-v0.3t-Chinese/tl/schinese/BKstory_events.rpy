@@ -39526,19 +39526,19 @@ translate schinese MU_jobgirl_f26b6491_1:
 translate schinese NGPintro_19c4b697:
 
     # "*goro goro*"
-    "*goro goro*"
+    "*咕噜咕噜*"
 
 # game/BKstory_events.rpy:19994
 translate schinese NGPintro_7cc611f8:
 
     # "*goro goro*!"
-    "*goro goro*!"
+    "*咕噜咕噜*!"
 
 # game/BKstory_events.rpy:19998
 translate schinese NGPintro_dbb675c7:
 
     # "*goro goro*?"
-    "*goro goro*?"
+    "*咕噜咕噜*?"
 
 # game/BKstory_events.rpy:20000
 translate schinese NGPintro_9afd1bdd:
@@ -39550,13 +39550,13 @@ translate schinese NGPintro_9afd1bdd:
 translate schinese NGPintro_0f9a41fe:
 
     # "???" "Oh, hello there, *goro goro*!"
-    "???" "哦, 你好, *goro goro*!"
+    "神秘人" "哦, 你好, *咕噜咕噜*!"
 
 # game/BKstory_events.rpy:20014
 translate schinese NGPintro_01e9ca71:
 
     # "???" "Congratulations on finishing your first run of BK!"
-    "???" "恭喜你第一次通关青楼之王!"
+    "神秘人" "恭喜你第一次通关青楼之王!"
 
 # game/BKstory_events.rpy:20016
 translate schinese NGPintro_29495ba7:
@@ -39568,49 +39568,49 @@ translate schinese NGPintro_29495ba7:
 translate schinese NGPintro_6a1998ed:
 
     # "???" "My apologies, *goro goro*!"
-    "???" "失礼了, *goro goro*!"
+    "神秘人" "失礼了, *咕噜咕噜*!"
 
 # game/BKstory_events.rpy:20023
 translate schinese NGPintro_dfe68448:
 
     # "???" "My full name is Maiku Toranzaku-Chan, but you can call me Mike."
-    "???" "我的全名是Maiku Toranzaku-Chan, 不过你可以叫我迈克。"
+    "神秘人" "我的全名是Maiku Toranzaku-Chan, 不过你可以叫我迈克。"
 
 # game/BKstory_events.rpy:20025
 translate schinese NGPintro_1c24f4a9:
 
     # "Mike" "Now that you have successfully completed the game, I have grand news!"
-    "Mike" "既然你已经通关了游戏，我有个好消息要告诉你！"
+    "迈克" "你终于通关了，我有个好消息要告诉你！"
 
 # game/BKstory_events.rpy:20027
 translate schinese NGPintro_034a6f5c:
 
     # "Mike" "You can now play NewGame+™."
-    "Mike" "你现在可以开启新周目了。"
+    "迈克" "你现在可以开启新周目了。"
 
 # game/BKstory_events.rpy:20031
 translate schinese NGPintro_d19bef86:
 
     # "Mike" "In NewGame+™, you can tweak your starting game settings to your liking, and experiment the game in sandbox mode!"
-    "Mike" "在新周目里, 你可以根据自己的喜好调整游戏设置，并在沙盒模式下体验游戏！"
+    "迈克" "在新周目里, 你可以根据自己的喜好调整游戏设置，并在沙盒模式下体验游戏！"
 
 # game/BKstory_events.rpy:20033
 translate schinese NGPintro_35736dd8:
 
     # "Mike" "In order to bring you the best possible experience, our Board of executives has held numerous meetings and focus groups based on the latest benchmarks and best practices in the industry."
-    "Mike" "为了给您带来最好的体验，我们的执行董事会根据行业的最新基准和多次实践举行了多次会议和焦点小组讨论。"
+    "迈克" "为了给您带来最好的体验，我们的执行董事会根据行业的最新基准和多次实践举行了多次会议和焦点小组讨论。"
 
 # game/BKstory_events.rpy:20035
 translate schinese NGPintro_55fd86f0:
 
     # "Mike" "So now we can give you what you've always dreamed of!"
-    "Mike" "现在我们可以给你梦寐以求的东西了！"
+    "迈克" "现在我们可以给你梦寐以求的东西了！"
 
 # game/BKstory_events.rpy:20048
 translate schinese NGPintro_d5ef4afc:
 
     # "Mike" "The in-game store!!!" with flash
-    "Mike" "成就商店!!!" with flash
+    "迈克" "成就商店!!!" with flash
 
 # game/BKstory_events.rpy:20050
 translate schinese NGPintro_a8a33c2f:
@@ -39622,55 +39622,55 @@ translate schinese NGPintro_a8a33c2f:
 translate schinese NGPintro_b1131087:
 
     # "Mike" "In the in-game store, you can finally spend real money to buy our fabulous 'Purchase-to-Wow' crystals, or P2W!"
-    "Mike" "In the in-game store, you can finally spend real money to buy our fabulous 'Purchase-to-Wow' crystals, or P2W!"
+    "迈克" "在内购商店里, 您可以花费现实货币来购买我们的难以置信的哇哦'付费'水晶, 也可以称之为Pay to Win!"
 
 # game/BKstory_events.rpy:20054
 translate schinese NGPintro_058e37e4:
 
     # "Mike" "Our marketing department informs us that you've been dying to sink all your hard-earned money into the game, so why not start by purchasing a few thousand crystals at bargain price?"
-    "Mike" "Our marketing department informs us that you've been dying to sink all your hard-earned money into the game, so why not start by purchasing a few thousand crystals at bargain price?"
+    "迈克" "我们的市场营销部门说，你已经迫不及待地想把所有辛苦赚来的钱都投入到游戏中，所以为什么不以便宜的价格购买几千颗水晶呢？"
 
 # game/BKstory_events.rpy:20056
 translate schinese NGPintro_5ab8c0d9:
 
     # "Mike" "We accept all forms of payments and currencies: Slavemastercard, Jizza, SprayPal, Buttcoin, your soul..."
-    "Mike" "We accept all forms of payments and currencies: Slavemastercard, Jizza, SprayPal, Buttcoin, your soul..."
+    "迈克" "我们接受所有形式的支付和货币：奴隶公会信用卡，慰信，妓付宝, 比脱币，甚至是您的灵魂..."
 
 # game/BKstory_events.rpy:20058
 translate schinese NGPintro_ebd342fb:
 
     # "Mike" "Why not buy an O.P. character that ruins the game's balance and requires no skill at all?"
-    "Mike" "Why not buy an O.P. character that ruins the game's balance and requires no skill at all?"
+    "迈克" "为什么不购买一个破坏游戏平衡且不需要任何技能的超模角色呢？"
 
 # game/BKstory_events.rpy:20060
 translate schinese NGPintro_5b2555d1:
 
     # "Mike" "Do you feel like your life is meaningless and hollow unless you can show your avatar dressed in useless tacky cosmetics to your virtual friends! Then we've got you covered!"
-    "Mike" "Do you feel like your life is meaningless and hollow unless you can show your avatar dressed in useless tacky cosmetics to your virtual friends! Then we've got you covered!"
+    "迈克" "你是否觉得你的生活毫无意义和空洞，除非你可以向你的网友展示你穿着炫酷时装的游戏角色！就让我们来满足你！"
 
 # game/BKstory_events.rpy:20062
 translate schinese NGPintro_69b064d1:
 
     # "Mike" "Or are you tired of having to actually play the game? Buy the idler package! As a bonus you can pay extra to completely uninstall the game, and we'll play it for you..."
-    "Mike" "Or are you tired of having to actually play the game? Buy the idler package! As a bonus you can pay extra to completely uninstall the game, and we'll play it for you..."
+    "迈克" "或者你厌倦了玩游戏？购买代练套餐！你可以支付额外的费用来双手离开键盘，让我们帮你肝..."
 
 # game/BKstory_events.rpy:20067
 translate schinese NGPintro_e71430b7:
 
     # "Mike" "SPEND SPEND SPEND!!!" with vpunch
-    "Mike" "SPEND SPEND SPEND!!!" with vpunch
+    "迈克" "买 买 买!!!" with vpunch
 
 # game/BKstory_events.rpy:20080
 translate schinese NGPintro_9e46fd1a:
 
     # "Mike" "Behold, the wonders of the in-game store!!!"
-    "Mike" "Behold, the wonders of the in-game store!!!"
+    "迈克" "这就是内购商店的神奇之处!!!"
 
 # game/BKstory_events.rpy:20082
 translate schinese NGPintro_ea1d5ab6:
 
     # "Mike" "What say you, dear suck-, err, adventurer? *goro goro*"
-    "Mike" "What say you, dear suck-, err, adventurer? *goro goro*"
+    "迈克" "您觉得如何呢, 亲爱的烂-,额, 青楼大师? *咕噜咕噜*"
 
 # game/BKstory_events.rpy:20084
 translate schinese NGPintro_dae0ec55:
@@ -39688,7 +39688,7 @@ translate schinese NGPintro_1976e419:
 translate schinese NGPintro_562b1a35:
 
     # "Mike" "Goro?"
-    "Mike" "Goro?"
+    "迈克" "啊咧咧?"
 
 # game/BKstory_events.rpy:20092
 translate schinese NGPintro_44f98ae6:
@@ -39700,37 +39700,37 @@ translate schinese NGPintro_44f98ae6:
 translate schinese NGPintro_84a8452e:
 
     # "*SLASH*" with flash
-    "*SLASH*" with flash
+    "*劈 砍*" with flash
 
 # game/BKstory_events.rpy:20116
 translate schinese NGPintro_ce4490c7:
 
     # "*BLAST*" with flash
-    "*BLAST*" with flash
+    "*爆 炸*" with flash
 
 # game/BKstory_events.rpy:20122
 translate schinese NGPintro_0d40b163:
 
     # "*ROAR*" with vpunch
-    "*ROAR*" with vpunch
+    "*怒 吼*" with vpunch
 
 # game/BKstory_events.rpy:20132
 translate schinese NGPintro_856b7835:
 
     # "*SPLAT*" with vpunch
-    "*SPLAT*" with vpunch
+    "*啪 嗒*" with vpunch
 
 # game/BKstory_events.rpy:20135
 translate schinese NGPintro_5dd78925:
 
     # you "Thank you, Drogo."
-    you "谢谢你, Drogo."
+    you "谢谢你, 小龙。"
 
 # game/BKstory_events.rpy:20139
 translate schinese NGPintro_6855fe86:
 
     # "You have slain Maiku Toransaku-Chan and put an end to his villainy. You found 10G."
-    "你杀死了Maiku Toransaku-Chan，结束了他罪恶的一生。你找到了10金币。"
+    "你杀死了Maiku Toransaku-Chan，结束了他罪恶的一生。你得到了10金币。"
 
 # game/BKstory_events.rpy:20143
 translate schinese NGPintro_f32754c2:
@@ -39742,37 +39742,37 @@ translate schinese NGPintro_f32754c2:
 translate schinese NGPintro_1e339d94:
 
     # you "An in-game store? What a ridiculous idea! Like anyone would fall for that!"
-    you "成就商店?多么可笑的想法！好像有人会信以为真似的！"
+    you "内购商店?多么可笑的想法！好像有人会付钱一样！"
 
 # game/BKstory_events.rpy:20147
 translate schinese NGPintro_fac4d224:
 
     # you "Now that we got rid of this annoying bastard, I'll just help myself to some of these crystals... As a reward for my 'achievements', shall we say?"
-    you "既然我们已经解决了这个讨厌的混蛋，我就自己来拿这些水晶吧..作为对我“成就”的奖励，可以这么说吗？"
+    you "既然我们已经解决了这个讨厌的混蛋，就让我把这些水晶拿走吧..作为对我“解锁成就”的奖励，可以这么说吗？"
 
 # game/BKstory_events.rpy:20153
 translate schinese NGPintro_927f2709:
 
     # "In {b}NewGame+{/b}, you can buy new starting conditions with {b}crystals{/b}."
-    "在{b}新周目{/b}中, 你可以用{b}水晶{/b}解锁一些能力。"
+    "在{b}新周目{/b}中, 你可以用{b}成就水晶{/b}解锁一些能力。"
 
 # game/BKstory_events.rpy:20155
 translate schinese NGPintro_eefd6d41:
 
     # "You earn crystals every time you unlock an in-game {b}achievements{/b}. The more crystals you have, the more starting combinations you can play around with."
-    "你可以通过解锁游戏内的{b}成就{/b}获得水晶。你拥有的水晶越多，你可以使用的初始能力就越多。"
+    "你可以通过解锁游戏内的{b}成就{/b}获得水晶。你拥有的水晶越多，你可以激活的初始能力就越多。"
 
 # game/BKstory_events.rpy:20159
 translate schinese NGPintro_9c7a6ffb:
 
     # "You currently have [c] crystals from the various achievements you've unlocked. Not bad!"
-    "你现在拥有[c]个通过解锁各种成就获得的水晶。还不赖!"
+    "你现在拥有[c]个通过解锁成就获得的水晶。还不赖!"
 
 # game/BKstory_events.rpy:20161
 translate schinese NGPintro_a2dab7aa:
 
     # "You can check the current state of your achievements from the {b}Preferences{/b} menu (right-click from the Home menu or press 'Esc')."
-    "You can check the current state of your achievements from the {b}Preferences{/b} menu (right-click from the Home menu or press 'Esc')."
+    "你可以在{b}设置{/b}菜单检查你目前的成就进度 (在主菜单单击鼠标右键或按下'Esc'键)."
 
 # game/BKstory_events.rpy:20163
 translate schinese NGPintro_54720dd8:

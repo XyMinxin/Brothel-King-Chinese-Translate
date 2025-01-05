@@ -144,11 +144,11 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:1515
     old "Very easy"
-    new "小菜一碟"
+    new "十拿九稳"
 
     # game/BKfunctions.rpy:1519
     old "Easy"
-    new "小占上风"
+    new "小菜一碟"
 
     # game/BKfunctions.rpy:1523
     old "Medium"
@@ -420,7 +420,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:4098
     old " will be working tonight."
-    new "今晚将工作。"
+    new "今晚上班。"
 
     # game/BKfunctions.rpy:4100
     old "- Waitress: "

@@ -28,7 +28,7 @@ translate schinese new_moon_efdf9933:
 translate schinese sill_checks_5f55122b:
 
     # sill sad "Master [MC.name]!\n{color=[c_red]}The threat to [brothel.name] is high or worse!{/color} You should hire more security.\nDo you want to end the day anyway?" (interact=False)
-    sill sad "[MC.name]!\n{color=[c_red]}对[brothel.name]的威胁很高或更糟!{/color}你应该雇佣更多安保人员。\n你要保持现在的设置直接开始营业吗?" (interact=False)
+    sill sad "[MC.name]!\n{color=[c_red]}[brothel.name]的威胁等级很高!{/color}你应该雇佣更多安保人员来保护青楼。\n你要保持现在的设置直接开始营业吗?" (interact=False)
 
 # game/BKevents.rpy:345
 translate schinese sill_checks_ce64d60a:
@@ -3550,7 +3550,7 @@ translate schinese advertising_intro_a5ce9163:
 translate schinese advertising_intro_3f7fe0d3:
 
     # "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
-    "你获得了一套广告女郎的服装,提高了{b}广告能力{/b}。未来也许能解锁更吸引人的服装。"
+    "你获得了一套广告女郎的服装,提高了{b}宣传效果{/b}。未来还可以解锁更加吸人眼球的服装。"
 
 # game/BKevents.rpy:4106
 translate schinese zodiac_intro_498425b4:
@@ -8534,19 +8534,19 @@ translate schinese strings:
 
     # game/BKevents.rpy:828
     old "At the end of Chapter 1, which faction did you side with?"
-    new "在第一章,你站在谁那边?"
+    new "在第一章的故事结尾,你选择支持谁?"
 
     # game/BKevents.rpy:828
     old "Farah, the corrupt guard captain"
-    new "法拉,腐败的上尉"
+    new "法拉——贪污腐败的上尉"
 
     # game/BKevents.rpy:828
     old "Renza, the leader of the thieves' guild"
-    new "伦萨, 盗贼公会的领袖"
+    new "伦萨——盗贼公会的领袖"
 
     # game/BKevents.rpy:828
     old "Maya, the honest guard sergeant"
-    new "玛雅,清廉的中士"
+    new "玛雅——刚正不阿的中士"
 
     # game/BKevents.rpy:952
     old "You have received a new goal"

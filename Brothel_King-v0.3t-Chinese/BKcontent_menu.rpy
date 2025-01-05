@@ -160,9 +160,9 @@ default hm_settings = {
         ]
         }
 
-default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "machine" : "机械"}
+default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "machine" : "机械奸"}
 
-default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现负面性癖"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
+default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现抵触的性行为"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
 
 default hm_night_events = [("常规事件", "常规事件"), ("顾客入座", "匹配报告"), ("顾客", "特殊顾客事件"), ("升级提示", "升级/职业等级提升/升阶提示"), ("安全事件", "安全事件"), ("顾客满意度", "顾客满意度报告"), ("农场事件", "农场事件"), ("休息事件", "休息事件")]
 

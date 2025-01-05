@@ -398,7 +398,7 @@ label sill_checks(): # Returns False if the player doesn't proceed with 'end day
     return True
 
 
-label receive_item(it, msg="You have received %s.", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+label receive_item(it, msg="你获得了 %s。", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
 
     if not it:
         $ debug_notify("Couldn't receive item %s" % str(it))
@@ -867,7 +867,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ NPC_narika.flags["locked"] = True
             $ NPC_narika.flags["hunt stage"] = 2
             $ NPC_narika.love = 5
-            $ game.set_task("The Void Kunoichi: Gather hints from your contacts", "story3", 3)
+            $ game.set_task("虚空忍者: 向认识的人打听消息收集情报", "story3", 3)
 
             # Mizuki story
             $ mizuki_name = "Mizuki"
@@ -875,14 +875,14 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ NPC_mizuki.flags["locked"] = True
             $ NPC_mizuki.flags["hunt stage"] = 2
             $ NPC_mizuki.love = 5
-            $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", blocking=False)
+            $ game.set_task("水之忍者: 剧情正在制作中", "story2", blocking=False)
 
             # Haruka story
             $ haruka_name = "Haruka"
             $ NPC_haruka.flags["locked"] = True
             $ NPC_haruka.flags["hunt stage"] = 2
             $ NPC_haruka.love = 5
-            $ game.set_task("The Earth Kunoichi: Gather hints from your contacts", "story", 3)
+            $ game.set_task("大地忍者: 向认识的人打听消息收集情报", "story", 3)
 
             # Others
             $ story_flags["no kosmo"] = True
@@ -4188,7 +4188,7 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("Basic Outfits", "你从希露那里得到了一套给广告女郎穿的{b}基础服装{/b}。 衣服上简单的缝了 '%s' 几个小字作为宣传。" % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
         "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
 
