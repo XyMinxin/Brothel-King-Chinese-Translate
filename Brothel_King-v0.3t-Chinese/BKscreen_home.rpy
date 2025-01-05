@@ -219,9 +219,9 @@ screen right_menu_girls():
         else:
             text ""
 
-        $ ttip = __("Interact with the girls in your brothel.\nYou have {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __("{/b}{/color} in your brothel (max ") + str(brothel.bedrooms) + ").\n"
+        $ ttip = __("Interact with the girls in your brothel.\nYou have {color=[c_hotpink]}{b}") + str(len(MC.girls)) + __(" girl") + plural(len(MC.girls)) + __("{/b}{/color} in your brothel (max ") + str(brothel.bedrooms) + "个)。"
         $ working_girls = sum(1 for girl in MC.girls if girl.works_today())
-        $ ttip += str(working_girls) + __(" girl") + plural(working_girls) + __(" will be working tonight.")
+        $ ttip += str(working_girls) + __(" girl") + plural(working_girls) + "今晚正常工作。\n({i}快捷键: {u}G{/u}{/i})"
 
         textbutton "青楼宿舍" style_group "rm":
             text_size res_font(20)
@@ -259,7 +259,7 @@ screen right_menu_farm():
         text ""
         textbutton "奴隶农场" style_group "rm":
             action Return("farm")
-            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + "个女孩" + plural(len(farm.girls)) + "{/b}{/color}和{color=[c_softpurple]}{b}" + str(farm.count_minions()) + "个仆从" + plural(farm.count_minions()) + "{/b}{/color}。"
+            tooltip __("Visit the farm and train the girls there. Gizel currently holds {color=[c_hotpink]}{b}") + str(len(farm.girls)) + "个女孩" + plural(len(farm.girls)) + "{/b}{/color}和{color=[c_softpurple]}{b}" + str(farm.count_minions()) + "个仆从" + plural(farm.count_minions()) + "{/b}{/color}。\n({i}快捷键: {u}F{/u}{/i})"
 
 
 ################
@@ -279,7 +279,7 @@ screen right_menu_city():
 
         textbutton "探索城市" style_group "rm":
             action Return("districts")
-            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅"
+            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅\n({i}快捷键: {u}V{/u}{/i})"
 
 
 ################
@@ -304,7 +304,7 @@ screen right_menu_slavemarket():
             else:
                 text_size res_font(18)
             action Return("slavemarket")
-            tooltip __("Visit the {b}slavemarket{/b} to find the perfect slave. Or just a cheap one. The slavemarket currently has {color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __(" girl") + plural(len(slavemarket.girls)) + __("{/b}{/color} for sale.")
+            tooltip __("Visit the {b}slavemarket{/b} to find the perfect slave. Or just a cheap one. The slavemarket currently has {color=[c_hotpink]}{b}") + str(len(slavemarket.girls)) + __(" girl") + plural(len(slavemarket.girls)) + "{/b}{/color}待售。\n({i}快捷键: {u}M{/u}{/i})"
 
 ################
 ## Home - Right menu - Display Shop alert and button
@@ -324,7 +324,7 @@ screen right_menu_shop():
 
         textbutton "杂货商店" style_group "rm":
             action Return("shop")
-            tooltip __("Visit the {b}shop{/b} to buy useful items.\nThe shop currently has {color=[c_yellow]}{b}") + str(len(shop.items)) + __(" item") + plural(len(shop.items)) + __("{/b}{/color} for sale.")
+            tooltip __("Visit the {b}shop{/b} to buy useful items.\nThe shop currently has {color=[c_yellow]}{b}") + str(len(shop.items)) + __(" item") + plural(len(shop.items)) + "{/b}{/color}待售。\n({i}快捷键: {u}S{/u}{/i})"
 
 ################
 ## Home - Right menu - Display Postings alert and button
@@ -378,7 +378,7 @@ screen right_menu_endday():
 
         textbutton "开始营业" style_group "rm":
             action Return("end_day")
-            tooltip "点击这个按钮进入深夜，开始营业"
+            tooltip "点击按钮让时间来到深夜，开始营业\n({i}快捷键: {u}E{/u}{/i})"
 
 ################
 ## Home - Right menu - Display Advance button

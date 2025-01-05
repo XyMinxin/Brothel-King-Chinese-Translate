@@ -3078,7 +3078,7 @@ screen autorest():
         text ""
         add "items/furniture/scanner.webp" xalign 0.5
         text ""
-        text __("This makes your girls rest automatically if their energy falls too low.\nLeft-click to increase threshold\nRight-click to lower it") italic True size res_font(14) color c_white xsize xres(360)
+        text "这台生命分析仪可以让你的女孩在精力过低时安排她自动休息。\n单击鼠标左键可增加阈值\n单击鼠标右键可降低阈值" italic True size res_font(14) color c_white xsize xres(360)
         text "" size res_font(18)
         if autorest_limit == 0:
             $ text1 = __("Autorest OFF")
@@ -3269,7 +3269,7 @@ screen perks(girl):
                                     $ text2 = selected_perk.get_description()
 
                                 else:
-                                    $ title = misc_name_dict[selected_archetype]
+                                    $ title = selected_archetype
                                     $ pic = archetype_dict[selected_archetype].get_pic()
                                     $ text1 = ""
                                     $ text2 = archetype_description[selected_archetype]
@@ -4150,7 +4150,7 @@ screen visit_location():
 
                 if MC.interactions > 0:
                     action Return("visit")
-                    tooltip "Explore this location. Costs 1 {image=img_AP}."
+                    tooltip "探索这个区域。消耗1{image=img_AP}。"
 
                 hbox xalign 0.5 yalign 0.5:
                     text "四处闲逛 (1 " size res_font(18)
@@ -4620,7 +4620,7 @@ screen furniture():
 
         has vbox spacing 10
 
-        text "工匠的马车" bold True xalign 0 yalign 0
+        text "工 匠" bold True xalign 0 yalign 0
 
         hbox spacing 6 xfill True ysize yres(120):
             add "side carpenter" zoom 0.8 yalign 0.5
@@ -5180,7 +5180,7 @@ screen brothel_report():
         default shown_tip = "Welcome to your new brothel, Master! I'm sure you will be a great manager!"
     elif logs[calendar.time-1] and logs[calendar.time-1].net < 0:
         default side_pic = "side sill sad"
-        default shown_tip = "主人!!! " + brothel.name + " is losing money... What's going on?"
+        default shown_tip = "主人!!! " + brothel.name + "正在亏损...我们该怎么办?"
     else:
         default side_pic = "side sill happy"
         default shown_tip = "{color=[c_lightblue]}你知道吗? {/color}%s" % daily_tip
@@ -7781,7 +7781,7 @@ screen free_girl_interact(girl):
             $ choices = ["chat", "give", "flirt", "fun"]
 
             for cap in choices:
-                textbutton misc_name_dict[cap.capitalize()] action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size res_font(14) xpadding 6 ypadding 6 text_selected_bold True xsize xres(60)
+                textbutton cap.capitalize() action SelectedIf(menu_choice == cap) hovered SetScreenVariable("menu_choice", cap) text_size res_font(14) xpadding 6 ypadding 6 text_selected_bold True xsize xres(60)
 
         for cat in free_interact_dict[menu_choice]:
 

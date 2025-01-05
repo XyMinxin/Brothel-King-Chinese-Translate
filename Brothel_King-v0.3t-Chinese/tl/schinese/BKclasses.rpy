@@ -4,7 +4,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:312
     old "{size=-1}To advance to the next chapter, "
-    new "{size=-1}进入下一章, "
+    new "{size=-1}要进入下一章, "
 
     # game/BKclasses.rpy:882
     old " has learnt a new talent.\n\n"
@@ -272,15 +272,15 @@ translate schinese strings:
 
     # game/BKclasses.rpy:2689
     old "Advertising report: "
-    new "宣传引流报告: "
+    new "客流量预测: "
 
     # game/BKclasses.rpy:2691
     old ".\n\nSecurity report: The threat to your brothel is "
-    new ".\n\n安全等级报告: 威胁级别为 "
+    new ".\n\n安全检查: 威胁级别为 "
 
     # game/BKclasses.rpy:2693
     old "\n\nMaintenance report: "
-    new "\n\n卫生清理报告: "
+    new "\n\n卫生检查: "
 
     # game/BKclasses.rpy:2782
     old "Do you want to buy a new bedroom for "
@@ -392,7 +392,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:4747
     old " has returned from her "
-    new " has returned from her "
+    new "结束了她的"
 
     # game/BKclasses.rpy:4773
     old "She studied very hard and made exceptional progress."

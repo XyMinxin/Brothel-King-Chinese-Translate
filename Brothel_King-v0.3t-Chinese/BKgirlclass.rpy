@@ -4987,17 +4987,17 @@ init -2 python:
                 background_des += ". "
 
                 if self.flags["story"] < 10:
-                    background_des += "You do not know her story."
+                    background_des += "你不了解她的背景。"
                 elif self.flags["story"] < 20:
-                    background_des += "You know a few things about her story."
+                    background_des += "你对她的身世有了一些了解。"
                 elif self.flags["story"] < 50:
-                    background_des += "You know some things about her story."
+                    background_des += "你听她讲述了一些发生在她身上的事。"
                 elif self.flags["story"] < 100:
-                    background_des += "She has told you her story, but you haven't done anything about it yet."
+                    background_des += "你对她知根知底，但你并没有对此作出回应。"
                 elif self.flags["MC refused story"]:
-                    background_des += "You know about her story."
+                    background_des += "你对她知根知底。"
                 else:
-                    background_des += "You know about her story, and did something about it."
+                    background_des += "你对她知根知底,并对此作出了回应。"
 
                 background_des += "\n\n"
 
@@ -5009,46 +5009,46 @@ init -2 python:
 
                 if "EI" in self.notebook_unlocks:
                     if self.is_("very extravert"):
-                        pers_des += "She is very {b}lively and outgoing{/b}.\n"
+                        pers_des += "她十分{b}活泼外向{/b}。\n"
                     elif self.is_("extravert"):
-                        pers_des += "She is quite {b}sociable{/b}.\n"
+                        pers_des += "她是个{b}社交达人{/b}。\n"
                     elif self.is_("very introvert"):
-                        pers_des += "She is {b}quiet and very shy{/b}.\n"
+                        pers_des += "她十分{b}安静内向{/b}。\n"
                     elif self.is_("introvert"):
-                        pers_des += "She is {b}a little shy{/b}.\n"
+                        pers_des += "她有一点{b}害羞{/b}。\n"
 
                 if "MI" in self.notebook_unlocks:
                     if self.is_("very materialist"):
-                        pers_des += "She is very {b}selfish and greedy{/b}, ready to crush people if they get in her way.\n"
+                        pers_des += "她非常{b}自私且贪婪{/b}, 她会毫不犹豫地清除掉眼前的障碍。\n"
                     elif self.is_("materialist"):
-                        pers_des += "She is quite {b}shallow and materialistic{/b}.\n"
+                        pers_des += "她非常{b}肤浅和物质主义{/b}。\n"
                     elif self.is_("very idealist"):
-                        pers_des += "She is a {b}dreamer{/b}, wanting to make the world a better place.\n"
+                        pers_des += "她有{b}远大的理想{/b},想要让世界变得更加美好。\n"
                     elif self.is_("idealist"):
-                        pers_des += "She {b}cares about others{/b}.\n"
+                        pers_des += "她{b}关心他人{/b}。\n"
 
                 if "DS" in self.notebook_unlocks:
                     if self.is_("very dom"):
-                        pers_des += "She is {b}aggressive, strong-headed{/b} and wants others to see things her way.\n"
+                        pers_des += "她{b}积极,意志坚强{/b}，希望别人能从她的角度看问题。\n"
                     elif self.is_("dom"):
-                        pers_des += "She knows what she wants, and she likes to be {b}independent{/b}.\n"
+                        pers_des += "她知道她想要什么,她渴望成为{b}独立女性{/b}。\n"
                     elif self.is_("very sub"):
-                        pers_des += "She is {b}very submissive{/b} and always puts herself last.\n"
+                        pers_des += "她{b}很顺从{/b}，总是把自己摆在最后一位。\n"
                     elif self.is_("sub"):
-                        pers_des += "She is {b}rather submissive{/b}, avoiding conflict whenever possible.\n"
+                        pers_des += "她{b}相当谦和{/b}, 总是尽可能避免与别人发生冲突。\n"
 
                 if "LM" in self.notebook_unlocks:
                     if self.is_("very modest"):
-                        pers_des += "She has strong moral views and is {b}repressed{/b} about sex.\n"
+                        pers_des += "她有强烈的道德观，对性行为感到{b}抗拒{/b}。\n"
                     elif self.is_("modest"):
-                        pers_des += "She follows her own {b}code of ethics{/b}, frowning upon lewd behavior.\n"
+                        pers_des += "她有着自己的{b}道德底线{/b},对淫秽之事感到可耻。\n"
                     elif self.is_("very lewd"):
-                        pers_des += "She only cares about {b}her own pleasure{/b}, not giving a damn about morality.\n"
+                        pers_des += "她只在乎{b}满足自己{/b},毫无道德底线。\n"
                     elif self.is_("lewd"):
-                        pers_des += "She's {b}open-minded and relaxed{/b} about morals.\n"
+                        pers_des += "她{b}思想开放{/b}，拥有灵活的道德底线。\n"
 
                 if not pers_des:
-                    pers_des += "You don't know her personality very well."
+                    pers_des += "你对她的性格一无所知。"
 
                 des += pers_des
 
@@ -5061,16 +5061,16 @@ init -2 python:
                 taste_text = ""
 
                 if "fav_color" in self.notebook_unlocks:
-                    taste_text += "她最喜欢的颜色是{b}" + self.likes["color"] + "{/b}。"
+                    taste_text += "她最喜欢{b}" + self.likes["color"] + "{/b}。"
 
                 if "fav_food" in self.notebook_unlocks:
-                    taste_text += "她最喜欢的食物是{b}" + self.likes["food"] + "{/b}。"
+                    taste_text += "她最爱吃{b}" + self.likes["food"] + "{/b}。"
 
                 if "fav_drink" in self.notebook_unlocks:
-                    taste_text += "她最喜欢的饮品是{b}" + self.likes["drink"] + "{/b}。"
+                    taste_text += "她最爱喝{b}" + self.likes["drink"] + "{/b}。"
 
                 if ("hobby_" + self.hobbies[0]) in self.notebook_unlocks and ("hobby_" + self.hobbies[1]) in self.notebook_unlocks:
-                    taste_text += "她喜欢{b}" + self.hobbies[0] + " and " + self.hobbies[1] + "{/b}。"
+                    taste_text += "她喜欢{b}" + self.hobbies[0] + "和" + self.hobbies[1] + "{/b}。"
 
                 elif ("hobby_" + self.hobbies[0]) in self.notebook_unlocks:
                     taste_text += "她喜欢{b}" + self.hobbies[0] + "{/b}。"
@@ -5095,25 +5095,25 @@ init -2 python:
                     taste_text += "\n\n"
 
                 if "loves" in self.notebook_unlocks and self.personality_unlock["loves"]:
-                    taste_text += "She loves {color=[c_emerald]}" + and_text([gift_description[luv] for luv in self.personality_unlock["loves"]]) + "{/color}. "
-                    prior = "also "
-                    prior2 = "However, she "
+                    taste_text += "她喜欢{color=[c_emerald]}" + and_text([gift_description[luv] for luv in self.personality_unlock["loves"]]) + "{/color}。"
+                    prior = "也"
+                    prior2 = "但是,她"
 
                 else:
                     prior = ""
-                    prior2 = "She "
+                    prior2 = "她"
 
                 if "likes" in self.notebook_unlocks and self.personality_unlock["likes"]:
-                    taste_text += "She " + prior + "likes {color=[c_orange]}" + and_text([gift_description[lik] for lik in self.personality_unlock["likes"]]) + "{/color}. "
-                    prior2 = "However, she "
+                    taste_text += "她" + prior + "喜欢{color=[c_orange]}" + and_text([gift_description[lik] for lik in self.personality_unlock["likes"]]) + "{/color}。"
+                    prior2 = "但是，她"
 
                 if "hates" in self.notebook_unlocks and self.personality_unlock["hates"]:
-                    taste_text += prior2 + "hates {color=[c_crimson]}" + and_text([gift_description[hat] for hat in self.personality_unlock["hates"]]) + "{/color}. "
+                    taste_text += prior2 + "讨厌{color=[c_crimson]}" + and_text([gift_description[hat] for hat in self.personality_unlock["hates"]]) + "{/color}。"
 
                 if taste_text:
                     des += taste_text
                 else:
-                    des += "You don't know anything about her tastes."
+                    des += "你对她的品味一无所知。"
 
             elif show == "sexual":
 
@@ -5137,20 +5137,20 @@ init -2 python:
                         neg_unlocked.append(girl_related_dict[act])
 
                 if pos_unlocked:
-                    sex_text += "She has a weakness for {color=[c_emerald]}" + and_text(pos_unlocked) + "{/color} acts"
+                    sex_text += "她对{color=[c_emerald]}" + and_text(pos_unlocked) + "{/color}行为很敏感。"
 
                     if neg_unlocked:
-                        sex_text += ", but she "
+                        sex_text += ",但是她"
                     else:
-                        sex_text += ". "
+                        sex_text += "。"
 
                 if neg_unlocked:
                     if not sex_text:
-                        sex_text += "She "
-                    sex_text += "dislikes {color=[c_crimson]}" + and_text(neg_unlocked) + "{/color} acts. "
+                        sex_text += "她"
+                    sex_text += "讨厌{color=[c_crimson]}" + and_text(neg_unlocked) + "{/color}行为。"
 
                 if amb_unlocked:
-                    sex_text += "She is ambivalent towards {color=[c_yellow]}" + and_text(amb_unlocked) + "{/color} acts. "
+                    sex_text += "她对{color=[c_yellow]}" + and_text(amb_unlocked) + "{/color}行为感到矛盾。"
 
                 if sex_text:
                     sex_text += "\n\n"
@@ -5159,17 +5159,17 @@ init -2 python:
                 neg_fix = [girl_related_dict[fix.name] for fix in self.neg_fixations if (self.personality_unlock[fix.name] or always_show_personality[self])]
 
                 if pos_fix:
-                    sex_text += "She is especially fascinated by {color=[c_emerald]}" + and_text(pos_fix) + "{/color}. "
+                    sex_text += "她对{color=[c_emerald]}" + and_text(pos_fix) + "{/color}行为十分着迷。"
                 if neg_fix:
-                    sex_text += "She is disgusted by {color=[c_crimson]}" + and_text(neg_fix) + "{/color}. "
+                    sex_text += "她对{color=[c_crimson]}" + and_text(neg_fix) + "{/color}行为十分反感。"
 
                 if sex_text:
                     des += sex_text
                 else:
-                    des += "You do not know her sexual tastes very well."
+                    des += "你不太了解她的性癖。"
 
                 if farm.knows["weakness"][self]:
-                    des+= "\nShe is vulnerable to farm %ss." % self.weakness
+                    des+= "\n她很容易被奴隶农场的%s弄高潮" % self.weakness
 
             elif show == "recent":
 
@@ -5244,7 +5244,7 @@ init -2 python:
                 if len(events) > 5:
                     description = "{size=-1}" + description + "{/size}"
             else:
-                description = calendar.get_date(calendar.time) + ": No recent events to report"
+                description = calendar.get_date(calendar.time) + ": 无可报告事件。"
 
             return description
 
@@ -5292,13 +5292,13 @@ init -2 python:
                     if feedback:
                         if _pos and _neg:
                             renpy.play(s_ahaa, "sound")
-                            renpy.say("", "You notice that " + self.name + " is feeling a mix of pleasure and discomfort during " + long_act_description[act] + ". It seems she has ambivalent feelings about it.")
+                            renpy.say("", "你发现" + self.name + "对" + long_act_description[act] + "感到有些矛盾。说不上喜欢也说不上讨厌。")
                         elif _pos:
                             renpy.play(s_mmh, "sound")
-                            renpy.say("", "You notice that " + self.name + " seems to enjoy " + long_act_description[act] + ".")
+                            renpy.say("", "你发现" + self.name + "似乎很享受" + long_act_description[act] + "行为。")
                         elif _neg:
                             renpy.play(s_scream, "sound")
-                            renpy.say("", "You notice that " + self.name + " seems disgusted by " + long_act_description[act] + ".")
+                            renpy.say("", "你发现" + self.name + "似乎有点抵触" + long_act_description[act] + "行为。")
 
             return _pos, _neg
 
