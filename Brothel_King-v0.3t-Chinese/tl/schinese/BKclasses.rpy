@@ -200,7 +200,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:2128
     old ":cust: wanted to meet "
-    new ":cust: wanted to meet "
+    new ":cust:想找"
 
     # game/BKclasses.rpy:2131
     old ":pron: :verb: elated to meet :girl:."
