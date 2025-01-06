@@ -295,6 +295,16 @@ init -2 python:
             self.path = "images\\" + dir
             self.pics = []
             self.ignore_pics = [] # <Chris12 PackState />
+            
+            # scenechan: added global status for carousel view here.
+            global selected_index
+            global selected_pic
+            global filtered_pics
+            global selected_pic_list
+            filtered_pics = []
+            selected_pic_list = []
+            selected_index = 0
+            selected_pic = None
 
         def add_pic(self, file_name, file):
             pic = Pic(self.path, file_name, file)
@@ -318,6 +328,9 @@ init -2 python:
                 return
 
             global selected_pic
+            global filtered_pics
+            global selected_index
+            filtered_pics = li
             
             def decrement_idx(idx) : 
                 if (idx - nb) < 0:
@@ -335,6 +348,7 @@ init -2 python:
             else:
                 idx = 0
             selected_pic = li[idx]
+            selected_index = idx
             
             idx = decrement_idx(idx)
             next_img = li[idx]
@@ -356,6 +370,9 @@ init -2 python:
                 return
 
             global selected_pic
+            global filtered_pics
+            global selected_index
+            filtered_pics = li
             
             def increment_idx(idx) : 
                 if (idx + nb) >= len(li):
@@ -373,6 +390,7 @@ init -2 python:
             else:
                 idx = 0
             selected_pic = li[idx]
+            selected_index = idx
             
             idx = increment_idx(idx)
             next_img = li[idx]
@@ -1320,7 +1338,23 @@ label edit_shortcut():
 
         elif result[0] == "tag":
             $ tag = result[1]
-            $ selected_pic.toggle_tag(tag)
+            if len(selected_pic_list) == 0:
+                $ selected_pic.toggle_tag(tag)
+            else:
+                python:
+                    for pic in selected_pic_list:
+                        pic.toggle_tag(tag)
+        
+        elif result[0] == "carousel_show":
+            $ selected_pic = result[1]
+        elif result[0] == "carousel_toggle":
+            python:
+                global selected_pic_list
+                pic = result[1]
+                if pic in selected_pic_list:
+                    selected_pic_list.remove(pic)
+                else:
+                    selected_pic_list.append(pic)
 
 label select_girl_pack():
 
@@ -1464,10 +1498,18 @@ label browse_shortcut():
                 $ selected_pic = None
             else:
                 $ selected_pic = pic_list[0]
-
-
+        
+        elif result[0] == "carousel_show":
+            $ selected_pic = result[1] 
+        elif result[0] == "carousel_toggle":
+            python:
+                global selected_pic_list
+                pic = result[1]
+                if pic in selected_pic_list:
+                    selected_pic_list.remove(pic)
+                else:
+                    selected_pic_list.append(pic)
     return
-
 
 label pack_stats:
     hide screen main_menu
