@@ -2581,7 +2581,7 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = __("No job assigned. This girl has been set to rest until further instructions.")
 
             elif girl.work_whore:
-                $ text1 = girl.job.capitalize()[:4] + "./Wh."
+                $ text1 = girl.job.capitalize()[:4] + "./卖淫"
                 $ ttip = __("Working and whoring. Change this girl's job or let her rest.")
 
             else:
@@ -2603,7 +2603,7 @@ screen button_overlay(girl, context="girls"):
                 key "noshift_K_d" action Return("sched")
 
             textbutton "排班表" style "small_button":
-                tooltip "{i}当前时间表: %s{/i}.\nClick to open %s's schedule." % (text1, girl.fullname)
+                tooltip "{i}今日排班情况: %s{/i}.\n点击查看%s的排班表。" % (text1, girl.fullname)
                 if not girls_firstvisit:
                     action Return("sched") selected False
 
@@ -4239,7 +4239,7 @@ screen brothel():
             textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "1.ttf" tooltip __("Build furniture to unlock various upgrades for the brothel.")
 
         if game.chapter >= 2:
-            textbutton __("经营策略") text_size res_font(18) ysize yres(40) xfill True action Return("open options") tooltip __("Fine-tune your brothel for various customer populations and preferences.")
+            textbutton "经营策略" text_size res_font(18) ysize yres(40) xfill True action Return("open options") tooltip __("Fine-tune your brothel for various customer populations and preferences.")
 
     frame:
         background None

@@ -124,7 +124,7 @@ translate schinese city_rape_bac50fb6_1:
 translate schinese city_rape_a9baabcd:
 
     # "You have earned prestige."
-    "你赢得了一些声望。"
+    "你获得了一些声望。"
 
 # game/BKcity_events.rpy:147
 translate schinese city_rape_e9965350:
@@ -286,7 +286,7 @@ translate schinese city_rape_f234f69e:
 translate schinese city_rape_a9baabcd_1:
 
     # "You have earned prestige."
-    "你赢得了一些声望。"
+    "你获得了一些声望。"
 
 # game/BKcity_events.rpy:283
 translate schinese city_rape_fa1760f7:
@@ -412,7 +412,7 @@ translate schinese city_monster_menu_ac479bb5:
 translate schinese city_monster_menu_a9baabcd:
 
     # "You have earned prestige."
-    "你赢得了一些声望。"
+    "你获得了一些声望。"
 
 # game/BKcity_events.rpy:428
 translate schinese city_impress_daff885e:
@@ -6956,11 +6956,11 @@ translate schinese strings:
 translate schinese city_rape_bac50fb6:
 
     # ev_girl1 "Thank, you saved me... *sob* I will tell everyone what you did for me..."
-    ev_girl1 "Thank, you saved me... *sob* I will tell everyone what you did for me..."
+    ev_girl1 "谢谢, 你救了我... *抽泣* 我会告诉其他人你的英勇事迹的..."
 
 # game/BKcity_events.rpy:271
 translate schinese city_rape_f234f69e_1:
 
     # ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
-    ev_girl1 "Oh, you saved me... *sob* I will tell everyone what you did for me... *sob*"
+    ev_girl1 "哦, 你救了我... *抽泣* 我会告诉其他人你的英勇事迹的...*抽泣*"
 

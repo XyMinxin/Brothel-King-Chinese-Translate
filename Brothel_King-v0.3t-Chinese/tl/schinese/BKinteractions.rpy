@@ -9727,11 +9727,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2661
     old "You tell her that you are happy that "
-    new "你告诉她你很开心"
+    new "你告诉她你很满意"
 
     # game/BKinteractions.rpy:2891
     old "You tell her that you are angry that "
-    new "你告诉她你很生气"
+    new "你告诉她你很不满"
 
     # game/BKinteractions.rpy:3028
     old "How long do you want her to remain in the farm?"

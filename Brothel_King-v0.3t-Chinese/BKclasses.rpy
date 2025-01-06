@@ -90,7 +90,7 @@ init -2 python:
 
 
         def activate_cheats(self):
-            if renpy.call_screen("yes_no", "WARNING. Activating cheats will disable achievements for this game. It will not affect achievements you already have. This decision cannot be reversed.\n{b}Are you sure you want to activate cheats for this game?{/b}"):
+            if renpy.call_screen("yes_no", "警告。激活作弊菜单将无法在本局游戏内解锁成就。这不会影响你已经解锁的成就，作弊菜单一旦激活就无法撤回了。\n{b}你确定要激活作弊菜单吗？{/b}"):
                 self.cheats=True
                 self.achievements=False
             else:
