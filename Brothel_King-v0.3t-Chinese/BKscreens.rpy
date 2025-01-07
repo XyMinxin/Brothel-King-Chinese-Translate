@@ -7486,7 +7486,7 @@ screen resource_exchange():
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text misc_dict[resource.name.capitalize()] size res_font(18)
+                                text resource.name.capitalize() size res_font(18)
                                 if r in calendar.discounted:
                                     text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
