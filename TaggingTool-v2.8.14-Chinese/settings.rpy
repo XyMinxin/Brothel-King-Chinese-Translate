@@ -243,6 +243,7 @@ init -2 python:
                         "orgasm" : "高潮",
                         "denied" : "禁止高潮",
                         "squirt" : "潮吹",
+                        "advertise": "广告",
 
                         "total" : "总计",
                         }

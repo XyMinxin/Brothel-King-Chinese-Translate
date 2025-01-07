@@ -13,23 +13,37 @@ define persistent.replace_to = "bisexual"
 init -10 python:
     import hashlib
 
-    def update_log_file():
+    def open_log_file():
         global RENAMELOG
+        try: 
+            RENAMELOG.close()    
+        except:
+            pass
         if persistent.girl:
             RENAMELOG = open(config.gamedir + "/../renamelog - " + persistent.girl[len("images/"):] + ".txt", "a") # Replace with 'None' to turn off
         else:
             RENAMELOG = None
 
+    def close_log_file():
+        global RENAMELOG
+        try: 
+            RENAMELOG.write("------\n")
+            RENAMELOG.flush()
+            RENAMELOG.close()    
+        except:
+            pass
 
     UNTAGGED = "_UNTAGGED " # Space at the end is necessary for algorithm to work
     FILENAME_NUMBERCOUNT = 5 # -> portrait (00000)
     STD_SIZE = (1024, 768)
-
+    
     # <Chris12 - Tagsets>
     STANDARD_TAGSET = "Core"
     if persistent.active_tagset is None:
         persistent.active_tagset = STANDARD_TAGSET
     # </Chris12 - Tagsets>
+
+    CUSTOM_VARIANTS = ("custom0", "custom1", "custom2", "custom3", "custom4", "custom5", "custom6", "custom7", "custom8", "custom9");
 
     if persistent.girl is None:
         persistent.girl = None
@@ -42,11 +56,9 @@ init -10 python:
 
     if not persistent.forced_restart:
         persistent.forced_restart = False
-        update_log_file()
 
     if persistent.girl:
         mode = "edit"
-        update_log_file()
     else:
         mode = "select"
 
@@ -139,10 +151,10 @@ init -2 python:
     from collections import OrderedDict
 
     config.keymap['game_menu'].remove('mouseup_3')
-    config.keymap['screenshot'].remove('s')
-    config.keymap['toggle_fullscreen'].remove('f')
-    config.keymap['toggle_music'].remove('m')
-    config.keymap['hide_windows'].remove('h')
+    # config.keymap['screenshot'].remove('s')
+    # config.keymap['toggle_fullscreen'].remove('f')
+    # config.keymap['toggle_music'].remove('m')
+    # config.keymap['hide_windows'].remove('h')
 
     def make_tuple(item, obj_type = None):
         '''This function transforms a single string, number or object into a tuple (technically, a list) of one element.'''
@@ -214,21 +226,22 @@ init -2 python:
             import_result = persistent.girl + "\\packStateFile.txt contained " + str(counterImageStates) + " renames.\n"
 
             if counterMatched > 0 :
-                import_result += str(counterMatched) + " 个文件匹配，"
+                import_result += str(counterMatched) + " of your files matched, "
                 if counterChanges > 0:
-                    import_result += " 和 " + str(counterChanges) + " 文件的更改已进行更新。他们仍然需要提交。\n"
+                    import_result += " and " + str(counterChanges) + " files were updated for change. They still need to be commited.\n"
                 else :
-                    import_result += " 它们都不需要更改。没有提议的更改。\n"
+                    import_result += " but none of them need to be changed. No proposed changes.\n"
 
                 if counterDuplicates > 0 :
-                    import_result += "那些 " + str(counterDuplicates) + " 是重复的并标记为删除(将标记为_TRASH)。"
+                    import_result += "Of those, " + str(counterDuplicates) + " were duplicates and marked for deletion (will be tagged as _TRASH)."
 
             else :
-                import_result += "然而没有找到匹配的文件。没有提议的更改。\n"
+                import_result += "However, no files were found that matched. No proposed changes.\n"
 
-        except IOError as (errno, strerror):
-            import_result = "I/O error({0}): {1}".format(errno, strerror)
-            pass
+        # oldNamer
+        # except IOError as (errno, strerror):
+        #    import_result = "I/O error({0}): {1}".format(errno, strerror)
+        #    pass
         except :
             raise
         return import_result
@@ -273,6 +286,8 @@ init -2 python:
         def predict_files(self):
             return self.image.predict_files()
 
+
+
     class Girl(object):
         '''The object to which a girl pack pictures are attached.'''
         def __init__(self, dir):
@@ -280,6 +295,8 @@ init -2 python:
             self.path = "images\\" + dir
             self.pics = []
             self.ignore_pics = [] # <Chris12 PackState />
+            
+            # scenechan: added global status for carousel view here.
             global selected_index
             global selected_pic
             global filtered_pics
@@ -314,28 +331,28 @@ init -2 python:
             global filtered_pics
             global selected_index
             filtered_pics = li
-
-            def decrement_idx(idx) :
+            
+            def decrement_idx(idx) : 
                 if (idx - nb) < 0:
                     if idx == 0:
                         idx = len(li)-1
                     else:
                         idx = 0
-                else :
+                else : 
                     idx -= nb
                 return idx
-
+            
             if selected_pic:
                 idx = li.index(selected_pic)
                 idx = decrement_idx(idx)
             else:
                 idx = 0
-            selected_index = idx
             selected_pic = li[idx]
-
+            selected_index = idx
+            
             idx = decrement_idx(idx)
             next_img = li[idx]
-            if not next_img.video :
+            if not next_img.video : 
                 renpy.predict(next_img.get_std_displayable())
 
         def next_pic(self, filters=None, nb=1):
@@ -348,51 +365,47 @@ init -2 python:
                     li = [x for x in self.pics if (x == selected_pic) or x in li]
             else:
                 li = self.pics
-            
+
             if len(li) == 0:
                 return
 
             global selected_pic
             global filtered_pics
             global selected_index
-            
             filtered_pics = li
             
-            def increment_idx(idx) :
+            def increment_idx(idx) : 
                 if (idx + nb) >= len(li):
                     if idx == len(li)-1:
                         idx = 0
                     else:
                         idx = len(li)-1
-                else :
+                else : 
                     idx += nb
                 return idx
-
+            
             if selected_pic:
                 idx = li.index(selected_pic)
                 idx = increment_idx(idx)
             else:
                 idx = 0
-            selected_index = idx
             selected_pic = li[idx]
+            selected_index = idx
             
-            # 预取下一张图片
             idx = increment_idx(idx)
             next_img = li[idx]
-            if not next_img.video :
+            if not next_img.video : 
                 renpy.predict(next_img.get_std_displayable())
-
+                
 
         def count_pics(self, filters, include_bk_autoadds = True):
             return len(self.get_filtered_pics(filters, include_bk_autoadds))
 
         def get_filtered_pics(self, filters, include_bk_autoadds = False):
-            global filtered_pics
             if filters:
-                filtered_pics = [p for p in self.pics if p.matches(filters, include_bk_autoadds)]
+                return [p for p in self.pics if p.matches(filters, include_bk_autoadds)]
             else:
-                filtered_pics = self.pics
-            return filtered_pics
+                return self.pics
 
         def evaluate_girlpack(self): # Evaluate girl pack metrics to use for the girl pack rating
 
@@ -431,7 +444,7 @@ init -2 python:
             op_cover_score_total = len(all_farm_tags)*len(extended_sex_acts) + sum(len(fix.acts) for fix in fix_dict.values())
 
             # Check main pictures diversity
-
+            
             def get_main_div_score(pic_list) : return min(10, len(pic_list))
             def get_optional_div_score(pic_list) : return min(5, len(pic_list))
 
@@ -473,16 +486,7 @@ init -2 python:
                     i += 1
                     pic.rename_file(pic.file_name.replace(_from, _to))
 
-            bk(str(i) + " 已进行更改。")
-            
-        def replace_batch(self, _from, _to):
-            i = 0
-            global selected_pic_list
-            for pic in selected_pic_list:
-                if _from in pic.file_name:
-                    i += 1
-                    pic.rename_file(pic.file_name.replace(_from, _to))
-            bk(str(i) + " 张图片已批量更改. ")
+            bk(str(i) + " changes have been made.")
 
 
     ending_pattern = re.compile(r"(\(\d*\))?(\.\w{3,4})+$") # Chris12: can match (and remove) the last part of a filename '(00001).jpg'.
@@ -507,12 +511,12 @@ init -2 python:
             lowerExtension = file_name[-5:].lower()
             self.video = any(lowerExtension.endswith(vid_ext) for vid_ext in VIDEOFORMATS)
 
-        def get_std_displayable(self):
+        def get_std_displayable(self): 
             if self.video:
                 return Movie(size=STD_SIZE, play=self.file)
             else:
                 return ProportionalScale(self.file, STD_SIZE[0], STD_SIZE[1])
-
+        
         def get_hash(self):
             if self.hashcode is None :
                 BLOCKSIZE = 65536
@@ -539,6 +543,8 @@ init -2 python:
 #                if tag in self.file_name.lower():
 #                    for new_tag in make_tuple(tag_dict[tag]):
 #                        self.add_tag(new_tag, init=True)
+
+
 
         def update_tags(self):
             global debug_update_tags
@@ -574,7 +580,7 @@ init -2 python:
                         found.append(part)
                     else:
                         not_found.append(part)
-                    if debug_update_tags: renpy.say(self.file_name, "找到: " + ','.join(self.tags) + "\n未找到: " + ','.join(not_found))
+                    if debug_update_tags: renpy.say(self.file_name, "Found: " + ','.join(self.tags) + "\nNot found: " + ','.join(not_found))
 
             if len(not_found) > 0:
                 filename = ' '.join(not_found)
@@ -585,24 +591,24 @@ init -2 python:
             self.tags = []
             self.new_name = self.get_new_name()
             update_change_log(self.file_path, self.file_name, self.new_name)
-
+            
         def get_all_tags(self):
             return [tag for tag in self.tags]
-
+        
         def set_all_tags(self, tags):
             self.clear_tags()
             for tag in tags:
                 self.add_tag(tag)
 
         def has_tag(self, tag, include_bk_autoadds = False):
-            if include_bk_autoadds :
+            if include_bk_autoadds : 
                 for pair in BK_AUTOADDS :
                     if pair[1] == tag and pair[0] in self.tags :
                         return True
-
+            
             #if include_bk_autoadds and "bisexual" == tag and "lesbian" in self.tags :
              #   return True
-
+            
             if tag in self.tags:
                 return True
             return False
@@ -612,10 +618,10 @@ init -2 python:
                 for pair in BK_AUTOADDS :
                     if pair[1] in filters and pair[0] in self.tags :
                         filters = [f for f in filters if f != pair[1]]
-
+                        
             #if include_bk_autoadds and "bisexual" in filters and "lesbian" in self.tags :
             #    filters = [f for f in filters if f != "bisexual"] # Don't need to check bisexual anymore, since lesbian is enough
-
+                
             for fil in filters:
                 if fil not in self.tags:
                     return False
@@ -623,14 +629,14 @@ init -2 python:
 
         def describe_tags(self):
 
-            text1 = "当前标签: "
+            text1 = "Current tags: "
 
             if self.tags:
                 for tag in self.tags:
                     text1 += tag + ", "
                 text1 = text1[:-2]
             else:
-                text1 += "无"
+                text1 += "None"
 
             return text1
 
@@ -689,11 +695,11 @@ init -2 python:
 
             lowerExtension = self.file_name[-5:].lower()
             for ext in IMGFORMATS:
-                if lowerExtension.endswith(ext):
+                if lowerExtension.endswith(ext): 
                     ending = ext
                     break
             else:
-                raise (self.file_name + ": 未知扩展名") # Should not happen as long as file were filtered according to IMGFORMATS
+                raise (self.file_name + ": Unknown Extension") # Should not happen as long as file were filtered according to IMGFORMATS
 
             new_tags = self.tags
             if shorten:
@@ -718,6 +724,14 @@ init -2 python:
             else:
                 new_file_name = UNTAGGED + "(%s)" + ending
 
+            if "custom" in new_file_name:
+                for variant in CUSTOM_VARIANTS:
+                    if variant in self.file_name:
+                        new_file_name = new_file_name.replace("custom", variant)
+                        break
+                else:
+                    new_file_name = new_file_name.replace("custom", "custom0")
+
             if shorten:
                 return new_file_name
             else:
@@ -732,8 +746,8 @@ init -2 python:
             tags_changed = first_part != self.file_name[:self.file_name.find("(")]
             if phase == 1 and tags_changed:
                 return 0 # First phase : Only fix numbering
-
-            if phase == 1 and first_part == UNTAGGED :
+                
+            if phase == 1 and first_part == UNTAGGED : 
                 # Don't fix numbering for untagged, but remember the highest so that new untagged get queued after
                 try :
                     # Extract the number from the filename
@@ -741,16 +755,16 @@ init -2 python:
                 except :
                     pass
                 return 0
-
+                
             if phase == 2 and not tags_changed:
                 return 0 # Second phase : Only renaming
-
+            
             i = 0
             try :
                 i = filename_counter_dict[first_part] + 1
             except KeyError :
                 pass
-
+            
             filename_counter_dict[first_part] = i
 
             # Compares file names up to the first parenthesis
@@ -792,11 +806,12 @@ init -2 python:
 
 
     class Tag(object):
-        def __init__(self, name, _or = [], _and = [], _not = [], order = 0, order2 = 0, lbl=None, fix_name=None, tagsets = [tagset_core], auto_add=None, auto_remove=None, shorthand=None, variants=None):
+        def __init__(self, name, _or = [], _and = [], _not = [], order = 0, order2 = 0, lbl=None, fix_name=None, tagsets = [tagset_core], auto_add=None, auto_remove=None, shorthand=None, variants=None, btn_text_size=19):
             if shorthand is not None and not isinstance(shorthand, basestring): raise Exception("Tag " + tag + ": shorthand is not a string!")
             if name.lower() != name: raise Exception("Tag " + name + " is not lowercase!")
             if order < 0 : raise Exception("Tag '" + name + "': + Order must be >= 0!")
 
+            self.btn_text_size = btn_text_size
             self.name = name
             self._and = make_tuple(_and)
             self._or = make_tuple(_or)
@@ -813,7 +828,7 @@ init -2 python:
                 self.auto_add = make_tuple(auto_add)
             else:
                 self.auto_add = None
-
+                
             if auto_remove is not None:
                 self.auto_remove = make_tuple(auto_remove)
             else:
@@ -920,27 +935,27 @@ init python:
                 if file_name.lower()[-4:] in IMGFORMATS or file_name.lower()[-5:] in IMGFORMATS:
                     if dir not in girl_dict:
                         girl_dict[dir] = Girl(dir=dir)
-
+                        
                     if len(file_parts) == 3 :
                         girl_dict[dir].add_pic(file_name, file)
                     else :
                         subdir_files.append((dir, file_name, file))
-
+        
         for dir, file_name, file in subdir_files :
             girl_dict[dir].add_pic(file_name, file)
-
+        
         # Converts to a list as the dictionary is no longer needed
         glist = girl_dict.values()
-
+        
         return glist
 
     def get_girl_menu(girl_list):
-        menu_list = [("选择一个女孩进行编辑", None)]
+        menu_list = [("Choose a girl to edit", None)]
 
         for girl in girl_list:
             menu_list.append((girl.dir, girl))
 
-        menu_list.append(("退出", "quit"))
+        menu_list.append(("Quit", "quit"))
 
         return menu_list
 
@@ -981,23 +996,25 @@ init python:
 # The game starts here.
 label start:
 
-
+    
     $ if not (persistent.active_tagset in [tagset.name for tagset in all_tagsets]): persistent.active_tagset = STANDARD_TAGSET
 
     $ girl_list = compile_girl_pics()
 
     while persistent.change_log :
         menu:
-            "{b}警告{b}" "有些更改没有正确提交。你想恢复这些更改吗？"
+            "{b}WARNING{b}" "Some changes were not committed properly. Do you want to recover those changes?"
 
-            "查看详情":
+            "See details":
                 $ r = renpy.call_screen("change_log")
 
                 if r == "commit":
-                    if renpy.call_screen("yesno_prompt", "您确定要提交这些更改吗？ (警告:旧的文件名将不会保留).", Return(True), Return(False)):
+                    if renpy.call_screen("confirm", "Are you sure you want to commit to these changes? (WARNING: old file names will not be kept).", Return(True), Return(False)):
 
                         $ t = 0
-
+                        
+                        $ open_log_file()
+                        
                         while persistent.change_log:
                             $ old, new = persistent.change_log.items()[0]
                             $ failed = True
@@ -1010,6 +1027,7 @@ label start:
 
                                     try:
                                         os.rename(old, new % i)
+                                        log_rename(old + " -> " + (new % i))
                                         failed=False
                                     except:
                                         pass
@@ -1025,20 +1043,21 @@ label start:
                                     _new = "\\".join(file_parts)
 
                                 menu:
-                                    "无法将 [old] 重命名为 [new]\n可能文件已被更改。"
+                                    "Could not rename [old] as [new]\nMaybe the file has already been changed."
 
-                                    "重命名为 [_new]":
+                                    "Rename as [_new]":
 
                                         python:
                                             os.chdir(config.gamedir)
                                             os.rename(old, _new)
+                                            log_rename(old + " -> " + _new)
 
                                             t += 1
 
-                                    "忽略更改":
+                                    "Ignore the change":
                                         pass
 
-                                    "删除 [old]":
+                                    "Delete [old]":
                                         python:
                                             os.chdir(config.gamedir)
                                             os.remove(old)
@@ -1059,19 +1078,21 @@ label start:
 #                                except:
 #                                    raise AssertionError, "Cannot rename " + old + " as " + new
 #                                persistent.change_log.pop(old, None)
+                        
+                        $ close_log_file()
+                        
+                        bk "[t] files were renamed."
 
-                        bk "[t] 文件被重命名。"
-
-                        bk "立即重启 Ren'py{w=1}{nw}"
+                        bk "Restarting Ren'py now.{w=1}{nw}"
 
                         $ renpy.utter_restart()
 
                 elif r == "discard":
-                    if renpy.call_screen("yesno_prompt", "你确定要放弃 " + str(len(persistent.change_log.keys())) + " 未提交的更改吗？", Return(True), Return(False)):
+                    if renpy.call_screen("confirm", "Are you sure you want to discard " + str(len(persistent.change_log.keys())) + " uncommitted changes?", Return(True), Return(False)):
                         $ persistent.change_log = {}
 
-            "放弃更改":
-                if renpy.call_screen("yesno_prompt", "您确定要放弃 " + str(len(persistent.change_log.keys())) + " 未提交的更改吗？", Return(True), Return(False)):
+            "Discard changes":
+                if renpy.call_screen("confirm", "Are you sure you want to discard " + str(len(persistent.change_log.keys())) + " uncommitted changes?", Return(True), Return(False)):
                     $ persistent.change_log = {}
 
 
@@ -1105,22 +1126,24 @@ label replace_in_files():
 
         $ girl = result
         $ persistent.girl = girl.path
-        $ update_log_file()
 
     else:
         python:
+
             for girl in girl_list:
                 if girl.path == persistent.girl:
                     break
 
-    $ persistent.replace_from = str(renpy.input("选择要替换的文本", default = persistent.replace_from))
+    $ persistent.replace_from = str(renpy.input("Select the text to replace", default = persistent.replace_from))
 
-    $ persistent.replace_to = str(renpy.input("选择新文本", default = persistent.replace_to))
+    $ persistent.replace_to = str(renpy.input("Select the new text", default = persistent.replace_to))
 
-    if renpy.call_screen("yesno_prompt", "{b}" + girl.path + "{/b}:\n你确定要将 " + event_color["bad"] % persistent.replace_from + " 更改为 " + event_color["bad"] % persistent.replace_to + "？你的文件将被重新命名。(警告: 旧的文件名将不会被保留)", Return(True), Return(False)):
+    if renpy.call_screen("confirm", "{b}" + girl.path + "{/b}:\nAre you sure you want to replace " + event_color["bad"] % persistent.replace_from + " with " + event_color["bad"] % persistent.replace_to + "? Your files will be renamed (WARNING: old file names will not be kept).", Return(True), Return(False)):
+        $ open_log_file()
         $ girl.replace(persistent.replace_from, persistent.replace_to)
+        $ close_log_file()
 
-        bk "立即重启 Ren'py{w=1}{nw}"
+        bk "Restarting Ren'py now.{w=1}{nw}"
 
         $ renpy.utter_restart()
 
@@ -1139,7 +1162,6 @@ label edit(pic_name=None):
 
         $ girl = result
         $ persistent.girl = girl.path
-        $ update_log_file()
 
     else:
         $ delete_count = 0
@@ -1149,9 +1171,8 @@ label edit(pic_name=None):
                 if girl.path == persistent.girl:
                     break
             else:
-                renpy.say("", "女孩路径 [persistent.girl] 找不到。")
+                renpy.say("", "Girl path [persistent.girl] could not be found.")
                 persistent.girl = None
-                update_log_file()
                 renpy.jump("start")
 
     if pic_name:
@@ -1178,24 +1199,26 @@ label edit_shortcut():
 
         if result == "commit":
 
-            if selected_pic and selected_pic.video :
-                $ renpy.call_screen("warning", "视频文件播放期间被锁定，导致重命名过程失败。\n\n请选择一个非视频文件来提交更改。")
+            if selected_pic and selected_pic.video : 
+                $ renpy.call_screen("warning", "Video files are locked during playback, causing the renaming process to fail.\n\nPlease select a non-video file to commit your changes.")
 
-            elif renpy.call_screen("yesno_prompt", "确定要提交这些更改吗？文件将被重命名 (警告: 旧的文件名将不会保留).", Return(True), Return(False)):
+            elif renpy.call_screen("confirm", "Are you sure you want to commit to these changes? Your files will be renamed (WARNING: old file names will not be kept).", Return(True), Return(False)):
 
                 hide screen show_pic
 
                 python:
                     t = 0
                     filename_counter_dict = {}
+                    open_log_file()
                     for pic in girl.pics:
                         t += pic.commit_changes(filename_counter_dict, 1) # Phase 1 - Just fix numbering
                     for pic in girl.pics:
                         t += pic.commit_changes(filename_counter_dict, 2) # Phase 2 - Renaming
+                    close_log_file()
 
-                $ bk(str(t) + " 处已经进行更改。")
+                $ bk(str(t) + " changes have been made.")
 
-                bk "立即重启 Ren'py{w=1}{nw}"
+                bk "Restarting Ren'py now.{w=1}{nw}"
 
                 $ persistent.forced_restart = selected_pic.file_name
 
@@ -1204,18 +1227,18 @@ label edit_shortcut():
                 $ renpy.utter_restart()
 
         elif result == "clear":
-            $ result = renpy.call_screen("yesno_prompt", "您确定要清除此图片的所有标记吗？", Return(True), Return(False))
+            $ result = renpy.call_screen("confirm", "Are you sure you want to clear all tags for this picture?", Return(True), Return(False))
             if result:
                 $ selected_pic.clear_tags()
 
         elif result == "clear_all":
-            if renpy.call_screen("yesno_prompt", "{color=FF0000}这将清除所有在这个女孩包的{b}所有标签{/b}。{/color}\n\n确定要清除这个女孩包上的所有标签吗？", Return(True), Return(False)):
+            if renpy.call_screen("confirm", "{color=FF0000}This will clear ALL tags for {b}ALL pictures{/b} in this girl pack.{/color}\n\nAre you sure you want to clear ALL tags for this girl pack?", Return(True), Return(False)):
                 python:
                     for pic in girl.pics:
                         pic.clear_tags()
 
         elif result == "search":
-            $ search_words = str(renpy.input("搜索标签:", default=search_words)).lower()
+            $ search_words = str(renpy.input("Search for tags:", default=search_words)).lower()
 
             $ search_words = search_words.replace("(", "")
             $ search_words = search_words.replace(")", "")
@@ -1240,11 +1263,11 @@ label edit_shortcut():
             $ active_filters = None
             if not selected_pic:
                 $ selected_pic = girl.pics[0]
-
-        elif result == "copy_tags":
+                
+        elif result == "copy_tags":    
             if selected_pic:
                 $ copy_tags = selected_pic.get_all_tags()
-
+                
         elif result == "paste_tags":
             if selected_pic:
                 $ selected_pic.set_all_tags(copy_tags)
@@ -1256,7 +1279,7 @@ label edit_shortcut():
             $ active_filters = None
             jump browse_shortcut # The stuff below seems no longer necessary
             #if persistent.change_log and len(persistent.change_log) > 0 :
-            #    if renpy.call_screen("yesno_prompt", "Are you sure you want to leave the edit mode without commiting changes? Unsaved changes will be lost.", Return(True), Return(False)):
+            #    if renpy.call_screen("confirm", "Are you sure you want to leave the edit mode without commiting changes? Unsaved changes will be lost.", Return(True), Return(False)):
             #        $ persistent.change_log = {}
             #        jump browse_shortcut
             #else :
@@ -1272,7 +1295,7 @@ label edit_shortcut():
 
         elif result == "quit":
             $ no_changes = (persistent.change_log == None) or (len(persistent.change_log) == 0)
-            if no_changes or renpy.call_screen("yesno_prompt", "您确定要返回主菜单吗？您的所有更改都将丢失。", Return(True), Return(False)):
+            if no_changes or renpy.call_screen("confirm", "Are you sure you want to return to the main menu? All your changes will be lost.", Return(True), Return(False)):
                 $ persistent.change_log = {}
                 return
 
@@ -1303,7 +1326,7 @@ label edit_shortcut():
         elif result == "jump_to":
             python:
                 try:
-                    idx = int(renpy.input("跳转到图片 #:", default=girl.pics.index(selected_pic)))
+                    idx = int(renpy.input("Jump to picture #:", default=girl.pics.index(selected_pic)))
                     selected_pic = girl.pics[idx-1]
                 except:
                     pass
@@ -1332,18 +1355,18 @@ label edit_shortcut():
                     selected_pic_list.remove(pic)
                 else:
                     selected_pic_list.append(pic)
-        
+
 label select_girl_pack():
 
     $ total_pics = sum(len(g.pics) for g in girl_list)
     $ delete_count = 0
 
     if len(girl_list) >= 0:
-        $ bk(str(len(girl_list)) + " 个女孩共 " + str(total_pics) + " 张图片。")
+        $ bk(str(len(girl_list)) + " girls have been found for a total of " + str(total_pics) + " pics.")
     else:
-        bk "{b}没有找到女孩包。{/b}\n首先，将你想编辑的女孩包放在 'game\\images' 文件夹。"
+        bk "{b}No girl folders have been found.{/b}\nTo get started, put the girl folders you want to edit inside the 'game\\images' folder."
 
-    "{b}警告{b}" "当你提交更改时，原始文件将被重命名。你可能想在外面备份一份女孩包 'game\\images' 以保证女孩包的安全。"
+    "{b}WARNING{b}" "When you commit to your changes, original files will be renamed. You might want to keep a copy of your old girl folders outside the 'game\\images' folder for safety."
 
     $ result = menu(get_girl_menu(girl_list))
 
@@ -1355,7 +1378,6 @@ label select_pack_start():
     call select_girl_pack() from _call_select_girl_pack_1
     if not result == "quit":
         $ persistent.girl = result.path
-        $ update_log_file()
     return
 
 label browse_pack():
@@ -1381,7 +1403,6 @@ label browse_pack():
         $ girl = result
         $ delete_count = 0
         $ persistent.girl = girl.path
-        $ update_log_file()
 
     else:
         python:
@@ -1390,9 +1411,8 @@ label browse_pack():
                 if girl.path == persistent.girl:
                     break
             else:
-                renpy.say("", "女孩包路径 'persistent.girl' 找不到。")
+                renpy.say("", "Girl path 'persistent.girl' could not be found.")
                 persistent.girl = None
-                update_log_file()
                 renpy.jump("browse_girl_pack")
 
     $ selected_pic = girl.pics[0]
@@ -1417,10 +1437,10 @@ label browse_shortcut():
                 start = datetime.datetime.now()
                 for i in xrange(total):
                     girl.next_pic(filters=active_filters)
-                    renpy.say("", str(1 + ((i + offset) % total)) + " / " + str(total) + "\n\n右键单击停止...{nw}")
+                    renpy.say("", str(1 + ((i + offset) % total)) + " / " + str(total) + "\n\nRight-Click to stop...{nw}")
                     if cancelAction : break
                 else:
-                    renpy.say("", "在 " + str((datetime.datetime.now() - start).seconds) + " 秒内循环 " + str(i + 1) + " 张图像。")
+                    renpy.say("", "Cycled " + str(i + 1) + " images in " + str((datetime.datetime.now() - start).seconds) + " seconds")
                 renpy.run(SetScreenVariable("show_ui", True))
 
         elif result == "cycle_next":
@@ -1444,7 +1464,7 @@ label browse_shortcut():
         elif result == "jump_to":
             python:
                 try:
-                    idx = int(renpy.input("跳转到图片 #:", default=girl.pics.index(selected_pic)))
+                    idx = int(renpy.input("Jump to picture #:", default=girl.pics.index(selected_pic)))
                     selected_pic = girl.pics[idx-1]
                 except:
                     pass
@@ -1453,7 +1473,7 @@ label browse_shortcut():
             $ active_filters = []
 
         elif result == "edit":
-            if not selected_pic:
+            if not selected_pic: 
                 $ selected_pic = girl.pics[0]
             jump edit_shortcut
 
@@ -1491,7 +1511,6 @@ label browse_shortcut():
                     selected_pic_list.append(pic)
     return
 
-
 label pack_stats:
     hide screen main_menu
     scene black
@@ -1505,7 +1524,6 @@ label pack_stats:
 
         $ girl = result
         $ persistent.girl = girl.path
-        $ update_log_file()
 
     else:
         python:
@@ -1514,9 +1532,8 @@ label pack_stats:
                 if girl.path == persistent.girl:
                     break
             else:
-                renpy.say("", "女孩路径 'persistent.girl' 找不到。")
+                renpy.say("", "Girl path 'persistent.girl' could not be found.")
                 persistent.girl = None
-                update_log_file()
                 renpy.jump("pack_stats")
 
     show screen pack_stats(girl)
@@ -1602,11 +1619,11 @@ init python:
 label mytest():
 
     menu:
-        "显示":
+        "Show":
 
             call screen change_log()
 
-        "清除":
+        "Clear":
             $ persistent.change_log = {}
 
         ""
@@ -1614,51 +1631,51 @@ label mytest():
 label export_currentstate():
     $ abort = False
     if persistent.change_log and len(persistent.change_log) > 0 :
-        if not renpy.call_screen("yesno_prompt", "仍有未提交的更改，那些不会被导出，建议先放弃或提交。你要继续吗？", Return(True), Return(False)):
-            "已中止。"
+        if not renpy.call_screen("confirm", "There are still uncommitted changes. Those will NOT get exported. It is recommended to discard or commit them first. Do you want to continue?", Return(True), Return(False)):
+            "Aborted."
             $ abort = True
     if not abort:
-        "这可能需要一点时间，请单击或按 ENTER 开始。"
-        narrator "初始化女孩列表。游戏可能没有反应，请耐心等待...{nw}"
+        "This may take a little, please click or press ENTER to start."
+        narrator "Initializing Girls List. The game might not respond, please be patient...{nw}"
         $ girl_list = compile_girl_pics()
-        narrator "正在导出...{nw}"
+        narrator "Exporting...{nw}"
         python :
             export_packstate(girl_list)
-        "完成！"
+        "Done!"
     jump main_menu
 
 label export_allstates() :
     $ abort = False
     if persistent.change_log and len(persistent.change_log) > 0 :
-        if not renpy.call_screen("yesno_prompt", "仍有未提交的更改，那些不会被导出，建议先放弃或提交。你要继续吗？", Return(True), Return(False)):
-            "已中止。"
+        if not renpy.call_screen("confirm", "There are still uncommitted changes. Those will NOT get exported. It is recommended to discard or commit them first. Do you want to continue?", Return(True), Return(False)):
+            "Aborted."
             $ abort = True
     if not abort:
-        "这可能需要一点时间，请单击或按 ENTER 开始。"
-        narrator "初始化女孩列表。游戏可能没有反应，请耐心等待...{nw}"
+        "This may take a little, please click or press ENTER to start."
+        narrator "Initializing Girls List. The game might not respond, please be patient...{nw}"
         $ girl_list = compile_girl_pics()
-        narrator "正在导出...{nw}"
+        narrator "Exporting...{nw}"
         python:
             selected_girl = persistent.girl
             for girl in girl_list :
                 persistent.girl = girl.path
                 export_packstate(girl_list)
-                renpy.say(girl.path, "导出了！{fast}{nw}")
+                renpy.say(girl.path, "Exported!{fast}{nw}")
             persistent.girl = selected_girl
-        "完成！"
+        "Done!"
     jump main_menu
 
 label export_girlsdata() :
     $ abort = False
     if persistent.change_log and len(persistent.change_log) > 0 :
-        if not renpy.call_screen("yesno_prompt", "仍有未提交的更改，那些不会被导出，建议先放弃或提交。你要继续吗？", Return(True), Return(False)):
-            "已中止。"
+        if not renpy.call_screen("confirm", "There are still uncommitted changes. Those will NOT get exported. It is recommended to discard or commit them first. Do you want to continue?", Return(True), Return(False)):
+            "Aborted."
             $ abort = True
     if not abort:
-        "这可能需要一点时间，请单击或按 ENTER 开始。"
-        narrator "初始化女孩列表。游戏可能没有反应，请耐心等待...{nw}"
+        "This may take a little, please click or press ENTER to start."
+        narrator "Initializing Girls List. The game might not respond, please be patient...{nw}"
         $ girl_list = compile_girl_pics()
-        narrator "正在导出女孩数据...{nw}"
+        narrator "Exporting Girls Data...{nw}"
         python:
             with open(config.gamedir + "/../girlsdata.csv", "w") as output :
                 output.write("Girl,Images,Rating\n")
@@ -1669,22 +1686,22 @@ label export_girlsdata() :
                     output.write(persistent.girl[len("images/"):].replace("," , ";") + ",")
                     output.write(str(len(girl.pics)) + ",")
                     output.write(get_girlpack_rating(girl, no_color = True) + "\n")
-                    renpy.say(girl.path, "导出了！{fast}{nw}")
+                    renpy.say(girl.path, "Exported!{fast}{nw}")
                 persistent.girl = selected_girl
-        "完成！导出到girlsdata.csv"
+        "Done! Exported to girlsdata.csv"
     jump main_menu
 
 label export_debugdata():
     $ abort = False
     if persistent.change_log and len(persistent.change_log) > 0 :
-        if not renpy.call_screen("yesno_prompt", "仍有未提交的更改，那些不会被导出，建议先放弃或提交。你要继续吗？", Return(True), Return(False)):
-            "已中止。"
+        if not renpy.call_screen("confirm", "There are still uncommitted changes. Those will NOT get exported. It is recommended to discard or commit them first. Do you want to continue?", Return(True), Return(False)):
+            "Aborted."
             $ abort = True
     if not abort:
-        "这可能需要一点时间，请单击或按 ENTER 开始。"
-        narrator "初始化女孩列表。游戏可能没有反应，请耐心等待...{nw}"
+        "This may take a little, please click or press ENTER to start."
+        narrator "Initializing Girls List. The game might not respond, please be patient...{nw}"
         $ girl_list = compile_girl_pics()
-        narrator "正在导出女孩数据...{nw}"
+        narrator "Exporting Girls Data...{nw}"
         python:
             with open(config.gamedir + "/../debugdata.txt", "w") as output :
                 selected_girl = persistent.girl
@@ -1704,9 +1721,9 @@ label export_debugdata():
                         output.write("\n")
 
 
-                    renpy.say(girl.path, "导出了！{fast}{nw}")
+                    renpy.say(girl.path, "Exported!{fast}{nw}")
                 persistent.girl = selected_girl
-        "完成！导出到debugdata.txt"
+        "Done! Exported to debugdata.txt"
     jump main_menu
 
 init python :

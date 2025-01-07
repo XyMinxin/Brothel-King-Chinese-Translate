@@ -200,7 +200,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:2128
     old ":cust: wanted to meet "
-    new ":cust: wanted to meet "
+    new ":cust:想找"
 
     # game/BKclasses.rpy:2131
     old ":pron: :verb: elated to meet :girl:."
@@ -408,11 +408,11 @@ translate schinese strings:
 
     # game/BKclasses.rpy:4779
     old "She listened carefully to her teacher and made good progress."
-    new "她认真听老师讲课，取得了很大的进步。"
+    new "她认真听老师讲课，取得了巨大的进步。"
 
     # game/BKclasses.rpy:4782
     old "She made good progress during her "
-    new "她在培训期间取得了很大的进步，在"
+    new "她在培训期间取得了巨大的进步，在"
 
     # game/BKclasses.rpy:4785
     old "She was distracted and didn't pay much attention to her teacher, hindering her progress."
@@ -520,7 +520,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5337
     old "You need to train a girl at least once before you can access advanced training."
-    new "你需要训练这个女孩至少一次，才能启用高级培训。"
+    new "你需要训练这个女孩至少一次，才能启用进阶训练。"
 
     # game/BKclasses.rpy:6494
     old "[girl.fullname] - Interaction results"

@@ -468,7 +468,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4695
     old "d"
-    new "d"
+    new "天"
 
     # game/BKscreens.rpy:4645
     old "Waiting customers ({image=img_cust} %i)/%i"
@@ -666,33 +666,9 @@ translate schinese strings:
     old " is plentiful this week. Value is going down."
     new " 本周供应充足。物价下跌。"
 
-    # game/BKscreens.rpy:7898
-    old "You know that [girl.name] has "
-    new "你知道 [girl.name] 有"
-
-    # game/BKscreens.rpy:7898
-    old " acts."
-    new " 行为。"
-
     # game/BKscreens.rpy:7900
     old "You do not know [girl.name]'s reaction to "
-    new "你不知道 [girl.name] 对"
-
-    # game/BKscreens.rpy:7573
-    old "Lecture [girl.name] about the virtues of "
-    new "的态度。让 [girl.name] 了解 "
-
-    # game/BKscreens.rpy:7573
-    old " acts (soft).\nCosts "
-    new "行为(温和)的优点。\n消耗 "
-
-    # game/BKscreens.rpy:7584
-    old "Train [girl.name] for "
-    new "训练 [girl.name] 的 "
-
-    # game/BKscreens.rpy:7584
-    old " acts.\nCosts "
-    new "行为。\n消耗 "
+    new "你不知道[girl.name]对"
 
     # game/BKscreens.rpy:7983
     old "Girl pack mix"

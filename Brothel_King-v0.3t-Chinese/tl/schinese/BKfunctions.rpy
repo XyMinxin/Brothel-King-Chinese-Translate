@@ -216,11 +216,11 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2345
     old " {color=[c_green]}The customer%s spent all of %s budget on %s.{/color}"
-    new " {color=[c_green]}顾客 %s 把 %s 的预算全都花在了%s身上。{/color}"
+    new "{color=[c_green]}%s把%s金币的预算全都花在了%s身上。{/color}"
 
     # game/BKfunctions.rpy:2349
     old " {color=[c_gold]}The customer%s went over %s budget on %s (+%s gold).{/color}"
-    new " {color=[c_gold]}顾客把%s预算全都花在 %s 身上 (+%s 金币)。{/color}"
+    new "{color=[c_gold]}顾客%s把%s金币预算全都花在了%s身上 (+%s金币)。{/color}"
 
     # game/BKfunctions.rpy:2497
     old "Customers started clamoring for "
@@ -364,7 +364,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2696
     old " blushes bright red and looks very uncomfortable with "
-    new " 脸红得发烫 "
+    new "脸红得发烫 "
 
     # game/BKfunctions.rpy:2696
     old ". However, her nipples are erect and she becomes noticeably wet. {color=[c_yellow]}It's like she both loves and hates it.{/color}"
@@ -372,11 +372,11 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2698
     old " is {color=[c_darkgold]}ambivalent{/color} about "
-    new " 感到{color=[c_darkgold]}矛盾{/color}，对于"
+    new "感到{color=[c_darkgold]}矛盾{/color}，对于"
 
     # game/BKfunctions.rpy:2703
     old " is flustered by the sight of the customer's dick while servicing him. She starts masturbating as she plays with the customer"
-    new " 在为顾客服务的时候看到他的大鸡巴慌了神。她用双手帮顾客手淫"
+    new "在为顾客服务的时候看到他的大鸡巴慌了神。她用双手帮顾客手淫"
 
     # game/BKfunctions.rpy:2705
     old "'s pleasure centers are overwhelmed by unknown sensations, and she becomes very wet as the customer toys with her."
@@ -384,7 +384,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2707
     old " is very sensitive and she eventully reaches orgasm as she is fucked by the customer"
-    new " 十分敏感，她最终被顾客操到潮喷"
+    new "十分敏感，她最终被顾客操到潮喷"
 
     # game/BKfunctions.rpy:2709
     old "\n{color=[c_green]}It seems that she loves "
@@ -392,7 +392,7 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:2711
     old " is {color=[c_green]}sensitive{/color} to "
-    new " 感到{color=[c_green]}十分敏感{/color}，对于"
+    new "感到{color=[c_green]}十分敏感{/color}，对于"
 
     # game/BKfunctions.rpy:2715
     old " acts very uncomfortable around the customer"

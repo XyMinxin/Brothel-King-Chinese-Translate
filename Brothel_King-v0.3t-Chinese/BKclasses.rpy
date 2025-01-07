@@ -90,7 +90,7 @@ init -2 python:
 
 
         def activate_cheats(self):
-            if renpy.call_screen("yes_no", "WARNING. Activating cheats will disable achievements for this game. It will not affect achievements you already have. This decision cannot be reversed.\n{b}Are you sure you want to activate cheats for this game?{/b}"):
+            if renpy.call_screen("yes_no", "警告。激活作弊菜单将无法在本局游戏内解锁成就。这不会影响你已经解锁的成就，作弊菜单一旦激活就无法撤回了。\n{b}你确定要激活作弊菜单吗？{/b}"):
                 self.cheats=True
                 self.achievements=False
             else:
@@ -3884,10 +3884,43 @@ init -2 python:
             return c
 
         def get_description(self):
-
             val = self.value
             target = self.target
             text1 = ""
+            text2 = ""
+            text3 = ""
+            
+            target_dict = {
+                "body": "身材",
+                "charisma": "玩家魅力",
+                "charm": "魅力",
+                "spirit": "玩家精神",
+                "strength": "玩家力量",
+                "speed": "玩家速度",
+                "beauty": "美貌",
+                "refinement": "优雅",
+                "sensitivity": "敏感",
+                "constitution": "体格",
+                "libido": "性欲",
+                "obedience": "服从",
+                #替换extended_sex_acts = ["naked", "service", "sex", "anal", "fetish", "bisexual", "group"]
+                "naked": "露出",
+                "service": "侍奉",
+                "sex": "性交",
+                "anal": "肛交",
+                "fetish": "调教",
+                "bisexual": "双飞",
+                "group": "群交",
+                "all jobs": "所有工作",
+                "all sex acts": "所有性行为",
+                "fear": "恐惧值",
+                "love": "好感度",
+                "waitress": "女服务员",
+                "dancer": "脱衣舞娘",
+                "masseuse": "按摩技师",
+                "geisha": "表演艺伎",
+                "dress": "衣着加成"
+            }
 
             if self.type in ("special", "personality"):
 
@@ -3955,17 +3988,16 @@ init -2 python:
                     text1 += "休息时，她可以对自己或朋友施放一层魔法护盾，保护其免受攻击"
 
                 elif target == "ignore budgets":
-                    text1 += "无视顾客的预算限制"
+                    text1 += "顾客将会超出预算透支消费"
 
                 elif target == "ignore energy":
-                    text1 += "每次互动都有概率无视精力损耗"
+                    text1 += "每次互动都有概率不消耗精力"
 
                 text1 = "在作为妓女工作时接受群交行为" if target == "group" else text1
                 text1 = "在作为妓女工作时接受双飞行为" if target == "bisexual" else text1
                 text1 = "在任何时候包括平时都保持裸体" if target == "naked" else text1
                 text1 = "在作为妓女工作时接受激烈的多人群交" if target == "orgy" else text1
                 text1 = "在作为妓女工作时戴上装饰扮演兽耳娘" if target == "ponygirl" else text1
-
 
                 return __(text1)
 
@@ -3999,12 +4031,11 @@ init -2 python:
                 return text1
 
             if 0.75 <= self.chance < 1.0:
-                text1 += "极高概率"
-
+                text2 = "极高概率" + text2
             elif 0.25 < self.chance < 0.75:
-                text1 += "高概率"
+                text2 = "高概率" + text2
             elif self.chance <= 0.25:
-                text1 += "小概率"
+                text2 = "小概率" + text2
 
 
             if self.type == "reroll":
@@ -4025,29 +4056,37 @@ init -2 python:
                 pass
 
             elif val > 0:
-                text1 += "+"
+                text2 += "+"
 
             if self.type in ("gain", "instant"): # Permanent x gain (xp, reputation...)
                 try:
-                    text1 += __(str(round_int(val))) + " "
+                    text2 += __(str(round_int(val))) + " "
                 except:
-                    text1 += __(str(val)) + " "
-
-                if self.target.endswith("preference") or self.target.endswith("preferences"):
-                    text1 += __(" to ")
+                    text2 += __(str(val)) + " "
+                # 中文不需要介词
+                #if self.target.endswith("preference") or self.target.endswith("preferences"):
+                #    text1 += __(" to ")
 
             elif self.type == "change": # Temporary x effect (can be added or removed)
                 # text1 += str(round_best(val, 2)) + __("到")
                 text1 += str(round_best(val, 2))
                 if target.endswith("training obedience target"):
-                    target = "作为训练时所需服从"
+                    target = "训练时所需服从"
                 if target.endswith("train obedience target"):
-                    target = "作为训练时所需服从"
+                    target = "训练时所需服从"
                 if target.endswith("work obedience target"):
-                    target = "作为工作时所需服从"
+                    target = "工作时所需服从"
                 if target.endswith("fight challenges"):
                     target = "挑战中战斗加成"
-
+                if target.endswith("max"):
+                    which = target.replace(" max", "")
+                    if which in target_dict:
+                        target = target_dict[which] + "属性上限"
+                if target.endswith("requirements"):
+                    which = target.replace(" requirements", "")
+                    if which in target_dict:
+                        target = target_dict[which] + "激活要求"
+                        
             elif self.type == "resist":
                 text1 += str(round_int(val)) + __(" negated {#1}")
 
@@ -4062,13 +4101,14 @@ init -2 python:
 
                 percentage = round_int(val * 100)
 
-                text1 += str(percentage) + __("% to ")
+                text1 += str(percentage) + __("%")
 
             elif self.type == "gift":
                 text1 += str(round_int(val)) + " "
 
             elif self.type == "increase satisfaction":
-                text1 += str(round_int(val)) + __(" to customer satisfaction for ")
+                # text2 = __(" to customer satisfaction for ") + str(round_int(val)) + text2
+                text2 = "的顾客满意度" + text2 + str(round_int(val))
 
             if self.scope and not target.startswith(self.scope): # The second part handles the 'brothel rep' special case, although renaming brothel reputation to something different to avoid confusion with girl reputation would be a good long-term fix
                 #text1 += __(self.scope) + " "
@@ -4087,61 +4127,9 @@ init -2 python:
                 target="人气"
 
             ###替换掉中文注释造成的取值错误 strength,charisma,spirit,speed,"Charm","Beauty","Body","Refinement","Sensitivity","Libido","Constitution","Obedience","Service","Sex","Anal","Fetish"
-            if target == "body":
-                target = "身材"
-            if target == "charisma":
-                target = "玩家魅力"
-            if target == "charm":
-                target = "魅力"
-            if target == "spirit":
-                target = "玩家精神"
-            if target == "strength":
-                target = "玩家力量"
-            if target == "speed":
-                target = "玩家速度"
-            if target == "beauty":
-                target = "美貌"
-            if target == "refinement":
-                target = "优雅"
-            if target == "sensitivity":
-                target = "敏感"
-            if target == "constitution":
-                target = "体格"
-            if target == "libido":
-                target = "性欲"
-            if target == "obedience":
-                target = "服从"
-            #替换extended_sex_acts = ["naked", "service", "sex", "anal", "fetish", "bisexual", "group"]
-            if target == "naked":
-                target = "露出"
-            if target == "service":
-                target = "侍奉"
-            if target == "sex":
-                target = "性交"
-            if target == "anal":
-                target = "肛交"
-            if target == "fetish":
-                target = "调教"
-            if target == "bisexual":
-                target = "双飞"
-            if target == "group":
-                target = "群交"
-            if target == "all jobs":
-                target = "所有工作"
-            if target == "all sex acts":
-                target = "所有性行为"
-            if target == "fear":
-                target = "恐惧值"
-            if target == "love":
-                target = "好感度"
-            if target == "waitress":
-                target = "女服务员"
-            if target == "dancer":
-                target = "脱衣舞娘"
-            if target == "masseuse":
-                target = "按摩技师"
-            if target == "geisha":
-                target = "表演艺伎"
+            if target in target_dict:
+                target = target_dict[target]
+                
             target = "脱衣舞娘职业经验收益" if target == "dancer jp gains" else target
             target = "按摩技师职业经验收益" if target == "masseuse jp gains" else target
             target = "女服务员职业经验收益" if target == "waitress jp gains" else target
@@ -4224,7 +4212,7 @@ init -2 python:
             target = "治疗效果" if target == "heal" else target
             target = "爱情得分" if target == "love bonus" else target
             target = "恐惧得分" if target == "fear bonus" else target
-            target = "沉迷性行为" if target == "positive fixation" else target
+            target = "沉迷性行为+" if target == "positive fixation" else target
             target = "保安效果" if target == "security" else target
             target = "保洁效果" if target == "maintenance" else target
             target = "情绪收益" if target == "mood gains" else target
@@ -4235,8 +4223,8 @@ init -2 python:
             target = "普通工作时接客人数" if target == "job customer capacity" else target
             target = "个人防御" if target == "defense" else target
             target = "作为妓女时接客人数" if target == "whore customer capacity" else target
-            target = "作为训练时所需服从" if target == "train obedience target" else target
-            target = "作为工作时所需服从" if target == "job obedience target" else target
+            target = "训练时所需服从" if target == "train obedience target" else target
+            target = "任意工作时所需服从" if target == "job obedience target" else target
             target = "作为妓女时所需服从" if target == "whore obedience target" else target
             target = "精力消耗" if target == "tiredness" else target
             target = "精力消耗" if target == "energy use" else target
@@ -4276,12 +4264,12 @@ init -2 python:
             target = "恐惧收益" if target == "fear gains" else target
 
             target = "总保养费用" if target == "total upkeep" else target
-            target = "配饰增幅" if target == "accessory" else target
-            target = "项链增幅" if target == "necklace" else target
-            target = "戒指增幅" if target == "ring" else target
+            target = "配饰加成" if target == "accessory" else target
+            target = "项链加成" if target == "necklace" else target
+            target = "戒指加成  " if target == "ring" else target
 
             target = "保养费" if target == "upkeep" else target
-            target = "受伤损失" if target == "hurt" else target
+            target = "受伤天数" if target == "hurt" else target
             target = "人气收益" if target == "reputation gains" else target
             target = "卖淫收益" if target == "aconstitution gains" else target
             target = "舞娘职业经验收益" if target == "dancer jp gains" else target
@@ -4291,7 +4279,7 @@ init -2 python:
             target = "小费总额" if target == "total tip" else target
             target = "双飞概率" if target == "bisexual chance" else target
             target = "群交概率" if target == "group chance" else target
-            target = "作为工作时客户的预算" if target == "job customer budget" else target
+            target = "工作时客户的预算" if target == "job customer budget" else target
             target = "作为妓女时客户的预算" if target == "whore customer budget" else target
             target = "客户活动 " if target == "customer events" else target
             target = "疯狂" if target == "crazy" else target
@@ -4309,11 +4297,11 @@ init -2 python:
             target = "满意度" if target == "satisfaction" else target
             target = "每日爱情" if target == "love per day" else target
             target = "每日恐惧" if target == "fear per day" else target
-            target = "丧失理智" if target == "sanity loss" else target
+            target = "理智消耗" if target == "sanity loss" else target
             target = "魔力消耗" if target == "mojo cost" else target
             target = "" if target == "" else target
 
-            text1 += target
+            text1 = target + text2 + text1
 
             if target == "hurt":
                 text1 += __(" damage{#1}")
@@ -5624,7 +5612,7 @@ init -2 python:
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "你的行动力不足以展开高级培训。"
+                            return False, "你的行动力不足以使用进阶训练。"
 
                         if not girl.personality_unlock[self.act]:
                             return False, __("You need to train a girl at least once before you can access advanced training.")

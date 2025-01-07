@@ -4,7 +4,7 @@
 translate schinese slave_first_meet_0c98ab5a:
 
     # "You came to visit [girl.fullname] for the first time."
-    "你第一次来房间里看[girl.fullname]。"
+    "这是你第一次单独和[girl.fullname]相处。"
 
 # game/BKinteractions.rpy:26
 translate schinese slave_first_meet_27e50de3:
@@ -9727,11 +9727,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2661
     old "You tell her that you are happy that "
-    new "你告诉她你很开心"
+    new "你告诉她你很满意"
 
     # game/BKinteractions.rpy:2891
     old "You tell her that you are angry that "
-    new "你告诉她你很生气"
+    new "你告诉她你很不满"
 
     # game/BKinteractions.rpy:3028
     old "How long do you want her to remain in the farm?"

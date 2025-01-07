@@ -9952,7 +9952,7 @@ translate schinese c3_narika_MU_class_588610b4:
 translate schinese c3_narika_MU_class_02d5adb1:
 
     # sill "Oh, thank you, Master... [emo_heart]"
-    sill "噢，谢谢主人...[emo_heart]"
+    sill "噢，谢谢你，主人...[emo_heart]"
 
 # game/BKchapter3.rpy:4944
 translate schinese c3_narika_MU_class_20db445c:
