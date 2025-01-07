@@ -4216,20 +4216,20 @@ screen brothel():
             $ text1 = __("Carpenter's {u}W{/u}agon") + "{size=%i}" % -res_font(4)
 
             if brothel.current_building:
-                if len(brothel.current_building.name) > 15:
-                    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + ". "
-                else:
-                    $ text1 += "\n(" + __(brothel.current_building.name) + " "
+                #if len(brothel.current_building.name) > 15:
+                #    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + ". "
+                #else:
+                $ text1 += "\n(" + __(brothel.current_building.name) + " "
 
                 $ max_dur = float(brothel.current_building.duration)
                 $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
-                if leftover_dur/max_dur <= 0.25:
-                    $ text1 += u"\u25d5"
-                elif leftover_dur/max_dur <= 0.5:
-                    $ text1 += u"\u25d1"
-                else:
-                    $ text1 += u"\u25d4"
+                #if leftover_dur/max_dur <= 0.25:
+                #    $ text1 += u"\u25d5"
+                #elif leftover_dur/max_dur <= 0.5:
+                #    $ text1 += u"\u25d1"
+                #else:
+                #    $ text1 += u"\u25d4"
 
                 $ text1 += "" + str(leftover_dur) + __("d){/size}")
         else:
