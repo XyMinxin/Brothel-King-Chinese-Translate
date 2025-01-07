@@ -5637,8 +5637,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                 menu:
                     "How dare you!":
-                        $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
-                            "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with this this time."))
+                        $ MC.rand_say(("我是你的主人。你必须服从我的命令！", "照我说的做! 这是我最后一次警告你了!!!",
+                            "ev: 把嘴闭上, 臭婊子。规矩是我定的!", "gd: 我已经没有多少耐心陪你浪费时间了，这次你逃不掉了。"))
 
                         call fight_attempt(girl, act, 2, outside=True) from _call_fight_attempt_21
 
@@ -5652,8 +5652,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                             $ girl.change_stat("obedience", 2)
 
                     "Give up":
-                        $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
-                                        "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
+                        $ MC.rand_say(("好吧....就照你说的做。", "真不敢相信，现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                                        "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我就放过你....但不要考验我的耐心。"))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)
