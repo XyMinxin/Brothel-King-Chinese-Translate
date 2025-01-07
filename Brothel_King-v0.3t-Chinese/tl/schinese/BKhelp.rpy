@@ -2780,7 +2780,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2124
     old "Free girls"
-    new "调整城市里的单身女孩"
+    new "调整城市里的自由女孩"
 
     # game/BKhelp.rpy:2124
     old "Items"
@@ -2904,19 +2904,19 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2408
     old "Get new free girls"
-    new "补充新的单身女孩"
+    new "补充新的自由女孩"
 
     # game/BKhelp.rpy:2408
     old "Update free girls"
-    new "刷新新的单身女孩"
+    new "刷新新的自由女孩"
 
     # game/BKhelp.rpy:2408
     old "Cycle free girls"
-    new "轮换一批单身女孩"
+    new "轮换一批自由女孩"
 
     # game/BKhelp.rpy:2408
     old "List free girls"
-    new "列出所有单身女孩"
+    new "列出所有自由女孩"
 
     # game/BKhelp.rpy:2441
     old "Refresh shops"

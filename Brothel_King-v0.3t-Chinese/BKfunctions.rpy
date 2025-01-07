@@ -4132,7 +4132,7 @@ init -3 python:
         # Escaped girls
 
         for girl in MC.escaped_girls:
-            msg += event_color["bad"] % (girl.fullname + " has escaped the brothel and has yet to return.\n")
+            msg += event_color["bad"] % (girl.fullname + "从青楼里逃走了，还没回来。\n")
 
         # Grumbling girls
 
@@ -4144,13 +4144,13 @@ init -3 python:
 
         for girl in MC.girls:
             if girl.tired_check():
-                msg += event_color["a little bad contrast"] % (girl.fullname + " is getting tired.\n")
+                msg += event_color["a little bad contrast"] % (girl.fullname + "精疲力竭了。\n")
 
             if girl.exhausted:
-                msg += event_color["bad"] % (girl.fullname + " is exhausted and cannot work until she is fully rested.\n")
+                msg += event_color["bad"] % (girl.fullname + "筋疲力尽，得到充足的休息后才能工作。\n")
 
             if girl.hurt:
-                msg += event_color["bad"] % (girl.fullname + " is hurt and cannot work until she is fully rested.\n")
+                msg += event_color["bad"] % (girl.fullname + "受伤了，在伤口彻底恢复后才能工作。\n")
 
         # News
 
@@ -4160,7 +4160,7 @@ init -3 python:
 #             msg += event_color["special"] % "You are ready to move to a new district.\n\n"
 
         if MC.skill_points > 0:
-            msg += event_color["good"] % "You are ready to level up.\n"
+            msg += event_color["good"] % "主角的等级提升了，有未分配的属性点。\n"
 
         ready_to_level = sum(1 for girl in MC.girls if girl.upgrade_points >= 1)
         ready_to_perk = sum(1 for girl in MC.girls if girl.perk_points > 0)

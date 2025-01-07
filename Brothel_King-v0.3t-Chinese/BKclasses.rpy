@@ -5612,7 +5612,7 @@ init -2 python:
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "你的行动力不足以展开高级培训。"
+                            return False, "你的行动力不足以使用进阶训练。"
 
                         if not girl.personality_unlock[self.act]:
                             return False, __("You need to train a girl at least once before you can access advanced training.")
