@@ -1377,7 +1377,7 @@ label city_slave:
         you "Maybe I could show the girls a thing or two back at the brothel..."
 
         $ unlock_achievement("h slavegirl")
-
+        $ act_cn = tl_cn(act, girl_related_dict)
         "You have earned prestige. Some of your girls have increased their [act] stat."
 
         $ MC.change_prestige(selected_district.rank * brothel.get_effect("boost", "city rewards"))

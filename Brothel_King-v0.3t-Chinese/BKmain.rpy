@@ -189,7 +189,7 @@ label visit_district:
 
             if selected_location.secret:
 
-                "You have not discovered this location yet."
+                "你还没有解锁这个区域。"
 
             else:
 

@@ -3988,10 +3988,10 @@ init -2 python:
                     text1 += "休息时，她可以对自己或朋友施放一层魔法护盾，保护其免受攻击"
 
                 elif target == "ignore budgets":
-                    text1 += "无视顾客的预算限制"
+                    text1 += "顾客将会超出预算透支消费"
 
                 elif target == "ignore energy":
-                    text1 += "每次互动都有概率无视精力损耗"
+                    text1 += "每次互动都有概率不消耗精力"
 
                 text1 = "在作为妓女工作时接受群交行为" if target == "group" else text1
                 text1 = "在作为妓女工作时接受双飞行为" if target == "bisexual" else text1

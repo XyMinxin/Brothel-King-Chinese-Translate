@@ -3988,7 +3988,7 @@ screen visit_district():
                         action Return([location, "go"])
 
                         if location.secret:
-                            tooltip "You have not discovered this location yet."
+                            tooltip "你还没有解锁这个区域。"
                         else:
                             tooltip "{b}" + __(location.name) + __("{/b}. Press ") + str(location_dict[selected_district.name].index(location) + 1) + __(" to visit this location.")
 
@@ -4213,11 +4213,11 @@ screen brothel():
         has vbox
         # if district.rank > 1:
         if story_flags["found wagon"]:
-            $ text1 = __("Carpenter's {u}W{/u}agon") + "{size=%i}" % -res_font(4)
+            $ text1 = "青楼改造" + "{size=%i}" % -res_font(4) #意译，直译为木匠的马车
 
             if brothel.current_building:
                 if len(brothel.current_building.name) > 15:
-                    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + ". "
+                    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + "。"
                 else:
                     $ text1 += "\n(" + __(brothel.current_building.name) + " "
 
@@ -4225,18 +4225,18 @@ screen brothel():
                 $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
                 if leftover_dur/max_dur <= 0.25:
-                    $ text1 += u"\u25d5"
+                    $ text1 += u"⏳"   #u"\u25d5"  原文本符号字体缺失，替换为emoji
                 elif leftover_dur/max_dur <= 0.5:
-                    $ text1 += u"\u25d1"
+                    $ text1 += u"⌛"   #u"\u25d1"
                 else:
-                    $ text1 += u"\u25d4"
+                    $ text1 += u"🔨"   #u"\u25d4"
 
-                $ text1 += "" + str(leftover_dur) + __("d){/size}")
+                $ text1 += "剩余" + str(leftover_dur) + "天){/size}"
         else:
-            $ text1 = "???"
+            $ text1 = "？？？"
 
         if game.chapter >= 2 or NPC_carpenter.active:
-            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "1.ttf" tooltip __("Build furniture to unlock various upgrades for the brothel.")
+            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "DejaVuSans.ttf" tooltip __("Build furniture to unlock various upgrades for the brothel.")
 
         if game.chapter >= 2:
             textbutton "经营策略" text_size res_font(18) ysize yres(40) xfill True action Return("open options") tooltip __("Fine-tune your brothel for various customer populations and preferences.")
@@ -4659,7 +4659,7 @@ screen furniture():
                     button background c_ui_brown action NullAction() tooltip furn.description xsize xres(52) ysize yres(44) xpadding 0 ypadding 0:
                         add furn.pic.get(xres(48), yres(40)) xalign 0.5 yalign 0.5
 
-        text "设施界面" drop_shadow (2, 2) size res_font(18)
+        text "设施菜单" drop_shadow (2, 2) size res_font(18)
 
         frame background c_ui_dark:
             viewport:

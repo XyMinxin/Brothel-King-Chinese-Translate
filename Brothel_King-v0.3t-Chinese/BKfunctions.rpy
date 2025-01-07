@@ -5211,25 +5211,25 @@ init -3 python:
             if NGP_settings_dict["free girl"].get() == "once":
                 MC.add_item(seduction_potion.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["free girl"].label + " kit", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="获得一瓶魅惑药水（ %s ）。" % NGP_settings_dict["free girl"].get()).build()
+                Furniture(NGP_settings_dict["free girl"].label + "的工房", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="获得一瓶魅惑药水（ %s ）。" % NGP_settings_dict["free girl"].get()).build()
 
         if NGP_settings_dict["virginity"].get():
             if NGP_settings_dict["virginity"].get() == "once":
                 MC.add_item(restoration_balm.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["virginity"].label + " kit", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="获得一盒修补软膏（ %s ）。" % NGP_settings_dict["virginity"].get()).build()
+                Furniture(NGP_settings_dict["virginity"].label + "的软膏", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="获得一盒修补软膏（ %s ）。" % NGP_settings_dict["virginity"].get()).build()
 
         if NGP_settings_dict["sanity"].get():
             if NGP_settings_dict["sanity"].get() == "once":
                 MC.add_item(bliss_incense.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["sanity"].label + " kit", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="获得一包极乐香（ %s ）。" % NGP_settings_dict["sanity"].get()).build()
+                Furniture(NGP_settings_dict["sanity"].label + "般的体验", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="获得一包极乐香（ %s ）。" % NGP_settings_dict["sanity"].get()).build()
 
         if NGP_settings_dict["interactions"].get():
             if NGP_settings_dict["interactions"].get() == "once":
                 MC.add_item(magic_powder.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["interactions"].label + " kit", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="获得一袋魔法药粉（ %s ）。" % NGP_settings_dict["interactions"].get()).build()
+                Furniture(NGP_settings_dict["interactions"].label + "的神药", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="获得一袋魔法药粉（ %s ）。" % NGP_settings_dict["interactions"].get()).build()
 
         if NGP_settings_dict["perks"].get():
             if NGP_settings_dict["perks"].get() == "once":

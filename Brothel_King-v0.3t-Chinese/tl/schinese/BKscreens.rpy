@@ -468,7 +468,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4695
     old "d"
-    new "d"
+    new "天"
 
     # game/BKscreens.rpy:4645
     old "Waiting customers ({image=img_cust} %i)/%i"
