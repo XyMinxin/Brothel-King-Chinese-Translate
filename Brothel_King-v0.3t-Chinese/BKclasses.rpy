@@ -3988,10 +3988,10 @@ init -2 python:
                     text1 += "休息时，她可以对自己或朋友施放一层魔法护盾，保护其免受攻击"
 
                 elif target == "ignore budgets":
-                    text1 += "无视顾客的预算限制"
+                    text1 += "顾客将会超出预算透支消费"
 
                 elif target == "ignore energy":
-                    text1 += "每次互动都有概率无视精力损耗"
+                    text1 += "每次互动都有概率不消耗精力"
 
                 text1 = "在作为妓女工作时接受群交行为" if target == "group" else text1
                 text1 = "在作为妓女工作时接受双飞行为" if target == "bisexual" else text1
@@ -5612,7 +5612,7 @@ init -2 python:
 
                     if mode == "advanced":
                         if MC.interactions < 2 and not free:
-                            return False, "你的行动力不足以展开高级培训。"
+                            return False, "你的行动力不足以使用进阶训练。"
 
                         if not girl.personality_unlock[self.act]:
                             return False, __("You need to train a girl at least once before you can access advanced training.")

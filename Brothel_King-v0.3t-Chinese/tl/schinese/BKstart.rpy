@@ -958,7 +958,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Potions of Seduction (raises the relationship level with any free girl by one step)."
-    new "你会定期收到一瓶魅惑药水 (药水可以将你与任意一个单身女孩的关系提升一步)。"
+    new "你会定期收到一瓶魅惑药水 (药水可以将你与任意一个自由女孩的关系提升一步)。"
 
     # game/BKstart.rpy:793
     old "virginity"

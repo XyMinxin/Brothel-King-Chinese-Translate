@@ -703,7 +703,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:473
     old "This potion raises the relationship level with any free girl in the city to the next step."
-    new "这瓶药水可以增进你与城中任何一个单身女孩的感情。"
+    new "这瓶药水可以增进你与城中任何一个自由女孩的感情。"
 
     # game/BKitems.rpy:474
     old "Balm of Restoration"

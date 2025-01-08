@@ -1481,13 +1481,13 @@ label end_day:
                 girl.add_log("run_away", delay=-1)
 
             elif check == "warning":
-                renpy.say (sill, "Warning! [girl.fullname] is unhappy and grumbling about running away...")
+                renpy.say (sill, "警告! [girl.fullname]很不满，她想要从青楼里逃出去...")
 
     ## Check if girls are tired
 
         for girl in MC.girls:
             if girl.tired_check(): # Returns True if tired warning
-                renpy.say (sill, "Warning! [girl.fullname] is getting tired...")
+                renpy.say (sill, "警告! [girl.fullname] 已经精疲力竭了...")
                 if dice(6) >= 6:
                     calendar.set_alarm(calendar.time, Event(label="too_tired", object=girl))
 
@@ -1508,7 +1508,7 @@ label end_day:
         retired_minions = farm.hurt_minions()
 
         for mn in retired_minions:
-            renpy.say(gizel, "A level " + str(mn.level) + " " + mn.type + " has been retired because of wounds or damage it sustained.")
+            renpy.say(gizel, "一个" + str(mn.level) + "级的" + mn.type + "因为伤口或损伤不得不退役。")
 
     ## Update girl portraits and profiles
 

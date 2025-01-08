@@ -2630,8 +2630,8 @@ label slave_reward_sex(girl):
             "What do you do?"
 
             "Force her":
-                $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
-                    "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with it this time."))
+                $ MC.rand_say(("我是你的主人。你必须服从我的命令！", "照我说的做! 这是我最后一次警告你了!!!",
+                    "ev: 把嘴闭上, 臭婊子。规矩是我定的!", "gd: 我已经没有多少耐心陪你浪费时间了，这次你逃不掉了。"))
 
                 $ inter.MC_reaction = "force"
                 $ inter.score = 0
@@ -2642,8 +2642,8 @@ label slave_reward_sex(girl):
                 return
 
             "Give up":
-                $ MC.rand_say(("好吧....按你说的做。", "我简直不敢相信现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
-                                "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我放过你....但不要考验我的耐心。"))
+                $ MC.rand_say(("好吧....就照你说的做。", "真不敢相信，现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                                "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我就放过你....但不要考验我的耐心。"))
 
                 $ inter.MC_reaction = "give up"
 

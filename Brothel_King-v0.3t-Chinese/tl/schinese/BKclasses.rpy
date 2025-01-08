@@ -520,7 +520,7 @@ translate schinese strings:
 
     # game/BKclasses.rpy:5337
     old "You need to train a girl at least once before you can access advanced training."
-    new "你需要训练这个女孩至少一次，才能启用高级培训。"
+    new "你需要训练这个女孩至少一次，才能启用进阶训练。"
 
     # game/BKclasses.rpy:6494
     old "[girl.fullname] - Interaction results"

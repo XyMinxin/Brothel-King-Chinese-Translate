@@ -3988,7 +3988,7 @@ screen visit_district():
                         action Return([location, "go"])
 
                         if location.secret:
-                            tooltip "You have not discovered this location yet."
+                            tooltip "你还没有解锁这个区域。"
                         else:
                             tooltip "{b}" + __(location.name) + __("{/b}. Press ") + str(location_dict[selected_district.name].index(location) + 1) + __(" to visit this location.")
 
@@ -4213,30 +4213,29 @@ screen brothel():
         has vbox
         # if district.rank > 1:
         if story_flags["found wagon"]:
-            $ text1 = __("Carpenter's {u}W{/u}agon") + "{size=%i}" % -res_font(4)
+            $ text1 = "青楼改造" + "{size=%i}" % -res_font(4) #意译，直译为木匠的马车
 
             if brothel.current_building:
-                #if len(brothel.current_building.name) > 15:
-                #    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + ". "
-                #else:
+               # if len(brothel.current_building.name) > 15:
+               #     $ text1 += "\n(" + __(brothel.current_building.name[:15]) + "。"
+               # else:
                 $ text1 += "\n(" + __(brothel.current_building.name) + " "
-
                 $ max_dur = float(brothel.current_building.duration)
                 $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
-                #if leftover_dur/max_dur <= 0.25:
-                #    $ text1 += u"\u25d5"
-                #elif leftover_dur/max_dur <= 0.5:
-                #    $ text1 += u"\u25d1"
-                #else:
-                #    $ text1 += u"\u25d4"
+                if leftover_dur/max_dur <= 0.25:
+                    $ text1 += u"⏳"   #u"\u25d5"  原文本符号字体缺失，替换为emoji
+                elif leftover_dur/max_dur <= 0.5:
+                    $ text1 += u"⌛"   #u"\u25d1"
+                else:
+                    $ text1 += u"🔨"   #u"\u25d4"
 
-                $ text1 += "" + str(leftover_dur) + __("d){/size}")
+                $ text1 += "剩余" + str(leftover_dur) + "天){/size}"
         else:
-            $ text1 = "???"
+            $ text1 = "？？？"
 
         if game.chapter >= 2 or NPC_carpenter.active:
-            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "1.ttf" tooltip __("Build furniture to unlock various upgrades for the brothel.")
+            textbutton text1 ysize yres(40) ypadding 5 xfill True action Return("furniture") text_size res_font(18) text_font "DejaVuSans.ttf" tooltip __("Build furniture to unlock various upgrades for the brothel.")
 
         if game.chapter >= 2:
             textbutton "经营策略" text_size res_font(18) ysize yres(40) xfill True action Return("open options") tooltip __("Fine-tune your brothel for various customer populations and preferences.")
@@ -4659,7 +4658,7 @@ screen furniture():
                     button background c_ui_brown action NullAction() tooltip furn.description xsize xres(52) ysize yres(44) xpadding 0 ypadding 0:
                         add furn.pic.get(xres(48), yres(40)) xalign 0.5 yalign 0.5
 
-        text "设施界面" drop_shadow (2, 2) size res_font(18)
+        text "设施菜单" drop_shadow (2, 2) size res_font(18)
 
         frame background c_ui_dark:
             viewport:
@@ -7486,7 +7485,7 @@ screen resource_exchange():
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text misc_dict[resource.name.capitalize()] size res_font(18)
+                                text resource.name.capitalize() size res_font(18)
                                 if r in calendar.discounted:
                                     text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
@@ -7895,18 +7894,19 @@ screen girl_interact(girl, free=False):
 
                                 textbutton __(topic.caption) + get_act_weakness_symbol(girl, topic.act) background None text_layout "nobreak" text_size res_font(13) text_color c_white xsize xres(100) text_xalign 0.0 action NullAction():
                                     if girl.personality_unlock[topic.act]:
-                                        tooltip __("You know that [girl.name] has ") + __(girl.get_reaction_to_act(topic.act)) + __(" for ") + __(topic.act) + __(" acts.")
+                                        #tooltip __("You know that [girl.name] has ") + __(girl.get_reaction_to_act(topic.act)) + __(" for ") + __(topic.act) + __(" acts.")  源代码，为了翻译改变了顺序
+                                        tooltip "你知道[girl.name]对" + __(topic.act) + "感到" + __(girl.get_reaction_to_act(topic.act))
                                     else:
-                                        tooltip __("You do not know [girl.name]'s reaction to ") + __(topic.act) + __(" acts.")
+                                        tooltip "你不知道[girl.name]对" + __(topic.act) + "的态度。"
                                     hovered Show("sex_details", girl=girl)
                                     unhovered Hide("sex_details")
 
                                 if topic.type == "train":
-                                    textbutton "讨论" background None text_size res_font(13):
+                                    textbutton "劝诱" background None text_size res_font(13):
                                         if topic.is_available(girl, "lecture", free)[0]:
                                             text_hover_underline True
                                             action Return([topic, "lecture"])
-                                            tooltip __("Lecture [girl.name] about the virtues of ") + __(topic.act) + __(" acts (soft).\nCosts ") + str(normal_cost) + "{image=img_AP}."
+                                            tooltip "向[girl.name]介绍关于" + __(topic.act) + "的好处。\n消耗" + str(normal_cost) + "{image=img_AP}。"
                                         else:
                                             text_color c_grey
                                             action NullAction()
@@ -7917,9 +7917,9 @@ screen girl_interact(girl, free=False):
                                         text_hover_underline True
                                         action Return([topic, "train"])
                                         if topic.gold_cost:
-                                            tooltip __("Train [girl.name] for ") + __(topic.act) + __(" acts.\nCosts ") + str(normal_cost) + __("{image=img_AP} and ") + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                            tooltip "让[girl.name]逐渐适应" + __(topic.act) + "。\n消耗" + str(normal_cost) + "{image=img_AP}以及" + str(topic.get_gold_cost()) + "{image=img_gold}。"
                                         else:
-                                            tooltip __("Train [girl.name] for ") + __(topic.act) + __(" acts.\nCosts ") + str(normal_cost) + "{image=img_AP}."
+                                            tooltip "让[girl.name]逐渐适应" + __(topic.act) + "。\n消耗" + str(normal_cost) + "{image=img_AP}。"
                                     else:
                                         text_color c_grey
                                         action NullAction()
@@ -7928,18 +7928,18 @@ screen girl_interact(girl, free=False):
                                 $ pos_reaction, neg_reaction = girl.test_weakness(topic.act)
 
                                 if not (pos_reaction or neg_reaction):
-                                    $ ttip = event_color["a little bad"] % __("Advanced training is available, but she isn't particularly sensitive to this sex act.")
+                                    $ ttip = event_color["a little bad"] % __("进阶训练已启用，但她对这种行为并不是很敏感。")
                                 else:
-                                    $ ttip = __("You can use advanced training to find out more about her fixations and use them for faster training.")
+                                    $ ttip = "你可以在进阶训练中发现她的性癖，并利用它们来提高训练的效率。"
 
-                                textbutton "高级训练" background None text_size res_font(13):
+                                textbutton "进阶训练" background None text_size res_font(13):
                                     if topic.is_available(girl, "advanced", free)[0]:
                                         text_hover_underline True
                                         action Return([topic, "advanced"])
                                         if topic.gold_cost:
-                                            tooltip ttip + __("\nCosts ") + str(adv_cost) + __("{image=img_AP} and ") + str(topic.get_gold_cost()) + "{image=img_gold}."
+                                            tooltip ttip + "\n消耗" + str(adv_cost) + "{image=img_AP}以及" + str(topic.get_gold_cost()) + "{image=img_gold}。"
                                         else:
-                                            tooltip ttip + __("\nCosts ") + str(adv_cost) + "{image=img_AP}."
+                                            tooltip ttip + "\n消耗" + str(adv_cost) + "{image=img_AP}。"
                                     else:
                                         text_color c_grey
                                         action NullAction()
@@ -8017,8 +8017,8 @@ screen debug_pics(girl):
         hbox:
             textbutton "温和" text_size res_font(18) action SetScreenVariable("mode", "soft")
             textbutton "强硬" text_size res_font(18) action SetScreenVariable("mode", "hard")
-            textbutton "FARM" text_size res_font(18) action SetScreenVariable("mode", "farm")
-            textbutton "FIX" text_size res_font(18) action SetScreenVariable("mode", "fix")
+            textbutton "FARM（待翻译）" text_size res_font(18) action SetScreenVariable("mode", "farm")
+            textbutton "FIX（待翻译）" text_size res_font(18) action SetScreenVariable("mode", "fix")
 
         viewport xalign 1.0 xsize xres(250):
             mousewheel True
