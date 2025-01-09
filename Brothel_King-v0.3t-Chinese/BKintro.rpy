@@ -38,7 +38,7 @@ label intro:
     pause 0.8
 
     $ sill_name = "???"
-    $ MC.name = "You"
+    $ MC.name = "你"
 
 
     sill unknown "Master!"
@@ -59,7 +59,7 @@ label intro:
 
 
 
-    $ sill_name = "Sill"
+    $ sill_name = "希露"
 
 
 
@@ -289,7 +289,7 @@ label resume_intro:
 
     guard "Who goes there?"
 
-    $ MC.name = renpy.input("I am...", default = MC_name, length = 20)
+    $ MC.name = renpy.input("我是...", default = MC_name, length = 20)
 
     guard "[MC.name]? Odd name, for sure."
 
@@ -457,7 +457,7 @@ label resume_intro2:
 
     play sound s_woman_scream
 
-    $ kuro_name = "Woman"
+    $ kuro_name = "陌生女人"
 
     kuro "Aaaaaaah!" with vpunch
 
@@ -759,7 +759,7 @@ label resume_intro3:
 
 
 
-    $ kuro_name = "Noblewoman"
+    $ kuro_name = "贵族小姐"
 
 
 
@@ -822,7 +822,7 @@ label resume_intro3:
 
     stop sound
 
-    $ maid_name = "Woman voice"
+    $ maid_name = "女人的声音"
 
     "..."
 
@@ -840,7 +840,7 @@ label resume_intro3:
 
     show maid normal at center with dissolve
 
-    $ maid_name = "Maid"
+    $ maid_name = "女仆"
 
     maid "Welcome, my lord."
     maid "I will take you to master Gio."
@@ -857,7 +857,7 @@ label resume_intro3:
 
     gio "Ah, very well, Minako. You may leave us."
 
-    $ maid_name = "Minako"
+    $ maid_name = "美奈子"
 
     maid "Yes master."
 
@@ -880,7 +880,7 @@ label resume_intro3:
     gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at
         night, anyway."
 
-    $ kuro_name = "Princess"
+    $ kuro_name = "公主"
 
     you "The Princess?"
 
@@ -2149,7 +2149,7 @@ label main_first_time:
 
     sill "Oh, I know! How about, 'The Rose Garden'? That sounds more poetic, don't you think?"
 
-    $ brothel.name = renpy.input("How do you want to call your brothel?", default = brothel.name, length = 40)
+    $ brothel.name = renpy.input("你想把青楼的名字改成什么?", default = brothel.name, length = 40)
 
     if brothel.name.lower() == "the rose garden":
         sill "Yay! I'm glad you liked it."

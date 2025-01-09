@@ -753,34 +753,6 @@ init -10 python:
                     None : "(moon_name_dict)没有值",
                     }
 
-    ## 资源翻译 ##
-    resource_name_dict = {
-                        "Gold" : "金币",
-                        "gold" : "金币",
-                        "Prestige" : "声望",
-                        "prestige" : "声望",
-                        "Action" : "行动力",
-                        "action" : "行动力",
-                        "Mana" : "魔法值",
-                        "mana" : "魔法值",
-                        "Wood" : "木头",
-                        "wood" : "木头",
-                        "Leather" : "皮革",
-                        "leather" : "皮革",
-                        "Dye" : "染料",
-                        "dye" : "染料",
-                        "Marble" : "大理石",
-                        "marble" : "大理石",
-                        "Ore" : "矿石",
-                        "ore" : "矿石",
-                        "Silk" : "丝绸",
-                        "silk" : "丝绸",
-                        "Diamond" : "钻石",
-                        "diamond" : "钻石",
-
-                        None : "(resource_name_dict)没有值",
-                        }
-
     ## 家具名称 ##
     furniture_name_dict = {
                           "Cardboard" : "纸板箱",
@@ -897,6 +869,88 @@ init -10 python:
                           "Strange machine" : "古怪的机器",
                           "Clockwork billboard" : "钟表广告牌",
                           }
+
+    ## 女孩起源名称 ##
+    origin_name_dict = {
+                        "Zan" : "泽恩",
+                        "the border with the Holy Lands" : "圣地边境",
+                        "the Blood Islands" : "鲜血群岛",
+                        "Karkyr" : "卡尔基",
+                        "Westmarch" : "西境",
+                        "the desert of Hokoma" : "荷科马大沙漠",
+                        "Borgo, the port city" : "博格-海港之城",
+                        "the Goliath desolations" : "歌利亚平原",
+                        "the Arik mountains" : "阿力克山脉",
+                        }
+
+    ## 访问城市界面 ##
+    location_name_dict = {
+                         ## 地区名称 ##
+                         "The Slums" : "贫民窟",
+                         "The Docks" : "码头区",
+                         "The Warehouse" : "工业区",
+                         "The Magic Gardens" : "魔法花园",
+                         "The Cathedra" : "教会辖地",
+                         "The King's Hold" : "皇城",
+
+                         "Spice market" : "黑市",
+                         "Sewers" : "下水道",
+                         "Farm" : "农场",
+                         "Watchtower" : "瞭望塔",
+                         "Junkyard" : "垃圾场",
+                         "Thieves guild" : "盗贼公会",
+
+                         "Harbor" : "港口",
+                         "Shipyard" : "船厂",
+                         "Seafront" : "海滨",
+                         "Beach" : "海滩",
+                         "Taverns" : "酒馆",
+                         "Exotic emporium" : "进口商场",
+
+                         "Market" : "集市",
+                         "Stables" : "马厩",
+                         "Plaza" : "广场",
+                         "Gallows" : "绞刑架",
+                         "Prison" : "监狱",
+                         "Arena" : "竞技场",
+
+                         "Botanical garden" : "植物园",
+                         "Library" : "图书馆",
+                         "Magic forest" : "魔法森林",
+                         "Hanging gardens" : "空中花园",
+                         "Guild quarter" : "公会大楼",
+                         "Magic guild" : "魔法公会",
+
+                         "Pilgrim road": "朝圣者之路",
+                         "Banking quarter" : "金融街",
+                         "Old ruins" : "远古遗迹",
+                         "Lakefront" : "湖畔",
+                         "Training ground" : "演武场",
+                         "Cathedra" : "教堂",
+
+                         "Battlements" : "城垛",
+                         "Keep" : "城堡主楼",
+                         "Hall" : "接待厅",
+                         "Courtyard" : "庭院",
+                         "Temple" : "神社",
+                         "Waterfalls" : "瀑布",
+
+                         ## 执照名称 ##
+                         "No license" : "无需执照",
+                         "Pimp license" : "皮条客执照",
+                         "Whoremonger license" : "妓女贩执照",
+                         "Brothelmaster license" : "青楼主执照",
+
+                         ## 青楼房间名称 ##
+                         "Tavern" : "零点酒吧",
+                         "tavern" : "零点酒吧",
+                         "Strip club" : "激情夜店",
+                         "strip club" : "激情夜店",
+                         "Onsen" : "露天温泉",
+                         "onsen" : "露天温泉",
+                         "Okiya" : "艺妓置屋",
+                         "okiya" : "艺妓置屋",
+                         }
 
 
 #### BALANCE / CHEATS ####

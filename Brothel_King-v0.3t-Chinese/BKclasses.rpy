@@ -209,11 +209,11 @@ init -2 python:
             for mod in list(self.active_mods.values()):
 
                 if mod.name not in detected_mods.keys():
-                    if renpy.call_screen("yes_no", mod.full_name + " couldn't be found. Would you like to deactivate this mod for this game (recommended)?"):
+                    if renpy.call_screen("yes_no", mod.full_name + "文件无法识别，你想停用这个mod吗 (推荐)?"):
                         self.deactivate_mod(mod)
 
                 elif mod.check_for_updates():
-                    renpy.say("Mod Update", "A different version of mod: %s has been found (%s)." % (mod.name, str(mod.version)))
+                    renpy.say("Mod更新", "MOD: %s有新的版本可用 (%s)。" % (mod.name, str(mod.version)))
 
                     if not hasattr(mod, "update_label"): # Fix for older games
                         mod.update_label = ""
@@ -221,7 +221,7 @@ init -2 python:
                     if mod.update_label:
                         update_list.append(mod.update_label) # Cannot call directly or would break the python block
 
-                    elif renpy.call_screen("yes_no", "Would you like to reset this mod for this game (recommended)?"):
+                    elif renpy.call_screen("yes_no", "你想重置这个Mod吗 (推荐)?"):
                         self.deactivate_mod(mod)
                         self.activate_mod(detected_mods[mod.name])
 
@@ -1785,7 +1785,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b}服务难度:" + self.get_difficulty() + "):" + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -2717,7 +2717,7 @@ init -2 python:
 
             price = self.get_room_upgrade_price(self.bedrooms)
 
-            text1 = "Do you really want to upgrade the bedrooms for " + str(price) + " gold?"
+            text1 = "你确定要花" + str(price) + "金币升级房间吗？"
 
             if self.bedroom_type.level < self.maxupgrade:
 
@@ -2737,10 +2737,10 @@ init -2 python:
                         renpy.restart_interaction()
 
                     else:
-                        renpy.say(narrator, "You don't have enough money.")
+                        renpy.say(narrator, "你没有足够多的金币。")
 
             else:
-                renpy.say(sill, "You cannot upgrade this brothel's rooms further.")
+                renpy.say(sill, "你无法继续升级青楼的房间了。")
 
         def get_mood_modifier(self, rank): #Increases with bedroom type: Girls score higher with customers and their mood improves
 
@@ -2779,7 +2779,7 @@ init -2 python:
 
                 price = self.get_room_price()
 
-                text1 = __("Do you want to buy a new bedroom for ") + str(price) + " gold?"
+                text1 = "你想花" + str(price) + "金币扩建一间卧室吗？"
 
                 if self.bedrooms < self.get_maxbedrooms():
 
@@ -2801,10 +2801,10 @@ init -2 python:
                             return True
 
                         else:
-                            renpy.say(narrator, "You don't have enough money.")
+                            renpy.say(narrator, "你没有足够多的金币。")
                             return False
                 else:
-                    renpy.say(sill, "You already have the maximum number of bedrooms for this brothel.")
+                    renpy.say(sill, "你的青楼已经没有更多的空间扩建卧室了。")
                     return False
 
             else:
@@ -4782,7 +4782,7 @@ init -2 python:
                 elif self.level == 1:
                     desc = "只能容纳{b}一个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 else:
-                    desc = "你的房间没有足够的空间让女孩挤进来。"
+                    desc = "你的房间太小了，无法让女孩在房间里接受私人指导。"
 
                 if self.level < brothel.rank:
                     desc += "花费{b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}扩建你的卧室。"
@@ -7095,9 +7095,9 @@ init -2 python:
             if effects == None: effects = []
             self.effects = effects
             if hidden_effect:
-                self.description = "{b}" + self.name + "{/b}" + ": " + base_description
+                self.description = "{b}" + tl_cn(self.name,furniture_name_dict) + "{/b}" + ": " + base_description
             else:
-                self.description = "{b}" + self.name + "{/b}" + ": " + get_description(base_description, effects)
+                self.description = "{b}" + tl_cn(self.name,furniture_name_dict) + "{/b}" + ": " + get_description(base_description, effects)
             self.upgrade = upgrade
             self.built = False
             self.can_deactivate = can_deactivate

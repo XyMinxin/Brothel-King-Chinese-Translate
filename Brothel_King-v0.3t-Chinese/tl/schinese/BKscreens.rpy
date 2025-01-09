@@ -516,7 +516,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5610
     old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
-    new "扩容货架(+%s %s 件商品 %s )消耗 %s %s 。"
+    new "扩容货架(+%s %s件商品%s)消耗%s个%s。"
 
     # game/BKscreens.rpy:5348
     old "Upgrade shop"
@@ -660,7 +660,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7106
     old " this week. Value is going up."
-    new " 供应短缺。物价上升。"
+    new " 供应短缺。市场价上涨。"
 
     # game/BKscreens.rpy:7114
     old " is plentiful this week. Value is going down."

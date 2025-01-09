@@ -1378,11 +1378,11 @@ label end_day:
     while catch_up_changes:
         $ girl, changes = catch_up_changes.pop(0)
 
-        $ text1 = girl.fullname + " helped "
+        $ text1 = girl.fullname + "帮助"
         if len(changes) > 1:
-            $ text1 += "other girls develop their skills.\n{size=-6}("
+            $ text1 += "其他女孩提高了她们的属性。\n{size=-6}("
         else:
-            $ text1 += "another girl develop her skills.\n{size=-6}("
+            $ text1 += "另一个女孩提高了她的属性。\n{size=-6}("
 
         python:
             for girl2, stats in changes:
@@ -1508,7 +1508,7 @@ label end_day:
         retired_minions = farm.hurt_minions()
 
         for mn in retired_minions:
-            renpy.say(gizel, "一个" + str(mn.level) + "级的" + mn.type + "因为伤口或损伤不得不退役。")
+            renpy.say(gizel, "一个" + str(mn.level) + "级的" + farm_related_dict[mn.type] + "因为伤口或损伤不得不退役。")
 
     ## Update girl portraits and profiles
 

@@ -261,8 +261,8 @@ label slave_justify(girl, context):
         if ev_list:
             menu_list += [(ev.action, ev.type) for ev in ev_list if (ev.encourage and context == "reward") or (ev.discipline and context == "punish")]
 
-        menu_list.append(("No particular reason", ""))
-        menu_list.append(("Go back", "back"))
+        menu_list.append(("没有什么特殊原因", ""))
+        menu_list.append(("返回", "back"))
 
     $ inter.reason = menu(menu_list)
 
@@ -1068,7 +1068,7 @@ label slave_chat_tastes(girl):
 
                 call dialogue(girl, "slave hit") from _call_dialogue_160
 
-                $ MC.rand_say(("It will hurt a lot more if you talk back again. Remember this.", "Remember this, and do better next time."))
+                $ MC.rand_say(("如果你再顶嘴，下次力道会更大。给我记好了。", "长点记性,没有下次了。"))
 
     return
 
@@ -1140,7 +1140,7 @@ label slave_chat_origins(girl):
 
                 call dialogue(girl, "slave hit") from _call_dialogue_165
 
-                $ MC.rand_say(("It will hurt a lot more if you talk back again. Remember this.", "Remember this, and do better next time."))
+                $ MC.rand_say(("如果你再顶嘴，下次力道会更大。给我记好了。", "长点记性,没有下次了。"))
 
     else:
         $ girl.personality_unlock["origin"] = True
@@ -1284,9 +1284,9 @@ label slave_train_sex_acts(girl, mode):
 
                     "Do it anyway":
                         $ inter.MC_reaction = "proceed"
-                        $ MC.rand_say(("gd: I'm sorry, but this is part of your training. Let's get on with it.",
-                                       "ne: I don't care about your opinion, slave. Ready or not, we are doing this.",
-                                       "ev: You think you can tell me what to do? What a fucking bitch!", "Shut up and get ready. We are doing this."))
+                        $ MC.rand_say(("gd: 抱歉，但这也是训练的一部分。让我们开始吧。",
+                                       "ne: 我才不在乎你的意见，不管你准备好了没有，你都得这么做。",
+                                       "ev: 轮得到你教我做事？你这个贱人！", "闭嘴，准备好。你不做也得做。"))
 
                         if girl.promised:
                             call break_promise(girl) from _call_break_promise
@@ -1346,7 +1346,7 @@ label slave_remove_fixation(girl):
                     menu_list.append((__(fix.name.capitalize()), fix))
 
             menu_list.append(("返回", "back"))
-            renpy.say(you, "Today, I want you to overcome your disgust for...", interact=False)
+            renpy.say(you, "今天，我想让你克服...", interact=False)
             fix = menu(menu_list) # renpy.display_menu(menu_list)
 
     if fix == "back":
@@ -1565,7 +1565,7 @@ label slave_train_obedience(girl):
 
     "You start with giving [girl.name] simple orders around the house."
 
-    $ MC.rand_say(("请你把阁楼打扫一下好吗?", "帮希露分担一些家务。", "把脏床单都换掉", "拿上扫帚去清理" + __(rand_choice(brothel.rooms.keys())) + "。",
+    $ MC.rand_say(("请你把阁楼打扫一下好吗?", "帮希露分担一些家务。", "把脏床单都换掉", "拿上扫帚去清理" + rand_choice(brothel.rooms.keys()) + "。",
                   "从井里打些水来。", "ar: 清理太阳神祭坛。", "确保墙壁上没有灰尘。", "给我们做点吃的。", "ev: 把我的靴子擦干净。我不想让他们沾上一点脏东西，听到了吗？",
                   "wr: 润滑一下我的武器，当然, 我说的是我的长剑。", "tr: 给小龙喂些青蛙。别紧张，它很少咬人的手。", "wz: 擦擦我的杖。我是说我的法杖。我的意思是...嗯，你懂我意思。"))
 
@@ -2317,13 +2317,13 @@ label slave_magic(girl, mode="train"):
     if not girl.magic_training:
         call slave_hypnotize_method(girl) from _call_slave_hypnotize_method
 
-    $ text1 = rand_choice(MC.filter_say(("ar: By the light of Arios{nw}", "sh: In the shadows of Shalia{nw}", "By the strength of the 5 elements{nw}", "ev: By the darkness of the 7 hells{nw}", "gd: By the purity of my soul", "ne: By the voice of dragons{nw}",
-                   "ng: By the swift sands of time{nw}", "By the beat of the magic groove{nw}", "By the radiant power of the dead stars{nw}", "By the dark side of the red moon{nw}", "By the depth of the endless sea{nw}")))
+    $ text1 = rand_choice(MC.filter_say(("ar: 太阳神的圣光啊{nw}", "sh: 潜藏于暗影中的莎莉娅啊{nw}", "五大元素啊{nw}", "ev: 地狱的黑暗力量啊{nw}", "gd: 我纯净的灵魂啊", "ne: 龙族的咆哮啊{nw}",
+                   "ng: 时光之砂啊{nw}", "神秘的旋律啊{nw}", "死星的放射波动啊{nw}", "猩红之月的暗面啊{nw}", "无尽之海的深渊啊{nw}")))
 
     $ text1 += ", I command thee, "
 
-    $ text1 += rand_choice(("跟着我的声音进入迷宫...", "脱离物质世界的禁锢...",
-                           "进入深深的沉睡...", "不要抵抗梦境的侵蚀...", "踏上遗忘之海的旅程...",
+    $ text1 += rand_choice(("跟着我的声音走进迷宫...", "脱离物质世界的禁锢...",
+                           "陷入深深的沉睡...", "不要抵抗梦境的侵蚀...", "踏上遗忘之海的旅程...",
                            "忘记你是谁，忘记你躺在哪里...", "你是我故事中的角色..."))
 
     play sound s_spell

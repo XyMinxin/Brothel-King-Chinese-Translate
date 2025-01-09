@@ -873,9 +873,9 @@ label city_impress:
         ev_girl1 "You can have it. This will be a nice souvenir..."
 
         if game.chapter >= 3 and dice(6) >= 5:
-            call receive_item(item_dict["Cimerian artefact"], msg="You have received a rare %s.", use_article=False) from _call_receive_item_30
+            call receive_item(item_dict["Cimerian artefact"], msg="你得到了一个稀有的%s。", use_article=False) from _call_receive_item_30
         else:
-            call receive_item(item_dict["Cimerian scrap"], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_31
+            call receive_item(item_dict["Cimerian scrap"], msg="你得到了一块%s。", use_article=False) from _call_receive_item_31
 
     return
 
@@ -3104,21 +3104,21 @@ label city_gypsy:
 
     if MC.playerclass == "Warrior":
 
-        $ nickname = "Big man"
+        $ nickname = "猛男"
 
-        $ nickname_l = "big man"
+        $ nickname_l = "猛男"
 
     elif MC.playerclass == "Wizard":
 
-        $ nickname = "Weird man"
+        $ nickname = "怪胎"
 
-        $ nickname_l = "weird man"
+        $ nickname_l = "怪胎"
 
     elif MC.playerclass == "Trader":
 
-        $ nickname = "Funny man"
+        $ nickname = "开心果"
 
-        $ nickname_l = "funny man"
+        $ nickname_l = "开心果"
 
     play sound s_surprise
 
@@ -4599,7 +4599,7 @@ label city_gossip(gossip=None):
 
     $ loc = selected_location.name.lower()
 
-    $ text1 = rand_choice(("some juicy gossip", "a disturbing rumor", "a curious story", "an interesting tale", "a word of warning"),)
+    $ text1 = rand_choice(("一些有趣的八卦", "令人不安的谣言", "一个令人好奇的故事", "一个有趣的传说", "一句人生格言"),)
 
     $ actor = article(__(selected_district.get_rand_pop().get_rand_name()))
 
@@ -4627,7 +4627,7 @@ label city_luck():
     "You have received %(gain)d gold."
 
     if dice(6) == 6:
-        $ npc = rand_choice(["Man", "Woman", "Young man", "Young woman", "Old man", "Old woman"])
+        $ npc = rand_choice(["男人", "女人", "少年", "少女", "老头", "老太太"])
         npc "Oh no... Where is it? It must be around here..."
 
         "Someone seems to be looking for their lost belongings."
