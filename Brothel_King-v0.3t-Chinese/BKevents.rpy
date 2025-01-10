@@ -107,9 +107,9 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
 
     if old_gp:
         if len(old_gp) == 1:
-            $ text1 = "The girl pack {b}{color=[c_red]}" + old_gp[0] + "{/color}{/b} couldn't be found and will be removed from the mix."
+            $ text1 = "以下女孩包无法读取{b}{color=[c_red]}" + old_gp[0] + "{/color}{/b}。她将从女孩包组合中被移除。"
         else:
-            $ text1 = "The following girl packs couldn't be found: {b}{color=[c_red]}" + and_text(old_gp) + "{/color}{/b}. They will be removed from the mix."
+            $ text1 = "以下女孩包无法读取: {b}{color=[c_red]}" + and_text(old_gp) + "{/color}{/b}。她们将从女孩包组合中被移除。"
 
         $ renpy.call_screen("OK_screen", message=text1)
 
@@ -121,9 +121,9 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
 
     if new_gp:
         if len(new_gp) == 1:
-            $ text1 = "A new girl pack: {b}{color=" + c_green + "}" + new_gp[0] + "{/color}{/b} has been found! What would you like to do?"
+            $ text1 = "识别到一个新的女孩包: {b}{color=" + c_green + "}" + new_gp[0] + "{/color}{/b}! 你打算怎么做?"
         else:
-            $ text1 = str(len(new_gp)) + " new girl packs have been found:{b}{color=" + c_green + "}" + and_text(new_gp) + "{/color}{/b}. What would you like to do?"
+            $ text1 = str(len(new_gp)) + " 识别到新的女孩包:{b}{color=" + c_green + "}" + and_text(new_gp) + "{/color}{/b}。你打算怎么做?"
 
         if renpy.call_screen("yes_no", text1, "Update all girl mixes", "Don't update (update manually)"):
             python:
@@ -608,7 +608,7 @@ label reached_goal():
             call c1_reached_goal() from _call_c1_reached_goal
 
         else:
-            $ text1 = __("You have reached your current goal:\n") + __(game.get_goal_description()) + __("\n\nYou may now advance to the next chapter!")
+            $ text1 = "你已经完成了主线任务:\n" + __(game.get_goal_description()) + "\n\n你现在可以推进到下一个章节了！"
 
             call screen OK_screen(__("Goal reached!"), text1, pic = Picture(path="UI/goal.webp"))
 
@@ -1645,7 +1645,7 @@ label too_tired(girl):
         extend ""
         "Give her the day off":
             if MC.get_alignment() == "evil":
-                $ text1 = " You better work extra hard after this."
+                $ text1 = "你最好在这之后加倍努力。"
             else:
                 $ text1 = ""
 
@@ -6227,24 +6227,24 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         else:
             if tx < 1000:
-                $ text1 = "A trifle."
+                $ text1 = "有点少啊。"
             elif tx < 5000:
-                $ text1 = "A token contribution, as a show of goodwill."
+                $ text1 = "象征性的贡献，善意的信号。"
             elif tx < 25000:
-                $ text1 = "A modest show of support for our collective welfare."
+                $ text1 = "这是对集体福利的小小支持。"
             elif tx < 50000:
-                $ text1 = "A decent effort, I hope you keep this going."
+                $ text1 = "很不错的努力，希望你能坚持下去。"
             elif tx < 100000:
-                $ text1 = "A sizeable donation, for which the guild will be grateful."
+                $ text1 = "一笔可观的金额，公会会很感激的。"
                 $ NPC_taxgirl.love += 1
             elif tx < 250000:
-                $ text1 = "A valuable contribution to the greater good, for which I will be personally thankful."
+                $ text1 = "为大义舍小利，对此我个人表示感谢。"
                 $ NPC_taxgirl.love += 3
             elif tx < 500000:
-                $ text1 = "A great effort for our cause, which will place you among our top three contributors."
+                $ text1 = "你为我们的事业付出了巨大的努力，你已经成为了我们的三大捐助者之一。"
                 $ NPC_taxgirl.love += 6
             else:
-                $ text1 = "A King's ransom! No one is a bigger benefactor of the Guild than you. I will be very impressed if you pull this off."
+                $ text1 = "你简直富可敌国！你才是公会的顶梁柱。如果你能按量纳税，我会对你刮目相看。"
                 $ NPC_taxgirl.love += 12
 
             $ renpy.block_rollback()

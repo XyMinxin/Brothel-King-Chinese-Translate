@@ -1681,8 +1681,8 @@ label help_about_game:
 
         "DISCLAIMER":
 
-            $ text1 = """This is a hobby project, if someone wants you to pay for it, you are being scammed. I do not own any of the images, music and sound effects used in this game. I wish I could credit the rightful authors for all of them, but most of it had been sitting on my hard drive for a long, long time, and I've forgotten where it came from.\nIf you are the author of any of this material and you feel that this game is infringing on your rights in any way,
-            please contact me on the [URL] forum and I'll drop it from the game.\n\nPlease contact me at [URL] for feedback, criticism, bug reports, etc."""
+            $ text1 = """这是一个为爱发电的项目，如果有人想让你付钱，那你就被倒狗骗了。我不拥有在这个游戏中任何使用的图像，音乐和音效版权。它们都归功于真正的作者，但它们中的大部分已经在我的硬盘上存放了很长很长时间，我已经忘记了它们是从哪里来的。\n如果您是某素材的作者，并且您认为本游戏以任何方式侵犯了您的权利，
+            请来论坛 [URL] 联系我，我将把这部分素材内容从游戏中移除出去。\n\n请在论坛 [URL] 中等待答复, 评价, 上报BUG, 等等"""
 
             call screen OK_screen("DISCLAIMER", text1)
 

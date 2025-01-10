@@ -58,7 +58,7 @@ translate schinese fight_attempt_c6b9d571:
 translate schinese fight_attempt_2f8a4273:
 
     # "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes [text1]."
-   "她挣扎着把你推开。你试图抓住她，但她对着你的肚子来了一脚，从门口逃了出去。"
+   "她挣扎着把你推开。你试图抓住她，但她对着你的肚子来了一脚，[text1]。"
 
 # game/BKinteractions.rpy:121
 translate schinese fight_attempt_3149cc65:
@@ -3914,7 +3914,7 @@ translate schinese slave_story4_e7c72d25:
 translate schinese slave_story4_01107499:
 
     # girl.char "Being born [text1], I don't believe that a slave can be equal with free persons..."
-    girl.char "我生来就是[text1]。我不相信奴隶能与人平等...."
+    girl.char "我生而[text1]。我不相信奴隶能与人平等...."
 
 # game/BKinteractions.rpy:4291
 translate schinese slave_story4_346f7e24:

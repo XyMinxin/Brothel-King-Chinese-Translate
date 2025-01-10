@@ -199,7 +199,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ target_girls.remove(girl)
             $ defended_girls.append(girl)
 
-            $ text1 = "While you were fighting, the other attackers rampaged through your brothel. "
+            $ text1 = "当你陷于苦战的时候，其他袭击者冲进了你的妓院。"
 
         else:
             if girl.test_shield():
@@ -256,7 +256,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             $ lost_gold = int(MC.gold * 0.15)
             $ MC.gold -= lost_gold
-            $ text1 = "While you were passed out, the [attackers] ransacked your brothel, {color=[c_red]}taking off with [lost_gold] gold.{/color} "
+            $ text1 = "当你昏倒的时候，[attackers]洗劫了你的青楼， {color=[c_red]}抢走了[lost_gold]金币。{/color} "
 
         python:
 

@@ -1560,11 +1560,11 @@ label farm_meet_gizel(): # Location: spice market
     with fade
 
     if MC.playerclass == "Warrior":
-        $ text1 = "anti-rust lotion"
+        $ text1 = "防锈保养油"
     elif MC.playerclass == "Wizard":
-        $ text1 = "magic herbs"
+        $ text1 = "神奇的草药"
     elif MC.playerclass == "Trader":
-        $ text1 = "dragon feed"
+        $ text1 = "龙族的饲料"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
 
@@ -4267,9 +4267,9 @@ label farm_meet_gina():
     it produces enough waste every day to create a landscape of garbage mounds, spreading as far as the eye can see."
 
     if MC.god:
-        $ text1 = MC.god + " forsaken"
+        $ text1 = MC.god + "都抛弃"
     else:
-        $ text1 = "disgusting"
+        $ text1 = "令人作呕"
 
     you "Remind me again, why the hell did I come to that [text1] place? I have trouble understanding my own decisions, sometimes..."
 
@@ -15344,7 +15344,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
+    $ text1 = season_text({"winter" : "，躲避冬日刺骨的寒风", "spring" : "，重拾春日的愉悦心情", "summer" : "，躲避夏天的炎炎烈日", "fall" : ", 远离聒噪扰人的乌鸦"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 

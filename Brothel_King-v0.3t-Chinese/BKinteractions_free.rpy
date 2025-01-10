@@ -387,7 +387,7 @@ label free_play(girl):
 
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
-        $ text1 =  "Why don't you strip down for me babe?"
+        $ text1 =  "为什么你不把这些碍事的衣服都脱掉呢？"
 
         $ snd = s_equip_dress
 
@@ -404,17 +404,17 @@ label free_play(girl):
         $ pic = girl.get_pic("service", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
         if pic.has_tag("mast"):
-            $ text1 = "I want you to masturbate for me."
+            $ text1 = "在这里自慰。"
         elif pic.has_tag("titjob"):
-            $ text1 = "I want to fuck those nice tits of yours."
+            $ text1 = "用你的奶子帮我撸。"
         elif pic.has_tag("footjob"):
-            $ text1 = "Why don't you jerk me off with your feet?"
+            $ text1 = "为什么不用你的玉足帮我撸呢？"
         elif pic.has_tag("oral"):
-            $ text1 = "I want you to suck my dick."
+            $ text1 = "过来嗦我的鸡巴。"
         elif pic.has_tag("handjob"):
-            $ text1 = "I want you to jerk me off."
+            $ text1 = "用你的手帮我打飞机。"
         else:
-            $ text1 = "I want you to pleasure me."
+            $ text1 = "尽力取悦我。"
 
 #         $ dislikes = ("rebel", "nerd")
 
@@ -425,7 +425,7 @@ label free_play(girl):
 
         $ diff = 78
 
-        $ text1 = "Let me have you..."
+        $ text1 = "让我好好品尝品尝你的小穴..."
 
         $ snd = s_orgasm
 
@@ -442,7 +442,7 @@ label free_play(girl):
 
         $ diff = 80
 
-        $ text1 = "I want to fuck your ass."
+        $ text1 = "我要用你的菊穴爽一爽。"
 
         $ snd = s_orgasm_fast
 
@@ -459,7 +459,7 @@ label free_play(girl):
 
         $ diff = 82
 
-        $ text1 = "Bend over and get ready for a good whack."
+        $ text1 = "把屁股撅起来，准备好接受调教。"
 
         $ snd = s_screams
 
@@ -726,7 +726,7 @@ label free_flirt_sex_tastes(girl):
                     $ girl.personality_unlock[fix.name] = True
 
             else:
-                $ text1 = "%s makes me uncomfortable..." % __(long_act_description[act])
+                $ text1 = "%s让我感觉很不舒服..." % __(long_act_description[act])
 
                 "She blushes as she whispers something to you."
 

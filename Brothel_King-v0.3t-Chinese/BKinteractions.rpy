@@ -94,9 +94,9 @@ label fight_attempt(girl, act=None, intensity=1, outside=False): # Returns True 
             play sound s_thunder
 
             if outside:
-                $ text1 = "ground"
+                $ text1 = "地面"
             else:
-                $ text1 = "floor"
+                $ text1 = "地板"
 
             "[girl.name] throws herself at you, but the magical bind holding her is just too strong. She is jolted by a surge of magical energy, and crumbles to the [text1], winded."
 
@@ -110,9 +110,9 @@ label fight_attempt(girl, act=None, intensity=1, outside=False): # Returns True 
             you "Ouch!"
 
             if outside:
-                $ text1 = "running"
+                $ text1 = "逃之夭夭"
             else:
-                $ text1 = "through the door"
+                $ text1 = "摔门而出"
 
             "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes [text1]."
 
@@ -630,7 +630,7 @@ label slave_chat_other_girls(girl):
             $ inter.other_girl = rand_choice(girl.friends)
 
             if inter.result < 0:
-                $ text1 = ", however"
+                $ text1 = "，然而"
             else:
                 $ text1 = ""
 
@@ -646,7 +646,7 @@ label slave_chat_other_girls(girl):
             $ inter.other_girl = rand_choice(girl.rivals)
 
             if inter.result > 0:
-                $ text1 = "Although "
+                $ text1 = "尽管"
             else:
                 $ text1 = ""
 
@@ -1714,13 +1714,13 @@ label slave_train(girl, act, response, mode="train"): # Used if girl accepted of
     ## Action starts
 
     if response == "accepted":
-        $ text1 = "Giving you a sheepish look, "
+        $ text1 = "露出害羞的眼神，"
 
     elif response == "resisted":
-        $ text1 = "Looking at you with mournful eyes, "
+        $ text1 = "露出悲伤的眼神，"
 
     elif response == "magic":
-        $ text1 = "With a dazed stare, "
+        $ text1 = "露出茫然的眼神"
 
     else:
         $ raise AssertionError("No context found for interaction")
@@ -1844,13 +1844,13 @@ label slave_advanced_training(girl, act, step):
             if step == 1:
                 if pic.has_tag("town"):
                     $ use_location = ["town"]
-                    $ text1 = "You decide to take her out in the street, to spice things up.\n"
+                    $ text1 = "你决定带她出去逛街，做点刺激的事。\n"
                 elif pic.has_tag("beach"):
                     $ use_location = ["beach"]
-                    $ text1 = "Today is a good day to go to the beach, so you tell [girl.name] to follow you there.\n"
+                    $ text1 = "今天是个去沙滩的好天气，所以你让[girl.name]陪你一起出门。\n"
                 elif pic.has_tag("nature"):
                     $ use_location = ["nature"]
-                    $ text1 = "You decide to take it to the park today, for a change.\n"
+                    $ text1 = "你决定今天带她去公园，换换口味。\n"
 
         $ text1 += __(fix_description[fix.name + " intro"]) % girl.name
 
@@ -4002,9 +4002,9 @@ label slave_story3(girl):
     if girl.flags["story"] == 4:
 
         if girl.is_("dom"):
-            $ text1 = "It isn't like her."
+            $ text1 = "这不像她。"
         else:
-            $ text1 = "You wonder what it is this time."
+            $ text1 = "你想知道发生什么事了。"
 
         "You find [girl.name] crying in her room. [text1]"
 
@@ -4356,9 +4356,9 @@ label slave_story4(girl):
                 $ MC.evil += 1
 
         if girl.free:
-            $ text1 = "poor"
+            $ text1 = "贫贱"
         else:
-            $ text1 = "a slave"
+            $ text1 = "为奴"
 
         girl.char "Being born [text1], I don't believe that a slave can be equal with free persons..."
 
@@ -6510,9 +6510,9 @@ label slave_story_help(girl, act):
             girl.char "You would? Oh, thank you Master! It's perfect!"
 
             if story_flags["c1_path"] == "evil":
-                $ text1 = "city guard"
+                $ text1 = "城市守卫"
             else:
-                $ text1 = "thieves guild"
+                $ text1 = "盗贼公会"
 
             you "I will have to pull a few strings with the [text1], but... It shouldn't be a problem."
 
@@ -6699,26 +6699,26 @@ label slave_story_help(girl, act):
             if act == "service":
 
                 if pic.has_tag("oral"):
-                    $ text1 = "You will suck my cock patiently, until I decide to blow my load down your throat."
+                    $ text1 = "小心地含住我的鸡巴，直到我打算射在你的喉咙里为止。"
 
                 elif pic.has_tags(("handjob", "titjob")):
-                    $ text1 = "You will service me with your tits and hands. Get ready!"
+                    $ text1 = "用你的奶子和小手帮我撸，快脱！"
 
                 elif pic.has_tag("mast"):
-                    $ text1 = "You will masturbate for me, until I bring myself off over your slutty body."
+                    $ text1 = "在我面前自慰，直到我看够了射在你身上为止。"
 
                 else:
-                    $ text1 = "You will use your body to pleasure me."
+                    $ text1 = "用你的身体来取悦我。"
 
             elif act == "sex":
-                $ text1 = "I will fuck your dirty pussy now. Prepare to receive your Master's dick."
+                $ text1 = "我现在就要插入你的骚穴。准备好吞下我的鸡巴。"
                 $ vir = girl.pop_virginity(origin="MC")
 
             elif act == "anal":
-                $ text1 = "I will fuck your ass like the filthy slut you are. And then I'll fill it up with cum."
+                $ text1 = "我要干翻你的屁股，你这个淫荡的婊子。我要让里面装满我的精液。"
 
             elif act == "fetish":
-                $ text1 = "Since you like kinky stuff, let's see how well you handle a little pleasure mixed with a lot of pain."
+                $ text1 = "既然你喜欢玩些新花样，让我们看看你能不能协调好些许的快乐和巨大的痛苦。"
 
             you "Shut up, bitch. [text1]"
 
