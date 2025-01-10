@@ -2717,7 +2717,7 @@ init -2 python:
 
             price = self.get_room_upgrade_price(self.bedrooms)
 
-            text1 = "Do you really want to upgrade the bedrooms for " + str(price) + " gold?"
+            text1 = "你确定要花" + str(price) + "金币升级房间吗？"
 
             if self.bedroom_type.level < self.maxupgrade:
 
@@ -2779,7 +2779,7 @@ init -2 python:
 
                 price = self.get_room_price()
 
-                text1 = __("Do you want to buy a new bedroom for ") + str(price) + " gold?"
+                text1 = "你想花" + str(price) + "金币扩建一间卧室吗？"
 
                 if self.bedrooms < self.get_maxbedrooms():
 
@@ -2801,10 +2801,10 @@ init -2 python:
                             return True
 
                         else:
-                            renpy.say(narrator, "You don't have enough money.")
+                            renpy.say(narrator, "你没有足够多的金币。")
                             return False
                 else:
-                    renpy.say(sill, "You already have the maximum number of bedrooms for this brothel.")
+                    renpy.say(sill, "你的青楼已经没有更多的空间扩建卧室了。")
                     return False
 
             else:
@@ -3940,10 +3940,10 @@ init -2 python:
                     text1 = "她可以一边正常的工作，一边勾引客人上床。"
 
                 elif target == "lucky":
-                    text1 = "工作或卖淫时提高判定大成功的概率 (Roll 5-6都视为大成功)"
+                    text1 = "工作或卖淫时提高判定大成功的概率 (骰出5-6都视为大成功)"
 
                 elif target == "unlucky":
-                    text1 = "工作或卖淫时提高判定大失败的概率 (Roll 1-2都视为大失败)"
+                    text1 = "工作或卖淫时提高判定大失败的概率 (骰出1-2都视为大失败)"
 
                 elif target == "temptress":
                     text1 = "能说服不情愿的顾客接受另一种性行为"
