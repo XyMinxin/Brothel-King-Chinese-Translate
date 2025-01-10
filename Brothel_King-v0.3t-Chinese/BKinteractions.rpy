@@ -1472,14 +1472,14 @@ label slave_remove_fixation(girl):
         play sound s_fizzle
 #         girl.char "..."
         $ renpy.say("", fix_description[fix.name + " neg_reaction"])
-        $ renpy.say("", event_color["a little bad"] % ("Your training didn't lead to any significant improvement."))
+        $ renpy.say("", event_color["a little bad"] % ("你的训练没有带来任何显著的提升。"))
 
     elif inter.result == "locked":
         play sound s_scream_loud
         girl.char "NO! Go away!!!"
         "[girl.name] pushes you back, curls up and starts sobbing uncontrollably. You cannot get anything more out of her."
 
-        $ renpy.say("", "Your rough training has proven too much for her. " + event_color["bad"] % ("She now hates " + fix.name + " for good."))
+        $ renpy.say("", "你激烈的训练让她有点吃不消了。" + event_color["bad"] % ("现在她一辈子都不会喜欢" + fix.name + "了。"))
 
         $ unlock_achievement("neg fixation locked")
 
@@ -1490,7 +1490,7 @@ label slave_remove_fixation(girl):
 
         if inter.result == 1:
             "[girl.name] is still very reluctant, but you could show her a thing or two."
-            $ renpy.say("",  __("Training went well. ") + event_color["good"] % (girl.name + __(" has made some progress.")))
+            $ renpy.say("",  "训练的效果很不错。" + event_color["good"] % (girl.name + __(" has made some progress.")))
         elif inter.result == 2:
             $ text1 = fix_description[fix.name + " description"]
 
@@ -1498,11 +1498,11 @@ label slave_remove_fixation(girl):
 #                 $ text1 = "to " + text1
 
             "[girl.name] is getting used to [text1] Her progress is encouraging."
-            $ renpy.say("",  __("Training went well. ") + event_color["good"] % (girl.name + __(" has made some progress.")))
+            $ renpy.say("",  "训练的效果很不错。" + event_color["good"] % (girl.name + __(" has made some progress.")))
         elif inter.result == 3:
             $ text1 = __(fix.name).capitalize()
             "[girl.name] did very well today. [text1] is beginning to feel almost normal to her."
-            $ renpy.say("",  __("Training went well. ") + event_color["good"] % (girl.name + __(" has made some progress.")))
+            $ renpy.say("",  "训练的效果很不错。" + event_color["good"] % (girl.name + __(" has made some progress.")))
 
     return
 
