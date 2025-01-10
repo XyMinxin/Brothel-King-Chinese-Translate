@@ -687,13 +687,13 @@ init -4 python:
 
     farm_ttip =         {
                         "libido" : "她会照顾农场的生物(提高性欲，消耗精力).",
-                        "sensitivity" : "她倾向于亲力亲为(提高敏感，消耗精力).",
+                        "sensitivity" : "她将侍奉吉泽尔(提高敏感，消耗精力).",
                         "obedience" : "她将清理农场(提高服从，消耗精力).",
                         "constitution" : "她会在后院锻炼(增强体质，消耗精力).",
                         "rest": "她会在她的牢房里好好休息.",
-                        "gentle": "在 {b}温和{/b} 模式下，她不会勉强她做不想做的事情。这种训练不会产生恐惧.",
+                        "gentle": "在 {b}温和{/b} 模式下，她不会勉强她做不想做的事情。这种训练不会产生恐惧，并会少许降低主角的邪恶值.",
                         "tough": "在 {b}强硬{/b} 模式中，吉泽尔将克服她的抗拒。这种训练会产生恐惧.",
-                        "hardcore": "在 {b}硬核{/b} 模式下，吉泽尔会无视底线，强迫她做任何事情。这种训练会产生巨大的恐惧.",
+                        "hardcore": "在 {b}硬核{/b} 模式下，吉泽尔会无视底线，强迫她做任何事情。这种训练会产生巨大的恐惧，并会少许增加主角的邪恶值",
                         }
 
     farm_description = {"stallion intro" : "%s 和一匹健壮的种马在马厩里度过一晚.",
@@ -938,7 +938,7 @@ init -4 python:
                     "F patricians" : ("女航海家", "女地主", "女银行家", "女官员", "女骑士", "女主教"),
                     "F aristocrats" : ("贵族女士", "淑女", "女郎", "宫廷女巫", "闺秀", "女城主", "公会夫人"),
                     "F nobles" : ("贵族小姐", "女伯爵", "名门女士", "女祭司", "男爵夫人", "女子爵", "女红衣主教"),
-                    "F royals" : ("女佣", "公主", "王妃", "公爵夫人", "女主教", "苏丹娜")
+                    "F royals" : ("女佣", "公主", "王妃", "公爵夫人", "女主教", "妃子")
                     }
 
 
@@ -1486,8 +1486,8 @@ init python:
                                         GirlInteractionTopic("train", "train", "双飞　　", "slave_train_sex_acts", act="bisexual", advanced=True),
                                         GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
-                    "{size=+8}特别训练{/size}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_train_free_form", condition = "free-form"),
-                                        GirlInteractionTopic("train", "train", "消除固定负面", "slave_remove_fixation", condition="neg_fix")],
+                    "{size=+8}特别训练{/size}" : [GirlInteractionTopic("train", "train", "自由训练", "slave_train_free_form", condition = "free-form"),
+                                        GirlInteractionTopic("train", "train", "消除负面癖好", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
                     "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的模式", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
@@ -1726,7 +1726,7 @@ init python:
                         "fingering neg_reaction" : "当你很艰难地把一根手指插进去的时候，她的阴道剧烈收缩似乎想把你的手指挤出去。眼泪从她脸上流下来: 她一点也不喜欢这样。",
 
                         "handjobs description" : "让她为我打手枪。",
-                        "handjobs action" : "手交",
+                        "handjobs action" : "撸管",
                         "handjobs intro" : "你命令%s为你来一次美好撸管体验。",
                         "handjobs pos_reaction" : "她喜欢用手在你的鸡巴上下摩擦撸动，看着你跳动着，充满吸引力的坚硬的鸡巴。",
                         "handjobs neg_reaction" : "她机械呆板，缺乏热情。她不喜欢做手交。",
@@ -1851,8 +1851,8 @@ init python:
                         "cowgirl pos_reaction" : "她喜欢在上面，爱不忍释地在你的阴茎上上下抽动着，直到你们都筋疲力尽。",
                         "cowgirl neg_reaction" : "她不喜欢在上面，在你从下面操她时保持被动。",
 
-                        "piledriver description" : "抬单腿后背位",
-                        "piledriver action" : "抬单腿后背位",
+                        "piledriver description" : "打桩机",
+                        "piledriver action" : "打桩机",
                         "piledriver intro" : "从背后把%s推倒并抬起她的腿，你把你坚硬的阴茎插入她的体内。",
                         "piledriver pos_reaction" : "当你无情地猛烈抽插她的时候，她被欲望和快乐完全淹没了。",
                         "piledriver neg_reaction" : "她对这个新体位感到困惑和烦恼，告诉你她一点也不喜欢。",
