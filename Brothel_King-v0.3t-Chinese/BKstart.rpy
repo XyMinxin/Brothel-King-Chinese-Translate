@@ -213,7 +213,7 @@ label init_game(quick=False):
 
         # CREATE MC #
 
-        MC_name = "Nero"
+        MC_name = "尼禄"
         MC = Main()
         MC.char = you
 

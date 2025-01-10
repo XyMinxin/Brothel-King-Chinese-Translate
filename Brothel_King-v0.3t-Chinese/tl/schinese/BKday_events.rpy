@@ -2836,7 +2836,7 @@ translate schinese random_night_girl_event_cbaaa1b7:
 translate schinese random_night_girl_event_a376e402:
 
     # "Before [brothel.name]'s big opening, you run a last check on the {b}onsen{/b}, making sure everything is ready for the customers."
-    "在[brothell.name]开张之前，您对{b}温泉{/b}进行最后一次检查，确保为客户准备好了一切。"
+    "在[brothel.name]开张之前，您对{b}温泉{/b}进行最后一次检查，确保做好了一切准备。"
 
 # game/BKday_events.rpy:1985
 translate schinese random_night_girl_event_10288ea8:

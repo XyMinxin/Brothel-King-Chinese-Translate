@@ -3336,7 +3336,7 @@ init -3 python:
             if condition_met:
                 menu_list.append((text1, act))
 
-        menu_list.append(("Go back", "back"))
+        menu_list.append(("返回", "back"))
 
         return menu_list
 
@@ -3366,7 +3366,7 @@ init -3 python:
 
             menu_list.append((text1, fix))
 
-        menu_list.append(("Nothing special", "no fix"))
+        menu_list.append(("没什么特别的", "no fix"))
 
         return menu_list
 

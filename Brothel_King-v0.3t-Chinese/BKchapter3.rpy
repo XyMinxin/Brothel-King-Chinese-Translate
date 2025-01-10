@@ -4205,7 +4205,7 @@ label c3_narika_dean_visit():
 
     sill "Master, you're making it worse..."
 
-    $ shizuka_name = "Dean Shizuka"
+    $ shizuka_name = "静香院长"
 
     shizuka "Your slave has more sense than you. You barge into my office and start calling out a lady about her age?"
 
@@ -4413,7 +4413,7 @@ label c3_narika_MU_class():
 
         you "I'm sorry, your face looks kind of familiar, but... Have we met?"
 
-        $ sill_name = "Familiar girl"
+        $ sill_name = "似曾相识的女孩"
 
         sill "Master! It's me!"
 
@@ -4425,7 +4425,7 @@ label c3_narika_MU_class():
 
         you "Sill! Is that you?"
 
-        $ sill_name = "Sill"
+        $ sill_name = "希露"
 
         sill "Of course it's me! Gee, Master, is my disguise really so effective?"
 

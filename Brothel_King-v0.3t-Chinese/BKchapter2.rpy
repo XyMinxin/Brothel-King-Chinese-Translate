@@ -445,7 +445,7 @@ label c2_intro():
 
     katryn "My, my, Gurigura... You're such a bumpkin. This is just like any city..."
 
-    $ gurigura_name = "Gurigura"
+    $ gurigura_name = "古莉古拉"
 
     hide gurigura
     hide katryn
@@ -459,7 +459,7 @@ label c2_intro():
 
     riche "Come on, Katryn, don't be such a killjoy... This {i}is{/i} the largest city in Xeros! Isn't it amazing? Right, Ramias?"
 
-    $ katryn_name = "Katryn"
+    $ katryn_name = "凯特琳"
 
     show ramias at right behind riche with dissolve
 
@@ -467,11 +467,11 @@ label c2_intro():
 
     riche "Ramias?"
 
-    $ ramias_name = "Ramias"
+    $ ramias_name = "拉米娅"
 
     ramias "I sense danger, Riche. These streets are not safe. There are too many places to hide..."
 
-    $ riche_name = "Riche"
+    $ riche_name = "瑞秋"
 
     hide riche
     hide ramias
@@ -1434,7 +1434,7 @@ label c2_princess_visit1:
 
     "This last piece of information sounded a little like a threat. You're not sure, but you feel like the knight is looking at you disapprovingly from under his helmet."
 
-    $ MC.rand_say(["gd: (Well, that is to be expected, he's got his orders... I'm sure me being here is not making his job any easier.)", "ne: (What a welcome. I wonder if everyone at court is so stuck up?)", "ev: (Fuck that jerk...)"])
+    $ MC.rand_say(["gd: (好吧,意料之中，他也有他的工作... 我在这肯定不会让他的工作更轻松。)", "ne: (态度真恶劣， 我想知道是不是宫里的每个人都这么傲慢？)", "ev: (不过是群狗腿子罢了...)"])
 
     knight "The Palace will now close to the visiting public for today. Let me show you the way out..."
 
@@ -1512,7 +1512,7 @@ label c2_princess_visit2:
 
     homura "Oh, of course, I apologize for not introducing myself. I am Lady Homura Henso, from the Henso family. No doubt you've heard about us. A pleasure to meet you."
 
-    $ homura_name = "Homura"
+    $ homura_name = "焰"
 
     "The young lady extends her alabaster-white hand to you in a delicate gesture. You take it and bow, unsure about the proper salute."
 
@@ -2253,7 +2253,7 @@ label c2_palace_intrusion:
 
     kuro "Commander Uesugi!!! What in Arios's name are you doing?!? The killer is getting away!"
 
-    $ kenshin_name = "Uesugi"
+    $ kenshin_name = "上杉团长"
 
     kenshin "The killer? B-B-But... I got the killer..."
 
@@ -2348,7 +2348,7 @@ label c2_palace_intrusion:
 
     "Her eyes brim with tears."
 
-    $ MC.rand_say(("gd: Fear not, Your Highness. I will protect you!", "ne: All right, all right, Your Highness. I'll help...", "ev: Worry not, Your Highness, We have a deal, remember?"))
+    $ MC.rand_say(("gd: 别害怕，殿下。我会保护你的!", "ne: 好吧，好吧，殿下。我会帮你的...", "ev: 别担心，殿下，我们说好的，记得吗？"))
 
     kuro "..."
 
@@ -2902,7 +2902,7 @@ label c2_suzume_forest1():
 
     suzume "My name is Suzume. Nice to meet you, Mister [MC.name]. "
 
-    $ suzume_name = "Suzume"
+    $ suzume_name = "云雀"
 
     suzume "Seen up close, you're cuter than I thought! So, you found my message?"
 
@@ -4244,11 +4244,11 @@ label c2_homura_okiya1():
     you "Nevertheless, the city can be dangerous at night. I'm not sure you should act so carefree..."
 
     if MC.playerclass == "Warrior":
-        $ text1 = "mighty warrior"
+        $ text1 = "强大的战士"
     elif MC.playerclass == "Wizard":
-        $ text1 = "grand wizard"
+        $ text1 = "伟大的法师"
     elif MC.playerclass == "Trader":
-        $ text1 = "charming rogue"
+        $ text1 = "迷人的商人"
 
     homura normal "Oh, but surely I will be safe here! Escorted by [MC.name], [text1], and good friend of the Princess!"
 
@@ -5512,16 +5512,16 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
         $ lock_ninja_locations(ninja)
 
         if special == "fast":
-            $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
+            $ text1 = "该死的!她太快了...她甚至躲过了必中的一击！"
             $ game.set_task("The Void Kunoichi: Gather hints from your contacts", "story3", 3)
 
         elif special == "rain":
-            $ text1 = "It's a damn storm out here! I can't see a thing!"
+            $ text1 = "外面全是该死的风暴！我什么也看不见！"
             $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", blocking=False)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
 
         elif special == "quake":
-            $ text1 = "My legs are giving out, and the district is about to crumble..."
+            $ text1 = "我站不稳了，整个地面都要塌陷了..."
             $ game.set_task("The Earth Kunoichi: Gather hints from your contacts", "story", 3)
 
         # Happens in the Rank 2 district that doesn't hold the brothel
@@ -5596,7 +5596,7 @@ label intercept_narika():
 
         narika "Who am I kidding, of course you do! After all, everyone in Xeros has heard of me: Narika Shihoudou, the Legend!"
 
-        $ narika_name = "Narika"
+        $ narika_name = "鸣香"
 
         menu:
 
@@ -6723,7 +6723,7 @@ label intercept_mizuki():
 
         mizuki "I'm Mizuki Ike. And I'm not usually in the business of giving answers."
 
-        $ mizuki_name = "Mizuki"
+        $ mizuki_name = "美月"
 
         menu:
             "Flatter her":
@@ -7510,7 +7510,7 @@ label intercept_haruka():
 
         haruka "Suzume? I've heard your name. I'm Haruka Takamori."
 
-        $ haruka_name = "Haruka"
+        $ haruka_name = "遥"
 
         haruka "You're a Kunoichi as well, aren't you?"
 

@@ -4734,7 +4734,7 @@ screen brothel_options():
                                         tooltip pop.description
                                     else:
                                         add pop.get_pic(*res_tb(40)) at desaturate
-                                        tooltip __("You must build new decoration at the Carpenter's Wagon to attract this population.")
+                                        tooltip "你必须让工匠制造更多的装饰品才能吸引这类顾客来青楼消费。"
 
                                 if brothel.get_effect("allow", pop.name):
                                     vbox spacing yres(6):
@@ -4742,7 +4742,7 @@ screen brothel_options():
                                         hbox spacing 6 xalign 0.0:
                                             bar thumb Frame("tb empty", xsize=xres(9), ysize=yres(18)) xsize xres(100) ysize yres(18) yalign 0.0 value FieldValue(pop, "weight", 5, action=Function(brothel.update_customer_count))
                                             text attract_pop_dict[pop.weight] color c_brown size res_font(14) yalign 1.0
-                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
+                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "这是%s们的{b}预算上限{/b}。 (%s用于娱乐, %s用于嫖娼)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
             vbox xsize xres(320):
                 text "{b}顾客设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
                 frame xfill True xpadding xres(10) ypadding yres(10):
@@ -4763,7 +4763,7 @@ screen brothel_options():
                                             else:
                                                 background "#CCB8A0"
                                                 text_color c_white
-                                                tooltip __("You must build new furnishing at the Carpenter's Wagon to change ") + pref + __(" preference.")
+                                                tooltip "你必须让工匠打造新的设施才能更改" + pref + "设置。"
 
                                         if brothel.get_effect("allow", pref + " preference"):
 
@@ -7463,9 +7463,9 @@ screen resource_exchange():
 
 #            text(str(t))
 
-            text __("Your resources") size res_font(14) italic True color c_brown
+            text "你的资源" size res_font(14) italic True color c_brown
 
-            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip __("Use your gold to buy resources"):
+            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "用金币购买资源":
                 selected_background c_emerald
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", *res_tb(40)) yalign 0.5
@@ -7479,7 +7479,7 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip (__("Trade your ") + misc_name_dict[r] + __(" for other resources")):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用你的" + misc_name_dict[r] + "交换其他资源"):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5
@@ -7501,7 +7501,7 @@ screen resource_exchange():
             frame xsize xres(250) xalign 1.0 ypos 0.2:
                 has vbox
 
-                text __("Market resources") size res_font(14) italic True color c_brown
+                text "交易市场" size res_font(14) italic True color c_brown
 
                 button xfill True ysize yres(60):
                     if "gold" != source:
@@ -7517,9 +7517,9 @@ screen resource_exchange():
                                 hbox spacing 6:
                                     $ rate = get_exchange_rate(source, "gold")
                                     if rate < 1:
-                                        $ text2 = __("Get 1 for ") + str_dec(1/rate, 1)
+                                        $ text2 = "兑换一个需要" + str_dec(1/rate, 1)
                                     else:
-                                        $ text2 = __("Get ") + str_dec(rate, 1) + __(" for 1")
+                                        $ text2 = str_dec(rate, 1) + "的价格卖出" #修改了源代码便于汉化
 
                                     text text2 size res_font(14)
                                     add source.pic.get(*res_tb(16))
@@ -7532,7 +7532,8 @@ screen resource_exchange():
                         button xfill True ysize yres(60):
                             if resource != source:
                                 action (SetScreenVariable("target", resource), SetScreenVariable("target_name", resource.name), SetScreenVariable("target_nb", 0), SelectedIf(resource==target))
-                                tooltip __("Trade ") + r +__(" in exchange for your ") + source_name
+                                #tooltip __("Trade ") + r +__(" in exchange for your ") + source_name 源代码，汉化换序翻译
+                                tooltip "用你的" + source_name + "交换" + r
                                 selected_background c_emerald
                             hbox xfill True yfill True spacing 10:
                                 add resource.pic.get(*res_tb(40)) yalign 0.5

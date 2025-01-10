@@ -40,7 +40,7 @@ label jobgirl_0():
 
     you "Scarlet?"
 
-    $ jobgirl_name = "Scarlet"
+    $ jobgirl_name = "斯卡莱特"
 
     jobgirl "Yeah, it's my battle name. We adventurers must defend our true identities to prevent the evil we fight from harming our beloved ones..."
 

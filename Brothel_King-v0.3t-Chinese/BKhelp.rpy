@@ -505,7 +505,7 @@ label help(scr):
                         menu_list += mod.help_prompts
 
             if menu_list:
-                $ menu_list.append(("Cancel", "back"))
+                $ menu_list.append(("取消", "back"))
 
                 $ target_label = menu(menu_list)
 
@@ -899,7 +899,7 @@ label help_girls():
 
             menu:
                 "Rename her 'Sill'" if sill_name != "Sill":
-                    $ sill_name = "Sill"
+                    $ sill_name = "希露"
 
                     you "Go back to Sill."
 
@@ -910,20 +910,20 @@ label help_girls():
                     jump help_girls
 
                 "Rename her 'Rose'":
-                    $ new_name = "Rose"
+                    $ new_name = "萝丝"
 
                 "Rename her 'Lolita'":
-                    $ new_name = "Lolita"
+                    $ new_name = "小萝莉"
 
                 "Rename her 'Pinky'":
-                    $ new_name = "Pinky"
+                    $ new_name = "粉毛"
 
 
                 "Rename her 'Peggy'":
-                    $ new_name = "Peggy"
+                    $ new_name = "佩吉"
 
                 "Rename her 'Bitch'":
-                    $ new_name = "Bitch"
+                    $ new_name = "婊子"
 
                 "Don't rename her":
                     jump help_girls
@@ -2907,7 +2907,7 @@ label test_perks:
             for perk in l:
                 menu_list.append((perk.archetype + " - " + perk.name + "(" + str(choice_dict[perk]) + ")", perk))
 
-            menu_list.append(("COMMIT", "commit"))
+            menu_list.append(("提交", "commit"))
 
             result = long_menu("Choose perks to test", menu_list)
 
