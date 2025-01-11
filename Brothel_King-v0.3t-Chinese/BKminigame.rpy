@@ -235,16 +235,16 @@ label ninja_game(ninja): # Where ninja is an NPC object
         call run_ninja_game(njgame) from _call_run_ninja_game
 
     if njgame.special:
-        $ centered(event_color["bad"] % "\n\n{b}INTERCEPT FAILED...{/b}")
+        $ centered(event_color["bad"] % "\n\n{b}拦截失败...{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept
     elif _return == "guest":
-        $ centered(event_color["good"] % "\n\n{b}SPECIAL ENCOUNTER!{/b}")
+        $ centered(event_color["good"] % "\n\n{b}特殊事件!{/b}")
         call expression ("ninja_" + njgame.guest) from _call_expression_7
     elif _return == "ninja":
-        $ centered(event_color["good"] % "\n\n{b}INTERCEPT!{/b}")
+        $ centered(event_color["good"] % "\n\n{b}拦截成功!{/b}")
         call ninja_intercept(ninja, njgame.special) from _call_ninja_intercept_1
     else:
-        $ centered(event_color["bad"] % "\n\n{b}SHE GOT AWAY!{/b}")
+        $ centered(event_color["bad"] % "\n\n{b}她逃走了!{/b}")
 
     hide screen score
 

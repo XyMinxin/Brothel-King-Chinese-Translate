@@ -427,13 +427,13 @@ label receive_item(it, msg="你获得了 %s。", use_article=True, equip=False, 
     return
 
 
-label remove_item(it, msg="%s has been removed from your inventory.", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
+label remove_item(it, msg="%s已从你的物品栏中移除。", use_article=True, equip=False, use_sound=True, definite_article=False): # If 'msg' is provided, it must include '%s' once for the item name to be inserted
 
     if not isinstance(it, ItemInstance):
-        $ renpy.say(bk_error, "Warning: This item cannot be removed, it is not instantiated (%s)." % it.name)
+        $ renpy.say(bk_error, "警告：无法移除此道具，它没有说明标签(%s)。" % it.name)
 
     if it not in MC.items:
-        $ notify("%s wasn't found in MC's inventory and couldn't be removed.", col=c_red)
+        $ notify("%s不是主角的特殊道具，无法被移除。", col=c_red)
 
     $ MC.remove_item(it, use_sound=use_sound)
 
@@ -867,7 +867,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ NPC_narika.flags["locked"] = True
             $ NPC_narika.flags["hunt stage"] = 2
             $ NPC_narika.love = 5
-            $ game.set_task("虚空忍者: 向认识的人打听消息收集情报", "story3", 3)
+            $ game.set_task("虚空忍者: 向熟人打听消息", "story3", 3)
 
             # Mizuki story
             $ mizuki_name = "美月"
@@ -882,7 +882,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ NPC_haruka.flags["locked"] = True
             $ NPC_haruka.flags["hunt stage"] = 2
             $ NPC_haruka.love = 5
-            $ game.set_task("大地忍者: 向认识的人打听消息收集情报", "story", 3)
+            $ game.set_task("大地忍者: 向熟人打听消息", "story", 3)
 
             # Others
             $ story_flags["no kosmo"] = True
@@ -3505,7 +3505,7 @@ label vital_scanners_built():
 
     "You can now use the {b}autorest{/b} option from the {b}schedule screen{/b}."
 
-    $ vitals_scanner.description += " Allows autorest to be set up from the Schedule screen."
+    $ vitals_scanner.description += " 现在可以在排班表界面设置自动休息功能了。"
 
     return
 

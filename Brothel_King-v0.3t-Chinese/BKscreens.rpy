@@ -3727,21 +3727,21 @@ screen suzume_hints(contact_list):
                         action Return(npc)
                     add img xalign 0.5 yalign 0.5 fit "contain"
                     if npc == NPC_suzume:
-                        tooltip "Talk to {b}Suzume{/b} for general tips, or once you have unlocked all 3 tips for a given Kunoichi."
+                        tooltip "与{b}云雀{/b}讨论模糊的线索，或者告诉她你收集到的关于某个忍者的全部3条线索。"
                     else:
-                        tooltip "Ask Suzume to track {b}%s{/b}, for information on the Kunoichi. {b}Costs 1 {/b}{image=img_AP}." % ttip
+                        tooltip "让云雀在{b}%s{/b}调查，以此来获得女忍者的线索。{b}消耗1{/b}{image=img_AP}。" % ttip
 
             textbutton "返回" text_bold True xalign 0.5 yalign 0.5 xsize xres(120) ysize yres(120) xpadding 6 ypadding 6 action Return(False) # Note that 'None' is not a valid return value
 
 
         hbox spacing 50 xalign 0.5:
-            text "Hints collected:" yalign 0.5 bold True
+            text "收集到的线索:" yalign 0.5 bold True
 
             for ninja in (NPC_narika, NPC_mizuki, NPC_haruka):
                 if ninja.flags["hints"] >=3:
-                    $ ttip = "You may now {b}talk to Suzume{/b} to devise a cunning action plan and finally catch her."
+                    $ ttip = "你现在可以和{b}云雀{/b}交谈，策划一个绝妙的抓捕计划，抓住这些忍者。"
                 else:
-                    $ ttip = "You need to {b}gather 3 hints{/b} before you can attempt to catch her again."
+                    $ ttip = "在你再次尝试抓住她之前，你需要{b}收集3个线索{/b}。"
 
                 button background None xsize xres(160) ysize yres(80) xpadding 6 ypadding 6:
                     action NullAction()
@@ -8405,12 +8405,12 @@ screen contract_tab(contract, x=320, active=False):
                             text req size res_font(13) color c_brown
 
             vbox spacing 3:
-                text __("Bonus requirement") size res_font(16) bold True color c_prune
+                text "额外需求" size res_font(16) bold True color c_prune
                 text contract.get_special_description() size res_font(13) color c_brown
 
             hbox:
-                text __("Reward: ") size res_font(16) bold True color c_prune
-                text "%s gold" % str(contract.get_value()) size res_font(16) bold True color c_darkgold
+                text "封顶报酬: " size res_font(16) bold True color c_prune
+                text "%s金币" % str(contract.get_value()) size res_font(16) bold True color c_darkgold
 
 
 screen pick_girl(girls, nb, contract=None):
@@ -8455,17 +8455,17 @@ screen contract_result(contract, x=450):
                             text req size res_font(13) color c_brown xpos 0.02
                     if t >= contract.tasks.index(tsk) + 1:
                         if tsk.result:
-                            text str_int(tsk.value) + __(" gold") color c_darkgold yalign 0.5 size res_font(13) at contract_result_transform
+                            text str_int(tsk.value) + "金币" color c_darkgold yalign 0.5 size res_font(13) at contract_result_transform
                         else:
-                            text __("{color=[c_red]}{i}Failed{/i}{/color}") yalign 0.5 size res_font(13) at contract_result_transform
+                            text "{color=[c_red]}{i}失败{/i}{/color}" yalign 0.5 size res_font(13) at contract_result_transform
 
         hbox:
             vbox xsize xres(320) spacing 3:
-                text __("Bonus requirement") size res_font(16) bold True color c_prune
+                text "额外需求" size res_font(16) bold True color c_prune
                 text contract.get_special_description() size res_font(13) color c_brown
             if t >= len(contract.tasks) + 1:
                 if contract.special_bonus != 1.0:
-                    text str(contract.get_special_value()) + __(" gold") color c_darkgold yalign 0.5 size res_font(13) at contract_result_transform
+                    text str(contract.get_special_value()) + "金币" color c_darkgold yalign 0.5 size res_font(13) at contract_result_transform
                 else:
                     text __("{i}Missing{/i}") color c_lightred yalign 0.5 size res_font(13) at contract_result_transform
 
@@ -8480,9 +8480,9 @@ screen contract_result(contract, x=450):
                     text "{image=img_star}" at contract_result_transform
 
         hbox:
-            text __("Reward: ") size res_font(16) bold True color c_prune
+            text "报酬: " size res_font(16) bold True color c_prune
 
-            text __("%s gold") % min(displayed_gold, earned_gold) size res_font(16) bold True:
+            text "%s金币" % min(displayed_gold, earned_gold) size res_font(16) bold True:
                 if earned_gold > 0:
                     color c_darkgold
                 else:

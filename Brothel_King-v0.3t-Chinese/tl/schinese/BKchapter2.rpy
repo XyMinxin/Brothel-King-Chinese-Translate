@@ -16144,13 +16144,13 @@ translate schinese intercept_haruka_d293d372:
 translate schinese intercept_haruka_b169e250:
 
     # "When the earthquake recedes, you and Suzume look for her everywhere, but you cannot find her trace."
-    "地震停下后,你和云雀到处寻找她,但找不到她的踪迹。"
+    "余震消散后,你和云雀到处寻找她,但怎么也找不到她的踪迹。"
 
 # game/BKchapter2.rpy:7988
 translate schinese intercept_haruka_19c28420:
 
     # suzume "She escaped one more time... But she'll be back."
-    suzume "她又逃了...但她会回来的。"
+    suzume "她又逃了...但她还会回来的。"
 
 # game/BKchapter2.rpy:7990
 translate schinese intercept_haruka_5876cb12:
@@ -16162,79 +16162,79 @@ translate schinese intercept_haruka_5876cb12:
 translate schinese intercept_haruka_b742283d:
 
     # haruka defiant "What... How..."
-    haruka defiant "What... How..."
+    haruka defiant "什么... 怎么会..."
 
 # game/BKchapter2.rpy:8150
 translate schinese intercept_haruka_2402841b:
 
     # you "It's over, Haruka! You can't fight us!"
-    you "It's over, Haruka! You can't fight us!"
+    you "到此为止了，遥!你无法战胜我们!"
 
 # game/BKchapter2.rpy:8152
 translate schinese intercept_haruka_3eb7e03c:
 
     # suzume shrewd "Surrender, don't make us hurt you."
-    suzume shrewd "Surrender, don't make us hurt you."
+    suzume shrewd "投降吧，别逼我们动手。"
 
 # game/BKchapter2.rpy:8154
 translate schinese intercept_haruka_24bc4f0d:
 
     # haruka "KKKKH..."
-    haruka "KKKKH..."
+    haruka "可恶..."
 
 # game/BKchapter2.rpy:8156
 translate schinese intercept_haruka_680832ef:
 
     # haruka angry "I'll get you! I'll... For Subaru!!!" with vpunch
-    haruka angry "I'll get you! I'll... For Subaru!!!" with vpunch
+    haruka angry "我要杀了你! 我会... 为了斯巴鲁!!!" with vpunch
 
 # game/BKchapter2.rpy:8160
 translate schinese intercept_haruka_1030105f:
 
     # "In a last desperate dash, Haruka charges at you, but her move is slow and clumsy."
-    "In a last desperate dash, Haruka charges at you, but her move is slow and clumsy."
+    "在最后一次绝望的冲刺中，遥向你冲来，但她的动作缓慢而笨拙。"
 
 # game/BKchapter2.rpy:8164
 translate schinese intercept_haruka_80420b0e:
 
     # haruka blush "OW!!!" with vpunch
-    haruka blush "OW!!!" with vpunch
+    haruka blush "啊!!!" with vpunch
 
 # game/BKchapter2.rpy:8170
 translate schinese intercept_haruka_da52122c:
 
     # "You hit Haruka with the hammer as she runs and it connects with her stomach, knocking the wind out of her. She collapses at your feet, unable to stand anymore."
-    "You hit Haruka with the hammer as she runs and it connects with her stomach, knocking the wind out of her. She collapses at your feet, unable to stand anymore."
+    "你在在遥冲过来的同时挥动锤子，猛击她的腹部，把她打得喘不过气。她瘫倒在你脚下，再也站不住了。"
 
 # game/BKchapter2.rpy:8172
 translate schinese intercept_haruka_814ceede:
 
     # suzume normal "Great job, boss! We finally bagged this one!"
-    suzume normal "Great job, boss! We finally bagged this one!"
+    suzume normal "干得好，老大！我们终于搞定了这个家伙!"
 
 # game/BKchapter2.rpy:8177
 translate schinese haruka_defeat_menu_0dfb1573:
 
     # suzume "What do we do with her now?" nointeract
-    suzume "What do we do with her now?" nointeract
+    suzume "现在我们怎么处理她？" nointeract
 
 # game/BKchapter2.rpy:8181
 translate schinese haruka_defeat_menu_10c5ef12:
 
     # you "Best turn her in to the Princess before she causes any more trouble. We can't have a loose canon like her running around the city."
-    you "Best turn her in to the Princess before she causes any more trouble. We can't have a loose canon like her running around the city."
+    you "最好在她制造更多麻烦之前把她交给公主。我们不能让像她这样的人在城里到处乱跑。"
 
 # game/BKchapter2.rpy:8183
 translate schinese haruka_defeat_menu_d290c5d5:
 
     # suzume doubt "I guess the Princess can have experienced mages and knights lock her away, or expell her from the city."
-    suzume doubt "I guess the Princess can have experienced mages and knights lock her away, or expell her from the city."
+    suzume doubt "我猜公主可能会让经验丰富的法师和骑士把她关押起来，或者把她驱逐出城市。"
 
 # game/BKchapter2.rpy:8185
 translate schinese haruka_defeat_menu_2b16af9e:
 
     # suzume "Either way, we won't hear any more from her."
-    suzume "Either way, we won't hear any more from her."
+    suzume "反正不管怎样，我们都不会再听到她的消息了。"
 
 # game/BKchapter2.rpy:8188
 translate schinese haruka_defeat_menu_11fdb519:
@@ -16246,55 +16246,55 @@ translate schinese haruka_defeat_menu_11fdb519:
 translate schinese haruka_defeat_menu_4f9a2f1a:
 
     # you "And that's just how I want it. I've had enough of this cat and mouse game. Take that rune, and bring her in."
-    you "And that's just how I want it. I've had enough of this cat and mouse game. Take that rune, and bring her in."
+    you "这正是我想要的。我受够了这种猫捉老鼠的游戏。拿好符文，把她带进来。"
 
 # game/BKchapter2.rpy:8199
 translate schinese haruka_defeat_menu_a46f75a2:
 
     # suzume normal "Sure thing, boss."
-    suzume normal "Sure thing, boss."
+    suzume normal "遵命，老大。"
 
 # game/BKchapter2.rpy:8203
 translate schinese haruka_defeat_menu_0d880083:
 
     # "Wait for Suzume to report on how it went."
-    "Wait for Suzume to report on how it went."
+    "等待云雀向你汇报结果。"
 
 # game/BKchapter2.rpy:8210
 translate schinese haruka_defeat_menu_38fe1661:
 
     # you "Wait, perhaps there's another course of action we can take."
-    you "Wait, perhaps there's another course of action we can take."
+    you "等等，也许我们还有别的选择。"
 
 # game/BKchapter2.rpy:8216
 translate schinese haruka_defeat_menu_375442f8:
 
     # you "She ain't much of a fighter, but maybe she can be a good whore. Check out this rack..."
-    you "She ain't much of a fighter, but maybe she can be a good whore. Check out this rack..."
+    you "她不擅长战斗，但也许她会是个好妓女。看看她的身材..."
 
 # game/BKchapter2.rpy:8218
 translate schinese haruka_defeat_menu_1e1cd123:
 
     # suzume shrewd "Before you say anything about our relative sizes, let me remind you that I am a trained killer..."
-    suzume shrewd "Before you say anything about our relative sizes, let me remind you that I am a trained killer..."
+    suzume shrewd "在你谈论我们的相对大小之前，我得提醒你，我是一个训练有素的杀手..."
 
 # game/BKchapter2.rpy:8222
 translate schinese haruka_defeat_menu_38f82d73:
 
     # suzume doubt "But anyway, we don't have any cell where we could hold her. She wields powerful air magic, remember?"
-    suzume doubt "But anyway, we don't have any cell where we could hold her. She wields powerful air magic, remember?"
+    suzume doubt "但不管怎样，我们没有可以关押她的牢房。她掌握着强大的风魔法，记得吗？"
 
 # game/BKchapter2.rpy:8224
 translate schinese haruka_defeat_menu_88876e1e:
 
     # suzume "Maybe that creepy granpa could help?"
-    suzume "Maybe that creepy granpa could help?"
+    suzume "也许那个老爹会有办法？"
 
 # game/BKchapter2.rpy:8228
 translate schinese haruka_defeat_menu_b167f8fb:
 
     # suzume doubt "Look, once we lock her in, she will be mad as hell. You will have to break her completely if you want her to comply."
-    suzume doubt "Look, once we lock her in, she will be mad as hell. You will have to break her completely if you want her to comply."
+    suzume doubt "听着，如果我们把她囚禁起来，她会气疯的。如果你想让她听话，你就得彻底说服她。"
 
 # game/BKchapter2.rpy:8231
 translate schinese haruka_defeat_menu_11fdb519_1:
@@ -16306,67 +16306,67 @@ translate schinese haruka_defeat_menu_11fdb519_1:
 translate schinese haruka_defeat_menu_858de28d:
 
     # you "Well, I want her in my brothel, so I'll do what needs to be done. With Gizel's help, I have no doubt I can manage."
-    you "Well, I want her in my brothel, so I'll do what needs to be done. With Gizel's help, I have no doubt I can manage."
+    you "我想让她来我的青楼工作，所以我会做该做的事。有吉泽尔的帮助，我相信我能行。"
 
 # game/BKchapter2.rpy:8241
 translate schinese haruka_defeat_menu_a62acc9e:
 
     # suzume normal "Well, I think if you succeed, she'll make a nice addition to your brothel!"
-    suzume normal "Well, I think if you succeed, she'll make a nice addition to your brothel!"
+    suzume normal "好吧，如果你成功了，她会为你的青楼增色不少!"
 
 # game/BKchapter2.rpy:8243
 translate schinese haruka_defeat_menu_6e5288eb:
 
     # suzume shrewd "(And if you fail, I'll make myself scarce while she's busy murdering you...)"
-    suzume shrewd "(And if you fail, I'll make myself scarce while she's busy murdering you...)"
+    suzume shrewd "(如果你失败了，我就在她忙着追杀你的时候躲起来...)"
 
 # game/BKchapter2.rpy:8245
 translate schinese haruka_defeat_menu_d825505d:
 
     # you "What was that?"
-    you "What was that?"
+    you "你刚刚说了什么？"
 
 # game/BKchapter2.rpy:8247
 translate schinese haruka_defeat_menu_0cb8509d:
 
     # suzume normal "Nothing, nothing! Come on, let's bring the girl home."
-    suzume normal "Nothing, nothing! Come on, let's bring the girl home."
+    suzume normal "没什么，没什么!来吧，让我们把小姑娘带回家去。"
 
 # game/BKchapter2.rpy:8251
 translate schinese haruka_defeat_menu_9ab08fd7:
 
     # "Wait until tonight to deal with Haruka at your brothel."
-    "Wait until tonight to deal with Haruka at your brothel."
+    "等到夜里再回青楼处理遥的事情吧。"
 
 # game/BKchapter2.rpy:8259
 translate schinese haruka_defeat_menu_38fe1661_1:
 
     # you "Wait, perhaps there's another course of action we can take."
-    you "Wait, perhaps there's another course of action we can take."
+    you "等等，也许我们还有别的选择。"
 
 # game/BKchapter2.rpy:8264
 translate schinese haruka_defeat_menu_554d3a16:
 
     # you "I'm not sure. I think I need more time before I decide. Let her go."
-    you "I'm not sure. I think I need more time before I decide. Let her go."
+    you "我不确定。我想我需要更多的时间才能做出决定。让她走吧。"
 
 # game/BKchapter2.rpy:8266
 translate schinese haruka_defeat_menu_0105348c:
 
     # suzume doubt "But boss! After all we went through to capture her?"
-    suzume doubt "But boss! After all we went through to capture her?"
+    suzume doubt "但是老大!我们明明费了那么大劲才抓到她？"
 
 # game/BKchapter2.rpy:8268
 translate schinese haruka_defeat_menu_54513643:
 
     # you "Yes. We've beaten her before, we can do it again if need be."
-    you "Yes. We've beaten her before, we can do it again if need be."
+    you "是的。她已经是我们的手下败将了，如果需要，我们可以再打败她一次。"
 
 # game/BKchapter2.rpy:8270
 translate schinese haruka_defeat_menu_39629838:
 
     # suzume "Hmmm... Okay."
-    suzume "Hmmm... Okay."
+    suzume "Hmmm... 好吧。"
 
 # game/BKchapter2.rpy:8011
 translate schinese c2_palace_visit1_769f4fb2:
@@ -19216,7 +19216,7 @@ translate schinese luncheon2_kenshin_menu_8c6e74af:
 translate schinese luncheon2_kenshin_menu_ee56fe69:
 
     # kenshin "That bastard broke her heart. Sorrow got the best of her, and she died before she even turned forty."
-    kenshin "That bastard broke her heart. Sorrow got the best of her, and she died before she even turned forty."
+    kenshin "那个混蛋伤透了她的心。她万念俱灰，不到四十岁就去世了。"
 
 # game/BKchapter2.rpy:9283
 translate schinese luncheon2_kenshin_menu_6baf07d1:
