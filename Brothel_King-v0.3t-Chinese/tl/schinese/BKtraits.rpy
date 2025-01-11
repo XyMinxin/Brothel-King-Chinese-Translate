@@ -84,7 +84,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Caster"
-    new "高深莫测"
+    new "魔法巫女"
 
     # game/BKtraits.rpy:87
     old "Driven"
@@ -92,7 +92,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Country girl"
-    new "涉世未深"
+    new "乡野村姑"
 
     # game/BKtraits.rpy:87
     old "Noble"
@@ -100,7 +100,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Naturist"
-    new "真空上阵"
+    new "裸体主义"
 
     # game/BKtraits.rpy:87
     old "She has no shame showing her naked body to perfect strangers."
@@ -532,7 +532,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:265
     old "Housebroken"
-    new "不明不白"
+    new "沦落风尘"
 
     # game/BKtraits.rpy:265
     old "She lost her virginity in a brothel. This is all she knows."
@@ -556,7 +556,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:271
     old "Farmgirl"
-    new "忍辱负重"
+    new "农场之女"
 
     # game/BKtraits.rpy:271
     old "She has lost her virginity in the farm like a filthy animal."
@@ -564,9 +564,9 @@ translate schinese strings:
 
     # game/BKtraits.rpy:273
     old "Mark of Chaos"
-    new "混沌联结"
+    new "混沌之印"
 
     # game/BKtraits.rpy:273
     old "She lost her virginity in a strange feverish dream, yet emerged with reinforced sanity."
-    new "她在一个奇怪的发烧的梦中失去了童贞，但醒来后却变得更加清醒。"
+    new "她在一场疯狂的梦境中失去了童贞，但醒来后却变得更加清醒。"
 

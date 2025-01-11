@@ -209,11 +209,11 @@ init -2 python:
             for mod in list(self.active_mods.values()):
 
                 if mod.name not in detected_mods.keys():
-                    if renpy.call_screen("yes_no", mod.full_name + " couldn't be found. Would you like to deactivate this mod for this game (recommended)?"):
+                    if renpy.call_screen("yes_no", mod.full_name + "文件无法识别，你想停用这个mod吗 (推荐)?"):
                         self.deactivate_mod(mod)
 
                 elif mod.check_for_updates():
-                    renpy.say("Mod Update", "A different version of mod: %s has been found (%s)." % (mod.name, str(mod.version)))
+                    renpy.say("Mod更新", "MOD: %s有新的版本可用 (%s)。" % (mod.name, str(mod.version)))
 
                     if not hasattr(mod, "update_label"): # Fix for older games
                         mod.update_label = ""
@@ -221,7 +221,7 @@ init -2 python:
                     if mod.update_label:
                         update_list.append(mod.update_label) # Cannot call directly or would break the python block
 
-                    elif renpy.call_screen("yes_no", "Would you like to reset this mod for this game (recommended)?"):
+                    elif renpy.call_screen("yes_no", "你想重置这个Mod吗 (推荐)?"):
                         self.deactivate_mod(mod)
                         self.activate_mod(detected_mods[mod.name])
 
@@ -1785,7 +1785,7 @@ init -2 python:
             for effect in self.effects:
                 self.effect_dict[effect.type, effect.target].append(effect)
             self.weight = weight
-            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b} (difficulty: " + self.get_difficulty() + "): " + get_description(base_description, effects)
+            self.description = "{b}" + misc_name_dict[self.name.capitalize()] + "{/b}服务难度:" + self.get_difficulty() + "):" + get_description(base_description, effects)
 
         def get_rand_name(self, gender="M"):
             return rand_choice(pop_name_dict[gender + " " + self.name])
@@ -2717,7 +2717,7 @@ init -2 python:
 
             price = self.get_room_upgrade_price(self.bedrooms)
 
-            text1 = "Do you really want to upgrade the bedrooms for " + str(price) + " gold?"
+            text1 = "你确定要花" + str(price) + "金币升级房间吗？"
 
             if self.bedroom_type.level < self.maxupgrade:
 
@@ -2737,10 +2737,10 @@ init -2 python:
                         renpy.restart_interaction()
 
                     else:
-                        renpy.say(narrator, "You don't have enough money.")
+                        renpy.say(narrator, "你没有足够多的金币。")
 
             else:
-                renpy.say(sill, "You cannot upgrade this brothel's rooms further.")
+                renpy.say(sill, "你无法继续升级青楼的房间了。")
 
         def get_mood_modifier(self, rank): #Increases with bedroom type: Girls score higher with customers and their mood improves
 
@@ -2779,7 +2779,7 @@ init -2 python:
 
                 price = self.get_room_price()
 
-                text1 = __("Do you want to buy a new bedroom for ") + str(price) + " gold?"
+                text1 = "你想花" + str(price) + "金币扩建一间卧室吗？"
 
                 if self.bedrooms < self.get_maxbedrooms():
 
@@ -2801,10 +2801,10 @@ init -2 python:
                             return True
 
                         else:
-                            renpy.say(narrator, "You don't have enough money.")
+                            renpy.say(narrator, "你没有足够多的金币。")
                             return False
                 else:
-                    renpy.say(sill, "You already have the maximum number of bedrooms for this brothel.")
+                    renpy.say(sill, "你的青楼已经没有更多的空间扩建卧室了。")
                     return False
 
             else:
@@ -3940,19 +3940,19 @@ init -2 python:
                     text1 = "她可以一边正常的工作，一边勾引客人上床。"
 
                 elif target == "lucky":
-                    text1 = "工作或卖淫时提高判定大成功的概率 (效果无法叠加)"
+                    text1 = "工作或卖淫时提高判定大成功的概率 (骰出5-6都视为大成功)"
 
                 elif target == "unlucky":
-                    text1 = "工作或卖淫时提高判定大失败的概率"
+                    text1 = "工作或卖淫时提高判定大失败的概率 (骰出1-2都视为大失败)"
 
                 elif target == "temptress":
                     text1 = "能说服不情愿的顾客接受另一种性行为"
 
                 elif target == "pickpocket":
-                    text1 = "有机会从顾客那里偷取额外10%的小费，如果被抓住会降低声望"
+                    text1 = "有25%机会从顾客那里偷取额外10%的小费，但有15%的概率降低自身和青楼的声望"
 
                 elif target == "random item":
-                    text1 = "顾客小概率“遗漏”随机物品"
+                    text1 = "顾客有2.5%的概率“遗漏”随机物品"
 
                 elif target == "BBCR bonus":
                     text1 = "如果她的外貌、身材、魅力或优雅等级足够高，可能会提高客户的满意度"
@@ -3961,10 +3961,10 @@ init -2 python:
                     text1 = "如果她的性欲，服从，体质或敏感等级足够高，可能会提高客户的满意度"
 
                 elif target == "whore mood modifier":
-                    text1 = "卖淫时她的情绪会升高"
+                    text1 = "卖淫时，情绪+1"
 
                 elif target == "job prestige":
-                    text1 = "可以在普通工作中获得声望"
+                    text1 = "普通工作也能让主角获得声望"
 
                 elif target == "skill catch up":
                     text1 += "每天晚上，她会帮助其他属性比她低的女孩获得永久的属性提升 (每升一阶多帮助一人)"
@@ -3973,19 +3973,19 @@ init -2 python:
                     text1 += "使天赋生效的基础几率加倍 (最多50%)"
 
                 elif target == "defender":
-                    text1 += "即使你没有行动力了你也可以保护她们"
+                    text1 += "即使你没有行动力了你也可以保护青楼（把力量属性计入青楼安全）"
 
                 elif target == "snake eyes":
                     text1 += "催眠永远不会失败"
 
                 elif target == "safe":
-                    text1 += "青楼的发生紧急事件时至少保留 " + str(val) + " 金币。"
+                    text1 += "使 " + str(val) + " 金币不被计入青楼的威胁值。"
 
                 elif target == "focus":
-                    text1 += "如果女孩专精于一种性行为，+25%小费和声望收益 (不包括双飞和群交行为)"
+                    text1 += "如果女孩在营业时专精于一种性行为，+25%小费和声望收益 (不包括双飞和群交行为)"
 
                 elif target == "rest shield":
-                    text1 += "休息时，她可以对自己或朋友施放一层魔法护盾，保护其免受攻击"
+                    text1 += "她在休息时，可以对自己或她的朋友施放一层魔法护盾，保护其免受攻击"
 
                 elif target == "ignore budgets":
                     text1 += "顾客将会超出预算透支消费"
@@ -4031,11 +4031,11 @@ init -2 python:
                 return text1
 
             if 0.75 <= self.chance < 1.0:
-                text2 = "极高概率" + text2
+                text2 = "高概率(>75%)" + text2
             elif 0.25 < self.chance < 0.75:
-                text2 = "高概率" + text2
+                text2 = "有概率(>25%)" + text2
             elif self.chance <= 0.25:
-                text2 = "小概率" + text2
+                text2 = "小概率(<25%)" + text2
 
 
             if self.type == "reroll":
@@ -4196,8 +4196,8 @@ init -2 python:
             target = "侍奉结果评价" if target == "service results" else target
             target = "调教结果评价" if target == "fetish results" else target
 
-            target = "处女时获得的小费" if target == "virgin rep" else target
-            target = "处女时获得的人气" if target == "virgin tip" else target
+            target = "处女时获得的人气" if target == "virgin rep" else target
+            target = "处女时获得的小费" if target == "virgin tip" else target
             target = "每天第一位客人的满意度" if target == "first customer satisfaction" else target
             target = "完美结果时获得的小费" if target == "perfect result tip" else target
             target = "完美结果时获得的经验" if target == "perfect result xp" else target
@@ -4238,7 +4238,7 @@ init -2 python:
             target = "属性点" if target == "skill points" else target
             target = "玩家声望" if target == "prestige" else target
             target = "天赋点" if target == "perk" else target
-            target = "结交新朋友" if target == "making friends" else target
+            target = "结交新朋友修正" if target == "making friends" else target
             target = "来自友谊而获得的心情收益" if target == "mood gains from friendship" else target
             target = "所有性行为偏好" if target == "all sexual preferences" else target
             target = "所有性行为技能" if target == "all sex skills" else target
@@ -4782,7 +4782,7 @@ init -2 python:
                 elif self.level == 1:
                     desc = "只能容纳{b}一个女孩{/b}。 女孩们每天晚上都可以在你的房间里接受免费的{b}私人指导{/b}。"
                 else:
-                    desc = "你的房间没有足够的空间让女孩挤进来。"
+                    desc = "你的房间太小了，无法让女孩在房间里接受私人指导。"
 
                 if self.level < brothel.rank:
                     desc += "花费{b}" + str(master_bedrooms[self.level+1].cost) + "金币{/b}扩建你的卧室。"
@@ -7095,9 +7095,9 @@ init -2 python:
             if effects == None: effects = []
             self.effects = effects
             if hidden_effect:
-                self.description = "{b}" + self.name + "{/b}" + ": " + base_description
+                self.description = "{b}" + tl_cn(self.name,furniture_name_dict) + "{/b}" + ": " + base_description
             else:
-                self.description = "{b}" + self.name + "{/b}" + ": " + get_description(base_description, effects)
+                self.description = "{b}" + tl_cn(self.name,furniture_name_dict) + "{/b}" + ": " + get_description(base_description, effects)
             self.upgrade = upgrade
             self.built = False
             self.can_deactivate = can_deactivate

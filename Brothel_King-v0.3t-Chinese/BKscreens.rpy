@@ -3263,9 +3263,9 @@ screen perks(girl):
                                     $ title = selected_perk.name
                                     $ pic = selected_perk.get_pic()
                                     if selected_perk.min_rank:
-                                        $ text1 = "Rank " + rank_name[selected_perk.min_rank] + " perk"
+                                        $ text1 = "Rank " + rank_name[selected_perk.min_rank] + "天赋"
                                     else:
-                                        $ text1 = "Rank C perk"
+                                        $ text1 = "C阶天赋"
                                     $ text2 = selected_perk.get_description()
 
                                 else:
@@ -4216,11 +4216,10 @@ screen brothel():
             $ text1 = "青楼改造" + "{size=%i}" % -res_font(4) #意译，直译为木匠的马车
 
             if brothel.current_building:
-                if len(brothel.current_building.name) > 15:
-                    $ text1 += "\n(" + __(brothel.current_building.name[:15]) + "。"
-                else:
-                    $ text1 += "\n(" + __(brothel.current_building.name) + " "
-
+               # if len(brothel.current_building.name) > 15:
+               #     $ text1 += "\n(" + __(brothel.current_building.name[:15]) + "。"
+               # else:
+                $ text1 += "\n(" + __(brothel.current_building.name) + " "
                 $ max_dur = float(brothel.current_building.duration)
                 $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
@@ -4295,9 +4294,9 @@ screen brothel():
                                         add MC.current_trainer.portrait zoom 1.0 xalign 0.5 yalign 0.5
 
                                     if len(MC.trainers) == 1:
-                                        $ text1 = "No other trainer available"
+                                        $ text1 = "你还没有解锁其他的协助者。"
                                     else:
-                                        $ text1 = "Trainers help your girls learning new skills. Discover new trainers by meeting the people of Zan!"
+                                        $ text1 = "协助者可以为你的女孩和青楼提供多种增益。多和泽恩的NPC互动，解锁新的协助者！"
 
                                     button xmargin 0 xpadding 0 xsize xres(156) background None action NullAction() hovered tt.Action(text1):
 
@@ -4626,9 +4625,9 @@ screen furniture():
             add "side carpenter" zoom 0.8 yalign 0.5
 
             if not brothel.current_building:
-                $ text1 = __("Oh, hi. Got a new job for me?")
+                $ text1 = "哦，嗨！有什么工作安排给我吗？"
             else:
-                $ text1 = __("I'm still working on that ") + __(brothel.current_building.name) + __(". You should come back later.")
+                $ text1 = "我正忙着弄" + __(brothel.current_building.name) + "呢。等我弄好了再来找我吧！"
 
             text text1 xsize 0.4 yalign 0.5 size res_font(18) justify True italic True
 
@@ -4735,7 +4734,7 @@ screen brothel_options():
                                         tooltip pop.description
                                     else:
                                         add pop.get_pic(*res_tb(40)) at desaturate
-                                        tooltip __("You must build new decoration at the Carpenter's Wagon to attract this population.")
+                                        tooltip "你必须让工匠制造更多的装饰品才能吸引这类顾客来青楼消费。"
 
                                 if brothel.get_effect("allow", pop.name):
                                     vbox spacing yres(6):
@@ -4743,7 +4742,7 @@ screen brothel_options():
                                         hbox spacing 6 xalign 0.0:
                                             bar thumb Frame("tb empty", xsize=xres(9), ysize=yres(18)) xsize xres(100) ysize yres(18) yalign 0.0 value FieldValue(pop, "weight", 5, action=Function(brothel.update_customer_count))
                                             text attract_pop_dict[pop.weight] color c_brown size res_font(14) yalign 1.0
-                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
+                                        textbutton "平均预算: %s 金币" % total_budget xalign 0.0 yalign 1.0 xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None text_color c_prune text_size res_font(14) action NullAction() tooltip "这是%s们的{b}预算上限{/b}。 (%s用于娱乐, %s用于嫖娼)" % (misc_name_dict[pop.name], ent_budget, wh_budget)
             vbox xsize xres(320):
                 text "{b}顾客设置{/b}" size res_font(18) yalign 0.0 drop_shadow (2, 2)
                 frame xfill True xpadding xres(10) ypadding yres(10):
@@ -4764,7 +4763,7 @@ screen brothel_options():
                                             else:
                                                 background "#CCB8A0"
                                                 text_color c_white
-                                                tooltip __("You must build new furnishing at the Carpenter's Wagon to change ") + pref + __(" preference.")
+                                                tooltip "你必须让工匠打造新的设施才能更改" + pref + "设置。"
 
                                         if brothel.get_effect("allow", pref + " preference"):
 
@@ -4877,9 +4876,9 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
         has vbox spacing 10
 
         if context == "job":
-            $ text1 = __("Entertainment Phase")
+            $ text1 = "娱乐消费环节"
         else:
-            $ text1 = __("Whoring Phase")
+            $ text1 = "嫖妓环节"
 
         text "[text1!t]" + load_txt xalign 0.0 bold True drop_shadow (2, 2) #color c_prune
 
@@ -5035,7 +5034,7 @@ screen customer_satisfaction(customers, old_rep, rep_chg):
 
         has vbox spacing 10
 
-        $ text1 = __("Brothel reputation: %s") % displayed_rep
+        $ text1 = "青楼的名声: %s" % displayed_rep
 
         if len(displayed_customers) == len(customers):
             $ text1 += " (%s)" % plus_text(total_change)
@@ -5697,7 +5696,7 @@ screen girl_select(girl_list, orange = False, no_sched=False, action_button=None
                                     if badge:
                                         add ProportionalScale(badge, *res_tb(40)) xalign 0.9 yalign 0.1
 
-                        $ text1 = selected_girl.fullname + __("\nRank ") + rank_name[selected_girl.rank] + __(" - Level ") + str(selected_girl.level)
+                        $ text1 = selected_girl.fullname + __("\nRank ") + rank_name[selected_girl.rank] + " -等级" + str(selected_girl.level)
 
                         if not no_sched:
                             if selected_girl.job:
@@ -6081,12 +6080,12 @@ screen main_character():
             text "" size res_font(8)
 
             vbox spacing 3:
-                $ text1 = __("You earn prestige everytime you or your girls have sex, or when one of your girl earns a new level.")
+                $ text1 = "当你和异性做爱，或你的奴隶升级时，你都会获得一些声望。"
 
                 if MC.level == 25:
-                    $ text1 += __("\nYou have reached the maximum level.")
+                    $ text1 += __("\n你已经达到了最高等级。")
                 else:
-                    $ text1 += __("\nYou need ") + str(int(MC_xp_to_levelup[MC.level])) + __(" prestige to level up.")
+                    $ text1 += __("\n距离升到下一级还差") + str(int(MC_xp_to_levelup[MC.level])) + __("声望。")
 
                 button:
                     background None
@@ -6625,21 +6624,21 @@ screen farm_menu(prog, can_cancel=True):
         $ _warning = False
 
         if prog.target == "no training" and prog.holding=="rest":
-            $ text1 = prog.girl.fullname + __(" will {b}Rest{/b} in her cell.")
+            $ text1 = prog.girl.fullname + "将在她的房间里{b}休息{/b}。"
 
         else:
             if prog.target == "no training":
-                $ text1 = prog.girl.fullname + __(" will improve her {b}") + stat_name_dict[prog.holding.capitalize()] + __("{/b} from doing chores.")
+                $ text1 = prog.girl.fullname + "将通过干杂活来提升她的{b}" + stat_name_dict[prog.holding.capitalize()] + "{/b}属性。"
             else:
                 if prog.target == "auto":
-                    $ text1 = prog.girl.fullname + __(" will receive {b}automatic training{/b}")
+                    $ text1 = prog.girl.fullname + "将接受{b}自动训练{/b}"
                 else:
-                    $ text1 = prog.girl.fullname + __(" will receive {b}") + prog.target.capitalize() + __(" training{/b}")
+                    $ text1 = prog.girl.fullname + "将接受{b}" + prog.target.capitalize() + "训练{/b}"
 
                 if prog.auto_inst:
-                    $ text1 += __(".\nI will assign her an {b}automatic facility{/b}, if there is room.")
+                    $ text1 += "。\n只要条件允许，我就会自动安排她{b}在设施中训练{/b}。"
 
-                    $ _warning = __("There might not be enough free minions to take care of her in all your facilities.") # Reverse logic, because of the lack of for... else loops in screen language
+                    $ _warning = "你的设施里没有足够的空闲的仆从来训练她。" # Reverse logic, because of the lack of for... else loops in screen language
 
                     for inst in available_installations:
                         # $ other_assigned_girls = [g for g in inst.return_assigned_girls() if g != prog.girl]
@@ -6853,7 +6852,7 @@ screen farm_tab():
             hbox spacing 15:
                 if farm.powers:
                     if farm.powers == "intro":
-                        $ text1 = __("[MC.name], come! There is something you must see.")
+                        $ text1 = "[MC.name], 快过来! 有些东西你必须得亲眼看看！"
                     button xmargin 6 ymargin 6 xpadding 6 ypadding 6 xysize res_tb(110):
                         text str_int(MC.mojo["purple"]) size res_font(18) drop_shadow (2, 2) xalign 0.5 yalign 0.0 color c_hotpink
                         text str_int(MC.mojo["green"]) size res_font(18) drop_shadow (2, 2) xalign 0.1 yalign 1.0 color c_lightgreen
@@ -7464,9 +7463,9 @@ screen resource_exchange():
 
 #            text(str(t))
 
-            text __("Your resources") size res_font(14) italic True color c_brown
+            text "你的资源" size res_font(14) italic True color c_brown
 
-            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip __("Use your gold to buy resources"):
+            button xfill True ysize yres(60) action (SetScreenVariable("source", "gold"), SetScreenVariable("source_name", "gold"), SetScreenVariable("source_nb", 0), SelectedIf(source=="gold")) tooltip "用金币购买资源":
                 selected_background c_emerald
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", *res_tb(40)) yalign 0.5
@@ -7480,7 +7479,7 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip (__("Trade your ") + misc_name_dict[r] + __(" for other resources")):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用你的" + misc_name_dict[r] + "交换其他资源"):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5
@@ -7502,7 +7501,7 @@ screen resource_exchange():
             frame xsize xres(250) xalign 1.0 ypos 0.2:
                 has vbox
 
-                text __("Market resources") size res_font(14) italic True color c_brown
+                text "交易市场" size res_font(14) italic True color c_brown
 
                 button xfill True ysize yres(60):
                     if "gold" != source:
@@ -7518,9 +7517,9 @@ screen resource_exchange():
                                 hbox spacing 6:
                                     $ rate = get_exchange_rate(source, "gold")
                                     if rate < 1:
-                                        $ text2 = __("Get 1 for ") + str_dec(1/rate, 1)
+                                        $ text2 = "兑换一个需要" + str_dec(1/rate, 1)
                                     else:
-                                        $ text2 = __("Get ") + str_dec(rate, 1) + __(" for 1")
+                                        $ text2 = str_dec(rate, 1) + "的价格卖出" #修改了源代码便于汉化
 
                                     text text2 size res_font(14)
                                     add source.pic.get(*res_tb(16))
@@ -7533,7 +7532,8 @@ screen resource_exchange():
                         button xfill True ysize yres(60):
                             if resource != source:
                                 action (SetScreenVariable("target", resource), SetScreenVariable("target_name", resource.name), SetScreenVariable("target_nb", 0), SelectedIf(resource==target))
-                                tooltip __("Trade ") + r +__(" in exchange for your ") + source_name
+                                #tooltip __("Trade ") + r +__(" in exchange for your ") + source_name 源代码，汉化换序翻译
+                                tooltip "用你的" + source_name + "交换" + r
                                 selected_background c_emerald
                             hbox xfill True yfill True spacing 10:
                                 add resource.pic.get(*res_tb(40)) yalign 0.5
@@ -7613,9 +7613,9 @@ screen resource_exchange():
                         action (SetScreenVariable("source_nb", source_nb-1), SetScreenVariable("target_nb", round_up((source_nb-1)*rate)))
 
                 if source == "gold":
-                    $ text1 = __("Buy")
+                    $ text1 = "购买资源"
                 else:
-                    $ text1 = __("Trade")
+                    $ text1 = "以物换物"
 
                 textbutton text1 xalign 0.5 xsize 0.8 ysize yres(65):
                     if source == "gold" and MC.gold >= source_nb:

@@ -155,7 +155,7 @@ label c1_meet_kosmo:
 
     extend "{b}Kosmo the Great{/b}!!!" with vpunch
 
-    $ kosmo_name = "Kosmo"
+    $ kosmo_name = "科斯莫"
 
     you "Who?"
 
@@ -586,7 +586,7 @@ label c1_ambush:
 
     roz "Maya!"
 
-    $ maya_name = "Maya"
+    $ maya_name = "玛雅"
 
     maya "Right on time. Let's show these brutes who's boss."
 
@@ -816,7 +816,7 @@ label c1_visit_watchtower:
 
     lieutenant "Sergeant."
 
-    $ sergeant_name = "Sergeant"
+    $ sergeant_name = "中士"
 
     sergeant "I saw some civilians leaving the tower, earlier. What was it all about?"
 
@@ -936,13 +936,13 @@ label c1_guards_visit:
     guard "Well, this is all the proof we need. Serious violations of city edicts all over the place."
 
     if MC.playerclass == "Warrior":
-            $ text1 = "illegal weapon possession"
+            $ text1 = "非法持有武器"
 
     elif MC.playerclass == "Wizard":
-            $ text1 = "possession of hazardous magical drugs"
+            $ text1 = "私藏违禁魔法药物"
 
     elif MC.playerclass == "Trader":
-            $ text1 = "illegally importing an exotic pet"
+            $ text1 = "非法饲养珍稀动物"
 
     show black as black2 with fade
 
@@ -2311,7 +2311,7 @@ label c1_thieves_guild_found:
 
     renza "That's none of your business... But since I might end up killing you anyway, I will indulge your curiosity."
 
-    $ renza_name = "Renza"
+    $ renza_name = "伦萨"
 
     renza "My name is Renza, I am the current leader of the thieves guild. I do not normally deal with the rabble that comes here,
            so consider yourself lucky."
@@ -2637,9 +2637,9 @@ label c1_ask_guild_for_help:
     if not NPC_renza.met:
 
         renza "Allow me to introduce myself. I'm Renza, head of the thieves guild."
-        $ renza_name = "Renza"
+        $ renza_name = "伦萨"
         renza "I believe you already know Lieutenant Lydie."
-        $ lieutenant_name = "Lydie"
+        $ lieutenant_name = "莉迪"
 
 
     renza "As you probably know, the city guard and the thieves guild are at each other's throats."
@@ -2658,7 +2658,7 @@ label c1_ask_guild_for_help:
     renza "Lydie is one of our best. We sent her to infiltrate the Guard and learn of its secrets, until the time
            was right to strike."
 
-    $ lieutenant_name = "Lydie"
+    $ lieutenant_name = "莉迪"
 
     you "To strike? You mean..."
 
@@ -2736,7 +2736,7 @@ label c1_ask_guild_for_help:
 
     lieutenant "They're in the cells at the end of the corridor. Their names are Maya and Kashiv."
 
-    $ sergeant_name = "Kashiv"
+    $ sergeant_name = "卡希夫"
 
     you "Maya?"
 
@@ -4510,7 +4510,7 @@ label c1_satella_intro():
 
     "She gestures vaguely at the altar."
 
-    $ satella_name = "Satella"
+    $ satella_name = "萨特拉"
 
     satella "Anyway. We are happy to receive you. My name is Satella."
 
@@ -6024,8 +6024,8 @@ label c1_trial:
         $ NPC_renza.love -= 10
         $ NPC_maya.love += 10
         $ new_captain = maya
-        $ maya_name = "Cpt. Maya"
-        $ captain_name = "Farah"
+        $ maya_name = "玛雅上尉"
+        $ captain_name = "法拉"
         $ thieves_guild.action = False
         $ story_gossip += chapter_gossip["c1_good"]
         call c1_ending_maya from _call_c1_ending_maya
@@ -6038,8 +6038,8 @@ label c1_trial:
         $ NPC_renza.love += 10
         $ NPC_maya.love -= 10
         $ new_captain = lieutenant
-        $ lieutenant_name = "Cpt. Lydie"
-        $ captain_name = "Farah"
+        $ lieutenant_name = "莉迪上尉"
+        $ captain_name = "法拉"
         $ thieves_guild.action = True
         $ story_gossip += chapter_gossip["c1_neutral"]
         call c1_ending_lieutenant from _call_c1_ending_lieutenant

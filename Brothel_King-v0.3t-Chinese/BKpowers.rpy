@@ -730,7 +730,7 @@ label power_use(_pow, girl, girl2):
                 if not _pow.super:
                     $ new_fix = girl.add_random_fixation(type="neg")[0] # Adding the new fixation first ensures the old one will not be randomly chosen
                     $ girl.personality_unlock[new_fix] = False
-                    $ text1 = " She has received a new negative fixation."
+                    $ text1 = "她形成了一个新的负面性癖。"
 
                 $ girl.remove_fixation(fix.name)
 
@@ -1383,7 +1383,7 @@ label kidnap_return(girl, girl2, _super):
 
         $ h = girl.get_hurt(max(1, dice(3) + girl2.rank - girl.rank))
         if h > 0:
-            $ text1 = "She was hurt in the process (for %i day%s)." % (h, plural(h))
+            $ text1 = "她在这个过程中受伤了(需要休息%i天%s)。" % (h, plural(h))
 
         "[girl.fullname]'s attempt to abduct [girl2.fullname] failed.[text1]"
 

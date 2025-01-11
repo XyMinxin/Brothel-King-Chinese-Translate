@@ -169,9 +169,9 @@ screen right_menu_mc():
             $ ttip += __("no active spells")
 
         if auto_spells:
-            $ ttip += __(" and ") + str(auto_spells) + __(" auto-cast spell") + plural(auto_spells) + "."
+            $ ttip += __(" and ") + str(auto_spells) + __(" auto-cast spell") + plural(auto_spells) + "。"
         else:
-            $ ttip += "."
+            $ ttip += "。"
 
         textbutton "主角状态" style_group "rm":
             text_size res_font(20)

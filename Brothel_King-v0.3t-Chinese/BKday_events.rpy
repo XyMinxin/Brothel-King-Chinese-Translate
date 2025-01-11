@@ -1091,11 +1091,11 @@ label random_night_girl_event(girl, room):
                         $ selected_fix = fix_dict[fix]
 
                         if fix == "handjobs":
-                            $ text1 = "mouth and hands"
+                            $ text1 = "小嘴和手"
                         elif fix == "oral":
-                            $ text1 = "blabberring mouth"
+                            $ text1 = "灵活的舌头"
                         elif fix == "titjobs":
-                            $ text1 = "tits and mouth"
+                            $ text1 = "奶子和小嘴"
 
                         you "Stand right here. On your knees. You will use your [text1] to service the customers. Give them a proper greeting!"
 
@@ -1652,11 +1652,11 @@ label random_night_girl_event(girl, room):
 
                         else:
                             if cust == "man":
-                                $ text1 = "him"
+                                $ text1 = "他"
                             elif cust == "woman":
-                                $ text1 = "her"
+                                $ text1 = "她"
                             else:
-                                $ text1 = "them"
+                                $ text1 = "他们"
 
 
                             "She knows better than to discuss your orders in public. She extends her hand to the [cust] to help [text1] get on stage."
@@ -1843,22 +1843,22 @@ label random_night_girl_event(girl, room):
 
                                 if l > f:
                                     if l > 75:
-                                        $ text1 = "an adoring"
+                                        $ text1 = "仰慕的"
                                     elif l > 50:
-                                        $ text1 = "a loving"
+                                        $ text1 = "充满爱意的"
                                     elif l > 25:
-                                        $ text1 = "a curious"
+                                        $ text1 = "好奇的"
                                     else:
-                                        $ text1 = "an inquisitive"
+                                        $ text1 = "充满好奇的"
                                 else:
                                     if f > 75:
-                                        $ text1 = "a terrified"
+                                        $ text1 = "惊恐的"
                                     elif f > 50:
-                                        $ text1 = "a frightened"
+                                        $ text1 = "害怕的"
                                     elif f > 25:
-                                        $ text1 = "a worried"
+                                        $ text1 = "担忧的"
                                     else:
-                                        $ text1 = "a puzzled"
+                                        $ text1 = "迷惑的"
 
 
                                 "She gives you [text1] look."
@@ -2438,9 +2438,9 @@ label random_night_girl_event(girl, room):
         "Those are not the usual riff-raff: they style themselves as gentlemen, looking for refinement and the more elevated pleasures to be found in your whorehouse, such as that of good company."
 
         if girl.naked:
-            $ text1 = "naked as the day she was born"
+            $ text1 = "她就像刚出生的婴儿一样一丝不挂"
         else:
-            $ text1 = "in her plain slave clothes"
+            $ text1 = "穿着朴素的奴隶衣服"
 
         "Speaking of which, you realize none of the geishas are ready to greet the customer yet. You only see [girl.fullname], walking across the tatami floor [text1]."
 
@@ -3183,20 +3183,20 @@ label night_girl_perform():
 
         if attitude > 100:
             "She massages your cock expertly, rubbing it against her face while looking you straight in the eye. She seems to love this."
-            $ text1 = "with delight"
-            $ text2 = "lapping it all up"
+            $ text1 = "开心"
+            $ text2 = "舔干净了"
             $ changed_stats = [("service", dice(3)), ("obedience", 2+dice(3))]
             $ girl.change_love(3)
         elif attitude > 0:
             "She does her job well, jerking you off with an exaggerated look of rapture on her face, waiting for you to cum."
-            $ text1 = "absentmindedly"
-            $ text2 = "wiping her hands on her chest"
+            $ text1 = "茫然"
+            $ text2 = "抹在胸口"
             $ changed_stats = [("service", dice(3)), ("obedience", dice(3))]
             $ girl.change_love(2)
         else:
             "She does her job mechanically, clearly not enjoying herself. It seems she cannot wait for you to finish."
-            $ text1 = "with disgust"
-            $ text2 = "wiping her hands on a piece of cloth"
+            $ text1 = "恶心"
+            $ text2 = "抹在衣服上"
             $ changed_stats = [("service", 1), ("obedience", 1)]
 
 
@@ -3204,7 +3204,8 @@ label night_girl_perform():
 
         with flash
 
-        "She looks at the cum on her hands [text1], before [text2]."
+        #"She looks at the cum on her hands [text1], before [text2]."  源代码，翻译调动变量顺序
+        "她[text1]地看着手里的精液, 然后把它们都[text2]。"
 
         you "Good girl... Now go to work."
 
@@ -3225,17 +3226,17 @@ label night_girl_perform():
 
         if attitude > 100:
             "She takes it all in stride, opening her mouth wide and covering your cock with her saliva as you go. She seems to enjoy this."
-            $ text1 = "She makes sure to gulp it all down"
+            $ text1 = "她毫不犹豫地一口吞下"
             $ changed_stats = [("service", dice(3)), ("fetish", 2+dice(3))]
             $ girl.change_love(3)
         elif attitude > 0:
             "She lets you have your way, soldiering on as you fuck her throat hard."
-            $ text1 = "Cum drips out of her mouth as she lies there panting, trying to catch her breath"
+            $ text1 = "她躺在地上喘气，精液从她嘴边流出来"
             $ changed_stats = [("service", dice(3)), ("fetish", dice(3))]
             $ girl.change_love(2)
         else:
             "She sobs and gags as you rape her throat, hating it."
-            $ text1 = "She spits it all out, nearly puking as the smell and taste makes her nauseous"
+            $ text1 = "她把精液都吐了出来，不停的咳嗽，精液的气味和味道让她恶心"
             $ changed_stats = [("service", -1*dice(3)), ("fetish", -1*dice(3))]
             $ girl.change_love(-2)
 
@@ -3247,7 +3248,7 @@ label night_girl_perform():
 
         with doubleflash
 
-        "[text1]."
+        "[text1]。"
 
         you "Well, that was fun... Now, get ready to work."
 
@@ -5660,18 +5661,18 @@ label night_girl_perform():
 
         if fix == "cowgirl":
             with vpunch
-            $ text1 = "from underneath her"
+            $ text1 = "从她的正面"
         elif fix == "piledriver":
             with vpunch
-            $ text1 = "from atop her"
+            $ text1 = "越过她的头顶"
         elif fix == "spooning":
             with vpunch
-            $ text1 = "from behind"
+            $ text1 = "从她的背后"
 
 
         girl.char "HAAAA!!!"
 
-        "Pushing harder, your cock starts entering her asshole [text1]."
+        "你的动作变得更加粗暴, 你[text1]插入她的菊穴。"
 
         if attitude > 100:
             "She is well-used to being fucked in the ass, and her hungry butt swallows your whole cock easily. She contracts her ass around your cock, giving you an amazing feeling."

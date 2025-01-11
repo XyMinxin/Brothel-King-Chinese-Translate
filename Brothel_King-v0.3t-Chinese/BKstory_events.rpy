@@ -1560,11 +1560,11 @@ label farm_meet_gizel(): # Location: spice market
     with fade
 
     if MC.playerclass == "Warrior":
-        $ text1 = "anti-rust lotion"
+        $ text1 = "防锈保养油"
     elif MC.playerclass == "Wizard":
-        $ text1 = "magic herbs"
+        $ text1 = "神奇的草药"
     elif MC.playerclass == "Trader":
-        $ text1 = "dragon feed"
+        $ text1 = "龙族的饲料"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
 
@@ -1988,7 +1988,7 @@ label farm_meet_gizel2():
 
     gizel surprise "Uh???"
 
-    $ gizel_name = "Gizel"
+    $ gizel_name = "吉泽尔"
 
     gizel shy "Gizel is my name, sir, but I am no witch... I'm just a teenage beggar, come to Zan to make a few denars..."
 
@@ -3205,7 +3205,7 @@ label farm_meet_goldie():
 
     man "Goldie..."
 
-    $ goldie_name = "Goldie"
+    $ goldie_name = "戈尔迪"
 
     man "You're always so brave. I wish I was, too..."
 
@@ -4267,9 +4267,9 @@ label farm_meet_gina():
     it produces enough waste every day to create a landscape of garbage mounds, spreading as far as the eye can see."
 
     if MC.god:
-        $ text1 = MC.god + " forsaken"
+        $ text1 = MC.god + "都抛弃"
     else:
-        $ text1 = "disgusting"
+        $ text1 = "令人作呕"
 
     you "Remind me again, why the hell did I come to that [text1] place? I have trouble understanding my own decisions, sometimes..."
 
@@ -4529,7 +4529,7 @@ label farm_meet_gina():
 
     gina "Deal! My name is Gina. Come by here anytime, and I'll fix some of those machines for you. So you can, uh, enjoy yourself."
 
-    $ gina_name = "Gina"
+    $ gina_name = "吉娜"
 
     you "I'm [MC.name]. And, uh, it's not for me, it's for a friend..."
 
@@ -4955,7 +4955,7 @@ label farm_meet_stella():
 
     stella "My name is Stella. Come visit me any time if you want to buy stallions. I'll have new arrivals every week."
 
-    $ stella_name = "Stella"
+    $ stella_name = "史黛拉"
 
     scene black with fade
 
@@ -6921,7 +6921,7 @@ label farm_meet_willow():
 
     willow "Come here, sweety. Willow loves you... Willow is going to find you a good home."
 
-    $ willow_name = "Willow"
+    $ willow_name = "薇儿"
 
     play sound s_fizzle
 
@@ -12310,7 +12310,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     show shalia5 with dissolve
 
-    $ shalia_name = "Strange woman"
+    $ shalia_name = "神秘的女人"
 
     shalia "Welcome, my child."
 
@@ -12340,7 +12340,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     you "Shalia!" with vpunch
 
-    $ shalia_name = "Shalia"
+    $ shalia_name = "莎莉娅"
 
     "She is the Goddess herself. You are awestruck. You try to bow or take a knee, only to fail embarrassingly, as you are just a disembodied spirit floating in space."
 
@@ -14141,7 +14141,7 @@ label no_money():
 
         you "*gulp*"
 
-        $ banker_name = "Banker"
+        $ banker_name = "银行职员"
 
         banker "Let me cut to the chase. I hear you are in a dire financial situation right now."
 
@@ -14421,7 +14421,7 @@ label visit_bank():
     if not story_flags["bank visited"]:
 
         $ story_flags["bank visited"] = True
-        $ banker_name = "Banker"
+        $ banker_name = "银行职员"
 
 
         banker "Welcome to TJB. As a partner, I am delighted to welcome you to the finest banking establishment in the city."
@@ -15344,7 +15344,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
+    $ text1 = season_text({"winter" : "，躲避冬日刺骨的寒风", "spring" : "，重拾春日的愉悦心情", "summer" : "，躲避夏天的炎炎烈日", "fall" : ", 远离聒噪扰人的乌鸦"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 
@@ -15399,7 +15399,7 @@ label meet_carpenter():
 
     carpenter "I'm Iulia, by the way... Who are ya?"
 
-    $ carpenter_name = "Iulia"
+    $ carpenter_name = "露莉亚"
 
     "She eyes you a bit suspiciously."
 
@@ -15898,7 +15898,7 @@ label resource_exchange_menu():
 
             you "I'll... I'll just call you Bast."
 
-            $ bast_name = "Bast"
+            $ bast_name = "巴斯特"
 
             bast "Sure, whatever."
 
@@ -15995,7 +15995,7 @@ label resource_exchange_menu():
             you "I see..."
 
             if MC.has_resource("wood", 5) and MC.has_resource("leather", 5) and MC.has_resource("dye", 5):
-                if renpy.call_screen("yes_no", "Do you want to get a basic builder license for 5 wood, 5 leather and 5 dye?"):
+                if renpy.call_screen("yes_no", "你要上交5个木材，5张皮革和5瓶染料换取基础建筑师执照吗？"):
                     $ MC.resources["wood"] -= 5
                     $ MC.resources["leather"] -= 5
                     $ MC.resources["dye"] -= 5
@@ -16017,7 +16017,7 @@ label resource_exchange_menu():
             hide bast with dissolve
             scene black with fade
 
-            $ bast_name = "Bast"
+            $ bast_name = "巴斯特"
 
             return
 
@@ -16060,7 +16060,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你要上交5个大理石，5条丝绸，5个矿石换取中级建筑师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16083,7 +16083,7 @@ label new_builder_license():
                 bast "Yep. But diamond traders make the most money. Consider this an investment."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你要上交2个钻石换取高级建筑师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16103,7 +16103,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你要上交5个大理石，5条丝绸，5个矿石换取中级建筑师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16120,7 +16120,7 @@ label new_builder_license():
                 bast "It will cost you 2 diamonds. I don't wanna know how you get them..."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你要上交2个钻石换取高级建筑师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -18259,8 +18259,8 @@ label meet_twins():
 
     today "I'm Today! Pleased to meet you. My sister here is Yesterday."
 
-    $ today_name = "Today"
-    $ yesterday_name = "Yesterday"
+    $ today_name = "今朝"
+    $ yesterday_name = "昔夜"
 
     yesterday "Hi."
 
@@ -19196,7 +19196,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "You dare question the will of your god, the mighty CHAOS?" with vpunch
 
-    $ chaos_name = "Chaos"
+    $ chaos_name = "混沌魔剑"
 
     if MC.god:
         you "I follow [MC.god], you idiot. And last time I checked, {i}I{/i} was the one who summoned you in the first place."

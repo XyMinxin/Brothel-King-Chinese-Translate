@@ -107,9 +107,9 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
 
     if old_gp:
         if len(old_gp) == 1:
-            $ text1 = "The girl pack {b}{color=[c_red]}" + old_gp[0] + "{/color}{/b} couldn't be found and will be removed from the mix."
+            $ text1 = "以下女孩包无法读取{b}{color=[c_red]}" + old_gp[0] + "{/color}{/b}。她将从女孩包组合中被移除。"
         else:
-            $ text1 = "The following girl packs couldn't be found: {b}{color=[c_red]}" + and_text(old_gp) + "{/color}{/b}. They will be removed from the mix."
+            $ text1 = "以下女孩包无法读取: {b}{color=[c_red]}" + and_text(old_gp) + "{/color}{/b}。她们将从女孩包组合中被移除。"
 
         $ renpy.call_screen("OK_screen", message=text1)
 
@@ -121,9 +121,9 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
 
     if new_gp:
         if len(new_gp) == 1:
-            $ text1 = "A new girl pack: {b}{color=" + c_green + "}" + new_gp[0] + "{/color}{/b} has been found! What would you like to do?"
+            $ text1 = "识别到一个新的女孩包: {b}{color=" + c_green + "}" + new_gp[0] + "{/color}{/b}! 你打算怎么做?"
         else:
-            $ text1 = str(len(new_gp)) + " new girl packs have been found:{b}{color=" + c_green + "}" + and_text(new_gp) + "{/color}{/b}. What would you like to do?"
+            $ text1 = str(len(new_gp)) + " 识别到新的女孩包:{b}{color=" + c_green + "}" + and_text(new_gp) + "{/color}{/b}。你打算怎么做?"
 
         if renpy.call_screen("yes_no", text1, "Update all girl mixes", "Don't update (update manually)"):
             python:
@@ -608,7 +608,7 @@ label reached_goal():
             call c1_reached_goal() from _call_c1_reached_goal
 
         else:
-            $ text1 = __("You have reached your current goal:\n") + __(game.get_goal_description()) + __("\n\nYou may now advance to the next chapter!")
+            $ text1 = "你已经完成了主线任务:\n" + __(game.get_goal_description()) + "\n\n你现在可以推进到下一个章节了！"
 
             call screen OK_screen(__("Goal reached!"), text1, pic = Picture(path="UI/goal.webp"))
 
@@ -691,7 +691,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
                         $ free_room_text = __("\nYou will receive a free room of your choice.")
 
                     elif chosen_district.room != []:
-                        $ free_room_text =  __("\nYou will receive a {b}free ") + __(chosen_district.room[0]) + "{/b}.\n\n{image=img_%s}" % chosen_district.room[0]
+                        $ free_room_text =  "\n你将得到一间免费的" + chosen_district.room[0] + "。\n\n{image=img_%s}" % chosen_district.room[0]  #为了翻译字典将加粗删去了
 
                     else:
                         $ free_room_text = ""
@@ -817,13 +817,13 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ thieves_guild.secret = False
             $ thieves_guild.action = True
             $ watchtower.action = True
-            $ renza_name = "Renza"
-            $ captain_name = "Farah"
+            $ renza_name = "伦萨"
+            $ captain_name = "法拉"
 
         elif chapter > 1:
             $ thieves_guild.secret = False
-            $ renza_name = "Renza"
-            $ captain_name = "Farah"
+            $ renza_name = "伦萨"
+            $ captain_name = "法拉"
 
             menu:
                 "At the end of Chapter 1, which faction did you side with?"
@@ -857,12 +857,12 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ story_flags["first ninja stuck"] = True
 
             # Homura story
-            $ homura_name = "Homura"
+            $ homura_name = "遥"
             $ NPC_homura.flags["divulged assignment"] = True #!
             $ NPC_homura.flags["drunk sex"] = False #!
 
             # Narika story
-            $ narika_name = "Narika"
+            $ narika_name = "鸣香"
             $ NPC_narika.flags["boyfriend question"] = True
             $ NPC_narika.flags["locked"] = True
             $ NPC_narika.flags["hunt stage"] = 2
@@ -870,7 +870,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ game.set_task("虚空忍者: 向认识的人打听消息收集情报", "story3", 3)
 
             # Mizuki story
-            $ mizuki_name = "Mizuki"
+            $ mizuki_name = "美月"
             $ NPC_mizuki.flags["onsen"] = True
             $ NPC_mizuki.flags["locked"] = True
             $ NPC_mizuki.flags["hunt stage"] = 2
@@ -878,7 +878,7 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
             $ game.set_task("水之忍者: 剧情正在制作中", "story2", blocking=False)
 
             # Haruka story
-            $ haruka_name = "Haruka"
+            $ haruka_name = "遥"
             $ NPC_haruka.flags["locked"] = True
             $ NPC_haruka.flags["hunt stage"] = 2
             $ NPC_haruka.love = 5
@@ -886,8 +886,8 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
 
             # Others
             $ story_flags["no kosmo"] = True
-            $ kenshin_name = "Uesugi"
-            $ suzume_name = "Suzume"
+            $ kenshin_name = "上杉团长"
+            $ suzume_name = "云雀"
             $ NPC_kuro.flags["occupation"] = "half-lie"
             $ MC.noble = False
 
@@ -1645,7 +1645,7 @@ label too_tired(girl):
         extend ""
         "Give her the day off":
             if MC.get_alignment() == "evil":
-                $ text1 = " You better work extra hard after this."
+                $ text1 = "你最好在这之后加倍努力。"
             else:
                 $ text1 = ""
 
@@ -4122,12 +4122,12 @@ label exit_farm(girl, reason):
                 for act in extended_sex_acts:
                     if not girl.will_do_farm_act(act, prog.mode):
                         resist = True
-                        renpy.say(gizel, MC.name + ", I have trained " + girl.fullname + " as far as I could, but there are things she refuses to do. Perhaps if you allowed me to go {i}really{/i} hard on her...")
+                        renpy.say(gizel, MC.name + "，我已经使出浑身解数训练" + girl.fullname + "了，但她还是拒绝一些训练项目。或许你该允许我对她{i}粗暴{/i}一点...")
                         break
                 else:
                     prep = {"indifferent" : " to", "interested" : " by", "fascinated" : " with"}[prog.condition]
                     resist = False
-                    renpy.say(gizel, MC.name + ", I brought you "+ girl.fullname + " back. You asked me to train her until she was " + prog.condition + prep + " with all sex acts, well, there she is.")
+                    renpy.say(gizel, MC.name + "，我把"+ girl.fullname + "带回来了。你让我把她所有的性技能都训练到" + prog.condition + prep + "，喏，大功告成。")
 
         menu:
             gizel "Would you like to have her back?"
@@ -5991,7 +5991,7 @@ label tax_intro():
 
     taxgirl "I'm the local liaison officer for the Slavers' Guild. I'm going to handle your account."
 
-    $ taxgirl_name = "Slavers' Guild Officer"
+    $ taxgirl_name = "奴隶公会职员"
 
     you "Handle my... what? I don't understand..."
 
@@ -6217,7 +6217,7 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         show taxgirl with dissolve
 
-        $ text1 = rand_choice(["Hello, [MC.name], remember me?", "Hi [MC.name]. It's that time of the month.", "Hi, it's your friendly neighborhood slaver guilder.", "Hello, dear.", "Hi. It's time to pay.", "Good morning."])
+        $ text1 = rand_choice(["你好啊, [MC.name], 还记得我吗？", "嗨 [MC.name]。又到了每个月的日子了。", "嗨, 你的好邻居奴隶公会前来拜访。", "你好，亲爱的。", "嗨，又到了支付账单的时候了。", "早上好啊。"])
 
         $ taxgirl(text1)
 
@@ -6227,24 +6227,24 @@ label tax_check(): # Happens on the morning of the 15th of every month starting 
 
         else:
             if tx < 1000:
-                $ text1 = "A trifle."
+                $ text1 = "有点少啊。"
             elif tx < 5000:
-                $ text1 = "A token contribution, as a show of goodwill."
+                $ text1 = "象征性的贡献，善意的信号。"
             elif tx < 25000:
-                $ text1 = "A modest show of support for our collective welfare."
+                $ text1 = "这是对集体福利的小小支持。"
             elif tx < 50000:
-                $ text1 = "A decent effort, I hope you keep this going."
+                $ text1 = "很不错的努力，希望你能坚持下去。"
             elif tx < 100000:
-                $ text1 = "A sizeable donation, for which the guild will be grateful."
+                $ text1 = "一笔可观的金额，公会会很感激的。"
                 $ NPC_taxgirl.love += 1
             elif tx < 250000:
-                $ text1 = "A valuable contribution to the greater good, for which I will be personally thankful."
+                $ text1 = "为大义舍小利，对此我个人表示感谢。"
                 $ NPC_taxgirl.love += 3
             elif tx < 500000:
-                $ text1 = "A great effort for our cause, which will place you among our top three contributors."
+                $ text1 = "你为我们的事业付出了巨大的努力，你已经成为了我们的三大捐助者之一。"
                 $ NPC_taxgirl.love += 6
             else:
-                $ text1 = "A King's ransom! No one is a bigger benefactor of the Guild than you. I will be very impressed if you pull this off."
+                $ text1 = "你简直富可敌国！你才是公会的顶梁柱。如果你能按量纳税，我会对你刮目相看。"
                 $ NPC_taxgirl.love += 12
 
             $ renpy.block_rollback()
@@ -6279,8 +6279,8 @@ label tax_payment(): # Happens in the evening of the 1st each month if taxes are
 
             show taxgirl with dissolve
 
-            $ text1 = rand_choice([__("Good evening."), __("Hello, ") + MC.name +".", __("Hi, dear."), __("Knock knock."), __("Hey, ") + MC.name + ".", __("Hi.")])
-            $ text1 += " " + __(rand_choice(["Here comes the guild collection.", "Your friendly neighborhood tax collector is here.", "Your guild membership fees are due.", "I hope you have my... the Guild's money ready.", "It's time to pay your dues.", "It's time for the slavers' guild to collect its due.", "I hope you have gathered enough money for protection."]))
+            $ text1 = rand_choice(["晚上好~", "你好~" + MC.name +".", "嗨，亲爱的~", "*敲门*", "嘿，" + MC.name + "。", "嗨"])
+            $ text1 += " " + __(rand_choice(["又到了公会收会费的日子了。", "你的好邻居税务官前来拜访。", "你的公会会费该交了。", "我希望你准备好了我的...公会的会费。", "是时候履行你的义务了。", "是时候让奴隶公会收回他们应得的了。", "我希望你已经筹到了足够多的保护费。"]))
 
             taxgirl "[text1!t]"
 
@@ -6628,7 +6628,7 @@ label tax_relationship_test():
                 you "Not today, sorry. I've got a lot on my plate."
 
     else:
-        $ taxgirl(rand_choice(["Hmm, thanks. See you again soon. *smirk*", "Thank you. I'll be on my way then.", "It seems all the gold is, hmm... Accounted for. Nice. See you later, then.", "Hmm... Good, very good. I'll see you again soon.", "Seems like everything's here. Perfect."]))
+        $ taxgirl(rand_choice(["Hmm,多谢。回见。 *假笑*", "谢谢你！那我就先走一步了。", "看起来钱都在这了, hmm... 正正好好。 很好，那就下次再见了。", "Hmm... 好, 太好了。我们还会再见面的。", "看起来你都准备好了，完美。"]))
 
     return
 
@@ -7330,8 +7330,8 @@ label is_broken(girl):
                     $ gain = renpy.random.randrange(auction_min_price, auction_min_price*3)
                     $ MC.gold += gain
                     $ relinquish_girl(girl)
-                    $ bidder = rand_choice(["a lonely drifter", "a spice addict", "a cruel slavedriver", "a perverted old man", "a down-on-his-luck nobleman", "a monstrous half-orc", "a stern priest", "a merciless pimp", "a shady criminal", "a fearful barbarian", "a disfigured soldier"])
-                    $ motive = rand_choice(["He said he would have her live from scraps in his backyard.", "He gave you a dangerous look when you asked him what he intended to do with her.", "He said he would use her as a human toilet.", "He had madness in his eyes.", "He said she was a present for his dog.", "He said it was 'for a friend'.", "He said he would sedate her and use her in orgies.", "He laughed cruelly when you asked what he intended to do with her.", "He said she would be a slave to his other slaves.", "He said she was needed for 'an experiment'", "He said he would get her stuck in his wall, whatever that means.", "He said he wouldn't need her long anyway."])
+                    $ bidder = rand_choice(["一个孤独的流浪汉", "一个瘾君子", "一个残忍的奴隶主", "一个变态的老头", "一个落魄的贵族", "一个可怕的半兽人", "一个正经的牧师", "一个无情的皮条客", "一个通缉犯", "一个可怕的蛮族", "一个毁容的老兵"])
+                    $ motive = rand_choice(["他说他要让她靠吃残羹剩饭过活。", "当你问他打算怎么处理她时，他用眼神警告你不要多管闲事。", "他说他会把她当成肉便器。", "他的双眼充满怒火。", "他说要把她作为礼物送给狗。", "他说会交给“一个朋友”。", "他说他会给她注射药剂，让她纵情狂欢。", "当你问他打算拿她怎么办时，他残忍地笑了。", "他说她将成为他其他奴隶的奴隶。", "他说需要她来做“实验”", "他说他会把她困在墙里，谁知道那是什么意思。", "他说他不会需要她太久的。"])
 
                     $ norollback()
 
@@ -7416,7 +7416,7 @@ label asylum_return(girl, score):
 
                 $ gain = renpy.random.randrange(auction_min_price, auction_min_price*3)
                 $ MC.gold += gain
-                $ bidder = rand_choice(["a lonely drifter", "a spice addict", "a cruel slavedriver", "a perverted old man", "a down-on-his-luck nobleman", "a monstrous half-orc", "a stern priest", "a merciless pimp", "a shady criminal", "a fearful barbarian", "a disfigured soldier"])
+                $ bidder = rand_choice(["一个孤独的流浪汉", "一个瘾君子", "一个残忍的奴隶主", "一个变态的老头", "一个落魄的贵族", "一个可怕的半兽人", "一个正经的牧师", "一个无情的皮条客", "一个通缉犯", "一个可怕的蛮族", "一个毁容的老兵"])
 
                 $ norollback()
 
@@ -7515,7 +7515,7 @@ label asylum_return2(girl):
 label girl_disappeared(girl):
 
     $ MC.street_girls.remove(girl)
-    $ excuse = rand_choice(["she was abducted by an ogre party, or so I'm told", "she was a spice addict and couldn't keep her habit in check", "she was arrested by the guard and thrown into a dank cell to rot", "she bought passage onto on a ship, never to return again", "she dove into the sea, screaming. Her body was never found", "she fell into a rip in spacetime", "a horny demon abducted her into another dimension", "she was last seen boarding the carriage of an excentric noble, never to be seen again", "she was kidnapped by a foreign diplomat who took her home with him", "she joined a mysterious cult and vanished", "she had monstrous debt, and got kidnapped by the mob", "she was taken by a group of thugs, who dragged her into the sewers", "she bought a weapon and left on a quest", "she won the royal lottery", "she ran naked into the woods, never to be seen again", "she roughed up a priest, and was taken away by Arios Knights", "she stabbed a rich guy, and was thrown in jail for life", "she became a nun and joined the crusade", "she married a poor fool", "a jealous sorceress turned her into a toad", "she was abducted by imps, courtesy of some mage", "she got in league with the wrong people", "she was accused of seddition and conspiring against the crown", "she was taken in by relatives", "she got jumped by rogue slavers who rebranded her", "she left Zan for good to bring her trade to a different city", "she became a brothel owner of her own"])
+    $ excuse = rand_choice(["她被食人魔绑架了，至少我是这么听说的", "她染上了毒品，无法控制自己的欲望", "她被警卫逮捕，扔进一间潮湿的牢房，等待死亡", "她买了一张船票，再也没有回来过", "她尖叫着跳入海中。她的尸体一直没有被找到", "她掉进了时空裂缝中", "一个淫荡的恶魔把她绑架到了另一个次元", "她最后一次被人看见是上了一位贵族的马车，从此再也没有人看见过她", "她被一名外国外交官绑架，并被带回家", "她加入了一个神秘的邪教，然后消失了", "她负债累累，被讨债的带走了", "她被一群古惑仔抓走，拖进了下水道", "她买了一把武器，去探险了", "她中了皇家彩票", "她一丝不挂地跑进了树林，再也没人见过她", "她打了一个牧师，被太阳神教的骑士带走了", "她捅了一个有钱人，被判处终身监禁", "她成为了一个修女，加入了十字军", "她嫁给了一个可怜的傻瓜", "一个嫉妒的女巫把她变成了一只癞蛤蟆", "她被小妖精绑架了，是某个法师干的", "她结交了不该结交的人", "她被指控煽动叛乱和密谋反对国王", "她被亲戚收留了", "她被奴隶贩子绑架了，还给她起了个新名字", "她永远离开了泽恩，带着行李去了另一个城市", "她自己开了一家青楼"])
 
     gizel normal "The street whore [girl.fullname] has disappeared tonight. It seems [excuse]. I guess we won't see her ever again."
 

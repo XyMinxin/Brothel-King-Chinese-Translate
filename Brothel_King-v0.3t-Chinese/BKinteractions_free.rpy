@@ -55,9 +55,9 @@ label free_girl_talk(girl):
 
         $ MC.interactions -= 1
 
-        $ text1 = rand_choice((__("As you walk around the %s, "), __("On your way to %s, "), __("Strolling around the %s absentmindedly, "))) % __(uncapitalize(selected_location.name))
+        $ text1 = rand_choice(("当你漫步在%s时，", "在你前往%s的途中, ", "当你心不在焉地在%s闲逛时，")) % __(uncapitalize(selected_location.name))
 
-        $ text1 += rand_choice((__("you notice a pretty girl standing by herself."), __(" you nearly bump into a cute young woman."), __(" you spot a pretty little thing haggling with a peddler."), __(" you see a beautiful girl, looking lost.")))
+        $ text1 += rand_choice(("你发现一个孤身一人的漂亮的女孩。", "你差点撞到一个可爱的少女。", "你看到一个美丽的女孩在和一个小贩讨价还价。", "你看到一个美丽的女孩，看起来很迷茫。"))
 
         "[text1]"
 
@@ -91,7 +91,7 @@ label free_girl_talk(girl):
                     you "Well, what do we have here... Damn, you're hot! I'm [MC.name]. What's your name baby?"
 
                 else:
-                    $ you(rand_choice(("Is your dad a baker? 'Cause you've got some nice buns!", "I'm not staring at your boobs. I'm staring at your heart.", "Did we take a class together? I could've sworn we had chemistry.")))
+                    $ you(rand_choice(("你爸爸是面包师吗？因为你的小圆面包很诱人！", "我并不是盯着你的胸看。我盯着的是你的心灵。", "我们一起上过课吗？我发誓我们很来电。")))
 
                 call dialogue(girl, "free_greetings_rude") from _call_dialogue_23
 
@@ -190,7 +190,7 @@ label free_chat_small_talk(girl):
     $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
 
-    $ text1 = rand_choice(("The weather's nice today, don't you think?", "I've heard it might rain later today...", "Last time I came here it was a lot more crowded.", "How have you been? Haven't seen you in a while.", "I saw you standing there, so well, uh... Thought I'd just talk to you.", "Don't you think this place is strange?", "This dog looks strange, doesn't it?"))
+    $ text1 = rand_choice(("今天天气真不错，你觉得呢？", "我听别人说今天会下雨...", "上次我来这，可是人满为患呐。", "你最近在忙什么那，有阵子没见到你了。", "我看到你站在那，所以，呃... 我就来找你搭话了。", "你不觉得这地方怪怪的吗？", "这只狗看起来有点奇怪，你不觉得吗？"))
 
     you "[text1]"
 
@@ -387,7 +387,7 @@ label free_play(girl):
 
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
-        $ text1 =  "Why don't you strip down for me babe?"
+        $ text1 =  "为什么你不把这些碍事的衣服都脱掉呢？"
 
         $ snd = s_equip_dress
 
@@ -404,17 +404,17 @@ label free_play(girl):
         $ pic = girl.get_pic("service", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
         if pic.has_tag("mast"):
-            $ text1 = "I want you to masturbate for me."
+            $ text1 = "在这里自慰。"
         elif pic.has_tag("titjob"):
-            $ text1 = "I want to fuck those nice tits of yours."
+            $ text1 = "用你的奶子帮我撸。"
         elif pic.has_tag("footjob"):
-            $ text1 = "Why don't you jerk me off with your feet?"
+            $ text1 = "为什么不用你的玉足帮我撸呢？"
         elif pic.has_tag("oral"):
-            $ text1 = "I want you to suck my dick."
+            $ text1 = "过来嗦我的鸡巴。"
         elif pic.has_tag("handjob"):
-            $ text1 = "I want you to jerk me off."
+            $ text1 = "用你的手帮我打飞机。"
         else:
-            $ text1 = "I want you to pleasure me."
+            $ text1 = "尽力取悦我。"
 
 #         $ dislikes = ("rebel", "nerd")
 
@@ -425,7 +425,7 @@ label free_play(girl):
 
         $ diff = 78
 
-        $ text1 = "Let me have you..."
+        $ text1 = "让我好好品尝品尝你的小穴..."
 
         $ snd = s_orgasm
 
@@ -442,7 +442,7 @@ label free_play(girl):
 
         $ diff = 80
 
-        $ text1 = "I want to fuck your ass."
+        $ text1 = "我要用你的菊穴爽一爽。"
 
         $ snd = s_orgasm_fast
 
@@ -459,7 +459,7 @@ label free_play(girl):
 
         $ diff = 82
 
-        $ text1 = "Bend over and get ready for a good whack."
+        $ text1 = "把屁股撅起来，准备好接受调教。"
 
         $ snd = s_screams
 
@@ -726,7 +726,7 @@ label free_flirt_sex_tastes(girl):
                     $ girl.personality_unlock[fix.name] = True
 
             else:
-                $ text1 = "%s makes me uncomfortable..." % __(long_act_description[act])
+                $ text1 = "%s让我感觉很不舒服..." % __(long_act_description[act])
 
                 "She blushes as she whispers something to you."
 
@@ -978,17 +978,17 @@ label free_offer_job(girl):
 
     if MC.get_alignment() == "good":
 
-        $ text1 = "I will treat you well of course, taking good care of you."
+        $ text1 = "我当然会好好对待你，好好照顾你。"
         $ modifier = 2
 
     elif MC.get_alignment() == "neutral":
 
-        $ text1 = "I will treat you fairly, and you have nothing to fear if you play by the rules."
+        $ text1 = "我会公平地对待你，如果你听我的话，那就没什么好担心的。"
         $ modifier = 0
 
     elif MC.get_alignment() == "evil":
 
-        $ text1 = "I must also warn you that I'm a harsh master. You have to be ready for anything."
+        $ text1 = "事先声明，我是个严厉的主人。你得做好心理准备。"
         $ modifier = -4
 
     you "You would have to sign a temporary slave contract. As you know, only sex slaves are allowed in the city's brothels. [text1]"
@@ -1071,7 +1071,7 @@ label free_girl_friend(girl):
 
             $ norollback()
 
-            $ lie = rand_choice(("a secret guild master", "an expert weaponsmith", "a professional circus athlete", "an Arios knight", "a famous Noh actor", "an international man of mystery"))
+            $ lie = rand_choice(("一个神秘的公会会长", "一位武器专家", "一个职业马戏团演员", "一位太阳神教的圣骑士", "一位著名的话剧演员", "一个神秘的外国人"))
 
             $ girl.MC_lied = lie
 

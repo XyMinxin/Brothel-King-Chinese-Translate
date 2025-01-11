@@ -445,7 +445,7 @@ label c2_intro():
 
     katryn "My, my, Gurigura... You're such a bumpkin. This is just like any city..."
 
-    $ gurigura_name = "Gurigura"
+    $ gurigura_name = "古莉古拉"
 
     hide gurigura
     hide katryn
@@ -459,7 +459,7 @@ label c2_intro():
 
     riche "Come on, Katryn, don't be such a killjoy... This {i}is{/i} the largest city in Xeros! Isn't it amazing? Right, Ramias?"
 
-    $ katryn_name = "Katryn"
+    $ katryn_name = "凯特琳"
 
     show ramias at right behind riche with dissolve
 
@@ -467,11 +467,11 @@ label c2_intro():
 
     riche "Ramias?"
 
-    $ ramias_name = "Ramias"
+    $ ramias_name = "拉米娅"
 
     ramias "I sense danger, Riche. These streets are not safe. There are too many places to hide..."
 
-    $ riche_name = "Riche"
+    $ riche_name = "瑞秋"
 
     hide riche
     hide ramias
@@ -1434,7 +1434,7 @@ label c2_princess_visit1:
 
     "This last piece of information sounded a little like a threat. You're not sure, but you feel like the knight is looking at you disapprovingly from under his helmet."
 
-    $ MC.rand_say(["gd: (Well, that is to be expected, he's got his orders... I'm sure me being here is not making his job any easier.)", "ne: (What a welcome. I wonder if everyone at court is so stuck up?)", "ev: (Fuck that jerk...)"])
+    $ MC.rand_say(["gd: (好吧,意料之中，他也有他的工作... 我在这肯定不会让他的工作更轻松。)", "ne: (态度真恶劣， 我想知道是不是宫里的每个人都这么傲慢？)", "ev: (不过是群狗腿子罢了...)"])
 
     knight "The Palace will now close to the visiting public for today. Let me show you the way out..."
 
@@ -1512,7 +1512,7 @@ label c2_princess_visit2:
 
     homura "Oh, of course, I apologize for not introducing myself. I am Lady Homura Henso, from the Henso family. No doubt you've heard about us. A pleasure to meet you."
 
-    $ homura_name = "Homura"
+    $ homura_name = "焰"
 
     "The young lady extends her alabaster-white hand to you in a delicate gesture. You take it and bow, unsure about the proper salute."
 
@@ -2253,7 +2253,7 @@ label c2_palace_intrusion:
 
     kuro "Commander Uesugi!!! What in Arios's name are you doing?!? The killer is getting away!"
 
-    $ kenshin_name = "Uesugi"
+    $ kenshin_name = "上杉团长"
 
     kenshin "The killer? B-B-But... I got the killer..."
 
@@ -2348,7 +2348,7 @@ label c2_palace_intrusion:
 
     "Her eyes brim with tears."
 
-    $ MC.rand_say(("gd: Fear not, Your Highness. I will protect you!", "ne: All right, all right, Your Highness. I'll help...", "ev: Worry not, Your Highness, We have a deal, remember?"))
+    $ MC.rand_say(("gd: 别害怕，殿下。我会保护你的!", "ne: 好吧，好吧，殿下。我会帮你的...", "ev: 别担心，殿下，我们说好的，记得吗？"))
 
     kuro "..."
 
@@ -2902,7 +2902,7 @@ label c2_suzume_forest1():
 
     suzume "My name is Suzume. Nice to meet you, Mister [MC.name]. "
 
-    $ suzume_name = "Suzume"
+    $ suzume_name = "云雀"
 
     suzume "Seen up close, you're cuter than I thought! So, you found my message?"
 
@@ -4244,11 +4244,11 @@ label c2_homura_okiya1():
     you "Nevertheless, the city can be dangerous at night. I'm not sure you should act so carefree..."
 
     if MC.playerclass == "Warrior":
-        $ text1 = "mighty warrior"
+        $ text1 = "强大的战士"
     elif MC.playerclass == "Wizard":
-        $ text1 = "grand wizard"
+        $ text1 = "伟大的法师"
     elif MC.playerclass == "Trader":
-        $ text1 = "charming rogue"
+        $ text1 = "迷人的商人"
 
     homura normal "Oh, but surely I will be safe here! Escorted by [MC.name], [text1], and good friend of the Princess!"
 
@@ -5369,26 +5369,26 @@ label ninja_hunt(loc):
     else:
 
         $ no_ninja_loc_dict = {
-                            "Spice market" : ["I didn't find any leads, but I did find a potent aphrodisiac I'd like you to try...", "Not now, Suz!"],
-                            "Sewers" : ["So I went through the sewers all day... Garbage, monsters, rapists, the usual... But no signs of a Kunoichi.", "Thanks for the intel... Can you stand downwind, please?"],
-                            "Farm" : ["I found nothing but a dead squirrel... Say, would you like me to drop it on your doorstep?", "No way!"],
-                            "Watchtower" : ["A Kunoichi standing so close to the Guard tower would be bold indeed... But I haven't seen any signs of recent ninja activity.", "Okay. We'll keep looking."],
-                            "Junkyard" : ["Nothing to see here. This is not the kind of junk I'm interested in...", "I get the idea."],
-                            "Thieves guild" : ["She's not here this time... Sneaky brat.", "Let's look elsewhere."],
+                            "Spice market" : ["我没找到任何线索，但我找到了一种强效春药，我想让你试试...", "现在不是瞎胡闹的时候, 云雀!"],
+                            "Sewers" : ["我一整天都在下水道里探索...垃圾，怪物，强奸犯，该有的都有...但就是没有女忍者的踪迹。", "谢谢你的情报...你能离我远一点吗?*捂鼻*"],
+                            "Farm" : ["除了一只死掉的松鼠，我什么也没找到。你想让我用它来装饰你的大门吗?", "不行，把它丢掉!"],
+                            "Watchtower" : ["对于女忍者来说在瞭望塔附近行动十分危险，但确实没有任何女忍者活动过的迹象。", "好吧，让我们继续找。"],
+                            "Junkyard" : ["这里没什么好看的。我对垃圾不感兴趣...", "我明白了。"],
+                            "Thieves guild" : ["她不在这里...卑鄙的家伙。", "让我们去其他地方找找。"],
 
-                            "Harbor" : ["Nothing smells fishy here... Except the fish. Kukukuku...", "Okay. I still think your career switch to stand-up comedy is ill-conceived."],
-                            "Shipyard" : ["I haven't seen a single Kunoichi, but there was this boat that was shaped like a-", "Not interested, thank you."],
-                            "Taverns" : ["So I told that seafarer... *hiccup* There are no Kunoichi here Sir! Not one! And don't call me that, I'm not worthy of the title... *sob* Turns out the guy was a bar stool with a sailor hat on it... *hiccup*", "Go home, Suzume... You're drunk."],
-                            "Beach" : ["I thought we'd find her here again... But no dice.", "She must remain close to the water... After all, it's her element."],
-                            "Seafront" : ["I've checked every single ship. Turns out, sailors are rowdy as hell, and there are no Kunoichi on board.", "Okay, thank you... Keep looking."],
-                            "Exotic emporium" : ["You wouldn't believe the things I've seen here! They have everything... Except Kunoichi, I guess.", "We'll look elsewhere."],
+                            "Harbor" : ["这里没有什么特别的，除了鱼的腥味。库库库...", "好吧。不过我觉得你并不适合做脱口秀演员。"],
+                            "Shipyard" : ["我没找到女忍者，但是那里有一艘很有趣的船，从外面看起来就像一个...", "我对船没兴趣，辛苦了。"],
+                            "Taverns" : ["我和那个水手说...*打嗝*这里没有女忍者先生!一个也没有!别那么叫我，我配不上这个头衔...*呜咽*原来那家伙是一张凳子，上面挂着一顶水手帽...*打嗝*", "回去吧，云雀。你喝醉了。"],
+                            "Beach" : ["我以为我们会在这里找到她...可惜。", "她不会离有水的地方太远的，那里才是她的地盘。"],
+                            "Seafront" : ["我检查了每一艘船。总之，水手们对我大喊大叫，船上也没有女忍者。", "好吧，谢谢你....继续探查。"],
+                            "Exotic emporium" : ["你肯定不敢相信我在那里都看到了什么!他们什么都有....除了女忍者。", "那我们再去别的地方找找。"],
 
-                            "Stables" : ["There are no Kunoichi here, but the horses, hmmm... Did you know that their d-", "Not interested! Let's move on."],
-                            "Plaza" : ["I've checked the roofs, alleys, food stalls, and the loo. No Kunoichi here.", "Okay. We'll keep looking."],
-                            "Market" : ["I had to walk around the market all day, I've lost count of how many people tried to grab my ass and touch my boobies... But no Kunoichi, kukukuku.", "Why do you look happy about all this?"],
-                            "Prison" : ["Not here this time... She must be surveying the Prison from a distance.", "Let's check other places around the district."],
-                            "Gallows" : ["I've checked everything, even the hanged. Turns out they're actually dead.", "I am starting to doubt the quality of ninja education."],
-                            "Arena" : ["So I checked the arena... Turns out there was a fight going on, I had to kick the asses of an entire gladiator team... And a couple of lions. No Kunoichi there, though, but I got applause.", "This must be the ninjas' legendary sense of discretion... *roll eyes*"],
+                            "Stables" : ["这里没有女忍者，但是这些马，嗯...你知道这些马的鸡巴有多大...", "我对马不感兴趣! 再去其他地方找找。"],
+                            "Plaza" : ["我检查了房顶，小巷，小吃摊和厕所。但是都没发现女忍者。", "好吧，让我们再找找其他地方。"],
+                            "Market" : ["为了调查我不得不在市场的人群里挤来挤去，我已经记不清有多少人趁机抓我的屁股，摸我的胸部。但是没有发现女忍者...库库库~", "你看起来还挺高兴的？"],
+                            "Prison" : ["她不在这...她一定是从远处观察监狱的。", "我们去附近的其他地方看看。"],
+                            "Gallows" : ["我检查了每一个地方，连吊死的犯人都检查过了。事实证明，他们已经死透了。", "我开始怀疑忍者村教育的含金量了。"],
+                            "Arena" : ["我检查了竞技场...正好里面正在进行一场决斗，我只好把那些角斗士都给打趴下了...还有几头狮子。不过，这里没有找到女忍者的踪迹。", "这就是所谓的忍者的直觉吗。*翻白眼*"],
                             }
 
         $ suzume(no_ninja_loc_dict[loc.name][0])
@@ -5512,16 +5512,16 @@ label ninja_intercept(ninja, special): # Used when hunt successful (3 hits) or d
         $ lock_ninja_locations(ninja)
 
         if special == "fast":
-            $ text1 = "Damn! She's just too fast... She dodges even perfect hits!"
+            $ text1 = "该死的!她太快了...她甚至躲过了必中的一击！"
             $ game.set_task("The Void Kunoichi: Gather hints from your contacts", "story3", 3)
 
         elif special == "rain":
-            $ text1 = "It's a damn storm out here! I can't see a thing!"
+            $ text1 = "外面全是该死的风暴！我什么也看不见！"
             $ game.set_task("The Water Kunoichi: TO BE CONTINUED", "story2", blocking=False)
             # $ game.set_task("Find a way to overcome the Water Kunoichi's storm protection.", "story2", 3)
 
         elif special == "quake":
-            $ text1 = "My legs are giving out, and the district is about to crumble..."
+            $ text1 = "我站不稳了，整个地面都要塌陷了..."
             $ game.set_task("The Earth Kunoichi: Gather hints from your contacts", "story", 3)
 
         # Happens in the Rank 2 district that doesn't hold the brothel
@@ -5596,7 +5596,7 @@ label intercept_narika():
 
         narika "Who am I kidding, of course you do! After all, everyone in Xeros has heard of me: Narika Shihoudou, the Legend!"
 
-        $ narika_name = "Narika"
+        $ narika_name = "鸣香"
 
         menu:
 
@@ -6723,7 +6723,7 @@ label intercept_mizuki():
 
         mizuki "I'm Mizuki Ike. And I'm not usually in the business of giving answers."
 
-        $ mizuki_name = "Mizuki"
+        $ mizuki_name = "美月"
 
         menu:
             "Flatter her":
@@ -7510,7 +7510,7 @@ label intercept_haruka():
 
         haruka "Suzume? I've heard your name. I'm Haruka Takamori."
 
-        $ haruka_name = "Haruka"
+        $ haruka_name = "遥"
 
         haruka "You're a Kunoichi as well, aren't you?"
 

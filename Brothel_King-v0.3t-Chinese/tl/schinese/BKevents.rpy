@@ -8494,23 +8494,19 @@ translate schinese strings:
 
     # game/BKevents.rpy:681
     old "Choose the district you want to start at (maximum "
-    new "选择你要迁入的地区 (最多 "
+    new "选择你要迁入的地区 (最多"
 
     # game/BKevents.rpy:681
     old " bedrooms)."
-    new " 间房间)。"
+    new "间房间)。"
 
     # game/BKevents.rpy:668
     old "\nYou will receive a free room of your choice."
-    new "\n你将获得一间免费房间。"
-
-    # game/BKevents.rpy:671
-    old "\nYou will receive a {b}free "
-    new "\n你将获得一间{b}免费的"
+    new "\n请选择一个免费激活的青楼的经营项目。"
 
     # game/BKevents.rpy:699
     old "{i}[chosen_district.description]{/i}\n\nDo you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations."
-    new "{i}[chosen_district.description]{/i}\n\n你确定要把青楼搬到{b}[chosen_district.name]{/b}吗?\n\n{size=-2}这将会重置你所有房间的改造,但会保留你的家具和装饰。"
+    new "[chosen_district.description]\n\n你确定要把青楼搬到 [chosen_district.name] 吗?\n\n{size=-2}这将会重置你所有房间的改造,但会保留你的家具和装饰。"
 
     # game/BKevents.rpy:756
     old "What will you use as a front for your business?"
