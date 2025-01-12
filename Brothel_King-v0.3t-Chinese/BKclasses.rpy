@@ -543,7 +543,7 @@ init -2 python:
             self.load_pics()
 
         def swear(self):
-            return rand_choice({"Arios": ["Arios", "By Arios", "By the Lightbringer", "By the Lord of Light"], "Shalia": ["Shalia", "By Shalia", "Goddess", "By the Night Lady"], None: ["Demons", "Damnation", "Priests be damned", "By the Seven Hells"]}[self.god])
+            return rand_choice({"Arios": ["Arios", "我对太阳神发誓", "我对光明使者发誓", "我对光明之主发誓"], "Shalia": ["我对黑暗女神发誓", "我对莎莉娅发誓", "我对天发誓", "我对夜之女帝发誓"], None: ["我对魔鬼发誓", "我对恶魔发誓", "我对见鬼的牧师发誓", "我对十八层地狱发誓"]}[self.god])
 
         def reset_stats(self):
             if self.playerclass == "Warrior":
@@ -7757,11 +7757,11 @@ init -2 python:
 
             for req in self.requirements:
                 if req.startswith("job"):
-                    r.append("{b}"+ __(girl_related_dict[req[4:].capitalize()]) + "{/b} %s 或更好的" % ("{image=img_star}" * self.limits[req]))
+                    r.append("{b}"+ __(girl_related_dict[req[4:].capitalize()]) + "{/b} %s及以上" % ("{image=img_star}" * self.limits[req]))
                 elif req.startswith("skill"):
-                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b}或更好的")
+                    r.append("{b}" + __(stat_name_dict[req[6:].capitalize()]) +  " " + str(self.limits[req]) + "{/b}及以上")
                 elif req.startswith("pref"):
-                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + "性癖: " + girl_related_dict[self.limits[req].capitalize()] + "{/b}或更好的")
+                    r.append("{b}" + __(girl_related_dict[req[5:].capitalize()]) + "性癖: " + girl_related_dict[self.limits[req].capitalize()] + "{/b}及以上")
 
             return r
 

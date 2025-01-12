@@ -709,7 +709,7 @@ label c1_reached_goal:
 
     "Go to the {b}watchtower{/b} and meet with the lieutenant."
 
-    $ game.set_task(__("Bring %s gold to the lieutenant at the {b}watchtower{/b}.") % blist[2].cost)
+    $ game.set_task("带%s金币交给{b}瞭望塔{/b}的中尉。" % blist[2].cost)
 
     $ story_flags["c1_goal_reached"] = True
 
@@ -850,7 +850,7 @@ label c1_visit_watchtower:
 
     $ calendar.set_alarm(calendar.time+1, Event(label = "c1_guards_visit"))
 
-    $ game.set_task("Wait for your license to be delivered.")
+    $ game.set_task("等待你的营业执照签发下来。")
 
     return
 
@@ -1135,7 +1135,7 @@ label c1_guards_visit:
 
     "Go to the city to find the {b}thieves guild{/b}."
 
-    $ game.set_task("Go to the city to find the {b}thieves guild{/b}.")
+    $ game.set_task("在城里找到{b}盗贼公会{/b}。")
     $ story_flags["c1_robbed"] = True
 
     return
@@ -2838,7 +2838,7 @@ label c1_ask_guild_for_help:
 
     "Rendezvous with Renza at the {b}thieves guild{/b}."
 
-    $ game.set_task("Rendezvous with Renza at the {b}thieves guild{/b}.")
+    $ game.set_task("与伦萨在{b}盗贼公会{/b}会合。")
     return
 
 
@@ -4713,7 +4713,7 @@ label c1_satella_intro():
 
     "Go to the {b}watchtower{/b} and confront the infamous captain of the city guard."
 
-    $ game.set_task("Go to the {b}watchtower{/b} and confront the infamous captain of the city guard.")
+    $ game.set_task("去{b}瞭望塔{/b}，直面恶贯满盈的上尉。")
 
     return
 

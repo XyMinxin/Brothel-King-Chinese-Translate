@@ -3933,8 +3933,8 @@ init -3 python:
         for name in undetected_mods:
             del persistent.mods[name]
 
-            renpy.notify("Mod: " + name + " has been removed.")
-            mod_traceback += "\n" + "Mod: " + name + " has been removed."
+            renpy.notify("Mod: " + name + "已移除。")
+            mod_traceback += "\n" + "Mod: " + name + "已移除。"
 
         # Checks new mods or new mod versions
 

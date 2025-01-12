@@ -5620,13 +5620,13 @@ translate schinese city_luck_1545fa72:
 translate schinese city_luck_0ec82954:
 
     # npc "Yes, Sir... Have you seen it anywhere?"
-    npc "是的，先生....你在哪儿见过吗？"
+    npc "是的，先生....你在哪儿见过它吗？"
 
 # game/BKcity_events.rpy:4644
 translate schinese city_luck_254d3caf:
 
     # you "Nope. Not at all. Tough luck, friend."
-    you "哦很抱歉，我没见过，朋友。"
+    you "哦很抱歉，我没见到过，朋友。"
 
 # game/BKcity_events.rpy:4646
 translate schinese city_luck_d84c1181:
@@ -5668,7 +5668,7 @@ translate schinese slave_beach_event_d8076f8d:
 translate schinese slave_beach_event_b86cad14:
 
     # you "Hey, if it isn't [girl.name]. What's up?"
-    you "嘿，这不是[girl.name]吗。怎么了？"
+    you "嘿，这不是[girl.name]吗。你怎么在这？"
 
 # game/BKcity_events.rpy:4715
 translate schinese slave_beach_event_125c68e8:

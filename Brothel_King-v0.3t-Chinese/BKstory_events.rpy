@@ -16670,7 +16670,7 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "Love letter", message = "Dear Bill,\n\nI haven't slept or eaten since you've left me. I am so alone in this world.\nYou've left me with so many questions. Did you ever love me?\nI will be punished for what you did, but it's punishment I will gladly accept, because I love you. All I want is for you to give me a sign. I'll betray the Order if I have to. I'll steal for you if I must.\n\nDon't leave me, my love. I will do anything.", signature = "Yours forever, Bastia {font=[style.default.font]}{size=-18}")
+    call screen letter(header = "情 书", message = "亲爱的比尔，\n\n自你走后我就再也没睡过好觉，也吃不下东西。我在这个世界上是如此孤独。\n你留下了许多疑问给我，你真的爱过我吗？\n我会为你的所作所为受到惩罚，但我欣然接受，因为我爱你。我只想要你给我句话。如果有必要，我可以背叛凤凰社。如果你需要，我可以帮你你偷走任何东西。\n\n请不要离开我，我的挚爱。我愿意为你付出一切！", signature = "永远爱你的，巴斯提雅 {font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
 

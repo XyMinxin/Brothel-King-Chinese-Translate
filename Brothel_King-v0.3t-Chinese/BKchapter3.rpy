@@ -111,14 +111,14 @@ label c3_update_hint_goals():
             # Unlocks hint recap with Suzume
             if nin.flags["hints"] >= 3:
                 if nin.flags["locked"]: # First call
-                    game.set_task("Talk to Suzume again about %s." % nin.name, channel, blocking=False) #! Change blocking
+                    game.set_task("和云雀再聊聊关于%s的事。" % nin.name, channel, blocking=False) #! Change blocking
                 nin.flags["locked"] = False
 
             # Init hints 
             else:
                 if nin.flags["hints"] is False:
                     nin.flags["hints"] = 0
-                game.set_task("Collect 3 hints on " + nin.name + " (%s/3)." % str(nin.flags["hints"]), channel, blocking=False) #! Change blocking
+                game.set_task("收集关于" + nin.name + "的三条线索 (%s/3)。" % str(nin.flags["hints"]), channel, blocking=False) #! Change blocking
 
     return
 
@@ -134,14 +134,14 @@ label c3_interrogate_contacts():
 
     call c3_update_hint_goals() from _call_c3_update_hint_goals
 
-    $ suzume("So, who would you like to question among your contacts in the city?", interact=False)
+    $ suzume("那么，在你在城里的熟人中，你想先找谁？", interact=False)
 
-    $ contact_list =  [("side suzume", "Suzume, the Air Kunoichi", NPC_suzume),
-                        ("side sill", "Sill, your trusty Slave Girl", NPC_sill),
-                        ("side papa", "Papa Freak, the Weird Old Man", NPC_freak),
-                        ("side jobgirl", "[jobgirl_name], the Quest Giver", NPC_jobgirl),
-                        ("side kenshin", "Kenshin, the Knight Commander", NPC_kenshin),
-                        ("side satella", "Satella, the Night Mistress", NPC_satella),
+    $ contact_list =  [("side suzume", "云雀, 傻傻的风之忍者", NPC_suzume),
+                        ("side sill", "希露，你最信任的奴隶", NPC_sill),
+                        ("side papa", "弗里克老爹，那个怪老头", NPC_freak),
+                        ("side jobgirl", "[jobgirl_name]，那个任务达人", NPC_jobgirl),
+                        ("side kenshin", "剑心，那个女骑士团长", NPC_kenshin),
+                        ("side satella", "萨特拉，黑暗女神的使徒", NPC_satella),
                         ]
 
     if NPC_bast.met:
@@ -1857,7 +1857,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Service, Beauty and Libido{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least 75 in Service, Beauty and Libido.", "papa", blocking=False)
+            $ game.set_task("送一个妓女给弗里克老爹让他好好品尝，她的侍奉熟练度，外貌和性欲属性必须达到75点。", "papa", blocking=False)
             $ NPC_freak.flags["requirements"] = [("service", 75), ("beauty", 75), ("libido", 75)]
 
         elif NPC_freak.flags["cells built"] == 1:
@@ -1876,7 +1876,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Sex, Charm and Sensitivity{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least 75 in Sex, Charm and Sensitivity.", "papa", blocking=False)
+            $ game.set_task("送一个妓女给弗里克老爹让他好好品尝，她的性交熟练度，魅力和敏感属性必须达到75点。", "papa", blocking=False)
             $ NPC_freak.flags["requirements"] = [("sex", 75), ("charm", 75), ("sensitivity", 75)]
 
         elif NPC_freak.flags["cells built"] == 2:
@@ -1895,7 +1895,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Anal, Body and Obedience{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least 75 in Anal, Body and Obedience.", "papa", blocking=False)
+            $ game.set_task("送一个妓女给弗里克老爹让他好好品尝，她的肛交熟练度，身材和服从属性必须达到75点。", "papa", blocking=False)
             $ NPC_freak.flags["requirements"] = [("anal", 75), ("body", 75), ("obedience", 75)]
 
         elif NPC_freak.flags["cells built"] == 3:
@@ -1914,7 +1914,7 @@ label c3_papa_cells():
 
             "Bring a whore to Papa with at least {b}75 in Fetish, Refinement and Constitution{/b}."
 
-            $ game.set_task("Bring a whore to Papa with at least 75 in Fetish, Refinement and Constitution.", "papa", blocking=False)
+            $ game.set_task("送一个妓女给弗里克老爹让他好好品尝，她的调教熟练度，优雅和体质属性必须达到75点。", "papa", blocking=False)
             $ NPC_freak.flags["requirements"] = [("fetish", 75), ("refinement", 75), ("constitution", 75)]
 
         scene black with fade
@@ -10686,7 +10686,7 @@ label c3_haruka_negotiate():
 
                 you "All right, we'll meet you later by {b}the Sewers{/b}."
 
-                $ game.set_task("Meet Haruka by the Sewers.", "story")
+                $ game.set_task("和遥在下水道会合。", "story")
                 $ add_event("c3_haruka_sewers", type="city", location = "sewers")
 
 
@@ -10709,7 +10709,7 @@ label c3_haruka_negotiate():
 
                 you "All right, we'll meet you at {b}the Prison{/b}."
 
-                $ game.set_task("Meet Haruka at the Prison.", "story")
+                $ game.set_task("和遥在监狱会合。", "story")
                 $ add_event("c3_haruka_trap", type="city", location = "prison")
 
     else:
@@ -10731,7 +10731,7 @@ label c3_haruka_negotiate():
 
         you "All right, we'll meet you later by {b}the Sewers{/b}."
 
-        $ game.set_task("Meet Haruka by the Sewers.", "story")
+        $ game.set_task("和遥在下水道会合。", "story")
         $ add_event("c3_haruka_sewers", type="city", location = "sewers")
 
     haruka "Wait, [MC.name]..."

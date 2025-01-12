@@ -663,7 +663,7 @@ translate schinese strings:
 
     # game/BKitems.rpy:462
     old "This scroll gives you access to the Magic University for a week."
-    new "这个通行证可以让你获得一周访问魔法学院的权限。"
+    new "这个通行证可以让你获得为期一周的进入魔法学院的权限。"
 
     # game/BKitems.rpy:466
     old "Full Power Chaos"

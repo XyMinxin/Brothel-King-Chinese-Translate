@@ -1408,7 +1408,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4828
     old "Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend)."
-    new "Use this setting to adjust the focus between customer attraction (how many customers will come to the brothel) and customer budget (the maximum amount of gold each customer is able to spend)."
+    new "使用此设置来调整客户流量（有多少客户会来青楼）和客户预算（每个客户能够花费的最大金额）之间的平衡点。"
 
     # game/BKscreens.rpy:4832
     old " to customer budget"
@@ -2365,14 +2365,6 @@ translate schinese strings:
     # game/BKscreens.rpy:8398
     old "Tasks"
     new "任务"
-
-    # game/BKscreens.rpy:8407
-    old "Bonus requirement"
-    new "Bonus requirement"
-
-    # game/BKscreens.rpy:8411
-    old "Reward: "
-    new "Reward: "
 
     # game/BKscreens.rpy:8459
     old "{color=[c_red]}{i}Failed{/i}{/color}"

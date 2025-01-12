@@ -187,7 +187,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "Mysterious letter", message = "Know, O prince, that between the years when the oceans drank Atlantis \n and the gleaming cities, and the years of the rise of the Sons of Xeros \n hither came the one who shall stand on fours under the rising sun \n the one who shall stand on two under the zenith light \n the one who shall stand on three under the many stars... \n Thou shalt name the one to succeed.")
+    call screen letter(header = "神秘的信笺", message = "王子啊，你知道吗？ \n 有一样东西白天四只脚。\n 中午两只脚。\n 到了晚上变成了三只脚。 \n 这样东西至关重要，能够破解谜题的人... \n 才能登上王座。")
 
     play sound s_dress
 

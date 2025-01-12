@@ -2260,7 +2260,7 @@ translate schinese c3_hint_c7b0d64a:
 translate schinese c3_hint_e8384d34:
 
     # "She stiffens and bites her lip. You can tell she told you too much."
-    "她绷紧了曼哈顿子，咬住了双眼。你能看出她说得太多了。"
+    "她紧咬嘴唇。你能看出来她发现自己说得太多了。"
 
 # game/BKchapter3.rpy:1078
 translate schinese c3_hint_d03903d9:
@@ -3376,7 +3376,7 @@ translate schinese c3_unlock_narika_dbabaf13:
 translate schinese c3_unlock_narika_db922458:
 
     # suzume normal "What if we {i}helped{/i} her steal that artefact?"
-    suzume normal "如果我们{我}帮助{/i}她偷了那件文物怎么办？"
+    suzume normal "如果我们{i}帮助{/i}她偷了那件文物怎么办？"
 
 # game/BKchapter3.rpy:1666
 translate schinese c3_unlock_narika_ae2e904d:
@@ -3760,25 +3760,25 @@ translate schinese c3_papa_cells_f74e71cc:
 translate schinese c3_papa_cells_f2ac5666:
 
     # papa_apprentice "Papa likes it wet and nice, uh..."
-    papa_apprentice "老爹喜欢捐助又深又润的，呃..."
+    papa_apprentice "老爹喜欢又深又润的，呃..."
 
 # game/BKchapter3.rpy:1493
 translate schinese c3_papa_cells_712d8b14:
 
     # you "I don't need details. Please."
-    you "倒也用不着这么说。"
+    you "倒也不用描述的这么详细。"
 
 # game/BKchapter3.rpy:1495
 translate schinese c3_papa_cells_74e22258:
 
     # papa "Bring us a whore that offers great service, is beautiful and perverted, and we'll build you a cell."
-    papa "给我们送来一个侍奉水平高、漂亮而且床功夫顶一的美人儿，我们就修好密室。"
+    papa "给我们介绍一个侍奉水平高、漂亮而且床上功夫一顶一的美人儿，我们就帮你修好密室。"
 
 # game/BKchapter3.rpy:1497
 translate schinese c3_papa_cells_ac48d155:
 
     # "Bring a whore to Papa with at least {b}75 in Service, Beauty and Libido{/b}."
-    "给老爹带一个{b}奉行、外貌和性欲都75{/b}的侍女。"
+    "给老爹带一个{b}侍奉、外貌和性欲都达到75{/b}的女孩。"
 
 # game/BKchapter3.rpy:1504
 translate schinese c3_papa_cells_94c5235b:
@@ -3862,7 +3862,7 @@ translate schinese c3_papa_cells_951b038a:
 translate schinese c3_papa_cells_05ae746e:
 
     # "Bring a whore to Papa with at least {b}75 in Anal, Body and Obedience{/b}."
-    "给老爹带一个{b}肛交、身材和下面都至少75{/b}的妓女。"
+    "给老爹带来一个{b}肛交、身材和服从都达到75{/b}的妓女。"
 
 # game/BKchapter3.rpy:1542
 translate schinese c3_papa_cells_4956e9c4:
@@ -3904,7 +3904,7 @@ translate schinese c3_papa_cells_6fe41501:
 translate schinese c3_papa_cells_a6f0add2:
 
     # "Bring a whore to Papa with at least {b}75 in Fetish, Refinement and Constitution{/b}."
-    "给老爹带来一个{b}性取向、优雅和体质都75{/b}的至少妓女。"
+    "给老爹带来一个{b}调教、优雅和体质都达到75{/b}的妓女。"
 
 # game/BKchapter3.rpy:1931
 translate schinese c3_papa_cells_abeb2249:
@@ -8368,7 +8368,7 @@ translate schinese c3_narika_dean_visit_8c1d2f28:
 translate schinese c3_narika_dean_visit_d81a0da4:
 
     # you "Gee, still here? Come one, I haven't got all day! Go tell the Dean I'm here!"
-    you "哎呀，怎么还赖着不走？摆脱，我可没那么多时间！快去告诉院长有人找她！"
+    you "哎呀，怎么还赖着不走？拜托，我可没那么多时间！快去告诉院长有人找她！"
 
 # game/BKchapter3.rpy:4184
 translate schinese c3_narika_dean_visit_94a31d13:
@@ -8470,19 +8470,19 @@ translate schinese c3_narika_dean_visit_9b4591d2:
 translate schinese c3_narika_dean_visit_c93ad4ba:
 
     # shizuka "So you're an idiot on top of being a sexual harasser. Charming."
-    shizuka "所以你除了是性骚扰者之外还是个白痴。真可爱。"
+    shizuka "所以你除了是暴露狂之外还是个白痴。真可爱。"
 
 # game/BKchapter3.rpy:4222
 translate schinese c3_narika_dean_visit_55445207:
 
     # you "I'm sorry, what? A sexual harasser?"
-    you "对不起，什么？性骚扰者？"
+    you "对不起，什么？暴露狂？"
 
 # game/BKchapter3.rpy:4224
 translate schinese c3_narika_dean_visit_bffd9766:
 
     # shizuka "Of course! Remember that time you tried to sneak naked into my room?"
-    shizuka "当然！还记得那次你试图赤身裸体潜入我的房间吗？"
+    shizuka "当然！还记得那次你试图光着屁股潜入我的房间吗？"
 
 # game/BKchapter3.rpy:4226
 translate schinese c3_narika_dean_visit_ab693edb:
@@ -8512,7 +8512,7 @@ translate schinese c3_narika_dean_visit_9aaaf8f4:
 translate schinese c3_narika_dean_visit_ca4e9945:
 
     # shizuka "Demons, there's just too much work these days. My mind wanders."
-    shizuka "恶魔们，这些天的工作实在是太多了。我的思绪飘忽不定。"
+    shizuka "该死，这些天的工作实在是太多了。我无法冷静思考。"
 
 # game/BKchapter3.rpy:4236
 translate schinese c3_narika_dean_visit_dae0ec55:
@@ -8524,19 +8524,19 @@ translate schinese c3_narika_dean_visit_dae0ec55:
 translate schinese c3_narika_dean_visit_407a44f3:
 
     # shizuka "Yeah, yeah, we'll see how you handle things when you're my age. A decrepit crone, you said? Ha!"
-    shizuka "是啊，是啊，等你到了我这个年纪，我们看看你如何处理事情。你说的是一个衰老的老太婆？哈!"
+    shizuka "是啊，是啊，等你到了我这个年纪，我看你的反应还能有多快。你刚刚是不是说我是老太婆？哈!"
 
 # game/BKchapter3.rpy:4240
 translate schinese c3_narika_dean_visit_77a0df90:
 
     # you "S-Sorry, we got off on the wrong foot here. I've come to warn you about imminent danger to your institution."
-    you "抱歉，抱歉，我们一开始就搞错了。我是来警告你，你的学院面临着一次巨大的危机。"
+    you "抱歉，抱歉，我们搞错人了。我是来警告你，你的学院面临着一次巨大的危机。"
 
 # game/BKchapter3.rpy:4242
 translate schinese c3_narika_dean_visit_bb7a44f7:
 
     # shizuka "But of course. I am really {i}moved{/i} by the Court's concern for our safety."
-    shizuka "当然。王室对我们安全的关心让我{i}受宠若惊{/i}。"
+    shizuka "当然。王室对我们的关心真是让我{i}受宠若惊{/i}。"
 
 # game/BKchapter3.rpy:4244
 translate schinese c3_narika_dean_visit_992d3bcb:
@@ -20230,7 +20230,7 @@ translate schinese c3_haruka_guards_0b48ab91:
 translate schinese c3_haruka_guards_d1e8f26f:
 
     # knight "Oh, I {i}know{/i} what a Kunoichi is."
-    knight "哦，我{我}知道{/i}女忍者是什么人。"
+    knight "哦，我{i}知道{/i}女忍者是什么人。"
 
 # game/BKchapter3.rpy:9739
 translate schinese c3_haruka_guards_46a21cc1:
@@ -25630,13 +25630,13 @@ translate schinese c3_haruka_captured_938284c7:
 translate schinese c3_haruka_captured_6ae04f7b:
 
     # gizel blush "I think your rape fetish is going to help us along..."
-    gizel blush "我认为你对强奸的迷恋会对我们有所帮助......"
+    gizel blush "我认为你对调教的迷恋会对我们有所帮助......"
 
 # game/BKchapter3.rpy:12485
 translate schinese c3_haruka_captured_318c7ef6:
 
     # haruka "R-Rape fetish? No! I don't have anything like that!!!" with vpunch
-    haruka "R-强奸恋物癖？不！我没有那样的东西！！！" with vpunch
+    haruka "调-调教？不！我完全不喜欢那样！！！" with vpunch
 
 # game/BKchapter3.rpy:12489
 translate schinese c3_haruka_captured_c0d39485:
@@ -25648,7 +25648,7 @@ translate schinese c3_haruka_captured_c0d39485:
 translate schinese c3_haruka_captured_ec6d8d14:
 
     # gizel "Oh, but you can deny it all you want, I {i}know{/i} it's true... It takes one to know one."
-    gizel "哦，但你可以随心所欲地否认这一点，我{我}知道{/i}这是真的......需要一个人才能了解一个人。"
+    gizel "哦，随你怎么否认，我{i}知道{/i}这是事实......我们都是同类人。"
 
 # game/BKchapter3.rpy:12493
 translate schinese c3_haruka_captured_393232f2:
@@ -25660,7 +25660,7 @@ translate schinese c3_haruka_captured_393232f2:
 translate schinese c3_haruka_captured_23aaf359:
 
     # "You have gone on for long enough, and decide it's time to let yourself go. You will have plenty of other opportunities to use this pussy later."
-    "你已经坚持了足够长的时间，并决定是时候释放了。以后你还会有很多机会使用这个小穴。"
+    "你已经坚持了足够长的时间，并决定是时候射精了。以后你还会有很多机会使用这个小穴。"
 
 # game/BKchapter3.rpy:12497
 translate schinese c3_haruka_captured_c7ac4dad:
