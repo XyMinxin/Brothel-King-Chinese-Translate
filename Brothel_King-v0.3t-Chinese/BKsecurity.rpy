@@ -347,9 +347,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             loot = enemies * 150 + war_machines * 600
 
             if enemy_general.has_trait("Warrior"):
-                enemy_g = "mercenary captain"
+                enemy_g = "雇佣兵女团长"
             elif enemy_general.has_trait("Caster"):
-                enemy_g = "freelance sorceress"
+                enemy_g = "雇佣兵女法师"
 
             general_defeats = 0
             fatigue = -1
@@ -496,7 +496,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             with vpunch
 
-            $ renpy.say(security_breach, rand_choice(["Shrapnel bursts among your troops, wounding [damage] of them.", "Fire rains down on your troops, wounding [damage].", "Cannonballs mow down [damage] of your security guards.", "A huge stone crashes among your troops, wounding [damage]."]))
+            $ renpy.say(security_breach, rand_choice(["炸弹在你的部队中爆炸，使[damage]人受伤。", "炮火像雨点般落在你的军队上，使[damage]人受伤。", "加农炮弹幕炸飞了[damage]个守卫。", "一块巨石在你的军队上空中坠落，使[damage]人受伤。"]))
 
         # Enemy charge
 
@@ -1596,7 +1596,7 @@ init -3 python:
         text_chg = "\n\n" + get_change_text(sec_changes)
 
         if not sec_pic:
-            renpy.say("", ev_type + " picture missing: " + str(sec_pic))
+            renpy.say("", ev_type + "图片缺失: " + str(sec_pic))
         elif not isinstance(sec_pic, Picture):
             sec_pic = Picture(path=sec_pic)
 

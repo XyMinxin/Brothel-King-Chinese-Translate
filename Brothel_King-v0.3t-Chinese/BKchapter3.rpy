@@ -4592,7 +4592,7 @@ label c3_narika_MU_class():
         
         sill "(He's actually quite dashing!)"
 
-        $ MC.rand_say(["wa: My old one got his head blown off by a trebuchet. Nasty business.", "tr: My old one got hurt playing with my pet dragon. Turns out horse hair is surprisingly flammable.", "wi: I lost my old one. Turns out you can't dry a horse using a microwave spell. Who would have thought?"])
+        $ MC.rand_say(["wa: 我的老伙计被投石机打爆了头。真可怕。", "tr: 我的上一匹马和我的宠物龙玩耍时受伤了。事实证明，马毛非常易燃。", "wi: 我的代步工具死了。事实证明你不能用微波咒语把马弄干。谁能想到会是那样的结果呢？"])
 
         sill "(In fact... He's really handsome... Just looking at him gives me strange tingling sensations all over...)"
 
