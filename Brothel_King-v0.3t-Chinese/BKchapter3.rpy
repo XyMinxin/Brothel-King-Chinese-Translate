@@ -4622,7 +4622,7 @@ label c3_narika_MU_class():
 
         sill "(I can't believe it! He bought me! The enchantment worked!)"
 
-        $ MC.rand_say(["gd: Hi there, cutie. Don't be afraid. I'm [MC.name].", "ne: Hello. I'm your new master. My name is [MC.name].", "ev: Get up, slave. You're mine now, and don't you forget it. The name's [MC.name]."])
+        $ MC.rand_say(["gd: 你好，小可爱。不要害怕。我叫[MC.name]。", "ne: 你好，我是你的新主人，叫我[MC.name]。", "ev: 起来，奴隶，现在你是我的人了，给我记好了。 以后要称呼我为[MC.name]主人。"])
 
         sill "H-Hello Master..."
 
@@ -5264,7 +5264,7 @@ label c3_narika_MU_class():
 
         sill "Ow!" with vpunch
 
-        $ MC.rand_say("wi: Nonsense, do you doubt the extent of my magical abilities?", "Stop whining! If you did your job correctly, I'll have nothing to worry about.")
+        $ MC.rand_say("wi: 胡说，难道你怀疑我的魔法能力吗？", "别发牢骚!如果你把工作做好了，我就不用操这么多心了。")
 
         you "Now, let's see what that sexy old lady has to hide..."
 
@@ -6397,7 +6397,7 @@ label c3_narika_debriefing():
 
     narika normal "So he took the next logical step: he decided to {i}steal{/i} it."
 
-    $ MC.rand_say("ar: That's not very honorable...", "wa: That's not very honorable...", "gd: That's not very honorable...", "tr: Yup, that makes sense.", "sh: Yup, that makes sense.", "ne: Yup, that makes sense.", "Steal it?")
+    $ MC.rand_say("ar: 这不是很正派...", "wa: 这不是很正派...", "gd: 这不是很正派...", "tr: 唔呣，有点道理。", "sh: 唔呣，有点道理。", "ne: 唔呣，有点道理。", "偷走它？")
 
     narika "Naturally. And so he hired the best Kunoichi money can get!"
 

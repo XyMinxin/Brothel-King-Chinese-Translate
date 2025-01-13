@@ -773,7 +773,7 @@ init -2 python:
                 if renpy.random.random() <= 0.33: # 33% chance of finding diamond
                     nb = 1 # + self.get_effect("change", "diamond extraction")
                 else:
-                    renpy.call_screen("OK_screen", message="You failed to find anything.")
+                    renpy.call_screen("OK_screen", message="你什么都没找到。")
                     return
             else:
                 return

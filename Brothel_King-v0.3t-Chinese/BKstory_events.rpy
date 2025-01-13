@@ -997,7 +997,7 @@ label renza_onsen2:
 
     sill "Ah, Master! Aaaaah!!!"
 
-    $ MC.rand_say(("gd: I'm not stopping until you come! This is your punishment!", "ne: This is for your Master's good! You better please me!", "ev: You stupid bitch slave! I'll teach you some manners!"))
+    $ MC.rand_say(("gd: 你不高潮我是不会停下来的！这是对你的惩罚！", "ne: 多为你的主人着想！你最好让我高兴！", "ev: 你这个愚蠢的婊子奴隶！我来教你一些礼仪！"))
 
     play sound s_orgasm_young
 
@@ -1608,15 +1608,15 @@ label farm_meet_gizel(): # Location: spice market
         "How do you feel about elves?"
 
         "I bear them no grudge":
-            $ MC.rand_say(("I don't hate them. Wars come and go, and it wasn't they who started this one...", "ar: Although the Arios church denounces the elves, I do not think they are bad. They can be brought back to the light.", "wr: I have fought enough elves on the battlefield to respect their grit and abilities. They are worthy opponents.", "wz: I do enjoy a good conversation with an elf from time to time. They know a great deal of secrets, though they don't share them very willingly."))
+            $ MC.rand_say(("我不讨厌他们。战争总会发生，并不是他们挑起了这场战争...", "ar: 虽然太阳神教会谴责精灵，但我不认为他们是坏人。他们可以重投光明的怀抱。", "wr: 我在战场与许多精灵搏杀过，我尊重他们的勇气和能力。他们是值得尊敬的对手。", "wz: 我确实喜欢偶尔和精灵闲聊。他们知道很多秘密，虽然他们不太愿意分享。"))
             $ story_flags["elves"] = "like"
 
         "I hate them":
-            $ MC.rand_say(("I despise these pointy-eared rats. The only good elf is a dead elf, I always say.", "ar: Those spawns of hell show no respect to the true Light, and occupy the Holy Lands against the will of men and Gods. I hate them.", "wr: The damn elves took the lives of many of my comrades on the battlefield. I shan't forgive them."))
+            $ MC.rand_say(("我鄙视这些尖耳朵的老鼠。死去的精灵才是好精灵，我总是这么说。", "ar: 那些地狱的后代不尊重真理，违背人类和神的意愿占领圣地。我讨厌他们。", "wr: 那些该死的精灵在战场上夺去了我许多战友的生命。我不会原谅他们的。"))
             $ story_flags["elves"] = "dislike"
 
         "I don't really know":
-            $ MC.rand_say(("I can't say I have met many elves, much less talked to them. So I reserve my judgement.", "ng: I don't really know. The Arios Church hates them I guess, but I have no time for phony gods and their minions.", "wz: Elves know many things, and I'm sure one could learn a lot from them... If they weren't like to pelt you with poison arrows whenever you come near them.", "tr: I've traded with elves quite a bit in the past. They are good on their word, I guess, although they won't win any popularity contest."))
+            $ MC.rand_say(("我不能说我遇到过很多精灵，更不用说和他们交谈了。所以我保留我的判断。", "ng: 我也不知道。我猜太阳神教会讨厌他们，但我没时间管假神和他们的爪牙。", "wz: 精灵知识渊博，我相信一个人可以从他们身上学到很多东西...如果他们不喜欢在你靠近他们的时候用毒箭射你的话。", "tr: 我过去和精灵们做过不少交易。我想他们很信守诺言，尽管他们没赢过什么比赛项目。"))
             $ story_flags["elves"] = "neutral"
 
     man "Make way!"
@@ -2818,9 +2818,9 @@ label gizel_attack():
 
             you "My name is [MC.name]. I'm a lot tougher than those clowns out there. You don't want to start a fight you can't win."
 
-            $ MC.rand_say(("wr: Before I was a brothel owner, I was a soldier in the war. I killed more elven mages than I can count.",
-                            "wz: I'm not just a brothel owner, I'm also a powerful mage, top of my class in Karkyr. You won't have the upper hand in this fight.",
-                            "tr: I'm not just a lowlife pimp, okay? I've got a pet dragon. That's right. And he's like, twenty feet tall."))
+            $ MC.rand_say(("wr: 在我成为青楼老板之前，我是战场上的一名士兵。我杀了数不清的精灵法师。",
+                            "wz: 我不只是个青楼老板，我还是一个强大的法师，在卡尔基念书时我是班上的尖子生。你打不过我的。",
+                            "tr: 我不只是个粗鄙的皮条客，好吗？我有一条宠物龙。是真的。他大概有十几米高。"))
 
             if NPC_gizel.raped:
                 if reaction == "fight":
@@ -3406,9 +3406,9 @@ label farm_meet_goldie_menu():
 
             goldie "Anyway, how do you expect to solve the mystery of this place?"
 
-            $ MC.rand_say(("wr: There's nothing that can't be solved with a few inches of steel in the gut, I always say. Let me take care of it.",
-                            "wz: I took a class in 'curse and debuff management' at Karkyr University, back in the day... I know my way around these things.",
-                            "tr: I talk my way around tricky situations all day... If there's something in that farm, perhaps I can cut a deal with it?"))
+            $ MC.rand_say(("wr: 我相信，用几英寸的锐器插进它的肚子，没有什么是解决不了的。让我来处理吧。",
+                            "wz: 我在卡尔基大学上过一门“诅咒和负面效果”的课，那是以前的事了...我对这些事很在行。",
+                            "tr: 我随时都能应付棘手的情况。如果农场里有什么东西，也许我能跟它做个交易？"))
 
             goldie "I hope you're right..."
 
@@ -3524,7 +3524,7 @@ label farm_exorcism_attempt():
 
             spirit "Fool! I exist in an ethereal plane that you cannot hope to reach with your amateurish powers..."
 
-    $ MC.rand_say(("sh: Shalia guard me...", "ar: Arios, guide me into the light...", "ng: Fuck."))
+    $ MC.rand_say(("sh: 莎莉娅保佑我...", "ar: 太阳神啊，让我沐浴在你的圣光下...", "ng: 操他妈的。"))
 
     play sound s_maniacal_laugh
 
@@ -3576,7 +3576,7 @@ label farm_exorcism_attempt():
 
     you "I promise, ok?"
 
-    $ MC.rand_say(("gd: I'll come back to save you.", "ev: I {i}{b}want{/b}{/i} that farm even more, now.", "ne: A deal is a deal. I'll help."))
+    $ MC.rand_say(("gd: 我会回来救你的", "ev: 现在我更{i}{b}想要{/b}{/i} 那间农场了。", "ne: 一言既出驷马难追，我会帮到底的。"))
 
     goldie "Really?"
 
@@ -5439,7 +5439,7 @@ label stella_invitation():
 
     "Strange glyphs are written on the envelope. There is no recognizable name or address."
 
-    $ MC.rand_say(("gd: I really shouldn't pry, but if I don't open it, I won't be able to bring it to its rightful recipient.", "ev: Great! Hopefully, I can use this to blackmail somebody.", "ne: Well, if someone is going to open this and make away with the content, it might as well be me..."))
+    $ MC.rand_say(("gd: 我真不该打听，但如果我不打开它，我就不用把它送到它的主人那里。", "ev: 太棒了!我也许能用这个敲诈别人。", "ne: 好吧，如果有人要打开这个，拿走里面的东西，那最好是我..."))
 
     "Slicing the envelope open with your dagger, you are somewhat disappointed to find only a small piece of paper tucked inside, alongside a small charm amulet. It's the cheap kind you can find for a denar a dozen on Pilgrim Road."
 
@@ -6672,7 +6672,7 @@ label farm_meet_willow():
 
     show bg inner_sewers at top with Pixellate(2.0, 5)
 
-    $ MC.rand_say(("ev: It's all Sill's damn fault!", "ne: Serves me right for trying to help.", "gd: Sill can be so clumsy sometimes..."))
+    $ MC.rand_say(("ev: 都是希露的错!", "ne: 想让我帮忙就好好伺候我。", "gd: 希露有时候还是很笨拙的..."))
 
     "After you came down into the sewers, you couldn't find the armlet close by after all."
 
@@ -7174,7 +7174,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
         play sound s_dodge
         hide willow with easeoutleft
 
-        $ MC.rand_say(["Again? Really?", "Oh no, not again...", "Again! What kind of monster hunter {i}are{/i} you?!?"])
+        $ MC.rand_say(["再来一次？真的假的？", "哦不，别再来了...", "还来! 你到底是哪门子的{i}怪物猎人{/i}?!?"])
 
     "Effortlessly, the monster lifts Willow in the air, with her head upside down and her skirt overturned. You catch a good view of her panties."
 
@@ -13540,7 +13540,7 @@ label kosmo_returns2(): # Happens every 7-9 days (yes, Kosmo IS annoying)
 
             kosmo "This one tried to take my life, can you believe it? But my security is top notch. I have 20 guards in my bedroom alone."
 
-            $ MC.rand_say(("Yes, I'm sure you love to jerk off in front of 20 dudes...", "Cool. That should give you the audience you need when you're bouncing on your boy's dick."))
+            $ MC.rand_say(("是的，我想你肯定会愿意在20个男人面前自慰...", "酷。当你在鸡巴上进进出出的时候，这应该能吸引许多观众。"))
 
             kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
 
@@ -19309,7 +19309,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "{i}If{/i} I were to enter into a... {i}partnership{/i}, with you, what would it entail?"
 
-    $ MC.rand_say(["wa: Well, a magic sword's always nice to have in a fight. I assume you have powers?", "wz: It's always interesting to study supernatural beings, I guess. I assume you are a master in dark magic?", "tr: Well I'm sure I could sell you for a pretty penny, unless of course you have something better to offer me?"])
+    $ MC.rand_say(["wa: 在战斗中有把好剑总是好的。我想你还有什么超能力吧？", "wz: 我想研究超自然生物总是很有趣的。我猜你是黑魔法大师吧？", "tr: 我肯定能卖个好价钱，除非你有更好的东西给我？"])
 
     chaos "Of course! I am very capable, believe me. But there is one thing... To replenish my power, I need to feast. And you shall help me with that."
 

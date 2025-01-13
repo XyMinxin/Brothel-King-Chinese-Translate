@@ -578,7 +578,7 @@ label free_flirt_spirit(girl):
 
 
 label free_flirt_sex_experience(girl):
-    $ MC.rand_say(("Are you 'experienced'?", "Tell me the truth: have you been with many men before?", "Are you used to fooling around with boys much?", "Did you know many men before me?", "ev: Have you been passed around the harbor like a bag of spice?", "ne: Be honest: Have you had a lot of sex before?", "gd: Are you skilled in the art of love?"))
+    $ MC.rand_say(("你很有经验吗?", "告诉我实话：你以前和很多男人交往过吗？", "你经常和男孩子们鬼混吗？", "在我之前你认识很多男人吗？", "ev: 你是不是像一袋毒品一样在一群人中左手倒右手？", "ne: 说实话：你以前有过很多性生活吗？", "gd: 你精通做爱的艺术吗？"))
 
     call dialogue(girl, "free_flirt_sex_experience " + girl.sexual_experience) from _call_dialogue_50
 
@@ -669,7 +669,7 @@ label free_flirt_sex_experience(girl):
 
 label free_flirt_sex_tastes(girl):
 
-    $ MC.rand_say(("What do you like in bed?", "Is there anything you like in the bedroom?", "Tell me what turns you on.", "What is your favorite sexual position?"))
+    $ MC.rand_say(("你喜欢在床上用什么姿势？", "有什么你喜欢的玩法吗？", "告诉我什么最让你兴奋。", "你最喜欢什么体位？"))
 
     if dice(6) >= 4: #Describe positive acts and fixations
 
@@ -756,41 +756,41 @@ label free_flirt_sex_act(girl):
 
     if act == "naked":
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Tell me something: do you sleep naked at night?", "Do you like to expose yourself in front of people?", "How do you feel when other people look at you in your natural state?",
-                        "ev: Do you like to expose your bare pussy like a horny bitch?", "ne: Do you like to show your body to strangers?", "gd: You have such a perfect body. Do you enjoy people looking at it?",
-                        "ar: Do you agree that since Arios shines His light on everything, hiding your body under clothes is unnecessary?", "wr: Zonian she-warriors fight with nothing but a sword and a cat-tail stuck into their asshole. Would that turn you on?"))
+        $ MC.rand_say(("告诉我，你晚上会光着身子睡觉吗？", "你喜欢在众人面前暴露自己吗？", "当别人看着你的自然状态时，你有什么感觉？",
+                        "ev: 你喜欢暴露你赤裸的阴部像一个饥渴的婊子吗？", "ne: 你喜欢向陌生人展示你的身体吗？", "gd: 你有如此完美的身材。你喜欢别人看吗？",
+                        "ar: 你是否同意既然阿里奥斯把他的光芒照在所有的东西上，把你的身体藏在衣服里就没有必要了？", "wr: 佐尼亚女战士战斗时除了一把剑和插在屁眼里的猫尾巴什么都没有。那会让你兴奋吗？"))
 
     elif act == "service":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Do you masturbate a lot?", "Do you like oral?", "How do you like to go down on guys?", "ar: What do you know about Arios candle worship?", "ev: How would you like to choke on my dick?",
-            "ne: I'm sure you can use those assets of yours to pleasure a man...", "gd: With a lovely mouth like yours, you must give the best blowjobs...", "tr: In all my travels, I have found that a skilled tongue is the best way to get what you want... It's even more true for pretty babes like you. Do you agree? *wink*"))
+        $ MC.rand_say(("你经常手淫吗？", "你喜欢口腔吗？", "你喜欢给男人口交吗？", "ar: 你对阿里奥斯的蜡烛崇拜了解多少？", "ev: 你想不想被我的老二噎死？",
+            "ne: 我相信你可以用你的资产取悦一个男人...", "gd: 有你这么漂亮的嘴巴，你一定能给我最好的口交...", "tr: 在我所有的旅行中，我发现熟练的语言是得到你想要的东西的最好方法... 对于像你这样漂亮的宝贝来说更是如此。你同意吗？*眨眼*"))
 
     elif act == "sex":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Are you a virgin?", "Ever done it with a man?", "ev: Do you like riding dicks? Come on, a bitch like you should love it.", "ne: Do you like sex, babe?", "gd: How do you like to make sweet love, darling?", "ng: Ever been to heaven with a man?", "wz: Many girls told me I can perform miracles with my magic wand. Would you like me to show you?"))
+        $ MC.rand_say(("你是处女吗？", "你和男人做过吗？", "ev: 你喜欢骑鸡巴吗？拜托，像你这样的婊子应该喜欢的。", "ne: 你喜欢性爱吗，宝贝？", "gd: 你喜欢怎样做爱，亲爱的？", "ng: 你曾经和一个男人一起去过天堂吗？", "wz: 许多女孩告诉我，我可以用我的魔杖创造奇迹。要我指给你看吗？"))
 
     elif act == "anal":
         $ girl.personality_unlock["LM"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever used the back door?", "Do you like it from behind? You know...", "ev: You look like a butt slut. Are you?", "gd: Ever used your other love hole?", "ne: How do you like it up the ass?",
-            "sh: Have you ever done it Shalia's way?", "wr: In war, it's always best to charge from behind. In love, it's the same, wouldn't you say?"))
+        $ MC.rand_say(("从后门走过吗？", "你喜欢从后面看吗？你知道...", "ev: 你看起来像个荡妇。是吗?", "gd: 曾经用过你的另一个爱洞吗？", "ne: 你喜欢屁股上的东西吗？",
+            "sh: 你用过莎莉娅的方法吗？", "wr: 在战争中，最好从后面冲锋。爱情也是一样，你说呢？"))
 
     elif act == "fetish":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Do you like kinky sex?", "Do you like to do really naughty things in bed?", "Do you like pleasure mixed with pain?", "Do you own many sex toys?",
-                       "ev: Would you like me to hurt you? Say it.", "ne: How far would you go with me? I know a trick or two...", "gd: Do you trust me? I could show you some fun and dirty tricks...",
-                       "wz: Some girls like to use magic to spice up their sexual encounters. Should we try it together?"))
+        $ MC.rand_say(("你喜欢刺激的性爱吗？", "你喜欢在床上做一些非常有趣的事情吗？", "你喜欢痛并快乐着吗？", "你喜欢用性玩具吗？",
+                       "ev: 你想让我伤害你吗？说出来。", "ne: 你愿意和我试试吗？我新开发了一两招...", "gd: 你相信我吗？我可以给你表演一些有趣又下流的把戏...",
+                       "wz: 有些女孩喜欢用魔法来增加性爱的情趣。我们一起试试好吗？"))
 
     elif act == "bisexual":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever done it with another girl?", "Do you like to be with another woman?", "Ever heard of sapphism? Did you give it a try?", "tr: In Borgo, fisherwomen like to polish each other's pearls. Do you?",
-                        "Are you bisexual?", "Do you like girls?", "ev: It takes a bitch to know one. Ever tried fucking a girl?", "ne: Man, woman, does it matter to you?", "gd: You're lovely and caring, I'm sure women like you too. Don't they?", "sh: Worshipping a goddess is always more satisfactory than a god, wouldn't you say?",
+        $ MC.rand_say(("你和别的女孩做过吗？", "你喜欢和别的女人在一起吗？", "你听说过蕾丝边吗？", "tr: 在博格，女人们喜欢磨豆腐。你呢?",
+                        "你是女同吗？", "你对女孩有感觉吗？", "ev: 只有贱人才会知道。你试过操一个女孩吗？", "ne: 男人，女人，又有什么区别呢？", "gd: 你可爱又体贴，我相信女人也会爱上你。不是吗?", "sh: 侍奉女神总是比侍奉男神更令人愉悦，你说呢？",
                         ))
 
     elif act == "group":
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever been in an orgy?", "Do you like a threesome?", "gd: The more the merrier, wouldn't you say?", "ev: How many dicks can you take at the same time?",
-                        "Do you like group sex?", "ne: How about fucking several people at once? Does that turn you on?", "ng: Wasting valuable time praying to fickle gods is stupid, when you could be having a decadent earthly orgy instead. Don't you agree?",
-                        "wr: The best training a warrior can get is fighting many enemies at once. And since love is like a battlefield..."))
+        $ MC.rand_say(("参加过派对吗？", "你喜欢三人行吗？", "gd: 独乐乐不如众乐乐，你说呢？", "ev: 你能同时吞下几根鸡巴？",
+                        "你喜欢淫趴吗？", "ne: 同时被几个人上会让你兴奋吗？", "ng: 浪费宝贵的时间向善变的神祈祷是愚蠢的，人生苦短，及时行乐，享受堕落的尘世狂欢。你不这么认为吗？",
+                        "wr: 情场如战场，同时应对多个敌人才能最好地磨练自己..."))
 
 #     $ pref = girl.get_preference(act)
 

@@ -67,7 +67,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Demean her":
-                        $ MC.rand_say(("ev: What are you doing, you dumb bitch? Your body is for fucking, not games! Save your energy for tonight.", "Humph. I hope you will put the same energy into serving customers.", "Hey! If you get up early, you should fix my breakfast, instead of doing some useless exercise!", "ev: Humph. Muscles on a whore are like tits on a man: useless.", "Enjoying yourself, are you? Shouldn't you be doing something useful with your time?"))
+                        $ MC.rand_say(("ev: 你的身体是用来做爱的，不是用来玩游戏的！为今晚留点力气吧。", "哼。我希望你能以同样的精力为顾客服务。", "嘿!如果你起得早，你应该给我准备早餐，而不是做一些无用的运动！", "ev: 哼。妓女的肌肉就像男人的奶子一样，毫无用处。", "玩得很开心，是吗？你不应该利用你的时间做些有用的事情吗？"))
 
                         if girl.is_("dom"):
                             girl.char "You bastard..."
@@ -133,7 +133,7 @@ label random_morning_events():
                         $ result = "pos"
 
                     "Reject her":
-                        $ MC.rand_say(("ev: Out of my way, you dirty slave! I have no time to waste with a cum dump like you.", "If I needed you, I would give you a straight order. I don't want you to ask idle questions!", "Don't you know a slave is not supposed to address her betters? I'll send for you when, and if, I need your service."))
+                        $ MC.rand_say(("ev: 让开，你这肮脏的奴隶！我可没时间浪费在你这种混蛋身上。", "如果我需要你，我会直接给你命令。我不想让你问无聊的问题！", "难道你不知道奴隶不应该主动和主人说话吗？如果我需要你的服务，我会叫你来的。"))
 
                         if girl.is_("sub"):
                             girl.char "I... I understand. I'm sorry..."
@@ -517,7 +517,7 @@ label random_morning_events():
 
 
                     "Kick her out":
-                        $ MC.rand_say(["ev: How DARE you barge into my room!!! Get the fuck out, or I'll rip your fucking head off!!!", "Are you out of your mind? Get out of my room, right now!", "Do you think this place is a fucking hotel? Get lost.", "I ain't got time for this. Go masturbate, or something."])
+                        $ MC.rand_say(["ev: 你竟敢闯进我的房间！！滚出去，不然我把你的头拧下来！!!", "你疯了吗？滚出我的房间，马上!", "你以为这他妈是个旅馆吗？你迷路了？", "我没空陪你玩。你自己去自慰吧。"])
 
                         "You get up and grab [girl.name] by the shoulder, bluntly shoving her out of the door."
 
@@ -998,7 +998,7 @@ label random_night_girl_event(girl, room):
                 "[girl.fullname] has become less obedient."
                 return
 
-        $ MC.rand_say(("gd: What's going on, [girl.name]? Are you all right?", "ne: Ah, [girl.name]. It's about time you came back.", "ev: Hey, [girl.name], you stupid bitch! What the fuck do you think you're doing?"))
+        $ MC.rand_say(("gd: 发生什么事了，[girl.name]?你还好吗？", "ne: 啊，[girl.name]。你早就该回来了。", "ev: 嘿，[girl.name]，你这个蠢货，你以为你在干什么？"))
 
         $ excuse = rand_choice((__("I was visiting a friend"), __("I had to buy some supplies"), __("I went for a walk, and got lost"), __("I was fetching something for Sill"), __("I was feeling unwell and went for some fresh air"), __("I was taking a break, and lost track of time")))
 
@@ -1026,7 +1026,7 @@ label random_night_girl_event(girl, room):
                 $ changed_stats = [("obedience", -1*dice(3))]
 
             "Scold her":
-                $ MC.rand_say(("gd: Come on, [girl.name], you know everyone is busy preparing for the opening. You should do your part.", "ne: Look, I don't care what you do, but you must be ready to work on time. From now on, you will come back on time.", "ev: Excuses, always excuses! Do I look like I give a fuck? Get your ass to work right now, or it'll cost you!"))
+                $ MC.rand_say(("gd: 得了吧，[girl.name]，你知道大家都在忙着准备开业。你应该出一份力。", "ne: 听着，我不管你做什么，但你必须准备好准时上班。从现在起，你要准时回来。", "ev: 借口，总是找借口！我看起来像在乎的人吗？马上去工作，不然你会付出代价的！"))
                 if girl.is_("dom"):
                     girl.char "B-But, Master... Really, it's not my fault! Aw..."
                 else:
@@ -1039,7 +1039,7 @@ label random_night_girl_event(girl, room):
 
 
             "Punish her":
-                $ MC.rand_say(("gd: I don't like to do this, but you must be punished. We have rules that you must follow.", "ne: All right, you know the drill. You broke the rules, now get ready to be punished.", "ev: What a stuck-up little  bitch. You dare talk back to me? Let us discuss your punishment."))
+                $ MC.rand_say(("gd:我不喜欢这样做，但你必须受到惩罚。你必须遵守规定。", "ne: 好了，你知道怎么做。你违反了规则，准备好接受惩罚吧。", "ev: 真是个自大的小贱人。你竟敢顶嘴？让我想想该怎么惩罚你好。"))
                 if girl.is_("very dom"):
                     girl.char "Get away from me! You have no right..."
                     $ girl.change_love(-3)
@@ -2500,7 +2500,7 @@ label random_night_girl_event(girl, room):
                         show screen show_event(pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
                         with fade
 
-                        $ MC.rand_say(("gd: That's it. You look great now. I'm sure the customers will love you.", "ne: Well, you look good enough. Now, go and make the customers happy.", "ev: Hmmpf. Not bad, you look almost like the real thing. Now, go and make an impression on those gullible fools."))
+                        $ MC.rand_say(("gd: 就是这样。你现在看起来很棒。我相信顾客们会喜欢你的。", "ne: 嗯，你看起来很不错。现在，去让顾客感到满意吧。", "ev: Hmmpf。不错，你看起来如假包换。现在，去给那些容易上当的傻瓜留下深刻的印象吧。"))
 
                         girl.char "Thanks..."
 
