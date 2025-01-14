@@ -3124,7 +3124,7 @@ translate schinese farm_meet_gizel_e8d92779:
         $ cntext = "魔法药草"
     elif text1 == "dragon feed":
         $ cntext = "飞龙饲料"
-    "在集市上四处寻找[cntext],你注意到一个异域风情的身影正在附近的香料商那里看货。"
+    "在集市上四处寻找[cntext],你注意到一个充满异域风情的身影正在附近的香料商那里看货。"
 
 # game/BKstory_events.rpy:1574
 translate schinese farm_meet_gizel_2f430e2d:

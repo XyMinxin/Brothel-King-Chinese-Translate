@@ -519,9 +519,9 @@ label end_day:
 
         if sick_girls != []:
             if len(sick_girls) == 1:
-                sick_text += "\n{color=[c_red]}%s has fallen sick.{/color}" % sick_girls[0].name
+                sick_text += "\n{color=[c_red]}%s生病了{/color}😷" % sick_girls[0].name
             else:
-                sick_text += "\n{color=[c_red]}%s have fallen sick.{/color}" % and_text([g.name for g in sick_girls])
+                sick_text += "\n{color=[c_red]}%s生病了{/color}😷" % and_text([g.name for g in sick_girls])
 
     ## Apply advertisement
 
@@ -566,11 +566,11 @@ label end_day:
 
             if dice(6) >= 6 and pony:
                 ad_pic = "events/" + rand_choice(pony_pics)
-                night_text += "{color=[c_pink]}It's time for the ponygirl parade!{/color}\n"
+                night_text += "{color=[c_pink]}母狗游行的时间到了！{/color}\n"
 
             elif brothel.get_effect("special", "demon advertising"):
                 ad_pic = rand_choice(game_image_dict["Misc"]["succubi"])
-                night_text += "{color=[c_softpurple]}Your demonette ally helps draw more customers to your brothel using their supernatural charms.{/color}\n"
+                night_text += "{color=[c_softpurple]}你的恶魔朋友使用了超自然力量，吸引了更多的客户到你的青楼。{/color}\n"
 
             elif adv_girls:
                 adv_girl = rand_choice(adv_girls)
@@ -578,7 +578,7 @@ label end_day:
                 night_text += "%s: {color=[c_pink]}'%s'{/color}\n" % (adv_girl.name, __(adv_girl.pick_dialogue("advertise").line))
 
             elif brothel.advertising > 0:
-                night_text += __("{color=[c_pink]}'Mister! Would you like to come and have a look at our wares? *giggles*'{/color}\n")
+                night_text += "{color=[c_pink]}“先生”!想不想体验一下我们的最新商品？*giggles*'{/color}\n"
 
             if not ad_pic:
                 if brothel.advertising > 0:
@@ -616,8 +616,8 @@ label end_day:
             ttip = list_text([g.fullname for g in striking_girls])
             night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "拒绝工作")
 
-            night_text += "\n{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color} ")
-            log.add_report("{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color}"))
+            night_text += "\n{color=[c_red]}" + and_text([g.name for g in striking_girls]) + "拒绝工作！{/color} "
+            log.add_report("{color=[c_red]}" + and_text([g.name for g in striking_girls]) + "拒绝工作！{/color}")
 
         if resting_girls:
             line = event_color["normal"] % ("休息的员工: %s" % len(resting_girls))
@@ -642,8 +642,8 @@ label end_day:
             night_early.add("Customers turned away: %s" % len(customers), ttip = get_customer_population_count(customers))
 
             ad_pic = "events/" + rand_choice(night_pics)
-            night_text += __("The brothel was closed tonight.")
-            cust_text = brothel.name + __(" was closed tonight, because none of your girls were working.\n")
+            night_text += "青楼今晚暂停营业。"
+            cust_text = brothel.name + "今晚没有人工作，被迫暂停营业。\n"
 
             if len(customers) > 5: # Lose rep for each customer that comes in vain
                 old_rep = brothel.rep
@@ -698,7 +698,7 @@ label end_day:
 
                 night_early.add("Dirtiness", "header")
                 night_early.add("Customers turned away: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
-                cust_text += "\nTurned away: %s" % plus_text(-len(lost_customers))
+                cust_text += "\n离开的客人: %s人" % plus_text(-len(lost_customers))
                 if rep_loss:
                     night_early.add("Reputation lost: %s" % plus_text(rep_loss))
 
@@ -1014,10 +1014,10 @@ label end_day:
                         break # Only one toy can be used at a time
 
                     else:
-                        extra_text += __("\nShe refused to use the ") + __(it.name) + "."
+                        extra_text += "\n她拒绝使用" + __(it.name) + "。"
 
             if used:
-                extra_text += __("\nShe had some fun with the %s." % used)
+                extra_text += "\n她用%s玩的很开心。" % used
                 girl.add_log("used toy")
 
             resting_text += extra_text
@@ -1273,7 +1273,7 @@ label end_day:
 
         else:
             log.costs = brothel.get_maintenance_cost()
-            gold_text += ". " + brothel.name + __(" was closed, so you sent the security and advertising crews home. You paid ") + '{:,}'.format(round_int(log.costs)) + __(" for maintenance.")
+            gold_text += "。" + brothel.name + __(" was closed, so you sent the security and advertising crews home. You paid ") + '{:,}'.format(round_int(log.costs)) + __(" for maintenance.")
 
         loan_payment = MC.repay_loan()
 
@@ -1281,7 +1281,7 @@ label end_day:
             log.costs += loan_payment
             gold_text += "\n您支付了{image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + "来偿还银行的贷款利息。"
 
-        gold_recap = "您支付了{image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + "作为青楼开销。"
+        gold_recap = "您支付了{image=img_gold_24}" + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + "作为青楼开销。"
 
     ## Katchiiing
 
