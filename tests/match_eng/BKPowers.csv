@@ -1,0 +1,195 @@
+old,new
+"BKpowers.rpy:709: new ""Summon cuddly pet""",召唤魔宠
+"BKpowers.rpy:713: new ""Summon this very cute, totally normal and safe pet""",召唤一只安全、无害、呆萌的宠物宝宝。消耗理智: 2，邪恶值+1
+"BKpowers.rpy:717: new ""Ritual orgy""",淫乱仪式
+"BKpowers.rpy:721: new ""Instant gold generation for the brothel, high sanity cost""",获得金币。数量与女孩的阶级、接待人数有关，青楼人气+20。消耗理智: 6，邪恶值+3
+"BKpowers.rpy:725: new ""Ritual bondage""",奴仆仪式
+"BKpowers.rpy:729: new ""Instant gain of Obedience and Libido for all girls, high sanity cost""",所有女孩的服从和性欲+1d6。青楼人气+20。消耗理智: 6，邪恶值+3
+"BKpowers.rpy:733: new ""Ritual violence""",残暴仪式
+"BKpowers.rpy:737: new ""Instant fear generation for all girls, high sanity cost""",所有女孩的恐惧+1d4，同时产出巫灵。青楼人气+20。消耗理智: 6，邪恶值+3
+"BKpowers.rpy:741: new ""Forget""",记忆删除
+"BKpowers.rpy:745: new ""Resets all perks rank C or above""",重置她的所有天赋。消耗理智：4，邪恶值+2
+"BKpowers.rpy:749: new ""Horror visions""",恐怖异象
+"BKpowers.rpy:753: new ""Fear raises faster for all girls""",所有女孩的恐惧收益+25%，持续5天。消耗理智：4，邪恶值+2
+"BKpowers.rpy:757: new ""Soul change""",灵魂交换
+"BKpowers.rpy:761: new ""Alters her personality randomly""",随机改变她的性格。消耗理智：4，邪恶值+2
+"BKpowers.rpy:765: new ""Unholy stamina""",不洁耐力
+"BKpowers.rpy:769: new ""Raises customer capacity for all working and whoring girls""",所有女孩的接待人数+2，春销人数+1，持续5（10）天；消耗理智：3(5)，邪恶值+1(2)
+"BKpowers.rpy:773: new ""Weak point""",弱点转移
+"BKpowers.rpy:777: new ""Girl swaps her negative Trait for a new random one""",随机改变她的负面特质；消耗理智：3，邪恶值+1
+"BKpowers.rpy:781: new ""Brand""",奴隶烙印
+"BKpowers.rpy:785: new ""Turn girl into a slave (free girls only)""",让一个自由女孩变为奴隶；消耗理智：4，邪恶值+2
+"BKpowers.rpy:789: new ""Satisfaction guaranteed""",五星好评
+"BKpowers.rpy:793: new ""+1 satisfaction for all customers""",所有顾客的满意度+1，持续4天；消耗理智：4，邪恶值+2
+"BKpowers.rpy:797: new ""Dynamo""",体力抽取
+"BKpowers.rpy:801: new ""Restores some energy for all brothel girls, depletes her energy""",所有女孩恢复她体力上限的20%，她的体力归零。消耗理智：3，邪恶值+1
+"BKpowers.rpy:805: new ""Pain is the lesson""",肉棒教育
+"BKpowers.rpy:809: new ""She will receive more gains from classes and quests""",她的课程和任务收益+50%，持续7天。消耗理智：3，邪恶值+1
+"BKpowers.rpy:813: new ""Frenzy""",春销狂人
+"BKpowers.rpy:817: new ""She will be able to work without losing energy for a while, then get automatically exhausted""",她在3(7)天内，不会陷入疲劳状态，之后立即疲劳；消耗理智：2(4)，邪恶值+1(2)
+"BKpowers.rpy:821: new ""Warp farm""",扭曲农场
+"BKpowers.rpy:825: new ""Farm training and fear generation will be more efficient for her""",她在农场的偏好和恐惧收益+100%，持续7天；消耗理智：2，邪恶值+1
+"BKpowers.rpy:829: new ""Leech reputation""",人气吸取
+"BKpowers.rpy:833: new ""Some of her reputation will be transferred to another girl of equal or lower rank""",将她当前阶级的人气转移给另一个阶级相同或更低的女孩（上限50%）。消耗理智：2，邪恶值+1
+"BKpowers.rpy:837: new ""Stigmata""",神圣伤痕
+"BKpowers.rpy:841: new ""She will absorb the wounds from another girl and heal her""",治愈一个受伤的女孩，并把伤害转移到自己身上。消耗理智：3，邪恶值+1。 *转移至多6点伤害，免疫特性有效
+"BKpowers.rpy:845: new ""Dark fantasy: Bisexual""",暗黑幻想：双飞
+"BKpowers.rpy:849: new ""Her Bisexual preference will increase""","双飞偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:853: new ""Dark fantasy: Group""",暗黑幻想：群交
+"BKpowers.rpy:857: new ""Her Group preference will increase""","群交偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:861: new ""Blind obedience""",盲从之徒
+"BKpowers.rpy:865: new ""She is less likely to refuse working or training""",她的训练服从要求-30，性行为激活要求-15，持续3天，消耗理智：3，邪恶值+1
+"BKpowers.rpy:869: new ""Leech xp""",经验吸取
+"BKpowers.rpy:873: new ""Share some XP with all girls of lesser level""",将她的25%经验值均摊给所有等级更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:877: new ""Leech jp""",职业吸取
+"BKpowers.rpy:881: new ""Share some JP with all girls of lesser job level""",将她的25%职业经验值均摊给所有职业等级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:885: new ""Bad memories""",糟糕回忆
+"BKpowers.rpy:889: new ""Punishment is more efficient on all girls""",惩罚性回忆对所有女孩的影响+100%，持续7天，消耗理智：3，邪恶值+1
+"BKpowers.rpy:893: new ""Apathy""",冷漠无情
+"BKpowers.rpy:897: new ""Love/Hate and Fear/Trust levels are reduced""",好感/仇恨，恐惧/信任值减少66%. 消耗理智：2，邪恶值+1
+"BKpowers.rpy:901: new ""Abduction""",打家劫色
+"BKpowers.rpy:905: new ""Attempts to kidnap a free girl, may get hurt in the process""",尝试绑架一个自由女孩，成功率与双方的防御和阶级有关，失败时可能受伤。消耗理智：2，邪恶值+1
+"BKpowers.rpy:909: new ""She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level.""",* 成功时，邪恶值额外+2； * 如果目标认识主角，会额外增加邪恶值
+"BKpowers.rpy:913: new ""Spread the love""",播撒爱意
+"BKpowers.rpy:917: new ""Leeches all of her Love and raises Love for all girls in a given district""",指定地点的所有女孩获得她的好感值的15%-30%，她的好感值归零；消耗理智：2，邪恶值+1。 *只能选择好感>6的女孩
+"BKpowers.rpy:921: new ""Change fixation""",厌恶转移
+"BKpowers.rpy:925: new ""Changes a negative fixation to a random one""",把她的一种厌恶行为随机换成另一种。消耗理智：2，邪恶值+1
+"BKpowers.rpy:929: new ""Summon incubus""",召唤恶魔
+"BKpowers.rpy:933: new ""Summon lesser demon to fuck her, boosting a random sex skill, prestige and girl XP""",召唤下级恶魔侵犯她，随机一种性技提高1d6+4，同时获得经验和主角声望。消耗理智：3，邪恶值+1 *不影响处子之身
+"BKpowers.rpy:937: new ""Non Euclidean space""",非欧空间
+"BKpowers.rpy:941: new ""Common rooms in the brothel can accomodate more customers""",选择的营业设施最大人数提升50%，持续5天，理智消耗：2，邪恶值+1
+"BKpowers.rpy:945: new ""Nature calls""",野性呼唤
+"BKpowers.rpy:949: new ""She will remain naked at all times""",她将在5天内保持裸体，理智消耗：2，邪恶值+1
+"BKpowers.rpy:953: new ""Vampire smile""",吸取魅力
+"BKpowers.rpy:957: new ""+1 to Main Character Charisma""",主角魅力+1，持续7天。理智消耗：2，邪恶值+1
+"BKpowers.rpy:961: new ""Vampire swiftness""",吸取速度
+"BKpowers.rpy:965: new ""+1 to Main Character Speed""",主角速度+1，持续7天。理智消耗：2，邪恶值+1
+"BKpowers.rpy:969: new ""Vampire vigor""",吸取力量
+"BKpowers.rpy:973: new ""+1 to Main Character Strength""",主角力量+1，持续7天。理智消耗：2，邪恶值+1
+"BKpowers.rpy:977: new ""Vampire mind""",吸取精神
+"BKpowers.rpy:981: new ""+1 to Main Character Spirit""",主角魔力+1，持续7天。理智消耗：2，邪恶值+1
+"BKpowers.rpy:985: new ""Even out""",雨露均沾
+"BKpowers.rpy:989: new ""Averages out some of her skills (Beauty, Body, Charm & Refinement)""",将她的魅力、外貌、身材、优雅调整到平均值附近；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:993: new ""Beauty, Body, Charm and Refinement skills converge on their average value""",*平均后的小数位会转化为可分配的属性点数
+"BKpowers.rpy:997: new ""Averages out some of her skills (Libido, Obedience, Constitution, Sensitivity)""",将她的敏感、性欲、体格、服从调整到平均值附近；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:1001: new ""Libido, Obedience, Constitution and Sensitivity converge on their average value""",*平均后的小数位会转化为可分配的属性点数
+"BKpowers.rpy:1005: new ""Shuffle""",改头换面
+"BKpowers.rpy:1009: new ""Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement)""",重新随机分配她的魅力、外貌、身材、优雅；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:1013: new ""Beauty, Body, Charm and Refinement skill values are shuffled randomly""",*属性可能超过当前上限
+"BKpowers.rpy:1017: new ""Randomly shuffles the value of some of her skills (Libido, Obedience, Constitution, Sensitivity)""",重新随机分配她的敏感、性欲、体格、服从；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:1021: new ""Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly""",*属性可能超过当前上限
+"BKpowers.rpy:1025: new ""Mulligan""",重抽
+"BKpowers.rpy:1029: new ""Discard hand and redraw power cards""",舍弃全部手牌，重新抽5张卡；理智消耗：1
+"BKpowers.rpy:1033: new ""Mojo surge (yellow)""",抽取巫灵（黄）
+"BKpowers.rpy:1037: new ""Receive 2-6 Yellow Mojo, high sanity cost""",获得 2d3 黄色巫灵；理智消耗：3，邪恶值+1
+"BKpowers.rpy:1041: new ""Mojo surge (red)""",抽取巫灵（红）
+"BKpowers.rpy:1045: new ""Receive 2-6 Red Mojo, high sanity cost""",获得 2d3 红色巫灵；理智消耗：3，邪恶值+1
+"BKpowers.rpy:1049: new ""Mojo surge (blue)""",抽取巫灵（蓝）
+"BKpowers.rpy:1053: new ""Receive 2-6 Blue Mojo, high sanity cost""",获得 2d3 蓝色巫灵；理智消耗：3，邪恶值+1
+"BKpowers.rpy:1057: new ""Mojo surge (green)""",抽取巫灵（绿）
+"BKpowers.rpy:1061: new ""Receive 2-6 Green Mojo, high sanity cost""",获得 2d3 绿色巫灵；理智消耗：3，邪恶值+1
+"BKpowers.rpy:1065: new ""Leech skills""",属性吸取
+"BKpowers.rpy:1069: new ""Leeches some of her skills (Service & Sex) to another girl""",将她的侍奉、性交属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1073: new ""Leeches some of her service and sex skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1077: new ""Leeches some of her skills (Anal & Fetish) to another girl""",将她的肛交、调教属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1081: new ""Leeches some of her anal and fetish skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1085: new ""Dark fantasy: Service""",暗黑幻想：侍奉
+"BKpowers.rpy:1089: new ""Her Service preference will increase""","侍奉偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:1093: new ""Dark fantasy: Sex""",暗黑幻想：性交
+"BKpowers.rpy:1097: new ""Her Sex preference will increase""","性交偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:1101: new ""Dark fantasy: Anal""",暗黑幻想：肛交
+"BKpowers.rpy:1105: new ""Her Anal preference will increase""","肛交偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:1109: new ""Dark fantasy: Fetish""",暗黑幻想：调教
+"BKpowers.rpy:1113: new ""Her Fetish preference will increase""","调教偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:1117: new ""Minion training""",锻炼仆从
+"BKpowers.rpy:1121: new ""Shares some XP with a minion""",训练一个农场仆从，使祂获得（女孩阶级*5）经验；女孩损失50经验值。理智消耗：1
+"BKpowers.rpy:1125: new ""Connected minds""",精神连结
+"BKpowers.rpy:1129: new ""Target another girl. Reduces her chances of refusing acts the conduit accepts""",选择另一个女孩，提高她对（触媒女孩接受的行为）的服从判定结果，持续5天，理智消耗：1
+"BKpowers.rpy:1133: new ""Leeches some of her skills (Beauty & Body) to another girl""",将她的外貌、身材属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1137: new ""Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1141: new ""Leeches some of her skills (Charm & Refinement) to another girl""",将她的魅力、优雅属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1145: new ""Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1149: new ""Leeches some of her skills (Sensitivity & Constitution) to another girl""",将她的敏感、体格属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1153: new ""Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1157: new ""Leeches some of her skills (Libido & Obedience) to another girl""",将她的性欲、服从属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
+"BKpowers.rpy:1161: new ""Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1165: new ""Hallucination""",如梦似幻
+"BKpowers.rpy:1169: new ""All hypnosis attempts on this girl are more likely to succeed""",对她的催眠判定补正+3，持续5天，理智消耗：1
+"BKpowers.rpy:1173: new ""Fearful trade""",巫灵交易
+"BKpowers.rpy:1177: new ""Swaps colored mojo to purple mojo at a rate of 2 for 1""",以2:1的比例将任意数量的彩色巫灵兑换成紫色巫灵；理智消耗：1
+"BKpowers.rpy:1181: new ""Dark fantasy: Naked""",暗黑幻想：露出
+"BKpowers.rpy:1185: new ""Her Naked preference will increase""","露出偏好+2.5, 消耗理智：2，邪恶值+1"
+"BKpowers.rpy:1189: new ""Oni""",召唤豪鬼
+"BKpowers.rpy:1193: new ""Raises brothel security""",青楼安全+1，持续5(10)天，理智消耗：1(2)，邪恶值+0(1)
+"BKpowers.rpy:1197: new ""Haniwa""",召唤哈尼
+"BKpowers.rpy:1201: new ""Raises brothel maintenance""",青楼清洁+1，持续5(10)天，理智消耗：1(2)，邪恶值+0(1)
+"BKpowers.rpy:1205: new ""Demonette""",召唤魅魔
+"BKpowers.rpy:1209: new ""Raises brothel advertising""",青楼宣传+1，持续5(10)天，理智消耗：1(2)，邪恶值+0(1)
+"BKpowers.rpy:1213: new ""Summon this absolutely adorable and utterly HARMLESS not-at-all evil pet. Pinky swear.""",召唤一只人畜无害，狂霸酷炫的宠物，骗你是小狗。消耗(全部)理智，邪恶值+3
+"BKpowers.rpy:1217: new ""Large gold generation for the brothel, instant loss of sanity.""",获得大量金币，数量与女孩的阶级、接待人数有关（收益翻倍）。青楼人气+(50)。消耗(全部)理智，邪恶值+3
+"BKpowers.rpy:1221: new ""Large gain of Obedience and Libido for all girls, instant loss of sanity.""",所有女孩的服从和性欲+2d6（收益翻倍）。青楼人气+(50)。消耗全部理智，邪恶值+3
+"BKpowers.rpy:1225: new ""Fear generation for all girls with a large mojo yield, instant loss of sanity.""",所有女孩的恐惧+2d4（收益翻倍），同时产出巫灵。青楼人气+(50)。消耗全部理智，邪恶值+3
+"BKpowers.rpy:1229: new ""Reset all perks and perk trees.""",重置她的所有天赋和天赋树。消耗理智: 6，邪恶值+3
+"BKpowers.rpy:1233: new ""Regular MC interactions generate Fear. Fear raises faster for all girls. Lasts 10 days.""",所有女孩的恐惧收益+25%，和女孩进行的所有交互行为都额外+1恐惧值；持续(10)天。消耗理智：5，邪恶值+2
+"BKpowers.rpy:1237: new ""Alters her personality, you can influence the outcome.""",重新选择她的性格。消耗理智：5，邪恶值+2
+"BKpowers.rpy:1241: new ""Girl swaps her negative Trait for a new one, you can influence the outcome""",重新选择她的负面特质；消耗理智：5，邪恶值+2
+"BKpowers.rpy:1245: new ""Turn all free girls in the brothel or farm into slaves""",让青楼和农场的所有自由女孩全部变为奴隶；消耗理智：6，邪恶值+3
+"BKpowers.rpy:1249: new ""+2 satisfaction for all customers""",所有顾客的满意度+2，持续7天；消耗理智：5，邪恶值+2
+"BKpowers.rpy:1253: new ""Restores her max energy level to all brothel girls, exhausts and hurts her""",所有女孩恢复等同于她体力上限的体力，她的体力归零并受伤1d3天。消耗理智：5，邪恶值+2
+"BKpowers.rpy:1257: new ""All girls will receive more gains from classes and quests""",所有女孩的课程和任务收益+50%，持续7天。消耗理智：6，邪恶值+3
+"BKpowers.rpy:1261: new ""Farm training and fear generation will be more efficient for all girls""",所有女孩在农场的偏好和恐惧收益+100%，持续7天；消耗理智：4，邪恶值+2
+"BKpowers.rpy:1265: new ""All of her reputation will be transferred to another girl of lower or similar rank""",将她当前阶级的人气全部转移给另一个阶级相同或更低的女孩。消耗理智：4，邪恶值+2
+"BKpowers.rpy:1269: new ""She will absorb wounds from all girls and heal them""",治愈所有受伤的女孩，并把伤害全部转移到自己身上，消耗理智：5，邪恶值+2。 *每个女孩转移至多6点伤害，免疫特性有效
+"BKpowers.rpy:1273: new ""Her Bisexual preference will increase (larger effect)""","双飞偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1277: new ""Her Group preference will increase (larger effect)""","群交偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1281: new ""She is a lot less likely to refuse working, training or whoring""",她的训练服从要求-70，性行为激活要求-35，全部偏好至少为非常勉强。持续3天，消耗理智：5，邪恶值+2
+"BKpowers.rpy:1285: new ""Share more XP with all girls of lesser level""",将她的50%经验值均摊给所有等级更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1289: new ""Share more JP with all girls of lesser job level""",将她的50%职业经验值均摊给所有职业等级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1293: new ""Worse memories""",痛苦回忆
+"BKpowers.rpy:1297: new ""Punishment is a lot more efficient on all girls.""",惩罚性回忆对所有女孩的影响+300%，持续7天，消耗理智：4，邪恶值+2
+"BKpowers.rpy:1301: new ""Love/Hate and Fear/Trust levels are set back to zero""",好感/仇恨，恐惧/信任全部归零. 消耗理智：4，邪恶值+2
+"BKpowers.rpy:1305: new ""Attempts to kidnap a free girl, may get hurt in the process. Higher success chances""",尝试绑架一个自由女孩，成功率与双方的防御和阶级有关（超载补正+2），失败时可能受伤。消耗理智：4，邪恶值+2
+"BKpowers.rpy:1309: new ""She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level (supercharged: higher chance of success).""",* 成功时，邪恶值额外+2；如果目标认识主角，会额外增加邪恶值
+"BKpowers.rpy:1313: new ""Leeches all of her Love and raises Love for all girls in the city""",指定区域的所有女孩获得她的好感值的15%-30%，她的好感值归零；消耗理智：4，邪恶值+2。 *只能选择好感>6的女孩
+"BKpowers.rpy:1317: new ""Remove fixation""",厌恶消除
+"BKpowers.rpy:1321: new ""Removes her negative fixation instantly. Exhausts her""",立即消除选择的厌恶行为，使目标疲惫。消耗理智：4，邪恶值+2
+"BKpowers.rpy:1325: new ""Summon large demon to fuck her, boosting two random sex skills, prestige and girl XP even more""",召唤上级恶魔侵犯她，随机2种性技提高1d11+9，同时获得经验和主角声望。消耗理智：6，邪恶值+3  *不影响处子之身
+"BKpowers.rpy:1329: new ""Common rooms in the brothel can accomodate a lot more customers""",所有营业设施最大人数提升50%，持续5天，理智消耗：4，邪恶值+2
+"BKpowers.rpy:1333: new ""She will remain naked at all times. Temporary boost to main skills""",她将在10天内保持裸体，魅力、外貌、身材、优雅+5；理智消耗：3，邪恶值+1
+"BKpowers.rpy:1337: new ""+2 to Main Character Charisma""",主角魅力+2，持续7天。理智消耗：3，邪恶值+1
+"BKpowers.rpy:1341: new ""+2 to Main Character Speed""",主角速度+2，持续7天。理智消耗：3，邪恶值+1
+"BKpowers.rpy:1345: new ""+2 to Main Character Strength""",主角力量+2，持续7天。理智消耗：3，邪恶值+1
+"BKpowers.rpy:1349: new ""+2 to Main Character Spirit""",主角魔力+2，持续7天。理智消耗：3，邪恶值+1
+"BKpowers.rpy:1353: new ""Averages out Beauty, Body, Charm & Refinement skills + permanent skill boost""",将她的魅力、外貌、身材、优雅调整到平均值附近，并永久提升20%；
+"BKpowers.rpy:1357: new ""Beauty, Body, Charm and Refinement skills converge on their average value, then receive a permanent boost.""",理智消耗：2，邪恶值+1。*平均后的小数位会转化为可分配的属性点数
+"BKpowers.rpy:1361: new ""Averages out Libido, Obedience, Constitution, Sensitivity skills + permanent skill boost""",将她的敏感、性欲、体格、服从调整到平均值附近，并永久提升20%；
+"BKpowers.rpy:1365: new ""Libido, Obedience, Constitution and Sensitivity skills converge on their average value, then receive a permanent boost.""",理智消耗：2，邪恶值+1。*平均后的小数位会转化为可分配的属性点数
+"BKpowers.rpy:1369: new ""Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement), receiving a permanent boost""",重新随机分配她的魅力、外貌、身材、优雅；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:1373: new ""Beauty, Body, Charm and Refinement skill values are shuffled randomly, receiving a permanent boost""",*属性可能超过当前上限 *超载无效
+"BKpowers.rpy:1377: new ""Randomly shuffles the value of some of her skills (Libido, Obedience, Constitution, Sensitivity), receiving a permanent boost""",重新随机分配她的敏感、性欲、体格、服从；理智消耗：2，邪恶值+1。
+"BKpowers.rpy:1381: new ""Libido, Obedience, Constitution and Sensitivity skill values are shuffled randomly, receiving a permanent boost""",*属性可能超过当前上限 *超载无效
+"BKpowers.rpy:1385: new ""Discard hand and redraw with +2 extra cards""",舍弃全部手牌，重新抽(7)张卡；理智消耗：2，邪恶值+1
+"BKpowers.rpy:1389: new ""Receive 4-12 Yellow Mojo, very high sanity cost""",获得 4d3 黄色巫灵；理智消耗：5，邪恶值+2
+"BKpowers.rpy:1393: new ""Receive 4-12 Red Mojo, very high sanity cost""",获得 4d3 红色巫灵；理智消耗：5，邪恶值+2
+"BKpowers.rpy:1397: new ""Receive 4-12 Blue Mojo, very high sanity cost""",获得 4d3 蓝色巫灵；理智消耗：5，邪恶值+2
+"BKpowers.rpy:1401: new ""Receive 4-12 Green Mojo, very high sanity cost""",获得 4d3 绿色巫灵；理智消耗：5，邪恶值+2
+"BKpowers.rpy:1405: new ""Leeches some of her skills (Service & Sex) to another girl (larger effect)""",将她的侍奉、性交属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1409: new ""Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1413: new ""Leeches some of her skills (Anal & Service) to another girl (larger effect)""",将她的肛交、调教属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1417: new ""Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1421: new ""Her Service preference will increase (larger effect)""","侍奉偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1425: new ""Her Sex preference will increase (larger effect)""","性交偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1429: new ""Her Anal preference will increase (larger effect)""","肛交偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1433: new ""Her Fetish preference will increase (larger effect)""","调教偏好+5, 消耗理智：4，邪恶值+2"
+"BKpowers.rpy:1437: new ""Shares XP with all minions of the same type""",训练农场某一类的所有仆从，使祂们获得（女孩阶级*5）经验；女孩损失50经验值。理智消耗：4，邪恶值+2
+"BKpowers.rpy:1441: new ""Target another girl. She will have the same chances of accepting acts the conduit accepts""",选择另一个女孩，使她的服从判定结果上升到与触媒女孩相同，持续5天，理智消耗：1
+"BKpowers.rpy:1445: new ""Leeches some of her skills (Beauty & Body) to another girl (larger effect)""",将她的外貌、身材属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1449: new ""Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1453: new ""Leeches some of her skills (Charm & Refinement) to another girl (larger effect)""",将她的魅力、优雅属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1457: new ""Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1461: new ""Leeches more of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank (larger effect)""",将她的敏感、体格属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1465: new ""Leeches some of her skills (Libido & Obedience) to another girl (larger effect)""",将她的性欲、服从属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
+"BKpowers.rpy:1469: new ""Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1473: new ""All hypnosis attempts on all girls are more likely to succeed""",所有女孩的催眠判定补正+3，持续5天，理智消耗：2
+"BKpowers.rpy:1477: new ""Swaps colored mojo to purple mojo at a rate of 3 for 2""",以3:2的比例将任意数量的彩色巫灵兑换成紫色巫灵；理智消耗：2，邪恶值+1
+"BKpowers.rpy:1481: new ""Her Naked preference will increase (larger effect)""","露出偏好+5, 消耗理智：4，邪恶值+2"

@@ -16,7 +16,7 @@ translate schinese farm_powers_init_b1c2eb11:
 translate schinese power_use_763ba73d:
 
     # "You cannot summon Chaos more than once."
-    "你只能召唤一次混沌。"
+    "你只能召唤一次卡奥斯。"
 
 # game/BKpowers.rpy:519
 translate schinese power_use_41db0f0f:

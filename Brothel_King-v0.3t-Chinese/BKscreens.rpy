@@ -8611,10 +8611,10 @@ screen power_detail(pow):
 
             add pow.pic.get() xalign 0.5
 
-            text pow.name + {True : " (S)", False : ""}[pow.super] size res_font(24) bold True
-            text pow.description size res_font(14)
+            text pow.name + {True : " (超载)", False : ""}[pow.super] size res_font(24) bold True
+            text pow.description size res_font(12)
 
-            text "魔力消耗:" size res_font(18) bold True
+            text "巫灵消耗:" size res_font(18) bold True
             hbox spacing xres(6):
                 if conduit:
                     $ mod = conduit.get_effect("change", "mojo cost")
@@ -8783,7 +8783,7 @@ screen power_card_content:
             has vbox spacing yres(2) xfill True yfill True
             # Display name and short description
             text pow.name bold True color col xalign 0.5 yalign 0.0 size res_font(1+int(9 * size_boost)) text_align 0.5
-            text pow.short_description color col xalign 0.5 yalign 0.0 size res_font(1+int(7 * size_boost)) text_align 0.5
+            text pow.short_description color col xalign 0.5 yalign 0.0 size res_font(1+int(8 * size_boost)) text_align 0.5
 
         vbox align (0.05, 0.05) spacing yres(3):
             for mcolor, mcost in pow.get_mojo_cost():
