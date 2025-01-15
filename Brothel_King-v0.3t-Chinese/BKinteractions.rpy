@@ -219,7 +219,7 @@ label slave_naked_menu(girl):
 
                 girl.char "W-What??? But, but, I have to serve customers tonight!"
 
-                $ MC.rand_say(("gd: I know, so this will make you more comfortable being naked around strangers. It's something you need to learn.", "ne: Precisely. You will serve them naked, and let them touch you a little. This is good for business.", "ev: Oh yes, and make sure to give them an eyeful too... You're a sex slave, don't you forget that, and before long they will be fucking every hole in your body."))
+                $ MC.rand_say(("gd: 我知道，所以这会让你在陌生人面前更加自在。你会慢慢适应的。", "ne: 没错。你要光着膀子伺候他们，让他们揩一下油。这对生意有利。", "ev: 哦，对了，别忘了要让他们饱餐一顿...别忘了你是个性奴，过不了多久他们就会填满你身上的每一个洞。"))
 
                 if naked_score >= 100:
                     call dialogue(girl, "slave naked request accept") from _call_dialogue_116
@@ -229,7 +229,7 @@ label slave_naked_menu(girl):
                 else:
                     call dialogue(girl, "slave naked request accept") from _call_dialogue_117
 
-                    $ MC.rand_say(("Do it.", "ev: Do it. Or else..."))
+                    $ MC.rand_say(("我让你脱，没听见吗？", "ev: 别让我重复第二遍..."))
 
                     girl.char "Aw..."
 
@@ -1068,7 +1068,7 @@ label slave_chat_tastes(girl):
 
                 call dialogue(girl, "slave hit") from _call_dialogue_160
 
-                $ MC.rand_say(("如果你再顶嘴，下次力道会更大。给我记好了。", "长点记性,没有下次了。"))
+                $ MC.rand_say(("如果你再顶嘴，下次力会更疼。给我记好了。", "长点记性,没有下次了。"))
 
     return
 
@@ -1140,7 +1140,7 @@ label slave_chat_origins(girl):
 
                 call dialogue(girl, "slave hit") from _call_dialogue_165
 
-                $ MC.rand_say(("如果你再顶嘴，下次力道会更大。给我记好了。", "长点记性,没有下次了。"))
+                $ MC.rand_say(("如果你再顶嘴，下次会更疼。给我记好了。", "长点记性,没有下次了。"))
 
     else:
         $ girl.personality_unlock["origin"] = True
@@ -1297,8 +1297,8 @@ label slave_train_sex_acts(girl, mode):
 
                     "Give up":
                         $ inter.MC_reaction = "give up"
-                        $ MC.rand_say((__("Fine... Have it your way."), __("I can't believe slaves these days... Fine!"), __("ne: Humph. I'll let you off the hook this one time. You owe me now."),
-                                        __("gd: All right, I'm not going to force you to do something you don't like."), __("ev: Fuck, I'll let you be this time... But don't test my patience.")))
+                        $ MC.rand_say(("好吧...随你的便。", "真不敢相信现在的奴隶...好吧！", "ne: 哼，这次就先放过你，但是下次...",
+                                    "gd: 好吧，我不会强迫你做你不喜欢的事情。", "ev: 操，这一次我就放过你了....但是不要考验我的耐心。"))
 
 
             else:
@@ -1314,14 +1314,14 @@ label slave_train_sex_acts(girl, mode):
                     "Force her":
                         $ inter.MC_reaction = "force"
                         $ impact = 2
-                        $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
-                            "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with this this time."))
+                        $ MC.rand_say(("我是你的主人，你得听我的话。", "照我说的做，这是最后通牒!!!",
+                            "ev: 闭嘴，臭婊子，这儿轮不到你说了算！", "gd: 我已经忍无可忍了。这次你逃不掉了。"))
 
                         call slave_rape(girl, act) from _call_slave_rape
 
                     "Give up":
                         $ inter.MC_reaction = "give up"
-                        $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
+                        $ MC.rand_say(("好吧... 随你的便。", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
                                         "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
 
     return
@@ -1425,8 +1425,8 @@ label slave_remove_fixation(girl):
 
         "Give up" if inter.response != "accepted":
             $ inter.MC_reaction = "give up"
-            $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
-                           "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
+            $ MC.rand_say(("好吧...随你的便。", "真不敢相信现在的奴隶...好吧！", "ne: 哼，这次就先放过你，但是下次...",
+                            "gd: 好吧，我不会强迫你做你不喜欢的事情。", "ev: 操，这一次我就放过你了....但是不要考验我的耐心。"))
             return
 
 
@@ -2812,8 +2812,8 @@ label slave_punish_scold(girl):
             $ MC.rand_say(("gd: 请努力变得更有品位。这是一个高档的青楼，不是鱼市场。", "ne: 你真的必须向每个人展示你是多么无知和不成熟吗？", "ev: 我发誓，你比门把手还笨。你最好学习礼仪，否则我会让你学习。"))
 
     else:
-        $ MC.rand_say(("ar: 为了太阳神的爱，你能不能努力表现一下？", "sh: 我发誓，在莎莉娅的阴影下没有比你更懒惰的奴隶了！",
-                       "ng: 如果你有一个造物主，我会让你去见他！", "gd: 你没有尽你的最大努力，这伤害了我们所有人。", "ne: 你懒惰又傲慢。你必须做得更好。", "ev: 你不尊重我，你最好准备好面对后果。"
+        $ MC.rand_say(("ar: 为了太阳神的宠爱，你能不能努力表现一下？", "sh: 我发誓，在莎莉娅的注视下没有比你更懒惰的奴隶了！",
+                       "ng: 如果你有一个造物主，那我就送你去见他！", "gd: 你没有尽你的最大努力，这伤害了我们所有人。", "ne: 你懒惰又傲慢。你必须做得更好。", "ev: 你不尊重我，你最好准备好面对后果。"
                        "为什么不试着更努力一点呢？", "你必须做得更好，为了你自己的利益。"))
 
     call slave_punish(girl, "scold") from _call_slave_punish
@@ -2849,7 +2849,7 @@ label slave_punish_naked(girl):
     return
 
 label slave_punish_beat(girl): # To do: add a special reaction if she loves/hates spanking
-    $ MC.rand_say(("恐怕你别无选择。", "如果服从不是你的天性，那就后天培养。", "ev: 你这个笨蛋，一无是处的婊子！！！如果你听不懂人话，我就把它钉进你那空空如也的脑袋里！"))
+    $ MC.rand_say(("恐怕你别无选择。", "如果服从命令不是你的天性，那就后天培养。", "ev: 你这个笨蛋，一无是处的婊子！！！如果你听不懂人话，我就把它钉进你那空空如也的脑袋里！"))
     "Grabbing a long metal ruler, you order her to lower her skirt."
     call slave_punish(girl, "beat") from _call_slave_punish_3
     return
@@ -6574,7 +6574,7 @@ label slave_story_help(girl, act):
 
             girl.char "You... You will? Yes, that will do! Thank you, from the bottom of my heart! Oh, I miss my family so much..."
 
-            $ MC.rand_say(("gd: I'm happy if you're happy.", "ne: Now, pack your things before I change my mind.", "ev: But don't you dare take advantage of this and run away, or I will gut you."))
+            $ MC.rand_say(("gd: 只要你开心就好。", "ne: 在我改变主意之前，收拾好你的东西。", "ev: 但你可别想着趁机逃跑，否则我就把你开膛破肚。"))
 
             girl.char "Understood... Thank you! I don't care what people say, you're a good master, you know?"
 
@@ -6591,7 +6591,7 @@ label slave_story_help(girl, act):
 
             you "About that [girl.story_profession]..."
 
-            $ MC.rand_say(("gd: I'll send some of my men to give him a lesson. A good beating should suffice.", "ne: I'll send some men after him, make them break a few bones or give him a permanent scar... That should teach him.", "ev: I'll send some of my men to torture and kill him. They'll make it slow, too... I'ma get medieval on his ass..."))
+            $ MC.rand_say(("gd: 我会派人去教训教训他。好好打一顿就够了。", "ne: 我会派人去追他，让他们打断他几根骨头，或者给他留下一个永久的伤疤...这应该能给他上一课。", "ev: 我会派人去折磨他，然后杀了他。他们会慢慢来...我要狠狠揍他一顿..."))
 
             girl.char "You will? I would love for him to suffer... Curse that son of a bitch!"
 

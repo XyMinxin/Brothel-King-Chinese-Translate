@@ -112,7 +112,7 @@ translate schinese security_40d05f1c:
 translate schinese security_6a73366b:
 
     # guard "Boss! I counted [enemies] of them. And they also have [war_machines] war machines! They are led by [enemy_general.fullname], a renowned [enemy_g]."
-    guard "老板! 我估算了一下[enemies]的数量。他们甚至有[war_machines]这样的攻城器械! 他们是[enemy_general.fullname]的手下,那个臭名昭著的[enemy_g]。"
+    guard "老板! 我估算了一下敌人大概有[enemies]人。他们甚至有[war_machines]台攻城器械! 他们是[enemy_general.fullname]的手下,那个臭名昭著的[enemy_g]。"
 
 # game/BKsecurity.rpy:381
 translate schinese security_d7897846:
@@ -124,7 +124,7 @@ translate schinese security_d7897846:
 translate schinese security_9296ec4b:
 
     # security "{b}Battle Phase 1{/b}\nYou must defend the Brothel! What do you do?" nointeract
-    security "{b}战斗的第一阶段{/b}\n你必须守住你的青楼! 你打算怎么做?" nointeract
+    security "{b}战斗一触即发{/b}\n你必须守住你的青楼! 你打算怎么做?" nointeract
 
 # game/BKsecurity.rpy:389
 translate schinese security_f144d3fa:
@@ -220,7 +220,7 @@ translate schinese security_f0beac49:
 translate schinese security_c112ec25:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}战斗的第二阶段{/b}\n敌人的攻城器械准备好开火了。"
+    security_breach "{b}战斗的准备阶段{/b}\n敌人的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:477
 translate schinese security_5da4e062:
@@ -232,19 +232,19 @@ translate schinese security_5da4e062:
 translate schinese security_c518ae29:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe remaining war machines get ready to attack."
-    security_breach "{b}战斗的第二阶段{/b}\n敌人剩余的攻城器械准备好开火了。"
+    security_breach "{b}战斗的准备阶段{/b}\n敌人剩余的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:482
 translate schinese security_eb05bc0e:
 
     # security "{b}Battle Phase 2{/b}\nNo war machines are left to attack."
-    security "{b}战斗的第二阶段{/b}\n敌人已经没有攻城器械可以使用了。"
+    security "{b}战斗的准备阶段{/b}\n敌人已经没有攻城器械可以使用了。"
 
 # game/BKsecurity.rpy:485
 translate schinese security_c112ec25_1:
 
     # security_breach "{b}Battle Phase 2{/b}\nThe war machines get ready to fire."
-    security_breach "{b}战斗的第二阶段{/b}\n敌人的攻城器械准备好开火了。"
+    security_breach "{b}战斗的准备阶段{/b}\n敌人的攻城器械准备好开火了。"
 
 # game/BKsecurity.rpy:508
 translate schinese security_447932b3:

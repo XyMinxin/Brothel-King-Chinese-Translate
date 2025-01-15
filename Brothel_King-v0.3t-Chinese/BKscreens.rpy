@@ -4645,7 +4645,7 @@ screen furniture():
                             action NullAction()
                             tooltip (brothel.current_building.description + "\n" + str(dur) + __(" day(s) to complete."))
                             add brothel.current_building.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
-                            text str(dur) + __("d") xalign 1.0 yalign 0.0 size res_font(18)
+                            text str(dur) + "天" xalign 1.0 yalign 0.0 size res_font(18)
                     else:
                         text "没有正在建造或升级的设施。" italic True size res_font(14)
 

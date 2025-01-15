@@ -7249,7 +7249,7 @@ label is_broken(girl):
 
     gizel upset "It seems using her to conduct evil powers have cost her the last of her {a=help:sanity}sanity{/a}... She's good for nothing now. She'll only harm herself."
 
-    $ MC.rand_say(("gd: Oh no... Is she really gone? Isn't there something we can do?", "ne: Damn, that sucks... I never intended it to end that way...", "ev: That stupid cunt! How am I to recoup my investment now?"))
+    $ MC.rand_say(("gd: 哦不... 她真的没救了吗？我们就不能做点什么吗？", "ne: 该死，天杀的... 我从没想过会变成这样...", "ev: 那个蠢女人！我现在怎样才能收回投资呢？"))
 
     gizel angry "Like I said, she's good for nothing at the brothel or even the farm in that state. You do have a few options, though."
 
@@ -7281,7 +7281,7 @@ label is_broken(girl):
 
             gizel "I can just have her stay in the old barn, far from the other girls, and give her some of the minion's feed."
 
-            $ MC.rand_say(("gd: Cold...", "ne: Tough, but... I guess I can see the advantages.", "ev: Ha! Perfect."))
+            $ MC.rand_say(("gd: 好残忍...", "ne: 虽然，但是... 我想你有你的道理。", "ev: 哈哈！完美！"))
 
             you "But I thought only licensed brothels were authorized in Zan?"
 
@@ -7384,7 +7384,7 @@ label asylum_return(girl, score):
 
         nun "She is well-rested, but please be careful next time. Whatever ou have been doing to that poor slave, she was an inch from losing her mind."
 
-        $ MC.rand_say(["ev: Hmph... *shrug*", "gd: I'm sorry. I will take good care of her.", "ne: Noted. Can we go, now?"])
+        $ MC.rand_say(["ev: 唔呣... *耸肩*", "gd: 很抱歉。我会好好照顾她的。", "ne: 知道了。我们现在可以走了吗？"])
 
         call acquire_girl(girl, context = "asylum") from _call_acquire_girl
 

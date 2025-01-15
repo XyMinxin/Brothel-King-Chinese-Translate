@@ -8550,7 +8550,7 @@ label c2_palace_visit1(): # Happens after all Kunoichi have been met once
 
                 "You quickly realize that they are a diverse bunch, with foreign merchants mingling with petty nobles, country officials and professional intriguants. It makes you feel less of an outsider."
 
-                $ MC.rand_say(["wr: I've worked as a hired blade for many such arrogant pricks... They're all the same.", "wz: Just like the courts of the Westmarch swamp lords... With thankfully less mosquitoes.", "tr: It's a den of snakes, but knowing these people just might be advantageous for business..."])
+                $ MC.rand_say(["wr: 我曾在许多这样傲慢的混蛋手下做事...他们都一样。", "wz: 就像西境的沼泽领主的宫廷一样...幸好这里蚊子不多。", "tr: 这是一个蛇窝，但接触这些人可能对生意有利..."])
 
                 "Leaning in, you try to overhear some conversations."
 

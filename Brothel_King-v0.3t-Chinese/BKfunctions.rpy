@@ -1129,8 +1129,8 @@ init -3 python:
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
 #                   reward = (cust.diff  + dice(cust.diff)) * district.rank
-                    violent_text += "\n{color=[c_green]}Fortunately, your security is close at hand. They quickly gang up on him and proceed to beat the crap out of his sorry ass.\n{/color}Your girl is safe, and you pocket the content of his wallet: %s gold." % str(cust.ent_budget)
-                    violent_report = "{color=[c_green]}" + violent_report + " Your guards beat him up (%s gold earned).{/color}" % str(cust.ent_budget)
+                    violent_text += "\n{color=[c_green]}幸运的是，你的警卫就在身边。他们迅速反应过来对付他，把他打得屁滚尿流。\n{/color}你的女孩很安全，你把他钱包里的钱装进了口袋作为赔偿:+ %s金币" % str(cust.ent_budget)
+                    violent_report = "{color=[c_green]}" + violent_report + "你的警卫把他揍了一顿 (+ %s金币)。{/color}" % str(cust.ent_budget)
                     MC.gold += cust.ent_budget
                     girl.change_mood(1)
                     girl.change_fear(-1)
