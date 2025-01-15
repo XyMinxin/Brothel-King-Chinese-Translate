@@ -216,31 +216,31 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:498
     old "wood"
-    new "wood"
+    new "木材"
 
     # game/BKinit_variables.rpy:498
     old "leather"
-    new "leather"
+    new "皮革"
 
     # game/BKinit_variables.rpy:498
     old "dye"
-    new "dye"
+    new "染料"
 
     # game/BKinit_variables.rpy:498
     old "marble"
-    new "marble"
+    new "大理石"
 
     # game/BKinit_variables.rpy:498
     old "ore"
-    new "ore"
+    new "矿石"
 
     # game/BKinit_variables.rpy:498
     old "silk"
-    new "silk"
+    new "丝绸"
 
     # game/BKinit_variables.rpy:498
     old "diamond"
-    new "diamond"
+    new "钻石"
 
     # game/BKinit_variables.rpy:2277
     old "Zan"

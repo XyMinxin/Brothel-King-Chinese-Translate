@@ -8611,7 +8611,7 @@ screen power_detail(pow):
 
             add pow.pic.get() xalign 0.5
 
-            text pow.name + {True : " (超载)", False : ""}[pow.super] size res_font(24) bold True
+            text __(pow.name) + {True : " (超载)", False : ""}[pow.super] size res_font(24) bold True
             text pow.description size res_font(12)
 
             text "巫灵消耗:" size res_font(18) bold True
@@ -8639,7 +8639,7 @@ screen power_detail(pow):
 
             if pow.duration:
                 text "持续时间:" size res_font(18) bold True
-                text "[pow.duration] days" size res_font(14)
+                text "[pow.duration] 天" size res_font(14)
 
 
 # Card deck
@@ -8705,7 +8705,7 @@ screen power_hand(hand, context="idle", start_at = 0, x=0.5, y=0.75):
             else:
                 action _super_off
                 tooltip __("Click or hold shift to activate supercharge (boost powers for more mojo and sanity)")
-            text "S" size res_font(28) bold True xalign 0.5 yalign 0.5:
+            text "S!" size res_font(28) bold True xalign 0.5 yalign 0.5:
                 if not _super:
                     color c_brown
 

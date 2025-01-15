@@ -16,7 +16,7 @@ translate schinese farm_powers_init_b1c2eb11:
 translate schinese power_use_763ba73d:
 
     # "You cannot summon Chaos more than once."
-    "你只能召唤一次卡奥斯。"
+    "你只能召唤一次混沌。"
 
 # game/BKpowers.rpy:519
 translate schinese power_use_41db0f0f:
@@ -1134,7 +1134,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的外貌、身材属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Leeches some of her skills (Charm & Refinement) to another girl"
@@ -1142,7 +1142,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的魅力、优雅属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Leeches some of her skills (Sensitivity & Constitution) to another girl"
@@ -1150,7 +1150,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的敏感、体格属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Leeches some of her skills (Libido & Obedience) to another girl"
@@ -1158,7 +1158,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的性欲、服从属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Hallucination"
@@ -1406,7 +1406,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的侍奉、性交属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "Leeches some of her skills (Anal & Service) to another girl (larger effect)"
@@ -1414,7 +1414,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的肛交、调教属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "Her Service preference will increase (larger effect)"
@@ -1446,7 +1446,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的外貌、身材属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "Leeches some of her skills (Charm & Refinement) to another girl (larger effect)"
@@ -1454,7 +1454,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的魅力、优雅属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "Leeches more of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank (larger effect)"
@@ -1466,7 +1466,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank"
-    new ""
+    new "将她的性欲、服从属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "All hypnosis attempts on all girls are more likely to succeed"

@@ -106,13 +106,13 @@ old,new
 "BKpowers.rpy:1125: new ""Connected minds""",精神连结
 "BKpowers.rpy:1129: new ""Target another girl. Reduces her chances of refusing acts the conduit accepts""",选择另一个女孩，提高她对（触媒女孩接受的行为）的服从判定结果，持续5天，理智消耗：1
 "BKpowers.rpy:1133: new ""Leeches some of her skills (Beauty & Body) to another girl""",将她的外貌、身材属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
-"BKpowers.rpy:1137: new ""Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1137: new ""Leeches some of her beauty and body skills and transfers them to a girl of equal or lower rank""",将她的外貌、身材属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
 "BKpowers.rpy:1141: new ""Leeches some of her skills (Charm & Refinement) to another girl""",将她的魅力、优雅属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
-"BKpowers.rpy:1145: new ""Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1145: new ""Leeches some of her charm and refinement skills and transfers them to a girl of equal or lower rank""",将她的魅力、优雅属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
 "BKpowers.rpy:1149: new ""Leeches some of her skills (Sensitivity & Constitution) to another girl""",将她的敏感、体格属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
-"BKpowers.rpy:1153: new ""Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1153: new ""Leeches some of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank""",将她的敏感、体格属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
 "BKpowers.rpy:1157: new ""Leeches some of her skills (Libido & Obedience) to another girl""",将她的性欲、服从属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
-"BKpowers.rpy:1161: new ""Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1161: new ""Leeches some of her libido and obedience skills and transfers them to a girl of equal or lower rank""",将她的性欲、服从属性的25%转移给一个阶级相同或更低的女孩。消耗理智：2，邪恶值+1
 "BKpowers.rpy:1165: new ""Hallucination""",如梦似幻
 "BKpowers.rpy:1169: new ""All hypnosis attempts on this girl are more likely to succeed""",对她的催眠判定补正+3，持续5天，理智消耗：1
 "BKpowers.rpy:1173: new ""Fearful trade""",巫灵交易
@@ -174,9 +174,9 @@ old,new
 "BKpowers.rpy:1397: new ""Receive 4-12 Blue Mojo, very high sanity cost""",获得 4d3 蓝色巫灵；理智消耗：5，邪恶值+2
 "BKpowers.rpy:1401: new ""Receive 4-12 Green Mojo, very high sanity cost""",获得 4d3 绿色巫灵；理智消耗：5，邪恶值+2
 "BKpowers.rpy:1405: new ""Leeches some of her skills (Service & Sex) to another girl (larger effect)""",将她的侍奉、性交属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
-"BKpowers.rpy:1409: new ""Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1409: new ""Leeches more of her service and sex skills and transfers them to a girl of equal or lower rank""",将她的侍奉、性交属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1413: new ""Leeches some of her skills (Anal & Service) to another girl (larger effect)""",将她的肛交、调教属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
-"BKpowers.rpy:1417: new ""Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1417: new ""Leeches more of her anal and fetish skills and transfers them to a girl of equal or lower rank""",将她的肛交、调教属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1421: new ""Her Service preference will increase (larger effect)""","侍奉偏好+5, 消耗理智：4，邪恶值+2"
 "BKpowers.rpy:1425: new ""Her Sex preference will increase (larger effect)""","性交偏好+5, 消耗理智：4，邪恶值+2"
 "BKpowers.rpy:1429: new ""Her Anal preference will increase (larger effect)""","肛交偏好+5, 消耗理智：4，邪恶值+2"
@@ -184,12 +184,12 @@ old,new
 "BKpowers.rpy:1437: new ""Shares XP with all minions of the same type""",训练农场某一类的所有仆从，使祂们获得（女孩阶级*5）经验；女孩损失50经验值。理智消耗：4，邪恶值+2
 "BKpowers.rpy:1441: new ""Target another girl. She will have the same chances of accepting acts the conduit accepts""",选择另一个女孩，使她的服从判定结果上升到与触媒女孩相同，持续5天，理智消耗：1
 "BKpowers.rpy:1445: new ""Leeches some of her skills (Beauty & Body) to another girl (larger effect)""",将她的外貌、身材属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
-"BKpowers.rpy:1449: new ""Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1449: new ""Leeches more of her beauty and body skills and transfers them to a girl of equal or lower rank""",将她的外貌、身材属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1453: new ""Leeches some of her skills (Charm & Refinement) to another girl (larger effect)""",将她的魅力、优雅属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
-"BKpowers.rpy:1457: new ""Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1457: new ""Leeches more of her charm and refinement skills and transfers them to a girl of equal or lower rank""",将她的魅力、优雅属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1461: new ""Leeches more of her sensitivity and constitution skills and transfers them to a girl of equal or lower rank (larger effect)""",将她的敏感、体格属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1465: new ""Leeches some of her skills (Libido & Obedience) to another girl (larger effect)""",将她的性欲、服从属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
-"BKpowers.rpy:1469: new ""Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank""",
+"BKpowers.rpy:1469: new ""Leeches more of her libido and obedience skills and transfers them to a girl of equal or lower rank""",将她的性欲、服从属性的50%转移给一个阶级相同或更低的女孩。消耗理智：3，邪恶值+1
 "BKpowers.rpy:1473: new ""All hypnosis attempts on all girls are more likely to succeed""",所有女孩的催眠判定补正+3，持续5天，理智消耗：2
 "BKpowers.rpy:1477: new ""Swaps colored mojo to purple mojo at a rate of 3 for 2""",以3:2的比例将任意数量的彩色巫灵兑换成紫色巫灵；理智消耗：2，邪恶值+1
 "BKpowers.rpy:1481: new ""Her Naked preference will increase (larger effect)""","露出偏好+5, 消耗理智：4，邪恶值+2"
