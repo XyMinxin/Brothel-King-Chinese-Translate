@@ -92,7 +92,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Country girl"
-    new "乡野村姑"
+    new "涉世未深"
 
     # game/BKtraits.rpy:87
     old "Noble"
@@ -100,7 +100,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Naturist"
-    new "裸体主义"
+    new "暴露狂"
 
     # game/BKtraits.rpy:87
     old "She has no shame showing her naked body to perfect strangers."
@@ -112,7 +112,7 @@ translate schinese strings:
 
     # game/BKtraits.rpy:87
     old "Conduit"
-    new "魔力媒介"
+    new "元素亲和"
 
     # game/BKtraits.rpy:87
     old "Burns with fiery energy."

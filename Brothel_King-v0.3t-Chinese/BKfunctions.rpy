@@ -5552,9 +5552,9 @@ init -3 python:
         return foldername
 
     def print_ignore_list():
-        ignore_text = list_text(sorted(persistent.pic_ignore_list), "", if_none="No pictures have been set to ignore.")
+        ignore_text = list_text(sorted(persistent.pic_ignore_list), "", if_none="没有图片被设置为不可见。")
         if persistent.pic_ignore_list:
-            ignore_text = "%i picture%s currently ignored (pictures will be updated after restart):\n" % (len(persistent.pic_ignore_list), plural(len(persistent.pic_ignore_list))) + ignore_text
+            ignore_text = "%i张图片%s 当前被设置为不可见。(重启游戏后会更新图片):\n" % (len(persistent.pic_ignore_list), plural(len(persistent.pic_ignore_list))) + ignore_text
 
         with open((config.gamedir + "\\ignored_pictures.txt"), "wt") as ignore_file: #? Check that it works if file doesn't exist
             ignore_file.write(ignore_text)
