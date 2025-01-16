@@ -180,15 +180,15 @@ init python:
             self.sanity_cost = sanity_cost # Sanity cost should range from 1 (mild) to 6 (very high)
 
             if self.sanity_cost >= 10:
-                self.sanity_lvl = "Break"
+                self.sanity_lvl = __("Break")
             elif self.sanity_cost > 5:
-                self.sanity_lvl = "Very high"
+                self.sanity_lvl = __("Very high")
             elif self.sanity_cost > 3:
-                self.sanity_lvl = "High"
+                self.sanity_lvl = __("High")
             elif self.sanity_cost > 1:
-                self.sanity_lvl = "Medium"
+                self.sanity_lvl = __("Medium")
             else:
-                self.sanity_lvl = "Low"
+                self.sanity_lvl = __("Low")
 
         def get(self, _super=False):
             if _super:

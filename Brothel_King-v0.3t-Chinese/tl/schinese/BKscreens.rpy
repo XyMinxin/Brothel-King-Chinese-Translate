@@ -1160,31 +1160,31 @@ translate schinese strings:
 
     # game/BKscreens.rpy:2986
     old "She will work to the maximum of her abilities."
-    new "She will work to the maximum of her abilities."
+    new "她将尽力接客."
 
     # game/BKscreens.rpy:2989
     old "She will receive half the usual number of clients, saving some energy."
-    new "She will receive half the usual number of clients, saving some energy."
+    new "她将只接待一半客人，节省体力消耗."
 
     # game/BKscreens.rpy:2992
     old "She will rest and recover some energy."
-    new "She will rest and recover some energy."
+    new "她将休息，恢复一些体力."
 
     # game/BKscreens.rpy:2994
     old "\n{i}Right-click to reverse cycle order.{/i}"
-    new "\n{i}Right-click to reverse cycle order.{/i}"
+    new "\n{i}右键：逆序轮转{/i}"
 
     # game/BKscreens.rpy:3001
     old "You cannot change her schedule as you gave her a day off."
-    new "You cannot change her schedule as you gave her a day off."
+    new "你已经给她放了一天假了."
 
     # game/BKscreens.rpy:3006
     old "Click here to save %s's schedule."
-    new "Click here to save %s's schedule."
+    new "点击保存 %s 的排班表."
 
     # game/BKscreens.rpy:3007
     old "Click here to load a schedule for %s."
-    new "Click here to load a schedule for %s."
+    new "点击为 %s 载入排班表."
 
     # game/BKscreens.rpy:3013
     old "Autorest options"
@@ -1264,7 +1264,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4267
     old "{/b} gold for the girls in the farm"
-    new "{/b} gold for the girls in the farm"
+    new "{/b} 金币（在农场的女孩）"
 
     # game/BKscreens.rpy:4279
     old "{b}Trainer{/b}"
@@ -1360,19 +1360,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4746
     old "Average budget: %s gold"
-    new "Average budget: %s gold"
+    new "平均预算: %s 金币"
 
     # game/BKscreens.rpy:4746
     old "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)"
-    new "This is the average {b}maximum budget{/b} for %s. (%s for entertainment, %s for whoring)"
+    new "顾客对 %s 的{b}最大平均预算{/b} . (娱乐：%s, 卖淫：%s)"
 
     # game/BKscreens.rpy:4763
     old "Use this setting to change your customers' preference for "
-    new "Use this setting to change your customers' preference for "
+    new "使用这个设置改变顾客的活动偏好："
 
     # game/BKscreens.rpy:4763
     old " up to +"
-    new " up to +"
+    new " 至多 +"
 
     # game/BKscreens.rpy:4767
     old "You must build new furnishing at the Carpenter's Wagon to change "
@@ -1380,7 +1380,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4767
     old " preference."
-    new " preference."
+    new " 偏好度."
 
     # game/BKscreens.rpy:4787
     old "When possible, customers will be matched with girls of the same rank."
@@ -1420,27 +1420,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4880
     old "Entertainment Phase"
-    new "Entertainment Phase"
+    new "娱乐阶段"
 
     # game/BKscreens.rpy:4882
     old "Whoring Phase"
-    new "Whoring Phase"
+    new "春销阶段"
 
     # game/BKscreens.rpy:4901
     old "All customers have been assigned."
-    new "All customers have been assigned."
+    new "所有顾客都已被指派."
 
     # game/BKscreens.rpy:4912
     old "No customers."
-    new "No customers."
+    new "无顾客."
 
     # game/BKscreens.rpy:4941
     old " (capacity: %s/%s).{/b}"
-    new " (capacity: %s/%s).{/b}"
+    new " (人数: %s/%s).{/b}"
 
     # game/BKscreens.rpy:4968
     old " (interactions: %s/%s).{/b}"
-    new " (interactions: %s/%s).{/b}"
+    new " (交互: %s/%s).{/b}"
 
     # game/BKscreens.rpy:5121
     old "Headhunter"
@@ -1496,11 +1496,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5225
     old "Show last night's log"
-    new "Show last night's log"
+    new "显示昨夜的报告"
 
     # game/BKscreens.rpy:5228
     old "Show satisfaction report"
-    new "Show satisfaction report"
+    new "显示满意度报告"
 
     # game/BKscreens.rpy:5539
     old "Click to go back (or use right-click)."
@@ -1512,7 +1512,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5756
     old "Character"
-    new "Character"
+    new "角色"
 
     # game/BKscreens.rpy:5756
     old "Create your Main Character."
@@ -1520,7 +1520,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:5758
     old "Difficulty"
-    new "Difficulty"
+    new "难度"
 
     # game/BKscreens.rpy:5758
     old "Change difficulty settings."
@@ -1808,7 +1808,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6704
     old "\nRequires 2 or 3 free minions at the same facility."
-    new "\nRequires 2 or 3 free minions at the same facility."
+    new "\n需要同一设施中有2-3个空闲的仆从."
 
     # game/BKscreens.rpy:6718
     old "Everything (%s)"
@@ -1848,11 +1848,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6761
     old "\nShe is weak to "
-    new "\nShe is weak to "
+    new "\n她很害怕 "
 
     # game/BKscreens.rpy:6761
     old "s. Training will be more efficient, but doing it against her will will increase fear and decrease mood faster."
-    new "s. Training will be more efficient, but doing it against her will will increase fear and decrease mood faster."
+    new "训练会更有效，但是违背她的意愿会增加更多恐惧、减少心情，以及增加主角的邪恶值"
 
     # game/BKscreens.rpy:6763
     old "\nThere are no available minions in this facility."
@@ -1864,7 +1864,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6796
     old "%s currently assigned to this facility. "
-    new "%s currently assigned to this facility. "
+    new "%s 已被指派到这个设施. "
 
     # game/BKscreens.rpy:6801
     old "Hold her (rest)"
@@ -1988,51 +1988,51 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7495
     old "In storage: "
-    new "In storage: "
+    new "库存: "
 
     # game/BKscreens.rpy:7505
     old "Market resources"
-    new "Market resources"
+    new "市场资源"
 
     # game/BKscreens.rpy:7510
     old "Sell your "
-    new "卖掉你的"
+    new "出售 "
 
     # game/BKscreens.rpy:7510
     old " for gold"
-    new "换取金币"
+    new "换取金币 "
 
     # game/BKscreens.rpy:7521
     old "Get 1 for "
-    new "Get 1 for "
+    new "每个需要 "
 
     # game/BKscreens.rpy:7523
     old "Get "
-    new "Get "
+    new "用 "
 
     # game/BKscreens.rpy:7523
     old " for 1"
-    new " for 1"
+    new " 交换 1"
 
     # game/BKscreens.rpy:7536
     old "Trade "
-    new "Trade "
+    new "用 "
 
     # game/BKscreens.rpy:7536
     old " in exchange for your "
-    new " in exchange for your "
+    new " 交换你的 "
 
     # game/BKscreens.rpy:7616
     old "Buy"
-    new "Buy"
+    new "购买"
 
     # game/BKscreens.rpy:7618
     old "Trade"
-    new "Trade"
+    new "交易"
 
     # game/BKscreens.rpy:7623
     old "Buy "
-    new "Buy "
+    new "购买 "
 
     # game/BKscreens.rpy:7646
     old "Your precious keyboard can't save you now!"
@@ -2388,27 +2388,27 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8680
     old "You have used all of your powers this week."
-    new "你已经用尽了本周的力量。"
+    new "你已经用尽了本周的卡牌。"
 
     # game/BKscreens.rpy:8702
     old "Click or hold shift to deactivate supercharge (boost powers for more mojo and sanity)"
-    new "点击或按住shift以取消过载（增强能量以获得更多的魔力和理智）"
+    new "点击或按住shift以取消超载（增强能量以获得更多的魔力和理智）"
 
     # game/BKscreens.rpy:8706
     old "Click or hold shift to activate supercharge (boost powers for more mojo and sanity)"
-    new "点击或按住shift来激活过载（增强能量以获得更多的魔力和理智）"
+    new "点击或按住shift来激活超载（增强能量以获得更多的魔力和理智）"
 
     # game/BKscreens.rpy:8834
     old "This girl already conducted a power today."
-    new "这个女孩今天已经做了一次手术。"
+    new "这个女孩今天已经引导了一次巫术。"
 
     # game/BKscreens.rpy:8837
     old "This girl's sanity is broken."
-    new "这个女孩的精神崩溃了。"
+    new "这个女孩的理智崩溃了。"
 
     # game/BKscreens.rpy:8841
     old "Conduit: "
-    new "Conduit: "
+    new "触媒: "
 
     # game/BKscreens.rpy:8849
     old "Target: "
@@ -2420,15 +2420,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8865
     old "You cannot choose the conduit as the target."
-    new "你不能选择导管作为目标。"
+    new "你不能选择触媒作为目标。"
 
     # game/BKscreens.rpy:8886
     old "Choose a conduit for your power first."
-    new "首先为你的力量选择一个管道。"
+    new "首先为你的巫术选择一个触媒。"
 
     # game/BKscreens.rpy:8889
     old "Choose a target for your power first."
-    new "首先为你的力量选择一个目标。"
+    new "首先为你的巫术选择一个目标。"
 
     # game/BKscreens.rpy:8919
     old "No girls are available."
@@ -2436,15 +2436,15 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8952
     old "Supercharge: "
-    new "过载: "
+    new "超载: "
 
     # game/BKscreens.rpy:8953
     old "Conduit: : "
-    new "Conduit: : "
+    new "触媒: : "
 
     # game/BKscreens.rpy:8957
     old "Payment: "
-    new "Payment: "
+    new "代价: "
 
     # game/BKscreens.rpy:8960
     old "ON"
@@ -2456,19 +2456,19 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8990
     old "Cast"
-    new "Cast"
+    new "施放"
 
     # game/BKscreens.rpy:9016
     old "Current rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
-    new "当前 rate:\n{b}%i {image=mojo purple} for %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
+    new "当前交换:\n{b}%i {image=mojo purple} = %i {image=mojo green}{image=mojo blue}{image=mojo red}{image=mojo yellow}{/b}"
 
     # game/BKscreens.rpy:9060
     old "{b}Clear{/b}"
-    new "{b}Clear{/b}"
+    new "{b}清空{/b}"
 
     # game/BKscreens.rpy:9061
     old "{b}Commit{/b}"
-    new "{b}Commit{/b}"
+    new "{b}确认{/b}"
 
     # game/BKscreens.rpy:9081
     old "                                                                                                  Buy Sill's 'Slutty Schoolgirl' outfit for only $29.99...                                                   Get the ultimate 'Hung like a horse' armor for just $149.99 (2 minutes remaining)...                                                 *SEXY* Recruit the exciting new character 'Lara Crotch' for only $49.99...                                                 *SPECIAL SALE* Don't miss out on our latest season pass 'Summer of a cocksucker' for only $69.99 (valid for 7 days)...                                                                                                                                                                                    "

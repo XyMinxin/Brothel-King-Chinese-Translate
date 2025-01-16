@@ -113,7 +113,7 @@ screen right_menu():
 
                 if mod_menu:
                     null height 20
-                    textbutton "模组" action Show("mod_menu_display", mod_menu=mod_menu) tooltip "Access options from your active mods (%s)." % and_text([event_color["special"] % m.name for m in game.active_mods.values()])  text_size res_font(20) style_group "rm" xalign 1.0
+                    textbutton "模组" action Show("mod_menu_display", mod_menu=mod_menu) tooltip "更改已激活的模组设置(%s)。" % and_text([event_color["special"] % m.name for m in game.active_mods.values()])  text_size res_font(20) style_group "rm" xalign 1.0
 
                 null height 20
 

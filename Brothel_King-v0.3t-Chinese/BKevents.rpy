@@ -4637,9 +4637,9 @@ label run_contract_continue:
     scene black with fade
 
     if len(temp_tasks) == 1:
-        $ tsk_text = "Your job"
+        $ tsk_text = "你的任务"
     else:
-        $ tsk_text = "Your first task"
+        $ tsk_text = "第一个任务"
 
     while temp_tasks: # Loop will be existed once a task fails
         $ tsk = temp_tasks.pop(0)
@@ -4682,9 +4682,9 @@ label run_contract_continue:
             jump run_contract_end
 
         if len(temp_tasks) > 1:
-            $ tsk_text = "Your next task"
+            $ tsk_text = "下一个任务"
         else:
-            $ tsk_text = "Your final task"
+            $ tsk_text = "最后一个任务"
 
 label run_contract_end():
 
