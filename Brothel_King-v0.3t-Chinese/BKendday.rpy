@@ -667,15 +667,15 @@ label end_day:
 
         if cleanliness == "dusty":
             turned_away = (dice(2, district.rank)-1)
-            maint_text = "\nYour brothel is getting dusty. There are cobwebs in the rooms."
+            maint_text = "\n青楼里的灰尘许久没有打扫。房间里都结蜘蛛网了。"
 
         elif cleanliness == "dirty":
             turned_away = dice(3, district.rank)
-            maint_text = "\nYour brothel is getting dirty. Sill thinks she saw a rat."
+            maint_text = "\n青楼里越来越脏了。希露甚至看到了老鼠。"
 
         elif cleanliness == "disgusting":
             turned_away = dice(6, district.rank)
-            maint_text = "\nThis place is a disgusting mess. Customers are turning away and girls are getting sick!"
+            maint_text = "\n这里臭不可闻。顾客都捏着鼻子走开了，滋生的病菌会让女孩们生病！"
 
         if working_girls:
             # Turn away disgusted customers
@@ -720,10 +720,10 @@ label end_day:
     #### SECURITY EVENTS ####
 
     if brothel.get_effect("special", "demon maintenance"):
-        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["hannies"]), char = "", text = "Although dumber than a door knob, hannies are pretty good at polishing said door knobs. Your impish allies help clean up the mess your customers have left behind, and they work for free: what's not to like?", type="UI")) from _call_show_night_event_7
+        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["hannies"]), char = "", text = "虽然比门把手还笨，但它们却很擅长抛光门把手。哈尼们帮你清理了顾客留下的烂摊子，他们可不需要工钱，还有什么好抱怨的呢？", type="UI")) from _call_show_night_event_7
 
     if brothel.get_effect("special", "demon security"):
-        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "Your security is bolstered by the massive presence of your demonic ally. Keeping the peace tonight should be a breeze.", type="UI")) from _call_show_night_event_8
+        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "你的恶魔盟友能够让你高枕无忧。镇住场子对它们来说应该是轻而易举的事。", type="UI")) from _call_show_night_event_8
 
     if brothel.threat_build_up(): # Returns True if security event may proc
         call security(working_girls) from _call_security
@@ -910,7 +910,7 @@ label end_day:
             ev = Event(Picture(pic, "events/" + pic), text = text1 + "名女孩可以提供性服务， %s名顾客失望的离开了。" % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
             perform_events.append(ev)
 
-            log.add_report(event_color["bad"] % (__("%s名顾客不能发泄性欲，失望地离开了。") % str(len(leftover_customers))))
+            log.add_report(event_color["bad"] % ("%s名顾客不能发泄性欲，失望地离开了。" % str(len(leftover_customers))))
 
 
     # Predict image for first event in Perform list
@@ -983,14 +983,14 @@ label end_day:
                     for g in girl.friends:
                         if not g.get_effect("special", "shield"):
                             g.add_effects(shield_effect)
-                            extra_text = "\n" + girl.name + " cast a protective shield on her friend " + g.fullname + "."
-                            resting_changes.add("Shield cast on " + g.fullname, col=c_lightblue)
+                            extra_text = "\n" + girl.name + "对她的姐妹" + g.fullname + "释放了一个魔法护盾。"
+                            resting_changes.add("护盾保护：" + g.fullname, col=c_lightblue)
                             extra_sound = s_spell
                             break
                 else:
                     girl.add_effects(shield_effect)
-                    extra_text =  "\n" + girl.name + " cast a protective shield on herself."
-                    resting_changes.add("Shield cast on herself", col=c_lightblue)
+                    extra_text =  "\n" + girl.name + "对她自己释放了一个魔法护盾。"
+                    resting_changes.add("护盾自我保护", col=c_lightblue)
                     extra_sound = s_spell
 
             # Use her toys
