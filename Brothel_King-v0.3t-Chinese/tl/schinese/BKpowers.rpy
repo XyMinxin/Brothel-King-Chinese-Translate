@@ -726,7 +726,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Instant gain of Obedience and Libido for all girls, high sanity cost"
-    new "所有女孩的服从和性欲+1d6。青楼人气+20。消耗理智: 6，邪恶值+3"
+    new "所有女孩的服从和性欲+1~6。青楼人气+20。消耗理智: 6，邪恶值+3"
 
     # game/BKpowers.rpy:12
     old "Ritual violence"
@@ -734,7 +734,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Instant fear generation for all girls, high sanity cost"
-    new "所有女孩的恐惧+1d4，同时产出巫灵。青楼人气+20。消耗理智: 6，邪恶值+3"
+    new "所有女孩的恐惧+1~4，同时产出咒力。青楼人气+20。消耗理智: 6，邪恶值+3"
 
     # game/BKpowers.rpy:12
     old "Forget"
@@ -754,7 +754,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Soul change"
-    new "灵魂交换"
+    new "灵魂重铸"
 
     # game/BKpowers.rpy:12
     old "Alters her personality randomly"
@@ -842,7 +842,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Bisexual"
-    new "暗黑幻想：双飞"
+    new "黑暗狂想曲：双飞"
 
     # game/BKpowers.rpy:12
     old "Her Bisexual preference will increase"
@@ -850,7 +850,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Group"
-    new "暗黑幻想：群交"
+    new "黑暗狂想曲：群交"
 
     # game/BKpowers.rpy:12
     old "Her Group preference will increase"
@@ -866,7 +866,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leech xp"
-    new "经验吸取"
+    new "移花接木"
 
     # game/BKpowers.rpy:12
     old "Share some XP with all girls of lesser level"
@@ -874,7 +874,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leech jp"
-    new "职业吸取"
+    new "以老带新"
 
     # game/BKpowers.rpy:12
     old "Share some JP with all girls of lesser job level"
@@ -882,7 +882,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Bad memories"
-    new "糟糕回忆"
+    new "精神鞭笞"
 
     # game/BKpowers.rpy:12
     old "Punishment is more efficient on all girls"
@@ -890,7 +890,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Apathy"
-    new "冷漠无情"
+    new "心如止水"
 
     # game/BKpowers.rpy:12
     old "Love/Hate and Fear/Trust levels are reduced"
@@ -914,11 +914,11 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Leeches all of her Love and raises Love for all girls in a given district"
-    new "指定地点的所有女孩获得她的好感值的15%-30%，她的好感值归零；消耗理智：2，邪恶值+1。 *只能选择好感>6的女孩"
+    new "指定地点的所有女孩获得她的好感度的15%-30%，她的好感度归零；消耗理智：2，邪恶值+1。 *只能选择好感>6的女孩"
 
     # game/BKpowers.rpy:12
     old "Change fixation"
-    new "厌恶转移"
+    new "斗转星移"
 
     # game/BKpowers.rpy:12
     old "Changes a negative fixation to a random one"
@@ -926,7 +926,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Summon incubus"
-    new "召唤恶魔"
+    new "恶魔仪式"
 
     # game/BKpowers.rpy:12
     old "Summon lesser demon to fuck her, boosting a random sex skill, prestige and girl XP"
@@ -934,7 +934,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Non Euclidean space"
-    new "非欧空间"
+    new "空间折叠"
 
     # game/BKpowers.rpy:12
     old "Common rooms in the brothel can accomodate more customers"
@@ -942,7 +942,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Nature calls"
-    new "野性呼唤"
+    new "野性之心"
 
     # game/BKpowers.rpy:12
     old "She will remain naked at all times"
@@ -1022,47 +1022,47 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Mulligan"
-    new "重抽"
+    new "重新抽卡"
 
     # game/BKpowers.rpy:12
     old "Discard hand and redraw power cards"
-    new "舍弃全部手牌，重新抽5张卡；理智消耗：1"
+    new "弃置所有手牌，重新抽5张卡；理智消耗：1"
 
     # game/BKpowers.rpy:12
     old "Mojo surge (yellow)"
-    new "抽取巫灵（黄）"
+    new "提炼咒力（黄）"
 
     # game/BKpowers.rpy:12
     old "Receive 2-6 Yellow Mojo, high sanity cost"
-    new "获得 2d3 黄色巫灵；理智消耗：3，邪恶值+1"
+    new "获得2~6点黄色咒力；理智消耗：3，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Mojo surge (red)"
-    new "抽取巫灵（红）"
+    new "提炼咒力（红）"
 
     # game/BKpowers.rpy:12
     old "Receive 2-6 Red Mojo, high sanity cost"
-    new "获得 2d3 红色巫灵；理智消耗：3，邪恶值+1"
+    new "获得2~6点红色咒力；理智消耗：3，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Mojo surge (blue)"
-    new "抽取巫灵（蓝）"
+    new "提炼咒力（蓝）"
 
     # game/BKpowers.rpy:12
     old "Receive 2-6 Blue Mojo, high sanity cost"
-    new "获得 2d3 蓝色巫灵；理智消耗：3，邪恶值+1"
+    new "获得2~6点蓝色咒力；理智消耗：3，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Mojo surge (green)"
-    new "抽取巫灵（绿）"
+    new "提炼咒力（绿）"
 
     # game/BKpowers.rpy:12
     old "Receive 2-6 Green Mojo, high sanity cost"
-    new "获得 2d3 绿色巫灵；理智消耗：3，邪恶值+1"
+    new "获得2~6点绿色咒力；理智消耗：3，邪恶值+1"
 
     # game/BKpowers.rpy:12
     old "Leech skills"
-    new "属性吸取"
+    new "属性汲取"
 
     # game/BKpowers.rpy:12
     old "Leeches some of her skills (Service & Sex) to another girl"
@@ -1082,7 +1082,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Service"
-    new "暗黑幻想：侍奉"
+    new "黑暗狂想曲：侍奉"
 
     # game/BKpowers.rpy:12
     old "Her Service preference will increase"
@@ -1090,7 +1090,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Sex"
-    new "暗黑幻想：性交"
+    new "黑暗狂想曲：性交"
 
     # game/BKpowers.rpy:12
     old "Her Sex preference will increase"
@@ -1098,7 +1098,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Anal"
-    new "暗黑幻想：肛交"
+    new "黑暗狂想曲：肛交"
 
     # game/BKpowers.rpy:12
     old "Her Anal preference will increase"
@@ -1106,7 +1106,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Fetish"
-    new "暗黑幻想：调教"
+    new "黑暗狂想曲：调教"
 
     # game/BKpowers.rpy:12
     old "Her Fetish preference will increase"
@@ -1114,7 +1114,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Minion training"
-    new "锻炼仆从"
+    new "拔苗助长"
 
     # game/BKpowers.rpy:12
     old "Shares some XP with a minion"
@@ -1122,7 +1122,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Connected minds"
-    new "精神连结"
+    new "精神链接"
 
     # game/BKpowers.rpy:12
     old "Target another girl. Reduces her chances of refusing acts the conduit accepts"
@@ -1170,15 +1170,15 @@ translate schinese strings:
 
     # game/BKpowers.rpy:12
     old "Fearful trade"
-    new "巫灵交易"
+    new "咒力转换"
 
     # game/BKpowers.rpy:12
     old "Swaps colored mojo to purple mojo at a rate of 2 for 1"
-    new "以2:1的比例将任意数量的彩色巫灵兑换成紫色巫灵；理智消耗：1"
+    new "以2:1的比例将任意数量的彩色咒力转换成紫色咒力；理智消耗：1"
 
     # game/BKpowers.rpy:12
     old "Dark fantasy: Naked"
-    new "暗黑幻想：露出"
+    new "黑暗狂想曲：露出"
 
     # game/BKpowers.rpy:12
     old "Her Naked preference will increase"
@@ -1222,7 +1222,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Fear generation for all girls with a large mojo yield, instant loss of sanity."
-    new "所有女孩的恐惧+2d4（收益翻倍），同时产出巫灵。青楼人气+(50)。消耗全部理智，邪恶值+3"
+    new "所有女孩的恐惧值+2~8（收益翻倍），同时产出咒力。青楼人气+(50)。消耗全部理智，邪恶值+3"
 
     # game/BKpowers.rpy:76
     old "Reset all perks and perk trees."
@@ -1242,7 +1242,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Turn all free girls in the brothel or farm into slaves"
-    new "让青楼和农场的所有自由女孩全部变为奴隶；消耗理智：6，邪恶值+3"
+    new "将青楼和农场的所有自由女孩全部变为奴隶；消耗理智：6，邪恶值+3"
 
     # game/BKpowers.rpy:76
     old "+2 satisfaction for all customers"
@@ -1306,11 +1306,11 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "She will go to the city at night and attempt capturing a free girl. Her chances improve with her defense level (supercharged: higher chance of success)."
-    new "* 成功时，邪恶值额外+2；如果目标认识主角，会额外增加邪恶值"
+    new "*成功时，邪恶值额外+2；如果目标认识主角，会额外增加邪恶值"
 
     # game/BKpowers.rpy:76
     old "Leeches all of her Love and raises Love for all girls in the city"
-    new "指定区域的所有女孩获得她的好感值的15%-30%，她的好感值归零；消耗理智：4，邪恶值+2。 *只能选择好感>6的女孩"
+    new "指定区域的所有女孩获得她的好感度的15%-30%，她的好感度归零；消耗理智：4，邪恶值+2。 *只能选择好感>6的女孩"
 
     # game/BKpowers.rpy:76
     old "Remove fixation"
@@ -1322,7 +1322,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Summon large demon to fuck her, boosting two random sex skills, prestige and girl XP even more"
-    new "召唤上级恶魔侵犯她，随机2种性技提高1d11+9，同时获得经验和主角声望。消耗理智：6，邪恶值+3  *不影响处子之身"
+    new "召唤上级恶魔侵犯她，使其随机2种性技熟练度提高10~20，同时获得经验和主角声望。消耗理智：6，邪恶值+3  *不会破处"
 
     # game/BKpowers.rpy:76
     old "Common rooms in the brothel can accomodate a lot more customers"
@@ -1330,7 +1330,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "She will remain naked at all times. Temporary boost to main skills"
-    new "她将在10天内保持裸体，魅力、外貌、身材、优雅+5；理智消耗：3，邪恶值+1"
+    new "她将在10天内保持裸体，魅力、外貌、身材、优雅属性+5；理智消耗：3，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "+2 to Main Character Charisma"
@@ -1350,19 +1350,19 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Averages out Beauty, Body, Charm & Refinement skills + permanent skill boost"
-    new "将她的魅力、外貌、身材、优雅调整到平均值附近，并永久提升20%；"
+    new "将她的魅力、外貌、身材、优雅属性平均分配，并永久提升20%；"
 
     # game/BKpowers.rpy:76
     old "Beauty, Body, Charm and Refinement skills converge on their average value, then receive a permanent boost."
-    new "理智消耗：2，邪恶值+1。*平均后的小数位会转化为可分配的属性点数"
+    new "理智消耗：2，邪恶值+1。*无法均分的部分将转化为可分配的属性点数"
 
     # game/BKpowers.rpy:76
     old "Averages out Libido, Obedience, Constitution, Sensitivity skills + permanent skill boost"
-    new "将她的敏感、性欲、体格、服从调整到平均值附近，并永久提升20%；"
+    new "将她的敏感、性欲、体格、服从属性平均分配，并永久提升20%；"
 
     # game/BKpowers.rpy:76
     old "Libido, Obedience, Constitution and Sensitivity skills converge on their average value, then receive a permanent boost."
-    new "理智消耗：2，邪恶值+1。*平均后的小数位会转化为可分配的属性点数"
+    new "理智消耗：2，邪恶值+1。*无法均分的部分将转化为可分配的属性点数"
 
     # game/BKpowers.rpy:76
     old "Randomly shuffles the value of some of her skills (Beauty, Body, Charm & Refinement), receiving a permanent boost"
@@ -1386,19 +1386,19 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Receive 4-12 Yellow Mojo, very high sanity cost"
-    new "获得 4d3 黄色巫灵；理智消耗：5，邪恶值+2"
+    new "获得 4d3 黄色咒力；理智消耗：5，邪恶值+2"
 
     # game/BKpowers.rpy:76
     old "Receive 4-12 Red Mojo, very high sanity cost"
-    new "获得 4d3 红色巫灵；理智消耗：5，邪恶值+2"
+    new "获得 4d3 红色咒力；理智消耗：5，邪恶值+2"
 
     # game/BKpowers.rpy:76
     old "Receive 4-12 Blue Mojo, very high sanity cost"
-    new "获得 4d3 蓝色巫灵；理智消耗：5，邪恶值+2"
+    new "获得 4d3 蓝色咒力；理智消耗：5，邪恶值+2"
 
     # game/BKpowers.rpy:76
     old "Receive 4-12 Green Mojo, very high sanity cost"
-    new "获得 4d3 绿色巫灵；理智消耗：5，邪恶值+2"
+    new "获得 4d3 绿色咒力；理智消耗：5，邪恶值+2"
 
     # game/BKpowers.rpy:76
     old "Leeches some of her skills (Service & Sex) to another girl (larger effect)"
@@ -1474,7 +1474,7 @@ translate schinese strings:
 
     # game/BKpowers.rpy:76
     old "Swaps colored mojo to purple mojo at a rate of 3 for 2"
-    new "以3:2的比例将任意数量的彩色巫灵兑换成紫色巫灵；理智消耗：2，邪恶值+1"
+    new "以3:2的比例将任意数量的彩色咒力转换成紫色咒力；理智消耗：2，邪恶值+1"
 
     # game/BKpowers.rpy:76
     old "Her Naked preference will increase (larger effect)"

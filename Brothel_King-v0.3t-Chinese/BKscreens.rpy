@@ -8617,7 +8617,7 @@ screen power_detail(pow):
             text __(pow.name) + {True : " (超载)", False : ""}[pow.super] size res_font(24) bold True
             text pow.description size res_font(12)
 
-            text "巫灵消耗:" size res_font(18) bold True
+            text "咒力消耗:" size res_font(18) bold True
             hbox spacing xres(6):
                 if conduit:
                     $ mod = conduit.get_effect("change", "mojo cost")

@@ -12,11 +12,11 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3637
     old "Socialize"
-    new "社交场合"
+    new "正式场合"
 
     # game/BKinit_variables.rpy:3637
     old "Participate In An Event"
-    new "参加活动"
+    new "举办活动"
 
     # game/BKinit_variables.rpy:3637
     old "Deliver A Private Show"
@@ -68,7 +68,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "erotic show"
-    new "脱衣舞演出"
+    new "脱衣舞表演"
 
     # game/BKinit_variables.rpy:3639
     old "cosplay"
@@ -76,7 +76,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "lap dance"
-    new "热辣艳舞演出"
+    new "艳舞演出"
 
     # game/BKinit_variables.rpy:3639
     old "welcome massage"
@@ -156,7 +156,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "service"
-    new "手脚并用"
+    new "私人定制"
 
     # game/BKinit_variables.rpy:3639
     old "cosplay sex"
@@ -172,7 +172,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "cosplay anal"
-    new "动物尾巴秀"
+    new "茸茸尾巴秀"
 
     # game/BKinit_variables.rpy:3639
     old "anal dance"
