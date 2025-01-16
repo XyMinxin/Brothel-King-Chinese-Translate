@@ -84,7 +84,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "erotic massage"
-    new "肉体按摩"
+    new "贴身按摩"
 
     # game/BKinit_variables.rpy:3639
     old "conversation"
@@ -112,7 +112,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "catfight"
-    new "猫娘乐园"
+    new "猫娘格斗"
 
     # game/BKinit_variables.rpy:3639
     old "art model"
@@ -140,7 +140,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "nude help"
-    new "坦诚相待"
+    new "坦诚相助"
 
     # game/BKinit_variables.rpy:3639
     old "naked"
@@ -184,7 +184,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "toy"
-    new "珠光宝气"
+    new "人体展示架"
 
     # game/BKinit_variables.rpy:3639
     old "geisha bondage"
@@ -204,7 +204,7 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3639
     old "bisexual service"
-    new "双飞燕"
+    new "姐妹盖饭"
 
     # game/BKinit_variables.rpy:3639
     old "bisexual fetish"
