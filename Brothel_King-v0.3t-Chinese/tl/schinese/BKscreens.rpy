@@ -2308,31 +2308,31 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8161
     old "Click here to see the %s girl mix."
-    new "Click here to see the %s girl mix."
+    new "点击此处浏览 %s 女孩包组合。"
 
     # game/BKscreens.rpy:8162
     old "Click here to create a new girl mix."
-    new "Click here to create a new girl mix."
+    new "点击此处创建一个新的女孩包组合。"
 
     # game/BKscreens.rpy:8187
     old "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"
-    new "{b}%s{/b} {i}by %s{/i}\n\nVersion: %s\n\nDescription: %s\n\n"
+    new "{b}%s{/b} {i}作者：%s{/i}\n\n版本号: %s\n\n简介: %s\n\n"
 
     # game/BKscreens.rpy:8198
     old "{i}Click to remove this girl pack from the mix.{/i}"
-    new "{i}Click to remove this girl pack from the mix.{/i}"
+    new "{i}点击将女孩包从组合内移除。{/i}"
 
     # game/BKscreens.rpy:8202
     old "{i}Click to add this girl pack to the mix.{/i}"
-    new "{i}Click to add this girl pack to the mix.{/i}"
+    new "{i}点击将女孩包添加到组合内。{/i}"
 
     # game/BKscreens.rpy:8210
     old "by "
-    new "by "
+    new "作者："
 
     # game/BKscreens.rpy:8212
     old "{size=14}Rating: {/size}"
-    new "{size=14}Rating: {/size}"
+    new "{size=14}评级: {/size}"
 
     # game/BKscreens.rpy:8250
     old "Not found"
@@ -2368,7 +2368,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8459
     old "{color=[c_red]}{i}Failed{/i}{/color}"
-    new "{color=[c_red]}{i}Failed{/i}{/color}"
+    new "{color=[c_red]}{i}失败了{/i}{/color}"
 
     # game/BKscreens.rpy:8469
     old "{i}Missing{/i}"

@@ -125,7 +125,7 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
         else:
             $ text1 = str(len(new_gp)) + " 识别到新的女孩包:{b}{color=" + c_green + "}" + and_text(new_gp) + "{/color}{/b}。你打算怎么做?"
 
-        if renpy.call_screen("yes_no", text1, "Update all girl mixes", "Don't update (update manually)"):
+        if renpy.call_screen("yes_no", text1, "更新所有的女孩包", "不更新 (手动更新)"):
             python:
                 for mix in persistent.girl_mix.values():
                     for gp in new_gp:
@@ -135,7 +135,7 @@ label before_main_menu(): # Will show before main menu (standard Ren'py label)
             "Go to {b}Girl packs/Girl mix{/b} from the main menu to manually edit your mix."
 
     if len(gpacks) == 0:
-        show screen OK_screen(event_color["bad"] % "Cannot start game: Missing girl packs", "The game couldn't find any girl packs in the girlpack folder (default: 'game\\girls\\'). Without any girl pack installed, the game cannot run.\n\nHave you downloaded and installed girl packs?\nVisit [URL] to get your first girl packs. If you're unsure which one to pick, check the release thread for the 'base girl pack' which contains over 20 high-quality packs.\n\nClick 'OK' to close the game.")
+        show screen OK_screen(event_color["bad"] % "无法开始游戏: 缺少女孩包", "游戏在女孩包文件夹中找不到任何可用图片 (默认路径: 'game\\girls\\')。 游戏无法在没有女孩包的情况下运行。\n\n你有没有下载并安装好女孩包？\n来[URL]获取你的第一个女孩包吧！ 如果你不确定选择哪一个，看看“基础女孩包”的帖子，其中包含超过20个高质量的女孩包。\n\n点击'确认'关闭游戏。")
         "{nw}"
         $ renpy.quit()
 

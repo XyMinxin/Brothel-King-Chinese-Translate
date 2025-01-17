@@ -1395,7 +1395,7 @@ init -2 python:
 
     # Lists all tabs and keys/buttons in the Game CG gallery as (tab, buttons) tuples
 
-    ev_gallery_list = ["角色立绘", "剧情CG", "背景图片", "其他图片"]
+    ev_gallery_list = ["Characters", "Story", "Backgrounds", "Misc"]
 
 #     ev_gallery_list = [
 #                        ("Characters", ["sill", "kurohime", "maid", "gio", "kosmo", "kosmo girls", "gizel",
