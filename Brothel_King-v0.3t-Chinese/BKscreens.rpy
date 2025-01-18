@@ -8158,7 +8158,7 @@ screen girl_mix(show_rating=False):
         frame xsize 0.7 yfill True:
             has vbox
 
-            text "女孩包列表" bold True drop_shadow (1, 1) font "bk.ttf" xpos xres(6)
+            text "女孩包列表" bold True drop_shadow (1, 1) font "DejaVuSans-Bold.ttf" xpos xres(6)
 
             hbox box_wrap True:
                 for mix_name in sorted(persistent.girl_mix):

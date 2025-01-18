@@ -10,8 +10,8 @@ label intro:
 
     $ persistent.seen_intro = True
 
-    $ text1 = Text(('Once upon a time'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
-    $ text2 = Text(('In a far away realm'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
+    $ text1 = Text(('曾几何时'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
+    $ text2 = Text(('在一个遥远的国度'), size=50, yalign=0.5, xpos=0.5, drop_shadow=(2,2), font="bk.ttf")
 
     show expression text1
     with easeinleft

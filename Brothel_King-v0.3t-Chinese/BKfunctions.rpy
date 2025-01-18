@@ -4769,10 +4769,10 @@ init -3 python:
         return defaultdict(list)
 
     def add_mix():
-        new_mix = renpy.input("Enter the name of the mix you want to create")
+        new_mix = renpy.input("请输入要创建的组合的名称")
 
         if new_mix in (persistent.girl_mix.keys()):
-            renpy.notify("{color=[c_red]}[new_mix] already exists.{/color}")
+            renpy.notify("{color=[c_red]}[new_mix]已经存在了。{/color}")
         else:
             persistent.girl_mix[new_mix] = []
             persistent.active_mix = new_mix
@@ -4786,8 +4786,8 @@ init -3 python:
 
     def delete_mix(mix):
         if mix == "default":
-            renpy.notify("Can't delete the 'default' mix.")
-        elif mix in persistent.girl_mix.keys() and renpy.call_screen("yes_no", "Are you sure you want to delete this girl mix?"):
+            renpy.notify("无法删除'默认'组合。")
+        elif mix in persistent.girl_mix.keys() and renpy.call_screen("yes_no", "你确定要删除这个女孩包组合吗？"):
             del persistent.girl_mix[mix]
             if persistent.active_mix == mix:
                 persistent.active_mix = "default"
