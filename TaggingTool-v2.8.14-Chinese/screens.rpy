@@ -718,7 +718,7 @@ screen pic_ui(context, tt):
 
         text tt.value size 16
         
-    frame yalign 0.93 xfill True xalign 0.45 xsize 800 background None:
+    frame yalign 0.93 xfill True xalign 0.45 xsize 960 background None:
         has hbox spacing 20
 
         hbox:
@@ -735,13 +735,15 @@ screen pic_ui(context, tt):
                 if selected_pic.file_name[:selected_pic.file_name.find("(")] != str(selected_pic.new_name)[:str(selected_pic.new_name).find("(")]:
                     $ text1 += "{color=#7fffd4} --> " + str(selected_pic.new_name) + " (新)"
 
-                text text1 size 16 xalign 0.5 yalign 0.5 #color "#000"
-
+                text text1 size 16 xalign 0.5 yalign 0.25 #color "#000"
         hbox:
             textbutton ">" text_size 18 action Return("cycle_next") hovered tt.Action("跳到下一张图片（快捷键：右箭头）") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
             textbutton "+10" text_size 14 action Return("cycle_next_10") hovered tt.Action("向前跳过10张图片（快捷键：Shift+右箭头）") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
             textbutton "+100" text_size 14 action Return("cycle_next_100") hovered tt.Action("向前跳过100张图片（快捷键：Ctrl+右箭头）") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
-
+        frame background None xalign 0.7 xsize 240 ysize 50:
+            if len(selected_pic_list) > 0:
+                $ text2 = "已选择 %d 张图片" % len(selected_pic_list)
+                text text2 size 16 xalign 0 yalign 0.25 #color "#000"
 
     hbox xalign 0.4 yalign 0.98 xsize 0.6 xfill True:
 
@@ -764,7 +766,7 @@ screen pic_ui(context, tt):
                 textbutton "清除标签" action Return("clear") alternate Return("clear_all") hovered tt.Action("这将清除该图片的所有有效标签。\n点击右键，清除人物包中所有图片的所有活动标签。") text_size 18 yminimum 50 xminimum 120
                 textbutton "浏览模式" action Return("browse") hovered tt.Action("这将切换到标签浏览模式。") text_size 18 yminimum 50 xminimum 120
                 textbutton "跳转模式" action Return("jump_to") hovered tt.Action("这将切换到标签跳转模式。") text_size 18 yminimum 50 xminimum 120
-                textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片") text_size 18 yminimum 50 xminimum 120
+                textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片（但不会取消已有更改）") text_size 18 yminimum 50 xminimum 120
                 textbutton "退出" action Return("quit") text_size 18 yminimum 50 xminimum 120
 
         elif context == "browse":
