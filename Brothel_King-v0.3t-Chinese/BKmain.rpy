@@ -189,7 +189,7 @@ label visit_district:
 
             if selected_location.secret:
 
-                "You have not discovered this location yet."
+                "你还没有解锁这个区域。"
 
             else:
 
@@ -280,14 +280,14 @@ label visit_location():
                             renpy.call("city_" + ev_type)
 
                 if district.rank >= 2 and renpy.random.random() <= 0.12: # 8% chance of getting a resource, 4% Cimerian
-                    $ renpy.say("", "While exploring the city, you found something useful.")
+                    $ renpy.say("", "当你在城里探索时，你发现了一些有用的东西。")
                     $ d = dice(6)
 
                     if dice(6) >= 5:
                         if game.chapter >= 3 and dice(6) >= 6:
-                            call receive_item(search_items("Cimerian artefact")[0], msg="You have received a rare %s.", use_article=False) from _call_receive_item
+                            call receive_item(search_items("Cimerian artefact")[0], msg="你发现了一个稀有的%s。", use_article=False) from _call_receive_item
                         else:
-                            call receive_item(search_items("Cimerian scrap")[0], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_1
+                            call receive_item(search_items("Cimerian scrap")[0], msg="你找到了一块%s。", use_article=False) from _call_receive_item_1
 
                     else:
                         $ MC.gain_resource(number=dice(3), _random=True)
@@ -387,7 +387,7 @@ label brothel_loop():
 
         elif operation == "change name":
 
-            $ brothel.name = renpy.input("Change name:", default = brothel.name, length = 40)
+            $ brothel.name = renpy.input("重命名:", default = brothel.name, length = 40)
 
         elif operation == "furniture":
 
@@ -471,16 +471,16 @@ label farm_loop():
         gizel upset "[MC.name]! One of your good-for-nothing sluts has hurt my babies! If you don't act quickly, I'm going to have to retire it."
 
         python:
-            menu_list = [(str(len(hurt)) + " minion" + plural(len(hurt)) + " are hurt. What do you want to do?", None)]
+            menu_list = [(str(len(hurt)) + "个仆从" + plural(len(hurt)) + "受伤了，你打算怎么处理？", None)]
 
             if MC.get_items(target="minion", name="Healing powder"):
                 for mn in hurt:
-                    menu_list.append(("Use healing powder on [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("heal", mn)))
+                    menu_list.append(("用治愈药粉治疗[mn.name] (等级" + str(mn.level) + "的" + mn.type + ")", ("heal", mn)))
 
             for mn in hurt:
-                menu_list.append(("Retire [mn.name] (level " + str(mn.level) + " " + mn.type + ")", ("retire", mn)))
+                menu_list.append(("让[mn.name]退休 (等级" + str(mn.level) + "的" + mn.type + ")", ("retire", mn)))
 
-            menu_list.append(("Ignore it for now", ("ignore", None)))
+            menu_list.append(("先不管，以后再说", ("ignore", None)))
 
         $ res, mn = menu(menu_list)
 
@@ -571,9 +571,9 @@ label farm_loop():
 
         elif res == "change_name":
             $ girl = obj
-            $ girl.name = renpy.input("Do you want to change her first name?", default = girl.name)
+            $ girl.name = renpy.input("你想给她换一个名字吗?", default = girl.name)
             $ girl.char.name = girl.name
-            $ girl.lastname = renpy.input("Do you want to change her last name?", default = girl.lastname)
+            $ girl.lastname = renpy.input("你想给她换一个姓氏吗?", default = girl.lastname)
 
             menu:
                 "Do you want to invert her first and last name?"
@@ -620,27 +620,27 @@ label farm_loop():
                         minions = farm.get_minions("stallion")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="stallion xp"):
                             xp_bonus = it.get_effect("gain", "stallion xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per stallion", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用" + it.name.lower() + " (给一个种马+" + str(xp_bonus) + "经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="beast xp") and farm.get_minions("beast"):
                         minions = farm.get_minions("beast")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="beast xp"):
                             xp_bonus = it.get_effect("gain", "beast xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per beast", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用" + it.name.lower() + " (给一只野兽+" + str(xp_bonus) + "经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="monster xp") and farm.get_minions("monster"):
                         minions = farm.get_minions("monster")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="monster xp"):
                             xp_bonus = it.get_effect("gain", "monster xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per monster", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用" + it.name.lower() + " (给一头怪物+" + str(xp_bonus) + "经验", ("gain xp", minions, it, xp_bonus)])
 
                     if MC.get_items(target="minion", effect_type="gain", effect_target="machine xp") and farm.get_minions("machine"):
                         minions = farm.get_minions("machine")
                         for it in MC.get_items(target="minion", effect_type="gain", effect_target="machine xp"):
                             xp_bonus = it.get_effect("gain", "machine xp") // len(minions)
-                            menu_list.append(["Use " + it.name.lower() + " (+" + str(xp_bonus) + " XP per machine", ("gain xp", minions, it, xp_bonus)])
+                            menu_list.append(["使用" + it.name.lower() + " (给一台机器+" + str(xp_bonus) + "经验", ("gain xp", minions, it, xp_bonus)])
 
-                    menu_list.append(["Forget it", ("back")])
+                    menu_list.append(["忘了吧", ("back")])
 
                 $ res = menu(menu_list)
 
@@ -1132,9 +1132,9 @@ label girls_loop():
 
             $ girl = selected_girl
 
-            $ girl.name = renpy.input("Do you want to change her first name?", default = girl.name)
+            $ girl.name = renpy.input("你想给她换一个名字吗?", default = girl.name)
             $ girl.char.name = girl.name
-            $ girl.lastname = renpy.input("Do you want to change her last name?", default = girl.lastname)
+            $ girl.lastname = renpy.input("你想给她换一个姓氏吗?", default = girl.lastname)
 
             menu:
                 "Do you want to invert her first and last name?"
@@ -1632,7 +1632,7 @@ label perks(): # girl is passed by the previous label (girls)
         $ result, obj = ui.interact() # obj is an archetype or perk
 
         if result == "unlock":
-            if renpy.call_screen("yes_no", "Are you sure you want to unlock {b}" + misc_name_dict[obj] + "{/b} zodiac for 2 perk points?"):
+            if renpy.call_screen("yes_no", "Are you sure you want to unlock {b}" + obj + "{/b} zodiac for 2 perk points?"):
 
                 play sound s_spell
                 $ perk_points -= 2
@@ -1951,15 +1951,15 @@ label visit_merchant_loop():
                 if it:
                     $ chapter, cost, upgrade = shop_upgrades[right_focus.upgrade_level + 1]
 
-                    if renpy.call_screen("yes_no", "Are you sure you want to upgrade this shop for %s %s?" % (str(cost[1]), cost[0])):
+                    if renpy.call_screen("yes_no", "你确定要消耗%s个%s升级商店吗？" % (str(cost[1]), cost[0])):
                         $ right_focus.upgrade_shop(cost, upgrade)
 
                         $ right_focus.char(shopgirl_comment[cost[0]])
 
-                        $ right_focus.char("Very good. I will have more items for you after the next inventory restock.")
+                        $ right_focus.char("非常好，下次店里就能有更多的商品供你挑选了。")
 
                         if right_focus.can_upgrade():
-                            $ right_focus.char("If you bring me more materials, I may be able to expand my inventory again. Keep it up!")
+                            $ right_focus.char("如果你给我带来更多的材料，我就能继续扩大店面了，我看好你哟!")
                 else:
                     $ right_focus.char("You do not have the necessary resources with you.{w=0.8}{nw}")
 
@@ -2028,7 +2028,7 @@ label main_character:
 
         if result == "change_name":
 
-            $ MC.name = renpy.input("Do you want to change your name?", default = MC.name, length = 20)
+            $ MC.name = renpy.input("你想换一个名字吗?", default = MC.name, length = 20)
 
             $ norollback()
 

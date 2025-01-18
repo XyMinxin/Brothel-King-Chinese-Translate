@@ -4,7 +4,7 @@
 translate schinese slave_first_meet_0c98ab5a:
 
     # "You came to visit [girl.fullname] for the first time."
-    "你第一次来房间里看[girl.fullname]。"
+    "这是你第一次单独和[girl.fullname]相处。"
 
 # game/BKinteractions.rpy:26
 translate schinese slave_first_meet_27e50de3:
@@ -58,7 +58,7 @@ translate schinese fight_attempt_c6b9d571:
 translate schinese fight_attempt_2f8a4273:
 
     # "She struggles and pushes you away. You try to force her but she kicks you in the groin and escapes [text1]."
-   "她挣扎着把你推开。你试图抓住她，但她对着你的肚子来了一脚，从门口逃了出去。"
+   "她挣扎着把你推开。你试图抓住她，但她对着你的肚子来了一脚，[text1]。"
 
 # game/BKinteractions.rpy:121
 translate schinese fight_attempt_3149cc65:
@@ -2687,7 +2687,8 @@ translate schinese slave_story2_4e3e3d2a:
 translate schinese slave_story2_c2a355ad:
 
     # girl.char "It all happened a long time ago, back in [girl.origin]..."
-    girl.char "很久以前，在[origin]...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "很久以前，在[origin_cn]...."
 
 # game/BKinteractions.rpy:3711
 translate schinese slave_story2_7e0b1b13:
@@ -3155,7 +3156,8 @@ translate schinese slave_story3_c7542f25:
 translate schinese slave_story3_7a1a8533:
 
     # girl.char "I used to live a happy life in [girl.origin], where I enjoyed [girl.hobbies[0]] most days..."
-    girl.char "我过去在[origin]过着幸福的生活。在那里我大多数时间都在[girl.hobbies[0]]...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "我过去在[origin_cn]过着幸福的生活。在那里我大多数时间都在[girl.hobbies[0]]...."
 
 # game/BKinteractions.rpy:3956
 translate schinese slave_story3_5886ce35:
@@ -3743,7 +3745,8 @@ translate schinese slave_story4_1b43fbf6:
 translate schinese slave_story4_b6fe2914:
 
     # girl.char "Yes... I was born in [girl.origin], in a very poor family..."
-    girl.char "是的....我出生在[origin]。出身在一个非常贫穷的家庭...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "是的....我出生在[origin_cn]。出身在一个非常贫穷的家庭...."
 
 # game/BKinteractions.rpy:4213
 translate schinese slave_story4_4680cb4f:
@@ -3911,7 +3914,7 @@ translate schinese slave_story4_e7c72d25:
 translate schinese slave_story4_01107499:
 
     # girl.char "Being born [text1], I don't believe that a slave can be equal with free persons..."
-    girl.char "我生来就是[text1]。我不相信奴隶能与人平等...."
+    girl.char "我生而[text1]。我不相信奴隶能与人平等...."
 
 # game/BKinteractions.rpy:4291
 translate schinese slave_story4_346f7e24:
@@ -4433,7 +4436,8 @@ translate schinese slave_story5_fef91995:
 translate schinese slave_story5_7ce7c857:
 
     # girl.char "It all started while I was living in [girl.origin] with my [girl.story_guardian]."
-    girl.char "故事要从我住在[origin]的时候说起，我和我的[girl.story_guardian]。"
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "故事要从我住在[origin_cn]的时候说起，我和我的[girl.story_guardian]。"
 
 # game/BKinteractions.rpy:4525
 translate schinese slave_story5_54e6d272:
@@ -5351,7 +5355,8 @@ translate schinese slave_story6_adb6bbb8:
 translate schinese slave_story6_948a280f:
 
     # girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
-    girl.char "真的... 我的父亲曾是[origin]的一位贵族, 在克塞罗斯很有名气，在宫廷里也很有影响力..."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "真的... 我的父亲曾是[origin_cn]的一位贵族, 在克塞罗斯很有名气，在宫廷里也很有影响力..."
 
 # game/BKinteractions.rpy:4886
 translate schinese slave_story6_9464a26a:
@@ -6269,7 +6274,8 @@ translate schinese slave_story7_78f547c1:
 translate schinese slave_story7_5b5bef6d:
 
     # girl.char "Believe it or not, when I was growing up in [girl.origin], it was perfectly normal to worship the Dweller. There was no holy war then..."
-    girl.char "信不信由你，当我在[origin]长大的时候。，崇拜原住民是很正常的。那时圣战还没开始...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "信不信由你，当我在[origin_cn]长大的时候。，崇拜原住民是很正常的。那时圣战还没开始...."
 
 # game/BKinteractions.rpy:5167
 translate schinese slave_story7_1a07ef4a:
@@ -6467,7 +6473,8 @@ translate schinese slave_story7_d8a048e0:
 translate schinese slave_story7_74024fdb:
 
     # girl.char "Back then in [girl.origin], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
-    girl.char "那时的[origin]，所有的信仰都得到尊重。没有人谈论焚烧异教徒或拷问精灵间谍...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "那时的[origin_cn]，所有的信仰都得到尊重。没有人谈论焚烧异教徒或拷问精灵间谍...."
 
 # game/BKinteractions.rpy:5235
 translate schinese slave_story7_25328452:
@@ -7337,7 +7344,8 @@ translate schinese slave_story8_a1918715:
 translate schinese slave_story8_f256ee5f:
 
     # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin]..."
-    girl.char "这一切都开始于不久前，那时我还住在[girl.story_home_article] [origin]...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "这一切都开始于不久前，那时我还住在[girl.story_home_article] [origin_cn]...."
 
 # game/BKinteractions.rpy:5578
 translate schinese slave_story8_f2692a58:
@@ -7571,7 +7579,8 @@ translate schinese slave_story8_9d46dba6:
 translate schinese slave_story8_ce9564f7:
 
     # girl.char "Well... I told you about my time in [girl.origin], when I was looking for a magic teacher..."
-    girl.char "嗯....我告诉过你我在[origin]的时光。当我在找一个魔法老师的时候...."
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "嗯....我告诉过你我在[origin_cn]的时光。当我在找一个魔法老师的时候...."
 
 # game/BKinteractions.rpy:5674
 translate schinese slave_story8_8b044c9c:
@@ -7907,7 +7916,8 @@ translate schinese slave_story8_33c6fd3a:
 translate schinese slave_story8_2ddc3804:
 
     # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin]."
-    girl.char "还记得吗，我说过我在[origin]里师从一位强大的女巫。"
+    $ origin_cn = tl_cn(girl.origin, origin_name_dict)
+    girl.char "还记得吗，我说过我在[origin_cn]里师从一位强大的女巫。"
 
 # game/BKinteractions.rpy:5796
 translate schinese slave_story8_15d6b866:
@@ -9443,15 +9453,15 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:19
     old "I will be kind"
-    new "我会善良的对待你"
+    new "我会温柔的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will be fair"
-    new "我会公平的对待你"
+    new "我会公正的对待你"
 
     # game/BKinteractions.rpy:19
     old "I will do as I please"
-    new "我会为所欲为"
+    new "我会对你为所欲为"
 
     # game/BKinteractions.rpy:164
     old "Reassure her"
@@ -9459,11 +9469,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked at all times"
-    new "告诉她仍然要一直保持裸体"
+    new "告诉她今后也要一直保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Tell her to remain naked for the rest of the day"
-    new "告诉她仍然要在剩下的一天里保持裸体"
+    new "告诉她今天要一直保持裸体"
 
     # game/BKinteractions.rpy:187
     old "Do nothing"
@@ -9471,7 +9481,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:268
     old "She's crying uncontrollably, she seems very upset. What do you do?"
-    new "她哭得控制不住，看起来很伤心。你是做什么的？"
+    new "她泪流不止，看起来很伤心。你打算怎么办？"
 
     # game/BKinteractions.rpy:268
     old "Ignore her and proceed"
@@ -9487,7 +9497,7 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:483
     old "Stop bitching"
-    new "停止唠叨"
+    new "别抱怨了"
 
     # game/BKinteractions.rpy:531
     old "I appreciate your efforts"
@@ -9499,11 +9509,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:577
     old "You're a big help"
-    new "你帮了我很大的忙"
+    new "你表现的很好"
 
     # game/BKinteractions.rpy:577
     old "Just shut up"
-    new "闭嘴"
+    new "给我闭嘴"
 
     # game/BKinteractions.rpy:659
     old "I see."
@@ -9727,11 +9737,11 @@ translate schinese strings:
 
     # game/BKinteractions.rpy:2661
     old "You tell her that you are happy that "
-    new "你告诉她你很开心"
+    new "你告诉她你很满意"
 
     # game/BKinteractions.rpy:2891
     old "You tell her that you are angry that "
-    new "你告诉她你很生气"
+    new "你告诉她你很不满"
 
     # game/BKinteractions.rpy:3028
     old "How long do you want her to remain in the farm?"

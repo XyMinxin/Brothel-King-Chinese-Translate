@@ -519,9 +519,9 @@ label end_day:
 
         if sick_girls != []:
             if len(sick_girls) == 1:
-                sick_text += "\n{color=[c_red]}%s has fallen sick.{/color}" % sick_girls[0].name
+                sick_text += "\n{color=[c_red]}%s生病了{/color}😷" % sick_girls[0].name
             else:
-                sick_text += "\n{color=[c_red]}%s have fallen sick.{/color}" % and_text([g.name for g in sick_girls])
+                sick_text += "\n{color=[c_red]}%s生病了{/color}😷" % and_text([g.name for g in sick_girls])
 
     ## Apply advertisement
 
@@ -566,11 +566,11 @@ label end_day:
 
             if dice(6) >= 6 and pony:
                 ad_pic = "events/" + rand_choice(pony_pics)
-                night_text += "{color=[c_pink]}It's time for the ponygirl parade!{/color}\n"
+                night_text += "{color=[c_pink]}母狗游行的时间到了！{/color}\n"
 
             elif brothel.get_effect("special", "demon advertising"):
                 ad_pic = rand_choice(game_image_dict["Misc"]["succubi"])
-                night_text += "{color=[c_softpurple]}Your demonette ally helps draw more customers to your brothel using their supernatural charms.{/color}\n"
+                night_text += "{color=[c_softpurple]}你的恶魔朋友使用了超自然力量，吸引了更多的客户到你的青楼。{/color}\n"
 
             elif adv_girls:
                 adv_girl = rand_choice(adv_girls)
@@ -578,7 +578,7 @@ label end_day:
                 night_text += "%s: {color=[c_pink]}'%s'{/color}\n" % (adv_girl.name, __(adv_girl.pick_dialogue("advertise").line))
 
             elif brothel.advertising > 0:
-                night_text += __("{color=[c_pink]}'Mister! Would you like to come and have a look at our wares? *giggles*'{/color}\n")
+                night_text += "{color=[c_pink]}“先生”!想不想体验一下我们的最新商品？*giggles*'{/color}\n"
 
             if not ad_pic:
                 if brothel.advertising > 0:
@@ -616,8 +616,8 @@ label end_day:
             ttip = list_text([g.fullname for g in striking_girls])
             night_early.add(line, ttip=ttip, ttip_title = event_color["bad"] % "拒绝工作")
 
-            night_text += "\n{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color} ")
-            log.add_report("{color=[c_red]}" + and_text([g.name for g in striking_girls]) + __(" refused to work!{/color}"))
+            night_text += "\n{color=[c_red]}" + and_text([g.name for g in striking_girls]) + "拒绝工作！{/color} "
+            log.add_report("{color=[c_red]}" + and_text([g.name for g in striking_girls]) + "拒绝工作！{/color}")
 
         if resting_girls:
             line = event_color["normal"] % ("休息的员工: %s" % len(resting_girls))
@@ -642,8 +642,8 @@ label end_day:
             night_early.add("Customers turned away: %s" % len(customers), ttip = get_customer_population_count(customers))
 
             ad_pic = "events/" + rand_choice(night_pics)
-            night_text += __("The brothel was closed tonight.")
-            cust_text = brothel.name + __(" was closed tonight, because none of your girls were working.\n")
+            night_text += "青楼今晚暂停营业。"
+            cust_text = brothel.name + "今晚没有人工作，被迫暂停营业。\n"
 
             if len(customers) > 5: # Lose rep for each customer that comes in vain
                 old_rep = brothel.rep
@@ -667,15 +667,15 @@ label end_day:
 
         if cleanliness == "dusty":
             turned_away = (dice(2, district.rank)-1)
-            maint_text = "\nYour brothel is getting dusty. There are cobwebs in the rooms."
+            maint_text = "\n青楼里的灰尘许久没有打扫。房间里都结蜘蛛网了。"
 
         elif cleanliness == "dirty":
             turned_away = dice(3, district.rank)
-            maint_text = "\nYour brothel is getting dirty. Sill thinks she saw a rat."
+            maint_text = "\n青楼里越来越脏了。希露甚至看到了老鼠。"
 
         elif cleanliness == "disgusting":
             turned_away = dice(6, district.rank)
-            maint_text = "\nThis place is a disgusting mess. Customers are turning away and girls are getting sick!"
+            maint_text = "\n这里臭不可闻。顾客都捏着鼻子走开了，滋生的病菌会让女孩们生病！"
 
         if working_girls:
             # Turn away disgusted customers
@@ -698,7 +698,7 @@ label end_day:
 
                 night_early.add("Dirtiness", "header")
                 night_early.add("Customers turned away: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
-                cust_text += "\nTurned away: %s" % plus_text(-len(lost_customers))
+                cust_text += "\n离开的客人: %s人" % plus_text(-len(lost_customers))
                 if rep_loss:
                     night_early.add("Reputation lost: %s" % plus_text(rep_loss))
 
@@ -720,10 +720,10 @@ label end_day:
     #### SECURITY EVENTS ####
 
     if brothel.get_effect("special", "demon maintenance"):
-        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["hannies"]), char = "", text = "Although dumber than a door knob, hannies are pretty good at polishing said door knobs. Your impish allies help clean up the mess your customers have left behind, and they work for free: what's not to like?", type="UI")) from _call_show_night_event_7
+        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["hannies"]), char = "", text = "虽然比门把手还笨，但它们却很擅长抛光门把手。哈尼们帮你清理了顾客留下的烂摊子，他们可不需要工钱，还有什么好抱怨的呢？", type="UI")) from _call_show_night_event_7
 
     if brothel.get_effect("special", "demon security"):
-        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "Your security is bolstered by the massive presence of your demonic ally. Keeping the peace tonight should be a breeze.", type="UI")) from _call_show_night_event_8
+        call show_night_event(Event(pic=rand_choice(game_image_dict["Misc"]["oni"]), char = "", text = "你的恶魔盟友能够让你高枕无忧。镇住场子对它们来说应该是轻而易举的事。", type="UI")) from _call_show_night_event_8
 
     if brothel.threat_build_up(): # Returns True if security event may proc
         call security(working_girls) from _call_security
@@ -910,7 +910,7 @@ label end_day:
             ev = Event(Picture(pic, "events/" + pic), text = text1 + "名女孩可以提供性服务， %s名顾客失望的离开了。" % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
             perform_events.append(ev)
 
-            log.add_report(event_color["bad"] % (__("%s名顾客不能发泄性欲，失望地离开了。") % str(len(leftover_customers))))
+            log.add_report(event_color["bad"] % ("%s名顾客不能发泄性欲，失望地离开了。" % str(len(leftover_customers))))
 
 
     # Predict image for first event in Perform list
@@ -983,14 +983,14 @@ label end_day:
                     for g in girl.friends:
                         if not g.get_effect("special", "shield"):
                             g.add_effects(shield_effect)
-                            extra_text = "\n" + girl.name + " cast a protective shield on her friend " + g.fullname + "."
-                            resting_changes.add("Shield cast on " + g.fullname, col=c_lightblue)
+                            extra_text = "\n" + girl.name + "对她的姐妹" + g.fullname + "释放了一个魔法护盾。"
+                            resting_changes.add("护盾保护：" + g.fullname, col=c_lightblue)
                             extra_sound = s_spell
                             break
                 else:
                     girl.add_effects(shield_effect)
-                    extra_text =  "\n" + girl.name + " cast a protective shield on herself."
-                    resting_changes.add("Shield cast on herself", col=c_lightblue)
+                    extra_text =  "\n" + girl.name + "对她自己释放了一个魔法护盾。"
+                    resting_changes.add("护盾自我保护", col=c_lightblue)
                     extra_sound = s_spell
 
             # Use her toys
@@ -1014,10 +1014,10 @@ label end_day:
                         break # Only one toy can be used at a time
 
                     else:
-                        extra_text += __("\nShe refused to use the ") + __(it.name) + "."
+                        extra_text += "\n她拒绝使用" + __(it.name) + "。"
 
             if used:
-                extra_text += __("\nShe had some fun with the %s." % used)
+                extra_text += "\n她用%s玩的很开心。" % used
                 girl.add_log("used toy")
 
             resting_text += extra_text
@@ -1273,7 +1273,7 @@ label end_day:
 
         else:
             log.costs = brothel.get_maintenance_cost()
-            gold_text += ". " + brothel.name + __(" was closed, so you sent the security and advertising crews home. You paid ") + '{:,}'.format(round_int(log.costs)) + __(" for maintenance.")
+            gold_text += "。" + brothel.name + __(" was closed, so you sent the security and advertising crews home. You paid ") + '{:,}'.format(round_int(log.costs)) + __(" for maintenance.")
 
         loan_payment = MC.repay_loan()
 
@@ -1281,7 +1281,7 @@ label end_day:
             log.costs += loan_payment
             gold_text += "\n您支付了{image=img_gold} " + '{:,}'.format(round_int(loan_payment)) + "来偿还银行的贷款利息。"
 
-        gold_recap = "您支付了{image=img_gold_24} " + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + "作为青楼开销。"
+        gold_recap = "您支付了{image=img_gold_24}" + event_color["a little bad"] % '{:,}'.format(round_int(log.upkeep+log.costs)) + "作为青楼开销。"
 
     ## Katchiiing
 
@@ -1378,11 +1378,11 @@ label end_day:
     while catch_up_changes:
         $ girl, changes = catch_up_changes.pop(0)
 
-        $ text1 = girl.fullname + " helped "
+        $ text1 = girl.fullname + "帮助"
         if len(changes) > 1:
-            $ text1 += "other girls develop their skills.\n{size=-6}("
+            $ text1 += "其他女孩提高了她们的属性。\n{size=-6}("
         else:
-            $ text1 += "another girl develop her skills.\n{size=-6}("
+            $ text1 += "另一个女孩提高了她的属性。\n{size=-6}("
 
         python:
             for girl2, stats in changes:
@@ -1481,13 +1481,13 @@ label end_day:
                 girl.add_log("run_away", delay=-1)
 
             elif check == "warning":
-                renpy.say (sill, "Warning! [girl.fullname] is unhappy and grumbling about running away...")
+                renpy.say (sill, "警告! [girl.fullname]很不满，她想要从青楼里逃出去...")
 
     ## Check if girls are tired
 
         for girl in MC.girls:
             if girl.tired_check(): # Returns True if tired warning
-                renpy.say (sill, "Warning! [girl.fullname] is getting tired...")
+                renpy.say (sill, "警告! [girl.fullname] 已经精疲力竭了...")
                 if dice(6) >= 6:
                     calendar.set_alarm(calendar.time, Event(label="too_tired", object=girl))
 
@@ -1508,7 +1508,7 @@ label end_day:
         retired_minions = farm.hurt_minions()
 
         for mn in retired_minions:
-            renpy.say(gizel, "A level " + str(mn.level) + " " + mn.type + " has been retired because of wounds or damage it sustained.")
+            renpy.say(gizel, "一个" + str(mn.level) + "级的" + farm_related_dict[mn.type] + "因为伤口或损伤不得不退役。")
 
     ## Update girl portraits and profiles
 

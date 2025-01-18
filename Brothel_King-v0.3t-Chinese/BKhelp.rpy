@@ -32,23 +32,23 @@ init python:
     config.hyperlink_handlers['help'] = help_hyperlink
 
     def get_help_menu_topics(scr): # Creates the help menu
-        help_menu_topics = [("Help with the current screen", "help_" + scr), ("Brokipedia", "brokipedia"), ("How to win", "help_how_to_win"), ("Replay last achievements", "achievements"), ("Picture management", "pictures"), ("About this game", "help_about_game")]
+        help_menu_topics = [("介绍一下这个界面的功能", "help_" + scr), ("青楼大百科全书", "brokipedia"), ("我该如何通关", "help_how_to_win"), ("展示上一个解锁的成就", "achievements"), ("管理图片", "pictures"), ("关于这个游戏", "help_about_game")]
 
         if scr == "main":
-            help_menu_topics.insert(1, ("Tell me about night events", "help_night_events"))
+            help_menu_topics.insert(1, ("介绍一下经营事件", "help_night_events"))
 
         if debug_mode:
-            help_menu_topics.append(("Debug menu", "debug"))
-            help_menu_topics.append(("Cheat menu", "cheats"))
+            help_menu_topics.append(("调试菜单", "debug"))
+            help_menu_topics.append(("作弊菜单", "cheats"))
         elif game.cheats and scr == "main":
-            help_menu_topics.append(("Cheat menu - Main Screen only", "cheats"))
+            help_menu_topics.append(("作弊菜单——只能在主界面使用", "cheats"))
         elif not game.cheats:
-            help_menu_topics.append(("Activate cheats (disable achievements)", "cheats"))
+            help_menu_topics.append(("激活作弊菜单(将禁用成就系统)", "cheats"))
 
         if game.active_mods:
-            help_menu_topics.append(("Mods", "mods"))
+            help_menu_topics.append(("模组", "mods"))
 
-        help_menu_topics.append(("Never mind", "back"))
+        help_menu_topics.append(("返回游戏", "back"))
 
         return help_menu_topics
 
@@ -505,7 +505,7 @@ label help(scr):
                         menu_list += mod.help_prompts
 
             if menu_list:
-                $ menu_list.append(("Cancel", "back"))
+                $ menu_list.append(("取消", "back"))
 
                 $ target_label = menu(menu_list)
 
@@ -899,7 +899,7 @@ label help_girls():
 
             menu:
                 "Rename her 'Sill'" if sill_name != "Sill":
-                    $ sill_name = "Sill"
+                    $ sill_name = "希露"
 
                     you "Go back to Sill."
 
@@ -910,20 +910,20 @@ label help_girls():
                     jump help_girls
 
                 "Rename her 'Rose'":
-                    $ new_name = "Rose"
+                    $ new_name = "萝丝"
 
                 "Rename her 'Lolita'":
-                    $ new_name = "Lolita"
+                    $ new_name = "小萝莉"
 
                 "Rename her 'Pinky'":
-                    $ new_name = "Pinky"
+                    $ new_name = "粉毛"
 
 
                 "Rename her 'Peggy'":
-                    $ new_name = "Peggy"
+                    $ new_name = "佩吉"
 
                 "Rename her 'Bitch'":
-                    $ new_name = "Bitch"
+                    $ new_name = "婊子"
 
                 "Don't rename her":
                     jump help_girls
@@ -1681,8 +1681,8 @@ label help_about_game:
 
         "DISCLAIMER":
 
-            $ text1 = """This is a hobby project, if someone wants you to pay for it, you are being scammed. I do not own any of the images, music and sound effects used in this game. I wish I could credit the rightful authors for all of them, but most of it had been sitting on my hard drive for a long, long time, and I've forgotten where it came from.\nIf you are the author of any of this material and you feel that this game is infringing on your rights in any way,
-            please contact me on the [URL] forum and I'll drop it from the game.\n\nPlease contact me at [URL] for feedback, criticism, bug reports, etc."""
+            $ text1 = """这是一个为爱发电的项目，如果有人想让你付钱，那你就被倒狗骗了。我不拥有在这个游戏中任何使用的图像，音乐和音效版权。它们都归功于真正的作者，但它们中的大部分已经在我的硬盘上存放了很长很长时间，我已经忘记了它们是从哪里来的。\n如果您是某素材的作者，并且您认为本游戏以任何方式侵犯了您的权利，
+            请来论坛 [URL] 联系我，我将把这部分素材内容从游戏中移除出去。\n\n请在论坛 [URL] 中等待答复, 评价, 上报BUG, 等等"""
 
             call screen OK_screen("DISCLAIMER", text1)
 
@@ -2907,7 +2907,7 @@ label test_perks:
             for perk in l:
                 menu_list.append((perk.archetype + " - " + perk.name + "(" + str(choice_dict[perk]) + ")", perk))
 
-            menu_list.append(("COMMIT", "commit"))
+            menu_list.append(("提交", "commit"))
 
             result = long_menu("Choose perks to test", menu_list)
 

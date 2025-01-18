@@ -213,7 +213,7 @@ label init_game(quick=False):
 
         # CREATE MC #
 
-        MC_name = "Nero"
+        MC_name = "尼禄"
         MC = Main()
         MC.char = you
 
@@ -239,44 +239,44 @@ label init_game(quick=False):
 
         # DEFAULT NAMES #
 
-        sill_name = _("Sill")
-        kuro_name = _("Princess")
-        maid_name = _("Minako")
+        sill_name = __("Sill")
+        kuro_name = __("Princess")
+        maid_name = __("Minako")
         gio_fucked_sill = ""
-        kosmo_name = _("Strange man")
-        sergeant_name = _("Woman")
-        captain_name = _("Captain Farah")
-        lieutenant_name = _("Lieutenant")
-        maya_name = _("Woman")
+        kosmo_name = __("Strange man")
+        sergeant_name = __("Woman")
+        captain_name = __("Captain Farah")
+        lieutenant_name = __("Lieutenant")
+        maya_name = __("Woman")
         maya_love = 0
-        renza_name = _("Woman")
-        satella_name = _("Girl")
-        shalia_name = _("Voice")
-        mask_name = _("Shadow")
-        gizel_name = _("Elf girl")
-        stella_name = _("Woman slaver")
-        goldie_name = _("Woman")
+        renza_name = __("Woman")
+        satella_name = __("Girl")
+        shalia_name = __("Voice")
+        mask_name = __("Shadow")
+        gizel_name = __("Elf girl")
+        stella_name = __("Woman slaver")
+        goldie_name = __("Woman")
         willow_name = _("Strange girl")
         gina_name = _("Girl")
-        carpenter_name = _("Woman")
-        bast_name = _("Market girl")
-        banker_name = _("Mysterious woman")
-        riche_name = _("Sweet girl")
-        ramias_name = _("Tough girl")
-        gurigura_name = _("Wild girl")
-        katryn_name = _("Nerdy girl")
-        today_name = _("Happy tailor")
-        yesterday_name = _("Quiet tailor")
-        jobgirl_name = _("Freelancer")
-        kenshin_name = _("Female knight")
-        homura_name = _("Noble lady")
-        suzume_name = _("Blue-haired girl")
-        taxgirl_name = _("Elegant woman")
-        narika_name = _("Petite Kunoichi")
-        mizuki_name = _("Elegant Kunoichi")
-        haruka_name = _("Athletic Kunoichi")
-        chaos_name = _("Talking sword")
-        shizuka_name = _("Mage Girl")
+        carpenter_name = __("Woman")
+        bast_name = __("Market girl")
+        banker_name = __("Mysterious woman")
+        riche_name = __("Sweet girl")
+        ramias_name = __("Tough girl")
+        gurigura_name = __("Wild girl")
+        katryn_name = __("Nerdy girl")
+        today_name = __("Happy tailor")
+        yesterday_name = __("Quiet tailor")
+        jobgirl_name = __("Freelancer")
+        kenshin_name = __("Female knight")
+        homura_name = __("Noble lady")
+        suzume_name = __("Blue-haired girl")
+        taxgirl_name = __("Elegant woman")
+        narika_name = __("Petite Kunoichi")
+        mizuki_name = __("Elegant Kunoichi")
+        haruka_name = __("Athletic Kunoichi")
+        chaos_name = __("Talking sword")
+        shizuka_name = __("Mage Girl")
 
         # NPC OBJECTS / TRAINERS #
 
@@ -628,58 +628,58 @@ label init_game(quick=False):
 
         contract_templates = [
                     Contract(type="cruise", district="The Docks", archetypes = ["The Player", "The Fox"],
-                            names=["A Night At Sea", "Touring Zan's Bay", "The Retired Sailor", "A Fancy Cruise"],
-                            organizers=["the rowdy sailor fraternity", "Zan's navy", "the flibusteer social club", "the Northern merchant navy"],
-                            venues=["refitted galleon", "private junk", "princely yacht", "fleet of small fishing boats", "large tour boat"],
+                            names=["海天盛筵", "近海航行", "水手退休仪式", "豪华邮轮游"],
+                            organizers=["水手联谊会", "泽恩海军", "游艇俱乐部", "北境商船"],
+                            venues=["改装的帆船", "私人快艇", "豪华游艇", "小型船队", "巨型邮轮"],
                             character=young_sailor,
                             MC_event_pic="events/brawl3.webp",
                             ),
                     Contract(type="party", district="The Cathedra", archetypes = ["The Maid", "The Slut"],
-                            names=["Party Hard", "All-Nighter by The Cathedra", "Shameless Party", "From Dusk Till Dawn", "Blackjack Tables, and Hookers", "Dude, Where's My Cart?"],
-                            organizers=["a foreign dignitary", "a wealthy patrician family", "an interguild association", "a visiting High Mage of Karkyr", "a close advisor of the king", "a wealthy brothel master", "the House of Lannister"],
-                            venues=["abandonned church", "famous okiya", "fancy palace", "seedy tavern", "underground casino"],
+                            names=["刺激派对", "教堂之夜", "无遮大会", "彻夜不眠", "21点和21个妓女", "赌神大赛"],
+                            organizers=["外国政要", "富有的贵族", "行业公会", "来访的卡尔基大法师", "国王的私人顾问", "富有的青楼老板", "兰尼斯特家族"],
+                            venues=["废弃的教堂", "知名的歌舞伎町", "奢华的宫殿", "年久失修的酒馆", "地下赌场"],
                             character=party_girl,
                             MC_event_pic="events/violent2.webp",
                             ),
                     Contract(type="ceremony", district="The Cathedra", archetypes = ["The Model", "The Bride"],
-                            names=["A Holy Affair", "A Religious Festival", "The Saintly Ceremony", "A Most Holy Gathering", "After The Prayer"],
-                            organizers=["The Holy Church of Arios", "The Nuns of Saint Dil d'Oh", "The Enlightened Brothers", "The Pious Fraternity", "The Friends of Shalia", "The Ol' Gods Alliance", "The Worshippers of the Unspeakable Yog'Gluglu", "The Priestesses of Arios"],
-                            venues=["large convent", "venerable cathedral", "isolated monastery", "quiet retreat", "forgotten temple", "glorious church", "destitute orphanage"],
+                            names=["神圣事业", "圣教纪念日", "圣人生辰", "神圣聚会", "祈祷活动"],
+                            organizers=["太阳神大教堂", "圣狄欧修女会", "启迪兄弟会", "虔诚的信徒", "黑暗女神之友", "上古之神联盟", "不可言喻的约格鲁的崇拜者", "太阳神教女祭司"],
+                            venues=["大型修道院", "古老的教堂", "隐世的修道院", "隐居点", "无人问津的庙宇", "辉煌的教堂", "贫穷的孤儿院"],
                             character=nun,
                             MC_event_pic="events/monster assault.webp",
                             ),
                     Contract(type="festival", district="The Slums", archetypes = ["The Player", "The Fox"],
-                            names=["The Moonlight Festival", "A Country Festival", "Season's Greetings", "The Countryside Fair", "The Farmers Market", "A Prized Tradition"],
-                            organizers=["The Bumpkin Pumpkins", "The Farmers Guild", "Zan's Country Club", "The Gardening Brotherhood", "The Landlords Cooperative", "Dirty hippies from the Valley", "The Union of Goat-Herders"],
-                            venues=["former junkyard", "large plaza", "market square", "city gate", "main roadside"],
+                            names=["圆月之夜", "乡村庆典", "季节庆典", "乡村大集", "农贸展览", "传统习俗"],
+                            organizers=["南瓜协会", "农业协会", "泽恩乡村俱乐部", "园艺兄弟会", "农业合作社", "乡村嬉皮士", "牧羊人联盟"],
+                            venues=["旧废品回收站", "村镇广场", "农贸市场", "城镇大门", "主干道"],
                             character=kimono_lady,
                             MC_event_pic="default/farm/sex beast (7).webp",
                             ),
                     Contract(type="date", district="The Magic Gardens", archetypes = ["The Bride", "The Model"],
-                            names=["A Romantic Date", "The Lonely Gentleman", "The Lord's Penthouse", "Pretty Woman"],
-                            organizers=["Calif Bretznah", "High Priest Ronan", "Lord Nabukov", "Master Rhi-Seung", "Count Dicku", "The Pink Baron", "Duke Nukem", "Guild Master Felix"],
+                            names=["浪漫之约", "孤独的绅士", "领主的宅邸", "佳人有约"],
+                            organizers=["哈里发亲王", "大祭司罗南", "纳博克领主", "瑞森大师", "迪库议员", "粉红男爵", "努科姆公爵", "公会会长菲利克斯"],
                             character=young_maid,
-                            venues=["luxurious penthouse", "big country house", "old mansion", "family palace", "private temple", "popular resort"],
+                            venues=["豪华公寓", "乡间别墅", "古宅", "家族行宫", "私营寺庙", "知名的度假村"],
                             MC_event_pic="NPC/encounters/thief4.webp",
                             ),
                     Contract(type="meeting", district="The Warehouse", archetypes = ["The Courtesan", "The Maid"],
-                            names=["A Strategic Meeting", "A Show of Power", "A Political Reunion", "A Momentous Occasion", "A Pompous Conference"],
-                            organizers=["The Zanic City Council", "The Rebel Alliance", "The government of His Majesty's King Pharo the 1st", "The Knights of the Oddly-Shaped Table", "The Blood-Island Coalition"],
-                            venues=["progress in the Holy War", "military cooperation", "freer sex slave trading", "new fishery regulations", "limits on magic weapon stockpiles", "lowering taxes for the noble-born", "raising taxes on the poor and destitute"], # Different use for venue for this particular contract
+                            names=["战略会议", "军事演习", "政治协商", "尖峰时刻", "议员会议"],
+                            organizers=["泽恩城邦议会", "反抗军联盟", "泽恩政府", "方桌骑士", "鲜血群岛联盟"],
+                            venues=["圣战战报", "军事合作", "放开性奴隶交易", "新渔业条例", "限制魔法武器的储备", "降低富人税收", "增加平民税收"], # Different use for venue for this particular contract
                             character=diplomat,
                             MC_event_pic="NPC/encounters/thief2.webp", #impress1_5.webp / quests/sex9.webp
                             ),
                     Contract(type="magic", district="The Magic Gardens", archetypes = ["The Escort", "The Courtesan"],
-                            names=["Magic: The Gathering", "The Wizard Annual Convention", "The Magical Science Fair", "Fun at the Magic Guild", "Magic Schools Face-Off", "Witch Please"],
-                            organizers=["High Mage Windzoss", "The Union of Concerned Sorceresses", "The Necromancer Social Club", "The Elders of Karkyr", "The Friendly Neighborhood Dark Cultists"],
-                            venues=["haunted manor", "creepy old house", "high tower", "underground lair", "recently-opened demonic plane", "dusty library"],
+                            names=["万智牌大赛", "法师年度聚会", "魔工学博览会", "法师公会团建", "魔法学院会议", "女巫限定"],
+                            organizers=["传奇法师温蒂索斯", "女巫姐妹互助会", "死灵法师社团", "卡尔基长老会", "友好的邻居黑魔法师"],
+                            venues=["闹鬼的庄园", "令人毛骨悚然的古宅", "法师尖塔", "地下巢穴", "近期显现的魔界传送门", "古老的图书馆"],
                             character=sorceress,
                             MC_event_pic="NPC/encounters/witches (1).webp",
                             ),
                     Contract(type="orgy", district="The King's Hold", archetypes = ["The Slut", "The Escort"],
-                            names=["Orgy Night", "Sleazy Party", "Ready To Mingle", "Bachelors Day Out", "A Night Of Dirty Fun"],
-                            organizers=["Mistress Smutty Kitty", "Brothel Master Quinn", "High Priest Ronan", "The Arios Nun Choir", "The Gimp", "The Hooker Trade Union", "An anonymous member of the royal family", "A rich businessman", "A noble lady"],
-                            venues=["mysterious forest clearing", "gipsy camp", "dark dungeon", "decadent palace", "smutty tavern", "hidden basement", "forgotten temple"],
+                            names=["狂欢之夜", "荒淫无度", "联谊会", "光棍节", "“高级”趣味"],
+                            organizers=["猫咪小姐", "妓院老板奎恩", "大祭司罗南", "太阳神教修女合唱团", "残障权益组织", "红灯区工会", "不愿透露身份的皇室成员", "一个暴发户", "一位贵族千金"],
+                            venues=["神秘的林中空地", "吉普赛人营地", "昏暗的地牢", "荒废的宫殿", "不正经的酒馆", "秘密基地", "无人问津的庙宇"],
                             character=naked_lady,
                             MC_event_pic="NPC/encounters/ev_onsens2.webp",
                             ),

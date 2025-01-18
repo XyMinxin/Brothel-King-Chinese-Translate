@@ -180,15 +180,15 @@ init python:
             self.sanity_cost = sanity_cost # Sanity cost should range from 1 (mild) to 6 (very high)
 
             if self.sanity_cost >= 10:
-                self.sanity_lvl = "Break"
+                self.sanity_lvl = __("Break")
             elif self.sanity_cost > 5:
-                self.sanity_lvl = "Very high"
+                self.sanity_lvl = __("Very high")
             elif self.sanity_cost > 3:
-                self.sanity_lvl = "High"
+                self.sanity_lvl = __("High")
             elif self.sanity_cost > 1:
-                self.sanity_lvl = "Medium"
+                self.sanity_lvl = __("Medium")
             else:
-                self.sanity_lvl = "Low"
+                self.sanity_lvl = __("Low")
 
         def get(self, _super=False):
             if _super:
@@ -730,7 +730,7 @@ label power_use(_pow, girl, girl2):
                 if not _pow.super:
                     $ new_fix = girl.add_random_fixation(type="neg")[0] # Adding the new fixation first ensures the old one will not be randomly chosen
                     $ girl.personality_unlock[new_fix] = False
-                    $ text1 = " She has received a new negative fixation."
+                    $ text1 = "她形成了一个新的负面性癖。"
 
                 $ girl.remove_fixation(fix.name)
 
@@ -1383,7 +1383,7 @@ label kidnap_return(girl, girl2, _super):
 
         $ h = girl.get_hurt(max(1, dice(3) + girl2.rank - girl.rank))
         if h > 0:
-            $ text1 = "She was hurt in the process (for %i day%s)." % (h, plural(h))
+            $ text1 = "她在这个过程中受伤了(需要休息%i天%s)。" % (h, plural(h))
 
         "[girl.fullname]'s attempt to abduct [girl2.fullname] failed.[text1]"
 
@@ -1454,7 +1454,7 @@ label powers_intro():
 
     gizel "Yes! You are the cause of this!" with vpunch
 
-    $ MC.rand_say(["wz: But I didn't cast any spell? I didn't do anything!", "How is that even possible?"])
+    $ MC.rand_say(["wz: 但我没有施任何咒语？我什么都没做！", "这怎么可能呢？"])
 
     gizel normal "I've been wondering about that myself, and I have a theory."
 

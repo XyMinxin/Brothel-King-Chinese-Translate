@@ -148,7 +148,7 @@ translate schinese jobgirl_beach_1_58ccc8f3:
 translate schinese jobgirl_beach_2_c8a0fc9a:
 
     # "You head for the location indicated by Sill. You don't know what to expect once there, but you start fantasizing about the redhead adventurer. You still have in mind how things went when she asked for your help with that stupid riddle."
-    "你赶去希露所指的地方。你不知道在那里会发生什么,你回忆起斯嘉丽和你共处的时光。你还记得她请你帮忙解开那个愚蠢的谜题时的情景。"
+    "你赶去希露所指的地方。你不知道在那里会发生什么,你回忆起斯嘉丽和你共处的时光。你还记得她请你帮忙解开那个愚蠢的谜语时的情景。"
 
 # game/kite_jobgirl 2_beach.rpy:126
 translate schinese jobgirl_beach_2_09323470:
@@ -286,7 +286,7 @@ translate schinese jobgirl_beach_2_d4603072:
 translate schinese jobgirl_beach_2_2b6d4bd1:
 
     # anika "Yeah yeah, she wouldn't stop going on about you. How you're really smart and helpful, solved that ancient riddle in no time, and so on."
-    anika "是啊是啊,她从早到晚一直在聊你。说你聪明绝顶，很靠得住,一下子就解开了那个古老的谜题,诸如此类。"
+    anika "是啊是啊,她从早到晚一直在聊你。说你聪明绝顶，很靠得住,一下子就解开了那个古老的谜语,诸如此类。"
 
 # game/kite_jobgirl 2_beach.rpy:184
 translate schinese jobgirl_beach_2_0da2b9fc:
@@ -298,7 +298,7 @@ translate schinese jobgirl_beach_2_0da2b9fc:
 translate schinese jobgirl_beach_2_3a6c996e:
 
     # you "That's... Good to know. Say, I wanted to ask you something: our friend here didn't tell me her true name yet, so I was wondering if you could solve {i}that{/i} riddle for me."
-    you "这...很高兴听你这么说。那么,我想请教一下:我们的朋友始终不愿告诉我她的芳名,所以你能帮我解开{i}那个{/i}谜题吗。"
+    you "这...很高兴听你这么说。那么,我想请教一下:我们的朋友始终不愿告诉我她的芳名,所以你能帮我解开{i}那个{/i}谜语吗。"
 
 # game/kite_jobgirl 2_beach.rpy:188
 translate schinese jobgirl_beach_2_e85a5884:

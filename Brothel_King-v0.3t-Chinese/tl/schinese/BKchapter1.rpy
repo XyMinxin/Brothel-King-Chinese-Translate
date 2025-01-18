@@ -16,13 +16,13 @@ translate schinese c1_gio_is_back_17303510:
 translate schinese c1_gio_is_back_478ccb57:
 
     # gio "If it isn't my old buddy, [MC.name]..."
-    gio "这不是我的兄弟 [MC.name] 吗..."
+    gio "这不是我的好兄弟[MC.name]吗..."
 
 # game/BKchapter1.rpy:31
 translate schinese c1_gio_is_back_f9dd1f52:
 
     # sill sad "He's been here for an hour, helping himself to our food and drinks, and trying to molest me!"
-    sill sad "他已经在这里坐了一个小时了,大吃大喝,还摸我的屁股!"
+    sill sad "他已经在这里坐了一个小时了,胡吃海塞,还摸我的屁股!"
 
 # game/BKchapter1.rpy:33
 translate schinese c1_gio_is_back_f8a9006f:
@@ -40,7 +40,7 @@ translate schinese c1_gio_is_back_dccc2f40:
 translate schinese c1_gio_is_back_edde83ca:
 
     # gio "I bring good tidings, friend! I have found a way to get you a proper brothel license."
-    gio "天大的好消息!我找到了路子能让你获得官方认证的青楼经营执照。"
+    gio "好消息!我找到了路子能让你获得官方认证的青楼经营执照。"
 
 # game/BKchapter1.rpy:39
 translate schinese c1_gio_is_back_acb90c7e:
@@ -52,19 +52,19 @@ translate schinese c1_gio_is_back_acb90c7e:
 translate schinese c1_gio_is_back_3f15cc41:
 
     # gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[blist[2].cost] denars{/b}, we should be able to afford a new place and bribe the city guard for our first license."
-    gio "这并不容易，不过我认识一个哥们，如果你能给他 {b}[[blist[2].cost]金币{/b},我们就能买下一个城里的门面，打点好守卫，拿到营业执照。"
+    gio "这并不容易，不过我认识一个人，如果你能给他 {b}[[blist[2].cost]金币{/b},我们就能买下一间城里的门面，然后打点好守卫，拿到营业执照。"
 
 # game/BKchapter1.rpy:44
 translate schinese c1_gio_is_back_6f230e60:
 
     # sill "That's... That's a lot of money!"
-    sill "这...这也太多了！怎么不去抢！"
+    sill "这...这也太多了！你怎么不去抢！"
 
 # game/BKchapter1.rpy:46
 translate schinese c1_gio_is_back_7121f2ef:
 
     # gio "Well, it is, but think of the great things we could do after leaving this dump! Our chances of getting bit by a rabid dog would be lower, for starters."
-    gio "确实很多,但想想我们离开这个鬼地方后能做些什么!起码不会再被疯狗咬了。"
+    gio "确实很多,但想想我们离开这个鬼地方后会发生什么!起码不会再被疯狗咬了。"
 
 # game/BKchapter1.rpy:49
 translate schinese c1_gio_is_back_3c7ec6d4:
@@ -76,13 +76,13 @@ translate schinese c1_gio_is_back_3c7ec6d4:
 translate schinese c1_gio_is_back_a3952849:
 
     # you "All right then, let's do this. Now scram, Gio, we have a lot to do."
-    you "好吧，我会想办法筹到钱的，现在离开这里，乔。我们还有很多事要处理。"
+    you "好吧，我会想办法筹到钱的，现在走吧，乔。我们还有很多事要处理。"
 
 # game/BKchapter1.rpy:53
 translate schinese c1_gio_is_back_b5b122dd:
 
     # gio "Oh, how rude... Mind if I take that bottle with me? Oh, and those, they're tasty."
-    gio "哦我屁股都还没坐热，你介意我把这瓶酒带走吗？哦还有那块蛋糕。"
+    gio "拜托，我椅子都还没坐热，你介意我把这瓶酒带走吗？哦还有那块蛋糕。"
 
 # game/BKchapter1.rpy:55
 translate schinese c1_gio_is_back_4dc3fd97:
@@ -94,7 +94,7 @@ translate schinese c1_gio_is_back_4dc3fd97:
 translate schinese c1_gio_is_back_4839969c:
 
     # gio "See ya!"
-    gio "再见!"
+    gio "回见!"
 
 # game/BKchapter1.rpy:63
 translate schinese c1_gio_is_back_f4dc16ea:
@@ -112,7 +112,7 @@ translate schinese c1_meet_kosmo_31ebae8a:
 translate schinese c1_meet_kosmo_59055de4:
 
     # sill "Look out... There are some strange men lurking around the house..."
-    sill "小心，房子外面有群奇怪的陌生人在看着我们..."
+    sill "快看外面，房子外面有群奇怪的陌生人在看着我们..."
 
 # game/BKchapter1.rpy:103
 translate schinese c1_meet_kosmo_8db7e627:

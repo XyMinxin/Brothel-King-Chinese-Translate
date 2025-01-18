@@ -16,7 +16,7 @@ translate schinese slavemarket_7a16f791:
 translate schinese slavemarket_4abebc59:
 
     # slavegirl1 "Fresh girls are available today, Master."
-    slavegirl1 "贵客,今天来了一批新的奴隶供您挑选。"
+    slavegirl1 "客人,今天来了一批新的奴隶供您挑选。"
 
 # game/BKmain.rpy:40
 translate schinese slavemarket_5ea722bf:
@@ -208,7 +208,7 @@ translate schinese girls_first_time_a90f2671:
 translate schinese girls_first_time_faba9c36:
 
     # "Press the '?' button in the top right corner to obtain information on the game or your current screen."
-    "在右上角按?按钮可以获取游戏或当前界面的信息。"
+    "在右上角按'?'按钮可以获取游戏或当前界面的信息。"
 
 # game/BKmain.rpy:991
 translate schinese girls_first_time_9315b88f:
@@ -238,7 +238,7 @@ translate schinese girls_first_time_ace77a87:
 translate schinese girls_first_time_4db6f161:
 
     # "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
-    "您随时可以点击右上角的?按钮访问帮助菜单。"
+    "您随时可以点击右上角的'?'按钮打开帮助菜单。"
 
 # game/BKmain.rpy:1057
 translate schinese girls_first_time_9dd554bc:
@@ -256,7 +256,7 @@ translate schinese girls_first_time_0b4221ae:
 translate schinese girls_first_time_faba9c36_1:
 
     # "Press the '?' button in the top right corner to obtain information on the game or your current screen."
-    "点击右上角的?按钮,获取关于游戏或当前界面的信息。"
+    "点击右上角的'?'按钮,获取关于游戏或当前界面的信息。"
 
 # game/BKmain.rpy:1186
 translate schinese girls_loop_07129470:
@@ -274,7 +274,7 @@ translate schinese girls_loop_ace77a87:
 translate schinese girls_loop_4db6f161:
 
     # "You can access the help menu at any time by clicking the '?' button in the upper-right corner."
-    "您随时可以点击右上角的?按钮访问帮助菜单。"
+    "您随时可以点击右上角的'?'按钮访问帮助菜单。"
 
 # game/BKmain.rpy:1206
 translate schinese girls_loop_477ddccc:

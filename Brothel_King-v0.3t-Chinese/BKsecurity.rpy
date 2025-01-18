@@ -85,7 +85,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             menu_list = [["Choose a girl to defend", None]]
 
             for girl in target_girls:
-                menu_list.append([girl.fullname.capitalize() + ", Level " + str(girl.level) + ", Defense " + str_int(girl.get_defense()), girl])
+                menu_list.append([girl.fullname.capitalize() + "，等级" + str(girl.level) + "，防御等级" + str_int(girl.get_defense()), girl])
 
         $ girl = menu(menu_list)
 
@@ -199,7 +199,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             $ target_girls.remove(girl)
             $ defended_girls.append(girl)
 
-            $ text1 = "While you were fighting, the other attackers rampaged through your brothel. "
+            $ text1 = "当你陷于苦战的时候，其他袭击者冲进了你的妓院。"
 
         else:
             if girl.test_shield():
@@ -256,7 +256,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             $ lost_gold = int(MC.gold * 0.15)
             $ MC.gold -= lost_gold
-            $ text1 = "While you were passed out, the [attackers] ransacked your brothel, {color=[c_red]}taking off with [lost_gold] gold.{/color} "
+            $ text1 = "当你昏倒的时候，[attackers]洗劫了你的青楼， {color=[c_red]}抢走了[lost_gold]金币。{/color} "
 
         python:
 
@@ -347,9 +347,9 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             loot = enemies * 150 + war_machines * 600
 
             if enemy_general.has_trait("Warrior"):
-                enemy_g = "mercenary captain"
+                enemy_g = "雇佣兵女团长"
             elif enemy_general.has_trait("Caster"):
-                enemy_g = "freelance sorceress"
+                enemy_g = "雇佣兵女法师"
 
             general_defeats = 0
             fatigue = -1
@@ -402,7 +402,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
             "Lead from behind (use Charisma to improve your troops' morale)":
                 $ norollback()
                 play sound s_sheath
-                $ MC.rand_say(["ev: Men, get ready!!! We will slaughter them where they stand!", "gd: Brothers and sisters! We didn't choose to start this fight, but we will surely end it!", "ne: Men, fight them smart, fight them hard! Be the first one on your block to get a confirmed kill!"])
+                $ MC.rand_say(["ev: 士兵们，拿起武器！！把他们就地处决！", "gd: 兄弟姐妹们！我们没有选择挑起这场战争，但我们一定会结束它！", "ne: 伙计们，打得聪明点，下手狠点！争取拿下小队的首杀！"])
                 $ r = "rally"
 
                 call challenge(r, game.chapter) from _call_challenge_36
@@ -496,7 +496,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             with vpunch
 
-            $ renpy.say(security_breach, rand_choice(["Shrapnel bursts among your troops, wounding [damage] of them.", "Fire rains down on your troops, wounding [damage].", "Cannonballs mow down [damage] of your security guards.", "A huge stone crashes among your troops, wounding [damage]."]))
+            $ renpy.say(security_breach, rand_choice(["炸弹在你的部队中爆炸，使[damage]人受伤。", "炮火像雨点般落在你的军队上，使[damage]人受伤。", "加农炮弹幕炸飞了[damage]个守卫。", "一块巨石在你的军队上空中坠落，使[damage]人受伤。"]))
 
         # Enemy charge
 
@@ -771,7 +771,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 "Encourage your girls to fight (use Charisma to boost your girls' fighting skill)":
                     $ norollback()
                     play sound s_roar
-                    $ MC.rand_say(("Brace yourself! The enemy is coming, you know what to do!", "ev: All right, bitches, prepare to defend your miserable lives! You'd better not disappoint me!", "gd: All right everyone, remember your training, and don't take any unnecessary risks!", "ne: Babes, this is it. I'm counting on you!"))
+                    $ MC.rand_say(("振作起来!敌人来了，你们知道该怎么做！", "ev: 好了，贱人们，准备好捍卫你们悲惨的生活吧！你最好别让我失望！", "gd: 好了，各位，想想平时的训练，不要冒任何不必要的风险！", "ne: 宝贝们，事已至此。我只能靠你们来保护我了！"))
                     $ r = "rally"
 
                     call challenge(r, game.chapter, bonus=fatigue) from _call_challenge_42
@@ -1596,7 +1596,7 @@ init -3 python:
         text_chg = "\n\n" + get_change_text(sec_changes)
 
         if not sec_pic:
-            renpy.say("", ev_type + " picture missing: " + str(sec_pic))
+            renpy.say("", ev_type + "图片缺失: " + str(sec_pic))
         elif not isinstance(sec_pic, Picture):
             sec_pic = Picture(path=sec_pic)
 
@@ -1664,7 +1664,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
                 man "Well... You know where to find me."
 
             "Forget it ([girl.fullname] will be lost forever)":
-                $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
+                $ MC.rand_say(["gd: 我很伤心，但是" + girl.name + "离开了我们，希望她能平安无事。", "ne: " + girl.fullname + "? 船已经离岸了。希望她没事...", "ev: 她很虚弱。活该被抓。也许她能自救，这就不关我的事了。"])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
 
@@ -1694,7 +1694,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
                 man "Well... You know where to find me."
 
             "Forget it ([girl.fullname] will be lost forever)":
-                $ MC.rand_say(["gd: It breaks my heart, but " + girl.name + " is lost for good now. I hope she'll be ok.", "ne: " + girl.fullname + "? That ship has sailed. I hope she's, uh, fine...", "ev: She was weak. Serves her right for being captured. Maybe she'll free herself, it's not my business any more."])
+                $ MC.rand_say(["gd: 我很伤心，但是" + girl.name + "离开了我们，希望她能平安无事。", "ne: " + girl.fullname + "? 船已经离岸了。希望她没事...", "ev: 她很虚弱。活该被抓。也许她能自救，这就不关我的事了。"])
 
                 man "Well, I wouldn't count on that... Have it your way, friend."
 

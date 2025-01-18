@@ -726,7 +726,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, who worship the Shadow Goddess Shalia."
-    new "贫民窟位于泽恩的郊区，在城墙和护城河之外。这里是乌合之众的家园:外来者、难民、乞丐、瘾君子....还有传闻说这里是盗贼公会的藏身之处，他们崇拜暗影女神莎莉娅。"
+    new "贫民窟位于泽恩的郊区，紧贴城墙和护城河的外缘。这里是下等人的家园:外来者、难民、乞丐、瘾君子....还有传闻说盗贼公会的藏身处也在这里，他们信仰暗影女神莎莉娅。"
 
     # game/BKstart.rpy:483
     old "The Docks"
@@ -734,7 +734,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The docks are home to rowdy sailors and dodgy pirates sheltering from the treacherous seas. With seamen all around, no wonder there is a thriving market for cheap whores near the port."
-    new "码头是吵闹的水手和狡猾的海盗的家，他们躲避危险的浪涛，等到风平浪静再出海。这里到处都是水手，难怪港口附近的青楼生意都这么好。"
+    new "码头是聒噪的水手和狡猾的海盗们的归处，他们躲避危险的浪涛，等到风平浪静再出海。水手在这里随处可见，港口附近的风月场所生意都很不错。"
 
     # game/BKstart.rpy:483
     old "The Warehouse"
@@ -742,7 +742,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The warehouse is the industrial part of Zan, where all kinds of craftsmen and day laborer come to look for work. Its streets are buzzing with trade and activities during the day, but dodgy at night."
-    new "外城区是泽恩的商业中心，各种各样的工匠和临时工都来这里找工作。白天，这里的街道上随处可见繁忙的贸易和活动，但到了晚上就变得危机四伏"
+    new "外城区是泽恩的商业中心，各种各样的工匠和劳工都在这里工作。白天，这里的街道上车水马龙，但到了晚上就变得危机四伏"
 
     # game/BKstart.rpy:483
     old "The Magic Gardens"
@@ -750,7 +750,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The gardens are where the magic-wielding locals gather to soak up mana after a long night of dangerous experiments. It is said some of those experiments occasionally escape..."
-    new "魔法花园，在有魔法天赋的人们在经历了一次长夜漫漫的危险实验之后，他们就可以在这里吸收魔力。据说有些实验体偶尔会逃脱出来。"
+    new "在被法师们多次改造后，这里成为了充满魔力的花园。法师们可以在这里吸收自然产生的魔力。偶尔会有些实验品逃出来。"
 
     # game/BKstart.rpy:483
     old "The Cathedra"
@@ -758,7 +758,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "The Cathedra is the holy center of the Arios order. Pilgrims, knights and priests rub elbows during prayers and rituals, while savvy merchants and bankers make a killing providing them with expensive service."
-    new "大教堂是太阳神秩序的神圣中心。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
+    new "大教堂是太阳神教的宗教圣地。朝圣者、骑士和牧师在祈祷和仪式中相互往来，而精明的商人和银行家则为他们提供昂贵的服务，大赚一笔。"
 
     # game/BKstart.rpy:483
     old "The King's Hold"
@@ -766,7 +766,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:483
     old "This is the center of power in Zan, where courtiers compete for power and the King's support. Behind the veneer of respectability and privilege, however, daggers are drawn... Beware."
-    new "这里是泽恩的权力中心，大臣们在这里争夺权力和国王的支持。然而，在体面和特权的表象背后，暗藏危险....当心！"# TODO: Translation updated at 2024-07-31 02:24
+    new "这里是泽恩的权力中心，大臣们在这里争夺权力和国王的宠爱。然而，在荣华富贵的背后，也波涛汹涌....多加小心！"# TODO: Translation updated at 2024-07-31 02:24
 
     # game/BKstart.rpy:793
     old "starting chapter"
@@ -774,7 +774,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "The chapter you will start the game at. Not compatible with challenges such as the free girl challenge."
-    new "在第几章节开始游戏。这将禁用挑战，如照单全收的挑战。"
+    new "在第几章节开始游戏。这将禁用挑战选项，如“照单全收”的挑战。"
 
     # game/BKstart.rpy:793
     old "starting gold"
@@ -958,7 +958,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Potions of Seduction (raises the relationship level with any free girl by one step)."
-    new "你可以制造魅惑药水 (药水可以将你与任意一个单身女孩的关系提升一步)。"
+    new "你会定期收到一瓶魅惑药水 (药水可以将你与任意一个自由女孩的关系提升一步)。"
 
     # game/BKstart.rpy:793
     old "virginity"
@@ -966,7 +966,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Balms of Restoration (restores a girl's virginity)."
-    new "你可以制造修复软膏 (修补女孩的处女膜使其恢复处子之身)。"
+    new "你会定期收到一瓶修复软膏 (修补女孩的处女膜使其恢复处子之身)。"
 
     # game/BKstart.rpy:793
     old "sanity"
@@ -974,7 +974,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Incense of Bliss (restores some of a girl's sanity)."
-    new "你可以制造极乐香 (恢复女孩的部分理智)。"
+    new "你会定期收到一盒极乐香 (恢复女孩的部分理智)。"
 
     # game/BKstart.rpy:793
     old "interactions"
@@ -982,7 +982,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Magic Powder (regain all AP)."
-    new "你可以制造魔法药粉 (恢复所有的行动力)."
+    new "你会定期收到一包魔法药粉 (恢复所有的行动力)."
 
     # game/BKstart.rpy:793
     old "perks"
@@ -990,7 +990,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:793
     old "Produce Wyvern eggs (+1 Perk points)."
-    new "你可以制造飞龙蛋 (+1天赋点)。"
+    new "你会定期收到一个飞龙蛋 (+1天赋点)。"
 
     # game/BKstart.rpy:793
     old "autorest"

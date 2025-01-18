@@ -419,9 +419,9 @@ label init_items():
 
         # SPECIAL ITEMS AND FURNITURE #
 
-        vitals_scanner = Furniture(_('Strange machine'), type='Gizmos', pic='scanner.webp', rank=2, chapter=2, cost=[('wood', 20), ('dye', 20), ('leather', 20)], duration=4, effects=[Effect("special", "autorest", 1, scope="brothel")], base_description="This mysterious machine glows with pulsating magical energy.") #  It scans your girls automatically to make sure they are fit to work.
+        vitals_scanner = Furniture(_('Strange machine'), type='Gizmos', pic='scanner.webp', rank=2, chapter=2, cost=[('wood', 20), ('dye', 20), ('leather', 20)], duration=4, effects=[Effect("special", "autorest", 1, scope="brothel")], base_description="这个神秘的机器散发着一股奥术能量的波动。") #  It scans your girls automatically to make sure they are fit to work.
 
-        billboard = Furniture(_('Clockwork billboard'), type='Furnishing', pic='billboard.webp', rank=2, chapter=2, cost=[('wood', 40), ('dye', 25), ('leather', 10)], duration=5, effects=[Effect("special", "advanced advertising", 1, scope="brothel")], base_description="This imposing billboard is sure to draw some attention. Unlocks advanced advertising settings.") #  Unlocks advanced advertising settings
+        billboard = Furniture(_('Clockwork billboard'), type='Furnishing', pic='billboard.webp', rank=2, chapter=2, cost=[('wood', 40), ('dye', 25), ('leather', 10)], duration=5, effects=[Effect("special", "advanced advertising", 1, scope="brothel")], base_description="这个华丽的广告牌能吸引许多人的注意。解锁高级广告设置。") #  Unlocks advanced advertising settings
 
         extractor_items = {"extractor1" : Item(name="Extractor Mk I", target="MC", type=IT_Story, pic="extractor1.webp", template = False, rarity = "S", price = 5000, effects=[], description =__("This strange steam machine lets you harvest wood, dye or leather automatically. Deploy on site.")),
                             "extractor2" : Item(name="Extractor Mk II", target="MC", type=IT_Story, pic="extractor2.webp", template = False, rarity = "S", price = 25000, effects=[], description =__("This strange steam machine lets you harvest marble, silk or ore automatically. Deploy on site.")),
@@ -802,9 +802,9 @@ screen universal_selector:
         textbutton "<" ysize yres(80) xalign 0.0 yalign 0.5:
             action (SetVariable(var, previous), Return((var, "cycle_left")))
             if sc_prefix == "shift_":
-                tooltip "使用shift +左/右方向键来改变选择的角色。"
+                tooltip "使用shift +左/右方向键拜访另一个角色。"
             else:
-                tooltip "使用左/右方向键来改变选择的角色。"
+                tooltip "使用左/右方向键拜访另一个角色。"
 
         key sc_prefix + "K_LEFT" action (SetVariable(var, previous), Return((var, "cycle_left")))
 
@@ -875,9 +875,9 @@ screen universal_selector:
         textbutton ">" ysize yres(80) xalign 1.0 yalign 0.5:
             action (SetVariable(var, next), Return((var, "cycle_right")))
             if sc_prefix == "shift_":
-                tooltip "使用shift +左/右方向键来改变选择的角色。"
+                tooltip "使用shift +左/右方向键拜访另一个角色。"
             else:
-                tooltip "使用左/右方向键来改变选择的角色。"
+                tooltip "使用左/右方向键拜访另一个角色。"
 
 
 screen sorting_tab(context, sort_target=None, sorters=[], use_stats=False, small=False): # Sorters are defined in BKinit_variables.rpy

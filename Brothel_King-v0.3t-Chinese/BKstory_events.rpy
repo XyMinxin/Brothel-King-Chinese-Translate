@@ -997,7 +997,7 @@ label renza_onsen2:
 
     sill "Ah, Master! Aaaaah!!!"
 
-    $ MC.rand_say(("gd: I'm not stopping until you come! This is your punishment!", "ne: This is for your Master's good! You better please me!", "ev: You stupid bitch slave! I'll teach you some manners!"))
+    $ MC.rand_say(("gd: 你不高潮我是不会停下来的！这是对你的惩罚！", "ne: 多为你的主人着想！你最好让我高兴！", "ev: 你这个愚蠢的婊子奴隶！我来教你一些礼仪！"))
 
     play sound s_orgasm_young
 
@@ -1560,11 +1560,11 @@ label farm_meet_gizel(): # Location: spice market
     with fade
 
     if MC.playerclass == "Warrior":
-        $ text1 = "anti-rust lotion"
+        $ text1 = "防锈保养油"
     elif MC.playerclass == "Wizard":
-        $ text1 = "magic herbs"
+        $ text1 = "神奇的草药"
     elif MC.playerclass == "Trader":
-        $ text1 = "dragon feed"
+        $ text1 = "龙族的饲料"
 
     "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
 
@@ -1608,15 +1608,15 @@ label farm_meet_gizel(): # Location: spice market
         "How do you feel about elves?"
 
         "I bear them no grudge":
-            $ MC.rand_say(("I don't hate them. Wars come and go, and it wasn't they who started this one...", "ar: Although the Arios church denounces the elves, I do not think they are bad. They can be brought back to the light.", "wr: I have fought enough elves on the battlefield to respect their grit and abilities. They are worthy opponents.", "wz: I do enjoy a good conversation with an elf from time to time. They know a great deal of secrets, though they don't share them very willingly."))
+            $ MC.rand_say(("我不讨厌他们。战争总会发生，并不是他们挑起了这场战争...", "ar: 虽然太阳神教会谴责精灵，但我不认为他们是坏人。他们可以重投光明的怀抱。", "wr: 我在战场与许多精灵搏杀过，我尊重他们的勇气和能力。他们是值得尊敬的对手。", "wz: 我确实喜欢偶尔和精灵闲聊。他们知道很多秘密，虽然他们不太愿意分享。"))
             $ story_flags["elves"] = "like"
 
         "I hate them":
-            $ MC.rand_say(("I despise these pointy-eared rats. The only good elf is a dead elf, I always say.", "ar: Those spawns of hell show no respect to the true Light, and occupy the Holy Lands against the will of men and Gods. I hate them.", "wr: The damn elves took the lives of many of my comrades on the battlefield. I shan't forgive them."))
+            $ MC.rand_say(("我鄙视这些尖耳朵的老鼠。死去的精灵才是好精灵，我总是这么说。", "ar: 那些地狱的后代不尊重真理，违背人类和神的意愿占领圣地。我讨厌他们。", "wr: 那些该死的精灵在战场上夺去了我许多战友的生命。我不会原谅他们的。"))
             $ story_flags["elves"] = "dislike"
 
         "I don't really know":
-            $ MC.rand_say(("I can't say I have met many elves, much less talked to them. So I reserve my judgement.", "ng: I don't really know. The Arios Church hates them I guess, but I have no time for phony gods and their minions.", "wz: Elves know many things, and I'm sure one could learn a lot from them... If they weren't like to pelt you with poison arrows whenever you come near them.", "tr: I've traded with elves quite a bit in the past. They are good on their word, I guess, although they won't win any popularity contest."))
+            $ MC.rand_say(("我不能说我遇到过很多精灵，更不用说和他们交谈了。所以我保留我的判断。", "ng: 我也不知道。我猜太阳神教会讨厌他们，但我没时间管假神和他们的爪牙。", "wz: 精灵知识渊博，我相信一个人可以从他们身上学到很多东西...如果他们不喜欢在你靠近他们的时候用毒箭射你的话。", "tr: 我过去和精灵们做过不少交易。我想他们很信守诺言，尽管他们没赢过什么比赛项目。"))
             $ story_flags["elves"] = "neutral"
 
     man "Make way!"
@@ -1988,7 +1988,7 @@ label farm_meet_gizel2():
 
     gizel surprise "Uh???"
 
-    $ gizel_name = "Gizel"
+    $ gizel_name = "吉泽尔"
 
     gizel shy "Gizel is my name, sir, but I am no witch... I'm just a teenage beggar, come to Zan to make a few denars..."
 
@@ -2818,9 +2818,9 @@ label gizel_attack():
 
             you "My name is [MC.name]. I'm a lot tougher than those clowns out there. You don't want to start a fight you can't win."
 
-            $ MC.rand_say(("wr: Before I was a brothel owner, I was a soldier in the war. I killed more elven mages than I can count.",
-                            "wz: I'm not just a brothel owner, I'm also a powerful mage, top of my class in Karkyr. You won't have the upper hand in this fight.",
-                            "tr: I'm not just a lowlife pimp, okay? I've got a pet dragon. That's right. And he's like, twenty feet tall."))
+            $ MC.rand_say(("wr: 在我成为青楼老板之前，我是战场上的一名士兵。我杀了数不清的精灵法师。",
+                            "wz: 我不只是个青楼老板，我还是一个强大的法师，在卡尔基念书时我是班上的尖子生。你打不过我的。",
+                            "tr: 我不只是个粗鄙的皮条客，好吗？我有一条宠物龙。是真的。他大概有十几米高。"))
 
             if NPC_gizel.raped:
                 if reaction == "fight":
@@ -3205,7 +3205,7 @@ label farm_meet_goldie():
 
     man "Goldie..."
 
-    $ goldie_name = "Goldie"
+    $ goldie_name = "戈尔迪"
 
     man "You're always so brave. I wish I was, too..."
 
@@ -3406,9 +3406,9 @@ label farm_meet_goldie_menu():
 
             goldie "Anyway, how do you expect to solve the mystery of this place?"
 
-            $ MC.rand_say(("wr: There's nothing that can't be solved with a few inches of steel in the gut, I always say. Let me take care of it.",
-                            "wz: I took a class in 'curse and debuff management' at Karkyr University, back in the day... I know my way around these things.",
-                            "tr: I talk my way around tricky situations all day... If there's something in that farm, perhaps I can cut a deal with it?"))
+            $ MC.rand_say(("wr: 我相信，用几英寸的锐器插进它的肚子，没有什么是解决不了的。让我来处理吧。",
+                            "wz: 我在卡尔基大学上过一门“诅咒和负面效果”的课，那是以前的事了...我对这些事很在行。",
+                            "tr: 我随时都能应付棘手的情况。如果农场里有什么东西，也许我能跟它做个交易？"))
 
             goldie "I hope you're right..."
 
@@ -3524,7 +3524,7 @@ label farm_exorcism_attempt():
 
             spirit "Fool! I exist in an ethereal plane that you cannot hope to reach with your amateurish powers..."
 
-    $ MC.rand_say(("sh: Shalia guard me...", "ar: Arios, guide me into the light...", "ng: Fuck."))
+    $ MC.rand_say(("sh: 莎莉娅保佑我...", "ar: 太阳神啊，让我沐浴在你的圣光下...", "ng: 操他妈的。"))
 
     play sound s_maniacal_laugh
 
@@ -3576,7 +3576,7 @@ label farm_exorcism_attempt():
 
     you "I promise, ok?"
 
-    $ MC.rand_say(("gd: I'll come back to save you.", "ev: I {i}{b}want{/b}{/i} that farm even more, now.", "ne: A deal is a deal. I'll help."))
+    $ MC.rand_say(("gd: 我会回来救你的", "ev: 现在我更{i}{b}想要{/b}{/i} 那间农场了。", "ne: 一言既出驷马难追，我会帮到底的。"))
 
     goldie "Really?"
 
@@ -4267,9 +4267,9 @@ label farm_meet_gina():
     it produces enough waste every day to create a landscape of garbage mounds, spreading as far as the eye can see."
 
     if MC.god:
-        $ text1 = MC.god + " forsaken"
+        $ text1 = MC.god + "都抛弃"
     else:
-        $ text1 = "disgusting"
+        $ text1 = "令人作呕"
 
     you "Remind me again, why the hell did I come to that [text1] place? I have trouble understanding my own decisions, sometimes..."
 
@@ -4529,7 +4529,7 @@ label farm_meet_gina():
 
     gina "Deal! My name is Gina. Come by here anytime, and I'll fix some of those machines for you. So you can, uh, enjoy yourself."
 
-    $ gina_name = "Gina"
+    $ gina_name = "吉娜"
 
     you "I'm [MC.name]. And, uh, it's not for me, it's for a friend..."
 
@@ -4955,7 +4955,7 @@ label farm_meet_stella():
 
     stella "My name is Stella. Come visit me any time if you want to buy stallions. I'll have new arrivals every week."
 
-    $ stella_name = "Stella"
+    $ stella_name = "史黛拉"
 
     scene black with fade
 
@@ -5439,7 +5439,7 @@ label stella_invitation():
 
     "Strange glyphs are written on the envelope. There is no recognizable name or address."
 
-    $ MC.rand_say(("gd: I really shouldn't pry, but if I don't open it, I won't be able to bring it to its rightful recipient.", "ev: Great! Hopefully, I can use this to blackmail somebody.", "ne: Well, if someone is going to open this and make away with the content, it might as well be me..."))
+    $ MC.rand_say(("gd: 我真不该打听，但如果我不打开它，我就不用把它送到它的主人那里。", "ev: 太棒了!我也许能用这个敲诈别人。", "ne: 好吧，如果有人要打开这个，拿走里面的东西，那最好是我..."))
 
     "Slicing the envelope open with your dagger, you are somewhat disappointed to find only a small piece of paper tucked inside, alongside a small charm amulet. It's the cheap kind you can find for a denar a dozen on Pilgrim Road."
 
@@ -6672,7 +6672,7 @@ label farm_meet_willow():
 
     show bg inner_sewers at top with Pixellate(2.0, 5)
 
-    $ MC.rand_say(("ev: It's all Sill's damn fault!", "ne: Serves me right for trying to help.", "gd: Sill can be so clumsy sometimes..."))
+    $ MC.rand_say(("ev: 都是希露的错!", "ne: 想让我帮忙就好好伺候我。", "gd: 希露有时候还是很笨拙的..."))
 
     "After you came down into the sewers, you couldn't find the armlet close by after all."
 
@@ -6921,7 +6921,7 @@ label farm_meet_willow():
 
     willow "Come here, sweety. Willow loves you... Willow is going to find you a good home."
 
-    $ willow_name = "Willow"
+    $ willow_name = "薇儿"
 
     play sound s_fizzle
 
@@ -7174,7 +7174,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
         play sound s_dodge
         hide willow with easeoutleft
 
-        $ MC.rand_say(["Again? Really?", "Oh no, not again...", "Again! What kind of monster hunter {i}are{/i} you?!?"])
+        $ MC.rand_say(["再来一次？真的假的？", "哦不，别再来了...", "还来! 你到底是哪门子的{i}怪物猎人{/i}?!?"])
 
     "Effortlessly, the monster lifts Willow in the air, with her head upside down and her skirt overturned. You catch a good view of her panties."
 
@@ -12310,7 +12310,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     show shalia5 with dissolve
 
-    $ shalia_name = "Strange woman"
+    $ shalia_name = "神秘的女人"
 
     shalia "Welcome, my child."
 
@@ -12340,7 +12340,7 @@ label shalia1(): # Happens in the morning after meeting Satella in Chapter 1. Al
 
     you "Shalia!" with vpunch
 
-    $ shalia_name = "Shalia"
+    $ shalia_name = "莎莉娅"
 
     "She is the Goddess herself. You are awestruck. You try to bow or take a knee, only to fail embarrassingly, as you are just a disembodied spirit floating in space."
 
@@ -13540,7 +13540,7 @@ label kosmo_returns2(): # Happens every 7-9 days (yes, Kosmo IS annoying)
 
             kosmo "This one tried to take my life, can you believe it? But my security is top notch. I have 20 guards in my bedroom alone."
 
-            $ MC.rand_say(("Yes, I'm sure you love to jerk off in front of 20 dudes...", "Cool. That should give you the audience you need when you're bouncing on your boy's dick."))
+            $ MC.rand_say(("是的，我想你肯定会愿意在20个男人面前自慰...", "酷。当你在鸡巴上进进出出的时候，这应该能吸引许多观众。"))
 
             kosmo angry "WHAT? Shut up! One day, I'll be the one to send ninjas after you! GRRRR..." with vpunch
 
@@ -14141,7 +14141,7 @@ label no_money():
 
         you "*gulp*"
 
-        $ banker_name = "Banker"
+        $ banker_name = "银行职员"
 
         banker "Let me cut to the chase. I hear you are in a dire financial situation right now."
 
@@ -14421,7 +14421,7 @@ label visit_bank():
     if not story_flags["bank visited"]:
 
         $ story_flags["bank visited"] = True
-        $ banker_name = "Banker"
+        $ banker_name = "银行职员"
 
 
         banker "Welcome to TJB. As a partner, I am delighted to welcome you to the finest banking establishment in the city."
@@ -15344,7 +15344,7 @@ label meet_carpenter():
 
     show expression gallows.get_pic(config.screen_width, int(config.screen_height*0.8)) at top with dissolve
 
-    $ text1 = season_text({"winter" : "to escape the chilling wind of winter", "spring" : "to go back to the lighter mood of spring", "summer" : "to escape the scorching heat of summer", "fall" : ", running from the sinister cries of eager crows"})
+    $ text1 = season_text({"winter" : "，躲避冬日刺骨的寒风", "spring" : "，重拾春日的愉悦心情", "summer" : "，躲避夏天的炎炎烈日", "fall" : ", 远离聒噪扰人的乌鸦"})
 
     "Passing by the gallows with your head tucked between your shoulders, you are only too happy to turn into a side street [text1]."
 
@@ -15399,7 +15399,7 @@ label meet_carpenter():
 
     carpenter "I'm Iulia, by the way... Who are ya?"
 
-    $ carpenter_name = "Iulia"
+    $ carpenter_name = "露莉亚"
 
     "She eyes you a bit suspiciously."
 
@@ -15898,7 +15898,7 @@ label resource_exchange_menu():
 
             you "I'll... I'll just call you Bast."
 
-            $ bast_name = "Bast"
+            $ bast_name = "巴斯特"
 
             bast "Sure, whatever."
 
@@ -15995,7 +15995,7 @@ label resource_exchange_menu():
             you "I see..."
 
             if MC.has_resource("wood", 5) and MC.has_resource("leather", 5) and MC.has_resource("dye", 5):
-                if renpy.call_screen("yes_no", "Do you want to get a basic builder license for 5 wood, 5 leather and 5 dye?"):
+                if renpy.call_screen("yes_no", "你要上交5个木材，5张皮革和5瓶染料换取基础建筑师执照吗？"):
                     $ MC.resources["wood"] -= 5
                     $ MC.resources["leather"] -= 5
                     $ MC.resources["dye"] -= 5
@@ -16017,7 +16017,7 @@ label resource_exchange_menu():
             hide bast with dissolve
             scene black with fade
 
-            $ bast_name = "Bast"
+            $ bast_name = "巴斯特"
 
             return
 
@@ -16060,7 +16060,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你要上交5个大理石，5条丝绸，5个矿石换取中级建筑师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16083,7 +16083,7 @@ label new_builder_license():
                 bast "Yep. But diamond traders make the most money. Consider this an investment."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你要上交2个钻石换取高级建筑师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16103,7 +16103,7 @@ label new_builder_license():
                 bast "The cost is 5 blocks of marble, 5 rolls of silk, and 5 chunks of ore."
 
                 if MC.has_resource("marble", 5) and MC.has_resource("silk", 5) and MC.has_resource("ore", 5):
-                    if renpy.call_screen("yes_no", "Do you want to get an advanced builder license for 5 marble, 5 silk and 5 ore?"):
+                    if renpy.call_screen("yes_no", "你要上交5个大理石，5条丝绸，5个矿石换取中级建筑师执照吗？"):
                         $ MC.resources["marble"] -= 5
                         $ MC.resources["silk"] -= 5
                         $ MC.resources["ore"] -= 5
@@ -16120,7 +16120,7 @@ label new_builder_license():
                 bast "It will cost you 2 diamonds. I don't wanna know how you get them..."
 
                 if MC.has_resource("diamond", 2):
-                    if renpy.call_screen("yes_no", "Do you want to get a master builder license for 2 diamonds?"):
+                    if renpy.call_screen("yes_no", "你要上交2个钻石换取高级建筑师执照吗？"):
                         $ MC.resources["diamond"] -= 2
                         $ story_flags["builder license"] = 5
 
@@ -16670,7 +16670,7 @@ label bast_informant():
 
     play sound s_dress
 
-    call screen letter(header = "Love letter", message = "Dear Bill,\n\nI haven't slept or eaten since you've left me. I am so alone in this world.\nYou've left me with so many questions. Did you ever love me?\nI will be punished for what you did, but it's punishment I will gladly accept, because I love you. All I want is for you to give me a sign. I'll betray the Order if I have to. I'll steal for you if I must.\n\nDon't leave me, my love. I will do anything.", signature = "Yours forever, Bastia {font=[style.default.font]}{size=-18}")
+    call screen letter(header = "情 书", message = "亲爱的比尔，\n\n自你走后我就再也没睡过好觉，也吃不下东西。我在这个世界上是如此孤独。\n你留下了许多疑问给我，你真的爱过我吗？\n我会为你的所作所为受到惩罚，但我欣然接受，因为我爱你。我只想要你给我句话。如果有必要，我可以背叛凤凰社。如果你需要，我可以帮你你偷走任何东西。\n\n请不要离开我，我的挚爱。我愿意为你付出一切！", signature = "永远爱你的，巴斯提雅 {font=[style.default.font]}{size=-18}")
 
     you "Well... Sounds like she was quite taken with the guy..."
 
@@ -18259,8 +18259,8 @@ label meet_twins():
 
     today "I'm Today! Pleased to meet you. My sister here is Yesterday."
 
-    $ today_name = "Today"
-    $ yesterday_name = "Yesterday"
+    $ today_name = "今朝"
+    $ yesterday_name = "昔夜"
 
     yesterday "Hi."
 
@@ -19196,7 +19196,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "You dare question the will of your god, the mighty CHAOS?" with vpunch
 
-    $ chaos_name = "Chaos"
+    $ chaos_name = "混沌魔剑"
 
     if MC.god:
         you "I follow [MC.god], you idiot. And last time I checked, {i}I{/i} was the one who summoned you in the first place."
@@ -19309,7 +19309,7 @@ label chaos(girl): # Called upon unlocking the 'Chaos' evil power (girl is the c
 
     chaos "{i}If{/i} I were to enter into a... {i}partnership{/i}, with you, what would it entail?"
 
-    $ MC.rand_say(["wa: Well, a magic sword's always nice to have in a fight. I assume you have powers?", "wz: It's always interesting to study supernatural beings, I guess. I assume you are a master in dark magic?", "tr: Well I'm sure I could sell you for a pretty penny, unless of course you have something better to offer me?"])
+    $ MC.rand_say(["wa: 在战斗中有把好剑总是好的。我想你还有什么超能力吧？", "wz: 我想研究超自然生物总是很有趣的。我猜你是黑魔法大师吧？", "tr: 我肯定能卖个好价钱，除非你有更好的东西给我？"])
 
     chaos "Of course! I am very capable, believe me. But there is one thing... To replenish my power, I need to feast. And you shall help me with that."
 

@@ -4,211 +4,211 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:3637
     old "Greet Guests"
-    new "Greet Guests"
+    new "接待贵宾"
 
     # game/BKinit_variables.rpy:3637
     old "Serve Guests"
-    new "Serve Guests"
+    new "后勤保障"
 
     # game/BKinit_variables.rpy:3637
     old "Socialize"
-    new "Socialize"
+    new "正式场合"
 
     # game/BKinit_variables.rpy:3637
     old "Participate In An Event"
-    new "Participate In An Event"
+    new "举办活动"
 
     # game/BKinit_variables.rpy:3637
     old "Deliver A Private Show"
-    new "Deliver A Private Show"
+    new "私人演出"
 
     # game/BKinit_variables.rpy:3637
     old "Have 'Fun'"
-    new "Have 'Fun'"
+    new "纵情'狂欢'"
 
     # game/BKinit_variables.rpy:3639
     old "clean"
-    new "clean"
+    new "家政清洁"
 
     # game/BKinit_variables.rpy:3639
     old "serve guests"
-    new "serve guests"
+    new "招待贵客"
 
     # game/BKinit_variables.rpy:3639
     old "serve drinks"
-    new "serve drinks"
+    new "酒水服务"
 
     # game/BKinit_variables.rpy:3639
     old "feed guests"
-    new "feed guests"
+    new "准备食物"
 
     # game/BKinit_variables.rpy:3639
     old "onsen"
-    new "onsen"
+    new "温泉推拿服务"
 
     # game/BKinit_variables.rpy:3639
     old "swimming pool"
-    new "swimming pool"
+    new "泳池派对"
 
     # game/BKinit_variables.rpy:3639
     old "swimming show"
-    new "swimming show"
+    new "泳装选美大赛"
 
     # game/BKinit_variables.rpy:3639
     old "lingerie show"
-    new "lingerie show"
+    new "维多利亚的秘密"
 
     # game/BKinit_variables.rpy:3639
     old "entice guests"
-    new "entice guests"
+    new "招揽客人"
 
     # game/BKinit_variables.rpy:3639
     old "dance show"
-    new "dance show"
+    new "舞林大会"
 
     # game/BKinit_variables.rpy:3639
     old "erotic show"
-    new "erotic show"
+    new "脱衣舞表演"
 
     # game/BKinit_variables.rpy:3639
     old "cosplay"
-    new "cosplay"
+    new "角色扮演"
 
     # game/BKinit_variables.rpy:3639
     old "lap dance"
-    new "lap dance"
+    new "艳舞演出"
 
     # game/BKinit_variables.rpy:3639
     old "welcome massage"
-    new "welcome massage"
+    new "帮助客人缓解疲劳"
 
     # game/BKinit_variables.rpy:3639
     old "erotic massage"
-    new "erotic massage"
+    new "贴身按摩"
 
     # game/BKinit_variables.rpy:3639
     old "conversation"
-    new "conversation"
+    new "会议记录"
 
     # game/BKinit_variables.rpy:3639
     old "protocol"
-    new "protocol"
+    new "签订协议"
 
     # game/BKinit_variables.rpy:3639
     old "ceremony"
-    new "ceremony"
+    new "纪念日"
 
     # game/BKinit_variables.rpy:3639
     old "welcome guests"
-    new "welcome guests"
+    new "迎宾接待"
 
     # game/BKinit_variables.rpy:3639
     old "kiss guests"
-    new "kiss guests"
+    new "法式深吻礼"
 
     # game/BKinit_variables.rpy:3639
     old "catwalk"
-    new "catwalk"
+    new "时尚走秀"
 
     # game/BKinit_variables.rpy:3639
     old "catfight"
-    new "catfight"
+    new "猫娘格斗"
 
     # game/BKinit_variables.rpy:3639
     old "art model"
-    new "art model"
+    new "平面模特"
 
     # game/BKinit_variables.rpy:3639
     old "sub greeting"
-    new "sub greeting"
+    new "接待大使"
 
     # game/BKinit_variables.rpy:3639
     old "dom greeting"
-    new "dom greeting"
+    new "宗教接待"
 
     # game/BKinit_variables.rpy:3639
     old "sports show"
-    new "sports show"
+    new "健美走秀"
 
     # game/BKinit_variables.rpy:3639
     old "fondle"
-    new "fondle"
+    new "轻拢慢挑"
 
     # game/BKinit_variables.rpy:3639
     old "strip"
-    new "strip"
+    new "脱衣舞会"
 
     # game/BKinit_variables.rpy:3639
     old "nude help"
-    new "nude help"
+    new "坦诚相助"
 
     # game/BKinit_variables.rpy:3639
     old "naked"
-    new "naked"
+    new "无遮大会"
 
     # game/BKinit_variables.rpy:3639
     old "masturbate"
-    new "masturbate"
+    new "为爱发电"
 
     # game/BKinit_variables.rpy:3639
     old "barmaid blowjob"
-    new "barmaid blowjob"
+    new "舌尖上的管弦乐"
 
     # game/BKinit_variables.rpy:3639
     old "service"
-    new "service"
+    new "私人定制"
 
     # game/BKinit_variables.rpy:3639
     old "cosplay sex"
-    new "cosplay sex"
+    new "制服诱惑"
 
     # game/BKinit_variables.rpy:3639
     old "full service massage"
-    new "full service massage"
+    new "全套贴身按摩"
 
     # game/BKinit_variables.rpy:3639
     old "sex"
-    new "sex"
+    new "男欢女爱"
 
     # game/BKinit_variables.rpy:3639
     old "cosplay anal"
-    new "cosplay anal"
+    new "茸茸尾巴秀"
 
     # game/BKinit_variables.rpy:3639
     old "anal dance"
-    new "anal dance"
+    new "性感电臀"
 
     # game/BKinit_variables.rpy:3639
     old "anal"
-    new "anal"
+    new "后庭花开"
 
     # game/BKinit_variables.rpy:3639
     old "toy"
-    new "toy"
+    new "人体展示架"
 
     # game/BKinit_variables.rpy:3639
     old "geisha bondage"
-    new "geisha bondage"
+    new "捆绑艺术"
 
     # game/BKinit_variables.rpy:3639
     old "fetish"
-    new "fetish"
+    new "授课时间"
 
     # game/BKinit_variables.rpy:3639
     old "group sex"
-    new "group sex"
+    new "淫乱派对"
 
     # game/BKinit_variables.rpy:3639
     old "group anal"
-    new "group anal"
+    new "赏菊大会"
 
     # game/BKinit_variables.rpy:3639
     old "bisexual service"
-    new "bisexual service"
+    new "姐妹盖饭"
 
     # game/BKinit_variables.rpy:3639
     old "bisexual fetish"
-    new "bisexual fetish"
+    new "花开并蒂"
 
 # TODO: Translation updated at 2024-12-15 22:44
 
@@ -216,31 +216,31 @@ translate schinese strings:
 
     # game/BKinit_variables.rpy:498
     old "wood"
-    new "wood"
+    new "木材"
 
     # game/BKinit_variables.rpy:498
     old "leather"
-    new "leather"
+    new "皮革"
 
     # game/BKinit_variables.rpy:498
     old "dye"
-    new "dye"
+    new "染料"
 
     # game/BKinit_variables.rpy:498
     old "marble"
-    new "marble"
+    new "大理石"
 
     # game/BKinit_variables.rpy:498
     old "ore"
-    new "ore"
+    new "矿石"
 
     # game/BKinit_variables.rpy:498
     old "silk"
-    new "silk"
+    new "丝绸"
 
     # game/BKinit_variables.rpy:498
     old "diamond"
-    new "diamond"
+    new "钻石"
 
     # game/BKinit_variables.rpy:2277
     old "Zan"

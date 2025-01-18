@@ -106,7 +106,7 @@ default hm_settings = {
             "当一个女孩包在给定标签上的图片多样性低时，是否使用游戏预设图片 (少于 %s 张)。" % stock_picture_threshold,
             HMSetting("use_stock_pictures_low", captions=["只使用角色包内的图片", "将角色包图片与游戏预设图片混合"], ttips=["游戏将只使用女孩包内置的图片，有重复的风险。", "游戏将添加一些默认的图片到游戏中增加多样性。"]),
 
-            "在为高级培训生成图片时选择优先级。",
+            "在为进阶训练生成图片时选择优先级。",
             HMSetting("fix_pic_balance", ["多样性高于准确性", "准确性高于多样性"], ttips=["游戏将优先考虑图片的多样性，而不是准确的标签。", "游戏将优先考虑准确的标签，而不是图片的多样性。"], values=[fix_pic_balance_variety, fix_pic_balance_accuracy]),
 
             "选择双飞和群交恋图片的范围",
@@ -115,7 +115,7 @@ default hm_settings = {
 
             "选择“女孩”选项卡之外的立绘图片设置。",
             HMSetting("naked_girls_in_slavemarket", ["奴隶市场: 不使用裸体标签图片作为立绘", "奴隶市场: 可以使用裸体标签图片作为立绘"], ttips=["奴隶市场将不再展示角色裸体立绘。", "奴隶市场可能会展示角色裸体立绘。"]),
-            HMSetting("naked_girls_in_town", ["城市内: 不使用裸体标签图片作为立绘", "城市内: 可以使用裸体标签图片作为立绘"], ttips=["单身女孩将不再展示裸体立绘。", "单身女孩可能会展示裸体立绘('裸体主义' 特质)。"]),
+            HMSetting("naked_girls_in_town", ["城市内: 不使用裸体标签图片作为立绘", "城市内: 可以使用裸体标签图片作为立绘"], ttips=["自由女孩将不再展示裸体立绘。", "自由女孩可能会展示裸体立绘('裸体主义' 特质)。"]),
 
             "允许扩展工作和性行为标签的图片。",
             HMSetting("fuzzy_tagging_jobs", ["工作图片: 精准符合标签", "工作图片: 模糊符合标签"], ttips=["工作图片只会寻找准确的标签(例如：“按摩师”对应按摩师。", "工作图片会将搜索扩展到“接近”的标签(例如：'泳装'图片充当按摩师)。"]),
@@ -160,9 +160,9 @@ default hm_settings = {
         ]
         }
 
-default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "machine" : "机械"}
+default hm_tag_captions = {"beast" : "兽交", "monster" : "怪物/触手", "machine" : "机械奸"}
 
-default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现负面性癖"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
+default hm_girl_status_list = [("away", "away.webp", "外出完成委托或接受培训"), ("farm", "farm.webp", "在农场中训练或休息"), ("rest", "rest.webp", "正在休息"), ("scheduled", "scheduled.webp", "预定休息"), ("half-shift", "half.webp", "半班制。"), ("master bedroom", "master.webp", "接受私人指导。"), ("negative fixation", "negfix.webp", "发现抵触的性行为"), ("naked", "naked.webp", "现在一丝不挂。"), ("not naked", "not_naked.webp", "现在穿着衣服。"), ("work&whore", "ww.webp", "一边工作一边勾引客人。"), ("not work&whore", "not_ww.webp", "专心工作。")]
 
 default hm_night_events = [("常规事件", "常规事件"), ("顾客入座", "匹配报告"), ("顾客", "特殊顾客事件"), ("升级提示", "升级/职业等级提升/升阶提示"), ("安全事件", "安全事件"), ("顾客满意度", "顾客满意度报告"), ("农场事件", "农场事件"), ("休息事件", "休息事件")]
 

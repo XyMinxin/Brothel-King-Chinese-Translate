@@ -1129,8 +1129,8 @@ init -3 python:
 
                 if brothel.get_risk() < 0: # Your guards on duty are ready to help
 #                   reward = (cust.diff  + dice(cust.diff)) * district.rank
-                    violent_text += "\n{color=[c_green]}Fortunately, your security is close at hand. They quickly gang up on him and proceed to beat the crap out of his sorry ass.\n{/color}Your girl is safe, and you pocket the content of his wallet: %s gold." % str(cust.ent_budget)
-                    violent_report = "{color=[c_green]}" + violent_report + " Your guards beat him up (%s gold earned).{/color}" % str(cust.ent_budget)
+                    violent_text += "\n{color=[c_green]}幸运的是，你的警卫就在身边。他们迅速反应过来对付他，把他打得屁滚尿流。\n{/color}你的女孩很安全，你把他钱包里的钱装进了口袋作为赔偿:+ %s金币" % str(cust.ent_budget)
+                    violent_report = "{color=[c_green]}" + violent_report + "你的警卫把他揍了一顿 (+ %s金币)。{/color}" % str(cust.ent_budget)
                     MC.gold += cust.ent_budget
                     girl.change_mood(1)
                     girl.change_fear(-1)
@@ -2679,7 +2679,7 @@ init -3 python:
                     plur = "们"
                 elif len(girls) > 1:
                     s_act = "bisexual"
-                    plur = ""
+                    plur = "们"
                 else:
                     s_act = act
                     plur = ""
@@ -3336,7 +3336,7 @@ init -3 python:
             if condition_met:
                 menu_list.append((text1, act))
 
-        menu_list.append(("Go back", "back"))
+        menu_list.append(("返回", "back"))
 
         return menu_list
 
@@ -3366,7 +3366,7 @@ init -3 python:
 
             menu_list.append((text1, fix))
 
-        menu_list.append(("Nothing special", "no fix"))
+        menu_list.append(("没什么特别的", "no fix"))
 
         return menu_list
 
@@ -3933,8 +3933,8 @@ init -3 python:
         for name in undetected_mods:
             del persistent.mods[name]
 
-            renpy.notify("Mod: " + name + " has been removed.")
-            mod_traceback += "\n" + "Mod: " + name + " has been removed."
+            renpy.notify("Mod: " + name + "已移除。")
+            mod_traceback += "\n" + "Mod: " + name + "已移除。"
 
         # Checks new mods or new mod versions
 
@@ -4132,7 +4132,7 @@ init -3 python:
         # Escaped girls
 
         for girl in MC.escaped_girls:
-            msg += event_color["bad"] % (girl.fullname + " has escaped the brothel and has yet to return.\n")
+            msg += event_color["bad"] % (girl.fullname + "从青楼里逃走了，还没回来。\n")
 
         # Grumbling girls
 
@@ -4144,13 +4144,13 @@ init -3 python:
 
         for girl in MC.girls:
             if girl.tired_check():
-                msg += event_color["a little bad contrast"] % (girl.fullname + " is getting tired.\n")
+                msg += event_color["a little bad contrast"] % (girl.fullname + "精疲力竭了。\n")
 
             if girl.exhausted:
-                msg += event_color["bad"] % (girl.fullname + " is exhausted and cannot work until she is fully rested.\n")
+                msg += event_color["bad"] % (girl.fullname + "筋疲力尽，得到充足的休息后才能工作。\n")
 
             if girl.hurt:
-                msg += event_color["bad"] % (girl.fullname + " is hurt and cannot work until she is fully rested.\n")
+                msg += event_color["bad"] % (girl.fullname + "受伤了，在伤口彻底恢复后才能工作。\n")
 
         # News
 
@@ -4160,7 +4160,7 @@ init -3 python:
 #             msg += event_color["special"] % "You are ready to move to a new district.\n\n"
 
         if MC.skill_points > 0:
-            msg += event_color["good"] % "You are ready to level up.\n"
+            msg += event_color["good"] % "主角的等级提升了，有未分配的属性点。\n"
 
         ready_to_level = sum(1 for girl in MC.girls if girl.upgrade_points >= 1)
         ready_to_perk = sum(1 for girl in MC.girls if girl.perk_points > 0)
@@ -4769,10 +4769,10 @@ init -3 python:
         return defaultdict(list)
 
     def add_mix():
-        new_mix = renpy.input("Enter the name of the mix you want to create")
+        new_mix = renpy.input("请输入要创建的组合的名称")
 
         if new_mix in (persistent.girl_mix.keys()):
-            renpy.notify("{color=[c_red]}[new_mix] already exists.{/color}")
+            renpy.notify("{color=[c_red]}[new_mix]已经存在了。{/color}")
         else:
             persistent.girl_mix[new_mix] = []
             persistent.active_mix = new_mix
@@ -4786,8 +4786,8 @@ init -3 python:
 
     def delete_mix(mix):
         if mix == "default":
-            renpy.notify("Can't delete the 'default' mix.")
-        elif mix in persistent.girl_mix.keys() and renpy.call_screen("yes_no", "Are you sure you want to delete this girl mix?"):
+            renpy.notify("无法删除'默认'组合。")
+        elif mix in persistent.girl_mix.keys() and renpy.call_screen("yes_no", "你确定要删除这个女孩包组合吗？"):
             del persistent.girl_mix[mix]
             if persistent.active_mix == mix:
                 persistent.active_mix = "default"
@@ -5182,63 +5182,63 @@ init -3 python:
         for stat in all_MC_stats:
             if NGP_settings_dict[stat].get():
                 pic = {"strength" : "bear.webp", "spirit" : "sorcerer.webp", "charisma" : "ghost.webp", "speed" : "speed.webp"}[stat]
-                MC.learn(Spell(NGP_settings_dict[stat].label, pic, type="passive", level=1, effects=[Effect("gain", stat, NGP_settings_dict[stat].get()), Effect("change", stat + " max", NGP_settings_dict[stat].get())], description="Gain %i to MC's %s and %s maximum." % (NGP_settings_dict[stat].get(), stat.capitalize(), stat.capitalize())))
+                MC.learn(Spell(NGP_settings_dict[stat].label, pic, type="passive", level=1, effects=[Effect("gain", stat, NGP_settings_dict[stat].get()), Effect("change", stat + " max", NGP_settings_dict[stat].get())], description="增加%i点主角的%s属性以及%s点上限。" % (NGP_settings_dict[stat].get(), stat.capitalize(), stat.capitalize())))
                 # MC.change_stat(stat, NGP_settings_dict[stat].get(), False, ignore_ceil=True)
 
         if NGP_settings_dict["love generation"].get():
-            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="Boosts love gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["love generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["love generation"].label, 'love_.webp', type="passive", level=1, effects=[Effect("boost", "love gains", NGP_settings_dict["love generation"].get(), scope="brothel")], description="提高百分之%i的好感度提升速度(新周目增益效果)。" % (100*NGP_settings_dict["love generation"].get())))
 
         if NGP_settings_dict["fear generation"].get():
-            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="Boosts fear gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["fear generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["fear generation"].label, 'doll_.webp', type="passive", level=1, effects=[Effect("boost", "fear gains", NGP_settings_dict["fear generation"].get(), scope="brothel")], description="提高百分之%i的恐惧值提升速度 (新周目增益效果)。" % (100*NGP_settings_dict["fear generation"].get())))
 
         if NGP_settings_dict["xp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="Boosts your girl's XP gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["xp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["xp generation"].label, 'enhanced.webp', type="passive", level=1, effects=[Effect("boost", "xp gains", NGP_settings_dict["xp generation"].get(), scope="brothel")], description="提高女孩百分之%i的经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["xp generation"].get())))
 
         if NGP_settings_dict["jp generation"].get():
-            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="Boosts your girl's JP gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["jp generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["jp generation"].label, 'hand.webp', type="passive", level=1, effects=[Effect("boost", "all jp gains", NGP_settings_dict["jp generation"].get(), scope="brothel")], description="提高女孩百分之%i的职业经验获取量 (新周目增益效果)。" % (100*NGP_settings_dict["jp generation"].get())))
 
         if NGP_settings_dict["prestige generation"].get():
-            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="Boosts your prestige gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["prestige generation"].get())))
+            MC.learn(Spell(NGP_settings_dict["prestige generation"].label, 'fame.webp', type="passive", level=1, effects=[Effect("boost", "prestige", NGP_settings_dict["prestige generation"].get())], description="提高百分之%i的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["prestige generation"].get())))
 
         if NGP_settings_dict["training efficiency"].get():
-            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="Boosts your prestige gains by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["training efficiency"].get())))
+            MC.learn(Spell(NGP_settings_dict["training efficiency"].label, 'discipline.webp', type="passive", level=1, effects=[Effect("boost", "MC training", NGP_settings_dict["training efficiency"].get())], description="提高百分之%i的声望获取量 (新周目增益效果)。" % (100*NGP_settings_dict["training efficiency"].get())))
 
         if NGP_settings_dict["tax reduction"].get():
-            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="Reduces your total taxes by %i per cent (NewGame+ effect)." % (100*NGP_settings_dict["tax reduction"].get())))
+            MC.learn(Spell(NGP_settings_dict["tax reduction"].label, 'haggler.webp', type="passive", level=1, effects=[Effect("boost", "taxes", -NGP_settings_dict["tax reduction"].get())], description="减少百分之%i的纳税额 (新周目增益效果)。" % (100*NGP_settings_dict["tax reduction"].get())))
 
         # Item dispensers
         if NGP_settings_dict["free girl"].get():
             if NGP_settings_dict["free girl"].get() == "once":
                 MC.add_item(seduction_potion.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["free girl"].label + " kit", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="Receive a %s Potion of Seduction." % NGP_settings_dict["free girl"].get()).build()
+                Furniture(NGP_settings_dict["free girl"].label + "的工房", type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "free girl")], hidden_effect=True, base_description="获得一瓶魅惑药水（ %s ）。" % NGP_settings_dict["free girl"].get()).build()
 
         if NGP_settings_dict["virginity"].get():
             if NGP_settings_dict["virginity"].get() == "once":
                 MC.add_item(restoration_balm.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["virginity"].label + " kit", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="Receive a %s Balm of Restoration." % NGP_settings_dict["virginity"].get()).build()
+                Furniture(NGP_settings_dict["virginity"].label + "的软膏", type='NewGame+', pic='platinum statue.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "virginity")], hidden_effect=True, base_description="获得一盒修补软膏（ %s ）。" % NGP_settings_dict["virginity"].get()).build()
 
         if NGP_settings_dict["sanity"].get():
             if NGP_settings_dict["sanity"].get() == "once":
                 MC.add_item(bliss_incense.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["sanity"].label + " kit", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="Receive a %s Incense of Bliss." % NGP_settings_dict["sanity"].get()).build()
+                Furniture(NGP_settings_dict["sanity"].label + "般的体验", type='NewGame+', pic='sofa2.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "sanity")], hidden_effect=True, base_description="获得一包极乐香（ %s ）。" % NGP_settings_dict["sanity"].get()).build()
 
         if NGP_settings_dict["interactions"].get():
             if NGP_settings_dict["interactions"].get() == "once":
                 MC.add_item(magic_powder.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["interactions"].label + " kit", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="Receive a %s Magic Powder." % NGP_settings_dict["interactions"].get()).build()
+                Furniture(NGP_settings_dict["interactions"].label + "的神药", type='NewGame+', pic='explosive traps.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "interactions")], hidden_effect=True, base_description="获得一袋魔法药粉（ %s ）。" % NGP_settings_dict["interactions"].get()).build()
 
         if NGP_settings_dict["perks"].get():
             if NGP_settings_dict["perks"].get() == "once":
                 MC.add_item(wyvern_egg.get_instance(), use_sound=False)
             else:
-                Furniture(NGP_settings_dict["perks"].label, type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "perks")], hidden_effect=True, base_description="Receive a %s Wyvern egg." % NGP_settings_dict["perks"].get()).build()
+                Furniture(NGP_settings_dict["perks"].label, type='NewGame+', pic='wine cases.webp', rank=0, chapter=0, cost=[], duration=0, effects=[Effect("event", "dispense_item", "perks")], hidden_effect=True, base_description="获得一个飞龙蛋（ %s ）。" % NGP_settings_dict["perks"].get()).build()
 
         if NGP_settings_dict["autorest"].get():
-            vitals_scanner.description += " Allows autorest to be set up from the Schedule screen."
+            vitals_scanner.description += "可以在排班表界面使用自动休息功能了。"
             vitals_scanner.build()
 
         if NGP_settings_dict["girl"].get():
@@ -5253,11 +5253,11 @@ init -3 python:
         if NGP_settings_dict["free girl challenge"].get():
             calendar.set_alarm(1, "free_girl_challenge")
             slavemarket.active = False
-            MC.learn(Spell(NGP_settings_dict["free girl challenge"].label, 'girl.webp', type="passive", level=1, description="Slavemarket is disabled. You receive a new girl at the start of each month. (NewGame+ effect)."))
+            MC.learn(Spell(NGP_settings_dict["free girl challenge"].label, 'girl.webp', type="passive", level=1, description="奴隶市场将不再对你开放。每个月你都会得到一个新的免费的奴隶 (新周目挑战)。"))
 
         if NGP_settings_dict["training challenge"].get():
             MC.training = False
-            MC.learn(Spell(NGP_settings_dict["training challenge"].label, 'militia.webp', type="passive", level=1, effects=[Effect("boost", "farm training", 1.0)], description="The Farm becomes much more efficient, but you can no longer personally train your girls. (NewGame+ effect)."))
+            MC.learn(Spell(NGP_settings_dict["training challenge"].label, 'militia.webp', type="passive", level=1, effects=[Effect("boost", "farm training", 1.0)], description="奴隶农场的训练将更有效率, 但你将无法自己训练女孩 (新周目挑战)。"))
 
         # naturist frequency is handled in BKgirlclass.rpy generate_traits()
 
@@ -5552,9 +5552,9 @@ init -3 python:
         return foldername
 
     def print_ignore_list():
-        ignore_text = list_text(sorted(persistent.pic_ignore_list), "", if_none="No pictures have been set to ignore.")
+        ignore_text = list_text(sorted(persistent.pic_ignore_list), "", if_none="没有图片被设置为不可见。")
         if persistent.pic_ignore_list:
-            ignore_text = "%i picture%s currently ignored (pictures will be updated after restart):\n" % (len(persistent.pic_ignore_list), plural(len(persistent.pic_ignore_list))) + ignore_text
+            ignore_text = "%i张图片%s 当前被设置为不可见。(重启游戏后会更新图片):\n" % (len(persistent.pic_ignore_list), plural(len(persistent.pic_ignore_list))) + ignore_text
 
         with open((config.gamedir + "\\ignored_pictures.txt"), "wt") as ignore_file: #? Check that it works if file doesn't exist
             ignore_file.write(ignore_text)

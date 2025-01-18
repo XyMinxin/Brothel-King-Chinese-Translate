@@ -55,9 +55,9 @@ label free_girl_talk(girl):
 
         $ MC.interactions -= 1
 
-        $ text1 = rand_choice((__("As you walk around the %s, "), __("On your way to %s, "), __("Strolling around the %s absentmindedly, "))) % __(uncapitalize(selected_location.name))
+        $ text1 = rand_choice(("当你漫步在%s时，", "在你前往%s的途中, ", "当你心不在焉地在%s闲逛时，")) % __(uncapitalize(selected_location.name))
 
-        $ text1 += rand_choice((__("you notice a pretty girl standing by herself."), __(" you nearly bump into a cute young woman."), __(" you spot a pretty little thing haggling with a peddler."), __(" you see a beautiful girl, looking lost.")))
+        $ text1 += rand_choice(("你发现一个孤身一人的漂亮的女孩。", "你差点撞到一个可爱的少女。", "你看到一个美丽的女孩在和一个小贩讨价还价。", "你看到一个美丽的女孩，看起来很迷茫。"))
 
         "[text1]"
 
@@ -91,7 +91,7 @@ label free_girl_talk(girl):
                     you "Well, what do we have here... Damn, you're hot! I'm [MC.name]. What's your name baby?"
 
                 else:
-                    $ you(rand_choice(("Is your dad a baker? 'Cause you've got some nice buns!", "I'm not staring at your boobs. I'm staring at your heart.", "Did we take a class together? I could've sworn we had chemistry.")))
+                    $ you(rand_choice(("你爸爸是面包师吗？因为你的小圆面包很诱人！", "我并不是盯着你的胸看。我盯着的是你的心灵。", "我们一起上过课吗？我发誓我们很来电。")))
 
                 call dialogue(girl, "free_greetings_rude") from _call_dialogue_23
 
@@ -190,7 +190,7 @@ label free_chat_small_talk(girl):
     $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
 
-    $ text1 = rand_choice(("The weather's nice today, don't you think?", "I've heard it might rain later today...", "Last time I came here it was a lot more crowded.", "How have you been? Haven't seen you in a while.", "I saw you standing there, so well, uh... Thought I'd just talk to you.", "Don't you think this place is strange?", "This dog looks strange, doesn't it?"))
+    $ text1 = rand_choice(("今天天气真不错，你觉得呢？", "我听别人说今天会下雨...", "上次我来这，可是人满为患呐。", "你最近在忙什么那，有阵子没见到你了。", "我看到你站在那，所以，呃... 我就来找你搭话了。", "你不觉得这地方怪怪的吗？", "这只狗看起来有点奇怪，你不觉得吗？"))
 
     you "[text1]"
 
@@ -387,7 +387,7 @@ label free_play(girl):
 
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
 
-        $ text1 =  "Why don't you strip down for me babe?"
+        $ text1 =  "为什么你不把这些碍事的衣服都脱掉呢？"
 
         $ snd = s_equip_dress
 
@@ -404,17 +404,17 @@ label free_play(girl):
         $ pic = girl.get_pic("service", "naked", "profile", and_tags=use_locations, not_tags= ["group", "bisexual"] + all_jobs, hide_farm=True)
 
         if pic.has_tag("mast"):
-            $ text1 = "I want you to masturbate for me."
+            $ text1 = "在这里自慰。"
         elif pic.has_tag("titjob"):
-            $ text1 = "I want to fuck those nice tits of yours."
+            $ text1 = "用你的奶子帮我撸。"
         elif pic.has_tag("footjob"):
-            $ text1 = "Why don't you jerk me off with your feet?"
+            $ text1 = "为什么不用你的玉足帮我撸呢？"
         elif pic.has_tag("oral"):
-            $ text1 = "I want you to suck my dick."
+            $ text1 = "过来嗦我的鸡巴。"
         elif pic.has_tag("handjob"):
-            $ text1 = "I want you to jerk me off."
+            $ text1 = "用你的手帮我打飞机。"
         else:
-            $ text1 = "I want you to pleasure me."
+            $ text1 = "尽力取悦我。"
 
 #         $ dislikes = ("rebel", "nerd")
 
@@ -425,7 +425,7 @@ label free_play(girl):
 
         $ diff = 78
 
-        $ text1 = "Let me have you..."
+        $ text1 = "让我好好品尝品尝你的小穴..."
 
         $ snd = s_orgasm
 
@@ -442,7 +442,7 @@ label free_play(girl):
 
         $ diff = 80
 
-        $ text1 = "I want to fuck your ass."
+        $ text1 = "我要用你的菊穴爽一爽。"
 
         $ snd = s_orgasm_fast
 
@@ -459,7 +459,7 @@ label free_play(girl):
 
         $ diff = 82
 
-        $ text1 = "Bend over and get ready for a good whack."
+        $ text1 = "把屁股撅起来，准备好接受调教。"
 
         $ snd = s_screams
 
@@ -578,7 +578,7 @@ label free_flirt_spirit(girl):
 
 
 label free_flirt_sex_experience(girl):
-    $ MC.rand_say(("Are you 'experienced'?", "Tell me the truth: have you been with many men before?", "Are you used to fooling around with boys much?", "Did you know many men before me?", "ev: Have you been passed around the harbor like a bag of spice?", "ne: Be honest: Have you had a lot of sex before?", "gd: Are you skilled in the art of love?"))
+    $ MC.rand_say(("你很有经验吗?", "告诉我实话：你以前和很多男人交往过吗？", "你经常和男孩子们鬼混吗？", "在我之前你认识很多男人吗？", "ev: 你是不是像一袋毒品一样在一群人中左手倒右手？", "ne: 说实话：你以前有过很多性生活吗？", "gd: 你精通做爱的艺术吗？"))
 
     call dialogue(girl, "free_flirt_sex_experience " + girl.sexual_experience) from _call_dialogue_50
 
@@ -669,7 +669,7 @@ label free_flirt_sex_experience(girl):
 
 label free_flirt_sex_tastes(girl):
 
-    $ MC.rand_say(("What do you like in bed?", "Is there anything you like in the bedroom?", "Tell me what turns you on.", "What is your favorite sexual position?"))
+    $ MC.rand_say(("你喜欢在床上用什么姿势？", "有什么你喜欢的玩法吗？", "告诉我什么最让你兴奋。", "你最喜欢什么体位？"))
 
     if dice(6) >= 4: #Describe positive acts and fixations
 
@@ -726,7 +726,7 @@ label free_flirt_sex_tastes(girl):
                     $ girl.personality_unlock[fix.name] = True
 
             else:
-                $ text1 = "%s makes me uncomfortable..." % __(long_act_description[act])
+                $ text1 = "%s让我感觉很不舒服..." % __(long_act_description[act])
 
                 "She blushes as she whispers something to you."
 
@@ -756,41 +756,41 @@ label free_flirt_sex_act(girl):
 
     if act == "naked":
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Tell me something: do you sleep naked at night?", "Do you like to expose yourself in front of people?", "How do you feel when other people look at you in your natural state?",
-                        "ev: Do you like to expose your bare pussy like a horny bitch?", "ne: Do you like to show your body to strangers?", "gd: You have such a perfect body. Do you enjoy people looking at it?",
-                        "ar: Do you agree that since Arios shines His light on everything, hiding your body under clothes is unnecessary?", "wr: Zonian she-warriors fight with nothing but a sword and a cat-tail stuck into their asshole. Would that turn you on?"))
+        $ MC.rand_say(("告诉我，你晚上喜欢光着身子睡觉吗？", "你喜欢在众人面前暴露自己的胴体吗？", "当别人视奸你的身体时，你有什么感觉？",
+                        "ev: 你喜欢像一个饥渴的婊子一样展示你的小穴吗吗？", "ne: 你喜欢向陌生人展示你的身体吗？", "gd: 你拥有如此完美的身材。你希望别人欣赏吗？",
+                        "ar: 你是否同意既然阿里奥斯把他的光芒照在所有的东西上，把你的身体藏在衣服里就没有必要了？", "wr: 佐尼亚女斗士在战斗时，除了一把剑和插在屁眼里的猫尾巴什么都不会穿。这会让你兴奋吗？"))
 
     elif act == "service":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Do you masturbate a lot?", "Do you like oral?", "How do you like to go down on guys?", "ar: What do you know about Arios candle worship?", "ev: How would you like to choke on my dick?",
-            "ne: I'm sure you can use those assets of yours to pleasure a man...", "gd: With a lovely mouth like yours, you must give the best blowjobs...", "tr: In all my travels, I have found that a skilled tongue is the best way to get what you want... It's even more true for pretty babes like you. Do you agree? *wink*"))
+        $ MC.rand_say(("你经常自慰吗？", "你喜欢深喉吗？", "你喜欢给男人口交吗？", "ar: 你对太阳神教的滴蜡刑了解多少？", "ev: 你想不想被我的老二噎死？",
+            "ne: 我相信你可以用你的身体取悦男人...", "gd: 你有这么紧致的嘴巴，一定能给我最好的口交体验...", "tr: 根据我的经验，实战是最好的指导老师... 对于像你这样迷人的宝贝来说更是如此。你同意吗？*眨眼*"))
 
     elif act == "sex":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Are you a virgin?", "Ever done it with a man?", "ev: Do you like riding dicks? Come on, a bitch like you should love it.", "ne: Do you like sex, babe?", "gd: How do you like to make sweet love, darling?", "ng: Ever been to heaven with a man?", "wz: Many girls told me I can perform miracles with my magic wand. Would you like me to show you?"))
+        $ MC.rand_say(("你是处女吗？", "你和男人做过吗？", "ev: 你喜欢被大鸡巴插吗？拜托，像你这样的婊子应该喜欢的。", "ne: 你喜欢做爱吗，宝贝？", "gd: 你喜欢怎样做爱，亲爱的？", "ng: 你试过和男人一起达到云端吗？", "wz: 许多女孩告诉我，我可以用我的魔杖创造奇迹。要我展示给你看吗？"))
 
     elif act == "anal":
         $ girl.personality_unlock["LM"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever used the back door?", "Do you like it from behind? You know...", "ev: You look like a butt slut. Are you?", "gd: Ever used your other love hole?", "ne: How do you like it up the ass?",
-            "sh: Have you ever done it Shalia's way?", "wr: In war, it's always best to charge from behind. In love, it's the same, wouldn't you say?"))
+        $ MC.rand_say(("从后门走过吗？", "你喜欢从后面做吗？你知道...", "ev: 你看起来像个荡妇。不是吗?", "gd: 你开发过你的后庭吗？", "ne: 你喜欢往屁眼里塞点东西吗？",
+            "sh: 你用过莎莉娅的方法吗？", "wr: 在战斗中，最好从背后偷袭。做爱也是一样，你说呢？"))
 
     elif act == "fetish":
         $ girl.personality_unlock["DS"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Do you like kinky sex?", "Do you like to do really naughty things in bed?", "Do you like pleasure mixed with pain?", "Do you own many sex toys?",
-                       "ev: Would you like me to hurt you? Say it.", "ne: How far would you go with me? I know a trick or two...", "gd: Do you trust me? I could show you some fun and dirty tricks...",
-                       "wz: Some girls like to use magic to spice up their sexual encounters. Should we try it together?"))
+        $ MC.rand_say(("你喜欢刺激的性爱吗？", "你想不想在床上做一些非常有趣的事情？", "你喜欢痛并快乐着吗？", "你喜欢用性玩具吗？",
+                       "ev: 你想让我伤害你吗？告诉我。", "ne: 你愿意和我试试吗？我新开发了一两招...", "gd: 你相信我吗？我可以给你表演一些有趣又下流的把戏...",
+                       "wz: 有些女孩喜欢用魔法来增加性爱的情趣。我们一起试试好吗？"))
 
     elif act == "bisexual":
         $ girl.personality_unlock["MI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever done it with another girl?", "Do you like to be with another woman?", "Ever heard of sapphism? Did you give it a try?", "tr: In Borgo, fisherwomen like to polish each other's pearls. Do you?",
-                        "Are you bisexual?", "Do you like girls?", "ev: It takes a bitch to know one. Ever tried fucking a girl?", "ne: Man, woman, does it matter to you?", "gd: You're lovely and caring, I'm sure women like you too. Don't they?", "sh: Worshipping a goddess is always more satisfactory than a god, wouldn't you say?",
+        $ MC.rand_say(("你和别的女孩做过吗？", "你喜欢和别的女人在一起吗？", "你听说过蕾丝边吗？", "tr: 在博格，女人们喜欢磨豆腐。你呢?",
+                        "你是女同吗？", "你对女孩有感觉吗？", "ev: 只有贱人才会知道。你试过操一个女孩吗？", "ne: 男人，女人，又有什么区别呢？", "gd: 你可爱又体贴，我相信女人也会爱上你。不是吗?", "sh: 侍奉女神总是比侍奉男神更令人愉悦，你说呢？",
                         ))
 
     elif act == "group":
         $ girl.personality_unlock["EI"] += 10 + MC.get_charisma() + dice(6) # Temp, see how it behaves
-        $ MC.rand_say(("Ever been in an orgy?", "Do you like a threesome?", "gd: The more the merrier, wouldn't you say?", "ev: How many dicks can you take at the same time?",
-                        "Do you like group sex?", "ne: How about fucking several people at once? Does that turn you on?", "ng: Wasting valuable time praying to fickle gods is stupid, when you could be having a decadent earthly orgy instead. Don't you agree?",
-                        "wr: The best training a warrior can get is fighting many enemies at once. And since love is like a battlefield..."))
+        $ MC.rand_say(("参加过派对吗？", "你喜欢三人行吗？", "gd: 独乐乐不如众乐乐，你说呢？", "ev: 你能同时吞下几根鸡巴？",
+                        "你喜欢淫趴吗？", "ne: 同时被几个人上会让你兴奋吗？", "ng: 浪费宝贵的时间向善变的神祈祷是愚蠢的，人生苦短，及时行乐，享受堕落的尘世狂欢。你不这么认为吗？",
+                        "wr: 情场如战场，同时应对多个敌人才能最好地磨练自己..."))
 
 #     $ pref = girl.get_preference(act)
 
@@ -978,17 +978,17 @@ label free_offer_job(girl):
 
     if MC.get_alignment() == "good":
 
-        $ text1 = "I will treat you well of course, taking good care of you."
+        $ text1 = "我当然会好好对待你，好好照顾你。"
         $ modifier = 2
 
     elif MC.get_alignment() == "neutral":
 
-        $ text1 = "I will treat you fairly, and you have nothing to fear if you play by the rules."
+        $ text1 = "我会公平地对待你，如果你听我的话，那就没什么好担心的。"
         $ modifier = 0
 
     elif MC.get_alignment() == "evil":
 
-        $ text1 = "I must also warn you that I'm a harsh master. You have to be ready for anything."
+        $ text1 = "事先声明，我是个严厉的主人。你得做好心理准备。"
         $ modifier = -4
 
     you "You would have to sign a temporary slave contract. As you know, only sex slaves are allowed in the city's brothels. [text1]"
@@ -1071,7 +1071,7 @@ label free_girl_friend(girl):
 
             $ norollback()
 
-            $ lie = rand_choice(("a secret guild master", "an expert weaponsmith", "a professional circus athlete", "an Arios knight", "a famous Noh actor", "an international man of mystery"))
+            $ lie = rand_choice(("一个神秘的公会会长", "一位武器专家", "一个职业马戏团演员", "一位太阳神教的圣骑士", "一位著名的话剧演员", "一个神秘的外国人"))
 
             $ girl.MC_lied = lie
 

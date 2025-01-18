@@ -873,9 +873,9 @@ label city_impress:
         ev_girl1 "You can have it. This will be a nice souvenir..."
 
         if game.chapter >= 3 and dice(6) >= 5:
-            call receive_item(item_dict["Cimerian artefact"], msg="You have received a rare %s.", use_article=False) from _call_receive_item_30
+            call receive_item(item_dict["Cimerian artefact"], msg="你得到了一个稀有的%s。", use_article=False) from _call_receive_item_30
         else:
-            call receive_item(item_dict["Cimerian scrap"], msg="You have received a piece of %s.", use_article=False) from _call_receive_item_31
+            call receive_item(item_dict["Cimerian scrap"], msg="你得到了一块%s。", use_article=False) from _call_receive_item_31
 
     return
 
@@ -1377,7 +1377,7 @@ label city_slave:
         you "Maybe I could show the girls a thing or two back at the brothel..."
 
         $ unlock_achievement("h slavegirl")
-
+        $ act_cn = tl_cn(act, girl_related_dict)
         "You have earned prestige. Some of your girls have increased their [act] stat."
 
         $ MC.change_prestige(selected_district.rank * brothel.get_effect("boost", "city rewards"))
@@ -3104,21 +3104,21 @@ label city_gypsy:
 
     if MC.playerclass == "Warrior":
 
-        $ nickname = "Big man"
+        $ nickname = "猛男"
 
-        $ nickname_l = "big man"
+        $ nickname_l = "猛男"
 
     elif MC.playerclass == "Wizard":
 
-        $ nickname = "Weird man"
+        $ nickname = "怪胎"
 
-        $ nickname_l = "weird man"
+        $ nickname_l = "怪胎"
 
     elif MC.playerclass == "Trader":
 
-        $ nickname = "Funny man"
+        $ nickname = "开心果"
 
-        $ nickname_l = "funny man"
+        $ nickname_l = "开心果"
 
     play sound s_surprise
 
@@ -4599,7 +4599,7 @@ label city_gossip(gossip=None):
 
     $ loc = selected_location.name.lower()
 
-    $ text1 = rand_choice(("some juicy gossip", "a disturbing rumor", "a curious story", "an interesting tale", "a word of warning"),)
+    $ text1 = rand_choice(("一些有趣的八卦", "令人不安的谣言", "一个令人好奇的故事", "一个有趣的传说", "一句人生格言"),)
 
     $ actor = article(__(selected_district.get_rand_pop().get_rand_name()))
 
@@ -4627,7 +4627,7 @@ label city_luck():
     "You have received %(gain)d gold."
 
     if dice(6) == 6:
-        $ npc = rand_choice(["Man", "Woman", "Young man", "Young woman", "Old man", "Old woman"])
+        $ npc = rand_choice(["男人", "女人", "少年", "少女", "老头", "老太太"])
         npc "Oh no... Where is it? It must be around here..."
 
         "Someone seems to be looking for their lost belongings."
@@ -5637,8 +5637,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
 
                 menu:
                     "How dare you!":
-                        $ MC.rand_say(("I am your master. You WILL obey me.", "You will do as I say! And that's final!!!",
-                            "ev: Shut up, bitch. I make the rules!", "gd: I've reached the limit of my patience. You're not getting away with this this time."))
+                        $ MC.rand_say(("我是你的主人。你必须服从我的命令！", "照我说的做! 这是我最后一次警告你了!!!",
+                            "ev: 把嘴闭上, 臭婊子。规矩是我定的!", "gd: 我已经没有多少耐心陪你浪费时间了，这次你逃不掉了。"))
 
                         call fight_attempt(girl, act, 2, outside=True) from _call_fight_attempt_21
 
@@ -5652,8 +5652,8 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
                             $ girl.change_stat("obedience", 2)
 
                     "Give up":
-                        $ MC.rand_say(("Fine... Have it your way.", "I can't believe slaves these days... Fine!", "ne: Humph. I'll let you off the hook this one time. You owe me now.",
-                                        "gd: All right, fine. I'm not going to force you to do something you hate.", "ev: Fuck, I'll let you be this time... But don't test my patience."))
+                        $ MC.rand_say(("好吧....就照你说的做。", "真不敢相信，现在的奴隶....好吧！", "ne: 哼，这一次我放过你。你欠我一个人情。",
+                                        "gd: 好吧，我不会强迫你做你讨厌的事情。", "ev: 他妈的，这一次我就放过你....但不要考验我的耐心。"))
 
                         $ girl.change_stat("obedience", -1)
                         $ brothel.change_rep(-20*game.chapter)

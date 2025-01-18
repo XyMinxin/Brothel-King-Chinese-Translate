@@ -492,7 +492,7 @@ translate schinese strings:
 
     # game/BKspells.rpy:100
     old "wolf"
-    new "寒霜之月"
+    new "狼群之月"
 
     # game/BKspells.rpy:100
     old "This month is the coldest of the year. It is said that adventurers that brave this tough season can reap the best rewards."
@@ -524,11 +524,11 @@ translate schinese strings:
 
     # game/BKspells.rpy:100
     old "dry"
-    new "枯萎之月"
+    new "黯淡之月"
 
     # game/BKspells.rpy:100
     old "The dry moon is nothing special, quite boring really. People would rather tend to the task at hand than idly stare at this dull moon."
-    new "枯萎之月让人失去活力，感到无聊。人们宁愿晚上加班，也不愿呆呆地盯着这暗淡的月亮。"
+    new "黯淡之月让人失去活力，感到无聊。人们宁愿晚上加班，也不愿呆呆地盯着这暗淡的月亮。"
 
     # game/BKspells.rpy:100
     old "hunter"
@@ -548,7 +548,7 @@ translate schinese strings:
 
     # game/BKspells.rpy:100
     old "silver"
-    new "秘银之月"
+    new "魔力之月"
 
     # game/BKspells.rpy:100
     old "The silver moon is at its peak magical energy. Experienced spellcasters are careful to cast their most powerful spells and invocations on this month."

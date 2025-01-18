@@ -442,13 +442,13 @@ translate schinese resume_intro_55327b02:
 translate schinese resume_intro_4126abbe:
 
     # you "I am a proud member of the Xeros Traveling Merchant Guild."
-    you "我是塞洛斯流动贸易组织的一员。"
+    you "我是克塞洛斯游商公会的一员。"
 
 # game/BKintro.rpy:394
 translate schinese resume_intro_052a4d9a:
 
     # "A native of Borgo, the harbor city, you grew up on the docks, buying and selling all kinds of legal and less legal merchandise from overseas for a profit."
-    "我出生在港口城市博格,在码头边长大,买卖各种合法和灰色的进口商品营生。"
+    "我出生在港口城市博格,在码头边长大,靠买卖各种合法和灰色的进口商品营生。"
 
 # game/BKintro.rpy:396
 translate schinese resume_intro_fdaf4f4d:
@@ -514,7 +514,7 @@ translate schinese resume_intro_dde54fb6:
 translate schinese resume_intro2_b7df2a5a:
 
     # guard "One more thing. Which god do you worship, [MC.playerclass]?"
-    guard "对了,你信仰哪个神,[MC.playerclass]?"
+    guard "对了,你有什么信仰吗,[MC.playerclass]?"
 
 # game/BKintro.rpy:430
 translate schinese resume_intro2_4bf8fadb:
@@ -526,7 +526,7 @@ translate schinese resume_intro2_4bf8fadb:
 translate schinese resume_intro2_4fb17e63:
 
     # guard "That is good, brother. I hope to see you often at the Cathedra to pray."
-    guard "很好,兄弟。希望你能经常到大教堂祈祷。"
+    guard "很好,伙计。希望你能经常到大教堂祈祷。"
 
 # game/BKintro.rpy:442
 translate schinese resume_intro2_f126af47:
@@ -1168,7 +1168,7 @@ translate schinese resume_intro3_5612471a:
 translate schinese resume_intro3_7c928c6e:
 
     # you "She looked like a high-born lady, and attractive to boot. This might be my lucky day..."
-    you "她看起来很有身份地位,而且很漂亮。今天可能是我的幸运日..."
+    you "她看起来身份尊贵,而且很漂亮。今天可能是我的幸运日..."
 
 # game/BKintro.rpy:856
 translate schinese resume_intro3_337f8f73:
@@ -1192,7 +1192,7 @@ translate schinese resume_intro3_70395f9c:
 translate schinese resume_intro3_68242a65:
 
     # you "I apologize for coming at such a late hour. I need to speak with master Gio."
-    you "抱歉这么晚来打扰,我想见见乔大师。"
+    you "抱歉这么晚来打扰,我有事找乔大师。"
 
 # game/BKintro.rpy:833
 translate schinese resume_intro3_546511ce:
@@ -1210,13 +1210,13 @@ translate schinese resume_intro3_755a7541:
 translate schinese resume_intro3_3686d57d:
 
     # maid "Welcome, my lord."
-    maid "欢迎,我的主人。"
+    maid "欢迎,贵客。"
 
 # game/BKintro.rpy:881
 translate schinese resume_intro3_96638890:
 
     # maid "I will take you to master Gio."
-    maid "我会带你去见乔大师。"
+    maid "我来带你去见乔大师。"
 
 # game/BKintro.rpy:889
 translate schinese resume_intro3_259a41c6:
@@ -1228,13 +1228,13 @@ translate schinese resume_intro3_259a41c6:
 translate schinese resume_intro3_476c405d:
 
     # gio "Ah, very well, Minako. You may leave us."
-    gio "很好,美奈子,你可以退下了。"
+    gio "很好,美奈子,你先退下吧。"
 
 # game/BKintro.rpy:897
 translate schinese resume_intro3_ef714159:
 
     # maid "Yes master."
-    maid "是的,主人。"
+    maid "遵命,主人。"
 
 # game/BKintro.rpy:901
 translate schinese resume_intro3_7acb4654:
@@ -1246,61 +1246,61 @@ translate schinese resume_intro3_7acb4654:
 translate schinese resume_intro3_901defd2:
 
     # gio "I know who you are. [MC.name], the [MC.playerclass]. Sit down and relax, you're among friends."
-    gio "[MC.name]阁下，一个[MC.playerclass]。放轻松,你是我的朋友。"
+    gio "[MC.name]，一位[MC.playerclass]。别紧张，找个地方坐吧，朋友。"
 
 # game/BKintro.rpy:906
 translate schinese resume_intro3_ffdd600a:
 
     # you "Wait... How?"
-    you "等等...怎么回事?"
+    you "等等...这是怎么回事?"
 
 # game/BKintro.rpy:908
 translate schinese resume_intro3_a909eda0:
 
     # gio "I am Gio Fratello, or Shady Gio, as they call me."
-    gio "我是乔·弗拉特洛,他们都管我叫'鬼谋的乔'。"
+    gio "我是乔·弗拉特洛,大伙都管我叫'狡猾的乔'。"
 
 # game/BKintro.rpy:910
 translate schinese resume_intro3_26d0f85b:
 
     # gio "One of my jobs is to know about anyone unusual who comes and goes in this city. And that alone is a lot of work..."
-    gio "我的其中一项工作就是了解这个城市里来来往往的不寻常的人物。这是个非常繁杂的工作..."
+    gio "我的其中一项工作就是监视进出泽恩的特殊人物。这是个非常繁杂的工作..."
 
 # game/BKintro.rpy:913
 translate schinese resume_intro3_7bb98c3e:
 
     # you "I see. Gio, I apologize for the late hour..."
-    you "原来如此,乔,这么晚还来打扰你我很抱歉..."
+    you "原来如此,乔,很抱歉这么晚还来打扰..."
 
 # game/BKintro.rpy:915
 translate schinese resume_intro3_c3a9758c:
 
     # gio "Oh, don't sweat it. The Princess said you would come over, and I do most of my business at night, anyway."
-    gio "噢,别在意。公主说你会来,我的工作也基本都在夜间进行。"
+    gio "噢，别在意。公主殿下说过你会来找我，我的工作也基本都在夜间进行。"
 
 # game/BKintro.rpy:920
 translate schinese resume_intro3_3f1f5faa:
 
     # you "The Princess?"
-    you "公主?"
+    you "公主殿下?"
 
 # game/BKintro.rpy:922
 translate schinese resume_intro3_64fb6224:
 
     # gio "Ah, yes of course, the Princess. Could it be you don't know who she is?"
-    gio "啊,是的,公主殿下。难道你不知道她是谁吗?"
+    gio "对，没错。公主殿下。难道你不知道她是谁吗?"
 
 # game/BKintro.rpy:924
 translate schinese resume_intro3_953b7d09:
 
     # gio "You're from a faraway land, I forgot..."
-    gio "你是从遥远的地方来的,我忘记了..."
+    gio "你是从遥远的异乡来的，我忘了..."
 
 # game/BKintro.rpy:926
 translate schinese resume_intro3_cd78e6c7:
 
     # gio "Well, I'm not going to spoil the surprise here. I'm sure you'll meet her properly when the time is right."
-    gio "那我就帮公主保留一些神秘感吧。我相信当时机成熟时,你一定会见到她的。"
+    gio "那我就帮公主殿下保留一些神秘感吧。我相信等时机成熟时,你就能见到她了。"
 
 # game/BKintro.rpy:929
 translate schinese resume_intro3_9c1aa295:
@@ -1312,37 +1312,37 @@ translate schinese resume_intro3_9c1aa295:
 translate schinese resume_intro3_fe43fc3c:
 
     # gio "Hahahaha! I got where I am now by asking questions, not answering them, little girl."
-    gio "哈哈哈!我能有今天的地位,是因为我会提问题,而不是回答问题,小姑娘。"
+    gio "哈哈哈!我能有今天的地位，是因为我会提问题，而不是回答问题，小姑娘。"
 
 # game/BKintro.rpy:933
 translate schinese resume_intro3_7fbdda74:
 
     # gio "Anyway, friend, I'm sure you're tired from your trip, and eager to get some rest."
-    gio "不管怎样,朋友,我相信你一定累坏了,你需要好好休息一下。"
+    gio "不管怎样，朋友，我相信你一定累坏了，你需要好好休息一下。"
 
 # game/BKintro.rpy:935
 translate schinese resume_intro3_89f191b3:
 
     # gio "But indulge me for a few moments, if you will, because we need to discuss your reward."
-    gio "但请你再忍耐片刻,我们需要讨论一下你的报酬。"
+    gio "但请你再忍耐片刻,我们需要讨论一下关于你的报酬。"
 
 # game/BKintro.rpy:937
 translate schinese resume_intro3_42a832d7:
 
     # you "I'm all ears."
-    you "我很乐意听你说。"
+    you "洗耳恭听。"
 
 # game/BKintro.rpy:939
 translate schinese resume_intro3_498e574c:
 
     # gio "The Princess mentioned a certain sum of money... {w}That I don't have available right now."
-    gio "公主说要给你一笔钱...{w}但我手头上暂时没有。"
+    gio "公主殿下说要给你一笔钱...{w}但我手头上暂时没有那么多现金。"
 
 # game/BKintro.rpy:941
 translate schinese resume_intro3_c81a54ef:
 
     # gio "In fact, I don't expect to have such cash ready anytime soon."
-    gio "事实上,我也不指望在短期内能拿到很多现金。"
+    gio "事实上,我也没办法在短期内拿到那么多现金。"
 
 # game/BKintro.rpy:943
 translate schinese resume_intro3_e71459ee:
@@ -1354,7 +1354,7 @@ translate schinese resume_intro3_e71459ee:
 translate schinese resume_intro3_a2738123:
 
     # gio "But wait... It is my understanding that you have come to the city to strike it rich, am I right?"
-    gio "很多钱...看来你来到这个城市是为了发财,我猜对了吗?"
+    gio "很多钱...看来你来到这个城市是为了赚钱，我猜对了吗?"
 
 # game/BKintro.rpy:913
 translate schinese resume_intro3_dae0ec55:
@@ -1366,7 +1366,7 @@ translate schinese resume_intro3_dae0ec55:
 translate schinese resume_intro3_ebba0da0:
 
     # gio "So I am ready to offer you something a lot better than petty cash... And of similar value to the reward the Princess wanted me to give you."
-    gio "让我给你更适合的报酬吧...价值与公主想给你的报酬相当。"
+    gio "让我给你更加适合的报酬吧...这份报酬完全不输给公主殿下的。"
 
 # game/BKintro.rpy:953
 translate schinese resume_intro3_a9bcb5b5:
@@ -1378,7 +1378,7 @@ translate schinese resume_intro3_a9bcb5b5:
 translate schinese resume_intro3_107b2420:
 
     # gio "What do you know about power, young man?"
-    gio "你渴望力量吗,年轻人?"
+    gio "你渴望力量吗，年轻人?"
 
 # game/BKintro.rpy:957
 translate schinese resume_intro3_9ceef99f:
@@ -1390,7 +1390,7 @@ translate schinese resume_intro3_9ceef99f:
 translate schinese resume_intro3_40005353:
 
     # gio "Yes. What is power?"
-    gio "是的,什么是力量?"
+    gio "是的，什么是力量?"
 
 # game/BKintro.rpy:961
 translate schinese resume_intro3_3c7ec6d4:
@@ -1450,7 +1450,7 @@ translate schinese resume_intro3_cdd9076e:
 translate schinese resume_intro3_cd2ed6fd:
 
     # gio "Sex is where real power resides."
-    gio "真正的力量潜藏在性中。"
+    gio "真正的力量蕴藏在性中。"
 
 # game/BKintro.rpy:984
 translate schinese resume_intro3_076c2404:
@@ -1462,7 +1462,7 @@ translate schinese resume_intro3_076c2404:
 translate schinese resume_intro3_55e1dee0:
 
     # gio "Yes, sex! Everything is about sex, sweetheart... Except sex."
-    gio "是的,性!一切都离不开性,亲爱的...除了性本身。"
+    gio "是的，性!一切都离不开性，亲爱的...除了性本身。"
 
 # game/BKintro.rpy:988
 translate schinese resume_intro3_622ebecb:
@@ -1480,13 +1480,13 @@ translate schinese resume_intro3_24353786:
 translate schinese resume_intro3_9ad01cba:
 
     # you "Fascinating lecture, professor, but can we move on to the part about my reward?"
-    you "教授,你的讲座很有趣,不过能不能快进到报酬的部分?"
+    you "教授,你的讲座很有趣,不过能不能快进到报酬的环节?"
 
 # game/BKintro.rpy:994
 translate schinese resume_intro3_51740d96:
 
     # gio "Ah yes, my impatient friend, of course. What do you think drives this city? Who do you think pulls the strings of our stupid king and his clique?"
-    gio "啊,是的,真是个急性子,当然。你认为是谁在控制这座城市?你认为是谁在操纵我们愚蠢的国王及其幕僚?"
+    gio "啊，没问题，真是个急性子。你认为是谁在控制这座城市?你认为是谁在操纵我们愚蠢的国王和王公大臣?"
 
 # game/BKintro.rpy:1001
 translate schinese resume_intro3_b96e91b1:
@@ -1510,7 +1510,7 @@ translate schinese resume_intro3_12063099:
 translate schinese resume_intro3_b5015152:
 
     # gio "No! It's the {b}brothel masters{/b}."
-    gio "你肯定想不到!是{b}青楼老板{/b}。"
+    gio "你绝对想不到!是那些{b}青楼老板{/b}。"
 
 # game/BKintro.rpy:1011
 translate schinese resume_intro3_4c18fd0d:
@@ -1522,13 +1522,13 @@ translate schinese resume_intro3_4c18fd0d:
 translate schinese resume_intro3_82f8b786:
 
     # gio "Yes dear, the brothel masters. They're the power behind the throne, and everything else."
-    gio "是的,亲爱的,就是青楼老板。他们掌握着许多的权力,在幕后操纵一切。"
+    gio "是的,亲爱的,就是青楼老板。他们手中掌握着许多的权力,在幕后操纵一切。"
 
 # game/BKintro.rpy:1021
 translate schinese resume_intro3_f7573d65:
 
     # gio "You see, nobles and their court..."
-    gio "你看,贵族和他们的宫廷..."
+    gio "你看,贵族和王室..."
 
 # game/BKintro.rpy:992
 translate schinese resume_intro3_1eacbb5b:
@@ -1570,7 +1570,7 @@ translate schinese resume_intro3_1eacbb5b_5:
 translate schinese resume_intro3_583cdedb:
 
     # gio "They're always acting all high and mighty during the day..."
-    gio "他们白天总是表现得十分端庄优雅..."
+    gio "他们白天在公众面前总是表现得端庄优雅..."
 
 # game/BKintro.rpy:1076
 translate schinese resume_intro3_ba7fbcb4:
@@ -1582,13 +1582,13 @@ translate schinese resume_intro3_ba7fbcb4:
 translate schinese resume_intro3_7c7300d3:
 
     # gio "They unleash their base instincts..."
-    gio "他们尽情释放自己的欲望..."
+    gio "他们就会尽情释放自己的欲望..."
 
 # game/BKintro.rpy:1095
 translate schinese resume_intro3_d6557bc9:
 
     # gio "... not caring for gods or morals..."
-    gio "... 不顾信仰和道德..."
+    gio "... 抛弃信仰和道德..."
 
 # game/BKintro.rpy:1101
 translate schinese resume_intro3_ea80770f:
@@ -1618,7 +1618,7 @@ translate schinese resume_intro3_0d04a0b8:
 translate schinese resume_intro3_f7e5ca54:
 
     # gio "The brothel masters cater to the needs of Zan's privileged citizens, bringing them refined and perverse pleasures from out of this world."
-    gio "青楼老板满足了泽恩的贵族的需求,为他们带来世界各地的闻所未闻的快乐。"
+    gio "青楼老板满足了泽恩的贵族的需求,为他们带来世界各地的闻所未闻的娱乐方式。"
 
 # game/BKintro.rpy:1143
 translate schinese resume_intro3_8296e1b4:
@@ -1636,25 +1636,25 @@ translate schinese resume_intro3_9227eb67:
 translate schinese resume_intro3_8364ebd7:
 
     # gio "This gives them {b}true{/b} power. They know every one of their customers' dirty secrets..."
-    gio "他们从性中获得了{b}真正的{/b}权力。他们知道每一个客户最见不得人的秘密..."
+    gio "他们从性中获得了{b}真正的{/b}力量。他们知道每一个客户最羞耻的秘密..."
 
 # game/BKintro.rpy:1157
 translate schinese resume_intro3_68d65260:
 
     # gio "They say even King Pharo I is the pawn of a powerful brothel master, a fellow by the name of 'Cloud'. {i}I{/i} have never met him, however. And I know {i}everyone{/i} in Zan. Almost."
-    gio "据说,连国王法罗一世也有把柄在一位名叫'克劳德'的老板手里。我几乎认识{i}所有{/i}泽恩的大人物。但{i}我{/i}从未见过他。"
+    gio "据说,连国王法罗一世也有把柄在一位名叫'克劳德'的老板手里。虽然我认识几乎{i}所有{/i}的泽恩的大人物。但我{i}从未{/i}从未见过他。"
 
 # game/BKintro.rpy:1162
 translate schinese resume_intro3_83060ccc:
 
     # gio "So, you see. In this city, to be powerful, you need to master and control the sex trade..."
-    gio "所以,你看。在这座城市里,要想掌握权力,你只需要掌握和控制性的交易..."
+    gio "所以，你看。在这座城市里,要想掌握权力,你只需要掌握和控制性的交易..."
 
 # game/BKintro.rpy:1175
 translate schinese shortcut_1ecd2c96:
 
     # gio "And I... can help you. *grin*"
-    gio "而我...可以帮助你。*邪笑*"
+    gio "而我...可以在这方面为你提供帮助。*奸笑*"
 
 # game/BKintro.rpy:1177
 translate schinese shortcut_b16af1b0:
@@ -1678,7 +1678,7 @@ translate schinese shortcut_54a30e66:
 translate schinese shortcut_9cd2ed3d:
 
     # gio "So, long story short, I opened a cathouse last year and, hem, ran it into the ground."
-    gio "所以,长话短说,我去年开了一家青楼,嗯,把它经营得一团糟。"
+    gio "所以，长话短说,我去年开了一家青楼,嗯,把它经营得一团糟。"
 
 # game/BKintro.rpy:1185
 translate schinese shortcut_b337bed1:
@@ -1696,7 +1696,7 @@ translate schinese shortcut_b42de05b:
 translate schinese shortcut_302aee0c:
 
     # gio "This will be your reward: this way, I get to fulfill my obligation to the Princess, and you get a place to stay and conduct your business. What do you think?"
-    gio "这就是你的报酬了:这样一来,我既可以履行对公主的义务,而你又可以有一个地方住和经营你的生意。你觉得怎么样?"
+    gio "这就是你的报酬了:这样一来,我既可以履行对公主的义务,而你得到了一个栖身之所和青楼。你觉得怎么样?"
 
 # game/BKintro.rpy:1210
 translate schinese resume_intro4_df704b47:
@@ -1708,7 +1708,7 @@ translate schinese resume_intro4_df704b47:
 translate schinese resume_intro4_35e59458:
 
     # you "[text1] I'm interested! I just hope the brothel is in good condition and all..."
-    you "[text1] 我很感兴趣!只要这处房子条件良好..."
+    you "[text1] 我很感兴趣!只要那栋房子环境舒适..."
 
 # game/BKintro.rpy:1214
 translate schinese resume_intro4_859987ed:
@@ -1726,19 +1726,19 @@ translate schinese resume_intro4_c67a81b1:
 translate schinese resume_intro4_dcb8f413:
 
     # gio "I'll have Minako prepare a room for you. Allow me to be your host tonight."
-    gio "我会让美乃子给你准备一间房间。今晚就在我这里住下吧。"
+    gio "我会让美奈子给你准备一间房间。今晚就在我这里住下吧。"
 
 # game/BKintro.rpy:1220
 translate schinese resume_intro4_553da56b:
 
     # gio "Speaking of which..."
-    gio "说到这个..."
+    gio "话说回来..."
 
 # game/BKintro.rpy:1222
 translate schinese resume_intro4_b9f03b8c:
 
     # you "Yes?"
-    you "什么?"
+    you "怎么了?"
 
 # game/BKintro.rpy:1224
 translate schinese resume_intro4_41bd9cc6:
@@ -1762,7 +1762,7 @@ translate schinese resume_intro4_b874a3e5:
 translate schinese resume_intro4_59904d12:
 
     # gio "Would you allow me to use her for the night? In exchange, you can have Minako. She's a very devoted little bitch, that one."
-    gio "她今晚可以陪我吗?作为交换,你可以享用美奈子。她可是个水灵灵的女仆。"
+    gio "可以让她陪我一晚吗?作为交换,你可以享用美奈子。她可是个迷人的玩物。"
 
 # game/BKintro.rpy:1237
 translate schinese resume_intro4_ef5e5c01:
@@ -1786,7 +1786,7 @@ translate schinese resume_intro4_6cdecb9c:
 translate schinese resume_intro4_6e700cd0:
 
     # you "Stop it Gio! She's mine."
-    you "住手,乔!她是我的人。"
+    you "住手,乔!她是我的女人。"
 
 # game/BKintro.rpy:1252
 translate schinese resume_intro4_16a7e4c1:
@@ -1834,7 +1834,7 @@ translate schinese resume_intro4_aa5e31bf:
 translate schinese resume_intro4_764c0eb3:
 
     # gio "Take those two lovebirds to the guest room."
-    gio "把这对小情侣带到客房。"
+    gio "把这对小情侣带到客房去。"
 
 # game/BKintro.rpy:1270
 translate schinese resume_intro4_d053065e:
@@ -1846,7 +1846,7 @@ translate schinese resume_intro4_d053065e:
 translate schinese resume_intro4_d1e09cfa:
 
     # gio "And come to my bedchambers after that, bringing the SM equipment. I need to blow off some steam."
-    gio "然后到我的寝室来,带上那些玩具。我要发泄一下。"
+    gio "然后到我的寝室来,带上那些道具。我要发泄一下。"
 
 # game/BKintro.rpy:1275
 translate schinese resume_intro4_bf9b3bb7:

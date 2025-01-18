@@ -2374,7 +2374,7 @@ translate schinese check_missing_pictures_51aadab5:
 translate schinese check_missing_pictures_e5aeea0e:
 
     # "Step2: Checking optional fixation pictures"
-    "步骤2: 检查可选择性癖图片"
+    "步骤2: 检查可选择性行为图片"
 
 # game/BKhelp.rpy:2745
 translate schinese check_missing_pictures_549bfd01:
@@ -2732,7 +2732,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1803
     old "You've just had your first security event. Would you like to learn more about security events?"
-    new "You've just had your first security event. Would you like to learn more about security events?"
+    new "你刚刚经历了第一次安全事件。您想了解更多有关安全事件的信息吗？"
 
     # game/BKhelp.rpy:1862
     old "Recover a girl from Gizel"
@@ -2780,7 +2780,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2124
     old "Free girls"
-    new "调整城市里的单身女孩"
+    new "调整城市里的自由女孩"
 
     # game/BKhelp.rpy:2124
     old "Items"
@@ -2904,19 +2904,19 @@ translate schinese strings:
 
     # game/BKhelp.rpy:2408
     old "Get new free girls"
-    new "补充新的单身女孩"
+    new "补充新的自由女孩"
 
     # game/BKhelp.rpy:2408
     old "Update free girls"
-    new "刷新新的单身女孩"
+    new "刷新新的自由女孩"
 
     # game/BKhelp.rpy:2408
     old "Cycle free girls"
-    new "轮换一批单身女孩"
+    new "轮换一批自由女孩"
 
     # game/BKhelp.rpy:2408
     old "List free girls"
-    new "列出所有单身女孩"
+    new "列出所有自由女孩"
 
     # game/BKhelp.rpy:2441
     old "Refresh shops"
@@ -3092,23 +3092,23 @@ translate schinese strings:
 
     # game/BKhelp.rpy:360
     old "BROKIPEDIA"
-    new "BROKIPEDIA"
+    new "青楼百科"
 
     # game/BKhelp.rpy:380
     old "Close"
-    new "Close"
+    new "关闭菜单"
 
     # game/BKhelp.rpy:409
     old "Click here or right-click to close the help menu."
-    new "Click here or right-click to close the help menu."
+    new "点击此按钮或单击鼠标右键关闭帮助菜单。"
 
     # game/BKhelp.rpy:420
     old "Previous notifications"
-    new "Previous notifications"
+    new "查看最近的通知消息"
 
     # game/BKhelp.rpy:429
     old "How can I help you?"
-    new "How can I help you?"
+    new "有什么我能帮到您的吗?"
 
     # game/BKhelp.rpy:3108
     old "Test results - "

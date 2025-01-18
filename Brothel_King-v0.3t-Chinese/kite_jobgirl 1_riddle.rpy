@@ -40,7 +40,7 @@ label jobgirl_0():
 
     you "Scarlet?"
 
-    $ jobgirl_name = "Scarlet"
+    $ jobgirl_name = "斯卡莱特"
 
     jobgirl "Yeah, it's my battle name. We adventurers must defend our true identities to prevent the evil we fight from harming our beloved ones..."
 
@@ -187,7 +187,7 @@ label jobgirl_1():
 
     play sound s_dress
 
-    call screen letter(header = "Mysterious letter", message = "Know, O prince, that between the years when the oceans drank Atlantis \n and the gleaming cities, and the years of the rise of the Sons of Xeros \n hither came the one who shall stand on fours under the rising sun \n the one who shall stand on two under the zenith light \n the one who shall stand on three under the many stars... \n Thou shalt name the one to succeed.")
+    call screen letter(header = "神秘的信笺", message = "王子啊，你知道吗？ \n 有一样东西白天四只脚。\n 中午两只脚。\n 到了晚上变成了三只脚。 \n 这样东西至关重要，能够破解谜题的人... \n 才能登上王座。")
 
     play sound s_dress
 
@@ -217,7 +217,7 @@ label jobgirl_1():
 
     you "Ok, let's see then..."
 
-    $ answer = renpy.display_menu([("Give the answer for free", 1),("Ask for gold", 2),("Make fun of her... just a bit", 3)])
+    $ answer = renpy.display_menu([("无偿帮助", 1),("索要报酬", 2),("开个玩笑... 小玩笑", 3)])
 
     $ norollback()
 
@@ -295,7 +295,7 @@ label jobgirl_1():
 
     while riddle_loop == 1:
 
-        $ solution = renpy.display_menu([("A Protoceratops", 1),("Molise", 2),("Man", 3)])
+        $ solution = renpy.display_menu([("一头原角龙", 1),("莫利塞", 2),("人类", 3)])
 
         if solution == 1:
 
@@ -373,7 +373,7 @@ label jobgirl_1():
 
     "You look at her beautiful blue eyes, down to her pink lips and white skinned neck, until you stare at her cleavage. Can't avoid to look at her breasts since the feeling of them pushing on your chest is raising your heartbeat."
 
-    $ hug_action = renpy.display_menu([("What do you want to do now?", None), ("Be romantic", 1),("Comment on her cleavage", 2),("Wait for her reaction", 3)])
+    $ hug_action = renpy.display_menu([("What do you want to do now?", None), ("向她倾诉爱意", 1),("点评胸部的触感", 2),("静观其变", 3)])
 
     if hug_action == 1:
 

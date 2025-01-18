@@ -6,7 +6,7 @@ init offset = -1
 
 
 ################################################################################
-## Default Styles
+## Styles
 ################################################################################
 
 style default:
@@ -24,42 +24,46 @@ style hyperlink_text:
 style gui_text:
     properties gui.text_properties("interface")
 
+
+style button:
+    properties gui.button_properties("button")
+
+style button_text is gui_text:
+    properties gui.text_properties("button")
+    yalign 0.5
+
+
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
+
 style bar:
     ysize gui.bar_size
-    thumb Frame("tb empty")
-    thumb_offset xres(3)
-    left_gutter xres(6)
-    right_gutter xres(6)
-    left_bar Frame("orange_bar_left", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("orange_bar_right", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
-    top_bar Frame("gui/bar/cryvslider_empty.webp", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("gui/bar/cryvscrollbar.webp", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
 style scrollbar:
-    unscrollable gui.unscrollable
     ysize gui.scrollbar_size
     base_bar Frame("gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
     thumb Frame("gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
 style vscrollbar:
-    unscrollable gui.unscrollable
     xsize gui.scrollbar_size
     base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
     thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
-style slider is bar:
+style slider:
     ysize gui.slider_size
-    left_bar Frame("lightorange_bar_left", gui.bar_borders, tile=gui.bar_tile)
-    thumb_offset xres(4)
+    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
+    thumb "gui/slider/horizontal_[prefix_]thumb.png"
 
 style vslider:
     xsize gui.slider_size
@@ -68,12 +72,9 @@ style vslider:
 
 
 style frame:
-    background Frame("GUI/frame.png", gui.frame_borders, tile=gui.frame_tile)
     padding gui.frame_borders.padding
+    background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
-style pref_frame:
-    xpadding xres(18)
-    ypadding yres(12)
 
 
 ################################################################################
@@ -94,39 +95,7 @@ style pref_frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-screen say(who, what, side_image=False):
-    style_prefix "say"
-    zorder 5
-
-    # The one window variant.
-    window yalign 1.0 ysize res_portrait_size xpadding xres(6) ypadding yres(6):# left_margin xres(10):
-        id "window"
-
-        has vbox:
-            style "say_vbox"
-
-        if who:
-            text who id "who" # bold True
-
-        viewport:
-            mousewheel True
-            scrollbars "vertical"
-            text what id "what"
-
-    # If there's a side image, display it above the text.
-
-    if side_image: # This is for Girl.char objects
-        fixed xsize res_portrait_size ysize res_portrait_size xalign 0.0 yalign 1.0:
-            add AlphaMask(side_image, Frame("GUI/portrait_mask.png")) xalign 0.5 yalign 0.0
-
-    else:
-        add AlphaMask(SideImage(), Frame("GUI/portrait_mask.png")) xalign 0.0 yalign 1.0
-
-    # Use the quick menu.
-    use quick_menu
-
-screen say_old(who, what):
-    style_prefix "say"
+screen say(who, what):
 
     window:
         id "window"
@@ -166,7 +135,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Frame("gui/textbox.png", left=0, top=0, right=0, bottom=0, tile=False)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -203,26 +172,6 @@ style say_dialogue:
 ## https://www.renpy.org/doc/html/screen_special.html#input
 
 screen input(prompt):
-
-    zorder 100 # Needed to avoid shortcuts proccing unchecked
-
-    modal True
-
-    frame xalign 0.5 yalign 0.5 xsize yres(420) ysize yres(290) ypadding yres(20):
-        background Frame("UI/Sill_Textbox.webp")
-        has vbox xfill True
-
-        text prompt style "input_prompt" xalign 0.5:
-            if count_lines(prompt, 46) <= 2:
-                size res_font(19)
-            elif count_lines(prompt, 50) <= 3:
-                size res_font(15)
-            else:
-                size res_font(13)
-
-        input id "input" style "input_text" xsize 0.5 xpos 0.5 ypos yres(30) copypaste True
-
-screen input_old(prompt):
     style_prefix "input"
 
     window:
@@ -256,52 +205,7 @@ style input:
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
 screen choice(items):
-
-    modal True
-    zorder 5
-
-    ## This is an addition to the default menu in order to display the personality summary
-
-    if choice_menu_girl_interact:
-        use personality_screen
-
-    window:
-        style "choice"
-
-        if choice_menu_girl_interact:
-            ypos 0.5
-            yanchor 0.0
-        else:
-            yalign 0.5
-
-        xalign 0.5
-
-        vbox:
-
-            spacing yres(2)
-
-            for caption, action, chosen in items:
-
-                if action:
-
-                    button style "choice_button":
-                        action action
-
-                        text caption style "choice_button_text"
-
-                else:
-                    text caption
-
-screen choice_old(items):
-    modal True
-    zorder 5
-
     style_prefix "choice"
-
-    ## This is an addition to the default menu in order to display the personality summary
-
-    if choice_menu_girl_interact:
-        use personality_screen
 
     vbox:
         for i in items:
@@ -341,7 +245,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 1.0
+            xalign 0.5
             yalign 1.0
 
             textbutton _("Back") action Rollback()
@@ -356,10 +260,10 @@ screen quick_menu():
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
-# init python:
-#     config.overlay_screens.append("quick_menu")
+init python:
+    config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+default quick_menu = False
 
 style quick_button is default
 style quick_button_text is button_text
@@ -380,200 +284,14 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
-screen navigation():
-
-    # Enables right_clicking to exit
-    key "mouseup_3" action Return()
-
-    vbox:
-        style_prefix "navigation"
-
-        xalign .97
-        yalign .9
-
-        spacing gui.navigation_spacing
-
-        if main_menu:
-
-            textbutton _("Start") action Start()
-
-        else:
-
-            textbutton _("Save Game") action ShowMenu("save")
-
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Game settings") action ShowMenu("h_content")
-        textbutton _("Achievements") action ShowMenu("achievements")
-        textbutton _("Mods") action ShowMenu("mods")
-
-        # if _in_replay:
-        #
-        #     textbutton _("End Replay") action EndReplay(confirm=True)
-
-        if not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action Help()
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
-
-
-style navigation_button is button
-style navigation_button_text is button_text
-
-style navigation_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-    ymargin 0
-
-style navigation_button_text:
-    properties gui.text_properties("navigation_button")
-    size res_font(18)
-
-
+# Edited and moved down
 ## Main Menu screen ############################################################
 ##
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-style mm_button is button:
-    size_group "mm"
-    xpadding xres(12)
-    xmargin xres(6)
-    ymargin yres(5)
-
-style mms_button is mm_button:
-    size_group "mms"
-
-style mm_button_text is button_text:
-    size res_font(28)
-
-style mms_button_text:
-    size res_font(24)
-
 screen main_menu():
-
-    # This ensures that any other menu screen is replaced.
-    tag menu
-
-    # on "show" action Function(update_mods)
-
-    # The background of the main menu.
-    window:
-        style "mm_root"
-
-        background "black"
-        add gui.main_menu_background
-        text "青楼之王" size res_font(64) xalign 0.5 yalign 0.5 drop_shadow (xres(2), yres(2)) font "bk.ttf" color c_darkorange
-
-        text "汉化版本由冥鑫、小熊猫、一页十次郎翻译制作\n更新、bug报告和讨论请前往: [URL] " xalign 0.5 yalign 0.96 size res_font(14)
-
-        vbox xalign 0.99 yalign 0.01:
-            text "[renpy.version_string]" xalign 1.0 size res_font(12)
-            text "游戏版本：[config.version]" xalign 1.0 size res_font(12)
-
-        if debug:
-            text mod_traceback xalign 0.01 yalign 0.01 size res_font(18)
-
-    # The main menu buttons.
-    frame background None:
-        xalign .5
-        yalign .75
-
-        hbox spacing xres(20):
-            frame yalign 0.5:
-                style_group "mms"
-                vbox:
-                    textbutton _("Girl packs") action (Jump("girlpack_menu_restart"))
-                    textbutton _("CG Gallery") action (Function(init_galleries), ShowMenu("galleries"), Function(renpy.music.stop, fadeout=3.0))
-                    textbutton _("Mods"):
-                        if detected_mods:
-                            action ShowMenu("mods")
-            frame yalign 0.5:
-                style_group "mm"
-                vbox:
-                    textbutton _("Start Game") text_color c_white action Start()
-                    textbutton _("Load Game") text_color c_white action ShowMenu("load")
-                    textbutton _("Quit") text_color c_white action Quit(confirm=False)
-            frame yalign 0.5:
-                style_group "mms"
-                vbox:
-                    textbutton _("Preferences") action ShowMenu("preferences")
-                    textbutton _("Resolution") action Jump("pick_resolution")
-                    textbutton _("Help") action Help()
-
-label pick_resolution():
-    hide screen main_menu
-
-    menu:
-        "Choose target resolution (currently [config.screen_width]x[config.screen_height])"
-
-        "1920x1080 (16:9)":
-            $ persistent.screen_width = 1920
-            $ persistent.screen_height = 1080
-
-        "1024x768 (4:3)":
-            $ persistent.screen_width = 1024
-            $ persistent.screen_height = 768
-
-        "Custom resolution":
-            python:
-                narrator("{color=%s}Warning: This feature is experimental. Please use at your own risks.{/color}" % c_red, interact=False)
-                _stop = False
-
-                x = renpy.input("Choose screen width", default=config.screen_width, length = 4)
-                try:
-                    x = int(x)
-                except:
-                    renpy.say(bk_error, "The width value you entered is not a valid number (%s)" % x)
-                    _stop = True
-
-                if not 800 <= x <= 3840:
-                    renpy.say(bk_error, "The width value is too high or too low (%s)" % x)
-                    _stop = True
-
-                if not _stop:
-                    narrator("{color=%s}Warning: This feature is experimental. Please use at your own risks.{/color}" % c_red, interact=False)
-                    y = renpy.input("Choose screen height", default=config.screen_height, length = 4)
-                    try:
-                        y = int(y)
-                    except:
-                        renpy.say(bk_error, "The height value you entered is not a valid number (%s)" % y)
-                        _stop = True
-
-                    if not 600 <= y <= 2160:
-                        renpy.say(bk_error, "The height value is too high or too low (%s)" % y)
-                        _stop = True
-
-                if x == persistent.screen_width and y == persistent.screen_height:
-                    _stop = True
-
-                if _stop:
-                    renpy.full_restart()
-                else:
-                    persistent.screen_width = x
-                    persistent.screen_height = y
-
-        "Cancel":
-            $ renpy.full_restart()
-
-    $ centered("Restarting Brothel King...", interact=False)
-
-    pause 0.01
-
-    $ renpy.utter_restart()
-
-screen main_menu_old():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
@@ -652,6 +370,10 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
         hbox:
 
+            ## Reserve space for the navigation section.
+            frame:
+                style "game_menu_navigation_frame"
+
             frame:
                 style "game_menu_content_frame"
 
@@ -691,10 +413,6 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                 else:
 
                     transclude
-
-        ## Reserve space for the navigation section.
-        frame:
-            style "game_menu_navigation_frame"
 
     use navigation
 
@@ -747,8 +465,8 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xalign 0.97
-    ysize yres(120)
+    xpos 75
+    ysize 180
 
 style game_menu_label_text:
     size gui.title_text_size
@@ -756,9 +474,9 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xalign 0.97
-    yalign 0.45
-
+    xpos gui.navigation_xpos
+    yalign 1.0
+    yoffset -45
 
 
 ## About screen ################################################################
@@ -808,151 +526,14 @@ style about_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#save https://
 ## www.renpy.org/doc/html/screen_special.html#load
 
-## These awesome save/load screens were made by OhWee
-
-screen file_picker():
-
-    fixed:
-        xfill False
-
-        fixed:
-            #style "file_picker_frame"
-            xalign 0.02
-            #ypadding 10
-
-            vbox yalign 0.5:
-                hbox:
-                    xalign 0.5
-                    xoffset 0
-
-                    textbutton _("Previous") style "save_load_UI":
-                        action FilePagePrevious()
-                        xalign 0.5
-
-                    textbutton _("Next") style "save_load_UI":
-                        action FilePageNext()
-                        xalign 0.5
-
-                frame background Frame("UI/papersquare.webp", left=12, right=12, top=12, bottom=12):
-                    xmargin 3
-                    left_padding xres(12)
-                    right_padding xres(12)
-                    ypadding yres(60)
-
-                    xalign 0.0
-                    yalign 0.5
-
-                    yoffset 10
-
-
-                    grid 3 4:
-                        #style_prefix "slot"
-
-                        xspacing 0
-                        yspacing 24
-
-                        for i in range(12):
-
-                            $ slot = i + 1
-
-                            button xsize 0.27 ysize 0.2:
-                                action FileAction(slot)
-                                background None
-
-                                has vbox spacing 0
-
-                                if FileTime(slot) == "":
-                                    add "UI/SaveSlotEmpty.webp" selected_hover_alpha 1.0 hover_alpha 1.0 idle_alpha 0.8 selected_idle_alpha 0.8 insensitive_alpha 0.8 alpha 0.8 fit "contain"
-
-                                else:
-                                    add FileScreenshot(slot) xalign 0.5 selected_hover_alpha 1.0 hover_alpha 1.0 idle_alpha 0.8 selected_idle_alpha 0.8 insensitive_alpha 0.8 alpha 0.8 fit "contain"
-
-                                text FileTime(slot, format=_("{#file_time}%A, %B %d, %H:%M"), empty=_("empty slot")):
-                                    style "slottext"
-
-                                text FileSaveName(slot):
-                                    style "slot_name_text"
-
-                                key "save_delete" action FileDelete(slot)
-
-
-            vbox:
-                #style_group "file_picker_nav"
-                xalign 0.97
-                yalign 0.2
-                yfill False
-
-                hbox:
-                    textbutton _("Auto") xsize xres(64):
-                        action FilePage("auto")
-                        xalign 0.5
-                        text_size res_font(14)
-
-                    textbutton _("Quick") xsize xres(64):
-                        action FilePage("quick")
-                        xalign 0.5
-                        text_size res_font(14)
-
-                grid 4 6:
-                    xalign 0.5
-                    yspacing 2
-                    xspacing 0
-
-                    for i in range(24):
-                        textbutton str(i+1) style "UI_button":
-                            xsize xres(32)
-                            ysize yres(22)
-                            action FilePage(i+1)
-                            text_size res_font(14)
-                            text_selected_size res_font(17)
-                            text_selected_bold True
-
-                text "" size res_font(8)
-                text "{i}Screen made\n by OhWee{/i}" size res_font(12) xalign 0.85 color "#521" text_align 1.0 line_spacing -2
-
-
-style save_load_UI is button:
-    size_group "save_load_UI"
-
-style save_load_UI_text:
-    size res_font(18)
-    xalign 0.5
-
 screen save():
-
-    # This ensures that any other menu screen is replaced.
-    tag menu
-
-    use game_menu(_("Save"), scroll="viewport")
-    use file_picker
-
-screen load():
-
-    # This ensures that any other menu screen is replaced.
-    tag menu
-
-    use game_menu(_("Load"), scroll="viewport")
-    use file_picker
-
-init -2:
-    style slottext:
-        size res_font(14)
-        color "#521"
-        xalign 0.5
-    style file_picker_frame is menu_frame
-    style file_picker_nav_button is small_button
-    style file_picker_nav_button_text is small_button_text
-    style file_picker_button is large_button
-    style file_picker_text is large_button_text
-
-screen save_old():
 
     tag menu
 
     use file_slots(_("Save"))
 
 
-screen load_old():
+screen load():
 
     tag menu
 
@@ -1024,6 +605,7 @@ screen file_slots(title):
                     spacing gui.page_spacing
 
                     textbutton _("<") action FilePagePrevious()
+                    key "save_page_prev" action FilePagePrevious()
 
                     if config.has_autosave:
                         textbutton _("{#auto_page}A") action FilePage("auto")
@@ -1036,6 +618,7 @@ screen file_slots(title):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
+                    key "save_page_next" action FilePageNext()
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":
@@ -1087,118 +670,7 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences(): #!
-
-    tag menu
-
-    use game_menu(_("Preferences"), scroll="viewport"):
-
-        # Put the navigation columns in a three-wide grid.
-        grid 3 1:
-            style_group "prefs"
-            xfill True
-
-            # The left column.
-            vbox:
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Display")
-                    textbutton _("Window") action Preference("display", "window")
-                    textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Transitions")
-                    textbutton _("All") action Preference("transitions", "all")
-                    textbutton _("None") action Preference("transitions", "none")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Text Speed")
-                    bar value Preference("text speed")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    textbutton _("Joystick...") action Preference("joystick")
-
-
-            vbox:
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Skip")
-                    textbutton _("Seen Messages") action Preference("skip", "seen")
-                    textbutton _("All Messages") action Preference("skip", "all")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    textbutton _("Begin Skipping") action Skip()
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("After Choices")
-                    textbutton _("Stop Skipping") action Preference("after choices", "stop")
-                    textbutton _("Keep Skipping") action Preference("after choices", "skip")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Auto-Forward Time")
-                    bar value Preference("auto-forward time")
-
-                    if config.has_voice:
-                        textbutton _("Wait for Voice") action Preference("wait for voice", "toggle")
-
-            vbox:
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Music Volume")
-                    bar value Preference("music volume")
-
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Sound Volume")
-                    bar value Preference("sound volume")
-
-                    if config.sample_sound:
-                        textbutton _("Test"):
-                            action Play("sound", config.sample_sound)
-                            style "soundtest_button"
-
-                if config.has_voice:
-                    frame:
-                        style_group "pref"
-                        has vbox
-
-                        label _("Voice Volume")
-                        bar value Preference("voice volume")
-
-                        textbutton _("Voice Sustain") action Preference("voice sustain", "toggle")
-                        if config.sample_voice:
-                            textbutton _("Test"):
-                                action Play("voice", config.sample_voice)
-                                style "soundtest_button"
-
-
-screen preferences_old():
+screen preferences():
 
     tag menu
 
@@ -1311,13 +783,9 @@ style pref_label:
 
 style pref_label_text:
     yalign 1.0
-    color c_brown
 
 style pref_vbox:
     xsize 338
-
-style pref_button:
-    size_group "pref_but"
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -1627,8 +1095,6 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    use dark_filter(False)
-
     add "gui/overlay/confirm.png"
 
     frame:
@@ -1729,7 +1195,7 @@ style skip_text:
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
     ## glyph in it.
-    font "1.ttf"
+    font "DejaVuSans.ttf"
 
 
 ## Notify screen ###############################################################
@@ -2087,3 +1553,576 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+
+# Above from renpy-8.3.4
+# Below is new or edited
+
+
+
+## Navigation screen ###########################################################
+##
+## This screen is included in the main and game menus, and provides navigation
+## to other menus, and to start the game.
+
+screen navigation():
+
+    vbox:
+        style_prefix "navigation"
+
+        xpos gui.navigation_xpos
+        yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            textbutton _("Select girl pack") action (SetVariable("mode", "select"), Start())
+            textbutton _("Edit girl pack") action (SetVariable("mode", "edit"), Start())
+            textbutton _("Browse girl pack") action (SetVariable("mode", "browse"), Start())
+            textbutton _("Girl pack statistics") action (SetVariable("mode", "stats"), Start())
+            # textbutton _("Generate BK.ini") action (SetVariable("mode", "ini"), Start()) # <neronero & RudolfU - BK.ini generator> not ported to 3 yet
+            textbutton _("Replacing tool") action (SetVariable("mode", "replace"), Start())
+    #        textbutton _("Test") action Jump("mytest")
+            textbutton _("Export Girlsdata CSV") action Jump("export_girlsdata")
+
+        else:
+
+            textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Save") action ShowMenu("save")
+
+        # textbutton _("Load") action ShowMenu("load")
+
+        # textbutton _("Preferences") action ShowMenu("preferences")
+
+        if _in_replay:
+
+            textbutton _("End Replay") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("Main Menu") action MainMenu()
+
+        textbutton _("About") action ShowMenu("about")
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help") action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            textbutton _("Quit") action Quit(confirm=not main_menu)
+
+
+style navigation_button is gui_button
+style navigation_button_text is gui_button_text
+
+style navigation_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_button")
+
+style navigation_button_text:
+    properties gui.text_properties("navigation_button")
+
+
+init -2:
+    style quick_button:
+        is default
+        background None
+        xpadding 5
+        ypadding 3
+
+    style quick_button_text:
+        is default
+        size 12
+        idle_color "#8888"
+        hover_color "#ccc"
+        selected_idle_color "#cc08"
+        selected_hover_color "#cc0"
+        insensitive_color "#4448"
+
+screen show_pic(context="edit"):
+    
+    default show_ui = True
+    default tt = Tooltip("[text1] [girl.dir]")
+    
+    key "mouseup_3" action (ToggleScreenVariable("show_ui"), SetVariable("cancelAction", True))
+    
+    if selected_pic:
+        if show_ui and not selected_pic.video:
+            $ ibg = img_bg
+        else:
+            $ ibg = None
+        frame background ibg  xalign 0.45  yalign 0.15  padding (0,0)  margin (0,0) :
+            # add selected_pic.get_std_displayable() xalign 0.5 yalign 0.5
+            add ProportionalScale(selected_pic.file, 480, 360) xalign 0.5 yalign 0
+    elif context == "edit":
+        text "No picture found." xalign 0.5 yalign 0.5
+    elif context == "browse":
+        text "No picture found. Use filters to display or hide pictures." xalign 0.5 yalign 0.5
+    
+    if selected_pic:
+        if selected_pic.delete:
+            text "X" xalign 0.5 yalign 0.5 color "#FF003366" size 526
+    
+    if show_ui:
+        use pic_ui(context, tt)
+        use pic_carousel(context, tt)
+
+screen pic_button(pic, tt):
+    $ pic_name = pic.file_name
+    $ global selected_pic_list
+    $ select_text = " (Selected)" if pic in selected_pic_list else ""
+    button:
+        style "carousel_button"
+        xalign 0.5 ycenter 0.5 xpadding 9 ypadding 9
+        xsize 220 ysize 190
+        action Return(("carousel_show", pic))
+        selected (pic in selected_pic_list)
+        key "K_SPACE" action Return(("carousel_toggle", pic))
+        hovered tt.Action(pic_name + "%s\nMouse Left: Show Pic, Space: Toggle selection" % select_text)
+        vbox xalign 0.5:
+            spacing 10
+            text pic_name + select_text size 12
+            fixed xalign 0.5:
+                fit_first True
+                if pic.video:
+                    add Movie(play=pic.file, size=[180,135]) xalign 0.5
+                else:
+                    add ProportionalScale(pic.file, 180, 135) xalign 0.5
+
+screen pic_carousel(context, tt):
+    $ global filtered_pics
+    $ global selected_index
+    $ global selected_pic
+    
+    frame yalign 0.75 xfill True xpos 0.14 xanchor 0 xsize 1100 background None:
+        grid 5 2 spacing 6:
+            $ pics = filtered_pics[selected_index:selected_index+10]
+            for pic in pics:
+                use pic_button(pic, tt)    
+    
+screen pic_ui(context, tt):
+#    key "mouseup_3" action Hide("pic_ui")
+    key "K_LEFT" action Return("cycle_previous")
+    key "shift_K_LEFT" action Return("cycle_previous_10")
+    key "ctrl_K_LEFT" action Return("cycle_previous_100")
+    key "K_KP_4" action Return("cycle_previous")
+    key "shift_K_KP_4" action Return("cycle_previous_10")
+    key "ctrl_K_KP_4" action Return("cycle_previous_100")
+    key "K_RIGHT" action Return("cycle_next")
+    key "shift_K_RIGHT" action Return("cycle_next_10")
+    key "ctrl_K_RIGHT" action Return("cycle_next_100")
+    key "K_KP_6" action Return("cycle_next")
+    key "shift_K_KP_6" action Return("cycle_next_10")
+    key "ctrl_K_KP_6" action Return("cycle_next_100")
+
+    # <Chris12 - Tagsets>
+    # Replaced hotkeys with this, so that you can add_tag_hotkey
+    for k, t in tag_hotkeys.items():
+        key k action Return(("tag", t))
+    # </Chris12 - Tagsets>
+    key "K_DELETE" action Return("delete")
+    key "K_KP_PERIOD" action Return("delete")
+    
+    # New shortcuts just for Leortha ;)
+    key "shift_K_DELETE" action Return("delete and advance")
+    key "K_HOME" action Return("cycle_home")
+    key "K_END" action Return("cycle_end")
+    
+    use input_button(context)
+    
+#    text str(selected_pic.has_tag("inside")) color "#000000" xalign 0.5 yalign 0.5 xsize 0.5
+    
+    frame background None xsize 0.5 xalign 0.3:
+        
+        if context == "edit":
+            $ text1 = "Editing"
+            $ text2 = ""
+        elif context == "browse":
+            $ text1 = "Browsing"
+        text tt.value size 16
+    
+    frame yalign 0.93 xfill True xalign 0.45 xsize 800 background None:
+        has hbox spacing 20
+        
+        hbox:
+            textbutton "-100" text_size 14 action Return("cycle_previous_100") hovered tt.Action("Skip 100 pictures back (shortcut: Ctrl+left arrow)") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "-10" text_size 14 action Return("cycle_previous_10") hovered tt.Action("Skip 10 pictures back (shortcut: Shift+left arrow)") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "<" text_size 18 action Return("cycle_previous") hovered tt.Action("Skip to previous picture (shortcut: left arrow)") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+        
+
+        frame background None xalign 0.5 ysize 50 xsize 480:
+            if selected_pic:
+                $ text1 = "File (" + str(girl.pics.index(selected_pic)+1) + "/" + str(len(girl.pics)) + "): "
+                $ if selected_pic.sub_dir != None : text1 += "{color=#FF964C}" + str(selected_pic.sub_dir) + "{/color} "
+                $ text1 += selected_pic.file_name
+                if selected_pic.file_name[:selected_pic.file_name.find("(")] != str(selected_pic.new_name)[:str(selected_pic.new_name).find("(")]:
+                    $ text1 += "{color=#7fffd4} --> " + str(selected_pic.new_name) + " (new)"
+
+                text text1 size 16 xalign 0.5 yalign 0.5 #color "#000"
+        
+        hbox:
+            textbutton ">" text_size 18 action Return("cycle_next") hovered tt.Action("Skip to next picture (shortcut: right arrow)") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "+10" text_size 14 action Return("cycle_next_10") hovered tt.Action("Skip 10 pictures forward (shortcut: Shift+right arrow)") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "+100" text_size 14 action Return("cycle_next_100") hovered tt.Action("Skip 100 pictures forward (shortcut: Ctrl+right arrow)") xalign 1.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+        
+    
+    hbox xalign 0.4 yalign 0.98 xsize 0.6 xfill True:
+        
+        if context == "edit":
+        
+#            vbox yalign 1.0:
+            hbox xalign 0.5 yalign 0.99:
+                
+                if persistent.optional_filter:
+                    $ text1 = " (ON)"
+                else:
+                    $ text1 = " (OFF)"
+                
+                textbutton "COMMIT\nCHANGES" action Return("commit") hovered tt.Action("This will commit all changes to the current girl pack and rename all files.") text_size 18 yminimum 50 xminimum 120
+                # <Chris12 - Tagsets>
+                if len(all_tagsets) > 1 : 
+                    textbutton "TAGSET\n" + persistent.active_tagset action Return("cycle_active_tagset") hovered tt.Action("This will switch between different Modes.") text_size 18 yminimum 50 xminimum 120 # <Chris12 - Tagsets />
+                # </Chris12 - Tagsets>
+                textbutton "FILTER\nTAGS" + text1 action ToggleField(persistent, "optional_filter") hovered tt.Action("This will activate/deactivate the contextual filter for tags.") text_size 18 yminimum 50 xminimum 120
+                textbutton "CLEAR\nTAGS" action Return("clear") alternate Return("clear_all") hovered tt.Action("This will clear all active tags for this picture.\nRight-click to clear all active tags FOR ALL PICTURES IN THE GIRL PACK.") text_size 18 yminimum 50 xminimum 120
+                textbutton "BROWSE\nMODE" action Return("browse") hovered tt.Action("This will switch to browsing mode.") text_size 18 yminimum 50 xminimum 120
+                textbutton "JUMP\nTO" action Return("jump_to") hovered tt.Action("This will switch to tag edit mode.") text_size 18 yminimum 50 xminimum 120
+                textbutton "QUIT" action Return("quit") text_size 18 yminimum 50 xminimum 120
+        
+        elif context == "browse":
+            
+            hbox xalign 0.5 yalign 0.99:
+                
+                textbutton str(girl.count_pics(filters=active_filters, include_bk_autoadds=False)) + " pics found with active filters" xsize 250 text_size 16 text_text_align 0 yminimum 50 background "#444" text_color "#ddd"
+                # <Chris12 - Tagsets>
+                if len(all_tagsets) > 1 : 
+                    textbutton "TAGSET\n" + persistent.active_tagset action Return("cycle_active_tagset") hovered tt.Action("This will switch between different Modes.") text_size 18 yminimum 50 xminimum 120
+                # </Chris12 - Tagsets>
+                textbutton "CLEAR\nFILTERS" action Return("clear") hovered tt.Action("This will clear all active filters.") text_size 18 yminimum 50 xminimum 120
+                textbutton "EDIT\nMODE" action Return("edit") hovered tt.Action("This will switch to tag edit mode.") text_size 18 yminimum 50 xminimum 120
+                textbutton "JUMP\nTO" action Return("jump_to") hovered tt.Action("This will switch to tag edit mode.") text_size 18 yminimum 50 xminimum 120
+                textbutton "CYCLE\nALL" action Return("cycle_all") hovered tt.Action("This will quickly cycle over all images.") text_size 18 yminimum 50 xminimum 120
+                textbutton "QUIT" action Return("quit") text_size 18 yminimum 50 xminimum 120
+        
+        
+        if context == "edit" and selected_pic:
+            button yalign 1.0 action Function(selected_pic.toggle_delete)  hovered tt.Action("This will mark the picture for deletion (it does not actually delete the picture, but renames it to '_Trash*' when changes are commited). Shortcut: Del."):
+                add "gui/trash.png"
+    
+
+    
+    
+#    hbox xfill True yfill True:
+        
+    vbox spacing 1 xalign 0.02 ypos 0.01 :
+        
+        frame background "#00000033":
+            textbutton "MAIN TAGS" text_size 16 background None text_bold True action NullAction() hovered tt.Action("Every picture should have some of those tags.")
+        
+        frame background "#6496C8" :
+            has vbox spacing 3
+            
+            # <Chris12 - Tagsets>
+            # Filter tags based on tagsets
+            # main_tags was replaced with a list of tuples [("profile", Tag()), ("portrait", Tag()), ...]
+            $ show_tags = [tag for tag in main_tags if tag.tagsets.issubset(get_tagset(persistent.active_tagset).all_names) or (selected_pic and tag.name in selected_pic.tags)]
+            # </Chris12 - Tagsets>
+            for tag_definition in show_tags:
+                
+                if tag_definition and tag_definition.name != "":
+                    $ tag = tag_definition.name
+                    if (context == "browse" and tag in active_filters) or (context == "edit" and selected_pic and tag in selected_pic.tags):
+                        $ col = "#FF69B4"
+                        $ is_bold = True
+                    elif selected_pic and tag in selected_pic.tags:
+                        $ col = "#FFFF33"
+                        $ is_bold = False
+                    else:
+                        $ col = "#FFF"
+                        $ is_bold = False
+                    
+                    python:
+                    
+                        for tags, ttip in tag_main_help.items():
+                            if tag in make_tuple(tags):
+                                break
+                        else:
+                            ttip = "[text1] [girl.dir]."
+                        
+                    textbutton tag_button_dict[tag] text_color col xsize 195 xfill True action Return(("tag", tag)) hovered tt.Action(ttip) text_bold is_bold
+                        
+                else:
+                    text "" size 10
+        
+    vbox spacing 1 xalign 0.98 ypos 0.01:
+        
+        frame background "#00000033" xalign 1:
+            textbutton "OPTIONAL TAGS" text_size 16 background None text_bold True action NullAction() hovered tt.Action("You should only include those tags if the picture matches. Using optional tags without main tags will result in limited displayability in-game.")
+        
+        frame background "#6496C8" xalign 1.0:
+            ysize 0.994
+            has vbox ysize 0.99
+            spacing 1
+            box_wrap True
+            xalign 1.0
+            
+            # <Chris12 - Tagsets>
+            $ if get_tagset(persistent.active_tagset) is None: persistent.active_tagset = STANDARD_TAGSET # Just to be safe when a tagset.rpy got completely deleted
+            
+            # Sort the tags, then filter based on the active TagSet
+            $ show_tags = [] # Filter showtags beforehand, so that len(show_tags) can help scaling the font_size
+            for tag_def in optional_tags: # <Chris12 - Tagsets - now looping over variable show_tags />
+                $ tag = tag_def.name
+                if (selected_pic and tag in selected_pic.tags) or tag_def.tagsets.issubset(get_tagset(persistent.active_tagset).all_names):
+                    if context == "browse" or not selected_pic or (tag in selected_pic.tags or tag_def.check_conditions(tag_list=selected_pic.tags) or not persistent.optional_filter):
+                        $ show_tags.append(tag_def)                
+            # </Chris12 - Tagsets>
+            
+            $ group = show_tags[0].order
+            $ last_order = group
+            
+            for tag_def in show_tags: # <Chris12 - Tagsets - now looping over variable show_tags />
+                $ tag = tag_def.name
+                
+                # <Chris12 - Moved this part into the if, so that there are never multiple spaces between two tags
+                if tag_def.order != group:
+                    $ group = tag_def.order
+                    if group > last_order:
+                        $ divider_size = 6
+                        if len(show_tags) > 102 : # automatically scale font size if there are many tags. 102 is a 'magic number' that seems to work
+                            $ divider_size = 6 * 102 / len(show_tags)
+                        text "" size divider_size
+                # </Chris12>
+
+                $ last_order = tag_def.order
+
+                if (context == "browse" and tag in active_filters) or (context == "edit" and selected_pic and tag in selected_pic.tags):
+                    $ col = "#FF69B4"
+                elif selected_pic and tag in selected_pic.tags:
+                    $ col = "#FFFF33"
+                else:
+                    $ col = "#FFF"
+                    if (context == "edit" and not persistent.optional_filter and not tag_def.check_conditions(tag_list=selected_pic.tags)):
+                        $ col += "9"
+
+                $ ttip = "The {b}" + tag + "{/b} tag adds the following tags in-game: " + and_text(list_associated_tags(tag))
+                if tag in tag_special_help.keys():
+                    $ ttip += "\n" + tag_special_help[tag]
+
+                $ btn_text_size = tag_def.btn_text_size
+                $ btn_ysize = 26
+                if len(show_tags) > 102 : # automatically scale font size if there are many tags. 102 is a 'magic number' that seems to work
+                    $ btn_text_size = btn_text_size * 102 / len(show_tags)
+                    $ btn_ysize = btn_ysize * 102 / len(show_tags)
+
+                textbutton tag_def.lbl text_size btn_text_size text_color col xsize 120 ysize btn_ysize xfill True action Return(("tag", tag)) hovered tt.Action(ttip)
+
+
+screen pack_stats(girl):
+    
+    modal True
+    
+    key "mouseup_3" action Return("quit")
+    
+    frame background "#6496C8":
+        xsize 1.0
+        ysize 1.0
+        
+        has vbox spacing 20
+        
+        text girl.path bold True
+        text "Rating: " + get_girlpack_rating(girl)
+
+        $ basic_stats = {}
+
+        hbox spacing 50:
+        
+            vbox spacing 60 box_wrap True:
+
+                hbox spacing 68:
+
+                    vbox spacing 20 box_wrap True:
+            
+                        text "BASIC PICTURES"
+
+                        hbox spacing 10 :
+                                        
+                            for tag in ("profile", "portrait", "waitress", "dancer", "masseuse", "geisha", "rest"):
+                                $ basic_stats[tag + " naked"] = girl.count_pics([tag, "naked"])
+                                $ basic_stats[tag] = girl.count_pics([tag]) - basic_stats[tag + " naked"]
+                            
+                            grid 3 8 spacing 10:
+                                text ""
+                                text "Normal" size 20
+                                text "Naked" size 20
+                                for tag in ("profile", "portrait", "waitress", "dancer", "masseuse", "geisha", "rest"):
+                                    text tag.capitalize() size 20
+                                    text format_stat(basic_stats[tag]) size 20
+                                    text format_stat(basic_stats[tag + " naked"]) size 20
+
+                    vbox spacing 20 box_wrap True:
+                        
+                        text "SEX PICTURES"
+
+                        hbox spacing 10 :
+                            
+                            for tag in ("naked", "service", "sex", "anal", "fetish"):
+                                $ basic_stats[tag + " bisexual"] = girl.count_pics([tag, "bisexual"])
+                                $ basic_stats[tag + " group"] = girl.count_pics([tag, "group"])
+                                $ basic_stats[tag] = girl.count_pics([tag]) - basic_stats[tag + " bisexual"] - basic_stats[tag + " group"] + girl.count_pics([tag, "group", "bisexual"])
+                            
+                            grid 4 6 spacing 10:
+                                text ""
+                                text "Normal" size 20
+                                text "Bisexual" size 20
+                                text "Group" size 20
+                                for tag in ("naked", "service", "sex", "anal", "fetish"):
+                                    text tag.capitalize() size 20
+                                    text format_stat(basic_stats[tag]) size 20
+                                    if tag == "naked":
+                                        text "-" size 20
+                                        text "-" size 20
+                                    else:
+                                        text format_stat(basic_stats[tag + " bisexual"]) size 20
+                                        text format_stat(basic_stats[tag + " group"]) size 20
+                    
+                vbox spacing 20 box_wrap True:
+                
+                    text "FARM PICTURES"
+                    
+                    for tag in ("big", "beast", "monster", "machine"):
+                        for tag2 in ("naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                            $ basic_stats[tag, tag2] = girl.count_pics([tag, tag2])
+                    
+                    grid 8 5 spacing 10:
+                        text ""
+                        for tag in ("naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                            text tag.capitalize() size 20
+
+                        for tag in ("big", "beast", "monster", "machine"):
+                            text tag.capitalize() size 20
+                            for tag2 in ("naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                                text format_stat(basic_stats[tag, tag2]) size 20
+
+            vbox spacing 20 box_wrap True:
+
+                text "OPTIONAL PICTURES"
+
+                $ tags = [x for x in optional_tags if x.tagsets.issubset(get_tagset(STANDARD_TAGSET).all_names)] # <Chris12 - Tagsets />
+                $ y_coord = 1+len(tags) 
+                
+                for tag_def in tags:
+                    $ tag = tag_def.name
+                    $ basic_stats[tag, "total"] = girl.count_pics([tag])
+                    for tag2 in ("naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                        $ basic_stats[tag, tag2] = girl.count_pics([tag, tag2])
+                
+                viewport:
+                    mousewheel True
+                    draggable True
+                    scrollbars "vertical"
+                    ysize 0.8
+                    xpos 0.1
+                    xsize 0.9
+                    xfill False  
+                    yfill False            
+                    
+                    grid 9 y_coord yspacing 0 xfill False:
+                        text ""
+                        for tag in ("total", "naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                            text tag.capitalize() size 12
+
+                        for tag_def in tags:
+                            $ tag = tag_def.name
+                            text tag.capitalize()  size 12
+                            text format_stat(basic_stats[tag, "total"]) size 12
+                            for tag2 in ("naked", "service", "sex", "anal", "fetish", "bisexual", "group"):
+                                if tag in ("happy", "neutral", "sad", "maid", "kimono", "swim", "sing", "fight", "libido", "sensitivity", "obedience", "constitution"):
+                                    text "-" size 12
+                                elif tag in fix_dict.keys() and tag2 not in fix_dict[tag].acts:
+                                    text "-" size 12
+                                elif optional_tag_dict[tag].fix_name and tag2 not in fix_dict[optional_tag_dict[tag].fix_name].acts:
+                                    text "-" size 12
+                                else:
+                                    text format_stat(basic_stats[tag, tag2]) size 12
+            
+                text "Combinations marked with '-' do not count towards the girl pack rating." size 14 xalign 0.5
+                    
+                hbox spacing 20 xalign 0.9:
+                    textbutton "Tips" action Return("tips")
+                    textbutton "Quit" action Return("quit") xalign 0.9
+
+
+screen change_log:
+    
+    frame:
+        viewport:
+            mousewheel True
+            draggable True
+            scrollbars "vertical"
+            xfill False  
+            yfill False
+            
+            has vbox spacing 10
+            
+            text "Queued changes"
+            
+            for old, new in persistent.change_log.items():
+                text "Rename {b}{color=#ff4d4d}" + old + "{/color}{/b} (old) to {b}{color=#7fffd4}" + str(new) + "{/color}{/b} (new)" size 12
+            
+            text ""
+            
+            hbox spacing 50:
+                textbutton "COMMIT CHANGES" action Return("commit")
+                textbutton "DISCARD CHANGES" action Return("discard")
+
+
+screen rating_tips():
+    
+    frame xalign 0.5 xmaximum 0.9 xpadding 20 ypadding 50 yalign 0.5 background "#dcebff":
+        
+        has vbox spacing 20 xmaximum 0.9
+        
+        $ text1 = ("{b}UNDERSTANDING THE RATING{/b}\n\n"
+                + "There are two scores: a 'cover score' (from A to F) and a 'diversity score' (+, nothing or -). Please note that the math in the code is a little different, but I have tried to keep it simple for the sake of explaining.\n\n{b}Cover score{/b}:"
+                + "\n\nThe game first checks if you have various game situations covered with at least one picture:\n- You get 10 points for covering each soft type ('profile', 'portrait', 'rest', 'waitress', 'dancer', 'masseuse', 'geisha') and its variations (clothed/naked): A total of 140 points max\n- You get 10 points for covering each sex act ('service', 'sex', 'anal', 'fetish') and its variations (vanilla/group/bisexual): A total of 120 points max\n- You get 4 points for covering each farm tag ('big', 'beast', 'monster', 'machine') and each its variations ('naked', 'service', 'sex', 'anal', 'fetish', 'bis', 'group'): A total of 112 points max\n- You get 4 points for each fixation tag and its variations (exact number depends on the fixation). A total of 524 points max.\n"
+                + "\n\nAn 'A' score means you have at least 85% of the 896 total possible points. A 'B' score means you have 70-85% of that maximum. An 'F' score means you are below 30%. As you can see, covering optional tags (farm and fixations) well is key to get the higher scores. Only covering the basic tags will net you a D."
+                + "\n\n{b}Diversity score{/b}:\n\nThe game next looks for picture diversity, ie how many pictures of each you have in your pack. As of now, it only does that for main picture types (soft and sex) and their variations. It does not take into account optional pictures variety (farm and fixations)."
+                + "\n\nIf you have an average of 5 different pictures for each main picture type or more, you get a '+'. If you have less than 3, you get a '-'."
+                )
+        
+        text text1 size 18 color "#000099"
+        
+        textbutton "Close" action Return() xalign 0.9
+        
+        
+screen input_button(context):
+    
+    hbox spacing 15 xpos 0.22 ypos 0.09 xsize 0.64 xfill True:
+        
+        textbutton "Search" text_size 18:
+            action Return("search")
+        
+        if search_words:
+            text search_words size 18
+        
+        if search_words or copy_tags:
+            textbutton "Clear" text_size 18:
+                action Return("clear_search")
+        
+        if context == "edit":
+            if copy_tags:
+                textbutton "Paste Tags" text_size 18:
+                    action Return("paste_tags")
+            else:
+                textbutton "Copy Tags" text_size 18:
+                    action Return("copy_tags")
+        
+        if selected_pic != None and selected_pic.file in img_resolutions :
+            text img_resolutions[selected_pic.file] size 18
