@@ -280,14 +280,6 @@ init -2 python:
             self.path = "images\\" + dir
             self.pics = []
             self.ignore_pics = [] # <Chris12 PackState />
-            global selected_index
-            global selected_pic
-            global filtered_pics
-            global selected_pic_list
-            filtered_pics = []
-            selected_pic_list = []
-            selected_index = 0
-            selected_pic = None
 
         def add_pic(self, file_name, file):
             pic = Pic(self.path, file_name, file)
@@ -981,10 +973,19 @@ init python:
 # The game starts here.
 label start:
 
-
     $ if not (persistent.active_tagset in [tagset.name for tagset in all_tagsets]): persistent.active_tagset = STANDARD_TAGSET
 
     $ girl_list = compile_girl_pics()
+    
+    python:
+        global selected_index
+        global selected_pic
+        global filtered_pics
+        global selected_pic_list
+        filtered_pics = []
+        selected_pic_list = []
+        selected_index = 0
+        selected_pic = None
 
     while persistent.change_log :
         menu:
@@ -1204,9 +1205,13 @@ label edit_shortcut():
                 $ renpy.utter_restart()
 
         elif result == "clear":
-            $ result = renpy.call_screen("yesno_prompt", "您确定要清除此图片的所有标记吗？", Return(True), Return(False))
+            $ result = renpy.call_screen("yesno_prompt", "您确定要清除选择图片的所有标记吗？", Return(True), Return(False))
             if result:
-                $ selected_pic.clear_tags()
+                python:
+                    global selected_pic_list
+                    selected_pic.clear_tags()
+                    for pic in selected_pic_list:
+                        pic.clear_tags()
 
         elif result == "clear_all":
             if renpy.call_screen("yesno_prompt", "{color=FF0000}这将清除所有在这个女孩包的{b}所有标签{/b}。{/color}\n\n确定要清除这个女孩包上的所有标签吗？", Return(True), Return(False)):
@@ -1247,8 +1252,12 @@ label edit_shortcut():
 
         elif result == "paste_tags":
             if selected_pic:
-                $ selected_pic.set_all_tags(copy_tags)
-                $ copy_tags = []
+                python:
+                    global selected_pic_list
+                    selected_pic.set_all_tags(copy_tags)
+                    for pic in selected_pic_list:
+                        pic.set_all_tags(copy_tags)
+                    copy_tags = []
 
         elif result == "browse":
             $ search_words = ""
@@ -1323,7 +1332,20 @@ label edit_shortcut():
                         pic.toggle_tag(tag)
         
         elif result[0] == "carousel_show":
-            $ selected_pic = result[1]
+            python:
+                if selected_pic != result[1]:
+                    selected_pic = result[1]
+                else:
+                    # 再次点击
+                    global selected_pic_list
+                    if selected_pic in selected_pic_list:
+                        selected_pic_list.remove(selected_pic)
+                    else:
+                        selected_pic_list.append(selected_pic)
+        elif result == "carousel_clear":
+            python:
+                global selected_pic_list
+                selected_pic_list = []
         elif result[0] == "carousel_toggle":
             python:
                 global selected_pic_list
@@ -1480,7 +1502,20 @@ label browse_shortcut():
                 $ selected_pic = pic_list[0]
         
         elif result[0] == "carousel_show":
-            $ selected_pic = result[1] 
+            python:
+                if selected_pic != result[1]:
+                    selected_pic = result[1]
+                else:
+                    # 再次点击
+                    global selected_pic_list
+                    if selected_pic in selected_pic_list:
+                        selected_pic_list.remove(selected_pic)
+                    else:
+                        selected_pic_list.append(selected_pic) 
+        elif result == "carousel_clear":
+            python:
+                global selected_pic_list
+                selected_pic_list = []
         elif result[0] == "carousel_toggle":
             python:
                 global selected_pic_list

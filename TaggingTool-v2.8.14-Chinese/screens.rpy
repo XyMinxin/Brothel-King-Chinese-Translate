@@ -652,7 +652,7 @@ screen pic_button(pic, tt):
         action Return(("carousel_show", pic))
         selected (pic in selected_pic_list)
         key "K_SPACE" action Return(("carousel_toggle", pic))
-        hovered tt.Action(pic_name + "%s\n左键: 显示图片，空格: 切换选中状态" % select_text)
+        hovered tt.Action(pic_name + "%s\n左键: 显示图片，左键/空格: 切换选中状态" % select_text)
         vbox xalign 0.5:
             spacing 10
             text pic_name + select_text size 12
@@ -673,6 +673,9 @@ screen pic_carousel(context, tt):
             $ pics = filtered_pics[selected_index:selected_index+10]
             for pic in pics:
                 use pic_button(pic, tt)
+            if len(pics) < 10:
+                for i in range(0, 10-len(pics)):
+                    add ProportionalScale("ui/img_bg.png", 180, 135)
 
 screen pic_ui(context, tt):
 #    key "mouseup_3" action Hide("pic_ui")
@@ -761,6 +764,7 @@ screen pic_ui(context, tt):
                 textbutton "清除标签" action Return("clear") alternate Return("clear_all") hovered tt.Action("这将清除该图片的所有有效标签。\n点击右键，清除人物包中所有图片的所有活动标签。") text_size 18 yminimum 50 xminimum 120
                 textbutton "浏览模式" action Return("browse") hovered tt.Action("这将切换到标签浏览模式。") text_size 18 yminimum 50 xminimum 120
                 textbutton "跳转模式" action Return("jump_to") hovered tt.Action("这将切换到标签跳转模式。") text_size 18 yminimum 50 xminimum 120
+                textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片") text_size 18 yminimum 50 xminimum 120
                 textbutton "退出" action Return("quit") text_size 18 yminimum 50 xminimum 120
 
         elif context == "browse":
@@ -776,15 +780,13 @@ screen pic_ui(context, tt):
                 textbutton "编辑模式" action Return("edit") hovered tt.Action("这将切换到标签编辑模式。") text_size 18 yminimum 50 xminimum 120
                 textbutton "跳转模式" action Return("jump_to") hovered tt.Action("这将切换到标签跳转模式。") text_size 18 yminimum 50 xminimum 120
                 textbutton "循环所有" action Return("cycle_all") hovered tt.Action("这将快速循环查看所有图像。") text_size 18 yminimum 50 xminimum 120
+                textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片") text_size 18 yminimum 50 xminimum 120
                 textbutton "退出" action Return("quit") text_size 18 yminimum 50 xminimum 120
 
 
         if context == "edit" and selected_pic:
             button yalign 1.0 action Function(selected_pic.toggle_delete)  hovered tt.Action("这将标志着图片的删除（实际上并没有删除图片，只是在修改时将其重命名为‘_Trash*’）。快捷方式：Del"):
                 add "UI/trash.png"
-
-
-
 
 #    hbox xfill True yfill True:
 
@@ -823,7 +825,7 @@ screen pic_ui(context, tt):
                         else:
                             ttip = "[text1] [girl.dir]."
 
-                    textbutton tag_button_dict[tag] text_color col xsize 195 xfill True action Return(("tag", tag)) hovered tt.Action(ttip) text_bold is_bold
+                    textbutton tag_button_dict[tag] text_color col xsize 170 xfill True action Return(("tag", tag)) hovered tt.Action(ttip) text_bold is_bold
 
                 else:
                     text "" size 10
@@ -881,12 +883,12 @@ screen pic_ui(context, tt):
                 if tag in tag_special_help.keys():
                     $ ttip += "\n" + tag_special_help[tag]
 
-                $ btn_text_size = 18
+                $ btn_text_size = 16
                 if len(show_tags) > 102 : # automatically scale font size if there are many tags. 102 is a 'magic number' that seems to work
-                    $ btn_text_size = 18 * 102 / len(show_tags)
+                    $ btn_text_size = 16 * 102 / len(show_tags)
 
                 # textbutton tag_def.lbl text_size btn_text_size text_color col xsize 120 xfill True action Return(("tag", tag)) hovered tt.Action(ttip)
-                textbutton tag_button2_dict[tag] text_size btn_text_size text_color col xsize 120 xfill True action Return(("tag", tag)) hovered tt.Action(ttip)
+                textbutton tag_button2_dict[tag] text_size btn_text_size text_color col xsize 100 xfill True action Return(("tag", tag)) hovered tt.Action(ttip)
 
 
 screen pack_stats(girl):
