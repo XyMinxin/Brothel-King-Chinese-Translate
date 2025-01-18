@@ -1,8 +1,6 @@
-/.vscode/*
-/Brothel_King-v0.3t-Chinese/.vscode/*
-/Mod-Chinese/*/.vscode/*
-/TaggingTool-v2.8.14-Chinese/.vscode/*
+.vscode/
 *.zip
 *.7z
+*.rar
 *.pyc
 *.rpyc
