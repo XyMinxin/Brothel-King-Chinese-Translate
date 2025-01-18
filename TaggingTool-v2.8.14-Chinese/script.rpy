@@ -1205,7 +1205,7 @@ label edit_shortcut():
                 $ renpy.utter_restart()
 
         elif result == "clear":
-            $ result = renpy.call_screen("yesno_prompt", "您确定要清除选择图片的所有标记吗？", Return(True), Return(False))
+            $ result = renpy.call_screen("yesno_prompt", "您确定要清除此图片的所有标记吗？", Return(True), Return(False))
             if result:
                 python:
                     global selected_pic_list

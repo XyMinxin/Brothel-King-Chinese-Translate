@@ -184,9 +184,9 @@ screen main_menu():
         style "mm_root"
 
         text "版本: [config.version]" xalign 0.5 yalign 0.95 color "#003C78"
-        text "此工具由Minxin汉化" xalign 0.5 yalign 0.98 color "#003C78"
+        text "此工具由冥鑫、小熊猫和一页十次郎翻译及改进" xalign 0.5 yalign 0.98 color "#003C78"
 
-    text "选定的人物包: {b}" + str(persistent.girl) color "#CC6600" xalign 0.5 yalign 0.05
+    text "选定的角色包: {b}" + str(persistent.girl) color "#CC6600" xalign 0.5 yalign 0.05
 
     # The main menu buttons.
     frame:
@@ -196,17 +196,17 @@ screen main_menu():
 
         has vbox spacing 10
 
-        textbutton _("选择人物包") action (SetVariable("mode", "select"), Start())
-        textbutton _("编辑人物包") action (SetVariable("mode", "edit"), Start())
-        textbutton _("浏览人物包") action (SetVariable("mode", "browse"), Start())
-        textbutton _("人物包统计") action (SetVariable("mode", "stats"), Start())
-        textbutton _("生成BK.ini") action (SetVariable("mode", "ini"), Start()) # <neronero & RudolfU - BK.ini generator>
+        textbutton _("选择角色包") action (SetVariable("mode", "select"), Start())
+        textbutton _("编辑角色包") action (SetVariable("mode", "edit"), Start())
+        textbutton _("浏览角色包") action (SetVariable("mode", "browse"), Start())
+        textbutton _("角色包统计") action (SetVariable("mode", "stats"), Start())
+        textbutton _("生成自定义属性文件") action (SetVariable("mode", "ini"), Start()) # <neronero & RudolfU - BK.ini generator>
         textbutton _("替换工具(快速替换标签)") action (SetVariable("mode", "replace"), Start())
-        textbutton _("帮助") action Help()
+        textbutton _("操作指南") action Help()
 #        textbutton _("Test") action Jump("mytest")
         textbutton _("导出人物数据CSV") action Jump("export_girlsdata")
-        textbutton _("导出人物包状态") action Jump("export_currentstate")
-        textbutton _("导入人物包状态") action (SetVariable("mode", "import_packstate"), Start())
+        textbutton _("导出角色包状态") action Jump("export_currentstate")
+        textbutton _("导入角色包状态") action (SetVariable("mode", "import_packstate"), Start())
         textbutton _("导出所有包状态") action Jump("export_allstates")
 #        textbutton _("Export Debugdata") action Jump("export_debugdata")
         textbutton _("退出") action Quit(confirm=False)
@@ -722,18 +722,18 @@ screen pic_ui(context, tt):
         has hbox spacing 20
 
         hbox:
-            textbutton "-100" text_size 14 action Return("cycle_previous_100") hovered tt.Action("向后跳过100张图片（快捷键：Ctrl+左箭头）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
-            textbutton "-10" text_size 14 action Return("cycle_previous_10") hovered tt.Action("向后跳过10张图片（快捷键：Shift+左箭头）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
-            textbutton "<" text_size 18 action Return("cycle_previous") hovered tt.Action("跳到上一张图片（快捷键：左箭头）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "-100" text_size 14 action Return("cycle_previous_100") hovered tt.Action("向后浏览100张图片（快捷键：Ctrl+左方向键）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "-10" text_size 14 action Return("cycle_previous_10") hovered tt.Action("向后浏览10张图片（快捷键：Shift+左方向键）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
+            textbutton "<" text_size 18 action Return("cycle_previous") hovered tt.Action("切换到上一张图片（快捷键：左方向键）") xalign 0.0 yalign 1.0 xsize 40 ysize 40 xfill True yfill True
 
 
         frame background None xalign 0.5 ysize 50 xsize 480:
             if selected_pic:
-                $ text1 = "文件 (" + str(girl.pics.index(selected_pic)+1) + "/" + str(len(girl.pics)) + "): "
+                $ text1 = "文件(" + str(girl.pics.index(selected_pic)+1) + "/" + str(len(girl.pics)) + "): "
                 $ if selected_pic.sub_dir != None : text1 += "{color=#FF964C}" + str(selected_pic.sub_dir) + "{/color} "
                 $ text1 += selected_pic.file_name
                 if selected_pic.file_name[:selected_pic.file_name.find("(")] != str(selected_pic.new_name)[:str(selected_pic.new_name).find("(")]:
-                    $ text1 += "{color=#7fffd4} --> " + str(selected_pic.new_name) + " (新)"
+                    $ text1 += "{color=#7fffd4} --> " + str(selected_pic.new_name) + "(新)"
 
                 text text1 size 16 xalign 0.5 yalign 0.25 #color "#000"
         hbox:
@@ -753,19 +753,19 @@ screen pic_ui(context, tt):
             hbox xalign 0.5 yalign 0.99:
 
                 if persistent.optional_filter:
-                    $ text1 = " (启用)"
+                    $ text1 = " (展开)"
                 else:
-                    $ text1 = " (关闭)"
+                    $ text1 = " (隐藏)"
 
-                textbutton "保存更改" action Return("commit") hovered tt.Action("这将提交对当前人物包的所有修改，并重命名所有文件。") text_size 18 yminimum 50 xminimum 120
+                textbutton "保存修改" action Return("commit") hovered tt.Action("这将保存对当前角色包的所有修改，并重命名所有文件。") text_size 18 yminimum 50 xminimum 120
                 # <Chris12 - Tagsets>
                 if len(all_tagsets) > 1 :
-                    textbutton "标签\n" + persistent.active_tagset action Return("cycle_active_tagset") hovered tt.Action("这将在不同的模式之间切换。") text_size 18 yminimum 50 xminimum 120 # <Chris12 - Tagsets />
+                    textbutton "标签\n" + persistent.active_tagset action Return("cycle_active_tagset") hovered tt.Action("这将在不同的模式之间切换。原版基础主要标签，原版详细次要标签，模组常用额外扩展标签等。建议使用原版标签。") text_size 18 yminimum 50 xminimum 120 # <Chris12 - Tagsets />
                 # </Chris12 - Tagsets>
-                textbutton "过滤标签" + text1 action ToggleField(persistent, "optional_filter") hovered tt.Action("这将激活/停用标签过滤器。") text_size 18 yminimum 50 xminimum 120
-                textbutton "清除标签" action Return("clear") alternate Return("clear_all") hovered tt.Action("这将清除该图片的所有有效标签。\n点击右键，清除人物包中所有图片的所有活动标签。") text_size 18 yminimum 50 xminimum 120
-                textbutton "浏览模式" action Return("browse") hovered tt.Action("这将切换到标签浏览模式。") text_size 18 yminimum 50 xminimum 120
-                textbutton "跳转模式" action Return("jump_to") hovered tt.Action("这将切换到标签跳转模式。") text_size 18 yminimum 50 xminimum 120
+                textbutton "详细标签" + text1 action ToggleField(persistent, "optional_filter") hovered tt.Action("这将展开/隐藏次级精确标签菜单。") text_size 18 yminimum 50 xminimum 120
+                textbutton "清除标签" action Return("clear") alternate Return("clear_all") hovered tt.Action("这将清除该图片的所有有效标签。\n点击右键，清除角色包中所有图片的所有有效标签。") text_size 18 yminimum 50 xminimum 120
+                textbutton "浏览模式" action Return("browse") hovered tt.Action("这将切换到标签浏览模式，点击指定标签将显示所有含有该标签的图片，你无法编辑它的标签。") text_size 18 yminimum 50 xminimum 120
+                textbutton "自由选择" action Return("jump_to") hovered tt.Action("跳转到指定图片，例如输入15再按回车，就会切换到第15张图片。") text_size 18 yminimum 50 xminimum 120
                 textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片（但不会取消已有更改）") text_size 18 yminimum 50 xminimum 120
                 textbutton "退出" action Return("quit") text_size 18 yminimum 50 xminimum 120
 
@@ -778,9 +778,9 @@ screen pic_ui(context, tt):
                 if len(all_tagsets) > 1 :
                     textbutton "标签\n" + persistent.active_tagset action Return("cycle_active_tagset") hovered tt.Action("这将在不同的模式之间切换。") text_size 18 yminimum 50 xminimum 120
                 # </Chris12 - Tagsets>
-                textbutton "清除过滤" action Return("clear") hovered tt.Action("这将清除所有活动的过滤。") text_size 18 yminimum 50 xminimum 120
-                textbutton "编辑模式" action Return("edit") hovered tt.Action("这将切换到标签编辑模式。") text_size 18 yminimum 50 xminimum 120
-                textbutton "跳转模式" action Return("jump_to") hovered tt.Action("这将切换到标签跳转模式。") text_size 18 yminimum 50 xminimum 120
+                textbutton "清除过滤" action Return("clear") hovered tt.Action("这将清除所有激活的过滤。") text_size 18 yminimum 50 xminimum 120
+                textbutton "编辑模式" action Return("edit") hovered tt.Action("这将切换到标签编辑模式，点击标签按钮将增加/删除标签。") text_size 18 yminimum 50 xminimum 120
+                textbutton "自由选择" action Return("jump_to") hovered tt.Action("切换到你指定的图片。") text_size 18 yminimum 50 xminimum 120
                 textbutton "循环所有" action Return("cycle_all") hovered tt.Action("这将快速循环查看所有图像。") text_size 18 yminimum 50 xminimum 120
                 textbutton "清除选中" action Return("carousel_clear") hovered tt.Action("取消选中的所有图片") text_size 18 yminimum 50 xminimum 120
                 textbutton "退出" action Return("quit") text_size 18 yminimum 50 xminimum 120
@@ -795,7 +795,7 @@ screen pic_ui(context, tt):
     vbox spacing 4 xalign 0.02 ypos 0.01:
 
         frame background "#00000033":
-            textbutton "主要标签" background None text_bold True action NullAction() hovered tt.Action("每张照片都应该有一些这样的标签。")
+            textbutton "主要标签" background None text_bold True action NullAction() hovered tt.Action("每张图片都应该被打上主要标签，这是她当时的状态，然后再细化添加可选标签增加精确性，例如摆出什么表情，使用什么姿势，穿着什么衣服等。")
 
         frame:
             has vbox spacing 4
@@ -835,7 +835,7 @@ screen pic_ui(context, tt):
     vbox spacing 4 xalign 0.98 ypos 0.01:
 
         frame background "#00000033" xalign 1:
-            textbutton "可选标签" background None text_bold True action NullAction() hovered tt.Action("只有在图片匹配的情况下，你才应该包括这些标签。使用可选的标签而不使用主要的标签，将导致在游戏中的可显示性受到限制。")
+            textbutton "可选标签" background None text_bold True action NullAction() hovered tt.Action("只有在图片精确匹配的情况下，你才应该使用这些标签。如果只有可选标签而不打主要标签，将导致图片很少出现，只有极少数特定事件会对应显示。")
 
         frame xalign 1.0:
             ysize 0.994
@@ -881,7 +881,7 @@ screen pic_ui(context, tt):
                 else:
                     $ col = "#FFF"
 
-                $ ttip = "该 {b}" + tag + "{/b} 标签在游戏中添加以下标签: " + and_text(list_associated_tags(tag))
+                $ ttip = "该 {b}" + tag + "{/b}标签将在游戏中添加以下标签:" + and_text(list_associated_tags(tag))
                 if tag in tag_special_help.keys():
                     $ ttip += "\n" + tag_special_help[tag]
 
@@ -1012,7 +1012,7 @@ screen pack_stats(girl):
                             else:
                                 text format_stat(basic_stats[tag, tag2]) size 12
 
-            text "标有'-'的组合不计入人物包等级。" size 14 xalign 4
+            text "标有'-'的组合不计入角色包评分计算。" size 14 xalign 4
 
             hbox spacing 20 xalign 0.9:
                 textbutton "提示" action Return("tips")
@@ -1048,12 +1048,12 @@ screen rating_tips():
 
         has vbox spacing 20 xmaximum 0.9
 
-        $ text1 = ("{b}了解评级{/b}\n\n"
-                + "有两个分数: '覆盖分数' (从 A 到 F) 和 '多样性分数' (+, 0或-)。请注意, 代码中的计算方法略有不同, 但为了便于解释, 我尽量让它保持简单.\n\n{b}覆盖得分{/b}:"
-                + "\n\n游戏首先会检查你是否拥有包含至少一张图片的各种游戏情境:\n- 覆盖每一种主要类型得10分 ('profile', 'portrait', 'rest', 'waitress', 'dancer', 'masseuse', 'geisha') 以及它的变种 (衣服/裸体):总共最多140分\n- 每涉及一张性图片就得10分 ('service', 'sex', 'anal', 'fetish') 以及它的变种 (vanilla/群交/百合): 总共最多120分\n- 覆盖每个农场标签得到4分 ('big', 'beast', 'monster', 'machine') 以及它的变种 ('naked', 'service', 'sex', 'anal', 'fetish', 'bis', 'group'): 总共最多112分\n- 你为每个固定标签和它的变化得到4分 (确切的数字取决于喜欢什么)。总共不超过524分.\n"
-                + "\n\n'A' 的分数意味着你至少占了896分的85%。'B' 分数意味着你有70-85%的最大值。'F' 分数意味着你低于30%。如你所见, 包括可选标记 (farm and fixations) 关键是获得更高的分数。只涵盖基本的标签将使您获得D."
-                + "\n\n{b}多样性得分{/b}:\n\n游戏继续寻找图片的多样性, 即你的包里每个标签有多少张照片。到目前为止, 它只对主要的图片类型这样做 (soft and sex) 及其变化。它不考虑可选图片的多样性 (farm and fixations)。"
-                + "\n\n如果你有平均5个不同的图片为每个主要的图片类型或更多, 你会得到一个a '+'。如果小于3, 就得到a '-'。"
+        $ text1 = ("{b}了解评分标准{/b}\n\n"
+                + "有两个评分标准: '覆盖评级'(从A到F)和'多样性评级' (+, 0或-)。请注意, 代码中的计算方法略有不同, 但为了便于解释, 我尽量让它通俗易懂。\n\n{b}覆盖评级{/b}:"
+                + "\n\n游戏首先会检查每种事件是否都有一张对应标签的图片:\n- 覆盖每一种主要类型得10分 ('头像', '立绘', '休息', '服务员', '舞娘', '按摩技师', '艺妓') 以及它的变种 (常规/裸体):总计最多140分。\n- 每包含一张性图片就得10分 ('侍奉', '性交', '肛交', '调教') 以及它的变种 (双飞/群交/百合): 总计最多120分。\n- 覆盖每个农场标签得到4分 ('种马', '野兽', '怪物', '机械') 以及它的变种 ('naked', 'service', 'sex', 'anal', 'fetish', 'bis', 'group'): 总共最多112分\n- 你为每个固定标签和它的变化得到4分 (确切的数字取决于喜欢什么)。总共不超过524分。\n"
+                + "\n\n'A' 的评级意味着你至少占了896分的85%。'B' 分数意味着你有70-85%的最大值。'F' 分数意味着你低于30%。如你所见, 包括可选标记 (农场训练和性癖标签) 关键是获得更高的分数。只涵盖基本的标签将使您获得D."
+                + "\n\n{b}多样性评级{/b}:\n\n游戏内图片标签的多样性, 即你的角色包里每个标签对应有多少张图片。目前为止, 它只对主要的图片类型进行检查 (soft and sex) 及其变化。不会考虑可选图片的多样性(农场训练和性癖标签)。"
+                + "\n\n如果每个主要标签你都有超过5张对应的图片, 角色包评级为“A+”。如果小于3张, 评级就为“A-”。"
                 )
 
         text text1 size 18 color "#000099"
