@@ -23,7 +23,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "青楼之王标签工具"
-    config.version = "2.8.14"
+    config.version = "2.9"
 
     #########################################
     # Themes

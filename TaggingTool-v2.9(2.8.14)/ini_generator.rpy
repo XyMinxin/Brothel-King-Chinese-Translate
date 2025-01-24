@@ -908,12 +908,12 @@ screen ini_positive_traits_list():
         
         python:
             for trait in gold_traits_list:
-                text_positive += "\"" + trait + "\", " 
+                text_positive += "\"" + tl_cn(trait, trait_name_dict) + "\", " 
                 
             text_positive += "\n\n{b}正面特质{/b}\n"
                 
             for trait in positive_traits_list:
-                text_positive += "\"" + trait + "\", " 
+                text_positive += "\"" + tl_cn(trait, trait_name_dict) + "\", " 
         
         text text_positive size 18 color "#ffffff"
         
@@ -928,7 +928,7 @@ screen ini_negative_traits_list():
         
         python:
             for trait in negative_traits_list:
-                text_negative += "\"" + trait + "\", " 
+                text_negative += "\"" + tl_cn(trait, trait_name_dict) + "\", " 
        
         text text_negative size 18 color "#ffffff" 
         
@@ -965,7 +965,7 @@ screen ini_personality_list():
         
         python:
             for personality in personalities_list:
-                text_personality += personality + "\n" 
+                text_personality += tl_cn(personality, personalities_related_dict) + "\n" 
        
         text text_personality size 16 color "#ffffff" 
         
@@ -980,7 +980,7 @@ screen ini_fixations_list():
         
         python:
             for fixation in fixations_list:
-                text_fixations += "\"" + fixation + "\", " 
+                text_fixations += "\"" + tl_cn(fixation, girl_related_dict) + "\", " 
        
         text text_fixations size 18 color "#ffffff" 
 
@@ -1017,14 +1017,11 @@ screen positive_choice():
     text "{color=#FFD700}{b}Gold Traits{/b}{/color}" size 18
     for index, name in enumerate(gold_traits_list):
         hbox xpos (index%6)*0.18 ypos 140+index//6*40:
-            if name in trait_name_dict :
-                textbutton trait_name_dict[name] action ToggleSetMembership(values, name)
-            else:
-                textbutton name action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, trait_name_dict) action ToggleSetMembership(values, name)
     text "{color=#009874}{b}Positive Traits{/b}{/color}" size 18 ypos 300
     for index, name in enumerate(positive_traits_list):
         hbox xpos (index%6)*0.18 ypos 440+index//6*40:
-            textbutton trait_name_dict[name] action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, trait_name_dict) action ToggleSetMembership(values, name)
     vbox xpos 0 yalign 0.9:
         textbutton "完成" action Return(values)
 
@@ -1036,7 +1033,7 @@ screen negative_choice():
     text "{color=#F78181}{b}Negative Traits{/b}{/color}" size 18
     for index, name in enumerate(negative_traits_list):
         hbox xpos (index%6)*0.18 ypos 140+index//6*40:
-            textbutton trait_name_dict[name] action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, trait_name_dict) action ToggleSetMembership(values, name)
     vbox xpos 0 yalign 0.9:
         textbutton "完成" action Return(values)
       
@@ -1047,7 +1044,7 @@ screen personality_choice():
     
     for index, name in enumerate(personalities_list):
         hbox xpos (index%2)*0.95 ypos 200+index//2*40:
-            textbutton personalities_related_dict[name] action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, personalities_related_dict) action ToggleSetMembership(values, name)
     vbox xpos 0 yalign 0.9:
         textbutton "完成" action Return(values)
         
@@ -1058,7 +1055,7 @@ screen act_choice():
     
     for index, name in enumerate(acts_list):
         hbox xpos (index%7)*0.15 ypos 100+index//7*40:
-            textbutton girl_related_dict[name] action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, girl_related_dict) action ToggleSetMembership(values, name)
     vbox xpos 0 yalign 0.9:
         textbutton "完成" action Return(values)
         
@@ -1069,7 +1066,7 @@ screen fixation_choice():
        
     for index, name in enumerate(fixations_list):
         hbox xpos (index%6)*0.18 ypos 100+index//6*40:
-            textbutton girl_related_dict[name] action ToggleSetMembership(values, name)
+            textbutton tl_cn(name, girl_related_dict) action ToggleSetMembership(values, name)
     vbox xpos 0 yalign 0.9:
         textbutton "完成" action Return(values)
 
