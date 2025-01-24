@@ -70,12 +70,10 @@ label slavemarket:
                 jump headhunter_main
 ############ Jman - Headhunter Mod End ########
 
-    show screen girls(slavemarket.girls, context = "slavemarket")
-
-
 label slavemarket_loop:
 
     $ result = None
+    show screen girls(slavemarket.girls, context = "slavemarket")
 
     while True:
 
@@ -126,6 +124,10 @@ label slavemarket_loop:
                     $ game.headhunter_button_enabled = 0
 ############ Jman - Headhunter Mod End ########
 
+            # Disables buttons and shortcuts until the end of the acquisition process
+            hide screen girls
+            show screen girl_profile(girl)
+
             call acquire_girl(girl, price, context = "slavemarket") from _call_acquire_girl_3 # Checks that MC has the necessary money and room in the brothel or farm.
 
             if slavemarket_firstvisit and _return:
@@ -141,6 +143,8 @@ label slavemarket_loop:
                 $ game.headhunter_button_enabled = 1
 ############ Jman - Headhunter Mod End ########
 
+            jump slavemarket_loop
+
 ## DISTRICT ##
 
 label districts:
@@ -155,11 +159,14 @@ label districts:
     show screen districts()
     with Dissolve(0.15)
 
+    $ _selected = None
+
     while True:
 
-        $ selected_district = ui.interact()
+        $ _selected = ui.interact()
 
-        if selected_district:
+        if isinstance(_selected, District):
+            $ selected_district = _selected
             jump visit_district
 
 
@@ -522,7 +529,7 @@ label farm_loop():
 
             show magic fire
 
-            $ you("Uh? What's going on here?", interact=False)
+            $ you("哈? 这里发生什么事了?", interact=False)
 
             hide magic fire
 
@@ -941,7 +948,7 @@ label main_wait_for_input:
 
         if result:
             if result == "advance":
-                if renpy.call_screen("yes_no", __("Do you really want to advance to the next chapter?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.\nIt will cost you {b}") + str(blist[game.chapter+1].cost) + " gold{/b}."):
+                if renpy.call_screen("yes_no", __("Do you really want to advance to the next chapter?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.\nIt will cost you {b}") + str(blist[game.chapter+1].cost) + "金币{/b}。"):
                     call advance_to_chapter(game.chapter+1) from _call_advance_to_chapter_1
                     jump brothel
 

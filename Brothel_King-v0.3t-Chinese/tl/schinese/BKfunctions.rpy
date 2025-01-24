@@ -144,11 +144,13 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:1515
     old "Very easy"
-    new "十拿九稳"
+    new "小菜一碟"
+    old "Very Easy"
+    new "小菜一碟"
 
     # game/BKfunctions.rpy:1519
     old "Easy"
-    new "小菜一碟"
+    new "优势在我"
 
     # game/BKfunctions.rpy:1523
     old "Medium"
@@ -160,7 +162,9 @@ translate schinese strings:
 
     # game/BKfunctions.rpy:1531
     old "Very hard"
-    new "难于登天"
+    new "胜算很低"
+    old "Very Hard"
+    new "胜算很低"
 
     # game/BKfunctions.rpy:1667
     old "temptress"

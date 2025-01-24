@@ -1,0 +1,72 @@
+2.9：（2025-01-18）
+汉化了标签工具。修改了代码使其可以一次选中多张图片编辑标签。
+
+
+2.8.12: (2022-05-27)
+Added "fight" to sorting_dict (so that it has a higher priority in the filename)
+Added "Copy/Paste Tags"
+Registered Keypad keys (Left, Right, Delete)
+Keeping separate RenameLog per Girl
+Bugfix: No longer showing checkered background for videos
+ 
+2.8.11: (2021-04-20)
+Updated tag definition for "public"
+Removed auto-add of "public" from "nature", "beach", "town"
+Made the location tags visible all the time (when Tag Filter = ON)
+New Settings Variable BK_AUTOADDS (To help keep the rating calculation in line)
+Bugfix: Exception when switching from Browse Mode to Edit Mode with no selected image
+Bugfix: Exception when commiting while a video is playing
+
+2.8.10: (2021-03-21)
+"lesbian" tag moved to main tags
+"freq_highest" removed
+"nun" integrated into "ceremony"
+Updated tag descriptions for "lesbian", "sex", "anal"
+Added Renaming Log
+More efficient use of screen space
+Alligned Rating calculation with BK 0.20 (Score Ceiling 10/5, Lesbian counts as Bisexual, Fixation Cunnilingus)
+VIDEOFORMATS: ".mp4" removed, ".mpg" added
+
+Hotfix 2.8.9: (2020-11-29)
+Switched Quality Tags to Frequency
+
+2.8.9: (2020-11-19)
+Showing custom background for transparent images. Standard is checkered, you can use your own if you edit UI/img_bg.png
+Added description that "profile" and "portrait" should be solo pics
+Removed "profile" from the description of "friend"
+
+2.8.8: (2020-10-07)
+New tags: xq, hq, lq
+Image prediction
+Display image resolution
+
+2.8.7: (2020-09-13)
+Distinct Numbering over different extensions
+Images in subfolders are sorted towards the end in the filelist
+
+2.8.6: (2020-09-06)
+Video Support : .webm, .mp4, .mkv, .avi
+Slightly faster renaming of _UNTAGGED files
+
+2.8.5: (2020-08-02)
+Support for subdirectories
+Fixed the Custom Search bug
+Improved the definition of the 'lesbian' tag
+Cycle All Images
+
+2.8.4: (2020-07-18)
+New tag definitions for: bisexual, group, lesbian, machine, toy, sex, anal, libido, obedience, constitution, sensitivity, naked, strip
+
+2.8.3: (2020-06-28)
+New tags: todo, party, study, tempt, friend
+Bugfix: cumshot autoadd
+
+2.8.2: (2020-06-05)
+Improved tag recognition
+Bugfixes
+Tags upgraded to central entity
+Girldata CSV
+
+2.8.1: (2020-06-01)
+Inital Release
+TagSets Core and Extended

@@ -52,7 +52,7 @@ translate schinese c1_gio_is_back_acb90c7e:
 translate schinese c1_gio_is_back_3f15cc41:
 
     # gio "It will not exactly be easy, but I know this gal... Look, if you can raise {b}[blist[2].cost] denars{/b}, we should be able to afford a new place and bribe the city guard for our first license."
-    gio "这并不容易，不过我认识一个人，如果你能给他 {b}[[blist[2].cost]金币{/b},我们就能买下一间城里的门面，然后打点好守卫，拿到营业执照。"
+    gio "这并不容易，不过我认识一个人，如果你能给他 {b}[blist[2].cost] denars{/b}金币,我们就能买下一间城里的门面，然后打点好守卫，拿到营业执照。"
 
 # game/BKchapter1.rpy:44
 translate schinese c1_gio_is_back_6f230e60:

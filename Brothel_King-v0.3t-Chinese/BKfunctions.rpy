@@ -1037,7 +1037,7 @@ init -3 python:
             girl.change_mood(1)
             girl.change_fear(-1)
 
-            change_log.add("Averted by security", col="good", ttip = event_color["good"] % "Mood +, Fear -")
+            change_log.add("被保安阻止了", col="good", ttip = event_color["good"] % "Mood +, Fear -")
 
         elif MC.can_defend() and MC.get_defense() > girl.get_defense(): #You don't have enough guards but the Player is available and tougher than your girl
 
@@ -1049,7 +1049,7 @@ init -3 python:
                 girl.change_love(1)
                 girl.change_fear(-2)
 
-                change_log.add("Averted by you", col="good", ttip = event_color["good"] % "Mood +, Love +, Fear -")
+                change_log.add("被你阻止了", col="good", ttip = event_color["good"] % "Mood +, Love +, Fear -")
 
             elif girl.test_shield():
 
@@ -1057,7 +1057,7 @@ init -3 python:
 
                 girl.change_mood(1)
 
-                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("被魔法护盾阻挡了", col="good", ttip = event_color["good"] % "Mood +")
 
             else:
                 text_descript += "{color=[c_red]}You tried to help, but the customer knocked you out and locked the door shut.{/color}"
@@ -1089,14 +1089,14 @@ init -3 python:
                 girl.track_event("defended")
                 girl.change_mood(1)
 
-                change_log.add("Averted by herself", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("被她自己阻止了", col="good", ttip = event_color["good"] % "Mood +")
 
             elif girl.test_shield():
 
                 text_descript += "Fortunately, her magic shield protected her. The customer was awed and sheepishly agreed to back off."
                 girl.change_mood(1)
 
-                change_log.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                change_log.add("被魔法护盾阻挡了", col="good", ttip = event_color["good"] % "Mood +")
 
             else:
 
@@ -1112,7 +1112,7 @@ init -3 python:
 
     def crazy_customer(girls, customers):
 
-        crazy_changes = NightChangeLog("Security alert", col=c_lightred)
+        crazy_changes = NightChangeLog("安全警报", col=c_lightred)
 
     ## Tests for violence and arson attempts (returns event if True)
 
@@ -1122,7 +1122,7 @@ init -3 python:
             if cust.crazy == "violent":
 
                 notify("%s: Assault attempt" % girl.fullname, pic=girl.portrait)
-                crazy_changes.add("Assault attempt", "header")
+                crazy_changes.add("潜在的风险", "header")
 
                 violent_text = __(cust.name) + __(" went berserk and attacked ") + girl.name + __(" all of a sudden!")
                 violent_report = __("Security alert! Violent customer.")
@@ -1137,7 +1137,7 @@ init -3 python:
 
                     pic = Picture(path="events/" + rand_choice(security_pics["girl defense"]))
 
-                    crazy_changes.add("Averted by security ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Fear -")
+                    crazy_changes.add("被保安阻止了 ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Fear -")
 
                 elif MC.can_defend() and MC.get_defense() > girl.get_defense(): # Your guards are somewhere else, your girl is helpless, it's your turn to take action!
                     if fight(cust, MC) == False:
@@ -1150,7 +1150,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl defense"]))
 
-                        crazy_changes.add("Averted by you ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Love +, Fear --")
+                        crazy_changes.add("被你阻止了 ({image=img_gold} +%i)" % cust.ent_budget, col="good", ttip = event_color["good"] % "Mood +, Love +, Fear --")
 
                     elif girl.test_shield():
                         violent_text += __(" She was protected by a magic shield.")
@@ -1158,7 +1158,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("被魔法护盾阻挡了", col="good", ttip = event_color["good"] % "Mood +")
 
                     elif girl.get_effect("special", "immune"):
                         violent_text += __(" But she is immune to physical attacks.")
@@ -1166,7 +1166,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("无法被伤害到", col="good", ttip = event_color["good"] % "Mood +")
 
                     else:
                         violent_text += __("\n{color=[c_red]}You try to help her but the bastard knocks you to the ground and beats up the both of you.\n{/color}") + girl.name + __(" is hurt, and you lose some self-respect.")
@@ -1215,7 +1215,7 @@ init -3 python:
                             if not pic:
                                 pic = Picture(path="events/" + rand_choice(security_pics["default girl fight"]))
 
-                        crazy_changes.add("Averted by herself", col="good", ttip = event_color["good"] % "Mood +, Fear -")
+                        crazy_changes.add("被她自己阻止了", col="good", ttip = event_color["good"] % "Mood +, Fear -")
 
                     elif girl.test_shield():
                         violent_text += __(" She was protected by a magic shield.")
@@ -1223,7 +1223,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Magic Shield", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("被魔法护盾阻挡了", col="good", ttip = event_color["good"] % "Mood +")
 
                     elif girl.get_effect("special", "immune"):
                         violent_text += __(" But she is immune to physical attacks.")
@@ -1231,7 +1231,7 @@ init -3 python:
 
                         pic = Picture(path="events/" + rand_choice(security_pics["girl shield"]))
 
-                        crazy_changes.add("Averted by Immunity", col="good", ttip = event_color["good"] % "Mood +")
+                        crazy_changes.add("她无法被伤害到", col="good", ttip = event_color["good"] % "Mood +")
 
                     else:
                         violent_text += __("\n{color=[c_red]}Your girl tried to defend herself but he is stronger, kicking her to ground and pummeling her with his fists.\n{/color}You finally throw him out, but ") + girl.name + __(" is hurt.")
@@ -1287,7 +1287,7 @@ init -3 python:
                     arson = True
 
                 if arson:
-                    if MC.playerclass == "Wizard":
+                    if MC.playerclass == "法师":
                         damage = dice(25) + 25 - 5 * MC.get_spirit()
                         if damage < 0:
                             damage = 0
@@ -2108,19 +2108,19 @@ init -3 python:
 
 
         if len(girls) > 1:
-            change_log.add("Tip: {image=img_gold_20} %s" % plus_text(sum(tip_gains.values()), "gold"), "header")
+            change_log.add("小费: {image=img_gold_20} %s" % plus_text(sum(tip_gains.values()), "gold"), "header")
             for girl in girls:
-                change_log.add("%s: {image=img_gold} %s" % (girl.fullname, plus_text(tip_gains[girl], "gold")), ttip=gold_ttip[girl], ttip_title="Total tip (%s)" % (girl.fullname))
+                change_log.add("%s: {image=img_gold} %s" % (girl.fullname, plus_text(tip_gains[girl], "gold")), ttip=gold_ttip[girl], ttip_title="小费总计(%s)" % (girl.fullname))
         else:
             girl = girls[0]
-            change_log.add("Tip: {image=img_gold_20} %s" % plus_text(tip_gains[girl], "gold"), "header", ttip=gold_ttip[girl], ttip_title="Total tip")
+            change_log.add("小费: {image=img_gold_20} %s" % plus_text(tip_gains[girl], "gold"), "header", ttip=gold_ttip[girl], ttip_title="小费总计")
 
         if ignore_budget:
-            change_log.add("Customer budget: Unlimited", ttip=budget_ttip, ttip_title="Customer budget")
+            change_log.add("顾客的预算: 无上限", ttip=budget_ttip, ttip_title="顾客的预算")
         else:
             if sum(tip_gains.values()) >= total_budget:
                 budget_ttip += " (maxed)"
-            change_log.add("Customer budget: %s" % str(initial_budget), ttip=budget_ttip, ttip_title="Customer budget")
+            change_log.add("顾客的预算: %s金币" % str(initial_budget), ttip=budget_ttip, ttip_title="顾客的预算")
 
 
         ## STEP 8: Apply Changes
@@ -2311,7 +2311,7 @@ init -3 python:
             customers[0].gender = "M" # Rapists are always males to avoid complications
 
         if item_used:
-            text_descript += "\nShe used " + item_used.name.lower() + " to improve the mood."
+            text_descript += "\n她使用了" + item_used.name.lower() + "来取悦自己。"
 
         for spe in specials:
             try:
@@ -2358,7 +2358,7 @@ init -3 python:
             elif act in all_sex_acts:
                 job_ttip = list_text([(girl_related_dict[a.capitalize()] + " " + str(girl.job_level[a]) + " {image=img_star}") for a in all_sex_acts])
 
-            change_log.add("%s 属性变化" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个%i级的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
+            change_log.add("%s的变化" % girl.fullname, "header", ttip_title=girl.fullname, ttip = "%s 是一个%i级的%s。\n\n%s" % (girl.name, girl.level, girl_related_dict[girl.job], job_ttip))
 
             if level_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2370,7 +2370,7 @@ init -3 python:
 
                 change_log.add("等级提升", col="good", ttip = girl.fullname + " 准备升级 (%i -> %i)" % (girl.level, girl.level+1))
 
-            change_log.add("{color=[c_lightgreen]}XP{/color}: %i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "Experience")
+            change_log.add("{color=[c_lightgreen]}经验{/color}: %i/%i (%s)" % (girl.xp, girl.get_xp_cap(), plus_text(int(xp_gains[girl]), color_scheme = "xp")), ttip=xp_ttip[girl], ttip_title = "Experience")
 
             if job_up[girl]:
                 ev_type = "Level/Job/Rank up"
@@ -2382,7 +2382,7 @@ init -3 python:
 
                 change_log.add("工作技能等级提升", "header", col=c_orange)
 
-            change_log.add("{color=[c_orange]}JP{/color}: %i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "Job points")
+            change_log.add("{color=[c_orange]}工作经验{/color}: %i/%i (%s)" % (girl.jp[act], girl.get_jp_cap(act), plus_text(int(jp_gains[girl]), color_scheme = "jp")), ttip=jp_ttip[girl], ttip_title = "Job points")
 
             if girl.ready_to_rank():
                 ev_type = "Level/Job/Rank up"
@@ -2398,14 +2398,14 @@ init -3 python:
         # text_changes += stat_increase_dict["jp"] % str(round_int(jp_gains[girls[0]]))
 
             if rep_gains[girl] > 0:
-                change_log.add("{color=[c_softpurple]}Reputation{/color}: %i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "Girl reputation")
+                change_log.add("{color=[c_softpurple]}名声{/color}: %i/%i (%s)" % (girl.rep, girl.get_rep_cap(), plus_text(rep_gains[girl], color_scheme = "rep", decimals=1)), ttip=rep_ttip[girl], ttip_title = "Girl reputation")
 
             change_log = get_log_changes(girl, change_log, stat_gains[girl], act)
 
-            change_log.add("Energy: {color=%s}%i{/color}/%i (%s)" % (girl.get_energy_color(), girl.energy, girl.get_stat_max("energy"), event_color["bad"] % str_dec(tired_changes[girl], 1)), ttip=girl.get_energy_ttip(), ttip_title = "Energy", before_separator="\n")
+            change_log.add("精力: {color=%s}%i{/color}/%i (%s)" % (girl.get_energy_color(), girl.energy, girl.get_stat_max("energy"), event_color["bad"] % str_dec(tired_changes[girl], 1)), ttip=girl.get_energy_ttip(), ttip_title = "Energy", before_separator="\n")
 
         if dirt_change:
-            change_log.add("Dirt: {color=%s}%s{/color}" % (c_lightred, plus_text(dirt_change)), ttip=maintenance_desc[brothel.get_cleanliness()], ttip_title = "Dirt", before_separator="\n")
+            change_log.add("脏污: {color=%s}%s{/color}" % (c_lightred, plus_text(dirt_change)), ttip=maintenance_desc[brothel.get_cleanliness()], ttip_title = "Dirt", before_separator="\n")
             log.dirt += dirt_change
             # debug_dirt_log.append([girls, dirt_change])
 
@@ -2518,7 +2518,7 @@ init -3 python:
 
 
                     elif d == 2: # Libido
-                        text1 = __("A horny customer started undressing in the middle of the ") + __(job_room_dict[girl.job]) + __(". He dared %s to do the same.") % girl.name
+                        text1 = __("A horny customer started undressing in the middle of the ") + location_name_dict[job_room_dict[girl.job]] + __(". He dared %s to do the same.") % girl.name
 
                         r = girl.get_stat("libido") - dice(250)
 
@@ -3920,7 +3920,7 @@ init -3 python:
 
         global mod_traceback
 
-        mod_traceback += "更新MODS中... "
+        mod_traceback += "更新Mod中... "
 
         # Checks if existing/active mods have been disabled
 
@@ -3944,18 +3944,18 @@ init -3 python:
 
             if name not in persistent.mods.keys():
                 register_mod(mod)
-                renpy.notify(mod.full_name + " has been added.")
+                renpy.notify(mod.full_name + "已添加。")
 
-                mod_traceback += "\n" + "Mod: " + name + " has been added."
+                mod_traceback += "\n" + "MOD: " + name + "已添加。"
 
             # Finding new version (basic checks: version number and events lenght)
 
             elif mod.check_for_updates():
 #                renpy.call_screen("OK_screen", title = mod.name + ": new version found", message = "A different version of this mod: " + mod.name + " has been found ([[mod.version]]). The mod has been reset.")
                 register_mod(mod)
-                renpy.notify(mod.full_name + " has been updated.")
+                renpy.notify(mod.full_name + "已更新。")
                 mod.active = True
-                mod_traceback += "\n" + "Mod: " + name + " has been updated."
+                mod_traceback += "\n" + "Mod: " + name + "已更新。"
 
             # Activating mod if it exists
 
@@ -3963,7 +3963,7 @@ init -3 python:
                 mod.active = True
 #                if debug_mode:
 #                    renpy.notify(mod.full_name + " has been activated.")
-                mod_traceback += "\n" + "Mod: " + name + " has been activated."
+                mod_traceback += "\n" + "Mod: " + name + "已激活。"
 
         # persistent.mods should now be updated to reflect all currently available mods
 
@@ -3973,7 +3973,7 @@ init -3 python:
 
         persistent.mods[mod.name] = {"version" : mod.version, "check" : mod.get_check(), "active" : mod.active}
 
-        mod_traceback += "\n" + "Mod: " + mod.name + " has been registered."
+        mod_traceback += "\n" + "Mod: " + mod.name + "已注册。"
 
 #     def reset_mod(mod): # No longer required
 

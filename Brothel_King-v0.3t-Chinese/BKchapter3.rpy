@@ -878,7 +878,7 @@ label c3_hint(npc, ninja):
 
             satella "They're all a bunch of hopeless losers."
 
-            if MC.playerclass == "Wizard":
+            if MC.playerclass == "法师":
                 you "Well... Thanks."
             else:
                 you "Ha! That's what I think, too."
@@ -1675,7 +1675,7 @@ label c3_unlock_narika():
 
     suzume "Nope. The Zanic Magic Guild remained neutral during the change of dynasty 25 years ago. They waited until power was well into the hands of the Pharo dynasty to begrudgingly declare allegiance."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "It's nothing personal, wizards are not supposed to meddle in regime change. Too many bad precedents."
     else:
         you "An abundance of caution, eh? So much for scheming wizards."
@@ -2285,7 +2285,7 @@ label c3_homura_visit(): # Happens after tying the ribbon in the plaza
 
         homura sad "My ears are ringing, though... There's something odd about this place."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Ah yes, you noticed. The walls are infused with ancient magic."
 
             you "It normally only affects people with elemental affinity, though. You may be experiencing some kind of magic resonance. Do you have magical affinity?"
@@ -3791,9 +3791,9 @@ label c3_narika_MU_visit():
 
                 you "Did the Dean mention us specifically? You could have mistaken us with someone else..."
 
-                $ desc = {"Warrior": "A big dullard with a large sword, battered armor and a vacant stare, displaying the grace and sense of a drunken troll.",
-                            "Wizard": "A snooty know-it-all in a tattered robe adorned with rough patches and stains of questionable origin. You will struggle and fail not to roll your eyes at him when he speaks.",
-                            "Trader": "A shifty scoundrel with the subtlety of a horny alley cat, more likely to break into drunken slumber than into a vault full of gold."
+                $ desc = {"战士": "A big dullard with a large sword, battered armor and a vacant stare, displaying the grace and sense of a drunken troll.",
+                            "法师": "A snooty know-it-all in a tattered robe adorned with rough patches and stains of questionable origin. You will struggle and fail not to roll your eyes at him when he speaks.",
+                            "商人": "A shifty scoundrel with the subtlety of a horny alley cat, more likely to break into drunken slumber than into a vault full of gold."
                             }[MC.playerclass]
 
                 receptionist "No, she mentioned you precisely. '[desc]' He is followed by a pink-haired slave girl who smells of cleaning products."
@@ -4011,9 +4011,9 @@ label c3_narika_MU_visit():
 
                 receptionist "Do you even have any magical affinity?"
 
-                if MC.playerclass == "Wizard" or MC.spirit >= 5:
+                if MC.playerclass == "法师" or MC.spirit >= 5:
 
-                    if MC.playerclass == "Wizard":
+                    if MC.playerclass == "法师":
 
                         you "Of course! I'm a trained wizard. I'm far above your puny level."
 
@@ -4484,7 +4484,7 @@ label c3_narika_MU_class():
 
         scene black with fade
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Phew, I almost died of boredom in there... I had forgotten how much non-Euclydian geometry and linguistics of the Great old ones you need to cram before you can summon a simple eldritch hamster."
 
         else:
@@ -5242,7 +5242,7 @@ label c3_narika_MU_class():
 
         you "Yes. Today, I will check the Dean's floor. Narika's probably been snooping around Shizuka's office."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             play sound s_spell
 
             "You cast a discretion spell on yourself. You'll try poking your nose inside the dean's office to see if there is anything fishy."
@@ -7697,7 +7697,7 @@ label narika_break_test():
             $ notify("Narika has now trained sufficiently as a dancer.")
 
         if NPC_narika.flags[girl.job + " counter"] <= 4:
-            $ notify("Narika trained with %s as a %s (%i/4)." % (girl.name, girl.job, NPC_narika.flags[girl.job + " counter"]), pic="side narika blush")
+            $ notify("Narika trained with %s as a %s (%i/4)." % (girl.name, girl_related_dict[girl.job], NPC_narika.flags[girl.job + " counter"]), pic="side narika blush")
             
     else:
         $ notify("Narika couldn't help any girls in the brothel with their job.", pic="side narika blush", col=c_lightred)
@@ -8320,13 +8320,13 @@ label narika_geisha():
 
     narika "N-No, stop it! I will call my... My boss..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         "Ruffian" "What, that loser, the old washed-up veteran? I can take ten guys like him any day! I bet he's never even been in a real fight."
         $ s = s_punch
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         "Ruffian" "That effeminate loser with his robes and his walking stick? You think I'm scared of the tacky magic tricks he uses to impress the simple-minded morons?"
         $ s = s_fire
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         "Ruffian" "What, that chatty braggart and his pet lizard? He reminds me of a loser kid I was bullying, I pushed him down into the latrines and nailed his pet to the door..."
         $ s = s_roar
 
@@ -8340,17 +8340,17 @@ label narika_geisha():
 
     you "Get your filthy hands of my girl. The sign says 'NO TOUCHING'..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         play sound s_punch
         "*PUNCH*" with vpunch
         "Ruffian" "Ouch!!!"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         play sound s_fire
         "*BLAST*" with flash
         "Ruffian" "Aaaarh!!!"
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         play sound s_roar
         "*ROAR*" with vpunch
         "Ruffian" "G-G-Get that thing away from me!!!"
@@ -10041,7 +10041,7 @@ label c3_haruka_guards_success():
 
     hound_knight "And the walls in this part of the Prison were rebuilt from Cimerian ruins, and still infused with powerful antimagic runes. Her spells are no use down here."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "(So that's why I've been feeling strangely light-headed... Magic is useless here. Better make note of that.)"
 
     you "Does she talk?"
@@ -10790,13 +10790,13 @@ label c3_haruka_sewers(): # OK
 
     "In spite of your efforts, you feel slow and clumsy, compared to the Kunoichi who seem to glide effortlessly into the night, silent as ghosts."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         "Your experience fighting Elven scouts in the dark forests of the Holy Lands taught you a lot about sneaking though, so you manage to follow, not too far behind."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         "You cast a noise reduction spell on yourself, allowing you to move faster to keep up with the girls."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         "As someone with a lot of experience thieving, you know enough about sneaking to follow cautiously. Besides, you have an ace up your sleeve."
 
         "Looking up, you see a dark silhouette gliding silently dozens of feet above the streets. It's your pet dragon, keeping an eye on your prey for you."
@@ -11233,11 +11233,11 @@ label c3_haruka_rescue():
 
     # $ diff = 5
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         "Clutching your sword, you empty your mind, ready to enter the fray."
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         "Unable to use your spells, you are at a serious disadvantage. You will have to think quick."
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         play sound s_roar
         drogon "*ROAR*"
         "A loud roar echoes through the corridors. You know your pet dragon has been following you the whole time, and he is now rushing to help."
@@ -11257,14 +11257,14 @@ label c3_haruka_rescue():
 
     "The first Noroi comes clawing at you, mistaking you for an easy target."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         play sound s_sheath
 
         # add slicing
 
         "Your blade slashes through him like butter, and he gives you a dumbfounded look as his body is sliced cleanly in halves."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         play sound s_punch
 
         "Reduced to using your staff as a mace, you hit the charging demon in the face, eliciting a painful grunt."
@@ -11275,7 +11275,7 @@ label c3_haruka_rescue():
 
         hide n1 with pixellate
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         play sound s_roar
         "His cry of triumph becomes a scream as Drogon swoops in and locks his neck between his jaws, crushing it."
 

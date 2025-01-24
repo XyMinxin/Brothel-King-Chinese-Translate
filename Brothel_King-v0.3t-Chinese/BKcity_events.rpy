@@ -40,7 +40,7 @@ label city_rape:
 
     # Challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight it", "fight", selected_district.rank), ("Banish it", "control", selected_district.rank)], cancel=("Run away", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("与它战斗", "fight", selected_district.rank), ("使用消除咒", "control", selected_district.rank)], cancel=("掉头就跑", False))
 
     if chal == "fight":
         $ norollback()
@@ -457,7 +457,7 @@ label city_impress:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Show off", "stamina", 4), ("Flirt with the girls", "charm", 4)], cancel=("Ignore them", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("展现魅力", "stamina", 4), ("夸夸其谈", "charm", 4)], cancel=("无视她们", False))
     hide screen tool
 
     if chal == "stamina":
@@ -924,7 +924,7 @@ label city_slave:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Talk to her", "rally", 4), ("Hypnotize her", "control", 3)], cancel=("Not my concern", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("和她聊聊", "rally", 4), ("施放催眠咒", "control", 3)], cancel=("不关我事", False))
     hide screen tool
 
     if chal == "rally":
@@ -1568,7 +1568,7 @@ label city_gamble:
 
             # Pick challenge
             $ tt = show_tt("top_right")
-            $ chal = renpy.call_screen("challenge_menu", challenges=[("Call her out", "bluff", selected_district.rank + 2), ("Cheat", "cast", selected_district.rank+3)], cancel=("Cut your losses", False))
+            $ chal = renpy.call_screen("challenge_menu", challenges=[("骗她出去", "bluff", selected_district.rank + 2), ("用魔法作弊", "cast", selected_district.rank+3)], cancel=("及时止损", False))
             hide screen tool
 
             if chal == "bluff":
@@ -1907,7 +1907,7 @@ label city_thief:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Run after the thief", "stamina", selected_district.rank + 3), ("Ensnare the thief", "cast", selected_district.rank + 3)], cancel=("Ignore her", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("追赶小偷", "stamina", selected_district.rank + 3), ("诱捕小偷", "cast", selected_district.rank + 3)], cancel=("不闻不问", False))
     hide screen tool
 
     if chal == "stamina":
@@ -2078,7 +2078,7 @@ label city_wrestle:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Face him", "force", selected_district.rank + 3), ("Use your wits", "bluff", selected_district.rank+2)], cancel=("Ignore him", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("那就来吧", "force", selected_district.rank + 3), ("运用智慧", "bluff", selected_district.rank+2)], cancel=("无视他", False))
     hide screen tool
 
     if chal == "force":
@@ -2329,7 +2329,7 @@ label city_cat:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Look for her cat", "charm", selected_district.rank + 3), ("Track it with a spell", "detect", selected_district.rank+3)], cancel=("Leave her alone", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("帮她找猫", "charm", selected_district.rank + 3), ("用魔法追踪", "detect", selected_district.rank+3)], cancel=("丢下她不管", False))
     hide screen tool
 
     if chal == "charm":
@@ -2869,7 +2869,7 @@ label city_secret:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Force the door open", "force", selected_district.rank + 3), ("Reveal with magic", "detect", selected_district.rank+3)], cancel=("Walk away", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("用力踹墙", "force", selected_district.rank + 3), ("施放显形咒", "detect", selected_district.rank+3)], cancel=("离开这里", False))
     hide screen tool
 
 
@@ -3102,19 +3102,19 @@ label city_gypsy:
     show image gypsy at center
     with dissolve
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         $ nickname = "猛男"
 
         $ nickname_l = "猛男"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         $ nickname = "怪胎"
 
         $ nickname_l = "怪胎"
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
 
         $ nickname = "开心果"
 
@@ -3146,7 +3146,7 @@ label city_gypsy:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fix the wagon", "force", selected_district.rank + 3), ("Bring some customers", "rally", selected_district.rank+3)], cancel=("Decline to help", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("修复马车", "force", selected_district.rank + 3), ("招揽顾客", "rally", selected_district.rank+3)], cancel=("拒绝帮助", False))
     hide screen tool
 
     if chal == "force":
@@ -3515,7 +3515,7 @@ label city_rob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Defend yourself", "fight", girl_def), ("Charm her", "charm", girl_def)], cancel=("Give her some gold", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("正当防卫", "fight", girl_def), ("说点好话", "charm", girl_def)], cancel=("破财消灾", False))
     hide screen tool
 
     if chal == "fight":
@@ -3939,7 +3939,7 @@ label city_ambush:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Fight back", "fight", ambush_attack), ("Cast a spell", "cast", ambush_attack+1)], cancel=("Run for your life", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("重拳出击", "fight", ambush_attack), ("吟唱咒语", "cast", ambush_attack+1)], cancel=("小命要紧", False))
     hide screen tool
 
     if chal == "fight":
@@ -4303,7 +4303,7 @@ label city_mob:
 
     # Pick challenge
     $ tt = show_tt("top_right")
-    $ chal = renpy.call_screen("challenge_menu", challenges=[("Cast a control spell", "control", mob_power), ("Make a speech", "rally", mob_power)], cancel=("Divert attention with gold", False))
+    $ chal = renpy.call_screen("challenge_menu", challenges=[("施放控心咒", "control", mob_power), ("即兴演讲", "rally", mob_power)], cancel=("甩出金币吸引注意力", False))
     hide screen tool
 
     if chal == "control":
@@ -4599,7 +4599,7 @@ label city_gossip(gossip=None):
 
     $ loc = selected_location.name.lower()
 
-    $ text1 = rand_choice(("一些有趣的八卦", "令人不安的谣言", "一个令人好奇的故事", "一个有趣的传说", "一句人生格言"),)
+    $ text1 = rand_choice(("一些有趣的八卦", "令人不安的谣言", "一个令人好奇的故事", "一个有趣的传说", "一句闲聊"),)
 
     $ actor = article(__(selected_district.get_rand_pop().get_rand_name()))
 

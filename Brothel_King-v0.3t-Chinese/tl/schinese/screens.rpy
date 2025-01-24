@@ -192,7 +192,7 @@ translate schinese strings:
 
     # game/screens.rpy:1107
     old "Display"
-    new "Display"
+    new "游戏画面"
 
     # game/screens.rpy:1108
     old "Window"

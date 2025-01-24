@@ -243,9 +243,9 @@ init python:
 
                             "Main Character information" : "Your character is first defined by his class (Warrior, Wizard or Rogue trader).\n\nYour class determines your available spells and your starting level in each of the four Main Character skills: strength, spirit, charisma and speed. All skills can reach a maximum of 10 (before bonuses), regardless of your class.\n\nYou are currently level [MC.level]/25. You can level up with prestige. Each new level will grant you a skill point which you may use to boost your skills.\n\nFinally, you can find information about your beliefs (set at character creation) and alignment (determined by your actions in and out of the brothel).",
 
-                            "Warrior" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
-                            "Wizard" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
-                            "Rogue trader" : "The {b}Rogue trader{/b} is one of the three Main Character classes. He is good at bartering and trading favorably, and has learned the skills to survive in the mean streets of Borgo, even acquiring a $fearsome baby dragon as his protector. As he would rather sell books than read them, he is not very good with magic, though.\n\nMain skill: charisma.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "战士" : "The {b}Warrior{/b} is one of the three Main Character classes. The warrior is a skilled fighter with a tough spirit, having fought in the Holy War. His social skills are a bit lacking, though.\n\nMain skill: strength.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "法师" : "The {b}Wizard{/b} is one of the three Main Character classes. Trained at the famous magic academy of Karkyr, the wizard is skilled in spellcasting, with some wits to match. Don't get him into close combat, though, it's not his forte.\n\nMain skill: spirit.{i}See also:{/i} Warrior, Wizard, Rogue trader.",
+                            "商人" : "The {b}Rogue trader{/b} is one of the three Main Character classes. He is good at bartering and trading favorably, and has learned the skills to survive in the mean streets of Borgo, even acquiring a $fearsome baby dragon as his protector. As he would rather sell books than read them, he is not very good with magic, though.\n\nMain skill: charisma.\n\n{i}See also:{/i} Warrior, Wizard, Rogue trader.",
 
                             "strength" : "{b}Strength{/b} is one of the four Main Character skills. It affects how well you perform physical tasks and hold your own in close combat.\n\nWhenever you have unspent *AP at the end of the day, Strength gives a free boost to your brothel security and may twart negative outcomes from security events and runaway attempts.\n\nYou may use skill points to increase your strength, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
                             "spirit" : "{b}Spirit{/b} is one of the four Main Character skills. It affects how well you can sense magic and cast spells.\n\nSpirit increases your available mana to cast spells, and helps with hypnotic training.\n\nYou may use skill points to increase your spirit, up to a maximum of 10.\n\n{i}See also:{/i} strength, spirit, charisma, speed.",
@@ -594,146 +594,6 @@ label help(scr):
     else:
         $ renpy.call(r)
 
-    # menu:
-    #
-    #     sill "How can I help you?"
-    #
-    #     "Help with the current screen":
-    #
-    #         $ renpy.call("help_" + scr)
-    #
-    #         if scr != "main":
-    #
-    #             "You can exit this screen by right-clicking or using the 'back' button."
-    #
-    #     "Tell me about night events" if scr == "main":
-    #
-    #         call help_night_events from _call_help_night_events
-    #
-    #     "How to win":
-    #         call help_how_to_win from _call_help_how_to_win
-    #
-    #     "Replay last achievements":
-    #         show screen achievement_notification(latest_achievements, replay=True)
-    #
-    #
-    #
-    #     "Cheat menu - Main Screen only" if (game.cheats and scr == "main") or debug_mode:
-    #         call cheat_menu from _call_cheat_menu
-    #
-    #     "Activate cheats (disable achievements)" if not game.cheats and not debug_mode:
-    #         $ game.activate_cheats()
-    #         "Cheats are only available from the {b}main screen{/b} to avoid unexpected crashes."
-    #
-    #     "Mods" if game.active_mods:
-    #
-    #         label mod_menu():
-    #
-    #             python:
-    #                 menu_list = []
-    #
-    #                 for mod in game.active_mods.values():
-    #                     if mod.help_prompts: # Where 'help_prompts' is a list of tuples: (text, target_label)
-    #                         menu_list += mod.help_prompts
-    #
-    #             if menu_list:
-    #                 $ menu_list.append(("Cancel", "back"))
-    #
-    #                 $ target_label = menu(menu_list)
-    #
-    #                 if target_label != "back":
-    #                     call expression target_label from _call_expression
-    #                 else:
-    #                     return
-    #
-    #             else:
-    #                 "There are no active mods for this game, or the mods do not provide options."
-    #
-    #             jump mod_menu
-    #
-    #
-    #     "Picture management":
-    #         menu:
-    #             "Choose an option"
-    #
-    #             "Manage ignored pictures":
-    #                 $ nb = len(persistent.pic_ignore_list)
-    #                 "You can ask the game to IGNORE a girlpack's specific picture by hitting the 'DELETE' key when it is displayed.\n[nb] picture(s) are currently ignored."
-    #
-    #                 menu:
-    #                     "Pictures will be removed from the picture set on restart or using the refresh option below."
-    #
-    #                     "Refresh pictures":
-    #                         python:
-    #                             globalFilesDict.reload_files()
-    #                             for girl in game.get_all_girls():
-    #                                 girl.load_pics()
-    #                                 girl.refresh_pictures()
-    #                                 girl.create_char()
-    #                     "Edit ignored pictures":
-    #                         $ fil = "" # renpy.input("Picture path contains\n(leave empty to see all):")
-    #
-    #                         label edit_ignored:
-    #                             $ menu_options = [(path, path) for path in persistent.pic_ignore_list if fil in path] + [("Cancel", "back")]
-    #                             $ r = long_menu("Select picture to remove from set", menu_options, limit=9)
-    #
-    #                             if r != "back":
-    #                                 if renpy.call_screen("yes_no", "Do you want to remove this picture from the 'IGNORE' list?"):
-    #                                     $ toggle_ignore_pic(r)
-    #                                     jump edit_ignored
-    #                     "Clear ignored pictures":
-    #                         if renpy.call_screen("yes_no", "This will reset the 'IGNORE' list and restore all girl packs to default. Would you like to proceed?"):
-    #                             $ persistent.pic_ignore_list = []
-    #                     "Print list of ignored pictures to file":
-    #                         if renpy.call_screen("yes_no", "This will create a file named 'ignored_pictures.txt' in your 'game/' directory containing the list of ignored pictures so that you can edit or delete them. Would you like to proceed?"):
-    #                             $ print_ignore_list()
-    #                     "Cancel":
-    #                         pass
-    #
-    #             "Repair girl/MC pictures": #! Broken
-    #                 if renpy.call_screen("yes_no", "This will reset all girl and MC pictures (useful if you changed some pictures or renamed them). Would you like to proceed?"):
-    #
-    #                     python:
-    #                         missing_girls = []
-    #                         for girl in game.get_all_girls():
-    #                             if girl.update_files():
-    #                                 girl.load_pics()
-    #                                 girl.refresh_pictures()
-    #                                 girl.create_char()
-    #                             else: # Existing girls will be removed if their files cannot be found
-    #                                 missing_girls.append(girl)
-    #
-    #                         MC.load_pics()
-    #
-    #                     if missing_girls:
-    #                         if renpy.call_screen("yes_no", "All files are missing for " + and_text([g.path for g in missing_girls]) + ". Do you want to erase all girls with these templates from the game (you might run into bugs otherwise)?"):
-    #                             python:
-    #                                 for girl in missing_girls:
-    #                                     for glist in (MC.girls, slavemarket.girls, game.free_girls, MC.escaped_girls, farm.girls):
-    #                                         if girl in glist:
-    #                                             glist.remove(girl)
-    #
-    #                         elif renpy.call_screen("yes_no", "All files are missing for " + and_text([g.path for g in missing_girls]) + ". Do you want to replace their profile and portrait pictures with stock pictures? (debugging only)"):
-    #                             python:
-    #                                 for girl in missing_girls:
-    #                                     girl.refresh_pictures(force_default=True)
-    #                                     girl.create_char()
-    #
-    #                         $ cycle_free_girls() # Only cycle free girls if there are missing girls
-    #
-    #                     $ rating_dict = defaultdict(dict)
-    #
-    #
-    #
-    #
-    #     "More about this game":
-    #
-    #         call help_about_game from _call_help_about_game
-    #
-    #
-    #     "Never mind":
-    #         $ r = False
-    #         return
 
     return
 
@@ -786,19 +646,19 @@ label help_MC():
 
             sill "First, let me tell you about your character class. Your class affects events in the game, your available spells and starting skills."
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
 
                 sill "You are a warrior, a skilled fighter with a tough spirit. Your social skills are a bit lacking, though, if I may say so."
 
                 you "Grumph."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
 
                 sill "You are a wizard, skilled in spellcasting and with some wits to match. Don't get into close combat, though, this is not your style."
 
                 you "I wouldn't want my hands to get dirty anyway. What with this expensive manicure I just got."
 
-            elif MC.playerclass == "Trader":
+            elif MC.playerclass == "商人":
 
                 sill "You are good at barter and trade, and have learned the skills to survive in the streets. Magic is not your forte, however."
 
@@ -1892,7 +1752,7 @@ label help_farm_menu():
     menu:
         gizel "What do you want to know, then?"
 
-        "Tell me about the farm":
+        "介绍一下奴隶农场":
 
             gizel "You can send girls here at the {b}farm{/b}, where they will remain in my care for a fixed duration, or until you want them back."
 
@@ -1902,7 +1762,7 @@ label help_farm_menu():
 
             "You can use the shortcuts to sort your girls by name, level or rank (right-click on a sort method to sort backwards)."
 
-        "Tell me about pens and facilities":
+        "介绍一下地牢和设施":
 
             gizel normal "Certainly. {b}Pens{/b} are where your girls are being kept while they are at the farm. {b}Facilities{/b} are where I host my beloved minions."
 
@@ -1921,7 +1781,7 @@ label help_farm_menu():
             else:
                 extend " We can develop the farm further if you obtain a higher brothel license and some protection in high places."
 
-        "Tell me about minions and facilities":
+        "介绍一下设施里的仆从":
 
             gizel smirk "Ah, the minions! My little babies, my loves..."
 
@@ -1979,7 +1839,7 @@ label help_farm_menu():
 
             gizel "Finally, you should note that for {b}group sex training{/b}, I'll need more than one minion of the same type. But that's obvious, right?"
 
-        "Tell me about girl training and rules":
+        "介绍一下女孩训练的规则":
 
             gizel normal "Right, let's get to the main reason we're here. {b}Training{/b}."
 
@@ -2016,7 +1876,7 @@ label help_farm_menu():
 
 #             gizel smirk "Of course, you're free not to set any condition, and keep a girl at the farm indefinitely. I have many {i}ways{/i} to keep the slaves entertained, don't you worry..."
 
-        "Go back":
+        "返 回":
             return
 
     jump help_farm_menu
@@ -2554,7 +2414,7 @@ label cheat_menu():
                         call show_night_event(ev) from _call_show_night_event_4
 
                 "Change brothel reputation":
-                    $ brothel.rep = int(renpy.input("Brothel reputation", default = brothel.rep))
+                    $ brothel.rep = int(renpy.input("青楼名声增加", default = brothel.rep))
 
                 "Refresh slave market":
                     $ update_slaves()
@@ -2570,13 +2430,13 @@ label cheat_menu():
 
                 "Skip time":
 
-                    $ t = int(renpy.input("How many days do you want to skip", default = 1))
+                    $ t = int(renpy.input("你想要跳过几日？", default = 1))
 
                     $ calendar.newday(t)
 
                 "Advance to chapter":
 
-                    $ c = int(renpy.input("Advance to chapter", default = game.chapter + 1))
+                    $ c = int(renpy.input("跳转到章节", default = game.chapter + 1))
 
                     $ renpy.call("advance_to_chapter", c, silent=True, free=True, start=True)
 
@@ -2590,22 +2450,22 @@ label cheat_menu():
 
                         "Raise gold":
                             $ _type = "gold"
-                            $ val = int(renpy.input("How much gold will you need?", default = 2500))
+                            $ val = int(renpy.input("你想要多少金币？", default = 2500))
                             $ target = 0
 
                         "Rank up your girls":
                             $ _type = "ranked"
-                            $ val = int(renpy.input("Which rank will they need to reach?", default = 2))
+                            $ val = int(renpy.input("你想要升到哪一阶？", default = 2))
                             $ target = renpy.input("How many girls will need to reach that rank?", default = 4)
 
                         "Raise brothel reputation":
                             $ _type = "reputation"
-                            $ val = int(renpy.input("How much reputation will you need to get?", default = 250))
+                            $ val = int(renpy.input("你需要增加多少青楼的名声？", default = 250))
                             $ target = 0
 
                         "Raise player prestige":
                             $ _type = "prestige"
-                            $ val = int(renpy.input("How much prestige will you need to collect?", default = 1000))
+                            $ val = int(renpy.input("你需要增加多少主角的声望？", default = 1000))
                             $ target = 0
 
                     $ game.goals = (Goal(_type, val, target, channel="advance"),)
@@ -2645,7 +2505,7 @@ label cheat_menu():
 
                 "Get resources":
                     python:
-                        nb = int(renpy.input("How many?", 50))
+                        nb = int(renpy.input("你需要多少个单位的资源？", 50))
                         for resource in build_resources:
                             MC.gain_resource(resource, nb, message=False)
 
@@ -2657,7 +2517,7 @@ label cheat_menu():
 
             return
 
-        "Nothing":
+        "返回游戏":
 
             return
 

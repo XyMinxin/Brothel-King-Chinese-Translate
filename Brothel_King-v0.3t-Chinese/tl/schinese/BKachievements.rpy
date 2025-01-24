@@ -784,7 +784,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Make %s denars in a single night."
-    new "一夜之间赚取了 %s 金币。"
+    new "一夜之间赚取%s金币。"
 
     # game/BKachievements.rpy:21
     old "WeWork"
@@ -1584,7 +1584,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Accumulate %s purple mojo."
-    new "积累 %s 紫色魔力"
+    new "积累 %s 紫色咒力"
 
     # game/BKachievements.rpy:21
     old "Dr. Greenthumb"
@@ -1592,7 +1592,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Accumulate %s green mojo."
-    new "积累 %s 绿色魔力。"
+    new "积累 %s 绿色咒力。"
 
     # game/BKachievements.rpy:21
     old "Blue Monday"
@@ -1600,7 +1600,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Accumulate %s blue mojo."
-    new "积累 %s 蓝色魔力。"
+    new "积累 %s 蓝色咒力。"
 
     # game/BKachievements.rpy:21
     old "Red Alert"
@@ -1608,7 +1608,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Accumulate %s red mojo."
-    new "积累 %s 红色魔力。"
+    new "积累 %s 红色咒力。"
 
     # game/BKachievements.rpy:21
     old "Yellow Fever"
@@ -1616,7 +1616,7 @@ translate schinese strings:
 
     # game/BKachievements.rpy:21
     old "Accumulate %s yellow mojo."
-    new "积累 %s 黄色魔力。"
+    new "积累 %s 黄色咒力。"
 
     # game/BKachievements.rpy:21
     old "Can't make an omelet..."

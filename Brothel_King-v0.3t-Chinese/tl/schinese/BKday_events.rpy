@@ -12340,7 +12340,7 @@ translate schinese strings:
 
     # game/BKday_events.rpy:2935
     old "[girl.name]'s [stat] skill has decreased a little."
-    new "[girl.name]的[stat]属性减少了一点点。"
+    new "[girl.name]的 stat_name_dict[[stat]] 属性下降了一些。"
 
     # game/BKday_events.rpy:7285
     old "Tell the customer to fuck [girl.name]'s ass"

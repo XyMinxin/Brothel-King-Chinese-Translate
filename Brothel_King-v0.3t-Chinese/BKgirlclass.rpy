@@ -180,7 +180,7 @@ init -2 python:
             self.generate_personality(personality)
 
             t2 = time.perf_counter()
-            game.func_time_log2 += "\npersonality: %s" % (t2 - t1)
+            game.func_time_log2 += "\n个性: %s" % (t2 - t1)
 
             t3 = self.generate_background(t2)
 
@@ -190,7 +190,7 @@ init -2 python:
             self.generate_stats()
 
             t4 = time.perf_counter()
-            game.func_time_log2 += "\nstats: %s" % (t4 - t3)
+            game.func_time_log2 += "\n属性: %s" % (t4 - t3)
 
             # 4. TRAITS AND PERKS
 
@@ -201,7 +201,7 @@ init -2 python:
                     self.acquire_perk(perk, forced=True)
 
             t5 = time.perf_counter()
-            game.func_time_log2 += "\ntraits: %s" % (t5 - t4)
+            game.func_time_log2 += "\n特质: %s" % (t5 - t4)
 
             self.update_can_perk() # This is not checked dynamically for performance
 
@@ -229,17 +229,17 @@ init -2 python:
             self.refresh_pictures(silent=True)
 
             t7 = time.perf_counter()
-            game.func_time_log2 += "\nrefresh pictures: %s" % (t7 - t6)
+            game.func_time_log2 += "\n更新图片: %s" % (t7 - t6)
 
             # Creating girl character (for talking)
 
             self.create_char()
 
             t8 = time.perf_counter()
-            game.func_time_log2 += "\nchar creation: %s" % (t8 - t7)
+            game.func_time_log2 += "\n创建角色: %s" % (t8 - t7)
 
-            game.func_time_log2 += "\nend: %s" % t8
-            game.func_time_log2 += "\ntotal time: %s" % (t8 - t0)
+            game.func_time_log2 += "\n结束: %s" % t8
+            game.func_time_log2 += "\n消耗时长: %s" % (t8 - t0)
 
         ## Sanity (fuels evil farm powers before becoming broken) ##
         def init_sanity(self): # Sanity increases with rank and certain personality attributes
@@ -523,7 +523,7 @@ init -2 python:
         def refresh_pictures(self, force_default=False, silent=False): # Every girl folder MUST have at least one pic with the 'profile' tag to be displayed properly
 
             if not silent:
-                debug_notify("Refreshing pictures for %s" % self.fullname, pic=self.portrait)
+                debug_notify("重新加载%s的图片" % self.fullname, pic=self.portrait)
 
             if force_default:
                 self.portrait = get_pic(game, "portrait", "profile")
@@ -1482,47 +1482,61 @@ init -2 python:
         def update_upkeep_ratio(self):
             self.upkeep_ratio = (self.upkeep - self.get_med_upkeep())/float(self.rank)
 
+        def get_upkeep_threshold(self, step): # Only use integers from +5 to -5 as step values, or "min".
+            if step == "min":
+                return self.get_med_upkeep() // 4
+
+            base_value = {5 : 10, 4 : 8, 3 : 6, 2 : 4, 1 : 2, 0 : -2, -1 : -4, -2 : -6, -3 : -8, -4 : -10, -5 : -15}[step]
+
+            r = self.get_med_upkeep() + (base_value * self.rank * 2 ** self.rank)
+
+            if step <= 0: # To emulate the legacy switch from >= to >
+                r += 1
+            
+            return r
+
         def get_upkeep_modifier(self):
 
             m = self.get_med_upkeep()
 
-            if self.upkeep >= (m + 10 * self.rank * 2 ** self.rank):
+            if self.upkeep >= self.get_upkeep_threshold(5):
                 modifier = +5
 
-            elif self.upkeep >= (m + 8 * self.rank * 2 ** self.rank):
+            elif self.upkeep >= self.get_upkeep_threshold(4):
                 modifier = +4
 
-            elif self.upkeep >= (m + 6 * self.rank * 2 ** self.rank):
+            elif self.upkeep >= self.get_upkeep_threshold(3):
                 modifier = +3
 
-            elif self.upkeep >= (m + 4 * self.rank * 2 ** self.rank):
+            elif self.upkeep >= self.get_upkeep_threshold(2):
                 modifier = +2
 
-            elif self.upkeep >= (m + 2 * self.rank * 2 ** self.rank):
+            elif self.upkeep >= self.get_upkeep_threshold(1):
                 modifier = +1
 
-            # Higher mood penalties for negative upkeep
+            elif self.upkeep >= self.get_upkeep_threshold(0):
+                modifier = 0
 
-            elif self.upkeep <= (m - 15 * self.rank * 2 ** self.rank):
-                modifier = -20
-
-            elif self.upkeep <= (m - 10 * self.rank * 2 ** self.rank):
-                modifier = -10
-
-            elif self.upkeep <= (m - 8 * self.rank * 2 ** self.rank):
-                modifier = -8
-
-            elif self.upkeep <= (m - 6 * self.rank * 2 ** self.rank):
-                modifier = -4
-
-            elif self.upkeep <= (m - 4 * self.rank * 2 ** self.rank):
-                modifier = -2
-
-            elif self.upkeep <= (m - 2 * self.rank * 2 ** self.rank):
+            elif self.upkeep >= self.get_upkeep_threshold(-1):
                 modifier = -1
 
+            elif self.upkeep >= self.get_upkeep_threshold(-2):
+                modifier = -2
+
+            # Higher mood penalties incurred for very negative upkeep
+
+            elif self.upkeep >= self.get_upkeep_threshold(-3):
+                modifier = -4
+
+            elif self.upkeep >= self.get_upkeep_threshold(-4):
+                modifier = -8
+
+            elif self.upkeep >= self.get_upkeep_threshold(-5):
+                modifier = -12
+
             else:
-                modifier = 0
+                modifier = -20
+
 
             if modifier > 0:
                 modifier += self.get_effect("change", "positive upkeep mood modifier")
@@ -1530,6 +1544,24 @@ init -2 python:
                 modifier += self.get_effect("change", "negative upkeep mood modifier")
 
             return modifier
+
+        def get_next_upkeep_step(self):
+            m = self.get_upkeep_modifier()
+            step = {-20 : -6, -12 : -5, -8 : -4, -4 : -3, -2 : -2, -1 : -1, 0 : 0, 1 : 1, 2 : 2, 3 : 3, 4 : 4, 5 : 5}[m]
+            
+            if step < 5:
+                return self.get_upkeep_threshold(step + 1)
+            else:
+                return get_upkeep_threshold(5)
+
+        def get_previous_upkeep_step(self):
+            m = self.get_upkeep_modifier()
+            step = {-20 : -6, -12 : -5, -8 : -4, -4 : -3, -2 : -2, -1 : -1, 0 : 0, 1 : 1, 2 : 2, 3 : 3, 4 : 4, 5 : 5}[m]
+            
+            if step > -6:
+                return max(self.get_upkeep_threshold(step - 1), self.get_upkeep_threshold("min"))
+            else:
+                return self.get_upkeep_threshold("min")
 
 
 
@@ -1741,19 +1773,19 @@ init -2 python:
                 if e.target == self.likes["color"]:
                     score += 4
                     self.personality_unlock["fav_color"] = True
-                    renpy.say(self.char, "Oh, you remembered my favorite color! You're so considerate...")
+                    renpy.say(self.char, "哦，你还记得我最喜欢的颜色是什么!你真体贴...")
 
                 elif e.target == self.dislikes["color"]:
                     score += 0
                     self.personality_unlock["dis_color"] = True
-                    renpy.say(self.char, "Ah, em, thanks. You know, I don't like this color, but I appreciate the gesture.")
+                    renpy.say(self.char, "啊, 呃, 谢谢你。你知道吗，我不喜欢这种颜色, 但还是谢谢你的好意。")
 
                 else:
                     score += 2
-                    renpy.say(self.char, "Flowers! For me! Thank you...")
+                    renpy.say(self.char, "鲜花! 给我的吗! 谢谢你...")
 
                 if self.MC_relationship_level == 2:
-                    renpy.say(self.char, "This is very romantic... Was there something you wanted from me?")
+                    renpy.say(self.char, "这真是太浪漫了... 你想让我怎么奖励你呢？")
 
                     r = menu(items = (("Actually...", None), ("Ask her out", True), ("Never mind", False)))
 
@@ -1766,8 +1798,8 @@ init -2 python:
 
                     else:
                         norollback()
-                        renpy.say(you, "Hmm, no, not really.")
-                        renpy.say(self.char, "Oh... I see.")
+                        renpy.say(you, "哦, 不, 不会是真的吧。")
+                        renpy.say(self.char, "好吧... 我明白了。")
 
             elif potion:
                 if potion == "seduction":
@@ -1837,9 +1869,9 @@ init -2 python:
                     if self.will_do_anything():
                         return True
                     elif not silent:
-                        notify("No sex acts available for whoring", pic=self.portrait)
+                        notify("没有解锁可以提供的性服务", pic=self.portrait)
                 elif not silent:
-                    notify("Libido/Obedience too low", pic=self.portrait)
+                    notify("性欲/服从属性过低", pic=self.portrait)
                 return False
 
             else:
@@ -2269,9 +2301,9 @@ init -2 python:
 
             if "lost virginity" in specials:
                 tip += 100
-                gold_ttip = "Base tip: {image=img_gold}%i(Lost virginity: {image=img_gold}+100)\n" % tip
+                gold_ttip = "基础小费: {image=img_gold}%i(失去处女: {image=img_gold}+100)\n" % tip
             else:
-                gold_ttip = "Base tip: {image=img_gold}%i\n" % tip
+                gold_ttip = "基础小费: {image=img_gold}%i\n" % tip
 
             ## 2. Generic multipliers apply to the base tip ##
 
@@ -2280,24 +2312,24 @@ init -2 python:
             # Work tip is higher if the girl is naked
             if self.naked and act in all_jobs:
                 tip_multiplier *= tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus")
-                gold_ttip += "\nNaked bonus: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
+                gold_ttip += "\n裸体奖励: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
 
             if "bisexual" in specials:
                 tip_multiplier *= tip_act_modifier["bisexual bonus"]
-                gold_ttip += "\nBisexual bonus: %s" % tip_act_modifier["bisexual bonus"]
+                gold_ttip += "\n双飞奖励: %s" % tip_act_modifier["bisexual bonus"]
 
             # Group sex
             if act in all_sex_acts and len(customers) > 1:
                 tip_multiplier *= tip_act_modifier["group bonus"] * len(customers) #? As diff already increases base tip for groups, this might be too much of an advantage
-                gold_ttip += "\nGroup bonus: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
+                gold_ttip += "\n群交奖励: x%s" % percent_text(tip_act_modifier["naked bonus"] * self.get_effect("boost", "naked bonus"), False)
 
             # Result boost
             if act in all_jobs:
                 tip_multiplier *= tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip")
-                gold_ttip += "\nResult bonus: x%s" % percent_text(tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip"), False)
+                gold_ttip += "\n服务质量倍率: x%s" % percent_text(tip_result_modifier["job " + result] * self.get_effect("boost", result + " result tip"), False)
             else:
                 tip_multiplier *= tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip")
-                gold_ttip += "\nResult bonus: x%s" % percent_text(tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip"), False)
+                gold_ttip += "\n性体验倍率: x%s" % percent_text(tip_result_modifier["whore " + result] * self.get_effect("boost", result + " result tip"), False)
 
             ## 3. Perk multipliers and other special effects apply (additive) ##
 
@@ -2321,7 +2353,7 @@ init -2 python:
                 perk_tip_multiplier += self.get_effect("boost", "total tip", custom_scale=("whore cust nb", self.get_log("whore_cust", "today"))) - 1
 
             if perk_tip_multiplier != 1.0:
-                gold_ttip += "\nPerks and special effects: x%s" % percent_text(perk_tip_multiplier, False)
+                gold_ttip += "\n天赋与特殊效果加成: x%s" % percent_text(perk_tip_multiplier, False)
 
             tip_multiplier *= perk_tip_multiplier
 
@@ -2345,15 +2377,15 @@ init -2 python:
 
             tip += extra
             if extra:
-                gold_ttip += "\n\nExtra tip: {image=img_gold}%s" % plus_text(extra)
+                gold_ttip += "\n\n额外的小费: {image=img_gold}%s" % plus_text(extra)
                 if final_tip_change:
-                    gold_ttip += " (Five stars perk: {image=img_gold}%s" % plus_text(final_tip_change)
+                    gold_ttip += " (五星好评天赋: {image=img_gold}%s" % plus_text(final_tip_change)
 
             ## 5. Difficulty and cheat modifiers multiply everything ##
 
             # Difficulty/Cheats
             tip *= cheat_modifier["gold"] * game.get_diff_setting("gold")
-            gold_ttip += "\n\nDifficulty modifier: x%s" % percent_text(cheat_modifier["gold"] * game.get_diff_setting("gold"), False)
+            gold_ttip += "\n\n难度倍率: x%s" % percent_text(cheat_modifier["gold"] * game.get_diff_setting("gold"), False)
 
             # A final (unneeded) sanity check is applied
             tip = max(10, round_int(tip))
@@ -2426,15 +2458,15 @@ init -2 python:
             max_en = self.get_stat_max("energy")
 
             if self.energy >= 0.8 * max_en:
-                ttip = "She is well-rested."
+                ttip = "她精力充沛。"
             elif self.energy >= 0.6 * max_en:
-                ttip = "She is rested."
+                ttip = "她可以正常工作。"
             elif self.energy >= 0.4 * max_en:
-                ttip = "She is a little tired."
+                ttip = "她有点累了。"
             elif self.energy >= 0.2 * max_en:
-                ttip = "She is quite tired."
+                ttip = "她快要累趴下了。"
             else:
-                ttip = event_color["bad"] % "Warning! She is getting very tired."
+                ttip = event_color["bad"] % "警告!她要筋疲力尽了！"
 
             return ttip
 
@@ -2442,7 +2474,7 @@ init -2 python:
 
             # Frenzy effect
             if self.get_effect("special", "ignore energy"):
-                return "\n{color=[c_purple]}" + self.name + " is working tirelessly.{/color}", 0
+                return "\n{color=[c_purple]}" + self.name + "正在不知疲倦地工作。{/color}", 0
 
             chg = x * self.get_effect("boost", "tiredness") + self.get_effect("change", "tiredness")
 
@@ -2456,10 +2488,10 @@ init -2 python:
             text2 = plus_text(round_int(r), "standard")
 
             if _case == "exhausted":
-                text1 += "\n{color=[c_red]}" + self.name + " is too tired to continue working.{/color}"
+                text1 += "\n{color=[c_red]}" + self.name + "筋疲力尽，无法继续工作了。{/color}"
 
                 if self.hurt:
-                    text1 += "\n{color=[c_red]}" + " She has fallen sick and must rest for " + str(round_int(self.hurt)) + " days.{/color}"
+                    text1 += "\n{color=[c_red]}" + "她受伤了，必须修养" + str(round_int(self.hurt)) + "天。{/color}"
 
                 self.add_log("exhausted")
                 self.track_event("exhausted")
@@ -2470,7 +2502,7 @@ init -2 python:
         def get_hurt(self, x):
 
             if self.get_effect("special", "immune"):
-                notify("%s is immune to getting hurt." % self.name, pic=self.portrait)
+                notify("%s对物理伤害免疫。" % self.name, pic=self.portrait)
                 return 0
 
             chg = round(x * self.get_effect("boost", "hurt") + self.get_effect("change", "hurt") - self.get_effect("resist", "hurt"))
@@ -2485,7 +2517,7 @@ init -2 python:
             update_effects()
 
             if chg >= 1:
-                notify("%s is hurt for %i day%s." % (self.fullname, chg, plural(chg)), pic=self.portrait)
+                notify("%s需要修养%i天%s。" % (self.fullname, chg, plural(chg)), pic=self.portrait)
 
             return chg
 
@@ -2612,7 +2644,7 @@ init -2 python:
             else:
                 col = c_red
 
-            resting_changes.add("Energy: %s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
+            resting_changes.add("精力: %s/%i (%s)" % ("{color=%s}%i{/color}" % (col, self.energy), max_en, plus_text(r)), "header")
 
             if case == "recovered":
                 resting_changes.add("(fully rested)", "header", col="good", separator="\n")
@@ -3221,7 +3253,7 @@ init -2 python:
             else:
                 self.xp += change
 
-            if change and not silent: notify("XP: %s" % plus_text(change, color_scheme="xp"), pic=self.portrait) # Experimental
+            if change and not silent: notify("经验: %s" % plus_text(change, color_scheme="xp"), pic=self.portrait) # Experimental
 
             return change
 
@@ -3283,7 +3315,7 @@ init -2 python:
 
                     if self.level == 25:
                         self.perk_points += 3
-                        notify("Maximum level reached! +1 Perk Point", pic=self.portrait, col=c_lightgreen)
+                        notify("已达到现阶段最高等级! +1天赋点。", pic=self.portrait, col=c_lightgreen)
                     elif self.level%5 == 0:
                         self.perk_points += 2
                     else:
@@ -4280,10 +4312,10 @@ init -2 python:
 
             if not silent:
                 if change > 0.5:
-                    notify("Love increased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("好感度增加了", pic=self.portrait, debug_txt="(%s)" % str(change))
 
                 elif change < -0.5:
-                    notify("Love decreased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("好感度降低了", pic=self.portrait, debug_txt="(%s)" % str(change))
 
             test_achievement("love")
 
@@ -4319,10 +4351,10 @@ init -2 python:
 
             if not silent:
                 if change > 0.5:
-                    notify("fear increased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("恐惧值增长了", pic=self.portrait, debug_txt="(%s)" % str(change))
 
                 elif change < -0.5:
-                    notify("fear decreased", pic=self.portrait, debug_txt="(%s)" % str(change))
+                    notify("恐惧值下降了", pic=self.portrait, debug_txt="(%s)" % str(change))
 
             test_achievement("fear")
 
@@ -5126,14 +5158,14 @@ init -2 python:
                 neg_unlocked = []
 
                 for act in self.pos_acts:
-                    if self.personality_unlock[act] or always_show_personality[self]:
-                        if act in self.neg_acts:
+                    if act in self.notebook_unlocks:
+                        if act in self.neg_acts: # Ambivalent acts
                             amb_unlocked.append(girl_related_dict[act])
                         else:
                             pos_unlocked.append(girl_related_dict[act])
 
                 for act in self.neg_acts:
-                    if (self.personality_unlock[act] and act not in self.pos_acts) or always_show_personality[self]:
+                    if act in self.notebook_unlocks and act not in self.pos_acts:
                         neg_unlocked.append(girl_related_dict[act])
 
                 if pos_unlocked:
@@ -5200,7 +5232,7 @@ init -2 python:
             else:
                 self.recent_events[type].description = self.recent_events[type].base_description
 
-            debug_notify("Tracking " + type + "...", pic=self.portrait)
+            debug_notify("追踪" + type + "...", pic=self.portrait)
 
             return
 

@@ -2320,7 +2320,7 @@ label slave_magic(girl, mode="train"):
     $ text1 = rand_choice(MC.filter_say(("ar: 太阳神的圣光啊{nw}", "sh: 潜藏于暗影中的莎莉娅啊{nw}", "五大元素啊{nw}", "ev: 地狱的黑暗力量啊{nw}", "gd: 我纯净的灵魂啊", "ne: 龙族的咆哮啊{nw}",
                    "ng: 时光之砂啊{nw}", "神秘的旋律啊{nw}", "死星的放射波动啊{nw}", "猩红之月的暗面啊{nw}", "无尽之海的深渊啊{nw}")))
 
-    $ text1 += ", I command thee, "
+    $ text1 += "，听我号令，"
 
     $ text1 += rand_choice(("跟着我的声音走进迷宫...", "脱离物质世界的禁锢...",
                            "陷入深深的沉睡...", "不要抵抗梦境的侵蚀...", "踏上遗忘之海的旅程...",
@@ -2560,7 +2560,7 @@ label slave_reward_day(girl):
     return
 
 label slave_reward_sex(girl):
-    $ act = menu(get_act_menu(prompt="What do you want to reward her with?", extended=False, girl=girl))
+    $ act = menu(get_act_menu(prompt="你为什么要奖励她？", extended=False, girl=girl))
 
     if act == "back":
         $ inter.canceled = True
@@ -2857,7 +2857,7 @@ label slave_punish_beat(girl): # To do: add a special reaction if she loves/hate
 label slave_punish_rape(girl):
     you "You need a good lesson! I will make sure that you learn it this time."
 
-    $ result = menu(get_act_menu(prompt="How will you punish her this time?", extended=False, girl=girl, conditions=False))
+    $ result = menu(get_act_menu(prompt="这次你打算怎么惩罚她？", extended=False, girl=girl, conditions=False))
 
     if result == "back":
         $ inter.canceled = True
@@ -5551,7 +5551,7 @@ label slave_story8(girl):
 
         girl.char "And the fire runes should flow from East to West..."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             "You recognize crude runes among the various symbols she is drawing. It is amateurishly done, however."
         else:
             "It seems like some magical gibberish."
@@ -5584,7 +5584,7 @@ label slave_story8(girl):
 
         girl.char "Do you know a lot about witches, Master?"
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Well, I studied alongside a few in Karkyr... They're usually pretty haughty and ill-tempered."
 
             you "But they're wild in bed, so there's that."

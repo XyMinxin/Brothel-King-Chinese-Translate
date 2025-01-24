@@ -250,7 +250,7 @@ translate schinese strings:
 
     # game/BKstart.rpy:294
     old "'{i}I love the smell of despair in the morning.{/i}'\n\n{b}Bad mojo{/b}\nEarn more mojo from fear interactions in and out of the farm."
-    new "'{i}我喜欢在清晨品味这股令人绝望的味道~{/i}'\n\n{b}黑暗仪式{/b}\n你将从基于恐惧的互动中获得更多的魔力。"
+    new "'{i}我喜欢在清晨品味这股令人绝望的味道~{/i}'\n\n{b}黑暗仪式{/b}\n你将从基于恐惧的互动中获得更多的咒力。"
 
     # game/BKstart.rpy:295
     old "Banker"

@@ -51,7 +51,7 @@ init -3 python:
     version_number = 0.2
 
     VIDEOFORMATS = (".webm", ".mkv", ".avi", ".mpg", ".mpeg") # Took out ".mp4" because of missing codecs
-    IMGFORMATS = (".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp") # animated gifs and .webp do not work in Ren'py for now
+    IMGFORMATS = (".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp",".avif") # animated gifs and .webp do not work in Ren'py for now
 
     config.layers.append("myoverlay")
 
@@ -428,9 +428,9 @@ init -3 python:
     all_MC_stats = ["strength", "spirit", "charisma", "speed"]
 
     MC_playerclass_description = {
-                                "Warrior" : "你是一个战士。虽然你看起来很年轻，但你已历经沙场磨难。你善于战斗，可以轻松保护他人。",
-                                "Wizard" : "你是一个法师。凡人臣服于你的魔法。你可以使用各种各样强大的咒语，催眠别人也不错。",
-                                "Trader" : "你是一个商人。你从小就接触经商。你可以和有钱人做大买卖，在购买东西时讨价还价。"
+                                "战士" : "你是一个战士。虽然你看起来很年轻，但你已历经沙场磨难。你善于战斗，可以轻松保护他人。",
+                                "法师" : "你是一个法师。凡人臣服于你的魔法。你可以使用各种各样强大的咒语，催眠别人也不错。",
+                                "商人" : "你是一个商人。你从小就接触经商。你可以和有钱人做大买卖，在购买东西时讨价还价。"
                                 }
     MC_stat_description = {
                             "strength" : "这是你的力量值。力量越高，你的战斗能力和防御能力就越强。",
@@ -527,10 +527,10 @@ init -3 python:
     ## LICENCES ##
 
     license_dict = {
-                    0 : ("No license", "missing license.webp"),
-                    1 : ("Pimp license", "license1.webp"),
-                    2 : ("Whoremonger license", "license2.webp"),
-                    3 : ("Brothelmaster license", "license3.webp")
+                    0 : ("无证经营", "missing license.webp"),
+                    1 : ("青楼执照", "license1.webp"),
+                    2 : ("红灯区执照", "license2.webp"),
+                    3 : ("王室许可证", "license3.webp")
                 }
 
 
@@ -552,18 +552,18 @@ init python:
     # ROOMS #
 
     room_dict = {
-                1 : Room("Basic room", 1),
-                2 : Room("+Basic room+", 2),
-                3 : Room("*Basic room*", 3),
-                4 : Room("Standard room", 4),
-                5 : Room("+Standard room+", 5),
-                6 : Room("*Standard room*", 6),
-                7 : Room("Elegant room", 7),
-                8 : Room("+Elegant room+", 8),
-                9 : Room("*Elegant room*", 9),
-                10 : Room("Noble suite", 10),
-                11 : Room("+Royal suite+", 11),
-                12 : Room("*Imperial suite*", 12)
+                1 : Room("杂乱的卧室", 1),
+                2 : Room("狭窄的卧室", 2),
+                3 : Room("宽敞的卧室", 3),
+                4 : Room("标准卧室", 4),
+                5 : Room("简装卧室", 5),
+                6 : Room("精装卧室", 6),
+                7 : Room("豪华套房", 7),
+                8 : Room("复式套间", 8),
+                9 : Room("温暖阳光房", 9),
+                10 : Room("花园洋房", 10),
+                11 : Room("海景房", 11),
+                12 : Room("公主寝宫", 12)
                 }
 
     common_room_dict = {
@@ -998,7 +998,7 @@ init -4 python:
 
     ## MC picture index
 
-    MC_class_index = {"Warrior" : 0, "Wizard" : 3, "Trader" : 6}
+    MC_class_index = {"战士" : 0, "法师" : 3, "商人" : 6}
 
     ## Roman numbers
 
@@ -1137,13 +1137,13 @@ init -4 python:
                         "-----" : "她现在{b}糟糕透顶{/b}。",
                         "------" : "她的生活简直是地狱。她现在{b}生不如死{/b}。",
 
-                        "change +++" : "她现在{b}迅速好转{/b}",
-                        "change ++" : "她现在{b}有所改善{/b}",
-                        "change +" : "她现在{b}开始好转{/b}",
-                        "no change" : "她现在{b}十分稳定{/b}",
-                        "change -" : "她现在{b}开始恶化{/b}",
-                        "change --" : "她现在{b}正在恶化{/b}",
-                        "change ---" : "她现在{b}迅速恶化{/b}",
+                        "change +++" : "她的情绪{b}迅速好转{/b}",
+                        "change ++" : "她的情绪{b}有所改善{/b}",
+                        "change +" : "她的情绪{b}开始好转{/b}",
+                        "no change" : "她的情绪{b}十分稳定{/b}",
+                        "change -" : "她的情绪{b}开始恶化{/b}",
+                        "change --" : "她的情绪{b}正在恶化{/b}",
+                        "change ---" : "她的情绪{b}迅速恶化{/b}",
                         }
 
     love_description = {
@@ -1301,14 +1301,14 @@ init python:
     recent_event_templates = {  # Girl events given to the player for rewarding/punishing
 
                                 # Rewardable events
-                                "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
-                                "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
-                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}%s{/color}技能。", discipline=False),
+                                "level up" : GirlRecentEvent(type="level up", action="她的等级提升了", base_description="她升到了({color=[c_emerald]}%s级{/color})。", discipline=False),
+                                "rank up" : GirlRecentEvent(type="rank up", action="她的阶级又上一层楼了", base_description="她升到了{color=[c_emerald]}%s阶{/color}。", discipline=False),
+                                "job up" : GirlRecentEvent(type="job up", action="工作能力越来越强", base_description="她的{color=[c_emerald]}%s{/color}等级提升了。", discipline=False),
                                 "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}(%s)。", discipline=False),
-                                "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
-                                "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
-                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了%s训练{/color}。", discipline=False),
-                                "helped" : GirlRecentEvent(type="helped", action="帮助朋友", base_description="", discipline=False), # Not implemented
+                                "quest good result" : GirlRecentEvent(type="quest good result", action="委托完成得很好", base_description="%s", discipline=False),
+                                "class good result" : GirlRecentEvent(type="class good result", action="在培训中很用功", base_description="%s", discipline=False),
+                                "new act" : GirlRecentEvent(type="new act", action="尝试新事物", base_description="她第一次{color=[c_emerald]}接受了%s的训练{/color}。", discipline=False),
+                                "helped" : GirlRecentEvent(type="helped", action="帮助朋友解决了难题", base_description="", discipline=False), # Not implemented
 
 
                                 # Neutral events
@@ -1490,7 +1490,7 @@ init python:
                                         GirlInteractionTopic("train", "train", "消除负面癖好", "slave_remove_fixation", condition="neg_fix")],
 
                     "magic" : ["{size=+8}催眠暗示{/size}", "{size=+8}性爱催眠{/size}", "{size=+8}催眠模式{/size}"],
-                    "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "目前的模式", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
+                    "{size=+8}催眠模式{/size}" : [GirlInteractionTopic("magic", None, "催眠方法：", "slave_hypnotize_method", AP_cost=0)], # None type excludes it from girl interaction count
                     "{size=+8}催眠暗示{/size}" : [
                                                 GirlInteractionTopic("magic", "train", "提高服从　", "slave_magic", act="obedience", gold_cost=20),
                                                 GirlInteractionTopic("magic", "train", "提高敏感　", "slave_magic", act="sensitivity", gold_cost=20),
@@ -1506,19 +1506,19 @@ init python:
                                                 GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
-                    "react" : ["{size=+8}鼓励{/size}", "{size=+8}惩罚{/size}"],
-                    "{size=+8}鼓励{/size}" : [
-                                    GirlInteractionTopic("react", "reward", "称赞她　　　　", "slave_reward_praise"),
-                                    GirlInteractionTopic("react", "reward", "发奖金　　　　", "slave_reward_gold"),
+                    "react" : ["{size=+8}奖赏{/size}", "{size=+8}惩罚{/size}"],
+                    "{size=+8}奖赏{/size}" : [
+                                    GirlInteractionTopic("react", "reward", "进行赞美　　　", "slave_reward_praise"),
+                                    GirlInteractionTopic("react", "reward", "发放奖金　　　", "slave_reward_gold"),
                                     GirlInteractionTopic("react", "reward", "送她礼物　　　", "slave_reward_gift"),
                                     GirlInteractionTopic("react", "reward", "温柔爱抚　　　", "slave_reward_pet"),
                                     GirlInteractionTopic("react", "reward", "放一天假　　　", "slave_reward_day"),
                                     GirlInteractionTopic("react", "reward", "和她做爱　　　", "slave_reward_sex"),
                                     ],
                     "{size=+8}惩罚{/size}" : [
-                                    GirlInteractionTopic("react", "discipline", "批评辱骂她　　　", "slave_punish_scold"),
+                                    GirlInteractionTopic("react", "discipline", "严厉地批评她　　", "slave_punish_scold"),
                                     GirlInteractionTopic("react", "discipline", "停发她的薪水　　", "slave_punish_upkeep"),
-                                    GirlInteractionTopic("react", "discipline", "让她一丝不挂　　", "slave_punish_naked"),
+                                    GirlInteractionTopic("react", "discipline", "扒光她的衣服　　", "slave_punish_naked"),
                                     GirlInteractionTopic("react", "discipline", "对她拳打脚踢　　", "slave_punish_beat"),
                                     GirlInteractionTopic("react", "discipline", "粗暴地强奸她　　", "slave_punish_rape"),
                                     GirlInteractionTopic("react", "discipline", "送去奴隶农场　　", "slave_punish_farm", condition="farm"),
@@ -1529,8 +1529,8 @@ init python:
                                     GirlInteractionTopic("misc", None, "让她穿好衣服　　　　　　　　　", "slave_clothing_dressed", AP_cost=0, condition = "naked"),
                                     ],
                     "{size=+8}工作{/size}" : [
-                                    GirlInteractionTopic("misc", None, "禁止工作期间与客人发生性行为　", "slave_forbid_cust_events", AP_cost=0, condition = "!forbid customer sex"),
-                                    GirlInteractionTopic("misc", None, "允许工作期间与客人发生性行为　", "slave_allow_cust_events", AP_cost=0, condition = "forbid customer sex"),
+                                    GirlInteractionTopic("misc", None, "禁止她工作期间与客人有肉体接触", "slave_forbid_cust_events", AP_cost=0, condition = "!forbid customer sex"),
+                                    GirlInteractionTopic("misc", None, "允许她工作期间与客人有肉体接触", "slave_allow_cust_events", AP_cost=0, condition = "forbid customer sex"),
                                     ],
                     "{size=+8}私人指导{/size}" : [
                                         GirlInteractionTopic("misc", None, "让她晚上去你的卧室接受调教", "slave_master_bedroom_add", AP_cost=0, condition = "master_bedroom_add"),
@@ -1539,7 +1539,7 @@ init python:
                     "{size=+8}DEBUG{/size}" : [GirlInteractionTopic("misc", None, "作弊　　　　　", "interaction_cheat_menu", AP_cost=0, condition="debug_mode"),
                         GirlInteractionTopic("misc", None, "重置女孩的互动", "interaction_cheat_girl", AP_cost=0, condition="debug_mode"),
                         GirlInteractionTopic("misc", None, "重置玩家的互动", "interaction_cheat_MC", AP_cost=0, condition="debug_mode"),
-                        GirlInteractionTopic("misc", None, "展现个性　　　", "interaction_cheat_personality", AP_cost=0, condition="debug_mode"),
+                        GirlInteractionTopic("misc", None, "揭示她的性格　", "interaction_cheat_personality", AP_cost=0, condition="debug_mode"),
                         ],
                     }
 

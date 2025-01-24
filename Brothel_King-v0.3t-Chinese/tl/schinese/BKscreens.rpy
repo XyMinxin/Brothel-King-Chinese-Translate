@@ -422,14 +422,6 @@ translate schinese strings:
     old "{/color} from girls/effects)"
     new "{/color}来自女孩/效果)"
 
-    # game/BKscreens.rpy:4115
-    old "[brothel.advertising]  babes"
-    new "[brothel.advertising]  宣发人员"
-
-    # game/BKscreens.rpy:4136
-    old "[brothel.security]  goons"
-    new "[brothel.security]  打手保镖"
-
     # game/BKscreens.rpy:4159
     old "[brothel.maintenance]  cleaners"
     new "[brothel.maintenance]  家政清洁"
@@ -612,7 +604,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6900
     old " challenge{/b}: This challenges your {b}"
-    new " 挑战{/b}: 这挑战了你的 {b}"
+    new "挑战{/b}:这考验你的{b}"
 
     # game/BKscreens.rpy:6900
     old ". Estimated difficulty: {b}"
@@ -768,7 +760,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:787
     old "Use mousewheel to cycle girls' pages."
-    new "使用鼠标滚轮来循环女孩界面。"
+    new "滑动鼠标滚轮来翻动页面。"
 
     # game/BKscreens.rpy:799
     old "{i}  No girl available  {/i}"
@@ -1158,22 +1150,6 @@ translate schinese strings:
     old " days)"
     new "天)"
 
-    # game/BKscreens.rpy:2986
-    old "She will work to the maximum of her abilities."
-    new "她将尽力接客."
-
-    # game/BKscreens.rpy:2989
-    old "She will receive half the usual number of clients, saving some energy."
-    new "她将只接待一半客人，节省体力消耗."
-
-    # game/BKscreens.rpy:2992
-    old "She will rest and recover some energy."
-    new "她将休息，恢复一些体力."
-
-    # game/BKscreens.rpy:2994
-    old "\n{i}Right-click to reverse cycle order.{/i}"
-    new "\n{i}右键：逆序轮转{/i}"
-
     # game/BKscreens.rpy:3001
     old "You cannot change her schedule as you gave her a day off."
     new "你已经给她放了一天假了."
@@ -1296,7 +1272,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4362
     old "Your brothel's current threat level is "
-    new "你的青楼现在的威胁等级为"
+    new "你的青楼现在的威胁等级"
 
     # game/BKscreens.rpy:4375
     old "Pay some sellswords to keep unruly patrons and competitors at bay."
@@ -1416,7 +1392,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4862
     old " (matching...)"
-    new " (matching...)"
+    new " (匹配中...)"
 
     # game/BKscreens.rpy:4880
     old "Entertainment Phase"
@@ -1428,7 +1404,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:4901
     old "All customers have been assigned."
-    new "所有顾客都已被指派."
+    new "所有顾客都得到了服务。"
 
     # game/BKscreens.rpy:4912
     old "No customers."
@@ -2038,10 +2014,6 @@ translate schinese strings:
     old "Your precious keyboard can't save you now!"
     new "Your precious keyboard can't save you now!"
 
-    # game/BKscreens.rpy:7692
-    old "Mod List"
-    new "Mod List"
-
     # game/BKscreens.rpy:7717
     old "(Inactive)"
     new "(Inactive)"
@@ -2056,11 +2028,11 @@ translate schinese strings:
 
     # game/BKscreens.rpy:7776
     old "City girl interactions"
-    new "City girl interactions"
+    new "自由女孩互动"
 
     # game/BKscreens.rpy:7867
     old "Girl interactions"
-    new "Girl interactions"
+    new "女孩互动"
 
     # game/BKscreens.rpy:7905
     old "Talk"

@@ -219,7 +219,7 @@ label after_load: # Happens after a game state is loaded
                     show screen load
                     $ renpy.full_restart()
 
-            call screen OK_screen("Loading old saved game", "You have chosen to continue with your old saved game.\nIf you encounter bugs, {b}please do not report them on the BK forum{/b}.")
+            call screen OK_screen("加载旧版本存档", "您已选择使用旧版本的存档进行游戏。\n如果你遇到了Bug, {b}请不要来论坛反馈{/b}，我们只更新维护最新版本。")
 
     return
 
@@ -688,14 +688,15 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
                 else:
                     # "[chosen_district.description]"
                     if chosen_district.room == "free":
-                        $ free_room_text = __("\nYou will receive a free room of your choice.")
+                        $ free_room_text = __("\n你可以选择一间免费修建的房间。")
 
                     elif chosen_district.room != []:
-                        $ free_room_text =  "\n你将得到一间免费的" + chosen_district.room[0] + "。\n\n{image=img_%s}" % chosen_district.room[0]  #为了翻译字典将加粗删去了
+                        $ free_room_text =  "\n你将得到一间免费的" + location_name_dict[chosen_district.room[0]] + "。\n\n{image=img_%s}" % chosen_district.room[0]  #为了翻译字典将加粗删去了
 
                     else:
                         $ free_room_text = ""
 
+                    $ textcn = location_name_dict[chosen_district.name]
                     if renpy.call_screen("yes_no", __("{i}[chosen_district.description]{/i}\n\nDo you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations.") + __(free_room_text)):
                         $ change_district(chosen_district, free, start)
                         $ norollback()
@@ -2739,7 +2740,7 @@ label thieves_guild_loop:
 
         while True:
 
-            $ renza("Here's what I have on sale this week, at a special price just for you.", interact = False)
+            $ renza("这是我这周的特价商品，是专为你准备的。", interact = False)
 
             $ result = ui.interact()
 
@@ -2749,7 +2750,7 @@ label thieves_guild_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要以[price]金币的价格买下[it.name]吗?")
 
                     if result == True:
                         # $ MC.buy(NPC_renza, it, price)
@@ -2866,7 +2867,7 @@ label watchtower_loop:
 
         while True:
 
-            $ captain("Here's what I have on sale this week, at a special price just for you.", interact = False)
+            $ captain("这是我这周的特价商品，是专为你准备的。", interact = False)
 
             $ result = ui.interact()
 
@@ -2876,7 +2877,7 @@ label watchtower_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy this [it.name] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要以[price]金币的价格买下[it.name]吗?")
 
                     if result == True:
                         $ MC.buy(NPC_captain, it, price)
@@ -3219,7 +3220,7 @@ label visit_goldie():
                                 call goldie_sex from _call_goldie_sex_1
                                 $ NPC_goldie.flags["fucked_" + str(calendar.time)] = True
 
-                            "Never mind":
+                            "还是算了":
                                 jump goldie_chat_menu
 
                         $ MC.interactions -= 1
@@ -3227,10 +3228,10 @@ label visit_goldie():
                         show goldie with dissolve
                         jump goldie_chat_menu
 
-                    "Never mind":
+                    "还是算了":
                         jump visit_goldie
 
-        "Never mind":
+        "没事，不用了":
             return
 
     jump visit_goldie
@@ -5412,7 +5413,7 @@ label contract_MC_event(): # The MC challenge part is hardcoded for each contrac
             you "Oh no... [girl.name]..."
 
             python:
-                log.add_report("{color=[c_red]}Security alert! {b}" + kidnapped_girls[0].fullname + " was kidnapped!{/b}{/color}")
+                log.add_report("{color=[c_red]}红色警报! {b}" + kidnapped_girls[0].fullname + "被绑架了!{/b}{/color}")
                 MC.girls.remove(girl)
                 game.kidnapped.append(girl)
                 girl.kidnapper = "a dangerous thief"
@@ -6139,12 +6140,12 @@ label tax_intro_menu():
 
             taxgirl "Those are all hypotheticals, of course. We wouldn't know anything about that. *smirk*"
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
                 you "Hmpf. I've seen worse in the war."
 
                 taxgirl "You may be a good fighter, but eventually you'll let your guard down... Everyone has to sleep..."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
                 you "Oh really? I've got a range of spells I could use to prevent that..."
 
                 taxgirl "Did I mention we have access to some of the best sorcerers in the city? I'm sure you'd hate it if a zombified whore accidentally bit off your manhood..."
@@ -6337,7 +6338,7 @@ label tax_relationship_test():
 
         taxgirl "You see, I wasn't born with the gift."
 
-        if MC.playerclass == "Wizard":
+        if MC.playerclass == "法师":
             you "Yes, I could feel it in your aura. You're a conduit, aren't you?"
 
             taxgirl "Yes."
@@ -7534,7 +7535,7 @@ label acquire_girl(girl, price=0, context="generic"):
         if len(MC.girls) < brothel.bedrooms:
             if price:
                 if MC.has_gold(price):
-                    $ result = renpy.call_screen("yes_no", "Do you really want to buy [girl.fullname] for [price] gold?")
+                    $ result = renpy.call_screen("yes_no", "你确定要以[price]金币的价格买下[girl.fullname]吗? ")
                 else:
                     if context == "slavemarket":
                         slavegirl1 "Sorry Master, but you don't have enough gold to buy [girl.fullname]."
@@ -7625,7 +7626,7 @@ label reset_room_capacity():
     python:
         for room in brothel.rooms.values():
             room.update_cust_limit(silent=True)
-            notify(room.name.capitalize() + ": Room capacity reverted to normal")
+            notify(location_name_dict[room.name.capitalize()] + ":房间容量恢复正常")
 
     return
 

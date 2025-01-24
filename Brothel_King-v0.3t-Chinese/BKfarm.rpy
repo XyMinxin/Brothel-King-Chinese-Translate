@@ -249,16 +249,16 @@ init -2 python:
             des = "Level %i %s" % (self.level, self.type)
 
             if self.level >= 5:
-                des += " (max level)"
+                des += " (最高等级)"
             else:
-                des += " (XP: %i/%i)" % (self.xp, minion_xp_to_level[self.level+1])
+                des += " (经验: %i/%i)" % (self.xp, minion_xp_to_level[self.level+1])
 
 
             if self.hurt:
                 if self.type == "machine":
-                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " is broken and will be retired in " + str(self.hp) + " days. ")
+                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + "损坏了，需要维修" + str(self.hp) + "天。")
                 else:
-                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + " is injured and will be retired in " + str(self.hp) + " days. ")
+                    des += event_color["bad"] % ("\n" + farm_related_dict[self.name] + "受伤了，需要修养" + str(self.hp) + "天。")
 
             return des
 
@@ -751,7 +751,7 @@ init -2 python:
                 text1, chg = girl.tire(t) #!
 
                 descript += text1
-                change_log.add("Energy: %s/%i (%s)" % ("{color=%s}%i{/color}" % (girl.get_energy_color(), girl.energy), girl.get_stat_max("energy"), plus_text(chg, color_scheme="standard", decimals=1)), before_separator="\n")
+                change_log.add("精力: %s/%i (%s)" % ("{color=%s}%i{/color}" % (girl.get_energy_color(), girl.energy), girl.get_stat_max("energy"), plus_text(chg, color_scheme="standard", decimals=1)), before_separator="\n")
 
                 # Minion level
 
@@ -957,7 +957,7 @@ init -2 python:
 
                 text1, chg = girl.tire(dice(4)+2)
                 descript += text1
-                change_log.add("Energy: %s/%i (%s)" % ("{color=%s}%i{/color}" % (girl.get_energy_color(), girl.energy), girl.get_stat_max("energy"), plus_text(chg, color_scheme="standard", decimals=1)), before_separator="\n")
+                change_log.add("精力: %s/%i (%s)" % ("{color=%s}%i{/color}" % (girl.get_energy_color(), girl.energy), girl.get_stat_max("energy"), plus_text(chg, color_scheme="standard", decimals=1)), before_separator="\n")
 
                 if not pic:
 #                    renpy.say("", "Searching girl pic for " + and_text(farm_holding_tags[self.holding]))
@@ -1032,7 +1032,7 @@ init -2 python:
         def activate(self):
             self.active = True
             renpy.play(s_moo, "sound")
-            notify("Farm unlocked!", pic="tb farm", col=c_softpurple)
+            notify("农场已解锁！", pic="tb farm", col=c_softpurple)
 
         # Effects (farm effects apply to farm girls only)
 

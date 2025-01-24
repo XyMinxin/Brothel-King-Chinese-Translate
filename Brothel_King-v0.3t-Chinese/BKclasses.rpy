@@ -226,7 +226,7 @@ init -2 python:
                         self.activate_mod(detected_mods[mod.name])
 
                 elif not persistent.mods[mod.name]["active"]:
-                    if renpy.call_screen("yes_no", mod.full_name + " has been deactivated. Would you like to deactivate this mod for this game?"):
+                    if renpy.call_screen("yes_no", mod.full_name + "已被移除。你想要在游戏内禁用这个Mod吗？"):
                         self.deactivate_mod(mod)
 
             # Checks if a new mod has been activated
@@ -234,7 +234,7 @@ init -2 python:
             for name, mod in list(detected_mods.items()):
                 if mod.active:
                     if name not in self.active_mods.keys():
-                        if renpy.call_screen("yes_no", "A new mod has been activated: " + mod.full_name + ". Would you like to activate this mod for this game?"):
+                        if renpy.call_screen("yes_no", "一个新的Mod已安装: " + mod.full_name + "。你想要在游戏内启用这个Mod吗？"):
                             self.activate_mod(mod)
 
             updated_games[self] = True # To do: Check if it works or needs a function
@@ -255,7 +255,7 @@ init -2 python:
             if mod.night_label:
                 daily_events.append(StoryEvent(label=mod.night_label, type="night", once=False))
 
-            renpy.notify("\n" + mod.name + " has been activated.")
+            renpy.notify("\n" + mod.name + "已激活。")
 
 
             if mod.init_label:
@@ -411,7 +411,7 @@ init -2 python:
             self.mojo = {"purple" : 0, "green" : 0, "blue" : 0, "red" : 0, "yellow" : 0}
             self.powers = []
 
-            self.playerclass = "Warrior"
+            self.playerclass = "战士"
             self.god = "Arios"
 
             self._interactions = self.interactions = 0
@@ -546,21 +546,21 @@ init -2 python:
             return rand_choice({"Arios": ["Arios", "我对太阳神发誓", "我对光明使者发誓", "我对光明之主发誓"], "Shalia": ["我对黑暗女神发誓", "我对莎莉娅发誓", "我对天发誓", "我对夜之女帝发誓"], None: ["我对魔鬼发誓", "我对恶魔发誓", "我对见鬼的牧师发誓", "我对十八层地狱发誓"]}[self.god])
 
         def reset_stats(self):
-            if self.playerclass == "Warrior":
+            if self.playerclass == "战士":
 
                 self.strength = 2
                 self.spirit = 1
                 self.charisma = 0
                 self.speed = 3
 
-            elif self.playerclass == "Wizard":
+            elif self.playerclass == "法师":
 
                 self.strength = 0
                 self.spirit = 2
                 self.charisma = 1
                 self.speed = 3
 
-            elif self.playerclass == "Trader":
+            elif self.playerclass == "商人":
 
                 self.strength = 1
                 self.spirit = 0
@@ -916,7 +916,7 @@ init -2 python:
                 self.add_effects(spl.effects)
 
                 renpy.play(spl.sound, channel='sound2')
-                renpy.notify(spl.name + " has been activated.")
+                renpy.notify(spl.name + "已激活。")
                 renpy.pause(0.5)
 
                 return True
@@ -1012,7 +1012,7 @@ init -2 python:
             if (self.ready_to_level() or forced) and self.level < 25:
                 self.level += 1
                 self.skill_points += 1
-                test_achievements(["Warrior", "Wizard", "Trader"])
+                test_achievements(["战士", "法师", "商人"])
                 self.update_spells()
                 renpy.play(s_spell, "sound")
                 return True
@@ -1215,13 +1215,13 @@ init -2 python:
         ## Playerclass
 
         def is_warrior(self):
-            return self.playerclass == "Warrior"
+            return self.playerclass == "战士"
 
         def is_wizard(self):
-            return self.playerclass == "Wizard"
+            return self.playerclass == "法师"
 
         def is_trader(self):
-            return self.playerclass == "Trader"
+            return self.playerclass == "商人"
 
         ## Items
 
@@ -1339,22 +1339,22 @@ init -2 python:
 
             if item.giveable:
                 self.items.remove(item)
-                renpy.say("", __("You give ") + taker.name + " {b}" + __(article(item.name)) + "{/b}.")
+                renpy.say("", __("你送给") + taker.name + "一个{b}" + __(article(item.name)) + "{/b}。")
                 result = taker.receive_gift(item)
                 if not result:
-                    renpy.notify("%s: You cannot give this item to this person." % item.name)
+                    renpy.notify("%s: 你不能把这个道具给这个人。" % item.name)
                     self.items.append(item)
                     return -1
                 norollback()
 
                 return result
             else:
-                renpy.notify("%s: You cannot give this item." % item.name)
+                renpy.notify("%s: 你无法给出这个道具" % item.name)
                 return -1
 
         def equip(self, item):
             if not isinstance(item, ItemInstance):
-                renpy.say(bk_error, "Warning: This item is not instantiated (%s)." % item.name)
+                renpy.say(bk_error, "警告: 这个道具不存在(%s)。" % item.name)
 
             for i in self.equipped:
                 if i.type.slot == item.type.slot:
@@ -1368,7 +1368,7 @@ init -2 python:
 
         def unequip(self, item):
             if not isinstance(item, ItemInstance):
-                renpy.say(bk_error, "Warning: This item is not instantiated (%s)." % item.name)
+                renpy.say(bk_error, "警告: 这个道具不存在(%s)。" % item.name)
 
             self.equipped.remove(item)
             self.remove_effects(item.effects)
@@ -1376,7 +1376,7 @@ init -2 python:
 
         def remove_item(self, it, unequip=True, use_sound=True):
             if not isinstance(it, ItemInstance):
-                renpy.say(bk_error, "Warning: This item cannot be removed, it is not instantiated (%s)." % it.name)
+                renpy.say(bk_error, "警告: 这个道具无法被移除，它不存在(%s)。" % it.name)
             if it in self.items:
                 if unequip and it.equipped:
                     self.unequip(it)
@@ -1386,7 +1386,7 @@ init -2 python:
 
         def add_item(self, it, equip=False, use_sound=True):
             if not isinstance(it, ItemInstance):
-                renpy.say(bk_error, "Warning: This item cannot be added, it is not instantiated (%s)." % it.name)
+                renpy.say(bk_error, "警告: 这个道具无法被添加，它不存在(%s)。" % it.name)
             self.items.append(it)
             if equip:
                 self.equip(it)
@@ -1395,7 +1395,7 @@ init -2 python:
 
         def use_item(self, item):
             if not isinstance(item, ItemInstance):
-                renpy.say(bk_error, "Warning: This item is not instantiated (%s)." % item.name)
+                renpy.say(bk_error, "警告: 这个道具不存在(%s)。" % item.name)
 
             used = True
             #
@@ -2510,7 +2510,7 @@ init -2 python:
                     if short:
                         des += event_color["good"] % ("其他: +%s" % str_int(self.customer_count_dict["special"]))
                     else:
-                        des += event_color["good"] % ("+" + str_int(self.customer_count_dict["special"]) + " from girls and brothel effects")
+                        des += event_color["good"] % ("有" + str_int(self.customer_count_dict["special"]) + "个顾客因为青楼和女孩的特殊效果而来")
 
                 des += ")"
 
@@ -2618,26 +2618,26 @@ init -2 python:
             risk = self.get_risk()
 
             if risk >= 10:
-                level =  "very high"
+                level =  "非常高"
                 col = "bad"
 
             elif risk >= 5:
-                level =  "high"
+                level =  "高"
                 if contrast:
                     col = "a little bad contrast"
                 else:
                     col = "a little bad"
 
             elif risk <= -10:
-                level =  "very low"
+                level =  "非常低"
                 col = "good"
 
             elif risk <= -5:
-                level = "low"
+                level = "低"
                 col = "a little good"
 
             else:
-                level = "normal"
+                level = "正常"
                 if contrast:
                     col = "normal contrast"
                 else:
@@ -4115,9 +4115,9 @@ init -2 python:
                 # text1 += __("{0} {1}").format(__(self.scope), __(target))
                 scopexxx = ""
                 if self.scope== "brothel":
-                    scopexxx = "全青楼的"
+                    scopexxx = "作用于全青楼"
                 elif self.scope == "city":
-                    scopexxx = "在城市中"
+                    scopexxx = "作用于城市中"
                 else:
                     scopexxx = __("{0} {1}").format(__(self.scope), __(target))
                 text1 += scopexxx + ""
@@ -4298,7 +4298,7 @@ init -2 python:
             target = "每日爱情" if target == "love per day" else target
             target = "每日恐惧" if target == "fear per day" else target
             target = "理智消耗" if target == "sanity loss" else target
-            target = "魔力消耗" if target == "mojo cost" else target
+            target = "咒力消耗" if target == "mojo cost" else target
             target = "" if target == "" else target
 
             text1 = target + text2 + text1
@@ -4792,13 +4792,13 @@ init -2 python:
                 return desc
 
             if brothel_firstvisit:
-                return "修建一个{b}" + self.name + "{/b}让{b}" + girl_related_dict[self.job] + "{/b}服务客人。"
+                return "修建一个{b}" + location_name_dict[self.name] + "{/b}让{b}" + girl_related_dict[self.job] + "{/b}服务客人。"
             elif self.level == 0:
-                return "修建一个{b}" + self.name + "{/b}需要花费{b}" + str(self.get_price()) + "金币{/b}。"
+                return "修建一个{b}" + location_name_dict[self.name] + "{/b}需要花费{b}" + str(self.get_price()) + "金币{/b}。"
             elif self.level < district.rank:
-                return "现在{b}" + self.name + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。扩建" + self.name + "需要花费{b}" + str(self.get_price()) + "金币{/b}以容纳更多顾客。"
+                return "现在{b}" + location_name_dict[self.name] + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。扩建" + location_name_dict[self.name] + "需要花费{b}" + str(self.get_price()) + "金币{/b}以容纳更多顾客。"
             else:
-                return "现在{b}" + self.name + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。"
+                return "现在{b}" + location_name_dict[self.name] + "{/b}可以容纳" + str(self.cust_limit) + "位顾客。"
 
         def update_cust_limit(self, silent=False): # Returns value if changed
             _old = self.cust_limit
@@ -6895,7 +6895,7 @@ init -2 python:
                     renpy.notify(self.name + " is already active.")
 
         def deactivate(self):
-            if renpy.call_screen("yes_no", "Do you really want to deactivate " + self.full_name + "? This might negatively affect games saved while this mod was on."):
+            if renpy.call_screen("yes_no", "你确定要停用" + self.full_name + "模组吗? 这将对使用了模组功能的存档产生负面影响。"):
                 if self.active or persistent.mods[self.name]["active"]:
                     self.active = False
                     persistent.mods[self.name]["active"] = False
@@ -6905,7 +6905,7 @@ init -2 python:
                         pass
                     reset_updated_games()
                 else:
-                    renpy.notify(self.name + " couldn't be found among active mods.")
+                    renpy.notify("无法在激活的模组中找到。" + self.name)
 
         def add_event(self, event_name, type=None, date=None, delay=1, call_args=None): # event_name is the event label (not object). date is the exact calendar date. If not provided, current time + delay is used instead (D+1 by default).
 
@@ -7024,19 +7024,19 @@ init -2 python:
 
             else:
                 if chance >= 1.0 and not score:
-                    return "Safe"
+                    return "万无一失"
                 elif chance > 0.8:
-                    return "Very easy"
+                    return "小菜一碟"
                 elif chance > 0.6:
-                    return "Easy"
+                    return "小占上风"
                 elif chance > 0.4:
-                    return "Fair"
+                    return "势均力敌"
                 elif chance > 0.2:
-                    return "Hard"
+                    return "落入下风"
                 elif chance > 0.0:
-                    return "Very hard"
+                    return "胜算很低"
                 else:
-                    return "Impossible"
+                    return "毫无胜算"
 
     class Resource(object):
 
@@ -7192,7 +7192,7 @@ init -2 python:
         """A new Moon appears every month. They have an effect on gameplay."""
 
         def __init__(self, name, effects=None, description="", sound=None):
-            self.name = name.capitalize() + " Moon"
+            self.name = moon_name_dict[name.capitalize()] + "之月"#月相赋值定位
             self.pic = Picture(name + ".webp", "backgrounds/moons/" + name + ".webp")
             self.tb = ProportionalScale("backgrounds/moons/%s tb.webp" % name, *res_tb(25))
             if effects == None: effects = []
@@ -7333,7 +7333,7 @@ init -2 python:
             elif self.target == "minions":
                 r = farm.count_minions()
 
-            elif self.target in ("Warrior", "Wizard", "Trader"):
+            elif self.target in ("战士", "法师", "商人"):
                 if MC.playerclass == self.target:
                     r = MC.level
 
@@ -7540,10 +7540,10 @@ init -2 python:
         def get_description(self, base_text): # can be called from outside the Contract object to convert any string (may not be necessary)
             desc = base_text.replace(":ORG:", capitalize(self.organizer))
             desc = desc.replace(":org:", self.organizer)
-            desc = desc.replace(":DIS:", self.district)
-            desc = desc.replace(":dis:", self.district.lower())
-            desc = desc.replace(":LOC:", self.location.name)
-            desc = desc.replace(":loc:", self.location.name.lower())
+            desc = desc.replace(":DIS:", location_name_dict[self.district])
+            desc = desc.replace(":dis:", location_name_dict[self.district])
+            desc = desc.replace(":LOC:", location_name_dict[self.location.name])
+            desc = desc.replace(":loc:", location_name_dict[self.location.name])
             desc = desc.replace(":VEN:", capitalize(self.venue))
             desc = desc.replace(":ven:", self.venue.lower())
             desc = desc.replace(":AVEN:", capitalize(self.a_venue))

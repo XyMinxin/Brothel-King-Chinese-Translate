@@ -197,15 +197,15 @@ label c1_meet_kosmo:
 
             $ norollback()
 
-            if MC.playerclass == "Warrior":
+            if MC.playerclass == "战士":
 
                 you "Good one. I wonder if you'll laugh as much with five inches of steel in your belly."
 
-            elif MC.playerclass == "Wizard":
+            elif MC.playerclass == "法师":
 
                 you "Ok, now... Toad, or slug? Which one would you prefer I turn you into?"
 
-            elif MC.playerclass == "Trader":
+            elif MC.playerclass == "商人":
 
                 you "Sill! Wake Drogon, will you?"
 
@@ -449,7 +449,7 @@ label c1_ambush:
 
     "Half-a-dozen masked men are rushing towards you. Others are coming from the back. They are blocking all escape routes."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         play sound s_sword_sheath
 
@@ -475,7 +475,7 @@ label c1_ambush:
 
         you "These men are no small-time thugs... They have training... *sweat*"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
 
         play sound s_spell
@@ -503,7 +503,7 @@ label c1_ambush:
 
         "On a nearby roof, an attacker is arming a crossbow. Your barrier is starting to yield, and you know it won't be enough to stop bolts from passing through."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
 
         you "Sill! Where is Drogon!"
 
@@ -935,13 +935,13 @@ label c1_guards_visit:
 
     guard "Well, this is all the proof we need. Serious violations of city edicts all over the place."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
             $ text1 = "非法持有武器"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
             $ text1 = "私藏违禁魔法药物"
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
             $ text1 = "非法饲养珍稀动物"
 
     show black as black2 with fade
@@ -2338,13 +2338,13 @@ label c1_thieves_guild_found:
 
     "She takes a closer look at you."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         renza "A strong build, various scars, a keen eye for weapons..."
 
         renza "You're a warrior, aren't you?"
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         renza "Dandy manners, hands that look like they've never gotten dirty, the smell of sulfur on your clothes..."
 
@@ -4243,7 +4243,7 @@ label c1_interrogation_report:
 
     lieutenant "A voice crystal?"
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
 
         you "Wow, hold on a second. Voice crystals are very powerful magical devices. Only the ancient races knew how to make them."
 
@@ -4898,13 +4898,13 @@ label c1_captain_meeting:
 
     you "You are asking for a lot... But I can afford it."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "Restoring my honor is more important to me than money."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         you "I can't let myself be outsmarted by a petty schemer from the city."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         you "It's an investment. I will recoup it once I take over this man's business."
 
     captain "Oh, really?"
@@ -5252,11 +5252,11 @@ label c1_trial:
 
     you "Damn, I'm nervous."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "I hate these cloak and dagger intrigues. I long for a good head-on fight."
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         you "Usually, when I dabble into politics, I don't risk ending with a rope around my neck."
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         you "I'm a businessman. I like to have other people handle the dirty business, not me!"
 
     if NPC_maya.raped:

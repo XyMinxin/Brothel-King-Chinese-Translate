@@ -14,7 +14,7 @@
 
 define config.name = _("Bro King")
 
-define patch_version = "v241128"
+define patch_version = "v250103"
 
 init python:
     try:

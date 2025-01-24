@@ -74,8 +74,8 @@ init -10 python:
                         "spirit" : "法力",
                         "Charisma" : "魅力",
                         "charisma" : "魅力",
-                        "Speed" : "精力",
-                        "speed" : "精力",
+                        "Speed" : "速度",
+                        "speed" : "速度",
 
                     ## 其他 ##
                         "Libido+" : "性欲+",
@@ -434,6 +434,12 @@ init -10 python:
 
     ## 杂项翻译 ##
     misc_name_dict = {
+
+                    ##训练模式##
+                        "positive" : "利用正面情绪",
+                        "negative" : "利用负面情绪",
+                        "balanced" : "阴阳调和",
+
                     ## 物品交互 ##
                         "Buy" : "购买",
                         "buy" : "购买",
@@ -568,19 +574,19 @@ init -10 python:
                         "Farm" : "农场",
                         "Rest" : "休息",
                         "Scheduled" : "排班表",
-                        "Half-shift" : "半班制",
+                        "Half-shift" : "半勤",
                         "Master bedroom" : "私人指导",
                         "Work&whore" : "工作&妓女",
                         "Naked" : "裸体",
-                        "Negative fixation" : "不良癖好",
+                        "Negative fixation" : "负面性癖",
                         "Not naked" : "穿好衣服",
                         "Not work&whore" : "正常工作",
-                        "Full Shift" : "全班",
-                        "Half Shift" : "半班",
+                        "Full Shift" : "全勤",
+                        "Half Shift" : "半勤",
 
                     ## 夜间活动设置 ##
                         "Normal" : "一般",
-                        "Matchmaking" : "婚介",
+                        "Matchmaking" : "匹配",
                         "Customer" : "顾客",
                         "Level/Job/Rank up" : "等级/职业/阶级提升",
                         "Health/Security" : "健康/安全",
@@ -593,8 +599,8 @@ init -10 python:
                         "Mc" : "主角",
                         "Girl" : "女孩",
                         "girl" : "女孩",
-                        "Farm minion" : "农场奴仆",
-                        "farm minion" : "农场奴仆",
+                        "Farm minion" : "农场仆从",
+                        "farm minion" : "农场仆从",
                         "Minion" : "农场用品",
                         "minion" : "农场用品",
                         "Gift" : "礼物",
@@ -682,6 +688,18 @@ init -10 python:
                         "rank" : "阶级",
                         "act" : "工作",
 
+                    ## 判定 ##
+                        "Fight" : "斗殴",
+                        "Force" : "力量对抗",
+                        "Stamina" : "耐力",
+                        "Cast Spell" : "施法",
+                        "Control" : "催眠",
+                        "Detect Magic" : "侦测魔法",
+                        "Rally" : "动员",
+                        "Charm" : "人格魅力",
+                        "Bluff" : "虚张声势",
+                        "Speed" : "速度",
+
                         "Mood" : "情绪",
                         "mood" : "情绪",
                         "Love" : "爱情",
@@ -727,28 +745,30 @@ init -10 python:
 
     ## 月相翻译 ##
     moon_name_dict = {
-                    "Gold" : "财富之月",
-                    "gold" : "财富之月",
-                    "Wolf" : "狼群之月",
-                    "wolf" : "狼群之月",
-                    "Blue" : "忧郁之月",
-                    "blue" : "忧郁之月",
-                    "Blood" : "猩红之月",
-                    "blood" : "猩红之月",
-                    "Honey" : "甜蜜之月",
-                    "honey" : "甜蜜之月",
-                    "Dry" : "黯淡之月",
-                    "dry" : "黯淡之月",
-                    "Hunter" : "狩猎之月",
-                    "hunter" : "狩猎之月",
-                    "Silver" : "魔力之月",
-                    "silver" : "魔力之月",
-                    "Wet" : "潮汐之月",
-                    "wet" : "潮汐之月",
-                    "Hallow" : "神圣之月",
-                    "hallow" : "神圣之月",
-                    "Dark" : "无光之月",
-                    "dark" : "无光之月",
+                    "Gold" : "财富",
+                    "gold" : "财富",
+                    "Wolf" : "狼群",
+                    "wolf" : "狼群",
+                    "Blue" : "忧郁",
+                    "blue" : "忧郁",
+                    "Blood" : "猩红",
+                    "blood" : "猩红",
+                    "Honey" : "甜蜜",
+                    "honey" : "甜蜜",
+                    "Dry" : "黯淡",
+                    "dry" : "黯淡",
+                    "Hunter" : "狩猎",
+                    "hunter" : "狩猎",
+                    "Silver" : "魔力",
+                    "silver" : "魔力",
+                    "Wet" : "潮汐",
+                    "wet" : "潮汐",
+                    "Hallow" : "神圣",
+                    "hallow" : "神圣",
+                    "Dark" : "无光",
+                    "dark" : "无光",
+                    "Harvest" : "丰收",
+                    "harvest" : "丰收",
 
                     None : "(moon_name_dict)没有值",
                     }
@@ -908,38 +928,39 @@ init -10 python:
                          "Exotic emporium" : "进口商场",
 
                          "Market" : "集市",
-                         "Stables" : "马厩",
+                         "Stables" : "马场",
                          "Plaza" : "广场",
-                         "Gallows" : "绞刑架",
+                         "Gallows" : "行刑台",
                          "Prison" : "监狱",
                          "Arena" : "竞技场",
 
-                         "Botanical garden" : "植物园",
-                         "Library" : "图书馆",
+                         "Botanical garden" : "温室花园",
+                         "Library" : "大图书馆",
                          "Magic forest" : "魔法森林",
                          "Hanging gardens" : "空中花园",
-                         "Guild quarter" : "公会大楼",
-                         "Magic guild" : "魔法公会",
+                         "Guild quarter" : "公会总部",
+                         "Magic guild" : "法师公会",
+                         "Magic university" : "魔法学院",
 
                          "Pilgrim road": "朝圣者之路",
                          "Banking quarter" : "金融街",
                          "Old ruins" : "远古遗迹",
                          "Lakefront" : "湖畔",
                          "Training ground" : "演武场",
-                         "Cathedra" : "教堂",
+                         "Cathedra" : "大教堂",
 
-                         "Battlements" : "城垛",
+                         "Battlements" : "城墙之上",
                          "Keep" : "城堡主楼",
-                         "Hall" : "接待厅",
-                         "Courtyard" : "庭院",
+                         "Hall" : "大礼堂",
+                         "Courtyard" : "中庭",
                          "Temple" : "神社",
-                         "Waterfalls" : "瀑布",
+                         "Waterfalls" : "大瀑布",
 
                          ## 执照名称 ##
                          "No license" : "无需执照",
                          "Pimp license" : "皮条客执照",
-                         "Whoremonger license" : "妓女贩执照",
-                         "Brothelmaster license" : "青楼主执照",
+                         "Whoremonger license" : "红灯区执照",
+                         "Brothelmaster license" : "高级青楼执照",
 
                          ## 青楼房间名称 ##
                          "Tavern" : "零点酒吧",
@@ -950,6 +971,28 @@ init -10 python:
                          "onsen" : "露天温泉",
                          "Okiya" : "艺妓置屋",
                          "okiya" : "艺妓置屋",
+
+                        # 女孩卧室名称
+                         "Basic room" : "狭窄的卧室",
+                         "+Basic room+" : "宽敞的卧室",
+                         "*Basic room*" : "廉价套间",
+                         "Standard room" : "标准套间",
+                         "+Standard room+" : "简装卧室",
+                         "*Standard room*" : "精装卧室",
+                         "Elegant room" : "大平层",
+                         "+Elegant room+" : "复式套间",
+                         "*Elegant room*" : "复式公寓",
+                         "Noble suite" : "花园洋房",
+                         "+Royal suite+" : "海景房",
+                         "*Imperial suite*" : "寝宫",
+
+                        # 主角卧室名称
+                         "Single room" : "狭窄单间",
+                         "Double room" : "双人间",
+                         "Small suite" : "小型套房",
+                         "Luxury suite" : "商务套房",
+                         "Royal suite" : "总统套房",
+                         "Royal harem" : "后宫三千",
                          }
 
 
@@ -1252,18 +1295,18 @@ init -10 python:
                 "onsen" : "onsen.webp",
                 "okiya" : "okiya.webp",
                 # Bedrooms
-                "Basic room" : "basic room1.webp",
-                "+Basic room+" : "basic room2.webp",
-                "*Basic room*" : "basic room3.webp",
-                "Standard room" : "standard room1.webp",
-                "+Standard room+" : "standard room2.webp",
-                "*Standard room*" : "standard room3.webp",
-                "Elegant room" : "rich room1.webp",
-                "+Elegant room+" : "rich room2.webp",
-                "*Elegant room*" : "rich room3.webp",
-                "Noble suite" : "noble room1.webp",
-                "+Royal suite+" : "noble room2.webp",
-                "*Imperial suite*" : "noble room3.webp",
+                "杂乱的卧室" : "basic room1.webp",
+                "狭窄的卧室" : "basic room2.webp",
+                "宽敞的卧室" : "basic room3.webp",
+                "标准卧室" : "standard room1.webp",
+                "简装卧室" : "standard room2.webp",
+                "精装卧室" : "standard room3.webp",
+                "豪华套房" : "rich room1.webp",
+                "复式套间" : "rich room2.webp",
+                "温暖阳光房" : "rich room3.webp",
+                "花园洋房" : "noble room1.webp",
+                "海景房" : "noble room2.webp",
+                "公主寝宫" : "noble room3.webp",
                 # Master bedroom
                 "Single room" : "master/master0.webp",
                 "Double room" : "master/master1.webp",
@@ -1316,9 +1359,9 @@ init -10 python:
     no_girls_pics = ["harem.webp",]
 
     playerclass_pics = {
-                "Warrior" : "UI/warrior.webp",
-                "Wizard" : "UI/wizard.webp",
-                "Trader" : "UI/trader.webp"
+                "战士" : "UI/warrior.webp",
+                "法师" : "UI/wizard.webp",
+                "商人" : "UI/trader.webp"
                 }
 
     god_pics = {

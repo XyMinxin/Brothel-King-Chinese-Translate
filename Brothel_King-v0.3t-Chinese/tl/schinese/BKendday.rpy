@@ -132,10 +132,6 @@ translate schinese strings:
     old "Show log"
     new "Show log"
 
-    # game/BKendday.rpy:197
-    old "Results"
-    new "Results"
-
     # game/BKendday.rpy:265
     old "Attempt: "
     new "Attempt: "

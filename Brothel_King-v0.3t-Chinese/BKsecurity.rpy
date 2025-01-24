@@ -15,11 +15,14 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
     ## Pick targets for attacks
 
+    $ target_girls = []
+
     if working_girls:
         $ target_girls = working_girls
-    elif MC.girls:
+    else:
         $ target_girls = [g for g in MC.girls if not g.away]
-    else: # In the unlikely case a player has no girls in the brothel when a security event procs
+
+    if not target_girls: # In the unlikely case a player has no girls in the brothel when a security event procs
         return
 
     ## Get event type
@@ -1315,13 +1318,13 @@ init -3 python:
                 log.add_report(__("{color=[c_green]}Security alert! No was one hurt.{/color}"))
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_pic = "events/" + rand_choice(security_pics["sword defense"])
                     sec_sound = s_clash
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_pic = "events/" + rand_choice(security_pics["magic defense"])
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "商人":
                     sec_pic = "events/" + rand_choice(security_pics["dragon defense"])
                     sec_sound = s_roar
 
@@ -1483,11 +1486,11 @@ init -3 python:
                 log.add_report("{color=[c_green]}Security alert! Riot prevented.{/color}")
 
             elif guard_defense + MC_defense >= _max:
-                if MC.playerclass == "Warrior":
+                if MC.playerclass == "战士":
                     sec_sound = s_punch
-                elif MC.playerclass == "Wizard":
+                elif MC.playerclass == "法师":
                     sec_sound = s_spell
-                elif MC.playerclass == "Trader":
+                elif MC.playerclass == "商人":
                     sec_sound = s_crowd_cheer
 
                 sec_text += event_color["good"] % rand_choice(MC.filter_say([__("wa: \nFortunately, you were around and promptly beat some sense into the worst offenders. The others quickly went quiet."),

@@ -770,7 +770,7 @@ screen item_tab(context, left_party, right_party): # Where X_party are a list of
                     use universal_selector(party=left_party, current=left_focus, var="left_focus", avoid=right_focus, sc_prefix="shift_") id "sel1"
                 hbox spacing xres(6) xalign 0.0:
                     frame xsize xres(38) ysize yres(20) xpadding 0 ypadding 0 xmargin 0 ymargin 0:
-                        textbutton {True: _("Hide"), False: _("Search")}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
+                        textbutton {True: _("隐藏"), False: _("搜索")}[show_search_left] text_xalign 0.5 text_italic True text_color c_darkbrown text_size res_font(14) xpadding 0 ypadding 0 xalign 0.5 yalign 0.6 xsize xres(38) ysize yres(20) idle_background None action (ToggleScreenVariable("show_search_left"), SetField(MC, "active_text_filter", ""), SelectedIf(show_search_left))
                     use sorting_tab(context + " items", sort_target=left_focus.items, sorters=["type", "price", "alpha"]) id "st1"
                 hbox xalign 0.0:
                     use item_list(items=left_focus.items, owner=left_focus, counterpart=right_focus, sc_prefix="shift_", search=show_search_left) id "il1"
@@ -1117,7 +1117,7 @@ screen item_profile(it):
         has vbox
 
         if "bargain" not in acts:
-            use close(Hide("item_profile"), name = "hide")
+            use close(Hide("item_profile"), name = "隐藏")#隐藏原为hide，要是报错就改回去
             key "mouseup_3" action Hide("item_profile")
 
 

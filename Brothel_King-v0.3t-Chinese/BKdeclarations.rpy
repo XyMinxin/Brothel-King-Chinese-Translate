@@ -134,6 +134,7 @@ define noroi_leader = Character("Noroi领袖", color=c_darkred, image = "noroi_l
 define subaru = Character("昴", color=c_lavender, image = "subaru", window_left_padding=int(config.screen_height*0.205))
 define receptionist = Character("魔法学院代表", color=c_lavender, image = "receptionist", window_left_padding=int(config.screen_height*0.205))
 define shizuka = DynamicCharacter("shizuka_name", color=c_emerald, image = "shizuka", window_left_padding=int(config.screen_height*0.205))
+define golem = Character("石像守卫", color=c_firered, image = "golem", window_left_padding=int(config.screen_height*0.205))
 
 #### MISC. CHARACTERS ####
 
@@ -302,6 +303,7 @@ init -2 python:
                                                 declare("bg sky night", "backgrounds/sky night.webp", "s", wide=True),
                                                 declare("bg valley dusk", "backgrounds/valley dusk.webp", "s", wide=True),
                                                 declare('bg stars', 'backgrounds/stars.webp', 's', wide=True),
+                                                declare('bg full_moon', 'backgrounds/full moon.webp', 'p'),
                                                 ],
 
                                         "outside" : [
@@ -339,6 +341,10 @@ init -2 python:
                                                 declare("bg magicU explosion", 'backgrounds/magicU explosion.webp', 's'),
                                                 declare("bg floating island", 'backgrounds/floating island.webp', 's', wide=True),
                                                 declare("bg karkyr", 'backgrounds/karkyr.webp', 's', wide=True),
+                                                declare("bg shalia_tower", 'backgrounds/shalia tower.webp', 's', wide=True),
+                                                declare("bg westmarch", 'backgrounds/westmarch.webp', 's', wide=True),
+                                                declare("bg westmarch palace", 'backgrounds/westmarch palace.webp', 's', wide=True),
+                                                declare('bg moonlit_pond', 'backgrounds/moonlit pond.webp', 's', wide=True),
                                                 ],
 
                                         "inside" : [
@@ -378,6 +384,7 @@ init -2 python:
                                                 declare('bg magic_vault', 'backgrounds/magic vault.webp', 's'),
                                                 declare('bg magic_vault_inside', 'backgrounds/magic vault inside.webp', 's'),
                                                 declare('bg archives', 'backgrounds/archives.webp', 's', wide=True),
+                                                declare("bg crystal_room", 'backgrounds/crystal room.webp', 's', wide=True),
                                                 ],
 
                                         "slavemarket" : [declare("bg slave market", "backgrounds/slave market12.webp", "p"),] +
@@ -721,15 +728,24 @@ init -2 python:
                                 "narika broken" : declare_multiple("bg narika_broken%s", "NPC/kunoichi/narika/broken (%s).webp", "p", start=1, finish=7),
 
                                 "mizuki soft" : [
-                                                declare('bg mizuki intro', 'NPC/kunoichi/mizuki/intro.webp', 'p'),
                                                 declare('bg mizuki react', 'NPC/kunoichi/mizuki/react.webp', 'p'),
+                                                declare('bg mizuki intro', 'NPC/kunoichi/mizuki/intro.webp', 'p'),
                                                 declare('bg mizuki intro1', 'NPC/kunoichi/mizuki/intro1.webp', 'p'),
                                                 declare('bg mizuki intro2', 'NPC/kunoichi/mizuki/intro2.webp', 'p'),
-                                                ],
-
-                                "mizuki onsen" : declare_multiple("bg mizuki_onsen%s", "NPC/kunoichi/mizuki/onsen (%s).webp", "p", start=1, finish=4),
+                                                declare('bg mizuki combat', 'NPC/kunoichi/mizuki/combat.webp', 'p'),
+                                                declare('bg mizuki poison', 'NPC/kunoichi/mizuki/poison.webp', 'p'),
+                                                declare('bg mizuki magic', 'NPC/kunoichi/mizuki/ice magic.webp', 'p'),
+                                                ] + declare_multiple("bg mizuki family%s", "NPC/kunoichi/mizuki/family (%s).webp", "p", start=1, finish=2) + declare_multiple("bg mizuki yukata%s", "NPC/kunoichi/mizuki/yukata (%s).webp", "p", start=1, finish=2) + declare_multiple("bg mizuki death%s", "NPC/kunoichi/mizuki/death (%s).webp", "p", start=1, finish=3),
 
                                 "mizuki honeymoon" : declare_multiple("bg mizuki honeymoon%s", "NPC/kunoichi/mizuki/honeymoon (%s).webp", "p", start=1, finish=9),
+
+                                "mizuki footjob" : declare_multiple("bg mizuki footjob%s", "NPC/kunoichi/mizuki/footjob (%s).webp", "p", start=1, finish=3),
+
+                                "mizuki rough" : declare_multiple("bg mizuki rough%s", "NPC/kunoichi/mizuki/rough (%s).webp", "p", start=1, finish=4),
+
+                                "mizuki betrayal" : declare_multiple("bg mizuki betrayal%s", "NPC/kunoichi/mizuki/betrayal (%s).webp", "p", start=1, finish=8),
+                                
+                                "mizuki onsen" : declare_multiple("bg mizuki_onsen%s", "NPC/kunoichi/mizuki/onsen (%s).webp", "p", start=1, finish=4),
 
                                 "haruka soft" : [declare('bg haruka intro', 'NPC/kunoichi/haruka/intro.webp', 'p'),] +
                                                 declare_multiple("bg haruka defeat%s", "NPC/kunoichi/haruka/defeat (%s).webp", "p", start=1, finish=3),
@@ -1206,6 +1222,7 @@ init -2 python:
                                 ('bm2', [declare('bm2', 'NPC/Misc/bm2.webp', "small"),]),
                                 ('king', [declare('king', 'NPC/Misc/king2.webp', "med"),]),
                                 ('hood', [declare('hood', 'NPC/Misc/hood.webp', "small"),]),
+                                ('old elf', [declare('old_elf', 'NPC/Misc/old elf.webp', "small"),]),
 
                                 ("guard", [
                                         declare('guard', 'NPC/Misc/guard.webp', "p"),
@@ -1276,6 +1293,8 @@ init -2 python:
                                         declare('skeleton', 'NPC/Misc/skeleton.webp', "med"),
                                         declare('side skeleton', 'NPC/Misc/skeleton portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),
                                         ]),
+
+                                ("golem", [declare('golem', 'NPC/Misc/golem.webp', "p"), declare('side golem', 'NPC/Misc/golem portrait.webp', 'p', x=res_portrait_size, y=res_portrait_size, gallery=False),]),
 
                                 ("ogres", [declare('ogre', 'NPC/Misc/ogre.webp', "p")]),
 

@@ -76,7 +76,7 @@ label start_no_intro:
     call advance_to_chapter(starting_chapter, start=True) from _call_advance_to_chapter_3
 
     if debug_mode == "quick": # Base values for debugging
-        $ MC.set_playerclass("Wizard")
+        $ MC.set_playerclass("法师")
         $ MC.girls = get_girls(24)
         $ MC.gold = 100000
         $ MC.speed = 30
@@ -794,7 +794,7 @@ label init_game(quick=False):
         NGPSetting("starting chapter", "int", label="旅途起点", values = range(1, 8), cost=[10*i for i in range(2, 8)], ttip=__("The chapter you will start the game at. Not compatible with challenges such as the free girl challenge.")),
 
         NGPSetting("starting gold", "gold", label="私人金库", values = [5, 15, 100, 999], cost = [2, 3, 4, 5], ttip=__("The amount of money you will start the game with (default: {image=img_gold} [starting_gold]).")),
-        NGPSetting("starting resources", "resources", label="Resourceful", values= [20, 10, 5], cost = [15, 20, 25], ttip=__("Start the game with extra resources.")),
+        NGPSetting("starting resources", "resources", label="琳琅满目", values= [20, 10, 5], cost = [15, 20, 25], ttip=__("Start the game with extra resources.")),
         NGPSetting("extractors Mk I", "int", label="甩手掌柜", values= range(1, 4), cost = [25, 50, 75], ttip=__("Start the game with resource extractors Mk I.")),
         NGPSetting("extractors Mk II", "int", label="不劳而获", values= range(1, 4), cost = [35, 70, 105], ttip=__("Start the game with resource extractors Mk II.")),
 

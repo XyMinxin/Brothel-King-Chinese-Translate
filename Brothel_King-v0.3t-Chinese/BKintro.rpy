@@ -303,7 +303,7 @@ label resume_intro:
         you "I am..."
 
         "A warrior":
-            $ MC.set_playerclass("Warrior")
+            $ MC.set_playerclass("战士")
             $ norollback()
 
             you "I am a fighter from the Northern armies."
@@ -327,7 +327,7 @@ label resume_intro:
 
 
         "A wizard":
-            $ MC.set_playerclass("Wizard")
+            $ MC.set_playerclass("法师")
             $ norollback()
 
             you "I am a court mage from the Westmarch Principalities."
@@ -357,7 +357,7 @@ label resume_intro:
             jump resume_intro2
 
         "A rogue trader":
-            $ MC.set_playerclass("Trader")
+            $ MC.set_playerclass("商人")
             $ norollback()
 
             you "I am a proud member of the Xeros Traveling Merchant Guild."
@@ -608,13 +608,13 @@ label resume_intro3:
 
     thug1 "All right, then... You just dug your own grave, you nosy bastard!"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "Sill, fetch my swords."
 
-    if MC.playerclass == "Wizard":
+    if MC.playerclass == "法师":
         you "Sill, hand me the staff."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "商人":
         you "Sill, you know what to do."
 
     sill "Yes Master!"
@@ -631,7 +631,7 @@ label resume_intro3:
     thug2 "You..."
     thug1 "DIE!"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         you "Haa!"
 
@@ -664,7 +664,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         you "Shazam!"
 
@@ -693,7 +693,7 @@ label resume_intro3:
 
 
 
-    elif MC.playerclass == "Trader": ##TO DO : have Drogon hover around
+    elif MC.playerclass == "商人": ##TO DO : have Drogon hover around
 
         play sound s_wings
 
@@ -759,13 +759,13 @@ label resume_intro3:
 
 
 
-    $ kuro_name = "贵族小姐"
+    $ kuro_name = "贵族千金"
 
 
 
     kuro "Thank you, my champion, you fought bravely."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "商人":
 
         show sill drogon at left with dissolve
 
@@ -925,13 +925,13 @@ label resume_intro3:
 
     you "Hmm."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
         you "Power... hangs at the tip of a sword."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
         you "Power resides in magic."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
         you "Money is power."
 
     gio "Haha, it is true to some extent, my friend."
@@ -1773,7 +1773,7 @@ label day1:
     # # Create enemy general for the siege security event
 
     # if dice(2) == 1:
-    #     $ enemy_general = get_girls(1, free=True, p_traits=["Warrior"])[0]
+    #     $ enemy_general = get_girls(1, free=True, p_traits=["战士"])[0]
     # else:
     #     $ enemy_general = get_girls(1, free=True, p_traits=["Caster"])[0]
 
@@ -1911,7 +1911,7 @@ label districts_first_time:
 
     gio "So, while I didn't succeed in making the brothel business take off, I'm sure you will find a way to turn a profit. My instinct tells me so..."
 
-    if MC.playerclass == "Trader":
+    if MC.playerclass == "商人":
         you "Well, I will have to rely on my legendary business acumen..."
 
     else:
@@ -1934,7 +1934,7 @@ label districts_first_time:
 
 label districts_first_time_slums:
 
-    $ narrator("Choose a district.", interact = False)
+    $ narrator("选择一个地点。", interact = False)
 
     $ ui.interact()
 
@@ -1942,7 +1942,7 @@ label districts_first_time_slums:
      Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host
      the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
 
-    if not renpy.call_screen("yes_no", "Do you really want to choose the Slums to open your new brothel?"):
+    if not renpy.call_screen("yes_no", "你确定要把你的青楼开在贫民窟里吗？"):
         jump districts_first_time_slums
 
     $ district_firstvisit = False
@@ -1977,7 +1977,7 @@ label brothel_first_time:
 
     you "..."
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         you "I'll rip your head off..."
 
@@ -2015,15 +2015,15 @@ label brothel_first_time:
 
     you "*hardcore evil stare*"
 
-    if MC.playerclass == "Warrior":
+    if MC.playerclass == "战士":
 
         "Gio looks nervous as you start fiddling with your scabbard."
 
-    elif MC.playerclass == "Wizard":
+    elif MC.playerclass == "法师":
 
         "Gio looks nervous as you start muttering a curse."
 
-    elif MC.playerclass == "Trader":
+    elif MC.playerclass == "商人":
 
         "Gio looks nervous as you start eyeing your pet dragon."
 
@@ -2078,7 +2078,7 @@ label brothel_first_time:
     show screen brothel()
     with dissolve
 
-    $ renpy.say(gio, "Which one of the common rooms do you want me to repair?", interact = False)
+    $ renpy.say(gio, "你想让我帮你修好哪间房间？", interact = False)
 
     $ mychoice = ""
 

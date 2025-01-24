@@ -194,7 +194,7 @@ screen night(event_pic = None, event_bg = None, changes = "", has_log = True): #
                     if isinstance(changes, NightChangeLog):
                         use night_right(changes)
                     else:
-                        text __("Results")
+                        text "结 果"
                         text changes size res_font(18)
 
 
@@ -304,7 +304,7 @@ screen night_old(event_pic = None, event_bg = None, changes = "", has_log = True
                 if isinstance(changes, NightChangeLog):
                     use night_right(changes)
                 else:
-                    text __("Results")
+                    text "结 果"
                     text changes size res_font(18)
 
 screen night_log(log, use_filter=False):
@@ -316,7 +316,7 @@ screen night_log(log, use_filter=False):
         if use_filter:
             frame background c_ui_light xfill True:
                 has hbox
-                text __("Filter: ") size res_font(22) color c_brown
+                text "筛选: " size res_font(22) color c_brown
                 input size res_font(22) color c_darkorange changed(log.filter)
         viewport:
             mousewheel True
@@ -494,7 +494,7 @@ label end_day:
 
                         else:
                             job_girls.append(girl)
-                            girl.add_log(girl.job + "_days")
+                            girl.add_log(girl_related_dict[girl.job] + "_days")
 
                     else:
                         striking_girls.append(girl)
@@ -548,17 +548,17 @@ label end_day:
             chg = round_int(brothel.change_rep_nightly(rep_change))
 
             if round_int(brothel.rep) != old_rep:
-                rep_text = __("Your brothel's reputation has changed from %s to %s." % ('{:,}'.format(round_int(old_rep)), '{:,}'.format(round_int(brothel.rep))))
+                rep_text = __("青楼的名声从 %s 变为 %s。" % ('{:,}'.format(round_int(old_rep)), '{:,}'.format(round_int(brothel.rep))))
             else:
-                rep_text = __("Your brothel's reputation remains stable (") + '{:,}'.format(round_int(brothel.rep)) + ")."
+                rep_text = __("青楼的名声保持不变 (") + '{:,}'.format(round_int(brothel.rep)) + ")。"
 
             night_early.add("青楼声望:\n%s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), plus_text(chg, color_scheme="rep")), "header", ttip_title = "青楼声望变化", ttip = rep_text)
 
-            night_early.add("Advertising: +%s" % str_dec(raw_rep))
+            night_early.add("广告引流: +%s" % str_dec(raw_rep))
             if bonus_rep >= 1:
-                night_early.add("Perks: +%s" % str_dec(bonus_rep))
+                night_early.add("特殊效果: +%s" % str_dec(bonus_rep))
             if decay_rep <= -1:
-                night_early.add("Chapter modifier: %s" % plus_text(decay_rep))
+                night_early.add("事件效果: %s" % plus_text(decay_rep))
 
             log.add_report(event_color["rep"] % rep_text)
 
@@ -578,7 +578,7 @@ label end_day:
                 night_text += "%s: {color=[c_pink]}'%s'{/color}\n" % (adv_girl.name, __(adv_girl.pick_dialogue("advertise").line))
 
             elif brothel.advertising > 0:
-                night_text += "{color=[c_pink]}“先生”!想不想体验一下我们的最新商品？*giggles*'{/color}\n"
+                night_text += "{color=[c_pink]}“先生”!想不想体验一下我们的最新商品？*咯咯*'{/color}\n"
 
             if not ad_pic:
                 if brothel.advertising > 0:
@@ -593,9 +593,9 @@ label end_day:
 
         ## Alert if striking girls
         if farm.girls:
-            night_early.add("Girls: %i" % len(MC.girls + farm.girls), "header", ttip = "You have %i girls in your brothel and farm." % len(MC.girls + farm.girls), ttip_title="Girl report")
+            night_early.add("女孩情况: %i" % len(MC.girls + farm.girls), "header", ttip = "你有%i个女孩住在青楼或农场中。" % len(MC.girls + farm.girls), ttip_title="Girl report")
         else:
-            night_early.add("Girls: %i" % len(MC.girls), "header", ttip = "You have %i girls in your brothel." % len(MC.girls), ttip_title="Girl report")
+            night_early.add("女孩情况: %i" % len(MC.girls), "header", ttip = "你有%i个女孩住在青楼里。" % len(MC.girls), ttip_title="Girl report")
 
 
         if working_girls:
@@ -638,8 +638,8 @@ label end_day:
     ## Close brothel if no girls are available
 
         if not working_girls:
-            night_early.add("Brothel closed", "header", col="bad")
-            night_early.add("Customers turned away: %s" % len(customers), ttip = get_customer_population_count(customers))
+            night_early.add("青楼暂停营业", "header", col="bad")
+            night_early.add("客人失望地离开: %s" % len(customers), ttip = get_customer_population_count(customers))
 
             ad_pic = "events/" + rand_choice(night_pics)
             night_text += "青楼今晚暂停营业。"
@@ -690,19 +690,19 @@ label end_day:
                 rep_loss = -sum(c.rank for c in lost_customers)
                 rep_loss = brothel.change_rep(rep_loss)
                 if not customers:
-                    text1 = "Your brothel was so dirty that all %s customers ran away (%s reputation)" % (str(len(lost_customers)), str_int(rep_loss))
+                    text1 = "你的青楼太脏了，%s位顾客全部离开了。(%s名声)" % (str(len(lost_customers)), str_int(rep_loss))
                 else:
-                    text1 = "%s customers turned away because the brothel looked filthy (%s reputation)"  % (str(len(lost_customers)), str_int(rep_loss))
+                    text1 = "因为青楼看起来很脏，%s位顾客离开了。(%s名声)"  % (str(len(lost_customers)), str_int(rep_loss))
                 maint_text += "\n" + text1
                 log.add_report(event_color["bad"] % text1)
 
-                night_early.add("Dirtiness", "header")
-                night_early.add("Customers turned away: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
+                night_early.add("青楼臭不可闻", "header")
+                night_early.add("客人失望的离开: -%s" % len(lost_customers), col="bad", ttip = get_customer_population_count(lost_customers))
                 cust_text += "\n离开的客人: %s人" % plus_text(-len(lost_customers))
                 if rep_loss:
                     night_early.add("Reputation lost: %s" % plus_text(rep_loss))
 
-            night_early.add("Customers: %s" % len(customers), "header", ttip = cust_text, ttip_title = "Customer report")
+            night_early.add("顾客数量: %s" % len(customers), "header", ttip = cust_text, ttip_title = "Customer report")
 
             for pop in all_populations:
                 if cust_nb_dict[pop.name]:
@@ -740,7 +740,7 @@ label end_day:
 
                     if girl in job_girls:
                         job_girls.remove(girl)
-                        girl.add_log(girl.job + "_days", -1)
+                        girl.add_log(girl_related_dict[girl.job] + "_days", -1)
 
                     if girl in whores:
                         whores.remove(girl)
@@ -789,7 +789,7 @@ label end_day:
                         # Logs injury
                         girl.add_log("hurt_days")
                         girl.add_log("work_days", -1)
-                        girl.add_log(girl.job + "_days", -1)
+                        girl.add_log(girl_related_dict[girl.job] + "_days", -1)
                         if girl.work_whore:
                             whores.remove(girl)
                             girl.add_log("work_whore_days", -1)
@@ -901,13 +901,13 @@ label end_day:
             night_no_girls.add(get_customer_population_count(leftover_customers))
 
             if len(leftover_customers) == len(customers):
-                text1 = "No "
+                text1 = "没有一位"
             else:
-                text1 = "No more "
+                text1 = "没有更多"
 
             pic = rand_choice(no_girls_pics)
 
-            ev = Event(Picture(pic, "events/" + pic), text = text1 + "名女孩可以提供性服务， %s名顾客失望的离开了。" % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
+            ev = Event(Picture(pic, "events/" + pic), text = text1 + "女孩可以提供性服务， %s名顾客失望的离开了。" % str_int(len(leftover_customers)), type ="UI", changes=night_no_girls, debug_id=1)
             perform_events.append(ev)
 
             log.add_report(event_color["bad"] % ("%s名顾客不能发泄性欲，失望地离开了。" % str(len(leftover_customers))))
@@ -1087,14 +1087,14 @@ label end_day:
         night_late.add("满意的顾客: %s人" % (event_color["a little good"] % entertained), ttip="%i位服务的顾客中有%i位感到满意" % (served, entertained))#中英互译倒装，所以对调了变量顺序。
         night_late.add("满意的嫖客: %s" % (event_color["a little good"] % satisfied), ttip="%i位嫖妓的嫖客中有%i位感到满足" % (laid, satisfied))#中英互译倒装，所以对调了变量顺序。
 
-        log.add_report(event_color["good"] % (str(len(customers)) + " customer" + plural(len(customers)) + " came to your brothel. " + str(served) + " got attended (" + str(entertained) + " entertained), " + str(laid) + " got laid (" + str(satisfied) + " satisfied)."))
+        log.add_report(event_color["good"] % (str(len(customers)) + "位顾客" + plural(len(customers)) + "光顾了青楼。" + str(served) + " got attended (" + str(entertained) + "被接待), " + str(laid) + " got laid (" + str(satisfied) + "感到满意)。"))
 
         rep_chg = sum(c.get_reputation_change() for c in customers)
         rep_chg = brothel.change_rep(rep_chg)
 
         night_late.add("青楼名声: %s (%s)" % (str_int(brothel.rep) + "/" + str_int(brothel.max_rep), event_color["rep"] % (plus_text(rep_chg))), "header", ttip=plus_text(rep_chg) + "声望，满意的顾客越多增长得就越快。")
 
-        log.add_report(event_color["rep"] % ("Brothel reputation changed from %i to %i (%s)" % (old_rep, brothel.rep, plus_text(round_int(rep_chg)))))
+        log.add_report(event_color["rep"] % ("青楼的名声由%i变为%i (%s)" % (old_rep, brothel.rep, plus_text(round_int(rep_chg)))))
 
         log.track("served", served)
         log.track("entertained", entertained)
@@ -1223,14 +1223,14 @@ label end_day:
 
 
         if leveled or MC.ready_to_level():
-            night_late.add("Level up", "header")
+            night_late.add("等级提升的女孩", "header")
             if MC.ready_to_level():
                 night_late.add("* " + MC.name, col=c_main)
 
             for girl in leveled:
                 night_late.add("* " + girl.fullname, col="good")
         if jobbed:
-            night_late.add("Job up", "header")
+            night_late.add("职业等级提升的女孩", "header")
             for girl in jobbed:
                 night_late.add("* " + girl.fullname, col=c_orange)
 

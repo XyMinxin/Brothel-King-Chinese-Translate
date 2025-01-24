@@ -3118,13 +3118,13 @@ translate schinese renza_onsen3_a9baabcd:
 translate schinese farm_meet_gizel_e8d92779:
 
     # "Walking around the market, looking for [text1], you notice an exotic figure looking at the wares of a nearby spice merchant."
-    if text1 == "anti-rust lotion": 
-        $ cntext = "防锈洗剂"
-    elif text1 == "magic herbs":
-        $ cntext = "魔法药草"
-    elif text1 == "dragon feed":
-        $ cntext = "飞龙饲料"
-    "在集市上四处寻找[cntext],你注意到一个充满异域风情的身影正在附近的香料商那里看货。"
+    #if text1 == "anti-rust lotion": 
+        #$ cntext = "防锈洗剂"
+    #elif text1 == "magic herbs":
+        #$ cntext = "魔法药草"
+    #elif text1 == "dragon feed":
+        #$ cntext = "飞龙饲料"
+    "在集市上四处寻找[text1],你注意到一个充满异域风情的身影正在附近的香料商那里看货。"
 
 # game/BKstory_events.rpy:1574
 translate schinese farm_meet_gizel_2f430e2d:
@@ -8698,7 +8698,7 @@ translate schinese farm_meet_gina_0e87e786:
 translate schinese farm_meet_gina_cb4db79c:
 
     # you "Well, uh... There's the royal eagle... Griffins... Dragons..."
-    you "嗯,呃...皇家鹰...griffin...龙..."
+    you "嗯,呃...皇家雄鹰...狮鹫...龙..."
 
 # game/BKstory_events.rpy:4484
 translate schinese farm_meet_gina_ee22fd69:
@@ -8752,7 +8752,7 @@ translate schinese farm_meet_gina_eca03882:
 translate schinese farm_meet_gina_e09510ec:
 
     # gina "But damn if I haven't run out of Cimerian components. These repeated crashes have taken a toll..."
-    gina "但我已经没有赛美瑞亚元件了。这些重复的坠机事故已经造成了不小的损失..."
+    gina "但我已经没有席米亚元件了。这些重复的坠机事故已经造成了不小的损失..."
 
 # game/BKstory_events.rpy:4502
 translate schinese farm_meet_gina_fb2ca384:
@@ -8800,7 +8800,7 @@ translate schinese farm_meet_gina_09dfa18f:
 translate schinese farm_meet_gina_a8ffb97b:
 
     # gina "What am I gonna do? Cimerian scrap is so expensive these days..."
-    gina "我该怎么办?赛美瑞亚废料nowadays价格都太高了..."
+    gina "我该怎么办?席米亚废料现在价格被炒的很高..."
 
 # game/BKstory_events.rpy:4518
 translate schinese farm_meet_gina_685847ec:
@@ -8872,7 +8872,7 @@ translate schinese farm_meet_gina_4701ea51:
 translate schinese farm_meet_gina_59a40bde:
 
     # gina "But listen. If you ever run into Cimerian technology, anything you can find, I'm buying, and I will pay well. Seriously."
-    gina "不过听着。如果你碰到任何赛美瑞亚科技,不管什么,我都会买下,而且价格很好。说真的。"
+    gina "不过听着。如果你碰到任何席米亚科技,不管什么,我都会买下,而且价格很好。说真的。"
 
 # game/BKstory_events.rpy:4544
 translate schinese farm_meet_gina_b0f511a1:
@@ -13846,13 +13846,13 @@ translate schinese farm_meet_willow_4be05fb5:
 translate schinese farm_meet_willow_657b910a:
 
     # willow "I'm Willow. I'm a monster catcher."
-    willow "我是Willow。我是一名怪物猎手。"
+    willow "我是薇儿。我是一个怪物猎手。"
 
 # game/BKstory_events.rpy:6968
 translate schinese farm_meet_willow_2c72fda0:
 
     # you "A... Monster catcher?"
-    you "一...一名怪物猎手?"
+    you "一...一个怪物猎手?"
 
 # game/BKstory_events.rpy:6970
 translate schinese farm_meet_willow_1a986bc2:
@@ -13894,7 +13894,7 @@ translate schinese farm_meet_willow_8bb00932:
 translate schinese farm_meet_willow_e09d6fc2:
 
     # "You think about this for a minute. Gizel... The farm..."
-    "你沉思了一会儿。Gizel...农场..."
+    "你沉思了一会儿。吉泽尔...农场..."
 
 # game/BKstory_events.rpy:6986
 translate schinese farm_meet_willow_577e4894:
@@ -13954,7 +13954,7 @@ translate schinese farm_meet_willow_c2c7c3f8:
 translate schinese farm_meet_willow_9f849983:
 
     # you "It's all slimy and weird, now... Anyway. Sill will be thrilled to have it back."
-    you "现在它变得又粘又奇怪了...不过,西拉一定会很高兴能拿回它的。"
+    you "现在它变得又粘又奇怪了...不过,希露一定会很高兴能拿回它的。"
 
 # game/BKstory_events.rpy:7026
 translate schinese farm_meet_willow_ad737ba2:
@@ -14068,7 +14068,7 @@ translate schinese willow_fight_f6b56d19:
 translate schinese willow_fight_3c1376b7:
 
     # you "Another monster... And I guess Willow is down there."
-    you "另一只怪物...看来西拉也在那里。"
+    you "另一只怪物...看来薇儿也在那里。"
 
 # game/BKstory_events.rpy:7109
 translate schinese willow_fight_a957c329:
@@ -14122,7 +14122,7 @@ translate schinese willow_fight_3ab043bd:
 translate schinese willow_fight_b0a3e2ad:
 
     # "As she was focussing her spell, Willow didn't notice a tentacle creeping from behind her."
-    "当西拉专注于施展法术时,她没注意到从后面伸出来的一条触手。"
+    "当薇儿专注于施展法术时,她没注意到从后面伸出来的一条触手。"
 
 # game/BKstory_events.rpy:7147
 translate schinese willow_fight_0d0ccb38:
@@ -25720,13 +25720,13 @@ translate schinese kosmo_returns_2bc1f8e9:
 translate schinese kosmo_returns_a10b642a:
 
     # kosmo angry "What?!? I'm Kosmo! {b}Kosmo the Great{/b}!!!" with vpunch
-    kosmo angry "什么?!我是Kosmo!{b}大师Kosmo{/b}!" with vpunch
+    kosmo angry "什么?!我是科斯莫!{b}伟大的科斯莫{/b}!" with vpunch
 
 # game/BKstory_events.rpy:13331
 translate schinese kosmo_returns_c9e2429e:
 
     # you "Nope. Doesn't ring a bell."
-    you "不,我不认识你。"
+    you "可是,我不认识你。"
 
 # game/BKstory_events.rpy:13333
 translate schinese kosmo_returns_521e4522:
@@ -25738,13 +25738,13 @@ translate schinese kosmo_returns_521e4522:
 translate schinese kosmo_returns_c5afb693:
 
     # kosmo happy "I see what you're doing. Trying to play mind games by refusing to acknowledge my obvious star power."
-    kosmo happy "我知道你在做什么。试图用拒绝承认我明显的星光影响力来玩弄我的大脑。"
+    kosmo happy "我知道你在做什么。试图用拒绝承认我明显的影响力来玩弄我的大脑。"
 
 # game/BKstory_events.rpy:13337
 translate schinese kosmo_returns_1744e88d:
 
     # kosmo "Everyone knows and respects me, the chairman of HʘʘKERS™! I am the center of everyone's attention!" with vpunch
-    kosmo "每个人都认识和敬重我,HʘʘKERS™的主席!我是所有人的焦点!" with vpunch
+    kosmo "每个人都认识和敬重我,妓你太美™的董事长!我是所有人的焦点!" with vpunch
 
 # game/BKstory_events.rpy:13339
 translate schinese kosmo_returns_bbd66747:
@@ -25756,7 +25756,7 @@ translate schinese kosmo_returns_bbd66747:
 translate schinese kosmo_returns_c1bf1817:
 
     # "Henchman" "..."
-    "Henchman" "..."
+    "手下" "..."
 
 # game/BKstory_events.rpy:13343
 translate schinese kosmo_returns_48775d8c:
@@ -25768,13 +25768,13 @@ translate schinese kosmo_returns_48775d8c:
 translate schinese kosmo_returns_8647c4f0:
 
     # "Henchman" "Uh? You talkin' to me, boss?"
-    "Henchman" "嗯?你在和我说话吗,老板?"
+    "手下" "嗯?你在和我说话吗,老板?"
 
 # game/BKstory_events.rpy:13347
 translate schinese kosmo_returns_195c130e:
 
     # "Henchman" "Sorry. I wasn't payin' attention."
-    "Henchman" "抱歉,我没有注意。"
+    "手下" "抱歉,我没有注意。"
 
 # game/BKstory_events.rpy:13349
 translate schinese kosmo_returns_6431fb71:
@@ -25792,7 +25792,7 @@ translate schinese kosmo_returns_64799dc2:
 translate schinese kosmo_returns_803b31af:
 
     # "Henchman" "Hey! Isn't that a puppy, over there? Come here, you li'l cute, furry critter..."
-    "Henchman" "嘿!那边好像有一只小狗,来这里,可爱的小东西..."
+    "手下" "嘿!那边好像有一只小狗,来这里,可爱的小东西..."
 
 # game/BKstory_events.rpy:13357
 translate schinese kosmo_returns_44ee8331:
@@ -25864,7 +25864,7 @@ translate schinese kosmo_returns_a96aef56:
 translate schinese kosmo_returns_da230865:
 
     # "Henchman" "You did, boss, don't you remember? You said..."
-    "Henchman" "你确实说过,老板,你不记得了?你说..."
+    "手下" "你确实说过,老板,你不记得了?你说..."
 
 # game/BKstory_events.rpy:13383
 translate schinese kosmo_returns_977213cd:
@@ -25876,7 +25876,7 @@ translate schinese kosmo_returns_977213cd:
 translate schinese kosmo_returns_5fc92e24:
 
     # "Henchman" "Aw, someone's in a bad mood..."
-    "Henchman" "哦,看来某人心情不太好..."
+    "手下" "哦,看来某人心情不太好..."
 
 # game/BKstory_events.rpy:13387
 translate schinese kosmo_returns_a3c68cc1:
@@ -26014,7 +26014,7 @@ translate schinese kosmo_returns_7f478d06:
 translate schinese kosmo_returns_e48e58ec:
 
     # kosmo "You fucking slut! I'm going to have you fuck my guard dogs!"
-    kosmo "你这个该死的婊子!我要让我的guard狗操你!"
+    kosmo "你这个该死的婊子!我要让我的看门狗操你!"
 
 # game/BKstory_events.rpy:13440
 translate schinese kosmo_returns_929983c5:
@@ -26128,7 +26128,7 @@ translate schinese kosmo_returns_6341eea6:
 translate schinese kosmo_returns_6574f739:
 
     # "You and Sill move back inside. From time to time, you peer through the window to see what Kosmo is up to."
-    "你和Sill回到屋子里去。不时从窗户里看看Kosmo在干什么。"
+    "你和希露回到屋子里去。不时从窗户里看看科斯莫在干什么。"
 
 # game/BKstory_events.rpy:13482
 translate schinese kosmo_returns_f9679e8c:
@@ -26326,7 +26326,7 @@ translate schinese kosmo_returns2_dd31563d:
 translate schinese kosmo_returns2_57e5f935:
 
     # "Henchman" "But boss, didn't your 'pa leave his enormous fortune to you?"
-    "Henchman" "老板,难道你爸爸不是把他巨大的财富留给你了吗?"
+    "手下" "老板,难道你爸爸不是把他巨大的财富留给你了吗?"
 
 # game/BKstory_events.rpy:13593
 translate schinese kosmo_returns2_0d41a76e:
@@ -26896,7 +26896,7 @@ translate schinese kosmo_returns2_e8c4cee9:
 translate schinese kosmo_returns2_3898e60e:
 
     # "Henchman" "Err, boss, perhaps we should call a mechanic..."
-    "Henchman" "老板,也许我们应该叫个维修工..."
+    "手下" "老板,也许我们应该叫个维修工..."
 
 # game/BKstory_events.rpy:13823
 translate schinese kosmo_returns2_0c1f4d7f:
@@ -26926,7 +26926,7 @@ translate schinese kosmo_returns2_fa090826:
 translate schinese kosmo_returns2_9ca6825f:
 
     # "Henchman" "Boss... Boss?"
-    "Henchman" "老板...老板?"
+    "手下" "老板...老板?"
 
 # game/BKstory_events.rpy:13841
 translate schinese kosmo_returns2_0bbc2c10:
@@ -26938,7 +26938,7 @@ translate schinese kosmo_returns2_0bbc2c10:
 translate schinese kosmo_returns2_fe799c0a:
 
     # "Henchman" "He's all passed out. His hair is on fire."
-    "Henchman" "他已经晕了过去。他的头发都着火了。"
+    "手下" "他已经晕了过去。他的头发都着火了。"
 
 # game/BKstory_events.rpy:13845
 translate schinese kosmo_returns2_8d88b317:
@@ -26956,7 +26956,7 @@ translate schinese kosmo_returns2_27275d7b:
 translate schinese kosmo_returns2_b3e9eb90:
 
     # "Henchman" "Ahem... I think I should get him back. He looks awfully crispy."
-    "Henchman" "嗯...我想我应该去扶他起来。他看起来糟透了。"
+    "手下" "嗯...我想我应该去扶他起来。他看起来糟透了。"
 
 # game/BKstory_events.rpy:13853
 translate schinese kosmo_returns2_3ec3046e:
